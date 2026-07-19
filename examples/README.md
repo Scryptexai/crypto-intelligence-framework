@@ -28,12 +28,16 @@ Framework users, reviewers, and reasoning-validation processes.
 
 ```
 examples/
-├── Pioneer/       # Category-defining projects
-├── Successful/    # Validated success studies
-├── Failed/        # Validated failure studies
-├── CaseStudies/   # In-depth structured case studies
-└── Benchmarks/    # Reference benchmarks
+├── DatasetIndex.md   # Curation record: distribution, gaps, candidate queue, bibliography
+├── Pioneer/          # Category-defining projects (Batch 01 populated)
+├── Successful/       # Validated success studies
+├── Failed/           # Validated failure studies
+├── CaseStudies/      # In-depth structured case studies (Batch 01 populated)
+└── Benchmarks/       # Reference benchmarks
 ```
+
+Curated knowledge currently loaded: **Batch 01** (8 pioneer projects). See `DatasetIndex.md` for the
+full record and the queue for the next batch.
 
 ## Workflow Position
 

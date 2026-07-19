@@ -28,7 +28,14 @@ Reviewers and the reasoning-validation process.
 
 ```
 Pioneer/
-└── (artifacts added later, one file per study)
+├── Celestia.md       # Batch 01 — Modular / Data Availability
+├── Synthetix.md      # Batch 01 — DeFi Pioneer
+├── Helium.md         # Batch 01 — DePIN
+├── EigenLayer.md     # Batch 01 — Infrastructure / Restaking
+├── Aave.md           # Batch 01 — DeFi Pioneer
+├── Arweave-AO.md     # Batch 01 — Data Availability / Modular Compute
+├── Farcaster.md      # Batch 01 — Social
+└── MakerDAO-Sky.md   # Batch 01 — DeFi (Decentralized Central Bank)
 ```
 
 ## Workflow Position

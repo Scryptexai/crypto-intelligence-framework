@@ -28,7 +28,7 @@ Reviewers and the reasoning-validation process.
 
 ```
 CaseStudies/
-└── (artifacts added later, one file per study)
+└── Batch-01-EvolutionAnalysis.md   # Cross-project synthesis of the Batch 01 Pioneer studies
 ```
 
 ## Workflow Position
