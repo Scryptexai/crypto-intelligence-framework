@@ -49,6 +49,14 @@ _Raw source archived: `doc_backup/batch/Batch-01_Kurasi-Dataset_2026-07_gemini.p
 
 Cross-project analysis: `examples/CaseStudies/Batch-01-EvolutionAnalysis.md`.
 
+## Cross-Project Analyses
+_Syntheses that turn multiple project histories into transferable patterns (tier: Synthesis)._
+
+| Analysis | Projects linked | File |
+|----------|-----------------|------|
+| Batch 01 Evolution | Celestia, Arweave/AO, Helium, Synthetix, EigenLayer | `CaseStudies/Batch-01-EvolutionAnalysis.md` |
+| Staking → Restaking Stack | Ethereum, Lido, EigenLayer | `CaseStudies/CrossAnalysis-ETH-Lido-EigenLayer.md` |
+
 ## Curated Projects — Batch 02
 _Container: `examples/Pioneer/` · Source: Web research (public sources, July 2026 — cited per file)._
 _Promoted from the Batch 01 candidate queue. Provenance is web research, **not** Deep Research (Gemini)._
