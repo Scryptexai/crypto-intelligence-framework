@@ -36,8 +36,9 @@ examples/
 └── Benchmarks/       # Reference benchmarks
 ```
 
-Curated knowledge currently loaded: **Batch 01** (8 pioneer projects). See `DatasetIndex.md` for the
-full record and the queue for the next batch.
+Curated knowledge currently loaded: **Batch 01** (8 pioneer projects, source: Deep Research / Gemini)
+and **Batch 02** (10 pioneer projects, source: web research) — **18 projects total**. See
+`DatasetIndex.md` for the full record, cumulative distribution, gap status, and bibliography.
 
 ## Workflow Position
 

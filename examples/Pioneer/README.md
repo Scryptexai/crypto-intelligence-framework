@@ -28,15 +28,27 @@ Reviewers and the reasoning-validation process.
 
 ```
 Pioneer/
-├── Celestia.md       # Batch 01 — Modular / Data Availability
-├── Synthetix.md      # Batch 01 — DeFi Pioneer
-├── Helium.md         # Batch 01 — DePIN
-├── EigenLayer.md     # Batch 01 — Infrastructure / Restaking
-├── Aave.md           # Batch 01 — DeFi Pioneer
-├── Arweave-AO.md     # Batch 01 — Data Availability / Modular Compute
-├── Farcaster.md      # Batch 01 — Social
-└── MakerDAO-Sky.md   # Batch 01 — DeFi (Decentralized Central Bank)
+├── Celestia.md                 # Batch 01 — Modular / Data Availability
+├── Synthetix.md                # Batch 01 — DeFi Pioneer
+├── Helium.md                   # Batch 01 — DePIN
+├── EigenLayer.md               # Batch 01 — Infrastructure / Restaking
+├── Aave.md                     # Batch 01 — DeFi Pioneer
+├── Arweave-AO.md               # Batch 01 — Data Availability / Modular Compute
+├── Farcaster.md                # Batch 01 — Social
+├── MakerDAO-Sky.md             # Batch 01 — DeFi (Decentralized Central Bank)
+├── Safe.md                     # Batch 02 — Wallet / Account Abstraction
+├── Chainlink.md                # Batch 02 — Oracle
+├── LayerZero.md                # Batch 02 — Bridge / Interoperability
+├── Lido.md                     # Batch 02 — Liquid Staking
+├── Uniswap.md                  # Batch 02 — DeFi / AMM
+├── WorldNetwork-Worldcoin.md   # Batch 02 — Identity
+├── dYdX.md                     # Batch 02 — DeFi / Appchain
+├── Ethena.md                   # Batch 02 — DeFi / Stablecoin
+├── Berachain.md                # Batch 02 — Layer 1 (Proof-of-Liquidity)
+└── Optimism.md                 # Batch 02 — Layer 2 (OP Stack / Superchain)
 ```
+
+Sources differ by batch: Batch 01 = Deep Research (Gemini); Batch 02 = web research (cited per file).
 
 ## Workflow Position
 

@@ -1,19 +1,21 @@
-# CIF Dataset Index — Batch 01
+# CIF Dataset Index
 
-**CIF Dataset — Batch 01 · Curated Historical Project**
-**Source:** Deep Research (Gemini) — *"Rekomendasi Kurasi Proyek Historis: Fondasi Arsitektur Pengetahuan Crypto Intelligence Framework"*.
-**Pipeline position:** Applications layer — validated knowledge produced by `Research → Extraction` and structured against the `docs/` ontology.
+**Pipeline position:** Applications layer — validated knowledge produced by `Research → Extraction` and
+structured against the `docs/` ontology.
 
-> This is a knowledge artifact (real curated data), not a documentation container. It conforms to `templates/ProjectTemplate.md` and links back to the ontology it instantiates.
+> Knowledge artifacts (real curated data), not documentation containers. Each conforms to
+> `templates/ProjectTemplate.md` and links back to the ontology it instantiates.
 
-This is the curation record for **Batch 01**: what was added, how the taxonomy is now distributed,
-where the gaps are, and which projects are queued next. It is the entry point to the curated dataset
-stored in `examples/`.
+This is the master curation record for the dataset stored in `examples/`: what was added per batch,
+how the taxonomy is distributed, where the gaps are, and what is queued next.
+
+**Batches loaded:** Batch 01 (8 projects, source: Deep Research / Gemini) · Batch 02 (10 projects, source: Web research).
+**Total curated projects: 18.**
 
 ---
 
-## Curated Projects (Batch 01)
-_Container: `examples/Pioneer/` — category-defining pioneers that survived multiple market cycles._
+## Curated Projects — Batch 01
+_Container: `examples/Pioneer/` · Source: Deep Research (Gemini) — "Rekomendasi Kurasi Proyek Historis"._
 
 | # | Project | Category | Era | Priority | File |
 |---|---------|----------|-----|----------|------|
@@ -28,46 +30,69 @@ _Container: `examples/Pioneer/` — category-defining pioneers that survived mul
 
 Cross-project analysis: `examples/CaseStudies/Batch-01-EvolutionAnalysis.md`.
 
-## Dataset Distribution
-_After adding the eight projects above._
+## Curated Projects — Batch 02
+_Container: `examples/Pioneer/` · Source: Web research (public sources, July 2026 — cited per file)._
+_Promoted from the Batch 01 candidate queue. Provenance is web research, **not** Deep Research (Gemini)._
 
-| Category | New Projects | Cumulative Count |
-|----------|--------------|------------------|
-| DeFi | 3 | 3 |
-| Modular / Data Availability | 1 | 1 |
-| Infrastructure / Restaking | 1 | 1 |
-| DePIN | 1 | 1 |
-| Data Availability / Modular Compute | 1 | 1 |
-| Social | 1 | 1 |
+| # | Project | Category | Era | Priority | File |
+|---|---------|----------|-----|----------|------|
+| 9 | Safe | Wallet / Account Abstraction | 2017– | P0 | `Pioneer/Safe.md` |
+| 10 | Chainlink | Oracle | 2017– | P0 | `Pioneer/Chainlink.md` |
+| 11 | LayerZero | Bridge / Interoperability | 2021– | P1 | `Pioneer/LayerZero.md` |
+| 12 | Lido | Liquid Staking | 2020– | P1 | `Pioneer/Lido.md` |
+| 13 | Uniswap | DeFi / AMM | 2018– | P1 | `Pioneer/Uniswap.md` |
+| 14 | World Network (Worldcoin) | Identity | 2019– | P1 | `Pioneer/WorldNetwork-Worldcoin.md` |
+| 15 | dYdX | DeFi / Appchain | 2017– | P1 | `Pioneer/dYdX.md` |
+| 16 | Ethena | DeFi / Stablecoin | 2023– | P2 | `Pioneer/Ethena.md` |
+| 17 | Berachain | Layer 1 (Proof-of-Liquidity) | 2021– | P2 | `Pioneer/Berachain.md` |
+| 18 | Optimism | Layer 2 (OP Stack / Superchain) | 2019– | P2 | `Pioneer/Optimism.md` |
 
-## Dataset Gap
-_Kategori krusial yang belum terwakili dan harus dipenuhi pada batch berikutnya._
+## Dataset Distribution (Cumulative)
+_After Batch 01 + Batch 02._
 
-- **Wallet & Account Abstraction** — transisi dari EOA ke abstraksi akun, kunci adopsi massal & social recovery.
-- **Oracle & Real-Time Data Infrastructure** — manipulasi data eksternal adalah pola kegagalan DeFi paling umum.
-- **Privacy & Identity Security** — Zero-Knowledge Proofs untuk privasi transaksi & identitas resistan-sybil.
-- **Cross-Chain Communication & Bridges** — komponen kritis sekaligus titik kerentanan keamanan terbesar.
+| Category | Batch 01 | Batch 02 | Cumulative |
+|----------|----------|----------|------------|
+| DeFi (Pioneer, AMM, Appchain, Stablecoin, Central Bank) | 3 | 3 | 6 |
+| Modular / Data Availability | 1 | 0 | 1 |
+| Data Availability / Modular Compute | 1 | 0 | 1 |
+| Infrastructure / Restaking | 1 | 0 | 1 |
+| DePIN | 1 | 0 | 1 |
+| Social | 1 | 0 | 1 |
+| Wallet / Account Abstraction | 0 | 1 | 1 |
+| Oracle | 0 | 1 | 1 |
+| Bridge / Interoperability | 0 | 1 | 1 |
+| Liquid Staking | 0 | 1 | 1 |
+| Identity | 0 | 1 | 1 |
+| Layer 1 | 0 | 1 | 1 |
+| Layer 2 | 0 | 1 | 1 |
+| **Total** | **8** | **10** | **18** |
 
-## Candidate Queue (Batch 02)
-_Sepuluh proyek dengan nilai pembelajaran sejarah tertinggi, diprioritaskan untuk kurasi berikutnya._
+## Dataset Gap — Status
+_Progress against the gaps identified in Batch 01._
 
-| Project | Category | Key Evolutionary Metric | Priority |
-|---------|----------|-------------------------|----------|
-| Safe | Wallet / Account Abstraction | Standar industri multi-sig institusional & perintis abstraksi akun pintar. | P0 |
-| Chainlink | Oracle | Evolusi dari penyedia umpan harga tunggal hingga protokol lintas rantai CCIP. | P0 |
-| LayerZero | Bridge / Interoperability | Protokol komunikasi omnichain yang menghapus ketergantungan jembatan likuiditas konvensional. | P1 |
-| Lido Finance | Liquid Staking | Pola akumulasi dominasi likuiditas staking Ethereum & dampak tata kelolanya. | P1 |
-| Uniswap | DeFi / AMM | Inovasi AMM dari likuiditas konstan (V1) hingga likuiditas terkonsentrasi (V3). | P1 |
-| World Network (Worldcoin) | Identity | Proof of Personhood global menggunakan biometrik perangkat keras khusus. | P1 |
-| dYdX | DeFi / Appchain | Pivot dari L1 Ethereum ke StarkEx L2 hingga L1 berdaulat di Cosmos. | P1 |
-| Ethena | DeFi / Stablecoin | Dolar sintetis delta-neutral pertama yang mengeksploitasi basis pasar derivatif. | P2 |
-| Berachain | Layer 1 | Evolusi dari komunitas meme NFT menjadi konsensus Proof-of-Liquidity. | P2 |
-| Optimism | Layer 2 | Tata kelola bikameral (Token House & Citizens' House) & arsitektur OP Stack. | P2 |
+- **Wallet & Account Abstraction** — ✅ terisi oleh **Safe** (Batch 02).
+- **Oracle & Real-Time Data Infrastructure** — ✅ terisi oleh **Chainlink** (Batch 02).
+- **Cross-Chain Communication & Bridges** — ✅ terisi oleh **LayerZero** (Batch 02).
+- **Privacy & Identity Security** — ⚠️ *sebagian*: identitas/proof-of-personhood terisi oleh **Worldcoin**,
+  namun **privasi transaksi berbasis Zero-Knowledge Proofs** (mis. Aztec, Railgun, Zcash) masih terbuka.
 
-> Note: the candidate queue is a curation backlog of instances. It lives here in `examples/` (knowledge),
+### Remaining / New Gaps (untuk batch berikutnya)
+- **ZK Privacy** — protokol privasi transaksi berbasis ZKP.
+- **RWA (Real-World Assets)** — tokenisasi aset dunia nyata sebagai kategori tersendiri.
+- **Gaming / NFT Infrastructure** — belum terwakili.
+- **AI x Crypto** — kategori baru yang berkembang pesat.
+
+## Candidate Queue — Status
+_The Batch 01 candidate queue has been **fully processed into Batch 02** (see table above)._
+The queue is now empty; the next queue will be defined from the Remaining/New Gaps section once
+new research is available.
+
+> Note: a candidate queue is a curation backlog of instances. It lives here in `examples/` (knowledge),
 > not in `docs/Research/` (which documents *how* research is done, not *what* to research).
 
-## Karya yang Dikutip (Bibliography)
+---
+
+## Karya yang Dikutip — Batch 01 (Bibliography)
 _Sumber Deep Research untuk Batch 01._
 
 1. Modularity and App-Specific Chains — Blockchain@NUS, Medium — https://medium.com/@nusfintech.bc/modularity-and-app-specific-chains-524547bc33a8
@@ -88,3 +113,17 @@ _Sumber Deep Research untuk Batch 01._
 16. EigenCloud: Rebuilding Web3's Trust Foundation — blockeden.xyz — https://blockeden.xyz/blog/2025/12/03/eigencloud-rebuilding-web3-s-trust-foundation-through-verifiable-cloud-infrastructure/
 17. The Delphi Podcast — Buzzsprout — https://feeds.buzzsprout.com/2609274.rss
 18. EIGEN Token Whitepaper (HTML) — EigenCloud — https://docs.eigencloud.xyz/html/EIGEN_Token_Whitepaper-converted-xodo.html
+
+## Bibliography — Batch 02
+_Sumber riset web (diakses Juli 2026). Rincian per-proyek ada di bagian "Sources" tiap file._
+
+- **Safe** — IQ.wiki (https://iq.wiki/wiki/safe); Gnosis Forum GIP-29 (https://forum.gnosis.io/t/gip-29-spin-off-safedao-and-launch-safe-token/3476); Safe Foundation Tokenomics (https://safefoundation.org/blog/safe-tokenomics)
+- **Chainlink** — Wikipedia (https://en.wikipedia.org/wiki/Chainlink_(blockchain_oracle)); Messari (https://messari.io/project/chainlink/profile)
+- **LayerZero** — LayerZero Docs (https://docs.layerzero.network/v2/concepts/layerzero-protocol-architecture); Messari (https://messari.io/report/understanding-layerzero)
+- **Lido** — lido.fi (https://lido.fi/); Messari (https://messari.io/report/liquid-staking-with-lido); Datawallet (https://www.datawallet.com/crypto/lido-explained)
+- **Uniswap** — Wikipedia (https://en.wikipedia.org/wiki/Uniswap); Uniswap Blog (https://blog.uniswap.org/uniswap-history)
+- **World Network (Worldcoin)** — TechCrunch (https://techcrunch.com/2024/10/17/sam-altmans-worldcoin-becomes-world-and-shows-new-iris-scanning-orb-to-prove-your-humanity/); Quartz (https://qz.com/sam-altman-worldcoin-crypto-ai-biometrics-identity-1850669360)
+- **dYdX** — Antonio Juliano, Medium (https://antonio-dydx.medium.com/the-history-of-dydx-so-far-68bf46789f86); dYdX v4 Evolution, Medium (https://medium.com/@gwrx2005/dydx-v4-architectural-and-protocol-evolution-from-v3-6c312f51f7b7)
+- **Ethena** — Ethena Docs (https://docs.ethena.fi/); Nansen (https://nansen.ai/post/what-is-ethena)
+- **Berachain** — Fireblocks (https://www.fireblocks.com/blog/what-is-berachain-and-proof-of-liquidity); DAIC Capital (https://daic.capital/blog/berachain-tokens-explained); Decrypt (https://decrypt.co/resources/what-is-berachain-proof-of-liquidity-blockchain)
+- **Optimism** — Coin Bureau (https://coinbureau.com/review/optimism-review); Eco (https://eco.com/support/en/articles/10273675-what-is-optimism-the-ethereum-l2-and-op-mainnet-explained); The Block (https://www.theblock.co/linked/149464/optimisms-governance-token-officially-goes-live)
