@@ -28,8 +28,13 @@ Reviewers and the reasoning-validation process.
 
 ```
 CaseStudies/
-└── Batch-01-EvolutionAnalysis.md   # Cross-project synthesis of the Batch 01 Pioneer studies
+├── Batch-01-EvolutionAnalysis.md   # Cross-project synthesis of the Batch 01 Pioneer studies
+└── Ethereum.md                     # Deep dossier (Tier: Deep) — anchor project, full causal history
 ```
+
+Two kinds of file live here: **cross-project analyses** (synthesis across a batch) and **deep dossiers**
+(one long-form, causal case study per anchor project, e.g. `Ethereum.md`). Deep dossiers are produced by
+the `Ingest-Deep` role (`docs/Protocol/Role-Ingest-Deep.md`).
 
 ## Workflow Position
 
