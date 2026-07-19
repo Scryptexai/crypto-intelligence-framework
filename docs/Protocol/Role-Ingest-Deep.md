@@ -26,22 +26,42 @@ governance crises, price causality, competitor landscape, etc.). This is an *anc
 
 ## Deep dossier structure (map to ontology)
 
-| Section | Maps to |
+Deep reports arrive in the **22-section structure** defined in `docs/Protocol/Deep-Research-Brief.md`.
+The dossier mirrors those sections so ingestion is lossless. Mapping:
+
+| Dossier section (from the 22-section brief) | Maps to |
 |---------|---------|
 | Identity, Classification | `docs/Ontology/Identity.md`, `docs/Taxonomy/*` |
-| Pre-conditions / founding thesis | context (why it existed) |
-| Team & genealogy (founders, splits) | `docs/Ontology/Team.md`, `docs/Ontology/Governance.md` |
-| Funding / TGE / genesis allocation | `docs/Ontology/Funding.md`, `docs/Ontology/Tokenomics.md` |
-| Technology & architecture evolution | `docs/Ontology/Technology.md`, `docs/TokenLifecycle/*` |
+| §2 Industry Background (pre-conditions) | context (why it existed) |
+| §3 Origin, Team & genealogy | `docs/Ontology/Team.md`, `docs/Ontology/Governance.md` |
+| §4 Innovation Analysis (+ archetype: FirstMover/FastFollower/Fork/Improvement) | `docs/Innovation/*` |
+| §5,§10 Technology & Product Evolution | `docs/Ontology/Technology.md`, `docs/TokenLifecycle/*` |
+| §6 Funding Intelligence | `docs/Ontology/Funding.md` |
+| §7 Community Intelligence | `docs/Ontology/Community.md`, `docs/Success/Community.md` |
+| §8 Narrative Intelligence | `docs/Meta/Narratives.md` |
+| §9 Competitive Landscape | `docs/Valuation/Competitors.md`, `docs/Meta/MarketCycles.md` |
+| §11,§12 Tokenomics & Airdrop/Incentive | `docs/Ontology/Tokenomics.md`, `Incentives.md`, `docs/Patterns/Points,Mining,Referral` |
+| §13 Token Lifecycle + price causality | `docs/TokenLifecycle/*`, `docs/MarketBehaviour/*`, `docs/Valuation/*` |
+| §14 Business Intelligence | `docs/Ontology/Revenue.md`, `Adoption.md`, `Metrics.md` |
 | Governance crises & resolutions | `docs/Ontology/Governance.md`, `Risks.md`, `Security.md`, `docs/Patterns/Failure.md`, `Recovery.md` |
-| Ecosystem / adoption / TVL | `docs/Ontology/Ecosystem.md`, `Adoption.md`, `Metrics.md` |
-| Competitor landscape | `docs/Valuation/Competitors.md`, `docs/Meta/MarketCycles.md` |
-| Tokenomics & price causality | `docs/MarketBehaviour/*`, `docs/Reasoning/Prediction.md` |
-| Current state | `docs/Ontology/*` (latest snapshot) |
-| Success evaluation (per stakeholder) | `docs/Success/*` |
-| Extracted patterns & lessons | `docs/Patterns/*`, `docs/Reasoning/*` |
+| §16 Timeline · §17 Current Status | timeline + latest snapshot (`docs/Ontology/*`) |
+| **§15 POV Success-Matrix** (8 POV, each with evidence level) | `docs/Success/*` |
+| §18,§19 Lessons & Knowledge Extraction *(crown jewel)* | `docs/Patterns/*`, `docs/Ontology/*`, `docs/Schema/*` |
+| **§20 Transferable Intelligence** *(crown jewel)* — rule candidates | `docs/Reasoning/*` |
+| **§21 Open Questions** | research-gap field |
+| **§22 Evidence Level** (HIGH/MED/LOW per key claim) | `docs/Reasoning/Confidence.md` |
 | Related framework definitions + Sources | cross-links + provenance |
+
+### Mandatory fields (do not skip)
+- **POV Success-Matrix** — success/failure across all 8 POVs (Founder, VC, Retail, Community, Developer,
+  Institution, Validator, Builder), each with a one-line reason and an evidence level. Never collapse to a
+  single "success/fail" verdict.
+- **Evidence Level** — tag important conclusions HIGH / MEDIUM / LOW with the reason.
+- **Open Questions** — list what is still unvalidated.
+- **§19 Knowledge Extraction + §20 Transferable Intelligence** — these are the highest-value sections; they
+  are what the reasoning engine consumes. Always populate them explicitly.
 
 ## Quality bar
 - Preserve **causality** ("X happened *because* Y"), not just facts — that is the point of a deep dossier.
 - Keep numbers and dates faithful to the source; never round away or invent figures.
+- Reusable Knowledge: each key fact should carry its *why / impact / lesson / industry link*.

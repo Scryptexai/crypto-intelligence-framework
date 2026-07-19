@@ -203,21 +203,28 @@ peneliti senior (Carl Beek, Julian Ma, koordinator hard fork **Tim Beiko**) pert
 (Geth, Nethermind, Besu) menjaga operasional, tetapi hilangnya penengah mempersulit koordinasi upgrade
 (Glamsterdam, Hegota).
 
-## 12. Success Evaluation — Enam Perspektif
-_ref: `docs/Success/*`, `docs/Reasoning/Explainability.md`_
+## 12. POV Success-Matrix (§15)
+_ref: `docs/Success/*`, `docs/Reasoning/Explainability.md`, `docs/Reasoning/Confidence.md`_
 
-Ethereum = **keberhasilan mutlak dalam infrastruktur & penciptaan standar industri** (EVM = "OS" Web3;
-kompetitor pun EVM-compatible).
-1. **Founder** (`Success/Founder.md`): misi platform netral tercapai; tapi tata kelola desentralisasi
-   membatasi kendali arah yang cepat.
-2. **VC** (`Success/VC.md`): likuiditas pasar terdalam; fondasi portofolio Web3.
-3. **Investor**: ETH jadi aset produktif (native yield via staking); tapi tesis kelangkaan direvisi pasca-Dencun.
-4. **Community** (`Success/Community.md`): menang ideologi (desentralisasi, tolak kompromi keamanan); harga =
-   fragmentasi likuiditas & kebingungan UX.
-5. **Developer** (`Success/Developer.md`): ekosistem paling matang, dokumentasi terlengkap, keamanan ekonomi terbesar.
-6. **End-user**: L2 menekan biaya ke sub-sen; tapi bridging, fragmentasi saldo, risiko eksploitasi tetap jadi hambatan.
+Success is **not binary** — verdict per point-of-view, each with an evidence level (see
+`docs/Protocol/Deep-Research-Brief.md`). Ethereum = keberhasilan mutlak di **infrastruktur & standar industri**
+(EVM = "OS" Web3), tetapi hasilnya berbeda tergantung POV:
 
-## 13. Extracted Patterns & Lessons (untuk Reasoning)
+| POV | Verdict | Alasan | Evidence |
+|-----|---------|--------|----------|
+| **Founder** | ✅ Sukses | Misi platform netral tercapai; tapi tata kelola desentralisasi membatasi kendali arah cepat | HIGH |
+| **VC** | ✅ Sukses | Likuiditas pasar terdalam; fondasi portofolio Web3 | HIGH |
+| **Retail** | ⚠️ Campuran | Native yield via staking, tapi tesis kelangkaan runtuh pasca-Dencun → underperform vs BTC/SOL | MEDIUM |
+| **Community** | ✅ Sukses | Menang ideologi (desentralisasi, tolak kompromi keamanan); harga = fragmentasi likuiditas & UX | HIGH |
+| **Developer** | ✅ Sukses | Ekosistem paling matang, dokumentasi terlengkap, keamanan ekonomi terbesar | HIGH |
+| **Institution** | ✅ Sukses | Dominasi RWA (BUIDL BlackRock), stablecoin ~$160 miliar, komposabilitas TradFi↔DeFi | HIGH |
+| **Validator** | ⚠️ Campuran | Native yield PoS, tapi sentralisasi Lido & risiko cascading restaking menekan solo-validator | MEDIUM |
+| **Builder (L2/AVS)** | ✅ Sukses | OP Stack/rollup + restaking membuka ruang bangun baru; tapi fragmentasi likuiditas | MEDIUM–HIGH |
+
+**Takeaway:** proyek yang sama bisa "menang" di infrastruktur/institusi namun "seri" di retail/validator —
+inilah kenapa verdict harus per-POV, bukan satu label.
+
+## 13. Knowledge Extraction — Patterns & Lessons (§18–19)
 _ref: `docs/Patterns/*`, `docs/Reasoning/*` — bahan analog untuk prediksi proyek lain._
 
 1. **Konsensus sosial menimpa "Code is Law"** saat krisis sistemik (The DAO). → `Patterns/Recovery.md`
@@ -229,7 +236,37 @@ _ref: `docs/Patterns/*`, `docs/Reasoning/*` — bahan analog untuk prediksi proy
 6. **Sentralisasi efisiensi-modal** (Lido) memicu mitigasi terdistribusi (DVT). → `Patterns/NetworkEffect.md`
 7. **Aset kripto makin terkorelasi makro global** (Yen carry). → `MarketBehaviour/MarketCorrelation.md`
 
-## 14. Related Framework Definitions
+## 14. Transferable Intelligence (§20)
+_ref: `docs/Reasoning/*` — rule candidates untuk mengevaluasi project baru._
+
+Rule kandidat (berlaku umum, layak jadi aturan reasoning):
+- **R1:** Platform "First Mover + standar developer" (spt EVM) > pesaing "lebih cepat/murah" dalam retensi
+  jangka panjang. Cek: apakah project menciptakan standar yang diadopsi pesaing?
+- **R2:** Sukses teknis yang menurunkan pendapatan/burn protokol dapat merusak tesis token. Cek: apakah
+  upgrade menggeser aktivitas ke luar mekanisme value-accrual?
+- **R3:** Inovasi efisiensi-modal akan mengonsentrasikan sumber daya → nilai proyek harus dinilai bersama
+  mitigasi desentralisasinya (ada/tidak).
+- **R4:** Treasury aset-tunggal volatil = risiko kelangsungan; diversifikasi = sinyal kematangan.
+
+Khusus-Ethereum (jangan digeneralisasi): skala efek jaringan EVM, momen historis 2014–2015, dan status
+"reserve asset" DeFi — sulit direplikasi project baru.
+
+## 15. Open Questions (§21)
+_Research gap — belum tervalidasi, untuk sesi berikutnya._
+- Apakah net-inflasi pasca-Dencun permanen atau pulih saat aktivitas L1 naik? (evidence: LOW)
+- Dampak jangka panjang krisis koordinasi Ethereum Foundation terhadap kecepatan rilis upgrade? (LOW)
+- Seberapa besar risiko sistemik restaking (cascading slashing) benar-benar terwujud vs teoretis? (MEDIUM)
+
+## 16. Evidence Level — kesimpulan kunci (§22)
+| Kesimpulan | Evidence | Alasan |
+|---|---|---|
+| EVM jadi standar industri | HIGH | Kompetitor EVM-compatible, 1jt+ developer |
+| Konsensus sosial > kode saat krisis | HIGH | Dua preseden terdokumentasi (The DAO, EIP-999) |
+| Dencun → net-inflasi | HIGH | Mekanisme EIP-1559 + data burn/emisi |
+| Underperformance akibat "hilang Ultra Sound Money" | MEDIUM | Multi-faktor (termasuk makro Yen) |
+| Risiko cascading restaking | MEDIUM | Sebagian besar masih teoretis/model |
+
+## 17. Related Framework Definitions
 - Ontology: `docs/Ontology/Identity.md`, `Team.md`, `Funding.md`, `Tokenomics.md`, `Governance.md`,
   `Security.md`, `Risks.md`, `Technology.md`, `Ecosystem.md`, `Metrics.md`, `Revenue.md`
 - Patterns: `docs/Patterns/Failure.md`, `Recovery.md`, `NetworkEffect.md`
@@ -239,7 +276,7 @@ _ref: `docs/Patterns/*`, `docs/Reasoning/*` — bahan analog untuk prediksi proy
 - Cross-project: `examples/Pioneer/Lido.md`, `examples/Pioneer/EigenLayer.md`, `examples/Pioneer/Uniswap.md`,
   `examples/Pioneer/Aave.md`, `examples/Pioneer/Optimism.md`, `examples/Pioneer/Celestia.md`
 
-## 15. Sources
+## 18. Sources
 _Deep Research provenance. The source report cites **81 references**; key primary sources below._
 
 - History of Ethereum — ethereum.org — https://ethereum.org/ethereum-history-founder-and-ownership/

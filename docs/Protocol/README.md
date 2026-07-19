@@ -32,11 +32,12 @@ Every session (human or AI) that operates on the repository.
 
 ```
 Protocol/
-├── SessionProtocol.md     # The baseline flow every session follows
-├── Role-Ingest-Deep.md    # Runbook: one deep research report → deep case study
-├── Role-Ingest-Batch.md   # Runbook: summary batch → many project profiles
-├── Role-Tracking.md       # Runbook: follow a live project over time
-└── Role-Analysis.md       # Runbook: predict a new project via analogs
+├── SessionProtocol.md      # The baseline flow every session follows
+├── Deep-Research-Brief.md  # Canonical 22-section research prompt + how it maps into CIF
+├── Role-Ingest-Deep.md     # Runbook: one deep research report → deep case study
+├── Role-Ingest-Batch.md    # Runbook: summary batch → many project profiles
+├── Role-Tracking.md        # Runbook: follow a live project over time
+└── Role-Analysis.md        # Runbook: predict a new project via analogs
 ```
 
 ## Workflow Position

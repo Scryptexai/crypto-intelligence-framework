@@ -31,6 +31,15 @@ Every Ingest session archives its source in `doc_backup/` first, so a future re-
 4. **`docs/` stays documentation-only.** Knowledge goes to `examples/` (history) or `tracking/` (live).
 5. **Commit + push** to the working branch when a unit of work is done. Update the index in the same commit.
 
+## How the knowledge is meant to be used
+
+The audience is **AI reasoning**, not human readers. Every fact must be *Reusable Knowledge* — carry its
+**why / impact / lesson / industry link**, not just the bare fact. Deep reports follow the **22-section
+research brief** in `docs/Protocol/Deep-Research-Brief.md`; ingest against it losslessly. Projects have
+**types** (innovation archetype, narrative), and **success/failure is per-POV** (Founder, VC, Retail,
+Community, Developer, Institution, Validator, Builder) — never a single binary verdict. Tag important
+conclusions with an **evidence level** (HIGH/MED/LOW).
+
 ## Curation tiers (quality × scale)
 
 - **Deep dossier** (like `examples/CaseStudies/Ethereum.md`) — full causal history for *anchor* projects.
