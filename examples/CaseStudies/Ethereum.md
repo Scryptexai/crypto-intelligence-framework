@@ -5,6 +5,7 @@
 Struktur Kausalitas Tata Kelola, Evolusi Tokenomics, dan Dinamika Komputer Dunia (2013–2026)"*.
 **Pipeline position:** Applications layer — the richest anchor artifact, structured against the full `docs/`
 ontology and used as a primary analog for reasoning.
+**Raw source archived:** `doc_backup/deep/Ethereum_2026-07_gemini.pdf` (+ `.md`).
 
 > Knowledge artifact (real curated data), not a documentation container. This is a **deep dossier**: it
 > preserves *causality* (why events happened), which is the raw material for prediction. Conforms to

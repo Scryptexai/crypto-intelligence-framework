@@ -26,14 +26,15 @@ Target ~1000 projects ≈ ~50 Deep + ~950 Summary ≈ ~150 sessions (state persi
 ## Deep Dossiers
 _Tier: Deep · anchor projects with full causal history._
 
-| # | Project | Category | Era | Source | File |
-|---|---------|----------|-----|--------|------|
-| D1 | Ethereum | Layer 1 / Smart-Contract Platform | 2013– | Deep Research (Gemini) | `CaseStudies/Ethereum.md` |
+| # | Project | Category | Era | Source | File | Raw source |
+|---|---------|----------|-----|--------|------|-----------|
+| D1 | Ethereum | Layer 1 / Smart-Contract Platform | 2013– | Deep Research (Gemini) | `CaseStudies/Ethereum.md` | `doc_backup/deep/Ethereum_2026-07_gemini.pdf` |
 
 ---
 
 ## Curated Projects — Batch 01
 _Container: `examples/Pioneer/` · Source: Deep Research (Gemini) — "Rekomendasi Kurasi Proyek Historis"._
+_Raw source archived: `doc_backup/batch/Batch-01_Kurasi-Dataset_2026-07_gemini.pdf` (+ `.md`)._
 
 | # | Project | Category | Era | Priority | File |
 |---|---------|----------|-----|----------|------|

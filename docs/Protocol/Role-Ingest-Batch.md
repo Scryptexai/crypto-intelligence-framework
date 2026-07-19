@@ -11,14 +11,17 @@ The maintainer provides a curation batch (like Batch 01/02) with ~1 paragraph pe
 
 ## Steps
 
-1. **Extract the source** (PDF → reflowed text).
-2. **Check the index** for each project to avoid duplicates. Skip or update existing ones.
-3. **Write one profile per project** using the summary structure below. Link each field to `docs/`.
-4. **Register** every project in `examples/DatasetIndex.md` with tier = Summary.
-5. **Taxonomy:** collect any new categories/chains/technologies observed and note them for
+1. **Archive the source first.** Save the raw doc to `doc_backup/batch/<Batch>_<YYYY-MM>_gemini.pdf` and a
+   reflowed `.md` alongside it (see `doc_backup/README.md`). (Web-only batches have no source doc — skip.)
+2. **Extract the source** (PDF → reflowed text).
+3. **Check the index** for each project to avoid duplicates. Skip or update existing ones.
+4. **Write one profile per project** using the summary structure below. Link each field to `docs/`.
+5. **Register** every project in `examples/DatasetIndex.md` with tier = Summary, pointing `Source` to the
+   `doc_backup/` file (or the citations, for web-only batches).
+6. **Taxonomy:** collect any new categories/chains/technologies observed and note them for
    `docs/Taxonomy/*` (terms only — never project instances).
-6. **Optional:** if the batch includes a cross-project analysis, write it to `examples/CaseStudies/Batch-NN-*.md`.
-7. **Provenance** per file (Deep Research / Gemini, or Web research + citations). **Commit & push.**
+7. **Optional:** if the batch includes a cross-project analysis, write it to `examples/CaseStudies/Batch-NN-*.md`.
+8. **Provenance** per file (Deep Research / Gemini, or Web research + citations). **Commit & push.**
 
 ## Summary profile structure
 

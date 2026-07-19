@@ -12,14 +12,16 @@ patterns → predict where new projects are heading, with a calibrated confidenc
 
 Pipeline: `Research → Knowledge → Ontology → Patterns → Reasoning → Framework → Applications`.
 
-## The two layers (never mix them)
+## The three layers (never mix them)
 
 | Layer | Path | Contains | Rule |
 |-------|------|----------|------|
+| **Raw source** | `doc_backup/` | Original Gemini/research docs (input) | ✅ immutable archive; re-processable, never edited |
 | **Containers** | `docs/` | Documentation only — structure, rules, field specs | ❌ never put project data / knowledge here |
-| **Knowledge** | `examples/`, `tracking/` | Real curated project data | ✅ all knowledge lives here, links back to `docs/` |
+| **Knowledge** | `examples/`, `tracking/` | Real curated project data (output) | ✅ all knowledge lives here, links back to `docs/` |
 
 `docs/Taxonomy/` is the one exception that accumulates *vocabulary terms* (not project instances).
+Every Ingest session archives its source in `doc_backup/` first, so a future re-architecture never needs re-research.
 
 ## Golden rules
 
