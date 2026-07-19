@@ -9,8 +9,8 @@ structured against the `docs/` ontology.
 This is the master curation record for the dataset stored in `examples/`: what was added per batch,
 how the taxonomy is distributed, where the gaps are, and what is queued next.
 
-**Batches loaded:** Batch 01 (8 projects, source: Deep Research / Gemini) · Batch 02 (10 projects, source: Web research) · Deep Dossiers (1: Ethereum, source: Deep Research / Gemini).
-**Total curated projects: 19.**
+**Batches loaded:** Batch 01 (8 projects, source: Deep Research / Gemini) · Batch 02 (10 projects, source: Web research) · Deep Dossiers (2: Ethereum, Solana — source: Deep Research / Gemini).
+**Total curated projects: 20.**
 
 ## Curation Tiers
 _How each project is captured (see `docs/Protocol/` for the runbooks)._
@@ -29,6 +29,7 @@ _Tier: Deep · anchor projects with full causal history._
 | # | Project | Category | Era | Source | File | Raw source |
 |---|---------|----------|-----|--------|------|-----------|
 | D1 | Ethereum | Layer 1 / Smart-Contract Platform | 2013– | Deep Research (Gemini) | `CaseStudies/Ethereum.md` | `doc_backup/deep/Ethereum_2026-07_gemini.pdf` |
+| D2 | Solana | Layer 1 / High-Performance Monolithic Platform | 2017– | Deep Research (Gemini) | `CaseStudies/Solana.md` | `doc_backup/deep/Solana_2026-07_gemini.docx` |
 
 ---
 
