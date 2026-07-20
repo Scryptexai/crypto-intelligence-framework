@@ -32,7 +32,7 @@ _Tier: Deep · anchor projects with full causal history._
 | D2 | Solana | Layer 1 / High-Performance Monolithic Platform | 2017– | Deep Research (Gemini) | `CaseStudies/Solana.md` | `doc_backup/deep/Solana_2026-07_gemini.docx` |
 | D3 | BNB Chain | Layer 1 EVM (Exchange-backed) + modular suite (opBNB/Greenfield) | 2017– | Deep Research (Gemini) | `CaseStudies/BNBChain.md` | `doc_backup/deep/BNBChain_2026-07_gemini.docx` |
 | D4 | Cardano | Layer 1 / Peer-reviewed EUTXO platform (Ouroboros PoS) | 2015– | Deep Research (Gemini) | `CaseStudies/Cardano.md` | `doc_backup/deep/Cardano_2026-07_gemini.pdf` |
-| D5 | Avalanche | Layer 1 / Metastable-consensus multi-chain (Subnet/L1) + RWA-TradFi | 2018– | Deep Research (Gemini) | `CaseStudies/Avalanche.md` | `doc_backup/deep/Avalanche_2026-07_gemini.pdf` |
+| D5 | Avalanche | Layer 1 / Metastable-consensus multi-chain (Subnet/L1) + RWA-TradFi | 2018– | Deep Research (Gemini) | `CaseStudies/Avalanche.md` | `doc_backup/deep/Avalanche_2026-07_gemini.docx` (rebuilt; prior PDF retained) |
 | D6 | Polkadot | Layer 0 / Heterogeneous-sharding + shared-security (Relay/parachains) | 2016– | Deep Research (Gemini) | `CaseStudies/Polkadot.md` | `doc_backup/deep/Polkadot_2026-07_gemini.docx` |
 | D7 | Cosmos | Layer 0 / Appchain "Internet of Blockchains" (CometBFT/SDK/IBC) | 2014– | Deep Research (Gemini) | `CaseStudies/Cosmos.md` | `doc_backup/deep/Cosmos_2026-07_gemini.docx` |
 
