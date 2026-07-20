@@ -9,8 +9,8 @@ structured against the `docs/` ontology.
 This is the master curation record for the dataset stored in `examples/`: what was added per batch,
 how the taxonomy is distributed, where the gaps are, and what is queued next.
 
-**Batches loaded:** Batch 01 (8 projects, source: Deep Research / Gemini) · Batch 02 (10 projects, source: Web research) · Deep Dossiers (6: Ethereum, Solana, BNB Chain, Cardano, Avalanche, Polkadot — source: Deep Research / Gemini).
-**Total curated projects: 24.**
+**Batches loaded:** Batch 01 (8 projects, source: Deep Research / Gemini) · Batch 02 (10 projects, source: Web research) · Deep Dossiers (7: Ethereum, Solana, BNB Chain, Cardano, Avalanche, Polkadot, Cosmos — source: Deep Research / Gemini).
+**Total curated projects: 25.**
 
 ## Curation Tiers
 _How each project is captured (see `docs/Protocol/` for the runbooks)._
@@ -34,6 +34,7 @@ _Tier: Deep · anchor projects with full causal history._
 | D4 | Cardano | Layer 1 / Peer-reviewed EUTXO platform (Ouroboros PoS) | 2015– | Deep Research (Gemini) | `CaseStudies/Cardano.md` | `doc_backup/deep/Cardano_2026-07_gemini.pdf` |
 | D5 | Avalanche | Layer 1 / Metastable-consensus multi-chain (Subnet/L1) + RWA-TradFi | 2018– | Deep Research (Gemini) | `CaseStudies/Avalanche.md` | `doc_backup/deep/Avalanche_2026-07_gemini.pdf` |
 | D6 | Polkadot | Layer 0 / Heterogeneous-sharding + shared-security (Relay/parachains) | 2016– | Deep Research (Gemini) | `CaseStudies/Polkadot.md` | `doc_backup/deep/Polkadot_2026-07_gemini.docx` |
+| D7 | Cosmos | Layer 0 / Appchain "Internet of Blockchains" (CometBFT/SDK/IBC) | 2014– | Deep Research (Gemini) | `CaseStudies/Cosmos.md` | `doc_backup/deep/Cosmos_2026-07_gemini.docx` |
 
 ---
 
