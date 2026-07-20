@@ -9,8 +9,8 @@ structured against the `docs/` ontology.
 This is the master curation record for the dataset stored in `examples/`: what was added per batch,
 how the taxonomy is distributed, where the gaps are, and what is queued next.
 
-**Batches loaded:** Batch 01 (8 projects, source: Deep Research / Gemini) · Batch 02 (10 projects, source: Web research) · Deep Dossiers (5: Ethereum, Solana, BNB Chain, Cardano, Avalanche — source: Deep Research / Gemini).
-**Total curated projects: 23.**
+**Batches loaded:** Batch 01 (8 projects, source: Deep Research / Gemini) · Batch 02 (10 projects, source: Web research) · Deep Dossiers (6: Ethereum, Solana, BNB Chain, Cardano, Avalanche, Polkadot — source: Deep Research / Gemini).
+**Total curated projects: 24.**
 
 ## Curation Tiers
 _How each project is captured (see `docs/Protocol/` for the runbooks)._
@@ -33,6 +33,7 @@ _Tier: Deep · anchor projects with full causal history._
 | D3 | BNB Chain | Layer 1 EVM (Exchange-backed) + modular suite (opBNB/Greenfield) | 2017– | Deep Research (Gemini) | `CaseStudies/BNBChain.md` | `doc_backup/deep/BNBChain_2026-07_gemini.docx` |
 | D4 | Cardano | Layer 1 / Peer-reviewed EUTXO platform (Ouroboros PoS) | 2015– | Deep Research (Gemini) | `CaseStudies/Cardano.md` | `doc_backup/deep/Cardano_2026-07_gemini.pdf` |
 | D5 | Avalanche | Layer 1 / Metastable-consensus multi-chain (Subnet/L1) + RWA-TradFi | 2018– | Deep Research (Gemini) | `CaseStudies/Avalanche.md` | `doc_backup/deep/Avalanche_2026-07_gemini.pdf` |
+| D6 | Polkadot | Layer 0 / Heterogeneous-sharding + shared-security (Relay/parachains) | 2016– | Deep Research (Gemini) | `CaseStudies/Polkadot.md` | `doc_backup/deep/Polkadot_2026-07_gemini.docx` |
 
 ---
 
