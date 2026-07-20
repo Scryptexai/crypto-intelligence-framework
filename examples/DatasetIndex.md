@@ -9,8 +9,8 @@ structured against the `docs/` ontology.
 This is the master curation record for the dataset stored in `examples/`: what was added per batch,
 how the taxonomy is distributed, where the gaps are, and what is queued next.
 
-**Batches loaded:** Batch 01 (8 projects, source: Deep Research / Gemini) · Batch 02 (10 projects, source: Web research) · Deep Dossiers (7: Ethereum, Solana, BNB Chain, Cardano, Avalanche, Polkadot, Cosmos — source: Deep Research / Gemini).
-**Total curated projects: 25.**
+**Batches loaded:** Batch 01 (8 projects, source: Deep Research / Gemini) · Batch 02 (10 projects, source: Web research) · Deep Dossiers (8: Ethereum, Solana, BNB Chain, Cardano, Avalanche, Polkadot, Cosmos, dYdX — source: Deep Research / Gemini).
+**Total curated projects: 25** _(dYdX D8 supersedes the Batch-02 dYdX Summary — same project, not double-counted)_.
 
 ## Curation Tiers
 _How each project is captured (see `docs/Protocol/` for the runbooks)._
@@ -35,6 +35,7 @@ _Tier: Deep · anchor projects with full causal history._
 | D5 | Avalanche | Layer 1 / Metastable-consensus multi-chain (Subnet/L1) + RWA-TradFi | 2018– | Deep Research (Gemini) | `CaseStudies/Avalanche.md` | `doc_backup/deep/Avalanche_2026-07_gemini.docx` (rebuilt; prior PDF retained) |
 | D6 | Polkadot | Layer 0 / Heterogeneous-sharding + shared-security (Relay/parachains) | 2016– | Deep Research (Gemini) | `CaseStudies/Polkadot.md` | `doc_backup/deep/Polkadot_2026-07_gemini.docx` |
 | D7 | Cosmos | Layer 0 / Appchain "Internet of Blockchains" (CometBFT/SDK/IBC) | 2014– | Deep Research (Gemini) | `CaseStudies/Cosmos.md` | `doc_backup/deep/Cosmos_2026-07_gemini.docx` |
+| D8 | dYdX | DeFi / Perp-derivatives DEX (order-book appchain → RWA pivot) | 2017– | Deep Research (Gemini) | `CaseStudies/dYdX.md` | `doc_backup/deep/dYdX_2026-07_gemini.docx` |
 
 ---
 
@@ -75,7 +76,7 @@ _Promoted from the Batch 01 candidate queue. Provenance is web research, **not**
 | 12 | Lido | Liquid Staking | 2020– | P1 | `Pioneer/Lido.md` |
 | 13 | Uniswap | DeFi / AMM | 2018– | P1 | `Pioneer/Uniswap.md` |
 | 14 | World Network (Worldcoin) | Identity | 2019– | P1 | `Pioneer/WorldNetwork-Worldcoin.md` |
-| 15 | dYdX | DeFi / Appchain | 2017– | P1 | `Pioneer/dYdX.md` |
+| 15 | dYdX | DeFi / Appchain | 2017– | P1 | `Pioneer/dYdX.md` → **superseded by Deep D8** `CaseStudies/dYdX.md` |
 | 16 | Ethena | DeFi / Stablecoin | 2023– | P2 | `Pioneer/Ethena.md` |
 | 17 | Berachain | Layer 1 (Proof-of-Liquidity) | 2021– | P2 | `Pioneer/Berachain.md` |
 | 18 | Optimism | Layer 2 (OP Stack / Superchain) | 2019– | P2 | `Pioneer/Optimism.md` |

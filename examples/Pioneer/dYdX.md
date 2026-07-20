@@ -7,6 +7,11 @@
 
 > Knowledge artifact (real curated data), not a documentation container. Conforms to `templates/ProjectTemplate.md` and links back to the ontology it instantiates.
 
+> **⚠️ SUPERSEDED by the Deep dossier — see `examples/CaseStudies/dYdX.md` (D8).** This Batch-02 Summary is
+> retained for provenance (per the Ingest-Deep runbook: keep both, do not delete). For the full causal history
+> — Hyperliquid disruption, the 75%-buyback tokenomics reform, and the Arcus/Robinhood RWA pivot — use the Deep
+> case study.
+
 ---
 
 ## Identity
