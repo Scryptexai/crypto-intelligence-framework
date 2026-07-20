@@ -25,6 +25,8 @@ _ref: `docs/Ontology/Identity.md`_
   Habermeier**, **Peter Czaban**. **Web3 Foundation** (Zug, Swiss, 2017) + **Parity Technologies** (2015, d/h
   Ethcore; CEO awal **Jutta Steiner**).
 - **Konsensus/stack:** **NPoS (Nominated Proof-of-Stake)**; **Substrate SDK** (Rust).
+- **Snapshot (24 Mei 2026):** market cap **$2.172.113.802** (peringkat **#43** global); pasokan beredar
+  **1.685.164.169 DOT**; max supply **2,1 miliar DOT**.
 - **Innovation archetype:** **First Mover** dalam **heterogeneous sharding + shared security** & forkless
   runtime upgrades. → `docs/Innovation/FirstMover.md`, `docs/Innovation/CategoryCreator.md`.
 
@@ -104,9 +106,9 @@ di sana dilihat dari sisi tata kelola Ethereum & EIP-999; di sini dari sisi korb
 
 **Putaran lanjutan:**
 - **Private Sale 2** (27 Jun 2019): **$60 juta** *(INKONSISTENSI: sebagian sumber $43 juta — evidence LOW)*;
-  500,000 old DOT (5%); $1,20/new DOT; investor **Fundamental Labs**.
-- **Private Sale 3** (27 Jul 2020): **$42,76 juta** *(sebagian $43–47 juta — LOW)*; 34 juta new DOT (3,4%);
-  $1,25/new DOT; lock 5 bulan; investor **Continue Capital**.
+  500,000 old DOT (= 50 juta new DOT, 5%); $1,20/new DOT; valuasi penjualan **$1,2 miliar**; investor **Fundamental Labs**.
+- **Private Sale 3** (27 Jul 2020): **$42,76 juta** *(sebagian $43–47 juta — LOW)*; 340,000 old DOT (= 34 juta
+  new DOT, 3,4%); $1,25/new DOT; valuasi penjualan **$1,25 miliar**; lock 5 bulan; investor **Continue Capital**.
 - **Strategic** (2022): $4 juta.
 - **INKONSISTENSI total dana:** Crunchbase/Cryptorank **$327,13 juta** (12 putaran) vs Alpha Growth **$665,4
   juta** — tanpa audit kas resmi W3F. **Evidence: LOW.** → `docs/Research/Verification.md`.

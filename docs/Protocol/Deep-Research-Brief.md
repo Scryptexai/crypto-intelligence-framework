@@ -79,3 +79,44 @@ Bare facts without causality are not useful to this system.
 ## Writing rules (from the brief)
 Not an article, summary, or promotion. Always explain cause→effect, industry context, impact, and lesson.
 Long and complete is better than losing a small but important detail. Cross-verify; never rely on one source.
+
+## Input Formatting Contract (source authoring — WAJIB)
+
+The report is written **for machine reasoning, not human readers**, and is parsed by `tools/extract.py`. To
+keep extraction **lossless and unambiguous**, the source document (`.docx`, exported from the research prompt)
+MUST follow this contract. Reports that ignore it still work but risk value↔label mis-association.
+
+1. **`.docx`, markdown-only, single column.** No images, no ASCII/box-drawing diagrams, no multi-column layout,
+   no inline citation chips (`[span_1]`, `[1]`, footnote markers) — paste as plain text (Ctrl+Shift+V) to strip
+   grounding chips before export.
+2. **No tables.** All tabular data as nested **`Label: Value`** bullets — this is the single most important rule.
+   A Word table flattens to cell-by-cell text on extraction and its column↔row association is lost. Example:
+   ```
+   - Funding Round: Seed
+     - Date: April 2018
+     - Amount: $3,170,000
+     - Lead Investor: Multicoin Capital
+   ```
+3. **Numbered headings, one line each:** `# 1 Executive Summary` … `# 23 Karya yang dikutip`. Never split a
+   heading across lines or renumber. (Word heading styles are fine; the number+title is what matters.)
+4. **One fact per line/bullet.** Numbers with units + full dates. Never round away or drop a figure.
+5. **Flag conflicts, don't smooth them:** write `INKONSISTENSI: …` + `Evidence Level: LOW`. Never fabricate.
+6. **§15 = 8 POVs, separated:** Founder, VC, Retail, Community, Developer, Institution, Validator, Builder —
+   each with Verdict + Alasan + Tingkat Keyakinan.
+7. **§23 Karya yang dikutip:** numbered source list `Title — URL`, no inline chips.
+
+The canonical ready-to-use research prompt embeds this contract in its `FORMATTING CONTRACT` block.
+
+## Ingest tooling (deterministic, no LLM/API)
+
+Support tooling for the `Ingest-Deep` runbook lives in `tools/` and is quality-preserving (it never writes the
+dossier — synthesis stays human/LLM reasoning):
+
+- **`tools/extract.py`** — `.docx`/`.pdf` → clean reflowed markdown. Detects `N Title` headings, strips citation
+  chips, and reconstructs any legacy Word tables **table-aware** (`<w:tbl>/<w:tr>/<w:tc>` → proper rows) so no
+  cell is scrambled. This is step 1 of the runbook (also archive the original under `doc_backup/`).
+- **`tools/reconcile.py`** — audit stamp. Diffs the extracted source against the finished dossier and reports
+  which **key figures** (currency, %, unit-suffixed magnitudes) are not represented in the dossier. Unit-aware
+  (`juta`=1e6, `miliar/mrd`=1e9) to avoid format-only false positives. Run after writing each dossier; a clean
+  report is the per-ingest fidelity proof for later audit. Heuristic (flags for human review), not a correctness
+  proof — a rounded value (e.g. `$72,248,571 → $72,25 juta`) is a faithful match, not a miss.
