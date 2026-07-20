@@ -9,8 +9,8 @@ structured against the `docs/` ontology.
 This is the master curation record for the dataset stored in `examples/`: what was added per batch,
 how the taxonomy is distributed, where the gaps are, and what is queued next.
 
-**Batches loaded:** Batch 01 (8 projects, source: Deep Research / Gemini) · Batch 02 (10 projects, source: Web research) · Deep Dossiers (4: Ethereum, Solana, BNB Chain, Cardano — source: Deep Research / Gemini).
-**Total curated projects: 22.**
+**Batches loaded:** Batch 01 (8 projects, source: Deep Research / Gemini) · Batch 02 (10 projects, source: Web research) · Deep Dossiers (5: Ethereum, Solana, BNB Chain, Cardano, Avalanche — source: Deep Research / Gemini).
+**Total curated projects: 23.**
 
 ## Curation Tiers
 _How each project is captured (see `docs/Protocol/` for the runbooks)._
@@ -32,6 +32,7 @@ _Tier: Deep · anchor projects with full causal history._
 | D2 | Solana | Layer 1 / High-Performance Monolithic Platform | 2017– | Deep Research (Gemini) | `CaseStudies/Solana.md` | `doc_backup/deep/Solana_2026-07_gemini.docx` |
 | D3 | BNB Chain | Layer 1 EVM (Exchange-backed) + modular suite (opBNB/Greenfield) | 2017– | Deep Research (Gemini) | `CaseStudies/BNBChain.md` | `doc_backup/deep/BNBChain_2026-07_gemini.docx` |
 | D4 | Cardano | Layer 1 / Peer-reviewed EUTXO platform (Ouroboros PoS) | 2015– | Deep Research (Gemini) | `CaseStudies/Cardano.md` | `doc_backup/deep/Cardano_2026-07_gemini.pdf` |
+| D5 | Avalanche | Layer 1 / Metastable-consensus multi-chain (Subnet/L1) + RWA-TradFi | 2018– | Deep Research (Gemini) | `CaseStudies/Avalanche.md` | `doc_backup/deep/Avalanche_2026-07_gemini.pdf` |
 
 ---
 
@@ -108,7 +109,8 @@ _Progress against the gaps identified in Batch 01._
 
 ### Remaining / New Gaps (untuk batch berikutnya)
 - **ZK Privacy** — protokol privasi transaksi berbasis ZKP.
-- **RWA (Real-World Assets)** — tokenisasi aset dunia nyata sebagai kategori tersendiri.
+- **RWA (Real-World Assets)** — ⚠️ *sebagian*: adopsi RWA/TradFi institusional terisi oleh **Avalanche** (Deep D5:
+  Evergreen/AvaCloud, Progmat $2,8 mrd, JPMorgan Onyx); RWA sebagai **kategori Summary tersendiri** masih terbuka.
 - **Gaming / NFT Infrastructure** — belum terwakili.
 - **AI x Crypto** — kategori baru yang berkembang pesat.
 
