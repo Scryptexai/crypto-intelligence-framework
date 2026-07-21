@@ -6,6 +6,12 @@
 
 > This is a knowledge artifact (real curated data), not a documentation container. It conforms to `templates/ProjectTemplate.md` and links back to the ontology it instantiates.
 
+> **⚠️ SUPERSEDED by the Deep dossier — see `examples/CaseStudies/Celestia.md` (D12).** This Batch-01 Summary is
+> retained for provenance (per the Ingest-Deep runbook: keep both, do not delete). For the full causal history
+> — DAS/NMT innovation, LazyLedger→Celestia, the Genesis Drop, the Airdrop Staking Meta reflexivity, the
+> Polychain vesting-loophole extraction (~$179–242M) + Lotus CIP-31 fix + $62.5M buyback, the Value-Revenue Gap,
+> Matcha 128MB / Fibre 1 Tb/s, and the EigenDA/Avail DA competition — use the Deep case study.
+
 ---
 
 ## Identity

@@ -9,8 +9,8 @@ structured against the `docs/` ontology.
 This is the master curation record for the dataset stored in `examples/`: what was added per batch,
 how the taxonomy is distributed, where the gaps are, and what is queued next.
 
-**Batches loaded:** Batch 01 (8 projects, source: Deep Research / Gemini) · Batch 02 (10 projects, source: Web research) · Deep Dossiers (11: Ethereum, Solana, BNB Chain, Cardano, Avalanche, Polkadot, Cosmos, dYdX, Aave, ether.fi, EigenLayer — source: Deep Research / Gemini).
-**Total curated projects: 26** _(D8 dYdX, D9 Aave and D11 EigenLayer supersede their Batch Summaries — same projects, not double-counted; D10 ether.fi is a new project)_.
+**Batches loaded:** Batch 01 (8 projects, source: Deep Research / Gemini) · Batch 02 (10 projects, source: Web research) · Deep Dossiers (12: Ethereum, Solana, BNB Chain, Cardano, Avalanche, Polkadot, Cosmos, dYdX, Aave, ether.fi, EigenLayer, Celestia — source: Deep Research / Gemini).
+**Total curated projects: 26** _(D8 dYdX, D9 Aave, D11 EigenLayer and D12 Celestia supersede their Batch Summaries — same projects, not double-counted; D10 ether.fi is a new project)_.
 
 ## Curation Tiers
 _How each project is captured (see `docs/Protocol/` for the runbooks)._
@@ -39,6 +39,7 @@ _Tier: Deep · anchor projects with full causal history._
 | D9 | Aave | DeFi / Money-market lending (Flash Loans, GHO, V4 Hub-and-Spoke) | 2017– | Deep Research (Gemini) | `CaseStudies/Aave.md` | `doc_backup/deep/Aave_2026-07_gemini.docx` |
 | D10 | ether.fi | DeFi / Liquid Restaking (LRT) + DeFi Neobank (Stake/Liquid/Cash) | 2022– | Deep Research (Gemini) | `CaseStudies/EtherFi.md` | `doc_backup/deep/EtherFi_2026-07_gemini.docx` |
 | D11 | EigenLayer | Infrastructure / Restaking pioneer → EigenCloud (verifiable AI/compute) | 2021– | Deep Research (Gemini) | `CaseStudies/EigenLayer.md` | `doc_backup/deep/EigenLayer_2026-07_gemini.docx` |
+| D12 | Celestia | Modular / Data Availability (sovereign alt-DA; DAS/NMT; Fibre 1 Tb/s) | 2019– | Deep Research (Gemini) | `CaseStudies/Celestia.md` | `doc_backup/deep/Celestia_2026-07_gemini.docx` |
 
 ---
 
@@ -48,7 +49,7 @@ _Raw source archived: `doc_backup/batch/Batch-01_Kurasi-Dataset_2026-07_gemini.p
 
 | # | Project | Category | Era | Priority | File |
 |---|---------|----------|-----|----------|------|
-| 1 | Celestia | Modular / Data Availability | 2019– | P0 | `Pioneer/Celestia.md` |
+| 1 | Celestia | Modular / Data Availability | 2019– | P0 | `Pioneer/Celestia.md` → **superseded by Deep D12** `CaseStudies/Celestia.md` |
 | 2 | Synthetix | DeFi (DeFi Pioneer) | 2017– | P0 | `Pioneer/Synthetix.md` |
 | 3 | Helium | DePIN (IoT & Wireless) | 2013– | P0 | `Pioneer/Helium.md` |
 | 4 | EigenLayer | Infrastructure / Restaking | 2021– | P0 | `Pioneer/EigenLayer.md` → **superseded by Deep D11** `CaseStudies/EigenLayer.md` |
