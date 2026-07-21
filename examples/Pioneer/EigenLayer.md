@@ -6,6 +6,12 @@
 
 > This is a knowledge artifact (real curated data), not a documentation container. It conforms to `templates/ProjectTemplate.md` and links back to the ontology it instantiates.
 
+> **⚠️ SUPERSEDED by the Deep dossier — see `examples/CaseStudies/EigenLayer.md` (D11).** This Batch-01 Summary is
+> retained for provenance (per the Ingest-Deep runbook: keep both, do not delete). For the full causal history
+> — UW origin, restaking/intersubjective forking, EigenDA, the 17 Apr 2025 slashing-induced TVL realignment
+> ($20.09B → $4.3–8.9B), the Justin Drake/Dankrad Feist neutrality scandal, the 25% layoff + EigenCloud pivot
+> (verifiable AI/AgentKit), and the Symbiotic/Karak restaking war — use the Deep case study.
+
 ---
 
 ## Identity
