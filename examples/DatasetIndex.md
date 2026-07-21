@@ -28,7 +28,7 @@ _Tier: Deep · anchor projects with full causal history._
 
 | # | Project | Category | Era | Source | File | Raw source |
 |---|---------|----------|-----|--------|------|-----------|
-| D1 | Ethereum | Layer 1 / Smart-Contract Platform | 2013– | Deep Research (Gemini) | `CaseStudies/Ethereum.md` | `doc_backup/deep/Ethereum_2026-07_gemini.pdf` |
+| D1 | Ethereum | Layer 1 / Smart-Contract Platform | 2013– | Deep Research (Gemini) | `CaseStudies/Ethereum.md` | `doc_backup/deep/Ethereum_2026-07_gemini.docx` (rebuilt; prior PDF retained) |
 | D2 | Solana | Layer 1 / High-Performance Monolithic Platform | 2017– | Deep Research (Gemini) | `CaseStudies/Solana.md` | `doc_backup/deep/Solana_2026-07_gemini.docx` |
 | D3 | BNB Chain | Layer 1 EVM (Exchange-backed) + modular suite (opBNB/Greenfield) | 2017– | Deep Research (Gemini) | `CaseStudies/BNBChain.md` | `doc_backup/deep/BNBChain_2026-07_gemini.docx` |
 | D4 | Cardano | Layer 1 / Peer-reviewed EUTXO platform (Ouroboros PoS) | 2015– | Deep Research (Gemini) | `CaseStudies/Cardano.md` | `doc_backup/deep/Cardano_2026-07_gemini.docx` (rebuilt; prior PDF retained) |

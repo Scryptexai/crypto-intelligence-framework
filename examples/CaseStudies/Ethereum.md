@@ -1,11 +1,15 @@
 # Ethereum — Deep Case Study
 
 **CIF Dataset — Deep Dossier · Tier: Deep (anchor project)**
-**Source:** Deep Research (Gemini) — *"Laporan Riset Historis dan Analisis Arsitektural Protokol Ethereum:
-Struktur Kausalitas Tata Kelola, Evolusi Tokenomics, dan Dinamika Komputer Dunia (2013–2026)"*.
+**Source:** Deep Research (Gemini) — *"Laporan Intelijen Crypto: Rekonstruksi Historis, Tokenomika, dan Evolusi
+Sistemik Ethereum"* (no-table `.docx` rebuild) — merged with the prior comprehensive report (`.pdf`) that contributed
+the Konflik-Zug genealogy, DAO/Parity governance-maturation, Krisis-Kas 2014, and 5-episode price-causality depth.
 **Pipeline position:** Applications layer — the richest anchor artifact, structured against the full `docs/`
 ontology and used as a primary analog for reasoning.
-**Raw source archived:** `doc_backup/deep/Ethereum_2026-07_gemini.pdf` (+ `.md`).
+**Raw source archived:** `doc_backup/deep/Ethereum_2026-07_gemini.docx` (+ `.md` text extraction) — **rebuilt from the
+higher-fidelity no-table `.docx`; prior `.pdf` retained** at `doc_backup/deep/Ethereum_2026-07_gemini.pdf`.
+**Input note:** authored in the CIF no-table contract; extracted via `tools/extract.py` (0 tables, 0 chips,
+23 sections); fidelity checked with `tools/reconcile.py`.
 
 > Knowledge artifact (real curated data), not a documentation container. This is a **deep dossier**: it
 > preserves *causality* (why events happened), which is the raw material for prediction. Conforms to
@@ -87,11 +91,24 @@ Crowdsale **22 Juli – 2 September 2014** (pra-TGE).
 | Kontributor awal | 6.009.990,50 ETH (8,3%) |
 | **Total pasokan genesis** | **72.009.990,50 ETH** |
 
+**Hibah strategis:** **Peter Thiel Fellowship $100.000** (Jun 2014) ke Vitalik untuk pengembangan platform dasar.
+
 ### Krisis Kas 2014–2015 — *causal event*
 EF menyimpan seluruh dana dalam **BTC**. Bear market (runtuhnya Mt. Gox) menjatuhkan BTC >80% → runway EF
 menipis, terjadi PHK & potong gaji. **Kausalitas jangka panjang:** trauma ini menjelaskan mengapa di tiap
 puncak bull (2017, 2021) EF rutin **menjual OTC puluhan ribu ETH** ke fiat — tindakan defensif (sering
 dikritik ritel sebagai "menekan harga"). → lihat `docs/Ontology/Risks.md` (treasury risk).
+
+### Pivot Perbendaharaan ke Native Yield (2025–2026) — *causal evolution*
+Reformasi kas: alih-alih **menjual spot** (yang dulu menekan harga), EF kini **mendelegasikan ETH ke staking +
+DeFi lending terkurasi** untuk membiayai operasi dari *native yield* — menghentikan trauma "EF menjual di puncak":
+- **Feb 2025:** **45.000 ETH** ke **Spark, Aave Prime, Aave Core, Compound** (kredit DeFi).
+- **Okt 2025:** **2.400 ETH + $6 juta** stablecoin ke **Morpho** (likuiditas).
+- **Feb 2026:** **70.000 ETH** ke kontrak staking institusional terdistribusi (deposit tahap-1 **2.016 ETH**, 24 Feb).
+- **8 Apr 2026:** penjualan kas operasional **terakhir** 5.000 ETH → **$11,1 juta** (~$2.220,76/ETH).
+
+*Pelajaran kausal:* treasury besar bergeser dari **likuidasi spot** ke **yield-bearing self-funding** — sinyal
+kematangan + penghapusan tekanan-jual reputasional. → `examples/CaseStudies/Aave.md`, `docs/Ontology/Revenue.md`.
 
 ## 6. Technology & Architecture — Timeline Hard Fork
 _ref: `docs/Ontology/Technology.md`, `docs/TokenLifecycle/*`_
@@ -105,12 +122,18 @@ _ref: `docs/Ontology/Technology.md`, `docs/TokenLifecycle/*`_
 | Muir Glacier | 2 Jan 2020 | Penundaan difficulty bomb |
 | Beacon Chain | 1 Des 2020 | Rantai PoS paralel |
 | London | 5 Agu 2021 | **EIP-1559** (restrukturisasi fee market + burn) |
-| The Merge | 15 Sep 2022 | Transisi total ke **PoS** |
+| The Merge | 15 Sep 2022 | Transisi total ke **PoS** (konsumsi energi **−99,9%**) |
 | Shapella | 12 Apr 2023 | Pembukaan withdrawal staking |
 | Dencun | 13 Mar 2024 | **Proto-Danksharding (EIP-4844)**, blob space |
-| Pectra | 7 Mei 2025 | EIP-7251 (naik batas stake); EIP-7702 (account abstraction) |
-| Fusaka | 3 Des 2025 | PeerDAS, ePBS |
-| Glamsterdam | ~pertengahan 2026 | Eksekusi paralel; gas limit blok 200M (rencana) |
+| Pectra | 7 Mei 2025 | **EIP-7251 (MaxEB)** 32→**2.048 ETH** (konsolidasi validator); **EIP-7702** (EOA→smart-wallet sementara); **EIP-2537** (precompile BLS12-381); **EIP-7610** (cegah overwrite akun, persiapan Verkle) |
+| Fusaka | 3 Des 2025 | **EIP-7594 (PeerDAS)** data-availability sampling; **EIP-7691** blob per-blok target 6→**16** (maks 24); gas limit L1 45M→**150M** |
+| Glamsterdam | ~pertengahan 2026 | **ePBS** (Enshrined Proposer-Builder Separation); eksekusi paralel L1; native ZK proving |
+
+**Keluarga standar ERC (moat komposabilitas):** **ERC-20** (fungible, Nov 2015, Vogelsteller/Buterin) · **ERC-721**
+(NFT, Jan 2018) · **ERC-1155** (multi-token, Enjin, −60% biaya batch) · **ERC-2612** (permit EIP-712) · **ERC-3009**
+(transfer-with-authorization, dipakai USDC) · **ERC-4337** (account abstraction tanpa ubah konsensus) · **ERC-4626**
+(tokenized vault, standar yield DeFi) · **ERC-7683** (cross-chain intent, Across/Uniswap) · **ERC-7802** (crosschain
+mint/burn native). *Standardisasi bottom-up (ERC/EIP) = inovasi tanpa intervensi tim inti (§14 rule).*
 
 ### Paradoks Skalabilitas: Modular vs Monolitik
 Rencana awal **Execution Sharding** (64 shard) ditinggalkan karena kompleksitas sinkronisasi lintas-shard.
@@ -159,6 +182,27 @@ _ref: `docs/Ontology/Ecosystem.md`, `docs/Ontology/Adoption.md`, `docs/Ontology/
 - **RWA:** dominasi institusional — **BlackRock BUIDL** (Mar 2024, ERC-20, Securitize + BNY Mellon, SEC),
   AUM $2,4–2,9 miliar (2026); komposabilitas instan dengan USDC. → `docs/Ontology/Revenue.md`.
 
+### Lanskap L2 (30 Mei 2026) — TVS kolektif **$48,78 miliar** di **118 rantai**
+| L2 | TVS | Pangsa | Karakter |
+|---|---|---|---|
+| **Arbitrum One** | $20,5 mrd | **42,02%** | kedalaman TVS institusional |
+| **Base** (Coinbase) | $11,9 mrd | 24,40% | volume ritel harian tertinggi |
+| **Polygon PoS** | $4,49 mrd | 9,20% | — |
+| **Hyperliquid** | $3,46 mrd | 7,09% | perp-DEX appchain |
+| **OP Mainnet** | $1,5 mrd | 3,07% | OP Stack asli |
+| **Mantle** | $1,41 mrd | 2,90% | — |
+| **Starknet** | $525 juta | 1,08% | ZK-rollup |
+
+**Aktivitas (29 Mei 2026):** L1 **2,32 juta tx/hari** @ 2,52 Mgas/s (peran settlement) vs **L2 gabungan 27,24 juta
+tx/hari** @ 78,68 Mgas/s — bukti pergeseran eksekusi ritel ke L2. **L2 incentive war:** World Chain (gas gratis via
+World ID biometrik), Mode (80% sequencer-fee-share ke dev), Blast (auto-yield native → Lido/MakerDAO). → `examples/Pioneer/Optimism.md`, `examples/Pioneer/WorldNetwork-Worldcoin.md`.
+
+### Metrik staking (Jul 2026)
+**~40,8 juta ETH ter-stake** (**33,49%** pasokan; *alt 39,7 juta / ~32%*); **883.724 validator** (*alt 1,24 juta —
+beda indeks validator non-aktif, evidence LOW*); **entry queue 2.499.792 ETH** (tunggu **43 hari 10 jam**); **APR 2,64%**
+base (all-in **3,1–3,3%** dgn MEV-Boost). **EIP-7251 compounding (Mei 2026):** 12.431 node kelola ~10,3 juta ETH (>26%
+jaminan). **Liquid staking:** $25,6 mrd / 14,4 juta ETH di **33 protokol**; **restaking >$15 mrd** (EigenLayer). → `examples/CaseStudies/EigenLayer.md`, `examples/Pioneer/Lido.md`.
+
 ## 9. Competitor Landscape (lintas siklus)
 _ref: `docs/Valuation/Competitors.md`, `docs/Meta/MarketCycles.md`_
 
@@ -169,6 +213,10 @@ _ref: `docs/Valuation/Competitors.md`, `docs/Meta/MarketCycles.md`_
 | 3 (2020–24) | Solana, Avalanche, BNB | throughput tinggi, gas murah | Peta jalan bergeser L1-sharding → L2 rollup |
 | 4 (2024–26) | Solana (monolitik) vs L2s | 1 lapisan vs modular | Tekanan turunkan biaya DA di L1 |
 
+**Dominasi L1 terukur (Mar 2026):** **TVL** ETH >$56 mrd vs Solana $6,9 mrd / BNB $6 mrd / TRON $4,11 mrd / Ripple
+$49 juta · **stablecoin** ETH **$159 mrd** vs Solana $15 mrd / BNB $14 mrd · **RWA** ETH **$15,2 mrd** vs BNB $3 mrd /
+Solana $2,1 mrd. → ETH menang telak di jaminan nilai institusional meski kalah kecepatan/biaya di L1.
+
 ## 10. Tokenomics & Price Causality
 _ref: `docs/MarketBehaviour/*`, `docs/Reasoning/Prediction.md`, `docs/Ontology/Tokenomics.md`_
 
@@ -176,20 +224,29 @@ _ref: `docs/MarketBehaviour/*`, `docs/Reasoning/Prediction.md`, `docs/Ontology/T
 | Metrik | Nilai | Kondisi |
 |---|---|---|
 | Harga ICO | $0,311 | Jul–Sep 2014 |
-| ATL | $0,42–0,43 | Okt 2015 |
-| ATH | $4.891–4.955 | Nov 2021 & Agu 2025 |
+| **ATL** | **$0,42** *(alt $0,43)* | 21 Okt 2015 |
+| Bubble #1 | ~$1.400 | Jan 2018 (mania ICO) |
+| **ATH** | **$4.946,05** *(alt $4.953,73)* | 24 Agu 2025 (arus masuk ETF spot) |
+| Drawdown 2026 | $1.780–1.870 (−~62% dari ATH) | Q1–Q2 2026 (rotasi makro pasca-halving BTC) |
 | Pasokan maks | tak terbatas (infinite) | ditentukan aturan emisi |
-| Pasokan beredar (2026) | ~120,7 juta ETH | inflasi bersih ~0,18%/th |
+| Inflasi bersih (mid-2026) | **~0,83%/th** (Q1 2026 ~0,23%) | emisi staking > burn EIP-1559 pasca-Dencun |
+
+**Akumulasi perbendaharaan (2026) — "reserve asset" institusional:** *entitas:* **Bitmine 5,3 juta ETH** (~$11 mrd;
+4,7 juta di-stake) · **BlackRock iShares 3 juta** (~$6,5 mrd) · Coinbase Custody 4,2 juta · Binance 4 juta · Upbit
+1,7 juta. *individu:* **Rain Lohmus 250rb** (dompet terkunci, kunci hilang) · **Joseph Lubin 243rb** · **Vitalik 224rb**
+(~$475 juta, akses penuh) · Jeffrey Wilcke 116rb · James Fickel 49rb. Likuiditas bebas di CEX **anjlok ke ~16 juta ETH**
+(low multi-tahun) → memperkuat tesis **undervalued** on-chain. → `docs/MarketBehaviour/Distribution.md`, `docs/Valuation/FairValue.md`.
 
 **Kausalitas 5 episode harga:**
 1. **ICO Mania (2017):** ETH ~$1.400 (Jan 2018) — setiap ICO ERC-20 menuntut ETH → lonjakan permintaan.
 2. **Bear 2018:** <$80 akhir 2018 — tim ICO melikuidasi ETH untuk operasional + penertiban SEC.
 3. **DeFi & NFT (2020–21):** ATH $4.800+ (Nov 2021) — likuiditas global pasca-pandemi + yield farming + NFT.
 4. **Dencun (2024–26) — Hilangnya Deflasi:** sukses teknis (gas L2 turun >90%) **justru** menurunkan
-   pendapatan L1. Karena **EIP-1559 burn** sebanding kemacetan L1, migrasi transaksi ke blob space menurunkan
-   burn di bawah emisi (~1.700–1.800 ETH/hari) → ETH kembali **net-inflasi**; hilangnya narasi "Ultra Sound
-   Money" memicu underperformance vs BTC/SOL (2025–awal 2026). *Contoh utama: sukses teknis → dampak tokenomik
-   negatif tak terduga.*
+   pendapatan L1. Emisi dipangkas **~88%** pasca-Merge (pra-Merge ~4%/th, ~**13.000 ETH/hari** → pasca ~0,5%/th,
+   ~1.700–2.000 ETH/hari); **EIP-1559 burn kumulatif ~4,3–4,6 juta ETH** sejak Agu 2021 (variasi tracker ~1 juta ETH,
+   evidence LOW). Karena burn sebanding kemacetan L1, migrasi tx ke blob menurunkan burn **di bawah emisi** → ETH kembali
+   **net-inflasi** (~0,83%/th); hilangnya narasi "Ultra Sound Money" memicu underperformance vs BTC/SOL. *Contoh utama:
+   sukses teknis → dampak tokenomik negatif tak terduga.*
 5. **Yen Carry Unwind (awal 2026):** pengetatan BOJ → penutupan carry trade Yen → liquidity squeeze/derisking
    → ETH turun dari >$3.000 ke ~$1.500–1.800 (pertengahan 2026). *Contoh: korelasi makro global.* →
    `docs/MarketBehaviour/MarketCorrelation.md`.
@@ -197,7 +254,11 @@ _ref: `docs/MarketBehaviour/*`, `docs/Reasoning/Prediction.md`, `docs/Ontology/T
 ## 11. Current State (2025–2026)
 _ref: `docs/Ontology/Metrics.md`, `docs/Ontology/Team.md`, `docs/Ontology/Risks.md`_
 
-Fundamental kuat: rekor volume transaksi harian (L1+L2), dominasi stablecoin ~$160 miliar, RWA >$15 miliar.
+Fundamental kuat: rekor volume transaksi harian (L1+L2), **dominasi stablecoin ~$159 miliar** (>½ pasokan global;
+$175,72 mrd stablecoin di L1 vs $18,22 mrd di L2 per 29 Mei 2026), **RWA >$15,2 miliar**, DeFi TVL L1 >$56 miliar, ETF/ETP
+~$14 miliar. Adopsi institusi memuncak: **BlackRock iShares Staked ETH Trust (ETHB)** rilis **12 Mar 2026** ($155 juta
+arus masuk hari-1) — produk ETF pertama berdividen staking native. **~11.000 pengembang aktif** EVM (Mei 2026).
+
 Namun **krisis koordinasi EF:** restrukturisasi awal 2025 mendelegasikan riset inti ke luar yayasan → hengkang
 peneliti senior (Carl Beek, Julian Ma, koordinator hard fork **Tim Beiko**) pertengahan 2026. Keragaman klien
 (Geth, Nethermind, Besu) menjaga operasional, tetapi hilangnya penengah mempersulit koordinasi upgrade
@@ -235,6 +296,12 @@ _ref: `docs/Patterns/*`, `docs/Reasoning/*` — bahan analog untuk prediksi proy
    `Innovation/CompetitiveMoat.md`
 6. **Sentralisasi efisiensi-modal** (Lido) memicu mitigasi terdistribusi (DVT). → `Patterns/NetworkEffect.md`
 7. **Aset kripto makin terkorelasi makro global** (Yen carry). → `MarketBehaviour/MarketCorrelation.md`
+8. **Modular L2 Migration → L1 Burn Dampening** *(crown tokenomics pattern)* — blob (EIP-4844) turunkan biaya DA L2 →
+   migrasi tx ritel keluar L1 → kepadatan L1 mereda → burn EIP-1559 anjlok < emisi staking → pasokan balik ke
+   inflasi lunak (~0,83%/th). *Sukses skalabilitas menggerus mekanisme value-accrual.* → `docs/Reasoning/Prediction.md`.
+9. **Open Institutional Staking Accumulation Loop** — persetujuan ETF spot → hapus risiko klasifikasi hukum → ETF
+   dividen-staking native → kustodian tarik ETH dari spot → kunci ke Beacon Chain → float bebas CEX anjlok → kepercayaan
+   operator institusi naik. *Regulasi → penyerapan pasokan struktural.* → `docs/Patterns/Flywheel.md`, `docs/Success/Adoption.md`.
 
 ## 14. Transferable Intelligence (§20)
 _ref: `docs/Reasoning/*` — rule candidates untuk mengevaluasi project baru._
@@ -246,7 +313,14 @@ Rule kandidat (berlaku umum, layak jadi aturan reasoning):
   upgrade menggeser aktivitas ke luar mekanisme value-accrual?
 - **R3:** Inovasi efisiensi-modal akan mengonsentrasikan sumber daya → nilai proyek harus dinilai bersama
   mitigasi desentralisasinya (ada/tidak).
-- **R4:** Treasury aset-tunggal volatil = risiko kelangsungan; diversifikasi = sinyal kematangan.
+- **R4:** Treasury aset-tunggal volatil = risiko kelangsungan; diversifikasi + **native-yield self-funding** (bukan
+  likuidasi spot) = sinyal kematangan. *(EF pivot 2025–26.)*
+- **R5 — Developer Retention Law:** nilai jangka-panjang L1 ∝ retensi pengembang aktif (**>5.000**); gagal membangun
+  komunitas dev mandiri dalam **3 tahun** pasca-mainnet → proyeksi kematian sistemik. *(ETH ~11.000 dev.)*
+- **R6 — Security Budget Dominance:** L1 smart-contract wajib pimpin pangsa **stablecoin >40% global** untuk bertahan
+  sebagai lapisan penyelesaian utama; gagal → rotasi jaminan ke pesaing.
+- **R7 — EIP-1559 Burn Sensitivity (khusus-EVM):** deflasi hanya bekerja bila gas L1 di atas ambang kemacetan; ukur
+  **penetrasi tx L2 dinamis**, bukan volume total — sukses L2 dapat mematikan tesis deflasi.
 
 Khusus-Ethereum (jangan digeneralisasi): skala efek jaringan EVM, momen historis 2014–2015, dan status
 "reserve asset" DeFi — sulit direplikasi project baru.
@@ -296,5 +370,11 @@ _Deep Research provenance. The source report cites **81 references**; key primar
 - Eight Ethereum Foundation Researchers Have Quit in 2026 — Phemex — https://phemex.com/blogs/ethereum-foundation-researchers-quitting-2026
 - Ether Total Supply — Etherscan — https://etherscan.io/stat/supply
 - ETH price — CoinGecko — https://www.coingecko.com/en/coins/ethereum
+- The Eight Kings: The Split of Ethereum Founders — ChainCatcher — https://www.chaincatcher.com/en/article/2194242
+- What is the Ethereum Pectra Upgrade — CoinGecko Learn — https://www.coingecko.com/learn/what-is-ethereum-pectra-upgrade
+- L2BEAT — TVS Metrics & Scaling Activity — https://l2beat.com/scaling/tvs
+- World Chain vs Mode vs Blast — Newer L2s Compared — Eco — https://eco.com/support/en/articles/14798713-world-chain-vs-mode-vs-blast-2026-newer-l2s-compared
+- Ethereum Three-Body Problem (supply/fee/ETF) — Phemex — https://phemex.com/blogs/ethereum-three-body-problem-supply-fee-etf-march-19
 
-_(Full 81-source bibliography retained in the original Deep Research report.)_
+_(Full bibliography retained in the original Deep Research reports — no-table `.docx` rebuild (≈40 sources) + prior
+`.pdf` (81 sources) — both archived at `doc_backup/deep/Ethereum_2026-07_gemini.{docx,md,pdf}`.)_
