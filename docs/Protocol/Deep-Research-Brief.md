@@ -143,3 +143,18 @@ and cross-linked, but **not** distilled/condensed and without novel synthesis or
 Run a periodic LLM/human QC pass on a sample (`tools/reconcile.py` helps), and refine category/era in
 `DatasetIndex.md` when convenient. Use this when Claude budget is the bottleneck; use the hand-authored
 `Ingest-Deep` role when a project deserves the extra distillation (top anchors).
+
+### One-command pipeline & the three inbox types
+
+`./run.sh` (repo root) chains ingest → build_json → backtest. Drop raw reports by type; ingest is
+**anti-duplicate** (existing outputs are skipped, so re-running only processes newly added files):
+
+| Inbox | Type | Contract | Output |
+|-------|------|----------|--------|
+| `doc_backup/inbox/deep/` | deep (1 project) | 22-section brief | `examples/CaseStudies/<P>.md` |
+| `doc_backup/inbox/batch/` | batch (N projects) | each project starts with a line `PROJECT: <Name>` | `examples/Pioneer/<P>.md` |
+| `doc_backup/inbox/sentiment/` | sentiment (1 project) | `docs/Protocol/Sentiment-Brief.md` (8 sections) | `examples/Sentiment/<P>.md` |
+
+Fundamental (`CaseStudies/`) and Sentiment (`Sentiment/`) are **separate modules** linked both ways — contexts
+never mix. `build_json.py` auto-discovers all three and emits `poc/cif.json` (schema `cif-export/1`) plus split
+JSONs for any LLM/app that needs tracking · signal · prediction data (see `poc/README.md`).

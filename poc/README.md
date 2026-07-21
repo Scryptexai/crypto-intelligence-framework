@@ -36,5 +36,30 @@ and **P4 (airdrop → dump)**, confidence **HIGH**, and generates the tracking p
 
 ## Data source of truth
 
-Nothing here is hand-maintained data — re-run `tools/build_json.py` after any ingest and the PoC reflects the
-current repo. Patterns are edited in `examples/PatternRegistry.md`; projects come from `examples/DatasetIndex.md`.
+Nothing here is hand-maintained data — re-run `./run.sh` (or `tools/build_json.py`) after any ingest and the
+PoC reflects the current repo. Patterns are edited in `examples/PatternRegistry.md`; projects come from
+`examples/DatasetIndex.md` + auto-discovered `examples/CaseStudies/`; sentiment from `examples/Sentiment/`.
+
+## Consuming the data (for LLMs / apps that need tracking · signal · prediction)
+
+`poc/cif.json` is a single self-describing bundle (`data.js` is the same, wrapped as `window.CIF`). Schema
+`cif-export/1`:
+
+```jsonc
+{
+  "meta":     { "schema", "generated", "projects", "deep", "summary", "sentiment", "patterns", "source" },
+  "projects": [ { "n": name, "tier": "Deep|Summary", "file", "cat", "era",
+                  "tags": [ … ],           // content-derived mechanics tags (analog matching)
+                  "sentiment": "examples/Sentiment/<P>.md"   // present only if a companion exists
+                } ],
+  "patterns": [ { "id", "nm", "triggers": [ … ], "instances", "confidence": "HIGH|MEDIUM|LOW",
+                  "analogs": [ … ], "src", "val", "pred", "watch": [ … ] } ],
+  "sentiment":[ { "project", "file" } ]
+}
+```
+
+Typical use: given a new project's `{category, tags}`, an app/LLM (1) retrieves analog `projects` by tag
+overlap, (2) fires `patterns` whose `triggers` intersect the tags → `pred` + `confidence` + `watch`, (3) reads
+the linked `file`s for deep causal + sentiment context. This is exactly what `intake.html` does and what
+`tools/backtest.py` scores. Also emitted: `projects.json`, `patterns.json`, `sentiment.json` (the same data,
+split) for pipelines that want one concern at a time.
