@@ -27,8 +27,11 @@ import re
 import sys
 import zipfile
 
-# 23 canonical CIF section titles (substring match on numbered heading lines).
+# Canonical CIF section titles (substring match on numbered heading lines).
+# Covers both the 23 deep-dossier sections and the 8 sentiment sections so the
+# same normaliser detects headings for either document type.
 SECTION_TITLES = [
+    # deep (23)
     "Executive Summary", "Industry Background", "Project Origin", "Innovation Analysis",
     "Technology Evolution", "Funding Intelligence", "Community Intelligence",
     "Narrative Intelligence", "Competitive Landscape", "Product Evolution",
@@ -36,6 +39,9 @@ SECTION_TITLES = [
     "Success", "Historical Timeline", "Current Status", "Lessons Learned",
     "Knowledge Extraction", "Transferable Intelligence", "Open Questions",
     "Evidence Level", "Karya yang dikutip",
+    # sentiment (8)
+    "Overview & Coverage", "Overview and Coverage", "Sentiment Timeline", "Community Voice",
+    "Project Voice", "Divergence", "Engagement Authenticity", "Sentiment Patterns", "Provenance",
 ]
 
 CHIP_RE = re.compile(r"\[span_\d+\]\((?:start|end)_span\)|\[span_\d+\]|start_span|end_span|\[\d+\]")
