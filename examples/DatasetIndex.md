@@ -9,8 +9,8 @@ structured against the `docs/` ontology.
 This is the master curation record for the dataset stored in `examples/`: what was added per batch,
 how the taxonomy is distributed, where the gaps are, and what is queued next.
 
-**Batches loaded:** Batch 01 (8 projects, source: Deep Research / Gemini) · Batch 02 (10 projects, source: Web research) · Deep Dossiers (8: Ethereum, Solana, BNB Chain, Cardano, Avalanche, Polkadot, Cosmos, dYdX — source: Deep Research / Gemini).
-**Total curated projects: 25** _(dYdX D8 supersedes the Batch-02 dYdX Summary — same project, not double-counted)_.
+**Batches loaded:** Batch 01 (8 projects, source: Deep Research / Gemini) · Batch 02 (10 projects, source: Web research) · Deep Dossiers (9: Ethereum, Solana, BNB Chain, Cardano, Avalanche, Polkadot, Cosmos, dYdX, Aave — source: Deep Research / Gemini).
+**Total curated projects: 25** _(D8 dYdX and D9 Aave supersede their Batch Summaries — same projects, not double-counted)_.
 
 ## Curation Tiers
 _How each project is captured (see `docs/Protocol/` for the runbooks)._
@@ -36,6 +36,7 @@ _Tier: Deep · anchor projects with full causal history._
 | D6 | Polkadot | Layer 0 / Heterogeneous-sharding + shared-security (Relay/parachains) | 2016– | Deep Research (Gemini) | `CaseStudies/Polkadot.md` | `doc_backup/deep/Polkadot_2026-07_gemini.docx` |
 | D7 | Cosmos | Layer 0 / Appchain "Internet of Blockchains" (CometBFT/SDK/IBC) | 2014– | Deep Research (Gemini) | `CaseStudies/Cosmos.md` | `doc_backup/deep/Cosmos_2026-07_gemini.docx` |
 | D8 | dYdX | DeFi / Perp-derivatives DEX (order-book appchain → RWA pivot) | 2017– | Deep Research (Gemini) | `CaseStudies/dYdX.md` | `doc_backup/deep/dYdX_2026-07_gemini.docx` |
+| D9 | Aave | DeFi / Money-market lending (Flash Loans, GHO, V4 Hub-and-Spoke) | 2017– | Deep Research (Gemini) | `CaseStudies/Aave.md` | `doc_backup/deep/Aave_2026-07_gemini.docx` |
 
 ---
 
@@ -49,7 +50,7 @@ _Raw source archived: `doc_backup/batch/Batch-01_Kurasi-Dataset_2026-07_gemini.p
 | 2 | Synthetix | DeFi (DeFi Pioneer) | 2017– | P0 | `Pioneer/Synthetix.md` |
 | 3 | Helium | DePIN (IoT & Wireless) | 2013– | P0 | `Pioneer/Helium.md` |
 | 4 | EigenLayer | Infrastructure / Restaking | 2021– | P0 | `Pioneer/EigenLayer.md` |
-| 5 | Aave | DeFi (DeFi Pioneer) | 2017– | P1 | `Pioneer/Aave.md` |
+| 5 | Aave | DeFi (DeFi Pioneer) | 2017– | P1 | `Pioneer/Aave.md` → **superseded by Deep D9** `CaseStudies/Aave.md` |
 | 6 | Arweave / AO | Data Availability / Modular Compute | 2017– | P1 | `Pioneer/Arweave-AO.md` |
 | 7 | Farcaster | Social (Decentralized Social) | 2020– | P1 | `Pioneer/Farcaster.md` |
 | 8 | MakerDAO / Sky | DeFi (Decentralized Central Bank) | 2015– | P0 | `Pioneer/MakerDAO-Sky.md` |

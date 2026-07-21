@@ -6,6 +6,11 @@
 
 > This is a knowledge artifact (real curated data), not a documentation container. It conforms to `templates/ProjectTemplate.md` and links back to the ontology it instantiates.
 
+> **⚠️ SUPERSEDED by the Deep dossier — see `examples/CaseStudies/Aave.md` (D9).** This Batch-01 Summary is
+> retained for provenance (per the Ingest-Deep runbook: keep both, do not delete). For the full causal history
+> — ETHLend→Aave pivot, Flash Loans/aTokens, V4 Hub-and-Spoke, GHO, the rsETH $292M hack + DeFi United recovery,
+> and the "Aave Will Win" value-accrual reform — use the Deep case study.
+
 ---
 
 ## Identity
