@@ -1,13 +1,17 @@
 # Cardano — Deep Case Study
 
 **CIF Dataset — Deep Dossier · Tier: Deep (anchor project)**
-**Source:** Deep Research (Gemini) — *"Laporan Riset Komprehensif Cardano (ADA): Rekayasa Arsitektur,
-Tokenomika, Tata Kelola On-Chain, dan Analisis Perjalanan Historis dalam Sistem Intelijen Kripto"*.
+**Source:** Deep Research (Gemini) — *"Laporan Analisis Sistematis Jaringan Cardano (ADA): Rekayasa Arsitektur,
+Evolusi Tata Kelola, dan Masa Transisi Infrastruktur Desentralisasi"* (no-table `.docx` rebuild) — merged with the
+prior comprehensive report (`.pdf`) that contributed the Hydra/Mithril/Leios, Ouroboros-parameter, ISPO, and RealFi depth.
 **Pipeline position:** Applications layer — an anchor artifact structured against the full `docs/` ontology.
 Serves as the **peer-reviewed / formal-methods "engineering-first" L1** analog: a Fast Follower that redesigned
 from first principles (EUTXO, Ouroboros) rather than cloning EVM — contrast Ethereum (First Mover), Solana
 (hardware-limit monolith), BNB (exchange-backed EVM clone).
-**Raw source archived:** `doc_backup/deep/Cardano_2026-07_gemini.pdf` (+ `.md` text extraction).
+**Raw source archived:** `doc_backup/deep/Cardano_2026-07_gemini.docx` (+ `.md` text extraction) — **rebuilt from the
+higher-fidelity no-table `.docx`; prior `.pdf` retained** at `doc_backup/deep/Cardano_2026-07_gemini.pdf`.
+**Input note:** authored in the CIF no-table contract; extracted via `tools/extract.py` (0 tables, 0 chips,
+23 sections); fidelity checked with `tools/reconcile.py`.
 
 > Knowledge artifact (real curated data), not a documentation container. This is a **deep dossier**: it
 > preserves *causality* (why events happened), which is the raw material for prediction. Conforms to
@@ -104,21 +108,31 @@ target **10 TPS → >1.000 TPS**.
 ## 7. Funding / TGE — ICO Ritel-Sentris (2015–2017)
 _ref: `docs/Ontology/Funding.md`, `docs/Ontology/Tokenomics.md`, `docs/TokenLifecycle/TGE.md`_
 
-**Crowdsale 5 putaran (Okt 2015 – Jan 2017):** total **$62,24 juta**; **>90% investor Jepang**; harga voucher
-**$0,0024/ADA** (rasio 1:1 saat genesis; buka bursa **$0,02**). KYC ketat; **warga AS & Tiongkok dilarang**
-(mitigasi risiko sekuritas).
+**Crowdsale voucher (Sep 2015 – Jan 2017):** total **108.844,48 BTC = $62,24 juta** (avg $571,79/BTC); **>90%
+investor Jepang** via **agen penjualan fisik** (bukan ICO online); harga voucher **$0,0024/ADA**; **25.927.070.538
+ADA** redeemable. **9.912 pemilik unik** (9.835 personal + 77 company); 4 tranche (T4 terbesar 47,3% / 6.821 tiket).
+KYC ketat; **warga AS & Tiongkok dilarang** (mitigasi risiko sekuritas). **~99% voucher berhasil ditebus** di fase
+awal Byron (via Daedalus), memvalidasi eksekusi crowdsale.
 
-**Alokasi genesis** (hard cap **45 miliar ADA**; **31.112.483.745 ADA** dicetak di genesis):
+**Alokasi genesis** (hard cap **45 miliar ADA**; **31.112.484.646 ADA** dicetak di genesis):
 | Kategori | ADA | % genesis | Vesting |
 |---|---|---|---|
 | Peserta Penjualan Publik | 25.927.070.538 | **83,3%** | cair penuh sejak genesis |
-| IOG (IOHK Treasury) | 2.460.000.000 | 7,9% | 1/3 cair, 1/3 Jun 2018, 1/3 Jun 2019 |
-| Emurgo | 2.070.000.000 | 6,7% | modal komersial |
-| Cardano Foundation | 648.000.000 | 2,1% | dana abadi nirlaba |
+| IOG (IOHK Treasury) | 2.463.071.701 | 7,9% | 1/3 cair, 1/3 Jun 2018, 1/3 Jun 2019 |
+| Emurgo | 2.074.165.644 | 6,7% | modal komersial |
+| Cardano Foundation | 648.176.761 | 2,1% | dana abadi nirlaba *(INKONSISTENSI: Figment catat 640 juta; CIF pakai angka genesis presisi-Lovelace, evidence HIGH)* |
 
 *Pelajaran kausal:* **absennya VC Barat raksasa** menghindarkan ADA dari **tekanan jual (dumping)** terjadwal,
 tetapi juga **minim modal promosi & pendanaan startup dApp** — sebagian menjelaskan kelambatan DeFi (§13). →
 `docs/MarketBehaviour/Distribution.md`, `docs/Ontology/Risks.md`.
+
+### Forensik distribusi BTC crowdsale — kontroversi transparansi (2025–26) *(causal governance event)*
+Distribusi hasil crowdsale memicu **tuntutan transparansi** pertengahan 2025–awal 2026: **IOHK menerima ~54.000 BTC
+(~50% hasil)** → asimetri alokasi modal antar-pendiri diperdebatkan; **7.168 BTC** ke Cardano Foundation (Swiss),
+**1.090 BTC** ke entitas Isle of Man. Hoskinson mengklarifikasi **1.096 BTC dicairkan Mar 2016 @ $414/BTC (~$400rb)**
+untuk bayar audit crowdsale (Michael Parsons, John Maguire, Bruce Milligan), **tetapi alamat on-chain penerima akhir
+belum dipublikasi** → evidence forensik **MEDIUM** (§22). *Pelajaran: distribusi treasury pendiri era-ICO tanpa jejak
+on-chain publik menjadi liabilitas kepercayaan bertahun-tahun kemudian.* → `docs/Ontology/Governance.md`, `docs/Patterns/Failure.md`.
 
 ## 8. Tokenomics — Emisi Meluruh & Parameter Ouroboros
 _ref: `docs/Ontology/Tokenomics.md`, `docs/Ontology/Incentives.md`, `docs/Patterns/Mining.md`, `docs/MarketBehaviour/UnlockImpact.md`_
@@ -143,6 +157,8 @@ memanfaatkan liquid staking non-custodial:
 2. Jaringan memproduksi imbalan staking (~4–5% APY).
 3. Proyek mengambil **100% imbalan ADA** sebagai modal, lalu mengirim **token kustom** proporsional ke user.
 
+*(Shelley ITN 2019 memobilisasi **~40% pasokan beredar** terdelegasi ke node uji — bukti daya-tarik staking non-custodial.)*
+
 **Keberhasilan:** **tanpa risiko pokok** (jika tim kabur, user hanya kehilangan potensi yield, bukan modal);
 demokratisasi penggalangan dana tanpa dominasi VC. **Kegagalan:** **konsentrasi block-power sementara** (multi-
 pool satu tim mendistorsi indeks desentralisasi Shelley); **tanpa filter kualitas** (proyek buruk menguras
@@ -152,21 +168,34 @@ imbalan ritel lalu merilis token tanpa fungsi). *Pola reusable, layak ditiru* (�
 _ref: `docs/Ontology/Community.md`, `docs/Ontology/Governance.md`, `docs/Success/Community.md`, `docs/Patterns/Failure.md`_
 
 - **Project Catalyst** — pendanaan inovasi terdesentralisasi terbesar; **min 500 ADA** untuk propose/vote;
-  **>$130 juta** ke **>1.800 proyek** (hingga 2026), dari **Treasury on-chain**.
+  kumulatif **$131,9 juta** ke **2.221 proposal terdanai** (1.673 selesai, 290 berjalan, 253 DNF); **3.257.805 suara**
+  sepanjang seluruh fund. **ADA Army** ritel Jepang loyal (basis awal via agen luring).
 - **Zero-slashing + no lock-up** → ritel merasa aman mendelegasikan tanpa kehilangan likuiditas.
-- **Intersect MBO** (akhir 2023) — Member-Based Org yang mengalihkan kode sumber ke tangan komunitas.
+- **Intersect MBO** (akhir 2023) — Member-Based Org yang mengalihkan kode sumber ke komunitas; kini **kelola
+  perbendaharaan >345 juta ADA** + pimpin migrasi **multi-klien** (§12).
 - **Ambassador Program** (Cardano Foundation).
 
-### Krisis Fund 13 — paradoks 1-koin-1-suara *(causal event)*
-Akhir 2024, **Cardano Foundation mengerahkan 180 juta ADA (3,75% suara)** di Fund 13 → **mementahkan pilihan
-organik ritel**; proposal akar rumput berguguran. Menyingkap **paradoks plutokrasi**: pemegang koin institusional
-terbesar bisa mendikte anggaran. Respons: **Fund 14 (2025)** memangkas suara aktif yayasan ke **maks 20 juta
-ADA**. *Pelajaran:* tata kelola stake-weighted rentan menjadi plutokrasi; butuh pembatasan diri/aturan. →
+### Plutokrasi Catalyst — paradoks 1-Lovelace-1-suara *(causal event)*
+Data **Fund 10** menyingkap ketimpangan: **57.118 dompet / 4,5 miliar ADA terdaftar**, tapi hanya **13,7%** ADA
+beredar ikut voting; golongan **1–5 juta ADA (hanya 1,35% partisipan) menguasai 33% suara**. Puncaknya **Fund 13
+(9 Des 2024): Cardano Foundation kerahkan 180 juta ADA** → sepihak meloloskan **185 dari 1.800 proposal**,
+mementahkan pilihan organik. Respons: **Fund 14 (Sep 2025)** CF membatasi diri ke **satu dompet 20 juta ADA**, hanya
+jalur **"Partners & Products"** (budget 18,59 juta ADA / $12,61 juta; 131 dari 1.283 terdanai; 174.737 suara). Lalu
+**Fund 15 & 16 ditangguhkan (Mar 2026)** saat operator beralih ke CF → **jeda pendanaan** memukul builder skala menengah
+(→ verdict Builder Gagal, §16). *Pelajaran:* tata kelola stake-weighted rentan plutokrasi; butuh pembatasan diri/aturan. →
 `docs/Patterns/Failure.md`, `docs/Ontology/Governance.md`.
 
 **Voltaire (CIP-1694):** pembagian kekuasaan tripartit **DReps + SPOs + Constitutional Committee**; Konstitusi
-Digital pertama diratifikasi **Buenos Aires (akhir 2024) → on-chain awal 2025** (>75% DReps). **Plomin HF
-(Jan 2025)** mengaktifkan tata kelola penuh.
+Digital pertama diratifikasi **Buenos Aires (4–6 Des 2024) → on-chain 23 Feb 2025** (>75% DReps). **Plomin HF
+(29 Jan 2025)** mengaktifkan tata kelola penuh DReps.
+
+### Founder Governance Divestment — reset struktural 2026 *(crown governance pattern)*
+Puncak desentralisasi: **Van Rossem HF (18 Jul 2026, PV11)** = hard fork pertama yang diajukan/divoting/diratifikasi
+**sepenuhnya on-chain** (voting 13 Jul, DReps+SPOs+CC, tanpa kendali IOG) → aktif **zero-downtime**. Diikuti **IOG
+memotong pengajuan anggaran kas-nya secara sengaja** dan **mentransfer rekayasa inti** (Haskell Node, Plutus, Daedalus,
+Hydra) ke entitas eksternal **Se7en Labs & Teragone (Agu 2026)** di bawah pengawasan Intersect MBO. *Pola reusable:
+protokol matang → serahkan repo ke org berbasis-anggota → pendiri divestasi anggaran → maintenance ke spesialis eksternal
+→ kedaulatan teknis terdistribusi penuh* (§19). → `docs/Patterns/Recovery.md`, `docs/Ontology/Governance.md`.
 
 ## 11. Narrative Intelligence (peran per fase)
 _ref: `docs/Meta/Narratives.md`, `docs/Patterns/Narrative.md`, `docs/Meta/MarketCycles.md`_
@@ -189,9 +218,15 @@ _ref: `docs/Project/Roadmap.md`, `docs/Ontology/Adoption.md`_
   kompilasi menit→detik, hemat ExUnits, test runner) — dominan; **OpShin** (Python); **Scalus** (Scala 3/JVM).
 - **L2/scaling baru (2026):** **Midgard** (optimistic rollup, Anastasia Labs, deterministic fraud proofs);
   **zkFold & Eryx** (ZK compression); **Gummiworm** (rollup ala Hydra, Sundae Labs).
+- **Multi-client node diversity (2026–27):** dari **Haskell Node tunggal** (single-point-of-failure) ke **multi-
+  implementasi** — **Amaru/Acropolis (Rust)**, **Dingo (Go)** — dijadwalkan matang 2027; rekayasa diserahkan ke
+  **Se7en Labs & Teragone** (Agu 2026, §10). *Pola defensif: keragaman klien = ketahanan sistemik.*
+- **Midnight partner chain:** rantai privasi selektif (ZK) berbasis **token ganda NIGHT + DUST** & bahasa **Compact**
+  (mirip TypeScript); distribusi **Glacier Drop** lintas-8-ekosistem (ADA/BTC/ETH/SOL/XRP/BNB/AVAX/BAT) untuk memperluas
+  basis validator ke luar Cardano. → `docs/Ontology/Ecosystem.md`.
 
-*Pelajaran:* pivot dari "Haskell-only akademis" ke **multi-bahasa + L2** = koreksi strategis atas hambatan
-adopsi developer. → `docs/Innovation/ProductMarketFit.md`.
+*Pelajaran:* pivot dari "Haskell-only akademis" ke **multi-bahasa + L2 + multi-klien** = koreksi strategis atas hambatan
+adopsi developer & risiko single-client. → `docs/Innovation/ProductMarketFit.md`.
 
 ## 13. Competitive Landscape (pertengahan 2026)
 _ref: `docs/Valuation/Competitors.md`, `docs/Valuation/ComparableProjects.md`, `docs/Meta/MarketCycles.md`_
@@ -216,35 +251,40 @@ _ref: `docs/MarketBehaviour/*`, `docs/Valuation/FairValue.md`, `docs/Reasoning/P
 | Titik | Nilai | Kondisi |
 |---|---|---|
 | ICO voucher | $0,0024 | 2015–17 |
-| Buka bursa | $0,02 | Sep 2017 |
-| ATL | $0,01735 | per laporan "1 Okt 2017" — lihat catatan* |
-| Pump #1 | $1,11 | 4 Jan 2018 (histeria ritel) |
-| Crypto winter | −98% → $0,02–0,04 | 2018–2020 |
-| **ATH** | **$3,10** (MC >$90 mrd, #3 dunia) | 2 Sep 2021 (demam Alonzo + likuiditas global) |
-| Bear | ~$0,25 | akhir 2022 |
-| **5yr-low** | **$0,1611** | 18 Jun 2026 (rotasi modal ke rantai beraktivitas DeFi tinggi) |
+| Buka bursa (Bittrex) | ~$0,03 | Okt 2017 |
+| Pump #1 | **$0,72 → $0,52–1,30** | Des 2017–Jan 2018 (gelembung ritel; peak intraday ~$1,11–1,30) |
+| **ATL** | **$0,01925** | **12 Mar 2020** (likuidasi massal COVID "Black Thursday") |
+| Bear 2018 | −>90% → ~$0,04 | akhir 2018 (crypto winter) |
+| **ATH** | **$3,09** *(alt $3,10)* (MC >$90 mrd, #3 dunia) | 1 Sep 2021 (demam Alonzo + likuiditas global) |
+| Konsolidasi 2025–26 | **$0,16–0,35** (−~95% dari ATH) | pertengahan 2026 (rotasi modal ke rantai ber-DeFi tinggi) |
 
-*_Catatan kurasi:_ sumber menyebut ATL $0,01735 bertanggal "Oktober 2017", namun ini **tidak konsisten** dengan
-harga buka $0,02 (Sep 2017) dan pump $1,11 (Jan 2018) — kemungkinan besar merujuk dasar musim dingin 2018–2020.
-Nilai dipertahankan sesuai sumber; tanggal ditandai inkonsisten (evidence: LOW). → `docs/Research/Verification.md`.
+*_Catatan kurasi:_ rebuild `.docx` **menyelesaikan** inkonsistensi ATL yang ditandai versi sebelumnya (dulu tercatat
+"$0,01735 Okt 2017" — mustahil vs harga buka $0,03): ATL sebenarnya **$0,01925 pada 12 Mar 2020** (krisis likuiditas
+COVID), konsisten dengan lini masa. Evidence: HIGH. → `docs/Research/Verification.md`.
 
-**Fair value:** **MC/TVL ratio ~66,49×** (vs Ethereum <10×) — tertinggi di industri. **Overvalued** (utilitas
-riil dApp minim, bergantung efek figur Hoskinson) **vs Undervalued** (**>63% ADA** ter-stake pasif tanpa lock;
-konversi sebagian kecil ke DeFi bisa melipatgandakan TVL). → `docs/Valuation/FairValue.md`, `docs/Valuation/FDV.md`.
+**Fair value:** **MC/TVL ratio ~66,49×** (MC ~$6,194 mrd / TVL ~$137 juta; vs Ethereum <10×) — tertinggi di industri.
+**Overvalued** dari sisi pemanfaatan modal DeFi (utilitas dApp harian minim, ditopang loyalitas holder jangka panjang +
+efek figur Hoskinson) **vs Undervalued** dari sisi infrastruktur (ADA ter-stake pasif tanpa lock dalam proporsi besar;
+konversi sebagian kecil ke DeFi bisa melipatgandakan TVL). Kepastian **SEC: ADA = komoditas, bukan sekuritas** menghapus
+risiko hukum bagi manajer dana besar. → `docs/Valuation/FairValue.md`, `docs/Valuation/FDV.md`.
 
 ## 15. Business Intelligence & Real-World Adoption
 _ref: `docs/Ontology/Revenue.md`, `docs/Valuation/Revenue.md`, `docs/Ontology/Metrics.md`, `docs/Success/Adoption.md`_
 
-**Metrik DeFi (Apr–Jun 2026):** TVL **~$132,24 juta** (rank ~27); **fee harian ~$1.104** (sub-cent); **DAA
-~13.255**. *Kesenjangan lebar antara keamanan tinggi & pemanfaatan komersial rendah.*
+**Metrik DeFi (Apr–Jul 2026):** TVL **~$133,8 juta (Apr)** → **~$137 juta** (rank ~27); **volume harian DEX/perps
+~$371–374 juta**; MC **$10,5 mrd (Mei, ADA $0,30)** → **~$6 mrd (Jul, ADA $0,16)**. *Kesenjangan lebar antara
+keamanan tinggi & pemanfaatan komersial rendah.*
 
-**Protokol DeFi domestik:** Minswap (DEX, $33,3jt, ~25% dominasi, migrasi V2/Aiken) · Danogo (DEX, $16,3jt,
-+102%/bln) · WingRiders ($5jt) · Indigo (CDP/sintetis, $6,21jt) · Liqwid (lending, $10–15jt). **Stablecoin:**
-**Djed** (Jan 2023, COTI, overcollateralized 400–800%) · **USDM** (Mar 2024, Mehen, fiat-backed 1:1).
+**Protokol DeFi domestik (Apr 2026):** Minswap (DEX, $33,3jt, ~25% dominasi, migrasi V2/Aiken) · Danogo (DEX, $16,3jt) ·
+WingRiders ($5jt) · Indigo (CDP/sintetis, $6,21jt) · Liqwid (lending, $10–15jt). **Aiken** dipakai **>75%** pengembang
+(sensus 2025). **Stablecoin:** **Djed** (Jan 2023, COTI, overcollateralized 400–800%) · **USDM** (Mar 2024, Mehen,
+fiat-backed 1:1) · **USDA** (Feb 2025, EMURGO/Anzens) · **Circle USDCx** (Feb 2026, native via CCTP ke **50+ rantai**,
+**36% pangsa stablecoin** Cardano). *(Konteks makro: stablecoin non-USD global $1,4 mrd vs USD $300 mrd.)*
 
 **Adopsi riil (RealFi):** **Syngenta India** (registrasi >15.000 petani + DID + citra satelit) · **Trivolve
-Tech** (>100.000 dokumen forensik hukum on-chain) · **kompatibilitas standar CMTAT Swiss** (sekuritas
-teregulasi). *Kekuatan Cardano ada di adopsi institusi/pemerintah, bukan DeFi spekulatif.* → `docs/Success/Adoption.md`.
+Tech** (>100.000 dokumen forensik hukum on-chain) · **Atala PRISM Ethiopia** (ID digital 5 juta siswa + 750rb guru) ·
+**kompatibilitas standar CMTAT Swiss** (sekuritas teregulasi). *Kekuatan Cardano ada di adopsi institusi/pemerintah,
+bukan DeFi spekulatif.* → `docs/Success/Adoption.md`.
 
 ## 16. POV Success-Matrix (§15)
 _ref: `docs/Success/*`, `docs/Reasoning/Explainability.md`, `docs/Reasoning/Confidence.md`_
@@ -270,23 +310,24 @@ desentralisasi. Trade-off inti: **rekayasa formal → keandalan, dengan ongkos k
 _ref: `docs/TokenLifecycle/*`_
 
 - **Jun 2014** — Hoskinson keluar dari Ethereum (dispute non-profit vs for-profit dgn Buterin).
-- **Mar 2015** — IOHK didirikan (Hoskinson + Wood). **Okt 2015–Jan 2017** — ICO $62,24 juta (5 putaran).
-- **29 Sep 2017** — genesis mainnet (Era Byron); ADA buka $0,02. **4 Jan 2018** — pump #1 $1,11.
-- **29 Jul 2020** — **Shelley HF** (PoS terdesentralisasi). **27 Apr 2021** — kemitraan Ethiopia (Atala PRISM, 5jt siswa).
-- **2 Sep 2021** — ATH $3,10 (MC >$90 mrd). **12 Sep 2021** — **Alonzo HF** (Plutus V1, Era Goguen).
-- **22 Sep 2022** — **Vasil HF** (Plutus V2). **Jan 2023** — stablecoin **Djed** (COTI). **Mei 2023** — **Hydra Head** v0.10.
-- **16 Mar 2024** — stablecoin **USDM** (Mehen). **1 Sep 2024** — **Chang HF #1** (Era Voltaire, CIP-1694 bootstrap).
-- **Des 2024** — kontroversi **Fund 13** (180 juta ADA yayasan). **Jan 2025** — **Plomin HF** (tata kelola penuh DReps).
-- **23 Feb 2025** — Konstitusi Digital pertama disetujui on-chain (>75%).
-- **18 Jun 2026** — ADA 5yr-low $0,1611. **23 Jun 2026** — testnet **Leios "Musashi Dojo"** (target >1.000 TPS).
-- **18 Jul 2026** — **Van Rossem HF** (PV11) aktif, 77,63% DReps — hard fork pertama sepenuhnya on-chain.
+- **Mar 2015** — IOHK didirikan (Hoskinson + Wood). **Sep 2015–Jan 2017** — crowdsale voucher 108.844 BTC / $62,24 juta. **Mar 2016** — 1.096 BTC untuk audit (Parsons/Maguire/Milligan).
+- **29 Sep 2017** — genesis mainnet (Era Byron); ADA buka ~$0,03. **10 Jan 2018** — Yoroi (Emurgo). **Des 2017–Jan 2018** — pump ritel $0,72→$1,30.
+- **12 Mar 2020** — **ATL $0,01925** (COVID). **29 Jul 2020** — **Shelley HF** (PoS terdesentralisasi). **Apr 2021** — kemitraan Ethiopia (Atala PRISM, 5jt siswa).
+- **1 Sep 2021** — **ATH $3,09** (MC >$90 mrd). **12 Sep 2021** — **Alonzo HF** (Plutus V1, Era Goguen). **Okt 2021** — 318,2 juta ADA voucher tak-terklaim → 6 alamat staking.
+- **22 Sep 2022** — **Vasil HF** (Plutus V2). **18 Nov 2022** — pengumuman **Midnight**. **Jan 2023** — stablecoin **Djed** (COTI). **11 Apr 2023** — **Lace 1.0** (IOG). **Des 2023** — 25 repo pertama → **Intersect MBO**.
+- **16 Mar 2024** — stablecoin **USDM** (Mehen). **1 Sep 2024** — **Chang HF #1** (Era Voltaire, CIP-1694 bootstrap). **4–6 Des 2024** — Konvensi Konstitusional. **9 Des 2024** — kontroversi **Fund 13** (180 juta ADA yayasan → 185/1.800 proposal).
+- **29 Jan 2025** — **Plomin HF** (tata kelola penuh DReps). **Feb 2025** — stablecoin **USDA** (EMURGO/Anzens). **23 Feb 2025** — Konstitusi Digital diratifikasi on-chain (>75%). **Sep 2025** — Fund 14 (CF dibatasi 20 juta ADA).
+- **Feb 2026** — **Circle USDCx** mainnet (CCTP 50+ rantai). **Mar 2026** — **Fund 15 & 16 ditangguhkan** (jeda pendanaan builder). **18 Jun 2026** — ADA 5yr-low ~$0,16. **23 Jun 2026** — testnet **Leios "Musashi Dojo"** (target >1.000 TPS). **Jun 2026** — **Lace v1.17** (sinkron instan).
+- **13 Jul 2026** — voting on-chain Van Rossem (DReps+SPOs+CC). **18 Jul 2026** — **Van Rossem HF** (PV11) aktif zero-downtime — hard fork pertama sepenuhnya on-chain. **Agu 2026** — IOG transfer Haskell Node/Plutus/Daedalus/Hydra ke **Se7en Labs & Teragone**.
 
 ## 18. Current Status & Lessons Learned
 _ref: `docs/TokenLifecycle/Maturity.md`, `docs/Patterns/Failure.md`, `docs/Patterns/Recovery.md`_
 
-**Status (pertengahan 2026):** *active technology recovery* — harga di 5yr-low (~$0,16, kelelahan ritel atas
-TVL rank-27), **tetapi** infrastruktur paling matang (Van Rossem HF zero-downtime; Leios testnet). **Bukan** dead
-chain; menanti Leios untuk membuka adopsi komersial skala besar.
+**Status (pertengahan 2026):** *"Transisi Struktural & Pemulihan Sistemik"* — harga di 5yr-low (~$0,16, kelelahan
+ritel atas TVL rank-27), **tetapi** ketahanan protokol tertinggi sepanjang sejarah: Voltaire beroperasi penuh
+(DReps + CC); **Intersect MBO kelola perbendaharaan >345 juta ADA**; migrasi **multi-klien** (Haskell/Rust/Go, matang
+2027) + handoff rekayasa ke Se7en Labs/Teragone menandai transisi dari ketergantungan IOG ke **jaringan mandiri**. Van
+Rossem HF zero-downtime + Leios testnet. **Bukan** dead chain; menanti Leios untuk membuka adopsi komersial skala besar.
 
 **Kesalahan terbesar (antipatterns):**
 1. **Analysis paralysis** — kesempurnaan akademis menunda kontrak pintar bertahun-tahun → kehilangan momentum DeFi.
@@ -314,6 +355,12 @@ _ref: `docs/Patterns/*`, `docs/Reasoning/*`, `docs/Schema/PatternSchema.md`_
    komposabilitas atomik murni; hambatan struktural DeFi. → `docs/Reasoning/Prediction.md`.
 7. **On-Chain-Ratified Hard Fork (HFC)** — upgrade tanpa downtime + ratifikasi on-chain = sinyal kematangan
    tata kelola & infrastruktur. → `docs/Patterns/Recovery.md`.
+8. **Founder Governance Divestment** *(crown pattern, rebuild)* — protokol capai kematangan teknis → repo diserahkan ke
+   org berbasis-anggota (Intersect MBO) → **pendiri sengaja memotong pengajuan anggaran kas-nya** → maintenance node
+   dialihkan ke spesialis eksternal (Se7en Labs/Teragone) → kedaulatan teknis terdistribusi penuh. Sinyal desentralisasi
+   *tertinggi*: proyek bertahan **tanpa ketergantungan penciptanya**. → `docs/Patterns/Recovery.md`, `docs/Ontology/Governance.md`.
+9. **ICO Treasury Opacity Liability** — distribusi hasil crowdsale era-ICO (54.000 BTC IOHK, 1.096 BTC audit) **tanpa
+   jejak alamat on-chain publik** menjadi **liabilitas kepercayaan** yang meletus bertahun-tahun kemudian. → `docs/Patterns/Failure.md`.
 
 ### Entitas & relasi ontologi (kandidat Knowledge Graph)
 _ref: `docs/Schema/KnowledgeGraph.md`, `docs/Schema/EntityRelationship.md`_
@@ -346,6 +393,9 @@ _Research gap — belum tervalidasi, untuk sesi berikutnya._
    raksasa atas kas perbendaharaan)? (LOW)
 3. Saat emisi cadangan menyusut eksponensial, mampukah **biaya transaksi** mendanai ribuan SPO + Treasury tanpa
    emisi baru? (LOW)
+4. Dapatkah **Se7en Labs** (portofolio didominasi rekayasa HFC-chain Solana) mengadopsi disiplin **spesifikasi formal**
+   ketat untuk memelihara Haskell Node Cardano secara andal? (MEDIUM)
+5. Seberapa besar dampak **jeda Catalyst Fund 15 & 16** terhadap retensi builder dApp skala menengah sepanjang 2026? (MEDIUM)
 
 ## 22. Evidence Level — kesimpulan kunci (§22)
 _ref: `docs/Reasoning/Confidence.md`, `docs/Research/Verification.md`_
@@ -393,6 +443,12 @@ _Deep Research provenance (Gemini). Laporan sumber mengutip **75 referensi**; su
 - Cardano launches blockchain deployment in Ethiopia with 5M students — AppsAfrica — https://www.appsafrica.com/cardano-launches-blockchain-deployment-in-ethiopia-with-5m-students/
 - Ethereum vs Cardano Statistics 2026: TVL, Staking, Devs — CoinLaw — https://coinlaw.io/ethereum-vs-cardano-statistics/
 - Cardano (ADA) Live Tokenomics — TokenInsight — https://tokeninsight.com/en/coins/cardano/tokenomics
+- Cardano's Missing 1,096 Bitcoin: Hoskinson Explains the $70M BTC Mystery — CCN — https://www.ccn.com/news/crypto/cardano-missing-1096-bitcoin-hoskinson-explains-70m-btc-mystery/
+- What did IOHK/EMURGO/CF do with the initial BTC funds raised — Cardano Forum — https://forum.cardano.org/t/what-did-iohk-emurgo-cf-do-with-the-initial-btc-funds-raised/17679
+- Cardano Approves First Major Hard Fork Since Voltaire Era (Van Rossem) — The Coin Republic — https://www.thecoinrepublic.com/2026/07/16/cardano-news-cardano-approves-first-major-hard-fork-since-voltaire-era/
+- Project Catalyst F13 Proposal Selections — Cardano Foundation — https://cardanofoundation.org/blog/project-catalyst-f13-proposal-selections
+- Cardano's Project Catalyst Is Changing Hands — The Pause Forces Builders to Face a Brutal Funding Gap — CryptoSlate — https://cryptoslate.com/cardanos-project-catalyst-is-changing-hands-and-the-pause-is-forcing-builders-to-face-a-brutal-funding-gap/
+- Cardano Genesis (config) — cardano.org — https://cardano.org/genesis/
 
-_(Full 75-source bibliography retained in the original Deep Research report + archived at
-`doc_backup/deep/Cardano_2026-07_gemini.md`.)_
+_(Full bibliography retained in the original Deep Research reports — no-table `.docx` rebuild (≈40 sources) +
+prior `.pdf` (75 sources) — both archived at `doc_backup/deep/Cardano_2026-07_gemini.{docx,md,pdf}`.)_
