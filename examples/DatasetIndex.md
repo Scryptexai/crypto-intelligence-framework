@@ -9,8 +9,8 @@ structured against the `docs/` ontology.
 This is the master curation record for the dataset stored in `examples/`: what was added per batch,
 how the taxonomy is distributed, where the gaps are, and what is queued next.
 
-**Batches loaded:** Batch 01 (8 projects, source: Deep Research / Gemini) · Batch 02 (10 projects, source: Web research) · Deep Dossiers (9: Ethereum, Solana, BNB Chain, Cardano, Avalanche, Polkadot, Cosmos, dYdX, Aave — source: Deep Research / Gemini).
-**Total curated projects: 25** _(D8 dYdX and D9 Aave supersede their Batch Summaries — same projects, not double-counted)_.
+**Batches loaded:** Batch 01 (8 projects, source: Deep Research / Gemini) · Batch 02 (10 projects, source: Web research) · Deep Dossiers (10: Ethereum, Solana, BNB Chain, Cardano, Avalanche, Polkadot, Cosmos, dYdX, Aave, ether.fi — source: Deep Research / Gemini).
+**Total curated projects: 26** _(D8 dYdX and D9 Aave supersede their Batch Summaries — same projects, not double-counted; D10 ether.fi is a new project)_.
 
 ## Curation Tiers
 _How each project is captured (see `docs/Protocol/` for the runbooks)._
@@ -37,6 +37,7 @@ _Tier: Deep · anchor projects with full causal history._
 | D7 | Cosmos | Layer 0 / Appchain "Internet of Blockchains" (CometBFT/SDK/IBC) | 2014– | Deep Research (Gemini) | `CaseStudies/Cosmos.md` | `doc_backup/deep/Cosmos_2026-07_gemini.docx` |
 | D8 | dYdX | DeFi / Perp-derivatives DEX (order-book appchain → RWA pivot) | 2017– | Deep Research (Gemini) | `CaseStudies/dYdX.md` | `doc_backup/deep/dYdX_2026-07_gemini.docx` |
 | D9 | Aave | DeFi / Money-market lending (Flash Loans, GHO, V4 Hub-and-Spoke) | 2017– | Deep Research (Gemini) | `CaseStudies/Aave.md` | `doc_backup/deep/Aave_2026-07_gemini.docx` |
+| D10 | ether.fi | DeFi / Liquid Restaking (LRT) + DeFi Neobank (Stake/Liquid/Cash) | 2022– | Deep Research (Gemini) | `CaseStudies/EtherFi.md` | `doc_backup/deep/EtherFi_2026-07_gemini.docx` |
 
 ---
 
