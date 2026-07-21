@@ -1,0 +1,362 @@
+[
+  {
+    "n": "Ethereum",
+    "tier": "Deep",
+    "file": "examples/CaseStudies/Ethereum.md",
+    "cat": "Layer 1 / Smart-Contract Platform",
+    "era": "2013–",
+    "tags": [
+      "l1",
+      "first-mover",
+      "modular",
+      "governance",
+      "l2"
+    ]
+  },
+  {
+    "n": "Solana",
+    "tier": "Deep",
+    "file": "examples/CaseStudies/Solana.md",
+    "cat": "Layer 1 / High-Performance Monolithic Platform",
+    "era": "2017–",
+    "tags": [
+      "l1",
+      "first-mover",
+      "modular",
+      "monolithic",
+      "l2"
+    ]
+  },
+  {
+    "n": "BNB Chain",
+    "tier": "Deep",
+    "file": "examples/CaseStudies/BNBChain.md",
+    "cat": "Layer 1 EVM (Exchange-backed) + modular suite (opBNB/Greenfield)",
+    "era": "2017–",
+    "tags": [
+      "l1",
+      "first-mover",
+      "modular",
+      "l2"
+    ]
+  },
+  {
+    "n": "Cardano",
+    "tier": "Deep",
+    "file": "examples/CaseStudies/Cardano.md",
+    "cat": "Layer 1 / Peer-reviewed EUTXO platform (Ouroboros PoS)",
+    "era": "2015–",
+    "tags": [
+      "l1",
+      "first-mover",
+      "modular"
+    ]
+  },
+  {
+    "n": "Avalanche",
+    "tier": "Deep",
+    "file": "examples/CaseStudies/Avalanche.md",
+    "cat": "Layer 1 / Metastable-consensus multi-chain (Subnet/L1) + RWA-TradFi",
+    "era": "2018–",
+    "tags": [
+      "l1",
+      "first-mover",
+      "pivot"
+    ]
+  },
+  {
+    "n": "Polkadot",
+    "tier": "Deep",
+    "file": "examples/CaseStudies/Polkadot.md",
+    "cat": "Layer 0 / Heterogeneous-sharding + shared-security (Relay/parachains)",
+    "era": "2016–",
+    "tags": [
+      "l1",
+      "first-mover",
+      "monolithic",
+      "shared-security",
+      "l2"
+    ]
+  },
+  {
+    "n": "Cosmos",
+    "tier": "Deep",
+    "file": "examples/CaseStudies/Cosmos.md",
+    "cat": "Layer 0 / Appchain \"Internet of Blockchains\" (CometBFT/SDK/IBC)",
+    "era": "2014–",
+    "tags": [
+      "l1",
+      "first-mover",
+      "modular",
+      "governance"
+    ]
+  },
+  {
+    "n": "dYdX",
+    "tier": "Deep",
+    "file": "examples/CaseStudies/dYdX.md",
+    "cat": "DeFi / Perp-derivatives DEX (order-book appchain → RWA pivot)",
+    "era": "2017–",
+    "tags": [
+      "defi",
+      "first-mover",
+      "amm",
+      "perps",
+      "pivot",
+      "l2",
+      "l1"
+    ]
+  },
+  {
+    "n": "Aave",
+    "tier": "Deep",
+    "file": "examples/CaseStudies/Aave.md",
+    "cat": "DeFi / Money-market lending (Flash Loans, GHO, V4 Hub-and-Spoke)",
+    "era": "2017–",
+    "tags": [
+      "defi",
+      "first-mover",
+      "modular",
+      "stablecoin",
+      "l2"
+    ]
+  },
+  {
+    "n": "ether.fi",
+    "tier": "Deep",
+    "file": "examples/CaseStudies/EtherFi.md",
+    "cat": "DeFi / Liquid Restaking (LRT) + DeFi Neobank (Stake/Liquid/Cash)",
+    "era": "2022–",
+    "tags": [
+      "defi",
+      "lrt",
+      "liquid-restaking",
+      "restaking",
+      "first-mover",
+      "bridge",
+      "nft-community",
+      "shared-security"
+    ]
+  },
+  {
+    "n": "EigenLayer",
+    "tier": "Deep",
+    "file": "examples/CaseStudies/EigenLayer.md",
+    "cat": "Infrastructure / Restaking pioneer → EigenCloud (verifiable AI/compute)",
+    "era": "2021–",
+    "tags": [
+      "restaking",
+      "efficiency",
+      "points",
+      "lrt",
+      "liquid-restaking",
+      "looping",
+      "first-mover",
+      "shared-security",
+      "pivot",
+      "l2"
+    ]
+  },
+  {
+    "n": "Celestia",
+    "tier": "Deep",
+    "file": "examples/CaseStudies/Celestia.md",
+    "cat": "Modular / Data Availability (sovereign alt-DA; DAS/NMT; Fibre 1 Tb/s)",
+    "era": "2019–",
+    "tags": [
+      "modular",
+      "da",
+      "first-mover",
+      "pivot",
+      "l2"
+    ]
+  },
+  {
+    "n": "Synthetix",
+    "tier": "Summary",
+    "file": "examples/Pioneer/Synthetix.md",
+    "cat": "DeFi (DeFi Pioneer)",
+    "era": "2017–",
+    "tags": [
+      "defi",
+      "first-mover",
+      "modular",
+      "stablecoin",
+      "governance",
+      "pivot",
+      "l2"
+    ]
+  },
+  {
+    "n": "Helium",
+    "tier": "Summary",
+    "file": "examples/Pioneer/Helium.md",
+    "cat": "DePIN (IoT & Wireless)",
+    "era": "2013–",
+    "tags": [
+      "depin",
+      "multi-token",
+      "fee-burn",
+      "governance",
+      "mining",
+      "l1"
+    ]
+  },
+  {
+    "n": "Arweave / AO",
+    "tier": "Summary",
+    "file": "examples/Pioneer/Arweave-AO.md",
+    "cat": "Data Availability / Modular Compute",
+    "era": "2017–",
+    "tags": [
+      "modular",
+      "mining"
+    ]
+  },
+  {
+    "n": "Farcaster",
+    "tier": "Summary",
+    "file": "examples/Pioneer/Farcaster.md",
+    "cat": "Social (Decentralized Social)",
+    "era": "2020–",
+    "tags": [
+      "social",
+      "points"
+    ]
+  },
+  {
+    "n": "MakerDAO / Sky",
+    "tier": "Summary",
+    "file": "examples/Pioneer/MakerDAO-Sky.md",
+    "cat": "DeFi (Decentralized Central Bank)",
+    "era": "2015–",
+    "tags": [
+      "defi",
+      "stablecoin",
+      "governance",
+      "pivot"
+    ]
+  },
+  {
+    "n": "Safe",
+    "tier": "Summary",
+    "file": "examples/Pioneer/Safe.md",
+    "cat": "Wallet / Account Abstraction",
+    "era": "2017–",
+    "tags": [
+      "wallet",
+      "airdrop",
+      "governance",
+      "pivot"
+    ]
+  },
+  {
+    "n": "Chainlink",
+    "tier": "Summary",
+    "file": "examples/Pioneer/Chainlink.md",
+    "cat": "Oracle",
+    "era": "2017–",
+    "tags": [
+      "oracle",
+      "infra",
+      "bridge"
+    ]
+  },
+  {
+    "n": "LayerZero",
+    "tier": "Summary",
+    "file": "examples/Pioneer/LayerZero.md",
+    "cat": "Bridge / Interoperability",
+    "era": "2021–",
+    "tags": [
+      "bridge",
+      "interop",
+      "airdrop",
+      "oracle",
+      "sybil"
+    ]
+  },
+  {
+    "n": "Lido",
+    "tier": "Summary",
+    "file": "examples/Pioneer/Lido.md",
+    "cat": "Liquid Staking",
+    "era": "2020–",
+    "tags": [
+      "liquid-staking",
+      "efficiency",
+      "governance"
+    ]
+  },
+  {
+    "n": "Uniswap",
+    "tier": "Summary",
+    "file": "examples/Pioneer/Uniswap.md",
+    "cat": "DeFi / AMM",
+    "era": "2018–",
+    "tags": [
+      "defi",
+      "airdrop",
+      "amm",
+      "oracle",
+      "governance",
+      "mining"
+    ]
+  },
+  {
+    "n": "World Network (Worldcoin)",
+    "tier": "Summary",
+    "file": "examples/Pioneer/WorldNetwork-Worldcoin.md",
+    "cat": "Identity",
+    "era": "2019–",
+    "tags": [
+      "identity",
+      "sybil",
+      "pivot",
+      "l2"
+    ]
+  },
+  {
+    "n": "Ethena",
+    "tier": "Summary",
+    "file": "examples/Pioneer/Ethena.md",
+    "cat": "DeFi / Stablecoin",
+    "era": "2023–",
+    "tags": [
+      "defi",
+      "airdrop",
+      "points",
+      "perps",
+      "stablecoin",
+      "synthetic"
+    ]
+  },
+  {
+    "n": "Berachain",
+    "tier": "Summary",
+    "file": "examples/Pioneer/Berachain.md",
+    "cat": "Layer 1 (Proof-of-Liquidity)",
+    "era": "2021–",
+    "tags": [
+      "l1",
+      "airdrop",
+      "stablecoin",
+      "meme",
+      "nft-community"
+    ]
+  },
+  {
+    "n": "Optimism",
+    "tier": "Summary",
+    "file": "examples/Pioneer/Optimism.md",
+    "cat": "Layer 2 (OP Stack / Superchain)",
+    "era": "2019–",
+    "tags": [
+      "l2",
+      "airdrop",
+      "modular",
+      "bridge",
+      "governance"
+    ]
+  }
+]

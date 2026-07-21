@@ -1,0 +1,134 @@
+[
+  {
+    "id": "P1",
+    "nm": "Efficiency → Concentration → Mitigation",
+    "triggers": [
+      "liquid-staking",
+      "restaking",
+      "efficiency"
+    ],
+    "instances": 3,
+    "confidence": "HIGH",
+    "analogs": [
+      "Lido",
+      "EigenLayer",
+      "Ethereum"
+    ],
+    "src": "examples/CaseStudies/CrossAnalysis-ETH-Lido-EigenLayer.md",
+    "val": "",
+    "pred": "Jika menang di efisiensi modal, sumber daya (stake) akan terkonsentrasi → muncul kekhawatiran sentralisasi & dorongan mitigasi terdistribusi (mis. DVT). Nilai harus dinilai bersama ada/tidaknya mitigasi.",
+    "watch": [
+      "dominance > ~1/3 dari share",
+      "absennya mitigasi desentralisasi"
+    ]
+  },
+  {
+    "id": "P2",
+    "nm": "Rehypothecation → Correlated Cascading Failure",
+    "triggers": [
+      "restaking",
+      "lrt",
+      "looping",
+      "liquid-restaking"
+    ],
+    "instances": 3,
+    "confidence": "HIGH",
+    "analogs": [
+      "EigenLayer",
+      "ether.fi",
+      "Ethereum"
+    ],
+    "src": "examples/CaseStudies/CrossAnalysis-ETH-Lido-EigenLayer.md",
+    "val": "Renzo ezETH depeg Apr 2024 (~$688, >$65jt liquidations)",
+    "pred": "Menggunakan ulang aset yang sama menaikkan yield sekaligus korelasi kegagalan. Risiko depeg + cascading liquidations saat leverage looping unwinding.",
+    "watch": [
+      "LRT discount / depeg event",
+      "posisi looping di lending",
+      "akhir window airdrop + likuiditas tipis"
+    ]
+  },
+  {
+    "id": "P3",
+    "nm": "Multi-token → Simplification",
+    "triggers": [
+      "multi-token"
+    ],
+    "instances": 2,
+    "confidence": "MEDIUM",
+    "analogs": [
+      "Helium",
+      "Synthetix"
+    ],
+    "src": "examples/CaseStudies/Batch-01-EvolutionAnalysis.md",
+    "val": "",
+    "pred": "Tokenomics multi-token yang rumit cenderung disederhanakan ke aset tunggal seiring project matang.",
+    "watch": [
+      "distorsi insentif antar-token",
+      "beban kognitif user"
+    ]
+  },
+  {
+    "id": "P4",
+    "nm": "Airdrop-without-product → Post-TGE dump",
+    "triggers": [
+      "airdrop",
+      "points"
+    ],
+    "instances": 2,
+    "confidence": "MEDIUM",
+    "analogs": [
+      "ether.fi",
+      "LayerZero",
+      "Ethena"
+    ],
+    "src": "examples/CaseStudies/CrossAnalysis-ETH-Lido-EigenLayer.md",
+    "val": "Renzo REZ (alokasi 5%, exit farmer pasca-window)",
+    "pred": "Airdrop/points tanpa produk & usage nyata → farmer keluar pasca-TGE → tekanan jual. Airdrop dengan produk dominan lebih dulu (Uniswap/Hyperliquid) → retensi jauh lebih baik.",
+    "watch": [
+      "alokasi airdrop kecil/membingungkan",
+      "aktivitas hanya untuk poin",
+      "unlock/vesting pasca-TGE"
+    ]
+  },
+  {
+    "id": "P5",
+    "nm": "Technical success → Tokenomic harm",
+    "triggers": [
+      "fee-burn",
+      "upgrade",
+      "l2"
+    ],
+    "instances": 1,
+    "confidence": "LOW",
+    "analogs": [
+      "Ethereum"
+    ],
+    "src": "examples/CaseStudies/Ethereum.md",
+    "val": "ETH Dencun (2024) → net-inflasi",
+    "pred": "Upgrade yang memindah aktivitas keluar dari mekanisme value-accrual bisa merusak tesis token walau sukses teknis.",
+    "watch": [
+      "burn/revenue turun pasca-upgrade"
+    ]
+  },
+  {
+    "id": "P6",
+    "nm": "First-mover + standard = strongest moat",
+    "triggers": [
+      "first-mover",
+      "smart-contract",
+      "amm"
+    ],
+    "instances": 2,
+    "confidence": "MEDIUM",
+    "analogs": [
+      "Ethereum",
+      "Uniswap"
+    ],
+    "src": "examples/CaseStudies/Ethereum.md",
+    "val": "",
+    "pred": "First mover yang menjadi standar developer punya moat retensi terkuat, mengalahkan pesaing 'lebih cepat/murah'.",
+    "watch": [
+      "apakah pesaing mengadopsi standarnya"
+    ]
+  }
+]

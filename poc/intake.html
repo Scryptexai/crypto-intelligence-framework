@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CIF · New Project Intake → Tracking</title>
+<style>
+  :root{
+    --bg:#0e1117; --surface:#161b24; --surface2:#1c222d; --line:#28303d;
+    --text:#e7ebf3; --muted:#96a0b2; --accent:#6d7cf2; --accent2:#d7a24a;
+    --good:#3ec08a; --warn:#e0a04a; --crit:#e46b6b;
+    --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+    --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.55}
+  header{padding:22px 24px;border-bottom:1px solid var(--line)}
+  header .ey{font-family:var(--mono);font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--accent)}
+  header h1{margin:4px 0 0;font-size:20px;letter-spacing:-.01em}
+  header p{margin:4px 0 0;color:var(--muted);font-size:13px}
+  .grid{display:grid;grid-template-columns:360px 1fr;gap:0;min-height:calc(100vh - 118px)}
+  @media(max-width:820px){.grid{grid-template-columns:1fr}}
+  .panel{padding:22px 24px}
+  .form{border-right:1px solid var(--line)}
+  label{display:block;font-size:12px;font-family:var(--mono);letter-spacing:.05em;text-transform:uppercase;
+    color:var(--muted);margin:16px 0 6px}
+  input[type=text],select,textarea{width:100%;background:var(--surface);color:var(--text);border:1px solid var(--line);
+    border-radius:8px;padding:9px 11px;font-size:14px;font-family:var(--sans)}
+  textarea{resize:vertical;min-height:60px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+  .chip{font-size:12.5px;padding:6px 11px;border:1px solid var(--line);border-radius:999px;cursor:pointer;
+    color:var(--muted);user-select:none;background:var(--surface)}
+  .chip.on{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}
+  button.run{margin-top:22px;width:100%;background:var(--accent);color:#fff;border:0;border-radius:9px;
+    padding:12px;font-size:15px;font-weight:700;cursor:pointer}
+  button.run:hover{filter:brightness(1.08)}
+  .out{padding:22px 24px;overflow:auto}
+  .empty{color:var(--muted);font-size:14px;margin-top:40px;text-align:center}
+  .warnbox{background:rgba(228,107,107,.1);border:1px solid var(--crit);color:var(--text);border-radius:10px;
+    padding:16px;margin-top:20px;font-size:13.5px}
+  .warnbox code{font-family:var(--mono);background:var(--surface2);padding:1px 5px;border-radius:5px}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px;margin-bottom:16px}
+  .card h3{margin:0 0 10px;font-size:15px;display:flex;align-items:center;gap:8px}
+  .verdict{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+  .conf{font-family:var(--mono);font-size:12px;font-weight:700;padding:4px 10px;border-radius:6px}
+  .conf.HIGH{background:rgba(62,192,138,.15);color:var(--good);border:1px solid var(--good)}
+  .conf.MEDIUM{background:rgba(224,160,74,.15);color:var(--warn);border:1px solid var(--warn)}
+  .conf.LOW{background:rgba(228,107,107,.15);color:var(--crit);border:1px solid var(--crit)}
+  .pill{font-family:var(--mono);font-size:11px;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:2px 7px}
+  .analog{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-top:1px solid var(--line);font-size:13.5px}
+  .analog:first-of-type{border-top:0}
+  .analog .path{font-family:var(--mono);font-size:11.5px;color:var(--muted)}
+  .tier{font-family:var(--mono);font-size:10px;padding:1px 6px;border-radius:4px;border:1px solid var(--line);color:var(--muted)}
+  .tier.Deep{color:var(--accent);border-color:var(--accent)}
+  .pat{padding:12px 0;border-top:1px solid var(--line)}
+  .pat:first-of-type{border-top:0}
+  .pat .nm{font-weight:600;font-size:14px}
+  .pat .pred{font-size:13.5px;color:var(--text);margin:4px 0}
+  .pat .meta{font-size:12px;color:var(--muted);margin-top:4px;font-family:var(--mono)}
+  .pat .val{font-size:12px;color:var(--good);margin-top:3px}
+  .watch{font-size:13px;color:var(--muted);margin:2px 0 0;padding-left:18px}
+  pre.md{background:#0b0e13;border:1px solid var(--line);border-radius:10px;padding:14px;font-family:var(--mono);
+    font-size:12px;white-space:pre-wrap;color:#cdd6e5;max-height:340px;overflow:auto}
+  .copy{margin-top:8px;background:var(--surface2);color:var(--text);border:1px solid var(--line);border-radius:7px;
+    padding:7px 12px;font-size:12.5px;cursor:pointer;font-family:var(--mono)}
+  .disc{font-size:11.5px;color:var(--muted);margin-top:10px}
+  footer{padding:12px 24px;border-top:1px solid var(--line);font-family:var(--mono);font-size:11.5px;color:var(--muted);
+    display:flex;gap:16px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+<header>
+  <div class="ey">CIF · Proof of Concept</div>
+  <h1>New Project Intake → Tracking Output</h1>
+  <p>Input project baru → dicocokkan ke dataset repo (analog + pola) → keluar prediksi & artefak tracking. Data dibaca dari <code style="font-family:var(--mono)">poc/data.js</code> (hasil <code style="font-family:var(--mono)">tools/build_json.py</code>).</p>
+</header>
+
+<div class="grid">
+  <div class="panel form">
+    <label>Nama project</label>
+    <input type="text" id="pname" placeholder="mis. NewRestake">
+    <label>Kategori</label>
+    <select id="pcat">
+      <option value="">— pilih —</option>
+      <option>Layer 1</option><option>Layer 2</option><option>DeFi</option>
+      <option>Liquid Staking</option><option>Restaking / LRT</option><option>Modular / DA</option>
+      <option>Oracle</option><option>Bridge / Interop</option><option>Stablecoin</option>
+      <option>Perps / DEX</option><option>DePIN</option><option>Social</option>
+      <option>NFT / Gaming</option><option>Identity</option><option>Wallet / AA</option>
+    </select>
+    <label>Fase (lifecycle)</label>
+    <select id="pstage">
+      <option>PreLaunch</option><option>Testnet</option><option>Points campaign</option>
+      <option>Pre-TGE</option><option>TGE</option><option>Post-TGE</option>
+    </select>
+    <label>Mekanik / sinyal (dari tag dataset)</label>
+    <div class="chips" id="chips"></div>
+    <label>Catatan (opsional)</label>
+    <textarea id="pnotes" placeholder="konteks singkat, backer, narrative..."></textarea>
+    <button class="run" id="run">Analyze → Tracking</button>
+    <p class="disc" id="disc">memuat data…</p>
+  </div>
+
+  <div class="panel out" id="out">
+    <div class="empty">Isi form di kiri lalu klik <b>Analyze</b> untuk melihat output tracking.</div>
+  </div>
+</div>
+
+<footer id="foot"></footer>
+
+<script src="data.js"></script>
+<script>
+const D = (window.CIF)||{projects:[],patterns:[],meta:{}};
+const PROJECTS = D.projects, PATTERNS = D.patterns, META = D.meta||{};
+
+// UI config (category -> implied tags for the query)
+const CATTAGS = {
+  "Layer 1":["l1"],"Layer 2":["l2"],"DeFi":["defi"],"Liquid Staking":["liquid-staking","efficiency"],
+  "Restaking / LRT":["restaking","lrt","efficiency"],"Modular / DA":["modular","da"],"Oracle":["oracle","infra"],
+  "Bridge / Interop":["bridge","interop"],"Stablecoin":["stablecoin"],"Perps / DEX":["defi","perps"],
+  "DePIN":["depin"],"Social":["social"],"NFT / Gaming":["nft-community"],"Identity":["identity"],"Wallet / AA":["wallet"]
+};
+
+// mechanics chips derived from actual dataset tags + pattern triggers
+const MECHANICS=[...new Set([].concat(
+  ...PROJECTS.map(p=>p.tags||[]), ...PATTERNS.map(p=>p.triggers||[])
+))].filter(Boolean).sort();
+
+const chipsEl=document.getElementById("chips"); const picked=new Set();
+MECHANICS.forEach(m=>{const c=document.createElement("div");c.className="chip";c.textContent=m;
+  c.onclick=()=>{c.classList.toggle("on"); c.classList.contains("on")?picked.add(m):picked.delete(m);};chipsEl.appendChild(c);});
+
+// footer + disclaimer reflect the real data source
+document.getElementById("disc").innerHTML = PROJECTS.length
+  ? `Dataset: ${META.projects||PROJECTS.length} project (${META.deep||"?"} deep · ${META.summary||"?"} summary) + ${META.patterns||PATTERNS.length} pola.`
+  : `⚠ data.js belum ada — jalankan tools/build_json.py dulu.`;
+document.getElementById("foot").innerHTML = PROJECTS.length
+  ? `<span>source: ${esc(META.source||"repo")}</span><span>generated: ${esc(META.generated||"?")}</span><span>${MECHANICS.length} tags</span>`
+  : "";
+
+const confOf=n=> n>=3?"HIGH": n===2?"MEDIUM":"LOW";
+const inter=(a,b)=>a.filter(x=>b.includes(x));
+
+document.getElementById("run").onclick=()=>{
+  const out=document.getElementById("out");
+  if(!PROJECTS.length){out.innerHTML=`<div class="warnbox">Data belum termuat. Jalankan <code>python3 tools/build_json.py</code> di root repo, lalu buka file ini lagi (butuh <code>data.js</code> di folder yang sama).</div>`;return;}
+  const name=document.getElementById("pname").value.trim()||"Untitled";
+  const cat=document.getElementById("pcat").value;
+  const stage=document.getElementById("pstage").value;
+  const notes=document.getElementById("pnotes").value.trim();
+  if(!cat){out.innerHTML='<div class="empty">Pilih <b>kategori</b> dulu.</div>';return;}
+  const inTags=[...new Set([...(CATTAGS[cat]||[]),...picked])];
+
+  const analogs=PROJECTS.map(p=>{
+    let s=inter(p.tags||[],inTags).length; if(catMatch(p.cat,cat))s+=2;
+    return {p,s};
+  }).filter(x=>x.s>0).sort((a,b)=>b.s-a.s).slice(0,5);
+
+  const pats=PATTERNS.filter(pt=>inter(pt.triggers||[],inTags).length>0)
+    .sort((a,b)=>b.instances-a.instances);
+  const conf = pats.length? confOf(Math.max(...pats.map(p=>p.instances))) : "LOW";
+  render(name,cat,stage,notes,analogs,pats,conf);
+};
+
+function catMatch(projCat,uiCat){
+  const a=(projCat||"").toLowerCase(), b=(uiCat||"").toLowerCase().split(" / ")[0];
+  return a.includes(b);
+}
+
+function render(name,cat,stage,notes,analogs,pats,conf){
+  const out=document.getElementById("out");
+  const watch=[...new Set(pats.flatMap(p=>p.watch||[]))];
+  let html=`<div class="card"><h3>🎯 Prediksi arah — ${esc(name)}</h3>
+    <div class="verdict"><span class="pill">${esc(cat)}</span><span class="pill">${esc(stage)}</span>
+    <span class="conf ${conf}">Confidence: ${conf}</span></div>`;
+  html+= pats.length ? `<p style="font-size:14px;margin:12px 0 0">${esc(pats[0].pred)}</p>`
+    : `<p style="color:var(--muted);margin:12px 0 0">Tidak ada pola cocok dari sinyal ini — tambah mekanik atau tunggu dataset lebih kaya.</p>`;
+  html+=`</div>`;
+
+  html+=`<div class="card"><h3>🔗 Analog historis (top ${analogs.length})</h3>`;
+  if(!analogs.length) html+=`<p style="color:var(--muted);font-size:13px">Belum ada analog dekat.</p>`;
+  analogs.forEach(a=>{html+=`<div class="analog"><span><b>${esc(a.p.n)}</b> <span class="tier ${a.p.tier}">${a.p.tier}</span></span>
+    <span class="path">${esc(a.p.file)} · match ${a.s}</span></div>`;});
+  html+=`</div>`;
+
+  if(pats.length){
+    html+=`<div class="card"><h3>🧩 Pola cocok (${pats.length})</h3>`;
+    pats.forEach(p=>{html+=`<div class="pat"><div class="nm">${esc(p.id)} · ${esc(p.nm)} <span class="conf ${confOf(p.instances)}" style="font-size:10px;padding:1px 6px">${confOf(p.instances)} · ${p.instances}×</span></div>
+      <div class="pred">${esc(p.pred)}</div>
+      ${p.val?`<div class="val">✓ ${esc(p.val)}</div>`:``}
+      <div class="meta">sumber: ${esc(p.src)} · analog: ${esc((p.analogs||[]).join(", "))}</div></div>`;});
+    html+=`</div>`;
+  }
+
+  if(watch.length){
+    html+=`<div class="card"><h3>👁️ Watch-for signals</h3>`;
+    watch.forEach(w=>html+=`<div class="watch">• ${esc(w)}</div>`);
+    html+=`</div>`;
+  }
+
+  const md=genMd(name,cat,stage,notes,analogs,pats,conf,watch);
+  html+=`<div class="card"><h3>💾 Output tracking — <code style="font-family:var(--mono);font-size:12px">tracking/${esc(slug(name))}/prediction.md</code></h3>
+    <pre class="md">${esc(md)}</pre>
+    <button class="copy" id="cp">Copy markdown</button></div>`;
+
+  out.innerHTML=html;
+  document.getElementById("cp").onclick=e=>{navigator.clipboard.writeText(md);e.target.textContent="✓ Copied";};
+}
+
+function genMd(name,cat,stage,notes,analogs,pats,conf,watch){
+  const today=new Date().toISOString().slice(0,10);
+  return `# ${name} — Prediction & Outcome
+
+## Prediction (made ${today})
+_ref: docs/Reasoning/Prediction.md · generated by CIF intake PoC (tools/build_json.py data)_
+
+- **Category:** ${cat}
+- **Target stage:** ${stage}
+${notes?`- **Notes:** ${notes}\n`:``}- **Analogs used:** ${analogs.map(a=>a.p.n).join(", ")||"—"}
+- **Patterns matched:** ${pats.map(p=>p.id+" "+p.nm).join("; ")||"—"}
+- **Predicted direction:** ${pats[0]?pats[0].pred:"—"}
+- **Confidence:** ${conf} — ${pats.length} pola pendukung, terkuat ${pats[0]?pats[0].instances+" instance":"n/a"}
+- **Watch-for signals:**
+${watch.map(w=>"  - "+w).join("\n")||"  - —"}
+
+## Actual Outcome (fill when known)
+- **Date resolved:**
+- **What actually happened:**
+- **Prediction correct?** Yes / Partly / No — why.
+- **Lesson / pattern update:**
+`;
+}
+const esc=s=>String(s==null?"":s).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+const slug=s=>s.replace(/[^a-zA-Z0-9]+/g,"-").replace(/^-|-$/g,"")||"project";
+</script>
+</body>
+</html>
