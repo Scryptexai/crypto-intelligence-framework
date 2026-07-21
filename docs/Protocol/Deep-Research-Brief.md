@@ -1,8 +1,12 @@
 # Deep Research Brief (canonical)
 
-This is the **maintainer's canonical research prompt** used to generate deep reports (via Gemini) for
-anchor projects. Every deep report arrives in this **22-section structure**, so the `Ingest-Deep` role maps
-its output losslessly. Read this before ingesting any deep report.
+This is the **contract** the framework expects deep reports to follow — the **22-section structure** every
+Gemini deep report arrives in, so the `Ingest-Deep` role (and `tools/ingest.py`) map its output losslessly.
+Read this before ingesting any deep report.
+
+> The actual paste-ready **research prompt** (the "you are …, produce …" text sent to Gemini) is an external
+> working tool kept in the maintainer's local files — intentionally **not** stored in the repo. This file keeps
+> only the contract; any prompt must produce output that conforms to it.
 
 **Audience of the output = AI reasoning, not human readers.** Every fact must be *Reusable Knowledge*: it
 must answer **APA · MENGAPA · BAGAIMANA · APA DAMPAKNYA · APA PELAJARANNYA · APA HUBUNGANNYA DENGAN INDUSTRI**.
@@ -105,7 +109,8 @@ MUST follow this contract. Reports that ignore it still work but risk value↔la
    each with Verdict + Alasan + Tingkat Keyakinan.
 7. **§23 Karya yang dikutip:** numbered source list `Title — URL`, no inline chips.
 
-The canonical ready-to-use research prompt embeds this contract in its `FORMATTING CONTRACT` block.
+The maintainer's external research prompt embeds this contract in its `FORMATTING CONTRACT` block (the prompt
+itself is kept local, not in the repo).
 
 ## Ingest tooling (deterministic, no LLM/API)
 

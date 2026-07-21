@@ -61,28 +61,12 @@ Written for machine reasoning; parsed by `tools/ingest.py --type sentiment`.
 5. **No fabricated quotes.** Aggregate mood only, unless a quote has an archive URL.
 6. `# 8` sources as numbered `Title — URL`.
 
-## Grok prompt (ready to paste)
+## Grok prompt
 
-> Kamu adalah **Senior Crypto Sentiment Historian**. Aku meng-upload **laporan riset fundamental Gemini**
-> untuk proyek **[NAMA]** — pakai itu sebagai peta: dari situ kamu tahu **fase, tanggal, event, tokoh, dan
-> narasi** yang harus dicari jejak sentimennya di X dan sumber publik.
->
-> **Tugas:** rekonstruksi **sentiment historis komunitas & proyek per fase** (pre-launch, testnet, TGE,
-> +30/+90 hari, momen krisis, current), menggunakan akses X-mu + silang dengan arsip publik.
->
-> **Output:** ikuti **8 section** ini (heading bernomor `# 1 …` s/d `# 8`), markdown, **tanpa tabel**
-> (pakai bullet `Label: Value`), satu kolom, tanpa citation chip:
-> 1 Overview & Coverage · 2 Sentiment Timeline by Phase · 3 Community Voice (Retail/KOL/Builder) ·
-> 4 Project Voice · 5 Sentiment↔Fundamental Divergence · 6 Engagement Authenticity ·
-> 7 Extracted Sentiment Patterns · 8 Evidence Level & Provenance.
->
-> **Aturan wajib (jangan dilanggar):**
-> - Di TIAP fase, PISAHKAN `Verified anchor:` (event/kutipan **dengan URL**: berita, forum, Wayback, market
->   data) dari `Sampled mood:` (karakterisasi agregat dari sampling X).
-> - **JANGAN mengarang tweet/kutipan spesifik.** Kalau tak bisa di-link, tulis mood agregat saja.
-> - Beri **Evidence Level (HIGH/MEDIUM/LOW)** per kesimpulan; HIGH hanya jika ≥2 sumber independen setuju.
-> - Sertakan **tanggal capture** dan catat **bias X** (retail/hype-heavy).
-> - Time-stamp tiap fase. Panjang & rinci lebih baik daripada kehilangan detail penting.
+The ready-to-paste Grok prompt is an **external working tool** (used inside Grok, not the framework) and is
+kept in the maintainer's local files — intentionally **not** stored here. This brief keeps only the *contract*
+the ingest depends on (the 8 sections + Input Formatting Contract above). Any Grok prompt must produce output
+that conforms to that contract.
 
 ## Ingest & scope
 
