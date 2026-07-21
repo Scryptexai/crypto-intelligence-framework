@@ -120,3 +120,26 @@ dossier — synthesis stays human/LLM reasoning):
   (`juta`=1e6, `miliar/mrd`=1e9) to avoid format-only false positives. Run after writing each dossier; a clean
   report is the per-ingest fidelity proof for later audit. Heuristic (flags for human review), not a correctness
   proof — a rounded value (e.g. `$72,248,571 → $72,25 juta`) is a faithful match, not a miss.
+
+### Automated batch ingest — `tools/ingest.py` (no LLM at all)
+
+For scale (usage-limit constrained), the whole ingest can run **without an LLM**, because the reasoning is
+already in the Gemini 22-section report — the program only transforms and files it:
+
+```
+# 1. drop raw reports in the inbox
+cp *.docx doc_backup/inbox/
+# 2. one command: extract -> 22-section split -> CIF dossier + cross-links -> archive -> rebuild JSON + backtest
+python3 tools/ingest.py
+```
+
+Each `<Project>_<YYYY-MM>_gemini.docx` becomes `examples/CaseStudies/<Project>.md`: a **faithful restructure**
+of the source into CIF format with the section→ontology `_ref:` links applied from the fixed mapping above.
+It never fabricates or distils. `build_json.py` then **auto-discovers** the new dossiers from the filesystem
+(dedup by path), so **no DatasetIndex edit is needed** for the pipeline to see them.
+
+**Honest scope:** this yields ~90–95% of a hand-authored dossier — everything the source contains, structured
+and cross-linked, but **not** distilled/condensed and without novel synthesis or subtle-inconsistency catching.
+Run a periodic LLM/human QC pass on a sample (`tools/reconcile.py` helps), and refine category/era in
+`DatasetIndex.md` when convenient. Use this when Claude budget is the bottleneck; use the hand-authored
+`Ingest-Deep` role when a project deserves the extra distillation (top anchors).

@@ -137,6 +137,39 @@ def parse_index():
                          "cat": cat, "era": era, "tags": tags}
     return list(projects.values())
 
+def discover_dossiers(existing):
+    """Filesystem discovery: any examples/CaseStudies/<Project>.md dossier is picked up
+    automatically (so ingest.py never has to edit DatasetIndex.md). Index entries win
+    for category/era; files only add projects the index missed."""
+    cs = EXAMPLES / "CaseStudies"
+    have = {norm(p["n"]) for p in existing}
+    have_files = {p["file"] for p in existing}   # dedup by path — robust to H1/index name drift
+    added = []
+    for f in sorted(cs.glob("*.md")):
+        nm = f.name
+        if nm == "README.md" or "Analysis" in nm or "Registry" in nm:
+            continue
+        rel = f"examples/CaseStudies/{nm}"
+        if rel in have_files:
+            continue
+        content = f.read_text(encoding="utf-8")
+        m = re.search(r"^#\s+(.+?)(?:\s+—|\s+-\s|$)", content, re.M)
+        name = (m.group(1).strip() if m else f.stem)
+        if norm(name) in have:
+            continue
+        # category: from a "Category:" line if present, else blank
+        cm = re.search(r"\*\*Category:\*\*\s*(.+)", content)
+        cat = cm.group(1).strip() if cm else ""
+        tags = list(cat_tags(cat)) if cat else []
+        for tg in derive_tags(content[:2200]):
+            if tg not in tags:
+                tags.append(tg)
+        existing.append({"n": name, "tier": "Deep", "file": f"examples/CaseStudies/{nm}",
+                         "cat": cat, "era": "", "tags": tags})
+        have.add(norm(name)); added.append(name)
+    return added
+
+
 def parse_patterns():
     txt = PATTERNS_MD.read_text(encoding="utf-8")
     pats = []
@@ -172,6 +205,7 @@ def main():
     if not INDEX.exists():
         sys.exit("DatasetIndex.md not found — run from repo root.")
     projects = parse_index()
+    discovered = discover_dossiers(projects)
     patterns = parse_patterns()
     OUT.mkdir(exist_ok=True)
     meta = {
@@ -191,6 +225,8 @@ def main():
         encoding="utf-8")
     print(f"[build_json] {meta['projects']} projects ({meta['deep']} deep, {meta['summary']} summary), "
           f"{meta['patterns']} patterns -> poc/data.js, projects.json, patterns.json")
+    if discovered:
+        print(f"[build_json] auto-discovered {len(discovered)} dossier(s) not in index: {', '.join(discovered)}")
 
 if __name__ == "__main__":
     main()
