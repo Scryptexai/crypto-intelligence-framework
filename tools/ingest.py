@@ -84,6 +84,23 @@ def split_sections(md: str):
 def project_name(path: Path) -> str:
     return path.stem.split("_")[0].strip() or path.stem
 
+def norm(name: str) -> str:
+    """Case/punctuation-insensitive key so 'BNBChain', 'BNB-Chain', 'bnb chain' collide as one project."""
+    return re.sub(r"[^a-z0-9]", "", name.lower())
+
+def find_existing(dest_dir: Path, name: str):
+    """Anti-duplicate guard: find a file already representing this project even if its exact
+    filename differs in case/punctuation from `name` (prevents silent near-duplicates at scale)."""
+    if not dest_dir.exists():
+        return None
+    key = norm(name)
+    for f in dest_dir.glob("*.md"):
+        if f.name == "README.md":
+            continue
+        if norm(f.stem) == key:
+            return f
+    return None
+
 def _archive(path: Path, kind: str, name: str) -> str:
     ARCHIVE[kind].mkdir(parents=True, exist_ok=True)
     src_name = path.name if "_" in path.stem else f"{name}_{datetime.date.today():%Y-%m}{path.suffix}"
@@ -103,9 +120,12 @@ def _sections_md(sections, refmap):
     return "\n".join(body).rstrip() + "\n"
 
 def process_deep(path, force):
-    name = project_name(path); out = DEST["deep"] / f"{name}.md"
-    if out.exists() and not force:
-        return [("skip", name, "dossier exists")]
+    name = project_name(path)
+    existing = find_existing(DEST["deep"], name)
+    out = existing or (DEST["deep"] / f"{name}.md")
+    if existing and not force:
+        note = "" if existing.stem == name else f" (matched existing '{existing.stem}.md' — near-duplicate name)"
+        return [("skip", name, f"dossier exists{note}")]
     md = extract_source(path); secs = split_sections(md)
     if len(secs) < 5:
         return [("warn", name, f"only {len(secs)} sections — check Input Formatting Contract")]
@@ -114,22 +134,32 @@ def process_deep(path, force):
     brief_note = ("7-section Causal Event Graph brief (Format v2)" if v2
                   else "22-section brief")
     src = _archive(path, "deep", name)
+    summary_dup = find_existing(DEST["batch"], name)
+    supersede_note = (f"\n**Supersedes:** `examples/Pioneer/{summary_dup.name}` — same project now exists as "
+                       f"a fuller Deep dossier; the Summary is redundant and should be reviewed for removal "
+                       f"(not auto-deleted)." if summary_dup else "")
     head = (f"# {name} — Deep Case Study\n\n"
             f"**CIF Dataset — Deep Dossier · Tier: Deep (anchor project)**\n"
             f"**Source:** Deep Research (Gemini), {brief_note}. **Auto-ingested** by `tools/ingest.py` "
             f"(deterministic, no LLM) — structure & cross-links applied mechanically; the reasoning is the "
             f"source report's.\n**Raw source archived:** `{src}`.\n"
-            f"**Sentiment companion:** `examples/Sentiment/{name}.md` (if present).\n"
+            f"**Sentiment companion:** `examples/Sentiment/{name}.md` (if present).{supersede_note}\n"
             f"**Input note:** extracted via `tools/extract.py` — {len(md)} chars, {len(secs)} sections"
             f"{' (v2 detected)' if v2 else ''}.\n\n"
             f"> Faithful restructure into CIF format — no fabrication, no distillation. Consider a periodic QC pass.\n\n---\n")
     out.write_text(head + _sections_md(secs, refmap), encoding="utf-8")
-    return [("ok", name, f"{len(secs)} sections -> examples/CaseStudies/{name}.md" + (" [v2]" if v2 else ""))]
+    msg = f"{len(secs)} sections -> examples/CaseStudies/{name}.md" + (" [v2]" if v2 else "")
+    if summary_dup:
+        msg += f"  ⚠ supersedes Pioneer/{summary_dup.name}"
+    return [("ok", name, msg)]
 
 def process_sentiment(path, force):
-    name = project_name(path); out = DEST["sentiment"] / f"{name}.md"
-    if out.exists() and not force:
-        return [("skip", name, "sentiment exists")]
+    name = project_name(path)
+    existing = find_existing(DEST["sentiment"], name)
+    out = existing or (DEST["sentiment"] / f"{name}.md")
+    if existing and not force:
+        note = "" if existing.stem == name else f" (matched existing '{existing.stem}.md' — near-duplicate name)"
+        return [("skip", name, f"sentiment exists{note}")]
     md = extract_source(path); secs = split_sections(md)
     if len(secs) < 3:
         return [("warn", name, f"only {len(secs)} sections — check Sentiment Brief contract")]
@@ -156,9 +186,11 @@ def process_batch(path, force):
     for i in range(1, len(chunks), 2):
         name = chunks[i].strip(); block = chunks[i+1].strip()
         safe = re.sub(r"[^A-Za-z0-9()./ -]", "", name).strip().replace(" ", "-") or f"proj{i}"
-        out = DEST["batch"] / f"{safe}.md"
-        if out.exists() and not force:
-            results.append(("skip", name, "profile exists")); continue
+        existing = find_existing(DEST["batch"], safe)
+        out = existing or (DEST["batch"] / f"{safe}.md")
+        if existing and not force:
+            note = "" if existing.stem == safe else f" (matched existing '{existing.stem}.md' — near-duplicate name)"
+            results.append(("skip", name, f"profile exists{note}")); continue
         head = (f"# {name}\n\n"
                 f"**CIF Dataset — Summary Profile · Tier: Summary**\n"
                 f"**Source:** Deep Research (Gemini) batch. **Auto-ingested** by `tools/ingest.py` "
