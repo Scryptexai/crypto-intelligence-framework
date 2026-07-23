@@ -17,6 +17,35 @@ Bare facts without causality are not useful to this system.
 - Success/failure is judged **per point-of-view** — a project can succeed for VC and fail for Retail. The
   eight POVs are: **Founder, VC, Retail, Community, Developer, Institution, Validator, Builder** (§15).
 
+## Core philosophy — Causal Intelligence, not Knowledge Base (read this first)
+
+CIF is not a historical archive and not a similarity engine. The unit of analysis is not the **Project** — it
+is the **Decision Event** (`docs/Ontology/DecisionEvent.md`): a single consequential decision, structured as
+`Context → Problem/Opportunity → Trigger → Decision → Alternatives → Reason/Evidence → Execution →
+Stakeholder Reactions (8 POV) → Short-term Outcome → Long-term Outcome`. A project is dozens of these, and
+the pattern that matters is found **across decisions from unrelated projects/sectors**, not by comparing two
+projects wholesale. Ethereum (smart contracts), Hyperliquid (on-chain orderbook), and Uniswap (AMM) are
+unrelated by sector but may share the same *decision shape* — that shared shape is the reusable pattern, not
+their TVL or sector label.
+
+Three consequences for how research must be conducted:
+
+1. **Observable vs Hidden.** Funding/TVL/wallets/volume (`docs/Ontology/Metrics.md` etc.) are *Observable* —
+   they describe what happened. They rarely explain *why*. Capture the **Hidden** factors too
+   (`docs/Ontology/Hidden.md`: motivation, constraint, pressure, trade-off, strategic goal, risk posture) —
+   grounded in the source, never invented. Hidden explains Observable.
+2. **Context is not optional.** The same decision produces different outcomes under different conditions — an
+   easy incentivized-testnet airdrop worked in 2021 (few hunters, immature Sybil detection); the identical
+   mechanic in 2026 does not (saturated hunters, mature Sybil detection). Every Decision Event must carry its
+   **Context snapshot** (`docs/Ontology/Context.md`: industry state, competitor state, tech maturity, macro
+   conditions, hunter/user population, VC climate, liquidity, narrative). Without this, patterns get
+   matched blindly across incompatible eras — treat this as a research requirement, not an afterthought.
+3. **Research is an investigator, not an analyst.** Do not conclude "why Uniswap succeeded" — collect every
+   measurable and stated factor that plausibly contributed, preserve **conflicting evidence** and **minority
+   opinions**, and let the downstream reasoning layer (`docs/Reasoning/*`) draw the causal conclusion with a
+   calibrated confidence. A report that pre-concludes has already discarded the evidence CIF needs to find
+   patterns *not yet known today*.
+
 ## The 22 sections (input contract)
 
 1. **Executive Summary**
@@ -54,21 +83,21 @@ Bare facts without causality are not useful to this system.
 
 | Gemini § | CIF target |
 |----------|-----------|
-| 2 | Dossier "Pre-conditions" (context) |
+| 2 | `docs/Ontology/Context.md` snapshot (industry state, competitors, macro — as of the events discussed) |
 | 3 | `docs/Ontology/Identity.md`, `Team.md` |
 | 4 | `docs/Innovation/*` |
 | 5, 10 | `docs/Ontology/Technology.md`, `docs/TokenLifecycle/*` |
-| 6 | `docs/Ontology/Funding.md` |
+| 6 | `docs/Ontology/Funding.md` (Observable) + `docs/Ontology/Hidden.md` if a strategic rationale is stated |
 | 7 | `docs/Ontology/Community.md`, `docs/Success/Community.md` |
-| 8 | `docs/Meta/Narratives.md` |
-| 9 | `docs/Valuation/Competitors.md`, `docs/Meta/MarketCycles.md` |
+| 8 | `docs/Meta/Narratives.md` → also part of `docs/Ontology/Context.md` (narrative context) |
+| 9 | `docs/Valuation/Competitors.md`, `docs/Meta/MarketCycles.md` → also `docs/Ontology/Context.md` |
 | 11, 12 | `docs/Ontology/Tokenomics.md`, `Incentives.md`; `docs/Patterns/Points,Mining,Referral` |
 | 13 | `docs/TokenLifecycle/*`, `docs/MarketBehaviour/*`, `docs/Valuation/*` |
 | 14 | `docs/Ontology/Revenue.md`, `Adoption.md`, `Metrics.md` |
-| 15 | **POV Success-Matrix** (see below) + `docs/Success/*` |
-| 16, 17 | Dossier timeline + current snapshot |
-| 18, 19 | `docs/Patterns/*`, `docs/Ontology/*`, `docs/Schema/*` |
-| 20 | `docs/Reasoning/*` (rule candidates) |
+| 15 | **POV Success-Matrix** (see below) + `docs/Success/*` — also the Stakeholder Reactions field of any `DecisionEvent` |
+| 16, 17 | Dossier timeline — **extract each major turning point as a `docs/Ontology/DecisionEvent.md` instance** + current snapshot |
+| 18, 19 | `docs/Patterns/*`, `docs/Ontology/*`, `docs/Schema/*`, **`docs/Ontology/DecisionEvent.md`** (the crown-jewel sections are largely a set of Decision Events) |
+| 20 | `docs/Reasoning/*` (rule candidates) — state the **Context range** each candidate rule holds under |
 | 21 | Dossier "Open Questions" field |
 | 22 | **Evidence Level** field → `docs/Reasoning/Confidence.md` |
 
@@ -78,6 +107,16 @@ Bare facts without causality are not useful to this system.
   level. Example row: `VC: ✅ · Retail: ❌ · Developer: ✅` with per-POV reasons. Binary `examples/Successful/`
   and `Failed/` folders are reserved for clear-cut, single-verdict cases only.
 - **Evidence Level (HIGH/MEDIUM/LOW)** — attached to important conclusions; feeds `docs/Reasoning/Confidence.md`.
+- **Decision Events** — a dossier's Timeline (§16) and Knowledge Extraction (§19) should identify the
+  project's major turning points as explicit Decision Events (`docs/Ontology/DecisionEvent.md`): each with its
+  Context snapshot, Trigger, Alternatives, per-POV Stakeholder Reactions, and Short/Long-term Outcome. This is
+  the unit patterns are actually discovered from — not the project as a whole.
+- **Context snapshot** — required per Decision Event (`docs/Ontology/Context.md`): the industry/competitor/tech/
+  macro/hunter-population/VC-climate state *at that time*. This is what prevents a pattern observed in one era
+  from being blindly applied to an incompatible one.
+- **Observable vs Hidden** — record both (`docs/Ontology/Metrics.md` etc. vs `docs/Ontology/Hidden.md`). Hidden
+  factors (motivation, constraint, trade-off, strategic goal) must be grounded in the source or left `unknown` —
+  never invented.
 - **Open Questions** — explicit research gaps, so later sessions know what is still unvalidated.
 
 ## Writing rules (from the brief)

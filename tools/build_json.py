@@ -219,6 +219,7 @@ def parse_patterns():
             "val": fields.get("validated", "") or "",
             "pred": fields.get("prediction", ""),
             "watch": clist(fields.get("watch", ""), ";"),
+            "scope": fields.get("scope", ""),
         })
     return pats
 

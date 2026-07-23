@@ -12,6 +12,19 @@ patterns → predict where new projects are heading, with a calibrated confidenc
 
 Pipeline: `Research → Knowledge → Ontology → Patterns → Reasoning → Framework → Applications`.
 
+**Core philosophy — Causal Intelligence, not a Knowledge Base.** The unit of analysis is not the *Project* —
+it is the **Decision Event** (`docs/Ontology/DecisionEvent.md`): Context → Trigger → Decision → Alternatives →
+Reason → Execution → Stakeholder Reactions (8 POV) → Short/Long-term Outcome. A project is dozens of these;
+the reusable pattern is found *across decisions from unrelated projects*, not by comparing projects wholesale
+(Ethereum/smart-contracts, Hyperliquid/on-chain-orderbook, Uniswap/AMM share a decision *shape*, not a sector).
+Every Decision Event carries a **Context snapshot** (`docs/Ontology/Context.md` — industry/competitor/tech/
+macro/hunter-population state *at that time*), because the same decision produces different outcomes in
+different eras — never match a pattern across incompatible eras on mechanic-similarity alone. Record
+**Observable** facts (`docs/Ontology/Metrics.md` etc.) separately from **Hidden** factors
+(`docs/Ontology/Hidden.md`: motivation, constraint, trade-off) that actually explain them. Research is an
+**investigator, not an analyst** — collect evidence and preserve disagreement; `docs/Reasoning/` draws the
+causal conclusion, not the source report.
+
 ## The three layers (never mix them)
 
 | Layer | Path | Contains | Rule |

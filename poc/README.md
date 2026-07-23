@@ -53,7 +53,9 @@ PoC reflects the current repo. Patterns are edited in `examples/PatternRegistry.
                   "sentiment": "examples/Sentiment/<P>.md"   // present only if a companion exists
                 } ],
   "patterns": [ { "id", "nm", "triggers": [ … ], "instances", "confidence": "HIGH|MEDIUM|LOW",
-                  "analogs": [ … ], "src", "val", "pred", "watch": [ … ] } ],
+                  "analogs": [ … ], "src", "val", "pred", "watch": [ … ],
+                  "scope": era/conditions this pattern was actually observed under — weigh a match down
+                           if the target's context doesn't resemble this scope (see docs/Ontology/Context.md) } ],
   "sentiment":[ { "project", "file" } ]
 }
 ```

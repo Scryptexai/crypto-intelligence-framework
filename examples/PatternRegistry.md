@@ -6,8 +6,14 @@ prose analyses remain the human explanation; this file is their structured index
 
 **Format (parsed by `tools/build_json.py`):** each pattern is a `## <ID> · <Name>` heading followed by
 `- key: value` bullets. Keys: `triggers` (comma list), `instances` (int), `analogs` (comma list),
-`source` (repo path), `validated` (optional), `prediction`, `watch` (semicolon list). Confidence is derived
-from `instances` (≥3 HIGH · 2 MEDIUM · 1 LOW).
+`source` (repo path), `validated` (optional), `prediction`, `watch` (semicolon list), `scope` (the
+Context/era range this pattern was actually observed under — ref `docs/Ontology/Context.md`). Confidence is
+derived from `instances` (≥3 HIGH · 2 MEDIUM · 1 LOW).
+
+**Why `scope` exists:** a pattern is only a strong analog for a new project if the new project's Context
+(hunter population, Sybil-detection maturity, tech maturity, macro conditions) resembles the Context the
+pattern was actually observed under. A pattern with no stated scope should be treated as **weakly transferable**
+until its era-boundaries are established — do not apply 2020–2021-era mechanics blindly to 2026-era projects.
 
 ---
 
@@ -19,6 +25,7 @@ from `instances` (≥3 HIGH · 2 MEDIUM · 1 LOW).
 - validated:
 - prediction: Jika menang di efisiensi modal, sumber daya (stake) akan terkonsentrasi → muncul kekhawatiran sentralisasi & dorongan mitigasi terdistribusi (mis. DVT). Nilai harus dinilai bersama ada/tidaknya mitigasi.
 - watch: dominance > ~1/3 dari share; absennya mitigasi desentralisasi
+- scope: Berlaku pada era pasca-Merge (2022–sekarang) di mana solo-staking berbiaya tinggi (32 ETH) mendorong agregasi; bergantung pada masih adanya friksi solo-staking dan minimnya regulasi anti-konsentrasi. Belum diuji di rezim regulasi yang membatasi staking-pool.
 
 ## P2 · Rehypothecation → Correlated Cascading Failure
 - triggers: restaking, lrt, looping, liquid-restaking
@@ -28,6 +35,7 @@ from `instances` (≥3 HIGH · 2 MEDIUM · 1 LOW).
 - validated: Renzo ezETH depeg Apr 2024 (~$688, >$65jt liquidations)
 - prediction: Menggunakan ulang aset yang sama menaikkan yield sekaligus korelasi kegagalan. Risiko depeg + cascading liquidations saat leverage looping unwinding.
 - watch: LRT discount / depeg event; posisi looping di lending; akhir window airdrop + likuiditas tipis
+- scope: Era restaking/LRT (2023–sekarang), saat leverage looping via lending market marak dan likuiditas sekunder LRT masih tipis. Bisa melemah jika desain LRT masa depan membatasi re-collateralization.
 
 ## P3 · Multi-token → Simplification
 - triggers: multi-token
@@ -37,6 +45,7 @@ from `instances` (≥3 HIGH · 2 MEDIUM · 1 LOW).
 - validated:
 - prediction: Tokenomics multi-token yang rumit cenderung disederhanakan ke aset tunggal seiring project matang.
 - watch: distorsi insentif antar-token; beban kognitif user
+- scope: Lintas-era (diamati 2017–2025 di DeFi & DePIN) — tampak cukup timeless karena akar masalahnya (beban kognitif user, distorsi insentif) bukan fungsi kondisi pasar tertentu. Confidence tetap MEDIUM karena baru 2 instance.
 
 ## P4 · Airdrop-without-product → Post-TGE dump
 - triggers: airdrop, points
@@ -46,6 +55,7 @@ from `instances` (≥3 HIGH · 2 MEDIUM · 1 LOW).
 - validated: Renzo REZ (alokasi 5%, exit farmer pasca-window)
 - prediction: Airdrop/points tanpa produk & usage nyata → farmer keluar pasca-TGE → tekanan jual. Airdrop dengan produk dominan lebih dulu (Uniswap/Hyperliquid) → retensi jauh lebih baik.
 - watch: alokasi airdrop kecil/membingungkan; aktivitas hanya untuk poin; unlock/vesting pasca-TGE
+- scope: **Era-sensitif — jangan diterapkan buta.** Diamati 2020–2024 saat populasi airdrop-hunter masih tumbuh dan deteksi Sybil belum matang. Mekanisme "task mudah → JP besar" era 2021 (bridge-and-swap sederhana) TIDAK sebanding dengan era 2025–2026 (hunter jenuh, deteksi Sybil matang, task lebih rumit) — bandingkan Context (`docs/Ontology/Context.md`) target sebelum menerapkan, jangan hanya cocokkan mekanik permukaan.
 
 ## P5 · Technical success → Tokenomic harm
 - triggers: fee-burn, upgrade, l2
@@ -55,6 +65,7 @@ from `instances` (≥3 HIGH · 2 MEDIUM · 1 LOW).
 - validated: ETH Dencun (2024) → net-inflasi
 - prediction: Upgrade yang memindah aktivitas keluar dari mekanisme value-accrual bisa merusak tesis token walau sukses teknis.
 - watch: burn/revenue turun pasca-upgrade
+- scope: Baru 1 instance (Ethereum/EIP-1559 era 2021–2024) — berlaku spesifik pada desain tokenomics yang value-accrual-nya terikat langsung ke throughput/kemacetan L1. Transferabilitas ke desain lain belum tervalidasi; confidence LOW sampai ada instance kedua.
 
 ## P6 · First-mover + standard = strongest moat
 - triggers: first-mover, smart-contract, amm
@@ -64,3 +75,4 @@ from `instances` (≥3 HIGH · 2 MEDIUM · 1 LOW).
 - validated:
 - prediction: First mover yang menjadi standar developer punya moat retensi terkuat, mengalahkan pesaing 'lebih cepat/murah'.
 - watch: apakah pesaing mengadopsi standarnya
+- scope: Lintas-era (2015–sekarang) — bergantung pada adanya biaya migrasi developer yang nyata (tooling, likuiditas, efek jaringan), bukan pada kondisi pasar tertentu. Relatif timeless dibanding P4, tapi tetap MEDIUM karena baru 2 instance.
