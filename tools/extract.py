@@ -28,10 +28,11 @@ import sys
 import zipfile
 
 # Canonical CIF section titles (substring match on numbered heading lines).
-# Covers both the 23 deep-dossier sections and the 8 sentiment sections so the
-# same normaliser detects headings for either document type.
+# Covers the 23 deep-dossier sections (v1), the 8 sentiment sections, and the 7
+# Causal Event Graph sections (v2, docs/Protocol/Deep-Research-Brief.md "Format v2")
+# so the same normaliser detects headings for any document type.
 SECTION_TITLES = [
-    # deep (23)
+    # deep v1 (23)
     "Executive Summary", "Industry Background", "Project Origin", "Innovation Analysis",
     "Technology Evolution", "Funding Intelligence", "Community Intelligence",
     "Narrative Intelligence", "Competitive Landscape", "Product Evolution",
@@ -42,6 +43,11 @@ SECTION_TITLES = [
     # sentiment (8)
     "Overview & Coverage", "Overview and Coverage", "Sentiment Timeline", "Community Voice",
     "Project Voice", "Divergence", "Engagement Authenticity", "Sentiment Patterns", "Provenance",
+    # deep v2 — Causal Event Graph (7)
+    "Context & Environment Layer", "Project Archetype", "Core Value Proposition",
+    "Chronological Decision Events", "Causal Event Graph", "Stakeholder Impact", "Reaction Metrics",
+    "Quantifiable Outcomes", "Trajectory", "Conflicting Evidence", "Unresolved Questions",
+    "Conclusion & Synthesis",
 ]
 
 CHIP_RE = re.compile(r"\[span_\d+\]\((?:start|end)_span\)|\[span_\d+\]|start_span|end_span|\[\d+\]")
@@ -109,8 +115,8 @@ def normalise(text: str) -> str:
     paras = [p.strip() for p in re.split(r"\n{2,}", text) if p.strip()]
     out = []
     for p in paras:
-        m = re.match(r"^#{0,3}\s*(\d{1,2})\s+(.+)$", p)
-        if m and len(p) < 70 and any(t.lower() in p.lower() for t in SECTION_TITLES):
+        m = re.match(r"^#{0,3}\s*(\d{1,2})[.\)]?\s+(.+)$", p)
+        if m and len(p) < 100 and any(t.lower() in p.lower() for t in SECTION_TITLES):
             out.append(f"\n## {m.group(1)} {m.group(2).strip()}")
         else:
             out.append(p)

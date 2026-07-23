@@ -53,6 +53,21 @@ SENT_REF = {
     7: "`docs/Meta/Narratives.md`, `docs/Patterns/Narrative.md`, `examples/PatternRegistry.md`",
     8: "`docs/Reasoning/Confidence.md`",
 }
+# deep v2 — Causal Event Graph 7-section format (docs/Protocol/Deep-Research-Brief.md "Format v2")
+DEEP_V2_REF = {
+    1: "`docs/Ontology/Context.md` (era/conditions snapshot)",
+    2: "`docs/Innovation/*`, `docs/Ontology/Technology.md`, `docs/Ontology/Revenue.md`",
+    3: "`docs/Ontology/DecisionEvent.md` (extract each DEV-NNN as one instance)",
+    4: "`docs/Success/*` (POV Success-Matrix), `docs/Ontology/Community.md`",
+    5: "`docs/Ontology/Metrics.md`, `docs/TokenLifecycle/*`, `docs/MarketBehaviour/*`, `docs/Valuation/*`",
+    6: "`docs/Ontology/Hidden.md`, `docs/Reasoning/Confidence.md` (preserve disagreement, don't resolve it)",
+    7: "synthesis — the only section allowed to conclude; ref `docs/Reasoning/Prediction.md`",
+}
+V2_SIGNAL = re.compile(r"CAUSAL EVENT GRAPH|CONTEXT\s*&\s*ENVIRONMENT|DECISION EVENTS", re.I)
+
+def is_v2(sections) -> bool:
+    """Heuristic: v2 (Causal Event Graph) has ~7 sections with distinctive ALL-CAPS titles."""
+    return len(sections) <= 8 and any(V2_SIGNAL.search(t) for _, t, _ in sections)
 
 def extract_source(path: Path) -> str:
     low = path.suffix.lower()
@@ -94,17 +109,22 @@ def process_deep(path, force):
     md = extract_source(path); secs = split_sections(md)
     if len(secs) < 5:
         return [("warn", name, f"only {len(secs)} sections — check Input Formatting Contract")]
+    v2 = is_v2(secs)
+    refmap = DEEP_V2_REF if v2 else DEEP_REF
+    brief_note = ("7-section Causal Event Graph brief (Format v2)" if v2
+                  else "22-section brief")
     src = _archive(path, "deep", name)
     head = (f"# {name} — Deep Case Study\n\n"
             f"**CIF Dataset — Deep Dossier · Tier: Deep (anchor project)**\n"
-            f"**Source:** Deep Research (Gemini), 22-section brief. **Auto-ingested** by `tools/ingest.py` "
+            f"**Source:** Deep Research (Gemini), {brief_note}. **Auto-ingested** by `tools/ingest.py` "
             f"(deterministic, no LLM) — structure & cross-links applied mechanically; the reasoning is the "
             f"source report's.\n**Raw source archived:** `{src}`.\n"
             f"**Sentiment companion:** `examples/Sentiment/{name}.md` (if present).\n"
-            f"**Input note:** extracted via `tools/extract.py` — {len(md)} chars, {len(secs)} sections.\n\n"
+            f"**Input note:** extracted via `tools/extract.py` — {len(md)} chars, {len(secs)} sections"
+            f"{' (v2 detected)' if v2 else ''}.\n\n"
             f"> Faithful restructure into CIF format — no fabrication, no distillation. Consider a periodic QC pass.\n\n---\n")
-    out.write_text(head + _sections_md(secs, DEEP_REF), encoding="utf-8")
-    return [("ok", name, f"{len(secs)} sections -> examples/CaseStudies/{name}.md")]
+    out.write_text(head + _sections_md(secs, refmap), encoding="utf-8")
+    return [("ok", name, f"{len(secs)} sections -> examples/CaseStudies/{name}.md" + (" [v2]" if v2 else ""))]
 
 def process_sentiment(path, force):
     name = project_name(path); out = DEST["sentiment"] / f"{name}.md"

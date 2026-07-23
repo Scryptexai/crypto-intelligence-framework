@@ -46,6 +46,41 @@ Three consequences for how research must be conducted:
    calibrated confidence. A report that pre-concludes has already discarded the evidence CIF needs to find
    patterns *not yet known today*.
 
+## Format v2 — Causal Event Graph (accepted alternative contract)
+
+A second, evolved report contract that operationalises the Core Philosophy above more directly than the
+22-section format. It is **auto-detected and auto-ingested** by `tools/ingest.py` (heuristic: ≤8 sections with
+a title containing "Causal Event Graph", "Context & Environment", or "Decision Events" — see `is_v2()`), using
+a dedicated ontology cross-link map. Either format is valid; v2 is recommended going forward because its
+Decision Events section maps 1:1 onto `docs/Ontology/DecisionEvent.md` with no reconstruction needed.
+
+**The 7 sections** (numbered headings `1.` … `7.`, e.g. `1. CONTEXT & ENVIRONMENT LAYER`):
+
+1. **Context & Environment Layer** ("Era" Conditions) — state of technology, market/macro, competitor
+   landscape, user/hunter behavior *at the time*, ideally with a Baseline-vs-Strategy comparison table.
+   Maps to `docs/Ontology/Context.md` directly.
+2. **Project Archetype & Core Value Proposition** — innovation classification, technical architecture,
+   business/revenue model. Maps to `docs/Innovation/*`, `docs/Ontology/Technology.md`, `Revenue.md`.
+3. **Chronological Decision Events** (Causal Event Graph) — a numbered list of `Event ID: DEV-NNN`, each
+   with Timestamp, Pre-Conditions & Constraints (=Context), Trigger, The Decision Made, Alternatives Rejected,
+   Execution Method. This **is** `docs/Ontology/DecisionEvent.md` — extract each DEV-NNN as one instance.
+4. **Stakeholder Impact & Reaction Metrics** — per stakeholder group, empirical metric + response/impact.
+   Maps to `docs/Success/*` (POV Success-Matrix) and `docs/Ontology/Community.md`. Note: this section's
+   stakeholder groups are often coarser than the mandatory 8 POVs (§15 below) — when ingesting by hand,
+   reconcile against the full 8-POV matrix rather than dropping the missing POVs.
+5. **Quantifiable Outcomes & Trajectory** — token distribution, historical metric checkpoints across eras,
+   incident/outage history. Maps to `docs/Ontology/Metrics.md`, `docs/TokenLifecycle/*`, `docs/MarketBehaviour/*`.
+6. **Conflicting Evidence & Unresolved Questions** — discrepancies/controversies with both sides preserved,
+   plus open questions. This is the **investigator-not-analyst principle, directly operationalised** — maps
+   to `docs/Ontology/Hidden.md` and feeds `docs/Reasoning/Confidence.md` (lower confidence where evidence
+   conflicts). Never silently resolve a stated disagreement — flag it as `INKONSISTENSI` if merging with
+   another source.
+7. **Conclusion & Synthesis** — the *only* section allowed to conclude/synthesize causally.
+
+**Known gap vs v1:** v2's Stakeholder Impact section is not always structured as the full 8-POV grid — when a
+project already has a v1 dossier, merge rather than replace (see `examples/CaseStudies/Solana.md` for a
+worked example merging v1 + v2 sources, including two flagged `INKONSISTENSI` between them).
+
 ## The 22 sections (input contract)
 
 1. **Executive Summary**
@@ -156,9 +191,10 @@ itself is kept local, not in the repo).
 Support tooling for the `Ingest-Deep` runbook lives in `tools/` and is quality-preserving (it never writes the
 dossier — synthesis stays human/LLM reasoning):
 
-- **`tools/extract.py`** — `.docx`/`.pdf` → clean reflowed markdown. Detects `N Title` headings, strips citation
-  chips, and reconstructs any legacy Word tables **table-aware** (`<w:tbl>/<w:tr>/<w:tc>` → proper rows) so no
-  cell is scrambled. This is step 1 of the runbook (also archive the original under `doc_backup/`).
+- **`tools/extract.py`** — `.docx`/`.pdf` → clean reflowed markdown. Detects `N Title` and `N. TITLE` headings
+  (v1 and v2 numbering styles), strips citation chips, and reconstructs any legacy Word tables **table-aware**
+  (`<w:tbl>/<w:tr>/<w:tc>` → proper rows) so no cell is scrambled. This is step 1 of the runbook (also archive
+  the original under `doc_backup/`).
 - **`tools/reconcile.py`** — audit stamp. Diffs the extracted source against the finished dossier and reports
   which **key figures** (currency, %, unit-suffixed magnitudes) are not represented in the dossier. Unit-aware
   (`juta`=1e6, `miliar/mrd`=1e9) to avoid format-only false positives. Run after writing each dossier; a clean
@@ -179,8 +215,12 @@ python3 tools/ingest.py
 
 Each `<Project>_<YYYY-MM>_gemini.docx` becomes `examples/CaseStudies/<Project>.md`: a **faithful restructure**
 of the source into CIF format with the section→ontology `_ref:` links applied from the fixed mapping above.
-It never fabricates or distils. `build_json.py` then **auto-discovers** the new dossiers from the filesystem
-(dedup by path), so **no DatasetIndex edit is needed** for the pipeline to see them.
+`ingest.py` auto-detects v1 (22-section) vs v2 (Causal Event Graph) and applies the matching ref-map
+(`DEEP_REF` vs `DEEP_V2_REF`) — see "Format v2" above. It never fabricates or distils. `build_json.py` then
+**auto-discovers** the new dossiers from the filesystem (dedup by path), so **no DatasetIndex edit is needed**
+for the pipeline to see them. **Merges** (a v2 report arriving for a project that already has a v1 dossier)
+are *not* automated — hand-merge per the worked example in `examples/CaseStudies/Solana.md`, since deciding
+what to keep/flag-as-inconsistent is a judgment call.
 
 **Honest scope:** this yields ~90–95% of a hand-authored dossier — everything the source contains, structured
 and cross-linked, but **not** distilled/condensed and without novel synthesis or subtle-inconsistency catching.
