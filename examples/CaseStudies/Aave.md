@@ -5,7 +5,7 @@
 **Pipeline position:** Applications layer — anchor artifact structured against the full `docs/` ontology.
 The **dominant DeFi money-market (lending) protocol**, a **First Mover** (Flash Loans, aTokens), and the third
 strong **value-accrual reform** instance in the dataset (mirrors dYdX D8 / Cosmos D7). **Supersedes** the
-Batch-01 Summary `examples/Pioneer/Aave.md`.
+Batch-01 Summary `examples/CaseStudies/Aave.md`.
 **Raw source archived:** `doc_backup/deep/Aave_2026-07_gemini.docx` (+ `.md` text extraction).
 **Input note:** authored in the CIF no-table contract; extracted via `tools/extract.py` (0 tables, 0 chips,
 23 sections); fidelity checked with `tools/reconcile.py`.
@@ -270,8 +270,8 @@ _ref: `docs/Reasoning/Confidence.md`, `docs/Research/Verification.md`_
 - **Success:** `docs/Success/*` · **Schema:** `docs/Schema/KnowledgeGraph.md`, `EntityRelationship.md`, `PatternSchema.md`
 - **Cross-project analogs:** `examples/CaseStudies/dYdX.md` & `Cosmos.md` (**same value-accrual pattern + fix**),
   `Avalanche.md` (Rush + V4 + Progmat RWA), `examples/Pioneer/MakerDAO-Sky.md` (GHO vs Sky SSR), `examples/Pioneer/LayerZero.md`
-  (rsETH bridge), `examples/Pioneer/EigenLayer.md` & `Lido.md` (LRT/restaking + DeFi United), `examples/Pioneer/Uniswap.md` (AMM).
-  **Supersedes:** `examples/Pioneer/Aave.md` (Summary). **Gap candidates:** Compound, Morpho.
+  (rsETH bridge), `examples/CaseStudies/EigenLayer.md` & `Lido.md` (LRT/restaking + DeFi United), `examples/Pioneer/Uniswap.md` (AMM).
+  **Supersedes:** `examples/CaseStudies/Aave.md` (Summary). **Gap candidates:** Compound, Morpho.
 
 ## 21. Sources
 _Deep Research provenance (Gemini). Laporan sumber mengutip **89 referensi**; sumber primer/kunci di bawah._

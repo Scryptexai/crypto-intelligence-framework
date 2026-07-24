@@ -7,7 +7,7 @@ The **absolute pioneer of the restaking category** and the **security substrate 
 (ether.fi D10, Renzo, Kelp, Puffer, Swell all farmed its points) — now the dataset's clearest **infrastructure→
 enterprise platform pivot** (restaking → EigenCloud "verifiable AWS for AI"). Also the **slashing-induced capital
 realignment** case: TVL $20,09 mrd → $4,3–8,9 mrd after real risk got priced in. **Supersedes** the Batch-01 Summary
-`examples/Pioneer/EigenLayer.md`.
+`examples/CaseStudies/EigenLayer.md`.
 **Raw source archived:** `doc_backup/deep/EigenLayer_2026-07_gemini.docx` (+ `.md` text extraction).
 **Input note:** authored in the CIF no-table contract; extracted via `tools/extract.py` (0 tables, 0 chips,
 23 sections); fidelity checked with `tools/reconcile.py`.
@@ -276,7 +276,7 @@ _ref: `docs/Reasoning/Confidence.md`, `docs/Research/Verification.md`_
 - **Cross-project analogs:** `examples/CaseStudies/EtherFi.md` (**LRT terbesar yang dibangun DI ATAS** restaking EigenLayer +
   low-float toxicity paralel), `examples/CaseStudies/CrossAnalysis-ETH-Lido-EigenLayer.md` (staking→restaking stack),
   `examples/Pioneer/Lido.md` (stETH direstake), `examples/CaseStudies/Aave.md`/`dYdX.md`/`Cosmos.md` (bandingkan value-accrual
-  ELIP-12 buyback vs fee-switch 100%). **Supersedes:** `examples/Pioneer/EigenLayer.md` (Summary). **Gap candidates:** Symbiotic, Karak, Renzo, Kelp DAO, Swell, Puffer, Celestia (DA competitor), Aethir (DePIN GPU).
+  ELIP-12 buyback vs fee-switch 100%). **Supersedes:** `examples/CaseStudies/EigenLayer.md` (Summary). **Gap candidates:** Symbiotic, Karak, Renzo, Kelp DAO, Swell, Puffer, Celestia (DA competitor), Aethir (DePIN GPU).
 
 ## 21. Sources
 _Deep Research provenance (Gemini). Laporan sumber mengutip **80 referensi**; sumber primer/kunci di bawah._

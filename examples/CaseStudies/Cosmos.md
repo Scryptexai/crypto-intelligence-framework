@@ -67,7 +67,7 @@ Arsitektur 3-lapis (aplikasi / konsensus / jaringan):
 
 *Dampak/moat:* jadi **standar industri** — diadopsi **BNB Smart Chain, dYdX Chain, Injective, Osmosis, Celestia**.
 *Paradoks (§9, §18):* moat teknologi sangat kuat, tetapi **tanpa pajak keamanan wajib** → adopsi tak menetes
-ke nilai ATOM. → cross-link `examples/Pioneer/Celestia.md`, `dYdX.md`, `examples/CaseStudies/BNBChain.md`.
+ke nilai ATOM. → cross-link `examples/CaseStudies/Celestia.md`, `dYdX.md`, `examples/CaseStudies/BNBChain.md`.
 
 ## 6. Technology Evolution — Gaia dari Router Minimalis ke Mesin Aktif
 _ref: `docs/Ontology/Technology.md`, `docs/TokenLifecycle/*`, `docs/Ontology/Infrastructure.md`_
@@ -124,7 +124,7 @@ ATOM** snapshot 20 Okt 2023; min **23 TIA** snapshot 1 Des 2023). Celestia genes
 Tanpa vesting/lock airdrop → **mercenary capital**: kunci ATOM hanya untuk ekstrak airdrop, lalu jual token
 airdrop → **TIA −91,9%, OSMO −79%, JUNO −82%** dari puncak; saat siklus melambat H2 2024, **90.000 delegator
 unbond ATOM dalam sebulan (Nov 2024)** → depresi harga ATOM berkelanjutan. → §19 pola *Circular Airdrop Death
-Spiral*; `examples/Pioneer/Celestia.md`.
+Spiral*; `examples/CaseStudies/Celestia.md`.
 
 ## 10. Community, Narrative & Product Evolution
 _ref: `docs/Ontology/Community.md`, `docs/Meta/Narratives.md`, `docs/Patterns/Narrative.md`, `docs/Project/Roadmap.md`_
@@ -308,7 +308,7 @@ _ref: `docs/Reasoning/Confidence.md`, `docs/Research/Verification.md`_
 - **Success:** `docs/Success/*` · **Schema:** `docs/Schema/KnowledgeGraph.md`, `EntityRelationship.md`, `PatternSchema.md`
 - **Cross-project analogs:** `examples/CaseStudies/Polkadot.md` (sovereignty vs shared-security mirror), `Avalanche.md`
   (appchain/Subnet + vs-Cosmos), `BNBChain.md` (Binance Chain/Greenfield di atas Tendermint/Cosmos SDK);
-  `examples/Pioneer/Celestia.md` (SDK-built DA; TIA airdrop + death spiral), `examples/Pioneer/dYdX.md` (migrasi StarkEx→Cosmos appchain)
+  `examples/CaseStudies/Celestia.md` (SDK-built DA; TIA airdrop + death spiral), `examples/CaseStudies/dYdX.md` (migrasi StarkEx→Cosmos appchain)
 
 ## 24. Sources
 _Deep Research provenance (Gemini). Laporan sumber mengutip **87 referensi**; sumber primer/kunci di bawah._

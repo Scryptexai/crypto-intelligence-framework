@@ -7,7 +7,7 @@ Dinamika Tokenomik, dan Evolusi Pasar (2019-2026)"*.
 The **category-creating First Mover of sovereign modular Data Availability (alt-DA)** — the chain that forced
 Ethereum to ship EIP-4844 blobs. Also the dataset's clearest **"Value-Revenue Gap"** and **vesting-loophole
 capital-extraction** case: TVL of narratives, but ~$60–89/day fees; VC (Polychain) drained ~$179–242M in *liquid
-staking rewards from locked tokens* → TIA −97%. **Supersedes** the Batch-01 Summary `examples/Pioneer/Celestia.md`.
+staking rewards from locked tokens* → TIA −97%. **Supersedes** the Batch-01 Summary `examples/CaseStudies/Celestia.md`.
 **Raw source archived:** `doc_backup/deep/Celestia_2026-07_gemini.docx` (+ `.md` text extraction).
 **Input note:** authored in the CIF no-table contract; extracted via `tools/extract.py` (0 tables, 0 chips,
 23 sections); fidelity checked with `tools/reconcile.py`.
@@ -286,7 +286,7 @@ _ref: `docs/Reasoning/Confidence.md`, `docs/Research/Verification.md`_
 - **Cross-project analogs:** `examples/CaseStudies/EigenLayer.md` (**EigenDA — DA competitor + restaking-security contrast**),
   `examples/CaseStudies/Ethereum.md` (**EIP-4844 blob competitor + Dencun value-accrual analog + rollup roadmap**),
   `examples/CaseStudies/Cosmos.md` (**CometBFT/SDK/IBC lineage; advisors Zaki Manian/Ethan Buchman**), `examples/CaseStudies/dYdX.md`
-  (dalam snapshot Genesis Drop), `examples/Pioneer/Optimism.md` (OP Stack rollup). **Supersedes:** `examples/Pioneer/Celestia.md`
+  (dalam snapshot Genesis Drop), `examples/Pioneer/Optimism.md` (OP Stack rollup). **Supersedes:** `examples/CaseStudies/Celestia.md`
   (Summary). **Gap candidates:** Avail, EigenDA (standalone), Dymension, Saga, AltLayer, Sovereign Labs, Conduit, Caldera.
 
 ## 21. Sources

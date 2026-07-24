@@ -178,7 +178,7 @@ _ref: `docs/Ontology/Ecosystem.md`, `docs/Ontology/Adoption.md`, `docs/Ontology/
   `examples/Pioneer/Lido.md`.
 - **Restaking:** ledakan **EigenLayer** (2024–2025) — restaking ETH/LST untuk mengamankan AVS; LRT (eETH,
   ezETH via Ether.fi/Renzo/KelpDAO). Risiko sistemik **collateral looping** / cascading slashing. → cross-link
-  `examples/Pioneer/EigenLayer.md`.
+  `examples/CaseStudies/EigenLayer.md`.
 - **RWA:** dominasi institusional — **BlackRock BUIDL** (Mar 2024, ERC-20, Securitize + BNY Mellon, SEC),
   AUM $2,4–2,9 miliar (2026); komposabilitas instan dengan USDC. → `docs/Ontology/Revenue.md`.
 
@@ -347,8 +347,8 @@ _Research gap — belum tervalidasi, untuk sesi berikutnya._
 - Lifecycle: `docs/TokenLifecycle/*` (Frontier→Merge→Dencun→…)
 - Market: `docs/MarketBehaviour/MarketCorrelation.md`, `docs/Valuation/Competitors.md`, `docs/Valuation/TVL.md`
 - Success: `docs/Success/*`
-- Cross-project: `examples/Pioneer/Lido.md`, `examples/Pioneer/EigenLayer.md`, `examples/Pioneer/Uniswap.md`,
-  `examples/Pioneer/Aave.md`, `examples/Pioneer/Optimism.md`, `examples/Pioneer/Celestia.md`
+- Cross-project: `examples/Pioneer/Lido.md`, `examples/CaseStudies/EigenLayer.md`, `examples/Pioneer/Uniswap.md`,
+  `examples/CaseStudies/Aave.md`, `examples/Pioneer/Optimism.md`, `examples/CaseStudies/Celestia.md`
 
 ## 18. Sources
 _Deep Research provenance. The source report cites **81 references**; key primary sources below._

@@ -285,7 +285,7 @@ _ref: `docs/Reasoning/Confidence.md`, `docs/Research/Verification.md`_
 - **Success:** `docs/Success/*` · **Schema:** `docs/Schema/KnowledgeGraph.md`, `EntityRelationship.md`, `PatternSchema.md`
 - **Cross-project analogs:** `examples/CaseStudies/Ethereum.md` (EVM origin + modular blob-DA yang ditiru opBNB/
   Greenfield), `examples/CaseStudies/Solana.md` (rival monolitik yang menang narasi ritel), `examples/Pioneer/Optimism.md`
-  (OP Stack yang menyokong opBNB), `examples/Pioneer/dYdX.md` & `Berachain.md` (model appchain/L1 alternatif)
+  (OP Stack yang menyokong opBNB), `examples/CaseStudies/dYdX.md` & `Berachain.md` (model appchain/L1 alternatif)
 
 ## 18. Sources
 _Deep Research provenance (Gemini). Laporan sumber mengutip **20 referensi**; sumber primer/kunci di bawah._

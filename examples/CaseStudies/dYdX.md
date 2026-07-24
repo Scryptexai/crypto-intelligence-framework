@@ -5,7 +5,7 @@
 Defensif, dan Pivot RWA Arcus"*.
 **Pipeline position:** Applications layer — anchor artifact structured against the full `docs/` ontology.
 The **pioneer on-chain perp-derivatives DEX** and canonical **app-layer value-accrual-failure → buyback-reform**
-analog (mirrors Cosmos D7 at the application layer). **Supersedes** the Batch-02 Summary `examples/Pioneer/dYdX.md`.
+analog (mirrors Cosmos D7 at the application layer). **Supersedes** the Batch-02 Summary `examples/CaseStudies/dYdX.md`.
 **Raw source archived:** `doc_backup/deep/dYdX_2026-07_gemini.docx` (+ `.md` text extraction).
 **Input note:** authored in the CIF no-table contract; extracted via `tools/extract.py` (0 tables, 0 chips,
 23 sections); fidelity checked with `tools/reconcile.py`.
@@ -262,7 +262,7 @@ _ref: `docs/Reasoning/Confidence.md`, `docs/Research/Verification.md`_
 - **Success:** `docs/Success/*` · **Schema:** `docs/Schema/KnowledgeGraph.md`, `EntityRelationship.md`, `PatternSchema.md`
 - **Cross-project analogs:** `examples/CaseStudies/Cosmos.md` (dYdX Chain = flagship appchain + **same value-accrual
   pattern** at app layer), `Avalanche.md` (RWA + 3AC exposure), `examples/Pioneer/Uniswap.md` (AMM vs order book),
-  `examples/Pioneer/Optimism.md`/`LayerZero.md` (L2/interop). **Supersedes:** `examples/Pioneer/dYdX.md` (Summary).
+  `examples/Pioneer/Optimism.md`/`LayerZero.md` (L2/interop). **Supersedes:** `examples/CaseStudies/dYdX.md` (Summary).
 - **Gap candidate:** **Hyperliquid** (the disruptor — appchain perp DEX, aggressive buyback, no-VC airdrop).
 
 ## 21. Sources

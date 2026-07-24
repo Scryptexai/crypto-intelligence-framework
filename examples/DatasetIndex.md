@@ -23,6 +23,12 @@ _How each project is captured (see `docs/Protocol/` for the runbooks)._
 
 Target ~1000 projects ≈ ~50 Deep + ~950 Summary ≈ ~150 sessions (state persists in git; per-session cost is flat).
 
+**No-overlap policy:** a project exists in exactly one tier at a time. When a Deep dossier is ingested for a
+project that already has a Summary in `examples/Pioneer/`, the Summary is redundant (Deep is strictly richer)
+and should be removed in the same session, once the Deep version is confirmed complete — never leave both.
+`tools/ingest.py` flags this automatically (`⚠ supersedes Pioneer/<X>.md` in its output) but does not
+auto-delete; removing it is a deliberate step, done here in `DatasetIndex.md` alongside the file deletion.
+
 ## Deep Dossiers
 _Tier: Deep · anchor projects with full causal history._
 
@@ -49,11 +55,11 @@ _Raw source archived: `doc_backup/batch/Batch-01_Kurasi-Dataset_2026-07_gemini.p
 
 | # | Project | Category | Era | Priority | File |
 |---|---------|----------|-----|----------|------|
-| 1 | Celestia | Modular / Data Availability | 2019– | P0 | `Pioneer/Celestia.md` → **superseded by Deep D12** `CaseStudies/Celestia.md` |
+| 1 | Celestia | Modular / Data Availability | 2019– | P0 | **removed** — superseded by Deep D12, `CaseStudies/Celestia.md` |
 | 2 | Synthetix | DeFi (DeFi Pioneer) | 2017– | P0 | `Pioneer/Synthetix.md` |
 | 3 | Helium | DePIN (IoT & Wireless) | 2013– | P0 | `Pioneer/Helium.md` |
-| 4 | EigenLayer | Infrastructure / Restaking | 2021– | P0 | `Pioneer/EigenLayer.md` → **superseded by Deep D11** `CaseStudies/EigenLayer.md` |
-| 5 | Aave | DeFi (DeFi Pioneer) | 2017– | P1 | `Pioneer/Aave.md` → **superseded by Deep D9** `CaseStudies/Aave.md` |
+| 4 | EigenLayer | Infrastructure / Restaking | 2021– | P0 | **removed** — superseded by Deep D11, `CaseStudies/EigenLayer.md` |
+| 5 | Aave | DeFi (DeFi Pioneer) | 2017– | P1 | **removed** — superseded by Deep D9, `CaseStudies/Aave.md` |
 | 6 | Arweave / AO | Data Availability / Modular Compute | 2017– | P1 | `Pioneer/Arweave-AO.md` |
 | 7 | Farcaster | Social (Decentralized Social) | 2020– | P1 | `Pioneer/Farcaster.md` |
 | 8 | MakerDAO / Sky | DeFi (Decentralized Central Bank) | 2015– | P0 | `Pioneer/MakerDAO-Sky.md` |
@@ -80,7 +86,7 @@ _Promoted from the Batch 01 candidate queue. Provenance is web research, **not**
 | 12 | Lido | Liquid Staking | 2020– | P1 | `Pioneer/Lido.md` |
 | 13 | Uniswap | DeFi / AMM | 2018– | P1 | `Pioneer/Uniswap.md` |
 | 14 | World Network (Worldcoin) | Identity | 2019– | P1 | `Pioneer/WorldNetwork-Worldcoin.md` |
-| 15 | dYdX | DeFi / Appchain | 2017– | P1 | `Pioneer/dYdX.md` → **superseded by Deep D8** `CaseStudies/dYdX.md` |
+| 15 | dYdX | DeFi / Appchain | 2017– | P1 | **removed** — superseded by Deep D8, `CaseStudies/dYdX.md` |
 | 16 | Ethena | DeFi / Stablecoin | 2023– | P2 | `Pioneer/Ethena.md` |
 | 17 | Berachain | Layer 1 (Proof-of-Liquidity) | 2021– | P2 | `Pioneer/Berachain.md` |
 | 18 | Optimism | Layer 2 (OP Stack / Superchain) | 2019– | P2 | `Pioneer/Optimism.md` |

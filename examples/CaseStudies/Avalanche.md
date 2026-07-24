@@ -317,7 +317,7 @@ _ref: `docs/Reasoning/Confidence.md`, `docs/Research/Verification.md`_
 - **Success:** `docs/Success/*` · **Schema:** `docs/Schema/KnowledgeGraph.md`, `EntityRelationship.md`, `PatternSchema.md`
 - **Cross-project analogs:** `examples/CaseStudies/Solana.md` (rival throughput/ritel), `Cosmos.md` & `Polkadot.md`
   (appchain/L0 — membandingkan diri ke Avalanche), `Ethereum.md` (EVM di C-Chain + "killer" narasi),
-  `examples/Pioneer/LayerZero.md` (interop), `examples/Pioneer/EigenLayer.md` (analog economic/shared security)
+  `examples/Pioneer/LayerZero.md` (interop), `examples/CaseStudies/EigenLayer.md` (analog economic/shared security)
 
 ## 24. Sources
 _Deep Research provenance (Gemini). Laporan sumber mengutip **57 referensi**; sumber primer/kunci di bawah._

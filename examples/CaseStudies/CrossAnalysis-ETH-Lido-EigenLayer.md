@@ -2,7 +2,7 @@
 
 **CIF Dataset — Cross-Project Analysis · Tier: Synthesis**
 **Source:** Synthesis of existing curated artifacts (no new research). Derived from:
-`examples/CaseStudies/Ethereum.md`, `examples/Pioneer/Lido.md`, `examples/Pioneer/EigenLayer.md`.
+`examples/CaseStudies/Ethereum.md`, `examples/Pioneer/Lido.md`, `examples/CaseStudies/EigenLayer.md`.
 **Pipeline position:** `Patterns → Reasoning` — turns three project histories into transferable patterns
 and prediction inputs.
 
@@ -36,7 +36,7 @@ LRTs          (Ether.fi eETH, Renzo ezETH, KelpDAO) → yield stacking
 - **ETH** provides the base security and the 32-ETH friction. _(ref `examples/CaseStudies/Ethereum.md` §8)_
 - **Lido** removes the friction: deposit any amount, receive rebasing **stETH**, stay liquid. _(ref `examples/Pioneer/Lido.md`)_
 - **EigenLayer** reuses that staked ETH/LSTs to secure Actively Validated Services (AVS), with **LRTs**
-  (eETH, ezETH) auto-distributing across AVS for yield. _(ref `examples/Pioneer/EigenLayer.md`, `Ethereum.md` §8)_
+  (eETH, ezETH) auto-distributing across AVS for yield. _(ref `examples/CaseStudies/EigenLayer.md`, `Ethereum.md` §8)_
 
 Each layer solves the layer below's inefficiency — and inherits its risk while adding its own.
 
@@ -112,7 +112,7 @@ When a **new liquid-staking, restaking, or LRT project** appears, reason by anal
 
 ## 7. Related files
 - Deep dossier: `examples/CaseStudies/Ethereum.md` (§7 governance, §8 staking/restaking)
-- Profiles: `examples/Pioneer/Lido.md`, `examples/Pioneer/EigenLayer.md`
+- Profiles: `examples/Pioneer/Lido.md`, `examples/CaseStudies/EigenLayer.md`
 - Ontology: `docs/Ontology/Security.md`, `Risks.md`, `Governance.md`, `Tokenomics.md`
 - Patterns: `docs/Patterns/NetworkEffect.md`, `Failure.md`
 - Reasoning: `docs/Reasoning/Confidence.md`, `Similarity.md`, `AnalogEngine.md`, `Prediction.md`

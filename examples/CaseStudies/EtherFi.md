@@ -48,7 +48,7 @@ credentials** ke operator/kolam terpusat (risiko peretasan, kolusi operator, sla
 **EigenLayer** memelopori **restaking** (jaminan modal → amankan AVS pihak ketiga untuk yield berlapis), tapi opsi
 restaking awal **sangat tidak likuid** — modal terkunci spekulatif tanpa kejelasan penarikan. ether.fi lahir di
 titik-balik ini untuk menjembatani **kedaulatan kunci privat + likuiditas instan (eETH) + yield multi-layer**. →
-`examples/Pioneer/Lido.md` (LST/kustodi), `examples/Pioneer/EigenLayer.md` (restaking primitive).
+`examples/Pioneer/Lido.md` (LST/kustodi), `examples/CaseStudies/EigenLayer.md` (restaking primitive).
 
 ## 4. Origin & Team
 _ref: `docs/Ontology/Team.md`, `docs/Project/Philosophy.md`_
@@ -299,7 +299,7 @@ _ref: `docs/Reasoning/Confidence.md`, `docs/Research/Verification.md`_
 - **Reasoning:** `docs/Reasoning/Prediction.md`, `AnalogEngine.md`, `Confidence.md`, `Weighting.md`
 - **Success:** `docs/Success/*` · **Schema:** `docs/Schema/KnowledgeGraph.md`, `EntityRelationship.md`, `PatternSchema.md`
 - **Cross-project analogs:** `examples/CaseStudies/Aave.md` (**weETH kolateral** + **sisi korban rsETH hack** yang
-  ether.fi hindari), `examples/Pioneer/EigenLayer.md` & `Lido.md` (restaking/LST stack; lihat `CrossAnalysis-ETH-Lido-EigenLayer.md`),
+  ether.fi hindari), `examples/CaseStudies/EigenLayer.md` & `Lido.md` (restaking/LST stack; lihat `CrossAnalysis-ETH-Lido-EigenLayer.md`),
   `examples/Pioneer/LayerZero.md` (bridge/DVN), `examples/Pioneer/Uniswap.md` (Liquid V3 LP), `examples/Pioneer/Optimism.md`
   (Cash → OP Mainnet). **New project — no Summary superseded. Gap candidates:** Puffer, Kelp DAO, Renzo, Pendle, Veda Labs, Plume.
 

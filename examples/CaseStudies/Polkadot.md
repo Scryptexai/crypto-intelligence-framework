@@ -332,7 +332,7 @@ _ref: `docs/Reasoning/Confidence.md`, `docs/Research/Verification.md`_
 - **Cross-project analogs:** `examples/CaseStudies/Ethereum.md` (Gavin Wood genealogy + **Parity freeze, peristiwa sama**),
   `examples/CaseStudies/Cardano.md` (sesama ex-Ethereum founder, research-first, no-slashing), `examples/CaseStudies/Avalanche.md`
   (shared-security vs Subnet double-capex; sama-sama vs Cosmos), `examples/CaseStudies/Solana.md` (retail-simplicity yang direbut),
-  `examples/Pioneer/EigenLayer.md` (analog shared/economic security)
+  `examples/CaseStudies/EigenLayer.md` (analog shared/economic security)
 
 ## 24. Sources
 _Deep Research provenance (Gemini). Laporan sumber mengutip **86 referensi**; sumber primer/kunci di bawah._
