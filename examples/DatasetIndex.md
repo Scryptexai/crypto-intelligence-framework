@@ -29,6 +29,40 @@ and should be removed in the same session, once the Deep version is confirmed co
 `tools/ingest.py` flags this automatically (`⚠ supersedes Pioneer/<X>.md` in its output) but does not
 auto-delete; removing it is a deliberate step, done here in `DatasetIndex.md` alongside the file deletion.
 
+## V1 → V2 Upgrade Queue (policy: upgrade before delete — do not remove)
+
+**Decision (maintainer):** the 11 Deep dossiers below are still in the v1 (22-section) format. They are kept
+as-is — **not deleted** — until each is upgraded to a v1+v2 merge (same treatment as `CaseStudies/Solana.md`,
+the worked example: keep everything v1 has that v2 doesn't — POV Success-Matrix, funding tables, policy
+chronology — add what v2 adds — Context snapshot, explicit Decision Events, Conflicting Evidence — and flag
+any cross-source discrepancy as `INKONSISTENSI` rather than silently picking one). Their `doc_backup/deep/`
+v1 sources stay archived until the matching project is upgraded.
+
+**Important operational note:** `./run.sh` / `tools/ingest.py` alone will **not** perform this upgrade — its
+anti-duplicate guard (`find_existing()`) correctly *skips* a new report for a project that already has a
+dossier, rather than blindly overwriting good v1 content. Merging requires the same judgment call as the
+Solana rebuild, i.e. a short session per project. This queue is unrelated to net-new projects, which
+`run.sh` already ingests fully automatically without a session.
+
+| # | Project | Status | v1 source |
+|---|---------|--------|-----------|
+| D1 | Ethereum | ⏳ pending v2 merge | `doc_backup/deep/Ethereum_2026-07_gemini.docx` |
+| D3 | BNB Chain | ⏳ pending v2 merge | `doc_backup/deep/BNBChain_2026-07_gemini.docx` |
+| D4 | Cardano | ⏳ pending v2 merge | `doc_backup/deep/Cardano_2026-07_gemini.docx` |
+| D5 | Avalanche | ⏳ pending v2 merge | `doc_backup/deep/Avalanche_2026-07_gemini.docx` |
+| D6 | Polkadot | ⏳ pending v2 merge | `doc_backup/deep/Polkadot_2026-07_gemini.docx` |
+| D7 | Cosmos | ⏳ pending v2 merge | `doc_backup/deep/Cosmos_2026-07_gemini.docx` |
+| D8 | dYdX | ⏳ pending v2 merge | `doc_backup/deep/dYdX_2026-07_gemini.docx` |
+| D9 | Aave | ⏳ pending v2 merge | `doc_backup/deep/Aave_2026-07_gemini.docx` |
+| D10 | ether.fi | ⏳ pending v2 merge | `doc_backup/deep/EtherFi_2026-07_gemini.docx` |
+| D11 | EigenLayer | ⏳ pending v2 merge | `doc_backup/deep/EigenLayer_2026-07_gemini.docx` |
+| D12 | Celestia | ⏳ pending v2 merge | `doc_backup/deep/Celestia_2026-07_gemini.docx` |
+| D2 | Solana | ✅ upgraded (worked example) | both v1 + v2 archived |
+
+**When a project row above is upgraded:** flip its status to ✅, and only then is that project's specific
+`doc_backup/deep/` v1 source (and any framework-level v1-format cleanup) eligible for the maintainer's
+separate delete decision — evaluated per-project, not as a blanket action.
+
 ## Deep Dossiers
 _Tier: Deep · anchor projects with full causal history._
 

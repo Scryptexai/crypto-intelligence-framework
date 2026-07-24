@@ -60,6 +60,12 @@ conclusions with an **evidence level** (HIGH/MED/LOW).
 - **Batch summary** (like `examples/Pioneer/*`) — one profile per project for breadth. ~10–15 per session.
 - **Tracking** (`tracking/<project>/`) — living dossier for projects being actively worked/followed.
 
+**Data hygiene:** never leave a project in two tiers at once (Deep supersedes Summary — remove the redundant
+Summary in the same session). Never delete a curated dossier or a `doc_backup/` raw source without an
+explicit maintainer decision on scope — see `examples/DatasetIndex.md` § "V1 → V2 Upgrade Queue" for the
+current policy: 11 Deep dossiers are still v1-format and are kept as-is until upgraded (Solana-style merge)
+before any removal.
+
 Target scale (~1000 projects) ≈ ~50 deep + ~950 summary ≈ **~150 sessions**. State persists in git, so
 per-session cost stays flat regardless of dataset size.
 
