@@ -81,6 +81,41 @@ Decision Events section maps 1:1 onto `docs/Ontology/DecisionEvent.md` with no r
 project already has a v1 dossier, merge rather than replace (see `examples/CaseStudies/Solana.md` for a
 worked example merging v1 + v2 sources, including two flagged `INKONSISTENSI` between them).
 
+## Recommended multi-phase research process (richer than one mega-prompt)
+
+Asking for all 7 (v2) or 22 (v1) sections in a **single** prompt spreads the model's attention thin across
+every section at once, under-serving the highest-value section — Chronological Decision Events — which needs
+`Context → Trigger → Decision → Alternatives → Reason → Execution → Stakeholder Reactions (8 POV) → Outcome`
+**per event**, times several events. When the resulting dossier feels thin ("banyak informasi yang tidak
+ada"), the fix is usually process, not the contract: split the research into **sequential, narrower passes**
+instead of one shot. This section documents the recommended **process/order only** — the actual prompt text
+for each phase is external (kept in the maintainer's local files), per the rule at the top of this document.
+
+No tooling changes are required: `tools/extract.py` / `tools/ingest.py` only care that the final **stitched**
+`.docx` conforms to the existing 7-section (v2) or 22-section (v1) heading contract before it's dropped in
+`doc_backup/inbox/deep/` — how many prompts produced it is invisible to ingestion.
+
+**Phases** (map 1:1 onto the v2 7-section contract above; v1 sections group the same way):
+
+1. **Context & Classification** — Context/Environment snapshot (`docs/Ontology/Context.md`) + project
+   archetype/category. Done first because every later phase needs the era fixed before decisions can be
+   correctly interpreted (Core Philosophy, consequence 2, above).
+2. **Foundation & Architecture** — origin, team, technical architecture, business/revenue model.
+3. **Decision Event discovery (seed pass)** — a wide scan enumerating *every* candidate decision event found
+   in the research window: name + rough date + one-line trigger only, deliberately shallow. This exists so
+   the model doesn't settle on the first few events it finds and stop looking.
+4. **Decision Event deep-dive (expand pass, one event or a small batch at a time)** — for each event surfaced
+   in phase 3, a focused extraction against the full `docs/Ontology/DecisionEvent.md` schema. This is the
+   actual depth fix: narrowing the prompt's scope per pass is what produces real detail, not asking for every
+   event at once.
+5. **Stakeholder & Observable Metrics** — full 8-POV reconciliation (§15) + quantifiable data (funding,
+   metrics, tokenomics, incident/outage history), attached to the now-known decision events.
+6. **Conflicting Evidence & Unresolved Questions** — a dedicated review pass hunting contradictions and
+   minority views, run after the main narrative exists so there is something to compare against. This is the
+   investigator-not-analyst principle (Core Philosophy, consequence 3), operationalized as its own phase.
+7. **Conclusion & Synthesis** — the only phase allowed to draw a causal conclusion (Transferable Intelligence,
+   rule candidates, Evidence Level tagging) — run last, with every earlier phase's output available.
+
 ## The 22 sections (input contract)
 
 1. **Executive Summary**
