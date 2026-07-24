@@ -69,6 +69,13 @@ before any removal.
 Target scale (~1000 projects) ≈ ~50 deep + ~950 summary ≈ **~150 sessions**. State persists in git, so
 per-session cost stays flat regardless of dataset size.
 
+## Application layer (product/UI, not knowledge)
+
+Before building or changing anything user-facing (UI, trust/citation display, project-identification flow,
+Supabase/AirdropOS bridge), read `docs/Project/ApplicationBlueprint.md` first — it is the locked plan for
+positioning, the three-layer trust architecture, the hybrid project-identification flow, and the build-phase
+sequencing. Don't re-derive these decisions from scratch; update that file if a decision changes.
+
 ## Roles — pick one per session, then read its runbook
 
 Tell me the role at the start of the session (or I infer it from your request). Each has a runbook:

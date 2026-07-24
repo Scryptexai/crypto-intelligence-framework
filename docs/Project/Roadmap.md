@@ -47,3 +47,10 @@ Sibling files in `docs/Project/` and the root `README.md`.
 ## Future Expansion
 
 May grow as governance, licensing, and contribution processes mature.
+
+## Application-layer roadmap (filled — 2026-07-24)
+
+The `Applications` stage of the pipeline has a locked phase plan: see `docs/Project/ApplicationBlueprint.md`
+§6 for the full phase table (0=knowledge pipeline, done; 1=trust UI + hybrid identification; 2=Supabase sync;
+3=AirdropOS integration; 4=public track-record page). This section stays a pointer, not a duplicate — update
+the blueprint file when phases change, not this line.
