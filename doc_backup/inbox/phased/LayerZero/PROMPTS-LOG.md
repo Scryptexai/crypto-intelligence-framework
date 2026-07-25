@@ -1159,4 +1159,125 @@ Open Threads
   lebih lanjut.
 ```
 
+**Result:** rejected, not committed. Two disqualifying problems, one worse than anything seen in Phase 3.
+
+(1) **Zero inline citations, again:** verified via grep — 0 matches for `[sumber` or a URL anywhere in the
+document body (69 non-empty paragraphs). Every fact carries an Evidence Level tag `(HIGH)`/`(MEDIUM)`/
+`(LOW)` but no source attached, despite the prompt giving an explicit worked example of the required
+format. A 14-source bibliography exists at the end, unlinked to any individual fact — the identical
+failure mode Phase 3 took 3 attempts to fix.
+
+(2) **Prose quality regression, likely fabrication:** several fields degrade into single, page-length
+run-on sentences stacking near-synonymous phrases with no added information (worst offender: the Fee
+Switch effectiveness paragraph). More seriously, the draft claims TGE released **25% of supply
+(250M ZRO)** — split into 8.5% retail-claimable + 5% to Foundation treasury + 11.5% reserved for a
+rumored "Season 2 airdrop" — which contradicts the confirmed 8.5% TGE-claimable figure (established
+across Phase 3 and Phase 5, and stated explicitly in this very prompt's "already known" block) with no
+traceable source. Also claims the Fee Switch is "unconditionally active" since Feb 2026 following a 97%-
+approval Referendum #3, without addressing Phase 5's noted quorum-failure reports for the same period.
+Source quality is also markedly weaker than Phase 3/5 (token-unlock-tracker sites, one Binance Square
+profile that reads as a bot account) vs. those phases' CoinDesk/The Block/Law360-tier sourcing.
+
+Not patched or reformatted — the 25% claim specifically needs independent verification, not a citation
+retrofit onto content that might be wrong. Following the Phase 3/5 precedent, a Claude-direct research
+pass was commissioned instead (see below) rather than sending this back to Gemini.
+
+## Phase 6 — Claude-direct tokenomics research (commissioned 2026-07-25)
+
+Prompt sent to a separate Claude research session (not this pipeline's Gemini loop), asking it to
+independently verify: the TGE-unlock contradiction (8.5% confirmed vs. the rejected draft's 25% claim),
+the Fee Switch's actual activation status (active vs. quorum-failed), whether the two post-TGE ZRO
+buybacks (Sept/Nov 2025) burn supply or move it to treasury, exact Team/Investor vesting terms, the full
+scope of ZRO's governance mechanism, and whether any real holder-concentration data exists. Full prompt
+text kept below for the record.
+
+```
+Research task: LayerZero (ZRO) tokenomics — sourced fact-check and citation map
+
+Context: I'm building a structured tokenomics profile for LayerZero's ZRO token as part of a crypto
+research pipeline. A previous research pass (from Gemini) produced several claims with NO verifiable
+citations attached, and at least one figure that contradicts previously-confirmed facts. I need you to
+independently verify the tokenomics facts below, find real checkable sources (prefer primary sources —
+LayerZero Foundation's own blog/docs, or established crypto media like CoinDesk/The Block/Messari/
+DefiLlama — over token-unlock-tracker aggregator sites, which should be used only for cross-checking,
+not as primary evidence), and flag anything you cannot verify rather than guessing.
+
+=== ALREADY CONFIRMED (from prior research passes, cross-verified across multiple sources) — treat as
+ground truth, do not re-derive, but DO use to sanity-check anything that contradicts them ===
+- Total Supply: 1,000,000,000 ZRO, fixed/hard-capped.
+- Genesis allocation: Strategic Partners/Investors 32.20% (322,000,000 ZRO); Core Contributors/Team
+  25.50% (255,000,000 ZRO); Community/Airdrop 38.30% (383,000,000 ZRO); Tokens Repurchased 4.00%
+  (40,000,000 ZRO) — these four sum to exactly 100%.
+- TGE was 20 June 2024. The claimable portion at TGE was 8.5% of total supply (85,000,000 ZRO), via
+  the "Proof-of-Donation" mechanism (a $0.10/ZRO donation to Protocol Guild required to unlock a claim,
+  paid in USDC/USDT/ETH, ~$18.5M projected total with LayerZero Foundation matching up to $10M).
+- ZRO price fell ~15% in the first 24 hours post-TGE-announcement, to ~$2.87 (confirmed via
+  Cryptopolitan/CoinMarketCap in an earlier research pass — NOT the "$4.79→$3.39" figure that circulated
+  in very early drafts and was never verified).
+- The 40,000,000 ZRO "Tokens Repurchased" genesis bucket is confirmed to be the same 40M ZRO that
+  LayerZero returned to strategic partners as part of the FTX bankruptcy-estate litigation settlement
+  (31 January 2025) — this was independently confirmed via a separate financial-research pass (Phase 5)
+  and needs no further verification, just don't contradict it.
+- Two post-TGE ZRO buyback events are confirmed real (from the Phase 5 financial research): a
+  ~50,000,000 ZRO (~5% of supply) buyback from early investors/strategic partners in September 2025
+  (part of a combined ~$150M-for-the-year figure that also includes a16z's separate $55M April 2025
+  secondary purchase), and a $10M discretionary LayerZero Labs open-market buyback in November 2025.
+  What is NOT yet confirmed: whether these bought-back tokens were actually BURNED (removed from total
+  supply) or moved to Foundation/Labs treasury (not burned, just changed hands) — this is the single most
+  important open question for this research pass.
+
+=== NEEDS INDEPENDENT VERIFICATION — THIS IS THE CORE OF THE TASK ===
+
+1. **TGE unlock percentage — resolve a direct contradiction.** A prior (Gemini) draft claimed the TGE
+   released 25% of total supply (250,000,000 ZRO), broken down as: 8.5% (85M) claimable by retail users,
+   5% (50M) to LayerZero Foundation treasury as "venture capital and DEX liquidity provisioning," and
+   11.5% (115M) reserved in protocol treasury for a rumored "Season 2 airdrop" in H2 2026. This 25%
+   figure and its breakdown could NOT be traced to any source in that draft and directly contradicts the
+   confirmed 8.5% figure above. Find out: is there ANY credible source for a 25% TGE circulating-supply
+   figure (as distinct from the 8.5% claimable-by-retail figure)? Or is 25% a fabrication/hallucination
+   that should be discarded entirely? If you find NO support for it, say so explicitly — don't try to
+   rationalize a middle-ground number.
+
+2. **Fee Switch activation status — resolve as of today.** A prior draft claimed the Fee Switch was
+   "unconditionally active" as of February 2026, following a Referendum #3 in December 2025 with 97%
+   approval. Separately, other secondary sources (per an earlier financial research pass) reported the
+   fee-switch vote failing to reach an ~40.6% quorum around the same period. These cannot both be true.
+   Determine: is the Fee Switch actually live and burning fees today? What is the actual approval
+   threshold/quorum requirement, and did the relevant referendum(s) actually meet it? Cite whatever
+   official governance/on-chain source settles this (LayerZero Foundation governance portal, Snapshot
+   space, or official blog announcement) rather than a secondary blog's summary.
+
+3. **Do post-TGE ZRO buybacks burn supply or move it to treasury?** Specifically for the September 2025
+   ~50M ZRO buyback and the November 2025 $10M Labs buyback: is there on-chain evidence (transfer to a
+   verifiable burn address, e.g. 0x000...dead or similar) that the tokens were destroyed, or does the
+   evidence point to them sitting in a Foundation/Labs-controlled treasury wallet? Two research camps are
+   reportedly split on this (one calling it "burned," another calling it "buyback-and-accumulate,
+   not burned") — find the on-chain transaction data yourself if possible (which address received the
+   tokens?) rather than just repeating secondary commentary.
+
+4. **Vesting schedule specifics for Team and Investors** — exact cliff length and vesting duration/
+   cadence (e.g. "12-month cliff, then 24-month linear monthly vesting" or whatever the actual terms are)
+   for the Core Contributors (25.50%) and Strategic Partners/Investors (32.20%) genesis buckets. A prior
+   draft claimed 12-month cliff + 24-month linear vesting for both — verify this specifically, since it
+   wasn't independently sourced in that draft either.
+
+5. **Governance mechanism scope** — is the fee-switch referendum the ONLY on-chain governance ZRO holders
+   get, or are there other decisions token holders vote on? What's the actual mechanism (Snapshot
+   off-chain vote, on-chain binding vote, delegated voting, etc.)?
+
+6. **Holder concentration** — is there ANY on-chain data (Etherscan token holder distribution, or a
+   dashboard like Nansen/Arkham) showing top 10/50/100 wallet concentration for ZRO? A prior draft
+   claimed this was completely unmeasurable — confirm or find what's actually available.
+
+=== OUTPUT FORMAT ===
+Please structure your findings the same way as before: a short TL;DR of the most important
+corrections/confirmations, then Key Findings organized by the numbered questions above (with real,
+checkable URLs attached to every specific claim — not a bibliography dump at the end disconnected from
+individual facts), then Recommendations for what to state as fact vs. flag as unverified/contested, then
+Caveats for anything you couldn't fully resolve. Prioritize primary sources (LayerZero's own
+blog/docs/governance portal) and reputable crypto media (CoinDesk, The Block, Messari, DefiLlama) over
+token-unlock-aggregator sites or low-effort blogs — if an aggregator site is the only source you can find
+for something, say so explicitly rather than presenting it with unearned confidence.
+```
+
 **Result:** pending — awaiting output.
