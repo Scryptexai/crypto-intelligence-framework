@@ -510,3 +510,49 @@ kalau lebih dari 2 kalimat WAJIB dipecah jadi sub-bullet bersitasi, jangan menga
 ```
 
 **Result:** pending — awaiting output.
+
+## Phase 1 trim to v3 — scope-creep cleanup (2026-07-25, no new Gemini prompt needed)
+
+**Finding (maintainer flagged, verified correct):** the active Phase 1 file (v2, the reformatted narrative)
+was never actually scoped to the Foundation template. It carried ~50 fields instead of the ~20 the template
+asks for, front-loading shallow previews of content that Phase 3 (History), Phase 4 (Technology), and the
+pending Phase 5 (Financial) each later covered in far more depth — funding rounds, ULN/DVN architecture,
+audit history, the Kelp DAO incident, the FTX lawsuit, the "Zero" roadmap, ZRO token allocation, and the
+TGE market reaction were all already present in Phase 1, in one-line form. This is why the pipeline felt
+like it wasn't progressing: later phases weren't repeating Phase 1 by mistake, they were going deeper on
+topics Phase 1 had no business covering in the first place — Phase 1 telegraphed everything shallowly up
+front, so genuine later depth read as déjà vu. Two sentences also broke Phase 1's own "facts only, no
+analysis" rule ("Strategi Yurisdiksi" and "Konsekuensi Application-owned security" were both interpretive,
+not factual).
+
+**Fix — trimmed directly, no new Gemini round-trip needed** (all the source content already existed; this
+was a mechanical dedup/reallocation, not new research):
+- Old file archived: `doc_backup/deep/LayerZero_2026-07_phase1-outofscope-v2.docx` (kept as source of
+  record, same pattern as every other superseded version this project).
+- New active file: `doc_backup/inbox/phased/LayerZero/01-foundation.docx` — trimmed to the ~20-field
+  template (Official Name/Symbol/Category/Founding Entity/Founders/Core Team/Country/Launch Dates/Main
+  Products/channels/Token Contract/Chain/Ecosystem/Open Threads only). 17.7KB raw text → 2.5KB. Existing
+  per-fact Evidence Level tags were preserved as-is (Phase 1 was, ironically, already the best-cited phase
+  of the four so far — the citation failure only started at Phase 3).
+- Content removed because a later phase already fully supersedes it: all 4 funding rounds (→ Phase 5),
+  ULN/DVN architecture + security config + audit list + "Zero" roadmap + application-owned-security
+  analysis (→ Phase 4), Kelp DAO incident + FTX lawsuit narrative + TGE reaction narrative (→ Phase 3), OFT
+  burn-and-mint mechanism (→ already in Phase 4's Novelty Assessment).
+- Content removed because it was pure interpretation, not fact (violated Phase 1's own rule): the
+  jurisdiction-strategy sentence, the application-owned-security-consequence sentence.
+
+**Content NOT superseded anywhere yet — carried forward here so it isn't lost, to be injected into the
+named future phase's prompt when drafted:**
+- **→ Phase 6 (Token Intelligence):** ZRO Genesis Allocation — Strategic Partners/Investors 32.20%
+  (322,000,000 ZRO), Core Contributors/Team 25.50% (255,000,000), Community/Airdrop 38.30% (383,000,000),
+  Tokens Repurchased 4.00% (40,000,000); Total Supply 1,000,000,000 ZRO hard-capped; Community distribution
+  — 8.5% available at TGE, remainder over 36 months; Sybil Defense — self-report system (15% allocation
+  bounty) + bounty hunter program; Proof-of-Donation mechanism — $0.10/ZRO donation (USDC/USDT/ETH) to
+  Protocol Guild required to unlock the initial 8.5% claim; Protocol Guild proceeds — ~$18.5M, LayerZero
+  Labs pledged matching up to $10M; market reaction — spot price fell 22% ($4.79→$3.39) in the first 4
+  hours, community backlash calling the donation requirement a "pay-to-claim tax."
+- **→ Phase 8 (Market Intelligence):** historical message metric (V1) — 80M+ messages processed; value
+  transferred — $95B+ secured/facilitated; Stargate Finance TVL — peaked above $3B.
+- **→ Phase 7 (Ecosystem Intelligence):** Tether launched USDT0 using LayerZero's OFT standard — needs a
+  deeper integration-mechanics pass when Phase 7 is drafted (Phase 2 already has Tether as an entity, but
+  the technical integration detail wasn't captured anywhere).

@@ -97,6 +97,37 @@ silently dropped**, so both files are kept:
 `exposure_type: technical-integration`. Still open, lower priority: the "Bridging Trilemma" framing and the
 Endpoint library names `SendUln302` / `ReceiveUln302` / `ReadLib1002` — Phase 4 (Technology) material.
 
+**LayerZero Phase 1 — v2 → v3, scope-creep trim (2026-07-25, maintainer-flagged).** The maintainer noticed
+the pipeline felt like it "wasn't progressing" past Entity Intelligence. Root cause, verified: v2 (the
+active file above) was never actually scoped to the Foundation template — it carried ~50 fields instead of
+~20, front-loading shallow one-line previews of funding rounds, ULN/DVN architecture, audit history, the
+Kelp DAO incident, the FTX lawsuit, the "Zero" roadmap, and ZRO tokenomics. Phase 3 and Phase 4 then covered
+every one of those topics again, in genuinely far more depth — but because Phase 1 had already telegraphed
+them shallowly, the real depth added by 3 and 4 read as repetition instead of progress. Two sentences also
+broke Phase 1's own "facts only, no analysis" rule (a jurisdiction-strategy interpretation and an
+application-owned-security-consequence interpretation).
+
+Trimmed directly (no new Gemini prompt needed — this was dedup/reallocation of already-existing content,
+not new research):
+- `doc_backup/deep/LayerZero_2026-07_phase1-outofscope-v2.docx` — the old bloated v2, archived as source of
+  record (same pattern as v1 above).
+- `doc_backup/inbox/phased/LayerZero/01-foundation.docx` — **now v3, the active phase file**, trimmed to the
+  ~20-field template only. 17.7KB raw text → 2.5KB. Existing Evidence Level tags were preserved as-is —
+  Phase 1 was, ironically, the best-cited phase of the four so far; the citation failure only started at
+  Phase 3.
+- Content removed because a later phase already fully supersedes it: funding rounds (→ Phase 5), ULN/DVN
+  architecture + audit list + "Zero" roadmap (→ Phase 4), Kelp DAO + FTX lawsuit narrative + TGE reaction
+  (→ Phase 3), OFT mechanism (→ already in Phase 4's Novelty Assessment). Content removed for being pure
+  interpretation rather than fact: both analysis sentences noted above.
+- Content **not yet owned by any phase** — carried forward in `PROMPTS-LOG.md` to be injected when each
+  phase is drafted, not lost: ZRO Genesis Allocation %/distribution/Sybil Defense/Proof-of-Donation
+  mechanism/Protocol Guild proceeds/TGE price reaction → **Phase 6**; historical message count ($80M+) and
+  value transferred ($95B+) and Stargate TVL peak (~$3B) → **Phase 8**; Tether/USDT0's use of the OFT
+  standard → **Phase 7**.
+- This also shrinks Phase 1's footprint as the one phase that's always pasted in full into every later
+  phase's Context Pack (see `Phased-Research-Prompts.md`'s point 3) — the trim directly serves that fix too,
+  not just readability.
+
 **LayerZero Phase 2 — Entity Intelligence, clean pass.** `doc_backup/inbox/phased/LayerZero/02-entity.docx`.
 76 entities mapped; all 13 entities mandated by the prompt present (4 recovered from Phase 1's drop, plus
 Alameda Ventures/FTX Group, Protocol Guild, Stargate, Tether, and the 5 named auditors); all 10 investors from
