@@ -120,15 +120,27 @@ CIF (this repo) stays the knowledge source of truth. **AirdropOS** (`Scryptexai/
 JS/TS frontend, Python backend, Supabase, Vercel) is the consumer application. Approved integration: repos are
 **not** merged; `poc/cif.json` (schema `cif-export/1`) is synced into Supabase tables, and AirdropOS queries
 Supabase instead of its current mocked/fabricated intelligence data. Supabase auth for this bridge has already
-been granted by the maintainer. No sync script exists yet — this is queued, not started.
+been granted by the maintainer.
+
+**Frontend shipped ahead of the sync (2026-07-24):** AirdropOS's `Intelligence.jsx`/`IntelligenceDetail.jsx`
+have already been redesigned to match §3/§4/§9 of this document (search-first over a curated catalog,
+citation-backed evidence, base-case/signal-to-watch framing) and deployed to production — but still backed by
+`frontend/src/lib/cifMock.js` (static mock data shaped like the future sync), not a real Supabase read. This
+was a deliberate sequencing choice: the UI could be validated without waiting on the sync.
+
+**Superseded by this UI, not yet cleaned up:** AirdropOS's old `deep-research`/`research-project` Supabase edge
+functions and the `research_reports` table (the previous live-per-user-Gemini-call approach) are now orphaned
+— nothing in the frontend calls them anymore, but they still exist. Maintainer decision: **fold their removal
+into Phase 2** rather than doing it as a separate cleanup pass — Phase 2 replaces them with the real sync
+anyway, so retiring the old path and standing up the new one happen together.
 
 ## 6. Build phases
 
 | Phase | Scope | Depends on | Status |
 |-------|-------|------------|--------|
 | **0** | Knowledge pipeline: ontology, `run.sh` ingest, `poc/cif.json` export, `tools/backtest.py` | — | ✅ done |
-| **1** | Application UI: browsable Opportunity Ranking + search-first Analyze (§4) + trust UI (§3: citation panel, evidence badges, base-case/signal-to-watch report format, public Track Record) | Phase 0 | design reviewed (prototype) |
-| **2** | Supabase sync script: push `cif.json` → Supabase tables on each `run.sh build` | Phase 0 | not started |
+| **1** | Application UI: browsable Opportunity Ranking + search-first Analyze (§4) + trust UI (§3: citation panel, evidence badges, base-case/signal-to-watch report format) | Phase 0 | ✅ shipped to AirdropOS production, on mock data (§5) |
+| **2** | Supabase sync script: push `cif.json` → Supabase tables on each `run.sh build`; swap AirdropOS's `cifMock.js` for real reads; retire the orphaned `deep-research`/`research-project` edge functions + `research_reports` table (§5) as part of the same cutover | Phase 0 | not started |
 | **3** | AirdropOS integration: point its queries at the synced Supabase tables, replacing mocked intelligence data | Phase 2 | not started |
 | **4** | Public Prediction Track Record page live (can ship independently once Phase 1's backtest UI exists) | Phase 1 | not started |
 
