@@ -847,14 +847,27 @@ tags are undecodable in isolation. Fixed by direct patch (no new Gemini round-tr
 dropped content was unchanged verbatim text, not new research): both sections appended back from the
 pre-reformat source. **Active file:** `doc_backup/inbox/phased/LayerZero/04-technology.docx`.
 
-## Phase 5 — Financial Intelligence (sent 2026-07-25; REVISED same day — see note below)
+## Phase 5 — Financial Intelligence (drafted 2026-07-25; REVISED twice — see notes below)
 
-**Revision note:** the original version of this prompt told the model to "use Phase 1-4 outputs above as
+**Revision note 1:** the original version of this prompt told the model to "use Phase 1-4 outputs above as
 context," implying all 4 raw documents needed to be re-pasted. That instruction was wrong and has been
 corrected here — see the "Context Pack" fix in `Phased-Research-Prompts.md` § How to use these, point 3.
 **Context actually needed for this phase:** paste Phase 1's finished output in full (short, cheap). Phase
 2/3/4 are NOT needed in full — every fact this phase depends on from them is already injected directly
 into the prompt below as a compact block, not left for the model to dig out of long documents.
+
+**Revision note 2 (2026-07-25, before first send):** the "already known" facts and the Phase 2/3
+cross-reference block below were written *before* Phase 3's citation research corrected several of the
+same facts (see the "Claude-direct citation research" entry above). Caught and fixed prior to sending —
+sending the stale version would have asked the model to "deepen" wrong facts, the same trap that produced
+Phase 3's original errors. Corrected below: Series A's lead investor (Binance Labs, not just "Delphi
+Digital/Multicoin continuation" — Binance Labs is absent from the pre-correction version entirely, which
+was the actual gap); Coinbase Ventures/Tiger Global/Uniswap Labs moved from "seed" to Series A Extension
+(where they actually participated, per The Block); the Series A Extension's lead is a 3-way co-lead
+(Sequoia + FTX Ventures + a16z, per Forbes), not "led by a16z" alone; and — most importantly — the FTX
+litigation is **already resolved** (settled 31 January 2025, per Phase 3), so the prompt no longer asks
+"is it still ongoing" but asks for the settlement's financial terms instead. The unverified "$111M"
+figure is now presented as unverified (reported range $21.37M–~$100M+) rather than as a stated fact.
 
 ```
 Menggunakan output Foundation Intelligence (Phase 1) di atas sebagai konteks, bangun PROFIL FINANSIAL
@@ -862,28 +875,37 @@ untuk LayerZero. HANYA ekonomi pendanaan/pendapatan — JANGAN bahas tokenomics/
 Phase 6).
 
 === RONDE PENDANAAN YANG SUDAH DIKETAHUI — WAJIB DIPERDALAM DENGAN DETAIL, JANGAN CUMA DIULANG ===
-- Seed — April 2021 — $2 juta — investor termasuk Multicoin Capital, Coinbase Ventures
-- Series A — September 2021 — $6 juta — investor termasuk Delphi Digital, Multicoin Capital (lanjutan)
-- Series A Extension — Maret 2022 — $135 juta (valuasi $1 miliar, status unicorn) — dipimpin a16z crypto,
-  investor lain: Sequoia Capital, PayPal Ventures, Alameda Ventures/FTX Group
-- Series B — April 2023 — $120 juta (valuasi $3 miliar) — investor termasuk a16z crypto (lanjutan),
-  Sequoia Capital (lanjutan), Circle Ventures, OKX Ventures, Christie's, Samsung Next
+- Seed — April 2021 — $2 juta — dipimpin Multicoin Capital dan Sino Global Capital
+- Series A — September 2021 — $6 juta ($6,3 juta menurut satu sumber, ada selisih angka) — dipimpin
+  bersama Binance Labs (investor baru di putaran ini) dan Multicoin Capital (lanjutan dari seed),
+  partisipan baru: Delphi Digital
+- Series A Extension — 30 Maret 2022 — $135 juta (valuasi $1 miliar, status unicorn) — co-lead 3 pihak:
+  Sequoia Capital, FTX Ventures/Alameda Ventures, dan a16z crypto; partisipan lain: PayPal Ventures,
+  Coinbase Ventures, Tiger Global, Uniswap Labs
+- Series B — 4 April 2023 — $120 juta (valuasi $3 miliar) — TANPA lead investor tunggal, 33 investor
+  termasuk a16z crypto (lanjutan), Sequoia (lanjutan), Circle Ventures, OKX Ventures, Christie's,
+  Samsung Next, BOND, Lightspeed, OpenSea Ventures — total pendanaan kumulatif setelah putaran ini: $263 juta
 
-CARI YANG BELUM ADA: lead investor pasti untuk Seed dan Series A (siapa yang MEMIMPIN, bukan cuma
-berpartisipasi)? Apakah ada ronde pendanaan LAIN yang belum tercatat (strategic round, token sale
+CARI YANG BELUM ADA: Apakah ada ronde pendanaan LAIN yang belum tercatat (strategic round, token sale
 pra-TGE di luar 4 ronde di atas)?
 
 === TERHUBUNG KE TEMUAN PHASE 2 & 3 — WAJIB DIJAWAB SECARA FINANSIAL DI SINI ===
-Dari Phase 2: FTX Recovery Trust menggugat LayerZero Labs untuk memulihkan **$70 juta investasi ekuitas**
-dan **$41 juta transfer preferensial (clawback)** — total exposure finansial ~$111 juta.
-Dari Phase 3: proses hukum berjalan September 2023 (filing) hingga Maret 2024 (penyelesaian briefing atas
-Motion to Dismiss), dan LayerZero disebut sempat membeli balik (buyback) saham ekuitas FTX.
+Dari Phase 2: FTX Recovery Trust menggugat LayerZero Labs (Adv. Pro. No. 23-50492-JTD, Delaware) untuk
+memulihkan dana — angka yang dilaporkan bervariasi tergantung komponen yang dihitung: $21,37 juta
+(preference claim inti) hingga ~$86–100 juta+ (termasuk komponen ekuitas/pinjaman $45 juta). Angka
+"$111 juta" yang beredar di draf-draf awal TIDAK ditemukan verbatim di sumber manapun — JANGAN
+mengasumsikan angka ini benar, treat sebagai perlu diverifikasi ulang.
+Dari Phase 3 (sudah dikoreksi dan dikonfirmasi via riset sitasi terpisah): gugatan ini SUDAH DISELESAIKAN
+lewat settlement pada 31 Januari 2025 (dikonfirmasi The Block dan Invezz) — BUKAN "masih berjalan hingga
+2026" seperti asumsi draf sebelumnya. LayerZero juga sempat membeli balik (buyback) 100% ekuitas dan waran
+FTX/Alameda pada 10 November 2022 (sehari sebelum FTX mengajukan Chapter 11), dengan treasury independen
+~$134 juta (~90% kas/stablecoin — rincian: $107 juta kas langsung + $27 juta on-chain per satu sumber),
+dan $11,5 juta dana operasional yang tetap terjebak di FTX (bukan $10,7 juta seperti draf lama).
 PERTANYAAN FINANSIAL YANG BELUM TERJAWAB:
-- Bagaimana status litigasi ini SEKARANG (2026)? Menang, kalah, settlement (berapa nilainya kalau ada),
-  atau masih berjalan?
-- Apakah LayerZero benar-benar membayar kembali sebagian/seluruh $111 juta itu? Berapa nilai buyback
-  ekuitas FTX yang disebut di Phase 3, dan dari mana dananya (treasury? ronde pendanaan baru?)?
-- Apakah ada dampak pada treasury/runway perusahaan akibat kewajiban hukum ini?
+- Berapa nilai FINAL settlement 31 Januari 2025 itu (angka riil yang dibayar/diselesaikan, bukan angka
+  tuntutan awal $21,37 juta–$100 juta+)? Dari sumber mana pendanaannya (treasury? ronde baru?)?
+- Apakah ada dampak terukur pada treasury/runway perusahaan akibat proses hukum 2022–2025 ini secara
+  keseluruhan (biaya pengacara, dana yang akhirnya dibayarkan dalam settlement, dst)?
 
 === FORMAT OUTPUT ===
 Untuk SETIAP ronde pendanaan, ulangi blok ini (setiap baris di dalam blok pakai sitasinya sendiri, JANGAN
