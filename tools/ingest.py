@@ -94,7 +94,7 @@ PHASE_META = {
     "conflict":    {"title": "Conflicting Evidence & Resolutions",
                      "ref": "`docs/Reasoning/Confidence.md` — INKONSISTENSI convention"},
 }
-OPEN_THREADS_RE = re.compile(r"(?im)^#{0,3}\s*open\s*threads?\b.*$")
+OPEN_THREADS_RE = re.compile(r"(?im)^#{0,3}[^\n]{0,80}\bopen\s*threads?\b[^\n]*$")
 
 def detect_phase_key(filename: str):
     """Match a phase key as a substring of the filename (case/punctuation-insensitive)."""
@@ -104,23 +104,46 @@ def detect_phase_key(filename: str):
             return k
     return None
 
+BIBLIOGRAPHY_RE = re.compile(r"(?im)^#{0,3}\s*(karya yang dikutip|daftar pustaka|sources?|references?|bibliography)\s*$")
+
 def split_open_threads(text: str):
     """Split a phase document into (body, [threads]) on its 'Open Threads' heading, if present.
-    A continuation line (doesn't start with -/* but isn't blank) is folded into the previous bullet,
-    so a thread that wraps across lines isn't silently truncated."""
+    Handles two shapes seen in real output: bulleted lines ("- ...") and plain narrative paragraphs
+    with no bullets at all -- a strict bullets-only parser silently drops the entire section when a
+    model writes threads as prose instead, which is real content loss, not a formatting nitpick. A
+    trailing bibliography/citation-list heading (if Open Threads is followed by one) ends the
+    threads section rather than being absorbed as more "threads"."""
     m = OPEN_THREADS_RE.search(text)
     if not m:
         return text.strip(), []
     body, tail = text[:m.start()].strip(), text[m.end():]
+
+    b = BIBLIOGRAPHY_RE.search(tail)
+    if b:
+        tail = tail[:b.start()]
+
+    lines = [ln.strip() for ln in tail.splitlines()]
+    has_bullets = any(ln.startswith(("-", "*")) for ln in lines if ln)
+
     threads = []
-    for raw in tail.splitlines():
-        ln = raw.strip()
-        if not ln:
-            continue
-        if ln.startswith(("-", "*")):
-            threads.append(ln.lstrip("-* \t"))
-        elif threads:
-            threads[-1] = f"{threads[-1]} {ln}"
+    if has_bullets:
+        # Bullet form: one thread per "- ..." line; a wrapped continuation line (doesn't start with
+        # -/* but isn't blank) folds into the previous bullet instead of truncating it.
+        for ln in lines:
+            if not ln:
+                continue
+            if ln.startswith(("-", "*")):
+                threads.append(ln.lstrip("-* \t"))
+            elif threads:
+                threads[-1] = f"{threads[-1]} {ln}"
+    else:
+        # Narrative form: no bullets anywhere -- treat each blank-line-separated paragraph as one
+        # thread rather than discarding real content because it wasn't formatted as requested.
+        for para in re.split(r"\n\s*\n", tail):
+            p = " ".join(ln.strip() for ln in para.splitlines() if ln.strip())
+            if p:
+                threads.append(p)
+
     return body, threads
 
 def extract_source(path: Path) -> str:
