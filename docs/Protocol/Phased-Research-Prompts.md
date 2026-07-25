@@ -23,9 +23,26 @@ single-shot prompt is unaffected and stays external as before.
 2. **Focus on one project at a time through the whole pipeline before starting another** — see
    `examples/DatasetIndex.md` § "Phased Deep Research Queue" for the currently in-progress project and which
    phase is next. A finished foundation project is worth more than several half-finished ones.
-3. Run each phase **in dependency order**. Before pasting a phase's prompt, paste the **previous phase's
-   finished output** into the same chat/context as reference material — later phases depend on earlier ones
-   (see `Deep-Research-Brief.md` "Format v3" for why this order, not topic order).
+3. Run each phase **in dependency order**. Before pasting a phase's prompt, paste a **Context Pack** as
+   reference material — **not the full raw output of every prior phase.** Pasting all N-1 previous phases'
+   full text into every later phase (a) grows without bound — by Phase 11 that's 10 full documents in one
+   window — and (b) actively hurts quality: a model burying a fact of interest inside pages of unrelated
+   prior narrative is more likely to drop or misplace it than one given a short, targeted reference (this is
+   a documented LLM failure mode — recall degrades with irrelevant context volume, it isn't just a size
+   limit). Each phase declares its **actual** dependencies, and only those go in the pack:
+   - **Phase 1's own output is always included in full** — it's short (~20 single-line fields) and every
+     later phase needs it.
+   - From any other prior phase, include only an **index**, not the full text: entity names + types (from
+     Phase 2), or event labels + dates (from Phase 3) — a one-line-per-item list the model can cross-reference
+     names/dates against, not the full relationship/context/outcome prose behind each one. Include full prose
+     from a specific prior phase only when the CURRENT phase's task genuinely requires it (e.g. Phase 9
+     Behavioral needs Phase 3's full event bodies to analyze motive — an index of labels isn't enough there).
+   - The maintainer running this doesn't have to hand-build these packs — they're produced alongside each new
+     phase prompt (see `doc_backup/inbox/phased/<Project>/PROMPTS-LOG.md`, which logs the exact pack used).
+   - For the last two phases (10 Knowledge Extraction, 11 Conflict Resolution), which legitimately need
+     everything: use the **assembled dossier** (`./run.sh` / `tools/ingest.py --type phased` run against
+     whatever phases are done so far) as the single context document instead of re-pasting every raw phase
+     file separately — the tooling already exists to produce this, no reason to do it by hand.
 4. If the project already has a `examples/Sentiment/<Project>.md` companion (Grok/X), paste it as additional
    context for **Phase 8 (Market/Ecosystem) and the Conflict Resolution phase** — Gemini's research is
    secondary/aggregated evidence (what's been written about the project); Grok's is primary/live evidence
@@ -55,6 +72,13 @@ FORMAT RULES (apply to your entire answer):
 - Output as Label: Value bullets. NO TABLES AT ALL — not even for "structured" data. A Word table
   survives extraction but flattens into an awkward two-line-per-fact shape; a flat bullet list does not.
 - One fact per line. Full dates, numbers with units. Never round away or drop a figure.
+- **A field's value is never a paragraph.** If what you'd naturally write under a label runs past ~2
+  sentences, break it into sub-bullets under that label — one claim per sub-bullet, each ending in its own
+  Evidence Level + source. (Lesson recorded from real failures: LayerZero's Phase 1/3/4 outputs each wrote
+  entire multi-sentence essays under a single label with one citation gesture at the very end — or none —
+  and every citation was lost in the process. Phase 2's short, frequently-repeated per-entity blocks did NOT
+  fail this way. The difference is block size: cite-as-you-go survives, cite-after-a-long-paragraph does not.
+  Do not let this phase's answer repeat that failure.)
 - Never fabricate. If something is unknown or unverifiable, write "unknown" — do not guess, do not infer
   silently, do not fill a gap with a plausible-sounding but unsourced claim.
 - Where a claim is contested by different sources, note it explicitly ("Source A says X, Source B says Y") —

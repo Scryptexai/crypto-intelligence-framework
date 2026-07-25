@@ -302,22 +302,32 @@ terakhir di timeline ini saat ini) yang belum masuk timeline:
   memblokir kemampuan klien menunjuk DVN LayerZero Labs dalam konfigurasi "1-of-1", memaksa minimum
   5-of-5 untuk DVN internal LayerZero Labs.
 
+CARA MENGISI CITATION — PENTING, INI PERBAIKAN DARI KEGAGALAN SEBELUMNYA: satu field "Evidence:" tunggal
+di AKHIR seluruh blok event (yang berisi 8+ sub-fakta: Trigger, 7 sub-field Context Snapshot, Decision,
+Execution, 2 Outcome) TERBUKTI GAGAL — itulah yang terjadi di draf ini. Sebagai gantinya, tempelkan sumber
+LANGSUNG setelah sub-bagian yang paling relevan, jadi minimal 3 titik sitasi per event, bukan 1:
+  Trigger: ... (HIGH/MEDIUM/LOW) [sumber]
+  Context Snapshot: ... (boleh 1 sitasi untuk seluruh Context Snapshot kalau satu sumber sama menjelaskan
+    semuanya, atau per-sub-field kalau sumbernya beda-beda)
+  Decision/Execution: ... (HIGH/MEDIUM/LOW) [sumber]
+  Short-term/Long-term Outcome: ... (HIGH/MEDIUM/LOW) [sumber]
+Field "Evidence:" di akhir blok tetap ada, tapi isinya boleh ringkasan/sumber utama saja — sitasi yang
+SUNGGUHAN menempel di sub-bagian seperti di atas, bukan menunggu sampai akhir blok.
+
 ATURAN MUTLAK UNTUK 13 EVENT YANG SUDAH ADA:
 - JANGAN tambah fakta baru pada 13 event ini. JANGAN riset ulang. JANGAN hapus atau ubah fakta apa pun
-  yang sudah ada (Date/Event/Trigger/Context Snapshot/Decision/Execution/Short-term Outcome/Long-term
-  Outcome semuanya harus identik dengan versi di atas, kata per kata).
-- Untuk SETIAP dari 13 event, isi field "Evidence:" dengan sumber konkret (nama publikasi/dokumen + URL
-  atau nomor rujukan) yang mendukung event tersebut. Kalau event itu didukung banyak sumber, cukup 1-3
-  yang paling kredibel.
-- Kalau kamu benar-benar tidak bisa menemukan sumber spesifik untuk sebuah event, tulis
-  "Evidence: [sumber tidak dapat diverifikasi ulang — perlu riset tambahan]" — JANGAN mengarang URL atau
-  nama sumber yang tidak pernah kamu gunakan.
+  yang sudah ada (isi Date/Event/Trigger/Context Snapshot/Decision/Execution/Short-term Outcome/Long-term
+  Outcome semuanya harus identik dengan versi di atas, kata per kata — kamu HANYA menyisipkan sitasi di
+  antara/sesudah kalimat yang sudah ada, tidak mengubah kalimatnya).
+- Kalau kamu benar-benar tidak bisa menemukan sumber spesifik untuk sebuah sub-bagian, tulis
+  "[sumber tidak dapat diverifikasi ulang — perlu riset tambahan]" — JANGAN mengarang URL atau nama
+  sumber yang tidak pernah kamu gunakan.
 
 UNTUK 2 EVENT BARU: tulis blok LENGKAP dengan format yang SAMA PERSIS seperti 13 event di atas —
 Date/Event/Trigger/Context Snapshot (semua sub-field)/Decision/Execution/Short-term Outcome/Long-term
-Outcome/Evidence — riset dan isi sungguhan, JANGAN cuma satu kalimat. Evidence WAJIB terisi sejak awal
-(jangan ulangi kesalahan yang sama). Sambungkan ke entitas Phase 2 jika relevan (LayerZero Labs, Kelp DAO,
-dst — sebut nama persis seperti Phase 2).
+Outcome — riset dan isi sungguhan, JANGAN cuma satu kalimat. Sitasi WAJIB menempel per sub-bagian SEJAK
+AWAL kamu menulisnya (pakai cara sitasi di atas, jangan ulangi kesalahan yang sama). Sambungkan ke entitas
+Phase 2 jika relevan (LayerZero Labs, Kelp DAO, dst — sebut nama persis seperti Phase 2).
 
 UNTUK SEMUA (13 lama + 2 baru): pastikan SETIAP field (Date/Event/Trigger/Context Snapshot/.../Evidence)
 ada di baris terpisah, bukan digabung jadi satu paragraf. Urutkan seluruh 15 event secara kronologis.
@@ -425,12 +435,19 @@ tambahan.
 
 **Result:** pending — awaiting output.
 
-## Phase 5 — Financial Intelligence (sent 2026-07-25)
+## Phase 5 — Financial Intelligence (sent 2026-07-25; REVISED same day — see note below)
+
+**Revision note:** the original version of this prompt told the model to "use Phase 1-4 outputs above as
+context," implying all 4 raw documents needed to be re-pasted. That instruction was wrong and has been
+corrected here — see the "Context Pack" fix in `Phased-Research-Prompts.md` § How to use these, point 3.
+**Context actually needed for this phase:** paste Phase 1's finished output in full (short, cheap). Phase
+2/3/4 are NOT needed in full — every fact this phase depends on from them is already injected directly
+into the prompt below as a compact block, not left for the model to dig out of long documents.
 
 ```
-Menggunakan output Foundation (Phase 1), Entity (Phase 2), Historical (Phase 3), dan Technology (Phase 4)
-Intelligence di atas sebagai konteks, bangun PROFIL FINANSIAL untuk LayerZero. HANYA ekonomi pendanaan/
-pendapatan — JANGAN bahas tokenomics/alokasi supply (itu Phase 6).
+Menggunakan output Foundation Intelligence (Phase 1) di atas sebagai konteks, bangun PROFIL FINANSIAL
+untuk LayerZero. HANYA ekonomi pendanaan/pendapatan — JANGAN bahas tokenomics/alokasi supply (itu
+Phase 6).
 
 === RONDE PENDANAAN YANG SUDAH DIKETAHUI — WAJIB DIPERDALAM DENGAN DETAIL, JANGAN CUMA DIULANG ===
 - Seed — April 2021 — $2 juta — investor termasuk Multicoin Capital, Coinbase Ventures
@@ -457,30 +474,39 @@ PERTANYAAN FINANSIAL YANG BELUM TERJAWAB:
 - Apakah ada dampak pada treasury/runway perusahaan akibat kewajiban hukum ini?
 
 === FORMAT OUTPUT ===
-Untuk SETIAP ronde pendanaan, ulangi blok ini:
+Untuk SETIAP ronde pendanaan, ulangi blok ini (setiap baris di dalam blok pakai sitasinya sendiri, JANGAN
+satu Evidence untuk seluruh blok):
 Funding Round: <tipe>
-  Date: <value>  Amount: <value + mata uang>  Lead Investor: <value>
-  Participating Investors: <value>  Valuation: <value atau "tidak diungkapkan">
+  Date: <value> (Evidence Level) [sumber]
+  Amount: <value + mata uang> (Evidence Level) [sumber]
+  Lead Investor: <value> (Evidence Level) [sumber]
+  Participating Investors: <value> (Evidence Level) [sumber]
+  Valuation: <value atau "tidak diungkapkan"> (Evidence Level) [sumber]
 ---
 
-Lalu, sekali saja:
-Treasury Size: <value atau "tidak diungkapkan">
-Treasury Composition: <value>
-Revenue Model: <value>
-Revenue Figures: <value + tanggal, atau "tidak diungkapkan">
-Burn Rate: <value, atau "estimasi X — dasar perhitungan: ...", atau "tidak diungkapkan">
+Lalu, sekali saja (SETIAP baris di bawah ini WAJIB punya sitasinya sendiri — kalau jawabannya butuh lebih
+dari 2 kalimat, pecah jadi sub-bullet, masing-masing dengan sitasi sendiri, JANGAN satu paragraf besar
+tanpa sitasi seperti yang terjadi di Phase 4):
+Treasury Size: <value atau "tidak diungkapkan"> (Evidence Level) [sumber]
+Treasury Composition: <value> (Evidence Level) [sumber]
+Revenue Model: <value> (Evidence Level) [sumber]
+Revenue Figures: <value + tanggal, atau "tidak diungkapkan"> (Evidence Level) [sumber]
+Burn Rate: <value, atau "estimasi X — dasar perhitungan: ...", atau "tidak diungkapkan"> (Evidence Level)
+  [sumber]
 Token Sale Structure: <syarat public/private sale + jumlahnya — BUKAN alokasi %, itu Phase 6>
-Runway Estimate: <value + dasar perhitungan, atau "tidak dapat dihitung">
+  (Evidence Level) [sumber]
+Runway Estimate: <value + dasar perhitungan, atau "tidak dapat dihitung"> (Evidence Level) [sumber]
 FTX Litigation Financial Impact: <ringkasan status terkini + angka riil yang dibayar/masih jadi
-  kewajiban, berdasarkan penyelidikan di atas>
+  kewajiban — pecah jadi beberapa sub-bullet kalau perlu, MASING-MASING dengan sitasi sendiri>
 
 Open Threads
 - <hal yang masih belum pasti, bertentangan, atau perlu digali lebih lanjut>
 
-[+ FORMAT RULES yang sama seperti fase sebelumnya: Bahasa Indonesia, tanpa tabel, satu fakta per baris,
-Evidence + Evidence Level menempel LANGSUNG di tiap fakta (bukan daftar pustaka terpisah di akhir —
-ini sudah gagal 3 kali berturut-turut di fase sebelumnya, JANGAN diulangi), jangan mengarang, awali
-dengan "PROJECT: LayerZero"]
+[+ FORMAT RULES yang sama seperti fase sebelumnya, DITEGASKAN ULANG karena sudah gagal 3 kali berturut-
+turut di fase sebelumnya: Bahasa Indonesia, tanpa tabel, sitasi menempel LANGSUNG di baris faktanya
+sendiri (bukan dikumpulkan di akhir), field/baris tidak boleh berupa paragraf panjang tanpa sitasi —
+kalau lebih dari 2 kalimat WAJIB dipecah jadi sub-bullet bersitasi, jangan mengarang, awali dengan
+"PROJECT: LayerZero"]
 ```
 
 **Result:** pending — awaiting output.
