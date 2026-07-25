@@ -78,7 +78,7 @@ Intelligence non-trivial.
 
 | Project | Track | Phases done | Next phase | Notes |
 |---------|-------|--------------|------------|-------|
-| **LayerZero** | A (full 11) | 1 ✅ Foundation, 2 ✅ Entity (76 entities, all mandatory ones present, `exposure_type` correctly varied not defaulted) | **3 — Historical Intelligence** | Upgrade from existing `Pioneer/LayerZero.md` (Batch 02) to Deep tier. Chosen for its interconnection-heavy ecosystem (160+ chains — strong entity-graph test case) and the ZRO airdrop (Jun 2024) as real Behavioral Intelligence material, already linked as a P4 analog in `PatternRegistry.md`. See the Phase 1/2 notes below. |
+| **LayerZero** | A (full 11) | 1 ✅ Foundation, 2 ✅ Entity (76 entities), 3 ⚠ Historical (13/13 events, citations pending reformat) | **3 reformat → then 4 — Technology Intelligence** | Upgrade from existing `Pioneer/LayerZero.md` (Batch 02) to Deep tier. Chosen for its interconnection-heavy ecosystem (160+ chains — strong entity-graph test case) and the ZRO airdrop (Jun 2024) as real Behavioral Intelligence material, already linked as a P4 analog in `PatternRegistry.md`. See the Phase 1/2/3 notes below. |
 
 **LayerZero Phase 1 — two source files, deliberately.** The first Gemini pass returned a rich but
 narrative/table-formatted report in English; a reformat pass produced a clean Indonesian Label:Value version.
@@ -134,6 +134,43 @@ than one field per line as the template specifies. Noted for the Phase 3 prompt;
 **Lesson recorded for future reformat passes:** asking an LLM to reformat its own output does preserve
 numbers reliably but drops incidental named entities mentioned in prose. Either diff every reformat against
 the original (as done here), or instruct the reformat pass to preserve every proper noun explicitly.
+
+**LayerZero Phase 3 — Historical Intelligence, content excellent / citations empty.**
+Raw (pre-reformat) file archived at `doc_backup/deep/LayerZero_2026-07_phase3-nocitations-v1.docx` — same
+pattern as Phase 1's v1/v2 split. It will **not** become the active `phased/LayerZero/03-history.docx` until
+the citation reformat pass below comes back; only content-complete + citation-complete files enter the
+`phased/` folder ingest reads. All 13 known events from the prompt present, in order, plus 4 valuable bonus
+findings not explicitly requested: LayerZero bought back FTX's equity stake, the FTX Recovery Trust
+lawsuit's Sep 2023–Mar 2024 timeline including a Motion to Dismiss, a second-order Radiant Capital exploit
+(late 2024) distinct from the Kelp DAO incident, and the DVN diversification response (Nethermind/Google/
+Animoca nodes) after Kelp DAO. Context Snapshot, Execution, Short-term Outcome, and Long-term Outcome are
+all present for 13/13 events (verified by count, not spot-check). Entity cross-referencing from Phase 2
+mostly holds: Chainlink, Kelp DAO, Alameda, FTX Recovery Trust, and Protocol Guild are all referenced by
+the exact Phase 2 names — but **Trail of Bits (a Phase 2 auditor entity) is never mentioned in the
+timeline**, flagged as a minor gap, not blocking.
+
+**Citation problem:** all 13 `Evidence:` fields are empty (`Evidence:.` — literally nothing between the
+colon and the period), verified via `grep -o "Evidence:\.\?" | sort | uniq -c` → `13 Evidence:.`. A 21-source
+numbered bibliography exists at the end of the document but is not linked to individual events — this is the
+exact same failure mode as the original (pre-reformat) Phase 1 output, despite the per-fact citation rule
+having already been stated and then tightened twice. A citation-only reformat pass (same shape as the Phase
+1 reformat) was sent — logged in `PROMPTS-LOG.md`; result pending as of this commit. Minor format deviation
+(not blocking, same as Phase 2): fields are joined into one flowing paragraph per event instead of one field
+per line as the template specifies.
+
+**Parser bug found and fixed during Phase 3 verification (2026-07-25, commit `39d38ed`):** LayerZero's Open
+Threads heading was written as "Analisis Lapisan Resolusi & Konteks Tidak Terekam (Open Threads)" — the
+marker phrase at the *end* of a longer heading — which `tools/ingest.py`'s old `OPEN_THREADS_RE` (required
+"open threads" at the start of the line) never matched. The section's content was also written as narrative
+paragraphs with zero bullet points, which the old bullet-only parser would have produced zero threads from
+even if the regex had matched. Together this meant the real content there (a Radiant Capital finding, FTX
+clawback litigation docket status) was about to be **silently and completely discarded** from the final
+dossier with no trace. Fixed by broadening the regex and adding a paragraph-splitting fallback plus a
+bibliography stop-point (`BIBLIOGRAPHY_RE`) so the citation list isn't absorbed as fake "threads." Verified
+directly against LayerZero Phase 3's real extracted text (0 → 7 threads) and regression-tested against
+Phase 1 and Phase 2's real files (unchanged: 5 and 2 threads respectively) before committing. This means
+**Phase 1 and Phase 2 were parsed correctly all along** — only Phase 3's narrative-style heading exposed the
+bug.
 
 **When a phase completes:** update its row's "Phases done"/"Next phase" columns in the same commit as dropping
 the phase's raw `.docx` into `doc_backup/inbox/phased/LayerZero/`. Once all phases planned for the Track are

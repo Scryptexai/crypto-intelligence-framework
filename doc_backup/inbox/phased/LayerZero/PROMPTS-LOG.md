@@ -273,4 +273,39 @@ Open Threads
 - Awali output dengan: PROJECT: LayerZero
 ```
 
+**Result:** content excellent (all 13 known events present + 4 valuable bonus findings: FTX equity
+buyback, FTX lawsuit Motion-to-Dismiss timeline, second-order Radiant Capital exploit, DVN diversification
+response), Context Snapshot/Execution/Short+Long-term Outcome all 13/13. Two problems found: (1) all 13
+`Evidence:` fields were empty ("Evidence:." — no source attached) despite the rule being stated and
+tightened twice already — same failure mode as the original Phase 1 attempt. (2) fields were joined into
+one flowing paragraph per event instead of one field per line (same deviation as Phase 2) — cosmetic, not
+blocking, since ingestion treats the whole event block as one span. A citation-only reformat pass was
+requested (see below), mirroring the Phase 1 reformat. Minor gap: Trail of Bits (a Phase 2 entity) is never
+referenced in the Phase 3 timeline — flagged, not blocking.
+
+## Phase 3 citation reformat pass (sent 2026-07-25, same day)
+
+```
+Tugas kamu sekarang HANYA MEMPERBAIKI CITATION pada timeline LayerZero di atas. Ini BUKAN riset baru.
+
+MASALAH: semua 13 blok event punya field "Evidence:" KOSONG. Ini tidak bisa diterima — setiap fakta
+harus bisa dilacak ke sumbernya.
+
+ATURAN MUTLAK:
+- JANGAN tambah fakta baru. JANGAN riset ulang. JANGAN hapus atau ubah fakta apa pun yang sudah ada
+  (Date/Event/Trigger/Context Snapshot/Decision/Execution/Short-term Outcome/Long-term Outcome semuanya
+  harus identik dengan versi di atas, kata per kata).
+- Untuk SETIAP dari 13 event, isi field "Evidence:" dengan sumber konkret (nama publikasi/dokumen + URL
+  atau nomor rujukan) yang mendukung event tersebut. Kalau event itu didukung banyak sumber, cukup 1-3
+  yang paling kredibel.
+- Kalau kamu benar-benar tidak bisa menemukan sumber spesifik untuk sebuah event, tulis
+  "Evidence: [sumber tidak dapat diverifikasi ulang — perlu riset tambahan]" — JANGAN mengarang URL atau
+  nama sumber yang tidak pernah kamu gunakan.
+- Sambil memperbaiki ini, pastikan juga SETIAP field (Date/Event/Trigger/Context Snapshot/.../Evidence)
+  tetap di baris terpisah, bukan digabung jadi satu paragraf.
+
+Mulai sekarang, keluarkan hasil perbaikannya saja (seluruh 13 blok event, lengkap), tanpa penjelasan
+tambahan.
+```
+
 **Result:** pending — awaiting output.
