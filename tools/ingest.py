@@ -69,6 +69,60 @@ def is_v2(sections) -> bool:
     """Heuristic: v2 (Causal Event Graph) has ~7 sections with distinctive ALL-CAPS titles."""
     return len(sections) <= 8 and any(V2_SIGNAL.search(t) for _, t, _ in sections)
 
+# deep v3 — Dependency Pipeline (docs/Protocol/Deep-Research-Brief.md "Format v3")
+# Ordered by information dependency (not topic) -- see brief for the full rationale.
+PHASE_KEYS = ["foundation", "entity", "history", "technology", "financial", "token",
+              "ecosystem", "market", "behavioral", "knowledge", "conflict"]
+PHASE_META = {
+    "foundation":  {"title": "Foundation Intelligence",
+                     "ref": "`docs/Ontology/Identity.md`, `docs/Ontology/Team.md`"},
+    "entity":      {"title": "Entity Intelligence",
+                     "ref": "`docs/Ontology/Relationships.md` (entity graph)"},
+    "history":     {"title": "Historical Intelligence",
+                     "ref": "`docs/Ontology/DecisionEvent.md` (factual spine — enriched later by Behavioral)"},
+    "technology":  {"title": "Technology Intelligence", "ref": "`docs/Ontology/Technology.md`"},
+    "financial":   {"title": "Financial Intelligence",
+                     "ref": "`docs/Ontology/Funding.md`, `docs/Ontology/Revenue.md`"},
+    "token":       {"title": "Token Intelligence", "ref": "`docs/Ontology/Tokenomics.md`"},
+    "ecosystem":   {"title": "Ecosystem Intelligence",
+                     "ref": "`docs/Ontology/Community.md`, `docs/Ontology/Ecosystem.md`"},
+    "market":      {"title": "Market Intelligence",
+                     "ref": "`docs/Meta/Narratives.md`, `docs/Valuation/Competitors.md`, `docs/Meta/MarketCycles.md`"},
+    "behavioral":  {"title": "Behavioral Intelligence",
+                     "ref": "`docs/Ontology/Hidden.md` — enriches DecisionEvent Alternatives/Reason/Reactions"},
+    "knowledge":   {"title": "Knowledge Extraction", "ref": "`docs/Patterns/*`, `docs/Reasoning/*` (rule candidates)"},
+    "conflict":    {"title": "Conflicting Evidence & Resolutions",
+                     "ref": "`docs/Reasoning/Confidence.md` — INKONSISTENSI convention"},
+}
+OPEN_THREADS_RE = re.compile(r"(?im)^#{0,3}\s*open\s*threads?\b.*$")
+
+def detect_phase_key(filename: str):
+    """Match a phase key as a substring of the filename (case/punctuation-insensitive)."""
+    key = re.sub(r"[^a-z]", "", filename.lower()).replace("behaviour", "behavior")
+    for k in PHASE_KEYS:
+        if k in key:
+            return k
+    return None
+
+def split_open_threads(text: str):
+    """Split a phase document into (body, [threads]) on its 'Open Threads' heading, if present.
+    A continuation line (doesn't start with -/* but isn't blank) is folded into the previous bullet,
+    so a thread that wraps across lines isn't silently truncated."""
+    m = OPEN_THREADS_RE.search(text)
+    if not m:
+        return text.strip(), []
+    body, tail = text[:m.start()].strip(), text[m.end():]
+    threads = []
+    for raw in tail.splitlines():
+        ln = raw.strip()
+        if not ln:
+            continue
+        if ln.startswith(("-", "*")):
+            threads.append(ln.lstrip("-* \t"))
+        elif threads:
+            threads[-1] = f"{threads[-1]} {ln}"
+    return body, threads
+
 def extract_source(path: Path) -> str:
     low = path.suffix.lower()
     if low == ".docx":
@@ -200,6 +254,75 @@ def process_batch(path, force):
         results.append(("ok", name, f"-> examples/Pioneer/{safe}.md"))
     return results
 
+def process_phased_project(folder: Path, force: bool, dest_dir: Path = None):
+    """Assemble one project's dossier from its doc_backup/inbox/phased/<Project>/ folder — deterministic,
+    no LLM. See docs/Protocol/Deep-Research-Brief.md 'Format v3 -- Dependency Pipeline'."""
+    name = folder.name
+    dest_dir = dest_dir or DEST["deep"]
+    existing = find_existing(dest_dir, name)
+    out = existing or (dest_dir / f"{name}.md")
+    if existing and not force:
+        note = "" if existing.stem == name else f" (matched existing '{existing.stem}.md' — near-duplicate name)"
+        return [("skip", name, f"dossier exists{note}")]
+
+    files = sorted([*folder.glob("*.docx"), *folder.glob("*.pdf")])
+    if not files:
+        return [("warn", name, "no phase files found in folder")]
+
+    phases, all_threads, unmatched, archived = {}, [], [], []
+    for f in files:
+        key = detect_phase_key(f.stem)
+        if not key:
+            unmatched.append(f.name)
+            continue
+        body, threads = split_open_threads(extract_source(f))
+        phases[key] = body
+        all_threads.extend(f"[{key}] {t}" for t in threads)
+        archived.append(_archive(f, "deep", f"{name}_{key}"))
+
+    if not phases:
+        return [("warn", name, f"no recognizable phase files (got: {', '.join(f.name for f in files)})")]
+
+    order = [k for k in PHASE_KEYS if k in phases]
+    body_md = []
+    for k in order:
+        meta = PHASE_META[k]
+        body_md.append(f"\n## {meta['title']}\n_ref: {meta['ref']}_\n\n{phases[k]}")
+    if all_threads:
+        body_md.append("\n## Open Questions\n" + "\n".join(f"- {t}" for t in all_threads))
+
+    missing = [k for k in PHASE_KEYS if k not in phases]
+    head = (
+        f"# {name} — Deep Case Study (Phased)\n\n"
+        f"**CIF Dataset — Deep Dossier · Tier: Deep (anchor project)**\n"
+        f"**Source:** Deep Research (Gemini), Format v3 Dependency Pipeline "
+        f"({len(order)}/{len(PHASE_KEYS)} phases: {', '.join(order)}). **Auto-assembled** by `tools/ingest.py` "
+        f"(deterministic, no LLM) — each phase extracted and concatenated in dependency order per "
+        f"`docs/Protocol/Deep-Research-Brief.md`; the reasoning is the source reports'.\n"
+        f"**Raw sources archived:** {', '.join(archived)}.\n"
+        f"**Phases not run:** {', '.join(missing) if missing else 'none'}.\n\n"
+        f"> Faithful concatenation of phase outputs — no fabrication, no distillation beyond what the "
+        f"Conflict Resolution phase itself states. Consider a periodic QC pass.\n\n---\n"
+    )
+    out.write_text(head + "\n".join(body_md).strip() + "\n", encoding="utf-8")
+    msg = f"{len(order)} phases -> {out.relative_to(ROOT)}"
+    if unmatched:
+        msg += f"  ⚠ unmatched files: {', '.join(unmatched)}"
+    return [("ok", name, msg)]
+
+def gather_phased_projects(inputs=None):
+    """Yield project folders under doc_backup/inbox/phased/ (or --input folders when --type phased)."""
+    bases = [Path(p) for p in inputs] if inputs else [INBOX / "phased"]
+    for base in bases:
+        if not base.exists():
+            continue
+        # a folder containing phase docx/pdf directly IS a project; otherwise treat its children as projects
+        if list(base.glob("*.docx")) + list(base.glob("*.pdf")):
+            yield base
+        else:
+            for d in sorted(p for p in base.iterdir() if p.is_dir()):
+                yield d
+
 PROCESSORS = {"deep": process_deep, "batch": process_batch, "sentiment": process_sentiment}
 
 def gather(inputs, kind_hint):
@@ -214,31 +337,39 @@ def gather(inputs, kind_hint):
 
 def main():
     ap = argparse.ArgumentParser(description="Batch auto-ingest raw docx/pdf -> CIF artifacts.")
-    ap.add_argument("--type", choices=["deep", "batch", "sentiment"], help="force type (for --input)")
-    ap.add_argument("--input", nargs="*", help="folder(s)/file(s); default = the three inbox subfolders")
+    ap.add_argument("--type", choices=["deep", "batch", "sentiment", "phased"], help="force type (for --input)")
+    ap.add_argument("--input", nargs="*", help="folder(s)/file(s); default = the four inbox subfolders")
     ap.add_argument("--force", action="store_true")
     ap.add_argument("--no-build", action="store_true")
     args = ap.parse_args()
 
-    jobs = []
+    jobs, phased_projects = [], []
     if args.input:
         if not args.type:
-            sys.exit("--input requires --type deep|batch|sentiment")
-        jobs = list(gather(args.input, args.type))
+            sys.exit("--input requires --type deep|batch|sentiment|phased")
+        if args.type == "phased":
+            phased_projects = list(gather_phased_projects(args.input))
+        else:
+            jobs = list(gather(args.input, args.type))
     else:
         for kind in ("deep", "batch", "sentiment"):
             jobs += list(gather([INBOX / kind], kind))
+        phased_projects = list(gather_phased_projects())
 
-    if not jobs:
-        print(f"No .docx/.pdf found. Drop files in {INBOX}/(deep|batch|sentiment)/ or pass --input --type.")
+    if not jobs and not phased_projects:
+        print(f"No .docx/.pdf found. Drop files in {INBOX}/(deep|batch|sentiment|phased)/ or pass --input --type.")
         return
 
-    print(f"ingest: {len(jobs)} file(s)\n" + "-" * 64)
+    print(f"ingest: {len(jobs)} file(s), {len(phased_projects)} phased project(s)\n" + "-" * 64)
     counts = {"ok": 0, "skip": 0, "warn": 0}
     icons = {"ok": "✅", "skip": "⏭️", "warn": "⚠️"}
     for path, kind in jobs:
         for status, name, msg in PROCESSORS[kind](path, args.force):
             print(f"{icons[status]} [{kind:9s}] {name:18s} {msg}")
+            counts[status] += 1
+    for folder in phased_projects:
+        for status, name, msg in process_phased_project(folder, args.force):
+            print(f"{icons[status]} [{'phased':9s}] {name:18s} {msg}")
             counts[status] += 1
     print("-" * 64)
     print(f"new: {counts['ok']}  skipped(dup): {counts['skip']}  warnings: {counts['warn']}")

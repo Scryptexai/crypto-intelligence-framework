@@ -9,6 +9,7 @@
 #   doc_backup/inbox/deep/       <Project>_<YYYY-MM>_gemini.docx   -> examples/CaseStudies/
 #   doc_backup/inbox/batch/      <Batch>_<YYYY-MM>_gemini.docx     -> examples/Pioneer/
 #   doc_backup/inbox/sentiment/  <Project>_<YYYY-MM>_grok.docx     -> examples/Sentiment/
+#   doc_backup/inbox/phased/<Project>/  N phase files (Format v3)  -> examples/CaseStudies/
 # Already-ingested projects are skipped, so re-running only processes newly added files.
 set -euo pipefail
 cd "$(dirname "$0")"

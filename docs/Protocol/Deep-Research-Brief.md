@@ -81,40 +81,85 @@ Decision Events section maps 1:1 onto `docs/Ontology/DecisionEvent.md` with no r
 project already has a v1 dossier, merge rather than replace (see `examples/CaseStudies/Solana.md` for a
 worked example merging v1 + v2 sources, including two flagged `INKONSISTENSI` between them).
 
-## Recommended multi-phase research process (richer than one mega-prompt)
+## Format v3 — Dependency Pipeline (supersedes the earlier 7-phase draft below §)
 
-Asking for all 7 (v2) or 22 (v1) sections in a **single** prompt spreads the model's attention thin across
-every section at once, under-serving the highest-value section — Chronological Decision Events — which needs
-`Context → Trigger → Decision → Alternatives → Reason → Execution → Stakeholder Reactions (8 POV) → Outcome`
-**per event**, times several events. When the resulting dossier feels thin ("banyak informasi yang tidak
-ada"), the fix is usually process, not the contract: split the research into **sequential, narrower passes**
-instead of one shot. This section documents the recommended **process/order only** — the actual prompt text
-for each phase is external (kept in the maintainer's local files), per the rule at the top of this document.
+**Status: current recommendation, has tooling support (`tools/ingest.py --type phased`).** Supersedes the
+"Recommended multi-phase research process" 7-phase sketch that used to live in this section (kept nowhere
+else — that draft's core idea, splitting research into passes, was right; this replaces its specific phase
+list with a more rigorous dependency-ordered one, refined in maintainer discussion 2026-07-24).
 
-No tooling changes are required: `tools/extract.py` / `tools/ingest.py` only care that the final **stitched**
-`.docx` conforms to the existing 7-section (v2) or 22-section (v1) heading contract before it's dropped in
-`doc_backup/inbox/deep/` — how many prompts produced it is invisible to ingestion.
+**Core principle: order phases by information *dependency*, not by topic.** You cannot analyze decision-making
+before you know the timeline. You cannot understand tokenomics without first understanding the entities and
+governance around it. Topic-based splits (Funding / Community / Tokenomics as parallel, order-independent
+buckets) don't respect this — a compiler-pipeline shape does: each phase's output is a **required input** to
+the phases after it.
 
-**Phases** (map 1:1 onto the v2 7-section contract above; v1 sections group the same way):
+**Phase count is elastic, not fixed.** A 6-month-old project with two investors does not need the same number
+of passes as Ethereum. The dependency *shape* below is fixed; how many actual prompts a given phase takes
+(one, or split further, e.g. History done per-era for a long-lived project) flexes with the subject. Forcing a
+fixed phase count onto a thin project invites the model to fabricate filler to satisfy an unused slot — worse
+than skipping a phase that genuinely has little to say.
 
-1. **Context & Classification** — Context/Environment snapshot (`docs/Ontology/Context.md`) + project
-   archetype/category. Done first because every later phase needs the era fixed before decisions can be
-   correctly interpreted (Core Philosophy, consequence 2, above).
-2. **Foundation & Architecture** — origin, team, technical architecture, business/revenue model.
-3. **Decision Event discovery (seed pass)** — a wide scan enumerating *every* candidate decision event found
-   in the research window: name + rough date + one-line trigger only, deliberately shallow. This exists so
-   the model doesn't settle on the first few events it finds and stop looking.
-4. **Decision Event deep-dive (expand pass, one event or a small batch at a time)** — for each event surfaced
-   in phase 3, a focused extraction against the full `docs/Ontology/DecisionEvent.md` schema. This is the
-   actual depth fix: narrowing the prompt's scope per pass is what produces real detail, not asking for every
-   event at once.
-5. **Stakeholder & Observable Metrics** — full 8-POV reconciliation (§15) + quantifiable data (funding,
-   metrics, tokenomics, incident/outage history), attached to the now-known decision events.
-6. **Conflicting Evidence & Unresolved Questions** — a dedicated review pass hunting contradictions and
-   minority views, run after the main narrative exists so there is something to compare against. This is the
-   investigator-not-analyst principle (Core Philosophy, consequence 3), operationalized as its own phase.
-7. **Conclusion & Synthesis** — the only phase allowed to draw a causal conclusion (Transferable Intelligence,
-   rule candidates, Evidence Level tagging) — run last, with every earlier phase's output available.
+**Phases** (dependency order; a project's actual research need not use every phase):
+
+1. **Foundation Intelligence** — facts only, no analysis: official name, symbol, category, founding entity,
+   founders, core team, country, launch date, main products, website, repo, docs, socials, explorer, token
+   contract, chain, ecosystem. Everything after this references it. → `docs/Ontology/Identity.md`, `Team.md`.
+2. **Entity Intelligence** — the entity graph (organizations, people, investors, exchanges, partners,
+   protocols, DAOs, media, research labs) and each one's relationship to the project — no causal analysis yet.
+   → `docs/Ontology/Relationships.md`.
+3. **Historical Intelligence** — chronological events as `Date, Event, Trigger, Decision, Outcome, Evidence` —
+   the **factual spine**, not yet the causal depth (Alternatives/Hidden come later, phase 9). Every other
+   phase references this timeline. → `docs/Ontology/DecisionEvent.md` (spine fields only at this stage).
+4. **Technology Intelligence** — architecture, consensus, VM, language, security, scalability, protocol
+   evolution, upgrades, roadmap, innovation. No token or market discussion. → `docs/Ontology/Technology.md`.
+5. **Financial Intelligence** — funding, VC, treasury, revenue, business model, cash flow, burn rate, token
+   sale, valuation, exit, runway. → `docs/Ontology/Funding.md`, `Revenue.md`.
+6. **Token Intelligence** — supply, distribution, allocation, unlock, vesting, emission, utility, governance,
+   inflation/deflation, holder concentration, token flow. Split from Financial because tokenomics is complex
+   enough to deserve its own pass. → `docs/Ontology/Tokenomics.md`.
+7. **Ecosystem Intelligence** — external relationships: partners, integrations, developers, apps, wallets,
+   exchanges, oracles, bridges, infra, tooling, community. → `docs/Ontology/Community.md`, `Ecosystem.md`.
+8. **Market Intelligence** — narrative, competitors, positioning, adoption, TVL, volume, users, growth, market
+   share, cycle, trend. → `docs/Meta/Narratives.md`, `docs/Valuation/Competitors.md`, `docs/Meta/MarketCycles.md`.
+9. **Behavioral Intelligence** — this is where CIF's actual causal layer starts: why did the founder choose
+   decision A, why did a VC enter, why was an unlock schedule changed, what was the incentive/trade-off/
+   alternative. Deliberately run **after** phases 4-8, not alongside phase 3 — you often cannot correctly
+   explain *why* a decision was made until you already understand the tokenomics/financial/tech context around
+   it. This phase enriches phase 3's factual spine with Alternatives, Reason, and Stakeholder Reactions.
+   → `docs/Ontology/Hidden.md`, completes `docs/Ontology/DecisionEvent.md`.
+10. **Knowledge Extraction** — entities, relationships, and pattern candidates made machine-readable.
+    → `docs/Patterns/*`, `docs/Reasoning/*`.
+11. **Conflict Resolution** — merge-only, **no new research**: reconciles contradictions the earlier phases
+    surfaced (different funding figures, different dates, different supply numbers) using the existing
+    `INKONSISTENSI: …` + `Evidence Level: LOW` convention (`examples/CaseStudies/Solana.md` is the worked
+    example). → `docs/Reasoning/Confidence.md`.
+
+**"Canonical Report Builder" is code, not a 12th prompt.** Assembling the phase outputs into one dossier is
+mechanical concatenation-by-dependency-order plus applying the ontology refs above — exactly the kind of task
+`tools/ingest.py` already does for v1/v2 (no LLM, deterministic). Asking a model to re-synthesize everything
+into a canonical report as a final prompt would reintroduce the single-mega-prompt problem this format exists
+to avoid, and would need to be re-read/re-verified by a human or LLM anyway — the code does it instead, for
+free, exactly once, deterministically.
+
+**Open Threads.** Each phase's prompt should end with a short "Open Threads" list — things left unresolved
+that the *next* phase (or Conflict Resolution) should re-attack, rather than relying only on Conflict
+Resolution to catch everything at the end. Mirrors how a professional investigator carries open questions
+forward instead of closing each research session as if it were complete.
+
+### Input contract for phase documents
+
+One folder per project: `doc_backup/inbox/phased/<ProjectName>/`, containing one `.docx`/`.pdf` per phase
+actually run (any subset, any count — elastic per phase count above). The **filename** must contain the phase
+key (`foundation`, `entity`, `history`, `technology`, `financial`, `token`, `ecosystem`, `market`,
+`behavioral`, `knowledge`, `conflict` — case-insensitive substring match, e.g. `01-foundation.docx`,
+`Behavioral-Intelligence.docx` both work) — this is more robust than requiring an in-document marker line,
+since the maintainer would otherwise have to remember to paste one into every Gemini export by hand. Each
+document ends with an `Open Threads` heading (any heading level) followed by a bullet list; everything before
+that heading is the phase's content body. `tools/ingest.py --type phased` (or the `phased` inbox subfolder via
+plain `tools/ingest.py`) detects phase files by filename, extracts each via the existing table-aware
+`tools/extract.py`, and assembles one dossier in dependency order — collecting every phase's Open Threads into
+the dossier's final Open Questions section.
 
 ## The 22 sections (input contract)
 

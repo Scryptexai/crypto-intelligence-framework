@@ -31,7 +31,7 @@ Ontology/
 ├── Identity.md         ├── Governance.md    ├── Metrics.md
 ├── Classification.md   ├── Tokenomics.md    ├── Innovation.md
 ├── Technology.md       ├── Incentives.md    ├── Success.md
-├── Infrastructure.md   ├── Adoption.md      ├── Relationships.md
+├── Infrastructure.md   ├── Adoption.md      ├── Relationships.md  (entity graph)
 ├── Funding.md          ├── Revenue.md       ├── DecisionEvent.md  (causal unit)
 ├── Team.md             ├── Security.md      ├── Context.md        (era/conditions layer)
 ├── Community.md        ├── Risks.md         └── Hidden.md         (non-measurable factors)

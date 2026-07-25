@@ -2,48 +2,77 @@
 
 ## Purpose
 
-Specify how knowledge about **relationships between entities** must be captured, structured, and validated within CIF's Ontology layer (Ontology (Stage 3)).
+Specify how knowledge about **the entities connected to a project, and the project's relationship to each**
+must be captured — organizations, people, investors, exchanges, partners, protocols, developers, products,
+DAOs, government bodies, media, and research labs — as a relational graph, not free text buried inside prose
+sections.
 
 ## Description
 
-This file is a documentation container only. It defines *how* knowledge must be captured — it must not contain knowledge, real project data, examples, or history. Actual content is produced downstream by Deep Research and inserted under this specification. It scopes exactly what belongs to relationships between entities and nothing else, so the knowledge model stays modular and machine-readable.
+This file is a documentation container only. It defines *how* entities and their relationships must be
+captured — it must not contain real project data. Actual content is produced downstream by the
+**Entity Intelligence** research phase (`docs/Protocol/Deep-Research-Brief.md`) and inserted under this
+specification.
 
 ## Why This File Exists
 
-Within the pipeline (Research → Knowledge → Ontology → Patterns → Reasoning → Framework → Applications), relationships between entities is a distinct unit that must be captured explicitly so downstream stages can reason over it consistently and traceably.
+A project is never isolated — its behavior is shaped by who it's connected to: which VCs funded it, which
+exchanges listed it, which protocols it integrates, which people left or joined. Before this file was filled,
+that information lived scattered across `Funding.md`-adjacent prose and dossier narrative, with no queryable
+relationship structure. Extracting entities as a distinct graph — **before** the causal/historical layers are
+built (`docs/Ontology/DecisionEvent.md`) — means later research phases can reference a stable cast of named
+entities instead of re-describing "a VC" or "an exchange" inline every time.
 
 ## Data Source
 
-Normalized entities produced by the Extraction layer.
+Deep dossiers — the `Entity Intelligence` research phase output, run *after* Foundation Intelligence (the
+entity graph needs the project's own identity fixed first) and *before* Historical Intelligence (decision
+events reference entities by name, e.g. "Investor X led the Series A that triggered Decision Y").
 
 ## Required Content
 
 The following must eventually be filled by research (documentation of fields only, not values):
 
-- Relationship types
-- Direction/cardinality
-- Linked entity identifiers
-- Link to EntityRelationship schema
+- **Entity name** and **entity type** — one of: Organization, Person, Investor, Foundation, Exchange, Partner,
+  Protocol, Developer, Product, DAO, Government, Media, Research Lab.
+- **Relationship to the project** — e.g. "led Series A", "listed token", "co-developed module", "advisor".
+- **Relationship period** — when the relationship started (and ended, if applicable) — required so later
+  phases can place an entity correctly against the project's timeline.
+- **Evidence** — the source grounding the relationship (never invented).
 
 ## Data Structure
 
-Field specification: each attribute defined with type, allowed values, and source.
+```
+Entity:
+  name: text
+  type: Organization | Person | Investor | Foundation | Exchange | Partner | Protocol | Developer | Product
+        | DAO | Government | Media | Research Lab
+  relationship: text (free-form, e.g. "led Series A", "core contributor 2021-2023")
+  period: text | unknown
+  evidence: <citation/quote reference>
+```
 
 ## Validation Rules
 
-- Each field must have a defined type.
-- Allowed values must reference Taxonomy where applicable.
-- No real project values may be stored.
-- Fields must be traceable to a source.
+- Entity Intelligence is a **graph, not causal analysis** — record *who is connected and how*, not *why* or
+  *what it caused*. Causal interpretation belongs to `docs/Ontology/DecisionEvent.md` (history) and
+  `docs/Ontology/Hidden.md` (behavioral), which reference entities by name once this graph exists.
+- Never invent an entity or relationship; every entry must be source-grounded.
+- An entity discovered in a later research phase (e.g. a partner surfaced during Ecosystem Intelligence)
+  should be added back here rather than left only in that phase's own notes — this file is the single
+  reference list, not one of several.
 
 ## Used By
 
-Patterns, Reasoning, and Schema layers.
+`docs/Ontology/DecisionEvent.md` (entities referenced by name in Trigger/Decision/Alternatives fields),
+`docs/Ontology/Hidden.md` (an entity's incentives can explain a Hidden factor — e.g. VC pressure),
+`docs/Ontology/Funding.md` (Investor-type entities overlap with funding records — cross-link, don't duplicate).
 
 ## Related Files
 
-Other files in `docs/Ontology/`, `docs/Taxonomy/*`, `docs/Schema/OntologySchema.md`.
+`docs/Ontology/Identity.md`, `docs/Ontology/Team.md`, `docs/Ontology/Funding.md`, `docs/Ontology/DecisionEvent.md`.
 
 ## Future Expansion
 
-Additional entity dimensions and richer relationship modelling.
+A canonical entity registry shared *across* projects (so "a16z" or "Coinbase" resolve to the same entity
+record everywhere they appear) once enough dossiers make cross-project entity overlap common enough to matter.
