@@ -46,20 +46,26 @@ Append this block to **every** phase prompt before sending it:
 
 ```
 FORMAT RULES (apply to your entire answer):
+- Write in BAHASA INDONESIA. Keep these in their original language, untranslated: product/technology
+  names (Ultra Light Node, DVN, OFT, Proof-of-Donation), people's names, company names, chain names,
+  and URLs. Translating a technical term makes it unmatchable against other dossiers.
 - Follow the literal output template given for this phase — same field labels, same order. Do not
   reformat as prose, do not rename fields, do not reorder them. A consistent shape across every project
   is the point; free-form answers can't be compared later.
-- Output as Label: Value bullets. No tables — a table's row/column association is lost on export; a flat
-  bullet list is not.
+- Output as Label: Value bullets. NO TABLES AT ALL — not even for "structured" data. A Word table
+  survives extraction but flattens into an awkward two-line-per-fact shape; a flat bullet list does not.
 - One fact per line. Full dates, numbers with units. Never round away or drop a figure.
 - Never fabricate. If something is unknown or unverifiable, write "unknown" — do not guess, do not infer
   silently, do not fill a gap with a plausible-sounding but unsourced claim.
 - Where a claim is contested by different sources, note it explicitly ("Source A says X, Source B says Y") —
   do not silently pick one.
-- Cite a source (name/URL/document) for each non-obvious fact where you can.
+- Attach the source to EACH FACT, on the same line — not as a bibliography at the end. A numbered source
+  list at the bottom with no per-fact link is NOT acceptable: it makes every individual claim unverifiable,
+  which is the one thing this framework cannot tolerate.
 - Tag an Evidence Level — HIGH (multiple independent sources agree) / MEDIUM (one credible source) / LOW
   (inference, single weak source, or contested) — on every significant claim, not just in the Conflict
-  Resolution phase. Append it in parentheses after the fact, e.g. "Amount: $6.5M (HIGH)".
+  Resolution phase.
+- Combined, every fact line looks like: "Amount: $6.5M (HIGH) [Messari, https://...]".
 - Do not analyze, conclude, or speculate about causality beyond what THIS phase's task asks for — later
   phases handle synthesis; this phase's job is narrower than that.
 - Begin your output with: PROJECT: <Name>
