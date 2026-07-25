@@ -20,14 +20,25 @@ single-shot prompt is unaffected and stays external as before.
    Chain, and similarly aged/complex projects) or **Track B (Small/Young)** for projects with thin history —
    pre-TGE, <1 year old, few entities. Track choice is a judgment call, not a hard rule; a "small" project that
    turns out to have surprising depth can graduate mid-research by picking up Track A's remaining phases.
-2. Run each phase **in dependency order**. Before pasting a phase's prompt, paste the **previous phase's
+2. **Focus on one project at a time through the whole pipeline before starting another** — see
+   `examples/DatasetIndex.md` § "Phased Deep Research Queue" for the currently in-progress project and which
+   phase is next. A finished foundation project is worth more than several half-finished ones.
+3. Run each phase **in dependency order**. Before pasting a phase's prompt, paste the **previous phase's
    finished output** into the same chat/context as reference material — later phases depend on earlier ones
    (see `Deep-Research-Brief.md` "Format v3" for why this order, not topic order).
-3. Export each phase's raw output as its own `.docx`, named so the phase key is a substring
+4. If the project already has a `examples/Sentiment/<Project>.md` companion (Grok/X), paste it as additional
+   context for **Phase 8 (Market/Ecosystem) and the Conflict Resolution phase** — Gemini's research is
+   secondary/aggregated evidence (what's been written about the project); Grok's is primary/live evidence
+   (what the community is saying right now, with real post citations). A gap between the two — Gemini's
+   sources say the community is positive, Grok's live scan says sentiment soured last week — is exactly the
+   kind of `INKONSISTENSI` this pipeline exists to surface, not smooth over.
+5. Export each phase's raw output as its own `.docx`, named so the phase key is a substring
    (e.g. `03-history.docx`) — see `doc_backup/inbox/README.md`. Drop all of a project's phase files into
    `doc_backup/inbox/phased/<ProjectName>/` and run `./run.sh` — `tools/ingest.py` assembles them
    automatically, no LLM needed for that step.
-4. Every prompt below shares the same closing/format rules — defined once, not repeated per phase.
+6. Every prompt below shares the same closing/format rules — defined once, not repeated per phase. Every
+   phase output must follow the literal template given (field names, order) — a template exists specifically
+   so output is comparable across projects instead of free-form and inconsistent.
 
 ## Shared rules (apply to every phase prompt)
 
@@ -35,6 +46,9 @@ Append this block to **every** phase prompt before sending it:
 
 ```
 FORMAT RULES (apply to your entire answer):
+- Follow the literal output template given for this phase — same field labels, same order. Do not
+  reformat as prose, do not rename fields, do not reorder them. A consistent shape across every project
+  is the point; free-form answers can't be compared later.
 - Output as Label: Value bullets. No tables — a table's row/column association is lost on export; a flat
   bullet list is not.
 - One fact per line. Full dates, numbers with units. Never round away or drop a figure.
@@ -43,6 +57,9 @@ FORMAT RULES (apply to your entire answer):
 - Where a claim is contested by different sources, note it explicitly ("Source A says X, Source B says Y") —
   do not silently pick one.
 - Cite a source (name/URL/document) for each non-obvious fact where you can.
+- Tag an Evidence Level — HIGH (multiple independent sources agree) / MEDIUM (one credible source) / LOW
+  (inference, single weak source, or contested) — on every significant claim, not just in the Conflict
+  Resolution phase. Append it in parentheses after the fact, e.g. "Amount: $6.5M (HIGH)".
 - Do not analyze, conclude, or speculate about causality beyond what THIS phase's task asks for — later
   phases handle synthesis; this phase's job is narrower than that.
 - Begin your output with: PROJECT: <Name>
@@ -55,210 +72,299 @@ FORMAT RULES (apply to your entire answer):
 ## Track A — Large / Anchor Projects (full 11 phases)
 
 Use for projects with substantial history and complexity: Ethereum, Solana, BNB Chain, Avalanche, Polkadot,
-Cosmos, and comparable anchor projects. Each phase below is a separate prompt — paste the prior phase's
-finished output as context before running the next one.
+Cosmos, LayerZero, and comparable anchor projects. Each phase below is a separate prompt — paste the prior
+phase's finished output as context before running the next one.
 
 ### Phase 1 — Foundation Intelligence
 ```
 You are a crypto research investigator building a factual foundation dossier on <PROJECT NAME>. This phase
 collects FACTS ONLY — no analysis, no interpretation, no "why."
 
-Research and report:
-- Official Name, Symbol/Ticker
-- Category (e.g. L1, L2, DeFi, DePIN, restaking, modular DA — be specific)
-- Founding entity/company (legal name, jurisdiction if known)
-- Founder(s) and core team (names, roles; note if anonymous/pseudonymous)
-- Country/jurisdiction of operation
-- Launch date(s) — testnet, mainnet, TGE (whichever apply)
-- Main products/modules
-- Official website, repository, documentation, social handles, block explorer
-- Token contract address(es) and chain(s)
-- Which broader ecosystem(s) it belongs to
+Fill this exact template (write "unknown" for anything unverifiable — do not guess):
 
-Do not editorialize. Do not assess quality. Just the facts, each with a source where possible.
+PROJECT: <Name>
+Official Name: <value>
+Symbol: <value>
+Category: <value — be specific, e.g. "cross-chain messaging / interoperability", not just "infra">
+Founding Entity: <legal name, jurisdiction>
+Founders: <name1 (role); name2 (role); ... — or "anonymous/pseudonymous — <handle>">
+Core Team: <size/notable names, or "undisclosed">
+Country: <value>
+Launch Date - Testnet: <date or "n/a">
+Launch Date - Mainnet: <date or "n/a">
+Launch Date - TGE: <date or "pre-TGE">
+Main Products: <semicolon-separated list>
+Official Website: <url>
+Repository: <url>
+Documentation: <url>
+Social - X/Twitter: <handle>
+Social - Discord: <invite/handle>
+Social - Telegram: <handle>
+Block Explorer: <url>
+Token Contract: <address, chain — or "not yet deployed">
+Chain(s): <value>
+Ecosystem: <value>
+
+Open Threads
+- <anything uncertain>
 ```
 
 ### Phase 2 — Entity Intelligence
 ```
 Using the Foundation Intelligence output above as context, build the ENTITY GRAPH for <PROJECT NAME> — every
 organization, person, investor, exchange, partner, protocol, developer, product, DAO, government body, media
-outlet, or research lab connected to the project.
+outlet, or research lab connected to the project. This is a GRAPH, not causal analysis — record who is
+connected and how, not why or what it caused. Do not skip entities that seem minor.
 
-For each entity, report:
-- Entity name and type (Organization / Person / Investor / Foundation / Exchange / Partner / Protocol /
-  Developer / Product / DAO / Government / Media / Research Lab)
-- Relationship to the project (e.g. "led Series A", "listed token", "core contributor 2021-2023", "advisor")
-- Relationship period (start, and end if applicable)
-- Evidence/source
+For EACH entity, repeat this block:
 
-This is a GRAPH, not a causal analysis — record who is connected and how, not why or what it caused. Do not
-skip entities that seem minor; a small early investor or an exited team member can matter later.
+Entity: <name>
+Type: <Organization|Person|Investor|Foundation|Exchange|Partner|Protocol|Developer|Product|DAO|Government|Media|Research Lab>
+Relationship: <free text, e.g. "led Series A", "core contributor 2021-2023">
+Period: <start-end, or "start-present", or "unknown">
+Exposure Type: <financial-collateral|technical-integration|liquidity-dependency|shared-investor-only|narrative-correlated-only|unknown>
+  (financial-collateral = holds/held this project's asset as treasury/collateral; technical-integration =
+  depends on this project's infrastructure to function; liquidity-dependency = primary liquidity venue;
+  shared-investor-only = same investor(s), no operational link; narrative-correlated-only = same sector
+  label only. Use the STRONGEST applicable category, not the most convenient one.)
+Evidence: <source>
+---
+
+Open Threads
+- <anything uncertain>
 ```
 
 ### Phase 3 — Historical Intelligence
 ```
 Using the Foundation and Entity Intelligence outputs above as context, build the CHRONOLOGICAL EVENT TIMELINE
-for <PROJECT NAME>. This is the FACTUAL SPINE every later phase will reference — not yet the causal depth
-(alternatives considered, hidden motivations come later, in Behavioral Intelligence).
+for <PROJECT NAME> — the FACTUAL SPINE every later phase references. Cover full history from founding to
+present; do not omit uncomfortable events (outages, controversies, failed initiatives, governance disputes).
 
-For every major event, in date order, report:
-- Date
-- Event (what happened)
-- Trigger (what precipitated it — the immediate, observable cause, not speculation about motive)
-- Decision (what was decided/done)
-- Outcome (what resulted, as far as currently known)
-- Evidence/source
+For EACH major event, in date order, repeat this block:
 
-Cover the full history from founding to present. Do not omit uncomfortable events (outages, controversies,
-failed initiatives, governance disputes) — a complete timeline is the point.
+Date: <YYYY-MM-DD or best available precision>
+Event: <short label>
+Trigger: <the immediate, observable cause — not speculation about motive>
+Context Snapshot (as of this date): Industry state: <...> | Competitor state: <...> | Tech maturity: <...>
+  | Macro conditions: <...> | Hunter/user population (if airdrop-relevant): <...> | VC climate: <...>
+  | Narrative: <...>
+  (Skip any sub-field that genuinely doesn't apply, but don't skip the whole Context line — this is what
+  lets later phases avoid matching this event's pattern to an incompatible era.)
+Decision: <what was decided/done>
+Execution: <how it was actually carried out, operationally — distinct from the decision itself>
+Short-term Outcome: <effect within roughly weeks-months>
+Long-term Outcome: <effect over the longer horizon, or "too early to assess">
+Evidence: <source>
+---
+
+Open Threads
+- <anything uncertain>
 ```
 
 ### Phase 4 — Technology Intelligence
 ```
 Using the prior phases' outputs as context, report the TECHNOLOGY profile of <PROJECT NAME>. Technology ONLY
-— do not discuss token, market, or financial topics in this phase.
+— no token/market/financial topics.
 
-Report:
-- Architecture (high-level design)
-- Consensus mechanism
-- Virtual machine / execution environment
-- Primary languages/frameworks
-- Security model and audit history
-- Scalability approach and known limits
-- Protocol evolution — major upgrades, in order, with what changed and why (technically)
-- Current roadmap
-- What, if anything, is genuinely novel vs. adapted from prior art
+Architecture: <value>
+Consensus Mechanism: <value or "n/a">
+VM / Execution Environment: <value>
+Languages/Frameworks: <value>
+Security Model: <value>
+Audit History: <auditor — date — scope; repeat per audit, or "none disclosed">
+Scalability Approach: <value>
+Known Limits: <value>
+Protocol Evolution: <upgrade name — date — what changed technically; repeat per upgrade>
+Current Roadmap: <value>
+Novelty Assessment: <what's genuinely new vs. adapted from prior art, with basis>
 
-Note explicitly where technical claims are marketing language vs. independently verifiable (audits, published
-benchmarks, on-chain data).
+Open Threads
+- <anything uncertain>
 ```
 
 ### Phase 5 — Financial Intelligence
 ```
-Using the prior phases' outputs as context, report the FINANCIAL profile of <PROJECT NAME>. Funding and
-revenue economics — not tokenomics (that's the next phase).
+Using the prior phases' outputs as context, report the FINANCIAL profile of <PROJECT NAME>. Funding/revenue
+economics — not tokenomics (that's Phase 6).
 
-Report:
-- Funding rounds: round type, date, amount, lead/participating investors, valuation if disclosed
-- Treasury size and composition, if disclosed
-- Revenue model and actual revenue figures if available
-- Cash flow / burn rate, if disclosed or estimable from public data
-- Token sale structure (public sale, private sale — amounts and terms, not allocation %, which is Token
-  Intelligence)
-- Valuation history (funding-round valuation, and market cap at key points, clearly labeled as which)
-- Runway estimate if calculable from disclosed treasury + burn
+For EACH funding round, repeat this block:
+Funding Round: <type, e.g. Seed/Series A>
+  Date: <value>  Amount: <value + currency>  Lead Investor: <value>
+  Participating Investors: <value>  Valuation: <value or "undisclosed">
+---
 
-Where a figure is estimated rather than disclosed, say so explicitly and show the basis for the estimate.
+Then, once:
+Treasury Size: <value or "undisclosed">
+Treasury Composition: <value>
+Revenue Model: <value>
+Revenue Figures: <value + date, or "undisclosed">
+Burn Rate: <value, or "estimated as X — basis: ...", or "undisclosed">
+Token Sale Structure: <public/private terms and amounts — NOT allocation %, that's Phase 6>
+Runway Estimate: <value + calculation basis, or "not calculable">
+
+Open Threads
+- <anything uncertain>
 ```
 
 ### Phase 6 — Token Intelligence
 ```
-Using the prior phases' outputs as context, report the TOKEN/TOKENOMICS profile of <PROJECT NAME>.
+Using the prior phases' outputs as context, report the TOKEN/TOKENOMICS profile of <PROJECT NAME>. If
+pre-TGE, mark every field below explicitly as "planned" and flag what's still undecided.
 
-Report:
-- Total supply (fixed or inflationary — specify)
-- Distribution breakdown by category (community, team, investors, treasury, ecosystem, etc.) with percentages
-- Allocation details per category: cliff, vesting schedule
-- Unlock schedule, especially TGE unlock %
-- Emission schedule (if inflationary)
-- Utility (what the token is actually used for — governance, fees, staking, access)
-- Governance mechanism (voting power basis, quorum, timelocks)
-- Inflation/deflation mechanics, including any burn mechanism
-- Holder concentration (top holders, whale concentration) if measurable
-- Notable token-flow patterns (large transfers, exchange flows) if relevant and sourced
+Total Supply: <value>
+Supply Type: <fixed|inflationary>
+Distribution: Community <%>, Team <%>, Investors <%>, Treasury <%>, Ecosystem <%>, Other <label:%>
+Allocation - Team: <cliff, vesting>
+Allocation - Investors: <cliff, vesting>
+Allocation - <any other category>: <cliff, vesting>
+TGE Unlock: <% of total supply + which categories>
+Emission Schedule: <value or "n/a — fixed supply">
+Utility: <bullet-style list>
+Governance Mechanism: <value>
+Inflation/Deflation: <value>
+Burn Mechanism: <value or "none">
+Holder Concentration: <value or "not yet measurable">
+Notable Token Flow: <value or "n/a">
+Status: <live|planned/pre-TGE>
 
-If the project is pre-TGE, report planned/announced structure and explicitly flag what's still undecided.
+Open Threads
+- <anything uncertain>
 ```
 
 ### Phase 7 — Ecosystem Intelligence
 ```
 Using the prior phases' outputs as context, report the ECOSYSTEM/EXTERNAL RELATIONSHIPS of <PROJECT NAME>.
+Distinguish "integration announced" from "integration live and used."
 
-Report:
-- Integration partners and what the integration does
-- Developer ecosystem — number/notable developers or teams building on it, if measurable
-- Applications built on/with it
-- Wallet support
-- Exchange listings (beyond what Entity Intelligence already captured — focus here on breadth/tier)
-- Oracle integrations
-- Bridge integrations
-- Infrastructure/tooling providers supporting it
-- Community structure (Discord/Telegram/forum size and activity, if measurable)
+For EACH integration partner, repeat this block:
+Integration Partner: <name>
+  What it does: <value>   Status: <live|announced-only>
+---
 
-Distinguish "integration announced" from "integration live and used" — many crypto partnership announcements
-never ship.
+Then, once:
+Developer Ecosystem: <value>
+Applications Built On It: <list>
+Wallet Support: <list>
+Exchange Listings: <breadth/tier summary — beyond what Entity Intelligence already captured>
+Oracle Integrations: <list>
+Bridge Integrations: <list>
+Infra/Tooling Providers: <list>
+Community Size/Activity: <Discord/TG/forum numbers + date>
+
+Open Threads
+- <anything uncertain>
 ```
 
 ### Phase 8 — Market Intelligence
 ```
-Using the prior phases' outputs as context, report the MARKET profile of <PROJECT NAME>. Market only — this
-is not the place to explain WHY (that's Behavioral Intelligence, next).
+Using the prior phases' outputs as context, report the MARKET profile of <PROJECT NAME>. Market only — not
+WHY (that's Behavioral Intelligence, next). If a `examples/Sentiment/<Project>.md` (Grok/X) companion was
+provided as context, cross-check your narrative/community claims against it explicitly.
 
-Report:
-- Narrative(s) the project is associated with, and whether it originated or followed each narrative
-- Direct competitors, by era (who it competed with at launch vs. now, since competitive sets shift)
-- Positioning relative to competitors (claimed and actual, if they differ)
-- Adoption metrics: users, active addresses, transactions, whatever is measurable and disclosed
-- TVL history, if applicable, with key inflection points and dates
-- Volume history, key inflection points
-- Market share within its category, if calculable
-- Which market cycle(s) it has operated through, and how each affected it observably
+Narrative(s): <value — note originated vs. followed each>
 
-Report numbers with dates — a metric without a timestamp is not useful for later era-comparison.
+For EACH competitor/era, repeat this block:
+Competitor: <name>   Era: <when they competed>   Positioning vs. them: <value>
+---
+
+Then, once:
+Adoption Metrics: <metric: value (date); repeat per metric>
+TVL History: <value: date; repeat key inflection points, or "n/a">
+Volume History: <value: date; repeat key inflection points>
+Market Share: <value or "not calculable">
+Market Cycles Operated Through: <list, with dates and observed effect on this project specifically>
+Current Status: <growing|declining|stagnant|dormant|recovering> — basis: <what observation supports this>
+
+Open Threads
+- <anything uncertain, including any gap vs. the Sentiment companion if one was provided>
 ```
 
 ### Phase 9 — Behavioral Intelligence
 ```
-Using ALL prior phases' outputs as context — especially the Historical, Financial, and Token Intelligence —
-this phase is CIF's actual causal layer. For the major decisions identified in Historical Intelligence
-(phase 3), answer:
+Using ALL prior phases' outputs as context — especially Historical, Financial, and Token Intelligence — this
+phase is CIF's actual causal layer. Ground every answer in a statement, interview, governance post, or
+strongly-evidenced inference, labeled as such; write "unknown" rather than speculate.
 
-- WHY was this decision made? (motivation)
-- What CONSTRAINED the options available at the time? (runway, technical debt, regulatory exposure, team
-  size)
-- What EXTERNAL PRESSURE acted on the decision? (VC expectations, competitive threat, community demand)
-- What TRADE-OFF was accepted — what was given up by choosing this path?
-- What ALTERNATIVE(S) were considered or plausibly available, and why were they not chosen?
-- What was the team's STATED or evidenced EXPECTATION of the outcome, and how did that compare to what
-  actually happened?
+For EACH major decision event from Historical Intelligence, repeat this block:
 
-Ground every answer in a statement, interview, governance post, or strongly-evidenced inference — and
-explicitly label which of those it is. If you cannot ground an answer, write "unknown" rather than
-speculating. This phase explains the Historical Intelligence timeline; it does not re-derive it.
+Decision Event: <name/date, matching Historical Intelligence exactly>
+  Motivation: <why this decision was made, or "unknown">
+  Constraint: <what limited the options — runway, tech debt, regulatory exposure, team size — or "unknown">
+  Pressure: <external force acting on it — VC expectations, competitive threat, community demand — or "unknown">
+  Trade-off: <what was given up by choosing this path, or "unknown">
+  Alternative(s) Considered: <what else was plausibly available and why not chosen, or "unknown">
+  Expectation vs. Actual: <what the team expected to happen vs. what did, or "unknown">
+  Stakeholder Reactions:
+    Founder: <reaction/impact or "no notable reaction">
+    VC: <...>
+    Retail: <...>
+    Community: <...>
+    Developer: <...>
+    Institution: <...>
+    Validator: <...>
+    Builder: <...>
+  Grounding: <statement | interview | governance post | strongly-evidenced inference — label which>
+---
+
+Open Threads
+- <anything uncertain>
 ```
 
 ### Phase 10 — Knowledge Extraction
 ```
-Using ALL prior phases' outputs as context, extract MACHINE-READABLE knowledge candidates from everything
-gathered on <PROJECT NAME> so far:
+Using ALL prior phases' outputs as context, extract MACHINE-READABLE knowledge from everything gathered on
+<PROJECT NAME>. Do not invent a pattern from a single ungrounded guess — every candidate must trace to a
+concrete, already-reported event or fact.
 
-- Entities and relationships not yet captured in Entity Intelligence but implied elsewhere
-- Pattern candidates: a repeatable decision-shape observed in this project's history that might generalize to
-  other projects (name it, describe the shape, cite the specific decision event(s) it's drawn from)
-- Facts that look like they could become a transferable "rule" (a condition → outcome pattern) vs. facts that
-  are specific to this project only
-- For each pattern candidate, note what would need to be true of ANOTHER project for this pattern to apply
-  (the scope/conditions, not just the mechanic)
+POV Success-Matrix (project-level verdict, not per-event):
+  Founder: <success|failure|mixed — reason — Evidence Level>
+  VC: <...>
+  Retail: <...>
+  Community: <...>
+  Developer: <...>
+  Institution: <...>
+  Validator: <...>
+  Builder: <...>
 
-Do not invent patterns from a single ungrounded guess — every candidate must trace to at least one concrete,
-already-reported event or fact.
+Lessons Learned:
+  Biggest mistake: <what — to avoid — cite the specific event>
+  Biggest win: <what — to imitate — cite the specific event>
+
+Entity/Relationship Addendum: <anything missed in Entity Intelligence, or "none">
+
+For EACH pattern candidate, repeat this block:
+Pattern Candidate: <name>
+  Shape: <description of the repeatable decision-shape>
+  Drawn From: <specific event(s)/fact(s) cited, by name/date>
+  Applies When: <conditions under which this would transfer to another project — not just the mechanic>
+---
+
+Open Threads
+- <anything uncertain>
 ```
 
 ### Phase 11 — Conflict Resolution
 ```
 This is a MERGE-ONLY pass. Do not research anything new. Re-read all prior phase outputs for <PROJECT NAME>
-provided as context, and identify every place where:
-- Two phases (or two sources within one phase) report different figures for the same fact (funding amount,
-  dates, supply numbers, unlock percentages, etc.)
+provided as context — including a `examples/Sentiment/<Project>.md` companion if one was provided — and
+identify every place where:
+- Two phases (or two sources within one phase) report different figures for the same fact
 - A claim in one phase is contradicted, complicated, or cast in doubt by something in another phase
+- Gemini's research narrative disagrees with the Grok/Sentiment companion's live read (if provided) —
+  e.g. Gemini's sources describe positive community sentiment based on older material, but the Sentiment
+  companion's live X scan shows it has since soured, or vice versa
 - An "Open Thread" from an earlier phase was never actually resolved by a later one
 
-For each conflict found, report it as:
-INKONSISTENSI: <what conflicts> — Source A: <value/claim> vs Source B: <value/claim> — Evidence Level: LOW
-(unless one source is clearly more authoritative, in which case say why and use MEDIUM)
+For EACH conflict found, repeat this block:
+INKONSISTENSI: <what conflicts>
+  Source A: <value/claim>   Source B: <value/claim>
+  Evidence Level: <LOW, or MEDIUM if one source is clearly more authoritative — say why>
+---
 
-Do not silently resolve a conflict by picking one side — flag it. If you find no conflicts, say so explicitly
-rather than omitting this phase's output.
+If no conflicts are found, write "No conflicts found." explicitly rather than omitting this phase's output.
+
+Open Threads
+- <only if something remains genuinely unresolved even after this pass>
 ```
 
 ---
@@ -266,100 +372,135 @@ rather than omitting this phase's output.
 ## Track B — Small / Young Projects (condensed, 7 phases)
 
 Use for projects with thin history: pre-TGE, under ~1 year old, few entities, limited market data. The
-dependency order is unchanged; phases are merged where a young project genuinely doesn't have enough material
-to justify a separate pass — merging is about proportionality, not about skipping rigor.
+dependency order and the enrichments above (Context Snapshot, Execution, Stakeholder Reactions, POV Matrix,
+Evidence Level, Current Status) all still apply — condensing means merging phases, not dropping fields.
 
 ### Phase 1 — Foundation & Entity Intelligence
 ```
 You are a crypto research investigator building a factual foundation dossier on <PROJECT NAME>, a young/small
-project. This phase collects FACTS ONLY — no analysis.
+project. FACTS ONLY.
 
-Part A — Foundation: Official Name, Symbol, Category, founding entity, founders/core team, country, launch
-date(s), main products, website/repo/docs/socials/explorer, token contract + chain, ecosystem.
+Part A — Foundation (fill this template):
+PROJECT: <Name>
+Official Name / Symbol / Category / Founding Entity / Founders / Core Team / Country: <each>
+Launch Date - Testnet / Mainnet / TGE: <each, or "n/a"/"pre-TGE">
+Main Products / Website / Repository / Documentation / Socials / Explorer: <each>
+Token Contract / Chain(s) / Ecosystem: <each>
 
-Part B — Entity graph: every organization, person, investor, exchange, partner, protocol, developer, DAO, or
-advisor connected to the project so far. For each: name, type, relationship, period, evidence.
+Part B — Entity graph (repeat per entity):
+Entity: <name>   Type: <...>   Relationship: <...>   Period: <...>
+Exposure Type: <financial-collateral|technical-integration|liquidity-dependency|shared-investor-only|narrative-correlated-only|unknown>
+Evidence: <source>
+---
 
-A young project's entity list is naturally short — report exactly what exists, don't pad it, and don't treat
-a short list as incomplete research.
+A young project's entity list is naturally short — report exactly what exists, don't pad it.
+
+Open Threads
+- <anything uncertain>
 ```
 
 ### Phase 2 — Historical Intelligence
 ```
 Using the Foundation & Entity output above as context, build the CHRONOLOGICAL EVENT TIMELINE for
-<PROJECT NAME> from founding to now. For each event: Date, Event, Trigger, Decision, Outcome, Evidence. A
-young project may have few events — report them completely rather than manufacturing filler ones. This is
-the factual spine; causal depth comes later (Behavioral Intelligence).
+<PROJECT NAME>. A young project may have few events — report them completely, don't manufacture filler ones.
+
+For EACH event, repeat:
+Date: <...>   Event: <...>   Trigger: <...>
+Context Snapshot (as of this date): Industry/Competitor/Tech maturity/Macro/Hunter-population/VC climate/
+  Narrative — <fill what applies>
+Decision: <...>   Execution: <...>
+Short-term Outcome: <...>   Long-term Outcome: <... or "too early to assess">
+Evidence: <source>
+---
+
+Open Threads
+- <anything uncertain>
 ```
 
 ### Phase 3 — Technology Intelligence
 ```
-Using the prior phases' outputs as context, report the TECHNOLOGY profile of <PROJECT NAME>: architecture,
-consensus (if applicable), execution environment, languages/frameworks, security model and audit status,
-scalability approach, roadmap. Technology only — no token/market/financial topics here. For a young project,
-be explicit about what's live vs. only planned/announced.
+Using the prior phases' outputs as context, report the TECHNOLOGY profile of <PROJECT NAME>: Architecture,
+Consensus (if applicable), VM/Execution Environment, Languages/Frameworks, Security Model, Audit Status,
+Scalability Approach, Roadmap. Technology only. Be explicit about what's live vs. only planned/announced.
+
+Open Threads
+- <anything uncertain>
 ```
 
 ### Phase 4 — Financial & Token Intelligence
 ```
-Using the prior phases' outputs as context, report BOTH the financial and token profile of <PROJECT NAME> —
-these are merged here because a pre-TGE/young project's funding and token design are tightly coupled and
-usually thin enough to cover together.
+Using the prior phases' outputs as context, report BOTH financial and token profile of <PROJECT NAME> —
+merged since a young project's funding and token design are usually thin enough to cover together.
 
-Financial: funding rounds (type, date, amount, investors, valuation if disclosed), treasury, revenue model
-(if any yet), token sale structure.
+Financial: Funding Round(s) (type/date/amount/investors/valuation, repeat per round), Treasury, Revenue Model,
+Token Sale Structure.
 
-Token: total supply, planned/actual distribution %, allocation cliffs/vesting, unlock schedule (especially
-planned TGE unlock), emission, utility, governance mechanism.
+Token: Total Supply, Distribution %, Allocation cliffs/vesting per category, TGE Unlock %, Emission, Utility,
+Governance Mechanism, Status (live|planned).
 
-If pre-TGE, report planned/announced structure and flag explicitly what's still undecided — do not present a
-plan as if it were finalized.
+If pre-TGE, mark every field "planned" explicitly and flag what's undecided.
+
+Open Threads
+- <anything uncertain>
 ```
 
 ### Phase 5 — Ecosystem & Market Intelligence
 ```
-Using the prior phases' outputs as context, report BOTH the ecosystem and market profile of <PROJECT NAME> —
-merged here because a young project's external relationships and market position are usually one story, not
-two.
+Using the prior phases' outputs as context, report BOTH ecosystem and market profile of <PROJECT NAME>.
 
-Ecosystem: integration partners (live vs. announced-only), developer ecosystem, wallet support, exchange
-listings, community size/activity.
+Ecosystem: Integration Partner (name, what it does, live|announced-only — repeat per partner), Developer
+Ecosystem, Wallet Support, Exchange Listings, Community Size/Activity.
 
-Market: narrative(s) associated with it, direct competitors, positioning, adoption metrics (with dates),
-TVL/volume if applicable, which market cycle it's operating in.
+Market: Narrative(s) (originated vs. followed), Competitors (repeat per competitor/era), Adoption Metrics
+(with dates), TVL/Volume if applicable, Current Status (growing|declining|stagnant|dormant|recovering + basis).
+
+If a `examples/Sentiment/<Project>.md` companion exists, cross-check community claims against it.
+
+Open Threads
+- <anything uncertain, including any gap vs. the Sentiment companion>
 ```
 
 ### Phase 6 — Behavioral Intelligence
 ```
-Using ALL prior phases' outputs as context, this phase is CIF's actual causal layer — do not compress this
-one even though the project is young. For the decisions identified in Historical Intelligence, answer: WHY
-was each decision made (motivation)? What CONSTRAINED the options? What PRESSURE acted on it? What TRADE-OFF
-was accepted? What ALTERNATIVE(S) existed and why weren't they chosen? What did the team EXPECT to happen?
+Using ALL prior phases' outputs as context — do not compress this phase even though the project is young.
 
-Ground every answer in a statement, interview, or strongly-evidenced inference, labeled as such. Write
-"unknown" rather than speculate. A young project's decisions matter just as much causally as an old one's —
-this is not the phase to shorten.
+For EACH decision event from Historical Intelligence, repeat:
+Decision Event: <name/date>
+  Motivation / Constraint / Pressure / Trade-off / Alternative(s) Considered / Expectation vs. Actual: <each,
+  or "unknown">
+  Stakeholder Reactions: Founder/VC/Retail/Community/Developer/Institution/Validator/Builder — <each, or
+  "no notable reaction">
+  Grounding: <statement|interview|governance post|strongly-evidenced inference — label which>
+---
+
+Open Threads
+- <anything uncertain>
 ```
 
 ### Phase 7 — Knowledge & Conflict Synthesis
 ```
-This merges Knowledge Extraction and Conflict Resolution into one closing pass, appropriate for a project
-with a smaller total body of research to reconcile.
+Merges Knowledge Extraction and Conflict Resolution into one closing pass.
 
-Part A — Knowledge Extraction: from everything gathered, extract pattern candidates (a repeatable
-decision-shape that might generalize), each traced to a specific reported event, with the conditions under
-which it would apply to another project.
+Part A — Knowledge Extraction:
+POV Success-Matrix: Founder/VC/Retail/Community/Developer/Institution/Validator/Builder — <verdict + reason +
+  Evidence Level, each>
+Lessons Learned: Biggest mistake (to avoid) / Biggest win (to imitate) — cite the specific event(s).
+Pattern Candidate (repeat per candidate): Name / Shape / Drawn From / Applies When.
 
-Part B — Conflict Resolution (merge-only, no new research): re-read all prior phase outputs and flag every
-place two sources disagree, or an earlier Open Thread was never resolved. Format each as:
-INKONSISTENSI: <what conflicts> — Source A vs Source B — Evidence Level: LOW (or MEDIUM if one source is
-clearly more authoritative — say why).
+Part B — Conflict Resolution (merge-only, no new research; include the Sentiment companion if one was
+provided): repeat per conflict —
+INKONSISTENSI: <what conflicts>   Source A: <...>   Source B: <...>   Evidence Level: <LOW|MEDIUM + why>
+---
+If no conflicts found, write "No conflicts found." explicitly.
 
-If no conflicts are found, say so explicitly.
+Open Threads
+- <only if something remains genuinely unresolved>
 ```
 
 ## Related Files
 
 `docs/Protocol/Deep-Research-Brief.md` (the "Format v3 — Dependency Pipeline" section this operationalizes),
 `docs/Ontology/DecisionEvent.md`, `docs/Ontology/Context.md`, `docs/Ontology/Hidden.md`,
-`docs/Ontology/Relationships.md`, `tools/ingest.py` (`process_phased_project`), `doc_backup/inbox/README.md`.
+`docs/Ontology/Relationships.md` (entity graph + `exposure_type`, for cross-project contagion mapping),
+`examples/DatasetIndex.md` § "Phased Deep Research Queue" (progress tracking), `examples/PatternRegistry.md`,
+`tools/ingest.py` (`process_phased_project`), `doc_backup/inbox/README.md`.

@@ -63,6 +63,28 @@ Solana rebuild, i.e. a short session per project. This queue is unrelated to net
 `doc_backup/deep/` v1 source (and any framework-level v1-format cleanup) eligible for the maintainer's
 separate delete decision — evaluated per-project, not as a blanket action.
 
+## Phased Deep Research Queue (Format v3 — in progress)
+
+**Decision (maintainer, 2026-07-25):** focus on ONE project at a time through the full Format v3 pipeline
+(`docs/Protocol/Phased-Research-Prompts.md`) before starting another — a solid foundation project first, so
+later projects have a proven reference to follow rather than everyone being worked in parallel and nobody
+being done properly. Tracked here so progress survives across sessions (per-phase, since a session may only
+complete one phase before running out of budget).
+
+**Candidate criteria** (why a project qualifies for this queue, not just any project): substantial
+documented ecosystem collaborators/integrations (to test cross-project entity-graph and contagion mapping —
+see the LayerZero↔Optimism discussion), a clear public roadmap, and enough real history to make Behavioral
+Intelligence non-trivial.
+
+| Project | Track | Phases done | Next phase | Notes |
+|---------|-------|--------------|------------|-------|
+| **LayerZero** | A (full 11) | none yet | **1 — Foundation Intelligence** (prompt dispatched, awaiting output) | Upgrade from existing `Pioneer/LayerZero.md` (Batch 02) to Deep tier. Chosen for its interconnection-heavy ecosystem (160+ chains — strong entity-graph test case) and the ZRO airdrop (Jun 2024) as real Behavioral Intelligence material, already linked as a P4 analog in `PatternRegistry.md`. |
+
+**When a phase completes:** update its row's "Phases done"/"Next phase" columns in the same commit as dropping
+the phase's raw `.docx` into `doc_backup/inbox/phased/LayerZero/`. Once all phases planned for the Track are
+done, run `./run.sh` to assemble the dossier, then move the finished project out of this table (it becomes a
+normal `Deep Dossiers` row above) and add the next candidate.
+
 ## Deep Dossiers
 _Tier: Deep · anchor projects with full causal history._
 

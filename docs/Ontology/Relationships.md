@@ -49,8 +49,27 @@ Entity:
         | DAO | Government | Media | Research Lab
   relationship: text (free-form, e.g. "led Series A", "core contributor 2021-2023")
   period: text | unknown
+  exposure_type: financial-collateral | shared-investor-only | technical-integration | liquidity-dependency
+                 | narrative-correlated-only | unknown
   evidence: <citation/quote reference>
 ```
+
+**`exposure_type`** (added 2026-07-25) exists for **cross-project contagion mapping** — the question "if this
+entity fails, which other projects in the dataset are actually at risk, not just loosely associated?" A
+project sharing an investor with a failed project is weak/irrelevant coupling; a project holding a failed
+project's token as treasury collateral, or depending on it for critical liquidity/infrastructure, is real
+transmission risk. Without this field every entity graph collapses into "everyone is connected to everyone,"
+which is noise, not signal (Terra/Luna → FTX → BTC contagion is real and mappable *because* the transmission
+channels were specific and identifiable, not because everything in crypto is vaguely related).
+
+- **financial-collateral** — holds/held the entity's token/asset as treasury, collateral, or reserve backing.
+- **technical-integration** — depends on the entity's infrastructure to function (a bridge, an oracle, a DA
+  layer, an execution environment).
+- **liquidity-dependency** — the entity is/was a primary liquidity venue or market-maker relationship.
+- **shared-investor-only** — same investor(s) appear in both cap tables; no operational dependency exists.
+- **narrative-correlated-only** — grouped by market narrative/sector only (e.g. "both are restaking"), not by
+  any actual operational or financial link.
+- **unknown** — relationship exists but exposure type isn't yet determined; do not guess.
 
 ## Validation Rules
 
@@ -61,6 +80,9 @@ Entity:
 - An entity discovered in a later research phase (e.g. a partner surfaced during Ecosystem Intelligence)
   should be added back here rather than left only in that phase's own notes — this file is the single
   reference list, not one of several.
+- `exposure_type` must be the **strongest applicable** category, not the most convenient one — a relationship
+  that is both "shared-investor" and "technical-integration" is recorded as `technical-integration` (the
+  stronger, actually-consequential link), not left at the weaker label.
 
 ## Used By
 
