@@ -424,3 +424,63 @@ tambahan.
 ```
 
 **Result:** pending — awaiting output.
+
+## Phase 5 — Financial Intelligence (sent 2026-07-25)
+
+```
+Menggunakan output Foundation (Phase 1), Entity (Phase 2), Historical (Phase 3), dan Technology (Phase 4)
+Intelligence di atas sebagai konteks, bangun PROFIL FINANSIAL untuk LayerZero. HANYA ekonomi pendanaan/
+pendapatan — JANGAN bahas tokenomics/alokasi supply (itu Phase 6).
+
+=== RONDE PENDANAAN YANG SUDAH DIKETAHUI — WAJIB DIPERDALAM DENGAN DETAIL, JANGAN CUMA DIULANG ===
+- Seed — April 2021 — $2 juta — investor termasuk Multicoin Capital, Coinbase Ventures
+- Series A — September 2021 — $6 juta — investor termasuk Delphi Digital, Multicoin Capital (lanjutan)
+- Series A Extension — Maret 2022 — $135 juta (valuasi $1 miliar, status unicorn) — dipimpin a16z crypto,
+  investor lain: Sequoia Capital, PayPal Ventures, Alameda Ventures/FTX Group
+- Series B — April 2023 — $120 juta (valuasi $3 miliar) — investor termasuk a16z crypto (lanjutan),
+  Sequoia Capital (lanjutan), Circle Ventures, OKX Ventures, Christie's, Samsung Next
+
+CARI YANG BELUM ADA: lead investor pasti untuk Seed dan Series A (siapa yang MEMIMPIN, bukan cuma
+berpartisipasi)? Apakah ada ronde pendanaan LAIN yang belum tercatat (strategic round, token sale
+pra-TGE di luar 4 ronde di atas)?
+
+=== TERHUBUNG KE TEMUAN PHASE 2 & 3 — WAJIB DIJAWAB SECARA FINANSIAL DI SINI ===
+Dari Phase 2: FTX Recovery Trust menggugat LayerZero Labs untuk memulihkan **$70 juta investasi ekuitas**
+dan **$41 juta transfer preferensial (clawback)** — total exposure finansial ~$111 juta.
+Dari Phase 3: proses hukum berjalan September 2023 (filing) hingga Maret 2024 (penyelesaian briefing atas
+Motion to Dismiss), dan LayerZero disebut sempat membeli balik (buyback) saham ekuitas FTX.
+PERTANYAAN FINANSIAL YANG BELUM TERJAWAB:
+- Bagaimana status litigasi ini SEKARANG (2026)? Menang, kalah, settlement (berapa nilainya kalau ada),
+  atau masih berjalan?
+- Apakah LayerZero benar-benar membayar kembali sebagian/seluruh $111 juta itu? Berapa nilai buyback
+  ekuitas FTX yang disebut di Phase 3, dan dari mana dananya (treasury? ronde pendanaan baru?)?
+- Apakah ada dampak pada treasury/runway perusahaan akibat kewajiban hukum ini?
+
+=== FORMAT OUTPUT ===
+Untuk SETIAP ronde pendanaan, ulangi blok ini:
+Funding Round: <tipe>
+  Date: <value>  Amount: <value + mata uang>  Lead Investor: <value>
+  Participating Investors: <value>  Valuation: <value atau "tidak diungkapkan">
+---
+
+Lalu, sekali saja:
+Treasury Size: <value atau "tidak diungkapkan">
+Treasury Composition: <value>
+Revenue Model: <value>
+Revenue Figures: <value + tanggal, atau "tidak diungkapkan">
+Burn Rate: <value, atau "estimasi X — dasar perhitungan: ...", atau "tidak diungkapkan">
+Token Sale Structure: <syarat public/private sale + jumlahnya — BUKAN alokasi %, itu Phase 6>
+Runway Estimate: <value + dasar perhitungan, atau "tidak dapat dihitung">
+FTX Litigation Financial Impact: <ringkasan status terkini + angka riil yang dibayar/masih jadi
+  kewajiban, berdasarkan penyelidikan di atas>
+
+Open Threads
+- <hal yang masih belum pasti, bertentangan, atau perlu digali lebih lanjut>
+
+[+ FORMAT RULES yang sama seperti fase sebelumnya: Bahasa Indonesia, tanpa tabel, satu fakta per baris,
+Evidence + Evidence Level menempel LANGSUNG di tiap fakta (bukan daftar pustaka terpisah di akhir —
+ini sudah gagal 3 kali berturut-turut di fase sebelumnya, JANGAN diulangi), jangan mengarang, awali
+dengan "PROJECT: LayerZero"]
+```
+
+**Result:** pending — awaiting output.
