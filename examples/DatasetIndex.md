@@ -78,7 +78,7 @@ Intelligence non-trivial.
 
 | Project | Track | Phases done | Next phase | Notes |
 |---------|-------|--------------|------------|-------|
-| **LayerZero** | A (full 11) | none yet | **1 — Foundation Intelligence** (prompt dispatched, awaiting output) | Upgrade from existing `Pioneer/LayerZero.md` (Batch 02) to Deep tier. Chosen for its interconnection-heavy ecosystem (160+ chains — strong entity-graph test case) and the ZRO airdrop (Jun 2024) as real Behavioral Intelligence material, already linked as a P4 analog in `PatternRegistry.md`. |
+| **LayerZero** | A (full 11) | 1 — Foundation Intelligence (raw archived, format non-compliant — see note) | **2 — Entity Intelligence** | Upgrade from existing `Pioneer/LayerZero.md` (Batch 02) to Deep tier. Chosen for its interconnection-heavy ecosystem (160+ chains — strong entity-graph test case) and the ZRO airdrop (Jun 2024) as real Behavioral Intelligence material, already linked as a P4 analog in `PatternRegistry.md`. Phase 1 output was rich/well-sourced but narrative-form, not template-compliant (no Label:Value fields, no Open Threads heading, tables instead of bullets) — content preserved as-is in `doc_backup/inbox/phased/LayerZero/01-foundation.docx` (not yet run through `ingest.py`; holding until more phases land to avoid a partial Deep entry overlapping the existing Pioneer tier). Bonus content surfaced early (FTX/Alameda litigation, funding rounds, ZRO tokenomics, Kelp DAO exploit, V1/V2 architecture) earmarked for Phases 2/4/5/6/9 instead of being re-researched. |
 
 **When a phase completes:** update its row's "Phases done"/"Next phase" columns in the same commit as dropping
 the phase's raw `.docx` into `doc_backup/inbox/phased/LayerZero/`. Once all phases planned for the Track are
