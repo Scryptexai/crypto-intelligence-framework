@@ -620,6 +620,66 @@ Keluarkan hasil lengkapnya (15 event + Open Threads + Kesimpulan Strategis + Kar
 tanpa penjelasan tambahan.
 ```
 
+**Result:** failed worse than attempt 2 on the core objective, improved on scope preservation. Verified
+by grep: 0 matches for "Evidence" and 0 matches for inline `[sumber N]` tags anywhere in the 13
+pre-existing events — the model reproduced them near-verbatim with no citation attempt at all (not even
+attempt-2's fallback placeholder). The 2 new events got bare `(HIGH)` tags on their bullet points but
+still zero `[sumber]` references — untraceable. Structural defect: **two separate "Karya yang dikutip"
+sections** appended (one unnumbered ~30-source list resembling the original bibliography, one numbered
+~19-source list of new sources) — never merged, inconsistent formatting. Improvement: "Open Threads" (4
+items) and "Kesimpulan Strategis" **did** survive verbatim this time (regression fixed from attempt 2).
+Not committed to the repo.
+
+**Root-cause read:** inline per-sub-field citation across a ~150-citation-point document (15 events ×
+~10 sub-fields) appears to exceed reliable single-pass execution for this task — the same class of task
+(Phase 1, ~20 fields; Phase 4, 11 fields) succeeded when the field count was an order of magnitude
+smaller. Decision: descope attempt 4 to one `Evidence:` line per event (15 total, not per sub-field) —
+see below.
+
+## Phase 3 citation reformat, attempt 4 (drafted 2026-07-25, descoped after attempt-3 total citation failure)
+
+Descoped from per-sub-field inline citation (attempts 2 and 3, both failed on this specifically) to one
+`Evidence:` line per event — 15 total insertions instead of ~150. Reuses attempt-3's output as the base
+(content and Open Threads/Kesimpulan Strategis were sound, only citation is missing) and asks the model
+to do one narrow mechanical task: append one Evidence line per event drawing from the ~50 sources it
+already collected across its own two (currently unmerged) bibliography lists, and merge those two lists
+into one de-duplicated numbered list.
+
+```
+Tugas kamu sekarang HANYA MENGISI FIELD "Evidence:" pada dokumen timeline LayerZero di atas (dokumen
+"Phase 3 attempt-3" — 15 event, isinya sudah bagus dan lengkap, HANYA sitasinya yang kosong total).
+Ini BUKAN riset baru dan BUKAN reformat ulang isi.
+
+MASALAH: dokumen ini TIDAK PUNYA satu pun field "Evidence:" di 15 event-nya, dan tidak ada satupun tag
+[sumber N] di manapun — padahal dokumen ini sudah punya 2 daftar "Karya yang dikutip" berisi total
+~50 sumber (yang kamu kumpulkan sendiri sebelumnya) yang sama sekali tidak dihubungkan ke fakta manapun.
+
+TUGAS SEDERHANA KALI INI (skala lebih kecil dari percobaan sebelumnya, supaya benar-benar tuntas):
+Untuk SETIAP dari 15 event (jangan lewatkan satupun), tambahkan SATU baris baru persis setelah
+"Long-term Outcome:" event tersebut, dengan format:
+
+Evidence: [sumber X, sumber Y, sumber Z] — <nama singkat 1-3 sumber yang paling relevan untuk event
+ini, diambil dari salah satu dari 2 daftar "Karya yang dikutip" di akhir dokumen>
+
+ATURAN:
+- JANGAN ubah, hapus, atau tambah fakta apa pun di 15 event yang sudah ada — hanya SISIPKAN baris
+  "Evidence:" baru di akhir tiap event.
+- JANGAN ubah isi "Open Threads" atau "Kesimpulan Strategis" — salin ulang PERSIS sama.
+- GABUNGKAN 2 daftar "Karya yang dikutip" yang saat ini terpisah (baris tanpa nomor + baris bernomor)
+  menjadi SATU daftar bernomor berkelanjutan di akhir dokumen, hapus duplikat entri untuk URL yang sama.
+  Field "Evidence:" di tiap event WAJIB merujuk ke nomor dari daftar gabungan ini.
+- Pilih sumber yang PALING MASUK AKAL secara tematik untuk tiap event (contoh: event "Keruntuhan FTX"
+  → cari sumber yang membahas FTX/Alameda/kepailitan di daftar; event "Peluncuran Blockchain Zero" →
+  cari sumber yang membahas Zero blockchain/QMDB/FAFO). Kalau benar-benar tidak ada satupun sumber di
+  daftar yang relevan untuk sebuah event, tulis "Evidence: [tidak ada sumber spesifik di daftar —
+  perlu riset tambahan]" — tapi ini seharusnya jarang terjadi karena daftarnya sudah cukup lengkap.
+- Field ini TIDAK perlu granular per sub-bagian (Trigger/Context Snapshot/Decision/dst) — cukup SATU
+  baris Evidence per event, di bagian akhir event, seperti dicontohkan di atas.
+
+Keluarkan hasil lengkapnya (15 event dengan Evidence terisi + Open Threads + Kesimpulan Strategis +
+satu daftar Karya yang dikutip gabungan), tanpa penjelasan tambahan.
+```
+
 **Result:** pending — awaiting output.
 
 ## Phase 4 — Technology Intelligence (sent 2026-07-25)
