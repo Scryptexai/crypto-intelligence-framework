@@ -1038,3 +1038,125 @@ named future phase's prompt when drafted:**
 - **→ Phase 7 (Ecosystem Intelligence):** Tether launched USDT0 using LayerZero's OFT standard — needs a
   deeper integration-mechanics pass when Phase 7 is drafted (Phase 2 already has Tether as an entity, but
   the technical integration detail wasn't captured anywhere).
+
+## Phase 6 — Token Intelligence (drafted 2026-07-25)
+
+Context Pack: Phase 1 (full) + Phase 5 (full — needed in full here, not just an index, because Phase 6
+must reconcile its Burn Mechanism/Inflation-Deflation fields against Phase 5's buyback findings without
+contradicting them). Phase 2/3/4 not needed.
+
+Known facts injected are the ZRO Genesis Allocation figures carried forward from the Phase 1 v2→v3 trim
+(see that entry above), with the TGE price-drop figure corrected to match Phase 3's verified ~15%/~$2.87
+finding instead of the old unverified "$4.79→$3.39" figure. Explicitly asks the model to reconcile the
+Genesis Allocation's "Tokens Repurchased 4.00% (40M ZRO)" bucket against Phase 5's finding that 40M ZRO
+was returned to strategic partners as part of the Jan 2025 FTX settlement — same number, provenance not
+yet confirmed as the same event. Also asks it to determine whether Phase 5's two post-TGE buybacks
+(Sept 2025 50M ZRO, Nov 2025 $10M) burn supply or just move it to treasury — a tokenomics mechanics
+question Phase 5 didn't answer since it was out of that phase's scope (buyback economics, not token
+mechanics).
+
+```
+Menggunakan output Foundation Intelligence (Phase 1) dan Financial Intelligence (Phase 5) di atas sebagai
+konteks, bangun PROFIL TOKEN/TOKENOMICS untuk LayerZero (token ZRO). HANYA struktur token dan tata
+kelolanya — JANGAN ulangi detail ronde pendanaan ekuitas atau treasury (itu sudah selesai di Phase 5).
+
+=== YANG SUDAH DIKETAHUI — WAJIB DIPERDALAM DENGAN DETAIL, JANGAN CUMA DIULANG ===
+- Total Supply: 1.000.000.000 ZRO, hard-capped (fixed supply, bukan inflasionary)
+- Alokasi Genesis: Strategic Partners/Investors 32,20% (322.000.000 ZRO); Core Contributors/Team 25,50%
+  (255.000.000 ZRO); Community/Airdrop 38,30% (383.000.000 ZRO); Tokens Repurchased 4,00% (40.000.000 ZRO)
+- TGE (20 Juni 2024): 8,5% dari total suplai (85 juta ZRO) dapat diklaim saat peluncuran, sisanya dari
+  alokasi Community di-vest selama 36 bulan
+- Mekanisme klaim "Proof-of-Donation": pengklaim wajib mendonasikan $0,10/ZRO (USDC/USDT/ETH) ke Protocol
+  Guild sebelum bisa mengklaim porsi 8,5% awal; proyeksi total donasi ~$18,5 juta, dengan LayerZero
+  Foundation mencocokkan (matching) hingga $10 juta
+- Sybil Defense: sistem self-report (bounty alokasi 15%) + program bounty hunter untuk memfilter dompet bot
+  sebelum klaim
+- Reaksi pasar: harga ZRO turun ~15% dalam 24 jam menjadi ~$2,87 menyusul pengumuman Proof-of-Donation
+  (dikonfirmasi Phase 3 — BUKAN "$4,79 → $3,39 dalam 4 jam" yang beredar di draf-draf sangat awal dan
+  TIDAK terverifikasi; JANGAN pakai angka lama itu)
+
+=== TERHUBUNG KE TEMUAN PHASE 5 — WAJIB DIREKONSILIASI DI SINI ===
+Phase 5 menemukan bahwa sebagai bagian dari settlement litigasi FTX (31 Januari 2025), LayerZero
+mengembalikan **40 juta ZRO** ke mitra strategis — angka ini SAMA PERSIS dengan bucket "Tokens
+Repurchased 4,00%" di alokasi genesis di atas. KONFIRMASI apakah ini memang bucket yang sama (dialokasikan
+sejak genesis untuk skenario buyback semacam ini), atau kebetulan angka yang sama tapi asal-usulnya
+berbeda — JANGAN mengasumsikan tanpa mengecek sumber.
+
+Phase 5 juga menemukan DUA peristiwa buyback ZRO PASCA-TGE yang terpisah dari alokasi genesis di atas:
+- September 2025: buyback 50 juta ZRO (5% suplai) dari investor awal/mitra strategis, ~$150 juta gabungan
+  tahun berjalan (termasuk pembelian sekunder a16z $55 juta April 2025)
+- November 2025: buyback diskresioner LayerZero Labs $10 juta di pasar terbuka
+- Total: perusahaan menyatakan "$112,7 juta dideploy ke buyback ZRO sejak September 2025", mencakup
+  19,77% dari total suplai
+JELASKAN secara tokenomics: apakah token yang dibeli-balik ini DIBAKAR (burn, mengurangi total supply)
+atau disimpan di treasury Foundation/Labs (tidak mengurangi circulating supply tapi mengubah kepemilikan)?
+Ini krusial untuk field "Burn Mechanism" dan "Inflation/Deflation" di bawah — Phase 5 tidak menjawab
+pertanyaan ini karena di luar cakupannya (ekonomi buyback, bukan mekanisme tokenomics).
+
+=== YANG PERLU DICARI LEBIH DALAM (belum ada datanya) ===
+- Jadwal vesting PERSIS untuk kategori Team (cliff berapa lama, durasi vesting) dan Investors — belum
+  pernah tercatat spesifik di fase manapun sebelumnya
+- Mekanisme governance ZRO — apakah ada voting on-chain, delegasi, atau murni advisory? (Phase 5 mencatat
+  "referendum fee" dengan partisipasi 3,71%-13,01% — apakah ini SATU-SATUNYA mekanisme governance ZRO,
+  atau ada mekanisme lain di luar fee-switch voting?)
+- Status "Fee Switch" per hari ini — Phase 5 mencatat status ini DIPERDEBATKAN antar sumber sekunder
+  (sebagian bilang aktif Desember 2025, sebagian bilang gagal kuorum ~40,6%) — CARI kepastian status
+  terkini dan mekanisme persis buyback-and-burn yang akan dijalankan begitu aktif
+- Holder concentration — berapa % suplai dipegang oleh top 10/50/100 wallet? Apakah data on-chain
+  tersedia (Etherscan token holder distribution, dsb)?
+- Apakah ada kategori alokasi genesis lain yang belum tercatat (advisor, ekosistem/grants, dst) di luar
+  4 kategori (Strategic Partners/Team/Community/Tokens Repurchased) yang totalnya sudah 100%? Jika sudah
+  100% tanpa sisa, konfirmasi ini eksplisit — jangan biarkan implisit.
+
+=== FORMAT OUTPUT ===
+Total Supply: <value> (Evidence Level) [sumber]
+Supply Type: <fixed|inflationary> (Evidence Level) [sumber]
+Distribution: <pecah jadi sub-bullet per kategori, MASING-MASING dengan sitasi sendiri>
+  - Community: <%> (<jumlah ZRO>) (Evidence Level) [sumber]
+  - Team: <%> (<jumlah ZRO>) (Evidence Level) [sumber]
+  - Investors: <%> (<jumlah ZRO>) (Evidence Level) [sumber]
+  - Tokens Repurchased: <%> (<jumlah ZRO>) (Evidence Level) [sumber]
+  - <kategori lain jika ada>: <%> (Evidence Level) [sumber]
+Allocation - Team: <cliff, durasi vesting> (Evidence Level) [sumber]
+Allocation - Investors: <cliff, durasi vesting> (Evidence Level) [sumber]
+Allocation - <kategori lain>: <cliff, durasi vesting> (Evidence Level) [sumber]
+TGE Unlock: <% dari total suplai + kategori mana yang unlock> (Evidence Level) [sumber]
+Emission Schedule: <value atau "n/a — fixed supply"> (Evidence Level) [sumber]
+Utility: <pecah jadi sub-bullet, satu utilitas per baris, MASING-MASING dengan sitasi sendiri>
+Governance Mechanism: <value — pecah jadi sub-bullet jika lebih dari 2 kalimat> (Evidence Level) [sumber]
+Inflation/Deflation: <value — rekonsiliasi dengan temuan buyback Phase 5 di atas> (Evidence Level) [sumber]
+Burn Mechanism: <value atau "none" — jelaskan status Fee Switch terkini> (Evidence Level) [sumber]
+Holder Concentration: <value atau "belum dapat diukur"> (Evidence Level) [sumber]
+Notable Token Flow: <value atau "n/a" — termasuk 2 buyback pasca-TGE dari Phase 5 jika relevan secara
+  tokenomics> (Evidence Level) [sumber]
+Status: <live|planned/pre-TGE>
+
+Open Threads
+- <hal yang masih belum pasti, bertentangan, atau perlu digali lebih lanjut>
+
+=== ATURAN FORMAT (berlaku untuk seluruh jawaban) ===
+- Tulis dalam BAHASA INDONESIA. Yang TIDAK diterjemahkan: nama produk/teknologi, nama orang, nama
+  perusahaan, nama chain, dan URL.
+- Ikuti template output di atas PERSIS — label field yang sama, urutan yang sama. Jangan reformat jadi
+  prosa, jangan ganti nama field, jangan urutkan ulang.
+- JANGAN gunakan tabel sama sekali.
+- Satu fakta per baris. Tanggal lengkap, angka dengan satuan. Jangan membulatkan atau menghilangkan angka.
+- Sebuah field TIDAK PERNAH berupa paragraf. Kalau isi yang mau ditulis lebih dari ~2 kalimat, WAJIB
+  dipecah jadi sub-bullet di bawah label itu — satu klaim per sub-bullet, masing-masing diakhiri Evidence
+  Level + sumbernya sendiri.
+- JANGAN mengarang. Kalau tidak diketahui/tidak dapat diverifikasi, tulis "tidak diketahui" — jangan
+  menebak atau mengisi kekosongan dengan klaim yang terdengar masuk akal tapi tidak bersumber.
+- Kalau sebuah klaim diperdebatkan oleh sumber berbeda, catat eksplisit ("Sumber A bilang X, Sumber B
+  bilang Y") — jangan diam-diam memilih salah satu.
+- Sitasi WAJIB menempel di SETIAP fakta, di baris yang sama — bukan daftar pustaka di akhir. Daftar sumber
+  di akhir tanpa kaitan per-fakta TIDAK bisa diterima.
+- Evidence Level (HIGH/MEDIUM/LOW) di setiap klaim signifikan.
+- Contoh gabungan: "Team: 25,50% (255.000.000 ZRO) (HIGH) [LayerZero Foundation blog, https://...]"
+- JANGAN menganalisis atau berspekulasi soal kausalitas di luar cakupan fase ini — itu tugas fase Behavioral
+  nanti.
+- Awali output dengan: PROJECT: LayerZero
+- Akhiri dengan heading "Open Threads" berisi daftar hal yang masih belum pasti/bertentangan/perlu digali
+  lebih lanjut.
+```
+
+**Result:** pending — awaiting output.
