@@ -114,7 +114,22 @@ employees (27 core engineering, 16 go-to-market), from employment-intelligence s
 Minor format deviation (not a data-loss issue): each entity's fields are joined into one paragraph rather
 than one field per line as the template specifies. Noted for the Phase 3 prompt; not worth a re-run.
 
-**Still not run through `ingest.py`** — holding until more phases land (same reason as Phase 1).
+**Ingest status — explicit, so this never becomes ambiguous later:**
+- `poc/cif.json` **right now** still reflects only the OLD `examples/Pioneer/LayerZero.md` (Summary tier,
+  Batch 02) — none of Phase 1–2's research has entered CIF's live dataset yet. This is deliberate, not an
+  oversight: running `tools/ingest.py` before the Track is substantially complete would create a partial
+  Deep entry in `examples/CaseStudies/` that overlaps tiers with the still-live Pioneer entry.
+- **Trigger to finally ingest:** once all 11 Track A phases are done (or the maintainer explicitly decides
+  fewer is "good enough" for this project). Not before.
+- **Every prompt actually sent** (with LayerZero-specific injected context, not just the generic template)
+  is logged verbatim in `doc_backup/inbox/phased/LayerZero/PROMPTS-LOG.md` — so the exact ask behind any
+  raw output is always reconstructable, not just the output itself.
+- `tools/ingest.py`'s `process_phased_project()` now detects the same cross-tier overlap `process_deep()`
+  already handled for single-shot dossiers (2026-07-25 fix) — when this project is finally ingested, the
+  assembled dossier will automatically get a `**Supersedes:** examples/Pioneer/LayerZero.md` note and the
+  console output will flag it, exactly like the V1→V2 queue's projects do. It will **not** auto-delete the
+  Pioneer file — that removal is a maintainer decision made once the Deep dossier is confirmed complete,
+  same policy as the rest of this document.
 
 **Lesson recorded for future reformat passes:** asking an LLM to reformat its own output does preserve
 numbers reliably but drops incidental named entities mentioned in prose. Either diff every reformat against

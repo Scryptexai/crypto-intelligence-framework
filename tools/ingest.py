@@ -292,6 +292,10 @@ def process_phased_project(folder: Path, force: bool, dest_dir: Path = None):
         body_md.append("\n## Open Questions\n" + "\n".join(f"- {t}" for t in all_threads))
 
     missing = [k for k in PHASE_KEYS if k not in phases]
+    summary_dup = find_existing(DEST["batch"], name)
+    supersede_note = (f"\n**Supersedes:** `examples/Pioneer/{summary_dup.name}` — same project now exists as "
+                       f"a fuller Deep dossier; the Summary is redundant and should be reviewed for removal "
+                       f"(not auto-deleted)." if summary_dup else "")
     head = (
         f"# {name} — Deep Case Study (Phased)\n\n"
         f"**CIF Dataset — Deep Dossier · Tier: Deep (anchor project)**\n"
@@ -300,7 +304,7 @@ def process_phased_project(folder: Path, force: bool, dest_dir: Path = None):
         f"(deterministic, no LLM) — each phase extracted and concatenated in dependency order per "
         f"`docs/Protocol/Deep-Research-Brief.md`; the reasoning is the source reports'.\n"
         f"**Raw sources archived:** {', '.join(archived)}.\n"
-        f"**Phases not run:** {', '.join(missing) if missing else 'none'}.\n\n"
+        f"**Phases not run:** {', '.join(missing) if missing else 'none'}.{supersede_note}\n\n"
         f"> Faithful concatenation of phase outputs — no fabrication, no distillation beyond what the "
         f"Conflict Resolution phase itself states. Consider a periodic QC pass.\n\n---\n"
     )
@@ -308,6 +312,8 @@ def process_phased_project(folder: Path, force: bool, dest_dir: Path = None):
     msg = f"{len(order)} phases -> {out.relative_to(ROOT)}"
     if unmatched:
         msg += f"  ⚠ unmatched files: {', '.join(unmatched)}"
+    if summary_dup:
+        msg += f"  ⚠ supersedes Pioneer/{summary_dup.name}"
     return [("ok", name, msg)]
 
 def gather_phased_projects(inputs=None):
