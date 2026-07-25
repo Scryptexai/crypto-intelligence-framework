@@ -226,6 +226,55 @@ Search-first over the maintainer-curated catalog (§4) — not a live classifica
 sit next to a report as an optional explainer ("Ask AI about this report"), never as the analysis engine
 itself.
 
+## 10. Phase 2 scope — Supabase sync (scoped 2026-07-24, not yet built)
+
+Scoped against the live `airdropos-pro` Supabase project (`szumyjuvfjkobvcqswwd`). Key finding: **every
+existing AirdropOS table is per-user, RLS-scoped to `auth.uid()`** (`research_reports`, `projects`, `accounts`,
+etc. — each user only ever sees their own rows). CIF's data is structurally different: it is **one shared
+catalog every user reads**, not something any user owns. This is the central design decision Phase 2 must get
+right — CIF's tables need **read-for-everyone, write-only-via-sync** RLS, not the per-user pattern the rest of
+the schema uses.
+
+### 10.1 New tables (CIF-owned, additive — nothing existing is altered)
+
+- **`cif_projects`** — one row per project. `id` (text, the CIF slug), `name`, `category` (text[]),
+  `pattern_confidence` (int), `trajectory_probability` (int), `is_todays_pick` (bool), `observable` (jsonb —
+  the verified-now metric tiles), `current_read` (text), `signal` (jsonb, nullable), `evidence` (jsonb — the
+  cited pattern cards), `comparables` (jsonb), `tier` (deep/summary, mirrors CIF's own tiering),
+  `source_file` (text — the CIF dossier path, for traceability), `synced_at`.
+- **`cif_patterns`** — standalone, mirrors `examples/PatternRegistry.md` 1:1 (`id` "P1".."P6", `name`,
+  `confidence`, `instances`, `scope`, `analogs` text[], `source`, `watch` text[], `pred`, `val`, `synced_at`).
+  Kept separate from `cif_projects.evidence` (rather than only embedded there) so the standalone Patterns
+  Library page can query it directly.
+- **`cif_backtests`** — mirrors `poc/benchmarks.json`, feeds the Phase 4 public Track Record page: `title`,
+  `type` (validation/consistency/control), `category`, `outcome`, `source`, `verdict`, `recall`, `as_of_note`,
+  `event_date`, `synced_at`.
+
+RLS on all three: enabled, with a `SELECT` policy for `authenticated` (open question below: also `anon`, for a
+truly public Track Record page). **No `INSERT`/`UPDATE`/`DELETE` policy for any client role** — writes happen
+only via the sync script using the Supabase **service_role** key, which bypasses RLS.
+
+### 10.2 Sync mechanism
+New script `tools/sync_supabase.py` in **this** repo (not AirdropOS) — reads `poc/cif.json`, upserts into the
+three tables above. `SUPABASE_URL`/`SUPABASE_SERVICE_ROLE_KEY` stay as local env vars, never committed, same
+treatment as the research prompts (see `Deep-Research-Brief.md`). Wired into `run.sh` as an explicit opt-in
+step (`./run.sh sync`), not automatic on every build — pushing to a live production database shouldn't be a
+silent side-effect of a routine local build.
+
+### 10.3 Frontend swap (AirdropOS)
+Replace `frontend/src/lib/cifMock.js` reads in `Intelligence.jsx`/`IntelligenceDetail.jsx` with real
+`supabase.from('cif_projects')...` calls via a new thin `lib/cifData.js`, mirroring the existing `lib/db.js`
+pattern — same component code/props shape, so this is a data-layer swap, not a UI rewrite. Retire the orphaned
+`deep-research`/`research-project` edge functions and `research_reports` table in the same change (§5).
+
+### 10.4 Open questions
+- Public (`anon`) read access for the Track Record page vs. requiring login — affects whether §3.3's "public"
+  page is actually public.
+- "Today's Pick" selection rule — not yet decided; simplest default is top of the Opportunity Ranking, rotated
+  daily by the sync script.
+- Sync cadence — manual `./run.sh sync` only, or also scheduled (e.g. a cron trigger) so AirdropOS updates
+  without the maintainer remembering to run it by hand.
+
 ## Related Files
 
 `examples/DatasetIndex.md` (V1→V2 Upgrade Queue — separate, data-hygiene track, not blocked by this),
