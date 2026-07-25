@@ -4,9 +4,11 @@ This is the **contract** the framework expects deep reports to follow — the **
 Gemini deep report arrives in, so the `Ingest-Deep` role (and `tools/ingest.py`) map its output losslessly.
 Read this before ingesting any deep report.
 
-> The actual paste-ready **research prompt** (the "you are …, produce …" text sent to Gemini) is an external
-> working tool kept in the maintainer's local files — intentionally **not** stored in the repo. This file keeps
-> only the contract; any prompt must produce output that conforms to it.
+> The paste-ready **research prompt** for the v1/v2 single-shot formats is an external working tool kept in
+> the maintainer's local files — intentionally **not** stored in the repo. This file keeps only the contract;
+> any prompt must produce output that conforms to it. **Exception (2026-07-25):** the Format v3 phased-pipeline
+> prompts below ARE stored in the repo, deliberately reversing this rule for that pipeline only — see
+> `docs/Protocol/Phased-Research-Prompts.md` for why and for the actual prompt text.
 
 **Audience of the output = AI reasoning, not human readers.** Every fact must be *Reusable Knowledge*: it
 must answer **APA · MENGAPA · BAGAIMANA · APA DAMPAKNYA · APA PELAJARANNYA · APA HUBUNGANNYA DENGAN INDUSTRI**.
@@ -160,6 +162,9 @@ that heading is the phase's content body. `tools/ingest.py --type phased` (or th
 plain `tools/ingest.py`) detects phase files by filename, extracts each via the existing table-aware
 `tools/extract.py`, and assembles one dossier in dependency order — collecting every phase's Open Threads into
 the dossier's final Open Questions section.
+
+**The actual paste-ready prompt text for every phase — both the full Track A (large/anchor projects) and the
+condensed Track B (small/young projects) — lives in `docs/Protocol/Phased-Research-Prompts.md`.**
 
 ## The 22 sections (input contract)
 
