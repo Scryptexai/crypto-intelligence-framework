@@ -433,7 +433,15 @@ Mulai sekarang, keluarkan hasil perbaikannya saja (seluruh 11 field, lengkap), t
 tambahan.
 ```
 
-**Result:** pending — awaiting output.
+**Result:** citation quality was strong — all 11 fields broken into one claim per line, each with
+Evidence Level + `[sumber N, domain]`, correctly cross-referenced to the existing 21-source bibliography
+(verified: source numbers in the output match the original list, e.g. `[sumber 15, chaincatcher.com]` →
+entry 15 = ChainCatcher). One real defect: the reformat pass **silently dropped the "Open Threads" (3
+items) and "Karya yang dikutip" (21-source bibliography) sections** from the end of the document —
+violates its own "JANGAN hapus fakta apa pun" rule, and without the bibliography the inline `[sumber N]`
+tags are undecodable in isolation. Fixed by direct patch (no new Gemini round-trip needed, since the
+dropped content was unchanged verbatim text, not new research): both sections appended back from the
+pre-reformat source. **Active file:** `doc_backup/inbox/phased/LayerZero/04-technology.docx`.
 
 ## Phase 5 — Financial Intelligence (sent 2026-07-25; REVISED same day — see note below)
 
