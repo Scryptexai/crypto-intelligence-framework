@@ -335,6 +335,291 @@ ada di baris terpisah, bukan digabung jadi satu paragraf. Urutkan seluruh 15 eve
 Mulai sekarang, keluarkan hasil lengkapnya (seluruh 15 blok event), tanpa penjelasan tambahan.
 ```
 
+**Result:** failed on its own core objective. All 13 pre-existing events received the fallback
+placeholder ("[sumber tidak dapat diverifikasi ulang — perlu riset tambahan]") on **every single
+field with no exception** — the model never actually attempted a source search, it just applied the
+escape hatch universally. The 2 new events were researched well (Zero blockchain launch, DVN systemic
+security fix) but the citation FORMAT regressed to the exact single-Evidence-line-at-the-end pattern
+the prompt explicitly called out as the failure to avoid. The "Open Threads" (4 items) and "Kesimpulan
+Strategis" sections from the source document were also silently dropped. Not committed to the repo —
+see the attempt-3 prompt below.
+
+## Phase 3 citation reformat, attempt 3 (drafted 2026-07-25, addressing attempt-2's fallback overuse)
+
+Same objective as attempt 2, but: (1) explicitly caps fallback-placeholder usage to "a small minority
+of fields, not the majority or all of them" since attempt 2 applied it universally instead of actually
+searching; (2) the 2 new events are pasted in **already drafted** (verbatim from attempt 2's own
+research, which was sound) so the model only has to fix their citation format, not re-research them —
+removes the room for it to reintroduce the same single-Evidence-line failure while "researching"; (3)
+explicitly requires Open Threads + Kesimpulan Strategis to survive, unchanged; (4) requires the source
+list (Phase 3's 21 + Phase 4's 21) to be merged and de-duplicated at the end. Requires both the
+pre-reformat Phase 3 draft (`Riset_Timeline_Kronologis_LayerZero.docx`) and the patched Phase 4 file
+(`04-technology.docx`, since it demonstrates the correct inline-citation format and is the source for
+the 2 new events) as context.
+
+```
+Tugas kamu: perbaiki dokumen timeline historis LayerZero (dokumen "Phase 3 LAMA" — 13 event tanpa
+sitasi) dengan MENAMBAHKAN SITASI NYATA per sub-bagian, DAN menambahkan 2 event baru yang sudah
+didraf di bawah (Peluncuran Zero blockchain 10 Feb 2026, dan Modifikasi Keamanan Sistemik DVN Mei 2026).
+
+KEGAGALAN PADA PERCOBAAN SEBELUMNYA — WAJIB DIHINDARI:
+Pada percobaan sebelumnya, SEMUA field di ke-13 event menerima teks placeholder
+"[sumber tidak dapat diverifikasi ulang — perlu riset tambahan]" tanpa terkecuali — seolah tidak ada
+satu pun sumber yang dicari. Ini TIDAK BOLEH terulang. Placeholder ini HANYA untuk kasus genuinely
+tidak ada sumber yang bisa ditemukan setelah kamu benar-benar mencari — perkiraan realistis adalah
+placeholder ini muncul di SEBAGIAN KECIL field saja (mungkin 1-3 dari puluhan field total), bukan
+mayoritas atau semuanya. Gunakan sumber yang sudah ada di daftar "Karya yang dikutip" dokumen Phase 3
+LAMA (21 sumber) sebagai titik awal pencarian, plus pencarian tambahan bila perlu.
+
+CARA MENGISI CITATION: tempelkan sumber LANGSUNG setelah sub-bagian yang relevan (Trigger, tiap
+sub-field Context Snapshot, Decision, Execution, Short-term Outcome, Long-term Outcome) — minimal 3
+titik sitasi per event, JANGAN satu field "Evidence:" tunggal di akhir blok.
+
+ATURAN MUTLAK UNTUK 13 EVENT LAMA:
+- JANGAN tambah fakta baru, JANGAN riset ulang isi faktanya, JANGAN hapus atau ubah kalimat yang sudah
+  ada — hanya SISIPKAN sitasi.
+- JANGAN HAPUS seksi "Open Threads" (4 poin) dan "Kesimpulan Strategis" di akhir dokumen Phase 3 LAMA —
+  salin ulang PERSIS sama seperti aslinya di akhir dokumen hasil (tidak perlu sitasi tambahan di
+  seksi ini, itu memang analisis reflektif bukan klaim faktual).
+
+UNTUK 2 EVENT BARU DI BAWAH: kontennya SUDAH BAGUS secara substansi (hasil riset percobaan
+sebelumnya, sudah diverifikasi detail dan akurat) — JANGAN riset ulang dari nol, JANGAN ubah faktanya.
+Tugasmu HANYA mengubah format sitasinya: dari satu "Evidence:" di akhir menjadi sitasi inline
+menempel di tiap sub-bagian sejak kalimat pertama, sama seperti gaya dokumen Phase 4 BARU yang
+terlampir (field-nya sudah tersitasi lengkap per klaim, jadikan itu contoh format yang benar). Untuk
+2 tabel di bawah (Konfigurasi Topologi "Zero" dan Gelombang Migrasi Institusional), ubah jadi bullet
+"Label: Isi (Evidence Level) [sumber]" satu baris per baris tabel — JANGAN pertahankan bentuk tabel di
+output akhir.
+
+=== EVENT BARU 1 ===
+Date: 10 Februari 2026
+Event: Peluncuran Blockchain "Zero" — Layer-1 Mandiri LayerZero (HIGH)
+Trigger: Adanya kebutuhan struktural dan urgensi teknologi dari arsitektur keuangan terdesentralisasi
+(DeFi) untuk memecahkan trilema skalabilitas (scalability trilemma) secara fisik, bukan sebatas
+rekayasa kriptografi di lapisan antarmuka. Batasan ekstrem pada throughput (kemampuan transmisi data)
+dan inefisiensi masif pada komputasi replikatif dari mesin virtual tradisional memaksa tim inti
+menciptakan fondasi jaringan yang mampu mendukung penyelesaian pasar institusional (Wall Street)
+secara on-chain dan nonstop (24/7). Menurut CEO Bryan Pellegrino, hambatan utama yang mencekik
+eskalasi tersebut adalah kapasitas penyimpanan lapisan dasar (storage layer constraints), di mana
+jaringan yang ada mewajibkan semua node untuk melakukan replikasi validasi secara homogen atas semua
+data.
+Context Snapshot:
+  Industry state: Sektor infrastruktur blockchain sedang mengkalibrasi ulang sasarannya ke Wall
+    Street, bertransisi dari taman bermain ritel menuju tulang punggung likuiditas global. Entitas
+    kliring raksasa konvensional seperti DTCC (yang merampungkan 99% penyelesaian sekuritas Amerika
+    Serikat), ditambah pembuat pasar terbesar Citadel Securities, serta ICE dan ARK Invest, secara
+    proaktif terjun menuntut arsitektur blockchain privat, cepat, dan sanggup beroperasi secara masif
+    melampaui hambatan geografis dan jam perdagangan reguler.
+  Competitor state: Lanskap dominan Layer-1 yang ada, seperti Ethereum atau Solana, dibangun atas
+    fondasi yang kaku secara komputasional (single-threaded dan homogen). Arsitektur ini menuntut
+    setiap validator mengulang eksekusi dari transaksi yang sama, yang meskipun mengamankan jaringan
+    secara konsisten, menciptakan plafon keras di mana jaringan terhebat (Solana) pun secara teoretis
+    mentok di ~100.000 transaksi per detik (TPS), membatasi utilitas aplikasi frekuensi tinggi
+    (High-Frequency Trading).
+  Tech maturity: Laboratorium riset LayerZero telah memantapkan landasan mutakhir untuk mematahkan
+    hukum batas tersebut melalui dua peluncuran riset radikal pada 2025. Yang pertama, makalah Quick
+    Merkle Database (QMDB) yang berhasil menyuntikkan basis data tambahan (append-only authenticated
+    database) yang mencetak tonggak 2,28 juta pembaruan keadaan (state updates) per detik di atas
+    ukuran tes 15 miliar entri (10x lipat dari state size seluruh Ethereum tahun 2024), dengan rasio
+    konsumsi memori hanya 2,3 byte per entri. Yang kedua, algoritma penjadwalan transaksi FAFO (Fast
+    Ahead-of-Formation Optimization) memacu kinerja multi-core hingga menembus 1,1 juta transfer
+    Ethereum murni per detik di lingkungan CPU tunggal.
+  Macro conditions: Stabilitas iklim ekonomi makro dan kelelahan aset inflasioner (fiat) menyebabkan
+    aliran kapital berbobot masif untuk menetap di ekosistem perpesanan lintas rantai. Hal ini
+    divalidasi oleh keputusan Tether Investments yang menanam modal setara nilai strategis tinggi di
+    ekosistem LayerZero pada hari yang sama, dipicu oleh capaian sirkulasi stablecoin perintis mereka,
+    USDt0, yang sanggup meroket melampaui $70 miliar perputaran total tanpa hambatan (frictionless)
+    selama 12 bulan terakhir. Ekosistem bergerak menjauh dari kebingungan bridging yang memperlambat
+    laju modal.
+  Hunter/user population: Di ranah ritel dan paus (whales), delegator kapital merasa kelelahan dan
+    terisolasi dari proses validasi (staking). Ada permintaan tinggi terhadap mekanisme staking tanpa
+    risiko kehancuran nilai (slashing risk) dari node yang melakukan kesalahan konfigurasi secara
+    teknis, suatu beban hantu (ghost liability) yang ditakuti dalam jaringan tradisional seperti
+    Ethereum Proof-of-Stake.
+  VC climate: Laporan alokasi investasi kuartal awal 2026 menegaskan minat hiperbolik perusahaan modal
+    ventura untuk mendanai infrastruktur yang membuktikan utilitas fundamental nyata, bukan sebatas
+    kerangka modul jembatan. Sektor ventura agresif beralih dari peluncuran L2 generik yang usang (OP
+    Stack forks) menuju pendanaan mesin validasi Zero-Knowledge (ZK) dan multi-core yang membawa
+    dampak deflasioner.
+  Narrative: Wacana pasar mengalami revolusi konseptual; dari "Jembatan Antar-Jaringan"
+    (Interoperability Protocol) yang memfasilitasi perjalanan, LayerZero bertransformasi menjadi
+    destinasinya sendiri—"Decentralized Multi-Core World Computer". Terbongkarnya narasi semu
+    desentralisasi (The Noble Lie) di jaringan lama membangkitkan tesis bahwa pengukuhan independensi
+    sejati sebuah rantai hanya dapat dicapai melalui validasi mikro (nano validators) yang
+    mendemokratisasikan sistem penyelesaian langsung kepada publik luas.
+Decision: Menghadapi konstelasi kekuatan finansial Wall Street dan kesiapan modul QMDB internal,
+kepemimpinan LayerZero Labs di bawah Pellegrino dan Zarick meresmikan keputusan ekstrem dan berisiko
+untuk tidak membatasi perusahaan sebagai lapisan interkoneksi belaka, melainkan bertransformasi
+menjadi pesaing langsung Layer-1 raksasa. Mereka menolak peta jalan sentralisasi, menyepakati
+arsitektur yang 100% immutable (tidak dapat diubah setelah implementasi basis), dengan arsitektur
+pemisahan (decoupled architecture) eksklusif antara mesin eksekusi operasional dengan utilitas
+verifikasi kriptografi ZK-Proofs.
+Execution: Jaringan Zero diluncurkan secara struktural dengan mengimplementasikan topologi yang
+memutus siklus redundan, melahirkan desain heterogen yang menyerupai cara kerja CPU multi-core modern.
+Node di jaringan dibagi ketat menjadi dua kasta yang koheren. Pertama, Block Producers (berkemampuan
+hardware skala perusahaan) yang bertugas mengeksekusi langsung rangkaian transaksi dan mencetak
+validasi ZK (Zero-Knowledge Proofs). Kedua, Block Validators (pengguna kasual dengan hardware
+konsumtif biasa) yang bertugas sebatas memverifikasi bukti kriptografi tersebut tanpa perlu meniru dan
+mengulang proses komputasi yang mahal, membuat beban keikutsertaan turun ke titik mendekati nol. Untuk
+pengamanan aset (staking), LayerZero menerapkan konsensus murni dan revolusioner Pure Delegated Proof
+of Stake (PDPoS). Secara radikal, arsitektur ini mencabut kewajiban minimal modal penjaminan
+(self-stake) dari validator dan sepenuhnya mengeliminasi risiko slashing di ranah lapisan konsensus;
+memastikan kepemilikan ritel tidak akan pernah disita akibat cacat pengoperasian node. Lebih mendalam,
+seluruh jaringan dimodularisasi menjadi "System Zone" khusus yang secara eksklusif memelihara
+stabilitas delegasi validator dan pergerakan token fundamental ZRO, terpisah secara logis dari
+"Atomicity Zones" paralel (dianalogikan sebagai aplikasi terpisah atau smart contracts) yang
+mengakomodasi transaksi finansial institusional eksternal.
+Detail arsitektur teknis (ubah jadi bullet bersitasi, JANGAN tabel):
+  - Quick Merkle Database (QMDB): Database append-only dengan arsitektur twig-based yang mereduksi
+    footprint menjadi 2,3 bytes/entri dengan 2,28 juta state updates/sec. Menembus plafon I/O-bound
+    komputasi jaringan; memfasilitasi finalisasi ultra-cepat yang mensyaratkan 1 juta TPS teoretis.
+  - Fast Ahead-of-Formation (FAFO): Lapisan optimisasi pra-blok (pre-block packing) untuk sinkronisasi
+    minimal pada pengoperasian Rust EVM client. Membabat kelumpuhan single-thread dengan linearitas
+    kinerja CPU multi-core; menghasilkan 1,1 juta transfer ETH murni/detik.
+  - Pure Delegated Proof of Stake (PDPoS): Kerangka konsensus tanpa minimum stake yang secara mutlak
+    menolak pemotongan penalti aset (no consensus-layer slashing). Melenyapkan kecenderungan
+    pemusatan kekuasaan (tokenomics-driven centralization), menjamin yield minim risiko untuk
+    delegator besar/ritel.
+  - The System Zone vs Atomicity Zones: Pemisahan (decoupling) antara zona operasional sistem inti
+    (peredaran ZRO/tata kelola) dan lingkungan zona kontrak pintar spesifik. Mengisolasi ledakan
+    transaksi aplikasi (DDoS) dari mengganggu validasi keandalan fundamental konsensus keseluruhan
+    jaringan.
+  - Block Validators & Nano Validators: Lapisan jaringan di mana node hanya diwajibkan untuk menguji
+    kebenaran ZK Proofs ketimbang mengulang rekam jejak eksekusi dari nol. Merealisasikan
+    desentralisasi sejati melalui penghancuran rasio biaya masuk (infrastructure barriers); komputasi
+    berat diserahkan ke Producers.
+Short-term Outcome: Demonstrasi kemampuan publik ini melepaskan gelombang euforia valuasi yang tajam
+terhadap aset perbendaharaan dasar mereka. Model insentif token ZRO direstrukturisasi secara instan
+dengan janji aktivasi skema "Fee Switch" pasca-peluncuran. Skema ini mengarahkan persentase pajak
+perpesanan lintas jaringan langsung menuju pusaran siklus penyerapan pembelian kembali dan pembakaran
+suplai (buyback and burn), mengubah token ZRO dari aset pemerintahan nir-pendapatan (yang hanya
+bersandar pada spekulasi hasil utilitas kelak) menjadi jangkar ekonomi berkarakteristik deflasi
+(deflationary pressure) yang sangat menguntungkan di pasar.
+Long-term Outcome: Dengan proyeksi penyebaran mainnet pada momentum musim gugur 2026, LayerZero
+membingkai posisi absolutnya bukan semata memonopoli integrasi rantai melainkan membangun infrastruktur
+pasar modal masa depan. Dukungan arsitektur institusional dari raksasa seperti DTCC dan Citadel
+meletakkan prasyarat absolut untuk mendisrupsi dominasi bursa sentral (Wall Street), di mana efisiensi
+ZK-Proofs dan keandalan multi-core akan mengakomodasi triliunan dolar volume perdagangan yang mengalir
+selama 24 jam sehari, 7 hari seminggu dengan privasi yang sebelumnya mustahil dijamin jaringan publik.
+Sumber mentah yang tersedia (petakan ke sub-bagian yang sesuai, jangan taruh sebagai satu blok akhir):
+Publikasi Resmi LayerZero Labs "Zero Blockchain Announcement" (Februari 2026); Dokumen Teknis Zero
+Positioning Paper; Repositori Arsitektur Riset QMDB dan FAFO (arXiv); LayerZero Unveils Zero Blockchain
+To Revolutionize Wall Street - Evrim Ağacı; Zero - LayerZero Docs (docs.layerzero.network/chain);
+arXiv:2501.05262v3 [cs.NI]; QMDB All The Things - commonware.xyz; FAFO whitepaper (arxiv.org/pdf/2507.10757
+dan layerzero.network/publications/FAFO_Whitepaper.pdf); Tether Bets Big on LayerZero - Earnpark; Zero:
+Technical Positioning Paper - layerzero.network/blog/zero-technical-positioning-paper.
+
+=== EVENT BARU 2 ===
+Date: Mei 2026
+Event: Modifikasi Keamanan Sistemik DVN dan Eksodus Migrasi Klien Jembatan (HIGH)
+Trigger: Ekosistem kriptografi didera kepanikan dan guncangan (trust collapse) destruktif menyusul
+keberhasilan eksploitasi peretasan senilai $292 juta yang secara kejam menguras perbendaharaan 116.500
+aset rsETH dari jembatan lapisan likuiditas Kelp DAO pada bulan April 2026 (catatan tanggal: insiden
+Kelp DAO utama sudah tercatat di timeline sebagai April 2024 — verifikasi ulang apakah ini insiden yang
+sama dirujuk-ulang di 2026 pasca litigasi, atau insiden Kelp DAO KEDUA yang terpisah di April 2026; jika
+ambigu, tandai sebagai "(konflik/perlu verifikasi tanggal)" dan JANGAN memilih salah satu tanpa bukti).
+Analisis forensik dan intelijen jaringan secara cepat mengonfirmasi bahwa kerentanan berasal dari
+serangan Remote Procedure Call (RPC) beracun, didalangi oleh kelompok peretas proksi negara-bangsa
+(Lazarus Group asal Korea Utara), yang berhasil meretas relai karena Kelp DAO menetapkan asumsi
+keamanan secara fatal. Mereka menerapkan arsitektur validasi "1-of-1", di mana protokol itu secara
+sepihak menyandarkan verifikasinya hanya pada jaring pengaman tunggal Decentralized Verifier Network
+(DVN) kepunyaan LayerZero Labs, tanpa mengonfigurasi validator sekunder atau redundansi penyeimbang
+sama sekali.
+Context Snapshot:
+  Industry state: Paradigma sentimen dari keamanan protokol (bridge security) tengah bermigrasi dari
+    narasi euforia pertumbuhan teknis menuju realitas asuransi perlindungan asimetris. Insiden
+    tersebut menjadi titik puncak kesabaran di mana institusi bervolume besar mulai menghitung ulang
+    bahwa premi operasional atas jembatan yang tersertifikasi enterprise-grade jauh lebih murah
+    ketimbang kehilangan miliaran dolar semalaman (zero-day wipeout).
+  Competitor state: Manuver tanpa ampun dilancarkan oleh protokol interoperabilitas kompetitor seperti
+    Chainlink CCIP, yang dengan sigap memanipulasi kecemasan ini menjadi senjata akuisisi klien.
+    Mengedepankan fitur pemblokir kecepatan bawaan (built-in rate limits) dan jaringan tepercaya dari
+    16 node entitas independen yang keamanannya telah diganjar sertifikat kelayakan kontrol komersial
+    (ISO 27001 dan SOC 2 Type II), Chainlink menancapkan hegemoni kepercayaan baru di atas keruntuhan
+    citra LayerZero.
+  Tech maturity: Tesis modularitas dari infrastruktur (LayerZero V2) yang sempat dipuja karena
+    menjunjung fleksibilitas Keamanan Milik Aplikasi (Application-Owned Security) kini terbongkar
+    fatalitasnya. Filosofi desain yang memberikan kebebasan kustomisasi 100% bagi developer klien
+    (dApps) tersebut secara empiris menjadi pisau bermata dua saat pengembang yang naif atau
+    menghemat biaya (cost-cutting) justru gagal memahami kedalaman ancaman (threat modeling) dan
+    tidak menerapkan perlindungan fundamental.
+  Macro conditions: Pertumbuhan ekstrem dari instrumen Restaking dan ekosistem agregat Bitcoin DeFi
+    (BTCfi) menumpuk miliaran kapital riil yang terpapar pada arsitektur penyelesaian perpesanan
+    (settlement messaging). Keruntuhan titik temu ini bukan sekadar hilangnya dana tunggal, melainkan
+    dapat menginjeksi triliunan utang macet (bad debt) ke tulang punggung platform pinjaman besar
+    (misal Aave).
+  Hunter/user population: Gelombang pesimisme ritel dan kepanikan modal meledak. Aktor finansial dari
+    investor malaikat hingga entitas pengelolaan mandiri menarik keluar likuiditas lintas batas
+    dengan panik dari ekosistem yang dibangun menggunakan pelengkap jaringan LayerZero yang belum
+    dievaluasi ulang konfigurasinya.
+  VC climate: Laporan komite manajemen risiko pemodal ventura (VC compliance board) merespons
+    histeria eksploitasi Kelp DAO dengan memaksakan perombakan protokol terhadap anak-anak perusahaan
+    inkubasi mereka, menitahkan migrasi ke infrastruktur jembatan mana pun yang mampu meredam
+    atribusi hukum akibat penipuan simpul tunggal (single point of compromise).
+  Narrative: Sektor Web3 secara vokal mendeklarasikan akhir dari kemewahan doktrin "Kode Bukan
+    Tanggung Jawab Infrastruktur" (laissez-faire architecture). Publikasi dan opini menuntut bahwa
+    penyedia perangkat lunak middleware tidak lagi pantas sekadar menjual alat; mereka wajib berperan
+    sebagai sipir yang memaksakan standar keselamatan wajib minimal (guardrails) bagi integrasi smart
+    contract.
+Decision: Mengikuti eskalasi kebuntuan publik di mana entitas korporasi sempat secara reaktif
+melemparkan beban tanggung jawab atas cacat peracunan semata-mata pada keteledoran konfigurasi Kelp
+DAO ("1-of-1"), direksi eksekutif LayerZero Labs mengambil rute putar balik. Untuk menstabilkan
+reputasi yang tergerus, mereka mengeluarkan deklarasi pengakuan resmi, menyadari "kesalahan kami" (we
+made a mistake) dalam membiarkan DVN milik lab memvalidasi aset bernilai hiperbolik tanpa pengawasan,
+serta menetapkan kebijakan penarikan dukungan untuk konfigurasi fatal sekelas itu tanpa kompromi.
+Execution: Pagar perlindungan sistemik diinjeksi secara vertikal. LayerZero menyebarkan patch pada
+lapisan akar klien (endpoints), mencabut (deprecate) opsi konfigurasi otorisasi "1-of-1" jika jaringan
+verifikator yang digunakan adalah DVN kelolaan LayerZero Labs. Mereka memaksakan prasyarat tata letak
+keamanan (security default) minimum untuk jalur perlintasan utama (high-value corridors) ke standar
+konsensus "5-of-5", dan memberikan standar relaksasi absolut minimum "3-of-3" bagi rantai kecil yang
+miskin ketersediaan verifikator komersial. Pada audit server proksi dalam (internal hygiene), mereka
+menyingkirkan kunci pemegang multi-sig kuno (salah satu penandatangan kedapatan ceroboh pernah
+menggunakan peranti dompet keras yang sama untuk transaksi pribadi tiga tahun lampau), mengganti
+seluruh tata rotasi otorisasi kriptografis, menanamkan pertahanan deteksi anomali pada tingkat mesin
+(localized anomaly detection), serta mengaktifkan ekosistem multi-sig baru bernama OneSig.
+Detail eksodus institusional (ubah jadi bullet bersitasi, JANGAN tabel):
+  - Kelp DAO: melakukan re-rute bridging untuk aset sisa rsETH akibat kerusakan hubungan dan sengketa
+    publik atribusi pasca malapetaka peretasan 116.500 aset rsETH → migrasi ke Chainlink CCIP.
+  - Solv Protocol: merelokasi $700 juta instrumen Bitcoin-backed (SolvBTC, xSolvBTC) demi proteksi
+    infrastruktur dari isolasi konsensus jaringan 16 node bersertifikat CCIP → migrasi ke Chainlink
+    CCIP.
+  - Re.xyz: mengalihkan $475 juta parameter TVL institusional untuk bersandar pada mekanisme
+    peredaman intrinsik batas laju (rate limit) di jaringan baru → migrasi ke Chainlink CCIP.
+  - Kraken Exchange: memboikot utilitas LayerZero pada jembatan antarmuka spesifik (termasuk wrapped
+    token kBTC) karena obsesi kepatuhan dan mandat sertifikasi keselamatan tipe SOC 2 → migrasi ke
+    Chainlink CCIP.
+  - Lombard: bergabung meruntuhkan likuiditas untuk menyelamatkan nilai di tengah iklim kerentanan dan
+    ketidakstabilan arsitektur konfigurasi yang menular (contagion fear) → migrasi ke Chainlink CCIP.
+Short-term Outcome: Eksekusi permintaan maaf dan perbaikan keamanan ini terlambat membius luka
+industri. Kejadian ini melahirkan krisis migrasi paling masif di sektor Layer-0. Arus keluar kapital
+agregat senilai lebih dari $4 miliar USD tumpah ruah dieksoduskan ke arah infrastruktur kompetitor,
+Chainlink CCIP, dipimpin oleh raksasa-raksasa manajemen modal seperti Lombard, Re.xyz, Kraken (yang
+memindahkan kBTC), dan Solv Protocol, meruntuhkan pangsa retensi eksklusivitas jaringan LayerZero.
+Long-term Outcome: Merupakan fase transisi de-facto di mana "Kebebasan Penuh" dari aplikasi yang
+memanfaatkan protokol infrastruktur interoperabilitas secara definitif berakhir. Ini memaksa arsitektur
+LayerZero V2 berevolusi dari sekadar landasan pacu netral menjadi instrumen fasilitator yang bertangan
+besi (paternalistic), memastikan masa depan penyatuan rantai blok tidak lagi bergantung pada kemahiran
+tunggal dari rekayasawan pihak ketiga, dan menancapkan keandalan konfigurasi multisig (minimal 5-of-5
+DVN) sebagai konstitusi wajib tak tergantikan untuk perpesanan finansial di dekade mendatang.
+Sumber mentah yang tersedia (petakan ke sub-bagian yang sesuai, jangan taruh sebagai satu blok akhir):
+Catatan Publik "Admitting Mistake" oleh LayerZero Labs (Mei 2026); LayerZero Backtracks After $292M
+Kelp Hack, Admits Mistake and Tightens DVN Security - Binance Square; rsETH 攻击事件完整时间线#195 -
+qiwihui/blog - GitHub; Lombard joins Chainlink CCIP as LayerZero exodus tops $4b - Bitget News;
+LayerZero Says It 'Made a Mistake' in $292 Million Kelp Exploit - ueex.com; Lombard Joins $4B Exodus
+from LayerZero to Chainlink CCIP After ... - KuCoin News.
+
+=== ATURAN UMUM UNTUK SELURUH OUTPUT ===
+UNTUK SEMUA (13 lama + 2 baru): pastikan SETIAP field (Date/Event/Trigger/Context Snapshot
+sub-fields/Decision/Execution/Short-term Outcome/Long-term Outcome/Evidence) ada di baris terpisah,
+bukan digabung jadi satu paragraf raksasa. Urutkan seluruh 15 event secara kronologis. Pertahankan
+daftar "Karya yang dikutip" di akhir (gabungkan 21 sumber dari Phase 3 LAMA dengan sumber tambahan
+yang kamu pakai untuk 2 event baru, beri nomor berkelanjutan, jangan duplikat entri untuk URL yang
+sama).
+
+Keluarkan hasil lengkapnya (15 event + Open Threads + Kesimpulan Strategis + Karya yang dikutip),
+tanpa penjelasan tambahan.
+```
+
 **Result:** pending — awaiting output.
 
 ## Phase 4 — Technology Intelligence (sent 2026-07-25)
