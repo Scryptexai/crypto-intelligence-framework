@@ -943,7 +943,55 @@ kalau lebih dari 2 kalimat WAJIB dipecah jadi sub-bullet bersitasi, jangan menga
 "PROJECT: LayerZero"]
 ```
 
-**Result:** pending — awaiting output.
+**Result:** superseded — never sent to Gemini. Following the Phase 3 precedent, the maintainer instead
+ran Claude's own research directly, uploaded as
+`LayerZero_Labs__Funding_Buybacks_and_Revenue_Economics_Through...md`. Same pattern as Phase 3: real,
+checkable citations (Blockworks, DefiLlama, The Block, Law360, Epiq11 docket, Bitcoin Insider, Unchained,
+Coinspeaker, Mitrade, Messari, official LayerZero/Tether blogs) mapped to specific facts, plus explicit
+fact-checking. See the finding and synthesis below.
+
+## Phase 5 — Claude-direct financial research + final synthesis (2026-07-25)
+
+Cross-checked first against Phase 3's corrected facts (see the "Claude-direct citation research" entry
+above) — everything lines up: Series A led by Binance Labs + Multicoin Capital, Series A Extension's
+3-way co-lead (Sequoia/FTX Ventures/a16z), Coinbase Ventures/Tiger Global/Uniswap Labs as Extension
+participants (not seed), and the 31 Jan 2025 FTX settlement. The financial research adds real depth here:
+**the FTX settlement's dollar amount was never publicly disclosed at all** — not merely "not yet found,"
+but confirmed via a dedicated docket/press search that no Rule 9019 motion or stipulation with a dollar
+figure is publicly retrievable; the sole primary source is CEO Bryan Pellegrino's own X post, which
+states only that the "original repurchase" and 40M ZRO were returned, not an amount. This sharpens Phase
+3's "$111M is unverified" flag into "the true figure is confidential, full stop" — the reported figures
+($21.37M / $86M / "$100M+") are all what FTX *sought*, never what was *paid*.
+
+**Five real capital events surfaced that exist in no other phase's document:** a16z's $55M secondary ZRO
+purchase (17 Apr 2025); the Stargate acquisition's actual cash mechanics ($110–120M headline, but only
+$25M effective cash cost per LayerZero's own blog, since Stargate's treasury covered $95M of it); a 50M-
+ZRO ($~150M combined-year) buyback from early investors (Sep 2025); a $10M discretionary Labs buyback
+(Nov 2025); and undisclosed-size Tether/Citadel Securities/ARK Invest investments alongside the "Zero"
+announcement (10 Feb 2026, Citadel's first-ever direct token purchase). None of these are priced equity
+rounds — LayerZero has raised no new priced round since April 2023, funding everything since via token
+buybacks and Stargate-derived revenue instead. Flagged in Open Threads as good future additions to Phase
+3's timeline, not added there directly (out of scope for this phase).
+
+**Revenue reality confirmed, not just claimed:** the fee switch is not live (three referendums held,
+>96% approval each, but turnout only 3.71–13.01%), so LayerZero Foundation's protocol revenue is
+effectively zero — DVN/Executor messaging fees (Messari: >$11.5M in Q1'24; DefiLlama: ~$3.59M annualized
+now) flow to third-party operators, not the Foundation. The only real cash reaching the token is
+Stargate revenue funding buybacks (~$1.2M of $2.4M Stargate revenue, Sep–Nov 2025). Messari's FDV
+valuation scenarios ($290M bear to $19.11B bull) are explicitly projections, not realized revenue.
+
+**Synthesis performed directly** (same rationale as Phase 3 — the research was sourced and precise
+enough that a further Gemini round would only risk reintroducing citation loss): 4 funding rounds each
+with per-field Evidence Level + real citations, a new "Peristiwa Modal Non-Round" section for the 5 token/
+M&A/buyback events (no template slot existed for these — added rather than force-fitting them into
+"Funding Round" blocks they don't structurally belong to), the FTX litigation section rewritten to state
+the settlement amount as confirmed-undisclosed (not merely unverified) and the "$111M" figure retracted
+outright, and an Open Threads section flagging the 5 non-round events as Phase 3 timeline candidates.
+Verified structurally before committing: 4/4 Funding Round blocks present, OOXML schema validation
+passed.
+
+**Active file:** `doc_backup/inbox/phased/LayerZero/05-financial.docx`. Source research archived at
+`05-financial-citation-map-research.md`.
 
 ## Phase 1 trim to v3 — scope-creep cleanup (2026-07-25, no new Gemini prompt needed)
 

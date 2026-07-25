@@ -78,7 +78,7 @@ Intelligence non-trivial.
 
 | Project | Track | Phases done | Next phase | Notes |
 |---------|-------|--------------|------------|-------|
-| **LayerZero** | A (full 11) | 1 ✅ Foundation, 2 ✅ Entity (76 entities), 3 ✅ Historical (15/15 events, cited, Kelp DAO date corrected to 18 Apr 2026), 4 ✅ Technology (cited + Kelp DAO date patched), 5 prompt sent — awaiting output | **5 output → then 6 — Token Intelligence** | Upgrade from existing `Pioneer/LayerZero.md` (Batch 02) to Deep tier. Chosen for its interconnection-heavy ecosystem (160+ chains — strong entity-graph test case) and the ZRO airdrop (Jun 2024) as real Behavioral Intelligence material, already linked as a P4 analog in `PatternRegistry.md`. See the Phase 1/2/3/4 notes below. |
+| **LayerZero** | A (full 11) | 1 ✅ Foundation, 2 ✅ Entity (76 entities), 3 ✅ Historical (15/15 events, cited, Kelp DAO date corrected to 18 Apr 2026), 4 ✅ Technology (cited + Kelp DAO date patched), 5 ✅ Financial (4 funding rounds + 5 non-round capital events, FTX settlement confirmed undisclosed) | **6 — Token Intelligence** | Upgrade from existing `Pioneer/LayerZero.md` (Batch 02) to Deep tier. Chosen for its interconnection-heavy ecosystem (160+ chains — strong entity-graph test case) and the ZRO airdrop (Jun 2024) as real Behavioral Intelligence material, already linked as a P4 analog in `PatternRegistry.md`. See the Phase 1/2/3/4/5 notes below. |
 
 **LayerZero Phase 1 — two source files, deliberately.** The first Gemini pass returned a rich but
 narrative/table-formatted report in English; a reformat pass produced a clean Indonesian Label:Value version.
@@ -273,6 +273,20 @@ preserved and extended, one de-duplicated 58-source bibliography. Verified struc
 Date/Event/Evidence fields present; OOXML schema validation passed) before committing. `04-technology.docx`
 was patched in place for the two "April 2024" Kelp DAO references and given an Open Threads caveat about
 the unverified audit roster — full detail in `PROMPTS-LOG.md`.
+
+**LayerZero Phase 5 — Financial Intelligence, resolved via Claude-direct research (2026-07-25).** Same
+pattern as Phase 3: rather than sending the Gemini prompt, the maintainer ran Claude's own research
+(`05-financial-citation-map-research.md`), which cross-checked cleanly against Phase 3's corrected facts
+and sharpened one finding further — the FTX settlement (31 Jan 2025) amount isn't just unverified, a
+dedicated docket/press search confirms it was **never publicly disclosed at all** (sole source: the
+CEO's own X post, which names no figure). It also surfaced 5 real capital events missing from every
+other phase's document — a16z's $55M secondary ZRO purchase, the Stargate acquisition's actual cash
+mechanics ($25M effective cost, not the $110-120M headline), two ZRO buybacks, and undisclosed Tether/
+Citadel/ARK investments — none of which are priced equity rounds (LayerZero has raised none since April
+2023). Synthesized directly into `05-financial.docx`: 4 funding rounds with real per-field citations, a
+new "Peristiwa Modal Non-Round" section for the 5 events (no existing template slot fit them), the "$111M"
+figure retracted outright, and an Open Threads note flagging the 5 events as Phase 3 timeline candidates
+for a future revision. Full detail in `PROMPTS-LOG.md`.
 
 **When a phase completes:** update its row's "Phases done"/"Next phase" columns in the same commit as dropping
 the phase's raw `.docx` into `doc_backup/inbox/phased/LayerZero/`. Once all phases planned for the Track are
