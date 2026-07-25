@@ -78,7 +78,7 @@ Intelligence non-trivial.
 
 | Project | Track | Phases done | Next phase | Notes |
 |---------|-------|--------------|------------|-------|
-| **LayerZero** | A (full 11) | 1 — Foundation Intelligence ✅ (reformatted v2 is the active file) | **2 — Entity Intelligence** | Upgrade from existing `Pioneer/LayerZero.md` (Batch 02) to Deep tier. Chosen for its interconnection-heavy ecosystem (160+ chains — strong entity-graph test case) and the ZRO airdrop (Jun 2024) as real Behavioral Intelligence material, already linked as a P4 analog in `PatternRegistry.md`. See the Phase 1 note below. |
+| **LayerZero** | A (full 11) | 1 ✅ Foundation, 2 ✅ Entity (76 entities, all mandatory ones present, `exposure_type` correctly varied not defaulted) | **3 — Historical Intelligence** | Upgrade from existing `Pioneer/LayerZero.md` (Batch 02) to Deep tier. Chosen for its interconnection-heavy ecosystem (160+ chains — strong entity-graph test case) and the ZRO airdrop (Jun 2024) as real Behavioral Intelligence material, already linked as a P4 analog in `PatternRegistry.md`. See the Phase 1/2 notes below. |
 
 **LayerZero Phase 1 — two source files, deliberately.** The first Gemini pass returned a rich but
 narrative/table-formatted report in English; a reformat pass produced a clean Indonesian Label:Value version.
@@ -92,16 +92,29 @@ silently dropped**, so both files are kept:
   `phased/` folder so ingest doesn't see two "foundation" files, but retained because it is the **richer**
   source of record for the items below.
 
-**Dropped in the reformat — Phase 2 must recover these, they are not optional:**
-`Chainlink` (V1 Oracle provider), `Google Cloud`, `Polyhedra`, `Chainlink CCIP` (V2 DVN options) — four
-**named entities** that belong in the Entity Intelligence graph with an `exposure_type` of
-`technical-integration`. Also dropped, lower priority: the "Bridging Trilemma" framing (Phase 4 context) and
-the Endpoint library names `SendUln302` / `ReceiveUln302` / `ReadLib1002` (Phase 4 technical detail).
+**Dropped in the reformat — recovered in Phase 2** (see below): `Chainlink` (V1 Oracle provider),
+`Google Cloud`, `Polyhedra`, `Chainlink CCIP` (V2 DVN options) — all four now present as entities with
+`exposure_type: technical-integration`. Still open, lower priority: the "Bridging Trilemma" framing and the
+Endpoint library names `SendUln302` / `ReceiveUln302` / `ReadLib1002` — Phase 4 (Technology) material.
 
-**Not yet run through `ingest.py`** — holding until more phases land, to avoid a partial 1-of-11 Deep entry
-overlapping the tier with the existing `Pioneer/LayerZero.md`. Bonus content that surfaced early beyond
-Foundation's scope (FTX/Alameda litigation, full funding history, ZRO tokenomics, Kelp DAO exploit, V1/V2
-architecture) is earmarked for Phases 3/4/5/6/9 rather than being re-researched there.
+**LayerZero Phase 2 — Entity Intelligence, clean pass.** `doc_backup/inbox/phased/LayerZero/02-entity.docx`.
+76 entities mapped; all 13 entities mandated by the prompt present (4 recovered from Phase 1's drop, plus
+Alameda Ventures/FTX Group, Protocol Guild, Stargate, Tether, and the 5 named auditors); all 10 investors from
+Phase 1's funding rounds cross-referenced. `exposure_type` distribution: 33 technical-integration, 17
+shared-investor-only, 15 liquidity-dependency, 6 narrative-correlated-only, 5 financial-collateral — notably
+**FTX/Alameda and FTX Recovery Trust are both tagged `financial-collateral`**, the strongest category, not
+downgraded to the more convenient `shared-investor-only` — this is the entity-graph data the cross-project
+contagion-mapping discussion needs.
+
+Both open threads from Phase 1 were substantively investigated rather than left as "unknown": the
+Optimistic Labs Limited / LayerZero Labs Ltd. relationship is explained in detail (still unresolved — a
+genuine conflict, correctly flagged rather than guessed) and the core team headcount was found — ~58
+employees (27 core engineering, 16 go-to-market), from employment-intelligence sources not used in Phase 1.
+
+Minor format deviation (not a data-loss issue): each entity's fields are joined into one paragraph rather
+than one field per line as the template specifies. Noted for the Phase 3 prompt; not worth a re-run.
+
+**Still not run through `ingest.py`** — holding until more phases land (same reason as Phase 1).
 
 **Lesson recorded for future reformat passes:** asking an LLM to reformat its own output does preserve
 numbers reliably but drops incidental named entities mentioned in prose. Either diff every reformat against
