@@ -78,7 +78,7 @@ Intelligence non-trivial.
 
 | Project | Track | Phases done | Next phase | Notes |
 |---------|-------|--------------|------------|-------|
-| **LayerZero** | A (full 11) | 1 ✅ Foundation, 2 ✅ Entity (76 entities), 3 ⚠ Historical (13/13 events, citations pending reformat) | **3 reformat → then 4 — Technology Intelligence** | Upgrade from existing `Pioneer/LayerZero.md` (Batch 02) to Deep tier. Chosen for its interconnection-heavy ecosystem (160+ chains — strong entity-graph test case) and the ZRO airdrop (Jun 2024) as real Behavioral Intelligence material, already linked as a P4 analog in `PatternRegistry.md`. See the Phase 1/2/3 notes below. |
+| **LayerZero** | A (full 11) | 1 ✅ Foundation, 2 ✅ Entity (76 entities), 3 ⚠ Historical (15/15 events incl. 2 new from Phase 4, citations pending reformat), 4 ⚠ Technology (content excellent, citations pending reformat) | **3 + 4 reformats → then 5 — Financial Intelligence** | Upgrade from existing `Pioneer/LayerZero.md` (Batch 02) to Deep tier. Chosen for its interconnection-heavy ecosystem (160+ chains — strong entity-graph test case) and the ZRO airdrop (Jun 2024) as real Behavioral Intelligence material, already linked as a P4 analog in `PatternRegistry.md`. See the Phase 1/2/3/4 notes below. |
 
 **LayerZero Phase 1 — two source files, deliberately.** The first Gemini pass returned a rich but
 narrative/table-formatted report in English; a reformat pass produced a clean Indonesian Label:Value version.
@@ -171,6 +171,41 @@ directly against LayerZero Phase 3's real extracted text (0 → 7 threads) and r
 Phase 1 and Phase 2's real files (unchanged: 5 and 2 threads respectively) before committing. This means
 **Phase 1 and Phase 2 were parsed correctly all along** — only Phase 3's narrative-style heading exposed the
 bug.
+
+**LayerZero Phase 4 — Technology Intelligence, technically excellent / citations empty (3rd occurrence).**
+Raw file archived at `doc_backup/deep/LayerZero_2026-07_phase4-nocitations-v1.docx` (same v1/v2-split
+pattern as Phase 1 and Phase 3 — will not become the active `phased/LayerZero/04-technology.docx` until
+its citation reformat comes back). Every requested recovery item was delivered in real depth: SendUln302/
+ReceiveUln302/ReadLib1002 explained mechanically (down to `_payWorkers`, `payloadHash`, `_clearPayload`),
+the Kelp DAO 1-of-1 DVN vulnerability explained down to the RPC-node-poisoning attack mechanism, all 5
+Phase 2 auditors given scope + dates, the "Bridging Trilemma" framing explained and contrasted against the
+Nakamoto/Blockchain trilemma, and the "Zero" blockchain roadmap — which turned out to already be **live**
+(launched 10 Feb 2026: Pure Delegated Proof of Stake, 10K TPS target, "System Zone" module), not merely
+planned as assumed when the prompt was written.
+
+Two cross-phase findings surfaced by this pass:
+- **New entity not in Phase 2:** a 6th auditor, **ClawSecure** (Feb 2026, co-audited a LayerZero client
+  with Trail of Bits) — not present in Phase 2's 76-entity graph. Flagged as a Phase 2 gap to recover
+  later, same pattern as Chainlink/Google Cloud/Polyhedra being dropped from Phase 1 and recovered in
+  Phase 2.
+- **Two real historical events missing from Phase 3's timeline:** the Zero blockchain launch (10 Feb 2026)
+  and a systemic DVN security fix (May 2026, hardcoded 5-of-5 minimum for LayerZero Labs' own DVN,
+  responding to Kelp DAO) both postdate Phase 3's last recorded event (Aug 2024/2025 Stargate governance
+  merger). Rather than a third separate pass, these were folded directly into the (still-pending) Phase 3
+  citation reformat prompt, which now asks for both citations AND these 2 new event blocks in one pass —
+  see the revised prompt in `PROMPTS-LOG.md`.
+
+**Citation problem — third occurrence of the identical failure mode:** zero inline Evidence Level or
+sourcing anywhere in the document (verified: 0 matches for "(HIGH)"/"(MEDIUM)"/"(LOW)", 0 inline URLs/
+source brackets) despite an 11-field response with a 21-source bibliography at the end, unlinked to any
+individual claim. This is the same failure as the original Phase 1 attempt and Phase 3 — the per-fact
+citation rule has now failed three separate times despite being stated from Phase 1 onward and tightened
+twice. A citation-only reformat pass was sent (logged in `PROMPTS-LOG.md`), this time also explicitly
+asking the model to break each long paragraph field into individual per-claim bullet lines so citations
+can attach per-fact rather than per-paragraph. **Worth reconsidering before Phase 5:** if this 3-for-3
+pattern continues, the per-fact citation instruction may need to move from "stated in the prompt" to
+"structurally enforced" (e.g. requiring bullets from the start rather than allowing paragraph fields) —
+not yet acted on, flagged for the next reformat's outcome to confirm.
 
 **When a phase completes:** update its row's "Phases done"/"Next phase" columns in the same commit as dropping
 the phase's raw `.docx` into `doc_backup/inbox/phased/LayerZero/`. Once all phases planned for the Track are

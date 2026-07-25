@@ -283,29 +283,46 @@ blocking, since ingestion treats the whole event block as one span. A citation-o
 requested (see below), mirroring the Phase 1 reformat. Minor gap: Trail of Bits (a Phase 2 entity) is never
 referenced in the Phase 3 timeline — flagged, not blocking.
 
-## Phase 3 citation reformat pass (sent 2026-07-25, same day)
+## Phase 3 citation reformat pass (sent 2026-07-25, same day; REVISED after Phase 4 surfaced 2 missing events)
 
 ```
-Tugas kamu sekarang HANYA MEMPERBAIKI CITATION pada timeline LayerZero di atas. Ini BUKAN riset baru.
+Tugas kamu sekarang MEMPERBAIKI CITATION pada timeline LayerZero di atas, DAN menambahkan 2 event yang
+baru terungkap dari riset Phase 4 (Technology Intelligence) yang belum ada di timeline ini. Bagian
+citation BUKAN riset baru — bagian 2 event baru BOLEH riset baru (perdalam, jangan cuma satu baris).
 
-MASALAH: semua 13 blok event punya field "Evidence:" KOSONG. Ini tidak bisa diterima — setiap fakta
-harus bisa dilacak ke sumbernya.
+MASALAH 1 — CITATION: semua 13 blok event punya field "Evidence:" KOSONG. Ini tidak bisa diterima —
+setiap fakta harus bisa dilacak ke sumbernya.
 
-ATURAN MUTLAK:
-- JANGAN tambah fakta baru. JANGAN riset ulang. JANGAN hapus atau ubah fakta apa pun yang sudah ada
-  (Date/Event/Trigger/Context Snapshot/Decision/Execution/Short-term Outcome/Long-term Outcome semuanya
-  harus identik dengan versi di atas, kata per kata).
+MASALAH 2 — 2 EVENT HILANG: Phase 4 mengungkap dua peristiwa nyata sesudah Agustus 2024/2025 (event
+terakhir di timeline ini saat ini) yang belum masuk timeline:
+- Peluncuran blockchain "Zero" — 10 Februari 2026 — Layer-1 mandiri LayerZero (Decentralized Multi-Core
+  World Computer, konsensus "Pure Delegated Proof of Stake", target 10.000 TPS, modul "System Zone" untuk
+  saldo ZRO omnichain dan fee switch).
+- Modifikasi keamanan sistemik DVN — Mei 2026 — menanggapi insiden Kelp DAO (April 2024), tim inti
+  memblokir kemampuan klien menunjuk DVN LayerZero Labs dalam konfigurasi "1-of-1", memaksa minimum
+  5-of-5 untuk DVN internal LayerZero Labs.
+
+ATURAN MUTLAK UNTUK 13 EVENT YANG SUDAH ADA:
+- JANGAN tambah fakta baru pada 13 event ini. JANGAN riset ulang. JANGAN hapus atau ubah fakta apa pun
+  yang sudah ada (Date/Event/Trigger/Context Snapshot/Decision/Execution/Short-term Outcome/Long-term
+  Outcome semuanya harus identik dengan versi di atas, kata per kata).
 - Untuk SETIAP dari 13 event, isi field "Evidence:" dengan sumber konkret (nama publikasi/dokumen + URL
   atau nomor rujukan) yang mendukung event tersebut. Kalau event itu didukung banyak sumber, cukup 1-3
   yang paling kredibel.
 - Kalau kamu benar-benar tidak bisa menemukan sumber spesifik untuk sebuah event, tulis
   "Evidence: [sumber tidak dapat diverifikasi ulang — perlu riset tambahan]" — JANGAN mengarang URL atau
   nama sumber yang tidak pernah kamu gunakan.
-- Sambil memperbaiki ini, pastikan juga SETIAP field (Date/Event/Trigger/Context Snapshot/.../Evidence)
-  tetap di baris terpisah, bukan digabung jadi satu paragraf.
 
-Mulai sekarang, keluarkan hasil perbaikannya saja (seluruh 13 blok event, lengkap), tanpa penjelasan
-tambahan.
+UNTUK 2 EVENT BARU: tulis blok LENGKAP dengan format yang SAMA PERSIS seperti 13 event di atas —
+Date/Event/Trigger/Context Snapshot (semua sub-field)/Decision/Execution/Short-term Outcome/Long-term
+Outcome/Evidence — riset dan isi sungguhan, JANGAN cuma satu kalimat. Evidence WAJIB terisi sejak awal
+(jangan ulangi kesalahan yang sama). Sambungkan ke entitas Phase 2 jika relevan (LayerZero Labs, Kelp DAO,
+dst — sebut nama persis seperti Phase 2).
+
+UNTUK SEMUA (13 lama + 2 baru): pastikan SETIAP field (Date/Event/Trigger/Context Snapshot/.../Evidence)
+ada di baris terpisah, bukan digabung jadi satu paragraf. Urutkan seluruh 15 event secara kronologis.
+
+Mulai sekarang, keluarkan hasil lengkapnya (seluruh 15 blok event), tanpa penjelasan tambahan.
 ```
 
 **Result:** pending — awaiting output.
@@ -359,6 +376,51 @@ Open Threads
 
 [+ FORMAT RULES yang sama seperti fase sebelumnya: Bahasa Indonesia, tanpa tabel, satu fakta per baris,
 Evidence + Evidence Level menempel di tiap fakta, jangan mengarang, awali dengan "PROJECT: LayerZero"]
+```
+
+**Result:** technically excellent — deep, precise recovery of every requested item (SendUln302/
+ReceiveUln302/ReadLib1002 mechanics, Kelp DAO 1-of-1 explained down to the RPC-poisoning mechanism,
+all 5 Phase 2 auditors with scope+dates, Bridging Trilemma vs. Nakamoto/Blockchain trilemma, "Zero"
+blockchain roadmap — which turned out to already be LIVE as of 10 Feb 2026, not just planned). Bonus
+find: a 6th auditor, **ClawSecure** (Feb 2026), not present in Phase 2's entity graph — flagged as a
+Phase 2 gap to recover, same pattern as Chainlink/Google Cloud/Polyhedra were for Phase 1→2. Also
+surfaced 2 real historical events (Zero launch Feb 2026, DVN systemic security fix May 2026) not present
+in Phase 3's timeline — folded into the revised Phase 3 reformat prompt above instead of a separate pass.
+
+**Same citation failure as Phase 1 (original) and Phase 3: zero inline Evidence/Evidence Level anywhere
+in the document** (verified: 0 matches for "(HIGH)"/"(MEDIUM)"/"(LOW)", 0 inline source citations) —
+a 21-source bibliography exists at the end, unlinked to individual facts. Third occurrence of this exact
+failure mode despite the rule being present since Phase 1 and repeatedly tightened. A citation-only
+reformat pass was requested below.
+
+## Phase 4 citation reformat pass (sent 2026-07-25, same day)
+
+```
+Tugas kamu sekarang HANYA MEMPERBAIKI CITATION pada profil teknologi LayerZero di atas. Ini BUKAN riset
+baru.
+
+MASALAH: TIDAK ADA satu pun fakta di 11 field (Architecture, Consensus Mechanism, VM/Execution
+Environment, Languages/Frameworks, Security Model, Audit History, Scalability Approach, Known Limits,
+Protocol Evolution, Current Roadmap, Novelty Assessment) yang punya Evidence Level atau sumber
+terlampir. ini tidak bisa diterima — setiap klaim teknis harus bisa dilacak ke sumbernya, apalagi klaim
+sedetail ini.
+
+ATURAN MUTLAK:
+- JANGAN tambah fakta baru. JANGAN riset ulang. JANGAN hapus atau ubah fakta apa pun yang sudah ada —
+  setiap kalimat harus identik dengan versi di atas, kata per kata.
+- Pecah setiap field yang berisi paragraf panjang (seperti Architecture, Security Model, Known Limits,
+  Novelty Assessment) menjadi BEBERAPA BARIS FAKTA TERPISAH — satu klaim teknis per baris — bukan satu
+  paragraf raksasa. Ini bukan menghapus/meringkas isi, hanya memecah paragraf yang sudah ada menjadi
+  bullet-bullet "Label: klaim (Evidence Level) [sumber]".
+- Untuk SETIAP baris fakta, tempelkan Evidence Level (HIGH/MEDIUM/LOW) dan sumber konkret dari daftar
+  "Karya yang dikutip" di atas — format: "(HIGH) [sumber 6, docs.layerzero.network]".
+- Kalau kamu benar-benar tidak bisa memetakan sebuah fakta ke sumber spesifik dari daftar itu, tulis
+  "[sumber tidak terpetakan]" — JANGAN mengarang nomor atau nama sumber.
+- Untuk Audit History dan Protocol Evolution yang sudah berbentuk daftar per-item, cukup tempelkan
+  Evidence Level + sumber ke tiap item, tidak perlu dipecah lagi.
+
+Mulai sekarang, keluarkan hasil perbaikannya saja (seluruh 11 field, lengkap), tanpa penjelasan
+tambahan.
 ```
 
 **Result:** pending — awaiting output.
