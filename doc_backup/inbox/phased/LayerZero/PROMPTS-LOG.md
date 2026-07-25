@@ -680,7 +680,66 @@ Keluarkan hasil lengkapnya (15 event dengan Evidence terisi + Open Threads + Kes
 satu daftar Karya yang dikutip gabungan), tanpa penjelasan tambahan.
 ```
 
-**Result:** pending — awaiting output.
+**Result:** superseded — never sent to Gemini. The maintainer instead ran a direct Claude research
+pass (not Gemini) to build a sourced citation map for all 15 events, which turned out to be
+categorically better: real, checkable URLs (CoinDesk, Chainalysis, QuillAudits, PR Newswire, arXiv,
+official LayerZero/Tether blogs, court filings) mapped one-to-one to each event, plus explicit
+fact-checking against those sources. See the finding and final synthesis below — this superseded
+attempt 4 entirely.
+
+## Phase 3 — Claude-direct citation research + final synthesis (2026-07-25)
+
+Departure from the Gemini phased-prompt loop: the maintainer ran Claude's own research (not a Gemini
+prompt) to build a sourced citation map for the 15-event timeline, uploaded as
+`LayerZero_Labs__Sourced_Citation_Map_and_FactCheck_for_a_15Event...md`. This succeeded where 3 Gemini
+attempts failed, and surfaced a critical error the phased pipeline had carried since Phase 3's original
+run:
+
+**Critical finding — Kelp DAO exploit date was wrong by two years.** Every prior draft (original Phase
+3, both citation-reformat attempts, and Phase 4's Security Model / Audit History sections) dated the
+$292M Kelp DAO exploit to **April 2024**, placed right after the LayerZero V2 launch (Jan 2024). The
+citation research cross-verified against CoinDesk, Chainalysis, and QuillAudits and confirms the actual
+date is **18 April 2026** — one incident, not two, and structurally it belongs *after* the "Zero"
+blockchain launch (10 Feb 2026) and *immediately before* the DVN security-hardening event (May 2026),
+which is explicitly a response to it. The old "April 2024" placement made the DVN fix read as
+disconnected from its own trigger by two years; the corrected placement resolves that.
+
+**Other corrections surfaced:** (1) the ~$2M seed round was led by Multicoin Capital + Sino Global
+Capital, not Binance Labs (Binance Labs only joined at the Sept 2021 Series A — the old draft implied
+continuity that didn't exist); (2) FTX-trapped treasury funds were $11.5M, not $10.7M; (3) the Stargate
+acquisition's DAO approval date is 25 August 2025 (~95%/94.76%) — the old draft had an ambiguous
+"August 2024/2025"; (4) the FTX Recovery Trust clawback suit was **settled 31 January 2025** — the old
+draft implied it was still unresolved "legal limbo" into 2026; (5) the ZRO TGE price-drop path
+"$4.79→$3.39 in 4 hours" could not be verified anywhere — the documented figure is a ~15% drop to
+~$2.87 (Cryptopolitan/CoinMarketCap).
+
+**Flagged as unverified (kept as explicit caveats, not silently removed):** the "23-50585" docket
+number; the Nov 20 2023 Motion-to-Dismiss / Mar 12 2024 briefing dates (the MTD schedule actually found
+in the docket runs Jan–Mar 2025, for the Amended Complaint); the "$111M+" clawback figure (reported
+range is $21.37M–~$100M+ depending on components); the Alameda-estate 129M STG → 11.14M ZRO liquidation;
+the "80M+ historical messages" metric (later sources cite 200M+); Ondo Finance's multi-DVN adoption;
+and — most consequentially — **the entire 6-auditor roster in the already-committed Phase 4 document
+(Trail of Bits, Zellic, Zokyo, Peckshield, Hacken, ClawSecure) could not be independently verified**,
+with Zokyo specifically appearing only as a Series A Extension *investor* in one source, not an auditor.
+
+**Synthesis performed directly (no further Gemini round needed):** merged attempt-3's sound event
+content with this citation map — 15 events, each carrying one `Evidence:` line with 2-5 real URLs,
+the Kelp DAO event moved to its correct chronological position and corrected to 18 April 2026, the
+other four corrections applied inline (marked `[KOREKSI]`), the unverified items marked
+`[TIDAK TERVERIFIKASI]` rather than silently dropped or silently trusted, Open Threads and Kesimpulan
+Strategis preserved and extended with the new findings (FTX settlement, ex-COO Ari Litan departure,
+audit-roster caveat), and a single de-duplicated 58-source bibliography. Verified structurally: 15/15
+events have Date/Event/Evidence fields (`grep -c` check), and the corrected `.docx` passes
+OOXML schema validation (`validate.py`).
+
+**Active file:** `doc_backup/inbox/phased/LayerZero/03-historical.docx` (supersedes both
+`03-historical-attempt3-nocitation.docx`, kept as archived source-of-record per this project's
+superseded-version convention, and the original pre-citation Phase 3 draft).
+
+**Follow-up patch applied to the already-committed Phase 4 file** (`04-technology.docx`): the two
+"April 2024" Kelp DAO references (Security Model section, Hacken's audit-engagement date in Audit
+History) corrected to April 2026 inline, and an Open Threads caveat added noting the 6-auditor roster
+is unverified pending a direct check of LayerZero's own audit-disclosure page.
 
 ## Phase 4 — Technology Intelligence (sent 2026-07-25)
 

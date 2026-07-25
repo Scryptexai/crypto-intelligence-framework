@@ -78,7 +78,7 @@ Intelligence non-trivial.
 
 | Project | Track | Phases done | Next phase | Notes |
 |---------|-------|--------------|------------|-------|
-| **LayerZero** | A (full 11) | 1 ✅ Foundation, 2 ✅ Entity (76 entities), 3 ⚠ Historical (15/15 events incl. 2 new from Phase 4, citations pending reformat), 4 ⚠ Technology (content excellent, citations pending reformat), 5 prompt sent — awaiting output | **3 + 4 reformats + 5 output → then 6 — Token Intelligence** | Upgrade from existing `Pioneer/LayerZero.md` (Batch 02) to Deep tier. Chosen for its interconnection-heavy ecosystem (160+ chains — strong entity-graph test case) and the ZRO airdrop (Jun 2024) as real Behavioral Intelligence material, already linked as a P4 analog in `PatternRegistry.md`. See the Phase 1/2/3/4 notes below. |
+| **LayerZero** | A (full 11) | 1 ✅ Foundation, 2 ✅ Entity (76 entities), 3 ✅ Historical (15/15 events, cited, Kelp DAO date corrected to 18 Apr 2026), 4 ✅ Technology (cited + Kelp DAO date patched), 5 prompt sent — awaiting output | **5 output → then 6 — Token Intelligence** | Upgrade from existing `Pioneer/LayerZero.md` (Batch 02) to Deep tier. Chosen for its interconnection-heavy ecosystem (160+ chains — strong entity-graph test case) and the ZRO airdrop (Jun 2024) as real Behavioral Intelligence material, already linked as a P4 analog in `PatternRegistry.md`. See the Phase 1/2/3/4 notes below. |
 
 **LayerZero Phase 1 — two source files, deliberately.** The first Gemini pass returned a rich but
 narrative/table-formatted report in English; a reformat pass produced a clean Indonesian Label:Value version.
@@ -237,6 +237,42 @@ can attach per-fact rather than per-paragraph. **Worth reconsidering before Phas
 pattern continues, the per-fact citation instruction may need to move from "stated in the prompt" to
 "structurally enforced" (e.g. requiring bullets from the start rather than allowing paragraph fields) —
 not yet acted on, flagged for the next reformat's outcome to confirm.
+
+**Phase 3 citation saga resolved — 3 Gemini attempts failed, direct Claude research succeeded
+(2026-07-25).** After the citation-only reformat above, two further Gemini attempts were tried and both
+failed differently: attempt 2 applied the "cannot re-verify source" fallback to literally every field
+instead of searching (and regressed the 2 new events to a single end-of-block Evidence line, the exact
+anti-pattern the prompt existed to fix); attempt 3 dropped inline citation entirely (0 `Evidence:` fields,
+0 `[sumber N]` tags anywhere) while producing two unmerged, mutually inconsistent bibliography lists —
+though it did preserve Open Threads/Kesimpulan Strategis, which attempt 2 had dropped. Both raw outputs
+are archived (`doc_backup/inbox/phased/LayerZero/03-historical-attempt3-nocitation.docx`; full prompts
+for all 3 attempts in `PROMPTS-LOG.md`).
+
+The maintainer then ran **Claude's own research directly (not Gemini)** to build a sourced citation map
+for the same 15 events (archived at `03-historical-citation-map-research.md`) — real, checkable URLs
+(CoinDesk, Chainalysis, QuillAudits, PR Newswire, arXiv, official LayerZero/Tether blogs, Delaware court
+filings) mapped one-to-one to each event, plus fact-checking against those sources. This succeeded where
+the reformat loop hadn't, and surfaced something the phased pipeline had been silently carrying since
+the original Phase 3 run: **the Kelp DAO $292M exploit was dated April 2024 everywhere (original Phase 3,
+both reformat attempts, and Phase 4's Security Model + Audit History sections) — the real date,
+cross-verified by CoinDesk/Chainalysis/QuillAudits, is 18 April 2026.** One incident, not two; it
+belongs *after* the Zero blockchain launch (10 Feb 2026) and *immediately before* the May 2026 DVN
+security fix that responds to it — the old placement made that response read as disconnected from its
+own trigger by two years. Four smaller corrections also surfaced (seed-round lead investors, the exact
+FTX-trapped treasury figure, the Stargate acquisition's DAO-approval date, and the ZRO TGE's actual
+price-drop path), plus a set of claims that could not be verified and are now flagged explicitly rather
+than silently trusted or silently deleted — most notably, **the entire 6-auditor roster already
+committed in Phase 4** (Trail of Bits, Zellic, Zokyo, Peckshield, Hacken, ClawSecure) could not be
+independently confirmed.
+
+Final synthesis (done directly, no further Gemini round needed, since the citation map plus attempt-3's
+sound event content were sufficient): `03-historical.docx` — 15 events each with a real `Evidence:` line,
+Kelp DAO repositioned and redated, the 4 other corrections applied inline (marked `[KOREKSI]`), unverified
+items marked `[TIDAK TERVERIFIKASI]` rather than resolved either way, Open Threads/Kesimpulan Strategis
+preserved and extended, one de-duplicated 58-source bibliography. Verified structurally (15/15
+Date/Event/Evidence fields present; OOXML schema validation passed) before committing. `04-technology.docx`
+was patched in place for the two "April 2024" Kelp DAO references and given an Open Threads caveat about
+the unverified audit roster — full detail in `PROMPTS-LOG.md`.
 
 **When a phase completes:** update its row's "Phases done"/"Next phase" columns in the same commit as dropping
 the phase's raw `.docx` into `doc_backup/inbox/phased/LayerZero/`. Once all phases planned for the Track are
