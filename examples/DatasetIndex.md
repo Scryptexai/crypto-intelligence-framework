@@ -78,7 +78,34 @@ Intelligence non-trivial.
 
 | Project | Track | Phases done | Next phase | Notes |
 |---------|-------|--------------|------------|-------|
-| **LayerZero** | A (full 11) | 1 — Foundation Intelligence (raw archived, format non-compliant — see note) | **2 — Entity Intelligence** | Upgrade from existing `Pioneer/LayerZero.md` (Batch 02) to Deep tier. Chosen for its interconnection-heavy ecosystem (160+ chains — strong entity-graph test case) and the ZRO airdrop (Jun 2024) as real Behavioral Intelligence material, already linked as a P4 analog in `PatternRegistry.md`. Phase 1 output was rich/well-sourced but narrative-form, not template-compliant (no Label:Value fields, no Open Threads heading, tables instead of bullets) — content preserved as-is in `doc_backup/inbox/phased/LayerZero/01-foundation.docx` (not yet run through `ingest.py`; holding until more phases land to avoid a partial Deep entry overlapping the existing Pioneer tier). Bonus content surfaced early (FTX/Alameda litigation, funding rounds, ZRO tokenomics, Kelp DAO exploit, V1/V2 architecture) earmarked for Phases 2/4/5/6/9 instead of being re-researched. |
+| **LayerZero** | A (full 11) | 1 — Foundation Intelligence ✅ (reformatted v2 is the active file) | **2 — Entity Intelligence** | Upgrade from existing `Pioneer/LayerZero.md` (Batch 02) to Deep tier. Chosen for its interconnection-heavy ecosystem (160+ chains — strong entity-graph test case) and the ZRO airdrop (Jun 2024) as real Behavioral Intelligence material, already linked as a P4 analog in `PatternRegistry.md`. See the Phase 1 note below. |
+
+**LayerZero Phase 1 — two source files, deliberately.** The first Gemini pass returned a rich but
+narrative/table-formatted report in English; a reformat pass produced a clean Indonesian Label:Value version.
+A term-by-term diff of the two showed **all numeric facts survived the reformat intact** (funding rounds,
+token allocations, dates, prices, percentages — the most fragile category, verified clean), but **8 items were
+silently dropped**, so both files are kept:
+
+- `doc_backup/inbox/phased/LayerZero/01-foundation.docx` — the reformatted v2, **the active phase file**
+  ingest reads (parseable, Indonesian, conflicts flagged, Open Threads present).
+- `doc_backup/deep/LayerZero_2026-07_phase1-narrative-v1.docx` — the original narrative pass, kept out of the
+  `phased/` folder so ingest doesn't see two "foundation" files, but retained because it is the **richer**
+  source of record for the items below.
+
+**Dropped in the reformat — Phase 2 must recover these, they are not optional:**
+`Chainlink` (V1 Oracle provider), `Google Cloud`, `Polyhedra`, `Chainlink CCIP` (V2 DVN options) — four
+**named entities** that belong in the Entity Intelligence graph with an `exposure_type` of
+`technical-integration`. Also dropped, lower priority: the "Bridging Trilemma" framing (Phase 4 context) and
+the Endpoint library names `SendUln302` / `ReceiveUln302` / `ReadLib1002` (Phase 4 technical detail).
+
+**Not yet run through `ingest.py`** — holding until more phases land, to avoid a partial 1-of-11 Deep entry
+overlapping the tier with the existing `Pioneer/LayerZero.md`. Bonus content that surfaced early beyond
+Foundation's scope (FTX/Alameda litigation, full funding history, ZRO tokenomics, Kelp DAO exploit, V1/V2
+architecture) is earmarked for Phases 3/4/5/6/9 rather than being re-researched there.
+
+**Lesson recorded for future reformat passes:** asking an LLM to reformat its own output does preserve
+numbers reliably but drops incidental named entities mentioned in prose. Either diff every reformat against
+the original (as done here), or instruct the reformat pass to preserve every proper noun explicitly.
 
 **When a phase completes:** update its row's "Phases done"/"Next phase" columns in the same commit as dropping
 the phase's raw `.docx` into `doc_backup/inbox/phased/LayerZero/`. Once all phases planned for the Track are
