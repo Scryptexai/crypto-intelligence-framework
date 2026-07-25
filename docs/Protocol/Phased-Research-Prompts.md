@@ -1,15 +1,18 @@
 # Phased Research Prompts (Format v3)
 
-## Policy note — this supersedes "prompts stay external"
+## Policy note — why these live in the repo
 
 `docs/Protocol/Deep-Research-Brief.md` states the paste-ready research prompt is kept external, in the
-maintainer's local files, not in the repo. **That policy is reversed here, deliberately, by maintainer
-decision (2026-07-25), scoped to the Format v3 phased pipeline only.** The reasoning: v1/v2's single-shot
-prompt was a private working tool because it was one maintainer's draft; the v3 phased pipeline is meant to
-become **the standard** every large project's research follows, so it needs to be version-controlled,
-reviewable, and improvable the same way the rest of CIF's contracts are — not sitting in a local file nobody
-else can see or fix. If a future session still uses the old v1/v2 single-shot prompt as a private tool, that
-one stays external; **this file is the exception, not a silent reversal of the general rule.**
+maintainer's local files, not in the repo. **The v3 phased prompts below are an explicit, scoped exception
+(maintainer decision, 2026-07-25) — but the exception is about storage, not usage.** Actual usage is
+unchanged: these are still pasted manually into Gemini (or another external research tool) exactly as before,
+outside the repo, one phase at a time. What changes is only that a copy also lives here, so it (a) can't be
+lost or accidentally deleted from a local machine, and (b) stays in the same place as, and in sync with, the
+contract it implements (`Deep-Research-Brief.md`'s Format v3 section), the ontology it maps to, and the code
+that ingests its output (`tools/ingest.py`) — one connected context instead of a prompt file sitting
+disconnected from the pipeline it feeds. It is not a process change, and it does not make this file a
+mandatory script to follow word-for-word forever — it's a backup with context, not new governance. The v1/v2
+single-shot prompt is unaffected and stays external as before.
 
 ## How to use these
 

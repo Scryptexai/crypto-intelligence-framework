@@ -4,11 +4,12 @@ This is the **contract** the framework expects deep reports to follow — the **
 Gemini deep report arrives in, so the `Ingest-Deep` role (and `tools/ingest.py`) map its output losslessly.
 Read this before ingesting any deep report.
 
-> The paste-ready **research prompt** for the v1/v2 single-shot formats is an external working tool kept in
-> the maintainer's local files — intentionally **not** stored in the repo. This file keeps only the contract;
-> any prompt must produce output that conforms to it. **Exception (2026-07-25):** the Format v3 phased-pipeline
-> prompts below ARE stored in the repo, deliberately reversing this rule for that pipeline only — see
-> `docs/Protocol/Phased-Research-Prompts.md` for why and for the actual prompt text.
+> The paste-ready **research prompt** for the v1/v2 single-shot formats stays external, in the maintainer's
+> local files, not in the repo. This file keeps only the contract; any prompt must produce output that
+> conforms to it. **Exception (2026-07-25):** the Format v3 phased-pipeline prompts also live in
+> `docs/Protocol/Phased-Research-Prompts.md` — not because usage changed (they're still pasted externally into
+> Gemini exactly as before), but so they can't be lost/deleted locally and stay in sync, in one place, with
+> this contract, the ontology it maps to, and the code that ingests its output.
 
 **Audience of the output = AI reasoning, not human readers.** Every fact must be *Reusable Knowledge*: it
 must answer **APA · MENGAPA · BAGAIMANA · APA DAMPAKNYA · APA PELAJARANNYA · APA HUBUNGANNYA DENGAN INDUSTRI**.
