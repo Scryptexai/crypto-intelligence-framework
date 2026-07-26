@@ -430,6 +430,17 @@ Also fixed `run.sh`, which used `set -e` and would have aborted the *entire* pip
 logs and continues, only the script's own final exit code carries the failure signal. Full detail:
 `PROMPTS-LOG.md`'s "Task 2 completion" entry; usage: `tools/README.md`.
 
+**Task 3 — prompt consolidation (2026-07-26).** Audited `docs/Protocol/Phased-Research-Prompts.md`
+(already kept in sync per-phase, not rebuilt from scratch) against what actually happened across all 11
+phases and closed the remaining gaps: an explicit per-phase "what file to attach" table (answers "which
+file for Phase 5?" — a real point of friction the first time through), two new rules added to the actual
+pasted Shared Rules block (cap the "cannot verify" citation fallback; corroborate load-bearing tokenomics
+numbers against a primary source before reporting them), a "Known failure patterns" section (switch
+model/method after 2 failed attempts rather than re-prompting a 3rd time the same way; diff a reformat
+pass's section list before accepting it; seed Conflict Resolution with a running discrepancy list rather
+than an open-ended prompt), and pointed new projects at `data_project/<project>/` (Task 2) instead of the
+legacy path. Full detail: `PROMPTS-LOG.md`'s "Task 3 completion" entry.
+
 **When a phase completes:** update its row's "Phases done"/"Next phase" columns in the same commit as dropping
 the phase's raw `.docx` into `doc_backup/inbox/phased/LayerZero/`. Once all phases planned for the Track are
 done, run `./run.sh` to assemble the dossier, then move the finished project out of this table (it becomes a

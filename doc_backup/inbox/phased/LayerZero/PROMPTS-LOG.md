@@ -2144,3 +2144,27 @@ still runs build/backtest against whatever ingested successfully, and only propa
 and running `./run.sh`: failure logged clearly, nothing written/archived for the bad project, build +
 backtest still completed for LayerZero, final exit code 1; then re-ran clean with the fixture removed,
 exit code 0.
+
+## Task 3 completion — prompt consolidation (2026-07-26)
+
+`docs/Protocol/Phased-Research-Prompts.md` already held the reusable, generic-template prompt set (this
+was kept in sync with each phase as it was drafted, not a stale first draft) — Task 3 was auditing it
+against what actually happened per `**Result:**` entries above and closing the remaining gaps, not
+rebuilding it from scratch:
+- Added an explicit per-phase "what to attach" table (step 3b) — resolves the general Context Pack rule
+  into a concrete answer per phase, since "which file do I attach for Phase 5?" was a real point of friction
+  running this pipeline for the first time.
+- Added two new rules to the Shared Rules block (the text actually pasted into every phase prompt, not just
+  documentation around it): an explicit cap on the "cannot verify" citation fallback (Phase 3 attempt 2's
+  failure — applied to all 13 events instead of searching), and a requirement to corroborate any
+  load-bearing tokenomics number against a primary source before reporting it (Phase 6 attempt 1's
+  fabricated 25% TGE figure).
+- Added a "Known failure patterns" section: the two rules above plus two operator-facing (not
+  model-facing) lessons — switch model/method after 2 failed attempts rather than re-prompting a 3rd time
+  the same way (worked for both Phase 3 and Phase 6), and diff a reformat pass's section list against the
+  original before accepting it (Phase 4's silently-dropped Open Threads/bibliography).
+- Documented that Phase 11's 12-seeded-known-conflicts approach (rather than a fully open "find conflicts"
+  prompt) is now the recommended pattern — it caught 12/12 seeded items plus 17 more independently.
+- Updated step 5 (where to drop phase files) and Related Files to point new projects at the hardened
+  `data_project/<project>/` convention (Task 2) instead of the legacy fuzzy-matching
+  `doc_backup/inbox/phased/<Project>/` path.

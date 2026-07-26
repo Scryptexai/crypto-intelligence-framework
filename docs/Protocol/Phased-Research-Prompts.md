@@ -43,16 +43,41 @@ single-shot prompt is unaffected and stays external as before.
      everything: use the **assembled dossier** (`./run.sh` / `tools/ingest.py --type phased` run against
      whatever phases are done so far) as the single context document instead of re-pasting every raw phase
      file separately — the tooling already exists to produce this, no reason to do it by hand.
+3b. **Per-phase Context Pack — quick reference (Track A).** The rule in step 3 is general; this is what it
+   resolves to for each phase, so you don't have to re-derive it each time (this was a real point of
+   confusion running the pipeline for the first time on LayerZero — "which file do I attach for Phase 5?"):
+
+   | Phase | Attach |
+   |---|---|
+   | 1 Foundation | (nothing — first phase) |
+   | 2 Entity | Phase 1, full |
+   | 3 Historical | Phase 1 full + Phase 2 index (names/types) |
+   | 4 Technology | Phase 1 full + Phase 2/3 index |
+   | 5 Financial | Phase 1 full + Phase 2/3/4 index |
+   | 6 Token | Phase 1 full + Phase 2–5 index |
+   | 7 Ecosystem | Phase 1 full + Phase 2–6 index |
+   | 8 Market | Phase 1 full + Phase 2–7 index (+ Sentiment companion if it exists — see step 4) |
+   | 9 Behavioral | Phase 1 full + Phase 3 **full** (motive analysis needs the actual event bodies, an index of labels isn't enough) + Phase 2/4–8 index |
+   | 10 Knowledge Extraction | the **assembled dossier** (`./run.sh`), not individual phase files |
+   | 11 Conflict Resolution | the **assembled dossier** (`./run.sh`) + your own running list of discrepancies noticed while drafting phases 1–10 (see "Seed the Conflict Resolution phase" below — don't rely on an open-ended "find conflicts" prompt alone) |
+
 4. If the project already has a `examples/Sentiment/<Project>.md` companion (Grok/X), paste it as additional
    context for **Phase 8 (Market/Ecosystem) and the Conflict Resolution phase** — Gemini's research is
    secondary/aggregated evidence (what's been written about the project); Grok's is primary/live evidence
    (what the community is saying right now, with real post citations). A gap between the two — Gemini's
    sources say the community is positive, Grok's live scan says sentiment soured last week — is exactly the
    kind of `INKONSISTENSI` this pipeline exists to surface, not smooth over.
-5. Export each phase's raw output as its own `.docx`, named so the phase key is a substring
-   (e.g. `03-history.docx`) — see `doc_backup/inbox/README.md`. Drop all of a project's phase files into
-   `doc_backup/inbox/phased/<ProjectName>/` and run `./run.sh` — `tools/ingest.py` assembles them
-   automatically, no LLM needed for that step.
+5. Export each phase's raw output as its own `.docx`, named `NN-<phasekey>.docx` with the **exact** phase
+   key (`foundation`, `entity`, `history`, `technology`, `financial`, `token`, `ecosystem`, `market`,
+   `behavioral`, `knowledge`, `conflict`) — e.g. `03-history.docx`, not `03-historical.docx` (a
+   near-miss like that silently dropped a whole phase from LayerZero's first dossier assembly before this
+   convention existed). For **new projects**, drop all of a project's phase files into
+   `data_project/<project>/` (lowercase, e.g. `data_project/arbitrum/`) and run `./run.sh` —
+   `tools/ingest.py`'s hardened `data_project` mode assembles them automatically, no LLM needed for that
+   step, and hard-fails with a clear reason (not a silent partial dossier) if a filename doesn't match or
+   content verification fails. See `tools/README.md` for the full contract. (The older
+   `doc_backup/inbox/phased/<ProjectName>/` convention, fuzzy filename matching, no content verification —
+   still works for in-flight projects but should not be used for new ones.)
 6. Every prompt below shares the same closing/format rules — defined once, not repeated per phase. Every
    phase output must follow the literal template given (field names, order) — a template exists specifically
    so output is comparable across projects instead of free-form and inconsistent.
@@ -81,6 +106,16 @@ FORMAT RULES (apply to your entire answer):
   Do not let this phase's answer repeat that failure.)
 - Never fabricate. If something is unknown or unverifiable, write "unknown" — do not guess, do not infer
   silently, do not fill a gap with a plausible-sounding but unsourced claim.
+- If you cannot find a source for a fact, actually search harder before giving up on it — use a
+  "cannot verify" fallback on at most 1-2 fields in your entire answer. If you are reaching for it more than
+  that, you are not searching hard enough, not encountering a genuinely unsourceable project. (Lesson from a
+  real failure: one attempt applied this fallback to every single field instead of searching — that is a
+  worse output than partial coverage with real citations.)
+- A specific number or percentage from a single source is not automatically correct — this applies
+  especially to tokenomics (TGE %, fee-switch status, treasury size). Cross-check any load-bearing
+  quantitative claim against the project's own primary source (official blog, governance page, on-chain
+  data) before reporting it as fact. (Lesson from a real failure: a fabricated TGE-unlock percentage from a
+  low-quality secondary source went unchallenged until an independent pass caught it.)
 - Where a claim is contested by different sources, note it explicitly ("Source A says X, Source B says Y") —
   do not silently pick one.
 - Attach the source to EACH FACT, on the same line — not as a bibliography at the end. A numbered source
@@ -96,6 +131,46 @@ FORMAT RULES (apply to your entire answer):
 - End your output with a heading "Open Threads" followed by a bullet list of anything you found uncertain,
   contradictory, or worth a deeper look — hand it to the next phase instead of guessing it closed.
 ```
+
+## Known failure patterns (learned running this pipeline end-to-end on LayerZero, 2026-07)
+
+LayerZero is the first project to complete all 11 Track A phases — several phases needed 2–3 attempts before
+producing a usable result. These are the concrete failure modes hit, so the next project doesn't re-discover
+them the slow way. `tools/ingest.py`'s `data_project` mode now hard-checks some of these automatically
+(`validate_phase_content()` — see `tools/README.md`), but the model-facing prompt guidance below still
+matters since the automated check can only catch a defect after the fact, not prevent the model from
+producing it.
+
+- **Escape-hatch overuse.** When a citation-search instruction is hard, some models apply a
+  "cannot re-verify source" fallback phrase to *every* field instead of actually searching — Phase 3's
+  second attempt did this to all 13 pre-existing events, with zero real search attempted. If you see this
+  starting, add an explicit cap to the prompt: *"Use the 'cannot verify' fallback on at most 1–2 fields
+  total — if you're about to use it more than that, you are not searching hard enough; try harder before
+  falling back."* `tools/ingest.py`'s `validate_phase_content()` now flags this automatically when the
+  fallback phrase appears as often or more than real Evidence Level tags.
+- **Two failed attempts on the same instruction from the same model → switch model or method, don't
+  re-prompt a third time the same way.** Phase 3 and Phase 6 each failed twice on citation attachment
+  before a *different* approach (a direct citation-mapping research pass instead of re-prompting the
+  research model) succeeded decisively. A third attempt with the same model and a slightly-reworded prompt
+  is unlikely to fix a failure mode the model has now repeated twice.
+- **A reformat/patch pass can silently drop existing sections even when told not to.** Phase 4's citation
+  reformat dropped the "Open Threads" and full bibliography sections despite the prompt's explicit
+  "don't delete facts" rule. When reformatting an existing draft (not researching from scratch), diff the
+  reformatted output's section list against the original's before accepting — don't just spot-check content
+  quality.
+- **A single source's specific number/percentage is not automatically true, especially for tokenomics.**
+  Phase 6's first attempt confidently reported a 25% TGE unlock figure that turned out to be fabricated (the
+  real figure, confirmed against the project's own primary sources, was ~13.5%). Any load-bearing
+  quantitative claim — TGE %, fee-switch status, treasury size — should be corroborated against a primary
+  source (official blog/governance page) before being accepted, not taken from a single secondary mention.
+- **Seed the Conflict Resolution phase with a running list, don't rely on a fully open "find conflicts"
+  prompt alone.** While drafting phases 1–10, keep a running note of numbers/claims that looked shaky or
+  inconsistent across phases (differing figures for the same metric, an Open Thread that never got resolved
+  by a later phase). Feed that list into Phase 11 explicitly, asking the model to verify each one against the
+  actual assembled dossier text (not just copy the list back) *and* find anything else on its own. LayerZero's
+  Phase 11 caught 12 seeded items plus 17 more found independently — a purely open-ended prompt would likely
+  have missed some of the seeded ones, since a model scanning a 2000+ line assembled dossier cold doesn't
+  reliably surface every discrepancy without a checklist to verify against.
 
 ---
 
@@ -533,4 +608,6 @@ Open Threads
 `docs/Ontology/DecisionEvent.md`, `docs/Ontology/Context.md`, `docs/Ontology/Hidden.md`,
 `docs/Ontology/Relationships.md` (entity graph + `exposure_type`, for cross-project contagion mapping),
 `examples/DatasetIndex.md` § "Phased Deep Research Queue" (progress tracking), `examples/PatternRegistry.md`,
-`tools/ingest.py` (`process_phased_project`), `doc_backup/inbox/README.md`.
+`tools/ingest.py` (`process_phased_project` — legacy fuzzy-matching folder convention; `process_data_project`
++ `validate_phase_content` — hardened `data_project/<project>/` convention, use this for new projects),
+`tools/README.md` (usage + the content-verification checks), `doc_backup/inbox/README.md`.
