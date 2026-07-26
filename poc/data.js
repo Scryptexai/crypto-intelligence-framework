@@ -2,10 +2,10 @@
 window.CIF = {
   "meta": {
     "schema": "cif-export/1",
-    "generated": "2026-07-24 03:53 UTC",
+    "generated": "2026-07-26 12:25 UTC",
     "projects": 26,
-    "deep": 12,
-    "summary": 14,
+    "deep": 13,
+    "summary": 13,
     "sentiment": 0,
     "patterns": 6,
     "source": "examples/DatasetIndex.md + examples/PatternRegistry.md + examples/Sentiment/"
@@ -184,6 +184,17 @@ window.CIF = {
       ]
     },
     {
+      "n": "LayerZero",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/LayerZero.md",
+      "cat": "Interoperability / Omnichain Messaging (Bridge, GMP, DVN security)",
+      "era": "2021–",
+      "tags": [
+        "first-mover",
+        "bridge"
+      ]
+    },
+    {
       "n": "Synthetix",
       "tier": "Summary",
       "file": "examples/Pioneer/Synthetix.md",
@@ -272,20 +283,6 @@ window.CIF = {
         "oracle",
         "infra",
         "bridge"
-      ]
-    },
-    {
-      "n": "LayerZero",
-      "tier": "Summary",
-      "file": "examples/Pioneer/LayerZero.md",
-      "cat": "Bridge / Interoperability",
-      "era": "2021–",
-      "tags": [
-        "bridge",
-        "interop",
-        "airdrop",
-        "oracle",
-        "sybil"
       ]
     },
     {

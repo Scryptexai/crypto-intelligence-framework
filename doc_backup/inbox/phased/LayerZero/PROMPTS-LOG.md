@@ -2051,4 +2051,58 @@ Open Threads
 - Awali output dengan: PROJECT: LayerZero
 ```
 
-**Result:** pending — awaiting output.
+**Result:** succeeded — model not disclosed by the maintainer. All 12 seeded known-conflicts checked against
+the actual dossier text (not copied verbatim from the prompt), correctly declining to force a block for
+items that turned out genuinely resolved:
+- (1) chain count 50+/130+/165+/168/170+ — still open, no phase gives a single figure with a consistent
+  definition+date (MEDIUM).
+- (2) dApp count 80+/300+/750+ — still open, same issue (MEDIUM).
+- (3) Stargate acquisition $110M (DL News) vs $120M (LayerZero blog) — still open, only partially explained
+  by the blog's own "$25M effective cash cost" note (HIGH).
+- (4) $263M vs Tracxn's $318M — resolved, dossier already flags Tracxn as a double-count and no other phase
+  repeats it.
+- (5) LayerZero Labs Ltd. vs Optimistic Labs Limited — still open, no phase clarifies the relationship.
+- (6) auditor roster (Zokyo investor-vs-auditor) — still open, roster remains unverified.
+- (7) Kelp DAO date — resolved, zero residual "April 2024" references found across Historical/Technology/
+  Behavioral.
+- (8) FTX settlement "$111M" — resolved, no phase cites it as fact.
+- (9) Stargate TVL peak ">$3B" vs Market Intelligence's precise 2026 figures — resolved-as-imprecision (not a
+  numeric contradiction, just an undated approximate figure).
+- (10) EigenLabs/Delegate DVN status — resolved, all phases consistently say "unknown."
+- (11) Radiant/Ondo multi-DVN verification — still open, Historical's claim about Ondo's policy is not
+  independently verified elsewhere.
+
+Beyond the 12 seeded items, 17 more INKONSISTENSI blocks were found independently (29 total) — the strongest
+being a clean distinction between LayerZero's 85.7% *volume* share of 30-day GMP and the $7.24B Chainlink
+CCIP *TVL* exodus as two different metrics, not a contradiction (a subtlety easy to get wrong), and
+correctly not over-claiming the Trail-of-Bits/CrowdStrike/QuillAudits multi-firm incident-response mentions
+as conflicting (several firms can legitimately be involved at once).
+
+One structural formatting issue on verification, not a factual one: the raw output's "Open Threads" section
+carried a header claiming its contents were all "checked, no conflict found," but about 40% of its own
+bullets explicitly stated they were *still* open (e.g. "masih terbuka") — internally contradicting its own
+title. Root cause: the prompt itself asked for resolved-and-unresolved items to share one Open Threads list
+(designed that way to avoid losing the "checked, confirmed fine" items), which in hindsight produced a
+misleading label. Patched mechanically during docx conversion by splitting into two accurately-titled
+subsections ("Open Threads — Belum Terselesaikan" / "Sudah Diperiksa — Tidak Ditemukan Konflik Nyata"),
+purely a reorganization based on what each bullet's own text already says — no wording changed, no content
+added or removed. Also stripped stray markdown `**` bold markers that leaked into ~8 lines (cosmetic, not
+content).
+
+Assembling the final dossier surfaced one live infrastructure issue, unrelated to the LLM's output quality:
+`06-token-rejected-nocitation-badprose.docx` (the rejected first Phase 6 draft, kept in-folder for audit
+trail) fuzzy-matched the old `phased` pipeline's substring-based phase-key detector on "token" and was
+silently pulled into the archive step alongside the real `06-token.docx`. Verified the correct file's content
+still won in the assembled dossier (alphabetical sort put it second, overwriting the rejected draft's entry)
+— not a factual corruption — but the archive citation in the dossier header was duplicated, and re-running
+`--force` in the future would have been non-deterministic. This is exactly the fragility class the new
+`data_project/` hardened ingest mode (`tools/ingest.py`, `tools/README.md`) was built to hard-fail on instead
+of silently tolerating. Fixed by moving both stray `.docx` drafts (`03-historical-attempt3-nocitation.docx`,
+`06-token-rejected-nocitation-badprose.docx`) into `doc_backup/inbox/phased/LayerZero/_rejected/`
+(non-destructive `git mv`) and re-running `ingest.py --force` — clean 11/11 assembly, no unmatched-file
+warning, no duplicate archive citation.
+
+**Active file:** `doc_backup/inbox/phased/LayerZero/11-conflict.docx`. `examples/CaseStudies/LayerZero.md`
+regenerated at 11/11 phases — LayerZero is now a complete Deep Dossier (D13 in `DatasetIndex.md`).
+`examples/Pioneer/LayerZero.md` removed per the established Deep-supersedes-Summary precedent (same
+treatment already applied to D9 Aave, D11 EigenLayer, D12 Celestia).

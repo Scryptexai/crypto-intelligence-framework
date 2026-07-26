@@ -78,7 +78,7 @@ Intelligence non-trivial.
 
 | Project | Track | Phases done | Next phase | Notes |
 |---------|-------|--------------|------------|-------|
-| **LayerZero** | A (full 11) | 1 ✅ Foundation, 2 ✅ Entity (76 entities), 3 ✅ Historical (15/15 events, cited, Kelp DAO date corrected to 18 Apr 2026), 4 ✅ Technology (cited + Kelp DAO date patched), 5 ✅ Financial (4 funding rounds + 5 non-round capital events, FTX settlement confirmed undisclosed), 6 ✅ Token (fee switch confirmed never activated, buybacks confirmed held-not-burned, fabricated 25% TGE claim rejected), 7 ✅ Ecosystem (DeepSeek — first non-Gemini model tried, strongest first-attempt result yet), 8 ✅ Market (growth-vs-erosion tension correctly held together: 85.7% GMP share vs >$7.24B Chainlink CCIP exodus; Aave-picks-CCIP fact cross-verified against an old Phase 3 source), 9 ✅ Behavioral (15/15 Decision Events, 8-POV each; genuinely engaged the targeted cross-phase interpretive hints instead of restating facts), 10 ✅ Knowledge (8-POV Success-Matrix, 10 pattern candidates — 5 seeded + 5 found independently, e.g. the dual-verification non-collusion-assumption pattern and the DAO-picks-lower-bid-for-control pattern) | **11 — Conflict Resolution (final phase)** | Upgrade from existing `Pioneer/LayerZero.md` (Batch 02) to Deep tier. Chosen for its interconnection-heavy ecosystem (160+ chains — strong entity-graph test case) and the ZRO airdrop (Jun 2024) as real Behavioral Intelligence material, already linked as a P4 analog in `PatternRegistry.md`. See the Phase 1/2/3/4/5/6/7/8/9/10 notes below. |
+| _(none — LayerZero completed all 11 phases 2026-07-26 and moved to Deep Dossiers as D13; awaiting next candidate)_ | | | | |
 
 **LayerZero Phase 1 — two source files, deliberately.** The first Gemini pass returned a rich but
 narrative/table-formatted report in English; a reformat pass produced a clean Indonesian Label:Value version.
@@ -366,6 +366,32 @@ Wormhole's larger cash bid for strategic reasons). The 8-POV Success-Matrix avoi
 where the record is genuinely mixed — e.g. Institution: failure, citing the exodus, while still noting
 the countervailing Feb 2026 institutional investment as unproven. Full detail in `PROMPTS-LOG.md`.
 
+**LayerZero Phase 11 — Conflict Resolution, all 12 seeded conflicts checked + 17 more found independently
+(2026-07-26).** Merge-only pass over the assembled 10-phase dossier (no new research). All 12 seeded
+known-conflicts were re-verified against the actual dossier text rather than copied: correctly confirmed
+resolved (not forced into a contradiction block) where a later phase's correction had genuinely propagated
+— e.g. the Kelp DAO date fix (18 Apr 2026) has zero residual "April 2024" references across Historical/
+Technology/Behavioral, and the fabricated "$111M FTX settlement" figure appears nowhere as fact — while
+correctly kept open where the record genuinely disagrees, e.g. chain-count (50+/130+/165+/168/170+, no
+consistent definition or date across phases) and the LayerZero Labs Ltd./Optimistic Labs Limited entity
+relationship (still unclarified). 29 INKONSISTENSI blocks total (12 seeded + 17 self-found, e.g. distinguishing
+LayerZero's 85.7% GMP *volume* share from the $7.24B Chainlink CCIP TVL exodus as different metrics, not a
+contradiction). Verification found the raw output's own "Open Threads" section mixed genuinely-unresolved
+items with resolved-no-conflict recaps under one misleading header (an artifact of how the prompt itself was
+worded, not a model error) — patched mechanically into two accurately-labeled subsections during docx
+conversion, no wording changes. Assembling the final 11/11 dossier also surfaces a live instance of the
+Phase 3 filename-detection bug: `06-token-rejected-nocitation-badprose.docx` (the rejected first Phase 6
+draft, kept in the folder for audit trail) fuzzy-matched the "token" phase key and was silently pulled into
+the archive step — the *correct* file's content still won by alphabetical sort luck, verified against the
+assembled dossier's Token Intelligence section, but this is exactly the fragility Task 2's `data_project`
+mode (see `tools/README.md`) was built to hard-fail on instead of silently tolerating. Moved both stray
+`.docx` drafts (`03-historical-attempt3-nocitation.docx`, `06-token-rejected-nocitation-badprose.docx`) into
+`doc_backup/inbox/phased/LayerZero/_rejected/` (non-destructive) and rebuilt — clean 11/11 assembly, no
+unmatched-file warnings, no duplicate archive citations. **LayerZero is now a complete Deep Dossier (D13)** —
+moved out of this queue; `examples/Pioneer/LayerZero.md` removed per the established Deep-supersedes-Summary
+precedent (same treatment already applied to D9 Aave, D11 EigenLayer, D12 Celestia). `poc/cif.json`/`data.js`
+rebuilt (`build_json.py`) — 13 deep projects now; `backtest.py` still passes 3/3.
+
 **When a phase completes:** update its row's "Phases done"/"Next phase" columns in the same commit as dropping
 the phase's raw `.docx` into `doc_backup/inbox/phased/LayerZero/`. Once all phases planned for the Track are
 done, run `./run.sh` to assemble the dossier, then move the finished project out of this table (it becomes a
@@ -388,6 +414,7 @@ _Tier: Deep · anchor projects with full causal history._
 | D10 | ether.fi | DeFi / Liquid Restaking (LRT) + DeFi Neobank (Stake/Liquid/Cash) | 2022– | Deep Research (Gemini) | `CaseStudies/EtherFi.md` | `doc_backup/deep/EtherFi_2026-07_gemini.docx` |
 | D11 | EigenLayer | Infrastructure / Restaking pioneer → EigenCloud (verifiable AI/compute) | 2021– | Deep Research (Gemini) | `CaseStudies/EigenLayer.md` | `doc_backup/deep/EigenLayer_2026-07_gemini.docx` |
 | D12 | Celestia | Modular / Data Availability (sovereign alt-DA; DAS/NMT; Fibre 1 Tb/s) | 2019– | Deep Research (Gemini) | `CaseStudies/Celestia.md` | `doc_backup/deep/Celestia_2026-07_gemini.docx` |
+| D13 | LayerZero | Interoperability / Omnichain Messaging (Bridge, GMP, DVN security) | 2021– | Deep Research (Gemini + Claude-direct + DeepSeek), Format v3 Dependency Pipeline (11/11 phases) | `CaseStudies/LayerZero.md` | `doc_backup/inbox/phased/LayerZero/01..11-*.docx` (per-phase, archived individually to `doc_backup/deep/LayerZero_<phase>_2026-07.docx`); full prompt history in `doc_backup/inbox/phased/LayerZero/PROMPTS-LOG.md` |
 
 ---
 
@@ -424,7 +451,7 @@ _Promoted from the Batch 01 candidate queue. Provenance is web research, **not**
 |---|---------|----------|-----|----------|------|
 | 9 | Safe | Wallet / Account Abstraction | 2017– | P0 | `Pioneer/Safe.md` |
 | 10 | Chainlink | Oracle | 2017– | P0 | `Pioneer/Chainlink.md` |
-| 11 | LayerZero | Bridge / Interoperability | 2021– | P1 | `Pioneer/LayerZero.md` |
+| 11 | LayerZero | Bridge / Interoperability | 2021– | P1 | **removed** — superseded by Deep D13, `CaseStudies/LayerZero.md` |
 | 12 | Lido | Liquid Staking | 2020– | P1 | `Pioneer/Lido.md` |
 | 13 | Uniswap | DeFi / AMM | 2018– | P1 | `Pioneer/Uniswap.md` |
 | 14 | World Network (Worldcoin) | Identity | 2019– | P1 | `Pioneer/WorldNetwork-Worldcoin.md` |

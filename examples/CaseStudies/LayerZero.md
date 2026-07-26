@@ -1,9 +1,9 @@
 # LayerZero — Deep Case Study (Phased)
 
 **CIF Dataset — Deep Dossier · Tier: Deep (anchor project)**
-**Source:** Deep Research (Gemini), Format v3 Dependency Pipeline (10/11 phases: foundation, entity, history, technology, financial, token, ecosystem, market, behavioral, knowledge). **Auto-assembled** by `tools/ingest.py` (deterministic, no LLM) — each phase extracted and concatenated in dependency order per `docs/Protocol/Deep-Research-Brief.md`; the reasoning is the source reports'.
-**Raw sources archived:** doc_backup/deep/LayerZero_foundation_2026-07.docx, doc_backup/deep/LayerZero_entity_2026-07.docx, doc_backup/deep/LayerZero_history_2026-07.docx, doc_backup/deep/LayerZero_technology_2026-07.docx, doc_backup/deep/LayerZero_financial_2026-07.docx, doc_backup/deep/LayerZero_token_2026-07.docx, doc_backup/deep/LayerZero_token_2026-07.docx, doc_backup/deep/LayerZero_ecosystem_2026-07.docx, doc_backup/deep/LayerZero_market_2026-07.docx, doc_backup/deep/LayerZero_behavioral_2026-07.docx, doc_backup/deep/LayerZero_knowledge_2026-07.docx.
-**Phases not run:** conflict.
+**Source:** Deep Research (Gemini), Format v3 Dependency Pipeline (11/11 phases: foundation, entity, history, technology, financial, token, ecosystem, market, behavioral, knowledge, conflict). **Auto-assembled** by `tools/ingest.py` (deterministic, no LLM) — each phase extracted and concatenated in dependency order per `docs/Protocol/Deep-Research-Brief.md`; the reasoning is the source reports'.
+**Raw sources archived:** doc_backup/deep/LayerZero_foundation_2026-07.docx, doc_backup/deep/LayerZero_entity_2026-07.docx, doc_backup/deep/LayerZero_history_2026-07.docx, doc_backup/deep/LayerZero_technology_2026-07.docx, doc_backup/deep/LayerZero_financial_2026-07.docx, doc_backup/deep/LayerZero_token_2026-07.docx, doc_backup/deep/LayerZero_ecosystem_2026-07.docx, doc_backup/deep/LayerZero_market_2026-07.docx, doc_backup/deep/LayerZero_behavioral_2026-07.docx, doc_backup/deep/LayerZero_knowledge_2026-07.docx, doc_backup/deep/LayerZero_conflict_2026-07.docx.
+**Phases not run:** none.
 **Supersedes:** `examples/Pioneer/LayerZero.md` — same project now exists as a fuller Deep dossier; the Summary is redundant and should be reviewed for removal (not auto-deleted).
 
 > Faithful concatenation of phase outputs — no fabrication, no distillation beyond what the Conflict Resolution phase itself states. Consider a periodic QC pass.
@@ -1723,6 +1723,127 @@ Pattern Candidate 10: Ketergantungan pada likuiditas stablecoin (Stargate) sebag
 
 · Evidence Level: HIGH
 
+## Conflicting Evidence & Resolutions
+_ref: `docs/Reasoning/Confidence.md` — INKONSISTENSI convention_
+
+PROJECT: LayerZero
+
+Berikut adalah daftar inkonsistensi dan konflik data yang ditemukan dalam dossier gabungan LayerZero (10 fase). Setiap blok mencakup sumber yang bertentangan, level bukti, dan status resolusi jika tersedia.
+
+Inkonsistensi & Resolusi Konflik
+
+INKONSISTENSI
+
+Source A: Foundation Intelligence — "Chain EVM dan Non-EVM Terintegrasi — 165+ (HIGH)" dan "Klaim jumlah chain terintegrasi terbagi antara 50+ dan 165+ — sumber tidak sepakat" (Open Questions).
+
+Source B: Ecosystem Intelligence — "Mendukung 170+ blockchain (HIGH)" (The Block, 23 Juli 2026).
+
+Source C: Market Intelligence — "Jumlah chain terintegrasi: 168 chain (Maret 2026) — sumber lain: 130+ chain (Februari 2026); 50+ vs 165+ (konflik, lihat Open Threads)" dan "Klaim jumlah chain terintegrasi: sumber berbeda menyebut 50+, 130+, 165+, dan 168 — tidak ada konsensus".
+
+Evidence Level: MEDIUM — perbedaan angka muncul dari metode pelacakan (chain aktif vs chain yang pernah terintegrasi) dan tanggal pengambilan data yang tidak selalu dicantumkan. Tidak ada fase yang memberikan satu angka tunggal dengan tanggal dan definisi yang jelas, sehingga konflik tetap tidak terselesaikan.
+
+INKONSISTENSI
+
+Source A: Foundation Intelligence — "Klaim jumlah dApp di ekosistem terbagi antara 80+ dan 750+ — sumber tidak sepakat."
+
+Source B: Ecosystem Intelligence — "300+ aplikasi front-end (per Agustus 2024)" (Messari).
+
+Source C: Market Intelligence — "Klaim jumlah dApp di ekosistem: 80+ vs 750+ — sumber tidak sepakat."
+
+Evidence Level: MEDIUM — angka 300+ mungkin merujuk pada cakupan yang berbeda (front-end vs kontrak), sementara 80+ dan 750+ tidak memiliki tanggal atau definisi yang jelas. Open Questions di beberapa fase mengakui konflik ini tanpa resolusi.
+
+INKONSISTENSI
+
+Source A: Financial Intelligence — "Funding Round: Series A — Amount: $6 juta menurut CoinDesk, $6,3 juta menurut Blockworks — selisih angka nyata antar sumber, keduanya dicantumkan (MEDIUM)."
+
+Source B: Historical Intelligence — Event 16 September 2021 menyebut "jumlah $6 juta ... $6,3 juta (selisih 2,8%)."
+
+Evidence Level: MEDIUM — perbedaan kecil (5%) antar outlet berita yang sama-sama kredibel. Dossier mencatat selisih dan menyajikan keduanya sebagai angka yang valid, sehingga ini adalah konflik numerik yang tidak terselesaikan.
+
+INKONSISTENSI
+
+Source A: Historical Intelligence — Event 10–25 Agustus 2025 (Akuisisi Stargate) — "Nilai headline dilaporkan berbeda: $110 juta (DL News) vs $120 juta (blog resmi LayerZero); blog resmi menyebut biaya kas EFEKTIF hanya $25 juta karena treasury Stargate sendiri menanggung $95 juta aset."
+
+Source B: Financial Intelligence — "Akuisisi Stargate Finance — proposal forum 10 Agustus di harga $0,1675/token STG ... Nilai headline dilaporkan berbeda: $110 juta (DL News) vs $120 juta (blog resmi LayerZero); blog resmi menyebut biaya kas EFEKTIF hanya $25 juta ... Satu sumber berkualitas rendah menyebut '$138 juta' — abaikan."
+
+Evidence Level: HIGH — perbedaan headline ($110M vs $120M) jelas, tetapi fase yang sama menjelaskan bahwa nilai efektif kas lebih rendah karena aset Stargate sendiri menutupi sebagian besar biaya. Blog resmi mungkin menggunakan nilai bruto yang berbeda (termasuk komponen non-kas) sehingga konflik headline tetap ada tetapi dapat dijelaskan secara parsial. Sumber $138 juta ditandai tidak kredibel.
+
+INKONSISTENSI
+
+Source A: Financial Intelligence — "Total pendanaan kumulatif: $263 juta — pendanaan kumulatif setelah putaran ini: $263 juta (PR Newswire; The Block; CB Insights, angka $263,3 juta)."
+
+Source B: Financial Intelligence — "Data agregator (Tracxn '$318 juta total funding') tampaknya menghitung ganda pembelian token sekunder sebagai ronde pendanaan — JANGAN dipakai sebagai angka total funding."
+
+Evidence Level: HIGH — dossier secara eksplisit menyatakan angka Tracxn adalah kesalahan metodologi (double-count) dan hanya angka $263 juta yang harus digunakan. Tidak ada fase lain yang mengutip $318 juta sebagai fakta, sehingga ini bukan konflik antar-fase melainkan peringatan terhadap sumber eksternal.
+
+INKONSISTENSI
+
+Source A: Entity Intelligence — "Entity: Optimistic Labs Limited — Entitas berbadan hukum di British Virgin Islands (BVI) dengan nomor perusahaan 2147541 yang bertindak sebagai operator situs untuk Etherlink Bridge. ... Mereka secara eksplisit menyatakan bahwa mereka tidak mengontrol jembatan itu sendiri dan tidak memegang kustodi atas token pengguna, melainkan hanya menyediakan antarmuka akses."
+
+Source B: Open Questions (Foundation, Entity, Historical, dll.) — "Konflik entitas operasi utama: dokumen resmi LayerZero Labs Ltd. bertentangan dengan Terms of Service jembatan Etherlink yang merujuk entitas 'Optimistic Labs Limited' — hubungan pasti belum terselesaikan."
+
+Evidence Level: MEDIUM — dossier mengakui bahwa ada dua entitas BVI, tetapi tidak ada fase yang mengklarifikasi apakah Optimistic Labs adalah anak perusahaan, entitas yang berganti nama, atau mitra lisensi. Hubungan ini tetap terbuka.
+
+INKONSISTENSI
+
+Source A: Technology Intelligence — "Audit History" mencantumkan Zokyo sebagai firma audit yang meninjau pustaka Endpoints dan memberikan saran remediasi fungsi Solidity.
+
+Source B: Financial Intelligence — "Zokyo — Maret 2022 hingga 2026 — Bertindak sebagai firma penilai kerentanan kode..."
+
+Source C: Open Questions (Technology) — "[TEMUAN 2026-07-25, dari Phase 3 citation-mapping research]: Daftar auditor di atas (Trail of Bits, Zellic, Zokyo, Peckshield, Hacken, ClawSecure) TIDAK berhasil diverifikasi secara independen pada riset citation-mapping Phase 3 — Zokyo khususnya hanya ditemukan sebagai investor Series A Extension di satu sumber (Bitcoinist), bukan sebagai auditor."
+
+Evidence Level: MEDIUM — Technology Intelligence mengklaim Zokyo sebagai auditor, sementara riset citation-mapping tidak menemukan bukti dan malah menemukan Zokyo sebagai investor. Ini bukan kontradiksi mutlak (satu entitas bisa menjadi investor dan auditor), tetapi klaim audit Zokyo tidak terverifikasi. Dossier menandai roster audit sebagai "belum terverifikasi" sehingga konflik ini tetap terbuka sampai verifikasi dari halaman resmi LayerZero.
+
+INKONSISTENSI
+
+Source A: Historical Intelligence — "Date: 18 April 2026 [KOREKSI TANGGAL KRITIS] — Event: Insiden Eksploitasi Kelp DAO Senilai $292 Juta (HIGH) — Draf sebelumnya keliru mencantumkan tanggal insiden ini sebagai 'April 2024' ... Riset ulang ... memastikan insiden ini terjadi 18 April 2026."
+
+Source B: Technology Intelligence — Security Model — "[KOREKSI 2026-07-25: tanggal insiden dikonfirmasi 18 April 2026, bukan April 2024 — lihat Phase 3 Historical Intelligence untuk verifikasi silang CoinDesk/Chainalysis/QuillAudits]"
+
+Source C: Behavioral Intelligence — Decision Event 18 April 2026 menggunakan tanggal yang sudah dikoreksi.
+
+Evidence Level: TIDAK ADA KONFLIK — semua fase yang relevan (Historical, Technology, Behavioral) telah diperbarui ke 18 April 2026. Tidak ada sisa referensi "April 2024" di dossier gabungan yang teridentifikasi.
+
+INKONSISTENSI
+
+Source A: Historical Intelligence — Catatan pada event 11 November 2022 — "[KOREKSI] $11,5 juta (bukan $10,7 juta seperti draf sebelumnya) dalam bentuk kas operasional terperangkap di platform bursa FTX."
+
+Source B: Tidak ada fase lain yang mengutip angka $10,7 juta.
+
+Evidence Level: TIDAK ADA KONFLIK — dossier telah mengoreksi angka tersebut secara konsisten di fase Historical. Tidak ada fase lain yang mempertahankan angka lama.
+
+INKONSISTENSI
+
+Source A: Financial Intelligence — "NILAI DOLAR SETTLEMENT FINAL TIDAK PERNAH DIUNGKAPKAN PUBLIK — Pellegrino hanya menulis ... 'original repurchase' telah dikembalikan ke estate', plus 40 juta ZRO ... Angka '$111 juta' yang beredar di draf-draf sebelumnya TIDAK DIDUKUNG sumber manapun — dikonfirmasi lewat pencarian docket/pers khusus."
+
+Source B: Historical Intelligence — Catatan pada event September 2023 — "[TIDAK TERVERIFIKASI]: nomor proses '23-50585' (kemungkinan hanya 23-50492-JTD yang benar); ... angka '$111 juta+' tidak ditemukan verbatim di sumber manapun."
+
+Source C: Open Questions (Financial) — "Nilai dolar final settlement FTX (31 Januari 2025) tidak dapat diverifikasi dari sumber manapun — satu-satunya sumber adalah pernyataan CEO sendiri di X, tanpa dokumen pengadilan yang mengungkap angka. Angka '$111 juta' yang sempat beredar di draf-draf sebelumnya harus dianggap tidak berdasar dan tidak dipakai lagi."
+
+Evidence Level: TIDAK ADA KONFLIK — semua fase sepakat bahwa $111 juta tidak berdasar dan nilai settlement tidak diungkap. Tidak ada fase yang mengutip $111 juta sebagai fakta.
+
+INKONSISTENSI
+
+Source A: Financial Intelligence — "TVL Stargate Finance puncak: >$3 miliar (periode puncak, per catatan Phase 1 trim)."
+
+Source B: Market Intelligence — "TVL Stargate Finance: ~$1,37 miliar (Q1 2026); $1,22 miliar (26 Maret 2026); $400–600 juta (31 Mei 2026)."
+
+Source C: Historical Intelligence — Event Q1 2022 — "Stargate memicu ledakan adopsi yang hiperbolik, menyedot miliaran dolar dalam bentuk TVL hanya dalam rentang berminggu-minggu..." — tidak memberikan angka puncak spesifik atau tanggal.
+
+Evidence Level: MEDIUM — angka >$3 miliar disebut tanpa tanggal presisi, sementara angka presisi dari Market Intelligence adalah titik waktu tertentu (2026). Tidak ada fase yang memberikan tanggal puncak >$3 miliar, sehingga ini adalah fakta "diketahui approximate, tidak presisi" bukan kontradiksi antara dua angka yang sama-sama bertanggal. Open Questions mencatat "tanggal puncak >$3 miliar itu sendiri pernah dipastikan di fase manapun, atau tetap 'diketahui approximate, tidak presisi'?" — tetap terbuka.
+
+INKONSISTENSI
+
+Source A: Ecosystem Intelligence — "Oracle Integrations: EigenLabs / EigenLayer — terdaftar sebagai DVN provider di indeks Phase 2. Status: tidak diketahui (belum ditemukan bukti status live/announced di sumber yang tersedia). (LOW)"
+
+Source B: Ecosystem Intelligence — "Oracle Integrations: Delegate — terdaftar sebagai DVN provider di indeks Phase 2. Status: tidak diketahui (belum ditemukan bukti status live/announced di sumber yang tersedia). (LOW)"
+
+Source C: Technology Intelligence — tidak menyebut status live untuk EigenLabs/Delegate.
+
+Evidence Level: TIDAK ADA KONFLIK — tidak ada fase lain yang mengklaim status live untuk kedua entitas. Technology Intelligence hanya menyebut "berkolaborasi secara teknis ... untuk membangun CryptoEconomic DVN Framework" (untuk EigenLabs), yang konsisten dengan status "diketahui/announced" tetapi tidak live sebagai DVN provider. Tidak ada kontradiksi.
+
+INKONSISTENSI
+
 ## Open Questions
 - [foundation] Konflik entitas operasi utama: dokumen resmi LayerZero Labs Ltd. bertentangan dengan Terms of Service jembatan Etherlink yang merujuk entitas "Optimistic Labs Limited" -- diselidiki lebih lanjut di Phase 2 (Entity Intelligence), tetap dicatat sebagai konflik nyata yang belum terselesaikan, bukan ditebak.
 - [foundation] Ukuran pasti Core Team belum bisa diverifikasi secara eksternal.
@@ -1748,10 +1869,6 @@ Pattern Candidate 10: Ketergantungan pada likuiditas stablecoin (Stargate) sebag
 - [financial] Selisih angka akuisisi Stargate ($110 juta DL News vs $120 juta blog resmi vs "$138 juta" yang tidak kredibel) — gunakan rentang $110-120 juta, catat biaya kas efektif $25 juta dari blog resmi.
 - [financial] Proyeksi valuasi Messari (FDV $290 juta skenario bear hingga $19,11 miliar skenario bull) adalah PROYEKSI, bukan pendapatan riil yang terealisasi — jangan disajikan sebagai fakta keuangan saat ini di fase-fase berikutnya.
 - [financial] 5 peristiwa modal non-round (a16z, Stargate, 2x buyback, Tether/Citadel/ARK) belum masuk ke timeline Phase 3 (Historical Intelligence) — kandidat kuat untuk ditambahkan sebagai Decision Event baru jika Phase 3 direvisi lagi di masa depan, karena masing-masing punya Trigger/Decision/Execution/Outcome yang bisa direkonstruksi dari sumber yang sudah ada di sini.
-- [token] Taksonomi Penyelesaian Pertentangan Destinasi Aktual Translokasi Restitusi Settlement Litigasi FTX: Matriks rekam jejak arsitektur pasokan menyuguhkan pertentangan diametral dengan signifikansi gravitasi maksimum terkait titik pelabuhan akhir dari transfer kepemilikan repositori bernilai 40.000.000 token ZRO (memegang kunci kuasa kontrol absolut 4% dari pembatasan pasokan siling tertinggi limitasi mutlak) eks-kristalisasi likuidasi paksa yurisdiksi resolusi kepailitan penyelesaian hukum Alameda Research. Publikasi resmi manifesto komunikasi entitas primer yayasan mengklaim mutlak bahwa agregat token tebusan tersebut didistribusikan ulang kepada kluster partisipan "Strategic Partners" sebagai rasionalisasi manuver kompensasi protektif buy-out intervensi hukum. Realitas paralel tercatat tajam tatkala nyaris keseluruhan agregator korporasi panel otoritas peranti analitik intelijen pasokan tokenomics (Datawallet, Bitget, dan Animoca) secara serempak dan sepihak mengatalogkan doktrin yang tak selaras; menyatakan porsi fragmen perbendaharaan ini telah diasingkan dan dialihkan komitmen pengikatannya secara algoritmik (pledged back) untuk bermutasi status masuk menempati lumbung kantong perlindungan kasta alokasi bucket "Community". Resolusi atas defisiensi presisi identifikasi klasifikasi taksonomi pelaporan ini dinilai menduduki peringkat urgensi tingkat sangat genting, karena akan bertindak sebagai parameter pengunci penentu sentral identifikasi profil ke ranah kantong bucket pembagian emisi mana beban gelombang kejut fluktuasi gravitasi tekanan pelepasan persentase penawaran harian eksekusi jadwal buang vesting pelonggaran kontrak smart contract bulanan per siklus pasca-resolusi akan diarahkan untuk jatuh menimpa keseimbangan kedalaman likuiditas lantai pasar di waktu ke depan.
-- [token] Penetapan Kepastian Status Deflasi Absolut vs Paradigma Mekanika Akumulasi Kas Perbendaharaan Internal Protokol atas Penyelesaian Akuisisi 5% (Periode Operasi Buyback Taktis September 2025): Usaha penyelarasan dan penataan rekonstruktif agregat analitik dari ekstraksi intelijen Phase 5 pasca-audit manual melahirkan faksi friksi diskursus akademik perdebatan sengit bertensi sentral atas ketetapan rasionalitas realitas mutlak takdir terminasi keberadaan kluster suplai instrumen raksasa bernilai tak kurang dari formasi kuantitas ~50 juta rentangan pasokan derivasi keping ZRO eks-restitusi pasca-TGE (yang berakar pasca resolusi kalender operasi ekuinoks akuisisi September 2025). Posisi faksi bursa penilai agensi peranti pemindai rekam analitik platform terminal intelijen bursa pasar sekunder Dropstab mengambil pijakan doktrinal persisten yang menyatakan bahwa kepemilikan entitas agregat rentang total blok transaksi akuisisi rentetan token bernilai kisaran kalkulasi estimasi ~$150 juta tunai cair gabungan ekuivalen dolar tersebut telah sukses dieksekusi proses hukum alamiah penghancuran terprogram kriptografis ("dibakar"), memicu premis silogisme yang pada rasionalisasinya akan secara esensial merubah hukum gravitasi matematika hard-cap arsitektur absolut untuk secara harfiah menciutkan ukuran siling limit cetak kerangka ketersediaan total dari persediaan total absolut supply mula-mula dari parameter batas atap siling 1 miliar unit ZRO merosot mengerut drastis ke perbatasan level ambang batas penyesuaian bawah limit absolut 950 juta total sisa siling suplai ZRO yang dapat bermutasi bernapas sebagai derivasi produk murni pengekstraksian pasokan pembatasan definitif peredaran deflasi alamiah permanen. Bertentangan tajam mendelegitimasi tesis mutlak tersebut, penggabungan riset analitis pendalaman agregasi kompilasi pelaporan kas perbendaharaan kolektif oleh agregator platform evaluasi wacana protokol entitas Blocmates bersama platform indeksasi valuasi bursa Cryptorank membantah tegas kesimpulan di atas dan dengan berani mendudukkan rasionalisasi konstruksi pengerahan modal penggelontoran akuisisi ekuivalen uang tunai LayerZero ke dalam ruang matriks taksonomi struktural metodologi doktrin model "Buyback and Accumulate" bersama kluster "Treasury Buyback" taktis pasif murni. Implikasi pembelahan penafsiran ganda ini bermakna konstelasi interpretasi bahwa struktur operasional sentral entitas Yayasan pada kenyataannya sangat berpotensi tinggi memulihkan, merelokasi, menimbun dan mempertahankan kontrol wewenang administratif penuh memegang kembali agregat bongkahan raksasa sisa pasokan sisa tebusan berjumlah kumulatif presisi absolut genap sentral matriks 50 juta rasio entitas keping token tersebut murni sebagai format wujud instrumen pendelegasian cadangan penyangga instrumen kekuatan amunisi lindung nilai cadangan penembakan modal korporat ventura lindung operasi kompensasi persediaan likuidasi masa depan strategis, mendelegitimasi pembacaan arsitektur bahwa porsi pasokan aset ZRO sirkulasi faksi bersangkutan tersebut telah berpulang kepada ketiadaan absolut sirkulasi fungsional yang terkategorikan ludes diintervensi termusnahkan di ruang pembakaran pemusnah limbah digital kontrak tak bersahut (burn permanen tereliminasi dari eksistensi), melainkan membelokkan ekuilibrium rasio valuasi fundamental yang merepresentasikan realitas eksistensi sirkulasi rotasi kantong yang mendegradasi probabilitas utilitas sentral deterministik peredaran aset di tengah ekuilibrium gravitasi tarikan inflasi internal struktural deflasi pasokan arsitektur ekosistem fundamentalnya sendiri dalam matriks durasi sirkulasi pasif kelangsungan operasional proyek yang lebih holistik.
-- [token] Presisi Mutlak Matriks Rasio Entitas Pemegang Kapital Penentu Metrik Konsentrasi Kepemilikan Kategori Paus (Dilema Verifikasi Data On-chain Holder Concentration Metrik Siluman): Keheningan data buta algoritma merasuki manifestasi fungsional dari keseluruhan utilitas mesin agregator pemindaian pelacakan rute panel indeks rekam jejak utilitas pelacakan pemetaan pemindai basis data forensik on-chain harian kontemporer, akibat kenyataan fundamental kegagalan kronis sistematis dari segenap kapabilitas arsitektur indeks peranti untuk sukses mengoperasionalkan, mengekstrak metrik siling kepemilikan murni rasio pendelegasian rentang persentase dominasi suplai sirkulasi likuid bursa eksternal secara definitif yang bermukim di dalam dompet kepemilikan struktur pemegang hak suara mayoritas pemeringkat dominator top tier 10 besaran akumulator paus tertinggi, kluster kepemimpinan konsolidator dominasi akumulasi top tier 50 klasemen hierarki perantara paus, maupun kelompok kluster struktur fraksional agregat dominasi rentang klasemen pembagian top 100 perbendaharaan agregat whale pasokan likuid publik komparatif wallet penentu nasib pergerakan kapital murni likuiditas ekuilibrium peredaran rasio arus harga di pasar. Ketidakmampuan absolut sistem pengindeksan publik yang tersedia saat ini untuk mendeduksi meretas sekat abstraksi memetakan sebaran distribusi persentase volume kepemilikan agregat determinan alamat entitas akumulasi kapital paus agregat pengatur cuaca penawaran (whale repository ZRO terpublikasi terdaftar mandiri) telah mereproduksi lahirnya jurang titik buta presisi risiko bahaya celah kebingungan ekstrem instabilitas arsitektur peramalan keakuratan peranti prediksi probabilitas rentan terhadap proyeksi tingkat pendaratan kapasitas sokongan resiliensi dasar penyangga sokongan dasar kekuatan pelindung likuiditas pasar buku pesanan kedalaman batas dangkal kapasitas ekuilibrium penyangga yang dipersiapkan untuk menyerap dan menangkal efek bahaya bencana risiko riak destruktif turbulensi efek tsunami domino daya hancur kejatuhan rasio dampak pembuangan rentang penjualan dumping terkoordinasi pasokan suplai bursa instan sekunder massal harian acak pada bursa likuiditas hari-hari operasi kalender yang diantisipasi memiliki kerentanan pelepasan agregat fluktuasi instabilitas di mana sekuens durasi penyekatan siling pelepasan tebing kunci pembatas cliff pasokan kunci vesting periodik pasokan blokade ikatan institusional secara simultan dibebaskan dan mencurahkan ribuan matriks keping bebas mengalir deras serempak membanjiri buku order rasio ke permukaan kolam pasokan lantai terbuka penyelesaian perputaran eksekusi bursa terbuka tanpa rintangan penghalang limit pesanan batasan mitigasi lindung penutup lindung pasif (mewaspadai sebagai contoh preseden pelepasan massal rasio ekuilibrium institusional pengujian titik krusial pergerakan tebing pada kalender penanda rentang bahaya periode operasi tanggal 20 Maret 2026 yang dijadwalkan mentransfer puluhan juta aset lepas ke zona sirkulasi bebas rasio buang ekuilibrium titik rawan perantara likuid bursa transaksi instan murni).
-- [token] Evaluasi Matriks Rentang Efektivitas Penetapan Rasio Cakupan Aktual Transisi Implementasi Penyerapan Operasional Pengeksekusian Auto-Burn Deflasi "Fee Switch": Terlepas dari proklamasi deklarasi pembenaran pengumuman ratifikasi persetujuan protokol status bahwa pemutaran pelatuk utilitas elemen fee switch pemungutan tarif mesin pembakaran telah dinyatakan dan dikonfirmasi aktif mengeksekusi konversi perputaran mandiri pembakaran peredaran wajib utilitas murni diresmikan mengikat sejak bergulirnya jadwal berlakunya pengaktifan kalender rotasi Februari 2026 dengan menyertakan adendum pelampiran klausul hukum absolut terkait pewajiban algoritma instrumen mekanisme konversi pengalihan devisa mata uang asing perantara eksternal lintas rasio silang pembakaran otomatis secara deterministik wajib dan mutlak tanpa perantara arbitrase pengecualian rasio toleransi penolakan sepihak kelonggaran pengecualian perlakuan manual intervensi pengecualian pasif murni, jejak pengamatan rekaman utilitas data riwayat operasi log harian jejak digital transmisi lintas rantai historis yang mengiringi fungsionalitas sistem desentralisasi tersebut secara beruntun mengindikasikan kehadiran rasio bahaya rintangan ancaman hambatan friksi resistensi mekanik friksi adopsi struktural statis yang menyabotase keakuratan klaim presisi rasio pembakaran bahwa utilitas mekanika rasio sistem konversi penyapuan konversi utilitas perputaran utilitas mesin deflasi pengumpul pungutan otomatis rasio pembakaran otomatis sapuan konversi auto-burn ini sangat rentan dihipotesiskan sedang mengalami gangguan rintangan pembatalan intervensi eksekusi efektivitas rintangan hambatan jangkauan pasif kelambatan struktural sistemik kelambatan cakupan statis murni hambatan friksi adopsi adaptasi pasif dikarenakan rintangan wajib hambatan fundamental statis operasional adopsi manual teknis sistem eksekutor dari lapisan bawah bahwa untuk setiap blok arsitektur instrumen rancang bangunan utilitas entitas kepingan blok fungsi unit instrumen smart contract utilitas antarmuka interaksi pihak pendiri independen proyek desentralisasi pengembang utilitas independen independen lepas lapis bawah (teridentifikasi terhampar menaungi perikiraan probabilitas perkiraan rentang eksistensi penyebaran sekitar jumlah besaran puluhan ribu kontrak tak terkendali mencapai volume skala densitas 50.000+ serpihan unit eksekusi terdistribusi acak ter-deploy statis bermukim berserakan menghuni jangkauan luasan ekspansi cakupan arsitektur topologi protokol komunikasi melintasi 165+ persimpangan kluster wilayah teritorial utilitas jaringan chain lintas perbatasan mandiri tak sinkron berbeda acak) menuntut pelibatan partisipasi mutlak keharusan prosedur penyesuaian penyetelan adopsi teknis arsitektur yang mengharuskan arsitek pembuat perangkat lunak operator proyek secara sadar perihal mengubah merevisi memutakhirkan pemeliharaan parameter skrip instruksi fungsi pemicu pengkodean antarmuka dasar interaksi parameter utilitas pemanggilan logika statis mereka secara satu per satu terisolasi berjenjang sistematis manual berturut-turut (secara prosedural spesifik merujuk pada penyiapan ulang operasi penekanan mengaktifkan paksa status flag modifikasi persetujuan pengubahan saklar deklarasi antarmuka penyetelan utilitas pemotongan spesifik instruksi beralih _payInLzToken biner persetujuan integrasi antarmuka eksekutor fungsional manual mandiri murni) guna sekadar mengabulkan membuka jalan kelancaran arus probabilitas keikutsertaan perizinan sinkronisasi konektivitas kapabilitas instrumen perizinan utilitas pengoperasian penarikan sinkronisasi prasyarat sistem jaringan untuk dapat mengabulkan melegitimasi persetujuan melegalisasi pelegalan mengizinkan eksekusi membayar melunasi pelunasan retribusi menyetorkan tagihan upeti lintas jaringan menggunakan instrumen mediasi perantara substitusi konversi koin penambatan tarif konversi mata uang pembayaran substitusi koin pasokan wujud ZRO murni di tingkat arsitektur instruksi utilitas pelunasan tarif dasar awal akar. Kepelikan defisiensi fungsionalitas operasional visibilitas ini melipatgandakan keputusasaan pemantauan pengawasan rasio di mana tidak ada utilitas penemuan sistem visibilitas pengawasan verifikasi penarikan jejak verifikasi audit forensik on-chain harian terbuka di hamparan luas database dalam arsip peranti agregasi intelijen matriks pemantauan realitas analitis instrumen rasio data intelijen database terminal intelijen dalam ekosistem peranti publik matriks radar pencatatan arsitektur saat ini yang sanggup mensimulasikan mampu mengonfirmasi mensintesis memastikan secara eksplisit merepresentasikan persentase fraksi kuota deterministik pasti mutlak murni pecahan matematis rasio kepastian volume rasio proporsi proporsional persentase volume pecahan cakupan fraksi proporsional rasio persentase volume silang perbandingan dari keseluruhan penampang luasan irisan akumulasi agregat siling rentangan total penyebaran gelombang perputaran total penarikan agregat transmisi total sirkulasi muatan transmisi volume pesan kumulatif pesanan bulanan rutin pasokan pelunasan siklus transaksi perpesanan rutinan pengiriman aktivitas pesan transmisi komputasi jaringan transfer komunikasi lintas simpul beban operasi jaringan bulanan keseluruhan yang pada rasionalisasinya kini sudah sepenuhnya ditarik tunduk patuh murni pada eksekusi algoritma mesin konversi operasi penyapuan auto-burn penghancur deflasi sirkulasi penarikan pasokan paksa otomatis ZRO penciutan pasokan penghancur eliminasi likuiditas tersebut dengan jangkauan efektivitas dominasi penyesuaian rentang rasio penerapan konversi serapan pemusnahan peredaran rasio presisi penarikan mutlak operasi pembakaran serapan murni eksekusi presisi operasi konversi persentase serapan tersebut tanpa celah di atas kertas kalkulasi deflasi ekuilibrium fungsional peredaran matriks arsitektur suplai ekosistem konstan hari demi hari dalam utilitas perputaran utilitas ekonomi sirkulasi peredaran murni agregat instrumen lintas ekosistem makro ekonomi secara presisi operasional mutlak konstan mutlak sirkulasi aktual fungsional presisi kalkulasi deterministik pasti instan riwayat data rekam empiris harian murni aktual berjalan presisi perantara yang fungsional mutlak saat ini.
 - [token] Circulating supply tidak punya angka tunggal yang disepakati — rentang 252 juta (DefiLlama) hingga 514 juta (angka "unlocked" versi Foundation) tergantung metodologi; selalu sebutkan tracker + tanggal saat mengutip angka ini di fase mana pun berikutnya.
 - [token] Jadwal vesting resmi untuk bucket "Tokens Repurchased" (4%) TIDAK PERNAH diungkap Foundation — jadwal yang beredar (tokenradar.ai, DropsTab) adalah model agregator, bukan disclosure resmi.
 - [token] Delegasi voting ZRO diklaim beberapa sumber sekunder tapi TIDAK dikonfirmasi dokumen primer — hanya voting langsung berbobot-token per-chain tunggal yang terkonfirmasi.
@@ -2057,3 +2174,92 @@ Pattern Candidate 10: Ketergantungan pada likuiditas stablecoin (Stargate) sebag
 - [knowledge] · Status DVN Provider: Status live/announced untuk DVN provider EigenLabs/EigenLayer dan Delegate belum dapat diverifikasi dari sumber yang tersedia. (LOW) [Ecosystem Intelligence, Oracle Integrations; Open Questions]
 - [knowledge] · Jumlah Chain Terintegrasi: Klaim bervariasi antara 50+, 130+, 165+, 168, dan 170+ — tidak ada konsensus. (MEDIUM) [Foundation Intelligence; Ecosystem Intelligence; Market Intelligence; Open Questions]
 - [knowledge] · Jumlah dApp: Klaim 80+ vs 750+ — sumber tidak sepakat. (MEDIUM) [Foundation Intelligence; Ecosystem Intelligence; Open Questions]
+- [conflict] Source B: Ecosystem Intelligence — "Applications Built On It: Ondo Finance — tokenisasi aset dunia nyata" — tidak menyebut konfigurasi DVN.
+- [conflict] Source C: Historical Intelligence — Event 18 April 2026 — "Ondo memberlakukan kebijakan anti-manipulasi yang ketat di mana integrasi teknis LayerZero mereka diwajibkan menggunakan setidaknya tiga DVN independen..." — ini mengindikasikan Ondo telah menerapkan multi-DVN, tetapi tidak ada tanggal implementasi dan tidak ada sumber verifikasi independen.
+- [conflict] Evidence Level: MEDIUM — Historical Intelligence mengklaim Ondo memiliki kebijakan multi-DVN, tetapi Behavioral Intelligence menandai klaim tersebut sebagai belum terverifikasi. Tidak ada fase yang memberikan bukti audit atau pernyataan resmi Ondo yang mengonfirmasi hal ini. Jadi, ada ketegangan antara klaim (di Historical) dan status "belum terverifikasi" (di Behavioral/Open Questions) — tetapi bukan kontradiksi langsung, melainkan klaim yang belum didukung bukti. Open Questions meminta verifikasi lebih lanjut.
+- [conflict] INKONSISTENSI
+- [conflict] Source A: Token Intelligence — "Circulating supply: CoinGecko ~350-363 juta (satu halaman bahkan tidak konsisten secara internal — 584,2 juta unlocked vs 282,8 juta locked vs 133 juta TBD); CoinMarketCap 363.062.136; Tokenomist.ai/CryptoRank 353,31 juta (35,33%); DefiLlama 252,33 juta (paling konservatif); blog resmi LayerZero: '514 juta unlocked, sisa 486 juta vesting'."
+- [conflict] Source B: Token Intelligence — "Gunakan rentang ~350-363 juta sebagai angka 'market-facing circulating' dan ~514 juta sebagai angka 'unlocked' versi Foundation — SELALU sebutkan tracker + tanggal, JANGAN publikasikan angka tunggal tanpa konteks."
+- [conflict] Evidence Level: MEDIUM — perbedaan muncul dari metodologi pelacakan yang berbeda (token yang di-relock vs token yang benar-benar beredar). Fase yang sama mengakui perbedaan dan menyarankan untuk tidak menyajikan angka tunggal. Ini adalah konflik numerik yang tidak terselesaikan karena tidak ada standar tunggal, tetapi dossier sudah memberi panduan cara mengutip.
+- [conflict] INKONSISTENSI
+- [conflict] Source A: Token Intelligence — "Fee Switch BELUM PERNAH diaktifkan. SEMUA 4 referendum berstatus 'Outcome: Off' di halaman governance resmi Foundation (HIGH): Vote #1 (20-27 Des 2024): kuorum 60% suplai beredar, turnout 10,96%, Off; Vote #2 (20-27 Jun 2025): kuorum diturunkan ke 50,40%, turnout 13,01%, Off; Vote #3 (19-27 Des 2025): kuorum 40,59% (~230 juta ZRO), ~97% 'Ya' dari yang memilih TAPI turnout cuma 3,71% — GAGAL kuorum, tetap Off; Vote #4 (20-27 Jun 2026): Off."
+- [conflict] Source B: Token Intelligence — "Beberapa sumber sekunder berkualitas menengah (0xprocessing, halaman AI CoinMarketCap, penjelasan KuCoin) SALAH mengklaim fee switch aktif Des 2025/Feb 2026 — dikontradiksi telak oleh sumber primer Foundation DAN DefiLlama yang menunjukkan $0 pendapatan protokol."
+- [conflict] Evidence Level: HIGH — dalam dossier itu sendiri, tidak ada fase yang mengklaim Fee Switch aktif. Semua fase (Token, Financial, Historical) konsisten bahwa Fee Switch belum aktif. Sumber sekunder di luar dossier yang salah tidak dianggap sebagai bagian dari fase yang bertentangan. Dengan demikian, tidak ada inkonsistensi antar-fase di dalam dossier.
+- [conflict] INKONSISTENSI
+- [conflict] Source A: Token Intelligence — "Total buyback (DITAHAN, bukan dibakar) sejak September 2025: $112,7 juta, mencakup 19,77% total suplai dalam ~18 bulan (termasuk pembelian sekunder a16z $55 juta April 2025)."
+- [conflict] Source B: Token Intelligence — "Buyback Foundation menurunkan unlock bulanan kotor Strategic Partners dari 15 juta jadi 12,7 juta." dan "Total buyback ZRO sejak September 2025: $112,7 juta (per blog perusahaan), mencakup 19,77% dari total suplai."
+- [conflict] Source C: Open Questions (Token) — "Penetapan Kepastian Status Deflasi Absolut vs Paradigma Mekanika Akumulasi Kas Perbendaharaan Internal Protokol atas Penyelesaian Akuisisi 5% (Periode Operasi Buyback Taktis September 2025)" — membahas apakah buyback 50 juta ZRO dianggap "dibakar" (deflasi permanen) atau "ditahan/di-relock" (bukan deflasi).
+- [conflict] Evidence Level: MEDIUM — tidak ada dua angka yang bertentangan di sini; yang ada adalah interpretasi berbeda tentang efek buyback terhadap suplai. Token Intelligence dengan jelas menyatakan bahwa buyback tidak membakar token (total supply tetap 1 miliar) dan hanya mengurangi circulating supply. Open Questions mencatat bahwa beberapa agregator (Dropstab) mengklaim token dibakar, tetapi dossier secara eksplisit membantahnya. Jadi, ini adalah konflik antara sumber eksternal (Dropstab) dan klaim resmi (blog Foundation), bukan antar-fase di dalam dossier.
+- [conflict] INKONSISTENSI
+- [conflict] Source A: Historical Intelligence — Event 10 Agustus 2025 (Akuisisi Stargate) — "Rasio tukar statis 1 STG : 0,08634 ZRO dan ambang persetujuan 70%."
+- [conflict] Source B: Financial Intelligence — "Akuisisi Stargate Finance — proposal forum 10 Agustus di harga $0,1675/token STG (rasio tukar 1 STG : 0,08634 ZRO)..."
+- [conflict] Evidence Level: TIDAK ADA KONFLIK — angka rasio dan tanggal sama di kedua fase. Hanya perbedaan headline nilai dolar ($110M vs $120M) yang sudah dicatat di atas.
+- [conflict] INKONSISTENSI
+- [conflict] Source A: Historical Intelligence — Event 20 Juni 2024 (TGE) — "85 juta ZRO didistribusikan ke 1,28 juta+ dompet pada hari peluncuran; fase distribusi kedua di September 2025 mereklamasi ~10 juta token dari bot."
+- [conflict] Source B: Token Intelligence — "TGE Unlock: 8,5% (85.000.000 ZRO) diklaim ritel via airdrop retroaktif, jendela klaim 20 Juni – 20 September 2024 (HIGH); Sybil Defense: ... hasil bersih: ~10.000.000 ZRO (~1% total suplai) diselamatkan dari alamat Sybil."
+- [conflict] Evidence Level: TIDAK ADA KONFLIK — angka dan kronologi konsisten di kedua fase.
+- [conflict] INKONSISTENSI
+- [conflict] Source A: Historical Intelligence — Event 18 April 2026 — "Sekitar 116.500 rsETH (~$292 juta, ~18% dari total suplai rsETH) dikuras pada ~17:35 UTC 18 April 2026; multisig pauser Kelp membekukan kontrak ~46 menit kemudian (18:21 UTC). Penyerang mendepositkan 89.567 rsETH ke Aave dan meminjam ~$190 juta dalam ETH dan aset terkait di Ethereum dan Arbitrum."
+- [conflict] Source B: Technology Intelligence — Security Model — "Insiden manipulasi yang menimpa Kelp DAO pada April 2026 ... transaksi sebesar $292 juta diproses tanpa perlawanan."
+- [conflict] Source C: Market Intelligence — "Insiden eksploitasi Kelp DAO 18 April 2026 ($292 juta hilang)."
+- [conflict] Evidence Level: TIDAK ADA KONFLIK — angka kerugian dan kronologi konsisten di seluruh fase.
+- [conflict] INKONSISTENSI
+- [conflict] Source A: Foundation Intelligence — "Official Name: LayerZero Labs Ltd. (HIGH)" dan "Founding Entity: LayerZero Labs Ltd., British Virgin Islands / Optimistic Labs Limited, British Virgin Islands (konflik entitas -- lihat Open Threads) (MEDIUM)"
+- [conflict] Source B: Entity Intelligence — "Entity: LayerZero Labs Ltd. ... Berbadan hukum di British Virgin Islands (BVI) dan beroperasi dari Vancouver, Kanada." dan "Entity: Optimistic Labs Limited ... Entitas berbadan hukum di British Virgin Islands (BVI) dengan nomor perusahaan 2147541 yang bertindak sebagai operator situs untuk Etherlink Bridge."
+- [conflict] Evidence Level: MEDIUM — dua entitas berbeda, tetapi hubungannya tidak dijelaskan. Ini adalah konflik atau setidaknya ambiguitas yang diakui di banyak Open Questions, dan belum ada fase yang memberikan resolusi.
+- [conflict] INKONSISTENSI
+- [conflict] Source A: Financial Intelligence — "Treasury Size: ~$134 juta per November 2022 (~90% kas/stablecoin: $107 juta kas langsung + $27 juta on-chain, $11,5 juta terjebak di FTX diperlakukan sebagai $0 untuk perencanaan). CEO Pellegrino mengutip ULANG angka yang SAMA pada 31 Januari 2025 — TIDAK ADA angka treasury baru yang diungkapkan sejak 2022; tidak ada saldo treasury 2023-2026 yang dapat diverifikasi independen."
+- [conflict] Source B: Tidak ada fase lain yang memberikan angka treasury baru.
+- [conflict] Evidence Level: TIDAK ADA KONFLIK — ini adalah fakta bahwa treasury tidak diperbarui, bukan inkonsistensi antar-angka. Open Questions mencatat hal ini.
+- [conflict] INKONSISTENSI
+- [conflict] Source A: Financial Intelligence — "Revenue Model: ... LayerZero mengambil tingkat protokol 0% dari fee perpesanan ... Fee switch — jika diaktifkan via governance — akan menerapkan fee protokol tambahan yang hasilnya dipakai buyback-and-burn ZRO, TAPI FEE SWITCH BELUM AKTIF, sehingga pendapatan protokol LayerZero Foundation efektif NOL saat ini."
+- [conflict] Source B: Token Intelligence — "Fee Switch BELUM PERNAH diaktifkan. SEMUA 4 referendum berstatus 'Outcome: Off'."
+- [conflict] Evidence Level: TIDAK ADA KONFLIK — konsisten di semua fase. Tidak ada fase yang mengklaim Fee Switch aktif.
+- [conflict] INKONSISTENSI
+- [conflict] Source A: Historical Intelligence — Event 10 Februari 2026 (Peluncuran Zero) — "Detail arsitektur teknis: Quick Merkle Database (QMDB): 2,3 bytes/entri, 2,28 juta state updates/detik, diuji hingga 15 miliar entri. (HIGH) [arXiv:2501.05262]; Fast Ahead-of-Formation (FAFO): >1,1 juta transfer ETH murni/detik dan >565.000 ERC-20/detik pada satu node ... (HIGH) [arXiv:2507.10757]"
+- [conflict] Source B: Historical Intelligence — Event 10 Februari 2026 — "target hingga 2 juta TPS per zone"
+- [conflict] Evidence Level: TIDAK ADA KONFLIK — angka TPS diambil dari makalah teknis dan proyeksi target; tidak ada fase yang membandingkan keduanya secara kontradiktif. QMDB dan FAFO adalah benchmark internal, sementara 2 juta TPS adalah target desain untuk Zero.
+- [conflict] INKONSISTENSI
+- [conflict] Source A: Ecosystem Intelligence — "Tether (USDT0) — Status: live di 15+ chain."
+- [conflict] Source B: Historical Intelligence — Event 10 Februari 2026 — "Tether Investments menanam modal strategis di ekosistem LayerZero pada hari yang sama dengan pengumuman Zero, dipicu oleh sirkulasi USDt0 (dibangun di atas standar OFT) yang melampaui $70 miliar volume transfer lintas-rantai dalam 12 bulan terakhir."
+- [conflict] Evidence Level: TIDAK ADA KONFLIK — USDT0 live dan Tether juga berinvestasi di LayerZero; ini adalah dua fakta yang saling melengkapi.
+- [conflict] INKONSISTENSI
+- [conflict] Source A: Financial Intelligence — "Runway Estimate: Diklaim perusahaan 'tidak kurang dari 7 tahun' berdasarkan asumsi 2022 (treasury $134 juta) — TIDAK ADA perhitungan runway yang diperbarui sejak itu di sumber manapun; treat sebagai klaim historis perusahaan sendiri, BUKAN estimasi terkini yang tervalidasi independen. (LOW)"
+- [conflict] Source B: Tidak ada fase lain yang mengutip runway terkini.
+- [conflict] Evidence Level: TIDAK ADA KONFLIK — hanya catatan bahwa tidak ada angka baru.
+- [conflict] INKONSISTENSI
+- [conflict] Source A: Entity Intelligence — "Entity: Trail of Bits (HIGH) — Firma audit keamanan siber independen yang ditugaskan untuk melakukan peninjauan keamanan komprehensif terhadap infrastruktur smart contract inti LayerZero, termasuk implementasi OFTWrapper dan Endpoints. ... Period: 2022–sekarang."
+- [conflict] Source B: Open Questions (Technology) — "Daftar auditor di atas (Trail of Bits, Zellic, Zokyo, Peckshield, Hacken, ClawSecure) TIDAK berhasil diverifikasi secara independen pada riset citation-mapping Phase 3 — Zokyo khususnya hanya ditemukan sebagai investor Series A Extension di satu sumber (Bitcoinist), bukan sebagai auditor. Perlakukan roster audit ini sebagai belum terverifikasi sampai dicek langsung dari halaman audit resmi LayerZero."
+- [conflict] Evidence Level: MEDIUM — Entity Intelligence mengklaim Trail of Bits sebagai auditor, tetapi Open Questions mengatakan daftar auditor belum diverifikasi. Ini bukan kontradiksi langsung (Trail of Bits mungkin memang auditor), tetapi ada ketegangan antara klaim dan kurangnya verifikasi. Dossier menandai seluruh roster audit sebagai "belum terverifikasi" sehingga status Trail of Bits juga belum final.
+- [conflict] INKONSISTENSI
+- [conflict] Source A: Entity Intelligence — "Entity: CrowdStrike (HIGH) — Perusahaan keamanan siber terkemuka berskala global yang disewa dan berkolaborasi secara ekstensif dengan tim LayerZero Labs untuk melakukan analisis forensik digital, ... pasca eksploitasi $292 juta..."
+- [conflict] Source B: Historical Intelligence — Event 18 April 2026 (Kelp DAO) — "Analisis post-mortem forensik (QuillAudits) mengonfirmasi vektor..."
+- [conflict] Source C: Historical Intelligence — Event Mei 2026 (Modifikasi DVN) — "LayerZero menyebarkan patch endpoints..."
+- [conflict] Evidence Level: TIDAK ADA KONFLIK — CrowdStrike, Mandiant, zeroShadow, dan QuillAudits semua terlibat dalam respons insiden; tidak ada fase yang mengatakan hanya satu firma yang terlibat. Fase yang berbeda menyebut firma berbeda, tetapi tidak saling meniadakan.
+- [conflict] INKONSISTENSI
+- [conflict] Source A: Token Intelligence — "Holder Concentration: Nansen (Mar 2026) — satu entitas mengakumulasi 24,5 juta ZRO (2,6% suplai beredar) lewat 9 dompet yang didanai dari Coinbase Prime (rata-rata entry $1,94; total ~$47,5 juta; nol penjualan tercatat)."
+- [conflict] Source B: Token Intelligence — "Blog resmi LayerZero (data hingga 31 Mei 2026): SATU entitas bertanggung jawab atas 37,9% dari SELURUH ZRO unlocked yang terjual di pasar terbuka hingga saat itu (sudah menjual >80% posisinya) — sinyal konsentrasi di sisi PENJUAL."
+- [conflict] Evidence Level: TIDAK ADA KONFLIK — dua sinyal konsentrasi yang berbeda (pembeli vs penjual) dan dari sumber berbeda. Tidak ada fase yang menyatakan keduanya adalah entitas yang sama, jadi ini adalah dua fakta terpisah.
+- [conflict] INKONSISTENSI
+- [conflict] Source A: Market Intelligence — "LayerZero menguasai 85,7% dari total volume GMP $7,9–8,2 miliar tersebut dalam 30 hari (Allium Labs Dashboard, hingga 9 Juni 2026)."
+- [conflict] Source B: Market Intelligence — "Efek Eksodus Chainlink CCIP: ... telah terjadi eksodus modal institusional signifikan ... per Juli 2026, lebih dari $7,24 miliar aset telah pindah dari LayerZero ke Chainlink CCIP."
+- [conflict] Evidence Level: TIDAK ADA KONFLIK — 85,7% adalah pangsa volume GMP (jumlah pesan/volume transaksi), sementara $7,24 miliar adalah aset (TVL) yang pindah. Ini adalah metrik berbeda dan tidak saling bertentangan. Open Questions mencatat bahwa eksodus belum tentu tercermin dalam data volume GMP.
+- [conflict] Open Threads — Belum Terselesaikan
+- [conflict] · Jumlah chain terintegrasi — masih merupakan konflik terbuka karena tidak ada definisi dan tanggal yang konsisten di seluruh fase.
+- [conflict] · Jumlah dApp — masih merupakan konflik terbuka karena rentang angka lebar dan tidak ada definisi yang jelas.
+- [conflict] · Nilai akuisisi Stargate — perbedaan headline ($110M vs $120M) tetap ada, tetapi dijelaskan sebagian oleh biaya kas efektif $25 juta. Belum ada resolusi final antara DL News dan blog resmi.
+- [conflict] · Konflik entitas (LayerZero Labs vs Optimistic Labs) — tetap terbuka; tidak ada fase yang mengklarifikasi hubungan.
+- [conflict] · Daftar auditor — status verifikasi masih terbuka; tidak ada fase yang memberikan bukti audit resmi. Zokyo muncul sebagai investor, tetapi tidak otomatis meniadakan status auditor.
+- [conflict] · Radiant/Ondo multi-DVN — Radiant terverifikasi sebagian; Ondo belum terverifikasi. Historical Intelligence mengklaim Ondo memiliki kebijakan, tetapi Open Questions menandai belum terverifikasi — ini adalah area yang memerlukan verifikasi lebih lanjut, bukan kontradiksi yang sudah pasti.
+- [conflict] · Series A amount — perbedaan $6M vs $6,3M tetap ada, tetapi dossier mencatat selisih dan tidak memilih salah satu.
+- [conflict] Sudah Diperiksa — Tidak Ditemukan Konflik Nyata
+- [conflict] · Total pendanaan kumulatif — $263 juta adalah angka resmi; $318 juta dari Tracxn ditolak sebagai double-count. Tidak ada konflik antar-fase.
+- [conflict] · Tanggal Kelp DAO — sudah dikoreksi ke 18 April 2026 di semua fase; tidak ada sisa tanggal lama.
+- [conflict] · Nilai settlement FTX — semua fase sepakat bahwa nilainya tidak diungkap dan $111 juta tidak berdasar.
+- [conflict] · TVL puncak Stargate — >$3 miliar disebut tanpa tanggal; angka presisi dari Market Intelligence adalah untuk titik waktu 2026. Ini adalah perbedaan antara fakta historis yang tidak presisi dan data terkini, bukan konflik numerik yang harus diselesaikan.
+- [conflict] · Status DVN provider EigenLabs/Delegate — semua fase konsisten: status "tidak diketahui" atau "belum ditemukan bukti live". Tidak ada fase yang mengklaim live tanpa dukungan.
+- [conflict] · Circulating supply — tidak ada angka tunggal; semua fase yang menyebut angka memberi rentang dan menyarankan untuk menyebutkan tracker.
+- [conflict] · Fee Switch — semua fase konsisten bahwa belum aktif.
+- [conflict] · Buyback vs burn — semua fase konsisten bahwa buyback tidak membakar token; total supply tetap 1 miliar. Perbedaan dengan sumber eksternal (Dropstab) tidak dianggap sebagai konflik dalam dossier.
+- [conflict] · Runway — tidak ada angka baru; tidak ada konflik.
+- [conflict] · Stargate acquisition ratio — 1 STG : 0,08634 ZRO konsisten di semua fase.
