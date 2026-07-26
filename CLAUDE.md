@@ -55,16 +55,24 @@ conclusions with an **evidence level** (HIGH/MED/LOW).
 
 ## Curation tiers (quality × scale)
 
-- **Deep dossier** (like `examples/CaseStudies/Ethereum.md`) — full causal history for *anchor* projects.
-  ~1 per session. Highest quality; the analog library that prediction reasons from.
+- **Deep dossier** (like `examples/CaseStudies/LayerZero.md`) — full causal history for *anchor* projects,
+  produced via the Format v3 phased pipeline (`docs/Protocol/Phased-Research-Prompts.md`, 11 sequential
+  phases). ~1 per session. Highest quality; the analog library that prediction reasons from.
 - **Batch summary** (like `examples/Pioneer/*`) — one profile per project for breadth. ~10–15 per session.
 - **Tracking** (`tracking/<project>/`) — living dossier for projects being actively worked/followed.
 
 **Data hygiene:** never leave a project in two tiers at once (Deep supersedes Summary — remove the redundant
 Summary in the same session). Never delete a curated dossier or a `doc_backup/` raw source without an
-explicit maintainer decision on scope — see `examples/DatasetIndex.md` § "V1 → V2 Upgrade Queue" for the
-current policy: 11 Deep dossiers are still v1-format and are kept as-is until upgraded (Solana-style merge)
-before any removal.
+explicit maintainer decision on scope.
+
+**2026-07-26 dataset reset:** the maintainer judged the old single-mega-prompt Deep Research process (used
+for the dataset's first 12 Deep dossiers + 13 Summaries) insufficiently rigorous compared to the Format v3
+phased pipeline proven out on LayerZero, and moved all pre-reset projects to `_archive_pre_v3/` (not
+deleted — `git mv`, fully restorable). LayerZero is currently the only active project. This **supersedes**
+the old "V1 → V2 Upgrade Queue (upgrade before delete)" policy that used to be referenced here — see
+`examples/DatasetIndex.md`'s reset note for the full rationale and restore instructions. Going forward,
+every new project must go through the Format v3 phased pipeline, not the older single-prompt `deep`/`batch`
+ingest modes (which still exist mechanically in `tools/ingest.py` but are no longer the sanctioned process).
 
 Target scale (~1000 projects) ≈ ~50 deep + ~950 summary ≈ **~150 sessions**. State persists in git, so
 per-session cost stays flat regardless of dataset size.

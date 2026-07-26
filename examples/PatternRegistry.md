@@ -1,5 +1,14 @@
 # Pattern Registry (machine-readable)
 
+> **⚠ 2026-07-26 dataset reset:** all 6 patterns below were grounded in projects now moved to
+> `_archive_pre_v3/` (P1/P2/P4 from `CrossAnalysis-ETH-Lido-EigenLayer.md`; P3 from
+> `Batch-01-EvolutionAnalysis.md`; P5/P6 from `Ethereum.md` — none are LayerZero-sourced). Kept in place
+> rather than archived, since the abstract reasoning (`Shape`/`Applies When`/`prediction`) is still valid
+> framework knowledge independent of where its grounding examples currently live — but treat the `source`/
+> `analogs` fields as pointing into `_archive_pre_v3/` until each pattern is re-grounded in a project that
+> went through the Format v3 phased pipeline. See `examples/DatasetIndex.md`'s reset note for the full
+> rationale.
+
 Consolidated catalogue of the transferable patterns extracted from the deep dossiers and cross-project
 analyses. This is the single place the reasoning layer (and `tools/build_json.py`) reads patterns from —
 prose analyses remain the human explanation; this file is their structured index.

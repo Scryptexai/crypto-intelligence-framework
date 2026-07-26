@@ -81,8 +81,9 @@ Decision Events section maps 1:1 onto `docs/Ontology/DecisionEvent.md` with no r
 7. **Conclusion & Synthesis** — the *only* section allowed to conclude/synthesize causally.
 
 **Known gap vs v1:** v2's Stakeholder Impact section is not always structured as the full 8-POV grid — when a
-project already has a v1 dossier, merge rather than replace (see `examples/CaseStudies/Solana.md` for a
-worked example merging v1 + v2 sources, including two flagged `INKONSISTENSI` between them).
+project already has a v1 dossier, merge rather than replace (the worked example merging v1 + v2 sources,
+`Solana.md`, was moved to `_archive_pre_v3/examples/CaseStudies/` in the 2026-07-26 dataset reset — the v1/v2
+formats are themselves superseded by Format v3 below, so this merge guidance is now historical reference).
 
 ## Format v3 — Dependency Pipeline (supersedes the earlier 7-phase draft below §)
 
@@ -135,8 +136,9 @@ than skipping a phase that genuinely has little to say.
     → `docs/Patterns/*`, `docs/Reasoning/*`.
 11. **Conflict Resolution** — merge-only, **no new research**: reconciles contradictions the earlier phases
     surfaced (different funding figures, different dates, different supply numbers) using the existing
-    `INKONSISTENSI: …` + `Evidence Level: LOW` convention (`examples/CaseStudies/Solana.md` is the worked
-    example). → `docs/Reasoning/Confidence.md`.
+    `INKONSISTENSI: …` + `Evidence Level` convention (`examples/CaseStudies/LayerZero.md`'s "Conflicting
+    Evidence & Resolutions" section — 29 blocks, the first project to complete this phase — is the current
+    worked example). → `docs/Reasoning/Confidence.md`.
 
 **"Canonical Report Builder" is code, not a 12th prompt.** Assembling the phase outputs into one dossier is
 mechanical concatenation-by-dependency-order plus applying the ontology refs above — exactly the kind of task
@@ -305,8 +307,9 @@ of the source into CIF format with the section→ontology `_ref:` links applied 
 (`DEEP_REF` vs `DEEP_V2_REF`) — see "Format v2" above. It never fabricates or distils. `build_json.py` then
 **auto-discovers** the new dossiers from the filesystem (dedup by path), so **no DatasetIndex edit is needed**
 for the pipeline to see them. **Merges** (a v2 report arriving for a project that already has a v1 dossier)
-are *not* automated — hand-merge per the worked example in `examples/CaseStudies/Solana.md`, since deciding
-what to keep/flag-as-inconsistent is a judgment call.
+are *not* automated — hand-merge per the worked example that used to live at `examples/CaseStudies/Solana.md`
+(now `_archive_pre_v3/examples/CaseStudies/Solana.md`), since deciding what to keep/flag-as-inconsistent is a
+judgment call. This v1/v2 merge scenario is itself superseded by the Format v3 phased pipeline for new work.
 
 **Honest scope:** this yields ~90–95% of a hand-authored dossier — everything the source contains, structured
 and cross-linked, but **not** distilled/condensed and without novel synthesis or subtle-inconsistency catching.

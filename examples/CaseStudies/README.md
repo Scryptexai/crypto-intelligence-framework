@@ -28,14 +28,15 @@ Reviewers and the reasoning-validation process.
 
 ```
 CaseStudies/
-├── Batch-01-EvolutionAnalysis.md          # Cross-project synthesis of the Batch 01 Pioneer studies
-├── CrossAnalysis-ETH-Lido-EigenLayer.md   # Thematic synthesis: the staking → restaking stack
-└── Ethereum.md                            # Deep dossier (Tier: Deep) — anchor project, full causal history
+└── LayerZero.md   # Deep dossier (Tier: Deep) — anchor project, Format v3 phased pipeline, 11/11 phases
 ```
 
-Two kinds of file live here: **cross-project analyses** (synthesis across a batch) and **deep dossiers**
-(one long-form, causal case study per anchor project, e.g. `Ethereum.md`). Deep dossiers are produced by
-the `Ingest-Deep` role (`docs/Protocol/Role-Ingest-Deep.md`).
+One kind of file lives here: **deep dossiers** (one long-form, causal case study per anchor project).
+Produced by the `Ingest-Deep` role (`docs/Protocol/Role-Ingest-Deep.md`) — since the 2026-07-26 dataset
+reset, exclusively via the Format v3 phased pipeline (`docs/Protocol/Phased-Research-Prompts.md`), not the
+older single-mega-prompt process. 12 pre-reset dossiers and 2 cross-project analyses were moved to
+`_archive_pre_v3/examples/CaseStudies/` — see `examples/DatasetIndex.md`'s reset note for why and how to
+restore.
 
 ## Workflow Position
 

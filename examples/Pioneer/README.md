@@ -28,27 +28,14 @@ Reviewers and the reasoning-validation process.
 
 ```
 Pioneer/
-├── Celestia.md                 # Batch 01 — Modular / Data Availability
-├── Synthetix.md                # Batch 01 — DeFi Pioneer
-├── Helium.md                   # Batch 01 — DePIN
-├── EigenLayer.md               # Batch 01 — Infrastructure / Restaking
-├── Aave.md                     # Batch 01 — DeFi Pioneer
-├── Arweave-AO.md               # Batch 01 — Data Availability / Modular Compute
-├── Farcaster.md                # Batch 01 — Social
-├── MakerDAO-Sky.md             # Batch 01 — DeFi (Decentralized Central Bank)
-├── Safe.md                     # Batch 02 — Wallet / Account Abstraction
-├── Chainlink.md                # Batch 02 — Oracle
-├── LayerZero.md                # Batch 02 — Bridge / Interoperability
-├── Lido.md                     # Batch 02 — Liquid Staking
-├── Uniswap.md                  # Batch 02 — DeFi / AMM
-├── WorldNetwork-Worldcoin.md   # Batch 02 — Identity
-├── dYdX.md                     # Batch 02 — DeFi / Appchain
-├── Ethena.md                   # Batch 02 — DeFi / Stablecoin
-├── Berachain.md                # Batch 02 — Layer 1 (Proof-of-Liquidity)
-└── Optimism.md                 # Batch 02 — Layer 2 (OP Stack / Superchain)
+(empty — all 13 Batch 01/02 Summary profiles moved to _archive_pre_v3/examples/Pioneer/ in the
+2026-07-26 dataset reset; see examples/DatasetIndex.md's reset note for why and how to restore)
 ```
 
-Sources differ by batch: Batch 01 = Deep Research (Gemini); Batch 02 = web research (cited per file).
+Sources differed by batch: Batch 01 = Deep Research (Gemini); Batch 02 = web research (cited per file).
+Going forward, new Summary-tier profiles should still use this folder, but per the reset the sanctioned
+research process for new projects is the Format v3 phased pipeline
+(`docs/Protocol/Phased-Research-Prompts.md`), same as Deep tier.
 
 ## Workflow Position
 

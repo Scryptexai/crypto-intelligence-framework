@@ -9,8 +9,30 @@ structured against the `docs/` ontology.
 This is the master curation record for the dataset stored in `examples/`: what was added per batch,
 how the taxonomy is distributed, where the gaps are, and what is queued next.
 
-**Batches loaded:** Batch 01 (8 projects, source: Deep Research / Gemini) · Batch 02 (10 projects, source: Web research) · Deep Dossiers (12: Ethereum, Solana, BNB Chain, Cardano, Avalanche, Polkadot, Cosmos, dYdX, Aave, ether.fi, EigenLayer, Celestia — source: Deep Research / Gemini).
-**Total curated projects: 26** _(D8 dYdX, D9 Aave, D11 EigenLayer and D12 Celestia supersede their Batch Summaries — same projects, not double-counted; D10 ether.fi is a new project)_.
+**Total curated projects: 1 (LayerZero, D13).**
+
+> **⚠ 2026-07-26 dataset reset (maintainer decision).** All prior projects — 12 Deep Dossiers (Ethereum,
+> Solana, BNB Chain, Cardano, Avalanche, Polkadot, Cosmos, dYdX, Aave, ether.fi, EigenLayer, Celestia) and
+> 13 Summary/Batch profiles (`examples/Pioneer/`) — were built via the old single-mega-prompt Deep Research
+> process (22-section / Causal Event Graph v2 formats), which the maintainer judged not rigorous enough:
+> inconsistent, incomplete, too much noise, compared to the discipline the new Format v3 phased pipeline
+> (11 sequential phases, each independently verified, `docs/Protocol/Phased-Research-Prompts.md`) proved out
+> on LayerZero — see the Phase 1–11 log below and `doc_backup/inbox/phased/LayerZero/PROMPTS-LOG.md`. This
+> **explicitly supersedes** the "V1 → V2 Upgrade Queue (upgrade before delete)" policy that used to live in
+> this section, and the equivalent note in `CLAUDE.md` — both are now stale and have been updated.
+>
+> **Nothing was permanently deleted.** All files moved (`git mv`, so full history is preserved either way)
+> to `_archive_pre_v3/`, mirroring their original paths exactly (e.g.
+> `_archive_pre_v3/examples/CaseStudies/Ethereum.md`, `_archive_pre_v3/doc_backup/deep/Ethereum_2026-07_gemini.docx`).
+> To restore any project, `git mv` it back from `_archive_pre_v3/` to its original path and re-run
+> `tools/build_json.py`. Going forward, **every new project must go through the Format v3 phased pipeline**
+> (`docs/Protocol/Phased-Research-Prompts.md`) — the old `deep`/`batch` single-prompt ingest modes in
+> `tools/ingest.py` still exist mechanically but are no longer the sanctioned research process.
+> `examples/PatternRegistry.md`'s 6 existing patterns all drew their grounding from now-archived projects
+> (P1/P2/P4 from `CrossAnalysis-ETH-Lido-EigenLayer.md`, P3 from `Batch-01-EvolutionAnalysis.md`, P5/P6 from
+> `Ethereum.md` — none were LayerZero-sourced) — flagged in that file rather than deleted, since the
+> abstract pattern reasoning (Shape/Applies When) still has framework value independent of its now-archived
+> grounding examples; treat it as historical-reference pending rebuild from new phased-pipeline projects.
 
 ## Curation Tiers
 _How each project is captured (see `docs/Protocol/` for the runbooks)._
@@ -29,35 +51,12 @@ and should be removed in the same session, once the Deep version is confirmed co
 `tools/ingest.py` flags this automatically (`⚠ supersedes Pioneer/<X>.md` in its output) but does not
 auto-delete; removing it is a deliberate step, done here in `DatasetIndex.md` alongside the file deletion.
 
-## V1 → V2 Upgrade Queue (policy: upgrade before delete — do not remove)
+## V1 → V2 Upgrade Queue — superseded 2026-07-26, see reset note above
 
-**Decision (maintainer):** the 11 Deep dossiers below are still in the v1 (22-section) format. They are kept
-as-is — **not deleted** — until each is upgraded to a v1+v2 merge (same treatment as `CaseStudies/Solana.md`,
-the worked example: keep everything v1 has that v2 doesn't — POV Success-Matrix, funding tables, policy
-chronology — add what v2 adds — Context snapshot, explicit Decision Events, Conflicting Evidence — and flag
-any cross-source discrepancy as `INKONSISTENSI` rather than silently picking one). Their `doc_backup/deep/`
-v1 sources stay archived until the matching project is upgraded.
-
-**Important operational note:** `./run.sh` / `tools/ingest.py` alone will **not** perform this upgrade — its
-anti-duplicate guard (`find_existing()`) correctly *skips* a new report for a project that already has a
-dossier, rather than blindly overwriting good v1 content. Merging requires the same judgment call as the
-Solana rebuild, i.e. a short session per project. This queue is unrelated to net-new projects, which
-`run.sh` already ingests fully automatically without a session.
-
-| # | Project | Status | v1 source |
-|---|---------|--------|-----------|
-| D1 | Ethereum | ⏳ pending v2 merge | `doc_backup/deep/Ethereum_2026-07_gemini.docx` |
-| D3 | BNB Chain | ⏳ pending v2 merge | `doc_backup/deep/BNBChain_2026-07_gemini.docx` |
-| D4 | Cardano | ⏳ pending v2 merge | `doc_backup/deep/Cardano_2026-07_gemini.docx` |
-| D5 | Avalanche | ⏳ pending v2 merge | `doc_backup/deep/Avalanche_2026-07_gemini.docx` |
-| D6 | Polkadot | ⏳ pending v2 merge | `doc_backup/deep/Polkadot_2026-07_gemini.docx` |
-| D7 | Cosmos | ⏳ pending v2 merge | `doc_backup/deep/Cosmos_2026-07_gemini.docx` |
-| D8 | dYdX | ⏳ pending v2 merge | `doc_backup/deep/dYdX_2026-07_gemini.docx` |
-| D9 | Aave | ⏳ pending v2 merge | `doc_backup/deep/Aave_2026-07_gemini.docx` |
-| D10 | ether.fi | ⏳ pending v2 merge | `doc_backup/deep/EtherFi_2026-07_gemini.docx` |
-| D11 | EigenLayer | ⏳ pending v2 merge | `doc_backup/deep/EigenLayer_2026-07_gemini.docx` |
-| D12 | Celestia | ⏳ pending v2 merge | `doc_backup/deep/Celestia_2026-07_gemini.docx` |
-| D2 | Solana | ✅ upgraded (worked example) | both v1 + v2 archived |
+This section used to track 11 pre-phased-pipeline Deep Dossiers (plus Solana as the worked v1+v2-merge
+example) queued for upgrade rather than deletion. That policy is superseded by the 2026-07-26 dataset reset:
+all 12 (including Solana) are now in `_archive_pre_v3/`, same as everything else pre-dating the phased
+pipeline. Kept here only so the historical policy and its rationale aren't silently erased from the record.
 
 **When a project row above is upgraded:** flip its status to ✅, and only then is that project's specific
 `doc_backup/deep/` v1 source (and any framework-level v1-format cleanup) eligible for the maintainer's
@@ -427,142 +426,24 @@ _Tier: Deep · anchor projects with full causal history._
 
 | # | Project | Category | Era | Source | File | Raw source |
 |---|---------|----------|-----|--------|------|-----------|
-| D1 | Ethereum | Layer 1 / Smart-Contract Platform | 2013– | Deep Research (Gemini) | `CaseStudies/Ethereum.md` | `doc_backup/deep/Ethereum_2026-07_gemini.docx` (rebuilt; prior PDF retained) |
-| D2 | Solana | Layer 1 / High-Performance Monolithic Platform | 2017– | Deep Research (Gemini) — **merged v1+v2** | `CaseStudies/Solana.md` | `doc_backup/deep/Solana_2026-07_gemini.docx` (v1, 22-section) + `Solana_2026-07_gemini_v2.docx` (v2, Causal Event Graph) |
-| D3 | BNB Chain | Layer 1 EVM (Exchange-backed) + modular suite (opBNB/Greenfield) | 2017– | Deep Research (Gemini) | `CaseStudies/BNBChain.md` | `doc_backup/deep/BNBChain_2026-07_gemini.docx` |
-| D4 | Cardano | Layer 1 / Peer-reviewed EUTXO platform (Ouroboros PoS) | 2015– | Deep Research (Gemini) | `CaseStudies/Cardano.md` | `doc_backup/deep/Cardano_2026-07_gemini.docx` (rebuilt; prior PDF retained) |
-| D5 | Avalanche | Layer 1 / Metastable-consensus multi-chain (Subnet/L1) + RWA-TradFi | 2018– | Deep Research (Gemini) | `CaseStudies/Avalanche.md` | `doc_backup/deep/Avalanche_2026-07_gemini.docx` (rebuilt; prior PDF retained) |
-| D6 | Polkadot | Layer 0 / Heterogeneous-sharding + shared-security (Relay/parachains) | 2016– | Deep Research (Gemini) | `CaseStudies/Polkadot.md` | `doc_backup/deep/Polkadot_2026-07_gemini.docx` |
-| D7 | Cosmos | Layer 0 / Appchain "Internet of Blockchains" (CometBFT/SDK/IBC) | 2014– | Deep Research (Gemini) | `CaseStudies/Cosmos.md` | `doc_backup/deep/Cosmos_2026-07_gemini.docx` |
-| D8 | dYdX | DeFi / Perp-derivatives DEX (order-book appchain → RWA pivot) | 2017– | Deep Research (Gemini) | `CaseStudies/dYdX.md` | `doc_backup/deep/dYdX_2026-07_gemini.docx` |
-| D9 | Aave | DeFi / Money-market lending (Flash Loans, GHO, V4 Hub-and-Spoke) | 2017– | Deep Research (Gemini) | `CaseStudies/Aave.md` | `doc_backup/deep/Aave_2026-07_gemini.docx` |
-| D10 | ether.fi | DeFi / Liquid Restaking (LRT) + DeFi Neobank (Stake/Liquid/Cash) | 2022– | Deep Research (Gemini) | `CaseStudies/EtherFi.md` | `doc_backup/deep/EtherFi_2026-07_gemini.docx` |
-| D11 | EigenLayer | Infrastructure / Restaking pioneer → EigenCloud (verifiable AI/compute) | 2021– | Deep Research (Gemini) | `CaseStudies/EigenLayer.md` | `doc_backup/deep/EigenLayer_2026-07_gemini.docx` |
-| D12 | Celestia | Modular / Data Availability (sovereign alt-DA; DAS/NMT; Fibre 1 Tb/s) | 2019– | Deep Research (Gemini) | `CaseStudies/Celestia.md` | `doc_backup/deep/Celestia_2026-07_gemini.docx` |
 | D13 | LayerZero | Interoperability / Omnichain Messaging (Bridge, GMP, DVN security) | 2021– | Deep Research (Gemini + Claude-direct + DeepSeek), Format v3 Dependency Pipeline (11/11 phases) | `CaseStudies/LayerZero.md` | `doc_backup/inbox/phased/LayerZero/01..11-*.docx` (per-phase, archived individually to `doc_backup/deep/LayerZero_<phase>_2026-07.docx`); full prompt history in `doc_backup/inbox/phased/LayerZero/PROMPTS-LOG.md` |
 
----
-
-## Curated Projects — Batch 01
-_Container: `examples/Pioneer/` · Source: Deep Research (Gemini) — "Rekomendasi Kurasi Proyek Historis"._
-_Raw source archived: `doc_backup/batch/Batch-01_Kurasi-Dataset_2026-07_gemini.pdf` (+ `.md`)._
-
-| # | Project | Category | Era | Priority | File |
-|---|---------|----------|-----|----------|------|
-| 1 | Celestia | Modular / Data Availability | 2019– | P0 | **removed** — superseded by Deep D12, `CaseStudies/Celestia.md` |
-| 2 | Synthetix | DeFi (DeFi Pioneer) | 2017– | P0 | `Pioneer/Synthetix.md` |
-| 3 | Helium | DePIN (IoT & Wireless) | 2013– | P0 | `Pioneer/Helium.md` |
-| 4 | EigenLayer | Infrastructure / Restaking | 2021– | P0 | **removed** — superseded by Deep D11, `CaseStudies/EigenLayer.md` |
-| 5 | Aave | DeFi (DeFi Pioneer) | 2017– | P1 | **removed** — superseded by Deep D9, `CaseStudies/Aave.md` |
-| 6 | Arweave / AO | Data Availability / Modular Compute | 2017– | P1 | `Pioneer/Arweave-AO.md` |
-| 7 | Farcaster | Social (Decentralized Social) | 2020– | P1 | `Pioneer/Farcaster.md` |
-| 8 | MakerDAO / Sky | DeFi (Decentralized Central Bank) | 2015– | P0 | `Pioneer/MakerDAO-Sky.md` |
-
-Cross-project analysis: `examples/CaseStudies/Batch-01-EvolutionAnalysis.md`.
-
-## Cross-Project Analyses
-_Syntheses that turn multiple project histories into transferable patterns (tier: Synthesis)._
-
-| Analysis | Projects linked | File |
-|----------|-----------------|------|
-| Batch 01 Evolution | Celestia, Arweave/AO, Helium, Synthetix, EigenLayer | `CaseStudies/Batch-01-EvolutionAnalysis.md` |
-| Staking → Restaking Stack | Ethereum, Lido, EigenLayer | `CaseStudies/CrossAnalysis-ETH-Lido-EigenLayer.md` |
-
-## Curated Projects — Batch 02
-_Container: `examples/Pioneer/` · Source: Web research (public sources, July 2026 — cited per file)._
-_Promoted from the Batch 01 candidate queue. Provenance is web research, **not** Deep Research (Gemini)._
-
-| # | Project | Category | Era | Priority | File |
-|---|---------|----------|-----|----------|------|
-| 9 | Safe | Wallet / Account Abstraction | 2017– | P0 | `Pioneer/Safe.md` |
-| 10 | Chainlink | Oracle | 2017– | P0 | `Pioneer/Chainlink.md` |
-| 11 | LayerZero | Bridge / Interoperability | 2021– | P1 | **removed** — superseded by Deep D13, `CaseStudies/LayerZero.md` |
-| 12 | Lido | Liquid Staking | 2020– | P1 | `Pioneer/Lido.md` |
-| 13 | Uniswap | DeFi / AMM | 2018– | P1 | `Pioneer/Uniswap.md` |
-| 14 | World Network (Worldcoin) | Identity | 2019– | P1 | `Pioneer/WorldNetwork-Worldcoin.md` |
-| 15 | dYdX | DeFi / Appchain | 2017– | P1 | **removed** — superseded by Deep D8, `CaseStudies/dYdX.md` |
-| 16 | Ethena | DeFi / Stablecoin | 2023– | P2 | `Pioneer/Ethena.md` |
-| 17 | Berachain | Layer 1 (Proof-of-Liquidity) | 2021– | P2 | `Pioneer/Berachain.md` |
-| 18 | Optimism | Layer 2 (OP Stack / Superchain) | 2019– | P2 | `Pioneer/Optimism.md` |
-
-## Dataset Distribution (Cumulative)
-_After Batch 01 + Batch 02._
-
-| Category | Batch 01 | Batch 02 | Cumulative |
-|----------|----------|----------|------------|
-| DeFi (Pioneer, AMM, Appchain, Stablecoin, Central Bank) | 3 | 3 | 6 |
-| Modular / Data Availability | 1 | 0 | 1 |
-| Data Availability / Modular Compute | 1 | 0 | 1 |
-| Infrastructure / Restaking | 1 | 0 | 1 |
-| DePIN | 1 | 0 | 1 |
-| Social | 1 | 0 | 1 |
-| Wallet / Account Abstraction | 0 | 1 | 1 |
-| Oracle | 0 | 1 | 1 |
-| Bridge / Interoperability | 0 | 1 | 1 |
-| Liquid Staking | 0 | 1 | 1 |
-| Identity | 0 | 1 | 1 |
-| Layer 1 | 0 | 1 | 1 |
-| Layer 2 | 0 | 1 | 1 |
-| **Total** | **8** | **10** | **18** |
-
-## Dataset Gap — Status
-_Progress against the gaps identified in Batch 01._
-
-- **Wallet & Account Abstraction** — ✅ terisi oleh **Safe** (Batch 02).
-- **Oracle & Real-Time Data Infrastructure** — ✅ terisi oleh **Chainlink** (Batch 02).
-- **Cross-Chain Communication & Bridges** — ✅ terisi oleh **LayerZero** (Batch 02).
-- **Privacy & Identity Security** — ⚠️ *sebagian*: identitas/proof-of-personhood terisi oleh **Worldcoin**,
-  namun **privasi transaksi berbasis Zero-Knowledge Proofs** (mis. Aztec, Railgun, Zcash) masih terbuka.
-
-### Remaining / New Gaps (untuk batch berikutnya)
-- **ZK Privacy** — protokol privasi transaksi berbasis ZKP.
-- **RWA (Real-World Assets)** — ⚠️ *sebagian*: adopsi RWA/TradFi institusional terisi oleh **Avalanche** (Deep D5:
-  Evergreen/AvaCloud, Progmat $2,8 mrd, JPMorgan Onyx); RWA sebagai **kategori Summary tersendiri** masih terbuka.
-- **Gaming / NFT Infrastructure** — belum terwakili.
-- **AI x Crypto** — kategori baru yang berkembang pesat.
-
-## Candidate Queue — Status
-_The Batch 01 candidate queue has been **fully processed into Batch 02** (see table above)._
-The queue is now empty; the next queue will be defined from the Remaining/New Gaps section once
-new research is available.
-
-> Note: a candidate queue is a curation backlog of instances. It lives here in `examples/` (knowledge),
-> not in `docs/Research/` (which documents *how* research is done, not *what* to research).
+_D1–D12 (Ethereum, Solana, BNB Chain, Cardano, Avalanche, Polkadot, Cosmos, dYdX, Aave, ether.fi, EigenLayer,
+Celestia) moved to `_archive_pre_v3/` in the 2026-07-26 dataset reset — see the note at the top of this file._
 
 ---
 
-## Karya yang Dikutip — Batch 01 (Bibliography)
-_Sumber Deep Research untuk Batch 01._
+## Archived Content (pre-2026-07-26 dataset reset)
 
-1. Modularity and App-Specific Chains — Blockchain@NUS, Medium — https://medium.com/@nusfintech.bc/modularity-and-app-specific-chains-524547bc33a8
-2. celestiaorg/celestia-core (fork of CometBFT) — GitHub — https://github.com/celestiaorg/celestia-core
-3. nmt/docs/spec/nmt.md — celestiaorg/nmt, GitHub — https://github.com/celestiaorg/nmt/blob/master/docs/spec/nmt.md
-4. AMA: AO and Artificial Intelligence — Perma DAO, Medium — https://medium.com/@perma_dao/ama-ao-and-artificial-intelligence-93dc5649dc39
-5. Let's solve these crucial protocol weaknesses — DFINITY Forum — https://forum.dfinity.org/t/lets-solve-these-crucial-protocol-weaknesses/28329?page=2
-6. AVS Risk Assessment: EigenDA — LlamaRisk Research — https://llamarisk.com/research/avs-risk-assessment-eigenda
-7. API Providers — APIs.io — https://apis.io/providers/
-8. Synthetix Price: SNX/USD — CoinGecko — https://www.coingecko.com/en/coins/synthetix-network-token
-9. The Tokenomics of Helium (HNT) — findas.org — https://www.findas.org/tokenomics-review/coins/the-tokenomics-of-helium-hnt/r/DUr5bvmBPVYzPkKJUiXz7Z
-10. Helium Mining 2026: The Complete Operator Guide — MillionMiner — https://millionminer.com/news/helium-mining-2026-complete-operator-guide
-11. simpleaswater/defi-resources — GitHub — https://github.com/simpleaswater/defi-resources
-12. Catching Up to Crypto — DOKUMEN.PUB — https://dokumen.pub/catching-up-to-crypto-your-guide-to-bitcoin-and-the-new-digital-economy-9781394158744-9781394158751-9781394158768-1394158742-c-6678457.html
-13. Helium — Cryptoassets, IQ.wiki — https://iq.wiki/wiki/helium
-14. Helium Network — Wikipedia — https://en.wikipedia.org/wiki/Helium_Network
-15. EIGEN: The Universal Intersubjective Work Token — EigenCloud — https://docs.eigencloud.xyz/assets/files/EIGEN_Token_Whitepaper-0df8e17b7efa052fd2a22e1ade9c6f69.pdf
-16. EigenCloud: Rebuilding Web3's Trust Foundation — blockeden.xyz — https://blockeden.xyz/blog/2025/12/03/eigencloud-rebuilding-web3-s-trust-foundation-through-verifiable-cloud-infrastructure/
-17. The Delphi Podcast — Buzzsprout — https://feeds.buzzsprout.com/2609274.rss
-18. EIGEN Token Whitepaper (HTML) — EigenCloud — https://docs.eigencloud.xyz/html/EIGEN_Token_Whitepaper-converted-xodo.html
+The sections that used to live here — **Curated Projects Batch 01** (8 projects), **Cross-Project Analyses**
+(2 syntheses), **Curated Projects Batch 02** (10 projects), **Dataset Distribution**, **Dataset Gap —
+Status**, **Candidate Queue — Status**, and the **Batch 01/02 bibliographies** — described the 13 Summary
+profiles now moved to `_archive_pre_v3/examples/Pioneer/` (see the reset note at the top of this file). Their
+full detail (tables, per-project bibliography, gap analysis) is preserved in git history as of commit
+`4281cf7` and earlier, and in the archived files themselves — not reproduced here to avoid this index
+describing files that are no longer active. Restore any of it the same way as a Deep Dossier: `git mv` back
+from `_archive_pre_v3/` and re-run `tools/build_json.py`.
 
-## Bibliography — Batch 02
-_Sumber riset web (diakses Juli 2026). Rincian per-proyek ada di bagian "Sources" tiap file._
-
-- **Safe** — IQ.wiki (https://iq.wiki/wiki/safe); Gnosis Forum GIP-29 (https://forum.gnosis.io/t/gip-29-spin-off-safedao-and-launch-safe-token/3476); Safe Foundation Tokenomics (https://safefoundation.org/blog/safe-tokenomics)
-- **Chainlink** — Wikipedia (https://en.wikipedia.org/wiki/Chainlink_(blockchain_oracle)); Messari (https://messari.io/project/chainlink/profile)
-- **LayerZero** — LayerZero Docs (https://docs.layerzero.network/v2/concepts/layerzero-protocol-architecture); Messari (https://messari.io/report/understanding-layerzero)
-- **Lido** — lido.fi (https://lido.fi/); Messari (https://messari.io/report/liquid-staking-with-lido); Datawallet (https://www.datawallet.com/crypto/lido-explained)
-- **Uniswap** — Wikipedia (https://en.wikipedia.org/wiki/Uniswap); Uniswap Blog (https://blog.uniswap.org/uniswap-history)
-- **World Network (Worldcoin)** — TechCrunch (https://techcrunch.com/2024/10/17/sam-altmans-worldcoin-becomes-world-and-shows-new-iris-scanning-orb-to-prove-your-humanity/); Quartz (https://qz.com/sam-altman-worldcoin-crypto-ai-biometrics-identity-1850669360)
-- **dYdX** — Antonio Juliano, Medium (https://antonio-dydx.medium.com/the-history-of-dydx-so-far-68bf46789f86); dYdX v4 Evolution, Medium (https://medium.com/@gwrx2005/dydx-v4-architectural-and-protocol-evolution-from-v3-6c312f51f7b7)
-- **Ethena** — Ethena Docs (https://docs.ethena.fi/); Nansen (https://nansen.ai/post/what-is-ethena)
-- **Berachain** — Fireblocks (https://www.fireblocks.com/blog/what-is-berachain-and-proof-of-liquidity); DAIC Capital (https://daic.capital/blog/berachain-tokens-explained); Decrypt (https://decrypt.co/resources/what-is-berachain-proof-of-liquidity-blockchain)
-- **Optimism** — Coin Bureau (https://coinbureau.com/review/optimism-review); Eco (https://eco.com/support/en/articles/10273675-what-is-optimism-the-ethereum-l2-and-op-mainnet-explained); The Block (https://www.theblock.co/linked/149464/optimisms-governance-token-officially-goes-live)
+The **Dataset Gap** analysis in particular is still conceptually useful (ZK Privacy, RWA-as-a-category,
+Gaming/NFT Infrastructure, AI x Crypto were flagged as open gaps) — worth re-checking once new phased-pipeline
+projects are added, since the gap itself doesn't depend on the now-archived projects being present.
