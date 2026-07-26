@@ -1650,3 +1650,140 @@ sourcing). No fabrication or contradiction found on verification, unlike Phase 6
 
 **Active file:** `doc_backup/inbox/phased/LayerZero/08-market.docx`. Raw output archived at
 `08-market-raw.txt`.
+
+## Phase 9 — Behavioral Intelligence (drafted 2026-07-26)
+
+Context Pack: Phase 1 (full, always) + Phase 3 (full — the "How to use these" convention explicitly calls
+this out as the one case where an index of event labels isn't enough, since this phase needs the actual
+event bodies to analyze motive) + Phase 5 and Phase 6 (full, per the generic template's "especially
+Historical, Financial, and Token Intelligence" instruction — investor/treasury pressure and governance/
+token dynamics are load-bearing for several events' Motivation/Pressure/Trade-off fields). Phase 8's key
+facts (the Chainlink CCIP exodus, Aave's switch) are injected directly as compact hints rather than
+requiring the full document, since they matter for exactly one event's Expectation-vs-Actual field, not
+the whole phase.
+
+Lists all 15 Decision Events verbatim (name + date) copied directly from the Phase 3 docx's Heading 3/
+Event lines, with an explicit instruction not to paraphrase them. Adds targeted cross-phase hints for 7
+of the 15 events where a non-obvious connection across phases exists (e.g., Event #6's FTX buyback funded
+entirely from existing treasury with no new capital raised per Phase 5; Event #11's TGE backlash as an
+Expectation-vs-Actual case; Event #13's Zero blockchain launch read against the Fee Switch's repeated
+quorum failures from Phase 6; Events #14/#15 read against Phase 8's Aave/Chainlink CCIP findings) —
+without pre-writing the interpretation itself, since that's this phase's actual job, not something to
+hand it pre-digested.
+
+Repeats the "no fabricated psychology" guardrail from the generic template's shared rules explicitly in
+LayerZero-specific language: every Motivation/Pressure/Constraint inference must be labeled as inference
+(not disguised as direct fact) and must chain back to a concrete fact from an earlier phase, not float as
+a bare psychological guess.
+
+```
+Menggunakan SELURUH output fase sebelumnya sebagai konteks — TERUTAMA Historical Intelligence (Phase 3),
+Financial Intelligence (Phase 5), dan Token Intelligence (Phase 6) yang dilampirkan penuh — fase ini
+adalah LAPISAN KAUSAL sesungguhnya dari kerangka kerja ini. Landaskan SETIAP jawaban pada pernyataan
+publik, wawancara, pos governance, atau inferensi yang berdasar-kuat (label mana yang dipakai); tulis
+"tidak diketahui" daripada berspekulasi tanpa dasar.
+
+=== 15 DECISION EVENT DARI PHASE 3 — WAJIB DIBUAT BLOK UNTUK SETIAP SATU, nama/tanggal HARUS SAMA PERSIS
+dengan Historical Intelligence (salin persis dari dokumen Phase 3 yang dilampirkan, jangan parafrase) ===
+1. 1 April 2021 — Putaran Pendanaan Seed $2 Juta
+2. Mei 2021 — Publikasi Whitepaper "LayerZero: Trustless Omnichain Interoperability Protocol"
+3. 16 September 2021 — Pendanaan Series A $6 Juta & Peluncuran Awal Mainnet V1
+4. Kuartal Pertama 2022 — Peluncuran Stargate Finance
+5. 30 Maret 2022 — Pendanaan Series A Extension $135 Juta
+6. 11 November 2022 — Keruntuhan FTX dan Manuver Pembelian Kembali Ekuitas oleh LayerZero
+7. 4 April 2023 — Pendanaan Series B $120 Juta
+8. 2023 — Ekspansi Jaringan: Menembus 50 Chain Terintegrasi
+9. September 2023–31 Januari 2025 — Gugatan Clawback Defensif oleh FTX Recovery Trust (settled)
+10. 29 Januari 2024 — Peluncuran Infrastruktur Modular LayerZero V2
+11. 20 Juni 2024 — Peluncuran Publik Token (TGE) ZRO dan Implementasi "Proof-of-Donation"
+12. 10-25 Agustus 2025 — Invasi Monopoli dan Penggabungan Akuisisi Stargate Finance
+13. 10 Februari 2026 — Peluncuran Blockchain "Zero" — Layer-1 Mandiri LayerZero
+14. 18 April 2026 — Insiden Eksploitasi Kelp DAO Senilai $292 Juta (tanggal ini SUDAH DIKOREKSI dari
+    kesalahan draf lama yang bilang April 2024 — pastikan kamu memakai tanggal yang benar ini)
+15. Mei 2026 — Modifikasi Keamanan Sistemik DVN dan Eksodus Migrasi Klien Jembatan
+
+=== PETUNJUK LINTAS-FASE UNTUK EVENT TERTENTU — gunakan untuk memperkaya Motivation/Constraint/Pressure/
+Trade-off/Expectation vs Actual, JANGAN cuma mengulang fakta yang sudah ada, INTERPRETASIKAN kenapa ===
+- Event #6 (Keruntuhan FTX/buyback): Phase 5 mencatat LayerZero TIDAK mengambil pendanaan baru untuk
+  manuver darurat ini — treasury internal (~$134 juta) cukup. Apa artinya ini untuk "Constraint" (mereka
+  punya keleluasaan finansial) vs proyek lain yang mungkin terpaksa berutang?
+- Event #7 (Series B saat crypto winter): Phase 8 mencatat ini sebagai bukti "ketahanan" proyek di tengah
+  bear market — investor tetap masuk $120 juta di valuasi $3 miliar padahal FTX baru kolaps 5 bulan
+  sebelumnya. Apa yang ini sinyalkan soal kepercayaan VC (Pressure/Stakeholder Reactions: VC)?
+- Event #9 (Gugatan FTX): Phase 5 menemukan nilai settlement FINAL TIDAK PERNAH diungkap publik — CEO
+  Pellegrino hanya bilang "millions in legal fees, lawyers always win" di X. Apa yang bisa disimpulkan
+  (berlabel "inferensi berdasar-kuat") dari sikap terbuka-tapi-tidak-detail ini soal Founder Motivation?
+- Event #11 (TGE Proof-of-Donation): Phase 6 mencatat harga ZRO turun ~15% dalam 24 jam dan reaksi ritel
+  yang menyebutnya "pajak ekstraksi". Bandingkan Expectation (tim merancang mekanisme ini untuk mendanai
+  Protocol Guild $18,5 juta) vs Actual (backlash publik, dijuluki "pay-to-claim tax") — ini kandidat kuat
+  untuk field Expectation vs Actual.
+- Event #12 (Akuisisi Stargate): Phase 5/8 mencatat TVL Stargate SUDAH menurun sebelum akuisisi (dari
+  puncak >$3 miliar ke ~$1,37 miliar Q1 2026) — apakah akuisisi ini bisa dibaca sebagai respons defensif
+  terhadap penurunan tersebut (Pressure: penurunan pendapatan Stargate), bukan cuma langkah ofensif?
+  Wormhole mengajukan tawaran tandingan $120 juta yang ditolak meski lebih tinggi — apa yang ini
+  sinyalkan soal Trade-off (LayerZero memilih kontrol penuh atas harga murni)?
+- Event #13 (Blockchain Zero): Phase 6 mencatat status Fee Switch (dirancang mengaktifkan model
+  buyback-and-burn ZRO) GAGAL kuorum di 4 referendum berturut-turut meski approval >96% di antara yang
+  memilih. Apakah keputusan meluncurkan Zero sebagai L1 baru bisa dibaca sebagai Trade-off/Alternative
+  terhadap kegagalan mengaktifkan model deflasi via governance ZRO yang sudah ada?
+- Event #14 & #15 (Kelp DAO & Modifikasi DVN): Phase 8 menemukan eksodus institusional >$7,24 miliar ke
+  Chainlink CCIP per Juli 2026, TERMASUK Aave yang memilih Chainlink CCIP sebagai default cross-chain
+  rail. Ini kandidat KUAT untuk field Expectation vs Actual pada event #15 — tim mengharapkan permintaan
+  maaf publik dan perbaikan DVN akan memulihkan kepercayaan, tapi Actual-nya eksodus modal terus tumbuh
+  bahkan 2 bulan setelah perbaikan diumumkan. Stakeholder Reactions: Institution dan Validator WAJIB
+  membahas pergeseran Aave dan migran institusional lain (Lombard, Solv Protocol, Kraken, Mantle, dst)
+  secara spesifik, bukan generik.
+
+=== FORMAT OUTPUT ===
+Untuk SETIAP dari 15 decision event di atas, ulangi blok ini PERSIS:
+
+Decision Event: <nama/tanggal, SAMA PERSIS dengan Historical Intelligence>
+  Motivation: <kenapa keputusan ini diambil, atau "tidak diketahui"> (Evidence Level) [sumber]
+  Constraint: <apa yang membatasi opsi — runway, utang teknis, eksposur regulasi, ukuran tim — atau
+    "tidak diketahui"> (Evidence Level) [sumber]
+  Pressure: <kekuatan eksternal yang bekerja — ekspektasi VC, ancaman kompetitif, tuntutan komunitas —
+    atau "tidak diketahui"> (Evidence Level) [sumber]
+  Trade-off: <apa yang dikorbankan dengan memilih jalur ini, atau "tidak diketahui"> (Evidence Level)
+    [sumber]
+  Alternative(s) Considered: <apa lagi yang mungkin tersedia dan kenapa tidak dipilih, atau "tidak
+    diketahui"> (Evidence Level) [sumber]
+  Expectation vs. Actual: <apa yang tim harapkan terjadi vs apa yang benar-benar terjadi, atau "tidak
+    diketahui"> (Evidence Level) [sumber]
+  Stakeholder Reactions:
+    Founder: <reaksi/dampak atau "tidak ada reaksi signifikan"> (Evidence Level) [sumber]
+    VC: <...> (Evidence Level) [sumber]
+    Retail: <...> (Evidence Level) [sumber]
+    Community: <...> (Evidence Level) [sumber]
+    Developer: <...> (Evidence Level) [sumber]
+    Institution: <...> (Evidence Level) [sumber]
+    Validator: <...> (Evidence Level) [sumber]
+    Builder: <...> (Evidence Level) [sumber]
+  Grounding: <statement | interview | governance post | inferensi berdasar-kuat — label yang mana>
+---
+
+Open Threads
+- <hal yang masih belum pasti, bertentangan, atau perlu digali lebih lanjut>
+
+=== ATURAN FORMAT (berlaku untuk seluruh jawaban) ===
+- Tulis dalam BAHASA INDONESIA. Yang TIDAK diterjemahkan: nama produk/teknologi, nama orang, nama
+  perusahaan, nama chain, dan URL.
+- Ikuti template output di atas PERSIS — label field yang sama, urutan yang sama, 8 POV stakeholder yang
+  sama untuk SETIAP event (jangan lewatkan satupun POV meski jawabannya "tidak ada reaksi signifikan").
+- JANGAN gunakan tabel sama sekali.
+- Satu fakta per baris. Kalau isi yang mau ditulis lebih dari ~2 kalimat, WAJIB dipecah jadi sub-bullet,
+  masing-masing dengan Evidence Level + sumbernya sendiri.
+- JANGAN mengarang psikologi atau motif tanpa dasar. Field "Motivation"/"Pressure"/dst BOLEH berupa
+  inferensi, tapi WAJIB dilabeli sebagai inferensi (bukan disamarkan sebagai fakta langsung) dan WAJIB
+  ada rantai penalaran singkat yang mengaitkannya ke fakta konkret dari fase sebelumnya — bukan tebakan
+  psikologis lepas.
+- Kalau sebuah klaim diperdebatkan oleh sumber berbeda, catat eksplisit — jangan diam-diam memilih salah
+  satu.
+- Sitasi WAJIB menempel di SETIAP fakta, di baris yang sama.
+- Evidence Level (HIGH/MEDIUM/LOW) di setiap klaim signifikan — LOW WAJIB untuk inferensi murni tanpa
+  pernyataan langsung dari pihak terkait.
+- Awali output dengan: PROJECT: LayerZero
+- Akhiri dengan heading "Open Threads" berisi daftar hal yang masih belum pasti/bertentangan/perlu digali
+  lebih lanjut.
+```
+
+**Result:** pending — awaiting output.
