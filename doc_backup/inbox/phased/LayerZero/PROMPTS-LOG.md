@@ -1926,4 +1926,34 @@ Open Threads
 - Akhiri dengan heading "Open Threads" berisi daftar hal yang masih belum pasti/perlu digali lebih lanjut.
 ```
 
-**Result:** pending — awaiting output.
+**Result:** succeeded, and went beyond the 5 seeded pattern candidates with 5 more independently-found
+ones (10 total), each properly grounded and formatted (`Shape`/`Drawn From`/`Applies When`/Evidence
+Level). All 8 POV Success-Matrix verdicts present with reasoned, non-forced labels — several correctly
+land on "mixed" or split verdicts backed by genuinely contradictory evidence (e.g. Institution: failure,
+citing the >$7.24B Chainlink CCIP exodus, while still noting the Feb 2026 Citadel/DTCC/ICE/ARK investment
+as a countervailing but unproven signal) rather than flattening the record into one clean label.
+
+The 5 seeded patterns (FTX buyback, application-owned-security flexibility, apology-insufficient-for-
+institutional-trust, deflationary-mechanism-blocked-by-voter-apathy, pivot-to-L1-when-value-capture-fails)
+all came back intact and well-grounded. The 5 new ones the model found independently: (6) "Proof-of-
+Donation" as a donation-gated claim mechanism intended to filter spam that instead reads as an extraction
+tax to retail; (7) a DAO choosing a lower nominal acquisition bid over a higher cash rival offer for
+strategic/control reasons (Stargate's DAO picking LayerZero over Wormhole's larger cash bid) — a genuinely
+interesting non-financially-rational-governance pattern; (8) internal R&D breakthroughs (QMDB/FAFO)
+enabling an architecture pivot before production validation; (9) dual-verification security models
+(Oracle+Relayer in V1, DVN+Executor in V2) resting on a non-collusion assumption that becomes a single
+point of failure once one party is compromised — arguably the sharpest and most technically precise of
+the 10; (10) flagship-dApp revenue dependency (Stargate) creating fragility when that dApp's TVL declines.
+Each has an `Applies When` field describing structural transfer conditions rather than restating
+LayerZero's specific mechanics, matching the instruction.
+
+Entity/Relationship Addendum correctly reports nothing major missed from Phase 2, while still surfacing 3
+items needing clarification (Optimistic Labs Limited relationship, ex-COO Ari Litan's departure, EigenLabs/
+Delegate DVN status) that match already-known open threads rather than inventing new ones.
+
+One trivial typo fixed before committing ("litigasi FTY" → "litigasi FTX" in the VC POV reasoning) —
+not a content issue. No fabrication or unsupported pattern found on review.
+
+**Active file:** `doc_backup/inbox/phased/LayerZero/10-knowledge.docx`. Raw output archived at
+`10-knowledge-raw.txt`. The assembled dossier (`examples/CaseStudies/LayerZero.md`) will be regenerated
+with `--force` once Phase 11 (Conflict Resolution) is also done.

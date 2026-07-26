@@ -78,7 +78,7 @@ Intelligence non-trivial.
 
 | Project | Track | Phases done | Next phase | Notes |
 |---------|-------|--------------|------------|-------|
-| **LayerZero** | A (full 11) | 1 ✅ Foundation, 2 ✅ Entity (76 entities), 3 ✅ Historical (15/15 events, cited, Kelp DAO date corrected to 18 Apr 2026), 4 ✅ Technology (cited + Kelp DAO date patched), 5 ✅ Financial (4 funding rounds + 5 non-round capital events, FTX settlement confirmed undisclosed), 6 ✅ Token (fee switch confirmed never activated, buybacks confirmed held-not-burned, fabricated 25% TGE claim rejected), 7 ✅ Ecosystem (DeepSeek — first non-Gemini model tried, strongest first-attempt result yet), 8 ✅ Market (growth-vs-erosion tension correctly held together: 85.7% GMP share vs >$7.24B Chainlink CCIP exodus; Aave-picks-CCIP fact cross-verified against an old Phase 3 source), 9 ✅ Behavioral (15/15 Decision Events, 8-POV each; genuinely engaged the targeted cross-phase interpretive hints instead of restating facts) | **10 — Knowledge Extraction** | Upgrade from existing `Pioneer/LayerZero.md` (Batch 02) to Deep tier. Chosen for its interconnection-heavy ecosystem (160+ chains — strong entity-graph test case) and the ZRO airdrop (Jun 2024) as real Behavioral Intelligence material, already linked as a P4 analog in `PatternRegistry.md`. See the Phase 1/2/3/4/5/6/7/8/9 notes below. |
+| **LayerZero** | A (full 11) | 1 ✅ Foundation, 2 ✅ Entity (76 entities), 3 ✅ Historical (15/15 events, cited, Kelp DAO date corrected to 18 Apr 2026), 4 ✅ Technology (cited + Kelp DAO date patched), 5 ✅ Financial (4 funding rounds + 5 non-round capital events, FTX settlement confirmed undisclosed), 6 ✅ Token (fee switch confirmed never activated, buybacks confirmed held-not-burned, fabricated 25% TGE claim rejected), 7 ✅ Ecosystem (DeepSeek — first non-Gemini model tried, strongest first-attempt result yet), 8 ✅ Market (growth-vs-erosion tension correctly held together: 85.7% GMP share vs >$7.24B Chainlink CCIP exodus; Aave-picks-CCIP fact cross-verified against an old Phase 3 source), 9 ✅ Behavioral (15/15 Decision Events, 8-POV each; genuinely engaged the targeted cross-phase interpretive hints instead of restating facts), 10 ✅ Knowledge (8-POV Success-Matrix, 10 pattern candidates — 5 seeded + 5 found independently, e.g. the dual-verification non-collusion-assumption pattern and the DAO-picks-lower-bid-for-control pattern) | **11 — Conflict Resolution (final phase)** | Upgrade from existing `Pioneer/LayerZero.md` (Batch 02) to Deep tier. Chosen for its interconnection-heavy ecosystem (160+ chains — strong entity-graph test case) and the ZRO airdrop (Jun 2024) as real Behavioral Intelligence material, already linked as a P4 analog in `PatternRegistry.md`. See the Phase 1/2/3/4/5/6/7/8/9/10 notes below. |
 
 **LayerZero Phase 1 — two source files, deliberately.** The first Gemini pass returned a rich but
 narrative/table-formatted report in English; a reformat pass produced a clean Indonesian Label:Value version.
@@ -353,6 +353,18 @@ generically. Correctly preserved the corrected 18 April 2026 Kelp DAO date throu
 low-specificity inferences rather than genuinely grounded reactions — honestly labeled `(Inferensi)`
 throughout, so nothing is misrepresented as fact, just lower signal density in some cells. Committed with
 only a mechanical text-to-docx conversion. Full detail in `PROMPTS-LOG.md`.
+
+**LayerZero Phase 10 — Knowledge Extraction, 10 well-grounded pattern candidates (2026-07-26).** Used
+`examples/CaseStudies/LayerZero.md` (the assembled 9-phase dossier) as the single context document rather
+than re-pasting every phase, per the Phase 10/11 convention. The model went beyond the 5 seeded pattern
+candidates and found 5 more independently, all properly grounded with `Shape`/`Drawn From`/`Applies When`/
+Evidence Level and structural (not LayerZero-specific) transfer conditions — notably a dual-verification
+security model pattern (Oracle+Relayer in V1, DVN+Executor in V2 both resting on a non-collusion
+assumption that becomes a single point of failure once one party is compromised) and a DAO-picks-lower-
+nominal-bid-over-higher-cash-rival-offer governance pattern (Stargate's DAO choosing LayerZero over
+Wormhole's larger cash bid for strategic reasons). The 8-POV Success-Matrix avoided forcing clean labels
+where the record is genuinely mixed — e.g. Institution: failure, citing the exodus, while still noting
+the countervailing Feb 2026 institutional investment as unproven. Full detail in `PROMPTS-LOG.md`.
 
 **When a phase completes:** update its row's "Phases done"/"Next phase" columns in the same commit as dropping
 the phase's raw `.docx` into `doc_backup/inbox/phased/LayerZero/`. Once all phases planned for the Track are
