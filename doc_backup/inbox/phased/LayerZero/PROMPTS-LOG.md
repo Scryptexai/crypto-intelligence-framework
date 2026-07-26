@@ -1280,4 +1280,53 @@ token-unlock-aggregator sites or low-effort blogs — if an aggregator site is t
 for something, say so explicitly rather than presenting it with unearned confidence.
 ```
 
-**Result:** pending — awaiting output.
+**Result:** succeeded — decisively resolved both disqualifying problems from the rejected draft, with
+primary sources (LayerZero Foundation's own "Introducing ZRO" and "The ZRO Token" blog posts, its
+governance/fee-switch page, its buyback tracker) for the load-bearing claims.
+
+(1) **TGE 25% claim confirmed fabricated.** The real breakdown: 8.5% (85M ZRO) retail-claimable via the
+retroactive airdrop, plus 5% of total supply unlocked at launch from the "Ecosystem and Growth" sub-
+bucket (grants/programs/liquidity) — roughly **13.5% unlocked at TGE, not 25%**. The rejected draft's
+specific 8.5%/5%/11.5% split and its "Season 2 airdrop" framing for the 11.5% piece traces to no source.
+
+(2) **Fee Switch confirmed NEVER activated**, contradicting the rejected draft's "unconditionally active
+since Feb 2026" claim outright. All 4 semi-annual referendums (Dec 2024 / Jun 2025 / Dec 2025 / Jun 2026)
+show "Outcome: Off" on the Foundation's own governance page — Referendum #3 (Dec 2025) got ~97% "Yes"
+among votes cast but only 3.71% turnout, failing its 40.59% dynamic quorum. The rejected draft appears to
+have conflated "97% approved" with "activated," missing the quorum failure entirely. Several mid-tier
+outlets (0xprocessing, a CoinMarketCap AI page, KuCoin explainers) repeat the same false "activated"
+claim — flagged in Open Threads as a trap for future phases that might cite them.
+
+(3) **Post-TGE buybacks confirmed HELD in treasury, not burned** — DefiLlama's methodology and the
+Foundation's own language ("removes supply from the investor unlock schedule," "re-locked until Zero
+mainnet") both point to reallocation, not destruction. Total supply remains 1B; only circulating float
+is affected. This closes the "burn vs. treasury" question Phase 5 explicitly left open. The $112.7M /
+19.77%-of-supply buyback aggregate matches Phase 5's figures exactly — cross-phase consistency confirmed.
+
+(4) **Vesting terms confirmed**: Strategic Partners and Core Contributors both on a 3-year schedule
+(1-year cliff, then 24 months monthly linear) — matching what the *rejected* draft had claimed for this
+one specific item, even though it carried no citation there. The "Tokens Repurchased" (4%) bucket has no
+officially disclosed vesting schedule; aggregator models (tokenradar.ai, DropsTab) are estimates only.
+
+(5) **Governance scope confirmed narrow**: only the fee-switch referendum exists at the protocol level,
+binding (controls an immutable on-chain contract, not advisory), single-chain token-weighted voting with
+no delegation confirmed. (6) **Holder concentration**: resolved from "cannot be measured" to a properly
+caveated partial picture — ZRO is an OFT with supply concentrated on Arbitrum (not Ethereum, where
+Etherscan/CoinCarp concentration figures are near-zero and therefore misleading); Arbiscan's Top-N table
+couldn't be extracted, but named signals exist (Nansen: one entity accumulated 2.6% of supply via 9
+Coinbase-Prime-funded wallets in March 2026; Foundation's own data: one entity responsible for 37.9% of
+all unlocked-ZRO sales to date).
+
+Also surfaced a new open question not previously flagged anywhere: **circulating supply has no agreed
+figure** — trackers range from 252M (DefiLlama) to 514M (Foundation's own "unlocked" figure) depending
+entirely on whether re-locked Foundation holdings count as circulating.
+
+Synthesized directly into the template format (no further Gemini round needed — same rationale as Phase
+3/5): every field cited per-fact, the two corrected claims marked `[KOREKSI]` with the reasoning kept
+inline rather than silently overwritten, Open Threads covering the unresolved circulating-supply range,
+the unconfirmed delegation claim, and the false-activation trap for future phases to avoid. Verified
+structurally before committing (all required template fields present) and OOXML schema validation
+passed.
+
+**Active file:** `doc_backup/inbox/phased/LayerZero/06-token.docx`. Source research archived at
+`06-token-citation-map-research.md`.

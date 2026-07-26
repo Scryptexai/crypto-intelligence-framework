@@ -78,7 +78,7 @@ Intelligence non-trivial.
 
 | Project | Track | Phases done | Next phase | Notes |
 |---------|-------|--------------|------------|-------|
-| **LayerZero** | A (full 11) | 1 ✅ Foundation, 2 ✅ Entity (76 entities), 3 ✅ Historical (15/15 events, cited, Kelp DAO date corrected to 18 Apr 2026), 4 ✅ Technology (cited + Kelp DAO date patched), 5 ✅ Financial (4 funding rounds + 5 non-round capital events, FTX settlement confirmed undisclosed) | **6 — Token Intelligence** | Upgrade from existing `Pioneer/LayerZero.md` (Batch 02) to Deep tier. Chosen for its interconnection-heavy ecosystem (160+ chains — strong entity-graph test case) and the ZRO airdrop (Jun 2024) as real Behavioral Intelligence material, already linked as a P4 analog in `PatternRegistry.md`. See the Phase 1/2/3/4/5 notes below. |
+| **LayerZero** | A (full 11) | 1 ✅ Foundation, 2 ✅ Entity (76 entities), 3 ✅ Historical (15/15 events, cited, Kelp DAO date corrected to 18 Apr 2026), 4 ✅ Technology (cited + Kelp DAO date patched), 5 ✅ Financial (4 funding rounds + 5 non-round capital events, FTX settlement confirmed undisclosed), 6 ✅ Token (fee switch confirmed never activated, buybacks confirmed held-not-burned, fabricated 25% TGE claim rejected) | **7 — Ecosystem Intelligence** | Upgrade from existing `Pioneer/LayerZero.md` (Batch 02) to Deep tier. Chosen for its interconnection-heavy ecosystem (160+ chains — strong entity-graph test case) and the ZRO airdrop (Jun 2024) as real Behavioral Intelligence material, already linked as a P4 analog in `PatternRegistry.md`. See the Phase 1/2/3/4/5/6 notes below. |
 
 **LayerZero Phase 1 — two source files, deliberately.** The first Gemini pass returned a rich but
 narrative/table-formatted report in English; a reformat pass produced a clean Indonesian Label:Value version.
@@ -287,6 +287,28 @@ Citadel/ARK investments — none of which are priced equity rounds (LayerZero ha
 new "Peristiwa Modal Non-Round" section for the 5 events (no existing template slot fit them), the "$111M"
 figure retracted outright, and an Open Threads note flagging the 5 events as Phase 3 timeline candidates
 for a future revision. Full detail in `PROMPTS-LOG.md`.
+
+**LayerZero Phase 6 — Token Intelligence, first Gemini draft rejected, Claude-direct research succeeded
+(2026-07-26).** The Gemini draft failed worse than any prior LayerZero phase: zero inline citations
+(same failure Phase 3 needed 3 attempts to fix) plus a prose-quality collapse — several fields degraded
+into page-length run-on sentences — and, most seriously, a claim that TGE released 25% of supply (split
+8.5%/5%/11.5%) that contradicted the already-confirmed 8.5%-claimable figure with no traceable source,
+alongside a claim that the fee switch was "unconditionally active" since Feb 2026. Not patched (archived
+as `06-token-rejected-nocitation-badprose.docx`) — the 25% claim needed independent verification, not a
+citation retrofit onto content that might be wrong.
+
+A Claude-direct research pass (`06-token-citation-map-research.md`) resolved both issues decisively using
+LayerZero Foundation's own primary sources: the 25% TGE figure is fabricated (real figure ~13.5% — 8.5%
+retail-claimable + 5% Ecosystem-and-Growth unlock), and the fee switch has **never** been activated — all
+4 semi-annual referendums through June 2026 show "Outcome: Off" on the Foundation's governance page;
+Referendum #3 got ~97% approval among voters but only 3.71% turnout, failing its 40.59% quorum, which is
+likely what the rejected draft misread as "activated." Also confirmed post-TGE buybacks are held in
+treasury, not burned (closing a question Phase 5 left open, and matching Phase 5's $112.7M/19.77%-of-
+supply buyback figures exactly), and turned "holder concentration: unmeasurable" into a properly caveated
+partial picture (ZRO is an OFT concentrated on Arbitrum, not Ethereum; Nansen tracked one entity
+accumulating 2.6% of supply via Coinbase-Prime-funded wallets). Surfaced one new open question: no
+tracker agrees on circulating supply (252M–514M depending on whether re-locked Foundation holdings
+count). Synthesized directly into `06-token.docx`. Full detail in `PROMPTS-LOG.md`.
 
 **When a phase completes:** update its row's "Phases done"/"Next phase" columns in the same commit as dropping
 the phase's raw `.docx` into `doc_backup/inbox/phased/LayerZero/`. Once all phases planned for the Track are
