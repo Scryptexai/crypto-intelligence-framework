@@ -90,7 +90,9 @@ silently dropped**, so both files are kept:
   ingest reads (parseable, Indonesian, conflicts flagged, Open Threads present).
 - `doc_backup/deep/LayerZero_2026-07_phase1-narrative-v1.docx` — the original narrative pass, kept out of the
   `phased/` folder so ingest doesn't see two "foundation" files, but retained because it is the **richer**
-  source of record for the items below.
+  source of record for the items below. **Removed 2026-07-26** (Task 1 dataset-reset cleanup, after Phase 11
+  confirmed the pipeline complete) — its only unique content (the 4 items below) was already recovered into
+  Phase 2 before removal, so nothing was lost; see git history for the file itself if ever needed.
 
 **Dropped in the reformat — recovered in Phase 2** (see below): `Chainlink` (V1 Oracle provider),
 `Google Cloud`, `Polyhedra`, `Chainlink CCIP` (V2 DVN options) — all four now present as entities with
@@ -110,7 +112,8 @@ application-owned-security-consequence interpretation).
 Trimmed directly (no new Gemini prompt needed — this was dedup/reallocation of already-existing content,
 not new research):
 - `doc_backup/deep/LayerZero_2026-07_phase1-outofscope-v2.docx` — the old bloated v2, archived as source of
-  record (same pattern as v1 above).
+  record (same pattern as v1 above). **Removed 2026-07-26** (Task 1 dataset-reset cleanup) — every item it
+  carried is accounted for above (superseded by a later phase, or carried forward in `PROMPTS-LOG.md`).
 - `doc_backup/inbox/phased/LayerZero/01-foundation.docx` — **now v3, the active phase file**, trimmed to the
   ~20-field template only. 17.7KB raw text → 2.5KB. Existing Evidence Level tags were preserved as-is —
   Phase 1 was, ironically, the best-cited phase of the four so far; the citation failure only started at
@@ -170,7 +173,8 @@ the original (as done here), or instruct the reformat pass to preserve every pro
 Raw (pre-reformat) file archived at `doc_backup/deep/LayerZero_2026-07_phase3-nocitations-v1.docx` — same
 pattern as Phase 1's v1/v2 split. It will **not** become the active `phased/LayerZero/03-history.docx` until
 the citation reformat pass below comes back; only content-complete + citation-complete files enter the
-`phased/` folder ingest reads. All 13 known events from the prompt present, in order, plus 4 valuable bonus
+`phased/` folder ingest reads. **Removed 2026-07-26** (Task 1 dataset-reset cleanup) — fully superseded by
+the citation-complete `03-history.docx` that shipped after the Claude-direct research pass. All 13 known events from the prompt present, in order, plus 4 valuable bonus
 findings not explicitly requested: LayerZero bought back FTX's equity stake, the FTX Recovery Trust
 lawsuit's Sep 2023–Mar 2024 timeline including a Motion to Dismiss, a second-order Radiant Capital exploit
 (late 2024) distinct from the Kelp DAO incident, and the DVN diversification response (Nethermind/Google/
@@ -206,7 +210,8 @@ bug.
 **LayerZero Phase 4 — Technology Intelligence, technically excellent / citations empty (3rd occurrence).**
 Raw file archived at `doc_backup/deep/LayerZero_2026-07_phase4-nocitations-v1.docx` (same v1/v2-split
 pattern as Phase 1 and Phase 3 — will not become the active `phased/LayerZero/04-technology.docx` until
-its citation reformat comes back). Every requested recovery item was delivered in real depth: SendUln302/
+its citation reformat comes back). **Removed 2026-07-26** (Task 1 dataset-reset cleanup) — fully superseded
+by the citation-complete `04-technology.docx`. Every requested recovery item was delivered in real depth: SendUln302/
 ReceiveUln302/ReadLib1002 explained mechanically (down to `_payWorkers`, `payloadHash`, `_clearPayload`),
 the Kelp DAO 1-of-1 DVN vulnerability explained down to the RPC-node-poisoning attack mechanism, all 5
 Phase 2 auditors given scope + dates, the "Bridging Trilemma" framing explained and contrasted against the
@@ -244,9 +249,10 @@ failed differently: attempt 2 applied the "cannot re-verify source" fallback to 
 instead of searching (and regressed the 2 new events to a single end-of-block Evidence line, the exact
 anti-pattern the prompt existed to fix); attempt 3 dropped inline citation entirely (0 `Evidence:` fields,
 0 `[sumber N]` tags anywhere) while producing two unmerged, mutually inconsistent bibliography lists —
-though it did preserve Open Threads/Kesimpulan Strategis, which attempt 2 had dropped. Both raw outputs
-are archived (`doc_backup/inbox/phased/LayerZero/03-historical-attempt3-nocitation.docx`; full prompts
-for all 3 attempts in `PROMPTS-LOG.md`).
+though it did preserve Open Threads/Kesimpulan Strategis, which attempt 2 had dropped. Attempt 3's raw
+output was `doc_backup/inbox/phased/LayerZero/03-historical-attempt3-nocitation.docx` — **removed 2026-07-26**
+(Task 1 dataset-reset cleanup); full prompts for all 3 attempts remain in `PROMPTS-LOG.md`, which is the
+verbatim record of what was tried and why each attempt failed.
 
 The maintainer then ran **Claude's own research directly (not Gemini)** to build a sourced citation map
 for the same 15 events (archived at `03-historical-citation-map-research.md`) — real, checkable URLs
@@ -294,8 +300,8 @@ for a future revision. Full detail in `PROMPTS-LOG.md`.
 into page-length run-on sentences — and, most seriously, a claim that TGE released 25% of supply (split
 8.5%/5%/11.5%) that contradicted the already-confirmed 8.5%-claimable figure with no traceable source,
 alongside a claim that the fee switch was "unconditionally active" since Feb 2026. Not patched (archived
-as `06-token-rejected-nocitation-badprose.docx`) — the 25% claim needed independent verification, not a
-citation retrofit onto content that might be wrong.
+as `06-token-rejected-nocitation-badprose.docx`, **removed 2026-07-26** in the Task 1 dataset-reset cleanup)
+— the 25% claim needed independent verification, not a citation retrofit onto content that might be wrong.
 
 A Claude-direct research pass (`06-token-citation-map-research.md`) resolved both issues decisively using
 LayerZero Foundation's own primary sources: the 25% TGE figure is fabricated (real figure ~13.5% — 8.5%
@@ -385,12 +391,31 @@ draft, kept in the folder for audit trail) fuzzy-matched the "token" phase key a
 the archive step — the *correct* file's content still won by alphabetical sort luck, verified against the
 assembled dossier's Token Intelligence section, but this is exactly the fragility Task 2's `data_project`
 mode (see `tools/README.md`) was built to hard-fail on instead of silently tolerating. Moved both stray
-`.docx` drafts (`03-historical-attempt3-nocitation.docx`, `06-token-rejected-nocitation-badprose.docx`) into
-`doc_backup/inbox/phased/LayerZero/_rejected/` (non-destructive) and rebuilt — clean 11/11 assembly, no
-unmatched-file warnings, no duplicate archive citations. **LayerZero is now a complete Deep Dossier (D13)** —
+`.docx` drafts out of the phase-detection path non-destructively and rebuilt — clean 11/11 assembly, no
+unmatched-file warnings, no duplicate archive citations; both were then permanently removed in the same-day
+Task 1 dataset-reset cleanup below, once Phase 11 confirmed the pipeline complete.
+**LayerZero is now a complete Deep Dossier (D13)** —
 moved out of this queue; `examples/Pioneer/LayerZero.md` removed per the established Deep-supersedes-Summary
 precedent (same treatment already applied to D9 Aave, D11 EigenLayer, D12 Celestia). `poc/cif.json`/`data.js`
 rebuilt (`build_json.py`) — 13 deep projects now; `backtest.py` still passes 3/3.
+
+**LayerZero Task 1 — dataset-reset cleanup (2026-07-26, after Phase 11 confirmed complete).** Removed the
+6 superseded/rejected draft `.docx` files from this project's trial-and-error history, now that the 11-phase
+pipeline is 100% the system of record: `LayerZero_2026-07_phase1-narrative-v1.docx`,
+`LayerZero_2026-07_phase1-outofscope-v2.docx`, `LayerZero_2026-07_phase3-nocitations-v1.docx`,
+`LayerZero_2026-07_phase4-nocitations-v1.docx` (all `doc_backup/deep/`), plus
+`03-historical-attempt3-nocitation.docx` and `06-token-rejected-nocitation-badprose.docx` (the two rejected
+drafts moved into `_rejected/` during Phase 11 finalization, now removed). Every one of these was already
+confirmed fully superseded by its corresponding final phase file before removal — see the individual Phase
+1/3/4/6 notes above, each now annotated with a removal marker rather than left as a dangling file reference.
+**Kept, deliberately not treated as duplicates:** the 7 intermediate research/support files still in
+`doc_backup/inbox/phased/LayerZero/` (`03-historical-citation-map-research.md`,
+`05-financial-citation-map-research.md`, `06-token-citation-map-research.md`, `07-ecosystem-deepseek-raw.txt`,
+`08-market-raw.txt`, `09-behavioral-raw.txt`, `10-knowledge-raw.txt`) — these are the citation/source-mapping
+work product behind the final phase files, not draft duplicates of them, and `PROMPTS-LOG.md` (the verbatim
+prompt-by-prompt record, which is the point of the whole logging discipline — it is not a "backup doc,"
+it is the audit trail). Nothing about the 11 canonical phase files, the assembled dossier, or the archived
+`doc_backup/deep/LayerZero_<phase>_2026-07.docx` set changed.
 
 **When a phase completes:** update its row's "Phases done"/"Next phase" columns in the same commit as dropping
 the phase's raw `.docx` into `doc_backup/inbox/phased/LayerZero/`. Once all phases planned for the Track are

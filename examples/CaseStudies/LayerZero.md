@@ -4,7 +4,6 @@
 **Source:** Deep Research (Gemini), Format v3 Dependency Pipeline (11/11 phases: foundation, entity, history, technology, financial, token, ecosystem, market, behavioral, knowledge, conflict). **Auto-assembled** by `tools/ingest.py` (deterministic, no LLM) — each phase extracted and concatenated in dependency order per `docs/Protocol/Deep-Research-Brief.md`; the reasoning is the source reports'.
 **Raw sources archived:** doc_backup/deep/LayerZero_foundation_2026-07.docx, doc_backup/deep/LayerZero_entity_2026-07.docx, doc_backup/deep/LayerZero_history_2026-07.docx, doc_backup/deep/LayerZero_technology_2026-07.docx, doc_backup/deep/LayerZero_financial_2026-07.docx, doc_backup/deep/LayerZero_token_2026-07.docx, doc_backup/deep/LayerZero_ecosystem_2026-07.docx, doc_backup/deep/LayerZero_market_2026-07.docx, doc_backup/deep/LayerZero_behavioral_2026-07.docx, doc_backup/deep/LayerZero_knowledge_2026-07.docx, doc_backup/deep/LayerZero_conflict_2026-07.docx.
 **Phases not run:** none.
-**Supersedes:** `examples/Pioneer/LayerZero.md` — same project now exists as a fuller Deep dossier; the Summary is redundant and should be reviewed for removal (not auto-deleted).
 
 > Faithful concatenation of phase outputs — no fabrication, no distillation beyond what the Conflict Resolution phase itself states. Consider a periodic QC pass.
 

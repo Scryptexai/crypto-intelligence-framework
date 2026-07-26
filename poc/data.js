@@ -2,7 +2,7 @@
 window.CIF = {
   "meta": {
     "schema": "cif-export/1",
-    "generated": "2026-07-26 12:25 UTC",
+    "generated": "2026-07-26 12:43 UTC",
     "projects": 26,
     "deep": 13,
     "summary": 13,
@@ -190,7 +190,6 @@ window.CIF = {
       "cat": "Interoperability / Omnichain Messaging (Bridge, GMP, DVN security)",
       "era": "2021–",
       "tags": [
-        "first-mover",
         "bridge"
       ]
     },
