@@ -13,6 +13,14 @@ Written: 2026-07-24. Source: maintainer discussion, no new research.
 on-chain analytics tools (Nansen, Arkham, DeBank) structurally cannot cover pre-TGE projects. Superseded
 content is marked inline rather than deleted, so the reasoning behind the change stays visible.
 
+**2026-07-26 — AirdropOS UI audit.** Before the maintainer hands AirdropOS to Claude Design for the actual
+build/upgrade/rebrand-to-CIF pass, this repo's session audited the current AirdropOS codebase against this
+document. See `docs/Project/AirdropOS-UI-Audit.md` for the full findings (diagnosis only, no implementation)
+— summary: the Intelligence surface is more faithfully built to this spec than expected, but the Track Record
+page (§3.3) is fully unbuilt, every route requires login (contradicting §9.2's free-browsing promise and
+blocking §3.3's public-ness), three stale/contradictory legacy product docs still live in that repo, and
+branding still reads "airdrop hunter os" against the revised §2 target market.
+
 ## 1. Why this file exists
 
 Every other file in `docs/` specifies the **knowledge model** (how facts about crypto projects are captured).
@@ -279,4 +287,5 @@ pattern — same component code/props shape, so this is a data-layer swap, not a
 
 `examples/DatasetIndex.md` (V1→V2 Upgrade Queue — separate, data-hygiene track, not blocked by this),
 `docs/Reasoning/Prediction.md`, `examples/PatternRegistry.md` (`scope` field, referenced in §3.2),
-`tools/backtest.py`, `poc/intake.html`, `poc/cif.json`, `CLAUDE.md`.
+`tools/backtest.py`, `poc/intake.html`, `poc/cif.json`, `CLAUDE.md`,
+`docs/Project/AirdropOS-UI-Audit.md` (2026-07-26 audit of the current AirdropOS build against this spec).
