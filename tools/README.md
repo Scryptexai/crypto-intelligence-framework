@@ -68,12 +68,38 @@ data_project/<project>/NN-<phasekey>.docx   e.g. data_project/layerzero/03-histo
   the same key → the whole project **raises and writes nothing** (no partial/misleading dossier).
   A missing phase also raises unless `--allow-partial` is passed explicitly.
 
+**Content-level verification** (`validate_phase_content()`), on top of the filename contract — a
+correct filename proves nothing about whether the *content* is real, complete, or belongs to this
+project. Runs on every file before anything is written or archived:
+- content shorter than 400 chars → broken/empty extraction.
+- no `PROJECT: <Name>` header, or the header names a different project than the folder → likely
+  misfiled/wrong-project content.
+- zero `(HIGH)`/`(MEDIUM)`/`(LOW)`/`(TIDAK ADA KONFLIK)` Evidence Level tags anywhere → the exact
+  "empty citations" failure mode that took 2–3 rejected drafts each to catch by hand in LayerZero
+  Phase 3/4/6 before this check existed.
+- the `[sumber tidak dapat diverifikasi ulang]` fallback phrase used as often or more than real
+  Evidence Level tags → blanket fallback overuse instead of genuine per-fact citation (Phase 3
+  attempt-2's failure mode).
+- two files in the same project with identical extracted content (whitespace-normalised hash) →
+  likely the same file saved under two phase names by mistake.
+
+Any failure → **raises and writes nothing** for that file's project, listing every file and every
+reason found (not just the first). Override with `--allow-unverified` if a human has reviewed the
+flagged file and it's a false positive — not recommended as a default habit.
+
 ```
 python tools/ingest.py --type data_project --input data_project/layerzero
 python tools/ingest.py                                   # also scans data_project/ by default
 python tools/ingest.py --type data_project --allow-partial --input data_project/arbitrum
+python tools/ingest.py --type data_project --allow-unverified --input data_project/arbitrum
 ```
 
 The process exits non-zero if any `data_project` folder fails validation, so it's safe to gate on in
-a script. The older `phased` mode (fuzzy matching, soft warnings) still works unchanged for in-flight
-projects — it is not yet removed pending the dataset-reset cleanup.
+a script — **`run.sh` already does this correctly**: a failed project is logged and skipped (nothing
+written for it), `build_json.py`/`backtest.py` still run against whatever *did* ingest successfully,
+and only `run.sh`'s own final exit code carries the failure signal (don't let a shell wrapper's
+`set -e` swallow that distinction and abort the whole pipeline on one bad project — see `run.sh`'s
+`run_ingest()`). The older `phased` mode (fuzzy matching, soft warnings, no content verification)
+still works unchanged for LayerZero's own folder (`doc_backup/inbox/phased/LayerZero/`, which happens
+to already satisfy the `data_project` filename contract too — verified by running it through
+`process_data_project()` directly). New projects should use `data_project/<project>/`.

@@ -416,6 +416,20 @@ prompt-by-prompt record, which is the point of the whole logging discipline — 
 it is the audit trail). Nothing about the 11 canonical phase files, the assembled dossier, or the archived
 `doc_backup/deep/LayerZero_<phase>_2026-07.docx` set changed.
 
+**Task 2 — hardened extractor + content verification (2026-07-26, after Task 1).** `tools/ingest.py`'s
+`data_project` mode (built earlier the same session against the Phase 3 filename-detection bug) extended
+with `validate_phase_content()`: per-file checks for near-empty content, `PROJECT:` header
+presence/project-name match, zero Evidence Level tags (the empty-citation failure hit 2–3 times on Phase
+3/4/6), fallback-phrase overuse, and cross-file duplicate-content hashing — any failure raises and writes
+**nothing**, verified via unit + integration tests. Run for real against LayerZero's own 11 phase files
+(no move needed — the filenames already satisfy the contract): found `03-history.docx` and
+`04-technology.docx` (both hand-synthesized by Claude mid-session, not raw single-shot model output) were
+missing the required `PROJECT: LayerZero` header — fixed mechanically, re-verified clean on all 11 files.
+Also fixed `run.sh`, which used `set -e` and would have aborted the *entire* pipeline (skipping
+`build_json.py`/`backtest.py`) on one bad `data_project` folder even when everything else was fine — now
+logs and continues, only the script's own final exit code carries the failure signal. Full detail:
+`PROMPTS-LOG.md`'s "Task 2 completion" entry; usage: `tools/README.md`.
+
 **When a phase completes:** update its row's "Phases done"/"Next phase" columns in the same commit as dropping
 the phase's raw `.docx` into `doc_backup/inbox/phased/LayerZero/`. Once all phases planned for the Track are
 done, run `./run.sh` to assemble the dossier, then move the finished project out of this table (it becomes a

@@ -2106,3 +2106,41 @@ warning, no duplicate archive citation.
 regenerated at 11/11 phases — LayerZero is now a complete Deep Dossier (D13 in `DatasetIndex.md`).
 `examples/Pioneer/LayerZero.md` removed per the established Deep-supersedes-Summary precedent (same
 treatment already applied to D9 Aave, D11 EigenLayer, D12 Celestia).
+
+## Task 2 completion — content-level verification layer + real-data audit (2026-07-26)
+
+Extended `data_project` mode's filename-only hardening (built earlier this session) with
+`validate_phase_content()`: per-file checks for near-empty content, `PROJECT:` header presence and
+project-name match, zero Evidence Level tags anywhere (the exact empty-citation failure this pipeline
+hit 2–3 times on Phase 3/4/6), fallback-phrase overuse, and a whitespace-normalised content-hash check
+across files in the same project to catch accidental copy-paste duplicates. Any failure raises and
+writes/archives nothing for that project — verified via unit tests (each check in isolation) and
+integration tests (full `process_data_project()` runs: clean pass, each failure mode individually,
+`--allow-unverified` override, and confirming a *rejected* project leaves `doc_backup/deep/` completely
+untouched — an earlier version of the code archived the raw file before checking, fixed by reordering
+extraction/validation into a first pass and archiving into a second pass that only runs once every
+check has passed).
+
+**Ran this new verifier against LayerZero's real, already-committed 11 phase files** (via
+`process_data_project(Path("doc_backup/inbox/phased/LayerZero"), ...)` — its filenames already satisfy
+the `data_project` contract, no move needed) as the actual proof this isn't just fixture-tested. Found
+two genuine gaps: `03-history.docx` and `04-technology.docx` (both hand-synthesized/patched by Claude
+directly earlier this session, rather than being raw single-shot model output) were missing the
+required `PROJECT: LayerZero` header line — every other of the 11 files has it. Fixed mechanically
+(prepended the header via python-docx, no content change, re-applied the recurring `w:zoom` OOXML
+percent-attribute fix) — re-ran verification, now clean on all 11 files. Note: `04-technology.docx`
+independently fails `validate.py`'s strict XSD check on an unrelated `w:pgMar`/`gutter` attribute —
+confirmed via `git show` that this predates today's edit (present in the original committed file), and
+doesn't affect either python-docx or `tools/extract.py` reading the file correctly, so left as-is
+rather than chased further.
+
+**`run.sh` fix (user-flagged mid-session):** the script used `set -e`, so `tools/ingest.py`'s new
+non-zero exit-on-verification-failure would have aborted the *entire* pipeline before `build_json.py`/
+`backtest.py` ran — even when the failure was isolated to one new/broken project and everything else
+(LayerZero) was already fine. Fixed: `run.sh` now runs ingest, logs and continues past a non-zero ingest
+exit code (per-project isolation already existed in `ingest.py`; this fixes the *orchestration* layer),
+still runs build/backtest against whatever ingested successfully, and only propagates the failure via
+`run.sh`'s own final exit code. Verified end-to-end by dropping a real broken fixture in `data_project/`
+and running `./run.sh`: failure logged clearly, nothing written/archived for the bad project, build +
+backtest still completed for LayerZero, final exit code 1; then re-ran clean with the fixture removed,
+exit code 0.

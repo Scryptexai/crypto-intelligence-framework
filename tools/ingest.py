@@ -362,12 +362,73 @@ def detect_phase_key_strict(filename: str) -> str:
         )
     return key
 
-def process_data_project(folder: Path, force: bool, allow_partial: bool = False, dest_dir: Path = None):
+MIN_PHASE_CHARS = 400
+EVIDENCE_TAG_RE = re.compile(r"\((?:HIGH|MEDIUM|LOW|TIDAK ADA KONFLIK)\)")
+PROJECT_HEADER_RE = re.compile(r"(?im)^PROJECT:\s*(.+)$")
+FALLBACK_PLACEHOLDER_RE = re.compile(r"\[sumber tidak dapat diverifikasi ulang\]", re.I)
+
+def validate_phase_content(filename: str, project_name: str, text: str) -> list:
+    """Content-level checks beyond filename matching -- the strict filename contract
+    (detect_phase_key_strict) only proves a file is NAMED correctly, not that its content is real,
+    belongs to this project, or meets the Deep Research Brief's citation contract. Catches the two
+    failure classes actually observed this session: (1) near-zero-citation drafts that took 2-3
+    rejected Gemini attempts each to catch by hand in LayerZero Phase 3/4/6 -- exactly the kind of
+    defect a human reviewer can miss at 1000-project scale; (2) a wrong/misfiled project's content
+    landing in this folder. Returns a list of FAIL reasons (empty = passed)."""
+    reasons = []
+    stripped = text.strip()
+    if len(stripped) < MIN_PHASE_CHARS:
+        reasons.append(
+            f"content suspiciously short ({len(stripped)} chars, minimum {MIN_PHASE_CHARS}) -- "
+            f"likely a broken/empty/placeholder extraction, not a real phase report"
+        )
+
+    m = PROJECT_HEADER_RE.search(text)
+    if not m:
+        reasons.append(
+            "no 'PROJECT: <Name>' header found -- required by the Deep Research Brief format contract "
+            "(see docs/Protocol/Deep-Research-Brief.md); cannot confirm which project this file belongs to"
+        )
+    else:
+        declared = re.sub(r"[^a-z0-9]", "", m.group(1).lower())
+        folder = re.sub(r"[^a-z0-9]", "", project_name.lower())
+        if declared and folder and declared != folder and declared not in folder and folder not in declared:
+            reasons.append(
+                f"PROJECT header says '{m.group(1).strip()}' but this is the '{project_name}' folder -- "
+                f"likely misfiled content from a different project"
+            )
+
+    if not EVIDENCE_TAG_RE.search(text):
+        reasons.append(
+            "zero Evidence Level tags found -- (HIGH)/(MEDIUM)/(LOW) per-fact citation is required by the "
+            "format contract; this is the exact 'empty citations' failure mode rejected 2-3 times each in "
+            "LayerZero Phase 3/4/6 before a working draft was accepted"
+        )
+
+    fallback_hits = len(FALLBACK_PLACEHOLDER_RE.findall(text))
+    fact_count = max(len(EVIDENCE_TAG_RE.findall(text)), 1)
+    if fallback_hits > 0 and fallback_hits >= fact_count:
+        reasons.append(
+            f"'[sumber tidak dapat diverifikasi ulang]' fallback used {fallback_hits} time(s), matching or "
+            f"exceeding the {fact_count} real Evidence Level tag(s) found -- looks like blanket fallback "
+            f"overuse rather than genuine per-fact citation (the Phase 3 attempt-2 failure mode)"
+        )
+    return reasons
+
+def _content_hash(text: str) -> str:
+    import hashlib
+    norm = re.sub(r"\s+", " ", text.strip().lower())
+    return hashlib.sha256(norm.encode("utf-8")).hexdigest()
+
+def process_data_project(folder: Path, force: bool, allow_partial: bool = False,
+                          allow_unverified: bool = False, dest_dir: Path = None):
     """Assemble one project's dossier from data_project/<project>/ -- hardened successor to
-    process_phased_project(). Exact filename contract (see detect_phase_key_strict); hard-fails
-    (raises ValueError) on any unmatched file, duplicate phase key, or -- unless allow_partial --
-    an incomplete phase set, instead of the old function's silent soft-warning behaviour. A raised
-    error means NOTHING is written for this project: no partial/misleading dossier."""
+    process_phased_project(). Exact filename contract (see detect_phase_key_strict) plus
+    content-level verification (validate_phase_content); hard-fails (raises ValueError) on any
+    unmatched file, duplicate phase key, duplicate file content, failed content verification, or --
+    unless allow_partial -- an incomplete phase set, instead of the old function's silent
+    soft-warning behaviour. A raised error means NOTHING is written for this project: no
+    partial/misleading/unverified dossier."""
     name = folder.name
     dest_dir = dest_dir or DEST["deep"]
     existing = find_existing(dest_dir, name)
@@ -380,7 +441,11 @@ def process_data_project(folder: Path, force: bool, allow_partial: bool = False,
     if not files:
         return [("warn", name, "no phase files found in folder")]
 
-    phases, all_threads, archived, seen = {}, [], [], {}
+    # Pass 1: detect/extract/validate only -- NO archiving yet. A project that fails any check below
+    # must leave doc_backup/deep/ untouched, same as it leaves the dossier unwritten: "verification
+    # failed" must mean nothing happened, not "the dossier wasn't written but the raw file still got
+    # copied into the permanent archive."
+    phases, all_threads, seen, seen_hashes, verify_fails, raw_by_file = {}, [], {}, {}, [], {}
     for f in files:
         key = detect_phase_key_strict(f.name)
         if key in seen:
@@ -389,17 +454,43 @@ def process_data_project(folder: Path, force: bool, allow_partial: bool = False,
                 f"Remove or rename one before ingesting."
             )
         seen[key] = f.name
-        body, threads = split_open_threads(extract_source(f))
-        phases[key] = body
-        all_threads.extend(f"[{key}] {t}" for t in threads)
-        archived.append(_archive(f, "deep", f"{name}_{key}"))
+        raw = extract_source(f)
+        raw_by_file[f.name] = (key, raw)
 
-    missing = [k for k in PHASE_KEYS if k not in phases]
+        h = _content_hash(raw)
+        if h in seen_hashes:
+            raise ValueError(
+                f"[{name}] duplicate content: '{seen_hashes[h]}' and '{f.name}' have identical extracted "
+                f"text (normalised) -- likely the same file saved under two phase names by mistake."
+            )
+        seen_hashes[h] = f.name
+
+        fails = validate_phase_content(f.name, name, raw)
+        if fails:
+            verify_fails.append((f.name, fails))
+
+    if verify_fails and not allow_unverified:
+        lines = [f"[{name}] content verification failed for {len(verify_fails)} file(s):"]
+        for fname, fails in verify_fails:
+            lines.append(f"  {fname}:")
+            lines.extend(f"    - {r}" for r in fails)
+        lines.append("Pass --allow-unverified to assemble anyway (not recommended without human review).")
+        raise ValueError("\n".join(lines))
+
+    missing = [k for k in PHASE_KEYS if k not in {v[0] for v in raw_by_file.values()}]
     if missing and not allow_partial:
         raise ValueError(
             f"[{name}] incomplete: missing phase(s) {', '.join(missing)} "
-            f"({len(phases)}/{len(PHASE_KEYS)} present). Pass --allow-partial to assemble anyway."
+            f"({len(raw_by_file)}/{len(PHASE_KEYS)} present). Pass --allow-partial to assemble anyway."
         )
+
+    # Pass 2: only now, with every check passed, split Open Threads and archive raw sources.
+    archived = []
+    for fname, (key, raw) in raw_by_file.items():
+        body, threads = split_open_threads(raw)
+        phases[key] = body
+        all_threads.extend(f"[{key}] {t}" for t in threads)
+        archived.append(_archive(folder / fname, "deep", f"{name}_{key}"))
 
     order = [k for k in PHASE_KEYS if k in phases]
     body_md = []
@@ -473,6 +564,9 @@ def main():
     ap.add_argument("--force", action="store_true")
     ap.add_argument("--allow-partial", action="store_true",
                      help="data_project only: assemble even if fewer than 11/11 phases are present")
+    ap.add_argument("--allow-unverified", action="store_true",
+                     help="data_project only: assemble even if content verification fails "
+                          "(near-empty content, wrong PROJECT header, zero citations, fallback overuse)")
     ap.add_argument("--no-build", action="store_true")
     args = ap.parse_args()
 
@@ -511,7 +605,7 @@ def main():
             counts[status] += 1
     for folder in data_projects:
         try:
-            results = process_data_project(folder, args.force, args.allow_partial)
+            results = process_data_project(folder, args.force, args.allow_partial, args.allow_unverified)
         except ValueError as e:
             print(f"❌ [data_project] {folder.name:18s} {e}")
             counts["error"] += 1
