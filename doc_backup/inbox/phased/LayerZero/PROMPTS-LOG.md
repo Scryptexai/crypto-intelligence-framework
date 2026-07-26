@@ -1957,3 +1957,98 @@ not a content issue. No fabrication or unsupported pattern found on review.
 **Active file:** `doc_backup/inbox/phased/LayerZero/10-knowledge.docx`. Raw output archived at
 `10-knowledge-raw.txt`. The assembled dossier (`examples/CaseStudies/LayerZero.md`) will be regenerated
 with `--force` once Phase 11 (Conflict Resolution) is also done.
+
+## Phase 11 — Conflict Resolution (drafted 2026-07-26, final phase)
+
+Context Pack: the assembled 10-phase dossier (`examples/CaseStudies/LayerZero.md`, regenerated with
+`--force` after Phase 10). No Sentiment companion exists for this project. This is explicitly a
+merge-only pass — no new research — so unlike every prior prompt, this one does not inject "already
+known" facts to deepen; instead it injects a list of 12 specific conflicts/open items already flagged
+across Phases 1-10's own Open Threads sections, with an explicit instruction to VERIFY each against the
+actual dossier text (not just copy the list forward) since some may have been resolved by a later phase
+and shouldn't be force-reported as unresolved.
+
+Item #8 (Kelp DAO date) is the highest-stakes check: asks the model to scan every phase, not just
+Historical/Technology (which were directly patched), to confirm no stray "April 2024" reference to the
+exploit survived into Ecosystem, Market, Behavioral, or Knowledge Extraction — those 4 phases were
+written/synthesized after the date correction but never explicitly re-checked for it.
+
+```
+Ini adalah pass MERGE-ONLY. JANGAN meriset apapun yang baru. Baca ulang dossier gabungan LayerZero yang
+dilampirkan (10 fase: Foundation, Entity, Historical, Technology, Financial, Token, Ecosystem, Market,
+Behavioral, Knowledge Extraction — digabung otomatis dari repositori) dan identifikasi SETIAP tempat di
+mana:
+- Dua fase (atau dua sumber di dalam satu fase) melaporkan angka berbeda untuk fakta yang sama
+- Sebuah klaim di satu fase dikontradiksi, dipersulit, atau diragukan oleh sesuatu di fase lain
+- Sebuah "Open Thread" dari fase awal tidak pernah benar-benar diselesaikan oleh fase berikutnya
+
+Tidak ada companion Sentiment (Grok/X) yang tersedia untuk proyek ini — abaikan poin soal itu.
+
+=== KONFLIK YANG SUDAH DIKETAHUI DARI CATATAN SEBELUMNYA — VERIFIKASI apakah masih ada di dossier gabungan,
+JANGAN cuma disalin, CEK ULANG teks aktual di dossier (mungkin sudah terselesaikan di fase yang lebih baru,
+atau justru masih ada) ===
+1. Jumlah chain terintegrasi: 50+ (Foundation) vs 130+ (Ecosystem/BlockEden) vs 165+ (beberapa fase) vs
+   168 (Market/Gate.com) vs 170+ (Market/TheBlock) — angka mana yang muncul di fase mana, dan apakah ini
+   genuinely konflik atau cuma snapshot waktu berbeda yang tidak ditandai tanggalnya dengan jelas?
+2. Jumlah dApp di ekosistem: 80+ vs 300+ vs 750+
+3. Pendanaan Series A: $6 juta (CoinDesk) vs $6,3 juta (Blockworks)
+4. Nilai akuisisi Stargate: $110 juta (DL News) vs $120 juta (blog resmi LayerZero) — apakah "biaya kas
+   efektif $25 juta" dari blog resmi cukup menjelaskan selisih ini, atau tetap konflik yang belum selesai?
+5. Total pendanaan kumulatif: $263 juta (The Block/CB Insights, hingga Series B) vs klaim agregator
+   seperti Tracxn "$318 juta" (Financial Intelligence sudah menandai ini sebagai kemungkinan double-count
+   pembelian token sekunder — verifikasi apakah penandaan ini konsisten di fase lain)
+6. Konflik entitas: "LayerZero Labs Ltd." vs "Optimistic Labs Limited" — hubungan pasti belum terselesaikan
+   sejak Phase 1, apakah ada fase manapun setelahnya yang mengklarifikasi (atau tetap terbuka)?
+7. Daftar auditor (Trail of Bits, Zellic, Zokyo, Peckshield, Hacken, ClawSecure) dari Technology
+   Intelligence — TIDAK diverifikasi independen oleh riset citation-mapping Financial/Token Intelligence;
+   Zokyo malah cuma muncul sebagai investor di satu sumber, bukan auditor. Apakah dossier gabungan
+   mengandung KONTRADIKSI eksplisit antara klaim "Zokyo adalah auditor" (Technology) dan "Zokyo adalah
+   investor" (Financial), atau cuma dua fakta terpisah yang belum direkonsiliasi?
+8. Tanggal insiden Kelp DAO: PASTIKAN tidak ada SISA referensi "April 2024" di fase manapun (Historical
+   sudah dikoreksi ke 18 April 2026, Technology sudah ditambal) — cek SEMUA fase termasuk Ecosystem,
+   Market, Behavioral, Knowledge Extraction untuk memastikan tidak ada tanggal lama yang lolos.
+9. Nilai settlement FTX: angka "$111 juta" yang beredar di draf sangat awal sudah ditandai tidak berdasar
+   di banyak fase — pastikan tidak ada fase manapun yang masih mengutip angka ini sebagai fakta.
+10. TVL puncak Stargate: ">$3 miliar" (dari catatan Foundation/Financial awal, tanpa tanggal presisi) vs
+    rangkaian angka presisi dari Market Intelligence ($1,37 miliar Q1 2026 → $1,22 miliar Maret 2026 →
+    $400-600 juta Mei 2026) — apakah tanggal puncak >$3 miliar itu sendiri pernah dipastikan di fase
+    manapun, atau tetap "diketahui approximate, tidak presisi"?
+11. Status DVN provider EigenLabs/EigenLayer dan Delegate — ditandai "tidak diketahui" di Ecosystem
+    Intelligence; apakah ada fase lain (Technology, Knowledge Extraction) yang secara tidak sengaja
+    mengklaim status live/announced untuk keduanya tanpa sitasi baru, yang akan jadi kontradiksi dengan
+    penandaan "tidak diketahui" itu?
+12. Radiant Capital dan Ondo Finance mengadopsi multi-DVN pasca-insiden akhir 2024 — Radiant
+    terverifikasi sebagian, Ondo Finance TIDAK — pastikan tidak ada fase yang menyamaratakan status
+    keduanya sebagai "terverifikasi" begitu saja.
+
+=== FORMAT OUTPUT ===
+Untuk SETIAP konflik yang ditemukan (baik dari daftar di atas yang terkonfirmasi masih ada, MAUPUN yang
+kamu temukan sendiri saat membaca ulang dossier — jangan batasi diri ke 12 di atas saja), ulangi blok ini:
+
+INKONSISTENSI: <apa yang berkonflik>
+  Source A: <fase + nilai/klaim>
+  Source B: <fase + nilai/klaim>
+  Evidence Level: <LOW, atau MEDIUM kalau salah satu sumber jelas lebih otoritatif — jelaskan kenapa>
+---
+
+Kalau setelah pemeriksaan ternyata SATU dari 12 item di atas TERNYATA sudah terselesaikan sepenuhnya
+(tidak ada kontradiksi nyata, cuma dua fakta terpisah yang saling melengkapi), JANGAN paksakan jadi blok
+INKONSISTENSI — cukup sebutkan di Open Threads bahwa item itu sudah diperiksa dan tidak ada konflik nyata.
+
+Kalau BENAR-BENAR tidak ada konflik ditemukan sama sekali (sangat tidak mungkin mengingat daftar di atas,
+tapi kalau memang begitu), tulis eksplisit "No conflicts found." — jangan dikosongkan begitu saja.
+
+Open Threads
+- <hanya yang BENAR-BENAR masih belum terselesaikan bahkan setelah pass ini>
+
+=== ATURAN FORMAT ===
+- Tulis dalam BAHASA INDONESIA. Yang TIDAK diterjemahkan: nama produk/teknologi, nama orang, nama
+  perusahaan, nama chain, dan URL.
+- JANGAN meriset fakta baru — ini murni membandingkan apa yang SUDAH ada di dossier gabungan.
+- JANGAN gunakan tabel sama sekali.
+- Sebutkan fase spesifik (dan field/event kalau relevan) untuk Source A dan Source B, bukan cuma "sumber
+  lama vs sumber baru".
+- Awali output dengan: PROJECT: LayerZero
+```
+
+**Result:** pending — awaiting output.
