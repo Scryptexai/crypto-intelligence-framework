@@ -1465,4 +1465,32 @@ Open Threads
   lebih lanjut.
 ```
 
-**Result:** pending — awaiting output.
+**Result:** succeeded — run through DeepSeek instead of Gemini (the maintainer hit a Claude usage limit and
+found Gemini's own Phase 7 attempt incomplete, so tried a third model on the same prompt). First
+non-Gemini, non-manual-research pass in this project, and the strongest first-attempt result of any
+LayerZero phase to date: format followed correctly, citations attached per-fact throughout (63 bracketed
+source+date citations across 87 non-empty lines), and the live-vs-announced-only distinction applied
+correctly without prompting twice — Keeta and Tether/USDT0 marked live with mechanism detail (USDT0 uses
+both lock-and-mint on Ethereum and burn-and-mint on other chains, resolving the Tether integration-
+mechanics gap carried since the Phase 1 trim), while Citadel Securities/DTCC/ICE/ARK Invest/Google Cloud
+(all part of the Feb 2026 "Zero" announcement) are correctly marked announced-only with the exact
+"evaluating/looking into/exploring" language from source quoted as the basis.
+
+Cross-checks cleanly against every prior phase: the 8 DVN providers match Phase 2's entity list exactly,
+the Zero-blockchain partnership set matches Phase 3/5/6's "still exploration-stage" framing, and the
+11 CEX + 4 DEX exchange list is correctly *not* re-derived, just cited as already covered. Two DVN
+providers (EigenLabs/EigenLayer, Delegate) honestly marked "status tidak diketahui / LOW" rather than
+guessed. Open Threads properly surfaces every cross-source numeric conflict it found rather than
+silently picking one: chain count (165+ vs 170+ vs 80+ across different sources/dates), dApp count
+(80+ vs 300+ vs 750+), and three different Telegram member counts from what may be different channels.
+
+One quality gap versus the Phase 3/5/6 Claude-direct research: citations are domain+date only
+(e.g. "[www.theblock.co, 23 Juli 2026]"), not full URLs — traceable but less immediately checkable.
+Not a blocker; noted for awareness, not corrected, since fabricating URLs would be worse than citing
+without one.
+
+Committed with only a mechanical format conversion (plain text to `.docx`, matching house style) — no
+content changes, since nothing here needed correcting the way Phase 6's Gemini draft did.
+
+**Active file:** `doc_backup/inbox/phased/LayerZero/07-ecosystem.docx`. Raw DeepSeek output archived at
+`07-ecosystem-deepseek-raw.txt`.

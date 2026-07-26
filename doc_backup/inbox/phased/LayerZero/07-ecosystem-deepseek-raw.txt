@@ -1,0 +1,104 @@
+PROJECT: LayerZero
+
+Integration Partner: Keeta
+What it does: Kemitraan untuk membuat tokenized commercial bank deposit dapat dipindahkan lintas Ethereum, Solana, Base, dan Keeta Network; didukung oleh deposito bank komersial melalui Bivo (platform fintech berlisensi AS) dengan 9 mata uang fiat (USD, EUR, JPY, CNY, GBP, CAD, MXN, AED, HKD). (HIGH) [www.theblock.co, 23 Juli 2026]
+Status: live (peluncuran layanan dijadwalkan "later this month" per 23 Juli 2026) (HIGH) [www.theblock.co, 23 Juli 2026]
+
+Integration Partner: Tether (USDT0)
+What it does: USDT0 adalah omnichain deployment Tether USD₮ menggunakan standar OFT LayerZero untuk memindahkan aset lintas chain tanpa wrapped token pihak ketiga. Mekanisme teknis: lock-and-mint (Ethereum mengunci USDT di adapter, message trigger mint di chain tujuan) dan burn-and-mint (chain non-Ethereum membakar OFT, message trigger mint di chain tujuan). (HIGH) [docs.usdt0.to]
+Status: live di 15+ chain. (HIGH) [docs.usdt0.to]
+
+Integration Partner: Citadel Securities
+What it does: Investasi strategis ZRO; memberikan keahlian market structure dan mengevaluasi aplikasi teknologi LayerZero untuk trading, clearing, dan settlement. (HIGH) [www.theblock.co, 10 Februari 2026]
+Status: announced-only (eksplorasi — "evaluate how its technology could apply") (HIGH) [www.theblock.co, 10 Februari 2026]
+
+Integration Partner: DTCC (The Depository Trust & Clearing Corporation)
+What it does: Kemitraan untuk tokenized securities dan meningkatkan keamanan, skalabilitas, interoperabilitas aset likuid (saham, ETF, Treasury). (HIGH) [www.theblock.co, 10 Februari 2026]
+Status: announced-only (DTCC "looking into" penggunaan network untuk tokenized securities). (HIGH) [thedefiant.io, 10 Februari 2026]
+
+Integration Partner: Intercontinental Exchange (ICE)
+What it does: Mengeksaminasi bagaimana Zero dapat mendukung perdagangan 24/7. (HIGH) [www.theblock.co, 10 Februari 2026]
+Status: announced-only (rencana eksaminasi — "plans to examine") (HIGH) [www.theblock.co, 10 Februari 2026]
+
+Integration Partner: ARK Invest
+What it does: Investasi ekuitas di LayerZero Labs; Cathie Wood bergabung di advisory board Zero. (HIGH) [www.theblock.co, 10 Februari 2026]
+Status: announced-only (investasi + advisory, belum deployment operasional) (HIGH) [www.theblock.co, 10 Februari 2026]
+
+Integration Partner: Google Cloud
+What it does: Eksplorasi AI agent payments dan infrastruktur cloud untuk blockchain. (HIGH) [www.theblock.co, 10 Februari 2026]
+Status: announced-only (eksplorasi — "exploring how to expand") (HIGH) [www.theblock.co, 10 Februari 2026]
+
+Developer Ecosystem: 54.000+ smart contract menggunakan jaringan LayerZero (per Agustus 2024). (HIGH) [Messari, 8 Agustus 2024 / Genfinity, 7 November 2024]
+Developer Ecosystem: Pesan lintas-chain meningkat 4x dari 66.000+ (Juni 2022) menjadi 1,7 juta+ (Juni 2024). (HIGH) [Messari, 8 Agustus 2024]
+Developer Ecosystem: Mendukung 170+ blockchain. (HIGH) [www.theblock.co, 23 Juli 2026]
+
+Applications Built On It: Stargate Finance — jembatan likuiditas omnichain pertama dibangun di atas LayerZero, diluncurkan Maret 2022 bersamaan dengan V1. (HIGH) [Messari, 8 Agustus 2024]
+Applications Built On It: Radiant Capital — protokol peminjaman lintas-chain (HIGH) [Indeks Phase 2]
+Applications Built On It: Ondo Finance — tokenisasi aset dunia nyata. (HIGH) [www.theblock.co, 23 Juli 2026]
+Applications Built On It: Ethena — protokol stablecoin sintetik (HIGH) [Indeks Phase 2]
+Applications Built On It: EtherFi — protokol liquid restaking, memindahkan weETH (nilai historis $9M+) menggunakan 4/4 DVN. (HIGH) [layerzero.network, 3 Juni 2026]
+Applications Built On It: Kelp DAO — protokol liquid restaking (HIGH) [Indeks Phase 2]
+Applications Built On It: PayPal — menggunakan infrastruktur LayerZero untuk distribusi aset digital. (HIGH) [www.theblock.co, 23 Juli 2026]
+Applications Built On It: Bridge — platform stablecoin lintas-chain. (HIGH) [www.theblock.co, 23 Juli 2026]
+Applications Built On It: IDEX — DEX hibrida (HIGH) [Indeks Phase 2]
+Applications Built On It: Hashflow — DEX dengan quote berbasis RFQ (HIGH) [Indeks Phase 2]
+Applications Built On It: Paxos — infrastruktur aset digital (HIGH) [Indeks Phase 2]
+Applications Built On It: 300+ aplikasi front-end (per Agustus 2024). (HIGH) [Messari, 8 Agustus 2024]
+
+Wallet Support: MetaMask — mendukung LayerZero (ZRO) dan bridging via LayerZero. (HIGH) [CoinLore / docs.lfj.gg]
+Wallet Support: Rabby — mendukung LayerZero (ZRO) dan bridging. (HIGH) [CoinLore / docs.lfj.gg]
+Wallet Support: Trezor — hardware wallet, sync dengan Trezor Suite, MetaMask, Rabby. (HIGH) [trezor.io]
+Wallet Support: Trust Wallet — ZRO dapat dikonversi di Trust Wallet. (MEDIUM) [metamask.io]
+Wallet Support: OKX Wallet, Coinbase Wallet, Phantom, Core — disebut dalam konteks bridging via LayerZero. (MEDIUM) [docs.rayls.com / docs.lfj.gg]
+
+Exchange Listings: ZRO tercatat di 11 CEX (Binance, Coinbase, Kraken, OKX, Bybit, KuCoin, MEXC, Bitget, HTX/Huobi, Uphold) dan 4 DEX (Uniswap, SushiSwap, PancakeSwap, TraderJoe) — detail kedalaman likuiditas/volume harian tidak tersedia dari sumber yang dapat diverifikasi. (HIGH) [Indeks Phase 2]
+Exchange Listings: Harga ZRO $4,9859 (per 13 November 2024) dengan kenaikan 7,75% dalam 24 jam; volume trading 24 jam $123,2 juta. (MEDIUM) [Binance Square, 13 November 2024]
+Exchange Listings: Sirkulasi ZRO 111.152.854 token (11,15% dari total supply 1 miliar). (MEDIUM) [Binance Square, 13 November 2024]
+Exchange Listings: Tidak ada informasi tentang listing baru pasca-Phase 2 dari sumber yang tersedia.
+
+Oracle Integrations: Chainlink CCIP — terintegrasi sebagai DVN adapter, wrapped protocol dengan konsensus sendiri. Status: live (adapter tersedia, digunakan oleh Ether.fi sebagai salah satu DVN). (HIGH) [layerzero.network, 3 Juni 2026]
+Oracle Integrations: Google Cloud — beroperasi sebagai DVN. Status: live (dikonfigurasi sebagai DVN oleh aplikasi). (HIGH) [blockeden.xyz, 6 Februari 2026]
+Oracle Integrations: Polyhedra — DVN berbasis ZK. Status: live (dapat dikonfigurasi aplikasi). (HIGH) [blockeden.xyz, 6 Februari 2026]
+Oracle Integrations: EigenLabs / EigenLayer — terdaftar sebagai DVN provider di indeks Phase 2. Status: tidak diketahui (belum ditemukan bukti status live/announced di sumber yang tersedia). (LOW)
+Oracle Integrations: Nethermind — terdaftar sebagai DVN provider. Status: live (disebut sebagai opsi DVN dalam konfigurasi keamanan). (HIGH) [layerzero.network, 3 Juni 2026]
+Oracle Integrations: Animoca Brands — terdaftar sebagai DVN provider. Status: live (dapat dikonfigurasi aplikasi). (HIGH) [blockeden.xyz, 6 Februari 2026]
+Oracle Integrations: Horizen Labs — terdaftar sebagai DVN provider. Status: live (beroperasi sebagai salah satu dari 3 operator DVN untuk bridge Stable). (HIGH) [docs.stable.xyz]
+Oracle Integrations: Delegate — terdaftar sebagai DVN provider di indeks Phase 2. Status: tidak diketahui (belum ditemukan bukti status live/announced di sumber yang tersedia). (LOW)
+
+Bridge Integrations: Stargate — bridge likuiditas omnichain pertama dan utama milik LayerZero sendiri. (HIGH) [Messari, 8 Agustus 2024]
+Bridge Integrations: USDT0 bridge — production-grade untuk EVM chain, powered by LayerZero dan ERC-4337. (HIGH) [npmjs.com, 21 Mei 2026]
+Bridge Integrations: LFJ (LayerZero Bridge) — untuk bridging JOE tokens di DEX LFJ. (MEDIUM) [docs.lfj.gg, 5 Juni 2025]
+Bridge Integrations: BRG Bridge — cross-chain ERC20 token bridge menggunakan OFT V2, 12 directional pathways dengan dual-DVN verification. (MEDIUM) [GitHub, 16 Februari 2026]
+Bridge Integrations: lz-bridge — menghubungkan TON ke EVM via LayerZero untuk transfer USDT Jettons. (MEDIUM) [GitHub, 9 Juni 2025]
+Bridge Integrations: Tidak ditemukan bukti jembatan pihak ketiga (non-DVN) yang berkompetisi langsung di rute yang sama selain protokol yang dibangun di atas LayerZero sendiri.
+
+Infra/Tooling Providers: Chainlink CCIP — DVN adapter yang membungkus sistem verifikasi Chainlink. (HIGH) [layerzero.network, 3 Juni 2026]
+Infra/Tooling Providers: Google Cloud — DVN dan infrastruktur cloud. (HIGH) [blockeden.xyz, 6 Februari 2026]
+Infra/Tooling Providers: Polyhedra — DVN berbasis ZK. (HIGH) [blockeden.xyz, 6 Februari 2026]
+Infra/Tooling Providers: EigenLabs / EigenLayer — DVN provider (status tidak diketahui). (LOW)
+Infra/Tooling Providers: Nethermind — DVN provider. (HIGH) [layerzero.network, 3 Juni 2026]
+Infra/Tooling Providers: Animoca Brands — DVN provider. (HIGH) [blockeden.xyz, 6 Februari 2026]
+Infra/Tooling Providers: Horizen Labs — DVN provider. (HIGH) [docs.stable.xyz]
+Infra/Tooling Providers: Delegate — DVN provider (status tidak diketahui). (LOW)
+Infra/Tooling Providers: Immunefi — platform bug bounty untuk keamanan protokol (HIGH) [Indeks Phase 2]
+Infra/Tooling Providers: Trail of Bits, Zellic, Zokyo, Peckshield, Hacken, Halborn, Certik, Quantstamp — riset dan audit keamanan (HIGH) [Indeks Phase 2]
+
+Community Size/Activity: Discord — 395.154 member. (MEDIUM) [Binance Square, 13 November 2024 — perlu verifikasi tanggal]
+Community Size/Activity: Telegram — 46.105 member. (MEDIUM) [Binance Square, 13 November 2024 — perlu verifikasi tanggal]
+Community Size/Activity: Telegram channel @joinchat — 11.154 member. (MEDIUM) [CoinBrain]
+Community Size/Activity: Telegram "LayerZero Official" — 4.817 member, 45 online. (MEDIUM) [t.me]
+Community Size/Activity: Twitter/X — 669.600 pengikut. (MEDIUM) [Binance Square, 13 November 2024 — perlu verifikasi tanggal]
+Community Size/Activity: Total unique addresses — pendiri Bryan Pellegrino menyebut "sedikit lebih dari" 4,826 juta, dengan catatan beberapa jaringan belum terhitung. (MEDIUM) [Coinlive]
+Community Size/Activity: 30.000+ orang mengaku sebagai "sybil" (pernyataan Pellegrino di Telegram). (LOW) [Binance.com]
+
+Open Threads
+
+· Status live/announced untuk DVN provider EigenLabs/EigenLayer dan Delegate belum dapat diverifikasi dari sumber yang tersedia.
+· Ukuran komunitas Discord/Telegram bervariasi antar-sumber (Discord 395.154 vs sumber lain menyebut 395.154; Telegram 46.105 vs 11.154 vs 4.817) — perbedaan mungkin karena channel berbeda atau tanggal data berbeda.
+· Klaim "54.000+ smart contracts" berasal dari Agustus 2024 — angka terkini tidak tersedia.
+· Klaim jumlah chain terintegrasi: 170+ (The Block, Juli 2026) vs 165+ (dokumentasi resmi) vs 80+ (Messari, Agustus 2024) — kemungkinan karena pertumbuhan atau definisi "terintegrasi" berbeda.
+· Klaim jumlah dApp: 300+ aplikasi front-end (Messari, Agustus 2024) vs 80+ vs 750+ — sumber tidak sepakat.
+· Kedalaman likuiditas/volume harian ZRO per exchange tidak tersedia dari sumber yang dapat diverifikasi.
+· Dukungan wallet untuk interaksi lintas-rantai LayerZero secara native — sebagian besar sumber menyebut wallet EVM standar (MetaMask, Rabby) dapat digunakan, tetapi belum ada daftar resmi dari LayerZero.
+· Tanggal peluncuran Testnet tidak diketahui.
+· Konflik entitas operasi utama (LayerZero Labs Ltd. vs Optimistic Labs Limited) tetap belum terselesaikan — lihat Phase 2 Open Threads.
