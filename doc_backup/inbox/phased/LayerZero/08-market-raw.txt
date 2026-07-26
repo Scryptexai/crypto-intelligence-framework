@@ -1,0 +1,104 @@
+PROJECT: LayerZero
+
+---
+
+Narrative(s):
+
+· Originated — “Bridging Trilemma” (2021–2024): LayerZero menciptakan narasi bahwa protokolnya memecahkan “Bridging Trilemma” (keamanan, desentralisasi, skalabilitas) melalui arsitektur Ultra Light Node (ULN) dan oracle-relayer. (HIGH) [dokumentasi LayerZero, 2021; whitepaper Mei 2021]
+· Originated — “Omnichain” & OFT Standard (2022–2026): LayerZero menciptakan dan mempopulerkan narasi “Omnichain” (aplikasi omnichain, OApps) serta standar Omnichain Fungible Token (OFT) sebagai cara mentransfer aset secara native lintas rantai tanpa wrapped asset. (HIGH) [dokumentasi LayerZero, 2022–2026]
+· Originated — “Decentralized Multi-Core World Computer” (Februari 2026–sekarang): Dengan pengumuman blockchain Zero pada 10 Februari 2026, LayerZero menciptakan narasi baru sebagai “multi-core world computer” dengan target 2 juta TPS, beralih dari sekadar protokol messaging menjadi L1 institusional. (HIGH) [LayerZero Docs, 10 Februari 2026;]
+· Followed — “Institutional DeFi” & “RWA Tokenization” (Februari 2026–sekarang): LayerZero mengikuti narasi pasar institusional DeFi dan RWA tokenization dengan meluncurkan Zero yang didukung oleh Citadel Securities, DTCC, ICE, dan ARK Invest, serta Cathie Wood sebagai advisor. (HIGH) [CoinMarketCap, 11 Februari 2026;]
+· Followed — “Chain Abstraction” (2024–sekarang): LayerZero mengikuti narasi chain abstraction dengan memposisikan diri sebagai infrastruktur messaging yang memungkinkan pengguna dan aplikasi berinteraksi dengan multiple chains tanpa memikirkan kompleksitas di bawahnya. (MEDIUM) [dokumentasi dan materi pemasaran LayerZero, 2024–2026]
+· Followed — “Security & Resilience” (Pasca-insiden Kelp DAO, Mei 2026–sekarang): Pasca insiden Kelp DAO 18 April 2026 dan pengakuan kesalahan konfigurasi DVN, LayerZero mengikuti narasi keamanan dengan memodifikasi sistem DVN secara sistemik dan berupaya memulihkan kepercayaan institusional, namun narasi ini justru diambil alih oleh Chainlink CCIP yang mempromosikan “defense-in-depth” sebagai respons atas insiden yang sama. (HIGH) [OpenZeppelin, 23 April 2026;]
+
+Competitor: Wormhole
+
+· Era: 2021–sekarang (rival sejak LayerZero V1). (HIGH) [dokumen Foundation Phase 1]
+· Positioning vs. them: Wormhole memproses lebih dari 1 miliar pesan lintas-rantai dan $60 miliar total volume, serta mengajukan tawaran tandingan $120 juta saat akuisisi Stargate Agustus 2025【dokumen Foundation Phase 1】. Namun dalam pangsa pasar volume GMP 30 hari hingga Juni 2026, LayerZero (85.7%) vs Wormhole (berbagi ~14.3% dengan Chainlink, Hyperlane, Socket, Axelar). BlackRock menggunakan Wormhole untuk transfer lintas-rantai BUIDL fund. (HIGH) [Allium Labs Dashboard, 9 Juni 2026;]
+
+Competitor: Cosmos IBC
+
+· Era: 2021–sekarang (rival arsitektur sejak era whitepaper 2021). (HIGH) [dokumen Foundation Phase 1]
+· Positioning vs. them: Cosmos IBC adalah rival arsitektur dengan pendekatan sovereign zones dan konektivitas native antar-chain dalam ekosistem Cosmos, sementara LayerZero bersifat agnostik terhadap chain dan tidak terbatas pada satu ekosistem. (MEDIUM) [dokumen Foundation Phase 1; riset Phase 4]
+
+Competitor: Chainlink CCIP
+
+· Era: Awalnya mitra/opsi DVN di V2 (2024), berubah menjadi kompetitor langsung pasca-insiden Kelp DAO (Mei 2026–sekarang). (HIGH) [dokumen Foundation Phase 1]
+· Positioning vs. them: Chainlink CCIP awalnya adalah salah satu opsi DVN yang bisa dipilih aplikasi di LayerZero V2, tetapi setelah insiden Kelp DAO 18 April 2026, terjadi eksodus besar-besaran. Per Juli 2026, lebih dari $7.24 miliar aset telah pindah dari LayerZero ke Chainlink CCIP. Migran utama: Kelp (>$1.5 miliar), Lombard (>$1 miliar), Mantle ($2.5 miliar), Solv Protocol ($700 juta), Virtuals ($700 juta), Kraken ($330 juta), Re ($475 juta), Yuzu Money ($54.5 juta). (HIGH) [CoinDesk, 9 Juli 2026;]
+
+Competitor: Axelar
+
+· Era: 2021–sekarang (protokol messaging lintas-rantai sejenis). (HIGH) [riset Phase 4; dokumen Foundation Phase 1]
+· Positioning vs. them: Axelar adalah salah satu dari enam GMP protocol yang dilacak Allium Labs Dashboard, bersama LayerZero, Chainlink, Hyperlane, Socket, dan Wormhole. Dalam volume GMP 30 hari hingga Juni 2026, Axelar berbagi ~14.3% dengan para kompetitor lainnya. (HIGH) [Allium Labs Dashboard, 9 Juni 2026;]
+
+Competitor: Hyperlane
+
+· Era: 2023–sekarang (protokol messaging lintas-rantai sejenis). (HIGH) [riset Phase 4]
+· Positioning vs. them: Hyperlane adalah salah satu dari enam GMP protocol yang dilacak Allium Labs Dashboard. Dalam volume GMP 30 hari hingga Juni 2026, Hyperlane berbagi ~14.3% dengan para kompetitor. (HIGH) [Allium Labs Dashboard, 9 Juni 2026;]
+
+Adoption Metrics:
+
+· Total pesan diproses: 159–160 juta (pertengahan 2026, per riset Phase 5/6) — sumber lain menyebut 168 chain dan 159 juta pesan per Maret 2026. (HIGH) [Gate.com, 3 Maret 2026;]
+· Total pesan diproses (versi lain): 150+ juta pesan (Februari 2026, 130+ chain). (HIGH) [BlockEden.xyz, 6 Februari 2026;]
+· Total nilai ditransfer kumulatif: $225–260 miliar (per riset Phase 5/6, pertengahan 2026) — sumber lain: $234 miliar per Maret 2026; $200+ miliar per Juni 2026. (HIGH) [Gate.com, 3 Maret 2026;; CoinMarketCap, Juni 2026;]
+· Total nilai ditransfer kumulatif (versi lain): $100 miliar (Februari 2026). (MEDIUM) [BlockEden.xyz, 6 Februari 2026;]
+· Total smart contract yang mendeploy LayerZero: 50.000+ hingga 54.000+ (tergantung sumber/tanggal, Phase 6 & 7). (MEDIUM) [dokumen Foundation Phase 1]
+· Jumlah chain terintegrasi: 168 chain (Maret 2026) — sumber lain: 130+ chain (Februari 2026); 50+ vs 165+ (konflik, lihat Open Threads). (HIGH) [Gate.com, 3 Maret 2026;]
+· Rata-rata transfer harian: $293 juta per hari (Juni 2026). (HIGH) [CoinMarketCap, Juni 2026;]
+· Volume bulanan: $6 miliar (Februari 2026). (MEDIUM) [BlockEden.xyz, 6 Februari 2026;]
+· Pesan per bulan (current run rate): 1,5 juta pesan per bulan (Februari 2026). (MEDIUM) [BlockEden.xyz, 6 Februari 2026;]
+· Pesan mingguan: turun dari 2–4 juta pre-airdrop menjadi 200–250 ribu pasca-airdrop (Juni 2024). (MEDIUM) [Datawallet.com, 29 Juni 2026;]
+· Stablecoin mendominasi volume: 71% dari total volume yang ditransfer adalah stablecoin (Maret 2026). (HIGH) [Gate.com, 3 Maret 2026;]
+
+TVL History:
+
+· TVL Stargate Finance puncak: >$3 miliar (periode puncak, per catatan Phase 1 trim). (MEDIUM) [dokumen Foundation Phase 1]
+· TVL Stargate Finance: ~$1,37 miliar (Q1 2026) — turun signifikan dari puncak 2024. (HIGH) [Foresight News, 11 Februari 2026;]
+· TVL Stargate Finance: $1,22 miliar (26 Maret 2026, pasca-pengumuman akuisisi oleh LayerZero). (HIGH) [Bitget, 26 Maret 2026;]
+· TVL Stargate Finance: $400–600 juta (31 Mei 2026). (MEDIUM) [Binance, 31 Mei 2026;]
+· TVL LayerZero (total value locked seluruh ekosistem, bukan hanya Stargate): $7,54 miliar (Juni 2026). (HIGH) [DefiLlama via CoinMarketCap, Juni 2026;]
+· Akuisisi Stargate Finance oleh LayerZero: 10–25 Agustus 2025, nilai ~$110 juta, STG ditukar dengan ZRO dengan rasio 1:0,08634. (HIGH) [Bitget, 26 Maret 2026;]
+· Efek insiden Kelp DAO (18 April 2026) terhadap TVL: eksodus >$7,24 miliar aset dari LayerZero ke Chainlink CCIP sejak Mei 2026. (HIGH) [CoinDesk, 9 Juli 2026;]
+
+Volume History:
+
+· Pertumbuhan volume pesan: 66.000+ (Juni 2022) → 1,7 juta+ (Juni 2024), kenaikan 4x (Messari, Agustus 2024, per riset Phase 7). (HIGH) [Messari, Agustus 2024; dokumen Foundation Phase 1]
+· Volume GMP 30 hari (Allium Labs Dashboard, hingga 9 Juni 2026): $7,9–8,2 miliar. (HIGH) [Allium Labs, 9 Juni 2026;]
+· LayerZero menguasai 85,7% dari total volume GMP $7,9–8,2 miliar tersebut dalam 30 hari. (HIGH) [Allium Labs, 9 Juni 2026;]
+· Volume kumulatif seumur hidup: $200+ miliar (Juni 2026). (HIGH) [CoinMarketCap, Juni 2026;]
+· Total bridged assets LayerZero: $44 miliar (Januari 2026). (MEDIUM) [BlockEden.xyz, 26 Januari 2026;]
+
+Market Share:
+
+· Berdasarkan Allium Labs Interoperability Dashboard (9 Juni 2026), LayerZero menguasai 85,7% dari seluruh tracked GMP volume dalam 30 hari terakhir ($7,9–8,2 miliar). Lima protokol lainnya (Chainlink, Hyperlane, Socket, Axelar, Wormhole) berbagi 14,3% sisanya. (HIGH) [Allium Labs, 9 Juni 2026;]
+· Sumber lain menyebut 75% market share cross-chain messaging (Februari 2026). (MEDIUM) [BlockEden.xyz, 6 Februari 2026;]
+· Sumber lain menyebut 85% market share cross-chain messaging (Juni 2026). (HIGH) [CoinMarketCap, Juni 2026;]
+· EFEK EKSODUS CHAINLINK CCIP: Meskipun LayerZero masih menguasai 85,7% volume GMP per Juni 2026, telah terjadi eksodus modal institusional signifikan pasca-insiden Kelp DAO. Per Juli 2026, lebih dari $7,24 miliar aset telah pindah dari LayerZero ke Chainlink CCIP. Ini adalah erosi pangsa pasar di segmen institusional/high-value yang tidak tercermin dalam metrik volume GMP agregat karena data Allium Labs baru diluncurkan 9 Juni 2026 dan efek eksodus terjadi Mei–Juli 2026. (HIGH) [CoinDesk, 9 Juli 2026;]
+· Peringkat kapitalisasi pasar ZRO: per 15 Juli 2026, market cap ZRO ~$301–335 juta, turun 87% dari all-time high $7,47 (6 Desember 2024). (HIGH) [Bitget, 13 Juli 2026;]
+
+Market Cycles Operated Through:
+
+· Bull Market 2021–2022 (peluncuran dan pendanaan awal): LayerZero meluncurkan Mainnet V1 September 2021【dokumen Foundation Phase 1】, mengumpulkan Series A $6 juta (September 2021) dan Series A Extension $135 juta (30 Maret 2022)【dokumen Foundation Phase 1】. Efek terukur: peluncuran Stargate Finance Q1 2022 menjadi katalis adopsi awal. (HIGH) [dokumen Foundation Phase 1]
+· Crypto Winter 2022–2023 (efek FTX collapse dan penurunan pasar): Keruntuhan FTX 11 November 2022【dokumen Foundation Phase 1】. Efek terukur pada LayerZero secara spesifik: meskipun pasar bearish, LayerZero tetap mampu mengumpulkan Series B $120 juta pada 4 April 2023【dokumen Foundation Phase 1】, menunjukkan ketahanan proyek di tengah winter. Ekspansi ke 50+ chain terjadi di 2023. (HIGH) [dokumen Foundation Phase 1]
+· Pemulihan 2024 (TGE dan adopsi V2): TGE ZRO dan “Proof-of-Donation” 20 Juni 2024【dokumen Foundation Phase 1】. Efek terukur: volume pesan mingguan turun drastis dari 2–4 juta pre-airdrop menjadi 200–250 ribu pasca-airdrop karena farm activity menghilang dan organic usage menjadi baseline. Peluncuran LayerZero V2 29 Januari 2024【dokumen Foundation Phase 1】. (HIGH) [Datawallet.com, 29 Juni 2026;]
+· Akuisisi dan Ekspansi 2025–awal 2026 (konsolidasi): Akuisisi Stargate Finance Agustus 2025【dokumen Foundation Phase 1】. Efek terukur: STG ditukar dengan ZRO rasio 1:0,08634, TVL Stargate turun dari >$3 miliar (puncak) menjadi ~$1,37 miliar (Q1 2026). Pengumuman blockchain Zero 10 Februari 2026 dengan dukungan Citadel, ARK Invest, DTCC, ICE. (HIGH) [Foresight News, 11 Februari 2026;]
+· Krisis Kepercayaan 2026 (insiden Kelp DAO dan eksodus): Insiden eksploitasi Kelp DAO 18 April 2026 ($292 juta hilang). Efek terukur pada proyek secara spesifik: eksodus >$7,24 miliar aset dari LayerZero ke Chainlink CCIP sejak Mei 2026; ZRO harga turun 87% dari ATH $7,47 (Desember 2024); migran institusional termasuk Lombard, Solv Protocol, Kraken, Mantle ($2,5 miliar), Virtuals ($700 juta); Aave memilih Chainlink CCIP sebagai default cross-chain rail. (HIGH) [CoinDesk, 9 Juli 2026;]
+
+Current Status:
+Campuran (growing di sisi institusional/new chain vs declining di sisi kepercayaan dan pangsa pasar institusional)
+
+· Sisi Growing: LayerZero masih menguasai 85,7% volume GMP (Juni 2026); blockchain Zero (target 2 juta TPS) dijadwalkan mainnet Fall 2026 dengan dukungan Citadel, DTCC, ICE, ARK Invest; Tether, Citadel, dan ARK Invest berinvestasi di Zero (Februari 2026)【dokumen Foundation Phase 1】; Robinhood partnership (Juli 2026) untuk tokenized stocks L2; total pesan 159–160 juta dan $234 miliar transfer kumulatif. (HIGH) [Allium Labs, 9 Juni 2026;; CoinMarketCap, 11 Februari 2026;]
+· Sisi Declining: Eksodus >$7,24 miliar aset ke Chainlink CCIP sejak Mei 2026; ZRO turun 87% dari ATH; TVL Stargate turun 96% dari puncak; kepercayaan institusional tergerus pasca-insiden Kelp DAO dan pengakuan kesalahan konfigurasi DVN; Aave pilih Chainlink CCIP sebagai default cross-chain rail. (HIGH) [CoinDesk, 9 Juli 2026;]
+
+Basis current status: Data per Juli 2026 (CoinDesk, Allium Labs, Bitget, DefiLlama).
+
+Open Threads
+
+· Konflik entitas operasi utama: dokumen resmi LayerZero Labs Ltd. bertentangan dengan Terms of Service jembatan Etherlink yang merujuk entitas “Optimistic Labs Limited” — perlu diselidiki lebih lanjut. (MEDIUM) [dokumen Foundation Phase 1]
+· Ukuran pasti Core Team belum bisa diverifikasi secara eksternal. (LOW) [dokumen Foundation Phase 1]
+· Tanggal pasti peluncuran Testnet tidak dapat diverifikasi dari himpunan data yang tersedia. (LOW) [dokumen Foundation Phase 1]
+· Klaim jumlah chain terintegrasi: sumber berbeda menyebut 50+, 130+, 165+, dan 168 — tidak ada konsensus. (MEDIUM) [dokumen Foundation Phase 1; BlockEden.xyz, 6 Februari 2026;; Gate.com, 3 Maret 2026;]
+· Klaim jumlah dApp di ekosistem: 80+ vs 750+ — sumber tidak sepakat. (MEDIUM) [dokumen Foundation Phase 1]
+· Data market share pembanding antar-protokol (LayerZero vs Wormhole vs Axelar vs Chainlink CCIP) baru tersedia dari Allium Labs Dashboard (Juni 2026) untuk volume GMP, namun data pembanding untuk TVL lintas-rantai per protokol secara terpisah belum tersedia di fase ini. (MEDIUM) [Allium Labs, 9 Juni 2026;]
+· Status dan efektivitas modifikasi keamanan sistemik DVN pasca-insiden Kelp DAO (Mei 2026) — apakah berhasil memulihkan kepercayaan atau eksodus masih berlanjut — belum terukur secara kuantitatif. (LOW) [dokumen Foundation Phase 1]
+· Apakah eksodus >$7,24 miliar ke Chainlink CCIP akan tercermin dalam data Allium Labs Dashboard periode berikutnya (pasca-Juli 2026) — belum ada data. (LOW) [CoinDesk, 9 Juli 2026;]

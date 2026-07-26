@@ -78,7 +78,7 @@ Intelligence non-trivial.
 
 | Project | Track | Phases done | Next phase | Notes |
 |---------|-------|--------------|------------|-------|
-| **LayerZero** | A (full 11) | 1 ✅ Foundation, 2 ✅ Entity (76 entities), 3 ✅ Historical (15/15 events, cited, Kelp DAO date corrected to 18 Apr 2026), 4 ✅ Technology (cited + Kelp DAO date patched), 5 ✅ Financial (4 funding rounds + 5 non-round capital events, FTX settlement confirmed undisclosed), 6 ✅ Token (fee switch confirmed never activated, buybacks confirmed held-not-burned, fabricated 25% TGE claim rejected), 7 ✅ Ecosystem (DeepSeek — first non-Gemini model tried, strongest first-attempt result yet) | **8 — Market Intelligence** | Upgrade from existing `Pioneer/LayerZero.md` (Batch 02) to Deep tier. Chosen for its interconnection-heavy ecosystem (160+ chains — strong entity-graph test case) and the ZRO airdrop (Jun 2024) as real Behavioral Intelligence material, already linked as a P4 analog in `PatternRegistry.md`. See the Phase 1/2/3/4/5/6/7 notes below. |
+| **LayerZero** | A (full 11) | 1 ✅ Foundation, 2 ✅ Entity (76 entities), 3 ✅ Historical (15/15 events, cited, Kelp DAO date corrected to 18 Apr 2026), 4 ✅ Technology (cited + Kelp DAO date patched), 5 ✅ Financial (4 funding rounds + 5 non-round capital events, FTX settlement confirmed undisclosed), 6 ✅ Token (fee switch confirmed never activated, buybacks confirmed held-not-burned, fabricated 25% TGE claim rejected), 7 ✅ Ecosystem (DeepSeek — first non-Gemini model tried, strongest first-attempt result yet), 8 ✅ Market (growth-vs-erosion tension correctly held together: 85.7% GMP share vs >$7.24B Chainlink CCIP exodus; Aave-picks-CCIP fact cross-verified against an old Phase 3 source) | **9 — Behavioral Intelligence** | Upgrade from existing `Pioneer/LayerZero.md` (Batch 02) to Deep tier. Chosen for its interconnection-heavy ecosystem (160+ chains — strong entity-graph test case) and the ZRO airdrop (Jun 2024) as real Behavioral Intelligence material, already linked as a P4 analog in `PatternRegistry.md`. See the Phase 1/2/3/4/5/6/7/8 notes below. |
 
 **LayerZero Phase 1 — two source files, deliberately.** The first Gemini pass returned a rich but
 narrative/table-formatted report in English; a reformat pass produced a clean Indonesian Label:Value version.
@@ -322,6 +322,21 @@ elsewhere — closing the integration-mechanics gap carried since the Phase 1 tr
 against every prior phase's entity/DVN/exchange lists. Committed with only a mechanical text-to-docx
 conversion, no content fixes needed. One minor quality gap versus the Phase 3/5/6 Claude-research
 citations: sources are domain+date, not full URLs — noted, not corrected. Full detail in `PROMPTS-LOG.md`.
+
+**LayerZero Phase 8 — Market Intelligence, growth-vs-erosion correctly held together (2026-07-26).**
+Executed the phase's central instruction correctly on the first pass: "Current Status" and "Market Share"
+both present LayerZero's 85.7% share of 30-day cross-chain GMP volume (Allium Labs Interoperability
+Dashboard) *and* the >$7.24B Chainlink CCIP exodus side by side, explaining explicitly why they aren't
+contradictory (the exodus is concentrated in institutional/high-value flow and predates Allium's 9 June
+2026 dashboard launch, so it doesn't show up in the aggregate metric yet). Surfaced high-value new facts:
+ZRO down 87% from its Dec 2024 ATH; Stargate TVL's real trajectory (>$3B peak → $1.37B Q1 2026, already
+declining pre-Kelp-DAO → $400-600M by 31 May 2026); and Aave selecting Chainlink CCIP as its default
+cross-chain rail — a fact that cross-verifies against a source ("Aave Picks Chainlink CCIP...", Thirdweb)
+that had already surfaced unverified in the attempt-2 Phase 3 bibliography months earlier, raising
+confidence it's real. Properly reported conflicting numbers (message counts, chain counts, cumulative
+value transferred) as ranges with per-source citation rather than picking one. Only mechanical cleanup
+needed before committing (stray CJK-style brackets, semicolon artifacts) — no content corrections, unlike
+Phase 6's rejected draft. Full detail in `PROMPTS-LOG.md`.
 
 **When a phase completes:** update its row's "Phases done"/"Next phase" columns in the same commit as dropping
 the phase's raw `.docx` into `doc_backup/inbox/phased/LayerZero/`. Once all phases planned for the Track are

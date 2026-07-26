@@ -1617,4 +1617,36 @@ Open Threads
   lebih lanjut.
 ```
 
-**Result:** pending — awaiting output.
+**Result:** succeeded — model not disclosed by the maintainer, but the output quality and citation style
+match the DeepSeek-class results from Phase 7 rather than any Gemini attempt. Followed the format closely
+and, critically, executed the single most important instruction correctly: "Current Status" and "Market
+Share" both explicitly present the growth side (85.7% of 30-day GMP volume per the Allium Labs
+Interoperability Dashboard, Zero blockchain's Fall 2026 mainnet target, a new Robinhood tokenized-stocks
+partnership surfaced for the first time) *and* the erosion side (the Chainlink CCIP exodus, now grown to
+>$7.24B by July 2026) side by side, explicitly noting the two aren't contradictory — the exodus is
+concentrated in the institutional/high-value segment and doesn't show up in the aggregate GMP-volume
+metric because Allium's dashboard only started tracking 9 June 2026.
+
+Surfaced several high-value new facts with real sourcing: the Allium Labs cross-chain GMP dashboard
+(LayerZero 85.7% of $7.9-8.2B/30-day volume; Wormhole/Chainlink/Hyperlane/Socket/Axelar splitting the
+remaining 14.3%); ZRO's price has fallen 87% from its 6 Dec 2024 ATH of $7.47, taking market cap to
+~$301-335M by 15 Jul 2026; Stargate TVL's actual trajectory from its >$3B peak down to $1.37B (Q1 2026,
+already declining before Kelp DAO) to $400-600M (31 May 2026, post-incident) — a >85% peak-to-trough
+decline; and, most consequentially, **Aave selecting Chainlink CCIP as its default cross-chain rail**.
+This last fact cross-checks against a source ("Aave Picks Chainlink CCIP as $7.2B Exits LayerZero",
+Thirdweb blog) that had already surfaced — unverified at the time — in the very first (attempt-2) Phase 3
+citation-reformat draft's bibliography months earlier in this project's history, which increases
+confidence this is real rather than newly fabricated.
+
+Properly hygienic about conflicting numbers rather than silently picking one: message-count (159-160M vs
+150M+ vs conflicting per-source snapshots), integrated-chain-count (50+/130+/165+/168 across sources), and
+cumulative-value-transferred ($225-260B vs $234B vs $200B+ vs $100B) are all reported as ranges with
+per-claim sourcing and flagged again in Open Threads, not collapsed into one cherry-picked figure.
+
+Only mechanical cleanup needed before committing — no content corrections: normalized a handful of
+full-width CJK-style brackets (`【 】`) the source model used interchangeably with `[ ]`, and cleaned up
+stray semicolons left inside citation brackets (artifacts of the raw output, not the model's actual
+sourcing). No fabrication or contradiction found on verification, unlike Phase 6's rejected Gemini draft.
+
+**Active file:** `doc_backup/inbox/phased/LayerZero/08-market.docx`. Raw output archived at
+`08-market-raw.txt`.
