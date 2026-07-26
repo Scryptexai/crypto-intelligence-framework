@@ -1823,3 +1823,107 @@ Committed with only a mechanical text-to-docx conversion — no content correcti
 
 **Active file:** `doc_backup/inbox/phased/LayerZero/09-behavioral.docx`. Raw output archived at
 `09-behavioral-raw.txt`.
+
+## Phase 10 — Knowledge Extraction (drafted 2026-07-26)
+
+Context Pack: per the "How to use these" guidance for Phases 10/11 ("legitimately need everything... use
+the assembled dossier instead of re-pasting every raw phase file"), ran `tools/ingest.py --type phased`
+against `doc_backup/inbox/phased/LayerZero/` to produce `examples/CaseStudies/LayerZero.md` (9/11 phases
+concatenated in dependency order, deterministic, no LLM) as the single upload for this prompt instead of
+9 separate files.
+
+**Bug found and fixed during this run:** the Phase 3 file was named `03-historical.docx`, but
+`tools/ingest.py`'s `detect_phase_key()` matches phase keys as a plain substring of the filename —
+"history" is not a substring of "historical" (different letter after "histor"), so Phase 3 — the richest
+phase, 15 cited Decision Events — was silently dropped from the first assembly attempt (came back "8
+phases", not 9). Renamed to `03-history.docx` to match the convention documented in
+`Phased-Research-Prompts.md` point 5, and re-ran with `--force`. Confirmed via output: "9/11 phases:
+foundation, entity, history, technology, financial, token, ecosystem, market, behavioral". Worth watching
+for on any future project's Phase 3 file.
+
+Injects 5 candidate patterns as starting-point examples (not a final list) — each drawn from a specific
+dossier event with real transfer potential per `docs/Ontology/DecisionEvent.md`'s cross-project pattern
+philosophy — and explicitly instructs the model to feel free to reject any of them if they don't hold up,
+and to find more beyond these 5. Repeats the "don't force a pattern from one weak example" guardrail
+explicitly, since Phase 10's whole value depends on candidates that would actually generalize to an
+unrelated project, not just restating LayerZero-specific mechanics with a pattern-shaped label on top.
+
+```
+Dokumen yang dilampirkan adalah dossier gabungan LayerZero (9 fase pertama: Foundation, Entity, Historical,
+Technology, Financial, Token, Ecosystem, Market, Behavioral — digabung otomatis dari repositori, bukan
+ditulis ulang). Menggunakan SELURUH isinya sebagai konteks, ekstrak PENGETAHUAN YANG DAPAT DIBACA MESIN
+dari semua yang sudah dikumpulkan soal LayerZero. JANGAN menciptakan pattern dari satu tebakan tanpa dasar
+— setiap kandidat pattern WAJIB bisa dilacak ke event/fakta konkret yang sudah dilaporkan di dossier.
+
+=== POV SUCCESS-MATRIX — vonis di TINGKAT PROYEK, bukan per-event ===
+Isi untuk 8 POV berikut. LayerZero punya rekam jejak yang genuinely campuran — jangan dipaksakan jadi satu
+label bersih kalau buktinya memang bertentangan (contoh: sukses finansial masif TAPI kepercayaan
+institusional tergerus pasca-Kelp DAO; ini bisa saja "mixed" untuk lebih dari satu POV):
+  Founder: <success|failure|mixed — alasan — Evidence Level>
+  VC: <...>
+  Retail: <...>
+  Community: <...>
+  Developer: <...>
+  Institution: <...>
+  Validator: <...>
+  Builder: <...>
+
+=== LESSONS LEARNED ===
+  Biggest mistake: <apa — untuk dihindari — kutip event spesifik dari dossier>
+  Biggest win: <apa — untuk ditiru — kutip event spesifik dari dossier>
+
+=== ENTITY/RELATIONSHIP ADDENDUM ===
+<apa saja yang terlewat di Entity Intelligence (Phase 2), atau "tidak ada">
+
+=== PATTERN CANDIDATES — INI BAGIAN PALING PENTING ===
+Untuk SETIAP kandidat pattern, ulangi blok ini. Ingat: pattern yang berguna untuk kerangka kerja ini
+adalah SHAPE keputusan yang bisa berulang di proyek lain yang TIDAK terkait (lihat docs/Ontology/
+DecisionEvent.md — pattern ditemukan LINTAS proyek dari sektor berbeda, bukan dengan membandingkan
+proyek yang mirip). Field "Applies When" harus menjelaskan KONDISI STRUKTURAL yang membuat pattern ini
+relevan di proyek lain — BUKAN sekadar mengulang mekanisme spesifik LayerZero (misal "proyek Layer-0
+lain" itu terlalu sempit; "proyek dengan model keamanan yang bisa dikustomisasi klien tanpa guardrail
+wajib" itu cukup umum untuk transfer).
+
+Beberapa kandidat yang TAMPAK kuat dari dossier (dasar awal, BUKAN daftar final — cari lebih banyak, dan
+boleh menolak salah satu dari ini kalau setelah diperiksa ternyata tidak cukup berdasar):
+- Manuver buyback ekuitas darurat yang didanai treasury internal (bukan utang baru) untuk memutus paparan
+  hukum sebelum proses kepailitan pihak ketiga membekukan opsi korporat (event Keruntuhan FTX, Nov 2022)
+- Fleksibilitas arsitektur keamanan yang didelegasikan ke aplikasi (application-owned security) menciptakan
+  utilitas developer jangka pendek tapi risiko sistemik jangka panjang saat klien salah konfigurasi
+  (peluncuran V2 Jan 2024 → insiden Kelp DAO April 2026)
+- Permintaan maaf publik + perbaikan teknis PASCA-insiden tidak cukup memulihkan kepercayaan institusional
+  yang sudah terlanjur rusak — eksodus modal terus tumbuh berbulan-bulan setelah perbaikan diumumkan
+  (Modifikasi DVN Mei 2026 vs eksodus Chainlink CCIP yang terus tumbuh hingga Juli 2026)
+- Mekanisme deflasi/governance token yang dirancang bagus secara teknis tapi gagal aktif karena APATI
+  PEMILIH struktural (>96% approval di antara yang memilih, tapi turnout tak pernah tembus kuorum di 4
+  referendum berturut-turut) — Fee Switch ZRO
+- Pivot dari "protokol infrastruktur murni" menjadi "pesaing L1 langsung" ketika model utilitas token yang
+  sudah ada gagal mengaktifkan nilai tangkap (value capture) — peluncuran blockchain Zero, Feb 2026
+
+Format tiap kandidat:
+Pattern Candidate: <nama>
+  Shape: <deskripsi shape keputusan yang bisa berulang>
+  Drawn From: <event/fakta spesifik yang dikutip, dengan nama/tanggal>
+  Applies When: <kondisi struktural yang membuat ini transfer ke proyek lain — bukan cuma mekanik>
+---
+
+Open Threads
+- <hal yang masih belum pasti>
+
+=== ATURAN FORMAT (berlaku untuk seluruh jawaban) ===
+- Tulis dalam BAHASA INDONESIA. Yang TIDAK diterjemahkan: nama produk/teknologi, nama orang, nama
+  perusahaan, nama chain, dan URL.
+- Ikuti template output di atas PERSIS — label field yang sama, urutan yang sama.
+- JANGAN gunakan tabel sama sekali.
+- Satu fakta per baris. Kalau isi yang mau ditulis lebih dari ~2 kalimat, WAJIB dipecah jadi sub-bullet,
+  masing-masing dengan Evidence Level + sumbernya sendiri (kutip fase dan field spesifik dari dossier,
+  misal "[Historical Intelligence, event Mei 2026]").
+- JANGAN mengarang pattern dari satu contoh yang lemah. Kalau ragu apakah sesuatu benar-benar sebuah
+  pattern (berulang/transferable) vs cuma fakta unik LayerZero, JANGAN dipaksakan jadi Pattern Candidate
+  — cukup catat di Open Threads.
+- Evidence Level (HIGH/MEDIUM/LOW) di setiap klaim signifikan.
+- Awali output dengan: PROJECT: LayerZero
+- Akhiri dengan heading "Open Threads" berisi daftar hal yang masih belum pasti/perlu digali lebih lanjut.
+```
+
+**Result:** pending — awaiting output.
