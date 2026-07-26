@@ -412,4 +412,6 @@ established for diligence use:
 `examples/DatasetIndex.md` (V1→V2 Upgrade Queue — separate, data-hygiene track, not blocked by this),
 `docs/Reasoning/Prediction.md`, `examples/PatternRegistry.md` (`scope` field, referenced in §3.2),
 `tools/backtest.py`, `poc/intake.html`, `poc/cif.json`, `CLAUDE.md`,
-`docs/Project/AirdropOS-UI-Audit.md` (2026-07-26 audit of the current AirdropOS build against this spec).
+`docs/Project/AirdropOS-UI-Audit.md` (2026-07-26 audit of the current AirdropOS build against this spec),
+`docs/Project/AirdropOS-Rebuild-Prompt.md` (paste-ready prompt derived from this file + the audit, for the
+session that will actually do the rebuild/rebrand).
