@@ -1494,3 +1494,127 @@ content changes, since nothing here needed correcting the way Phase 6's Gemini d
 
 **Active file:** `doc_backup/inbox/phased/LayerZero/07-ecosystem.docx`. Raw DeepSeek output archived at
 `07-ecosystem-deepseek-raw.txt`.
+
+## Phase 8 — Market Intelligence (drafted 2026-07-26)
+
+Context Pack: Phase 1 (full) + a Phase 3 index (event labels + dates only, no full Trigger/Context/
+Decision/Execution/Outcome bodies — just enough for "Market Cycles Operated Through" to anchor real dates
+rather than vague eras). No `examples/Sentiment/LayerZero.md` companion exists for this project, so the
+prompt explicitly says to ignore that cross-check instruction rather than leave it dangling. Competitor,
+adoption-metric, and TVL facts from Phases 3/4/5/6/7 are injected directly as compact figures rather than
+requiring those documents to be uploaded in full.
+
+The single most important injected fact: the >$4B (May 2026) growing to >$7.2B (Jul 2026) institutional
+exodus to Chainlink CCIP, discovered in Phase 3's research, is explicitly flagged as the likely most
+consequential fact for this phase's "Current Status" and "Market Share" fields — with an explicit
+instruction not to present only the growth side (Zero blockchain, Tether/Citadel/ARK investments) without
+the erosion side (the exodus), since both are happening simultaneously.
+
+```
+Menggunakan output Foundation Intelligence (Phase 1) di atas sebagai konteks, bangun PROFIL PASAR untuk
+LayerZero. HANYA pasar — BUKAN kenapa (itu tugas fase Behavioral Intelligence berikutnya). Tidak ada
+companion Sentiment (Grok/X) yang tersedia untuk proyek ini — abaikan instruksi cross-check itu.
+
+=== INDEKS EVENT DARI PHASE 3 (nama + tanggal saja — JANGAN ulangi Trigger/Context Snapshot/Decision/
+Execution/Outcome penuh, cukup gunakan untuk menandai era/siklus pasar yang relevan di field "Market
+Cycles Operated Through") ===
+1 April 2021 — Putaran Pendanaan Seed $2 Juta; Mei 2021 — Publikasi Whitepaper; 16 September 2021 —
+Series A $6 Juta & Mainnet V1; Kuartal Pertama 2022 — Peluncuran Stargate Finance; 30 Maret 2022 — Series
+A Extension $135 Juta; 11 November 2022 — Keruntuhan FTX; 4 April 2023 — Series B $120 Juta; 2023 —
+Ekspansi 50+ Chain; September 2023–31 Januari 2025 — Gugatan Clawback FTX (settled); 29 Januari 2024 —
+Peluncuran LayerZero V2; 20 Juni 2024 — TGE ZRO & "Proof-of-Donation"; 10-25 Agustus 2025 — Akuisisi
+Stargate Finance; 10 Februari 2026 — Peluncuran Blockchain "Zero"; 18 April 2026 — Insiden Eksploitasi
+Kelp DAO ($292 Juta); Mei 2026 — Modifikasi Keamanan Sistemik DVN & Eksodus ke Chainlink CCIP
+
+=== YANG SUDAH DIKETAHUI — WAJIB DIPERDALAM DENGAN DETAIL, JANGAN CUMA DIULANG ===
+- Kompetitor yang sudah teridentifikasi di fase-fase sebelumnya: Wormhole (rival jembatan/messaging sejak
+  V1, sempat mengajukan tawaran tandingan $120 juta saat akuisisi Stargate Agustus 2025), Cosmos IBC
+  (rival arsitektur sejak era whitepaper 2021), Chainlink CCIP (AWALNYA mitra/opsi DVN di V2, BERUBAH jadi
+  kompetitor langsung setelah eksodus migrasi klien pasca-insiden Kelp DAO Mei 2026), Axelar dan Hyperlane
+  (disebut sebagai protokol messaging lintas-rantai sejenis di riset Phase 4).
+- Metrik adopsi (PERHATIAN — angka lama "80 juta+ pesan" dari draf sangat awal SUDAH USANG, dikonfirmasi
+  di Phase 3; gunakan angka lebih baru di bawah sebagai basis, tapi CARI angka TERKINI per tanggal riset
+  kamu karena ini bisa saja sudah berubah lagi):
+  - Pertumbuhan volume pesan: 66.000+ (Juni 2022) → 1,7 juta+ (Juni 2024), kenaikan 4x (Messari, Agustus
+    2024, per riset Phase 7)
+  - Total pesan diproses: 159-160 juta (per riset Phase 5/6, pertengahan 2026)
+  - Total nilai ditransfer kumulatif: $225-260 miliar lintas 165+ chain (per riset Phase 5/6)
+  - Total smart contract yang mendeploy LayerZero: 50.000+ hingga 54.000+ tergantung sumber/tanggal
+    (Phase 6 & 7) — flag rentang ini, jangan pilih satu angka tanpa menyebut sumber+tanggal
+- TVL Stargate Finance: sempat mencapai puncak >$3 miliar (menurut catatan Phase 1 trim) — VERIFIKASI
+  ulang angka ini dan cari histori TVL Stargate dari puncak hingga sekarang, termasuk efek akuisisi
+  Agustus 2025 dan insiden Kelp DAO April 2026 terhadap TVL.
+- PERISTIWA PALING PENTING untuk "Current Status" dan "Market Share" — jangan dilewatkan: pasca insiden
+  Kelp DAO (18 April 2026) dan pengakuan kesalahan DVN oleh LayerZero (Mei 2026), terjadi eksodus migrasi
+  modal institusional senilai >$4 miliar (per Mei 2026) yang terus tumbuh menjadi >$7,2 miliar per Juli
+  2026 ke kompetitor Chainlink CCIP (Lombard, Solv Protocol, Re.xyz, Kraken, Mantle $2,5 miliar, Virtuals
+  $700 juta, Yuzu Money $54,5 juta — semua pindah). Ini KEMUNGKINAN BESAR peristiwa paling signifikan bagi
+  posisi pasar LayerZero saat ini — pastikan field "Current Status" dan "Market Share" merefleksikan
+  ketegangan antara PERTUMBUHAN institusional (Zero blockchain, investasi Tether/Citadel/ARK Februari
+  2026) DAN EROSI pangsa pasar akibat eksodus ini secara bersamaan — JANGAN sajikan hanya salah satu sisi.
+
+=== YANG PERLU DICARI LEBIH DALAM (belum ada datanya di fase manapun) ===
+- Market share LayerZero vs Wormhole vs Axelar vs Chainlink CCIP dalam volume pesan/TVL lintas-rantai —
+  apakah ada data pembanding kuantitatif (DefiLlama bridge rankings, dsb)?
+- Narasi pasar yang LayerZero ikuti vs yang mereka ciptakan sendiri — draf sebelumnya (Phase 3/4) mencatat
+  LayerZero mengklaim menyelesaikan "Bridging Trilemma" (narasi yang mereka CIPTAKAN sendiri) dan
+  belakangan mengklaim jadi "Decentralized Multi-Core World Computer" (narasi Zero blockchain) — apakah
+  ada narasi PASAR LEBIH BESAR yang mereka IKUTI (misal narasi "RWA tokenization", "chain abstraction",
+  "institutional DeFi")? Bedakan tegas mana yang originated vs followed.
+- Riwayat TVL/volume Stargate Finance dengan tanggal-tanggal kunci (peluncuran Maret 2022, puncak, efek
+  akuisisi Agustus 2025, efek insiden Kelp DAO April 2026, kondisi saat ini)
+- Siklus pasar yang benar-benar dilalui LayerZero dan efek TERUKUR pada proyek ini secara spesifik (bukan
+  makro umum) — misal: bagaimana crypto winter 2022 memengaruhi TVL/volume LayerZero secara spesifik,
+  bukan cuma kondisi pasar umum yang sudah dicatat di Phase 3?
+
+=== FORMAT OUTPUT ===
+Narrative(s): <value — tandai jelas mana yang originated (LayerZero menciptakan) vs followed (LayerZero
+  mengikuti narasi pasar yang lebih besar), pecah jadi sub-bullet per narasi> (Evidence Level) [sumber]
+
+Untuk SETIAP kompetitor/era, ulangi blok ini:
+Competitor: <nama>
+  Era: <kapan mereka bersaing> (Evidence Level) [sumber]
+  Positioning vs. them: <value> (Evidence Level) [sumber]
+---
+
+Lalu, sekali saja (SETIAP baris WAJIB punya sitasinya sendiri):
+Adoption Metrics: <metric: value (tanggal); ulangi per metrik, pecah jadi sub-bullet> (Evidence Level)
+  [sumber]
+TVL History: <value: tanggal; ulangi titik infleksi kunci, atau "n/a"> (Evidence Level) [sumber]
+Volume History: <value: tanggal; ulangi titik infleksi kunci> (Evidence Level) [sumber]
+Market Share: <value atau "tidak dapat dihitung" — WAJIB bahas efek eksodus Chainlink CCIP di sini>
+  (Evidence Level) [sumber]
+Market Cycles Operated Through: <daftar, dengan tanggal dan efek TERUKUR yang teramati pada proyek ini
+  secara spesifik — pecah jadi sub-bullet per siklus> (Evidence Level) [sumber]
+Current Status: <growing|declining|stagnant|dormant|recovering — atau kombinasi/nuansa jika kondisinya
+  memang campuran (lihat catatan eksodus Chainlink CCIP di atas)> — basis: <observasi apa yang mendukung
+  ini> (Evidence Level) [sumber]
+
+Open Threads
+- <hal yang masih belum pasti, bertentangan, atau perlu digali lebih lanjut>
+
+=== ATURAN FORMAT (berlaku untuk seluruh jawaban) ===
+- Tulis dalam BAHASA INDONESIA. Yang TIDAK diterjemahkan: nama produk/teknologi, nama orang, nama
+  perusahaan, nama chain, dan URL.
+- Ikuti template output di atas PERSIS — label field yang sama, urutan yang sama. Jangan reformat jadi
+  prosa, jangan ganti nama field, jangan urutkan ulang.
+- JANGAN gunakan tabel sama sekali.
+- Satu fakta per baris. Tanggal lengkap, angka dengan satuan. Jangan membulatkan atau menghilangkan angka.
+- Sebuah field TIDAK PERNAH berupa paragraf — apalagi satu kalimat raksasa berisi bertumpuk-tumpuk sinonim
+  tanpa informasi baru. Kalau isi yang mau ditulis lebih dari ~2 kalimat, WAJIB dipecah jadi sub-bullet di
+  bawah label itu — satu klaim per sub-bullet, masing-masing diakhiri Evidence Level + sumbernya sendiri.
+- JANGAN mengarang. Kalau tidak diketahui/tidak dapat diverifikasi, tulis "tidak diketahui" — jangan
+  menebak atau mengisi kekosongan dengan klaim yang terdengar masuk akal tapi tidak bersumber.
+- Kalau sebuah klaim diperdebatkan oleh sumber berbeda, catat eksplisit ("Sumber A bilang X, Sumber B
+  bilang Y") — jangan diam-diam memilih salah satu.
+- Sitasi WAJIB menempel di SETIAP fakta, di baris yang sama — bukan daftar pustaka di akhir tanpa kaitan
+  per-fakta. Sebutkan setidaknya nama domain sumber + tanggal per klaim (URL lengkap kalau tersedia).
+- Evidence Level (HIGH/MEDIUM/LOW) di setiap klaim signifikan.
+- JANGAN menganalisis atau berspekulasi soal kausalitas (kenapa sesuatu terjadi) di luar cakupan fase ini
+  — itu tugas fase Behavioral berikutnya. Fase ini murni APA yang terjadi di pasar, bukan MENGAPA.
+- Awali output dengan: PROJECT: LayerZero
+- Akhiri dengan heading "Open Threads" berisi daftar hal yang masih belum pasti/bertentangan/perlu digali
+  lebih lanjut.
+```
+
+**Result:** pending — awaiting output.
