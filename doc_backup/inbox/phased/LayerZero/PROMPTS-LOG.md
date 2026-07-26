@@ -1330,3 +1330,139 @@ passed.
 
 **Active file:** `doc_backup/inbox/phased/LayerZero/06-token.docx`. Source research archived at
 `06-token-citation-map-research.md`.
+
+## Phase 7 — Ecosystem Intelligence (drafted 2026-07-26)
+
+Context Pack: Phase 1 (full) + a Phase 2 index (76 entity names + types only, no relationship prose —
+just enough for the model to know who's already mapped and go deeper instead of re-deriving). Explicitly
+caps the "Integration Partner" block to significant partners only (LayerZero connects to 165+ chains and
+hundreds/thousands of dApps — the Phase 2 prompt deliberately deferred that long tail to this phase, but
+enumerating all of it produces an unusable wall of low-value entries). Injects the Tether/USDT0 mechanics
+gap carried forward since the Phase 1 v2→v3 trim, and explicitly asks the model to mark the "Zero"
+blockchain's institutional partnerships (DTCC/Citadel/ICE/ARK/Google Cloud, announced Feb 2026) as
+"announced-only" unless it finds concrete evidence of live deployment. Repeats the Phase 6 prose-collapse
+warning verbatim in the format rules, since that failure mode could recur here given the sprawling scope.
+
+```
+Menggunakan output Foundation Intelligence (Phase 1) di atas sebagai konteks, bangun PROFIL EKOSISTEM/
+HUBUNGAN EKSTERNAL untuk LayerZero. Bedakan tegas "integrasi diumumkan" vs "integrasi live dan benar-benar
+dipakai" — ini penekanan paling penting di fase ini, karena beberapa kemitraan LayerZero (terutama yang
+terkait blockchain "Zero", diumumkan Februari 2026) masih berstatus rencana/eksplorasi, bukan sudah
+berjalan.
+
+=== INDEKS ENTITAS DARI PHASE 2 (nama + tipe saja — JANGAN ulangi relationship/context penuh, cukup
+gunakan untuk mencocokkan nama persis dan tahu siapa yang SUDAH terpetakan, supaya kamu bisa MEMPERDALAM,
+bukan mengulang) ===
+LayerZero Labs Ltd. (Organization); Optimistic Labs Limited (Organization); LayerZero Labs Canada Inc.
+(Organization); LayerZero Foundation (Foundation); Bryan Pellegrino (Person); Ryan Zarick (Person);
+Caleb Banister (Person); Chainlink (Partner); Chainlink CCIP (Protocol); Google Cloud (Partner);
+Polyhedra (Partner); Alameda Ventures / FTX Group (Investor); Protocol Guild (Foundation); Stargate
+Finance (Protocol); Tether (Partner); Trail of Bits (Research); Zellic (Research); Zokyo (Research);
+Peckshield (Research); Hacken (Research); Kelp DAO (Protocol); a16z crypto (Investor); Sequoia Capital
+(Investor); Binance Labs (Investor); Multicoin Capital (Investor); PayPal Ventures (Investor); Circle
+Ventures (Investor); OKX Ventures (Investor); Delphi Digital (Investor); BOND (Investor); Christie's
+(Investor); Samsung Next (Investor); OpenSea (Investor); Polygon Ventures (Investor); DeFiance Capital
+(Investor); Spartan Group (Investor); Sino Global Capital (Investor); Coinbase Ventures (Investor);
+EigenLabs / EigenLayer (Partner); Nethermind (Partner); Animoca Brands (Partner); Horizen Labs (Partner);
+Delegate (Partner); Radiant Capital (Protocol); Ondo Finance (Protocol); Paxos (Protocol); Ethena
+(Protocol); EtherFi (Protocol); Keeta (Partner); IDEX (Protocol); Binance (Exchange); Coinbase (Exchange);
+Kraken (Exchange); OKX (Exchange); Bybit (Exchange); KuCoin (Exchange); MEXC (Exchange); Bitget (Exchange);
+HTX/Huobi (Exchange); Uphold (Exchange); Uniswap (Exchange); SushiSwap (Exchange); PancakeSwap (Exchange);
+TraderJoe (Exchange); Hashflow (Protocol); Immunefi (Partner); United States Bankruptcy Court for the
+District of Delaware (Government); FTX Recovery Trust (Organization); University of New Hampshire (IOL)
+(Research); CrowdStrike (Partner); Mandiant (Partner); zeroShadow (Partner); Halborn (Research); Certik
+(Research); Quantstamp (Research); Chain EVM dan Non-EVM Terintegrasi — 165+ (Product, BELUM dirinci
+satu-per-satu — ini tugas fase ini)
+
+=== TENTANG SKALA — PENTING, supaya hasil tidak jadi daftar tak berguna ===
+LayerZero terhubung ke 165+ chain dan ratusan/ribuan dApp. JANGAN coba mendaftarkan semuanya satu per
+satu. Untuk blok "Integration Partner", batasi HANYA pada partner yang SIGNIFIKAN — chain besar dengan
+TVL/volume tinggi, dApp yang sudah muncul di fase-fase sebelumnya (lihat indeks Phase 2 di atas: Stargate,
+Radiant Capital, Ondo Finance, Ethena, EtherFi, Kelp DAO, IDEX, Hashflow, Paxos, Keeta), atau kemitraan
+institusional besar (Tether/USDT0, DTCC, Citadel Securities, ICE, ARK Invest, Google Cloud). Untuk
+chain/dApp yang jumlahnya masif dan tidak signifikan secara individual, cukup rangkum di field "Developer
+Ecosystem" atau "Applications Built On It" secara agregat (contoh: "165+ chain terintegrasi per dokumentasi
+resmi, termasuk X/Y/Z tier-1 yang signifikan secara individual — lihat blok Integration Partner").
+
+=== YANG SUDAH DIKETAHUI — WAJIB DIPERDALAM DENGAN DETAIL, JANGAN CUMA DIULANG ===
+- Tether meluncurkan USDT0 menggunakan standar OFT (Omnichain Fungible Token) milik LayerZero — belum
+  pernah direkam mekanisme integrasi TEKNISNYA di fase manapun sebelumnya. USDT0 sendiri sudah memfasilitasi
+  >$70 miliar volume transfer lintas-rantai dalam 12 bulan (per riset Phase 3). CARI: bagaimana persis
+  USDT0 dibangun di atas OFT — apakah lock-and-mint atau native burn-and-mint? Chain mana saja yang sudah
+  live?
+- DVN (Decentralized Verifier Network) providers yang sudah dipetakan di Phase 2 sebagai Partner: Chainlink
+  CCIP, Google Cloud, Polyhedra, EigenLabs/EigenLayer, Nethermind, Animoca Brands, Horizen Labs, Delegate —
+  ini masuk kategori "Oracle Integrations" DAN "Infra/Tooling Providers" di format output; JANGAN ulangi
+  penjelasan teknis DVN dari Phase 4, fokus di sini pada STATUS masing-masing (live/announced) dan skala
+  adopsi (berapa banyak OApp yang benar-benar memakai tiap DVN ini per hari ini).
+- Kemitraan institusional "Zero" blockchain (diumumkan 10 Februari 2026): DTCC, Citadel Securities,
+  Intercontinental Exchange (ICE), ARK Invest, Google Cloud — per riset Phase 3/5/6, ini SEBAGIAN BESAR
+  masih level "eksplorasi"/investasi strategis, BUKAN deployment yang sudah selesai; mainnet Zero
+  ditargetkan musim gugur 2026. TANDAI status "announced-only" untuk kemitraan ini kecuali kamu menemukan
+  bukti konkret sudah live.
+- Exchange listing ZRO sudah dipetakan di Phase 2 (11 exchange: Binance/Coinbase/Kraken/OKX/Bybit/KuCoin/
+  MEXC/Bitget/HTX/Uphold + 4 DEX: Uniswap/SushiSwap/PancakeSwap/TraderJoe) — field "Exchange Listings" di
+  sini JANGAN mengulang daftar itu, tapi tambahkan yang BELUM ada: tier/breadth (spot vs derivatives vs
+  margin), kedalaman likuiditas/volume harian jika tersedia, dan listing BARU yang belum tercatat di Phase 2.
+
+=== YANG PERLU DICARI LEBIH DALAM (belum ada datanya di fase manapun) ===
+- Dukungan wallet (Wallet Support) — belum pernah dicatat sama sekali di fase manapun sebelumnya. Wallet
+  mana yang mendukung interaksi lintas-rantai LayerZero secara native (MetaMask, Rabby, Trust Wallet, dst)?
+- Ukuran dan aktivitas komunitas (Discord/Telegram/forum) dengan angka dan tanggal konkret — belum pernah
+  dicatat.
+- Developer ecosystem: berapa banyak smart contract yang sudah dideploy memakai LayerZero (Phase 6
+  menyebutkan "50.000+ smart contract" dalam konteks auto-burn fee switch — verifikasi ulang angka ini
+  untuk konteks developer ecosystem, atau cari angka yang lebih relevan/terkini)?
+- Bridge Integrations — di luar DVN, apakah ada jembatan pihak ketiga lain (bukan DVN) yang terintegrasi
+  atau berkompetisi langsung di rute yang sama?
+
+=== FORMAT OUTPUT ===
+Untuk SETIAP integration partner (batasi ke yang signifikan, lihat instruksi skala di atas), ulangi blok
+ini (setiap baris pakai sitasinya sendiri):
+Integration Partner: <nama>
+  What it does: <value> (Evidence Level) [sumber]
+  Status: <live|announced-only> (Evidence Level) [sumber]
+---
+
+Lalu, sekali saja (SETIAP baris WAJIB punya sitasinya sendiri — kalau jawabannya butuh lebih dari 2
+kalimat, pecah jadi sub-bullet, masing-masing dengan sitasi sendiri):
+Developer Ecosystem: <value> (Evidence Level) [sumber]
+Applications Built On It: <daftar, pecah jadi sub-bullet per aplikasi signifikan> (Evidence Level) [sumber]
+Wallet Support: <daftar> (Evidence Level) [sumber]
+Exchange Listings: <ringkasan tier/breadth di luar yang sudah ada di Phase 2 — JANGAN ulang daftar exchange
+  Phase 2> (Evidence Level) [sumber]
+Oracle Integrations: <daftar DVN dari indeks Phase 2 + status live/announced masing-masing> (Evidence
+  Level) [sumber]
+Bridge Integrations: <value atau "n/a"> (Evidence Level) [sumber]
+Infra/Tooling Providers: <value> (Evidence Level) [sumber]
+Community Size/Activity: <angka Discord/TG/forum + tanggal> (Evidence Level) [sumber]
+
+Open Threads
+- <hal yang masih belum pasti, bertentangan, atau perlu digali lebih lanjut>
+
+=== ATURAN FORMAT (berlaku untuk seluruh jawaban) ===
+- Tulis dalam BAHASA INDONESIA. Yang TIDAK diterjemahkan: nama produk/teknologi, nama orang, nama
+  perusahaan, nama chain, dan URL.
+- Ikuti template output di atas PERSIS — label field yang sama, urutan yang sama. Jangan reformat jadi
+  prosa, jangan ganti nama field, jangan urutkan ulang.
+- JANGAN gunakan tabel sama sekali.
+- Satu fakta per baris. Tanggal lengkap, angka dengan satuan. Jangan membulatkan atau menghilangkan angka.
+- Sebuah field TIDAK PERNAH berupa paragraf — apalagi satu kalimat raksasa berisi bertumpuk-tumpuk sinonim
+  tanpa informasi baru (ini kegagalan nyata yang terjadi di percobaan Phase 6 sebelumnya — JANGAN ulangi).
+  Kalau isi yang mau ditulis lebih dari ~2 kalimat, WAJIB dipecah jadi sub-bullet di bawah label itu — satu
+  klaim per sub-bullet, masing-masing diakhiri Evidence Level + sumbernya sendiri.
+- JANGAN mengarang. Kalau tidak diketahui/tidak dapat diverifikasi, tulis "tidak diketahui" — jangan
+  menebak atau mengisi kekosongan dengan klaim yang terdengar masuk akal tapi tidak bersumber.
+- Kalau sebuah klaim diperdebatkan oleh sumber berbeda, catat eksplisit ("Sumber A bilang X, Sumber B
+  bilang Y") — jangan diam-diam memilih salah satu.
+- Sitasi WAJIB menempel di SETIAP fakta, di baris yang sama — bukan daftar pustaka di akhir tanpa kaitan
+  per-fakta.
+- Evidence Level (HIGH/MEDIUM/LOW) di setiap klaim signifikan.
+- JANGAN menganalisis atau berspekulasi soal kausalitas di luar cakupan fase ini — itu tugas fase
+  Behavioral nanti.
+- Awali output dengan: PROJECT: LayerZero
+- Akhiri dengan heading "Open Threads" berisi daftar hal yang masih belum pasti/bertentangan/perlu digali
+  lebih lanjut.
+```
+
+**Result:** pending — awaiting output.
