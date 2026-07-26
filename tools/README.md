@@ -38,3 +38,42 @@ rounding (`$72,248,571 → $72,25 juta`) both count as covered.
 It is a **heuristic for human review**, not a correctness proof: it flags candidates to double-check
 and **cannot** verify a value is attached to the correct label — that judgement stays with the curator.
 A clean report is the per-ingest fidelity evidence retained for the later dataset audit.
+
+## `ingest.py` — batch auto-file raw docx/pdf → CIF artifacts (no LLM)
+
+Deterministic; the reasoning already lives in the source report, this only transforms+files it.
+Four inbox-routed types (`deep`, `batch`, `sentiment`, `phased`) plus the hardened `data_project`
+pipeline below. See the file's own docstring and `--help` for the routing rules.
+
+### `data_project/<project>/` — hardened per-project 11-phase assembler
+
+The successor to the `phased` mode's `doc_backup/inbox/phased/<Project>/` convention, built after a
+real incident: a phase file named `03-historical.docx` was silently dropped from a dossier assembly
+because the old matcher tested phase keys as a loose substring of the filename, and `"history"` is
+not a substring of `"historical"` (see `doc_backup/inbox/phased/LayerZero/PROMPTS-LOG.md`). The failure
+was silent — the run still reported `✅ ok`, just with one phase missing from the dossier.
+
+`data_project` replaces substring matching with a **strict, hard-failing contract**:
+
+```
+data_project/<project>/NN-<phasekey>.docx   e.g. data_project/layerzero/03-history.docx
+```
+
+- `NN` — any 1–2 digit ordinal (cosmetic; assembly order is always the fixed dependency order, not
+  filename order).
+- `<phasekey>` — must be an **exact** match (not substring) to one of the 11 keys: `foundation`,
+  `entity`, `history`, `technology`, `financial`, `token`, `ecosystem`, `market`, `behavioral`,
+  `knowledge`, `conflict`.
+- Any filename that doesn't match the pattern, uses an unknown key, or collides with another file on
+  the same key → the whole project **raises and writes nothing** (no partial/misleading dossier).
+  A missing phase also raises unless `--allow-partial` is passed explicitly.
+
+```
+python tools/ingest.py --type data_project --input data_project/layerzero
+python tools/ingest.py                                   # also scans data_project/ by default
+python tools/ingest.py --type data_project --allow-partial --input data_project/arbitrum
+```
+
+The process exits non-zero if any `data_project` folder fails validation, so it's safe to gate on in
+a script. The older `phased` mode (fuzzy matching, soft warnings) still works unchanged for in-flight
+projects — it is not yet removed pending the dataset-reset cleanup.

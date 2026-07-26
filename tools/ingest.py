@@ -339,6 +339,107 @@ def process_phased_project(folder: Path, force: bool, dest_dir: Path = None):
         msg += f"  ⚠ supersedes Pioneer/{summary_dup.name}"
     return [("ok", name, msg)]
 
+DATA_PROJECT_ROOT = ROOT / "data_project"
+PHASE_FILE_RE = re.compile(r"^(\d{1,2})-([a-z]+)\.(docx|pdf)$", re.IGNORECASE)
+
+def detect_phase_key_strict(filename: str) -> str:
+    """Strict phase-file naming for data_project/<project>/: '<NN>-<key>.<ext>', key must be an
+    EXACT match against PHASE_KEYS (not a substring test). Raises ValueError with an actionable
+    message on any mismatch. Replaces the old fuzzy detect_phase_key(), which silently dropped
+    '03-historical.docx' from the LayerZero dossier because "history" is not a substring of
+    "historical" -- see doc_backup/inbox/phased/LayerZero/PROMPTS-LOG.md for the incident."""
+    m = PHASE_FILE_RE.match(filename)
+    if not m:
+        raise ValueError(
+            f"'{filename}' does not match the required '<NN>-<phasekey>.docx|pdf' naming "
+            f"(e.g. '03-history.docx'). Valid phase keys: {', '.join(PHASE_KEYS)}."
+        )
+    key = m.group(2).lower().replace("behaviour", "behavior")
+    if key not in PHASE_KEYS:
+        raise ValueError(
+            f"'{filename}': phase key '{key}' is not one of the 11 valid keys: "
+            f"{', '.join(PHASE_KEYS)}."
+        )
+    return key
+
+def process_data_project(folder: Path, force: bool, allow_partial: bool = False, dest_dir: Path = None):
+    """Assemble one project's dossier from data_project/<project>/ -- hardened successor to
+    process_phased_project(). Exact filename contract (see detect_phase_key_strict); hard-fails
+    (raises ValueError) on any unmatched file, duplicate phase key, or -- unless allow_partial --
+    an incomplete phase set, instead of the old function's silent soft-warning behaviour. A raised
+    error means NOTHING is written for this project: no partial/misleading dossier."""
+    name = folder.name
+    dest_dir = dest_dir or DEST["deep"]
+    existing = find_existing(dest_dir, name)
+    out = existing or (dest_dir / f"{name}.md")
+    if existing and not force:
+        note = "" if existing.stem == name else f" (matched existing '{existing.stem}.md' — near-duplicate name)"
+        return [("skip", name, f"dossier exists{note}")]
+
+    files = sorted([*folder.glob("*.docx"), *folder.glob("*.pdf")])
+    if not files:
+        return [("warn", name, "no phase files found in folder")]
+
+    phases, all_threads, archived, seen = {}, [], [], {}
+    for f in files:
+        key = detect_phase_key_strict(f.name)
+        if key in seen:
+            raise ValueError(
+                f"[{name}] duplicate phase '{key}': both '{seen[key]}' and '{f.name}' map to it. "
+                f"Remove or rename one before ingesting."
+            )
+        seen[key] = f.name
+        body, threads = split_open_threads(extract_source(f))
+        phases[key] = body
+        all_threads.extend(f"[{key}] {t}" for t in threads)
+        archived.append(_archive(f, "deep", f"{name}_{key}"))
+
+    missing = [k for k in PHASE_KEYS if k not in phases]
+    if missing and not allow_partial:
+        raise ValueError(
+            f"[{name}] incomplete: missing phase(s) {', '.join(missing)} "
+            f"({len(phases)}/{len(PHASE_KEYS)} present). Pass --allow-partial to assemble anyway."
+        )
+
+    order = [k for k in PHASE_KEYS if k in phases]
+    body_md = []
+    for k in order:
+        meta = PHASE_META[k]
+        body_md.append(f"\n## {meta['title']}\n_ref: {meta['ref']}_\n\n{phases[k]}")
+    if all_threads:
+        body_md.append("\n## Open Questions\n" + "\n".join(f"- {t}" for t in all_threads))
+
+    summary_dup = find_existing(DEST["batch"], name)
+    supersede_note = (f"\n**Supersedes:** `examples/Pioneer/{summary_dup.name}` — same project now exists as "
+                       f"a fuller Deep dossier; the Summary is redundant and should be reviewed for removal "
+                       f"(not auto-deleted)." if summary_dup else "")
+    head = (
+        f"# {name} — Deep Case Study (Phased)\n\n"
+        f"**CIF Dataset — Deep Dossier · Tier: Deep (anchor project)**\n"
+        f"**Source:** Deep Research (Gemini), Format v3 Dependency Pipeline "
+        f"({len(order)}/{len(PHASE_KEYS)} phases: {', '.join(order)}). **Auto-assembled** by `tools/ingest.py` "
+        f"(deterministic, no LLM, strict data_project/ contract) — each phase extracted and concatenated in "
+        f"dependency order per `docs/Protocol/Deep-Research-Brief.md`; the reasoning is the source reports'.\n"
+        f"**Raw sources archived:** {', '.join(archived)}.\n"
+        f"**Phases not run:** {', '.join(missing) if missing else 'none'}.{supersede_note}\n\n"
+        f"> Faithful concatenation of phase outputs — no fabrication, no distillation beyond what the "
+        f"Conflict Resolution phase itself states. Consider a periodic QC pass.\n\n---\n"
+    )
+    out.write_text(head + "\n".join(body_md).strip() + "\n", encoding="utf-8")
+    return [("ok", name, f"{len(order)} phases -> {out.relative_to(ROOT)}")]
+
+def gather_data_projects(inputs=None):
+    """Yield project folders under data_project/ (or --input folders when --type data_project)."""
+    bases = [Path(p) for p in inputs] if inputs else [DATA_PROJECT_ROOT]
+    for base in bases:
+        if not base.exists():
+            continue
+        if list(base.glob("*.docx")) + list(base.glob("*.pdf")):
+            yield base
+        else:
+            for d in sorted(p for p in base.iterdir() if p.is_dir()):
+                yield d
+
 def gather_phased_projects(inputs=None):
     """Yield project folders under doc_backup/inbox/phased/ (or --input folders when --type phased)."""
     bases = [Path(p) for p in inputs] if inputs else [INBOX / "phased"]
@@ -366,32 +467,40 @@ def gather(inputs, kind_hint):
 
 def main():
     ap = argparse.ArgumentParser(description="Batch auto-ingest raw docx/pdf -> CIF artifacts.")
-    ap.add_argument("--type", choices=["deep", "batch", "sentiment", "phased"], help="force type (for --input)")
-    ap.add_argument("--input", nargs="*", help="folder(s)/file(s); default = the four inbox subfolders")
+    ap.add_argument("--type", choices=["deep", "batch", "sentiment", "phased", "data_project"],
+                     help="force type (for --input)")
+    ap.add_argument("--input", nargs="*", help="folder(s)/file(s); default = the inbox subfolders + data_project/")
     ap.add_argument("--force", action="store_true")
+    ap.add_argument("--allow-partial", action="store_true",
+                     help="data_project only: assemble even if fewer than 11/11 phases are present")
     ap.add_argument("--no-build", action="store_true")
     args = ap.parse_args()
 
-    jobs, phased_projects = [], []
+    jobs, phased_projects, data_projects = [], [], []
     if args.input:
         if not args.type:
-            sys.exit("--input requires --type deep|batch|sentiment|phased")
+            sys.exit("--input requires --type deep|batch|sentiment|phased|data_project")
         if args.type == "phased":
             phased_projects = list(gather_phased_projects(args.input))
+        elif args.type == "data_project":
+            data_projects = list(gather_data_projects(args.input))
         else:
             jobs = list(gather(args.input, args.type))
     else:
         for kind in ("deep", "batch", "sentiment"):
             jobs += list(gather([INBOX / kind], kind))
         phased_projects = list(gather_phased_projects())
+        data_projects = list(gather_data_projects())
 
-    if not jobs and not phased_projects:
-        print(f"No .docx/.pdf found. Drop files in {INBOX}/(deep|batch|sentiment|phased)/ or pass --input --type.")
+    if not jobs and not phased_projects and not data_projects:
+        print(f"No .docx/.pdf found. Drop files in {INBOX}/(deep|batch|sentiment|phased)/ or {DATA_PROJECT_ROOT}/, "
+              f"or pass --input --type.")
         return
 
-    print(f"ingest: {len(jobs)} file(s), {len(phased_projects)} phased project(s)\n" + "-" * 64)
-    counts = {"ok": 0, "skip": 0, "warn": 0}
-    icons = {"ok": "✅", "skip": "⏭️", "warn": "⚠️"}
+    print(f"ingest: {len(jobs)} file(s), {len(phased_projects)} phased project(s), "
+          f"{len(data_projects)} data_project(s)\n" + "-" * 64)
+    counts = {"ok": 0, "skip": 0, "warn": 0, "error": 0}
+    icons = {"ok": "✅", "skip": "⏭️", "warn": "⚠️", "error": "❌"}
     for path, kind in jobs:
         for status, name, msg in PROCESSORS[kind](path, args.force):
             print(f"{icons[status]} [{kind:9s}] {name:18s} {msg}")
@@ -400,8 +509,24 @@ def main():
         for status, name, msg in process_phased_project(folder, args.force):
             print(f"{icons[status]} [{'phased':9s}] {name:18s} {msg}")
             counts[status] += 1
+    for folder in data_projects:
+        try:
+            results = process_data_project(folder, args.force, args.allow_partial)
+        except ValueError as e:
+            print(f"❌ [data_project] {folder.name:18s} {e}")
+            counts["error"] += 1
+            continue
+        for status, name, msg in results:
+            print(f"{icons[status]} [{'data_pr':9s}] {name:18s} {msg}")
+            counts[status] += 1
     print("-" * 64)
-    print(f"new: {counts['ok']}  skipped(dup): {counts['skip']}  warnings: {counts['warn']}")
+    print(f"new: {counts['ok']}  skipped(dup): {counts['skip']}  warnings: {counts['warn']}  errors: {counts['error']}")
+    if counts["error"]:
+        print("\n⛔ one or more data_project folders failed hard validation — nothing was written for them. "
+              "Fix the filenames/contents listed above and re-run.")
+
+    if counts["error"]:
+        sys.exit(1)
 
     if counts["ok"] and not args.no_build:
         print("\nrebuilding JSON + backtest...")
