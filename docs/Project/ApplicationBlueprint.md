@@ -1,4 +1,4 @@
-# Application Blueprint — CIF as a Product
+# Application Blueprint — CIF as a Product (v2)
 
 ## Status
 
@@ -7,6 +7,19 @@ pipeline. It exists so every future session (and every human) builds toward the 
 re-litigating decisions already made. Update this file when a decision changes — don't silently drift from it.
 
 Written: 2026-07-24. Source: maintainer discussion, no new research.
+
+**Revision 2026-07-26 — v1 → v2 (maintainer decision, after LayerZero proved out the 11-phase pipeline).**
+v1 was written before any project had gone through the Format v3 phased pipeline — it scoped CIF's whole
+product around one use case ("pattern-matching copilot for a due-diligence decision") because that was the
+only use case the dataset could support at the time. Having now seen what an actual 11-phase dossier contains
+(LayerZero: 76 entities, 15 fully-causal Decision Events with 8-POV stakeholder reactions each, full
+financial/token/tech/ecosystem/market intelligence, 29 cross-checked conflict resolutions), the maintainer
+judged that framing too narrow — the data supports several genuinely different product surfaces, not just
+one. v2 (§2b, §11) broadens the product's use-case scope and proposes an information architecture built
+around that breadth, and folds AirdropOS's original content-creator toolkit (rebuilt, not discarded) into
+that same structure instead of leaving it as a bolt-on outside CIF's own menu. §§1–10 below are v1 and remain
+the trust/positioning/monetization foundation — v2 extends them, it does not replace them. Superseded
+specifics are marked inline rather than deleted.
 
 **Revision 2026-07-24 (same-day follow-up discussion):** target market and §4 identification flow revised
 (see §4 and new §9) after the maintainer flagged that airdrop hunters are overwhelmingly free-riders and that
@@ -55,6 +68,30 @@ application*, not crypto project knowledge. It does not belong in `examples/` or
   persona is **web3 researchers, analysts, and funds/investors doing pre-TGE due diligence** — the same buyer
   segment that already pays for Messari/Delphi/Kaito-style research subscriptions, where a confidence/
   probability read is an input to real capital decisions, not idle curiosity.
+
+## 2b. Beyond pattern-matching (v2 — what an 11-phase dossier actually supports)
+
+v1 scoped the whole product around one surface: a user asks about one project, CIF returns a pattern-match
+read. A completed Format v3 dossier (11 phases, proven on LayerZero) is much richer than that single use case
+needs — treating it as *only* pattern-matching input leaves most of what was actually collected unused. Each
+row below names a **distinct product surface**, which phase(s) of the dossier it draws from, and who it's
+for. None of these require new research — they're different *views* over data CIF already collects.
+
+| Surface | Draws from (phase) | For whom | What it does that pattern-matching alone doesn't |
+|---|---|---|---|
+| **Due-diligence memo / one-click export** | All 11, synthesized | Fund analyst, VC | Compiles funding history, team, tokenomics, audit history, and flagged risks into one exportable document — the deliverable an analyst actually needs to hand upward, not just a screen to read. |
+| **Entity graph / relationship explorer** | 2 Entity | Analyst mapping exposure across a portfolio | Query *across* projects: which of my portfolio companies share an investor, auditor, or exchange listing with a project that just had an incident? This is the "contagion mapping" `docs/Ontology/Relationships.md` was already built for, but v1 never gave it a screen. |
+| **Founder/team track record lookup** | 2 Entity + 3 Historical, cross-project | Anyone diligencing a new founder/team | Search a person or org by name, see every project and Decision Event they're linked to across the whole dataset — surfaces repeat-founder and repeat-VC patterns a single-project view can't. |
+| **Red-flag / risk scanner** | 3 Historical, 4 Technology, 6 Token, 11 Conflict Resolution | Fast pre-screen before deep reading | A scannable checklist pulled from what's already extracted — unresolved `INKONSISTENSI`, audit gaps, concentrated holder positions, era-mismatched claims — instead of requiring someone to read the full prose to notice them. |
+| **Historical-analog comparison** | 3 Historical + 9 Behavioral, cross-project | Same as pattern-matching, but side-by-side | The *current* single-pattern-fired UI (§9.4) stays, but this adds an explicit N-way comparison table against the most similar historical Decision Events — closer to how an analyst actually works (compare 3–4 precedents at once), not a single generated verdict. |
+| **Content Studio (rebuilt from AirdropOS's original purpose — see §11.3)** | All 11, repurposed | Content creators, CIF's own marketing | The same cited, structured intelligence that grounds a due-diligence memo also grounds a content template (thread, explainer, timeline graphic script) — an AI agent drafts from real dossier facts instead of the old flow's "paste your own unverified research." Reuses the trust chain, doesn't bypass it. |
+| **Portfolio with graded outcomes (rebuilt from AirdropOS's "Porto")** | 3 Historical + whatever the user tracked | Individual user (any tier) | Not just "what I hold," but *"CIF said X about this project — here's what happened since."* Ties a user's own positions back to CIF's own Current Read/Signal history, so the user's portfolio becomes a personal instance of the same public Track Record (§3.3) mechanism. |
+| **Structured query / API access** | All 11, machine-readable | Power users, funds (Pro) | v1 named "API access" as an unscoped Pro feature (§9.2); v2 makes concrete *why* it's valuable now — the data model is rich enough to answer questions like "every project where a Series A closed within 5 months of a security incident," not just "fetch project X's report." |
+
+None of this changes §3's trust architecture (every one of these surfaces still needs the same citation
+chain, the same Evidence Level discipline) — it changes what's built *on top of* that trust chain. §11
+proposes how these fold into one coherent information architecture instead of shipping as disconnected
+bolt-ons.
 
 ## 3. Trust architecture (locked) — three layers, each needs dedicated UI
 
@@ -170,6 +207,13 @@ coded.
 - The daily-curated-catalog identification flow (§4) does not get silently replaced by live per-user LLM
   classification as the primary path to save engineering effort — hybrid stays a fallback only, unless a
   future maintainer decision explicitly revises this file.
+- (v2) Content Studio (§11.3) never generates content from an unverified/pasted document as its primary
+  path — it drafts from CIF's own cited dossier data, same as every other surface. A "paste your own
+  research" fallback may still exist for a not-yet-covered project (mirroring §4's fallback), but it is not
+  the default flow, the same way hybrid LLM-tagging isn't the default identification flow.
+- (v2) Content Studio's generated output never drops the citation trail (§11.3) — a template is still bound
+  by §3's "no claim without a one-click path to its raw citation" rule; it is a new *surface*, not an
+  exemption from the trust architecture.
 
 ## 8. Open questions (not yet decided)
 
@@ -184,6 +228,14 @@ coded.
   portfolio watchlist, API access are named directions only, not designed or scoped.
 - Pricing is still illustrative/undecided (see the reviewed prototype's upgrade modal, which says so
   explicitly).
+- (v2) Desktop-first vs. mobile-first for the Intelligence core (§11.1) — presented as a strong
+  recommendation, not yet a locked decision; needs explicit maintainer sign-off before Claude Design commits
+  to a layout direction.
+- (v2) Content Studio's exact output formats/templates (§11.3) — not scoped here; should be derived from
+  what AirdropOS's original content workflow already validated works, not invented fresh.
+- (v2) Which of §2b's new surfaces (due-diligence export, entity graph explorer, founder/team lookup,
+  red-flag scanner, analog comparison) ship in the first build-out vs. later — §2b describes what the data
+  supports, not a sequencing commitment; needs a build-phase pass similar to §6's, once 11.1 is settled.
 
 ## 9. Monetization & Trust Strategy
 
@@ -282,6 +334,78 @@ pattern — same component code/props shape, so this is a data-layer swap, not a
   daily by the sync script.
 - Sync cadence — manual `./run.sh sync` only, or also scheduled (e.g. a cron trigger) so AirdropOS updates
   without the maintainer remembering to run it by hand.
+
+## 11. Information architecture v2 (maintainer decision 2026-07-26 — diagnosis/direction, not final UI)
+
+This section states *what the menu structure should contain and why*, at the same level of abstraction as
+the rest of this document (product decisions, not pixels/components) — the actual visual design is Claude
+Design's job, per `docs/Project/AirdropOS-UI-Audit.md`'s own scoping. It exists because the maintainer flagged
+two compounding problems with the current AirdropOS menu: (a) it doesn't read as a professional research
+SaaS at all, and (b) even setting that aside, its labels/structure predate both the CIF pivot and the 11-phase
+data (§2b) — it was built for a WhatsApp-reminder airdrop tracker, then partially relabeled, never redesigned
+from the product this now actually is.
+
+### 11.1 Root-cause finding: the mobile-bottom-nav form factor itself is likely wrong, not just the labels
+
+`docs/UX_FRAMEWORK.md` (superseded, see `AirdropOS-UI-Audit.md` Finding 1) inherited a "5 slot + Lainnya"
+mobile bottom-nav constraint from the original tracker app, because a solo hunter checking daily tasks on
+their phone is a genuinely mobile-first use case. **CIF's actual paying persona (§2: researchers, analysts,
+funds doing due diligence) is not that user** — Messari, Delphi, Nansen, and Bloomberg-terminal-style tools
+that this persona already pays for are desktop-first, dense, multi-panel products, because diligence work
+(reading a memo, comparing analogs side-by-side, cross-referencing an entity graph) genuinely benefits from
+screen real estate a phone doesn't have. Relabeling icons inside a mobile-hunter-shaped nav will not produce
+"feels like a professional SaaS," because the constraint that shape was designed around no longer describes
+the primary user. **Recommendation: the Intelligence/research core should be desktop-first (a proper
+multi-panel dashboard layout), with a lighter mobile companion view for on-the-go lookups — not the reverse.**
+This is the single highest-leverage form-factor decision for Claude Design to resolve before laying out
+screens, and it is presented here as a strong recommendation, not yet a locked decision — flag if this
+should be revisited.
+
+### 11.2 Proposed top-level structure
+
+Not a nav-bar spec (slot count/order is Claude Design's call once 11.1 is resolved) — this is the set of
+first-class sections and what each owns, so nothing from §2b ships as a disconnected bolt-on:
+
+- **Intelligence** (existing core, keep and extend) — search/browse the curated catalog (§4), Opportunity
+  Ranking, Today's Pick, full reports with the §3 trust chain. §2b's due-diligence memo export, entity graph
+  explorer, founder/team lookup, red-flag scanner, and historical-analog comparison all live *inside* this
+  section as views/tools over the same underlying report — not separate top-level items — because they're
+  all facets of "diligencing one project or comparing several," the same job Intelligence already does.
+- **Track Record** (planned, unbuilt — `AirdropOS-UI-Audit.md` Finding 2) — public, not behind login (Finding
+  3) — CIF's own calibration history, independent of any single project.
+- **Content Studio** (rebuilt from AirdropOS's "Sesi" — see §11.3) — first-class section, not hidden inside
+  Intelligence or left outside the app's menu as a separate tool. Content creation is a genuinely different
+  job-to-be-done from diligence, even though it draws on the same data.
+- **Portfolio** (rebuilt from AirdropOS's "Porto" — see §2b) — personal tracking re-grounded in CIF's own
+  Current Read/Signal history instead of a bare manual list.
+- **Account/Settings** — unchanged in kind from today, rebranded.
+
+### 11.3 Content Studio — how the rebuilt "Sesi" actually works
+
+AirdropOS's original purpose (per the maintainer, and consistent with `memory/PRD.md`'s "content for daily
+social media" framing predating the CIF pivot) was a content-creator tool: paste/add a doc, an AI turns it
+into ready-to-use templates. That job doesn't go away — it gets **re-grounded in CIF's own cited data instead
+of an unverified user-pasted doc**, which is strictly an upgrade on the same trust principle §3 already
+established for diligence use:
+
+- **Input:** any project already in CIF's catalog (no separate research step — the whole point of the
+  curated-catalog model in §4 is that this data already exists), or, for a project not yet covered, the same
+  "Request coverage" fallback §4 already defines.
+  1. Draws structured facts from the dossier (a launch date, a funding round, a Decision Event, an
+     Evidence-Level-tagged claim) — the same underlying JSON that grounds a due-diligence report — and
+     drafts a template (thread outline, explainer script, timeline graphic copy) in whatever format the
+     content type needs.
+  2. **Every generated template keeps its source attachment**, the same one-click-to-citation rule as §3.1 —
+     a generated thread about "why this project's TVL dropped" must still trace each claim back to the
+     dossier passage it came from. This is what stops Content Studio from degrading into ungrounded AI
+     content generation once it's inside CIF's own menu — the same non-negotiable rule as §7's, extended to
+     a new surface rather than exempted from it.
+  3. Output formats are a build detail (not scoped here) but should map to what AirdropOS's original content
+     workflow already validated works for its users, rather than inventing new formats unprompted.
+- **Why this belongs inside CIF's menu, not bolted on outside:** the maintainer's own framing — a
+  content-creator tool connected to an AI agent with CIF's rich, cited dataset behind it is a *more powerful*
+  version of the same tool, not an unrelated feature riding alongside CIF. Keeping it external would mean
+  duplicating the trust-chain plumbing (§3) a second time instead of reusing it.
 
 ## Related Files
 
