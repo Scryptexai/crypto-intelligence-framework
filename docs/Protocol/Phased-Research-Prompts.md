@@ -84,52 +84,62 @@ single-shot prompt is unaffected and stays external as before.
 
 ## Shared rules (apply to every phase prompt)
 
+**Language note:** the prompt bodies below (§Track A/B) and this rules block are written in **Bahasa
+Indonesia**, because that's what was actually sent and actually worked — LayerZero's real Phase 1 attempt
+was sent in English and failed (came back as an unparseable narrative report, had to be reformatted from
+scratch); every phase from Phase 2 onward was drafted natively in Indonesian and succeeded. This is not a
+stylistic preference, it's what's evidenced in `doc_backup/inbox/phased/LayerZero/PROMPTS-LOG.md`. Keep
+these paste-ready blocks in Indonesian when updating this file — don't drift back to English drafts.
+
 Append this block to **every** phase prompt before sending it:
 
 ```
-FORMAT RULES (apply to your entire answer):
-- Write in BAHASA INDONESIA. Keep these in their original language, untranslated: product/technology
-  names (Ultra Light Node, DVN, OFT, Proof-of-Donation), people's names, company names, chain names,
-  and URLs. Translating a technical term makes it unmatchable against other dossiers.
-- Follow the literal output template given for this phase — same field labels, same order. Do not
-  reformat as prose, do not rename fields, do not reorder them. A consistent shape across every project
-  is the point; free-form answers can't be compared later.
-- Output as Label: Value bullets. NO TABLES AT ALL — not even for "structured" data. A Word table
-  survives extraction but flattens into an awkward two-line-per-fact shape; a flat bullet list does not.
-- One fact per line. Full dates, numbers with units. Never round away or drop a figure.
-- **A field's value is never a paragraph.** If what you'd naturally write under a label runs past ~2
-  sentences, break it into sub-bullets under that label — one claim per sub-bullet, each ending in its own
-  Evidence Level + source. (Lesson recorded from real failures: LayerZero's Phase 1/3/4 outputs each wrote
-  entire multi-sentence essays under a single label with one citation gesture at the very end — or none —
-  and every citation was lost in the process. Phase 2's short, frequently-repeated per-entity blocks did NOT
-  fail this way. The difference is block size: cite-as-you-go survives, cite-after-a-long-paragraph does not.
-  Do not let this phase's answer repeat that failure.)
-- Never fabricate. If something is unknown or unverifiable, write "unknown" — do not guess, do not infer
-  silently, do not fill a gap with a plausible-sounding but unsourced claim.
-- If you cannot find a source for a fact, actually search harder before giving up on it — use a
-  "cannot verify" fallback on at most 1-2 fields in your entire answer. If you are reaching for it more than
-  that, you are not searching hard enough, not encountering a genuinely unsourceable project. (Lesson from a
-  real failure: one attempt applied this fallback to every single field instead of searching — that is a
-  worse output than partial coverage with real citations.)
-- A specific number or percentage from a single source is not automatically correct — this applies
-  especially to tokenomics (TGE %, fee-switch status, treasury size). Cross-check any load-bearing
-  quantitative claim against the project's own primary source (official blog, governance page, on-chain
-  data) before reporting it as fact. (Lesson from a real failure: a fabricated TGE-unlock percentage from a
-  low-quality secondary source went unchallenged until an independent pass caught it.)
-- Where a claim is contested by different sources, note it explicitly ("Source A says X, Source B says Y") —
-  do not silently pick one.
-- Attach the source to EACH FACT, on the same line — not as a bibliography at the end. A numbered source
-  list at the bottom with no per-fact link is NOT acceptable: it makes every individual claim unverifiable,
-  which is the one thing this framework cannot tolerate.
-- Tag an Evidence Level — HIGH (multiple independent sources agree) / MEDIUM (one credible source) / LOW
-  (inference, single weak source, or contested) — on every significant claim, not just in the Conflict
-  Resolution phase.
-- Combined, every fact line looks like: "Amount: $6.5M (HIGH) [Messari, https://...]".
-- Do not analyze, conclude, or speculate about causality beyond what THIS phase's task asks for — later
-  phases handle synthesis; this phase's job is narrower than that.
-- Begin your output with: PROJECT: <Name>
-- End your output with a heading "Open Threads" followed by a bullet list of anything you found uncertain,
-  contradictory, or worth a deeper look — hand it to the next phase instead of guessing it closed.
+ATURAN FORMAT (berlaku untuk seluruh jawaban):
+- Tulis dalam BAHASA INDONESIA. Yang TIDAK diterjemahkan: nama produk/teknologi (Ultra Light Node, DVN,
+  OFT, Proof-of-Donation), nama orang, nama perusahaan, nama chain, dan URL. Menerjemahkan istilah teknis
+  membuatnya tidak bisa dicocokkan dengan dossier project lain.
+- Ikuti template output yang diberikan untuk fase ini PERSIS — label field yang sama, urutan yang sama.
+  Jangan reformat jadi prosa, jangan ganti nama field, jangan urutkan ulang. Bentuk yang konsisten lintas
+  project adalah tujuannya; jawaban bebas-bentuk tidak bisa dibandingkan nanti.
+- Output berupa bullet "Label: Isi". JANGAN GUNAKAN TABEL SAMA SEKALI — bahkan untuk data yang
+  "terstruktur" sekalipun. Tabel Word bisa selamat lewat proses ekstraksi tapi berubah jadi bentuk
+  dua-baris-per-fakta yang janggal; daftar bullet datar tidak begitu.
+- Satu fakta per baris. Tanggal lengkap, angka dengan satuan. Jangan pernah membulatkan atau menghilangkan
+  angka.
+- **Sebuah field TIDAK PERNAH berupa paragraf.** Kalau isi yang mau ditulis di bawah satu label lebih dari
+  ~2 kalimat, WAJIB dipecah jadi sub-bullet — satu klaim per sub-bullet, masing-masing diakhiri Evidence
+  Level + sumbernya sendiri. (Pelajaran dari kegagalan nyata: beberapa fase awal LayerZero menulis satu
+  paragraf raksasa penuh sinonim di bawah satu label dengan satu sitasi di ujung — atau tanpa sitasi sama
+  sekali — dan semua jejak sumbernya hilang dalam prosesnya. Fase lain yang menulis blok pendek berulang
+  per-item TIDAK gagal seperti ini. Bedanya ada di ukuran blok: sitasi-sambil-jalan selamat,
+  sitasi-setelah-paragraf-panjang tidak. Jangan ulangi kegagalan itu di jawabanmu.)
+- JANGAN mengarang. Kalau sesuatu tidak diketahui atau tidak dapat diverifikasi, tulis "tidak diketahui" —
+  jangan menebak, jangan menyimpulkan diam-diam, jangan mengisi kekosongan dengan klaim yang terdengar
+  masuk akal tapi tidak bersumber.
+- Kalau tidak menemukan sumber untuk sebuah fakta, CARI LEBIH KERAS dulu sebelum menyerah — pakai fallback
+  "tidak dapat diverifikasi" di MAKSIMAL 1-2 field di seluruh jawabanmu. Kalau kamu memakainya lebih dari
+  itu, kamu belum cukup keras mencari, bukan benar-benar menemui project yang tidak bisa disumberkan.
+  (Pelajaran dari kegagalan nyata: satu percobaan memakai fallback ini di SEMUA field alih-alih mencari —
+  hasilnya lebih buruk daripada cakupan sebagian dengan sitasi asli.)
+- Angka atau persentase spesifik dari satu sumber saja BUKAN otomatis benar — berlaku khusus untuk
+  tokenomics (persentase TGE, status fee-switch, ukuran treasury). Cross-check klaim kuantitatif yang
+  krusial ke sumber primer project (blog resmi, halaman governance, data on-chain) sebelum melaporkannya
+  sebagai fakta. (Pelajaran dari kegagalan nyata: sebuah angka unlock TGE yang fabricated dari sumber
+  sekunder kualitas rendah tidak terbantahkan sampai ada pass independen yang menangkapnya.)
+- Kalau sebuah klaim diperdebatkan oleh sumber berbeda, catat eksplisit ("Sumber A bilang X, Sumber B
+  bilang Y") — jangan diam-diam memilih salah satu.
+- Sitasi WAJIB menempel di SETIAP fakta, di baris yang sama — BUKAN daftar pustaka di akhir tanpa kaitan
+  per-fakta. Daftar sumber di bawah tanpa keterkaitan ke fakta individual TIDAK BISA DITERIMA — itu membuat
+  setiap klaim individual tidak bisa diverifikasi, satu hal yang tidak bisa ditoleransi kerangka kerja ini.
+- Beri Evidence Level — HIGH (beberapa sumber independen sepakat) / MEDIUM (satu sumber kredibel) / LOW
+  (inferensi, sumber tunggal lemah, atau diperdebatkan) — di setiap klaim signifikan, bukan cuma di fase
+  Conflict Resolution.
+- Gabungannya, setiap baris fakta terlihat seperti: "Amount: $6.5M (HIGH) [Messari, https://...]".
+- JANGAN menganalisis, menyimpulkan, atau berspekulasi soal kausalitas di luar yang diminta tugas fase ini
+  — fase-fase berikutnya yang menangani sintesis; tugas fase ini lebih sempit dari itu.
+- Awali output dengan: PROJECT: <Nama>
+- Akhiri output dengan heading "Open Threads" diikuti daftar bullet hal-hal yang kamu temukan tidak pasti,
+  bertentangan, atau perlu digali lebih dalam — serahkan ke fase berikutnya, jangan menebak sudah selesai.
 ```
 
 ## Known failure patterns (learned running this pipeline end-to-end on LayerZero, 2026-07)
@@ -182,23 +192,24 @@ phase's finished output as context before running the next one.
 
 ### Phase 1 — Foundation Intelligence
 ```
-You are a crypto research investigator building a factual foundation dossier on <PROJECT NAME>. This phase
-collects FACTS ONLY — no analysis, no interpretation, no "why."
+Kamu adalah investigator riset crypto yang sedang membangun dossier fondasi faktual untuk <NAMA PROJECT>.
+Fase ini HANYA mengumpulkan FAKTA — tidak ada analisis, interpretasi, atau "kenapa".
 
-Fill this exact template (write "unknown" for anything unverifiable — do not guess):
+Isi template PERSIS ini (tulis "tidak diketahui" untuk apa pun yang tidak dapat diverifikasi — jangan
+menebak):
 
-PROJECT: <Name>
-Official Name: <value>
-Symbol: <value>
-Category: <value — be specific, e.g. "cross-chain messaging / interoperability", not just "infra">
-Founding Entity: <legal name, jurisdiction>
-Founders: <name1 (role); name2 (role); ... — or "anonymous/pseudonymous — <handle>">
-Core Team: <size/notable names, or "undisclosed">
-Country: <value>
-Launch Date - Testnet: <date or "n/a">
-Launch Date - Mainnet: <date or "n/a">
-Launch Date - TGE: <date or "pre-TGE">
-Main Products: <semicolon-separated list>
+PROJECT: <Nama>
+Official Name: <nilai>
+Symbol: <nilai>
+Category: <nilai — spesifik, contoh "cross-chain messaging / interoperability", bukan cuma "infra">
+Founding Entity: <nama badan hukum, yurisdiksi>
+Founders: <nama1 (peran); nama2 (peran); ... — atau "anonim/pseudonim — <handle>">
+Core Team: <ukuran/nama yang bisa diverifikasi, atau "tidak diungkap">
+Country: <nilai>
+Launch Date - Testnet: <tanggal atau "n/a">
+Launch Date - Mainnet: <tanggal atau "n/a">
+Launch Date - TGE: <tanggal atau "pre-TGE">
+Main Products: <daftar dipisah titik-koma>
 Official Website: <url>
 Repository: <url>
 Documentation: <url>
@@ -206,201 +217,220 @@ Social - X/Twitter: <handle>
 Social - Discord: <invite/handle>
 Social - Telegram: <handle>
 Block Explorer: <url>
-Token Contract: <address, chain — or "not yet deployed">
-Chain(s): <value>
-Ecosystem: <value>
+Token Contract: <alamat, chain — atau "belum di-deploy">
+Chain(s): <nilai>
+Ecosystem: <nilai>
 
 Open Threads
-- <anything uncertain>
+- <hal yang masih belum pasti>
 ```
 
 ### Phase 2 — Entity Intelligence
 ```
-Using the Foundation Intelligence output above as context, build the ENTITY GRAPH for <PROJECT NAME> — every
-organization, person, investor, exchange, partner, protocol, developer, product, DAO, government body, media
-outlet, or research lab connected to the project. This is a GRAPH, not causal analysis — record who is
-connected and how, not why or what it caused. Do not skip entities that seem minor.
+Menggunakan output Foundation Intelligence (Phase 1) di atas sebagai konteks, bangun ENTITY GRAPH untuk
+<NAMA PROJECT> — SEMUA organisasi, orang, investor, exchange, partner, protokol, developer, produk, DAO,
+badan pemerintah, media, atau lembaga riset yang terhubung ke project ini. Ini adalah PEMETAAN HUBUNGAN,
+bukan analisis sebab-akibat — catat SIAPA terhubung dan BAGAIMANA, bukan kenapa atau dampaknya (itu tugas
+fase Behavioral nanti). Jangan lewatkan entitas yang terlihat kecil/minor.
 
-For EACH entity, repeat this block:
+Untuk SETIAP entitas, ulangi blok ini:
 
-Entity: <name>
+Entity: <nama>
 Type: <Organization|Person|Investor|Foundation|Exchange|Partner|Protocol|Developer|Product|DAO|Government|Media|Research Lab>
-Relationship: <free text, e.g. "led Series A", "core contributor 2021-2023">
-Period: <start-end, or "start-present", or "unknown">
+Relationship: <bentuk hubungannya, contoh: "memimpin ronde Series A", "core contributor 2021-2023">
+Period: <mulai–selesai, atau "mulai–sekarang", atau "tidak diketahui">
 Exposure Type: <financial-collateral|technical-integration|liquidity-dependency|shared-investor-only|narrative-correlated-only|unknown>
-  (financial-collateral = holds/held this project's asset as treasury/collateral; technical-integration =
-  depends on this project's infrastructure to function; liquidity-dependency = primary liquidity venue;
-  shared-investor-only = same investor(s), no operational link; narrative-correlated-only = same sector
-  label only. Use the STRONGEST applicable category, not the most convenient one.)
-Evidence: <source>
+  (financial-collateral = memegang/pernah memegang aset project ini sebagai treasury/jaminan;
+  technical-integration = bergantung pada infrastruktur project ini agar berfungsi (atau sebaliknya);
+  liquidity-dependency = tempat likuiditas utama; shared-investor-only = cuma berbagi investor yang sama,
+  tanpa hubungan operasional; narrative-correlated-only = cuma satu label sektor yang sama. Pilih kategori
+  PALING KUAT yang berlaku, bukan yang paling gampang dipilih.)
+Evidence: <sumber>
 ---
 
 Open Threads
-- <anything uncertain>
+- <hal yang masih belum pasti>
 ```
 
 ### Phase 3 — Historical Intelligence
 ```
-Using the Foundation and Entity Intelligence outputs above as context, build the CHRONOLOGICAL EVENT TIMELINE
-for <PROJECT NAME> — the FACTUAL SPINE every later phase references. Cover full history from founding to
-present; do not omit uncomfortable events (outages, controversies, failed initiatives, governance disputes).
+Menggunakan output Foundation dan Entity Intelligence (Phase 1-2) di atas sebagai konteks, bangun LINI MASA
+KRONOLOGIS untuk <NAMA PROJECT> — ini adalah TULANG PUNGGUNG FAKTUAL yang dirujuk semua fase berikutnya.
+Cakup seluruh sejarah dari pendirian sampai sekarang; JANGAN lewatkan event yang tidak nyaman (gangguan
+layanan, kontroversi, inisiatif yang gagal, sengketa governance).
 
-For EACH major event, in date order, repeat this block:
+Untuk SETIAP event besar, berurutan berdasarkan tanggal, ulangi blok ini:
 
-Date: <YYYY-MM-DD or best available precision>
-Event: <short label>
-Trigger: <the immediate, observable cause — not speculation about motive>
-Context Snapshot (as of this date): Industry state: <...> | Competitor state: <...> | Tech maturity: <...>
-  | Macro conditions: <...> | Hunter/user population (if airdrop-relevant): <...> | VC climate: <...>
+Date: <YYYY-MM-DD atau presisi terbaik yang tersedia>
+Event: <label singkat>
+Trigger: <penyebab langsung yang bisa diobservasi — bukan spekulasi soal motif>
+Context Snapshot (per tanggal ini): Industry state: <...> | Competitor state: <...> | Tech maturity: <...>
+  | Macro conditions: <...> | Hunter/user population (kalau relevan buat airdrop): <...> | VC climate: <...>
   | Narrative: <...>
-  (Skip any sub-field that genuinely doesn't apply, but don't skip the whole Context line — this is what
-  lets later phases avoid matching this event's pattern to an incompatible era.)
-Decision: <what was decided/done>
-Execution: <how it was actually carried out, operationally — distinct from the decision itself>
-Short-term Outcome: <effect within roughly weeks-months>
-Long-term Outcome: <effect over the longer horizon, or "too early to assess">
-Evidence: <source>
+  (Lewati sub-field yang benar-benar tidak relevan, tapi JANGAN lewati baris Context-nya sama sekali — ini
+  yang membuat fase-fase berikutnya tidak salah mencocokkan pola event ini ke era yang tidak sebanding.)
+Decision: <apa yang diputuskan/dilakukan>
+Execution: <bagaimana persisnya dijalankan secara operasional — beda dari keputusannya sendiri>
+Short-term Outcome: <efek dalam rentang minggu-bulan>
+Long-term Outcome: <efek dalam horizon lebih panjang, atau "terlalu dini untuk dinilai">
+Evidence: <sumber>
 ---
 
 Open Threads
-- <anything uncertain>
+- <hal yang masih belum pasti>
 ```
 
 ### Phase 4 — Technology Intelligence
 ```
-Using the prior phases' outputs as context, report the TECHNOLOGY profile of <PROJECT NAME>. Technology ONLY
-— no token/market/financial topics.
+Menggunakan output fase-fase sebelumnya sebagai konteks, laporkan PROFIL TEKNOLOGI <NAMA PROJECT>. Teknologi
+SAJA — jangan bahas token/market/finansial (itu tugas fase lain).
 
-Architecture: <value>
-Consensus Mechanism: <value or "n/a">
-VM / Execution Environment: <value>
-Languages/Frameworks: <value>
-Security Model: <value>
-Audit History: <auditor — date — scope; repeat per audit, or "none disclosed">
-Scalability Approach: <value>
-Known Limits: <value>
-Protocol Evolution: <upgrade name — date — what changed technically; repeat per upgrade>
-Current Roadmap: <value>
-Novelty Assessment: <what's genuinely new vs. adapted from prior art, with basis>
+Architecture: <nilai>
+Consensus Mechanism: <nilai atau "n/a">
+VM / Execution Environment: <nilai>
+Languages/Frameworks: <nilai>
+Security Model: <nilai>
+Audit History: <auditor — tanggal — cakupan; ulangi per audit, atau "tidak diungkap">
+Scalability Approach: <nilai>
+Known Limits: <nilai>
+Protocol Evolution: <nama upgrade — tanggal — apa yang berubah secara teknis; ulangi per upgrade>
+Current Roadmap: <nilai>
+Novelty Assessment: <apa yang benar-benar baru vs. adaptasi dari yang sudah ada, dengan dasarnya>
 
 Open Threads
-- <anything uncertain>
+- <hal yang masih belum pasti>
 ```
 
 ### Phase 5 — Financial Intelligence
 ```
-Using the prior phases' outputs as context, report the FINANCIAL profile of <PROJECT NAME>. Funding/revenue
-economics — not tokenomics (that's Phase 6).
+Menggunakan output fase-fase sebelumnya sebagai konteks, laporkan PROFIL FINANSIAL <NAMA PROJECT>. Ekonomi
+pendanaan/revenue — BUKAN tokenomics (itu tugas Phase 6).
 
-For EACH funding round, repeat this block:
-Funding Round: <type, e.g. Seed/Series A>
-  Date: <value>  Amount: <value + currency>  Lead Investor: <value>
-  Participating Investors: <value>  Valuation: <value or "undisclosed">
+Untuk SETIAP ronde pendanaan, ulangi blok ini:
+Funding Round: <tipe, contoh Seed/Series A>
+  Date: <nilai>  Amount: <nilai + mata uang>  Lead Investor: <nilai>
+  Participating Investors: <nilai>  Valuation: <nilai atau "tidak diungkap">
 ---
 
-Then, once:
-Treasury Size: <value or "undisclosed">
-Treasury Composition: <value>
-Revenue Model: <value>
-Revenue Figures: <value + date, or "undisclosed">
-Burn Rate: <value, or "estimated as X — basis: ...", or "undisclosed">
-Token Sale Structure: <public/private terms and amounts — NOT allocation %, that's Phase 6>
-Runway Estimate: <value + calculation basis, or "not calculable">
+Lalu, sekali saja:
+Treasury Size: <nilai atau "tidak diungkap">
+Treasury Composition: <nilai>
+Revenue Model: <nilai>
+Revenue Figures: <nilai + tanggal, atau "tidak diungkap">
+Burn Rate: <nilai, atau "estimasi X — dasar perhitungan: ...", atau "tidak diungkap">
+Token Sale Structure: <syarat & jumlah public/private — BUKAN persentase alokasi, itu tugas Phase 6>
+Runway Estimate: <nilai + dasar perhitungan, atau "tidak dapat dihitung">
 
 Open Threads
-- <anything uncertain>
+- <hal yang masih belum pasti>
 ```
 
 ### Phase 6 — Token Intelligence
 ```
-Using the prior phases' outputs as context, report the TOKEN/TOKENOMICS profile of <PROJECT NAME>. If
-pre-TGE, mark every field below explicitly as "planned" and flag what's still undecided.
+Menggunakan output fase-fase sebelumnya sebagai konteks, laporkan PROFIL TOKEN/TOKENOMICS <NAMA PROJECT>.
+Kalau masih pre-TGE, tandai SETIAP field di bawah secara eksplisit sebagai "rencana" dan tandai bagian yang
+masih belum diputuskan. INGAT aturan cross-check di ATURAN FORMAT — angka spesifik seperti persentase TGE
+unlock atau status fee-switch WAJIB dicek ke sumber primer sebelum dilaporkan.
 
-Total Supply: <value>
+Total Supply: <nilai>
 Supply Type: <fixed|inflationary>
 Distribution: Community <%>, Team <%>, Investors <%>, Treasury <%>, Ecosystem <%>, Other <label:%>
 Allocation - Team: <cliff, vesting>
 Allocation - Investors: <cliff, vesting>
-Allocation - <any other category>: <cliff, vesting>
-TGE Unlock: <% of total supply + which categories>
-Emission Schedule: <value or "n/a — fixed supply">
-Utility: <bullet-style list>
-Governance Mechanism: <value>
-Inflation/Deflation: <value>
-Burn Mechanism: <value or "none">
-Holder Concentration: <value or "not yet measurable">
-Notable Token Flow: <value or "n/a">
+Allocation - <kategori lain>: <cliff, vesting>
+TGE Unlock: <% dari total supply + kategori mana saja>
+Emission Schedule: <nilai atau "n/a — fixed supply">
+Utility: <daftar bullet>
+Governance Mechanism: <nilai>
+Inflation/Deflation: <nilai>
+Burn Mechanism: <nilai atau "tidak ada">
+Holder Concentration: <nilai atau "belum dapat diukur">
+Notable Token Flow: <nilai atau "n/a">
 Status: <live|planned/pre-TGE>
 
 Open Threads
-- <anything uncertain>
+- <hal yang masih belum pasti>
 ```
 
 ### Phase 7 — Ecosystem Intelligence
 ```
-Using the prior phases' outputs as context, report the ECOSYSTEM/EXTERNAL RELATIONSHIPS of <PROJECT NAME>.
-Distinguish "integration announced" from "integration live and used."
+Menggunakan output Foundation Intelligence (Phase 1) dan indeks entitas dari Phase 2 di atas sebagai
+konteks, bangun PROFIL EKOSISTEM/HUBUNGAN EKSTERNAL <NAMA PROJECT>. Bedakan tegas "integrasi diumumkan" vs
+"integrasi live dan benar-benar dipakai" — ini penekanan paling penting di fase ini.
 
-For EACH integration partner, repeat this block:
-Integration Partner: <name>
-  What it does: <value>   Status: <live|announced-only>
+Kalau project ini terhubung ke banyak chain/dApp (skala besar): JANGAN coba mendaftarkan semuanya satu per
+satu. Batasi blok "Integration Partner" HANYA pada partner yang benar-benar SIGNIFIKAN (chain/dApp dengan
+TVL atau volume tinggi, atau yang sudah muncul di fase-fase sebelumnya) — untuk yang jumlahnya masif dan
+tidak signifikan secara individual, rangkum saja secara agregat di field yang relevan (Developer
+Ecosystem / Applications Built On It).
+
+Untuk SETIAP integration partner (yang signifikan), ulangi blok ini:
+Integration Partner: <nama>
+  What it does: <nilai> (Evidence Level) [sumber]
+  Status: <live|announced-only> (Evidence Level) [sumber]
 ---
 
-Then, once:
-Developer Ecosystem: <value>
-Applications Built On It: <list>
-Wallet Support: <list>
-Exchange Listings: <breadth/tier summary — beyond what Entity Intelligence already captured>
-Oracle Integrations: <list>
-Bridge Integrations: <list>
-Infra/Tooling Providers: <list>
-Community Size/Activity: <Discord/TG/forum numbers + date>
+Lalu, sekali saja (setiap baris tetap wajib punya sitasinya sendiri):
+Developer Ecosystem: <nilai>
+Applications Built On It: <daftar>
+Wallet Support: <daftar>
+Exchange Listings: <ringkasan tier/breadth — di luar yang sudah tercatat di Entity Intelligence>
+Oracle Integrations: <daftar>
+Bridge Integrations: <daftar>
+Infra/Tooling Providers: <daftar>
+Community Size/Activity: <angka Discord/TG/forum + tanggal>
 
 Open Threads
-- <anything uncertain>
+- <hal yang masih belum pasti>
 ```
 
 ### Phase 8 — Market Intelligence
 ```
-Using the prior phases' outputs as context, report the MARKET profile of <PROJECT NAME>. Market only — not
-WHY (that's Behavioral Intelligence, next). If a `examples/Sentiment/<Project>.md` (Grok/X) companion was
-provided as context, cross-check your narrative/community claims against it explicitly.
+Menggunakan output fase-fase sebelumnya sebagai konteks, laporkan PROFIL MARKET <NAMA PROJECT>. Market saja
+— bukan KENAPA (itu tugas Behavioral Intelligence, fase berikutnya). Kalau ada companion
+`examples/Sentiment/<Project>.md` (Grok/X) yang disertakan sebagai konteks, cross-check klaim
+narasi/komunitasmu terhadap itu secara eksplisit.
 
-Narrative(s): <value — note originated vs. followed each>
+Narrative(s): <nilai — catat mana yang diinisiasi project ini vs. cuma mengikuti>
 
-For EACH competitor/era, repeat this block:
-Competitor: <name>   Era: <when they competed>   Positioning vs. them: <value>
+Untuk SETIAP kompetitor/era, ulangi blok ini:
+Competitor: <nama>   Era: <kapan mereka bersaing>   Positioning vs. them: <nilai>
 ---
 
-Then, once:
-Adoption Metrics: <metric: value (date); repeat per metric>
-TVL History: <value: date; repeat key inflection points, or "n/a">
-Volume History: <value: date; repeat key inflection points>
-Market Share: <value or "not calculable">
-Market Cycles Operated Through: <list, with dates and observed effect on this project specifically>
-Current Status: <growing|declining|stagnant|dormant|recovering> — basis: <what observation supports this>
+Lalu, sekali saja:
+Adoption Metrics: <metrik: nilai (tanggal); ulangi per metrik>
+TVL History: <nilai: tanggal; ulangi titik infleksi penting, atau "n/a">
+Volume History: <nilai: tanggal; ulangi titik infleksi penting>
+Market Share: <nilai atau "tidak dapat dihitung">
+Market Cycles Operated Through: <daftar, dengan tanggal dan efek yang teramati spesifik ke project ini>
+Current Status: <growing|declining|stagnant|dormant|recovering> — basis: <observasi apa yang mendasari ini>
 
 Open Threads
-- <anything uncertain, including any gap vs. the Sentiment companion if one was provided>
+- <hal yang masih belum pasti, termasuk gap terhadap companion Sentiment kalau ada>
 ```
 
 ### Phase 9 — Behavioral Intelligence
 ```
-Using ALL prior phases' outputs as context — especially Historical, Financial, and Token Intelligence — this
-phase is CIF's actual causal layer. Ground every answer in a statement, interview, governance post, or
-strongly-evidenced inference, labeled as such; write "unknown" rather than speculate.
+Menggunakan SELURUH output fase sebelumnya sebagai konteks — TERUTAMA Historical, Financial, dan Token
+Intelligence — fase ini adalah LAPISAN KAUSAL sesungguhnya dari kerangka kerja ini. Landaskan SETIAP jawaban
+pada pernyataan publik, wawancara, pos governance, atau inferensi yang berdasar-kuat (label mana yang
+dipakai); tulis "tidak diketahui" daripada berspekulasi tanpa dasar.
 
-For EACH major decision event from Historical Intelligence, repeat this block:
+Untuk SETIAP decision event besar dari Historical Intelligence, ulangi blok ini:
 
-Decision Event: <name/date, matching Historical Intelligence exactly>
-  Motivation: <why this decision was made, or "unknown">
-  Constraint: <what limited the options — runway, tech debt, regulatory exposure, team size — or "unknown">
-  Pressure: <external force acting on it — VC expectations, competitive threat, community demand — or "unknown">
-  Trade-off: <what was given up by choosing this path, or "unknown">
-  Alternative(s) Considered: <what else was plausibly available and why not chosen, or "unknown">
-  Expectation vs. Actual: <what the team expected to happen vs. what did, or "unknown">
+Decision Event: <nama/tanggal, SAMA PERSIS dengan Historical Intelligence — salin persis, jangan parafrase>
+  Motivation: <kenapa keputusan ini diambil, atau "tidak diketahui">
+  Constraint: <apa yang membatasi opsi — runway, utang teknis, eksposur regulasi, ukuran tim — atau
+    "tidak diketahui">
+  Pressure: <kekuatan eksternal yang bekerja — ekspektasi VC, ancaman kompetitif, tuntutan komunitas —
+    atau "tidak diketahui">
+  Trade-off: <apa yang dikorbankan dengan memilih jalur ini, atau "tidak diketahui">
+  Alternative(s) Considered: <apa lagi yang mungkin tersedia dan kenapa tidak dipilih, atau "tidak
+    diketahui">
+  Expectation vs. Actual: <apa yang tim harapkan terjadi vs. apa yang benar-benar terjadi, atau "tidak
+    diketahui">
   Stakeholder Reactions:
-    Founder: <reaction/impact or "no notable reaction">
+    Founder: <reaksi/dampak atau "tidak ada reaksi signifikan">
     VC: <...>
     Retail: <...>
     Community: <...>
@@ -408,21 +438,21 @@ Decision Event: <name/date, matching Historical Intelligence exactly>
     Institution: <...>
     Validator: <...>
     Builder: <...>
-  Grounding: <statement | interview | governance post | strongly-evidenced inference — label which>
+  Grounding: <statement | interview | governance post | inferensi berdasar-kuat — label yang mana>
 ---
 
 Open Threads
-- <anything uncertain>
+- <hal yang masih belum pasti>
 ```
 
 ### Phase 10 — Knowledge Extraction
 ```
-Using ALL prior phases' outputs as context, extract MACHINE-READABLE knowledge from everything gathered on
-<PROJECT NAME>. Do not invent a pattern from a single ungrounded guess — every candidate must trace to a
-concrete, already-reported event or fact.
+Menggunakan SELURUH output fase sebelumnya sebagai konteks, ekstrak PENGETAHUAN YANG DAPAT DIBACA MESIN dari
+semua yang sudah dikumpulkan soal <NAMA PROJECT>. JANGAN menciptakan pattern dari satu tebakan tanpa dasar —
+setiap kandidat pattern WAJIB bisa dilacak ke event/fakta konkret yang sudah dilaporkan.
 
-POV Success-Matrix (project-level verdict, not per-event):
-  Founder: <success|failure|mixed — reason — Evidence Level>
+POV Success-Matrix (vonis di TINGKAT PROYEK, bukan per-event):
+  Founder: <success|failure|mixed — alasan — Evidence Level>
   VC: <...>
   Retail: <...>
   Community: <...>
@@ -432,44 +462,49 @@ POV Success-Matrix (project-level verdict, not per-event):
   Builder: <...>
 
 Lessons Learned:
-  Biggest mistake: <what — to avoid — cite the specific event>
-  Biggest win: <what — to imitate — cite the specific event>
+  Biggest mistake: <apa — untuk dihindari — kutip event spesifik>
+  Biggest win: <apa — untuk ditiru — kutip event spesifik>
 
-Entity/Relationship Addendum: <anything missed in Entity Intelligence, or "none">
+Entity/Relationship Addendum: <apa saja yang terlewat di Entity Intelligence, atau "tidak ada">
 
-For EACH pattern candidate, repeat this block:
-Pattern Candidate: <name>
-  Shape: <description of the repeatable decision-shape>
-  Drawn From: <specific event(s)/fact(s) cited, by name/date>
-  Applies When: <conditions under which this would transfer to another project — not just the mechanic>
+Untuk SETIAP kandidat pattern, ulangi blok ini. Ingat: pattern yang berguna adalah SHAPE keputusan yang bisa
+berulang di project lain yang TIDAK terkait (lihat docs/Ontology/DecisionEvent.md) — field "Applies When"
+harus menjelaskan KONDISI STRUKTURAL yang membuat pattern ini relevan di project lain, bukan sekadar
+mengulang mekanisme spesifik project ini:
+Pattern Candidate: <nama>
+  Shape: <deskripsi shape keputusan yang bisa berulang>
+  Drawn From: <event/fakta spesifik yang dikutip, dengan nama/tanggal>
+  Applies When: <kondisi struktural yang membuat ini transfer ke project lain — bukan cuma mekanik>
 ---
 
 Open Threads
-- <anything uncertain>
+- <hal yang masih belum pasti>
 ```
 
 ### Phase 11 — Conflict Resolution
 ```
-This is a MERGE-ONLY pass. Do not research anything new. Re-read all prior phase outputs for <PROJECT NAME>
-provided as context — including a `examples/Sentiment/<Project>.md` companion if one was provided — and
-identify every place where:
-- Two phases (or two sources within one phase) report different figures for the same fact
-- A claim in one phase is contradicted, complicated, or cast in doubt by something in another phase
-- Gemini's research narrative disagrees with the Grok/Sentiment companion's live read (if provided) —
-  e.g. Gemini's sources describe positive community sentiment based on older material, but the Sentiment
-  companion's live X scan shows it has since soured, or vice versa
-- An "Open Thread" from an earlier phase was never actually resolved by a later one
+Ini adalah pass MERGE-ONLY. JANGAN meriset apapun yang baru. Baca ulang SELURUH output fase sebelumnya untuk
+<NAMA PROJECT> yang disertakan sebagai konteks — termasuk companion `examples/Sentiment/<Project>.md` kalau
+ada — dan identifikasi SETIAP tempat di mana:
+- Dua fase (atau dua sumber di dalam satu fase) melaporkan angka berbeda untuk fakta yang sama
+- Sebuah klaim di satu fase dikontradiksi, dipersulit, atau diragukan oleh sesuatu di fase lain
+- Narasi riset utama berbeda dari pembacaan live companion Sentiment/Grok (kalau ada) — misal sumber riset
+  menggambarkan sentimen komunitas positif berdasarkan materi lama, tapi scan live X di companion Sentiment
+  menunjukkan sentimen sudah memburuk, atau sebaliknya
+- Sebuah "Open Thread" dari fase awal tidak pernah benar-benar diselesaikan oleh fase berikutnya
 
-For EACH conflict found, repeat this block:
-INKONSISTENSI: <what conflicts>
-  Source A: <value/claim>   Source B: <value/claim>
-  Evidence Level: <LOW, or MEDIUM if one source is clearly more authoritative — say why>
+Untuk SETIAP konflik yang ditemukan, ulangi blok ini:
+INKONSISTENSI: <apa yang berkonflik>
+  Source A: <fase + nilai/klaim>
+  Source B: <fase + nilai/klaim>
+  Evidence Level: <LOW, atau MEDIUM kalau salah satu sumber jelas lebih otoritatif — jelaskan kenapa>
 ---
 
-If no conflicts are found, write "No conflicts found." explicitly rather than omitting this phase's output.
+Kalau BENAR-BENAR tidak ada konflik ditemukan sama sekali, tulis eksplisit "No conflicts found." — jangan
+dikosongkan begitu saja.
 
 Open Threads
-- <only if something remains genuinely unresolved even after this pass>
+- <hanya kalau ada yang BENAR-BENAR masih belum terselesaikan bahkan setelah pass ini>
 ```
 
 ---
@@ -482,124 +517,132 @@ Evidence Level, Current Status) all still apply — condensing means merging pha
 
 ### Phase 1 — Foundation & Entity Intelligence
 ```
-You are a crypto research investigator building a factual foundation dossier on <PROJECT NAME>, a young/small
-project. FACTS ONLY.
+Kamu adalah investigator riset crypto yang sedang membangun dossier fondasi faktual untuk <NAMA PROJECT>,
+sebuah project muda/kecil. HANYA FAKTA.
 
-Part A — Foundation (fill this template):
-PROJECT: <Name>
-Official Name / Symbol / Category / Founding Entity / Founders / Core Team / Country: <each>
-Launch Date - Testnet / Mainnet / TGE: <each, or "n/a"/"pre-TGE">
-Main Products / Website / Repository / Documentation / Socials / Explorer: <each>
-Token Contract / Chain(s) / Ecosystem: <each>
+Part A — Foundation (isi template ini):
+PROJECT: <Nama>
+Official Name / Symbol / Category / Founding Entity / Founders / Core Team / Country: <masing-masing>
+Launch Date - Testnet / Mainnet / TGE: <masing-masing, atau "n/a"/"pre-TGE">
+Main Products / Website / Repository / Documentation / Socials / Explorer: <masing-masing>
+Token Contract / Chain(s) / Ecosystem: <masing-masing>
 
-Part B — Entity graph (repeat per entity):
-Entity: <name>   Type: <...>   Relationship: <...>   Period: <...>
+Part B — Entity graph (ulangi per entitas):
+Entity: <nama>   Type: <...>   Relationship: <...>   Period: <...>
 Exposure Type: <financial-collateral|technical-integration|liquidity-dependency|shared-investor-only|narrative-correlated-only|unknown>
-Evidence: <source>
+Evidence: <sumber>
 ---
 
-A young project's entity list is naturally short — report exactly what exists, don't pad it.
+Daftar entitas project muda wajar kalau pendek — laporkan persis apa yang ada, jangan dipaksa panjang.
 
 Open Threads
-- <anything uncertain>
+- <hal yang masih belum pasti>
 ```
 
 ### Phase 2 — Historical Intelligence
 ```
-Using the Foundation & Entity output above as context, build the CHRONOLOGICAL EVENT TIMELINE for
-<PROJECT NAME>. A young project may have few events — report them completely, don't manufacture filler ones.
+Menggunakan output Foundation & Entity (Phase 1) di atas sebagai konteks, bangun LINI MASA KRONOLOGIS untuk
+<NAMA PROJECT>. Project muda wajar kalau event-nya sedikit — laporkan yang ada secara lengkap, jangan
+mengarang event pengisi.
 
-For EACH event, repeat:
+Untuk SETIAP event, ulangi:
 Date: <...>   Event: <...>   Trigger: <...>
-Context Snapshot (as of this date): Industry/Competitor/Tech maturity/Macro/Hunter-population/VC climate/
-  Narrative — <fill what applies>
+Context Snapshot (per tanggal ini): Industry/Competitor/Tech maturity/Macro/Hunter-population/VC climate/
+  Narrative — <isi yang relevan>
 Decision: <...>   Execution: <...>
-Short-term Outcome: <...>   Long-term Outcome: <... or "too early to assess">
-Evidence: <source>
+Short-term Outcome: <...>   Long-term Outcome: <... atau "terlalu dini untuk dinilai">
+Evidence: <sumber>
 ---
 
 Open Threads
-- <anything uncertain>
+- <hal yang masih belum pasti>
 ```
 
 ### Phase 3 — Technology Intelligence
 ```
-Using the prior phases' outputs as context, report the TECHNOLOGY profile of <PROJECT NAME>: Architecture,
-Consensus (if applicable), VM/Execution Environment, Languages/Frameworks, Security Model, Audit Status,
-Scalability Approach, Roadmap. Technology only. Be explicit about what's live vs. only planned/announced.
+Menggunakan output fase-fase sebelumnya sebagai konteks, laporkan PROFIL TEKNOLOGI <NAMA PROJECT>:
+Architecture, Consensus (kalau relevan), VM/Execution Environment, Languages/Frameworks, Security Model,
+Audit Status, Scalability Approach, Roadmap. Teknologi saja. Tegaskan mana yang sudah live vs. baru
+rencana/diumumkan.
 
 Open Threads
-- <anything uncertain>
+- <hal yang masih belum pasti>
 ```
 
 ### Phase 4 — Financial & Token Intelligence
 ```
-Using the prior phases' outputs as context, report BOTH financial and token profile of <PROJECT NAME> —
-merged since a young project's funding and token design are usually thin enough to cover together.
+Menggunakan output fase-fase sebelumnya sebagai konteks, laporkan profil FINANSIAL DAN TOKEN <NAMA PROJECT>
+sekaligus — digabung karena pendanaan dan desain token project muda biasanya cukup tipis untuk dicakup
+bersama.
 
-Financial: Funding Round(s) (type/date/amount/investors/valuation, repeat per round), Treasury, Revenue Model,
-Token Sale Structure.
+Financial: Funding Round(s) (tipe/tanggal/jumlah/investor/valuasi, ulangi per ronde), Treasury, Revenue
+Model, Token Sale Structure.
 
-Token: Total Supply, Distribution %, Allocation cliffs/vesting per category, TGE Unlock %, Emission, Utility,
-Governance Mechanism, Status (live|planned).
+Token: Total Supply, Distribution %, Allocation cliffs/vesting per kategori, TGE Unlock %, Emission,
+Utility, Governance Mechanism, Status (live|planned).
 
-If pre-TGE, mark every field "planned" explicitly and flag what's undecided.
+Kalau masih pre-TGE, tandai setiap field "rencana" secara eksplisit dan tandai bagian yang belum diputuskan.
+INGAT aturan cross-check di ATURAN FORMAT untuk angka tokenomics.
 
 Open Threads
-- <anything uncertain>
+- <hal yang masih belum pasti>
 ```
 
 ### Phase 5 — Ecosystem & Market Intelligence
 ```
-Using the prior phases' outputs as context, report BOTH ecosystem and market profile of <PROJECT NAME>.
+Menggunakan output fase-fase sebelumnya sebagai konteks, laporkan profil EKOSISTEM DAN MARKET <NAMA
+PROJECT> sekaligus.
 
-Ecosystem: Integration Partner (name, what it does, live|announced-only — repeat per partner), Developer
+Ecosystem: Integration Partner (nama, fungsinya, live|announced-only — ulangi per partner), Developer
 Ecosystem, Wallet Support, Exchange Listings, Community Size/Activity.
 
-Market: Narrative(s) (originated vs. followed), Competitors (repeat per competitor/era), Adoption Metrics
-(with dates), TVL/Volume if applicable, Current Status (growing|declining|stagnant|dormant|recovering + basis).
+Market: Narrative(s) (diinisiasi vs. cuma mengikuti), Competitors (ulangi per kompetitor/era), Adoption
+Metrics (dengan tanggal), TVL/Volume kalau relevan, Current Status (growing|declining|stagnant|dormant|
+recovering + basis).
 
-If a `examples/Sentiment/<Project>.md` companion exists, cross-check community claims against it.
+Kalau ada companion `examples/Sentiment/<Project>.md`, cross-check klaim komunitas terhadap itu.
 
 Open Threads
-- <anything uncertain, including any gap vs. the Sentiment companion>
+- <hal yang masih belum pasti, termasuk gap terhadap companion Sentiment>
 ```
 
 ### Phase 6 — Behavioral Intelligence
 ```
-Using ALL prior phases' outputs as context — do not compress this phase even though the project is young.
+Menggunakan SELURUH output fase sebelumnya sebagai konteks — JANGAN dipersempit fase ini meski project-nya
+masih muda, ini tetap lapisan kausal utamanya.
 
-For EACH decision event from Historical Intelligence, repeat:
-Decision Event: <name/date>
-  Motivation / Constraint / Pressure / Trade-off / Alternative(s) Considered / Expectation vs. Actual: <each,
-  or "unknown">
-  Stakeholder Reactions: Founder/VC/Retail/Community/Developer/Institution/Validator/Builder — <each, or
-  "no notable reaction">
-  Grounding: <statement|interview|governance post|strongly-evidenced inference — label which>
+Untuk SETIAP decision event dari Historical Intelligence, ulangi:
+Decision Event: <nama/tanggal>
+  Motivation / Constraint / Pressure / Trade-off / Alternative(s) Considered / Expectation vs. Actual:
+  <masing-masing, atau "tidak diketahui">
+  Stakeholder Reactions: Founder/VC/Retail/Community/Developer/Institution/Validator/Builder —
+  <masing-masing, atau "tidak ada reaksi signifikan">
+  Grounding: <statement|interview|governance post|inferensi berdasar-kuat — label yang mana>
 ---
 
 Open Threads
-- <anything uncertain>
+- <hal yang masih belum pasti>
 ```
 
 ### Phase 7 — Knowledge & Conflict Synthesis
 ```
-Merges Knowledge Extraction and Conflict Resolution into one closing pass.
+Menggabungkan Knowledge Extraction dan Conflict Resolution jadi satu pass penutup.
 
 Part A — Knowledge Extraction:
-POV Success-Matrix: Founder/VC/Retail/Community/Developer/Institution/Validator/Builder — <verdict + reason +
-  Evidence Level, each>
-Lessons Learned: Biggest mistake (to avoid) / Biggest win (to imitate) — cite the specific event(s).
-Pattern Candidate (repeat per candidate): Name / Shape / Drawn From / Applies When.
+POV Success-Matrix: Founder/VC/Retail/Community/Developer/Institution/Validator/Builder — <vonis + alasan +
+  Evidence Level, masing-masing>
+Lessons Learned: Biggest mistake (untuk dihindari) / Biggest win (untuk ditiru) — kutip event spesifiknya.
+Pattern Candidate (ulangi per kandidat): Name / Shape / Drawn From / Applies When.
 
-Part B — Conflict Resolution (merge-only, no new research; include the Sentiment companion if one was
-provided): repeat per conflict —
-INKONSISTENSI: <what conflicts>   Source A: <...>   Source B: <...>   Evidence Level: <LOW|MEDIUM + why>
+Part B — Conflict Resolution (merge-only, JANGAN meriset baru; sertakan companion Sentiment kalau ada):
+ulangi per konflik —
+INKONSISTENSI: <apa yang berkonflik>   Source A: <...>   Source B: <...>   Evidence Level: <LOW|MEDIUM +
+  kenapa>
 ---
-If no conflicts found, write "No conflicts found." explicitly.
+Kalau tidak ada konflik ditemukan, tulis eksplisit "No conflicts found."
 
 Open Threads
-- <only if something remains genuinely unresolved>
+- <hanya kalau ada yang benar-benar masih belum terselesaikan>
 ```
 
 ## Related Files
