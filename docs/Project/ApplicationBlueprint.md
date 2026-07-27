@@ -185,7 +185,7 @@ anyway, so retiring the old path and standing up the new one happen together.
 |-------|-------|------------|--------|
 | **0** | Knowledge pipeline: ontology, `run.sh` ingest, `poc/cif.json` export, `tools/backtest.py` | — | ✅ done |
 | **1** | Application UI: browsable Opportunity Ranking + search-first Analyze (§4) + trust UI (§3: citation panel, evidence badges, base-case/signal-to-watch report format) | Phase 0 | ✅ shipped to AirdropOS production, on mock data (§5) |
-| **2** | Supabase sync script: push `cif.json` → Supabase tables on each `run.sh build`; swap AirdropOS's `cifMock.js` for real reads; retire the orphaned `deep-research`/`research-project` edge functions + `research_reports` table (§5) as part of the same cutover | Phase 0 | not started |
+| **2** | Supabase sync script (`tools/sync_supabase.py`, opt-in `./run.sh sync`, not automatic on every build — see §10.2); swap AirdropOS's `cifMock.js` for real reads; retire the orphaned `deep-research`/`research-project` edge functions + `research_reports` table (§5) as part of the same cutover | Phase 0 | sync script + `cif_projects`/`cif_patterns`/`cif_backtests` tables done; frontend swap (10.3) not started |
 | **3** | AirdropOS integration: point its queries at the synced Supabase tables, replacing mocked intelligence data | Phase 2 | not started |
 | **4** | Public Prediction Track Record page live (can ship independently once Phase 1's backtest UI exists) | Phase 1 | not started |
 
@@ -286,7 +286,7 @@ Search-first over the maintainer-curated catalog (§4) — not a live classifica
 sit next to a report as an optional explainer ("Ask AI about this report"), never as the analysis engine
 itself.
 
-## 10. Phase 2 scope — Supabase sync (scoped 2026-07-24, not yet built)
+## 10. Phase 2 scope — Supabase sync (scoped 2026-07-24; tables + sync script built 2026-07-26)
 
 Scoped against the live `airdropos-pro` Supabase project (`szumyjuvfjkobvcqswwd`). Key finding: **every
 existing AirdropOS table is per-user, RLS-scoped to `auth.uid()`** (`research_reports`, `projects`, `accounts`,
@@ -295,31 +295,52 @@ catalog every user reads**, not something any user owns. This is the central des
 right — CIF's tables need **read-for-everyone, write-only-via-sync** RLS, not the per-user pattern the rest of
 the schema uses.
 
-### 10.1 New tables (CIF-owned, additive — nothing existing is altered)
+**2026-07-26 update:** the three tables below turned out to **already exist** on the live project (created by
+an earlier pass this document didn't have a record of) with an initial sync already in them. §10.1's field
+list below has been corrected to match the actual live schema (confirmed via direct inspection, not
+re-guessed) — a few names differ from this section's original draft (`prediction`/`validation` spelled out in
+full, not abbreviated `pred`/`val`; `cif_backtests` carries `given`/`expect`/`fired`/`missed` arrays mirroring
+`tools/backtest.py`'s own result shape, not the originally-guessed `as_of_note`/`event_date`). `airdrop_portfolio`
+also already has a `cif_project_id` foreign key into `cif_projects.id`, wiring up §2b's Portfolio-linked-to-CIF
+concept at the schema level already. `tools/sync_supabase.py` now exists (§10.2) and its output was verified
+field-for-field against the live LayerZero row before being considered correct — including one real mismatch
+caught and fixed: `category` is a `text[]` split into meaningful parts
+(`"Interoperability / Omnichain Messaging (Bridge, GMP, DVN security)"` → 5 array elements), not one blob string.
 
-- **`cif_projects`** — one row per project. `id` (text, the CIF slug), `name`, `category` (text[]),
-  `pattern_confidence` (int), `trajectory_probability` (int), `is_todays_pick` (bool), `observable` (jsonb —
-  the verified-now metric tiles), `current_read` (text), `signal` (jsonb, nullable), `evidence` (jsonb — the
-  cited pattern cards), `comparables` (jsonb), `tier` (deep/summary, mirrors CIF's own tiering),
-  `source_file` (text — the CIF dossier path, for traceability), `synced_at`.
+### 10.1 Tables (CIF-owned, additive — nothing existing altered; already live)
+
+- **`cif_projects`** — one row per project. `id` (text, the CIF slug e.g. `layerzero`), `name`, `category`
+  (text[] — split on `/` and the trailing parenthetical, not one string), `tier` (deep/summary), `era`,
+  `tags` (text[]), `is_todays_pick` (bool), `pattern_confidence` (int, nullable), `trajectory_probability`
+  (int, nullable), `observable` (jsonb, the verified-now metric tiles), `current_read` (text, nullable),
+  `signal` (jsonb, nullable), `evidence` (jsonb, the cited pattern cards), `comparables` (jsonb),
+  `source_file` (text — the CIF dossier path, for traceability), `synced_at`. **Only the deterministic
+  roster fields are populated by the sync script today** (id/name/category/tier/era/tags/source_file) —
+  `pattern_confidence` through `comparables` need the not-yet-built per-project synthesis step (§8) and are
+  left null/empty rather than guessed; do not backfill them with placeholder values.
 - **`cif_patterns`** — standalone, mirrors `examples/PatternRegistry.md` 1:1 (`id` "P1".."P6", `name`,
-  `confidence`, `instances`, `scope`, `analogs` text[], `source`, `watch` text[], `pred`, `val`, `synced_at`).
-  Kept separate from `cif_projects.evidence` (rather than only embedded there) so the standalone Patterns
-  Library page can query it directly.
-- **`cif_backtests`** — mirrors `poc/benchmarks.json`, feeds the Phase 4 public Track Record page: `title`,
-  `type` (validation/consistency/control), `category`, `outcome`, `source`, `verdict`, `recall`, `as_of_note`,
-  `event_date`, `synced_at`.
+  `confidence`, `instances`, `scope`, `analogs` text[], `triggers` text[], `source`, `prediction`,
+  `validation`, `watch` text[], `synced_at`). Kept separate from `cif_projects.evidence` (rather than only
+  embedded there) so a standalone Patterns Library page can query it directly.
+- **`cif_backtests`** — mirrors `poc/benchmarks.json` (`tools/backtest.py`'s own scorecard shape) 1:1, feeds
+  the Phase 4 public Track Record page: `id` (derived `backtest-01` etc.), `title`, `type`
+  (validation/consistency/control), `category`, `given`/`expect`/`fired`/`missed` (text[]), `outcome`,
+  `source`, `verdict`, `recall` (numeric), `file`, `synced_at`.
 
-RLS on all three: enabled, with a `SELECT` policy for `authenticated` (open question below: also `anon`, for a
-truly public Track Record page). **No `INSERT`/`UPDATE`/`DELETE` policy for any client role** — writes happen
-only via the sync script using the Supabase **service_role** key, which bypasses RLS.
+RLS on all three: enabled, with a `SELECT` policy (confirmed live). **No `INSERT`/`UPDATE`/`DELETE` policy for
+any client role** — writes happen only via the sync script using the Supabase **service_role** key, which
+bypasses RLS. Whether the `SELECT` policy also covers `anon` (needed for a truly public Track Record page,
+not just `authenticated`) is still open — see §10.4.
 
-### 10.2 Sync mechanism
-New script `tools/sync_supabase.py` in **this** repo (not AirdropOS) — reads `poc/cif.json`, upserts into the
-three tables above. `SUPABASE_URL`/`SUPABASE_SERVICE_ROLE_KEY` stay as local env vars, never committed, same
+### 10.2 Sync mechanism (built)
+`tools/sync_supabase.py`, in **this** repo (not AirdropOS) — reads `poc/{projects,patterns,benchmarks}.json`,
+upserts into the three tables above via Supabase's REST API directly (stdlib only, no
+`requests`/`supabase-py` dependency, matching this repo's minimal-dependency convention —
+`requirements.txt`). `SUPABASE_URL`/`SUPABASE_SERVICE_ROLE_KEY` stay as local env vars, never committed, same
 treatment as the research prompts (see `Deep-Research-Brief.md`). Wired into `run.sh` as an explicit opt-in
-step (`./run.sh sync`), not automatic on every build — pushing to a live production database shouldn't be a
-silent side-effect of a routine local build.
+step (`./run.sh sync`), not automatic on every build/`all` — pushing to a live production database shouldn't
+be a silent side-effect of a routine local build. `--dry-run` prints the rows without any network call or
+env vars, for previewing. See `tools/README.md` for usage.
 
 ### 10.3 Frontend swap (AirdropOS)
 Replace `frontend/src/lib/cifMock.js` reads in `Intelligence.jsx`/`IntelligenceDetail.jsx` with real

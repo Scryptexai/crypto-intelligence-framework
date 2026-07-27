@@ -4,6 +4,9 @@
 #   ./run.sh          ingest new reports (anti-duplicate) -> build JSON -> backtest
 #   ./run.sh build    only rebuild JSON + backtest (no ingest)
 #   ./run.sh ingest   only ingest (no build)
+#   ./run.sh sync     push poc/{projects,patterns,benchmarks}.json to Supabase (tools/sync_supabase.py)
+#                     -- explicit opt-in only, never runs as part of `all`/`build`; requires
+#                     SUPABASE_URL + SUPABASE_SERVICE_ROLE_KEY env vars (see that file's docstring)
 #
 # Drop raw reports first:
 #   doc_backup/inbox/deep/       <Project>_<YYYY-MM>_gemini.docx   -> examples/CaseStudies/
@@ -24,12 +27,12 @@ set -uo pipefail
 cd "$(dirname "$0")"
 PY="${PYTHON:-python3}"
 cmd="${1:-all}"
-ingest_status=0
+exit_status=0
 
 run_ingest() {
   "$PY" tools/ingest.py --no-build
-  ingest_status=$?
-  if [ "$ingest_status" -ne 0 ]; then
+  exit_status=$?
+  if [ "$exit_status" -ne 0 ]; then
     echo "⚠ ingest reported one or more data_project verification failures (see log above) —" \
          "continuing with whatever ingested successfully; ./run.sh will exit non-zero at the end."
   fi
@@ -43,14 +46,18 @@ case "$cmd" in
     "$PY" tools/build_json.py
     "$PY" tools/backtest.py || true
     ;;
+  sync)
+    "$PY" tools/sync_supabase.py
+    exit_status=$?
+    ;;
   all)
     run_ingest                           # anti-duplicate ingest of all inbox folders + data_project/
     "$PY" tools/build_json.py            # export projects/patterns/sentiment + bundled cif.json
     "$PY" tools/backtest.py || true      # scorecard (non-zero exit on real failure; run continues)
     ;;
   *)
-    echo "usage: ./run.sh [all|ingest|build]"; exit 2
+    echo "usage: ./run.sh [all|ingest|build|sync]"; exit 2
     ;;
 esac
 echo "✓ done — outputs in poc/ (cif.json, data.js, *.json)"
-exit "$ingest_status"
+exit "$exit_status"

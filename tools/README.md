@@ -107,3 +107,22 @@ and only `run.sh`'s own final exit code carries the failure signal (don't let a 
 still works unchanged for LayerZero's own folder (`doc_backup/inbox/phased/LayerZero/`, which happens
 to already satisfy the `data_project` filename contract too — verified by running it through
 `process_data_project()` directly). New projects should use `data_project/<project>/`.
+
+## `sync_supabase.py` — push `poc/*.json` to CIF's Supabase tables
+
+```
+export SUPABASE_URL="https://<ref>.supabase.co"
+export SUPABASE_SERVICE_ROLE_KEY="..."
+python tools/sync_supabase.py               # or: ./run.sh sync
+python tools/sync_supabase.py --dry-run     # preview rows, no network call, no env vars needed
+```
+
+Deterministic upsert into `cif_projects`/`cif_patterns`/`cif_backtests` (schema:
+`docs/Project/ApplicationBlueprint.md` §10.1) via Supabase's REST API directly — stdlib only, no
+`requests`/`supabase-py` dependency. **These tables already exist on the live `airdropos-pro`
+project** (verified 2026-07-26) with data matching this script's row shapes field-for-field,
+including the `category` column's split-into-array convention (`split_category()` — confirmed
+against the live LayerZero row, not guessed). Never run as part of `all`/`build` — explicit opt-in
+only, since it writes to a shared production database. `pattern_confidence`/`trajectory_probability`/
+`observable`/`current_read`/`signal`/`evidence`/`comparables` are intentionally left null/empty — that
+per-project synthesis step (11-phase dossier → UI-ready Current Read/Signal) doesn't exist yet.
