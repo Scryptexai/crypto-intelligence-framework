@@ -117,12 +117,34 @@ python tools/sync_supabase.py               # or: ./run.sh sync
 python tools/sync_supabase.py --dry-run     # preview rows, no network call, no env vars needed
 ```
 
-Deterministic upsert into `cif_projects`/`cif_patterns`/`cif_backtests` (schema:
+Deterministic upsert into `cif_projects`/`cif_patterns`/`cif_backtests`/`cif_decision_events` (schema:
 `docs/Project/ApplicationBlueprint.md` §10.1) via Supabase's REST API directly — stdlib only, no
 `requests`/`supabase-py` dependency. **These tables already exist on the live `airdropos-pro`
 project** (verified 2026-07-26) with data matching this script's row shapes field-for-field,
 including the `category` column's split-into-array convention (`split_category()` — confirmed
 against the live LayerZero row, not guessed). Never run as part of `all`/`build` — explicit opt-in
-only, since it writes to a shared production database. `pattern_confidence`/`trajectory_probability`/
-`observable`/`current_read`/`signal`/`evidence`/`comparables` are intentionally left null/empty — that
-per-project synthesis step (11-phase dossier → UI-ready Current Read/Signal) doesn't exist yet.
+only, since it writes to a shared production database.
+
+**Correction (2026-07-27):** an earlier version of this note claimed `pattern_confidence`/
+`trajectory_probability`/`observable`/`current_read`/`signal`/`evidence`/`comparables` were
+"intentionally left null/empty" — that was wrong, based on an incomplete column check. They are
+populated for LayerZero (seeded by the AirdropOS frontend rebuild). `evidence` now also carries
+P7–P16 (LayerZero's own promoted Phase 10 pattern candidates, see `examples/PatternRegistry.md`),
+synced via direct SQL upsert rather than this script in that instance — this script's
+`pattern_rows()`/`project_rows()` still describe the intended row shape for future syncs.
+
+## `extract_decision_events.py` — Behavioral Intelligence phase → structured Decision Events
+
+```
+python tools/extract_decision_events.py examples/CaseStudies/LayerZero.md   # or: ./run.sh build
+```
+
+Decision Event is this framework's actual unit of analysis (`CLAUDE.md`), but until 2026-07-27 it
+only existed as prose — nothing parsed it into structured data. Deterministic regex extraction
+(no LLM) of every `Decision Event: <date> — <title>` block in a dossier's Behavioral Intelligence
+phase (plus any addenda logged later under Open Questions, prefixed `- [behavioral]` — see
+LayerZero.md's Open Questions section for why that addendum exists) into
+`{date, title, motivation, constraint, pressure, tradeoff, alternatives, expectation_vs_actual,
+reactions: {8 POV}, grounding, open_threads}`. Wired into `run.sh build`/`all` — runs over every
+file in `examples/CaseStudies/` automatically (dossiers without a Behavioral Intelligence phase
+just parse to 0 events). Output: `poc/decision_events.json`, keyed by project name.

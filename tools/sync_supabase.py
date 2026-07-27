@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-sync_supabase.py — push poc/{projects,patterns,benchmarks}.json to the CIF-owned Supabase tables
-(cif_projects, cif_patterns, cif_backtests) described in
+sync_supabase.py — push poc/{projects,patterns,benchmarks,decision_events}.json to the CIF-owned
+Supabase tables (cif_projects, cif_patterns, cif_backtests, cif_decision_events) described in
 crypto-intelligence-framework's docs/Project/ApplicationBlueprint.md §10.1.
 
 Deterministic upsert, no LLM, stdlib only (no `requests`/`supabase-py` dependency — matches the
@@ -18,22 +18,25 @@ see docs/Protocol/Deep-Research-Brief.md's policy note):
 Usage:
     export SUPABASE_URL="https://<ref>.supabase.co"
     export SUPABASE_SERVICE_ROLE_KEY="..."
-    python3 tools/sync_supabase.py             # upsert all three tables
+    python3 tools/sync_supabase.py             # upsert all four tables
     python3 tools/sync_supabase.py --dry-run   # print the rows that would be sent, no network call
     python3 tools/sync_supabase.py --only cif_projects,cif_patterns
 
-Known limitation (by design, not a bug): pattern_confidence, trajectory_probability, observable,
-current_read, signal, evidence, comparables in cif_projects are left null/empty. Those need a
-per-project synthesis step (turning an 11-phase dossier into a UI-ready Current Read/Signal) that
-does not exist yet — ApplicationBlueprint.md §8 lists this as an open question. Do not fabricate
-placeholder values for them here; a null field is honest, a guessed one is not.
+Note (corrected 2026-07-27): an earlier version of this docstring claimed pattern_confidence,
+trajectory_probability, observable, current_read, signal, evidence, comparables in cif_projects
+were "intentionally left null/empty" pending a synthesis step that didn't exist. That was wrong —
+those fields are populated for LayerZero (seeded via the AirdropOS frontend rebuild + this repo's
+P7-P16 pattern promotion, applied by direct SQL rather than this script). This script's
+project_rows()/pattern_rows() still describe the deterministic-roster fields it derives from
+poc/*.json; it does not yet re-derive the richer per-project fields — don't assume running this
+script alone reproduces everything currently live in cif_projects.
 """
 import argparse, json, os, re, sys, urllib.error, urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 POC = ROOT / "poc"
-TABLES = ("cif_projects", "cif_patterns", "cif_backtests")
+TABLES = ("cif_projects", "cif_patterns", "cif_backtests", "cif_decision_events")
 
 
 def slugify(name: str) -> str:
@@ -120,7 +123,35 @@ def backtest_rows():
     return rows
 
 
-BUILDERS = {"cif_projects": project_rows, "cif_patterns": pattern_rows, "cif_backtests": backtest_rows}
+def decision_event_rows():
+    rows = []
+    data = load("decision_events.json")
+    for project, events in data.items():
+        for i, e in enumerate(events):
+            rows.append({
+                "id": f"{slugify(project)}__{i:02d}",
+                "project": project,
+                "event_date": e.get("date") or None,
+                "title": e.get("title") or None,
+                "motivation": e.get("motivation"),
+                "constraint_text": e.get("constraint"),
+                "pressure": e.get("pressure"),
+                "tradeoff": e.get("tradeoff"),
+                "alternatives": e.get("alternatives"),
+                "expectation_vs_actual": e.get("expectation_vs_actual"),
+                "reactions": e.get("reactions") or {},
+                "grounding": e.get("grounding"),
+                "open_threads": e.get("open_threads"),
+            })
+    return rows
+
+
+BUILDERS = {
+    "cif_projects": project_rows,
+    "cif_patterns": pattern_rows,
+    "cif_backtests": backtest_rows,
+    "cif_decision_events": decision_event_rows,
+}
 
 
 def upsert(base_url: str, key: str, table: str, rows: list):
