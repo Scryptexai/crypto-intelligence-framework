@@ -1,0 +1,11 @@
+# CIF pipeline (run.sh / tools/) dependencies.
+#
+# Everything in tools/ (ingest.py, extract.py, build_json.py, backtest.py) uses only the Python
+# standard library, EXCEPT .pdf phase-file extraction (tools/extract.py's extract_pdf), which
+# needs pypdf. cffi is an optional backend pypdf uses for some PDFs. .docx extraction needs
+# nothing extra -- extract_docx() parses the XML directly.
+#
+# Install: pip install -r requirements.txt
+
+pypdf>=6.0
+cffi>=2.0

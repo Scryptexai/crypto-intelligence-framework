@@ -5,6 +5,10 @@ No LLM, no API, no network. **Quality-preserving:** these scripts never write a 
 knowledge synthesis (source → causal dossier) stays human/LLM reasoning. They only industrialise
 the two mechanical steps around it: **extraction** and **audit**.
 
+**Setup:** `pip install -r requirements.txt` (repo root) — everything here is Python stdlib except
+`.pdf` phase-file extraction, which needs `pypdf` (+ optional `cffi` backend). `.docx` needs nothing
+extra.
+
 This directory is infrastructure, not a layer of the knowledge model — it does not hold project
 data (`examples/`, `tracking/`), documentation (`docs/`), or raw sources (`doc_backup/`).
 
