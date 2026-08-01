@@ -160,3 +160,35 @@ so `poc/decision_events.json` has one stable schema regardless of which track pr
 event. Wired into `run.sh build`/`all` — runs over every file in `examples/CaseStudies/`
 automatically (dossiers without a Behavioral Intelligence phase just parse to 0 events). Output:
 `poc/decision_events.json`, keyed by project name.
+
+## `extract_entities.py` — Entity Intelligence phase → structured Entities
+
+```
+python tools/extract_entities.py examples/CaseStudies/LayerZero.md   # or: ./run.sh build
+```
+
+Built 2026-08-01 to feed the Intelligence Workspace product's `Entity` contract
+(`scryptexai/cif`'s `src/lib/types/entity.ts`) — see `docs/Project/ApplicationBlueprint.md` §10 and
+this repo's Supabase `cif_entities` table (composite key `(project_slug, id)`). Deterministic regex
+extraction of a dossier's Entity Intelligence phase, recognizing both Format v3 tracks:
+
+- Track A/B: one packed paragraph — `Entity: <Name> (<HIGH|MEDIUM|LOW>) Type: <Type>
+  Relationship: <prose> Period: <period> Exposure Type: <exposure> Evidence: <sources>`
+- Track C (DeepSeek methodology): one field per line, blocks separated by a `---` rule, no
+  confidence tag after the name.
+
+`type` is normalised from the dossier's free-text vocabulary (`Organization`, `Protocol (DeFi)`,
+`Research Lab`, `Media / Research Lab`, ...) to Intelligence Workspace's fixed `EntityType` enum;
+anything with no confident mapping stays `null` rather than being force-fit into the nearest wrong
+bucket. `status` (Active/Dormant/Contested/Unknown) and `founded` are always `null` — the dossier
+phase never captures a lifecycle status or founding date, so guessing one would be fabrication.
+`period`/`exposureType`/`evidence`/`evidenceLevel` (no dedicated column in the `Entity` contract)
+are kept in the `metadata` catch-all rather than dropped.
+
+**Known gap, by design, not yet solved:** this tool only emits `Entity` rows, never `Relationship`
+rows (entity-to-entity graph edges). The Entity Intelligence phase describes each entity's relation
+*to the project*, not entity-to-entity triples — synthesizing a `source`/`target`/`type` edge from
+that prose would mean asserting a relationship the text doesn't actually state.
+
+Wired into `run.sh build`/`all`, same pattern as `extract_decision_events.py`. Output:
+`poc/entities.json`, keyed by project name.

@@ -32,11 +32,12 @@ poc/*.json; it does not yet re-derive the richer per-project fields — don't as
 script alone reproduces everything currently live in cif_projects.
 """
 import argparse, json, os, re, sys, urllib.error, urllib.request
+from datetime import datetime as _dt, timezone as _tz
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 POC = ROOT / "poc"
-TABLES = ("cif_projects", "cif_patterns", "cif_backtests", "cif_decision_events")
+TABLES = ("cif_projects", "cif_patterns", "cif_backtests", "cif_decision_events", "cif_entities")
 
 
 def slugify(name: str) -> str:
@@ -65,18 +66,43 @@ def load(name: str):
 
 
 def project_rows():
-    """poc/projects.json (build_json.py's roster shape) -> cif_projects columns. Only the
-    deterministic roster fields are populated -- see module docstring's Known limitation."""
+    """poc/projects.json (build_json.py's roster shape) -> cif_projects columns.
+
+    cif_projects was repurposed for Intelligence Workspace's Project contract (2026-08-01
+    reset, see docs/Project/ApplicationBlueprint.md and the migration applied that day) --
+    it no longer has AirdropOS-only columns like `tier`. Only fields this script can derive
+    without guessing are populated: entity_count from poc/entities.json (a real count, not a
+    fabricated one), status defaults to "active" as CIF's own curation-state label (every
+    project in examples/CaseStudies/ is, by definition, actively tracked -- this is a
+    workflow flag CIF assigns, not a claim about the project itself). symbol/tagline/
+    description/color/accent/cifScore/confidence/qa/behavior have no deterministic source
+    yet and are intentionally omitted so upsert leaves them untouched rather than nulling
+    real data or guessing fake values -- see extract_knowledge.py/extract_qa.py (not yet
+    built) for what would need to exist before those can be populated honestly."""
+    entity_counts = {}
+    entities_path = POC / "entities.json"
+    if entities_path.exists():
+        for project, ents in json.loads(entities_path.read_text(encoding="utf-8")).items():
+            entity_counts[slugify(project)] = len(ents)
+
     rows = []
     for p in load("projects.json"):
+        slug = slugify(p["n"])
         rows.append({
-            "id": slugify(p["n"]),
+            "id": slug,
+            "slug": slug,
             "name": p["n"],
             "category": split_category(p.get("cat", "")),
-            "tier": p["tier"].lower(),
             "era": p.get("era") or None,
             "tags": p.get("tags", []),
             "source_file": p["file"],
+            "status": "active",
+            "entity_count": entity_counts.get(slug, 0),
+            "knowledge_count": 0,
+            "conflict_count": 0,
+            "event_count": 0,
+            "last_updated": _dt.now(_tz.utc).isoformat(),
+            "last_activity_hours": 0,
         })
     return rows
 
@@ -154,18 +180,50 @@ def decision_event_rows():
     return rows
 
 
+def entity_rows():
+    """poc/entities.json (tools/extract_entities.py's shape) -> cif_entities columns.
+    Composite id (project_slug, id) matches Intelligence Workspace's
+    /projects/{slug}/entities/{id} route."""
+    rows = []
+    data = load("entities.json")
+    for _project, entities in data.items():
+        for e in entities:
+            rows.append({
+                "project_slug": e["projectSlug"],
+                "id": e["id"],
+                "name": e.get("name"),
+                "type": e.get("type"),
+                "status": e.get("status"),
+                "description": e.get("description"),
+                "founded": e.get("founded"),
+                "related_knowledge": e.get("relatedKnowledge", []),
+                "related_events": e.get("relatedEvents", []),
+                "metadata": e.get("metadata") or {},
+            })
+    return rows
+
+
 BUILDERS = {
     "cif_projects": project_rows,
     "cif_patterns": pattern_rows,
     "cif_backtests": backtest_rows,
     "cif_decision_events": decision_event_rows,
+    "cif_entities": entity_rows,
+}
+
+
+ON_CONFLICT = {
+    # cif_entities has a composite primary key (project_slug, id) -- see the migration in
+    # this session's Intelligence Workspace reset -- every other table keys on bare id.
+    "cif_entities": "project_slug,id",
 }
 
 
 def upsert(base_url: str, key: str, table: str, rows: list):
     if not rows:
         return
-    url = f"{base_url.rstrip('/')}/rest/v1/{table}?on_conflict=id"
+    conflict_target = ON_CONFLICT.get(table, "id")
+    url = f"{base_url.rstrip('/')}/rest/v1/{table}?on_conflict={conflict_target}"
     body = json.dumps(rows).encode("utf-8")
     req = urllib.request.Request(url, data=body, method="POST", headers={
         "apikey": key,

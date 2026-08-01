@@ -4,7 +4,7 @@
 #   ./run.sh          ingest new reports (anti-duplicate) -> build JSON -> extract events -> backtest
 #   ./run.sh build    only rebuild JSON + extract events + backtest (no ingest)
 #   ./run.sh ingest   only ingest (no build)
-#   ./run.sh sync     push poc/{projects,patterns,benchmarks,decision_events}.json to Supabase
+#   ./run.sh sync     push poc/{projects,patterns,benchmarks,decision_events,entities}.json to Supabase
 #                     (tools/sync_supabase.py) -- explicit opt-in only, never runs as part of
 #                     `all`/`build`; requires SUPABASE_URL + SUPABASE_SERVICE_ROLE_KEY env vars
 #                     (see that file's docstring)
@@ -39,23 +39,37 @@ run_ingest() {
   fi
 }
 
+_real_dossiers() {
+  shopt -s nullglob
+  local dossiers=(examples/CaseStudies/*.md)
+  shopt -u nullglob
+  for f in "${dossiers[@]}"; do
+    case "$(basename "$f")" in
+      README.md|*Analysis*|*Registry*) continue ;;
+    esac
+    echo "$f"
+  done
+}
+
 run_extract_events() {
   # Decision Event is this framework's actual unit of analysis (CLAUDE.md) — pull
   # structured events out of every Deep dossier's Behavioral Intelligence phase.
   # Dossiers without that phase (older/Summary-tier files) simply parse to 0
   # events, so this is safe to run unconditionally over the whole CaseStudies/ dir.
-  shopt -s nullglob
-  local dossiers=(examples/CaseStudies/*.md)
-  shopt -u nullglob
   local real=()
-  for f in "${dossiers[@]}"; do
-    case "$(basename "$f")" in
-      README.md|*Analysis*|*Registry*) continue ;;
-    esac
-    real+=("$f")
-  done
+  while IFS= read -r f; do real+=("$f"); done < <(_real_dossiers)
   if [ "${#real[@]}" -gt 0 ]; then
     "$PY" tools/extract_decision_events.py "${real[@]}"
+  fi
+}
+
+run_extract_entities() {
+  # Intelligence Workspace's Entity graph — pull structured entities out of every
+  # Deep dossier's Entity Intelligence phase (see tools/extract_entities.py).
+  local real=()
+  while IFS= read -r f; do real+=("$f"); done < <(_real_dossiers)
+  if [ "${#real[@]}" -gt 0 ]; then
+    "$PY" tools/extract_entities.py "${real[@]}"
   fi
 }
 
@@ -66,6 +80,7 @@ case "$cmd" in
   build)
     "$PY" tools/build_json.py
     run_extract_events
+    run_extract_entities
     "$PY" tools/backtest.py || true
     ;;
   sync)
@@ -76,6 +91,7 @@ case "$cmd" in
     run_ingest                           # anti-duplicate ingest of all inbox folders + data_project/
     "$PY" tools/build_json.py            # export projects/patterns/sentiment + bundled cif.json
     run_extract_events                   # export poc/decision_events.json
+    run_extract_entities                 # export poc/entities.json
     "$PY" tools/backtest.py || true      # scorecard (non-zero exit on real failure; run continues)
     ;;
   *)

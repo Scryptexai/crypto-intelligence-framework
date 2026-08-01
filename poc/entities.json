@@ -1,0 +1,3372 @@
+{
+  "LayerZero": [
+    {
+      "id": "ENT-001",
+      "projectSlug": "layerzero",
+      "name": "LayerZero Labs Ltd.",
+      "type": "Company",
+      "status": null,
+      "description": "Entitas korporat utama dan pengembang protokol interoperabilitas omnichain LayerZero. Berbadan hukum di British Virgin Islands (BVI) dan beroperasi dari Vancouver, Kanada. Entitas ini memegang hak cipta atas perangkat lunak inti termasuk Wrapped Asset Bridge Software dan mengoperasikan infrastruktur off-chain krusial yang disebut Gasolina dan Essence. Selain sebagai pengembang, entitas ini bertindak secara operasional sebagai salah satu Decentralized Verifier Network (DVN) default dalam arsitektur LayerZero V2, yang mengharuskan aplikator untuk secara eksplisit menonaktifkannya jika mereka ingin menggunakan tumpukan keamanan (Security Stack) yang sepenuhnya independen dari tim inti.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "LayerZero Factual Dossier + Etherlink Bridge Terms + LayerZero Incident Report"
+      }
+    },
+    {
+      "id": "ENT-002",
+      "projectSlug": "layerzero",
+      "name": "Optimistic Labs Limited",
+      "type": "Company",
+      "status": null,
+      "description": "Entitas berbadan hukum di British Virgin Islands (BVI) dengan nomor perusahaan 2147541 yang bertindak sebagai operator situs untuk Etherlink Bridge. Entitas ini menggunakan lisensi perangkat lunak Wrapped Asset Bridge yang hak ciptanya dipegang oleh LayerZero Labs Ltd. Mereka secara eksplisit menyatakan bahwa mereka tidak mengontrol jembatan itu sendiri dan tidak memegang kustodi atas token pengguna, melainkan hanya menyediakan antarmuka akses.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "unknown",
+        "exposureType": "technical-integration",
+        "evidence": "Etherlink Bridge Terms"
+      }
+    },
+    {
+      "id": "ENT-003",
+      "projectSlug": "layerzero",
+      "name": "LayerZero Labs Canada Inc.",
+      "type": "Company",
+      "status": null,
+      "description": "Entitas operasional yang berbasis di Vancouver, Kanada, yang difokuskan pada rekayasa perangkat lunak dan manajemen ekosistem go-to-market. Entitas ini secara resmi terdaftar sejak November 2021 dan merupakan pihak yang secara formal menampung sebagian besar tenaga kerja pengembangan inti (sekitar 58 karyawan) serta menerima aliran dana dari berbagai putaran investasi modal ventura.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Nov 2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "Tracxn Company Profile + Animoca Brands Research"
+      }
+    },
+    {
+      "id": "ENT-004",
+      "projectSlug": "layerzero",
+      "name": "LayerZero Foundation",
+      "type": "Foundation",
+      "status": null,
+      "description": "Entitas tata kelola yang didedikasikan untuk pertumbuhan ekosistem, desentralisasi protokol, dan pengelolaan peluncuran Token Generation Event (TGE). Entitas ini secara struktural terpisah dari tim pengembangan perangkat lunak komersial dan terkait dengan alokasi token ZRO untuk komunitas serta manajemen kas (treasury) masa depan melalui mekanisme fee switch.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2024–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "Envelop Audit Report"
+      }
+    },
+    {
+      "id": "ENT-005",
+      "projectSlug": "layerzero",
+      "name": "Bryan Pellegrino",
+      "type": "Person",
+      "status": null,
+      "description": "Co-Founder dan Chief Executive Officer (CEO) LayerZero Labs. Latar belakangnya sebagai pemain poker profesional dan peneliti kecerdasan buatan (terlibat dalam pembuatan AI Supremus bersama tim Facebook AI) sangat memengaruhi desain dasar teori permainan (game theory) dan asumsi minimisasi penyesalan yang diterapkan dalam arsitektur keamanan LayerZero.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "UNH Today + Sequoia Capital + LayerZero Factual Dossier"
+      }
+    },
+    {
+      "id": "ENT-006",
+      "projectSlug": "layerzero",
+      "name": "Ryan Zarick",
+      "type": "Person",
+      "status": null,
+      "description": "Co-Founder dan Chief Technology Officer (CTO) LayerZero Labs. Merupakan alumni University of New Hampshire (UNH) dengan gelar Master di bidang Ilmu Komputer, ia memiliki rekam jejak riset ekstensif dan sebelumnya mendirikan beberapa startup perangkat lunak (Coder Den, BuzzDraft, Minimal AI) bersama tim inti sebelum merancang arsitektur cross-chain messaging LayerZero.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "UNH Today + Animoca Brands Research"
+      }
+    },
+    {
+      "id": "ENT-007",
+      "projectSlug": "layerzero",
+      "name": "Caleb Banister",
+      "type": "Person",
+      "status": null,
+      "description": "Co-Founder dan Principal Engineer (Head of Engineering) LayerZero Labs. Juga merupakan alumni UNH, ia berkolaborasi erat dengan Pellegrino dan Zarick dalam pengembangan awal arsitektur Ultra-Light Node (ULN) yang memisahkan verifikasi dan eksekusi pesan lintas-rantai.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "UNH Today + OKX Learn"
+      }
+    },
+    {
+      "id": "ENT-008",
+      "projectSlug": "layerzero",
+      "name": "Chainlink",
+      "type": "Company",
+      "status": null,
+      "description": "Penyedia infrastruktur eksternal yang melayani fungsi Oracle pada arsitektur monolitik LayerZero V1. Peran operasionalnya adalah menyiarkan block header secara independen dari rantai sumber (source chain) ke rantai tujuan (destination chain) untuk dicocokkan dengan bukti transaksi dari Relayer.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "LayerZero Factual Dossier"
+      }
+    },
+    {
+      "id": "ENT-009",
+      "projectSlug": "layerzero",
+      "name": "Chainlink CCIP",
+      "type": "Protocol",
+      "status": null,
+      "description": "Protokol interoperabilitas terpisah yang diintegrasikan sebagai salah satu opsi Decentralized Verifier Network (DVN) pihak ketiga dalam arsitektur keamanan modular LayerZero V2, memungkinkan aplikasi menggunakan infrastruktur Chainlink sebagai salah satu lapisan verifikasi di atas LayerZero.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2024–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "LayerZero Factual Dossier"
+      }
+    },
+    {
+      "id": "ENT-010",
+      "projectSlug": "layerzero",
+      "name": "Google Cloud",
+      "type": "Company",
+      "status": null,
+      "description": "Berperan sebagai infrastruktur verifikasi tingkat perusahaan (enterprise-grade) yang bertindak sebagai opsi Decentralized Verifier Network (DVN) di LayerZero V2. Google Cloud dikonfigurasi secara teknis sebagai verifier default (bersama dengan LayerZero Labs) dalam banyak rujukan pengembangan untuk memastikan bahwa pesan divalidasi oleh entitas yang sangat berfokus pada keamanan sebelum dieksekusi di rantai tujuan.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Sep 2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "LayerZero Blog + Eco Support"
+      }
+    },
+    {
+      "id": "ENT-011",
+      "projectSlug": "layerzero",
+      "name": "Polyhedra",
+      "type": "Company",
+      "status": null,
+      "description": "Beroperasi sebagai penyedia Decentralized Verifier Network (DVN) yang mengimplementasikan teknologi zero-knowledge (zkBridge) pada arsitektur LayerZero V2. Infrastruktur ini memungkinkan validasi transaksi matematika tanpa mengandalkan asumsi kepercayaan entitas tunggal, meningkatkan keamanan dasar bagi Omnichain Applications (OApps) yang memilihnya dalam tumpukan keamanan (Security Stack) mereka.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2024–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "Zellic Reports + Eco Support"
+      }
+    },
+    {
+      "id": "ENT-012",
+      "projectSlug": "layerzero",
+      "name": "Alameda Ventures / FTX Group",
+      "type": "Investor",
+      "status": null,
+      "description": "Entitas modal ventura terafiliasi FTX yang memimpin ronde pendanaan Series A (Extension) dan menyuntikkan modal menggunakan dana pelanggan. Hubungan ini berubah menjadi sengketa hukum agresif pasca kebangkrutan FTX, di mana pengelola kepailitan FTX (FTX Recovery Trust) menggugat LayerZero Labs Ltd. di pengadilan Delaware untuk memulihkan $70 juta dalam bentuk investasi ekuitas dan $41 juta terkait transfer preferensial (clawback).",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Mar 2022–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "Delaware Bankruptcy Court Filings + LayerZero Factual Dossier"
+      }
+    },
+    {
+      "id": "ENT-013",
+      "projectSlug": "layerzero",
+      "name": "Protocol Guild",
+      "type": "Foundation",
+      "status": null,
+      "description": "Entitas kolektif yang mewakili pengembang inti Ethereum, bertindak sebagai penerima manfaat utama dari mekanisme \"Proof-of-Donation\" yang kontroversial selama Token Generation Event (TGE) LayerZero. Pengguna yang ingin mengklaim porsi airdrop ZRO diwajibkan untuk mendonasikan $0.10 per token kepada Protocol Guild, yang secara naratif mendanai barang publik namun secara operasional menimbulkan tekanan pasar instan pada harga token.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Juni 2024–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "LayerZero Factual Dossier + CryptoRank"
+      }
+    },
+    {
+      "id": "ENT-014",
+      "projectSlug": "layerzero",
+      "name": "Stargate Finance",
+      "type": "Protocol",
+      "status": null,
+      "description": "Aplikasi terdesentralisasi unggulan (flagship dApp) yang dibangun khusus di atas lapisan pesan LayerZero. Berfungsi sebagai protokol transportasi likuiditas yang memungkinkan transfer token asli lintas-rantai (tanpa aset terbungkus). Setelah mencapai kesuksesan operasional dengan miliaran dolar TVL, protokol ini secara tata kelola diintegrasikan lebih dalam ke ekosistem ZRO, dengan pendapatan swap Stargate digunakan secara rutin untuk melakukan pembelian kembali (buyback) token ZRO di pasar terbuka.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "Chainbase Blog + Envelop Audit Report"
+      }
+    },
+    {
+      "id": "ENT-015",
+      "projectSlug": "layerzero",
+      "name": "Tether",
+      "type": "Company",
+      "status": null,
+      "description": "Perusahaan penerbit stablecoin terbesar yang memiliki hubungan ganda dengan LayerZero: berpartisipasi sebagai investor pada ronde Series B, dan melakukan integrasi teknis mendalam dengan menerbitkan stablecoin USDT0 menggunakan standar Omnichain Fungible Token (OFT) LayerZero untuk memungkinkan pencetakan dan pembakaran (burn-and-mint) langsung antar blockchain tanpa risiko jembatan kustodian.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Apr 2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "Tracxn Company Profile + Gate.io Learn"
+      }
+    },
+    {
+      "id": "ENT-016",
+      "projectSlug": "layerzero",
+      "name": "Trail of Bits",
+      "type": "Security",
+      "status": null,
+      "description": "Firma audit keamanan siber independen yang ditugaskan untuk melakukan peninjauan keamanan komprehensif terhadap infrastruktur smart contract inti LayerZero, termasuk implementasi OFTWrapper dan Endpoints. Laporan mereka menjadi dasar mitigasi teknis sebelum peningkatan besar protokol.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "Trail of Bits Audit Report + LayerZero Factual Dossier"
+      }
+    },
+    {
+      "id": "ENT-017",
+      "projectSlug": "layerzero",
+      "name": "Zellic",
+      "type": "Security",
+      "status": null,
+      "description": "Perusahaan keamanan siber yang sering ditugaskan untuk mengaudit arsitektur lintas-rantai LayerZero, standar OFT, serta melakukan audit keamanan spesifik terhadap mitra infrastruktur DVN yang terintegrasi di LayerZero V2, seperti modul Polyhedra zkBridge.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "Zellic Reports + Anzen Audits"
+      }
+    },
+    {
+      "id": "ENT-018",
+      "projectSlug": "layerzero",
+      "name": "Zokyo",
+      "type": "Security",
+      "status": null,
+      "description": "Firma intelijen keamanan dan audit smart contract yang meninjau basis kode LayerZero. Mereka menerbitkan bukti volume miliaran dolar yang diamankan melalui audit mereka, memberikan wawasan optimasi kontrak, dan menganalisis area risiko struktural untuk rilis protokol masa depan.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Mar 2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "Zokyo Portfolio + Zokyo Testimonials"
+      }
+    },
+    {
+      "id": "ENT-019",
+      "projectSlug": "layerzero",
+      "name": "Peckshield",
+      "type": "Security",
+      "status": null,
+      "description": "Perusahaan audit keamanan blockchain yang meninjau integrasi protokol dan kontrak yang menggunakan standar LayerZero, termasuk token pihak ketiga (seperti AVAX OFT) dan jembatan eksternal. Mereka memainkan peran teknis dalam mencegah kerentanan kepatuhan ERC20 pada antarmuka komunikasi LayerZero.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "PeckShield Audit Report"
+      }
+    },
+    {
+      "id": "ENT-020",
+      "projectSlug": "layerzero",
+      "name": "Hacken",
+      "type": "Security",
+      "status": null,
+      "description": "Entitas riset dan audit keamanan Web3 yang memberikan laporan post-mortem dan analisis forensik mengenai kerentanan infrastruktur di ekosistem LayerZero, secara khusus mencatat eksploitasi $292 juta yang berasal dari peretasan node RPC, bukan bug kontrak pintar.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2024–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "CoinMarketCap Updates"
+      }
+    },
+    {
+      "id": "ENT-021",
+      "projectSlug": "layerzero",
+      "name": "Kelp DAO",
+      "type": "Protocol",
+      "status": null,
+      "description": "Protokol penerbit token restaking cair (rsETH) yang menggunakan arsitektur LayerZero V2 untuk jembatan lintas-rantainya. Mengalami eksploitasi senilai $292 juta akibat mengandalkan konfigurasi 1-of-1 DVN (hanya menggunakan LayerZero Labs DVN), yang memungkinkan penyerang (diatribusikan ke Lazarus Group/DPRK) memalsukan pesan lintas-rantai dengan meretas infrastruktur RPC secara off-chain. Insiden ini memicu perubahan kebijakan sistemik di mana LayerZero Labs menolak beroperasi sebagai verifikator tunggal.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2024–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "LayerZero Incident Report + OpenZeppelin News"
+      }
+    },
+    {
+      "id": "ENT-022",
+      "projectSlug": "layerzero",
+      "name": "a16z crypto",
+      "type": "Investor",
+      "status": null,
+      "description": "Firma modal ventura terkemuka yang menyuntikkan likuiditas besar ke dalam perusahaan dengan memimpin pendanaan Series A (Extension) senilai $135 juta yang memberikan status unicorn, dan kembali berpartisipasi dalam pendanaan Series B senilai $120 juta yang menaikkan valuasi menjadi $3 miliar.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Mar 2022–sekarang",
+        "exposureType": "shared-investor-only",
+        "evidence": "a16z Crypto + BetaKit"
+      }
+    },
+    {
+      "id": "ENT-023",
+      "projectSlug": "layerzero",
+      "name": "Sequoia Capital",
+      "type": "Investor",
+      "status": null,
+      "description": "Pemodal ventura lapis pertama (tier-1) yang berpartisipasi sebagai investor strategis pada putaran pendanaan Series A (Extension) dan Series B, memberikan dukungan institusional kritis di tengah iklim pasar kripto yang fluktuatif.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Mar 2022–sekarang",
+        "exposureType": "shared-investor-only",
+        "evidence": "Sequoia Capital + Tracxn Company Profile"
+      }
+    },
+    {
+      "id": "ENT-024",
+      "projectSlug": "layerzero",
+      "name": "Binance Labs",
+      "type": "Investor",
+      "status": null,
+      "description": "Lengan investasi dari bursa Binance yang menjadi penyokong modal paling awal, berpartisipasi aktif dalam ronde Seed ($2 juta) untuk peluncuran awal dan kembali menanamkan modal pada ronde pendanaan Series A ($6 juta).",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Apr 2021–sekarang",
+        "exposureType": "shared-investor-only",
+        "evidence": "LayerZero Factual Dossier"
+      }
+    },
+    {
+      "id": "ENT-025",
+      "projectSlug": "layerzero",
+      "name": "Multicoin Capital",
+      "type": "Investor",
+      "status": null,
+      "description": "Institusi investasi terkemuka di sektor Web3 yang masuk sejak tahap sangat awal (Seed) dan berpartisipasi kembali dalam ronde pendanaan Series A LayerZero.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Apr 2021–sekarang",
+        "exposureType": "shared-investor-only",
+        "evidence": "LayerZero Factual Dossier"
+      }
+    },
+    {
+      "id": "ENT-026",
+      "projectSlug": "layerzero",
+      "name": "PayPal Ventures",
+      "type": "Investor",
+      "status": null,
+      "description": "Lengan ventura dari entitas pembayaran global PayPal, memberikan modal finansial strategis pada ronde pendanaan Series A (Extension) senilai $135 juta.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Mar 2022–sekarang",
+        "exposureType": "shared-investor-only",
+        "evidence": "LayerZero Factual Dossier"
+      }
+    },
+    {
+      "id": "ENT-027",
+      "projectSlug": "layerzero",
+      "name": "Circle Ventures",
+      "type": "Investor",
+      "status": null,
+      "description": "Cabang investasi dari penerbit stablecoin USDC, yang menyuntikkan dana ke LayerZero dalam ronde pendanaan Series B senilai $120 juta, memperkuat narasi interoperabilitas likuiditas stablecoin.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Apr 2023–sekarang",
+        "exposureType": "shared-investor-only",
+        "evidence": "Tracxn Company Profile + BetaKit"
+      }
+    },
+    {
+      "id": "ENT-028",
+      "projectSlug": "layerzero",
+      "name": "OKX Ventures",
+      "type": "Investor",
+      "status": null,
+      "description": "Cabang investasi dari bursa kripto global OKX, bertindak sebagai partisipan pendanaan institusional pada ronde Series B yang mendongkrak valuasi LayerZero ke angka $3 miliar.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Apr 2023–sekarang",
+        "exposureType": "shared-investor-only",
+        "evidence": "Tracxn Company Profile"
+      }
+    },
+    {
+      "id": "ENT-029",
+      "projectSlug": "layerzero",
+      "name": "Delphi Digital",
+      "type": "Investor",
+      "status": null,
+      "description": "Firma modal ventura dan riset kripto yang berpartisipasi secara langsung dalam pendanaan Seri A sebesar $6 juta untuk membantu peluncuran mainnet komersial.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Sep 2021–sekarang",
+        "exposureType": "shared-investor-only",
+        "evidence": "LayerZero Factual Dossier"
+      }
+    },
+    {
+      "id": "ENT-030",
+      "projectSlug": "layerzero",
+      "name": "BOND",
+      "type": "Investor",
+      "status": null,
+      "description": "Entitas ekuitas swasta/modal ventura yang turut serta sebagai pemodal pada ronde pendanaan Series B.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Apr 2023–sekarang",
+        "exposureType": "shared-investor-only",
+        "evidence": "LayerZero Factual Dossier"
+      }
+    },
+    {
+      "id": "ENT-031",
+      "projectSlug": "layerzero",
+      "name": "Christie's",
+      "type": "Investor",
+      "status": null,
+      "description": "Rumah lelang seni global yang secara anomali masuk sebagai pemodal pada ronde pendanaan Series B LayerZero, menyoroti adopsi potensial teknologi pesan omnichain untuk narasi tokenisasi seni dan NFT.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Apr 2023–sekarang",
+        "exposureType": "shared-investor-only",
+        "evidence": "LayerZero Factual Dossier + Tracxn Company Profile"
+      }
+    },
+    {
+      "id": "ENT-032",
+      "projectSlug": "layerzero",
+      "name": "Samsung Next",
+      "type": "Investor",
+      "status": null,
+      "description": "Lengan investasi dari konglomerat teknologi Samsung, berpartisipasi memberikan dukungan kapital pada ronde pendanaan institusional Series B.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Apr 2023–sekarang",
+        "exposureType": "shared-investor-only",
+        "evidence": "LayerZero Factual Dossier"
+      }
+    },
+    {
+      "id": "ENT-033",
+      "projectSlug": "layerzero",
+      "name": "OpenSea",
+      "type": "Investor",
+      "status": null,
+      "description": "Marketplace NFT yang bertindak sebagai investor institusional pada ronde pendanaan Series B untuk memperkuat infrastruktur konektivitas NFT lintas-rantai (ONFT).",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Apr 2023–sekarang",
+        "exposureType": "shared-investor-only",
+        "evidence": "Tracxn Company Profile"
+      }
+    },
+    {
+      "id": "ENT-034",
+      "projectSlug": "layerzero",
+      "name": "Polygon Ventures",
+      "type": "Investor",
+      "status": null,
+      "description": "Modal ventura yang berafiliasi dengan jaringan Polygon, tercatat memberikan dukungan pendanaan kepada operasi LayerZero Labs.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "unknown",
+        "exposureType": "shared-investor-only",
+        "evidence": "Uphold Crypto Asset Statement"
+      }
+    },
+    {
+      "id": "ENT-035",
+      "projectSlug": "layerzero",
+      "name": "DeFiance Capital",
+      "type": "Investor",
+      "status": null,
+      "description": "Firma dana investasi kripto Web3 yang terlibat memberikan modal dukungan dalam siklus pengembangan operasional LayerZero.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "unknown",
+        "exposureType": "shared-investor-only",
+        "evidence": "Uphold Crypto Asset Statement"
+      }
+    },
+    {
+      "id": "ENT-036",
+      "projectSlug": "layerzero",
+      "name": "Spartan Group",
+      "type": "Investor",
+      "status": null,
+      "description": "Sindikat ventura strategis yang memiliki porsi investasi dalam struktur permodalan LayerZero.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "unknown",
+        "exposureType": "shared-investor-only",
+        "evidence": "Uphold Crypto Asset Statement"
+      }
+    },
+    {
+      "id": "ENT-037",
+      "projectSlug": "layerzero",
+      "name": "Sino Global Capital",
+      "type": "Investor",
+      "status": null,
+      "description": "Perusahaan dana investasi internasional yang menyokong modal operasional LayerZero.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "unknown",
+        "exposureType": "shared-investor-only",
+        "evidence": "Uphold Crypto Asset Statement"
+      }
+    },
+    {
+      "id": "ENT-038",
+      "projectSlug": "layerzero",
+      "name": "Coinbase Ventures",
+      "type": "Investor",
+      "status": null,
+      "description": "Lengan permodalan bursa Coinbase yang berkontribusi secara finansial dalam putaran modal awal hingga menengah untuk ekspansi operasi lintas-rantai LayerZero.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "unknown",
+        "exposureType": "shared-investor-only",
+        "evidence": "Uphold Crypto Asset Statement + CoinGecko Learn"
+      }
+    },
+    {
+      "id": "ENT-039",
+      "projectSlug": "layerzero",
+      "name": "EigenLabs / EigenLayer",
+      "type": "Company",
+      "status": null,
+      "description": "Berkolaborasi secara teknis dengan LayerZero Labs untuk membangun \"CryptoEconomic DVN Framework\". Framework open-source ini memungkinkan implementasi jaringan verifikasi bernama EigenZero, di mana aset turunan seperti EIGEN, ZRO, dan ETH dapat dipertaruhkan (restaked) sebagai jaminan ekonomi agar verifikator dapat dipotong saldonya (slashed) bila terjadi kesalahan verifikasi.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2024–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "EigenCloud Blog"
+      }
+    },
+    {
+      "id": "ENT-040",
+      "projectSlug": "layerzero",
+      "name": "Nethermind",
+      "type": "Company",
+      "status": null,
+      "description": "Bertindak sebagai operator node independen yang menyediakan salah satu opsi Decentralized Verifier Network (DVN) dalam ekosistem perpesanan V2 LayerZero.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2024–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "Eco Support + Dune Analytics Dashboard"
+      }
+    },
+    {
+      "id": "ENT-041",
+      "projectSlug": "layerzero",
+      "name": "Animoca Brands",
+      "type": "Company",
+      "status": null,
+      "description": "Perusahaan Web3 besar yang mengoperasikan simpul infrastruktur off-chain sebagai salah satu Decentralized Verifier Network (DVN) independen yang dapat dipilih oleh OApps di jaringan LayerZero.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2024–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "Eco Support"
+      }
+    },
+    {
+      "id": "ENT-042",
+      "projectSlug": "layerzero",
+      "name": "Horizen Labs",
+      "type": "Company",
+      "status": null,
+      "description": "Terdaftar dan beroperasi sebagai salah satu penyedia opsi DVN yang bersifat independen di dalam pasar verifikasi (verification marketplace) LayerZero V2.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2024–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "Eco Support"
+      }
+    },
+    {
+      "id": "ENT-043",
+      "projectSlug": "layerzero",
+      "name": "Delegate",
+      "type": "Company",
+      "status": null,
+      "description": "Menjalankan kontrak dan infrastruktur server sebagai salah satu operator Decentralized Verifier Network (DVN) pihak ketiga dalam ekosistem V2 LayerZero.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2024–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "Eco Support"
+      }
+    },
+    {
+      "id": "ENT-044",
+      "projectSlug": "layerzero",
+      "name": "Radiant Capital",
+      "type": "Protocol",
+      "status": null,
+      "description": "Omnichain Application (OApp) yang secara besar-besaran mengandalkan integrasi LayerZero untuk fungsionalitas peminjamannya. Setelah mengalami insiden keamanan eksternal pada Oktober 2024, Radiant Capital memperketat persyaratan arsitekturnya di LayerZero dengan mengonfigurasi tumpukan keamanan (Security Stack) mereka agar mewajibkan konsensus dari lima DVN secara independen.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "Eco Support + Zokyo Portfolio"
+      }
+    },
+    {
+      "id": "ENT-045",
+      "projectSlug": "layerzero",
+      "name": "Ondo Finance",
+      "type": "Protocol",
+      "status": null,
+      "description": "Penerbit produk Real World Asset (RWA) tersindikasi yang menerapkan LayerZero OFT. Karena sensitivitas nilainya, Ondo memberlakukan kebijakan anti-manipulasi yang ketat di mana integrasi teknis LayerZero mereka diwajibkan menggunakan setidaknya tiga DVN independen dengan infrastruktur kode/RPC yang berbeda, yang berhasil melindungi mereka dari vektor serangan peretasan RPC seperti insiden KelpDAO.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2024–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "Dune Analytics Dashboard + Ondo Finance Blog"
+      }
+    },
+    {
+      "id": "ENT-046",
+      "projectSlug": "layerzero",
+      "name": "Paxos",
+      "type": "Protocol",
+      "status": null,
+      "description": "Penerbit stablecoin institusional yang mengintegrasikan basis kode smart contract OFTWrapper dari LayerZero untuk meluncurkan transfer token yang kompatibel secara lintas-rantai (seperti stablecoin USDG).",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "unknown",
+        "exposureType": "technical-integration",
+        "evidence": "Dune Analytics Dashboard + Paxos GitHub"
+      }
+    },
+    {
+      "id": "ENT-047",
+      "projectSlug": "layerzero",
+      "name": "Ethena",
+      "type": "Protocol",
+      "status": null,
+      "description": "Salah satu protokol DeFi tingkat atas yang menerapkan dan menggunakan logika lapisan pesan omnichain LayerZero untuk mengeksekusi operasi state dan manajemen likuiditas.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "unknown",
+        "exposureType": "technical-integration",
+        "evidence": "BoostyLabs"
+      }
+    },
+    {
+      "id": "ENT-048",
+      "projectSlug": "layerzero",
+      "name": "EtherFi",
+      "type": "Protocol",
+      "status": null,
+      "description": "Aplikasi liquid restaking DeFi populer yang menggunakan relai komunikasi lintas-rantai operasional LayerZero secara ekstensif untuk mengakomodasi fungsionalitas penggunanya.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "unknown",
+        "exposureType": "technical-integration",
+        "evidence": "BoostyLabs"
+      }
+    },
+    {
+      "id": "ENT-049",
+      "projectSlug": "layerzero",
+      "name": "Keeta",
+      "type": "Company",
+      "status": null,
+      "description": "Menjalin kemitraan taktis dengan protokol LayerZero untuk menyediakan dan menggerakkan fungsionalitas transfer inovatif \"tokenized bank deposits\", membawa adopsi institusional tradisional ke dalam jaringan pesan LayerZero.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "unknown",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "Binance News"
+      }
+    },
+    {
+      "id": "ENT-050",
+      "projectSlug": "layerzero",
+      "name": "IDEX",
+      "type": "Protocol",
+      "status": null,
+      "description": "Bursa terdesentralisasi (DEX) berbasis buku pesanan (orderbook) yang mengintegrasikan perpustakaan arsitektur LayerZero v2 dan komponen Stargate v2 ke dalam backend mereka, secara teknis memungkinkan adaptasi penyetoran dan penarikan token USDC secara mulus bagi pengguna antarrantai.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "unknown",
+        "exposureType": "technical-integration",
+        "evidence": "Immunefi Audit Scope"
+      }
+    },
+    {
+      "id": "ENT-051",
+      "projectSlug": "layerzero",
+      "name": "Binance",
+      "type": "Company",
+      "status": null,
+      "description": "Bursa kripto tersentralisasi (CEX) dengan volume terbesar di dunia yang secara resmi mencantumkan token ZRO. Bertindak sebagai penyedia likuiditas spot utama dan melayani pedagang ritel maupun institusional untuk ekosistem LayerZero sejak hari peluncuran (TGE).",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Juni 2024–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "Binance + BoostyLabs"
+      }
+    },
+    {
+      "id": "ENT-052",
+      "projectSlug": "layerzero",
+      "name": "Coinbase",
+      "type": "Company",
+      "status": null,
+      "description": "Bursa terpusat Amerika Serikat terkemuka yang mendaftarkan ZRO, memberikan eksposur pasar signifikan, dan menjadi salah satu jangkar penemuan harga dan penyedia likuiditas bagi pemegang token LayerZero.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Juni 2024–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "Coinbase + BoostyLabs"
+      }
+    },
+    {
+      "id": "ENT-053",
+      "projectSlug": "layerzero",
+      "name": "Kraken",
+      "type": "Company",
+      "status": null,
+      "description": "Platform bursa tersentralisasi yang memfasilitasi transaksi dan menyediakan likuiditas buku pesanan untuk perdagangan instrumen pasar token ZRO.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2024–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "Kraken"
+      }
+    },
+    {
+      "id": "ENT-054",
+      "projectSlug": "layerzero",
+      "name": "OKX",
+      "type": "Company",
+      "status": null,
+      "description": "Bursa aset digital besar yang bertindak sebagai bursa yang mendaftarkan ZRO untuk diperdagangkan secara luas oleh partisipan global. Lengan venturanya juga merupakan investor pada LayerZero.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Juni 2024–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "BoostyLabs + OKX Learn"
+      }
+    },
+    {
+      "id": "ENT-055",
+      "projectSlug": "layerzero",
+      "name": "Bybit",
+      "type": "Company",
+      "status": null,
+      "description": "Bursa derivatif dan spot terkemuka yang menyediakan tempat likuiditas yang krusial untuk token kripto asli LayerZero, ZRO, menyerap fluktuasi saat distribusi airdrop masif.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Juni 2024–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "BoostyLabs"
+      }
+    },
+    {
+      "id": "ENT-056",
+      "projectSlug": "layerzero",
+      "name": "KuCoin",
+      "type": "Company",
+      "status": null,
+      "description": "Pertukaran mata uang kripto global yang mencatatkan ZRO pada platform perdagangannya, berpartisipasi dalam mendistribusikan likuiditas token ke basis penggunanya.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Juni 2024–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "BoostyLabs"
+      }
+    },
+    {
+      "id": "ENT-057",
+      "projectSlug": "layerzero",
+      "name": "MEXC",
+      "type": "Company",
+      "status": null,
+      "description": "Platform pertukaran tersentralisasi yang bertindak sebagai tempat perdagangan pasar likuid bagi sirkulasi aset tata kelola ZRO.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Juni 2024–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "BoostyLabs"
+      }
+    },
+    {
+      "id": "ENT-058",
+      "projectSlug": "layerzero",
+      "name": "Bitget",
+      "type": "Company",
+      "status": null,
+      "description": "Bursa pertukaran terpusat yang menawarkan dukungan transaksi on-board dan pasangan perdagangan likuid untuk memfasilitasi pergerakan token ZRO.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Juni 2024–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "BoostyLabs"
+      }
+    },
+    {
+      "id": "ENT-059",
+      "projectSlug": "layerzero",
+      "name": "HTX (Huobi)",
+      "type": "Company",
+      "status": null,
+      "description": "Pertukaran bursa kripto yang mendukung perdagangan pasar spot bagi token utama arsitektur ekosistem LayerZero (ZRO).",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Juni 2024–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "BoostyLabs"
+      }
+    },
+    {
+      "id": "ENT-060",
+      "projectSlug": "layerzero",
+      "name": "Uphold",
+      "type": "Company",
+      "status": null,
+      "description": "Bursa digital yang mengevaluasi risiko, melisting token ZRO pada platformnya, dan memublikasikan pernyataan aset kripto formal mengenai keandalan teknologi lintas-rantai yang diusung oleh tim LayerZero.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "unknown",
+        "exposureType": "liquidity-dependency",
+        "evidence": "Uphold Crypto Asset Statement"
+      }
+    },
+    {
+      "id": "ENT-061",
+      "projectSlug": "layerzero",
+      "name": "Uniswap",
+      "type": "Company",
+      "status": null,
+      "description": "Sebagai pertukaran terdesentralisasi (DEX) utama, Uniswap memiliki kolam likuiditas (liquidity pools) yang memfasilitasi perdagangan on-chain untuk token ZRO. Selain itu, entitas tata kelola Uniswap secara aktif meninjau dan menilai arsitektur bridge arbitrary-message LayerZero untuk integrasi ekosistem.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2024–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "Uniswap Governance + BoostyLabs"
+      }
+    },
+    {
+      "id": "ENT-062",
+      "projectSlug": "layerzero",
+      "name": "SushiSwap",
+      "type": "Company",
+      "status": null,
+      "description": "Tempat pertukaran terdesentralisasi (DEX) yang berpartisipasi sebagai rute likuiditas on-chain alternatif bagi pengguna yang menukar aset ekosistem ZRO.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Juni 2024–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "BoostyLabs"
+      }
+    },
+    {
+      "id": "ENT-063",
+      "projectSlug": "layerzero",
+      "name": "PancakeSwap",
+      "type": "Company",
+      "status": null,
+      "description": "Bursa terdesentralisasi unggulan di ekosistem BSC yang terintegrasi secara teknis dengan utilitas operasi LayerZero dan menyediakan pasar penyelesaian (settlement) untuk perdagangan ZRO.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "unknown",
+        "exposureType": "liquidity-dependency",
+        "evidence": "BoostyLabs"
+      }
+    },
+    {
+      "id": "ENT-064",
+      "projectSlug": "layerzero",
+      "name": "TraderJoe",
+      "type": "Company",
+      "status": null,
+      "description": "DEX yang berpusat di Avalanche yang bekerja sama secara struktural memanfaatkan jaringan primitif LayerZero untuk pertukaran nilai multi-rantainya.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "unknown",
+        "exposureType": "liquidity-dependency",
+        "evidence": "BoostyLabs + CoinGecko Learn"
+      }
+    },
+    {
+      "id": "ENT-065",
+      "projectSlug": "layerzero",
+      "name": "Hashflow",
+      "type": "Protocol",
+      "status": null,
+      "description": "Salah satu protokol keuangan terdesentralisasi yang secara aktif menopang dan mengoperasikan kerangka kerja jembatan data LayerZero untuk eksekusi operasionalnya.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "unknown",
+        "exposureType": "technical-integration",
+        "evidence": "CoinGecko Learn"
+      }
+    },
+    {
+      "id": "ENT-066",
+      "projectSlug": "layerzero",
+      "name": "Immunefi",
+      "type": "Company",
+      "status": null,
+      "description": "Platform pihak ketiga (bug bounty platform) yang mengkoordinasikan dan menyelenggarakan salah satu program penemuan kerentanan (bug bounty) terbesar dalam kripto untuk kontrak cerdas LayerZero, dengan batas perlindungan kerentanan maksimal hingga $15 juta.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "unknown",
+        "exposureType": "technical-integration",
+        "evidence": "Envelop Audit Report"
+      }
+    },
+    {
+      "id": "ENT-067",
+      "projectSlug": "layerzero",
+      "name": "United States Bankruptcy Court for the District of Delaware",
+      "type": "Government",
+      "status": null,
+      "description": "Forum yudisial/pemerintah yang memiliki otoritas memimpin proses kepailitan (Chapter 11) dari FTX Trading Ltd. Pengadilan ini adalah tempat disidangkannya litigasi finansial agresif terkait klaim \"clawback\" dari pihak kurator kebangkrutan FTX terhadap dana investasi awal LayerZero Labs.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "Court Docket + BetaKit"
+      }
+    },
+    {
+      "id": "ENT-068",
+      "projectSlug": "layerzero",
+      "name": "FTX Recovery Trust",
+      "type": "Company",
+      "status": null,
+      "description": "Entitas pengelola kepailitan yang dibentuk pasca keruntuhan FTX Group. Entitas ini bertindak sebagai pihak penggugat secara langsung terhadap LayerZero Labs Ltd. dalam upaya memaksa pengembalian uang puluhan juta dolar terkait perjanjian pendanaan Series A (Extension) yang sebelumnya dilakukan oleh Alameda Ventures.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "Court Docket + LayerZero Factual Dossier"
+      }
+    },
+    {
+      "id": "ENT-069",
+      "projectSlug": "layerzero",
+      "name": "University of New Hampshire (IOL)",
+      "type": "Security",
+      "status": null,
+      "description": "Lembaga akademik almamater dari ketiga pendiri LayerZero (Pellegrino, Zarick, Banister). Interoperability Lab (IOL) universitas ini secara naratif dikaitkan sebagai tempat para pendiri menguji teori dasar dan pendekatan pengujian yang membentuk dasar riset awal mereka dalam mengatasi sistem yang terfragmentasi.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "unknown",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "UNH Today"
+      }
+    },
+    {
+      "id": "ENT-070",
+      "projectSlug": "layerzero",
+      "name": "CrowdStrike",
+      "type": "Company",
+      "status": null,
+      "description": "Perusahaan keamanan siber terkemuka berskala global yang disewa dan berkolaborasi secara ekstensif dengan tim LayerZero Labs untuk melakukan analisis forensik digital, memburu atribusi peretasan, dan membersihkan kerentanan lingkungan server paska eksploitasi $292 juta yang berpusat pada peracunan node RPC internal LayerZero yang terkait dengan eksploitasi KelpDAO.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "April 2024–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "LayerZero Incident Report"
+      }
+    },
+    {
+      "id": "ENT-071",
+      "projectSlug": "layerzero",
+      "name": "Mandiant",
+      "type": "Company",
+      "status": null,
+      "description": "Firma intelijen siber dan respons insiden yang direkrut bersamaan dengan CrowdStrike oleh LayerZero Labs untuk mengatribusikan serangan peretasan infrastruktur node DVN LayerZero. Hasil investigasi Mandiant mengkonfirmasi tingkat keyakinan tinggi (high confidence) bahwa peretasan sistem RPC tersebut dioperasikan oleh organisasi ancaman dari Korea Utara (DPRK).",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "April 2024–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "LayerZero Incident Report"
+      }
+    },
+    {
+      "id": "ENT-072",
+      "projectSlug": "layerzero",
+      "name": "zeroShadow",
+      "type": "Company",
+      "status": null,
+      "description": "Organisasi mitra keamanan teknis dan firma forensik yang diikutsertakan oleh LayerZero Labs dalam respons pasca eksploitasi node RPC di sistem mereka. zeroShadow secara khusus memberikan bantuan atribusi dan memfasilitasi penelusuran serta upaya penyitaan (seizure) token curian dari insiden KelpDAO.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "April 2024–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "LayerZero Incident Report"
+      }
+    },
+    {
+      "id": "ENT-073",
+      "projectSlug": "layerzero",
+      "name": "Halborn",
+      "type": "Security",
+      "status": null,
+      "description": "Firma peretas etis dan audit infrastruktur komprehensif (full-stack) yang meneliti kerentanan sistem di ekosistem lintas-rantai, terlibat dalam audit paralel bersama Peckshield dan Zellic untuk aplikasi yang beroperasi di ekosistem perpesanan (seperti integrasi IDEX, Anzen, dan Uniswap) yang mengandalkan infrastruktur relai LayerZero.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "Anzen Audits + Uniswap Governance"
+      }
+    },
+    {
+      "id": "ENT-074",
+      "projectSlug": "layerzero",
+      "name": "Certik",
+      "type": "Security",
+      "status": null,
+      "description": "Salah satu auditor smart contract terbesar yang pernah diajukan rekam jejak dan analisis laporannya pada saat protokol terdesentralisasi (seperti Uniswap atau Celer) melakukan pertimbangan tata kelola sebelum mengintegrasikan kerangka perpesanan LayerZero/jembatan pesaing ke dalam ekosistem mereka.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "unknown",
+        "exposureType": "technical-integration",
+        "evidence": "Uniswap Governance + Tracxn Company Profile"
+      }
+    },
+    {
+      "id": "ENT-075",
+      "projectSlug": "layerzero",
+      "name": "Quantstamp",
+      "type": "Security",
+      "status": null,
+      "description": "Perusahaan penyedia verifikasi formal (formal verification) dan keamanan blockchain yang laporan auditnya turut digunakan oleh protokol-protokol di ekosistem yang terhubung dengan solusi interoperabilitas seperti LayerZero, dalam memastikan kelayakan operasional infrastruktur jembatan dana (misalnya protokol Venus).",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "unknown",
+        "exposureType": "technical-integration",
+        "evidence": "Venus Protocol Docs + Coinbound"
+      }
+    },
+    {
+      "id": "ENT-076",
+      "projectSlug": "layerzero",
+      "name": "Chain EVM dan Non-EVM Terintegrasi — 165+",
+      "type": null,
+      "status": null,
+      "description": "Kumpulan masif ekosistem jaringan blockchain otonom tempat LayerZero Endpoint (ULN V1/V2) diterapkan sebagai smart contract yang tak bisa diubah (immutable) untuk melakukan pemrosesan logika validasi dan pengiriman pesan. Secara individual, jaringan yang paling signifikan meliputi penggerak utama likuiditas seperti Ethereum Mainnet, BNB Smart Chain (BSC), Polygon Mainnet, Base Mainnet, Arbitrum Nova, Avalanche C-Chain, Aptos, dan Solana. (Rincian lengkap dari sisa 150+ jaringan ini dialihkan penanganannya ke Phase 7 Ecosystem).",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "LayerZero Factual Dossier + LayerZero Docs"
+      }
+    }
+  ],
+  "Arbitrum": [
+    {
+      "id": "ENT-001",
+      "projectSlug": "arbitrum",
+      "name": "Offchain Labs",
+      "type": "Company",
+      "status": null,
+      "description": "Pengembang inti (core development team) Arbitrum — membangun dan mengembangkan protokol Arbitrum, termasuk Arbitrum One, Arbitrum Nova, Arbitrum Nitro, Arbitrum Orbit, dan Stylus (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2018–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Messari, https://messari.io/project/arbitrum/profile]; [Blockchain.com, https://www.blockchain.com/learning-portal/tokens/arbitrum-explained]; [Binance, https://www.binance.com/en/square/post/2024-10-16-arbitrum-arb-what-is-it-and-how-does-it-work]"
+      }
+    },
+    {
+      "id": "ENT-002",
+      "projectSlug": "arbitrum",
+      "name": "Ed Felten (Edward Felten)",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder & Chief Scientist, Offchain Labs — bertemu dengan co-founder lain di Princeton University (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2018–sekarang",
+        "exposureType": "unknown",
+        "evidence": "(HIGH) [Messari, https://messari.io/project/arbitrum/profile]; [Bitstamp, https://www.bitstamp.net/learn/cryptocurrency-guide/what-is-arbitrum/]; [Blockchain.com, https://www.blockchain.com/learning-portal/tokens/arbitrum-explained]; [Uphold, https://uphold.com/en-eu/prices/crypto/arbitrum]; [HTX, https://www.htx.com.co]"
+      }
+    },
+    {
+      "id": "ENT-003",
+      "projectSlug": "arbitrum",
+      "name": "Steven Goldfeder",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder & CEO, Offchain Labs — bertemu dengan co-founder lain di Princeton University (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2018–sekarang",
+        "exposureType": "unknown",
+        "evidence": "(HIGH) [Messari, https://messari.io/project/arbitrum/profile]; [Bitstamp, https://www.bitstamp.net/learn/cryptocurrency-guide/what-is-arbitrum/]; [Blockchain.com, https://www.blockchain.com/learning-portal/tokens/arbitrum-explained]; [Uphold, https://uphold.com/en-eu/prices/crypto/arbitrum]; [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]"
+      }
+    },
+    {
+      "id": "ENT-004",
+      "projectSlug": "arbitrum",
+      "name": "Harry Kalodner",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder & CTO, Offchain Labs — bertemu dengan co-founder lain di Princeton University (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2018–sekarang",
+        "exposureType": "unknown",
+        "evidence": "(HIGH) [Messari, https://messari.io/project/arbitrum/profile]; [Bitstamp, https://www.bitstamp.net/learn/cryptocurrency-guide/what-is-arbitrum/]; [Blockchain.com, https://www.blockchain.com/learning-portal/tokens/arbitrum-explained]; [Uphold, https://uphold.com/en-eu/prices/crypto/arbitrum]; [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]"
+      }
+    },
+    {
+      "id": "ENT-005",
+      "projectSlug": "arbitrum",
+      "name": "A.J. Warner (AJ Warner)",
+      "type": "Person",
+      "status": null,
+      "description": "Chief Strategy Officer, Offchain Labs (HIGH) ; Member, Arbitrum OpCo Foundation (permanent observer seat) (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "unknown",
+        "evidence": "(HIGH) [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]; [Arbitrum DAO Docs, https://docs.arbitrum.foundation/what-opco]"
+      }
+    },
+    {
+      "id": "ENT-006",
+      "projectSlug": "arbitrum",
+      "name": "Brendan Ma",
+      "type": "Person",
+      "status": null,
+      "description": "Head of Investment Strategy, Offchain Labs (HIGH) ; Head, Arbitrum Foundation (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "unknown",
+        "evidence": "(HIGH) [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]; [CB Insights, https://www.cbinsights.com]"
+      }
+    },
+    {
+      "id": "ENT-007",
+      "projectSlug": "arbitrum",
+      "name": "Sean S.",
+      "type": "Person",
+      "status": null,
+      "description": "Head of Finance, Offchain Labs (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "unknown",
+        "evidence": "(HIGH) [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]"
+      }
+    },
+    {
+      "id": "ENT-008",
+      "projectSlug": "arbitrum",
+      "name": "kiet (kit) fong",
+      "type": "Person",
+      "status": null,
+      "description": "Head of Gaming Partnerships Asia Pacific, Offchain Labs (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "unknown",
+        "evidence": "(HIGH) [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]"
+      }
+    },
+    {
+      "id": "ENT-009",
+      "projectSlug": "arbitrum",
+      "name": "Patrick McCorry",
+      "type": "Person",
+      "status": null,
+      "description": "Researcher, Offchain Labs (HIGH) ; Member, Arbitrum OpCo Foundation (permanent observer seat) (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "unknown",
+        "evidence": "(HIGH) [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]; [Arbitrum DAO Docs, https://docs.arbitrum.foundation/what-opco]"
+      }
+    },
+    {
+      "id": "ENT-010",
+      "projectSlug": "arbitrum",
+      "name": "Preston Van Loon",
+      "type": "Person",
+      "status": null,
+      "description": "Core Contributor, Offchain Labs (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "unknown",
+        "evidence": "(HIGH) [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]"
+      }
+    },
+    {
+      "id": "ENT-011",
+      "projectSlug": "arbitrum",
+      "name": "Humberto (Beto) Aparicio",
+      "type": "Person",
+      "status": null,
+      "description": "Senior Manager, Strategic Finance, Offchain Labs (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "unknown",
+        "evidence": "(HIGH) [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]"
+      }
+    },
+    {
+      "id": "ENT-012",
+      "projectSlug": "arbitrum",
+      "name": "Abhishek Somani",
+      "type": "Person",
+      "status": null,
+      "description": "Product Manager, Offchain Labs (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "unknown",
+        "evidence": "(HIGH) [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]"
+      }
+    },
+    {
+      "id": "ENT-013",
+      "projectSlug": "arbitrum",
+      "name": "Mariam Kouanda",
+      "type": "Person",
+      "status": null,
+      "description": "Grants Manager, Offchain Labs (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "unknown",
+        "evidence": "(HIGH) [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]"
+      }
+    },
+    {
+      "id": "ENT-014",
+      "projectSlug": "arbitrum",
+      "name": "Campbell Law",
+      "type": "Person",
+      "status": null,
+      "description": "Initial Director, The Arbitrum Foundation — founder of Silverside Ltd, co-founder of Provenance Ltd, former VP at Goldman Sachs (11 years) (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "unknown",
+        "evidence": "(HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation/foundational-documents/transparency-report-initial-foundation-setup]"
+      }
+    },
+    {
+      "id": "ENT-015",
+      "projectSlug": "arbitrum",
+      "name": "Edward Noyons",
+      "type": "Person",
+      "status": null,
+      "description": "Initial Director, The Arbitrum Foundation — director of Marfire, co-founder of Autonomous, former audit director at Big-4 firm (11 years, 8 years in Cayman Islands) (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "unknown",
+        "evidence": "(HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation/foundational-documents/transparency-report-initial-foundation-setup]"
+      }
+    },
+    {
+      "id": "ENT-016",
+      "projectSlug": "arbitrum",
+      "name": "Ani Banerjee",
+      "type": "Person",
+      "status": null,
+      "description": "Initial Director, The Arbitrum Foundation — former investor at Citigroup, Cheyne Capital, and BlackRock (14 years); private investor since 2017 (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "unknown",
+        "evidence": "(HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation/foundational-documents/transparency-report-initial-foundation-setup]"
+      }
+    },
+    {
+      "id": "ENT-017",
+      "projectSlug": "arbitrum",
+      "name": "Frisson",
+      "type": "Person",
+      "status": null,
+      "description": "Member, Arbitrum OpCo Foundation (permanent observer seat) (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "unknown",
+        "evidence": "(HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation/what-opco]"
+      }
+    },
+    {
+      "id": "ENT-018",
+      "projectSlug": "arbitrum",
+      "name": "Gavin Wang",
+      "type": "Person",
+      "status": null,
+      "description": "Member, Arbitrum OpCo Foundation (permanent observer seat) (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "unknown",
+        "evidence": "(HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation/what-opco]"
+      }
+    },
+    {
+      "id": "ENT-019",
+      "projectSlug": "arbitrum",
+      "name": "Pedro Breuer",
+      "type": "Person",
+      "status": null,
+      "description": "Member, Arbitrum OpCo Foundation (permanent observer seat) (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "unknown",
+        "evidence": "(HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation/what-opco]"
+      }
+    },
+    {
+      "id": "ENT-020",
+      "projectSlug": "arbitrum",
+      "name": "The Arbitrum Foundation",
+      "type": "Foundation",
+      "status": null,
+      "description": "Badan hukum Cayman Islands foundation company yang bertugas mengembangkan dan memelihara ekosistem Arbitrum, melayani dan diatur oleh Arbitrum DAO (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang (didirikan sebelum DAO setup)",
+        "exposureType": "financial-collateral (mengelola treasury ARB dan dana operasional)",
+        "evidence": "(HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation/foundational-documents/transparency-report-initial-foundation-setup]; [Arbitrum DAO Docs, https://docs.arbitrum.foundation]"
+      }
+    },
+    {
+      "id": "ENT-021",
+      "projectSlug": "arbitrum",
+      "name": "Arbitrum OpCo Foundation",
+      "type": "Foundation",
+      "status": null,
+      "description": "Cayman Islands foundation company — operational mesh layer ArbitrumDAO, bertugas mengelola dan mengawasi inisiatif yang disetujui DAO; DAO mengalokasikan 30M ARB untuk pendanaan OpCo selama 2 tahun 6 bulan (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation/what-opco]"
+      }
+    },
+    {
+      "id": "ENT-022",
+      "projectSlug": "arbitrum",
+      "name": "Arbitrum DAO",
+      "type": "DAO",
+      "status": null,
+      "description": "Mekanisme tata kelola terdesentralisasi yang memungkinkan pemegang token ARB mengusulkan dan memilih perubahan pada organisasi dan teknologi yang diaturnya; mengatur The Arbitrum Foundation (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang (setelah TGE 23 Maret 2023)",
+        "exposureType": "financial-collateral (mengelola treasury ARB)",
+        "evidence": "(HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation]; [Blockchain.com, https://www.blockchain.com/learning-portal/tokens/arbitrum-explained]"
+      }
+    },
+    {
+      "id": "ENT-023",
+      "projectSlug": "arbitrum",
+      "name": "Security Council (Arbitrum DAO)",
+      "type": "DAO",
+      "status": null,
+      "description": "12 anggota yang dipilih oleh Arbitrum DAO melalui proses demokratis; bertanggung jawab atas keputusan sensitif-waktu dan tanggap darurat (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "unknown",
+        "evidence": "(HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation]"
+      }
+    },
+    {
+      "id": "ENT-024",
+      "projectSlug": "arbitrum",
+      "name": "Oversight and Transparency Committee (OAT)",
+      "type": "DAO",
+      "status": null,
+      "description": "5 anggota yang dipilih setiap tahun; bertanggung jawab memegang akuntabilitas Arbitrum OpCo Foundation, meratifikasi tugas operasional seperti anggaran tahunan, memberikan transparansi kepada ArbitrumDAO (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "unknown",
+        "evidence": "(HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation/what-opco]"
+      }
+    },
+    {
+      "id": "ENT-025",
+      "projectSlug": "arbitrum",
+      "name": "Lightspeed Venture Partners",
+      "type": "Investor",
+      "status": null,
+      "description": "Memimpin B Round ($120M, 31 Agustus 2021, valuasi $1.2B) (HIGH) ; Ecosystem partner untuk Arbitrum Mentorship Program (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "shared-investor-only",
+        "evidence": "(HIGH) [Binance, https://www.binance.com/en/square/post/18519034459322]; [Foresight News, https://foresightnews.pro/timeline/detail/71]; [DefiLlama, https://defillama.com/chain/Arbitrum]; [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]"
+      }
+    },
+    {
+      "id": "ENT-026",
+      "projectSlug": "arbitrum",
+      "name": "Pantera Capital",
+      "type": "Investor",
+      "status": null,
+      "description": "Memimpin Seed Round ($3.7M, April 2019) (HIGH) ; Berpartisipasi dalam B Round ($120M, 31 Agustus 2021) (HIGH) ; Ecosystem partner untuk Arbitrum Mentorship Program (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2019–sekarang",
+        "exposureType": "shared-investor-only",
+        "evidence": "(HIGH) [Foresight News, https://foresightnews.pro/timeline/detail/71]; [DefiLlama, https://defillama.com/chain/Arbitrum]; [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]; [Binance, https://www.binance.com/en/square/post/18519034459322]"
+      }
+    },
+    {
+      "id": "ENT-027",
+      "projectSlug": "arbitrum",
+      "name": "Polychain Capital",
+      "type": "Investor",
+      "status": null,
+      "description": "Berpartisipasi dalam B Round ($120M, 31 Agustus 2021) (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "shared-investor-only",
+        "evidence": "(HIGH) [Binance, https://www.binance.com/en/square/post/18519034459322]; [DefiLlama, https://defillama.com/chain/Arbitrum]; [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]"
+      }
+    },
+    {
+      "id": "ENT-028",
+      "projectSlug": "arbitrum",
+      "name": "Ribbit Capital",
+      "type": "Investor",
+      "status": null,
+      "description": "Berpartisipasi dalam B Round ($120M, 31 Agustus 2021) (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "shared-investor-only",
+        "evidence": "(HIGH) [Binance, https://www.binance.com/en/square/post/18519034459322]; [DefiLlama, https://defillama.com/chain/Arbitrum]; [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]"
+      }
+    },
+    {
+      "id": "ENT-029",
+      "projectSlug": "arbitrum",
+      "name": "Redpoint Ventures",
+      "type": "Investor",
+      "status": null,
+      "description": "Berpartisipasi dalam B Round ($120M, 31 Agustus 2021) (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "shared-investor-only",
+        "evidence": "(HIGH) [Binance, https://www.binance.com/en/square/post/18519034459322]; [DefiLlama, https://defillama.com/chain/Arbitrum]; [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]"
+      }
+    },
+    {
+      "id": "ENT-030",
+      "projectSlug": "arbitrum",
+      "name": "Alameda Research",
+      "type": "Investor",
+      "status": null,
+      "description": "Berpartisipasi dalam B Round ($120M, 31 Agustus 2021) (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang (catatan: Alameda Research telah kolaps)",
+        "exposureType": "shared-investor-only",
+        "evidence": "(HIGH) [Binance, https://www.binance.com/en/square/post/18519034459322]; [DefiLlama, https://defillama.com/chain/Arbitrum]; [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]"
+      }
+    },
+    {
+      "id": "ENT-031",
+      "projectSlug": "arbitrum",
+      "name": "Mark Cuban",
+      "type": "Person",
+      "status": null,
+      "description": "Berpartisipasi sebagai angel investor dalam B Round ($120M, 31 Agustus 2021) (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "shared-investor-only",
+        "evidence": "(HIGH) [Binance, https://www.binance.com/en/square/post/18519034459322]; [DefiLlama, https://defillama.com/chain/Arbitrum]; [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]"
+      }
+    },
+    {
+      "id": "ENT-032",
+      "projectSlug": "arbitrum",
+      "name": "Compound VC (Compound Ventures)",
+      "type": "Investor",
+      "status": null,
+      "description": "Berpartisipasi dalam Seed Round ($3.7M, April 2019) (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2019–sekarang",
+        "exposureType": "shared-investor-only",
+        "evidence": "(HIGH) [DefiLlama, https://defillama.com/chain/Arbitrum]; [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]"
+      }
+    },
+    {
+      "id": "ENT-033",
+      "projectSlug": "arbitrum",
+      "name": "Raphael Ouzan",
+      "type": "Person",
+      "status": null,
+      "description": "Berpartisipasi sebagai angel investor dalam Seed Round ($3.7M, April 2019) (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2019–sekarang",
+        "exposureType": "shared-investor-only",
+        "evidence": "(HIGH) [DefiLlama, https://defillama.com/chain/Arbitrum]; [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]"
+      }
+    },
+    {
+      "id": "ENT-034",
+      "projectSlug": "arbitrum",
+      "name": "Jake Seid",
+      "type": "Person",
+      "status": null,
+      "description": "Berpartisipasi sebagai angel investor dalam Seed Round ($3.7M, April 2019) (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2019–sekarang",
+        "exposureType": "shared-investor-only",
+        "evidence": "(HIGH) [DefiLlama, https://defillama.com/chain/Arbitrum]; [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]"
+      }
+    },
+    {
+      "id": "ENT-035",
+      "projectSlug": "arbitrum",
+      "name": "Coinbase Ventures",
+      "type": "Investor",
+      "status": null,
+      "description": "Berpartisipasi dalam pendanaan (September 2019) (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2019–sekarang",
+        "exposureType": "shared-investor-only",
+        "evidence": "(HIGH) [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]"
+      }
+    },
+    {
+      "id": "ENT-036",
+      "projectSlug": "arbitrum",
+      "name": "IOSG Ventures",
+      "type": "Investor",
+      "status": null,
+      "description": "Berpartisipasi dalam B Round ($120M, 31 Agustus 2021) (HIGH) ; Ecosystem partner untuk Arbitrum Mentorship Program (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "shared-investor-only",
+        "evidence": "(HIGH) [The Block Beats, https://www.theblockbeats.info]; [Arbitrum Foundation Blog, https://blog.arbitrum.foundation/meet-the-builders-the-first-cohort-of-arbitrum-mentorship-program/]"
+      }
+    },
+    {
+      "id": "ENT-037",
+      "projectSlug": "arbitrum",
+      "name": "Framework Ventures",
+      "type": "Investor",
+      "status": null,
+      "description": "Berpartisipasi dalam B Round ($120M, 31 Agustus 2021) (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "shared-investor-only",
+        "evidence": "(HIGH) [BTCC, https://www.btcc.com]"
+      }
+    },
+    {
+      "id": "ENT-038",
+      "projectSlug": "arbitrum",
+      "name": "2A Ventures",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor di Arbitrum Foundation (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "shared-investor-only",
+        "evidence": "(HIGH) [PitchBook, https://pitchbook.com]"
+      }
+    },
+    {
+      "id": "ENT-039",
+      "projectSlug": "arbitrum",
+      "name": "DeFiance Capital",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor di Arbitrum Foundation (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "shared-investor-only",
+        "evidence": "(HIGH) [PitchBook, https://pitchbook.com]"
+      }
+    },
+    {
+      "id": "ENT-040",
+      "projectSlug": "arbitrum",
+      "name": "Intersection Growth Partners",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor di Arbitrum Foundation (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "shared-investor-only",
+        "evidence": "(HIGH) [PitchBook, https://pitchbook.com]"
+      }
+    },
+    {
+      "id": "ENT-041",
+      "projectSlug": "arbitrum",
+      "name": "Mint Ventures (US)",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor di Arbitrum Foundation (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "shared-investor-only",
+        "evidence": "(HIGH) [PitchBook, https://pitchbook.com]"
+      }
+    },
+    {
+      "id": "ENT-042",
+      "projectSlug": "arbitrum",
+      "name": "Pomp Investments",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor di Arbitrum Foundation (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "shared-investor-only",
+        "evidence": "(HIGH) [PitchBook, https://pitchbook.com]"
+      }
+    },
+    {
+      "id": "ENT-043",
+      "projectSlug": "arbitrum",
+      "name": "Binance",
+      "type": "Company",
+      "status": null,
+      "description": "Menyediakan trading ARB (ARB/USDT, ARB/USDC, ARB/BTC) (HIGH) ; Sumber informasi resmi Arbitrum (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [CoinLore, https://www.coinlore.com]; [CoinDesk, https://www.coindesk.com]"
+      }
+    },
+    {
+      "id": "ENT-044",
+      "projectSlug": "arbitrum",
+      "name": "HTX (Huobi)",
+      "type": "Company",
+      "status": null,
+      "description": "Menyediakan trading ARB; sumber informasi resmi Arbitrum (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [HTX, https://www.huobi.com/en-us/assets/details/arbitrum/]"
+      }
+    },
+    {
+      "id": "ENT-045",
+      "projectSlug": "arbitrum",
+      "name": "Gate.io",
+      "type": "Company",
+      "status": null,
+      "description": "Menyediakan trading ARB (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [CoinLore, https://www.coinlore.com]"
+      }
+    },
+    {
+      "id": "ENT-046",
+      "projectSlug": "arbitrum",
+      "name": "MEXC Global",
+      "type": "Company",
+      "status": null,
+      "description": "Menyediakan trading ARB (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [CoinLore, https://www.coinlore.com]"
+      }
+    },
+    {
+      "id": "ENT-047",
+      "projectSlug": "arbitrum",
+      "name": "OKX",
+      "type": "Company",
+      "status": null,
+      "description": "Menyediakan trading ARB (ARB/USDT) (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [CoinDesk, https://www.coindesk.com]"
+      }
+    },
+    {
+      "id": "ENT-048",
+      "projectSlug": "arbitrum",
+      "name": "Bybit",
+      "type": "Company",
+      "status": null,
+      "description": "Menyediakan trading ARB (ARB/USDT) (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [CoinDesk, https://www.coindesk.com]"
+      }
+    },
+    {
+      "id": "ENT-049",
+      "projectSlug": "arbitrum",
+      "name": "WhiteBIT",
+      "type": "Company",
+      "status": null,
+      "description": "Menyediakan trading ARB (ARB/USDT) (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [CoinDesk, https://www.coindesk.com]"
+      }
+    },
+    {
+      "id": "ENT-050",
+      "projectSlug": "arbitrum",
+      "name": "Kraken",
+      "type": "Company",
+      "status": null,
+      "description": "Mendukung native USDC di Arbitrum Network (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Rise Works, https://help.riseworks.io]"
+      }
+    },
+    {
+      "id": "ENT-051",
+      "projectSlug": "arbitrum",
+      "name": "Robinhood",
+      "type": "Company",
+      "status": null,
+      "description": "Robinhood Chain dibangun di atas teknologi Arbitrum (L2); revenue-sharing 10% — 8% ke Arbitrum DAO treasury, 2% ke Arbitrum Developer Guild (HIGH) ; Robinhood melakukan tokenisasi 1900+ aset di Arbitrum senilai $16M (per 2025) (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2025–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [KuCoin, https://www.kucoin.com]; [AnueNews, https://anuenews.cnyes.com]"
+      }
+    },
+    {
+      "id": "ENT-052",
+      "projectSlug": "arbitrum",
+      "name": "LG Electronics",
+      "type": "Company",
+      "status": null,
+      "description": "Kerjasama membangun blockchain advertising network berbasis Arbitrum untuk pasar iklan digital; masih dalam tahap evaluasi dan eksplorasi (per Fortune, Juni 2026) (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2026–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Gate.tv, http://gate.tv/zh/news/detail/lg-electronics-with-arbitrum-moves-into-the-679-billion-advertising-market-21798280]"
+      }
+    },
+    {
+      "id": "ENT-053",
+      "projectSlug": "arbitrum",
+      "name": "LG CNS",
+      "type": "Company",
+      "status": null,
+      "description": "Anak perusahaan LG Group — mengembangkan enterprise blockchain Monachain (2018) (MEDIUM)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2018–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(MEDIUM) [Gate.tv, http://gate.tv/zh/news/detail/lg-electronics-with-arbitrum-moves-into-the-679-billion-advertising-market-21798280]"
+      }
+    },
+    {
+      "id": "ENT-054",
+      "projectSlug": "arbitrum",
+      "name": "Dentsu",
+      "type": "Security",
+      "status": null,
+      "description": "Diestimasi oleh Dentsu — digital advertising spending diproyeksikan mencapai $679B pada 2025 (68% dari total global ad spend) — disebut dalam konteks partnership LG-Arbitrum (MEDIUM)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2025",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(MEDIUM) [Gate.tv, http://gate.tv/zh/news/detail/lg-electronics-with-arbitrum-moves-into-the-679-billion-advertising-market-21798280]"
+      }
+    },
+    {
+      "id": "ENT-055",
+      "projectSlug": "arbitrum",
+      "name": "Ledger",
+      "type": "Company",
+      "status": null,
+      "description": "Ekosistem Arbitrum terintegrasi penuh dengan Ledger — pengguna dapat mengirim dan menerima ARB melalui Ledger Live (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Foresight News, https://foresightnews.pro/timeline/detail/71]"
+      }
+    },
+    {
+      "id": "ENT-056",
+      "projectSlug": "arbitrum",
+      "name": "Electric Capital",
+      "type": "Investor",
+      "status": null,
+      "description": "Ecosystem partner untuk Arbitrum Mentorship Program (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "shared-investor-only",
+        "evidence": "(HIGH) [Arbitrum Foundation Blog, https://blog.arbitrum.foundation/meet-the-builders-the-first-cohort-of-arbitrum-mentorship-program/]"
+      }
+    },
+    {
+      "id": "ENT-057",
+      "projectSlug": "arbitrum",
+      "name": "Tandem (by Offchain Labs)",
+      "type": "Company",
+      "status": null,
+      "description": "Divisi baru Offchain Labs (diumumkan Agustus 2024) — fokus pada adopsi mainstream blockchain di luar ekosistem Arbitrum; investasi $10M dari Offchain Labs; kemitraan dengan Robinhood dan game blockchain (HIGH) ; Ecosystem partner untuk Arbitrum Mentorship Program (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2024–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Binance, https://www.binance.com]; [Bitget, https://www.bitgetapp.com]"
+      }
+    },
+    {
+      "id": "ENT-058",
+      "projectSlug": "arbitrum",
+      "name": "GMX",
+      "type": "Protocol",
+      "status": null,
+      "description": "DEX perpetual terbesar di Arbitrum — TVL $346.3M (per Jan 2026) (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [Gate, https://web3.gate.com/zh/crypto-wiki/article/learn-about-the-arbitrum-ecosystem-20260112]"
+      }
+    },
+    {
+      "id": "ENT-059",
+      "projectSlug": "arbitrum",
+      "name": "Aave V3",
+      "type": "Protocol",
+      "status": null,
+      "description": "Protokol lending di Arbitrum — TVL $424.46M (per data DefiLlama) (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [DefiLlama, https://defillama.com/chain/Arbitrum]"
+      }
+    },
+    {
+      "id": "ENT-060",
+      "projectSlug": "arbitrum",
+      "name": "Pendle",
+      "type": "Protocol",
+      "status": null,
+      "description": "Ecosystem partner untuk Arbitrum Mentorship Program (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Arbitrum Foundation Blog, https://blog.arbitrum.foundation/meet-the-builders-the-first-cohort-of-arbitrum-mentorship-program/]"
+      }
+    },
+    {
+      "id": "ENT-061",
+      "projectSlug": "arbitrum",
+      "name": "Variational",
+      "type": "Protocol",
+      "status": null,
+      "description": "Ecosystem partner untuk Arbitrum Mentorship Program (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Arbitrum Foundation Blog, https://blog.arbitrum.foundation/meet-the-builders-the-first-cohort-of-arbitrum-mentorship-program/]"
+      }
+    },
+    {
+      "id": "ENT-062",
+      "projectSlug": "arbitrum",
+      "name": "Horizen Labs",
+      "type": "Protocol",
+      "status": null,
+      "description": "Ecosystem partner untuk Arbitrum Mentorship Program (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Arbitrum Foundation Blog, https://blog.arbitrum.foundation/meet-the-builders-the-first-cohort-of-arbitrum-mentorship-program/]"
+      }
+    },
+    {
+      "id": "ENT-063",
+      "projectSlug": "arbitrum",
+      "name": "Dopex",
+      "type": "Protocol",
+      "status": null,
+      "description": "Protokol opsi Eropa di Arbitrum — TVL $20.57M (per Jan 2026); proyek native di ekosistem Arbitrum (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [Gate, https://web3.gate.com/zh/crypto-wiki/article/learn-about-the-arbitrum-ecosystem-20260112]"
+      }
+    },
+    {
+      "id": "ENT-064",
+      "projectSlug": "arbitrum",
+      "name": "TreasureDAO",
+      "type": "DAO",
+      "status": null,
+      "description": "Pemimpin di pasar NFT di Arbitrum (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [Gate, https://web3.gate.com/zh/crypto-wiki/article/learn-about-the-arbitrum-ecosystem-20260112]"
+      }
+    },
+    {
+      "id": "ENT-065",
+      "projectSlug": "arbitrum",
+      "name": "Bridgeworld",
+      "type": "Protocol",
+      "status": null,
+      "description": "Metaverse game di Arbitrum — NFT series-nya長期受到關注 (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [Gate, https://web3.gate.com/zh/crypto-wiki/article/learn-about-the-arbitrum-ecosystem-20260112]"
+      }
+    },
+    {
+      "id": "ENT-066",
+      "projectSlug": "arbitrum",
+      "name": "Arbitrum Gaming Ventures",
+      "type": "Company",
+      "status": null,
+      "description": "Program pendukung pengembangan game di Arbitrum — menyediakan pendanaan dan sumber daya untuk game developer, publisher, dan proyek infrastruktur (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Messari, https://messari.io]"
+      }
+    },
+    {
+      "id": "ENT-067",
+      "projectSlug": "arbitrum",
+      "name": "DODO",
+      "type": "Protocol",
+      "status": null,
+      "description": "Menerima pendanaan dari Arbitrum Foundation (Mei 2026) (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2026–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [ChainCatcher, https://www.chaincatcher.com]"
+      }
+    },
+    {
+      "id": "ENT-068",
+      "projectSlug": "arbitrum",
+      "name": "Double",
+      "type": "Protocol",
+      "status": null,
+      "description": "Menerima pendanaan dari Arbitrum Foundation (Mei 2026) — fokus pada liquidity (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2026–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [ChainCatcher, https://www.chaincatcher.com]"
+      }
+    },
+    {
+      "id": "ENT-069",
+      "projectSlug": "arbitrum",
+      "name": "DeSyn Protocol",
+      "type": "Protocol",
+      "status": null,
+      "description": "Menerima pendanaan dari Arbitrum Foundation (Mei 2026) — DeFi asset management protocol (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2026–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [ChainCatcher, https://www.chaincatcher.com]"
+      }
+    },
+    {
+      "id": "ENT-070",
+      "projectSlug": "arbitrum",
+      "name": "Panoptic",
+      "type": "Protocol",
+      "status": null,
+      "description": "Menerima pendanaan dari Arbitrum Foundation (Mei 2026) — fokus pada options trading (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2026–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [ChainCatcher, https://www.chaincatcher.com]"
+      }
+    },
+    {
+      "id": "ENT-071",
+      "projectSlug": "arbitrum",
+      "name": "Catalyst",
+      "type": "Protocol",
+      "status": null,
+      "description": "Menerima pendanaan dari Arbitrum Foundation (Mei 2026) — cross-chain swap untuk instant liquidity (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2026–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [ChainCatcher, https://www.chaincatcher.com]"
+      }
+    },
+    {
+      "id": "ENT-072",
+      "projectSlug": "arbitrum",
+      "name": "Blade Games",
+      "type": "Protocol",
+      "status": null,
+      "description": "Menerima pendanaan dari Arbitrum Foundation (Mei 2026) — modular ZK onchain game engine (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2026–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [ChainCatcher, https://www.chaincatcher.com]"
+      }
+    },
+    {
+      "id": "ENT-073",
+      "projectSlug": "arbitrum",
+      "name": "ZTX",
+      "type": "Protocol",
+      "status": null,
+      "description": "Menerima pendanaan dari Arbitrum Foundation (Mei 2026) — P2E platform (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2026–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [ChainCatcher, https://www.chaincatcher.com]"
+      }
+    },
+    {
+      "id": "ENT-074",
+      "projectSlug": "arbitrum",
+      "name": "Mithraeum",
+      "type": "Protocol",
+      "status": null,
+      "description": "Menerima pendanaan dari Arbitrum Foundation (Mei 2026) — on-chain strategy game (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2026–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [ChainCatcher, https://www.chaincatcher.com]"
+      }
+    },
+    {
+      "id": "ENT-075",
+      "projectSlug": "arbitrum",
+      "name": "Messari",
+      "type": "Security",
+      "status": null,
+      "description": "Menerbitkan profil dan riset tentang Arbitrum (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [Messari, https://messari.io/project/arbitrum/profile]"
+      }
+    },
+    {
+      "id": "ENT-076",
+      "projectSlug": "arbitrum",
+      "name": "The Tie",
+      "type": "Security",
+      "status": null,
+      "description": "Menerbitkan research report tentang Arbitrum — menyebut Arbitrum sebagai kompetitor kuat di Layer 2 (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [HTX, https://www.htx.com]"
+      }
+    },
+    {
+      "id": "ENT-077",
+      "projectSlug": "arbitrum",
+      "name": "ARK Invest",
+      "type": "Security",
+      "status": null,
+      "description": "Mengomentari struktur revenue Robinhood Chain di Arbitrum — menyebut Robinhood ~89%, Arbitrum ~10%, Ethereum ~0.15% (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [Longbridge, https://longbridge.com]"
+      }
+    },
+    {
+      "id": "ENT-078",
+      "projectSlug": "arbitrum",
+      "name": "Lark Davis",
+      "type": null,
+      "status": null,
+      "description": "Mengkritisi valuasi ARB — menyebut Arbitrum memiliki technical performance dan user base yang besar tapi ada gap antara narrative dan on-chain data (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [TokenPost, https://tw.tokenpost.com]"
+      }
+    },
+    {
+      "id": "ENT-079",
+      "projectSlug": "arbitrum",
+      "name": "Bitstamp",
+      "type": "Company",
+      "status": null,
+      "description": "Menerbitkan panduan tentang Arbitrum (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [Bitstamp, https://www.bitstamp.net/learn/cryptocurrency-guide/what-is-arbitrum/]"
+      }
+    },
+    {
+      "id": "ENT-080",
+      "projectSlug": "arbitrum",
+      "name": "Blockchain.com",
+      "type": "Company",
+      "status": null,
+      "description": "Menerbitkan pembelajaran tentang ARB (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [Blockchain.com, https://www.blockchain.com/learning-portal/tokens/arbitrum-explained]"
+      }
+    },
+    {
+      "id": "ENT-081",
+      "projectSlug": "arbitrum",
+      "name": "Uphold",
+      "type": "Company",
+      "status": null,
+      "description": "Menyediakan harga dan informasi ARB (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [Uphold, https://uphold.com/en-eu/prices/crypto/arbitrum]"
+      }
+    },
+    {
+      "id": "ENT-082",
+      "projectSlug": "arbitrum",
+      "name": "Weiss Ratings",
+      "type": "Security",
+      "status": null,
+      "description": "Menerbitkan rating tentang Arbitrum (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [Weiss Ratings, https://weissratings.com/en/crypto/arbitrum]"
+      }
+    },
+    {
+      "id": "ENT-083",
+      "projectSlug": "arbitrum",
+      "name": "CoinMarketCap",
+      "type": "Security",
+      "status": null,
+      "description": "Menerbitkan artikel dan data tentang Arbitrum (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [CoinMarketCap, https://coinmarketcap.com]"
+      }
+    },
+    {
+      "id": "ENT-084",
+      "projectSlug": "arbitrum",
+      "name": "CoinGecko",
+      "type": "Security",
+      "status": null,
+      "description": "Menyediakan data exchange untuk Arbitrum One (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [Livepeer Docs, https://docs.livepeer.org]"
+      }
+    },
+    {
+      "id": "ENT-085",
+      "projectSlug": "arbitrum",
+      "name": "DefiLlama",
+      "type": "Security",
+      "status": null,
+      "description": "Menyediakan data TVL, fees, revenue, dan investor untuk Arbitrum (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [DefiLlama, https://defillama.com/chain/Arbitrum]"
+      }
+    },
+    {
+      "id": "ENT-086",
+      "projectSlug": "arbitrum",
+      "name": "Dune Analytics",
+      "type": "Security",
+      "status": null,
+      "description": "Menyediakan data chain tentang Arbitrum — disebut dalam Foresight News (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [Foresight News, https://foresightnews.pro/timeline/detail/71]"
+      }
+    },
+    {
+      "id": "ENT-087",
+      "projectSlug": "arbitrum",
+      "name": "Arbiscan",
+      "type": "Protocol",
+      "status": null,
+      "description": "Block explorer utama untuk Arbitrum One (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Arbitrum Docs, https://docs.arbitrum.io/for-devs/dev-tools-and-resources/chain-info]; [Arbiscan, https://arbiscan.io/]"
+      }
+    },
+    {
+      "id": "ENT-088",
+      "projectSlug": "arbitrum",
+      "name": "Blockscout",
+      "type": "Protocol",
+      "status": null,
+      "description": "Block explorer untuk Arbitrum One dan Arbitrum Nova (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Arbitrum Docs, https://docs.arbitrum.io/for-devs/dev-tools-and-resources/chain-info]"
+      }
+    },
+    {
+      "id": "ENT-089",
+      "projectSlug": "arbitrum",
+      "name": "Succinct",
+      "type": "Protocol",
+      "status": null,
+      "description": "Kemitraan ZK dengan Arbitrum untuk Ethereum scaling (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Bitget, https://www.bitget.com]"
+      }
+    },
+    {
+      "id": "ENT-090",
+      "projectSlug": "arbitrum",
+      "name": "Curvance",
+      "type": "Protocol",
+      "status": null,
+      "description": "Menerima investasi dari Offchain Labs (Seed) (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Messari, https://messari.io/organization/offchain-labs]"
+      }
+    },
+    {
+      "id": "ENT-091",
+      "projectSlug": "arbitrum",
+      "name": "Huddle01",
+      "type": "Protocol",
+      "status": null,
+      "description": "Menerima investasi dari Offchain Labs (Undisclosed, 02/02/2026) (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2026–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Messari, https://messari.io/organization/offchain-labs]"
+      }
+    },
+    {
+      "id": "ENT-092",
+      "projectSlug": "arbitrum",
+      "name": "SpaceComputer",
+      "type": "Protocol",
+      "status": null,
+      "description": "Menerima investasi dari Offchain Labs (Seed, 11/26/2025) (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2025–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Messari, https://messari.io/organization/offchain-labs]"
+      }
+    },
+    {
+      "id": "ENT-093",
+      "projectSlug": "arbitrum",
+      "name": "DigiFT",
+      "type": "Protocol",
+      "status": null,
+      "description": "Menerima investasi dari Offchain Labs (Strategic, 08/21/2025) (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2025–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Messari, https://messari.io/organization/offchain-labs]"
+      }
+    },
+    {
+      "id": "ENT-094",
+      "projectSlug": "arbitrum",
+      "name": "Fhenix",
+      "type": "Protocol",
+      "status": null,
+      "description": "Menerima investasi dari Offchain Labs (Strategic, 03/26/2025) — Layer-1 privacy networks (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2025–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Messari, https://messari.io/organization/offchain-labs]"
+      }
+    },
+    {
+      "id": "ENT-095",
+      "projectSlug": "arbitrum",
+      "name": "Camelot",
+      "type": "Protocol",
+      "status": null,
+      "description": "Menerima investasi dari Offchain Labs (Strategic, 01/22/2025) — DEX (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2025–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Messari, https://messari.io/organization/offchain-labs]"
+      }
+    },
+    {
+      "id": "ENT-096",
+      "projectSlug": "arbitrum",
+      "name": "Corn",
+      "type": "Protocol",
+      "status": null,
+      "description": "Menerima investasi dari Offchain Labs (Public Token Sale, 01/22/2025) — Bitcoin Layer-2 (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2025–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Messari, https://messari.io/organization/offchain-labs]"
+      }
+    },
+    {
+      "id": "ENT-097",
+      "projectSlug": "arbitrum",
+      "name": "AlloyX",
+      "type": "Protocol",
+      "status": null,
+      "description": "Menerima investasi dari Offchain Labs (Pre-Series A, 01/03/2025) — RWA (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2025–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Messari, https://messari.io/organization/offchain-labs]"
+      }
+    },
+    {
+      "id": "ENT-098",
+      "projectSlug": "arbitrum",
+      "name": "DuckChain",
+      "type": "Protocol",
+      "status": null,
+      "description": "Menerima investasi dari Offchain Labs (Undisclosed, 12/20/2024) (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2024–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Messari, https://messari.io/organization/offchain-labs]"
+      }
+    },
+    {
+      "id": "ENT-099",
+      "projectSlug": "arbitrum",
+      "name": "Darkbright Studios",
+      "type": "Protocol",
+      "status": null,
+      "description": "Menerima investasi dari Offchain Labs (Seed, 09/23/2024) — gaming studio (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2024–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Messari, https://messari.io/organization/offchain-labs]"
+      }
+    },
+    {
+      "id": "ENT-100",
+      "projectSlug": "arbitrum",
+      "name": "Fabric Cryptography",
+      "type": "Protocol",
+      "status": null,
+      "description": "Menerima investasi dari Offchain Labs (Series A, 08/19/2024) — AI infrastructure (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2024–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Messari, https://messari.io/organization/offchain-labs]"
+      }
+    },
+    {
+      "id": "ENT-101",
+      "projectSlug": "arbitrum",
+      "name": "Princeton University",
+      "type": "Company",
+      "status": null,
+      "description": "Tempat ketiga co-founder (Ed Felten, Steven Goldfeder, Harry Kalodner) bertemu dan memulai riset Arbitrum (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "sebelum 2018",
+        "exposureType": "unknown",
+        "evidence": "(HIGH) [Messari, https://messari.io/project/arbitrum/profile]; [Bitstamp, https://www.bitstamp.net/learn/cryptocurrency-guide/what-is-arbitrum/]"
+      }
+    },
+    {
+      "id": "ENT-102",
+      "projectSlug": "arbitrum",
+      "name": "White House (Barack Obama administration)",
+      "type": "Government",
+      "status": null,
+      "description": "Ed Felten menjabat sebagai Deputy Chief Technology Officer di masa pemerintahan Barack Obama sebelum kembali ke Princeton (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "sebelum 2018",
+        "exposureType": "unknown",
+        "evidence": "(HIGH) [HTX, https://www.htx.com.co]; [Foresight News, https://foresightnews.pro/timeline/detail/71]"
+      }
+    },
+    {
+      "id": "ENT-103",
+      "projectSlug": "arbitrum",
+      "name": "Goldman Sachs",
+      "type": "Company",
+      "status": null,
+      "description": "Campbell Law, initial director Arbitrum Foundation, bekerja 11 tahun sebagai VP di Goldman Sachs (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "sebelum menjadi director",
+        "exposureType": "unknown",
+        "evidence": "(HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation/foundational-documents/transparency-report-initial-foundation-setup]"
+      }
+    },
+    {
+      "id": "ENT-104",
+      "projectSlug": "arbitrum",
+      "name": "BlackRock",
+      "type": "Company",
+      "status": null,
+      "description": "Ani Banerjee, initial director Arbitrum Foundation, bekerja sebagai investor di BlackRock (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "sebelum menjadi director",
+        "exposureType": "unknown",
+        "evidence": "(HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation/foundational-documents/transparency-report-initial-foundation-setup]"
+      }
+    },
+    {
+      "id": "ENT-105",
+      "projectSlug": "arbitrum",
+      "name": "Citigroup",
+      "type": "Company",
+      "status": null,
+      "description": "Ani Banerjee, initial director Arbitrum Foundation, bekerja sebagai investor di Citigroup (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "sebelum menjadi director",
+        "exposureType": "unknown",
+        "evidence": "(HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation/foundational-documents/transparency-report-initial-foundation-setup]"
+      }
+    },
+    {
+      "id": "ENT-106",
+      "projectSlug": "arbitrum",
+      "name": "Cheyne Capital",
+      "type": "Company",
+      "status": null,
+      "description": "Ani Banerjee, initial director Arbitrum Foundation, bekerja sebagai investor di Cheyne Capital (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "sebelum menjadi director",
+        "exposureType": "unknown",
+        "evidence": "(HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation/foundational-documents/transparency-report-initial-foundation-setup]"
+      }
+    },
+    {
+      "id": "ENT-107",
+      "projectSlug": "arbitrum",
+      "name": "Silverside Ltd",
+      "type": "Company",
+      "status": null,
+      "description": "Didirikan oleh Campbell Law — initial director Arbitrum Foundation (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "unknown",
+        "evidence": "(HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation/foundational-documents/transparency-report-initial-foundation-setup]"
+      }
+    },
+    {
+      "id": "ENT-108",
+      "projectSlug": "arbitrum",
+      "name": "Provenance Ltd",
+      "type": "Company",
+      "status": null,
+      "description": "Didirikan bersama oleh Campbell Law — initial director Arbitrum Foundation (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "unknown",
+        "evidence": "(HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation/foundational-documents/transparency-report-initial-foundation-setup]"
+      }
+    },
+    {
+      "id": "ENT-109",
+      "projectSlug": "arbitrum",
+      "name": "Marfire",
+      "type": "Company",
+      "status": null,
+      "description": "Edward Noyons — initial director Arbitrum Foundation — adalah director di Marfire (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "unknown",
+        "evidence": "(HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation/foundational-documents/transparency-report-initial-foundation-setup]"
+      }
+    },
+    {
+      "id": "ENT-110",
+      "projectSlug": "arbitrum",
+      "name": "Autonomous",
+      "type": "Company",
+      "status": null,
+      "description": "Edward Noyons — initial director Arbitrum Foundation — adalah co-founder Autonomous (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "unknown",
+        "evidence": "(HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation/foundational-documents/transparency-report-initial-foundation-setup]"
+      }
+    },
+    {
+      "id": "ENT-111",
+      "projectSlug": "arbitrum",
+      "name": "Leeward Management Limited",
+      "type": "Company",
+      "status": null,
+      "description": "Registered office dari Arbitrum OpCo Foundation beralamat di kantor Leeward Management Limited, Cayman Islands (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "unknown",
+        "evidence": "(HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation]"
+      }
+    },
+    {
+      "id": "ENT-112",
+      "projectSlug": "arbitrum",
+      "name": "Exodus",
+      "type": "Protocol",
+      "status": null,
+      "description": "Kontributor tokenisasi aset saham di Arbitrum (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [AnueNews, https://anuenews.cnyes.com]"
+      }
+    },
+    {
+      "id": "ENT-113",
+      "projectSlug": "arbitrum",
+      "name": "Bitmine",
+      "type": "Company",
+      "status": null,
+      "description": "Disebut sebagai aset yang ditokenisasi di Arbitrum (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [AnueNews, https://anuenews.cnyes.com]"
+      }
+    },
+    {
+      "id": "ENT-114",
+      "projectSlug": "arbitrum",
+      "name": "Microsoft",
+      "type": "Company",
+      "status": null,
+      "description": "Disebut sebagai aset yang ditokenisasi di Arbitrum (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [AnueNews, https://anuenews.cnyes.com]"
+      }
+    },
+    {
+      "id": "ENT-115",
+      "projectSlug": "arbitrum",
+      "name": "Meta",
+      "type": "Company",
+      "status": null,
+      "description": "Disebut sebagai aset yang ditokenisasi di Arbitrum (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "tidak diketahui–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [AnueNews, https://anuenews.cnyes.com]"
+      }
+    },
+    {
+      "id": "ENT-116",
+      "projectSlug": "arbitrum",
+      "name": "Carbon",
+      "type": "Protocol",
+      "status": null,
+      "description": "Peserta Arbitrum Mentorship Program cohort pertama — DEX yang menghubungkan off-chain markets (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2026–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Arbitrum Foundation Blog, https://blog.arbitrum.foundation/meet-the-builders-the-first-cohort-of-arbitrum-mentorship-program/]"
+      }
+    },
+    {
+      "id": "ENT-117",
+      "projectSlug": "arbitrum",
+      "name": "Prism",
+      "type": "Protocol",
+      "status": null,
+      "description": "Peserta Arbitrum Mentorship Program cohort pertama — superapp AMM, launchpad, prediction markets, perps (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2026–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Arbitrum Foundation Blog, https://blog.arbitrum.foundation/meet-the-builders-the-first-cohort-of-arbitrum-mentorship-program/]"
+      }
+    },
+    {
+      "id": "ENT-118",
+      "projectSlug": "arbitrum",
+      "name": "LayerV",
+      "type": "Protocol",
+      "status": null,
+      "description": "Peserta Arbitrum Mentorship Program cohort pertama — options exchange di Arbitrum (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2026–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Arbitrum Foundation Blog, https://blog.arbitrum.foundation/meet-the-builders-the-first-cohort-of-arbitrum-mentorship-program/]"
+      }
+    },
+    {
+      "id": "ENT-119",
+      "projectSlug": "arbitrum",
+      "name": "T3tris",
+      "type": "Protocol",
+      "status": null,
+      "description": "Peserta Arbitrum Mentorship Program cohort pertama — asset management onchain (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2026–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Arbitrum Foundation Blog, https://blog.arbitrum.foundation/meet-the-builders-the-first-cohort-of-arbitrum-mentorship-program/]"
+      }
+    },
+    {
+      "id": "ENT-120",
+      "projectSlug": "arbitrum",
+      "name": "Twyne",
+      "type": "Protocol",
+      "status": null,
+      "description": "Peserta Arbitrum Mentorship Program cohort pertama — credit delegation layer di atas Euler dan Aave (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2026–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Arbitrum Foundation Blog, https://blog.arbitrum.foundation/meet-the-builders-the-first-cohort-of-arbitrum-mentorship-program/]"
+      }
+    },
+    {
+      "id": "ENT-121",
+      "projectSlug": "arbitrum",
+      "name": "Capa",
+      "type": "Protocol",
+      "status": null,
+      "description": "Peserta Arbitrum Mentorship Program cohort pertama — $2M ARR, $150M monthly TPV, +30% MoM growth di Arbitrum (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2026–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Arbitrum Foundation Blog, https://blog.arbitrum.foundation/meet-the-builders-the-first-cohort-of-arbitrum-mentorship-program/]"
+      }
+    },
+    {
+      "id": "ENT-122",
+      "projectSlug": "arbitrum",
+      "name": "USDre",
+      "type": "Protocol",
+      "status": null,
+      "description": "Peserta Arbitrum Mentorship Program cohort pertama — real estate financing standardization (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2026–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Arbitrum Foundation Blog, https://blog.arbitrum.foundation/meet-the-builders-the-first-cohort-of-arbitrum-mentorship-program/]"
+      }
+    }
+  ]
+}
