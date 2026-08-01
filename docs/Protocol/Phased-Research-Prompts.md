@@ -4677,11 +4677,17 @@ wired up yet:
   against the real Arbitrum dossier: 7 decision events now extract cleanly (was 0), and LayerZero's
   existing Track A/B dossier still extracts its original 15 unchanged. `tools/sync_supabase.py` and the
   live `cif_decision_events` Supabase table were updated to carry the six new fields through too.
-- **ASCII box-drawing diagrams in the Knowledge Dependency Graph section get visually mangled** by
-  `tools/extract.py`'s `normalise()` — it collapses runs of 2+ spaces for ordinary paragraph reflow, which
-  also destroys the diagram's column alignment. No data is lost (every line survives, just misaligned); this
-  only matters if a human is expected to read the rendered box art rather than an LLM parsing the semantic
-  content.
+- ~~ASCII box-drawing diagrams in the Knowledge Dependency Graph section get visually mangled by
+  `tools/extract.py`'s `normalise()`~~ — **resolved.** Fenced (```` ``` ````) blocks — which is how Track C's
+  CIF Manifest, Dependency Graph boxes, and score formulas are always written — are now stashed out before
+  the prose-reflow logic runs and restored verbatim afterward, so their spacing/alignment survives
+  untouched. Verified byte-identical against all 15 fenced blocks in the real Arbitrum Phase 11 content, and
+  zero regression on existing non-fenced content (re-extracted an archived real `.docx` and got identical
+  output before/after this change).
+
+All three open items above are now resolved as of this pass — Track C's output flows through the full
+pipeline (`tools/ingest.py`, `tools/extract_decision_events.py`, `tools/sync_supabase.py`) the same as
+Track A/B's.
 
 ## Related Files
 
