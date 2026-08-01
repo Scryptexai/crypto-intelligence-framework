@@ -133,7 +133,11 @@ def parse_knowledge(text, project_name):
             dep_source = f"{fields['Supporting Dataset'] or ''} {fields['Evidence'] or ''}"
             dependencies = sorted(set(re.findall(r"EV-\d+", dep_source)))
             items.append({
-                "id": f"K-{idx:03d}",
+                # Intelligence Workspace's `knowledge_items` table keys on a bare `id` (not
+                # composite with project_slug -- see src/db/schema.ts), so this must be
+                # globally unique across every project ever synced, not just within one
+                # dossier -- a second Track C project would otherwise collide on "K-001".
+                "id": f"{_slugify(project_name)}-K-{idx:03d}",
                 "projectSlug": _slugify(project_name),
                 "name": name,
                 "category": category,

@@ -1,7 +1,7 @@
 {
   "Arbitrum": [
     {
-      "id": "K-001",
+      "id": "arbitrum-K-001",
       "projectSlug": "arbitrum",
       "name": "Product-Market Fit Before Tokenization",
       "category": "Core Insight",
@@ -20,7 +20,7 @@
       ]
     },
     {
-      "id": "K-002",
+      "id": "arbitrum-K-002",
       "projectSlug": "arbitrum",
       "name": "Disciplined Treasury Management as a Competitive Advantage",
       "category": "Core Insight",
@@ -35,7 +35,7 @@
       "dependencies": []
     },
     {
-      "id": "K-003",
+      "id": "arbitrum-K-003",
       "projectSlug": "arbitrum",
       "name": "Institutional Adoption Requires More Than Marketing",
       "category": "Core Insight",
@@ -52,7 +52,7 @@
       ]
     },
     {
-      "id": "K-004",
+      "id": "arbitrum-K-004",
       "projectSlug": "arbitrum",
       "name": "Progressive Decentralization Requires Trade-offs",
       "category": "Core Insight",
@@ -70,7 +70,7 @@
       ]
     },
     {
-      "id": "K-005",
+      "id": "arbitrum-K-005",
       "projectSlug": "arbitrum",
       "name": "DAO Governance Must Evolve Through Failure",
       "category": "Core Insight",
@@ -88,7 +88,7 @@
       ]
     },
     {
-      "id": "K-006",
+      "id": "arbitrum-K-006",
       "projectSlug": "arbitrum",
       "name": "Builder Retention Trumps Builder Attraction",
       "category": "Core Insight",
@@ -103,7 +103,7 @@
       "dependencies": []
     },
     {
-      "id": "K-007",
+      "id": "arbitrum-K-007",
       "projectSlug": "arbitrum",
       "name": "Ethereum Alignment First",
       "category": "Strategic Principle",
@@ -120,7 +120,7 @@
       ]
     },
     {
-      "id": "K-008",
+      "id": "arbitrum-K-008",
       "projectSlug": "arbitrum",
       "name": "Progressive Decentralization",
       "category": "Strategic Principle",
@@ -141,7 +141,7 @@
       ]
     },
     {
-      "id": "K-009",
+      "id": "arbitrum-K-009",
       "projectSlug": "arbitrum",
       "name": "Sustainability Over Growth",
       "category": "Strategic Principle",
@@ -156,7 +156,7 @@
       "dependencies": []
     },
     {
-      "id": "K-010",
+      "id": "arbitrum-K-010",
       "projectSlug": "arbitrum",
       "name": "Product-Led Tokenization",
       "category": "Strategic Principle",
@@ -174,7 +174,7 @@
       ]
     },
     {
-      "id": "K-011",
+      "id": "arbitrum-K-011",
       "projectSlug": "arbitrum",
       "name": "Institutional-First Ecosystem Development",
       "category": "Strategic Principle",
@@ -189,7 +189,7 @@
       "dependencies": []
     },
     {
-      "id": "K-012",
+      "id": "arbitrum-K-012",
       "projectSlug": "arbitrum",
       "name": "Deepest L2 DeFi Liquidity",
       "category": "Success Factor",
@@ -204,7 +204,7 @@
       "dependencies": []
     },
     {
-      "id": "K-013",
+      "id": "arbitrum-K-013",
       "projectSlug": "arbitrum",
       "name": "Institutional Adoption First-Mover",
       "category": "Success Factor",
@@ -221,7 +221,7 @@
       ]
     },
     {
-      "id": "K-014",
+      "id": "arbitrum-K-014",
       "projectSlug": "arbitrum",
       "name": "Disciplined Financial Management",
       "category": "Success Factor",
@@ -236,7 +236,7 @@
       "dependencies": []
     },
     {
-      "id": "K-015",
+      "id": "arbitrum-K-015",
       "projectSlug": "arbitrum",
       "name": "Product Before Token",
       "category": "Success Factor",
@@ -255,7 +255,7 @@
       ]
     },
     {
-      "id": "K-016",
+      "id": "arbitrum-K-016",
       "projectSlug": "arbitrum",
       "name": "Strong Developer Ecosystem",
       "category": "Success Factor",
@@ -273,7 +273,7 @@
       ]
     },
     {
-      "id": "K-017",
+      "id": "arbitrum-K-017",
       "projectSlug": "arbitrum",
       "name": "Governance Overreach (AIP-1)",
       "category": "Failure Factor",
@@ -291,7 +291,7 @@
       ]
     },
     {
-      "id": "K-018",
+      "id": "arbitrum-K-018",
       "projectSlug": "arbitrum",
       "name": "Voting Power Concentration",
       "category": "Failure Factor",
@@ -306,7 +306,7 @@
       "dependencies": []
     },
     {
-      "id": "K-019",
+      "id": "arbitrum-K-019",
       "projectSlug": "arbitrum",
       "name": "Centralized Sequencer Dependency",
       "category": "Failure Factor",
@@ -321,7 +321,7 @@
       "dependencies": []
     },
     {
-      "id": "K-020",
+      "id": "arbitrum-K-020",
       "projectSlug": "arbitrum",
       "name": "Security Incidents",
       "category": "Failure Factor",
@@ -341,7 +341,7 @@
       ]
     },
     {
-      "id": "K-021",
+      "id": "arbitrum-K-021",
       "projectSlug": "arbitrum",
       "name": "Limited Token Utility",
       "category": "Failure Factor",
@@ -356,7 +356,7 @@
       "dependencies": []
     },
     {
-      "id": "K-022",
+      "id": "arbitrum-K-022",
       "projectSlug": "arbitrum",
       "name": "Observe",
       "category": "Decision Framework",
@@ -376,7 +376,7 @@
       ]
     },
     {
-      "id": "K-023",
+      "id": "arbitrum-K-023",
       "projectSlug": "arbitrum",
       "name": "Evaluate",
       "category": "Decision Framework",
@@ -395,7 +395,7 @@
       ]
     },
     {
-      "id": "K-024",
+      "id": "arbitrum-K-024",
       "projectSlug": "arbitrum",
       "name": "Fund",
       "category": "Decision Framework",
@@ -410,7 +410,7 @@
       "dependencies": []
     },
     {
-      "id": "K-025",
+      "id": "arbitrum-K-025",
       "projectSlug": "arbitrum",
       "name": "Develop",
       "category": "Decision Framework",
@@ -428,7 +428,7 @@
       ]
     },
     {
-      "id": "K-026",
+      "id": "arbitrum-K-026",
       "projectSlug": "arbitrum",
       "name": "Launch",
       "category": "Decision Framework",
@@ -446,7 +446,7 @@
       ]
     },
     {
-      "id": "K-027",
+      "id": "arbitrum-K-027",
       "projectSlug": "arbitrum",
       "name": "Govern",
       "category": "Decision Framework",
@@ -466,7 +466,7 @@
       ]
     },
     {
-      "id": "K-028",
+      "id": "arbitrum-K-028",
       "projectSlug": "arbitrum",
       "name": "Product-First Tokenization",
       "category": "Reusable Playbook",
@@ -484,7 +484,7 @@
       ]
     },
     {
-      "id": "K-029",
+      "id": "arbitrum-K-029",
       "projectSlug": "arbitrum",
       "name": "Progressive Fundraising with Valuation Escalation",
       "category": "Reusable Playbook",
@@ -499,7 +499,7 @@
       "dependencies": []
     },
     {
-      "id": "K-030",
+      "id": "arbitrum-K-030",
       "projectSlug": "arbitrum",
       "name": "Strategic Partnerships Fund",
       "category": "Reusable Playbook",
@@ -514,7 +514,7 @@
       "dependencies": []
     },
     {
-      "id": "K-031",
+      "id": "arbitrum-K-031",
       "projectSlug": "arbitrum",
       "name": "Developer Tooling Investment",
       "category": "Reusable Playbook",
@@ -532,7 +532,7 @@
       ]
     },
     {
-      "id": "K-032",
+      "id": "arbitrum-K-032",
       "projectSlug": "arbitrum",
       "name": "Active Treasury Management",
       "category": "Reusable Playbook",
@@ -547,7 +547,7 @@
       "dependencies": []
     },
     {
-      "id": "K-033",
+      "id": "arbitrum-K-033",
       "projectSlug": "arbitrum",
       "name": "Learn from Governance Failure",
       "category": "Reusable Playbook",
@@ -562,7 +562,7 @@
       "dependencies": []
     },
     {
-      "id": "K-034",
+      "id": "arbitrum-K-034",
       "projectSlug": "arbitrum",
       "name": "Premature Tokenization",
       "category": "Anti-pattern",
@@ -580,7 +580,7 @@
       ]
     },
     {
-      "id": "K-035",
+      "id": "arbitrum-K-035",
       "projectSlug": "arbitrum",
       "name": "Blanket Grant Programs Without Milestones",
       "category": "Anti-pattern",
@@ -598,7 +598,7 @@
       ]
     },
     {
-      "id": "K-036",
+      "id": "arbitrum-K-036",
       "projectSlug": "arbitrum",
       "name": "Over-Centralization of Voting Power",
       "category": "Anti-pattern",
@@ -613,7 +613,7 @@
       "dependencies": []
     },
     {
-      "id": "K-037",
+      "id": "arbitrum-K-037",
       "projectSlug": "arbitrum",
       "name": "Single-Point Infrastructure Dependency",
       "category": "Anti-pattern",
@@ -628,7 +628,7 @@
       "dependencies": []
     },
     {
-      "id": "K-038",
+      "id": "arbitrum-K-038",
       "projectSlug": "arbitrum",
       "name": "Governance-Only Token Utility",
       "category": "Anti-pattern",
@@ -643,7 +643,7 @@
       "dependencies": []
     },
     {
-      "id": "K-039",
+      "id": "arbitrum-K-039",
       "projectSlug": "arbitrum",
       "name": "Security Council Emergency Powers Without Clear Guidelines",
       "category": "Anti-pattern",

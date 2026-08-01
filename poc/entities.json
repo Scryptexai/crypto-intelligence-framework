@@ -1,7 +1,7 @@
 {
   "LayerZero": [
     {
-      "id": "ENT-001",
+      "id": "layerzero-ENT-001",
       "projectSlug": "layerzero",
       "name": "LayerZero Labs Ltd.",
       "type": "Company",
@@ -18,7 +18,7 @@
       }
     },
     {
-      "id": "ENT-002",
+      "id": "layerzero-ENT-002",
       "projectSlug": "layerzero",
       "name": "Optimistic Labs Limited",
       "type": "Company",
@@ -35,7 +35,7 @@
       }
     },
     {
-      "id": "ENT-003",
+      "id": "layerzero-ENT-003",
       "projectSlug": "layerzero",
       "name": "LayerZero Labs Canada Inc.",
       "type": "Company",
@@ -52,7 +52,7 @@
       }
     },
     {
-      "id": "ENT-004",
+      "id": "layerzero-ENT-004",
       "projectSlug": "layerzero",
       "name": "LayerZero Foundation",
       "type": "Foundation",
@@ -69,7 +69,7 @@
       }
     },
     {
-      "id": "ENT-005",
+      "id": "layerzero-ENT-005",
       "projectSlug": "layerzero",
       "name": "Bryan Pellegrino",
       "type": "Person",
@@ -86,7 +86,7 @@
       }
     },
     {
-      "id": "ENT-006",
+      "id": "layerzero-ENT-006",
       "projectSlug": "layerzero",
       "name": "Ryan Zarick",
       "type": "Person",
@@ -103,7 +103,7 @@
       }
     },
     {
-      "id": "ENT-007",
+      "id": "layerzero-ENT-007",
       "projectSlug": "layerzero",
       "name": "Caleb Banister",
       "type": "Person",
@@ -120,7 +120,7 @@
       }
     },
     {
-      "id": "ENT-008",
+      "id": "layerzero-ENT-008",
       "projectSlug": "layerzero",
       "name": "Chainlink",
       "type": "Company",
@@ -137,7 +137,7 @@
       }
     },
     {
-      "id": "ENT-009",
+      "id": "layerzero-ENT-009",
       "projectSlug": "layerzero",
       "name": "Chainlink CCIP",
       "type": "Protocol",
@@ -154,7 +154,7 @@
       }
     },
     {
-      "id": "ENT-010",
+      "id": "layerzero-ENT-010",
       "projectSlug": "layerzero",
       "name": "Google Cloud",
       "type": "Company",
@@ -171,7 +171,7 @@
       }
     },
     {
-      "id": "ENT-011",
+      "id": "layerzero-ENT-011",
       "projectSlug": "layerzero",
       "name": "Polyhedra",
       "type": "Company",
@@ -188,7 +188,7 @@
       }
     },
     {
-      "id": "ENT-012",
+      "id": "layerzero-ENT-012",
       "projectSlug": "layerzero",
       "name": "Alameda Ventures / FTX Group",
       "type": "Investor",
@@ -205,7 +205,7 @@
       }
     },
     {
-      "id": "ENT-013",
+      "id": "layerzero-ENT-013",
       "projectSlug": "layerzero",
       "name": "Protocol Guild",
       "type": "Foundation",
@@ -222,7 +222,7 @@
       }
     },
     {
-      "id": "ENT-014",
+      "id": "layerzero-ENT-014",
       "projectSlug": "layerzero",
       "name": "Stargate Finance",
       "type": "Protocol",
@@ -239,7 +239,7 @@
       }
     },
     {
-      "id": "ENT-015",
+      "id": "layerzero-ENT-015",
       "projectSlug": "layerzero",
       "name": "Tether",
       "type": "Company",
@@ -256,7 +256,7 @@
       }
     },
     {
-      "id": "ENT-016",
+      "id": "layerzero-ENT-016",
       "projectSlug": "layerzero",
       "name": "Trail of Bits",
       "type": "Security",
@@ -273,7 +273,7 @@
       }
     },
     {
-      "id": "ENT-017",
+      "id": "layerzero-ENT-017",
       "projectSlug": "layerzero",
       "name": "Zellic",
       "type": "Security",
@@ -290,7 +290,7 @@
       }
     },
     {
-      "id": "ENT-018",
+      "id": "layerzero-ENT-018",
       "projectSlug": "layerzero",
       "name": "Zokyo",
       "type": "Security",
@@ -307,7 +307,7 @@
       }
     },
     {
-      "id": "ENT-019",
+      "id": "layerzero-ENT-019",
       "projectSlug": "layerzero",
       "name": "Peckshield",
       "type": "Security",
@@ -324,7 +324,7 @@
       }
     },
     {
-      "id": "ENT-020",
+      "id": "layerzero-ENT-020",
       "projectSlug": "layerzero",
       "name": "Hacken",
       "type": "Security",
@@ -341,7 +341,7 @@
       }
     },
     {
-      "id": "ENT-021",
+      "id": "layerzero-ENT-021",
       "projectSlug": "layerzero",
       "name": "Kelp DAO",
       "type": "Protocol",
@@ -358,7 +358,7 @@
       }
     },
     {
-      "id": "ENT-022",
+      "id": "layerzero-ENT-022",
       "projectSlug": "layerzero",
       "name": "a16z crypto",
       "type": "Investor",
@@ -375,7 +375,7 @@
       }
     },
     {
-      "id": "ENT-023",
+      "id": "layerzero-ENT-023",
       "projectSlug": "layerzero",
       "name": "Sequoia Capital",
       "type": "Investor",
@@ -392,7 +392,7 @@
       }
     },
     {
-      "id": "ENT-024",
+      "id": "layerzero-ENT-024",
       "projectSlug": "layerzero",
       "name": "Binance Labs",
       "type": "Investor",
@@ -409,7 +409,7 @@
       }
     },
     {
-      "id": "ENT-025",
+      "id": "layerzero-ENT-025",
       "projectSlug": "layerzero",
       "name": "Multicoin Capital",
       "type": "Investor",
@@ -426,7 +426,7 @@
       }
     },
     {
-      "id": "ENT-026",
+      "id": "layerzero-ENT-026",
       "projectSlug": "layerzero",
       "name": "PayPal Ventures",
       "type": "Investor",
@@ -443,7 +443,7 @@
       }
     },
     {
-      "id": "ENT-027",
+      "id": "layerzero-ENT-027",
       "projectSlug": "layerzero",
       "name": "Circle Ventures",
       "type": "Investor",
@@ -460,7 +460,7 @@
       }
     },
     {
-      "id": "ENT-028",
+      "id": "layerzero-ENT-028",
       "projectSlug": "layerzero",
       "name": "OKX Ventures",
       "type": "Investor",
@@ -477,7 +477,7 @@
       }
     },
     {
-      "id": "ENT-029",
+      "id": "layerzero-ENT-029",
       "projectSlug": "layerzero",
       "name": "Delphi Digital",
       "type": "Investor",
@@ -494,7 +494,7 @@
       }
     },
     {
-      "id": "ENT-030",
+      "id": "layerzero-ENT-030",
       "projectSlug": "layerzero",
       "name": "BOND",
       "type": "Investor",
@@ -511,7 +511,7 @@
       }
     },
     {
-      "id": "ENT-031",
+      "id": "layerzero-ENT-031",
       "projectSlug": "layerzero",
       "name": "Christie's",
       "type": "Investor",
@@ -528,7 +528,7 @@
       }
     },
     {
-      "id": "ENT-032",
+      "id": "layerzero-ENT-032",
       "projectSlug": "layerzero",
       "name": "Samsung Next",
       "type": "Investor",
@@ -545,7 +545,7 @@
       }
     },
     {
-      "id": "ENT-033",
+      "id": "layerzero-ENT-033",
       "projectSlug": "layerzero",
       "name": "OpenSea",
       "type": "Investor",
@@ -562,7 +562,7 @@
       }
     },
     {
-      "id": "ENT-034",
+      "id": "layerzero-ENT-034",
       "projectSlug": "layerzero",
       "name": "Polygon Ventures",
       "type": "Investor",
@@ -579,7 +579,7 @@
       }
     },
     {
-      "id": "ENT-035",
+      "id": "layerzero-ENT-035",
       "projectSlug": "layerzero",
       "name": "DeFiance Capital",
       "type": "Investor",
@@ -596,7 +596,7 @@
       }
     },
     {
-      "id": "ENT-036",
+      "id": "layerzero-ENT-036",
       "projectSlug": "layerzero",
       "name": "Spartan Group",
       "type": "Investor",
@@ -613,7 +613,7 @@
       }
     },
     {
-      "id": "ENT-037",
+      "id": "layerzero-ENT-037",
       "projectSlug": "layerzero",
       "name": "Sino Global Capital",
       "type": "Investor",
@@ -630,7 +630,7 @@
       }
     },
     {
-      "id": "ENT-038",
+      "id": "layerzero-ENT-038",
       "projectSlug": "layerzero",
       "name": "Coinbase Ventures",
       "type": "Investor",
@@ -647,7 +647,7 @@
       }
     },
     {
-      "id": "ENT-039",
+      "id": "layerzero-ENT-039",
       "projectSlug": "layerzero",
       "name": "EigenLabs / EigenLayer",
       "type": "Company",
@@ -664,7 +664,7 @@
       }
     },
     {
-      "id": "ENT-040",
+      "id": "layerzero-ENT-040",
       "projectSlug": "layerzero",
       "name": "Nethermind",
       "type": "Company",
@@ -681,7 +681,7 @@
       }
     },
     {
-      "id": "ENT-041",
+      "id": "layerzero-ENT-041",
       "projectSlug": "layerzero",
       "name": "Animoca Brands",
       "type": "Company",
@@ -698,7 +698,7 @@
       }
     },
     {
-      "id": "ENT-042",
+      "id": "layerzero-ENT-042",
       "projectSlug": "layerzero",
       "name": "Horizen Labs",
       "type": "Company",
@@ -715,7 +715,7 @@
       }
     },
     {
-      "id": "ENT-043",
+      "id": "layerzero-ENT-043",
       "projectSlug": "layerzero",
       "name": "Delegate",
       "type": "Company",
@@ -732,7 +732,7 @@
       }
     },
     {
-      "id": "ENT-044",
+      "id": "layerzero-ENT-044",
       "projectSlug": "layerzero",
       "name": "Radiant Capital",
       "type": "Protocol",
@@ -749,7 +749,7 @@
       }
     },
     {
-      "id": "ENT-045",
+      "id": "layerzero-ENT-045",
       "projectSlug": "layerzero",
       "name": "Ondo Finance",
       "type": "Protocol",
@@ -766,7 +766,7 @@
       }
     },
     {
-      "id": "ENT-046",
+      "id": "layerzero-ENT-046",
       "projectSlug": "layerzero",
       "name": "Paxos",
       "type": "Protocol",
@@ -783,7 +783,7 @@
       }
     },
     {
-      "id": "ENT-047",
+      "id": "layerzero-ENT-047",
       "projectSlug": "layerzero",
       "name": "Ethena",
       "type": "Protocol",
@@ -800,7 +800,7 @@
       }
     },
     {
-      "id": "ENT-048",
+      "id": "layerzero-ENT-048",
       "projectSlug": "layerzero",
       "name": "EtherFi",
       "type": "Protocol",
@@ -817,7 +817,7 @@
       }
     },
     {
-      "id": "ENT-049",
+      "id": "layerzero-ENT-049",
       "projectSlug": "layerzero",
       "name": "Keeta",
       "type": "Company",
@@ -834,7 +834,7 @@
       }
     },
     {
-      "id": "ENT-050",
+      "id": "layerzero-ENT-050",
       "projectSlug": "layerzero",
       "name": "IDEX",
       "type": "Protocol",
@@ -851,7 +851,7 @@
       }
     },
     {
-      "id": "ENT-051",
+      "id": "layerzero-ENT-051",
       "projectSlug": "layerzero",
       "name": "Binance",
       "type": "Company",
@@ -868,7 +868,7 @@
       }
     },
     {
-      "id": "ENT-052",
+      "id": "layerzero-ENT-052",
       "projectSlug": "layerzero",
       "name": "Coinbase",
       "type": "Company",
@@ -885,7 +885,7 @@
       }
     },
     {
-      "id": "ENT-053",
+      "id": "layerzero-ENT-053",
       "projectSlug": "layerzero",
       "name": "Kraken",
       "type": "Company",
@@ -902,7 +902,7 @@
       }
     },
     {
-      "id": "ENT-054",
+      "id": "layerzero-ENT-054",
       "projectSlug": "layerzero",
       "name": "OKX",
       "type": "Company",
@@ -919,7 +919,7 @@
       }
     },
     {
-      "id": "ENT-055",
+      "id": "layerzero-ENT-055",
       "projectSlug": "layerzero",
       "name": "Bybit",
       "type": "Company",
@@ -936,7 +936,7 @@
       }
     },
     {
-      "id": "ENT-056",
+      "id": "layerzero-ENT-056",
       "projectSlug": "layerzero",
       "name": "KuCoin",
       "type": "Company",
@@ -953,7 +953,7 @@
       }
     },
     {
-      "id": "ENT-057",
+      "id": "layerzero-ENT-057",
       "projectSlug": "layerzero",
       "name": "MEXC",
       "type": "Company",
@@ -970,7 +970,7 @@
       }
     },
     {
-      "id": "ENT-058",
+      "id": "layerzero-ENT-058",
       "projectSlug": "layerzero",
       "name": "Bitget",
       "type": "Company",
@@ -987,7 +987,7 @@
       }
     },
     {
-      "id": "ENT-059",
+      "id": "layerzero-ENT-059",
       "projectSlug": "layerzero",
       "name": "HTX (Huobi)",
       "type": "Company",
@@ -1004,7 +1004,7 @@
       }
     },
     {
-      "id": "ENT-060",
+      "id": "layerzero-ENT-060",
       "projectSlug": "layerzero",
       "name": "Uphold",
       "type": "Company",
@@ -1021,7 +1021,7 @@
       }
     },
     {
-      "id": "ENT-061",
+      "id": "layerzero-ENT-061",
       "projectSlug": "layerzero",
       "name": "Uniswap",
       "type": "Company",
@@ -1038,7 +1038,7 @@
       }
     },
     {
-      "id": "ENT-062",
+      "id": "layerzero-ENT-062",
       "projectSlug": "layerzero",
       "name": "SushiSwap",
       "type": "Company",
@@ -1055,7 +1055,7 @@
       }
     },
     {
-      "id": "ENT-063",
+      "id": "layerzero-ENT-063",
       "projectSlug": "layerzero",
       "name": "PancakeSwap",
       "type": "Company",
@@ -1072,7 +1072,7 @@
       }
     },
     {
-      "id": "ENT-064",
+      "id": "layerzero-ENT-064",
       "projectSlug": "layerzero",
       "name": "TraderJoe",
       "type": "Company",
@@ -1089,7 +1089,7 @@
       }
     },
     {
-      "id": "ENT-065",
+      "id": "layerzero-ENT-065",
       "projectSlug": "layerzero",
       "name": "Hashflow",
       "type": "Protocol",
@@ -1106,7 +1106,7 @@
       }
     },
     {
-      "id": "ENT-066",
+      "id": "layerzero-ENT-066",
       "projectSlug": "layerzero",
       "name": "Immunefi",
       "type": "Company",
@@ -1123,7 +1123,7 @@
       }
     },
     {
-      "id": "ENT-067",
+      "id": "layerzero-ENT-067",
       "projectSlug": "layerzero",
       "name": "United States Bankruptcy Court for the District of Delaware",
       "type": "Government",
@@ -1140,7 +1140,7 @@
       }
     },
     {
-      "id": "ENT-068",
+      "id": "layerzero-ENT-068",
       "projectSlug": "layerzero",
       "name": "FTX Recovery Trust",
       "type": "Company",
@@ -1157,7 +1157,7 @@
       }
     },
     {
-      "id": "ENT-069",
+      "id": "layerzero-ENT-069",
       "projectSlug": "layerzero",
       "name": "University of New Hampshire (IOL)",
       "type": "Security",
@@ -1174,7 +1174,7 @@
       }
     },
     {
-      "id": "ENT-070",
+      "id": "layerzero-ENT-070",
       "projectSlug": "layerzero",
       "name": "CrowdStrike",
       "type": "Company",
@@ -1191,7 +1191,7 @@
       }
     },
     {
-      "id": "ENT-071",
+      "id": "layerzero-ENT-071",
       "projectSlug": "layerzero",
       "name": "Mandiant",
       "type": "Company",
@@ -1208,7 +1208,7 @@
       }
     },
     {
-      "id": "ENT-072",
+      "id": "layerzero-ENT-072",
       "projectSlug": "layerzero",
       "name": "zeroShadow",
       "type": "Company",
@@ -1225,7 +1225,7 @@
       }
     },
     {
-      "id": "ENT-073",
+      "id": "layerzero-ENT-073",
       "projectSlug": "layerzero",
       "name": "Halborn",
       "type": "Security",
@@ -1242,7 +1242,7 @@
       }
     },
     {
-      "id": "ENT-074",
+      "id": "layerzero-ENT-074",
       "projectSlug": "layerzero",
       "name": "Certik",
       "type": "Security",
@@ -1259,7 +1259,7 @@
       }
     },
     {
-      "id": "ENT-075",
+      "id": "layerzero-ENT-075",
       "projectSlug": "layerzero",
       "name": "Quantstamp",
       "type": "Security",
@@ -1276,7 +1276,7 @@
       }
     },
     {
-      "id": "ENT-076",
+      "id": "layerzero-ENT-076",
       "projectSlug": "layerzero",
       "name": "Chain EVM dan Non-EVM Terintegrasi — 165+",
       "type": null,
@@ -1295,7 +1295,7 @@
   ],
   "Arbitrum": [
     {
-      "id": "ENT-001",
+      "id": "arbitrum-ENT-001",
       "projectSlug": "arbitrum",
       "name": "Offchain Labs",
       "type": "Company",
@@ -1312,7 +1312,7 @@
       }
     },
     {
-      "id": "ENT-002",
+      "id": "arbitrum-ENT-002",
       "projectSlug": "arbitrum",
       "name": "Ed Felten (Edward Felten)",
       "type": "Person",
@@ -1329,7 +1329,7 @@
       }
     },
     {
-      "id": "ENT-003",
+      "id": "arbitrum-ENT-003",
       "projectSlug": "arbitrum",
       "name": "Steven Goldfeder",
       "type": "Person",
@@ -1346,7 +1346,7 @@
       }
     },
     {
-      "id": "ENT-004",
+      "id": "arbitrum-ENT-004",
       "projectSlug": "arbitrum",
       "name": "Harry Kalodner",
       "type": "Person",
@@ -1363,7 +1363,7 @@
       }
     },
     {
-      "id": "ENT-005",
+      "id": "arbitrum-ENT-005",
       "projectSlug": "arbitrum",
       "name": "A.J. Warner (AJ Warner)",
       "type": "Person",
@@ -1380,7 +1380,7 @@
       }
     },
     {
-      "id": "ENT-006",
+      "id": "arbitrum-ENT-006",
       "projectSlug": "arbitrum",
       "name": "Brendan Ma",
       "type": "Person",
@@ -1397,7 +1397,7 @@
       }
     },
     {
-      "id": "ENT-007",
+      "id": "arbitrum-ENT-007",
       "projectSlug": "arbitrum",
       "name": "Sean S.",
       "type": "Person",
@@ -1414,7 +1414,7 @@
       }
     },
     {
-      "id": "ENT-008",
+      "id": "arbitrum-ENT-008",
       "projectSlug": "arbitrum",
       "name": "kiet (kit) fong",
       "type": "Person",
@@ -1431,7 +1431,7 @@
       }
     },
     {
-      "id": "ENT-009",
+      "id": "arbitrum-ENT-009",
       "projectSlug": "arbitrum",
       "name": "Patrick McCorry",
       "type": "Person",
@@ -1448,7 +1448,7 @@
       }
     },
     {
-      "id": "ENT-010",
+      "id": "arbitrum-ENT-010",
       "projectSlug": "arbitrum",
       "name": "Preston Van Loon",
       "type": "Person",
@@ -1465,7 +1465,7 @@
       }
     },
     {
-      "id": "ENT-011",
+      "id": "arbitrum-ENT-011",
       "projectSlug": "arbitrum",
       "name": "Humberto (Beto) Aparicio",
       "type": "Person",
@@ -1482,7 +1482,7 @@
       }
     },
     {
-      "id": "ENT-012",
+      "id": "arbitrum-ENT-012",
       "projectSlug": "arbitrum",
       "name": "Abhishek Somani",
       "type": "Person",
@@ -1499,7 +1499,7 @@
       }
     },
     {
-      "id": "ENT-013",
+      "id": "arbitrum-ENT-013",
       "projectSlug": "arbitrum",
       "name": "Mariam Kouanda",
       "type": "Person",
@@ -1516,7 +1516,7 @@
       }
     },
     {
-      "id": "ENT-014",
+      "id": "arbitrum-ENT-014",
       "projectSlug": "arbitrum",
       "name": "Campbell Law",
       "type": "Person",
@@ -1533,7 +1533,7 @@
       }
     },
     {
-      "id": "ENT-015",
+      "id": "arbitrum-ENT-015",
       "projectSlug": "arbitrum",
       "name": "Edward Noyons",
       "type": "Person",
@@ -1550,7 +1550,7 @@
       }
     },
     {
-      "id": "ENT-016",
+      "id": "arbitrum-ENT-016",
       "projectSlug": "arbitrum",
       "name": "Ani Banerjee",
       "type": "Person",
@@ -1567,7 +1567,7 @@
       }
     },
     {
-      "id": "ENT-017",
+      "id": "arbitrum-ENT-017",
       "projectSlug": "arbitrum",
       "name": "Frisson",
       "type": "Person",
@@ -1584,7 +1584,7 @@
       }
     },
     {
-      "id": "ENT-018",
+      "id": "arbitrum-ENT-018",
       "projectSlug": "arbitrum",
       "name": "Gavin Wang",
       "type": "Person",
@@ -1601,7 +1601,7 @@
       }
     },
     {
-      "id": "ENT-019",
+      "id": "arbitrum-ENT-019",
       "projectSlug": "arbitrum",
       "name": "Pedro Breuer",
       "type": "Person",
@@ -1618,7 +1618,7 @@
       }
     },
     {
-      "id": "ENT-020",
+      "id": "arbitrum-ENT-020",
       "projectSlug": "arbitrum",
       "name": "The Arbitrum Foundation",
       "type": "Foundation",
@@ -1635,7 +1635,7 @@
       }
     },
     {
-      "id": "ENT-021",
+      "id": "arbitrum-ENT-021",
       "projectSlug": "arbitrum",
       "name": "Arbitrum OpCo Foundation",
       "type": "Foundation",
@@ -1652,7 +1652,7 @@
       }
     },
     {
-      "id": "ENT-022",
+      "id": "arbitrum-ENT-022",
       "projectSlug": "arbitrum",
       "name": "Arbitrum DAO",
       "type": "DAO",
@@ -1669,7 +1669,7 @@
       }
     },
     {
-      "id": "ENT-023",
+      "id": "arbitrum-ENT-023",
       "projectSlug": "arbitrum",
       "name": "Security Council (Arbitrum DAO)",
       "type": "DAO",
@@ -1686,7 +1686,7 @@
       }
     },
     {
-      "id": "ENT-024",
+      "id": "arbitrum-ENT-024",
       "projectSlug": "arbitrum",
       "name": "Oversight and Transparency Committee (OAT)",
       "type": "DAO",
@@ -1703,7 +1703,7 @@
       }
     },
     {
-      "id": "ENT-025",
+      "id": "arbitrum-ENT-025",
       "projectSlug": "arbitrum",
       "name": "Lightspeed Venture Partners",
       "type": "Investor",
@@ -1720,7 +1720,7 @@
       }
     },
     {
-      "id": "ENT-026",
+      "id": "arbitrum-ENT-026",
       "projectSlug": "arbitrum",
       "name": "Pantera Capital",
       "type": "Investor",
@@ -1737,7 +1737,7 @@
       }
     },
     {
-      "id": "ENT-027",
+      "id": "arbitrum-ENT-027",
       "projectSlug": "arbitrum",
       "name": "Polychain Capital",
       "type": "Investor",
@@ -1754,7 +1754,7 @@
       }
     },
     {
-      "id": "ENT-028",
+      "id": "arbitrum-ENT-028",
       "projectSlug": "arbitrum",
       "name": "Ribbit Capital",
       "type": "Investor",
@@ -1771,7 +1771,7 @@
       }
     },
     {
-      "id": "ENT-029",
+      "id": "arbitrum-ENT-029",
       "projectSlug": "arbitrum",
       "name": "Redpoint Ventures",
       "type": "Investor",
@@ -1788,7 +1788,7 @@
       }
     },
     {
-      "id": "ENT-030",
+      "id": "arbitrum-ENT-030",
       "projectSlug": "arbitrum",
       "name": "Alameda Research",
       "type": "Investor",
@@ -1805,7 +1805,7 @@
       }
     },
     {
-      "id": "ENT-031",
+      "id": "arbitrum-ENT-031",
       "projectSlug": "arbitrum",
       "name": "Mark Cuban",
       "type": "Person",
@@ -1822,7 +1822,7 @@
       }
     },
     {
-      "id": "ENT-032",
+      "id": "arbitrum-ENT-032",
       "projectSlug": "arbitrum",
       "name": "Compound VC (Compound Ventures)",
       "type": "Investor",
@@ -1839,7 +1839,7 @@
       }
     },
     {
-      "id": "ENT-033",
+      "id": "arbitrum-ENT-033",
       "projectSlug": "arbitrum",
       "name": "Raphael Ouzan",
       "type": "Person",
@@ -1856,7 +1856,7 @@
       }
     },
     {
-      "id": "ENT-034",
+      "id": "arbitrum-ENT-034",
       "projectSlug": "arbitrum",
       "name": "Jake Seid",
       "type": "Person",
@@ -1873,7 +1873,7 @@
       }
     },
     {
-      "id": "ENT-035",
+      "id": "arbitrum-ENT-035",
       "projectSlug": "arbitrum",
       "name": "Coinbase Ventures",
       "type": "Investor",
@@ -1890,7 +1890,7 @@
       }
     },
     {
-      "id": "ENT-036",
+      "id": "arbitrum-ENT-036",
       "projectSlug": "arbitrum",
       "name": "IOSG Ventures",
       "type": "Investor",
@@ -1907,7 +1907,7 @@
       }
     },
     {
-      "id": "ENT-037",
+      "id": "arbitrum-ENT-037",
       "projectSlug": "arbitrum",
       "name": "Framework Ventures",
       "type": "Investor",
@@ -1924,7 +1924,7 @@
       }
     },
     {
-      "id": "ENT-038",
+      "id": "arbitrum-ENT-038",
       "projectSlug": "arbitrum",
       "name": "2A Ventures",
       "type": "Investor",
@@ -1941,7 +1941,7 @@
       }
     },
     {
-      "id": "ENT-039",
+      "id": "arbitrum-ENT-039",
       "projectSlug": "arbitrum",
       "name": "DeFiance Capital",
       "type": "Investor",
@@ -1958,7 +1958,7 @@
       }
     },
     {
-      "id": "ENT-040",
+      "id": "arbitrum-ENT-040",
       "projectSlug": "arbitrum",
       "name": "Intersection Growth Partners",
       "type": "Investor",
@@ -1975,7 +1975,7 @@
       }
     },
     {
-      "id": "ENT-041",
+      "id": "arbitrum-ENT-041",
       "projectSlug": "arbitrum",
       "name": "Mint Ventures (US)",
       "type": "Investor",
@@ -1992,7 +1992,7 @@
       }
     },
     {
-      "id": "ENT-042",
+      "id": "arbitrum-ENT-042",
       "projectSlug": "arbitrum",
       "name": "Pomp Investments",
       "type": "Investor",
@@ -2009,7 +2009,7 @@
       }
     },
     {
-      "id": "ENT-043",
+      "id": "arbitrum-ENT-043",
       "projectSlug": "arbitrum",
       "name": "Binance",
       "type": "Company",
@@ -2026,7 +2026,7 @@
       }
     },
     {
-      "id": "ENT-044",
+      "id": "arbitrum-ENT-044",
       "projectSlug": "arbitrum",
       "name": "HTX (Huobi)",
       "type": "Company",
@@ -2043,7 +2043,7 @@
       }
     },
     {
-      "id": "ENT-045",
+      "id": "arbitrum-ENT-045",
       "projectSlug": "arbitrum",
       "name": "Gate.io",
       "type": "Company",
@@ -2060,7 +2060,7 @@
       }
     },
     {
-      "id": "ENT-046",
+      "id": "arbitrum-ENT-046",
       "projectSlug": "arbitrum",
       "name": "MEXC Global",
       "type": "Company",
@@ -2077,7 +2077,7 @@
       }
     },
     {
-      "id": "ENT-047",
+      "id": "arbitrum-ENT-047",
       "projectSlug": "arbitrum",
       "name": "OKX",
       "type": "Company",
@@ -2094,7 +2094,7 @@
       }
     },
     {
-      "id": "ENT-048",
+      "id": "arbitrum-ENT-048",
       "projectSlug": "arbitrum",
       "name": "Bybit",
       "type": "Company",
@@ -2111,7 +2111,7 @@
       }
     },
     {
-      "id": "ENT-049",
+      "id": "arbitrum-ENT-049",
       "projectSlug": "arbitrum",
       "name": "WhiteBIT",
       "type": "Company",
@@ -2128,7 +2128,7 @@
       }
     },
     {
-      "id": "ENT-050",
+      "id": "arbitrum-ENT-050",
       "projectSlug": "arbitrum",
       "name": "Kraken",
       "type": "Company",
@@ -2145,7 +2145,7 @@
       }
     },
     {
-      "id": "ENT-051",
+      "id": "arbitrum-ENT-051",
       "projectSlug": "arbitrum",
       "name": "Robinhood",
       "type": "Company",
@@ -2162,7 +2162,7 @@
       }
     },
     {
-      "id": "ENT-052",
+      "id": "arbitrum-ENT-052",
       "projectSlug": "arbitrum",
       "name": "LG Electronics",
       "type": "Company",
@@ -2179,7 +2179,7 @@
       }
     },
     {
-      "id": "ENT-053",
+      "id": "arbitrum-ENT-053",
       "projectSlug": "arbitrum",
       "name": "LG CNS",
       "type": "Company",
@@ -2196,7 +2196,7 @@
       }
     },
     {
-      "id": "ENT-054",
+      "id": "arbitrum-ENT-054",
       "projectSlug": "arbitrum",
       "name": "Dentsu",
       "type": "Security",
@@ -2213,7 +2213,7 @@
       }
     },
     {
-      "id": "ENT-055",
+      "id": "arbitrum-ENT-055",
       "projectSlug": "arbitrum",
       "name": "Ledger",
       "type": "Company",
@@ -2230,7 +2230,7 @@
       }
     },
     {
-      "id": "ENT-056",
+      "id": "arbitrum-ENT-056",
       "projectSlug": "arbitrum",
       "name": "Electric Capital",
       "type": "Investor",
@@ -2247,7 +2247,7 @@
       }
     },
     {
-      "id": "ENT-057",
+      "id": "arbitrum-ENT-057",
       "projectSlug": "arbitrum",
       "name": "Tandem (by Offchain Labs)",
       "type": "Company",
@@ -2264,7 +2264,7 @@
       }
     },
     {
-      "id": "ENT-058",
+      "id": "arbitrum-ENT-058",
       "projectSlug": "arbitrum",
       "name": "GMX",
       "type": "Protocol",
@@ -2281,7 +2281,7 @@
       }
     },
     {
-      "id": "ENT-059",
+      "id": "arbitrum-ENT-059",
       "projectSlug": "arbitrum",
       "name": "Aave V3",
       "type": "Protocol",
@@ -2298,7 +2298,7 @@
       }
     },
     {
-      "id": "ENT-060",
+      "id": "arbitrum-ENT-060",
       "projectSlug": "arbitrum",
       "name": "Pendle",
       "type": "Protocol",
@@ -2315,7 +2315,7 @@
       }
     },
     {
-      "id": "ENT-061",
+      "id": "arbitrum-ENT-061",
       "projectSlug": "arbitrum",
       "name": "Variational",
       "type": "Protocol",
@@ -2332,7 +2332,7 @@
       }
     },
     {
-      "id": "ENT-062",
+      "id": "arbitrum-ENT-062",
       "projectSlug": "arbitrum",
       "name": "Horizen Labs",
       "type": "Protocol",
@@ -2349,7 +2349,7 @@
       }
     },
     {
-      "id": "ENT-063",
+      "id": "arbitrum-ENT-063",
       "projectSlug": "arbitrum",
       "name": "Dopex",
       "type": "Protocol",
@@ -2366,7 +2366,7 @@
       }
     },
     {
-      "id": "ENT-064",
+      "id": "arbitrum-ENT-064",
       "projectSlug": "arbitrum",
       "name": "TreasureDAO",
       "type": "DAO",
@@ -2383,7 +2383,7 @@
       }
     },
     {
-      "id": "ENT-065",
+      "id": "arbitrum-ENT-065",
       "projectSlug": "arbitrum",
       "name": "Bridgeworld",
       "type": "Protocol",
@@ -2400,7 +2400,7 @@
       }
     },
     {
-      "id": "ENT-066",
+      "id": "arbitrum-ENT-066",
       "projectSlug": "arbitrum",
       "name": "Arbitrum Gaming Ventures",
       "type": "Company",
@@ -2417,7 +2417,7 @@
       }
     },
     {
-      "id": "ENT-067",
+      "id": "arbitrum-ENT-067",
       "projectSlug": "arbitrum",
       "name": "DODO",
       "type": "Protocol",
@@ -2434,7 +2434,7 @@
       }
     },
     {
-      "id": "ENT-068",
+      "id": "arbitrum-ENT-068",
       "projectSlug": "arbitrum",
       "name": "Double",
       "type": "Protocol",
@@ -2451,7 +2451,7 @@
       }
     },
     {
-      "id": "ENT-069",
+      "id": "arbitrum-ENT-069",
       "projectSlug": "arbitrum",
       "name": "DeSyn Protocol",
       "type": "Protocol",
@@ -2468,7 +2468,7 @@
       }
     },
     {
-      "id": "ENT-070",
+      "id": "arbitrum-ENT-070",
       "projectSlug": "arbitrum",
       "name": "Panoptic",
       "type": "Protocol",
@@ -2485,7 +2485,7 @@
       }
     },
     {
-      "id": "ENT-071",
+      "id": "arbitrum-ENT-071",
       "projectSlug": "arbitrum",
       "name": "Catalyst",
       "type": "Protocol",
@@ -2502,7 +2502,7 @@
       }
     },
     {
-      "id": "ENT-072",
+      "id": "arbitrum-ENT-072",
       "projectSlug": "arbitrum",
       "name": "Blade Games",
       "type": "Protocol",
@@ -2519,7 +2519,7 @@
       }
     },
     {
-      "id": "ENT-073",
+      "id": "arbitrum-ENT-073",
       "projectSlug": "arbitrum",
       "name": "ZTX",
       "type": "Protocol",
@@ -2536,7 +2536,7 @@
       }
     },
     {
-      "id": "ENT-074",
+      "id": "arbitrum-ENT-074",
       "projectSlug": "arbitrum",
       "name": "Mithraeum",
       "type": "Protocol",
@@ -2553,7 +2553,7 @@
       }
     },
     {
-      "id": "ENT-075",
+      "id": "arbitrum-ENT-075",
       "projectSlug": "arbitrum",
       "name": "Messari",
       "type": "Security",
@@ -2570,7 +2570,7 @@
       }
     },
     {
-      "id": "ENT-076",
+      "id": "arbitrum-ENT-076",
       "projectSlug": "arbitrum",
       "name": "The Tie",
       "type": "Security",
@@ -2587,7 +2587,7 @@
       }
     },
     {
-      "id": "ENT-077",
+      "id": "arbitrum-ENT-077",
       "projectSlug": "arbitrum",
       "name": "ARK Invest",
       "type": "Security",
@@ -2604,7 +2604,7 @@
       }
     },
     {
-      "id": "ENT-078",
+      "id": "arbitrum-ENT-078",
       "projectSlug": "arbitrum",
       "name": "Lark Davis",
       "type": null,
@@ -2621,7 +2621,7 @@
       }
     },
     {
-      "id": "ENT-079",
+      "id": "arbitrum-ENT-079",
       "projectSlug": "arbitrum",
       "name": "Bitstamp",
       "type": "Company",
@@ -2638,7 +2638,7 @@
       }
     },
     {
-      "id": "ENT-080",
+      "id": "arbitrum-ENT-080",
       "projectSlug": "arbitrum",
       "name": "Blockchain.com",
       "type": "Company",
@@ -2655,7 +2655,7 @@
       }
     },
     {
-      "id": "ENT-081",
+      "id": "arbitrum-ENT-081",
       "projectSlug": "arbitrum",
       "name": "Uphold",
       "type": "Company",
@@ -2672,7 +2672,7 @@
       }
     },
     {
-      "id": "ENT-082",
+      "id": "arbitrum-ENT-082",
       "projectSlug": "arbitrum",
       "name": "Weiss Ratings",
       "type": "Security",
@@ -2689,7 +2689,7 @@
       }
     },
     {
-      "id": "ENT-083",
+      "id": "arbitrum-ENT-083",
       "projectSlug": "arbitrum",
       "name": "CoinMarketCap",
       "type": "Security",
@@ -2706,7 +2706,7 @@
       }
     },
     {
-      "id": "ENT-084",
+      "id": "arbitrum-ENT-084",
       "projectSlug": "arbitrum",
       "name": "CoinGecko",
       "type": "Security",
@@ -2723,7 +2723,7 @@
       }
     },
     {
-      "id": "ENT-085",
+      "id": "arbitrum-ENT-085",
       "projectSlug": "arbitrum",
       "name": "DefiLlama",
       "type": "Security",
@@ -2740,7 +2740,7 @@
       }
     },
     {
-      "id": "ENT-086",
+      "id": "arbitrum-ENT-086",
       "projectSlug": "arbitrum",
       "name": "Dune Analytics",
       "type": "Security",
@@ -2757,7 +2757,7 @@
       }
     },
     {
-      "id": "ENT-087",
+      "id": "arbitrum-ENT-087",
       "projectSlug": "arbitrum",
       "name": "Arbiscan",
       "type": "Protocol",
@@ -2774,7 +2774,7 @@
       }
     },
     {
-      "id": "ENT-088",
+      "id": "arbitrum-ENT-088",
       "projectSlug": "arbitrum",
       "name": "Blockscout",
       "type": "Protocol",
@@ -2791,7 +2791,7 @@
       }
     },
     {
-      "id": "ENT-089",
+      "id": "arbitrum-ENT-089",
       "projectSlug": "arbitrum",
       "name": "Succinct",
       "type": "Protocol",
@@ -2808,7 +2808,7 @@
       }
     },
     {
-      "id": "ENT-090",
+      "id": "arbitrum-ENT-090",
       "projectSlug": "arbitrum",
       "name": "Curvance",
       "type": "Protocol",
@@ -2825,7 +2825,7 @@
       }
     },
     {
-      "id": "ENT-091",
+      "id": "arbitrum-ENT-091",
       "projectSlug": "arbitrum",
       "name": "Huddle01",
       "type": "Protocol",
@@ -2842,7 +2842,7 @@
       }
     },
     {
-      "id": "ENT-092",
+      "id": "arbitrum-ENT-092",
       "projectSlug": "arbitrum",
       "name": "SpaceComputer",
       "type": "Protocol",
@@ -2859,7 +2859,7 @@
       }
     },
     {
-      "id": "ENT-093",
+      "id": "arbitrum-ENT-093",
       "projectSlug": "arbitrum",
       "name": "DigiFT",
       "type": "Protocol",
@@ -2876,7 +2876,7 @@
       }
     },
     {
-      "id": "ENT-094",
+      "id": "arbitrum-ENT-094",
       "projectSlug": "arbitrum",
       "name": "Fhenix",
       "type": "Protocol",
@@ -2893,7 +2893,7 @@
       }
     },
     {
-      "id": "ENT-095",
+      "id": "arbitrum-ENT-095",
       "projectSlug": "arbitrum",
       "name": "Camelot",
       "type": "Protocol",
@@ -2910,7 +2910,7 @@
       }
     },
     {
-      "id": "ENT-096",
+      "id": "arbitrum-ENT-096",
       "projectSlug": "arbitrum",
       "name": "Corn",
       "type": "Protocol",
@@ -2927,7 +2927,7 @@
       }
     },
     {
-      "id": "ENT-097",
+      "id": "arbitrum-ENT-097",
       "projectSlug": "arbitrum",
       "name": "AlloyX",
       "type": "Protocol",
@@ -2944,7 +2944,7 @@
       }
     },
     {
-      "id": "ENT-098",
+      "id": "arbitrum-ENT-098",
       "projectSlug": "arbitrum",
       "name": "DuckChain",
       "type": "Protocol",
@@ -2961,7 +2961,7 @@
       }
     },
     {
-      "id": "ENT-099",
+      "id": "arbitrum-ENT-099",
       "projectSlug": "arbitrum",
       "name": "Darkbright Studios",
       "type": "Protocol",
@@ -2978,7 +2978,7 @@
       }
     },
     {
-      "id": "ENT-100",
+      "id": "arbitrum-ENT-100",
       "projectSlug": "arbitrum",
       "name": "Fabric Cryptography",
       "type": "Protocol",
@@ -2995,7 +2995,7 @@
       }
     },
     {
-      "id": "ENT-101",
+      "id": "arbitrum-ENT-101",
       "projectSlug": "arbitrum",
       "name": "Princeton University",
       "type": "Company",
@@ -3012,7 +3012,7 @@
       }
     },
     {
-      "id": "ENT-102",
+      "id": "arbitrum-ENT-102",
       "projectSlug": "arbitrum",
       "name": "White House (Barack Obama administration)",
       "type": "Government",
@@ -3029,7 +3029,7 @@
       }
     },
     {
-      "id": "ENT-103",
+      "id": "arbitrum-ENT-103",
       "projectSlug": "arbitrum",
       "name": "Goldman Sachs",
       "type": "Company",
@@ -3046,7 +3046,7 @@
       }
     },
     {
-      "id": "ENT-104",
+      "id": "arbitrum-ENT-104",
       "projectSlug": "arbitrum",
       "name": "BlackRock",
       "type": "Company",
@@ -3063,7 +3063,7 @@
       }
     },
     {
-      "id": "ENT-105",
+      "id": "arbitrum-ENT-105",
       "projectSlug": "arbitrum",
       "name": "Citigroup",
       "type": "Company",
@@ -3080,7 +3080,7 @@
       }
     },
     {
-      "id": "ENT-106",
+      "id": "arbitrum-ENT-106",
       "projectSlug": "arbitrum",
       "name": "Cheyne Capital",
       "type": "Company",
@@ -3097,7 +3097,7 @@
       }
     },
     {
-      "id": "ENT-107",
+      "id": "arbitrum-ENT-107",
       "projectSlug": "arbitrum",
       "name": "Silverside Ltd",
       "type": "Company",
@@ -3114,7 +3114,7 @@
       }
     },
     {
-      "id": "ENT-108",
+      "id": "arbitrum-ENT-108",
       "projectSlug": "arbitrum",
       "name": "Provenance Ltd",
       "type": "Company",
@@ -3131,7 +3131,7 @@
       }
     },
     {
-      "id": "ENT-109",
+      "id": "arbitrum-ENT-109",
       "projectSlug": "arbitrum",
       "name": "Marfire",
       "type": "Company",
@@ -3148,7 +3148,7 @@
       }
     },
     {
-      "id": "ENT-110",
+      "id": "arbitrum-ENT-110",
       "projectSlug": "arbitrum",
       "name": "Autonomous",
       "type": "Company",
@@ -3165,7 +3165,7 @@
       }
     },
     {
-      "id": "ENT-111",
+      "id": "arbitrum-ENT-111",
       "projectSlug": "arbitrum",
       "name": "Leeward Management Limited",
       "type": "Company",
@@ -3182,7 +3182,7 @@
       }
     },
     {
-      "id": "ENT-112",
+      "id": "arbitrum-ENT-112",
       "projectSlug": "arbitrum",
       "name": "Exodus",
       "type": "Protocol",
@@ -3199,7 +3199,7 @@
       }
     },
     {
-      "id": "ENT-113",
+      "id": "arbitrum-ENT-113",
       "projectSlug": "arbitrum",
       "name": "Bitmine",
       "type": "Company",
@@ -3216,7 +3216,7 @@
       }
     },
     {
-      "id": "ENT-114",
+      "id": "arbitrum-ENT-114",
       "projectSlug": "arbitrum",
       "name": "Microsoft",
       "type": "Company",
@@ -3233,7 +3233,7 @@
       }
     },
     {
-      "id": "ENT-115",
+      "id": "arbitrum-ENT-115",
       "projectSlug": "arbitrum",
       "name": "Meta",
       "type": "Company",
@@ -3250,7 +3250,7 @@
       }
     },
     {
-      "id": "ENT-116",
+      "id": "arbitrum-ENT-116",
       "projectSlug": "arbitrum",
       "name": "Carbon",
       "type": "Protocol",
@@ -3267,7 +3267,7 @@
       }
     },
     {
-      "id": "ENT-117",
+      "id": "arbitrum-ENT-117",
       "projectSlug": "arbitrum",
       "name": "Prism",
       "type": "Protocol",
@@ -3284,7 +3284,7 @@
       }
     },
     {
-      "id": "ENT-118",
+      "id": "arbitrum-ENT-118",
       "projectSlug": "arbitrum",
       "name": "LayerV",
       "type": "Protocol",
@@ -3301,7 +3301,7 @@
       }
     },
     {
-      "id": "ENT-119",
+      "id": "arbitrum-ENT-119",
       "projectSlug": "arbitrum",
       "name": "T3tris",
       "type": "Protocol",
@@ -3318,7 +3318,7 @@
       }
     },
     {
-      "id": "ENT-120",
+      "id": "arbitrum-ENT-120",
       "projectSlug": "arbitrum",
       "name": "Twyne",
       "type": "Protocol",
@@ -3335,7 +3335,7 @@
       }
     },
     {
-      "id": "ENT-121",
+      "id": "arbitrum-ENT-121",
       "projectSlug": "arbitrum",
       "name": "Capa",
       "type": "Protocol",
@@ -3352,7 +3352,7 @@
       }
     },
     {
-      "id": "ENT-122",
+      "id": "arbitrum-ENT-122",
       "projectSlug": "arbitrum",
       "name": "USDre",
       "type": "Protocol",

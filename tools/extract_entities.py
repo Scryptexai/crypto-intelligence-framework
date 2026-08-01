@@ -129,7 +129,12 @@ def _make_entity(idx, project_name, name, entity_type, confidence, relationship,
     if evidence:
         metadata["evidence"] = re.sub(r"\s+", " ", evidence).strip()
     return {
-        "id": f"ENT-{idx:03d}",
+        # Intelligence Workspace's `entities` table keys on a bare `id` (not composite with
+        # project_slug -- see src/db/schema.ts), so this must be globally unique across every
+        # project ever synced, not just within one dossier. Two different projects' dossiers
+        # can both cite the same real-world entity (e.g. "Coinbase", "a16z") and would collide
+        # on a bare "ENT-001"-style id otherwise.
+        "id": f"{_slugify(project_name)}-ENT-{idx:03d}",
         "projectSlug": _slugify(project_name),
         "name": re.sub(r"\s+", " ", name).strip(),
         "type": _normalise_type(entity_type),

@@ -184,10 +184,18 @@ def decision_event_rows():
 
 
 def entity_rows():
-    """poc/entities.json (tools/extract_entities.py's shape) -> `entities` columns."""
+    """poc/entities.json (tools/extract_entities.py's shape) -> `entities` columns.
+
+    `entities.type` is NOT NULL in the real schema. extract_entities.py leaves `type` null
+    for the small number of items where the dossier's free-text vocabulary had no confident
+    mapping (see that tool's TYPE_MAP/_normalise_type) rather than guessing -- those rows are
+    skipped here instead of force-filling a fabricated type, since a required column is not
+    a license to invent a value the source doesn't support."""
     rows = []
     for _project, entities in load("entities.json").items():
         for e in entities:
+            if not e.get("type"):
+                continue
             rows.append({
                 "id": e["id"],
                 "project_slug": e["projectSlug"],
