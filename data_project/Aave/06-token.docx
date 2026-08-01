@@ -1,0 +1,173 @@
+TOKEN INTELLIGENCE DATASET — AAVE
+
+Token Information
+
+Official Token Name: Aave Token
+
+Symbol: AAVE
+
+Token Standard: ERC-20
+
+Blockchain: Ethereum
+
+Contract Address: 0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9
+
+Decimals: 18 (ERC-20 standar)
+
+Status: Live
+
+Supply
+
+Metrik Nilai
+Maximum Supply 16,000,000 AAVE
+Total Supply 16,000,000 AAVE
+Circulating Supply ~15,417,617 AAVE (Etherscan)
+Initial Supply 16,000,000 AAVE (pasca-migrasi)
+Supply Type Fixed (16,000,000 max)
+
+Distribution
+
+LEND to AAVE Migrator: 81.25% (13,000,000 AAVE)
+
+AAVE Ecosystem Reserve: 18.75% (3,000,000 AAVE)
+
+Catatan: Data distribusi di atas berdasarkan Tokenomist. Dokumentasi resmi mengenai alokasi spesifik untuk Community, Team, Investors, Foundation, Treasury, Advisors tidak ditemukan dalam sumber yang dapat diverifikasi pada fase ini.
+
+Aave Labs Grant (2026): 75,000 AAVE disetujui melalui proposal Aave Will Win dengan vesting linear 48 bulan
+
+Vesting Schedule
+
+LEND to AAVE Migrator (81.25% / 13,000,000 AAVE):
+
+· Cliff: Ya (cliff mechanism)
+· Vesting: Cliff vesting — token dirilis sekaligus setelah periode tunggu
+· Unlock Frequency: Tidak diungkap secara spesifik
+· Current Status: Sebagian besar telah unlock; jadwal unlock penuh berlanjut hingga 2027
+
+AAVE Ecosystem Reserve (18.75% / 3,000,000 AAVE):
+
+· Cliff: Ya
+· Vesting: Cliff vesting
+· Unlock Frequency: Tidak diungkap secara spesifik
+· Current Status: Sebagian besar telah unlock; jadwal unlock penuh berlanjut hingga 2027
+
+Aave Labs Grant (75,000 AAVE):
+
+· Cliff: Tidak disebutkan
+· Vesting: Linear over 48 months
+· Unlock Frequency: Linier selama 48 bulan
+· Current Status: Aktif (disetujui April 2026)【EV-029】
+
+Status Umum: Aave hampir sepenuhnya unlocked — per 2026, ~94.87% (15,179,911 AAVE) dari total supply telah unlock
+
+TGE
+
+TGE Date: Oktober 2020
+
+Initial Unlock: Migrasi LEND ke AAVE dengan rasio 100:1
+
+Unlocked Categories: LEND to AAVE Migrator (81.25%); AAVE Ecosystem Reserve (18.75%)
+
+Launch Platform: Tidak diungkap.
+
+Status: Completed【EV-009】
+
+Utility
+
+Utility Deskripsi Status
+Governance AAVE, stkAAVE, dan aAAVE holders dapat memberikan suara pada proposal atau mendelegasikan voting power Live
+Staking (Safety Module) Staking AAVE di Safety Module sebagai asuransi terhadap shortfall events; staker mendapat rewards dalam bentuk AAVE atau insentif lain Live
+Reduced GHO Borrowing Rates Staking AAVE memberikan pengurangan suku bunga pinjaman GHO Live
+Collateral AAVE dapat disupply ke pasar Aave sebagai jaminan untuk meminjam aset lain Live
+Liquidity Pools AAVE dapat disupply ke liquidity pools di Aave Protocol atau DEX untuk mendapatkan yield Live
+
+Governance
+
+Governance Model: Aave Protocol diatur oleh komunitas pemegang token AAVE (AAVE, stkAAVE, dan aAAVE token holders di Ethereum mainnet) melalui prosedur, voting, dan eksekusi smart contract yang secara kolektif dikenal sebagai Aave Governance
+
+Voting System: On-chain voting melalui proposal tata kelola (Aave Improvement Proposals / AIPs)
+
+Voting Power: Berdasarkan jumlah token AAVE, stkAAVE, dan aAAVE yang dipegang
+
+Delegation: Holders dapat mendelegasikan voting power kepada pihak lain
+
+Proposal System: AIPs untuk keputusan seperti deployments, parameter adjustments, features, dan lainnya
+
+Treasury Governance: DAO mengelola treasury melalui voting
+
+Status: Live
+
+Inflation / Deflation
+
+Inflation Mechanism: Tidak ada mekanisme inflasi bawaan — supply fixed di 16,000,000 AAVE
+
+Emission Schedule: Tidak ada emisi token baru — supply telah fixed sejak TGE
+
+Burn Mechanism:
+
+· Protocol fees digunakan untuk buyback dan burn AAVE
+· Program buyback $50 juta per tahun
+· Dalam 8 bulan, protokol telah melakukan buyback ~0.80% dari total supply (16 juta AAVE)
+· Beberapa sumber menyebut mekanisme "revenue-based burns"
+· Sumber lain menyebut buyback lebih bersifat "demand-support program" karena tidak ada burn mechanism yang eksplisit
+
+Buyback: Ada — program buyback $50 juta per tahun dari pendapatan protokol
+
+Supply Reduction: Deflationary pressure melalui buyback
+
+Status: Live (buyback aktif; mekanisme burn bervariasi antar sumber)
+
+Holder Distribution
+
+Total Holders: 200,762 (Ethereum)
+
+Top 10 Holders: 41.57% (6.65 M AAVE)
+
+Top 1 Holder: 14.01% (2.24 M AAVE)
+
+Catatan: Data holder distribution di atas berasal dari Etherscan dan mencakup seluruh holder di Ethereum. Data spesifik untuk Foundation Holding, Investor Holding, Treasury Holding, dan Community Holding tidak tersedia dalam sumber yang dapat diverifikasi pada fase ini.
+
+Major Token Events
+
+Date Event Description Status Related Event ID
+2017-11 ICO ETHLend ETHLend mengadakan ICO, menjual 1 miliar token LEND【EV-002】 Completed EV-002
+2020-07-29 Pengumuman Aavenomics Aave mengumumkan rencana swap LEND ke AAVE rasio 100:1 dan total suplai 16 juta【EV-007】 Completed EV-007
+2020-09-25 Aktivasi AIP-1 Fase awal Aavenomics dan Safety Incentives dimulai dengan distribusi 400 AAVE/hari【EV-008】 Completed EV-008
+2020-10 Migrasi LEND ke AAVE Token AAVE diluncurkan; migrasi LEND ke AAVE rasio 100:1【EV-009】 Completed EV-009
+2020-10-03 TGE AAVE Block height 10978863 Completed EV-009
+2026-04-12 Proposal Aave Will Win Proposal disahkan dengan 75% dukungan; menyetujui 75,000 AAVE untuk Aave Labs dengan vesting 48 bulan【EV-029】 Completed EV-029
+
+Official Token Resources
+
+Official Documentation: https://aave.com/docs/ecosystem/aave[reference:53]
+
+Whitepaper: https://aave.com/docs/aave-v4
+
+Governance: https://governance.aave.com
+
+Explorer (Etherscan): https://etherscan.io/token/0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9[reference:55]
+
+Contract: https://etherscan.io/token/0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9[reference:56]
+
+GitHub: https://github.com/aave
+
+Dashboard (Dune): https://dune.com/aavelabs
+
+RINGKASAN
+
+Kategori Nilai
+Status Live
+Supply Type Fixed
+Total Supply 16,000,000 AAVE
+Distribution Categories LEND to AAVE Migrator (81.25%); AAVE Ecosystem Reserve (18.75%)
+Utility Count 5 (Governance, Staking, Reduced GHO Rates, Collateral, Liquidity Pools)
+Governance AAVE/stkAAVE/aAAVE holders; on-chain voting via AIPs
+Major Token Events 6 events (2017 ICO, 2020 Aavenomics, AIP-1, TGE/Migrasi, 2026 Aave Will Win)
+
+OPEN THREADS
+
+· Distribusi Token Detail: Alokasi spesifik untuk Community, Team, Investors, Foundation, Treasury, Advisors tidak ditemukan dalam dokumentasi resmi yang dapat diverifikasi. Sumber Tokenomist hanya menyebut dua kategori: LEND to AAVE Migrator (81.25%) dan AAVE Ecosystem Reserve (18.75%).
+· Vesting Schedule Detail: Jadwal vesting per kategori (cliff period, unlock frequency) tidak didokumentasikan secara lengkap dalam sumber resmi. Tokenomist menyebut jadwal unlock penuh berlanjut hingga 2027 namun tidak memberikan rincian per kategori.
+· Mekanisme Burn: Terdapat konflik antar sumber mengenai mekanisme burn — beberapa menyebut protocol fees digunakan untuk buyback dan burn AAVE, sementara sumber lain menyebut tidak ada burn mechanism eksplisit dan buyback lebih bersifat "demand-support program".
+· Holder Distribution: Data holder distribution hanya tersedia untuk top 10 dan top 1 holder secara umum. Data spesifik untuk Foundation Holding, Investor Holding, Treasury Holding, dan Community Holding tidak tersedia.
+· Token Supply di Chain Lain: AAVE memiliki implementasi cross-chain di berbagai jaringan, namun data supply dan contract address di masing-masing chain tidak terdokumentasi secara lengkap.

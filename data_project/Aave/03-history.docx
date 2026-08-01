@@ -1,0 +1,885 @@
+HISTORICAL INTELLIGENCE DATASET — AAVE
+
+EVENT 1
+
+Event ID: EV-001
+
+Date: 2017-05-01
+
+Event Name: Pendirian ETHLend
+
+Event Type: Founding
+
+Description: Stani Kulechov mendirikan ETHLend, platform peminjaman peer-to-peer terdesentralisasi berbasis Ethereum.
+
+Participants: Stani Kulechov
+
+Location: Tidak diketahui
+
+Status: Completed
+
+Immediate Result: ETHLend didirikan sebagai entitas.
+
+Sources:
+
+· https://forklog.com/en/what-is-aave/
+
+EVENT 2
+
+Event ID: EV-002
+
+Date: 2017-11
+
+Event Name: Peluncuran Platform ETHLend dan ICO
+
+Event Type: Launch
+
+Description: ETHLend meluncurkan platform peminjaman P2P ETHLend.io dan mengadakan Initial Coin Offering (ICO) yang mengumpulkan $16.2 juta. Proyek menjual 1 miliar token LEND utility; 300 juta (23%) diberikan kepada founder dan tim.
+
+Participants: ETHLend; Stani Kulechov
+
+Location: Tidak diketahui
+
+Status: Completed
+
+Immediate Result: ICO mengumpulkan $16.2 juta; token LEND didistribusikan.
+
+Sources:
+
+· https://forklog.com/en/what-is-aave/
+· https://icodrops.com/ethlend/
+
+EVENT 3
+
+Event ID: EV-003
+
+Date: 2018-09-18
+
+Event Name: Rebranding ETHLend menjadi Aave
+
+Event Type: Founding
+
+Description: ETHLend mengumumkan peluncuran perusahaan induk baru bernama Aave, yang berasal dari kata Finlandia untuk "hantu." ETHLend menjadi anak perusahaan di bawah Aave, dan peran eksekutif tetap sama dengan Stani Kulechov sebagai CEO. Model bisnis beralih dari P2P ke model liquidity pool.
+
+Participants: ETHLend; Aave; Stani Kulechov
+
+Location: Chiasso, Switzerland
+
+Status: Completed
+
+Immediate Result: ETHLend berganti nama menjadi Aave; transisi dari model P2P ke model liquidity pool dimulai.
+
+Sources:
+
+· https://in.marketscreener.com/news/latest/ETHLend-Announces-Launch-of-New-Parent-Company-Aave-27274926/
+· https://support.tokocrypto.com/hc/en-us/articles/360053159252-AAVE-Aave
+· https://www.bitget.com/news/detail/12560604604232
+
+EVENT 4
+
+Event ID: EV-004
+
+Date: 2019-10
+
+Event Name: Peluncuran Public Testnet Aave V1
+
+Event Type: Technology
+
+Description: Aave merilis public testnet protokol di Kovan Network, termasuk dokumentasi, situs web baru, dan portal pengembang.
+
+Participants: Aave
+
+Location: Tidak diketahui
+
+Status: Completed
+
+Immediate Result: Public testnet Aave V1 tersedia untuk pengujian publik.
+
+Sources:
+
+· https://medium.com/aave/the-aave-protocol-released-on-public-testnet-2eb86c101d0b?source=post_page-----2eb86c101d0b--------------------------------
+· https://help.defisaver.com/en/articles/7483761-aave-versions-comparison
+
+EVENT 5
+
+Event ID: EV-005
+
+Date: 2020-01-08
+
+Event Name: Peluncuran Mainnet Aave V1 di Ethereum
+
+Event Type: Launch
+
+Description: Aave V1 diluncurkan di mainnet Ethereum, memungkinkan pengguna untuk mendapatkan bunga dari deposito dan meminjam aset. Protokol mengimplementasikan model liquidity pool yang menyelesaikan masalah utama model ETHLend.
+
+Participants: Aave; Ethereum
+
+Location: Tidak diketahui
+
+Status: Completed
+
+Immediate Result: Aave V1 live di Ethereum mainnet dengan dua aset yang didukung: ETH dan LEND.
+
+Sources:
+
+· https://twitter.com/AaveAave/status/1214990573356167170
+· https://messari.io/project/aave/profile
+· https://forklog.com/en/what-is-aave/
+· https://governance.aave.com/t/aave-labs-contributions-report/18940
+
+EVENT 6
+
+Event ID: EV-006
+
+Date: 2020-07
+
+Event Name: Pendanaan Token Sale $3 Juta
+
+Event Type: Funding
+
+Description: Aave mengumpulkan $3 juta melalui token sale dengan partisipasi dari Framework Ventures dan Three Arrows Capital.
+
+Participants: Aave; Framework Ventures; Three Arrows Capital
+
+Location: Tidak diketahui
+
+Status: Completed
+
+Immediate Result: Pendanaan $3 juta diperoleh.
+
+Sources:
+
+· https://www.htx.com.co/tokens/aave/
+
+EVENT 7
+
+Event ID: EV-007
+
+Date: 2020-07-29
+
+Event Name: Pengumuman Aavenomics dan Rencana Token AAVE
+
+Event Type: Token
+
+Description: Aave mengumumkan "Aavenomics" — kerangka insentif finansial dan tata kelola bertingkat untuk prioritas keamanan dan keberlanjutan Aave. Rencana mencakup swap LEND ke AAVE dengan rasio 100:1 dan total suplai AAVE 16 juta token. AAVE akan berfungsi sebagai token tata kelola.
+
+Participants: Aave; LEND; AAVE
+
+Location: Tidak diketahui
+
+Status: Completed
+
+Immediate Result: Rencana transisi dari LEND ke AAVE serta mekanisme staking dan liquidity mining diumumkan.
+
+Sources:
+
+· https://www.theblock.co/post/72523/aave-decentralization-token-swap-aavenomics
+· https://www.coindesk.com/markets/2020/07/29/defi-lender-aave-rolls-out-governance-token-on-path-to-decentralization/
+· https://www.nasdaq.com/articles/defi-lender-aave-rolls-out-governance-token-on-path-to-decentralization-2020-07-29
+
+EVENT 8
+
+Event ID: EV-008
+
+Date: 2020-09-25
+
+Event Name: Aktivasi AIP-1 (Fase Awal Aavenomics)
+
+Event Type: Governance
+
+Description: Dengan hasil AIP-1, protokol Aave memulai fase awal Aavenomics dan Safety Incentives dengan distribusi terjadwal 400 AAVE per hari kepada staker Safety Module.
+
+Participants: Aave DAO; Aave
+
+Location: Tidak diketahui
+
+Status: Completed
+
+Immediate Result: Fase awal Aavenomics diaktifkan.
+
+Sources:
+
+· https://github.com/aave/aip/blob/main/content/aips/AIP-7.md
+
+EVENT 9
+
+Event ID: EV-009
+
+Date: 2020-10
+
+Event Name: Migrasi LEND ke AAVE dan Peluncuran Token AAVE
+
+Event Type: Token
+
+Description: Token native AAVE diterbitkan dan migrasi LEND ke AAVE dilakukan dengan rasio 100:1. Migrasi dimulai pada 2 Oktober 2020.
+
+Participants: Aave; LEND; AAVE
+
+Location: Tidak diketahui
+
+Status: Completed
+
+Immediate Result: Token AAVE diluncurkan; LEND digantikan oleh AAVE sebagai token protokol.
+
+Sources:
+
+· https://forklog.com/en/what-is-aave/
+· https://www.htx.com/en-us/support/htx-will-support-the-migration-of-lend-to-aave
+· https://www.coinspeaker.com/aaves-defi-transition-how-is-it-going-and-what-is-the-future-of/
+
+EVENT 10
+
+Event ID: EV-010
+
+Date: 2020-10
+
+Event Name: Pendanaan Seri A $25 Juta
+
+Event Type: Funding
+
+Description: Aave mengumpulkan $25 juta dalam putaran pendanaan yang dipimpin oleh Blockchain Capital, dengan partisipasi Standard Crypto dan Blockchain.com Ventures.
+
+Participants: Aave; Blockchain Capital; Standard Crypto; Blockchain.com Ventures
+
+Location: Tidak diketahui
+
+Status: Completed
+
+Immediate Result: Pendanaan $25 juta diperoleh.
+
+Sources:
+
+· https://www.htx.com.co/tokens/aave/
+
+EVENT 11
+
+Event ID: EV-011
+
+Date: 2020-12-03
+
+Event Name: Peluncuran Mainnet Aave V2
+
+Event Type: Technology
+
+Description: Aave V2 diluncurkan di mainnet dengan fitur baru termasuk aTokens, debt tokenization, credit delegation, batch flash loans, collateral swaps, dan fixed & variable borrowing rates.
+
+Participants: Aave
+
+Location: Tidak diketahui
+
+Status: Completed
+
+Immediate Result: Aave V2 live di mainnet dengan peningkatan efisiensi modal dan fleksibilitas.
+
+Sources:
+
+· https://medium.com/aave/the-aave-protocol-v2-f06f299cee04
+· https://forklog.com/en/news/defi-bulletin-aave-v2-launch-and-the-acquisition-of-yearn-finance
+· https://www.coindesk.com/tech/2020/12/03/aave-launches-v2-in-bid-to-make-borrowing-against-volatile-assets-less-risky/
+
+EVENT 12
+
+Event ID: EV-012
+
+Date: 2021-03-16
+
+Event Name: Peluncuran AMM Markets di Aave V2
+
+Event Type: Technology
+
+Description: Aave mengumumkan peluncuran AMM markets di Aave V2, menyediakan token penyedia likuiditas (LP) dari exchange terdesentralisasi terpilih. Peluncuran ini juga mengaktifkan Aave Governance V2.
+
+Participants: Aave
+
+Location: Tidak diketahui
+
+Status: Completed
+
+Immediate Result: AMM Markets dan Aave Governance V2 diaktifkan; staker AAVE mendapat hak tata kelola.
+
+Sources:
+
+· https://medium.com/aave/aave-amm-market-released-73ae76a7cbc0
+· https://medium.com/aave/aave-protocol-governance-v2-has-been-activated-af4a4b228885
+
+EVENT 13
+
+Event ID: EV-013
+
+Date: 2021-03-31
+
+Event Name: Kemitraan Aave dengan Polygon
+
+Event Type: Partnership
+
+Description: Aave mengumumkan eksplorasi sidechain skalabel dengan Polygon (sebelumnya Matic) untuk menghindari biaya transaksi tinggi di Ethereum. Aave Market di Polygon akan mengonboard MATIC sebagai aset jaminan bersama USDC, USDT, DAI, WETH, AAVE, dan WBTC.
+
+Participants: Aave; Polygon
+
+Location: Tidak diketahui
+
+Status: Completed
+
+Immediate Result: Aave Market di Polygon diumumkan.
+
+Sources:
+
+· https://www.coindesk.com/tech/2021/03/31/defi-major-aave-working-with-polygon-to-bypass-ethereum-congestion/
+· https://www.nasdaq.com/articles/defi-major-aave-working-with-polygon-to-bypass-ethereum-congestion-2021-03-31
+
+EVENT 14
+
+Event ID: EV-014
+
+Date: 2021-04
+
+Event Name: Program Liquidity Mining Aave-Polygon $40 Juta
+
+Event Type: Ecosystem
+
+Description: Polygon mengalokasikan 1% dari total suplai MATIC (senilai $40 juta+) untuk program liquidity mining di pasar Aave Polygon.
+
+Participants: Aave; Polygon
+
+Location: Tidak diketahui
+
+Status: Completed
+
+Immediate Result: Program liquidity mining $40 juta+ diluncurkan untuk pasar Aave di Polygon.
+
+Sources:
+
+· https://polygon.technology/blog/defiforall-kicking-off-l2-defi-summer-with-40-million-usd-in-liquidity-mining-rewards-from-polygon-for-aaves-polygon-markets
+
+EVENT 15
+
+Event ID: EV-015
+
+Date: 2021-07
+
+Event Name: Konsep Aave Arc Diperkenalkan
+
+Event Type: Product
+
+Description: Aave mengungkapkan konsep Aave Arc, platform terizinkan (permissioned) untuk institusi keuangan dengan persyaratan KYC/AML.
+
+Participants: Aave
+
+Location: Tidak diketahui
+
+Status: Completed
+
+Immediate Result: Konsep Aave Arc diperkenalkan untuk akses institusi ke DeFi.
+
+Sources:
+
+· https://www.theblock.co/post/113016/aave-to-launch-institutional-defi-platform-aave-arc-within-weeks
+
+EVENT 16
+
+Event ID: EV-016
+
+Date: 2021-08
+
+Event Name: Program Insentif Avalanche Rush — Aave
+
+Event Type: Ecosystem
+
+Description: Avalanche Foundation mengalokasikan $180 juta untuk program insentif DeFi "Avalanche Rush," dengan $20 juta untuk pengguna Aave.
+
+Participants: Aave; Avalanche
+
+Location: Tidak diketahui
+
+Status: Completed
+
+Immediate Result: Aave berpartisipasi dalam Avalanche Rush dengan insentif $20 juta.
+
+Sources:
+
+· https://www.theblock.co/post/114025/avalanche-launches-180-million-defi-incentive-scheme-with-aave-and-curve
+
+EVENT 17
+
+Event ID: EV-017
+
+Date: 2021-11
+
+Event Name: Peluncuran Aave Arc
+
+Event Type: Product
+
+Description: Aave mengumumkan peluncuran Aave Arc, pasar terizinkan berbasis Aave V2 untuk lembaga keuangan, dengan Fireblocks sebagai whitelister pertama.
+
+Participants: Aave; Fireblocks
+
+Location: Tidak diketahui
+
+Status: Completed
+
+Immediate Result: Aave Arc diluncurkan untuk institusi dengan KYC/AML.
+
+Sources:
+
+· https://www.chaindd.net/chaindd/2021/11/18/1376988.html
+
+EVENT 18
+
+Event ID: EV-018
+
+Date: 2021-12
+
+Event Name: Proposal Lisensi Bisnis Aave
+
+Event Type: Governance
+
+Description: Proposal tata kelola Aave mengenai lisensi kode platform berakhir dengan 55% suara mendukung penerapan "business license."
+
+Participants: Aave DAO
+
+Location: Tidak diketahui
+
+Status: Completed
+
+Immediate Result: Proposal lisensi bisnis disetujui dengan 55% dukungan.
+
+Sources:
+
+· https://www.coindesk.com/tech/2021/12/15/55-of-aaves-community-votes-for-business-license-to-prevent-forks/
+
+EVENT 19
+
+Event ID: EV-019
+
+Date: 2022-01
+
+Event Name: Diskusi Aave Governance V3 Dimulai
+
+Event Type: Governance
+
+Description: Diskusi mengenai Aave governance v3 dimulai, yang kemudian berpuncak pada proposal yang disahkan melalui voting off-chain pada Juli.
+
+Participants: Aave DAO
+
+Location: Tidak diketahui
+
+Status: Ongoing
+
+Immediate Result: Proses menuju Aave Governance V3 dimulai.
+
+Sources:
+
+· https://finance.yahoo.com/news/aave-poised-multi-chain-governance-overhaul-180000698.html
+
+EVENT 20
+
+Event ID: EV-020
+
+Date: 2022-03-16
+
+Event Name: Peluncuran Aave V3 di Enam Jaringan
+
+Event Type: Technology
+
+Description: Aave V3 diluncurkan di enam jaringan: Fantom, Avalanche, Harmony, Arbitrum, Optimism, dan Polygon. V3 menghadirkan fungsionalitas cross-chain, isolated liquidity pools, dan peningkatan efisiensi modal.
+
+Participants: Aave; Fantom; Avalanche; Harmony; Arbitrum; Optimism; Polygon
+
+Location: Tidak diketahui
+
+Status: Completed
+
+Immediate Result: Aave V3 live di enam jaringan; peluncuran Ethereum mainnet ditunda ke tanggal yang belum ditentukan.
+
+Sources:
+
+· https://twitter.com/AaveAave/status/1504137636105043971
+· https://finance.yahoo.com/news/aave-launches-souped-v3-fantom-091738544.html
+· https://www.coindesk.com/tech/2022/03/16/defi-platform-aave-launches-version-3-with-cross-chain-swaps-front-and-center/
+
+EVENT 21
+
+Event ID: EV-021
+
+Date: 2022-12-24
+
+Event Name: Penonaktifan Aave V1
+
+Event Type: Governance
+
+Description: Proposal perbaikan Aave (AIP) pada 24 Desember 2022 menonaktifkan mayoritas Aave V1 dengan membekukan semua cadangan di kontrak Aave V1. Pengguna masih dapat melunasi utang dan menarik jaminan tetapi tidak dapat lagi menyuplai dan meminjam aset.
+
+Participants: Aave DAO; Aave V1
+
+Location: Tidak diketahui
+
+Status: Completed
+
+Immediate Result: Aave V1 dinonaktifkan untuk aktivitas supply dan borrowing baru.
+
+Sources:
+
+· https://governance-v2.aave.com/governance/proposal/132/
+· https://messari.io/project/aave/profile
+
+EVENT 22
+
+Event ID: EV-022
+
+Date: 2023-01-27
+
+Event Name: Peluncuran Aave V3 di Ethereum Mainnet
+
+Event Type: Technology
+
+Description: Aave V3 di-deploy di Ethereum mainnet setelah voting tata kelola. Deployment awal mendukung tujuh aset: wrapped bitcoin, wrapped ether, wrapped staked ether, USDC, DAI, LINK, dan AAVE.
+
+Participants: Aave; Ethereum
+
+Location: Tidak diketahui
+
+Status: Completed
+
+Immediate Result: Aave V3 tersedia di Ethereum mainnet.
+
+Sources:
+
+· https://www.theblock.co/post/203767/aave-set-to-launch-third-version-of-its-crypto-lending-protocol-on-ethereum
+· https://en.theblockbeats.news/articles/0c5c3107-1766-4517-8003-9940e7528a2b
+
+EVENT 23
+
+Event ID: EV-023
+
+Date: 2023-02
+
+Event Name: Peluncuran GHO di Goerli Testnet
+
+Event Type: Technology
+
+Description: Stablecoin GHO Aave dirilis di Goerli testnet untuk pengujian.
+
+Participants: Aave; GHO
+
+Location: Tidak diketahui
+
+Status: Completed
+
+Immediate Result: GHO tersedia di Goerli testnet.
+
+Sources:
+
+· https://www.theblock.co/post/240297/aave-protocol-activates-gho-stablecoin-on-the-ethereum-mainnet
+
+EVENT 24
+
+Event ID: EV-024
+
+Date: 2023-07-15
+
+Event Name: Peluncuran Stablecoin GHO di Ethereum Mainnet
+
+Event Type: Product
+
+Description: Aave meluncurkan stablecoin terdesentralisasi GHO di Ethereum mainnet. GHO adalah aset over-collateralized yang dapat dicetak dengan menyetor aset jaminan ke Aave V3 di Ethereum.
+
+Participants: Aave; GHO; Ethereum
+
+Location: Tidak diketahui
+
+Status: Completed
+
+Immediate Result: GHO live di Ethereum mainnet; pengguna dapat mencetak GHO dengan jaminan di Aave V3.
+
+Sources:
+
+· https://www.theblock.co/post/240297/aave-protocol-activates-gho-stablecoin-on-the-ethereum-mainnet
+· https://thedefiant.io/news/defi/aave-launches-gho-stablecoin-on-ethereum-mainnet
+· https://blockworks.co/news/aave-stablecoin-gho-community-governance-vote
+
+EVENT 25
+
+Event ID: EV-025
+
+Date: 2025-11-10
+
+Event Name: Rilis Whitepaper Aave V4
+
+Event Type: Technology
+
+Description: Komunitas Aave secara resmi mengumumkan whitepaper Aave V4 dengan fitur-fitur seperti manajemen risiko yang ditingkatkan dan kemampuan cross-chain native.
+
+Participants: Aave
+
+Location: Tidak diketahui
+
+Status: Completed
+
+Immediate Result: Whitepaper Aave V4 dirilis untuk publik.
+
+Sources:
+
+· https://bitbulteni.com/aave-v4-whitepaper-138022/
+
+EVENT 26
+
+Event ID: EV-026
+
+Date: 2025-12-23
+
+Event Name: Voting Snapshot Proposal Aave Will Win
+
+Event Type: Governance
+
+Description: Voting snapshot untuk proposal "Aave Will Win" diadakan dari 23-26 Desember 2025, menunjukkan 64,15% menentang proposal, 32,85% abstain, dan hanya 3,01% mendukung.
+
+Participants: Aave DAO
+
+Location: Tidak diketahui
+
+Status: Completed
+
+Immediate Result: Proposal awal Aave Will Win tidak mendapatkan dukungan signifikan.
+
+Sources:
+
+· https://www.huobi.eu.com/special/defi
+
+EVENT 27
+
+Event ID: EV-027
+
+Date: 2026-02
+
+Event Name: Aave Labs Menghentikan Brand Avara
+
+Event Type: Organization
+
+Description: Aave Labs menghentikan brand Avara, perusahaan payung yang sebelumnya menaungi Aave, Lens, GHO, dan merek lainnya.【Fase 2 — Entitas 11】
+
+Participants: Aave Labs; Avara
+
+Location: Tidak diketahui
+
+Status: Completed
+
+Immediate Result: Brand Avara dihentikan.
+
+Sources:
+
+· https://www.theblock.co/post/338483/aave-labs-drops-avara-brand-ethcc
+· https://avara.xyz
+
+EVENT 28
+
+Event ID: EV-028
+
+Date: 2026-03-30
+
+Event Name: Peluncuran Aave V4 di Ethereum Mainnet
+
+Event Type: Technology
+
+Description: Aave V4 diluncurkan di Ethereum mainnet dengan arsitektur liquidity hub-and-spoke. Tiga hub (Core, Plus, Prime) dan sebelas spoke di-deploy, memungkinkan routing likuiditas terisolasi.
+
+Participants: Aave; Ethereum
+
+Location: Cannes, France (diumumkan di EthCC)
+
+Status: Completed
+
+Immediate Result: Aave V4 live di Ethereum mainnet dengan arsitektur hub-and-spoke.
+
+Sources:
+
+· https://aave.com/changelog
+· https://www.kucoin.com/news/en/aave-v4-launches-on-ethereum-mainnet-with-hub-and-spoke-model-57804
+
+EVENT 29
+
+Event ID: EV-029
+
+Date: 2026-04-12
+
+Event Name: Proposal "Aave Will Win" Disahkan
+
+Event Type: Governance
+
+Description: Proposal tata kelola "Aave Will Win Framework: Primary Funding Request" disahkan dengan 522.780 suara mendukung dan 175.310 menentang (sekitar 75% dukungan). Proposal menyetujui pendanaan hingga $42,5 juta dalam stablecoin dan 75.000 token AAVE untuk Aave Labs.
+
+Participants: Aave DAO; Aave Labs
+
+Location: Tidak diketahui
+
+Status: Completed
+
+Immediate Result: Proposal Aave Will Win disahkan; pendanaan $42,5 juta + 75.000 AAVE disetujui untuk Aave Labs.
+
+Sources:
+
+· https://finance.yahoo.com/news/aave-ends-month-long-wait-for-protocol-control-in-decisive-vote-180000698.html
+· https://www.coindesk.com/tech/2026/04/13/aave-passes-landmark-vote-ending-months-long-fight-over-who-controls-protocol-revenue/
+· https://newsletter.theblockcrypto.com/p/aave-dao-approves-25-million-aave-labs-funding-grant
+
+EVENT 30
+
+Event ID: EV-030
+
+Date: 2026-05-31
+
+Event Name: Eksploitasi Bridge rsETH Kelp DAO
+
+Event Type: Security
+
+Description: Pada 17:35 UTC, bridge LayerZero V2 Kelp rsETH menerima pesan cross-chain palsu, melepaskan 116.500 rsETH di Ethereum tanpa burn yang sesuai di Unichain. Penyerang mendepositokan rsETH palsu ke Aave V3 sebagai jaminan.
+
+Participants: Aave; Kelp DAO; LayerZero
+
+Location: Tidak diketahui
+
+Status: Completed
+
+Immediate Result: Eksploitasi bridge menyebabkan deposit rsETH palsu ke Aave V3; Aave meninjau standar pencatatan aset.
+
+Sources:
+
+· https://www.kucoin.com/news/en/aave-details-rseth-bridge-exploit-recovery-timeline-57855
+· https://www.coindesk.com/tech/2026/06/01/aave-overhauls-listing-standards-after-230-million-rseth-exploit-exposed-bridge-risks/
+· https://www.gate.com/news/1150890/aave-restores-300m-liquidity-after-cross-chain-exploit-and-court-battle
+
+EVENT 31
+
+Event ID: EV-031
+
+Date: 2026-06
+
+Event Name: Aave Memperketat Aturan Collateral Pasca-Eksploitasi
+
+Event Type: Security
+
+Description: Aave memperbarui aturan kripto setelah eksploitasi $230 juta yang melibatkan token rsETH KelpDAO. Aave merombak standar pencatatan aset untuk mengatasi risiko infrastruktur bridge.
+
+Participants: Aave
+
+Location: Tidak diketahui
+
+Status: Completed
+
+Immediate Result: Standar pencatatan aset Aave diperketat.
+
+Sources:
+
+· https://www.kucoin.com/news/en/aave-tightens-collateral-rules-after-230m-rseth-exploit-via-layerzero-bridge-57850
+· https://coinmarketcap.com/community/articles/6c6f7cd1-15f5-4010-a5e1-3ec541b14477
+
+EVENT 32
+
+Event ID: EV-032
+
+Date: 2026-07-15
+
+Event Name: Peluncuran Aave V4 di Avalanche
+
+Event Type: Technology
+
+Description: Aave V4 diluncurkan di jaringan Avalanche sebagai bagian dari upgrade ke model Hub & Spoke. Ini menandai deployment multi-chain pertama di bawah arsitektur baru.
+
+Participants: Aave; Avalanche
+
+Location: Tidak diketahui
+
+Status: Completed
+
+Immediate Result: Aave V4 live di Avalanche; deployment multi-chain pertama Aave V4.
+
+Sources:
+
+· https://www.kucoin.com/news/en/aave-v4-deploys-to-the-avalanche-network-with-hub-and-spoke-architecture-57916
+· https://coinpaprika.com/news/aave-brings-v4-to-avalanche-in-bet-on-tokenized-asset/
+
+---
+
+GRUP BERDASARKAN TAHUN
+
+2017
+
+· EV-001: Pendirian ETHLend (2017-05-01)
+· EV-002: Peluncuran Platform ETHLend dan ICO (2017-11)
+
+2018
+
+· EV-003: Rebranding ETHLend menjadi Aave (2018-09-18)
+
+2019
+
+· EV-004: Peluncuran Public Testnet Aave V1 (2019-10)
+
+2020
+
+· EV-005: Peluncuran Mainnet Aave V1 di Ethereum (2020-01-08)
+· EV-006: Pendanaan Token Sale $3 Juta (2020-07)
+· EV-007: Pengumuman Aavenomics dan Rencana Token AAVE (2020-07-29)
+· EV-008: Aktivasi AIP-1 (2020-09-25)
+· EV-009: Migrasi LEND ke AAVE dan Peluncuran Token AAVE (2020-10)
+· EV-010: Pendanaan Seri A $25 Juta (2020-10)
+· EV-011: Peluncuran Mainnet Aave V2 (2020-12-03)
+
+2021
+
+· EV-012: Peluncuran AMM Markets di Aave V2 (2021-03-16)
+· EV-013: Kemitraan Aave dengan Polygon (2021-03-31)
+· EV-014: Program Liquidity Mining Aave-Polygon $40 Juta (2021-04)
+· EV-015: Konsep Aave Arc Diperkenalkan (2021-07)
+· EV-016: Program Insentif Avalanche Rush — Aave (2021-08)
+· EV-017: Peluncuran Aave Arc (2021-11)
+· EV-018: Proposal Lisensi Bisnis Aave (2021-12)
+
+2022
+
+· EV-019: Diskusi Aave Governance V3 Dimulai (2022-01)
+· EV-020: Peluncuran Aave V3 di Enam Jaringan (2022-03-16)
+· EV-021: Penonaktifan Aave V1 (2022-12-24)
+
+2023
+
+· EV-022: Peluncuran Aave V3 di Ethereum Mainnet (2023-01-27)
+· EV-023: Peluncuran GHO di Goerli Testnet (2023-02)
+· EV-024: Peluncuran Stablecoin GHO di Ethereum Mainnet (2023-07-15)
+
+2025
+
+· EV-025: Rilis Whitepaper Aave V4 (2025-11-10)
+· EV-026: Voting Snapshot Proposal Aave Will Win (2025-12-23)
+
+2026
+
+· EV-027: Aave Labs Menghentikan Brand Avara (2026-02)
+· EV-028: Peluncuran Aave V4 di Ethereum Mainnet (2026-03-30)
+· EV-029: Proposal "Aave Will Win" Disahkan (2026-04-12)
+· EV-030: Eksploitasi Bridge rsETH Kelp DAO (2026-05-31)
+· EV-031: Aave Memperketat Aturan Collateral Pasca-Eksploitasi (2026-06)
+· EV-032: Peluncuran Aave V4 di Avalanche (2026-07-15)
+
+RINGKASAN
+
+Kategori Jumlah
+Total Events 32
+Founding 2
+Funding 3
+Technology 8
+Security 2
+Governance 6
+Token 2
+Product 3
+Partnership 1
+Ecosystem 2
+Organization 1
+Launch 2
+
+OPEN THREADS
+
+· Tanggal pendirian ETHLend: Sumber menyebut 2017 secara umum; beberapa menyebut "November 2017" untuk peluncuran platform, sementara ForkLog menyebut 1 Mei 2017 untuk pendirian. Tanggal pasti pendirian ETHLend belum terverifikasi secara definitif.
+· Jumlah pendanaan ICO: Sumber bervariasi — ForkLog menyebut $16.2 juta, sementara sumber lain menyebut sekitar $17 juta. Jumlah pasti belum terverifikasi.
+· Peluncuran Aave Arc: Sumber menyebut konsep diperkenalkan Juli 2021 dan diluncurkan November 2021, namun tanggal pasti peluncuran mainnet Aave Arc tidak terdokumentasi secara resmi.
+· Aave Governance V3: Diskusi dimulai Januari 2022 dan proposal disahkan via off-chain vote pada Juli 2022, namun status implementasi penuh Governance V3 tidak terdokumentasi secara jelas.
+· Aave Foundation: Keberadaan dan status Aave Foundation (Entitas 13) masih dalam tahap usulan (2026), bukan entitas yang sudah aktif beroperasi.

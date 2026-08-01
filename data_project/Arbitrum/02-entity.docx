@@ -1,0 +1,5425 @@
+PROJECT: Arbitrum
+
+---
+
+Entity: Offchain Labs
+Type: Organization
+Relationship: Pengembang inti (core development team) Arbitrum — membangun dan mengembangkan protokol Arbitrum, termasuk Arbitrum One, Arbitrum Nova, Arbitrum Nitro, Arbitrum Orbit, dan Stylus (HIGH) 
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Messari, https://messari.io/project/arbitrum/profile]; [Blockchain.com, https://www.blockchain.com/learning-portal/tokens/arbitrum-explained]; [Binance, https://www.binance.com/en/square/post/2024-10-16-arbitrum-arb-what-is-it-and-how-does-it-work]
+
+---
+
+Entity: Ed Felten (Edward Felten)
+Type: Person
+Relationship: Co-founder & Chief Scientist, Offchain Labs — bertemu dengan co-founder lain di Princeton University (HIGH) 
+Period: 2018–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [Messari, https://messari.io/project/arbitrum/profile]; [Bitstamp, https://www.bitstamp.net/learn/cryptocurrency-guide/what-is-arbitrum/]; [Blockchain.com, https://www.blockchain.com/learning-portal/tokens/arbitrum-explained]; [Uphold, https://uphold.com/en-eu/prices/crypto/arbitrum]; [HTX, https://www.htx.com.co]
+
+---
+
+Entity: Steven Goldfeder
+Type: Person
+Relationship: Co-founder & CEO, Offchain Labs — bertemu dengan co-founder lain di Princeton University (HIGH) 
+Period: 2018–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [Messari, https://messari.io/project/arbitrum/profile]; [Bitstamp, https://www.bitstamp.net/learn/cryptocurrency-guide/what-is-arbitrum/]; [Blockchain.com, https://www.blockchain.com/learning-portal/tokens/arbitrum-explained]; [Uphold, https://uphold.com/en-eu/prices/crypto/arbitrum]; [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]
+
+---
+
+Entity: Harry Kalodner
+Type: Person
+Relationship: Co-founder & CTO, Offchain Labs — bertemu dengan co-founder lain di Princeton University (HIGH) 
+Period: 2018–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [Messari, https://messari.io/project/arbitrum/profile]; [Bitstamp, https://www.bitstamp.net/learn/cryptocurrency-guide/what-is-arbitrum/]; [Blockchain.com, https://www.blockchain.com/learning-portal/tokens/arbitrum-explained]; [Uphold, https://uphold.com/en-eu/prices/crypto/arbitrum]; [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]
+
+---
+
+Entity: A.J. Warner (AJ Warner)
+Type: Person
+Relationship: Chief Strategy Officer, Offchain Labs (HIGH) ; Member, Arbitrum OpCo Foundation (permanent observer seat) (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]; [Arbitrum DAO Docs, https://docs.arbitrum.foundation/what-opco]
+
+---
+
+Entity: Brendan Ma
+Type: Person
+Relationship: Head of Investment Strategy, Offchain Labs (HIGH) ; Head, Arbitrum Foundation (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]; [CB Insights, https://www.cbinsights.com]
+
+---
+
+Entity: Sean S.
+Type: Person
+Relationship: Head of Finance, Offchain Labs (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]
+
+---
+
+Entity: kiet (kit) fong
+Type: Person
+Relationship: Head of Gaming Partnerships Asia Pacific, Offchain Labs (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]
+
+---
+
+Entity: Patrick McCorry
+Type: Person
+Relationship: Researcher, Offchain Labs (HIGH) ; Member, Arbitrum OpCo Foundation (permanent observer seat) (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]; [Arbitrum DAO Docs, https://docs.arbitrum.foundation/what-opco]
+
+---
+
+Entity: Preston Van Loon
+Type: Person
+Relationship: Core Contributor, Offchain Labs (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]
+
+---
+
+Entity: Humberto (Beto) Aparicio
+Type: Person
+Relationship: Senior Manager, Strategic Finance, Offchain Labs (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]
+
+---
+
+Entity: Abhishek Somani
+Type: Person
+Relationship: Product Manager, Offchain Labs (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]
+
+---
+
+Entity: Mariam Kouanda
+Type: Person
+Relationship: Grants Manager, Offchain Labs (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]
+
+---
+
+Entity: Campbell Law
+Type: Person
+Relationship: Initial Director, The Arbitrum Foundation — founder of Silverside Ltd, co-founder of Provenance Ltd, former VP at Goldman Sachs (11 years) (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation/foundational-documents/transparency-report-initial-foundation-setup]
+
+---
+
+Entity: Edward Noyons
+Type: Person
+Relationship: Initial Director, The Arbitrum Foundation — director of Marfire, co-founder of Autonomous, former audit director at Big-4 firm (11 years, 8 years in Cayman Islands) (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation/foundational-documents/transparency-report-initial-foundation-setup]
+
+---
+
+Entity: Ani Banerjee
+Type: Person
+Relationship: Initial Director, The Arbitrum Foundation — former investor at Citigroup, Cheyne Capital, and BlackRock (14 years); private investor since 2017 (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation/foundational-documents/transparency-report-initial-foundation-setup]
+
+---
+
+Entity: Frisson
+Type: Person
+Relationship: Member, Arbitrum OpCo Foundation (permanent observer seat) (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation/what-opco]
+
+---
+
+Entity: Gavin Wang
+Type: Person
+Relationship: Member, Arbitrum OpCo Foundation (permanent observer seat) (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation/what-opco]
+
+---
+
+Entity: Pedro Breuer
+Type: Person
+Relationship: Member, Arbitrum OpCo Foundation (permanent observer seat) (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation/what-opco]
+
+---
+
+Entity: The Arbitrum Foundation
+Type: Foundation
+Relationship: Badan hukum Cayman Islands foundation company yang bertugas mengembangkan dan memelihara ekosistem Arbitrum, melayani dan diatur oleh Arbitrum DAO (HIGH) 
+Period: 2023–sekarang (didirikan sebelum DAO setup)
+Exposure Type: financial-collateral (mengelola treasury ARB dan dana operasional)
+Evidence: (HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation/foundational-documents/transparency-report-initial-foundation-setup]; [Arbitrum DAO Docs, https://docs.arbitrum.foundation]
+
+---
+
+Entity: Arbitrum OpCo Foundation
+Type: Foundation
+Relationship: Cayman Islands foundation company — operational mesh layer ArbitrumDAO, bertugas mengelola dan mengawasi inisiatif yang disetujui DAO; DAO mengalokasikan 30M ARB untuk pendanaan OpCo selama 2 tahun 6 bulan (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation/what-opco]
+
+---
+
+Entity: Arbitrum DAO
+Type: DAO
+Relationship: Mekanisme tata kelola terdesentralisasi yang memungkinkan pemegang token ARB mengusulkan dan memilih perubahan pada organisasi dan teknologi yang diaturnya; mengatur The Arbitrum Foundation (HIGH) 
+Period: 2023–sekarang (setelah TGE 23 Maret 2023)
+Exposure Type: financial-collateral (mengelola treasury ARB)
+Evidence: (HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation]; [Blockchain.com, https://www.blockchain.com/learning-portal/tokens/arbitrum-explained]
+
+---
+
+Entity: Security Council (Arbitrum DAO)
+Type: DAO
+Relationship: 12 anggota yang dipilih oleh Arbitrum DAO melalui proses demokratis; bertanggung jawab atas keputusan sensitif-waktu dan tanggap darurat (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation]
+
+---
+
+Entity: Oversight and Transparency Committee (OAT)
+Type: DAO
+Relationship: 5 anggota yang dipilih setiap tahun; bertanggung jawab memegang akuntabilitas Arbitrum OpCo Foundation, meratifikasi tugas operasional seperti anggaran tahunan, memberikan transparansi kepada ArbitrumDAO (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation/what-opco]
+
+---
+
+Entity: Lightspeed Venture Partners
+Type: Investor
+Relationship: Memimpin B Round ($120M, 31 Agustus 2021, valuasi $1.2B) (HIGH) ; Ecosystem partner untuk Arbitrum Mentorship Program (HIGH) 
+Period: 2021–sekarang
+Exposure Type: shared-investor-only
+Evidence: (HIGH) [Binance, https://www.binance.com/en/square/post/18519034459322]; [Foresight News, https://foresightnews.pro/timeline/detail/71]; [DefiLlama, https://defillama.com/chain/Arbitrum]; [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]
+
+---
+
+Entity: Pantera Capital
+Type: Investor
+Relationship: Memimpin Seed Round ($3.7M, April 2019) (HIGH) ; Berpartisipasi dalam B Round ($120M, 31 Agustus 2021) (HIGH) ; Ecosystem partner untuk Arbitrum Mentorship Program (HIGH) 
+Period: 2019–sekarang
+Exposure Type: shared-investor-only
+Evidence: (HIGH) [Foresight News, https://foresightnews.pro/timeline/detail/71]; [DefiLlama, https://defillama.com/chain/Arbitrum]; [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]; [Binance, https://www.binance.com/en/square/post/18519034459322]
+
+---
+
+Entity: Polychain Capital
+Type: Investor
+Relationship: Berpartisipasi dalam B Round ($120M, 31 Agustus 2021) (HIGH) 
+Period: 2021–sekarang
+Exposure Type: shared-investor-only
+Evidence: (HIGH) [Binance, https://www.binance.com/en/square/post/18519034459322]; [DefiLlama, https://defillama.com/chain/Arbitrum]; [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]
+
+---
+
+Entity: Ribbit Capital
+Type: Investor
+Relationship: Berpartisipasi dalam B Round ($120M, 31 Agustus 2021) (HIGH) 
+Period: 2021–sekarang
+Exposure Type: shared-investor-only
+Evidence: (HIGH) [Binance, https://www.binance.com/en/square/post/18519034459322]; [DefiLlama, https://defillama.com/chain/Arbitrum]; [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]
+
+---
+
+Entity: Redpoint Ventures
+Type: Investor
+Relationship: Berpartisipasi dalam B Round ($120M, 31 Agustus 2021) (HIGH) 
+Period: 2021–sekarang
+Exposure Type: shared-investor-only
+Evidence: (HIGH) [Binance, https://www.binance.com/en/square/post/18519034459322]; [DefiLlama, https://defillama.com/chain/Arbitrum]; [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]
+
+---
+
+Entity: Alameda Research
+Type: Investor
+Relationship: Berpartisipasi dalam B Round ($120M, 31 Agustus 2021) (HIGH) 
+Period: 2021–sekarang (catatan: Alameda Research telah kolaps)
+Exposure Type: shared-investor-only
+Evidence: (HIGH) [Binance, https://www.binance.com/en/square/post/18519034459322]; [DefiLlama, https://defillama.com/chain/Arbitrum]; [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]
+
+---
+
+Entity: Mark Cuban
+Type: Person (Investor)
+Relationship: Berpartisipasi sebagai angel investor dalam B Round ($120M, 31 Agustus 2021) (HIGH) 
+Period: 2021–sekarang
+Exposure Type: shared-investor-only
+Evidence: (HIGH) [Binance, https://www.binance.com/en/square/post/18519034459322]; [DefiLlama, https://defillama.com/chain/Arbitrum]; [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]
+
+---
+
+Entity: Compound VC (Compound Ventures)
+Type: Investor
+Relationship: Berpartisipasi dalam Seed Round ($3.7M, April 2019) (HIGH) 
+Period: 2019–sekarang
+Exposure Type: shared-investor-only
+Evidence: (HIGH) [DefiLlama, https://defillama.com/chain/Arbitrum]; [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]
+
+---
+
+Entity: Raphael Ouzan
+Type: Person (Investor)
+Relationship: Berpartisipasi sebagai angel investor dalam Seed Round ($3.7M, April 2019) (HIGH) 
+Period: 2019–sekarang
+Exposure Type: shared-investor-only
+Evidence: (HIGH) [DefiLlama, https://defillama.com/chain/Arbitrum]; [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]
+
+---
+
+Entity: Jake Seid
+Type: Person (Investor)
+Relationship: Berpartisipasi sebagai angel investor dalam Seed Round ($3.7M, April 2019) (HIGH) 
+Period: 2019–sekarang
+Exposure Type: shared-investor-only
+Evidence: (HIGH) [DefiLlama, https://defillama.com/chain/Arbitrum]; [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]
+
+---
+
+Entity: Coinbase Ventures
+Type: Investor
+Relationship: Berpartisipasi dalam pendanaan (September 2019) (HIGH) 
+Period: 2019–sekarang
+Exposure Type: shared-investor-only
+Evidence: (HIGH) [Gate, https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738]
+
+---
+
+Entity: IOSG Ventures
+Type: Investor
+Relationship: Berpartisipasi dalam B Round ($120M, 31 Agustus 2021) (HIGH) ; Ecosystem partner untuk Arbitrum Mentorship Program (HIGH) 
+Period: 2021–sekarang
+Exposure Type: shared-investor-only
+Evidence: (HIGH) [The Block Beats, https://www.theblockbeats.info]; [Arbitrum Foundation Blog, https://blog.arbitrum.foundation/meet-the-builders-the-first-cohort-of-arbitrum-mentorship-program/]
+
+---
+
+Entity: Framework Ventures
+Type: Investor
+Relationship: Berpartisipasi dalam B Round ($120M, 31 Agustus 2021) (HIGH) 
+Period: 2021–sekarang
+Exposure Type: shared-investor-only
+Evidence: (HIGH) [BTCC, https://www.btcc.com]
+
+---
+
+Entity: 2A Ventures
+Type: Investor
+Relationship: Investor di Arbitrum Foundation (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: shared-investor-only
+Evidence: (HIGH) [PitchBook, https://pitchbook.com]
+
+---
+
+Entity: DeFiance Capital
+Type: Investor
+Relationship: Investor di Arbitrum Foundation (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: shared-investor-only
+Evidence: (HIGH) [PitchBook, https://pitchbook.com]
+
+---
+
+Entity: Intersection Growth Partners
+Type: Investor
+Relationship: Investor di Arbitrum Foundation (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: shared-investor-only
+Evidence: (HIGH) [PitchBook, https://pitchbook.com]
+
+---
+
+Entity: Mint Ventures (US)
+Type: Investor
+Relationship: Investor di Arbitrum Foundation (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: shared-investor-only
+Evidence: (HIGH) [PitchBook, https://pitchbook.com]
+
+---
+
+Entity: Pomp Investments
+Type: Investor
+Relationship: Investor di Arbitrum Foundation (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: shared-investor-only
+Evidence: (HIGH) [PitchBook, https://pitchbook.com]
+
+---
+
+Entity: Binance
+Type: Exchange
+Relationship: Menyediakan trading ARB (ARB/USDT, ARB/USDC, ARB/BTC) (HIGH) ; Sumber informasi resmi Arbitrum (HIGH) 
+Period: 2023–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [CoinLore, https://www.coinlore.com]; [CoinDesk, https://www.coindesk.com]
+
+---
+
+Entity: HTX (Huobi)
+Type: Exchange
+Relationship: Menyediakan trading ARB; sumber informasi resmi Arbitrum (HIGH) 
+Period: 2023–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [HTX, https://www.huobi.com/en-us/assets/details/arbitrum/]
+
+---
+
+Entity: Gate.io
+Type: Exchange
+Relationship: Menyediakan trading ARB (HIGH) 
+Period: 2023–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [CoinLore, https://www.coinlore.com]
+
+---
+
+Entity: MEXC Global
+Type: Exchange
+Relationship: Menyediakan trading ARB (HIGH) 
+Period: 2023–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [CoinLore, https://www.coinlore.com]
+
+---
+
+Entity: OKX
+Type: Exchange
+Relationship: Menyediakan trading ARB (ARB/USDT) (HIGH) 
+Period: 2023–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [CoinDesk, https://www.coindesk.com]
+
+---
+
+Entity: Bybit
+Type: Exchange
+Relationship: Menyediakan trading ARB (ARB/USDT) (HIGH) 
+Period: 2023–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [CoinDesk, https://www.coindesk.com]
+
+---
+
+Entity: WhiteBIT
+Type: Exchange
+Relationship: Menyediakan trading ARB (ARB/USDT) (HIGH) 
+Period: 2023–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [CoinDesk, https://www.coindesk.com]
+
+---
+
+Entity: Kraken
+Type: Exchange
+Relationship: Mendukung native USDC di Arbitrum Network (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Rise Works, https://help.riseworks.io]
+
+---
+
+Entity: Robinhood
+Type: Partner
+Relationship: Robinhood Chain dibangun di atas teknologi Arbitrum (L2); revenue-sharing 10% — 8% ke Arbitrum DAO treasury, 2% ke Arbitrum Developer Guild (HIGH) ; Robinhood melakukan tokenisasi 1900+ aset di Arbitrum senilai $16M (per 2025) (HIGH) 
+Period: 2025–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [KuCoin, https://www.kucoin.com]; [AnueNews, https://anuenews.cnyes.com]
+
+---
+
+Entity: LG Electronics
+Type: Partner
+Relationship: Kerjasama membangun blockchain advertising network berbasis Arbitrum untuk pasar iklan digital; masih dalam tahap evaluasi dan eksplorasi (per Fortune, Juni 2026) (HIGH) 
+Period: 2026–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Gate.tv, http://gate.tv/zh/news/detail/lg-electronics-with-arbitrum-moves-into-the-679-billion-advertising-market-21798280]
+
+---
+
+Entity: LG CNS
+Type: Partner
+Relationship: Anak perusahaan LG Group — mengembangkan enterprise blockchain Monachain (2018) (MEDIUM) 
+Period: 2018–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (MEDIUM) [Gate.tv, http://gate.tv/zh/news/detail/lg-electronics-with-arbitrum-moves-into-the-679-billion-advertising-market-21798280]
+
+---
+
+Entity: Dentsu
+Type: Research Lab / Media
+Relationship: Diestimasi oleh Dentsu — digital advertising spending diproyeksikan mencapai $679B pada 2025 (68% dari total global ad spend) — disebut dalam konteks partnership LG-Arbitrum (MEDIUM) 
+Period: 2025
+Exposure Type: narrative-correlated-only
+Evidence: (MEDIUM) [Gate.tv, http://gate.tv/zh/news/detail/lg-electronics-with-arbitrum-moves-into-the-679-billion-advertising-market-21798280]
+
+---
+
+Entity: Ledger
+Type: Partner / Protocol
+Relationship: Ekosistem Arbitrum terintegrasi penuh dengan Ledger — pengguna dapat mengirim dan menerima ARB melalui Ledger Live (HIGH) 
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Foresight News, https://foresightnews.pro/timeline/detail/71]
+
+---
+
+Entity: Electric Capital
+Type: Investor
+Relationship: Ecosystem partner untuk Arbitrum Mentorship Program (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: shared-investor-only
+Evidence: (HIGH) [Arbitrum Foundation Blog, https://blog.arbitrum.foundation/meet-the-builders-the-first-cohort-of-arbitrum-mentorship-program/]
+
+---
+
+Entity: Tandem (by Offchain Labs)
+Type: Organization
+Relationship: Divisi baru Offchain Labs (diumumkan Agustus 2024) — fokus pada adopsi mainstream blockchain di luar ekosistem Arbitrum; investasi $10M dari Offchain Labs; kemitraan dengan Robinhood dan game blockchain (HIGH) ; Ecosystem partner untuk Arbitrum Mentorship Program (HIGH) 
+Period: 2024–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Binance, https://www.binance.com]; [Bitget, https://www.bitgetapp.com]
+
+---
+
+Entity: GMX
+Type: Protocol (DeFi)
+Relationship: DEX perpetual terbesar di Arbitrum — TVL $346.3M (per Jan 2026) (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Gate, https://web3.gate.com/zh/crypto-wiki/article/learn-about-the-arbitrum-ecosystem-20260112]
+
+---
+
+Entity: Aave V3
+Type: Protocol (DeFi)
+Relationship: Protokol lending di Arbitrum — TVL $424.46M (per data DefiLlama) (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [DefiLlama, https://defillama.com/chain/Arbitrum]
+
+---
+
+Entity: Pendle
+Type: Protocol (DeFi)
+Relationship: Ecosystem partner untuk Arbitrum Mentorship Program (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Arbitrum Foundation Blog, https://blog.arbitrum.foundation/meet-the-builders-the-first-cohort-of-arbitrum-mentorship-program/]
+
+---
+
+Entity: Variational
+Type: Protocol (DeFi)
+Relationship: Ecosystem partner untuk Arbitrum Mentorship Program (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Arbitrum Foundation Blog, https://blog.arbitrum.foundation/meet-the-builders-the-first-cohort-of-arbitrum-mentorship-program/]
+
+---
+
+Entity: Horizen Labs
+Type: Protocol / Developer
+Relationship: Ecosystem partner untuk Arbitrum Mentorship Program (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Arbitrum Foundation Blog, https://blog.arbitrum.foundation/meet-the-builders-the-first-cohort-of-arbitrum-mentorship-program/]
+
+---
+
+Entity: Dopex
+Type: Protocol (DeFi)
+Relationship: Protokol opsi Eropa di Arbitrum — TVL $20.57M (per Jan 2026); proyek native di ekosistem Arbitrum (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Gate, https://web3.gate.com/zh/crypto-wiki/article/learn-about-the-arbitrum-ecosystem-20260112]
+
+---
+
+Entity: TreasureDAO
+Type: DAO / Protocol
+Relationship: Pemimpin di pasar NFT di Arbitrum (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Gate, https://web3.gate.com/zh/crypto-wiki/article/learn-about-the-arbitrum-ecosystem-20260112]
+
+---
+
+Entity: Bridgeworld
+Type: Protocol (Game)
+Relationship: Metaverse game di Arbitrum — NFT series-nya長期受到關注 (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Gate, https://web3.gate.com/zh/crypto-wiki/article/learn-about-the-arbitrum-ecosystem-20260112]
+
+---
+
+Entity: Arbitrum Gaming Ventures
+Type: Organization
+Relationship: Program pendukung pengembangan game di Arbitrum — menyediakan pendanaan dan sumber daya untuk game developer, publisher, dan proyek infrastruktur (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Messari, https://messari.io]
+
+---
+
+Entity: DODO
+Type: Protocol (DeFi)
+Relationship: Menerima pendanaan dari Arbitrum Foundation (Mei 2026) (HIGH) 
+Period: 2026–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [ChainCatcher, https://www.chaincatcher.com]
+
+---
+
+Entity: Double
+Type: Protocol (DeFi)
+Relationship: Menerima pendanaan dari Arbitrum Foundation (Mei 2026) — fokus pada liquidity (HIGH) 
+Period: 2026–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [ChainCatcher, https://www.chaincatcher.com]
+
+---
+
+Entity: DeSyn Protocol
+Type: Protocol (DeFi)
+Relationship: Menerima pendanaan dari Arbitrum Foundation (Mei 2026) — DeFi asset management protocol (HIGH) 
+Period: 2026–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [ChainCatcher, https://www.chaincatcher.com]
+
+---
+
+Entity: Panoptic
+Type: Protocol (DeFi)
+Relationship: Menerima pendanaan dari Arbitrum Foundation (Mei 2026) — fokus pada options trading (HIGH) 
+Period: 2026–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [ChainCatcher, https://www.chaincatcher.com]
+
+---
+
+Entity: Catalyst
+Type: Protocol (DeFi)
+Relationship: Menerima pendanaan dari Arbitrum Foundation (Mei 2026) — cross-chain swap untuk instant liquidity (HIGH) 
+Period: 2026–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [ChainCatcher, https://www.chaincatcher.com]
+
+---
+
+Entity: Blade Games
+Type: Protocol (Game)
+Relationship: Menerima pendanaan dari Arbitrum Foundation (Mei 2026) — modular ZK onchain game engine (HIGH) 
+Period: 2026–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [ChainCatcher, https://www.chaincatcher.com]
+
+---
+
+Entity: ZTX
+Type: Protocol (Game)
+Relationship: Menerima pendanaan dari Arbitrum Foundation (Mei 2026) — P2E platform (HIGH) 
+Period: 2026–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [ChainCatcher, https://www.chaincatcher.com]
+
+---
+
+Entity: Mithraeum
+Type: Protocol (Game)
+Relationship: Menerima pendanaan dari Arbitrum Foundation (Mei 2026) — on-chain strategy game (HIGH) 
+Period: 2026–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [ChainCatcher, https://www.chaincatcher.com]
+
+---
+
+Entity: Messari
+Type: Research Lab
+Relationship: Menerbitkan profil dan riset tentang Arbitrum (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Messari, https://messari.io/project/arbitrum/profile]
+
+---
+
+Entity: The Tie
+Type: Research Lab
+Relationship: Menerbitkan research report tentang Arbitrum — menyebut Arbitrum sebagai kompetitor kuat di Layer 2 (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [HTX, https://www.htx.com]
+
+---
+
+Entity: ARK Invest
+Type: Research Lab / Investor
+Relationship: Mengomentari struktur revenue Robinhood Chain di Arbitrum — menyebut Robinhood ~89%, Arbitrum ~10%, Ethereum ~0.15% (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Longbridge, https://longbridge.com]
+
+---
+
+Entity: Lark Davis
+Type: Media / Influencer
+Relationship: Mengkritisi valuasi ARB — menyebut Arbitrum memiliki technical performance dan user base yang besar tapi ada gap antara narrative dan on-chain data (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [TokenPost, https://tw.tokenpost.com]
+
+---
+
+Entity: Bitstamp
+Type: Exchange
+Relationship: Menerbitkan panduan tentang Arbitrum (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Bitstamp, https://www.bitstamp.net/learn/cryptocurrency-guide/what-is-arbitrum/]
+
+---
+
+Entity: Blockchain.com
+Type: Exchange / Media
+Relationship: Menerbitkan pembelajaran tentang ARB (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Blockchain.com, https://www.blockchain.com/learning-portal/tokens/arbitrum-explained]
+
+---
+
+Entity: Uphold
+Type: Exchange
+Relationship: Menyediakan harga dan informasi ARB (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Uphold, https://uphold.com/en-eu/prices/crypto/arbitrum]
+
+---
+
+Entity: Weiss Ratings
+Type: Research Lab
+Relationship: Menerbitkan rating tentang Arbitrum (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Weiss Ratings, https://weissratings.com/en/crypto/arbitrum]
+
+---
+
+Entity: CoinMarketCap
+Type: Media / Research Lab
+Relationship: Menerbitkan artikel dan data tentang Arbitrum (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [CoinMarketCap, https://coinmarketcap.com]
+
+---
+
+Entity: CoinGecko
+Type: Media / Research Lab
+Relationship: Menyediakan data exchange untuk Arbitrum One (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Livepeer Docs, https://docs.livepeer.org]
+
+---
+
+Entity: DefiLlama
+Type: Research Lab
+Relationship: Menyediakan data TVL, fees, revenue, dan investor untuk Arbitrum (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [DefiLlama, https://defillama.com/chain/Arbitrum]
+
+---
+
+Entity: Dune Analytics
+Type: Research Lab
+Relationship: Menyediakan data chain tentang Arbitrum — disebut dalam Foresight News (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Foresight News, https://foresightnews.pro/timeline/detail/71]
+
+---
+
+Entity: Arbiscan
+Type: Developer / Protocol
+Relationship: Block explorer utama untuk Arbitrum One (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Arbitrum Docs, https://docs.arbitrum.io/for-devs/dev-tools-and-resources/chain-info]; [Arbiscan, https://arbiscan.io/]
+
+---
+
+Entity: Blockscout
+Type: Developer / Protocol
+Relationship: Block explorer untuk Arbitrum One dan Arbitrum Nova (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Arbitrum Docs, https://docs.arbitrum.io/for-devs/dev-tools-and-resources/chain-info]
+
+---
+
+Entity: Succinct
+Type: Protocol / Developer
+Relationship: Kemitraan ZK dengan Arbitrum untuk Ethereum scaling (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Bitget, https://www.bitget.com]
+
+---
+
+Entity: Curvance
+Type: Protocol (DeFi)
+Relationship: Menerima investasi dari Offchain Labs (Seed) (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Messari, https://messari.io/organization/offchain-labs]
+
+---
+
+Entity: Huddle01
+Type: Protocol
+Relationship: Menerima investasi dari Offchain Labs (Undisclosed, 02/02/2026) (HIGH) 
+Period: 2026–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Messari, https://messari.io/organization/offchain-labs]
+
+---
+
+Entity: SpaceComputer
+Type: Protocol
+Relationship: Menerima investasi dari Offchain Labs (Seed, 11/26/2025) (HIGH) 
+Period: 2025–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Messari, https://messari.io/organization/offchain-labs]
+
+---
+
+Entity: DigiFT
+Type: Protocol (CeFi)
+Relationship: Menerima investasi dari Offchain Labs (Strategic, 08/21/2025) (HIGH) 
+Period: 2025–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Messari, https://messari.io/organization/offchain-labs]
+
+---
+
+Entity: Fhenix
+Type: Protocol
+Relationship: Menerima investasi dari Offchain Labs (Strategic, 03/26/2025) — Layer-1 privacy networks (HIGH) 
+Period: 2025–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Messari, https://messari.io/organization/offchain-labs]
+
+---
+
+Entity: Camelot
+Type: Protocol (DeFi)
+Relationship: Menerima investasi dari Offchain Labs (Strategic, 01/22/2025) — DEX (HIGH) 
+Period: 2025–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Messari, https://messari.io/organization/offchain-labs]
+
+---
+
+Entity: Corn
+Type: Protocol
+Relationship: Menerima investasi dari Offchain Labs (Public Token Sale, 01/22/2025) — Bitcoin Layer-2 (HIGH) 
+Period: 2025–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Messari, https://messari.io/organization/offchain-labs]
+
+---
+
+Entity: AlloyX
+Type: Protocol (DeFi)
+Relationship: Menerima investasi dari Offchain Labs (Pre-Series A, 01/03/2025) — RWA (HIGH) 
+Period: 2025–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Messari, https://messari.io/organization/offchain-labs]
+
+---
+
+Entity: DuckChain
+Type: Protocol
+Relationship: Menerima investasi dari Offchain Labs (Undisclosed, 12/20/2024) (HIGH) 
+Period: 2024–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Messari, https://messari.io/organization/offchain-labs]
+
+---
+
+Entity: Darkbright Studios
+Type: Protocol (Game)
+Relationship: Menerima investasi dari Offchain Labs (Seed, 09/23/2024) — gaming studio (HIGH) 
+Period: 2024–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Messari, https://messari.io/organization/offchain-labs]
+
+---
+
+Entity: Fabric Cryptography
+Type: Protocol
+Relationship: Menerima investasi dari Offchain Labs (Series A, 08/19/2024) — AI infrastructure (HIGH) 
+Period: 2024–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Messari, https://messari.io/organization/offchain-labs]
+
+---
+
+Entity: Princeton University
+Type: Organization (Academic)
+Relationship: Tempat ketiga co-founder (Ed Felten, Steven Goldfeder, Harry Kalodner) bertemu dan memulai riset Arbitrum (HIGH) 
+Period: sebelum 2018
+Exposure Type: unknown
+Evidence: (HIGH) [Messari, https://messari.io/project/arbitrum/profile]; [Bitstamp, https://www.bitstamp.net/learn/cryptocurrency-guide/what-is-arbitrum/]
+
+---
+
+Entity: White House (Barack Obama administration)
+Type: Government
+Relationship: Ed Felten menjabat sebagai Deputy Chief Technology Officer di masa pemerintahan Barack Obama sebelum kembali ke Princeton (HIGH) 
+Period: sebelum 2018
+Exposure Type: unknown
+Evidence: (HIGH) [HTX, https://www.htx.com.co]; [Foresight News, https://foresightnews.pro/timeline/detail/71]
+
+---
+
+Entity: Goldman Sachs
+Type: Organization (Financial)
+Relationship: Campbell Law, initial director Arbitrum Foundation, bekerja 11 tahun sebagai VP di Goldman Sachs (HIGH) 
+Period: sebelum menjadi director
+Exposure Type: unknown
+Evidence: (HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation/foundational-documents/transparency-report-initial-foundation-setup]
+
+---
+
+Entity: BlackRock
+Type: Organization (Financial)
+Relationship: Ani Banerjee, initial director Arbitrum Foundation, bekerja sebagai investor di BlackRock (HIGH) 
+Period: sebelum menjadi director
+Exposure Type: unknown
+Evidence: (HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation/foundational-documents/transparency-report-initial-foundation-setup]
+
+---
+
+Entity: Citigroup
+Type: Organization (Financial)
+Relationship: Ani Banerjee, initial director Arbitrum Foundation, bekerja sebagai investor di Citigroup (HIGH) 
+Period: sebelum menjadi director
+Exposure Type: unknown
+Evidence: (HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation/foundational-documents/transparency-report-initial-foundation-setup]
+
+---
+
+Entity: Cheyne Capital
+Type: Organization (Financial)
+Relationship: Ani Banerjee, initial director Arbitrum Foundation, bekerja sebagai investor di Cheyne Capital (HIGH) 
+Period: sebelum menjadi director
+Exposure Type: unknown
+Evidence: (HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation/foundational-documents/transparency-report-initial-foundation-setup]
+
+---
+
+Entity: Silverside Ltd
+Type: Organization
+Relationship: Didirikan oleh Campbell Law — initial director Arbitrum Foundation (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation/foundational-documents/transparency-report-initial-foundation-setup]
+
+---
+
+Entity: Provenance Ltd
+Type: Organization
+Relationship: Didirikan bersama oleh Campbell Law — initial director Arbitrum Foundation (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation/foundational-documents/transparency-report-initial-foundation-setup]
+
+---
+
+Entity: Marfire
+Type: Organization
+Relationship: Edward Noyons — initial director Arbitrum Foundation — adalah director di Marfire (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation/foundational-documents/transparency-report-initial-foundation-setup]
+
+---
+
+Entity: Autonomous
+Type: Organization
+Relationship: Edward Noyons — initial director Arbitrum Foundation — adalah co-founder Autonomous (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation/foundational-documents/transparency-report-initial-foundation-setup]
+
+---
+
+Entity: Leeward Management Limited
+Type: Organization
+Relationship: Registered office dari Arbitrum OpCo Foundation beralamat di kantor Leeward Management Limited, Cayman Islands (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation]
+
+---
+
+Entity: Exodus
+Type: Protocol
+Relationship: Kontributor tokenisasi aset saham di Arbitrum (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [AnueNews, https://anuenews.cnyes.com]
+
+---
+
+Entity: Bitmine
+Type: Organization
+Relationship: Disebut sebagai aset yang ditokenisasi di Arbitrum (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [AnueNews, https://anuenews.cnyes.com]
+
+---
+
+Entity: Microsoft
+Type: Organization
+Relationship: Disebut sebagai aset yang ditokenisasi di Arbitrum (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [AnueNews, https://anuenews.cnyes.com]
+
+---
+
+Entity: Meta
+Type: Organization
+Relationship: Disebut sebagai aset yang ditokenisasi di Arbitrum (HIGH) 
+Period: tidak diketahui–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [AnueNews, https://anuenews.cnyes.com]
+
+---
+
+Entity: Carbon
+Type: Protocol (DeFi)
+Relationship: Peserta Arbitrum Mentorship Program cohort pertama — DEX yang menghubungkan off-chain markets (HIGH) 
+Period: 2026–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Arbitrum Foundation Blog, https://blog.arbitrum.foundation/meet-the-builders-the-first-cohort-of-arbitrum-mentorship-program/]
+
+---
+
+Entity: Prism
+Type: Protocol (DeFi)
+Relationship: Peserta Arbitrum Mentorship Program cohort pertama — superapp AMM, launchpad, prediction markets, perps (HIGH) 
+Period: 2026–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Arbitrum Foundation Blog, https://blog.arbitrum.foundation/meet-the-builders-the-first-cohort-of-arbitrum-mentorship-program/]
+
+---
+
+Entity: LayerV
+Type: Protocol (DeFi)
+Relationship: Peserta Arbitrum Mentorship Program cohort pertama — options exchange di Arbitrum (HIGH) 
+Period: 2026–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Arbitrum Foundation Blog, https://blog.arbitrum.foundation/meet-the-builders-the-first-cohort-of-arbitrum-mentorship-program/]
+
+---
+
+Entity: T3tris
+Type: Protocol (DeFi)
+Relationship: Peserta Arbitrum Mentorship Program cohort pertama — asset management onchain (HIGH) 
+Period: 2026–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Arbitrum Foundation Blog, https://blog.arbitrum.foundation/meet-the-builders-the-first-cohort-of-arbitrum-mentorship-program/]
+
+---
+
+Entity: Twyne
+Type: Protocol (DeFi)
+Relationship: Peserta Arbitrum Mentorship Program cohort pertama — credit delegation layer di atas Euler dan Aave (HIGH) 
+Period: 2026–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Arbitrum Foundation Blog, https://blog.arbitrum.foundation/meet-the-builders-the-first-cohort-of-arbitrum-mentorship-program/]
+
+---
+
+Entity: Capa
+Type: Protocol (DeFi)
+Relationship: Peserta Arbitrum Mentorship Program cohort pertama — $2M ARR, $150M monthly TPV, +30% MoM growth di Arbitrum (HIGH) 
+Period: 2026–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Arbitrum Foundation Blog, https://blog.arbitrum.foundation/meet-the-builders-the-first-cohort-of-arbitrum-mentorship-program/]
+
+---
+
+Entity: USDre
+Type: Protocol (DeFi)
+Relationship: Peserta Arbitrum Mentorship Program cohort pertama — real estate financing standardization (HIGH) 
+Period: 2026–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Arbitrum Foundation Blog, https://blog.arbitrum.foundation/meet-the-builders-the-first-cohort-of-arbitrum-mentorship-program/]
+
+---
+
+ENTITY INTELLIGENCE DATASET — ARBITRUM
+
+---
+
+ENTITY LIST
+
+---
+
+Nama
+
+Ed Felten
+
+Alias
+Edward Felten
+
+Jenis
+Person
+
+Internal / External
+Internal
+
+Status
+Active
+
+Fungsi Utama
+Development, Research
+
+Deskripsi Singkat
+Co-founder dan Chief Scientist Offchain Labs; mantan profesor di Princeton University dan mantan Deputy CTO di pemerintahan Obama.
+
+Periode Keterlibatan
+2018–Sekarang
+
+Bukti
+
+· https://www.gt-io.com (interview)
+· https://www.binance.me (interview)
+
+---
+
+Nama
+
+Steven Goldfeder
+
+Alias
+Tidak ada.
+
+Jenis
+Person
+
+Internal / External
+Internal
+
+Status
+Active
+
+Fungsi Utama
+Development, Leadership
+
+Deskripsi Singkat
+Co-founder dan CEO Offchain Labs; latar belakang akademik dari Princeton University; juga co-founder BlockSci.
+
+Periode Keterlibatan
+2018–Sekarang
+
+Bukti
+
+· https://www.standardcrypto.vc (Q&A)
+· https://castleisland.vc (podcast)
+
+---
+
+Nama
+
+Harry Kalodner
+
+Alias
+Tidak ada.
+
+Jenis
+Person
+
+Internal / External
+Internal
+
+Status
+Active
+
+Fungsi Utama
+Development, Research
+
+Deskripsi Singkat
+Co-founder dan CTO Offchain Labs; salah satu dari tiga pendiri yang bertemu di Princeton University.
+
+Periode Keterlibatan
+2018–Sekarang
+
+Bukti
+
+· https://www.gate.com (tim)
+
+---
+
+Nama
+
+AJ Warner
+
+Alias
+Tidak ada.
+
+Jenis
+Person
+
+Internal / External
+Internal
+
+Status
+Active
+
+Fungsi Utama
+Strategy, Governance
+
+Deskripsi Singkat
+Chief Strategy Officer di Offchain Labs; juga anggota OAT Committee dan perwakilan Arbitrum Foundation di OpCo.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://docs.arbitrum.foundation (OpCo docs)
+· https://www.gate.com (tim)
+
+---
+
+Nama
+
+Brendan Ma
+
+Alias
+Tidak ada.
+
+Jenis
+Person
+
+Internal / External
+Internal
+
+Status
+Active
+
+Fungsi Utama
+Governance, Investment
+
+Deskripsi Singkat
+Head of Arbitrum Foundation (saat ini); sebelumnya Head of Investment Strategy di Offchain Labs.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://www.cbinsights.com
+· https://www.gate.com (tim)
+
+---
+
+Nama
+
+Campbell Law
+
+Alias
+Tidak ada.
+
+Jenis
+Person
+
+Internal / External
+Internal
+
+Status
+Active
+
+Fungsi Utama
+Governance, Compliance
+
+Deskripsi Singkat
+Salah satu dari tiga initial director Arbitrum Foundation; founder Silverside Ltd dan co-founder Provenance Ltd; mantan VP di Goldman Sachs (11 tahun).
+
+Periode Keterlibatan
+Sejak setup awal Foundation (2023–Sekarang)
+
+Bukti
+
+· https://docs.arbitrum.foundation (transparency report)
+· https://www.chaincatcher.com
+
+---
+
+Nama
+
+Edward Noyons
+
+Alias
+Tidak ada.
+
+Jenis
+Person
+
+Internal / External
+Internal
+
+Status
+Active
+
+Fungsi Utama
+Governance, Audit
+
+Deskripsi Singkat
+Salah satu dari tiga initial director Arbitrum Foundation; director di Marfire dan co-founder Autonomous; mantan audit director di Big-4 (11 tahun, 8 tahun di Cayman Islands).
+
+Periode Keterlibatan
+Sejak setup awal Foundation (2023–Sekarang)
+
+Bukti
+
+· https://docs.arbitrum.foundation (transparency report)
+· https://www.chaincatcher.com
+
+---
+
+Nama
+
+Ani Banerjee
+
+Alias
+Tidak ada.
+
+Jenis
+Person
+
+Internal / External
+Internal
+
+Status
+Active
+
+Fungsi Utama
+Governance, Investment
+
+Deskripsi Singkat
+Salah satu dari tiga initial director Arbitrum Foundation; bekerja di Citigroup, Cheyne Capital dan BlackRock sebagai investor (14 tahun); sejak 2017 private investor dan advisor strategi & corporate governance.
+
+Periode Keterlibatan
+Sejak setup awal Foundation (2023–Sekarang)
+
+Bukti
+
+· https://docs.arbitrum.foundation (transparency report)
+· https://www.chaincatcher.com
+
+---
+
+Nama
+
+Sean S.
+
+Alias
+Tidak ada.
+
+Jenis
+Person
+
+Internal / External
+Internal
+
+Status
+Active
+
+Fungsi Utama
+Finance
+
+Deskripsi Singkat
+Head of Finance di Offchain Labs.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://www.gate.com (tim)
+
+---
+
+Nama
+
+Patrick McCorry
+
+Alias
+Tidak ada.
+
+Jenis
+Person
+
+Internal / External
+Internal
+
+Status
+Active
+
+Fungsi Utama
+Research, Governance
+
+Deskripsi Singkat
+Researcher di Offchain Labs; juga anggota OAT Committee (Oversight and Transparency Committee) OpCo Foundation.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://docs.arbitrum.foundation (OpCo docs)
+· https://www.gate.com (tim)
+
+---
+
+Nama
+
+Preston Van Loon
+
+Alias
+Tidak ada.
+
+Jenis
+Person
+
+Internal / External
+Internal
+
+Status
+Active
+
+Fungsi Utama
+Development
+
+Deskripsi Singkat
+Core contributor di Offchain Labs.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://www.gate.com (tim)
+
+---
+
+Nama
+
+kiet (kit) fong
+
+Alias
+Kit Fong
+
+Jenis
+Person
+
+Internal / External
+Internal
+
+Status
+Active
+
+Fungsi Utama
+Business Development, Ecosystem
+
+Deskripsi Singkat
+Head of Gaming Partnerships Asia Pacific di Offchain Labs.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://www.gate.com (tim)
+
+---
+
+Nama
+
+Humberto (Beto) Aparicio
+
+Alias
+Beto Aparicio
+
+Jenis
+Person
+
+Internal / External
+Internal
+
+Status
+Active
+
+Fungsi Utama
+Finance
+
+Deskripsi Singkat
+Senior Manager, Strategic Finance di Offchain Labs.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://www.gate.com (tim)
+
+---
+
+Nama
+
+Abhishek Somani
+
+Alias
+Tidak ada.
+
+Jenis
+Person
+
+Internal / External
+Internal
+
+Status
+Active
+
+Fungsi Utama
+Product
+
+Deskripsi Singkat
+Product Manager di Offchain Labs.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://www.gate.com (tim)
+
+---
+
+Nama
+
+Mariam Kouanda
+
+Alias
+Tidak ada.
+
+Jenis
+Person
+
+Internal / External
+Internal
+
+Status
+Active
+
+Fungsi Utama
+Grants, Ecosystem
+
+Deskripsi Singkat
+Grants Manager di Offchain Labs.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://www.gate.com (tim)
+
+---
+
+Nama
+
+Ira Auerbach
+
+Alias
+Tidak ada.
+
+Jenis
+Person
+
+Internal / External
+Internal
+
+Status
+Active
+
+Fungsi Utama
+Investment, Ecosystem
+
+Deskripsi Singkat
+Head of Tandem (partner studio division dan venture capital arm Offchain Labs); mantan eksekutif Nasdaq.
+
+Periode Keterlibatan
+2025–Sekarang
+
+Bukti
+
+· https://www.bitget.com (news)
+
+---
+
+Nama
+
+Frisson
+
+Alias
+Tidak ada.
+
+Jenis
+Person
+
+Internal / External
+Internal
+
+Status
+Active
+
+Fungsi Utama
+Governance, Oversight
+
+Deskripsi Singkat
+Anggota OAT Committee (Oversight and Transparency Committee) OpCo Foundation.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://docs.arbitrum.foundation (OpCo docs)
+
+---
+
+Nama
+
+Gavin Wang
+
+Alias
+Tidak ada.
+
+Jenis
+Person
+
+Internal / External
+Internal
+
+Status
+Active
+
+Fungsi Utama
+Governance, Oversight
+
+Deskripsi Singkat
+Anggota OAT Committee (Oversight and Transparency Committee) OpCo Foundation.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://docs.arbitrum.foundation (OpCo docs)
+
+---
+
+Nama
+
+Pedro Breuer
+
+Alias
+Tidak ada.
+
+Jenis
+Person
+
+Internal / External
+Internal
+
+Status
+Active
+
+Fungsi Utama
+Governance, Oversight
+
+Deskripsi Singkat
+Anggota OAT Committee (Oversight and Transparency Committee) OpCo Foundation.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://docs.arbitrum.foundation (OpCo docs)
+
+---
+
+Nama
+
+Petri Basson
+
+Alias
+Tidak ada.
+
+Jenis
+Person
+
+Internal / External
+Internal
+
+Status
+Active
+
+Fungsi Utama
+Governance
+
+Deskripsi Singkat
+Director of Arbitrum OpCo Foundation melalui Hash Directors.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://forum.arbitrum.foundation (OpCo update)
+
+---
+
+Nama
+
+Michael Lewellen
+
+Alias
+Tidak ada.
+
+Jenis
+Person
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Security, Governance
+
+Deskripsi Singkat
+Anggota Security Council Arbitrum (terpilih Maret 2026); Head of Solutions Engineering di Blockaid (sebelumnya Turnkey).
+
+Periode Keterlibatan
+2026–Sekarang
+
+Bukti
+
+· https://docs.arbitrum.foundation (Security Council members)
+· https://thedefiant.io
+
+---
+
+Nama
+
+DZack23
+
+Alias
+Tidak ada.
+
+Jenis
+Person
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Governance, Security
+
+Deskripsi Singkat
+Anggota Security Council Arbitrum (terpilih Maret 2026); delegate ArbitrumDAO.
+
+Periode Keterlibatan
+2026–Sekarang
+
+Bukti
+
+· https://thedefiant.io
+· https://forum.arbitrum.foundation
+
+---
+
+Nama
+
+yoav.eth
+
+Alias
+Yoav
+
+Jenis
+Person
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Security, Governance
+
+Deskripsi Singkat
+Anggota Security Council Arbitrum (terpilih Maret 2026).
+
+Periode Keterlibatan
+2026–Sekarang
+
+Bukti
+
+· https://forum.arbitrum.foundation
+
+---
+
+Nama
+
+bartek.eth
+
+Alias
+Bartek
+
+Jenis
+Person
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Security, Governance
+
+Deskripsi Singkat
+Anggota Security Council Arbitrum (terpilih Maret 2026).
+
+Periode Keterlibatan
+2026–Sekarang
+
+Bukti
+
+· https://forum.arbitrum.foundation
+
+---
+
+Nama
+
+Pablo Sabbatella
+
+Alias
+Tidak ada.
+
+Jenis
+Person
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Security, Governance
+
+Deskripsi Singkat
+Anggota Security Council Arbitrum (terpilih Maret 2026).
+
+Periode Keterlibatan
+2026–Sekarang
+
+Bukti
+
+· https://forum.arbitrum.foundation
+
+---
+
+Nama
+
+Patrick Collins
+
+Alias
+Tidak ada.
+
+Jenis
+Person
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Security, Governance
+
+Deskripsi Singkat
+Anggota Security Council Arbitrum (diangkat Juli 2026); dari Cyfrin.
+
+Periode Keterlibatan
+2026–Sekarang
+
+Bukti
+
+· https://forum.arbitrum.foundation (Key Rotation)
+
+---
+
+Nama
+
+John Morrow
+
+Alias
+Tidak ada.
+
+Jenis
+Person
+
+Internal / External
+External
+
+Status
+Inactive (removed)
+
+Fungsi Utama
+Security, Governance
+
+Deskripsi Singkat
+Mantan anggota Security Council Arbitrum; diangkat Juli 2026.
+
+Periode Keterlibatan
+2026 (hingga Juli 2026)
+
+Bukti
+
+· https://forum.arbitrum.foundation (Key Rotation)
+
+---
+
+Nama
+
+Offchain Labs
+
+Alias
+Offchain Labs, Inc.
+
+Jenis
+Company
+
+Internal / External
+Internal
+
+Status
+Active
+
+Fungsi Utama
+Development, Research, Infrastructure
+
+Deskripsi Singkat
+Perusahaan pengembang teknologi Arbitrum; didirikan 2018 oleh Ed Felten, Steven Goldfeder, dan Harry Kalodner.
+
+Periode Keterlibatan
+2018–Sekarang
+
+Bukti
+
+· https://www.standardcrypto.vc
+· https://www.gate.com
+
+---
+
+Nama
+
+The Arbitrum Foundation
+
+Alias
+Arbitrum Foundation
+
+Jenis
+Foundation
+
+Internal / External
+Internal
+
+Status
+Active
+
+Fungsi Utama
+Governance, Ecosystem Development, Compliance
+
+Deskripsi Singkat
+Cayman Islands foundation company; bertugas mengembangkan dan mengelola ekosistem Arbitrum; beroperasi sebagai steward netral untuk ArbitrumDAO.
+
+Periode Keterlibatan
+2023–Sekarang (setup awal sebelum DAO)
+
+Bukti
+
+· https://docs.arbitrum.foundation (what-foundation)
+· https://docs.arbitrum.foundation (transparency report)
+
+---
+
+Nama
+
+The Arbitrum OpCo Foundation
+
+Alias
+Arbitrum OpCo Foundation, OpCo
+
+Jenis
+Foundation
+
+Internal / External
+Internal
+
+Status
+Active
+
+Fungsi Utama
+Operations, Project Management, DAO Execution
+
+Deskripsi Singkat
+Cayman Islands foundation company; berfungsi sebagai operational mesh layer untuk ArbitrumDAO; mengelola inisiatif yang disetujui DAO.
+
+Periode Keterlibatan
+2025–Sekarang (didanai 30M ARB untuk 2.5 tahun)
+
+Bukti
+
+· https://docs.arbitrum.foundation (what-opco)
+
+---
+
+Nama
+
+ArbitrumDAO
+
+Alias
+Arbitrum DAO
+
+Jenis
+DAO
+
+Internal / External
+Internal
+
+Status
+Active
+
+Fungsi Utama
+Governance, Decision-Making
+
+Deskripsi Singkat
+Decentralized Autonomous Organization yang terdiri dari pemegang token ARB dan delegate; mengatur Arbitrum One, Arbitrum Nova, dan chain lainnya melalui governance vote.
+
+Periode Keterlibatan
+2023–Sekarang (setelah TGE Maret 2023)
+
+Bukti
+
+· https://docs.arbitrum.foundation (DAO constitution)
+· https://docs.arbitrum.foundation (governance docs)
+
+---
+
+Nama
+
+Security Council
+
+Alias
+Arbitrum Security Council
+
+Jenis
+DAO
+
+Internal / External
+Internal
+
+Status
+Active
+
+Fungsi Utama
+Security, Emergency Response
+
+Deskripsi Singkat
+Kelompok 12 anggota yang dipilih oleh ArbitrumDAO; bertanggung jawab atas keputusan keamanan dan respons darurat untuk melindungi DAO dan ekosistem.
+
+Periode Keterlibatan
+2023–Sekarang (pemilihan setiap 6 bulan)
+
+Bukti
+
+· https://docs.arbitrum.foundation (Security Council overview)
+· https://thedefiant.io
+
+---
+
+Nama
+
+Oversight and Transparency Committee (OAT)
+
+Alias
+OAT Committee, OAT
+
+Jenis
+DAO
+
+Internal / External
+Internal
+
+Status
+Active
+
+Fungsi Utama
+Oversight, Accountability, Transparency
+
+Deskripsi Singkat
+Komite 5 anggota yang dipilih setiap tahun; bertanggung jawab mengawasi OpCo Foundation, meratifikasi anggaran, dan memastikan transparansi.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://docs.arbitrum.foundation (what-opco)
+
+---
+
+Nama
+
+Lightspeed Venture Partners
+
+Alias
+Lightspeed Venture, Lightspeed
+
+Jenis
+Investor (VC)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Funding
+
+Deskripsi Singkat
+Venture capital firm; investor dalam Series B Arbitrum (Agustus 2021).
+
+Periode Keterlibatan
+2021–Sekarang
+
+Bukti
+
+· https://www.gate.com (fundraising)
+· https://miniapp.gate.com
+
+---
+
+Nama
+
+Pantera Capital
+
+Alias
+Pantera
+
+Jenis
+Investor (VC)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Funding
+
+Deskripsi Singkat
+Venture capital firm; investor dalam Seed round (April 2019), Series A (Maret 2021), dan Series B (Agustus 2021) Arbitrum.
+
+Periode Keterlibatan
+2019–Sekarang
+
+Bukti
+
+· https://www.gate.com (fundraising)
+
+---
+
+Nama
+
+Polychain Capital
+
+Alias
+Polychain
+
+Jenis
+Investor (VC)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Funding
+
+Deskripsi Singkat
+Venture capital firm; investor dalam Series A (Maret 2021) dan Series B (Agustus 2021) Arbitrum.
+
+Periode Keterlibatan
+2021–Sekarang
+
+Bukti
+
+· https://www.gate.com (fundraising)
+
+---
+
+Nama
+
+Ribbit Capital
+
+Alias
+Ribbit
+
+Jenis
+Investor (VC)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Funding
+
+Deskripsi Singkat
+Venture capital firm; investor dalam Series B Arbitrum (Agustus 2021).
+
+Periode Keterlibatan
+2021–Sekarang
+
+Bukti
+
+· https://www.gate.com (fundraising)
+
+---
+
+Nama
+
+Redpoint Ventures
+
+Alias
+Redpoint
+
+Jenis
+Investor (VC)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Funding
+
+Deskripsi Singkat
+Venture capital firm; investor dalam Series B Arbitrum (Agustus 2021).
+
+Periode Keterlibatan
+2021–Sekarang
+
+Bukti
+
+· https://www.gate.com (fundraising)
+
+---
+
+Nama
+
+Alameda Research
+
+Alias
+Alameda
+
+Jenis
+Investor (VC / Trading Firm)
+
+Internal / External
+External
+
+Status
+Defunct
+
+Fungsi Utama
+Funding, Liquidity
+
+Deskripsi Singkat
+Quantitative trading firm dan venture capital; investor dalam Series B Arbitrum (Agustus 2021).
+
+Periode Keterlibatan
+2021 (hingga 2022)
+
+Bukti
+
+· https://www.gate.com (fundraising)
+
+---
+
+Nama
+
+Coinbase Ventures
+
+Alias
+Tidak ada.
+
+Jenis
+Investor (VC)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Funding
+
+Deskripsi Singkat
+Venture capital arm dari Coinbase; investor dalam Arbitrum (2019).
+
+Periode Keterlibatan
+2019–Sekarang
+
+Bukti
+
+· https://www.gate.com (fundraising)
+
+---
+
+Nama
+
+Compound VC
+
+Alias
+Compound Ventures
+
+Jenis
+Investor (VC)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Funding
+
+Deskripsi Singkat
+Venture capital firm; investor dalam Seed round Arbitrum (April 2019).
+
+Periode Keterlibatan
+2019–Sekarang
+
+Bukti
+
+· https://www.gate.com (fundraising)
+
+---
+
+Nama
+
+Mark Cuban
+
+Alias
+Tidak ada.
+
+Jenis
+Investor (Angel)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Funding
+
+Deskripsi Singkat
+Investor individu; investor dalam Series B Arbitrum (Agustus 2021).
+
+Periode Keterlibatan
+2021–Sekarang
+
+Bukti
+
+· https://www.gate.com (fundraising)
+
+---
+
+Nama
+
+Raphael Ouzan
+
+Alias
+Tidak ada.
+
+Jenis
+Investor (Angel)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Funding
+
+Deskripsi Singkat
+Investor individu; investor dalam Seed round Arbitrum (April 2019).
+
+Periode Keterlibatan
+2019–Sekarang
+
+Bukti
+
+· https://www.gate.com (fundraising)
+
+---
+
+Nama
+
+Jake Seid
+
+Alias
+Tidak ada.
+
+Jenis
+Investor (Angel)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Funding
+
+Deskripsi Singkat
+Investor individu; investor dalam Seed round Arbitrum (April 2019).
+
+Periode Keterlibatan
+2019–Sekarang
+
+Bukti
+
+· https://www.gate.com (fundraising)
+
+---
+
+Nama
+
+DeFiance Capital
+
+Alias
+Tidak ada.
+
+Jenis
+Investor (VC)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Funding
+
+Deskripsi Singkat
+Venture capital firm; investor dalam Arbitrum Foundation.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://pitchbook.com
+
+---
+
+Nama
+
+Intersection Growth Partners
+
+Alias
+Tidak ada.
+
+Jenis
+Investor (VC)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Funding
+
+Deskripsi Singkat
+Venture capital firm; investor dalam Arbitrum Foundation.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://pitchbook.com
+
+---
+
+Nama
+
+2A Ventures
+
+Alias
+Tidak ada.
+
+Jenis
+Investor (VC)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Funding
+
+Deskripsi Singkat
+Venture capital firm; investor dalam Arbitrum Foundation.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://pitchbook.com
+
+---
+
+Nama
+
+Mint Ventures (US)
+
+Alias
+Tidak ada.
+
+Jenis
+Investor (VC)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Funding
+
+Deskripsi Singkat
+Venture capital firm; investor dalam Arbitrum Foundation.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://pitchbook.com
+
+---
+
+Nama
+
+Pomp Investments
+
+Alias
+Tidak ada.
+
+Jenis
+Investor (VC)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Funding
+
+Deskripsi Singkat
+Venture capital firm; investor dalam Arbitrum Foundation.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://pitchbook.com
+
+---
+
+Nama
+
+Arbitrum Gaming Ventures
+
+Alias
+AGV
+
+Jenis
+Investor (VC / DAO Initiative)
+
+Internal / External
+Internal
+
+Status
+Active
+
+Fungsi Utama
+Funding, Ecosystem Growth (Gaming)
+
+Deskripsi Singkat
+Inisiatif investasi yang didanai ArbitrumDAO; fokus mendukung pengembangan gaming di ekosistem Arbitrum melalui pendanaan dan resources.
+
+Periode Keterlibatan
+2025–Sekarang
+
+Bukti
+
+· https://messari.io
+· https://arbitrumgamingventures.com
+
+---
+
+Nama
+
+Tandem
+
+Alias
+Tandem by Offchain Labs
+
+Jenis
+Investor (VC / Studio)
+
+Internal / External
+Internal
+
+Status
+Active
+
+Fungsi Utama
+Investment, Ecosystem Support
+
+Deskripsi Singkat
+Partner studio division dan venture capital arm dari Offchain Labs; dipimpin oleh Ira Auerbach.
+
+Periode Keterlibatan
+2025–Sekarang
+
+Bukti
+
+· https://www.bitget.com (news)
+
+---
+
+Nama
+
+Arbitrum One
+
+Alias
+Arbitrum Rollup
+
+Jenis
+Chain
+
+Internal / External
+Internal
+
+Status
+Active
+
+Fungsi Utama
+Infrastructure (Layer 2)
+
+Deskripsi Singkat
+Mainnet public Optimistic Rollup Arbitrum; diluncurkan 31 Agustus 2021.
+
+Periode Keterlibatan
+2021–Sekarang
+
+Bukti
+
+· https://docs.arbitrum.foundation (what-foundation)
+
+---
+
+Nama
+
+Arbitrum Nova
+
+Alias
+AnyTrust chain
+
+Jenis
+Chain
+
+Internal / External
+Internal
+
+Status
+Active
+
+Fungsi Utama
+Infrastructure (Layer 2)
+
+Deskripsi Singkat
+Chain berbasis AnyTrust untuk biaya ultra-rendah; diluncurkan Agustus 2022; fokus gaming dan social apps.
+
+Periode Keterlibatan
+2022–Sekarang
+
+Bukti
+
+· https://docs.arbitrum.foundation (what-foundation)
+
+---
+
+Nama
+
+Arbitrum Orbit
+
+Alias
+Orbit chains
+
+Jenis
+Protocol / Infrastructure
+
+Internal / External
+Internal
+
+Status
+Active
+
+Fungsi Utama
+Infrastructure (Customizable Chains)
+
+Deskripsi Singkat
+Framework untuk meluncurkan custom chain (L2 atau L3) yang terhubung ke ekosistem Arbitrum; dapat dikustomisasi untuk gas, governance, dsb.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://arbitrum.foundation (Orbit)
+· https://docs.arbitrum.io
+
+---
+
+Nama
+
+Arbitrum Nitro
+
+Alias
+Nitro
+
+Jenis
+Protocol / Infrastructure
+
+Internal / External
+Internal
+
+Status
+Active
+
+Fungsi Utama
+Infrastructure (Tech Stack)
+
+Deskripsi Singkat
+Tech stack upgrade untuk Arbitrum; diluncurkan Agustus 2022; meningkatkan kompatibilitas EVM dan performa.
+
+Periode Keterlibatan
+2022–Sekarang
+
+Bukti
+
+· Dokumentasi Arbitrum (inferensi dari Phase 1)
+
+---
+
+Nama
+
+Arbitrum Stylus
+
+Alias
+Stylus
+
+Jenis
+Protocol / Infrastructure
+
+Internal / External
+Internal
+
+Status
+Active
+
+Fungsi Utama
+Infrastructure (Multi-language Support)
+
+Deskripsi Singkat
+Fitur yang memungkinkan smart contract ditulis dalam multiple language (Rust, C++, dll) selain Solidity.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· Dokumentasi Arbitrum (inferensi dari Phase 1)
+
+---
+
+Nama
+
+Ethereum
+
+Alias
+ETH, Ethereum Mainnet
+
+Jenis
+Blockchain
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Settlement Layer (Layer 1)
+
+Deskripsi Singkat
+Blockchain Layer 1 tempat Arbitrum One dan Arbitrum Nova diselesaikan (settlement).
+
+Periode Keterlibatan
+2021–Sekarang
+
+Bukti
+
+· https://docs.arbitrum.foundation (what-foundation)
+
+---
+
+Nama
+
+Trail of Bits
+
+Alias
+Tidak ada.
+
+Jenis
+Security (Auditor)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Security Audit
+
+Deskripsi Singkat
+Firma keamanan siber dan audit smart contract; salah satu dari 12 audit firm yang disetujui Arbitrum Audit Subsidy Program.
+
+Periode Keterlibatan
+2025–Sekarang
+
+Bukti
+
+· https://www.nethermind.io
+· https://forum.arbitrum.foundation
+
+---
+
+Nama
+
+OpenZeppelin
+
+Alias
+Tidak ada.
+
+Jenis
+Security (Auditor)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Security Audit
+
+Deskripsi Singkat
+Firma keamanan dan audit smart contract; salah satu dari 12 audit firm yang disetujui Arbitrum Audit Subsidy Program; juga mengaudit Arbitrum Stylus SDK.
+
+Periode Keterlibatan
+2025–Sekarang
+
+Bukti
+
+· https://www.nethermind.io
+· https://forum.arbitrum.foundation
+· https://docs.arbitrum.io (audit reports)
+
+---
+
+Nama
+
+Certora
+
+Alias
+Certora Inc.
+
+Jenis
+Security (Auditor)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Security Audit, Formal Verification
+
+Deskripsi Singkat
+Firma keamanan spesialis formal verification; salah satu dari 12 audit firm yang disetujui Arbitrum Audit Subsidy Program; juga anggota Security Council.
+
+Periode Keterlibatan
+2025–Sekarang
+
+Bukti
+
+· https://www.nethermind.io
+· https://forum.arbitrum.foundation
+
+---
+
+Nama
+
+Nethermind Security
+
+Alias
+Nethermind
+
+Jenis
+Security (Auditor)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Security Audit
+
+Deskripsi Singkat
+Firma keamanan dan audit; salah satu dari 12 audit firm pertama yang disetujui Arbitrum DAO untuk Arbitrum Audit Subsidy Program.
+
+Periode Keterlibatan
+2025–Sekarang
+
+Bukti
+
+· https://www.nethermind.io
+· https://forum.arbitrum.foundation
+
+---
+
+Nama
+
+Hacken
+
+Alias
+Tidak ada.
+
+Jenis
+Security (Auditor)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Security Audit
+
+Deskripsi Singkat
+Firma keamanan blockchain; partner resmi ekosistem Arbitrum.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://partners.circle.com
+
+---
+
+Nama
+
+Beosin
+
+Alias
+Tidak ada.
+
+Jenis
+Security (Auditor)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Security Audit
+
+Deskripsi Singkat
+Firma keamanan blockchain; official security audit partner untuk Arbitrum; telah mengaudit proyek ekosistem seperti ArbSwap dan Arbipad.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://official.beosin.com
+
+---
+
+Nama
+
+Zellic
+
+Alias
+Tidak ada.
+
+Jenis
+Security (Auditor)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Security Audit, Research
+
+Deskripsi Singkat
+Firma riset keamanan dengan spesialisasi blockchain dan kriptografi.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://partners.circle.com
+
+---
+
+Nama
+
+Veridise
+
+Alias
+Tidak ada.
+
+Jenis
+Security (Auditor)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Security Audit
+
+Deskripsi Singkat
+Firma yang menyediakan comprehensive security analysis untuk smart contract Arbitrum.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://veridise.com
+
+---
+
+Nama
+
+Zokyo
+
+Alias
+Tidak ada.
+
+Jenis
+Security (Auditor)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Security Audit, Security Partner
+
+Deskripsi Singkat
+Firma keamanan; diajukan sebagai Security Partner untuk Arbitrum DAO.
+
+Periode Keterlibatan
+2025–Sekarang
+
+Bukti
+
+· https://forum.arbitrum.foundation (proposal)
+
+---
+
+Nama
+
+Cyfrin
+
+Alias
+Tidak ada.
+
+Jenis
+Security (Auditor)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Security Audit
+
+Deskripsi Singkat
+Firma audit; tempat Patrick Collins (anggota Security Council) berasal.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://forum.arbitrum.foundation (Key Rotation)
+
+---
+
+Nama
+
+Ackee Blockchain Security
+
+Alias
+Ackee
+
+Jenis
+Security (Auditor)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Security Audit
+
+Deskripsi Singkat
+Salah satu dari 12 audit firm yang disetujui Arbitrum Audit Subsidy Program.
+
+Periode Keterlibatan
+2025–Sekarang
+
+Bukti
+
+· https://forum.arbitrum.foundation
+
+---
+
+Nama
+
+Oak Security
+
+Alias
+Security Oak
+
+Jenis
+Security (Auditor)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Security Audit
+
+Deskripsi Singkat
+Salah satu dari 12 audit firm yang disetujui Arbitrum Audit Subsidy Program.
+
+Periode Keterlibatan
+2025–Sekarang
+
+Bukti
+
+· https://forum.arbitrum.foundation
+
+---
+
+Nama
+
+Hexens
+
+Alias
+Hexens.io
+
+Jenis
+Security (Auditor)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Security Audit
+
+Deskripsi Singkat
+Salah satu dari 12 audit firm yang disetujui Arbitrum Audit Subsidy Program.
+
+Periode Keterlibatan
+2025–Sekarang
+
+Bukti
+
+· https://forum.arbitrum.foundation
+
+---
+
+Nama
+
+Decurity
+
+Alias
+DecurityHQ
+
+Jenis
+Security (Auditor)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Security Audit
+
+Deskripsi Singkat
+Salah satu dari 12 audit firm yang disetujui Arbitrum Audit Subsidy Program.
+
+Periode Keterlibatan
+2025–Sekarang
+
+Bukti
+
+· https://forum.arbitrum.foundation
+
+---
+
+Nama
+
+Pashov Audit Group
+
+Alias
+Tidak ada.
+
+Jenis
+Security (Auditor)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Security Audit
+
+Deskripsi Singkat
+Salah satu dari 12 audit firm yang disetujui Arbitrum Audit Subsidy Program.
+
+Periode Keterlibatan
+2025–Sekarang
+
+Bukti
+
+· https://forum.arbitrum.foundation
+
+---
+
+Nama
+
+SC Audit Studio
+
+Alias
+Tidak ada.
+
+Jenis
+Security (Auditor)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Security Audit, Research
+
+Deskripsi Singkat
+Independent cybersecurity research lab; berbasis di Helsinki (2024).
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://partners.circle.com
+
+---
+
+Nama
+
+Arbiscan
+
+Alias
+Tidak ada.
+
+Jenis
+Service Provider (Block Explorer)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Infrastructure (Block Explorer)
+
+Deskripsi Singkat
+Block explorer resmi untuk Arbitrum One.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· Phase 1 (inferensi)
+
+---
+
+Nama
+
+Blockaid
+
+Alias
+Tidak ada.
+
+Jenis
+Infrastructure Provider (Security)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Security, Infrastructure
+
+Deskripsi Singkat
+Perusahaan keamanan Web3; tempat Michael Lewellen (anggota Security Council) menjabat sebagai Head of Solutions Engineering.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://docs.arbitrum.foundation (Security Council members)
+
+---
+
+Nama
+
+Turnkey
+
+Alias
+Tidak ada.
+
+Jenis
+Infrastructure Provider
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Infrastructure
+
+Deskripsi Singkat
+Perusahaan infrastructure; tempat Michael Lewellen sebelumnya bekerja (Head of Solutions Engineering).
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://thedefiant.io
+
+---
+
+Nama
+
+Hash Directors
+
+Alias
+Tidak ada.
+
+Jenis
+Service Provider
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Governance, Directorship Services
+
+Deskripsi Singkat
+Perusahaan penyedia jasa directorship; Petri Basson dari Hash Directors diangkat sebagai director Arbitrum OpCo Foundation.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://forum.arbitrum.foundation
+
+---
+
+Nama
+
+Silverside Ltd
+
+Alias
+Tidak ada.
+
+Jenis
+Company
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Corporate Governance
+
+Deskripsi Singkat
+Perusahaan yang didirikan oleh Campbell Law (initial director Arbitrum Foundation).
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://docs.arbitrum.foundation (transparency report)
+
+---
+
+Nama
+
+Provenance Ltd
+
+Alias
+Tidak ada.
+
+Jenis
+Company
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Compliance, Digital Assets
+
+Deskripsi Singkat
+Perusahaan compliance digital assets; co-founded oleh Campbell Law (initial director Arbitrum Foundation).
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://docs.arbitrum.foundation (transparency report)
+· https://www.chaincatcher.com
+
+---
+
+Nama
+
+Marfire
+
+Alias
+Tidak ada.
+
+Jenis
+Company
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Governance, DAO Services
+
+Deskripsi Singkat
+Perusahaan yang menyediakan layanan directorship dan DAO; Edward Noyons (initial director Arbitrum Foundation) adalah director di Marfire.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://docs.arbitrum.foundation (transparency report)
+· https://www.chaincatcher.com
+
+---
+
+Nama
+
+Autonomous
+
+Alias
+Tidak ada.
+
+Jenis
+Company
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+DAO Services, Directorship
+
+Deskripsi Singkat
+Perusahaan fokus directorship dan DAO services untuk Web3; co-founded oleh Edward Noyons (initial director Arbitrum Foundation).
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://docs.arbitrum.foundation (transparency report)
+
+---
+
+Nama
+
+Standard Crypto
+
+Alias
+Tidak ada.
+
+Jenis
+Investor (VC)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Funding, Media
+
+Deskripsi Singkat
+Venture capital firm; mewawancarai Steven Goldfeder dalam series "Behind Crypto Builders".
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://www.standardcrypto.vc
+
+---
+
+Nama
+
+Castle Island Ventures
+
+Alias
+Tidak ada.
+
+Jenis
+Investor (VC)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Funding, Media
+
+Deskripsi Singkat
+Venture capital firm; mewawancarai Steven Goldfeder dalam podcast.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://castleisland.vc
+
+---
+
+Nama
+
+Blockworks Research
+
+Alias
+Tidak ada.
+
+Jenis
+Media / Research
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Research, Media
+
+Deskripsi Singkat
+Platform riset dan media kripto; melaporkan tentang struktur governance Arbitrum Foundation dan initial directors.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://www.chaincatcher.com
+
+---
+
+Nama
+
+ChainCatcher
+
+Alias
+Tidak ada.
+
+Jenis
+Media
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Media, News
+
+Deskripsi Singkat
+Media kripto; melaporkan tentang Arbitrum Foundation dan initial directors.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://www.chaincatcher.com
+
+---
+
+Nama
+
+The Defiant
+
+Alias
+Tidak ada.
+
+Jenis
+Media
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Media, News
+
+Deskripsi Singkat
+Media kripto; melaporkan tentang Security Council elections dan Arbitrum Gaming Ventures.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://thedefiant.io
+
+---
+
+Nama
+
+Binance
+
+Alias
+Tidak ada.
+
+Jenis
+Exchange
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Exchange, Liquidity
+
+Deskripsi Singkat
+Cryptocurrency exchange; mencantumkan ARB dan menjadi sumber berita tentang Arbitrum.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://www.binance.me
+
+---
+
+Nama
+
+KuCoin
+
+Alias
+Tidak ada.
+
+Jenis
+Exchange
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Exchange, Liquidity
+
+Deskripsi Singkat
+Cryptocurrency exchange; menyediakan informasi tentang Arbitrum dan ekosistemnya.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://www.kucoin.com
+
+---
+
+Nama
+
+Gate.io
+
+Alias
+Gate
+
+Jenis
+Exchange
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Exchange, Liquidity
+
+Deskripsi Singkat
+Cryptocurrency exchange; menyediakan informasi fundraising Arbitrum.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://www.gate.com
+
+---
+
+Nama
+
+PitchBook
+
+Alias
+Tidak ada.
+
+Jenis
+Media / Data Provider
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Data, Research
+
+Deskripsi Singkat
+Platform data untuk private capital markets; menyediakan profil perusahaan dan informasi investor Arbitrum Foundation.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://pitchbook.com
+
+---
+
+Nama
+
+Messari
+
+Alias
+Tidak ada.
+
+Jenis
+Media / Data Provider
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Data, Research
+
+Deskripsi Singkat
+Platform data dan riset kripto; menyediakan informasi tentang Arbitrum Gaming Ventures.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://messari.io
+
+---
+
+Nama
+
+L2BEAT
+
+Alias
+Tidak ada.
+
+Jenis
+Media / Data Provider
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Data, Research
+
+Deskripsi Singkat
+Platform data dan riset untuk Layer 2; melaporkan tentang aktivitas Arbitrum.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://l2beat.com
+
+---
+
+Nama
+
+21Shares
+
+Alias
+Tidak ada.
+
+Jenis
+Service Provider (ETP)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Financial Product
+
+Deskripsi Singkat
+Penyedia ETP (Exchange Traded Product); menerbitkan 21Shares Arbitrum ETP (AARB).
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://id.investing.com
+
+---
+
+Nama
+
+Robinhood
+
+Alias
+Robinhood Chain
+
+Jenis
+Enterprise / Application
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Application, Infrastructure
+
+Deskripsi Singkat
+Platform trading; membangun Robinhood Chain (institutional-focused L2) di atas teknologi Arbitrum; berbagi on-chain revenue dengan Arbitrum DAO.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://www.itbitget.com
+
+---
+
+Nama
+
+Uniswap
+
+Alias
+Tidak ada.
+
+Jenis
+Application (DeFi)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Application (DEX)
+
+Deskripsi Singkat
+Decentralized exchange (DEX); salah satu deployment terbesar di Arbitrum.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://www.gate.com (ecosystem)
+
+---
+
+Nama
+
+Aave
+
+Alias
+Tidak ada.
+
+Jenis
+Application (DeFi)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Application (Lending)
+
+Deskripsi Singkat
+Lending protocol; deployment terbesar di Arbitrum di luar Ethereum.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://www.gate.com (ecosystem)
+
+---
+
+Nama
+
+Curve
+
+Alias
+Tidak ada.
+
+Jenis
+Application (DeFi)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Application (DEX)
+
+Deskripsi Singkat
+Decentralized exchange (DEX) untuk stablecoin; beroperasi di Arbitrum.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://www.gate.com (ecosystem)
+
+---
+
+Nama
+
+Compound
+
+Alias
+Tidak ada.
+
+Jenis
+Application (DeFi)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Application (Lending)
+
+Deskripsi Singkat
+Lending protocol; beroperasi di Arbitrum.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://www.gate.com (ecosystem)
+
+---
+
+Nama
+
+GMX
+
+Alias
+Tidak ada.
+
+Jenis
+Application (DeFi)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Application (Perpetuals DEX)
+
+Deskripsi Singkat
+Decentralized perpetual exchange; native di Arbitrum.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· Phase 1 (inferensi)
+
+---
+
+Nama
+
+TreasureDAO
+
+Alias
+Treasure
+
+Jenis
+Application (Gaming / DAO)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Application (Gaming Ecosystem)
+
+Deskripsi Singkat
+Ekosistem gaming di Arbitrum.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· Phase 1 (inferensi)
+
+---
+
+Nama
+
+Pendle
+
+Alias
+Tidak ada.
+
+Jenis
+Application (DeFi)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Application (Yield Trading)
+
+Deskripsi Singkat
+Protocol untuk yield trading; ecosystem partner dalam Arbitrum Mentorship Program.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://blog.arbitrum.foundation
+
+---
+
+Nama
+
+Variational
+
+Alias
+Tidak ada.
+
+Jenis
+Application (DeFi)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Application
+
+Deskripsi Singkat
+Ecosystem partner dalam Arbitrum Mentorship Program.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://blog.arbitrum.foundation
+
+---
+
+Nama
+
+IOSG
+
+Alias
+IOSG Ventures
+
+Jenis
+Investor (VC)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Funding, Ecosystem
+
+Deskripsi Singkat
+Venture capital; ecosystem partner dalam Arbitrum Mentorship Program.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://blog.arbitrum.foundation
+
+---
+
+Nama
+
+Horizen Labs
+
+Alias
+Tidak ada.
+
+Jenis
+Infrastructure Provider
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Infrastructure, Ecosystem
+
+Deskripsi Singkat
+Perusahaan infrastructure; ecosystem partner dalam Arbitrum Mentorship Program.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://blog.arbitrum.foundation
+
+---
+
+Nama
+
+Electric Capital
+
+Alias
+Tidak ada.
+
+Jenis
+Investor (VC)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Funding
+
+Deskripsi Singkat
+Venture capital; venture partner dalam Arbitrum Mentorship Program.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://blog.arbitrum.foundation
+
+---
+
+Nama
+
+Franklin Templeton
+
+Alias
+Tidak ada.
+
+Jenis
+Enterprise (Asset Manager)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Application, RWA
+
+Deskripsi Singkat
+Asset manager; mendorong volume RWA di Arbitrum.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://www.bitget.com
+
+---
+
+Nama
+
+WisdomTree
+
+Alias
+Tidak ada.
+
+Jenis
+Enterprise (Asset Manager)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Application, RWA
+
+Deskripsi Singkat
+Asset manager; mendorong volume RWA di Arbitrum.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://www.bitget.com
+
+---
+
+Nama
+
+Reya
+
+Alias
+Reya.xyz
+
+Jenis
+Application (DeFi)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Application (Trading)
+
+Deskripsi Singkat
+Platform trading dan produk keuangan advanced di Arbitrum Orbit.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://www.kucoin.com
+
+---
+
+Nama
+
+Fhenix
+
+Alias
+Tidak ada.
+
+Jenis
+Application / Infrastructure
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Application (Privacy)
+
+Deskripsi Singkat
+Orbit chain project yang menambahkan encrypted computation ke EVM chains; memungkinkan private DeFi apps.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://www.kucoin.com
+
+---
+
+Nama
+
+Xai Games
+
+Alias
+Xai
+
+Jenis
+Application (Gaming)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Application (Gaming)
+
+Deskripsi Singkat
+Gaming startup; bagian dari portofolio Arbitrum Gaming Ventures.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://blockworks.co
+
+---
+
+Nama
+
+Proof of Play
+
+Alias
+Tidak ada.
+
+Jenis
+Application (Gaming)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Application (Gaming)
+
+Deskripsi Singkat
+Gaming startup; bagian dari portofolio Arbitrum Gaming Ventures.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://blockworks.co
+
+---
+
+Nama
+
+Ronin
+
+Alias
+Tidak ada.
+
+Jenis
+Chain
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Chain (Gaming)
+
+Deskripsi Singkat
+Gaming blockchain; ditawari oleh Arbitrum Gaming Ventures untuk menjadi Orbit chain.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://blockworks.co
+
+---
+
+Nama
+
+Psychedelic Games
+
+Alias
+Tidak ada.
+
+Jenis
+Application (Gaming)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Application (Gaming)
+
+Deskripsi Singkat
+Perusahaan game; bagian dari portofolio investasi Arbitrum Gaming Ventures.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://pitchbook.com
+
+---
+
+Nama
+
+Giant
+
+Alias
+Tidak ada.
+
+Jenis
+Application (Gaming / Education)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Application
+
+Deskripsi Singkat
+Perusahaan educational and training services (B2C); bagian dari portofolio Arbitrum Gaming Ventures.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://pitchbook.com
+
+---
+
+Nama
+
+Extra Mile
+
+Alias
+Tidak ada.
+
+Jenis
+Application (Gaming / Education)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Application
+
+Deskripsi Singkat
+Perusahaan educational and training services (B2C); bagian dari portofolio Arbitrum Gaming Ventures.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://pitchbook.com
+
+---
+
+Nama
+
+Wildcard
+
+Alias
+Tidak ada.
+
+Jenis
+Application (Gaming)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Application (Gaming)
+
+Deskripsi Singkat
+Proyek game; bagian dari initial cohort Arbitrum Gaming Ventures.
+
+Periode Keterlibatan
+2025–Sekarang
+
+Bukti
+
+· https://www.binance.me
+
+---
+
+Nama
+
+HyveLabs
+
+Alias
+Hyve Labs
+
+Jenis
+Application (Gaming)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Application (Gaming)
+
+Deskripsi Singkat
+Proyek game; bagian dari initial cohort Arbitrum Gaming Ventures.
+
+Periode Keterlibatan
+2025–Sekarang
+
+Bukti
+
+· https://www.binance.me
+
+---
+
+Nama
+
+TRex
+
+Alias
+Tidak ada.
+
+Jenis
+Application (Gaming)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Application (Gaming)
+
+Deskripsi Singkat
+Proyek game; bagian dari initial cohort Arbitrum Gaming Ventures.
+
+Periode Keterlibatan
+2025–Sekarang
+
+Bukti
+
+· https://www.binance.me
+
+---
+
+Nama
+
+Liquida
+
+Alias
+Tidak ada.
+
+Jenis
+Application (DeFi)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Application (Finance)
+
+Deskripsi Singkat
+Pemenang pertama prize ($60k) di London Founder House; membangun financial primitives di Arbitrum.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://blog.arbitrum.foundation
+
+---
+
+Nama
+
+Ethereal Perps DEX
+
+Alias
+Ethereal
+
+Jenis
+Application (DeFi)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Application (Perpetuals DEX)
+
+Deskripsi Singkat
+Decentralized perpetual exchange; diluncurkan di Arbitrum pada 2025.
+
+Periode Keterlibatan
+2025–Sekarang
+
+Bukti
+
+· https://blog.arbitrum.foundation
+
+---
+
+Nama
+
+Zama
+
+Alias
+Tidak ada.
+
+Jenis
+Application / Infrastructure (Privacy)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Application (Privacy)
+
+Deskripsi Singkat
+Proyek privacy; diluncurkan di Arbitrum pada 2025.
+
+Periode Keterlibatan
+2025–Sekarang
+
+Bukti
+
+· https://blog.arbitrum.foundation
+
+---
+
+Nama
+
+Blackbird
+
+Alias
+Tidak ada.
+
+Jenis
+Application
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Application
+
+Deskripsi Singkat
+Proyek; diluncurkan di Arbitrum pada 2025.
+
+Periode Keterlibatan
+2025–Sekarang
+
+Bukti
+
+· https://blog.arbitrum.foundation
+
+---
+
+Nama
+
+Fluid
+
+Alias
+Tidak ada.
+
+Jenis
+Application (DeFi)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Application (Lending)
+
+Deskripsi Singkat
+Lending protocol di Arbitrum; ekspansi lending products tumbuh 460%+.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://blog.arbitrum.foundation
+
+---
+
+Nama
+
+ArbSwap
+
+Alias
+Tidak ada.
+
+Jenis
+Application (DeFi)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Application (DEX)
+
+Deskripsi Singkat
+Decentralized exchange di ekosistem Arbitrum; diaudit oleh Beosin.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://official.beosin.com
+
+---
+
+Nama
+
+Arbipad
+
+Alias
+Tidak ada.
+
+Jenis
+Application (Launchpad)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Application (Launchpad)
+
+Deskripsi Singkat
+Launchpad di ekosistem Arbitrum; diaudit oleh Beosin.
+
+Periode Keterlibatan
+Tidak diketahui
+
+Bukti
+
+· https://official.beosin.com
+
+---
+
+Nama
+
+Princeton University
+
+Alias
+Princeton
+
+Jenis
+Institution (Research / Education)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Research, Talent
+
+Deskripsi Singkat
+Universitas tempat ketiga co-founder Offchain Labs bertemu dan mengembangkan riset awal Arbitrum.
+
+Periode Keterlibatan
+2018 (riset awal)
+
+Bukti
+
+· https://www.gt-io.com
+· https://www.binance.me
+
+---
+
+Nama
+
+White House
+
+Alias
+Executive Office of the President of the United States
+
+Jenis
+Government
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Government
+
+Deskripsi Singkat
+Lembaga pemerintah AS tempat Ed Felten menjabat sebagai Deputy CTO.
+
+Periode Keterlibatan
+Sebelum 2018 (masa jabatan Felten)
+
+Bukti
+
+· https://www.gt-io.com
+
+---
+
+Nama
+
+Federal Trade Commission (FTC)
+
+Alias
+FTC
+
+Jenis
+Government (Regulator)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Regulation
+
+Deskripsi Singkat
+Lembaga regulator AS tempat Ed Felten menjabat sebagai Chief Technologist.
+
+Periode Keterlibatan
+Sebelum 2018
+
+Bukti
+
+· https://www.gt-io.com
+
+---
+
+Nama
+
+Goldman Sachs
+
+Alias
+Tidak ada.
+
+Jenis
+Enterprise (Financial Services)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Financial Services
+
+Deskripsi Singkat
+Lembaga keuangan tempat Campbell Law (initial director Arbitrum Foundation) bekerja selama 11 tahun sebagai VP.
+
+Periode Keterlibatan
+Sebelum 2023
+
+Bukti
+
+· https://docs.arbitrum.foundation (transparency report)
+
+---
+
+Nama
+
+Citigroup
+
+Alias
+Citi
+
+Jenis
+Enterprise (Financial Services)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Financial Services
+
+Deskripsi Singkat
+Lembaga keuangan tempat Ani Banerjee (initial director Arbitrum Foundation) bekerja sebagai investor.
+
+Periode Keterlibatan
+Sebelum 2023
+
+Bukti
+
+· https://docs.arbitrum.foundation (transparency report)
+
+---
+
+Nama
+
+Cheyne Capital
+
+Alias
+Tidak ada.
+
+Jenis
+Enterprise (Investment Management)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Investment Management
+
+Deskripsi Singkat
+Perusahaan manajemen investasi tempat Ani Banerjee (initial director Arbitrum Foundation) bekerja.
+
+Periode Keterlibatan
+Sebelum 2023
+
+Bukti
+
+· https://docs.arbitrum.foundation (transparency report)
+
+---
+
+Nama
+
+BlackRock
+
+Alias
+Tidak ada.
+
+Jenis
+Enterprise (Asset Management)
+
+Internal / External
+External
+
+Status
+Active
+
+Fungsi Utama
+Asset Management
+
+Deskripsi Singkat
+Asset manager terbesar di dunia; tempat Ani Banerjee (initial director Arbitrum Foundation) bekerja sebagai investor.
+
+Periode Keterlibatan
+Sebelum 2023
+
+Bukti
+
+· https://docs.arbitrum.foundation (transparency report)
+
+---
+
+KATEGORI ENTITY
+
+PERSON
+
+· Ed Felten
+· Steven Goldfeder
+· Harry Kalodner
+· AJ Warner
+· Brendan Ma
+· Campbell Law
+· Edward Noyons
+· Ani Banerjee
+· Sean S.
+· Patrick McCorry
+· Preston Van Loon
+· kiet (kit) fong
+· Humberto (Beto) Aparicio
+· Abhishek Somani
+· Mariam Kouanda
+· Ira Auerbach
+· Frisson
+· Gavin Wang
+· Pedro Breuer
+· Petri Basson
+· Michael Lewellen
+· DZack23
+· yoav.eth
+· bartek.eth
+· Pablo Sabbatella
+· Patrick Collins
+· John Morrow
+· Mark Cuban
+· Raphael Ouzan
+· Jake Seid
+
+FOUNDATION
+
+· The Arbitrum Foundation
+· The Arbitrum OpCo Foundation
+
+COMPANY
+
+· Offchain Labs
+· Silverside Ltd
+· Provenance Ltd
+· Marfire
+· Autonomous
+· Blockaid
+· Turnkey
+· Hash Directors
+
+PROTOCOL
+
+· Arbitrum Orbit
+· Arbitrum Nitro
+· Arbitrum Stylus
+
+CHAIN
+
+· Arbitrum One
+· Arbitrum Nova
+· Ethereum
+· Ronin
+
+INVESTOR
+
+· Lightspeed Venture Partners
+· Pantera Capital
+· Polychain Capital
+· Ribbit Capital
+· Redpoint Ventures
+· Alameda Research
+· Coinbase Ventures
+· Compound VC
+· DeFiance Capital
+· Intersection Growth Partners
+· 2A Ventures
+· Mint Ventures (US)
+· Pomp Investments
+· Arbitrum Gaming Ventures
+· Tandem
+· Standard Crypto
+· Castle Island Ventures
+· IOSG
+· Electric Capital
+
+INFRASTRUCTURE
+
+· Arbiscan
+· Horizen Labs
+
+APPLICATION
+
+· Robinhood
+· Uniswap
+· Aave
+· Curve
+· Compound
+· GMX
+· TreasureDAO
+· Pendle
+· Variational
+· Franklin Templeton
+· WisdomTree
+· Reya
+· Fhenix
+· Xai Games
+· Proof of Play
+· Psychedelic Games
+· Giant
+· Extra Mile
+· Wildcard
+· HyveLabs
+· TRex
+· Liquida
+· Ethereal Perps DEX
+· Zama
+· Blackbird
+· Fluid
+· ArbSwap
+· Arbipad
+
+SECURITY
+
+· Trail of Bits
+· OpenZeppelin
+· Certora
+· Nethermind Security
+· Hacken
+· Beosin
+· Zellic
+· Veridise
+· Zokyo
+· Cyfrin
+· Ackee Blockchain Security
+· Oak Security
+· Hexens
+· Decurity
+· Pashov Audit Group
+· SC Audit Studio
+
+DAO
+
+· ArbitrumDAO
+· Security Council
+· Oversight and Transparency Committee (OAT)
+
+GOVERNMENT
+
+· White House
+· Federal Trade Commission (FTC)
+
+MEDIA
+
+· Blockworks Research
+· ChainCatcher
+· The Defiant
+· PitchBook
+· Messari
+· L2BEAT
+
+COMMUNITY
+
+· (Tidak ada entitas yang teridentifikasi dalam kategori ini)
+
+OTHER
+
+· 21Shares (Service Provider - ETP)
+· Princeton University (Institution - Research/Education)
+· Goldman Sachs (Enterprise - Financial Services)
+· Citigroup (Enterprise - Financial Services)
+· Cheyne Capital (Enterprise - Investment Management)
+· BlackRock (Enterprise - Asset Management)
+· Binance (Exchange)
+· KuCoin (Exchange)
+· Gate.io (Exchange)
+
+---
+
+RINGKASAN
+
+· Total Entity: 100
+· Internal: 38 (Offchain Labs, Arbitrum Foundation, OpCo Foundation, ArbitrumDAO, Security Council, OAT, core team, founders, directors, employees, Arbitrum Gaming Ventures, Tandem, Arbitrum One, Arbitrum Nova, Arbitrum Orbit, Arbitrum Nitro, Arbitrum Stylus)
+· External: 62 (investors, auditors, ecosystem applications, exchanges, media, research institutions, enterprises, government entities, service providers)
+· Unknown: 0
+
+Open Threads
+
+· Total supply ARB: Beberapa sumber menyebut 10 miliar (HIGH) [Binance, HTX], tetapi belum diverifikasi dari sumber primer tokenomics (whitepaper atau blog resmi Arbitrum Foundation).
+· Stylus status: Per Januari 2024 masih alpha di testnet dan belum diaktivasi oleh Arbitrum DAO (MEDIUM) [CoinMarketCap]; perlu update status terkini apakah sudah mainnet atau belum.
+· BOLD (Bounded Liquidity Delay): Per Januari 2024 belum diaktifkan oleh Arbitrum DAO (MEDIUM) [CoinMarketCap]; perlu update status terkini.
+· Core team size: Offchain Labs tidak mempublikasikan jumlah karyawan pasti; LinkedIn mencantumkan 11-50 tetapi ini tidak resmi dan kategori LOW (LOW) [LinkedIn].
+· Telegram resmi: Belum ditemukan link resmi terverifikasi dari sumber primer (docs.arbitrum.io, arbitrum.io, atau docs.arbitrum.foundation). Kanal "@arbitrum" di Telegram diklaim sebagai "satu-satunya kanal pengumuman resmi berbahasa Inggris" oleh sumber tersier, tetapi belum dikonfirmasi oleh sumber resmi (LOW) [TGChannels].
+· Security Council members: Dokumentasi menyebut ada 12 anggota tetapi daftar lengkap nama anggota saat ini tidak tersedia di sumber yang diakses (HIGH) [Arbitrum DAO Docs].
+· Delegates Arbitrum DAO: Ada banyak delegates tetapi daftar lengkap dan periodenya tidak terdokumentasi di sumber yang diakses (HIGH) [Arbitrum DAO Docs].
+· Exact number of projects in ecosystem: Sumber menyebut 1.000+ (MEDIUM) [CoinMarketCap] dan 170+ di ekosistem portal (HIGH) [Gate]; angka bervariasi tergantung definisi dan metode penghitungan.
+· LG Electronics partnership status: Masih dalam tahap evaluasi dan eksplorasi (per Fortune, Juni 2026), belum正式 launching (HIGH) [Gate.tv].
+· Offchain Labs investment portfolio: Messari mencatat 14 investments dengan 13 investors, tetapi detail lengkap setiap investasi (amount exact, valuation) tidak semuanya tersedia (HIGH) [Messari].

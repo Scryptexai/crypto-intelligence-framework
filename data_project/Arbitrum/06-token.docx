@@ -1,0 +1,270 @@
+TOKEN INTELLIGENCE DATASET — ARBITRUM
+
+---
+
+Token Information
+
+· Official Token Name: Arbitrum Token
+· Symbol: ARB
+· Token Standard: ERC-20
+· Blockchain: Arbitrum One (token deployed on Ethereum L1)
+· Contract Address: 0xB50721BCf8d664c30412Cfbc6cf7a15145234ad1
+· Decimals: 18
+· Status: Live
+· Sources:
+  · https://etherscan.io/token/0xB50721BCf8d664c30412Cfbc6cf7a15145234ad1
+  · https://docs.arbitrum.foundation
+
+---
+
+Supply
+
+· Maximum Supply: 10,000,000,000 ARB
+· Total Supply: 10,000,000,000 ARB (fixed at genesis)
+· Circulating Supply: 6,362,841,042 ARB (~63.63% of total) (Catatan: sumber lain menyebut 6,255,821,492 ARB atau 6,614,056,381 ARB)
+· Initial Supply: 10,000,000,000 ARB (issued at genesis)
+· Supply Type: Inflationary (maximum 2% annual inflation rate)
+· Sources:
+  · https://tokenomist.ai/arbitrum/fundraising
+  · https://www.theblock.co/price/248386/arbitrum-arb-idr
+  · https://etherscan.io/token/0xB50721BCf8d664c30412Cfbc6cf7a15145234ad1
+
+---
+
+Distribution
+
+Berdasarkan dokumen resmi dan laporan pihak ketiga, alokasi awal ARB adalah sebagai berikut:
+
+· Arbitrum DAO Treasury: 42.78% (4,278,000,000 ARB)
+· Team, Future Team & Advisors: 26.94% (2,694,000,000 ARB) — vesting 4 tahun dengan cliff 1 tahun
+· Investors: 17.53% (1,753,000,000 ARB) — vesting
+· Individual Wallets (Community Airdrop): 11.62% (1,162,000,000 ARB)
+· DAOs in Arbitrum Ecosystem: 1.13% (113,000,000 ARB)
+
+Sumber lain memberikan angka yang sedikit berbeda:
+
+· Arbitrum DAO: 35.3%
+· Offchain Labs Team & Advisors: 26.9%
+· Investors: 17.5%
+· Community Distribution (Airdrop): 11.6%
+· Arbitrum Foundation (Operational Support): 7.5%
+· Ecosystem DAOs: 1.1%
+
+Catatan: Perbedaan persentase antara kedua sumber kemungkinan disebabkan oleh perbedaan metodologi kategorisasi (misalnya, DAO Treasury vs Foundation operational budget).
+
+· Sources:
+  · https://www.theblock.co/price/248386/arbitrum-arb-idr
+  · https://tokenomist.ai/arbitrum/fundraising
+  · https://www.kucoin.com/news/insight/ARB/696db7f8586da70007562db9
+
+---
+
+Vesting Schedule
+
+· Vesting Type: Cliff vesting — tokens are released all at once after a set waiting period
+· Full Unlock Schedule: Extends into 2027
+
+Per Kategori:
+
+DAO Treasury
+
+· Cliff: Ditetapkan per proposal
+· Vesting: Bervariasi; beberapa alokasi menggunakan cliff 24 bulan
+· Unlock Frequency: Peristiwa unlock terjadwal
+· Current Status: Ongoing
+
+Team & Advisors
+
+· Cliff: 1 tahun
+· Vesting: 4 tahun linear
+· Unlock Frequency: Bertahap
+· Current Status: Ongoing
+
+Investors
+
+· Cliff: Ya (periode tidak dispesifikasi)
+· Vesting: Multi-year
+· Unlock Frequency: Bertahap
+· Current Status: Ongoing
+
+Next Scheduled Unlock: 16 Juli 2026 (dilepaskan ke Arbitrum DAO Treasury)
+
+· Sources:
+  · https://tokenomist.ai/arbitrum/fundraising
+  · https://www.theblock.co/price/248386/arbitrum-arb-idr
+  · https://onekey.so/blog/zh-CN/ecosystem/arb-deep-dive-report-token-fundamentals-recent-developments-and-forward-looking-outlook/
+
+---
+
+TGE
+
+· TGE Date: 2023-03-16【History Phase — EV-024】
+· Initial Unlock: Airdrop 1.16 billion ARB kepada pengguna eligible【History Phase — EV-025】
+· Unlocked Categories: Community (airdrop)
+· Launch Platform: Tidak ada platform khusus; token didistribusikan melalui airdrop dan listing di exchange
+· Status: Completed
+· Sources:
+  · https://docs.arbitrum.foundation
+  · https://www.binance.com/en-AE/feed/post/339098
+
+---
+
+Utility
+
+Governance
+
+· Deskripsi: ARB digunakan untuk voting pada proposal governance ArbitrumDAO, mencakup upgrade protokol, alokasi treasury, perubahan konstitusi, dan pemilihan Security Council
+· Status: Live
+
+Staking & Incentives
+
+· Deskripsi: Beberapa proyek di ekosistem Arbitrum menggunakan ARB untuk rewards dan liquidity incentives; pada 2025 Arbitrum memperkenalkan sistem staking lanjutan
+· Status: Live (terbatas pada proyek ekosistem; tidak ada staking native ARB di level protokol)
+
+Planned Utility (Dalam Diskusi)
+
+· Deskripsi: Diskusi komunitas untuk mengembangkan ARB menjadi utility token dengan opsi penggunaan untuk gas di Arbitrum chains atau Orbit L3s, serta staking wajib
+· Status: Planned (masih dalam fase diskusi governance)
+· Sources:
+  · https://forum.arbitrum.foundation
+  · https://www.binance.me
+  · https://onekey.so
+
+---
+
+Governance
+
+· Governance Model: DAO (Decentralized Autonomous Organization) — ArbitrumDAO
+· Voting System: Token-weighted voting — kekuatan voting ditentukan oleh jumlah token yang diwakili oleh wallet voter
+· Voting Power: 1 ARB = 1 vote; dapat didelegasikan kepada delegate
+· Delegation: Token holders dapat mendelegasikan voting power kepada delegate melalui Tally
+· Proposal System:
+  · Offchain temperature check via Snapshot
+  · Onchain binding vote via Tally
+  · Proposer requirement: minimal 1,000,000 Votable Tokens
+· Treasury Governance: DAO mengontrol alokasi treasury melalui voting
+· Status: Active
+· Sources:
+  · https://blog.arbitrum.foundation/joining-arbitrumdao-your-complete-governance-guide/
+  · https://docs.arbitrum.foundation/concepts/delegate-delegation
+  · https://docs.arbitrum.foundation
+
+---
+
+Inflation / Deflation
+
+· Inflation Mechanism: Maximum annual inflation rate of 2% — DAO dapat menginflasi token hingga 2% per tahun
+· Emission Schedule: Tidak diungkap secara detail; inflasi bersifat opsional dan memerlukan keputusan DAO
+· Burn Mechanism: Tidak ada mekanisme burn native
+· Buyback: Tidak ada programmatic buyback
+· Supply Reduction: Tidak ada mekanisme pengurangan supply yang terkonfirmasi
+· Status: Inflationary (potential)
+· Sources:
+  · https://tokeninsight.com
+  · https://forum.arbitrum.foundation
+  · https://dev.to
+
+---
+
+Holder Distribution
+
+· Top Holder Concentration: Tidak diungkap secara detail
+· Foundation Holding: The Arbitrum Foundation memegang token untuk operational support (~7.5%)
+· Investor Holding: 17.53% dari total supply
+· Treasury Holding: Arbitrum DAO Treasury adalah pemegang terbesar (~42.78% dari total supply)
+· Community Holding: ~11.62% dari total supply (airdrop)
+· Whale Concentration: Tidak diungkap
+· Sources:
+  · https://www.theblock.co/price/248386/arbitrum-arb-idr
+  · https://www.kucoin.com/news/insight/ARB/696db7f8586da70007562db9
+
+---
+
+Major Token Events
+
+Token Announcement
+
+· Date: 2023-02
+· Event: Pengumuman token ARB【History Phase — EV-023】
+· Description: Arbitrum mengumumkan token ARB dan airdrop untuk pengguna
+· Status: Completed
+
+TGE
+
+· Date: 2023-03-16
+· Event: Token Generation Event (TGE) ARB【History Phase — EV-024】
+· Description: ARB token secara resmi tercipta
+· Status: Completed
+· Related Historical Event ID: EV-024
+
+Airdrop & Exchange Listings
+
+· Date: 2023-03-23
+· Event: Airdrop ARB dan listing di exchange【History Phase — EV-025】
+· Description: 1.16 miliar ARB di-airdrop; listing di Binance, Coinbase, BitMEX, Bitfinex, Kraken, Uniswap
+· Status: Completed
+· Related Historical Event ID: EV-025
+
+AIP-1 Proposal
+
+· Date: 2023-04-01
+· Event: AIP-1 proposal diajukan【History Phase — EV-027】
+· Description: Proposal untuk memperkenalkan ArbitrumDAO dan meminta 7.5亿 ARB untuk special grant program
+· Status: Completed (ditolak)
+· Related Historical Event ID: EV-027
+
+Major Token Unlock (March 2026)
+
+· Date: 2026-03-16
+· Event: Token unlock besar-besaran
+· Description: $2.3 billion in ARB tokens dirilis ke tim dan investor
+· Status: Completed
+
+Major Token Unlock (May 2026)
+
+· Date: 2026-05-16
+· Event: Token unlock
+· Description: $95 million in ARB tokens dirilis ke tim dan investor
+· Status: Completed
+· Sources:
+  · https://docs.arbitrum.foundation
+  · https://www.binance.com/en-AE/feed/post/339098
+  · https://www.htx.com
+
+---
+
+Official Token Resources
+
+· Official Documentation: https://docs.arbitrum.foundation
+· Whitepaper: Tidak ada whitepaper terpisah; dokumentasi teknis tersedia di https://docs.arbitrum.io
+· Governance Docs: https://docs.arbitrum.foundation
+· Governance Forum: https://forum.arbitrum.foundation
+· Explorer (Etherscan): https://etherscan.io/token/0xB50721BCf8d664c30412Cfbc6cf7a15145234ad1
+· Explorer (Arbiscan): https://arbiscan.io
+· Contract Address: 0xB50721BCf8d664c30412Cfbc6cf7a15145234ad1
+· GitHub: https://github.com/OffchainLabs
+· Treasury Dashboard (Dune): https://dune.com/entropy_advisors/arbitrum-dao-treasury
+· Governance Dashboard (Tally): https://www.tally.xyz/gov/arbitrum
+
+---
+
+RINGKASAN
+
+· Status: Live
+· Supply Type: Inflationary (max 2% per tahun, opsional)
+· Total Supply: 10,000,000,000 ARB
+· Distribution Categories: DAO Treasury (42.78%), Team & Advisors (26.94%), Investors (17.53%), Community Airdrop (11.62%), Ecosystem DAOs (1.13%)
+· Utility Count: 1 (Governance) + Planned (Gas/Staking dalam diskusi)
+· Governance: ArbitrumDAO, token-weighted voting, delegasi via Tally
+· Major Token Events: 6 (Token Announcement, TGE, Airdrop/Listing, AIP-1, March 2026 Unlock, May 2026 Unlock)
+
+---
+
+Open Threads
+
+1. Circulating Supply — Terdapat perbedaan angka antara sumber: Tokenomist (6,362,841,042), Etherscan (6,255,821,492), dan CoinGlass (6,614,056,381). Perbedaan ini kemungkinan karena perbedaan waktu pengambilan data dan metodologi.
+2. Distribution Percentages — Sumber resmi tidak memberikan angka tunggal yang konsisten. The Block (42.78% DAO, 26.94% team, 17.53% investors) berbeda dengan KuCoin (35.3% DAO, 26.9% team, 17.5% investors, 7.5% Foundation). Perbedaan ini mungkin karena kategorisasi yang berbeda (misalnya, DAO Treasury vs Foundation operational budget).
+3. Inflation Mechanism — Mekanisme dan jadwal inflasi 2% per tahun tidak dispesifikasi secara detail dalam sumber yang tersedia. Tidak jelas kapan dan bagaimana inflasi akan diaktifkan.
+4. Vesting Schedule Detail — Jadwal vesting per kategori (cliff, unlock frequency, tanggal pasti) tidak dipublikasikan secara komprehensif dalam satu sumber. Tokenomist menyebut full unlock extends into 2027 tetapi detail per kategori tidak lengkap.
+5. ARB Utility Expansion — Rencana untuk mengembangkan ARB menjadi utility token (gas, staking) masih dalam tahap diskusi governance dan belum diimplementasikan.
+6. Holder Distribution — Data mengenai top holder concentration dan whale concentration tidak tersedia dalam sumber yang dapat diverifikasi.

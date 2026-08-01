@@ -1,0 +1,243 @@
+FINANCIAL INTELLIGENCE DATASET — AAVE
+
+Funding History
+
+Ronde 1: Token Sale $3 Juta
+
+· Date: 2020-07-15
+· Amount: $3,000,000
+· Currency: USD
+· Lead Investor: Framework Ventures
+· Participating Investors: Three Arrows Capital
+· Valuation: Tidak diungkap.
+· Funding Type: Token Sale (Private)
+· Status: Completed
+· Sources:
+  · https://www.htx.com.co/tokens/aave/ (L20-L21)
+  · https://www.theblock.co/post/72523/aave-decentralization-token-swap-aavenomics (L5-L8)
+
+Ronde 2: Pendanaan ParaFi Capital $4.5 Juta
+
+· Date: 2020-07
+· Amount: $4,500,000
+· Currency: USD
+· Lead Investor: Tidak diungkap.
+· Participating Investors: ParaFi Capital; Framework Ventures
+· Valuation: Tidak diungkap.
+· Funding Type: Private
+· Status: Completed
+· Sources:
+  · https://www.htx.com.co/tokens/aave/ (L21-L22)
+  · https://tracxn.com/d/companies/aave/__pJ61Bl0OglxLJ_pGwwt0XqHQPTsy7M5-9-xhIr0pX3s (L38-L39)
+
+Ronde 3: Pendanaan Seri B $25 Juta
+
+· Date: 2020-10-12
+· Amount: $25,000,000
+· Currency: USD
+· Lead Investor: Blockchain Capital
+· Participating Investors: Standard Crypto; Blockchain.com Ventures
+· Valuation: Tidak diungkap.
+· Funding Type: Series B
+· Status: Completed
+· Sources:
+  · https://www.htx.com.co/tokens/aave/ (L18-L20)
+  · https://pitchbook.com/profiles/company/224491-60 (L30-L31)
+
+Ronde 4: Later Stage VC $31 Juta
+
+· Date: 2024-12-18
+· Amount: $31,000,000
+· Currency: USD
+· Lead Investor: Tidak diungkap.
+· Participating Investors: Lightspeed Faction; AVAIL; Alchemy
+· Valuation: Tidak diungkap.
+· Funding Type: Later Stage VC
+· Status: Completed
+· Sources:
+  · https://pitchbook.com/profiles/company/224491-60 (L22-L23)
+  · https://www.owler.com/company/aave/funding (L3-L4)
+
+Ronde 5: Funding - Rumored $71 Juta
+
+· Date: 2026-06-26
+· Amount: $71,000,000 (rumored)
+· Currency: USD
+· Lead Investor: Tidak diungkap.
+· Participating Investors: Kraken
+· Valuation: Tidak diungkap.
+· Funding Type: Funding - Rumored
+· Status: Announced (rumored)
+· Sources:
+  · https://www.cbinsights.com/company/aave (L19-L21)
+  · https://pitchbook.com/profiles/company/224491-60
+
+Treasury
+
+Current Treasury Size: Treasury balance (including AAVE) approximately $329 million. Treasury net worth (excluding AAVE) $132.7 million, a year-on-year increase of 130%.
+
+Treasury Composition:
+
+· 44.6% ETH and related tokens
+· 39.5% stablecoins
+· 10.8% DeFi tokens
+· 4.9% BTC-related tokens
+
+Treasury Custodian: Aave DAO
+
+Sources:
+
+· https://www.chaincatcher.com/en/article/2201047 (L5-L9)
+· https://www.gate.com (L13-L16)
+
+Revenue Model
+
+Protocol Lending Fees: Spread between what borrowers pay and what suppliers earn, plus fees from features. Revenue streams include borrow interest and liquidation fees.
+
+Status: Live
+
+Swap Fees: Fees from the aave.com interface.
+
+Status: Live
+
+App Fees: Product fees from Aave applications.
+
+Status: Live
+
+GHO Stablecoin Revenue: Aave's native stablecoin GHO generates annualized revenue, projecting more than $14 million by end of 2025.
+
+Status: Live
+
+Chainlink SVR: Smart Value Recapture from Chainlink oracles.
+
+Status: Live
+
+Sources:
+
+· https://www.kucoin.com (L22-L24)
+· https://tokenterminal.beehiiv.com (L20-L22)
+· https://bingx.com (L28-L29)
+
+Revenue History
+
+Period Revenue Sources
+2025 $907 million https://bingx.com (L4-L5)
+2026 YTD (through mid-June) $333 million https://bingx.com (L8)
+Annualized (as of May 7, 2026) $773.62 million fees; $103.68 million net revenue https://investor.wedbush.com (L10-L11)
+Annualized (as of June 2026) $402 million protocol revenue https://thedefiant.io (L28)
+Cumulative (all-time) $2.21 billion fees https://thedefiant.io (L29)
+
+Fundraising Mechanism
+
+VC Funding: Aave has raised through multiple venture capital rounds including Series B ($25M) and Later Stage VC ($31M).
+
+Private Token Sale: $3 million token sale to Framework Ventures and Three Arrows Capital in July 2020.
+
+Private Investment: $4.5 million from ParaFi Capital in July 2020.
+
+DAO Treasury: Protocol revenue flows to Aave DAO treasury.
+
+Protocol Revenue: Primary ongoing source of funding.
+
+Sources:
+
+· https://www.htx.com.co/tokens/aave/ (L18-L22)
+· https://pitchbook.com/profiles/company/224491-60 (L30-L31)
+
+Token Sale
+
+Private Token Sale (2020-07-15):
+
+· Investors: Framework Ventures, Three Arrows Capital
+· Amount: $3 million
+· Token: LEND at $0.10 per token
+· Status: Completed
+
+Sources:
+
+· https://www.theblock.co/post/72523/aave-decentralization-token-swap-aavenomics (L5-L8)
+
+Financial Dependencies
+
+Aave DAO: Governs the core lending smart contracts, sets risk parameters, and accumulates protocol-level revenue into the treasury.
+
+Aave Labs: For-profit development company behind the Aave protocol; receives funding from DAO for development.
+
+VC Investors: Multiple venture capital firms have provided funding across various rounds.
+
+Sources:
+
+· https://www.21shares.com (L6-L8)
+· https://finance.yahoo.com (L11-L13)
+
+Financial Risk
+
+Bad Debt from rsETH Exploit (2026): Aave faced $124M-$230M in bad debt following the KelpDAO rsETH bridge exploit. Aave V3 carried an estimated $123.7 million in bad debt. Resolution of liabilities across Kelp, LayerZero, and Aave has yet to be finalized.
+
+Massive Withdrawals (April 2026): Users withdrew approximately $8.45 billion from the protocol after the KelpDAO rsETH bridge exploit raised concerns.
+
+TVL Drop: Aave's total value locked plunged by about $6.6 billion.
+
+Deadweight Loss: Delphi Digital report states Aave's three largest markets—WETH, USDT, and USDC—face approximately $52 million annually in deadweight loss.
+
+Leverage Risk: As of May 2026, Aave V3 carried $10.7B in loans vs $17.37B collateral; e-mode alone had $6.3B debt vs $7.05B collateral (~89.4% D/C), with a debt-weighted health factor near 1.05.
+
+Emergency Response: Aave's survival depended on a $300 million emergency response, including a 25,000 ETH commitment from the Aave DAO and 5,000 ETH (worth about $8.4 million) from Stani Kulechov personally.
+
+Sources:
+
+· https://app.blockworksresearch.com (L35-L36)
+· https://www.htx.co.zw (L39-L43)
+· https://www.coindesk.com (L30-L31)
+· https://www.kucoin.com (L14-L15)
+· https://coinmarketcap.com (L7-L9)
+
+Official Financial Resources
+
+Official Blog: https://aave.com/blog
+
+Governance Forum: https://governance.aave.com
+
+Treasury Dashboard (Dune): https://dune.com/aavelabs[reference:86]
+
+Token Terminal: https://tokenterminal.com
+
+DefiLlama: https://defillama.com/protocol/aave[reference:88]
+
+Messari: https://messari.io/project/aave[reference:89]
+
+Aavescan: https://aavescan.com
+
+Sources:
+
+· https://aave.com
+· https://governance.aave.com
+· https://dune.com/aavelabs
+
+RINGKASAN
+
+Kategori Nilai
+Total Funding Raised $63.5M (Owler) / $75.5M (PitchBook) / $32.5M (CB Insights) — terdapat konflik angka
+Funding Rounds 5+ rounds (including rumored)
+Treasury Status $329M (including AAVE); $132.7M (excluding AAVE)
+Revenue Sources Protocol lending fees, swap fees, app fees, GHO revenue, Chainlink SVR
+Revenue Availability 2025: $907M; 2026 YTD: $333M; Cumulative fees: $2.21B
+
+OPEN THREADS
+
+Total Funding Raised: Terdapat konflik angka signifikan antar sumber:
+
+· Owler: $63.5M
+· PitchBook: $75.5M
+· CB Insights: $32.5M
+· HTX: menyebutkan $3M + $25M + $4.5M = $32.5M
+
+Funding Round Desember 2024: Owler menyebut $31M pada Des 2024, PitchBook mencatat Later Stage VC $31M pada 18 Des 2024. Detail investor dan struktur ronde tidak diungkap secara lengkap.
+
+Rumored Funding Juni 2026: CB Insights melaporkan "Funding - Rumored for $71M" dengan partisipasi Kraken. Statusnya masih rumor dan belum dikonfirmasi secara resmi.
+
+Treasury Size: Angka treasury bervariasi — $329M (including AAVE) dan $132.7M (excluding AAVE). Komposisi treasury hanya tersedia dalam persentase, bukan nilai absolut per aset.
+
+Bad Debt dari Exploit rsETH: Jumlah bad debt bervariasi antar sumber — $124M-$230M, $123.7M, $180M, ~$200M. Resolusi akhir masih belum final.
+
+Valuation: Tidak ada informasi resmi mengenai post-money valuation dari setiap ronde pendanaan.
