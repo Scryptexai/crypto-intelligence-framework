@@ -4653,18 +4653,21 @@ ATURAN UMUM
 Documented here rather than silently worked around, so the next person running Track C knows what's not
 wired up yet:
 
-- **Phase 11's filename/header still need to fit `tools/ingest.py`'s contract.** `PHASE_KEYS` only has a
-  `"conflict"` phase key (title "Conflicting Evidence & Resolutions"); Track C's Phase 11 output is a much
-  broader Validation & QA report (Data Lineage, Knowledge Dependency Graph, Confidence formula, CIF Score) —
-  saved as `11-conflict.docx` it passes the filename check, but its header (`CIF VALIDATION REPORT v3.0`)
-  doesn't match either pattern `validate_phase_content()` currently accepts (`PROJECT: <Name>` or
-  `<TITLE> — <Name>`). Not yet resolved in `tools/ingest.py`.
-- **The real Arbitrum run's `CIF SCORE` was internally inconsistent** — the CIF MANIFEST summary reported
-  `88.2/100` (Coverage 63, Conflict 74) while the same document's own "CIF SCORE CALCULATION" section, run
-  later, computed `81.6/100` from different Coverage (38%) and Conflict Score (56%) figures. Worth adding an
-  explicit rule to this prompt: compute the detailed CIF Score Calculation section *first*, then copy its
-  final numbers back into the Manifest — don't state the Manifest's scores before the detailed calculation
-  exists.
+- ~~Phase 11's filename/header need to fit `tools/ingest.py`'s contract~~ — **resolved.** Corrected after
+  actually testing it: `validate_phase_content()`'s `PROJECT_HEADER_RE` is case-insensitive and searches the
+  whole text (not just line 1), so it already matched the `Project: Arbitrum` line nested inside the real
+  Phase 11's `CIF MANIFEST v3.0` block — the header was never actually a problem. The real, verified gap was
+  that the assembled dossier's section title always said "Conflicting Evidence & Resolutions" for phase 11
+  regardless of content shape, mislabeling the Validation Report. `tools/ingest.py`'s `phase_meta()` now
+  detects the `CIF VALIDATION REPORT` / `CIF MANIFEST` signal and swaps in "Validation & Quality Assurance
+  (CIF Score)" instead; `"conflict"` stays the phase key and `11-conflict.docx` stays the filename (no data
+  migration needed), Track A/B content is unaffected (verified no regression). Also added a `--model` flag
+  to `tools/ingest.py` (default `Gemini`) so the dossier's "Source:" line doesn't wrongly credit Gemini for
+  a DeepSeek-researched project — pass `--model DeepSeek` when running Track C projects through
+  `tools/ingest.py --type data_project`.
+- ~~The real Arbitrum run's `CIF SCORE` was internally inconsistent~~ — **resolved**: Phase 11's ATURAN UMUM
+  §16 above now requires computing the CIF Score Calculation section first and copying its result into the
+  Manifest, not the reverse.
 - **Phase 9's "Decision Timeline" (Trigger/Evidence/Decision/Immediate Result/Long-term Impact) doesn't
   match `tools/extract_decision_events.py`'s expected "Decision Event" schema**
   (Motivation/Constraint/Pressure/Trade-off/Alternative(s) Considered/Expectation vs. Actual/8-POV
