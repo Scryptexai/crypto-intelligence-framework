@@ -73,6 +73,19 @@ run_extract_entities() {
   fi
 }
 
+run_extract_iw_fields() {
+  # Intelligence Workspace's Knowledge/QA/Behavior contracts — Track C (DeepSeek
+  # methodology) dossiers only; Track A/B dossiers parse to 0 items and are skipped
+  # (see each tool's module docstring for why they don't approximate Track A/B).
+  local real=()
+  while IFS= read -r f; do real+=("$f"); done < <(_real_dossiers)
+  if [ "${#real[@]}" -gt 0 ]; then
+    "$PY" tools/extract_knowledge.py "${real[@]}"
+    "$PY" tools/extract_behavior.py "${real[@]}"
+    "$PY" tools/extract_qa.py "${real[@]}"
+  fi
+}
+
 case "$cmd" in
   ingest)
     run_ingest
@@ -81,6 +94,7 @@ case "$cmd" in
     "$PY" tools/build_json.py
     run_extract_events
     run_extract_entities
+    run_extract_iw_fields
     "$PY" tools/backtest.py || true
     ;;
   sync)
@@ -92,6 +106,7 @@ case "$cmd" in
     "$PY" tools/build_json.py            # export projects/patterns/sentiment + bundled cif.json
     run_extract_events                   # export poc/decision_events.json
     run_extract_entities                 # export poc/entities.json
+    run_extract_iw_fields                # export poc/{knowledge,behavior,qa}.json (Track C only)
     "$PY" tools/backtest.py || true      # scorecard (non-zero exit on real failure; run continues)
     ;;
   *)

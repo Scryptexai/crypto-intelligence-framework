@@ -37,7 +37,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 POC = ROOT / "poc"
-TABLES = ("cif_projects", "cif_patterns", "cif_backtests", "cif_decision_events", "cif_entities")
+TABLES = ("cif_projects", "cif_patterns", "cif_backtests", "cif_decision_events", "cif_entities",
+          "cif_knowledge")
 
 
 def slugify(name: str) -> str:
@@ -71,24 +72,38 @@ def project_rows():
     cif_projects was repurposed for Intelligence Workspace's Project contract (2026-08-01
     reset, see docs/Project/ApplicationBlueprint.md and the migration applied that day) --
     it no longer has AirdropOS-only columns like `tier`. Only fields this script can derive
-    without guessing are populated: entity_count from poc/entities.json (a real count, not a
-    fabricated one), status defaults to "active" as CIF's own curation-state label (every
-    project in examples/CaseStudies/ is, by definition, actively tracked -- this is a
-    workflow flag CIF assigns, not a claim about the project itself). symbol/tagline/
-    description/color/accent/cifScore/confidence/qa/behavior have no deterministic source
-    yet and are intentionally omitted so upsert leaves them untouched rather than nulling
-    real data or guessing fake values -- see extract_knowledge.py/extract_qa.py (not yet
-    built) for what would need to exist before those can be populated honestly."""
-    entity_counts = {}
-    entities_path = POC / "entities.json"
-    if entities_path.exists():
-        for project, ents in json.loads(entities_path.read_text(encoding="utf-8")).items():
-            entity_counts[slugify(project)] = len(ents)
+    without guessing are populated: entity_count/knowledge_count from poc/{entities,
+    knowledge}.json (real counts, not fabricated ones), qa/behavior from poc/{qa,
+    behavior}.json (Track C dossiers only -- see extract_qa.py/extract_behavior.py; Track
+    A/B projects simply have no entry in those files and keep null qa/behavior), status
+    defaults to "active" as CIF's own curation-state label (every project in
+    examples/CaseStudies/ is, by definition, actively tracked -- this is a workflow flag CIF
+    assigns, not a claim about the project itself), cif_score copied from qa.json's `total`
+    where present. symbol/tagline/description/color/accent/conflict_count/event_count have
+    no deterministic source yet and are intentionally omitted so upsert leaves them
+    untouched rather than nulling real data or guessing fake values."""
+    def _counts(filename):
+        path = POC / filename
+        if not path.exists():
+            return {}
+        return {slugify(k): len(v) for k, v in json.loads(path.read_text(encoding="utf-8")).items()}
+
+    entity_counts = _counts("entities.json")
+    knowledge_counts = _counts("knowledge.json")
+
+    qa_by_slug, behavior_by_slug = {}, {}
+    qa_path, behavior_path = POC / "qa.json", POC / "behavior.json"
+    if qa_path.exists():
+        for project, report in json.loads(qa_path.read_text(encoding="utf-8")).items():
+            qa_by_slug[slugify(project)] = report
+    if behavior_path.exists():
+        for project, profile in json.loads(behavior_path.read_text(encoding="utf-8")).items():
+            behavior_by_slug[slugify(project)] = profile
 
     rows = []
     for p in load("projects.json"):
         slug = slugify(p["n"])
-        rows.append({
+        row = {
             "id": slug,
             "slug": slug,
             "name": p["n"],
@@ -98,12 +113,17 @@ def project_rows():
             "source_file": p["file"],
             "status": "active",
             "entity_count": entity_counts.get(slug, 0),
-            "knowledge_count": 0,
-            "conflict_count": 0,
-            "event_count": 0,
+            "knowledge_count": knowledge_counts.get(slug, 0),
             "last_updated": _dt.now(_tz.utc).isoformat(),
             "last_activity_hours": 0,
-        })
+        }
+        if slug in qa_by_slug:
+            row["qa"] = qa_by_slug[slug]
+            if qa_by_slug[slug].get("total") is not None:
+                row["cif_score"] = qa_by_slug[slug]["total"]
+        if slug in behavior_by_slug:
+            row["behavior"] = behavior_by_slug[slug]
+        rows.append(row)
     return rows
 
 
@@ -203,19 +223,47 @@ def entity_rows():
     return rows
 
 
+def knowledge_rows():
+    """poc/knowledge.json (tools/extract_knowledge.py's shape) -> cif_knowledge columns.
+    Track C dossiers only -- see that tool's docstring. Composite id (project_slug, id)
+    matches Intelligence Workspace's /projects/{slug}/knowledge/{id} route."""
+    rows = []
+    data = load("knowledge.json")
+    for _project, items in data.items():
+        for k in items:
+            rows.append({
+                "project_slug": k["projectSlug"],
+                "id": k["id"],
+                "name": k.get("name"),
+                "category": k.get("category"),
+                "description": k.get("description"),
+                "confidence": k.get("confidence"),
+                "status": k.get("status"),
+                "updated_at": k.get("updatedAt"),
+                "author": k.get("author"),
+                "evidence": k.get("evidence") or [],
+                "related_knowledge": k.get("relatedKnowledge", []),
+                "dependencies": k.get("dependencies", []),
+            })
+    return rows
+
+
 BUILDERS = {
     "cif_projects": project_rows,
     "cif_patterns": pattern_rows,
     "cif_backtests": backtest_rows,
     "cif_decision_events": decision_event_rows,
     "cif_entities": entity_rows,
+    "cif_knowledge": knowledge_rows,
 }
 
 
 ON_CONFLICT = {
-    # cif_entities has a composite primary key (project_slug, id) -- see the migration in
-    # this session's Intelligence Workspace reset -- every other table keys on bare id.
+    # cif_entities/cif_knowledge have a composite primary key (project_slug, id) -- see the
+    # migration in this session's Intelligence Workspace reset -- every other table keys on
+    # bare id.
     "cif_entities": "project_slug,id",
+    "cif_knowledge": "project_slug,id",
 }
 
 

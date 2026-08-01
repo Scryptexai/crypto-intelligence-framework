@@ -1,0 +1,625 @@
+{
+  "Arbitrum": [
+    {
+      "id": "K-001",
+      "projectSlug": "arbitrum",
+      "name": "Product-Market Fit Before Tokenization",
+      "category": "Core Insight",
+      "description": "Arbitrum launched mainnet in August 2021 but only introduced its token in March 2023—a gap of 19 months. This allowed the project to demonstrate product-market fit, establish liquidity, and build a live ecosystem before introducing financialization pressures. The token was introduced to decentralize governance, not to fund development.\n\nEvidence: Mainnet live August 31, 2021【History — EV-013】; TGE March 16, 2023【History — EV-024】; airdrop March 23, 2023【History — EV-025】. The 19-month gap shows deliberate sequencing: product first, token second.",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-013",
+        "EV-024",
+        "EV-025"
+      ]
+    },
+    {
+      "id": "K-002",
+      "projectSlug": "arbitrum",
+      "name": "Disciplined Treasury Management as a Competitive Advantage",
+      "category": "Core Insight",
+      "description": "Rather than aggressively spending treasury on growth subsidies, Arbitrum DAO adopted an \"institutional capital\" approach—diversifying into RWAs, generating yield (~$2.28M), and maintaining a conservative burn rate. This creates long-term sustainability and reduces dependency on token price appreciation.\n\nEvidence: Treasury size $1.21B–$1.3B+; ~93% in ARB, $27.6M in RWAs; ~$2.28M interest generated; \"Instead of burning capital for growth, Arbitrum focused on real fee generation\"【Phase 5 — Treasury】; \"Arbitrum DAO is quietly running one of the most disciplined treasury plays in crypto\"【Phase 9 — Financial Decision Pattern】.",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "K-003",
+      "projectSlug": "arbitrum",
+      "name": "Institutional Adoption Requires More Than Marketing",
+      "category": "Core Insight",
+      "description": "Arbitrum attracted major institutions (Robinhood, BlackRock, Franklin Templeton, LG) through technology readiness, compliance infrastructure, and business development, not through grants or subsidies. Institutions chose Arbitrum because it provided the infrastructure they needed, not because they were paid.\n\nEvidence: Robinhood Chain launched on Arbitrum Orbit with 10% fee share【History — EV-041】; Franklin Templeton, WisdomTree, Spiko deployments【Phase 7 — Applications】; LG Electronics building onchain advertising network; Mastercard expanded stablecoin settlement【Phase 8 — Narrative Position】.",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-041"
+      ]
+    },
+    {
+      "id": "K-004",
+      "projectSlug": "arbitrum",
+      "name": "Progressive Decentralization Requires Trade-offs",
+      "category": "Core Insight",
+      "description": "Arbitrum's path to decentralization is gradual and pragmatic. The Security Council retains emergency powers (freeze funds) to protect users—sacrificing \"code is law\" purity for practical security. Stage 1 rollup status (January 2026) shows technical progress toward decentralization, but governance remains concentrated among top holders.\n\nEvidence: Security Council froze 30,766 ETH (~$71M) during KelpDAO exploit【History — EV-036】; restraining order from US federal court【History — EV-037】; \"sacrificing some decentralization purity to prevent stolen funds from being lost\"【Phase 9 — Risk Response Pattern】; Stage 1 rollup status achieved January 2026【Phase 8 — Market Timeline】.",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-036",
+        "EV-037"
+      ]
+    },
+    {
+      "id": "K-005",
+      "projectSlug": "arbitrum",
+      "name": "DAO Governance Must Evolve Through Failure",
+      "category": "Core Insight",
+      "description": "AIP-1 (April 2023) was rejected by DAO because it was too broad and perceived as overreach. This failure led to lasting governance reforms: improved temperature checks, snapshots, vesting requirements, and stricter execution processes. Governance maturity came from learning through failure.\n\nEvidence: AIP-1 proposed 7.5亿 ARB for special grant program【History — EV-027】; rejected with 118M votes against vs 21M for【History — EV-028】; \"AIP-1 controversy (2023) led to lasting reforms: improved temperature checks, snapshots, vesting requirements, stricter execution processes\"【Phase 9 — Governance Decision Pattern】.",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-027",
+        "EV-028"
+      ]
+    },
+    {
+      "id": "K-006",
+      "projectSlug": "arbitrum",
+      "name": "Builder Retention Trumps Builder Attraction",
+      "category": "Core Insight",
+      "description": "Rather than aggressively recruiting new projects with temporary subsidies, Arbitrum focused on retaining existing builders through technical stability, liquidity depth, and institutional-grade infrastructure. Teams that ship multiple products on Arbitrum and expand (not migrate) demonstrate this principle.\n\nEvidence: \"Arbitrum doesn't just attract builders; it keeps them. Teams that ship multiple products on Arbitrum; Protocols that expand instead of migrating; Orbit chains choosing to stay aligned with the stack\"【Phase 9 — Ecosystem Decision Pattern】; 1,142 live projects【Phase 8 — Adoption Metrics】.",
+      "confidence": 60,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "K-007",
+      "projectSlug": "arbitrum",
+      "name": "Ethereum Alignment First",
+      "category": "Strategic Principle",
+      "description": "Every technical upgrade maintains full compatibility with Ethereum. Nitro brought 7-10x scaling without sacrificing security; ArbOS 40 \"Callisto\" added support for Ethereum Execution Layer changes from Pectra upgrade. Arbitrum positions itself as \"Ethereum's home for DeFi\"【Phase 4 — Technology】.\n\nEvidence: Phase 3 (EV-022 — Nitro upgrade), Phase 4 (Technology — Architecture)",
+      "confidence": null,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-022"
+      ]
+    },
+    {
+      "id": "K-008",
+      "projectSlug": "arbitrum",
+      "name": "Progressive Decentralization",
+      "category": "Strategic Principle",
+      "description": "Decentralization is gradual, not instantaneous. Mainnet launch (2021) → Token/DAO (2023) → Security Council elections (2023–2026) → Stage 1 rollup status (2026). Each step reduces Offchain Labs' control【Phase 8 — Market Timeline】.\n\nEvidence: Phase 3 (EV-013, EV-024, EV-034, EV-035, EV-038), Phase 8 (Market Timeline)",
+      "confidence": null,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-013",
+        "EV-024",
+        "EV-034",
+        "EV-035",
+        "EV-038"
+      ]
+    },
+    {
+      "id": "K-009",
+      "projectSlug": "arbitrum",
+      "name": "Sustainability Over Growth",
+      "category": "Strategic Principle",
+      "description": "Prioritizes real fee generation over temporary subsidies. Treasury is managed like institutional capital—generating yield, diversifying assets, and maintaining conservative burn rate【Phase 9 — Financial Decision Pattern】.\n\nEvidence: Phase 5 (Treasury), Phase 9 (Financial Decision Pattern)",
+      "confidence": null,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "K-010",
+      "projectSlug": "arbitrum",
+      "name": "Product-Led Tokenization",
+      "category": "Strategic Principle",
+      "description": "Token is introduced after product-market fit is demonstrated, not before. Mainnet live 2021, token 2023【History — EV-013, EV-024】. Token serves governance, not fundraising【Phase 6 — Utility】.\n\nEvidence: Phase 3 (EV-013, EV-024)",
+      "confidence": null,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-013",
+        "EV-024"
+      ]
+    },
+    {
+      "id": "K-011",
+      "projectSlug": "arbitrum",
+      "name": "Institutional-First Ecosystem Development",
+      "category": "Strategic Principle",
+      "description": "Actively courts traditional institutions (Robinhood, BlackRock, Franklin Templeton, LG) rather than focusing solely on retail crypto-native projects【Phase 7 — Major Integrations】.\n\nEvidence: Phase 7 (Major Integrations), Phase 8 (Narrative Position)",
+      "confidence": null,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "K-012",
+      "projectSlug": "arbitrum",
+      "name": "Deepest L2 DeFi Liquidity",
+      "category": "Success Factor",
+      "description": "Evidence: $12–17B TVL; ~35-38% L2 DeFi market share【Phase 8 — Adoption Metrics】; major protocols deployed (Uniswap, Aave, GMX, Curve)【Phase 7 — Applications】.",
+      "confidence": null,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "K-013",
+      "projectSlug": "arbitrum",
+      "name": "Institutional Adoption First-Mover",
+      "category": "Success Factor",
+      "description": "Evidence: Robinhood Chain (2026); Franklin Templeton, WisdomTree, BlackRock deployments【Phase 7 — Major Integrations】; tokenized markets reach $2.3B【Phase 8 — Adoption Metrics】.",
+      "confidence": null,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-041"
+      ]
+    },
+    {
+      "id": "K-014",
+      "projectSlug": "arbitrum",
+      "name": "Disciplined Financial Management",
+      "category": "Success Factor",
+      "description": "Evidence: ~$2.28M interest generated from treasury; diversified into RWAs; conservative burn rate【Phase 5 — Treasury】; \"Arbitrum DAO is quietly running one of the most disciplined treasury plays in crypto right now\"【Phase 9 — Financial Decision Pattern】.",
+      "confidence": null,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "K-015",
+      "projectSlug": "arbitrum",
+      "name": "Product Before Token",
+      "category": "Success Factor",
+      "description": "Evidence: 19-month gap between mainnet and token launch allowed organic ecosystem growth【History — EV-013, EV-024】; mainnet beta for developers May 2021, public mainnet August 2021【History — EV-012, EV-013】.",
+      "confidence": null,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-012",
+        "EV-013",
+        "EV-024"
+      ]
+    },
+    {
+      "id": "K-016",
+      "projectSlug": "arbitrum",
+      "name": "Strong Developer Ecosystem",
+      "category": "Success Factor",
+      "description": "Evidence: 1,142 live projects【Phase 8 — Adoption Metrics】; 60+ Orbit chains【Phase 8 — Adoption Metrics】; Audit Subsidy Program $10M【History — EV-031】; Stylus for multi-language support【History — EV-029】.",
+      "confidence": null,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-029",
+        "EV-031"
+      ]
+    },
+    {
+      "id": "K-017",
+      "projectSlug": "arbitrum",
+      "name": "Governance Overreach (AIP-1)",
+      "category": "Failure Factor",
+      "description": "AIP-1 proposal was too broad and attempted to approve 7.5亿 ARB for special grant program without sufficient community consultation. Proposal was rejected with 118M votes against vs 21M for【History — EV-027, EV-028】. — DAO governance requires clear, incremental proposals with proper consultation.",
+      "confidence": null,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-027",
+        "EV-028"
+      ]
+    },
+    {
+      "id": "K-018",
+      "projectSlug": "arbitrum",
+      "name": "Voting Power Concentration",
+      "category": "Failure Factor",
+      "description": "Top 10 addresses control nearly 50% of all influence; top 100 hold 60–85%【Phase 9 — Governance Decision Pattern】. This undermines claims of decentralization. — Token distribution must be carefully designed to avoid governance capture.",
+      "confidence": null,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "K-019",
+      "projectSlug": "arbitrum",
+      "name": "Centralized Sequencer Dependency",
+      "category": "Failure Factor",
+      "description": "Arbitrum's centralized sequencer creates critical dependency and opportunities for latency-sensitive strategies【Phase 7 — Ecosystem Risks】. \"Although mechanisms like the Delayed Inbox allow users to bypass the sequencer, few projects rely on these paths.\" — Infrastructure decentralization is as important as governance decentralization.",
+      "confidence": null,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "K-020",
+      "projectSlug": "arbitrum",
+      "name": "Security Incidents",
+      "category": "Failure Factor",
+      "description": "Multiple exploits in 2026: KelpDAO (~$290M)【History — EV-036】; Stake DAO【History — EV-039】; Lumi Finance (~$270K)【History — EV-042】; SwapNet and Aperture Finance ($17M+)【History — EV-033】. — Security is never complete; proactive auditing and incident response are essential.",
+      "confidence": null,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-033",
+        "EV-036",
+        "EV-039",
+        "EV-042"
+      ]
+    },
+    {
+      "id": "K-021",
+      "projectSlug": "arbitrum",
+      "name": "Limited Token Utility",
+      "category": "Failure Factor",
+      "description": "ARB primarily serves as governance token, not utility token. Utility expansion (gas, staking) remains in discussion but not implemented【Phase 6 — Utility】. — Governance-only tokens face challenges in long-term value retention.",
+      "confidence": null,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "K-022",
+      "projectSlug": "arbitrum",
+      "name": "Observe",
+      "category": "Decision Framework",
+      "description": "Identify market needs, technical requirements, or ecosystem gaps\n\nEvidence: Princeton research identified scalability problem (2014–2018)【History — EV-001, EV-002】; DeFi growth created demand for L2 (2020–2021)【History — EV-008–EV-013】; institutional demand for RWA infrastructure (2024–2026)【Phase 7 — Major Integrations】",
+      "confidence": null,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-001",
+        "EV-002",
+        "EV-008",
+        "EV-013"
+      ]
+    },
+    {
+      "id": "K-023",
+      "projectSlug": "arbitrum",
+      "name": "Evaluate",
+      "category": "Decision Framework",
+      "description": "Assess technical feasibility, trade-offs, and alignment with Ethereum\n\nEvidence: Nitro testnet (April 2022) before mainnet upgrade【History — EV-017】; testnet iterations before public mainnet【History — EV-008–EV-013】",
+      "confidence": null,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-008",
+        "EV-013",
+        "EV-017"
+      ]
+    },
+    {
+      "id": "K-024",
+      "projectSlug": "arbitrum",
+      "name": "Fund",
+      "category": "Decision Framework",
+      "description": "Secure resources through VC funding, DAO treasury, or revenue\n\nEvidence: Seed $3.7M (2019)【Phase 5 — Funding History】; Series A $20M (2021)【Phase 5 — Funding History】; Series B $120M (2021)【Phase 5 — Funding History】; DAO treasury for ecosystem programs【Phase 5 — Treasury】",
+      "confidence": null,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "K-025",
+      "projectSlug": "arbitrum",
+      "name": "Develop",
+      "category": "Decision Framework",
+      "description": "Build technology with Ethereum alignment and progressive upgrades\n\nEvidence: Nitro upgrade (Aug 2022)【History — EV-022】; Stylus (Sep 2024)【History — EV-029】",
+      "confidence": null,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-022",
+        "EV-029"
+      ]
+    },
+    {
+      "id": "K-026",
+      "projectSlug": "arbitrum",
+      "name": "Launch",
+      "category": "Decision Framework",
+      "description": "Release to public with testing and gradual rollout\n\nEvidence: Testnet (2020) → Mainnet beta (May 2021) → Public mainnet (Aug 2021)【History — EV-008–EV-013】",
+      "confidence": null,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-008",
+        "EV-013"
+      ]
+    },
+    {
+      "id": "K-027",
+      "projectSlug": "arbitrum",
+      "name": "Govern",
+      "category": "Decision Framework",
+      "description": "Transfer control to DAO with progressive decentralization\n\nEvidence: Token launch (2023)【History — EV-024】; Security Council elections (2023–2026)【History — EV-034, EV-035, EV-038】; Stage 1 rollup status (2026)【Phase 8 — Market Timeline】",
+      "confidence": null,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-024",
+        "EV-034",
+        "EV-035",
+        "EV-038"
+      ]
+    },
+    {
+      "id": "K-028",
+      "projectSlug": "arbitrum",
+      "name": "Product-First Tokenization",
+      "category": "Reusable Playbook",
+      "description": "Launch product (mainnet) first, prove product-market fit, then introduce token for governance—not fundraising. This reduces speculation pressure during critical early adoption phase. — Any blockchain infrastructure project\n\nEvidence: 19-month gap between mainnet (Aug 2021) and token (Mar 2023)【History — EV-013, EV-024】",
+      "confidence": null,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-013",
+        "EV-024"
+      ]
+    },
+    {
+      "id": "K-029",
+      "projectSlug": "arbitrum",
+      "name": "Progressive Fundraising with Valuation Escalation",
+      "category": "Reusable Playbook",
+      "description": "Raise funds in multiple rounds with increasing valuations as product milestones are achieved. This minimizes dilution and builds investor confidence. — Capital-intensive infrastructure projects\n\nEvidence: Seed $3.7M (2019) → Series A $20M (2021) → Series B $120M at $1.2B valuation (2021)【Phase 5 — Funding History】",
+      "confidence": null,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "K-030",
+      "projectSlug": "arbitrum",
+      "name": "Strategic Partnerships Fund",
+      "category": "Reusable Playbook",
+      "description": "Allocate dedicated budget (250M ARB) for milestone-based partnerships with high-impact projects. Use grants strategically, not as blanket subsidies. — Ecosystem-building projects\n\nEvidence: 250M ARB Strategic Partnerships Budget; H1 2025: 56 projects approved across categories【Phase 9 — Ecosystem Decision Pattern】",
+      "confidence": null,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "K-031",
+      "projectSlug": "arbitrum",
+      "name": "Developer Tooling Investment",
+      "category": "Reusable Playbook",
+      "description": "Invest heavily in developer infrastructure and security (Audit Subsidy Program $10M, multi-language support via Stylus). Developers are the primary ecosystem growth engine. — All platform/infrastructure projects\n\nEvidence: Audit Subsidy Program $10M【History — EV-031】; Stylus for Rust, C, C++【History — EV-029】",
+      "confidence": null,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-029",
+        "EV-031"
+      ]
+    },
+    {
+      "id": "K-032",
+      "projectSlug": "arbitrum",
+      "name": "Active Treasury Management",
+      "category": "Reusable Playbook",
+      "description": "Treat treasury as institutional capital—diversify, generate yield, and maintain conservative burn rate. This creates long-term sustainability and reduces dependency on token price. — Any project with significant treasury\n\nEvidence: ~$2.28M interest generated from treasury; RWAs $27.6M; \"Instead of burning capital for growth, Arbitrum focused on real fee generation\"【Phase 5 — Treasury】",
+      "confidence": null,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "K-033",
+      "projectSlug": "arbitrum",
+      "name": "Learn from Governance Failure",
+      "category": "Reusable Playbook",
+      "description": "When governance proposals fail, analyze why and implement process reforms. Failure is an opportunity for improvement, not a reason to centralize control. — DAO-governed projects\n\nEvidence: AIP-1 rejected (2023) → lasting reforms: improved temperature checks, snapshots, vesting requirements【Phase 9 — Governance Decision Pattern】",
+      "confidence": null,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "K-034",
+      "projectSlug": "arbitrum",
+      "name": "Premature Tokenization",
+      "category": "Anti-pattern",
+      "description": "Launching token before product-market fit creates speculative pressure and shifts focus from development to price. \"Build, Then Token\" is the superior approach. — Projects should resist tokenization until product is live and proven.\n\nEvidence: Arbitrum's 19-month gap between mainnet and token【History — EV-013, EV-024】",
+      "confidence": null,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-013",
+        "EV-024"
+      ]
+    },
+    {
+      "id": "K-035",
+      "projectSlug": "arbitrum",
+      "name": "Blanket Grant Programs Without Milestones",
+      "category": "Anti-pattern",
+      "description": "Distributing grants without clear milestones leads to waste and attracts low-quality projects. Strategic, milestone-based partnerships are more effective. — Grants should be tied to clear, verifiable deliverables.\n\nEvidence: AIP-1 rejected because it was too broad【History — EV-027, EV-028】; 250M ARB Strategic Partnerships Budget uses milestone-based approach【Phase 9 — Ecosystem Decision Pattern】",
+      "confidence": null,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-027",
+        "EV-028"
+      ]
+    },
+    {
+      "id": "K-036",
+      "projectSlug": "arbitrum",
+      "name": "Over-Centralization of Voting Power",
+      "category": "Anti-pattern",
+      "description": "Token distribution that concentrates voting power undermines decentralization claims and leads to governance capture. — Token distribution must be designed to avoid concentration.\n\nEvidence: Top 10 addresses control nearly 50% of all influence; top 100 hold 60–85%【Phase 6 — Holder Distribution】",
+      "confidence": null,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "K-037",
+      "projectSlug": "arbitrum",
+      "name": "Single-Point Infrastructure Dependency",
+      "category": "Anti-pattern",
+      "description": "Centralized sequencer creates critical dependency and attack vector. While Arbitrum has fallback mechanisms (Delayed Inbox), few projects use them. — Infrastructure should be designed with redundancy and decentralization from the start.\n\nEvidence: \"Arbitrum's centralized sequencer introduces a critical dependency. Although mechanisms like the Delayed Inbox allow users to bypass the sequencer, few projects rely on these paths\"【Phase 7 — Ecosystem Risks】",
+      "confidence": null,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "K-038",
+      "projectSlug": "arbitrum",
+      "name": "Governance-Only Token Utility",
+      "category": "Anti-pattern",
+      "description": "Tokens limited to governance face challenges in long-term value retention. Utility expansion (gas, staking, fees) should be designed early. — Token utility should be designed before launch, not after.\n\nEvidence: ARB utility expansion still in discussion【Phase 6 — Utility】",
+      "confidence": null,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "K-039",
+      "projectSlug": "arbitrum",
+      "name": "Security Council Emergency Powers Without Clear Guidelines",
+      "category": "Anti-pattern",
+      "description": "Emergency powers are necessary for security but can create centralization concerns. Clear guidelines and community oversight are essential. — Emergency powers must have clear scope, triggers, and accountability mechanisms.\n\nEvidence: Security Council froze $71M during KelpDAO exploit【History — EV-036】; restraining order from US federal court【History — EV-037】; ongoing debate about decentralization vs security【Phase 9 — Risk Response Pattern】",
+      "confidence": null,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-036",
+        "EV-037"
+      ]
+    }
+  ]
+}

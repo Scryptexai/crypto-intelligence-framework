@@ -1,0 +1,51 @@
+{
+  "Arbitrum": {
+    "projectSlug": "arbitrum",
+    "strategicObjectives": [
+      "Menjadi infrastruktur keuangan-native untuk ekonomi terprogram",
+      "Desentralisasi progresif melalui DAO",
+      "Membangun \"digital sovereign nation\""
+    ],
+    "decisionPatterns": [
+      "Selective Strategic Partnerships dengan High-Impact Projects",
+      "Institutional Adoption sebagai Prioritas",
+      "Gaming sebagai Vertical Strategis",
+      "Developer Ecosystem sebagai Prioritas",
+      "\"Builder Retention Over Builder Attraction\"",
+      "Token-Weighted Voting dengan Quorum",
+      "Two-Governor System (Core + Treasury)",
+      "Progressive Desentralisasi melalui Pemilihan",
+      "Learning from Failure (AIP-1)",
+      "Concentration of Voting Power sebagai Tantangan",
+      "\"Patient, Long-Term\" Approach",
+      "\"Institutional-First\" Strategy",
+      "\"Ethereum Alignment\" sebagai Prinsip",
+      "\"Revenue Before Hype\"",
+      "\"Build, Then Token\"",
+      "Ethereum Alignment First",
+      "Upgrade Bertahap dengan Pengujian Ekstensif",
+      "Customizability untuk Ecosystem Expansion",
+      "Multi-Language Developer Accessibility",
+      "Progressive Decentralization Teknis",
+      "Pendanaan Bertahap dengan Valuasi Meningkat",
+      "Treasury sebagai Revenue Engine, Bukan Cost Center",
+      "Disiplin dan Konservatif dalam Pengeluaran",
+      "Diversifikasi Aset Treasury",
+      "Revenue Sharing sebagai Model Bisnis"
+    ],
+    "riskResponse": [
+      "Emergency Intervention oleh Security Council",
+      "Governance Response untuk Unfreeze",
+      "Proactive Security melalui Audit Subsidies",
+      "Do Nothing as Default",
+      "Transparansi Pasca-Incident"
+    ],
+    "tradeOffs": [
+      "Desentralisasi vs Keamanan",
+      "Growth vs Sustainability",
+      "Desentralisasi Progresif vs Efisiensi",
+      "Ecosystem Expansion vs Revenue Capture",
+      "Token Utility vs Governance Focus"
+    ]
+  }
+}

@@ -192,3 +192,38 @@ that prose would mean asserting a relationship the text doesn't actually state.
 
 Wired into `run.sh build`/`all`, same pattern as `extract_decision_events.py`. Output:
 `poc/entities.json`, keyed by project name.
+
+## `extract_knowledge.py` / `extract_behavior.py` / `extract_qa.py` — Track C only
+
+Built 2026-08-01 alongside `extract_entities.py`, for Intelligence Workspace's `KnowledgeItem`,
+`BehaviorProfile`, and `QAReport` contracts. **Track C (DeepSeek methodology) dossiers only** —
+Track A/B's Knowledge Extraction/Behavioral Intelligence/Conflict Resolution phases (LayerZero)
+never produce these as discrete labeled fields, and the maintainer explicitly rejected deriving
+them from unlabeled prose as too error-prone ("lebih baik bangun dari nol data field-nya karena
+kalau diderivasi rentan error salah baca", 2026-08-01). Track C's Phase 9/10/11 prompts do produce
+genuinely itemized, labeled sections (verified against `examples/CaseStudies/Arbitrum.md`), so
+these three tools parse those literally — no synthesis, no inferred confidence/status where the
+dossier doesn't state one. A Track A/B dossier parses to 0 items/an empty profile/no report and is
+silently skipped, not force-fit.
+
+- `extract_knowledge.py` — Core Insights / Strategic Principles / Success Factors / Failure
+  Factors / Decision Framework / Reusable Playbook / Anti-patterns → `KnowledgeItem[]`.
+  `confidence` only populated where an explicit `Confidence: High|Medium|Low` tag exists (mapped
+  90/60/30). `evidence` (the structured per-citation array with a 1-5 weight) stays empty rather
+  than inventing a weight for a multi-citation paragraph — the raw text is kept in `description`
+  instead. `dependencies` is a literal `EV-\d+` grep of the item's citations. Output: `poc/knowledge.json`.
+- `extract_behavior.py` — Strategic Objectives / {Technical,Financial,Ecosystem,Governance,
+  Recurring} Decision Pattern / Risk Response Pattern / Strategic Trade-offs sections → the four
+  `BehaviorProfile` arrays, extracting the dossier's own item titles verbatim. Output: `poc/behavior.json`.
+- `extract_qa.py` — the "CIF SCORE CALCULATION — v3.0" section's six weighted dimensions (Research/
+  Consistency/Evidence/Coverage/Conflict/Knowledge) → `QAReport.dimensions`, plus the "COVERAGE
+  REPORT" per-phase table → `QAReport.phases` (`status`/`owner` are fixed system defaults, not
+  per-phase source data — see the tool's docstring). Uses the *detailed calculation's* CIF Score,
+  not the earlier Manifest summary — the two can genuinely disagree (Arbitrum: 88.2 vs 81.6), and
+  the detailed one is the documented-authoritative one (see Phased-Research-Prompts.md's "Known
+  gaps" section). Output: `poc/qa.json`.
+
+All three wired into `run.sh build`/`all` via `run_extract_iw_fields`. `tools/sync_supabase.py`
+folds `qa.json`/`behavior.json` into `cif_projects.qa`/`.behavior`/`.cif_score` and
+`knowledge.json` into its own `cif_knowledge` table (composite key `(project_slug, id)`, same
+pattern as `cif_entities`).
