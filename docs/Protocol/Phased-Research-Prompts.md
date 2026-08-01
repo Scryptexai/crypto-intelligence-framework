@@ -645,6 +645,4043 @@ Open Threads
 - <hanya kalau ada yang benar-benar masih belum terselesaikan>
 ```
 
+## Track C — DeepSeek Methodology (v3.1, full 11 phases + Validation)
+
+### Why DeepSeek instead of Gemini/Claude/Kimi/Qwen/GPT (maintainer decision, 2026-07-29)
+
+Maintainer evaluated five options before settling on DeepSeek as the primary research model (first full run:
+Arbitrum, `data_project/Arbitrum/`):
+
+- **Gemini** (Track A/B above): loses context or drifts off the CIF goal across a long multi-phase run.
+- **Claude**: strong, clear output, but limited to 2-3 deep-research runs per day — too slow for the target
+  pace of roughly one project per session.
+- **Kimi**: needs a paid account upgrade to reach a research-capable model.
+- **Qwen**: research isn't robust enough — output comes back 50-70% summarized/fabricated rather than
+  sourced.
+- **GPT**: context window too limited for an 11-phase run, and output can't be exported or bulk-copied —
+  only manual select-and-scroll copy, unworkable for a 500-1000-line report.
+- **DeepSeek** (chosen): 100% free, no daily reset limit (paste straight into chat, no plugin/tool
+  activation needed), and a 1M-token context window — the biggest factor, since it lets Phase 1 through
+  Phase 11 be sent **sequentially in one continuous chat**, with no context loss and no `.docx` upload.
+
+### How this changes the workflow vs. Track A's Context Pack
+
+Track A/B above were designed around a **limited-context model** — step 3's "Context Pack" discipline
+(attach an index, not the full prior phase, per the `3b` table) exists specifically to work around that
+limit. DeepSeek's 1M-token window removes the constraint: run Track C phases **in one sitting, in the same
+chat, back to back.** Only Phase 1's output needs the project name written out in full (`PROJECT: <Nama>`);
+every phase after that just says "gunakan konteks dari Phase 1 (dan fase-fase lain) di atas" — no need to
+re-paste the project name or re-attach any file. Export each phase's raw answer straight to `.docx` per the
+existing naming contract (`NN-<phasekey>.docx`, § step 5 above) — the chat transcript itself is the Context
+Pack.
+
+### Fixed vs. the original DeepSeek run (Arbitrum, 2026-07)
+
+Prompts below are corrected against the actual set used to research Arbitrum: placeholder project name
+(`<NAMA PROJECT>`) restored wherever the original had `ARBITRUM` hardcoded, so these are reusable for the
+next project rather than a one-off copy; `04-technology`/`05-financial` were transposed at the file-name
+level (the content itself was already correct, the file names weren't) — fixed, file names now match
+`PHASE_KEYS`; Phase 4's prompt was missing the `PROJECT:` header line every other phase has (had a
+duplicated, malformed placeholder line instead — `menggunakan phase phase sebelum nya sebagai konteks` —
+removed, since the correctly-worded version of the same instruction already exists a few lines later in the
+same prompt); Phase 3's stray extra blank lines after the title normalized to match its siblings' spacing;
+Phase 11's title line given the same `#` heading marker every other phase uses. No field, rule, or scope
+instruction was removed or reworded — this is filename/placeholder/typo-level cleanup only, verified against
+the real generated `data_project/Arbitrum/*.docx` output (10/11 phases pass `tools/ingest.py`'s
+`validate_phase_content` cleanly; the 11th, `11-conflict.docx`, is a separate open item — see below).
+
+### Phase 1 — Foundation Intelligence
+```
+# PHASE 1 — FOUNDATION INTELLIGENCE
+
+Kamu adalah investigator riset crypto yang sedang membangun dossier fondasi faktual untuk <NAMA PROJECT>.
+Fase ini HANYA mengumpulkan FAKTA — tidak ada analisis, interpretasi, atau "kenapa".
+
+Isi template PERSIS ini (tulis "tidak diketahui" untuk apa pun yang tidak dapat diverifikasi — jangan
+menebak):
+
+PROJECT: <Nama>
+Official Name: <nilai>
+Symbol: <nilai>
+Category: <nilai — spesifik, contoh "cross-chain messaging / interoperability", bukan cuma "infra">
+Founding Entity: <nama badan hukum, yurisdiksi>
+Founders: <nama1 (peran); nama2 (peran); ... — atau "anonim/pseudonim — <handle>">
+Core Team: <ukuran/nama yang bisa diverifikasi, atau "tidak diungkap">
+Country: <nilai>
+Launch Date - Testnet: <tanggal atau "n/a">
+Launch Date - Mainnet: <tanggal atau "n/a">
+Launch Date - TGE: <tanggal atau "pre-TGE">
+Main Products: <daftar dipisah titik-koma>
+Official Website: <url>
+Repository: <url>
+Documentation: <url>
+Social - X/Twitter: <handle>
+Social - Discord: <invite/handle>
+Social - Telegram: <handle>
+Block Explorer: <url>
+Token Contract: <alamat, chain — atau "belum di-deploy">
+Chain(s): <nilai>
+Ecosystem: <nilai>
+
+Open Threads
+- <hal yang masih belum pasti>
+```
+
+### Phase 2 — Entity Intelligence
+```
+# PHASE 2 — ENTITY INTELLIGENCE
+
+PROJECT:
+<NAMA PROJECT>
+
+========================================================
+
+PERAN
+
+Anda adalah seorang OpenAI Deep Research yang bertugas membangun Entity Intelligence Dataset.
+
+Fokus phase ini BUKAN menganalisis hubungan.
+
+Fokus phase ini adalah mengidentifikasi seluruh ENTITAS yang memiliki keberadaan nyata dalam sejarah proyek.
+
+Output phase ini akan menjadi daftar NODE untuk Graph Intelligence.
+
+========================================================
+
+CONTEXT DEPENDENCIES
+
+WAJIB membaca hasil fase berikut sebagai konteks sebelum memulai.
+
+1. 01-foundation
+
+Gunakan untuk memahami Official Name, Symbol, Category, Founding Entity, Main Products, Chain(s), dan
+Ecosystem.
+
+========================================================
+
+PERTANYAAN UTAMA
+
+"Siapa saja entitas yang terlibat dalam proyek ini?"
+
+BUKAN
+
+"Bagaimana mereka saling berhubungan?"
+
+========================================================
+
+DEFINISI ENTITY
+
+Entity adalah setiap individu, organisasi, institusi, protokol, aplikasi, chain, foundation, DAO, perusahaan, investor, regulator, maupun sistem yang memiliki identitas yang dapat dibedakan.
+
+Contoh:
+
+Founder
+
+Core Team
+
+Foundation
+
+Company
+
+Protocol
+
+Blockchain
+
+Bridge
+
+Oracle
+
+Exchange
+
+Wallet
+
+VC
+
+Investor
+
+Market Maker
+
+Auditor
+
+Government
+
+DAO
+
+Developer Group
+
+Research Lab
+
+Enterprise
+
+Media
+
+Community Organization
+
+Application
+
+Infrastructure Provider
+
+========================================================
+
+YANG TIDAK BOLEH DILAKUKAN
+
+Jangan menjelaskan:
+
+- hubungan antar entity
+- partnership
+- collaboration
+- dependency
+- pengaruh
+- token
+- teknologi
+- timeline
+- market
+- governance
+- analisis
+
+Phase ini HANYA membuat katalog entity.
+
+========================================================
+
+UNTUK SETIAP ENTITY
+
+## Nama
+
+Nama resmi.
+
+--------------------------------------------------------
+
+## Alias
+
+Nama lain apabila ada.
+
+Jika tidak ada tulis:
+
+Tidak ada.
+
+--------------------------------------------------------
+
+## Jenis
+
+Pilih SATU kategori.
+
+Founder
+
+Person
+
+Company
+
+Foundation
+
+Protocol
+
+Blockchain
+
+Application
+
+Exchange
+
+Wallet
+
+Investor
+
+VC
+
+DAO
+
+Government
+
+Research Lab
+
+Infrastructure Provider
+
+Security
+
+Auditor
+
+Media
+
+Community
+
+Enterprise
+
+Service Provider
+
+Lainnya
+
+--------------------------------------------------------
+
+## Internal / External
+
+Internal
+
+atau
+
+External
+
+--------------------------------------------------------
+
+## Status
+
+Active
+
+Inactive
+
+Merged
+
+Acquired
+
+Defunct
+
+Historical
+
+Unknown
+
+--------------------------------------------------------
+
+## Fungsi Utama
+
+Tuliskan fungsi utama entity terhadap proyek.
+
+Contoh:
+
+Funding
+
+Development
+
+Security
+
+Liquidity
+
+Infrastructure
+
+Research
+
+Governance
+
+Community
+
+Distribution
+
+Compliance
+
+Application
+
+========================================================
+
+## Deskripsi Singkat
+
+Maksimum 2 kalimat.
+
+Jangan membuat biografi.
+
+Jangan membuat sejarah.
+
+Hanya menjelaskan siapa entity tersebut.
+
+========================================================
+
+## Periode Keterlibatan
+
+Contoh
+
+2021–Sekarang
+
+2022–2023
+
+Tidak diketahui
+
+========================================================
+
+## Bukti
+
+Cantumkan sumber.
+
+Jika terdapat konflik sumber,
+catat seluruh versi.
+
+========================================================
+
+SETELAH SEMUA ENTITY
+
+Kelompokkan berdasarkan:
+
+PERSON
+
+FOUNDATION
+
+COMPANY
+
+PROTOCOL
+
+CHAIN
+
+INVESTOR
+
+INFRASTRUCTURE
+
+APPLICATION
+
+SECURITY
+
+DAO
+
+GOVERNMENT
+
+MEDIA
+
+COMMUNITY
+
+OTHER
+
+========================================================
+
+BUAT RINGKASAN
+
+Total Entity
+
+Internal
+
+External
+
+Unknown
+
+========================================================
+
+ATURAN
+
+- JANGAN menggunakan tabel dalam bentuk apa pun; seluruh output harus berupa heading, sub-heading, dan bullet agar mudah diparsing dari file DOCX.
+- Setiap entity WAJIB memiliki bagian "Sources" yang berisi minimal satu sumber yang dapat diverifikasi.
+- Jangan menggunakan hyperlink tersembunyi, ikon (🔗), atau anchor text; setiap sumber WAJIB ditulis sebagai URL lengkap (https://...) agar tetap terbawa saat disalin ke DOCX dan dapat diverifikasi.
+- Jangan menjelaskan hubungan antar entity.
+- Jangan membuat graph.
+- Jangan menjelaskan alasan hubungan.
+- Jangan membuat analisis.
+- Jangan membahas teknologi.
+- Jangan membahas timeline.
+- Jangan membahas token.
+- Jangan membahas market.
+- Jangan membahas governance.
+- Jangan membuat kesimpulan.
+- Fokus hanya pada identifikasi entity.
+- Satu entity hanya muncul SATU kali.
+- Jika suatu entity memiliki banyak fungsi, tetap buat SATU entri dengan fungsi utama dan sebutkan fungsi tambahan secara singkat bila diperlukan.
+```
+
+### Phase 3 — Historical Intelligence
+```
+# PHASE 3 — HISTORICAL INTELLIGENCE
+
+PROJECT:
+<NAMA PROJECT>
+
+========================================================
+
+PERAN
+
+Anda adalah seorang AI Deep Research yang bertugas membangun Historical Intelligence Dataset.
+
+Menggunakan output Foundation dan Entity Intelligence (Phase 1-2) di atas sebagai konteks
+
+Fase ini bertujuan membangun timeline faktual lengkap mengenai seluruh perjalanan proyek.
+
+Output fase ini akan menjadi Event Dataset yang digunakan oleh seluruh fase berikutnya.
+
+========================================================
+
+PERTANYAAN UTAMA
+
+"Apa saja peristiwa penting yang terjadi sepanjang sejarah proyek ini?"
+
+========================================================
+
+RUANG LINGKUP
+
+Cari seluruh peristiwa penting sejak proyek pertama kali muncul hingga saat ini.
+
+Termasuk tetapi tidak terbatas pada:
+
+• Founding
+
+• Company Formation
+
+• Whitepaper
+
+• Testnet
+
+• Mainnet
+
+• Funding
+
+• Acquisition
+
+• Partnership Announcement
+
+• Major Integration
+
+• Protocol Upgrade
+
+• Token Launch
+
+• Governance Vote
+
+• Security Incident
+
+• Exploit
+
+• Audit
+
+• Fork
+
+• Validator Update
+
+• Major Product Release
+
+• Ecosystem Expansion
+
+• Exchange Listing
+
+• Regulatory Action
+
+• Lawsuit
+
+• Leadership Change
+
+• Foundation Formation
+
+• Treasury Event
+
+• Community Event
+
+• Rebranding
+
+• Shutdown
+
+• Migration
+
+• Major Failure
+
+• Recovery
+
+• Any historically significant event
+
+========================================================
+
+UNTUK SETIAP EVENT
+
+## Event ID
+
+Gunakan format:
+
+EV-001
+
+EV-002
+
+EV-003
+
+========================================================
+
+## Date
+
+Gunakan tanggal paling akurat.
+
+YYYY-MM-DD
+
+Jika hanya bulan diketahui:
+
+YYYY-MM
+
+Jika hanya tahun:
+
+YYYY
+
+========================================================
+
+## Event Name
+
+Nama singkat.
+
+========================================================
+
+## Event Type
+
+Pilih SATU.
+
+Founding
+
+Funding
+
+Launch
+
+Technology
+
+Governance
+
+Security
+
+Legal
+
+Regulation
+
+Partnership
+
+Integration
+
+Token
+
+Market
+
+Organization
+
+Infrastructure
+
+Community
+
+Product
+
+Ecosystem
+
+Other
+
+========================================================
+
+## Description
+
+Jelaskan fakta yang terjadi.
+
+Maksimum 3 kalimat.
+
+Jangan memberikan opini.
+
+========================================================
+
+## Participants
+
+Daftar entity yang terlibat.
+
+Gunakan nama yang sama dengan Phase 2.
+
+========================================================
+
+## Location
+
+Jika relevan.
+
+========================================================
+
+## Status
+
+Completed
+
+Ongoing
+
+Cancelled
+
+Unknown
+
+========================================================
+
+## Immediate Result
+
+Apa hasil langsung dari event tersebut.
+
+Fakta saja.
+
+========================================================
+
+## Sources
+
+Minimal satu URL lengkap.
+
+Jangan menggunakan hyperlink tersembunyi.
+
+Gunakan URL lengkap.
+
+========================================================
+
+SETELAH SELURUH EVENT
+
+Kelompokkan berdasarkan tahun.
+
+========================================================
+
+BUAT RINGKASAN
+
+Total Events
+
+Founding
+
+Funding
+
+Technology
+
+Security
+
+Governance
+
+Legal
+
+Market
+
+Other
+
+========================================================
+
+Open Threads
+
+Tuliskan seluruh event yang masih memiliki konflik tanggal,
+konflik sumber,
+atau informasi yang belum dapat diverifikasi.
+
+========================================================
+
+ATURAN
+
+- Fokus hanya pada kronologi faktual.
+- Jangan menjelaskan motivasi.
+- Jangan menjelaskan penyebab psikologis.
+- Jangan menjelaskan trade-off.
+- Jangan menjelaskan tekanan eksternal.
+- Jangan menjelaskan strategi.
+- Jangan menjelaskan analisis.
+- Jangan membuat kesimpulan.
+- Setiap event hanya muncul satu kali.
+- Gunakan nama entity yang konsisten dengan Phase 2.
+- Jangan menggunakan tabel dalam bentuk apa pun; seluruh output harus berupa heading, sub-heading, dan bullet agar mudah diparsing dari file DOCX.
+- Setiap event WAJIB memiliki bagian "Sources" yang berisi minimal satu sumber yang dapat diverifikasi.
+- Jangan menggunakan hyperlink tersembunyi, ikon (🔗), atau anchor text; setiap sumber WAJIB ditulis sebagai URL lengkap (https://...) agar tetap terbawa saat disalin ke DOCX dan dapat diverifikasi.
+```
+
+### Phase 4 — Technology Intelligence
+```
+# PHASE 4 — TECHNOLOGY INTELLIGENCE
+
+PROJECT:
+<NAMA PROJECT>
+
+========================================================
+
+PERAN
+
+Anda adalah AI Deep Research yang bertugas membangun Technology Intelligence Dataset.
+
+Menggunakan output fase-fase sebelumnya sebagai konteks
+
+Fokus phase ini adalah mendokumentasikan seluruh karakteristik teknis proyek.
+
+Output phase ini akan menjadi Technical Dataset yang dapat dibandingkan lintas proyek.
+
+========================================================
+
+PERTANYAAN UTAMA
+
+"Bagaimana proyek ini dibangun dan bagaimana sistemnya bekerja secara teknis?"
+
+========================================================
+
+CAKUPAN
+
+Laporkan seluruh aspek teknis yang dapat diverifikasi.
+
+Jangan melakukan penilaian.
+
+Jangan membandingkan.
+
+Jangan memberikan opini.
+
+========================================================
+
+## System Architecture
+
+Jelaskan arsitektur tingkat tinggi.
+
+Contoh:
+
+Layer 1
+
+Layer 2
+
+Rollup
+
+Modular
+
+Cross-chain Messaging
+
+Oracle Network
+
+Bridge
+
+Appchain
+
+Service Network
+
+========================================================
+
+## Core Components
+
+Daftar seluruh komponen utama.
+
+Contoh
+
+Endpoint
+
+DVN
+
+Executor
+
+Relayer
+
+Sequencer
+
+Validator
+
+Indexer
+
+Bridge
+
+Messaging Layer
+
+Settlement Layer
+
+Execution Layer
+
+Storage
+
+Coordinator
+
+dll.
+
+Untuk setiap komponen:
+
+Nama
+
+Fungsi
+
+Status
+
+========================================================
+
+## Consensus Mechanism
+
+Jika ada.
+
+Jika tidak relevan tulis
+
+N/A
+
+========================================================
+
+## Execution Environment
+
+Contoh
+
+EVM
+
+Move VM
+
+SVM
+
+WASM
+
+CosmWasm
+
+Native
+
+========================================================
+
+## Programming Languages
+
+Daftar bahasa pemrograman utama.
+
+========================================================
+
+## Development Framework
+
+SDK
+
+Library
+
+Framework
+
+Toolchain
+
+========================================================
+
+## Security Model
+
+Jelaskan bagaimana sistem diamankan.
+
+Contoh
+
+Validator
+
+DVN
+
+Multi Sig
+
+Threshold Signature
+
+Proof
+
+Light Client
+
+zk
+
+TEE
+
+========================================================
+
+## Audit History
+
+Untuk setiap audit
+
+Auditor
+
+Tanggal
+
+Scope
+
+Status
+
+Source
+
+========================================================
+
+## Technical Upgrade History
+
+Untuk setiap upgrade
+
+Tanggal
+
+Nama Upgrade
+
+Deskripsi Singkat
+
+Status
+
+========================================================
+
+## Current Technical Stack
+
+Daftar teknologi yang digunakan.
+
+Misalnya
+
+Docker
+
+Kubernetes
+
+Rust
+
+Solidity
+
+Cosmos SDK
+
+EigenLayer
+
+Chainlink
+
+IPFS
+
+Arweave
+
+EigenDA
+
+dll.
+
+========================================================
+
+## Known Technical Limitations
+
+Laporkan keterbatasan teknis yang dikonfirmasi oleh dokumentasi resmi,
+audit,
+atau developer.
+
+Jangan membuat asumsi.
+
+========================================================
+
+## Official Technical Resources
+
+Documentation
+
+GitHub
+
+Developer Docs
+
+SDK
+
+API
+
+Whitepaper
+
+Research Paper
+
+Masing-masing berupa URL lengkap.
+
+========================================================
+
+BUAT RINGKASAN
+
+Architecture
+
+Core Components
+
+Audit Count
+
+Major Upgrade Count
+
+========================================================
+
+Open Threads
+
+Tuliskan teknologi yang masih:
+
+- belum didokumentasikan
+- masih experimental
+- masih roadmap resmi tetapi belum live
+- memiliki informasi yang saling bertentangan
+
+========================================================
+
+ATURAN
+
+- Fokus hanya pada aspek teknis yang dapat diverifikasi.
+- Jangan membahas tokenomics.
+- Jangan membahas pendanaan.
+- Jangan membahas market.
+- Jangan membahas partnership.
+- Jangan membahas governance.
+- Jangan membahas roadmap bisnis.
+- Jangan memberikan penilaian seperti "lebih baik", "lebih inovatif", atau "lebih unggul".
+- Jangan menggunakan tabel dalam bentuk apa pun; seluruh output harus berupa heading, sub-heading, dan bullet agar mudah diparsing dari file DOCX.
+- Setiap bagian WAJIB memiliki "Sources" dengan minimal satu URL lengkap yang dapat diverifikasi.
+- Jangan menggunakan hyperlink tersembunyi, ikon (🔗), atau anchor text; setiap sumber WAJIB ditulis sebagai URL lengkap (https://...) agar tetap terbawa saat disalin ke DOCX dan dapat diverifikasi.
+```
+
+### Phase 5 — Financial Intelligence
+```
+# PHASE 5 — FINANCIAL INTELLIGENCE
+
+PROJECT:
+<NAMA PROJECT>
+
+========================================================
+
+PERAN
+
+Anda adalah AI Deep Research yang bertugas membangun Financial Intelligence Dataset.
+
+Menggunakan output fase-fase sebelumnya sebagai konteks
+01-foundation + 02-entity + 03-history + 04-technology
+
+Fokus phase ini adalah mendokumentasikan seluruh informasi finansial proyek yang dapat diverifikasi.
+
+Output phase ini akan menjadi Financial Dataset yang dapat dibandingkan lintas proyek.
+
+========================================================
+
+PERTANYAAN UTAMA
+
+"Bagaimana proyek ini memperoleh, mengelola, dan menggunakan sumber daya keuangannya?"
+
+========================================================
+
+CAKUPAN
+
+Laporkan seluruh informasi finansial yang tersedia dari sumber resmi maupun sumber kredibel.
+
+Jangan membuat estimasi jika tidak didukung data.
+
+Jangan memberikan opini.
+
+========================================================
+
+## Funding History
+
+Untuk SETIAP ronde pendanaan
+
+Funding Round
+
+Date
+
+Amount
+
+Currency
+
+Lead Investor
+
+Participating Investors
+
+Valuation
+
+Funding Type
+
+(Seed / Strategic / Private / Series A / Series B / Public Sale / Grant / Treasury Injection / Others)
+
+Status
+
+Completed
+
+Announced
+
+Cancelled
+
+Sources
+
+(URL lengkap)
+
+--------------------------------------------------------
+
+## Treasury
+
+Current Treasury Size
+
+Treasury Composition
+
+Stablecoin Holdings
+
+Native Token Holdings
+
+Other Assets
+
+Treasury Custodian
+
+Jika tidak diketahui, tulis:
+
+Tidak diungkap.
+
+Sources
+
+--------------------------------------------------------
+
+## Revenue Model
+
+Jelaskan seluruh sumber pendapatan yang telah dikonfirmasi.
+
+Contoh
+
+Protocol Fees
+
+Subscription
+
+Bridge Fees
+
+Licensing
+
+Validator Rewards
+
+Staking Fees
+
+MEV
+
+Enterprise Service
+
+Treasury Yield
+
+Grant
+
+Lainnya
+
+Untuk setiap revenue stream
+
+Nama
+
+Status
+
+Live
+
+Planned
+
+Discontinued
+
+Sources
+
+--------------------------------------------------------
+
+## Revenue History
+
+Jika tersedia
+
+Tanggal
+
+Revenue
+
+Period
+
+Sources
+
+Jika tidak tersedia
+
+Tuliskan
+
+Tidak diungkap.
+
+--------------------------------------------------------
+
+## Fundraising Mechanism
+
+Jelaskan bagaimana proyek memperoleh modal.
+
+Contoh
+
+VC Funding
+
+Private Sale
+
+Public Sale
+
+Grant
+
+Foundation
+
+DAO Treasury
+
+Protocol Revenue
+
+Bootstrapping
+
+--------------------------------------------------------
+
+## Token Sale
+
+Jika ada
+
+Private Sale
+
+Public Sale
+
+Launchpad
+
+Auction
+
+Community Sale
+
+Tanggal
+
+Status
+
+Sources
+
+Catatan:
+
+Jangan membahas distribusi token maupun vesting.
+Itu adalah Phase 6.
+
+--------------------------------------------------------
+
+## Financial Dependencies
+
+Daftar pihak yang menjadi sumber pendanaan utama.
+
+Contoh
+
+VC
+
+Foundation
+
+Grant Program
+
+Revenue
+
+DAO
+
+Sources
+
+--------------------------------------------------------
+
+## Financial Risk
+
+Laporkan HANYA risiko finansial yang dikonfirmasi oleh:
+
+- laporan resmi
+- governance
+- audit
+- disclosure
+- regulator
+
+Contoh
+
+Treasury Concentration
+
+Revenue Decline
+
+Funding Dependency
+
+Debt
+
+Legal Financial Risk
+
+Jangan membuat opini.
+
+--------------------------------------------------------
+
+## Official Financial Resources
+
+Official Blog
+
+Transparency Report
+
+Treasury Dashboard
+
+Governance
+
+Messari
+
+Token Terminal
+
+DefiLlama
+
+CryptoRank
+
+Whitepaper
+
+Semua berupa URL lengkap.
+
+========================================================
+
+BUAT RINGKASAN
+
+Total Funding Raised
+
+Funding Rounds
+
+Treasury Status
+
+Revenue Sources
+
+Revenue Availability
+
+========================================================
+
+Open Threads
+
+Tuliskan seluruh informasi finansial yang:
+
+- belum dipublikasikan
+- memiliki konflik angka
+- tidak dapat diverifikasi
+- masih berubah
+
+========================================================
+
+ATURAN
+
+- Fokus hanya pada data finansial yang dapat diverifikasi.
+- Jangan menghitung Burn Rate sendiri.
+- Jangan menghitung Runway sendiri.
+- Jangan memperkirakan valuasi jika tidak diumumkan.
+- Jangan membahas tokenomics, distribusi token, vesting, maupun utilitas token.
+- Jangan memberikan opini mengenai kesehatan finansial proyek.
+- Jangan menggunakan tabel dalam bentuk apa pun; seluruh output harus berupa heading, sub-heading, dan bullet agar mudah diparsing dari file DOCX.
+- Setiap bagian WAJIB memiliki "Sources" dengan minimal satu URL lengkap yang dapat diverifikasi.
+- Jangan menggunakan hyperlink tersembunyi, ikon (🔗), atau anchor text; setiap sumber WAJIB ditulis sebagai URL lengkap (https://...) agar tetap terbawa saat disalin ke DOCX dan dapat diverifikasi.
+```
+
+### Phase 6 — Token Intelligence
+```
+# PHASE 6 — TOKEN INTELLIGENCE
+
+PROJECT:
+<NAMA PROJECT>
+
+========================================================
+
+PERAN
+
+Anda adalah OpenAI Deep Research yang bertugas membangun Token Intelligence Dataset.
+
+Fase ini hanya berfokus pada desain, distribusi, utilitas, ekonomi, dan tata kelola token.
+
+Output fase ini akan menjadi Token Dataset yang dapat dibandingkan secara konsisten antar proyek.
+
+========================================================
+
+CONTEXT DEPENDENCIES
+
+Sebelum memulai riset, baca dan gunakan seluruh dokumen berikut sebagai konteks.
+
+WAJIB
+
+1. 01-foundation
+
+Gunakan untuk memahami:
+
+- Official Name
+- Symbol
+- Category
+- Founding Entity
+- Main Products
+- Chain(s)
+- Ecosystem
+- Launch Date
+- Status Project
+
+--------------------------------------------------------
+
+2. 02-entity
+
+Gunakan untuk memahami:
+
+- Foundation
+- Investor
+- VC
+- DAO
+- Exchange
+- Market Maker
+- Treasury Manager
+- Governance Entity
+- Token Issuer
+
+Pastikan seluruh nama entity tetap konsisten.
+
+--------------------------------------------------------
+
+3. 03-history
+
+Gunakan untuk memahami:
+
+- Historical Event
+- Funding Event
+- Governance Event
+- TGE Event
+- Upgrade
+- Treasury Event
+- Token Related Event
+
+Gunakan Event ID apabila merujuk ke event tertentu.
+
+--------------------------------------------------------
+
+4. 04-technology
+
+Gunakan untuk memahami:
+
+- Technical Architecture
+- Consensus
+- Validator
+- Staking
+- Protocol Fee
+- Security Model
+- Burn Mechanism
+- Technical Dependencies
+
+Bagian ini digunakan untuk memahami utilitas token secara teknis.
+
+--------------------------------------------------------
+
+5. 05-financial
+
+Gunakan untuk memahami:
+
+- Funding History
+- Private Sale
+- Public Sale
+- Treasury
+- Revenue Model
+- Financial Dependencies
+- Token Sale History
+
+Bagian ini menjadi referensi utama apabila terdapat hubungan antara token dan pendanaan.
+
+========================================================
+
+PRIORITAS REFERENSI
+
+Jika terjadi konflik antar dokumen gunakan prioritas berikut.
+
+Priority 1
+
+Dokumentasi resmi project
+
+Priority 2
+
+Whitepaper
+
+Priority 3
+
+Governance
+
+Priority 4
+
+Foundation / Blog Resmi
+
+Priority 5
+
+GitHub
+
+Priority 6
+
+Dashboard resmi
+
+Priority 7
+
+Sumber pihak ketiga terpercaya
+
+Jika konflik tidak dapat diselesaikan,
+
+JANGAN memilih salah satu.
+
+Laporkan seluruh versi pada bagian Open Threads.
+
+========================================================
+
+PERTANYAAN UTAMA
+
+"Bagaimana desain token proyek ini dibangun dan bagaimana token tersebut berfungsi di dalam ekosistem?"
+
+========================================================
+
+RUANG LINGKUP
+
+Laporkan seluruh informasi token yang dapat diverifikasi.
+
+Jangan membuat asumsi.
+
+Jangan melakukan analisis.
+
+Jangan membandingkan dengan proyek lain.
+
+========================================================
+
+## Token Information
+
+Official Token Name
+
+Symbol
+
+Token Standard
+
+Blockchain
+
+Contract Address
+
+Decimals
+
+Status
+
+(Live / Planned / Pre-TGE)
+
+Sources
+
+--------------------------------------------------------
+
+## Supply
+
+Maximum Supply
+
+Total Supply
+
+Circulating Supply
+
+Initial Supply
+
+Supply Type
+
+(Fixed / Inflationary / Dynamic)
+
+Sources
+
+--------------------------------------------------------
+
+## Distribution
+
+Community
+
+Team
+
+Investors
+
+Foundation
+
+Treasury
+
+Ecosystem
+
+Advisors
+
+Other
+
+Jika Pre-TGE,
+
+tandai sebagai
+
+Planned.
+
+Sources
+
+--------------------------------------------------------
+
+## Vesting Schedule
+
+Untuk setiap kategori
+
+Category
+
+Cliff
+
+Vesting
+
+Unlock Frequency
+
+Current Status
+
+Sources
+
+--------------------------------------------------------
+
+## TGE
+
+TGE Date
+
+Initial Unlock
+
+Unlocked Categories
+
+Launch Platform
+
+Status
+
+Sources
+
+--------------------------------------------------------
+
+## Utility
+
+Untuk setiap utilitas token
+
+Utility
+
+Deskripsi
+
+Status
+
+(Live / Planned)
+
+Sources
+
+Contoh
+
+Governance
+
+Gas
+
+Staking
+
+Validator
+
+Security
+
+Fee Payment
+
+Incentive
+
+Reward
+
+Collateral
+
+Liquidity
+
+========================================================
+
+## Governance
+
+Governance Model
+
+Voting System
+
+Voting Power
+
+Delegation
+
+Proposal System
+
+Treasury Governance
+
+Status
+
+Sources
+
+========================================================
+
+## Inflation / Deflation
+
+Inflation Mechanism
+
+Emission Schedule
+
+Burn Mechanism
+
+Buyback
+
+Supply Reduction
+
+Status
+
+Sources
+
+========================================================
+
+## Holder Distribution
+
+Top Holder Concentration
+
+Foundation Holding
+
+Investor Holding
+
+Treasury Holding
+
+Community Holding
+
+Whale Concentration
+
+Sources
+
+========================================================
+
+## Major Token Events
+
+Untuk setiap event
+
+Date
+
+Event
+
+Description
+
+Status
+
+Related Historical Event ID
+
+Sources
+
+========================================================
+
+## Official Token Resources
+
+Official Documentation
+
+Whitepaper
+
+Governance
+
+Explorer
+
+Contract
+
+GitHub
+
+Dashboard
+
+Semua harus berupa URL lengkap.
+
+========================================================
+
+BUAT RINGKASAN
+
+Status
+
+Supply Type
+
+Total Supply
+
+Distribution Categories
+
+Utility Count
+
+Governance
+
+Major Token Events
+
+========================================================
+
+Open Threads
+
+Tuliskan seluruh informasi token yang:
+
+- belum dipublikasikan
+- memiliki konflik angka
+- memiliki konflik sumber
+- belum dapat diverifikasi
+- masih berupa proposal
+- masih menunggu governance
+
+========================================================
+
+ATURAN
+
+- Fokus hanya pada informasi token yang dapat diverifikasi.
+- Jangan membahas pendanaan perusahaan kecuali berkaitan langsung dengan token.
+- Jangan membahas market, harga, volume, atau sentimen.
+- Jangan membahas analisis investasi.
+- Jangan memberikan opini mengenai tokenomics.
+- Jangan menggunakan tabel dalam bentuk apa pun; seluruh output harus berupa heading, sub-heading, dan bullet agar mudah diparsing dari file DOCX.
+- Setiap bagian WAJIB memiliki "Sources" yang berisi minimal satu URL lengkap yang dapat diverifikasi.
+- Jangan menggunakan hyperlink tersembunyi, ikon (🔗), atau anchor text; setiap sumber WAJIB ditulis sebagai URL lengkap (https://...) agar tetap terbawa saat disalin ke DOCX dan dapat diverifikasi.
+- Gunakan nama Entity yang sama persis dengan Phase 2.
+- Gunakan Event ID yang sama persis dengan Phase 3 apabila merujuk pada suatu peristiwa.
+- Jika terdapat perbedaan informasi antara dokumen konteks dan hasil riset terbaru, JANGAN memilih salah satu secara sepihak. Laporkan seluruh versi beserta sumbernya pada bagian Open Threads untuk diverifikasi pada Phase 11 (Conflict Resolution).
+```
+
+### Phase 7 — Ecosystem & Dependency Intelligence
+```
+# PHASE 7 — ECOSYSTEM & DEPENDENCY INTELLIGENCE
+
+PROJECT:
+<NAMA PROJECT>
+
+========================================================
+
+PERAN
+
+Anda adalah OpenAI Deep Research yang bertugas membangun Ecosystem & Dependency Intelligence Dataset.
+
+Fase ini bertujuan memetakan bagaimana proyek berinteraksi, bergantung, dan terhubung dengan ekosistem blockchain yang lebih luas.
+
+Output fase ini akan menjadi Ecosystem & Dependency Dataset.
+
+========================================================
+
+CONTEXT DEPENDENCIES
+
+Sebelum memulai riset, baca dan gunakan seluruh dokumen berikut sebagai konteks.
+
+========================================================
+
+WAJIB
+
+1. 01-foundation
+
+Gunakan untuk memahami:
+
+- Official Name
+- Category
+- Main Products
+- Chain(s)
+- Ecosystem
+- Status Project
+
+--------------------------------------------------------
+
+2. 02-entity
+
+Gunakan seluruh isi dokumen.
+
+Fokus:
+
+- Semua Entity
+- Company
+- Foundation
+- Protocol
+- Chain
+- Exchange
+- Wallet
+- Oracle
+- Infrastructure Provider
+- Developer
+- DAO
+- Government
+- Community
+
+Gunakan nama Entity yang sama persis.
+
+--------------------------------------------------------
+
+3. 03-history
+
+Gunakan untuk memahami:
+
+- Partnership Event
+- Integration Event
+- Ecosystem Expansion
+- Exchange Listing
+- Governance Event
+- Major Product Release
+
+Gunakan Event ID apabila merujuk pada suatu event.
+
+--------------------------------------------------------
+
+4. 04-technology
+
+Gunakan untuk memahami:
+
+- Architecture
+- Core Components
+- Technical Dependencies
+- External Technical Dependencies
+- Security Model
+
+Gunakan bagian ini untuk memahami dependency teknis.
+
+--------------------------------------------------------
+
+5. 05-financial
+
+Gunakan untuk memahami:
+
+- Funding History
+- Financial Dependencies
+- Treasury
+- Revenue Source
+
+Bagian ini membantu mengidentifikasi dependency finansial terhadap pihak luar.
+
+--------------------------------------------------------
+
+6. 06-token
+
+Gunakan untuk memahami:
+
+- Utility
+- Governance
+- Validator
+- Staking
+- Token Distribution
+- Holder Distribution
+
+Bagian ini membantu memahami hubungan token terhadap ekosistem.
+
+========================================================
+
+PRIORITAS REFERENSI
+
+Priority 1
+
+Official Documentation
+
+Priority 2
+
+Official Blog
+
+Priority 3
+
+Whitepaper
+
+Priority 4
+
+GitHub
+
+Priority 5
+
+Governance
+
+Priority 6
+
+Official Dashboard
+
+Priority 7
+
+Partner Documentation
+
+Priority 8
+
+Sumber pihak ketiga terpercaya
+
+Jika terjadi konflik informasi,
+
+JANGAN memilih salah satu.
+
+Laporkan seluruh versi pada Open Threads.
+
+========================================================
+
+PERTANYAAN UTAMA
+
+"Bagaimana proyek ini berinteraksi dan bergantung pada ekosistem eksternal?"
+
+========================================================
+
+RUANG LINGKUP
+
+Laporkan hubungan yang dapat diverifikasi.
+
+Jangan membuat asumsi.
+
+Jangan memberikan opini.
+
+Jangan membahas sentimen pasar.
+
+========================================================
+
+## Ecosystem Position
+
+Kategori Ekosistem
+
+Primary Sector
+
+Secondary Sector
+
+Primary Chain
+
+Supported Chains
+
+Sources
+
+--------------------------------------------------------
+
+## External Dependencies
+
+Untuk setiap dependency
+
+Dependency Name
+
+Dependency Type
+
+(Protocol / Chain / Oracle / Bridge / Cloud / Infrastructure / SDK / Data Provider / Security / Service)
+
+Purpose
+
+Criticality
+
+(Critical / High / Medium / Low)
+
+Status
+
+(Live / Planned)
+
+Related Entity
+
+Related Technology Component
+
+Sources
+
+--------------------------------------------------------
+
+## Major Integrations
+
+Untuk setiap integration
+
+Integration Name
+
+Integrated With
+
+Purpose
+
+Status
+
+(Live / Beta / Planned / Deprecated)
+
+Related Historical Event ID
+
+Sources
+
+--------------------------------------------------------
+
+## Infrastructure Providers
+
+Untuk setiap provider
+
+Provider
+
+Service
+
+Criticality
+
+Status
+
+Sources
+
+--------------------------------------------------------
+
+## Exchange Ecosystem
+
+Exchange
+
+Listing Status
+
+Spot
+
+Perpetual
+
+OTC
+
+Launchpool
+
+Status
+
+Sources
+
+--------------------------------------------------------
+
+## Wallet Ecosystem
+
+Wallet
+
+Support Type
+
+Status
+
+Sources
+
+--------------------------------------------------------
+
+## Developer Ecosystem
+
+SDK
+
+API
+
+Developer Tools
+
+Open Source Repository
+
+Developer Portal
+
+Hackathon
+
+Grant Program
+
+Sources
+
+--------------------------------------------------------
+
+## Applications
+
+Untuk setiap aplikasi
+
+Application
+
+Category
+
+Relationship
+
+Status
+
+Sources
+
+--------------------------------------------------------
+
+## Governance Ecosystem
+
+Foundation
+
+DAO
+
+Council
+
+Committee
+
+Validator Group
+
+Sources
+
+--------------------------------------------------------
+
+## Ecosystem Risks
+
+Laporkan hanya risiko yang telah dikonfirmasi.
+
+Contoh
+
+Single Infrastructure Dependency
+
+Cloud Dependency
+
+Bridge Dependency
+
+Oracle Dependency
+
+Chain Dependency
+
+Centralization Risk
+
+Sources
+
+========================================================
+
+## Official Ecosystem Resources
+
+Official Documentation
+
+Developer Portal
+
+GitHub
+
+Partner Documentation
+
+Grant Program
+
+Ecosystem Dashboard
+
+Semua berupa URL lengkap.
+
+========================================================
+
+BUAT RINGKASAN
+
+Primary Ecosystem
+
+Supported Chains
+
+External Dependencies
+
+Major Integrations
+
+Infrastructure Providers
+
+Developer Programs
+
+Applications
+
+========================================================
+
+Open Threads
+
+Tuliskan seluruh dependency atau integration yang:
+
+- belum dikonfirmasi
+- masih diumumkan
+- masih beta
+- memiliki konflik sumber
+- belum dapat diverifikasi
+
+========================================================
+
+ATURAN
+
+- Fokus hanya pada hubungan ekosistem yang dapat diverifikasi.
+- Jangan menjelaskan motivasi partnership.
+- Jangan membahas sentimen pasar.
+- Jangan membahas harga token.
+- Jangan membahas analisis kompetitor.
+- Jangan memberikan opini mengenai kualitas integrasi.
+- Jangan menggunakan tabel dalam bentuk apa pun; seluruh output harus berupa heading, sub-heading, dan bullet agar mudah diparsing dari file DOCX.
+- Setiap bagian WAJIB memiliki "Sources" yang berisi minimal satu URL lengkap yang dapat diverifikasi.
+- Jangan menggunakan hyperlink tersembunyi, ikon (🔗), atau anchor text; setiap sumber WAJIB ditulis sebagai URL lengkap (https://...) agar tetap terbawa saat disalin ke DOCX dan dapat diverifikasi.
+- Gunakan nama Entity yang sama persis dengan Phase 2.
+- Gunakan Event ID yang sama persis dengan Phase 3 apabila merujuk pada suatu peristiwa.
+- Jika terdapat perbedaan informasi antara dokumen konteks dan hasil riset terbaru, JANGAN memilih salah satu secara sepihak. Laporkan seluruh versi beserta sumbernya pada bagian Open Threads untuk diverifikasi pada Phase 11 (Conflict Resolution).
+```
+
+### Phase 8 — Market Intelligence
+```
+# PHASE 8 — MARKET INTELLIGENCE
+
+PROJECT:
+<NAMA PROJECT>
+
+========================================================
+
+PERAN
+
+Anda adalah OpenAI Deep Research yang bertugas membangun Market Intelligence Dataset.
+
+Fase ini bertujuan mendokumentasikan posisi proyek di pasar berdasarkan data yang dapat diverifikasi.
+
+Output fase ini akan menjadi Market Dataset.
+
+========================================================
+
+CONTEXT DEPENDENCIES
+
+Sebelum memulai riset, baca dan gunakan seluruh dokumen berikut sebagai konteks.
+
+========================================================
+
+WAJIB BACA ULANG
+
+1. 01-foundation
+
+Gunakan untuk memahami:
+
+- Official Name
+- Symbol
+- Category
+- Main Products
+- Chain(s)
+- Ecosystem
+- Launch Date
+- Status Project
+
+--------------------------------------------------------
+
+2. 02-entity
+
+Gunakan seluruh isi dokumen.
+
+Fokus:
+
+- Competitor
+- Exchange
+- Market Maker
+- Foundation
+- Investor
+- Community
+- Protocol
+- Chain
+
+Gunakan nama Entity yang sama persis.
+
+--------------------------------------------------------
+
+3. 03-history
+
+Gunakan untuk memahami:
+
+- Launch Event
+- TGE Event
+- Exchange Listing
+- Partnership
+- Major Upgrade
+- Major Product Release
+- Market Related Event
+
+Gunakan Event ID apabila merujuk pada event.
+
+--------------------------------------------------------
+
+4. 04-technology
+
+Gunakan untuk memahami:
+
+- Architecture
+- Core Components
+- Technical Advantage
+- Supported Chains
+
+Gunakan hanya untuk memahami posisi teknologi di pasar.
+
+--------------------------------------------------------
+
+5. 05-financial
+
+Gunakan untuk memahami:
+
+- Funding History
+- Treasury
+- Revenue
+- Revenue Model
+
+Bagian ini digunakan sebagai konteks market maturity.
+
+--------------------------------------------------------
+
+6. 06-token
+
+Gunakan untuk memahami:
+
+- Token Status
+- TGE
+- Utility
+- Supply
+- Governance
+
+Bagian ini digunakan untuk memahami status token di pasar.
+
+--------------------------------------------------------
+
+7. 07-ecosystem
+
+Gunakan seluruh isi dokumen.
+
+Fokus:
+
+- Major Integrations
+- Ecosystem Position
+- External Dependencies
+- Applications
+- Developer Ecosystem
+- Supported Chains
+
+========================================================
+
+PRIORITAS REFERENSI
+
+Priority 1
+
+Official Dashboard
+
+Priority 2
+
+DefiLlama
+
+Priority 3
+
+Token Terminal
+
+Priority 4
+
+CoinGecko
+
+Priority 5
+
+CoinMarketCap
+
+Priority 6
+
+Messari
+
+Priority 7
+
+Official Blog
+
+Priority 8
+
+Official Documentation
+
+Priority 9
+
+Sumber pihak ketiga terpercaya
+
+Jika terjadi konflik data,
+
+laporkan seluruh versi.
+
+========================================================
+
+PERTANYAAN UTAMA
+
+"Bagaimana posisi proyek ini di pasar berdasarkan data yang dapat diverifikasi?"
+
+========================================================
+
+RUANG LINGKUP
+
+Laporkan data market.
+
+Jangan memberikan opini.
+
+Jangan memberikan rekomendasi investasi.
+
+========================================================
+
+## Market Category
+
+Primary Category
+
+Secondary Category
+
+Sector
+
+Sub-sector
+
+Sources
+
+--------------------------------------------------------
+
+## Market Position
+
+Project Stage
+
+(Pre-TGE / Early / Growth / Mature)
+
+Primary Competitors
+
+Market Segment
+
+Geographic Focus (jika ada)
+
+Sources
+
+--------------------------------------------------------
+
+## Trading Markets
+
+Untuk setiap market
+
+Exchange
+
+Spot
+
+Perpetual
+
+Futures
+
+Options
+
+OTC
+
+Status
+
+Sources
+
+--------------------------------------------------------
+
+## Liquidity
+
+Liquidity Source
+
+Major Liquidity Venue
+
+DEX
+
+CEX
+
+Bridge Liquidity
+
+Status
+
+Sources
+
+--------------------------------------------------------
+
+## Adoption Metrics
+
+Untuk setiap metrik
+
+Metric Name
+
+Value
+
+Date
+
+Sources
+
+Contoh
+
+TVL
+
+Daily Active Users
+
+Transactions
+
+Wallets
+
+Developer Count
+
+Volume
+
+Bridge Volume
+
+Messages
+
+Validator Count
+
+========================================================
+
+## Market Share
+
+Jika tersedia
+
+Metric
+
+Value
+
+Date
+
+Sources
+
+Jika tidak tersedia
+
+Tuliskan
+
+Tidak tersedia.
+
+========================================================
+
+## Competitor Landscape
+
+Untuk setiap kompetitor
+
+Competitor
+
+Category
+
+Difference
+
+Market Segment
+
+Sources
+
+========================================================
+
+## Narrative Position
+
+Laporkan narasi pasar yang dapat diverifikasi.
+
+Contoh
+
+AI
+
+Modular
+
+Restaking
+
+Interoperability
+
+Gaming
+
+RWA
+
+DePIN
+
+L2
+
+Intent
+
+Chain Abstraction
+
+Untuk setiap narrative
+
+Narrative
+
+Status
+
+(Main Narrative / Secondary Narrative)
+
+Evidence
+
+Sources
+
+========================================================
+
+## Market Timeline
+
+Untuk setiap market milestone
+
+Date
+
+Milestone
+
+Description
+
+Related Historical Event ID
+
+Sources
+
+========================================================
+
+## Official Market Resources
+
+Official Dashboard
+
+DefiLlama
+
+CoinGecko
+
+CoinMarketCap
+
+Token Terminal
+
+Messari
+
+Explorer
+
+Semua berupa URL lengkap.
+
+========================================================
+
+BUAT RINGKASAN
+
+Market Stage
+
+Primary Category
+
+Competitor Count
+
+Major Narrative
+
+Trading Availability
+
+Adoption Metrics Available
+
+========================================================
+
+Open Threads
+
+Tuliskan seluruh data market yang:
+
+- belum tersedia
+- memiliki konflik angka
+- memiliki konflik sumber
+- masih berubah
+- belum dapat diverifikasi
+
+========================================================
+
+ATURAN
+
+- Fokus hanya pada data pasar yang dapat diverifikasi.
+- Jangan memberikan opini investasi.
+- Jangan membahas sentimen komunitas.
+- Jangan menjelaskan motivasi pasar.
+- Jangan membuat prediksi harga.
+- Jangan membuat prediksi adopsi.
+- Jangan memberikan penilaian terhadap kompetitor.
+- Jangan menggunakan tabel dalam bentuk apa pun; seluruh output harus berupa heading, sub-heading, dan bullet agar mudah diparsing dari file DOCX.
+- Setiap bagian WAJIB memiliki "Sources" yang berisi minimal satu URL lengkap yang dapat diverifikasi.
+- Jangan menggunakan hyperlink tersembunyi, ikon (🔗), atau anchor text; setiap sumber WAJIB ditulis sebagai URL lengkap (https://...) agar tetap terbawa saat disalin ke DOCX dan dapat diverifikasi.
+- Gunakan nama Entity yang sama persis dengan Phase 2.
+- Gunakan Event ID yang sama persis dengan Phase 3 apabila merujuk pada suatu peristiwa.
+- Jika terdapat perbedaan informasi antara dokumen konteks dan hasil riset terbaru, JANGAN memilih salah satu secara sepihak. Laporkan seluruh versi beserta sumbernya pada bagian Open Threads untuk diverifikasi pada Phase 11 (Conflict Resolution).
+```
+
+### Phase 9 — Behavioral Intelligence
+```
+# PHASE 9 — BEHAVIORAL INTELLIGENCE
+
+PROJECT:
+<NAMA PROJECT>
+
+========================================================
+
+PERAN
+
+Anda adalah OpenAI Deep Research yang bertugas membangun Behavioral Intelligence.
+
+Fase ini bertujuan menganalisis pola pengambilan keputusan, strategi, prioritas, dan evolusi proyek berdasarkan seluruh dataset yang telah dikumpulkan.
+
+Output fase ini adalah Behavioral Intelligence Report.
+
+========================================================
+
+CONTEXT DEPENDENCIES
+
+WAJIB membaca seluruh dataset berikut sebelum melakukan analisis.
+
+========================================================
+
+1. 01-foundation
+
+Gunakan untuk memahami
+
+- visi
+- misi
+- kategori
+- positioning
+- tujuan proyek
+
+--------------------------------------------------------
+
+2. 02-entity
+
+Gunakan seluruh isi dokumen.
+
+Fokus
+
+- seluruh entity
+- founder
+- foundation
+- investor
+- DAO
+- governance
+- exchange
+- partner
+
+Analisis bagaimana masing-masing entity memengaruhi keputusan proyek.
+
+--------------------------------------------------------
+
+3. 03-history
+
+Gunakan seluruh isi dokumen.
+
+Fokus
+
+- seluruh historical event
+- timeline
+- participant
+- event result
+
+Gunakan Event ID apabila merujuk suatu peristiwa.
+
+========================================================
+
+4. 04-technology
+
+Gunakan untuk memahami
+
+- architecture evolution
+- technical dependency
+- consensus
+- security model
+- technical limitation
+
+Analisis bagaimana faktor teknis memengaruhi keputusan proyek.
+
+--------------------------------------------------------
+
+5. 05-financial
+
+Gunakan untuk memahami
+
+- funding
+- treasury
+- revenue
+- financial dependency
+
+Analisis bagaimana kondisi finansial memengaruhi strategi.
+
+--------------------------------------------------------
+
+6. 06-token
+
+Gunakan untuk memahami
+
+- governance
+- utility
+- distribution
+- staking
+- inflation
+- vesting
+
+Analisis bagaimana tokenomics memengaruhi perilaku proyek.
+
+--------------------------------------------------------
+
+7. 07-ecosystem
+
+Gunakan untuk memahami
+
+- integrations
+- ecosystem dependency
+- infrastructure
+- developer ecosystem
+
+Analisis bagaimana hubungan eksternal memengaruhi keputusan.
+
+--------------------------------------------------------
+
+8. 08-market
+
+Gunakan untuk memahami
+
+- market position
+- competitors
+- adoption metrics
+- narratives
+
+Analisis bagaimana kondisi pasar memengaruhi strategi proyek.
+
+========================================================
+
+PERTANYAAN UTAMA
+
+"Mengapa proyek ini mengambil keputusan-keputusan tersebut?"
+
+========================================================
+
+RUANG LINGKUP
+
+Gunakan seluruh dataset sebelumnya.
+
+Jangan menambah fakta baru.
+
+Gunakan fakta yang sudah ada untuk menjelaskan hubungan sebab-akibat.
+
+========================================================
+
+## Strategic Objectives
+
+Apa tujuan strategis utama proyek.
+
+Dukung dengan bukti.
+
+========================================================
+
+## Decision Timeline
+
+Untuk setiap keputusan penting
+
+Decision
+
+Date
+
+Trigger
+
+Evidence
+
+Decision
+
+Immediate Result
+
+Long-term Impact
+
+Related Historical Event ID
+
+Supporting Dataset
+
+========================================================
+
+## Evolution Pattern
+
+Bagaimana proyek berevolusi dari waktu ke waktu.
+
+Misalnya
+
+- perubahan strategi
+- perubahan teknologi
+- perubahan tokenomics
+- perubahan governance
+
+========================================================
+
+## Technical Decision Pattern
+
+Identifikasi pola keputusan teknis.
+
+Contoh
+
+- memilih modular architecture
+
+Mengapa?
+
+Gunakan bukti.
+
+========================================================
+
+## Financial Decision Pattern
+
+Identifikasi pola keputusan finansial.
+
+Contoh
+
+- fundraising
+- treasury
+- grant
+
+Mengapa dilakukan.
+
+Gunakan bukti.
+
+========================================================
+
+## Ecosystem Decision Pattern
+
+Identifikasi pola
+
+- partnership
+
+- integration
+
+- expansion
+
+Mengapa dilakukan.
+
+========================================================
+
+## Governance Decision Pattern
+
+Identifikasi pola
+
+- voting
+
+- proposal
+
+- DAO
+
+- foundation
+
+========================================================
+
+## Risk Response Pattern
+
+Identifikasi bagaimana proyek merespons
+
+- exploit
+
+- market crash
+
+- regulation
+
+- security incident
+
+- governance conflict
+
+========================================================
+
+## Recurring Behavioral Pattern
+
+Identifikasi pola yang berulang.
+
+Misalnya
+
+- selalu memilih partner tertentu
+
+- selalu ekspansi setelah funding
+
+- selalu upgrade setelah exploit
+
+Gunakan bukti.
+
+========================================================
+
+## Strategic Trade-offs
+
+Identifikasi trade-off yang dibuat proyek.
+
+Misalnya
+
+- decentralization vs scalability
+
+- security vs usability
+
+- growth vs sustainability
+
+Trade-off harus didukung bukti.
+
+========================================================
+
+## Behavioral Summary
+
+Ringkas
+
+- Prioritas utama proyek
+- Cara mengambil keputusan
+- Faktor yang paling sering memengaruhi keputusan
+- Pola evolusi
+- Kekuatan utama
+- Kelemahan utama
+
+========================================================
+
+Open Threads
+
+Laporkan seluruh kesimpulan yang:
+
+- memiliki lebih dari satu interpretasi
+- tidak memiliki bukti yang cukup
+- memerlukan verifikasi tambahan
+
+========================================================
+
+ATURAN
+
+- Jangan mengumpulkan fakta baru apabila sudah tersedia pada dataset sebelumnya.
+- Semua analisis harus mengacu pada dataset Phase 1–8.
+- Setiap kesimpulan WAJIB menyebutkan Supporting Dataset (misalnya: Phase 3 Event H-014, Phase 5 Funding History, Phase 7 Major Integrations).
+- Jangan membuat asumsi tanpa bukti.
+- Jika terdapat lebih dari satu kemungkinan penyebab, jelaskan seluruh alternatif beserta tingkat keyakinannya.
+- Jangan menggunakan tabel dalam bentuk apa pun; seluruh output harus berupa heading, sub-heading, dan bullet agar mudah diparsing dari file DOCX.
+- Setiap bagian WAJIB memiliki bagian **Evidence** dan **Sources**.
+- Semua Sources harus ditulis sebagai URL lengkap (https://...).
+- Gunakan nama Entity yang sama persis dengan Phase 2.
+- Gunakan Event ID yang sama persis dengan Phase 3.
+- Jika analisis bertentangan dengan fakta pada dataset sebelumnya, jangan memilih salah satu. Laporkan konflik tersebut pada Open Threads untuk diselesaikan pada Phase 11 (Conflict Resolution).
+```
+
+Note: this phase's "Decision Timeline" schema (Trigger / Evidence / Decision / Immediate Result /
+Long-term Impact) is intentionally different from Track A/B's "Decision Event" schema
+(Motivation/Constraint/Pressure/Trade-off/Alternative(s) Considered/Expectation vs. Actual/8-POV
+Stakeholder Reactions) — see "Known gaps vs. current tooling" below.
+
+### Phase 10 — Knowledge Extraction
+```
+# PHASE 10 — KNOWLEDGE EXTRACTION
+
+PROJECT:
+<NAMA PROJECT>
+
+========================================================
+
+PERAN
+
+Anda adalah OpenAI Deep Research yang bertugas membangun Knowledge Extraction Report.
+
+Fase ini bertujuan mengekstrak pengetahuan, pola, prinsip, dan insight dari seluruh hasil penelitian sebelumnya.
+
+Output fase ini adalah Knowledge Base yang dapat digunakan kembali pada analisis proyek lain.
+
+========================================================
+
+CONTEXT DEPENDENCIES
+
+WAJIB membaca seluruh dataset berikut.
+
+========================================================
+
+1. 01-foundation.docx
+
+Gunakan untuk memahami
+
+- Vision
+- Mission
+- Category
+- Positioning
+- Core Objective
+
+--------------------------------------------------------
+
+2. 02-entity.docx
+
+Gunakan seluruh isi.
+
+Fokus
+
+- seluruh entity
+- role entity
+- dependency
+- governance entity
+
+========================================================
+
+3. 03-history.docx
+
+Gunakan seluruh isi.
+
+Fokus
+
+- seluruh event
+- timeline
+- milestone
+- historical evolution
+
+========================================================
+
+4. 04-technology.docx
+
+Gunakan
+
+- architecture
+- technical evolution
+- technical limitation
+- security
+
+========================================================
+
+5. 05-financial.docx
+
+Gunakan
+
+- funding
+- treasury
+- revenue
+- financial dependency
+
+========================================================
+
+6. 06-token.docx
+
+Gunakan
+
+- governance
+- utility
+- tokenomics
+- vesting
+- staking
+
+========================================================
+
+7. 07-ecosystem.docx
+
+Gunakan
+
+- integrations
+- dependency
+- ecosystem evolution
+
+========================================================
+
+8. 08-market.docx
+
+Gunakan
+
+- adoption
+- market position
+- competitor
+- narrative
+
+========================================================
+
+9. 09-behavioral.docx
+
+Gunakan seluruh isi.
+
+Fokus
+
+- Decision Pattern
+- Strategic Objective
+- Trade-off
+- Behavioral Pattern
+- Risk Response
+- Evolution Pattern
+
+========================================================
+
+PERTANYAAN UTAMA
+
+"Pelajaran, prinsip, dan pola apa yang dapat digeneralisasi dari proyek ini?"
+
+========================================================
+
+RUANG LINGKUP
+
+Gunakan seluruh dataset sebelumnya.
+
+Jangan melakukan riset baru.
+
+Jangan menambahkan fakta baru.
+
+Semua knowledge harus berasal dari evidence yang telah tersedia.
+
+========================================================
+
+## Core Insights
+
+Identifikasi insight utama.
+
+Untuk setiap insight
+
+Insight
+
+Explanation
+
+Evidence
+
+Supporting Dataset
+
+Confidence
+
+========================================================
+
+## Strategic Principles
+
+Identifikasi prinsip strategis yang konsisten.
+
+Misalnya
+
+- modular first
+
+- ecosystem first
+
+- security before growth
+
+- community driven
+
+========================================================
+
+## Success Factors
+
+Identifikasi faktor yang paling berkontribusi terhadap keberhasilan proyek.
+
+Harus didukung evidence.
+
+========================================================
+
+## Failure Factors
+
+Identifikasi faktor yang menyebabkan
+
+- keterlambatan
+
+- kegagalan
+
+- konflik
+
+- exploit
+
+Harus didukung evidence.
+
+========================================================
+
+## Decision Framework
+
+Rekonstruksi bagaimana proyek membuat keputusan.
+
+Contoh
+
+Observe
+
+↓
+
+Evaluate
+
+↓
+
+Fund
+
+↓
+
+Develop
+
+↓
+
+Launch
+
+↓
+
+Govern
+
+Gunakan evidence.
+
+========================================================
+
+## Reusable Playbook
+
+Tuliskan praktik yang dapat diterapkan pada proyek lain.
+
+Misalnya
+
+- cara membangun ecosystem
+
+- cara melakukan fundraising
+
+- cara melakukan governance
+
+Harus didukung evidence.
+
+========================================================
+
+## Anti-patterns
+
+Identifikasi pola yang sebaiknya dihindari.
+
+Misalnya
+
+- over-centralization
+
+- premature scaling
+
+- poor treasury management
+
+Harus didukung evidence.
+
+========================================================
+
+## Lessons Learned
+
+Ringkas pelajaran utama.
+
+========================================================
+
+## Knowledge Summary
+
+Ringkas
+
+- Strategic Principles
+- Success Factors
+- Failure Factors
+- Decision Framework
+- Reusable Playbook
+- Anti-patterns
+
+========================================================
+
+Open Threads
+
+Tuliskan seluruh insight yang
+
+- memiliki evidence lemah
+- memiliki interpretasi ganda
+- belum dapat digeneralisasi
+
+========================================================
+
+ATURAN
+
+- Jangan melakukan riset baru.
+- Jangan membuat fakta baru.
+- Semua insight harus berasal dari dataset Phase 1–9.
+- Setiap insight WAJIB memiliki:
+  - Evidence
+  - Supporting Dataset
+  - Confidence (High / Medium / Low)
+- Evidence harus mengacu pada dataset internal (contoh: Phase 3 Event H-014, Phase 5 Funding History, Phase 9 Decision Pattern).
+- Sources harus berupa URL lengkap yang berasal dari dataset sebelumnya; jangan menambahkan sumber baru.
+- Bedakan dengan jelas antara fakta, interpretasi, dan generalisasi.
+- Jangan menggunakan tabel dalam bentuk apa pun; seluruh output harus berupa heading, sub-heading, dan bullet agar mudah diparsing dari file DOCX.
+- Gunakan nama Entity yang sama persis dengan Phase 2.
+- Gunakan Event ID yang sama persis dengan Phase 3.
+- Jika sebuah insight didukung oleh evidence yang saling bertentangan, jangan memilih salah satu. Catat konflik tersebut pada Open Threads untuk diselesaikan pada Phase 11.
+```
+
+### Phase 11 — Validation & Quality Assurance
+```
+# PHASE 11 — VALIDATION & QUALITY ASSURANCE
+
+---
+
+PERAN
+
+Anda adalah AI Deep Research yang bertugas melakukan audit kualitas dan validasi akhir terhadap seluruh hasil CIF (Crypto Intelligence Framework).
+
+Fase ini bertujuan memverifikasi konsistensi, menyelesaikan konflik informasi, mengidentifikasi celah data, menentukan tingkat kepercayaan, membangun knowledge dependency graph, dan menghasilkan CIF Score yang objektif.
+
+Output fase ini adalah CIF Validation Report v3.0.
+
+---
+
+CONTEXT DEPENDENCIES
+
+WAJIB membaca seluruh dataset berikut sebelum melakukan audit.
+
+1. 01-foundation.docx
+
+- Official Name, Symbol, Category
+- Main Products, Chain(s), Ecosystem
+- Launch Dates, Status
+
+2. 02-entity.docx
+
+- Seluruh Entity (Person, Company, Foundation, Protocol, Chain, Investor, Infrastructure, Application, Security, DAO, Government, Media, Other)
+- Pastikan nama Entity konsisten
+
+3. 03-history.docx
+
+- Seluruh Event (EV-001 s.d EV-XXX)
+- Timeline, Participant, Result
+- Pastikan Event ID konsisten
+
+4. 04-technology.docx
+
+- Architecture, Core Components
+- Technical Dependencies, Security Model
+- Upgrade Timeline
+
+5. 05-financial.docx
+
+- Funding History, Treasury
+- Revenue Model, Financial Dependencies
+- Token Sale History
+
+6. 06-token.docx
+
+- Supply, Distribution, Vesting
+- Utility, Governance
+- Inflation/Deflation, Holder Distribution
+
+7. 07-ecosystem.docx
+
+- Ecosystem Position, External Dependencies
+- Major Integrations, Infrastructure Providers
+- Applications, Developer Ecosystem
+
+8. 08-market.docx
+
+- Market Category, Market Position
+- Adoption Metrics, Market Share
+- Competitor Landscape, Narrative Position
+
+9. 09-behavioral.docx
+
+- Seluruh Strategic Objectives, Decision Timeline
+- Decision Patterns, Risk Response Patterns
+- Strategic Trade-offs, Behavioral Summary
+
+10. 10-knowledge.docx
+
+- Seluruh Knowledge Objects (K-001 s.d K-XXX)
+- Core Insights, Strategic Principles
+- Success/Failure Factors, Reusable Playbook, Anti-patterns
+
+---
+
+PERTANYAAN UTAMA
+
+"Apakah seluruh hasil CIF dapat dipertanggungjawabkan, seberapa tinggi kualitasnya, dan bagaimana knowledge ini akan berevolusi ketika data berubah?"
+
+---
+
+RUANG LINGKUP
+
+Audit seluruh dataset Phase 1–10.
+
+Jangan melakukan riset baru.
+
+Jangan menambah fakta baru.
+
+Semua analisis harus berasal dari evidence yang sudah tersedia.
+
+---
+
+OUTPUT STRUCTURE
+
+Gunakan struktur berikut. Jangan menggunakan tabel dalam bentuk apa pun. Seluruh output harus berupa heading, sub-heading, dan bullet agar mudah diparsing ke format DOCX.
+
+---
+
+CIF MANIFEST v3.0
+
+Buat ringkasan eksekutif satu halaman.
+
+Format:
+
+```
+CIF MANIFEST v3.0
+
+Project: <Nama>
+Symbol: <Symbol>
+Research Date: <YYYY-MM-DD>
+CIF Version: 3.0
+QA Date: <YYYY-MM-DD>
+
+METRICS
+Total Knowledge Objects: <angka>
+Total Entities: <angka>
+Total Events: <angka>
+Evidence Links: <angka>
+Sources: <angka>
+Conflicts: <angka>
+  ├── Resolved: <angka>
+  ├── Critical: <angka>
+  ├── High: <angka>
+  ├── Medium: <angka>
+  └── Low: <angka>
+
+QUALITY SCORES
+Research Quality: <score>/100
+Consistency: <score>/100
+Evidence: <score>/100
+Coverage: <score>/100
+Conflict: <score>/100
+Knowledge: <score>/100
+CIF SCORE: <score>/100
+
+CONFIDENCE LEVEL: <HIGH / MEDIUM / LOW>
+QA STATUS: <PASSED / FAILED / REVIEW NEEDED>
+
+RECOMMENDED RE-RUN:
+  - Phase <X> — <Reason>
+  - Phase <Y> — <Reason>
+```
+
+---
+
+DATASET INTEGRITY & COVERAGE
+
+Periksa setiap phase.
+
+Untuk setiap phase, laporkan:
+
+· Status: Complete / Incomplete
+· Missing Information: <daftar atau "Tidak ada">
+· Notes: <catatan tambahan>
+
+Coverage Report — Multi-dimensional
+
+Untuk setiap phase, hitung coverage:
+
+· Phase 2 — Entity
+  · Total: <angka>
+  · Referenced in Phase 9-10: <angka>
+  · Unused: <angka>
+  · Coverage: <persentase>%
+  · Interpretation: <analisis singkat>
+· Phase 3 — Event
+  · Total: <angka>
+  · Referenced in Phase 9-10: <angka>
+  · Unused: <angka>
+  · Coverage: <persentase>%
+  · Interpretation: <analisis singkat>
+· Phase 4 — Technology
+  · Total: <angka komponen>
+  · Referenced: <angka>
+  · Unused: <angka>
+  · Coverage: <persentase>%
+· Phase 5 — Financial
+  · Total: <angka fakta>
+  · Referenced: <angka>
+  · Unused: <angka>
+  · Coverage: <persentase>%
+· Phase 6 — Token
+  · Total: <angka item>
+  · Referenced: <angka>
+  · Unused: <angka>
+  · Coverage: <persentase>%
+· Phase 7 — Ecosystem
+  · Total: <angka item>
+  · Referenced: <angka>
+  · Unused: <angka>
+  · Coverage: <persentase>%
+· Phase 8 — Market
+  · Total: <angka item>
+  · Referenced: <angka>
+  · Unused: <angka>
+  · Coverage: <persentase>%
+· Overall Coverage
+  · Total: <sum semua>
+  · Referenced: <sum referenced>
+  · Unused: <sum unused>
+  · Coverage: <persentase>%
+  · Interpretation: <apa arti angka ini>
+
+---
+
+CROSS-PHASE CONSISTENCY
+
+Periksa konsistensi antar phase.
+
+Entity Consistency
+
+· Status: Konsisten / Tidak Konsisten
+· Detail: <entity yang sama muncul dengan nama yang sama>
+
+Timeline Consistency
+
+· Status: Konsisten / Tidak Konsisten
+· Detail: <timeline di Phase 1, 3, 8, 9 saling mendukung>
+
+Technology Consistency
+
+· Status: Konsisten / Tidak Konsisten
+· Detail: <upgrade sequence konsisten>
+
+Funding Consistency
+
+· Status: Konsisten / Tidak Konsisten
+· Detail: <funding history di Phase 5 sesuai dengan Phase 3>
+
+Token Consistency
+
+· Status: Konsisten / Tidak Konsisten
+· Detail: <token info di Phase 6 sesuai dengan Phase 1 dan 3>
+
+Governance Consistency
+
+· Status: Konsisten / Tidak Konsisten
+· Detail: <governance structure konsisten>
+
+Dependency Consistency
+
+· Status: Konsisten / Tidak Konsisten
+· Detail: <external dependencies konsisten>
+
+Overall Cross-phase Consistency: <persentase>%
+
+---
+
+DATA LINEAGE
+
+Untuk setiap Knowledge Object (K-001 s.d K-XXX), buat lineage traceability.
+
+Format:
+
+Knowledge K-<XX> — <Nama Knowledge>
+
+Lineage:
+
+```
+Level 0 (Raw Data — Events / Metrics / Integrations)
+  ├── Phase <X> — <Item ID> (<Deskripsi singkat>)
+  │   └── Source: <URL>
+  ├── Phase <X> — <Item ID> (<Deskripsi singkat>)
+  │   └── Source: <URL>
+  └── Phase <X> — <Item ID> (<Deskripsi singkat>)
+      └── Source: <URL>
+
+Level 1 (Processed — Pattern Identification)
+  └── Phase 9 — <Pattern Name>
+      └── Evidence: <evidence summary>
+
+Level 2 (Knowledge)
+  └── Knowledge K-<XX> — <Nama Knowledge>
+
+Validation:
+  ├── Passed: Cross-phase consistency check
+  ├── Passed: Evidence audit (<Strong / Moderate / Weak>)
+  └── Confidence: <score>/100
+```
+
+---
+
+KNOWLEDGE DEPENDENCY GRAPH
+
+Untuk setiap Knowledge Object, buat dependency graph.
+
+Format:
+
+Knowledge K-<XX> — <Nama Knowledge>
+
+Dependency Graph:
+
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-<XX>                                                  │
+│ <Nama Knowledge>                                        │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── <Item ID> — <Deskripsi>                             │
+│ │   └── Source: Phase <X>                               │
+│ ├── <Item ID> — <Deskripsi>                             │
+│ │   └── Source: Phase <X>                               │
+│ └── <Item ID> — <Deskripsi>                             │
+│     └── Source: Phase <X>                               │
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── <Entity Name> (Entity)                              │
+│ ├── <Entity Name> (Entity)                              │
+│ └── <Phase> — <Dataset>                                 │
+│                                                         │
+│ DEPENDENTS (Knowledge yang bergantung pada K-<XX>)      │
+│ ├── K-<YY> — <Nama>                                     │
+│ └── K-<ZZ> — <Nama>                                     │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ If <Item ID> changes → K-<XX> may change               │
+│ If <Item ID> changes → K-<XX> may change               │
+└──────────────────────────────────────────────────────────┘
+```
+
+---
+
+CONFLICT REGISTER WITH SEVERITY & IMPACT
+
+Identifikasi seluruh konflik informasi antar sumber.
+
+Untuk setiap conflict, laporkan:
+
+· Conflict ID: C-<XXX>
+· Category: <kategori>
+· Description: <deskripsi konflik>
+· Severity: Critical / High / Medium / Low
+· Affected Knowledge: <daftar K-XX yang terpengaruh>
+· Impact: <angka> (Severity × (Affected Knowledge Count + 1))
+· Affected Phase: Phase <X>
+· Evidence: <evidence>
+· Sources: <URL1>, <URL2>
+· Resolution: <penjelasan>
+· Status: Resolved / Unresolved
+
+Kriteria Severity:
+
+· Critical: Mempengaruhi keakuratan fundamental; dapat menyesatkan pengambil keputusan (Wrong Contract Address, Wrong Total Supply)
+· High: Mempengaruhi metrik utama; perbedaan signifikan (TGE Date berbeda, TVL berbeda 50%)
+· Medium: Perbedaan numerik tapi dalam rentang yang dapat diterima (Treasury Size $1.21B vs $1.3B)
+· Low: Perbedaan kecil; tidak mempengaruhi kesimpulan (Tanggal launch berbeda 1 hari karena zona waktu)
+
+Conflict Summary:
+
+· Total Conflicts: <angka>
+· Resolved: <angka>
+· Unresolved: <angka>
+· Critical: <angka>
+· High: <angka>
+· Medium: <angka>
+· Low: <angka>
+
+Conflict Score:
+
+```
+Conflict Score = 
+  (Resolved × 1.0) +
+  (Unresolved Low × 0.9) +
+  (Unresolved Medium × 0.6) +
+  (Unresolved High × 0.3) +
+  (Unresolved Critical × 0.0)
+────────────────────────────────────
+        Total Conflicts
+```
+
+Hasil: <angka>%
+
+---
+
+EVIDENCE AUDIT
+
+Periksa seluruh insight di Phase 9 dan Phase 10.
+
+Untuk setiap Knowledge, laporkan:
+
+· Knowledge: K-<XX> — <Nama>
+· Supporting Dataset: <Phase X, Phase Y>
+· Evidence Quality: Strong / Moderate / Weak
+· Evidence Weight: <0-10>
+· Assessment: <analisis singkat>
+
+Evidence Weight Criteria:
+
+· Governance Vote (On-chain): 10
+· Official Documentation: 10
+· GitHub Commit: 9
+· Explorer Data: 9
+· Official Blog: 8
+· Whitepaper: 8
+· Foundation Transparency Report: 8
+· Messari / Token Terminal: 7
+· Research Paper: 7
+· News (Major): 6
+· Forum Discussion: 6
+· News (Minor): 5
+· Third-party Blog: 4
+· Twitter / Social: 3
+
+---
+
+CONFIDENCE ASSESSMENT — v3.0
+
+Gunakan formula yang menggabungkan Evidence Weight dan Source Diversity.
+
+Source Diversity Score:
+
+· Jika total weight > 20: 10/10 (High)
+· Jika total weight 10-20: 5/10 (Medium)
+· Jika total weight < 10: 2/10 (Low)
+
+Untuk setiap Knowledge, laporkan:
+
+· Knowledge: K-<XX> — <Nama>
+· Evidence Count: <angka>
+· Evidence Weight: <rata-rata>
+· Independent Sources: <angka>
+· Official Sources: <angka>
+· Source Diversity: <0-10>
+· Cross-phase Validation: Pass / Fail
+· No Conflicts: 0 conflicts / <angka conflicts>
+· Coverage: <persentase>%
+· Confidence Score: <0-100>
+· Confidence Level: High / Medium / Low
+
+Confidence Score Formula (v3.0):
+
+```
+Confidence Score = 
+  (Evidence Count × 10) +
+  (Evidence Weight × 5) +
+  (Independent Sources × 10) +
+  (Official Sources × 15) +
+  (Cross-phase Validation × 15) +
+  (No Conflicts × 10) +
+  (Coverage × 10)
+────────────────────────────────────
+        Max Score = 100
+```
+
+Confidence Summary:
+
+· High (80-100): <angka> Knowledge
+· Medium (60-79): <angka> Knowledge
+· Low (<60): <angka> Knowledge
+· Average Confidence Score: <angka>/100
+
+---
+
+KNOWLEDGE STABILITY & VERSIONING
+
+Untuk setiap Knowledge Object, tentukan stabilitas dan buat version history.
+
+Stability Categories:
+
+· Stable: Tidak akan berubah kecuali ada perubahan fundamental
+· Emerging: Masih berkembang, data baru mungkin mengubah insight
+· Volatile: Sangat tergantung pada data terbaru
+· Deprecated: Tidak lagi relevan
+
+Format:
+
+Knowledge K-<XX> — <Nama Knowledge>
+
+Stability: <Stable / Emerging / Volatile / Deprecated>
+Current Version: <vX.Y>
+Created: <YYYY-MM-DD>
+Last Updated: <YYYY-MM-DD>
+Status: Active / Deprecated
+
+Version History:
+
+· v1.0 — <YYYY-MM-DD>
+  · Created with evidence: <daftar evidence>
+  · Confidence: <score>/100
+· v1.1 — <YYYY-MM-DD> (Planned / Executed)
+  · Trigger: <apa yang memicu perubahan>
+  · Expected Change: <apa yang berubah>
+  · Confidence Change: <old> → <new>
+
+Deprecation Status: Active / Deprecated
+Replacement: <K-XX jika deprecated>
+
+---
+
+MISSING KNOWLEDGE CLASSIFICATION
+
+Identifikasi data yang tidak tersedia.
+
+Format:
+
+Missing Item Phase Missing Reason Severity Impact
+<Item> Phase <X> <Reason> <High/Medium/Low> <Impact>
+
+Missing Reason Categories:
+
+· Not Public: Data ada tetapi tidak dipublikasikan oleh proyek
+· Never Existed: Data memang tidak pernah ada
+· Deprecated: Data pernah ada tetapi sudah tidak relevan
+· Not Applicable: Tidak relevan untuk proyek ini
+· Not Yet Released: Akan dirilis di masa depan
+· Unknown: Tidak diketahui penyebabnya
+
+---
+
+CIF SCORE CALCULATION — v3.0
+
+Hitung CIF Score berdasarkan 6 dimensi.
+
+Dimensi dan Bobot:
+
+· Research Quality: 25%
+· Consistency: 20%
+· Evidence: 15%
+· Coverage: 15%
+· Conflict: 15%
+· Knowledge: 10%
+
+Perhitungan:
+
+Research Quality:
+
+· (Complete Phases / 10) × 100 = <score>
+· Kontribusi: <score> × 0.25 = <value>
+
+Consistency:
+
+· (Passed Checks / Total Checks) × 100 = <score>
+· Kontribusi: <score> × 0.20 = <value>
+
+Evidence:
+
+· Average Evidence Weight (0-100) = <score>
+· Kontribusi: <score> × 0.15 = <value>
+
+Coverage:
+
+· Overall Coverage (%) = <score>
+· Kontribusi: <score> × 0.15 = <value>
+
+Conflict:
+
+· Conflict Score (%) = <score>
+· Kontribusi: <score> × 0.15 = <value>
+
+Knowledge:
+
+· Average Confidence Score = <score>
+· Kontribusi: <score> × 0.10 = <value>
+
+CIF Score = SUM of all contributions = <angka>/100
+
+Interpretation:
+
+· Excellent (>90): CIF siap pakai untuk analisis lintas proyek
+· Good (80-90): CIF berkualitas tinggi, beberapa area perlu perbaikan
+· Needs Improvement (60-80): CIF usable, perbaikan disarankan
+· Poor (<60): CIF perlu re-run
+
+---
+
+FINAL VALIDATION SUMMARY
+
+Ringkas seluruh temuan.
+
+Dataset Completeness:
+
+· Complete Phases: <angka> dari 10
+· Missing Information: <angka> item, semua dicatat
+· Status: <persentase>% lengkap
+
+Cross-phase Consistency:
+
+· Overall: <persentase>%
+· Status: Konsisten / Tidak Konsisten
+
+Evidence Quality:
+
+· Strong: <angka> Knowledge
+· Moderate: <angka> Knowledge
+· Weak: <angka> Knowledge
+
+Confidence Assessment:
+
+· High: <angka> Knowledge
+· Medium: <angka> Knowledge
+· Low: <angka> Knowledge
+· Average: <angka>/100
+
+Remaining Conflicts:
+
+· Resolved: <angka>
+· Unresolved: <angka>
+· Critical: <angka>
+· High: <angka>
+· Medium: <angka>
+· Low: <angka>
+
+Knowledge Stability Distribution:
+
+· Stable: <angka>
+· Emerging: <angka>
+· Volatile: <angka>
+· Deprecated: <angka>
+
+CIF Score: <angka>/100
+
+Overall Validation Result:
+<Paragraf singkat tentang kualitas CIF secara keseluruhan>
+
+Recommended Re-run:
+
+· Phase <X> — <Reason>
+· Phase <Y> — <Reason>
+
+QA Status: PASSED / FAILED / REVIEW NEEDED
+
+Confidence Level: HIGH / MEDIUM / LOW
+
+---
+
+Open Threads
+
+Tuliskan seluruh informasi yang:
+
+· memiliki lebih dari satu interpretasi
+· memiliki evidence lemah
+· memerlukan verifikasi tambahan
+· masih berubah
+· memiliki konflik yang belum terselesaikan
+
+Format:
+
+Open Thread ID: OT-<XX>
+
+· Description: <deskripsi>
+· Affected Phase: Phase <X>
+· Evidence: <evidence>
+· Alternative Interpretations: <daftar>
+· Status: Open / In Review
+
+---
+
+ATURAN UMUM
+
+1. Jangan melakukan riset baru.
+2. Jangan membuat interpretasi baru di luar evidence yang ada.
+3. Jangan mengubah fakta dari dataset sebelumnya.
+4. Semua konflik WAJIB menyebutkan:
+   · Evidence
+   · Supporting Dataset
+   · Sources (URL lengkap)
+5. Jika konflik tidak dapat diselesaikan menggunakan evidence yang tersedia, tandai sebagai Unresolved.
+6. Jangan menggunakan tabel dalam bentuk apa pun; seluruh output harus berupa heading, sub-heading, dan bullet.
+7. Semua Sources harus berupa URL lengkap (https://...), bukan hyperlink tersembunyi atau anchor text.
+8. Gunakan nama Entity yang sama persis dengan Phase 2.
+9. Gunakan Event ID yang sama persis dengan Phase 3 (EV-XXX).
+10. Gunakan Knowledge ID yang sama persis dengan Phase 10 (K-XXX).
+11. Confidence Score menggunakan formula v3.0.
+12. Conflict Impact = Severity × (Affected Knowledge Count + 1).
+13. Stabilitas Knowledge menggunakan klasifikasi Stable / Emerging / Volatile / Deprecated.
+14. Missing Knowledge menggunakan klasifikasi Not Public / Never Existed / Deprecated / Not Applicable / Not Yet Released / Unknown.
+15. Jika terdapat konflik antara formula dan interpretasi manual, laporkan keduanya dan tandai sebagai Open Thread.
+```
+
+### Known gaps vs. current tooling (open items)
+
+Documented here rather than silently worked around, so the next person running Track C knows what's not
+wired up yet:
+
+- **Phase 11's filename/header still need to fit `tools/ingest.py`'s contract.** `PHASE_KEYS` only has a
+  `"conflict"` phase key (title "Conflicting Evidence & Resolutions"); Track C's Phase 11 output is a much
+  broader Validation & QA report (Data Lineage, Knowledge Dependency Graph, Confidence formula, CIF Score) —
+  saved as `11-conflict.docx` it passes the filename check, but its header (`CIF VALIDATION REPORT v3.0`)
+  doesn't match either pattern `validate_phase_content()` currently accepts (`PROJECT: <Name>` or
+  `<TITLE> — <Name>`). Not yet resolved in `tools/ingest.py`.
+- **The real Arbitrum run's `CIF SCORE` was internally inconsistent** — the CIF MANIFEST summary reported
+  `88.2/100` (Coverage 63, Conflict 74) while the same document's own "CIF SCORE CALCULATION" section, run
+  later, computed `81.6/100` from different Coverage (38%) and Conflict Score (56%) figures. Worth adding an
+  explicit rule to this prompt: compute the detailed CIF Score Calculation section *first*, then copy its
+  final numbers back into the Manifest — don't state the Manifest's scores before the detailed calculation
+  exists.
+- **Phase 9's "Decision Timeline" (Trigger/Evidence/Decision/Immediate Result/Long-term Impact) doesn't
+  match `tools/extract_decision_events.py`'s expected "Decision Event" schema**
+  (Motivation/Constraint/Pressure/Trade-off/Alternative(s) Considered/Expectation vs. Actual/8-POV
+  Stakeholder Reactions, from Track A/B above). Running the extractor against a Track C dossier currently
+  yields zero decision events, silently — it needs a second parser branch for this shape, or Track C's
+  prompt needs its own 8-POV field added. Neither has been done yet.
+- **ASCII box-drawing diagrams in the Knowledge Dependency Graph section get visually mangled** by
+  `tools/extract.py`'s `normalise()` — it collapses runs of 2+ spaces for ordinary paragraph reflow, which
+  also destroys the diagram's column alignment. No data is lost (every line survives, just misaligned); this
+  only matters if a human is expected to read the rendered box art rather than an LLM parsing the semantic
+  content.
+
 ## Related Files
 
 `docs/Protocol/Deep-Research-Brief.md` (the "Format v3 — Dependency Pipeline" section this operationalizes),
