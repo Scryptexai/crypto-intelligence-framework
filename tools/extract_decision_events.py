@@ -11,6 +11,21 @@ until now nothing extracted it into structured data — it only existed as prose
 in the dossier. This is deterministic text parsing (no LLM), matching the
 project's existing tools/build_json.py convention: read markdown, emit JSON.
 
+Two Phase 9 prompt shapes are recognized (docs/Protocol/Phased-Research-Prompts.md
+Track A/B vs. Track C), because they capture genuinely different things, not just
+a reformatting of the same fields — output events carry both shapes' fields, null
+where the source prompt never asked for that field (never fabricated to fill it):
+
+  Track A/B "Decision Event: <date> — <title>" blocks
+    -> Motivation/Constraint/Pressure/Trade-off/Alternative(s) Considered/
+       Expectation vs. Actual/8-POV Stakeholder Reactions/Grounding
+
+  Track C "Keputusan: <title> (<year>)" blocks (DeepSeek methodology)
+    -> Trigger/Evidence/Decision/Immediate Result/Long-term Impact/Supporting
+       Dataset. Track C's Decision Timeline was never designed to capture
+       per-stakeholder reactions the way Track A/B's was, so `reactions` stays
+       an empty dict for these events rather than guessing at one.
+
 Usage:  python3 tools/extract_decision_events.py examples/CaseStudies/LayerZero.md
 Output: poc/decision_events.json  (merges/replaces entries for the parsed project)
 """
@@ -29,7 +44,21 @@ FIELD_LABELS = [
 ]
 POV_LABELS = ["Founder", "VC", "Retail", "Community", "Developer", "Institution", "Validator", "Builder"]
 
+KEPUTUSAN_LABELS = ["Trigger", "Evidence", "Decision", "Immediate Result", "Long-term Impact",
+                     "Supporting Dataset"]
+
 _label_alt = "|".join(re.escape(l) for l in FIELD_LABELS)
+_keputusan_label_alt = "|".join(re.escape(l) for l in KEPUTUSAN_LABELS)
+
+# Every event dict carries the full union of both shapes' keys, so downstream consumers
+# (tools/sync_supabase.py, AirdropOS) see one stable schema regardless of which track produced
+# a given event -- unpopulated keys are None/{}, never guessed at.
+EMPTY_EVENT_FIELDS = {
+    "motivation": None, "constraint": None, "pressure": None, "tradeoff": None,
+    "alternatives": None, "expectation_vs_actual": None, "reactions": {}, "grounding": None,
+    "trigger": None, "evidence": None, "decision": None, "immediate_result": None,
+    "long_term_impact": None, "supporting_dataset": None,
+}
 
 
 def _project_name(text):
@@ -37,9 +66,12 @@ def _project_name(text):
     return m.group(1).strip() if m else None
 
 
-def _extract_field(block, label, all_labels_alt):
+def _extract_field(block, label, all_labels_alt, bullet=False):
+    """bullet=True additionally tolerates a leading '· ' marker before the label (Track C's
+    Decision Timeline fields are written as bullets, Track A/B's are not)."""
+    prefix = r"·?\s*" if bullet else ""
     pattern = re.compile(
-        rf"(?:^|\n)\s*{re.escape(label)}:\s*(.*?)(?=\n\s*(?:{all_labels_alt}):|\Z)",
+        rf"(?:^|\n)\s*{prefix}{re.escape(label)}:\s*(.*?)(?=\n\s*{prefix}(?:{all_labels_alt}):|\Z)",
         re.S,
     )
     m = pattern.search(block)
@@ -69,6 +101,7 @@ def parse_events(text, project_name):
             "project": project_name,
             "date": date,
             "title": title,
+            **EMPTY_EVENT_FIELDS,
             "motivation": fields.get("Motivation"),
             "constraint": fields.get("Constraint"),
             "pressure": fields.get("Pressure"),
@@ -78,6 +111,41 @@ def parse_events(text, project_name):
             "reactions": reactions,
             "grounding": fields.get("Grounding"),
             "open_threads": fields.get("Open Threads"),
+        })
+    return events
+
+
+def parse_keputusan_events(text, project_name):
+    """Track C shape: 'Keputusan: <title> (<year>)' blocks under Phase 9's Decision Timeline
+    (docs/Protocol/Phased-Research-Prompts.md, DeepSeek methodology), fields written as
+    '· Label: value' bullets instead of Track A/B's bare 'Label: value' lines."""
+    chunks = re.split(r"(?:^|\n)Keputusan:\s*", text)[1:]
+    events = []
+    for chunk in chunks:
+        head, _, rest = chunk.partition("\n")
+        head = head.strip()
+        # Trailing parenthetical is the date/period -- "(2018)", "(2024-2025)", but also seen with a
+        # month name, "(April 2026)" -- accept any parenthetical content rather than digits-only, since
+        # sort_key() below just needs *a* 4-digit year somewhere in the string, not a strict format.
+        m = re.match(r"(.+?)\s*\(([^()]+)\)\s*$", head)
+        title, date = (m.group(1).strip(), m.group(2).strip()) if m else (head, None)
+        fields = {}
+        for label in KEPUTUSAN_LABELS:
+            val = _extract_field(rest, label, _keputusan_label_alt, bullet=True)
+            if val:
+                fields[label] = re.sub(r"\s+", " ", val).strip()
+        events.append({
+            "project": project_name,
+            "date": date,
+            "title": title,
+            **EMPTY_EVENT_FIELDS,
+            "trigger": fields.get("Trigger"),
+            "evidence": fields.get("Evidence"),
+            "decision": fields.get("Decision"),
+            "immediate_result": fields.get("Immediate Result"),
+            "long_term_impact": fields.get("Long-term Impact"),
+            "supporting_dataset": fields.get("Supporting Dataset"),
+            "open_threads": None,
         })
     return events
 
@@ -106,7 +174,9 @@ def extract_from_dossier(path):
         addendum_lines.append(ln)
     addendum = "\n".join(addendum_lines)
 
-    events = parse_events(behavioral_body, project_name) + parse_events(addendum, project_name)
+    events = (parse_events(behavioral_body, project_name) + parse_events(addendum, project_name)
+              + parse_keputusan_events(behavioral_body, project_name)
+              + parse_keputusan_events(addendum, project_name))
 
     def sort_key(e):
         m = re.search(r"(\d{4})", e["date"] or "")

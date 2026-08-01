@@ -141,10 +141,22 @@ python tools/extract_decision_events.py examples/CaseStudies/LayerZero.md   # or
 
 Decision Event is this framework's actual unit of analysis (`CLAUDE.md`), but until 2026-07-27 it
 only existed as prose — nothing parsed it into structured data. Deterministic regex extraction
-(no LLM) of every `Decision Event: <date> — <title>` block in a dossier's Behavioral Intelligence
-phase (plus any addenda logged later under Open Questions, prefixed `- [behavioral]` — see
-LayerZero.md's Open Questions section for why that addendum exists) into
-`{date, title, motivation, constraint, pressure, tradeoff, alternatives, expectation_vs_actual,
-reactions: {8 POV}, grounding, open_threads}`. Wired into `run.sh build`/`all` — runs over every
-file in `examples/CaseStudies/` automatically (dossiers without a Behavioral Intelligence phase
-just parse to 0 events). Output: `poc/decision_events.json`, keyed by project name.
+(no LLM) of a dossier's Behavioral Intelligence phase (plus any addenda logged later under Open
+Questions, prefixed `- [behavioral]` — see LayerZero.md's Open Questions section for why that
+addendum exists), recognizing **two** Phase 9 prompt shapes
+(`docs/Protocol/Phased-Research-Prompts.md` Track A/B vs. Track C — they capture genuinely
+different things, not just a reformatting of the same fields):
+
+- Track A/B: `Decision Event: <date> — <title>` blocks →
+  `{date, title, motivation, constraint, pressure, tradeoff, alternatives, expectation_vs_actual,
+  reactions: {8 POV}, grounding, open_threads}`
+- Track C (DeepSeek methodology): `Keputusan: <title> (<date>)` blocks, bullet-prefixed fields →
+  `{date, title, trigger, evidence, decision, immediate_result, long_term_impact,
+  supporting_dataset}`. No per-stakeholder reactions exist in this prompt shape — `reactions`
+  stays `{}` rather than being guessed at.
+
+Every output event carries the full union of both shapes' keys (unpopulated ones are `null`/`{}`),
+so `poc/decision_events.json` has one stable schema regardless of which track produced a given
+event. Wired into `run.sh build`/`all` — runs over every file in `examples/CaseStudies/`
+automatically (dossiers without a Behavioral Intelligence phase just parse to 0 events). Output:
+`poc/decision_events.json`, keyed by project name.

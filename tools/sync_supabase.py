@@ -142,6 +142,14 @@ def decision_event_rows():
                 "reactions": e.get("reactions") or {},
                 "grounding": e.get("grounding"),
                 "open_threads": e.get("open_threads"),
+                # Track C fields (docs/Protocol/Phased-Research-Prompts.md, DeepSeek methodology) --
+                # null for Track A/B events, which never had these; see extract_decision_events.py.
+                "trigger": e.get("trigger"),
+                "decision_evidence": e.get("evidence"),
+                "decision_text": e.get("decision"),
+                "immediate_result": e.get("immediate_result"),
+                "long_term_impact": e.get("long_term_impact"),
+                "supporting_dataset": e.get("supporting_dataset"),
             })
     return rows
 
