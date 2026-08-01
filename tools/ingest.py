@@ -94,6 +94,24 @@ PHASE_META = {
     "conflict":    {"title": "Conflicting Evidence & Resolutions",
                      "ref": "`docs/Reasoning/Confidence.md` — INKONSISTENSI convention"},
 }
+# Track C (docs/Protocol/Phased-Research-Prompts.md "DeepSeek Methodology") replaces phase 11's simple
+# merge-only "Conflict Resolution" pass with a much broader "CIF Validation Report v3.0" (Manifest,
+# Coverage, Data Lineage, Knowledge Dependency Graph, Confidence Assessment, CIF Score) -- same phase key
+# and filename ("conflict" / NN-conflict.docx, so existing data/tooling doesn't need to change), different
+# content shape. Detect it so the assembled dossier's section title doesn't mislabel it as merely conflict
+# resolution when it's substantially more than that.
+VALIDATION_REPORT_RE = re.compile(r"CIF\s+(?:VALIDATION\s+REPORT|MANIFEST)", re.I)
+CONFLICT_META_VALIDATION = {"title": "Validation & Quality Assurance (CIF Score)",
+                             "ref": "`docs/Reasoning/Confidence.md` — CIF Score, Data Lineage, Knowledge Dependency Graph"}
+
+def phase_meta(key: str, raw: str) -> dict:
+    """PHASE_META[key], except "conflict" resolves to the Track C Validation Report meta when the raw
+    phase content is shaped like one (see VALIDATION_REPORT_RE) instead of always assuming Track A/B's
+    narrower Conflict Resolution shape."""
+    if key == "conflict" and VALIDATION_REPORT_RE.search(raw[:2000]):
+        return CONFLICT_META_VALIDATION
+    return PHASE_META[key]
+
 OPEN_THREADS_RE = re.compile(r"(?im)^#{0,3}[^\n]{0,80}\bopen\s*threads?\b[^\n]*$")
 
 def detect_phase_key(filename: str):
@@ -450,7 +468,7 @@ def _content_hash(text: str) -> str:
     return hashlib.sha256(norm.encode("utf-8")).hexdigest()
 
 def process_data_project(folder: Path, force: bool, allow_partial: bool = False,
-                          allow_unverified: bool = False, dest_dir: Path = None):
+                          allow_unverified: bool = False, dest_dir: Path = None, model: str = "Gemini"):
     """Assemble one project's dossier from data_project/<project>/ -- hardened successor to
     process_phased_project(). Exact filename contract (see detect_phase_key_strict) plus
     content-level verification (validate_phase_content); hard-fails (raises ValueError) on any
@@ -530,7 +548,7 @@ def process_data_project(folder: Path, force: bool, allow_partial: bool = False,
     order = [k for k in PHASE_KEYS if k in phases]
     body_md = []
     for k in order:
-        meta = PHASE_META[k]
+        meta = phase_meta(k, phases[k])
         body_md.append(f"\n## {meta['title']}\n_ref: {meta['ref']}_\n\n{phases[k]}")
     if all_threads:
         body_md.append("\n## Open Questions\n" + "\n".join(f"- {t}" for t in all_threads))
@@ -542,14 +560,14 @@ def process_data_project(folder: Path, force: bool, allow_partial: bool = False,
     head = (
         f"# {name} — Deep Case Study (Phased)\n\n"
         f"**CIF Dataset — Deep Dossier · Tier: Deep (anchor project)**\n"
-        f"**Source:** Deep Research (Gemini), Format v3 Dependency Pipeline "
+        f"**Source:** Deep Research ({model}), Format v3 Dependency Pipeline "
         f"({len(order)}/{len(PHASE_KEYS)} phases: {', '.join(order)}). **Auto-assembled** by `tools/ingest.py` "
         f"(deterministic, no LLM, strict data_project/ contract) — each phase extracted and concatenated in "
         f"dependency order per `docs/Protocol/Deep-Research-Brief.md`; the reasoning is the source reports'.\n"
         f"**Raw sources archived:** {', '.join(archived)}.\n"
         f"**Phases not run:** {', '.join(missing) if missing else 'none'}.{supersede_note}\n\n"
         f"> Faithful concatenation of phase outputs — no fabrication, no distillation beyond what the "
-        f"Conflict Resolution phase itself states. Consider a periodic QC pass.\n\n---\n"
+        f"closing phase (Conflict Resolution / Validation) itself states. Consider a periodic QC pass.\n\n---\n"
     )
     out.write_text(head + "\n".join(body_md).strip() + "\n", encoding="utf-8")
     return [("ok", name, f"{len(order)} phases -> {out.relative_to(ROOT)}")]
@@ -603,6 +621,10 @@ def main():
                      help="data_project only: assemble even if content verification fails "
                           "(near-empty content, wrong PROJECT header, zero citations, fallback overuse)")
     ap.add_argument("--no-build", action="store_true")
+    ap.add_argument("--model", default="Gemini",
+                     help="data_project only: research model to credit in the assembled dossier's "
+                          "'Source:' line (default Gemini, matching Track A/B; pass e.g. DeepSeek for "
+                          "Track C projects) -- ingest.py can't detect this from content, must be told")
     args = ap.parse_args()
 
     jobs, phased_projects, data_projects = [], [], []
@@ -640,7 +662,8 @@ def main():
             counts[status] += 1
     for folder in data_projects:
         try:
-            results = process_data_project(folder, args.force, args.allow_partial, args.allow_unverified)
+            results = process_data_project(folder, args.force, args.allow_partial, args.allow_unverified,
+                                            model=args.model)
         except ValueError as e:
             print(f"❌ [data_project] {folder.name:18s} {e}")
             counts["error"] += 1
