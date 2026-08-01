@@ -94,6 +94,24 @@ PHASE_META = {
     "conflict":    {"title": "Conflicting Evidence & Resolutions",
                      "ref": "`docs/Reasoning/Confidence.md` — INKONSISTENSI convention"},
 }
+# Track C (docs/Protocol/Phased-Research-Prompts.md "DeepSeek Methodology") replaces phase 11's simple
+# merge-only "Conflict Resolution" pass with a much broader "CIF Validation Report v3.0" (Manifest,
+# Coverage, Data Lineage, Knowledge Dependency Graph, Confidence Assessment, CIF Score) -- same phase key
+# and filename ("conflict" / NN-conflict.docx, so existing data/tooling doesn't need to change), different
+# content shape. Detect it so the assembled dossier's section title doesn't mislabel it as merely conflict
+# resolution when it's substantially more than that.
+VALIDATION_REPORT_RE = re.compile(r"CIF\s+(?:VALIDATION\s+REPORT|MANIFEST)", re.I)
+CONFLICT_META_VALIDATION = {"title": "Validation & Quality Assurance (CIF Score)",
+                             "ref": "`docs/Reasoning/Confidence.md` — CIF Score, Data Lineage, Knowledge Dependency Graph"}
+
+def phase_meta(key: str, raw: str) -> dict:
+    """PHASE_META[key], except "conflict" resolves to the Track C Validation Report meta when the raw
+    phase content is shaped like one (see VALIDATION_REPORT_RE) instead of always assuming Track A/B's
+    narrower Conflict Resolution shape."""
+    if key == "conflict" and VALIDATION_REPORT_RE.search(raw[:2000]):
+        return CONFLICT_META_VALIDATION
+    return PHASE_META[key]
+
 OPEN_THREADS_RE = re.compile(r"(?im)^#{0,3}[^\n]{0,80}\bopen\s*threads?\b[^\n]*$")
 
 def detect_phase_key(filename: str):
@@ -365,7 +383,22 @@ def detect_phase_key_strict(filename: str) -> str:
 MIN_PHASE_CHARS = 400
 EVIDENCE_TAG_RE = re.compile(r"\((?:HIGH|MEDIUM|LOW|TIDAK ADA KONFLIK)\)")
 PROJECT_HEADER_RE = re.compile(r"(?im)^PROJECT:\s*(.+)$")
+# Second header convention, observed in data_project/Arbitrum (2026-08): an all-caps title ending
+# in "INTELLIGENCE DATASET"/"INTELLIGENCE REPORT" then an em-dash then the project name, e.g.
+# "FINANCIAL INTELLIGENCE DATASET — ARBITRUM". Binds the file to one project exactly like
+# "PROJECT: <Name>" does -- accept either.
+DATASET_HEADER_RE = re.compile(r"^.+[—-]\s*(.+?)\s*$")
+# Two more citation shapes observed alongside/instead of inline (HIGH)/(MEDIUM)/(LOW) tags:
+# block-level "Sources:" + real URLs under structured data (funding rounds, token supply, market
+# position -- data_project/Arbitrum phases 03/05/06/07/08), and "【Phase N — Section】" internal
+# cross-references + a "Confidence: High/Medium/Low" field under derived/behavioral insights that
+# trace back to those sourced facts (phases 09/10). Both are richer than the flat inline-tag
+# convention (they point at a specific URL or a specific upstream fact, not just a confidence
+# word) so they count as citation evidence too.
+SOURCE_URL_RE = re.compile(r"https?://\S+")
+INTERNAL_CITATION_RE = re.compile(r"【[^】]+】")
 FALLBACK_PLACEHOLDER_RE = re.compile(r"\[sumber tidak dapat diverifikasi ulang\]", re.I)
+MIN_SOURCE_SIGNALS = 3  # below this, a couple of stray URLs/brackets could be incidental, not real sourcing
 
 def validate_phase_content(filename: str, project_name: str, text: str) -> list:
     """Content-level checks beyond filename matching -- the strict filename contract
@@ -383,34 +416,48 @@ def validate_phase_content(filename: str, project_name: str, text: str) -> list:
             f"likely a broken/empty/placeholder extraction, not a real phase report"
         )
 
+    header_name = None
     m = PROJECT_HEADER_RE.search(text)
-    if not m:
+    if m:
+        header_name = m.group(1)
+    else:
+        first_line = stripped.splitlines()[0] if stripped else ""
+        dm = DATASET_HEADER_RE.match(first_line)
+        if dm:
+            header_name = dm.group(1)
+
+    if header_name is None:
         reasons.append(
-            "no 'PROJECT: <Name>' header found -- required by the Deep Research Brief format contract "
-            "(see docs/Protocol/Deep-Research-Brief.md); cannot confirm which project this file belongs to"
+            "no 'PROJECT: <Name>' header and no '<TITLE> — <Name>' dataset header found -- one of the two "
+            "is required by the Deep Research Brief format contract (see docs/Protocol/Deep-Research-Brief.md); "
+            "cannot confirm which project this file belongs to"
         )
     else:
-        declared = re.sub(r"[^a-z0-9]", "", m.group(1).lower())
+        declared = re.sub(r"[^a-z0-9]", "", header_name.lower())
         folder = re.sub(r"[^a-z0-9]", "", project_name.lower())
         if declared and folder and declared != folder and declared not in folder and folder not in declared:
             reasons.append(
-                f"PROJECT header says '{m.group(1).strip()}' but this is the '{project_name}' folder -- "
+                f"header says '{header_name.strip()}' but this is the '{project_name}' folder -- "
                 f"likely misfiled content from a different project"
             )
 
-    if not EVIDENCE_TAG_RE.search(text):
+    evidence_tags = len(EVIDENCE_TAG_RE.findall(text))
+    source_urls = len(SOURCE_URL_RE.findall(text))
+    internal_cites = len(INTERNAL_CITATION_RE.findall(text))
+    if evidence_tags == 0 and source_urls < MIN_SOURCE_SIGNALS and internal_cites < MIN_SOURCE_SIGNALS:
         reasons.append(
-            "zero Evidence Level tags found -- (HIGH)/(MEDIUM)/(LOW) per-fact citation is required by the "
-            "format contract; this is the exact 'empty citations' failure mode rejected 2-3 times each in "
+            "no citation evidence found -- need either (HIGH)/(MEDIUM)/(LOW) inline tags, "
+            f"{MIN_SOURCE_SIGNALS}+ 'Sources:' URLs, or {MIN_SOURCE_SIGNALS}+ '【Phase — Section】' internal "
+            "citations; this is the exact 'empty citations' failure mode rejected 2-3 times each in "
             "LayerZero Phase 3/4/6 before a working draft was accepted"
         )
 
     fallback_hits = len(FALLBACK_PLACEHOLDER_RE.findall(text))
-    fact_count = max(len(EVIDENCE_TAG_RE.findall(text)), 1)
+    fact_count = max(evidence_tags, source_urls, internal_cites, 1)
     if fallback_hits > 0 and fallback_hits >= fact_count:
         reasons.append(
             f"'[sumber tidak dapat diverifikasi ulang]' fallback used {fallback_hits} time(s), matching or "
-            f"exceeding the {fact_count} real Evidence Level tag(s) found -- looks like blanket fallback "
+            f"exceeding the {fact_count} real citation signal(s) found -- looks like blanket fallback "
             f"overuse rather than genuine per-fact citation (the Phase 3 attempt-2 failure mode)"
         )
     return reasons
@@ -421,7 +468,7 @@ def _content_hash(text: str) -> str:
     return hashlib.sha256(norm.encode("utf-8")).hexdigest()
 
 def process_data_project(folder: Path, force: bool, allow_partial: bool = False,
-                          allow_unverified: bool = False, dest_dir: Path = None):
+                          allow_unverified: bool = False, dest_dir: Path = None, model: str = "Gemini"):
     """Assemble one project's dossier from data_project/<project>/ -- hardened successor to
     process_phased_project(). Exact filename contract (see detect_phase_key_strict) plus
     content-level verification (validate_phase_content); hard-fails (raises ValueError) on any
@@ -454,7 +501,13 @@ def process_data_project(folder: Path, force: bool, allow_partial: bool = False,
                 f"Remove or rename one before ingesting."
             )
         seen[key] = f.name
-        raw = extract_source(f)
+        try:
+            raw = extract_source(f)
+        except Exception as e:
+            # A raw extraction failure (corrupt file, unreadable encoding, etc.) must fail this
+            # one project cleanly -- same "nothing written" contract as a validation failure --
+            # not crash the whole ingest run for every other project queued behind it.
+            raise ValueError(f"[{name}] failed to extract '{f.name}': {e}") from e
         raw_by_file[f.name] = (key, raw)
 
         h = _content_hash(raw)
@@ -495,7 +548,7 @@ def process_data_project(folder: Path, force: bool, allow_partial: bool = False,
     order = [k for k in PHASE_KEYS if k in phases]
     body_md = []
     for k in order:
-        meta = PHASE_META[k]
+        meta = phase_meta(k, phases[k])
         body_md.append(f"\n## {meta['title']}\n_ref: {meta['ref']}_\n\n{phases[k]}")
     if all_threads:
         body_md.append("\n## Open Questions\n" + "\n".join(f"- {t}" for t in all_threads))
@@ -507,14 +560,14 @@ def process_data_project(folder: Path, force: bool, allow_partial: bool = False,
     head = (
         f"# {name} — Deep Case Study (Phased)\n\n"
         f"**CIF Dataset — Deep Dossier · Tier: Deep (anchor project)**\n"
-        f"**Source:** Deep Research (Gemini), Format v3 Dependency Pipeline "
+        f"**Source:** Deep Research ({model}), Format v3 Dependency Pipeline "
         f"({len(order)}/{len(PHASE_KEYS)} phases: {', '.join(order)}). **Auto-assembled** by `tools/ingest.py` "
         f"(deterministic, no LLM, strict data_project/ contract) — each phase extracted and concatenated in "
         f"dependency order per `docs/Protocol/Deep-Research-Brief.md`; the reasoning is the source reports'.\n"
         f"**Raw sources archived:** {', '.join(archived)}.\n"
         f"**Phases not run:** {', '.join(missing) if missing else 'none'}.{supersede_note}\n\n"
         f"> Faithful concatenation of phase outputs — no fabrication, no distillation beyond what the "
-        f"Conflict Resolution phase itself states. Consider a periodic QC pass.\n\n---\n"
+        f"closing phase (Conflict Resolution / Validation) itself states. Consider a periodic QC pass.\n\n---\n"
     )
     out.write_text(head + "\n".join(body_md).strip() + "\n", encoding="utf-8")
     return [("ok", name, f"{len(order)} phases -> {out.relative_to(ROOT)}")]
@@ -568,6 +621,10 @@ def main():
                      help="data_project only: assemble even if content verification fails "
                           "(near-empty content, wrong PROJECT header, zero citations, fallback overuse)")
     ap.add_argument("--no-build", action="store_true")
+    ap.add_argument("--model", default="Gemini",
+                     help="data_project only: research model to credit in the assembled dossier's "
+                          "'Source:' line (default Gemini, matching Track A/B; pass e.g. DeepSeek for "
+                          "Track C projects) -- ingest.py can't detect this from content, must be told")
     args = ap.parse_args()
 
     jobs, phased_projects, data_projects = [], [], []
@@ -605,7 +662,8 @@ def main():
             counts[status] += 1
     for folder in data_projects:
         try:
-            results = process_data_project(folder, args.force, args.allow_partial, args.allow_unverified)
+            results = process_data_project(folder, args.force, args.allow_partial, args.allow_unverified,
+                                            model=args.model)
         except ValueError as e:
             print(f"❌ [data_project] {folder.name:18s} {e}")
             counts["error"] += 1

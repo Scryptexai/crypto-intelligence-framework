@@ -52,6 +52,14 @@ SECTION_TITLES = [
 
 CHIP_RE = re.compile(r"\[span_\d+\]\((?:start|end)_span\)|\[span_\d+\]|start_span|end_span|\[\d+\]")
 
+# Triple-backtick fenced blocks (Track C's CIF Manifest, ASCII box-drawing Knowledge Dependency
+# Graphs, and score formulas -- docs/Protocol/Phased-Research-Prompts.md Phase 11) rely on exact
+# space/newline alignment. normalise()'s whitespace-collapse and blank-line paragraph-splitting
+# below are designed for prose and destroy that alignment (verified: ran the real Arbitrum Phase 11
+# content through it and every dependency-graph box came out with its columns mangled). Fences are
+# stashed out before reflow and restored verbatim afterward so their content is never touched.
+FENCE_RE = re.compile(r"```.*?```", re.S)
+
 
 def _cell_text(tc_xml: str) -> str:
     runs = re.findall(r"<w:t\b[^>]*>(.*?)</w:t>", tc_xml, re.S)
@@ -81,7 +89,15 @@ def _table_to_bullets(tbl_xml: str) -> list:
 
 
 def extract_docx(path: str) -> str:
-    xml = zipfile.ZipFile(path).read("word/document.xml").decode("utf-8")
+    try:
+        xml = zipfile.ZipFile(path).read("word/document.xml").decode("utf-8")
+    except zipfile.BadZipFile:
+        # Not a real OOXML container -- observed in practice (data_project/Arbitrum/*.docx,
+        # 2026-08): plain UTF-8 text/markdown saved with a ".docx" extension instead of an
+        # actual Word document. The content itself is already prose (no <w:t> runs to pull
+        # out), so read it straight through and let normalise() do the paragraph reflow.
+        with open(path, encoding="utf-8") as fh:
+            return fh.read()
     # Split body into ordered blocks: tables and paragraphs, preserving position.
     blocks = re.split(r"(<w:tbl>.*?</w:tbl>)", xml, flags=re.S)
     out = []
@@ -109,6 +125,15 @@ def extract_pdf(path: str) -> str:
 
 def normalise(text: str) -> str:
     text = text.replace("\r", "")
+
+    fences = []
+
+    def _stash(m):
+        fences.append(m.group(0))
+        return f"\x00FENCE{len(fences) - 1}\x00"
+
+    text = FENCE_RE.sub(_stash, text)
+
     text = CHIP_RE.sub("", text)
     text = re.sub(r"\(\s*\)", "", text)
     text = re.sub(r"[ \t]{2,}", " ", text)
@@ -120,7 +145,11 @@ def normalise(text: str) -> str:
             out.append(f"\n## {m.group(1)} {m.group(2).strip()}")
         else:
             out.append(p)
-    return re.sub(r"\n{3,}", "\n\n", "\n\n".join(out)).strip() + "\n"
+    result = re.sub(r"\n{3,}", "\n\n", "\n\n".join(out)).strip() + "\n"
+
+    for i, fence in enumerate(fences):
+        result = result.replace(f"\x00FENCE{i}\x00", fence)
+    return result
 
 
 def main() -> None:

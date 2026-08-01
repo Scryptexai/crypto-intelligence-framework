@@ -1,12 +1,13 @@
 #!/usr/bin/env bash
 # CIF pipeline runner — one command does everything, deterministically, no LLM.
 #
-#   ./run.sh          ingest new reports (anti-duplicate) -> build JSON -> backtest
-#   ./run.sh build    only rebuild JSON + backtest (no ingest)
+#   ./run.sh          ingest new reports (anti-duplicate) -> build JSON -> extract events -> backtest
+#   ./run.sh build    only rebuild JSON + extract events + backtest (no ingest)
 #   ./run.sh ingest   only ingest (no build)
-#   ./run.sh sync     push poc/{projects,patterns,benchmarks}.json to Supabase (tools/sync_supabase.py)
-#                     -- explicit opt-in only, never runs as part of `all`/`build`; requires
-#                     SUPABASE_URL + SUPABASE_SERVICE_ROLE_KEY env vars (see that file's docstring)
+#   ./run.sh sync     push poc/{projects,patterns,benchmarks,decision_events}.json to Supabase
+#                     (tools/sync_supabase.py) -- explicit opt-in only, never runs as part of
+#                     `all`/`build`; requires SUPABASE_URL + SUPABASE_SERVICE_ROLE_KEY env vars
+#                     (see that file's docstring)
 #
 # Drop raw reports first:
 #   doc_backup/inbox/deep/       <Project>_<YYYY-MM>_gemini.docx   -> examples/CaseStudies/
@@ -38,12 +39,33 @@ run_ingest() {
   fi
 }
 
+run_extract_events() {
+  # Decision Event is this framework's actual unit of analysis (CLAUDE.md) — pull
+  # structured events out of every Deep dossier's Behavioral Intelligence phase.
+  # Dossiers without that phase (older/Summary-tier files) simply parse to 0
+  # events, so this is safe to run unconditionally over the whole CaseStudies/ dir.
+  shopt -s nullglob
+  local dossiers=(examples/CaseStudies/*.md)
+  shopt -u nullglob
+  local real=()
+  for f in "${dossiers[@]}"; do
+    case "$(basename "$f")" in
+      README.md|*Analysis*|*Registry*) continue ;;
+    esac
+    real+=("$f")
+  done
+  if [ "${#real[@]}" -gt 0 ]; then
+    "$PY" tools/extract_decision_events.py "${real[@]}"
+  fi
+}
+
 case "$cmd" in
   ingest)
     run_ingest
     ;;
   build)
     "$PY" tools/build_json.py
+    run_extract_events
     "$PY" tools/backtest.py || true
     ;;
   sync)
@@ -53,6 +75,7 @@ case "$cmd" in
   all)
     run_ingest                           # anti-duplicate ingest of all inbox folders + data_project/
     "$PY" tools/build_json.py            # export projects/patterns/sentiment + bundled cif.json
+    run_extract_events                   # export poc/decision_events.json
     "$PY" tools/backtest.py || true      # scorecard (non-zero exit on real failure; run continues)
     ;;
   *)
