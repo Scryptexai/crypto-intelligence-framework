@@ -454,7 +454,13 @@ def process_data_project(folder: Path, force: bool, allow_partial: bool = False,
                 f"Remove or rename one before ingesting."
             )
         seen[key] = f.name
-        raw = extract_source(f)
+        try:
+            raw = extract_source(f)
+        except Exception as e:
+            # A raw extraction failure (corrupt file, unreadable encoding, etc.) must fail this
+            # one project cleanly -- same "nothing written" contract as a validation failure --
+            # not crash the whole ingest run for every other project queued behind it.
+            raise ValueError(f"[{name}] failed to extract '{f.name}': {e}") from e
         raw_by_file[f.name] = (key, raw)
 
         h = _content_hash(raw)

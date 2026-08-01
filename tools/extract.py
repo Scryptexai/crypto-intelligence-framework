@@ -81,7 +81,15 @@ def _table_to_bullets(tbl_xml: str) -> list:
 
 
 def extract_docx(path: str) -> str:
-    xml = zipfile.ZipFile(path).read("word/document.xml").decode("utf-8")
+    try:
+        xml = zipfile.ZipFile(path).read("word/document.xml").decode("utf-8")
+    except zipfile.BadZipFile:
+        # Not a real OOXML container -- observed in practice (data_project/Arbitrum/*.docx,
+        # 2026-08): plain UTF-8 text/markdown saved with a ".docx" extension instead of an
+        # actual Word document. The content itself is already prose (no <w:t> runs to pull
+        # out), so read it straight through and let normalise() do the paragraph reflow.
+        with open(path, encoding="utf-8") as fh:
+            return fh.read()
     # Split body into ordered blocks: tables and paragraphs, preserving position.
     blocks = re.split(r"(<w:tbl>.*?</w:tbl>)", xml, flags=re.S)
     out = []
