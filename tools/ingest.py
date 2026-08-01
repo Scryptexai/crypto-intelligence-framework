@@ -365,7 +365,22 @@ def detect_phase_key_strict(filename: str) -> str:
 MIN_PHASE_CHARS = 400
 EVIDENCE_TAG_RE = re.compile(r"\((?:HIGH|MEDIUM|LOW|TIDAK ADA KONFLIK)\)")
 PROJECT_HEADER_RE = re.compile(r"(?im)^PROJECT:\s*(.+)$")
+# Second header convention, observed in data_project/Arbitrum (2026-08): an all-caps title ending
+# in "INTELLIGENCE DATASET"/"INTELLIGENCE REPORT" then an em-dash then the project name, e.g.
+# "FINANCIAL INTELLIGENCE DATASET — ARBITRUM". Binds the file to one project exactly like
+# "PROJECT: <Name>" does -- accept either.
+DATASET_HEADER_RE = re.compile(r"^.+[—-]\s*(.+?)\s*$")
+# Two more citation shapes observed alongside/instead of inline (HIGH)/(MEDIUM)/(LOW) tags:
+# block-level "Sources:" + real URLs under structured data (funding rounds, token supply, market
+# position -- data_project/Arbitrum phases 03/05/06/07/08), and "【Phase N — Section】" internal
+# cross-references + a "Confidence: High/Medium/Low" field under derived/behavioral insights that
+# trace back to those sourced facts (phases 09/10). Both are richer than the flat inline-tag
+# convention (they point at a specific URL or a specific upstream fact, not just a confidence
+# word) so they count as citation evidence too.
+SOURCE_URL_RE = re.compile(r"https?://\S+")
+INTERNAL_CITATION_RE = re.compile(r"【[^】]+】")
 FALLBACK_PLACEHOLDER_RE = re.compile(r"\[sumber tidak dapat diverifikasi ulang\]", re.I)
+MIN_SOURCE_SIGNALS = 3  # below this, a couple of stray URLs/brackets could be incidental, not real sourcing
 
 def validate_phase_content(filename: str, project_name: str, text: str) -> list:
     """Content-level checks beyond filename matching -- the strict filename contract
@@ -383,34 +398,48 @@ def validate_phase_content(filename: str, project_name: str, text: str) -> list:
             f"likely a broken/empty/placeholder extraction, not a real phase report"
         )
 
+    header_name = None
     m = PROJECT_HEADER_RE.search(text)
-    if not m:
+    if m:
+        header_name = m.group(1)
+    else:
+        first_line = stripped.splitlines()[0] if stripped else ""
+        dm = DATASET_HEADER_RE.match(first_line)
+        if dm:
+            header_name = dm.group(1)
+
+    if header_name is None:
         reasons.append(
-            "no 'PROJECT: <Name>' header found -- required by the Deep Research Brief format contract "
-            "(see docs/Protocol/Deep-Research-Brief.md); cannot confirm which project this file belongs to"
+            "no 'PROJECT: <Name>' header and no '<TITLE> — <Name>' dataset header found -- one of the two "
+            "is required by the Deep Research Brief format contract (see docs/Protocol/Deep-Research-Brief.md); "
+            "cannot confirm which project this file belongs to"
         )
     else:
-        declared = re.sub(r"[^a-z0-9]", "", m.group(1).lower())
+        declared = re.sub(r"[^a-z0-9]", "", header_name.lower())
         folder = re.sub(r"[^a-z0-9]", "", project_name.lower())
         if declared and folder and declared != folder and declared not in folder and folder not in declared:
             reasons.append(
-                f"PROJECT header says '{m.group(1).strip()}' but this is the '{project_name}' folder -- "
+                f"header says '{header_name.strip()}' but this is the '{project_name}' folder -- "
                 f"likely misfiled content from a different project"
             )
 
-    if not EVIDENCE_TAG_RE.search(text):
+    evidence_tags = len(EVIDENCE_TAG_RE.findall(text))
+    source_urls = len(SOURCE_URL_RE.findall(text))
+    internal_cites = len(INTERNAL_CITATION_RE.findall(text))
+    if evidence_tags == 0 and source_urls < MIN_SOURCE_SIGNALS and internal_cites < MIN_SOURCE_SIGNALS:
         reasons.append(
-            "zero Evidence Level tags found -- (HIGH)/(MEDIUM)/(LOW) per-fact citation is required by the "
-            "format contract; this is the exact 'empty citations' failure mode rejected 2-3 times each in "
+            "no citation evidence found -- need either (HIGH)/(MEDIUM)/(LOW) inline tags, "
+            f"{MIN_SOURCE_SIGNALS}+ 'Sources:' URLs, or {MIN_SOURCE_SIGNALS}+ '【Phase — Section】' internal "
+            "citations; this is the exact 'empty citations' failure mode rejected 2-3 times each in "
             "LayerZero Phase 3/4/6 before a working draft was accepted"
         )
 
     fallback_hits = len(FALLBACK_PLACEHOLDER_RE.findall(text))
-    fact_count = max(len(EVIDENCE_TAG_RE.findall(text)), 1)
+    fact_count = max(evidence_tags, source_urls, internal_cites, 1)
     if fallback_hits > 0 and fallback_hits >= fact_count:
         reasons.append(
             f"'[sumber tidak dapat diverifikasi ulang]' fallback used {fallback_hits} time(s), matching or "
-            f"exceeding the {fact_count} real Evidence Level tag(s) found -- looks like blanket fallback "
+            f"exceeding the {fact_count} real citation signal(s) found -- looks like blanket fallback "
             f"overuse rather than genuine per-fact citation (the Phase 3 attempt-2 failure mode)"
         )
     return reasons
