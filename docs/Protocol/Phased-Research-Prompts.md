@@ -669,25 +669,36 @@ Arbitrum, `data_project/Arbitrum/`):
 Track A/B above were designed around a **limited-context model** — step 3's "Context Pack" discipline
 (attach an index, not the full prior phase, per the `3b` table) exists specifically to work around that
 limit. DeepSeek's 1M-token window removes the constraint: run Track C phases **in one sitting, in the same
-chat, back to back.** Only Phase 1's output needs the project name written out in full (`PROJECT: <Nama>`);
-every phase after that just says "gunakan konteks dari Phase 1 (dan fase-fase lain) di atas" — no need to
-re-paste the project name or re-attach any file. Export each phase's raw answer straight to `.docx` per the
-existing naming contract (`NN-<phasekey>.docx`, § step 5 above) — the chat transcript itself is the Context
-Pack.
+chat, back to back.** Export each phase's raw answer straight to `.docx` per the existing naming contract
+(`NN-<phasekey>.docx`, § step 5 above) — the chat transcript itself is the Context Pack.
+
+**Project name goes in ONCE, in Phase 1, and nowhere else (maintainer rule, applies to every future
+project).** The 11 phases are one continuous, uninterrupted chat — not 11 separate conversations — so the
+project name only needs to be stated the first time. Paste Phase 1's prompt with the project name filled
+in; every phase from Phase 2 onward is pasted right after it in the same chat with no project-name field at
+all — the model already knows which project it's researching from everything already in the conversation.
+None of the Phase 2–11 prompts below carry a `PROJECT:` line for this reason — don't add one back when
+using these for a new project, and don't re-type the project name into later phases either.
 
 ### Fixed vs. the original DeepSeek run (Arbitrum, 2026-07)
 
-Prompts below are corrected against the actual set used to research Arbitrum: placeholder project name
-(`<NAMA PROJECT>`) restored wherever the original had `ARBITRUM` hardcoded, so these are reusable for the
-next project rather than a one-off copy; `04-technology`/`05-financial` were transposed at the file-name
-level (the content itself was already correct, the file names weren't) — fixed, file names now match
-`PHASE_KEYS`; Phase 4's prompt was missing the `PROJECT:` header line every other phase has (had a
-duplicated, malformed placeholder line instead — `menggunakan phase phase sebelum nya sebagai konteks` —
-removed, since the correctly-worded version of the same instruction already exists a few lines later in the
-same prompt); Phase 3's stray extra blank lines after the title normalized to match its siblings' spacing;
-Phase 11's title line given the same `#` heading marker every other phase uses. No field, rule, or scope
-instruction was removed or reworded — this is filename/placeholder/typo-level cleanup only, verified against
-the real generated `data_project/Arbitrum/*.docx` output (10/11 phases pass `tools/ingest.py`'s
+Prompts below are corrected against the actual set used to research Arbitrum: the redundant `PROJECT:
+ARBITRUM` (or, in one case, `PROJECT: <NAMA PROJECT>`) header line was removed from every phase after Phase
+1 — it violated the "state it once" rule above (a leftover from an earlier draft, not a deliberate design);
+`04-technology`/`05-financial` were transposed at the file-name level (the content itself was already
+correct, the file names weren't) — fixed, file names now match `PHASE_KEYS`; Phase 4's prompt additionally
+had a duplicated, malformed placeholder line instead of a real instruction —
+`menggunakan phase phase sebelum nya sebagai konteks` — removed, since the correctly-worded version of the
+same instruction already exists a few lines later in the same prompt; Phase 3's stray extra blank lines
+after the title normalized to match its siblings' spacing; Phase 11's title line given the same `#` heading
+marker every other phase uses; Phase 11 also gained an explicit rule (§16 of its ATURAN UMUM) that the CIF
+Score Calculation section must be computed *before* the CIF Manifest's summary numbers are written, and the
+Manifest must copy its finished result — the real Arbitrum run computed the Manifest's `CIF SCORE: 88.2/100`
+before the detailed calculation existed, then the detailed calculation section further down the same
+document independently arrived at `81.6/100` from different Coverage/Conflict inputs, and nothing caught
+the two final numbers disagreeing. No field, rule, or scope instruction beyond these was removed or
+reworded — this is filename/placeholder/typo/sequencing-level cleanup only, verified against the real
+generated `data_project/Arbitrum/*.docx` output (10/11 phases pass `tools/ingest.py`'s
 `validate_phase_content` cleanly; the 11th, `11-conflict.docx`, is a separate open item — see below).
 
 ### Phase 1 — Foundation Intelligence
@@ -730,9 +741,6 @@ Open Threads
 ### Phase 2 — Entity Intelligence
 ```
 # PHASE 2 — ENTITY INTELLIGENCE
-
-PROJECT:
-<NAMA PROJECT>
 
 ========================================================
 
@@ -1072,9 +1080,6 @@ ATURAN
 ```
 # PHASE 3 — HISTORICAL INTELLIGENCE
 
-PROJECT:
-<NAMA PROJECT>
-
 ========================================================
 
 PERAN
@@ -1355,9 +1360,6 @@ ATURAN
 ### Phase 4 — Technology Intelligence
 ```
 # PHASE 4 — TECHNOLOGY INTELLIGENCE
-
-PROJECT:
-<NAMA PROJECT>
 
 ========================================================
 
@@ -1662,9 +1664,6 @@ ATURAN
 ### Phase 5 — Financial Intelligence
 ```
 # PHASE 5 — FINANCIAL INTELLIGENCE
-
-PROJECT:
-<NAMA PROJECT>
 
 ========================================================
 
@@ -1981,9 +1980,6 @@ ATURAN
 ### Phase 6 — Token Intelligence
 ```
 # PHASE 6 — TOKEN INTELLIGENCE
-
-PROJECT:
-<NAMA PROJECT>
 
 ========================================================
 
@@ -2428,9 +2424,6 @@ ATURAN
 ```
 # PHASE 7 — ECOSYSTEM & DEPENDENCY INTELLIGENCE
 
-PROJECT:
-<NAMA PROJECT>
-
 ========================================================
 
 PERAN
@@ -2858,9 +2851,6 @@ ATURAN
 ### Phase 8 — Market Intelligence
 ```
 # PHASE 8 — MARKET INTELLIGENCE
-
-PROJECT:
-<NAMA PROJECT>
 
 ========================================================
 
@@ -3312,9 +3302,6 @@ ATURAN
 ```
 # PHASE 9 — BEHAVIORAL INTELLIGENCE
 
-PROJECT:
-<NAMA PROJECT>
-
 ========================================================
 
 PERAN
@@ -3660,9 +3647,6 @@ Stakeholder Reactions) — see "Known gaps vs. current tooling" below.
 ### Phase 10 — Knowledge Extraction
 ```
 # PHASE 10 — KNOWLEDGE EXTRACTION
-
-PROJECT:
-<NAMA PROJECT>
 
 ========================================================
 
@@ -4547,6 +4531,11 @@ Interpretation:
 · Needs Improvement (60-80): CIF usable, perbaikan disarankan
 · Poor (<60): CIF perlu re-run
 
+PENTING: angka CIF Score di sini adalah HASIL FINAL. Kembali ke bagian CIF MANIFEST v3.0 di awal laporan dan
+salin angka Research Quality / Consistency / Evidence / Coverage / Conflict / Knowledge / CIF SCORE dari
+perhitungan di atas — JANGAN biarkan Manifest berisi angka yang dihitung terpisah atau lebih dulu. Manifest
+bukan sumber angka, ia melaporkan ULANG angka dari sini.
+
 ---
 
 FINAL VALIDATION SUMMARY
@@ -4651,6 +4640,12 @@ ATURAN UMUM
 13. Stabilitas Knowledge menggunakan klasifikasi Stable / Emerging / Volatile / Deprecated.
 14. Missing Knowledge menggunakan klasifikasi Not Public / Never Existed / Deprecated / Not Applicable / Not Yet Released / Unknown.
 15. Jika terdapat konflik antara formula dan interpretasi manual, laporkan keduanya dan tandai sebagai Open Thread.
+16. CIF Score WAJIB dihitung SETELAH bagian "CIF SCORE CALCULATION — v3.0" selesai dihitung lengkap
+    (Research Quality, Consistency, Evidence, Coverage, Conflict, Knowledge, lalu jumlah akhirnya). Tulis
+    bagian CIF MANIFEST v3.0 di awal laporan TERAKHIR, setelah seluruh perhitungan detail selesai, dan salin
+    angka-angkanya persis dari hasil kalkulasi tersebut — JANGAN mengisi angka di Manifest lebih dulu lalu
+    menghitung ulang secara terpisah di bagian CIF Score Calculation. Kedua bagian WAJIB melaporkan angka
+    yang sama persis.
 ```
 
 ### Known gaps vs. current tooling (open items)
