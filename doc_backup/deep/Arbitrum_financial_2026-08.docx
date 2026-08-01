@@ -1,0 +1,212 @@
+FINANCIAL INTELLIGENCE DATASET — ARBITRUM
+
+---
+
+Funding History
+
+Funding Round: Seed
+
+· Date: 2019-04-02
+· Amount: $3.7 million
+· Currency: USD
+· Lead Investor: Pantera Capital
+· Participating Investors: Compound VC, Raphael Ouzan, Jake Seid
+· Valuation: Tidak diungkap
+· Funding Type: Seed
+· Status: Completed
+· Sources:
+  · https://defillama.com/chain/Arbitrum
+  · https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738
+
+Funding Round: Coinbase Ventures Investment
+
+· Date: 2019-09-04
+· Amount: Tidak diungkap
+· Currency: USD
+· Lead Investor: Tidak diungkap
+· Participating Investors: Coinbase Ventures
+· Valuation: Tidak diungkap
+· Funding Type: Strategic
+· Status: Completed
+· Sources:
+  · https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738
+
+Funding Round: Series A
+
+· Date: 2021-04-01
+· Amount: $20 million
+· Currency: USD
+· Lead Investor: Polychain Capital
+· Participating Investors: Pantera Capital
+· Valuation: Tidak diungkap
+· Funding Type: Series A
+· Status: Completed
+· Sources:
+  · https://defillama.com/chain/Arbitrum
+  · https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738
+
+Funding Round: Series B
+
+· Date: 2021-08-31
+· Amount: $120 million（Catatan: sumber lain menyebut $100 million; perbedaan mungkin karena struktur putaran）
+· Currency: USD
+· Lead Investor: Lightspeed Venture Partners
+· Participating Investors: Polychain Capital, Ribbit Capital, Redpoint Ventures, Pantera Capital, Alameda Research, Mark Cuban
+· Valuation: $1.2 billion
+· Funding Type: Series B
+· Status: Completed
+· Sources:
+  · https://defillama.com/chain/Arbitrum
+  · https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738
+  · https://www.htx.com.ve
+
+---
+
+Treasury
+
+Current Treasury Size: $1.21 billion (per 31 Mei 2025); sumber lain menyebut $1.3B+
+
+Treasury Composition:
+
+· Native Token Holdings: ~93% of treasury in ARB (sekitar 2.7 billion tokens, valued north of $500M)
+· ETH Exposure: ~9,000 ETH, accumulated from fees and deployments
+· Stablecoin Holdings: USDC/USDT via STEP programs; small in size today
+· Other Assets - RWAs: $27.6 million in RWA holdings (USD) as of May 31, 2025; total RWA investments reached 85 million ARB across STEP programs; ~$35 million in tokenized U.S. Treasuries through Franklin Templeton
+
+Treasury Custodian: DAO Treasury adalah smart contract yang dikelola langsung oleh ArbitrumDAO melalui on-chain voting. Treasury Governor menangani distribusi dana dari DAO Treasury.
+
+Sources:
+
+· https://messari.io/
+· https://www.kucoin.com/news/insight/ARB/69462f6ced5e01000738363f
+· https://forum.arbitrum.foundation
+· https://docs.arbitrum.foundation
+
+---
+
+Revenue Model
+
+Protocol Fees (L2 Base Fee & L2 Surplus Fee)
+
+· Status: Live
+· Deskripsi: L2 Base Fee membayar minimum L2 gas price (0.1 gwei di Arbitrum One, 0.01 gwei di Arbitrum Nova). L2 Surplus Fee dikenakan saat chain mengalami congestion. 100% of fees collected on Arbitrum One itself go to the Arbitrum treasury.
+· Sources:
+  · https://docs.arbitrum.foundation
+  · https://docs.arbitrum.io/launch-arbitrum-chain/configure-your-chain/common/aep-fees/calculate-aep-fees
+
+Arbitrum Expansion Program (AEP) License Fees
+
+· Status: Live
+· Deskripsi: Arbitrum Chains deployed outside of Arbitrum One and Arbitrum Nova must pay 10% of their Protocol Net Revenue to the Arbitrum Foundation. Net Protocol Revenue = gross revenue minus settlement costs.
+· Sources:
+  · https://docs.arbitrum.io/launch-arbitrum-chain/chain-config/costs/aep-overview
+  · https://docs.arbitrum.io/launch-arbitrum-chain/configure-your-chain/common/aep-fees/calculate-aep-fees
+  · https://docs.arbitrum.foundation
+
+Robinhood Chain Fee Share
+
+· Status: Live (mulai Juli 2026)
+· Deskripsi: 10% of net protocol revenue from Robinhood Chain flows to ecosystem: 8% to Arbitrum DAO treasury, 2% to Arbitrum Developer Guild.
+· Sources:
+  · https://www.kucoin.com/news/flash/arbitrum-locks-in-revenue-from-robinhood-chain-fees
+
+Bridge Fees
+
+· Status: Live
+· Deskripsi: Revenue earned through fees on top of the bridge.
+· Sources:
+  · https://docs.arbitrum.io/launch-arbitrum-chain/configure-your-chain/common/aep-fees/calculate-aep-fees
+
+---
+
+Revenue History
+
+Tidak diungkap.
+
+---
+
+Fundraising Mechanism
+
+· VC Funding (Seed, Series A, Series B, Coinbase Ventures investment)
+· DAO Treasury (ARB token allocation dari genesis)
+· Foundation (operational funding melalui token allocation)
+
+Sources:
+
+· https://defillama.com/chain/Arbitrum
+· https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738
+
+---
+
+Token Sale
+
+Private Sale / Pre-DAO Token Sale
+
+· Tanggal: 2023 (sebelum DAO launch)
+· Status: Completed
+· Deskripsi: Arbitrum Foundation mengalokasikan 40 million ARB tokens sebagai loans ke financial market participants, dan 10 million ARB ditukar dengan fiat untuk operational costs. Foundation tidak menjual 50 million ARB di muka.
+· Sources:
+  · https://en.theblockbeats.news
+
+Public Sale / Airdrop
+
+· Tanggal: 2023-03-23
+· Status: Completed
+· Deskripsi: 1.16 billion ARB tokens di-airdrop ke pengguna yang eligible【History Phase — EV-025】.
+· Sources:
+  · https://www.binance.com/en-AE/feed/post/339098
+
+---
+
+Financial Dependencies
+
+· VC Funding: Lightspeed Venture Partners, Pantera Capital, Polychain Capital, Ribbit Capital, Redpoint Ventures, Alameda Research, Coinbase Ventures, Compound VC
+· DAO Treasury: Sumber pendanaan utama untuk ecosystem grants dan incentives
+· Foundation: Mengelola operational budget dan ecosystem deals
+· Protocol Revenue: Sequencer fees dan AEP license fees
+
+Sources:
+
+· https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738
+· https://messari.io/
+· https://blog.arbitrum.foundation
+
+---
+
+Financial Risk
+
+Tidak ada risiko finansial yang dikonfirmasi melalui laporan resmi, governance, audit, disclosure, atau regulator yang ditemukan dalam sumber yang tersedia.
+
+---
+
+Official Financial Resources
+
+· Official Blog: https://blog.arbitrum.foundation
+· Transparency Report: https://blog.arbitrum.foundation/the-arbitrum-foundation-2025-transparency-report-the-year-of-institutional-adoption/
+· Treasury Dashboard: https://forum.arbitrum.foundation (Treasury Management Council quarterly reports)
+· Governance Docs: https://docs.arbitrum.foundation
+· DefiLlama (Arbitrum): https://defillama.com/chain/Arbitrum
+· Messari: https://messari.io/
+· Token Terminal: https://tokenterminal.com/explorer/projects/arbitrum
+· Dune Analytics: https://dune.com/entropy_advisors/arbitrum-one-network-overview[reference:45]
+
+---
+
+RINGKASAN
+
+· Total Funding Raised: $143.7 million (Seed $3.7M + Series A $20M + Series B $120M) — belum termasuk Coinbase Ventures investment yang jumlahnya tidak diungkap
+· Funding Rounds: 4 (Seed, Coinbase Ventures, Series A, Series B)
+· Treasury Status: $1.21B–$1.3B+ (per 2025), didominasi ARB (~93%) dengan diversifikasi ke ETH, stablecoin, dan RWA
+· Revenue Sources: Protocol fees (L2 base/surplus), AEP license fees (10% of net protocol revenue from external chains), bridge fees, Robinhood Chain fee share
+· Revenue Availability: Data real-time tersedia via DefiLlama dan Token Terminal; laporan keuangan rinci tidak diungkap secara publik
+
+---
+
+Open Threads
+
+1. Jumlah Series B — Sumber menyebut $100M dan $120M; perbedaan mungkin karena struktur putaran atau konversi mata uang.
+2. Treasury Composition Detail — Komposisi persis treasury (jumlah ARB, ETH, stablecoin, RWA) tidak diungkap dalam satu sumber komprehensif; angka berasal dari berbagai sumber dengan tanggal berbeda.
+3. Revenue History — Data pendapatan historis tidak dipublikasikan secara terperinci oleh Arbitrum Foundation atau DAO.
+4. Token Sale Price — Harga private sale ARB tidak diungkap secara publik.
+5. Current Treasury Size — Anggaran bervariasi ($1.21B dari Messari per Mei 2025 vs $1.3B+ dari KuCoin) karena perbedaan metodologi dan tanggal pelaporan.
+6. Financial Risk — Tidak ada disclosure resmi mengenai risiko finansial yang ditemukan dalam sumber yang tersedia.

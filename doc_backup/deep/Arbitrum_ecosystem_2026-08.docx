@@ -1,0 +1,703 @@
+ECOSYSTEM & DEPENDENCY INTELLIGENCE DATASET — ARBITRUM
+
+---
+
+Ecosystem Position
+
+· Kategori Ekosistem: Layer-2 scaling solution (Optimistic Rollup)
+· Primary Sector: Blockchain Infrastructure / Layer 2
+· Secondary Sector: DeFi, Gaming, RWA (Real-World Assets), Institutional Finance
+· Primary Chain: Ethereum
+· Supported Chains: 100+ chains live or in development (Orbit chains, L3s, and partner chains)
+· Sources:
+  · https://docs.arbitrum.foundation/what-foundation
+  · https://blog.arbitrum.foundation/arbitrum-in-2025-the-year-of-everywhere
+
+---
+
+External Dependencies
+
+Dependency Name: Ethereum (Settlement Layer)
+
+· Dependency Type: Chain
+· Purpose: Settlement and security — Arbitrum One and Nova settle transactions on Ethereum mainnet
+· Criticality: Critical
+· Status: Live
+· Related Entity: Ethereum
+· Related Technology Component: Settlement Layer
+· Sources: https://docs.arbitrum.foundation/what-foundation
+
+Dependency Name: Sequencer
+
+· Dependency Type: Infrastructure
+· Purpose: Ordering transactions and submitting batches to Ethereum; introduces a critical dependency
+· Criticality: Critical
+· Status: Live
+· Related Entity: Offchain Labs
+· Related Technology Component: Sequencer
+· Sources: https://cantina.xyz
+
+Dependency Name: Data Availability Committee (DAC)
+
+· Dependency Type: Infrastructure
+· Purpose: Provides data availability for AnyTrust chains (Arbitrum Nova); a portion of fees is sent to the DAC
+· Criticality: High
+· Status: Live
+· Related Entity: Offchain Labs; Data Availability Committee
+· Related Technology Component: AnyTrust Protocol
+· Sources: https://docs.arbitrum.foundation/dao-faqs
+
+Dependency Name: RPC Providers
+
+· Dependency Type: Infrastructure
+· Purpose: Provide endpoints for users and developers to interact with Arbitrum chains
+· Criticality: High
+· Status: Live
+· Related Entity: 1RPC, Alchemy, Ankr, and other third-party providers
+· Related Technology Component: RPC Infrastructure
+· Sources: https://docs.arbitrum.io/arbitrum-essentials/reference/node-providers
+
+Dependency Name: Blockchain Explorers
+
+· Dependency Type: Infrastructure
+· Purpose: View transactions, blocks, addresses, and network activity
+· Criticality: Medium
+· Status: Live
+· Related Entity: Arbiscan, Blockscout, Blobscan
+· Related Technology Component: Block Explorer
+· Sources: https://docs.arbitrum.io/launch-arbitrum-chain/integrations/infrastructure-providers
+
+Dependency Name: Third-party Bridges
+
+· Dependency Type: Bridge
+· Purpose: Transfer assets to chains outside Arbitrum ecosystem or in expedited manner without waiting for complete finality
+· Criticality: High
+· Status: Live
+· Related Entity: Beragam penyedia bridge pihak ketiga
+· Related Technology Component: Bridge
+· Sources: https://docs.arbitrum.io/launch-arbitrum-chain/integrations/infrastructure-providers
+
+Dependency Name: Oracles
+
+· Dependency Type: Oracle
+· Purpose: Integrate offchain data with Arbitrum chain smart contracts
+· Criticality: Medium
+· Status: Live
+· Related Entity: Beragam penyedia oracle
+· Related Technology Component: Oracle
+· Sources: https://docs.arbitrum.io/launch-arbitrum-chain/integrations/infrastructure-providers
+
+Dependency Name: Indexers
+
+· Dependency Type: Data Provider
+· Purpose: Retrieve historic or application-specific data without interfacing through RPC endpoint
+· Criticality: Medium
+· Status: Live
+· Related Entity: Beragam penyedia indexer
+· Related Technology Component: Indexer
+· Sources: https://docs.arbitrum.io/launch-arbitrum-chain/integrations/infrastructure-providers
+
+---
+
+Major Integrations
+
+Integration Name: Robinhood Chain
+
+· Integrated With: Arbitrum Orbit
+· Purpose: Robinhood meluncurkan Layer 2 blockchain di atas Arbitrum Orbit (Juli 2026); 10% net fees flow to Arbitrum ecosystem (8% DAO treasury, 2% Developer Guild)
+· Status: Live
+· Related Historical Event ID: EV-041
+· Sources: https://blog.arbitrum.foundation/the-arbitrum-foundation-2025-transparency-report-the-year-of-institutional-adoption
+
+Integration Name: Robinhood Tokenized Securities
+
+· Integrated With: Arbitrum One
+· Purpose: Robinhood launched tokenized U.S. equities and ETFs for European customers on Arbitrum One; grew to nearly 2,000 tokenized assets within six months
+· Status: Live
+· Sources: https://blog.arbitrum.foundation/the-arbitrum-foundation-2025-transparency-report-the-year-of-institutional-adoption
+
+Integration Name: Uniswap
+
+· Integrated With: Arbitrum One
+· Purpose: DEX deployment — Uniswap V3 di Arbitrum
+· Status: Live
+· Related Historical Event ID: EV-016
+· Sources: https://blog.arbitrum.io
+
+Integration Name: Aave
+
+· Integrated With: Arbitrum One
+· Purpose: Lending protocol deployment
+· Status: Live
+· Related Historical Event ID: EV-016
+· Sources: Phase 2 — Entity Intelligence
+
+Integration Name: Curve
+
+· Integrated With: Arbitrum One
+· Purpose: DEX for stablecoins deployment
+· Status: Live
+· Related Historical Event ID: EV-016
+· Sources: Phase 2 — Entity Intelligence
+
+Integration Name: GMX
+
+· Integrated With: Arbitrum One
+· Purpose: Decentralized perpetual exchange; native to Arbitrum
+· Status: Live
+· Sources: https://blog.arbitrum.io
+
+Integration Name: Franklin Templeton
+
+· Integrated With: Arbitrum One
+· Purpose: Tokenized financial products on Arbitrum; part of STEP initiative
+· Status: Live
+· Sources: https://blog.arbitrum.foundation/the-arbitrum-foundation-2025-transparency-report-the-year-of-institutional-adoption
+
+Integration Name: WisdomTree
+
+· Integrated With: Arbitrum One
+· Purpose: Tokenized financial products on Arbitrum
+· Status: Live
+· Sources: https://blog.arbitrum.foundation/the-arbitrum-foundation-2025-transparency-report-the-year-of-institutional-adoption
+
+Integration Name: Spiko
+
+· Integrated With: Arbitrum One
+· Purpose: Tokenized financial products on Arbitrum
+· Status: Live
+· Sources: https://blog.arbitrum.foundation/the-arbitrum-foundation-2025-transparency-report-the-year-of-institutional-adoption
+
+Integration Name: BlackRock
+
+· Integrated With: Arbitrum
+· Purpose: Tokenized financial products
+· Status: Live
+· Sources: https://blog.arbitrum.foundation/arbitrum-in-2025-the-year-of-everywhere
+
+Integration Name: FundBridge Capital & Libeara
+
+· Integrated With: Arbitrum Network
+· Purpose: Deployment of ULTRA, a tokenized U.S. Treasury fund, onto Arbitrum
+· Status: Live
+· Sources: https://libeara.com
+
+Integration Name: Morpho, Euler, Maple Finance
+
+· Integrated With: Arbitrum
+· Purpose: DeFi protocols expanded onto Arbitrum ahead of DRIP launch
+· Status: Live
+· Sources: https://uk.finance.yahoo.com
+
+---
+
+Infrastructure Providers
+
+Provider: Offchain Labs
+
+· Service: Core development, sequencer, node infrastructure
+· Criticality: Critical
+· Status: Active
+
+Provider: Arbitrum Public RPC
+
+· Service: Public RPC endpoints (Arbitrum One: https://arb1.arbitrum.io/rpc; Arbitrum Nova: https://nova.arbitrum.io/rpc)
+· Criticality: Critical
+· Status: Active
+· Sources: https://docs.arbitrum.io/arbitrum-essentials/reference/node-providers
+
+Provider: Alchemy
+
+· Service: RPC provider, node infrastructure
+· Criticality: High
+· Status: Active
+· Sources: https://docs.arbitrum.io/arbitrum-essentials/reference/node-providers
+
+Provider: Ankr
+
+· Service: Whitelisted RPC provider for Arbitrum DAO ecosystem
+· Criticality: High
+· Status: Active
+· Sources: https://www.cryptowisser.com
+
+Provider: 1RPC
+
+· Service: RPC provider
+· Criticality: Medium
+· Status: Active
+· Sources: https://docs.arbitrum.io/arbitrum-essentials/reference/node-providers
+
+Provider: Arbiscan
+
+· Service: Official block explorer for Arbitrum One
+· Criticality: High
+· Status: Active
+· Sources: https://docs.arbitrum.io/arbitrum-essentials/reference/node-providers
+
+Provider: Blockscout
+
+· Service: Block explorer for Arbitrum One and Nova
+· Criticality: Medium
+· Status: Active
+· Sources: https://docs.arbitrum.io/arbitrum-essentials/reference/node-providers
+
+Provider: Blobscan
+
+· Service: Data availability blob explorer for Arbitrum chains
+· Criticality: Low
+· Status: Active
+· Sources: https://docs.arbitrum.io/launch-arbitrum-chain/integrations/infrastructure-providers
+
+Provider: Erigon
+
+· Service: Client support for Arbitrum ecosystem
+· Criticality: Medium
+· Status: Active
+· Sources: https://docs.arbitrum.foundation
+
+Provider: Nethermind
+
+· Service: Client support for Arbitrum ecosystem
+· Criticality: Medium
+· Status: Active
+· Sources: https://docs.arbitrum.foundation
+
+Provider: Matrixed.Link
+
+· Service: Multi-chain RPC/WebSocket endpoints (Ethereum, Base, Arbitrum, Optimism, etc.)
+· Criticality: Medium
+· Status: Active
+· Sources: https://partners.circle.com
+
+Provider: Rollup-as-a-Service (RaaS)
+
+· Service: Manage infrastructure for high-performance, secure Arbitrum chain deployments
+· Criticality: Medium
+· Status: Active
+· Sources: https://docs.arbitrum.io/launch-arbitrum-chain/integrations/infrastructure-providers
+
+---
+
+Exchange Ecosystem
+
+Exchange: Binance
+
+· Listing Status: ARB listed (Spot, Perpetual)
+· Spot: Yes
+· Perpetual: Yes
+· OTC: Tidak diketahui
+· Launchpool: Tidak diketahui
+· Status: Active
+· Sources: https://www.coinlore.com
+
+Exchange: Coinbase
+
+· Listing Status: ARB listed【History Phase — EV-025】
+· Spot: Yes
+· Perpetual: Tidak diketahui
+· OTC: Tidak diketahui
+· Launchpool: Tidak diketahui
+· Status: Active
+· Sources: https://www.binance.com/en-AE/feed/post/339098
+
+Exchange: Robinhood
+
+· Listing Status: ARB listed (Maret 2025)
+· Spot: Yes
+· Perpetual: Tidak diketahui
+· OTC: Tidak diketahui
+· Launchpool: Tidak diketahui
+· Status: Active
+· Sources: https://www.coindesk.com
+
+Exchange: Kraken
+
+· Listing Status: ARB listed【History Phase — EV-025】
+· Spot: Yes
+· Perpetual: Tidak diketahui
+· OTC: Tidak diketahui
+· Launchpool: Tidak diketahui
+· Status: Active
+· Sources: https://www.binance.com/en-AE/feed/post/339098
+
+Exchange: Bitfinex
+
+· Listing Status: ARB listed【History Phase — EV-025】
+· Spot: Yes
+· Perpetual: Tidak diketahui
+· OTC: Tidak diketahui
+· Launchpool: Tidak diketahui
+· Status: Active
+· Sources: https://www.binance.com/en-AE/feed/post/339098
+
+Exchange: BitMEX
+
+· Listing Status: ARB listed【History Phase — EV-025】
+· Spot: Tidak diketahui
+· Perpetual: Yes
+· OTC: Tidak diketahui
+· Launchpool: Tidak diketahui
+· Status: Active
+· Sources: https://www.binance.com/en-AE/feed/post/339098
+
+Exchange: Gate.io
+
+· Listing Status: ARB listed
+· Spot: Yes
+· Perpetual: Tidak diketahui
+· OTC: Tidak diketahui
+· Launchpool: Tidak diketahui
+· Status: Active
+· Sources: https://www.coinlore.com
+
+Exchange: MEXC Global
+
+· Listing Status: ARB listed
+· Spot: Yes
+· Perpetual: Tidak diketahui
+· OTC: Tidak diketahui
+· Launchpool: Tidak diketahui
+· Status: Active
+· Sources: https://www.coinlore.com
+
+Exchange: Safello
+
+· Listing Status: ARB listed (31 Januari 2025)
+· Spot: Yes
+· Perpetual: Tidak diketahui
+· OTC: Tidak diketahui
+· Launchpool: Tidak diketahui
+· Status: Active
+· Sources: https://mb.cision.com
+
+Exchange: Arkham Exchange
+
+· Listing Status: ARB listed (18 Maret 2025)
+· Spot: Yes
+· Perpetual: Tidak diketahui
+· OTC: Tidak diketahui
+· Launchpool: Tidak diketahui
+· Status: Active
+· Sources: https://coindar.org
+
+Exchange: Uniswap
+
+· Listing Status: ARB trading available【History Phase — EV-025】
+· Spot: Yes (DEX)
+· Perpetual: Tidak diketahui
+· OTC: Tidak diketahui
+· Launchpool: Tidak diketahui
+· Status: Active
+· Sources: https://www.binance.com/en-AE/feed/post/339098
+
+Catatan: Lebih dari 49 exchange mendukung perdagangan ARB
+
+---
+
+Wallet Ecosystem
+
+Wallet: MetaMask
+
+· Support Type: EVM-compatible wallet; mendukung Arbitrum One dan Nova
+· Status: Active
+· Sources: https://blog.arbitrum.io
+
+Wallet: Coinbase Wallet
+
+· Support Type: EVM-compatible wallet; mendukung Arbitrum
+· Status: Active
+· Sources: https://web3.bgw.plus
+
+Wallet: imToken
+
+· Support Type: Fully supports Arbitrum Mainnet (beta); send, receive tokens, access dApps
+· Status: Active
+· Sources: https://token.im
+
+Wallet: Tangem
+
+· Support Type: Hardware wallet; supports assets across Ethereum and Arbitrum
+· Status: Active
+· Sources: https://tangem.com
+
+Wallet: MathWallet
+
+· Support Type: Multichain wallet; supports all EVM-based blockchains including Arbitrum
+· Status: Active
+· Sources: https://apps.apple.com
+
+Wallet: TokenPocket
+
+· Support Type: Supports 1,000+ networks including Arbitrum
+· Status: Active
+· Sources: https://play.google.com
+
+---
+
+Developer Ecosystem
+
+SDK:
+
+· Arbitrum SDK (official) — custom gas token support, bridging APIs
+· C# SDK for Arbitrum — dikembangkan melalui grant
+· Ecosystem SDK — build custom wallet SDK for consistent identity and asset management
+
+API:
+
+· Uniswap V3 developer API for Arbitrum
+· APIs untuk bridging operations with custom gas token support
+
+Developer Tools:
+
+· Stylus — multi-language smart contract support (Rust, C, C++)
+· Chain.Love — infrastructure aggregation toolbox; delivered via developer tooling grant
+
+Open Source Repository:
+
+· https://github.com/OffchainLabs
+
+Developer Portal:
+
+· https://developer.arbitrum.io
+· https://portal.arbitrum.io/projects
+
+Hackathon:
+
+· Tidak diketahui
+
+Grant Program:
+
+· Uniswap-Arbitrum Grant Program (UAGP) — $50,000–$250,000 in ARB
+· Covalent Grants — $2.5M commitment
+· Trailblazer 2.0 — $1,000,000 grant program for Agentic DeFi development
+· Arbitrum Developer Tooling grant — $21,000 (Chain.Love)
+· Arbitrum Foundation Grant Program
+· Audit Subsidy Program — $10M in ARB
+
+Sources:
+
+· https://arbitrum.foundation
+· https://docs.arbitrum.io
+· https://forum.arbitrum.foundation
+
+---
+
+Applications
+
+Application: Uniswap
+
+· Category: DeFi (DEX)
+· Relationship: Deployment on Arbitrum One
+· Status: Active
+· Sources: https://blog.arbitrum.io
+
+Application: Aave
+
+· Category: DeFi (Lending)
+· Relationship: Deployment on Arbitrum One
+· Status: Active
+· Sources: Phase 2 — Entity Intelligence
+
+Application: Curve
+
+· Category: DeFi (DEX)
+· Relationship: Deployment on Arbitrum One
+· Status: Active
+· Sources: Phase 2 — Entity Intelligence
+
+Application: GMX
+
+· Category: DeFi (Perpetuals DEX)
+· Relationship: Native to Arbitrum
+· Status: Active
+· Sources: https://blog.arbitrum.io
+
+Application: Robinhood
+
+· Category: Enterprise / Trading
+· Relationship: Tokenized securities on Arbitrum One; Robinhood Chain on Orbit
+· Status: Active
+· Sources: https://blog.arbitrum.foundation/the-arbitrum-foundation-2025-transparency-report-the-year-of-institutional-adoption
+
+Application: Franklin Templeton
+
+· Category: RWA / Asset Management
+· Relationship: Tokenized financial products on Arbitrum
+· Status: Active
+· Sources: https://blog.arbitrum.foundation/the-arbitrum-foundation-2025-transparency-report-the-year-of-institutional-adoption
+
+Application: WisdomTree
+
+· Category: RWA / Asset Management
+· Relationship: Tokenized financial products on Arbitrum
+· Status: Active
+· Sources: https://blog.arbitrum.foundation/the-arbitrum-foundation-2025-transparency-report-the-year-of-institutional-adoption
+
+Application: Spiko
+
+· Category: RWA / Asset Management
+· Relationship: Tokenized financial products on Arbitrum
+· Status: Active
+· Sources: https://blog.arbitrum.foundation/the-arbitrum-foundation-2025-transparency-report-the-year-of-institutional-adoption
+
+Application: BlackRock
+
+· Category: RWA / Asset Management
+· Relationship: Tokenized financial products
+· Status: Active
+· Sources: https://blog.arbitrum.foundation/arbitrum-in-2025-the-year-of-everywhere
+
+Application: Ethereal Perps DEX
+
+· Category: DeFi (Perpetuals DEX)
+· Relationship: Launched on Arbitrum in 2025
+· Status: Active
+· Sources: https://blog.arbitrum.foundation/arbitrum-in-2025-the-year-of-everywhere
+
+Application: Zama
+
+· Category: Privacy Infrastructure
+· Relationship: Launched on Arbitrum in 2025
+· Status: Active
+· Sources: https://blog.arbitrum.foundation/arbitrum-in-2025-the-year-of-everywhere
+
+Application: Blackbird
+
+· Category: Consumer
+· Relationship: Launched on Arbitrum in 2025
+· Status: Active
+· Sources: https://blog.arbitrum.foundation/arbitrum-in-2025-the-year-of-everywhere
+
+Application: TreasureDAO
+
+· Category: Gaming
+· Relationship: Gaming ecosystem on Arbitrum
+· Status: Active
+· Sources: Phase 2 — Entity Intelligence
+
+Application: Pendle
+
+· Category: DeFi (Yield Trading)
+· Relationship: Ecosystem partner
+· Status: Active
+· Sources: Phase 2 — Entity Intelligence
+
+Application: Fluid
+
+· Category: DeFi (Lending)
+· Relationship: Lending protocol on Arbitrum
+· Status: Active
+· Sources: Phase 2 — Entity Intelligence
+
+Application: Ostium
+
+· Category: DeFi (RWA Perps)
+· Relationship: RWA perps on Arbitrum
+· Status: Active
+· Sources: https://www.kucoin.com
+
+Application: SyrupUSDC
+
+· Category: DeFi (Institutional Yields)
+· Relationship: Institutional yields on Arbitrum
+· Status: Active
+· Sources: https://www.kucoin.com
+
+Application: Session
+
+· Category: Social
+· Relationship: Social utility on Arbitrum
+· Status: Active
+· Sources: https://www.kucoin.com
+
+---
+
+Governance Ecosystem
+
+Foundation: The Arbitrum Foundation
+
+· Role: Cayman Islands foundation company; tasked with developing and nurturing Arbitrum ecosystem; operates as neutral steward for ArbitrumDAO
+· Status: Active
+· Sources: https://docs.arbitrum.foundation/what-foundation
+
+Foundation: The Arbitrum OpCo Foundation
+
+· Role: Operational mesh layer for ArbitrumDAO; manages DAO-approved initiatives; funded 30M ARB for 2.5 years
+· Status: Active
+· Sources: https://docs.arbitrum.foundation/what-opco
+
+DAO: ArbitrumDAO
+
+· Role: Community-driven governance mechanism; ARB token holders propose and vote on changes
+· Status: Active
+· Sources: https://docs.arbitrum.foundation
+
+Council: Security Council
+
+· Role: 12-member board elected by token holders every six months; authorized to intervene in emergencies
+· Status: Active
+· Sources: https://coinmarketcap.com
+
+Committee: Oversight and Transparency Committee (OAT)
+
+· Role: 5 members elected yearly; holds OpCo Foundation accountable; ratifies budget; ensures transparency
+· Members: A.J. Warner, Frisson, Gavin Wang, Patrick McCorry, Pedro Breuer
+· Status: Active
+· Sources: https://docs.arbitrum.foundation/what-opco
+
+Validator Group: Tidak diketahui
+
+---
+
+Ecosystem Risks
+
+Risk: Centralized Sequencer Dependency
+
+· Description: Arbitrum's centralized sequencer introduces a critical dependency. Although mechanisms like the Delayed Inbox allow users to bypass the sequencer, few projects rely on these paths. Research has shown that the centralized sequencer creates opportunities for latency-sensitive strategies.
+· Source: https://cantina.xyz; https://arxiv.org
+
+Risk: Security Council Emergency Powers
+
+· Description: The Security Council, a 12-member elected board, can intervene in emergencies to freeze funds. This power raises concerns about whether such authority undermines true decentralization. In April 2026, the Security Council froze over 30,000 ETH (~$71 million) tied to the KelpDAO exploit.
+· Source: https://coinmarketcap.com; https://www.coindesk.com
+
+Risk: Bridge Dependency
+
+· Description: Reliance on third-party bridging providers for asset transfers outside the Arbitrum ecosystem introduces counterparty and security risks.
+· Source: https://docs.arbitrum.io/launch-arbitrum-chain/integrations/infrastructure-providers
+
+---
+
+Official Ecosystem Resources
+
+· Official Documentation: https://docs.arbitrum.foundation
+· Developer Portal: https://developer.arbitrum.io
+· GitHub: https://github.com/OffchainLabs
+· Partner Documentation: https://docs.arbitrum.io
+· Grant Program: https://arbitrum.foundation
+· Ecosystem Dashboard: https://portal.arbitrum.io/projects
+· Governance Forum: https://forum.arbitrum.foundation
+· Governance Dashboard (Tally): https://www.tally.xyz/gov/arbitrum
+
+---
+
+RINGKASAN
+
+· Primary Ecosystem: Layer 2 on Ethereum; 100+ chains; 1,000+ projects
+· Supported Chains: Arbitrum One, Arbitrum Nova, 100+ Orbit chains (live or in development)
+· External Dependencies: Ethereum (settlement), Sequencer, DAC, RPC providers, explorers, bridges, oracles, indexers
+· Major Integrations: Robinhood, Uniswap, Aave, Curve, GMX, Franklin Templeton, WisdomTree, Spiko, BlackRock, Morpho, Euler, Maple Finance
+· Infrastructure Providers: Offchain Labs, Alchemy, Ankr, 1RPC, Arbiscan, Blockscout, Blobscan, Erigon, Nethermind, Matrixed.Link
+· Developer Programs: UAGP, Covalent Grants, Trailblazer 2.0, Audit Subsidy Program, Developer Tooling grants
+· Applications: 420+ DeFi projects, 33 AI & DePIN projects, 63 gaming projects
+
+---
+
+Open Threads
+
+1. Validator Group — Tidak ada informasi mengenai validator group untuk Arbitrum yang ditemukan dalam sumber yang tersedia.
+2. Hackathon — Tidak ada informasi mengenai hackathon resmi Arbitrum yang ditemukan dalam sumber yang tersedia.
+3. Exchange Details — Informasi mengenai dukungan OTC dan Launchpool untuk ARB di berbagai exchange tidak tersedia secara lengkap.
+4. RaaS Provider List — Daftar lengkap penyedia RaaS tidak dispesifikasi dalam dokumentasi.
+5. Oracle Provider List — Daftar spesifik penyedia oracle tidak disebutkan dalam dokumentasi.
+6. Third-party Bridge Providers — Daftar spesifik penyedia bridge pihak ketiga tidak disebutkan dalam dokumentasi.

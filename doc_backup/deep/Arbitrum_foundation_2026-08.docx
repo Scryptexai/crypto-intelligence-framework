@@ -1,0 +1,51 @@
+PROJECT: Arbitrum
+
+Official Name: Arbitrum (HIGH) [Binance, https://www.binance.com/en/square/post/2024-10-16-arbitrum-arb-what-is-it-and-how-does-it-work; HTX, https://www.huobi.com/en-us/assets/details/arbitrum/]
+
+Symbol: ARB (HIGH) [Binance, https://www.binance.com/en/square/post/2024-10-16-arbitrum-arb-what-is-it-and-how-does-it-work; HTX, https://www.huobi.com/en-us/assets/details/arbitrum/]
+
+Category: Layer-2 scaling solution (optimistic rollup) for Ethereum (HIGH) [Messari, https://messari.io/project/arbitrum/profile; Bitstamp, https://www.bitstamp.net/learn/cryptocurrency-guide/what-is-arbitrum/; Blockchain.com, https://www.blockchain.com/learning-portal/tokens/arbitrum-explained]
+
+Founding Entity: Offchain Labs — badan hukum di New York, Amerika Serikat (HIGH) [Messari, https://messari.io/project/arbitrum/profile; Blockchain.com, https://www.blockchain.com/learning-portal/tokens/arbitrum-explained] — Offchain Labs terdaftar di Delaware, AS (MEDIUM) [OpenCorporates via Messari, https://opencorporates.com/companies/us_de/7029386]
+
+Founders: Ed Felten (Co-founder & Chief Scientist); Steven Goldfeder (Co-founder & CEO); Harry Kalodner (Co-founder & CTO) — semuanya bertemu di Princeton University (HIGH) [Messari, https://messari.io/project/arbitrum/profile; Bitstamp, https://www.bitstamp.net/learn/cryptocurrency-guide/what-is-arbitrum/; Blockchain.com, https://www.blockchain.com/learning-portal/tokens/arbitrum-explained; Uphold, https://uphold.com/en-eu/prices/crypto/arbitrum]
+
+Core Team: tidak diungkap — Offchain Labs dilaporkan memiliki 11-50 karyawan (LOW) [LinkedIn, https://tg.linkedin.com/company/arbitrum]
+
+Country: Amerika Serikat (kantor pusat Offchain Labs di New York) (HIGH) [Blockchain.com, https://www.blockchain.com/learning-portal/tokens/arbitrum-explained; Binance, https://www.binance.com/en/square/post/2024-10-16-arbitrum-arb-what-is-it-and-how-does-it-work]
+
+Launch Date - Testnet: Februari 2020 (HIGH) [Messari, https://messari.io/project/arbitrum/profile; CoinMarketCap, https://coinmarketcap.com/community/articles/66801de7b3e9e537375b33bb/] — dibuka untuk semua peserta pada Oktober 2020 (HIGH) [Messari, https://messari.io/project/arbitrum/profile]
+
+Launch Date - Mainnet: 31 Agustus 2021 (Arbitrum One — public launch untuk semua pengguna dan protokol) (HIGH) [Messari, https://messari.io/project/arbitrum/profile; Blockchain.com, https://www.blockchain.com/learning-portal/tokens/arbitrum-explained; CoinMarketCap, https://coinmarketcap.com/community/articles/66801de7b3e9e537375b33bb/] — sebelumnya mainnet untuk developer pada Mei 2021 (HIGH) [Messari, https://messari.io/project/arbitrum/profile; CoinMarketCap, https://coinmarketcap.com/community/articles/66801de7b3e9e537375b33bb/]
+
+Launch Date - TGE: 23 Maret 2023 (token generation event / airdrop claim) (HIGH) [Blockchain.com, https://www.blockchain.com/learning-portal/tokens/arbitrum-explained; Uphold, https://uphold.com/en-eu/prices/crypto/arbitrum] — pengumuman resmi ARB pada 16 Maret 2023 (HIGH) [Uphold, https://uphold.com/en-eu/prices/crypto/arbitrum]
+
+Main Products: Arbitrum One (general-purpose optimistic rollup); Arbitrum Nova (AnyTrust chain untuk gaming dan social apps); Arbitrum Nitro (tech stack — upgrade Agustus 2022); Arbitrum Orbit (framework untuk custom L2/L3 chains — Oktober 2023 mainnet-ready); Stylus (programming language yang memungkinkan Rust dkk. di Arbitrum — alpha testnet Januari 2024) (HIGH) [Messari, https://messari.io/project/arbitrum/profile; Arbitrum Docs, https://docs.arbitrum.io; CoinMarketCap, https://coinmarketcap.com/community/articles/66801de7b3e9e537375b33bb/]
+
+Official Website: https://arbitrum.io/ (HIGH) [Arbitrum.io, https://arbitrum.io/; Weiss Ratings, https://weissratings.com/en/crypto/arbitrum]
+
+Repository: https://github.com/OffchainLabs/arbitrum (organisasi utama) (HIGH) [GitHub, https://github.com/OffchainLabs/arbitrum] — Nitro codebase: https://github.com/OffchainLabs/nitro (HIGH) [GitHub, https://github.com/OffchainLabs/arbitrum]
+
+Documentation: https://docs.arbitrum.io/ (HIGH) [Arbitrum Docs, https://docs.arbitrum.io/] — dokumentasi governance: https://docs.arbitrum.foundation/ (HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation/]
+
+Social - X/Twitter: @arbitrum (HIGH) [Gate, https://www.gate.com/learn/community-activity-arbitrum-520k-followers-2025] — akun governance: @arbitrumdao_gov (MEDIUM) [Gate, https://www.gate.com/learn/arbitrum-official-account-compromised-2026]
+
+Social - Discord: https://discord.com/invite/arbitrum (HIGH) [Discord, https://discord.com/invite/arbitrum; Coindar, https://coindar.org/en/news/dex-trade-will-list-arbitrum]
+
+Social - Telegram: tidak ditemukan — terdapat kanal "arbitrum - Arbitrum Announcements Official" (LOW) [TGChannels, https://tgchannels.org/telegram-channel/arbitrum] — tidak ada link resmi terverifikasi di sumber primer.
+
+Block Explorer: Arbiscan (https://arbiscan.io/) — explorer utama untuk Arbitrum One (HIGH) [Arbitrum Docs, https://docs.arbitrum.io/for-devs/dev-tools-and-resources/chain-info; Arbiscan, https://arbiscan.io/] — Blockscout (https://arbitrum.blockscout.com/) juga didukung (HIGH) [Arbitrum Docs, https://docs.arbitrum.io/for-devs/dev-tools-and-resources/chain-info] — Nova: https://arbitrum-nova.blockscout.com/ (HIGH) [Arbitrum Docs, https://docs.arbitrum.io/for-devs/dev-tools-and-resources/chain-info]
+
+Token Contract: 0x912CE59144191C1204E64559FE8253a0e49E6548 — ARB Token di Arbitrum One (HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation/deployment-addresses; Arbiscan, https://arbiscan.io/address/0x912CE59144191C1204E64559FE8253a0e49E6548] — bridged ARB di Ethereum: 0xB50721BCf8d664c30412Cfbc6cf7a15145234ad1 (HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation/deployment-addresses] — bridged ARB di Nova: 0xf823C3cD3CeBE0a1fA952ba88Dc9EEf8e0Bf46AD (HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation/deployment-addresses] — testnet (Arb Sepolia): 0xc275B23C035a9d4EC8867b47f55427E0bDCe14cB (HIGH) [Arbitrum DAO Docs, https://docs.arbitrum.foundation/deployment-addresses]
+
+Chain(s): Arbitrum One (Chain ID 42161); Arbitrum Nova (Chain ID 42170); Arbitrum Sepolia (testnet, Chain ID 421614) (HIGH) [Arbitrum Docs, https://docs.arbitrum.io/for-devs/dev-tools-and-resources/chain-info]
+
+Ecosystem: 100+ chains live or in development (per 2025) (HIGH) [Arbitrum Blog, https://blog.arbitrum.foundation/arbitrum-in-2025-the-year-of-everywhere] — 30+ Arbitrum chains di luar Arbitrum One dengan model revenue-sharing (per H1 2026) (HIGH) [Arbitrum Blog, https://blog.arbitrum.foundation/arbitrum-h1-2026-the-programmable-economy-is-accelerating] — 1.000+ proyek di ekosistem (MEDIUM) [CoinMarketCap, https://coinmarketcap.com/community/articles/arbitrum-ecosystem-enters-institutional-phase] — mencakup Arbitrum One (general-purpose), Arbitrum Nova (gaming/social), dan Arbitrum Orbit (custom chains) (HIGH) [Arbitrum Docs, https://docs.arbitrum.io]
+
+Open Threads
+
+· Telegram resmi: belum ditemukan link resmi terverifikasi dari sumber primer (docs.arbitrum.io, arbitrum.io, atau docs.arbitrum.foundation). Kanal "@arbitrum" di Telegram diklaim sebagai "satu-satunya kanal pengumuman resmi berbahasa Inggris" oleh sumber tersier, tetapi belum dikonfirmasi oleh sumber resmi.
+· Core team size: Offchain Labs tidak mempublikasikan jumlah karyawan pasti; LinkedIn mencantumkan 11-50 tetapi ini tidak resmi.
+· Total supply ARB: beberapa sumber menyebut 10 miliar (HIGH) [Binance, HTX], tetapi ini perlu diverifikasi dari sumber primer tokenomics.
+· Stylus status: per Januari 2024 masih alpha di testnet dan belum diaktivasi oleh Arbitrum DAO (MEDIUM) [CoinMarketCap, https://coinmarketcap.com/community/articles/66801de7b3e9e537375b33bb/] — perlu update status terkini.
+· BOLD (Bounded Liquidity Delay): per Januari 2024 belum diaktifkan oleh Arbitrum DAO (MEDIUM) [CoinMarketCap, https://coinmarketcap.com/community/articles/66801de7b3e9e537375b33bb/] — perlu update status terkini.

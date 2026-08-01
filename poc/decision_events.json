@@ -21,6 +21,12 @@
         "Builder": "Belum ada; aplikasi di atas LayerZero belum ada. (Inferensi)"
       },
       "grounding": "Inferensi berdasar-kuat + pernyataan publik dari Phase 3 tentang konteks industri dan eksekusi putaran.",
+      "trigger": null,
+      "evidence": null,
+      "decision": null,
+      "immediate_result": null,
+      "long_term_impact": null,
+      "supporting_dataset": null,
       "open_threads": null
     },
     {
@@ -44,6 +50,12 @@
         "Builder": "Aplikasi pertama mulai dibangun di atas LayerZero. (Inferensi)"
       },
       "grounding": "Pernyataan publik (CoinDesk, Binance Blog). (HIGH) [Phase 3, Evidence]",
+      "trigger": null,
+      "evidence": null,
+      "decision": null,
+      "immediate_result": null,
+      "long_term_impact": null,
+      "supporting_dataset": null,
       "open_threads": "Selisih angka pendanaan ($6 juta vs $6,3 juta) antar sumber (CoinDesk vs Blockworks) tetap tidak terselesaikan."
     },
     {
@@ -67,6 +79,12 @@
         "Builder": "Belum ada aplikasi yang dibangun, tetapi whitepaper menjadi dasar bagi pengembang masa depan. (Inferensi)"
       },
       "grounding": "Pernyataan publik (Medium post Ryan Zarick) dan arXiv preprint. (HIGH) [Phase 3, Evidence]",
+      "trigger": null,
+      "evidence": null,
+      "decision": null,
+      "immediate_result": null,
+      "long_term_impact": null,
+      "supporting_dataset": null,
       "open_threads": "Tanggal pasti publikasi whitepaper tidak dapat dipastikan; preprint arXiv bertanggal Oktober 2021, tetapi Medium post dan konteks menunjukkan Mei 2021."
     },
     {
@@ -90,6 +108,12 @@
         "Builder": "Tetap membangun; tidak ada gangguan teknis. (Inferensi)"
       },
       "grounding": "Pernyataan publik (The Block, BeInCrypto, Invezz) dan inferensi dari konsekuensi litigasi. (HIGH & MEDIUM) [Phase 3, Evidence; Phase 5, FTX Litigation]",
+      "trigger": null,
+      "evidence": null,
+      "decision": null,
+      "immediate_result": null,
+      "long_term_impact": null,
+      "supporting_dataset": null,
       "open_threads": "Nilai settlement final tidak pernah diungkap publik; hanya diketahui bahwa biaya hukum mencapai \"jutaan dolar\"."
     },
     {
@@ -113,6 +137,12 @@
         "Builder": "Semakin banyak proyek yang membangun di atas LayerZero. (Inferensi)"
       },
       "grounding": "Pernyataan publik (Forbes, The Block, CoinDesk). (HIGH) [Phase 3, Evidence]",
+      "trigger": null,
+      "evidence": null,
+      "decision": null,
+      "immediate_result": null,
+      "long_term_impact": null,
+      "supporting_dataset": null,
       "open_threads": "Angka pendanaan $135 juta vs $155 juta (CoinDesk sempat keliru) telah dikoreksi; tetap ada selisih kecil."
     },
     {
@@ -136,6 +166,12 @@
         "Builder": "Banyak proyek mulai membangun OApps dan OFT di atas LayerZero. (Inferensi)"
       },
       "grounding": "Pernyataan publik (dokumen LayerZero, CoinGecko, Gate Learn). (HIGH) [Phase 3, Evidence]",
+      "trigger": null,
+      "evidence": null,
+      "decision": null,
+      "immediate_result": null,
+      "long_term_impact": null,
+      "supporting_dataset": null,
       "open_threads": "Angka historis pesan (80+ juta) tidak terverifikasi dan kemungkinan sudah usang; angka yang lebih baru menyebut 200 juta+ pesan."
     },
     {
@@ -159,6 +195,12 @@
         "Builder": "Semakin banyak proyek lintas-rantai yang menggunakan LayerZero. (Inferensi)"
       },
       "grounding": "Pernyataan publik (GitHub, docs LayerZero). (HIGH) [Phase 3, Evidence]",
+      "trigger": null,
+      "evidence": null,
+      "decision": null,
+      "immediate_result": null,
+      "long_term_impact": null,
+      "supporting_dataset": null,
       "open_threads": "Klaim jumlah chain terintegrasi bervariasi (50+ vs 165+) antar sumber."
     },
     {
@@ -182,6 +224,12 @@
         "Builder": "Banyak proyek baru mulai membangun OApps. (Inferensi)"
       },
       "grounding": "Pernyataan publik (PR Newswire, The Block, CoinDesk). (HIGH) [Phase 3, Evidence]",
+      "trigger": null,
+      "evidence": null,
+      "decision": null,
+      "immediate_result": null,
+      "long_term_impact": null,
+      "supporting_dataset": null,
       "open_threads": "Tidak ada konflik signifikan; semua sumber sepakat tentang angka dan tanggal."
     },
     {
@@ -205,6 +253,12 @@
         "Builder": "Tetap membangun; tidak ada dampak langsung. (Inferensi)"
       },
       "grounding": "Pernyataan publik (dokumen pengadilan, Kroll, BeInCrypto, The Block, Cointelegraph) dan post X CEO. (HIGH) [Phase 3, Evidence; Phase 5, FTX Litigation]",
+      "trigger": null,
+      "evidence": null,
+      "decision": null,
+      "immediate_result": null,
+      "long_term_impact": null,
+      "supporting_dataset": null,
       "open_threads": "Nilai settlement final tidak pernah diungkap; angka \" $111 juta\" yang beredar di draf sebelumnya tidak berdasar."
     },
     {
@@ -228,6 +282,12 @@
         "Builder": "Tetap membangun; tidak terpengaruh langsung. (Inferensi)"
       },
       "grounding": "Pernyataan publik (The Block, Foundation, Cryptopolitan). (HIGH) [Phase 3, Evidence; Phase 6, Proof-of-Donation]",
+      "trigger": null,
+      "evidence": null,
+      "decision": null,
+      "immediate_result": null,
+      "long_term_impact": null,
+      "supporting_dataset": null,
       "open_threads": "Harga awal yang tepat tidak dapat diverifikasi; angka yang dikutip bervariasi."
     },
     {
@@ -251,6 +311,12 @@
         "Builder": "Banyak proyek baru mulai menggunakan V2. (Inferensi)"
       },
       "grounding": "Pernyataan publik (Medium post, T-Net BC Technology, Etherscan, blog LayerZero). (HIGH) [Phase 3, Evidence]",
+      "trigger": null,
+      "evidence": null,
+      "decision": null,
+      "immediate_result": null,
+      "long_term_impact": null,
+      "supporting_dataset": null,
       "open_threads": "Tanggal pasti \"kini live\" bervariasi antar sumber (Januari vs 9 Februari 2024)."
     },
     {
@@ -274,6 +340,12 @@
         "Builder": "Tetap membangun; integrasi Stargate dengan LayerZero semakin erat. (Inferensi)"
       },
       "grounding": "Pernyataan publik (The Block, Unchained, DL News). (HIGH) [Phase 3, Evidence; Phase 5, Stargate Acquisition]",
+      "trigger": null,
+      "evidence": null,
+      "decision": null,
+      "immediate_result": null,
+      "long_term_impact": null,
+      "supporting_dataset": null,
       "open_threads": "Selisih nilai akuisisi ($110 juta vs $120 juta) antar sumber; biaya kas efektif $25 juta menurut blog resmi."
     },
     {
@@ -297,6 +369,12 @@
         "Builder": "Banyak proyek mulai merencanakan migrasi atau pembangunan di Zero. (Inferensi)"
       },
       "grounding": "Pernyataan publik (Business Wire, CoinDesk, Tether.io, blog LayerZero). (HIGH) [Phase 3, Evidence; Phase 5, Strategic Investments]",
+      "trigger": null,
+      "evidence": null,
+      "decision": null,
+      "immediate_result": null,
+      "long_term_impact": null,
+      "supporting_dataset": null,
       "open_threads": "Status Fee Switch masih belum aktif; Zero masih dalam tahap rencana; adopsi institusional masih \"eksplorasi\"."
     },
     {
@@ -320,6 +398,12 @@
         "Builder": "Banyak proyek yang menggunakan LayerZero mempertimbangkan untuk migrasi atau mengubah konfigurasi. (Inferensi)"
       },
       "grounding": "Pernyataan publik (CoinDesk, Chainalysis, QuillAudits, The Block). (HIGH) [Phase 3, Evidence]",
+      "trigger": null,
+      "evidence": null,
+      "decision": null,
+      "immediate_result": null,
+      "long_term_impact": null,
+      "supporting_dataset": null,
       "open_threads": "Atribusi ke Lazarus Group masih berupa klaim awal, bukan temuan hukum yang diadili."
     },
     {
@@ -343,7 +427,155 @@
         "Builder": "Proyek yang bergantung pada LayerZero harus menyesuaikan konfigurasi atau menghadapi risiko; beberapa mungkin pindah. (Inferensi)"
       },
       "grounding": "Pernyataan publik (blog \"An Overdue Apology\", CoinDesk, The Defiant, Bitget News, CoinDesk Juli 2026). (HIGH) [Phase 3, Evidence]",
+      "trigger": null,
+      "evidence": null,
+      "decision": null,
+      "immediate_result": null,
+      "long_term_impact": null,
+      "supporting_dataset": null,
       "open_threads": "Dampak jangka panjang terhadap dominasi pasar LayerZero masih belum jelas; eksodus mungkin terus berlanjut."
+    }
+  ],
+  "Arbitrum": [
+    {
+      "project": "Arbitrum",
+      "date": "2018",
+      "title": "Pendirian Offchain Labs",
+      "motivation": null,
+      "constraint": null,
+      "pressure": null,
+      "tradeoff": null,
+      "alternatives": null,
+      "expectation_vs_actual": null,
+      "reactions": {},
+      "grounding": null,
+      "trigger": "Publikasi paper Arbitrum di USENIX Security dan kebutuhan untuk mengkomersialkan riset【History — EV-002, EV-003】",
+      "evidence": "Paper \"Arbitrum: Scalable, private smart contracts\" dipresentasikan Juli 2018; Offchain Labs didirikan Agustus 2018【History — EV-002, EV-003】",
+      "decision": "Membentuk perusahaan untuk mengembangkan solusi skalabilitas Ethereum",
+      "immediate_result": "Terbentuknya entitas pengembang utama",
+      "long_term_impact": "Fondasi bagi seluruh pengembangan Arbitrum",
+      "supporting_dataset": "Phase 3 (EV-002, EV-003), Phase 2 (Entity — Offchain Labs)",
+      "open_threads": null
+    },
+    {
+      "project": "Arbitrum",
+      "date": "2021",
+      "title": "Launch Mainnet Publik",
+      "motivation": null,
+      "constraint": null,
+      "pressure": null,
+      "tradeoff": null,
+      "alternatives": null,
+      "expectation_vs_actual": null,
+      "reactions": {},
+      "grounding": null,
+      "trigger": "Setelah testnet dan Series A funding【History — EV-008 s.d EV-012】",
+      "evidence": "Mainnet beta untuk developer diluncurkan Mei 2021; Arbitrum One publik 31 Agustus 2021【History — EV-012, EV-013】",
+      "decision": "Membuka akses publik ke Arbitrum One",
+      "immediate_result": "Arbitrum menjadi L2 terbesar; Uniswap, Aave, Curve deployment【History — EV-016】",
+      "long_term_impact": "Posisi dominan di L2 DeFi",
+      "supporting_dataset": "Phase 3 (EV-012, EV-013, EV-016), Phase 8 (Market — Market Position)",
+      "open_threads": null
+    },
+    {
+      "project": "Arbitrum",
+      "date": "2023",
+      "title": "Token Launch dan DAO Formation",
+      "motivation": null,
+      "constraint": null,
+      "pressure": null,
+      "tradeoff": null,
+      "alternatives": null,
+      "expectation_vs_actual": null,
+      "reactions": {},
+      "grounding": null,
+      "trigger": "Kebutuhan untuk desentralisasi governance",
+      "evidence": "TGE ARB 16 Maret 2023, airdrop 23 Maret 2023, pembentukan Arbitrum Foundation Maret 2023【History — EV-024, EV-025, EV-026】",
+      "decision": "Meluncurkan token governance dan membentuk DAO",
+      "immediate_result": "ARB token mulai diperdagangkan; transisi ke DAO governance",
+      "long_term_impact": "Community-driven decision making; treasury dikelola oleh DAO",
+      "supporting_dataset": "Phase 3 (EV-024, EV-025, EV-026), Phase 6 (Token — TGE)",
+      "open_threads": null
+    },
+    {
+      "project": "Arbitrum",
+      "date": "2023",
+      "title": "AIP-1 dan Pembelajaran Governance",
+      "motivation": null,
+      "constraint": null,
+      "pressure": null,
+      "tradeoff": null,
+      "alternatives": null,
+      "expectation_vs_actual": null,
+      "reactions": {},
+      "grounding": null,
+      "trigger": "Proposal pertama DAO diajukan 1 April 2023【History — EV-027】",
+      "evidence": "AIP-1 ditolak oleh DAO dengan 118M suara menolak vs 21M mendukung【History — EV-028】",
+      "decision": "DAO menolak proposal yang dianggap terlalu luas",
+      "immediate_result": "Proposal dipecah menjadi bagian-bagian lebih kecil",
+      "long_term_impact": "Pembelajaran tata kelola; reformasi proses governance",
+      "supporting_dataset": "Phase 3 (EV-027, EV-028), Phase 9 (Governance Decision Pattern)",
+      "open_threads": null
+    },
+    {
+      "project": "Arbitrum",
+      "date": "2024-2025",
+      "title": "Arbitrum Expansion Program (AEP) dengan Fee Share",
+      "motivation": null,
+      "constraint": null,
+      "pressure": null,
+      "tradeoff": null,
+      "alternatives": null,
+      "expectation_vs_actual": null,
+      "reactions": {},
+      "grounding": null,
+      "trigger": "Kebutuhan untuk monetisasi ekosistem dan menarik Orbit chains",
+      "evidence": "AEP memperbolehkan tim mengadopsi tech stack Arbitrum; chains di luar One dan Nova harus membayar 10% net revenue ke Foundation; 10% fees from Robinhood Chain flows to Arbitrum ecosystem",
+      "decision": "Menerapkan model revenue sharing untuk Orbit chains",
+      "immediate_result": "60+ Orbit chains; Robinhood Chain live Juli 2026",
+      "long_term_impact": "Revenue stream yang sustainable",
+      "supporting_dataset": "Phase 5 (Revenue — AEP License Fees), Phase 7 (Major Integrations — Robinhood Chain)",
+      "open_threads": null
+    },
+    {
+      "project": "Arbitrum",
+      "date": "2025-2026",
+      "title": "Active Treasury Management melalui RWA",
+      "motivation": null,
+      "constraint": null,
+      "pressure": null,
+      "tradeoff": null,
+      "alternatives": null,
+      "expectation_vs_actual": null,
+      "reactions": {},
+      "grounding": null,
+      "trigger": "Treasury idle besar (~$1.3B) yang tidak produktif",
+      "evidence": "DAO actively deploys capital into low-risk yield-generating strategies; STEP program mengalokasikan puluhan juta ARB ke RWAs",
+      "decision": "Mengelola treasury seperti institutional capital",
+      "immediate_result": "~$2.28M interest generated tanpa menjual token",
+      "long_term_impact": "Treasury dari cost center menjadi revenue engine",
+      "supporting_dataset": "Phase 5 (Treasury), Phase 9 (Financial Decision Pattern) Evolution Pattern Dari Research Lab ke Perusahaan ke DAO (2014–2023) · 2014–2018: Riset akademis di Princeton University【History — EV-001, EV-002】 · 2018–2021: Perusahaan (Offchain Labs) dengan pendanaan VC【History — EV-003, EV-005, EV-011】 · 2021–2023: Mainnet live, produk matang【History — EV-013, EV-022】 · 2023–Sekarang: DAO governance dengan ARB token【History — EV-024, EV-025, EV-026】 Dari Single Chain ke Multi-Chain Ecosystem (2021–2026) · 2021: Arbitrum One【History — EV-013】 · 2022: Arbitrum Nova【History — EV-021】 · 2024–2026: 60+ Orbit chains【Phase 8 — Adoption Metrics】 Dari DeFi-First ke Multi-Sektor (2021–2026) · 2021–2023: Fokus DeFi (Uniswap, Aave, GMX)【History — EV-016】 · 2024–2025: Ekspansi ke Gaming (Arbitrum Gaming Ventures), RWA (Franklin Templeton, BlackRock, WisdomTree)【Phase 7 — Applications】 · 2026: Institusional (Robinhood Chain, LG, Lotte)【History — EV-041】 Dari Centralized ke Desentralisasi Progresif (2021–2026) · 2021–2022: Sequencer dan infrastruktur dikelola Offchain Labs · 2023: Token launch dan DAO formation【History — EV-024, EV-025, EV-026】 · 2025–2026: Security Council elections【History — EV-034, EV-035, EV-038】; Stage 1 rollup status【Phase 8 — Market Timeline】 Dari Treasury Pasif ke Active Treasury Management (2023–2026) · 2023: Treasury idle, belum terkelola · 2024–2025: STEP program, diversifikasi ke RWAs · 2026: Active yield generation ~$2.28M",
+      "open_threads": null
+    },
+    {
+      "project": "Arbitrum",
+      "date": "April 2026",
+      "title": "Emergency Freeze oleh Security Council",
+      "motivation": null,
+      "constraint": null,
+      "pressure": null,
+      "tradeoff": null,
+      "alternatives": null,
+      "expectation_vs_actual": null,
+      "reactions": {},
+      "grounding": null,
+      "trigger": "KelpDAO exploit ~$290M【History — EV-036】",
+      "evidence": "Security Council memindahkan 30,766 ETH (~$71M) ke wallet tanpa owner",
+      "decision": "Menggunakan emergency powers untuk membekukan dana hasil exploit",
+      "immediate_result": "Dana $71M dibekukan; restraining order dari pengadilan AS【History — EV-037】",
+      "long_term_impact": "Debat tentang desentralisasi vs keamanan",
+      "supporting_dataset": "Phase 3 (EV-036, EV-037), Phase 9 (Risk Response Pattern)",
+      "open_threads": null
     }
   ]
 }

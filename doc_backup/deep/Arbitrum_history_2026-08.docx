@@ -1,0 +1,1966 @@
+HISTORICAL INTELLIGENCE DATASET — ARBITRUM
+
+---
+
+EVENT LIST
+
+---
+
+Event ID
+
+EV-001
+
+Date
+
+2014
+
+Event Name
+
+Awal Riset Arbitrum sebagai Proyek Kelas di Princeton
+
+Event Type
+
+Research
+
+Description
+
+Arbitrum awalnya dikembangkan sebagai proyek kelas di Princeton University pada tahun 2014. Riset kemudian dilanjutkan kembali pada tahun 2017.
+
+Participants
+
+Princeton University
+
+Location
+
+Princeton University, AS
+
+Status
+
+Completed
+
+Immediate Result
+
+Dasar akademis untuk pengembangan Arbitrum.
+
+Sources
+
+https://archive.devcon.org/resources/6/on-the-path-to-a-rollup-centric-future.pdf
+
+---
+
+Event ID
+
+EV-002
+
+Date
+
+2018-07
+
+Event Name
+
+Publikasi Paper Arbitrum di USENIX Security
+
+Event Type
+
+Research
+
+Description
+
+Paper berjudul "Arbitrum: Scalable, private smart contracts" dipresentasikan di USENIX Security Symposium pada Juli 2018. Penulis paper adalah Harry Kalodner, Steven Goldfeder, dan Ed Felten.
+
+Participants
+
+Harry Kalodner; Steven Goldfeder; Ed Felten; Princeton University; USENIX
+
+Location
+
+USENIX Security Symposium
+
+Status
+
+Completed
+
+Immediate Result
+
+Publikasi akademis yang menjadi fondasi teknologi Arbitrum.
+
+Sources
+
+https://www.usenix.org/
+https://dlnext.acm.org/
+https://pages.cs.wisc.edu/
+
+---
+
+Event ID
+
+EV-003
+
+Date
+
+2018-08
+
+Event Name
+
+Pendirian Offchain Labs
+
+Event Type
+
+Founding
+
+Description
+
+Offchain Labs didirikan oleh Ed Felten, Steven Goldfeder, dan Harry Kalodner pada Agustus 2018. Perusahaan ini dibentuk untuk mengembangkan solusi skalabilitas untuk Ethereum.
+
+Participants
+
+Ed Felten; Steven Goldfeder; Harry Kalodner; Offchain Labs
+
+Location
+
+AS
+
+Status
+
+Completed
+
+Immediate Result
+
+Terbentuknya entitas pengembang utama Arbitrum.
+
+Sources
+
+https://messari.io/project/arbitrum/profile
+https://archive.devcon.org/resources/6/on-the-path-to-a-rollup-centric-future.pdf
+
+---
+
+Event ID
+
+EV-004
+
+Date
+
+2018-10
+
+Event Name
+
+Posting Perdana Arbitrum di EthResearch
+
+Event Type
+
+Community
+
+Description
+
+Arbitrum pertama kali diposting di forum EthResearch pada Oktober 2018.
+
+Participants
+
+Offchain Labs; EthResearch
+
+Location
+
+Online
+
+Status
+
+Completed
+
+Immediate Result
+
+Pengenalan Arbitrum ke komunitas riset Ethereum.
+
+Sources
+
+https://archive.devcon.org/resources/6/on-the-path-to-a-rollup-centric-future.pdf
+
+---
+
+Event ID
+
+EV-005
+
+Date
+
+2019-04-02
+
+Event Name
+
+Seed Round Pendanaan
+
+Event Type
+
+Funding
+
+Description
+
+Offchain Labs menyelesaikan seed round pendanaan sebesar $3.7 juta. Investor: Pantera Capital, Compound Ventures, Raphael Ouzan, Jake Seid.
+
+Participants
+
+Offchain Labs; Pantera Capital; Compound VC; Raphael Ouzan; Jake Seid
+
+Location
+
+AS
+
+Status
+
+Completed
+
+Immediate Result
+
+Pendanaan awal untuk pengembangan Arbitrum.
+
+Sources
+
+https://defillama.com/chain/Arbitrum
+https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738
+
+---
+
+Event ID
+
+EV-006
+
+Date
+
+2019-04-15
+
+Event Name
+
+Pengenalan Arbitrum sebagai Solusi Skalabilitas
+
+Event Type
+
+Product
+
+Description
+
+Offchain Labs memperkenalkan Arbitrum sebagai solusi skalabilitas inti pada 15 April 2019.
+
+Participants
+
+Offchain Labs
+
+Location
+
+Online
+
+Status
+
+Completed
+
+Immediate Result
+
+Pengumuman resmi solusi Arbitrum ke publik.
+
+Sources
+
+https://messari.io/project/arbitrum/profile
+https://medium.com/offchainlabs/introducing-arbitrum-86a3cfb8bdbf
+
+---
+
+Event ID
+
+EV-007
+
+Date
+
+2019-09-04
+
+Event Name
+
+Investasi Coinbase Ventures
+
+Event Type
+
+Funding
+
+Description
+
+Coinbase Ventures melakukan investasi di Arbitrum.
+
+Participants
+
+Offchain Labs; Coinbase Ventures
+
+Location
+
+AS
+
+Status
+
+Completed
+
+Immediate Result
+
+Dukungan dari venture capital exchange terkemuka.
+
+Sources
+
+https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738
+
+---
+
+Event ID
+
+EV-008
+
+Date
+
+2020-02
+
+Event Name
+
+Testnet Perdana Arbitrum
+
+Event Type
+
+Launch
+
+Description
+
+Arbitrum Go-Live pada testnet untuk pertama kalinya pada Februari 2020. Testnet awal hanya mendukung DAC (Data Availability Committees) dan Application Specific Chains, tanpa deployment kontrak.
+
+Participants
+
+Offchain Labs
+
+Location
+
+Online
+
+Status
+
+Completed
+
+Immediate Result
+
+Akses awal pengembang ke infrastruktur Arbitrum.
+
+Sources
+
+https://messari.io/project/arbitrum/profile
+https://medium.com/offchainlabs/arbitrum-rollup-is-live-on-testnet-c5fed0d0a266
+https://archive.devcon.org/resources/6/on-the-path-to-a-rollup-centric-future.pdf
+
+---
+
+Event ID
+
+EV-009
+
+Date
+
+2020-10
+
+Event Name
+
+Testnet dengan General Contract Deployment
+
+Event Type
+
+Launch
+
+Description
+
+Testnet baru dirilis dengan kemampuan general contract deployment dan dibuka untuk semua peserta.
+
+Participants
+
+Offchain Labs
+
+Location
+
+Online
+
+Status
+
+Completed
+
+Immediate Result
+
+Pengembang dapat menyebarkan kontrak secara umum di testnet.
+
+Sources
+
+https://messari.io/project/arbitrum/profile
+https://medium.com/offchainlabs/arbitrum-rollup-testnet-full-featured-and-open-to-all-da3255b562ea
+https://archive.devcon.org/resources/6/on-the-path-to-a-rollup-centric-future.pdf
+
+---
+
+Event ID
+
+EV-010
+
+Date
+
+2021-03
+
+Event Name
+
+Testnet Mainnet Release Candidate
+
+Event Type
+
+Launch
+
+Description
+
+Testnet baru dirilis sebagai kandidat mainnet, dengan tambahan arbitrary messaging bridge.
+
+Participants
+
+Offchain Labs
+
+Location
+
+Online
+
+Status
+
+Completed
+
+Immediate Result
+
+Persiapan menuju mainnet publik.
+
+Sources
+
+https://archive.devcon.org/resources/6/on-the-path-to-a-rollup-centric-future.pdf
+
+---
+
+Event ID
+
+EV-011
+
+Date
+
+2021-04-01
+
+Event Name
+
+Series A Pendanaan
+
+Event Type
+
+Funding
+
+Description
+
+Offchain Labs mengumpulkan $20 juta dalam Series A. Investor: Polychain Capital dan lainnya.
+
+Participants
+
+Offchain Labs; Polychain Capital; Pantera Capital
+
+Location
+
+AS
+
+Status
+
+Completed
+
+Immediate Result
+
+Ekspansi tim dan pengembangan.
+
+Sources
+
+https://defillama.com/chain/Arbitrum
+https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738
+
+---
+
+Event ID
+
+EV-012
+
+Date
+
+2021-05
+
+Event Name
+
+Mainnet Beta untuk Developer
+
+Event Type
+
+Launch
+
+Description
+
+Mainnet beta diluncurkan dan dibuka untuk developer. Tim saat itu hanya terdiri dari 12 orang. Sequencer ditambahkan.
+
+Participants
+
+Offchain Labs
+
+Location
+
+Online
+
+Status
+
+Completed
+
+Immediate Result
+
+Developer dapat menyebarkan aplikasi di mainnet untuk pertama kalinya.
+
+Sources
+
+https://messari.io/project/arbitrum/profile
+https://medium.com/offchainlabs/wen-arbitrum-634969c14713
+https://archive.devcon.org/resources/6/on-the-path-to-a-rollup-centric-future.pdf
+
+---
+
+Event ID
+
+EV-013
+
+Date
+
+2021-08-31
+
+Event Name
+
+Launch Arbitrum One Mainnet Publik
+
+Event Type
+
+Launch
+
+Description
+
+Arbitrum One diluncurkan ke publik pada 31 Agustus 2021, memungkinkan pengguna dan protokol berinteraksi dengan jaringan. Arbitrum One adalah optimistic rollup general-purpose.
+
+Participants
+
+Offchain Labs; Steven Goldfeder
+
+Location
+
+Online
+
+Status
+
+Completed
+
+Immediate Result
+
+Akses publik ke Arbitrum One; Arbitrum menjadi Layer 2 terbesar.
+
+Sources
+
+https://arbitrum.io/rollup
+https://offchain.medium.com/mainnet-for-everyone-27ce0f67c85e
+https://www.theblock.co/post/116148/ethereum-scaling-solution-arbitrum-launches-mainnet-raises-120-million-funding
+https://forklog.com/
+
+---
+
+Event ID
+
+EV-014
+
+Date
+
+2021-08-31
+
+Event Name
+
+Series B Pendanaan $120 Juta
+
+Event Type
+
+Funding
+
+Description
+
+Offchain Labs mengumumkan Series B sebesar $120 juta dengan valuasi $1.2 miliar (unicorn). Dipimpin oleh Lightspeed Venture Partners. Partisipasi: Polychain Capital, Ribbit Capital, Redpoint Ventures, Pantera Capital, Alameda Research, Mark Cuban.
+
+Participants
+
+Offchain Labs; Lightspeed Venture Partners; Polychain Capital; Ribbit Capital; Redpoint Ventures; Pantera Capital; Alameda Research; Mark Cuban
+
+Location
+
+AS
+
+Status
+
+Completed
+
+Immediate Result
+
+Pendanaan untuk ekspansi tim dan R&D.
+
+Sources
+
+https://www.theblock.co/post/116148/ethereum-scaling-solution-arbitrum-launches-mainnet-raises-120-million-funding
+https://defillama.com/chain/Arbitrum
+https://forklog.com/
+
+---
+
+Event ID
+
+EV-015
+
+Date
+
+2021-08-31
+
+Event Name
+
+Ravi Mhatre Bergabung dengan Board Offchain Labs
+
+Event Type
+
+Organization
+
+Description
+
+Ravi Mhatre, co-founder Lightspeed Venture Partners, bergabung dengan board Offchain Labs sebagai bagian dari kesepakatan Series B.
+
+Participants
+
+Offchain Labs; Lightspeed Venture Partners; Ravi Mhatre
+
+Location
+
+AS
+
+Status
+
+Completed
+
+Immediate Result
+
+Perubahan komposisi board Offchain Labs.
+
+Sources
+
+https://www.theblock.co/post/116148/ethereum-scaling-solution-arbitrum-launches-mainnet-raises-120-million-funding
+
+---
+
+Event ID
+
+EV-016
+
+Date
+
+2021-09
+
+Event Name
+
+Deployment Uniswap, Curve, Aave, Sushi di Arbitrum
+
+Event Type
+
+Integration
+
+Description
+
+Dalam beberapa bulan setelah mainnet, protokol DeFi besar seperti Uniswap, Curve, Aave, dan Sushi melakukan deployment di Arbitrum One.
+
+Participants
+
+Arbitrum One; Uniswap; Curve; Aave; Sushi
+
+Location
+
+Online
+
+Status
+
+Completed
+
+Immediate Result
+
+Ekosistem DeFi Arbitrum berkembang pesat.
+
+Sources
+
+https://messari.io/project/arbitrum/profile
+https://uniswap.org/blog/uniswap-arbitrum-alpha
+https://twitter.com/CurveFinance/status/1437649791090110465
+https://twitter.com/arbitrum/status/1504148889057828870
+
+---
+
+Event ID
+
+EV-017
+
+Date
+
+2022-04
+
+Event Name
+
+Nitro Testnet Diluncurkan
+
+Event Type
+
+Launch
+
+Description
+
+Nitro testnet diluncurkan pada April 2022.
+
+Participants
+
+Offchain Labs
+
+Location
+
+Online
+
+Status
+
+Completed
+
+Immediate Result
+
+Pengujian teknologi Nitro sebelum mainnet.
+
+Sources
+
+https://archive.devcon.org/resources/6/on-the-path-to-a-rollup-centric-future.pdf
+
+---
+
+Event ID
+
+EV-018
+
+Date
+
+2022-06-22
+
+Event Name
+
+Arbitrum Odyssey Dimulai
+
+Event Type
+
+Community
+
+Description
+
+Acara 8 minggu Arbitrum Odyssey dimulai 22 Juni 2022. Pekan pertama adalah Bridge Week (21-27 Juni). Acara memberikan reward NFT kepada pengguna yang berinteraksi dengan protokol Arbitrum.
+
+Participants
+
+Offchain Labs; Arbitrum; berbagai protokol Arbitrum
+
+Location
+
+Online
+
+Status
+
+Cancelled
+
+Immediate Result
+
+Peningkatan aktivitas pengguna dan volume transaksi.
+
+Sources
+
+https://www.theblock.co/post/154762/arbitrum-fees-rose-higher-than-ethereum-mainnet-for-several-hours
+https://www.chaincatcher.com/
+https://foresightnews.pro/
+
+---
+
+Event ID
+
+EV-019
+
+Date
+
+2022-06-29
+
+Event Name
+
+Arbitrum Odyssey Dihentikan Sementara
+
+Event Type
+
+Community
+
+Description
+
+Arbitrum Odyssey dihentikan pada 29 Juni 2022 karena lonjakan gas fee akibat congestion. Odyssey akan tetap ditahan sampai Arbitrum melakukan deploy Nitro.
+
+Participants
+
+Offchain Labs; Arbitrum
+
+Location
+
+Online
+
+Status
+
+Completed
+
+Immediate Result
+
+Penghentian sementara acara komunitas.
+
+Sources
+
+https://www.theblock.co/post/154762/arbitrum-fees-rose-higher-than-ethereum-mainnet-for-several-hours
+https://www.blocktempo.com/
+https://www.chaincatcher.com/
+
+---
+
+Event ID
+
+EV-020
+
+Date
+
+2022-07
+
+Event Name
+
+Arbitrum Nova Diluncurkan untuk Developer
+
+Event Type
+
+Launch
+
+Description
+
+Arbitrum Nova chain diluncurkan untuk developer pada Juli 2022. Data Availability Committees (DAC) kembali digunakan. Arbitrum Rinkeby di-upgrade ke Nitro.
+
+Participants
+
+Offchain Labs
+
+Location
+
+Online
+
+Status
+
+Completed
+
+Immediate Result
+
+Akses developer ke Nova.
+
+Sources
+
+https://archive.devcon.org/resources/6/on-the-path-to-a-rollup-centric-future.pdf
+
+---
+
+Event ID
+
+EV-021
+
+Date
+
+2022-08-09
+
+Event Name
+
+Arbitrum Nova Diluncurkan ke Publik
+
+Event Type
+
+Launch
+
+Description
+
+Arbitrum Nova diluncurkan ke publik pada 9 Agustus 2022. Nova adalah chain Layer 2 berbasis AnyTrust yang dioptimalkan untuk gaming dan social applications.
+
+Participants
+
+Offchain Labs
+
+Location
+
+Online
+
+Status
+
+Completed
+
+Immediate Result
+
+Chain kedua di ekosistem Arbitrum tersedia untuk publik.
+
+Sources
+
+https://research.nansen.ai/articles/uncovering-the-potential-of-arbitrum-nova
+https://beincrypto.com/
+https://siliconangle.com/
+
+---
+
+Event ID
+
+EV-022
+
+Date
+
+2022-08-31
+
+Event Name
+
+Upgrade Arbitrum One ke Arbitrum Nitro
+
+Event Type
+
+Technology
+
+Description
+
+Arbitrum One di-upgrade ke Nitro stack pada 31 Agustus 2022. Upgrade dijadwalkan 10:30 AM ET dengan 2-4 jam downtime.
+
+Participants
+
+Offchain Labs; Arbitrum One
+
+Location
+
+Online
+
+Status
+
+Completed
+
+Immediate Result
+
+Throughput meningkat, gas fees turun, cross-chain communication ditingkatkan.
+
+Sources
+
+https://blog.arbitrum.io/
+https://medium.com/offchainlabs/arbitrum-nitro-one-small-step-for-l2-one-giant-leap-for-ethereum-bc9108047450
+https://www.investing.com/news/cryptocurrency-news/ethereum-eth-scaling-solution-arbitrum-schedules-august-31-for-nitro-upgrade-2882551
+
+---
+
+Event ID
+
+EV-023
+
+Date
+
+2023-02
+
+Event Name
+
+Pengumuman Token ARB
+
+Event Type
+
+Token
+
+Description
+
+Arbitrum mengumumkan token ARB pada Februari 2023.
+
+Participants
+
+Offchain Labs; Arbitrum
+
+Location
+
+Online
+
+Status
+
+Completed
+
+Immediate Result
+
+Persiapan untuk TGE dan airdrop.
+
+Sources
+
+https://messari.io/project/arbitrum/profile
+
+---
+
+Event ID
+
+EV-024
+
+Date
+
+2023-03-16
+
+Event Name
+
+Token Generation Event (TGE) ARB
+
+Event Type
+
+Token
+
+Description
+
+Token Generation Event ARB terjadi pada 16 Maret 2023.
+
+Participants
+
+Arbitrum; Offchain Labs
+
+Location
+
+Online
+
+Status
+
+Completed
+
+Immediate Result
+
+ARB token secara resmi tercipta.
+
+Sources
+
+https://docs.arbitrum.foundation
+
+---
+
+Event ID
+
+EV-025
+
+Date
+
+2023-03-23
+
+Event Name
+
+Airdrop ARB dan Listing di Exchange
+
+Event Type
+
+Token
+
+Description
+
+Airdrop ARB dilaksanakan pada 23 Maret 2023. 1.16 miliar ARB token di-airdrop ke pengguna yang eligible. Listing di Binance, Coinbase, BitMEX, Bitfinex, Kraken, Uniswap.
+
+Participants
+
+Arbitrum; Binance; Coinbase; BitMEX; Bitfinex; Kraken; Uniswap
+
+Location
+
+Online
+
+Status
+
+Completed
+
+Immediate Result
+
+ARB token mulai diperdagangkan; Arbitrum bertransisi ke DAO.
+
+Sources
+
+https://www.binance.com/en-AE/feed/post/339098
+https://www.nasdaq.com/
+https://getblock.net/
+https://docs.arbitrum.foundation
+
+---
+
+Event ID
+
+EV-026
+
+Date
+
+2023-03
+
+Event Name
+
+Pembentukan Arbitrum Foundation
+
+Event Type
+
+Organization
+
+Description
+
+Arbitrum Foundation didirikan pada Maret 2023 sebagai Cayman Islands foundation company. Bertugas mengembangkan dan mengelola ekosistem Arbitrum.
+
+Participants
+
+Arbitrum Foundation; Campbell Law; Edward Noyons; Ani Banerjee
+
+Location
+
+Cayman Islands
+
+Status
+
+Completed
+
+Immediate Result
+
+Entitas formal untuk mengelola ekosistem dan mendukung ArbitrumDAO.
+
+Sources
+
+https://pitchbook.com/
+https://www.crunchbase.com/
+https://www.cbinsights.com/
+
+---
+
+Event ID
+
+EV-027
+
+Date
+
+2023-04-01
+
+Event Name
+
+AIP-1 Proposal Diajukan
+
+Event Type
+
+Governance
+
+Description
+
+Arbitrum Improvement Proposal 1 (AIP-1) diajukan pada 1 April 2023 untuk memperkenalkan ArbitrumDAO dan meminta 7.5亿 ARB untuk special grant program.
+
+Participants
+
+ArbitrumDAO; Arbitrum Foundation
+
+Location
+
+Online
+
+Status
+
+Completed (ditolak/dibatalkan)
+
+Immediate Result
+
+Kontroversi karena proposal dianggap terlalu luas; dipecah menjadi beberapa bagian.
+
+Sources
+
+https://www.chaincatcher.com/
+https://www.bitpush.news/
+https://www.financialexpress.com/
+
+---
+
+Event ID
+
+EV-028
+
+Date
+
+2023-04-17
+
+Event Name
+
+AIP-1 Ditolak oleh DAO
+
+Event Type
+
+Governance
+
+Description
+
+AIP-1 proposal ditolak oleh DAO dengan 118 juta suara menolak dan 21 juta mendukung.
+
+Participants
+
+ArbitrumDAO; Arbitrum Foundation
+
+Location
+
+Online
+
+Status
+
+Completed
+
+Immediate Result
+
+Proposal pertama DAO ditolak; pembelajaran tata kelola.
+
+Sources
+
+https://www.financialexpress.com/
+
+---
+
+Event ID
+
+EV-029
+
+Date
+
+2024-09-03
+
+Event Name
+
+Arbitrum Stylus Live di Mainnet
+
+Event Type
+
+Technology
+
+Description
+
+Arbitrum Stylus diaktifkan di Arbitrum One dan Nova mainnets pada 3 September 2024. Stylus membawa dukungan WASM untuk smart contract dalam Rust, C, C++.
+
+Participants
+
+Arbitrum Foundation; Offchain Labs
+
+Location
+
+Online
+
+Status
+
+Completed
+
+Immediate Result
+
+Developer dapat menggunakan multi-language smart contracts di Arbitrum.
+
+Sources
+
+https://blog.arbitrum.io/arbitrum-stylus-mainnet/
+https://www.linkedin.com/
+https://www.gate.tv/
+
+---
+
+Event ID
+
+EV-030
+
+Date
+
+2024-09-09
+
+Event Name
+
+NFT Minting Perdana Stylus
+
+Event Type
+
+Community
+
+Description
+
+NFT pertama berbasis Stylus, dirancang oleh seniman Jimena Buena Vita, dibuka untuk mint pada 9 September 2024.
+
+Participants
+
+Arbitrum Foundation; Jimena Buena Vita
+
+Location
+
+Online
+
+Status
+
+Completed
+
+Immediate Result
+
+Perayaan peluncuran Stylus.
+
+Sources
+
+https://blog.arbitrum.io/arbitrum-stylus-mainnet/
+https://www.gate.tv/
+
+---
+
+Event ID
+
+EV-031
+
+Date
+
+2025-08-01
+
+Event Name
+
+Arbitrum Audit Subsidy Program Diluncurkan
+
+Event Type
+
+Security
+
+Description
+
+Arbitrum Audit Subsidy Program diluncurkan dengan alokasi $10M dalam ARB selama 12 bulan untuk mensubsidi audit smart contract pihak ketiga.
+
+Participants
+
+Arbitrum Foundation; ArbitrumDAO
+
+Location
+
+Online
+
+Status
+
+Ongoing
+
+Immediate Result
+
+12 audit firm disetujui; proyek di ekosistem dapat mengajukan subsidi audit.
+
+Sources
+
+https://blog.arbitrum.foundation
+
+---
+
+Event ID
+
+EV-032
+
+Date
+
+2025-11-27
+
+Event Name
+
+AGV Council Elections Dimulai
+
+Event Type
+
+Governance
+
+Description
+
+Pemilihan AGV (Arbitrum Gaming Ventures) Council dimulai 27 November 2025.
+
+Participants
+
+ArbitrumDAO; Arbitrum Gaming Ventures
+
+Location
+
+Online
+
+Status
+
+Completed
+
+Immediate Result
+
+Terbentuknya council untuk gaming ventures.
+
+Sources
+
+https://defillama.com/
+
+---
+
+Event ID
+
+EV-033
+
+Date
+
+2026-01-25
+
+Event Name
+
+Exploit $17M di SwapNet dan Aperture Finance
+
+Event Type
+
+Security
+
+Description
+
+Pada 25 Januari 2026, terdeteksi transaksi mencurigakan menargetkan kontrak SwapNet dan Aperture Finance di Ethereum, Arbitrum, Base, dan BSC dengan total kerugian melebihi $17 juta.
+
+Participants
+
+SwapNet; Aperture Finance; Arbitrum; Ethereum; Base; BSC
+
+Location
+
+Cross-chain
+
+Status
+
+Completed
+
+Immediate Result
+
+Kerugian finansial bagi protokol yang terkena dampak.
+
+Sources
+
+https://blocksec.com/
+
+---
+
+Event ID
+
+EV-034
+
+Date
+
+2026-03-22
+
+Event Name
+
+Nominee Selection Phase Security Council Elections
+
+Event Type
+
+Governance
+
+Description
+
+Arbitrum memasuki fase Nominee Selection untuk Security Council elections Maret 2026, berlangsung 22-29 Maret.
+
+Participants
+
+ArbitrumDAO; Arbitrum Security Council
+
+Location
+
+Online
+
+Status
+
+Completed
+
+Immediate Result
+
+Kandidat untuk Security Council teridentifikasi.
+
+Sources
+
+https://l2beat.com/
+https://docs.arbitrum.foundation
+
+---
+
+Event ID
+
+EV-035
+
+Date
+
+2026-04-12 - 2026-05-03
+
+Event Name
+
+Security Council Election Voting
+
+Event Type
+
+Governance
+
+Description
+
+Voting untuk Security Council elections berlangsung 12 April - 3 Mei 2026.
+
+Participants
+
+ArbitrumDAO; Arbitrum Security Council
+
+Location
+
+Online
+
+Status
+
+Completed
+
+Immediate Result
+
+Enam anggota baru Security Council terpilih.
+
+Sources
+
+https://finance.yahoo.com/
+https://thedefiant.io/news/security/arbitrum-security-council-elections
+
+---
+
+Event ID
+
+EV-036
+
+Date
+
+2026-04-18
+
+Event Name
+
+KelpDAO Bridge Exploit
+
+Event Type
+
+Security
+
+Description
+
+KelpDAO menderita exploit bridge sekitar $290 juta pada 18 April 2026, terkait dengan peretas Korea Utara.
+
+Participants
+
+KelpDAO; Arbitrum; LayerZero; Aave
+
+Location
+
+Arbitrum
+
+Status
+
+Completed
+
+Immediate Result
+
+Security Council Arbitrum membekukan 30,766 ETH (~$71 juta) yang terkait dengan exploit.
+
+Sources
+
+https://newsletter.theblockcrypto.com/
+https://finance.yahoo.com/
+https://thedefiant.io/
+
+---
+
+Event ID
+
+EV-037
+
+Date
+
+2026-04-30
+
+Event Name
+
+Restraining Order dari Pengadilan AS terhadap Arbitrum DAO
+
+Event Type
+
+Legal
+
+Description
+
+Pengacara korban terorisme Korea Utara menyampaikan restraining order terhadap Arbitrum DAO pada 30 April 2026, melarang transfer 30,766 ETH yang dibekukan. Perintah ini diotorisasi oleh pengadilan federal New York.
+
+Participants
+
+Arbitrum DAO; Pengadilan Federal New York; Korban terorisme Korea Utara
+
+Location
+
+New York, AS
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Arbitrum DAO dilarang memindahkan $71 juta ETH yang dibekukan.
+
+Sources
+
+https://newsletter.theblockcrypto.com/
+https://finance.yahoo.com/
+https://thedefiant.io/
+
+---
+
+Event ID
+
+EV-038
+
+Date
+
+2026-05-05
+
+Event Name
+
+Pengumuman Hasil Security Council Election
+
+Event Type
+
+Governance
+
+Description
+
+Arbitrum DAO mengumumkan hasil Security Council election Maret 2026. Enam anggota baru: Michael Lewellen, DZack23, yoav.eth, bartek.eth, Pablo Sabbatella, Patrick Collins. Mereka resmi mengambil alih tugas signing pada 21 Mei 2026.
+
+Participants
+
+ArbitrumDAO; Michael Lewellen; DZack23; yoav.eth; bartek.eth; Pablo Sabbatella; Patrick Collins; Turnkey; Certora; L2BEAT
+
+Location
+
+Online
+
+Status
+
+Completed
+
+Immediate Result
+
+Komposisi Security Council berubah; enam anggota baru bertugas.
+
+Sources
+
+https://thedefiant.io/news/security/arbitrum-security-council-elections
+https://finance.yahoo.com/
+https://docs.arbitrum.foundation
+
+---
+
+Event ID
+
+EV-039
+
+Date
+
+2026-05-27
+
+Event Name
+
+Stake DAO Exploit di Arbitrum
+
+Event Type
+
+Security
+
+Description
+
+Stake DAO dieksploitasi di Arbitrum pada 27 Mei 2026. Attacker menggunakan deployer key untuk mencetak 5.4 triliun token vsdCRV palsu dan menukarnya dengan ether.
+
+Participants
+
+Stake DAO; Arbitrum
+
+Location
+
+Arbitrum
+
+Status
+
+Completed
+
+Immediate Result
+
+Kerugian bagi Stake DAO; sorotan pada risiko single-key security di DeFi.
+
+Sources
+
+https://www.bitget.com/
+https://bingx.com/
+https://www.kucoin.com/
+
+---
+
+Event ID
+
+EV-040
+
+Date
+
+2026-06-08
+
+Event Name
+
+On-Chain Vote Budget Proposal 2027
+
+Event Type
+
+Governance
+
+Description
+
+Arbitrum Foundation merilis proposal budget $43.5 juta untuk 2027; on-chain vote dimulai 8 Juni 2026.
+
+Participants
+
+Arbitrum Foundation; ArbitrumDAO
+
+Location
+
+Online
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Proses persetujuan budget tahunan.
+
+Sources
+
+https://coinmarketcap.com/
+
+---
+
+Event ID
+
+EV-041
+
+Date
+
+2026-07-01
+
+Event Name
+
+Robinhood Chain Diluncurkan di Arbitrum Orbit
+
+Event Type
+
+Integration
+
+Description
+
+Robinhood meluncurkan Layer 2 blockchain-nya di atas Arbitrum Orbit pada 1 Juli 2026. Robinhood Chain membawa 23 juta pengguna on-chain. Berbagi 10% net fees dengan ekosistem Arbitrum (8% ke DAO treasury, 2% ke Developer Guild).
+
+Participants
+
+Robinhood; Arbitrum Orbit; Arbitrum DAO; Developer Guild
+
+Location
+
+Online
+
+Status
+
+Completed
+
+Immediate Result
+
+Adopsi institusional besar-besaran ke ekosistem Arbitrum.
+
+Sources
+
+https://blog.thirdweb.com/
+https://www.kucoin.com/
+https://www.binance.com/
+
+---
+
+Event ID
+
+EV-042
+
+Date
+
+2026-07-13
+
+Event Name
+
+Lumi Finance Exploit di Arbitrum
+
+Event Type
+
+Security
+
+Description
+
+Lumi Finance di Arbitrum dieksploitasi pada 13 Juli 2026 dengan kerugian ~$270,000. Dilacak pada kerentanan logika di fungsi validateUserOp dari Sodium smart account contract (ERC4337).
+
+Participants
+
+Lumi Finance; Arbitrum; Sodium
+
+Location
+
+Arbitrum
+
+Status
+
+Completed
+
+Immediate Result
+
+Kerugian finansial bagi Lumi Finance.
+
+Sources
+
+https://bingx.com/
+
+---
+
+Event ID
+
+EV-043
+
+Date
+
+2026-07
+
+Event Name
+
+Rotasi Kunci Security Council dan Pengangkatan Patrick Collins
+
+Event Type
+
+Governance
+
+Description
+
+Patrick Collins dari Cyfrin diangkat sebagai anggota Security Council pada Juli 2026, menggantikan John Morrow yang diangkat pada periode yang sama tetapi kemudian di-remove.【Phase 2 — Entity Intelligence (inferensi dari forum)】
+
+Participants
+
+Arbitrum Security Council; Patrick Collins; John Morrow; Cyfrin
+
+Location
+
+Online
+
+Status
+
+Completed
+
+Immediate Result
+
+Perubahan komposisi Security Council.
+
+Sources
+
+https://forum.arbitrum.foundation
+
+---
+
+KATEGORI BERDASARKAN TAHUN
+
+2014
+
+· EV-001: Awal Riset Arbitrum sebagai Proyek Kelas di Princeton
+
+2018
+
+· EV-002: Publikasi Paper Arbitrum di USENIX Security
+· EV-003: Pendirian Offchain Labs
+· EV-004: Posting Perdana Arbitrum di EthResearch
+
+2019
+
+· EV-005: Seed Round Pendanaan
+· EV-006: Pengenalan Arbitrum sebagai Solusi Skalabilitas
+· EV-007: Investasi Coinbase Ventures
+
+2020
+
+· EV-008: Testnet Perdana Arbitrum
+· EV-009: Testnet dengan General Contract Deployment
+
+2021
+
+· EV-010: Testnet Mainnet Release Candidate
+· EV-011: Series A Pendanaan
+· EV-012: Mainnet Beta untuk Developer
+· EV-013: Launch Arbitrum One Mainnet Publik
+· EV-014: Series B Pendanaan $120 Juta
+· EV-015: Ravi Mhatre Bergabung dengan Board Offchain Labs
+· EV-016: Deployment Uniswap, Curve, Aave, Sushi di Arbitrum
+
+2022
+
+· EV-017: Nitro Testnet Diluncurkan
+· EV-018: Arbitrum Odyssey Dimulai
+· EV-019: Arbitrum Odyssey Dihentikan Sementara
+· EV-020: Arbitrum Nova Diluncurkan untuk Developer
+· EV-021: Arbitrum Nova Diluncurkan ke Publik
+· EV-022: Upgrade Arbitrum One ke Arbitrum Nitro
+
+2023
+
+· EV-023: Pengumuman Token ARB
+· EV-024: Token Generation Event (TGE) ARB
+· EV-025: Airdrop ARB dan Listing di Exchange
+· EV-026: Pembentukan Arbitrum Foundation
+· EV-027: AIP-1 Proposal Diajukan
+· EV-028: AIP-1 Ditolak oleh DAO
+
+2024
+
+· EV-029: Arbitrum Stylus Live di Mainnet
+· EV-030: NFT Minting Perdana Stylus
+
+2025
+
+· EV-031: Arbitrum Audit Subsidy Program Diluncurkan
+· EV-032: AGV Council Elections Dimulai
+
+2026
+
+· EV-033: Exploit $17M di SwapNet dan Aperture Finance
+· EV-034: Nominee Selection Phase Security Council Elections
+· EV-035: Security Council Election Voting
+· EV-036: KelpDAO Bridge Exploit
+· EV-037: Restraining Order dari Pengadilan AS terhadap Arbitrum DAO
+· EV-038: Pengumuman Hasil Security Council Election
+· EV-039: Stake DAO Exploit di Arbitrum
+· EV-040: On-Chain Vote Budget Proposal 2027
+· EV-041: Robinhood Chain Diluncurkan di Arbitrum Orbit
+· EV-042: Lumi Finance Exploit di Arbitrum
+· EV-043: Rotasi Kunci Security Council dan Pengangkatan Patrick Collins
+
+---
+
+RINGKASAN
+
+· Total Events: 43
+· Founding: 1 (EV-003)
+· Funding: 4 (EV-005, EV-007, EV-011, EV-014)
+· Technology: 4 (EV-022, EV-029, EV-017, EV-020)
+· Security: 5 (EV-031, EV-033, EV-036, EV-039, EV-042)
+· Governance: 8 (EV-027, EV-028, EV-032, EV-034, EV-035, EV-038, EV-040, EV-043)
+· Legal: 1 (EV-037)
+· Market / Token: 4 (EV-023, EV-024, EV-025, EV-041)
+· Launch: 8 (EV-008, EV-009, EV-010, EV-012, EV-013, EV-018, EV-019, EV-021)
+· Integration: 2 (EV-016, EV-041)
+· Organization: 3 (EV-015, EV-026, EV-030)
+· Community: 2 (EV-004, EV-030)
+· Research: 2 (EV-001, EV-002)
+· Other: 1 (EV-006)
+
+---
+
+Open Threads
+
+1. Tanggal Testnet Awal (EV-008) — Beberapa sumber menyebut Februari 2020, sementara sumber lain menyebut Mei 2021 untuk testnet yang tidak terbuka untuk publik. Kemungkinan ini merujuk pada testnet yang berbeda.
+2. Tanggal Launch Arbitrum Nova (EV-021) — Sumber menyebut 9 Agustus 2022 dan 10 Agustus 2022. Perbedaan ini mungkin karena zona waktu.
+3. Pendirian Arbitrum Foundation (EV-026) — Crunchbase mencantumkan Maret 2023; sumber lain hanya menyebut 2023. Detail pendirian yang lebih spesifik belum terverifikasi.
+4. Jumlah Pendanaan Series B (EV-014) — Sumber menyebut $100 juta dan $120 juta. Perbedaan ini mungkin karena $120 juta adalah angka yang dilaporkan secara umum, sementara $100 juta mungkin merujuk pada nilai tertentu dalam putaran.

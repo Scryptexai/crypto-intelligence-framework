@@ -9,7 +9,7 @@ structured against the `docs/` ontology.
 This is the master curation record for the dataset stored in `examples/`: what was added per batch,
 how the taxonomy is distributed, where the gaps are, and what is queued next.
 
-**Total curated projects: 1 (LayerZero, D13).**
+**Total curated projects: 2 (LayerZero D13, Arbitrum D14).**
 
 > **⚠ 2026-07-26 dataset reset (maintainer decision).** All prior projects — 12 Deep Dossiers (Ethereum,
 > Solana, BNB Chain, Cardano, Avalanche, Polkadot, Cosmos, dYdX, Aave, ether.fi, EigenLayer, Celestia) and
@@ -77,7 +77,48 @@ Intelligence non-trivial.
 
 | Project | Track | Phases done | Next phase | Notes |
 |---------|-------|--------------|------------|-------|
-| _(none — LayerZero completed all 11 phases 2026-07-26 and moved to Deep Dossiers as D13; awaiting next candidate)_ | | | | |
+| _(none — LayerZero (D13) and Arbitrum (D14) both complete and moved to Deep Dossiers; awaiting next candidate)_ | | | | |
+
+**Arbitrum (D14) — Track C, DeepSeek methodology, completed 2026-08-01.** First project run through
+**Track C** (`docs/Protocol/Phased-Research-Prompts.md` — DeepSeek methodology, maintainer decision
+2026-07-29): all 11 phases researched in one continuous DeepSeek chat (1M-token context, no per-phase
+re-upload needed — see that doc's rationale for the Gemini→DeepSeek switch), dropped into
+`data_project/Arbitrum/NN-<phasekey>.docx` per the hardened contract, and ingested via `./run.sh` with
+zero manual fixes required.
+
+Getting here required extending the pipeline itself, since Track C's actual output shape differs from
+Track A/B's (richer in some places, structured differently in others — not a defect, a genuinely
+different prompt design):
+- `tools/extract.py` — `extract_docx()` now falls back to reading a file as plain UTF-8 text when it
+  isn't a real OOXML zip (every Track C phase file turned out to be plain text saved with a `.docx`
+  extension, not an actual Word document); fenced (```` ``` ````) blocks are now preserved verbatim
+  through `normalise()`'s prose-reflow instead of having their spacing destroyed, since Phase 11's CIF
+  Manifest/Knowledge Dependency Graph/score formulas rely on exact alignment.
+- `tools/ingest.py` — `validate_phase_content()` now also accepts a `<TITLE> — <Name>` dataset header
+  (Track C's convention, alongside Track A/B's `PROJECT: <Name>`) and treats 3+ `Sources:` URLs or 3+
+  `【Phase — Section】` internal citations as valid evidence alongside inline `(HIGH)/(MEDIUM)/(LOW)` tags;
+  `phase_meta()` detects Track C's Phase 11 shape (a full "CIF Validation Report v3.0" — Manifest,
+  Coverage, Data Lineage, Knowledge Dependency Graph, Conflict Register, Confidence Assessment, CIF
+  Score — not just Track A/B's narrower Conflict Resolution merge pass) and labels the assembled
+  dossier's section correctly instead of mislabeling it; a `--model` flag lets the dossier's "Source:"
+  line credit DeepSeek instead of always assuming Gemini.
+- `tools/extract_decision_events.py` — `parse_keputusan_events()` added alongside the existing
+  `parse_events()` to recognize Track C's `Keputusan: <title> (<date>)` Decision Timeline blocks
+  (Trigger/Evidence/Decision/Immediate Result/Long-term Impact/Supporting Dataset), distinct from Track
+  A/B's `Decision Event:` shape (Motivation/Constraint/Pressure/Trade-off/Alternative(s)
+  Considered/Expectation vs. Actual/8-POV Stakeholder Reactions). Track C's prompt was never designed to
+  capture per-stakeholder reactions, so that field is left empty (`{}`) for these events rather than
+  guessed at — every event carries the union of both shapes' fields, unpopulated ones `null`.
+
+All three fixes verified against Arbitrum's real content before being trusted, not assumed from reading
+the prompt spec alone. `tools/sync_supabase.py` and the live `cif_decision_events` Supabase table were
+also extended with the six Track C-only fields (`trigger`, `decision_evidence`, `decision_text`,
+`immediate_result`, `long_term_impact`, `supporting_dataset`) so this data doesn't silently drop on sync.
+
+**One data gap, not a tooling gap:** `data_project/Arbitrum/11-conflict.docx` was initially an empty
+0-byte placeholder — the actual Phase 11 content (the CIF Validation Report) existed but had never been
+saved into the repo. Added afterward, verified against the fixed validator before committing. Full
+ingest then succeeded 11/11, no `--allow-partial` needed.
 
 **LayerZero Phase 1 — two source files, deliberately.** The first Gemini pass returned a rich but
 narrative/table-formatted report in English; a reformat pass produced a clean Indonesian Label:Value version.
@@ -452,6 +493,7 @@ _Tier: Deep · anchor projects with full causal history._
 | # | Project | Category | Era | Source | File | Raw source |
 |---|---------|----------|-----|--------|------|-----------|
 | D13 | LayerZero | Interoperability / Omnichain Messaging (Bridge, GMP, DVN security) | 2021– | Deep Research (Gemini + Claude-direct + DeepSeek), Format v3 Dependency Pipeline (11/11 phases) | `CaseStudies/LayerZero.md` | `doc_backup/inbox/phased/LayerZero/01..11-*.docx` (per-phase, archived individually to `doc_backup/deep/LayerZero_<phase>_2026-07.docx`); full prompt history in `doc_backup/inbox/phased/LayerZero/PROMPTS-LOG.md` |
+| D14 | Arbitrum | Layer-2 scaling solution (Optimistic Rollup) | 2018– | Deep Research (DeepSeek), Format v3 Dependency Pipeline Track C (11/11 phases) | `CaseStudies/Arbitrum.md` | `data_project/Arbitrum/01..11-*.docx`, archived individually to `doc_backup/deep/Arbitrum_<phase>_2026-08.docx` |
 
 _D1–D12 (Ethereum, Solana, BNB Chain, Cardano, Avalanche, Polkadot, Cosmos, dYdX, Aave, ether.fi, EigenLayer,
 Celestia) moved to `_archive_pre_v3/` in the 2026-07-26 dataset reset — see the note at the top of this file._

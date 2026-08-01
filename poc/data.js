@@ -2,9 +2,9 @@
 window.CIF = {
   "meta": {
     "schema": "cif-export/1",
-    "generated": "2026-07-27 22:13 UTC",
-    "projects": 1,
-    "deep": 1,
+    "generated": "2026-08-01 12:14 UTC",
+    "projects": 2,
+    "deep": 2,
     "summary": 0,
     "sentiment": 0,
     "patterns": 16,
@@ -19,6 +19,16 @@ window.CIF = {
       "era": "2021–",
       "tags": [
         "bridge"
+      ]
+    },
+    {
+      "n": "Arbitrum",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Arbitrum.md",
+      "cat": "Layer-2 scaling solution (Optimistic Rollup)",
+      "era": "2018–",
+      "tags": [
+        "l2"
       ]
     }
   ],

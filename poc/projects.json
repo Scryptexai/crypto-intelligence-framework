@@ -8,5 +8,15 @@
     "tags": [
       "bridge"
     ]
+  },
+  {
+    "n": "Arbitrum",
+    "tier": "Deep",
+    "file": "examples/CaseStudies/Arbitrum.md",
+    "cat": "Layer-2 scaling solution (Optimistic Rollup)",
+    "era": "2018–",
+    "tags": [
+      "l2"
+    ]
   }
 ]

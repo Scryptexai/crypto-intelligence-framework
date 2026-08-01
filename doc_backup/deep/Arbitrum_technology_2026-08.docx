@@ -1,0 +1,89 @@
+PROJECT: Arbitrum
+
+Architecture:
+
+· Optimistic rollup dengan arsitektur multi-chain: Arbitrum One (general-purpose optimistic rollup), Arbitrum Nova (AnyTrust chain untuk gaming dan social apps), dan Arbitrum Orbit (framework untuk custom L2/L3 chains) (HIGH) 【0†L18-L19】
+· Arbitrum Nitro: tech stack upgrade (Agustus 2022) yang menjadi fondasi bagi semua chain Arbitrum; meningkatkan throughput, mengurangi biaya, dan meningkatkan kompatibilitas EVM (HIGH) 【0†L18】【2†L61-L62】
+· Arbitrum One: Chain ID 42161; Arbitrum Nova: Chain ID 42170; Arbitrum Sepolia (testnet): Chain ID 421614 (HIGH) 【0†L26】
+· 30+ Arbitrum chains di luar Arbitrum One dengan model revenue-sharing per H1 2026 (HIGH) 【0†L27】
+
+Consensus Mechanism:
+
+· Mengandalkan Ethereum sebagai layer consensus (settlement layer) — batch transaksi diposting ke Ethereum mainnet (HIGH) 【0†L6-L7】
+· Fraud proof mechanism (optimistic rollup): transaksi diasumsikan valid kecuali terbukti curang melalui challenge period (HIGH) 【0†L6】
+· BoLD (Bounded Liquidity Delay) — diaktifkan di mainnet pada 12 Februari 2025; menggantikan whitelist validator dengan mekanisme permissionless; memungkinkan siapa pun berpartisipasi dalam validasi; mencapai Stage 1 desentralisasi dengan fraud proof permissionless (HIGH) 【2†L154-L157】
+· Sebelum BoLD, validasi menggunakan whitelist validator (HIGH) 【2†L155】
+
+VM / Execution Environment:
+
+· EVM-compatible (Ethereum Virtual Machine) — mendukung kontrak pintar yang ditulis dalam Solidity dan Vyper (HIGH) 【0†L7】
+· Stylus: WASM VM yang memungkinkan eksekusi kontrak pintar dalam Rust, C, dan C++ — alpha testnet Januari 2024, mainnet launch 3 September 2024 (HIGH) 【0†L18】【2†L142-L143】【2†L148-L149】
+· Stylus memungkinkan developer dari ekosistem non-Ethereum membangun di Arbitrum; NFT pertama powered by Stylus dirilis 9 September 2024 (HIGH) 【2†L149-L150】
+
+Languages/Frameworks:
+
+· Solidity, Vyper (EVM native) (HIGH) 【0†L7】
+· Rust, C, C++ (via Stylus WASM VM) (HIGH) 【0†L18】【2†L142】
+· Arbitrum Orbit: framework untuk membangun custom L2/L3 chains (HIGH) 【0†L18】【2†L87】
+· Arbitrum Nitro: tech stack yang mencakup Geth core (EVM execution) dan optimisasi khusus untuk rollup (HIGH) 【0†L18】
+
+Security Model:
+
+· Optimistic rollup dengan fraud proofs: transaksi diposting ke Ethereum, dengan periode challenge di mana validator dapat membuktikan kecurangan (HIGH) 【0†L6】
+· Security Council: 12 anggota yang dipilih oleh Arbitrum DAO melalui proses demokratis; bertanggung jawab atas keputusan sensitif-waktu dan tanggap darurat (HIGH) 【1†L52】
+· Security Council memiliki kekuasaan untuk emergency upgrade dan memodifikasi bridge contract — digunakan pada April 2026 untuk membekukan $71M ETH hasil exploit KelpDAO (HIGH) 【2†L175-L178】
+· BoLD (Bounded Liquidity Delay) — permissionless validation; meningkatkan desentralisasi dan keamanan network (HIGH) 【2†L154-L157】
+· Oversight and Transparency Committee (OAT): 5 anggota yang dipilih setiap tahun; bertanggung jawab memegang akuntabilitas Arbitrum OpCo Foundation (HIGH) 【1†L54】
+· The Arbitrum Foundation: badan hukum Cayman Islands foundation company yang mengelola treasury dan operasional, diatur oleh Arbitrum DAO (HIGH) 【1†L44】
+
+Audit History:
+
+· Tidak diungkap — tidak ditemukan informasi audit keamanan spesifik di sumber yang diakses (HIGH) 【0†L0】
+
+Scalability Approach:
+
+· Off-chain computation: transaksi dieksekusi di luar Ethereum, hanya batch data yang diposting ke mainnet (HIGH) 【0†L6】
+· Arbitrum Nitro: meningkatkan throughput transaksi dan mengurangi biaya melalui optimisasi teknis (HIGH) 【0†L18】【2†L61】
+· Arbitrum Nova (AnyTrust): menggunakan Data Availability Committee (DAC) alih-alih posting semua data ke Ethereum, mengurangi biaya untuk aplikasi throughput tinggi seperti gaming dan social (HIGH) 【0†L18】
+· Arbitrum Orbit: memungkinkan custom chains dengan konfigurasi spesifik untuk kebutuhan aplikasi tertentu (HIGH) 【0†L18】
+· 100+ chains live or in development per 2025 (HIGH) 【0†L26-L27】
+
+Known Limits:
+
+· Ketergantungan pada Ethereum untuk finality dan keamanan — batch posting ke Ethereum membatasi throughput dan meningkatkan latency (HIGH) 【0†L6】
+· Fraud proof mechanism memerlukan challenge period yang menambah latency finality (HIGH) 【0†L6】
+· Batch posting issue pada 7 Januari 2026: masalah infrastruktur mencegah posting batch ke mainnet (HIGH) 【2†L161】
+· Arbiscan outage pada 9 Maret 2026: block explorer tidak dapat diakses (HIGH) 【2†L165】
+· Arbitrum Sepolia testnet halt pada 24 Maret 2026: consensus failure selama ~14 jam akibat perbedaan eksekusi antara processor ARM dan x86 (HIGH) 【2†L169-L171】
+· Partial outage London cluster pada 22 Mei 2026: gangguan pada node di cluster London selama 1 jam 10 menit (HIGH) 【2†L195-L197】
+
+Protocol Evolution:
+
+· Arbitrum Nitro — Agustus 2022 — upgrade tech stack; meningkatkan throughput, mengurangi biaya, meningkatkan kompatibilitas EVM (HIGH) 【0†L18】【2†L61-L62】
+· Arbitrum Orbit — Oktober 2023 (mainnet-ready) — framework untuk custom L2/L3 chains (HIGH) 【0†L18】【2†L87】
+· Stylus alpha — Januari 2024 — WASM VM di testnet; memungkinkan kontrak dalam Rust, C, C++ (HIGH) 【0†L18】【2†L142】
+· Stylus mainnet — 3 September 2024 — mainnet launch di Arbitrum One dan Nova; bertepatan dengan ulang tahun ketiga Arbitrum (HIGH) 【2†L148-L149】
+· BoLD (Bounded Liquidity Delay) — 12 Februari 2025 — mainnet activation; menggantikan whitelist validator dengan permissionless validation; mencapai Stage 1 desentralisasi (HIGH) 【2†L154-L157】
+
+Current Roadmap:
+
+· Tidak diungkap secara eksplisit di sumber yang diakses — status terkini Stylus dan BoLD pasca-launch serta adopsi developer tidak terdokumentasi di sumber yang diberikan (HIGH) 【0†L0】
+
+Novelty Assessment:
+
+· Optimistic rollup: adaptasi dari konsep optimistic rollup yang pertama kali dipopulerkan oleh proyek seperti Optimism; Arbitrum membawa implementasi dengan Nitro yang mengintegrasikan Geth core untuk kompatibilitas EVM tinggi (HIGH) 【0†L6-L7】
+· Stylus: inovasi signifikan — WASM VM yang memungkinkan kontrak pintar dalam Rust, C, C++ di dalam L2; ini adalah pertama kalinya L2 mendukung WASM secara native di samping EVM (HIGH) 【0†L18】【2†L148-L149】
+· BoLD: mekanisme permissionless validation yang memungkinkan siapa pun berpartisipasi dalam fraud proof; meningkatkan desentralisasi L2 ke Stage 1 (HIGH) 【2†L154-L157】
+· Arbitrum Orbit: framework untuk custom chains dengan model revenue-sharing — memungkinkan enterprise dan developer membangun chain sendiri di atas Arbitrum (HIGH) 【0†L18】
+· AnyTrust (Arbitrum Nova): adaptasi dari konsep Data Availability Committee untuk mengurangi biaya, bukan inovasi fundamental tetapi implementasi praktis untuk gaming dan social apps (HIGH) 【0†L18】
+
+Open Threads
+
+· Total supply ARB: beberapa sumber menyebut 10 miliar (HIGH) 【0†L29】 tetapi belum diverifikasi dari sumber primer tokenomics.
+· Stylus adoption: mainnet launch September 2024, tetapi data adopsi dan developer activity pasca-launch tidak tersedia di sumber yang diakses.
+· BoLD impact: mainnet activation Februari 2025, tetapi dampak terhadap desentralisasi dan partisipasi validator tidak terdokumentasi di sumber yang diakses.
+· Core team size: Offchain Labs tidak mempublikasikan jumlah karyawan pasti; LinkedIn mencantumkan 11-50 tetapi ini tidak resmi (LOW) 【0†L13】.
+· Security Council members: dokumentasi menyebut 12 anggota, tetapi daftar lengkap nama anggota saat ini tidak tersedia di sumber yang diakses (HIGH) 【1†L52】.
+· Delegates Arbitrum DAO: ada banyak delegates, tetapi daftar lengkap dan periodenya tidak terdokumentasi di sumber yang diakses (HIGH) 【1†L52】.
+· Audit history: tidak ada informasi audit keamanan spesifik yang ditemukan di sumber yang diakses — mungkin tidak diungkap atau belum tersedia.
+· Current roadmap: tidak ada informasi eksplisit tentang rencana teknis jangka pendek atau jangka panjang setelah BoLD dan Stylus mainnet.
