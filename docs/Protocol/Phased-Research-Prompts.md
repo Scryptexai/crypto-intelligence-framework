@@ -4668,12 +4668,15 @@ wired up yet:
 - ~~The real Arbitrum run's `CIF SCORE` was internally inconsistent~~ — **resolved**: Phase 11's ATURAN UMUM
   §16 above now requires computing the CIF Score Calculation section first and copying its result into the
   Manifest, not the reverse.
-- **Phase 9's "Decision Timeline" (Trigger/Evidence/Decision/Immediate Result/Long-term Impact) doesn't
-  match `tools/extract_decision_events.py`'s expected "Decision Event" schema**
-  (Motivation/Constraint/Pressure/Trade-off/Alternative(s) Considered/Expectation vs. Actual/8-POV
-  Stakeholder Reactions, from Track A/B above). Running the extractor against a Track C dossier currently
-  yields zero decision events, silently — it needs a second parser branch for this shape, or Track C's
-  prompt needs its own 8-POV field added. Neither has been done yet.
+- ~~Phase 9's "Decision Timeline" doesn't match `tools/extract_decision_events.py`'s expected "Decision
+  Event" schema~~ — **resolved.** `parse_keputusan_events()` now recognizes the `Keputusan: <title>
+  (<date>)` / bullet-prefixed Trigger/Evidence/Decision/Immediate Result/Long-term Impact/Supporting
+  Dataset shape alongside the original `parse_events()` for Track A/B's shape; every output event carries
+  the union of both shapes' keys (unpopulated ones stay `null`/`{}` — Track C's prompt was never designed
+  to capture 8-POV stakeholder reactions, so that field is left empty rather than guessed at). Verified
+  against the real Arbitrum dossier: 7 decision events now extract cleanly (was 0), and LayerZero's
+  existing Track A/B dossier still extracts its original 15 unchanged. `tools/sync_supabase.py` and the
+  live `cif_decision_events` Supabase table were updated to carry the six new fields through too.
 - **ASCII box-drawing diagrams in the Knowledge Dependency Graph section get visually mangled** by
   `tools/extract.py`'s `normalise()` — it collapses runs of 2+ spaces for ordinary paragraph reflow, which
   also destroys the diagram's column alignment. No data is lost (every line survives, just misaligned); this
