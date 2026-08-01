@@ -2,7 +2,7 @@
 """
 extract_behavior.py — pull a structured BehaviorProfile out of a Track C (DeepSeek
 methodology) dossier's Behavioral Intelligence phase, for Intelligence Workspace's
-`BehaviorProfile` contract (`scryptexai/cif`'s `src/lib/types/project.ts`):
+`BehaviorProfile` contract (`scryptexai/intelligence-workspace`'s `src/lib/types/project.ts`):
     { strategicObjectives: string[], decisionPatterns: string[],
       riskResponse: string[], tradeOffs: string[] }
 

@@ -2,7 +2,7 @@
 """
 extract_knowledge.py — pull structured Knowledge Items out of a Track C (DeepSeek
 methodology) dossier's Knowledge Extraction phase, for Intelligence Workspace's
-`KnowledgeItem` contract (`scryptexai/cif`'s `src/lib/types/knowledge.ts`).
+`KnowledgeItem` contract (`scryptexai/intelligence-workspace`'s `src/lib/types/knowledge.ts`).
 
 Track C only, deliberately -- same reasoning as extract_behavior.py/extract_qa.py. Track
 A/B's Knowledge Extraction phase (LayerZero) produces a POV success-matrix (per-stakeholder
@@ -37,7 +37,9 @@ Fields never fabricated:
     Evidence/Lesson/Warning text into that shape: the dossier's Evidence field is often a
     multi-citation paragraph, not one gradable claim, and assigning a numeric weight to it
     would be exactly the kind of invented precision the maintainer ruled out. The raw text
-    is preserved in full inside `description` instead, so no information is lost.
+    is kept, separately, in `evidenceText` -- tools/sync_supabase.py's evidence_rows() pushes
+    it into the real schema's dedicated `evidence_items` table with `weight` left at that
+    column's own documented default (1) rather than a fabricated per-citation grade.
   - `relatedKnowledge` stays empty -- resolving it would mean name-matching prose across
     items, which is inference, not extraction.
   - `dependencies` (event ids) is populated with literal `EV-\\d+` references pulled out of
@@ -130,8 +132,6 @@ def parse_knowledge(text, project_name):
                 confidence = CONFIDENCE_SCALE.get(fields["Confidence"].strip().lower())
             dep_source = f"{fields['Supporting Dataset'] or ''} {fields['Evidence'] or ''}"
             dependencies = sorted(set(re.findall(r"EV-\d+", dep_source)))
-            if fields["Evidence"]:
-                description = f"{description}\n\nEvidence: {fields['Evidence']}"
             items.append({
                 "id": f"K-{idx:03d}",
                 "projectSlug": _slugify(project_name),
@@ -143,6 +143,10 @@ def parse_knowledge(text, project_name):
                 "updatedAt": None,
                 "author": "CIF",
                 "evidence": [],
+                # Raw Evidence-field text, kept separate from `description` (not merged in)
+                # so tools/sync_supabase.py's evidence_rows() can push it into the real
+                # schema's dedicated evidence_items table (see that repo's src/db/schema.ts).
+                "evidenceText": fields["Evidence"],
                 "relatedKnowledge": [],
                 "dependencies": dependencies,
             })

@@ -2,7 +2,7 @@
 """
 extract_qa.py — pull a structured QAReport out of a Track C (DeepSeek methodology)
 dossier's Validation & Quality Assurance phase, for Intelligence Workspace's `QAReport`
-contract (`scryptexai/cif`'s `src/lib/types/project.ts`):
+contract (`scryptexai/intelligence-workspace`'s `src/lib/types/project.ts`):
     { total: number, dimensions: QADimension[], phases: QAPhase[] }
 
 Track C only, deliberately -- same reasoning as extract_behavior.py. Track A/B's Conflict

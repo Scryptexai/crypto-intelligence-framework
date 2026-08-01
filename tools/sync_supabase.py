@@ -1,62 +1,50 @@
 #!/usr/bin/env python3
 """
-sync_supabase.py — push poc/{projects,patterns,benchmarks,decision_events}.json to the CIF-owned
-Supabase tables (cif_projects, cif_patterns, cif_backtests, cif_decision_events) described in
-crypto-intelligence-framework's docs/Project/ApplicationBlueprint.md §10.1.
+sync_supabase.py — push poc/*.json to Intelligence Workspace's real Postgres schema.
 
-Deterministic upsert, no LLM, stdlib only (no `requests`/`supabase-py` dependency — matches the
-rest of tools/'s minimal-dependency convention, see requirements.txt). Talks to Supabase's
-PostgREST API directly.
+Target schema note (2026-08-01): earlier this session this script targeted a cif_-prefixed
+schema designed independently in this repo. That schema was superseded once the frontend's
+actual repo (github.com/scryptexai/intelligence-workspace — NOT the earlier scryptexai/cif
+upload, which turned out to be stale/uncommitted work) was inspected directly: it ships a
+complete Drizzle schema (src/db/schema.ts) and a resilient DB-backed data layer
+(src/db/dataService.ts) already querying plain-named tables (`projects`, `knowledge_items`,
+`evidence_items`, `entities`, `relationships`, `events`, `conflicts`, `qa_dimensions`,
+`qa_phases`, `behavior_profiles`, `notes`, `saved_views`, `users`). That schema is the
+source of truth now — this script writes to it directly (see supabase/schema.sql in that
+repo, applied to the shared Supabase project via the "align_to_intelligence_workspace_
+drizzle_schema" migration). cif_patterns/cif_backtests/cif_decision_events remain untouched
+-- CIF's own pattern-library concern, no naming collision, not part of that schema.
 
-Requires two environment variables (never commit these — same treatment as the research prompts,
-see docs/Protocol/Deep-Research-Brief.md's policy note):
+Deterministic upsert, no LLM, stdlib only (no `requests`/`supabase-py` dependency — matches
+the rest of tools/'s minimal-dependency convention, see requirements.txt). Talks to
+Supabase's PostgREST API directly.
+
+Requires two environment variables (never commit these — same treatment as the research
+prompts, see docs/Protocol/Deep-Research-Brief.md's policy note):
     SUPABASE_URL               e.g. https://szumyjuvfjkobvcqswwd.supabase.co
-    SUPABASE_SERVICE_ROLE_KEY  the service_role key — bypasses RLS, required because these tables'
-                                 policies only grant SELECT to clients (ApplicationBlueprint.md
-                                 §10.1): writes are meant to happen ONLY through this script.
+    SUPABASE_SERVICE_ROLE_KEY  the service_role key — bypasses RLS, required because these
+                                 tables' policies only grant SELECT to clients: writes are
+                                 meant to happen ONLY through this script.
 
 Usage:
     export SUPABASE_URL="https://<ref>.supabase.co"
     export SUPABASE_SERVICE_ROLE_KEY="..."
-    python3 tools/sync_supabase.py             # upsert all four tables
+    python3 tools/sync_supabase.py             # upsert every table below
     python3 tools/sync_supabase.py --dry-run   # print the rows that would be sent, no network call
-    python3 tools/sync_supabase.py --only cif_projects,cif_patterns
-
-Note (corrected 2026-07-27): an earlier version of this docstring claimed pattern_confidence,
-trajectory_probability, observable, current_read, signal, evidence, comparables in cif_projects
-were "intentionally left null/empty" pending a synthesis step that didn't exist. That was wrong —
-those fields are populated for LayerZero (seeded via the AirdropOS frontend rebuild + this repo's
-P7-P16 pattern promotion, applied by direct SQL rather than this script). This script's
-project_rows()/pattern_rows() still describe the deterministic-roster fields it derives from
-poc/*.json; it does not yet re-derive the richer per-project fields — don't assume running this
-script alone reproduces everything currently live in cif_projects.
+    python3 tools/sync_supabase.py --only projects,cif_patterns
 """
 import argparse, json, os, re, sys, urllib.error, urllib.request
-from datetime import datetime as _dt, timezone as _tz
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 POC = ROOT / "poc"
-TABLES = ("cif_projects", "cif_patterns", "cif_backtests", "cif_decision_events", "cif_entities",
-          "cif_knowledge")
+TABLES = ("projects", "knowledge_items", "evidence_items", "entities", "qa_dimensions",
+          "qa_phases", "behavior_profiles", "cif_patterns", "cif_backtests",
+          "cif_decision_events")
 
 
 def slugify(name: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
-
-
-def split_category(cat: str):
-    """'Interoperability / Omnichain Messaging (Bridge, GMP, DVN security)' ->
-    ['Interoperability', 'Omnichain Messaging', 'Bridge', 'GMP', 'DVN security']. category is a
-    text[] column (filterable/taggable), not a single blob string -- verified against the live
-    cif_projects.category value already synced for LayerZero, which splits exactly this way."""
-    if not cat:
-        return []
-    m = re.search(r"\(([^)]*)\)", cat)
-    paren = [x.strip() for x in m.group(1).split(",")] if m else []
-    main = re.sub(r"\([^)]*\)", "", cat).strip()
-    parts = [x.strip() for x in main.split("/")] if main else []
-    return [p for p in (parts + paren) if p]
 
 
 def load(name: str):
@@ -66,39 +54,42 @@ def load(name: str):
     return json.loads(p.read_text(encoding="utf-8"))
 
 
+def load_optional(name: str) -> dict:
+    p = POC / name
+    if not p.exists():
+        return {}
+    return json.loads(p.read_text(encoding="utf-8"))
+
+
+_SYMBOL_RE = re.compile(r"(?:^|\n)Symbol:\s*([A-Za-z0-9]+)")
+
+
+def _extract_symbol(dossier_file: str) -> str | None:
+    """Foundation Intelligence's 'Symbol: ARB' / 'Symbol: ZRO (HIGH)' line -- a real,
+    literally-stated field, not guessed. Required NOT NULL by the `projects` table; falls
+    back to the project's own name (still real, just less precise) rather than fabricating
+    a ticker the dossier doesn't state."""
+    path = ROOT / dossier_file
+    if not path.exists():
+        return None
+    m = _SYMBOL_RE.search(path.read_text(encoding="utf-8"))
+    return m.group(1).strip() if m else None
+
+
 def project_rows():
-    """poc/projects.json (build_json.py's roster shape) -> cif_projects columns.
+    """poc/projects.json (build_json.py's roster shape) -> `projects` columns.
 
-    cif_projects was repurposed for Intelligence Workspace's Project contract (2026-08-01
-    reset, see docs/Project/ApplicationBlueprint.md and the migration applied that day) --
-    it no longer has AirdropOS-only columns like `tier`. Only fields this script can derive
-    without guessing are populated: entity_count/knowledge_count from poc/{entities,
-    knowledge}.json (real counts, not fabricated ones), qa/behavior from poc/{qa,
-    behavior}.json (Track C dossiers only -- see extract_qa.py/extract_behavior.py; Track
-    A/B projects simply have no entry in those files and keep null qa/behavior), status
-    defaults to "active" as CIF's own curation-state label (every project in
-    examples/CaseStudies/ is, by definition, actively tracked -- this is a workflow flag CIF
-    assigns, not a claim about the project itself), cif_score copied from qa.json's `total`
-    where present. symbol/tagline/description/color/accent/conflict_count/event_count have
-    no deterministic source yet and are intentionally omitted so upsert leaves them
-    untouched rather than nulling real data or guessing fake values."""
-    def _counts(filename):
-        path = POC / filename
-        if not path.exists():
-            return {}
-        return {slugify(k): len(v) for k, v in json.loads(path.read_text(encoding="utf-8")).items()}
-
-    entity_counts = _counts("entities.json")
-    knowledge_counts = _counts("knowledge.json")
-
-    qa_by_slug, behavior_by_slug = {}, {}
-    qa_path, behavior_path = POC / "qa.json", POC / "behavior.json"
-    if qa_path.exists():
-        for project, report in json.loads(qa_path.read_text(encoding="utf-8")).items():
-            qa_by_slug[slugify(project)] = report
-    if behavior_path.exists():
-        for project, profile in json.loads(behavior_path.read_text(encoding="utf-8")).items():
-            behavior_by_slug[slugify(project)] = profile
+    Only fields this script can derive without guessing are populated: entity_count/
+    knowledge_count from poc/{entities,knowledge}.json (real counts), cif_score from
+    qa.json's `total` (Track C dossiers only), symbol from the dossier's own literal
+    'Symbol: X' line (Foundation Intelligence phase). status defaults to "active" as CIF's
+    own curation-state label (every project in examples/CaseStudies/ is, by definition,
+    actively tracked -- a workflow flag CIF assigns, not a claim about the project itself).
+    tagline/description/color/accent/conflict_count/event_count/coverage have no
+    deterministic source yet and are intentionally omitted so upsert leaves them untouched."""
+    entity_counts = {slugify(k): len(v) for k, v in load_optional("entities.json").items()}
+    knowledge_counts = {slugify(k): len(v) for k, v in load_optional("knowledge.json").items()}
+    qa_by_slug = {slugify(k): v for k, v in load_optional("qa.json").items()}
 
     rows = []
     for p in load("projects.json"):
@@ -107,22 +98,14 @@ def project_rows():
             "id": slug,
             "slug": slug,
             "name": p["n"],
-            "category": split_category(p.get("cat", "")),
-            "era": p.get("era") or None,
-            "tags": p.get("tags", []),
-            "source_file": p["file"],
+            "symbol": _extract_symbol(p["file"]) or p["n"],
             "status": "active",
+            "tags": p.get("tags", []),
             "entity_count": entity_counts.get(slug, 0),
             "knowledge_count": knowledge_counts.get(slug, 0),
-            "last_updated": _dt.now(_tz.utc).isoformat(),
-            "last_activity_hours": 0,
         }
-        if slug in qa_by_slug:
-            row["qa"] = qa_by_slug[slug]
-            if qa_by_slug[slug].get("total") is not None:
-                row["cif_score"] = qa_by_slug[slug]["total"]
-        if slug in behavior_by_slug:
-            row["behavior"] = behavior_by_slug[slug]
+        if slug in qa_by_slug and qa_by_slug[slug].get("total") is not None:
+            row["cif_score"] = qa_by_slug[slug]["total"]
         rows.append(row)
     return rows
 
@@ -201,16 +184,13 @@ def decision_event_rows():
 
 
 def entity_rows():
-    """poc/entities.json (tools/extract_entities.py's shape) -> cif_entities columns.
-    Composite id (project_slug, id) matches Intelligence Workspace's
-    /projects/{slug}/entities/{id} route."""
+    """poc/entities.json (tools/extract_entities.py's shape) -> `entities` columns."""
     rows = []
-    data = load("entities.json")
-    for _project, entities in data.items():
+    for _project, entities in load("entities.json").items():
         for e in entities:
             rows.append({
-                "project_slug": e["projectSlug"],
                 "id": e["id"],
+                "project_slug": e["projectSlug"],
                 "name": e.get("name"),
                 "type": e.get("type"),
                 "status": e.get("status"),
@@ -224,47 +204,129 @@ def entity_rows():
 
 
 def knowledge_rows():
-    """poc/knowledge.json (tools/extract_knowledge.py's shape) -> cif_knowledge columns.
-    Track C dossiers only -- see that tool's docstring. Composite id (project_slug, id)
-    matches Intelligence Workspace's /projects/{slug}/knowledge/{id} route."""
+    """poc/knowledge.json (tools/extract_knowledge.py's shape) -> `knowledge_items` columns
+    (Track C dossiers only -- see that tool's docstring). Per-citation Evidence[] now has a
+    real home (the separate `evidence_items` table, see evidence_rows()) instead of being
+    folded into description text."""
     rows = []
-    data = load("knowledge.json")
-    for _project, items in data.items():
+    for _project, items in load("knowledge.json").items():
         for k in items:
             rows.append({
-                "project_slug": k["projectSlug"],
                 "id": k["id"],
+                "project_slug": k["projectSlug"],
                 "name": k.get("name"),
                 "category": k.get("category"),
                 "description": k.get("description"),
-                "confidence": k.get("confidence"),
-                "status": k.get("status"),
+                "confidence": k.get("confidence") or 0,
+                "status": k.get("status") or "Stable",
                 "updated_at": k.get("updatedAt"),
                 "author": k.get("author"),
-                "evidence": k.get("evidence") or [],
                 "related_knowledge": k.get("relatedKnowledge", []),
                 "dependencies": k.get("dependencies", []),
             })
     return rows
 
 
+def evidence_rows():
+    """poc/knowledge.json's raw Evidence text -> one `evidence_items` row per knowledge item
+    that has one. `weight` uses the column's own documented default (1, "lowest/default"),
+    not a fabricated per-citation grade -- extract_knowledge.py deliberately never invents a
+    1-5 rating for a multi-citation paragraph (see that tool's docstring)."""
+    rows = []
+    for _project, items in load("knowledge.json").items():
+        for k in items:
+            note = k.get("evidenceText")
+            if not note:
+                continue
+            rows.append({
+                "id": f"{k['id']}-ev1",
+                "knowledge_id": k["id"],
+                "event_id": None,
+                "event_name": "CIF Research Dossier",
+                "date": None,
+                "source": "CIF Research Dossier",
+                "url": None,
+                "weight": 1,
+                "note": note,
+                "sort_order": 0,
+            })
+    return rows
+
+
+def qa_dimension_rows():
+    """poc/qa.json -> `qa_dimensions` columns (one row per dimension per project)."""
+    rows = []
+    for project, report in load_optional("qa.json").items():
+        slug = slugify(project)
+        for d in report.get("dimensions", []):
+            rows.append({
+                "id": f"{slug}-{d['key']}",
+                "project_slug": slug,
+                "key": d["key"],
+                "label": d["label"],
+                "score": d.get("score") or 0,
+                "weight": d.get("weight") or 0,
+                "description": d.get("description"),
+            })
+    return rows
+
+
+def qa_phase_rows():
+    """poc/qa.json -> `qa_phases` columns (one row per upstream phase per project)."""
+    rows = []
+    for project, report in load_optional("qa.json").items():
+        slug = slugify(project)
+        for i, ph in enumerate(report.get("phases", [])):
+            rows.append({
+                "id": f"{slug}-phase-{i:02d}",
+                "project_slug": slug,
+                "name": ph["name"],
+                "status": ph.get("status") or "Not Started",
+                "score": ph.get("score") or 0,
+                "owner": ph.get("owner"),
+                "sort_order": i,
+            })
+    return rows
+
+
+def behavior_rows():
+    """poc/behavior.json -> `behavior_profiles` columns (one row per project, PK=project_slug)."""
+    rows = []
+    for project, profile in load_optional("behavior.json").items():
+        rows.append({
+            "project_slug": slugify(project),
+            "strategic_objectives": profile.get("strategicObjectives", []),
+            "decision_patterns": profile.get("decisionPatterns", []),
+            "risk_response": profile.get("riskResponse", []),
+            "trade_offs": profile.get("tradeOffs", []),
+        })
+    return rows
+
+
 BUILDERS = {
-    "cif_projects": project_rows,
+    "projects": project_rows,
+    "knowledge_items": knowledge_rows,
+    "evidence_items": evidence_rows,
+    "entities": entity_rows,
+    "qa_dimensions": qa_dimension_rows,
+    "qa_phases": qa_phase_rows,
+    "behavior_profiles": behavior_rows,
     "cif_patterns": pattern_rows,
     "cif_backtests": backtest_rows,
     "cif_decision_events": decision_event_rows,
-    "cif_entities": entity_rows,
-    "cif_knowledge": knowledge_rows,
 }
-
 
 ON_CONFLICT = {
-    # cif_entities/cif_knowledge have a composite primary key (project_slug, id) -- see the
-    # migration in this session's Intelligence Workspace reset -- every other table keys on
-    # bare id.
-    "cif_entities": "project_slug,id",
-    "cif_knowledge": "project_slug,id",
+    # behavior_profiles is keyed by project_slug directly, not `id`.
+    "behavior_profiles": "project_slug",
 }
+
+# Insertion order matters for FK integrity: projects before anything referencing
+# projects.slug, entities before relationships/evidence_items->knowledge_items chains,
+# knowledge_items before evidence_items.
+ORDER = ["projects", "entities", "knowledge_items", "evidence_items", "qa_dimensions",
+         "qa_phases", "behavior_profiles", "cif_patterns", "cif_backtests",
+         "cif_decision_events"]
 
 
 def upsert(base_url: str, key: str, table: str, rows: list):
@@ -288,7 +350,7 @@ def upsert(base_url: str, key: str, table: str, rows: list):
 
 
 def main():
-    ap = argparse.ArgumentParser(description="Sync poc/*.json to CIF's Supabase tables.")
+    ap = argparse.ArgumentParser(description="Sync poc/*.json to Intelligence Workspace's Supabase tables.")
     ap.add_argument("--dry-run", action="store_true", help="print rows, make no network calls")
     ap.add_argument("--only", help="comma-separated subset of: " + ",".join(TABLES))
     args = ap.parse_args()
@@ -312,7 +374,7 @@ def main():
         sys.exit("SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY must be set (see this file's docstring). "
                   "Use --dry-run to preview without them.")
 
-    for t in targets:
+    for t in [t for t in ORDER if t in targets]:
         upsert(base_url, key, t, rows_by_table[t])
         print(f"✅ synced {t}: {len(rows_by_table[t])} row(s)")
 

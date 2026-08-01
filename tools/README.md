@@ -108,7 +108,7 @@ still works unchanged for LayerZero's own folder (`doc_backup/inbox/phased/Layer
 to already satisfy the `data_project` filename contract too — verified by running it through
 `process_data_project()` directly). New projects should use `data_project/<project>/`.
 
-## `sync_supabase.py` — push `poc/*.json` to CIF's Supabase tables
+## `sync_supabase.py` — push `poc/*.json` to Intelligence Workspace's Postgres tables
 
 ```
 export SUPABASE_URL="https://<ref>.supabase.co"
@@ -117,21 +117,30 @@ python tools/sync_supabase.py               # or: ./run.sh sync
 python tools/sync_supabase.py --dry-run     # preview rows, no network call, no env vars needed
 ```
 
-Deterministic upsert into `cif_projects`/`cif_patterns`/`cif_backtests`/`cif_decision_events` (schema:
-`docs/Project/ApplicationBlueprint.md` §10.1) via Supabase's REST API directly — stdlib only, no
-`requests`/`supabase-py` dependency. **These tables already exist on the live `airdropos-pro`
-project** (verified 2026-07-26) with data matching this script's row shapes field-for-field,
-including the `category` column's split-into-array convention (`split_category()` — confirmed
-against the live LayerZero row, not guessed). Never run as part of `all`/`build` — explicit opt-in
-only, since it writes to a shared production database.
+**Rewritten 2026-08-01.** This script originally targeted a `cif_`-prefixed schema designed
+independently in this repo. That schema was superseded once the frontend's *actual* repo
+(`github.com/scryptexai/intelligence-workspace` — not the earlier `scryptexai/cif` upload,
+which turned out to be stale, uncommitted work never pushed) was inspected directly: it ships
+a complete Drizzle schema (`src/db/schema.ts`) and a resilient DB-backed data layer
+(`src/db/dataService.ts`) already querying plain-named tables. That schema is now the source
+of truth — this script upserts into it directly via Supabase's REST API (stdlib only, no
+`requests`/`supabase-py` dependency):
 
-**Correction (2026-07-27):** an earlier version of this note claimed `pattern_confidence`/
-`trajectory_probability`/`observable`/`current_read`/`signal`/`evidence`/`comparables` were
-"intentionally left null/empty" — that was wrong, based on an incomplete column check. They are
-populated for LayerZero (seeded by the AirdropOS frontend rebuild). `evidence` now also carries
-P7–P16 (LayerZero's own promoted Phase 10 pattern candidates, see `examples/PatternRegistry.md`),
-synced via direct SQL upsert rather than this script in that instance — this script's
-`pattern_rows()`/`project_rows()` still describe the intended row shape for future syncs.
+`projects`, `entities`, `knowledge_items`, `evidence_items` (separate table, not a jsonb
+column — one row per citation), `qa_dimensions`, `qa_phases`, `behavior_profiles` — plus the
+unrelated `cif_patterns`/`cif_backtests`/`cif_decision_events` (CIF's own pattern-library
+concern, no naming collision, untouched by the schema swap).
+
+Applied to the shared Supabase project (`airdropos-pro`) via the
+`align_to_intelligence_workspace_drizzle_schema` migration, which also drops the earlier
+`cif_projects`/`cif_entities`/`cif_knowledge`/`cif_relationships`/`cif_events`/`cif_conflicts`/
+`cif_notes`/`cif_views` tables it supersedes (all had 0–2 rows, pure scaffolding from the same
+day, nothing real lost).
+
+Never run as part of `all`/`build` — explicit opt-in only, since it writes to a shared
+production database. `relationships`/`events`/`conflicts`/`notes`/`saved_views`/`users` have
+no row builder yet — no extractor produces that data (see `extract_entities.py`'s "known gap"
+note on Relationships; Conflicts/Events extractors are not yet built at all).
 
 ## `extract_decision_events.py` — Behavioral Intelligence phase → structured Decision Events
 
@@ -168,9 +177,8 @@ python tools/extract_entities.py examples/CaseStudies/LayerZero.md   # or: ./run
 ```
 
 Built 2026-08-01 to feed the Intelligence Workspace product's `Entity` contract
-(`scryptexai/cif`'s `src/lib/types/entity.ts`) — see `docs/Project/ApplicationBlueprint.md` §10 and
-this repo's Supabase `cif_entities` table (composite key `(project_slug, id)`). Deterministic regex
-extraction of a dossier's Entity Intelligence phase, recognizing both Format v3 tracks:
+(`scryptexai/intelligence-workspace`'s `src/lib/types/entity.ts`, table `entities`). Deterministic
+regex extraction of a dossier's Entity Intelligence phase, recognizing both Format v3 tracks:
 
 - Track A/B: one packed paragraph — `Entity: <Name> (<HIGH|MEDIUM|LOW>) Type: <Type>
   Relationship: <prose> Period: <period> Exposure Type: <exposure> Evidence: <sources>`
@@ -209,9 +217,11 @@ silently skipped, not force-fit.
 - `extract_knowledge.py` — Core Insights / Strategic Principles / Success Factors / Failure
   Factors / Decision Framework / Reusable Playbook / Anti-patterns → `KnowledgeItem[]`.
   `confidence` only populated where an explicit `Confidence: High|Medium|Low` tag exists (mapped
-  90/60/30). `evidence` (the structured per-citation array with a 1-5 weight) stays empty rather
-  than inventing a weight for a multi-citation paragraph — the raw text is kept in `description`
-  instead. `dependencies` is a literal `EV-\d+` grep of the item's citations. Output: `poc/knowledge.json`.
+  90/60/30). The raw Evidence-field text is kept separately as `evidenceText` (not merged into
+  `description`) — `tools/sync_supabase.py`'s `evidence_rows()` turns it into one row in the real
+  schema's dedicated `evidence_items` table, `weight` left at that column's own default (1) rather
+  than inventing a per-citation grade. `dependencies` is a literal `EV-\d+` grep of the item's
+  citations. Output: `poc/knowledge.json`.
 - `extract_behavior.py` — Strategic Objectives / {Technical,Financial,Ecosystem,Governance,
   Recurring} Decision Pattern / Risk Response Pattern / Strategic Trade-offs sections → the four
   `BehaviorProfile` arrays, extracting the dossier's own item titles verbatim. Output: `poc/behavior.json`.
@@ -224,6 +234,7 @@ silently skipped, not force-fit.
   gaps" section). Output: `poc/qa.json`.
 
 All three wired into `run.sh build`/`all` via `run_extract_iw_fields`. `tools/sync_supabase.py`
-folds `qa.json`/`behavior.json` into `cif_projects.qa`/`.behavior`/`.cif_score` and
-`knowledge.json` into its own `cif_knowledge` table (composite key `(project_slug, id)`, same
-pattern as `cif_entities`).
+upserts `qa.json` into the real schema's `qa_dimensions`/`qa_phases` tables (one row per
+dimension/phase per project, plus `projects.cif_score`), `behavior.json` into `behavior_profiles`
+(one row per project, PK = `project_slug`), and `knowledge.json` into `knowledge_items` (+
+`evidence_items` for the raw Evidence text — see `extract_knowledge.py`'s note above).
