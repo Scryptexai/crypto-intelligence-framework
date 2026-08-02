@@ -1,0 +1,1364 @@
+{
+  "LayerZero": [
+    {
+      "id": "layerzero-REL-001",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-001",
+      "target": "layerzero-ENT-004",
+      "type": "develops"
+    },
+    {
+      "id": "layerzero-REL-002",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-002",
+      "target": "layerzero-ENT-001",
+      "type": "operates"
+    },
+    {
+      "id": "layerzero-REL-003",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-002",
+      "target": "layerzero-ENT-004",
+      "type": "operates"
+    },
+    {
+      "id": "layerzero-REL-004",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-005",
+      "target": "layerzero-ENT-001",
+      "type": "co-founder"
+    },
+    {
+      "id": "layerzero-REL-005",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-005",
+      "target": "layerzero-ENT-004",
+      "type": "co-founder"
+    },
+    {
+      "id": "layerzero-REL-006",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-006",
+      "target": "layerzero-ENT-001",
+      "type": "co-founder"
+    },
+    {
+      "id": "layerzero-REL-007",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-006",
+      "target": "layerzero-ENT-004",
+      "type": "co-founder"
+    },
+    {
+      "id": "layerzero-REL-008",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-006",
+      "target": "layerzero-ENT-069",
+      "type": "co-founder"
+    },
+    {
+      "id": "layerzero-REL-009",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-007",
+      "target": "layerzero-ENT-001",
+      "type": "co-founder"
+    },
+    {
+      "id": "layerzero-REL-010",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-007",
+      "target": "layerzero-ENT-004",
+      "type": "co-founder"
+    },
+    {
+      "id": "layerzero-REL-011",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-008",
+      "target": "layerzero-ENT-001",
+      "type": "related"
+    },
+    {
+      "id": "layerzero-REL-012",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-008",
+      "target": "layerzero-ENT-004",
+      "type": "related"
+    },
+    {
+      "id": "layerzero-REL-013",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-009",
+      "target": "layerzero-ENT-001",
+      "type": "partner"
+    },
+    {
+      "id": "layerzero-REL-014",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-009",
+      "target": "layerzero-ENT-004",
+      "type": "partner"
+    },
+    {
+      "id": "layerzero-REL-015",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-009",
+      "target": "layerzero-ENT-008",
+      "type": "partner"
+    },
+    {
+      "id": "layerzero-REL-016",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-010",
+      "target": "layerzero-ENT-001",
+      "type": "develops"
+    },
+    {
+      "id": "layerzero-REL-017",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-010",
+      "target": "layerzero-ENT-004",
+      "type": "develops"
+    },
+    {
+      "id": "layerzero-REL-018",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-011",
+      "target": "layerzero-ENT-001",
+      "type": "related"
+    },
+    {
+      "id": "layerzero-REL-019",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-011",
+      "target": "layerzero-ENT-004",
+      "type": "related"
+    },
+    {
+      "id": "layerzero-REL-020",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-012",
+      "target": "layerzero-ENT-001",
+      "type": "invested"
+    },
+    {
+      "id": "layerzero-REL-021",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-012",
+      "target": "layerzero-ENT-004",
+      "type": "invested"
+    },
+    {
+      "id": "layerzero-REL-022",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-012",
+      "target": "layerzero-ENT-068",
+      "type": "invested"
+    },
+    {
+      "id": "layerzero-REL-023",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-013",
+      "target": "layerzero-ENT-001",
+      "type": "develops"
+    },
+    {
+      "id": "layerzero-REL-024",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-013",
+      "target": "layerzero-ENT-004",
+      "type": "develops"
+    },
+    {
+      "id": "layerzero-REL-025",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-014",
+      "target": "layerzero-ENT-001",
+      "type": "partner"
+    },
+    {
+      "id": "layerzero-REL-026",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-014",
+      "target": "layerzero-ENT-004",
+      "type": "partner"
+    },
+    {
+      "id": "layerzero-REL-027",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-015",
+      "target": "layerzero-ENT-001",
+      "type": "invested"
+    },
+    {
+      "id": "layerzero-REL-028",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-015",
+      "target": "layerzero-ENT-004",
+      "type": "invested"
+    },
+    {
+      "id": "layerzero-REL-029",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-016",
+      "target": "layerzero-ENT-001",
+      "type": "audits"
+    },
+    {
+      "id": "layerzero-REL-030",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-016",
+      "target": "layerzero-ENT-004",
+      "type": "audits"
+    },
+    {
+      "id": "layerzero-REL-031",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-017",
+      "target": "layerzero-ENT-001",
+      "type": "partner"
+    },
+    {
+      "id": "layerzero-REL-032",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-017",
+      "target": "layerzero-ENT-004",
+      "type": "partner"
+    },
+    {
+      "id": "layerzero-REL-033",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-017",
+      "target": "layerzero-ENT-011",
+      "type": "partner"
+    },
+    {
+      "id": "layerzero-REL-034",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-018",
+      "target": "layerzero-ENT-001",
+      "type": "audits"
+    },
+    {
+      "id": "layerzero-REL-035",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-018",
+      "target": "layerzero-ENT-004",
+      "type": "audits"
+    },
+    {
+      "id": "layerzero-REL-036",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-019",
+      "target": "layerzero-ENT-001",
+      "type": "partner"
+    },
+    {
+      "id": "layerzero-REL-037",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-019",
+      "target": "layerzero-ENT-004",
+      "type": "partner"
+    },
+    {
+      "id": "layerzero-REL-038",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-020",
+      "target": "layerzero-ENT-001",
+      "type": "audits"
+    },
+    {
+      "id": "layerzero-REL-039",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-020",
+      "target": "layerzero-ENT-004",
+      "type": "audits"
+    },
+    {
+      "id": "layerzero-REL-040",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-021",
+      "target": "layerzero-ENT-001",
+      "type": "related"
+    },
+    {
+      "id": "layerzero-REL-041",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-021",
+      "target": "layerzero-ENT-004",
+      "type": "related"
+    },
+    {
+      "id": "layerzero-REL-042",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-024",
+      "target": "layerzero-ENT-051",
+      "type": "invested"
+    },
+    {
+      "id": "layerzero-REL-043",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-025",
+      "target": "layerzero-ENT-001",
+      "type": "invested"
+    },
+    {
+      "id": "layerzero-REL-044",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-025",
+      "target": "layerzero-ENT-004",
+      "type": "invested"
+    },
+    {
+      "id": "layerzero-REL-045",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-027",
+      "target": "layerzero-ENT-001",
+      "type": "invested"
+    },
+    {
+      "id": "layerzero-REL-046",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-027",
+      "target": "layerzero-ENT-004",
+      "type": "invested"
+    },
+    {
+      "id": "layerzero-REL-047",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-028",
+      "target": "layerzero-ENT-001",
+      "type": "invested"
+    },
+    {
+      "id": "layerzero-REL-048",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-028",
+      "target": "layerzero-ENT-004",
+      "type": "invested"
+    },
+    {
+      "id": "layerzero-REL-049",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-031",
+      "target": "layerzero-ENT-001",
+      "type": "invested"
+    },
+    {
+      "id": "layerzero-REL-050",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-031",
+      "target": "layerzero-ENT-004",
+      "type": "invested"
+    },
+    {
+      "id": "layerzero-REL-051",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-034",
+      "target": "layerzero-ENT-001",
+      "type": "invested"
+    },
+    {
+      "id": "layerzero-REL-052",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-034",
+      "target": "layerzero-ENT-004",
+      "type": "invested"
+    },
+    {
+      "id": "layerzero-REL-053",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-035",
+      "target": "layerzero-ENT-001",
+      "type": "invested"
+    },
+    {
+      "id": "layerzero-REL-054",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-035",
+      "target": "layerzero-ENT-004",
+      "type": "invested"
+    },
+    {
+      "id": "layerzero-REL-055",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-036",
+      "target": "layerzero-ENT-001",
+      "type": "invested"
+    },
+    {
+      "id": "layerzero-REL-056",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-036",
+      "target": "layerzero-ENT-004",
+      "type": "invested"
+    },
+    {
+      "id": "layerzero-REL-057",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-037",
+      "target": "layerzero-ENT-001",
+      "type": "invested"
+    },
+    {
+      "id": "layerzero-REL-058",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-037",
+      "target": "layerzero-ENT-004",
+      "type": "invested"
+    },
+    {
+      "id": "layerzero-REL-059",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-038",
+      "target": "layerzero-ENT-001",
+      "type": "related"
+    },
+    {
+      "id": "layerzero-REL-060",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-038",
+      "target": "layerzero-ENT-004",
+      "type": "related"
+    },
+    {
+      "id": "layerzero-REL-061",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-038",
+      "target": "layerzero-ENT-052",
+      "type": "related"
+    },
+    {
+      "id": "layerzero-REL-062",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-039",
+      "target": "layerzero-ENT-001",
+      "type": "partner"
+    },
+    {
+      "id": "layerzero-REL-063",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-039",
+      "target": "layerzero-ENT-004",
+      "type": "partner"
+    },
+    {
+      "id": "layerzero-REL-064",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-040",
+      "target": "layerzero-ENT-001",
+      "type": "operates"
+    },
+    {
+      "id": "layerzero-REL-065",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-040",
+      "target": "layerzero-ENT-004",
+      "type": "operates"
+    },
+    {
+      "id": "layerzero-REL-066",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-041",
+      "target": "layerzero-ENT-001",
+      "type": "operates"
+    },
+    {
+      "id": "layerzero-REL-067",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-041",
+      "target": "layerzero-ENT-004",
+      "type": "operates"
+    },
+    {
+      "id": "layerzero-REL-068",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-042",
+      "target": "layerzero-ENT-001",
+      "type": "related"
+    },
+    {
+      "id": "layerzero-REL-069",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-042",
+      "target": "layerzero-ENT-004",
+      "type": "related"
+    },
+    {
+      "id": "layerzero-REL-070",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-043",
+      "target": "layerzero-ENT-001",
+      "type": "operates"
+    },
+    {
+      "id": "layerzero-REL-071",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-043",
+      "target": "layerzero-ENT-004",
+      "type": "operates"
+    },
+    {
+      "id": "layerzero-REL-072",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-044",
+      "target": "layerzero-ENT-001",
+      "type": "partner"
+    },
+    {
+      "id": "layerzero-REL-073",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-044",
+      "target": "layerzero-ENT-004",
+      "type": "partner"
+    },
+    {
+      "id": "layerzero-REL-074",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-045",
+      "target": "layerzero-ENT-001",
+      "type": "partner"
+    },
+    {
+      "id": "layerzero-REL-075",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-045",
+      "target": "layerzero-ENT-004",
+      "type": "partner"
+    },
+    {
+      "id": "layerzero-REL-076",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-046",
+      "target": "layerzero-ENT-001",
+      "type": "partner"
+    },
+    {
+      "id": "layerzero-REL-077",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-046",
+      "target": "layerzero-ENT-004",
+      "type": "partner"
+    },
+    {
+      "id": "layerzero-REL-078",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-047",
+      "target": "layerzero-ENT-001",
+      "type": "related"
+    },
+    {
+      "id": "layerzero-REL-079",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-047",
+      "target": "layerzero-ENT-004",
+      "type": "related"
+    },
+    {
+      "id": "layerzero-REL-080",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-048",
+      "target": "layerzero-ENT-001",
+      "type": "related"
+    },
+    {
+      "id": "layerzero-REL-081",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-048",
+      "target": "layerzero-ENT-004",
+      "type": "related"
+    },
+    {
+      "id": "layerzero-REL-082",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-049",
+      "target": "layerzero-ENT-001",
+      "type": "partner"
+    },
+    {
+      "id": "layerzero-REL-083",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-049",
+      "target": "layerzero-ENT-004",
+      "type": "partner"
+    },
+    {
+      "id": "layerzero-REL-084",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-050",
+      "target": "layerzero-ENT-001",
+      "type": "partner"
+    },
+    {
+      "id": "layerzero-REL-085",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-050",
+      "target": "layerzero-ENT-004",
+      "type": "partner"
+    },
+    {
+      "id": "layerzero-REL-086",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-051",
+      "target": "layerzero-ENT-001",
+      "type": "related"
+    },
+    {
+      "id": "layerzero-REL-087",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-051",
+      "target": "layerzero-ENT-004",
+      "type": "related"
+    },
+    {
+      "id": "layerzero-REL-088",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-052",
+      "target": "layerzero-ENT-001",
+      "type": "member"
+    },
+    {
+      "id": "layerzero-REL-089",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-052",
+      "target": "layerzero-ENT-004",
+      "type": "member"
+    },
+    {
+      "id": "layerzero-REL-090",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-054",
+      "target": "layerzero-ENT-001",
+      "type": "invested"
+    },
+    {
+      "id": "layerzero-REL-091",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-054",
+      "target": "layerzero-ENT-004",
+      "type": "invested"
+    },
+    {
+      "id": "layerzero-REL-092",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-055",
+      "target": "layerzero-ENT-001",
+      "type": "related"
+    },
+    {
+      "id": "layerzero-REL-093",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-055",
+      "target": "layerzero-ENT-004",
+      "type": "related"
+    },
+    {
+      "id": "layerzero-REL-094",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-059",
+      "target": "layerzero-ENT-001",
+      "type": "related"
+    },
+    {
+      "id": "layerzero-REL-095",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-059",
+      "target": "layerzero-ENT-004",
+      "type": "related"
+    },
+    {
+      "id": "layerzero-REL-096",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-060",
+      "target": "layerzero-ENT-001",
+      "type": "related"
+    },
+    {
+      "id": "layerzero-REL-097",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-060",
+      "target": "layerzero-ENT-004",
+      "type": "related"
+    },
+    {
+      "id": "layerzero-REL-098",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-061",
+      "target": "layerzero-ENT-001",
+      "type": "partner"
+    },
+    {
+      "id": "layerzero-REL-099",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-061",
+      "target": "layerzero-ENT-004",
+      "type": "partner"
+    },
+    {
+      "id": "layerzero-REL-100",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-063",
+      "target": "layerzero-ENT-001",
+      "type": "partner"
+    },
+    {
+      "id": "layerzero-REL-101",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-063",
+      "target": "layerzero-ENT-004",
+      "type": "partner"
+    },
+    {
+      "id": "layerzero-REL-102",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-064",
+      "target": "layerzero-ENT-001",
+      "type": "related"
+    },
+    {
+      "id": "layerzero-REL-103",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-064",
+      "target": "layerzero-ENT-004",
+      "type": "related"
+    },
+    {
+      "id": "layerzero-REL-104",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-065",
+      "target": "layerzero-ENT-001",
+      "type": "operates"
+    },
+    {
+      "id": "layerzero-REL-105",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-065",
+      "target": "layerzero-ENT-004",
+      "type": "operates"
+    },
+    {
+      "id": "layerzero-REL-106",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-066",
+      "target": "layerzero-ENT-001",
+      "type": "related"
+    },
+    {
+      "id": "layerzero-REL-107",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-066",
+      "target": "layerzero-ENT-004",
+      "type": "related"
+    },
+    {
+      "id": "layerzero-REL-108",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-067",
+      "target": "layerzero-ENT-001",
+      "type": "invested"
+    },
+    {
+      "id": "layerzero-REL-109",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-067",
+      "target": "layerzero-ENT-004",
+      "type": "invested"
+    },
+    {
+      "id": "layerzero-REL-110",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-068",
+      "target": "layerzero-ENT-001",
+      "type": "invested"
+    },
+    {
+      "id": "layerzero-REL-111",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-068",
+      "target": "layerzero-ENT-004",
+      "type": "invested"
+    },
+    {
+      "id": "layerzero-REL-112",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-069",
+      "target": "layerzero-ENT-001",
+      "type": "founded"
+    },
+    {
+      "id": "layerzero-REL-113",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-069",
+      "target": "layerzero-ENT-004",
+      "type": "founded"
+    },
+    {
+      "id": "layerzero-REL-114",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-070",
+      "target": "layerzero-ENT-001",
+      "type": "partner"
+    },
+    {
+      "id": "layerzero-REL-115",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-070",
+      "target": "layerzero-ENT-004",
+      "type": "partner"
+    },
+    {
+      "id": "layerzero-REL-116",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-071",
+      "target": "layerzero-ENT-001",
+      "type": "invested"
+    },
+    {
+      "id": "layerzero-REL-117",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-071",
+      "target": "layerzero-ENT-004",
+      "type": "invested"
+    },
+    {
+      "id": "layerzero-REL-118",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-071",
+      "target": "layerzero-ENT-070",
+      "type": "invested"
+    },
+    {
+      "id": "layerzero-REL-119",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-072",
+      "target": "layerzero-ENT-001",
+      "type": "member"
+    },
+    {
+      "id": "layerzero-REL-120",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-072",
+      "target": "layerzero-ENT-004",
+      "type": "member"
+    },
+    {
+      "id": "layerzero-REL-121",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-073",
+      "target": "layerzero-ENT-001",
+      "type": "partner"
+    },
+    {
+      "id": "layerzero-REL-122",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-073",
+      "target": "layerzero-ENT-004",
+      "type": "partner"
+    },
+    {
+      "id": "layerzero-REL-123",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-073",
+      "target": "layerzero-ENT-017",
+      "type": "partner"
+    },
+    {
+      "id": "layerzero-REL-124",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-073",
+      "target": "layerzero-ENT-019",
+      "type": "partner"
+    },
+    {
+      "id": "layerzero-REL-125",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-073",
+      "target": "layerzero-ENT-061",
+      "type": "partner"
+    },
+    {
+      "id": "layerzero-REL-126",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-074",
+      "target": "layerzero-ENT-001",
+      "type": "partner"
+    },
+    {
+      "id": "layerzero-REL-127",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-074",
+      "target": "layerzero-ENT-004",
+      "type": "partner"
+    },
+    {
+      "id": "layerzero-REL-128",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-074",
+      "target": "layerzero-ENT-061",
+      "type": "partner"
+    },
+    {
+      "id": "layerzero-REL-129",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-075",
+      "target": "layerzero-ENT-001",
+      "type": "audits"
+    },
+    {
+      "id": "layerzero-REL-130",
+      "projectSlug": "layerzero",
+      "source": "layerzero-ENT-075",
+      "target": "layerzero-ENT-004",
+      "type": "audits"
+    }
+  ],
+  "Arbitrum": [
+    {
+      "id": "arbitrum-REL-001",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-002",
+      "target": "arbitrum-ENT-001",
+      "type": "co-founder"
+    },
+    {
+      "id": "arbitrum-REL-002",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-002",
+      "target": "arbitrum-ENT-101",
+      "type": "co-founder"
+    },
+    {
+      "id": "arbitrum-REL-003",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-003",
+      "target": "arbitrum-ENT-001",
+      "type": "co-founder"
+    },
+    {
+      "id": "arbitrum-REL-004",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-003",
+      "target": "arbitrum-ENT-101",
+      "type": "co-founder"
+    },
+    {
+      "id": "arbitrum-REL-005",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-004",
+      "target": "arbitrum-ENT-001",
+      "type": "co-founder"
+    },
+    {
+      "id": "arbitrum-REL-006",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-004",
+      "target": "arbitrum-ENT-101",
+      "type": "co-founder"
+    },
+    {
+      "id": "arbitrum-REL-007",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-005",
+      "target": "arbitrum-ENT-001",
+      "type": "member"
+    },
+    {
+      "id": "arbitrum-REL-008",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-005",
+      "target": "arbitrum-ENT-021",
+      "type": "member"
+    },
+    {
+      "id": "arbitrum-REL-009",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-006",
+      "target": "arbitrum-ENT-001",
+      "type": "invested"
+    },
+    {
+      "id": "arbitrum-REL-010",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-007",
+      "target": "arbitrum-ENT-001",
+      "type": "related"
+    },
+    {
+      "id": "arbitrum-REL-011",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-008",
+      "target": "arbitrum-ENT-001",
+      "type": "partner"
+    },
+    {
+      "id": "arbitrum-REL-012",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-009",
+      "target": "arbitrum-ENT-001",
+      "type": "member"
+    },
+    {
+      "id": "arbitrum-REL-013",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-009",
+      "target": "arbitrum-ENT-021",
+      "type": "member"
+    },
+    {
+      "id": "arbitrum-REL-014",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-010",
+      "target": "arbitrum-ENT-001",
+      "type": "related"
+    },
+    {
+      "id": "arbitrum-REL-015",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-011",
+      "target": "arbitrum-ENT-001",
+      "type": "related"
+    },
+    {
+      "id": "arbitrum-REL-016",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-012",
+      "target": "arbitrum-ENT-001",
+      "type": "related"
+    },
+    {
+      "id": "arbitrum-REL-017",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-013",
+      "target": "arbitrum-ENT-001",
+      "type": "funds"
+    },
+    {
+      "id": "arbitrum-REL-018",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-014",
+      "target": "arbitrum-ENT-020",
+      "type": "co-founder"
+    },
+    {
+      "id": "arbitrum-REL-019",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-014",
+      "target": "arbitrum-ENT-103",
+      "type": "co-founder"
+    },
+    {
+      "id": "arbitrum-REL-020",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-014",
+      "target": "arbitrum-ENT-107",
+      "type": "co-founder"
+    },
+    {
+      "id": "arbitrum-REL-021",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-014",
+      "target": "arbitrum-ENT-108",
+      "type": "co-founder"
+    },
+    {
+      "id": "arbitrum-REL-022",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-015",
+      "target": "arbitrum-ENT-020",
+      "type": "co-founder"
+    },
+    {
+      "id": "arbitrum-REL-023",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-015",
+      "target": "arbitrum-ENT-109",
+      "type": "co-founder"
+    },
+    {
+      "id": "arbitrum-REL-024",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-015",
+      "target": "arbitrum-ENT-110",
+      "type": "co-founder"
+    },
+    {
+      "id": "arbitrum-REL-025",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-016",
+      "target": "arbitrum-ENT-020",
+      "type": "invested"
+    },
+    {
+      "id": "arbitrum-REL-026",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-016",
+      "target": "arbitrum-ENT-104",
+      "type": "invested"
+    },
+    {
+      "id": "arbitrum-REL-027",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-016",
+      "target": "arbitrum-ENT-105",
+      "type": "invested"
+    },
+    {
+      "id": "arbitrum-REL-028",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-016",
+      "target": "arbitrum-ENT-106",
+      "type": "invested"
+    },
+    {
+      "id": "arbitrum-REL-029",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-017",
+      "target": "arbitrum-ENT-021",
+      "type": "member"
+    },
+    {
+      "id": "arbitrum-REL-030",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-018",
+      "target": "arbitrum-ENT-021",
+      "type": "member"
+    },
+    {
+      "id": "arbitrum-REL-031",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-019",
+      "target": "arbitrum-ENT-021",
+      "type": "member"
+    },
+    {
+      "id": "arbitrum-REL-032",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-020",
+      "target": "arbitrum-ENT-022",
+      "type": "develops"
+    },
+    {
+      "id": "arbitrum-REL-033",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-022",
+      "target": "arbitrum-ENT-020",
+      "type": "related"
+    },
+    {
+      "id": "arbitrum-REL-034",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-023",
+      "target": "arbitrum-ENT-022",
+      "type": "member"
+    },
+    {
+      "id": "arbitrum-REL-035",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-024",
+      "target": "arbitrum-ENT-021",
+      "type": "member"
+    },
+    {
+      "id": "arbitrum-REL-036",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-051",
+      "target": "arbitrum-ENT-022",
+      "type": "develops"
+    },
+    {
+      "id": "arbitrum-REL-037",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-057",
+      "target": "arbitrum-ENT-001",
+      "type": "invested"
+    },
+    {
+      "id": "arbitrum-REL-038",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-057",
+      "target": "arbitrum-ENT-051",
+      "type": "invested"
+    },
+    {
+      "id": "arbitrum-REL-039",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-059",
+      "target": "arbitrum-ENT-085",
+      "type": "related"
+    },
+    {
+      "id": "arbitrum-REL-040",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-077",
+      "target": "arbitrum-ENT-051",
+      "type": "related"
+    },
+    {
+      "id": "arbitrum-REL-041",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-090",
+      "target": "arbitrum-ENT-001",
+      "type": "invested"
+    },
+    {
+      "id": "arbitrum-REL-042",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-091",
+      "target": "arbitrum-ENT-001",
+      "type": "invested"
+    },
+    {
+      "id": "arbitrum-REL-043",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-092",
+      "target": "arbitrum-ENT-001",
+      "type": "invested"
+    },
+    {
+      "id": "arbitrum-REL-044",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-093",
+      "target": "arbitrum-ENT-001",
+      "type": "invested"
+    },
+    {
+      "id": "arbitrum-REL-045",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-094",
+      "target": "arbitrum-ENT-001",
+      "type": "invested"
+    },
+    {
+      "id": "arbitrum-REL-046",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-095",
+      "target": "arbitrum-ENT-001",
+      "type": "invested"
+    },
+    {
+      "id": "arbitrum-REL-047",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-096",
+      "target": "arbitrum-ENT-001",
+      "type": "invested"
+    },
+    {
+      "id": "arbitrum-REL-048",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-097",
+      "target": "arbitrum-ENT-001",
+      "type": "invested"
+    },
+    {
+      "id": "arbitrum-REL-049",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-098",
+      "target": "arbitrum-ENT-001",
+      "type": "invested"
+    },
+    {
+      "id": "arbitrum-REL-050",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-099",
+      "target": "arbitrum-ENT-001",
+      "type": "invested"
+    },
+    {
+      "id": "arbitrum-REL-051",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-100",
+      "target": "arbitrum-ENT-001",
+      "type": "invested"
+    },
+    {
+      "id": "arbitrum-REL-052",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-101",
+      "target": "arbitrum-ENT-002",
+      "type": "co-founder"
+    },
+    {
+      "id": "arbitrum-REL-053",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-101",
+      "target": "arbitrum-ENT-003",
+      "type": "co-founder"
+    },
+    {
+      "id": "arbitrum-REL-054",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-101",
+      "target": "arbitrum-ENT-004",
+      "type": "co-founder"
+    },
+    {
+      "id": "arbitrum-REL-055",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-102",
+      "target": "arbitrum-ENT-002",
+      "type": "related"
+    },
+    {
+      "id": "arbitrum-REL-056",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-103",
+      "target": "arbitrum-ENT-014",
+      "type": "member"
+    },
+    {
+      "id": "arbitrum-REL-057",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-104",
+      "target": "arbitrum-ENT-016",
+      "type": "invested"
+    },
+    {
+      "id": "arbitrum-REL-058",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-105",
+      "target": "arbitrum-ENT-016",
+      "type": "invested"
+    },
+    {
+      "id": "arbitrum-REL-059",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-106",
+      "target": "arbitrum-ENT-016",
+      "type": "invested"
+    },
+    {
+      "id": "arbitrum-REL-060",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-107",
+      "target": "arbitrum-ENT-014",
+      "type": "co-founder"
+    },
+    {
+      "id": "arbitrum-REL-061",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-108",
+      "target": "arbitrum-ENT-014",
+      "type": "member"
+    },
+    {
+      "id": "arbitrum-REL-062",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-109",
+      "target": "arbitrum-ENT-015",
+      "type": "member"
+    },
+    {
+      "id": "arbitrum-REL-063",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-110",
+      "target": "arbitrum-ENT-015",
+      "type": "co-founder"
+    },
+    {
+      "id": "arbitrum-REL-064",
+      "projectSlug": "arbitrum",
+      "source": "arbitrum-ENT-111",
+      "target": "arbitrum-ENT-021",
+      "type": "related"
+    }
+  ]
+}

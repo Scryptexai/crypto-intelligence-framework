@@ -1,0 +1,288 @@
+{
+  "Arbitrum": [
+    {
+      "id": "arbitrum-C-001",
+      "projectSlug": "arbitrum",
+      "category": "Financial",
+      "title": "Treasury Size ($1.21B vs $1.3B+)",
+      "description": "Messari melaporkan $1.21B (per 31 Mei 2025), sementara KuCoin melaporkan $1.3B+. Perbedaan ~$90M (7%).",
+      "severity": "Medium",
+      "status": "Unresolved",
+      "versionA": {
+        "source": "Messari",
+        "value": "Messari melaporkan $1.21B (per 31 Mei 2025), sementara KuCoin melaporkan $1.3B+. Perbedaan ~$90M (7%).",
+        "date": "2026-07-29",
+        "url": "https://messari.io/",
+        "evidence": "Messari (https://messari.io/), KuCoin (https://www.kucoin.com/)"
+      },
+      "versionB": {
+        "source": "KuCoin",
+        "value": "Messari melaporkan $1.21B (per 31 Mei 2025), sementara KuCoin melaporkan $1.3B+. Perbedaan ~$90M (7%).",
+        "date": "2026-07-29",
+        "url": "https://www.kucoin.com/",
+        "evidence": "Messari (https://messari.io/), KuCoin (https://www.kucoin.com/)"
+      },
+      "resolution": "Perbedaan disebabkan oleh waktu pengambilan data dan metodologi. Messari per 31 Mei 2025; KuCoin data lebih baru. Tidak resolved.",
+      "affectedKnowledge": [
+        "arbitrum-K-002"
+      ],
+      "affectedPhase": "Phase 5",
+      "updatedAt": "2026-07-29"
+    },
+    {
+      "id": "arbitrum-C-002",
+      "projectSlug": "arbitrum",
+      "category": "Token",
+      "title": "Circulating Supply (3 angka berbeda)",
+      "description": "Tokenomist: 6,362,841,042; Etherscan: 6,255,821,492; CoinGlass: 6,614,056,381. Perbedaan ~358M (5.7%).",
+      "severity": "Medium",
+      "status": "Unresolved",
+      "versionA": {
+        "source": "Tokenomist",
+        "value": "Tokenomist: 6,362,841,042; Etherscan: 6,255,821,492; CoinGlass: 6,614,056,381. Perbedaan ~358M (5.7%).",
+        "date": "2026-07-29",
+        "url": "https://tokenomist.ai/",
+        "evidence": "Tokenomist, Etherscan, CoinGlass"
+      },
+      "versionB": {
+        "source": "Etherscan",
+        "value": "Tokenomist: 6,362,841,042; Etherscan: 6,255,821,492; CoinGlass: 6,614,056,381. Perbedaan ~358M (5.7%).",
+        "date": "2026-07-29",
+        "url": "https://etherscan.io/",
+        "evidence": "Tokenomist, Etherscan, CoinGlass"
+      },
+      "resolution": "Perbedaan karena waktu pengambilan data dan metodologi. Tidak resolved.",
+      "affectedKnowledge": [
+        "arbitrum-K-010"
+      ],
+      "affectedPhase": "Phase 6",
+      "updatedAt": "2026-07-29"
+    },
+    {
+      "id": "arbitrum-C-003",
+      "projectSlug": "arbitrum",
+      "category": "Market",
+      "title": "TVL ($12-17B)",
+      "description": "Empat sumber berbeda melaporkan TVL: $12-16B, $15.5B, $17B, ~$12.97B DEX TVL.",
+      "severity": "Medium",
+      "status": "Unresolved",
+      "versionA": {
+        "source": "KuCoin",
+        "value": "Empat sumber berbeda melaporkan TVL: $12-16B, $15.5B, $17B, ~$12.97B DEX TVL.",
+        "date": "2026-07-29",
+        "url": "https://www.kucoin.com/",
+        "evidence": "KuCoin, Everstake, Sherlock, HTX"
+      },
+      "versionB": {
+        "source": "Everstake",
+        "value": "Empat sumber berbeda melaporkan TVL: $12-16B, $15.5B, $17B, ~$12.97B DEX TVL.",
+        "date": "2026-07-29",
+        "url": "https://everstake.one/",
+        "evidence": "KuCoin, Everstake, Sherlock, HTX"
+      },
+      "resolution": "Perbedaan karena metodologi pengukuran (total bridged vs DeFi TVL vs DEX TVL). Tidak resolved.",
+      "affectedKnowledge": [
+        "arbitrum-K-008"
+      ],
+      "affectedPhase": "Phase 8",
+      "updatedAt": "2026-07-29"
+    },
+    {
+      "id": "arbitrum-C-004",
+      "projectSlug": "arbitrum",
+      "category": "Market",
+      "title": "Daily Transactions (4.7M vs 1.5M)",
+      "description": "KuCoin melaporkan 4.7M daily transactions (Feb 2026), sementara Blockeden melaporkan 1.5M.",
+      "severity": "High",
+      "status": "Unresolved",
+      "versionA": {
+        "source": "KuCoin",
+        "value": "KuCoin melaporkan 4.7M daily transactions (Feb 2026), sementara Blockeden melaporkan 1.5M.",
+        "date": "2026-07-29",
+        "url": "https://www.kucoin.com/",
+        "evidence": "KuCoin, Blockeden"
+      },
+      "versionB": {
+        "source": "Blockeden",
+        "value": "KuCoin melaporkan 4.7M daily transactions (Feb 2026), sementara Blockeden melaporkan 1.5M.",
+        "date": "2026-07-29",
+        "url": "https://blockeden.xyz/",
+        "evidence": "KuCoin, Blockeden"
+      },
+      "resolution": "Perbedaan karena periode waktu berbeda atau metodologi berbeda. Tidak resolved.",
+      "affectedKnowledge": [],
+      "affectedPhase": "Phase 8",
+      "updatedAt": "2026-07-29"
+    },
+    {
+      "id": "arbitrum-C-005",
+      "projectSlug": "arbitrum",
+      "category": "Financial",
+      "title": "Series B Amount ($100M vs $120M)",
+      "description": "Sumber menyebut $100M dan $120M untuk Series B.",
+      "severity": "Medium",
+      "status": "Unresolved",
+      "versionA": {
+        "source": "DefiLlama",
+        "value": "Sumber menyebut $100M dan $120M untuk Series B.",
+        "date": "2026-07-29",
+        "url": "https://defillama.com/",
+        "evidence": "DefiLlama, Gate.io, HTX"
+      },
+      "versionB": {
+        "source": "Gate.io",
+        "value": "Sumber menyebut $100M dan $120M untuk Series B.",
+        "date": "2026-07-29",
+        "url": "https://www.gate.com/",
+        "evidence": "DefiLlama, Gate.io, HTX"
+      },
+      "resolution": "Mungkin karena struktur putaran yang berbeda. Tidak resolved.",
+      "affectedKnowledge": [],
+      "affectedPhase": "Phase 5",
+      "updatedAt": "2026-07-29"
+    },
+    {
+      "id": "arbitrum-C-006",
+      "projectSlug": "arbitrum",
+      "category": "Market",
+      "title": "L2 Market Share (~35.3% vs ~31% vs ~38%)",
+      "description": "Sherlock: 35.3%, Across: 31%, Everstake: 38% L2 DeFi share.",
+      "severity": "Medium",
+      "status": "Unresolved",
+      "versionA": {
+        "source": "Sherlock",
+        "value": "Sherlock: 35.3%, Across: 31%, Everstake: 38% L2 DeFi share.",
+        "date": "2026-07-29",
+        "url": "https://sherlock.xyz/",
+        "evidence": "Sherlock, Across, Everstake"
+      },
+      "versionB": {
+        "source": "Across",
+        "value": "Sherlock: 35.3%, Across: 31%, Everstake: 38% L2 DeFi share.",
+        "date": "2026-07-29",
+        "url": "https://across.to/",
+        "evidence": "Sherlock, Across, Everstake"
+      },
+      "resolution": "Perbedaan karena metodologi perhitungan. Tidak resolved.",
+      "affectedKnowledge": [
+        "arbitrum-K-008"
+      ],
+      "affectedPhase": "Phase 8",
+      "updatedAt": "2026-07-29"
+    },
+    {
+      "id": "arbitrum-C-007",
+      "projectSlug": "arbitrum",
+      "category": "Timeline",
+      "title": "Launch Nova (Agustus 9 vs 10, 2022)",
+      "description": "Sumber menyebut 9 Agustus 2022 dan 10 Agustus 2022.",
+      "severity": "Low",
+      "status": "Resolved",
+      "versionA": {
+        "source": "Nansen",
+        "value": "Sumber menyebut 9 Agustus 2022 dan 10 Agustus 2022.",
+        "date": "2026-07-29",
+        "url": "https://research.nansen.ai/",
+        "evidence": "Nansen, BeInCrypto, SiliconAngle"
+      },
+      "versionB": {
+        "source": "BeInCrypto",
+        "value": "Sumber menyebut 9 Agustus 2022 dan 10 Agustus 2022.",
+        "date": "2026-07-29",
+        "url": "https://beincrypto.com/",
+        "evidence": "Nansen, BeInCrypto, SiliconAngle"
+      },
+      "resolution": "Perbedaan zona waktu. Resolved (anggap 9-10 Agustus 2022).",
+      "affectedKnowledge": [],
+      "affectedPhase": "Phase 3",
+      "updatedAt": "2026-07-29"
+    },
+    {
+      "id": "arbitrum-C-008",
+      "projectSlug": "arbitrum",
+      "category": "Token",
+      "title": "Distribution Percentages (42.78% vs 35.3% DAO)",
+      "description": "The Block: 42.78% DAO Treasury; KuCoin: 35.3% DAO.",
+      "severity": "High",
+      "status": "Unresolved",
+      "versionA": {
+        "source": "The Block",
+        "value": "The Block: 42.78% DAO Treasury; KuCoin: 35.3% DAO.",
+        "date": "2026-07-29",
+        "url": "https://www.theblock.co/",
+        "evidence": "The Block, KuCoin"
+      },
+      "versionB": {
+        "source": "KuCoin",
+        "value": "The Block: 42.78% DAO Treasury; KuCoin: 35.3% DAO.",
+        "date": "2026-07-29",
+        "url": "https://www.kucoin.com/",
+        "evidence": "The Block, KuCoin"
+      },
+      "resolution": "Perbedaan karena kategorisasi yang berbeda (DAO Treasury vs Foundation operational budget). Tidak resolved.",
+      "affectedKnowledge": [
+        "arbitrum-K-010"
+      ],
+      "affectedPhase": "Phase 6",
+      "updatedAt": "2026-07-29"
+    },
+    {
+      "id": "arbitrum-C-009",
+      "projectSlug": "arbitrum",
+      "category": "Governance",
+      "title": "Voting Power Concentration (Top 10 ~50% vs ~85%)",
+      "description": "Beberapa sumber menyebut top 10 addresses ~50%, sumber lain menyebut top 100 hold 60-85%.",
+      "severity": "High",
+      "status": "Unresolved",
+      "versionA": {
+        "source": "Phase 6 (Holder Distribution)",
+        "value": "Beberapa sumber menyebut top 10 addresses ~50%, sumber lain menyebut top 100 hold 60-85%.",
+        "date": "2026-07-29",
+        "url": "",
+        "evidence": "Phase 6 (Holder Distribution), Phase 9 (Governance Decision Pattern)"
+      },
+      "versionB": {
+        "source": "Phase 9 (Governance Decision Pattern)",
+        "value": "Beberapa sumber menyebut top 10 addresses ~50%, sumber lain menyebut top 100 hold 60-85%.",
+        "date": "2026-07-29",
+        "url": "",
+        "evidence": "Phase 6 (Holder Distribution), Phase 9 (Governance Decision Pattern)"
+      },
+      "resolution": "Perbedaan karena cakupan analisis (top 10 vs top 100). Tidak resolved.",
+      "affectedKnowledge": [
+        "arbitrum-K-004",
+        "arbitrum-K-005"
+      ],
+      "affectedPhase": "Phase 6",
+      "updatedAt": "2026-07-29"
+    },
+    {
+      "id": "arbitrum-C-010",
+      "projectSlug": "arbitrum",
+      "category": "Timeline",
+      "title": "Testnet Awal (Feb 2020 vs Mei 2021)",
+      "description": "Beberapa sumber menyebut Februari 2020, sumber lain menyebut Mei 2021 untuk testnet yang tidak terbuka untuk publik.",
+      "severity": "Low",
+      "status": "Resolved",
+      "versionA": {
+        "source": "Messari",
+        "value": "Beberapa sumber menyebut Februari 2020, sumber lain menyebut Mei 2021 untuk testnet yang tidak terbuka untuk publik.",
+        "date": "2026-07-29",
+        "url": "https://messari.io/",
+        "evidence": "Messari, Medium, Devcon"
+      },
+      "versionB": {
+        "source": "Medium",
+        "value": "Beberapa sumber menyebut Februari 2020, sumber lain menyebut Mei 2021 untuk testnet yang tidak terbuka untuk publik.",
+        "date": "2026-07-29",
+        "url": "https://medium.com/",
+        "evidence": "Messari, Medium, Devcon"
+      },
+      "resolution": "Kemungkinan testnet yang berbeda. Resolved (dua testnet berbeda).",
+      "affectedKnowledge": [],
+      "affectedPhase": "Phase 3",
+      "updatedAt": "2026-07-29"
+    }
+  ],
+  "LayerZero": []
+}
