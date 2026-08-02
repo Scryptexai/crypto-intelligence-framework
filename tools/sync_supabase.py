@@ -87,7 +87,13 @@ def project_rows():
     actively tracked -- a workflow flag CIF assigns, not a claim about the project itself).
     tagline/description/color/accent/conflict_count/event_count/coverage have no
     deterministic source yet and are intentionally omitted so upsert leaves them untouched."""
-    entity_counts = {slugify(k): len(v) for k, v in load_optional("entities.json").items()}
+    # Counts entities the same way entity_rows() filters them (skips null `type`, see that
+    # function's docstring) -- otherwise this stays out of sync with what's actually inserted,
+    # exactly the bug caught by a 2026-08-02 Supabase audit (stored count 1 too high on both
+    # projects, matching the entities excluded for missing type).
+    entity_counts = {
+        slugify(k): sum(1 for e in v if e.get("type")) for k, v in load_optional("entities.json").items()
+    }
     knowledge_counts = {slugify(k): len(v) for k, v in load_optional("knowledge.json").items()}
     qa_by_slug = {slugify(k): v for k, v in load_optional("qa.json").items()}
 
