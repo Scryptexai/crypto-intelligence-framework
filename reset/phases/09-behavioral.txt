@@ -335,3 +335,44 @@ ATURAN
 - Gunakan nama Entity yang sama persis dengan Phase 2.
 - Gunakan Event ID yang sama persis dengan Phase 3.
 - Jika analisis bertentangan dengan fakta pada dataset sebelumnya, jangan memilih salah satu. Laporkan konflik tersebut pada Open Threads untuk diselesaikan pada Phase 11 (Conflict Resolution).
+
+
+========================================================
+OUTPUT FORMAT — WAJIB (mesin akan mem-parsing; IKUTI PERSIS)
+
+Baris pertama: PROJECT: <Nama Project>
+
+BAGIAN A — pakai judul section & penomoran PERSIS:
+
+Strategic Objectives
+1. <objektif strategis>
+2. <objektif strategis>
+
+Technical Decision Pattern
+Pola 1: <pola keputusan teknis>
+Pola 2: <pola>
+
+Financial Decision Pattern
+Pola 1: <pola>
+
+Ecosystem Decision Pattern
+Pola 1: <pola>
+
+Governance Decision Pattern
+Pola 1: <pola>
+
+Risk Response Pattern
+Pola 1: <pola respons terhadap risiko/krisis>
+
+Strategic Trade-offs
+Trade-off 1: <trade-off>
+Trade-off 2: <trade-off>
+
+BAGIAN B — Decision Events. Untuk setiap keputusan penting, tulis blok PERSIS (pisahkan dengan baris kosong):
+
+Decision Event: <judul singkat> — <YYYY-MM atau tahun>
+Trigger: <pemicu keputusan>
+Evidence: <bukti + (HIGH|MEDIUM|LOW) + https://url>
+Decision: <keputusan yang diambil>
+Immediate Result: <hasil langsung>
+Long-term Impact: <dampak jangka panjang>

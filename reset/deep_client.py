@@ -118,6 +118,6 @@ def from_env() -> "DeepClient":
         token=os.environ.get("ANTHROPIC_AUTH_TOKEN", ""),
         model=os.environ.get("ANTHROPIC_MODEL", ""),
         max_tokens=int(os.environ.get("DEEP_MAX_TOKENS", "16000")),
-        timeout=int(os.environ.get("DEEP_TIMEOUT", "600")),
+        timeout=int(os.environ.get("DEEP_TIMEOUT", "1200")),
         max_retries=int(os.environ.get("DEEP_MAX_RETRIES", "5")),
     )

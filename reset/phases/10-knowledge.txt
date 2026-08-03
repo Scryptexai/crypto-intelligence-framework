@@ -311,3 +311,37 @@ ATURAN
 - Gunakan nama Entity yang sama persis dengan Phase 2.
 - Gunakan Event ID yang sama persis dengan Phase 3.
 - Jika sebuah insight didukung oleh evidence yang saling bertentangan, jangan memilih salah satu. Catat konflik tersebut pada Open Threads untuk diselesaikan pada Phase 11.
+
+
+========================================================
+OUTPUT FORMAT — WAJIB (mesin akan mem-parsing; IKUTI PERSIS)
+
+Baris pertama: PROJECT: <Nama Project>
+
+Gunakan KETUJUH judul section berikut PERSIS. Di tiap section, tiap item memakai item-word + nomor (contoh "Insight 1:"), diikuti field berlabel:
+
+Core Insights
+Insight 1: <judul insight singkat>
+Description: <ringkas>
+Explanation: <penjelasan>
+Evidence: <sumber + https://url>
+Confidence: <HIGH|MEDIUM|LOW>
+
+Strategic Principles
+Principle 1: ...
+Description: ... / Explanation: ... / Evidence: ... / Confidence: ...
+
+Success Factors
+Factor 1: ...  (Description/Explanation/Evidence/Confidence)
+
+Failure Factors
+Factor 1: ...  (Description/Explanation/Evidence/Confidence)
+
+Decision Framework
+Step 1: ...  (Description/Explanation/Evidence/Confidence)
+
+Reusable Playbook
+Playbook 1: ...  (Description/Explanation/Evidence/Confidence)
+
+Anti-patterns
+Anti-pattern 1: ...  (Description/Explanation/Evidence/Confidence)

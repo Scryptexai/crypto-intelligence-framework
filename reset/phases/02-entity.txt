@@ -332,3 +332,20 @@ ATURAN
 - Fokus hanya pada identifikasi entity.
 - Satu entity hanya muncul SATU kali.
 - Jika suatu entity memiliki banyak fungsi, tetap buat SATU entri dengan fungsi utama dan sebutkan fungsi tambahan secara singkat bila diperlukan.
+
+
+========================================================
+OUTPUT FORMAT — WAJIB (mesin akan mem-parsing; IKUTI PERSIS, jangan pakai heading kategori)
+
+Baris pertama: PROJECT: <Nama Project>
+Kemudian untuk SETIAP entity tulis blok PERSIS ini, dan pisahkan tiap entity dengan baris berisi "---":
+
+Entity: <Nama resmi>
+Type: <SATU: Person | Company | Foundation | Protocol | Blockchain | Application | Exchange | Wallet | Investor | VC | DAO | Government | Security | Auditor | Media | Infrastructure>
+Relationship: <peran terhadap proyek — sertakan tag (HIGH)/(MEDIUM)/(LOW)>
+Period: <periode keterlibatan atau "tidak diketahui">
+Exposure Type: <mis. technical-integration | financial | governance | "tidak diketahui">
+Evidence: (HIGH|MEDIUM|LOW) [Sumber, https://url]; [Sumber, https://url]
+---
+
+DILARANG memakai heading kategori (PERSON/COMPANY/dst) atau label Indonesia (Nama:/Jenis:/Bukti:). Pakai label Inggris di atas PERSIS.
