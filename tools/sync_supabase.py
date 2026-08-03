@@ -38,7 +38,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 POC = ROOT / "poc"
-TABLES = ("projects", "knowledge_items", "evidence_items", "entities", "qa_dimensions",
+TABLES = ("projects", "knowledge_items", "evidence_items", "entities", "relationships",
+          "conflicts", "qa_dimensions",
           "qa_phases", "behavior_profiles", "cif_patterns", "cif_backtests",
           "cif_decision_events")
 
@@ -317,11 +318,68 @@ def behavior_rows():
     return rows
 
 
+def conflict_rows():
+    """poc/conflicts.json -> `conflicts` columns (one row per conflict per project).
+
+    Root-cause fix: the frontend (Conflict Center) reads the `conflicts` table but this
+    sync never populated it. Source data exists in data_project/*/11-conflict.docx; the
+    remaining upstream step is extract_conflicts.py emitting poc/conflicts.json. Until then
+    load_optional() returns {} and this yields [] -> sync skips the table (no crash).
+    """
+    rows = []
+    for project, items in load_optional("conflicts.json").items():
+        slug = slugify(project)
+        for i, c in enumerate(items):
+            cid = str(c.get("id") or f"CONF-{i+1:03d}")
+            rows.append({
+                "id": cid if cid.startswith(slug) else f"{slug}-{cid}",
+                "project_slug": slug,
+                "category": c.get("category"),
+                "title": c.get("title") or c.get("name") or "Untitled conflict",
+                "description": c.get("description"),
+                "severity": c.get("severity") or "Medium",
+                "status": c.get("status") or "Unresolved",
+                "version_a": c.get("versionA") or c.get("version_a") or {},
+                "version_b": c.get("versionB") or c.get("version_b") or {},
+                "resolution": c.get("resolution"),
+                "affected_knowledge": c.get("affectedKnowledge") or c.get("affected_knowledge") or [],
+                "affected_phase": c.get("affectedPhase") or c.get("affected_phase"),
+                "updated_at": c.get("updatedAt") or c.get("updated_at"),
+            })
+    return rows
+
+
+def relationship_rows():
+    """poc/relationships.json -> `relationships` columns (entity-graph edges).
+
+    Root-cause fix: the frontend Entity Graph reads the `relationships` table but this sync
+    never populated it (edges came out empty). source/target must reference entities.id (FK).
+    Remaining upstream step: extract_relationships.py emitting poc/relationships.json.
+    Until then this yields [] -> sync skips the table (no crash, forward-compatible).
+    """
+    rows = []
+    for project, items in load_optional("relationships.json").items():
+        slug = slugify(project)
+        for i, r in enumerate(items):
+            rid = str(r.get("id") or f"REL-{i+1:03d}")
+            rows.append({
+                "id": rid if rid.startswith(slug) else f"{slug}-{rid}",
+                "project_slug": slug,
+                "source": r.get("source"),
+                "target": r.get("target"),
+                "type": r.get("type") or "related",
+            })
+    return rows
+
+
+
 BUILDERS = {
     "projects": project_rows,
     "knowledge_items": knowledge_rows,
     "evidence_items": evidence_rows,
     "entities": entity_rows,
+    "relationships": relationship_rows,
+    "conflicts": conflict_rows,
     "qa_dimensions": qa_dimension_rows,
     "qa_phases": qa_phase_rows,
     "behavior_profiles": behavior_rows,
@@ -338,7 +396,7 @@ ON_CONFLICT = {
 # Insertion order matters for FK integrity: projects before anything referencing
 # projects.slug, entities before relationships/evidence_items->knowledge_items chains,
 # knowledge_items before evidence_items.
-ORDER = ["projects", "entities", "knowledge_items", "evidence_items", "qa_dimensions",
+ORDER = ["projects", "entities", "relationships", "knowledge_items", "conflicts", "evidence_items", "qa_dimensions",
          "qa_phases", "behavior_profiles", "cif_patterns", "cif_backtests",
          "cif_decision_events"]
 

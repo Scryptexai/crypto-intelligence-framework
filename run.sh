@@ -4,7 +4,8 @@
 #   ./run.sh          ingest new reports (anti-duplicate) -> build JSON -> extract events -> backtest
 #   ./run.sh build    only rebuild JSON + extract events + backtest (no ingest)
 #   ./run.sh ingest   only ingest (no build)
-#   ./run.sh sync     push poc/{projects,patterns,benchmarks,decision_events,entities}.json to Supabase
+#   ./run.sh sync     push poc/{projects,knowledge,evidence,entities,relationships,conflicts,qa,
+#                     behavior,decision_events,patterns,benchmarks}.json to Supabase
 #                     (tools/sync_supabase.py) -- explicit opt-in only, never runs as part of
 #                     `all`/`build`; requires SUPABASE_URL + SUPABASE_SERVICE_ROLE_KEY env vars
 #                     (see that file's docstring)
@@ -73,6 +74,24 @@ run_extract_entities() {
   fi
 }
 
+run_extract_conflicts() {
+  # Intelligence Workspace's Conflict Center — pull the CONFLICT REGISTER out of every
+  # Deep dossier's Validation & QA phase (see tools/extract_conflicts.py). Dossiers with
+  # no register parse to 0 conflicts, so this is safe to run over the whole dir.
+  local real=()
+  while IFS= read -r f; do real+=("$f"); done < <(_real_dossiers)
+  if [ "${#real[@]}" -gt 0 ]; then
+    "$PY" tools/extract_conflicts.py "${real[@]}"
+  fi
+}
+
+run_extract_relationships() {
+  # Intelligence Workspace's Entity Graph edges — derive source/target/type from literal
+  # co-mentions in poc/entities.json (see tools/extract_relationships.py). Must run AFTER
+  # run_extract_entities so poc/entities.json exists.
+  "$PY" tools/extract_relationships.py || true
+}
+
 run_extract_iw_fields() {
   # Intelligence Workspace's Knowledge/QA/Behavior contracts — Track C (DeepSeek
   # methodology) dossiers only; Track A/B dossiers parse to 0 items and are skipped
@@ -95,6 +114,8 @@ case "$cmd" in
     run_extract_events
     run_extract_entities
     run_extract_iw_fields
+    run_extract_conflicts
+    run_extract_relationships
     "$PY" tools/backtest.py || true
     ;;
   sync)
@@ -107,6 +128,8 @@ case "$cmd" in
     run_extract_events                   # export poc/decision_events.json
     run_extract_entities                 # export poc/entities.json
     run_extract_iw_fields                # export poc/{knowledge,behavior,qa}.json (Track C only)
+    run_extract_conflicts                # export poc/conflicts.json (Conflict Center)
+    run_extract_relationships            # export poc/relationships.json (entity-graph edges)
     "$PY" tools/backtest.py || true      # scorecard (non-zero exit on real failure; run continues)
     ;;
   *)
