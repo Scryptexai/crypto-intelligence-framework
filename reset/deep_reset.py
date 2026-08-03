@@ -43,6 +43,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import config as C
 from deep_client import from_env, DeepError
+import normalize
 
 def args_context_budget() -> int:
     import os
@@ -54,14 +55,22 @@ LOG_FILE = C.STATE_DIR / "reset.log"
 
 SYSTEM_PROMPT = (
     "You are a meticulous crypto-intelligence research analyst working within the "
-    "Crypto Intelligence Framework (CIF). Follow the phase template EXACTLY. Cite "
-    "every non-trivial fact with an evidence tag (HIGH/MEDIUM/LOW) and a real source "
-    "URL. Never fabricate: write 'tidak diketahui' when a fact cannot be verified. "
-    "Output only the report content in the requested structure — no preamble, no "
-    "meta commentary."
+    "Crypto Intelligence Framework (CIF). Follow the phase template EXACTLY.\n"
+    "OUTPUT FORMAT RULES (critical for downstream parsing):\n"
+    "- PLAIN TEXT ONLY. Do NOT use Markdown: no '#'/'##'/'###' headers, no '**bold**', "
+    "no backticks, no '|' tables. Write section titles as bare lines exactly as the "
+    "template shows them (e.g. a line 'Core Insights', not '## Core Insights').\n"
+    "- Use the EXACT item labels the template specifies (e.g. 'Insight 1:', 'Principle 1:', "
+    "'Factor 1:', 'Entity:', 'Event ID:') — do NOT invent your own labels like 'Knowledge 1:'.\n"
+    "- Cite every non-trivial fact with an evidence tag (HIGH/MEDIUM/LOW) AND a real source URL.\n"
+    "- For synthesis phases (Knowledge/Behavioral/Validation) that reference earlier phases, "
+    "write internal citations in the bracket form 【Phase N — Section】 or 【History — EV-0NN】 "
+    "(NOT prose like 'Phase 1 says…'); include at least three per report.\n"
+    "- Never fabricate: write 'tidak diketahui' when a fact cannot be verified.\n"
+    "- Output ONLY the report content in the requested structure — no preamble, no meta commentary."
 )
 
-PROJECT_HEADER_RE = re.compile(r"(?im)^\s*PROJECT:\s*.+$")
+PROJECT_HEADER_RE = re.compile(r"(?im)^\s*PROJECT:\s*(.+)$")
 DATASET_HEADER_RE = re.compile(r"(?im)^\s*[A-Z][A-Z0-9 &/()\-]+\s+—\s+.+$")
 
 
@@ -145,9 +154,14 @@ def build_prompt(project: str, index: int, key: str) -> str:
 
 
 def ensure_header(project: str, text: str) -> str:
-    """ingest.validate_phase_content requires a 'PROJECT: <name>' or '<TITLE> — <NAME>'
-    header. If the model omitted both, prepend a PROJECT line so ingest accepts it."""
-    if PROJECT_HEADER_RE.search(text) or DATASET_HEADER_RE.search(text[:400]):
+    """ingest.validate_phase_content binds a file to its project via a 'PROJECT: <name>'
+    line (preferred) or a '<TITLE> — <NAME>' dataset header. Model output often starts
+    with a phase-title line like 'PHASE 10 — KNOWLEDGE EXTRACTION', which the dataset-header
+    rule would misread as project 'KNOWLEDGE EXTRACTION'. To be unambiguous we require a
+    real 'PROJECT: <folder>' line and prepend one when the correct project isn't already
+    declared at the top."""
+    m = PROJECT_HEADER_RE.search(text[:200])
+    if m and re.sub(r"[^a-z0-9]", "", m.group(1).lower()) == re.sub(r"[^a-z0-9]", "", project.lower()):
         return text
     return f"PROJECT: {project}\n\n{text}"
 
@@ -155,6 +169,9 @@ def ensure_header(project: str, text: str) -> str:
 def write_phase(project: str, key: str, text: str) -> Path:
     d = C.project_dir(project)
     d.mkdir(parents=True, exist_ok=True)
+    # Normalize model output to the plain-text shape the CIF extractors expect
+    # (strip Markdown, realign item labels) — some proxy backends answer in Markdown.
+    text = normalize.normalize(text)
     p = d / f"{key}.docx"
     p.write_text(text, encoding="utf-8")
     return p
