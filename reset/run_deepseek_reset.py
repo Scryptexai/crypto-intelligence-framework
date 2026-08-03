@@ -171,13 +171,14 @@ def run_pipeline_sync() -> None:
             "run './run.sh sync' manually to catch up.")
 
 
-def run_project(name: str, base_url: str, token: str, model: str, dry_run: bool, phases_limit: int) -> bool:
+def run_project(name: str, base_url: str, token: str, model: str, dry_run: bool, phases_limit: int,
+                output_root: Path) -> bool:
     """Returns True if every requested phase completed (real or resumed-from-disk), False if a
     phase failed permanently (all retries exhausted) -- in which case later phases for this
     project are skipped (they need this one's output as context) but the run continues to the
     NEXT project rather than aborting everything."""
     log(f"=== Project: {name} ===")
-    proj_dir = DATA_PROJECT_ROOT / name
+    proj_dir = output_root / name
     proj_dir.mkdir(parents=True, exist_ok=True)
     messages: list = []  # running chat history -- Track C's "one continuous chat" methodology
 
@@ -227,8 +228,12 @@ def run_project(name: str, base_url: str, token: str, model: str, dry_run: bool,
             log(f"  sleeping {PHASE_SLEEP_SECONDS}s before next phase...")
             time.sleep(PHASE_SLEEP_SECONDS)
 
-    log(f"=== {name}: all requested phases done, running ./run.sh + sync ===")
-    run_pipeline_sync()
+    if output_root == DATA_PROJECT_ROOT:
+        log(f"=== {name}: all requested phases done, running ./run.sh + sync ===")
+        run_pipeline_sync()
+    else:
+        log(f"=== {name}: all requested phases done (output-root={output_root}, "
+            f"not data_project/ -- skipping ./run.sh + sync, this is a test run) ===")
     return True
 
 
@@ -241,7 +246,13 @@ def main() -> None:
                      help="process only the first N phases per project (0 = all 11) -- for smoke testing")
     ap.add_argument("--dry-run", action="store_true",
                      help="no real API calls -- exercises file/loop logic only")
+    ap.add_argument("--output-root", default=str(DATA_PROJECT_ROOT),
+                     help="where to write <project>/NN-<phasekey>.docx files (default: data_project/). "
+                          "Point this at a scratch folder (e.g. reset/tmp_test) to verify real API "
+                          "response structure/quality before trusting it into data_project/ -- test runs "
+                          "never touch data_project/ and never trigger ./run.sh + sync.")
     args = ap.parse_args()
+    output_root = Path(args.output_root).resolve()
 
     base_url = os.environ.get("ANTHROPIC_BASE_URL")
     token = os.environ.get("ANTHROPIC_AUTH_TOKEN")
@@ -258,9 +269,10 @@ def main() -> None:
         if args.projects_limit:
             projects = projects[: args.projects_limit]
 
-    log(f"Starting reset pipeline for {len(projects)} project(s): {', '.join(projects)}")
+    log(f"Starting reset pipeline for {len(projects)} project(s): {', '.join(projects)}"
+        + (f" -- output-root={output_root}" if output_root != DATA_PROJECT_ROOT else ""))
     for i, name in enumerate(projects):
-        run_project(name, base_url, token, model, args.dry_run, args.phases_limit)
+        run_project(name, base_url, token, model, args.dry_run, args.phases_limit, output_root)
         if i < len(projects) - 1:
             log(f"sleeping {PROJECT_SLEEP_SECONDS}s before next project...")
             time.sleep(PROJECT_SLEEP_SECONDS)
