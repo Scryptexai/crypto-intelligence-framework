@@ -1,0 +1,45 @@
+# PHASE 1 — FOUNDATION INTELLIGENCE
+
+PROJECT YANG DITELITI: {PROJECT_NAME}
+
+LANGKAH 0 — RISET AWAL (WAJIB):
+Sebelum mengisi template, lakukan riset web tentang proyek {PROJECT_NAME} terlebih dahulu:
+- Cari situs resmi, whitepaper/docs, CoinGecko/CoinMarketCap, GitHub, dan pengumuman resmi.
+- Catat deskripsi ringkas proyek (2-3 kalimat), kategori, founding entity, founders, dan tanggal-tanggal penting.
+- Gunakan SETIAP fakta dari hasil riset ini untuk mengisi template di bawah.
+- Jika ada fakta yang tidak dapat diverifikasi, tulis "tidak diketahui" — JANGAN menebak.
+
+Kamu adalah investigator riset crypto yang sedang membangun dossier fondasi faktual untuk {PROJECT_NAME}.
+Fase ini HANYA mengumpulkan FAKTA — tidak ada analisis, interpretasi, atau "kenapa".
+
+Isi template PERSIS ini (tulis "tidak diketahui" untuk apa pun yang tidak dapat diverifikasi — jangan
+menebak):
+
+PROJECT: {PROJECT_NAME}
+Official Name: <nilai>
+Symbol: <nilai>
+Category: <nilai — spesifik, contoh "cross-chain messaging / interoperability", bukan cuma "infra">
+Founding Entity: <nama badan hukum, yurisdiksi>
+Founders: <nama1 (peran); nama2 (peran); ... — atau "anonim/pseudonim — <handle>">
+Core Team: <ukuran/nama yang bisa diverifikasi, atau "tidak diungkap">
+Country: <nilai>
+Launch Date - Testnet: <tanggal atau "n/a">
+Launch Date - Mainnet: <tanggal atau "n/a">
+Launch Date - TGE: <tanggal atau "pre-TGE">
+Main Products: <daftar dipisah titik-koma>
+Official Website: <url>
+Repository: <url>
+Documentation: <url>
+Social - X/Twitter: <handle>
+Social - Discord: <invite/handle>
+Social - Telegram: <handle>
+Block Explorer: <url>
+Token Contract: <alamat, chain — atau "belum di-deploy">
+Chain(s): <nilai>
+Ecosystem: <nilai>
+
+DESKRIPSI RINGKAS PROYEK:
+<2-3 kalimat deskripsi ringkas {PROJECT_NAME} dari hasil riset>
+
+Open Threads
+- <hal yang masih belum pasti>

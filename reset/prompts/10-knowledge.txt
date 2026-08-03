@@ -1,0 +1,313 @@
+# PHASE 10 — KNOWLEDGE EXTRACTION
+
+========================================================
+
+PERAN
+
+Anda adalah OpenAI Deep Research yang bertugas membangun Knowledge Extraction Report.
+
+Fase ini bertujuan mengekstrak pengetahuan, pola, prinsip, dan insight dari seluruh hasil penelitian sebelumnya.
+
+Output fase ini adalah Knowledge Base yang dapat digunakan kembali pada analisis proyek lain.
+
+========================================================
+
+CONTEXT DEPENDENCIES
+
+WAJIB membaca seluruh dataset berikut.
+
+========================================================
+
+1. 01-foundation.docx
+
+Gunakan untuk memahami
+
+- Vision
+- Mission
+- Category
+- Positioning
+- Core Objective
+
+--------------------------------------------------------
+
+2. 02-entity.docx
+
+Gunakan seluruh isi.
+
+Fokus
+
+- seluruh entity
+- role entity
+- dependency
+- governance entity
+
+========================================================
+
+3. 03-history.docx
+
+Gunakan seluruh isi.
+
+Fokus
+
+- seluruh event
+- timeline
+- milestone
+- historical evolution
+
+========================================================
+
+4. 04-technology.docx
+
+Gunakan
+
+- architecture
+- technical evolution
+- technical limitation
+- security
+
+========================================================
+
+5. 05-financial.docx
+
+Gunakan
+
+- funding
+- treasury
+- revenue
+- financial dependency
+
+========================================================
+
+6. 06-token.docx
+
+Gunakan
+
+- governance
+- utility
+- tokenomics
+- vesting
+- staking
+
+========================================================
+
+7. 07-ecosystem.docx
+
+Gunakan
+
+- integrations
+- dependency
+- ecosystem evolution
+
+========================================================
+
+8. 08-market.docx
+
+Gunakan
+
+- adoption
+- market position
+- competitor
+- narrative
+
+========================================================
+
+9. 09-behavioral.docx
+
+Gunakan seluruh isi.
+
+Fokus
+
+- Decision Pattern
+- Strategic Objective
+- Trade-off
+- Behavioral Pattern
+- Risk Response
+- Evolution Pattern
+
+========================================================
+
+PERTANYAAN UTAMA
+
+"Pelajaran, prinsip, dan pola apa yang dapat digeneralisasi dari proyek ini?"
+
+========================================================
+
+RUANG LINGKUP
+
+Gunakan seluruh dataset sebelumnya.
+
+Jangan melakukan riset baru.
+
+Jangan menambahkan fakta baru.
+
+Semua knowledge harus berasal dari evidence yang telah tersedia.
+
+========================================================
+
+## Core Insights
+
+Identifikasi insight utama.
+
+Untuk setiap insight
+
+Insight
+
+Explanation
+
+Evidence
+
+Supporting Dataset
+
+Confidence
+
+========================================================
+
+## Strategic Principles
+
+Identifikasi prinsip strategis yang konsisten.
+
+Misalnya
+
+- modular first
+
+- ecosystem first
+
+- security before growth
+
+- community driven
+
+========================================================
+
+## Success Factors
+
+Identifikasi faktor yang paling berkontribusi terhadap keberhasilan proyek.
+
+Harus didukung evidence.
+
+========================================================
+
+## Failure Factors
+
+Identifikasi faktor yang menyebabkan
+
+- keterlambatan
+
+- kegagalan
+
+- konflik
+
+- exploit
+
+Harus didukung evidence.
+
+========================================================
+
+## Decision Framework
+
+Rekonstruksi bagaimana proyek membuat keputusan.
+
+Contoh
+
+Observe
+
+↓
+
+Evaluate
+
+↓
+
+Fund
+
+↓
+
+Develop
+
+↓
+
+Launch
+
+↓
+
+Govern
+
+Gunakan evidence.
+
+========================================================
+
+## Reusable Playbook
+
+Tuliskan praktik yang dapat diterapkan pada proyek lain.
+
+Misalnya
+
+- cara membangun ecosystem
+
+- cara melakukan fundraising
+
+- cara melakukan governance
+
+Harus didukung evidence.
+
+========================================================
+
+## Anti-patterns
+
+Identifikasi pola yang sebaiknya dihindari.
+
+Misalnya
+
+- over-centralization
+
+- premature scaling
+
+- poor treasury management
+
+Harus didukung evidence.
+
+========================================================
+
+## Lessons Learned
+
+Ringkas pelajaran utama.
+
+========================================================
+
+## Knowledge Summary
+
+Ringkas
+
+- Strategic Principles
+- Success Factors
+- Failure Factors
+- Decision Framework
+- Reusable Playbook
+- Anti-patterns
+
+========================================================
+
+Open Threads
+
+Tuliskan seluruh insight yang
+
+- memiliki evidence lemah
+- memiliki interpretasi ganda
+- belum dapat digeneralisasi
+
+========================================================
+
+ATURAN
+
+- Jangan melakukan riset baru.
+- Jangan membuat fakta baru.
+- Semua insight harus berasal dari dataset Phase 1–9.
+- Setiap insight WAJIB memiliki:
+  - Evidence
+  - Supporting Dataset
+  - Confidence (High / Medium / Low)
+- Evidence harus mengacu pada dataset internal (contoh: Phase 3 Event H-014, Phase 5 Funding History, Phase 9 Decision Pattern).
+- Sources harus berupa URL lengkap yang berasal dari dataset sebelumnya; jangan menambahkan sumber baru.
+- Bedakan dengan jelas antara fakta, interpretasi, dan generalisasi.
+- Jangan menggunakan tabel dalam bentuk apa pun; seluruh output harus berupa heading, sub-heading, dan bullet agar mudah diparsing dari file DOCX.
+- Gunakan nama Entity yang sama persis dengan Phase 2.
+- Gunakan Event ID yang sama persis dengan Phase 3.
+- Jika sebuah insight didukung oleh evidence yang saling bertentangan, jangan memilih salah satu. Catat konflik tersebut pada Open Threads untuk diselesaikan pada Phase 11.

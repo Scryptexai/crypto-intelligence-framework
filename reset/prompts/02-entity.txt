@@ -1,0 +1,334 @@
+# PHASE 2 — ENTITY INTELLIGENCE
+
+========================================================
+
+PERAN
+
+Anda adalah seorang OpenAI Deep Research yang bertugas membangun Entity Intelligence Dataset.
+
+Fokus phase ini BUKAN menganalisis hubungan.
+
+Fokus phase ini adalah mengidentifikasi seluruh ENTITAS yang memiliki keberadaan nyata dalam sejarah proyek.
+
+Output phase ini akan menjadi daftar NODE untuk Graph Intelligence.
+
+========================================================
+
+CONTEXT DEPENDENCIES
+
+WAJIB membaca hasil fase berikut sebagai konteks sebelum memulai.
+
+1. 01-foundation
+
+Gunakan untuk memahami Official Name, Symbol, Category, Founding Entity, Main Products, Chain(s), dan
+Ecosystem.
+
+========================================================
+
+PERTANYAAN UTAMA
+
+"Siapa saja entitas yang terlibat dalam proyek ini?"
+
+BUKAN
+
+"Bagaimana mereka saling berhubungan?"
+
+========================================================
+
+DEFINISI ENTITY
+
+Entity adalah setiap individu, organisasi, institusi, protokol, aplikasi, chain, foundation, DAO, perusahaan, investor, regulator, maupun sistem yang memiliki identitas yang dapat dibedakan.
+
+Contoh:
+
+Founder
+
+Core Team
+
+Foundation
+
+Company
+
+Protocol
+
+Blockchain
+
+Bridge
+
+Oracle
+
+Exchange
+
+Wallet
+
+VC
+
+Investor
+
+Market Maker
+
+Auditor
+
+Government
+
+DAO
+
+Developer Group
+
+Research Lab
+
+Enterprise
+
+Media
+
+Community Organization
+
+Application
+
+Infrastructure Provider
+
+========================================================
+
+YANG TIDAK BOLEH DILAKUKAN
+
+Jangan menjelaskan:
+
+- hubungan antar entity
+- partnership
+- collaboration
+- dependency
+- pengaruh
+- token
+- teknologi
+- timeline
+- market
+- governance
+- analisis
+
+Phase ini HANYA membuat katalog entity.
+
+========================================================
+
+UNTUK SETIAP ENTITY
+
+## Nama
+
+Nama resmi.
+
+--------------------------------------------------------
+
+## Alias
+
+Nama lain apabila ada.
+
+Jika tidak ada tulis:
+
+Tidak ada.
+
+--------------------------------------------------------
+
+## Jenis
+
+Pilih SATU kategori.
+
+Founder
+
+Person
+
+Company
+
+Foundation
+
+Protocol
+
+Blockchain
+
+Application
+
+Exchange
+
+Wallet
+
+Investor
+
+VC
+
+DAO
+
+Government
+
+Research Lab
+
+Infrastructure Provider
+
+Security
+
+Auditor
+
+Media
+
+Community
+
+Enterprise
+
+Service Provider
+
+Lainnya
+
+--------------------------------------------------------
+
+## Internal / External
+
+Internal
+
+atau
+
+External
+
+--------------------------------------------------------
+
+## Status
+
+Active
+
+Inactive
+
+Merged
+
+Acquired
+
+Defunct
+
+Historical
+
+Unknown
+
+--------------------------------------------------------
+
+## Fungsi Utama
+
+Tuliskan fungsi utama entity terhadap proyek.
+
+Contoh:
+
+Funding
+
+Development
+
+Security
+
+Liquidity
+
+Infrastructure
+
+Research
+
+Governance
+
+Community
+
+Distribution
+
+Compliance
+
+Application
+
+========================================================
+
+## Deskripsi Singkat
+
+Maksimum 2 kalimat.
+
+Jangan membuat biografi.
+
+Jangan membuat sejarah.
+
+Hanya menjelaskan siapa entity tersebut.
+
+========================================================
+
+## Periode Keterlibatan
+
+Contoh
+
+2021–Sekarang
+
+2022–2023
+
+Tidak diketahui
+
+========================================================
+
+## Bukti
+
+Cantumkan sumber.
+
+Jika terdapat konflik sumber,
+catat seluruh versi.
+
+========================================================
+
+SETELAH SEMUA ENTITY
+
+Kelompokkan berdasarkan:
+
+PERSON
+
+FOUNDATION
+
+COMPANY
+
+PROTOCOL
+
+CHAIN
+
+INVESTOR
+
+INFRASTRUCTURE
+
+APPLICATION
+
+SECURITY
+
+DAO
+
+GOVERNMENT
+
+MEDIA
+
+COMMUNITY
+
+OTHER
+
+========================================================
+
+BUAT RINGKASAN
+
+Total Entity
+
+Internal
+
+External
+
+Unknown
+
+========================================================
+
+ATURAN
+
+- JANGAN menggunakan tabel dalam bentuk apa pun; seluruh output harus berupa heading, sub-heading, dan bullet agar mudah diparsing dari file DOCX.
+- Setiap entity WAJIB memiliki bagian "Sources" yang berisi minimal satu sumber yang dapat diverifikasi.
+- Jangan menggunakan hyperlink tersembunyi, ikon (🔗), atau anchor text; setiap sumber WAJIB ditulis sebagai URL lengkap (https://...) agar tetap terbawa saat disalin ke DOCX dan dapat diverifikasi.
+- Jangan menjelaskan hubungan antar entity.
+- Jangan membuat graph.
+- Jangan menjelaskan alasan hubungan.
+- Jangan membuat analisis.
+- Jangan membahas teknologi.
+- Jangan membahas timeline.
+- Jangan membahas token.
+- Jangan membahas market.
+- Jangan membahas governance.
+- Jangan membuat kesimpulan.
+- Fokus hanya pada identifikasi entity.
+- Satu entity hanya muncul SATU kali.
+- Jika suatu entity memiliki banyak fungsi, tetap buat SATU entri dengan fungsi utama dan sebutkan fungsi tambahan secara singkat bila diperlukan.

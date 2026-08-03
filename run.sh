@@ -101,6 +101,29 @@ case "$cmd" in
     "$PY" tools/sync_supabase.py
     exit_status=$?
     ;;
+  reset)
+    # CIF Deep Reset — jalankan pipeline riset 11 fase (DeepSeek) lalu index ke Supabase.
+    #   ./run.sh reset            → reset saja (fase -> data_project/*.docx)
+    #   ./run.sh reset --once     → satu project dulu (uji coba)
+    #   ./run.sh reset-sync       → reset + build + extract + sync ke database
+    # Set ANTHROPIC_BASE_URL, ANTHROPIC_AUTH_TOKEN, ANTHROPIC_MODEL di env (lihat reset/README.md).
+    "$PY" reset/reset_run.py "${@:2}"
+    exit_status=$?
+    ;;
+  reset-sync)
+    "$PY" reset/reset_run.py "${@:2}"
+    if [ "$?" -eq 0 ]; then
+      "$PY" tools/ingest.py --type data_project --model DeepSeek
+      "$PY" tools/build_json.py
+      "$PY" tools/extract_decision_events.py examples/CaseStudies/*.md 2>/dev/null || true
+      "$PY" tools/extract_entities.py examples/CaseStudies/*.md 2>/dev/null || true
+      "$PY" tools/extract_knowledge.py examples/CaseStudies/*.md 2>/dev/null || true
+      "$PY" tools/extract_behavior.py examples/CaseStudies/*.md 2>/dev/null || true
+      "$PY" tools/extract_qa.py examples/CaseStudies/*.md 2>/dev/null || true
+      "$PY" tools/sync_supabase.py
+      exit_status=$?
+    fi
+    ;;
   all)
     run_ingest                           # anti-duplicate ingest of all inbox folders + data_project/
     "$PY" tools/build_json.py            # export projects/patterns/sentiment + bundled cif.json
@@ -110,7 +133,7 @@ case "$cmd" in
     "$PY" tools/backtest.py || true      # scorecard (non-zero exit on real failure; run continues)
     ;;
   *)
-    echo "usage: ./run.sh [all|ingest|build|sync]"; exit 2
+    echo "usage: ./run.sh [all|ingest|build|sync|reset|reset-sync]"; exit 2
     ;;
 esac
 echo "✓ done — outputs in poc/ (cif.json, data.js, *.json)"

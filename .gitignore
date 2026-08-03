@@ -1,2 +1,7 @@
 __pycache__/
 *.pyc
+
+# reset runtime artifacts (auto-generated)
+reset/state/
+reset/logs/
+reset/*.log

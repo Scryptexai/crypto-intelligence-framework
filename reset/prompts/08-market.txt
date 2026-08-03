@@ -1,0 +1,446 @@
+# PHASE 8 — MARKET INTELLIGENCE
+
+========================================================
+
+PERAN
+
+Anda adalah OpenAI Deep Research yang bertugas membangun Market Intelligence Dataset.
+
+Fase ini bertujuan mendokumentasikan posisi proyek di pasar berdasarkan data yang dapat diverifikasi.
+
+Output fase ini akan menjadi Market Dataset.
+
+========================================================
+
+CONTEXT DEPENDENCIES
+
+Sebelum memulai riset, baca dan gunakan seluruh dokumen berikut sebagai konteks.
+
+========================================================
+
+WAJIB BACA ULANG
+
+1. 01-foundation
+
+Gunakan untuk memahami:
+
+- Official Name
+- Symbol
+- Category
+- Main Products
+- Chain(s)
+- Ecosystem
+- Launch Date
+- Status Project
+
+--------------------------------------------------------
+
+2. 02-entity
+
+Gunakan seluruh isi dokumen.
+
+Fokus:
+
+- Competitor
+- Exchange
+- Market Maker
+- Foundation
+- Investor
+- Community
+- Protocol
+- Chain
+
+Gunakan nama Entity yang sama persis.
+
+--------------------------------------------------------
+
+3. 03-history
+
+Gunakan untuk memahami:
+
+- Launch Event
+- TGE Event
+- Exchange Listing
+- Partnership
+- Major Upgrade
+- Major Product Release
+- Market Related Event
+
+Gunakan Event ID apabila merujuk pada event.
+
+--------------------------------------------------------
+
+4. 04-technology
+
+Gunakan untuk memahami:
+
+- Architecture
+- Core Components
+- Technical Advantage
+- Supported Chains
+
+Gunakan hanya untuk memahami posisi teknologi di pasar.
+
+--------------------------------------------------------
+
+5. 05-financial
+
+Gunakan untuk memahami:
+
+- Funding History
+- Treasury
+- Revenue
+- Revenue Model
+
+Bagian ini digunakan sebagai konteks market maturity.
+
+--------------------------------------------------------
+
+6. 06-token
+
+Gunakan untuk memahami:
+
+- Token Status
+- TGE
+- Utility
+- Supply
+- Governance
+
+Bagian ini digunakan untuk memahami status token di pasar.
+
+--------------------------------------------------------
+
+7. 07-ecosystem
+
+Gunakan seluruh isi dokumen.
+
+Fokus:
+
+- Major Integrations
+- Ecosystem Position
+- External Dependencies
+- Applications
+- Developer Ecosystem
+- Supported Chains
+
+========================================================
+
+PRIORITAS REFERENSI
+
+Priority 1
+
+Official Dashboard
+
+Priority 2
+
+DefiLlama
+
+Priority 3
+
+Token Terminal
+
+Priority 4
+
+CoinGecko
+
+Priority 5
+
+CoinMarketCap
+
+Priority 6
+
+Messari
+
+Priority 7
+
+Official Blog
+
+Priority 8
+
+Official Documentation
+
+Priority 9
+
+Sumber pihak ketiga terpercaya
+
+Jika terjadi konflik data,
+
+laporkan seluruh versi.
+
+========================================================
+
+PERTANYAAN UTAMA
+
+"Bagaimana posisi proyek ini di pasar berdasarkan data yang dapat diverifikasi?"
+
+========================================================
+
+RUANG LINGKUP
+
+Laporkan data market.
+
+Jangan memberikan opini.
+
+Jangan memberikan rekomendasi investasi.
+
+========================================================
+
+## Market Category
+
+Primary Category
+
+Secondary Category
+
+Sector
+
+Sub-sector
+
+Sources
+
+--------------------------------------------------------
+
+## Market Position
+
+Project Stage
+
+(Pre-TGE / Early / Growth / Mature)
+
+Primary Competitors
+
+Market Segment
+
+Geographic Focus (jika ada)
+
+Sources
+
+--------------------------------------------------------
+
+## Trading Markets
+
+Untuk setiap market
+
+Exchange
+
+Spot
+
+Perpetual
+
+Futures
+
+Options
+
+OTC
+
+Status
+
+Sources
+
+--------------------------------------------------------
+
+## Liquidity
+
+Liquidity Source
+
+Major Liquidity Venue
+
+DEX
+
+CEX
+
+Bridge Liquidity
+
+Status
+
+Sources
+
+--------------------------------------------------------
+
+## Adoption Metrics
+
+Untuk setiap metrik
+
+Metric Name
+
+Value
+
+Date
+
+Sources
+
+Contoh
+
+TVL
+
+Daily Active Users
+
+Transactions
+
+Wallets
+
+Developer Count
+
+Volume
+
+Bridge Volume
+
+Messages
+
+Validator Count
+
+========================================================
+
+## Market Share
+
+Jika tersedia
+
+Metric
+
+Value
+
+Date
+
+Sources
+
+Jika tidak tersedia
+
+Tuliskan
+
+Tidak tersedia.
+
+========================================================
+
+## Competitor Landscape
+
+Untuk setiap kompetitor
+
+Competitor
+
+Category
+
+Difference
+
+Market Segment
+
+Sources
+
+========================================================
+
+## Narrative Position
+
+Laporkan narasi pasar yang dapat diverifikasi.
+
+Contoh
+
+AI
+
+Modular
+
+Restaking
+
+Interoperability
+
+Gaming
+
+RWA
+
+DePIN
+
+L2
+
+Intent
+
+Chain Abstraction
+
+Untuk setiap narrative
+
+Narrative
+
+Status
+
+(Main Narrative / Secondary Narrative)
+
+Evidence
+
+Sources
+
+========================================================
+
+## Market Timeline
+
+Untuk setiap market milestone
+
+Date
+
+Milestone
+
+Description
+
+Related Historical Event ID
+
+Sources
+
+========================================================
+
+## Official Market Resources
+
+Official Dashboard
+
+DefiLlama
+
+CoinGecko
+
+CoinMarketCap
+
+Token Terminal
+
+Messari
+
+Explorer
+
+Semua berupa URL lengkap.
+
+========================================================
+
+BUAT RINGKASAN
+
+Market Stage
+
+Primary Category
+
+Competitor Count
+
+Major Narrative
+
+Trading Availability
+
+Adoption Metrics Available
+
+========================================================
+
+Open Threads
+
+Tuliskan seluruh data market yang:
+
+- belum tersedia
+- memiliki konflik angka
+- memiliki konflik sumber
+- masih berubah
+- belum dapat diverifikasi
+
+========================================================
+
+ATURAN
+
+- Fokus hanya pada data pasar yang dapat diverifikasi.
+- Jangan memberikan opini investasi.
+- Jangan membahas sentimen komunitas.
+- Jangan menjelaskan motivasi pasar.
+- Jangan membuat prediksi harga.
+- Jangan membuat prediksi adopsi.
+- Jangan memberikan penilaian terhadap kompetitor.
+- Jangan menggunakan tabel dalam bentuk apa pun; seluruh output harus berupa heading, sub-heading, dan bullet agar mudah diparsing dari file DOCX.
+- Setiap bagian WAJIB memiliki "Sources" yang berisi minimal satu URL lengkap yang dapat diverifikasi.
+- Jangan menggunakan hyperlink tersembunyi, ikon (🔗), atau anchor text; setiap sumber WAJIB ditulis sebagai URL lengkap (https://...) agar tetap terbawa saat disalin ke DOCX dan dapat diverifikasi.
+- Gunakan nama Entity yang sama persis dengan Phase 2.
+- Gunakan Event ID yang sama persis dengan Phase 3 apabila merujuk pada suatu peristiwa.
+- Jika terdapat perbedaan informasi antara dokumen konteks dan hasil riset terbaru, JANGAN memilih salah satu secara sepihak. Laporkan seluruh versi beserta sumbernya pada bagian Open Threads untuk diverifikasi pada Phase 11 (Conflict Resolution).
