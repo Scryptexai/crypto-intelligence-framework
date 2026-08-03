@@ -12,6 +12,12 @@ long queue of projects can run unattended instead of being pasted into a chat UI
   look up the project's basic info/description before filling the template — everything else is unchanged).
   These are the *only* prompt set kept in that doc now; Track A (generic, context-window-limited) and Track B
   (condensed) were removed as superseded — see that doc's "How to use these" note, 2026-08-03.
+- `shared_format_rules.txt` — the doc's mandatory "ATURAN FORMAT" block (citations on every fact, Evidence
+  Level tags, no fabrication, template-exactness, etc.) — the doc's own instructions say this gets appended
+  to **every** phase prompt before sending, not just used once. `load_phase_prompt()` does this
+  automatically for all 11 phases; don't send a `phase_NN_*.txt` file's content alone. (A version of this
+  script that skipped this produced citation-free output that `tools/ingest.py` would hard-reject — verified
+  live, 2026-08-03, see git history.)
 - `projects.txt` — the project queue, one name per line, processed top to bottom. Append more any time.
 - `run_deepseek_reset.py` — the pipeline. Read its module docstring for the full contract (env vars, retry/
   resume behavior, timing).

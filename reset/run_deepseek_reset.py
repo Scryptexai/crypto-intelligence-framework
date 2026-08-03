@@ -94,9 +94,22 @@ def load_projects(path: Path) -> list:
     return [ln.strip() for ln in lines if ln.strip() and not ln.strip().startswith("#")]
 
 
+def load_shared_format_rules() -> str:
+    """The doc's "ATURAN FORMAT" block -- citations WAJIB per fact, Evidence Level tags, no
+    fabrication, etc. docs/Protocol/Phased-Research-Prompts.md's "Shared rules" section is
+    explicit: "Append this block to every phase prompt before sending it." Missing this entirely
+    is what produced zero-citation output in an early version of this script (verified live,
+    2026-08-03: Aptos test phases had 0 (HIGH)/(MEDIUM)/(LOW) tags vs 24-254 in the real
+    data_project/Arbitrum/ phases) -- tools/ingest.py's validate_phase_content() would hard-reject
+    that as the exact "empty citations" failure mode the doc's own "Known failure patterns"
+    section warns about."""
+    return (RESET_DIR / "shared_format_rules.txt").read_text(encoding="utf-8")
+
+
 def load_phase_prompt(num: int, key: str) -> str:
     p = RESET_DIR / f"phase_{num:02d}_{key}.txt"
-    return p.read_text(encoding="utf-8")
+    body = p.read_text(encoding="utf-8")
+    return body.rstrip() + "\n\n" + load_shared_format_rules().rstrip() + "\n"
 
 
 def extract_text(body: dict) -> str:
