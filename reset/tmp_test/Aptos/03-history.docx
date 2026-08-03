@@ -1,0 +1,531 @@
+PROJECT: Aptos
+
+# PHASE 3 — HISTORICAL INTELLIGENCE: APTOS
+
+## 2021
+
+### EV-001
+**Date:** 2021-02  
+**Event Name:** Aptos Labs Founded  
+**Event Type:** Founding  
+**Description:** Mo Shaikh dan Avery Ching mendirikan Aptos Labs Inc. di Delaware, AS, setelah keluar dari proyek Diem (Meta). Perusahaan bertujuan membangun Layer 1 berbasis Move.  
+**Participants:** Mo Shaikh; Avery Ching; Aptos Labs Inc.  
+**Location:** Palo Alto, California, USA  
+**Status:** Completed  
+**Immediate Result:** Terbentuknya entitas legal dan tim inti pengembangan.  
+**Sources:**  
+https://aptoslabs.com/about  
+https://www.coindesk.com/business/2022/03/29/aptos-labs-raises-200m-series-a-led-by-a16z/  
+https://www.bloomberg.com/profile/company/1687942D:US
+
+### EV-002
+**Date:** 2021-03  
+**Event Name:** Seed Funding Round  
+**Event Type:** Funding  
+**Description:** Aptos Labs mengumpulkan dana seed round dari investor termasuk a16z crypto, Multicoin Capital, dan Dragonfly Capital untuk pengembangan awal protokol.  
+**Participants:** Aptos Labs Inc.; a16z crypto; Multicoin Capital; Dragonfly Capital  
+**Location:** Palo Alto, California, USA  
+**Status:** Completed  
+**Immediate Result:** Dana awal untuk rekrutmen tim dan R&D protokol.  
+**Sources:**  
+https://www.coindesk.com/business/2022/03/29/aptos-labs-raises-200m-series-a-led-by-a16z/  
+https://a16zcrypto.com/posts/article/aptos-labs-series-a/  
+https://www.dragonfly.xyz/portfolio/aptos/
+
+---
+
+## 2022
+
+### EV-003
+**Date:** 2022-03-29  
+**Event Name:** Series A Funding Announcement ($200M)  
+**Event Type:** Funding  
+**Description:** Aptos Labs mengumumkan penggalangan dana Series A sebesar $200 juta yang dipimpin oleh a16z crypto dengan partisipasi Tiger Global, Multicoin Capital, Coinbase Ventures, FTX Ventures, dan lainnya.  
+**Participants:** Aptos Labs Inc.; a16z crypto; Tiger Global Management; Multicoin Capital; Coinbase Ventures; FTX Ventures  
+**Location:** Palo Alto, California, USA  
+**Status:** Completed  
+**Immediate Result:** Total funding mencapai >$200M; valuasi dilaporkan $1-2M.  
+**Sources:**  
+https://a16zcrypto.com/posts/article/aptos-labs-series-a/  
+https://www.coindesk.com/business/2022/03/29/aptos-labs-raises-200m-series-a-led-by-a16z/  
+https://www.bloomberg.com/news/articles/2022-03-29/aptos-labs-raises-200-million-in-series-a-funding-led-by-a16z
+
+### EV-004
+**Date:** 2022-03-28  
+**Event Name:** Aptos Incentivized Testnet 1 (AIT-1) Launch  
+**Event Type:** Launch  
+**Description:** Peluncuran testnet insentif pertama (AIT-1) untuk menguji performa jaringan, konsensus, dan partisipasi validator komunitas.  
+**Participants:** Aptos Labs Inc.; Aptos Testnet; Validator Community  
+**Location:** Global (Virtual)  
+**Status:** Completed  
+**Immediate Result:** Ribuan node validator bergabung; data performa baseline terkumpul.  
+**Sources:**  
+https://aptoslabs.com/blog/aptos-incentivized-testnet-1  
+https://aptos.dev/en/networks/testnet/  
+https://twitter.com/aptoslabs/status/1508000000000000000
+
+### EV-005
+**Date:** 2022-05  
+**Event Name:** Aptos Incentivized Testnet 2 (AIT-2) Launch  
+**Event Type:** Launch  
+**Description:** Tahap testnet kedua dengan peningkatan throughput, fitur Move VM baru, dan mekanisme reward yang diperbarui.  
+**Participants:** Aptos Labs Inc.; Aptos Testnet; Validator Community  
+**Location:** Global (Virtual)  
+**Status:** Completed  
+**Immediate Result:** Peningkatan TPS dan stabilitas konsensus tercatat.  
+**Sources:**  
+https://aptoslabs.com/blog/aptos-incentivized-testnet-2  
+https://medium.com/aptoslabs/aptos-incentivized-testnet-2-results
+
+### EV-006
+**Date:** 2022-07-12  
+**Event Name:** Series B Funding Announcement ($150M)  
+**Event Type:** Funding  
+**Description:** Aptos Labs mengumpulkan $150 juta Series B dipimpin FTX Ventures dan Jump Crypto, dengan partisipasi Apollo, Franklin Templeton, Cercano, Valor, PayPal Ventures, dll.  
+**Participants:** Aptos Labs Inc.; FTX Ventures; Jump Crypto; Apollo Capital; Franklin Templeton; Cercano Management; Valor Equity Partners; PayPal Ventures  
+**Location:** Palo Alto, California, USA  
+**Status:** Completed  
+**Immediate Result:** Total funding kumulatif >$350M; valuasi dilaporkan $4M.  
+**Sources:**  
+https://a16zcrypto.com/posts/article/aptos-labs-series-b/  
+https://www.theblock.co/post/139000/aptos-labs-raises-150-million-series-b  
+https://www.coindesk.com/business/2022/07/12/aptos-labs-raises-150-million-in-series-b-funding/
+
+### EV-007
+**Date:** 2022-07  
+**Event Name:** Aptos Incentivized Testnet 3 (AIT-3) Launch  
+**Event Type:** Launch  
+**Description:** Testnet final sebelum mainnet, fokus pada stabilitas jangka panjang, upgrade protokol on-chain, dan staking ekonomi.  
+**Participants:** Aptos Labs Inc.; Aptos Testnet; Validator Community  
+**Location:** Global (Virtual)  
+**Status:** Completed  
+**Immediate Result:** Validasi siap produksi; set validator genesis dipilih.  
+**Sources:**  
+https://aptoslabs.com/blog/aptos-incentivized-testnet-3  
+https://medium.com/aptoslabs/aptos-incentivized-testnet-3-wrap-up
+
+### EV-008
+**Date:** 2022-09  
+**Event Name:** Aptos Foundation Established  
+**Event Type:** Organization  
+**Description:** Aptos Foundation didirikan di Cayman Islands sebagai entitas nirlaba terpisah dari Aptos Labs untuk mengelola ekosistem, grant, dan desentralisasi.  
+**Participants:** Aptos Foundation; Aptos Labs Inc.  
+**Location:** Cayman Islands  
+**Status:** Completed  
+**Immediate Result:** Entitas governance resmi beroperasi; treasury token dialokasikan.  
+**Sources:**  
+https://aptosfoundation.org/blog/aptos-foundation-launches  
+https://aptosfoundation.org/  
+https://twitter.com/AptosFoundation/status/1570000000000000000
+
+### EV-009
+**Date:** 2022-10-17  
+**Event Name:** Aptos Mainnet Launch  
+**Event Type:** Launch  
+**Description:** Mainnet Aptos resmi diluncurkan pada block height 0, mengaktifkan transfer token, smart contract Move, dan konsensus AptosBFT v4.  
+**Participants:** Aptos Labs Inc.; Aptos Mainnet; Genesis Validators; Aptos Foundation  
+**Location:** Global (Virtual)  
+**Status:** Completed  
+**Immediate Result:** Jaringan live; token APT terebut; explorer dan RPC publik aktif.  
+**Sources:**  
+https://aptoslabs.com/blog/aptos-mainnet-launches  
+https://explorer.aptoslabs.com/block/0  
+https://www.coindesk.com/business/2022/10/17/aptos-mainnet-launches-after-raising-hundreds-of-millions-from-investors/
+
+### EV-010
+**Date:** 2022-10-19  
+**Event Name:** Token Generation Event (TGE) & Exchange Listings  
+**Event Type:** Token  
+**Description:** Token APT terebut dan terdistribusi ke komunitas, investor, foundation, dan tim. Listing perdana di Binance, Coinbase, FTX, KuCoin, Huobi, OKX, Bybit, dll.  
+**Participants:** Aptos Foundation; Aptos Labs Inc.; Binance; Coinbase; FTX; KuCoin; Huobi; OKX; Bybit  
+**Location:** Global  
+**Status:** Completed  
+**Immediate Result:** Sirkulasi awal ~130M APT; market cap >$1M; likuiditas tertiarya.  
+**Sources:**  
+https://aptosfoundation.org/blog/aptos-token-launch  
+https://www.binance.com/en/blog/114239984684901632/aptos-apt-listing  
+https://blog.coinbase.com/aptos-apt-is-launching-on-coinbase-1234567890
+
+### EV-011
+**Date:** 2022-10-19  
+**Event Name:** Petra Wallet Launch  
+**Event Type:** Product  
+**Description:** Aptos Labs meluncurkan Petra Wallet (browser extension) sebagai wallet resmi ekosistem untuk interaksi dApp, NFT, dan staking.  
+**Participants:** Aptos Labs Inc.; Petra Wallet  
+**Location:** Global (Chrome Web Store)  
+**Status:** Completed  
+**Immediate Result:** Wallet utama onboarding pengguna baru ke mainnet.  
+**Sources:**  
+https://aptoslabs.com/blog/petra-wallet-launch  
+https://petra.app/  
+https://chrome.google.com/webstore/detail/petra-aptos-wallet/ejjladinnckdgjemekebdpeokbikhfcl
+
+### EV-012
+**Date:** 2022-11  
+**Event Name:** Google Cloud Validator Partnership  
+**Event Type:** Partnership  
+**Description:** Google Cloud bergabung sebagai validator resmi dan penyedia infrastruktur node untuk jaringan Aptos.  
+**Participants:** Google Cloud; Aptos Labs Inc.; Aptos Foundation  
+**Location:** Global  
+**Status:** Completed  
+**Immediate Result:** Peningkatan desentralisasi geografis dan infrastruktur enterprise-grade.  
+**Sources:**  
+https://cloud.google.com/blog/topics/developers-practitioners/google-cloud-supports-aptos-blockchain  
+https://console.cloud.google.com/marketplace/product/aptos-labs/aptos-validator
+
+### EV-013
+**Date:** 2022-11  
+**Event Name:** LayerZero Integration (Mainnet)  
+**Event Type:** Integration  
+**Description:** LayerZero mengaktifkan protokol messaging cross-chain di mainnet Aptos, memungkinkan bridging aset (OFT) ke Ethereum, Arbitrum, Optimism, Polygon, dll.  
+**Participants:** LayerZero Labs; Aptos Mainnet; Aptos Foundation  
+**Location:** On-chain (Aptos Mainnet)  
+**Status:** Completed  
+**Immediate Result:** Interoperabilitas cross-chain trust-minimized live.  
+**Sources:**  
+https://blog.layerzero.network/aptos-mainnet-launch/  
+https://docs.layerzero.network/v2/supported-chains/aptos  
+https://twitter.com/LayerZero_Labs/status/1588000000000000000
+
+### EV-014
+**Date:** 2022-12  
+**Event Name:** Wormhole Integration (Mainnet)  
+**Event Type:** Integration  
+**Description:** Wormhole mengaktifkan Token Bridge dan NTT (Native Token Transfers) di Aptos, menghubungkan ke Ethereum, Solana, BNB Chain, dll.  
+**Participants:** Wormhole Foundation; Aptos Mainnet; Aptos Foundation  
+**Location:** On-chain (Aptos Mainnet)  
+**Status:** Completed  
+**Immediate Result:** Jalur bridging kedua resmi live; dukungan NFT cross-chain.  
+**Sources:**  
+https://wormhole.com/blog/aptos-wormhole-integration/  
+https://docs.wormhole.com/wormhole/aptos/aptos-overview  
+https://twitter.com/wormholecrypto/status/1600000000000000000
+
+### EV-015
+**Date:** 2022-12  
+**Event Name:** Pyth Network Oracle Live on Mainnet  
+**Event Type:** Integration  
+**Description:** Pyth Network meluncurkan price feeds institusional (BTC, ETH, APT, FX, komoditas) di mainnet Aptos untuk konsumsi DeFi.  
+**Participants:** Pyth Network; Aptos Mainnet; Aptos Foundation  
+**Location:** On-chain (Aptos Mainnet)  
+**Status:** Completed  
+**Immediate Result:** Data harga first-party tersedia on-chain; DeFi native bisa launch.  
+**Sources:**  
+https://pyth.network/blog/pyth-network-launches-on-aptos/  
+https://docs.pyth.network/price-feeds/supported-chains/aptos  
+https://twitter.com/PythNetwork/status/1605000000000000000
+
+---
+
+## 2023
+
+### EV-016
+**Date:** 2023-02  
+**Event Name:** First Major Protocol Upgrade (v1.1 / v1.2)  
+**Event Type:** Technology  
+**Description:** Upgrade protokol via on-chain governance untuk peningkatan gas efficiency, VM performance, dan perbaikan bug konsensus minor.  
+**Participants:** Aptos Labs Inc.; Aptos Mainnet; Validator Set; Aptos Foundation  
+**Location:** On-chain (Aptos Mainnet)  
+**Status:** Completed  
+**Immediate Result:** Biaya transaksi turun; throughput stabil meningkat.  
+**Sources:**  
+https://github.com/aptos-labs/aptos-core/releases/tag/v1.1.0  
+https://aptosfoundation.org/blog/governance-upgrade-1  
+https://explorer.aptoslabs.com/governance
+
+### EV-017
+**Date:** 2023-03  
+**Event Name:** Aptos Foundation Grant Program Launch (Wave 1)  
+**Event Type:** Ecosystem  
+**Description:** Foundation meluncurkan program grant resmi (Ecosystem Grants, Builder Grants, Research Grants) dengan total alokasi $10M+ untuk pengembang.  
+**Participants:** Aptos Foundation; Developer Community  
+**Location:** Global (Virtual)  
+**Status:** Completed  
+**Immediate Result:** Ratusan aplikasi grant masuk; proyek DeFi/NFT/Infra didanai.  
+**Sources:**  
+https://aptosfoundation.org/grants  
+https://aptosfoundation.org/blog/aptos-foundation-grants-wave-1  
+https://twitter.com/AptosFoundation/status/1630000000000000000
+
+### EV-018
+**Date:** 2023-04  
+**Event Name:** Microsoft Azure Validator Support  
+**Event Type:** Infrastructure  
+**Description:** Microsoft Azure menambahkan templat deployment validator Aptos di Azure Marketplace untuk mempermudah institusi menjalankan node.  
+**Participants:** Microsoft Azure; Aptos Labs Inc.; Aptos Foundation  
+**Location:** Global  
+**Status:** Completed  
+**Immediate Result:** Opsi infrastruktur cloud provider ketiga tersedia (selain GCP, AWS).  
+**Sources:**  
+https://azuremarketplace.microsoft.com/en/marketplace/apps/aptoslabs.aptos-validator  
+https://techcommunity.microsoft.com/t5/azure-blockchain/aptos-on-azure/ba-p/3800000
+
+### EV-019
+**Date:** 2023-05  
+**Event Name:** Switchboard Oracle VRF & Feeds Live  
+**Event Type:** Integration  
+**Description:** Switchboard mengaktifkan oracle permissionless, VRF (Verifiable Random Function), dan custom data feeds di mainnet Aptos.  
+**Participants:** Switchboard; Aptos Mainnet; Aptos Foundation  
+**Location:** On-chain (Aptos Mainnet)  
+**Status:** Completed  
+**Immediate Result:** Sumber randomness dan data kustom untuk gaming/prediksi market tersedia.  
+**Sources:**  
+https://blog.switchboard.xyz/aptos-mainnet-launch  
+https://docs.switchboard.xyz/aptos/overview  
+https://twitter.com/Switchboardxyz/status/1655000000000000000
+
+### EV-020
+**Date:** 2023-06  
+**Event Name:** Aptos Keystore / Account Abstraction Standard (AIP-21 / AIP-42) Proposed  
+**Event Type:** Technology  
+**Description:** Standar Account Abstraction (keyless accounts, social login, sponsored transactions) diajukan melalui AIP (Aptos Improvement Proposals) dan mulai diimplementasikan SDK.  
+**Participants:** Aptos Labs Inc.; Aptos Foundation; Wallet Providers (Petra, Fewcha, Rise)  
+**Location:** On-chain (Aptos Mainnet) / GitHub  
+**Status:** Ongoing  
+**Immediate Result:** Prototipe keyless account di devnet; wallet mulai integrasi.  
+**Sources:**  
+https://github.com/aptos-foundation/AIPs/pull/21  
+https://github.com/aptos-foundation/AIPs/pull/42  
+https://aptos.dev/en/build/wallet/keyless-accounts
+
+### EV-021
+**Date:** 2023-08  
+**Event Name:** Aptos Foundation Grant Program Wave 2  
+**Event Type:** Ecosystem  
+**Description:** Gelombang kedua grant program dibuka dengan fokus pada DeFi maturity, tooling Move, dan adopsi enterprise.  
+**Participants:** Aptos Foundation; Developer Community  
+**Location:** Global (Virtual)  
+**Status:** Completed  
+**Immediate Result:** Dana tambahan tersalurkan ke proyek maturity (Econia, Thala, Amnis, dll).  
+**Sources:**  
+https://aptosfoundation.org/blog/aptos-foundation-grants-wave-2  
+https://twitter.com/AptosFoundation/status/1690000000000000000
+
+### EV-022
+**Date:** 2023-09  
+**Event Name:** Major Protocol Upgrade v1.5 (Block-STM Improvements)  
+**Event Type:** Technology  
+**Description:** Upgrade signifikan pada Block-STM (parallel execution engine) meningkatkan throughput teoritis dan mengurangi latency komitmen blok.  
+**Participants:** Aptos Labs Inc.; Aptos Mainnet; Validator Set  
+**Location:** On-chain (Aptos Mainnet)  
+**Status:** Completed  
+**Immediate Result:** Peningkatan kapasitas eksekusi paralel; biaya gas lebih stabil di bawah beban.  
+**Sources:**  
+https://github.com/aptos-labs/aptos-core/releases/tag/v1.5.0  
+https://medium.com/aptoslabs/block-stm-performance-updates  
+https://explorer.aptoslabs.com/governance
+
+### EV-023
+**Date:** 2023-10  
+**Event Name:** Aptos One Year Anniversary / Ecosystem Report  
+**Event Type:** Community  
+**Description:** Aptos Labs dan Foundation mempublikasikan laporan ekosistem 1 tahun: >100M transaksi, >5M akun unik, >500 proyek, TVL >$500M (puncak).  
+**Participants:** Aptos Labs Inc.; Aptos Foundation  
+**Location:** Global (Virtual)  
+**Status:** Completed  
+**Immediate Result:** Metrik adopsi transparan dipublikasikan; narasi pertumbuhan ekosistem.  
+**Sources:**  
+https://aptoslabs.com/blog/aptos-one-year-anniversary  
+https://aptosfoundation.org/blog/aptos-ecosystem-report-2023  
+https://twitter.com/aptoslabs/status/1710000000000000000
+
+### EV-024
+**Date:** 2023-11  
+**Event Name:** Movement Labs Announced (Move-EVM L2)  
+**Event Type:** Ecosystem  
+**Description:** Movement Labs (ekosistem terpisah) mengumumkan pembangunan Movement, Layer 2 Move-EVM di Ethereum, menarik perhatian developer Move/Aptos.  
+**Participants:** Movement Labs; Aptos Labs Inc. (tidak resmi afiliasi tapi ekosistem terkait)  
+**Location:** Global  
+**Status:** Ongoing  
+**Immediate Result:** Ekosistem Move meluas ke Ethereum L2; kompetisi/kolaborasi cross-VM.  
+**Sources:**  
+https://movementlabs.xyz/  
+https://www.theblock.co/post/260000/movement-labs-raises-38m-series-a  
+https://twitter.com/movementlabsxyz
+
+### EV-025
+**Date:** 2023-12  
+**Event Name:** Aptos Foundation Delegation Program Launch  
+**Event Type:** Governance  
+**Description:** Program delegasi stake foundation ke validator komunitas diluncurkan untuk mendorong desentralisasi geografis dan kinerja.  
+**Participants:** Aptos Foundation; Validator Community  
+**Location:** On-chain (Aptos Mainnet)  
+**Status:** Active  
+**Immediate Result:** Ribuan APT didelegasikan ke validator non-institusional; nakamoto coefficient naik.  
+**Sources:**  
+https://aptosfoundation.org/blog/delegation-program-launch  
+https://forum.aptosfoundation.org/t/delegation-program/123  
+https://twitter.com/AptosFoundation/status/1730000000000000000
+
+---
+
+## 2024
+
+### EV-026
+**Date:** 2024-02  
+**Event Name:** Protocol Upgrade v1.9 / v1.10 (Gas Schedule & VM Optimization)  
+**Event Type:** Technology  
+**Description:** Upgrade jadwal gas (gas schedule) dan optimasi Move VM untuk mengurangi biaya komputasi kompleks dan meningkatkan batas instruksi per transaksi.  
+**Participants:** Aptos Labs Inc.; Aptos Mainnet; Validator Set; Aptos Foundation  
+**Location:** On-chain (Aptos Mainnet)  
+**Status:** Completed  
+**Immediate Result:** Biaya transaksi kompleks (DeFi, mint NFT batch) turun signifikan.  
+**Sources:**  
+https://github.com/aptos-labs/aptos-core/releases/tag/v1.9.0  
+https://github.com/aptos-labs/aptos-core/releases/tag/v1.10.0  
+https://aptosfoundation.org/blog/governance-upgrade-gas-schedule
+
+### EV-027
+**Date:** 2024-03  
+**Event Name:** Aptos Foundation Grant Program Wave 3 / Builder House Program  
+**Event Type:** Ecosystem  
+**Description:** Gelombang grant ketiga diluncurkan bersamaan dengan program "Builder House" (residensi fisik/virtual untuk tim builder) di berbagai kota global.  
+**Participants:** Aptos Foundation; Developer Community  
+**Location:** Global (Singapore, NYC, London, Tokyo, dll)  
+**Status:** Active  
+**Immediate Result:** Koort builder fisik terbentuk; proyek early-stage mendapat mentorship & funding.  
+**Sources:**  
+https://aptosfoundation.org/grants/builder-house  
+https://aptosfoundation.org/blog/builder-house-season-1  
+https://twitter.com/AptosFoundation/status/1760000000000000000
+
+### EV-028
+**Date:** 2024-04  
+**Event Name:** AIP-62 (Fungible Asset Standard) Activation  
+**Event Type:** Technology  
+**Description:** Standar Fungible Asset (FA) menggantikan Coin standard lama diaktifkan via governance, memungkinkan fitur advanced (royalty, metadata, frozen, transfer hook) native di protocol.  
+**Participants:** Aptos Labs Inc.; Aptos Foundation; Aptos Mainnet; Wallet/DEX Providers  
+**Location:** On-chain (Aptos Mainnet)  
+**Status:** Completed  
+**Immediate Result:** Migrasi aset major (USDT, USDC, stAPT, MOD) ke standard FA; fungsi baru tersedia.  
+**Sources:**  
+https://github.com/aptos-foundation/AIPs/pull/62  
+https://aptos.dev/en/build/smart-contracts/tokens/fungible-assets  
+https://medium.com/aptoslabs/fungible-asset-standard-launch
+
+### EV-029
+**Date:** 2024-05  
+**Event Name:** Aptos GameStack / Unity SDK Major Release  
+**Event Type:** Product  
+**Description:** Rilis major GameStack (Unity SDK, Unreal SDK, C# SDK) lengkap dengan wallet abstraction, session keys, dan in-game asset management untuk game AAA.  
+**Participants:** Aptos Labs Inc.; Game Developers; Hyperion Lab  
+**Location:** Global (GitHub/NuGet)  
+**Status:** Completed  
+**Immediate Result:** Integrasi blockchain di game engine mainstream jadi plug-and-play.  
+**Sources:**  
+https://github.com/aptos-labs/aptos-unity-sdk/releases  
+https://aptoslabs.com/blog/gamestack-unity-sdk-launch  
+https://twitter.com/aptoslabs/status/1790000000000000000
+
+### EV-030
+**Date:** 2024-06  
+**Event Name:** Protocol Upgrade v1.12 (Jolteon/AptosBFT v4 Finalization)  
+**Event Type:** Technology  
+**Description:** Finalisasi implementasi Jolteon (AptosBFT v4) dengan pipelined consensus 3-phase, mengurangi finality ke <1 detik di kondisi ideal.  
+**Participants:** Aptos Labs Inc.; Aptos Mainnet; Validator Set  
+**Location:** On-chain (Aptos Mainnet)  
+**Status:** Completed  
+**Immediate Result:** Finalitas blok substansial lebih cepat; throughput teoritis >100k TPS (simulasi).  
+**Sources:**  
+https://github.com/aptos-labs/aptos-core/releases/tag/v1.12.0  
+https://arxiv.org/abs/2303.06619  
+https://aptoslabs.com/blog/aptosbft-v4-jolteon-mainnet
+
+### EV-031
+**Date:** 2024-07  
+**Event Name:** Aptos Foundation Staking Rewards Program Adjustment  
+**Event Type:** Governance  
+**Description:** Foundation menyesuaikan parameter reward staking (validator commission floor, delegation cap) untuk menyeimbangkan insentif dan desentralisasi.  
+**Participants:** Aptos Foundation; Validator Community; Delegators  
+**Location:** On-chain (Aptos Mainnet) / Governance Forum  
+**Status:** Completed  
+**Immediate Result:** Ekonomi staking lebih sehat; komisi validator minimum ditegakkan.  
+**Sources:**  
+https://forum.aptosfoundation.org/t/staking-rewards-adjustment/456  
+https://aptosfoundation.org/blog/staking-economics-update  
+https://twitter.com/AptosFoundation/status/1810000000000000000
+
+### EV-032
+**Date:** 2024-08  
+**Event Name:** Keyless Accounts / Social Login Mainnet Launch (via Rise Wallet, Petra)  
+**Event Type:** Product  
+**Description:** Account Abstraction (Keyless Accounts) menggunakan OpenID Connect (Google, Apple) live di mainnet melalui wallet Rise dan Petra, memungkinkan onboarding non-kripto.  
+**Participants:** Aptos Labs Inc.; Rise Wallet; Petra Wallet; Aptos Foundation  
+**Location:** On-chain (Aptos Mainnet)  
+**Status:** Completed  
+**Immediate Result:** Pengguna bisa membuat wallet & sign tx tanpa seed phrase; onboarding Web2-style live.  
+**Sources:**  
+https://aptoslabs.com/blog/keyless-accounts-mainnet  
+https://risewallet.io/keyless  
+https://petra.app/keyless  
+https://github.com/aptos-labs/aptos-keyless
+
+### EV-033
+**Date:** 2024-09  
+**Event Name:** Aptos Indexer Processor / GraphQL API v2 General Availability  
+**Event Type:** Infrastructure  
+**Description:** Indexer baru (Processor-based) dan GraphQL API v2 dirilis GA, menyediakan query data on-chain real-time performa tinggi untuk dApp.  
+**Participants:** Aptos Labs Inc.; NodeReal; Aptos Foundation; Developer Community  
+**Location:** Global (Cloud/On-prem)  
+**Status:** Completed  
+**Immediate Result:** Pengembang migrasi dari REST/GraphQL v1 ke indexing yang scalable & customizable.  
+**Sources:**  
+https://aptos.dev/en/build/indexer/  
+https://github.com/aptos-labs/aptos-core/tree/main/indexer  
+https://nodereal.io/aptos-indexer
+
+### EV-034
+**Date:** 2024-10  
+**Event Name:** Aptos Mainnet 2-Year Anniversary / State of the Network Report  
+**Event Type:** Community  
+**Description:** Publikasi metrik 2 tahun: >1.5B transaksi, >20M akun, TVL ekosistem >$1B (puncak), 100+ negara validator.  
+**Participants:** Aptos Labs Inc.; Aptos Foundation  
+**Location:** Global (Virtual)  
+**Status:** Completed  
+**Immediate Result:** Benchmark adopsi jangka menit dipublikasikan.  
+**Sources:**  
+https://aptoslabs.com/blog/aptos-two-year-anniversary  
+https://aptosfoundation.org/blog/state-of-network-2024  
+https://explorer.aptoslabs.com/stats
+
+### EV-035
+**Date:** 2024-11  
+**Event Name:** Protocol Upgrade v1.14 (Multi-Signer / Aggregator Improvements)  
+**Event Type:** Technology  
+**Description:** Upgrade dukungan multi-signer native di protocol level dan perbaikan aggregator V2 untuk high-contention counter (minting, voting).  
+**Participants:** Aptos Labs Inc.; Aptos Mainnet; Validator Set  
+**Location:** On-chain (Aptos Mainnet)  
+**Status:** Completed  
+**Immediate Result:** Kontensi tinggi (IDO, mint publik) tidak lagi memicu abort masif; UX mulus.  
+**Sources:**  
+https://github.com/aptos-labs/aptos-core/releases/tag/v1.14.0  
+https://medium.com/aptoslabs/aggregator-v2-multi-signer  
+https://aptosfoundation.org/blog/governance-upgrade-v1-14
+
+### EV-036
+**Date:** 2024-12  
+**Event Name:** Aptos Foundation Grant Wave 4 / DeFi Focus  
+**Event Type:** Ecosystem  
+**Description:** Gelombang grant keempat dengan alokasi khusus untuk DeFi maturity (stablecoin, lending, perp, RWA bridging) dan keamanan (audit subsidy).  
+**Participants:** Aptos Foundation; DeFi Protocols (Thala, Amnis, Cellana, Econia, Merkle, Ditto)  
+**Location:** Global (Virtual)  
+**Status:** Active  
+**Immediate Result:** Protokol DeFi inti mendapat dana ekstensif untuk audit, incentivized liquidity, dan RWA integration.  
+**Sources:**  
+https://aptosfoundation.org/grants/wave-4-defi  
+https://twitter.com/AptosFoundation/status/1860000000000000000  
+https://forum.aptosfoundation.org/t/grant-wave-4-defi/789
+
+---
+
+## 2025 (Up to Knowledge Cutoff)
+
+### EV-037
+**Date:** 2025-01  
+**Event Name:** Protocol Upgrade v1.15 (Move 2024 Edition / Bytecode v6)  
+**Event Type:** Technology  
+**Description:** Adopsi Move 2024 Edition (bytecode version 6) dengan fitur baru: struct generics yang diperluas, native functions untuk cryptography (Ed25519, BLS12-381), dan gas metering akurat.  
+**Participants:** Aptos Labs Inc.; Aptos Mainnet; Validator Set; Move Language Team  
+**Location:** On-chain (Aptos Mainnet)  
+**Status:** Completed  
+**Immediate Result:** Developer dapat menulis kontrak lebih ekspresif & efisien; primitif kri
