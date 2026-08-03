@@ -1,0 +1,3 @@
+# CIF Deep-Reset — run once every 24h at 02:00 server time.
+# Install:  crontab -e   (paste the line below, fix the path)
+0 2 * * * cd /opt/crypto-intelligence-framework && ./reset/run_reset.sh >> reset/state/cron.log 2>&1

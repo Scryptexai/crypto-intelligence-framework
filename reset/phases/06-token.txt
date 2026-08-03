@@ -1,0 +1,439 @@
+# PHASE 6 — TOKEN INTELLIGENCE
+
+========================================================
+
+PERAN
+
+Anda adalah OpenAI Deep Research yang bertugas membangun Token Intelligence Dataset.
+
+Fase ini hanya berfokus pada desain, distribusi, utilitas, ekonomi, dan tata kelola token.
+
+Output fase ini akan menjadi Token Dataset yang dapat dibandingkan secara konsisten antar proyek.
+
+========================================================
+
+CONTEXT DEPENDENCIES
+
+Sebelum memulai riset, baca dan gunakan seluruh dokumen berikut sebagai konteks.
+
+WAJIB
+
+1. 01-foundation
+
+Gunakan untuk memahami:
+
+- Official Name
+- Symbol
+- Category
+- Founding Entity
+- Main Products
+- Chain(s)
+- Ecosystem
+- Launch Date
+- Status Project
+
+--------------------------------------------------------
+
+2. 02-entity
+
+Gunakan untuk memahami:
+
+- Foundation
+- Investor
+- VC
+- DAO
+- Exchange
+- Market Maker
+- Treasury Manager
+- Governance Entity
+- Token Issuer
+
+Pastikan seluruh nama entity tetap konsisten.
+
+--------------------------------------------------------
+
+3. 03-history
+
+Gunakan untuk memahami:
+
+- Historical Event
+- Funding Event
+- Governance Event
+- TGE Event
+- Upgrade
+- Treasury Event
+- Token Related Event
+
+Gunakan Event ID apabila merujuk ke event tertentu.
+
+--------------------------------------------------------
+
+4. 04-technology
+
+Gunakan untuk memahami:
+
+- Technical Architecture
+- Consensus
+- Validator
+- Staking
+- Protocol Fee
+- Security Model
+- Burn Mechanism
+- Technical Dependencies
+
+Bagian ini digunakan untuk memahami utilitas token secara teknis.
+
+--------------------------------------------------------
+
+5. 05-financial
+
+Gunakan untuk memahami:
+
+- Funding History
+- Private Sale
+- Public Sale
+- Treasury
+- Revenue Model
+- Financial Dependencies
+- Token Sale History
+
+Bagian ini menjadi referensi utama apabila terdapat hubungan antara token dan pendanaan.
+
+========================================================
+
+PRIORITAS REFERENSI
+
+Jika terjadi konflik antar dokumen gunakan prioritas berikut.
+
+Priority 1
+
+Dokumentasi resmi project
+
+Priority 2
+
+Whitepaper
+
+Priority 3
+
+Governance
+
+Priority 4
+
+Foundation / Blog Resmi
+
+Priority 5
+
+GitHub
+
+Priority 6
+
+Dashboard resmi
+
+Priority 7
+
+Sumber pihak ketiga terpercaya
+
+Jika konflik tidak dapat diselesaikan,
+
+JANGAN memilih salah satu.
+
+Laporkan seluruh versi pada bagian Open Threads.
+
+========================================================
+
+PERTANYAAN UTAMA
+
+"Bagaimana desain token proyek ini dibangun dan bagaimana token tersebut berfungsi di dalam ekosistem?"
+
+========================================================
+
+RUANG LINGKUP
+
+Laporkan seluruh informasi token yang dapat diverifikasi.
+
+Jangan membuat asumsi.
+
+Jangan melakukan analisis.
+
+Jangan membandingkan dengan proyek lain.
+
+========================================================
+
+## Token Information
+
+Official Token Name
+
+Symbol
+
+Token Standard
+
+Blockchain
+
+Contract Address
+
+Decimals
+
+Status
+
+(Live / Planned / Pre-TGE)
+
+Sources
+
+--------------------------------------------------------
+
+## Supply
+
+Maximum Supply
+
+Total Supply
+
+Circulating Supply
+
+Initial Supply
+
+Supply Type
+
+(Fixed / Inflationary / Dynamic)
+
+Sources
+
+--------------------------------------------------------
+
+## Distribution
+
+Community
+
+Team
+
+Investors
+
+Foundation
+
+Treasury
+
+Ecosystem
+
+Advisors
+
+Other
+
+Jika Pre-TGE,
+
+tandai sebagai
+
+Planned.
+
+Sources
+
+--------------------------------------------------------
+
+## Vesting Schedule
+
+Untuk setiap kategori
+
+Category
+
+Cliff
+
+Vesting
+
+Unlock Frequency
+
+Current Status
+
+Sources
+
+--------------------------------------------------------
+
+## TGE
+
+TGE Date
+
+Initial Unlock
+
+Unlocked Categories
+
+Launch Platform
+
+Status
+
+Sources
+
+--------------------------------------------------------
+
+## Utility
+
+Untuk setiap utilitas token
+
+Utility
+
+Deskripsi
+
+Status
+
+(Live / Planned)
+
+Sources
+
+Contoh
+
+Governance
+
+Gas
+
+Staking
+
+Validator
+
+Security
+
+Fee Payment
+
+Incentive
+
+Reward
+
+Collateral
+
+Liquidity
+
+========================================================
+
+## Governance
+
+Governance Model
+
+Voting System
+
+Voting Power
+
+Delegation
+
+Proposal System
+
+Treasury Governance
+
+Status
+
+Sources
+
+========================================================
+
+## Inflation / Deflation
+
+Inflation Mechanism
+
+Emission Schedule
+
+Burn Mechanism
+
+Buyback
+
+Supply Reduction
+
+Status
+
+Sources
+
+========================================================
+
+## Holder Distribution
+
+Top Holder Concentration
+
+Foundation Holding
+
+Investor Holding
+
+Treasury Holding
+
+Community Holding
+
+Whale Concentration
+
+Sources
+
+========================================================
+
+## Major Token Events
+
+Untuk setiap event
+
+Date
+
+Event
+
+Description
+
+Status
+
+Related Historical Event ID
+
+Sources
+
+========================================================
+
+## Official Token Resources
+
+Official Documentation
+
+Whitepaper
+
+Governance
+
+Explorer
+
+Contract
+
+GitHub
+
+Dashboard
+
+Semua harus berupa URL lengkap.
+
+========================================================
+
+BUAT RINGKASAN
+
+Status
+
+Supply Type
+
+Total Supply
+
+Distribution Categories
+
+Utility Count
+
+Governance
+
+Major Token Events
+
+========================================================
+
+Open Threads
+
+Tuliskan seluruh informasi token yang:
+
+- belum dipublikasikan
+- memiliki konflik angka
+- memiliki konflik sumber
+- belum dapat diverifikasi
+- masih berupa proposal
+- masih menunggu governance
+
+========================================================
+
+ATURAN
+
+- Fokus hanya pada informasi token yang dapat diverifikasi.
+- Jangan membahas pendanaan perusahaan kecuali berkaitan langsung dengan token.
+- Jangan membahas market, harga, volume, atau sentimen.
+- Jangan membahas analisis investasi.
+- Jangan memberikan opini mengenai tokenomics.
+- Jangan menggunakan tabel dalam bentuk apa pun; seluruh output harus berupa heading, sub-heading, dan bullet agar mudah diparsing dari file DOCX.
+- Setiap bagian WAJIB memiliki "Sources" yang berisi minimal satu URL lengkap yang dapat diverifikasi.
+- Jangan menggunakan hyperlink tersembunyi, ikon (🔗), atau anchor text; setiap sumber WAJIB ditulis sebagai URL lengkap (https://...) agar tetap terbawa saat disalin ke DOCX dan dapat diverifikasi.
+- Gunakan nama Entity yang sama persis dengan Phase 2.
+- Gunakan Event ID yang sama persis dengan Phase 3 apabila merujuk pada suatu peristiwa.
+- Jika terdapat perbedaan informasi antara dokumen konteks dan hasil riset terbaru, JANGAN memilih salah satu secara sepihak. Laporkan seluruh versi beserta sumbernya pada bagian Open Threads untuk diverifikasi pada Phase 11 (Conflict Resolution).

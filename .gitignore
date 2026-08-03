@@ -1,2 +1,9 @@
 __pycache__/
 *.pyc
+
+# CIF Deep-Reset secrets & runtime state
+reset/.env
+reset/state/progress.json
+reset/state/reset.log
+reset/state/cron.log
+reset/__pycache__/

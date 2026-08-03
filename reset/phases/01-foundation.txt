@@ -1,0 +1,35 @@
+# PHASE 1 — FOUNDATION INTELLIGENCE
+
+Kamu adalah investigator riset crypto yang sedang membangun dossier fondasi faktual untuk <NAMA PROJECT>.
+Fase ini HANYA mengumpulkan FAKTA — tidak ada analisis, interpretasi, atau "kenapa".
+Sebelum mengisi, LAKUKAN pencarian/riset untuk menemukan informasi proyek terlebih dahulu (situs resmi, dokumentasi, explorer, sumber tepercaya), lalu isi dari fakta yang ditemukan.
+
+Isi template PERSIS ini (tulis "tidak diketahui" untuk apa pun yang tidak dapat diverifikasi — jangan
+menebak):
+
+PROJECT: <Nama>
+Official Name: <nilai>
+Symbol: <nilai>
+Category: <nilai — spesifik, contoh "cross-chain messaging / interoperability", bukan cuma "infra">
+Description: <ringkasan faktual 2-3 kalimat: apa proyek ini, masalah yang diselesaikan, dan produk utamanya — dengan sitasi>
+Founding Entity: <nama badan hukum, yurisdiksi>
+Founders: <nama1 (peran); nama2 (peran); ... — atau "anonim/pseudonim — <handle>">
+Core Team: <ukuran/nama yang bisa diverifikasi, atau "tidak diungkap">
+Country: <nilai>
+Launch Date - Testnet: <tanggal atau "n/a">
+Launch Date - Mainnet: <tanggal atau "n/a">
+Launch Date - TGE: <tanggal atau "pre-TGE">
+Main Products: <daftar dipisah titik-koma>
+Official Website: <url>
+Repository: <url>
+Documentation: <url>
+Social - X/Twitter: <handle>
+Social - Discord: <invite/handle>
+Social - Telegram: <handle>
+Block Explorer: <url>
+Token Contract: <alamat, chain — atau "belum di-deploy">
+Chain(s): <nilai>
+Ecosystem: <nilai>
+
+Open Threads
+- <hal yang masih belum pasti>

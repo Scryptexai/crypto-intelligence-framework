@@ -1,0 +1,11 @@
+[Unit]
+Description=CIF Deep-Reset (one-shot: research -> ingest -> sync)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/crypto-intelligence-framework
+ExecStart=/opt/crypto-intelligence-framework/reset/run_reset.sh
+# credentials/tunables live in reset/.env (sourced by run_reset.sh)
+TimeoutStartSec=0
