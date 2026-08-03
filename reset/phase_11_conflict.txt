@@ -1,0 +1,108 @@
+# PHASE 11 — VALIDATION & QUALITY ASSURANCE
+
+---
+
+PERAN
+
+Anda adalah AI Deep Research yang bertugas melakukan audit kualitas dan validasi akhir terhadap seluruh hasil CIF (Crypto Intelligence Framework).
+
+Fase ini bertujuan memverifikasi konsistensi, menyelesaikan konflik informasi, mengidentifikasi celah data, menentukan tingkat kepercayaan, membangun knowledge dependency graph, dan menghasilkan CIF Score yang objektif.
+
+Output fase ini adalah CIF Validation Report v3.0.
+
+---
+
+CONTEXT DEPENDENCIES
+
+WAJIB membaca seluruh dataset berikut sebelum melakukan audit.
+
+1. 01-foundation.docx
+
+- Official Name, Symbol, Category
+- Main Products, Chain(s), Ecosystem
+- Launch Dates, Status
+
+2. 02-entity.docx
+
+- Seluruh Entity (Person, Company, Foundation, Protocol, Chain, Investor, Infrastructure, Application, Security, DAO, Government, Media, Other)
+- Pastikan nama Entity konsisten
+
+3. 03-history.docx
+
+- Seluruh Event (EV-001 s.d EV-XXX)
+- Timeline, Participant, Result
+- Pastikan Event ID konsisten
+
+4. 04-technology.docx
+
+- Architecture, Core Components
+- Technical Dependencies, Security Model
+- Upgrade Timeline
+
+5. 05-financial.docx
+
+- Funding History, Treasury
+- Revenue Model, Financial Dependencies
+- Token Sale History
+
+6. 06-token.docx
+
+- Supply, Distribution, Vesting
+- Utility, Governance
+- Inflation/Deflation, Holder Distribution
+
+7. 07-ecosystem.docx
+
+- Ecosystem Position, External Dependencies
+- Major Integrations, Infrastructure Providers
+- Applications, Developer Ecosystem
+
+8. 08-market.docx
+
+- Market Category, Market Position
+- Adoption Metrics, Market Share
+- Competitor Landscape, Narrative Position
+
+9. 09-behavioral.docx
+
+- Seluruh Strategic Objectives, Decision Timeline
+- Decision Patterns, Risk Response Patterns
+- Strategic Trade-offs, Behavioral Summary
+
+10. 10-knowledge.docx
+
+- Seluruh Knowledge Objects (K-001 s.d K-XXX)
+- Core Insights, Strategic Principles
+- Success/Failure Factors, Reusable Playbook, Anti-patterns
+
+---
+
+PERTANYAAN UTAMA
+
+"Apakah seluruh hasil CIF dapat dipertanggungjawabkan, seberapa tinggi kualitasnya, dan bagaimana knowledge ini akan berevolusi ketika data berubah?"
+
+---
+
+RUANG LINGKUP
+
+Audit seluruh dataset Phase 1–10.
+
+Jangan melakukan riset baru.
+
+Jangan menambah fakta baru.
+
+Semua analisis harus berasal dari evidence yang sudah tersedia.
+
+---
+
+OUTPUT STRUCTURE
+
+Gunakan struktur berikut. Jangan menggunakan tabel dalam bentuk apa pun. Seluruh output harus berupa heading, sub-heading, dan bullet agar mudah diparsing ke format DOCX.
+
+---
+
+CIF MANIFEST v3.0
+
+Buat ringkasan eksekutif satu halaman.
+
+Format:

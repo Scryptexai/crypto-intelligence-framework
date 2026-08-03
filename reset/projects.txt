@@ -1,0 +1,82 @@
+# reset/projects.txt — queue for reset/run_deepseek_reset.py, processed top to bottom.
+# One project name per line (must match the data_project/<Name>/ folder name exactly where one
+# already exists). Lines starting with # (like this one) and blank lines are ignored. Append more
+# names any time -- the script re-reads this file on every run.
+#
+# Priority group 1: Aave already has phases 1-6 done (real content, verified 2026-08-03) and
+# phases 7-11 as empty placeholder files -- the script's resume logic will load 1-6 as context and
+# only call the API for 7-11. Fastest win in the queue.
+Aave
+#
+# Priority group 2: 44 more data_project/<Name>/ folders already exist as an empty 11-file
+# scaffold (all 0 bytes, verified 2026-08-03) -- prepared ahead of this pipeline but never filled
+# in. Completing these is higher-value than starting brand-new projects from zero, since the
+# folder structure and naming are already correct. (LayerZero is deliberately excluded: its
+# data_project/ folder is a stray empty scaffold too, but LayerZero's real dossier already exists
+# in full via the older doc_backup/inbox/phased/ convention -- re-running it here would be
+# redundant. See examples/DatasetIndex.md's D13 entry.)
+Aptos
+Avalanche
+Axie Infinity
+Bancor
+Berachain
+Blast
+Blur
+Cardano
+Celestia
+Compound
+Cosmos
+EOS
+EigenLayer
+Ethena
+Ethereum
+Friend.tech
+Grass
+Helium
+Hyperliquid
+Irys
+Jito
+Kamino
+Lido
+MakerDAO
+MegaETH
+Monad
+Movement Labs
+Notcoin
+OlympusDAO
+Optimism
+Polymarket
+Pump.fun
+Pyth
+Render
+Solana
+Starknet
+SushiSwap
+Terra
+Uniswap
+Vana
+Walrus
+Wormhole
+Yearn Finance
+dYdX
+zkSync
+#
+# Priority group 3: the remaining 3 of the original 12 pre-v3-archived projects (see CLAUDE.md +
+# examples/DatasetIndex.md's 2026-07-26 reset note) that aren't in the group-2 scaffold above --
+# raw doc_backup/ sources already exist for these too, no folder pre-created yet.
+BNB Chain
+Polkadot
+EtherFi
+#
+# Priority group 4: further new coverage beyond what's already scaffolded, for when groups 1-3 are
+# done and there's still appetite to keep expanding (goal: as much project data as possible).
+Sui
+Polygon
+Scroll
+Linea
+Injective
+Sei
+Near
+Jupiter
+Curve
+Pendle

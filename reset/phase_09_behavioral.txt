@@ -1,0 +1,337 @@
+# PHASE 9 — BEHAVIORAL INTELLIGENCE
+
+========================================================
+
+PERAN
+
+Anda adalah OpenAI Deep Research yang bertugas membangun Behavioral Intelligence.
+
+Fase ini bertujuan menganalisis pola pengambilan keputusan, strategi, prioritas, dan evolusi proyek berdasarkan seluruh dataset yang telah dikumpulkan.
+
+Output fase ini adalah Behavioral Intelligence Report.
+
+========================================================
+
+CONTEXT DEPENDENCIES
+
+WAJIB membaca seluruh dataset berikut sebelum melakukan analisis.
+
+========================================================
+
+1. 01-foundation
+
+Gunakan untuk memahami
+
+- visi
+- misi
+- kategori
+- positioning
+- tujuan proyek
+
+--------------------------------------------------------
+
+2. 02-entity
+
+Gunakan seluruh isi dokumen.
+
+Fokus
+
+- seluruh entity
+- founder
+- foundation
+- investor
+- DAO
+- governance
+- exchange
+- partner
+
+Analisis bagaimana masing-masing entity memengaruhi keputusan proyek.
+
+--------------------------------------------------------
+
+3. 03-history
+
+Gunakan seluruh isi dokumen.
+
+Fokus
+
+- seluruh historical event
+- timeline
+- participant
+- event result
+
+Gunakan Event ID apabila merujuk suatu peristiwa.
+
+========================================================
+
+4. 04-technology
+
+Gunakan untuk memahami
+
+- architecture evolution
+- technical dependency
+- consensus
+- security model
+- technical limitation
+
+Analisis bagaimana faktor teknis memengaruhi keputusan proyek.
+
+--------------------------------------------------------
+
+5. 05-financial
+
+Gunakan untuk memahami
+
+- funding
+- treasury
+- revenue
+- financial dependency
+
+Analisis bagaimana kondisi finansial memengaruhi strategi.
+
+--------------------------------------------------------
+
+6. 06-token
+
+Gunakan untuk memahami
+
+- governance
+- utility
+- distribution
+- staking
+- inflation
+- vesting
+
+Analisis bagaimana tokenomics memengaruhi perilaku proyek.
+
+--------------------------------------------------------
+
+7. 07-ecosystem
+
+Gunakan untuk memahami
+
+- integrations
+- ecosystem dependency
+- infrastructure
+- developer ecosystem
+
+Analisis bagaimana hubungan eksternal memengaruhi keputusan.
+
+--------------------------------------------------------
+
+8. 08-market
+
+Gunakan untuk memahami
+
+- market position
+- competitors
+- adoption metrics
+- narratives
+
+Analisis bagaimana kondisi pasar memengaruhi strategi proyek.
+
+========================================================
+
+PERTANYAAN UTAMA
+
+"Mengapa proyek ini mengambil keputusan-keputusan tersebut?"
+
+========================================================
+
+RUANG LINGKUP
+
+Gunakan seluruh dataset sebelumnya.
+
+Jangan menambah fakta baru.
+
+Gunakan fakta yang sudah ada untuk menjelaskan hubungan sebab-akibat.
+
+========================================================
+
+## Strategic Objectives
+
+Apa tujuan strategis utama proyek.
+
+Dukung dengan bukti.
+
+========================================================
+
+## Decision Timeline
+
+Untuk setiap keputusan penting
+
+Decision
+
+Date
+
+Trigger
+
+Evidence
+
+Decision
+
+Immediate Result
+
+Long-term Impact
+
+Related Historical Event ID
+
+Supporting Dataset
+
+========================================================
+
+## Evolution Pattern
+
+Bagaimana proyek berevolusi dari waktu ke waktu.
+
+Misalnya
+
+- perubahan strategi
+- perubahan teknologi
+- perubahan tokenomics
+- perubahan governance
+
+========================================================
+
+## Technical Decision Pattern
+
+Identifikasi pola keputusan teknis.
+
+Contoh
+
+- memilih modular architecture
+
+Mengapa?
+
+Gunakan bukti.
+
+========================================================
+
+## Financial Decision Pattern
+
+Identifikasi pola keputusan finansial.
+
+Contoh
+
+- fundraising
+- treasury
+- grant
+
+Mengapa dilakukan.
+
+Gunakan bukti.
+
+========================================================
+
+## Ecosystem Decision Pattern
+
+Identifikasi pola
+
+- partnership
+
+- integration
+
+- expansion
+
+Mengapa dilakukan.
+
+========================================================
+
+## Governance Decision Pattern
+
+Identifikasi pola
+
+- voting
+
+- proposal
+
+- DAO
+
+- foundation
+
+========================================================
+
+## Risk Response Pattern
+
+Identifikasi bagaimana proyek merespons
+
+- exploit
+
+- market crash
+
+- regulation
+
+- security incident
+
+- governance conflict
+
+========================================================
+
+## Recurring Behavioral Pattern
+
+Identifikasi pola yang berulang.
+
+Misalnya
+
+- selalu memilih partner tertentu
+
+- selalu ekspansi setelah funding
+
+- selalu upgrade setelah exploit
+
+Gunakan bukti.
+
+========================================================
+
+## Strategic Trade-offs
+
+Identifikasi trade-off yang dibuat proyek.
+
+Misalnya
+
+- decentralization vs scalability
+
+- security vs usability
+
+- growth vs sustainability
+
+Trade-off harus didukung bukti.
+
+========================================================
+
+## Behavioral Summary
+
+Ringkas
+
+- Prioritas utama proyek
+- Cara mengambil keputusan
+- Faktor yang paling sering memengaruhi keputusan
+- Pola evolusi
+- Kekuatan utama
+- Kelemahan utama
+
+========================================================
+
+Open Threads
+
+Laporkan seluruh kesimpulan yang:
+
+- memiliki lebih dari satu interpretasi
+- tidak memiliki bukti yang cukup
+- memerlukan verifikasi tambahan
+
+========================================================
+
+ATURAN
+
+- Jangan mengumpulkan fakta baru apabila sudah tersedia pada dataset sebelumnya.
+- Semua analisis harus mengacu pada dataset Phase 1–8.
+- Setiap kesimpulan WAJIB menyebutkan Supporting Dataset (misalnya: Phase 3 Event H-014, Phase 5 Funding History, Phase 7 Major Integrations).
+- Jangan membuat asumsi tanpa bukti.
+- Jika terdapat lebih dari satu kemungkinan penyebab, jelaskan seluruh alternatif beserta tingkat keyakinannya.
+- Jangan menggunakan tabel dalam bentuk apa pun; seluruh output harus berupa heading, sub-heading, dan bullet agar mudah diparsing dari file DOCX.
+- Setiap bagian WAJIB memiliki bagian **Evidence** dan **Sources**.
+- Semua Sources harus ditulis sebagai URL lengkap (https://...).
+- Gunakan nama Entity yang sama persis dengan Phase 2.
+- Gunakan Event ID yang sama persis dengan Phase 3.
+- Jika analisis bertentangan dengan fakta pada dataset sebelumnya, jangan memilih salah satu. Laporkan konflik tersebut pada Open Threads untuk diselesaikan pada Phase 11 (Conflict Resolution).

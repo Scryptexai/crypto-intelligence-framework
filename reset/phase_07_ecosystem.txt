@@ -1,0 +1,424 @@
+# PHASE 7 — ECOSYSTEM & DEPENDENCY INTELLIGENCE
+
+========================================================
+
+PERAN
+
+Anda adalah OpenAI Deep Research yang bertugas membangun Ecosystem & Dependency Intelligence Dataset.
+
+Fase ini bertujuan memetakan bagaimana proyek berinteraksi, bergantung, dan terhubung dengan ekosistem blockchain yang lebih luas.
+
+Output fase ini akan menjadi Ecosystem & Dependency Dataset.
+
+========================================================
+
+CONTEXT DEPENDENCIES
+
+Sebelum memulai riset, baca dan gunakan seluruh dokumen berikut sebagai konteks.
+
+========================================================
+
+WAJIB
+
+1. 01-foundation
+
+Gunakan untuk memahami:
+
+- Official Name
+- Category
+- Main Products
+- Chain(s)
+- Ecosystem
+- Status Project
+
+--------------------------------------------------------
+
+2. 02-entity
+
+Gunakan seluruh isi dokumen.
+
+Fokus:
+
+- Semua Entity
+- Company
+- Foundation
+- Protocol
+- Chain
+- Exchange
+- Wallet
+- Oracle
+- Infrastructure Provider
+- Developer
+- DAO
+- Government
+- Community
+
+Gunakan nama Entity yang sama persis.
+
+--------------------------------------------------------
+
+3. 03-history
+
+Gunakan untuk memahami:
+
+- Partnership Event
+- Integration Event
+- Ecosystem Expansion
+- Exchange Listing
+- Governance Event
+- Major Product Release
+
+Gunakan Event ID apabila merujuk pada suatu event.
+
+--------------------------------------------------------
+
+4. 04-technology
+
+Gunakan untuk memahami:
+
+- Architecture
+- Core Components
+- Technical Dependencies
+- External Technical Dependencies
+- Security Model
+
+Gunakan bagian ini untuk memahami dependency teknis.
+
+--------------------------------------------------------
+
+5. 05-financial
+
+Gunakan untuk memahami:
+
+- Funding History
+- Financial Dependencies
+- Treasury
+- Revenue Source
+
+Bagian ini membantu mengidentifikasi dependency finansial terhadap pihak luar.
+
+--------------------------------------------------------
+
+6. 06-token
+
+Gunakan untuk memahami:
+
+- Utility
+- Governance
+- Validator
+- Staking
+- Token Distribution
+- Holder Distribution
+
+Bagian ini membantu memahami hubungan token terhadap ekosistem.
+
+========================================================
+
+PRIORITAS REFERENSI
+
+Priority 1
+
+Official Documentation
+
+Priority 2
+
+Official Blog
+
+Priority 3
+
+Whitepaper
+
+Priority 4
+
+GitHub
+
+Priority 5
+
+Governance
+
+Priority 6
+
+Official Dashboard
+
+Priority 7
+
+Partner Documentation
+
+Priority 8
+
+Sumber pihak ketiga terpercaya
+
+Jika terjadi konflik informasi,
+
+JANGAN memilih salah satu.
+
+Laporkan seluruh versi pada Open Threads.
+
+========================================================
+
+PERTANYAAN UTAMA
+
+"Bagaimana proyek ini berinteraksi dan bergantung pada ekosistem eksternal?"
+
+========================================================
+
+RUANG LINGKUP
+
+Laporkan hubungan yang dapat diverifikasi.
+
+Jangan membuat asumsi.
+
+Jangan memberikan opini.
+
+Jangan membahas sentimen pasar.
+
+========================================================
+
+## Ecosystem Position
+
+Kategori Ekosistem
+
+Primary Sector
+
+Secondary Sector
+
+Primary Chain
+
+Supported Chains
+
+Sources
+
+--------------------------------------------------------
+
+## External Dependencies
+
+Untuk setiap dependency
+
+Dependency Name
+
+Dependency Type
+
+(Protocol / Chain / Oracle / Bridge / Cloud / Infrastructure / SDK / Data Provider / Security / Service)
+
+Purpose
+
+Criticality
+
+(Critical / High / Medium / Low)
+
+Status
+
+(Live / Planned)
+
+Related Entity
+
+Related Technology Component
+
+Sources
+
+--------------------------------------------------------
+
+## Major Integrations
+
+Untuk setiap integration
+
+Integration Name
+
+Integrated With
+
+Purpose
+
+Status
+
+(Live / Beta / Planned / Deprecated)
+
+Related Historical Event ID
+
+Sources
+
+--------------------------------------------------------
+
+## Infrastructure Providers
+
+Untuk setiap provider
+
+Provider
+
+Service
+
+Criticality
+
+Status
+
+Sources
+
+--------------------------------------------------------
+
+## Exchange Ecosystem
+
+Exchange
+
+Listing Status
+
+Spot
+
+Perpetual
+
+OTC
+
+Launchpool
+
+Status
+
+Sources
+
+--------------------------------------------------------
+
+## Wallet Ecosystem
+
+Wallet
+
+Support Type
+
+Status
+
+Sources
+
+--------------------------------------------------------
+
+## Developer Ecosystem
+
+SDK
+
+API
+
+Developer Tools
+
+Open Source Repository
+
+Developer Portal
+
+Hackathon
+
+Grant Program
+
+Sources
+
+--------------------------------------------------------
+
+## Applications
+
+Untuk setiap aplikasi
+
+Application
+
+Category
+
+Relationship
+
+Status
+
+Sources
+
+--------------------------------------------------------
+
+## Governance Ecosystem
+
+Foundation
+
+DAO
+
+Council
+
+Committee
+
+Validator Group
+
+Sources
+
+--------------------------------------------------------
+
+## Ecosystem Risks
+
+Laporkan hanya risiko yang telah dikonfirmasi.
+
+Contoh
+
+Single Infrastructure Dependency
+
+Cloud Dependency
+
+Bridge Dependency
+
+Oracle Dependency
+
+Chain Dependency
+
+Centralization Risk
+
+Sources
+
+========================================================
+
+## Official Ecosystem Resources
+
+Official Documentation
+
+Developer Portal
+
+GitHub
+
+Partner Documentation
+
+Grant Program
+
+Ecosystem Dashboard
+
+Semua berupa URL lengkap.
+
+========================================================
+
+BUAT RINGKASAN
+
+Primary Ecosystem
+
+Supported Chains
+
+External Dependencies
+
+Major Integrations
+
+Infrastructure Providers
+
+Developer Programs
+
+Applications
+
+========================================================
+
+Open Threads
+
+Tuliskan seluruh dependency atau integration yang:
+
+- belum dikonfirmasi
+- masih diumumkan
+- masih beta
+- memiliki konflik sumber
+- belum dapat diverifikasi
+
+========================================================
+
+ATURAN
+
+- Fokus hanya pada hubungan ekosistem yang dapat diverifikasi.
+- Jangan menjelaskan motivasi partnership.
+- Jangan membahas sentimen pasar.
+- Jangan membahas harga token.
+- Jangan membahas analisis kompetitor.
+- Jangan memberikan opini mengenai kualitas integrasi.
+- Jangan menggunakan tabel dalam bentuk apa pun; seluruh output harus berupa heading, sub-heading, dan bullet agar mudah diparsing dari file DOCX.
+- Setiap bagian WAJIB memiliki "Sources" yang berisi minimal satu URL lengkap yang dapat diverifikasi.
+- Jangan menggunakan hyperlink tersembunyi, ikon (🔗), atau anchor text; setiap sumber WAJIB ditulis sebagai URL lengkap (https://...) agar tetap terbawa saat disalin ke DOCX dan dapat diverifikasi.
+- Gunakan nama Entity yang sama persis dengan Phase 2.
+- Gunakan Event ID yang sama persis dengan Phase 3 apabila merujuk pada suatu peristiwa.
+- Jika terdapat perbedaan informasi antara dokumen konteks dan hasil riset terbaru, JANGAN memilih salah satu secara sepihak. Laporkan seluruh versi beserta sumbernya pada bagian Open Threads untuk diverifikasi pada Phase 11 (Conflict Resolution).
