@@ -1,3 +1,4 @@
 .env
 state/progress.json
 state/reset.log
+temp/

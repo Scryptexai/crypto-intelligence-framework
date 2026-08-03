@@ -114,3 +114,32 @@ sudo systemctl enable --now cif-reset.timer
   validation still passes.
 - Filled projects are skipped by default (`RESET_SKIP_FILLED=true`); half-filled projects
   resume from their first missing phase.
+
+## Verify-first workflow (staging → verify → promote)
+
+Never write straight into `data_project/` or the DB. Generate into a staging
+folder, verify every phase honors the exact structure the extractors need, and
+only then promote:
+
+```bash
+# 1) Generate into reset/temp/<Project>/ (NOT data_project; never runs ingest/sync)
+python3 reset/deep_reset.py --only Blast --staging --overwrite
+
+# 2) Verify all 11 phases (ingest content gate + real extractor parse counts)
+python3 reset/verify.py Blast
+
+# 3) Promote ONLY if verify passes → copies to data_project/<Project>/NN-<key>.docx
+python3 reset/promote.py Blast
+
+# 4) Then, when you choose, ingest + sync
+./run.sh build && ./run.sh sync
+```
+
+`verify.py` checks, per phase:
+- **Tier 1 (all 11):** `tools/ingest.py:validate_phase_content` (header, length, citations)
+- **Tier 2 (structured):** runs the real extractor and asserts > 0 rows —
+  `02-entity`→entities, `09-behavioral`→objectives/patterns + decision events,
+  `10-knowledge`→knowledge items, `11-conflict`→conflicts + QA dimensions.
+
+`promote.py` refuses unless verify passes all 11 (override: `--force`), so the
+reset workflow cannot "leave the reset/ folder" with malformed data.

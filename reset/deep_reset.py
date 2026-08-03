@@ -100,22 +100,22 @@ def save_state(state: dict) -> None:
     STATE_FILE.write_text(json.dumps(state, indent=2), encoding="utf-8")
 
 
-def phase_done(project: str, key: str, overwrite: bool) -> bool:
+def phase_done(project: str, key: str, overwrite: bool, out_base=None) -> bool:
     """A phase is already done if its file exists non-empty (unless --overwrite)."""
     if overwrite:
         return False
-    p = C.phase_path(project, key)
+    p = C.phase_path(project, key, out_base)
     return p.exists() and p.stat().st_size >= C.MIN_PHASE_CHARS
 
 
-def build_context(project: str, upto_index: int, budget: int) -> str:
+def build_context(project: str, upto_index: int, budget: int, out_base=None) -> str:
     """Concatenate prior phase outputs (from disk) as context for phase N. Keeps the
     MOST RECENT phases first and stops once the char budget is reached, so a very long
     dossier can't blow past the model/proxy context limit on an unattended VPS run."""
     chunks = []
     used = 0
     for prev_key in reversed(C.PHASE_ORDER[:upto_index]):
-        p = C.phase_path(project, prev_key)
+        p = C.phase_path(project, prev_key, out_base)
         if p.exists() and p.stat().st_size > 0:
             title = prev_key.split("-", 1)[1].upper()
             block = f"===== KONTEKS: HASIL FASE {prev_key} ({title}) =====\n{p.read_text(encoding='utf-8').strip()}"
@@ -126,7 +126,7 @@ def build_context(project: str, upto_index: int, budget: int) -> str:
     return "\n\n".join(reversed(chunks))
 
 
-def build_prompt(project: str, index: int, key: str) -> str:
+def build_prompt(project: str, index: int, key: str, out_base=None) -> str:
     """Assemble the full user message for phase `index` (0-based)."""
     phase_prompt = C.load_phase_prompt(key)
 
@@ -140,7 +140,7 @@ def build_prompt(project: str, index: int, key: str) -> str:
         )
 
     # Phase >1: prepend project identity + all prior phase outputs as context.
-    context = build_context(project, index, args_context_budget())
+    context = build_context(project, index, args_context_budget(), out_base)
     preamble = (
         f"PROYEK YANG SEDANG DIRISET: {project}\n\n"
         f"Di bawah ini adalah hasil fase-fase sebelumnya untuk proyek yang SAMA. "
@@ -166,8 +166,8 @@ def ensure_header(project: str, text: str) -> str:
     return f"PROJECT: {project}\n\n{text}"
 
 
-def write_phase(project: str, key: str, text: str) -> Path:
-    d = C.project_dir(project)
+def write_phase(project: str, key: str, text: str, out_base=None) -> Path:
+    d = C.project_dir(project, out_base)
     d.mkdir(parents=True, exist_ok=True)
     # Normalize model output to the plain-text shape the CIF extractors expect
     # (strip Markdown, realign item labels) — some proxy backends answer in Markdown.
@@ -186,11 +186,11 @@ def sleep_with_log(seconds: int, why: str, no_delay: bool) -> None:
 
 def process_phase(client, project: str, index: int, key: str, args) -> bool:
     """Generate one phase. Returns True on success."""
-    if phase_done(project, key, args.overwrite):
+    if phase_done(project, key, args.overwrite, args._out_base):
         log(f"  ↳ {key}: already present, skip")
         return True
 
-    prompt = build_prompt(project, index, key)
+    prompt = build_prompt(project, index, key, args._out_base)
     if args.dry_run:
         log(f"  ↳ {key}: DRY-RUN (prompt {len(prompt)} chars) — no API call")
         return True
@@ -205,7 +205,7 @@ def process_phase(client, project: str, index: int, key: str, args) -> bool:
         answer = (answer or "").strip()
         if len(answer) >= C.MIN_PHASE_CHARS:
             answer = ensure_header(project, answer)
-            path = write_phase(project, key, answer)
+            path = write_phase(project, key, answer, args._out_base)
             log(f"  ✓ {key}: wrote {len(answer)} chars -> {path.relative_to(C.ROOT)}")
             return True
         log(f"  ⚠ {key}: answer too short ({len(answer)} chars), retrying")
@@ -215,7 +215,7 @@ def process_phase(client, project: str, index: int, key: str, args) -> bool:
 
 
 def process_project(client, project: str, args, state: dict) -> bool:
-    if C.SKIP_FILLED and not args.overwrite and C.is_project_filled(project):
+    if not args.staging and C.SKIP_FILLED and not args.overwrite and C.is_project_filled(project):
         log(f"▶ {project}: already filled, skip")
         return True
 
@@ -258,10 +258,16 @@ def main() -> int:
     ap.add_argument("--no-delay", action="store_true", help="skip pauses (testing)")
     ap.add_argument("--dry-run", action="store_true", help="print plan, no API calls / writes")
     ap.add_argument("--no-pipeline", action="store_true", help="skip run.sh build/sync afterwards")
+    ap.add_argument("--staging", action="store_true", help="write to reset/temp/<Project> (NOT data_project); never runs pipeline")
     ap.add_argument("--max-phases", type=int, default=0, help="only run the first N phases per project (testing)")
     ap.add_argument("--phase-delay", type=int, default=C.PHASE_DELAY_SEC)
     ap.add_argument("--project-delay", type=int, default=C.PROJECT_DELAY_SEC)
     args = ap.parse_args()
+
+    args._out_base = C.STAGING_DIR if args.staging else None
+    if args.staging:
+        args.no_pipeline = True  # staging never touches ingest/sync
+        C.STAGING_DIR.mkdir(parents=True, exist_ok=True)
 
     projects = C.load_projects()
     if args.only:
@@ -291,7 +297,7 @@ def main() -> int:
         if args.limit and processed >= args.limit:
             log(f"reached --limit {args.limit}, stopping")
             break
-        if C.SKIP_FILLED and not args.overwrite and C.is_project_filled(project):
+        if not args.staging and C.SKIP_FILLED and not args.overwrite and C.is_project_filled(project):
             log(f"▶ {project}: already filled, skip")
             continue
         process_project(client, project, args, state)

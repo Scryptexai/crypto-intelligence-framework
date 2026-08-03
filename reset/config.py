@@ -15,6 +15,7 @@ PHASES_DIR = RESET_DIR / "phases"
 STATE_DIR = RESET_DIR / "state"
 PROJECTS_FILE = RESET_DIR / "projects.txt"
 DATA_PROJECT = ROOT / "data_project"
+STAGING_DIR = RESET_DIR / "temp"   # staged outputs live here until verified
 
 # Phase file key order = the ingest.py PHASE_KEYS contract (NN-<key>.docx).
 # Phase 11 (Validation & QA) is written to 11-conflict.docx per that contract.
@@ -40,12 +41,12 @@ RUN_SYNC = os.environ.get("RESET_RUN_SYNC", "true").lower() == "true"
 MIN_PHASE_CHARS = int(os.environ.get("RESET_MIN_PHASE_CHARS", "400"))
 
 
-def project_dir(project: str) -> Path:
-    return DATA_PROJECT / project
+def project_dir(project: str, base: Path | None = None) -> Path:
+    return (base or DATA_PROJECT) / project
 
 
-def phase_path(project: str, phase_key: str) -> Path:
-    return project_dir(project) / f"{phase_key}.docx"
+def phase_path(project: str, phase_key: str, base: Path | None = None) -> Path:
+    return project_dir(project, base) / f"{phase_key}.docx"
 
 
 def load_phase_prompt(phase_key: str) -> str:
