@@ -29,31 +29,46 @@ export ANTHROPIC_AUTH_TOKEN="sk-..."
 export ANTHROPIC_MODEL="DeepSeek-V4-Pro"
 ```
 
-This is a development/testing credential — rotate it once end-to-end testing is done. The sync step
-(`./run.sh sync`, triggered automatically after each project) needs its own separate `SUPABASE_URL` /
-`SUPABASE_SERVICE_ROLE_KEY` pair (see `tools/sync_supabase.py`'s docstring) — if those aren't set, the sync
-step fails loudly but non-fatally; data stays ingested locally under `data_project/` and `examples/
-CaseStudies/` until you export those too and re-run `./run.sh sync` by hand.
+This is a development/testing credential — rotate it once end-to-end testing is done.
 
-## Running it
+## Safe by default — test output never leaves reset/, and nothing auto-syncs
+
+Every run writes to **`reset/tmp_test/<Project>/NN-<phasekey>.docx`** — never `data_project/` — unless you
+pass **`--commit`**. And in *either* mode, this script **never runs `./run.sh` or `./run.sh sync` itself** —
+assembling the dossier and pushing it to the live database are decisions you make after reading the output,
+not an automatic side effect of an API call finishing. When you're ready, run those two commands yourself
+from the repo root.
 
 ```bash
-# Smoke test first -- no API key needed, just exercises the file/loop logic:
+# Smoke test first -- no API key needed, just exercises the file/loop logic (writes to reset/tmp_test/):
 python3 reset/run_deepseek_reset.py --dry-run --projects-limit 1 --phases-limit 2
 
-# Smoke test against the real API -- one project, one phase, to confirm the endpoint actually works:
+# Real API call, one project, one phase -- confirms the endpoint works, output stays in reset/tmp_test/Aptos/:
 python3 reset/run_deepseek_reset.py --project Aptos --phases-limit 1
 
-# The real run -- every project in projects.txt, all 11 phases each, unattended:
-python3 reset/run_deepseek_reset.py
+# Read reset/tmp_test/Aptos/01-foundation.docx. Compare its structure against data_project/Arbitrum/
+# 01-foundation.docx. Only once you trust the output quality:
+python3 reset/run_deepseek_reset.py --project Aptos --commit
+
+# The real run -- every project in projects.txt, all 11 phases each, unattended, writing to data_project/:
+python3 reset/run_deepseek_reset.py --commit
 ```
 
-Run it in the background (`nohup ... &`, `tmux`, or similar) for the real run — it's designed to take hours
-(60s between phases, 300s between projects, times 11 phases times however many projects are queued) and
-survive being interrupted: it's resumable. If it's stopped and restarted, it checks
-`data_project/<Project>/NN-<phasekey>.docx` for each phase before calling the API again — anything already
+Run the real (`--commit`) run in the background (`nohup ... &`, `tmux`, or similar) — it's designed to take
+hours (60s between phases, 300s between projects, times 11 phases times however many projects are queued)
+and survive being interrupted: it's resumable. If it's stopped and restarted, it checks each phase's output
+file in the active output root (`data_project/<Project>/NN-<phasekey>.docx` with `--commit`,
+`reset/tmp_test/<Project>/NN-<phasekey>.docx` without it) before calling the API again — anything already
 there (and long enough to be real content, not a stub) is loaded back into the running conversation as
 context instead of being regenerated, so restarting never wastes API calls redoing finished work.
+
+After a `--commit` run (or once you've committed the projects you've reviewed), from the repo root:
+
+```bash
+./run.sh          # assembles data_project/<Project>/ into examples/CaseStudies/<Project>.md, extracts fields
+./run.sh sync     # pushes to Supabase -- needs its own SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY env vars
+                   # (see tools/sync_supabase.py's docstring), separate from the ANTHROPIC_* ones above
+```
 
 ## Design notes (why it works this way)
 
@@ -69,7 +84,8 @@ context instead of being regenerated, so restarting never wastes API calls redoi
   failed one's output as context, so fabricating a skip would poison everything after it. The script logs
   the failure and moves to the next project; re-running the script later resumes the stalled project exactly
   where it left off (see resumability above).
-- **`./run.sh` + `./run.sh sync` run after every project**, not after every phase — `tools/ingest.py`'s
-  `data_project` mode only assembles a project once all 11 of its phase files are present (it hard-fails a
-  single incomplete project without aborting the rest of the run), so triggering it mid-project would just be
-  wasted work.
+- **Never auto-runs `./run.sh` / `./run.sh sync`, in test or commit mode** — a real, cautionary example of
+  why: an early version of this script did trigger them automatically, and a single-phase test run ended up
+  scanning every other unrelated `data_project/` folder and attempting a database sync before anyone had
+  looked at the new output's quality. Ingesting and syncing are always a separate, deliberate, manual step
+  now.

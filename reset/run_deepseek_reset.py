@@ -10,15 +10,20 @@ full conversation as running context so each phase sees everything before it —
 actual design: "run phases in one sitting, in the same chat, back to back" (DeepSeek's 1M-token
 window is why Track A/B's Context Pack discipline doesn't apply here).
 
-Each phase's raw response is saved to data_project/<Project>/NN-<phasekey>.docx as plain UTF-8
-text — this is not a real Word document, and doesn't need to be: tools/extract.py's
-extract_docx() already falls back to reading a file straight through when it isn't a real OOXML
-container (this is exactly how the real Arbitrum data_project files are saved). After a project's
-11 phases are all done, ./run.sh (ingest+build+extract) and ./run.sh sync (best-effort — only
-works if SUPABASE_URL/SUPABASE_SERVICE_ROLE_KEY are also set) run automatically.
+Safe by default: every run writes to reset/tmp_test/<Project>/NN-<phasekey>.docx, NOT
+data_project/, unless --commit is passed. This script also NEVER runs ./run.sh or ./run.sh sync
+itself, in either mode -- assembling the dossier and pushing it to the live database are decisions
+a human makes after reading the output, not an automatic side effect of an API call finishing.
+Review a test run's output quality first, then re-run with --commit once you trust it, then run
+./run.sh and ./run.sh sync yourself from the repo root when you're ready.
 
-Resumable by design: before calling the API for a phase, it checks whether
-data_project/<Project>/NN-<phasekey>.docx already exists and looks like real content (not
+Each phase's raw response is saved as plain UTF-8 text in a file named NN-<phasekey>.docx — this
+is not a real Word document, and doesn't need to be: tools/extract.py's extract_docx() already
+falls back to reading a file straight through when it isn't a real OOXML container (this is
+exactly how the real Arbitrum data_project files are saved).
+
+Resumable by design: before calling the API for a phase, it checks whether that phase's output
+file already exists (in whichever output root is active) and looks like real content (not
 re-running work a crashed/interrupted previous run already finished) — the existing text is
 loaded back into the running conversation so later phases still get correct context.
 
@@ -35,21 +40,16 @@ Optional tuning (sensible defaults if unset):
     RESET_PROJECT_SLEEP_SECS    default 300  (gap between projects)
     RESET_MAX_RETRIES           default 3    (retries of the SAME phase before giving up on it)
 
-Sync step needs its own separate credentials (SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY — see
-tools/sync_supabase.py's docstring); if unset, ./run.sh sync fails loudly but non-fatally and
-data stays ingested locally until synced manually.
-
 Usage:
-    python3 reset/run_deepseek_reset.py                    # full run, every project in projects.txt
-    python3 reset/run_deepseek_reset.py --project Aptos     # just one project, ad hoc
-    python3 reset/run_deepseek_reset.py --projects-limit 1 --phases-limit 1   # smoke test
-    python3 reset/run_deepseek_reset.py --dry-run           # no real API calls, exercises file/loop logic only
+    python3 reset/run_deepseek_reset.py --project Aptos --phases-limit 1   # test one phase, one project
+    python3 reset/run_deepseek_reset.py --project Aptos                   # test all 11 phases, one project
+    python3 reset/run_deepseek_reset.py --dry-run                         # no real API calls at all
+    python3 reset/run_deepseek_reset.py --commit                          # the real run, every project in projects.txt
 """
 import argparse
 import json
 import os
 import re
-import subprocess
 import sys
 import time
 import urllib.error
@@ -159,18 +159,6 @@ def existing_phase_ok(path: Path) -> bool:
     return path.exists() and len(path.read_text(encoding="utf-8").strip()) >= MIN_PHASE_CHARS
 
 
-def run_pipeline_sync() -> None:
-    r = subprocess.run(["./run.sh"], cwd=ROOT)
-    if r.returncode != 0:
-        log("  ⚠ ./run.sh reported a non-zero exit (see log above) -- continuing anyway, "
-            "check which data_project/ folder failed validation")
-    r2 = subprocess.run(["./run.sh", "sync"], cwd=ROOT)
-    if r2.returncode != 0:
-        log("  ⚠ ./run.sh sync failed (or SUPABASE_URL/SUPABASE_SERVICE_ROLE_KEY not set) -- "
-            "data is ingested locally but not pushed to the database yet. Set those env vars and "
-            "run './run.sh sync' manually to catch up.")
-
-
 def run_project(name: str, base_url: str, token: str, model: str, dry_run: bool, phases_limit: int,
                 output_root: Path) -> bool:
     """Returns True if every requested phase completed (real or resumed-from-disk), False if a
@@ -228,12 +216,17 @@ def run_project(name: str, base_url: str, token: str, model: str, dry_run: bool,
             log(f"  sleeping {PHASE_SLEEP_SECONDS}s before next phase...")
             time.sleep(PHASE_SLEEP_SECONDS)
 
+    # Deliberately NO automatic ./run.sh / ./run.sh sync call, in either mode -- pushing output
+    # (test or real) into the assembled dossier or the live database is a decision a human makes
+    # after reading it, never an automatic side effect of an API call finishing. See reset/README.md.
     if output_root == DATA_PROJECT_ROOT:
-        log(f"=== {name}: all requested phases done, running ./run.sh + sync ===")
-        run_pipeline_sync()
+        log(f"=== {name}: all requested phases done, written to data_project/{name}/. "
+            f"Review the content, then run './run.sh' (assemble) and './run.sh sync' (push to "
+            f"the database) yourself from the repo root when you're satisfied with it. ===")
     else:
-        log(f"=== {name}: all requested phases done (output-root={output_root}, "
-            f"not data_project/ -- skipping ./run.sh + sync, this is a test run) ===")
+        log(f"=== {name}: all requested phases done -- TEST run, written to "
+            f"{output_root}/{name}/ (not the real dataset). Review it, then re-run with "
+            f"--commit once you trust the quality. ===")
     return True
 
 
@@ -246,13 +239,23 @@ def main() -> None:
                      help="process only the first N phases per project (0 = all 11) -- for smoke testing")
     ap.add_argument("--dry-run", action="store_true",
                      help="no real API calls -- exercises file/loop logic only")
-    ap.add_argument("--output-root", default=str(DATA_PROJECT_ROOT),
-                     help="where to write <project>/NN-<phasekey>.docx files (default: data_project/). "
-                          "Point this at a scratch folder (e.g. reset/tmp_test) to verify real API "
-                          "response structure/quality before trusting it into data_project/ -- test runs "
-                          "never touch data_project/ and never trigger ./run.sh + sync.")
+    ap.add_argument("--commit", action="store_true",
+                     help="write real output into data_project/ (the actual dataset), and stay "
+                          "there across the whole run. Off by default -- every run without this "
+                          "flag stays confined to reset/tmp_test/, never touches data_project/, "
+                          "and never runs ./run.sh or ./run.sh sync. Only pass this once you've "
+                          "reviewed a test run's output quality and are ready to commit it.")
+    ap.add_argument("--output-root",
+                     help="override where <project>/NN-<phasekey>.docx files get written, instead "
+                          "of the --commit-based default (reset/tmp_test/, or data_project/ if "
+                          "--commit is passed). Rarely needed directly.")
     args = ap.parse_args()
-    output_root = Path(args.output_root).resolve()
+    if args.output_root:
+        output_root = Path(args.output_root).resolve()
+    elif args.commit:
+        output_root = DATA_PROJECT_ROOT
+    else:
+        output_root = RESET_DIR / "tmp_test"
 
     base_url = os.environ.get("ANTHROPIC_BASE_URL")
     token = os.environ.get("ANTHROPIC_AUTH_TOKEN")
@@ -269,8 +272,9 @@ def main() -> None:
         if args.projects_limit:
             projects = projects[: args.projects_limit]
 
-    log(f"Starting reset pipeline for {len(projects)} project(s): {', '.join(projects)}"
-        + (f" -- output-root={output_root}" if output_root != DATA_PROJECT_ROOT else ""))
+    mode = "COMMIT (writing to data_project/, the real dataset)" if output_root == DATA_PROJECT_ROOT \
+        else f"TEST (writing to {output_root}, not the real dataset -- pass --commit for a real run)"
+    log(f"Starting reset pipeline for {len(projects)} project(s): {', '.join(projects)} -- mode: {mode}")
     for i, name in enumerate(projects):
         run_project(name, base_url, token, model, args.dry_run, args.phases_limit, output_root)
         if i < len(projects) - 1:
