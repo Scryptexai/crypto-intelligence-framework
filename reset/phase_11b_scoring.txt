@@ -1,0 +1,613 @@
+# PHASE 11B — VALIDATION & QUALITY ASSURANCE (Batch 2: Token–Knowledge + Finalisasi)
+
+---
+
+PERAN
+
+Anda adalah AI Deep Research yang menyelesaikan audit kualitas dan validasi akhir CIF (Crypto Intelligence Framework). Ini BAGIAN KEDUA (terakhir) dari audit dua-tahap. Sebelum ini Anda sudah menerima dan mengaudit Phase 1-5, menghasilkan: Dataset Integrity (1-5), Inventory lengkap Entity/Event/Technology/Financial (1-5), Cross-phase Consistency (1-5), dan Candidate Conflicts (1-5) — semua itu ada di riwayat percakapan di atas. Sekarang lengkapi dengan Phase 6-10 di bawah, GABUNGKAN dengan temuan Batch 1, dan hasilkan CIF Validation Report v3.0 yang utuh untuk seluruh Phase 1-10.
+
+Output fase ini adalah CIF Validation Report v3.0 (lengkap, menggabungkan Batch 1 + Batch 2).
+
+---
+
+CONTEXT DEPENDENCIES (Batch 2 — baca bersama temuan Batch 1 di riwayat percakapan)
+
+6. 06-token.docx
+- Supply, Distribution, Vesting
+- Utility, Governance
+- Inflation/Deflation, Holder Distribution
+
+7. 07-ecosystem.docx
+- Ecosystem Position, External Dependencies
+- Major Integrations, Infrastructure Providers
+- Applications, Developer Ecosystem
+
+8. 08-market.docx
+- Market Category, Market Position
+- Adoption Metrics, Market Share
+- Competitor Landscape, Narrative Position
+
+9. 09-behavioral.docx
+- Seluruh Strategic Objectives, Decision Timeline
+- Decision Patterns, Risk Response Patterns
+- Strategic Trade-offs, Behavioral Summary
+
+10. 10-knowledge.docx
+- Seluruh Knowledge Objects (K-001 s.d K-XXX)
+- Core Insights, Strategic Principles
+- Success/Failure Factors, Reusable Playbook, Anti-patterns
+
+Plus: Dataset Integrity (1-5), Inventory (1-5), Cross-phase Consistency (1-5), dan Candidate Conflicts (1-5) dari Batch 1, yang sudah ada di riwayat percakapan Anda — JANGAN minta ulang, JANGAN abaikan, itu bagian wajib dari audit ini.
+
+---
+
+PERTANYAAN UTAMA
+
+"Apakah seluruh hasil CIF dapat dipertanggungjawabkan, seberapa tinggi kualitasnya, dan bagaimana knowledge ini akan berevolusi ketika data berubah?"
+
+---
+
+RUANG LINGKUP
+
+Lengkapi audit Phase 6-10, lalu GABUNGKAN dengan hasil Batch 1 untuk laporan akhir yang mencakup SEMUA Phase 1-10 secara utuh. Jangan melakukan riset baru. Jangan menambah fakta baru. Semua analisis harus berasal dari evidence yang sudah tersedia (Phase 1-10 + temuan Batch 1).
+
+---
+
+OUTPUT STRUCTURE
+
+Gunakan struktur berikut, dalam urutan ini. Jangan menggunakan tabel dalam bentuk apa pun — seluruh output harus berupa heading, sub-heading, dan bullet.
+
+---
+
+DATASET INTEGRITY (PHASE 6-10)
+
+Untuk setiap phase (06 s.d 10), laporkan:
+
+· Status: Complete / Incomplete
+· Missing Information: <daftar atau "Tidak ada">
+· Notes: <catatan tambahan>
+
+---
+
+COVERAGE REPORT — Multi-dimensional (SEMUA PHASE 1-10)
+
+Pakai Inventory Phase 1-5 dari Batch 1 (total per kategori) + item baru dari Phase 6-8, lalu hitung berapa yang benar-benar dirujuk/dipakai di Phase 9-10 (behavioral & knowledge).
+
+· Phase 2 — Entity
+  · Total: <dari Inventory Batch 1>
+  · Referenced in Phase 9-10: <hitung dari isi Phase 9-10>
+  · Unused: <angka>
+  · Coverage: <persentase>%
+  · Interpretation: <analisis singkat>
+· Phase 3 — Event
+  · Total: <dari Inventory Batch 1>
+  · Referenced in Phase 9-10: <angka>
+  · Unused: <angka>
+  · Coverage: <persentase>%
+  · Interpretation: <analisis singkat>
+· Phase 4 — Technology
+  · Total: <dari Inventory Batch 1>
+  · Referenced: <angka>
+  · Unused: <angka>
+  · Coverage: <persentase>%
+· Phase 5 — Financial
+  · Total: <dari Inventory Batch 1>
+  · Referenced: <angka>
+  · Unused: <angka>
+  · Coverage: <persentase>%
+· Phase 6 — Token
+  · Total: <angka item>
+  · Referenced: <angka>
+  · Unused: <angka>
+  · Coverage: <persentase>%
+· Phase 7 — Ecosystem
+  · Total: <angka item>
+  · Referenced: <angka>
+  · Unused: <angka>
+  · Coverage: <persentase>%
+· Phase 8 — Market
+  · Total: <angka item>
+  · Referenced: <angka>
+  · Unused: <angka>
+  · Coverage: <persentase>%
+· Overall Coverage
+  · Total: <sum semua>
+  · Referenced: <sum referenced>
+  · Unused: <sum unused>
+  · Coverage: <persentase>%
+  · Interpretation: <apa arti angka ini>
+
+---
+
+CROSS-PHASE CONSISTENCY (LANJUTAN — semua Phase 1-10)
+
+Lanjutkan pengecekan konsistensi Batch 1 (Entity/Timeline/Technology/Funding) dengan Phase 6-10, plus:
+
+Token Consistency
+
+· Status: Konsisten / Tidak Konsisten
+· Detail: <token info di Phase 6 sesuai dengan Phase 1 dan 3>
+
+Governance Consistency
+
+· Status: Konsisten / Tidak Konsisten
+· Detail: <governance structure konsisten di Phase 6, 7, 9>
+
+Dependency Consistency
+
+· Status: Konsisten / Tidak Konsisten
+· Detail: <external dependencies konsisten di Phase 4, 7>
+
+Overall Cross-phase Consistency: <persentase>% (gabungan seluruh checks Batch 1 + Batch 2 di atas)
+
+---
+
+DATA LINEAGE
+
+Untuk setiap Knowledge Object (K-001 s.d K-XXX) dari Phase 10, buat lineage traceability.
+
+Format:
+
+Knowledge K-<XX> — <Nama Knowledge>
+
+Lineage:
+
+```
+Level 0 (Raw Data — Events / Metrics / Integrations)
+  ├── Phase <X> — <Item ID> (<Deskripsi singkat>)
+  │   └── Source: <URL>
+  ├── Phase <X> — <Item ID> (<Deskripsi singkat>)
+  │   └── Source: <URL>
+  └── Phase <X> — <Item ID> (<Deskripsi singkat>)
+      └── Source: <URL>
+
+Level 1 (Processed — Pattern Identification)
+  └── Phase 9 — <Pattern Name>
+      └── Evidence: <evidence summary>
+
+Level 2 (Knowledge)
+  └── Knowledge K-<XX> — <Nama Knowledge>
+
+Validation:
+  ├── Passed: Cross-phase consistency check
+  ├── Passed: Evidence audit (<Strong / Moderate / Weak>)
+  └── Confidence: <score>/100
+```
+
+---
+
+KNOWLEDGE DEPENDENCY GRAPH
+
+Untuk setiap Knowledge Object, buat dependency graph.
+
+Format:
+
+Knowledge K-<XX> — <Nama Knowledge>
+
+Dependency Graph:
+
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-<XX>                                                  │
+│ <Nama Knowledge>                                        │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── <Item ID> — <Deskripsi>                             │
+│ │   └── Source: Phase <X>                               │
+│ ├── <Item ID> — <Deskripsi>                             │
+│ │   └── Source: Phase <X>                               │
+│ └── <Item ID> — <Deskripsi>                             │
+│     └── Source: Phase <X>                               │
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── <Entity Name> (Entity)                              │
+│ ├── <Entity Name> (Entity)                              │
+│ └── <Phase> — <Dataset>                                 │
+│                                                         │
+│ DEPENDENTS (Knowledge yang bergantung pada K-<XX>)      │
+│ ├── K-<YY> — <Nama>                                     │
+│ └── K-<ZZ> — <Nama>                                     │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ If <Item ID> changes → K-<XX> may change               │
+│ If <Item ID> changes → K-<XX> may change               │
+└──────────────────────────────────────────────────────────┘
+```
+
+---
+
+CONFLICT REGISTER WITH SEVERITY & IMPACT (FINAL — gabungan Batch 1 + Batch 2)
+
+Gabungkan Candidate Conflicts dari Batch 1 dengan konflik baru yang ditemukan di Phase 6-10. Beri Conflict ID C-001 dst secara berurutan untuk SEMUA konflik gabungan (jangan buat ulang dari nol, pakai yang sudah ditemukan Batch 1 + tambahan baru).
+
+Untuk setiap conflict, laporkan:
+
+· Conflict ID: C-<XXX>
+· Category: <kategori>
+· Description: <deskripsi konflik>
+· Severity: Critical / High / Medium / Low
+· Affected Knowledge: <daftar K-XX yang terpengaruh>
+· Impact: <angka> (Severity × (Affected Knowledge Count + 1))
+· Affected Phase: Phase <X>
+· Evidence: <evidence>
+· Sources: <URL1>, <URL2>
+· Resolution: <penjelasan>
+· Status: Resolved / Unresolved
+
+Conflict Summary:
+
+· Total Conflicts: <angka>
+· Resolved: <angka>
+· Unresolved: <angka>
+· Critical: <angka>
+· High: <angka>
+· Medium: <angka>
+· Low: <angka>
+
+Conflict Score:
+
+```
+Conflict Score =
+  (Resolved × 1.0) +
+  (Unresolved Low × 0.9) +
+  (Unresolved Medium × 0.6) +
+  (Unresolved High × 0.3) +
+  (Unresolved Critical × 0.0)
+────────────────────────────────────
+        Total Conflicts
+```
+
+Hasil: <angka>%
+
+---
+
+EVIDENCE AUDIT
+
+Periksa seluruh insight di Phase 9 dan Phase 10.
+
+Untuk setiap Knowledge, laporkan:
+
+· Knowledge: K-<XX> — <Nama>
+· Supporting Dataset: <Phase X, Phase Y>
+· Evidence Quality: Strong / Moderate / Weak
+· Evidence Weight: <0-10>
+· Assessment: <analisis singkat>
+
+Evidence Weight Criteria:
+
+· Governance Vote (On-chain): 10
+· Official Documentation: 10
+· GitHub Commit: 9
+· Explorer Data: 9
+· Official Blog: 8
+· Whitepaper: 8
+· Foundation Transparency Report: 8
+· Messari / Token Terminal: 7
+· Research Paper: 7
+· News (Major): 6
+· Forum Discussion: 6
+· News (Minor): 5
+· Third-party Blog: 4
+· Twitter / Social: 3
+
+---
+
+CONFIDENCE ASSESSMENT — v3.0
+
+Gunakan formula yang menggabungkan Evidence Weight dan Source Diversity.
+
+Source Diversity Score:
+
+· Jika total weight > 20: 10/10 (High)
+· Jika total weight 10-20: 5/10 (Medium)
+· Jika total weight < 10: 2/10 (Low)
+
+Untuk setiap Knowledge, laporkan:
+
+· Knowledge: K-<XX> — <Nama>
+· Evidence Count: <angka>
+· Evidence Weight: <rata-rata>
+· Independent Sources: <angka>
+· Official Sources: <angka>
+· Source Diversity: <0-10>
+· Cross-phase Validation: Pass / Fail
+· No Conflicts: 0 conflicts / <angka conflicts>
+· Coverage: <persentase>%
+· Confidence Score: <0-100>
+· Confidence Level: High / Medium / Low
+
+Confidence Score Formula (v3.0):
+
+```
+Confidence Score =
+  (Evidence Count × 10) +
+  (Evidence Weight × 5) +
+  (Independent Sources × 10) +
+  (Official Sources × 15) +
+  (Cross-phase Validation × 15) +
+  (No Conflicts × 10) +
+  (Coverage × 10)
+────────────────────────────────────
+        Max Score = 100
+```
+
+Confidence Summary:
+
+· High (80-100): <angka> Knowledge
+· Medium (60-79): <angka> Knowledge
+· Low (<60): <angka> Knowledge
+· Average Confidence Score: <angka>/100
+
+---
+
+KNOWLEDGE STABILITY & VERSIONING
+
+Untuk setiap Knowledge Object, tentukan stabilitas dan buat version history.
+
+Stability Categories:
+
+· Stable: Tidak akan berubah kecuali ada perubahan fundamental
+· Emerging: Masih berkembang, data baru mungkin mengubah insight
+· Volatile: Sangat tergantung pada data terbaru
+· Deprecated: Tidak lagi relevan
+
+Format:
+
+Knowledge K-<XX> — <Nama Knowledge>
+
+Stability: <Stable / Emerging / Volatile / Deprecated>
+Current Version: <vX.Y>
+Created: <YYYY-MM-DD>
+Last Updated: <YYYY-MM-DD>
+Status: Active / Deprecated
+
+Version History:
+
+· v1.0 — <YYYY-MM-DD>
+  · Created with evidence: <daftar evidence>
+  · Confidence: <score>/100
+· v1.1 — <YYYY-MM-DD> (Planned / Executed)
+  · Trigger: <apa yang memicu perubahan>
+  · Expected Change: <apa yang berubah>
+  · Confidence Change: <old> → <new>
+
+Deprecation Status: Active / Deprecated
+Replacement: <K-XX jika deprecated>
+
+---
+
+MISSING KNOWLEDGE CLASSIFICATION
+
+Identifikasi data yang tidak tersedia (dari Phase 1-10 keseluruhan).
+
+Format:
+
+Missing Item Phase Missing Reason Severity Impact
+<Item> Phase <X> <Reason> <High/Medium/Low> <Impact>
+
+Missing Reason Categories:
+
+· Not Public: Data ada tetapi tidak dipublikasikan oleh proyek
+· Never Existed: Data memang tidak pernah ada
+· Deprecated: Data pernah ada tetapi sudah tidak relevan
+· Not Applicable: Tidak relevan untuk proyek ini
+· Not Yet Released: Akan dirilis di masa depan
+· Unknown: Tidak diketahui penyebabnya
+
+---
+
+CIF SCORE CALCULATION — v3.0
+
+Hitung CIF Score berdasarkan 6 dimensi.
+
+Dimensi dan Bobot:
+
+· Research Quality: 25%
+· Consistency: 20%
+· Evidence: 15%
+· Coverage: 15%
+· Conflict: 15%
+· Knowledge: 10%
+
+Perhitungan:
+
+Research Quality:
+
+· (Complete Phases / 10) × 100 = <score>
+· Kontribusi: <score> × 0.25 = <value>
+
+Consistency:
+
+· (Passed Checks / Total Checks) × 100 = <score>
+· Kontribusi: <score> × 0.20 = <value>
+
+Evidence:
+
+· Average Evidence Weight (0-100) = <score>
+· Kontribusi: <score> × 0.15 = <value>
+
+Coverage:
+
+· Overall Coverage (%) = <score>
+· Kontribusi: <score> × 0.15 = <value>
+
+Conflict:
+
+· Conflict Score (%) = <score>
+· Kontribusi: <score> × 0.15 = <value>
+
+Knowledge:
+
+· Average Confidence Score = <score>
+· Kontribusi: <score> × 0.10 = <value>
+
+CIF Score = SUM of all contributions = <angka>/100
+
+Interpretation:
+
+· Excellent (>90): CIF siap pakai untuk analisis lintas proyek
+· Good (80-90): CIF berkualitas tinggi, beberapa area perlu perbaikan
+· Needs Improvement (60-80): CIF usable, perbaikan disarankan
+· Poor (<60): CIF perlu re-run
+
+PENTING: angka CIF Score di sini adalah HASIL FINAL. Nanti di bagian CIF MANIFEST v3.0 (ditulis PALING TERAKHIR,
+lihat instruksi di bawah), salin angka Research Quality / Consistency / Evidence / Coverage / Conflict /
+Knowledge / CIF SCORE dari perhitungan di atas — JANGAN biarkan Manifest berisi angka yang dihitung terpisah
+atau lebih dulu. Manifest bukan sumber angka, ia melaporkan ULANG angka dari sini.
+
+---
+
+FINAL VALIDATION SUMMARY
+
+Ringkas seluruh temuan (Batch 1 + Batch 2).
+
+Dataset Completeness:
+
+· Complete Phases: <angka> dari 10
+· Missing Information: <angka> item, semua dicatat
+· Status: <persentase>% lengkap
+
+Cross-phase Consistency:
+
+· Overall: <persentase>%
+· Status: Konsisten / Tidak Konsisten
+
+Evidence Quality:
+
+· Strong: <angka> Knowledge
+· Moderate: <angka> Knowledge
+· Weak: <angka> Knowledge
+
+Confidence Assessment:
+
+· High: <angka> Knowledge
+· Medium: <angka> Knowledge
+· Low: <angka> Knowledge
+· Average: <angka>/100
+
+Remaining Conflicts:
+
+· Resolved: <angka>
+· Unresolved: <angka>
+· Critical: <angka>
+· High: <angka>
+· Medium: <angka>
+· Low: <angka>
+
+Knowledge Stability Distribution:
+
+· Stable: <angka>
+· Emerging: <angka>
+· Volatile: <angka>
+· Deprecated: <angka>
+
+CIF Score: <angka>/100
+
+Overall Validation Result:
+<Paragraf singkat tentang kualitas CIF secara keseluruhan>
+
+Recommended Re-run:
+
+· Phase <X> — <Reason>
+· Phase <Y> — <Reason>
+
+QA Status: PASSED / FAILED / REVIEW NEEDED
+
+Confidence Level: HIGH / MEDIUM / LOW
+
+---
+
+Open Threads
+
+Tuliskan seluruh informasi yang:
+
+· memiliki lebih dari satu interpretasi
+· memiliki evidence lemah
+· memerlukan verifikasi tambahan
+· masih berubah
+· memiliki konflik yang belum terselesaikan
+
+Format:
+
+Open Thread ID: OT-<XX>
+
+· Description: <deskripsi>
+· Affected Phase: Phase <X>
+· Evidence: <evidence>
+· Alternative Interpretations: <daftar>
+· Status: Open / In Review
+
+---
+
+CIF MANIFEST v3.0
+
+WAJIB ditulis PALING TERAKHIR dalam urutan pengerjaan Anda (setelah CIF SCORE CALCULATION di atas selesai
+dihitung lengkap) — TAPI taruh blok ini di BAGIAN PALING ATAS dari teks jawaban Anda (sebelum DATASET
+INTEGRITY). Salin angka-angkanya persis dari hasil CIF SCORE CALCULATION di atas.
+
+Buat ringkasan eksekutif satu halaman. Format:
+
+```
+CIF MANIFEST v3.0
+
+Project: <Nama>
+Symbol: <Symbol>
+Research Date: <YYYY-MM-DD>
+CIF Version: 3.0
+QA Date: <YYYY-MM-DD>
+
+METRICS
+Total Knowledge Objects: <angka>
+Total Entities: <angka>
+Total Events: <angka>
+Evidence Links: <angka>
+Sources: <angka>
+Conflicts: <angka>
+  ├── Resolved: <angka>
+  ├── Critical: <angka>
+  ├── High: <angka>
+  ├── Medium: <angka>
+  └── Low: <angka>
+
+QUALITY SCORES
+Research Quality: <score>/100
+Consistency: <score>/100
+Evidence: <score>/100
+Coverage: <score>/100
+Conflict: <score>/100
+Knowledge: <score>/100
+CIF SCORE: <score>/100
+
+CONFIDENCE LEVEL: <HIGH / MEDIUM / LOW>
+QA STATUS: <PASSED / FAILED / REVIEW NEEDED>
+
+RECOMMENDED RE-RUN:
+  - Phase <X> — <Reason>
+  - Phase <Y> — <Reason>
+```
+
+---
+
+ATURAN UMUM
+
+1. Jangan melakukan riset baru.
+2. Jangan membuat interpretasi baru di luar evidence yang ada.
+3. Jangan mengubah fakta dari dataset sebelumnya.
+4. Semua konflik WAJIB menyebutkan Evidence, Supporting Dataset, Sources (URL lengkap).
+5. Jika konflik tidak dapat diselesaikan menggunakan evidence yang tersedia, tandai sebagai Unresolved.
+6. Jangan menggunakan tabel dalam bentuk apa pun; seluruh output harus berupa heading, sub-heading, dan bullet.
+7. Semua Sources harus berupa URL lengkap (https://...), bukan hyperlink tersembunyi atau anchor text.
+8. Gunakan nama Entity yang sama persis dengan Phase 2.
+9. Gunakan Event ID yang sama persis dengan Phase 3 (EV-XXX).
+10. Gunakan Knowledge ID yang sama persis dengan Phase 10 (K-XXX).
+11. Confidence Score menggunakan formula v3.0.
+12. Conflict Impact = Severity × (Affected Knowledge Count + 1).
+13. Stabilitas Knowledge menggunakan klasifikasi Stable / Emerging / Volatile / Deprecated.
+14. Missing Knowledge menggunakan klasifikasi Not Public / Never Existed / Deprecated / Not Applicable / Not Yet Released / Unknown.
+15. Jika terdapat konflik antara formula dan interpretasi manual, laporkan keduanya dan tandai sebagai Open Thread.
+16. CIF Score WAJIB dihitung SETELAH bagian "CIF SCORE CALCULATION — v3.0" selesai dihitung lengkap (Research
+    Quality, Consistency, Evidence, Coverage, Conflict, Knowledge, lalu jumlah akhirnya). Tulis bagian CIF
+    MANIFEST v3.0 di awal teks jawaban Anda TERAKHIR (setelah seluruh perhitungan detail selesai secara
+    berpikir), dan salin angka-angkanya persis dari hasil kalkulasi tersebut — JANGAN mengisi angka di
+    Manifest lebih dulu lalu menghitung ulang secara terpisah di bagian CIF Score Calculation. Kedua bagian
+    WAJIB melaporkan angka yang sama persis.

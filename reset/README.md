@@ -7,11 +7,24 @@ long queue of projects can run unattended instead of being pasted into a chat UI
 
 ## Files
 
-- `phase_01_foundation.txt` … `phase_11_conflict.txt` — the 11 Track C phase prompts, extracted verbatim from
-  `docs/Protocol/Phased-Research-Prompts.md` (only Phase 1's prompt has a light addition asking the model to
-  look up the project's basic info/description before filling the template — everything else is unchanged).
+- `phase_01_foundation.txt` … `phase_10_knowledge.txt` — 10 of the 11 Track C phase prompts, extracted verbatim
+  from `docs/Protocol/Phased-Research-Prompts.md` (only Phase 1's prompt has a light addition asking the model
+  to look up the project's basic info/description before filling the template — everything else is unchanged).
   These are the *only* prompt set kept in that doc now; Track A (generic, context-window-limited) and Track B
   (condensed) were removed as superseded — see that doc's "How to use these" note, 2026-08-03.
+- `phase_11a_audit.txt` / `phase_11b_scoring.txt` — Phase 11 (Validation & QA), split into two smaller API
+  calls instead of one (see `run_phase_11()` in `run_deepseek_reset.py` for the full rationale: by Phase 11
+  the running conversation carries enough prior-phase content to trip a request-size limit somewhere in front
+  of the DeepSeek proxy -- confirmed live, 2026-08-04, the proxy returned its own gateway frontend HTML instead
+  of reaching the model). 11a audits Phase 1-5 and produces a full Inventory; 11b audits Phase 6-10 plus that
+  Inventory (not Phase 1-5's raw text again -- that's the actual size reduction) and produces everything else
+  (Coverage, Data Lineage, Dependency Graph, the final Conflict Register, CIF Score, Manifest, etc). No fact
+  from either half is dropped; the two responses are concatenated (Manifest moved to the top) into a single
+  `11-conflict.docx`, same as every other phase. These also fixed a real, separate bug found while building
+  this: the old `phase_11_conflict.txt` (now removed) only captured about 15% of the real Phase 11 prompt --
+  the extraction that produced it stopped partway through, silently dropping Coverage Report, Cross-phase
+  Consistency, Data Lineage, Dependency Graph, Conflict Register, Evidence Audit, Confidence Assessment, and
+  CIF Score Calculation. The two new files carry the complete prompt, restored from the source doc.
 - `shared_format_rules.txt` — the doc's mandatory "ATURAN FORMAT" block (citations on every fact, Evidence
   Level tags, no fabrication, template-exactness, etc.) — the doc's own instructions say this gets appended
   to **every** phase prompt before sending, not just used once. `load_phase_prompt()` does this

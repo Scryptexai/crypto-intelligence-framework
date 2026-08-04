@@ -77,7 +77,17 @@ PHASES = [
     (9, "behavioral"), (10, "knowledge"), (11, "conflict"),
 ]
 
+# Phase 11 (Validation & QA) is handled as two smaller API calls instead of appending to the
+# full 10-phase running conversation -- see run_phase_11()'s docstring for the full rationale.
+BATCH1_PHASES = [(1, "foundation"), (2, "entity"), (3, "history"), (4, "technology"), (5, "financial")]
+BATCH2_PHASES = [(6, "token"), (7, "ecosystem"), (8, "market"), (9, "behavioral"), (10, "knowledge")]
+
 MAX_TOKENS = int(os.environ.get("RESET_MAX_TOKENS", "8192"))
+# Phase 11b alone carries almost everything the old single-call Phase 11 produced (the real
+# Arbitrum Phase 11 section is ~38.9k chars, ~9.7k tokens estimated -- already over the default
+# 8192). Its own constant so phases 1-10 aren't forced to allow bigger (and slower/costlier)
+# completions than they need.
+PHASE11_MAX_TOKENS = int(os.environ.get("RESET_PHASE11_MAX_TOKENS", "16000"))
 REQUEST_TIMEOUT_SECONDS = int(os.environ.get("RESET_REQUEST_TIMEOUT_SECS", "900"))
 PHASE_SLEEP_SECONDS = int(os.environ.get("RESET_PHASE_SLEEP_SECS", "60"))
 PROJECT_SLEEP_SECONDS = int(os.environ.get("RESET_PROJECT_SLEEP_SECS", "300"))
@@ -148,7 +158,7 @@ def extract_text(body: dict) -> str:
     raise ValueError(f"unrecognized response shape, no text found: {json.dumps(body)[:800]}")
 
 
-def call_deepseek(messages: list, base_url: str, token: str, model: str) -> str:
+def call_deepseek(messages: list, base_url: str, token: str, model: str, max_tokens: int = None) -> str:
     """POST to {base_url}/v1/messages. Raises on any failure (network, timeout, non-200,
     unparseable body) -- caller (call_with_retries) handles retry."""
     url = base_url.rstrip("/") + "/v1/messages"
@@ -158,7 +168,7 @@ def call_deepseek(messages: list, base_url: str, token: str, model: str) -> str:
     # this script hit on Aptos phase 11 (by far the largest cumulative request of the 11 phases --
     # phase 11 carries all 10 prior phases' prompts+responses as conversation history, ~165k+
     # chars of prior assistant output alone for a typical project).
-    payload = {"model": model, "max_tokens": MAX_TOKENS, "messages": messages, "stream": False}
+    payload = {"model": model, "max_tokens": max_tokens or MAX_TOKENS, "messages": messages, "stream": False}
     data = json.dumps(payload).encode("utf-8")
     req = urllib.request.Request(url, data=data, method="POST")
     req.add_header("Content-Type", "application/json")
@@ -189,11 +199,12 @@ def call_deepseek(messages: list, base_url: str, token: str, model: str) -> str:
     return extract_text(body)
 
 
-def call_with_retries(messages: list, base_url: str, token: str, model: str, phase_label: str) -> str:
+def call_with_retries(messages: list, base_url: str, token: str, model: str, phase_label: str,
+                       max_tokens: int = None) -> str:
     last_err = None
     for attempt in range(1, MAX_PHASE_RETRIES + 1):
         try:
-            return call_deepseek(messages, base_url, token, model)
+            return call_deepseek(messages, base_url, token, model, max_tokens=max_tokens)
         except Exception as e:  # noqa: BLE001 -- deliberately broad, any failure should trigger retry
             last_err = e
             log(f"  ✗ {phase_label} attempt {attempt}/{MAX_PHASE_RETRIES} failed: {e}")
@@ -221,6 +232,106 @@ def _prompt_placeholder(num: int, key: str) -> str:
     return f"[Phase {num:02d}-{key} instructions were sent here; see this phase's full output below.]"
 
 
+def _inject_phase_dataset(prompt: str, proj_dir: Path, phase_specs: list) -> str:
+    """Appends the real saved content of the given (num, key) phases after the prompt's own
+    instructional text, under a clearly labeled section. The model only ever sees what's
+    physically included in the message it's sent -- the prompt's own "CONTEXT DEPENDENCIES"
+    section is a description of what to expect, this is the actual data."""
+    parts = [prompt.rstrip(), "\n\n---\n\nISI DATASET (baca dan audit seluruh isi berikut):\n"]
+    for num, key in phase_specs:
+        text = (proj_dir / f"{num:02d}-{key}.docx").read_text(encoding="utf-8")
+        parts.append(f"\n=== {num:02d}-{key}.docx ===\n{text}")
+    return "".join(parts)
+
+
+_MANIFEST_RE = re.compile(r"(?is)(CIF MANIFEST v3\.0.*?```.*?```)")
+
+
+def _extract_manifest_block(text: str) -> tuple:
+    """Pulls the 'CIF MANIFEST v3.0' heading + its fenced code block out of Phase 11b's response
+    so it can be moved to the front of the assembled Phase 11 file (matching the real Arbitrum
+    dossier's structure: CIF VALIDATION REPORT v3.0 -> CIF MANIFEST v3.0 -> everything else) --
+    the prompt asks the model to compute it last but WRITE it first in its own response, so this
+    is normally a no-op reordering, not a content change. Falls back to (None, text) unchanged
+    if the expected fenced-block shape isn't found, rather than guessing at a malformed split."""
+    m = _MANIFEST_RE.search(text)
+    if not m:
+        return None, text
+    manifest = m.group(1).strip()
+    rest = (text[: m.start()] + text[m.end():]).strip()
+    return manifest, rest
+
+
+def run_phase_11(name: str, base_url: str, token: str, model: str, proj_dir: Path) -> tuple:
+    """Phase 11 (Validation & QA) as two smaller API calls instead of one appended to the full
+    10-phase running conversation.
+
+    Why: by the time Phase 11 would fire in the old single-call design, the running conversation
+    carries ~165k+ chars of real prior-phase output alone (even after _prompt_placeholder already
+    shrinks old prompts to a marker) -- large enough to trip a request-size limit somewhere in
+    front of the DeepSeek proxy. Confirmed live: the proxy returns HTTP 200 with its own gateway
+    frontend HTML instead of proxying to the model (a "New API" gateway's index page, ~2.6k
+    bytes), which is what produced the opaque "Expecting value: line 1 column 1" JSON error.
+
+    Each call below gets a freshly built, narrowly-scoped context read directly from the phase
+    files already saved to disk -- NOT the full growing multi-phase conversation:
+      - 11a: phases 1-5's full raw text + reset/phase_11a_audit.txt's instructions -> produces
+        Dataset Integrity (1-5), a complete Inventory of every entity/event/tech/financial fact,
+        Cross-phase Consistency (1-5), and Candidate Conflicts (1-5).
+      - 11b: phases 6-10's full raw text + 11a's own findings (NOT phases 1-5's raw text again --
+        that omission is the actual size reduction) + reset/phase_11b_scoring.txt's instructions
+        -> produces the rest: Coverage Report, remaining Cross-phase Consistency, Data Lineage,
+        Dependency Graph, the final merged Conflict Register, Evidence Audit, Confidence
+        Assessment, Knowledge Stability, Missing Knowledge, CIF Score Calculation, Final
+        Validation Summary, Open Threads, and the CIF Manifest.
+
+    No fact from any phase is dropped: 11a examines phases 1-5 in full, 11b examines phases 6-10
+    in full; 11b's link back to phases 1-5 is via 11a's own complete Inventory (built specifically
+    to carry every item forward), not by re-sending the raw text -- that's what keeps 11b's
+    payload smaller than the single call that was failing, rather than larger (simply continuing
+    the same growing conversation for a second Phase-11 turn would make it BIGGER, not smaller).
+
+    Returns (combined_text_or_None, error_or_None).
+    """
+    prompt_11a = (RESET_DIR / "phase_11a_audit.txt").read_text(encoding="utf-8").rstrip() \
+        + "\n\n" + load_shared_format_rules().rstrip() + "\n"
+    prompt_11a = _inject_phase_dataset(prompt_11a, proj_dir, BATCH1_PHASES)
+
+    try:
+        text_a = call_with_retries([{"role": "user", "content": prompt_11a}], base_url, token, model,
+                                    f"{name} phase 11a-audit", max_tokens=PHASE11_MAX_TOKENS)
+    except Exception as e:  # noqa: BLE001
+        return None, e
+
+    time.sleep(PHASE_SLEEP_SECONDS)
+
+    prompt_11b = (RESET_DIR / "phase_11b_scoring.txt").read_text(encoding="utf-8").rstrip() \
+        + "\n\n" + load_shared_format_rules().rstrip() + "\n"
+    prompt_11b = _inject_phase_dataset(prompt_11b, proj_dir, BATCH2_PHASES)
+
+    messages_b = [
+        {"role": "user", "content": "[Phase 11a (Batch 1) instructions and the Phase 1-5 dataset "
+                                     "were sent here; see Batch 1's full findings below.]"},
+        {"role": "assistant", "content": text_a},
+        {"role": "user", "content": prompt_11b},
+    ]
+    try:
+        text_b = call_with_retries(messages_b, base_url, token, model,
+                                    f"{name} phase 11b-scoring", max_tokens=PHASE11_MAX_TOKENS)
+    except Exception as e:  # noqa: BLE001
+        return None, e
+
+    manifest, text_b_rest = _extract_manifest_block(text_b)
+    if manifest:
+        combined = f"CIF VALIDATION REPORT v3.0\n\n---\n\n{manifest}\n\n---\n\n" \
+                   f"{text_a.strip()}\n\n---\n\n{text_b_rest}"
+    else:
+        combined = f"{text_a.strip()}\n\n---\n\n{text_b.strip()}"
+    if not re.match(r"(?im)^PROJECT:\s*" + re.escape(name), combined.strip()):
+        combined = f"PROJECT: {name}\n\n{combined}"
+    return combined, None
+
+
 def run_project(name: str, base_url: str, token: str, model: str, dry_run: bool, phases_limit: int,
                 output_root: Path) -> bool:
     """Returns True if every requested phase completed (real or resumed-from-disk), False if a
@@ -239,11 +350,14 @@ def run_project(name: str, base_url: str, token: str, model: str, dry_run: bool,
 
     for idx, (num, key) in enumerate(phases):
         out_path = proj_dir / f"{num:02d}-{key}.docx"
-        prompt_template = load_phase_prompt(num, key)
-        prompt = prompt_template.replace("<NAMA PROJECT>", name) if num == 1 else prompt_template
 
         if existing_phase_ok(out_path):
             plog(f"phase {num:02d}-{key}: already done, resuming (loading into context, no API call)")
+            if num == 11:
+                # Phase 11 is self-contained (built from files 01-10 already on disk, not the
+                # running `messages` conversation) and nothing later depends on it -- there's no
+                # phase 12 that would need it appended to `messages`, unlike phases 1-10.
+                continue
             existing_text = out_path.read_text(encoding="utf-8")
             # Already-completed phase: keep the full real output, shrink the prompt that produced
             # it (see _prompt_placeholder's docstring) -- applies whether we're resuming a phase
@@ -251,6 +365,28 @@ def run_project(name: str, base_url: str, token: str, model: str, dry_run: bool,
             messages.append({"role": "user", "content": _prompt_placeholder(num, key)})
             messages.append({"role": "assistant", "content": existing_text})
             continue
+
+        if num == 11:
+            plog("phase 11-conflict: sending as 2 smaller batched calls (11a audit + 11b scoring) "
+                 "-- see run_phase_11()'s docstring for why...")
+            if dry_run:
+                fake = f"PROJECT: {name}\n\n[DRY RUN -- Phase 11 placeholder, 2-call split]\n"
+                out_path.write_text(fake, encoding="utf-8")
+                plog(f"phase 11-conflict: [dry-run] wrote placeholder -> {out_path}")
+                continue
+            text, err = run_phase_11(name, base_url, token, model, proj_dir)
+            if err is not None:
+                plog(f"✗✗ {name} phase 11-conflict permanently failed, giving up on this project "
+                     f"for now: {err}")
+                log_failure(name, num, key, err)
+                plog("(re-run this script later and it will resume from here)")
+                return False
+            out_path.write_text(text, encoding="utf-8")
+            plog(f"phase 11-conflict: done ({len(text)} chars, 2-call split) -> {out_path}")
+            continue
+
+        prompt_template = load_phase_prompt(num, key)
+        prompt = prompt_template.replace("<NAMA PROJECT>", name) if num == 1 else prompt_template
 
         plog(f"phase {num:02d}-{key}: sending...")
         messages.append({"role": "user", "content": prompt})
