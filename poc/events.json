@@ -1,0 +1,816 @@
+{
+  "Arbitrum": [
+    {
+      "id": "EV-001",
+      "projectSlug": "arbitrum",
+      "name": "Awal Riset Arbitrum sebagai Proyek Kelas di Princeton",
+      "date": "2014",
+      "type": "Research",
+      "participants": [
+        "Princeton University"
+      ],
+      "description": "Arbitrum awalnya dikembangkan sebagai proyek kelas di Princeton University pada tahun 2014. Riset kemudian dilanjutkan kembali pada tahun 2017.",
+      "result": "Dasar akademis untuk pengembangan Arbitrum.",
+      "source": "CIF Research Dossier",
+      "url": "https://archive.devcon.org/resources/6/on-the-path-to-a-rollup-centric-future.pdf",
+      "affectedKnowledge": [],
+      "_location": "Princeton University, AS",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-002",
+      "projectSlug": "arbitrum",
+      "name": "Publikasi Paper Arbitrum di USENIX Security",
+      "date": "2018-07",
+      "type": "Research",
+      "participants": [
+        "Harry Kalodner",
+        "Steven Goldfeder",
+        "Ed Felten",
+        "Princeton University",
+        "USENIX"
+      ],
+      "description": "Paper berjudul \"Arbitrum: Scalable, private smart contracts\" dipresentasikan di USENIX Security Symposium pada Juli 2018. Penulis paper adalah Harry Kalodner, Steven Goldfeder, dan Ed Felten.",
+      "result": "Publikasi akademis yang menjadi fondasi teknologi Arbitrum.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.usenix.org/",
+      "affectedKnowledge": [],
+      "_location": "USENIX Security Symposium",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-003",
+      "projectSlug": "arbitrum",
+      "name": "Pendirian Offchain Labs",
+      "date": "2018-08",
+      "type": "Founding",
+      "participants": [
+        "Ed Felten",
+        "Steven Goldfeder",
+        "Harry Kalodner",
+        "Offchain Labs"
+      ],
+      "description": "Offchain Labs didirikan oleh Ed Felten, Steven Goldfeder, dan Harry Kalodner pada Agustus 2018. Perusahaan ini dibentuk untuk mengembangkan solusi skalabilitas untuk Ethereum.",
+      "result": "Terbentuknya entitas pengembang utama Arbitrum.",
+      "source": "CIF Research Dossier",
+      "url": "https://messari.io/project/arbitrum/profile",
+      "affectedKnowledge": [],
+      "_location": "AS",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-004",
+      "projectSlug": "arbitrum",
+      "name": "Posting Perdana Arbitrum di EthResearch",
+      "date": "2018-10",
+      "type": "Community",
+      "participants": [
+        "Offchain Labs",
+        "EthResearch"
+      ],
+      "description": "Arbitrum pertama kali diposting di forum EthResearch pada Oktober 2018.",
+      "result": "Pengenalan Arbitrum ke komunitas riset Ethereum.",
+      "source": "CIF Research Dossier",
+      "url": "https://archive.devcon.org/resources/6/on-the-path-to-a-rollup-centric-future.pdf",
+      "affectedKnowledge": [],
+      "_location": "Online",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-005",
+      "projectSlug": "arbitrum",
+      "name": "Seed Round Pendanaan",
+      "date": "2019-04-02",
+      "type": "Funding",
+      "participants": [
+        "Offchain Labs",
+        "Pantera Capital",
+        "Compound VC",
+        "Raphael Ouzan",
+        "Jake Seid"
+      ],
+      "description": "Offchain Labs menyelesaikan seed round pendanaan sebesar $3.7 juta. Investor: Pantera Capital, Compound Ventures, Raphael Ouzan, Jake Seid.",
+      "result": "Pendanaan awal untuk pengembangan Arbitrum.",
+      "source": "CIF Research Dossier",
+      "url": "https://defillama.com/chain/Arbitrum",
+      "affectedKnowledge": [],
+      "_location": "AS",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-006",
+      "projectSlug": "arbitrum",
+      "name": "Pengenalan Arbitrum sebagai Solusi Skalabilitas",
+      "date": "2019-04-15",
+      "type": "Product",
+      "participants": [
+        "Offchain Labs"
+      ],
+      "description": "Offchain Labs memperkenalkan Arbitrum sebagai solusi skalabilitas inti pada 15 April 2019.",
+      "result": "Pengumuman resmi solusi Arbitrum ke publik.",
+      "source": "CIF Research Dossier",
+      "url": "https://messari.io/project/arbitrum/profile",
+      "affectedKnowledge": [],
+      "_location": "Online",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-007",
+      "projectSlug": "arbitrum",
+      "name": "Investasi Coinbase Ventures",
+      "date": "2019-09-04",
+      "type": "Funding",
+      "participants": [
+        "Offchain Labs",
+        "Coinbase Ventures"
+      ],
+      "description": "Coinbase Ventures melakukan investasi di Arbitrum.",
+      "result": "Dukungan dari venture capital exchange terkemuka.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.gate.com/zh/price/market-data/institutions/fundraising/arbitrum-2738",
+      "affectedKnowledge": [],
+      "_location": "AS",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-008",
+      "projectSlug": "arbitrum",
+      "name": "Testnet Perdana Arbitrum",
+      "date": "2020-02",
+      "type": "Launch",
+      "participants": [
+        "Offchain Labs"
+      ],
+      "description": "Arbitrum Go-Live pada testnet untuk pertama kalinya pada Februari 2020. Testnet awal hanya mendukung DAC (Data Availability Committees) dan Application Specific Chains, tanpa deployment kontrak.",
+      "result": "Akses awal pengembang ke infrastruktur Arbitrum.",
+      "source": "CIF Research Dossier",
+      "url": "https://messari.io/project/arbitrum/profile",
+      "affectedKnowledge": [],
+      "_location": "Online",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-009",
+      "projectSlug": "arbitrum",
+      "name": "Testnet dengan General Contract Deployment",
+      "date": "2020-10",
+      "type": "Launch",
+      "participants": [
+        "Offchain Labs"
+      ],
+      "description": "Testnet baru dirilis dengan kemampuan general contract deployment dan dibuka untuk semua peserta.",
+      "result": "Pengembang dapat menyebarkan kontrak secara umum di testnet.",
+      "source": "CIF Research Dossier",
+      "url": "https://messari.io/project/arbitrum/profile",
+      "affectedKnowledge": [],
+      "_location": "Online",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-010",
+      "projectSlug": "arbitrum",
+      "name": "Testnet Mainnet Release Candidate",
+      "date": "2021-03",
+      "type": "Launch",
+      "participants": [
+        "Offchain Labs"
+      ],
+      "description": "Testnet baru dirilis sebagai kandidat mainnet, dengan tambahan arbitrary messaging bridge.",
+      "result": "Persiapan menuju mainnet publik.",
+      "source": "CIF Research Dossier",
+      "url": "https://archive.devcon.org/resources/6/on-the-path-to-a-rollup-centric-future.pdf",
+      "affectedKnowledge": [],
+      "_location": "Online",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-011",
+      "projectSlug": "arbitrum",
+      "name": "Series A Pendanaan",
+      "date": "2021-04-01",
+      "type": "Funding",
+      "participants": [
+        "Offchain Labs",
+        "Polychain Capital",
+        "Pantera Capital"
+      ],
+      "description": "Offchain Labs mengumpulkan $20 juta dalam Series A. Investor: Polychain Capital dan lainnya.",
+      "result": "Ekspansi tim dan pengembangan.",
+      "source": "CIF Research Dossier",
+      "url": "https://defillama.com/chain/Arbitrum",
+      "affectedKnowledge": [],
+      "_location": "AS",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-012",
+      "projectSlug": "arbitrum",
+      "name": "Mainnet Beta untuk Developer",
+      "date": "2021-05",
+      "type": "Launch",
+      "participants": [
+        "Offchain Labs"
+      ],
+      "description": "Mainnet beta diluncurkan dan dibuka untuk developer. Tim saat itu hanya terdiri dari 12 orang. Sequencer ditambahkan.",
+      "result": "Developer dapat menyebarkan aplikasi di mainnet untuk pertama kalinya.",
+      "source": "CIF Research Dossier",
+      "url": "https://messari.io/project/arbitrum/profile",
+      "affectedKnowledge": [],
+      "_location": "Online",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-013",
+      "projectSlug": "arbitrum",
+      "name": "Launch Arbitrum One Mainnet Publik",
+      "date": "2021-08-31",
+      "type": "Launch",
+      "participants": [
+        "Offchain Labs",
+        "Steven Goldfeder"
+      ],
+      "description": "Arbitrum One diluncurkan ke publik pada 31 Agustus 2021, memungkinkan pengguna dan protokol berinteraksi dengan jaringan. Arbitrum One adalah optimistic rollup general-purpose.",
+      "result": "Akses publik ke Arbitrum One; Arbitrum menjadi Layer 2 terbesar.",
+      "source": "CIF Research Dossier",
+      "url": "https://arbitrum.io/rollup",
+      "affectedKnowledge": [],
+      "_location": "Online",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-014",
+      "projectSlug": "arbitrum",
+      "name": "Series B Pendanaan $120 Juta",
+      "date": "2021-08-31",
+      "type": "Funding",
+      "participants": [
+        "Offchain Labs",
+        "Lightspeed Venture Partners",
+        "Polychain Capital",
+        "Ribbit Capital",
+        "Redpoint Ventures",
+        "Pantera Capital",
+        "Alameda Research",
+        "Mark Cuban"
+      ],
+      "description": "Offchain Labs mengumumkan Series B sebesar $120 juta dengan valuasi $1.2 miliar (unicorn). Dipimpin oleh Lightspeed Venture Partners. Partisipasi: Polychain Capital, Ribbit Capital, Redpoint Ventures, Pantera Capital, Alameda Research, Mark Cuban.",
+      "result": "Pendanaan untuk ekspansi tim dan R&D.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.theblock.co/post/116148/ethereum-scaling-solution-arbitrum-launches-mainnet-raises-120-million-funding",
+      "affectedKnowledge": [],
+      "_location": "AS",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-015",
+      "projectSlug": "arbitrum",
+      "name": "Ravi Mhatre Bergabung dengan Board Offchain Labs",
+      "date": "2021-08-31",
+      "type": "Organization",
+      "participants": [
+        "Offchain Labs",
+        "Lightspeed Venture Partners",
+        "Ravi Mhatre"
+      ],
+      "description": "Ravi Mhatre, co-founder Lightspeed Venture Partners, bergabung dengan board Offchain Labs sebagai bagian dari kesepakatan Series B.",
+      "result": "Perubahan komposisi board Offchain Labs.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.theblock.co/post/116148/ethereum-scaling-solution-arbitrum-launches-mainnet-raises-120-million-funding",
+      "affectedKnowledge": [],
+      "_location": "AS",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-016",
+      "projectSlug": "arbitrum",
+      "name": "Deployment Uniswap, Curve, Aave, Sushi di Arbitrum",
+      "date": "2021-09",
+      "type": "Integration",
+      "participants": [
+        "Arbitrum One",
+        "Uniswap",
+        "Curve",
+        "Aave",
+        "Sushi"
+      ],
+      "description": "Dalam beberapa bulan setelah mainnet, protokol DeFi besar seperti Uniswap, Curve, Aave, dan Sushi melakukan deployment di Arbitrum One.",
+      "result": "Ekosistem DeFi Arbitrum berkembang pesat.",
+      "source": "CIF Research Dossier",
+      "url": "https://messari.io/project/arbitrum/profile",
+      "affectedKnowledge": [],
+      "_location": "Online",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-017",
+      "projectSlug": "arbitrum",
+      "name": "Nitro Testnet Diluncurkan",
+      "date": "2022-04",
+      "type": "Launch",
+      "participants": [
+        "Offchain Labs"
+      ],
+      "description": "Nitro testnet diluncurkan pada April 2022.",
+      "result": "Pengujian teknologi Nitro sebelum mainnet.",
+      "source": "CIF Research Dossier",
+      "url": "https://archive.devcon.org/resources/6/on-the-path-to-a-rollup-centric-future.pdf",
+      "affectedKnowledge": [],
+      "_location": "Online",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-018",
+      "projectSlug": "arbitrum",
+      "name": "Arbitrum Odyssey Dimulai",
+      "date": "2022-06-22",
+      "type": "Community",
+      "participants": [
+        "Offchain Labs",
+        "Arbitrum",
+        "berbagai protokol Arbitrum"
+      ],
+      "description": "Acara 8 minggu Arbitrum Odyssey dimulai 22 Juni 2022. Pekan pertama adalah Bridge Week (21-27 Juni). Acara memberikan reward NFT kepada pengguna yang berinteraksi dengan protokol Arbitrum.",
+      "result": "Peningkatan aktivitas pengguna dan volume transaksi.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.theblock.co/post/154762/arbitrum-fees-rose-higher-than-ethereum-mainnet-for-several-hours",
+      "affectedKnowledge": [],
+      "_location": "Online",
+      "_status": "Cancelled"
+    },
+    {
+      "id": "EV-019",
+      "projectSlug": "arbitrum",
+      "name": "Arbitrum Odyssey Dihentikan Sementara",
+      "date": "2022-06-29",
+      "type": "Community",
+      "participants": [
+        "Offchain Labs",
+        "Arbitrum"
+      ],
+      "description": "Arbitrum Odyssey dihentikan pada 29 Juni 2022 karena lonjakan gas fee akibat congestion. Odyssey akan tetap ditahan sampai Arbitrum melakukan deploy Nitro.",
+      "result": "Penghentian sementara acara komunitas.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.theblock.co/post/154762/arbitrum-fees-rose-higher-than-ethereum-mainnet-for-several-hours",
+      "affectedKnowledge": [],
+      "_location": "Online",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-020",
+      "projectSlug": "arbitrum",
+      "name": "Arbitrum Nova Diluncurkan untuk Developer",
+      "date": "2022-07",
+      "type": "Launch",
+      "participants": [
+        "Offchain Labs"
+      ],
+      "description": "Arbitrum Nova chain diluncurkan untuk developer pada Juli 2022. Data Availability Committees (DAC) kembali digunakan. Arbitrum Rinkeby di-upgrade ke Nitro.",
+      "result": "Akses developer ke Nova.",
+      "source": "CIF Research Dossier",
+      "url": "https://archive.devcon.org/resources/6/on-the-path-to-a-rollup-centric-future.pdf",
+      "affectedKnowledge": [],
+      "_location": "Online",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-021",
+      "projectSlug": "arbitrum",
+      "name": "Arbitrum Nova Diluncurkan ke Publik",
+      "date": "2022-08-09",
+      "type": "Launch",
+      "participants": [
+        "Offchain Labs"
+      ],
+      "description": "Arbitrum Nova diluncurkan ke publik pada 9 Agustus 2022. Nova adalah chain Layer 2 berbasis AnyTrust yang dioptimalkan untuk gaming dan social applications.",
+      "result": "Chain kedua di ekosistem Arbitrum tersedia untuk publik.",
+      "source": "CIF Research Dossier",
+      "url": "https://research.nansen.ai/articles/uncovering-the-potential-of-arbitrum-nova",
+      "affectedKnowledge": [],
+      "_location": "Online",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-022",
+      "projectSlug": "arbitrum",
+      "name": "Upgrade Arbitrum One ke Arbitrum Nitro",
+      "date": "2022-08-31",
+      "type": "Technology",
+      "participants": [
+        "Offchain Labs",
+        "Arbitrum One"
+      ],
+      "description": "Arbitrum One di-upgrade ke Nitro stack pada 31 Agustus 2022. Upgrade dijadwalkan 10:30 AM ET dengan 2-4 jam downtime.",
+      "result": "Throughput meningkat, gas fees turun, cross-chain communication ditingkatkan.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.arbitrum.io/",
+      "affectedKnowledge": [],
+      "_location": "Online",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-023",
+      "projectSlug": "arbitrum",
+      "name": "Pengumuman Token ARB",
+      "date": "2023-02",
+      "type": "Token",
+      "participants": [
+        "Offchain Labs",
+        "Arbitrum"
+      ],
+      "description": "Arbitrum mengumumkan token ARB pada Februari 2023.",
+      "result": "Persiapan untuk TGE dan airdrop.",
+      "source": "CIF Research Dossier",
+      "url": "https://messari.io/project/arbitrum/profile",
+      "affectedKnowledge": [],
+      "_location": "Online",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-024",
+      "projectSlug": "arbitrum",
+      "name": "Token Generation Event (TGE) ARB",
+      "date": "2023-03-16",
+      "type": "Token",
+      "participants": [
+        "Arbitrum",
+        "Offchain Labs"
+      ],
+      "description": "Token Generation Event ARB terjadi pada 16 Maret 2023.",
+      "result": "ARB token secara resmi tercipta.",
+      "source": "CIF Research Dossier",
+      "url": "https://docs.arbitrum.foundation",
+      "affectedKnowledge": [],
+      "_location": "Online",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-025",
+      "projectSlug": "arbitrum",
+      "name": "Airdrop ARB dan Listing di Exchange",
+      "date": "2023-03-23",
+      "type": "Token",
+      "participants": [
+        "Arbitrum",
+        "Binance",
+        "Coinbase",
+        "BitMEX",
+        "Bitfinex",
+        "Kraken",
+        "Uniswap"
+      ],
+      "description": "Airdrop ARB dilaksanakan pada 23 Maret 2023. 1.16 miliar ARB token di-airdrop ke pengguna yang eligible. Listing di Binance, Coinbase, BitMEX, Bitfinex, Kraken, Uniswap.",
+      "result": "ARB token mulai diperdagangkan; Arbitrum bertransisi ke DAO.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.binance.com/en-AE/feed/post/339098",
+      "affectedKnowledge": [],
+      "_location": "Online",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-026",
+      "projectSlug": "arbitrum",
+      "name": "Pembentukan Arbitrum Foundation",
+      "date": "2023-03",
+      "type": "Organization",
+      "participants": [
+        "Arbitrum Foundation",
+        "Campbell Law",
+        "Edward Noyons",
+        "Ani Banerjee"
+      ],
+      "description": "Arbitrum Foundation didirikan pada Maret 2023 sebagai Cayman Islands foundation company. Bertugas mengembangkan dan mengelola ekosistem Arbitrum.",
+      "result": "Entitas formal untuk mengelola ekosistem dan mendukung ArbitrumDAO.",
+      "source": "CIF Research Dossier",
+      "url": "https://pitchbook.com/",
+      "affectedKnowledge": [],
+      "_location": "Cayman Islands",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-027",
+      "projectSlug": "arbitrum",
+      "name": "AIP-1 Proposal Diajukan",
+      "date": "2023-04-01",
+      "type": "Governance",
+      "participants": [
+        "ArbitrumDAO",
+        "Arbitrum Foundation"
+      ],
+      "description": "Arbitrum Improvement Proposal 1 (AIP-1) diajukan pada 1 April 2023 untuk memperkenalkan ArbitrumDAO dan meminta 7.5亿 ARB untuk special grant program.",
+      "result": "Kontroversi karena proposal dianggap terlalu luas; dipecah menjadi beberapa bagian.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.chaincatcher.com/",
+      "affectedKnowledge": [],
+      "_location": "Online",
+      "_status": "Completed (ditolak/dibatalkan)"
+    },
+    {
+      "id": "EV-028",
+      "projectSlug": "arbitrum",
+      "name": "AIP-1 Ditolak oleh DAO",
+      "date": "2023-04-17",
+      "type": "Governance",
+      "participants": [
+        "ArbitrumDAO",
+        "Arbitrum Foundation"
+      ],
+      "description": "AIP-1 proposal ditolak oleh DAO dengan 118 juta suara menolak dan 21 juta mendukung.",
+      "result": "Proposal pertama DAO ditolak; pembelajaran tata kelola.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.financialexpress.com/",
+      "affectedKnowledge": [],
+      "_location": "Online",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-029",
+      "projectSlug": "arbitrum",
+      "name": "Arbitrum Stylus Live di Mainnet",
+      "date": "2024-09-03",
+      "type": "Technology",
+      "participants": [
+        "Arbitrum Foundation",
+        "Offchain Labs"
+      ],
+      "description": "Arbitrum Stylus diaktifkan di Arbitrum One dan Nova mainnets pada 3 September 2024. Stylus membawa dukungan WASM untuk smart contract dalam Rust, C, C++.",
+      "result": "Developer dapat menggunakan multi-language smart contracts di Arbitrum.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.arbitrum.io/arbitrum-stylus-mainnet/",
+      "affectedKnowledge": [],
+      "_location": "Online",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-030",
+      "projectSlug": "arbitrum",
+      "name": "NFT Minting Perdana Stylus",
+      "date": "2024-09-09",
+      "type": "Community",
+      "participants": [
+        "Arbitrum Foundation",
+        "Jimena Buena Vita"
+      ],
+      "description": "NFT pertama berbasis Stylus, dirancang oleh seniman Jimena Buena Vita, dibuka untuk mint pada 9 September 2024.",
+      "result": "Perayaan peluncuran Stylus.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.arbitrum.io/arbitrum-stylus-mainnet/",
+      "affectedKnowledge": [],
+      "_location": "Online",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-031",
+      "projectSlug": "arbitrum",
+      "name": "Arbitrum Audit Subsidy Program Diluncurkan",
+      "date": "2025-08-01",
+      "type": "Security",
+      "participants": [
+        "Arbitrum Foundation",
+        "ArbitrumDAO"
+      ],
+      "description": "Arbitrum Audit Subsidy Program diluncurkan dengan alokasi $10M dalam ARB selama 12 bulan untuk mensubsidi audit smart contract pihak ketiga.",
+      "result": "12 audit firm disetujui; proyek di ekosistem dapat mengajukan subsidi audit.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.arbitrum.foundation",
+      "affectedKnowledge": [],
+      "_location": "Online",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-032",
+      "projectSlug": "arbitrum",
+      "name": "AGV Council Elections Dimulai",
+      "date": "2025-11-27",
+      "type": "Governance",
+      "participants": [
+        "ArbitrumDAO",
+        "Arbitrum Gaming Ventures"
+      ],
+      "description": "Pemilihan AGV (Arbitrum Gaming Ventures) Council dimulai 27 November 2025.",
+      "result": "Terbentuknya council untuk gaming ventures.",
+      "source": "CIF Research Dossier",
+      "url": "https://defillama.com/",
+      "affectedKnowledge": [],
+      "_location": "Online",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-033",
+      "projectSlug": "arbitrum",
+      "name": "Exploit $17M di SwapNet dan Aperture Finance",
+      "date": "2026-01-25",
+      "type": "Security",
+      "participants": [
+        "SwapNet",
+        "Aperture Finance",
+        "Arbitrum",
+        "Ethereum",
+        "Base",
+        "BSC"
+      ],
+      "description": "Pada 25 Januari 2026, terdeteksi transaksi mencurigakan menargetkan kontrak SwapNet dan Aperture Finance di Ethereum, Arbitrum, Base, dan BSC dengan total kerugian melebihi $17 juta.",
+      "result": "Kerugian finansial bagi protokol yang terkena dampak.",
+      "source": "CIF Research Dossier",
+      "url": "https://blocksec.com/",
+      "affectedKnowledge": [],
+      "_location": "Cross-chain",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-034",
+      "projectSlug": "arbitrum",
+      "name": "Nominee Selection Phase Security Council Elections",
+      "date": "2026-03-22",
+      "type": "Governance",
+      "participants": [
+        "ArbitrumDAO",
+        "Arbitrum Security Council"
+      ],
+      "description": "Arbitrum memasuki fase Nominee Selection untuk Security Council elections Maret 2026, berlangsung 22-29 Maret.",
+      "result": "Kandidat untuk Security Council teridentifikasi.",
+      "source": "CIF Research Dossier",
+      "url": "https://l2beat.com/",
+      "affectedKnowledge": [],
+      "_location": "Online",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-035",
+      "projectSlug": "arbitrum",
+      "name": "Security Council Election Voting",
+      "date": "2026-04-12 - 2026-05-03",
+      "type": "Governance",
+      "participants": [
+        "ArbitrumDAO",
+        "Arbitrum Security Council"
+      ],
+      "description": "Voting untuk Security Council elections berlangsung 12 April - 3 Mei 2026.",
+      "result": "Enam anggota baru Security Council terpilih.",
+      "source": "CIF Research Dossier",
+      "url": "https://finance.yahoo.com/",
+      "affectedKnowledge": [],
+      "_location": "Online",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-036",
+      "projectSlug": "arbitrum",
+      "name": "KelpDAO Bridge Exploit",
+      "date": "2026-04-18",
+      "type": "Security",
+      "participants": [
+        "KelpDAO",
+        "Arbitrum",
+        "LayerZero",
+        "Aave"
+      ],
+      "description": "KelpDAO menderita exploit bridge sekitar $290 juta pada 18 April 2026, terkait dengan peretas Korea Utara.",
+      "result": "Security Council Arbitrum membekukan 30,766 ETH (~$71 juta) yang terkait dengan exploit.",
+      "source": "CIF Research Dossier",
+      "url": "https://newsletter.theblockcrypto.com/",
+      "affectedKnowledge": [],
+      "_location": "Arbitrum",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-037",
+      "projectSlug": "arbitrum",
+      "name": "Restraining Order dari Pengadilan AS terhadap Arbitrum DAO",
+      "date": "2026-04-30",
+      "type": "Legal",
+      "participants": [
+        "Arbitrum DAO",
+        "Pengadilan Federal New York",
+        "Korban terorisme Korea Utara"
+      ],
+      "description": "Pengacara korban terorisme Korea Utara menyampaikan restraining order terhadap Arbitrum DAO pada 30 April 2026, melarang transfer 30,766 ETH yang dibekukan. Perintah ini diotorisasi oleh pengadilan federal New York.",
+      "result": "Arbitrum DAO dilarang memindahkan $71 juta ETH yang dibekukan.",
+      "source": "CIF Research Dossier",
+      "url": "https://newsletter.theblockcrypto.com/",
+      "affectedKnowledge": [],
+      "_location": "New York, AS",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-038",
+      "projectSlug": "arbitrum",
+      "name": "Pengumuman Hasil Security Council Election",
+      "date": "2026-05-05",
+      "type": "Governance",
+      "participants": [
+        "ArbitrumDAO",
+        "Michael Lewellen",
+        "DZack23",
+        "yoav.eth",
+        "bartek.eth",
+        "Pablo Sabbatella",
+        "Patrick Collins",
+        "Turnkey",
+        "Certora",
+        "L2BEAT"
+      ],
+      "description": "Arbitrum DAO mengumumkan hasil Security Council election Maret 2026. Enam anggota baru: Michael Lewellen, DZack23, yoav.eth, bartek.eth, Pablo Sabbatella, Patrick Collins. Mereka resmi mengambil alih tugas signing pada 21 Mei 2026.",
+      "result": "Komposisi Security Council berubah; enam anggota baru bertugas.",
+      "source": "CIF Research Dossier",
+      "url": "https://thedefiant.io/news/security/arbitrum-security-council-elections",
+      "affectedKnowledge": [],
+      "_location": "Online",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-039",
+      "projectSlug": "arbitrum",
+      "name": "Stake DAO Exploit di Arbitrum",
+      "date": "2026-05-27",
+      "type": "Security",
+      "participants": [
+        "Stake DAO",
+        "Arbitrum"
+      ],
+      "description": "Stake DAO dieksploitasi di Arbitrum pada 27 Mei 2026. Attacker menggunakan deployer key untuk mencetak 5.4 triliun token vsdCRV palsu dan menukarnya dengan ether.",
+      "result": "Kerugian bagi Stake DAO; sorotan pada risiko single-key security di DeFi.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.bitget.com/",
+      "affectedKnowledge": [],
+      "_location": "Arbitrum",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-040",
+      "projectSlug": "arbitrum",
+      "name": "On-Chain Vote Budget Proposal 2027",
+      "date": "2026-06-08",
+      "type": "Governance",
+      "participants": [
+        "Arbitrum Foundation",
+        "ArbitrumDAO"
+      ],
+      "description": "Arbitrum Foundation merilis proposal budget $43.5 juta untuk 2027; on-chain vote dimulai 8 Juni 2026.",
+      "result": "Proses persetujuan budget tahunan.",
+      "source": "CIF Research Dossier",
+      "url": "https://coinmarketcap.com/",
+      "affectedKnowledge": [],
+      "_location": "Online",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-041",
+      "projectSlug": "arbitrum",
+      "name": "Robinhood Chain Diluncurkan di Arbitrum Orbit",
+      "date": "2026-07-01",
+      "type": "Integration",
+      "participants": [
+        "Robinhood",
+        "Arbitrum Orbit",
+        "Arbitrum DAO",
+        "Developer Guild"
+      ],
+      "description": "Robinhood meluncurkan Layer 2 blockchain-nya di atas Arbitrum Orbit pada 1 Juli 2026. Robinhood Chain membawa 23 juta pengguna on-chain. Berbagi 10% net fees dengan ekosistem Arbitrum (8% ke DAO treasury, 2% ke Developer Guild).",
+      "result": "Adopsi institusional besar-besaran ke ekosistem Arbitrum.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.thirdweb.com/",
+      "affectedKnowledge": [],
+      "_location": "Online",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-042",
+      "projectSlug": "arbitrum",
+      "name": "Lumi Finance Exploit di Arbitrum",
+      "date": "2026-07-13",
+      "type": "Security",
+      "participants": [
+        "Lumi Finance",
+        "Arbitrum",
+        "Sodium"
+      ],
+      "description": "Lumi Finance di Arbitrum dieksploitasi pada 13 Juli 2026 dengan kerugian ~$270,000. Dilacak pada kerentanan logika di fungsi validateUserOp dari Sodium smart account contract (ERC4337).",
+      "result": "Kerugian finansial bagi Lumi Finance.",
+      "source": "CIF Research Dossier",
+      "url": "https://bingx.com/",
+      "affectedKnowledge": [],
+      "_location": "Arbitrum",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-043",
+      "projectSlug": "arbitrum",
+      "name": "Rotasi Kunci Security Council dan Pengangkatan Patrick Collins",
+      "date": "2026-07",
+      "type": "Governance",
+      "participants": [
+        "Arbitrum Security Council",
+        "Patrick Collins",
+        "John Morrow",
+        "Cyfrin"
+      ],
+      "description": "Patrick Collins dari Cyfrin diangkat sebagai anggota Security Council pada Juli 2026, menggantikan John Morrow yang diangkat pada periode yang sama tetapi kemudian di-remove.【Phase 2 — Entity Intelligence (inferensi dari forum)】",
+      "result": "Perubahan komposisi Security Council.",
+      "source": "CIF Research Dossier",
+      "url": "https://forum.arbitrum.foundation",
+      "affectedKnowledge": [],
+      "_location": "Online",
+      "_status": "Completed"
+    }
+  ]
+}

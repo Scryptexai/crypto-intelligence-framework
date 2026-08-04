@@ -38,7 +38,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 POC = ROOT / "poc"
-TABLES = ("projects", "knowledge_items", "evidence_items", "entities", "qa_dimensions",
+TABLES = ("projects", "knowledge_items", "evidence_items", "entities", "events", "qa_dimensions",
           "qa_phases", "behavior_profiles", "cif_patterns", "cif_backtests",
           "cif_decision_events")
 
@@ -267,6 +267,30 @@ def evidence_rows():
     return rows
 
 
+def event_rows():
+    """poc/events.json (tools/extract_events.py's shape) -> `events` columns.
+
+    `_location`/`_status` are extractor-only reference fields (no column in the real
+    schema) and are dropped here rather than smuggled into `metadata`-less `events`."""
+    rows = []
+    for _project, events in load_optional("events.json").items():
+        for e in events:
+            rows.append({
+                "id": e["id"],
+                "project_slug": e["projectSlug"],
+                "name": e.get("name"),
+                "date": e.get("date"),
+                "type": e.get("type"),
+                "participants": e.get("participants", []),
+                "description": e.get("description"),
+                "result": e.get("result"),
+                "source": e.get("source"),
+                "url": e.get("url"),
+                "affected_knowledge": e.get("affectedKnowledge", []),
+            })
+    return rows
+
+
 def qa_dimension_rows():
     """poc/qa.json -> `qa_dimensions` columns (one row per dimension per project)."""
     rows = []
@@ -322,6 +346,7 @@ BUILDERS = {
     "knowledge_items": knowledge_rows,
     "evidence_items": evidence_rows,
     "entities": entity_rows,
+    "events": event_rows,
     "qa_dimensions": qa_dimension_rows,
     "qa_phases": qa_phase_rows,
     "behavior_profiles": behavior_rows,
@@ -338,7 +363,7 @@ ON_CONFLICT = {
 # Insertion order matters for FK integrity: projects before anything referencing
 # projects.slug, entities before relationships/evidence_items->knowledge_items chains,
 # knowledge_items before evidence_items.
-ORDER = ["projects", "entities", "knowledge_items", "evidence_items", "qa_dimensions",
+ORDER = ["projects", "entities", "knowledge_items", "evidence_items", "events", "qa_dimensions",
          "qa_phases", "behavior_profiles", "cif_patterns", "cif_backtests",
          "cif_decision_events"]
 
