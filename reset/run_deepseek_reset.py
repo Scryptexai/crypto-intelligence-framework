@@ -152,7 +152,13 @@ def call_deepseek(messages: list, base_url: str, token: str, model: str) -> str:
     """POST to {base_url}/v1/messages. Raises on any failure (network, timeout, non-200,
     unparseable body) -- caller (call_with_retries) handles retry."""
     url = base_url.rstrip("/") + "/v1/messages"
-    payload = {"model": model, "max_tokens": MAX_TOKENS, "messages": messages}
+    # Explicit stream: false -- without this, some proxies default a very large completion to
+    # SSE streaming server-side regardless of client intent; a streamed "data: {...}\n\n" body fed
+    # to json.loads() fails with the exact same opaque "Expecting value: line 1 column 1 (char 0)"
+    # this script hit on Aptos phase 11 (by far the largest cumulative request of the 11 phases --
+    # phase 11 carries all 10 prior phases' prompts+responses as conversation history, ~165k+
+    # chars of prior assistant output alone for a typical project).
+    payload = {"model": model, "max_tokens": MAX_TOKENS, "messages": messages, "stream": False}
     data = json.dumps(payload).encode("utf-8")
     req = urllib.request.Request(url, data=data, method="POST")
     req.add_header("Content-Type", "application/json")
@@ -160,11 +166,26 @@ def call_deepseek(messages: list, base_url: str, token: str, model: str) -> str:
     req.add_header("anthropic-version", "2023-06-01")
     try:
         with urllib.request.urlopen(req, timeout=REQUEST_TIMEOUT_SECONDS) as resp:
-            raw = resp.read().decode("utf-8")
+            status = resp.status
+            raw = resp.read().decode("utf-8", errors="replace")
     except urllib.error.HTTPError as e:
         err_body = e.read().decode("utf-8", errors="replace")[:800]
         raise RuntimeError(f"HTTP {e.code}: {err_body}") from e
-    body = json.loads(raw)
+    try:
+        body = json.loads(raw)
+    except json.JSONDecodeError as e:
+        # Bare "Expecting value: line 1 column 1 (char 0)" (json's own message) tells you nothing
+        # about what the server actually sent -- a 200 with an empty body, an SSE "data: {...}"
+        # stream (this script always sends a non-streaming request, but a third-party proxy can
+        # still switch to streaming server-side for large responses without being asked), a
+        # truncated/interrupted body, or an HTML error page all produce this exact same message.
+        # Surface the real bytes (bounded) so a failure is diagnosable from reset/failures.log
+        # instead of needing to be reproduced live.
+        snippet = raw[:500] if raw else "(empty body)"
+        raise RuntimeError(
+            f"HTTP {status} but response body is not valid JSON ({e}); "
+            f"body length={len(raw)} chars, first 500 chars: {snippet!r}"
+        ) from e
     return extract_text(body)
 
 
