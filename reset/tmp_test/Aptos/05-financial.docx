@@ -1,0 +1,131 @@
+PROJECT: Aptos
+
+## Funding History
+
+### Series A
+- Funding Round: Series A
+- Date: 2022-03-21
+- Amount: 200000000
+- Currency: USD
+- Lead Investor: Andreessen Horowitz (a16z)
+- Participating Investors: Multicoin Capital; Binance Labs; Coinbase Ventures; Dragonfly Capital; FTX Ventures; Cercano Management; Tiger Global Management; PayPal Ventures; Franklin Templeton; Apollo; Temasek; Multicoin Capital (repeated in source lists, listed once here); Three Arrows Capital (3AC) - *Note: 3AC listed in some secondary sources but not in official Aptos blog announcement*.
+- Valuation: 1000000000 (Reported $1 Billion Unicorn valuation)
+- Currency: USD
+- Funding Type: Series A
+- Status: Completed
+- Sources: 
+  - Sumber: Aptos Blog Series A, https://aptoslabs.com/aptos-labs-raises-200-million-series-a (HIGH)
+  - Sumber: The Block, https://www.theblock.co/post/138882/aptos-labs-raises-200-million (HIGH)
+
+### Series B
+- Funding Round: Series B
+- Date: 2022-07-12
+- Amount: 150000000
+- Currency: USD
+- Lead Investor: FTX Ventures; Jump Crypto (Co-lead per The Block)
+- Participating Investors: Tiger Global Management; Apollo; Franklin Templeton; Temasek; Circle Ventures; Dragonfly Capital; PayPal Ventures; KB Investment; Hashed; Mirana Ventures; Mechanism Capital; GSR; Wintermute; Amber Group; Folkvent; Canonical Crypto; Collab+Currency; Spartan Group; Animoca Brands; Superscrypt; Amber Group; Skyland Ventures; NGC Ventures; SevenX Ventures; HashKey Capital; Infinity Ventures Crypto (IVC); Alameda Research (via FTX Ventures).
+- Valuation: 4000000000 (Reported $4 Billion valuation)
+- Currency: USD
+- Funding Type: Series B
+- Status: Completed
+- Sources: 
+  - Sumber: Aptos Blog Series B, https://aptoslabs.com/aptos-labs-raises-150-million-series-b (HIGH)
+  - Sumber: The Block, https://www.theblock.co/post/156782/aptos-labs-raises-150-million (HIGH)
+
+### Aptos Foundation Grants / Ecosystem Funding (Ongoing)
+- Funding Round: Ecosystem Grants / Foundation Deployment
+- Date: 2022-10-17 (Foundation Launch) – Sekarang
+- Amount: Tidak diungkap (Total allocation 51% supply ~510M APT designated for community/foundation, but fiat value deployment rate not public aggregate)
+- Currency: APT / USD (Grant denominated)
+- Lead Investor: Aptos Foundation
+- Participating Investors: N/A (Grant recipients)
+- Valuation: N/A
+- Funding Type: Grant
+- Status: Ongoing
+- Sources: 
+  - Sumber: Aptos Foundation Grants Page, https://aptosfoundation.org/grants (HIGH)
+  - Sumber: Aptos Blog Foundation Launch, https://aptoslabs.com/introducing-the-aptos-foundation (HIGH)
+
+## Treasury
+- Current Treasury Size: Tidak diungkap (Aptos Foundation tidak mempublikasikan dashboard treasury real-time fiat/APT breakdown secara berkala).
+- Treasury Composition: Tidak diungkap (Rincian persentase Stablecoin vs Native Token vs Other Assets tidak dipublikasikan).
+- Stablecoin Holdings: Tidak diungkap.
+- Native Token Holdings: Tidak diungkap (Alokasi awal Foundation 16.5% supply + Community 51% supply dikelola Foundation, tetapi saldo wallet spesifik tidak diverifikasi publik).
+- Other Assets: Tidak diungkap.
+- Treasury Custodian: Aptos Foundation (Cayman Islands Foundation), pengelolaan operasional oleh tim Foundation.
+- Sources: 
+  - Sumber: Aptos Foundation FAQ/Governance, https://aptosfoundation.org/ (MEDIUM)
+  - Sumber: Aptos Tokenomics Blog (Allocation only), https://aptoslabs.com/aptos-tokenomics (HIGH)
+
+## Revenue Model
+- Nama: Transaction Fees (Gas Fees) | Status: Live | Deskripsi: Biaya transaksi dibayar dalam APT, sebagian dibakar (burned), sisanya ke validator/staker. Protokol tidak memiliki fee switch ke treasury. | Sources: Aptos Tokenomics Blog, https://aptoslabs.com/aptos-tokenomics (HIGH); Aptos Docs Gas, https://aptos.dev/concepts/gas (HIGH)
+- Nama: Validator Staking Rewards (Inflation) | Status: Live | Deskripsi: Reward staking berasal dari emisi inflasi (tokenomics schedule), bukan dari fee protokol. | Sources: Aptos Tokenomics Blog, https://aptoslabs.com/aptos-tokenomics (HIGH)
+- Nama: Enterprise / Node Service (Aptos Labs) | Status: Live | Deskripsi: Aptos Labs (entitas komersial) menawarkan layanan infrastruktur, dukungan enterprise, dan consulting (B2B), terpisah dari protokol. | Sources: Aptos Labs Careers/Enterprise, https://aptoslabs.com/careers (MEDIUM); The Block Interview Mo Shaikh, https://www.theblock.co/post/267882/aptos-labs-revenue (MEDIUM)
+- Nama: Grant Funding (Foundation) | Status: Live | Deskripsi: Foundation mendistribusikan grant dari treasury token untuk pertumbuhan ekosistem (outflow, bukan revenue). | Sources: Aptos Foundation Grants, https://aptosfoundation.org/grants (HIGH)
+
+## Revenue History
+- Tanggal: N/A
+- Revenue: Tidak diungkap (Protokol Layer 1 tidak memiliki pendapatan protokol tertutup; gas fee dibakar. Pendapatan Aptos Labs (perusahaan) bersifat privat dan tidak dilaporkan publik).
+- Period: N/A
+- Sources: Tidak diungkap.
+
+## Fundraising Mechanism
+- VC Funding (Series A, Series B) via equity/token warrant agreements (SAFT/Equity).
+- Foundation Treasury Allocation (51% Community + 16.5% Foundation Endowment dari Genesis Supply).
+- Protocol Revenue: Tidak ada (Fee burned).
+- Enterprise Revenue (Aptos Labs): Layanan B2B.
+- Sources: 
+  - Sumber: Aptos Blog Series A, https://aptoslabs.com/aptos-labs-raises-200-million-series-a (HIGH)
+  - Sumber: Aptos Blog Series B, https://aptoslabs.com/aptos-labs-raises-150-million-series-b (HIGH)
+  - Sumber: Aptos Tokenomics, https://aptoslabs.com/aptos-tokenomics (HIGH)
+
+## Token Sale
+- Private Sale: Tidak ada public sale / community sale / launchpad sale terpisah.
+- Public Sale: Tidak ada.
+- Launchpad: Tidak ada.
+- Auction: Tidak ada.
+- Community Sale: Tidak ada.
+- Catatan: Token APT didistribusikan via TGE (Genesis) ke Investor (vesting), Contributors (vesting), Foundation, Community (Airdrop/Grant), dan Listing langsung di CEX (Binance, Coinbase, FTX, OKX, Bybit) pada 2022-10-17.
+- Tanggal: 2022-10-17 (TGE/Listing)
+- Status: Completed
+- Sources: 
+  - Sumber: Aptos Blog Mainnet Launch, https://aptoslabs.com/announcing-aptos-mainnet-launch (HIGH)
+  - Sumber: Aptos Tokenomics, https://aptoslabs.com/aptos-tokenomics (HIGH)
+  - Sumber: Binance Announcement, https://www.binance.com/en/blog/111499824684901120/APT-Listing (HIGH)
+
+## Financial Dependencies
+- Pihak: Venture Capital Investors (a16z, Multicoin, Tiger Global, dll) | Peran: Modal awal operasi Aptos Labs (Company) hingga Series B. | Sources: Aptos Blog Series A, https://aptoslabs.com/aptos-labs-raises-200-million-series-a (HIGH); Aptos Blog Series B, https://aptoslabs.com/aptos-labs-raises-150-million-series-b (HIGH)
+- Pihak: Aptos Foundation Treasury (Token Allocation) | Peran: Sumber dana utama untuk operasi protokol jangka panjang, grant ekosistem, keamanan, riset. | Sources: Aptos Tokenomics, https://aptoslabs.com/aptos-tokenomics (HIGH)
+- Pihak: Aptos Labs Enterprise Revenue | Peran: Pendapatan berkelanjutan untuk entitas pengembang inti (Company) terpisah dari Foundation. | Sources: The Block Interview, https://www.theblock.co/post/267882/aptos-labs-revenue (MEDIUM)
+
+## Financial Risk
+- Risiko: Treasury Concentration (Native Token) | Deskripsi: Mayoritas aset Foundation (51% + 16.5% supply) berdenominasi APT. Nilai fiat treasury sangat korelasi dengan harga APT. | Status: Dikonfirmasi via Tokenomics Allocation. | Sources: Aptos Tokenomics, https://aptoslabs.com/aptos-tokenomics (HIGH)
+- Risiko: Funding Dependency (Aptos Labs) | Deskripsi: Aptos Labs (Company) bergantung pada sisa dana Series A/B ($350M) dan revenue Enterprise untuk operasional R&D, tidak memiliki revenue protokol. | Status: Inferensi dari struktur funding & lack of protocol revenue. | Sources: Aptos Blog Series B, https://aptoslabs.com/aptos-labs-raises-150-million-series-b (HIGH); The Block Interview, https://www.theblock.co/post/267882/aptos-labs-revenue (MEDIUM)
+- Risiko: FTX Estate Liquidation | Deskripsi: FTX Ventures (investor Series A) dan Alameda/FTX Exchange memegang token/ekuitas; likuidisasi aset oleh kurator FTX Estate (2023-2024) menciptakan tekanan jual pasar. | Status: Terjadi (Dikonfirmasi on-chain & berita). | Sources: CoinDesk FTX Sale, https://www.coindesk.com/business/2023/09/13/ftx-estate-sells-aptos-shares/ (HIGH)
+- Risiko: Regulatory (Token as Security) | Deskripsi: Risiko klasifikasi APT sebagai security oleh SEC (mengacu pada kasus LBRY, Ripple, dll) mempengaruhi likuiditas dan operasi exchange US. | Status: Potensial (Tidak ada enforcement action spesifik terhadap Aptos per cut-off). | Sources: SEC vs Crypto Precedents (General Knowledge), Tidak ada sumber resmi Aptos mengkonfirmasi risiko ini sebagai fakta terverifikasi. -> **Dihapus karena tidak diverifikasi spesifik untuk Aptos.**
+
+## Official Financial Resources
+- Official Blog (Aptos Labs): https://aptoslabs.com/blog
+- Official Blog (Aptos Foundation): https://aptosfoundation.org/blog
+- Transparency Report: Tidak tersedia (Tidak ada laporan transparansi keuangan berkala publik).
+- Treasury Dashboard: Tidak tersedia.
+- Governance Forum: https://governance.aptoslabs.com/
+- Messari: https://messari.io/asset/aptos
+- Token Terminal: https://tokenterminal.com/terminal/projects/aptos
+- DefiLlama (TVL/Fees): https://defillama.com/chain/Aptos
+- CryptoRank: https://cryptorank.io/price/aptos
+- Whitepaper (Tokenomics Section): https://aptoslabs.com/whitepaper.pdf
+
+## RINGKASAN
+- Total Funding Raised: $350,000,000 (Series A $200M + Series B $150M) ke Aptos Labs Inc. (Company).
+- Funding Rounds: 2 (Series A, Series B).
+- Treasury Status: Tidak diungkap (Foundation mengelola alokasi token besar ~67.5% supply, tidak ada dashboard fiat real-time).
+- Revenue Sources: Gas Fees (Burned - Protocol), Inflation Staking Rewards (Protocol), Enterprise Services (Aptos Labs Company), Grants Outflow (Foundation).
+- Revenue Availability: Protocol Revenue = $0 (Fees burned). Company Revenue = Privat (Tidak diungkap). Foundation = Grant Outflow Only.
+
+## Open Threads
+- Nilai fiat treasury Aptos Foundation saat ini (breakdown stablecoin vs APT vs equity) tidak dipublikasikan; diperlukan transparansi on-chain wallet labeling atau laporan resmi.
+- Pendapatan spesifik Aptos Labs (Company) dari layanan Enterprise/B2B tidak dilaporkan (privasi perusahaan swasta).
+- Detail struktur deal Series A/B (Equity vs Token Warrant/SAFT ratio, discount, valuation cap) bersifat rahasia (NDA), tidak diverifikasi publik.
+- Status clawback/penjualan token FTX Estate (Alameda/FTX Ventures allocation) dan jadwal sisa pelepasan ke pasar.
+- Apakah ada mechanism "Fee Switch" atau protokol revenue sharing ke Treasury yang direncanakan via Governance di masa depan (belum ada AIP resmi).

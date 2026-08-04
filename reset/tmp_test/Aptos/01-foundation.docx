@@ -1,0 +1,28 @@
+PROJECT: Aptos
+Official Name: Aptos
+Symbol: APT
+Category: Layer 1 Blockchain / Smart Contract Platform
+Founding Entity: Aptos Labs Inc. (Delaware, United States) (HIGH) [Aptos Labs Careers, https://aptoslabs.com/careers; SEC Form D, https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001859472]
+Founders: Mo Shaikh (Co-founder, CEO); Avery Ching (Co-founder, CTO) (HIGH) [Aptos Labs Leadership, https://aptoslabs.com/team; Fortune Interview, https://fortune.com/2022/03/30/aptos-labs-mo-shaikh-avery-ching-diem-meta-crypto/]
+Core Team: Aptos Labs (ukuran tim tidak diungkapkan secara resmi; tim inti berisi bekas insinyur Diem/Meta) (MEDIUM) [Aptos Labs About, https://aptoslabs.com/about; The Block, https://www.theblock.co/post/138882/aptos-labs-raises-200-million]
+Country: United States (Markas besar: Palo Alto, California) (HIGH) [Aptos Labs Contact, https://aptoslabs.com/contact]
+Launch Date - Testnet: 2022-03-28 (Devnet publik); 2022-05-31 (Aptos Incentivized Testnet 1 / AIT-1) (HIGH) [Aptos Blog Devnet, https://aptoslabs.com/devnet-launch; Aptos Blog AIT-1, https://aptoslabs.com/aptos-incentivized-testnet-1]
+Launch Date - Mainnet: 2022-10-17 (Blok genesis diproduksi) (HIGH) [Aptos Blog Mainnet Launch, https://aptoslabs.com/announcing-aptos-mainnet-launch; Explorer Genesis Block, https://explorer.aptoslabs.com/block/0]
+Launch Date - TGE: 2022-10-17 (Koinsiden dengan peluncuran mainnet) (HIGH) [Aptos Blog Tokenomics, https://aptoslabs.com/aptos-tokenomics; CoinGecko APT History, https://www.coingecko.com/en/coins/aptos]
+Main Products: Aptos Blockchain (Layer 1); Move Programming Language (Smart Contract Language); Aptos Core (Client Software); Aptos Explorer; Aptos Wallet Adapter (Standar Dompet); Aptos Name Service (ANS); Petra Wallet (Dompet resmi ekosistem) (HIGH) [Aptos Ecosystem, https://aptoslabs.com/ecosystem; Aptos Dev Docs, https://aptos.dev/]
+Official Website: https://aptoslabs.com/
+Repository: https://github.com/aptos-labs/aptos-core
+Documentation: https://aptos.dev/
+Social - X/Twitter: @aptoslabs
+Social - Discord: https://discord.gg/aptoslabs
+Social - Telegram: https://t.me/aptoslabs
+Block Explorer: https://explorer.aptoslabs.com/
+Token Contract: 0x1::aptos_coin::AptosCoin (Native coin pada chain Aptos, bukan kontrak ERC-20) (HIGH) [Aptos Framework Source, https://github.com/aptos-labs/aptos-core/blob/main/aptos-move/framework/aptos-framework/sources/aptos_coin.move; Tokenomics Doc, https://aptoslabs.com/aptos-tokenomics]
+Chain(s): Aptos (Mainnet); Aptos Testnet; Aptos Devnet
+Ecosystem: Move Ecosystem (Termasuk Sui, Movement, 0L, Starcoin)
+
+Open Threads
+- Jumlah pasti karyawan Aptos Labs saat ini (ukuran tim inti) tidak dipublikasikan secara resmi di halaman "About" atau "Careers".
+- Detail yurisdiksi hukum spesifik entitas pendiri (LLC vs Corp) dan struktur kepemilikan token (foundation vs labs) memerlukan verifikasi dokumen hukum primer (Form D, Whitepaper legal disclaimer).
+- Tanggal pasti "Code Freeze" atau "Feature Complete" pra-mainnet tidak tercantum eksplisit di blog peluncuran resmi.
+- Status kontrak token di chain lain (misal: Wormhole APT di Ethereum/Solana) bukan kontrak asli (native) tapi representasi bridged — perlu dibedakan di fase tokenomics.

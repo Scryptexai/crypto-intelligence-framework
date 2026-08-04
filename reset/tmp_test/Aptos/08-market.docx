@@ -1,0 +1,108 @@
+PROJECT: Aptos
+
+## Market Category
+- Primary Category: Layer 1 Blockchain
+- Secondary Category: Smart Contract Platform
+- Sector: Infrastructure
+- Sub-sector: Parallel Execution / Move VM
+- Sources:
+  - Sumber: CoinGecko Category, https://www.coingecko.com/en/categories/layer-1 (HIGH)
+  - Sumber: CoinMarketCap Category, https://coinmarketcap.com/view/layer-1/ (HIGH)
+  - Sumber: Messari Sector Classification, https://messari.io/asset/aptos (HIGH)
+
+## Market Position
+- Project Stage: Growth (Mainnet live since 2022-10-17, TVL >$1B peak, active dev ecosystem)
+- Primary Competitors: Ethereum; Solana; Sui; BNB Chain; Avalanche; Polygon; Near Protocol; Arbitrum; Optimism
+- Market Segment: General Purpose Layer 1 (High Throughput, Low Latency, Move Language)
+- Geographic Focus: Global (Strong presence Asia: Korea, Japan, Southeast Asia; US; Europe)
+- Sources:
+  - Sumber: DefiLlama Chains Ranking, https://defillama.com/chains (HIGH)
+  - Sumber: Electric Capital Developer Report 2024, https://www.electriccapital.com/developer-report (HIGH)
+  - Sumber: Aptos Foundation Ecosystem Map, https://aptosfoundation.org/ecosystem (MEDIUM)
+
+## Trading Markets
+- Exchange: Binance | Spot: Yes | Perpetual: Yes (APTUSDT, APTBUSD) | Futures: Yes (Quarterly) | Options: No | OTC: Yes (Binance OTC Portal) | Status: Active | Sources: Binance Markets, https://www.binance.com/en/markets/overview (HIGH)
+- Exchange: Coinbase | Spot: Yes | Perpetual: No (Spot only on Coinbase.com; Perpetual on Coinbase International Exchange) | Futures: No | Options: No | OTC: Yes (Coinbase Prime) | Status: Active | Sources: Coinbase Assets, https://www.coinbase.com/price/aptos (HIGH)
+- Exchange: OKX | Spot: Yes | Perpetual: Yes (APTUSDT) | Futures: Yes | Options: No | OTC: Yes | Status: Active | Sources: OKX Markets, https://www.okx.com/markets/spot (HIGH)
+- Exchange: Bybit | Spot: Yes | Perpetual: Yes (APTUSDT) | Futures: Yes (Inverse/USDT) | Options: No | OTC: Yes | Status: Active | Sources: Bybit Markets, https://www.bybit.com/trade/usdt/APTUSDT (HIGH)
+- Exchange: Kraken | Spot: Yes | Perpetual: No | Futures: No | Options: No | OTC: Yes (Kraken OTC Desk) | Status: Active | Sources: Kraken Markets, https://trade.kraken.com/markets/kraken/apt/usd (HIGH)
+- Exchange: KuCoin | Spot: Yes | Perpetual: Yes | Futures: Yes | Options: No | OTC: Yes | Status: Active | Sources: KuCoin Markets, https://www.kucoin.com/markets (MEDIUM)
+- Exchange: HTX (Huobi) | Spot: Yes | Perpetual: Yes | Futures: Yes | Options: No | OTC: Yes | Status: Active | Sources: HTX Markets, https://www.htx.com/markets (MEDIUM)
+- Exchange: Gate.io | Spot: Yes | Perpetual: Yes | Futures: Yes | Options: No | OTC: Yes | Status: Active | Sources: Gate.io Markets, https://www.gate.io/markets (MEDIUM)
+
+## Liquidity
+- Liquidity Source: CEX (Centralized Exchanges) | Major Liquidity Venue: Binance (Highest Spot & Perpetual Volume) | Status: Active | Sources: CoinGecko Markets APT, https://www.coingecko.com/en/coins/aptos#markets (HIGH)
+- Liquidity Source: DEX (Decentralized Exchanges on Aptos) | Major Liquidity Venue: Thala (Stable/Volatile Pools), Cellana (CLMM), LiquidSwap, PancakeSwap Aptos | Status: Active | Sources: DefiLlama Aptos DEXs, https://defillama.com/chain/Aptos (HIGH)
+- Liquidity Source: Bridge Liquidity | Major Liquidity Venue: Wormhole (Portal Bridge), LayerZero (Stargate), Celer cBridge | Status: Active | Sources: Wormhole Explorer, https://wormholescan.io/; Stargate App, https://stargate.finance/ (HIGH)
+
+## Adoption Metrics
+- Metric Name: Total Value Locked (TVL) | Value: ~$1.05 Billion (Peak 2024-03); ~$450 Million (2024-10) | Date: 2024-10-01 | Sources: DefiLlama Aptos, https://defillama.com/chain/Aptos (HIGH)
+- Metric Name: Daily Active Addresses | Value: ~50,000 - 150,000 (30-day rolling average) | Date: 2024-09 | Sources: Aptos Explorer Stats, https://explorer.aptoslabs.com/stats (HIGH); Token Terminal, https://tokenterminal.com/terminal/projects/aptos (MEDIUM)
+- Metric Name: Daily Transactions | Value: ~2 Million - 10 Million (High variance due to gaming/airdrop bots) | Date: 2024-09 | Sources: Aptos Explorer Stats, https://explorer.aptoslabs.com/stats (HIGH)
+- Metric Name: Total Wallets Created (Cumulative) | Value: >50 Million (Includes testnet/devnet & inactive) | Date: 2024-09 | Sources: Aptos Blog Anniversary, https://aptoslabs.com/aptos-two-years (MEDIUM)
+- Metric Name: Monthly Active Developers (Core + Ecosystem) | Value: ~300 - 500 (Core: ~50; Ecosystem: ~250-450) | Date: 2024 (Electric Capital Report) | Sources: Electric Capital Developer Report 2024, https://www.electriccapital.com/developer-report (HIGH)
+- Metric Name: Validator Count (Active Set) | Value: 108 (Current Epoch Limit) | Date: 2024-10 | Sources: Aptos Explorer Validators, https://explorer.aptoslabs.com/validators (HIGH)
+- Metric Name: Staking Participation Rate | Value: ~78% - 82% of Circulating Supply Staked | Date: 2024-10 | Sources: Aptos Staking Dashboard, https://staking.aptoslabs.com/ (HIGH)
+- Metric Name: Bridge Volume (30d) | Value: ~$200M - $500M (Aggregate Wormhole, LayerZero, Celer) | Date: 2024-09 | Sources: DefiLlama Bridges, https://defillama.com/bridges (MEDIUM)
+- Metric Name: NFT Sales Volume (30d) | Value: ~$1M - $5M (BlueMove, Topaz) | Date: 2024-09 | Sources: CryptoSlam Aptos, https://cryptoslam.io/aptos (MEDIUM)
+
+## Market Share
+- Metric: TVL Market Share (All Chains) | Value: ~1.5% - 2.0% (Rank ~10-12) | Date: 2024-10 | Sources: DefiLlama Chains, https://defillama.com/chains (HIGH)
+- Metric: Daily Transaction Market Share | Value: ~3% - 5% (High due to parallel execution capacity) | Date: 2024-09 | Sources: Token Terminal, https://tokenterminal.com/terminal/projects/aptos (MEDIUM)
+- Metric: Developer Market Share (New Entrants) | Value: ~2% - 3% of Web3 Monthly Active Devs | Date: 2024 | Sources: Electric Capital Report 2024, https://www.electriccapital.com/developer-report (HIGH)
+
+## Competitor Landscape
+- Competitor: Ethereum | Category: Layer 1 (Modular Rollup-centric) | Difference: EVM vs Move VM; Monolithic Parallel vs Modular; Higher Fees/Slower Finality | Market Segment: General Purpose / Store of Value / DeFi Hub | Sources: Ethereum.org, https://ethereum.org/ (HIGH)
+- Competitor: Solana | Category: Layer 1 (Monolithic High Throughput) | Difference: SVM vs Move VM; Proof-of-History vs AptosBFT; Frequent Outages History vs Stability Focus | Market Segment: High Frequency Trading / Consumer Apps / Memecoins | Sources: Solana.com, https://solana.com/ (HIGH)
+- Competitor: Sui | Category: Layer 1 (Move VM, Object-centric) | Difference: Shared Object Model vs Account Model; Mysticeti Consensus vs AptosBFT; Same Language (Move) Direct Competitor | Market Segment: Gaming / Social / High Throughput | Sources: Sui Foundation, https://sui.io/ (HIGH)
+- Competitor: BNB Chain | Category: Layer 1 (EVM Compatible) | Difference: EVM vs Move; Centralized Validator Set (21) vs Permissionless PoS; Binance Ecosystem Integration | Market Segment: Binance Ecosystem / DeFi / Gaming | Sources: BNB Chain, https://www.bnbchain.org/ (HIGH)
+- Competitor: Avalanche | Category: Layer 1 (Subnet Architecture) | Difference: Subnets/Modular vs Monolithic; EVM (C-Chain) vs Move; Different Consensus (Snowman) | Market Segment: Enterprise / Institutions / Gaming Subnets | Sources: Avalanche, https://www.avax.network/ (HIGH)
+- Competitor: Arbitrum / Optimism | Category: Layer 2 (Optimistic Rollup) | Difference: Settlement on Ethereum vs Independent L1; EVM vs Move; Security Inheritance vs Sovereign | Market Segment: Ethereum Scaling / DeFi | Sources: Arbitrum.io, https://arbitrum.io/; Optimism.io, https://www.optimism.io/ (HIGH)
+
+## Narrative Position
+- Narrative: Move Language Ecosystem | Status: Main Narrative | Evidence: Primary differentiator; Shared with Sui/Movement/0L; Formal Verification, Resource Safety | Sources: Aptos Blog Move, https://aptoslabs.com/move; Move Language Foundation, https://move-language.github.io/move/ (HIGH)
+- Narrative: Parallel Execution (Block-STM) | Status: Main Narrative | Evidence: Core Technical Advantage marketed for High TPS; Block-STM v2 Upgrade 2024 | Sources: Aptos Blog Block-STM, https://aptoslabs.com/block-stm (HIGH)
+- Narrative: Account Abstraction / Keyless Accounts | Status: Secondary Narrative | Evidence: Native AA (AIP-62) launched 2024; Social Login (Google/Apple) for Web2 Onboarding | Sources: Aptos Blog Keyless, https://aptoslabs.com/keyless-accounts (HIGH)
+- Narrative: Institutional Infrastructure (GCP, AWS) | Status: Secondary Narrative | Evidence: Google Cloud Blockchain Node Engine; AWS Managed Blockchain; Enterprise Grade | Sources: Google Cloud Blog, https://cloud.google.com/blog/topics/web3/google-cloud-blockchain-node-engine-aptos (HIGH)
+- Narrative: Interoperability (Wormhole, LayerZero) | Status: Secondary Narrative | Evidence: Major Bridges Live; Stargate Deployment; Cross-chain DeFi Focus | Sources: Wormhole Blog, https://wormhole.com/blog/aptos-mainnet-launch (HIGH)
+- Narrative: Gaming / Consumer Apps | Status: Emerging Narrative | Evidence: Unity/Unreal SDKs; Keyless for Gaming; High TPS suitable for On-chain Games | Sources: Aptos Gaming Kit, https://github.com/aptos-labs/aptos-unity-sdk (MEDIUM)
+- Narrative: RWA (Real World Assets) | Status: Emerging Narrative | Evidence: Native USDC/USDT; Franklin Templeton On-chain Fund (BENJI) on Aptos; Institutional Partnerships | Sources: Franklin Templeton Blog, https://www.franklintempleton.com/en-us/insights (MEDIUM)
+
+## Market Timeline
+- Date: 2022-10-17 | Milestone: Mainnet Launch & TGE | Description: Genesis Block Produced; Token APT Live; Simultaneous Listing on Binance, Coinbase, FTX, OKX, Bybit | Related Historical Event ID: EV-007 | Sources: Aptos Blog Mainnet Launch, https://aptoslabs.com/announcing-aptos-mainnet-launch (HIGH)
+- Date: 2022-10-17 | Milestone: Initial CEX Listings (Tier 1) | Description: Binance, Coinbase, FTX, OKX, Bybit, Huobi, Gate.io listing within hours | Related Historical Event ID: EV-007 | Sources: Binance Announcement, https://www.binance.com/en/blog/111499824684901120/APT-Listing (HIGH)
+- Date: 2023-01 | Milestone: Kraken Listing | Description: Expansion to US-compliant Exchange | Related Historical Event ID: EV-018 (Context) | Sources: Kraken Blog, https://blog.kraken.com/post/3624/aptos-apt-now-available-on-kraken/ (HIGH)
+- Date: 2023-04 | Milestone: Wormhole & LayerZero Integration | Description: Major Cross-chain Liquidity Unlocked | Related Historical Event ID: EV-013, EV-014 | Sources: Wormhole Blog, https://wormhole.com/blog/aptos-mainnet-launch (HIGH)
+- Date: 2023-09 | Milestone: Google Cloud Validator & Node Engine | Description: Major Cloud Provider Infrastructure Support | Related Historical Event ID: EV-016 | Sources: Google Cloud Blog, https://cloud.google.com/blog/topics/web3/google-cloud-blockchain-node-engine-aptos (HIGH)
+- Date: 2024-02 | Milestone: Fungible Asset Standard Launch | Description: Modern Token Standard for DeFi Composability | Related Historical Event ID: EV-019 | Sources: Aptos Blog FA, https://aptoslabs.com/fungible-asset-standard (HIGH)
+- Date: 2024-03 | Milestone: AWS Managed Blockchain Support | Description: Second Major Cloud Provider Managed Service | Related Historical Event ID: EV-020 | Sources: AWS Blog, https://aws.amazon.com/about-aws/whats-new/2024/03/amazon-managed-blockchain-aptos/ (HIGH)
+- Date: 2024-05 | Milestone: Keyless Accounts (Native AA) Launch | Description: Web2 Onboarding via Social Login | Related Historical Event ID: EV-022 | Sources: Aptos Blog Keyless, https://aptoslabs.com/keyless-accounts (HIGH)
+- Date: 2024-09 | Milestone: TVL All-Time High >$1B | Description: Peak DeFi Adoption driven by Liquid Staking & DEX | Related Historical Event ID: EV-026 | Sources: DefiLlama Aptos, https://defillama.com/chain/Aptos (HIGH)
+
+## Official Market Resources
+- Official Dashboard (Explorer Stats): https://explorer.aptoslabs.com/stats
+- Official Staking Dashboard: https://staking.aptoslabs.com/
+- DefiLlama (TVL, Fees, Revenue): https://defillama.com/chain/Aptos
+- CoinGecko (Price, Volume, Markets): https://www.coingecko.com/en/coins/aptos
+- CoinMarketCap (Price, Volume, Markets): https://coinmarketcap.com/currencies/aptos/
+- Token Terminal (Financials, Users, Revenue): https://tokenterminal.com/terminal/projects/aptos
+- Messari (Research, Metrics): https://messari.io/asset/aptos
+- Electric Capital (Developer Metrics): https://www.electriccapital.com/developer-report
+- CryptoSlam (NFT Metrics): https://cryptoslam.io/aptos
+
+## RINGKASAN
+- Market Stage: Growth
+- Primary Category: Layer 1 Blockchain
+- Competitor Count: 6 Primary (Ethereum, Solana, Sui, BNB Chain, Avalanche, L2s)
+- Major Narrative: Move Ecosystem & Parallel Execution
+- Trading Availability: 8+ Tier-1 CEX (Spot + Perpetuals), 5+ Major Native DEX, 3+ Major Bridges
+- Adoption Metrics Available: TVL, Daily Active Addresses, Transactions, Developer Count, Validator Count, Staking Ratio, Bridge Volume, NFT Volume
+
+## Open Threads
+- Data perbedaan "Daily Active Addresses" antara Aptos Explorer (native count) vs Token Terminal (methodology berbeda) memerlukan rekonsiliasi metodologi.
+- Volume DEX "Wash Trading" vs "Organic" pada Aptos (khususnya incentivized pools) belum dibedahkan secara resmi di DefiLlama.
+- Market Share "Developer Count" bervariasi signifikan antara Electric Capital (GitHub commits) vs internal Aptos Foundation metrics (active builders).
+- Data "Bridge Volume" agregat (Wormhole + LayerZero + Celer) tidak tersedia di satu dashboard resmi terpusat; perlu aggregasi manual.
+- Status listing "Perpetual" di Coinbase International Exchange vs Coinbase.com (US) membutuhkan klarifikasi jurisdiktional.
+- Data "Institutional Holdings" (Grayscale, Franklin Templeton on-chain fund) tidak terpisah dalam holder distribution publik.
+- Metrik "Real Economic Value" (REV) atau "Protocol Revenue" (Fee Burn) tidak dipublikasikan sebagai time-series resmi; hanya real-time di explorer.

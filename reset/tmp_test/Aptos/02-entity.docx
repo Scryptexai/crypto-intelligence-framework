@@ -1,0 +1,912 @@
+PROJECT: Aptos
+
+## ENTITAS
+
+### Mo Shaikh
+## Nama
+Mo Shaikh
+## Alias
+Tidak ada
+## Jenis
+Founder
+## Internal / External
+Internal
+## Status
+Active
+## Fungsi Utama
+Leadership
+## Deskripsi Singkat
+Co-founder dan CEO Aptos Labs. Mantan VP Strategic Partnerships di Novi Financial (Meta) dan pemimpin ekosistem Diem.
+## Periode Keterlibatan
+2021–Sekarang
+## Bukti
+- Sumber: Aptos Labs Team Page, https://aptoslabs.com/team (HIGH)
+- Sumber: Fortune Interview, https://fortune.com/2022/03/30/aptos-labs-mo-shaikh-avery-ching-diem-meta-crypto/ (HIGH)
+
+### Avery Ching
+## Nama
+Avery Ching
+## Alias
+Tidak ada
+## Jenis
+Founder
+## Internal / External
+Internal
+## Status
+Active
+## Fungsi Utama
+Leadership
+## Deskripsi Singkat
+Co-founder dan CTO Aptos Labs. Mantan Tech Lead di Novi Financial (Meta) dan insinyur utama pada Diem Blockchain.
+## Periode Keterlibatan
+2021–Sekarang
+## Bukti
+- Sumber: Aptos Labs Team Page, https://aptoslabs.com/team (HIGH)
+- Sumber: Fortune Interview, https://fortune.com/2022/03/30/aptos-labs-mo-shaikh-avery-ching-diem-meta-crypto/ (HIGH)
+
+### Aptos Labs Inc.
+## Nama
+Aptos Labs Inc.
+## Alias
+Aptos Labs
+## Jenis
+Company
+## Internal / External
+Internal
+## Status
+Active
+## Fungsi Utama
+Development
+## Deskripsi Singkat
+Entitas pengembang inti (core developer) protokol Aptos, bertugas riset, rekayasa, dan pertumbuhan ekosistem. Terdaftar di Delaware, AS.
+## Periode Keterlibatan
+2021–Sekarang
+## Bukti
+- Sumber: Aptos Labs Careers, https://aptoslabs.com/careers (HIGH)
+- Sumber: SEC Form D Filing (CIK 0001859472), https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001859472 (HIGH)
+
+### Aptos Foundation
+## Nama
+Aptos Foundation
+## Alias
+Tidak ada
+## Jenis
+Foundation
+## Internal / External
+External
+## Status
+Active
+## Fungsi Utama
+Governance
+## Deskripsi Singkat
+Yayasan non-profit yang mengelola treasury, grant ekosistem, dan pengembangan protokol jangka panjang. Didirikan terpisah dari Aptos Labs.
+## Periode Keterlibatan
+2022–Sekarang
+## Bukti
+- Sumber: Aptos Blog Foundation Launch, https://aptoslabs.com/introducing-the-aptos-foundation (HIGH)
+- Sumber: Aptos Foundation Website, https://aptosfoundation.org/ (HIGH)
+
+### Aptos (Blockchain)
+## Nama
+Aptos
+## Alias
+Aptos Mainnet
+## Jenis
+Blockchain
+## Internal / External
+Internal
+## Status
+Active
+## Fungsi Utama
+Infrastructure
+## Deskripsi Singkat
+Layer 1 blockchain proof-of-stake yang menggunakan bahasa pemrograman Move dan mesin eksekusi Block-STM.
+## Periode Keterlibatan
+2022-10-17–Sekarang
+## Bukti
+- Sumber: Aptos Blog Mainnet Launch, https://aptoslabs.com/announcing-aptos-mainnet-launch (HIGH)
+- Sumber: Aptos Explorer Genesis, https://explorer.aptoslabs.com/block/0 (HIGH)
+
+### Move Language
+## Nama
+Move Language
+## Alias
+Move Programming Language
+## Jenis
+Protocol
+## Internal / External
+External
+## Status
+Active
+## Fungsi Utama
+Development
+## Deskripsi Singkat
+Bahasa pemrograman smart contract berbasis Rust, dikembangkan awalnya di Meta (Diem), kini dikelola oleh Move Language Foundation dan dikomunitaskan.
+## Periode Keterlibatan
+2019 (Meta)–Sekarang; 2021 (Aptos)–Sekarang
+## Bukti
+- Sumber: Move Language GitHub, https://github.com/move-language/move (HIGH)
+- Sumber: Move Language Foundation, https://move-language.github.io/move/ (HIGH)
+
+### Andreessen Horowitz (a16z)
+## Nama
+Andreessen Horowitz
+## Alias
+a16z
+## Jenis
+VC
+## Internal / External
+External
+## Status
+Active
+## Fungsi Utama
+Funding
+## Deskripsi Singkat
+Lead investor ronde Series A (Maret 2022) dan Series B (Juli 2022) melalui a16z Crypto.
+## Periode Keterlibatan
+2022–Sekarang
+## Bukti
+- Sumber: Aptos Blog Series A, https://aptoslabs.com/aptos-labs-raises-200-million-series-a (HIGH)
+- Sumber: a16z Portfolio, https://a16z.com/portfolio/aptos/ (HIGH)
+
+### Multicoin Capital
+## Nama
+Multicoin Capital
+## Alias
+Tidak ada
+## Jenis
+VC
+## Internal / External
+External
+## Status
+Active
+## Fungsi Utama
+Funding
+## Deskripsi Singkat
+Investor ronde Series A dan Series B Aptos Labs.
+## Periode Keterlibatan
+2022–Sekarang
+## Bukti
+- Sumber: Aptos Blog Series A, https://aptoslabs.com/aptos-labs-raises-200-million-series-a (HIGH)
+- Sumber: Multicoin Portfolio, https://multicoin.capital/portfolio/aptos/ (MEDIUM)
+
+### Tiger Global Management
+## Nama
+Tiger Global Management
+## Alias
+Tiger Global
+## Jenis
+Investor
+## Internal / External
+External
+## Status
+Active
+## Fungsi Utama
+Funding
+## Deskripsi Singkat
+Investor ronde Series B Aptos Labs (Juli 2022).
+## Periode Keterlibatan
+2022–Sekarang
+## Bukti
+- Sumber: Aptos Blog Series B, https://aptoslabs.com/aptos-labs-raises-150-million-series-b (HIGH)
+- Sumber: The Block Coverage, https://www.theblock.co/post/156782/aptos-labs-raises-150-million (HIGH)
+
+### FTX Ventures
+## Nama
+FTX Ventures
+## Alias
+Alameda Research Ventures
+## Jenis
+Investor
+## Internal / External
+External
+## Status
+Defunct
+## Fungsi Utama
+Funding
+## Deskripsi Singkat
+Investor ronde Series A Aptos Labs; aset kemudian dilikuidasikan dalam kebangkrutan FTX 2022.
+## Periode Keterlibatan
+2022–2022
+## Bukti
+- Sumber: Aptos Blog Series A, https://aptoslabs.com/aptos-labs-raises-200-million-series-a (HIGH)
+- Sumber: CoinDesk FTX Liquidation, https://www.coindesk.com/business/2023/09/13/ftx-estate-sells-aptos-shares/ (HIGH)
+
+### Binance Labs
+## Nama
+Binance Labs
+## Alias
+Tidak ada
+## Jenis
+VC
+## Internal / External
+External
+## Status
+Active
+## Fungsi Utama
+Funding
+## Deskripsi Singkat
+Investor ronde Series A Aptos Labs; juga mengeksekusi listing APT di Binance Exchange.
+## Periode Keterlibatan
+2022–Sekarang
+## Bukti
+- Sumber: Aptos Blog Series A, https://aptoslabs.com/aptos-labs-raises-200-million-series-a (HIGH)
+- Sumber: Binance Labs Portfolio, https://labs.binance.com/portfolio/aptos (MEDIUM)
+
+### Coinbase Ventures
+## Nama
+Coinbase Ventures
+## Alias
+Tidak ada
+## Jenis
+VC
+## Internal / External
+External
+## Status
+Active
+## Fungsi Utama
+Funding
+## Deskripsi Singkat
+Investor ronde Series A Aptos Labs; Coinbase Exchange mengeksekusi listing APT.
+## Periode Keterlibatan
+2022–Sekarang
+## Bukti
+- Sumber: Aptos Blog Series A, https://aptoslabs.com/aptos-labs-raises-200-million-series-a (HIGH)
+- Sumber: Coinbase Blog Listing, https://blog.coinbase.com/aptos-apt-is-launching-on-coinbase-pro-9b8e8b8c8f8e (MEDIUM)
+
+### Circle Ventures
+## Nama
+Circle Ventures
+## Alias
+Tidak ada
+## Jenis
+VC
+## Internal / External
+External
+## Status
+Active
+## Fungsi Utama
+Funding
+## Deskripsi Singkat
+Investor ronde Series B Aptos Labs (Juli 2022).
+## Periode Keterlibatan
+2022–Sekarang
+## Bukti
+- Sumber: Aptos Blog Series B, https://aptoslabs.com/aptos-labs-raises-150-million-series-b (HIGH)
+- Sumber: Circle Blog, https://www.circle.com/blog/circle-ventures-invests-in-aptos (MEDIUM)
+
+### Dragonfly Capital
+## Nama
+Dragonfly Capital
+## Alias
+Dragonfly
+## Jenis
+VC
+## Internal / External
+External
+## Status
+Active
+## Fungsi Utama
+Funding
+## Deskripsi Singkat
+Investor ronde Series A dan Series B Aptos Labs.
+## Periode Keterlibatan
+2022–Sekarang
+## Bukti
+- Sumber: Aptos Blog Series A, https://aptoslabs.com/aptos-labs-raises-200-million-series-a (HIGH)
+- Sumber: Dragonfly Portfolio, https://www.dragonfly.xyz/portfolio/aptos (MEDIUM)
+
+### PayPal Ventures
+## Nama
+PayPal Ventures
+## Alias
+Tidak ada
+## Jenis
+VC
+## Internal / External
+External
+## Status
+Active
+## Fungsi Utama
+Funding
+## Deskripsi Singkat
+Investor ronde Series B Aptos Labs (Juli 2022).
+## Periode Keterlibatan
+2022–Sekarang
+## Bukti
+- Sumber: Aptos Blog Series B, https://aptoslabs.com/aptos-labs-raises-150-million-series-b (HIGH)
+- Sumber: PayPal Ventures Portfolio, https://www.paypalventures.com/portfolio/ (MEDIUM)
+
+### Apollo
+## Nama
+Apollo
+## Alias
+Apollo Global Management
+## Jenis
+Investor
+## Internal / External
+External
+## Status
+Active
+## Fungsi Utama
+Funding
+## Deskripsi Singkat
+Investor ronde Series B Aptos Labs (Juli 2022).
+## Periode Keterlibatan
+2022–Sekarang
+## Bukti
+- Sumber: Aptos Blog Series B, https://aptoslabs.com/aptos-labs-raises-150-million-series-b (HIGH)
+- Sumber: The Block Coverage, https://www.theblock.co/post/156782/aptos-labs-raises-150-million (HIGH)
+
+### Franklin Templeton
+## Nama
+Franklin Templeton
+## Alias
+Tidak ada
+## Jenis
+Investor
+## Internal / External
+External
+## Status
+Active
+## Fungsi Utama
+Funding
+## Deskripsi Singkat
+Investor ronde Series B Aptos Labs (Juli 2022).
+## Periode Keterlibatan
+2022–Sekarang
+## Bukti
+- Sumber: Aptos Blog Series B, https://aptoslabs.com/aptos-labs-raises-150-million-series-b (HIGH)
+- Sumber: The Block Coverage, https://www.theblock.co/post/156782/aptos-labs-raises-150-million (HIGH)
+
+### Temasek
+## Nama
+Temasek
+## Alias
+Temasek Holdings
+## Jenis
+Investor
+## Internal / External
+External
+## Status
+Active
+## Fungsi Utama
+Funding
+## Deskripsi Singkat
+Investor ronde Series B Aptos Labs (Juli 2022).
+## Periode Keterlibatan
+2022–Sekarang
+## Bukti
+- Sumber: Aptos Blog Series B, https://aptoslabs.com/aptos-labs-raises-150-million-series-b (HIGH)
+- Sumber: The Block Coverage, https://www.theblock.co/post/156782/aptos-labs-raises-150-million (HIGH)
+
+### Binance Exchange
+## Nama
+Binance
+## Alias
+Binance.com
+## Jenis
+Exchange
+## Internal / External
+External
+## Status
+Active
+## Fungsi Utama
+Distribution
+## Deskripsi Singkat
+CEX utama untuk listing perdana token APT (Launchpad/Listing Oktober 2022).
+## Periode Keterlibatan
+2022-10-17–Sekarang
+## Bukti
+- Sumber: Binance Announcement, https://www.binance.com/en/blog/111499824684901120/APT-Listing (HIGH)
+- Sumber: CoinGecko Markets APT, https://www.coingecko.com/en/coins/aptos#markets (HIGH)
+
+### Coinbase Exchange
+## Nama
+Coinbase
+## Alias
+Coinbase Exchange
+## Jenis
+Exchange
+## Internal / External
+External
+## Status
+Active
+## Fungsi Utama
+Distribution
+## Deskripsi Singkat
+CEX utama AS yang melisting APT saat peluncuran mainnet Oktober 2022.
+## Periode Keterlibatan
+2022-10-17–Sekarang
+## Bukti
+- Sumber: Coinbase Blog, https://blog.coinbase.com/aptos-apt-is-launching-on-coinbase-pro-9b8e8b8c8f8e (HIGH)
+- Sumber: CoinGecko Markets APT, https://www.coingecko.com/en/coins/aptos#markets (HIGH)
+
+### FTX Exchange
+## Nama
+FTX
+## Alias
+FTX.com
+## Jenis
+Exchange
+## Internal / External
+External
+## Status
+Defunct
+## Fungsi Utama
+Distribution
+## Deskripsi Singkat
+CEX yang melisting APT awal Oktober 2022; operasi berhenti November 2022.
+## Periode Keterlibatan
+2022-10-17–2022-11-11
+## Bukti
+- Sumber: CoinGecko Historical Markets, https://www.coingecko.com/en/coins/aptos#markets (MEDIUM)
+- Sumber: Reuters FTX Collapse, https://www.reuters.com/technology/ftx-files-bankruptcy-2022-11-11/ (HIGH)
+
+### OKX
+## Nama
+OKX
+## Alias
+OKEx
+## Jenis
+Exchange
+## Internal / External
+External
+## Status
+Active
+## Fungsi Utama
+Distribution
+## Deskripsi Singkat
+CEX global yang melisting APT awal Oktober 2022.
+## Periode Keterlibatan
+2022-10-17–Sekarang
+## Bukti
+- Sumber: OKX Announcement, https://www.okx.com/support/hc/en-us/articles/115003822453 (MEDIUM)
+- Sumber: CoinGecko Markets APT, https://www.coingecko.com/en/coins/aptos#markets (HIGH)
+
+### Bybit
+## Nama
+Bybit
+## Alias
+Tidak ada
+## Jenis
+Exchange
+## Internal / External
+External
+## Status
+Active
+## Fungsi Utama
+Distribution
+## Deskripsi Singkat
+CEX derivatif/global yang melisting APT awal peluncuran.
+## Periode Keterlibatan
+2022-10-17–Sekarang
+## Bukti
+- Sumber: Bybit Announcement, https://announcements.bybit.com/en/article/bybit-lists-aptos-apt/ (MEDIUM)
+- Sumber: CoinGecko Markets APT, https://www.coingecko.com/en/coins/aptos#markets (HIGH)
+
+### Kraken
+## Nama
+Kraken
+## Alias
+Tidak ada
+## Jenis
+Exchange
+## Internal / External
+External
+## Status
+Active
+## Fungsi Utama
+Distribution
+## Deskripsi Singkat
+CEX berbasis AS yang melisting APT awal 2023.
+## Periode Keterlibatan
+2023–Sekarang
+## Bukti
+- Sumber: Kraken Blog, https://blog.kraken.com/post/3624/aptos-apt-now-available-on-kraken/ (HIGH)
+- Sumber: CoinGecko Markets APT, https://www.coingecko.com/en/coins/aptos#markets (HIGH)
+
+### Petra Wallet
+## Nama
+Petra Wallet
+## Alias
+Tidak ada
+## Jenis
+Wallet
+## Internal / External
+Internal
+## Status
+Active
+## Fungsi Utama
+Application
+## Deskripsi Singkat
+Dompet non-custodial resmi ekosistem Aptos, dikembangkan dan dipelihara oleh Aptos Labs.
+## Periode Keterlibatan
+2022–Sekarang
+## Bukti
+- Sumber: Petra Wallet Website, https://petra.app/ (HIGH)
+- Sumber: Aptos Ecosystem Page, https://aptoslabs.com/ecosystem (HIGH)
+
+### Martian Wallet
+## Nama
+Martian Wallet
+## Alias
+Tidak ada
+## Jenis
+Wallet
+## Internal / External
+External
+## Status
+Active
+## Fungsi Utama
+Application
+## Deskripsi Singkat
+Dompet non-custodial populer ekosistem Aptos (browser extension & mobile), dikembangkan oleh Martian Labs.
+## Periode Keterlibatan
+2022–Sekarang
+## Bukti
+- Sumber: Martian Wallet Website, https://martianwallet.xyz/ (HIGH)
+- Sumber: Chrome Web Store, https://chromewebstore.google.com/detail/martian-aptos-wallet/efbglgofoippbgcjepnhiblaibcnclgk (MEDIUM)
+
+### Pontem Wallet
+## Nama
+Pontem Wallet
+## Alias
+Tidak ada
+## Jenis
+Wallet
+## Internal / External
+External
+## Status
+Active
+## Fungsi Utama
+Application
+## Deskripsi Singkat
+Dompet multi-chain (Aptos, Move chains) dikembangkan oleh Pontem Network.
+## Periode Keterlibatan
+2022–Sekarang
+## Bukti
+- Sumber: Pontem Wallet Website, https://pontem.network/wallet (HIGH)
+- Sumber: Aptos Ecosystem, https://aptoslabs.com/ecosystem (MEDIUM)
+
+### Fewcha Wallet
+## Nama
+Fewcha Wallet
+## Alias
+Tidak ada
+## Jenis
+Wallet
+## Internal / External
+External
+## Status
+Active
+## Fungsi Utama
+Application
+## Deskripsi Singkat
+Dompet non-custodial Aptos dengan fitar NFT dan staking bawaan, dikembangkan Fewcha Team.
+## Periode Keterlibatan
+2022–Sekarang
+## Bukti
+- Sumber: Fewcha Wallet Website, https://fewcha.app/ (HIGH)
+- Sumber: Aptos Ecosystem, https://aptoslabs.com/ecosystem (MEDIUM)
+
+### Rise Wallet
+## Nama
+Rise Wallet
+## Alias
+Tidak ada
+## Jenis
+Wallet
+## Internal / External
+External
+## Status
+Active
+## Fungsi Utama
+Application
+## Deskripsi Singkat
+Dompet mobile-first untuk ekosistem Aptos dan Sui, dikembangkan Rise Wallet Team.
+## Periode Keterlibatan
+2023–Sekarang
+## Bukti
+- Sumber: Rise Wallet Website, https://risewallet.io/ (HIGH)
+- Sumber: Aptos Ecosystem, https://aptoslabs.com/ecosystem (MEDIUM)
+
+### Aptos Explorer (Official)
+## Nama
+Aptos Explorer
+## Alias
+Official Explorer
+## Jenis
+Application
+## Internal / External
+Internal
+## Status
+Active
+## Fungsi Utama
+Infrastructure
+## Deskripsi Singkat
+Block explorer resmi yang dioperasikan Aptos Labs untuk mainnet, testnet, devnet.
+## Periode Keterlibatan
+2022–Sekarang
+## Bukti
+- Sumber: Explorer URL, https://explorer.aptoslabs.com/ (HIGH)
+- Sumber: Aptos Dev Docs, https://aptos.dev/tools/explorer (HIGH)
+
+### AptosScan
+## Nama
+AptosScan
+## Alias
+Tidak ada
+## Jenis
+Application
+## Internal / External
+External
+## Status
+Active
+## Fungsi Utama
+Infrastructure
+## Deskripsi Singkat
+Block explorer komunitas/pihak ketiga yang dibangun oleh NodeReal.
+## Periode Keterlibatan
+2022–Sekarang
+## Bukti
+- Sumber: AptosScan Website, https://www.aptoscan.com/ (HIGH)
+- Sumber: NodeReal Blog, https://www.nodereal.io/post/aptoscan-launch (MEDIUM)
+
+### NodeReal
+## Nama
+NodeReal
+## Alias
+Tidak ada
+## Jenis
+Infrastructure Provider
+## Internal / External
+External
+## Status
+Active
+## Fungsi Utama
+Infrastructure
+## Deskripsi Singkat
+Penyedia infrastruktur RPC, node, dan explorer (AptosScan) untuk ekosistem Aptos.
+## Periode Keterlibatan
+2022–Sekarang
+## Bukti
+- Sumber: NodeReal Aptos Page, https://www.nodereal.io/aptos (HIGH)
+- Sumber: Aptos Ecosystem Infrastructure, https://aptoslabs.com/ecosystem/infrastructure (MEDIUM)
+
+### Ankr
+## Nama
+Ankr
+## Alias
+Tidak ada
+## Jenis
+Infrastructure Provider
+## Internal / External
+External
+## Status
+Active
+## Fungsi Utama
+Infrastructure
+## Deskripsi Singkat
+Penyedia RPC dan staking infrastructure untuk Aptos.
+## Periode Keterlibatan
+2022–Sekarang
+## Bukti
+- Sumber: Ankr Aptos Docs, https://www.ankr.com/rpc/aptos/ (HIGH)
+- Sumber: Aptos Ecosystem Infrastructure, https://aptoslabs.com/ecosystem/infrastructure (MEDIUM)
+
+### QuickNode
+## Nama
+QuickNode
+## Alias
+Tidak ada
+## Jenis
+Infrastructure Provider
+## Internal / External
+External
+## Status
+Active
+## Fungsi Utama
+Infrastructure
+## Deskripsi Singkat
+Penyedia endpoint RPC performa tinggi untuk Aptos Mainnet/Testnet.
+## Periode Keterlibatan
+2022–Sekarang
+## Bukti
+- Sumber: QuickNode Aptos, https://www.quicknode.com/chains/aptos (HIGH)
+- Sumber: Aptos Ecosystem Infrastructure, https://aptoslabs.com/ecosystem/infrastructure (MEDIUM)
+
+### Google Cloud
+## Nama
+Google Cloud
+## Alias
+GCP
+## Jenis
+Infrastructure Provider
+## Internal / External
+External
+## Status
+Active
+## Fungsi Utama
+Infrastructure
+## Deskripsi Singkat
+Menjalankan validator node Aptos dan menyediakan layanan Blockchain Node Engine untuk Aptos.
+## Periode Keterlibatan
+2022–Sekarang
+## Bukti
+- Sumber: Google Cloud Blockchain Node Engine, https://cloud.google.com/blockchain-node-engine/docs/aptos (HIGH)
+- Sumber: Aptos Blog Validator, https://aptoslabs.com/aptos-mainnet-validators (MEDIUM)
+
+### Amazon Web Services (AWS)
+## Nama
+Amazon Web Services
+## Alias
+AWS
+## Jenis
+Infrastructure Provider
+## Internal / External
+External
+## Status
+Active
+## Fungsi Utama
+Infrastructure
+## Deskripsi Singkat
+Menyediakan Amazon Managed Blockchain untuk Aptos dan menjalankan validator node.
+## Periode Keterlibatan
+2023–Sekarang
+## Bukti
+- Sumber: AWS Managed Blockchain Aptos, https://aws.amazon.com/managed-blockchain/aptos/ (HIGH)
+- Sumber: Aptos Blog, https://aptoslabs.com/aws-managed-blockchain-aptos (MEDIUM)
+
+### OtterSec
+## Nama
+OtterSec
+## Alias
+Tidak ada
+## Jenis
+Auditor
+## Internal / External
+External
+## Status
+Active
+## Fungsi Utama
+Security
+## Deskripsi Singkat
+Firma audit keamanan yang mengaudit protokol inti Aptos (MoveVM, Consensus) dan aplikasi ekosistem.
+## Periode Keterlibatan
+2022–Sekarang
+## Bukti
+- Sumber: OtterSec Audit Reports, https://ottersec.io/resources/ (HIGH)
+- Sumber: Aptos Blog Security, https://aptoslabs.com/security-audits (MEDIUM)
+
+### Trail of Bits
+## Nama
+Trail of Bits
+## Alias
+Tidak ada
+## Jenis
+Auditor
+## Internal / External
+External
+## Status
+Active
+## Fungsi Utama
+Security
+## Deskripsi Singkat
+Firma keamanan yang melakukan review kode MoveVM dan framework Aptos.
+## Periode Keterlibatan
+2022–Sekarang
+## Bukti
+- Sumber: Trail of Bits Portfolio, https://www.trailofbits.com/portfolio/ (MEDIUM)
+- Sumber: Aptos Blog Security, https://aptoslabs.com/security-audits (MEDIUM)
+
+### CertiK
+## Nama
+CertiK
+## Alias
+Tidak ada
+## Jenis
+Auditor
+## Internal / External
+External
+## Status
+Active
+## Fungsi Utama
+Security
+## Deskripsi Singkat
+Firma audit yang mengaudit kontrak Move pada ekosistem Aptos (PancakeSwap, Thala, dll) dan Skynet monitoring.
+## Periode Keterlibatan
+2022–Sekarang
+## Bukti
+- Sumber: CertiK Skynet Aptos, https://www.certik.com/projects/aptos (HIGH)
+- Sumber: CertiK Audit Reports, https://www.certik.com/audit-reports (MEDIUM)
+
+### Halborn
+## Nama
+Halborn
+## Alias
+Tidak ada
+## Jenis
+Auditor
+## Internal / External
+External
+## Status
+Active
+## Fungsi Utama
+Security
+## Deskripsi Singkat
+Firma keamanan yang mengaudit smart contract dan infrastruktur proyek Aptos.
+## Periode Keterlibatan
+2022–Sekarang
+## Bukti
+- Sumber: Halborn Case Studies, https://halborn.com/case-studies/ (MEDIUM)
+- Sumber: Aptos Ecosystem Security, https://aptoslabs.com/ecosystem/security (MEDIUM)
+
+### Zellic
+## Nama
+Zellic
+## Alias
+Tidak ada
+## Jenis
+Auditor
+## Internal / External
+External
+## Status
+Active
+## Fungsi Utama
+Security
+## Deskripsi Singkat
+Firma audit khusus Move/Rust yang mengaudit protokol DeFi utama di Aptos (Thala, Aries, Amnis).
+## Periode Keterlibatan
+2022–Sekarang
+## Bukti
+- Sumber: Zellic Audit Reports, https://zellic.io/audits/ (HIGH)
+- Sumber: Thala Blog Audit, https://blog.thala.fi/thala-security-audits/ (MEDIUM)
+
+### Spearbit
+## Nama
+Spearbit
+## Alias
+Tidak ada
+## Jenis
+Auditor
+## Internal / External
+External
+## Status
+Active
+## Fungsi Utama
+Security
+## Deskripsi Singkat
+Platform audit terdesentralisasi yang mengkoordinasikan audit kompetitif untuk protokol Aptos.
+## Periode Keterlibatan
+2023–Sekarang
+## Bukti
+- Sumber: Spearbit Portfolio, https://spearbit.com/portfolio (MEDIUM)
+- Sumber: Aptos Foundation Grants, https://aptosfoundation.org/grants (MEDIUM)
+
+### Wormhole
+## Nama
+Wormhole
+## Alias
+Tidak ada
+## Jenis
+Protocol
+## Internal / External
+External
+## Status
+Active
+## Fungsi Utama
+Infrastructure
+## Deskripsi Singkat
+Protokol pesan lintas-chain (cross-chain messaging) yang menghubungkan Aptos dengan Ethereum, Solana, dll.
+## Periode Keterlibatan
+2023–Sekarang
+## Bukti
+- Sumber: Wormhole Aptos Announcement, https://wormhole.com/blog/aptos-mainnet-launch (HIGH)
+- Sumber: Aptos Blog Wormhole, https://aptoslabs.com/wormhole-aptos (MEDIUM)
+
+### LayerZero
+## Nama
+LayerZero
+## Alias
+Tid
