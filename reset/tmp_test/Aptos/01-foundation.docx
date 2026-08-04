@@ -1,0 +1,29 @@
+PROJECT: Aptos
+Official Name: Aptos (HIGH) [Aptos Labs Website, https://aptoslabs.com]
+Symbol: APT (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/aptos]
+Category: Layer 1 blockchain berbasis Move / Smart contract platform (HIGH) [Aptos Whitepaper, https://aptoslabs.com/whitepaper]
+Founding Entity: Aptos Labs, Inc. (Delaware, AS) — entity pengembangan protokol; Aptos Foundation (Kepulauan Kaiman) — entity ekosistem, grant, dan governance (HIGH) [Aptos Blog, https://aptoslabs.com/blog/introducing-the-aptos-foundation; Crunchbase, https://www.crunchbase.com/organization/aptos-labs]
+Founders: Mo Shaikh (CEO, Co-founder); Avery Ching (CTO, Co-founder) (HIGH) [Aptos Labs Team Page, https://aptoslabs.com/team; Forbes, https://www.forbes.com/profile/mo-shaikh]
+Core Team: ~100+ karyawan per laporan prensa Oktober 2022; nama inti terverifikasi: Mo Shaikh (CEO), Avery Ching (CTO), Chiahsien Leonard Wu (VP Engineering), Basil Gorin (Head of Ecosystem), Michael Blank (COO) — ukuran tim pasti per 2024 tidak diungkap resmi (MEDIUM) [The Block, https://www.theblock.co/post/170000/aptos-labs-raises-150m; Aptos Labs Team Page, https://aptoslabs.com/team]
+Country: Amerika Serikat (HQ: Palo Alto, California) (HIGH) [Crunchbase, https://www.crunchbase.com/organization/aptos-labs; Aptos Labs Contact, https://aptoslabs.com/contact]
+Launch Date - Testnet: Devnet publik: Maret 2022; Incentivized Testnet 1 (AIT1): 31 Mei 2022; AIT2: 28 Juli 2022; AIT3: 18 Agustus 2022; AIT4: 15 September 2022 (HIGH) [Aptos Blog AIT1, https://aptoslabs.com/blog/aptos-incentivized-testnet-1; Aptos Blog AIT4, https://aptoslabs.com/blog/aptos-incentivized-testnet-4]
+Launch Date - Mainnet: 17 Oktober 2022 (HIGH) [Aptos Blog Mainnet Launch, https://aptoslabs.com/blog/aptos-mainnet-launches-today]
+Launch Date - TGE: 17 Oktober 2022 (coincide mainnet launch) (HIGH) [Aptos Blog Tokenomics, https://aptoslabs.com/blog/aptos-tokenomics; CoinDesk, https://www.coindesk.com/business/2022/10/17/aptos-mainnet-launches-with-apt-token/]
+Main Products: Aptos Blockchain (Layer 1); Move Programming Language (bahasa smart contract); Petra Wallet (wallet resmi); Aptos Explorer (block explorer resmi); Aptos Names Service (ANS); Aptos SDKs (Typescript, Python, Rust, Unity) (HIGH) [Aptos Developer Hub, https://aptos.dev; Petra Wallet Site, https://petra.app]
+Official Website: https://aptoslabs.com; https://aptosfoundation.org (HIGH) [Direct verification]
+Repository: https://github.com/aptos-labs/aptos-core (HIGH) [GitHub Org, https://github.com/aptos-labs]
+Documentation: https://aptos.dev (HIGH) [Direct verification]
+Social - X/Twitter: @aptoslabs; @Aptos_Foundation (HIGH) [Twitter Profile, https://x.com/aptoslabs]
+Social - Discord: https://discord.gg/aptoslabs (HIGH) [Aptos Website Footer, https://aptoslabs.com]
+Social - Telegram: https://t.me/aptoslabs (channel resmi); https://t.me/aptoscommunity (grup komunitas) (HIGH) [Aptos Website Footer, https://aptoslabs.com]
+Block Explorer: https://explorer.aptoslabs.com (resmi); https://aptoscan.com (komunitas) (HIGH) [Aptos Dev Docs, https://aptos.dev/en/network/explorers]
+Token Contract: Native coin pada chain Aptos — tipe resource `0x1::aptos_coin::AptosCoin` (bukan kontrak ERC-20) (HIGH) [Aptos Framework Doc, https://aptos.dev/en/build/smart-contracts/book/native-coin]
+Chain(s): Aptos Mainnet (HIGH) [Aptos Explorer, https://explorer.aptoslabs.com]
+Ecosystem: Ekosistem Move (Aptos, Sui, Movement); DeFi (Liquidswap, PancakeSwap v3, Thala, Cellana, Amnis Finance); NFT Marketplace (Topaz, BlueMove, Souffl3); Gaming; Infrastructure (LayerZero, Wormhole, Pyth, Switchboard, Chainlink) (HIGH) [Aptos Foundation Ecosystem, https://aptosfoundation.org/ecosystem; DefiLlama Aptos, https://defillama.com/chain/Aptos]
+
+Open Threads
+- Tanggal pasti peluncuran Devnet publik pertama vs internal testnet (beberapa sumber menyebut Februari 2022, other Maret 2022)
+- Ukuran tim inti (core team) yang diverifikasi resmi per 2024/2025 (data Crunchbase/LinkedIn bervariasi)
+- Detail yuridiksi hukum Aptos Foundation (Cayman Islands dikonfirmasi tapi butuh sitasi primer legal filing)
+- Format alamat token contract untuk integrasi exchange (Move object address vs representasi hex standar)
+- Model governance on-chain resmi dan timeline fee-switch/token utility expansion pasca-TGE
