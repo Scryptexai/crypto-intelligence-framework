@@ -45,15 +45,24 @@ Usage:
     python3 reset/run_deepseek_reset.py --project Aptos                   # test all 11 phases, one project
     python3 reset/run_deepseek_reset.py --dry-run                         # no real API calls at all
     python3 reset/run_deepseek_reset.py --commit                          # the real run, every project in projects.txt
+    python3 reset/run_deepseek_reset.py --commit --parallel 4             # 4 projects at once instead of one at a time
+
+--parallel N runs N projects concurrently (each project is its own independent conversation, so
+there's no shared state to corrupt) instead of one at a time. The per-phase/per-project sleep
+gaps still apply, just per-thread rather than globally serialized -- this multiplies throughput
+by N, so raise it gradually and watch for rate-limit errors in reset/failures.log rather than
+jumping straight to a large number.
 """
 import argparse
 import json
 import os
 import re
 import sys
+import threading
 import time
 import urllib.error
 import urllib.request
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -77,16 +86,22 @@ RETRY_BACKOFF_SECONDS = [30, 90, 180]
 MIN_PHASE_CHARS = 400  # matches tools/ingest.py's own MIN_PHASE_CHARS
 
 
+_print_lock = threading.Lock()
+_failures_lock = threading.Lock()
+
+
 def log(msg: str) -> None:
     ts = datetime.now(timezone.utc).strftime("%H:%M:%S")
-    print(f"[{ts}] {msg}", flush=True)
+    with _print_lock:
+        print(f"[{ts}] {msg}", flush=True)
 
 
 def log_failure(project: str, num: int, key: str, err: Exception) -> None:
     FAILURES_LOG.parent.mkdir(parents=True, exist_ok=True)
     ts = datetime.now(timezone.utc).isoformat()
-    with FAILURES_LOG.open("a", encoding="utf-8") as fh:
-        fh.write(f"{ts}\t{project}\tphase {num:02d}-{key}\t{err}\n")
+    with _failures_lock:
+        with FAILURES_LOG.open("a", encoding="utf-8") as fh:
+            fh.write(f"{ts}\t{project}\tphase {num:02d}-{key}\t{err}\n")
 
 
 def load_projects(path: Path) -> list:
@@ -178,7 +193,10 @@ def run_project(name: str, base_url: str, token: str, model: str, dry_run: bool,
     phase failed permanently (all retries exhausted) -- in which case later phases for this
     project are skipped (they need this one's output as context) but the run continues to the
     NEXT project rather than aborting everything."""
-    log(f"=== Project: {name} ===")
+    def plog(msg: str) -> None:
+        log(f"[{name}] {msg}")
+
+    plog("=== starting ===")
     proj_dir = output_root / name
     proj_dir.mkdir(parents=True, exist_ok=True)
     messages: list = []  # running chat history -- Track C's "one continuous chat" methodology
@@ -191,30 +209,29 @@ def run_project(name: str, base_url: str, token: str, model: str, dry_run: bool,
         prompt = prompt_template.replace("<NAMA PROJECT>", name) if num == 1 else prompt_template
 
         if existing_phase_ok(out_path):
-            log(f"  phase {num:02d}-{key}: already done, resuming (loading into context, no API call)")
+            plog(f"phase {num:02d}-{key}: already done, resuming (loading into context, no API call)")
             existing_text = out_path.read_text(encoding="utf-8")
             messages.append({"role": "user", "content": prompt})
             messages.append({"role": "assistant", "content": existing_text})
             continue
 
-        log(f"  phase {num:02d}-{key}: sending...")
+        plog(f"phase {num:02d}-{key}: sending...")
         messages.append({"role": "user", "content": prompt})
 
         if dry_run:
             fake = f"PROJECT: {name}\n\n[DRY RUN -- no real API call made for phase {num:02d}-{key}]\n"
             out_path.write_text(fake, encoding="utf-8")
             messages.append({"role": "assistant", "content": fake})
-            log(f"  phase {num:02d}-{key}: [dry-run] wrote placeholder -> {out_path}")
+            plog(f"phase {num:02d}-{key}: [dry-run] wrote placeholder -> {out_path}")
         else:
             phase_label = f"{name} phase {num:02d}-{key}"
             try:
                 text = call_with_retries(messages, base_url, token, model, phase_label)
             except Exception as e:  # noqa: BLE001
-                log(f"  ✗✗ {phase_label} permanently failed, giving up on this project "
-                    f"for now: {e}")
+                plog(f"✗✗ {phase_label} permanently failed, giving up on this project for now: {e}")
                 log_failure(name, num, key, e)
-                log(f"  (later phases for {name} need this one's output, so skipping the rest of "
-                    f"{name} -- re-run this script later and it will resume from here)")
+                plog(f"(later phases for {name} need this one's output, so skipping the rest of "
+                     f"{name} -- re-run this script later and it will resume from here)")
                 return False
             if not re.match(r"(?im)^PROJECT:\s*" + re.escape(name), text.strip()):
                 # Always prepend PROJECT: <Name> -- tools/ingest.py's validate_phase_content()
@@ -223,23 +240,23 @@ def run_project(name: str, base_url: str, token: str, model: str, dry_run: bool,
                 text = f"PROJECT: {name}\n\n{text}"
             out_path.write_text(text, encoding="utf-8")
             messages.append({"role": "assistant", "content": text})
-            log(f"  phase {num:02d}-{key}: done ({len(text)} chars) -> {out_path}")
+            plog(f"phase {num:02d}-{key}: done ({len(text)} chars) -> {out_path}")
 
         if idx < len(phases) - 1:
-            log(f"  sleeping {PHASE_SLEEP_SECONDS}s before next phase...")
+            plog(f"sleeping {PHASE_SLEEP_SECONDS}s before next phase...")
             time.sleep(PHASE_SLEEP_SECONDS)
 
     # Deliberately NO automatic ./run.sh / ./run.sh sync call, in either mode -- pushing output
     # (test or real) into the assembled dossier or the live database is a decision a human makes
     # after reading it, never an automatic side effect of an API call finishing. See reset/README.md.
     if output_root == DATA_PROJECT_ROOT:
-        log(f"=== {name}: all requested phases done, written to data_project/{name}/. "
-            f"Review the content, then run './run.sh' (assemble) and './run.sh sync' (push to "
-            f"the database) yourself from the repo root when you're satisfied with it. ===")
+        plog(f"=== all requested phases done, written to data_project/{name}/. "
+             f"Review the content, then run './run.sh' (assemble) and './run.sh sync' (push to "
+             f"the database) yourself from the repo root when you're satisfied with it. ===")
     else:
-        log(f"=== {name}: all requested phases done -- TEST run, written to "
-            f"{output_root}/{name}/ (not the real dataset). Review it, then re-run with "
-            f"--commit once you trust the quality. ===")
+        plog(f"=== all requested phases done -- TEST run, written to "
+             f"{output_root}/{name}/ (not the real dataset). Review it, then re-run with "
+             f"--commit once you trust the quality. ===")
     return True
 
 
@@ -262,6 +279,12 @@ def main() -> None:
                      help="override where <project>/NN-<phasekey>.docx files get written, instead "
                           "of the --commit-based default (reset/tmp_test/, or data_project/ if "
                           "--commit is passed). Rarely needed directly.")
+    ap.add_argument("--parallel", type=int, default=1,
+                     help="process this many projects concurrently instead of one at a time "
+                          "(default 1 = sequential, the original behavior). Each project is an "
+                          "independent conversation/thread, so there's no shared state between "
+                          "them -- raise gradually and watch reset/failures.log for rate-limit "
+                          "errors rather than jumping straight to a large number.")
     args = ap.parse_args()
     if args.output_root:
         output_root = Path(args.output_root).resolve()
@@ -287,12 +310,30 @@ def main() -> None:
 
     mode = "COMMIT (writing to data_project/, the real dataset)" if output_root == DATA_PROJECT_ROOT \
         else f"TEST (writing to {output_root}, not the real dataset -- pass --commit for a real run)"
-    log(f"Starting reset pipeline for {len(projects)} project(s): {', '.join(projects)} -- mode: {mode}")
-    for i, name in enumerate(projects):
-        run_project(name, base_url, token, model, args.dry_run, args.phases_limit, output_root)
-        if i < len(projects) - 1:
-            log(f"sleeping {PROJECT_SLEEP_SECONDS}s before next project...")
-            time.sleep(PROJECT_SLEEP_SECONDS)
+    log(f"Starting reset pipeline for {len(projects)} project(s): {', '.join(projects)} -- mode: {mode}"
+        + (f" -- parallel={args.parallel}" if args.parallel > 1 else ""))
+
+    if args.parallel > 1:
+        with ThreadPoolExecutor(max_workers=args.parallel) as pool:
+            futures = {}
+            for i, name in enumerate(projects):
+                # Small stagger so N threads don't all hit the API in the same instant.
+                if i:
+                    time.sleep(5)
+                futures[pool.submit(run_project, name, base_url, token, model, args.dry_run,
+                                     args.phases_limit, output_root)] = name
+            for fut in as_completed(futures):
+                name = futures[fut]
+                try:
+                    fut.result()
+                except Exception as e:  # noqa: BLE001 -- a thread crashing shouldn't kill the others
+                    log(f"[{name}] ✗✗ unexpected exception, this project's thread crashed: {e}")
+    else:
+        for i, name in enumerate(projects):
+            run_project(name, base_url, token, model, args.dry_run, args.phases_limit, output_root)
+            if i < len(projects) - 1:
+                log(f"sleeping {PROJECT_SLEEP_SECONDS}s before next project...")
+                time.sleep(PROJECT_SLEEP_SECONDS)
 
     log("All projects processed. Check reset/failures.log for anything that needs a manual re-run.")
 

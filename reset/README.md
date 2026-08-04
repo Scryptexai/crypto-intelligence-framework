@@ -58,15 +58,21 @@ python3 reset/run_deepseek_reset.py --project Aptos --commit
 
 # The real run -- every project in projects.txt, all 11 phases each, unattended, writing to data_project/:
 python3 reset/run_deepseek_reset.py --commit
+
+# Same, but 4 projects processed concurrently instead of one at a time:
+python3 reset/run_deepseek_reset.py --commit --parallel 4
 ```
 
-Run the real (`--commit`) run in the background (`nohup ... &`, `tmux`, or similar) — it's designed to take
-hours (60s between phases, 300s between projects, times 11 phases times however many projects are queued)
-and survive being interrupted: it's resumable. If it's stopped and restarted, it checks each phase's output
-file in the active output root (`data_project/<Project>/NN-<phasekey>.docx` with `--commit`,
-`reset/tmp_test/<Project>/NN-<phasekey>.docx` without it) before calling the API again — anything already
-there (and long enough to be real content, not a stub) is loaded back into the running conversation as
-context instead of being regenerated, so restarting never wastes API calls redoing finished work.
+Run the real (`--commit`) run in the background (`nohup ... &`, `tmux`, or similar) — sequentially it's
+designed to take hours (60s between phases, 300s between projects, times 11 phases times however many
+projects are queued); `--parallel N` divides that by roughly N since each project is an independent
+conversation running in its own thread — raise it gradually and watch `reset/failures.log` for rate-limit
+errors rather than jumping straight to a large number. Either way it survives being interrupted: it's
+resumable. If it's stopped and restarted, it checks each phase's output file in the active output root
+(`data_project/<Project>/NN-<phasekey>.docx` with `--commit`, `reset/tmp_test/<Project>/NN-<phasekey>.docx`
+without it) before calling the API again — anything already there (and long enough to be real content, not
+a stub) is loaded back into the running conversation as context instead of being regenerated, so restarting
+never wastes API calls redoing finished work.
 
 After a `--commit` run (or once you've committed the projects you've reviewed), from the repo root:
 
