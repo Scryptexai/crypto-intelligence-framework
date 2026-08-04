@@ -304,7 +304,12 @@ ATURAN
   - Evidence
   - Supporting Dataset
   - Confidence (High / Medium / Low)
-- Evidence harus mengacu pada dataset internal (contoh: Phase 3 Event H-014, Phase 5 Funding History, Phase 9 Decision Pattern).
+- Evidence harus mengacu pada dataset internal, dan setiap rujukan WAJIB dibungkus format 【Phase N — Label】
+  tepat menempel di klaim yang didukungnya — bukan daftar longgar di akhir kalimat. Benar: "Mainnet live
+  31 Agustus 2021【Phase 3 — EV-013】; TGE 16 Maret 2023【Phase 3 — EV-024】." Salah: "Evidence: Phase 3 Event
+  EV-013, Phase 5 Funding History" (tanpa bracket 【】, tidak menempel per-klaim). Ini bukan gaya penulisan
+  bebas — file ini diparsing otomatis oleh tools/ingest.py yang mencari pola 【...】 sebagai bukti sitasi;
+  tanpanya seluruh fase ditolak walau isinya benar dan bersumber.
 - Sources harus berupa URL lengkap yang berasal dari dataset sebelumnya; jangan menambahkan sumber baru.
 - Bedakan dengan jelas antara fakta, interpretasi, dan generalisasi.
 - Jangan menggunakan tabel dalam bentuk apa pun; seluruh output harus berupa heading, sub-heading, dan bullet agar mudah diparsing dari file DOCX.
