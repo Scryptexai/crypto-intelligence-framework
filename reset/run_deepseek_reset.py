@@ -208,6 +208,19 @@ def existing_phase_ok(path: Path) -> bool:
     return path.exists() and len(path.read_text(encoding="utf-8").strip()) >= MIN_PHASE_CHARS
 
 
+def _prompt_placeholder(num: int, key: str) -> str:
+    """Stand-in for a COMPLETED phase's full prompt text once its real output is already in
+    context. The instructions themselves add no new information once the phase they produced is
+    sitting right below them (unmodified, in full) -- keeping them around just means re-sending
+    the same ~2-8k chars of template/rules text on every later call for no benefit. By phase 11
+    this was the majority of the payload: summing reset/phase_*.txt + shared_format_rules.txt
+    (which gets appended to every single phase prompt) came to ~58k chars of prompt text alone,
+    repeated in full for every one of the 10 prior phases. Shrinking old prompts to this marker
+    while leaving every real answer untouched cuts phase 11's total request size roughly in half
+    without losing a single fact the model actually produced."""
+    return f"[Phase {num:02d}-{key} instructions were sent here; see this phase's full output below.]"
+
+
 def run_project(name: str, base_url: str, token: str, model: str, dry_run: bool, phases_limit: int,
                 output_root: Path) -> bool:
     """Returns True if every requested phase completed (real or resumed-from-disk), False if a
@@ -232,7 +245,10 @@ def run_project(name: str, base_url: str, token: str, model: str, dry_run: bool,
         if existing_phase_ok(out_path):
             plog(f"phase {num:02d}-{key}: already done, resuming (loading into context, no API call)")
             existing_text = out_path.read_text(encoding="utf-8")
-            messages.append({"role": "user", "content": prompt})
+            # Already-completed phase: keep the full real output, shrink the prompt that produced
+            # it (see _prompt_placeholder's docstring) -- applies whether we're resuming a phase
+            # finished in a previous run or one just finished earlier in this same loop.
+            messages.append({"role": "user", "content": _prompt_placeholder(num, key)})
             messages.append({"role": "assistant", "content": existing_text})
             continue
 
@@ -243,6 +259,7 @@ def run_project(name: str, base_url: str, token: str, model: str, dry_run: bool,
             fake = f"PROJECT: {name}\n\n[DRY RUN -- no real API call made for phase {num:02d}-{key}]\n"
             out_path.write_text(fake, encoding="utf-8")
             messages.append({"role": "assistant", "content": fake})
+            messages[-2]["content"] = _prompt_placeholder(num, key)
             plog(f"phase {num:02d}-{key}: [dry-run] wrote placeholder -> {out_path}")
         else:
             phase_label = f"{name} phase {num:02d}-{key}"
@@ -261,6 +278,11 @@ def run_project(name: str, base_url: str, token: str, model: str, dry_run: bool,
                 text = f"PROJECT: {name}\n\n{text}"
             out_path.write_text(text, encoding="utf-8")
             messages.append({"role": "assistant", "content": text})
+            # This phase is now complete -- shrink its just-sent full prompt (still the full
+            # instructions, needed for the call that just happened) down to the short marker so
+            # it doesn't get re-sent in full on every subsequent phase's request. The real output
+            # right above it is untouched.
+            messages[-2]["content"] = _prompt_placeholder(num, key)
             plog(f"phase {num:02d}-{key}: done ({len(text)} chars) -> {out_path}")
 
         if idx < len(phases) - 1:
