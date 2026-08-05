@@ -353,29 +353,44 @@ def run_phase_11(name: str, base_url: str, token: str, model: str, proj_dir: Pat
     # the last one (an earlier version of this function kept only the final stage's response,
     # which silently dropped every raw Inventory listing from stages 11a-11c -- exactly the kind
     # of value loss this whole design is meant to avoid).
+    # Per-stage resumability: each stage's raw response is saved to its own .tmp file the moment
+    # it succeeds. If a later stage then fails (all retries exhausted) and this function gets
+    # called again on a subsequent run, already-completed stages are loaded back from disk instead
+    # of re-calling the API for them -- otherwise every retry would burn a fresh call (and the
+    # matching PHASE_SLEEP_SECONDS wait) re-doing stages that already succeeded, on top of whatever
+    # made the failing stage slow/flaky in the first place.
+    def stage_tmp_path(key: str) -> Path:
+        return proj_dir / f"11-stage-{key}.tmp"
+
     all_responses = []
     prior_response = None
     prior_stage_label = None
     for stage_key, prompt_file, phase_specs in PHASE11_STAGES:
-        prompt = (RESET_DIR / prompt_file).read_text(encoding="utf-8").rstrip() \
-            + "\n\n" + load_shared_format_rules().rstrip() + "\n"
-        prompt = _inject_phase_dataset(prompt, proj_dir, phase_specs)
-
-        if prior_response is None:
-            messages = [{"role": "user", "content": prompt}]
+        tmp_path = stage_tmp_path(stage_key)
+        if tmp_path.exists() and len(tmp_path.read_text(encoding="utf-8").strip()) >= MIN_PHASE_CHARS:
+            response = tmp_path.read_text(encoding="utf-8")
+            log(f"  [{name}] phase {stage_key}: already done, resuming from {tmp_path.name} (no API call)")
         else:
-            messages = [
-                {"role": "user", "content": f"[Phase {prior_stage_label} instructions and its "
-                                             f"phase dataset were sent here; see that stage's "
-                                             f"full findings below.]"},
-                {"role": "assistant", "content": prior_response},
-                {"role": "user", "content": prompt},
-            ]
-        try:
-            response = call_with_retries(messages, base_url, token, model, f"{name} phase {stage_key}",
-                                          max_tokens=PHASE11_MAX_TOKENS)
-        except Exception as e:  # noqa: BLE001
-            return None, e
+            prompt = (RESET_DIR / prompt_file).read_text(encoding="utf-8").rstrip() \
+                + "\n\n" + load_shared_format_rules().rstrip() + "\n"
+            prompt = _inject_phase_dataset(prompt, proj_dir, phase_specs)
+
+            if prior_response is None:
+                messages = [{"role": "user", "content": prompt}]
+            else:
+                messages = [
+                    {"role": "user", "content": f"[Phase {prior_stage_label} instructions and its "
+                                                 f"phase dataset were sent here; see that stage's "
+                                                 f"full findings below.]"},
+                    {"role": "assistant", "content": prior_response},
+                    {"role": "user", "content": prompt},
+                ]
+            try:
+                response = call_with_retries(messages, base_url, token, model, f"{name} phase {stage_key}",
+                                              max_tokens=PHASE11_MAX_TOKENS)
+            except Exception as e:  # noqa: BLE001
+                return None, e
+            tmp_path.write_text(response, encoding="utf-8")
 
         all_responses.append(response)
         prior_response = response
@@ -395,6 +410,13 @@ def run_phase_11(name: str, base_url: str, token: str, model: str, proj_dir: Pat
         combined = "\n\n---\n\n".join(r.strip() for r in all_responses)
     if not re.match(r"(?im)^PROJECT:\s*" + re.escape(name), combined.strip()):
         combined = f"PROJECT: {name}\n\n{combined}"
+
+    # Success -- the stage .tmp files are now folded into the real 11-conflict.docx output and
+    # would otherwise sit around as stale/confusing leftovers if this project's Phase 11 were ever
+    # re-run (e.g. after a --commit copy or a manual quality re-check).
+    for stage_key, _, _ in PHASE11_STAGES:
+        stage_tmp_path(stage_key).unlink(missing_ok=True)
+
     return combined, None
 
 
@@ -433,10 +455,10 @@ def run_project(name: str, base_url: str, token: str, model: str, dry_run: bool,
             continue
 
         if num == 11:
-            plog("phase 11-conflict: sending as 2 smaller batched calls (11a audit + 11b scoring) "
-                 "-- see run_phase_11()'s docstring for why...")
+            plog(f"phase 11-conflict: sending as {len(PHASE11_STAGES)} smaller sequential stages "
+                 f"({', '.join(s[0] for s in PHASE11_STAGES)}) -- see run_phase_11()'s docstring for why...")
             if dry_run:
-                fake = f"PROJECT: {name}\n\n[DRY RUN -- Phase 11 placeholder, 2-call split]\n"
+                fake = f"PROJECT: {name}\n\n[DRY RUN -- Phase 11 placeholder, {len(PHASE11_STAGES)}-stage split]\n"
                 out_path.write_text(fake, encoding="utf-8")
                 plog(f"phase 11-conflict: [dry-run] wrote placeholder -> {out_path}")
                 continue
