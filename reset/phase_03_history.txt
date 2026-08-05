@@ -92,9 +92,70 @@ Termasuk tetapi tidak terbatas pada:
 
 ========================================================
 
+FORMAT OUTPUT PER EVENT — WAJIB DIIKUTI PERSIS
+
+Tulis SATU blok per event dengan urutan field berikut, masing-masing sebagai LABEL SENDIRIAN di
+satu baris, lalu baris kosong, lalu ISINYA di baris berikutnya (BUKAN "Label: isi" di baris yang
+sama, BUKAN heading markdown "## Label", BUKAN bold "**Label**"). Pisahkan antar-event dengan baris
+"---". File ini diparsing otomatis oleh tools/extract_events.py yang mencari label field INGGRIS
+persis ini masing-masing di baris tersendiri; heading markdown, bold, atau "Label: isi" satu baris
+akan gagal terparsing dan event itu hilang seluruhnya walau datanya benar.
+
+Contoh format yang BENAR (satu event, dari dataset Arbitrum):
+
+```
+Event ID
+
+EV-001
+
+Date
+
+2014
+
+Event Name
+
+Awal Riset Arbitrum sebagai Proyek Kelas di Princeton
+
+Event Type
+
+Research
+
+Description
+
+Arbitrum awalnya dikembangkan sebagai proyek kelas di Princeton University pada tahun 2014.
+
+Participants
+
+Princeton University
+
+Location
+
+Princeton University, AS
+
+Status
+
+Completed
+
+Immediate Result
+
+Dasar akademis untuk pengembangan Arbitrum.
+
+Sources
+
+https://archive.devcon.org/resources/6/on-the-path-to-a-rollup-centric-future.pdf
+
+---
+```
+
+Field-field di bawah ini (Event ID, Date, dst) menjelaskan APA yang harus diisi di tiap label —
+tulis LABEL-nya sendirian di baris ("Event ID", bukan "## Event ID"), lalu isinya di baris
+berikutnya, persis seperti contoh di atas.
+
+========================================================
+
 UNTUK SETIAP EVENT
 
-## Event ID
+Event ID
 
 Gunakan format:
 
@@ -106,7 +167,7 @@ EV-003
 
 ========================================================
 
-## Date
+Date
 
 Gunakan tanggal paling akurat.
 
@@ -122,13 +183,13 @@ YYYY
 
 ========================================================
 
-## Event Name
+Event Name
 
 Nama singkat.
 
 ========================================================
 
-## Event Type
+Event Type
 
 Pilih SATU.
 
@@ -170,7 +231,7 @@ Other
 
 ========================================================
 
-## Description
+Description
 
 Jelaskan fakta yang terjadi.
 
@@ -180,7 +241,7 @@ Jangan memberikan opini.
 
 ========================================================
 
-## Participants
+Participants
 
 Daftar entity yang terlibat.
 
@@ -188,13 +249,13 @@ Gunakan nama yang sama dengan Phase 2.
 
 ========================================================
 
-## Location
+Location
 
 Jika relevan.
 
 ========================================================
 
-## Status
+Status
 
 Completed
 
@@ -206,7 +267,7 @@ Unknown
 
 ========================================================
 
-## Immediate Result
+Immediate Result
 
 Apa hasil langsung dari event tersebut.
 
@@ -214,7 +275,7 @@ Fakta saja.
 
 ========================================================
 
-## Sources
+Sources
 
 Minimal satu URL lengkap.
 
@@ -272,6 +333,10 @@ ATURAN
 - Jangan membuat kesimpulan.
 - Setiap event hanya muncul satu kali.
 - Gunakan nama entity yang konsisten dengan Phase 2.
-- Jangan menggunakan tabel dalam bentuk apa pun; seluruh output harus berupa heading, sub-heading, dan bullet agar mudah diparsing dari file DOCX.
-- Setiap event WAJIB memiliki bagian "Sources" yang berisi minimal satu sumber yang dapat diverifikasi.
+- Jangan menggunakan tabel dalam bentuk apa pun.
+- Setiap blok event WAJIB mengikuti format "FORMAT OUTPUT PER EVENT" di atas persis (label sendirian
+  di baris, isi di baris berikutnya, dipisah "---" antar-event, tanpa heading markdown/bold) —
+  pengelompokan per tahun dan ringkasan boleh tetap pakai heading biasa, tapi isi tiap blok event itu
+  sendiri harus flat text.
+- Setiap event WAJIB memiliki field "Sources" yang berisi minimal satu sumber yang dapat diverifikasi.
 - Jangan menggunakan hyperlink tersembunyi, ikon (🔗), atau anchor text; setiap sumber WAJIB ditulis sebagai URL lengkap (https://...) agar tetap terbawa saat disalin ke DOCX dan dapat diverifikasi.

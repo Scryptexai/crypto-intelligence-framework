@@ -158,25 +158,31 @@ Dukung dengan bukti.
 
 ## Decision Timeline
 
-Untuk setiap keputusan penting
+Untuk setiap keputusan penting, WAJIB tulis dengan format berikut PERSIS — file ini diparsing
+otomatis oleh tools/extract_decision_events.py yang mencari pola "Keputusan: <judul> (<tanggal>)"
+diikuti field berbullet "· Label: isi"; format lain (heading markdown, "Decision:" tanpa
+"Keputusan:", field tanpa bullet "·") akan gagal terparsing dan keputusan itu hilang seluruhnya.
 
-Decision
+Contoh format yang BENAR:
 
-Date
+```
+Keputusan: Establish Blast Foundation di Cayman Islands sebagai entitas hukum (2023-11)
+· Trigger: Perlu legal wrapper untuk token issuance, treasury management, dan compliance sebelum public launch
+· Evidence: <sitasi/evidence yang mendukung>
+· Decision: <apa yang sebenarnya diputuskan/dilakukan>
+· Immediate Result: <hasil langsung dari keputusan>
+· Long-term Impact: <dampak jangka panjang, kalau sudah terlihat>
+· Supporting Dataset: <Phase X EV-XXX, dll>
+```
 
-Trigger
-
-Evidence
-
-Decision
-
-Immediate Result
-
-Long-term Impact
-
-Related Historical Event ID
-
-Supporting Dataset
+Catatan:
+- Baris pertama SELALU diawali literal "Keputusan:" (bukan "Decision:"), diikuti judul singkat, lalu
+  tanggal/periode dalam kurung di akhir baris — ini satu-satunya tempat tanggal ditulis, JANGAN buat
+  field "Date" terpisah.
+- Field di bawahnya WAJIB diawali "· " (bullet titik tengah) dan label PERSIS: Trigger, Evidence,
+  Decision, Immediate Result, Long-term Impact, Supporting Dataset — dalam urutan itu.
+- "Related Historical Event ID" (kalau relevan) boleh disebutkan di dalam teks "Supporting Dataset"
+  (misal "Phase 3 EV-001"), bukan sebagai bullet field terpisah.
 
 ========================================================
 

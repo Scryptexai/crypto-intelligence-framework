@@ -142,13 +142,22 @@ Jangan menambahkan fakta baru.
 
 Semua knowledge harus berasal dari evidence yang telah tersedia.
 
+WAJIB: setiap item di section manapun di bawah ini (Core Insights, Strategic Principles, Success
+Factors, Failure Factors, Decision Framework, Reusable Playbook, Anti-patterns) HARUS diberi nomor
+urut mulai dari 1, ditulis persis "<Label> <angka>: <judul>" di baris pertamanya — misalnya
+"Insight 1: <judul>", "Insight 2: <judul>", "Principle 1: <judul>", "Factor 1: <judul>", "Step 1:
+<judul>", "Playbook 1: <judul>", "Anti-pattern 1: <judul>". JANGAN tulis label tanpa nomor (seperti
+"Insight: <judul>") — file ini diparsing otomatis oleh tools/extract_knowledge.py yang mencari pola
+"<Label> <angka>:" persis; tanpa nomor, item itu akan gagal terparsing sama sekali dan hilang
+seluruhnya dari database walau isinya benar dan bersumber.
+
 ========================================================
 
-## Core Insights
+Core Insights
 
 Identifikasi insight utama.
 
-Untuk setiap insight
+Untuk setiap insight, beri nomor urut (Insight 1, Insight 2, dst — lihat aturan penomoran di atas).
 
 Insight
 
@@ -162,7 +171,7 @@ Confidence
 
 ========================================================
 
-## Strategic Principles
+Strategic Principles
 
 Identifikasi prinsip strategis yang konsisten.
 
@@ -178,7 +187,7 @@ Misalnya
 
 ========================================================
 
-## Success Factors
+Success Factors
 
 Identifikasi faktor yang paling berkontribusi terhadap keberhasilan proyek.
 
@@ -186,7 +195,7 @@ Harus didukung evidence.
 
 ========================================================
 
-## Failure Factors
+Failure Factors
 
 Identifikasi faktor yang menyebabkan
 
@@ -202,7 +211,7 @@ Harus didukung evidence.
 
 ========================================================
 
-## Decision Framework
+Decision Framework
 
 Rekonstruksi bagaimana proyek membuat keputusan.
 
@@ -234,7 +243,7 @@ Gunakan evidence.
 
 ========================================================
 
-## Reusable Playbook
+Reusable Playbook
 
 Tuliskan praktik yang dapat diterapkan pada proyek lain.
 
@@ -250,7 +259,7 @@ Harus didukung evidence.
 
 ========================================================
 
-## Anti-patterns
+Anti-patterns
 
 Identifikasi pola yang sebaiknya dihindari.
 
@@ -266,13 +275,13 @@ Harus didukung evidence.
 
 ========================================================
 
-## Lessons Learned
+Lessons Learned
 
 Ringkas pelajaran utama.
 
 ========================================================
 
-## Knowledge Summary
+Knowledge Summary
 
 Ringkas
 
