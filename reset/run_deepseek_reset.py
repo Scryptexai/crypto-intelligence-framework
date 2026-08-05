@@ -4,11 +4,23 @@ reset/run_deepseek_reset.py — automated Track C (DeepSeek methodology) researc
 
 Runs the 11 Track C phase prompts (reset/phase_NN_<key>.txt, extracted verbatim from
 docs/Protocol/Phased-Research-Prompts.md's "Fixed vs. the original DeepSeek run" section — the
-prompt set actually used to research Arbitrum, data_project/Arbitrum/) against an Anthropic
-Messages-API-compatible endpoint, one project at a time (reset/projects.txt), maintaining the
-full conversation as running context so each phase sees everything before it — matching Track C's
-actual design: "run phases in one sitting, in the same chat, back to back" (DeepSeek's 1M-token
-window is why Track A/B's Context Pack discipline doesn't apply here).
+prompt set actually used to research Arbitrum, data_project/Arbitrum/) against an OpenAI-compatible
+/v1/chat/completions endpoint, one project at a time (reset/projects.txt), maintaining the full
+conversation as running context so each phase sees everything before it — matching Track C's actual
+design: "run phases in one sitting, in the same chat, back to back".
+
+Endpoint note (confirmed live, 2026-08-05): despite the ANTHROPIC_* env var names below, the actual
+proxy (api.hcnsec.cn, a "New API" gateway) only implements an OpenAI-shaped /v1/chat/completions
+route, not /v1/messages -- posting to /v1/messages got the gateway's own frontend HTML back
+(HTTP 200, its SPA's catch-all for unmatched paths), reproducible with a bare curl and a trivial
+payload, so it was never about request size. See call_deepseek()/extract_text().
+
+Model note (confirmed live, 2026-08-05): this proxy does not necessarily route "DeepSeek-V4-Pro" to
+actual DeepSeek -- a real request came back with response.model = "nvidia/nemotron-3-ultra-550b-a55b".
+It's a free/aggregating gateway, not a dedicated DeepSeek endpoint. Per the maintainer's own call:
+evaluate by output quality against the real Arbitrum dossier, not by which underlying model the
+gateway actually used -- if the fields and depth are comparable, the specific model doesn't matter
+for this pipeline's purposes.
 
 Safe by default: every run writes to reset/tmp_test/<Project>/NN-<phasekey>.docx, NOT
 data_project/, unless --commit is passed. This script also NEVER runs ./run.sh or ./run.sh sync
@@ -138,10 +150,14 @@ def load_phase_prompt(num: int, key: str) -> str:
 
 
 def extract_text(body: dict) -> str:
-    """Parses the response permissively -- this proxy claims Anthropic-Messages-API shape via its
-    ANTHROPIC_* env var naming convention, but is a third-party endpoint, not Anthropic itself, so
-    this tries the documented Anthropic shape first and falls back to an OpenAI-style
-    choices[0].message.content shape in case the proxy actually speaks that underneath."""
+    """Parses the response permissively. Confirmed live, 2026-08-05: this proxy (api.hcnsec.cn, a
+    "New API" gateway instance) does NOT implement the Anthropic Messages API shape at /v1/messages
+    despite the ANTHROPIC_* env var naming convention -- POSTing there got the gateway's own
+    frontend HTML back (its SPA's catch-all route for unmatched paths), reproduced identically via
+    a bare curl with a trivial payload, so it was never about request size or retries. The real
+    endpoint is OpenAI-compatible /v1/chat/completions (see call_deepseek's url), which returns the
+    choices[0].message.content shape below. The Anthropic-shape check stays first only as a no-cost
+    fallback in case this ever points at a genuinely Anthropic-compatible endpoint again."""
     # Anthropic Messages API: {"content": [{"type": "text", "text": "..."}], ...}
     content = body.get("content")
     if isinstance(content, list):
@@ -159,21 +175,19 @@ def extract_text(body: dict) -> str:
 
 
 def call_deepseek(messages: list, base_url: str, token: str, model: str, max_tokens: int = None) -> str:
-    """POST to {base_url}/v1/messages. Raises on any failure (network, timeout, non-200,
-    unparseable body) -- caller (call_with_retries) handles retry."""
-    url = base_url.rstrip("/") + "/v1/messages"
+    """POST to {base_url}/v1/chat/completions (OpenAI-compatible -- see extract_text's docstring
+    for how this was confirmed against the real endpoint, 2026-08-05). Raises on any failure
+    (network, timeout, non-200, unparseable body) -- caller (call_with_retries) handles retry."""
+    url = base_url.rstrip("/") + "/v1/chat/completions"
     # Explicit stream: false -- without this, some proxies default a very large completion to
     # SSE streaming server-side regardless of client intent; a streamed "data: {...}\n\n" body fed
-    # to json.loads() fails with the exact same opaque "Expecting value: line 1 column 1 (char 0)"
-    # this script hit on Aptos phase 11 (by far the largest cumulative request of the 11 phases --
-    # phase 11 carries all 10 prior phases' prompts+responses as conversation history, ~165k+
-    # chars of prior assistant output alone for a typical project).
+    # to json.loads() fails with the same opaque "Expecting value: line 1 column 1 (char 0)" this
+    # script hit before the real cause (wrong endpoint path, see above) was found.
     payload = {"model": model, "max_tokens": max_tokens or MAX_TOKENS, "messages": messages, "stream": False}
     data = json.dumps(payload).encode("utf-8")
     req = urllib.request.Request(url, data=data, method="POST")
     req.add_header("Content-Type", "application/json")
     req.add_header("Authorization", f"Bearer {token}")
-    req.add_header("anthropic-version", "2023-06-01")
     try:
         with urllib.request.urlopen(req, timeout=REQUEST_TIMEOUT_SECONDS) as resp:
             status = resp.status
