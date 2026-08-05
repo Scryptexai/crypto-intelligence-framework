@@ -89,10 +89,17 @@ PHASES = [
     (9, "behavioral"), (10, "knowledge"), (11, "conflict"),
 ]
 
-# Phase 11 (Validation & QA) is handled as two smaller API calls instead of appending to the
-# full 10-phase running conversation -- see run_phase_11()'s docstring for the full rationale.
-BATCH1_PHASES = [(1, "foundation"), (2, "entity"), (3, "history"), (4, "technology"), (5, "financial")]
-BATCH2_PHASES = [(6, "token"), (7, "ecosystem"), (8, "market"), (9, "behavioral"), (10, "knowledge")]
+# Phase 11 (Validation & QA) is handled as four smaller, sequential API calls instead of
+# appending to the full 10-phase running conversation -- see run_phase_11()'s docstring for the
+# full rationale (started as 2 calls, but even the smaller of those two still hit gateway-side
+# 504 timeouts -- the bottleneck is generation TIME on a slow backend, not request size, so each
+# stage's ASK needed to shrink too, not just its input).
+PHASE11_STAGES = [
+    ("11a", "phase_11a_audit.txt", [(1, "foundation"), (2, "entity"), (3, "history")]),
+    ("11b", "phase_11b_audit.txt", [(4, "technology"), (5, "financial")]),
+    ("11c", "phase_11c_audit.txt", [(6, "token"), (7, "ecosystem"), (8, "market")]),
+    ("11d", "phase_11d_scoring.txt", [(9, "behavioral"), (10, "knowledge")]),
+]
 
 MAX_TOKENS = int(os.environ.get("RESET_MAX_TOKENS", "8192"))
 # Phase 11b alone carries almost everything the old single-call Phase 11 produced (the real
@@ -291,70 +298,101 @@ def _extract_manifest_block(text: str) -> tuple:
 
 
 def run_phase_11(name: str, base_url: str, token: str, model: str, proj_dir: Path) -> tuple:
-    """Phase 11 (Validation & QA) as two smaller API calls instead of one appended to the full
-    10-phase running conversation.
+    """Phase 11 (Validation & QA) as four smaller, sequential API calls (PHASE11_STAGES) instead
+    of one appended to the full 10-phase running conversation.
 
-    Why: by the time Phase 11 would fire in the old single-call design, the running conversation
-    carries ~165k+ chars of real prior-phase output alone (even after _prompt_placeholder already
-    shrinks old prompts to a marker) -- large enough to trip a request-size limit somewhere in
-    front of the DeepSeek proxy. Confirmed live: the proxy returns HTTP 200 with its own gateway
-    frontend HTML instead of proxying to the model (a "New API" gateway's index page, ~2.6k
-    bytes), which is what produced the opaque "Expecting value: line 1 column 1" JSON error.
+    History of this function, in order of what was actually tried and why it kept changing:
+      1. Single call appending to the full 10-phase conversation -- failed with an opaque JSON
+         parse error (turned out to be an HTML fallback page from a misconfigured base URL, see
+         point 3 below, but wasn't understood as that yet at the time).
+      2. Split into 2 calls (11a: phases 1-5, 11b: phases 6-10 + 11a's Inventory) with fresh,
+         narrowly-scoped context per call instead of the growing conversation -- built to address
+         a request-SIZE hypothesis that turned out to be wrong for the failures being chased at
+         the time (see point 3), but the "fresh context read from disk, not accumulated chat"
+         technique itself was sound and is kept here.
+      3. Real root cause of the original failures, found by bisecting with curl: the configured
+         ANTHROPIC_BASE_URL env var had gotten corrupted (a stray "export" from a copy-paste
+         landed on the end of the URL), so every request hit a nonexistent path and the gateway's
+         SPA served its own frontend HTML back (HTTP 200) instead of a clean 404 -- nothing to do
+         with request size, headers, or the model at all. Fixed by the user re-exporting cleanly.
+      4. With the URL fixed, a NEW and real failure appeared: HTTP 504 (gateway timeout) on stage
+         11a specifically, reproducible on every retry. Measured cause: the backend model is slow
+         (~2-6 tokens/sec observed) and stage 11a's ASK (Dataset Integrity + a complete Inventory
+         of every entity/event/tech/financial fact across 5 phases, ex-Cross-phase-Consistency and
+         Candidate Conflicts) is a much bigger completion than a single ordinary phase -- and even
+         ordinary phases 2/3 were separately observed taking 4+ minutes each. The bottleneck is
+         GENERATION TIME on a slow shared backend, not input size -- so the fix is to shrink each
+         stage's OUTPUT ask, not (only) its input.
 
-    Each call below gets a freshly built, narrowly-scoped context read directly from the phase
-    files already saved to disk -- NOT the full growing multi-phase conversation:
-      - 11a: phases 1-5's full raw text + reset/phase_11a_audit.txt's instructions -> produces
-        Dataset Integrity (1-5), a complete Inventory of every entity/event/tech/financial fact,
-        Cross-phase Consistency (1-5), and Candidate Conflicts (1-5).
-      - 11b: phases 6-10's full raw text + 11a's own findings (NOT phases 1-5's raw text again --
-        that omission is the actual size reduction) + reset/phase_11b_scoring.txt's instructions
-        -> produces the rest: Coverage Report, remaining Cross-phase Consistency, Data Lineage,
-        Dependency Graph, the final merged Conflict Register, Evidence Audit, Confidence
-        Assessment, Knowledge Stability, Missing Knowledge, CIF Score Calculation, Final
-        Validation Summary, Open Threads, and the CIF Manifest.
+    Current design (4 stages, PHASE11_STAGES): each stage's ask is roughly one ordinary phase's
+    worth of output, close to the sizes phases 2/3 already succeed at:
+      - 11a: phases 1-3 -> Dataset Integrity (1-3) + Inventory (Entity + Event).
+      - 11b: phases 4-5 + 11a's findings -> Dataset Integrity (4-5) + Inventory (Tech +
+        Financial) + Cross-phase Consistency (all of 1-5) + Candidate Conflicts (1-5).
+      - 11c: phases 6-8 + 11b's findings -> Dataset Integrity (6-8) + Inventory (Token/Ecosystem/
+        Market) + Consistency continuation + Candidate Conflicts (6-8).
+      - 11d: phases 9-10 + 11c's findings -> Coverage Report, Data Lineage, Dependency Graph, the
+        final merged Conflict Register, Evidence Audit, Confidence Assessment, Knowledge
+        Stability, Missing Knowledge, CIF Score Calculation, Final Validation Summary, Open
+        Threads, and the CIF Manifest.
 
-    No fact from any phase is dropped: 11a examines phases 1-5 in full, 11b examines phases 6-10
-    in full; 11b's link back to phases 1-5 is via 11a's own complete Inventory (built specifically
-    to carry every item forward), not by re-sending the raw text -- that's what keeps 11b's
-    payload smaller than the single call that was failing, rather than larger (simply continuing
-    the same growing conversation for a second Phase-11 turn would make it BIGGER, not smaller).
+    Each stage gets a freshly built, narrowly-scoped context read directly from the phase files
+    already on disk for ITS OWN phase range, plus only the immediately-preceding stage's response
+    (not that stage's prompt, and not any earlier stage's raw response -- each stage's prompt asks
+    it to merge forward everything it received, so by the last stage the single carried-forward
+    response already contains everything accumulated). No fact from any phase is dropped: every
+    stage examines its assigned phases' full raw text; a later stage's link back to earlier phases
+    is via the accumulated Inventory/findings text, not by re-sending raw phase text already
+    covered by a prior stage.
 
     Returns (combined_text_or_None, error_or_None).
     """
-    prompt_11a = (RESET_DIR / "phase_11a_audit.txt").read_text(encoding="utf-8").rstrip() \
-        + "\n\n" + load_shared_format_rules().rstrip() + "\n"
-    prompt_11a = _inject_phase_dataset(prompt_11a, proj_dir, BATCH1_PHASES)
+    # Every stage's own response is kept and concatenated at the end -- each stage only asks for
+    # NEW sections (Dataset Integrity/Inventory for its own phase range, etc.), it is not asked to
+    # reprint everything accumulated so far, so the assembled document needs all of them, not just
+    # the last one (an earlier version of this function kept only the final stage's response,
+    # which silently dropped every raw Inventory listing from stages 11a-11c -- exactly the kind
+    # of value loss this whole design is meant to avoid).
+    all_responses = []
+    prior_response = None
+    prior_stage_label = None
+    for stage_key, prompt_file, phase_specs in PHASE11_STAGES:
+        prompt = (RESET_DIR / prompt_file).read_text(encoding="utf-8").rstrip() \
+            + "\n\n" + load_shared_format_rules().rstrip() + "\n"
+        prompt = _inject_phase_dataset(prompt, proj_dir, phase_specs)
 
-    try:
-        text_a = call_with_retries([{"role": "user", "content": prompt_11a}], base_url, token, model,
-                                    f"{name} phase 11a-audit", max_tokens=PHASE11_MAX_TOKENS)
-    except Exception as e:  # noqa: BLE001
-        return None, e
+        if prior_response is None:
+            messages = [{"role": "user", "content": prompt}]
+        else:
+            messages = [
+                {"role": "user", "content": f"[Phase {prior_stage_label} instructions and its "
+                                             f"phase dataset were sent here; see that stage's "
+                                             f"full findings below.]"},
+                {"role": "assistant", "content": prior_response},
+                {"role": "user", "content": prompt},
+            ]
+        try:
+            response = call_with_retries(messages, base_url, token, model, f"{name} phase {stage_key}",
+                                          max_tokens=PHASE11_MAX_TOKENS)
+        except Exception as e:  # noqa: BLE001
+            return None, e
 
-    time.sleep(PHASE_SLEEP_SECONDS)
+        all_responses.append(response)
+        prior_response = response
+        prior_stage_label = stage_key
+        if stage_key != PHASE11_STAGES[-1][0]:
+            time.sleep(PHASE_SLEEP_SECONDS)
 
-    prompt_11b = (RESET_DIR / "phase_11b_scoring.txt").read_text(encoding="utf-8").rstrip() \
-        + "\n\n" + load_shared_format_rules().rstrip() + "\n"
-    prompt_11b = _inject_phase_dataset(prompt_11b, proj_dir, BATCH2_PHASES)
-
-    messages_b = [
-        {"role": "user", "content": "[Phase 11a (Batch 1) instructions and the Phase 1-5 dataset "
-                                     "were sent here; see Batch 1's full findings below.]"},
-        {"role": "assistant", "content": text_a},
-        {"role": "user", "content": prompt_11b},
-    ]
-    try:
-        text_b = call_with_retries(messages_b, base_url, token, model,
-                                    f"{name} phase 11b-scoring", max_tokens=PHASE11_MAX_TOKENS)
-    except Exception as e:  # noqa: BLE001
-        return None, e
-
-    manifest, text_b_rest = _extract_manifest_block(text_b)
+    # The Manifest only exists in the LAST stage's response (11d is the only stage asked to
+    # produce it) -- pull it out and move it to the front, matching the real Arbitrum dossier's
+    # structure (CIF VALIDATION REPORT v3.0 -> CIF MANIFEST v3.0 -> everything else).
+    manifest, last_rest = _extract_manifest_block(all_responses[-1])
+    body_sections = [r.strip() for r in all_responses[:-1]] + [last_rest]
     if manifest:
         combined = f"CIF VALIDATION REPORT v3.0\n\n---\n\n{manifest}\n\n---\n\n" \
-                   f"{text_a.strip()}\n\n---\n\n{text_b_rest}"
+                   + "\n\n---\n\n".join(body_sections)
     else:
-        combined = f"{text_a.strip()}\n\n---\n\n{text_b.strip()}"
+        combined = "\n\n---\n\n".join(r.strip() for r in all_responses)
     if not re.match(r"(?im)^PROJECT:\s*" + re.escape(name), combined.strip()):
         combined = f"PROJECT: {name}\n\n{combined}"
     return combined, None

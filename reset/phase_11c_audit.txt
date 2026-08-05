@@ -1,0 +1,131 @@
+# PHASE 11C — VALIDATION & QUALITY ASSURANCE (Stage 3 of 4: Token–Market)
+
+---
+
+PERAN
+
+Anda adalah AI Deep Research yang melanjutkan audit kualitas CIF (Crypto Intelligence Framework). Ini
+TAHAP KETIGA dari audit empat-tahap. Sebelum ini Anda sudah menerima audit Phase 1-5 lengkap: Dataset
+Integrity (1-5), Inventory Entity/Event/Technology/Financial (1-5), Cross-phase Consistency (1-5), dan
+Candidate Conflicts (1-5) — semua itu ada di riwayat percakapan di atas. Sekarang lengkapi dengan Phase 6-8
+di bawah.
+
+JANGAN hitung CIF Score atau buat CIF Manifest di sini — itu tugas tahap terakhir (11d) setelah Phase 9-10
+tersedia.
+
+---
+
+CONTEXT DEPENDENCIES (Stage 3 — baca bersama temuan Stage 1+2 di riwayat percakapan)
+
+6. 06-token.docx
+- Supply, Distribution, Vesting
+- Utility, Governance
+- Inflation/Deflation, Holder Distribution
+
+7. 07-ecosystem.docx
+- Ecosystem Position, External Dependencies
+- Major Integrations, Infrastructure Providers
+- Applications, Developer Ecosystem
+
+8. 08-market.docx
+- Market Category, Market Position
+- Adoption Metrics, Market Share
+- Competitor Landscape, Narrative Position
+
+Plus: seluruh temuan Stage 1+2 (Dataset Integrity 1-5, Inventory 1-5, Cross-phase Consistency 1-5,
+Candidate Conflicts 1-5) dari riwayat percakapan Anda — JANGAN minta ulang, JANGAN abaikan.
+
+---
+
+RUANG LINGKUP
+
+Audit Phase 6-8, lalu lanjutkan cek konsistensi dan candidate conflicts dengan mempertimbangkan Phase 1-5
+yang sudah diaudit. Jangan melakukan riset baru. Jangan menambah fakta baru.
+
+---
+
+OUTPUT STRUCTURE
+
+Gunakan struktur berikut, dalam urutan ini. Jangan menggunakan tabel dalam bentuk apa pun.
+
+---
+
+DATASET INTEGRITY (PHASE 6-8)
+
+Untuk setiap phase (06 s.d 08), laporkan:
+
+· Status: Complete / Incomplete
+· Missing Information: <daftar atau "Tidak ada">
+· Notes: <catatan tambahan>
+
+---
+
+INVENTORY (PHASE 6-8)
+
+Tahap terakhir (11d) akan memakai ini sebagai rujukan untuk Coverage Report final tanpa membaca ulang
+Phase 6-8, jadi WAJIB lengkap.
+
+Token/Governance Item Inventory (dari Phase 6)
+
+· <Item terkait supply/distribution/vesting/governance/utility>
+
+Ecosystem Item Inventory (dari Phase 7)
+
+· <Integrasi/dependency/infrastructure provider/aplikasi kunci>
+
+Market Item Inventory (dari Phase 8)
+
+· <Metrik/kompetitor/narrative position kunci>
+
+---
+
+CROSS-PHASE CONSISTENCY (LANJUTAN — Phase 6-8 vs Phase 1-5)
+
+Lanjutkan pengecekan konsistensi Stage 1+2 dengan Phase 6-8:
+
+Token Consistency
+
+· Status: Konsisten / Tidak Konsisten
+· Detail: <token info di Phase 6 sesuai dengan Phase 1 dan 3>
+
+Governance Consistency
+
+· Status: Konsisten / Tidak Konsisten
+· Detail: <governance structure konsisten di Phase 6 dan 7>
+
+Dependency Consistency
+
+· Status: Konsisten / Tidak Konsisten
+· Detail: <external dependencies konsisten di Phase 4 dan 7>
+
+---
+
+CANDIDATE CONFLICTS (TAMBAHAN — PHASE 6-8)
+
+Identifikasi konflik informasi baru yang terlihat di Phase 6-8 (selain yang sudah ditemukan Stage 1+2 untuk
+Phase 1-5). Tahap terakhir (11d) akan menggabungkan SEMUA candidate conflict (Stage 1+2+3) jadi Conflict
+Register final bernomor C-001 dst.
+
+Untuk setiap candidate conflict, laporkan:
+
+· Category: <kategori>
+· Description: <deskripsi konflik>
+· Severity: Critical / High / Medium / Low
+· Affected Phase: Phase <X>
+· Evidence: <evidence>
+· Sources: <URL1>, <URL2>
+
+Kriteria Severity: sama seperti tahap sebelumnya (Critical/High/Medium/Low).
+
+---
+
+ATURAN UMUM (Tahap 3)
+
+1. Jangan melakukan riset baru.
+2. Jangan membuat interpretasi baru di luar evidence yang ada.
+3. Jangan mengubah fakta dari dataset sebelumnya.
+4. Semua candidate conflict WAJIB menyebutkan Evidence dan Sources (URL lengkap).
+5. Jangan menggunakan tabel dalam bentuk apa pun; seluruh output harus berupa heading, sub-heading, dan bullet.
+6. Gunakan nama Entity yang sama persis dengan Phase 2.
+7. JANGAN hitung CIF Score, JANGAN buat CIF Manifest, JANGAN buat Coverage Report final, Data Lineage, atau
+   Dependency Graph di sini — semua itu tugas tahap terakhir setelah Phase 9-10 tersedia.

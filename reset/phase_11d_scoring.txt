@@ -1,31 +1,21 @@
-# PHASE 11B — VALIDATION & QUALITY ASSURANCE (Batch 2: Token–Knowledge + Finalisasi)
+# PHASE 11D — VALIDATION & QUALITY ASSURANCE (Stage 4 of 4: Behavioral–Knowledge + Finalisasi)
 
 ---
 
 PERAN
 
-Anda adalah AI Deep Research yang menyelesaikan audit kualitas dan validasi akhir CIF (Crypto Intelligence Framework). Ini BAGIAN KEDUA (terakhir) dari audit dua-tahap. Sebelum ini Anda sudah menerima dan mengaudit Phase 1-5, menghasilkan: Dataset Integrity (1-5), Inventory lengkap Entity/Event/Technology/Financial (1-5), Cross-phase Consistency (1-5), dan Candidate Conflicts (1-5) — semua itu ada di riwayat percakapan di atas. Sekarang lengkapi dengan Phase 6-10 di bawah, GABUNGKAN dengan temuan Batch 1, dan hasilkan CIF Validation Report v3.0 yang utuh untuk seluruh Phase 1-10.
+Anda adalah AI Deep Research yang menyelesaikan audit kualitas dan validasi akhir CIF (Crypto Intelligence
+Framework). Ini TAHAP KEEMPAT (terakhir) dari audit empat-tahap. Sebelum ini Anda sudah menerima dan
+mengaudit Phase 1-8 lengkap: Dataset Integrity (1-8), Inventory Entity/Event/Technology/Financial/Token/
+Ecosystem/Market (1-8), Cross-phase Consistency (1-8), dan Candidate Conflicts (1-8) — semua itu ada di
+riwayat percakapan di atas. Sekarang lengkapi dengan Phase 9-10 di bawah, GABUNGKAN dengan seluruh temuan
+sebelumnya, dan hasilkan CIF Validation Report v3.0 yang utuh untuk seluruh Phase 1-10.
 
-Output fase ini adalah CIF Validation Report v3.0 (lengkap, menggabungkan Batch 1 + Batch 2).
+Output fase ini adalah CIF Validation Report v3.0 (lengkap, menggabungkan Stage 1+2+3+4).
 
 ---
 
-CONTEXT DEPENDENCIES (Batch 2 — baca bersama temuan Batch 1 di riwayat percakapan)
-
-6. 06-token.docx
-- Supply, Distribution, Vesting
-- Utility, Governance
-- Inflation/Deflation, Holder Distribution
-
-7. 07-ecosystem.docx
-- Ecosystem Position, External Dependencies
-- Major Integrations, Infrastructure Providers
-- Applications, Developer Ecosystem
-
-8. 08-market.docx
-- Market Category, Market Position
-- Adoption Metrics, Market Share
-- Competitor Landscape, Narrative Position
+CONTEXT DEPENDENCIES (Stage 4 — baca bersama temuan Stage 1+2+3 di riwayat percakapan)
 
 9. 09-behavioral.docx
 - Seluruh Strategic Objectives, Decision Timeline
@@ -37,31 +27,35 @@ CONTEXT DEPENDENCIES (Batch 2 — baca bersama temuan Batch 1 di riwayat percaka
 - Core Insights, Strategic Principles
 - Success/Failure Factors, Reusable Playbook, Anti-patterns
 
-Plus: Dataset Integrity (1-5), Inventory (1-5), Cross-phase Consistency (1-5), dan Candidate Conflicts (1-5) dari Batch 1, yang sudah ada di riwayat percakapan Anda — JANGAN minta ulang, JANGAN abaikan, itu bagian wajib dari audit ini.
+Plus: seluruh temuan Stage 1+2+3 (Dataset Integrity 1-8, Inventory 1-8, Cross-phase Consistency 1-8,
+Candidate Conflicts 1-8) dari riwayat percakapan Anda — JANGAN minta ulang, JANGAN abaikan, itu bagian
+wajib dari audit ini.
 
 ---
 
 PERTANYAAN UTAMA
 
-"Apakah seluruh hasil CIF dapat dipertanggungjawabkan, seberapa tinggi kualitasnya, dan bagaimana knowledge ini akan berevolusi ketika data berubah?"
+"Apakah seluruh hasil CIF dapat dipertanggungjawabkan, seberapa tinggi kualitasnya, dan bagaimana knowledge
+ini akan berevolusi ketika data berubah?"
 
 ---
 
 RUANG LINGKUP
 
-Lengkapi audit Phase 6-10, lalu GABUNGKAN dengan hasil Batch 1 untuk laporan akhir yang mencakup SEMUA Phase 1-10 secara utuh. Jangan melakukan riset baru. Jangan menambah fakta baru. Semua analisis harus berasal dari evidence yang sudah tersedia (Phase 1-10 + temuan Batch 1).
+Lengkapi audit Phase 9-10, lalu GABUNGKAN dengan hasil Stage 1+2+3 untuk laporan akhir yang mencakup SEMUA
+Phase 1-10 secara utuh. Jangan melakukan riset baru. Jangan menambah fakta baru.
 
 ---
 
 OUTPUT STRUCTURE
 
-Gunakan struktur berikut, dalam urutan ini. Jangan menggunakan tabel dalam bentuk apa pun — seluruh output harus berupa heading, sub-heading, dan bullet.
+Gunakan struktur berikut, dalam urutan ini. Jangan menggunakan tabel dalam bentuk apa pun.
 
 ---
 
-DATASET INTEGRITY (PHASE 6-10)
+DATASET INTEGRITY (PHASE 9-10)
 
-Untuk setiap phase (06 s.d 10), laporkan:
+Untuk setiap phase (09 s.d 10), laporkan:
 
 · Status: Complete / Incomplete
 · Missing Information: <daftar atau "Tidak ada">
@@ -71,42 +65,43 @@ Untuk setiap phase (06 s.d 10), laporkan:
 
 COVERAGE REPORT — Multi-dimensional (SEMUA PHASE 1-10)
 
-Pakai Inventory Phase 1-5 dari Batch 1 (total per kategori) + item baru dari Phase 6-8, lalu hitung berapa yang benar-benar dirujuk/dipakai di Phase 9-10 (behavioral & knowledge).
+Pakai Inventory Stage 1+2+3 (total per kategori) + Phase 9-10 di bawah untuk menghitung berapa yang benar-
+benar dirujuk/dipakai di Phase 9-10 (behavioral & knowledge).
 
 · Phase 2 — Entity
-  · Total: <dari Inventory Batch 1>
+  · Total: <dari Inventory Stage 1>
   · Referenced in Phase 9-10: <hitung dari isi Phase 9-10>
   · Unused: <angka>
   · Coverage: <persentase>%
   · Interpretation: <analisis singkat>
 · Phase 3 — Event
-  · Total: <dari Inventory Batch 1>
+  · Total: <dari Inventory Stage 1>
   · Referenced in Phase 9-10: <angka>
   · Unused: <angka>
   · Coverage: <persentase>%
   · Interpretation: <analisis singkat>
 · Phase 4 — Technology
-  · Total: <dari Inventory Batch 1>
+  · Total: <dari Inventory Stage 2>
   · Referenced: <angka>
   · Unused: <angka>
   · Coverage: <persentase>%
 · Phase 5 — Financial
-  · Total: <dari Inventory Batch 1>
+  · Total: <dari Inventory Stage 2>
   · Referenced: <angka>
   · Unused: <angka>
   · Coverage: <persentase>%
 · Phase 6 — Token
-  · Total: <angka item>
+  · Total: <dari Inventory Stage 3>
   · Referenced: <angka>
   · Unused: <angka>
   · Coverage: <persentase>%
 · Phase 7 — Ecosystem
-  · Total: <angka item>
+  · Total: <dari Inventory Stage 3>
   · Referenced: <angka>
   · Unused: <angka>
   · Coverage: <persentase>%
 · Phase 8 — Market
-  · Total: <angka item>
+  · Total: <dari Inventory Stage 3>
   · Referenced: <angka>
   · Unused: <angka>
   · Coverage: <persentase>%
@@ -119,26 +114,12 @@ Pakai Inventory Phase 1-5 dari Batch 1 (total per kategori) + item baru dari Pha
 
 ---
 
-CROSS-PHASE CONSISTENCY (LANJUTAN — semua Phase 1-10)
+CROSS-PHASE CONSISTENCY (FINAL — semua Phase 1-10)
 
-Lanjutkan pengecekan konsistensi Batch 1 (Entity/Timeline/Technology/Funding) dengan Phase 6-10, plus:
+Rangkum hasil pengecekan Stage 1+2+3 (Entity/Timeline/Technology/Funding/Token/Governance/Dependency
+Consistency), lalu tambahkan:
 
-Token Consistency
-
-· Status: Konsisten / Tidak Konsisten
-· Detail: <token info di Phase 6 sesuai dengan Phase 1 dan 3>
-
-Governance Consistency
-
-· Status: Konsisten / Tidak Konsisten
-· Detail: <governance structure konsisten di Phase 6, 7, 9>
-
-Dependency Consistency
-
-· Status: Konsisten / Tidak Konsisten
-· Detail: <external dependencies konsisten di Phase 4, 7>
-
-Overall Cross-phase Consistency: <persentase>% (gabungan seluruh checks Batch 1 + Batch 2 di atas)
+Overall Cross-phase Consistency: <persentase>% (gabungan seluruh checks Stage 1+2+3+4)
 
 ---
 
@@ -216,9 +197,11 @@ Dependency Graph:
 
 ---
 
-CONFLICT REGISTER WITH SEVERITY & IMPACT (FINAL — gabungan Batch 1 + Batch 2)
+CONFLICT REGISTER WITH SEVERITY & IMPACT (FINAL — gabungan Stage 1+2+3+4)
 
-Gabungkan Candidate Conflicts dari Batch 1 dengan konflik baru yang ditemukan di Phase 6-10. Beri Conflict ID C-001 dst secara berurutan untuk SEMUA konflik gabungan (jangan buat ulang dari nol, pakai yang sudah ditemukan Batch 1 + tambahan baru).
+Gabungkan Candidate Conflicts dari Stage 1+2+3 dengan konflik baru yang ditemukan di Phase 9-10. Beri
+Conflict ID C-001 dst secara berurutan untuk SEMUA konflik gabungan (jangan buat ulang dari nol, pakai
+yang sudah ditemukan Stage 1+2+3 + tambahan baru).
 
 Untuk setiap conflict, laporkan:
 
@@ -450,16 +433,16 @@ Interpretation:
 · Needs Improvement (60-80): CIF usable, perbaikan disarankan
 · Poor (<60): CIF perlu re-run
 
-PENTING: angka CIF Score di sini adalah HASIL FINAL. Nanti di bagian CIF MANIFEST v3.0 (ditulis PALING TERAKHIR,
-lihat instruksi di bawah), salin angka Research Quality / Consistency / Evidence / Coverage / Conflict /
-Knowledge / CIF SCORE dari perhitungan di atas — JANGAN biarkan Manifest berisi angka yang dihitung terpisah
-atau lebih dulu. Manifest bukan sumber angka, ia melaporkan ULANG angka dari sini.
+PENTING: angka CIF Score di sini adalah HASIL FINAL. Nanti di bagian CIF MANIFEST v3.0 (ditulis PALING
+TERAKHIR, lihat instruksi di bawah), salin angka Research Quality / Consistency / Evidence / Coverage /
+Conflict / Knowledge / CIF SCORE dari perhitungan di atas — JANGAN biarkan Manifest berisi angka yang
+dihitung terpisah atau lebih dulu. Manifest bukan sumber angka, ia melaporkan ULANG angka dari sini.
 
 ---
 
 FINAL VALIDATION SUMMARY
 
-Ringkas seluruh temuan (Batch 1 + Batch 2).
+Ringkas seluruh temuan (Stage 1+2+3+4).
 
 Dataset Completeness:
 
