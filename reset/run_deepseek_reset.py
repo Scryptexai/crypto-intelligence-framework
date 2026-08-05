@@ -185,6 +185,13 @@ def call_deepseek(messages: list, base_url: str, token: str, model: str, max_tok
     # script hit before the real cause (wrong endpoint path, see above) was found.
     payload = {"model": model, "max_tokens": max_tokens or MAX_TOKENS, "messages": messages, "stream": False}
     data = json.dumps(payload).encode("utf-8")
+    # Debug aid, 2026-08-05: a UA-spoofed Python request to this same URL still got the gateway's
+    # fallback HTML back while an equivalent curl succeeded -- dumping the EXACT outgoing body lets
+    # that same body be replayed via `curl --data @reset/tmp_test/_last_request.json` to isolate
+    # whether this is content/size-specific (curl fails too on the real body) or something about
+    # how urllib itself sends the request (curl succeeds even with the real body).
+    (RESET_DIR / "tmp_test").mkdir(parents=True, exist_ok=True)
+    (RESET_DIR / "tmp_test" / "_last_request.json").write_bytes(data)
     req = urllib.request.Request(url, data=data, method="POST")
     req.add_header("Content-Type", "application/json")
     req.add_header("Authorization", f"Bearer {token}")
