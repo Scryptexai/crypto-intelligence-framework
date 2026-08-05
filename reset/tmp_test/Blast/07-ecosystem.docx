@@ -1,0 +1,672 @@
+PROJECT: Blast
+
+## Ecosystem Position
+
+Primary Sector: Ethereum Layer 2 / Optimistic Rollup  
+Secondary Sector: Native Yield Infrastructure, DeFi Ecosystem, NFT Liquidity  
+Primary Chain: Blast L2 (Chain ID 81457)  
+Supported Chains: Ethereum Mainnet (L1 settlement), Ethereum Sepolia (testnet)  
+Sources: https://blog.blast.io/introducing-blast  
+Sources: https://docs.blast.io/architecture  
+Sources: https://blastscan.io
+
+## External Dependencies
+
+Dependency Name: Ethereum  
+Dependency Type: Chain  
+Purpose: L1 settlement, data availability (calldata/blobs), fraud proof verification, bridge escrow, validator set security  
+Criticality: Critical  
+Status: Live  
+Related Entity: Ethereum  
+Related Technology Component: OptimismPortal, L2OutputOracle, DisputeGame, L1StandardBridge, blob submission (EIP-4844)  
+Sources: https://docs.blast.io/architecture  
+Sources: https://github.com/blastL2/contracts/tree/main/src/L1
+
+Dependency Name: Lido  
+Dependency Type: Protocol  
+Purpose: stETH staking yield source for native ETH yield on Blast L2  
+Criticality: High  
+Status: Live  
+Related Entity: Lido (external protocol)  
+Related Technology Component: YieldEscrow (L1), NativeYieldPrecompile (L2), yield oracle feed  
+Sources: https://docs.blast.io/native-yield  
+Sources: https://blog.blast.io/introducing-blast
+
+Dependency Name: MakerDAO Spark  
+Dependency Type: Protocol  
+Purpose: USDS (formerly sDAI) T-bill yield source for native stablecoin yield on Blast L2  
+Criticality: High  
+Status: Live  
+Related Entity: MakerDAO (external protocol)  
+Related Technology Component: YieldEscrow (L1), NativeYieldPrecompile (L2), yield oracle feed  
+Sources: https://docs.blast.io/native-yield  
+Sources: https://blog.blast.io/introducing-blast
+
+Dependency Name: Chainlink  
+Dependency Type: Oracle  
+Purpose: Price feeds for stETH/ETH and USDS/USD conversion rates used in native yield rebasing calculation  
+Criticality: High  
+Status: Live  
+Related Entity: Chainlink (external oracle network)  
+Related Technology Component: Native yield rate oracle, rebasing mechanism  
+Sources: https://docs.blast.io/native-yield/oracle  
+Sources: https://docs.blast.io/native-yield/technical-details
+
+Dependency Name: OP Stack / Optimism  
+Dependency Type: Protocol  
+Purpose: Fault proof system (Cannon/MIPS), dispute game contracts, rollup architecture reference implementation  
+Criticality: High  
+Status: Live  
+Related Entity: Optimism Foundation (external)  
+Related Technology Component: DisputeGame, L2OutputOracle, blast-geth execution client fork  
+Sources: https://github.com/blastL2/contracts/blob/main/src/L1/DisputeGame.sol  
+Sources: https://docs.blast.io/architecture/consensus
+
+Dependency Name: Alchemy / QuickNode / Blast Native RPC  
+Dependency Type: Infrastructure  
+Purpose: RPC endpoint providers for Blast L2 (user-facing and developer-facing)  
+Criticality: High  
+Status: Live  
+Related Entity: Alchemy, QuickNode, Blast Foundation  
+Related Technology Component: Blast Node (blast-geth), RPC load balancer  
+Sources: https://docs.blast.io/developers/rpc  
+Sources: https://blast.io
+
+Dependency Name: Blockscout / Etherscan  
+Dependency Type: Infrastructure  
+Purpose: Block explorer technology stack (Blastscan) for indexing, verification, analytics  
+Criticality: High  
+Status: Live  
+Related Entity: Blockscout (external), Etherscan (external)  
+Related Technology Component: Blastscan explorer, indexer, contract verification  
+Sources: https://blastscan.io  
+Sources: https://docs.blast.io
+
+Dependency Name: GitHub / GitHub Actions  
+Dependency Type: Infrastructure  
+Purpose: Source control, CI/CD pipeline for smart contracts, SDK, documentation  
+Criticality: Medium  
+Status: Live  
+Related Entity: GitHub (Microsoft)  
+Related Technology Component: blastL2 organization repos, contract CI, SDK publishing  
+Sources: https://github.com/blastL2  
+Sources: https://github.com/blastL2/contracts/actions
+
+Dependency Name: npm / GitHub Packages  
+Dependency Type: Infrastructure  
+Purpose: Package registry for @blastl2/sdk distribution  
+Criticality: Medium  
+Status: Live  
+Related Entity: npm (GitHub)  
+Related Technology Component: Blast SDK publication  
+Sources: https://www.npmjs.com/package/@blastl2/sdk  
+Sources: https://github.com/blastL2/sdk
+
+Dependency Name: Paradigm  
+Dependency Type: Service (VC / Strategic Capital)  
+Purpose: Lead investor, strategic guidance, potential token allocation holder  
+Criticality: Medium  
+Status: Live  
+Related Entity: Paradigm  
+Related Technology Component: Treasury, token allocation (investor 16.5%)  
+Sources: https://www.theblock.co/post/264000/blur-founder-launches-blast-ethereum-layer-2
+
+Dependency Name: Standard Crypto  
+Dependency Type: Service (VC / Strategic Capital)  
+Purpose: Participating investor, strategic guidance, potential token allocation holder  
+Criticality: Medium  
+Status: Live  
+Related Entity: Standard Crypto  
+Related Technology Component: Treasury, token allocation (investor 16.5%)  
+Sources: https://www.coindesk.com/business/2023/11/20/blur-founder-launches-blast-ethereum-layer-2
+
+Dependency Name: Cayman Islands Legal Framework  
+Dependency Type: Government  
+Purpose: Legal jurisdiction for Blast Foundation entity registration and token issuance compliance  
+Criticality: High  
+Status: Live  
+Related Entity: Cayman Islands  
+Related Technology Component: Foundation legal structure, token regulatory framework  
+Sources: https://blog.blast.io/introducing-blast
+
+Dependency Name: Trail of Bits / OpenZeppelin  
+Dependency Type: Security  
+Purpose: Smart contract auditors for pre-mainnet core contracts (L1/L2 bridges, token, yield)  
+Criticality: High  
+Status: Completed (pre-mainnet)  
+Related Entity: Trail of Bits, OpenZeppelin  
+Related Technology Component: L1 contracts, L2 precompiles, NativeYieldPrecompile, upgrade proxies  
+Sources: https://blog.blast.io/blast-mainnet-launch
+
+## Major Integrations
+
+Integration Name: Blur NFT Marketplace Integration  
+Integrated With: Blur  
+Purpose: NFT liquidity bridging, Blur user base onboarding, shared founder (Tieshun Roquerre) ecosystem synergy  
+Status: Live  
+Related Historical Event ID: EV-001 (Founding disclosure mentions Blur integration)  
+Sources: https://blog.blast.io/introducing-blast  
+Sources: https://docs.blast.io/ecosystem
+
+Integration Name: Thruster DEX Deployment  
+Integrated With: Thruster  
+Purpose: Primary DEX and concentrated liquidity protocol on Blast; receives Blast Gold incentives  
+Status: Live  
+Related Historical Event ID: EV-008 (Thruster Mainnet Launch Mar 2024)  
+Sources: https://docs.blast.io/ecosystem  
+Sources: https://thruster.finance
+
+Integration Name: Ring Protocol Deployment  
+Integrated With: Ring Protocol  
+Purpose: Lending/borrowing market on Blast; receives Blast Gold incentives  
+Status: Live  
+Related Historical Event ID: EV-009 (Ring Protocol Mainnet Launch Apr 2024)  
+Sources: https://docs.blast.io/ecosystem  
+Sources: https://ringprotocol.xyz
+
+Integration Name: Wasabi Protocol Deployment  
+Integrated With: Wasabi  
+Purpose: Options/derivatives protocol on Blast; receives Blast Gold incentives  
+Status: Live  
+Related Historical Event ID: EV-010 (Wasabi Mainnet Launch Apr 2024)  
+Sources: https://docs.blast.io/ecosystem  
+Sources: https://wasabi.xyz
+
+Integration Name: Kaito InfoFi/AI Integration  
+Integrated With: Kaito  
+Purpose: Social signaling analytics, reward distribution via Blast Points/Gold integration  
+Status: Live  
+Related Historical Event ID: EV-011 (Kaito Integration May 2024)  
+Sources: https://docs.blast.io/ecosystem  
+Sources: https://kaito.ai
+
+Integration Name: CEX Listings (Binance, Bybit, OKX, Gate.io)  
+Integrated With: Binance, Bybit, OKX, Gate.io  
+Purpose: BLAST token spot trading pairs (BLAST/USDT, BLAST/USDC, BLAST/ETH), liquidity provision  
+Status: Live  
+Related Historical Event ID: EV-013 (TGE Exchange Listings Jun 2024)  
+Sources: https://blog.blast.io/blast-token-generation-event  
+Sources: https://coinmarketcap.com/currencies/blast/
+
+Integration Name: LayerZero / Wormhole / Hyperlane (Third-party Bridges)  
+Integrated With: LayerZero, Wormhole, Hyperlane  
+Purpose: Generic cross-chain messaging and token bridging beyond canonical bridge (deployed separately by protocols)  
+Status: Live (protocol-deployed instances)  
+Related Historical Event ID: Not explicitly documented in official blog; ecosystem knowledge  
+Sources: https://docs.blast.io/bridge — *states native bridge only supports token transfer; arbitrary messaging via third-party*  
+Sources: https://layerzero.network — *Blast listed as supported chain*
+
+Integration Name: ERC-4337 EntryPoint Deployment  
+Integrated With: Ethereum ERC-4337 Account Abstraction Stack  
+Purpose: Smart contract wallet support via EntryPoint v0.6/v0.7 deployed on Blast L2  
+Status: Live (compatible)  
+Related Historical Event ID: Not explicitly documented; inferred from EVM equivalence  
+Sources: https://docs.blast.io/developers/account-abstraction — *states "ERC-4337 compatible via EntryPoint"*  
+Sources: https://github.com/eth-infinitism/account-abstraction
+
+## Infrastructure Providers
+
+Provider: Blast Foundation (Sequencer Operator)  
+Service: Centralized sequencer operation (ordering, execution, batch submission to L1)  
+Criticality: Critical  
+Status: Live  
+Sources: https://docs.blast.io/architecture/sequencer  
+Sources: https://blog.blast.io/blast-mainnet-launch
+
+Provider: Blast Foundation (Proposer/Challenger Operator)  
+Service: Permissioned output root proposal and fraud proof challenge operations  
+Criticality: Critical  
+Status: Live  
+Sources: https://github.com/blastL2/contracts/blob/main/src/L1/L2OutputOracle.sol  
+Sources: https://github.com/blastL2/contracts/blob/main/src/L1/DisputeGame.sol
+
+Provider: Blastscan (Blockscout-based)  
+Service: Block explorer, contract verification, RPC endpoint, API, analytics dashboard  
+Criticality: High  
+Status: Live  
+Sources: https://blastscan.io  
+Sources: https://docs.blast.io
+
+Provider: Alchemy / QuickNode / Blast Native RPC  
+Service: Public and dedicated RPC endpoints for Blast L2  
+Criticality: High  
+Status: Live  
+Sources: https://docs.blast.io/developers/rpc  
+Sources: https://blast.io
+
+Provider: Chainlink  
+Service: Price oracle feeds (stETH/ETH, USDS/USD) for native yield rebasing  
+Criticality: High  
+Status: Live  
+Sources: https://docs.blast.io/native-yield/oracle  
+Sources: https://docs.blast.io/native-yield/technical-details
+
+Provider: GitHub (Microsoft)  
+Service: Source control, CI/CD, package registry for contracts and SDK  
+Criticality: Medium  
+Status: Live  
+Sources: https://github.com/blastL2  
+Sources: https://github.com/blastL2/contracts/actions
+
+Provider: AWS / GCP / Kubernetes (Assumed)  
+Service: Cloud infrastructure for sequencer, proposer, challenger, RPC nodes, indexer  
+Criticality: High  
+Status: Live (inferred from team size and operational requirements)  
+Sources: https://github.com/blastL2 — *no public infra repo; inferred from job postings and typical stack*  
+Sources: https://docs.blast.io/architecture — *no cloud provider disclosure*
+
+Provider: Lido (stETH) / MakerDAO Spark (USDS)  
+Service: L1 yield generation sources bridged to L2  
+Criticality: High  
+Status: Live  
+Sources: https://docs.blast.io/native-yield  
+Sources: https://blog.blast.io/introducing-blast
+
+## Exchange Ecosystem
+
+Exchange: Binance  
+Listing Status: Listed  
+Spot: Yes (BLAST/USDT, BLAST/USDC, BLAST/ETH)  
+Perpetual: Yes (BLASTUSDT perpetual)  
+OTC: tidak diketahui  
+Launchpool: tidak diketahui  
+Status: Live  
+Sources: https://blog.blast.io/blast-token-generation-event  
+Sources: https://www.binance.com/en/trade/BLAST_USDT
+
+Exchange: Bybit  
+Listing Status: Listed  
+Spot: Yes (BLAST/USDT, BLAST/USDC)  
+Perpetual: Yes (BLASTUSDT perpetual)  
+OTC: tidak diketahui  
+Launchpool: tidak diketahui  
+Status: Live  
+Sources: https://blog.blast.io/blast-token-generation-event  
+Sources: https://www.bybit.com/en/trade/usdt/BLASTUSDT
+
+Exchange: OKX  
+Listing Status: Listed  
+Spot: Yes (BLAST/USDT, BLAST/USDC)  
+Perpetual: Yes (BLASTUSDT perpetual)  
+OTC: tidak diketahui  
+Launchpool: tidak diketahui  
+Status: Live  
+Sources: https://blog.blast.io/blast-token-generation-event  
+Sources: https://www.okx.com/trade/BLAST-USDT
+
+Exchange: Gate.io  
+Listing Status: Listed  
+Spot: Yes (BLAST/USDT)  
+Perpetual: Yes (BLASTUSDT perpetual)  
+OTC: tidak diketahui  
+Launchpool: tidak diketahui  
+Status: Live  
+Sources: https://blog.blast.io/blast-token-generation-event  
+Sources: https://www.gate.io/trade/BLAST_USDT
+
+Exchange: Coinbase  
+Listing Status: Not Listed (per knowledge cutoff)  
+Spot: No  
+Perpetual: No  
+OTC: tidak diketahui  
+Launchpool: tidak diketahui  
+Status: Not Listed  
+Sources: https://coinmarketcap.com/currencies/blast/ — *exchange markets list*
+
+Exchange: Kraken  
+Listing Status: Not Listed (per knowledge cutoff)  
+Spot: No  
+Perpetual: No  
+OTC: tidak diketahui  
+Launchpool: tidak diketahui  
+Status: Not Listed  
+Sources: https://coinmarketcap.com/currencies/blast/ — *exchange markets list*
+
+Exchange: Thruster (DEX)  
+Listing Status: Listed (native DEX)  
+Spot: Yes (BLAST/ETH, BLAST/USDB, BLAST/USDT pools)  
+Perpetual: No  
+OTC: No  
+Launchpool: No  
+Status: Live  
+Sources: https://thruster.finance  
+Sources: https://docs.blast.io/ecosystem
+
+Exchange: Wasabi (DEX/Options)  
+Listing Status: Listed (native protocol)  
+Spot: Yes (BLAST pools)  
+Perpetual: Options markets on BLAST  
+OTC: No  
+Launchpool: No  
+Status: Live  
+Sources: https://wasabi.xyz  
+Sources: https://docs.blast.io/ecosystem
+
+## Wallet Ecosystem
+
+Wallet: MetaMask  
+Support Type: Native RPC support, chain addition via Chainlist, full EVM compatibility  
+Status: Live  
+Sources: https://docs.blast.io/developers/wallets  
+Sources: https://chainlist.org/chain/81457
+
+Wallet: Rainbow Wallet  
+Support Type: Native Blast L2 support, portfolio tracking  
+Status: Live  
+Sources: https://rainbow.me — *Blast network listed in supported chains*
+
+Wallet: Coinbase Wallet  
+Support Type: EVM network support via custom RPC  
+Status: Live  
+Sources: https://wallet.coinbase.com — *supports custom EVM networks*
+
+Wallet: Rabby Wallet  
+Support Type: Native Blast L2 support, automatic chain detection  
+Status: Live  
+Sources: https://rabby.io — *Blast Mainnet in supported chains list*
+
+Wallet: Trust Wallet  
+Support Type: EVM network support via custom RPC  
+Status: Live  
+Sources: https://trustwallet.com — *supports custom EVM networks*
+
+Wallet: Ledger / Trezor (Hardware)  
+Support Type: Hardware signing via MetaMask/Rabby integration (Blind signing for custom networks)  
+Status: Live  
+Sources: https://support.ledger.com — *EVM custom network support via MetaMask*  
+Sources: https://trezor.io — *EVM custom network support*
+
+Wallet: Phantom  
+Support Type: EVM support added 2024; Blast L2 via custom RPC  
+Status: Live  
+Sources: https://phantom.com — *EVM beta support announcement 2024*
+
+Wallet: OKX Wallet  
+Support Type: Native Blast L2 support  
+Status: Live  
+Sources: https://web3.okx.com — *Blast network in supported chains*
+
+Wallet: Bitget Wallet  
+Support Type: Native Blast L2 support  
+Status: Live  
+Sources: https://web3.bitget.com — *Blast network in supported chains*
+
+## Developer Ecosystem
+
+SDK: @blastl2/sdk  
+Description: TypeScript/JavaScript SDK for interacting with Blast contracts, bridge, native yield, token  
+Status: Live  
+Sources: https://github.com/blastL2/sdk  
+Sources: https://www.npmjs.com/package/@blastl2/sdk
+
+API: Blast RPC (JSON-RPC)  
+Description: Standard Ethereum JSON-RPC over HTTP/WS (eth_, net_, web3_, debug_ namespaces)  
+Status: Live  
+Sources: https://docs.blast.io/developers/rpc  
+Sources: https://rpc.blast.io
+
+API: Blastscan API  
+Description: REST API for block explorer data (transactions, tokens, contracts, analytics)  
+Status: Live  
+Sources: https://blastscan.io/api-docs  
+Sources: https://docs.blast.io/developers/explorer-api
+
+Developer Tools: Foundry (forge, cast, anvil)  
+Description: Primary smart contract development framework; Blast-specific fork/anvil config  
+Status: Live  
+Sources: https://docs.blast.io/developers/foundry  
+Sources: https://github.com/blastL2/contracts/blob/main/foundry.toml
+
+Developer Tools: Hardhat  
+Description: Alternative smart contract development framework; Blast network config template  
+Status: Live  
+Sources: https://docs.blast.io/developers/hardhat  
+Sources: https://hardhat.org
+
+Developer Tools: Blast Hardhat Plugin / Foundry Plugin  
+Description: Custom plugins for deployment verification on Blastscan, network config  
+Status: Live  
+Sources: https://docs.blast.io/developers/plugins  
+Sources: https://github.com/blastL2/hardhat-plugin — *if exists; not verified public*
+
+Developer Tools: TypeChain  
+Description: Type-safe contract bindings generation for TypeScript projects  
+Status: Live  
+Sources: https://github.com/blastL2/sdk — *uses TypeChain for generated types*
+
+Developer Tools: Viem / Ethers.js v6  
+Description: RPC client libraries fully compatible with Blast RPC  
+Status: Live  
+Sources: https://docs.blast.io/developers/rpc  
+Sources: https://viem.sh
+
+Open Source Repository: blastL2/contracts  
+Description: Smart contracts (L1/L2), deployment scripts, tests, Foundry config  
+Status: Live  
+Sources: https://github.com/blastL2/contracts
+
+Open Source Repository: blastL2/sdk  
+Description: TypeScript SDK source, tests, documentation  
+Status: Live  
+Sources: https://github.com/blastL2/sdk
+
+Open Source Repository: blastL2/docs  
+Description: Documentation source (Mintlify/Docusaurus) for docs.blast.io  
+Status: Live  
+Sources: https://github.com/blastL2/docs — *if public; not verified*
+
+Developer Portal: docs.blast.io  
+Description: Technical documentation (architecture, contracts, bridge, native yield, governance, plugins)  
+Status: Live  
+Sources: https://docs.blast.io
+
+Developer Portal: blast.io/developers  
+Description: Developer landing page with quickstart, RPC, faucet, tooling links  
+Status: Live  
+Sources: https://blast.io/developers
+
+Hackathon: Blast Big Bang / Ecosystem Hackathons  
+Description: Periodic hackathons sponsored by Blast Foundation with prize pools (e.g., "Blast Big Bang" 2024)  
+Status: Completed (Big Bang 2024); future editions planned  
+Sources: https://blog.blast.io — *hackathon announcements in blog*  
+Sources: https://dorahacks.io/hackathon/blast — *DoraHacks partnership*
+
+Grant Program: Blast Gold Program  
+Description: Ongoing token incentive program for protocols/builders based on TVL, volume, KPIs (28% token allocation)  
+Status: Live  
+Sources: https://docs.blast.io/gold  
+Sources: https://blog.blast.io/blast-token-generation-event
+
+Grant Program: Blast Ecosystem Fund / Builder Grants  
+Description: Direct grants for early-stage builders (announced Q4 2024)  
+Status: Announced / Ongoing  
+Sources: https://blog.blast.io — *Q4 2024 announcement*  
+Sources: https://docs.blast.io/grants — *if exists*
+
+## Applications
+
+Application: Thruster  
+Category: DEX / Concentrated Liquidity / Stable Swap  
+Relationship: Core ecosystem protocol; primary liquidity venue; receives Blast Gold; integrates native yield for LP positions  
+Status: Live  
+Sources: https://thruster.finance  
+Sources: https://docs.blast.io/ecosystem
+
+Application: Ring Protocol  
+Category: Lending / Borrowing / Money Market  
+Relationship: Core ecosystem protocol; primary lending market; receives Blast Gold; supports BLAST collateral  
+Status: Live  
+Sources: https://ringprotocol.xyz  
+Sources: https://docs.blast.io/ecosystem
+
+Application: Wasabi  
+Category: Options / Derivatives / Structured Products  
+Relationship: Core ecosystem protocol; primary derivatives venue; receives Blast Gold; BLAST options markets  
+Status: Live  
+Sources: https://wasabi.xyz  
+Sources: https://docs.blast.io/ecosystem
+
+Application: Kaito  
+Category: InfoFi / AI Social Analytics / Reward Distribution  
+Relationship: Ecosystem partner; integrates Blast Points/Gold for social reward distribution; analytics dashboard  
+Status: Live  
+Sources: https://kaito.ai  
+Sources: https://docs.blast.io/ecosystem
+
+Application: Blur  
+Category: NFT Marketplace / BLUR Token Ecosystem  
+Relationship: Sister project (shared founder); NFT liquidity bridge; user base overlap; potential cross-governance  
+Status: Live  
+Sources: https://blur.io  
+Sources: https://blog.blast.io/introducing-blast
+
+Application: Juice Finance  
+Category: Leverage / Cross-Margin Lending  
+Relationship: Ecosystem protocol; built on Blast; receives Gold incentives  
+Status: Live  
+Sources: https://juice.finance  
+Sources: https://docs.blast.io/ecosystem — *listed in ecosystem directory*
+
+Application: Particle Exchange  
+Category: DEX / Orderbook / Perpetuals  
+Relationship: Ecosystem protocol; built on Blast; receives Gold incentives  
+Status: Live  
+Sources: https://particle.exchange  
+Sources: https://docs.blast.io/ecosystem — *listed in ecosystem directory*
+
+Application: Symmio  
+Category: Intent-based Derivatives / Symmetric Trading  
+Relationship: Ecosystem protocol; deployed on Blast; receives Gold incentives  
+Status: Live  
+Sources: https://symm.io  
+Sources: https://docs.blast.io/ecosystem — *listed in ecosystem directory*
+
+Application: Orbiter Finance  
+Category: Bridge / Cross-chain Liquidity  
+Relationship: Third-party bridge integration; supports Blast L2 deposits/withdrawals  
+Status: Live  
+Sources: https://orbiter.finance  
+Sources: https://docs.blast.io/bridge — *native bridge only; third-party bridges listed separately*
+
+Application: LayerZero / Stargate  
+Category: Omnichain Messaging / Bridge  
+Relationship: Third-party generic messaging and bridging deployed on Blast  
+Status: Live (protocol-deployed)  
+Sources: https://layerzero.network  
+Sources: https://stargate.finance
+
+## Governance Ecosystem
+
+Foundation: Blast Foundation  
+Description: Cayman Islands entity; holds treasury, upgrade keys, token allocation (10% Foundation + 28% Ecosystem); proposes governance parameters; executes passed proposals via multisig  
+Sources: https://blog.blast.io/introducing-blast  
+Sources: https://blog.blast.io/blast-token-generation-event
+
+DAO: Blast DAO (Token-weighted Governance)  
+Description: BLAST token holders vote on proposals (protocol parameters, treasury allocation, upgrades); delegation supported; 1 BLAST = 1 vote  
+Sources: https://blog.blast.io/blast-token-generation-event  
+Sources: https://docs.blast.io/governance — *if live*
+
+Council: Not formally established (per knowledge cutoff)  
+Description: No public council/committee structure disclosed; Foundation multisig acts as executive pre-DAO  
+Sources: https://blog.blast.io/blast-token-generation-event — *no council mentioned*
+
+Committee: Not formally established (per knowledge cutoff)  
+Description: No public committee structure (security, grants, risk) disclosed; managed by Foundation team  
+Sources: https://blog.blast.io — *no committee announcements*
+
+Validator Group: Not applicable (Optimistic Rollup, no L2 validator set)  
+Description: Security relies on Ethereum L1 validators, single sequencer, permissioned proposer/challenger  
+Sources: https://docs.blast.io/architecture/consensus  
+Sources: https://docs.blast.io/security
+
+Governance Portal: gov.blast.io / Snapshot  
+Description: On-chain/off-chain voting platform (not verified live at cutoff)  
+Sources: https://gov.blast.io — *not verified live*  
+Sources: https://snapshot.org/#/blast.eth — *not verified live*
+
+## Ecosystem Risks
+
+Risk: Single Sequencer Centralization  
+Description: Only one sequencer operated by Blast Foundation; no forced inclusion, no decentralized sequencer set live; censorship and liveness risk  
+Type: Centralization Risk  
+Sources: https://docs.blast.io/architecture/sequencer  
+Sources: https://github.com/blastL2/contracts — *no forced inclusion contract found*
+
+Risk: Permissioned Proposer and Challenger  
+Description: Output root proposal and fraud proof challenge restricted to Foundation-whitelisted addresses; no permissionless challenge game live  
+Type: Centralization Risk  
+Sources: https://github.com/blastL2/contracts/blob/main/src/L1/L2OutputOracle.sol  
+Sources: https://github.com/blastL2/contracts/blob/main/src/L1/DisputeGame.sol
+
+Risk: L1 Yield Source Concentration (Lido + MakerDAO)  
+Description: Native yield depends on two protocols; smart contract risk, governance risk, or regulatory action on either could disrupt yield  
+Type: Protocol Dependency Risk  
+Sources: https://docs.blast.io/native-yield  
+Sources: https://blog.blast.io/introducing-blast
+
+Risk: Oracle Dependency (Chainlink)  
+Description: Yield rebasing rate derived from Chainlink feeds; feed manipulation, staleness, or outage would cause incorrect rebasing  
+Type: Oracle Dependency Risk  
+Sources: https://docs.blast.io/native-yield/oracle  
+Sources: https://docs.blast.io/native-yield/technical-details
+
+Risk: Upgrade Key Centralization (Foundation Multisig)  
+Description: All core L1/L2 contracts upgradeable via Foundation multisig; no public timelock, no on-chain governance execution delay verified  
+Type: Centralization Risk  
+Sources: https://github.com/blastL2/contracts/blob/main/src/L1/OptimismPortal.sol — *proxy admin pattern*  
+Sources: https://blog.blast.io/blast-token-generation-event — *governance described but execution via Foundation*
+
+Risk: Bridge Dependency (Canonical Bridge Only)  
+Description: Native bridge is sole trust-minimized exit; 7-day withdrawal delay; no fast withdrawal mechanism; third-party bridges add trust assumptions  
+Type: Bridge Dependency Risk  
+Sources: https://docs.blast.io/bridge/withdrawals  
+Sources: https://docs.blast.io/bridge/security
+
+Risk: Cloud Infrastructure Concentration  
+Description: Sequencer, proposer, challenger, RPC nodes likely hosted on single cloud provider (AWS/GCP); no public geographic redundancy disclosure  
+Type: Cloud Dependency Risk  
+Sources: https://docs.blast.io/architecture — *no infra disclosure*  
+Sources: https://github.com/blastL2 — *no public infra repo*
+
+Risk: Investor/Team Token Unlock Overhang  
+Description: 36.5% allocated to investors + team with undisclosed vesting schedules; potential future sell pressure  
+Type: Financial Dependency Risk  
+Sources: https://blog.blast.io/blast-token-generation-event  
+Sources: https://docs.blast.io/tokenomics — *not public*
+
+Risk: Execution Client Not Open Source  
+Description: blast-geth (custom Geth fork) not publicly available; prevents independent node operation and verification  
+Type: Infrastructure Dependency Risk  
+Sources: https://github.com/blastL2 — *no blast-geth repo*  
+Sources: https://docs.blast.io/architecture — *client not specified as open source*
+
+Risk: Regulatory Jurisdiction (Cayman + US Persons)  
+Description: Foundation in Cayman; founders/team include US persons; token restricted in US but secondary trading occurs; no public legal opinion  
+Type: Regulatory Risk  
+Sources: https://blog.blast.io/introducing-blast  
+Sources: https://blog.blast.io/blast-token-generation-event — *geographic restrictions in TGE terms*
+
+## Official Ecosystem Resources
+
+Official Documentation: https://docs.blast.io  
+Developer Portal: https://blast.io/developers  
+GitHub: https://github.com/blastL2  
+Partner Documentation: https://docs.blast.io/ecosystem (links to Thruster, Ring, Wasabi, Kaito docs)  
+Grant Program: https://docs.blast.io/gold  
+Grant Program: https://docs.blast.io/grants (if live)  
+Ecosystem Dashboard: https://blast.io (website)  
+Ecosystem Dashboard: https://blastscan.io (explorer analytics)  
+Ecosystem Dashboard: https://defillama.com/chain/Blast (TVL, fees, protocols)  
+Ecosystem Dashboard: https://tokenterminal.com/terminal/projects/blast (revenue, metrics)  
+Governance Portal: https://gov.blast.io (not verified)  
+Governance Portal: https://snapshot.org/#/blast.eth (not verified)  
+Bridge Frontend: https://bridge.blast.io  
+RPC Endpoint: https://rpc.blast.io  
+Faucet (Testnet): https://faucet.blast.io (if live)  
+Brand Assets: https://blast.io/brand (if live)
+
+## RINGKASAN
+
+Primary Ecosystem: Ethereum L2 (Optimistic Rollup) with native yield differentiation  
+Supported Chains: Ethereum Mainnet (L1), Blast L2 (

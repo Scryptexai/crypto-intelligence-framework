@@ -1,0 +1,374 @@
+PROJECT: Blast
+
+## Core Insights
+
+Insight: Native yield sebagai diferensiasi utama L2 — Blast memposisikan native yield (ETH staking + T-bill) sebagai value proposition utama bukan sekadar fitur tambahan【Phase 1 — Category】【Phase 3 — EV-001】【Phase 4 — System Architecture】
+
+Explanation: Berbeda dengan L2 lain yang fokus pada throughput atau biaya, Blast membangun seluruh arsitektur (NativeYieldPrecompile, yield escrow, rebasing mechanism) sekitar native yield sejak genesis. Ini menciptakan moat teknis yang sulit direplikasi tanpa redesign fundamental.
+
+Evidence: Launch blog menyatakan "Blast is an Ethereum L2 with native yield" sebagai tagline utama【Phase 1 — Category】; NativeYieldPrecompile (0x4300...0004) di-deploy sejak block 1 mainnet【Phase 4 — Core Components】; 53.5% token allocation ditujukan untuk community/ecosystem incentives yang drive TVL untuk yield【Phase 6 — Distribution】
+
+Supporting Dataset: Phase 1 Foundation, Phase 3 EV-001/EV-006, Phase 4 System Architecture/Core Components, Phase 6 Distribution
+
+Confidence: HIGH
+
+---
+
+Insight: Points/Gold incentive program sebagai growth engine utama — Seluruh strategi user acquisition dan liquidity bootstrapping bergantung pada token incentives (Points untuk user, Gold untuk builder)【Phase 3 — EV-004】【Phase 3 — EV-005】【Phase 6 — Distribution】
+
+Explanation: Blast tidak memiliki native revenue model yang signifikan selain sequencer fees; growth didanai oleh token emissions (25.5% community + 28% ecosystem = 53.5% total supply). Ini menciptakan dependency struktural pada token price untuk sustainability.
+
+Evidence: Points Season 1 dimulai Nov 2023 pre-mainnet【Phase 3 — EV-004】; Gold program untuk builder announced same period【Phase 3 — EV-005】; TGE allocation bestätigt 53.5% untuk incentives【Phase 6 — Distribution】; TVL peak $1.48B Mar 2024 lalu turun ke ~$400M Dec 2024 korelasi dengan Season 1 end【Phase 8 — Adoption Metrics】
+
+Supporting Dataset: Phase 3 EV-004/EV-005/EV-014/EV-019, Phase 6 Distribution, Phase 8 Adoption Metrics
+
+Confidence: HIGH
+
+---
+
+Insight: Centralized architecture sebagai trade-off time-to-market — Single sequencer, permissioned proposer/challenger, Foundation multisig upgrade control semua centralized di launch【Phase 4 — Core Components】【Phase 4 — Security Model】【Phase 9 — Technical Decision Pattern】
+
+Explanation: Blast memilih launch cepat dengan arsitektur centralized (mirip early Optimism/Arbitrum) daripada menunggu decentralized sequencer/challenger mature. Roadmap decentralization tidak dipublikasikan.
+
+Evidence: Docs state "single sequencer operated by Foundation"【Phase 4 — Core Components】; L2OutputOracle dan DisputeGame whitelist-only【Phase 4 — Security Model】; No forced inclusion contract found【Phase 4 — Known Technical Limitations】; Phase 9 confirms "Centralized sequencer architecture; governance not ready for fee management"【Phase 9 — Financial Decision Pattern】
+
+Supporting Dataset: Phase 4 Core Components/Security Model/Known Technical Limitations, Phase 9 Technical/Financial Decision Pattern
+
+Confidence: HIGH
+
+---
+
+Insight: OP Stack component reuse dengan custom yield layer — Blast menggunakan OP Stack fault proof (Cannon/DisputeGame) tapi bukan full OP Stack chain; custom sequencer, custom yield precompile, custom native yield distribution【Phase 4 — Core Components】【Phase 4 — Consensus Mechanism】【Phase 9 — Technical Decision Pattern】
+
+Explanation: Strategi "modular adoption" — mengambil komponen battle-tested (fault proof) sambil membangun custom layer untuk diferensiasi (native yield). Mengurangi R&D risk pada consensus tapi menciptakan maintenance burden pada custom components.
+
+Evidence: DisputeGame imported from OP Stack Cannon【Phase 4 — Core Components】; NativeYieldPrecompile fully custom【Phase 4 — Core Components】; blast-geth custom fork not open source【Phase 4 — Known Technical Limitations】; Phase 9 states "Choose Optimistic Rollup (OP Stack fault proof) over ZK Rollup... faster time-to-market"【Phase 9 — Technical Decision Pattern】
+
+Supporting Dataset: Phase 4 Core Components/Consensus Mechanism/Known Technical Limitations, Phase 9 Technical Decision Pattern
+
+Confidence: HIGH
+
+---
+
+Insight: Founder-led ecosystem dengan Blur synergy — Tieshun Roquerre (Blur co-founder) memanfaatkan Blur user base, brand, dan NFT liquidity sebagai wedge untuk Blast adoption【Phase 2 — Entity: Tieshun Roquerre】【Phase 2 — Entity: Blur】【Phase 3 — EV-001】【Phase 7 — Major Integrations】
+
+Explanation: Bukan generic L2; Blast launch dengan built-in distribution channel via Blur (NFT traders) dan shared founder credibility. Ini mengurangi cold-start problem yang menghantui L2 baru.
+
+Evidence: Tieshun Roquerre CEO Blast, ex-co-founder Blur【Phase 2 — Entity: Tieshun Roquerre】; Blur listed as external company dengan Application/Liquidity/Distribution function【Phase 2 — Entity: Blur】; Launch blog mentions "Blur integration"【Phase 3 — EV-001】; Phase 7 Major Integrations includes Blur【Phase 7 — Major Integrations】
+
+Supporting Dataset: Phase 2 Entity Tieshun Roquerre/Blur, Phase 3 EV-001, Phase 7 Major Integrations
+
+Confidence: HIGH
+
+---
+
+Insight: Tokenomics dirancang untuk growth bukan value accrual — Fixed supply 100B, no burn, no buyback, no fee switch, high emissions (53.5% incentives), vesting undisclosed untuk team/investor【Phase 6 — Supply】【Phase 6 — Inflation/Deflation】【Phase 6 — Vesting Schedule】【Phase 9 — Financial Decision Pattern】
+
+Explanation: Token utility (governance, staking, fee payment) activated post-TGE tapi value capture mechanism minimal. Protocol revenue (sequencer fees, potential yield retention) tidak transparan dan tidak di-direct ke token holders.
+
+Evidence: "Tidak ada native burn mechanism... Tidak ada buyback program resmi"【Phase 6 — Inflation/Deflation】; Vesting schedules untuk team/investor/foundation/ecosystem semua "tidak diketahui"【Phase 6 — Vesting Schedule】; Phase 9 confirms "No buyback, burn, atau fee switch mechanism"【Phase 9 — Financial Decision Pattern】
+
+Supporting Dataset: Phase 6 Supply/Inflation-Deflation/Vesting Schedule, Phase 9 Financial Decision Pattern
+
+Confidence: HIGH
+
+---
+
+Insight: Cayman Foundation legal wrapper dengan opacity by design — Entity di Cayman Islands, treasury tidak transparan, upgrade keys di multisig Foundation, no public timelock, no financial reporting【Phase 1 — Founding Entity】【Phase 2 — Entity: Blast Foundation】【Phase 4 — Security Model】【Phase 5 — Treasury】【Phase 7 — Ecosystem Risks】
+
+Explanation: Struktur legal memungkinkan privacy finansial dan kontrol terpusat yang konsisten dengan "move fast" philosophy tapi menciptakan trust assumption tinggi untuk user dan investor.
+
+Evidence: "Founding Entity: Blast Foundation (Cayman Islands)"【Phase 1 — Founding Entity】; "Treasury Size: tidak diungkap"【Phase 5 — Treasury】; "Admin control oleh Blast Foundation multisig... Tidak ada timelock controller on-chain terverifikasi"【Phase 4 — Security Model】; Phase 7 lists "Treasury Concentration / Opaque Treasury Management" as risk【Phase 7 — Ecosystem Risks】
+
+Supporting Dataset: Phase 1 Founding Entity, Phase 2 Entity Blast Foundation, Phase 4 Security Model, Phase 5 Treasury, Phase 7 Ecosystem Risks
+
+Confidence: HIGH
+
+---
+
+Insight: Ecosystem bootstrap via "DeFi trio" + InfoFi dalam 60 hari — Thruster (DEX), Ring (lending), Wasabi (options) diluncurkan Mar-Apr 2024, Kaito (InfoFi) May 2024, semuanya receive Gold incentives【Phase 3 — EV-008】【Phase 3 — EV-009】【Phase 3 — EV-010】【Phase 3 — EV-011】【Phase 7 — Applications】
+
+Explanation: Minimum viable DeFi ecosystem deployed rapidly via token incentives bukan organic growth. Menunjukkan execution speed tapi sustainability questionable tanpa continuous incentives.
+
+Evidence: EV-008/009/010 all Mar-Apr 2024【Phase 3 — EV-008/EV-009/EV-010】; EV-011 May 2024【Phase 3 — EV-011】; All receive Gold incentives【Phase 7 — Applications】; Phase 9 confirms "Bootstrap core DeFi trio via Gold incentives dalam 60 hari post-mainnet"【Phase 9 — Ecosystem Decision Pattern】
+
+Supporting Dataset: Phase 3 EV-008/EV-009/EV-010/EV-011, Phase 7 Applications, Phase 9 Ecosystem Decision Pattern
+
+Confidence: HIGH
+
+---
+
+Insight: TVL volatility driven by incentive cycles — Peak TVL $1.48B (Mar 2024, Points S1) → ~$400M (Dec 2024, post-S2) menunjukkan capital mercenary yang follow incentives【Phase 8 — Adoption Metrics】【Phase 3 — EV-007】【Phase 3 — EV-019】
+
+Explanation: Native yield tidak cukup retain capital tanpa token incentives. User deposit untuk Points, withdraw post-snapshot. Structural challenge untuk L2 yang rely pada yield + incentives.
+
+Evidence: TVL peak Mar 2024 $1.48B【Phase 8 — Adoption Metrics】; Points S1 snapshot Mar 2024【Phase 3 — EV-007】; S2 end Dec 2024 snapshot【Phase 3 — EV-019】; TVL Dec 2024 ~$400M【Phase 8 — Adoption Metrics】
+
+Supporting Dataset: Phase 8 Adoption Metrics, Phase 3 EV-007/EV-019
+
+Confidence: HIGH
+
+---
+
+Insight: No formal governance infrastructure at launch — Token-weighted voting activated post-TGE tapi governance portal (gov.blast.io/Snapshot) not verified live, no council/committee, Foundation multisig executes【Phase 6 — Governance】【Phase 7 — Governance Ecosystem】【Phase 9 — Governance Decision Pattern】
+
+Explanation: Progressive decentralization narrative tapi execution delayed. DAO formation projected 2025 (EV-020) tapi no concrete roadmap.
+
+Evidence: "gov.blast.io / Snapshot — not verified live"【Phase 6 — Governance】; "Council: Not formally established; Committee: Not formally established"【Phase 7 — Governance Ecosystem】; Phase 9 states "Governance portal not verified live at knowledge cutoff... focus on protocol upgrades first"【Phase 9 — Governance Decision Pattern】; EV-020 projected 2025【Phase 3 — EV-020】
+
+Supporting Dataset: Phase 6 Governance, Phase 7 Governance Ecosystem, Phase 9 Governance Decision Pattern, Phase 3 EV-020
+
+Confidence: HIGH
+
+## Strategic Principles
+
+Principle: Native yield as core differentiator, not add-on
+Explanation: Seluruh arsitektur (precompile, escrow, oracle, rebasing) dibangun sekitar native yield sejak genesis. Bukan fitur yang ditambahkan kemudian.
+Evidence: NativeYieldPrecompile deployed genesis block【Phase 4 — Core Components】; Launch blog leads with native yield【Phase 1 — Category】; 53.5% token allocation funds yield-seeking behavior【Phase 6 — Distribution】
+Supporting Dataset: Phase 1, Phase 4, Phase 6
+Confidence: HIGH
+
+Principle: Incentive-first growth over organic adoption
+Explanation: Points (user) + Gold (builder) programs drive semua metrics (TVL, tx count, developer activity). Growth budget = 53.5% token supply.
+Evidence: Points S1 pre-mainnet Nov 2023【Phase 3 — EV-004】; Gold for builder announced same time【Phase 3 — EV-005】; Allocation 25.5%+28%【Phase 6 — Distribution】; TVL correlates with incentive seasons【Phase 8 — Adoption Metrics】
+Supporting Dataset: Phase 3, Phase 6, Phase 8
+Confidence: HIGH
+
+Principle: Speed to market > decentralization at launch
+Explanation: Centralized sequencer, permissioned proposer/challenger, Foundation multisig upgrade control — semua untuk launch Feb 2024. Decentralization deferred.
+Evidence: Single sequencer operated by Foundation【Phase 4 — Core Components】; Permissioned L2OutputOracle/DisputeGame【Phase 4 — Security Model】; No forced inclusion【Phase 4 — Known Technical Limitations】; Phase 9 confirms "Time-to-market priority"【Phase 9 — Decision Timeline】
+Supporting Dataset: Phase 4, Phase 9
+Confidence: HIGH
+
+Principle: Modular adoption of battle-tested components (OP Stack fault proof) + custom differentiation layer (native yield)
+Explanation: Reuse DisputeGame/Cannon dari OP Stack, build custom yield precompile, custom sequencer, custom yield distribution.
+Evidence: DisputeGame uses OP Stack Cannon【Phase 4 — Core Components】; NativeYieldPrecompile fully custom【Phase 4 — Core Components】; Phase 9 states "OP Stack fault proof components ready tapi decentralized sequencer/challenger belum mature"【Phase 9 — Decision Timeline】
+Supporting Dataset: Phase 4, Phase 9
+Confidence: HIGH
+
+Principle: Founder-led ecosystem leverage (Blur integration) untuk cold-start advantage
+Explanation: Shared founder (Tieshun) bridge Blur NFT trader base ke Blast. Built-in distribution channel.
+Evidence: Tieshun co-founder Blur & Blast【Phase 2 — Entity: Tieshun Roquerre】; Blur listed as external company with Distribution function【Phase 2 — Entity: Blur】; Launch blog mentions Blur integration【Phase 3 — EV-001】
+Supporting Dataset: Phase 2, Phase 3
+Confidence: HIGH
+
+Principle: Cayman Foundation wrapper untuk legal flexibility dan privacy
+Explanation: Jurisdiksi Cayman memungkinkan token issuance, treasury opacity, upgrade control tanpa public disclosure requirements.
+Evidence: "Founding Entity: Blast Foundation (Cayman Islands)"【Phase 1 — Founding Entity】; Treasury undisclosed【Phase 5 — Treasury】; Upgrade keys Foundation multisig no timelock【Phase 4 — Security Model】
+Supporting Dataset: Phase 1, Phase 4, Phase 5
+Confidence: HIGH
+
+Principle: Token emissions sebagai primary growth capital, bukan protocol revenue
+Explanation: No meaningful protocol revenue disclosed; sequencer fees small; growth funded by 53.5% token allocation emissions.
+Evidence: Revenue Model only lists potential sources【Phase 5 — Revenue Model】; Revenue History "tidak diungkap"【Phase 5 — Revenue History】; Allocation 53.5% incentives【Phase 6 — Distribution】; Phase 9 confirms "Fund ecosystem via Blast Gold (token emissions) bukan grants dalam stablecoin"【Phase 9 — Financial Decision Pattern】
+Supporting Dataset: Phase 5, Phase 6, Phase 9
+Confidence: HIGH
+
+## Success Factors
+
+Factor: Native yield implementation yang working day-1 — Automatic rebasing ke semua address tanpa user action menciptakan "magic moment" dan differentiation nyata vs L2 lain
+Evidence: NativeYieldPrecompile active genesis block【Phase 4 — Core Components】; "Semua address L2 menerima rebasing yield otomatis tanpa staking"【Phase 9 — Decision Timeline】; Narrative position "Native Yield / Real Yield" sebagai Main Narrative【Phase 8 — Narrative Position】
+Supporting Dataset: Phase 4, Phase 8, Phase 9
+Confidence: HIGH
+
+Factor: Points program pre-mainnet menciptakan TVL dan user base sebelum launch — >500k unique addresses, ratusan juta USD TVL di bridge sebelum mainnet live
+Evidence: Points S1 started Nov 2023 pre-mainnet【Phase 3 — EV-004】; Blog mentions "hundreds of thousands" depositors【Phase 3 — EV-006】; TVL peak $1.48B Mar 2024【Phase 8 — Adoption Metrics】
+Supporting Dataset: Phase 3, Phase 8
+Confidence: HIGH
+
+Factor: Strategic funding dari top-tier VC (Paradigm, Standard Crypto) memberikan credibility dan runway — ~$20-30M reported, 16.5% token allocation
+Evidence: Media reports Paradigm + Standard Crypto【Phase 3 — EV-003】; Investor allocation 16.5%【Phase 6 — Distribution】; Phase 5 lists both as Financial Dependencies【Phase 5 — Financial Dependencies】
+Supporting Dataset: Phase 3, Phase 5, Phase 6
+Confidence: MEDIUM (amount not officially confirmed)
+
+Factor: Rapid DeFi ecosystem bootstrap via Gold incentives — Thruster, Ring, Wasabi live dalam 60 hari post-mainnet dengan liquidity primitives lengkap
+Evidence: EV-008/009/010 Mar-Apr 2024【Phase 3 — EV-008/EV-009/EV-010】; All receive Gold【Phase 7 — Applications】; Phase 9 confirms "Bootstrap core DeFi trio via Gold incentives dalam 60 hari"【Phase 9 — Ecosystem Decision Pattern】
+Supporting Dataset: Phase 3, Phase 7, Phase 9
+Confidence: HIGH
+
+Factor: Major CEX listings at TGE (Binance, Bybit, OKX, Gate.io) — Immediate liquidity, price discovery, accessibility untuk non-crypto-native users
+Evidence: TGE Jun 26 2024 listed on 4 major CEX【Phase 3 — EV-013】; Spot + perpetual markets【Phase 8 — Trading Markets】; Phase 6 TGE section confirms【Phase 6 — TGE】
+Supporting Dataset: Phase 3, Phase 6, Phase 8
+Confidence: HIGH
+
+Factor: EVM equivalence memudahkan developer onboarding — Foundry/Hardhat compatible, existing Ethereum tooling works, Blast SDK abstraksi contracts spesifik
+Evidence: "Full EVM equivalence (type 2/3)"【Phase 4 — Execution Environment】; Foundry/Hardhat/Viem/Ethers all supported【Phase 4 — Development Framework】; Phase 7 Developer Ecosystem lists tools【Phase 7 — Developer Ecosystem】
+Supporting Dataset: Phase 4, Phase 7
+Confidence: HIGH
+
+Factor: Blur founder reputation dan NFT trader base sebagai initial distribution wedge — Tieshun track record dengan Blur memberikan credibility
+Evidence: Tieshun co-founder Blur (leading NFT marketplace)【Phase 2 — Entity: Tieshun Roquerre】; Blur integration mentioned in launch blog【Phase 3 — EV-001】; Phase 9 confirms "Blur has established NFT trader base; founder bridge kedua ekosistem"【Phase 9 — Ecosystem Decision Pattern】
+Supporting Dataset: Phase 2, Phase 3, Phase 9
+Confidence: HIGH
+
+## Failure Factors
+
+Factor: TVL tidak sustainable tanpa continuous incentives — Peak $1.48B Mar 2024 → ~$400M Dec 2024 (73% decline) korelasi dengan Points season cycles
+Evidence: TVL peak Mar 2024 $1.48B【Phase 8 — Adoption Metrics】; Points S1 snapshot Mar 2024【Phase 3 — EV-007】; S2 end Dec 2024【Phase 3 — EV-019】; TVL Dec 2024 ~$400M【Phase 8 — Adoption Metrics】; Phase 9 identifies "TVL decline post-Points Season 1" as risk【Phase 9 — Risk Response Pattern】
+Supporting Dataset: Phase 3, Phase 8, Phase 9
+Confidence: HIGH
+
+Factor: Centralization trust assumptions tinggi (sequencer, proposer, challenger, upgrade keys) — No forced inclusion, no permissionless challenge, no timelock
+Evidence: Single sequencer Foundation-operated【Phase 4 — Core Components】; Permissioned proposer/challenger【Phase 4 — Security Model】; Upgrade keys Foundation multisig no timelock【Phase 4 — Security Model】; Phase 7 lists multiple centralization risks【Phase 7 — Ecosystem Risks】
+Supporting Dataset: Phase 4, Phase 7
+Confidence: HIGH
+
+Factor: Tokenomics tidak memiliki value accrual mechanism — No burn, no buyback, no fee switch, high emissions, vesting undisclosed untuk 36.5% (team+investor)
+Evidence: "Tidak ada native burn mechanism... Tidak ada buyback program resmi"【Phase 6 — Inflation/Deflation】; Vesting schedules all "tidak diketahui"【Phase 6 — Vesting Schedule】; Phase 9 confirms no buyback/burn/fee switch【Phase 9 — Financial Decision Pattern】
+Supporting Dataset: Phase 6, Phase 9
+Confidence: HIGH
+
+Factor: Treasury dan revenue opacity — No public treasury dashboard, no financial reports, yield retention rate undisclosed, sequencer revenue not transparan
+Evidence: Treasury "tidak diungkap"【Phase 5 — Treasury】; Revenue History "tidak diungkap"【Phase 5 — Revenue History】; Native yield retention rate "not documented"【Phase 5 — Revenue Model】; Phase 7 lists "Treasury Concentration / Opaque Treasury Management"【Phase 7 — Ecosystem Risks】
+Supporting Dataset: Phase 5, Phase 7
+Confidence: HIGH
+
+Factor: Execution client (blast-geth) tidak open source — Mencegah independent node operation, verification, dan community contribution
+Evidence: "blast-geth execution client repo tidak public/verified open source"【Phase 4 — Known Technical Limitations】; GitHub org no blast-geth repo【Phase 4 — Current Technical Stack】; Phase 7 lists "Execution Client Not Open Source" risk【Phase 7 — Ecosystem Risks】
+Supporting Dataset: Phase 4, Phase 7
+Confidence: HIGH
+
+Factor: Governance infrastructure delayed — Portal not live, no council/committee, Foundation executes, DAO formation projected 2025 tapi no roadmap
+Evidence: "gov.blast.io / Snapshot — not verified live"【Phase 6 — Governance】; "Council: Not formally established; Committee: Not formally established"【Phase 7 — Governance Ecosystem】; EV-020 projected 2025【Phase 3 — EV-020】; Phase 9 confirms "governance UI lower priority"【Phase 9 — Governance Decision Pattern】
+Supporting Dataset: Phase 3, Phase 6, Phase 7, Phase 9
+Confidence: HIGH
+
+Factor: Dependency pada dua L1 yield source (Lido + MakerDAO) tanpa diversification — Smart contract risk, governance risk, regulatory risk pada kedua protokol
+Evidence: Lido stETH + MakerDAO Spark USDS only sources【Phase 4 — System Architecture】; Phase 7 External Dependencies both "Critical"【Phase 7 — External Dependencies】; Phase 7 Ecosystem Risks lists "L1 Yield Source Concentration"【Phase 7 — Ecosystem Risks】
+Supporting Dataset: Phase 4, Phase 7
+Confidence: HIGH
+
+Factor: Canonical bridge 7-day withdrawal tanpa fast exit native — User experience buruk untuk traders; rely pada third-party bridges (Orbiter, LayerZero) yang tambah trust assumption
+Evidence: "7-Day Withdrawal Delay" known limitation【Phase 4 — Known Technical Limitations】; Third-party bridges listed separately【Phase 7 — Major Integrations】; Phase 7 Ecosystem Risks lists "Bridge Dependency"【Phase 7 — Ecosystem Risks】
+Supporting Dataset: Phase 4, Phase 7
+Confidence: HIGH
+
+## Decision Framework
+
+Observe
+→ Market gap: L2 wars saturated (Arbitrum, Optimism, Base, zkSync); no L2 dengan native yield built-in
+→ User pain point: Harus manual stake/bridge untuk yield; capital inefficiency
+→ Founder insight: Blur NFT traders want yield on idle ETH/stablecoin
+Evidence: Launch blog positioning【Phase 1 — Category】; Native yield as main narrative【Phase 8 — Narrative Position】; Blur integration【Phase 3 — EV-001】
+Supporting Dataset: Phase 1, Phase 3, Phase 8
+Confidence: HIGH
+
+Evaluate
+→ Technical: Optimistic Rollup (OP Stack fault proof) faster than ZK; custom yield precompile feasible; centralized sequencer acceptable for v1
+→ Financial: Strategic VC funding sufficient; token incentives (53.5%) sebagai growth capital; no public sale needed
+→ Legal: Cayman Foundation wrapper untuk token issuance flexibility
+→ Ecosystem: Blur user base sebagai initial distribution; bootstrap DeFi trio via Gold
+Evidence: Phase 9 Decision Timeline shows all evaluations【Phase 9 — Decision Timeline】; Technical choices documented【Phase 9 — Technical Decision Pattern】; Financial choices【Phase 9 — Financial Decision Pattern】; Ecosystem choices【Phase 9 — Ecosystem Decision Pattern】
+Supporting Dataset: Phase 9 (all Decision Patterns)
+Confidence: HIGH
+
+Fund
+→ Strategic round Paradigm + Standard Crypto Nov 2023 (~$20-30M)
+→ Token allocation: 16.5% investors, 20% team, 10% foundation, 28% ecosystem, 25.5% community
+→ No public sale, no launchpad
+Evidence: EV-003 funding【Phase 3 — EV-003】; TGE allocation【Phase 6 — Distribution】; Phase 5 Funding History【Phase 5 — Funding History】
+Supporting Dataset: Phase 3, Phase 5, Phase 6
+Confidence: HIGH
+
+Develop
+→ Custom OP Stack fork: DisputeGame/Cannon dari OP Stack, custom NativeYieldPrecompile, custom blast-geth
+→ Testnet Nov 2023 dengan Points S1
+→ Mainnet Feb 2024 dengan native yield active
+→ Contracts open source (GitHub), SDK open source, client closed source
+Evidence: EV-002 testnet【Phase 3 — EV-002】; EV-006 mainnet【Phase 3 — EV-006】; GitHub contracts/SDK public【Phase 4 — Official Technical Resources】; blast-geth not public【Phase 4 — Known Technical Limitations】
+Supporting Dataset: Phase 3, Phase 4
+Confidence: HIGH
+
+Launch
+→ Mainnet Feb 29 2024: native yield live, canonical bridge 7-day withdrawal
+→ DeFi trio (Thruster, Ring, Wasabi) Mar-Apr 2024 via Gold
+→ TGE Jun 26 2024: token live, 4 major CEX listings, Season 1 claim
+→ Points S2 Jul 2024: expanded mechanics
+Evidence: EV-006/008/009/010/012/013/014【Phase 3 — EV-006/EV-008/EV-009/EV-010/EV-012/EV-013/EV-014】
+Supporting Dataset: Phase 3
+Confidence: HIGH
+
+Govern
+→ Post-TGE: Token-weighted voting activated, Foundation multisig executes
+→ No governance portal live, no council/committee
+→ DAO formation projected 2025 (EV-020)
+→ Upgrade via Foundation multisig (v1.1 Nov 2024)
+Evidence: Phase 6 Governance【Phase 6 — Governance】; Phase 7 Governance Ecosystem【Phase 7 — Governance Ecosystem】; EV-018 v1.1 upgrade【Phase 3 — EV-018】; EV-020 projected【Phase 3 — EV-020】
+Supporting Dataset: Phase 3, Phase 6, Phase 7
+Confidence: HIGH
+
+Iterate
+→ v1.1 hard fork Nov 2024: performance, EIP-1559 tuning, EIP-2612 permit
+→ Points S2 end Dec 2024, S3 mechanics TBD
+→ Gold distributions ongoing
+→ Ecosystem Fund Q4 2024 announced
+Evidence: EV-018 v1.1【Phase 3 — EV-018】; EV-019 S2 end【Phase 3 — EV-019】; EV-017 Ecosystem Fund【Phase 3 — EV-017】; Phase 7 Grant Programs【Phase 7 — Grant Programs】
+Supporting Dataset: Phase 3, Phase 7
+Confidence: HIGH
+
+## Reusable Playbook
+
+Practice: Native yield sebagai core differentiator untuk L2 baru
+How: Build custom precompile untuk rebasing yield dari L1 sources (stETH, T-bill) ke semua L2 address automatically. No user opt-in required. Fund via token emissions initially.
+Evidence: NativeYieldPrecompile genesis deployment【Phase 4 — Core Components】; Automatic rebasing design【Phase 4 — Native Yield Distributor】; 53.5% allocation funds incentives【Phase 6 — Distribution】
+Supporting Dataset: Phase 4, Phase 6
+Confidence: HIGH
+
+Practice: Pre-mainnet Points program untuk bootstrap TVL dan sybil-resistant user base
+How: Launch bridge + Points program 3-4 bulan sebelum mainnet. Reward deposits dengan points claimable at TGE. Creates pre-launch TVL dan community.
+Evidence: Points S1 Nov 2023 pre-mainnet【Phase 3 — EV-004】; >500k addresses deposited【Phase 3 — EV-006】; TVL peak $1.48B【Phase 8 — Adoption Metrics】
+Supporting Dataset: Phase 3, Phase 8
+Confidence: HIGH
+
+Practice: Gold/Builder incentive program untuk bootstrap DeFi primitives rapidly
+How: Allocate significant token supply (28%) ke ecosystem incentives. Target core primitives: DEX, lending, derivatives. Distribute based on KPIs (TVL, volume).
+Evidence: Gold program announced Nov 2023【Phase 3 — EV-005】; Thruster/Ring/Wasabi live Mar-Apr 2024【Phase 3 — EV-008/EV-009/EV-010】; All receive Gold【Phase 7 — Applications】
+Supporting Dataset: Phase 3, Phase 7
+Confidence: HIGH
+
+Practice: Founder-led ecosystem leverage (existing user base dari previous project)
+How: Jika founder memiliki previous successful project (Blur), integrate deeply. Shared user base, liquidity, brand trust.
+Evidence: Tieshun co-founder Blur & Blast【Phase 2 — Entity: Tieshun Roquerre】; Blur integration in launch blog【Phase 3 — EV-001】; Phase 9 confirms "Blur has established NFT trader base"【Phase 9 — Ecosystem Decision Pattern】
+Supporting Dataset: Phase 2, Phase 3, Phase 9
+Confidence: HIGH
+
+Practice: Strategic VC funding tanpa public sale untuk maintain control dan reduce regulatory risk
+How: Raise dari top-tier VC (Paradigm, Standard Crypto) via private round. Allocate token supply to investors (16.5%). No public sale, no launchpad.
+Evidence: Media reports strategic round【Phase 3 — EV-003】; Investor allocation 16.5%【Phase 6 — Distribution】; No public sale in TGE【Phase 6 — TGE】
+Supporting Dataset: Phase 3, Phase 6
+Confidence: HIGH
+
+Practice: Modular tech adoption — reuse battle-tested components, build custom differentiation
+How: Gunakan OP Stack fault proof (Cannon/DisputeGame) sebagai settlement layer. Build custom yield layer, custom sequencer, custom native token precompile.
+Evidence: DisputeGame dari OP Stack【Phase 4 — Core Components】; NativeYieldPrecompile custom【Phase 4 — Core Components】; Phase 9 Technical Decision Pattern【Phase 9 — Technical Decision Pattern】
+Supporting Dataset: Phase 4, Phase 9
+Confidence: HIGH
+
+Practice: Major CEX listings at TGE untuk immediate liquidity dan accessibility
+How: Secure Binance, Bybit, OKX, Gate.io listings simultaneous dengan TGE. Spot + perpetual markets.
+Evidence: TGE Jun 26 2024 listed 4 CEX【Phase 3 — EV-013】; Spot + perpetual【Phase 8 — Trading Markets】
+Supporting Dataset: Phase 3, Phase 8
+Confidence: HIGH
+
+Practice: EVM equivalence + custom SDK untuk developer experience
+How: Full EVM equivalence (type 2/3). Provide Blast SDK (@blastl2/sdk) yang abstraksi native yield, bridge, Points contracts. Support Foundry/Hardhat/Viem/Ethers.
+Evidence: EVM equivalence claim【Phase 4 — Execution Environment】; Blast SDK open source【Phase 4 — Development Framework】; All major tools supported【Phase 7 — Developer Ecosystem】
+Supporting Dataset: Phase 4, Phase 7
+Confidence: HIGH
+
+## Anti-patterns
+
+Anti-pattern: Over-centralization at launch tanpa concrete decentralization roadmap
+Manifestation: Single sequencer, permissioned proposer/challenger, Foundation multisig upgrade keys no timelock, no forced inclusion, no permissionless challenge game. Roadmap decentralization tidak dipublikasikan.
+Evidence: All centralization points documented【Phase 4 — Core Components】【Phase 4 — Security Model】【Phase 4 — Known Technical Limitations】; Phase 7 lists 3 centralization risks【Phase 7 — Ecosystem Risks】; Phase 9 confirms "roadmap decentralization tidak dipublikasikan"【Phase 9 — Decision Timeline】
+Supporting Dataset: Phase 4, Phase 7, Phase 9
+Confidence: HIGH
+
+Anti-pattern: Tokenomics tanpa value accrual mechanism (no burn, no buyback, no fee switch) dengan high emissions
+Manifestation: Fixed supply tapi 53.5% emissions untuk incentives, vesting undisclosed untuk team/investor (36.5%), no protocol revenue sharing ke token holders.
+Evidence: "Tidak ada native burn mechanism... Tidak ada buyback program resmi"【Phase 6 — Inflation/Deflation】; Vesting undisclosed【Phase 6 — Vesting Schedule】; Phase 9 confirms no fee switch【Phase 9 — Financial Decision Pattern】
+Supporting Dataset: Phase 6, Phase 9
+Confidence: HIGH
+
+Anti-pattern: Treasury opacity by design (Cayman Foundation, no dashboard, no reports)
+Manifestation: Treasury size/composition/custodian undisclosed. Up
