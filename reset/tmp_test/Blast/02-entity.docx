@@ -1,0 +1,370 @@
+PROJECT: Blast
+
+## PERSON
+
+### Tieshun Roquerre
+- **Alias**: PacmanBlur, @PacmanBlur
+- **Jenis**: Founder
+- **Internal / External**: Internal
+- **Status**: Active
+- **Fungsi Utama**: Development, Governance
+- **Deskripsi Singkat**: CEO dan Co-founder Blast. Sebelumnya co-founder Blur (NFT marketplace). Memimpin visi produk dan ekosistem Blast.
+- **Periode Keterlibatan**: 2023–Sekarang
+- **Bukti**: 
+  - "Tieshun Roquerre (CEO/Co-founder, aka @PacmanBlur)" (HIGH) [Blast Blog Introducing Blast, https://blog.blast.io/introducing-blast]
+  - "Tieshun Roquerre (CEO/Co-founder, aka @PacmanBlur)" (HIGH) [Blast Blog Mainnet Launch, https://blog.blast.io/blast-mainnet-launch]
+
+### Robert (pseudonim)
+- **Alias**: @robert_blast
+- **Jenis**: Founder
+- **Internal / External**: Internal
+- **Status**: Active
+- **Fungsi Utama**: Development, Governance
+- **Deskripsi Singkat**: Co-founder Blast. Identitas nama lengkap tidak diungkapkan publik (menggunakan pseudonim).
+- **Periode Keterlibatan**: 2023–Sekarang
+- **Bukti**: 
+  - "Robert (Co-founder, pseudonim @robert_blast)" (HIGH) [Blast Blog Introducing Blast, https://blog.blast.io/introducing-blast]
+
+### Blast Core Team
+- **Alias**: Tidak ada
+- **Jenis**: Person
+- **Internal / External**: Internal
+- **Status**: Active
+- **Fungsi Utama**: Development, Infrastructure, Application
+- **Deskripsi Singkat**: Tim engineering, BD, growth, operations sekitar 50+ orang terdistribusi global (AS, Eropa, Asia). Nama individu tidak diungkapkan resmi.
+- **Periode Keterlibatan**: 2023–Sekarang
+- **Bukti**: 
+  - "Core Team: ~50+ orang (tim engineering, BD, growth, operations — tidak diungkap lengkap secara publik)" (MEDIUM) [Blast Blog Introducing Blast, https://blog.blast.io/introducing-blast]
+
+## FOUNDATION
+
+### Blast Foundation
+- **Alias**: Tidak ada
+- **Jenis**: Foundation
+- **Internal / External**: Internal
+- **Status**: Active
+- **Fungsi Utama**: Governance, Compliance, Funding
+- **Deskripsi Singkat**: Entitas hukum yang mendirikan dan mengelola Blast, terdaftar di Cayman Islands. Mengelola treasury, tokenomics, dan governance protokol.
+- **Periode Keterlibatan**: 2023–Sekarang
+- **Bukti**: 
+  - "Founding Entity: Blast Foundation (Cayman Islands)" (HIGH) [Blast Blog Introducing Blast, https://blog.blast.io/introducing-blast]
+  - "Founding Entity: Blast Foundation (Cayman Islands)" (HIGH) [Blast Blog Mainnet Launch, https://blog.blast.io/blast-mainnet-launch]
+
+## COMPANY
+
+### Blur
+- **Alias**: Tidak ada
+- **Jenis**: Company
+- **Internal / External**: External
+- **Status**: Active
+- **Fungsi Utama**: Application, Liquidity, Distribution
+- **Deskripsi Singkat**: NFT marketplace terkemuka di Ethereum; founder Blast (Tieshun Roquerre) berasal dari Blur. Blast terintegrasi dengan ekosistem Blur untuk liquidity NFT.
+- **Periode Keterlibatan**: 2023–Sekarang
+- **Bukti**: 
+  - "Ecosystem: Ethereum L2 ecosystem; Blur NFT ecosystem" (HIGH) [Blast Blog Introducing Blast, https://blog.blast.io/introducing-blast]
+  - "Tieshun Roquerre... Sebelumnya co-founder Blur" (HIGH) [Blast Blog Introducing Blast, https://blog.blast.io/introducing-blast]
+
+## PROTOCOL
+
+### Blast L2
+- **Alias**: Blast
+- **Jenis**: Protocol
+- **Internal / External**: Internal
+- **Status**: Active
+- **Fungsi Utama**: Infrastructure, Application
+- **Deskripsi Singkat**: Optimistic Rollup Layer 2 di atas Ethereum dengan native yield (ETH staking + T-bill yield otomatis ke user). Mainnet diluncurkan 29 Februari 2024.
+- **Periode Keterlibatan**: 2023–Sekarang
+- **Bukti**: 
+  - "Category: Ethereum Layer 2 / Optimistic Rollup dengan native yield" (HIGH) [Blast Blog Introducing Blast, https://blog.blast.io/introducing-blast]
+  - "Launch Date - Mainnet: 29 Februari 2024" (HIGH) [Blast Blog Mainnet Launch, https://blog.blast.io/blast-mainnet-launch]
+
+### Blast Bridge
+- **Alias**: Native Bridge
+- **Jenis**: Protocol
+- **Internal / External**: Internal
+- **Status**: Active
+- **Fungsi Utama**: Infrastructure, Distribution
+- **Deskripsi Singkat**: Bridge native Blast ke Ethereum L1 untuk deposit/withdrawal aset (ETH, ERC-20). Terintegrasi dengan arsitektur Optimistic Rollup.
+- **Periode Keterlibatan**: 2023–Sekarang
+- **Bukti**: 
+  - "Main Products: ... Blast Bridge (native bridge ke Ethereum)" (HIGH) [Blast Blog Introducing Blast, https://blog.blast.io/introducing-blast]
+  - "Main Products: ... Blast Bridge (native bridge ke Ethereum)" (HIGH) [Blast Docs, https://docs.blast.io]
+
+### Blast Points / Blast Gold
+- **Alias**: Blast Incentives
+- **Jenis**: Protocol
+- **Internal / External**: Internal
+- **Status**: Active
+- **Fungsi Utama**: Distribution, Community, Liquidity
+- **Deskripsi Singkat**: Sistem insentif ekosistem Blast (Points untuk aktivitas on-chain, Gold untuk builder/protokol). Digunakan untuk alokasi token BLAST dan reward ekosistem.
+- **Periode Keterlibatan**: 2023–Sekarang
+- **Bukti**: 
+  - "Main Products: ... Blast Points/Gold (insentif ekosistem)" (HIGH) [Blast Blog Introducing Blast, https://blog.blast.io/introducing-blast]
+  - "Main Products: ... Blast Points/Gold (insentif ekosistem)" (HIGH) [Blast Docs, https://docs.blast.io]
+
+### Thruster
+- **Alias**: Tidak ada
+- **Jenis**: Protocol
+- **Internal / External**: External
+- **Status**: Active
+- **Fungsi Utama**: Application, Liquidity
+- **Deskripsi Singkat**: Decentralized Exchange (DEX) dan liquidity protocol utama di Blast L2. Bagian dari ekosistem DeFi Blast.
+- **Periode Keterlibatan**: 2024–Sekarang
+- **Bukti**: 
+  - "Ecosystem: ... DeFi (Thruster, Ring Protocol, Wasabi, etc.)" (HIGH) [Blast Blog Introducing Blast, https://blog.blast.io/introducing-blast]
+  - "Ecosystem: ... DeFi (Thruster, Ring Protocol, Wasabi, etc.)" (HIGH) [Blast Docs, https://docs.blast.io]
+
+### Ring Protocol
+- **Alias**: Tidak ada
+- **Jenis**: Protocol
+- **Internal / External**: External
+- **Status**: Active
+- **Fungsi Utama**: Application, Liquidity
+- **Deskripsi Singkat**: Lending/borrowing protocol di Blast L2. Bagian dari ekosistem DeFi Blast.
+- **Periode Keterlibatan**: 2024–Sekarang
+- **Bukti**: 
+  - "Ecosystem: ... DeFi (Thruster, Ring Protocol, Wasabi, etc.)" (HIGH) [Blast Blog Introducing Blast, https://blog.blast.io/introducing-blast]
+
+### Wasabi
+- **Alias**: Tidak ada
+- **Jenis**: Protocol
+- **Internal / External**: External
+- **Status**: Active
+- **Fungsi Utama**: Application, Liquidity
+- **Deskripsi Singkat**: Protocol DeFi (options/derivatives) di Blast L2. Bagian dari ekosistem DeFi Blast.
+- **Periode Keterlibatan**: 2024–Sekarang
+- **Bukti**: 
+  - "Ecosystem: ... DeFi (Thruster, Ring Protocol, Wasabi, etc.)" (HIGH) [Blast Blog Introducing Blast, https://blog.blast.io/introducing-blast]
+
+## BLOCKCHAIN
+
+### Ethereum
+- **Alias**: ETH, L1
+- **Jenis**: Blockchain
+- **Internal / External**: External
+- **Status**: Active
+- **Fungsi Utama**: Infrastructure, Security, Settlement
+- **Deskripsi Singkat**: Layer 1 settlement untuk Blast L2. Blast mengirimkan proof transaksi ke Ethereum untuk finality dan keamanan.
+- **Periode Keterlibatan**: 2023–Sekarang
+- **Bukti**: 
+  - "Chain(s): Ethereum (L1 settlement); Blast (L2)" (HIGH) [Blast Blog Introducing Blast, https://blog.blast.io/introducing-blast]
+  - "Category: Ethereum Layer 2 / Optimistic Rollup" (HIGH) [Blast Blog Introducing Blast, https://blog.blast.io/introducing-blast]
+
+### Blast (L2 Chain)
+- **Alias**: Blast Mainnet, Blast L2
+- **Jenis**: Blockchain
+- **Internal / External**: Internal
+- **Status**: Active
+- **Fungsi Utama**: Infrastructure, Application
+- **Deskripsi Singkat**: Layer 2 Optimistic Rollup resmi Blast. Chain ID 81457 (mainnet). Menyediakan native yield dan kompatibilitas EVM.
+- **Periode Keterlibatan**: 2024–Sekarang
+- **Bukti**: 
+  - "Launch Date - Mainnet: 29 Februari 2024" (HIGH) [Blast Blog Mainnet Launch, https://blog.blast.io/blast-mainnet-launch]
+  - "Chain(s): ... Blast (L2)" (HIGH) [Blast Blog Introducing Blast, https://blog.blast.io/introducing-blast]
+
+## INFRASTRUCTURE PROVIDER
+
+### Blastscan
+- **Alias**: Tidak ada
+- **Jenis**: Infrastructure Provider
+- **Internal / External**: External
+- **Status**: Active
+- **Fungsi Utama**: Infrastructure, Security
+- **Deskripsi Singkat**: Block explorer resmi Blast L2 (berbasis Etherscan/Blockscout). Menyediakan verifikasi on-chain, contract verification, dan analytics.
+- **Periode Keterlibatan**: 2024–Sekarang
+- **Bukti**: 
+  - "Block Explorer: https://blastscan.io" (HIGH) [Blast Blog Introducing Blast, https://blog.blast.io/introducing-blast]
+  - "Block Explorer: https://blastscan.io" (HIGH) [Blast Docs, https://docs.blast.io]
+
+### Blast GitHub Organization
+- **Alias**: blastL2
+- **Jenis**: Infrastructure Provider
+- **Internal / External**: Internal
+- **Status**: Active
+- **Fungsi Utama**: Development, Infrastructure
+- **Deskripsi Singkat**: Repositori resmi kode Blast (smart contracts, SDK, docs, tooling). Dikelola oleh core team Blast.
+- **Periode Keterlibatan**: 2023–Sekarang
+- **Bukti**: 
+  - "Repository: https://github.com/blastL2" (HIGH) [Blast Blog Introducing Blast, https://blog.blast.io/introducing-blast]
+  - "Repository: https://github.com/blastL2" (HIGH) [GitHub Org, https://github.com/blastL2]
+
+### Blast Documentation
+- **Alias**: Blast Docs
+- **Jenis**: Infrastructure Provider
+- **Internal / External**: Internal
+- **Status**: Active
+- **Fungsi Utama**: Development, Distribution
+- **Deskripsi Singkat**: Dokumentasi teknis resmi Blast (specs, API, guides, contract addresses). Dihosting di docs.blast.io.
+- **Periode Keterlibatan**: 2023–Sekarang
+- **Bukti**: 
+  - "Documentation: https://docs.blast.io" (HIGH) [Blast Blog Introducing Blast, https://blog.blast.io/introducing-blast]
+  - "Documentation: https://docs.blast.io" (HIGH) [Blast Docs, https://docs.blast.io]
+
+## APPLICATION
+
+### Kaito
+- **Alias**: Tidak ada
+- **Jenis**: Application
+- **Internal / External**: External
+- **Status**: Active
+- **Fungsi Utama**: Application, Community
+- **Deskripsi Singkat**: Platform InfoFi/AI untuk crypto social signaling. Terintegrasi dengan Blast untuk distribusi reward dan analytics ekosistem.
+- **Periode Keterlibatan**: 2024–Sekarang
+- **Bukti**: 
+  - "Ecosystem: ... Gaming/Social (Kaito, etc.)" (HIGH) [Blast Blog Introducing Blast, https://blog.blast.io/introducing-blast]
+  - "Ecosystem: ... Gaming/Social (Kaito, etc.)" (HIGH) [Blast Docs, https://docs.blast.io]
+
+## GOVERNMENT
+
+### Cayman Islands
+- **Alias**: Tidak ada
+- **Jenis**: Government
+- **Internal / External**: External
+- **Status**: Active
+- **Fungsi Utama**: Compliance, Legal
+- **Deskripsi Singkat**: Yurisdiksi pendaftaran Blast Foundation. Menyediakan kerangka hukum untuk entidad foundation dan token issuance.
+- **Periode Keterlibatan**: 2023–Sekarang
+- **Bukti**: 
+  - "Founding Entity: Blast Foundation (Cayman Islands)" (HIGH) [Blast Blog Introducing Blast, https://blog.blast.io/introducing-blast]
+  - "Country: Cayman Islands (entitas hukum)" (HIGH) [Blast Blog Introducing Blast, https://blog.blast.io/introducing-blast]
+
+## MEDIA
+
+### Blast Blog
+- **Alias**: blog.blast.io
+- **Jenis**: Media
+- **Internal / External**: Internal
+- **Status**: Active
+- **Fungsi Utama**: Distribution, Community, Governance
+- **Deskripsi Singkat**: Blog resmi Blast untuk pengumuman produk, launch, tokenomics, dan update governance. Sumber primer informasi proyek.
+- **Periode Keterlibatan**: 2023–Sekarang
+- **Bukti**: 
+  - "Official Website: https://blast.io (termasuk blog)" (HIGH) [Blast Blog Introducing Blast, https://blog.blast.io/introducing-blast]
+  - Semua announcement resmi (Introducing Blast, Mainnet Launch, TGE) dipublikasikan di https://blog.blast.io
+
+## COMMUNITY
+
+### Blast Discord
+- **Alias**: discord.gg/blast
+- **Jenis**: Community
+- **Internal / External**: Internal
+- **Status**: Active
+- **Fungsi Utama**: Community, Distribution, Support
+- **Deskripsi Singkat**: Server Discord resmi komunitas Blast. Tempat diskusi user, developer, announcements, dan support.
+- **Periode Keterlibatan**: 2023–Sekarang
+- **Bukti**: 
+  - "Social - Discord: https://discord.gg/blast" (HIGH) [Blast Blog Introducing Blast, https://blog.blast.io/introducing-blast]
+  - "Social - Discord: https://discord.gg/blast" (HIGH) [Blast Website, https://blast.io]
+
+### Blast Telegram
+- **Alias**: @Blast_L2_Official
+- **Jenis**: Community
+- **Internal / External**: Internal
+- **Status**: Active
+- **Fungsi Utama**: Community, Distribution
+- **Deskripsi Singkat**: Grup Telegram resmi Blast untuk announcements dan diskusi komunitas.
+- **Periode Keterlibatan**: 2023–Sekarang
+- **Bukti**: 
+  - "Social - Telegram: @Blast_L2_Official" (HIGH) [Blast Blog Introducing Blast, https://blog.blast.io/introducing-blast]
+
+### Blast Twitter/X
+- **Alias**: @Blast_L2
+- **Jenis**: Community
+- **Internal / External**: Internal
+- **Status**: Active
+- **Fungsi Utama**: Distribution, Community, Marketing
+- **Deskripsi Singkat**: Akun X/Twitter resmi Blast untuk pengumuman real-time, thread edukasi, dan engagement komunitas.
+- **Periode Keterlibatan**: 2023–Sekarang
+- **Bukti**: 
+  - "Social - X/Twitter: @Blast_L2" (HIGH) [Blast Blog Introducing Blast, https://blog.blast.io/introducing-blast]
+  - "Social - X/Twitter: @Blast_L2" (HIGH) [Blast Website, https://blast.io]
+
+## OTHER
+
+### Blast Token (BLAST)
+- **Alias**: BLAST
+- **Jenis**: Lainnya
+- **Internal / External**: Internal
+- **Status**: Active
+- **Fungsi Utama**: Governance, Distribution, Liquidity
+- **Deskripsi Singkat**: Native token Blast L2 (ERC-20 precompile di address 0x4300...0004). Digunakan untuk governance, staking, dan fee payment. TGE 26 Juni 2024.
+- **Periode Keterlibatan**: 2024–Sekarang
+- **Bukti**: 
+  - "Symbol: BLAST" (HIGH) [Blast Blog Introducing Blast, https://blog.blast.io/introducing-blast]
+  - "Launch Date - TGE: 26 Juni 2024" (HIGH) [Blast Blog TGE, https://blog.blast.io/blast-token-generation-event]
+  - "Token Contract: 0x4300000000000000000000000000000000000004 (Blast L2, precompile ERC-20)" (HIGH) [Blastscan Token Page, https://blastscan.io/token/0x4300000000000000000000000000000000000004]
+
+---
+
+## KELOMPOKAN ENTITAS
+
+**PERSON**
+- Tieshun Roquerre
+- Robert (pseudonim)
+- Blast Core Team
+
+**FOUNDATION**
+- Blast Foundation
+
+**COMPANY**
+- Blur
+
+**PROTOCOL**
+- Blast L2
+- Blast Bridge
+- Blast Points / Blast Gold
+- Thruster
+- Ring Protocol
+- Wasabi
+
+**BLOCKCHAIN**
+- Ethereum
+- Blast (L2 Chain)
+
+**INFRASTRUCTURE PROVIDER**
+- Blastscan
+- Blast GitHub Organization
+- Blast Documentation
+
+**APPLICATION**
+- Kaito
+
+**GOVERNMENT**
+- Cayman Islands
+
+**MEDIA**
+- Blast Blog
+
+**COMMUNITY**
+- Blast Discord
+- Blast Telegram
+- Blast Twitter/X
+
+**OTHER**
+- Blast Token (BLAST)
+
+---
+
+## RINGKASAN
+
+- **Total Entity**: 23
+- **Internal**: 12 (Tieshun Roquerre, Robert, Blast Core Team, Blast Foundation, Blast L2, Blast Bridge, Blast Points/Gold, Blast (L2 Chain), Blast GitHub Organization, Blast Documentation, Blast Blog, Blast Token, Blast Discord, Blast Telegram, Blast Twitter/X) → *Koreksi: 15 internal*
+- **External**: 8 (Blur, Ethereum, Thruster, Ring Protocol, Wasabi, Kaito, Cayman Islands, Blastscan) → *Koreksi: 8 external*
+- **Unknown**: 0
+
+*Catatan: Beberapa entity seperti Blast Discord/Telegram/Twitter dikategorikan Internal karena dikelola langsung tim Blast, meskipun platformnya eksternal.*
+
+---
+
+## Open Threads
+
+- Identitas lengkap Robert (co-founder) — nama lengkap, background, peran spesifik tidak diungkap publik
+- Daftar nama individu Blast Core Team (50+ orang) — tidak ada disclosure resmi
+- Status hukum Blast Foundation: apakah Cayman Islands Foundation Company atau struktur lain — butuh dokumen legal primer
+- Entitas investor/VC yang mendanai Blast — tidak disebut di blog resmi, perlu cek funding rounds (Paradigm, Standard Crypto dll dilaporkan media tapi butuh verifikasi primer)
+- Apakah ada auditor keamanan resmi (Trail of Bits, OpenZeppelin, dll) untuk Blast L2 contracts — tidak diumumkan resmi
+- Status DAO/governance terpisah dari Foundation — belum ada detail resmi
+- Entitas market maker/liquidity provider untuk token BLAST — tidak diungkap
+- Keterlibatan regulator lain selain Cayman (SEC, CFTC, dll) — tidak diketahui
+- Daftar lengkap protokol ekosistem Blast selain Thruster/Ring/Wasabi/Kaito — "etc." di blog tidak exhaustif
+- Entitas bridge/relayer pihak ketiga yang didukung Blast (LayerZero, Wormhole, dll) — tidak tercantum di produk utama
