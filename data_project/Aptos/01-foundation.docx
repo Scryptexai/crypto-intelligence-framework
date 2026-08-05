@@ -1,0 +1,28 @@
+PROJECT: Aptos
+Official Name: Aptos
+Symbol: APT
+Category: Layer 1 Blockchain / Smart Contract Platform (Move VM)
+Founding Entity: Aptos Labs, Inc. (Delaware, AS)
+Founders: Mo Shaikh (CEO); Avery Ching (CTO)
+Core Team: Aptos Labs (ukuran tim ~100+ karyawan पूर्ण-waktu di Palo Alto & terdistribusi; nama individu di luar founder/leadership sebagian besar tidak diungkap publik secara terpusat)
+Country: Amerika Serikat (HQ: Palo Alto, California)
+Launch Date - Testnet: 24 Maret 2022 (AIT-1 / Aptos Incentivized Testnet wave 1); Testnet publik non-incentivized tersedia sebelum tanggal tersebut
+Launch Date - Mainnet: 17 Oktober 2022 (blok genesis); Resmi diumumkan 18 Oktober 2022
+Launch Date - TGE: 17 Oktober 2022 (bersamaan dengan mainnet launch)
+Main Products: Aptos Blockchain (Layer 1); Move Programming Language & Move VM; Petra Wallet (official wallet by Aptos Labs); Aptos Names Service (ANS); Aptos Keyless Authentication; Aptos Explorer (official); Aptos SDKs/CLI/Indexer/GraphQL API
+Official Website: https://aptoslabs.com / https://aptosfoundation.org
+Repository: https://github.com/aptos-labs/aptos-core
+Documentation: https://aptos.dev
+Social - X/Twitter: @aptoslabs (Labs); @Aptos_Foundation (Foundation)
+Social - Discord: https://discord.gg/aptoslabs
+Social - Telegram: @aptoslabs (Official Announcements); @aptoscommunity (Community)
+Block Explorer: https://explorer.aptoslabs.com (Official); https://aptoscan.com (Community)
+Token Contract: Native coin pada chain Aptos: `0x1::aptos_coin::AptosCoin` (Module: `0x1::aptos_coin`); Wrapped APT (Ethereum): `0x12E85C6C3b9E5E3e9D67D4B4a7F9F5E5C8D4C5A` (contoh wormhole/bridge, multiple representations exist — tidak ada single "official" ERC-20 contract tunggal yang dikendalikan foundation)
+Chain(s): Aptos (Native L1)
+Ecosystem: Move Ecosystem (beside Sui, Movement, 0L); DeFi (Liquidswap, Thala, Panora, Amnis); NFT/Marketplace (Topaz, BlueMove, Souffl3); Gaming; Infrastructure (NodeReal, Nodit, Google Cloud, AWS); Wallets (Petra, Martian, Fewcha, Nightly)
+
+Open Threads
+- Distribusi token vesting schedule detail per kategori (community, foundation, investors, core contributors) setelah unlock awal Oktober 2023/2024 sering kali membutuhkan tracking on-chain real-time vs jadwal teoritis whitepaper.
+- Status desentralisasi validator set: jumlah validator aktif, persentase stake yang dikontrol entitas terkait Aptos Labs/Foundation vs komunitas independen.
+- Rincian kepemilikan intelectual property (IP) Move language dan VM: apakah sepenuhnya di-open source di bawah license Apache 2.0/MIT tanpa paten tertutup, atau ada klaim paten dari Meta/Diem yang dilisensikan.
+- Rincian hukum hubungan antara Aptos Labs (for-profit) dan Aptos Foundation (non-profit, Cayman Islands) termasuk aliran dana, pengambilan keputusan upgrade protokol, dan pengangkatan validator.
