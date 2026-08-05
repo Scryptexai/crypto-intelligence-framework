@@ -188,6 +188,13 @@ def call_deepseek(messages: list, base_url: str, token: str, model: str, max_tok
     req = urllib.request.Request(url, data=data, method="POST")
     req.add_header("Content-Type", "application/json")
     req.add_header("Authorization", f"Bearer {token}")
+    req.add_header("Accept", "application/json")
+    # urllib's default User-Agent is literally "Python-urllib/3.x" -- a string commonly denylisted
+    # by WAFs/anti-bot layers on gateways like this one (curl's default UA is not, which is the
+    # one concrete difference between a curl POST to this same URL that got real JSON back, 2026-
+    # 08-05, and this script still getting the gateway's fallback HTML after the endpoint-path fix
+    # alone). Spoofing curl's UA is the cheapest next thing to rule in/out.
+    req.add_header("User-Agent", "curl/8.5.0")
     try:
         with urllib.request.urlopen(req, timeout=REQUEST_TIMEOUT_SECONDS) as resp:
             status = resp.status
