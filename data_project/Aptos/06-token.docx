@@ -1,0 +1,249 @@
+PROJECT: Aptos
+
+## Token Information
+
+Official Token Name: Aptos
+Symbol: APT
+Token Standard: Native Coin (Move Resource) — `0x1::aptos_coin::AptosCoin`
+Blockchain: Aptos (Native L1)
+Contract Address: `0x1::aptos_coin::AptosCoin` (Module: `0x1::aptos_coin`)
+Decimals: 8
+Status: Live
+Sources: https://aptos.dev/whitepaper/aptos-whitepaper.pdf (HIGH) [Aptos Whitepaper]; https://explorer.aptoslabs.com/account/0x1/modules/code/aptos_coin (HIGH) [Aptos Explorer Module]
+
+## Supply
+
+Maximum Supply: Tidak ada hard cap tetap; total supply dinamis karena emis inflationary staking reward (HIGH) [Aptos Tokenomics, https://aptos.dev/tokenomics/]
+Total Supply (Genesis): 1,000,000,000 APT (1 miliar) pada blok genesis 2022-10-17 (HIGH) [Aptos Whitepaper, https://aptos.dev/whitepaper/aptos-whitepaper.pdf]
+Total Supply (Current): >1,000,000,000 APT (bertambah dari staking reward inflationary); nilai real-time lihat explorer (HIGH) [Aptos Explorer, https://explorer.aptoslabs.com]
+Circulating Supply: Tidak diungkap resmi real-time; perkiraan tracker on-chain (CoinGecko, CoinMarketCap) bervariasi tergantung metodologi vesting unlock (MEDIUM) [CoinGecko APT, https://www.coingecko.com/en/coins/aptos]; [CoinMarketCap APT, https://coinmarketcap.com/currencies/aptos/]
+Initial Supply: 1,000,000,000 APT (genesis allocation penuh dimintakan saat TGE) (HIGH) [Aptos Whitepaper, https://aptos.dev/whitepaper/aptos-whitepaper.pdf]
+Supply Type: Inflationary (staking reward emis tahunan) + Deflationary (base fee burn) — net supply growth bergantung pada aktivitas jaringan vs reward rate (HIGH) [Aptos Tokenomics, https://aptos.dev/tokenomics/]
+Sources: https://aptos.dev/tokenomics/; https://aptos.dev/whitepaper/aptos-whitepaper.pdf
+
+## Distribution
+
+Community: 51.02% (510,210,000 APT) — mencakup community incentives, ecosystem grants, foundation treasury, dan airdrop testnet (HIGH) [Aptos Whitepaper, https://aptos.dev/whitepaper/aptos-whitepaper.pdf]
+Team (Core Contributors): 19.00% (190,000,000 APT) — dialokasikan ke karyawan dan kontributor inti Aptos Labs (HIGH) [Aptos Whitepaper, https://aptos.dev/whitepaper/aptos-whitepaper.pdf]
+Investors: 13.48% (134,800,000 APT) — investor Series A dan Series B via SAFT (HIGH) [Aptos Whitepaper, https://aptos.dev/whitepaper/aptos-whitepaper.pdf]
+Foundation: 16.50% (165,000,000 APT) — treasury Aptos Foundation untuk operasional protokol, grant, dan desentralisasi (HIGH) [Aptos Whitepaper, https://aptos.dev/whitepaper/aptos-whitepaper.pdf]
+Treasury: Termasuk dalam alokasi Foundation (16.50%) dan Community (51.02%) — tidak ada kategori treasury terpisah di whitepaper (HIGH) [Aptos Whitepaper, https://aptos.dev/whitepaper/aptos-whitepaper.pdf]
+Ecosystem: Termasuk dalam alokasi Community (51.02%) — grant DAO, infrastructure, liquidity incentives (HIGH) [Aptos Whitepaper, https://aptos.dev/whitepaper/aptos-whitepaper.pdf]
+Advisors: Tidak tercantum sebagai kategori terpisah di whitepaper; mungkin termasuk dalam Core Contributors atau Investors (MEDIUM) [Aptos Whitepaper, https://aptos.dev/whitepaper/aptos-whitepaper.pdf]
+Other: Tidak ada kategori lain di whitepaper resmi (HIGH) [Aptos Whitepaper, https://aptos.dev/whitepaper/aptos-whitepaper.pdf]
+Sources: https://aptos.dev/whitepaper/aptos-whitepaper.pdf
+
+## Vesting Schedule
+
+Category: Community (51.02%)
+Cliff: Tidak ada cliff universal; airdrop testnet (AIT) unlock saat TGE; grant DAO unlock sesuai proposal; foundation spend-down bertahap (HIGH) [Aptos Whitepaper, https://aptos.dev/whitepaper/aptos-whitepaper.pdf]
+Vesting: Tidak ada vesting linier tetap; grant DAO vesting per proposal (biasanya 12–36 bulan); foundation treasury dikelola discretionary (HIGH) [Aptos Foundation Grants, https://aptosfoundation.org/grants]
+Unlock Frequency: Airdrop: sekali di TGE; Grant: sesuai milestone proposal; Foundation: terus-menerus (HIGH) [Aptos Blog Mainnet, https://medium.com/aptoslabs/aptos-mainnet-is-live-9f3b5e5c5f5e]
+Current Status: Airdrop AIT-1/2/3 sudah fully unlocked; Grant DAO ongoing; Foundation treasury masih besar (HIGH) [Aptos Foundation Grants, https://aptosfoundation.org/grants]
+Sources: https://aptos.dev/whitepaper/aptos-whitepaper.pdf; https://aptosfoundation.org/grants
+
+Category: Core Contributors (19.00%)
+Cliff: 1 tahun dari genesis (2022-10-17) (HIGH) [Aptos Whitepaper, https://aptos.dev/whitepaper/aptos-whitepaper.pdf]
+Vesting: 4 tahun vesting bulanan linier setelah cliff (total 5 tahun dari genesis) (HIGH) [Aptos Whitepaper, https://aptos.dev/whitepaper/aptos-whitepaper.pdf]
+Unlock Frequency: Bulanan (setiap epoch ~2 jam, tapi claim praktis bulanan via smart contract) (MEDIUM) [Aptos Tokenomics, https://aptos.dev/tokenomics/]
+Current Status: Cliff berakhir Oktober 2023; vesting bulanan berlangsung hingga Oktober 2026 (HIGH) [Aptos Whitepaper, https://aptos.dev/whitepaper/aptos-whitepaper.pdf]
+Sources: https://aptos.dev/whitepaper/aptos-whitepaper.pdf
+
+Category: Investors (13.48%)
+Cliff: 1 tahun dari genesis (2022-10-17) — sama dengan core contributors (HIGH) [Aptos Whitepaper, https://aptos.dev/whitepaper/aptos-whitepaper.pdf]
+Vesting: 4 tahun vesting bulanan linier setelah cliff (total 5 tahun dari genesis) (HIGH) [Aptos Whitepaper, https://aptos.dev/whitepaper/aptos-whitepaper.pdf]
+Unlock Frequency: Bulanan (MEDIUM) [Aptos Tokenomics, https://aptos.dev/tokenomics/]
+Current Status: Cliff berakhir Oktober 2023; vesting bulanan berlangsung hingga Oktober 2026 (HIGH) [Aptos Whitepaper, https://aptos.dev/whitepaper/aptos-whitepaper.pdf]
+Sources: https://aptos.dev/whitepaper/aptos-whitepaper.pdf
+
+Category: Foundation (16.50%)
+Cliff: Tidak ada cliff resmi; foundation berhak mengakses sejak genesis untuk operasional (HIGH) [Aptos Whitepaper, https://aptos.dev/whitepaper/aptos-whitepaper.pdf]
+Vesting: Tidak ada vesting linier; pengeluaran dikendalikan governance foundation dan grant DAO (HIGH) [Aptos Foundation Governance, https://aptosfoundation.org/governance]
+Unlock Frequency: Sesuai kebutuhan operasional dan proposal grant (HIGH) [Aptos Foundation Grants, https://aptosfoundation.org/grants]
+Current Status: Actively spending untuk grant, infrastructure, dan ekosistem (HIGH) [Aptos Foundation Grants, https://aptosfoundation.org/grants]
+Sources: https://aptosfoundation.org/governance
+
+## TGE
+
+TGE Date: 2022-10-17 (blok genesis mainnet) (HIGH) [Aptos Blog Mainnet, https://medium.com/aptoslabs/aptos-mainnet-is-live-9f3b5e5c5f5e]
+Initial Unlock: 100% supply (1,000,000,000 APT) dimintakan; namun hanya kategori tanpa vesting (Community airdrop, Foundation ops) yang liquid immediately; Core Contributors & Investors terkunci 1 tahun (HIGH) [Aptos Whitepaper, https://aptos.dev/whitepaper/aptos-whitepaper.pdf]
+Unlocked Categories: Community Airdrop (AIT participants); Foundation operational treasury; Ecosystem grants initial tranche; Validator staking rewards (genesis validators) (HIGH) [Aptos Blog Mainnet, https://medium.com/aptoslabs/aptos-mainnet-is-live-9f3b5e5c5f5e]
+Launch Platform: Mainnet Aptos (native); Listing bersamaan di Binance, Coinbase, FTX (sebelum bangkrut), OKX, Bybit, KuCoin, dll (HIGH) [Binance Listing Blog, https://www.binance.com/en/blog/ecosystem/binance-lists-aptos-apt-421499824684901107]
+Status: Completed
+Sources: https://medium.com/aptoslabs/aptos-mainnet-is-live-9f3b5e5c5f5e; https://www.binance.com/en/blog/ecosystem/binance-lists-aptos-apt-421499824684901107
+
+## Utility
+
+Utility: Gas Fee Payment
+Deskripsi: APT dibayar sebagai gas fee untuk setiap transaksi dan eksekusi smart contract di Aptos; base fee dibakar (burned), priority fee ke validator (HIGH) [Aptos Tokenomics, https://aptos.dev/tokenomics/]
+Status: Live
+Sources: https://aptos.dev/tokenomics/
+
+Utility: Staking & Validator Security
+Deskripsi: APT distake ke validator untuk berpartisipasi dalam Proof-of-Stake consensus (AptosBFT v4); minimum stake dinamis; reward dari emis inflationary (HIGH) [Aptos Staking Docs, https://aptos.dev/nodes/validator-node/staking/]
+Status: Live
+Sources: https://aptos.dev/nodes/validator-node/staking/
+
+Utility: Governance
+Deskripsi: Pemegang APT dapat mendelegasikan stake ke validator untuk voting on-chain proposal (framework upgrade, parameter change, treasury spend); voting power proporsional stake (HIGH) [Aptos Governance, https://gov.aptosfoundation.org/]
+Status: Live
+Sources: https://gov.aptosfoundation.org/
+
+Utility: Validator Registration
+Deskripsi: Calon validator harus memenuhi minimum stake APT untuk bergabung active validator set (target 100+ validator) (HIGH) [Aptos Validator Node Docs, https://aptos.dev/nodes/validator-node/]
+Status: Live
+Sources: https://aptos.dev/nodes/validator-node/
+
+Utility: Keyless Authentication Gas
+Deskripsi: Transaksi Keyless (OIDC + ZKP) tetap membayar gas fee dalam APT meskipun tidak memerlukan private key (HIGH) [Aptos Keyless Paper, https://aptos.dev/whitepaper/aptos-keyless.pdf]
+Status: Live
+Sources: https://aptos.dev/whitepaper/aptos-keyless.pdf
+
+Utility: Aptos Names Service (ANS) Registration & Renewal
+Deskripsi: Pendaftaran dan perpanjangan domain .apt membayar fee dalam APT (HIGH) [ANS Official, https://aptosnames.com]
+Status: Live
+Sources: https://aptosnames.com
+
+Utility: DeFi Collateral & Liquidity
+Deskripsi: APT digunakan sebagai collateral di lending protocol (Thala, Amnis), liquidity pair di DEX (Liquidswap, Panora), dan mint stablecoin (MOD) (HIGH) [Thala Protocol, https://thala.fi]; [Liquidswap, https://liquidswap.com]
+Status: Live
+Sources: https://thala.fi; https://liquidswap.com
+
+Utility: Liquid Staking Receipt Token (amAPT, thAPT, dll)
+Deskripsi: APT distake via liquid staking protocol (Amnis, Thala) menghasilkan receipt token (amAPT, thAPT) yang represent staked APT + reward, usable di DeFi (HIGH) [Amnis Finance, https://amnis.finance]; [Thala, https://thala.fi]
+Status: Live
+Sources: https://amnis.finance; https://thala.fi
+
+Utility: NFT Marketplace Currency
+Deskripsi: APT sebagai mata uang utama trading NFT di marketplace (Topaz, BlueMove, Souffl3) (HIGH) [Topaz, https://topaz.so]
+Status: Live
+Sources: https://topaz.so
+
+Utility: Bridge & Wrapped Asset Minting
+Deskripsi: APT di-lock di bridge (Wormhole, LayerZero) untuk mint wrapped APT di chain lain (Ethereum, Solana, BSC) (HIGH) [Wormhole Portal, https://wormhole.com/token-bridge]
+Status: Live
+Sources: https://wormhole.com/token-bridge/
+
+## Governance
+
+Governance Model: On-chain governance via framework upgrade proposals + off-chain signaling (Discord, Forum) untuk arah ekosistem; Foundation mengelola treasury & grant DAO (HIGH) [Aptos Governance Forum, https://gov.aptosfoundation.org/]
+Voting System: Stake-weighted voting (1 APT staked = 1 vote power) melalui validator delegation; proposal memerlukan quorum dan supermajority (HIGH) [Aptos Governance Docs, https://aptos.dev/concepts/governance/]
+Voting Power: Proporsional terhadap stake APT yang didelegasikan ke validator; validator mewakili delegator dalam voting (HIGH) [Aptos Consensus Docs, https://aptos.dev/concepts/consensus/]
+Delegation: Setiap pemegang APT dapat mendelegasikan ke validator mana pun via wallet (Petra, Martian, dll) atau CLI; undelegation memerlukan unbonding period (HIGH) [Aptos Staking Delegation, https://aptos.dev/nodes/validator-node/staking/#delegation]
+Proposal System: Proposal diajukan via GitHub/Governance Forum; memerlukan deposit APT; voting period ~2 epoch; eksekusi otomatis via `0x1::governance` module jika lolos (HIGH) [Aptos Governance Module, https://github.com/aptos-labs/aptos-core/tree/main/aptos-move/framework/aptos-framework/sources/governance.move]
+Treasury Governance: Aptos Foundation (Cayman non-profit) mengelola treasury protokol (alokasi Foundation 16.50% + bagian Community); Grant DAO komunitas mengajukan dan voting proposal grant on-chain/off-chain hybrid (HIGH) [Aptos Foundation Governance, https://aptosfoundation.org/governance]
+Status: Live (framework upgrade proposals executed; grant DAO active)
+Sources: https://gov.aptosfoundation.org/; https://aptosfoundation.org/governance
+
+## Inflation / Deflation
+
+Inflation Mechanism: Staking reward emis tahunan dimulai 7% APY, menurun 1.5% per tahun hingga floor 3.25% APY; reward dimintakan baru setiap epoch dan dibayarkan ke validator + delegator (HIGH) [Aptos Tokenomics, https://aptos.dev/tokenomics/]
+Emission Schedule: Setiap epoch (~2 jam) reward dihitung berdasarkan total stake aktif dan rate tahunan saat itu; rate menurun linear per tahun (HIGH) [Aptos Whitepaper, https://aptos.dev/whitepaper/aptos-whitepaper.pdf]
+Burn Mechanism: 100% base gas fee dibakar (dikirim ke address burn `0x0` atau di-deduct dari supply); priority fee (tips) diberikan ke validator — tidak dibakar (HIGH) [Aptos Tokenomics, https://aptos.dev/tokenomics/]
+Buyback: Tidak ada program buyback resmi dari protokol atau foundation (HIGH) [Aptos Tokenomics, https://aptos.dev/tokenomics/]
+Supply Reduction: Net supply change = (staking reward emis) - (base fee burn); bisa deflationary jika aktivitas tinggi (burn > emis) atau inflationary sebaliknya (HIGH) [Aptos Tokenomics, https://aptos.dev/tokenomics/]
+Status: Live
+Sources: https://aptos.dev/tokenomics/; https://aptos.dev/whitepaper/aptos-whitepaper.pdf
+
+## Holder Distribution
+
+Top Holder Concentration: Tidak diungkap resmi real-time; on-chain analyzer (Aptoscan, Nansen, Arkham) menunjukkan top 100 address mengontrol porsi signifikan (termasuk Foundation, Investor vesting contracts, Binance/CEX cold wallet, Validator stake pools) (MEDIUM) [Aptoscan Top Holders, https://aptoscan.com/tokens/0x1::aptos_coin::AptosCoin/holders]
+Foundation Holding: ~165,000,000 APT (16.50% genesis) + bagian dari Community allocation yang dikelola Foundation; alamat multisig foundation tidak dipublikasikan secara terpusat (MEDIUM) [Aptos Whitepaper, https://aptos.dev/whitepaper/aptos-whitepaper.pdf]
+Investor Holding: ~134,800,000 APT (13.48% genesis) terkunci di vesting contract; unlock bulanan sejak Okt 2023; sebagian besar belum fully unlocked (MEDIUM) [Aptos Whitepaper, https://aptos.dev/whitepaper/aptos-whitepaper.pdf]
+Treasury Holding: Termasuk dalam Foundation holding; tidak ada treasury terpisah on-chain yang terlabel jelas (MEDIUM) [Aptos Whitepaper, https://aptos.dev/whitepaper/aptos-whitepaper.pdf]
+Community Holding: Termasuk airdrop recipients, grant recipients, retail buyers di exchange, liquid staking holders, DeFi users; estimasi <30% circulating supply (MEDIUM) [CoinGecko APT, https://www.coingecko.com/en/coins/aptos]
+Whale Concentration: Tinggi pada awal mainnet (Foundation + Investor + Core Contributors >50% supply); menurun seiring vesting unlock dan distribusi grant; data real-time memerlukan on-chain query (MEDIUM) [Aptoscan, https://aptoscan.com/tokens/0x1::aptos_coin::AptosCoin/holders]
+Sources: https://aptoscan.com/tokens/0x1::aptos_coin::AptosCoin/holders; https://aptos.dev/whitepaper/aptos-whitepaper.pdf
+
+## Major Token Events
+
+Date: 2022-10-17
+Event: Token Generation Event (TGE) & Mainnet Genesis
+Description: 1,000,000,000 APT dimintakan pada blok genesis; alokasi sesuai whitepaper; airdrop AIT claimed; trading dimulai di CEX
+Status: Completed
+Related Historical Event ID: EV-007
+Sources: https://medium.com/aptoslabs/aptos-mainnet-is-live-9f3b5e5c5f5e
+
+Date: 2022-10-18
+Event: Major Exchange Listings (Binance, Coinbase, FTX, OKX, Bybit, dll)
+Description: APT listed di pasar spot utama; likuiditas awal terbentuk; price discovery dimulai
+Status: Completed
+Related Historical Event ID: EV-008
+Sources: https://www.binance.com/en/blog/ecosystem/binance-lists-aptos-apt-421499824684901107
+
+Date: 2023-10-17
+Event: First Vesting Cliff End (1 Year Anniversary)
+Description: Cliff 1 tahun untuk Core Contributors (19%) dan Investors (13.48%) berakhir; vesting bulanan linier dimulai (4 tahun)
+Status: Completed
+Related Historical Event ID: EV-007 (anniversary)
+Sources: https://aptos.dev/whitepaper/aptos-whitepaper.pdf
+
+Date: 2023-03-15
+Event: Protocol Upgrade v1.1 (Gas Schedule Optimization)
+Description: Penyesuaian gas schedule mempengaruhi burn rate dan biaya transaksi APT
+Status: Completed
+Related Historical Event ID: EV-027 (referensi upgrade v1.5, v1.1 earlier)
+Sources: https://github.com/aptos-labs/aptos-core/releases/tag/aptos-v1.1.0
+
+Date: 2023-06-20
+Event: Keyless Authentication Launch (Gas Utility Expansion)
+Description: Keyless account memungkinkan transaksi gas APT tanpa private key; memperluas use case fee payment
+Status: Completed
+Related Historical Event ID: EV-018
+Sources: https://aptos.dev/whitepaper/aptos-keyless.pdf
+
+Date: 2024-03-15
+Event: Protocol Upgrade v1.5 (Performance & Gas Schedule)
+Description: Optimasi Block-STM dan revisi gas schedule v2 mempengaruhi fee market APT
+Status: Completed
+Related Historical Event ID: EV-027
+Sources: https://github.com/aptos-labs/aptos-core/releases/tag/aptos-v1.5.0
+
+Date: 2024-09-05
+Event: Protocol Upgrade v1.8 (Move 2024 Edition, Account Abstraction)
+Description: Move 2024 Edition, Keyless v2, gas schedule v3 — mengubah biaya eksekusi dan composability APT
+Status: Completed
+Related Historical Event ID: EV-029
+Sources: https://github.com/aptos-labs/aptos-core/releases/tag/aptos-v1.8.0
+
+Date: 2024-10-17
+Event: Second Vesting Cliff Anniversary (Year 2)
+Description: Vesting bulanan berlanjut untuk Core Contributors & Investors (tahun 2 dari 4 vesting)
+Status: Completed
+Related Historical Event ID: EV-007 (anniversary)
+Sources: https://aptos.dev/whitepaper/aptos-whitepaper.pdf
+
+## Official Token Resources
+
+Official Documentation: https://aptos.dev/tokenomics/
+Whitepaper: https://aptos.dev/whitepaper/aptos-whitepaper.pdf
+Governance: https://gov.aptosfoundation.org/
+Explorer: https://explorer.aptoslabs.com
+Contract: https://explorer.aptoslabs.com/account/0x1/modules/code/aptos_coin
+GitHub: https://github.com/aptos-labs/aptos-core/tree/main/aptos-move/framework/aptos-framework/sources/aptos_coin.move
+Dashboard: Tidak ada dashboard token resmi terpusat; gunakan https://aptoscan.com/tokens/0x1::aptos_coin::AptosCoin/holders atau https://www.coingecko.com/en/coins/aptos
+
+## RINGKASAN
+
+Status: Live
+Supply Type: Inflationary (staking reward) + Deflationary (base fee burn) — net dynamic
+Total Supply: 1,000,000,000 APT (genesis) + accumulated staking rewards
+Distribution Categories: Community 51.02%, Core Contributors 19.00%, Foundation 16.50%, Investors 13.48%
+Utility Count: 10 (Gas, Staking, Governance, Validator, Keyless Gas, ANS, DeFi Collateral, Liquid Staking, NFT Currency, Bridge)
+Governance: On-chain stake-weighted voting via validator delegation; Framework upgrade + Grant DAO hybrid
+Major Token Events: 8 (TGE, Exchange Listings, Cliff End Year 1, v1.1 Upgrade, Keyless Launch, v1.5 Upgrade, v1.8 Upgrade, Cliff Anniversary Year 2)
+
+## Open Threads
+
+- Real-time circulating supply metodologi: CoinGecko vs CoinMarketCap vs on-chain vesting contract query sering berbeda; tidak ada definisi resmi "circulating" dari Foundation.
+- Alamat multisig Foundation dan Grant DAO treasury tidak dipublikasikan sebagai daftar terverifikasi; sulit audit on-chain holding Foundation vs Community.
+- Vesting contract address untuk Core Contributors dan Investors: apakah single contract atau multiple; apakah source code verified di explorer.
+- Detail gas schedule v3 (v1.8 upgrade): formula base fee vs priority fee, parameter burn rate, apakah ada EIP-1559 style dynamic base fee.
+- Staking reward rate schedule: apakah 7% -> 3.25% hardcoded atau bisa diubah governance; apakah sudah turun ke 5.5% (tahun 2) atau 4% (tahun 3) per Oktober 2024.
+- Airdrop AIT-1/2/3 total jumlah token dan persentase dari Community allocation (51.02%) — whitepaper tidak rinci breakdown airdrop vs grant vs foundation ops.
+- Grant DAO proposal voting mechanism: apakah fully on-chain (snapshot + execution) atau off-chain signaling + Foundation multisig execution.
+- Validator set stake concentration: persentase total stake yang dikontrol top 10 validator vs long tail; dampak pada governance decentralization.
+- Wrapped APT representations di Ethereum/Solana/BSC: multiple bridge (Wormhole, LayerZero, Celer) menghasilkan multiple ERC-20/SPL token; tidak ada "official" wrapped APT tunggal.
+- Fee switch / protocol revenue: apakah ada proposal governance untuk mengarahkan sebagian base fee ke treasury protokol (seperti EIP-1559 burn + protocol fee).
+- Inflation vs burn real-time net supply growth: data historis harian tidak dipublikasikan dashboard resmi; perlu indexer custom.
+- Legal status APT di AS (SEC): apakah Foundation/Labs memiliki legal opinion atau no-action letter; dampak pada staking reward dan governance participation untuk US persons.

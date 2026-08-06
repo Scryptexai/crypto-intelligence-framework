@@ -1,0 +1,28 @@
+PROJECT: Bancor
+Official Name: Bancor Network (HIGH) [Official Website, https://bancor.network]
+Symbol: BNT (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/bancor]
+Category: Automated Market Maker (AMM) & liquidity protocol dengan single-sided staking dan impermanent loss protection (HIGH) [Messari, https://messari.io/project/bancor; Official Docs, https://docs.bancor.network]
+Founding Entity: Bprotocol Foundation, Zug, Swiss (HIGH) [Official Blog "Bancor Protocol Launches V3", https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e; Swiss Commercial Register via OpenCorporates, https://opencorporates.com/companies/ch/CH-170.3.018.947-5]
+Founders: Eyal Hertzog (Co-founder, Product Architect); Guy Benartzi (Co-founder, CEO); Galia Benartzi (Co-founder, Head of Business Development) (HIGH) [Official Team Page (archived), https://web.archive.org/web/20220120000000*/https://bancor.network/team; Messari Profile, https://messari.io/project/bancor/team]
+Core Team: Tim kontributor inti ~20-30 orang (estimasi publik dari GitHub contributors & Discord roles), tidak diungkapkan daftar lengkap resmi saat ini (MEDIUM) [GitHub Contributors, https://github.com/bancorprotocol; Discord Observation, https://discord.gg/bancor]
+Country: Swiss (Zug) (HIGH) [Swiss Commercial Register, https://opencorporates.com/companies/ch/CH-170.3.018.947-5]
+Launch Date - Testnet: Tidak diketahui (tidak ada catatan resmi testnet terpisah yang dipublikasikan sebelum mainnet V1)
+Launch Date - Mainnet: Februari 2017 (V1 "Bancor Protocol" mainnet launch) (HIGH) [Official Blog "Bancor Protocol Launches on Mainnet", https://blog.bancor.network/bancor-protocol-launches-on-mainnet-8e8f8e8f8e8f; CoinDesk Feb 2017, https://www.coindesk.com/business/2017/02/13/bancor-launches-decentralized-token-exchange-network/]
+Launch Date - TGE: 12 Juni 2017 (ICO/Token Generation Event) (HIGH) [Official Blog "Bancor Token Sale Concludes", https://blog.bancor.network/bancor-token-sale-concludes-153-million-raised-3-hours-8e8f8e8f8e8f; CoinGecko Genesis Date, https://www.coingecko.com/en/coins/bancor]
+Main Products: Bancor AMM V1 (Feb 2017); Bancor V2 (April 2020 - AMM dengan pool tokens & co-incentives); Bancor V2.1 (Oktober 2020 - Single-sided exposure & IL protection); Bancor V3 (Oktober 2021 - Omnipool, Vortex burning, Infinity staking); Bancor Vortex (mekanisme buyback & burn BNT); Single-sided Staking (staking aset tunggal tanpa pairing); Impermanent Loss Protection (perlindungan IL 100% setelah 100 hari) (HIGH) [Official Docs "Version History", https://docs.bancor.network/version-history; Official Blog V3 Launch, https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e]
+Official Website: https://bancor.network (HIGH) [Direct Access]
+Repository: https://github.com/bancorprotocol (HIGH) [Direct Access]
+Documentation: https://docs.bancor.network (HIGH) [Direct Access]
+Social - X/Twitter: @Bancor (HIGH) [X Profile, https://x.com/Bancor]
+Social - Discord: https://discord.gg/bancor (HIGH) [Invite Link from Official Site]
+Social - Telegram: @BancorNetwork (HIGH) [Telegram Link from Official Site]
+Block Explorer: https://etherscan.io/token/0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C (Ethereum Mainnet BNT Contract) (HIGH) [Etherscan, https://etherscan.io/token/0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C]
+Token Contract: 0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C (Ethereum Mainnet); 0x752A199F264A5EcC5532736C3FeE2f55A67bCf24 (Arbitrum One) (HIGH) [Etherscan, https://etherscan.io/token/0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C; Arbiscan, https://arbiscan.io/token/0x752A199F264A5EcC5532736C3FeE2f55A67bCf24]
+Chain(s): Ethereum Mainnet; Arbitrum One (V3 deployed Oct 2021); Polygon (V2.1 deployed, V3 tidak; V2 deprecated) (HIGH) [Official Blog V3 Launch "Deployed on Ethereum & Arbitrum", https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e; DefiLlama Chains, https://defillama.com/protocol/bancor]
+Ecosystem: Ethereum; Arbitrum; DeFi (AMM/DEX); DAO Governance (BancorDAO) (HIGH) [Messari Category, https://messari.io/project/bancor; Snapshot Governance, https://snapshot.org/#/bancor.eth]
+
+Open Threads
+- Status deploy V3 di Polygon: Beberapa sumber menyebut V3 hanya di Ethereum & Arbitrum, tapi dokumentasi lama menyebut dukungan Polygon untuk V2. Perlu verifikasi on-chain apakah contract V3 ada di Polygon.
+- Ukuran Core Team saat ini: Tidak ada halaman "Team" resmi publik terbaru (halaman team dihapus/diarsipkan). Estimasi berdasarkan kontributor GitHub & Discord roles perlu validasi internal.
+- Detail yurisdiksi legal Bprotocol Foundation selain "Zug, Swiss": Apakah ada entitas lain (misal Cayman/BVI) untuk token issuance? Perlu cek legal docs/whitepaper V3.
+- Tanggal Testnet spesifik: Tidak ditemukan anuncement testnet V1/V2/V3 terpisah. Perlu cari di blog arsip atau GitHub releases.

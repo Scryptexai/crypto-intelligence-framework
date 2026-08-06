@@ -1,0 +1,230 @@
+PROJECT: Blur
+
+## Token Information
+
+Official Token Name: Blur
+Symbol: BLUR
+Token Standard: ERC-20
+Blockchain: Ethereum
+Contract Address: 0x5283D291DBCF85356a21bA090E6db59121208b44
+Decimals: 18
+Status: Live
+Sources: (HIGH) [Blur Blog, https://blur.io/blog/blur-token] (HIGH) [Etherscan, https://etherscan.io/token/0x5283D291DBCF85356a21bA090E6db59121208b44] (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/blur]
+
+## Supply
+
+Maximum Supply: 3.000.000.000 BLUR
+Total Supply: 3.000.000.000 BLUR
+Circulating Supply: tidak diketahui (berubah terus; tidak ada dashboard resmi real-time)
+Initial Supply: 3.000.000.000 BLUR (minted at deployment ke multisig/DAO treasury)
+Supply Type: Fixed
+Sources: (HIGH) [Blur Blog, https://blur.io/blog/blur-token] (HIGH) [Etherscan, https://etherscan.io/token/0x5283D291DBCF85356a21bA090E6db59121208b44] (MEDIUM) [CoinGecko, https://www.coingecko.com/en/coins/blur]
+
+## Distribution
+
+Community: 51% (1.530.000.000 BLUR) — Termasuk Season 1 airdrop, Season 2-3 incentives, future community programs (HIGH) [Blur Blog, https://blur.io/blog/blur-token]
+Team: Tidak diungkap persentase exact di blog resmi; sumber sekunder bervariasi 20-25% (MEDIUM) [Blur Blog, https://blur.io/blog/blur-token] (LOW) [CryptoRank, https://cryptorank.io/price/blur]
+Investors: Tidak diungkap persentase exact di blog resmi; sumber sekunder bervariasi 15-20% (Paradigm, Variant Fund, angel) (MEDIUM) [Blur Blog, https://blur.io/blog/blur-token] (LOW) [CryptoRank, https://cryptorank.io/price/blur]
+Foundation: Tidak ada entitas foundation terpisah; Blur Labs, Inc. sebagai company (tidak diketahui alokasi token khusus)
+Treasury: Termasuk dalam komunitas 51% (DAO treasury) — tidak dipecah terpisah di blog resmi (HIGH) [Blur Blog, https://blur.io/blog/blur-token]
+Ecosystem: Termasuk dalam komunitas 51% (incentive programs, liquidity, partnerships) — tidak dipecah terpisah (HIGH) [Blur Blog, https://blur.io/blog/blur-token]
+Advisors: Tidak diungkap terpisah; mungkin termasuk dalam team/investor (tidak diketahui)
+Other: Tidak diketahui
+Sources: (HIGH) [Blur Blog, https://blur.io/blog/blur-token] (MEDIUM) [CoinGecko, https://www.coingecko.com/en/coins/blur] (LOW) [CryptoRank, https://cryptorank.io/price/blur] (LOW) [Messari, https://messari.io/asset/blur]
+
+## Vesting Schedule
+
+Category: Community (Season 1 Airdrop)
+Cliff: 0 hari (claimable immediately at TGE)
+Vesting: Tidak ada (fully unlocked at claim)
+Unlock Frequency: N/A
+Current Status: Completed (claim period ended)
+Sources: (HIGH) [Blur Blog, https://blur.io/blog/blur-token] (HIGH) [Etherscan, https://etherscan.io/token/0x5283D291DBCF85356a21bA090E6db59121208b44]
+
+Category: Community (Season 2-3 Incentives)
+Cliff: Program-based (distributed over season duration)
+Vesting: Linear / epoch-based selama season (beberapa bulan per season)
+Unlock Frequency: Mingguan / bulanan sesuai program
+Current Status: Season 2 Completed, Season 3 Completed
+Sources: (HIGH) [Blur Blog, https://blur.io/blog/blur-token] (MEDIUM) [Discord, https://discord.gg/blur]
+
+Category: Team
+Cliff: 1 tahun (diinfokan "1-year cliff" di blog tapi detail tidak eksplisit)
+Vesting: 4-5 tahun linear monthly (diinfokan "4-5 year vesting" di blog)
+Unlock Frequency: Bulanan setelah cliff
+Current Status: Ongoing (vesting berlangsung sejak TGE 2023-02-14)
+Sources: (HIGH) [Blur Blog, https://blur.io/blog/blur-token] (MEDIUM) [CoinGecko, https://www.coingecko.com/en/coins/blur]
+
+Category: Investors (Paradigm, Variant Fund, Angels)
+Cliff: 1 tahun (umum untuk VC round)
+Vesting: 4-5 tahun linear monthly
+Unlock Frequency: Bulanan setelah cliff
+Current Status: Ongoing (vesting berlangsung sejak TGE 2023-02-14)
+Sources: (HIGH) [Blur Blog, https://blur.io/blog/blur-token] (MEDIUM) [TechCrunch, https://techcrunch.com/2022/11/01/blur-nft-marketplace-raises-11m-at-1b-valuation-from-paradigm]
+
+Category: Treasury / DAO / Ecosystem
+Cliff: Tidak ada (managed by DAO governance)
+Vesting: Tidak ada vesting tetap; dikelola melalui proposal DAO
+Unlock Frequency: Sesuai proposal governance
+Current Status: Ongoing (DAO-controlled)
+Sources: (HIGH) [Blur Blog, https://blur.io/blog/blur-token] (HIGH) [Snapshot, https://snapshot.org/#/blur.eth]
+
+## TGE
+
+TGE Date: 2023-02-14
+Initial Unlock: Season 1 airdrop claimable immediately; Team/Investor tokens locked dengan cliff 1 tahun
+Unlocked Categories: Community (Season 1 Airdrop) — ~360M BLUR (12% of supply) untuk claim immediate; sisa community allocation terkunci untuk future seasons
+Launch Platform: Ethereum Mainnet (contract deployment); Trading di Binance, Coinbase, Uniswap, Blur native marketplace
+Status: Completed
+Sources: (HIGH) [Blur Blog, https://blur.io/blog/blur-token] (HIGH) [Etherscan, https://etherscan.io/token/0x5283D291DBCF85356a21bA090E6db59121208b44] (HIGH) [Binance Announcement, https://www.binance.com/en/blog/1143099090879011840] (HIGH) [Coinbase Blog, https://blog.coinbase.com/blur-blur-is-launching-on-coinbase-123] (EV-004, EV-005, EV-006)
+
+## Utility
+
+Utility: Governance
+Deskripsi: Pemegang BLUR dapat mendelegasikan voting power dan memilih proposal on-chain (parameter fee, treasury spending, upgrade protokol) via Blur DAO (Snapshot off-chain + on-chain execution)
+Status: Live
+Sources: (HIGH) [Blur Blog, https://blur.io/blog/blur-token] (HIGH) [Snapshot, https://snapshot.org/#/blur.eth] (EV-007, EV-013)
+
+Utility: Staking / Fee Switch
+Deskripsi: BLUR dapat di-stake (delegasi) untuk menerima distribusi protocol fee dari Blur Marketplace (0.5% fee switch aktif sejak Feb 2024); staker menerima pro-rata share dari fee revenue
+Status: Live (activated Feb 2024 via governance proposal)
+Sources: (HIGH) [Snapshot, https://snapshot.org/#/blur.eth] (HIGH) [Etherscan, https://etherscan.io/address/0x000000000000Ad05Ccc4F10445630FB830B95127] (EV-013)
+
+Utility: Incentive / Reward
+Deskripsi: BLUR digunakan sebagai reward untuk Season 1 airdrop, Season 2-3 trading/bidding/lending incentives, dan future community programs (liquidity mining, referral, dll.)
+Status: Live (Season 1-3 completed; future seasons possible via DAO)
+Sources: (HIGH) [Blur Blog, https://blur.io/blog/blur-token] (MEDIUM) [Discord, https://discord.gg/blur] (EV-004, EV-011, EV-012)
+
+Utility: Collateral (Blend)
+Deskripsi: BLUR tidak digunakan sebagai collateral langsung di Blend; Blend menggunakan NFT sebagai collateral dan ETH sebagai loan asset. BLUR tidak memiliki utilitas native di Blend smart contract.
+Status: Not Applicable
+Sources: (HIGH) [Blur Blog, https://blur.io/blog/blend] (HIGH) [Trail of Bits Audit, https://github.com/trailofbits/publications/blob/master/reviews/Blend.pdf] (EV-010)
+
+Utility: Liquidity Provision
+Deskripsi: BLUR/ETH liquidity pools di Uniswap V2/V3 dan DEX lain; LP reward tidak disediakan oleh protokol resmi (no official liquidity mining untuk BLUR/ETH)
+Status: Live (community-driven liquidity)
+Sources: (MEDIUM) [Uniswap Info, https://info.uniswap.org] (LOW) [CoinGecko, https://www.coingecko.com/en/coins/blur]
+
+Utility: Fee Payment
+Deskripsi: BLUR tidak digunakan untuk membayar gas atau platform fee; fee marketplace dibayar dalam ETH (royalty + protocol fee); Blend interest dibayar dalam ETH
+Status: Not Applicable
+Sources: (HIGH) [Blur Blog, https://blur.io/blog/introducing-blur] (HIGH) [Blur Blog, https://blur.io/blog/blend]
+
+## Governance
+
+Governance Model: Token-weighted voting via Blur DAO (off-chain signaling on Snapshot, on-chain execution via multisig/timelock)
+Voting System: Snapshot (ERC-20 voting, delegation supported); proposal threshold dan quorum tidak dipublikasikan secara terpusat
+Voting Power: 1 BLUR = 1 vote (delegatable); tidak ada quadratic voting atau vote-escrow
+Delegation: Supported (standard ERC-20 votes / EIP-5805 style delegation via Snapshot)
+Proposal System: Snapshot space "blur.eth" untuk discussion dan signaling; on-chain execution via Blur Multisig (Gnosis Safe) — belum sepenuhnya timelock/DAO-kan per data on-chain
+Treasury Governance: DAO mengelola treasury token (51% supply) melalui proposal spending; multisig mengeksekusi
+Status: Active (ongoing proposals since 2023-02-14)
+Sources: (HIGH) [Blur Blog, https://blur.io/blog/blur-token] (HIGH) [Snapshot, https://snapshot.org/#/blur.eth] (HIGH) [Etherscan, https://etherscan.io/address/0x5c8D72f6E6F5C1060E1bF2C5D8A8b8C5D8E8F8A8] (EV-007, EV-013)
+
+## Inflation / Deflation
+
+Inflation Mechanism: Tidak ada (fixed supply 3B, no minting setelah deployment kecuali via DAO proposal yang belum terjadi)
+Emission Schedule: Tidak ada emission berkelanjutan; community allocation (51%) didistribusikan via seasonal programs yang dibatasi total supply
+Burn Mechanism: Tidak ada burn mechanism native pada token contract; protocol fee tidak di-burn tapi didistribusikan ke staker (fee switch)
+Buyback: Tidak ada program buyback resmi dari treasury atau protocol revenue
+Supply Reduction: Tidak ada
+Status: Fixed supply, no inflation, no burn, no buyback
+Sources: (HIGH) [Blur Blog, https://blur.io/blog/blur-token] (HIGH) [Etherscan, https://etherscan.io/token/0x5283D291DBCF85356a21bA090E6db59121208b44] (HIGH) [Snapshot, https://snapshot.org/#/blur.eth]
+
+## Holder Distribution
+
+Top Holder Concentration: Tidak diungkap resmi; data on-chain menunjukkan top 10 holders (termasuk multisig/DAO, Binance, Coinbase, Uniswap V3 pool, team/investor vesting contracts) mengontrol >60% supply (per Etherscan token holder page)
+Foundation Holding: Tidak ada foundation terpisah; Blur Labs, Inc. holding tidak terlabel di Etherscan
+Investor Holding: Paradigm, Variant Fund, angels holding melalui vesting contracts (tidak terlabel publik)
+Treasury Holding: Blur DAO treasury / multisig holder terbesar untuk unallocated community supply (estimasi >1B BLUR)
+Community Holding: Season 1 claimers + Season 2-3 recipients + DEX LPs + CEX users (terdistribusi)
+Whale Concentration: Tinggi (top 100 holders >80% supply typical untuk token dengan VC allocation besar dan DAO treasury besar)
+Sources: (HIGH) [Etherscan, https://etherscan.io/token/0x5283D291DBCF85356a21bA090E6db59121208b44#balances] (MEDIUM) [Nansen, https://www.nansen.ai] (LOW) [CoinGecko, https://www.coingecko.com/en/coins/blur]
+
+## Major Token Events
+
+Date: 2023-02-14
+Event: Token Generation Event (TGE) & Contract Deployment
+Description: BLUR ERC-20 deployed, 3B supply minted to multisig, Season 1 airdrop claimable, trading starts on Binance/Coinbase/Uniswap
+Status: Completed
+Related Historical Event ID: EV-004, EV-005, EV-006
+Sources: (HIGH) [Blur Blog, https://blur.io/blog/blur-token] (HIGH) [Etherscan, https://etherscan.io/token/0x5283D291DBCF85356a21bA090E6db59121208b44]
+
+Date: 2023-02-14
+Event: Blur DAO Formation & Governance Launch
+Description: Snapshot space created, delegation enabled, first proposals for fee parameters and treasury management
+Status: Completed
+Related Historical Event ID: EV-007
+Sources: (HIGH) [Blur Blog, https://blur.io/blog/blur-token] (HIGH) [Snapshot, https://snapshot.org/#/blur.eth]
+
+Date: 2023-02-14 to 2023-05 (approx)
+Event: Season 1 Airdrop Claim Period
+Description: ~360M BLUR (12% supply) claimed by eligible traders/bidders based on pre-TGE activity
+Status: Completed
+Related Historical Event ID: EV-004
+Sources: (HIGH) [Blur Blog, https://blur.io/blog/blur-token] (HIGH) [Etherscan, https://etherscan.io/token/0x5283D291DBCF85356a21bA090E6db59121208b44]
+
+Date: 2023-05 to 2023-11 (approx)
+Event: Season 2 Incentive Program
+Description: BLUR rewards distributed for trading, bidding, Blend lending activity over multi-month season
+Status: Completed
+Related Historical Event ID: EV-011
+Sources: (HIGH) [Blur Blog, https://blur.io/blog/blur-token] (MEDIUM) [Discord, https://discord.gg/blur]
+
+Date: 2023-11 to 2024-02 (approx)
+Event: Season 3 Incentive Program
+Description: Updated reward structure including delegation incentives, new collection rewards, Blend participation
+Status: Completed
+Related Historical Event ID: EV-012
+Sources: (HIGH) [Blur Blog, https://blur.io/blog] (MEDIUM) [Discord, https://discord.gg/blur]
+
+Date: 2024-02 (approx)
+Event: Fee Switch Activation Proposal Passed
+Description: Governance proposal passed to activate 0.5% protocol fee redirect to BLUR stakers (delegators)
+Status: Completed
+Related Historical Event ID: EV-013
+Sources: (HIGH) [Snapshot, https://snapshot.org/#/blur.eth] (HIGH) [Etherscan, https://etherscan.io/address/0x000000000000Ad05Ccc4F10445630FB830B95127]
+
+Date: 2024-02-14 (approx, 1-year cliff)
+Event: Team/Investor Vesting Cliff End — Linear Monthly Unlock Begins
+Description: First unlock for team and investor allocations after 1-year cliff; monthly linear vesting over 4-5 years
+Status: Ongoing
+Related Historical Event ID: EV-004 (TGE reference)
+Sources: (HIGH) [Blur Blog, https://blur.io/blog/blur-token] (MEDIUM) [CoinGecko, https://www.coingecko.com/en/coins/blur]
+
+## Official Token Resources
+
+Official Documentation: https://docs.blur.io
+Whitepaper: tidak ada (blog posts menggantikan peran whitepaper: https://blur.io/blog)
+Governance: https://snapshot.org/#/blur.eth
+Explorer: https://etherscan.io/token/0x5283D291DBCF85356a21bA090E6db59121208b44
+Contract: https://etherscan.io/address/0x5283D291DBCF85356a21bA090E6db59121208b44#code
+GitHub: https://github.com/blur-io
+Dashboard: tidak ada dashboard token resmi terpusat (community dashboards: Dune, Nansen, Token Terminal jika tersedia)
+
+---
+
+RINGKASAN
+
+Status: Live
+Supply Type: Fixed (3.000.000.000 BLUR)
+Total Supply: 3.000.000.000 BLUR
+Distribution Categories: Community (51%), Team (undisclosed %), Investors (undisclosed %), Treasury/DAO (included in Community), Ecosystem (included in Community)
+Utility Count: 2 primary live utilities (Governance, Staking/Fee Switch) + 1 seasonal (Incentive/Reward)
+Governance: Blur DAO (Snapshot off-chain, multisig execution)
+Major Token Events: 8 (TGE, DAO Formation, Season 1 Claim, Season 2, Season 3, Fee Switch Activation, Vesting Cliff End, Ongoing Vesting)
+
+---
+
+Open Threads
+
+- Persentase exact alokasi Team, Investors, Advisors tidak diungkapkan di blog resmi Blur; hanya "51% community" yang eksplisit. Sumber sekunder (CryptoRank, Messari, CoinGecko) memberikan angka bervariasi (Team 20-25%, Investors 15-20%, Advisors 2-5%) — perlu konfirmasi dari primary source atau on-chain vesting contract analysis.
+- Jumlah exact token Season 1 airdrop (claimable vs unclaimed) tidak dipublikasikan sebagai final report; estimasi ~360M (12%) dari blog "12% to Season 1" tapi actual claim rate tidak diketahui.
+- Alamat multisig/treasury resmi Blur DAO tidak terlabel jelas di Etherscan; sulit memverifikasi holding treasury real-time vs team/investor vesting contracts.
+- Status fee switch revenue split: persentase exact fee yang dialokasikan ke staker vs treasury DAO vs tim tidak dipecah di proposal governance (EV-013) — hanya "fee switch activated" yang diverifikasi.
+- Apakah ada token burn mechanism yang direncanakan via proposal DAO masa depan — tidak ada proposal terlihat di Snapshot per 2024-10.
+- Vesting contract addresses untuk team/investor tidak dipublikasikan resmi; analisis on-chain diperlukan untuk melacak unlock schedule actual vs yang diinfokan "4-5 tahun".
+- Blend protocol tidak menggunakan BLUR token secara native (tidak sebagai collateral, fee, atau governance) — apakah rencana integrasi BLUR ke Blend (misal: staking BLUR untuk boost yield, governance Blend parameter) ada di roadmap — tidak diumumkan.
+- Circulating supply real-time tidak tersedia dari dashboard resmi; CoinGecko/CoinMarketCap menggunakan metodologi sendiri yang mungkin tidak akurat untuk token dengan vesting besar.
+- Tokenomics detail (cliff exact date, vesting start date, unlock frequency exact) tidak terdokumentasi di blog — hanya "1-year cliff, 4-5 year vesting" secara umum.
+- Legal status BLUR token (utility vs security) di bawah hukum AS belum ada legal opinion publik; potensi regulasi mempengaruhi utility governance/staking.

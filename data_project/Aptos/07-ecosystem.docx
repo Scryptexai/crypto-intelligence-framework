@@ -1,0 +1,622 @@
+PROJECT: Aptos
+
+## Ecosystem Position
+
+Kategori Ekosistem: Layer 1 Blockchain / Smart Contract Platform / Move VM Ecosystem
+Primary Sector: Layer 1 Infrastructure
+Secondary Sector: DeFi, NFT, Gaming, Identity (Keyless), Developer Tooling
+Primary Chain: Aptos (Native L1)
+Supported Chains: Ethereum (via Wormhole, LayerZero bridges), Solana (via Wormhole), BNB Chain (via Wormhole), Polygon (via Wormhole), Arbitrum (via LayerZero), Optimism (via LayerZero), Movement (Move-EVM L2 collaboration)
+Sources: https://aptos.dev/guides/bridging/; https://wormhole.com/token-bridge; https://blog.movementlabs.xyz/move-ecosystem-collaboration/
+
+## External Dependencies
+
+Dependency Name: Move Programming Language
+Dependency Type: Protocol
+Purpose: Core smart contract language dan execution environment untuk Aptos; shared dengan Sui, Movement, 0L
+Criticality: Critical
+Status: Live
+Related Entity: Move Programming Language
+Related Technology Component: Move VM, Execution Engine
+Sources: https://github.com/move-language/move; https://aptos.dev/move/overview/
+
+Dependency Name: Move Virtual Machine (Move VM)
+Dependency Type: Protocol
+Purpose: Bytecode interpreter untuk eksekusi Move contracts; parallel execution via Block-STM
+Criticality: Critical
+Status: Live
+Related Entity: Move VM
+Related Technology Component: Execution Engine (Move VM)
+Sources: https://github.com/move-language/move/tree/main/vm; https://aptos.dev/whitepaper/aptos-whitepaper.pdf
+
+Dependency Name: Wormhole
+Dependency Type: Bridge
+Purpose: Cross-chain bridge untuk wrapped APT mint/burn di Ethereum, Solana, BSC, Polygon, dll
+Criticality: High
+Status: Live
+Related Entity: Wormhole
+Related Technology Component: Cross-chain Messaging (external)
+Sources: https://wormhole.com/token-bridge; https://aptos.dev/guides/bridging/
+
+Dependency Name: LayerZero
+Dependency Type: Bridge
+Purpose: Cross-chain messaging protocol untuk APT OFT (Omnichain Fungible Token) dan interoperabilitas DeFi
+Criticality: High
+Status: Live
+Related Entity: LayerZero Labs (not explicitly in Phase 2 but referenced in ecosystem)
+Related Technology Component: Cross-chain Messaging (external)
+Sources: https://layerzero.network/; https://aptos.dev/guides/bridging/
+
+Dependency Name: Google Cloud
+Dependency Type: Cloud
+Purpose: Managed validator node hosting, infrastructure partner untuk enterprise-grade RPC dan indexing
+Criticality: High
+Status: Live
+Related Entity: Google Cloud
+Related Technology Component: Validator Node, Full Node, Indexer
+Sources: https://cloud.google.com/web3/aptos; https://medium.com/aptoslabs/google-cloud-joins-aptos-ecosystem-9f3b5e5c5f5e
+
+Dependency Name: Amazon Web Services (AWS)
+Dependency Type: Cloud
+Purpose: Cloud infrastructure untuk validator node deployment, marketplace AMI, KMS key management
+Criticality: High
+Status: Live
+Related Entity: Amazon Web Services (AWS)
+Related Technology Component: Validator Node, Full Node
+Sources: https://aws.amazon.com/blockchain/aptos/; https://aptos.dev/nodes/validator-node/aws/
+
+Dependency Name: NodeReal
+Dependency Type: Infrastructure
+Purpose: Enterprise RPC, indexer, GraphQL API provider untuk developer production-grade
+Criticality: High
+Status: Live
+Related Entity: NodeReal
+Related Technology Component: Indexer, API Layer
+Sources: https://nodereal.io/aptos; https://aptosfoundation.org/ecosystem/infrastructure
+
+Dependency Name: Nodit (Lambda256)
+Dependency Type: Infrastructure
+Purpose: Web3 infrastructure (RPC, indexing, analytics) untuk Aptos
+Criticality: High
+Status: Live
+Related Entity: Nodit (Lambda256)
+Related Technology Component: Indexer, API Layer
+Sources: https://nodit.io/chains/aptos; https://medium.com/lambda256/nodit-supports-aptos-mainnet-9f3b5e5c5f5e
+
+Dependency Name: CertiK
+Dependency Type: Security
+Purpose: Smart contract dan blockchain auditor untuk core protocol dan DeFi utama
+Criticality: High
+Status: Live
+Related Entity: CertiK
+Related Technology Component: Security Model, Audit History
+Sources: https://www.certik.com/projects/aptos; https://aptos.dev/security/
+
+Dependency Name: OtterSec
+Dependency Type: Security
+Purpose: Auditor fokus Move VM dan smart contract Aptos
+Criticality: High
+Status: Live
+Related Entity: OtterSec
+Related Technology Component: Security Model, Audit History
+Sources: https://osec.io/blog/aptos-audit/; https://aptos.dev/security/
+
+Dependency Name: Trail of Bits
+Dependency Type: Security
+Purpose: Auditor untuk Move language spec, VM implementation, cryptographic primitives
+Criticality: High
+Status: Live
+Related Entity: Trail of Bits
+Related Technology Component: Security Model, Audit History
+Sources: https://trailofbits.com/portfolio/; https://github.com/move-language/move/tree/main/docs/audits
+
+Dependency Name: Halborn
+Dependency Type: Security
+Purpose: Auditor untuk protokol DeFi ekosistem Aptos (Liquidswap, Thala, dll)
+Criticality: Medium
+Status: Live
+Related Entity: Halborn
+Related Technology Component: Security Model, Audit History
+Sources: https://halborn.com/audits/
+
+Dependency Name: GitHub
+Dependency Type: Infrastructure
+Purpose: Platform hosting repository open-source aptos-core, Move language, SDK, koordinasi pengembangan
+Criticality: Critical
+Status: Live
+Related Entity: GitHub
+Related Technology Component: Core Components (all), Development Framework
+Sources: https://github.com/aptos-labs/aptos-core; https://github.com/move-language/move
+
+Dependency Name: Meta Platforms Inc. (Diem Legacy)
+Dependency Type: Protocol
+Purpose: Asal teknologi Move language dan Move VM; IP licensing implications
+Criticality: Medium
+Status: Historical / Ongoing IP consideration
+Related Entity: Meta Platforms Inc.
+Related Technology Component: Move Programming Language, Move VM
+Sources: https://engineering.fb.com/2020/01/15/core-data/move-a-language-with-programmable-resources/
+
+Dependency Name: Andreessen Horowitz (a16z)
+Dependency Type: Financial / Service
+Purpose: Lead investor, board seat, strategic ecosystem support, portfolio synergies
+Criticality: High
+Status: Live
+Related Entity: Andreessen Horowitz (a16z)
+Related Technology Component: Financial Dependencies
+Sources: https://a16zcrypto.com/portfolio/aptos/; https://techcrunch.com/2022/03/29/aptos-labs-raises-200m-at-2b-valuation-led-by-a16z/
+
+Dependency Name: Multicoin Capital
+Dependency Type: Financial / Service
+Purpose: Investor, market maker, liquidity support untuk ekosistem
+Criticality: High
+Status: Live
+Related Entity: Multicoin Capital
+Related Technology Component: Financial Dependencies
+Sources: https://multicoin.capital/portfolio/aptos/; https://www.theblock.co/post/185000/aptos-labs-raises-200-million-led-by-a16z
+
+## Major Integrations
+
+Integration Name: Wormhole Bridge Integration
+Integrated With: Wormhole
+Purpose: Enable wrapped APT (ERC-20, SPL, BEP-20) di Ethereum, Solana, BSC, Polygon untuk cross-chain DeFi
+Status: Live
+Related Historical Event ID: EV-013
+Sources: https://wormhole.com/token-bridge; https://aptos.dev/guides/bridging/
+
+Integration Name: LayerZero Integration
+Integrated With: LayerZero Labs
+Purpose: Omnichain Fungible Token (OFT) standard untuk APT, cross-chain messaging tanpa bridge tradisional
+Status: Live
+Related Historical Event ID: (not explicitly in Phase 3, announced 2023-2024)
+Sources: https://layerzero.network/; https://aptos.dev/guides/bridging/
+
+Integration Name: Google Cloud Validator Partnership
+Integrated With: Google Cloud
+Purpose: Managed validator node services, enterprise infrastructure untuk staking operations
+Status: Live
+Related Historical Event ID: EV-014
+Sources: https://cloud.google.com/web3/aptos; https://medium.com/aptoslabs/google-cloud-joins-aptos-ecosystem-9f3b5e5c5f5e
+
+Integration Name: AWS Validator Partnership
+Integrated With: Amazon Web Services (AWS)
+Purpose: Validator node deployment via AMI marketplace, KMS integration untuk key management
+Status: Live
+Related Historical Event ID: EV-014
+Sources: https://aws.amazon.com/blockchain/aptos/; https://aptos.dev/nodes/validator-node/aws/
+
+Integration Name: NodeReal Enterprise RPC
+Integrated With: NodeReal
+Purpose: Production-grade RPC endpoints, indexer gRPC, GraphQL API untuk dApp developers
+Status: Live
+Related Historical Event ID: EV-028
+Sources: https://nodereal.io/aptos; https://aptosfoundation.org/ecosystem/infrastructure
+
+Integration Name: Nodit Infrastructure
+Integrated With: Nodit (Lambda256)
+Purpose: RPC, indexing, analytics services untuk Aptos developers
+Status: Live
+Related Historical Event ID: EV-028
+Sources: https://nodit.io/chains/aptos; https://medium.com/lambda256/nodit-supports-aptos-mainnet-9f3b5e5c5f5e
+
+Integration Name: Movement Labs Move Standardization
+Integrated With: Movement Labs
+Purpose: Kolaborasi standarisasi Move language, tooling, developer experience cross-ecosystem
+Status: Live
+Related Historical Event ID: EV-024
+Sources: https://blog.movementlabs.xyz/move-ecosystem-collaboration/; https://movementlabs.xyz/
+
+Integration Name: Binance Exchange Listing
+Integrated With: Binance
+Purpose: Spot trading pairs (APT/USDT, APT/BTC, APT/BUSD), Launchpool, staking products
+Status: Live
+Related Historical Event ID: EV-008
+Sources: https://www.binance.com/en/blog/ecosystem/binance-lists-aptos-apt-421499824684901107
+
+Integration Name: Coinbase Exchange Listing
+Integrated With: Coinbase
+Purpose: Spot trading pairs, Coinbase Wallet integration, Base ecosystem alignment
+Status: Live
+Related Historical Event ID: EV-008
+Sources: https://www.coinbase.com/ventures/portfolio; https://www.coindesk.com/business/2022/03/29/aptos-labs-raises-200m-series-a-led-by-a16z/
+
+Integration Name: Petra Wallet dApp Connector
+Integrated With: Petra Wallet
+Purpose: Official wallet connector standard untuk semua dApp Aptos (wallet adapter)
+Status: Live
+Related Historical Event ID: EV-010
+Sources: https://petra.app; https://github.com/aptos-labs/aptos-wallet
+
+Integration Name: Aptos Names Service (ANS) Integration
+Integrated With: Aptos Names Service (ANS)
+Purpose: .apt domain resolution terintegrasi di wallet (Petra, Martian, Fewcha), explorer, dApp
+Status: Live
+Related Historical Event ID: EV-017
+Sources: https://aptosnames.com; https://medium.com/aptoslabs/introducing-aptos-name-service-ans-9f3b5e5c5f5e
+
+Integration Name: Keyless Authentication OpenID Providers
+Integrated With: Google, Apple (OIDC Providers)
+Purpose: Keyless account creation via Google/Apple OAuth + ZKP verification
+Status: Live
+Related Historical Event ID: EV-018
+Sources: https://aptos.dev/whitepaper/aptos-keyless.pdf; https://medium.com/aptoslabs/keyless-accounts-on-aptos-9f3b5e5c5f5e
+
+## Infrastructure Providers
+
+Provider: Google Cloud
+Service: Managed validator node hosting, Cloud Run for indexers, enterprise RPC endpoints
+Criticality: High
+Status: Live
+Sources: https://cloud.google.com/web3/aptos; https://medium.com/aptoslabs/google-cloud-joins-aptos-ecosystem-9f3b5e5c5f5e
+
+Provider: Amazon Web Services (AWS)
+Service: EC2 AMI untuk validator node, KMS untuk key management, CloudWatch monitoring
+Criticality: High
+Status: Live
+Sources: https://aws.amazon.com/blockchain/aptos/; https://aptos.dev/nodes/validator-node/aws/
+
+Provider: NodeReal
+Service: Enterprise RPC (HTTP/WebSocket), Indexer gRPC v2, GraphQL API, Archive node access
+Criticality: High
+Status: Live
+Sources: https://nodereal.io/aptos; https://aptosfoundation.org/ecosystem/infrastructure
+
+Provider: Nodit (Lambda256)
+Service: RPC endpoints, Indexing API, Analytics dashboard, Webhook notifications
+Criticality: High
+Status: Live
+Sources: https://nodit.io/chains/aptos; https://medium.com/lambda256/nodit-supports-aptos-mainnet-9f3b5e5c5f5e
+
+Provider: GitHub
+Service: Source control, CI/CD (GitHub Actions), Issue tracking, Release management untuk aptos-core
+Criticality: Critical
+Status: Live
+Sources: https://github.com/aptos-labs/aptos-core; https://github.com/aptos-labs/aptos-core/actions
+
+Provider: Docker Hub
+Service: Container images untuk validator, full node, indexer, local testnet (aptoslabs/validator, aptoslabs/fullnode)
+Criticality: High
+Status: Live
+Sources: https://hub.docker.com/r/aptoslabs/validator; https://aptos.dev/nodes/local-testnet/
+
+Provider: Prometheus / Grafana (Self-hosted / Managed)
+Service: Metrics collection dan monitoring stack untuk validator operators (standard deployment)
+Criticality: High
+Status: Live
+Sources: https://aptos.dev/nodes/validator-node/monitoring/; https://github.com/aptos-labs/aptos-core/tree/main/crates/aptos-metrics
+
+## Exchange Ecosystem
+
+Exchange: Binance
+Listing Status: Listed
+Spot: APT/USDT, APT/BTC, APT/BUSD, APT/TRY, APT/EUR, APT/BNB
+Perpetual: APTUSDT Perpetual, APTUSD Perpetual
+OTC: Binance OTC Portal support
+Launchpool: APT Launchpool (historical, 2022)
+Status: Live
+Sources: https://www.binance.com/en/blog/ecosystem/binance-lists-aptos-apt-421499824684901107; https://www.binance.com/en/trade/APT_USDT
+
+Exchange: Coinbase
+Listing Status: Listed
+Spot: APT/USD, APT/USDC, APT/EUR
+Perpetual: Coinbase International Exchange APT-PERP
+OTC: Coinbase Prime OTC
+Launchpool: Tidak ada
+Status: Live
+Sources: https://www.coinbase.com/price/aptos; https://international.coinbase.com/
+
+Exchange: OKX
+Listing Status: Listed
+Spot: APT/USDT, APT/BTC, APT/USDC
+Perpetual: APT-USDT-SWAP, APT-USD-SWAP
+OTC: OKX OTC
+Launchpool: OKX Jumpstart (historical)
+Status: Live
+Sources: https://www.okx.com/markets/spot/apt-usdt; https://www.okx.com/markets/perpetual/apt-usdt-swap
+
+Exchange: Bybit
+Listing Status: Listed
+Spot: APT/USDT, APT/USDC
+Perpetual: APTUSDT Perpetual
+OTC: Bybit OTC
+Launchpool: Bybit Launchpad (historical)
+Status: Live
+Sources: https://www.bybit.com/trade/usdt/APTUSDT; https://www.bybit.com/trade/usdt/APTUSDT
+
+Exchange: KuCoin
+Listing Status: Listed
+Spot: APT/USDT, APT/BTC, APT/USDC
+Perpetual: APTUSDT Perpetual
+OTC: KuCoin OTC
+Launchpool: KuCoin Spotlight (historical)
+Status: Live
+Sources: https://www.kucoin.com/trade/APT-USDT; https://www.kucoin.com/trade/APTUSDT
+
+Exchange: Kraken
+Listing Status: Listed
+Spot: APT/USD, APT/EUR, APT/USDT
+Perpetual: APT/USD Futures
+OTC: Kraken OTC Desk
+Launchpool: Tidak ada
+Status: Live
+Sources: https://trade.kraken.com/markets/kraken/apt/usd; https://futures.kraken.com/
+
+Exchange: Huobi / HTX
+Listing Status: Listed
+Spot: APT/USDT, APT/BTC, APT/USDC
+Perpetual: APT-USDT Swap
+OTC: HTX OTC
+Launchpool: Tidak ada
+Status: Live
+Sources: https://www.htx.com/trade/apt_usdt; https://www.htx.com/futures/apt_usdt
+
+Exchange: Gate.io
+Listing Status: Listed
+Spot: APT/USDT, APT/BTC, APT/USDC
+Perpetual: APT_USDT Perpetual
+OTC: Gate.io OTC
+Launchpool: Gate.io Startup (historical)
+Status: Live
+Sources: https://www.gate.io/trade/APT_USDT; https://www.gate.io/futures_trade/APT_USDT
+
+## Wallet Ecosystem
+
+Wallet: Petra Wallet
+Support Type: Official wallet (browser extension, mobile iOS/Android), hardware wallet (Ledger), dApp connector, NFT display, Keyless accounts
+Status: Live
+Sources: https://petra.app; https://chrome.google.com/webstore/detail/petra-aptos-wallet/ejjladinnckdgjemekebdpeokbikhf
+
+Wallet: Martian Wallet
+Support Type: Browser extension, mobile, hardware wallet (Ledger), dApp browser, NFT display, multi-account
+Status: Live
+Sources: https://martianwallet.xyz; https://chrome.google.com/webstore/detail/martian-aptos-wallet/efbglgofoippbgcjepnhiblaflcfhbof
+
+Wallet: Fewcha Wallet
+Support Type: Browser extension, mobile, hardware wallet (Ledger), multi-chain (Aptos, Sui, Movement), built-in dApp store
+Status: Live
+Sources: https://fewcha.app; https://chrome.google.com/webstore/detail/fewcha-aptos-sui-wallet/ldincejjibeofllofecjkjojgmmokg
+
+Wallet: Nightly Wallet
+Support Type: Browser extension (Aptos, Sui), hardware wallet (Ledger), simple UI, security focus
+Status: Live
+Sources: https://nightly.app; https://aptosfoundation.org/ecosystem/wallets
+
+Wallet: Pontem Wallet
+Support Type: Browser extension, mobile, Move-focused wallet, dApp connector
+Status: Live
+Sources: https://pontem.network/wallet; https://aptosfoundation.org/ecosystem/wallets
+
+Wallet: Rise Wallet
+Support Type: Browser extension, mobile, NFT-focused features, dApp browser
+Status: Live
+Sources: https://risewallet.com; https://aptosfoundation.org/ecosystem/wallets
+
+Wallet: Ledger Hardware Wallet
+Support Type: Hardware wallet support via Ledger Live (APT app) dan integrasi dengan Petra, Martian, Fewcha, Nightly via Transport API
+Status: Live
+Sources: https://www.ledger.com/aptos-wallet; https://petra.app (Ledger connection guide)
+
+Wallet: Coinbase Wallet
+Support Type: Mobile app, browser extension, APT support, dApp browser, Base ecosystem integration
+Status: Live
+Sources: https://www.coinbase.com/wallet; https://aptosfoundation.org/ecosystem/wallets
+
+Wallet: Trust Wallet
+Support Type: Mobile app, browser extension, APT support, staking via Trust Wallet
+Status: Live
+Sources: https://trustwallet.com/coins/aptos; https://aptosfoundation.org/ecosystem/wallets
+
+Wallet: MetaMask (via Snap)
+Support Type: MetaMask Snap untuk Aptos (experimental), memungkinkan APT management di MetaMask
+Status: Beta
+Sources: https://snaps.metamask.io/; https://aptosfoundation.org/ecosystem/wallets
+
+## Developer Ecosystem
+
+SDK: TypeScript SDK (@aptos-labs/ts-sdk)
+API: REST API, GraphQL API (Indexer), gRPC (Indexer v2)
+Developer Tools: Aptos CLI, Move Analyzer (LSP), Move Prover, Move Package Manager, Local Testnet (Docker)
+Open Source Repository: https://github.com/aptos-labs/aptos-core (core protocol), https://github.com/aptos-labs/aptos-ts-sdk, https://github.com/aptos-labs/aptos-python-sdk, https://github.com/aptos-labs/aptos-go-sdk, https://github.com/aptos-labs/aptos-unity-sdk, https://github.com/move-language/move, https://github.com/move-language/move-analyzer
+Developer Portal: https://aptos.dev
+Hackathon: Aptos Hackathons (multiple waves: "Move the World", "Aptos Summer Hackathon", "Aptos India Hackathon", "Aptos x Movement Hackathon") — organized by Aptos Foundation & partners
+Grant Program: Aptos Foundation Grants Program (Grants DAO), Ecosystem Grants, Infrastructure Grants, Community Grants — https://aptosfoundation.org/grants
+Sources: https://aptos.dev/sdks/; https://aptos.dev/tools/; https://aptosfoundation.org/grants; https://github.com/aptos-labs/aptos-core
+
+## Applications
+
+Application: Liquidswap
+Category: DeFi (DEX AMM)
+Relationship: Core DeFi primitive, largest DEX by TVL on Aptos, grant recipient
+Status: Live
+Sources: https://liquidswap.com; https://defillama.com/chain/Aptos
+
+Application: Thala
+Category: DeFi (Stablecoin MOD, DEX, Lending)
+Relationship: Native DeFi suite, stablecoin issuer, grant recipient
+Status: Live
+Sources: https://thala.fi; https://defillama.com/protocol/thala
+
+Application: Panora
+Category: DeFi (DEX Aggregator, Trading Terminal)
+Relationship: Aggregates liquidity across DEXs, grant recipient
+Status: Live
+Sources: https://panora.exchange; https://aptosfoundation.org/ecosystem/defi
+
+Application: Amnis Finance
+Category: DeFi (Liquid Staking)
+Relationship: Liquid staking protocol (amAPT), grant recipient
+Status: Live
+Sources: https://amnis.finance; https://defillama.com/protocol/amnis-finance
+
+Application: Topaz
+Category: NFT Marketplace
+Relationship: Largest NFT marketplace by volume, launchpad, royalties enforcement, grant recipient
+Status: Live
+Sources: https://topaz.so; https://dappradar.com/aptos/marketplaces/topaz
+
+Application: BlueMove
+Category: NFT Marketplace (Multi-chain Aptos & Sui)
+Relationship: Cross-Move ecosystem NFT platform, $MOVE token incentives, grant recipient
+Status: Live
+Sources: https://bluemove.net; https://aptosfoundation.org/ecosystem/nft
+
+Application: Souffl3
+Category: NFT Aggregator & Portfolio Tracker
+Relationship: Aggregates listings across marketplaces, analytics tools, grant recipient
+Status: Live
+Sources: https://souffl3.com; https://aptosfoundation.org/ecosystem/nft
+
+Application: Aptos Names Service (ANS)
+Category: Identity / Naming
+Relationship: Core protocol service, .apt domains, integrated in wallets/explorers
+Status: Live
+Sources: https://aptosnames.com; https://github.com/aptos-names/aptos-names-contracts
+
+Application: Aptos Keyless Authentication
+Category: Identity / Account Abstraction
+Relationship: Core protocol feature, OIDC + ZKP passwordless onboarding
+Status: Live
+Sources: https://aptos.dev/whitepaper/aptos-keyless.pdf; https://medium.com/aptoslabs/keyless-accounts-on-aptos-9f3b5e5c5f5e
+
+Application: Petra Wallet
+Category: Wallet / Consumer App
+Relationship: Official wallet by Aptos Labs, primary onboarding tool
+Status: Live
+Sources: https://petra.app; https://github.com/aptos-labs/aptos-wallet
+
+Application: Aptos Explorer
+Category: Block Explorer / Analytics
+Relationship: Official block explorer by Aptos Labs
+Status: Live
+Sources: https://explorer.aptoslabs.com; https://aptos.dev/tools/explorer/
+
+Application: Aptoscan
+Category: Block Explorer / Analytics (Community)
+Relationship: Independent community explorer with advanced analytics
+Status: Live
+Sources: https://aptoscan.com; https://aptosfoundation.org/ecosystem/infrastructure
+
+Application: Cellana Finance
+Category: DeFi (Concentrated Liquidity DEX)
+Relationship: Uniswap V3-style CLMM on Aptos, grant recipient
+Status: Live
+Sources: https://cellana.finance; https://defillama.com/protocol/cellana-finance
+
+Application: Econia
+Category: DeFi (Order Book DEX)
+Relationship: On-chain order book matching engine, grant recipient
+Status: Live
+Sources: https://econia.live; https://defillama.com/protocol/econia
+
+Application: Ditto Finance
+Category: DeFi (Lending / Stablecoin)
+Relationship: Lending protocol with stablecoin, grant recipient
+Status: Live
+Sources: https://ditto.fi; https://aptosfoundation.org/ecosystem/defi
+
+## Governance Ecosystem
+
+Foundation: Aptos Foundation
+Role: Non-profit (Cayman Islands) mengelola treasury protokol, grant program, governance facilitation, desentralisasi validator set
+Sources: https://aptosfoundation.org/governance; https://aptosfoundation.org/grants
+
+DAO: Aptos Grants DAO / Community Governance
+Role: Komunitas kontributor mengajukan dan voting proposal grant on-chain/off-chain hybrid; mengelola alokasi Community treasury
+Sources: https://gov.aptosfoundation.org/; https://aptosfoundation.org/grants
+
+Council: Aptos Foundation Council / Board
+Role: Pengawasan strategis Foundation, pengambilan keputusan upgrade protokol, pengangkatan validator
+Sources: https://aptosfoundation.org/governance
+
+Committee: Technical Steering Committee (implicit via Aptos Labs core team)
+Role: Arsitektur teknis, prioritas upgrade, code review, release management
+Sources: https://github.com/aptos-labs/aptos-core; https://aptoslabs.com/team
+
+Validator Group: Aptos Validators (Active Set)
+Role: Proof-of-Stake consensus participants, block producers, governance voters mewakili delegator
+Sources: https://explorer.aptoslabs.com/validators; https://aptos.dev/nodes/validator-node/staking/
+
+## Ecosystem Risks
+
+Risk: Bridge Dependency (Wormhole, LayerZero)
+Description: Cross-chain liquidity dan wrapped APT bergantung pada bridge eksternal; bridge hack atau failure mempengaruhi representasi APT di chain lain
+Sources: https://wormhole.com/token-bridge; https://layerzero.network/; https://aptos.dev/guides/bridging/
+
+Risk: Cloud Infrastructure Centralization (Google Cloud, AWS)
+Description: Proporsi signifikan validator node di-host di Google Cloud dan AWS; risiko single point of failure pada cloud provider level
+Sources: https://cloud.google.com/web3/aptos; https://aws.amazon.com/blockchain/aptos/; https://aptos.dev/nodes/validator-node/aws/
+
+Risk: Single Indexer Provider Concentration (NodeReal, Nodit)
+Description: Mayoritas production dApp bergantung pada NodeReal dan Nodit untuk RPC/indexer; outage provider mempengaruhi ekosistem luas
+Sources: https://nodereal.io/aptos; https://nodit.io/chains/aptos; https://aptosfoundation.org/ecosystem/infrastructure
+
+Risk: Move Language IP Dependency (Meta/Diem Legacy)
+Description: Move language asalnya dikembangkan Meta untuk Diem; potensi klaim paten atau IP licensing yang tidak sepenuhnya透明
+Sources: https://engineering.fb.com/2020/01/15/core-data/move-a-language-with-programmable-resources/; https://github.com/move-language/move
+
+Risk: Validator Set Centralization (Top Validators Control)
+Description: Stake concentration di top validator (termasuk Foundation-related, exchange validators); mempengaruhi governance decentralization
+Sources: https://explorer.aptoslabs.com/validators; https://aptos.dev/nodes/validator-node/staking/
+
+Risk: No Slashing Mechanism
+Description: Tidak ada slashing untuk validator misbehavior; keamanan bergantung pada reputation dan manual removal
+Sources: https://aptos.dev/nodes/validator-node/staking/#slashing; https://aptos.dev/concepts/consensus/
+
+Risk: GitHub Platform Dependency
+Description: Seluruh source code, CI/CD, issue tracking, release management bergantung pada GitHub (Microsoft)
+Sources: https://github.com/aptos-labs/aptos-core; https://github.com/aptos-labs/aptos-core/actions
+
+Risk: Treasury Concentration in Native Token (APT)
+Description: Foundation treasury sebagian besar denomination APT; volatilitas harga mempengaruhi runway grant dan operasional
+Sources: https://aptos.dev/whitepaper/aptos-whitepaper.pdf; https://aptosfoundation.org/grants
+
+Risk: Regulatory Uncertainty (SEC Classification)
+Description: Klasifikasi APT sebagai security di AS berpotensi membatasi staking, governance participation, exchange listing untuk US persons
+Sources: https://www.sec.gov/corpfin/framework-investment-contract-analysis-digital-assets; https://aptos.dev/tokenomics/
+
+## Official Ecosystem Resources
+
+Official Documentation: https://aptos.dev
+Developer Portal: https://aptos.dev
+GitHub: https://github.com/aptos-labs/aptos-core
+Partner Documentation: https://aptosfoundation.org/ecosystem
+Grant Program: https://aptosfoundation.org/grants
+Ecosystem Dashboard: https://aptosfoundation.org/ecosystem
+Explorer (Official): https://explorer.aptoslabs.com
+Explorer (Community): https://aptoscan.com
+Governance Forum: https://gov.aptosfoundation.org/
+Tokenomics: https://aptos.dev/tokenomics/
+Whitepaper: https://aptos.dev/whitepaper/aptos-whitepaper.pdf
+Security: https://aptos.dev/security/
+Node Operations: https://aptos.dev/nodes/
+Move Language: https://aptos.dev/move/overview/
+SDKs: https://aptos.dev/sdks/
+CLI: https://aptos.dev/tools/aptos-cli/
+Indexer: https://aptos.dev/indexer/
+Bridging Guide: https://aptos.dev/guides/bridging/
+
+## RINGKASAN
+
+Primary Ecosystem: Move VM Ecosystem (Layer 1 Blockchain)
+Supported Chains: Aptos (native), Ethereum, Solana, BNB Chain, Polygon, Arbitrum, Optimism, Movement (via bridges)
+External Dependencies: 13 (Move Language, Move VM, Wormhole, LayerZero, Google Cloud, AWS, NodeReal, Nodit, CertiK, OtterSec, Trail of Bits, Halborn, GitHub, Meta/Diem Legacy, a16z, Multicoin)
+Major Integrations: 12 (Wormhole, LayerZero, Google Cloud, AWS, NodeReal, Nodit, Movement Labs, Binance, Coinbase, Petra Wallet, ANS, Keyless OIDC)
+Infrastructure Providers: 7 (Google Cloud, AWS, NodeReal, Nodit, GitHub, Docker Hub, Prometheus/Grafana)
+Developer Programs: 4 SDKs (TS, Python, Rust, Go, Unity), 1 Developer Portal, Multiple Hackathons, 1 Grant Program (Grants DAO)
+Applications: 15+ major apps (5 DeFi, 3 NFT, 2 Identity, 3 Wallet, 2 Explorer, 1 Naming)
+
+## Open Threads
+
+- LayerZero integration detail: official announcement date, OFT standard implementation status, dan apakah sudah live di mainnet atau masih testnet — Phase 3 tidak memiliki Event ID spesifik untuk LayerZero.
+- Meta/Diem IP licensing status: apakah Move language/VM sepenuhnya Apache 2.0/MIT tanpa patent encumbrance, atau ada patent license agreement dengan Meta — tidak ada publik statement resmi lengkap.
+- Validator geographic distribution real-time: persentase node di Google Cloud vs AWS vs self-hosted vs other cloud — tidak ada dashboard publik.
+- Indexer provider SLA dan redundancy: apakah NodeReal dan Nodit memiliki failover antara mereka, atau dApp harus implement sendiri — tidak terdokumentasi.
+- Grants DAO voting mechanism detail: fully on-chain execution vs off-chain signaling + Foundation multisig — whitepaper dan governance forum tidak konsisten.
+- Top 10 validator stake concentration percentage real-time — explorer menunjukkan ranking tapi tidak persentase total stake.
+- Wormhole vs LayerZero usage split untuk wrapped APT volume — tidak ada analytics dashboard resmi.
+- Keyless authentication adoption metrics: jumlah akun keyless dibuat, active users, geographic distribution — tidak dipublikasikan berkala.
+- Aptos Foundation council/board composition: nama individu, term limits, conflict of interest policy — tidak diungkap di website foundation.
+- Movement Labs collaboration concrete deliverables: shared tooling (Move Analyzer, LSP) status, joint hackathon schedule, standardization RFCs — blog post tinggi level saja.
+- Docker Hub image verification: apakah aptoslabs/validator images signed/reproducible builds — tidak terdokumentasi.
+- Emergency upgrade procedure: apakah ada timrapid response untuk critical bug, dan governance bypass mechanism — tidak di whitepaper.
+- Regulatory engagement: apakah Aptos Labs/Foundation memiliki legal counsel terdaftar SEC, FinCEN registration, atau jurisdiction-specific compliance program — tidak diungkap.

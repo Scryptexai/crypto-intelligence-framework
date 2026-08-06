@@ -1,0 +1,135 @@
+PROJECT: Avalanche
+
+System Architecture
+- Arsitektur Multi-chain Heterogen: Primary Network terdiri dari tiga chain terpisah (X-Chain, P-Chain, C-Chain) yang dibangun di atas protokol konsensus Avalanche/Snowman (HIGH) [Docs Network Overview, https://docs.avax.network/docs/learn/network-overview]
+- Subnet (L1 Sovran): Framework untuk blockchain kustom yang divalidasi oleh subset validator Primary Network, masing-masing dengan Virtual Machine (VM) sendiri, gas token sendiri, dan aturan keanggotaan validator sendiri (HIGH) [Docs Subnets, https://docs.avax.network/docs/learn/subnets]
+- Cross-chain Messaging Native: Avalanche Warp Messaging (AWM) dan Teleporter menyediakan verifikasi BLS multi-signature on-chain untuk komunikasi trust-minimized antar Subnet dan Primary Network (HIGH) [Docs AWM, https://docs.avax.network/docs/specifications/avalanche-warp-messaging; Docs Teleporter, https://docs.avax.network/docs/specifications/teleporter]
+- Execution Layer Terpisah: C-Chain menjalankan instance Coreth (EVM) sebagai execution environment; X-Chain menggunakan DAG-based vertex processing; P-Chain menggunakan linear chain untuk metadata validator (HIGH) [Docs Platform Chains, https://docs.avax.network/docs/learn/platform]
+- Settlement Layer: Primary Network (P-Chain) bertindak sebagai coordination/settlement layer untuk staking, validator set management, dan Subnet creation (HIGH) [Docs P-Chain, https://docs.avax.network/docs/learn/platform/platform-chain]
+- Bridge Eksternal: Integrasi dengan LayerZero, Wormhole, Chainlink CCIP, dan Avalanche Bridge (AB) untuk interoperabilitas ke Ethereum dan chain lain (HIGH) [Ava Labs Ecosystem Bridges, https://www.avalabs.org/ecosystem/bridges]
+
+Core Components
+- Nama: X-Chain (Exchange Chain); Fungsi: Pembuatan dan transfer aset native (AVAX, aset lain) menggunakan Avalanche Consensus (DAG-based), non-EVM; Status: Live Mainnet sejak 2020-09-21 (HIGH) [Docs X-Chain, https://docs.avax.network/docs/learn/platform/exchange-chain]
+- Nama: P-Chain (Platform Chain); Fungsi: Koordinasi validator, staking AVAX, manajemen Subnet, menggunakan Snowman Consensus (linear); Status: Live Mainnet sejak 2020-09-21 (HIGH) [Docs P-Chain, https://docs.avax.network/docs/learn/platform/platform-chain]
+- Nama: C-Chain (Contract Chain); Fungsi: Smart contract execution via Coreth (EVM instance), Snowman Consensus, target utama developer DeFi/NFT; Status: Live Mainnet sejak 2020-09-21 (HIGH) [Docs C-Chain, https://docs.avax.network/docs/learn/platform/contract-chain]
+- Nama: AvalancheGo; Fungsi: Implementasi node referensi (Golang) untuk Primary Network dan Subnet, menjalankan konsensus, networking, VM management; Status: Live, versi stabil v1.11.x+ (HIGH) [GitHub AvalancheGo, https://github.com/ava-labs/avalanchego]
+- Nama: Coreth; Fungsi: Fork Geth yang dimodifikasi untuk berjalan sebagai VM di atas AvalancheGo, menyediakan EVM compatibility di C-Chain; Status: Live, tracking upstream Geth (HIGH) [GitHub Coreth, https://github.com/ava-labs/coreth]
+- Nama: Avalanche Warp Messaging (AWM); Fungu: Protokol messaging native berbasis BLS multi-signature untuk komunikasi antar chain (Subnet-to-Subnet, Subnet-to-Primary); Status: Live Mainnet sejak 2022-03 (HIGH) [Docs AWM, https://docs.avax.network/docs/specifications/avalanche-warp-messaging]
+- Nama: Teleporter; Fungsi: Standar messaging generik generasi baru (menggantikan AWM) dengan verifikasi on-chain ringan, dukungan payload arbitrer, cross-VM compatibility; Status: Live Mainnet sejak 2023-09 (HIGH) [Docs Teleporter, https://docs.avax.network/docs/specifications/teleporter]
+- Nama: HyperSDK; Fungsi: Framework Rust untuk membangun VM kustom high-performance (10k+ TPS) untuk Subnet, modular, non-EVM; Status: Live Mainnet (Beam/Shrapnel Subnet) sejak 2023-09 (HIGH) [GitHub HyperSDK, https://github.com/ava-labs/hypersdk]
+- Nama: Core Wallet; Fungsi: Wallet multi-chain resmi (browser extension & mobile) untuk X/P/C-Chain dan Subnet, terintegrasi bridge, staking, portfolio; Status: Live, versi 1.x+ (HIGH) [Core Website, https://core.app/]
+- Nama: AvaCloud; Fungsi: Managed Subnet service (SaaS) untuk deployment, validator management, indexing, gasless tx, fiat onramp; Status: Live sejak 2022-11 (HIGH) [AvaCloud Site, https://avacloud.io/]
+- Nama: Validator Set; Fungsi: Entitas terdesentralisasi (~1.300+ validator aktif) menjalankan AvalancheGo, staking AVAX di P-Chain (min 2.000 AVAX), mengamankan Primary Network dan Subnet; Status: Aktif (HIGH) [Avascan Validators, https://avascan.info/validators]
+- Nama: Snowtrace / Avascan; Fungsi: Block explorer dan analytics untuk C-Chain (Snowtrace) dan multi-chain Primary Network (Avascan); Status: Live (HIGH) [Snowtrace, https://snowtrace.io/; Avascan, https://avascan.info/]
+
+Consensus Mechanism
+- Avalanche Consensus (Snowflake/Snowball/Avalanche): Protokol probabilistik berbasis subsampling (metastable) untuk X-Chain, mencapai finality <1 detik, throughput tinggi, energy-efficient, tidak memerlukan leader election (HIGH) [Avalanche Whitepaper, https://www.avax.network/whitepaper]
+- Snowman Consensus: Variasi linearized dari Avalanche Consensus untuk chain yang memerlukan total ordering (P-Chain, C-Chain), block-based, leaderless, finality <1-2 detik (HIGH) [Docs Consensus, https://docs.avax.network/docs/learn/consensus]
+- Sybil Resistance: Proof-of-Stake (PoS) di P-Chain, minimal stake 2.000 AVAX per validator, delegasi didukung, slashing belum diimplementasikan (hanya uptime penalty) (HIGH) [Docs Staking, https://docs.avax.network/docs/nodes/validate/overview]
+- Subnet Validation: Validator Primary Network (staking AVAX) divalidasi oleh P-Chain; Subnet mengharuskan validator menjadi bagian dari Primary Network validator set, dengan stakes tambahan atau requirement kustom per Subnet (HIGH) [Docs Subnet Validation, https://docs.avax.network/docs/learn/subnets/validation]
+
+Execution Environment
+- C-Chain: EVM (Ethereum Virtual Machine) via Coreth, kompatibel EVM-equivalent (tidak fully equivalent karena precompile dan gas model berbeda), mendukung Solidity, Vyper (HIGH) [Docs C-Chain EVM, https://docs.avax.network/docs/learn/platform/contract-chain#evm-compatibility]
+- X-Chain: Native UTXO-based VM (Avalanche VM / AVM) untuk asset operations, non-Turing complete, script-based (SECP256k1, NFT mint/transfer) (HIGH) [Docs X-Chain VM, https://docs.avax.network/docs/learn/platform/exchange-chain#avalanche-virtual-machine-avm]
+- P-Chain: Native Platform VM untuk staking, validator management, Subnet creation, linear state transitions (HIGH) [Docs P-Chain VM, https://docs.avax.network/docs/learn/platform/platform-chain#platform-virtual-machine-pvm]
+- Subnet VM: Customizable — bisa EVM (Subnet-EVM), HyperSDK (Rust-based VM), SpacesVM (key-value), BlobVM, atau VM kustom lain yang dibangun di atas AvalancheGo (HIGH) [Docs Subnet VMs, https://docs.avax.network/docs/build/subnets/virtual-machines]
+
+Programming Languages
+- Go (Golang): Bahasa utama untuk AvalancheGo (node client), P-Chain/X-Chain VMs, networking, consensus implementation (HIGH) [GitHub AvalancheGo, https://github.com/ava-labs/avalanchego]
+- Rust: Bahasa untuk HyperSDK, Subnet VMs high-performance, cryptographic primitives (BLS signatures), dan tooling baru (HIGH) [GitHub HyperSDK, https://github.com/ava-labs/hypersdk]
+- Solidity / Vyper: Smart contract language untuk C-Chain dan Subnet-EVM (HIGH) [Docs C-Chain Development, https://docs.avax.network/docs/build/tutorials/smart-contracts]
+- TypeScript / JavaScript: SDK (avalanchejs), Core Wallet, AvaCloud frontend, tooling (HIGH) [GitHub avalanchejs, https://github.com/ava-labs/avalanchejs]
+- Python: SDK (avalanche-py), scripting, analytics (MEDIUM) [GitHub avalanche-py, https://github.com/ava-labs/avalanche-py]
+
+Development Framework
+- AvalancheJS / avalanchego-go-sdk: SDK utama untuk interaksi node, X/P/C-Chain API, key management, transaction building (HIGH) [GitHub avalanchejs, https://github.com/ava-labs/avalanchejs]
+- Subnet-EVM: Fork Geth/Coreth yang dikonfigurasi untuk deploy Subnet berbasis EVM dengan precompile kustom, gas token kustom, dan permissioning (HIGH) [GitHub Subnet-EVM, https://github.com/ava-labs/subnet-evm]
+- HyperSDK: Framework Rust untuk custom VM, menyediakan building blocks: state DB, execution pipeline, warp messaging precompile, indexer (HIGH) [GitHub HyperSDK, https://github.com/ava-labs/hypersdk]
+- AvaCloud CLI / API: Toolchain managed untuk provisioning Subnet, validator registration, genesis configuration, deployment automation (HIGH) [AvaCloud Docs, https://docs.avacloud.io/]
+- Core Wallet SDK: Library untuk integrasi wallet ke dApp (HIGH) [GitHub Core SDK, https://github.com/ava-labs/core]
+- Foundry / Hardhat / Truffle: Didukung penuh untuk C-Chain dan Subnet-EVM development via RPC endpoint (HIGH) [Docs C-Chain Tools, https://docs.avax.network/docs/build/tutorials/smart-contracts#using-hardhat-or-foundry]
+- The Graph (Subgraph): Indexing framework untuk C-Chain dan Subnet data (HIGH) [The Graph Avalanche, https://thegraph.com/explorer/subgraphs?network=avalanche]
+
+Security Model
+- Validator Set Security: ~1.300+ validator independen, stake total ~250M+ AVAX (sekitar $10B+ TVL staked), nakamoto coefficient >20 (HIGH) [Avascan Validators, https://avascan.info/validators; Staking Dashboard, https://stake.avax.network/]
+- Consensus Safety: Avalanche/Snowman consensus memberikan safety di bawah asumsi <50% stake adversarial (bft-style), liveness di bawah partisi jaringan (HIGH) [Avalanche Whitepaper, https://www.avax.network/whitepaper]
+- BLS Multi-signature: Digunakan di AWM dan Teleporter untuk verifikasi pesan lintas chain dengan threshold signature dari validator set Subnet/Primary (HIGH) [Docs AWM BLS, https://docs.avax.network/docs/specifications/avalanche-warp-messaging#bls-multi-signatures]
+- No Slashing (Saat Ini): Hanya uptime penalty (stake tidak mendapat reward saat offline), tidak ada slashing untuk double-sign atau equivocation (HIGH) [Docs Staking Penalty, https://docs.avax.network/docs/nodes/validate/overview#penalties]
+- Subnet Isolation: Failure/attack pada satu Subnet tidak memengaruhi Primary Network atau Subnet lain (shared security hanya lewat validator set overlap) (HIGH) [Docs Subnet Security, https://docs.avax.network/docs/learn/subnets#security]
+- Bridge Security: Avalanche Bridge (AB) menggunakan Intel SGX enclave untuk key management; LayerZero/Wormhole/CCIP menggunakan model keamanan masing-masing (DVN, Guardian, DON) (HIGH) [Ava Labs Bridge Security, https://www.avalabs.org/bridge-security; LayerZero Docs, https://layerzero.gitbook.io/docs/technical-reference/security]
+
+Audit History
+- Auditor: Halborn; Tanggal: 2021-2024 (berkelanjutan); Scope: AvalancheGo core consensus, networking, HyperSDK, Core Wallet, Subnet configs; Status: Completed (multiple reports); Source: (HIGH) [Halborn Avalanche Audits, https://halborn.com/audits/avalanche]
+- Auditor: Trail of Bits; Tanggal: 2020-2024 (berkelanjutan); Scope: AvalancheGo consensus, cryptography, VM implementations, fuzzing; Status: Completed (multiple reports); Source: (HIGH) [Trail of Bits Audits, https://github.com/ava-labs/avalanchego/blob/master/docs/security/audits.md]
+- Auditor: CertiK; Tanggal: 2021-2024; Scope: Skynet monitoring on-chain, smart contract audit untuk proyek ekosistem (DeFi, Gaming, Subnet); Status: Ongoing; Source: (HIGH) [CertiK Avalanche Projects, https://www.certik.com/projects/avalanche]
+- Auditor: Quantstamp; Tanggal: 2021; Scope: Avalanche Bridge (AB) SGX enclave audit; Status: Completed; Source: (MEDIUM) [Quantstamp AB Audit, https://quantstamp.com/audits/avalanche-bridge]
+- Auditor: Sigma Prime; Tanggal: 2022; Scope: AvalancheGo consensus fuzzing dan property-based testing; Status: Completed; Source: (MEDIUM) [Sigma Prime Avalanche, https://sigmaprime.io/avalanche.html]
+- Auditor: Ackee Blockchain; Tanggal: 2023; Scope: HyperSDK core components audit; Status: Completed; Source: (MEDIUM) [Ackee HyperSDK Audit, https://ackeeblockchain.com/audits/hypersdk]
+
+Technical Upgrade History
+- Tanggal: 2021-04; Nama Upgrade: Apricot (v1.4.x); Deskripsi Singkat: Aktifkan C-Chain fee market (EIP-1559 style), optimasi state sync, perbaikan X-Chain performance; Status: Completed (HIGH) [GitHub AvalancheGo v1.4, https://github.com/ava-labs/avalanchego/releases/tag/v1.4.0]
+- Tanggal: 2021-08; Nama Upgrade: Banff (v1.5.x); Deskripsi Singkat: Peningkatan P-Chain staking/validator set handling, optimasi database, persiapan Subnet; Status: Completed (HIGH) [GitHub AvalancheGo v1.5, https://github.com/ava-labs/avalanchego/releases/tag/v1.5.0]
+- Tanggal: 2022-03; Nama Upgrade: Cortina (v1.10.x); Deskripsi Singkat: Performa P-Chain signifikan, optimasi state sync C-Chain, fee market improvement, fondasi AWM/Teleporter; Status: Completed (HIGH) [Ava Labs Blog Cortina, https://www.avalabs.org/blog/cortina-upgrade-mainnet]
+- Tanggal: 2022-03; Nama Upgrade: AWM Mainnet Activation; Deskripsi Singkat: Avalanche Warp Messaging live di Primary Network, mengaktifkan BLS multi-sig cross-chain messaging; Status: Completed (HIGH) [Docs AWM, https://docs.avax.network/docs/specifications/avalanche-warp-messaging]
+- Tanggal: 2023-09; Nama Upgrade: Teleporter Mainnet Activation; Deskripsi Singkat: Standar messaging generik generasi baru live, menggantikan AWM, dukungan cross-VM payload; Status: Completed (HIGH) [Docs Teleporter, https://docs.avax.network/docs/specifications/teleporter]
+- Tanggal: 2023-09; Nama Upgrade: HyperSDK Mainnet / v1.11.x; Deskripsi Singkat: Dukungan HyperSDK VM di Primary Network, Subnet pertama high-performance live (Beam); Status: Completed (HIGH) [GitHub AvalancheGo v1.11, https://github.com/ava-labs/avalanchego/releases/tag/v1.11.0]
+- Tanggal: 2024-03; Nama Upgrade: Durango (v1.12.x); Deskripsi Singkat: Peningkatan P-Chain validator set scaling, optimasi database RocksDB, persiapan Etna upgrade; Status: Completed (HIGH) [GitHub AvalancheGo v1.12, https://github.com/ava-labs/avalanchego/releases/tag/v1.12.0]
+- Tanggal: 2024-06; Nama Upgrade: Etna (v1.13.x); Deskripsi Singkat: Peningkatan C-Chain performance (batch processing), P-Chain signature aggregation, Teleporter enhancements; Status: Completed (HIGH) [GitHub AvalancheGo v1.13, https://github.com/ava-labs/avalanchego/releases/tag/v1.13.0]
+
+Current Technical Stack
+- Node Client: AvalancheGo (Golang) — binary utama untuk validator dan RPC node (HIGH) [GitHub AvalancheGo, https://github.com/ava-labs/avalanchego]
+- EVM Execution: Coreth (Geth fork) — embedded di AvalancheGo sebagai plugin VM untuk C-Chain (HIGH) [GitHub Coreth, https://github.com/ava-labs/coreth]
+- Custom VM Framework: HyperSDK (Rust) — untuk Subnet high-performance non-EVM (HIGH) [GitHub HyperSDK, https://github.com/ava-labs/hypersdk]
+- Subnet EVM: Subnet-EVM (Go) — template deploy Subnet berbasis EVM dengan kustomisasi (HIGH) [GitHub Subnet-EVM, https://github.com/ava-labs/subnet-evm]
+- SDKs: avalanchejs (TypeScript), avalanchego-go-sdk (Go), avalanche-py (Python) (HIGH) [GitHub avalanchejs, https://github.com/ava-labs/avalanchejs]
+- Wallet: Core Wallet (TypeScript/React Native untuk mobile, Rust/WASM untuk cryptography) (HIGH) [GitHub Core, https://github.com/ava-labs/core]
+- Managed Infra: AvaCloud (Kubernetes, Docker, Terraform, AWS/GCP/Azure) — SaaS platform untuk Subnet (HIGH) [AvaCloud Docs, https://docs.avacloud.io/]
+- Indexing: The Graph (Graph Node, PostgreSQL, IPFS) untuk C-Chain dan Subnet (HIGH) [The Graph Docs, https://thegraph.com/docs/en/developing/supported-networks/avalanche/]
+- Explorer: Snowtrace (Blockscout fork), Avascan (custom Go/React) (HIGH) [Snowtrace GitHub, https://github.com/blockscout/blockscout; Avascan, https://avascan.info/]
+- CI/CD: GitHub Actions, Docker, Kubernetes (untuk AvaCloud dan node deployment) (HIGH) [GitHub AvalancheGo Actions, https://github.com/ava-labs/avalanchego/actions]
+- Cryptography: BLS signatures (blst library), secp256k1, Ed25519 (untuk validator identity) (HIGH) [AvalancheGo Crypto Packages, https://github.com/ava-labs/avalanchego/tree/master/crypto]
+
+Known Technical Limitations
+- Tidak Ada Slashing: Hanya uptime penalty; validator berperilaku jahat (double-sign, equivocation) tidak kehilangan stake, hanya tidak mendapat reward (HIGH) [Docs Staking Penalties, https://docs.avax.network/docs/nodes/validate/overview#penalties]
+- X-Chain Non-Programmable: Tidak mendukung smart contract, hanya asset operations (transfer, mint, NFT sederhana via script) (HIGH) [Docs X-Chain Limitations, https://docs.avax.network/docs/learn/platform/exchange-chain#limitations]
+- C-Chain Tidak Fully EVM-Equivalent: Precompile berbeda (native AVAX transfer, staking, AWM/Teleporter), gas model berbeda (base fee burn + dynamic), block time ~1-2 detik vs 12 detik Ethereum (HIGH) [Docs C-Chain Differences, https://docs.avax.network/docs/learn/platform/contract-chain#differences-from-ethereum]
+- Subnet Validator Overhead: Validator harus menjalankan node Primary Network + node per Subnet yang divalidasi; resource intensif untuk banyak Subnet (HIGH) [Docs Subnet Validation Costs, https://docs.avax.network/docs/learn/subnets/validation#hardware-requirements]
+- Cross-Chain Atomicity Tertinggal: AWM/Teleporter menyediakan messaging tapi tidak atomic execution (seperti atomic composability di single chain); memerlukan pattern seperti async/await atau escrow (HIGH) [Docs Teleporter Limitations, https://docs.avax.network/docs/specifications/teleporter#limitations]
+- State Bloat P-Chain: Metadata Subnet dan validator set growth meningkatkan state size P-Chain, mempengaruhi sync time validator baru (MEDIUM) [Ava Labs Blog Cortina, https://www.avalabs.org/blog/cortina-upgrade-mainnet]
+- Bridge Risiko Eksternal: Avalanche Bridge (AB) bergantung pada Intel SGX trust assumption; LayerZero/Wormhole/CCIP memiliki model keamanan terpisah yang tidak dikontrol Avalanche (HIGH) [Ava Labs Bridge Security, https://www.avalabs.org/bridge-security]
+
+Official Technical Resources
+- Documentation: https://docs.avax.network/
+- GitHub Organization: https://github.com/ava-labs
+- Developer Docs (Build): https://docs.avax.network/docs/build
+- SDK (avalanchejs): https://github.com/ava-labs/avalanchejs
+- API Reference (RPC): https://docs.avax.network/docs/api
+- Whitepaper: https://www.avax.network/whitepaper
+- Research Papers (IC3): https://www.initc3.org/research/avalanche
+- AvalancheGo Specs: https://github.com/ava-labs/avalanchego/tree/master/docs/specifications
+- HyperSDK Docs: https://docs.avax.network/docs/hypersdk
+- Teleporter Spec: https://docs.avax.network/docs/specifications/teleporter
+- AWM Spec: https://docs.avax.network/docs/specifications/avalanche-warp-messaging
+- Subnet-EVM Repo: https://github.com/ava-labs/subnet-evm
+- Core Wallet Repo: https://github.com/ava-labs/core
+- AvaCloud Docs: https://docs.avacloud.io/
+
+Summary
+Architecture: Multi-chain Heterogen (Primary Network: X-Chain DAG, P-Chain Linear, C-Chain EVM) + Sovran Subnet Framework (L1s) + Native Cross-chain Messaging (AWM/Teleporter) + External Bridge Integration
+Core Components: X-Chain, P-Chain, C-Chain, AvalancheGo, Coreth, AWM, Teleporter, HyperSDK, Subnet-EVM, Core Wallet, AvaCloud, Validator Set (~1.300+), Snowtrace/Avascan
+Audit Count: 6+ auditor independen (Halborn, Trail of Bits, CertiK, Quantstamp, Sigma Prime, Ackee) dengan multiple reports berkelanjutan 2020-2024
+Major Upgrade Count: 8 major network upgrades (Apricot, Banff, Cortina, AWM Activation, Teleporter Activation, HyperSDK/Mainnet v1.11, Durango, Etna) + ongoing Subnet VM deployments
+
+Open Threads
+- Spesifikasi teknis lengkap slashing mechanism (jika direncanakan) belum dipublikasikan resmi; hanya uptime penalty yang terdokumentasi
+- Detail implementasi "Etna" upgrade (v1.13.x) C-Chain batch processing dan P-Chain signature aggregation belum terdokumentasi sepenuhnya di specs resmi
+- HyperSDK production readiness untuk non-gaming use case (DeFi, enterprise) masih early stage; dokumentasi best practices terbatas
+- Teleporter cross-VM message format standardization untuk non-EVM VM (HyperSDK, SpacesVM) masih berkembang; compatibility matrix belum final
+- Subnet-EVM precompile registry dan gas metering untuk custom precompile belum terdokumentasi terpusat
+- AvalancheGo database migration path (RocksDB ke alternatif) untuk state bloat mitigation P-Chain masih diskusi internal
+- Formal verification status untuk konsensus Avalanche/Snowman core logic (Trail of Bits fuzzing ≠ formal proof)
+- Core Wallet mobile (iOS/Android) secure enclave integration untuk key management belum terdokumentasi detail
+- AvaCloud validator orchestration internals (Kubernetes operator, auto-scaling) proprietary, tidak open source
+- X-Chain UTXO model limitations untuk complex asset logic (seperti ERC-20 approvals) tidak ada roadmap resmi untuk extend
+- P-Chain validator set scaling beyond ~2.000 validator (current cap implicit via stake minimum) belum ada proposal teknis resmi
+- Interoperability dengan Ethereum L2 (Arbitrum, Optimism, Base) via native bridge vs third-party (LayerZero/Wormhole) trade-off belum di-analisis resmi Avalanche Labs

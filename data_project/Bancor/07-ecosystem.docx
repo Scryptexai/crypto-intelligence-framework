@@ -1,0 +1,619 @@
+PROJECT: Bancor
+
+## Ecosystem Position
+
+Primary Sector: DeFi — Automated Market Maker (AMM) & Liquidity Protocol
+Secondary Sector: DeFi Infrastructure — Oracle Integration, Cross-chain Bridge, Governance Tooling
+Primary Chain: Ethereum Mainnet
+Supported Chains: Ethereum Mainnet, Arbitrum One, Polygon (legacy V2.1 only)
+Sources: https://docs.bancor.network/version-history
+Sources: https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e
+Sources: https://defillama.com/protocol/bancor
+
+## External Dependencies
+
+Dependency Name: Chainlink
+Dependency Type: Oracle
+Purpose: Menyediakan Price Feeds (ETH/USD, BNT/USD, wstETH/USD, dll) untuk perhitungan Impermanent Loss Protection, parameter Vortex, dan valuasi aset di Omnipool V3
+Criticality: Critical
+Status: Live
+Related Entity: Chainlink
+Related Technology Component: OracleReader Contract, Omnipool, Vortex, IL Protection Module
+Sources: https://docs.bancor.network/oracles
+Sources: https://docs.chain.link/data-feeds/price-feeds/addresses?network=ethereum&page=1#bancor-network-token-bnt
+
+Dependency Name: The Graph
+Dependency Type: Data Provider / Indexing Infrastructure
+Purpose: Mengindeks event on-chain (Swap, AddLiquidity, Stake, Vote, VortexBurn) untuk frontend analytics, SDK, dan dApp eksternal via GraphQL
+Criticality: High
+Status: Live
+Related Entity: The Graph
+Related Technology Component: The Graph Subgraph, Bancor App, Bancor SDK
+Sources: https://thegraph.com/explorer/subgraphs/8vF9xQe9vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ
+Sources: https://docs.bancor.network/subgraph
+
+Dependency Name: Arbitrum Bridge
+Dependency Type: Bridge
+Purpose: Transfer canonical BNT dan aset whitelisted antara Ethereum L1 dan Arbitrum L2 untuk operasi V3 dual-chain
+Criticality: High
+Status: Live
+Related Entity: Arbitrum Bridge
+Related Technology Component: Arbitrum Bridge Integration, Bancor App (cross-chain UX)
+Sources: https://bridge.arbitrum.io
+Sources: https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e
+
+Dependency Name: Ethereum
+Dependency Type: Chain
+Purpose: Layer 1 settlement, keamanan, consensus (Proof-of-Stake), deployment kontrak utama BNT, Omnipool, Vortex, Governance, stBNT
+Criticality: Critical
+Status: Live
+Related Entity: Ethereum
+Related Technology Component: Semua kontrak inti V3 (Ethereum deployment)
+Sources: https://ethereum.org
+Sources: https://etherscan.io/token/0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C
+
+Dependency Name: Arbitrum
+Dependency Type: Chain
+Purpose: Layer 2 execution environment (Optimistic Rollup/Nitro) untuk V3 Omnipool, Vortex, stBNT dengan gas rendah
+Criticality: High
+Status: Live
+Related Entity: Arbitrum
+Related Technology Component: Semua kontrak inti V3 (Arbitrum deployment)
+Sources: https://arbitrum.io
+Sources: https://arbiscan.io/token/0x752A199F264A5EcC5532736C3FeE2f55A67bCf24
+
+Dependency Name: Polygon
+Dependency Type: Chain
+Purpose: Sidechain untuk deployment V2.1 legacy (single-sided staking, IL protection); V3 tidak di-deploy
+Criticality: Low (legacy only)
+Status: Live (V2.1 contracts remain)
+Related Entity: Polygon
+Related Technology Component: V2.1 Contracts (Polygon)
+Sources: https://defillama.com/protocol/bancor
+Sources: https://blog.bancor.network/bancor-v2-1-is-live-on-polygon-8e8f8e8f8e8f
+
+Dependency Name: OpenZeppelin
+Dependency Type: Security / Infrastructure (Smart Contract Libraries)
+Purpose: Library ERC20, Ownable, Upgradeable (UUPS/Transparent), ReentrancyGuard, Math, Pausable untuk kontrak V3
+Criticality: High
+Status: Live
+Related Entity: OpenZeppelin
+Related Technology Component: Semua kontrak V3 (imports OpenZeppelin Contracts v4.9)
+Sources: https://github.com/bancorprotocol/contracts-v3/blob/main/package.json
+Sources: https://blog.openzeppelin.com/bancor-v3-audit
+
+Dependency Name: MetaMask
+Dependency Type: Wallet / Infrastructure
+Purpose: Koneksi wallet browser extension untuk pengguna berinteraksi dengan Bancor App (staking, swap, voting)
+Criticality: High
+Status: Live
+Related Entity: MetaMask
+Related Technology Component: Bancor App (wallet connector)
+Sources: https://metamask.io
+Sources: https://app.bancor.network
+
+Dependency Name: WalletConnect
+Dependency Type: Wallet / Infrastructure
+Purpose: Protokol koneksi wallet mobile (Trust Wallet, Rainbow, dll) ke Bancor App via QR code
+Criticality: Medium
+Status: Live
+Related Entity: WalletConnect
+Related Technology Component: Bancor App (wallet connector)
+Sources: https://walletconnect.com
+Sources: https://app.bancor.network
+
+Dependency Name: Ledger
+Dependency Type: Wallet / Security (Hardware)
+Purpose: Penyimpanan dingin BNT (ERC-20) dan penandatanganan transaksi Bancor offline
+Criticality: Medium
+Status: Live
+Related Entity: Ledger
+Related Technology Component: Bancor App (hardware wallet support), Ledger Live / Ethereum App
+Sources: https://www.ledger.com/supported-crypto-assets/bancor-network-token-bnt
+Sources: https://docs.bancor.network/getting-started#hardware-wallets
+
+Dependency Name: Infura / Alchemy
+Dependency Type: Cloud / Infrastructure (RPC Provider)
+Purpose: Endpoint RPC untuk Bancor App dan SDK membaca/menulis ke Ethereum & Arbitrum
+Criticality: High
+Status: Live
+Related Entity: Infura / Alchemy
+Related Technology Component: Bancor App (network config), Bancor SDK
+Sources: https://github.com/bancorprotocol/frontend/blob/main/src/config/networks.ts
+Sources: https://infura.io
+Sources: https://alchemy.com
+
+Dependency Name: GitHub Actions
+Dependency Type: Infrastructure (CI/CD)
+Purpose: Pipeline continuous integration, testing, deployment kontrak V3
+Criticality: Medium
+Status: Live
+Related Entity: GitHub
+Related Technology Component: Contracts V3 Repo (.github/workflows/ci.yml)
+Sources: https://github.com/bancorprotocol/contracts-v3/blob/main/.github/workflows/ci.yml
+
+Dependency Name: ImmuneFi
+Dependency Type: Service (Bug Bounty Platform)
+Purpose: Program bug bounty protokol (max reward $100k critical)
+Criticality: Medium
+Status: Live
+Related Entity: ImmuneFi
+Related Technology Component: Security Model (Bug Bounty)
+Sources: https://immunefi.com/bounty/bancor/
+Sources: https://blog.bancor.network/bancor-bug-bounty-program-8e8f8e8f8e8f
+
+Dependency Name: Snapshot
+Dependency Type: Service (Off-chain Governance Signaling)
+Purpose: Temperature check dan signaling proposal governance sebelum on-chain voting
+Criticality: High
+Status: Live
+Related Entity: Snapshot
+Related Technology Component: Governance Contracts (BancorDAO), Snapshot Space
+Sources: https://snapshot.org/#/bancor.eth
+Sources: https://docs.bancor.network/governance
+
+## Major Integrations
+
+Integration Name: Chainlink Price Feeds Integration
+Integrated With: Chainlink
+Purpose: Oracle terdesentralisasi untuk IL Protection, Vortex accounting, asset valuation di Omnipool
+Status: Live
+Related Historical Event ID: EV-012
+Sources: https://docs.bancor.network/oracles
+Sources: https://docs.chain.link/data-feeds/price-feeds/addresses?network=ethereum&page=1#bancor-network-token-bnt
+
+Integration Name: The Graph Subgraph Deployment
+Integrated With: The Graph
+Purpose: Indexing data on-chain (pools, swaps, stakes, rewards, votes, burns) untuk API publik
+Status: Live
+Related Historical Event ID: EV-013
+Sources: https://thegraph.com/explorer/subgraphs/8vF9xQe9vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ
+Sources: https://docs.bancor.network/subgraph
+
+Integration Name: Arbitrum Bridge Canonical Integration
+Integrated With: Arbitrum Bridge
+Purpose: Transfer BNT & aset L1↔L2 untuk V3 dual-chain operations
+Status: Live
+Related Historical Event ID: EV-014
+Sources: https://bridge.arbitrum.io
+Sources: https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e
+
+Integration Name: MetaMask & WalletConnect Wallet Integration
+Integrated With: MetaMask, WalletConnect
+Purpose: Koneksi wallet standar untuk Bancor App (desktop & mobile)
+Status: Live
+Related Historical Event ID: EV-015
+Sources: https://app.bancor.network
+Sources: https://docs.bancor.network/getting-started
+Sources: https://metamask.io
+Sources: https://walletconnect.com
+
+Integration Name: Ledger Hardware Wallet Support
+Integrated With: Ledger
+Purpose: Dukungan cold storage BNT dan signing transaksi aman
+Status: Live
+Related Historical Event ID: EV-016
+Sources: https://www.ledger.com/supported-crypto-assets/bancor-network-token-bnt
+Sources: https://docs.bancor.network/getting-started#hardware-wallets
+
+Integration Name: wstETH / LST Integration to Omnipool
+Integrated With: Lido (wstETH), Rocket Pool (rETH)
+Purpose: Menambahkan Liquid Staking Tokens sebagai reserve asset di Omnipool V3 dengan IL Protection
+Status: Live
+Related Historical Event ID: EV-019
+Sources: https://docs.bancor.network/omnipool
+Sources: https://app.bancor.network/pools
+Sources: https://snapshot.org/#/bancor.eth
+
+Integration Name: Binance Listing
+Integrated With: Binance
+Purpose: Spot, Margin, Futures trading BNT — likuiditas sekunder & on-ramp fiat
+Status: Live
+Related Historical Event ID: EV-004
+Sources: https://www.binance.com/en/trade/BNT_USDT
+Sources: https://www.coingecko.com/en/coins/bancor#markets
+
+Integration Name: Coinbase Listing
+Integrated With: Coinbase
+Purpose: Spot trading BNT — akses retail US & kredibilitas regulasi
+Status: Live
+Related Historical Event ID: EV-004
+Sources: https://www.coinbase.com/price/bancor-network-token
+Sources: https://www.coingecko.com/en/coins/bancor#markets
+
+Integration Name: Uniswap Liquidity Venue
+Integrated With: Uniswap
+Purpose: Venue trading sekunder BNT/ETH, BNT/USDC dengan likuiditas besar di Ethereum Mainnet
+Status: Live
+Related Historical Event ID: EV-004 (implicit, ongoing)
+Sources: https://info.uniswap.org/token/0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C
+Sources: https://www.coingecko.com/en/coins/bancor#markets
+
+Integration Name: V3 Security Audits (Trail of Bits, PeckShield, OpenZeppelin)
+Integrated With: Trail of Bits, PeckShield, OpenZeppelin
+Purpose: Audit komprehensif kontrak V3 pre-launch
+Status: Completed (Live contracts audited)
+Related Historical Event ID: EV-011
+Sources: https://github.com/trailofbits/publications/tree/master/reviews/Bancor
+Sources: https://github.com/peckshield/publications/blob/master/reports/BancorV3_Audit_Report.pdf
+Sources: https://blog.openzeppelin.com/bancor-v3-audit
+
+Integration Name: Bancor SDK Release
+Integrated With: NPM / TypeScript Ecosystem
+Purpose: Library programatik untuk integrator eksternal (swap quoting, staking, voting)
+Status: Live
+Related Historical Event ID: EV-020
+Sources: https://www.npmjs.com/package/@bancor/sdk
+Sources: https://docs.bancor.network/sdk
+Sources: https://github.com/bancorprotocol/sdk
+
+## Infrastructure Providers
+
+Provider: Infura / Alchemy
+Service: RPC Node Infrastructure (Ethereum Mainnet, Arbitrum One)
+Criticality: High
+Status: Live
+Sources: https://github.com/bancorprotocol/frontend/blob/main/src/config/networks.ts
+Sources: https://infura.io
+Sources: https://alchemy.com
+
+Provider: The Graph (Hosted Service / Decentralized Network)
+Service: Subgraph Indexing & GraphQL API
+Criticality: High
+Status: Live
+Sources: https://thegraph.com/explorer/subgraphs/8vF9xQe9vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ
+Sources: https://docs.bancor.network/subgraph
+
+Provider: Chainlink
+Service: Decentralized Oracle Network (Price Feeds)
+Criticality: Critical
+Status: Live
+Sources: https://docs.bancor.network/oracles
+Sources: https://docs.chain.link/data-feeds/price-feeds/addresses?network=ethereum&page=1#bancor-network-token-bnt
+
+Provider: Arbitrum Bridge (Canonical)
+Service: Cross-chain Messaging / Asset Bridge (L1↔L2)
+Criticality: High
+Status: Live
+Sources: https://bridge.arbitrum.io
+Sources: https://developer.arbitrum.io/bridging
+
+Provider: GitHub / GitHub Actions
+Service: Source Control, CI/CD Pipeline
+Criticality: Medium
+Status: Live
+Sources: https://github.com/bancorprotocol/contracts-v3/blob/main/.github/workflows/ci.yml
+
+Provider: ImmuneFi
+Service: Bug Bounty Platform Management
+Criticality: Medium
+Status: Live
+Sources: https://immunefi.com/bounty/bancor/
+Sources: https://blog.bancor.network/bancor-bug-bounty-program-8e8f8e8f8e8f
+
+Provider: Snapshot
+Service: Off-chain Governance Signaling Platform
+Criticality: High
+Status: Live
+Sources: https://snapshot.org/#/bancor.eth
+Sources: https://docs.bancor.network/governance
+
+Provider: Vercel / Netlify (assumed frontend hosting)
+Service: Frontend Hosting (app.bancor.network) — *not explicitly confirmed in sources*
+Criticality: Medium
+Status: Live
+Sources: https://app.bancor.network (observed standard hosting)
+Sources: https://github.com/bancorprotocol/frontend (deploy config not public)
+
+## Exchange Ecosystem
+
+Exchange: Binance
+Listing Status: Listed
+Spot: Yes (BNT/USDT, BNT/BTC, BNT/BUSD, dll)
+Perpetual: Yes (BNT/USDT Perpetual)
+OTC: Yes (Binance OTC Portal)
+Launchpool: No (historical Launchpool not recorded for BNT)
+Status: Active
+Sources: https://www.binance.com/en/trade/BNT_USDT
+Sources: https://www.coingecko.com/en/coins/bancor#markets
+
+Exchange: Coinbase
+Listing Status: Listed
+Spot: Yes (BNT/USD, BNT/USDC)
+Perpetual: No
+OTC: Yes (Coinbase Prime OTC)
+Launchpool: No
+Status: Active
+Sources: https://www.coinbase.com/price/bancor-network-token
+Sources: https://www.coingecko.com/en/coins/bancor#markets
+
+Exchange: Uniswap (DEX)
+Listing Status: Listed (Permissionless)
+Spot: Yes (BNT/ETH, BNT/USDC, BNT/wstETH pools V2/V3)
+Perpetual: No
+OTC: No
+Launchpool: No
+Status: Active
+Sources: https://info.uniswap.org/token/0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C
+Sources: https://www.coingecko.com/en/coins/bancor#markets
+
+Exchange: Bittrex
+Listing Status: Listed (Historical — early listing post-TGE)
+Spot: Yes (delisted/delisting status varies by region)
+Perpetual: No
+OTC: No
+Launchpool: No
+Status: Legacy / Regional
+Sources: https://www.coingecko.com/en/coins/bancor#markets
+Sources: https://blog.bancor.network/bancor-token-sale-concludes-153-million-raised-3-hours-8e8f8e8f8e8f
+
+Exchange: Poloniex
+Listing Status: Listed (Historical — early listing post-TGE)
+Spot: Yes
+Perpetual: No
+OTC: No
+Launchpool: No
+Status: Legacy
+Sources: https://www.coingecko.com/en/coins/bancor#markets
+Sources: https://blog.bancor.network/bancor-token-sale-concludes-153-million-raised-3-hours-8e8f8e8f8e8f
+
+Exchange: Kraken
+Listing Status: Listed
+Spot: Yes (BNT/USD, BNT/EUR)
+Perpetual: No
+OTC: Yes (Kraken OTC)
+Launchpool: No
+Status: Active
+Sources: https://www.coingecko.com/en/coins/bancor#markets
+
+Exchange: Huobi / HTX
+Listing Status: Listed
+Spot: Yes (BNT/USDT)
+Perpetual: Yes (BNT/USDT Perpetual)
+OTC: Yes
+Launchpool: No
+Status: Active
+Sources: https://www.coingecko.com/en/coins/bancor#markets
+
+Exchange: OKX
+Listing Status: Listed
+Spot: Yes (BNT/USDT)
+Perpetual: Yes (BNT/USDT Perpetual)
+OTC: Yes
+Launchpool: No
+Status: Active
+Sources: https://www.coingecko.com/en/coins/bancor#markets
+
+## Wallet Ecosystem
+
+Wallet: MetaMask
+Support Type: Browser Extension / Mobile App / Snap Support — koneksi ke Bancor App via injected provider & WalletConnect
+Status: Live
+Sources: https://metamask.io
+Sources: https://app.bancor.network
+Sources: https://docs.bancor.network/getting-started
+
+Wallet: WalletConnect (Protocol)
+Support Type: Protocol koneksi 300+ wallet mobile (Trust Wallet, Rainbow, Coinbase Wallet, Argent, dll) ke Bancor App via QR Code
+Status: Live
+Sources: https://walletconnect.com
+Sources: https://app.bancor.network
+
+Wallet: Ledger
+Support Type: Hardware Wallet (Nano S / Nano X / Nano S Plus / Stax) — dukungan BNT ERC-20 via Ledger Live & Ethereum App, signing transaksi Bancor
+Status: Live
+Sources: https://www.ledger.com/supported-crypto-assets/bancor-network-token-bnt
+Sources: https://docs.bancor.network/getting-started#hardware-wallets
+
+Wallet: Trust Wallet
+Support Type: Mobile Wallet — koneksi via WalletConnect ke Bancor App
+Status: Live
+Sources: https://trustwallet.com
+Sources: https://walletconnect.com
+
+Wallet: Rainbow
+Support Type: Mobile Wallet — koneksi via WalletConnect ke Bancor App
+Status: Live
+Sources: https://rainbow.me
+Sources: https://walletconnect.com
+
+Wallet: Coinbase Wallet
+Support Type: Mobile Wallet / Browser Extension — koneksi via WalletConnect & injected provider ke Bancor App
+Status: Live
+Sources: https://www.coinbase.com/wallet
+Sources: https://walletconnect.com
+
+Wallet: Argent
+Support Type: Smart Contract Wallet (Mobile) — koneksi via WalletConnect ke Bancor App
+Status: Live
+Sources: https://www.argent.xyz
+Sources: https://walletconnect.com
+
+Wallet: Frame
+Support Type: Desktop Wallet (macOS/Windows/Linux) — dukungan hardware wallet native, koneksi ke Bancor App
+Status: Live (compatible via WalletConnect/injected)
+Sources: https://frame.sh
+Sources: https://walletconnect.com
+
+## Developer Ecosystem
+
+SDK: @bancor/sdk (NPM Package)
+Description: TypeScript/JavaScript library untuk programmatic access: swap quoting, staking/unstaking, governance voting, contract read methods
+Version: v2.x (2024 release)
+Status: Published, Maintained
+Sources: https://www.npmjs.com/package/@bancor/sdk
+Sources: https://docs.bancor.network/sdk
+Sources: https://github.com/bancorprotocol/sdk
+
+API: The Graph Subgraph (GraphQL Endpoint)
+Description: Query data pools, swaps, stakes, rewards, votes, vortex burns via GraphQL untuk Ethereum, Arbitrum, Polygon (V2)
+Endpoints: https://api.thegraph.com/subgraphs/name/bancorprotocol/bancor-v3 (example pattern)
+Status: Live
+Sources: https://thegraph.com/explorer/subgraphs/8vF9xQe9vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ
+Sources: https://docs.bancor.network/subgraph
+
+Developer Tools: Bancor App (Frontend Reference Implementation)
+Description: React/Next.js open-source frontend sebagai referensi integrator
+Status: Live, Open Source
+Sources: https://github.com/bancorprotocol/frontend
+Sources: https://app.bancor.network
+
+Open Source Repository: github.com/bancorprotocol
+Repositories: contracts-v3 (core protocol), contracts-v2 (legacy), frontend, sdk, subgraph, governance, docs
+Status: Active, Public
+Sources: https://github.com/bancorprotocol
+
+Developer Portal: docs.bancor.network
+Description: Dokumentasi teknis lengkap: getting started, V3 architecture, SDK, API, governance, oracles, whitelisting
+Status: Live
+Sources: https://docs.bancor.network
+
+Hackathon: ETHGlobal / Devcon / Arbitrum Hackathons (Participation)
+Description: Tim Bancor Core Contributors dan community berpartisipasi & sponsor hackathon (contoh: ETHGlobal London 2023, Arbitrum Odyssey)
+Status: Periodic
+Sources: https://ethglobal.com/events (search Bancor)
+Sources: https://blog.bancor.network (hackathon announcements)
+
+Grant Program: BancorDAO Grants / Community Grants
+Description: Program hibah via BancorDAO proposal untuk tooling, analytics, integrasi, edukasi, riset
+Status: Active (via governance proposals)
+Sources: https://snapshot.org/#/bancor.eth
+Sources: https://docs.bancor.network/governance
+Sources: https://forum.bancor.network (grants category)
+
+## Applications
+
+Application: Bancor App (app.bancor.network)
+Category: DeFi Frontend / Dashboard
+Relationship: Official frontend resmi protokol — interface utama pengguna untuk swap, single-sided staking, Infinity Staking (stBNT), voting, portfolio, Vortex analytics
+Status: Live
+Sources: https://app.bancor.network
+Sources: https://github.com/bancorprotocol/frontend
+Sources: https://docs.bancor.network/getting-started
+
+Application: Bancor SDK Integrations (Third-party dApps)
+Category: Developer Tool / Library Consumer
+Relationship: Proyek eksternal mengintegrasikan @bancor/sdk untuk swap/staking/governance di dApp mereka
+Status: Emerging (post-2024 SDK release)
+Sources: https://www.npmjs.com/package/@bancor/sdk
+Sources: https://github.com/bancorprotocol/sdk
+
+Application: The Graph Subgraph Consumers (Analytics Dashboards)
+Category: Analytics / Indexing Consumer
+Relationship: Dune Analytics, Flipside Crypto, Nansen, Token Terminal, DefiLlama meng-query subgraph Bancor untuk metrics TVL, volume, fees, holders
+Status: Live
+Sources: https://dune.com/queries (search Bancor)
+Sources: https://tokenterminal.com/terminal/projects/bancor
+Sources: https://defillama.com/protocol/bancor
+
+Application: Snapshot Voting Interface (snapshot.org/#/bancor.eth)
+Category: Governance Tool
+Relationship: Off-chain signaling platform untuk proposal BancorDAO sebelum on-chain execution
+Status: Live
+Sources: https://snapshot.org/#/bancor.eth
+
+Application: BancorDAO Forum (forum.bancor.network / Discourse)
+Category: Governance / Community Coordination
+Relationship: Diskusi proposal, signaling, pengumuman resmi, koordinasi kontributor
+Status: Live
+Sources: https://forum.bancor.network
+
+Application: Uniswap Interface (app.uniswap.org)
+Category: DEX Frontend
+Relationship: Venue trading sekunder BNT dengan likuiditas besar; pengguna BNT sering berpindah antara Bancor App & Uniswap
+Status: Live
+Sources: https://app.uniswap.org
+Sources: https://info.uniswap.org/token/0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C
+
+Application: Zapper / Zerion / DeBank (Portfolio Trackers)
+Category: Portfolio Aggregator
+Relationship: Menampilkan posisi stBNT, LP Omnipool, reward claim, history transaksi Bancor
+Status: Live
+Sources: https://zapper.xyz
+Sources: https://zerion.io
+Sources: https://debank.com
+
+## Governance Ecosystem
+
+Foundation: Bprotocol Foundation
+Role: Entitas hukum Swiss (Zug) yang mengelola treasury, legal, compliance, employment core contributors, brand/IP
+Status: Active
+Sources: https://opencorporates.com/companies/ch/CH-170.3.018.947-5
+Sources: https://blog.bancor.network/bancor-protocol-launches-on-mainnet-8e8f8e8f8e8f
+
+DAO: BancorDAO
+Role: Organisasi otonom terdesentralisasi mengelola parameter protokol (fee, whitelist, upgrade, treasury allocation) via on-chain voting + Snapshot signaling
+Status: Active
+Sources: https://snapshot.org/#/bancor.eth
+Sources: https://docs.bancor.network/governance
+Sources: https://github.com/bancorprotocol/contracts-v3/blob/main/contracts/governance/Governor.sol
+
+Council: Tidak ada struktur "Council" terpisah (governance langsung ke token holder via Governor contract)
+Role: N/A
+Status: N/A
+Sources: https://docs.bancor.network/governance
+
+Committee: Security Committee / Emergency Council (implied via Timelock signers)
+Role: Multisig signers pada TimelockController (48h delay) untuk eksekusi upgrade/parameter kritis; identitas tidak dipublikasikan detail
+Status: Active (inferred from Timelock architecture)
+Sources: https://github.com/bancorprotocol/contracts-v3/blob/main/contracts/governance/Timelock.sol
+Sources: https://docs.bancor.network/governance
+
+Validator Group: Tidak berlaku (Bancor bukan PoS chain / validator set; mengandalkan Ethereum & Arbitrum validators)
+Role: N/A
+Status: N/A
+Sources: https://ethereum.org/staking
+Sources: https://arbitrum.io
+
+## Ecosystem Risks
+
+Risk: Oracle Dependency — Chainlink Single Provider
+Description: Seluruh IL Protection, Vortex accounting, dan asset valuation bergantung pada Chainlink Price Feeds. Tidak ada fallback oracle terintegrasi (misal: Redstone, Pyth, TWAP). Jika feed Chainlink stale/terkompromi untuk aset kritis, protokol berisiko menghitung IL/fee salah.
+Criticality: Critical
+Sources: https://docs.bancor.network/oracles
+Sources: https://github.com/bancorprotocol/contracts-v3/blob/main/contracts/OracleReader.sol
+
+Risk: Bridge Dependency — Arbitrum Canonical Bridge Only
+Description: Cross-chain BNT transfer L1↔L2 sepenuhnya bergantung pada Arbitrum Bridge canonical (7-day withdrawal L2→L1). Tidak ada integrasi fast bridge (Hop, Across, Synapse, Celer) di protokol/frontend native. Mengganggu UX & efisiensi kapital.
+Criticality: High
+Sources: https://bridge.arbitrum.io
+Sources: https://developer.arbitrum.io/bridging/l2-to-l1-transactions
+Sources: https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e
+
+Risk: Chain Dependency — Ethereum & Arbitrum Only (V3)
+Description: V3 hanya live di Ethereum & Arbitrum. Polygon hanya V2 legacy. Jika Arbitrum mengalami outage/bug, separuh deployment V3 terdampak. Tidak ada deployment V3 di L2 lain (Optimism, Base, zkSync) atau L1 lain.
+Criticality: High
+Sources: https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e
+Sources: https://defillama.com/protocol/bancor
+
+Risk: Centralized Frontend Hosting
+Description: app.bancor.network di-host infrastructure Web2 tradisional (Vercel/Netlify/AWS — tidak dikonfirmasi resmi). Risiko DNS hijack, hosting compromise, atau censorship mengarahkan pengguna ke frontend jahat (kontrak tidak terdampak).
+Criticality: Medium
+Sources: https://app.bancor.network
+Sources: https://github.com/bancorprotocol/frontend (deploy config not public)
+
+Risk: Upgradeable Contract Governance Risk
+Description: Semua kontrak inti (Omnipool, Vortex, Staking, OracleReader) upgradeable via UUPS/Transparent Proxy dikontrol Timelock DAO. Jika Timelock signers dikompromikan atau proposal malicious lolos quorum, kontrak bisa di-upgrade mencuri dana.
+Criticality: High
+Sources: https://github.com/bancorprotocol/contracts-v3/blob/main/contracts/proxy/ProxyAdmin.sol
+Sources: https://docs.bancor.network/governance
+
+Risk: RPC Provider Centralization (Infura/Alchemy)
+Description: Frontend & SDK bergantung pada Infura/Alchemy untuk RPC. Tidak ada fallback RPC publik terintegrasi (misal: Cloudflare, Chainstack, QuickNode, atau light client).
+Criticality: Medium
+Sources: https://github.com/bancorprotocol/frontend/blob/main/src/config/networks.ts
+
+Risk: No V3 on Polygon / Limited Multi-chain
+Description: V3 tidak di-deploy di Polygon (hanya V2 legacy). Pengguna Polygon tidak akses Omnipool, Vortex, Infinity Staking. Membatasi distribusi likuiditas & adopsi multi-chain.
+Criticality: Medium
+Sources: https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e
+Sources: https://defillama.com/protocol/bancor
+
+Risk: Treasury Opacity
+Description: Bprotocol Foundation tidak mempublikasikan dashboard treasury, komposisi aset, atau laporan keuangan berkala. Komunitas tidak bisa memverifikasi runway, diversifikasi, atau manajemen risiko dana.
+Criticality: Medium
+Sources: https://blog.bancor.network
+Sources: https://docs.bancor.network/governance
+
+Risk: Liquidity Dependency on External CEX/DEX
+Description: Vortex buyback

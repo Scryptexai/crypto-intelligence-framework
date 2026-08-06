@@ -1,0 +1,217 @@
+PROJECT: Bancor
+
+## Core Insights
+
+Insight 1: Bancor adalah pionir AMM on-chain yang mengubah model bonding curve V1 (2017) ke pool-based V2 (2020) lalu ke single Omnipool V3 (2021) — menunjukkan evolusi arsitektur responsif terhadap keterbatasan teknis dan pasar【Phase 3 — EV-001】【Phase 3 — EV-005】【Phase 3 — EV-010】【Phase 4 — Technical Upgrade History】 (HIGH)
+
+Insight 2: Tokenomics beralih dari inflationary (V2/V2.1 mint BNT untuk reward & IL protection) ke deflationary via Vortex buyback-and-burn (V3) — model value capture terikat pada protocol fees bukan emisi token【Phase 6 — Inflation/Deflation】【Phase 4 — Core Components: Vortex】【Phase 3 — EV-010】 (HIGH)
+
+Insight 3: Single-sided staking dengan IL protection 100% setelah 100 hari adalah diferensiasi unik Bancor sejak V2.1 (2020) — tidak ada AMM mayor lain yang menawarkan proteksi IL penuh untuk aset volatil tanpa pairing manual【Phase 3 — EV-007】【Phase 4 — Core Components: Impermanent Loss Protection Module】【Phase 8 — Narrative Position: Impermanent Loss Protection】 (HIGH)
+
+Insight 4: Governance bertahap dari centralized foundation (2017-2020) ke BancorDAO hybrid (Snapshot + on-chain Timelock 48h) — parameter fee, whitelist, upgrade dikontrol token holder via proposal【Phase 3 — EV-009】【Phase 3 — EV-017】【Phase 3 — EV-018】【Phase 4 — Security Model: TimelockController】【Phase 6 — Governance】 (HIGH)
+
+Insight 5: Treasury dan financial reporting sepenuhnya opaque — Bprotocol Foundation tidak mempublikasikan ukuran, komposisi, wallet address, atau laporan keuangan berkala meskipun mengelola $153M ICO proceeds【Phase 5 — Treasury】【Phase 5 — Financial Risk: Treasury Concentration & Opacity】【Phase 7 — Ecosystem Risks: Treasury Opacity】 (HIGH)
+
+Insight 6: Ketergantungan kritis pada single oracle provider (Chainlink) tanpa fallback terintegrasi — seluruh IL protection, Vortex accounting, asset valuation bergantung pada Chainlink Price Feeds via OracleReader【Phase 4 — Core Components: OracleReader】【Phase 7 — External Dependencies: Chainlink】【Phase 7 — Ecosystem Risks: Oracle Dependency】 (HIGH)
+
+Insight 7: Cross-chain strategy terbatas pada canonical Arbitrum Bridge (7-day withdrawal L2→L1) — tidak ada integrasi fast bridge (Hop, Across, Synapse) meski V3 deployed di Ethereum + Arbitrum sejak 2021【Phase 3 — EV-014】【Phase 4 — Architecture: Cross-chain】【Phase 7 — External Dependencies: Arbitrum Bridge】【Phase 7 — Ecosystem Risks: Bridge Dependency】 (HIGH)
+
+Insight 8: Developer ecosystem minimal hingga 2024 — SDK resmi (@bancor/sdk v2) baru dirilis 7 tahun post-launch; tidak ada developer tools, hackathon program, atau grant program terstruktur sebelum 2024【Phase 3 — EV-020】【Phase 7 — Developer Ecosystem】【Phase 4 — Current Tech Stack: SDK】 (HIGH)
+
+Insight 9: Security model post-exploit (Juli 2020, $23.5M loss) menerapkan defense-in-depth: multi-audit (Trail of Bits, PeckShield, OpenZeppelin), UUPS proxy DAO-controlled, Timelock 48h, bug bounty $100k, pausable contracts — zero major exploit V3 sejak launch Oktober 2021【Phase 3 — EV-006】【Phase 3 — EV-011】【Phase 4 — Security Model】【Phase 4 — Audit History】 (HIGH)
+
+Insight 10: Market position niche — Bancor menguasai segmen "single-sided staking + IL protection" namun market share DEX TVL <0.5% dan volume <0.1% vs Uniswap; adopsi terebut pada LST integration (wstETH/rETH 2024) sebagai pivot strategis【Phase 8 — Market Share】【Phase 8 — Competitor Landscape】【Phase 3 — EV-019】【Phase 8 — Narrative Position: LST/Restaking Secondary】 (HIGH)
+
+## Strategic Principles
+
+Principle 1: Security before growth — pasca eksploit 2020, V3 mengadopsi multi-audit pre-launch, upgradeable proxy DAO-controlled, Timelock 48h, bug bounty ImmuneFi $100k sebagai prasyarat launch【Phase 3 — EV-011】【Phase 4 — Security Model】【Phase 4 — Audit History】 (HIGH)
+
+Principle 2: Tokenomics aligned with protocol usage — V3 menghentikan inflasi reward, mengganti dengan Vortex burn dari swap fees + real yield ke stBNT holders; value capture sebanding volume trading【Phase 6 — Inflation/Deflation】【Phase 4 — Core Components: Vortex, Infinity Staking】【Phase 3 — EV-010】 (HIGH)
+
+Principle 3: Progressive decentralization — foundation mendirikan DAO Q4 2020, transfer kendali parameter (fee, whitelist, upgrade) ke token holder via GovernorAlpha + Timelock; V2 deprecation dieksekusi via DAO proposal 2022【Phase 3 — EV-009】【Phase 3 — EV-017】【Phase 6 — Governance】【Phase 4 — Security Model: TimelockController】 (HIGH)
+
+Principle 4: Single-sided UX as core differentiator — sejak V2.1 (2020) fokus pada "deposit one asset, protocol provides BNT counterparty" + IL protection; V3 Omnipool memperluas ke multi-asset single pool【Phase 3 — EV-007】【Phase 3 — EV-010】【Phase 4 — Core Components: Omnipool, Impermanent Loss Protection Module】【Phase 8 — Narrative Position: Single-sided Staking】 (HIGH)
+
+Principle 5: Layer 2 scaling via canonical bridge only — V3 deploy dual-chain Ethereum + Arbitrum Oktober 2021; menggunakan Arbitrum Bridge canonical tanpa fast bridge integration; mengabaikan Optimism, Base, Polygon V3, zkSync【Phase 3 — EV-010】【Phase 3 — EV-014】【Phase 7 — External Dependencies: Arbitrum Bridge】【Phase 8 — Market: Primary Chain】 (MEDIUM)
+
+Principle 6: Oracle minimalism — single provider Chainlink Price Feeds untuk semua kritikal finansial; tidak ada diversifikasi oracle (Pyth, Redstone, TWAP) terintegrasi【Phase 4 — Core Components: OracleReader】【Phase 7 — External Dependencies: Chainlink】【Phase 7 — Ecosystem Risks: Oracle Dependency】 (HIGH)
+
+Principle 7: No external fundraising post-ICO — seluruh pengembangan 2017-2024 didanai dari $153M ICO proceeds (foundation 20%, team 20% vesting, reserve 10%); tidak ada Series A, grant, equity funding tercatat【Phase 5 — Funding History】【Phase 5 — Fundraising Mechanism】【Phase 6 — Distribution】 (HIGH)
+
+## Success Factors
+
+Factor 1: First-mover advantage AMM (V1 Februari 2017) — menarik $153M ICO, membangun brand recognition sebagai pioneer DeFi, mendirikan treasury besar untuk pengembangan jangka panjang【Phase 3 — EV-001】【Phase 3 — EV-002】【Phase 1 — Launch Date Mainnet】【Phase 5 — Funding History: ICO】 (HIGH)
+
+Factor 2: Unique product differentiation: single-sided staking + IL protection — fitur tidak ditawarkan Uniswap, Curve, Balancer; menarik LP risk-averse dan LST holders (wstETH/rETH 2024)【Phase 3 — EV-007】【Phase 3 — EV-019】【Phase 8 — Narrative Position: Impermanent Loss Protection】【Phase 8 — Competitor Landscape】 (HIGH)
+
+Factor 3: Sustainable tokenomics pivot V3 — Vortex deflationary mechanism + real yield stBNT menggantikan inflationary emissions; aligns BNT holders dengan protocol revenue【Phase 6 — Inflation/Deflation】【Phase 4 — Core Components: Vortex, Infinity Staking】【Phase 3 — EV-010】 (HIGH)
+
+Factor 4: Robust security posture post-2020 exploit — multi-audit V3 (Trail of Bits, PeckShield, OpenZeppelin), UUPS proxy DAO-controlled, Timelock 48h, bug bounty $100k; zero major exploit V3 sejak Oktober 2021【Phase 3 — EV-011】【Phase 4 — Audit History】【Phase 4 — Security Model】【Phase 7 — Major Integrations: Security Audits】 (HIGH)
+
+Factor 5: Effective DAO governance execution — proposal V2→V3 migration (2022), parameter Vortex adjustments (2023-2024), LST whitelisting (2024) dieksekusi on-chain via Timelock; terbukti koordinasi kompleks【Phase 3 — EV-017】【Phase 3 — EV-018】【Phase 3 — EV-019】【Phase 6 — Governance】【Phase 7 — Governance Ecosystem】 (HIGH)
+
+Factor 6: Strategic L2 deployment on Arbitrum — early V3 deploy Oktober 2021 capture Arbitrum ecosystem growth; ~30-40% TVL di Arbitrum; gas fees rendah menarik user【Phase 3 — EV-010】【Phase 3 — EV-014】【Phase 7 — External Dependencies: Arbitrum】【Phase 8 — Market: Adoption Metrics TVL】 (HIGH)
+
+Factor 7: Deep CEX liquidity for BNT — listing Binance (spot+perp), Coinbase, Kraken, HTX, OKX menyediakan market depth untuk Vortex buyback dan price discovery【Phase 7 — Exchange Ecosystem】【Phase 8 — Trading Markets】【Phase 5 — Financial Dependencies: External Market Liquidity】 (HIGH)
+
+## Failure Factors
+
+Factor 1: Treasury opacity — tidak ada transparency report, dashboard, wallet label, atau laporan keuangan berkala; komunitas tidak bisa verifikasi runway, diversifikasi, manajemen risiko $153M ICO proceeds【Phase 5 — Treasury】【Phase 5 — Financial Risk: Treasury Concentration & Opacity】【Phase 7 — Ecosystem Risks: Treasury Opacity】 (HIGH)
+
+Factor 2: No V3 deployment on Polygon/Optimism/Base — V3 hanya Ethereum + Arbitrum; Polygon terjebak V2 legacy; melewatkan adopsi DeFi di L2 lain (Optimism TVL >$5B, Base >$2B 2024)【Phase 3 — EV-010】【Phase 4 — Technical Upgrade History: V3 Launch】【Phase 7 — External Dependencies: Polygon】【Phase 7 — Ecosystem Risks: No V3 on Polygon】 (HIGH)
+
+Factor 3: Single oracle dependency (Chainlink) tanpa fallback — risiko systemic jika Chainlink feed stale/terkompromi untuk aset kritis (wstETH, BNT, ETH); tidak ada TWAP, Pyth, Redstone integration【Phase 4 — Core Components: OracleReader】【Phase 7 — External Dependencies: Chainlink】【Phase 7 — Ecosystem Risks: Oracle Dependency】 (HIGH)
+
+Factor 4: Canonical bridge only (7-day withdrawal) — UX buruk untuk cross-chain; tidak ada fast bridge integration (Hop, Across, Synapse) meski 3+ tahun V3 live di Arbitrum【Phase 3 — EV-014】【Phase 4 — Architecture: Cross-chain】【Phase 7 — Ecosystem Risks: Bridge Dependency】 (HIGH)
+
+Factor 5: Developer ecosystem neglect 2017-2023 — SDK resmi baru 2024; tidak ada hackathon program terstruktur, grant program minimal, developer tools minim; ekosistem integrator tertinggal vs Uniswap V4 hooks, Curve DAO【Phase 3 — EV-020】【Phase 7 — Developer Ecosystem】【Phase 4 — Current Tech Stack: SDK】 (HIGH)
+
+Factor 6: Revenue 100% dependent on swap volume — bear market menurunkan fee revenue drastis; tidak ada revenue stream diversifikasi (enterprise, licensing, grant, treasury yield)【Phase 5 — Revenue Model】【Phase 5 — Financial Risk: Revenue Dependency on Swap Volume】【Phase 4 — Core Components: Vortex】 (HIGH)
+
+Factor 7: Centralized frontend hosting risk — app.bancor.network di-host infrastructure Web2 tradisional (Vercel/Netlify/AWS tidak dikonfirmasi); risiko DNS hijack, hosting compromise tanpa IPFS/Fleet/ENS deployment【Phase 7 — Ecosystem Risks: Centralized Frontend Hosting】【Phase 4 — Architecture】【Phase 7 — Infrastructure Providers】 (MEDIUM)
+
+## Decision Framework
+
+Step 1: Observe — Identifikasi keterbatasan teknis/produk/pasar dari versi sebelumnya (V1 bonding curve limitations → V2 pool model; V2 exploit → V3 security redesign; V2 inflation unsustainable → V3 Vortex deflationary)【Phase 3 — EV-001】【Phase 3 — EV-005】【Phase 3 — EV-006】【Phase 3 — EV-010】【Phase 9 — Evolution Pattern】 (HIGH)
+
+Step 2: Evaluate — Riset arsitektur alternatif, audit keamanan, tokenomics modeling, governance design; multi-audit firm untuk validasi independen (Trail of Bits, PeckShield, OpenZeppelin untuk V3)【Phase 3 — EV-011】【Phase 4 — Audit History】【Phase 9 — Technical Decision Pattern: Multi-Audit】 (HIGH)
+
+Step 3: Fund — Gunakan treasury ICO proceeds (foundation 20% allocation) untuk development, audit, operations; tidak mencari external funding; DAO mengontrol parameter fee/revenue allocation post-V3【Phase 5 — Funding History】【Phase 5 — Treasury】【Phase 5 — Fundraising Mechanism】【Phase 6 — Inflation/Deflation】 (HIGH)
+
+Step 4: Develop — Stack baku: Hardhat + ethers.js v6 + TypeScript strict + OpenZeppelin Contracts v4; upgradeable proxy UUPS/Transparent pattern; CI/CD GitHub Actions; testing invariant + fuzzing【Phase 4 — Development Framework】【Phase 4 — Current Tech Stack】【Phase 9 — Technical Decision Pattern: Hardhat Stack】 (HIGH)
+
+Step 5: Launch — Deploy dual-chain simultan (Ethereum + Arbitrum) untuk V3; canonical bridge untuk asset transfer; fee switch on day-1; Vortex active; stBNT staking live; Snapshot + on-chain governance ready【Phase 3 — EV-010】【Phase 3 — EV-014】【Phase 4 — Architecture】【Phase 6 — Major Token Events: V3 Launch】 (HIGH)
+
+Step 6: Govern — BancorDAO proposal → Snapshot signaling → On-chain proposal (quorum) → Timelock 48h → Execute; parameter control (fee split, whitelist, upgrade) fully on-chain; emergency pause via DAO【Phase 3 — EV-009】【Phase 3 — EV-017】【Phase 3 — EV-018】【Phase 4 — Security Model: TimelockController】【Phase 6 — Governance】 (HIGH)
+
+Step 7: Iterate — Parameter adjustments via DAO (Vortex fee split 2023-2024), asset whitelisting (wstETH/rETH 2024), SDK release (2024), grant proposals; no code upgrade needed for economic changes【Phase 3 — EV-018】【Phase 3 — EV-019】【Phase 3 — EV-020】【Phase 9 — Evolution Pattern: Dynamic Parameter Control】 (HIGH)
+
+## Reusable Playbook
+
+Playbook 1: Pivot tokenomics from inflationary to deflationary via fee-burn mechanism — Bancor V3 menghentikan BNT emissions untuk reward/IL protection, mengganti dengan Vortex: swap fees → buyback BNT → burn; stakers mendapat real yield (fee share); DAO mengontrol fee split parameter【Phase 6 — Inflation/Deflation】【Phase 4 — Core Components: Vortex, Infinity Staking】【Phase 3 — EV-010】 (HIGH)
+
+Playbook 2: Progressive decentralization via DAO with Timelock — Mulai centralized foundation → deploy GovernorAlpha + Timelock 48h → transfer parameter control (fee, whitelist, upgrade) → execute major migrations (V2→V3) via DAO proposal → community manages economic parameters ongoing【Phase 3 — EV-009】【Phase 3 — EV-017】【Phase 4 — Security Model: TimelockController】【Phase 6 — Governance】 (HIGH)
+
+Playbook 3: Single-sided liquidity with IL protection as moat — Implement single-sided deposit (user provides asset X, protocol provides counterparty Y from reserves) + time-based IL protection (100% after 100 days) funded by protocol-owned liquidity not token inflation; differentiates vs paired-liquidity AMMs【Phase 3 — EV-007】【Phase 3 — EV-010】【Phase 4 — Core Components: Omnipool, Impermanent Loss Protection Module】【Phase 8 — Narrative Position: Single-sided Staking】 (HIGH)
+
+Playbook 4: Multi-audit pre-launch security standard — Engage 3+ top-tier firms (Trail of Bits, PeckShield, OpenZeppelin) for independent audits; publish reports transparently; remediate critical/high findings before mainnet; follow with bug bounty program (ImmuneFi $100k max)【Phase 3 — EV-011】【Phase 4 — Audit History】【Phase 4 — Security Model: Bug Bounty】【Phase 7 — Major Integrations: Security Audits】 (HIGH)
+
+Playbook 5: L2 deployment via canonical bridge first — Deploy V3 simultaneously on Ethereum L1 + Arbitrum L2; use canonical bridge for asset transfers; accept 7-day withdrawal UX trade-off for security; defer fast bridge integration to later phase【Phase 3 — EV-010】【Phase 3 — EV-014】【Phase 7 — External Dependencies: Arbitrum Bridge】【Phase 8 — Market: Primary Chain】 (MEDIUM)
+
+Playbook 6: Oracle minimalism with single provider — Integrate Chainlink Price Feeds via OracleReader contract for all critical financial calculations (asset valuation, IL protection, burn mechanics); document dependency clearly; monitor feed health; plan fallback as future upgrade【Phase 4 — Core Components: OracleReader】【Phase 7 — External Dependencies: Chainlink】【Phase 7 — Ecosystem Risks: Oracle Dependency】 (HIGH)
+
+Playbook 7: Self-funded development from ICO treasury — Allocate foundation % of token supply at TGE; manage treasury for 7+ years development (V1→V2→V2.1→V3); no external equity/grant fundraising; DAO controls protocol revenue allocation post-launch【Phase 5 — Funding History】【Phase 5 — Treasury】【Phase 5 — Fundraising Mechanism】【Phase 6 — Distribution】 (HIGH)
+
+Playbook 8: LST integration as strategic pivot — Whitelist wstETH/rETH via governance to capture restaking trend; offer single-sided LST staking with IL protection + native ETH staking yield; differentiate vs general AMMs【Phase 3 — EV-019】【Phase 7 — Major Integrations: wstETH/LST】【Phase 8 — Narrative Position: LST/Restaking Secondary】【Phase 8 — Market: Competitor Landscape】 (HIGH)
+
+## Anti-patterns
+
+Anti-pattern 1: Treasury opacity — Foundation mengelola $153M ICO proceeds tanpa transparency report, dashboard, wallet labeling, atau financial statements; komunitas tidak bisa audit runway/diversifikasi; trust assumption tinggi【Phase 5 — Treasury】【Phase 5 — Financial Risk: Treasury Concentration & Opacity】【Phase 7 — Ecosystem Risks: Treasury Opacity】 (HIGH)
+
+Anti-pattern 2: Single oracle dependency without fallback — Seluruh IL protection, Vortex accounting, asset valuation bergantung Chainlink Price Feeds saja; tidak ada TWAP, Pyth, Redstone, atau circuit breaker terintegrasi; systemic risk jika feed stale/terkompromi【Phase 4 — Core Components: OracleReader】【Phase 7 — External Dependencies: Chainlink】【Phase 7 — Ecosystem Risks: Oracle Dependency】 (HIGH)
+
+Anti-pattern 3: Canonical bridge only for cross-chain — 7-day withdrawal L2→L1 via Arbitrum Bridge menghambat UX & capital efficiency; tidak ada fast bridge integration (Hop, Across, Synapse) 3+ tahun post-V3 launch; user experience inferior vs competitors【Phase 3 — EV-014】【Phase 4 — Architecture: Cross-chain】【Phase 7 — Ecosystem Risks: Bridge Dependency】 (HIGH)
+
+Anti-pattern 4: Delayed developer tooling — SDK resmi dirilis 7 tahun post-mainnet (2024); tidak ada hackathon program, grant program, developer docs terstruktur 2017-2023; ekosistem integrator minimal vs Uniswap V4 hooks, Curve DAO【Phase 3 — EV-020】【Phase 7 — Developer Ecosystem】【Phase 4 — Current Tech Stack: SDK】 (HIGH)
+
+Anti-pattern 5: Limited multi-chain deployment — V3 hanya Ethereum + Arbitrum; Polygon terjebak V2 legacy; tidak deploy ke Optimism, Base, zkSync trotz ekosistem DeFi besar; fragmentasi likuiditas & melewatkan user growth【Phase 3 — EV-010】【Phase 4 — Technical Upgrade History: V3 Launch】【Phase 7 — External Dependencies: Polygon】【Phase 7 — Ecosystem Risks: No V3 on Polygon】 (HIGH)
+
+Anti-pattern 6: Centralized frontend hosting — app.bancor.network di infrastructure Web2 tradisional tanpa IPFS/Fleet/ENS deployment; risiko DNS hijack, hosting compromise, censorship; smart contracts immutable tapi frontend attack vector terbuka【Phase 7 — Ecosystem Risks: Centralized Frontend Hosting】【Phase 4 — Architecture】【Phase 7 — Infrastructure Providers】 (MEDIUM)
+
+Anti-pattern 7: Revenue concentration risk — 100% protocol revenue dari swap fees; bear market → volume drop → revenue crash; tidak ada diversifikasi (enterprise licensing, treasury yield, grant income, insurance fund)【Phase 5 — Revenue Model】【Phase 5 — Financial Risk: Revenue Dependency on Swap Volume】【Phase 4 — Core Components: Vortex】 (HIGH)
+
+Anti-pattern 8: Upgradeable contract governance risk — Semua kontrak inti (Omnipool, Vortex, Staking, OracleReader) upgradeable via UUPS proxy dikontrol Timelock DAO; jika Timelock signers kompromi atau malicious proposal lolos quorum, kontrak bisa di-upgrade mencuri dana; identitas signers tidak transparan【Phase 4 — Security Model: Upgradeable Proxy】【Phase 4 — Core Components: Governance Contracts】【Phase 7 — Ecosystem Risks: Upgradeable Contract Governance Risk】 (HIGH)
+
+## Lessons Learned
+
+- Pioneer advantage (V1 2017) menciptakan brand & treasury besar, tapi tidak menjamin market share jangka panjang tanpa innovasi berkelanjutan — Bancor TVL <0.5% DeFi total 2024【Phase 3 — EV-001】【Phase 8 — Market Share】
+- Security incident (Juli 2020, $23.5M loss) bisa menjadi catalyst untuk security excellence — V3 multi-audit, upgradeable proxy DAO-controlled, bug bounty, zero exploit 3+ tahun【Phase 3 — EV-006】【Phase 3 — EV-011】【Phase 4 — Security Model】
+- Tokenomics pivot inflationary→deflationary memerlukan product-market fit (fee revenue) — Vortex hanya berfungsi jika swap volume cukup; bear market menguji sustainability【Phase 6 — Inflation/Deflation】【Phase 5 — Revenue Model】【Phase 3 — EV-010】
+- Progressive decentralization butuh concrete milestones — DAO launch Q4 2020 → V2 deprecation 2022 → parameter control 2023-2024 → LST whitelisting 2024; setiap step dieksekusi on-chain【Phase 3 — EV-009】【Phase 3 — EV-017】【Phase 3 — EV-018】【Phase 3 — EV-019】
+- Single-sided staking + IL protection adalah moat yang sulit direplikasi — Uniswap V3/V4, Curve, Balancer tidak menawarkan IL protection penuh untuk aset volatil; Bancor unik di niche ini【Phase 3 — EV-007】【Phase 8 — Competitor Landscape】【Phase 8 — Narrative Position: Impermanent Loss Protection】
+- Oracle minimalism menciptakan systemic risk — Chainlink dependency tanpa fallback berarti protocol health tergantung single external provider; diversifikasi oracle harus direncanakan early【Phase 4 — Core Components: OracleReader】【Phase 7 — Ecosystem Risks: Oracle Dependency】
+- Developer ecosystem investment tidak bisa tertunda 7 tahun — SDK 2024 release terlambat; early integrator adoption menentukan network effects; Uniswap V4 hooks, Curve DAO sudah mature【Phase 3 — EV-020】【Phase 7 — Developer Ecosystem】
+- Treasury transparency membangun trust & enables community oversight — opacity menciptakan speculation & governance friction; dashboard sederhana (wallet labels, composition, runway) high impact low cost【Phase 5 — Treasury】【Phase 7 — Ecosystem Risks: Treasury Opacity】
+- Canonical bridge UX trade-off (7-day withdrawal) acceptable untuk security tapi perlu fast bridge roadmap — user retention & capital efficiency terganggu; competitor (Hop, Across) solve this【Phase 3 — EV-014】【Phase 7 — Ecosystem Risks: Bridge Dependency】
+- LST integration (wstETH/rETH 2024) menunjukkan adaptabilitas ke narrative baru — governance agility memungkinkan pivot cepat tanpa code upgrade; parameter control via DAO powerful【Phase 3 — EV-019】【Phase 7 — Major Integrations: wstETH/LST】【Phase 8 — Narrative Position: LST/Restaking Secondary】
+
+## Knowledge Summary
+
+Strategic Principles:
+- Security before growth (multi-audit, DAO-controlled proxy, Timelock, bug bounty)
+- Tokenomics aligned with protocol usage (Vortex burn + real yield, zero inflation)
+- Progressive decentralization (Foundation → DAO → full parameter control)
+- Single-sided UX as core differentiator (deposit one asset, IL protection)
+- Layer 2 scaling via canonical bridge only (Arbitrum, no fast bridge)
+- Oracle minimalism (Chainlink only, no fallback)
+- No external fundraising post-ICO (self-funded 7+ years)
+
+Success Factors:
+- First-mover AMM (2017) → $153M ICO treasury
+- Unique single-sided + IL protection moat
+- Sustainable tokenomics pivot V3 (deflationary + real yield)
+- Robust security posture post-exploit (zero major exploit V3)
+- Effective DAO governance execution (migrations, parameters, whitelisting)
+- Strategic L2 deployment on Arbitrum (early, ~30-40% TVL)
+- Deep CEX liquidity for BNT (Binance, Coinbase, Kraken, HTX, OKX)
+
+Failure Factors:
+- Treasury opacity (no transparency report, dashboard, wallet labels)
+- No V3 on Polygon/Optimism/Base (missed L2 DeFi growth)
+- Single oracle dependency without fallback (Chainlink only)
+- Canonical bridge only (7-day withdrawal, no fast bridge)
+- Delayed developer tooling (SDK 2024, 7 years late)
+- Revenue 100% swap-fee dependent (bear market vulnerability)
+- Centralized frontend hosting (Web2 infrastructure risk)
+- Upgradeable contract governance risk (Timelock signers opacity)
+
+Decision Framework:
+1. Observe limitations from previous version/market
+2. Evaluate alternatives with multi-audit validation
+3. Fund from ICO treasury (no external capital)
+4. Develop with standard stack (Hardhat, ethers.js, TypeScript, OpenZeppelin)
+5. Launch dual-chain simultaneous with fee switch on
+6. Govern via DAO proposal → Snapshot → On-chain → Timelock 48h → Execute
+7. Iterate via parameter adjustments & asset whitelisting (no code upgrade needed)
+
+Reusable Playbook:
+1. Pivot inflationary→deflationary via fee-burn mechanism (Vortex model)
+2. Progressive decentralization via DAO with Timelock (concrete milestones)
+3. Single-sided liquidity with IL protection as moat (protocol-owned funding)
+4. Multi-audit pre-launch security standard (3+ top firms, publish reports)
+5. L2 deployment via canonical bridge first (accept UX trade-off)
+6. Oracle minimalism with single provider (document dependency, plan fallback)
+7. Self-funded development from ICO treasury (7+ years runway)
+8. LST integration as strategic pivot (governance agility, no code upgrade)
+
+Anti-patterns:
+1. Treasury opacity (no transparency, trust assumption)
+2. Single oracle dependency without fallback (systemic risk)
+3. Canonical bridge only (poor UX, capital inefficiency)
+4. Delayed developer tooling (7-year SDK gap)
+5. Limited multi-chain deployment (missed ecosystems)
+6. Centralized frontend hosting (Web2 attack vector)
+7. Revenue concentration risk (100% swap fees)
+8. Upgradeable contract governance risk (Timelock signers opacity)
+
+## Open Threads
+
+- V3 Polygon deployment status: Official V3 blog hanya menyebut Ethereum & Arbitrum; DefiLlama menampilkan Polygon TVL tapi kemungkinan V2 legacy; perlu verifikasi on-chain contract V3 (Omnipool, Vortex, stBNT) di Polygon【Phase 1 — Open Threads】【Phase 3 — Open Threads】【Phase 4 — Known Technical Limitations】 (MEDIUM)
+
+- Exact V1 mainnet launch date: Hanya "Februari 2017" terdokumentasi; hari spesifik & block number tidak ditemukan di blog/GitHub releases【Phase 1 — Open Threads】【Phase 3 — Open Threads】 (LOW)
+
+- V2 exploit technical root cause detail: Post-mortem mention "wallet upgradeability" tapi exploit vector spesifik (reentrancy? storage collision? access control?) tidak diverifikasi dari laporan primer PeckShield pasca-insiden【Phase 3 — EV-006】【Phase 3 — Open Threads】【Phase 4 — Audit History: PeckShield post-exploit】 (MEDIUM)
+
+- BancorDAO Timelock signers identity & threshold: Jumlah signers, threshold (3-of-5?), identitas (foundation vs community multisig) tidak dipublikasikan di docs/GitHub【Phase 4 — Security Model: TimelockController】【Phase 7 — Governance Ecosystem: Committee】【Phase 9 — Technical Decision Pattern: Upgradeable Proxy】 (MEDIUM)
+
+- Chainlink feed list per token: OracleReader contract holds mapping; exact feed addresses untuk wstETH, rETH, LINK, dll tidak published di docs; hanya readable on-chain【Phase 4 — Core Components: OracleReader】【Phase 7 — External Dependencies: Chainlink】【Phase 4 — Known Technical Limitations】 (MEDIUM)
+
+- IL Protection funding mechanism V3 detail: Docs state "protocol-owned liquidity" funds IL protection (bukan inflasi BNT), tapi exact source (Vortex fees? protocol reserves? swap fees?) & solvency model under extreme conditions tidak detailed【Phase 4 — Core Components: Impermanent Loss Protection Module】【Phase 4 — Known Technical Limitations】【Phase 6 — Utility: Impermanent Loss Protection Funding】 (MEDIUM)
+
+- Foundation treasury size & composition: Tidak ada dashboard, laporan, atau proposal governance mengungkap total aset (stablecoin, BNT, ETH, dll); perlu analisis on-chain wallet foundation (jika address diketahui)【Phase 5 — Treasury】【Phase 5 — Open Threads】【Phase 7 — Ecosystem Risks: Treasury Opacity】 (HIGH)
+
+- Vortex burn amount historis: Total BNT burned sejak V3 launch Oktober 2021 tidak dipublikasikan ringkasan; perlu query event Burn di kontrak Vortex on-chain【Phase 6 — Inflation/Deflation】【Phase 5 — Open Threads】【Phase 4 — Core Components: Vortex】 (MEDIUM)
+
+- SDK versioning & compatibility policy: npm @bancor/sdk version history & breaking change policy tidak terdokumentasi; developer perlu cek GitHub releases【Phase 3 — EV-020】【Phase 4 — Current Tech Stack: SDK】【Phase 7 — Developer Ecosystem: SDK】 (LOW)
+
+- Frontend decentralization plans: Apakah ada IPFS/Fleet/ENS deployment untuk app.bancor.network mitigate centralized hosting risk? Tidak mentioned di docs/blog【Phase 7 — Ecosystem Risks: Centralized Frontend Hosting】【Phase 4 — Architecture】【Phase 1 — Open Threads】 (LOW)

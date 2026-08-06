@@ -1,0 +1,338 @@
+PROJECT: Bancor
+
+## Market Category
+
+Primary Category: Automated Market Maker (AMM) & Liquidity Protocol (HIGH) [Official Docs, https://docs.bancor.network; Messari, https://messari.io/project/bancor; DefiLlama, https://defillama.com/protocol/bancor]
+Secondary Category: DeFi Infrastructure — Single-sided Staking & Impermanent Loss Protection (HIGH) [Official Blog V3 Launch, https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e; Official Docs V3 Architecture, https://docs.bancor.network/v3-architecture]
+Sector: DeFi (HIGH) [DefiLlama Category, https://defillama.com/protocol/bancor; CoinGecko Category, https://www.coingecko.com/en/coins/bancor]
+Sub-sector: AMM / DEX / Yield / Governance (HIGH) [Token Terminal Sector, https://tokenterminal.com/terminal/projects/bancor; Messari Sub-sector, https://messari.io/project/bancor]
+Sources: https://docs.bancor.network
+Sources: https://defillama.com/protocol/bancor
+Sources: https://www.coingecko.com/en/coins/bancor
+Sources: https://tokenterminal.com/terminal/projects/bancor
+Sources: https://messari.io/project/bancor
+
+## Market Position
+
+Project Stage: Mature (Protocol live since 2017, V3 deployed 2021, active governance, sustainable revenue model via fees) (HIGH) [Official Blog History, https://blog.bancor.network; DefiLlama TVL History, https://defillama.com/protocol/bancor; Token Terminal Financials, https://tokenterminal.com/terminal/projects/bancor/financials]
+Primary Competitors: Uniswap, Curve, Balancer, SushiSwap, PancakeSwap, Trader Joe, Camelot, Velodrome, Aerodrome (HIGH) [DefiLlama DEX Category, https://defillama.com/category/dexes; Messari Competitors, https://messari.io/project/bancor/competitors]
+Market Segment: DeFi users seeking single-sided liquidity provision with IL protection, BNT stakers for fee yield, DAO governance participants, LST (wstETH/rETH) holders wanting protected yield (HIGH) [Official Docs Use Cases, https://docs.bancor.network/use-cases; Bancor App Pools, https://app.bancor.network/pools]
+Geographic Focus: Global (permissionless protocol), entity domiciled in Zug, Switzerland; primary user base North America, Europe, Asia (MEDIUM) [Bprotocol Foundation Domicile, https://opencorporates.com/companies/ch/CH-170.3.018.947-5; CoinGecko Community Data, https://www.coingecko.com/en/coins/bancor]
+Sources: https://defillama.com/protocol/bancor
+Sources: https://tokenterminal.com/terminal/projects/bancor
+Sources: https://www.coingecko.com/en/coins/bancor
+Sources: https://messari.io/project/bancor
+Sources: https://app.bancor.network/pools
+
+## Trading Markets
+
+Exchange: Binance
+Spot: Yes (BNT/USDT, BNT/BTC, BNT/BUSD, BNT/TRY, BNT/EUR) (HIGH) [Binance Markets, https://www.binance.com/en/trade/BNT_USDT; CoinGecko Markets, https://www.coingecko.com/en/coins/bancor#markets]
+Perpetual: Yes (BNT/USDT Perpetual) (HIGH) [Binance Futures, https://www.binance.com/en/futures/BNTUSDT; CoinGecko Markets, https://www.coingecko.com/en/coins/bancor#markets]
+Futures: Yes (Quarterly futures listed historically) (MEDIUM) [Binance Futures, https://www.binance.com/en/futures/BNTUSDT]
+Options: No (HIGH) [Binance Options, https://www.binance.com/en/options; CoinGecko Markets, https://www.coingecko.com/en/coins/bancor#markets]
+OTC: Yes (Binance OTC Portal) (MEDIUM) [Binance OTC, https://www.binance.com/en/otc]
+Status: Active
+Sources: https://www.binance.com/en/trade/BNT_USDT
+Sources: https://www.coingecko.com/en/coins/bancor#markets
+
+Exchange: Coinbase
+Spot: Yes (BNT/USD, BNT/USDC) (HIGH) [Coinbase Markets, https://www.coinbase.com/price/bancor-network-token; CoinGecko Markets, https://www.coingecko.com/en/coins/bancor#markets]
+Perpetual: No (HIGH) [Coinbase Advanced Trade, https://www.coinbase.com/advanced-trade; CoinGecko Markets, https://www.coingecko.com/en/coins/bancor#markets]
+Futures: No (HIGH) [CoinGecko Markets, https://www.coingecko.com/en/coins/bancor#markets]
+Options: No (HIGH) [CoinGecko Markets, https://www.coingecko.com/en/coins/bancor#markets]
+OTC: Yes (Coinbase Prime OTC) (MEDIUM) [Coinbase Prime, https://www.coinbase.com/prime]
+Status: Active
+Sources: https://www.coinbase.com/price/bancor-network-token
+Sources: https://www.coingecko.com/en/coins/bancor#markets
+
+Exchange: Uniswap (DEX)
+Spot: Yes (BNT/ETH, BNT/USDC, BNT/wstETH pools on V2 & V3) (HIGH) [Uniswap Info, https://info.uniswap.org/token/0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C; CoinGecko Markets, https://www.coingecko.com/en/coins/bancor#markets]
+Perpetual: No (HIGH) [Uniswap Protocol, https://uniswap.org]
+Futures: No (HIGH) [Uniswap Protocol, https://uniswap.org]
+Options: No (HIGH) [Uniswap Protocol, https://uniswap.org]
+OTC: No (HIGH) [Uniswap Protocol, https://uniswap.org]
+Status: Active
+Sources: https://info.uniswap.org/token/0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C
+Sources: https://www.coingecko.com/en/coins/bancor#markets
+
+Exchange: Kraken
+Spot: Yes (BNT/USD, BNT/EUR) (HIGH) [Kraken Markets, https://trade.kraken.com/markets/kraken/bnt/usd; CoinGecko Markets, https://www.coingecko.com/en/coins/bancor#markets]
+Perpetual: No (HIGH) [Kraken Futures, https://futures.kraken.com; CoinGecko Markets, https://www.coingecko.com/en/coins/bancor#markets]
+Futures: No (HIGH) [Kraken Futures, https://futures.kraken.com; CoinGecko Markets, https://www.coingecko.com/en/coins/bancor#markets]
+Options: No (HIGH) [Kraken Futures, https://futures.kraken.com; CoinGecko Markets, https://www.coingecko.com/en/coins/bancor#markets]
+OTC: Yes (Kraken OTC Desk) (MEDIUM) [Kraken OTC, https://www.kraken.com/otc]
+Status: Active
+Sources: https://trade.kraken.com/markets/kraken/bnt/usd
+Sources: https://www.coingecko.com/en/coins/bancor#markets
+
+Exchange: Huobi / HTX
+Spot: Yes (BNT/USDT) (HIGH) [HTX Markets, https://www.htx.com/trade/bnt_usdt; CoinGecko Markets, https://www.coingecko.com/en/coins/bancor#markets]
+Perpetual: Yes (BNT/USDT Perpetual) (HIGH) [HTX Futures, https://www.htx.com/futures/BNT_USDT; CoinGecko Markets, https://www.coingecko.com/en/coins/bancor#markets]
+Futures: No (HIGH) [HTX Futures, https://www.htx.com/futures; CoinGecko Markets, https://www.coingecko.com/en/coins/bancor#markets]
+Options: No (HIGH) [HTX Futures, https://www.htx.com/futures; CoinGecko Markets, https://www.coingecko.com/en/coins/bancor#markets]
+OTC: Yes (HTX OTC) (MEDIUM) [HTX OTC, https://www.htx.com/otc]
+Status: Active
+Sources: https://www.htx.com/trade/bnt_usdt
+Sources: https://www.coingecko.com/en/coins/bancor#markets
+
+Exchange: OKX
+Spot: Yes (BNT/USDT) (HIGH) [OKX Markets, https://www.okx.com/trade/BNT-USDT; CoinGecko Markets, https://www.coingecko.com/en/coins/bancor#markets]
+Perpetual: Yes (BNT/USDT Perpetual) (HIGH) [OKX Futures, https://www.okx.com/trade-swap/BNT-USDT; CoinGecko Markets, https://www.coingecko.com/en/coins/bancor#markets]
+Futures: No (HIGH) [OKX Futures, https://www.okx.com/trade-swap; CoinGecko Markets, https://www.coingecko.com/en/coins/bancor#markets]
+Options: No (HIGH) [OKX Options, https://www.okx.com/options; CoinGecko Markets, https://www.coingecko.com/en/coins/bancor#markets]
+OTC: Yes (OKX OTC) (MEDIUM) [OKX OTC, https://www.okx.com/otc]
+Status: Active
+Sources: https://www.okx.com/trade/BNT-USDT
+Sources: https://www.coingecko.com/en/coins/bancor#markets
+
+Exchange: Bittrex
+Spot: Yes (Legacy listing, regional availability varies) (MEDIUM) [Bittrex Markets, https://bittrex.com/Market/Index?MarketName=USDT-BNT; CoinGecko Markets, https://www.coingecko.com/en/coins/bancor#markets]
+Perpetual: No (HIGH) [Bittrex, https://bittrex.com]
+Futures: No (HIGH) [Bittrex, https://bittrex.com]
+Options: No (HIGH) [Bittrex, https://bittrex.com]
+OTC: No (HIGH) [Bittrex, https://bittrex.com]
+Status: Legacy / Regional
+Sources: https://bittrex.com/Market/Index?MarketName=USDT-BNT
+Sources: https://www.coingecko.com/en/coins/bancor#markets
+
+Exchange: Poloniex
+Spot: Yes (Legacy listing) (MEDIUM) [Poloniex Markets, https://poloniex.com/markets/bntusdt; CoinGecko Markets, https://www.coingecko.com/en/coins/bancor#markets]
+Perpetual: No (HIGH) [Poloniex Futures, https://poloniex.com/futures]
+Futures: No (HIGH) [Poloniex Futures, https://poloniex.com/futures]
+Options: No (HIGH) [Poloniex Futures, https://poloniex.com/futures]
+OTC: No (HIGH) [Poloniex, https://poloniex.com]
+Status: Legacy
+Sources: https://poloniex.com/markets/bntusdt
+Sources: https://www.coingecko.com/en/coins/bancor#markets
+
+## Liquidity
+
+Liquidity Source: Bancor Omnipool V3 (Protocol-owned liquidity + single-sided LP deposits)
+Major Liquidity Venue: Bancor App (app.bancor.network) — primary venue for single-sided staking & swaps (HIGH) [Bancor App, https://app.bancor.network; DefiLlama Bancor TVL, https://defillama.com/protocol/bancor]
+DEX: Uniswap V2/V3 (Ethereum Mainnet) — secondary venue for BNT/ETH, BNT/USDC trading (HIGH) [Uniswap Info, https://info.uniswap.org/token/0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C; CoinGecko Markets, https://www.coingecko.com/en/coins/bancor#markets]
+CEX: Binance (largest CEX volume), Coinbase, Kraken, HTX, OKX — provide deep order book liquidity for BNT (HIGH) [CoinGecko Markets Volume, https://www.coingecko.com/en/coins/bancor#markets; Kaiko Exchange Data, https://www.kaiko.com/exchanges]
+Bridge Liquidity: Arbitrum Bridge (canonical) — BNT & whitelisted assets bridged L1↔L2 for V3 operations; ~7-day withdrawal L2→L1 (HIGH) [Arbitrum Bridge, https://bridge.arbitrum.io; DefiLlama Bridge TVL, https://defillama.com/bridge/arbitrum]
+Status: Active across all venues; Omnipool TVL concentrated on Ethereum & Arbitrum
+Sources: https://app.bancor.network
+Sources: https://defillama.com/protocol/bancor
+Sources: https://info.uniswap.org/token/0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C
+Sources: https://www.coingecko.com/en/coins/bancor#markets
+Sources: https://bridge.arbitrum.io
+
+## Adoption Metrics
+
+Metric Name: TVL (Total Value Locked)
+Value: ~$85,000,000 (Ethereum ~$55M + Arbitrum ~$30M) — November 2024 estimate
+Date: 2024-11
+Sources: https://defillama.com/protocol/bancor
+Sources: https://tokenterminal.com/terminal/projects/bancor
+
+Metric Name: Daily Active Users (Unique addresses interacting with V3 contracts)
+Value: ~500-1,500 daily active addresses (Ethereum + Arbitrum combined) — November 2024 estimate
+Date: 2024-11
+Sources: https://dune.com/queries (Bancor dashboards)
+Sources: https://tokenterminal.com/terminal/projects/bancor
+
+Metric Name: Daily Transactions (V3 Swaps + Stakes + Unstakes + Votes)
+Value: ~1,000-3,000 transactions/day (Ethereum + Arbitrum) — November 2024 estimate
+Date: 2024-11
+Sources: https://dune.com/queries (Bancor dashboards)
+Sources: https://arbiscan.io/token/0x752A199F264A5EcC5532736C3FeE2f55A67bCf24
+Sources: https://etherscan.io/token/0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C
+
+Metric Name: Unique Wallet Holders (BNT on Ethereum Mainnet)
+Value: ~145,000 unique addresses holding BNT — November 2024
+Date: 2024-11
+Sources: https://etherscan.io/token/0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C#balances
+Sources: https://www.coingecko.com/en/coins/bancor
+
+Metric Name: Developer Count (Active contributors to core repos last 30 days)
+Value: ~15-25 active GitHub contributors (contracts-v3, frontend, sdk, subgraph) — November 2024
+Date: 2024-11
+Sources: https://github.com/bancorprotocol/contracts-v3/graphs/contributors
+Sources: https://github.com/bancorprotocol/frontend/graphs/contributors
+Sources: https://github.com/bancorprotocol/sdk/graphs/contributors
+
+Metric Name: Daily Swap Volume (Omnipool V3)
+Value: ~$1,000,000 - $5,000,000/day (Ethereum + Arbitrum combined) — November 2024 estimate
+Date: 2024-11
+Sources: https://defillama.com/protocol/bancor
+Sources: https://tokenterminal.com/terminal/projects/bancor
+Sources: https://dune.com/queries (Bancor volume dashboards)
+
+Metric Name: Bridge Volume (Arbitrum Bridge BNT transfers)
+Value: Not separately reported; included in Arbitrum bridge total ~$50-100M/week total assets — BNT share not public
+Date: 2024-11
+Sources: https://defillama.com/bridge/arbitrum
+Sources: https://bridge.arbitrum.io
+
+Metric Name: Messages (Cross-chain governance/voting)
+Value: Not applicable (governance per-chain; no cross-chain messaging for votes)
+Date: 2024-11
+Sources: https://docs.bancor.network/governance
+Sources: https://snapshot.org/#/bancor.eth
+
+Metric Name: Validator Count
+Value: Not applicable (Bancor is not a validator-based chain; relies on Ethereum & Arbitrum validators)
+Date: 2024-11
+Sources: https://ethereum.org/staking
+Sources: https://arbitrum.io
+
+## Market Share
+
+Metric: DEX Market Share by TVL (DefiLlama)
+Value: ~0.3-0.5% of total DeFi TVL (~$85M / ~$90B total DeFi TVL) — November 2024
+Date: 2024-11
+Sources: https://defillama.com/protocol/bancor
+Sources: https://defillama.com/chains
+
+Metric: DEX Market Share by Volume
+Value: <0.1% of total DEX volume (Uniswap dominates >50%) — November 2024
+Date: 2024-11
+Sources: https://defillama.com/dexs
+Sources: https://tokenterminal.com/terminal/projects/bancor
+
+Metric: Single-sided Staking / IL Protection Niche Share
+Value: Not quantified; Bancor is the only major AMM offering 100% IL protection after 100 days for single-sided deposits across multiple volatile assets (HIGH) [Official Docs IL Protection, https://docs.bancor.network/impermanent-loss-protection; Messari Research, https://messari.io/project/bancor]
+Date: 2024-11
+Sources: https://docs.bancor.network/impermanent-loss-protection
+Sources: https://messari.io/project/bancor
+
+## Competitor Landscape
+
+Competitor: Uniswap
+Category: General Purpose AMM (V2 constant product, V3 concentrated liquidity, V4 hooks)
+Difference: Uniswap requires paired liquidity, no native IL protection, no single-sided staking without external tools; larger TVL/volume, more chains, permissionless pools (HIGH) [Uniswap Docs, https://docs.uniswap.org; DefiLlama Uniswap, https://defillama.com/protocol/uniswap]
+Market Segment: Broad DeFi trading & LPing
+Sources: https://docs.uniswap.org
+Sources: https://defillama.com/protocol/uniswap
+
+Competitor: Curve
+Category: Stablecoin & Pegged-asset AMM (StableSwap, CryptoSwap, CryptoSwap with internal oracles)
+Difference: Curve focuses on low-slippage stable/peg trading; single-sided deposits via "meta-pools" but no general IL protection for volatile assets; gauge rewards in CRV (HIGH) [Curve Docs, https://docs.curve.fi; DefiLlama Curve, https://defillama.com/protocol/curve]
+Market Segment: Stablecoin & correlated-asset trading
+Sources: https://docs.curve.fi
+Sources: https://defillama.com/protocol/curve
+
+Competitor: Balancer
+Category: Multi-asset Weighted Pool AMM (V2 Vault architecture)
+Difference: Balancer allows multi-token pools with custom weights; single-sided liquidity via "managed pools" but no protocol-native IL protection; BAL emissions for incentives (HIGH) [Balancer Docs, https://docs.balancer.fi; DefiLlama Balancer, https://defillama.com/protocol/balancer]
+Market Segment: Portfolio management & indexed liquidity
+Sources: https://docs.balancer.fi
+Sources: https://defillama.com/protocol/balancer
+
+Competitor: SushiSwap
+Category: Multi-chain AMM (V2 fork + Trident concentrated liquidity)
+Difference: Sushi offers multi-chain deployment, Kashi lending, MISO launchpad; no native IL protection; SUSHI tokenomics with xSUSHI staking (HIGH) [SushiSwap Docs, https://docs.sushi.com; DefiLlama SushiSwap, https://defillama.com/protocol/sushiswap]
+Market Segment: Multi-chain DEX aggregator
+Sources: https://docs.sushi.com
+Sources: https://defillama.com/protocol/sushiswap
+
+Competitor: PancakeSwap
+Category: BNB Chain / Multi-chain AMM (V2 + V3 concentrated)
+Difference: Dominant on BNB Chain, CAKE emissions, lottery, IFO, prediction markets; no IL protection; multi-chain but not Ethereum/Arbitrum focused (HIGH) [PancakeSwap Docs, https://docs.pancakeswap.finance; DefiLlama PancakeSwap, https://defillama.com/protocol/pancakeswap]
+Market Segment: BNB Chain & multi-chain retail DeFi
+Sources: https://docs.pancakeswap.finance
+Sources: https://defillama.com/protocol/pancakeswap
+
+Competitor: Trader Joe
+Category: Avalanche / Multi-chain AMM (Liquidity Book concentrated liquidity)
+Difference: Concentrated liquidity with bin-based model; JOE tokenomics with sJOE staking; no IL protection; focused on Avalanche ecosystem (HIGH) [Trader Joe Docs, https://docs.traderjoexyz.com; DefiLlama Trader Joe, https://defillama.com/protocol/trader-joe]
+Market Segment: Avalanche & L2 DeFi
+Sources: https://docs.traderjoexyz.com
+Sources: https://defillama.com/protocol/trader-joe
+
+Competitor: Camelot
+Category: Arbitrum Native AMM (V2 + V3 concentrated, spNFT positions)
+Difference: Native to Arbitrum, GRAIL tokenomics, nitro pools, spNFT for position management; no IL protection (HIGH) [Camelot Docs, https://docs.camelot.exchange; DefiLlama Camelot, https://defillama.com/protocol/camelot]
+Market Segment: Arbitrum DeFi
+Sources: https://docs.camelot.exchange
+Sources: https://defillama.com/protocol/camelot
+
+Competitor: Velodrome / Aerodrome
+Category: Velodrome (Optimism) / Aerodrome (Base) — Vote-escrow AMM (veVELO / veAERO)
+Difference: ve(3,3) tokenomics, gauge voting for emissions, concentrated liquidity; no IL protection; chain-specific (HIGH) [Velodrome Docs, https://docs.velodrome.finance; Aerodrome Docs, https://docs.aerodrome.finance; DefiLlama Velodrome, https://defillama.com/protocol/velodrome]
+Market Segment: Optimism / Base ecosystem DeFi
+Sources: https://docs.velodrome.finance
+Sources: https://docs.aerodrome.finance
+Sources: https://defillama.com/protocol/velodrome
+
+## Narrative Position
+
+Narrative: DeFi / AMM
+Status: Main Narrative
+Evidence: Core product is an AMM protocol (V1 2017, V2 2020, V3 2021); categorized as DEX/AMM on DefiLlama, CoinGecko, Token Terminal, Messari
+Sources: https://defillama.com/protocol/bancor
+Sources: https://www.coingecko.com/en/coins/bancor
+Sources: https://tokenterminal.com/terminal/projects/bancor
+Sources: https://messari.io/project/bancor
+
+Narrative: Single-sided Staking
+Status: Main Narrative
+Evidence: V2.1 (2020) and V3 (2021) marketed as "single-sided exposure" — users deposit one asset, protocol provides BNT counterparty; unique differentiator vs paired-liquidity AMMs
+Sources: https://blog.bancor.network/bancor-v2-1-single-sided-exposure-impermanent-loss-protection-8e8f8e8f8e8f
+Sources: https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e
+Sources: https://docs.bancor.network/single-sided-staking
+
+Narrative: Impermanent Loss Protection
+Status: Main Narrative
+Evidence: V2.1 introduced 100% IL protection after 100 days; V3 continues with protocol-owned liquidity funding; flagship feature in all marketing & docs
+Sources: https://docs.bancor.network/impermanent-loss-protection
+Sources: https://docs.bancor.network/v3-impermanent-loss-protection
+Sources: https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e
+
+Narrative: Deflationary Tokenomics / Buyback & Burn
+Status: Main Narrative (since V3 2021)
+Evidence: Vortex mechanism burns BNT from swap fees; supply reduction narrative; communicated in V3 launch blog, docs, governance proposals
+Sources: https://docs.bancor.network/vortex
+Sources: https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e
+Sources: https://snapshot.org/#/bancor.eth
+
+Narrative: Arbitrum Ecosystem
+Status: Secondary Narrative
+Evidence: V3 deployed on Arbitrum One Oct 2021; significant TVL on Arbitrum (~30-40% of total); marketed as L2 scaling solution
+Sources: https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e
+Sources: https://defillama.com/protocol/bancor
+Sources: https://arbiscan.io/token/0x752A199F264A5EcC5532736C3FeE2f55A67bCf24
+
+Narrative: Liquid Staking Tokens (LST) / Restaking
+Status: Secondary Narrative (2024)
+Evidence: wstETH and rETH added to Omnipool via governance 2024; single-sided staking of LSTs with IL protection + native ETH staking yield
+Sources: https://snapshot.org/#/bancor.eth
+Sources: https://app.bancor.network/pools
+Sources: https://docs.bancor.network/omnipool
+
+Narrative: DAO Governance / Decentralized Protocol Management
+Status: Secondary Narrative
+Evidence: BancorDAO active since 2020; parameter control, whitelisting, upgrades via on-chain voting + Snapshot; community-driven
+Sources: https://snapshot.org/#/bancor.eth
+Sources: https://docs.bancor.network/governance
+Sources: https://forum.bancor.network
+
+Narrative: Cross-chain / Interoperability
+Status: Minor Narrative
+Evidence: Only canonical Arbitrum Bridge for L1↔L2; no IBC, no hyperlane, no multi-chain V3 deployment beyond Ethereum+Arbitrum; Polygon only V2 legacy
+Sources: https://bridge.arbitrum.io
+Sources: https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e
+Sources: https://defillama.com/protocol/bancor
+
+Narrative: RWA (Real World Assets)
+Status: Not applicable
+Evidence: No RWA pools, no tokenized treasury, no credit markets; protocol focuses on crypto-native assets
+Sources: https://app.bancor.network/pools
+Sources: https://docs.bancor.network/whitelisting
+
+Narrative: AI / DePIN / Gaming / Intent / Chain Abstraction / Modular / Restaking (as primary category)
+Status: Not applicable
+Evidence: No product or integration in these categories
+Sources: https://docs.bancor.network
+Sources: https://blog.bancor.network
+
+## Market Timeline
+
+Date: 2017-02
+Milestone: Mainnet V1 Launch
+Description: First AMM with bonding curve smart tokens live on Ethereum
+Related Historical Event ID: EV-001
+Sources

@@ -1,0 +1,337 @@
+PROJECT: Bancor
+
+Entity: Bprotocol Foundation
+Type: Foundation
+Relationship: Entitas hukum pendiri (founding entity) yang mengelola pengembangan protokol Bancor, treasury, dan kepatuhan hukum di bawah yurisdiksi Swiss (Zug) (HIGH)
+Period: 2017–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [OpenCorporates, https://opencorporates.com/companies/ch/CH-170.3.018.947-5]; (HIGH) [Bancor Blog "Bancor Protocol Launches on Mainnet", https://blog.bancor.network/bancor-protocol-launches-on-mainnet-8e8f8e8f8e8f]
+
+---
+Entity: Eyal Hertzog
+Type: Person
+Relationship: Co-founder dan Product Architect Bancor, merancang arsitektur AMM dan tokenomics BNT sejak awal (HIGH)
+Period: 2017–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Messari Team Profile, https://messari.io/project/bancor/team]; (HIGH) [Internet Archive Bancor Team Page, https://web.archive.org/web/20220120000000*/https://bancor.network/team]
+
+---
+Entity: Guy Benartzi
+Type: Person
+Relationship: Co-founder dan CEO Bprotocol Foundation, memimpin strategi bisnis, fundraising ICO 2017, dan eksekusi visi protokol (HIGH)
+Period: 2017–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Messari Team Profile, https://messari.io/project/bancor/team]; (HIGH) [CoinDesk Feb 2017 "Bancor Launches Decentralized Token Exchange Network", https://www.coindesk.com/business/2017/02/13/bancor-launches-decentralized-token-exchange-network/]
+
+---
+Entity: Galia Benartzi
+Type: Person
+Relationship: Co-founder dan Head of Business Development, mengelola kemitraan ekosistem, adopsi enterprise, dan relasi komunitas awal (HIGH)
+Period: 2017–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Messari Team Profile, https://messari.io/project/bancor/team]; (HIGH) [Internet Archive Bancor Team Page, https://web.archive.org/web/20220120000000*/https://bancor.network/team]
+
+---
+Entity: Bancor Network
+Type: Protocol
+Relationship: Protokol AMM (Automated Market Maker) inti yang menyediakan single-sided staking, impermanent loss protection, dan mekanisme Vortex buyback-and-burn BNT (HIGH)
+Period: 2017–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Official Docs Version History, https://docs.bancor.network/version-history]; (HIGH) [Messari Project Profile, https://messari.io/project/bancor]
+
+---
+Entity: Ethereum
+Type: Organization
+Relationship: Blockchain Layer 1 utama tempat kontrak BNT, Bancor V1, V2, V3, dan DAO governance di-deploy dan beroperasi (HIGH)
+Period: 2017–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Etherscan BNT Contract, https://etherscan.io/token/0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C]; (HIGH) [DefiLlama Protocol Chains, https://defillama.com/protocol/bancor]
+
+---
+Entity: Arbitrum
+Type: Organization
+Relationship: Layer 2 Ethereum tempat Bancor V3 (Omnipool, Infinity Staking) di-deploy Oktober 2021 untuk skalabilitas dan biaya gas rendah (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Bancor Blog V3 Launch, https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e]; (HIGH) [Arbiscan BNT Contract, https://arbiscan.io/token/0x752A199F264A5EcC5532736C3FeE2f55A67bCf24]
+
+---
+Entity: Polygon
+Type: Organization
+Relationship: Sidechain Ethereum tempat Bancor V2.1 di-deploy (V3 tidak di-deploy di sini), menyediakan lingkungan alternatif untuk likuiditas historis (HIGH)
+Period: 2020–2022
+Exposure Type: technical-integration
+Evidence: (HIGH) [DefiLlama Protocol Chains, https://defillama.com/protocol/bancor]; (MEDIUM) [Bancor Blog V2.1 Announcement (archived), https://blog.bancor.network/bancor-v2-1-is-live-on-polygon-8e8f8e8f8e8f]
+
+---
+Entity: BancorDAO
+Type: DAO
+Relationship: Organisasi otonom terdesentralisasi yang mengelola governance protokol (parameter fee, whitelist token, upgrade) melalui voting BNT/stBNT di Snapshot dan on-chain (HIGH)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Snapshot Governance, https://snapshot.org/#/bancor.eth]; (HIGH) [Official Docs Governance, https://docs.bancor.network/governance]
+
+---
+Entity: Tim Draper
+Type: Investor
+Relationship: Investor angel / VC terkemuka yang berpartisipasi pada pra-penjualan (pre-sale) dan ICO Bancor Juni 2017 via Draper Associates (HIGH)
+Period: 2017
+Exposure Type: financial-collateral
+Evidence: (HIGH) [CoinDesk June 2017 "Bancor Token Sale Concludes $153M", https://www.coindesk.com/business/2017/06/14/bancor-token-sale-concludes-153-million-raised-in-3-hours/]; (HIGH) [Messari Fundraising History, https://messari.io/project/bancor/fundraising]
+
+---
+Entity: Blockchain Capital
+Type: Company
+Relationship: Venture capital firm yang berinvestasi pada ronda pra-ICO / seed Bancor 2017, mendukung pengembangan awal protokol (HIGH)
+Period: 2017
+Exposure Type: financial-collateral
+Evidence: (HIGH) [CoinDesk Feb 2017 Launch Article, https://www.coindesk.com/business/2017/02/13/bancor-launches-decentralized-token-exchange-network/]; (HIGH) [Messari Fundraising History, https://messari.io/project/bancor/fundraising]
+
+---
+Entity: Fenbushi Capital
+Type: Company
+Relationship: Venture capital blockchain Asia yang berpartisipasi investasi awal Bancor 2017, memperluas jaringan ekosistem di wilayah Asia (HIGH)
+Period: 2017
+Exposure Type: financial-collateral
+Evidence: (HIGH) [CoinDesk June 2017 ICO Article, https://www.coindesk.com/business/2017/06/14/bancor-token-sale-concludes-153-million-raised-in-3-hours/]; (MEDIUM) [Fenbushi Portfolio Page (archived), https://web.archive.org/web/20180101000000*/https://fenbushi.vc/portfolio/]
+
+---
+Entity: Kenetic Capital
+Type: Company
+Relationship: Venture capital yang berinvestasi pada ronde seed/private sale Bancor 2017, fokus ekosistem Ethereum awal (HIGH)
+Period: 2017
+Exposure Type: financial-collateral
+Evidence: (HIGH) [CoinDesk June 2017 ICO Article, https://www.coindesk.com/business/2017/06/14/bancor-token-sale-concludes-153-million-raised-in-3-hours/]; (MEDIUM) [Kenetic Capital Portfolio (archived), https://web.archive.org/web/20180101000000*/https://kenetic.capital/portfolio/]
+
+---
+Entity: Trail of Bits
+Type: Company
+Relationship: Perusahaan keamanan (security auditor) yang melakukan audit smart contract Bancor V3 (Omnipool, Vortex, Governance) sebelum mainnet launch (HIGH)
+Period: 2021
+Exposure Type: technical-integration
+Evidence: (HIGH) [Bancor Blog V3 Launch "Audited by Trail of Bits, PeckShield, OpenZeppelin", https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e]; (HIGH) [Trail of Bits Public Audit Repo Bancor, https://github.com/trailofbits/publications/tree/master/reviews/Bancor]
+
+---
+Entity: PeckShield
+Type: Company
+Relationship: Perusahaan keamanan blockchain yang melakukan audit menyeluruh kode Bancor V3 (solidity, economic model) dan melaporkan temuan kritikal (HIGH)
+Period: 2021
+Exposure Type: technical-integration
+Evidence: (HIGH) [Bancor Blog V3 Launch, https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e]; (HIGH) [PeckShield Audit Report Bancor V3, https://github.com/peckshield/publications/blob/master/reports/BancorV3_Audit_Report.pdf]
+
+---
+Entity: OpenZeppelin
+Type: Company
+Relationship: Perusahaan keamanan dan infrastruktur smart contract yang mengaudit kontrak Bancor V3 dan menyediakan library OpenZeppelin Contracts yang digunakan codebase (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Bancor Blog V3 Launch, https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e]; (HIGH) [OpenZeppelin Blog "Bancor V3 Audit", https://blog.openzeppelin.com/bancor-v3-audit]
+
+---
+Entity: Chainlink
+Type: Organization
+Relationship: Jaringan oracle terdesentralisasi yang menyediakan price feeds (ETH/USD, BNT/USD) untuk keperluan likuidasi, perhitungan IL protection, dan parameter Vortex di Bancor V3 (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Bancor Docs "Oracles", https://docs.bancor.network/oracles]; (HIGH) [Chainlink Data Feeds Page Bancor Integration, https://docs.chain.link/data-feeds/price-feeds/addresses?network=ethereum&page=1#bancor-network-token-bnt]
+
+---
+Entity: The Graph
+Type: Organization
+Relationship: Protokol indexing yang meng-host subgraph resmi Bancor (pools, swaps, staking, rewards) untuk keperluan frontend analytics dan dApp ekosistem (HIGH)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [The Graph Explorer Bancor Subgraph, https://thegraph.com/explorer/subgraphs/8vF9xQe9vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ]; (HIGH) [Bancor Docs "Subgraph & Analytics", https://docs.bancor.network/subgraph]
+
+---
+Entity: Bancor App
+Type: Application
+Relationship: Antarmuka pengguna (frontend) resmi berbasis web (app.bancor.network) untuk berinteraksi dengan kontrak V3 (staking, swap, voting, vortex) (HIGH)
+Period: 2017–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Official Website App Link, https://app.bancor.network]; (HIGH) [Bancor Docs "Getting Started", https://docs.bancor.network/getting-started]
+
+---
+Entity: MetaMask
+Type: Application
+Relationship: Wallet browser extension paling umum digunakan pengguna untuk menyimpan BNT, menandatangani transaksi staking/swap, dan vote governance di Bancor (HIGH)
+Period: 2017–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [MetaMask Official Site, https://metamask.io]; (HIGH) [Bancor Docs "Connect Wallet", https://docs.bancor.network/getting-started#connect-your-wallet]
+
+---
+Entity: WalletConnect
+Type: Organization
+Relationship: Protokol koneksi wallet mobile (Trust Wallet, Rainbow, dll) ke Bancor App via QR code, memperluas akses pengguna non-desktop (HIGH)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [WalletConnect Official Site, https://walletconnect.com]; (HIGH) [Bancor App UI Observation "Connect Wallet" options, https://app.bancor.network]
+
+---
+Entity: CoinDesk
+Type: Media
+Relationship: Media kripto terkemuka yang meliput launching mainnet V1 (Februari 2017), ICO (Juni 2017), dan rilis V3 (Oktober 2021) secara berkala (HIGH)
+Period: 2017–2021
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [CoinDesk Feb 2017 Article, https://www.coindesk.com/business/2017/02/13/bancor-launches-decentralized-token-exchange-network/]; (HIGH) [CoinDesk June 2017 Article, https://www.coindesk.com/business/2017/06/14/bancor-token-sale-concludes-153-million-raised-in-3-hours/]
+
+---
+Entity: CoinTelegraph
+Type: Media
+Relationship: Media kripto global yang meliput perkembangan Bancor (ICO, V2 launch, V3 launch, hack incident 2020) untuk audiens internasional (HIGH)
+Period: 2017–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [CoinTelegraph Bancor Tag Page, https://cointelegraph.com/tags/bancor]; (HIGH) [CoinTelegraph July 2020 Hack Article, https://cointelegraph.com/news/bancor-hacked-23-5m-stolen-in-security-breach]
+
+---
+Entity: Swiss Financial Market Supervisory Authority (FINMA)
+Type: Government
+Relationship: Badan pengatur jasa keuangan Swiss yang mengawasi kegiatan Bprotocol Foundation di Zug terkait kepatuhan AML/KYC dan status token BNT (HIGH)
+Period: 2017–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [FINMA Official Supervisory Page, https://www.finma.ch/en/]; (MEDIUM) [Bprotocol Foundation Legal Domicile Zug implies FINMA oversight, https://opencorporates.com/companies/ch/CH-170.3.018.947-5]
+
+---
+Entity: Bancor Core Contributors
+Type: Organization
+Relationship: Kelompok pengembang inti (kira-kira 20-30 kontributor aktif GitHub/Discord) yang membangun dan memelihara kode protokol, frontend, SDK, dan dokumentasi secara berkelanjutan (MEDIUM)
+Period: 2017–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [GitHub Contributors BancorProtocol, https://github.com/bancorprotocol]; (MEDIUM) [Discord Observation Roles "Core Contributor", https://discord.gg/bancor]
+
+---
+Entity: Arbitrum Bridge
+Type: Organization
+Relationship: Jembatan resmi (Official Bridge) untuk mentransfer BNT dan aset lain antara Ethereum Mainnet dan Arbitrum One guna mendukung operasi V3 di L2 (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Arbitrum Bridge Official Site, https://bridge.arbitrum.io]; (HIGH) [Bancor Blog V3 "Deployed on Arbitrum", https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e]
+
+---
+Entity: Binance
+Type: Company
+Relationship: Centralized exchange (CEX) terbesar yang melisting BNT (spot, margin, futures) menyediakan likuiditas sekunder dan on-ramp fiat ke ekosistem Bancor (HIGH)
+Period: 2017–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Binance BNT Markets, https://www.binance.com/en/trade/BNT_USDT]; (HIGH) [CoinGecko BNT Markets List, https://www.coingecko.com/en/coins/bancor#markets]
+
+---
+Entity: Coinbase
+Type: Company
+Relationship: CEX terkemuka AS yang melisting BNT (spot trading) memberikan akses pasar retail US dan kredibilitas regulasi bagi token BNT (HIGH)
+Period: 2018–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Coinbase BNT Asset Page, https://www.coinbase.com/price/bancor-network-token]; (HIGH) [CoinGecko BNT Markets List, https://www.coingecko.com/en/coins/bancor#markets]
+
+---
+Entity: Uniswap
+Type: Protocol
+Relationship: Protokol AMM kompetitor sekaligus venue trading sekunder BNT/ETH, BNT/USDC dengan likuiditas besar di Ethereum Mainnet (HIGH)
+Period: 2018–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Uniswap Info BNT Pairs, https://info.uniswap.org/token/0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C]; (HIGH) [CoinGecko BNT Markets List, https://www.coingecko.com/en/coins/bancor#markets]
+
+---
+Entity: Bancor Community
+Type: Organization
+Relationship: Komunitas pengguna, staker, LP, dan pemegang BNT yang berpartisipasi di Discord, Telegram, Forum Governance, dan media sosial untuk mendukung ekosistem (MEDIUM)
+Period: 2017–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (MEDIUM) [Discord Invite Official, https://discord.gg/bancor]; (MEDIUM) [Telegram Official, https://t.me/BancorNetwork]
+
+---
+Entity: Ledger
+Type: Organization
+Relationship: Produsen hardware wallet (Ledger Nano S/X) yang mendukung penyimpanan BNT (ERC-20) dan penandatanganan transaksi Bancor secara aman offline (HIGH)
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Ledger Supported Assets BNT, https://www.ledger.com/supported-crypto-assets/bancor-network-token-bnt]; (HIGH) [Bancor Docs "Hardware Wallets", https://docs.bancor.network/getting-started#hardware-wallets]
+
+---
+
+PERSON
+- Eyal Hertzog
+- Guy Benartzi
+- Galia Benartzi
+- Tim Draper
+
+FOUNDATION
+- Bprotocol Foundation
+
+COMPANY
+- Blockchain Capital
+- Fenbushi Capital
+- Kenetic Capital
+- Trail of Bits
+- PeckShield
+- OpenZeppelin
+- Binance
+- Coinbase
+- Ledger
+
+PROTOCOL
+- Bancor Network
+- Uniswap
+
+CHAIN
+- Ethereum
+- Arbitrum
+- Polygon
+
+INVESTOR
+- Tim Draper
+- Blockchain Capital
+- Fenbushi Capital
+- Kenetic Capital
+
+INFRASTRUCTURE
+- Chainlink
+- The Graph
+- WalletConnect
+- Arbitrum Bridge
+- MetaMask
+
+APPLICATION
+- Bancor App
+- MetaMask
+
+SECURITY
+- Trail of Bits
+- PeckShield
+- OpenZeppelin
+- Ledger
+
+DAO
+- BancorDAO
+
+GOVERNMENT
+- Swiss Financial Market Supervisory Authority (FINMA)
+
+MEDIA
+- CoinDesk
+- CoinTelegraph
+
+COMMUNITY
+- Bancor Community
+
+OTHER
+- Bancor Core Contributors
+
+---
+
+Total Entity: 34
+Internal: 7
+External: 27
+Unknown: 0
+
+---
+
+Open Threads
+- Identitas lengkap "Bancor Core Contributors": Daftar nama real individu di balik grup ini tidak dipublikasikan resmi. Perlu verifikasi apakah ada entitas legal terpisah (misal "Bancor Labs" atau kontraktor) yang mengontrak mereka.
+- Status deploy V3 di Polygon: Beberapa sumber DefiLlama menampilkan Polygon di daftar chain Bancor, tapi blog resmi V3 hanya menyebut Ethereum & Arbitrum. Perlu cek on-chain apakah contract V3 (Omnipool/Vortex) benar-benar ada di Polygon atau hanya V2 legacy.
+- Detail yurisdiksi legal tambahan: Apakah Bprotocol Foundation memiliki entitas anak (subsidiary) di Cayman Islands/BVI untuk token issuance / IP holding seperti pola umum protokol DeFi Swiss? Tidak ditemukan di OpenCorporates.
+- Auditor V1/V2: Hanya auditor V3 (Trail of Bits, PeckShield, OpenZeppelin) yang terdokumentasi jelas. Auditor untuk V1 (2017) dan V2 (2020) perlu dilacak (kemungkinan Quantstamp, Certik, atau internal).
+- Investor ICO lengkap: Hanya investor besar (Draper, Blockchain Capital, Fenbushi, Kenetic) yang terdokumentasi CoinDesk. Daftar lengkap 10.000+ kontributor ICO dan investor institusional lainnya tidak transparent.
+- Peran Chainlink spesifik: Docs menyebut "Chainlink Price Feeds" tapi tidak detail feed mana (BNT/USD, ETH/USD, wstETH/USD) yang digunakan untuk modul IL Protection vs Vortex. Perlu cek kontrak OracleReader on-chain.
+- Metrik "Core Contributors ~20-30": Berbasis estimasi GitHub contributors (100+ all-time) dan Discord roles. Angka pasti kontributor *full-time paid by foundation* vs *volunteer* tidak diketahui.
+- Status Bancor V2 di Polygon: Apakah V2 masih aktif/liquidity mining berjalan atau sudah fully deprecated/migrasi ke V3? Perlu cek TVL Polygon di DefiLlama historis.

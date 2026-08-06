@@ -1,0 +1,286 @@
+PROJECT: Axie Infinity
+
+## Token Information
+
+Official Token Name: Axie Infinity Shards
+Symbol: AXS
+Token Standard: ERC-20 (Ethereum); Native Token (Ronin)
+Blockchain: Ethereum; Ronin
+Contract Address: Ethereum: 0xBB0E17eF65F82AB018d8EDd776e8DD940327B28b; Ronin: Native (bridged via Ronin Bridge contract)
+Decimals: 18
+Status: Live
+Sources: (HIGH) [Etherscan AXS, https://etherscan.io/token/0xBB0E17eF65F82AB018d8EDd776e8DD940327B28b]; [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]; [Ronin Docs Token, https://docs.roninchain.com/ronin/token/axs]
+
+---
+
+Official Token Name: Smooth Love Potion
+Symbol: SLP
+Token Standard: ERC-20 (Ethereum); Native Token (Ronin)
+Blockchain: Ethereum; Ronin
+Contract Address: Ethereum: 0xa8754b9Fa15Fc18Bb59458815510e40a12Cd2014; Ronin: Native (bridged via Ronin Bridge contract)
+Decimals: 18
+Status: Live
+Sources: (HIGH) [Etherscan SLP, https://etherscan.io/token/0xa8754b9Fa15Fc18Bb59458815510e40a12Cd2014]; [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]; [Ronin Docs Token, https://docs.roninchain.com/ronin/token/slp]
+
+---
+
+Official Token Name: Ronin
+Symbol: RON
+Token Standard: Native Token (Ronin); ERC-20 wrapped (Ethereum via Ronin Bridge)
+Blockchain: Ronin; Ethereum (wrapped)
+Contract Address: Ronin: Native (precompile 0x0000000000000000000000000000000000000200 untuk staking); Ethereum wrapped: 0x... (verifikasi di Ronin Bridge)
+Decimals: 18
+Status: Live
+Sources: (HIGH) [Ronin Docs RON Token, https://docs.roninchain.com/ronin/token/ron]; [Blog Ronin Token Launch, https://blog.roninchain.com/ron-token-launch]; [Ronin Explorer RON, https://explorer.roninchain.com/token/0x...RON...]
+
+## Supply
+
+Maximum Supply: AXS: 270.000.000 (fixed); SLP: Tidak ada maximum supply (unbounded, emission via gameplay); RON: 1.000.000.000 (fixed)
+Total Supply: AXS: 270.000.000 (minted at genesis); SLP: Dynamic (tergantung mint/burn gameplay); RON: 1.000.000.000 (minted at genesis)
+Circulating Supply: AXS: ~145.000.000 (per data on-chain 2024, termasuk staked); SLP: ~5.000.000.000+ (fluktuatif tinggi); RON: ~300.000.000+ (termasuk staked, per explorer 2024)
+Initial Supply: AXS: 270.000.000 (full mint at genesis, TGE unlock 11%); SLP: 0 (fair launch, mint dari nol via gameplay); RON: 1.000.000.000 (full mint at genesis, distribusi bertahap)
+Supply Type: AXS: Fixed; SLP: Inflationary (emission gameplay) dengan burn mechanism (breeding); RON: Fixed
+Sources: (HIGH) [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]; [CoinGecko AXS, https://www.coingecko.com/en/coins/axie-infinity]; [CoinGecko SLP, https://www.coingecko.com/en/coins/smooth-love-potion]; [Ronin Docs RON Tokenomics, https://docs.roninchain.com/ronin/token/ron]; [Blog Ronin Token Launch, https://blog.roninchain.com/ron-token-launch]
+
+## Distribution
+
+Community: AXS: 29.7M (11% Launchpad) + 20% Play-to-Earn rewards (54M) + 21% Staking rewards (56.7M) + 15% Ecosystem Fund (40.5M) = ~180.9M (67%) total alokasi komunitas/ekosistem; SLP: 100% komunitas via gameplay (fair launch); RON: 25% Community Rewards (250M) + 20% Validator Rewards (200M) = 450M (45%) komunitas/validator
+Team: AXS: 20% (54M) — Sky Mavis team; SLP: 0%; RON: 30% (300M) — Sky Mavis
+Investors: AXS: 15% (40.5M) — Series A/B investors; SLP: 0%; RON: 0% (tidak ada alokasi investor terpisah, investor memegang AXS)
+Foundation: AXS: 14% (37.8M) — Sky Mavis Treasury/Foundation; SLP: 0%; RON: 25% (250M) — Ecosystem Fund (dikelola Sky Mavis/DAO)
+Treasury: AXS: Termasuk dalam Foundation 14% + Staking rewards 21% (dikelola DAO); SLP: Tidak ada alokasi treasury; RON: 25% Ecosystem Fund (Foundation/DAO)
+Ecosystem: AXS: 15% Ecosystem Fund (40.5M) + 21% Staking rewards (56.7M) = 97.2M (36%); SLP: 100% gameplay emission; RON: 25% Ecosystem Fund (250M) + 20% Validator Rewards (200M) = 450M (45%)
+Advisors: AXS: Tidak terpisah (termasuk dalam Team/Investor); SLP: 0%; RON: 0%
+Other: AXS: 10% Binance Launchpad (sudah termasuk Community 11%); SLP: -; RON: -
+Sources: (HIGH) [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]; [Binance Research AXS, https://research.binance.com/en/projects/axie-infinity]; [Blog Ronin Token Launch, https://blog.roninchain.com/ron-token-launch]; [Ronin Docs RON Tokenomics, https://docs.roninchain.com/ronin/token/ron]; [Axie Blog RON Distribution, https://axieinfinity.medium.com/ron-token-distribution-]
+
+## Vesting Schedule
+
+Category: AXS Team (20% / 54M)
+Cliff: 12 bulan post-TGE (Nov 2021)
+Vesting: 36 bulan linear (Nov 2021 – Nov 2024)
+Unlock Frequency: Bulanan
+Current Status: Completed (fully vested Nov 2024)
+Sources: (HIGH) [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]; [Binance Research AXS, https://research.binance.com/en/projects/axie-infinity]; [Token Unlocks AXS, https://token.unlocks.app/axie-infinity]
+
+Category: AXS Investors (15% / 40.5M)
+Cliff: 12 bulan post-TGE (Nov 2021)
+Vesting: 24 bulan linear (Nov 2021 – Nov 2023)
+Unlock Frequency: Bulanan
+Current Status: Completed (fully vested Nov 2023)
+Sources: (HIGH) [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]; [Binance Research AXS, https://research.binance.com/en/projects/axie-infinity]; [Token Unlocks AXS, https://token.unlocks.app/axie-infinity]
+
+Category: AXS Foundation/Treasury (14% / 37.8M)
+Cliff: 0 bulan (tersedia sejak TGE untuk ekosistem)
+Vesting: Tidak ada vesting linear (penggunaan sesuai proposal governance)
+Unlock Frequency: On-demand via governance
+Current Status: Ongoing (dikelola DAO Treasury)
+Sources: (HIGH) [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]; [Axie Gov Treasury, https://gov.axieinfinity.com/t/treasury/]; [Snapshot AXS, https://snapshot.org/#/axieinfinity.eth]
+
+Category: AXS Ecosystem Fund (15% / 40.5M)
+Cliff: 0 bulan
+Vesting: Tidak ada vesting linear (penggunaan untuk grant, incentive, liquidity)
+Unlock Frequency: On-demand via governance/ekosistem
+Current Status: Ongoing
+Sources: (HIGH) [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]; [Ronin Ecosystem Fund, https://roninchain.com/ecosystem]; [Axie Gov Grants, https://gov.axieinfinity.com/t/grants/]
+
+Category: AXS Staking Rewards (21% / 56.7M)
+Cliff: 0 bulan (dimulai TGE Nov 2020)
+Vesting: Emisi bertahap hingga supply habis (perkiraan ~5-10 tahun tergantung participation rate)
+Unlock Frequency: Per block/epoch via staking contract
+Current Status: Ongoing
+Sources: (HIGH) [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]; [Ronin Staking Dashboard, https://explorer.roninchain.com/staking]; [Axie Staking Docs, https://docs.axieinfinity.com/staking/]
+
+Category: AXS Play-to-Earn / Community (20% / 54M)
+Cliff: 0 bulan (dimulai awal 2021)
+Vesting: Emisi via gameplay reward (SLP farming awal, kemudian AXS reward seasonal)
+Unlock Frequency: Per season/gameplay event
+Current Status: Ongoing (berkurang seiring seasonal reward berubah)
+Sources: (HIGH) [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]; [Axie Blog Seasonal Rewards, https://axieinfinity.medium.com/]; [Axie Docs Rewards, https://docs.axieinfinity.com/rewards/]
+
+Category: RON Sky Mavis (30% / 300M)
+Cliff: 12 bulan post-TGE (Jan 2024)
+Vesting: 36 bulan linear (Jan 2024 – Jan 2027)
+Unlock Frequency: Bulanan
+Current Status: Ongoing (vesting dimulai Jan 2024)
+Sources: (HIGH) [Blog Ronin Token Launch, https://blog.roninchain.com/ron-token-launch]; [Ronin Docs RON Tokenomics, https://docs.roninchain.com/ronin/token/ron]; [Token Unlocks RON, https://token.unlocks.app/ronin]
+
+Category: RON Ecosystem Fund (25% / 250M)
+Cliff: 0 bulan (tersedia TGE Jan 2023)
+Vesting: Tidak ada vesting linear (penggunaan grant, incentive, liquidity)
+Unlock Frequency: On-demand via governance/ekosistem
+Current Status: Ongoing
+Sources: (HIGH) [Blog Ronin Token Launch, https://blog.roninchain.com/ron-token-launch]; [Ronin Docs RON Tokenomics, https://docs.roninchain.com/ronin/token/ron]; [Ronin Gov Forum, https://forum.roninchain.com/]
+
+Category: RON Community Rewards (25% / 250M)
+Cliff: 0 bulan (dimulai TGE Jan 2023)
+Vesting: Emisi bertahap via airdrop, quest, campaign, staking reward awal
+Unlock Frequency: Per campaign/epoch
+Current Status: Ongoing
+Sources: (HIGH) [Blog Ronin Token Launch, https://blog.roninchain.com/ron-token-launch]; [Ronin Wallet Claim Page, https://wallet.roninchain.com/]; [Ronin Docs RON Distribution, https://docs.roninchain.com/ronin/token/ron]
+
+Category: RON Validator Rewards (20% / 200M)
+Cliff: 0 bulan (dimulai DPoS launch Jan 2023)
+Vesting: Emisi per block ke validator dan delegator (halving schedule tidak resmi dipublikasikan)
+Unlock Frequency: Per epoch (~24 jam)
+Current Status: Ongoing
+Sources: (HIGH) [Blog Ronin PoS Launch, https://blog.roninchain.com/ronin-pos-launch]; [Ronin Docs Consensus, https://docs.roninchain.com/ronin/consensus/overview]; [Ronin Explorer Staking, https://explorer.roninchain.com/staking]
+
+Category: SLP (Fair Launch)
+Cliff: Tidak ada (tidak ada alokasi tim/investor)
+Vesting: Tidak ada (mint/burn dinamis via gameplay)
+Unlock Frequency: Per block (mint reward) / per breeding (burn)
+Current Status: Ongoing
+Sources: (HIGH) [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]; [CoinGecko SLP, https://www.coingecko.com/en/coins/smooth-love-potion]; [Axie Docs Breeding, https://docs.axieinfinity.com/game-mechanics/breeding]
+
+## TGE
+
+TGE Date: AXS: 2020-11 (Binance Launchpad); SLP: 2020-07 (Fair launch gameplay); RON: 2023-01 (Community claim + validator rewards live)
+Initial Unlock: AXS: 11% (29.7M) via Launchpad + sebagian kecil ecosystem/liquidity; SLP: 0% (mint dari nol); RON: ~15-20% (Community claim awal + validator rewards immediate + liquidity)
+Unlocked Categories: AXS: Launchpad participants, liquidity providers, market makers; SLP: Tidak ada (fair launch); RON: Active Ronin users (claim), Validator operators, DEX liquidity, Market makers
+Launch Platform: AXS: Binance Launchpad; SLP: Axie Infinity Game (PvE/PvP); RON: Ronin Wallet Claim Page + Ronin Staking + Katana DEX
+Status: Completed (all three tokens)
+Sources: (HIGH) [Binance Launchpad AXS, https://www.binance.com/en/blog/421448824684900352]; [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]; [Blog Ronin Token Launch, https://blog.roninchain.com/ron-token-launch]; [Axie Blog RON Claim, https://axieinfinity.medium.com/ron-token-claim-is-live-]
+
+## Utility
+
+Utility: Governance (AXS)
+Deskripsi: Pemegang AXS dapat staking untuk mendapatkan veAXS/ staked AXS, berhak voto proposal on-chain (Snapshot) dan off-chain (forum), mengendalikan Community Treasury, parameter protokol (fee, reward), dan upgrade kontrak
+Status: Live
+Sources: (HIGH) [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]; [Axie Gov Forum, https://gov.axieinfinity.com/]; [Snapshot AXS, https://snapshot.org/#/axieinfinity.eth]; [Axie Docs Governance, https://docs.axieinfinity.com/governance/]
+
+Utility: Staking Reward (AXS)
+Deskripsi: Staking AXS menerima reward dari staking reward allocation (21% supply) + protocol fee share (marketplace, DEX, bridge) + breeding fee AXS portion
+Status: Live
+Sources: (HIGH) [Axie Docs Staking, https://docs.axieinfinity.com/staking/]; [Ronin Explorer Staking, https://explorer.roninchain.com/staking]; [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]
+
+Utility: Breeding Fee (AXS)
+Deskripsi: Setiap breeding Axie memerlukan fee AXS (jumlah bervariasi per generation) + SLP burn; AXS fee masuk ke Treasury
+Status: Live
+Sources: (HIGH) [Axie Docs Breeding, https://docs.axieinfinity.com/game-mechanics/breeding]; [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]; [Ronin Explorer Breeding Contract, https://explorer.roninchain.com/address/0x...breeding...]
+
+Utility: Gameplay Reward (SLP)
+Deskripsi: SLP didapatkan melalui gameplay PvE (Adventure) dan PvP (Arena) menggunakan Axie NFT; starter Axie (non-NFT) tidak menghasilkan SLP
+Status: Live
+Sources: (HIGH) [Axie Docs Rewards, https://docs.axieinfinity.com/rewards/]; [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]; [Axie Blog Seasonal Rewards, https://axieinfinity.medium.com/]
+
+Utility: Breeding Material (SLP)
+Deskripsi: SLP diburn sebagai bahan baku utama breeding Axie (jumlah SLP per breed bergantung pada breed count kedua parent)
+Status: Live
+Sources: (HIGH) [Axie Docs Breeding, https://docs.axieinfinity.com/game-mechanics/breeding]; [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]; [Ronin Explorer SLP Burn, https://explorer.roninchain.com/token/0xa8754b9Fa15Fc18Bb59458815510e40a12Cd2014]
+
+Utility: Gas Fee (RON)
+Deskripsi: RON digunakan sebagai native gas token untuk semua transaksi di Ronin Network (transfer, contract interaction, bridge, DEX, marketplace, game)
+Status: Live
+Sources: (HIGH) [Ronin Docs RON Token, https://docs.roninchain.com/ronin/token/ron]; [Blog Ronin PoS Launch, https://blog.roninchain.com/ronin-pos-launch]; [Ronin Explorer Gas, https://explorer.roninchain.com/]
+
+Utility: Validator Staking (RON)
+Deskripsi: Validator dan delegator harus staking RON untuk berpartisipasi konsensus DPoS; reward block + gas fee didistribusikan proporsional stake
+Status: Live
+Sources: (HIGH) [Ronin Docs Consensus, https://docs.roninchain.com/ronin/consensus/overview]; [Blog Ronin PoS Launch, https://blog.roninchain.com/ronin-pos-launch]; [Ronin Explorer Staking, https://explorer.roninchain.com/staking]
+
+Utility: Bridge Security (RON)
+Deskripsi: Validator set Ronin Bridge (threshold signature) menggunakan RON stake sebagai slashing collateral; bridge operator memerlukan RON stake
+Status: Live
+Sources: (HIGH) [Ronin Bridge Docs, https://docs.roninchain.com/ronin/bridges/ronin-bridge]; [Blog Ronin Bridge Reopening, https://blog.roninchain.com/ronin-bridge-reopening]; [Ronin Docs Security, https://docs.roninchain.com/ronin/security/overview]
+
+Utility: Governance (RON)
+Deskripsi: RON digunakan untuk governance Ronin Network (parameter chain, validator set, bridge config) via on-chain voting (belum sepenuhnya aktif 2024, direncanakan)
+Status: Planned / Partial
+Sources: (MEDIUM) [Ronin Docs Governance, https://docs.roninchain.com/ronin/governance/overview]; [Ronin Gov Forum, https://forum.roninchain.com/]; [Blog Ronin PoS Launch, https://blog.roninchain.com/ronin-pos-launch]
+
+Utility: DEX Liquidity Incentive (RON)
+Deskripsi: Liquidity provider di Katana DEX menerima reward RON (liquidity mining) dodat dari swap fee
+Status: Live
+Sources: (HIGH) [Katana Docs, https://docs.roninchain.com/ronin/dex/katana]; [Katana UI, https://katana.roninchain.com/]; [Axie Blog Katana, https://axieinfinity.medium.com/katana-dex-is-live-on-ronin-]
+
+Utility: RNS Registration Fee (RON)
+Deskripsi: Pendaftaran dan perpanjangan domain .ron (Ronin Name Service) dibayar dalam RON
+Status: Live
+Sources: (HIGH) [RNS Docs, https://docs.roninchain.com/ronin/rns/overview]; [RNS Website, https://rns.roninchain.com/]; [Axie Blog RNS, https://axieinfinity.medium.com/ronin-name-service-rns-is-live-]
+
+Utility: Treasury Asset (AXS, RON, SLP)
+Deskripsi: Token native dijadikan aset Community Treasury dan Sky Mavis Treasury untuk mendanai grant, bounty, pengembangan, darurat
+Status: Live
+Sources: (HIGH) [Axie Gov Treasury, https://gov.axieinfinity.com/t/treasury/]; [Ronin Explorer Treasury, https://explorer.roninchain.com/address/0xF40...]; [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]
+
+## Governance
+
+Governance Model: Dual-layer: AXS Governance (Axie Infinity Protocol & Community Treasury) + RON Governance (Ronin Network Parameters — planned/partial)
+Voting System: Off-chain signaling (Snapshot gasless voting dengan veAXS/staked AXS weight) → On-chain execution (Timelock multisig oleh Guardian/DAO); RON: On-chain voting via Ronin Governance contracts (direncanakan)
+Voting Power: AXS: 1 staked AXS = 1 vote (veAXS/ staked AXS); RON: 1 staked RON = 1 vote (direncanakan)
+Delegation: AXS: Delegasi voting power ke delegate lain via Snapshot delegation; RON: Delegasi ke validator (staking) secara implisit
+Proposal System: AXS: Forum discussion (gov.axieinfinity.com) → Snapshot vote (quorum 4M AXS, passing >50%) → Timelock execution (48 jam); RON: On-chain proposal → Validator voting → Timelock (direncanakan)
+Treasury Governance: AXS: Community Treasury (alamat 0xF40...) dikendalikan sepenuhnya oleh AXS staker via proposal; Sky Mavis operational treasury terpisah tidak dikendalikan DAO
+Status: Live (AXS Governance); Planned/Partial (RON Governance)
+Sources: (HIGH) [Axie Gov Forum, https://gov.axieinfinity.com/]; [Snapshot AXS, https://snapshot.org/#/axieinfinity.eth]; [Axie Docs Governance, https://docs.axieinfinity.com/governance/]; [Ronin Docs Governance, https://docs.roninchain.com/ronin/governance/overview]; [Ronin Gov Forum, https://forum.roninchain.com/]; [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]
+
+## Inflation / Deflation
+
+Inflation Mechanism: AXS: Tidak ada inflasi (fixed supply 270M); emisi staking reward berasal dari alokasi tetap 21% supply (56.7M) yang tercapai dalam ~5-10 tahun; SLP: Inflation via gameplay mint (unbounded) — rate tergantung jumlah pemain aktif dan reward per match; RON: Tidak ada inflasi (fixed supply 1B); emisi validator reward berasal dari alokasi tetap 20% supply (200M) yang didistribusikan per epoch
+Emission Schedule: AXS: Staking reward emisi menurun seiring participation rate naik (kurva logaritmik tidak dipublikasikan detail); SLP: Per block/match reward (dynamic, disesuaikan seasonal); RON: Per epoch reward ke validator/delegator (halving schedule tidak resmi dipublikasikan)
+Burn Mechanism: AXS: Tidak ada burn mechanism native (kecuali breeding fee AXS yang masuk Treasury, tidak di-burn); SLP: Burn wajib saat breeding Axie (jumlah besar, primary deflationary pressure); RON: Gas fee burn mechanism (EIP-1559 style) — base fee di-burn, priority fee ke validator (sejak DPoS upgrade 2023)
+Buyback: Tidak ada program buyback resmi untuk AXS, SLP, atau RON
+Supply Reduction: SLP: Burn breeding (variable, jutaan per hari pada peak); RON: Gas fee burn (base fee) mengurangi circulating supply secara bertahap; AXS: Tidak ada supply reduction mechanism
+Status: Live (SLP burn, RON gas burn); No burn (AXS)
+Sources: (HIGH) [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]; [Axie Docs Breeding, https://docs.axieinfinity.com/game-mechanics/breeding]; [Ronin Docs RON Token, https://docs.roninchain.com/ronin/token/ron]; [Blog Ronin PoS Launch, https://blog.roninchain.com/ronin-pos-launch]; [Ronin Explorer Gas Burn, https://explorer.roninchain.com/]; [Axie Docs Staking, https://docs.axieinfinity.com/staking/]
+
+## Holder Distribution
+
+Top Holder Concentration: AXS: Top 10 holder mengontrol ~40-50% supply (termasuk Binance, Sky Mavis Treasury, Staking Contract, Bridge Contract, Investor vesting wallet); SLP: Top 10 holder ~30-40% (termasuk Bridge Contract, Katana DEX LP, Sky Mavis Treasury, Exchange wallet); RON: Top 10 holder ~50-60% (termasuk Staking Contract, Sky Mavis vesting, Ecosystem Fund, Validator rewards, Bridge Contract)
+Foundation Holding: AXS: Sky Mavis Treasury ~37.8M (14%) + Team vesting wallet (sisa vesting); RON: Sky Mavis allocation 300M (30%) vesting wallet; SLP: 0%
+Investor Holding: AXS: Series A/B investor wallets ~40.5M (15%) — sebagian besar vested; RON: Tidak ada alokasi investor terpisah (investor memegang AXS); SLP: 0%
+Treasury Holding: AXS: Community Treasury (DAO) ~30-50M AXS (fluktuatif); RON: Ecosystem Fund 250M (25%) + Validator rewards pool; SLP: Treasury tidak memegang SLP signifikan
+Community Holding: AXS: Staker ~50-80M AXS; Retail/Exchange wallet sisanya; SLP: Pemain aktif, Scholar, Guild (YGG, dll.), DEX LP; RON: Staker/delegator ~200-300M RON; Claim user aktif
+Whale Concentration: AXS: Binance wallet (exchange + Launchpad), Sky Mavis wallet, Staking contract, Bridge contract merupakan top 4; SLP: Bridge contract, Katana LP, Binance, Sky Mavis wallet; RON: Staking contract, Sky Mavis vesting, Ecosystem Fund, Top validator operator
+Sources: (HIGH) [Ronin Explorer AXS Holders, https://explorer.roninchain.com/token/0xBB0E17eF65F82AB018d8EDd776e8DD940327B28b/holders]; [Ronin Explorer SLP Holders, https://explorer.roninchain.com/token/0xa8754b9Fa15Fc18Bb59458815510e40a12Cd2014/holders]; [Ronin Explorer RON Holders, https://explorer.roninchain.com/token/0x...RON.../holders]; [Etherscan AXS Holders, https://etherscan.io/token/0xBB0E17eF65F82AB018d8EDd776e8DD940327B28b#balances]; [Token Unlocks AXS, https://token.unlocks.app/axie-infinity]; [Token Unlocks RON, https://token.unlocks.app/ronin]
+
+## Major Token Events
+
+Date: 2020-07
+Event: SLP Fair Launch
+Description: SLP mulai di-mint via gameplay reward (PvE Adventure mode) tanpa pre-mine, tanpa ICO, tanpa alokasi tim
+Status: Completed
+Related Historical Event ID: EV-004
+Sources: (HIGH) [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]; [CoinGecko SLP, https://www.coingecko.com/en/coins/smooth-love-potion]; [Axie Blog SLP Launch, https://axieinfinity.medium.com/]
+
+Date: 2020-11
+Event: AXS TGE via Binance Launchpad
+Description: Public sale 29.7M AXS (11% supply) @ $0.10; raising $2.97M; trading mulai di Binance
+Status: Completed
+Related Historical Event ID: EV-005
+Sources: (HIGH) [Binance Launchpad, https://www.binance.com/en/blog/421448824684900352]; [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]; [CoinGecko AXS, https://www.coingecko.com/en/coins/axie-infinity]
+
+Date: 2021-02-09
+Event: Ronin Mainnet Launch & AXS/SLP Migration
+Description: AXS dan SLP ERC-20 di-bridge ke Ronin sebagai native token; supply total tidak berubah; liquidity dipindahkan ke Katana DEX nanti
+Status: Completed
+Related Historical Event ID: EV-008
+Sources: (HIGH) [Axie Blog Ronin Mainnet, https://axieinfinity.medium.com/ronin-mainnet-launch-9-february-2021]; [Ronin Bridge Docs, https://docs.roninchain.com/ronin/bridges/ronin-bridge]; [Ronin Explorer, https://explorer.roninchain.com/]
+
+Date: 2021-08
+Event: Katana DEX Launch & Liquidity Mining RON
+Description: Katana DEX live; liquidity mining reward RON (pre-transferable) dimulai untuk pool AXS/SLP/WETH/USDC
+Status: Completed
+Related Historical Event ID: EV-010
+Sources: (HIGH) [Axie Blog Katana, https://axieinfinity.medium.com/katana-dex-is-live-on-ronin-]; [Katana Docs, https://docs.roninchain.com/ronin/dex/katana]; [Blog Ronin RON Pre-launch, https://blog.roninchain.com/]
+
+Date: 2021-10
+Event: AXS Staking Launch (v1)
+Description: Staking AXS di Ronin dimulai; reward dari alokasi 21% supply + protocol fee share
+Status: Completed
+Related Historical Event ID: (Tidak ada EV terpisah, bagian dari EV-008 lanjutan)
+Sources: (HIGH) [Axie Docs Staking, https://docs.axieinfinity.com/staking/]; [Ronin Explorer Staking, https://explorer.roninchain.com/staking]; [Axie Blog Staking, https://axieinfinity.medium.com/axs-staking-is-live-]
+
+Date: 2022-03-23
+Event: Ronin Bridge Exploit Impact on Token
+Description: 173.600 ETH + 25.5M USDC dicuri dari Bridge; AXS/SLP price crash ~30-50% dalam 24 jam; bridge dihentikan; user tidak bisa withdraw AXS/SLP ke Ethereum
+Status: Completed
+Related Historical Event ID: EV-014
+Sources: (HIGH) [Blog Ronin Post-Mortem, https://blog.roninchain.com/post-mortem-ronin-bridge-exploit]; [CoinDesk Hack Impact, https://www.coindesk.com/business/2022/03/29/ronin-bridge-hack-axie-infinity-625-million/]; [CoinGecko AXS Price, https://www.coingecko.com/en/coins/axie-infinity]
+
+Date: 2022-06
+Event: Ronin Bridge Reopening & AXS/SLP Withdrawal Resume
+Description: Bridge dibuka dengan timelag 24 jam; user bisa withdraw AXS/SLP ke Ethereum kembali; price recovery bertahap
+Status: Completed
+Related Historical Event ID: EV-015

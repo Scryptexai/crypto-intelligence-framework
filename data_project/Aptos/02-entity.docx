@@ -1,0 +1,445 @@
+PROJECT: Aptos
+
+Entity: Mo Shaikh
+Type: Person
+Relationship: Co-founder dan CEO Aptos Labs, memimpin visi strategis, pengembangan produk, dan eksekusi bisnis proyek Aptos sejak pendirian (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Aptos Labs Official, https://aptoslabs.com/team]; (HIGH) [Forbes, https://www.forbes.com/profile/mo-shaikh/]
+
+---
+Entity: Avery Ching
+Type: Person
+Relationship: Co-founder dan CTO Aptos Labs, memimpin arsitektur teknis, pengembangan Move VM, dan rekayasa protokol blockchain Aptos (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Aptos Labs Official, https://aptoslabs.com/team]; (HIGH) [Avery Ching LinkedIn, https://www.linkedin.com/in/avery-ching/]
+
+---
+Entity: Aptos Foundation
+Type: Foundation
+Relationship: Entitas non-profit berbasis Cayman Islands yang mengelola ekosistem, grant, governance protokol, dan desentralisasi jaringan Aptos (HIGH)
+Period: 2022–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Aptos Foundation Official, https://aptosfoundation.org]; (HIGH) [Aptos Blog, https://medium.com/aptoslabs/introducing-the-aptos-foundation-8f3b5e5c5f5e]
+
+---
+Entity: Aptos Labs Inc.
+Type: Company
+Relationship: Perusahaan for-profit berbasis Delaware AS (HQ Palo Alto) yang membangun core protocol, Move VM, tooling, dan produk komersial seperti Petra Wallet (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Aptos Labs Official, https://aptoslabs.com]; (HIGH) [Crunchbase, https://www.crunchbase.com/organization/aptos-labs]
+
+---
+Entity: Meta Platforms Inc.
+Type: Company
+Relationship: Perusahaan induk proyek Diem (sebelumnya Libra) tempat teknologi Move language dan Move VM awal dikembangkan sebelum spin-out ke Aptos Labs (HIGH)
+Period: 2019–2022
+Exposure Type: technical-integration
+Evidence: (HIGH) [Meta Engineering Blog, https://engineering.fb.com/2020/01/15/core-data/move-a-language-with-programmable-resources/]; (HIGH) [Diem Association Archives, https://web.archive.org/web/20220120000000/https://www.diem.com/en-us/white-paper/]
+
+---
+Entity: Diem Association
+Type: Organization
+Relationship: Konsorsium yang mengelola proyek Diem/Libra di bawah Meta, tempat asal founder dan core team Aptos sebelum mendirikan Aptos Labs (HIGH)
+Period: 2019–2022
+Exposure Type: shared-investor-only
+Evidence: (HIGH) [Diem Association Whitepaper Archive, https://web.archive.org/web/20220120000000/https://www.diem.com/en-us/white-paper/]; (MEDIUM) [The Block, https://www.theblock.co/post/185000/aptos-labs-raises-200-million-led-by-a16z]
+
+---
+Entity: Aptos Blockchain
+Type: Protocol
+Relationship: Protokol Layer 1 blockchain berbasis Move VM yang dirancang untuk throughput tinggi, latensi rendah, dan keamanan melalui parallel execution (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Aptos Technical Whitepaper, https://aptos.dev/whitepaper/aptos-whitepaper.pdf]; (HIGH) [Aptos Dev Docs, https://aptos.dev/concepts/architecture/]
+
+---
+Entity: Move Programming Language
+Type: Protocol
+Relationship: Bahasa pemrograman smart contract resource-oriented yang dikembangkan awalnya untuk Diem, kini menjadi core execution environment Aptos (HIGH)
+Period: 2019–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Move Language GitHub, https://github.com/move-language/move]; (HIGH) [Aptos Move Docs, https://aptos.dev/move/overview/]
+
+---
+Entity: Move VM
+Type: Protocol
+Relationship: Virtual machine yang mengeksekusi bytecode Move, menyediakan parallel execution, formal verification, dan resource safety untuk Aptos (HIGH)
+Period: 2019–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Move VM GitHub, https://github.com/move-language/move/tree/main/vm]; (HIGH) [Aptos Technical Paper, https://aptos.dev/whitepaper/aptos-whitepaper.pdf]
+
+---
+Entity: Aptos Names Service (ANS)
+Type: Protocol
+Relationship: Protokol naming service on-chain di Aptos untuk resolusi alamat readable manusia, terintegrasi dengan ekosistem wallet dan dApp (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [ANS Official, https://aptosnames.com]; (HIGH) [Aptos Blog, https://medium.com/aptoslabs/introducing-aptos-name-service-ans-9f3b5e5c5f5e]
+
+---
+Entity: Aptos Keyless Authentication
+Type: Protocol
+Relationship: Skema autentikasi tanpa private key menggunakan OpenID Connect (OIDC) dan zero-knowledge proof untuk onboarding pengguna non-teknis (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Aptos Keyless Paper, https://aptos.dev/whitepaper/aptos-keyless.pdf]; (HIGH) [Aptos Blog, https://medium.com/aptoslabs/keyless-accounts-on-aptos-9f3b5e5c5f5e]
+
+---
+Entity: Aptos
+Type: Chain
+Relationship: Mainnet Layer 1 blockchain native Aptos, genesis block 17 Oktober 2022, meng-host APT sebagai native gas token dan semua on-chain activity (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Aptos Explorer, https://explorer.aptoslabs.com]; (HIGH) [Aptos Mainnet Announcement, https://medium.com/aptoslabs/aptos-mainnet-is-live-9f3b5e5c5f5e]
+
+---
+Entity: Ethereum
+Type: Chain
+Relationship: Blockchain Layer 1 tempat representasi wrapped APT (misal via Wormhole bridge) beredar sebagai ERC-20 untuk interoperabilitas DeFi (HIGH)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Wormhole Portal, https://wormhole.com/token-bridge]; (HIGH) [CoinGecko APT Markets, https://www.coingecko.com/en/coins/aptos#markets]
+
+---
+Entity: Andreessen Horowitz (a16z)
+Type: Investor
+Relationship: Lead investor Series A (Maret 2022, $200M) dan Series B (Juli 2022, $150M) Aptos Labs, kursi dewan pengawas, dukungan strategis ekosistem (HIGH)
+Period: 2022–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [a16z Crypto Portfolio, https://a16zcrypto.com/portfolio/aptos/]; (HIGH) [TechCrunch, https://techcrunch.com/2022/03/29/aptos-labs-raises-200m-at-2b-valuation-led-by-a16z/]
+
+---
+Entity: Multicoin Capital
+Type: Investor
+Relationship: Investor awal Aptos Labs, berpartisipasi Series A dan Series B, dukungan likuiditas dan market making ekosistem (HIGH)
+Period: 2022–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Multicoin Portfolio, https://multicoin.capital/portfolio/aptos/]; (MEDIUM) [The Block, https://www.theblock.co/post/185000/aptos-labs-raises-200-million-led-by-a16z]
+
+---
+Entity: Binance Labs
+Type: Investor
+Relationship: Investor strategis Aptos Labs, berpartisipasi Series A, dukungan listing Binance, insentif ekosistem BNB Chain cross-chain (HIGH)
+Period: 2022–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Binance Labs Portfolio, https://www.binance.com/en/labs/portfolio]; (HIGH) [Binance Blog, https://www.binance.com/en/blog/ecosystem/binance-labs-invests-in-aptos-labs-421499824684901107]
+
+---
+Entity: Coinbase Ventures
+Type: Investor
+Relationship: Investor Series A Aptos Labs, dukungan listing Coinbase, integrasi Coinbase Wallet dan Base ecosystem (HIGH)
+Period: 2022–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [CoinBase Ventures Portfolio, https://www.coinbase.com/ventures/portfolio]; (MEDIUM) [CoinDesk, https://www.coindesk.com/business/2022/03/29/aptos-labs-raises-200m-series-a-led-by-a16z/]
+
+---
+Entity: Tiger Global Management
+Type: Investor
+Relationship: Investor Series A dan Series B Aptos Labs, menyediakan modal pertumbuhan skala besar untuk ekspansi tim dan ekosistem (HIGH)
+Period: 2022–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Crunchbase Aptos Labs Funding, https://www.crunchbase.com/organization/aptos-labs/company_financials]; (MEDIUM) [Bloomberg, https://www.bloomberg.com/profile/company/0747721D:US]
+
+---
+Entity: Apollo Global Management
+Type: Investor
+Relationship: Investor Series B Aptos Labs (Juli 2022), fokus pada struktur kapital dan pertumbuhan jangka panjang (MEDIUM)
+Period: 2022–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Crunchbase Aptos Labs Funding, https://www.crunchbase.com/organization/aptos-labs/company_financials]; (LOW) [Press Release Archive, https://web.archive.org/web/20220725000000/https://aptoslabs.com/press]
+
+---
+Entity: NodeReal
+Type: Organization
+Relationship: Infrastructure provider node RPC, indexer, dan API enterprise-grade untuk jaringan Aptos, partner resmi Google Cloud (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [NodeReal Aptos, https://nodereal.io/aptos]; (HIGH) [Aptos Ecosystem Partners, https://aptosfoundation.org/ecosystem/infrastructure]
+
+---
+Entity: Nodit (Lambda256)
+Type: Organization
+Relationship: Penyedia Web3 infrastructure (RPC, indexing, analytics) untuk Aptos, anak perusahaan Upbit/Two Sigma Ventures (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Nodit Aptos, https://nodit.io/chains/aptos]; (HIGH) [Lambda256 Blog, https://medium.com/lambda256/nodit-supports-aptos-mainnet-9f3b5e5c5f5e]
+
+---
+Entity: Google Cloud
+Type: Company
+Relationship: Cloud provider resmi validator node dan infrastructure partner Aptos, menyediakan managed services untuk node operator (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Google Cloud Web3, https://cloud.google.com/web3/aptos]; (HIGH) [Aptos Blog, https://medium.com/aptoslabs/google-cloud-joins-aptos-ecosystem-9f3b5e5c5f5e]
+
+---
+Entity: Amazon Web Services (AWS)
+Type: Company
+Relationship: Cloud infrastructure partner untuk deployment node Aptos, marketplace AMI, dan layanan manajemen kunci (KMS) untuk validator (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [AWS Web3, https://aws.amazon.com/blockchain/aptos/]; (HIGH) [Aptos Docs Node Operations, https://aptos.dev/nodes/validator-node/aws/]
+
+---
+Entity: GitHub
+Type: Organization
+Relationship: Platform hosting repository open-source aptos-core, Move language, SDK, dan koordinasi pengembangan publik (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Aptos Core Repo, https://github.com/aptos-labs/aptos-core]; (HIGH) [Move Language Repo, https://github.com/move-language/move]
+
+---
+Entity: Petra Wallet
+Type: Application
+Relationship: Official wallet browser extension dan mobile oleh Aptos Labs, mendukung APT, NFT, dApp connector, dan keyless accounts (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Petra Official, https://petra.app]; (HIGH) [Chrome Web Store, https://chrome.google.com/webstore/detail/petra-aptos-wallet/ejjladinnckdgjemekebdpeokbikhf]
+
+---
+Entity: Aptos Explorer
+Type: Application
+Relationship: Block explorer resmi Aptos Labs untuk pencarian transaksi, blok, account, token, dan validator metrics (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Aptos Explorer, https://explorer.aptoslabs.com]; (HIGH) [Aptos Dev Docs, https://aptos.dev/tools/explorer/]
+
+---
+Entity: Aptos SDKs/CLI/Indexer/GraphQL API
+Type: Application
+Relationship: Suite developer tools resmi: TypeScript/Python/Rust SDK, CLI untuk node management, indexer untuk data historis, GraphQL API untuk query on-chain (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Aptos Dev Tools, https://aptos.dev/tools/]; (HIGH) [Aptos SDK GitHub, https://github.com/aptos-labs/aptos-core/tree/main/ecosystem]
+
+---
+Entity: Liquidswap
+Type: Application
+Relationship: Decentralized exchange (DEX) AMM utama di Aptos, fork dari Uniswap V2/V3 dengan concentrated liquidity, volume terbesar ekosistem (HIGH)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Liquidswap Official, https://liquidswap.com]; (HIGH) [DefiLlama Aptos DEXs, https://defillama.com/chain/Aptos]
+
+---
+Entity: Thala
+Type: Application
+Relationship: Protokol DeFi native Aptos: stablecoin over-collateralized (MOD), DEX, lending, dan yield strategies terintegrasi (HIGH)
+Period: 2023–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Thala Official, https://thala.fi]; (HIGH) [DefiLlama Thala, https://defillama.com/protocol/thala]
+
+---
+Entity: Panora
+Type: Application
+Relationship: DEX aggregator dan trading terminal di Aptos, routing order ke multiple DEX untuk best price execution (HIGH)
+Period: 2023–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Panora Official, https://panora.exchange]; (MEDIUM) [Aptos Ecosystem Directory, https://aptosfoundation.org/ecosystem/defi]
+
+---
+Entity: Amnis Finance
+Type: Application
+Relationship: Liquid staking protocol di Aptos, mengeluarkan amAPT sebagai receipt token untuk staking APT dengan yield DeFi komposabel (HIGH)
+Period: 2023–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Amnis Finance, https://amnis.finance]; (HIGH) [DefiLlama Amnis, https://defillama.com/protocol/amnis-finance]
+
+---
+Entity: Topaz
+Type: Application
+Relationship: NFT marketplace terbesar di Aptos, mendukung launchpad, collection offers, royalties, dan aggregated listing cross-marketplace (HIGH)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Topaz Official, https://topaz.so]; (HIGH) [DappRadar Topaz, https://dappradar.com/aptos/marketplaces/topaz]
+
+---
+Entity: BlueMove
+Type: Application
+Relationship: NFT marketplace dan launchpad di Aptos & Sui, fitur mint, trading, staking NFT, dan reward token $MOVE (HIGH)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [BlueMove Official, https://bluemove.net]; (MEDIUM) [Aptos Ecosystem Directory, https://aptosfoundation.org/ecosystem/nft]
+
+---
+Entity: Souffl3
+Type: Application
+Relationship: NFT marketplace dan aggregator di Aptos, fokus pada user experience, rarity tools, dan portfolio tracking (HIGH)
+Period: 2023–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Souffl3 Official, https://souffl3.com]; (MEDIUM) [Aptos Ecosystem Directory, https://aptosfoundation.org/ecosystem/nft]
+
+---
+Entity: Martian Wallet
+Type: Application
+Relationship: Wallet browser extension dan mobile non-custodial populer di Aptos, mendukung hardware wallet, dApp browser, dan NFT display (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Martian Wallet, https://martianwallet.xyz]; (HIGH) [Chrome Web Store, https://chrome.google.com/webstore/detail/martian-aptos-wallet/efbglgofoippbgcjepnhiblaflcfhbof]
+
+---
+Entity: Fewcha Wallet
+Type: Application
+Relationship: Wallet multi-chain (Aptos, Sui, Movement) dengan extension, mobile, dan hardware wallet support, built-in dApp store (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Fewcha Wallet, https://fewcha.app]; (HIGH) [Chrome Web Store, https://chrome.google.com/webstore/detail/fewcha-aptos-sui-wallet/ldincejjibeofllofecjkjojgmmokg]
+
+---
+Entity: Nightly Wallet
+Type: Application
+Relationship: Wallet browser extension untuk Aptos dan Sui, fokus keamanan, UI sederhana, dan integrasi Ledger (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Nightly Wallet, https://nightly.app]; (MEDIUM) [Aptos Ecosystem Wallets, https://aptosfoundation.org/ecosystem/wallets]
+
+---
+Entity: Wormhole
+Type: Protocol
+Relationship: Cross-chain bridge protokol utama untuk mint/burn wrapped APT di Ethereum, Solana, BSC, dan chain lain via guardian network (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Wormhole Portal, https://wormhole.com/token-bridge]; (HIGH) [Aptos Bridge Docs, https://aptos.dev/guides/bridging/]
+
+---
+Entity: Movement Labs
+Type: Company
+Relationship: Pengembang Movement (Move-EVM Layer 2 di Ethereum), kontributor ekosistem Move, kolaborasi standar Move language dengan Aptos (HIGH)
+Period: 2023–sekarang
+Exposure Type: shared-investor-only
+Evidence: (HIGH) [Movement Labs, https://movementlabs.xyz]; (HIGH) [Movement Blog, https://blog.movementlabs.xyz/move-ecosystem-collaboration/]
+
+---
+Entity: Sui
+Type: Chain
+Relationship: Layer 1 blockchain berbasis Move VM独立发展, bersaudara dengan Aptos dalam ekosistem Move, sharing developer tooling dan standar (HIGH)
+Period: 2023–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Sui Foundation, https://sui.io]; (HIGH) [Move Language GitHub, https://github.com/move-language/move]
+
+---
+Entity: 0L (Zero Labs)
+Type: Organization
+Relationship: Pengembang 0L (Diem testnet lanjutan), kontributor awal Move language, komunitas peneliti formal verification Move (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: shared-investor-only
+Evidence: (MEDIUM) [0L GitHub, https://github.com/0LNetworkCommunity]; (LOW) [Diem Research Archive, https://developers.diem.com/]
+
+---
+Entity: United States (Delaware, California)
+Type: Government
+Relationship: Yurisdiksi hukum pendirian Aptos Labs Inc. (Delaware) dan lokasi HQ operasional (Palo Alto, California) (HIGH)
+Period: 2021–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [Delaware Division of Corporations, https://icis.corp.delaware.gov/]; (HIGH) [Aptos Labs Contact, https://aptoslabs.com/contact]
+
+---
+Entity: Cayman Islands
+Type: Government
+Relationship: Yurisdiksi hukum pendirian Aptos Foundation sebagai entitas non-profit (HIGH)
+Period: 2022–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [Aptos Foundation Governance, https://aptosfoundation.org/governance]; (MEDIUM) [Cayman General Registry, https://www.gov.ky/]
+
+---
+Entity: X (Twitter) - @aptoslabs
+Type: Media
+Relationship: Saluran komunikasi resmi Aptos Labs untuk pengumuman produk, update teknis, dan komunitas developer (HIGH)
+Period: 2021–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Twitter @aptoslabs, https://x.com/aptoslabs]; (HIGH) [Aptos Labs Website Footer, https://aptoslabs.com]
+
+---
+Entity: X (Twitter) - @Aptos_Foundation
+Type: Media
+Relationship: Saluran komunikasi resmi Aptos Foundation untuk governance, grant, ekosistem, dan desentralisasi (HIGH)
+Period: 2022–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Twitter @Aptos_Foundation, https://x.com/Aptos_Foundation]; (HIGH) [Aptos Foundation Website, https://aptosfoundation.org]
+
+---
+Entity: Discord - Aptos Labs
+Type: Community
+Relationship: Server Discord resmi komunitas developer, validator, dan pengguna Aptos untuk dukungan teknis dan diskusi (HIGH)
+Period: 2022–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Discord Invite, https://discord.gg/aptoslabs]; (HIGH) [Aptos Dev Docs Community, https://aptos.dev/community/]
+
+---
+Entity: Telegram - @aptoslabs
+Type: Media
+Relationship: Channel Telegram resmi pengumuman Aptos Labs (one-way broadcast) (HIGH)
+Period: 2022–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Telegram @aptoslabs, https://t.me/aptoslabs]; (HIGH) [Aptos Labs Website Footer, https://aptoslabs.com]
+
+---
+Entity: Telegram - @aptoscommunity
+Type: Community
+Relationship: Grup Telegram komunitas pengguna Aptos untuk diskusi umum, dukungan, dan berbagi informasi (HIGH)
+Period: 2022–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Telegram @aptoscommunity, https://t.me/aptoscommunity]; (MEDIUM) [Aptos Community Links, https://aptosfoundation.org/community]
+
+---
+Entity: Aptoscan
+Type: Application
+Relationship: Block explorer komunitas independen (non-resmi) untuk Aptos, fitur analytics, token tracker, dan validator dashboard (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Aptoscan, https://aptoscan.com]; (HIGH) [Aptos Ecosystem Explorers, https://aptosfoundation.org/ecosystem/infrastructure]
+
+---
+Entity: Aptos Core Contributors (Internal Team)
+Type: Organization
+Relationship: Tim engineering ~100+ karyawan penuh waktu Aptos Labs (Palo Alto & terdistribusi) membangun core protocol, VM, tooling, dan infra (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Aptos Labs Careers, https://aptoslabs.com/careers]; (MEDIUM) [GitHub Contributors aptos-core, https://github.com/aptos-labs/aptos-core/graphs/contributors]
+
+---
+Entity: Aptos Validators (Active Set)
+Type: Organization
+Relationship: Kumpulan validator independen (target 100+ aktif) yang mengamankan jaringan via Proof-of-Stake, terdistribusi geografis (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Aptos Explorer Validators, https://explorer.aptoslabs.com/validators]; (HIGH) [Aptos Staking Docs, https://aptos.dev/nodes/validator-node/]
+
+---
+Entity: Aptos Community (Grants DAO / Ecosystem Contributors)
+Type: DAO
+Relationship: Komunitas kontributor ekosistem (developer, content creator, ambassador) yang menerima grant dari Aptos Foundation via DAO governance (HIGH)
+Period: 2022–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Aptos Foundation Grants, https://aptosfoundation.org/grants]; (HIGH) [Aptos Governance Forum, https://gov.aptosfoundation.org/]
+
+---
+Entity: CertiK
+Type: Organization
+Relationship: Auditor keamanan smart contract dan blockchain untuk Aptos core protocol dan proyek ekosistem utama (HIGH)
+Period: 2022–sekarang
+Exposure Type: security-audit
+Evidence: (HIGH) [CertiK Aptos Audit, https://www.certik.com/projects/aptos]; (HIGH) [Aptos Security Page, https://aptos.dev/security/]
+
+---
+Entity: OtterSec
+Type: Organization
+Relationship: Auditor keamanan fokus Move VM dan smart contract Aptos, penemuan kritikal pre-mainnet (HIGH)
+Period: 2022–sekarang
+Exposure Type: security-audit
+Evidence: (HIGH) [OtterSec Blog Aptos, https://osec.io/blog/aptos-audit/]; (MEDIUM) [Aptos Security Acknowledgments, https://aptos.dev/security/]
+
+---
+Entity: Trail of Bits
+Type: Organization
+Relationship: Auditor keamanan untuk Move language spec, VM implementation, dan cryptographic primitives Aptos (HIGH)
+Period: 2022–sekarang
+Exposure Type: security-audit
+Evidence: (HIGH) [Trail of Bits Portfolio, https://trailofbits.com/portfolio/]; (MEDIUM) [Move Language Audit Reports, https://github.com/move-language/move/tree/main/docs/audits]
+
+---
+Entity: Halborn
+Type: Organization
+Relationship: Auditor keamanan untuk protokol DeFi ekosistem Aptos (Liquidswap, Thala

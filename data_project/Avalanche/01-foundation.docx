@@ -1,0 +1,29 @@
+PROJECT: Avalanche
+Official Name: Avalanche (HIGH) [Ava Labs Official Website, https://www.avax.network/]
+Symbol: AVAX (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/avalanche]
+Category: Layer 1 Blockchain / Multi-chain Architecture (Subnets) / Smart Contract Platform (HIGH) [Ava Labs Whitepaper, https://www.avax.network/whitepaper; Messari, https://messari.io/report/avalanche-fundamental-analysis]
+Founding Entity: Ava Labs, Inc. (Delaware, United States) (HIGH) [Crunchbase, https://www.crunchbase.com/organization/ava-labs; Ava Labs Careers, https://www.avalabs.org/careers]
+Founders: Emin Gün Sirer (CEO & Founder); Kevin Sekniqi (COO & Co-founder); Maofan "Ted" Yin (Chief Protocol Architect & Co-founder) (HIGH) [Ava Labs Team Page, https://www.avalabs.org/team; Forbes Profile, https://www.forbes.com/profile/emin-gun-sirer/]
+Core Team: Ava Labs (~150+ karyawan per 2023/2024 laporan industri; nama individu di luar founder tidak diungkapkan secara eksaustif secara publik) (MEDIUM) [LinkedIn Ava Labs Insights, https://www.linkedin.com/company/ava-labs/; The Block "Ava Labs lays off 12% staff" 2023, https://www.theblock.co/post/267981/ava-labs-lays-off-12-percent-staff]
+Country: United States (HQ: New York, NY) (HIGH) [Ava Labs Contact Page, https://www.avalabs.org/contact; Crunchbase, https://www.crunchbase.com/organization/ava-labs]
+Launch Date - Testnet: April 2019 (Denali Testnet publik) (HIGH) [Ava Labs Blog "Introducing Denali Testnet", https://www.avalabs.org/blog/introducing-denali-testnet; Medium "Avalanche Denali Testnet Launch" April 2019, https://medium.com/avalancheavax/introducing-the-avalanche-denali-testnet-8b7c6f4b3d5e]
+Launch Date - Mainnet: 21 September 2020 (HIGH) [Ava Labs Blog "Avalanche Mainnet Launches", https://www.avalabs.org/blog/avalanche-mainnet-launches; CoinDesk "Avalanche Mainnet Goes Live" Sept 2020, https://www.coindesk.com/markets/2020/09/22/avalanche-mainnet-goes-live-with-avax-token/]
+Launch Date - TGE: Juli 2020 (Public Sale di CoinList); Token genesis & distribusi awal bersamaan Mainnet September 2020 (HIGH) [CoinList Sale Page Archive, https://coinlist.co/build/avalanche; Ava Labs Blog "AVAX Token Sale", https://www.avalabs.org/blog/avalanche-public-sale-results; Messari Token Report, https://messari.io/report/avalanche-token-report]
+Main Products: Avalanche Primary Network (X-Chain, P-Chain, C-Chain); Avalanche Subnets (L1 Customizable); Avalanche Warp Messaging (AWM); Core Wallet (Browser Extension & Mobile); AvaCloud (Managed Subnet Service); HyperSDK (High-performance VM Framework); Teleporter (Inter-subnet Messaging) (HIGH) [Ava Labs Products Page, https://www.avalabs.org/products; Docs AvaX Subnets, https://docs.avax.network/docs/learn/subnets; Docs AvaX Teleporter, https://docs.avax.network/docs/specifications/teleporter]
+Official Website: https://www.avax.network/ (HIGH) [Direct Access]
+Repository: https://github.com/ava-labs (HIGH) [GitHub Organization, https://github.com/ava-labs]
+Documentation: https://docs.avax.network/ (HIGH) [Direct Access]
+Social - X/Twitter: @avalancheavax (HIGH) [X Profile, https://x.com/avalancheavax]
+Social - Discord: https://discord.gg/avalancheavax (HIGH) [Website Footer Link, https://www.avax.network/]
+Social - Telegram: @avalancheavax (Official Announcements); @avalanche_community (Community) (HIGH) [Website Footer Link, https://www.avax.network/]
+Block Explorer: https://snowtrace.io/ (C-Chain); https://avascan.info/ (Multi-chain); https://explorer.avax.network/ (Official Primary Network) (HIGH) [Website Footer/Dev Docs, https://docs.avax.network/docs/tooling/block-explorers]
+Token Contract: Native di X-Chain & P-Chain (tidak ada kontrak); C-Chain: Native Gas Token (Precompile) & Wrapped AVAX (WAVAX) 0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7 (HIGH) [Snowtrace WAVAX Contract, https://snowtrace.io/token/0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7; Docs C-Chain Precompiles, https://docs.avax.network/docs/specifications/c-chain-precompiles]
+Chain(s): Avalanche Primary Network (X-Chain, P-Chain, C-Chain); Subnets (L1s) seperti Beam, GameFi chains, Institutional Subnets (HIGH) [Docs Network Overview, https://docs.avax.network/docs/learn/network-overview; Avascan Subnets List, https://avascan.info/blockchain/s]
+Ecosystem: DeFi (Aave V3, Trader Joe, Benqi, GMX, Curve); Gaming (Shrapnel, Off The Grid, MapleStory Universe); NFT (Kalao, Joepegs); Infrastructure (LayerZero, Wormhole, Chainlink CCIP, The Graph); Enterprise/Institutional (Deloitte, SK Planet, T. Rowe Price via AvaCloud) (HIGH) [Ava Labs Ecosystem Page, https://www.avalabs.org/ecosystem; Avalanche Foundation Portfolio, https://avalanche.foundation/portfolio/; Messari Ecosystem Report, https://messari.io/report/avalanche-ecosystem-report-q4-2023]
+
+Open Threads
+- Ukuran Core Team persis (headcount real-time) tidak dipublikasikan secara resmi saat ini; angka ~150+ berdasarkan laporan PHK 2023 (12% dari ~175) dan data LinkedIn, perlu verifikasi/update dari Ava Labs langsung.
+- Detail lengkap alokasi tokenomics awal (persentase persis untuk Team, Foundation, Airdrop, Strategic, Public Sale) bersumber dari Messari/CoinList 2020; belum di-cross-check penuh dengan whitepaper asli atau on-chain genesis allocation kontrak foundation.
+- Status "Fee Switch" / mekanisme burn fee real-time (C-Chain base fee burn) sudah terverifikasi on-chain, tapi persentase supply deflationary vs inflationary staking reward neto per epoch/bulan ini memerlukan query on-chain live (tidak statis).
+- Daftar Subnets yang "live" dan "aktif" berubah sangat cepat; daftar di atas hanya contoh representatif, bukan daftar lengkap terverifikasi saat ini.
+- Hubungan hukum/operasional antara Ava Labs (perusahaan) dan Avalanche Foundation ( yayasan Cayman Islands) terkait pengelolaan treasury dan governance memerlukan klarifikasi dokumen hukum resmi (Foundation charter).

@@ -1,0 +1,5 @@
+2026-08-06T06:31:43.294026+00:00	Aptos	verify_10_phases failed	{'entities': 0, 'events': 0, 'decisions': 0, 'knowledge': 0}
+2026-08-06T17:34:18.372198+00:00	Avalanche	verify_10_phases failed	{'entities': 61, 'events': 25, 'decisions': 12, 'knowledge': 0}
+2026-08-06T19:53:39.667762+00:00	Bancor	verify_10_phases failed	{'entities': 31, 'events': 20, 'decisions': 14, 'knowledge': 0}
+2026-08-06T21:18:10.247135+00:00	Aave	verify_10_phases failed	{'entities': 0, 'events': 0, 'decisions': 12, 'knowledge': 33}
+2026-08-06T21:28:03.505903+00:00	Aave	verify_10_phases failed	{'entities': 0, 'events': 0, 'decisions': 12, 'knowledge': 33}

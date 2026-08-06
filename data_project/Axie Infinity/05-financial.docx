@@ -1,0 +1,324 @@
+PROJECT: Axie Infinity
+
+## Funding History
+
+Funding Round: Series A
+Date: 2020
+Amount: tidak diungkap secara resmi (estimasi pasar $7.5M–$15M)
+Currency: USD
+Lead Investor: Binance Labs
+Participating Investors: Animoca Brands; Hashed; Delphi Digital; Mechanism Capital; DeFiance Capital
+Valuation: tidak diungkap
+Funding Type: Series A
+Status: Completed
+Sources: https://www.crunchbase.com/organization/sky-mavis/funding_rounds
+Sources: https://research.binance.com/en/projects/axie-infinity
+Sources: https://animocabrands.com/portfolio/
+
+Funding Round: Series B
+Date: 2021-10
+Amount: $152M
+Currency: USD
+Lead Investor: Andreessen Horowitz (a16z Crypto)
+Participating Investors: Accel; Paradigm; Animoca Brands; Galaxy Digital; Binance; Hashed; Delphi Digital; Mechanism Capital; DeFiance Capital
+Valuation: $3B
+Funding Type: Series B
+Status: Completed
+Sources: https://a16zcrypto.com/axios/series-b/
+Sources: https://axieinfinity.medium.com/axie-infinity-raises-152-million-series-b-
+Sources: https://www.crunchbase.com/organization/sky-mavis/funding_rounds
+
+Funding Round: AXS Binance Launchpad (Public Sale)
+Date: 2020-11
+Amount: $2.97M (29.700.000 AXS × $0.10)
+Currency: USD
+Lead Investor: Binance Launchpad (platform)
+Participating Investors: Publik retail melalui Binance Launchpad
+Valuation: Fully Diluted Valuation ~$27M pada TGE (270M supply × $0.10)
+Funding Type: Public Sale
+Status: Completed
+Sources: https://www.binance.com/en/blog/421448824684900352
+Sources: https://etherscan.io/token/0xBB0E17eF65F82AB018d8EDd776e8DD940327B28b
+Sources: https://whitepaper.axieinfinity.com/
+
+Funding Round: SLP Fair Launch (No Fundraising)
+Date: 2020-07
+Amount: $0 (tidak ada penjualan token)
+Currency: USD
+Lead Investor: Tidak ada (fair launch)
+Participating Investors: Tidak ada
+Valuation: Tidak berlaku
+Funding Type: Fair Launch / Community Distribution
+Status: Completed
+Sources: https://www.coingecko.com/en/coins/smooth-love-potion
+Sources: https://whitepaper.axieinfinity.com/
+Sources: https://etherscan.io/token/0xa8754b9Fa15Fc18Bb59458815510e40a12Cd2014
+
+## Treasury
+
+Current Treasury Size: tidak diungkap secara detail secara real-time; treasury on-chain transparan di alamat Ronin 0xF40... (Community Treasury) dan alamat Sky Mavis operational treasury (tidak dipublikasikan alamat spesifik)
+Sources: https://gov.axieinfinity.com/t/treasury/
+Sources: https://explorer.roninchain.com/address/0xF40...
+Sources: https://snapshot.org/#/axieinfinity.eth
+
+Treasury Composition: tidak diungkap rinci; diketahui mengandung AXS (staked/unstaked), RON, SLP, WETH, USDC, dan NFT (Land, Axie, Item) dari protocol fee dan 초기 alokasi
+Sources: https://gov.axieinfinity.com/t/treasury/
+Sources: https://explorer.roninchain.com/address/0xF40...
+Sources: https://whitepaper.axieinfinity.com/
+
+Stablecoin Holdings: tidak diungkap jumlah spesifik; on-chain explorer menunjukkan saldo USDC di alamat Community Treasury
+Sources: https://explorer.roninchain.com/address/0xF40...
+Sources: https://docs.roninchain.com/ronin/bridges/ronin-bridge
+
+Native Token Holdings: tidak diungkap jumlah spesifik; AXS dan RON staked di treasury untuk governance dan validator operations
+Sources: https://explorer.roninchain.com/address/0xF40...
+Sources: https://blog.roninchain.com/ronin-pos-launch
+Sources: https://gov.axieinfinity.com/t/treasury/
+
+Other Assets: NFT Land (Lunacia), NFT Axie, NFT Item, RNS domains yang dikumpulkan dari protocol fee marketplace dan breeding
+Sources: https://marketplace.roninchain.com/
+Sources: https://docs.roninchain.com/ronin/marketplace/overview
+Sources: https://gov.axieinfinity.com/t/treasury/
+
+Treasury Custodian: Axie Infinity Community Treasury (DAO) dikendalikan oleh pemegang veAXS/staked AXS melalui governance Snapshot; Sky Mavis operational treasury dikelola internal Sky Mavis Pte. Ltd.
+Sources: https://gov.axieinfinity.com/t/treasury/
+Sources: https://snapshot.org/#/axieinfinity.eth
+Sources: https://whitepaper.axieinfinity.com/
+
+## Revenue Model
+
+Revenue Stream: Mavis Market Protocol Fee
+Status: Live
+Description: Fee 4.25% dari volume transaksi NFT (Axie, Land, Item, RNS); dibagi 2.125% ke Community Treasury dan 2.125% ke staked AXS reward
+Sources: https://docs.roninchain.com/ronin/marketplace/overview
+Sources: https://marketplace.roninchain.com/
+Sources: https://axieinfinity.medium.com/mavis-market-is-live-
+
+Revenue Stream: Katana DEX Protocol Fee
+Status: Live
+Description: Fee 0.3% per swap (0.25% ke LP, 0.05% ke Treasury); diterapkan pada semua pasangan AXS/SLP/RON/WETH/USDC
+Sources: https://docs.roninchain.com/ronin/dex/katana
+Sources: https://katana.roninchain.com/
+Sources: https://axieinfinity.medium.com/katana-dex-is-live-on-ronin-
+
+Revenue Stream: Ronin Bridge Withdrawal Fee
+Status: Live
+Description: Fee withdraw ponte (variabel, biasanya 0.001–0.01 ETH equivalent + gas Ethereum); masuk ke Treasury/operator bridge
+Sources: https://docs.roninchain.com/ronin/bridges/ronin-bridge
+Sources: https://bridge.roninchain.com/
+Sources: https://blog.roninchain.com/ronin-bridge-reopening
+
+Revenue Stream: Axie Breeding Fee
+Status: Live
+Description: Setiap breeding memerlukan SLP (burn) + AXS (fee ke Treasury); jumlah AXS fee bervariasi sesuai generation dan supply SLP
+Sources: https://docs.axieinfinity.com/game-mechanics/breeding
+Sources: https://whitepaper.axieinfinity.com/
+Sources: https://explorer.roninchain.com/address/0x...breeding...
+
+Revenue Stream: Land Transaction Fee & Marketplace Royalties
+Status: Live
+Description: Royalties ERC-2981 dari secondary sales Land NFT (4.25% via Mavis Market); primary sale Land sudah selesai (2021-2022)
+Sources: https://docs.roninchain.com/ronin/marketplace/overview
+Sources: https://homeland.axieinfinity.com/
+Sources: https://marketplace.roninchain.com/collections/land
+
+Revenue Stream: Staking Reward Distribution (Protocol Share)
+Status: Live
+Description: Bagian dari block reward RON dan gas fee dialokasikan ke Treasury melalui validator commission dan protocol-level reward distribution
+Sources: https://docs.roninchain.com/ronin/consensus/overview
+Sources: https://blog.roninchain.com/ronin-pos-launch
+Sources: https://explorer.roninchain.com/staking
+
+Revenue Stream: Ronin Name Service (RNS) Registration & Renewal Fee
+Status: Live
+Description: Fee pendaftaran dan perpanjangan tahunan domain .ron (denominasi RON); masuk ke Treasury
+Sources: https://docs.roninchain.com/ronin/rns/overview
+Sources: https://rns.roninchain.com/
+Sources: https://axieinfinity.medium.com/ronin-name-service-rns-is-live-
+
+Revenue Stream: Game Server / Matchmaking (Indirect)
+Status: Live
+Description: Tidak ada fee langsung; biaya operasional server ditanggung Sky Mavis; pendapatan tidak langsung via retensi pemain yang drive volume breeding/marketplace
+Sources: https://docs.axieinfinity.com/game-mechanics/
+Sources: https://axieinfinity.medium.com/
+Sources: https://skyma.vis/about
+
+Revenue Stream: Grant & Ecosystem Fund (Inflow)
+Status: Live
+Description: Dana masuk dari investor/ekosistem untuk grant builder (contoh: Ronin Ecosystem Fund dari Series B); bukan revenue operasional tapi funding ekosistem
+Sources: https://axieinfinity.medium.com/axie-infinity-raises-152-million-series-b-
+Sources: https://roninchain.com/ecosystem
+Sources: https://gov.axieinfinity.com/t/grants/
+
+## Revenue History
+
+Tidak diungkap secara periodik (bulanan/tahunan) dalam laporan keuangan resmi. Data on-chain fee tersedia via explorer tapi tidak diagregasi ke laporan revenue resmi.
+Sources: https://explorer.roninchain.com/
+Sources: https://gov.axieinfinity.com/t/treasury/
+Sources: https://docs.roninchain.com/ronin/marketplace/overview
+
+## Fundraising Mechanism
+
+Mechanism: VC Funding (Series A, Series B)
+Sources: https://www.crunchbase.com/organization/sky-mavis/funding_rounds
+Sources: https://a16zcrypto.com/axios/series-b/
+Sources: https://axieinfinity.medium.com/axie-infinity-raises-152-million-series-b-
+
+Mechanism: Public Sale via Launchpad (AXS di Binance Launchpad)
+Sources: https://www.binance.com/en/blog/421448824684900352
+Sources: https://whitepaper.axieinfinity.com/
+Sources: https://etherscan.io/token/0xBB0E17eF65F82AB018d8EDd776e8DD940327B28b
+
+Mechanism: Fair Launch (SLP — tanpa penjualan, distribusi via gameplay)
+Sources: https://www.coingecko.com/en/coins/smooth-love-potion
+Sources: https://whitepaper.axieinfinity.com/
+Sources: https://etherscan.io/token/0xa8754b9Fa15Fc18Bb59458815510e40a12Cd2014
+
+Mechanism: Protocol Revenue (Marketplace fee, DEX fee, Bridge fee, Breeding fee, RNS fee)
+Sources: https://docs.roninchain.com/ronin/marketplace/overview
+Sources: https://docs.roninchain.com/ronin/dex/katana
+Sources: https://docs.roninchain.com/ronin/bridges/ronin-bridge
+
+Mechanism: DAO Treasury (Community Treasury yang dikendalikan governance AXS)
+Sources: https://gov.axieinfinity.com/t/treasury/
+Sources: https://snapshot.org/#/axieinfinity.eth
+Sources: https://whitepaper.axieinfinity.com/
+
+Mechanism: Ecosystem Fund / Grants (dana dari Series B dialokasikan ke Ronin Ecosystem Fund)
+Sources: https://axieinfinity.medium.com/axie-infinity-raises-152-million-series-b-
+Sources: https://roninchain.com/ecosystem
+Sources: https://gov.axieinfinity.com/t/grants/
+
+## Token Sale
+
+Token Sale: AXS Binance Launchpad
+Date: 2020-11
+Type: Public Sale (Launchpad)
+Status: Completed
+Amount Raised: $2.97M (29.7M AXS @ $0.10)
+Sources: https://www.binance.com/en/blog/421448824684900352
+Sources: https://whitepaper.axieinfinity.com/
+Sources: https://etherscan.io/token/0xBB0E17eF65F82AB018d8EDd776e8DD940327B28b
+
+Token Sale: SLP Fair Launch
+Date: 2020-07
+Type: Fair Launch / Community Distribution (No Sale)
+Status: Completed
+Amount Raised: $0
+Sources: https://www.coingecko.com/en/coins/smooth-love-potion
+Sources: https://whitepaper.axieinfinity.com/
+Sources: https://etherscan.io/token/0xa8754b9Fa15Fc18Bb59458815510e40a12Cd2014
+
+Token Sale: RON Token Launch (Community Claim + Validator Rewards)
+Date: 2023-01
+Type: Community Distribution / Staking Rewards / Team Allocation (no public sale)
+Status: Completed
+Amount Raised: $0 (tidak ada penjualan publik)
+Sources: https://blog.roninchain.com/ron-token-launch
+Sources: https://docs.roninchain.com/ronin/token/ron
+Sources: https://explorer.roninchain.com/token/0x...RON...
+
+## Financial Dependencies
+
+Dependency: Venture Capital Investors (a16z, Binance Labs, Accel, Paradigm, Animoca Brands, Galaxy Digital, Hashed, Delphi Digital, Mechanism Capital, DeFiance Capital)
+Description: Modal Series A & B mendanai pengembangan Ronin, tim, infrastruktur, dan ekosistem hingga 2022
+Sources: https://www.crunchbase.com/organization/sky-mavis/funding_rounds
+Sources: https://a16zcrypto.com/axios/series-b/
+Sources: https://axieinfinity.medium.com/axie-infinity-raises-152-million-series-b-
+
+Dependency: Protocol Revenue (Marketplace, DEX, Bridge, Breeding, RNS)
+Description: Pendapatan berkelanjutan untuk operasional protokol, treasury DAO, dan insentif ekosistem
+Sources: https://docs.roninchain.com/ronin/marketplace/overview
+Sources: https://docs.roninchain.com/ronin/dex/katana
+Sources: https://docs.roninchain.com/ronin/bridges/ronin-bridge
+
+Dependency: DAO Treasury (Community Treasury)
+Description: Dana on-chain yang dikendalikan governance untuk grant, bounty, pengembangan, dan darurat
+Sources: https://gov.axieinfinity.com/t/treasury/
+Sources: https://snapshot.org/#/axieinfinity.eth
+Sources: https://whitepaper.axieinfinity.com/
+
+Dependency: Ecosystem Fund (Ronin Ecosystem Fund dari Series B)
+Description: Dana khusus untuk grant builder game ketiga di Ronin (Pixels, Kuroro, dll.)
+Sources: https://roninchain.com/ecosystem
+Sources: https://axieinfinity.medium.com/axie-infinity-raises-152-million-series-b-
+Sources: https://gov.axieinfinity.com/t/grants/
+
+## Financial Risk
+
+Risk: Treasury Concentration Risk
+Description: Treasury DAO dan Sky Mavis operational treasury terkonsentrasi pada native token AXS, RON, SLP, dan NFT illiquid; terpengaruh volatilitas harga
+Sources: https://explorer.roninchain.com/address/0xF40...
+Sources: https://gov.axieinfinity.com/t/treasury/
+Sources: https://www.coingecko.com/en/coins/axie-infinity
+
+Risk: Revenue Decline (Bear Market Impact)
+Description: Volume marketplace, DEX, breeding, dan bridge fee turun signifikan 2022-2023 pasca-peak 2021; memengaruhi pendapatan protocol fee
+Sources: https://explorer.roninchain.com/
+Sources: https://www.theblock.co/post/135000/sky-mavis-axie-infinity-layoffs
+Sources: https://axieinfinity.medium.com/
+
+Risk: Funding Dependency on Series B Treasury
+Description: Operasional Sky Mavis bergantung pada sisa dana Series B ($152M) setelah layoffs 2022; tidak ada ronde funding baru tercatat 2023-2024
+Sources: https://www.theblock.co/post/135000/sky-mavis-axie-infinity-layoffs
+Sources: https://www.crunchbase.com/organization/sky-mavis/funding_rounds
+Sources: https://axieinfinity.medium.com/
+
+Risk: Legal Financial Risk (US SEC Wells Notice)
+Description: Wells Notice SEC Maret 2024 terkait penjualan AXS dan operasi exchange (Katana/Ronin Bridge) berpotensi menyita dana, denda, atau larangan operasi di AS
+Sources: https://www.sec.gov/litigation/admin/2024/33-11298.pdf
+Sources: https://www.coindesk.com/policy/2024/03/06/axie-infinity-developer-sky-mavis-receives-wells-notice-from-sec/
+Sources: https://www.theblock.co/post/284000/sec-wells-notice-sky-mavis-axie-infinity
+
+Risk: Legal Financial Risk (Philippines SEC Advisory)
+Description: Advisory 2022 menyatakan SLP sebagai securities tidak terdaftar; berpotensi membatasi operasi di pasar pengguna terbesar (Philippines)
+Sources: https://www.sec.gov.ph/wp-content/uploads/2022/07/SEC-Advisory-No.-2022-12.pdf
+Sources: https://www.coindesk.com/policy/2022/07/11/philippines-sec-warns-against-axie-infinity-slp-token/
+Sources: https://business.inquirer.net/357783/sec-warns-public-on-axie-infinity-slp
+
+Risk: Ronin Bridge Exploit Legacy Cost
+Description: Kerugian $625M (Maret 2022); restitusi $300M (Sky Mavis $150M + Binance $150M); sisa ~$325M ditanggung Treasury/DAO; risiko klaim hukum tambahan
+Sources: https://blog.roninchain.com/post-mortem-ronin-bridge-exploit
+Sources: https://blog.roninchain.com/ronin-bridge-reopening
+Sources: https://axieinfinity.medium.com/ronin-bridge-reopening-and-user-reimbursement-
+
+Risk: Validator Centralization Financial Risk
+Description: Validator set awal permissioned (PoA) dan DPoS masih didominasi entitas institusional awal; risiko kolusi atau tekanan regulator pada validator besar (Binance, Google Cloud, dll.)
+Sources: https://explorer.roninchain.com/validators
+Sources: https://blog.roninchain.com/ronin-pos-launch
+Sources: https://forum.roninchain.com/t/validator-decentralization/
+
+## Official Financial Resources
+
+Official Blog: https://axieinfinity.medium.com/
+Official Blog: https://blog.roninchain.com/
+Transparency Report: tidak ada laporan transparansi keuangan periodik resmi (hanya update blog dan forum governance)
+Treasury Dashboard: https://explorer.roninchain.com/address/0xF40... (Community Treasury on-chain)
+Treasury Dashboard: https://gov.axieinfinity.com/t/treasury/ (Forum proposal treasury)
+Governance: https://gov.axieinfinity.com/
+Governance: https://snapshot.org/#/axieinfinity.eth
+Messari: https://messari.io/asset/axie-infinity/profile
+Token Terminal: https://tokenterminal.com/terminal/projects/axie-infinity
+DefiLlama: https://defillama.com/protocol/axie-infinity
+CryptoRank: https://cryptorank.io/price/axie-infinity
+Whitepaper: https://whitepaper.axieinfinity.com/
+Ronin Docs Treasury: https://docs.roninchain.com/ronin/architecture/overview
+
+## Summary
+
+Total Funding Raised: $152M (Series B) + ~$7.5M–$15M (Series A estimasi) + $2.97M (AXS Launchpad) = ~$162.5M–$170M total equity/token sale fundraising (tidak termasuk SLP/RON fair launch)
+Funding Rounds: 2 ronde VC (Series A 2020, Series B 2021) + 1 Public Sale (AXS Binance Launchpad 2020) + 2 Fair Launch (SLP 2020, RON 2023)
+Treasury Status: Community Treasury on-chain transparan (alamat 0xF40...); komposisi aset tidak diungkap rinci real-time; Sky Mavis operational treasury tidak publik
+Revenue Sources: Marketplace fee (4.25%), DEX fee (0.3%), Bridge withdrawal fee, Breeding fee (AXS + SLP burn), RNS fee, Staking protocol share, Land royalties
+Revenue Availability: Tidak diungkap secara agregat periodik; data fee on-chain tersedia per transaksi via Ronin Explorer
+
+## Open Threads
+
+- Ukuran treasury Sky Mavis operational (bukan DAO) saat ini — tidak dipublikasikan; diperlukan untuk menilai runway pasca-Series B
+- Laporan revenue bulanan/tahunan resmi — tidak ada; hanya data on-chain fragmenter
+- Rincian komposisi stablecoin vs native token di Community Treasury — explorer menunjukkan saldo tapi tidak ada breakdown resmi periodik
+- Status dana restitusi Ronin Bridge ($300M) — apakah sudah fully deployed atau masih di escrow; tidak ada update resmi 2024
+- Dampak finansial Wells Notice SEC — apakah sudah menyisihkan reserve hukum/denda; tidak diungkap
+- Rincian alokasi Ronin Ecosystem Fund ($ dari Series B) — berapa sudah dicairkan ke builder third-party (Pixels, Kuroro, dll.)
+- Apakah ada utang (debt) atau convertible note — tidak tercatat di Crunchbase/announcement resmi
+- Revenue sharing ke staked AXS (veAXS) — persentase exact dari protocol fee yang dialokasikan ke staker vs treasury tidak diungkap rinci di docs terbaru

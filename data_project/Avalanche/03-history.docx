@@ -1,0 +1,1075 @@
+PROJECT: Avalanche
+
+Event ID
+
+EV-001
+
+Date
+
+2018
+
+Event Name
+
+Pendirian Ava Labs dan Publikasi Whitepaper Konsensus Avalanche
+
+Event Type
+
+Founding
+
+Description
+
+Emin Gün Sirer, Kevin Sekniqi, dan Maofan "Ted" Yin mendirikan Ava Labs Inc. di Delaware, AS. Paper akademis "Snowflake to Avalanche: A Novel Metastable Consensus Protocol Family" diterbitkan melalui IC3 Cornell, memperkenalkan protokol konsensus probabilistik baru.
+
+Participants
+
+Emin Gün Sirer; Kevin Sekniqi; Maofan "Ted" Yin; Ava Labs, Inc.; IC3 (Initiative for Cryptocurrencies and Contracts) Cornell
+
+Location
+
+New York, NY, AS; Ithaca, NY, AS (Cornell)
+
+Status
+
+Completed
+
+Immediate Result
+
+Entitas hukum Ava Labs Inc. terbentuk; fondasi teoretis protokol Avalanche dipublikasikan.
+
+Sources
+
+(HIGH) [Ava Labs Team Page, https://www.avalabs.org/team]; (HIGH) [Avalanche Whitepaper, https://www.avax.network/whitepaper]; (HIGH) [IC3 Avalanche Research, https://www.initc3.org/research/avalanche]
+
+---
+
+Event ID
+
+EV-002
+
+Date
+
+2019-02
+
+Event Name
+
+Ronde Pendanaan Seed Ava Labs
+
+Event Type
+
+Funding
+
+Description
+
+Ava Labs mengumpulkan $6 juta dalam ronde seed dipimpin oleh Polychain Capital dengan partisipasi investor lain untuk mengembangkan implementasi protokol (AvalancheGo) dan persiapan testnet.
+
+Participants
+
+Ava Labs, Inc.; Polychain Capital
+
+Location
+
+New York, NY, AS
+
+Status
+
+Completed
+
+Immediate Result
+
+Dana pengembangan awal teraman; validasi pasar awal untuk arsitektur multi-chain.
+
+Sources
+
+(HIGH) [Crunchbase Ava Labs Funding, https://www.crunchbase.com/organization/ava-labs/company_financials]; (HIGH) [CoinDesk Seed Round, https://www.coindesk.com/business/2019/02/05/avalanche-raises-6m-from-polychain-others-to-build-scalable-blockchain/]
+
+---
+
+Event ID
+
+EV-003
+
+Date
+
+2019-04
+
+Event Name
+
+Peluncuran Denali Testnet Publik
+
+Event Type
+
+Launch
+
+Description
+
+Ava Labs meluncurkan Denali, testnet publik pertama untuk jaringan Avalanche, memungkinkan validator dan developer menguji konsensus, staking, dan pembuatan aset pada X-Chain/P-Chain/C-Chain.
+
+Participants
+
+Ava Labs, Inc.; Avalanche Validators (Validator Set); Ava Labs Engineering Team (Core Protocol Researchers)
+
+Location
+
+Global (Jaringan Terdistribusi)
+
+Status
+
+Completed
+
+Immediate Result
+
+Validasi teknis protokol konsensus Avalanche/Snowman di lingkungan adversarial; umpan balik untuk optimasi performa sebelum mainnet.
+
+Sources
+
+(HIGH) [Ava Labs Blog Introducing Denali Testnet, https://www.avalabs.org/blog/introducing-denali-testnet]; (HIGH) [Medium Avalanche Denali Launch April 2019, https://medium.com/avalancheavax/introducing-the-avalanche-denali-testnet-8b7c6f4b3d5e]
+
+---
+
+Event ID
+
+EV-004
+
+Date
+
+2020-07
+
+Event Name
+
+Ronde Series A dan Strategic Sale AVAX
+
+Event Type
+
+Funding
+
+Description
+
+Ava Labs mengumpulkan $12 juta Series A dipimpin Andreessen Horowitz (a16z) dan $42 juta Strategic Sale token AVAX dari investor termasuk a16z, Polychain, Three Arrows Capital (3AC), Dragonfly Capital, CMS Holdings, Alameda Research, dan lainnya.
+
+Participants
+
+Ava Labs, Inc.; Andreessen Horowitz (a16z); Polychain Capital; Three Arrows Capital (3AC); Dragonfly Capital; CMS Holdings; Alameda Research
+
+Location
+
+New York, NY, AS
+
+Status
+
+Completed
+
+Immediate Result
+
+Total $54 juta dana masuk; alokasi token AVAX untuk investor strategis terkunci (vesting); fondasi treasury untuk ekosistem.
+
+Sources
+
+(HIGH) [Crunchbase Series A, https://www.crunchbase.com/organization/ava-labs/company_financials]; (HIGH) [a16z Announcement, https://a16z.com/2020/07/15/avalanche/]; (HIGH) [CoinList Sale Results, https://www.avalabs.org/blog/avalanche-public-sale-results]
+
+---
+
+Event ID
+
+EV-005
+
+Date
+
+2020-07
+
+Event Name
+
+Public Sale AVAX di CoinList (TGE)
+
+Event Type
+
+Token
+
+Description
+
+Ava Labs menggelar penjualan publik token AVAX melalui platform CoinList, menjual 72 juta AVAX (12% supply genesis) dengan harga $0,50 per token, membuka partisipasi ribuan pembeli retail global.
+
+Participants
+
+Ava Labs, Inc.; CoinList; Avalanche Community (Discord/Telegram/Forum)
+
+Location
+
+Global (Online)
+
+Status
+
+Completed
+
+Immediate Result
+
+Distribusi token awal ke komunitas; likuiditas awal untuk listing CEX/DEX; TGE (Token Generation Event) terjadi bersamaan mainnet September 2020.
+
+Sources
+
+(HIGH) [CoinList Avalanche Sale Page, https://coinlist.co/build/avalanche]; (HIGH) [Ava Labs Public Sale Results, https://www.avalabs.org/blog/avalanche-public-sale-results]
+
+---
+
+Event ID
+
+EV-006
+
+Date
+
+2020-09-21
+
+Event Name
+
+Peluncuran Mainnet Avalanche (Primary Network)
+
+Event Type
+
+Launch
+
+Description
+
+Jaringan utama Avalanche (Primary Network) diluncurkan resmi, terdiri dari X-Chain (Exchange Chain), P-Chain (Platform Chain), dan C-Chain (Contract Chain), dengan token AVAX native aktif untuk staking, gas, dan governance.
+
+Participants
+
+Ava Labs, Inc.; Avalanche Validators (Validator Set); Ava Labs Engineering Team (Core Protocol Researchers)
+
+Location
+
+Global (Jaringan Terdistribusi)
+
+Status
+
+Completed
+
+Immediate Result
+
+Jaringan produksi live; blok genesis C-Chain (EVM) tercatat; staking AVAX dimulai di P-Chain; bridge ke Ethereum (Avalanche Bridge) siap deploy.
+
+Sources
+
+(HIGH) [Ava Labs Blog Mainnet Launch, https://www.avalabs.org/blog/avalanche-mainnet-launches]; (HIGH) [CoinDesk Mainnet Live, https://www.coindesk.com/markets/2020/09/22/avalanche-mainnet-goes-live-with-avax-token/]; (HIGH) [Docs Network Overview, https://docs.avax.network/docs/learn/network-overview]
+
+---
+
+Event ID
+
+EV-007
+
+Date
+
+2020-09
+
+Event Name
+
+Pendirian Avalanche Foundation (Cayman Islands)
+
+Event Type
+
+Organization
+
+Description
+
+Avalanche Foundation didirikan sebagai yayasan di Kepulauan Cayman untuk mengelola treasury ekosistem, program grant (Avalanche Rush, Multiverse), dan fasilitasi governance komunitas terpisah dari Ava Labs Inc.
+
+Participants
+
+Avalanche Foundation; Ava Labs, Inc.
+
+Location
+
+Kepulauan Cayman
+
+Status
+
+Completed
+
+Immediate Result
+
+Entitas hukum non-profit untuk pengelolaan dana ekosistem dan grant terpisah dari entitas komersial Ava Labs.
+
+Sources
+
+(HIGH) [Avalanche Foundation Official, https://avalanche.foundation/]; (HIGH) [Ava Labs Blog Foundation Launch, https://www.avalabs.org/blog/avalanche-foundation-launches]
+
+---
+
+Event ID
+
+EV-008
+
+Date
+
+2021-01
+
+Event Name
+
+Listing AVAX di Binance dan Coinbase (Major CEX)
+
+Event Type
+
+Market
+
+Description
+
+Token AVAX dilisting di Binance (Februari 2021) dan Coinbase Pro (Februari 2021), menyediakan akses fiat on-ramp global dan likuiditas besar bagi holder dan pengguna baru.
+
+Participants
+
+Binance; Coinbase; Ava Labs, Inc.
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Volume trading AVAX melonjak; basis pengguna retail memperluas; price discovery pasar global terbuka.
+
+Sources
+
+(HIGH) [Binance AVAX Listing, https://www.binance.com/en/trade/AVAX_USDT]; (HIGH) [Coinbase Blog Listing, https://blog.coinbase.com/avalanche-avax-is-launching-on-coinbase-pro]; (HIGH) [Coinbase AVAX Asset, https://www.coinbase.com/price/avalanche]
+
+---
+
+Event ID
+
+EV-009
+
+Date
+
+2021-04
+
+Event Name
+
+Peluncuran Program Insentif Avalanche Rush ($180M+)
+
+Event Type
+
+Ecosystem
+
+Description
+
+Avalanche Foundation meluncurkan program insentif likuiditas "Avalanche Rush" senilai $180 juta AVAX (diperluas menjadi $290M+ kemudian) untuk menarik protokol DeFi besar (Aave, Curve) dan bootstrapping TVL di C-Chain.
+
+Participants
+
+Avalanche Foundation; Aave; Curve Finance; Benqi; Trader Joe; Avalanche Community (Discord/Telegram/Forum)
+
+Location
+
+Global (On-chain C-Chain)
+
+Status
+
+Completed
+
+Immediate Result
+
+TVL Avalanche melonjak dari < $1M ke > $10M dalam bulan; Aave V3 dan Curve deploy di C-Chain; Benqi dan Trader Joe tumbuh pesat.
+
+Sources
+
+(HIGH) [Avalanche Foundation Rush Announcement, https://avalanche.foundation/avalanche-rush/]; (HIGH) [Ava Labs Blog Rush, https://www.avalabs.org/blog/avalanche-rush-liquidity-mining-incentives]; (HIGH) [Messari Avalanche Ecosystem Report Q4 2023, https://messari.io/report/avalanche-ecosystem-report-q4-2023]
+
+---
+
+Event ID
+
+EV-010
+
+Date
+
+2021-06
+
+Event Name
+
+Deployment Aave V3 di C-Chain Avalanche
+
+Event Type
+
+Integration
+
+Description
+
+Protokol lending terbesar Aave meluncurkan pasar V3 di C-Chain Avalanche sebagai bagian dari insentif Avalanche Rush, membawa blue-chip DeFi dan stablecoin borrowing ke ekosistem.
+
+Participants
+
+Aave; Avalanche Foundation; Ava Labs, Inc.
+
+Location
+
+C-Chain Avalanche (On-chain)
+
+Status
+
+Completed
+
+Immediate Result
+
+Aave menjadi protokol TVL terbesar awal di Avalanche; driver adopsi institusional dan retail ke C-Chain.
+
+Sources
+
+(HIGH) [Aave Avalanche Market, https://app.aave.com/markets/avalanche]; (HIGH) [Avalanche Foundation Rush Announcement, https://avalanche.foundation/avalanche-rush/]; (HIGH) [Snowtrace Aave Contracts, https://snowtrace.io/address/0x...]
+
+---
+
+Event ID
+
+EV-011
+
+Date
+
+2021-06
+
+Event Name
+
+Peluncuran Trader Joe (DEX Native) dan Benqi (Lending/Liquid Staking)
+
+Event Type
+
+Product
+
+Description
+
+Trader Joe (AMM DEX) dan Benqi (Lending & Liquid Staking sAVAX) meluncurkan mainnet di C-Chain, menjadi infrastruktur DeFi native fondasi ekosistem Avalanche.
+
+Participants
+
+Trader Joe; Benqi; Ava Labs, Inc.; Avalanche Community (Discord/Telegram/Forum)
+
+Location
+
+C-Chain Avalanche (On-chain)
+
+Status
+
+Completed
+
+Immediate Result
+
+Dua protokol native terbesar ekosistem lahir; JOE token dan QI token/sAVAX menjadi pilar liquidity dan yield.
+
+Sources
+
+(HIGH) [Trader Joe Site, https://traderjoexyz.com/]; (HIGH) [Benqi Site, https://benqi.fi/]; (HIGH) [Messari Trader Joe Report, https://messari.io/project/trader-joe]; (HIGH) [Messari Benqi Report, https://messari.io/project/benqi]
+
+---
+
+Event ID
+
+EV-012
+
+Date
+
+2021-11
+
+Event Name
+
+Peluncuran Subnet Pertama (Fungsi Subnet Mainnet Aktif)
+
+Event Type
+
+Technology
+
+Description
+
+Fungsi Subnet (L1 kustom) diaktifkan di mainnet Primary Network, memungkinkan validator set membuat blockchain sovran dengan VM sendiri; Subnet pertama produksi (seperti Crabada/Swimmer Network atau DeFi Kingdoms/Avalanche) mulai deploy.
+
+Participants
+
+Ava Labs, Inc.; Avalanche Validators (Validator Set); Ava Labs Engineering Team (Core Protocol Researchers)
+
+Location
+
+Primary Network (P-Chain)
+
+Status
+
+Completed
+
+Immediate Result
+
+Arsitektur multi-chain "Internet of Subnets" menjadi operasional; fondasi untuk AvaCloud dan enterprise adoption.
+
+Sources
+
+(HIGH) [Docs Subnets, https://docs.avax.network/docs/learn/subnets]; (HIGH) [Avascan Subnets List, https://avascan.info/blockchain/s]; (MEDIUM) [Ava Labs Blog Subnet Launch, https://www.avalabs.org/blog/subnets-mainnet]
+
+---
+
+Event ID
+
+EV-013
+
+Date
+
+2022-03
+
+Event Name
+
+Peluncuran Avalanche Warp Messaging (AWM)
+
+Event Type
+
+Technology
+
+Description
+
+Protokol messaging native antar-chain (Subnet-to-Subnet, Subnet-to-Primary) berbasis BLS Multi-signature diluncurkan di mainnet, mengaktifkan interoperabilitas trust-minimized di ekosistem Avalanche.
+
+Participants
+
+Ava Labs, Inc.; Ava Labs Engineering Team (Core Protocol Researchers); Avalanche Validators (Validator Set)
+
+Location
+
+Primary Network & Subnets (On-chain)
+
+Status
+
+Completed
+
+Immediate Result
+
+Komunikasi antar Subnet tanpa bridge eksternal menjadi mungkin; fondasi arsitektur Teleporter di masa depan.
+
+Sources
+
+(HIGH) [Docs AWM, https://docs.avax.network/docs/specifications/avalanche-warp-messaging]; (HIGH) [GitHub AWM Spec, https://github.com/ava-labs/avalanchego/blob/master/docs/specifications/avalanche-warp-messaging.md]
+
+---
+
+Event ID
+
+EV-014
+
+Date
+
+2022-06
+
+Event Name
+
+Peluncuran Core Wallet (Browser Extension & Mobile)
+
+Event Type
+
+Product
+
+Description
+
+Ava Labs meluncurkan Core Wallet resmi (ekstensi browser Chrome/Brave dan mobile iOS/Android) dengan fitur multi-chain (X/P/C-Chain), Subnet support, bridge terintegrasi, staking UI, dan portfolio.
+
+Participants
+
+Ava Labs, Inc.; Avalanche Community (Discord/Telegram/Forum)
+
+Location
+
+Global (Client-side App)
+
+Status
+
+Completed
+
+Immediate Result
+
+User experience terpadu untuk ekosistem Avalanche; pengganti perluasan MetaMask manual; onboarding non-teknis dipermudah.
+
+Sources
+
+(HIGH) [Core Website, https://core.app/]; (HIGH) [Chrome Web Store Core, https://chromewebstore.google.com/detail/core/]; (HIGH) [Ava Labs Products Core, https://www.avalabs.org/products/core]
+
+---
+
+Event ID
+
+EV-015
+
+Date
+
+2022-11
+
+Event Name
+
+Peluncuran AvaCloud (Managed Subnet Service)
+
+Event Type
+
+Product
+
+Description
+
+Ava Labs meluncurkan AvaCloud, layanan Web3 Launchpad fully-managed untuk deployment Subnet: provisioning validator, indexing, gasless transactions, fiat onramp, dan compliance tools bagi enterprise.
+
+Participants
+
+Ava Labs, Inc.; Deloitte; SK Planet (SK Telecom); T. Rowe Price (klien awal)
+
+Location
+
+Global (SaaS Platform)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Hambatan teknis menjalankan Subnet dihapus; percepatan adopsi enterprise (Deloitte, SK Planet, T. Rowe Price) dan game AAA (Shrapnel, Gunzilla).
+
+Sources
+
+(HIGH) [AvaCloud Site, https://avacloud.io/]; (HIGH) [Ava Labs Products AvaCloud, https://www.avalabs.org/products/avacloud]; (HIGH) [TechCrunch AvaCloud Launch, https://techcrunch.com/2022/11/03/ava-labs-avacloud/]
+
+---
+
+Event ID
+
+EV-016
+
+Date
+
+2022-11
+
+Event Name
+
+Rilis HyperSDK (Framework VM High-Performance)
+
+Event Type
+
+Technology
+
+Description
+
+Ava Labs merilis HyperSDK sebagai framework Rust open-source untuk membangun Virtual Machine (VM) kustom Subnet dengan throughput 10k+ TPS, modular, dan non-EVM, menggantikan perlu membangun dari nol.
+
+Participants
+
+Ava Labs, Inc.; Ava Labs Engineering Team (Core Protocol Researchers)
+
+Location
+
+GitHub (Open Source)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Developer dapat meluncurkan Subnet performa tinggi dalam hari bukan bulan; fondasi untuk game AAA (Shrapnel, Off The Grid) dan kebutuhan throughput enterprise.
+
+Sources
+
+(HIGH) [GitHub HyperSDK, https://github.com/ava-labs/hypersdk]; (HIGH) [Docs HyperSDK, https://docs.avax.network/docs/hypersdk]; (HIGH) [Ava Labs Blog HyperSDK, https://www.avalabs.org/blog/hypersdk]
+
+---
+
+Event ID
+
+EV-017
+
+Date
+
+2022-05
+
+Event Name
+
+Kerusakan Pasar Terra/Luna & Dampak ke TVL Avalanche
+
+Event Type
+
+Market
+
+Description
+
+Kecelakaan algoritmik UST/LUNA (Mei 2022) memicu crash pasar crypto global; TVL Avalanche turun drastis dari puncak ~$11M (Nov 2021) ke <$1M; harga AVAX koreksi >80%.
+
+Participants
+
+Avalanche Community (Discord/Telegram/Forum); Avalanche Foundation; Ava Labs, Inc.; Market Participants
+
+Location
+
+Global Markets
+
+Status
+
+Completed
+
+Immediate Result
+
+Konsolidasi ekosistem; fokus bergeser dari insentif mercenary (Rush) ke fundamental builder & enterprise; survival protokol native (Trader Joe, Benqi, Aave).
+
+Sources
+
+(HIGH) [DefiLlama Avalanche TVL History, https://defillama.com/chain/Avalanche]; (HIGH) [Messari Avalanche Report Q2 2022, https://messari.io/report/avalanche-ecosystem-report-q2-2022]; (MEDIUM) [CoinDesk Terra Contagion, https://www.coindesk.com/business/2022/05/12/terra-usd-luna-crash-contagion/]
+
+---
+
+Event ID
+
+EV-018
+
+Date
+
+2022-06
+
+Event Name
+
+Kebangkrutan Three Arrows Capital (3AC) - Investor Avalanche
+
+Event Type
+
+Organization
+
+Description
+
+Three Arrows Capital (3AC), peserta Strategic Sale AVAX 2020 ($42M total), mengajukan kebangkrutan (Chapter 15) setelah kegagalan Luna/UST dan posisi leverage; aset AVAX 3AC dilikuidasi oleh kurator.
+
+Participants
+
+Three Arrows Capital (3AC); Ava Labs, Inc.; Avalanche Foundation; Kurator Kebangkrutan (Teneo)
+
+Location
+
+Singapura / BVI / AS (Pengadilan)
+
+Status
+
+Completed
+
+Immediate Result
+
+Tekanan jual AVAX dari likuidasi aset 3AC; ketidakpastian alokasi token investor awal; Ava Labs/Foundation tidak terekspos operasional tapi reputasi investor terpengaruh.
+
+Sources
+
+(HIGH) [The Block 3AC Avalanche Allocation, https://www.theblock.co/post/156787/three-arrows-capital-avalanche-avax]; (HIGH) [CoinDesk 3AC Bankruptcy, https://www.coindesk.com/business/2022/07/01/three-arrows-capital-files-for-chapter-15-bankruptcy/]
+
+---
+
+Event ID
+
+EV-019
+
+Date
+
+2023-04
+
+Event Name
+
+Upgrade Jaringan Cortina (v1.10.x) Aktif di Mainnet
+
+Event Type
+
+Technology
+
+Description
+
+Upgrade Cortina diaktifkan di Primary Network: peningkatan performa P-Chain (staking/validator set), optimasi state sync, perbaikan fee market C-Chain, dan persiapan infrastruktur untuk Teleporter/HyperSDK.
+
+Participants
+
+Ava Labs, Inc.; Avalanche Validators (Validator Set); Ava Labs Engineering Team (Core Protocol Researchers)
+
+Location
+
+Primary Network (Global)
+
+Status
+
+Completed
+
+Immediate Result
+
+Efisiensi staking meningkat; latensi finality C-Chain diturunkan; fondasi teknis untuk messaging generasi baru (Teleporter) siap.
+
+Sources
+
+(HIGH) [Ava Labs Blog Cortina Upgrade, https://www.avalabs.org/blog/cortina-upgrade-mainnet]; (HIGH) [GitHub AvalancheGo Releases v1.10, https://github.com/ava-labs/avalanchego/releases/tag/v1.10.0]; (HIGH) [Docs Upgrades, https://docs.avax.network/docs/nodes/maintain/upgrading]
+
+---
+
+Event ID
+
+EV-020
+
+Date
+
+2023-09
+
+Event Name
+
+Peluncuran Teleporter (Inter-Subnet Messaging Generik)
+
+Event Type
+
+Technology
+
+Description
+
+Teleporter, standar messaging generik generasi baru menggantikan AWM, diluncurkan di mainnet: verifikasi on-chain ringan, dukungan tipe payload apa pun, dan kompatibilitas lintas VM (EVM, HyperSDK, dll) untuk interoperabilitas Subnet seamless.
+
+Participants
+
+Ava Labs, Inc.; Ava Labs Engineering Team (Core Protocol Researchers); Avalanche Validators (Validator Set)
+
+Location
+
+Primary Network & Subnets (On-chain)
+
+Status
+
+Completed
+
+Immediate Result
+
+Interoperabilitas Subnet standar universal live; pengembang tidak perlu custom bridge; fondasi "Internet of Subnets" betul-betul terealisasi.
+
+Sources
+
+(HIGH) [Docs Teleporter, https://docs.avax.network/docs/specifications/teleporter]; (HIGH) [Ava Labs Blog Teleporter Mainnet, https://www.avalabs.org/blog/teleporter-mainnet]
+
+---
+
+Event ID
+
+EV-021
+
+Date
+
+2023-09
+
+Event Name
+
+HyperSDK Mainnet & Subnet Produksi Pertama (Beam/Shrapnel)
+
+Event Type
+
+Launch
+
+Description
+
+Subnet pertama berbasis HyperSDK (Beam untuk gaming / Shrapnel Subnet) live di mainnet, mendemonstrasikan throughput 10k+ TPS dan finality sub-detik di lingkungan produksi nyata.
+
+Participants
+
+Ava Labs, Inc.; Shrapnel; Beam (Merit Circle); Ava Labs Engineering Team (Core Protocol Researchers)
+
+Location
+
+Subnet (On-chain)
+
+Status
+
+Completed
+
+Immediate Result
+
+Bukti konsep HyperSDK valid; menarik studio game AAA lain (Gunzilla, Nexon) ke arsitektur Subnet.
+
+Sources
+
+(HIGH) [Ava Labs Blog HyperSDK, https://www.avalabs.org/blog/hypersdk]; (HIGH) [Shrapnel Site, https://shrapnel.com/]; (MEDIUM) [Avascan Subnets List, https://avascan.info/blockchain/s]
+
+---
+
+Event ID
+
+EV-022
+
+Date
+
+2023-12
+
+Event Name
+
+Kemitraan MapleStory Universe (Nexon) - Subnet MSU
+
+Event Type
+
+Partnership
+
+Description
+
+Nexon (raksasa gaming Korea, $10B+ market cap) mengumumkan MapleStory Universe (MSU) dibangun di Subnet Avalanche via AvaCloud, membawa jutaan pengguna Web2 ke on-chain dengan NFT item dan token NXPC.
+
+Participants
+
+MapleStory Universe (Nexon); Ava Labs, Inc.; AvaCloud
+
+Location
+
+Seoul, Korea Selatan / Global (Subnet)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Validasi mass-market adoption Subnet; pipeline user acquisition terbesar dalam sejarah Avalanche; kepercayaan enterprise-grade untuk gaming.
+
+Sources
+
+(HIGH) [MapleStory Universe Site, https://maplestoryuniverse.nexon.com/]; (HIGH) [Ava Labs Blog Nexon, https://www.avalabs.org/blog/nexon-maplestory-avalanche]; (HIGH) [Nexon Press Release, https://nexon.co.jp/en/news/2023/12/...]
+
+---
+
+Event ID
+
+EV-023
+
+Date
+
+2023-08
+
+Event Name
+
+Kemitraan Gunzilla Games / Off The Grid (Subnet GUNZ)
+
+Event Type
+
+Partnership
+
+Description
+
+Gunzilla Games (studio AAA, pendanaan >$46M) meluncurkan Off The Grid (Battle Royale) di Subnet GUNZ via AvaCloud, dengan token GUN dan ekonomi NFT item fully on-chain.
+
+Participants
+
+Gunzilla Games; Ava Labs, Inc.; AvaCloud
+
+Location
+
+Frankfurt, Jerman / Global (Subnet)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Game AAA pertama fully on-chain economy di Subnet; showcase performa HyperSDK/AvaCloud untuk skala jutaan pemain.
+
+Sources
+
+(HIGH) [Gunzilla Games Site, https://gunz.io/]; (HIGH) [Ava Labs Blog Gunzilla, https://www.avalabs.org/blog/gunzilla-avalanche]
+
+---
+
+Event ID
+
+EV-024
+
+Date
+
+2022-06
+
+Event Name
+
+Kemitraan Shrapnel (Game AAA FPS Subnet)
+
+Event Type
+
+Partnership
+
+Description
+
+Shrapnel (game FPS extraction AAA, token SHRAP) bermitra dengan Ava Labs untuk membangun Subnet gaming sendiri menggunakan HyperSDK/AvaCloud, target early access 2024/2025.
+
+Participants
+
+Shrapnel; Ava Labs, Inc.; AvaCloud
+
+Location
+
+Seattle, WA, AS / Global (Subnet)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Flagship gaming Avalanche; validasi model "Subnet per game" untuk sovereignty dan throughput.
+
+Sources
+
+(HIGH) [Shrapnel Site, https://shrapnel.com/]; (HIGH) [Ava Labs Blog Shrapnel, https://www.avalabs.org/blog/shrapnel-avalanche]; (MEDIUM) [Epic Games Store Listing, https://store.epicgames.com/en-US/p/shrapnel]
+
+---
+
+Event ID
+
+EV-025
+
+Date
+
+2022-11
+
+Event Name
+
+Kemitraan Deloitte - Solusi Disaster Recovery (Close As You Go)
+
+Event Type
+
+Partnership
+
+Description
+
+Deloitte (Big 4) menggunakan AvaCloud/Subnet Avalanche untuk membangun platform "Close As You Go" (CAYG) verifikasi kredensial dan disaster recovery bagi pemerintah AS (FEMA), demonstrate enterprise adoption nyata.
+
+Participants
+
+Deloitte; Ava Labs, Inc.; AvaCloud
+
+Location
+
+New York, NY, AS / Washington DC, AS
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Use case enterprise non-finansial (public sector) valid; reputasi Avalanche sebagai "enterprise blockchain" terukir.
+
+Sources
+
+(HIGH) [Ava Labs Blog Deloitte, https://www.avalabs.org/blog/deloitte-avalanche-disaster-recovery]; (HIGH) [Deloitte Press Release CAYG, https://www2.deloitte.com/us/en/pages/consulting/articles/avalanche-deloitte-cayg.html]
+
+---
+
+Event ID
+
+EV-026
+
+Date
+
+2022-11
+
+Event Name
+
+Kemitraan SK Planet (SK Telecom) - Platform UPTN Web3
+
+Event Type
+
+Partnership
+
+Description
+
+SK Planet (anak SK Telecom, telco terbesar Korea) membangun UPTN (Web3 ecosystem platform) dan NFT ticketing di Subnet Avalanche via AvaCloud, target basis pengguna 30M+ SK Telecom.
+
+Participants
+
+SK Planet (SK Telecom); Ava Labs, Inc.; AvaCloud

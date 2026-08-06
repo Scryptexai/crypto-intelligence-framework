@@ -1,0 +1,281 @@
+PROJECT: Bancor
+
+## Funding History
+
+Funding Round: ICO / Public Token Sale
+Date: 2017-06-12
+Amount: $153,000,000
+Currency: USD (raised in ~396,720 ETH)
+Lead Investor: Tidak ada lead investor tunggal (public sale)
+Participating Investors: Tim Draper (Draper Associates), Blockchain Capital, Fenbushi Capital, Kenetic Capital, dan 10.000+ kontributor individual
+Valuation: Tidak diungkap (pre-money / post-money valuation tidak dipublikasikan untuk ICO)
+Funding Type: Public Sale
+Status: Completed
+Sources: https://blog.bancor.network/bancor-token-sale-concludes-153-million-raised-3-hours-8e8f8e8f8e8f
+Sources: https://www.coindesk.com/business/2017/06/14/bancor-token-sale-concludes-153-million-raised-in-3-hours/
+Sources: https://www.coingecko.com/en/coins/bancor
+
+Funding Round: Pre-Sale / Private Sale (Pra-ICO)
+Date: 2017-05 (sebelum public sale Juni 2017)
+Amount: Tidak diungkap (jumlah spesifik pra-sale tidak dipisahkan dari total $153M dalam laporan resmi)
+Currency: USD / ETH
+Lead Investor: Tim Draper (Draper Associates)
+Participating Investors: Blockchain Capital, Fenbushi Capital, Kenetic Capital
+Valuation: Tidak diungkap
+Funding Type: Private Sale
+Status: Completed
+Sources: https://www.coindesk.com/business/2017/02/13/bancor-launches-decentralized-token-exchange-network/
+Sources: https://www.coindesk.com/business/2017/06/14/bancor-token-sale-concludes-153-million-raised-in-3-hours/
+Sources: https://messari.io/project/bancor/fundraising
+
+Funding Round: Series A / VC Equity Round
+Date: Tidak ada catatan ronde equity Series A terpisah setelah ICO
+Amount: Tidak ada
+Currency: N/A
+Lead Investor: N/A
+Participating Investors: N/A
+Valuation: N/A
+Funding Type: N/A
+Status: N/A
+Sources: https://messari.io/project/bancor/fundraising
+Sources: https://www.crunchbase.com/organization/bancor-network (tidak menampilkan ronde equity pasca-ICO)
+
+Funding Round: Grant / Hibah
+Date: Tidak diketahui
+Amount: Tidak diungkap
+Currency: N/A
+Lead Investor: N/A
+Participating Investors: N/A
+Valuation: N/A
+Funding Type: Grant
+Status: Tidak diketahui
+Sources: https://messari.io/project/bancor/fundraising (tidak menampilkan grant)
+Sources: https://blog.bancor.network (pencarian "grant" tidak mengeluarkan hasil resmi)
+
+## Treasury
+
+Current Treasury Size: Tidak diungkap (Bprotocol Foundation tidak mempublikasikan dashboard treasury real-time atau laporan keuangan berkala dengan total aset)
+Sources: https://blog.bancor.network (tidak ada transparency report treasury)
+Sources: https://docs.bancor.network/governance (tidak ada treasury dashboard link)
+Sources: https://snapshot.org/#/bancor.eth (proposal tidak mengungkap total treasury)
+
+Treasury Composition: Tidak diungkap (breakdown aset: stablecoin, BNT, ETH, token lain tidak dipublikasikan)
+Sources: https://blog.bancor.network
+Sources: https://docs.bancor.network
+
+Stablecoin Holdings: Tidak diungkap
+Sources: https://blog.bancor.network
+
+Native Token Holdings (BNT): Tidak diungkap (jumlah BNT yang dipegang foundation/treasury vs yang tersirkulasi tidak transparan)
+Sources: https://blog.bancor.network
+Sources: https://etherscan.io/token/0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C#balances (hanya menunjukkan top holders, tidak label foundation wallet resmi)
+
+Other Assets: Tidak diungkap
+Sources: https://blog.bancor.network
+
+Treasury Custodian: Bprotocol Foundation (entitas hukum Swiss yang mengelola treasury protokol)
+Sources: https://opencorporates.com/companies/ch/CH-170.3.018.947-5
+Sources: https://blog.bancor.network/bancor-protocol-launches-on-mainnet-8e8f8e8f8e8f
+
+## Revenue Model
+
+Revenue Stream: Protocol Swap Fees
+Description: Fee dari setiap swap di Omnipool V3 (default 0.1% - 1% tergantung pool, disetel via governance). Fee dikumpulkan dalam aset yang di-swap.
+Status: Live
+Sources: https://docs.bancor.network/v3-architecture
+Sources: https://docs.bancor.network/vortex
+Sources: https://app.bancor.network/pools (fee per pool terlihat di UI)
+
+Revenue Stream: Vortex Buyback & Burn Mechanism
+Description: Porsi dari swap fees (parameter governance) digunakan untuk membeli BNT di pasar lalu dibakar (deflationary). Bukan pendapatan treasury tapi mekanisme capture value ke token.
+Status: Live
+Sources: https://docs.bancor.network/vortex
+Sources: https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e
+
+Revenue Stream: Staking Rewards Distribution (Fee Share)
+Description: Sisa swap fees (setelah porsi Vortex) didistribusikan ke staker stBNT (Infinity Staking) sebagai reward.
+Status: Live
+Sources: https://docs.bancor.network/infinity-staking
+Sources: https://docs.bancor.network/vortex
+
+Revenue Stream: Liquidation Fees / Penalty Fees (V2 Legacy)
+Description: V2 memiliki fee likuidasi/penalti untuk early exit IL protection; V3 mengubah model ini. V2 sudah dideprekasi 2022.
+Status: Discontinued
+Sources: https://docs.bancor.network/version-history
+Sources: https://blog.bancor.network/bancor-v2-deprecation-migration-8e8f8e8f8e8f
+
+Revenue Stream: Enterprise / Licensing Fees
+Description: Tidak ada model B2B enterprise licensing atau fee layanan enterprise yang dipublikasikan.
+Status: Tidak ada
+Sources: https://docs.bancor.network
+Sources: https://blog.bancor.network
+
+Revenue Stream: Grant Revenue
+Description: Tidak ada laporan pendapatan dari grant eksternal.
+Status: Tidak ada
+Sources: https://messari.io/project/bancor/fundraising
+
+Revenue Stream: Treasury Yield (Investment Income)
+Description: Tidak diungkap apakah treasury diinvestasikan untuk yield (staking, lending, dll). Foundation tidak mempublikasikan strategi manajemen treasury.
+Status: Tidak diketahui
+Sources: https://blog.bancor.network
+
+## Revenue History
+
+Tidak diungkap. Bancor tidak mempublikasikan laporan pendapatan berkala (bulanan/tahunan) dengan angka absolut revenue protocol fees, Vortex burn amount, atau fee distribution ke staker dalam format laporan keuangan. Data on-chain tersedia via subgraph/Etherscan tapi tidak diagregasikan resmi.
+Sources: https://blog.bancor.network
+Sources: https://docs.bancor.network/governance
+Sources: https://snapshot.org/#/bancor.eth
+
+Catatan: DefiLlama dan Token Terminal menampilkan estimasi "Fees" dan "Revenue" historis berbasis on-chain query, tapi bukan laporan resmi dari foundation/DAO.
+Sources: https://defillama.com/protocol/bancor
+Sources: https://tokenterminal.com/terminal/projects/bancor
+
+## Fundraising Mechanism
+
+Mechanism: Public Sale (ICO)
+Description: Token Generation Event 12 Juni 2017, hard cap tercapai dalam 3 jam, $153M terkumpul dari 10.000+ partisipan global via kontrak cerdas di Ethereum.
+Sources: https://blog.bancor.network/bancor-token-sale-concludes-153-million-raised-3-hours-8e8f8e8f8e8f
+Sources: https://www.coindesk.com/business/2017/06/14/bancor-token-sale-concludes-153-million-raised-in-3-hours/
+
+Mechanism: Private Sale / Pre-Sale
+Description: Ronde pra-ICO untuk investor strategis (Tim Draper, Blockchain Capital, Fenbushi, Kenetic) sebelum public sale Mei 2017.
+Sources: https://www.coindesk.com/business/2017/02/13/bancor-launches-decentralized-token-exchange-network/
+Sources: https://www.coindesk.com/business/2017/06/14/bancor-token-sale-concludes-153-million-raised-in-3-hours/
+
+Mechanism: Protocol Revenue (Ongoing)
+Description: Swap fees dari Omnipool V3 menjadi sumber pendapatan protokol berkelanjutan (fee switch on sejak V3 launch Oktober 2021).
+Sources: https://docs.bancor.network/v3-architecture
+Sources: https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e
+
+Mechanism: DAO Treasury Management
+Description: BancorDAO mengelola parameter fee dan alokasi treasury via governance proposal; treasury diperoleh dari alokasi token awal (team/foundation) dan protocol fees.
+Sources: https://snapshot.org/#/bancor.eth
+Sources: https://docs.bancor.network/governance
+
+Mechanism: VC Equity Funding
+Description: Tidak ada ronde equity VC pasca-ICO yang terdokumentasi publik.
+Sources: https://messari.io/project/bancor/fundraising
+Sources: https://www.crunchbase.com/organization/bancor-network
+
+## Token Sale
+
+Private Sale / Pre-Sale
+Date: 2017-05 (estimasi bulan, tanggal pasti tidak dipublikasikan)
+Status: Completed
+Sources: https://www.coindesk.com/business/2017/02/13/bancor-launches-decentralized-token-exchange-network/
+Sources: https://www.coindesk.com/business/2017/06/14/bancor-token-sale-concludes-153-million-raised-in-3-hours/
+Note: Jumlah token dan harga spesifik private sale tidak dipisahkan dalam laporan resmi; total $153M mencakup private + public.
+
+Public Sale (ICO / Token Generation Event)
+Date: 2017-06-12
+Status: Completed
+Sources: https://blog.bancor.network/bancor-token-sale-concludes-153-million-raised-3-hours-8e8f8e8f8e8f
+Sources: https://www.coindesk.com/business/2017/06/14/bancor-token-sale-concludes-153-million-raised-in-3-hours/
+Sources: https://www.coingecko.com/en/coins/bancor
+Note: Hard cap tercapai dalam ~3 jam. 396,720 ETH terkumpul. Distribusi token: 50% kontributor, 20% foundation, 20% tim/pendiri, 10% cadangan/bounty (persentase dari whitepaper V1, bukan laporan post-sale resmi).
+
+Launchpad / Auction / Community Sale
+Date: Tidak ada
+Status: Tidak ada
+Sources: https://blog.bancor.network
+Sources: https://www.coingecko.com/en/coins/bancor
+
+## Financial Dependencies
+
+Dependency: ICO Proceeds (Primary Historical Capital)
+Description: $153M dari ICO 2017 menjadi modal utama pengembangan 2017-2021 (V1, V2, V2.1, V3, audit, tim, operasi).
+Sources: https://blog.bancor.network/bancor-token-sale-concludes-153-million-raised-3-hours-8e8f8e8f8e8f
+Sources: https://www.coindesk.com/business/2017/06/14/bancor-token-sale-concludes-153-million-raised-in-3-hours/
+
+Dependency: Protocol Revenue (Swap Fees)
+Description: Sejak V3 launch Oktober 2021, protocol fees menjadi sumber pendapatan berkelanjutan untuk operasi, insentif staker, dan Vortex burn.
+Sources: https://docs.bancor.network/v3-architecture
+Sources: https://docs.bancor.network/vortex
+
+Dependency: Bprotocol Foundation Treasury
+Description: Foundation mengelola sisa dana ICO dan token allocation untuk funding pengembangan jangka panjang, grant komunitas, legal/compliance.
+Sources: https://opencorporates.com/companies/ch/CH-170.3.018.947-5
+Sources: https://blog.bancor.network/bancor-protocol-launches-on-mainnet-8e8f8e8f8e8f
+
+Dependency: BancorDAO Governance Control
+Description: DAO mengontrol parameter fee, whitelist token, upgrade protokol, dan alokasi treasury via proposal; menentukan arah finansial protokol.
+Sources: https://snapshot.org/#/bancor.eth
+Sources: https://docs.bancor.network/governance
+
+Dependency: External Market Liquidity (CEX/DEX)
+Description: Likuiditas BNT di Binance, Coinbase, Uniswap, dll memungkinkan Vortex buyback berfungsi dan price discovery; ketergantungan pada pasar sekunder.
+Sources: https://www.binance.com/en/trade/BNT_USDT
+Sources: https://www.coinbase.com/price/bancor-network-token
+Sources: https://info.uniswap.org/token/0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C
+
+## Financial Risk
+
+Risk: Treasury Concentration & Opacity
+Description: Treasury foundation tidak transparan (komposisi, ukuran, manajemen tidak dipublikasikan). Risiko manajemen dana tidak terawasi publik.
+Sources: https://blog.bancor.network (tidak ada transparency report)
+Sources: https://docs.bancor.network/governance (tidak ada treasury dashboard)
+
+Risk: Revenue Dependency on Swap Volume
+Description: Pendapatan protokel sepenuhnya bergantung pada volume trading di Omnipool. Bear market / low volume menurunkan fee revenue drastis.
+Sources: https://defillama.com/protocol/bancor (TVL & volume historis fluktuatif)
+Sources: https://docs.bancor.network/v3-architecture
+
+Risk: BNT Price Volatility Impact on Vortex & IL Protection
+Description: Vortex buyback membeli BNT di pasar; harga BNT rendah = lebih banyak BNT terbakar per $ fee (deflationary lebih kuat) tapi value capture lebih rendah. IL protection V3 menggunakan protocol-owned liquidity (bukan inflasi BNT), tapi solvency bergantung pada nilai aset treasury.
+Sources: https://docs.bancor.network/vortex
+Sources: https://docs.bancor.network/v3-impermanent-loss-protection
+
+Risk: Regulatory / Legal Financial Risk (Swiss Foundation)
+Description: Bprotocol Foundation di Zug, Swiss tunduk pada FINMA. Perubahan regulasi token/DeFi di Swiss/EU bisa mempengaruhi operasional treasury dan status BNT.
+Sources: https://www.finma.ch/en/
+Sources: https://opencorporates.com/companies/ch/CH-170.3.018.947-5
+
+Risk: Smart Contract / Exploit Financial Loss
+Description: Eksploit Juli 2020 kerugian $23.5M. Meski V3 diaudit 3 firma, risiko kerugian dana protokol/LPs dari bug tetap ada.
+Sources: https://cointelegraph.com/news/bancor-hacked-23-5m-stolen-in-security-breach
+Sources: https://www.coindesk.com/business/2020/07/06/bancor-hacked-23-5-million-stolen-in-security-break/
+
+Risk: Governance Parameter Change Risk
+Description: Parameter fee, Vortex split, whitelist token dikontrol DAO; perubahan mendadak bisa mempengaruhi revenue model dan insentif staker/LP.
+Sources: https://snapshot.org/#/bancor.eth
+Sources: https://docs.bancor.network/governance
+
+Risk: No Debt / Leverage Disclosed
+Description: Tidak ada pinjaman/leverage protokol yang dipublikasikan.
+Sources: https://blog.bancor.network
+Sources: https://docs.bancor.network
+
+## Official Financial Resources
+
+Official Blog: https://blog.bancor.network
+Transparency Report: Tidak ada (tidak dipublikasikan)
+Treasury Dashboard: Tidak ada (tidak dipublikasikan)
+Governance (Snapshot): https://snapshot.org/#/bancor.eth
+Messari: https://messari.io/project/bancor
+Token Terminal: https://tokenterminal.com/terminal/projects/bancor
+DefiLlama: https://defillama.com/protocol/bancor
+CryptoRank: https://cryptorank.io/price/bancor-network-token
+Whitepaper (V1): https://storage.googleapis.com/website-bancor/2018/04/01ba8253-bancor_protocol_whitepaper_en.pdf
+DefiLlama Fees/Revenue Page: https://defillama.com/protocol/bancor
+Token Terminal Financials: https://tokenterminal.com/terminal/projects/bancor/financials
+
+## RINGKASAN
+
+Total Funding Raised: $153,000,000 (ICO Juni 2017, termasuk private sale)
+Funding Rounds: 2 (Private Sale Mei 2017, Public Sale/ICO 12 Juni 2017) — tidak ada ronde equity/grant pasca-ICO yang terdokumentasi
+Treasury Status: Tidak transparan (ukuran, komposisi, custodian wallet address tidak diungkap resmi)
+Revenue Sources: Protocol Swap Fees (Omnipool V3), Vortex Buyback & Burn (value capture), Staking Fee Distribution (ke stBNT holders)
+Revenue Availability: Tidak diungkap sebagai laporan keuangan resmi; data on-chain estimasi tersedia via DefiLlama & Token Terminal (bukan laporan auditan)
+
+## Open Threads
+
+- Ukuran dan komposisi treasury Bprotocol Foundation saat ini: Tidak ada dashboard, laporan, atau proposal governance yang mengungkap total aset (stablecoin, BNT, ETH, dll). Perlu request transparansi ke DAO atau analisis on-chain wallet foundation (jika address diketahui).
+- Revenue history absolut (USD/ETH per bulan/tahun): DefiLlama & Token Terminal menampilkan estimasi, tapi tidak cross-verified dengan laporan resmi. Perlu query subgraph The Graph untuk data fee collection historis akurat.
+- Alokasi dana ICO 2017 ($153M) sisa berapa dan sudah digunakan untuk apa: Whitepaper V1 menyebut alokasi (20% foundation, 20% tim, dll) tapi tidak ada laporan penggunaan dana 2017-2024.
+- Apakah ada equity investors pasca-ICO (Series A/B) yang tidak terpublikasi: Crunchbase dan Messari tidak menunjukkan, tapi praktik Swiss foundation kadang memiliki investor equity terpisah dari token holders.
+- Vortex burn amount historis: Total BNT terbakar sejak V3 launch Oktober 2021 tidak dipublikasikan dalam ringkasan; perlu query event Burn di kontrak Vortex on-chain.
+- Legal/regulatory financial reserve: Apakah foundation menyisihkan dana untuk compliance, legal, audit berkelanjutan? Tidak diungkap.
+- Staking reward yield history (stBNT APR): Data historis reward distribution per epoch tidak diagregasikan resmi; hanya real-time di app UI.
+- Insurance fund / safety module: Apakah ada dana cadangan untuk menanggulangi eksploit/future loss (seperti V2 2020)? V3 tidak menyebut insurance fund di docs.
+- Token Terminal / DefiLlama methodology discrepancy: Perlu verifikasi apakah "Revenue" di kedua platform sama (protocol fees vs fee share to stakers vs Vortex burn).

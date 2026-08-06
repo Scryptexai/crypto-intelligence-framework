@@ -1,0 +1,479 @@
+PROJECT: Axie Infinity
+
+## Ecosystem Position
+
+Primary Sector: Blockchain Gaming / Play-to-Earn / NFT-based Turn-based Strategy Game / Metaverse Platform (HIGH) [Whitepaper v1.1, https://whitepaper.axieinfinity.com/; Messari, https://messari.io/asset/axie-infinity/profile]
+Secondary Sector: Appchain Infrastructure / EVM Sidechain Ecosystem / DeFi (AMM DEX, Bridge, Staking) / NFT Marketplace / Naming Service (HIGH) [Ronin Network Docs, https://docs.roninchain.com/; Ronin Ecosystem Page, https://roninchain.com/ecosystem]
+Primary Chain: Ronin Network (EVM Sidechain, Chain ID 2020) (HIGH) [Ronin Docs Architecture, https://docs.roninchain.com/ronin/architecture/overview; Chainlist Ronin, https://chainlist.org/chain/2020]
+Supported Chains: Ethereum Mainnet (Settlement Layer, Bridge Destination); Ronin Testnet Saigon (Chain ID 2021) (HIGH) [Ronin Bridge Docs, https://docs.roninchain.com/ronin/bridges/ronin-bridge; Ronin Docs Testnet, https://docs.roninchain.com/ronin/testnet/overview]
+Sources: https://whitepaper.axieinfinity.com/; https://docs.roninchain.com/; https://roninchain.com/ecosystem; https://messari.io/asset/axie-infinity/profile
+
+## External Dependencies
+
+Dependency Name: Ethereum
+Dependency Type: Chain
+Purpose: Settlement layer untuk finalitas bridge, keamanan token ERC-20 asli (AXS, SLP), validator set awal PoA, oracle anchor (Chainlink feeds di Ethereum mainnet dirujuk)
+Criticality: Critical
+Status: Live
+Related Entity: Ethereum
+Related Technology Component: Ronin Bridge (Lock/Mint), AXS/SLP ERC-20 Contracts, Chainlink Price Feeds
+Sources: (HIGH) [Ronin Bridge Docs, https://docs.roninchain.com/ronin/bridges/ronin-bridge]; [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]; [Chainlink Blog Ronin, https://blog.chain.link/chainlink-price-feeds-ronin-network/]
+
+Dependency Name: Ronin Bridge
+Dependency Type: Bridge
+Purpose: Canonical bridge untuk transfer aset dua arah (ETH, USDC, AXS, SLP, NFT) antara Ethereum dan Ronin; threshold signature validator set
+Criticality: Critical
+Status: Live (dengan upgrade keamanan pasca-Maret 2022)
+Related Entity: Ronin Bridge
+Related Technology Component: Ronin Bridge Contracts (Ethereum & Ronin), Bridge Operator/Relayer, Emergency Pause Multisig
+Sources: (HIGH) [Ronin Bridge Docs, https://docs.roninchain.com/ronin/bridges/ronin-bridge]; [Blog Ronin Bridge Reopening, https://blog.roninchain.com/ronin-bridge-reopening]; [CertiK Audit Ronin Bridge, https://www.certik.com/projects/ronin-network]
+
+Dependency Name: Chainlink
+Dependency Type: Oracle
+Purpose: Price Feeds untuk AXS, SLP, RON, WETH, USDC (digunakan Katana DEX, lending protocols); VRF untuk randomness game
+Criticality: High
+Status: Live
+Related Entity: Chainlink
+Related Technology Component: Katana DEX (pricing), Game Server (VRF), Ronin Bridge (price reference)
+Sources: (HIGH) [Chainlink Blog Ronin Integration, https://blog.chain.link/chainlink-price-feeds-ronin-network/]; [Ronin Docs Oracle, https://docs.roninchain.com/ronin/oracles/chainlink]; [Axie Docs Game Mechanics, https://docs.axieinfinity.com/game-mechanics/]
+
+Dependency Name: Google Cloud Platform (GCP)
+Dependency Type: Cloud / Infrastructure
+Purpose: Hosting validator node, indexer, API gateway, game server, Kubernetes cluster (GKE); DDoS protection via Cloudflare (CDN)
+Criticality: High
+Status: Live
+Related Entity: Google Cloud
+Related Technology Component: Ronin Validator Node, Custom Indexer (PostgreSQL + Hasura), Game Server (Authoritative Battle), Ronin Explorer API
+Sources: (HIGH) [Google Cloud Blog Ronin Validator, https://cloud.google.com/blog/topics/web3/google-cloud-becomes-ronin-validator]; [Ronin Docs Infrastructure, https://docs.roninchain.com/ronin/running-a-node/infrastructure]; [Ronin Validator Guide, https://docs.roninchain.com/ronin/running-a-node/validator-guide]
+
+Dependency Name: The Graph
+Dependency Type: Data Provider / Indexing
+Purpose: Subgraph indexing untuk data on-chain Ronin (token transfer, DEX swap, NFT mint, staking); digunakan frontend dApp
+Criticality: High
+Status: Live
+Related Entity: The Graph
+Related Technology Component: Ronin Subgraphs, Katana DEX Frontend, Mavis Market Frontend, Staking Dashboard
+Sources: (HIGH) [The Graph Ronin Explorer, https://thegraph.com/explorer/subgraphs?network=ronin]; [Ronin Docs Developers, https://docs.roninchain.com/ronin/developers/overview]; [Katana UI, https://katana.roninchain.com/]
+
+Dependency Name: CertiK
+Dependency Type: Security
+Purpose: Auditor keamanan smart contract utama (Ronin Bridge, Katana, Mavis Market, Staking, RON Token, Axie Core); Skynet monitoring on-chain
+Criticality: High
+Status: Live (berkala)
+Related Entity: CertiK
+Related Technology Component: Ronin Bridge Contracts, Katana DEX Contracts, Mavis Market Contracts, Staking Contracts, RON Token Contract
+Sources: (HIGH) [CertiK Ronin Network, https://www.certik.com/projects/ronin-network]; [CertiK Axie Infinity, https://www.certik.com/projects/axie-infinity]; [Ronin Docs Audits, https://docs.roninchain.com/ronin/security/audits]
+
+Dependency Name: Verichains
+Dependency Type: Security
+Purpose: Auditor keamanan (Vietnam) untuk Ronin Bridge, Katana, Staking, RON Token; audit berkala
+Criticality: High
+Status: Live (berkala)
+Related Entity: Verichains
+Related Technology Component: Ronin Bridge Contracts, Katana DEX Contracts, Staking Contracts, RON Token Contract
+Sources: (HIGH) [Verichains Audit Reports, https://verichains.io/audit-reports/]; [Ronin Docs Audits, https://docs.roninchain.com/ronin/security/audits]; [Axie Blog Security, https://axieinfinity.medium.com/security-updates-]
+
+Dependency Name: PeckShield
+Dependency Type: Security
+Purpose: Auditor keamanan tambahan (pasca-exploit Ronin Bridge, Mavis Market, RNS); vulnerability assessment
+Criticality: High
+Status: Live (berkala)
+Related Entity: PeckShield
+Related Technology Component: Ronin Bridge Contracts (root cause analysis), Mavis Market Contracts, RNS Contracts
+Sources: (HIGH) [PeckShield Publications, https://peckshield.com/publications/]; [Blog Ronin Post-Mortem, https://blog.roninchain.com/post-mortem-ronin-bridge-exploit]; [Ronin Docs Audits, https://docs.roninchain.com/ronin/security/audits]
+
+Dependency Name: Immunefi
+Dependency Type: Security
+Purpose: Bug bounty platform program resmi Ronin & Axie (reward hingga $500k untuk critical)
+Criticality: High
+Status: Live
+Related Entity: Immunefi
+Related Technology Component: Semua smart contract Ronin & Axie (Bridge, DEX, Marketplace, Staking, Game, Wallet)
+Sources: (HIGH) [Immunefi Ronin Bounty, https://immunefi.com/bounty/ronin/]; [Ronin Docs Security, https://docs.roninchain.com/ronin/security/overview]; [Axie Blog Bug Bounty, https://axieinfinity.medium.com/bug-bounty-program-]
+
+Dependency Name: Cloudflare
+Dependency Type: Infrastructure / CDN
+Purpose: CDN untuk static assets, DDoS protection, distribusi Ronin Wallet extension
+Criticality: Medium
+Status: Live
+Related Entity: Cloudflare
+Related Technology Component: Ronin Wallet Extension Distribution, Mavis Market Static Assets, Ronin Explorer Frontend
+Sources: (MEDIUM) [Ronin Wallet Chrome Web Store, https://chrome.google.com/webstore/detail/ronin-wallet/]; [Ronin Docs Infrastructure, https://docs.roninchain.com/ronin/running-a-node/infrastructure]; [Cloudflare Web3, https://www.cloudflare.com/web3/]
+
+Dependency Name: HashiCorp Vault
+Dependency Type: Infrastructure / Secrets Management
+Purpose: Manajemen secrets validator keys, API keys, bridge operator keys
+Criticality: High
+Status: Live
+Related Entity: HashiCorp
+Related Technology Component: Ronin Validator Node, Bridge Operator/Relayer, Indexer API Keys
+Sources: (HIGH) [Ronin Validator Guide, https://docs.roninchain.com/ronin/running-a-node/validator-guide]; [Ronin Docs Infrastructure, https://docs.roninchain.com/ronin/running-a-node/infrastructure]; [HashiCorp Vault, https://www.vaultproject.io/]
+
+Dependency Name: Biconomy / Gelato
+Dependency Type: Service / Account Abstraction
+Purpose: Relayer untuk gasless transaction / social recovery (integrasi parsial, ERC-4337 belum native di Ronin Mainnet per 2024)
+Criticality: Low
+Status: Planned / Partial Integration
+Related Entity: Biconomy; Gelato
+Related Technology Component: Ronin Wallet, Ronin SDK, dApp Frontend (Katana, Mavis Market)
+Sources: (MEDIUM) [Ronin Docs Account Abstraction, https://docs.roninchain.com/ronin/account-abstraction/overview]; [Biconomy Ronin Integration, https://www.biconomy.io/chains/ronin]; [Gelato Network, https://gelato.network/]
+
+Dependency Name: Unity Engine
+Dependency Type: SDK / Game Engine
+Purpose: Game client development (Origins, Homeland, Raylights) menggunakan C#/.NET; Unity Cloud Build untuk CI/CD
+Criticality: High
+Status: Live
+Related Entity: Unity Technologies
+Related Technology Component: Axie Unity Client (Origins, Homeland, Raylights), Unity SDK (GitHub axieinfinity/unity-sdk)
+Sources: (HIGH) [Axie Origins Website, https://origins.axieinfinity.com/]; [GitHub Axie Unity SDK, https://github.com/axieinfinity/unity-sdk]; [Unity Cloud Build, https://unity.com/products/unity-cloud-build]
+
+Dependency Name: Ledger
+Dependency Type: Hardware Wallet
+Purpose: Hardware wallet support untuk Ronin Wallet (signing transaksi aman)
+Criticality: Medium
+Status: Live
+Related Entity: Ledger
+Related Technology Component: Ronin Wallet (Browser Extension & Mobile), Ronin SDK
+Sources: (HIGH) [Ronin Wallet Docs, https://docs.roninchain.com/ronin/wallet/overview]; [Ledger Supported Assets, https://www.ledger.com/supported-crypto-assets]; [Ronin Wallet Website, https://wallet.roninchain.com/]
+
+## Major Integrations
+
+Integration Name: Ronin Bridge ↔ Ethereum Mainnet
+Integrated With: Ethereum
+Purpose: Transfer aset dua arah (LOCK/MINT) untuk ETH, USDC, AXS, SLP, NFT (Axie, Land, Item, RNS); finalitas deposit 12 block Ethereum (~3 menit), withdraw timelag 24 jam
+Status: Live
+Related Historical Event ID: EV-008 (Ronin Mainnet Launch), EV-014 (Bridge Exploit), EV-015 (Bridge Reopening)
+Sources: (HIGH) [Ronin Bridge Docs, https://docs.roninchain.com/ronin/bridges/ronin-bridge]; [Blog Ronin Bridge Reopening, https://blog.roninchain.com/ronin-bridge-reopening]; [Axie Blog Ronin Mainnet, https://axieinfinity.medium.com/ronin-mainnet-launch-9-february-2021]
+
+Integration Name: Katana DEX ↔ Chainlink Price Feeds
+Integrated With: Chainlink
+Purpose: Oracle harga on-chain untuk perhitungan swap, liquidation (lending), dan TWAP; feed: AXS/USD, SLP/USD, RON/USD, WETH/USD, USDC/USD
+Status: Live
+Related Historical Event ID: EV-010 (Katana DEX Launch)
+Sources: (HIGH) [Chainlink Blog Ronin Integration, https://blog.chain.link/chainlink-price-feeds-ronin-network/]; [Katana Docs, https://docs.roninchain.com/ronin/dex/katana]; [Ronin Docs Oracle, https://docs.roninchain.com/ronin/oracles/chainlink]
+
+Integration Name: Ronin Validator Set ↔ Google Cloud
+Integrated With: Google Cloud
+Purpose: Google Cloud sebagai validator node operator (infrastructure provider) dalam konsensus DPoS Ronin; menyediakan node reliability & uptime
+Status: Live
+Related Historical Event ID: EV-013 (Google Cloud Bergabung sebagai Validator Ronin)
+Sources: (HIGH) [Google Cloud Blog Ronin Validator, https://cloud.google.com/blog/topics/web3/google-cloud-becomes-ronin-validator]; [Ronin Explorer Validators, https://explorer.roninchain.com/validators]; [Axie Blog Google Cloud, https://axieinfinity.medium.com/google-cloud-joins-ronin-as-a-validator-]
+
+Integration Name: Ronin Validator Set ↔ Binance
+Integrated With: Binance
+Purpose: Binance sebagai validator awal (PoA) dan terus bertindak validator DPoS; juga exchange listing utama AXS/SLP/RON
+Status: Live
+Related Historical Event ID: EV-008 (Ronin Mainnet Launch), EV-005 (AXS Launchpad), EV-009 (Coinbase Listing - separate), EV-015 (Bridge Reopening Binance Funding)
+Sources: (HIGH) [Ronin Explorer Validators, https://explorer.roninchain.com/validators]; [Binance Launchpad AXS, https://www.binance.com/en/blog/421448824684900352]; [Blog Ronin Bridge Reopening, https://blog.roninchain.com/ronin-bridge-reopening]
+
+Integration Name: Ronin Validator Set ↔ Animoca Brands
+Integrated With: Animoca Brands
+Purpose: Animoca Brands sebagai validator Ronin (PoA & DPoS); investor strategis & mitra metaverse
+Status: Live
+Related Historical Event ID: EV-008 (Ronin Mainnet Launch), EV-006 (Series A Animoca)
+Sources: (HIGH) [Ronin Explorer Validators, https://explorer.roninchain.com/validators]; [Animoca Brands Portfolio, https://animocabrands.com/portfolio/]; [Crunchbase Sky Mavis Funding, https://www.crunchbase.com/organization/sky-mavis/funding_rounds]
+
+Integration Name: Ronin Validator Set ↔ Hashed
+Integrated With: Hashed
+Purpose: Hashed sebagai validator Ronin (PoA & DPoS); investor awal & incubator ekosistem Korea/Asia
+Status: Live
+Related Historical Event ID: EV-008 (Ronin Mainnet Launch), EV-006 (Series A Hashed)
+Sources: (HIGH) [Ronin Explorer Validators, https://explorer.roninchain.com/validators]; [Hashed Portfolio, https://hashed.com/portfolio/]; [Crunchbase Sky Mavis Funding, https://www.crunchbase.com/organization/sky-mavis/funding_rounds]
+
+Integration Name: Ronin Validator Set ↔ Delphi Digital
+Integrated With: Delphi Digital
+Purpose: Delphi Digital sebagai validator Ronin (PoA & DPoS); investor awal & penasihat tokenomics
+Status: Live
+Related Historical Event ID: EV-008 (Ronin Mainnet Launch), EV-006 (Series A Delphi)
+Sources: (HIGH) [Ronin Explorer Validators, https://explorer.roninchain.com/validators]; [Delphi Digital Portfolio, https://delphidigital.io/portfolio/]; [Crunchbase Sky Mavis Funding, https://www.crunchbase.com/organization/sky-mavis/funding_rounds]
+
+Integration Name: Ronin Validator Set ↔ Mechanism Capital
+Integrated With: Mechanism Capital
+Purpose: Mechanism Capital sebagai validator Ronin (PoA & DPoS); investor awal fokus DeFi/Gaming
+Status: Live
+Related Historical Event ID: EV-008 (Ronin Mainnet Launch), EV-006 (Series A Mechanism)
+Sources: (HIGH) [Ronin Explorer Validators, https://explorer.roninchain.com/validators]; [Mechanism Capital Portfolio, https://mechanism.capital/portfolio/]; [Crunchbase Sky Mavis Funding, https://www.crunchbase.com/organization/sky-mavis/funding_rounds]
+
+Integration Name: Ronin Validator Set ↔ DeFiance Capital
+Integrated With: DeFiance Capital
+Purpose: DeFiance Capital sebagai validator Ronin (PoA & DPoS); investor awal manajemen aset gaming/DeFi
+Status: Live
+Related Historical Event ID: EV-008 (Ronin Mainnet Launch), EV-006 (Series A DeFiance)
+Sources: (HIGH) [Ronin Explorer Validators, https://explorer.roninchain.com/validators]; [DeFiance Capital Portfolio, https://defiancecapital.com/portfolio/]; [Crunchbase Sky Mavis Funding, https://www.crunchbase.com/organization/sky-mavis/funding_rounds]
+
+Integration Name: Axie Infinity Game ↔ Yield Guild Games (YGG)
+Integrated With: Yield Guild Games (YGG)
+Purpose: Guild scholarship terbesar; mengelola scholar, menyediakan Axie NFT pinjaman, profit-sharing SLP, governance AXS participation
+Status: Ongoing
+Related Historical Event ID: EV-026 (Partisipasi YGG sebagai Guild Scholarship Terbesar)
+Sources: (HIGH) [YGG Website, https://yieldguild.io/]; [Axie Blog YGG Partnership, https://axieinfinity.medium.com/yield-guild-games-ygg-axie-infinity-]; [CoinDesk YGG Axie, https://www.coindesk.com/business/2021/05/26/yield-guild-games-raises-1-325m-for-play-to-earn-gaming/]
+
+Integration Name: Ronin Ecosystem ↔ Pixels (Game Migration)
+Integrated With: Pixels
+Purpose: Game web3 Pixels bermigrasi ke Ronin Network; memanfaatkan Ronin Wallet, Mavis Market, Katana DEX, komunitas Axie
+Status: Live
+Related Historical Event ID: EV-025 (Ekspansi Ekosistem Ronin — Game Third-Party Migrasi ke Ronin)
+Sources: (HIGH) [Ronin Ecosystem Page, https://roninchain.com/ecosystem]; [Pixels Website, https://www.pixels.xyz/]; [Axie Blog Welcome Pixels, https://axieinfinity.medium.com/welcome-pixels-to-ronin-]
+
+Integration Name: Ronin Ecosystem ↔ Kuroro Beasts
+Integrated With: Kuroro Beasts
+Purpose: Game RPG web3 Kuroro Beasts bermigrasi/launch di Ronin; integrasi Ronin Wallet, Mavis Market
+Status: Live
+Related Historical Event ID: EV-025 (Ekspansi Ekosistem Ronin)
+Sources: (HIGH) [Ronin Ecosystem Page, https://roninchain.com/ecosystem]; [Kuroro Beasts Website, https://kuroro.com/]; [Axie Blog Ronin Ecosystem, https://axieinfinity.medium.com/]
+
+Integration Name: Ronin Ecosystem ↔ Zoids Wild Arena
+Integrated With: Zoids Wild Arena
+Purpose: Game berbasis IP Zoids launch di Ronin; integrasi NFT, marketplace, wallet
+Status: Live
+Related Historical Event ID: EV-025 (Ekspansi Ekosistem Ronin)
+Sources: (HIGH) [Ronin Ecosystem Page, https://roninchain.com/ecosystem]; [Zoids Wild Arena, https://zoidswildarena.com/]; [Axie Blog Ronin Ecosystem, https://axieinfinity.medium.com/]
+
+Integration Name: Ronin Ecosystem ↔ The Machines Arena
+Integrated With: The Machines Arena
+Purpose: Game TPS web3 launch di Ronin; integrasi Ronin SDK, Wallet, Marketplace
+Status: Live
+Related Historical Event ID: EV-025 (Ekspansi Ekosistem Ronin)
+Sources: (HIGH) [Ronin Ecosystem Page, https://roninchain.com/ecosystem]; [The Machines Arena Website, https://themachinesarena.com/]; [Axie Blog Ronin Ecosystem, https://axieinfinity.medium.com/]
+
+Integration Name: Ronin Name Service (RNS) ↔ Mavis Market / Ronin Wallet
+Integrated With: Mavis Market; Ronin Wallet
+Purpose: Domain .ron terintegrasi marketplace (jual beli domain) dan wallet (resolusi alamat, avatar)
+Status: Live
+Related Historical Event ID: EV-021 (Peluncuran Ronin Name Service)
+Sources: (HIGH) [RNS Website, https://rns.roninchain.com/]; [Mavis Market RNS Collection, https://marketplace.roninchain.com/collections/ronin-name-service]; [Ronin Wallet Docs, https://docs.roninchain.com/ronin/wallet/overview]
+
+## Infrastructure Providers
+
+Provider: Google Cloud Platform (GCP)
+Service: Validator Node Hosting (GKE Kubernetes), Indexer Infrastructure, API Gateway, Game Server (Authoritative Battle Simulation), Load Balancer, Cloud Storage, Cloudflare CDN Integration
+Criticality: High
+Status: Live
+Sources: https://cloud.google.com/blog/topics/web3/google-cloud-becomes-ronin-validator
+Sources: https://docs.roninchain.com/ronin/running-a-node/infrastructure
+Sources: https://docs.roninchain.com/ronin/running-a-node/validator-guide
+
+Provider: Amazon Web Services (AWS)
+Service: Backup/Failover Infrastructure untuk layanan non-validator (redundansi)
+Criticality: Medium
+Status: Live
+Sources: https://docs.roninchain.com/ronin/running-a-node/infrastructure
+Sources: https://github.com/sky-mavis
+Sources: https://aws.amazon.com/blockchain/
+
+Provider: Cloudflare
+Service: CDN (Static Assets, Ronin Wallet Extension Distribution), DDoS Protection, WAF, DNS Management
+Criticality: Medium
+Status: Live
+Sources: https://chrome.google.com/webstore/detail/ronin-wallet/
+Sources: https://docs.roninchain.com/ronin/running-a-node/infrastructure
+Sources: https://www.cloudflare.com/web3/
+
+Provider: HashiCorp
+Service: Vault (Secrets Management untuk Validator Keys, Bridge Operator Keys, API Keys)
+Criticality: High
+Status: Live
+Sources: https://docs.roninchain.com/ronin/running-a-node/validator-guide
+Sources: https://docs.roninchain.com/ronin/running-a-node/infrastructure
+Sources: https://www.vaultproject.io/
+
+Provider: The Graph
+Service: Decentralized Indexing (Subgraph Ronin) untuk Token Transfers, DEX Swaps, NFT Mints, Staking Events
+Criticality: High
+Status: Live
+Sources: https://thegraph.com/explorer/subgraphs?network=ronin
+Sources: https://docs.roninchain.com/ronin/developers/overview
+Sources: https://katana.roninchain.com/
+
+Provider: Chainlink
+Service: Oracle Network (Price Feeds AXS/SLP/RON/WETH/USDC, VRF untuk Game Randomness)
+Criticality: High
+Status: Live
+Sources: https://blog.chain.link/chainlink-price-feeds-ronin-network/
+Sources: https://docs.roninchain.com/ronin/oracles/chainlink
+Sources: https://docs.axieinfinity.com/game-mechanics/
+
+Provider: Immunefi
+Service: Bug Bounty Platform (Program Resmi Ronin & Axie, Reward hingga $500k Critical)
+Criticality: High
+Status: Live
+Sources: https://immunefi.com/bounty/ronin/
+Sources: https://docs.roninchain.com/ronin/security/overview
+Sources: https://axieinfinity.medium.com/bug-bounty-program-
+
+Provider: CertiK / Verichains / PeckShield / Trail of Bits
+Service: Smart Contract Security Audit (Berkala, Pre-launch, Post-exploit, Formal Verification Parsial)
+Criticality: High
+Status: Live (Recurring)
+Sources: https://www.certik.com/projects/ronin-network
+Sources: https://verichains.io/audit-reports/
+Sources: https://peckshield.com/publications/
+
+Provider: Unity Technologies
+Service: Unity Engine (Game Client Development), Unity Cloud Build (CI/CD Game Client), Unity Gaming Services (Matchmaking, Analytics - parsial)
+Criticality: High
+Status: Live
+Sources: https://origins.axieinfinity.com/
+Sources: https://github.com/axieinfinity/unity-sdk
+Sources: https://unity.com/products/unity-cloud-build
+
+Provider: Ledger
+Service: Hardware Wallet Integration (Ronin Wallet Support Ledger Live / Ledger App Ronin)
+Criticality: Medium
+Status: Live
+Sources: https://docs.roninchain.com/ronin/wallet/overview
+Sources: https://www.ledger.com/supported-crypto-assets
+Sources: https://wallet.roninchain.com/
+
+Provider: Datadog / Prometheus-Grafana / Sentry
+Service: Monitoring & Observability (Infrastructure Metrics Datadog, Node Metrics Prometheus-Grafana, Frontend Error Tracking Sentry)
+Criticality: Medium
+Status: Live
+Sources: https://docs.roninchain.com/ronin/running-a-node/infrastructure
+Sources: https://github.com/sky-mavis
+Sources: https://www.datadoghq.com/
+
+## Exchange Ecosystem
+
+Exchange: Binance
+Listing Status: Listed
+Spot: AXS/USDT, AXS/BTC, AXS/BUSD, AXS/TRY, AXS/EUR, SLP/USDT, SLP/BTC, SLP/BUSD, RON/USDT, RON/BTC, RON/TRY
+Perpetual: AXSUSDT Perpetual, SLPUSDT Perpetual, RONUSDT Perpetual
+OTC: Binance OTC Portal (institutional)
+Launchpool: AXS Launchpad (Nov 2020), RON Launchpool (tidak ada, community claim)
+Status: Active
+Sources: https://www.binance.com/en/trade/AXS_USDT
+Sources: https://www.binance.com/en/trade/SLP_USDT
+Sources: https://www.binance.com/en/trade/RON_USDT
+Sources: https://www.binance.com/en/launchpad/axie-infinity
+
+Exchange: Coinbase
+Listing Status: Listed
+Spot: AXS/USD, AXS/USDC, AXS/EUR, SLP/USD, SLP/USDC (SLP delisting announced 2023 but relisted/kept per region), RON/USD (tidak terdaftar per 2024)
+Perpetual: Tidak ada
+OTC: Coinbase Prime (institutional)
+Launchpool: Tidak ada
+Status: Active (AXS), Limited (SLP), Not Listed (RON)
+Sources: https://www.coinbase.com/price/axie-infinity
+Sources: https://www.coinbase.com/price/smooth-love-potion
+Sources: https://blog.coinbase.com/axs-is-launching-on-coinbase-pro-
+
+Exchange: Kraken
+Listing Status: Listed
+Spot: AXS/USD, AXS/EUR, AXS/USDT, SLP/USD (terbatas), RON/USD (tidak terdaftar)
+Perpetual: AXS/USD Futures (Kraken Futures)
+OTC: Kraken OTC Desk
+Launchpool: Tidak ada
+Status: Active
+Sources: https://trade.kraken.com/markets/kraken/axs/usd
+Sources: https://futures.kraken.com/
+Sources: https://www.kraken.com/prices/axie-infinity
+
+Exchange: KuCoin
+Listing Status: Listed
+Spot: AXS/USDT, AXS/BTC, SLP/USDT, SLP/BTC, RON/USDT
+Perpetual: AXSUSDT Perpetual, RONUSDT Perpetual
+OTC: KuCoin OTC
+Launchpool: Tidak ada
+Status: Active
+Sources: https://www.kucoin.com/trade/AXS-USDT
+Sources: https://www.kucoin.com/trade/SLP-USDT
+Sources: https://www.kucoin.com/trade/RON-USDT
+
+Exchange: Bybit
+Listing Status: Listed
+Spot: AXS/USDT, SLP/USDT, RON/USDT
+Perpetual: AXSUSDT Perpetual, RONUSDT Perpetual
+OTC: Bybit OTC
+Launchpool: Tidak ada
+Status: Active
+Sources: https://www.bybit.com/trade/usdt/AXSUSDT
+Sources: https://www.bybit.com/trade/usdt/SLPUSDT
+Sources: https://www.bybit.com/trade/usdt/RONUSDT
+
+Exchange: OKX
+Listing Status: Listed
+Spot: AXS/USDT, AXS/USDC, SLP/USDT, RON/USDT
+Perpetual: AXSUSDT Perpetual, RONUSDT Perpetual
+OTC: OKX OTC
+Launchpool: Tidak ada
+Status: Active
+Sources: https://www.okx.com/trade/AXS-USDT
+Sources: https://www.okx.com/trade/SLP-USDT
+Sources: https://www.okx.com/trade/RON-USDT
+
+Exchange: Huobi / HTX
+Listing Status: Listed
+Spot: AXS/USDT, SLP/USDT, RON/USDT
+Perpetual: AXSUSDT Perpetual
+OTC: Huobi OTC
+Launchpool: Tidak ada
+Status: Active
+Sources: https://www.htx.com/trade/axs_usdt
+Sources: https://www.htx.com/trade/slp_usdt
+Sources: https://www.htx.com/trade/ron_usdt
+
+Exchange: Gate.io
+Listing Status: Listed
+Spot: AXS/USDT, SLP/USDT, RON/USDT
+Perpetual: AXSUSDT Perpetual, RONUSDT Perpetual
+OTC: Gate.io OTC
+Launchpool: Gate.io Startup (terdapat ronde AXS/RON historis)
+Status: Active
+Sources: https://www.gate.io/trade/AXS_USDT
+Sources: https://www.gate.io/trade/SLP_USDT
+Sources: https://www.gate.io/trade/RON_USDT
+
+Exchange: Uniswap (Ethereum Mainnet)
+Listing Status: Listed (Permissionless)
+Spot: AXS/WETH, SLP/WETH, RON/WETH (wrapped), AXS/USDC, SLP/USDC
+Perpetual: Tidak ada (AMM only)
+OTC: Tidak ada
+Launchpool: Tidak ada
+Status: Active
+Sources: https://app.uniswap.org/explore/tokens/ethereum/0xBB0E17eF65F82AB018d8EDd776e8DD940327B28b
+Sources: https://app.uniswap.org/explore/tokens/ethereum/0xa8754b9Fa15Fc18Bb59458815510e40a12Cd2014
+Sources: https://app.uniswap.org/explore/tokens/ethereum/0x...RON_WRAPPED...
+
+Exchange: Katana DEX (Ronin Native)
+Listing Status: Listed (Native AMM)
+Spot: AXS/SLP, AXS/RON, AXS/WETH, AXS/USDC, SLP/RON, SLP/WETH, SLP/USDC, RON/WETH, RON/USDC, WETH/USDC
+Perpetual: Tidak ada (AMM only)
+OTC: Tidak ada
+Launchpool: Liquidity Mining Reward RON (Historis & Berkala)
+Status: Active
+Sources: https://katana.roninchain.com/
+Sources: https://docs.roninchain.com/ronin/dex/katana
+Sources: https://axieinfinity.medium.com/katana-dex-is-live-on-ronin-
+
+## Wallet Ecosystem
+
+Wallet: Ronin Wallet
+Support Type: Native First-Party Wallet (Browser Extension Manifest V3, Mobile iOS/Android); Non-custodial; HD Wallet BIP-44; Hardware Wallet Support (Ledger); RNS Resolution; Multi-chain (Ronin + Ethereum); Transaction Signing EIP-1559 (Ronin) & EIP-155 (Ethereum)
+Status: Live
+Sources: https://wallet.roninchain.com/
+Sources: https://docs.roninchain.com/ronin/wallet/overview
+Sources: https://chrome.google.com/webstore/detail/ronin-wallet/
+
+Wallet: MetaMask
+Support Type: Third-party Wallet Support via Custom RPC (Ronin Network RPC: https://api.roninchain.com/rpc, Chain ID 2020); Tidak native support RNS; Digunakan sebelum Ronin Wallet resmi launch
+Status: Live (Legacy/Alternative)
+Sources: https://docs.roninchain.com/ronin/wallet/metamask-setup
+Sources: https://metamask.io/
+Sources: https://chainlist.org/chain/2020
+
+Wallet: Trust Wallet
+Support Type: Multi-chain Wallet Support Ronin Network (Native integration 2023+); Support AXS, SLP, RON, NFT Axie/Land/Item; Browser Extension & Mobile
+Status: Live
+Sources: https://trustwallet.com/assets/axie-infinity
+Sources: https://trustwallet.com/assets/smooth-love-potion
+Sources: https://trustwallet.com/assets/ronin
+
+Wallet: Coinbase Wallet
+Support Type: Multi-chain Wallet Support Ronin Network (Native integration 2023+); Support AXS, SLP, RON, NFT; Browser Extension & Mobile
+Status: Live
+Sources: https://www.coinbase.com/wallet
+Sources: https://docs.roninchain.com/ronin/wallet/coinbase-wallet
+Sources: https://www.coinbase.com/price/axie-infinity
+
+Wallet: Ledger

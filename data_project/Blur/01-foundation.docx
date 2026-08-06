@@ -1,0 +1,30 @@
+PROJECT: Blur
+Official Name: Blur
+Symbol: BLUR
+Category: NFT marketplace / aggregator
+Founding Entity: Blur Labs, Inc. (Delaware, United States)
+Founders: PacmanBlur (co-founder, pseudonim); Galaga (co-founder, pseudonim); Lord_kekl (co-founder, pseudonim)
+Core Team: tidak diungkap (tim inti bersifat pseudonim; tidak ada daftar nama nyata yang diverifikasi publik)
+Country: United States
+Launch Date - Testnet: n/a (langsung mainnet tanpa fase testnet publik yang terpisah)
+Launch Date - Mainnet: 19 Oktober 2022 (MEDIUM) [Blur Blog, https://blur.io/blog/introducing-blur]
+Launch Date - TGE: 14 Februari 2023 (HIGH) [Blur Blog, https://blur.io/blog/blur-token; CoinGecko, https://www.coingecko.com/en/coins/blur]
+Main Products: Blur Marketplace (NFT marketplace/aggregator); Blend (perpustakaan pinjaman NFT peer-to-peer); Blur Bid (sistem penawaran/bidding kolektif)
+Official Website: https://blur.io
+Repository: https://github.com/blur-io
+Documentation: https://docs.blur.io
+Social - X/Twitter: @blur_io
+Social - Discord: https://discord.gg/blur
+Social - Telegram: @blur_official
+Block Explorer: https://etherscan.io/token/0x5283D291DBCF85356a21bA090E6db59121208b44
+Token Contract: 0x5283D291DBCF85356a21bA090E6db59121208b44 (Ethereum mainnet)
+Chain(s): Ethereum
+Ecosystem: Ethereum NFT ecosystem
+
+Open Threads
+- Yurisdiksi hukum pasti Blur Labs, Inc. (Delaware dikutip sering tapi belum terlihat filing resmi yang diverifikasi)
+- Komposisi tim inti di luar tiga founder pseudonim (ukuran tim, nama nyata, lokasi operasional)
+- Apakah ada entity legal terpisah untuk protokol Blend vs marketplace Blur
+- Tanggal pasti deployment kontrak token BLUR on-chain vs announcement TGE (perbedaan 1-2 hari sering terjadi)
+- Status kepemilikan kontrak (ownership/admin keys) untuk marketplace, Blend, dan token BLUR — apakah sudah ditimelock/DAO
+- Detail alokasi tokenomics resmi dari sumber primer (blog/whitepaper) vs data on-chain (sering tidak cocok)

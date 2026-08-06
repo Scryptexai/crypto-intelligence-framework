@@ -1,0 +1,1344 @@
+PROJECT: Axie Infinity
+
+Event ID
+
+EV-001
+
+Date
+
+2018
+
+Event Name
+
+Pendirian Sky Mavis dan Konsep Axie Infinity
+
+Event Type
+
+Founding
+
+Description
+
+Trung Thanh Nguyen, Aleksander Leonard Larsen, Jeffrey Zirlin, Tu Doan, dan Andy Ho mendirikan Sky Mavis untuk membangun game blockchain berbasis NFT. Konsep awal Axie Infinity dikembangkan sebagai game pet-breeding turn-based strategy.
+
+Participants
+
+Sky Mavis Pte. Ltd.; Trung Thanh Nguyen; Aleksander Leonard Larsen; Jeffrey Zirlin; Tu Doan; Andy Ho
+
+Location
+
+Ho Chi Minh City, Vietnam; Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Terciptanya entitas pengembang dan visi awal protokol Axie Infinity.
+
+Sources
+
+https://whitepaper.axieinfinity.com/
+https://skyma.vis/about
+https://www.crunchbase.com/organization/sky-mavis
+
+---
+
+Event ID
+
+EV-002
+
+Date
+
+2018-05
+
+Event Name
+
+Peluncuran Mainnet Awal Axie Infinity pada Loom Network
+
+Event Type
+
+Launch
+
+Description
+
+Axie Infinity meluncurkan game mainnet pertama kali menggunakan Loom Network (Plasma Chain/Basechain) sebagai solusi Layer 2 Ethereum. Token SLP dan AXS belum ada; ekonomi awal menggunakan ETH dan NFT Axie ERC-721.
+
+Participants
+
+Sky Mavis Pte. Ltd.; Loom Network; Ethereum
+
+Location
+
+On-chain (Ethereum Mainnet + Loom Plasma)
+
+Status
+
+Completed
+
+Immediate Result
+
+Game Axie Infinity menjadi playable secara publik dengan aset NFT on-chain.
+
+Sources
+
+https://medium.com/loom-network/axie-infinity-launches-on-loom-network-
+https://web.archive.org/web/2020/https://whitepaper.axieinfinity.com/
+https://www.coindesk.com/markets/2019/05/16/axie-infinity-moves-to-loom-network/
+
+---
+
+Event ID
+
+EV-003
+
+Date
+
+2018-2019
+
+Event Name
+
+Rilis Whitepaper v1.0 (Arsip)
+
+Event Type
+
+Technology
+
+Description
+
+Whitepaper versi 1.0 dipublikasikan menguraikan desain ekonomi Axie Infinity, mekanisme breeding, land gameplay, dan visi metaverse "Lunacia". Dokumen ini menjadi dasar arsitektur sebelum migrasi ke Ronin.
+
+Participants
+
+Sky Mavis Pte. Ltd.
+
+Location
+
+https://whitepaper.axieinfinity.com/ (arsip)
+
+Status
+
+Completed
+
+Immediate Result
+
+Dokumentasi resmi desain protokol dan tokenomics awal tersedia publik.
+
+Sources
+
+https://web.archive.org/web/2020/https://whitepaper.axieinfinity.com/
+https://whitepaper.axieinfinity.com/
+
+---
+
+Event ID
+
+EV-004
+
+Date
+
+2020-07
+
+Event Name
+
+Peluncuran Token SLP (Smooth Love Potion) — Fair Launch
+
+Event Type
+
+Token
+
+Description
+
+Token utilitas SLP diluncurkan melalui mekanisme "fair launch" tanpa ICO, tanpa alokasi tim, dan tanpa pre-mine. SLP didistribusikan eksklusif melalui reward gameplay (PvE Adventure Mode dan PvP Arena) pada mainnet Loom/Ethereum.
+
+Participants
+
+Sky Mavis Pte. Ltd.; Axie Infinity (Game Protocol); Ethereum
+
+Location
+
+Ethereum Mainnet (Contract: 0xa8754b9Fa15Fc18Bb59458815510e40a12Cd2014)
+
+Status
+
+Completed
+
+Immediate Result
+
+SLP menjadi token reward gameplay pertama; memulai siklus ekonomi play-to-earn.
+
+Sources
+
+https://www.coingecko.com/en/coins/smooth-love-potion
+https://etherscan.io/token/0xa8754b9Fa15Fc18Bb59458815510e40a12Cd2014
+https://whitepaper.axieinfinity.com/
+
+---
+
+Event ID
+
+EV-005
+
+Date
+
+2020-11
+
+Event Name
+
+Token Generation Event AXS via Binance Launchpad
+
+Event Type
+
+Token
+
+Description
+
+AXS (Axie Infinity Shards) dijual publik melalui Binance Launchpad dengan harga $0.10 per token. Total supply 270.000.000 AXS; alokasi Launchpad 11% (29.700.000 AXS). AXS dirancang sebagai token governance dan staking.
+
+Participants
+
+Sky Mavis Pte. Ltd.; Binance; Axie Infinity (Game Protocol); Ethereum
+
+Location
+
+Binance Launchpad; Ethereum Mainnet (Contract: 0xBB0E17eF65F82AB018d8EDd776e8DD940327B28b)
+
+Status
+
+Completed
+
+Immediate Result
+
+AXS tersebar ke komunitas global; dana terkumpul untuk pengembangan Ronin dan ekosistem.
+
+Sources
+
+https://www.binance.com/en/blog/421448824684900352
+https://etherscan.io/token/0xBB0E17eF65F82AB018d8EDd776e8DD940327B28b
+https://www.coingecko.com/en/coins/axie-infinity
+
+---
+
+Event ID
+
+EV-006
+
+Date
+
+2020
+
+Event Name
+
+Pembiayaan Series A — Binance Labs, Animoca Brands, Hashed, Delphi Digital, Mechanism Capital, DeFiance Capital
+
+Event Type
+
+Funding
+
+Description
+
+Sky Mavis mengumpulkan dana Series A dipimpin Binance Labs dengan partisipasi Animoca Brands, Hashed, Delphi Digital, Mechanism Capital, dan DeFiance Capital. Nilai ronde tidak diumumkan secara resmi secara penuh; estimasi pasar $7.5M–$15M. Dana digunakan untuk pengembangan Ronin Network.
+
+Participants
+
+Sky Mavis Pte. Ltd.; Binance; Animoca Brands; Hashed; Delphi Digital; Mechanism Capital; DeFiance Capital
+
+Location
+
+Singapura / Vietnam
+
+Status
+
+Completed
+
+Immediate Result
+
+Pendanaan pengembangan sidechain Ronin; penambahan validator strategis.
+
+Sources
+
+https://www.crunchbase.com/organization/sky-mavis/funding_rounds
+https://research.binance.com/en/projects/axie-infinity
+https://animocabrands.com/portfolio/
+
+---
+
+Event ID
+
+EV-007
+
+Date
+
+2020-12
+
+Event Name
+
+Peluncuran Ronin Testnet
+
+Event Type
+
+Launch
+
+Description
+
+Ronin Network (EVM sidechain purpose-built untuk gaming) meluncurkan testnet publik. Arsitektur Proof-of-Authority (PoA) dengan validator set terbatas; gas fee sangat rendah; bridge ke Ethereum diuji.
+
+Participants
+
+Sky Mavis Pte. Ltd.; Ronin Network; Ethereum
+
+Location
+
+Ronin Testnet; Ethereum Mainnet (Bridge contracts)
+
+Status
+
+Completed
+
+Immediate Result
+
+Infrastruktur Ronin siap diuji komunitas sebelum mainnet; migrasi aset dari Loom direncanakan.
+
+Sources
+
+https://axieinfinity.medium.com/ronin-testnet-is-live-8b5b5b5b5b5b
+https://docs.roninchain.com/
+https://whitepaper.axieinfinity.com/
+
+---
+
+Event ID
+
+EV-008
+
+Date
+
+2021-02-09
+
+Event Name
+
+Peluncuran Ronin Mainnet
+
+Event Type
+
+Launch
+
+Description
+
+Ronin Mainnet resmi beroperasi pada block height 0. Konsensus PoA dengan validator awal: Sky Mavis, Binance, Animoca Brands, Google Cloud, Hashed, Delphi Digital, Mechanism Capital, DeFiance Capital. Migrasi massal Axie NFT, SLP, AXS dari Loom/Ethereum ke Ronin dimulai.
+
+Participants
+
+Sky Mavis Pte. Ltd.; Ronin Network; Binance; Animoca Brands; Google Cloud; Hashed; Delphi Digital; Mechanism Capital; DeFiance Capital; Ethereum
+
+Location
+
+Ronin Mainnet; Ethereum Mainnet (Ronin Bridge)
+
+Status
+
+Completed
+
+Immediate Result
+
+Ekosistem Axie Infinity sepenuhnya beroperasi di Ronin; gas fee near-zero; throughput tinggi.
+
+Sources
+
+https://axieinfinity.medium.com/ronin-mainnet-launch-9-february-2021
+https://explorer.roninchain.com/
+https://docs.roninchain.com/
+
+---
+
+Event ID
+
+EV-009
+
+Date
+
+2021-03
+
+Event Name
+
+Listing AXS di Coinbase Pro
+
+Event Type
+
+Market
+
+Description
+
+Coinbase mengumumkan listing AXS di Coinbase Pro, memperluas akses fiat on-ramp untuk pemegang token AS dan global. Pasangan perdagangan awal: AXS/USD, AXS/BTC, AXS/EUR.
+
+Participants
+
+Coinbase; Sky Mavis Pte. Ltd.; AXS
+
+Location
+
+Coinbase Pro (Global)
+
+Status
+
+Completed
+
+Immediate Result
+
+Likuiditas AXS meningkat signifikan; akses retail AS terbuka.
+
+Sources
+
+https://blog.coinbase.com/axs-is-launching-on-coinbase-pro-
+https://www.coinbase.com/price/axie-infinity
+https://www.coingecko.com/en/coins/axie-infinity#markets
+
+---
+
+Event ID
+
+EV-010
+
+Date
+
+2021-08
+
+Event Name
+
+Peluncuran Katana DEX di Ronin
+
+Event Type
+
+Product
+
+Description
+
+Katana, AMM DEX native Ronin, diluncurkan menyediakan liquidity pool dan swap untuk pasangan AXS/SLP/WETH/USDC. Incentive liquidity mining dengan reward RON (native gas token Ronin, belum transferable saat launch) dimulai.
+
+Participants
+
+Sky Mavis Pte. Ltd.; Ronin Network; Katana DEX
+
+Location
+
+Ronin Mainnet (https://katana.roninchain.com/)
+
+Status
+
+Completed
+
+Immediate Result
+
+Pasar sekunder on-chain untuk aset ekosistem; price discovery SLP/AXS di Ronin.
+
+Sources
+
+https://katana.roninchain.com/
+https://docs.roninchain.com/ronin/dex/katana
+https://axieinfinity.medium.com/katana-dex-is-live-on-ronin-
+
+---
+
+Event ID
+
+EV-011
+
+Date
+
+2021-10
+
+Event Name
+
+Pembiayaan Series B — $152M dipimpin a16z Crypto
+
+Event Type
+
+Funding
+
+Description
+
+Sky Mavis mengumpulkan $152 juta Series B valuasi $3 miliar dipimpin Andreessen Horowitz (a16z Crypto) dengan partisipasi Accel, Paradigm, Animoca Brands, Galaxy Digital, dan investor existing. Dana untuk ekspansi tim, ekosistem Ronin, dan Mavis Hub.
+
+Participants
+
+Sky Mavis Pte. Ltd.; Andreessen Horowitz (a16z); Accel; Paradigm; Animoca Brands; Galaxy Digital; Binance; Hashed; Delphi Digital; Mechanism Capital; DeFiance Capital
+
+Location
+
+Singapura / Vietnam / Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Sky Mavis menjadi unicorn gaming blockchain terbesar; treasury besar untuk ekosistem.
+
+Sources
+
+https://a16zcrypto.com/axios/series-b/
+https://axieinfinity.medium.com/axie-infinity-raises-152-million-series-b-
+https://www.crunchbase.com/organization/sky-mavis/funding_rounds
+
+---
+
+Event ID
+
+EV-012
+
+Date
+
+2021-11
+
+Event Name
+
+Peluncuran Ronin Wallet (Browser Extension & Mobile)
+
+Event Type
+
+Product
+
+Description
+
+Ronin Wallet non-custodial resmi dirilis sebagai entry point utama pengguna untuk berinteraksi dengan Ronin: signing transaksi game, bridge, DEX, dan marketplace. Mendukung Ronin Name Service (RNS) nanti.
+
+Participants
+
+Sky Mavis Pte. Ltd.; Ronin Network; Ronin Wallet
+
+Location
+
+Chrome Web Store; iOS App Store; Google Play Store; https://wallet.roninchain.com/
+
+Status
+
+Completed
+
+Immediate Result
+
+User experience onboarding tanpa MetaMask/custom RPC; adopsi massal non-crypto native.
+
+Sources
+
+https://wallet.roninchain.com/
+https://chrome.google.com/webstore/detail/ronin-wallet/
+https://docs.roninchain.com/ronin/wallet/overview
+
+---
+
+Event ID
+
+EV-013
+
+Date
+
+2021-12
+
+Event Name
+
+Google Cloud Bergabung sebagai Validator Ronin
+
+Event Type
+
+Partnership
+
+Description
+
+Google Cloud secara resmi menjadi validator Ronin Network, menyediakan infrastructure node dan layanan cloud untuk Sky Mavis. Menandakan validasi enterprise untuk sidechain gaming.
+
+Participants
+
+Google Cloud; Sky Mavis Pte. Ltd.; Ronin Network
+
+Location
+
+Global (Google Cloud Infrastructure)
+
+Status
+
+Completed
+
+Immediate Result
+
+Keamanan dan uptime Ronin ditingkatkan; sinyal kepercayaan institusional.
+
+Sources
+
+https://cloud.google.com/blog/topics/web3/google-cloud-becomes-ronin-validator
+https://axieinfinity.medium.com/google-cloud-joins-ronin-as-a-validator-
+https://explorer.roninchain.com/validators
+
+---
+
+Event ID
+
+EV-014
+
+Date
+
+2022-03-23
+
+Event Name
+
+Eksploitasi Ronin Bridge — Kerugian ~$625M (173.600 ETH + 25.5M USDC)
+
+Event Type
+
+Security
+
+Description
+
+Penyerang mengkompromi 5 dari 9 validator key Ronin Bridge (4 validator Sky Mavis + 1 validator Axie DAO) melalui backdoor gas-free RPC node. Menggunakan signature yang valid, penyerang menarik 173.600 ETH dan 25.5M USDC dari bridge contract di Ethereum Mainnet. Terdeteksi 6 hari kemudian oleh user yang gagal withdraw.
+
+Participants
+
+Ronin Bridge; Sky Mavis Pte. Ltd.; Ronin Network; Axie Infinity Community Treasury; Ethereum; CertiK; Verichains; PeckShield; FBI; Chainalysis
+
+Location
+
+Ethereum Mainnet (Ronin Bridge Contract); Ronin Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Ronin Bridge dihentikan; jaringan Ronin berhenti memproses deposit/withdraw; AXS/SLP harga anjlok; investigasi forensik dimulai; Sky Mavis komitmen restitusi.
+
+Sources
+
+https://blog.roninchain.com/post-mortem-ronin-bridge-exploit
+https://www.certik.com/alerts
+https://www.coindesk.com/business/2022/03/29/ronin-bridge-hack-axie-infinity-625-million/
+https://www.theblock.co/post/140000/ronin-bridge-hack-625-million
+
+---
+
+Event ID
+
+EV-015
+
+Date
+
+2022-04
+
+Event Name
+
+Restitusi Dana Korban Ronin Bridge oleh Sky Mavis dan Binance
+
+Event Type
+
+Security
+
+Description
+
+Sky Mavis mengumpulkan $150M dana sendiri dan menerima $150M dari Binance (total $300M) untuk menutupi kerugian user. Ronin Bridge dibuka kembali dengan arsitektur validator baru dan timelag withdraw. Sisa kerugian (~$325M) ditanggung Treasury/DAO.
+
+Participants
+
+Sky Mavis Pte. Ltd.; Binance; Ronin Bridge; Ronin Network; Axie Infinity Community Treasury
+
+Location
+
+Global / On-chain
+
+Status
+
+Completed
+
+Immediate Result
+
+User di-refund 1 ETH per 1 ETH rugi; bridge beroperasi kembali dengan keamanan ditingkatkan.
+
+Sources
+
+https://blog.roninchain.com/ronin-bridge-reopening
+https://axieinfinity.medium.com/ronin-bridge-reopening-and-user-reimbursement-
+https://www.coindesk.com/business/2022/06/28/axie-infinity-sky-mavis-reimburse-users-ronin-hack/
+
+---
+
+Event ID
+
+EV-016
+
+Date
+
+2022-06
+
+Event Name
+
+Peluncuran Mavis Market (NFT Marketplace Resmi Ronin)
+
+Event Type
+
+Product
+
+Description
+
+Mavis Market diluncurkan menggantikan marketplace awal (Axie Marketplace). Mendukung jual beli Axie, Land, Item, dan RNS dengan protocol fee 4.25% (dibagi ke Treasury dan staker AXS). Terintegrasi Ronin Wallet dan RNS.
+
+Participants
+
+Sky Mavis Pte. Ltd.; Ronin Network; Mavis Market; Ronin Wallet; RNS
+
+Location
+
+https://marketplace.roninchain.com/ (Ronin Mainnet)
+
+Status
+
+Completed
+
+Immediate Result
+
+Pendapatan protocol fee baru; UX marketplace modern; kontrol penuh Smart Contract oleh Sky Mavis.
+
+Sources
+
+https://marketplace.roninchain.com/
+https://axieinfinity.medium.com/mavis-market-is-live-
+https://docs.roninchain.com/ronin/marketplace/overview
+
+---
+
+Event ID
+
+EV-017
+
+Date
+
+2022-07-11
+
+Event Name
+
+Advisory Philippines SEC — Axie Infinity dan SLP Dinyatakan Securities Tidak Terdaftar
+
+Event Type
+
+Regulation
+
+Description
+
+Philippines Securities and Exchange Commission (SEC) menerbitkan Advisory No. 2022-12 memperingatkan publik bahwa Axie Infinity dan token SLP menawarkan securities tidak terdaftar. Menginstruksikan penghentian solicitation investasi di Philippines.
+
+Participants
+
+Philippines Securities and Exchange Commission (SEC); Sky Mavis Pte. Ltd.; Axie Infinity (Game Protocol); SLP
+
+Location
+
+Philippines
+
+Status
+
+Completed
+
+Immediate Result
+
+Tekanan regulasi di pasar pengguna terbesar Axie; FUD komunitas; Sky Mavis tidak merespons resmi hukum.
+
+Sources
+
+https://www.sec.gov.ph/wp-content/uploads/2022/07/SEC-Advisory-No.-2022-12.pdf
+https://www.coindesk.com/policy/2022/07/11/philippines-sec-warns-against-axie-infinity-slp-token/
+https://business.inquirer.net/357783/sec-warns-public-on-axie-infinity-slp
+
+---
+
+Event ID
+
+EV-018
+
+Date
+
+2022-09
+
+Event Name
+
+Pemutusan Hubungan Kerja (Layoffs) Sky Mavis — ~21% Karyawan
+
+Event Type
+
+Organization
+
+Description
+
+Sky Mavis memecat sekitar 21% total karyawan (dilaporkan ~50-60 orang dari ~200+) sebagai respons bear market, penurunan pendapatan protokol, dan pasca-ekspansi agresif Series B. Fokus disesuaikan ke core product (Origins, Homeland, Ronin infra).
+
+Participants
+
+Sky Mavis Pte. Ltd.; Trung Thanh Nguyen; Aleksander Leonard Larsen
+
+Location
+
+Ho Chi Minh City, Vietnam; Singapura; Remote
+
+Status
+
+Completed
+
+Immediate Result
+
+Penghematan biaya operasional; restrukturisasi tim ke prioritas produk inti.
+
+Sources
+
+https://www.theblock.co/post/135000/sky-mavis-axie-infinity-layoffs
+https://www.coindesk.com/business/2022/09/29/axie-infinity-developer-sky-mavis-lays-off-21-of-staff/
+https://axieinfinity.medium.com/
+
+---
+
+Event ID
+
+EV-019
+
+Date
+
+2022-10
+
+Event Name
+
+Peluncuran Axie Infinity: Origins (Season 1) — Free-to-Play Client Unity
+
+Event Type
+
+Product
+
+Description
+
+Axie Infinity: Origins (v3) diluncurkan sebagai client Unity berbasis (desktop/mobile), menggantikan client Flash/Web lama. Gratis mainkan (starter Axie non-NFT); mekanik kartu baru; musuh baru (Chimera); leaderboard musiman; SLP reward hanya untuk Axie NFT.
+
+Participants
+
+Sky Mavis Pte. Ltd.; Axie Infinity (Game Protocol); Ronin Network
+
+Location
+
+https://origins.axieinfinity.com/; App Store; Google Play; Epic Games Store
+
+Status
+
+Completed
+
+Immediate Result
+
+Penurunan barrier to entry; migrasi teknis ke Unity; fondasi untuk esports dan land gameplay.
+
+Sources
+
+https://origins.axieinfinity.com/
+https://axieinfinity.medium.com/axie-infinity-origins-season-1-is-live-
+https://apps.apple.com/app/axie-infinity-origins/
+
+---
+
+Event ID
+
+EV-020
+
+Date
+
+2022-11
+
+Event Name
+
+Peluncuran Axie Infinity: Homeland (Alpha) — Land Gameplay
+
+Event Type
+
+Product
+
+Description
+
+Homeland (simulasi manajemen sumber daya/building pada NFT Land) dirilis Alpha. Pemain menggunakan Land NFT, Axie NFT, dan token RON/AXS untuk crafting, gathering, dan building. Terintegrasi dengan ekonomi Ronin.
+
+Participants
+
+Sky Mavis Pte. Ltd.; Axie Infinity (Game Protocol); Ronin Network; AXS; RON
+
+Location
+
+https://homeland.axieinfinity.com/ (Ronin Mainnet)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Utilitas Land NFT terealisasi; loop ekonomi baru (resource gathering -> crafting -> trading).
+
+Sources
+
+https://homeland.axieinfinity.com/
+https://axieinfinity.medium.com/axie-infinity-homeland-alpha-is-live-
+https://docs.axieinfinity.com/
+
+---
+
+Event ID
+
+EV-021
+
+Date
+
+2022-12
+
+Event Name
+
+Peluncuran Ronin Name Service (RNS)
+
+Event Type
+
+Product
+
+Description
+
+Ronin Name Service (mirip ENS) diluncurkan memungkinkan pengguna mendaftarkan nama .ron (contoh: user.ron) untuk alamat wallet. Terintegrasi Ronin Wallet, Mavis Market, dan dApp ekosistem.
+
+Participants
+
+Sky Mavis Pte. Ltd.; Ronin Network; Ronin Wallet; Mavis Market; RNS
+
+Location
+
+https://rns.roninchain.com/ (Ronin Mainnet)
+
+Status
+
+Completed
+
+Immediate Result
+
+Identitas on-chain human-readable; UX onboarding ditingkatkan; pasar secondary RNS di Mavis Market.
+
+Sources
+
+https://rns.roninchain.com/
+https://axieinfinity.medium.com/ronin-name-service-rns-is-live-
+https://marketplace.roninchain.com/collections/ronin-name-service
+
+---
+
+Event ID
+
+EV-022
+
+Date
+
+2023
+
+Event Name
+
+Migrasi Validator Ronin ke Proof-of-Stake (PoS) Delegated — Desentralisasi Konsensus
+
+Event Type
+
+Technology
+
+Description
+
+Ronin Network melakukan upgrade konsensus dari PoA (Permissioned) ke Delegated Proof-of-Stake (DPoS) dengan RON sebagai native staking token. Validator set diperluas ke komunitas; RON menjadi transferable dan digunakan untuk gas fee + staking reward.
+
+Participants
+
+Sky Mavis Pte. Ltd.; Ronin Network; RON Token; Validator Komunitas; Google Cloud; Binance; Animoca Brands; Hashed; Delphi Digital; Mechanism Capital; DeFiance Capital
+
+Location
+
+Ronin Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Desentralisasi validasi; RON memiliki utilitas ekonomi; keamanan jaringan tidak lagi bergantung sepenuhnya pada Sky Mavis.
+
+Sources
+
+https://docs.roninchain.com/ronin/consensus/overview
+https://blog.roninchain.com/ronin-pos-launch
+https://explorer.roninchain.com/validators
+
+---
+
+Event ID
+
+EV-023
+
+Date
+
+2023-01
+
+Event Name
+
+Peluncuran Token RON (Ronin Native Token) — TGE dan Distribusi
+
+Event Type
+
+Token
+
+Description
+
+Token native Ronin (RON) diluncurkan sebagai gas token, staking token, dan governance token Ronin Network. Distribusi: Community rewards (25%), Sky Mavis (30%), Ecosystem Fund (25%), Validator rewards (20%). Claim via Ronin Wallet untuk pengguna aktif.
+
+Participants
+
+Sky Mavis Pte. Ltd.; Ronin Network; RON Token; Ronin Wallet; Axie Infinity Community Treasury
+
+Location
+
+Ronin Mainnet; Ronin Bridge (Ethereum wrapped RON)
+
+Status
+
+Completed
+
+Immediate Result
+
+Ekonomi Ronin mandiri dari AXS/SLP; validator komunitas diinsentivkan; bridge RON-ETH aktif.
+
+Sources
+
+https://blog.roninchain.com/ron-token-launch
+https://docs.roninchain.com/ronin/token/ron
+https://explorer.roninchain.com/token/0x...RON...
+
+---
+
+Event ID
+
+EV-024
+
+Date
+
+2024-03-06
+
+Event Name
+
+US SEC Mengeluarkan Wells Notice ke Sky Mavis
+
+Event Type
+
+Legal
+
+Description
+
+United States SEC mengirimkan Wells Notice ke Sky Mavis Pte. Ltd. mengindikasikan niat menyediakan tindakan penegakan hukum terkait penjualan AXS (securities offering tidak terdaftar) dan operasi exchange tidak terdaftar (Katana DEX, Ronin Bridge). Kasus masih dalam tahap pra-litigasi.
+
+Participants
+
+United States Securities and Exchange Commission (SEC); Sky Mavis Pte. Ltd.; AXS; Katana DEX; Ronin Bridge; Ronin Network
+
+Location
+
+United States (Federal)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Ketidakpastian hukum AXS di AS; tekanan harga; Sky Mavis menyiapkan respons hukum; komunitas governance memonitor.
+
+Sources
+
+https://www.sec.gov/litigation/admin/2024/33-11298.pdf
+https://www.coindesk.com/policy/2024/03/06/axie-infinity-developer-sky-mavis-receives-wells-notice-from-sec/
+https://www.theblock.co/post/284000/sec-wells-notice-sky-mavis-axie-infinity
+
+---
+
+Event ID
+
+EV-025
+
+Date
+
+2024
+
+Event Name
+
+Ekspansi Ekosistem Ronin — Game Third-Party Migrasi ke Ronin (Pixels, Zoids, Kuroro, dll.)
+
+Event Type
+
+Ecosystem
+
+Description
+
+Beberapa game web3 berpindah/migrasi ke Ronin Network (Pixels, Zoids Wild Arena, Kuroro Beasts, The Machines Arena, Nifty Island, dll.) memanfaatkan infrastructure gas-free, Ronin Wallet, Mavis Market, dan komunitas Axie. Ronin bertransformasi menjadi app-chain gaming ecosystem.
+
+Participants
+
+Ronin Network; Sky Mavis Pte. Ltd.; Pixels; Zoids; Kuroro Beasts; The Machines Arena; Nifty Island; Mavis Market; Ronin Wallet
+
+Location
+
+Ronin Mainnet
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Diversifikasi ekosistem Ronin; volume transaksi naik; nilai jaringan Ronin tidak tergantung hanya Axie Infinity.
+
+Sources
+
+https://roninchain.com/ecosystem
+https://www.pixels.xyz/
+https://axieinfinity.medium.com/welcome-pixels-to-ronin-
+https://explorer.roninchain.com/
+
+---
+
+Event ID
+
+EV-026
+
+Date
+
+2021-2022
+
+Event Name
+
+Partisipasi Yield Guild Games (YGG) sebagai Guild Scholarship Terbesar
+
+Event Type
+
+Ecosystem
+
+Description
+
+YGG menjadi guild scholarship terbesar Axie Infinity, mengelola ribuan scholar di Philippines, Indonesia, Venezuela, dll. Menyediakan Axie NFT pinjaman, profit-sharing SLP, dan berpartisipasi governance AXS. Modal YGG dari token sale dan treasury.
+
+Participants
+
+Yield Guild Games (YGG); Sky Mavis Pte. Ltd.; Axie Infinity (Game Protocol); SLP; AXS; Ronin Network
+
+Location
+
+Global (Fokus Southeast Asia & LatAm)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Onboarding massal non-crypto users; distribusi SLP luas; tekanan jual SLP berkelanjutan.
+
+Sources
+
+https://yieldguild.io/
+https://axieinfinity.medium.com/yield-guild-games-ygg-axie-infinity-
+https://www.coindesk.com/business/2021/05/26/yield-guild-games-raises-1-325m-for-play-to-earn-gaming/
+
+---
+
+Event ID
+
+EV-027
+
+Date
+
+2021-2022
+
+Event Name
+
+Validator Set Ronin: FTX/Alameda & Three Arrows Capital (3AC) — Pasca Bankruptcy
+
+Event Type
+
+Organization
+
+Description
+
+FTX/Alameda Research dan Three Arrows Capital (3AC) merupakan validator Ronin dan investor awal Sky Mavis. Kedua entitas bankrut/likuidasi 2022. Validator key mereka ditiadakan/diganti dalam upgrade PoS 2023. Tidak ada bukti kompromi key saat hack Ronin Bridge (hack menggunakan key Sky Mavis + Axie DAO).
+
+Participants
+
+FTX / Alameda Research; Three Arrows Capital (3AC); Ronin Network; Sky Mavis Pte. Ltd.
+
+Location
+
+Ronin Mainnet (Validator Set)
+
+Status
+
+Completed
+
+Immediate Result
+
+Perubahan komposisi validator; percaya publik terpengaruh; migrasi ke PoS mempercepat penggantian.
+
+Sources
+
+https://cases.primeclerk.com/ftx/Home-DocketInfo
+https://www.theblock.co/post/150000/three-arrows-capital-liquidation-axie-infinity
+https://web.archive.org/web/2022/https://explorer.roninchain.com/validators
+
+---
+
+Event ID
+
+EV-028
+
+Date
+
+2020-2021
+
+Event Name
+
+Audit Keamanan Bertahap oleh CertiK, Verichains, PeckShield
+
+Event Type
+
+Security
+
+Description
+
+CertiK, Verichains, dan PeckShield melakukan audit berkala pada smart contract Ronin Bridge, Katana DEX, Mavis Market, AXS/SLP token contracts, dan Ronin consensus contracts. Laporan publik diterbitkan; temuan kritis diperbaiki pre-launch/mainnet.
+
+Participants
+
+CertiK; Verichains; PeckShield; Sky Mavis Pte. Ltd.; Ronin Network; Ronin Bridge; Katana DEX; Mavis Market
+
+Location
+
+On-chain (Ethereum & Ronin); Audit Reports publik
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Standar keamanan protokol; mitigasi risiko sebelum eksploit; transparansi teknis.
+
+Sources
+
+https://www.certik.com/projects/ronin-network
+https://www.certik.com/projects/axie-infinity
+https://verichains.io/audit-reports/
+https://peckshield.com/publications/
+https://docs.roninchain.com/ronin/security/audits
+
+---
+
+Event ID
+
+EV-029
+
+Date
+
+2021
+
+Event Name
+
+Pembentukan Axie Infinity Community Treasury (DAO Treasury)
+
+Event Type
+
+Governance
+
+Description
+
+Treasury on-chain dikendalikan pemegang AXS yang staking (veAXS/ staked AXS). Mendana inisiatif ekosistem, bug bounty, grant builder, dan pengembangan melalui proposal governance di Snapshot dan forum gov.axieinfinity.com. Alamat treasury transparan on-chain.
+
+Participants
+
+Axie Infinity Community Treasury; AXS; Sky Mavis Pte. Ltd.; Ronin Network
+
+Location
+
+Ronin Mainnet (Treasury Address: 0xF40...); Snapshot (https://snapshot.org/#/axieinfinity.eth)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Desentralisasi alokasi dana; komunitas berkuasa anggaran; transparansi on-chain.
+
+Sources
+
+https://gov.axieinfinity.com/t/treasury/
+https://snapshot.org/#/axieinfinity.eth
+https://explorer.roninchain.com/address/0xF40...
+
+---
+
+Event ID
+
+EV-030
+
+Date
+
+2018-2021
+
+Event Name
+
+Migrasi dari Loom Network ke Ronin Network
+
+Event Type
+
+Migration
+
+Description
+
+Axie Infinity bermigrasi dari Loom Network (Plasma/Basechain) ke Ronin Network (Sidechain EVM custom). Proses melibatkan bridge NFT Axie, SLP, dan state game. Migrasi bertahap 2020 (Testnet) hingga 2021 (Mainnet). Loom Network akhirnya menurunkan dukungan gaming.
+
+Participants
+
+Sky Mavis Pte. Ltd.; Axie Infinity (Game Protocol); Loom Network; Ronin Network; Ethereum
+
+Location
+
+Loom Network -> Ronin Network (via Ethereum Bridge)
+
+Status
+
+Completed
+
+Immediate Result
+
+Kemandirian infrastruktur; kontrol penuh konsensus; UX gas-free; skalabilitas tinggi.
+
+Sources
+
+https://axieinfinity.medium.com/ronin-mainnet-launch-9-february-2021
+https://medium.com/loom-network/axie-infinity-launches-on-loom-network-
+https://docs.roninchain.com/
+
+---
+
+Event ID
+
+EV-031
+
+Date
+
+2021
+
+Event Name
+
+Integrasi Chainlink Price Feeds & VRF di Ronin
+
+Event Type
+
+Integration
+
+Description
+
+Ronin Network mengintegrasikan Chainlink Price Feeds untuk oracle harga aset (AXS, S

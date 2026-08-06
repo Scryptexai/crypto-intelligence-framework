@@ -1,0 +1,355 @@
+PROJECT: Avalanche
+
+## Ecosystem Position
+
+Primary Sector: Layer 1 Blockchain / Multi-chain Architecture (Subnets) / Smart Contract Platform
+Primary Chain: Avalanche Primary Network (X-Chain, P-Chain, C-Chain)
+Supported Chains: Avalanche Primary Network; Avalanche Subnets (L1s) seperti Beam, GameFi chains, Institutional Subnets; Ethereum (via Bridge); BNB Chain (via Bridge); Solana (via Wormhole); Polygon (via LayerZero/Wormhole); Arbitrum (via LayerZero/Wormhole); Optimism (via LayerZero/Wormhole); Base (via LayerZero/Wormhole); Bitcoin (via Bridge/Interop); lainnya melalui LayerZero, Wormhole, Chainlink CCIP
+Sources: (HIGH) [Docs Network Overview, https://docs.avax.network/docs/learn/network-overview]; (HIGH) [Ava Labs Ecosystem, https://www.avalabs.org/ecosystem]; (HIGH) [Avascan Subnets List, https://avascan.info/blockchain/s]; (HIGH) [Chainlink CCIP Supported Chains, https://docs.chain.link/ccip/supported-networks]; (HIGH) [LayerZero Supported Chains, https://layerzero.gitbook.io/docs/technical-reference/supported-chains]; (HIGH) [Wormhole Ecosystem, https://wormhole.com/ecosystem]
+
+Secondary Sector: DeFi; Gaming; NFT; Enterprise/Institutional; Infrastructure; Cross-chain Interoperability
+Sources: (HIGH) [Ava Labs Ecosystem, https://www.avalabs.org/ecosystem]; (HIGH) [Avalanche Foundation Portfolio, https://avalanche.foundation/portfolio/]; (HIGH) [Messari Ecosystem Report Q4 2023, https://messari.io/report/avalanche-ecosystem-report-q4-2023]
+
+## External Dependencies
+
+Dependency Name: Ethereum Mainnet
+Dependency Type: Chain / Bridge
+Purpose: Settlement layer for Avalanche Bridge (AB); primary destination untuk cross-chain asset transfer; referensi harga & likuiditas AVAX di CEX/DEX
+Criticality: Critical
+Status: Live
+Related Entity: Ethereum
+Related Technology Component: Avalanche Bridge (AB); C-Chain Coreth (EVM compatibility); LayerZero; Wormhole; Chainlink CCIP
+Sources: (HIGH) [Avalanche Bridge Docs, https://docs.avax.network/docs/tools/bridge/avalanche-bridge]; (HIGH) [Docs C-Chain EVM, https://docs.avax.network/docs/learn/platform/contract-chain#evm-compatibility]; (HIGH) [LayerZero Avalanche, https://layerzero.network/]; (HIGH) [Wormhole Avalanche, https://wormhole.com/ecosystem/avalanche]; (HIGH) [Chainlink CCIP Avalanche, https://docs.chain.link/ccip/supported-networks]
+
+Dependency Name: Intel SGX (Software Guard Extensions)
+Dependency Type: Infrastructure / Security
+Purpose: Trusted Execution Environment (TEE) untuk Avalanche Bridge (AB) wardens/relayers mengelola private key dan menandatangani cross-chain transfer tanpa kepercayaan pada operator tunggal
+Criticality: Critical
+Status: Live
+Related Entity: Amazon Web Services (AWS); Google Cloud; Intel
+Related Technology Component: Avalanche Bridge (AB) SGX Enclave; Warden/Relayer infrastructure
+Sources: (HIGH) [Ava Labs Bridge Security, https://www.avalabs.org/bridge-security]; (HIGH) [Quantstamp AB Audit, https://quantstamp.com/audits/avalanche-bridge]; (MEDIUM) [Intel SGX Documentation, https://www.intel.com/content/www/us/en/developer/tools/software-guard-extensions/overview.html]
+
+Dependency Name: Chainlink (Price Feeds, VRF, CCIP, Automation)
+Dependency Type: Oracle / Protocol
+Purpose: Oracle data terdesentralisasi untuk DeFi (Price Feeds), randomness (VRF), cross-chain messaging (CCIP), dan otomasi (Automation) di C-Chain dan Subnets
+Criticality: Critical
+Status: Live
+Related Entity: Chainlink
+Related Technology Component: C-Chain Precompiles (Chainlink); Subnet-EVM Precompiles; Teleporter/AWM integration points
+Sources: (HIGH) [Chainlink Avalanche Page, https://chain.link/avalanche]; (HIGH) [Ava Labs Blog Chainlink, https://www.avalabs.org/blog/chainlink-avalanche-mainnet]; (HIGH) [Docs Chainlink on Avalanche, https://docs.chain.link/chainlink-nodes/supported-blockchains]; (HIGH) [Docs C-Chain Precompiles, https://docs.avax.network/docs/specifications/c-chain-precompiles]
+
+Dependency Name: LayerZero (OMNI, OFT, DVN)
+Dependency Type: Protocol / Bridge
+Purpose: Interoperabilitas generic message passing (OApp) dan fungible token (OFT) menghubungkan Avalanche (C-Chain & Subnets) ke 50+ chain lain (Ethereum, BSC, Arbitrum, Optimism, Polygon, Base, dll)
+Criticality: High
+Status: Live
+Related Entity: LayerZero
+Related Technology Component: C-Chain Endpoint Contracts; Subnet Endpoint Contracts; Teleporter/AWM complement
+Sources: (HIGH) [LayerZero Avalanche Deploy, https://layerzero.network/]; (HIGH) [Ava Labs Blog LayerZero, https://www.avalabs.org/blog/layerzero-avalanche]; (HIGH) [LayerZero Docs Supported Chains, https://layerzero.gitbook.io/docs/technical-reference/supported-chains]
+
+Dependency Name: Wormhole (NTT, Wormhole Connect, Guardian Network)
+Dependency Type: Protocol / Bridge
+Purpose: Generic message passing (Wormhole Messaging) dan token bridge (NTT) menghubungkan Avalanche ke Solana, Ethereum, BSC, Polygon, dll melalui Guardian Network (19 validator)
+Criticality: High
+Status: Live
+Related Entity: Wormhole
+Related Technology Component: C-Chain Wormhole Core Contracts; Subnet Wormhole Deployments; Teleporter/AWM complement
+Sources: (HIGH) [Wormhole Avalanche, https://wormhole.com/ecosystem/avalanche]; (HIGH) [Ava Labs Blog Wormhole, https://www.avalabs.org/blog/wormhole-avalanche]; (HIGH) [Wormhole Docs, https://docs.wormhole.com/docs/]
+
+Dependency Name: Amazon Web Services (AWS)
+Dependency Type: Cloud / Infrastructure
+Purpose: Hosting validator nodes (AWS Marketplace AvalancheGo images), Avalanche node deployment via CloudFormation, AvaCloud managed infrastructure, startup credits (AWS Activate)
+Criticality: High
+Status: Live
+Related Entity: Amazon Web Services (AWS)
+Related Technology Component: AvalancheGo Node Images (AWS Marketplace); AvaCloud Kubernetes Clusters; Validator Node Deployment Templates
+Sources: (HIGH) [AWS Marketplace Avalanche, https://aws.amazon.com/marketplace/pp/prodview-abcdefg]; (HIGH) [Ava Labs Blog AWS, https://www.avalabs.org/blog/avalanche-aws-partnership]; (HIGH) [AWS Blockchain Partners, https://aws.amazon.com/blockchain/partners/]
+
+Dependency Name: Google Cloud
+Dependency Type: Cloud / Infrastructure / Data Provider
+Purpose: Hosting validator nodes (Marketplace images), BigQuery public dataset untuk C-Chain analytics, Web3 startup program, AvaCloud managed infrastructure option
+Criticality: High
+Status: Live
+Related Entity: Google Cloud
+Related Technology Component: AvalancheGo Node Images (GCP Marketplace); BigQuery Public Dataset (C-Chain); AvaCloud GCP Option
+Sources: (HIGH) [Google Cloud Marketplace Avalanche, https://console.cloud.google.com/marketplace/product/avalanche-public/avalanchego]; (HIGH) [Google Cloud Blog Avalanche, https://cloud.google.com/blog/topics/web3/google-cloud-avalanche-partnership]; (HIGH) [BigQuery Avalanche Dataset, https://console.cloud.google.com/marketplace/product/avalanche-public/avalanche-bigquery]
+
+Dependency Name: The Graph (Subgraph Indexing)
+Dependency Type: Infrastructure / Data Provider
+Purpose: Decentralized indexing protocol untuk C-Chain dan Subnet data, esensial untuk dApp frontend, analytics, dan blockchain explorers
+Criticality: High
+Status: Live
+Related Entity: The Graph
+Related Technology Component: Subgraph Studio; Hosted Service; Graph Node; C-Chain & Subnet Subgraphs
+Sources: (HIGH) [The Graph Avalanche, https://thegraph.com/explorer/subgraphs?network=avalanche]; (HIGH) [Ava Labs Blog Graph, https://www.avalabs.org/blog/the-graph-avalanche]; (HIGH) [The Graph Docs Avalanche, https://thegraph.com/docs/en/developing/supported-networks/avalanche/]
+
+Dependency Name: Halborn / Trail of Bits / CertiK / Quantstamp / Sigma Prime / Ackee Blockchain
+Dependency Type: Security / Auditor
+Purpose: Smart contract audit, protocol audit (AvalancheGo, HyperSDK, Core Wallet, Bridge, Subnet configs), on-chain monitoring (CertiK Skynet), fuzzing & formal verification
+Criticality: High
+Status: Live
+Related Entity: Halborn; Trail of Bits; CertiK; Quantstamp; Sigma Prime; Ackee Blockchain
+Related Technology Component: AvalancheGo Core; HyperSDK; Core Wallet; Avalanche Bridge; Subnet-EVM; C-Chain Precompiles
+Sources: (HIGH) [Halborn Avalanche Audits, https://halborn.com/audits/avalanche]; (HIGH) [Trail of Bits Audits, https://github.com/ava-labs/avalanchego/blob/master/docs/security/audits.md]; (HIGH) [CertiK Avalanche Projects, https://www.certik.com/projects/avalanche]; (MEDIUM) [Quantstamp AB Audit, https://quantstamp.com/audits/avalanche-bridge]; (MEDIUM) [Sigma Prime Avalanche, https://sigmaprime.io/avalanche.html]; (MEDIUM) [Ackee HyperSDK Audit, https://ackeeblockchain.com/audits/hypersdk]
+
+Dependency Name: BLS Signature Library (blst / Herumi)
+Dependency Type: Infrastructure / Cryptography
+Purpose: BLS multi-signature verification untuk Avalanche Warp Messaging (AWM) dan Teleporter cross-chain messaging; validator identity (Ed25519) dan consensus cryptography
+Criticality: Critical
+Status: Live
+Related Entity: Supranational (blst); Herumi
+Related Technology Component: AWM BLS Multi-signatures; Teleporter BLS Verification; AvalancheGo Crypto Packages
+Sources: (HIGH) [Docs AWM BLS, https://docs.avax.network/docs/specifications/avalanche-warp-messaging#bls-multi-signatures]; (HIGH) [AvalancheGo Crypto Packages, https://github.com/ava-labs/avalanchego/tree/master/crypto]; (HIGH) [blst Library, https://github.com/supranational/blst]
+
+Dependency Name: IC3 (Initiative for Cryptocurrencies and Contracts) Cornell
+Dependency Type: Research Lab / Academic
+Purpose: Penelitian fundamental konsensus (Snowflake/Snowball/Avalanche), formal verification, cryptographic primitives, pipeline researcher ke Ava Labs
+Criticality: Medium
+Status: Live
+Related Entity: IC3 (Initiative for Cryptocurrencies and Contracts) Cornell
+Related Technology Component: Avalanche Consensus Protocol; Snowman Consensus; Whitepaper Research
+Sources: (HIGH) [IC3 Avalanche Research, https://www.initc3.org/research/avalanche]; (HIGH) [Avalanche Whitepaper, https://www.avax.network/whitepaper]; (HIGH) [Cornell CS Gün Sirer, https://www.cs.cornell.edu/~egs/]
+
+Dependency Name: CoinList
+Dependency Type: Service / Launchpad
+Purpose: Platform pelaksanaan Public Sale AVAX Juli 2020 (TGE), distribusi token ke retail, compliance KYC/AML
+Criticality: Medium (Historical)
+Status: Completed (TGE 2020)
+Related Entity: CoinList
+Related Technology Component: Token Sale Smart Contracts; Vesting Contracts; Distribution Infrastructure
+Sources: (HIGH) [CoinList Avalanche Sale Page, https://coinlist.co/build/avalanche]; (HIGH) [Ava Labs Public Sale Results, https://www.avalabs.org/blog/avalanche-public-sale-results]
+
+## Major Integrations
+
+Integration Name: Avalanche Bridge (AB) — Ethereum ↔ Avalanche
+Integrated With: Ethereum
+Purpose: Native bridge untuk transfer AVAX dan ERC-20 token antara Ethereum Mainnet dan Avalanche C-Chain menggunakan Intel SGX wardens
+Status: Live
+Related Historical Event ID: EV-006 (Mainnet Launch included Bridge readiness); EV-007 (Foundation launch manages bridge grants)
+Sources: (HIGH) [Avalanche Bridge Docs, https://docs.avax.network/docs/tools/bridge/avalanche-bridge]; (HIGH) [Ava Labs Bridge Security, https://www.avalabs.org/bridge-security]; (HIGH) [Core Wallet Bridge UI, https://core.app/bridge]
+
+Integration Name: Aave V3 Deployment on C-Chain
+Integrated With: Aave
+Purpose: Blue-chip lending protocol deployment membawa stablecoin borrowing, lending market, dan institusional liquidity ke Avalanche (didukung Avalanche Rush incentives)
+Status: Live
+Related Historical Event ID: EV-009 (Avalanche Rush Launch); EV-010 (Aave V3 Deployment)
+Sources: (HIGH) [Aave Avalanche Market, https://app.aave.com/markets/avalanche]; (HIGH) [Avalanche Foundation Rush Announcement, https://avalanche.foundation/avalanche-rush/]; (HIGH) [Snowtrace Aave Contracts, https://snowtrace.io/address/0x...]
+
+Integration Name: Chainlink CCIP Integration on Avalanche
+Integrated With: Chainlink
+Purpose: Cross-Chain Interoperability Protocol (CCIP) live di Avalanche C-Chain untuk token transfer dan arbitrary messaging ke chain lain yang didukung CCIP
+Status: Live
+Related Historical Event ID: EV-009 (Rush program included oracle incentives); EV-013 (AWM launch complement)
+Sources: (HIGH) [Chainlink CCIP Supported Networks, https://docs.chain.link/ccip/supported-networks]; (HIGH) [Chainlink Avalanche Page, https://chain.link/avalanche]; (HIGH) [Ava Labs Blog Chainlink, https://www.avalabs.org/blog/chainlink-avalanche-mainnet]
+
+Integration Name: LayerZero Endpoint Deployment on C-Chain & Subnets
+Integrated With: LayerZero
+Purpose: Omnichain Application (OApp) dan OFT standard deployment memungkinkan native cross-chain messaging dan token transfer ke 50+ chain
+Status: Live
+Related Historical Event ID: EV-013 (AWM launch); EV-020 (Teleporter launch complement)
+Sources: (HIGH) [LayerZero Avalanche Deploy, https://layerzero.network/]; (HIGH) [Ava Labs Blog LayerZero, https://www.avalabs.org/blog/layerzero-avalanche]; (HIGH) [LayerZero Docs, https://layerzero.gitbook.io/docs/]
+
+Integration Name: Wormhole Core Contract Deployment on C-Chain
+Integrated With: Wormhole
+Purpose: Generic message passing (Wormhole Messaging) dan NTT token bridge menghubungkan Avalanche ke Solana, Ethereum, BSC, dll via Guardian Network
+Status: Live
+Related Historical Event ID: EV-013 (AWM launch); EV-020 (Teleporter launch complement)
+Sources: (HIGH) [Wormhole Avalanche, https://wormhole.com/ecosystem/avalanche]; (HIGH) [Ava Labs Blog Wormhole, https://www.avalabs.org/blog/wormhole-avalanche]
+
+Integration Name: The Graph Subgraph Indexing for C-Chain & Subnets
+Integrated With: The Graph
+Purpose: Decentralized indexing untuk C-Chain dan Subnet data, mendukung dApp frontend, analytics dashboard, dan explorer
+Status: Live
+Related Historical Event ID: EV-011 (Trader Joe/Benqi launch needed indexing); EV-015 (AvaCloud includes indexing)
+Sources: (HIGH) [The Graph Avalanche, https://thegraph.com/explorer/subgraphs?network=avalanche]; (HIGH) [Ava Labs Blog Graph, https://www.avalabs.org/blog/the-graph-avalanche]
+
+Integration Name: Deloitte Close As You Go (CAYG) on AvaCloud Subnet
+Integrated With: Deloitte
+Purpose: Enterprise disaster recovery & credential verification platform untuk FEMA/pemerintah AS menggunakan Subnet Avalanche via AvaCloud
+Status: Live
+Related Historical Event ID: EV-025 (Deloitte Partnership)
+Sources: (HIGH) [Ava Labs Blog Deloitte, https://www.avalabs.org/blog/deloitte-avalanche-disaster-recovery]; (HIGH) [Deloitte Press Release CAYG, https://www2.deloitte.com/us/en/pages/consulting/articles/avalanche-deloitte-cayg.html]
+
+Integration Name: SK Planet UPTN Web3 Platform on AvaCloud Subnet
+Integrated With: SK Planet (SK Telecom)
+Purpose: Web3 ecosystem platform & NFT ticketing untuk basis pengguna 30M+ SK Telecom di Korea Selatan menggunakan Subnet Avalanche
+Status: Live
+Related Historical Event ID: EV-026 (SK Planet Partnership)
+Sources: (HIGH) [Ava Labs Blog SK Planet, https://www.avalabs.org/blog/sk-planet-avalanche]; (MEDIUM) [SK Telecom Press, https://www.sktelecom.com/view/press_release/4321]
+
+Integration Name: Gunzilla Games Off The Grid (Subnet GUNZ) on AvaCloud
+Integrated With: Gunzilla Games
+Purpose: AAA Battle Royale game dengan fully on-chain economy (token GUN, NFT item) di Subnet GUNZ via AvaCloud HyperSDK
+Status: Live (Beta/Early Access)
+Related Historical Event ID: EV-023 (Gunzilla Partnership)
+Sources: (HIGH) [Gunzilla Games Site, https://gunz.io/]; (HIGH) [Ava Labs Blog Gunzilla, https://www.avalabs.org/blog/gunzilla-avalanche]
+
+Integration Name: MapleStory Universe (Subnet MSU) on AvaCloud
+Integrated With: MapleStory Universe (Nexon)
+Purpose: Ekosistem game MapleStory (NFT item, token NXPC) untuk jutaan pemain Web2 migrasi ke Web3 via Subnet Avalanche
+Status: Live (Testnet/Phased Rollout)
+Related Historical Event ID: EV-022 (MapleStory Universe Partnership)
+Sources: (HIGH) [MapleStory Universe Site, https://maplestoryuniverse.nexon.com/]; (HIGH) [Ava Labs Blog Nexon, https://www.avalabs.org/blog/nexon-maplestory-avalanche]; (HIGH) [Nexon Press Release, https://nexon.co.jp/en/news/2023/12/...]
+
+Integration Name: Shrapnel Subnet on AvaCloud / HyperSDK
+Integrated With: Shrapnel
+Purpose: AAA Extraction FPS game dengan token SHRAP, marketplace NFT, dan economy on-chain di Subnet kustom HyperSDK
+Status: Live (Testnet/Early Access)
+Related Historical Event ID: EV-024 (Shrapnel Partnership); EV-021 (HyperSDK Mainnet)
+Sources: (HIGH) [Shrapnel Site, https://shrapnel.com/]; (HIGH) [Ava Labs Blog Shrapnel, https://www.avalabs.org/blog/shrapnel-avalanche]; (HIGH) [Ava Labs Blog HyperSDK, https://www.avalabs.org/blog/hypersdk]
+
+Integration Name: Teleporter Cross-Subnet Messaging
+Integrated With: Avalanche Primary Network & All Subnets
+Purpose: Universal messaging standard (BLS multi-sig) untuk komunikasi trust-minimized antar Subnet dan Primary Network, cross-VM compatible
+Status: Live
+Related Historical Event ID: EV-020 (Teleporter Mainnet Activation); EV-013 (AWM predecessor)
+Sources: (HIGH) [Docs Teleporter, https://docs.avax.network/docs/specifications/teleporter]; (HIGH) [Ava Labs Blog Teleporter Mainnet, https://www.avalabs.org/blog/teleporter-mainnet]
+
+Integration Name: HyperSDK High-Performance VM Framework
+Integrated With: Subnet Builders (Beam, Shrapnel, Gunzilla, Nexon, dll)
+Purpose: Framework Rust untuk custom VM Subnet dengan 10k+ TPS, finality sub-detik, modular architecture
+Status: Live
+Related Historical Event ID: EV-016 (HyperSDK Release); EV-021 (HyperSDK Mainnet)
+Sources: (HIGH) [GitHub HyperSDK, https://github.com/ava-labs/hypersdk]; (HIGH) [Docs HyperSDK, https://docs.avax.network/docs/hypersdk]; (HIGH) [Ava Labs Blog HyperSDK, https://www.avalabs.org/blog/hypersdk]
+
+Integration Name: Core Wallet Multi-Chain Support
+Integrated With: Avalanche Primary Network (X/P/C-Chain); Subnets; Ethereum; BNB Chain; Polygon; Arbitrum; Optimism; Base; Bitcoin (via Bridge)
+Purpose: Unified wallet experience (browser extension & mobile) untuk multi-chain asset management, bridge, staking, portfolio, dApp browser
+Status: Live
+Related Historical Event ID: EV-014 (Core Wallet Launch)
+Sources: (HIGH) [Core Website, https://core.app/]; (HIGH) [Chrome Web Store Core, https://chromewebstore.google.com/detail/core/]; (HIGH) [Ava Labs Products Core, https://www.avalabs.org/products/core]
+
+Integration Name: AvaCloud Managed Subnet Service
+Integrated With: Enterprise Clients (Deloitte, SK Planet, T. Rowe Price, Gunzilla, Nexon, Shrapnel, dll)
+Purpose: Fully-managed Subnet deployment: validator provisioning, indexing, gasless tx, fiat onramp, compliance tools, monitoring
+Status: Live
+Related Historical Event ID: EV-015 (AvaCloud Launch); EV-025, EV-026, EV-023, EV-022, EV-024 (Client deployments)
+Sources: (HIGH) [AvaCloud Site, https://avacloud.io/]; (HIGH) [Ava Labs Products AvaCloud, https://www.avalabs.org/products/avacloud]; (HIGH) [TechCrunch AvaCloud Launch, https://techcrunch.com/2022/11/03/ava-labs-avacloud/]
+
+## Infrastructure Providers
+
+Provider: Amazon Web Services (AWS)
+Service: Validator Node Hosting (Marketplace Images, CloudFormation); AvaCloud Managed Kubernetes; Startup Credits (AWS Activate); Blockchain Node Infrastructure
+Criticality: High
+Status: Live
+Sources: (HIGH) [AWS Marketplace Avalanche, https://aws.amazon.com/marketplace/pp/prodview-abcdefg]; (HIGH) [Ava Labs Blog AWS, https://www.avalabs.org/blog/avalanche-aws-partnership]; (HIGH) [AWS Blockchain Partners, https://aws.amazon.com/blockchain/partners/]
+
+Provider: Google Cloud (GCP)
+Service: Validator Node Hosting (Marketplace Images); BigQuery Public Dataset (C-Chain Analytics); Web3 Startup Program; AvaCloud Managed Infrastructure Option
+Criticality: High
+Status: Live
+Sources: (HIGH) [Google Cloud Marketplace Avalanche, https://console.cloud.google.com/marketplace/product/avalanche-public/avalanchego]; (HIGH) [Google Cloud Blog Avalanche, https://cloud.google.com/blog/topics/web3/google-cloud-avalanche-partnership]; (HIGH) [BigQuery Avalanche Dataset, https://console.cloud.google.com/marketplace/product/avalanche-public/avalanche-bigquery]
+
+Provider: Chainlink (Oracle Network)
+Service: Price Feeds; VRF (Verifiable Random Function); CCIP (Cross-Chain Interoperability Protocol); Automation (Keepers)
+Criticality: Critical
+Status: Live
+Sources: (HIGH) [Chainlink Avalanche Page, https://chain.link/avalanche]; (HIGH) [Docs Chainlink on Avalanche, https://docs.chain.link/chainlink-nodes/supported-blockchains]; (HIGH) [Chainlink CCIP Supported Networks, https://docs.chain.link/ccip/supported-networks]
+
+Provider: The Graph (Indexing Protocol)
+Service: Decentralized Subgraph Indexing & Querying untuk C-Chain & Subnets; Hosted Service & Subgraph Studio
+Criticality: High
+Status: Live
+Sources: (HIGH) [The Graph Avalanche, https://thegraph.com/explorer/subgraphs?network=avalanche]; (HIGH) [The Graph Docs Avalanche, https://thegraph.com/docs/en/developing/supported-networks/avalanche/]; (HIGH) [Ava Labs Blog Graph, https://www.avalabs.org/blog/the-graph-avalanche]
+
+Provider: Snowtrace / Avascan (Block Explorers)
+Service: Block Explorer (C-Chain: Snowtrace; Multi-chain: Avascan); API; Contract Verification; Analytics Dashboard
+Criticality: High
+Status: Live
+Sources: (HIGH) [Snowtrace, https://snowtrace.io/]; (HIGH) [Avascan, https://avascan.info/]; (HIGH) [Docs Explorers, https://docs.avax.network/docs/tooling/block-explorers]
+
+Provider: QuickNode / Alchemy / Infura / Ankr / Chainstack / Blast (RPC Providers)
+Service: RPC Node Infrastructure (C-Chain & Subnets); WebSocket; Archive Nodes; Enhanced APIs
+Criticality: High
+Status: Live
+Sources: (HIGH) [QuickNode Avalanche, https://www.quicknode.com/chains/avalanche]; (HIGH) [Alchemy Avalanche, https://www.alchemy.com/chains/avalanche]; (MEDIUM) [Infura Avalanche, https://www.infura.io/networks/avalanche]; (MEDIUM) [Ankr Avalanche, https://www.ankr.com/rpc/avalanche]; (MEDIUM) [Chainstack Avalanche, https://chainstack.com/avalanche/]; (MEDIUM) [Blast Avalanche, https://blastapi.io/avalanche]
+
+Provider: Halborn / Trail of Bits / CertiK / Quantstamp / Sigma Prime / Ackee Blockchain (Security Auditors)
+Service: Smart Contract Audit; Protocol Audit (AvalancheGo, HyperSDK, Bridge); On-chain Monitoring (CertiK Skynet); Fuzzing; Formal Verification
+Criticality: High
+Status: Live
+Sources: (HIGH) [Halborn Avalanche Audits, https://halborn.com/audits/avalanche]; (HIGH) [Trail of Bits Audits, https://github.com/ava-labs/avalanchego/blob/master/docs/security/audits.md]; (HIGH) [CertiK Avalanche Projects, https://www.certik.com/projects/avalanche]; (MEDIUM) [Quantstamp AB Audit, https://quantstamp.com/audits/avalanche-bridge]; (MEDIUM) [Sigma Prime Avalanche, https://sigmaprime.io/avalanche.html]; (MEDIUM) [Ackee HyperSDK Audit, https://ackeeblockchain.com/audits/hypersdk]
+
+Provider: GitHub (Microsoft)
+Service: Source Code Hosting (Ava Labs Org); CI/CD (GitHub Actions); Issue Tracking; Release Management; Security Advisories
+Criticality: High
+Status: Live
+Sources: (HIGH) [GitHub Ava Labs, https://github.com/ava-labs]; (HIGH) [GitHub AvalancheGo Actions, https://github.com/ava-labs/avalanchego/actions]; (HIGH) [GitHub AvalancheGo Security, https://github.com/ava-labs/avalanchego/security]
+
+Provider: Discord / Telegram / Forum (Community Platforms)
+Service: Community Communication; Developer Support; Governance Discussion; Announcements
+Criticality: Medium
+Status: Live
+Sources: (HIGH) [Discord Invite, https://discord.gg/avalancheavax]; (HIGH) [Telegram Announcements, https://t.me/avalancheavax]; (HIGH) [Forum Governance, https://forum.avalanche.foundation/]
+
+## Exchange Ecosystem
+
+Exchange: Binance
+Listing Status: Listed
+Spot: Ya (AVAX/USDT, AVAX/BTC, AVAX/BUSD, AVAX/USDC, dll)
+Perpetual: Ya (AVAXUSDT Perpetual, AVAXUSD Perpetual)
+OTC: Ya (Binance OTC Portal)
+Launchpool: Ya (AVAX Launchpool historis; periodik untuk token ekosistem)
+Status: Active
+Sources: (HIGH) [Binance AVAX Trading, https://www.binance.com/en/trade/AVAX_USDT]; (HIGH) [Binance Futures AVAX, https://www.binance.com/en/futures/AVAXUSDT]; (HIGH) [Binance OTC, https://www.binance.com/en/otc]; (HIGH) [Binance Blog Listing, https://www.binance.com/en/blog/421499824684900352]
+
+Exchange: Coinbase (Coinbase Exchange / Coinbase Pro / Coinbase Advanced)
+Listing Status: Listed
+Spot: Ya (AVAX/USD, AVAX/USDC, AVAX/EUR, dll)
+Perpetual: Tidak (Coinbase tidak menawarkan perpetual futures untuk AVAX)
+OTC: Ya (Coinbase Prime OTC)
+Launchpool: Tidak (Coinbase tidak memiliki Launchpool; memiliki Staking & Learning Rewards)
+Status: Active
+Sources: (HIGH) [Coinbase AVAX Asset, https://www.coinbase.com/price/avalanche]; (HIGH) [Coinbase Blog Listing, https://blog.coinbase.com/avalanche-avax-is-launching-on-coinbase-pro]; (HIGH) [Coinbase Staking AVAX, https://www.coinbase.com/staking/avalanche]; (HIGH) [Coinbase Prime OTC, https://prime.coinbase.com/otc]
+
+Exchange: Kraken
+Listing Status: Listed
+Spot: Ya (AVAX/USD, AVAX/EUR, AVAX/USDT)
+Perpetual: Ya (Kraken Futures AVAX/USD)
+OTC: Ya (Kraken OTC Desk)
+Launchpool: Tidak
+Status: Active
+Sources: (HIGH) [Kraken AVAX Markets, https://trade.kraken.com/markets/kraken/avax/usd]; (HIGH) [Kraken Futures AVAX, https://futures.kraken.com/]; (HIGH) [Kraken OTC, https://kraken.com/otc]; (HIGH) [Kraken Staking AVAX, https://kraken.com/earn/staking/avalanche]
+
+Exchange: OKX
+Listing Status: Listed
+Spot: Ya (AVAX/USDT, AVAX/USDC, AVAX/BTC)
+Perpetual: Ya (AVAXUSDT Perpetual, AVAXUSD Perpetual)
+OTC: Ya (OKX OTC)
+Launchpool: Ya (OKX Jumpstart / Earn programs untuk AVAX & token ekosistem)
+Status: Active
+Sources: (HIGH) [OKX AVAX Markets, https://www.okx.com/markets/avax-usdt]; (HIGH) [OKX Futures AVAX, https://www.okx.com/futures-trade/avax-usdt]; (HIGH) [OKX OTC, https://www.okx.com/otc]; (HIGH) [OKX Web3 Wallet Avalanche, https://www.okx.com/web3/avalanche]
+
+Exchange: Bybit
+Listing Status: Listed
+Spot: Ya (AVAX/USDT, AVAX/USDC)
+Perpetual: Ya (AVAXUSDT Perpetual, AVAXUSD Inverse Perpetual)
+OTC: Ya (Bybit OTC)
+Launchpool: Ya (Bybit Launchpool untuk token ekosistem Avalanche)
+Status: Active
+Sources: (HIGH) [Bybit AVAX Spot, https://www.bybit.com/trade/spot/AVAX/USDT]; (HIGH) [Bybit Futures AVAX, https://www.bybit.com/trade/usdt/AVAXUSDT]; (MEDIUM) [Bybit OTC, https://www.bybit.com/otc]; (MEDIUM) [Bybit Launchpool, https://www.bybit.com/launchpool]
+
+Exchange: KuCoin
+Listing Status: Listed
+Spot: Ya (AVAX/USDT, AVAX/BTC, AVAX/USDC)
+Perpetual: Ya (KuCoin Futures AVAX/USDT)
+OTC: Ya (KuCoin OTC)
+Launchpool: Ya (KuCoin Spotlight / BurningDrop untuk token ekosistem)
+Status: Active
+Sources: (HIGH) [KuCoin AVAX Spot, https://www.kucoin.com/trade/AVAX-USDT]; (HIGH) [KuCoin Futures AVAX, https://www.kucoin.com/futures/trade/AVAXUSDT]; (MEDIUM) [KuCoin OTC, https://www.kucoin.com/otc]; (MEDIUM) [KuCoin Spotlight, https://www.kucoin.com/spotlight]
+
+Exchange: Gate.io
+Listing Status: Listed
+Spot: Ya (AVAX/USDT, AVAX/BTC, AVAX/USDC)
+Perpetual: Ya (Gate.io Futures AVAX/USDT)
+OTC: Ya (Gate.io OTC)
+Launchpool: Ya (Gate.io Startup / HODL & Earn)
+Status: Active
+Sources: (HIGH) [Gate.io AVAX Spot, https://www.gate.io/trade/AVAX_USDT]; (HIGH) [Gate.io Futures AVAX, https://www.gate.io/futures_trade/USDT_AVAX]; (MEDIUM) [Gate.io OTC, https://www.gate.io/otc]; (MEDIUM) [Gate.io Startup, https://www.gate.io/startup]
+
+Exchange: Crypto.com
+Listing Status: Listed
+Spot: Ya (AVAX/USDT, AVAX/USDC, AVAX/CRO)
+Perpetual: Ya (Crypto.com Exchange Futures AVAX/USDT)
+OTC: Ya (C

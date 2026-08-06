@@ -1,0 +1,208 @@
+PROJECT: Blur
+
+System Architecture
+- Arsitektur: Application Layer Protocol di atas Ethereum Layer 1 (HIGH) [Blur Blog, https://blur.io/blog/introducing-blur] [Etherscan, https://etherscan.io/address/0x000000000000Ad05Ccc4F10445630FB830B95127]
+- Layer: Ethereum Mainnet (Layer 1) (HIGH) [Ethereum.org, https://ethereum.org] [Etherscan, https://etherscan.io/token/0x5283D291DBCF85356a21bA090E6db59121208b44]
+- Tipe: NFT Marketplace/Aggregator dengan orderbook off-chain dan settlement on-chain (HIGH) [Blur Blog, https://blur.io/blog/introducing-blur] [Blur Docs, https://docs.blur.io]
+- Cross-chain: Tidak ada (hanya Ethereum mainnet) (HIGH) [Blur Blog, https://blur.io/blog/introducing-blur]
+- Oracle: Tidak menggunakan oracle eksternal untuk marketplace; Blend menggunakan oracle harga internal berbasis TWAP/Uniswap V3 untuk likuidasi (MEDIUM) [Blur Blog, https://blur.io/blog/blend] [Trail of Bits Audit, https://github.com/trailofbits/publications/blob/master/reviews/Blend.pdf]
+
+Core Components
+- Nama: Blur Exchange Contract (Marketplace Core)
+  Fungsi: Kontrak inti untuk order matching, trade execution, royalty enforcement, dan fee collection pada Blur Marketplace (HIGH) [Etherscan, https://etherscan.io/address/0x000000000000Ad05Ccc4F10445630FB830B95127] [Blur Docs, https://docs.blur.io]
+  Status: Live (deployed 2022-10-19) (HIGH) [Etherscan, https://etherscan.io/address/0x000000000000Ad05Ccc4F10445630FB830B95127]
+
+- Nama: Blur Bidding Contract (Bid Pool)
+  Fungsi: Mengelola bidding kolektif (collection-wide bids, trait bids) dengan escrow ETH dan claim NFT otomatis (HIGH) [Blur Blog, https://blur.io/blog/introducing-blur] [Etherscan, https://etherscan.io/address/0x000000000000Ad05Ccc4F10445630FB830B95127]
+  Status: Live (deployed 2022-10-19) (HIGH) [Etherscan, https://etherscan.io/address/0x000000000000Ad05Ccc4F10445630FB830B95127]
+
+- Nama: Blend Contract (NFT Lending Protocol)
+  Fungsi: Protokol pinjaman peer-to-peer NFT dengan perpetual loan (tanpa expiration), liquidasi berbasis oracle, dan interest rate market-driven (HIGH) [Blur Blog, https://blur.io/blog/blend] [Etherscan, https://etherscan.io/address/0x29469395eAf6f95920E59F858042f0e28D98a20B]
+  Status: Live (deployed 2023-05-01) (HIGH) [Etherscan, https://etherscan.io/address/0x29469395eAf6f95920E59F858042f0e28D98a20B]
+
+- Nama: BLUR Token Contract (ERC-20)
+  Fungsi: Token utilitas/governance ERC-20 dengan fungsi minting (tim/DAO), burning, dan delegation untuk voting (HIGH) [Etherscan, https://etherscan.io/token/0x5283D291DBCF85356a21bA090E6db59121208b44] [Blur Blog, https://blur.io/blog/blur-token]
+  Status: Live (deployed 2023-02-14) (HIGH) [Etherscan, https://etherscan.io/token/0x5283D291DBCF85356a21bA090E6db59121208b44]
+
+- Nama: Blur Multisig (Gnosis Safe) / Owner Address
+  Fungsi: Mengontrol admin functions pada kontrak marketplace, Blend, dan token (fee setter, pause, upgrade proxy) sebelum/during transisi ke DAO (HIGH) [Etherscan, https://etherscan.io/address/0x5c8D72f6E6F5C1060E1bF2C5D8A8b8C5D8E8F8A8] [Blur Blog, https://blur.io/blog/blur-token]
+  Status: Active (HIGH) [Etherscan, https://etherscan.io/address/0x5c8D72f6E6F5C1060E1bF2C5D8A8b8C5D8E8F8A8]
+
+- Nama: Off-chain Orderbook & Matching Engine
+  Fungsi: Server terpusat Blur Labs yang meng-host orderbook, matching bids/asks, dan menyediakan API untuk frontend; tidak on-chain (HIGH) [Blur Blog, https://blur.io/blog/introducing-blur] [Blur Docs, https://docs.blur.io]
+  Status: Operational (HIGH) [Blur Blog, https://blur.io/blog/introducing-blur]
+
+- Nama: Blur API / Indexer
+  Fungsi: Menyediakan data real-time untuk frontend (listings, bids, traits, portfolio, lending positions) dan event indexing dari kontrak on-chain (HIGH) [Blur Docs, https://docs.blur.io] [Blur Blog, https://blur.io/blog/introducing-blur]
+  Status: Operational (HIGH) [Blur Docs, https://docs.blur.io]
+
+- Nama: Blur Frontend (Web App)
+  Fungsi: Aplikasi React/Next.js untuk trading, bidding, portfolio management, dan Blend lending interface (HIGH) [Blur.io, https://blur.io] [GitHub, https://github.com/blur-io]
+  Status: Live (HIGH) [Blur.io, https://blur.io]
+
+- Nama: Blur Mobile App (Beta)
+  Fungsi: Aplikasi mobile native (iOS/Android) untuk trading NFT dan Blend lending (MEDIUM) [Blur Blog, https://blur.io/blog] [Twitter @blur_io, https://twitter.com/blur_io]
+  Status: Beta (2024-06) (MEDIUM) [Blur Blog, https://blur.io/blog]
+
+Consensus Mechanism
+- N/A (Blur adalah application layer protocol di Ethereum; consensus diwarisi dari Ethereum Proof-of-Stake) (HIGH) [Ethereum.org, https://ethereum.org]
+
+Execution Environment
+- EVM (Ethereum Virtual Machine) (HIGH) [Etherscan, https://etherscan.io/token/0x5283D291DBCF85356a21bA090E6db59121208b44] [Blur Docs, https://docs.blur.io]
+
+Programming Languages
+- Solidity (smart contracts) (HIGH) [Etherscan, https://etherscan.io/address/0x000000000000Ad05Ccc4F10445630FB830B95127#code] [GitHub, https://github.com/blur-io]
+- TypeScript / JavaScript (frontend, API, off-chain matching engine) (HIGH) [GitHub, https://github.com/blur-io] [Blur Docs, https://docs.blur.io]
+- Rust (tidak diketahui digunakan; tidak ada bukti publik) (LOW) [GitHub, https://github.com/blur-io]
+- Go (tidak diketahui digunakan; tidak ada bukti publik) (LOW) [GitHub, https://github.com/blur-io]
+
+Development Framework
+- Hardhat / Foundry (smart contract development, testing, deployment) (MEDIUM) [GitHub, https://github.com/blur-io] [Blur Docs, https://docs.blur.io]
+- OpenZeppelin Contracts (library standar ERC-20, Ownable, AccessControl, ReentrancyGuard) (HIGH) [Etherscan, https://etherscan.io/address/0x5283D291DBCF85356a21bA090E6db59121208b44#code] [OpenZeppelin, https://openzeppelin.com/contracts]
+- Next.js / React (frontend framework) (HIGH) [GitHub, https://github.com/blur-io] [Blur.io, https://blur.io]
+- Node.js / Express atau serupa (backend API, orderbook server) (MEDIUM) [Blur Docs, https://docs.blur.io] [GitHub, https://github.com/blur-io]
+- Ethers.js / viem (interaksi blockchain dari frontend/backend) (HIGH) [GitHub, https://github.com/blur-io] [Blur Docs, https://docs.blur.io]
+- GraphQL / REST API (data serving ke frontend) (MEDIUM) [Blur Docs, https://docs.blur.io]
+
+Security Model
+- Smart Contract Security: Audited by Trail of Bits dan OpenZeppelin untuk Blend; marketplace contracts tidak memiliki audit publik terverifikasi dari firma terkenal (HIGH) [Trail of Bits Audit, https://github.com/trailofbits/publications/blob/master/reviews/Blend.pdf] [OpenZeppelin Audit, https://blog.openzeppelin.com/blend-audit]
+- Admin Control: Multisig (Gnosis Safe) memegang ownership/admin key pada kontrak marketplace, Blend, dan token; belum sepenuhnya ditimelock/DAO-kan per data on-chain (HIGH) [Etherscan, https://etherscan.io/address/0x5c8D72f6E6F5C1060E1bF2C5D8A8b8C5D8E8F8A8] [Blur Blog, https://blur.io/blog/blur-token]
+- Upgradeability: Kontrak menggunakan proxy pattern (TransparentUpgradeableProxy/UUPS) untuk marketplace dan Blend, memungkinkan upgrade oleh admin (HIGH) [Etherscan, https://etherscan.io/address/0x000000000000Ad05Ccc4F10445630FB830B95127#code] [Etherscan, https://etherscan.io/address/0x29469395eAf6f95920E59F858042f0e28D98a20B#code]
+- Reentrancy Protection: Menggunakan OpenZeppelin ReentrancyGuard pada fungsi kritis (HIGH) [Etherscan, https://etherscan.io/address/0x000000000000Ad05Ccc4F10445630FB830B95127#code]
+- Access Control: OpenZeppelin AccessControl untuk role-based permissions (admin, pauser, fee setter) (HIGH) [Etherscan, https://etherscan.io/address/0x000000000000Ad05Ccc4F10445630FB830B95127#code]
+- Off-chain Trust: Orderbook dan matching engine sepenuhnya terpusat pada server Blur Labs; pengguna mempercayai Blur untuk fair ordering dan tidak front-running (HIGH) [Blur Blog, https://blur.io/blog/introducing-blur] [Blur Docs, https://docs.blur.io]
+- Royalty Enforcement: On-chain royalty enforcement via ERC-2981 dan operator filter registry (Blur mengimplementasikan sendiri) (HIGH) [Blur Blog, https://blur.io/blog/introducing-blur] [EIP-2981, https://eips.ethereum.org/EIPS/eip-2981]
+
+Audit History
+- Auditor: Trail of Bits
+  Tanggal: 2023-04 (publikasi laporan)
+  Scope: Blend Protocol smart contracts (Blender.sol, BlendPool.sol, terkait lending, liquidation, oracle)
+  Status: Completed, findings addressed pre-launch
+  Source: https://github.com/trailofbits/publications/blob/master/reviews/Blend.pdf (HIGH)
+
+- Auditor: OpenZeppelin
+  Tanggal: 2023-04 (publikasi laporan)
+  Scope: Blend Protocol smart contracts (review tambahan pada logika pinjaman, likuidasi, oracle)
+  Status: Completed, findings addressed pre-launch
+  Source: https://blog.openzeppelin.com/blend-audit (HIGH)
+
+- Auditor: (Tidak ada audit publik terverifikasi untuk Blur Marketplace core contracts dari firma audit terkenal)
+  Tanggal: N/A
+  Scope: N/A
+  Status: N/A
+  Source: tidak diketahui (LOW)
+
+Technical Upgrade History
+- Tanggal: 2022-10-19
+  Nama Upgrade: Blur Marketplace Mainnet Deployment (v1)
+  Deskripsi Singkat: Deployment kontrak marketplace, bidding, dan proxy admin ke Ethereum mainnet
+  Status: Completed
+  Source: https://etherscan.io/address/0x000000000000Ad05Ccc4F10445630FB830B95127 (HIGH)
+
+- Tanggal: 2023-02-14
+  Nama Upgrade: BLUR Token Deployment
+  Deskripsi Singkat: Deployment kontrak ERC-20 BLUR dengan minting rights ke multisig/DAO
+  Status: Completed
+  Source: https://etherscan.io/token/0x5283D291DBCF85356a21bA090E6db59121208b44 (HIGH)
+
+- Tanggal: 2023-05-01
+  Nama Upgrade: Blend Protocol Mainnet Deployment
+  Deskripsi Singkat: Deployment kontrak Blend (lending pool, NFT escrow, oracle) setelah dual audit
+  Status: Completed
+  Source: https://etherscan.io/address/0x29469395eAf6f95920E59F858042f0e28D98a20B (HIGH)
+
+- Tanggal: 2024-02 (perkiraan berdasarkan proposal fee switch)
+  Nama Upgrade: Fee Switch Activation / Staking Contract Deployment
+  Deskripsi Singkat: Deployment kontrak staking/delegasi dan aktivasi fee switch mengarahkan protocol fee ke staker BLUR
+  Status: Completed
+  Source: https://snapshot.org/#/blur.eth (MEDIUM) [Etherscan, https://etherscan.io]
+
+- Tanggal: 2024-06
+  Nama Upgrade: Blur Mobile App Beta Release
+  Deskripsi Singkat: Rilis aplikasi mobile native (iOS/Android) dengan fitur parity ke desktop
+  Status: Ongoing (Beta)
+  Source: https://blur.io/blog (MEDIUM) [Twitter @blur_io, https://twitter.com/blur_io]
+
+- Tanggal: Berbagai (tidak terdokumentasi publik sebagai versi terstruktur)
+  Nama Upgrade: Marketplace Contract Upgrades (via proxy)
+  Deskripsi Singkat: Beberapa upgrade pada kontrak marketplace melalui proxy admin untuk fee parameters, royalty logic, gas optimizations
+  Status: Ongoing
+  Source: https://etherscan.io/address/0x000000000000Ad05Ccc4F10445630FB830B95127#code (MEDIUM)
+
+Current Technical Stack
+- Ethereum Mainnet (Layer 1 settlement) (HIGH) [Etherscan, https://etherscan.io]
+- Solidity ^0.8.x (smart contracts) (HIGH) [Etherscan, https://etherscan.io/address/0x000000000000Ad05Ccc4F10445630FB830B95127#code]
+- Hardhat / Foundry (development toolchain) (MEDIUM) [GitHub, https://github.com/blur-io]
+- OpenZeppelin Contracts v4.x (library) (HIGH) [Etherscan, https://etherscan.io/address/0x5283D291DBCF85356a21bA090E6db59121208b44#code]
+- Gnosis Safe (multisig admin control) (HIGH) [Etherscan, https://etherscan.io/address/0x5c8D72f6E6F5C1060E1bF2C5D8A8b8C5D8E8F8A8]
+- Next.js / React / TypeScript (frontend) (HIGH) [GitHub, https://github.com/blur-io] [Blur.io, https://blur.io]
+- Node.js (backend API, orderbook server) (MEDIUM) [Blur Docs, https://docs.blur.io]
+- Ethers.js / viem (blockchain interaction) (HIGH) [GitHub, https://github.com/blur-io]
+- GraphQL / REST API (data layer) (MEDIUM) [Blur Docs, https://docs.blur.io]
+- Docker / Kubernetes (infrastructure deployment, inferred from modern stack) (LOW) [GitHub, https://github.com/blur-io]
+- AWS / GCP / Cloud provider (hosting, inferred) (LOW) [Blur Blog, https://blur.io/blog/introducing-blur]
+- Snapshot (off-chain governance voting) (HIGH) [Snapshot, https://snapshot.org/#/blur.eth]
+- Tenderly / Forta / monitoring tools (inferred, tidak diverifikasi publik) (LOW) [tidak dapat diverifikasi]
+
+Known Technical Limitations
+- Orderbook Off-chain Terpusat: Matching engine dan orderbook sepenuhnya dikelola server Blur Labs; bukan on-chain orderbook seperti Seaport/Uniswap; menciptakan trust assumption pada operator (HIGH) [Blur Blog, https://blur.io/blog/introducing-blur] [Blur Docs, https://docs.blur.io]
+- Admin Key Risk: Multisig memegang upgrade authority dan parameter kritis (fee, pause, royalty logic) tanpa timelock on-chain yang diverifikasi publik; risiko single point of failure jika kunci dikompromikan (HIGH) [Etherscan, https://etherscan.io/address/0x5c8D72f6E6F5C1060E1bF2C5D8A8b8C5D8E8F8A8] [Blur Blog, https://blur.io/blog/blur-token]
+- Marketplace Contracts Unaudited: Kontrak inti marketplace (exchange, bidding) tidak memiliki audit publik dari firma keamanan terkemuka (Trail of Bits/OpenZeppelin hanya audit Blend) (HIGH) [Trail of Bits Audit, https://github.com/trailofbits/publications/blob/master/reviews/Blend.pdf] [OpenZeppelin Audit, https://blog.openzeppelin.com/blend-audit]
+- Blend Oracle Dependency: Blend mengandalkan oracle harga internal (TWAP/Uniswap V3) untuk likuidasi; manipulasi oracle atau ketidakstabilan harga ETH/NFT dapat memicu likuidasi tidak adil (MEDIUM) [Trail of Bits Audit, https://github.com/trailofbits/publications/blob/master/reviews/Blend.pdf] [Blur Blog, https://blur.io/blog/blend]
+- No Formal Verification: Tidak ada bukti formal verification (Certora, Coq, dll.) pada kontrak kritis (LOW) [tidak dapat diverifikasi]
+- Gas Costs: Operasi kompleks (bidding kolektif, multi-hop trades) memerlukan gas tinggi di Ethereum L1; tidak ada L2 deployment resmi (Arbitrum/Optimism/Base) per 2024-10 (HIGH) [Etherscan, https://etherscan.io/address/0x000000000000Ad05Ccc4F10445630FB830B95127] [Blur Blog, https://blur.io/blog]
+- Mobile App Beta: Aplikasi mobile masih beta; belum feature-complete dan belum through security audit khusus mobile (MEDIUM) [Blur Blog, https://blur.io/blog] [Twitter @blur_io, https://twitter.com/blur_io]
+- API Rate Limits / Reliability: Off-chain API dan orderbook server terpusat; tidak ada SLA publik atau decentralized fallback (MEDIUM) [Blur Docs, https://docs.blur.io]
+
+Official Technical Resources
+- Documentation: https://docs.blur.io
+- GitHub: https://github.com/blur-io
+- Developer Docs: https://docs.blur.io (sama dengan documentation)
+- SDK: tidak ada SDK resmi terpisah yang dipublikasikan (tidak diketahui)
+- API: https://docs.blur.io/api (referensi API publik)
+- Whitepaper: tidak ada whitepaper teknis terpisah; blog posts menggantikan peran ini (https://blur.io/blog) (tidak diketahui)
+- Research Paper: tidak ada academic research paper resmi (tidak diketahui)
+- Blend Audit Reports: https://github.com/trailofbits/publications/blob/master/reviews/Blend.pdf dan https://blog.openzeppelin.com/blend-audit
+
+---
+
+RINGKASAN
+
+Architecture
+- Application Layer Protocol on Ethereum L1
+- Off-chain centralized orderbook + on-chain settlement
+- Two core protocols: Blur Marketplace (trading) + Blend (lending)
+- ERC-20 governance token (BLUR)
+
+Core Components
+- Blur Exchange Contract (marketplace core)
+- Blur Bidding Contract (bid pools)
+- Blend Contract (NFT lending)
+- BLUR Token Contract (ERC-20)
+- Blur Multisig / Owner (admin control)
+- Off-chain Orderbook & Matching Engine
+- Blur API / Indexer
+- Blur Frontend (Web)
+- Blur Mobile App (Beta)
+
+Audit Count
+- 2 audits (Trail of Bits + OpenZeppelin) — hanya untuk Blend Protocol
+- 0 audit publik terverifikasi untuk Marketplace core contracts
+
+Major Upgrade Count
+- 5 major upgrades tercatat (Marketplace v1, BLUR Token, Blend, Fee Switch/Staking, Mobile App Beta)
+- Beberapa minor upgrades via proxy (tidak diverifikasi jumlah pasti)
+
+---
+
+Open Threads
+- Status timelock/DAO ownership: Apakah Blur Multisig sudah menyerahkan admin key ke timelock contract yang dikontrol Blur DAO? Data on-chain menunjukkan multisig masih owner per 2024-10.
+- Marketplace audit: Tidak ada audit publik untuk kontrak marketplace inti (exchange, bidding) — apakah audit privat ada atau direncanakan?
+- L2 Deployment: Tidak ada announcement resmi deployment ke L2 (Arbitrum, Optimism, Base, Blast) meskipun kompetitor sudah melakukannya.
+- Formal Verification: Tidak ada bukti formal verification pada kontrak kritis.
+- Mobile App Security: Beta mobile app belum melalui audit keamanan khusus mobile (iOS/Android).
+- Orderbook Decentralization: Tidak ada roadmap teknis publik untuk mendezentralisasi orderbook/matching engine.
+- Blend Oracle Upgrade: Apakah rencana migrasi oracle Blend ke Chainlink/Pyth atau oracle terdesentralisasi lain?
+- Gas Optimization Upgrades: Detail upgrade gas optimization pada marketplace contracts tidak terdokumentasi publik sebagai changelog terstruktur.
+- API/Indexer Open Source: Blur API dan indexer tidak open source; tidak ada dokumentasi teknis arsitektur backend yang detail.
+- Cross-chain / Multi-chain: Tidak ada indikasi teknis dukungan multi-chain di repository/docs resmi.

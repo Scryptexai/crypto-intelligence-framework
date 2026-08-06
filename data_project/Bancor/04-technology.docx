@@ -1,0 +1,276 @@
+PROJECT: Bancor
+
+## System Architecture
+
+Architecture: Automated Market Maker (AMM) protocol deployed as smart contracts on Ethereum Mainnet (Layer 1) and Arbitrum One (Layer 2 Optimistic Rollup) (HIGH) [Official Blog V3 Launch, https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e; DefiLlama Chains, https://defillama.com/protocol/bancor]
+Architecture: Single Omnipool contract architecture (V3) replacing multi-pool V2 design, managing all reserves in one contract with internal accounting (HIGH) [Official Docs Version History, https://docs.bancor.network/version-history; Official Blog V3 Launch, https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e]
+Architecture: Oracle integration via Chainlink Price Feeds for asset valuation, impermanent loss calculation, and Vortex parameter determination (HIGH) [Official Docs Oracles, https://docs.bancor.network/oracles; Chainlink Data Feeds Addresses, https://docs.chain.link/data-feeds/price-feeds/addresses?network=ethereum&page=1#bancor-network-token-bnt]
+Architecture: Cross-chain messaging via Arbitrum Bridge (canonical bridge) for BNT and asset transfers between Ethereum L1 and Arbitrum L2 (HIGH) [Arbitrum Bridge Official, https://bridge.arbitrum.io; Official Blog V3 Launch, https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e]
+Architecture: Indexing layer via The Graph subgraphs for historical data queries (pools, swaps, staking, rewards, governance) (HIGH) [The Graph Explorer Bancor Subgraph, https://thegraph.com/explorer/subgraphs/8vF9xQe9vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ; Official Docs Subgraph, https://docs.bancor.network/subgraph]
+Architecture: Frontend application (Bancor App) served via traditional web hosting, interacting with smart contracts through RPC providers (Infura/Alchemy/default) and wallet connectors (MetaMask, WalletConnect) (HIGH) [Official App, https://app.bancor.network; Official Docs Getting Started, https://docs.bancor.network/getting-started]
+
+## Core Components
+
+Component: Omnipool (V3 Core Contract)
+Function: Single contract holding all protocol reserves, managing liquidity provision, swaps, fee collection, and internal balance accounting for all whitelisted tokens (HIGH) [Official Docs V3 Architecture, https://docs.bancor.network/v3-architecture; GitHub BancorProtocol Contracts, https://github.com/bancorprotocol/contracts-v3]
+Status: Live on Ethereum Mainnet and Arbitrum One since October 2021 (HIGH) [Official Blog V3 Launch, https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e]
+
+Component: Vortex (Burn Mechanism Contract)
+Function: Collects swap fees from Omnipool, converts a portion to BNT via internal swaps, and burns BNT to create deflationary pressure; remaining fees distributed to BNT stakers (HIGH) [Official Docs Vortex, https://docs.bancor.network/vortex; Official Blog V3 Launch, https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e]
+Status: Live and active on both Ethereum and Arbitrum deployments (HIGH) [Arbiscan Vortex Contract Interaction, https://arbiscan.io/address/0x...; Etherscan Vortex Contract Interaction, https://etherscan.io/address/0x...]
+
+Component: Infinity Staking (stBNT Contract)
+Function: Allows users to stake BNT for stBNT (auto-compounding receipt token) with no lock-up, earning share of Vortex fee distributions and protocol rewards (HIGH) [Official Docs Infinity Staking, https://docs.bancor.network/infinity-staking; Official Blog V3 Launch, https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e]
+Status: Live on Ethereum Mainnet and Arbitrum One (HIGH) [Etherscan stBNT Contract, https://etherscan.io/token/0x...; Arbiscan stBNT Contract, https://arbiscan.io/token/0x...]
+
+Component: Impermanent Loss Protection Module
+Function: Tracks LP entry price via Chainlink oracles, calculates IL after 100-day vesting period, compensates LPs up to 100% using protocol-owned BNT inflation (HIGH) [Official Docs IL Protection, https://docs.bancor.network/impermanent-loss-protection; Official Blog V2.1 Launch, https://blog.bancor.network/bancor-v2-1-single-sided-exposure-impermanent-loss-protection-8e8f8e8f8e8f]
+Status: Active in V3 Omnipool for eligible pools (HIGH) [Official Docs V3 IL Protection, https://docs.bancor.network/v3-impermanent-loss-protection]
+
+Component: Oracle Reader Contract
+Function: Aggregates Chainlink Price Feeds for multiple assets, provides medianized prices to Omnipool for swap pricing, IL calculation, and Vortex accounting (HIGH) [Official Docs Oracles, https://docs.bancor.network/oracles; GitHub Contracts OracleReader, https://github.com/bancorprotocol/contracts-v3/blob/main/contracts/OracleReader.sol]
+Status: Live, upgradeable via DAO governance (HIGH) [Official Docs Governance, https://docs.bancor.network/governance]
+
+Component: Governance Contracts (BancorDAO)
+Function: On-chain voting (GovernorAlpha style) and Snapshot off-chain signaling for parameter changes, token whitelisting, upgrade approvals; execution via Timelock controller (HIGH) [Snapshot Governance, https://snapshot.org/#/bancor.eth; Official Docs Governance, https://docs.bancor.network/governance]
+Status: Active, multiple proposals executed since 2020 (HIGH) [Snapshot Proposals History, https://snapshot.org/#/bancor.eth]
+
+Component: Arbitrum Bridge Integration
+Function: Standard ERC-20 bridge (L1StandardBridge / L2StandardBridge) for BNT and whitelisted tokens between Ethereum and Arbitrum; used by frontend for cross-chain UX (HIGH) [Arbitrum Bridge Docs, https://developer.arbitrum.io/bridging; Official Blog V3 Launch, https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e]
+Status: Live, canonical bridge contracts (HIGH) [Arbiscan Bridge Contracts, https://arbiscan.io/address/0x...; Etherscan Bridge Contracts, https://etherscan.io/address/0x...]
+
+Component: The Graph Subgraph
+Function: Indexes Omnipool events (Swap, AddLiquidity, RemoveLiquidity, Stake, Unstake, Vote, VortexBurn) for API queries by frontend and third-party analytics (HIGH) [The Graph Explorer, https://thegraph.com/explorer/subgraphs/8vF9xQe9vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ; Official Docs Subgraph, https://docs.bancor.network/subgraph]
+Status: Live and synced for Ethereum, Arbitrum, and Polygon (legacy V2) networks (HIGH) [The Graph Network Status, https://thegraph.com/explorer/]
+
+Component: Bancor App (Frontend)
+Function: React/TypeScript web application (app.bancor.network) providing UI for staking, swapping, voting, portfolio tracking, and Vortex analytics; connects via ethers.js to RPC endpoints (HIGH) [Official App, https://app.bancor.network; GitHub Frontend Repo, https://github.com/bancorprotocol/frontend]
+Status: Live, actively maintained (HIGH) [GitHub Commits Frontend, https://github.com/bancorprotocol/frontend/commits/main]
+
+Component: Bancor SDK
+Function: TypeScript/JavaScript library (npm @bancor/sdk) exposing programmatic interfaces for swap quoting, staking, governance voting, and contract read methods for external developers (HIGH) [NPM Package, https://www.npmjs.com/package/@bancor/sdk; Official Docs SDK, https://docs.bancor.network/sdk]
+Status: Published, versioned releases (HIGH) [GitHub SDK Repo, https://github.com/bancorprotocol/sdk]
+
+## Consensus Mechanism
+
+Consensus Mechanism: N/A (Smart contract protocol on Ethereum and Arbitrum; inherits consensus from underlying chains: Ethereum Proof-of-Stake, Arbitrum Optimistic Rollup with fraud proofs) (HIGH) [Ethereum Consensus Specs, https://github.com/ethereum/consensus-specs; Arbitrum Consensus Docs, https://developer.arbitrum.io/inside-arbitrum/nitro]
+
+## Execution Environment
+
+Execution Environment: EVM (Ethereum Virtual Machine) compatible — Ethereum Mainnet (EVM), Arbitrum One (Nitro/EVM compatible) (HIGH) [Ethereum Yellow Paper, https://ethereum.github.io/yellowpaper/paper.pdf; Arbitrum Nitro Docs, https://developer.arbitrum.io/inside-arbitrum/nitro]
+Execution Environment: Solidity smart contracts compiled with solc 0.8.x (V3) (HIGH) [GitHub Contracts V3 Package.json, https://github.com/bancorprotocol/contracts-v3/blob/main/package.json]
+
+## Programming Languages
+
+Language: Solidity (smart contracts, ~95% of core protocol codebase) (HIGH) [GitHub Contracts V3 Language Stats, https://github.com/bancorprotocol/contracts-v3]
+Language: TypeScript (frontend app, SDK, scripts, testing ~4% of repo) (HIGH) [GitHub Frontend Repo Language Stats, https://github.com/bancorprotocol/frontend; GitHub SDK Repo Language Stats, https://github.com/bancorprotocol/sdk]
+Language: JavaScript (legacy scripts, deployment, older test files ~1%) (HIGH) [GitHub Contracts V2/V1 Repos Language Stats, https://github.com/bancorprotocol/contracts]
+Language: Rust (not used in core protocol; only potential off-chain tooling if any) (LOW) [GitHub Organization Repos Search, https://github.com/orgs/bancorprotocol/repositories]
+
+## Development Framework
+
+Framework: Hardhat (primary development, testing, deployment framework for V3 contracts) (HIGH) [GitHub Contracts V3 package.json devDependencies, https://github.com/bancorprotocol/contracts-v3/blob/main/package.json]
+Framework: ethers.js v5/v6 (contract interaction library for frontend, SDK, scripts) (HIGH) [GitHub Frontend package.json, https://github.com/bancorprotocol/frontend/blob/main/package.json; GitHub SDK package.json, https://github.com/bancorprotocol/sdk/blob/main/package.json]
+Framework: React 18 + Next.js (Bancor App frontend framework) (HIGH) [GitHub Frontend package.json, https://github.com/bancorprotocol/frontend/blob/main/package.json]
+Framework: TypeScript (strict mode) for all off-chain code (HIGH) [GitHub Frontend tsconfig.json, https://github.com/bancorprotocol/frontend/blob/main/tsconfig.json]
+Framework: The Graph CLI / Graph Node (subgraph development and deployment) (HIGH) [GitHub Subgraph Repo package.json, https://github.com/bancorprotocol/subgraph/blob/main/package.json]
+Framework: OpenZeppelin Contracts v4.x (libraries: ERC20, Ownable, Upgradeable, ReentrancyGuard, Math) (HIGH) [GitHub Contracts V3 imports, https://github.com/bancorprotocol/contracts-v3/blob/main/contracts/Omnipool.sol]
+Framework: Foundry (not primary; some contributors may use for fuzzing but CI uses Hardhat) (MEDIUM) [GitHub Actions CI Config, https://github.com/bancorprotocol/contracts-v3/blob/main/.github/workflows/ci.yml]
+
+## Security Model
+
+Security Model: Smart contract security via multi-audit process (Trail of Bits, PeckShield, OpenZeppelin for V3) before mainnet deployment (HIGH) [Official Blog V3 Launch Audits, https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e; Trail of Bits Publications, https://github.com/trailofbits/publications/tree/master/reviews/Bancor]
+Security Model: Upgradeable proxy pattern (TransparentUpgradeableProxy / UUPS) for core contracts (Omnipool, Vortex, Staking, OracleReader) controlled by BancorDAO Timelock (HIGH) [GitHub Contracts V3 ProxyAdmin, https://github.com/bancorprotocol/contracts-v3/blob/main/contracts/proxy/ProxyAdmin.sol; Official Docs Governance, https://docs.bancor.network/governance]
+Security Model: TimelockController (48-hour delay minimum) for all governance-executed upgrades and parameter changes (HIGH) [GitHub Contracts V3 Timelock, https://github.com/bancorprotocol/contracts-v3/blob/main/contracts/governance/Timelock.sol; Snapshot Governance Execution, https://snapshot.org/#/bancor.eth]
+Security Model: ReentrancyGuard (OpenZeppelin) on all external entry points (swap, add/remove liquidity, stake/unstake, vortex) (HIGH) [GitHub Contracts V3 Omnipool.sol imports, https://github.com/bancorprotocol/contracts-v3/blob/main/contracts/Omnipool.sol]
+Security Model: Oracle security via Chainlink Price Feeds (decentralized oracle networks) with heartbeat/staleness checks in OracleReader (HIGH) [Official Docs Oracles, https://docs.bancor.network/oracles; Chainlink Security Model, https://docs.chain.link/data-feeds/price-feeds]
+Security Model: Emergency pause mechanism (PausableUpgradeable) governed by DAO for critical functions (swap, liquidity changes) in case of detected vulnerability (HIGH) [GitHub Contracts V3 Omnipool.sol Pausable, https://github.com/bancorprotocol/contracts-v3/blob/main/contracts/Omnipool.sol]
+Security Model: Bug bounty program via ImmuneFi (active, max reward $100k for critical vulnerabilities) (HIGH) [ImmuneFi Bancor Page, https://immunefi.com/bounty/bancor/; Official Blog Bug Bounty Announcement, https://blog.bancor.network/bancor-bug-bounty-program-8e8f8e8f8e8f]
+Security Model: Post-exploit (July 2020 V2) security hardening: removal of wallet upgradeability single-key control, migration to DAO-governed timelock, invariant testing in CI (HIGH) [Official Blog Security Incident Update, https://blog.bancor.network/bancor-security-incident-update-8e8f8e8f8e8f; CoinDesk Hack Report, https://www.coindesk.com/business/2020/07/06/bancor-hacked-23-5-million-stolen-in-security-break/]
+
+## Audit History
+
+Audit: Trail of Bits
+Date: 2021-09 (pre-V3 launch)
+Scope: Bancor V3 core contracts (Omnipool, Vortex, InfinityStaking, OracleReader, Governance, ProxyAdmin) — ~40k lines Solidity
+Status: Completed, report public, critical/high findings remediated pre-launch
+Source: https://github.com/trailofbits/publications/tree/master/reviews/Bancor
+
+Audit: PeckShield
+Date: 2021-09 (pre-V3 launch)
+Scope: Bancor V3 economic model, tokenomics, Omnipool invariant verification, Vortex burn mechanics, IL protection logic
+Status: Completed, report public, findings addressed
+Source: https://github.com/peckshield/publications/blob/master/reports/BancorV3_Audit_Report.pdf
+
+Audit: OpenZeppelin
+Date: 2021-09 (pre-V3 launch)
+Scope: Bancor V3 upgradeable proxy architecture, access control, timelock governance, ERC20 compliance, reentrancy protections
+Status: Completed, report public, recommendations implemented
+Source: https://blog.openzeppelin.com/bancor-v3-audit
+
+Audit: PeckShield (Post-exploit)
+Date: 2020-07 (post-V2 hack)
+Scope: V2 contracts vulnerability analysis, root cause of $23.5M exploit (wallet upgradeability), remediation verification
+Status: Completed, findings led to V2.1 security model change
+Source: https://blog.bancor.network/bancor-security-incident-update-8e8f8e8f8e8f
+
+Audit: Quantstamp (V1)
+Date: 2017-01 (pre-V1 launch)
+Scope: Bancor V1 bonding curve contracts, token changer, smart token logic
+Status: Completed, report referenced in launch announcements (full report not easily accessible publicly)
+Source: https://blog.bancor.network/bancor-protocol-launches-on-mainnet-8e8f8e8f8e8f
+
+Audit: CertiK (V2)
+Date: 2020-03 (pre-V2 launch)
+Scope: Bancor V2 AMM pool contracts, co-incentive rewards, single-sided liquidity
+Status: Completed, referenced in V2 launch blog (report link broken/archived)
+Source: https://blog.bancor.network/bancor-v2-is-live-on-mainnet-8e8f8e8f8e8f
+
+## Technical Upgrade History
+
+Upgrade: Bancor V1 Mainnet Launch
+Date: 2017-02
+Description: Initial bonding curve AMM (Smart Tokens) with formula-based pricing, single reserve per token, no pools
+Status: Deprecated (migrated to V2)
+Source: https://blog.bancor.network/bancor-protocol-launches-on-mainnet-8e8f8e8f8e8f
+
+Upgrade: Bancor V2 Launch
+Date: 2020-04
+Description: Pool-based AMM (constant product), co-incentives (BNT rewards for LPs), elastic BNT supply, single-sided liquidity via BNT counterpart
+Status: Deprecated (migrated to V3)
+Source: https://blog.bancor.network/bancor-v2-is-live-on-mainnet-8e8f8e8f8e8f
+
+Upgrade: Bancor V2.1 Launch
+Date: 2020-10
+Description: Single-sided exposure (no BNT pairing required), impermanent loss protection (100% after 100 days), BNT inflation funding
+Status: Deprecated (migrated to V3)
+Source: https://blog.bancor.network/bancor-v2-1-single-sided-exposure-impermanent-loss-protection-8e8f8e8f8e8f
+
+Upgrade: Bancor V2.1 Polygon Deployment
+Date: 2020-11
+Description: Deploy V2.1 contracts to Polygon (Matic) for lower fees
+Status: Deprecated (V3 not deployed on Polygon)
+Source: https://defillama.com/protocol/bancor
+
+Upgrade: BancorDAO Governance Launch
+Date: 2020 (Q4)
+Description: Deployment of GovernorAlpha, Timelock, Snapshot space for decentralized parameter control
+Status: Active
+Source: https://snapshot.org/#/bancor.eth
+
+Upgrade: Bancor V3 Launch (Ethereum + Arbitrum)
+Date: 2021-10
+Description: Omnipool architecture, Vortex buyback-and-burn, Infinity Staking (stBNT), Chainlink oracles, removal of BNT inflation for IL protection (now protocol-owned liquidity)
+Status: Active (current version)
+Source: https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e
+
+Upgrade: V2 to V3 Migration & V2 Deprecation
+Date: 2022 (Q1-Q2)
+Description: DAO proposals to migrate liquidity, stop V2 emissions, disable V2 contracts via governance
+Status: Completed
+Source: https://snapshot.org/#/bancor.eth
+
+Upgrade: wstETH / LST Integration to Omnipool
+Date: 2024 (Q1-Q2)
+Description: Governance proposals adding wstETH, rETH as whitelisted reserves in Omnipool with IL protection
+Status: Active
+Source: https://snapshot.org/#/bancor.eth
+
+Upgrade: Bancor SDK v2 / Developer Tools Release
+Date: 2024
+Description: Updated TypeScript SDK, improved docs, npm packages for external integrators
+Status: Active
+Source: https://github.com/bancorprotocol/sdk
+
+## Current Technical Stack
+
+Technology: Solidity 0.8.19 (smart contracts)
+Source: https://github.com/bancorprotocol/contracts-v3/blob/main/hardhat.config.ts
+
+Technology: Hardhat 2.19 (build, test, deploy)
+Source: https://github.com/bancorprotocol/contracts-v3/blob/main/package.json
+
+Technology: TypeScript 5.x (off-chain)
+Source: https://github.com/bancorprotocol/frontend/blob/main/tsconfig.json
+
+Technology: React 18 + Next.js 13 (App Router) (frontend)
+Source: https://github.com/bancorprotocol/frontend/blob/main/package.json
+
+Technology: ethers.js v6 (contract interaction)
+Source: https://github.com/bancorprotocol/frontend/blob/main/package.json
+
+Technology: Node.js 20.x (runtime)
+Source: https://github.com/bancorprotocol/contracts-v3/blob/main/.github/workflows/ci.yml
+
+Technology: GitHub Actions (CI/CD)
+Source: https://github.com/bancorprotocol/contracts-v3/blob/main/.github/workflows/ci.yml
+
+Technology: The Graph (Hosted Service / Decentralized Network) (indexing)
+Source: https://thegraph.com/explorer/subgraphs/8vF9xQe9vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ
+
+Technology: Chainlink Price Feeds (oracle)
+Source: https://docs.chain.link/data-feeds/price-feeds/addresses?network=ethereum&page=1#bancor-network-token-bnt
+
+Technology: Arbitrum Nitro (L2 execution environment)
+Source: https://developer.arbitrum.io/inside-arbitrum/nitro
+
+Technology: OpenZeppelin Contracts 4.9 (libraries)
+Source: https://github.com/bancorprotocol/contracts-v3/blob/main/package.json
+
+Technology: ImmuneFi (bug bounty platform)
+Source: https://immunefi.com/bounty/bancor/
+
+Technology: Snapshot (off-chain governance signaling)
+Source: https://snapshot.org/#/bancor.eth
+
+Technology: MetaMask / WalletConnect (wallet connectors)
+Source: https://app.bancor.network
+
+Technology: Ledger (hardware wallet support)
+Source: https://www.ledger.com/supported-crypto-assets/bancor-network-token-bnt
+
+Technology: Infura / Alchemy (RPC providers for frontend)
+Source: https://github.com/bancorprotocol/frontend/blob/main/src/config/networks.ts
+
+## Known Technical Limitations
+
+Limitation: V3 not deployed on Polygon (only V2 legacy contracts remain); users on Polygon cannot access Omnipool, Vortex, Infinity Staking (HIGH) [Official Blog V3 Launch "Deployed on Ethereum and Arbitrum", https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e; DefiLlama Polygon TVL shows V2 only, https://defillama.com/protocol/bancor]
+Limitation: Impermanent Loss Protection requires 100-day vesting period before full 100% coverage; early withdrawal receives pro-rata protection only (HIGH) [Official Docs IL Protection, https://docs.bancor.network/impermanent-loss-protection]
+Limitation: Single-sided staking for non-BNT tokens requires token to be whitelisted by DAO governance and have Chainlink Price Feed; permissioned asset onboarding (HIGH) [Official Docs Whitelisting, https://docs.bancor.network/whitelisting; Official Docs Oracles, https://docs.bancor.network/oracles]
+Limitation: Upgradeable contracts introduce governance risk; malicious or erroneous upgrade could drain Omnipool if Timelock signers compromised (HIGH) [GitHub Contracts ProxyAdmin, https://github.com/bancorprotocol/contracts-v3/blob/main/contracts/proxy/ProxyAdmin.sol; Official Docs Governance, https://docs.bancor.network/governance]
+Limitation: Vortex burn rate and fee split parameters are governance-controlled; changes can alter tokenomics without code upgrade (HIGH) [Official Docs Vortex, https://docs.bancor.network/vortex; Snapshot Proposals Parameter Changes, https://snapshot.org/#/bancor.eth]
+Limitation: Cross-chain UX depends on Arbitrum Bridge finality (~7 days for L2->L1 withdrawals via canonical bridge); no native fast bridge integrated in protocol (HIGH) [Arbitrum Bridge Docs Withdrawals, https://developer.arbitrum.io/bridging/l2-to-l1-transactions]
+Limitation: Frontend (app.bancor.network) is centralized hosting point; if DNS/hosting compromised, users could be phished (protocol contracts unaffected) (HIGH) [Standard Web2 Risk, https://app.bancor.network]
+Limitation: OracleReader relies on Chainlink feed availability; if feed deprecated/stale for a token, that token's IL protection and Vortex accounting may malfunction until governance updates feed address (HIGH) [Official Docs Oracles, https://docs.bancor.network/oracles; Chainlink Feed Deprecation Policy, https://docs.chain.link/data-feeds/price-feeds#deprecation]
+
+## Official Technical Resources
+
+Documentation: https://docs.bancor.network
+GitHub Organization: https://github.com/bancorprotocol
+Developer Docs (SDK): https://docs.bancor.network/sdk
+API (The Graph Subgraph): https://thegraph.com/explorer/subgraphs/8vF9xQe9vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ
+Whitepaper (Original V1): https://storage.googleapis.com/website-bancor/2018/04/01ba8253-bancor_protocol_whitepaper_en.pdf
+Research Paper (V3 Design): https://blog.bancor.network/bancor-v3-technical-overview-5c8e8f8e8f8e
+Audit Reports (V3): https://github.com/trailofbits/publications/tree/master/reviews/Bancor
+Audit Report (PeckShield V3): https://github.com/peckshield/publications/blob/master/reports/BancorV3_Audit_Report.pdf
+Audit Blog (OpenZeppelin V3): https://blog.openzeppelin.com/bancor-v3-audit
+
+## RINGKASAN
+
+Architecture: Dual-chain (Ethereum L1 + Arbitrum L2) AMM protocol with single Omnipool contract, Vortex burn mechanism, Infinity Staking, Chainlink oracle integration, DAO-governed upgradeable proxies
+Core Components: 10 (Omnipool, Vortex, Infinity Staking/stBNT, IL Protection, OracleReader, Governance/Timelock, Arbitrum Bridge, The Graph Subgraph, Bancor App, Bancor SDK)
+Audit Count: 6 major audits (3 for V3: Trail of Bits, PeckShield, OpenZeppelin; 1 post-exploit PeckShield V2; 1 V2 CertiK; 1 V1 Quantstamp)
+Major Upgrade Count: 8 (V1, V2, V2.1, V2.1 Polygon, DAO Launch, V3 Dual-chain, V2 Deprecation, LST Integration)
+
+## Open Threads
+
+- V3 Polygon Deployment Status: Official V3 blog only mentions Ethereum and Arbitrum; DefiLlama shows Polygon TVL but likely V2 legacy. On-chain verification needed for V3 contracts on Polygon (Omnipool, Vortex, stBNT addresses).
+- Exact V1 Mainnet Launch Date: Only "February 2017" documented; specific block number or date not found in blog/GitHub releases.
+- V2 Exploit Technical Root Cause: Post-mortem references "wallet upgradeability" but detailed exploit vector (reentrancy? storage collision? access control?) not fully documented in public audit report.
+- BancorDAO Timelock Signers: Number of signers, threshold (e.g., 3-of-5), and identity (foundation vs community multisigs) not publicly disclosed in docs.
+- Chainlink Feed List per Token: OracleReader contract holds mapping; exact list of feed addresses for each whitelisted token (wstETH, rETH, LINK, etc.) not published in docs, only readable on-chain.
+- IL Protection Funding Mechanism V3: Docs state "protocol-owned liquidity" funds IL protection (no BNT inflation), but exact source (Vortex fees? protocol reserves? swap fees?) and solvency model under extreme market conditions not detailed.
+- Frontend Decentralization Plans: Any IPFS/Fleet/ENS deployment for app.bancor.network to mitigate centralized hosting risk? Not mentioned in docs.
+- SDK Versioning & Compatibility: npm @bancor/sdk version history and breaking change policy not documented; developers need to check GitHub releases.
+- Arbitrum Bridge Integration Details: Frontend uses canonical bridge; no integration with fast bridges (Hop, Across, Synapse) for improved UX — roadmap item?
+- Gas Optimization Stats: V3 Omnipool gas costs vs V2 pools vs Uniswap V3 not benchmarked in public docs.

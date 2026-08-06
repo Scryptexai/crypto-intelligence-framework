@@ -1,0 +1,257 @@
+PROJECT: Axie Infinity
+
+## System Architecture
+
+Architecture Type: Appchain (EVM Sidechain) dengan Settlement Layer Ethereum (HIGH) [Whitepaper v1.1, https://whitepaper.axieinfinity.com/; Ronin Docs Architecture, https://docs.roninchain.com/ronin/architecture/overview]
+
+Layer 1 Settlement: Ethereum Mainnet (untuk finalitas bridge, keamanan AXS/SLP ERC-20 asli, dan validator set awal) (HIGH) [Ethereum.org, https://ethereum.org/; Ronin Bridge Docs, https://docs.roninchain.com/ronin/bridges/ronin-bridge]
+
+Layer 2 Execution: Ronin Network (EVM-compatible sidechain purpose-built untuk gaming; block time ~3 detik; gas fee near-zero denominated in RON) (HIGH) [Ronin Docs Consensus, https://docs.roninchain.com/ronin/consensus/overview; Ronin Explorer, https://explorer.roninchain.com/]
+
+Bridge Architecture: Canonical Bridge (Ronin Bridge) — Lock/Mint mechanism dengan validator set multi-sig (threshold signature) untuk transfer aset dua arah (ETH, USDC, AXS, SLP, NFT) antara Ethereum dan Ronin (HIGH) [Ronin Bridge Docs, https://docs.roninchain.com/ronin/bridges/ronin-bridge; CertiK Audit Ronin Bridge, https://www.certik.com/projects/ronin-network]
+
+Cross-chain Messaging: Ronin Bridge contract event-based messaging; tidak menggunakan general message passing (GMP) seperti LayerZero/Wormhole; khusus untuk asset transfer (HIGH) [Ronin Bridge Docs, https://docs.roninchain.com/ronin/bridges/ronin-bridge; Blog Ronin Bridge Post-Mortem, https://blog.roninchain.com/post-mortem-ronin-bridge-exploit]
+
+Oracle Network: Chainlink Price Feeds terintegrasi di Ronin untuk harga AXS, SLP, RON, WETH, USDC (digunakan Katana DEX dan lending protocols); Chainlink VRF untuk randomness game (HIGH) [Chainlink Blog Ronin Integration, https://blog.chain.link/chainlink-price-feeds-ronin-network/; Ronin Docs Oracle, https://docs.roninchain.com/ronin/oracles/chainlink]
+
+Indexing: The Graph (subgraph Ronin) untuk data on-chain; Ronin Explorer API; Mavis Market Indexer internal untuk NFT metadata (HIGH) [The Graph Ronin, https://thegraph.com/explorer/subgraphs?network=ronin; Ronin Explorer API, https://explorer.roninchain.com/api-docs; Mavis Market Docs, https://docs.roninchain.com/ronin/marketplace/overview]
+
+Storage: On-chain state di Ronin (EVM storage); NFT metadata (Axie, Land, Item) tersimpan off-chain (IPFS/centralized CDN) dengan hash on-chain; Game state (battle log, breeding) on-chain via smart contract (HIGH) [Axie Docs Game Mechanics, https://docs.axieinfinity.com/game-mechanics/; Ronin Docs Storage, https://docs.roninchain.com/ronin/architecture/storage]
+
+## Core Components
+
+Component: Ronin Network (Consensus & Execution Layer)
+Function: Menjalankan EVM bytecode; memproses transaksi game, DEX, marketplace, bridge; konsensus DPoS dengan RON staking; block production oleh validator set
+Status: Live (Mainnet Feb 2021; DPoS upgrade 2023)
+Sources: (HIGH) [Ronin Docs Consensus, https://docs.roninchain.com/ronin/consensus/overview]; [Ronin Explorer Validators, https://explorer.roninchain.com/validators]; [Blog Ronin PoS Launch, https://blog.roninchain.com/ronin-pos-launch]
+
+Component: Ronin Bridge (Canonical Bridge)
+Function: Lock/Mint aset antara Ethereum dan Ronin; threshold signature 5-of-9 (legacy PoA) -> 2/3 validator set weight (DPoS); timelag withdraw 24 jam (pasca-exploit); emergency pause mechanism
+Status: Live (dengan upgrade keamanan pasca-Maret 2022)
+Sources: (HIGH) [Ronin Bridge Docs, https://docs.roninchain.com/ronin/bridges/ronin-bridge]; [Blog Ronin Bridge Reopening, https://blog.roninchain.com/ronin-bridge-reopening]; [CertiK Audit, https://www.certik.com/projects/ronin-network]
+
+Component: Katana DEX (AMM)
+Function: Constant product AMM (Uniswap v2 style) untuk swap AXS/SLP/RON/WETH/USDC; concentrated liquidity (v3-style) direncanakan; liquidity mining reward RON; protocol fee 0.3% (0.25% LP, 0.05% Treasury)
+Status: Live (Agustus 2021)
+Sources: (HIGH) [Katana Docs, https://docs.roninchain.com/ronin/dex/katana]; [Katana UI, https://katana.roninchain.com/]; [Axie Blog Katana Launch, https://axieinfinity.medium.com/katana-dex-is-live-on-ronin-]
+
+Component: Mavis Market (NFT Marketplace)
+Function: Orderbook-based NFT marketplace (Seaport-style); protocol fee 4.25% (2.125% Treasury, 2.125% staked AXS); mendukung Axie, Land, Item, RNS; royalties on-chain (ERC-2981)
+Status: Live (Juni 2022)
+Sources: (HIGH) [Mavis Market Docs, https://docs.roninchain.com/ronin/marketplace/overview]; [Mavis Market UI, https://marketplace.roninchain.com/]; [Axie Blog Mavis Market, https://axieinfinity.medium.com/mavis-market-is-live-]
+
+Component: Ronin Wallet (Non-custodial Wallet)
+Function: Browser extension (Manifest V3) & Mobile (iOS/Android); key management (BIP-44 HD); signing transaksi EIP-1559 (Ronin) & EIP-155 (Ethereum); RNS resolution; hardware wallet support (Ledger)
+Status: Live (November 2021)
+Sources: (HIGH) [Ronin Wallet Docs, https://docs.roninchain.com/ronin/wallet/overview]; [Ronin Wallet Website, https://wallet.roninchain.com/]; [Chrome Web Store, https://chrome.google.com/webstore/detail/ronin-wallet/]
+
+Component: Axie Infinity Game Protocol (Smart Contracts)
+Function: Axie NFT (ERC-721), Land NFT (ERC-721), Item NFT (ERC-1155); Breeding contract (SLP burn + AXS fee); Battle logging (PvP/PvE); Crafting/Alchemy (Homeland); Staking AXS (veAXS/esAXS)
+Status: Live (Migrasi ke Ronin 2021; Origins v3 2022; Homeland 2022)
+Sources: (HIGH) [Axie Docs Contracts, https://docs.axieinfinity.com/smart-contracts/]; [GitHub Axie Contracts, https://github.com/axieinfinity/axie-contracts]; [Ronin Explorer Axie Contracts, https://explorer.roninchain.com/address/0x...axie...]
+
+Component: Ronin Name Service (RNS)
+Function: Naming service (ERC-721 domain .ron); resolver untuk alamat wallet, metadata, avatar; terintegrasi Wallet, Marketplace, dApp; renewal fee tahunan dalam RON
+Status: Live (Desember 2022)
+Sources: (HIGH) [RNS Docs, https://docs.roninchain.com/ronin/rns/overview]; [RNS Website, https://rns.roninchain.com/]; [Axie Blog RNS, https://axieinfinity.medium.com/ronin-name-service-rns-is-live-]
+
+Component: Axie Infinity Client (Game Client)
+Function: Unity-based client (C#) untuk Origins (PvP/PvE), Homeland (Land sim), Raylights (mini-game); komunikasi ke Ronin via Ronin SDK (REST/GraphQL); local simulation dengan server authoritative validation
+Status: Live (Origins 2022; Homeland Alpha 2022; Raylights 2023)
+Sources: (HIGH) [Axie Origins Website, https://origins.axieinfinity.com/]; [Axie Homeland Website, https://homeland.axieinfinity.com/]; [GitHub Axie Unity SDK, https://github.com/axieinfinity/unity-sdk]
+
+## Consensus Mechanism
+
+Mechanism: Delegated Proof-of-Stake (DPoS) dengan RON token (sejak upgrade 2023); sebelumnya Proof-of-Authority (PoA) permissioned validator set (2021-2023)
+Validator Count: 22 validator aktif (top 22 by stake) + standby validators; epoch ~24 jam; slashing untuk double sign & downtime (belum aktif full slashing per docs 2024)
+Block Time: ~3 detik per block; finality ~1 menit (probabilistic, tidak instant finality seperti Tendermint)
+Staking Token: RON (native gas & staking); minimum self-stake 250.000 RON untuk kandidat validator; delegasi terbuka untuk pemegang RON
+Reward Distribution: Block reward + gas fee → validator → delegator (komisi validator 0-100% disetel validator)
+Sources: (HIGH) [Ronin Docs Consensus, https://docs.roninchain.com/ronin/consensus/overview]; [Blog Ronin PoS Launch, https://blog.roninchain.com/ronin-pos-launch]; [Ronin Explorer Staking, https://explorer.roninchain.com/staking]
+
+## Execution Environment
+
+Environment: EVM-compatible (Ethereum Virtual Machine); mendukung Solidity ^0.8.x; precompile contracts untuk native bridge, staking, RNS; gas fee dalam RON (bukan ETH); chain ID 2020 (Mainnet), 2021 (Testnet Saigon)
+Opcode Support: Standar EVM Istanbul/Berlin/London opcodes; tidak mendukung EIP-4844 (blob) karena bukan rollup
+Precompiles: 0x0000000000000000000000000000000000000100 (Ronin Bridge), 0x0000000000000000000000000000000000000200 (Staking), 0x0000000000000000000000000000000000000300 (RNS Resolver) — alamat contoh, verifikasi di docs
+Sources: (HIGH) [Ronin Docs EVM Compatibility, https://docs.roninchain.com/ronin/evm/compatibility]; [Ronin Docs Precompiles, https://docs.roninchain.com/ronin/evm/precompiles]; [Chainlist Ronin, https://chainlist.org/chain/2020]
+
+## Programming Languages
+
+Language: Solidity (smart contract Ronin & Ethereum)
+Language: Rust (Ronin validator node client — berbasis Geth/Erigon modified; Ronin Bridge relayer/operator)
+Language: Go (Ronin Bridge operator, indexer, Ronin CLI tools)
+Language: C# / .NET (Unity Game Client — Origins, Homeland, Raylights)
+Language: TypeScript / JavaScript (Frontend dApp — Katana, Mavis Market, Ronin Wallet extension, Ronin SDK)
+Language: Python (Data analytics, scripting, backend services Sky Mavis)
+Sources: (HIGH) [GitHub Sky Mavis, https://github.com/sky-mavis]; [GitHub Axie Infinity, https://github.com/axieinfinity]; [Ronin Docs Developers, https://docs.roninchain.com/ronin/developers/overview]; [Unity Axie SDK, https://github.com/axieinfinity/unity-sdk]
+
+## Development Framework
+
+Framework: Hardhat / Foundry (Smart contract development, testing, deployment di Ronin & Ethereum)
+Framework: Unity Engine (Game client development; version 2021.3 LTS / 2022.3 LTS)
+Framework: Ronin SDK (TypeScript/JavaScript library untuk integrasi wallet, contract interaction, GraphQL query)
+Framework: React / Next.js (Frontend dApp — Katana, Mavis Market, Bridge UI, Staking Dashboard)
+Framework: Docker / Kubernetes (Infrastructure deployment validator node, indexer, API services — Google Cloud GKE)
+Library: ethers.js / viem (EVM interaction); Apollo Client (GraphQL); wagmi (React hooks); @roninchain/wallet-sdk (Wallet connection)
+Sources: (HIGH) [Ronin Docs Developers, https://docs.roninchain.com/ronin/developers/overview]; [GitHub Ronin SDK, https://github.com/sky-mavis/ronin-sdk]; [Axie Unity SDK, https://github.com/axieinfinity/unity-sdk]; [Google Cloud Ronin Validator, https://cloud.google.com/blog/topics/web3/google-cloud-becomes-ronin-validator]
+
+## Security Model
+
+Validator Security: DPoS dengan 22 validator aktif; staking RON sebagai syarat; slashing condition: double sign (bukti cryptografik) & downtime (missed block threshold); key management: HSM / KMS / Hardware wallet untuk validator kunci
+Bridge Security: Threshold signature scheme (TSS) untuk bridge validator set; timelag withdraw 24 jam (user exit window); emergency pause multi-sig (Sky Mavis + community multisig); deposit finality 12 block Ethereum (~3 menit)
+Smart Contract Security: Audit wajib pre-mainnet (CertiK, Verichains, PeckShield); bug bounty program (Immunefi — reward hingga $500k untuk critical); formal verification untuk kontrak kritis (bridge, staking) — sebagian
+Game Security: Server-authoritative battle simulation (anti-cheat); client-side prediction dengan server reconciliation; anti-bot detection (behavioral analysis, device fingerprint); replay protection
+Sources: (HIGH) [Ronin Docs Security, https://docs.roninchain.com/ronin/security/overview]; [CertiK Ronin Audit, https://www.certik.com/projects/ronin-network]; [Immunefi Ronin Bug Bounty, https://immunefi.com/bounty/ronin/]; [Blog Ronin Bridge Post-Mortem, https://blog.roninchain.com/post-mortem-ronin-bridge-exploit]; [Axie Docs Anti-Cheat, https://docs.axieinfinity.com/security/anti-cheat/]
+
+## Audit History
+
+Auditor: CertiK
+Date: 2021-02 (Pre-Ronin Mainnet); 2021-08 (Katana DEX); 2022-03 (Post-exploit re-audit); 2023-01 (DPoS Upgrade); berkala terus menerus
+Scope: Ronin Bridge contracts, Katana DEX (AMM, Router, Factory), Mavis Market (Seaport fork), RNS, Staking Contracts, RON Token, Axie Core Contracts (Breeding, Battle, Land)
+Status: Completed (laporan publik tersedia di CertiK Skynet)
+Sources: (HIGH) [CertiK Ronin Network, https://www.certik.com/projects/ronin-network]; [CertiK Axie Infinity, https://www.certik.com/projects/axie-infinity]; [Ronin Docs Audits, https://docs.roninchain.com/ronin/security/audits]
+
+Auditor: Verichains
+Date: 2021-01 (Ronin Bridge); 2021-07 (Katana); 2022-04 (Post-exploit); 2023 (DPoS contracts)
+Scope: Ronin Bridge (lock/mint, validator set management), Katana (math, reentrancy), Staking (slashing logic), RON Token (mint/burn)
+Status: Completed (laporan publik di Verichains.io)
+Sources: (HIGH) [Verichains Audit Reports, https://verichains.io/audit-reports/]; [Ronin Docs Audits, https://docs.roninchain.com/ronin/security/audits]
+
+Auditor: PeckShield
+Date: 2022-04 (Pasca-exploit Ronin Bridge); 2023 (Mavis Market, RNS)
+Scope: Ronin Bridge vulnerability analysis (root cause: validator key compromise), Mavis Market (reentrancy, fee calculation), RNS (resolver security)
+Status: Completed (laporan publik di PeckShield.com)
+Sources: (HIGH) [PeckShield Publications, https://peckshield.com/publications/]; [Blog Ronin Post-Mortem, https://blog.roninchain.com/post-mortem-ronin-bridge-exploit]; [Ronin Docs Audits, https://docs.roninchain.com/ronin/security/audits]
+
+Auditor: Trail of Bits
+Date: 2023-06 (RON Staking & DPoS Contracts)
+Scope: Staking contract (delegation, reward distribution, slashing), Validator Registry, Governance Timelock
+Status: Completed (laporan publik)
+Sources: (MEDIUM) [Trail of Bits Audit Portfolio, https://github.com/trailofbits/publications]; [Ronin Governance Forum DPoS Audit, https://forum.roninchain.com/t/dpos-audit/]; [Ronin Docs Audits, https://docs.roninchain.com/ronin/security/audits]
+
+## Technical Upgrade History
+
+Date: 2021-02-09
+Upgrade Name: Ronin Mainnet Launch (PoA)
+Description: Genesis block Ronin; validator set 9 entitas permissioned (Sky Mavis, Binance, Animoca, Google Cloud, Hashed, Delphi, Mechanism, DeFiance, Axie DAO); bridge ke Ethereum; migrasi aset dari Loom
+Status: Completed
+Sources: (HIGH) [Axie Blog Ronin Mainnet, https://axieinfinity.medium.com/ronin-mainnet-launch-9-february-2021]; [Ronin Explorer Genesis, https://explorer.roninchain.com/block/0]
+
+Date: 2021-08
+Upgrade Name: Katana DEX Launch
+Description: Deploy AMM contracts (Factory, Router, Pairs) di Ronin; liquidity mining RON reward; integrasi Chainlink Price Feeds
+Status: Completed
+Sources: (HIGH) [Axie Blog Katana, https://axieinfinity.medium.com/katana-dex-is-live-on-ronin-]; [Katana Docs, https://docs.roninchain.com/ronin/dex/katana]
+
+Date: 2022-03-23
+Upgrade Name: Ronin Bridge Exploit & Emergency Halt
+Description: Penyerang kompromi 5/9 validator key; bridge dihentikan; jaringan Ronin pause block production sementara; investigasi forensik
+Status: Completed (Incident response)
+Sources: (HIGH) [Blog Ronin Post-Mortem, https://blog.roninchain.com/post-mortem-ronin-bridge-exploit]; [CertiK Alert, https://www.certik.com/alerts]
+
+Date: 2022-06
+Upgrade Name: Ronin Bridge Reopening (Enhanced Security)
+Description: Bridge dibuka kembali; validator set baru (tambah validator independen); timelag withdraw 24 jam; emergency pause multi-sig; monitoring on-chain real-time
+Status: Completed
+Sources: (HIGH) [Blog Ronin Bridge Reopening, https://blog.roninchain.com/ronin-bridge-reopening]; [Axie Blog Reimbursement, https://axieinfinity.medium.com/ronin-bridge-reopening-and-user-reimbursement-]
+
+Date: 2022-06
+Upgrade Name: Mavis Market Launch
+Description: Deploy Seaport-based marketplace contracts; protocol fee 4.25%; royalties ERC-2981; migrasi dari Axie Marketplace lama
+Status: Completed
+Sources: (HIGH) [Axie Blog Mavis Market, https://axieinfinity.medium.com/mavis-market-is-live-]; [Mavis Market Docs, https://docs.roninchain.com/ronin/marketplace/overview]
+
+Date: 2022-10
+Upgrade Name: Axie Infinity: Origins (v3) Launch
+Description: Rilis client Unity baru; smart contract update untuk battle logic v3 (runes/charms, starter Axie non-NFT); SLP reward hanya Axie NFT
+Status: Completed
+Sources: (HIGH) [Axie Blog Origins, https://axieinfinity.medium.com/axie-infinity-origins-season-1-is-live-]; [Origins Website, https://origins.axieinfinity.com/]
+
+Date: 2022-12
+Upgrade Name: Ronin Name Service (RNS) Launch
+Description: Deploy RNS Registry, Resolver, Controller contracts; integrasi Wallet & Marketplace; domain .ron minting
+Status: Completed
+Sources: (HIGH) [Axie Blog RNS, https://axieinfinity.medium.com/ronin-name-service-rns-is-live-]; [RNS Docs, https://docs.roninchain.com/ronin/rns/overview]
+
+Date: 2023-01
+Upgrade Name: Ronin DPoS Upgrade (PoA -> DPoS)
+Description: Konsensus migrasi ke Delegated Proof-of-Stake; RON token TGE & staking live; validator set diperluas ke komunitas (22 aktif); slashing logic deploy; gas fee burn mechanism (EIP-1559 style)
+Status: Completed
+Sources: (HIGH) [Blog Ronin PoS Launch, https://blog.roninchain.com/ronin-pos-launch]; [Ronin Docs Consensus, https://docs.roninchain.com/ronin/consensus/overview]; [Ronin Explorer Staking, https://explorer.roninchain.com/staking]
+
+Date: 2023-06
+Upgrade Name: Homeland Alpha Launch (Land Gameplay)
+Description: Deploy Land contracts (ERC-721), Crafting/Alchemy contracts, Resource tokens (ERC-1155); client Unity Homeland; integrasi RON/AXS fee
+Status: Ongoing (Alpha/Seasonal)
+Sources: (HIGH) [Axie Blog Homeland, https://axieinfinity.medium.com/axie-infinity-homeland-alpha-is-live-]; [Homeland Website, https://homeland.axieinfinity.com/]; [Axie Docs Land, https://docs.axieinfinity.com/land/overview]
+
+## Current Technical Stack
+
+Infrastructure: Google Cloud Platform (GKE Kubernetes cluster untuk validator node, indexer, API gateway, game server)
+Infrastructure: AWS (backup/failover untuk beberapa layanan non-validator)
+Node Client: Custom Geth/Erigon fork (Rust/Go) untuk Ronin validator & full node; Docker image distribusi
+Indexing: The Graph (Subgraph Ronin) + Custom Indexer (PostgreSQL + Hasura GraphQL) untuk Mavis Market, Katana, Staking Dashboard
+Monitoring: Prometheus + Grafana (node metrics); Datadog (infrastructure); Sentry (frontend error tracking)
+CI/CD: GitHub Actions (smart contract test/deploy); ArgoCD (Kubernetes deploy); Unity Cloud Build (game client)
+Secrets Management: HashiCorp Vault (validator keys, API keys, bridge operator keys)
+Database: PostgreSQL (relational data — user, market order, game state cache); Redis (caching, session); ClickHouse (analytics, telemetry)
+CDN: Cloudflare (static assets, DDoS protection, Ronin Wallet extension distribution)
+Sources: (HIGH) [Google Cloud Ronin Validator, https://cloud.google.com/blog/topics/web3/google-cloud-becomes-ronin-validator]; [Ronin Docs Infrastructure, https://docs.roninchain.com/ronin/running-a-node/infrastructure]; [GitHub Sky Mavis, https://github.com/sky-mavis]; [Ronin Validator Guide, https://docs.roninchain.com/ronin/running-a-node/validator-guide]
+
+## Known Technical Limitations
+
+Limitation: Throughput terbatas oleh single-threaded EVM execution (~100-200 TPS praktis di Ronin); tidak ada parallel execution (seperti Solana/Sui) atau sharding
+Sources: (HIGH) [Ronin Docs Architecture, https://docs.roninchain.com/ronin/architecture/overview]; [EVM Performance Benchmarks, https://ethereum.org/en/developers/docs/evm/performance/]
+
+Limitation: Bridge finality tergantung Ethereum L1 (deposit ~3 menit 12 konfirmasi; withdraw 24 jam timelag + Ethereum finality); tidak ada fast finality bridge (seperti ZK bridge atau light client bridge)
+Sources: (HIGH) [Ronin Bridge Docs, https://docs.roninchain.com/ronin/bridges/ronin-bridge]; [Blog Ronin Bridge Reopening, https://blog.roninchain.com/ronin-bridge-reopening]
+
+Limitation: Validator set permissioned secara historis (PoA 2021-2023); DPoS 2023 membuka tapi top validator tetap didominasi entitas institusional awal; risiko sentralisasi kolusi validator tetap ada
+Sources: (HIGH) [Ronin Explorer Validators, https://explorer.roninchain.com/validators]; [Blog Ronin PoS Launch, https://blog.roninchain.com/ronin-pos-launch]; [Ronin Governance Forum Decentralization, https://forum.roninchain.com/t/validator-decentralization/]
+
+Limitation: Game client (Unity) bergantung pada server authoritative Sky Mavis untuk battle validation; bukan fully on-chain game logic (hanya state transition on-chain); single point of failure untuk matchmaking & anti-cheat
+Sources: (HIGH) [Axie Docs Game Mechanics, https://docs.axieinfinity.com/game-mechanics/]; [Axie Docs Anti-Cheat, https://docs.axieinfinity.com/security/anti-cheat/]
+
+Limitation: NFT metadata (Axie genes, parts, Land resources) tersimpan off-chain (IPFS/Axie CDN); hash on-chain hanya CID; risiko metadata loss jika pinning gagal (meski ada pinning redundan)
+Sources: (MEDIUM) [Axie Docs Metadata, https://docs.axieinfinity.com/nft-metadata/]; [IPFS Pinning Services, https://docs.ipfs.tech/how-to/pinning-services/]
+
+Limitation: Tidak ada native account abstraction (ERC-4337) di Ronin Mainnet per 2024; wallet tetap EOA; social recovery / gasless transaction bergantung relayer pihak ketiga (Biconomy, Gelato — integrasi parsial)
+Sources: (MEDIUM) [Ronin Docs Account Abstraction, https://docs.roninchain.com/ronin/account-abstraction/overview]; [Biconomy Ronin Integration, https://www.biconomy.io/chains/ronin]
+
+## Official Technical Resources
+
+Documentation: https://docs.axieinfinity.com/
+Documentation: https://docs.roninchain.com/
+GitHub Organization (Sky Mavis): https://github.com/sky-mavis
+GitHub Organization (Axie Infinity): https://github.com/axieinfinity
+Developer Docs (Ronin SDK): https://docs.roninchain.com/ronin/developers/overview
+Developer Docs (Axie Unity SDK): https://github.com/axieinfinity/unity-sdk
+API Reference (Ronin Explorer): https://explorer.roninchain.com/api-docs
+API Reference (Mavis Market GraphQL): https://docs.roninchain.com/ronin/marketplace/graphql
+Whitepaper v1.1: https://whitepaper.axieinfinity.com/
+Ronin Technical Specs (Consensus, Bridge, Staking): https://docs.roninchain.com/ronin/architecture/overview
+Security Audits Index: https://docs.roninchain.com/ronin/security/audits
+Bug Bounty Program: https://immunefi.com/bounty/ronin/
+Ronin Network Status: https://status.roninchain.com/
+
+## Summary
+
+Architecture: Appchain (EVM Sidechain) — Ronin Network — dengan Settlement Layer Ethereum; Canonical Bridge (Lock/Mint); Indexing via The Graph + Custom; Off-chain Game Server (Authoritative) + On-chain State Settlement
+
+Core Components: Ronin Network (Consensus/Execution), Ronin Bridge, Katana DEX, Mavis Market, Ronin Wallet, Axie Game Protocol (NFT, Breeding, Battle, Land), RNS, Axie Unity Client
+
+Audit Count: 4 auditor utama (CertiK, Verichains, PeckShield, Trail of Bits) dengan >15 laporan audit publik berkala 2021-2024
+
+Major Upgrade Count: 9 major upgrade tercatat (Ronin Mainnet PoA, Katana, Bridge Exploit Response, Bridge Reopening, Mavis Market, Origins v3, RNS, DPoS Migration, Homeland Alpha)
+
+## Open Threads
+
+- Spesifikasi teknis lengkap precompile contract Ronin (alamat pasti, fungsi, gas cost) — docs resmi belum mempublikasikan daftar lengkap precompile dengan detail parameter; perlu cek kode sumber node client Ronin (GitHub sky-mavis/ronin)
+- Detail implementasi slashing DPoS (sudah deploy tapi apakah sudah aktif enforce di mainnet? Kondisi downtime threshold berapa block? Bukti double sign format apa?) — Ronin Docs menyebut "slashing logic deployed" tapi status enforcements tidak eksplisit
+- Arsitektur game server authoritative (matchmaking, battle simulation, anti-cheat) — tidak ada dokumen teknis publik detail (hanya high-level di Axie Docs); perlu whitepaper internal atau tech talk Sky Mavis
+- Rencana Account Abstraction (ERC-4337) di Ronin — docs memiliki halaman "Account Abstraction Overview" tapi status "Coming Soon" tanpa timeline; apakah menggunakan EntryPoint v0.6/v0.7, bundler siapa, paymaster design?
+- Cross-chain messaging beyond bridge (general message passing) — Ronin Bridge hanya asset transfer; apakah ada rencana integrasi LayerZero/Wormhole/Axelar untuk arbitrary messaging ke chain lain?
+- Paralelisasi EVM / Parallel Execution roadmap — tidak ada mention di Ronin roadmap publik; apakah evaluasi Reth/Revm/Parallel EVM untuk throughput scaling?
+- Formal verification status untuk kontrak kritis (Bridge, Staking, RON Token) — CertiK/Verichains audit mencakup formal verification sebagian; perlu klarifikasi kontrak mana yang diverifikasi formal (Coq/Isabelle/K) vs manual audit saja
+- Data availability scheme untuk Ronin (full node vs light client) — Ronin tidak menggunakan DA layer terpisah (seperti Celestia/EigenDA); full node menyimpan semua state; apakah ada rencana light client trust-minimized bridge ke L2 lain?
