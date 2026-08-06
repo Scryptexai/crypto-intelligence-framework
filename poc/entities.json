@@ -3368,5 +3368,313 @@
         "evidence": "(HIGH) [Arbitrum Foundation Blog, https://blog.arbitrum.foundation/meet-the-builders-the-first-cohort-of-arbitrum-mentorship-program/]"
       }
     }
+  ],
+  "Blast": [
+    {
+      "id": "blast-ENT-001",
+      "projectSlug": "blast",
+      "name": "Tieshun Roquerre",
+      "type": "Person",
+      "status": null,
+      "description": "CEO dan Co-founder Blast, dikenal sebagai @PacmanBlur, memimpin pengembangan dan strategi proyek Blast L2",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Blast Blog, https://blog.blast.io/introducing-blast]; (HIGH) [Blast Blog, https://blog.blast.io/blast-mainnet-launch]"
+      }
+    },
+    {
+      "id": "blast-ENT-002",
+      "projectSlug": "blast",
+      "name": "Robert (pseudonim, @robert_blast)",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder Blast, peran teknis/operasional tidak diungkap detailnya secara publik",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Blast Blog, https://blog.blast.io/introducing-blast]; (HIGH) [Blast Blog, https://blog.blast.io/blast-mainnet-launch]"
+      }
+    },
+    {
+      "id": "blast-ENT-003",
+      "projectSlug": "blast",
+      "name": "Blast Foundation",
+      "type": "Foundation",
+      "status": null,
+      "description": "Entitas hukum pendiri (Cayman Islands) yang mengelola pengembangan, treasury, dan governance ekosistem Blast",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Blast Blog, https://blog.blast.io/introducing-blast]; (MEDIUM) [Blast Docs, https://docs.blast.io]"
+      }
+    },
+    {
+      "id": "blast-ENT-004",
+      "projectSlug": "blast",
+      "name": "Blur",
+      "type": "Company",
+      "status": null,
+      "description": "NFT marketplace terintegrasi dengan Blast untuk likuiditas NFT; didirikan oleh tim yang tumpang tindih dengan Blast (Tieshun Roquerre adalah founder Blur)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Blast Blog, https://blog.blast.io/introducing-blast]; (HIGH) [Blur Website, https://blur.io]"
+      }
+    },
+    {
+      "id": "blast-ENT-005",
+      "projectSlug": "blast",
+      "name": "Blast L2",
+      "type": "Protocol",
+      "status": null,
+      "description": "Protokol Optimistic Rollup Layer 2 pada Ethereum dengan native yield untuk ETH dan stablecoin",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Blast Blog, https://blog.blast.io/introducing-blast]; (HIGH) [Blast Docs, https://docs.blast.io]"
+      }
+    },
+    {
+      "id": "blast-ENT-006",
+      "projectSlug": "blast",
+      "name": "Thruster",
+      "type": "Protocol",
+      "status": null,
+      "description": "Decentralized Exchange (DEX) dan protokol DeFi utama di ekosistem Blast",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2024–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [Blast Blog, https://blog.blast.io/blast-mainnet-launch]; (MEDIUM) [Thruster Website, https://thruster.finance]"
+      }
+    },
+    {
+      "id": "blast-ENT-007",
+      "projectSlug": "blast",
+      "name": "Ring Protocol",
+      "type": "Protocol",
+      "status": null,
+      "description": "Protokol lending/borrowing di ekosistem Blast",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2024–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [Blast Blog, https://blog.blast.io/blast-mainnet-launch]; (MEDIUM) [Ring Protocol Website, https://ring.fi]"
+      }
+    },
+    {
+      "id": "blast-ENT-008",
+      "projectSlug": "blast",
+      "name": "Wasabi",
+      "type": "Protocol",
+      "status": null,
+      "description": "Protokol DeFi (AMM/liquidity) di ekosistem Blast",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2024–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [Blast Blog, https://blog.blast.io/blast-mainnet-launch]; (LOW) [Wasabi Website, https://wasabi.fi]"
+      }
+    },
+    {
+      "id": "blast-ENT-009",
+      "projectSlug": "blast",
+      "name": "Ethereum",
+      "type": null,
+      "status": null,
+      "description": "Layer 1 settlement chain untuk Blast L2; tempat staking ETH asli dan penyelesaian final transaksi",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2015–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Ethereum Website, https://ethereum.org]; (HIGH) [Blast Docs, https://docs.blast.io]"
+      }
+    },
+    {
+      "id": "blast-ENT-010",
+      "projectSlug": "blast",
+      "name": "Blast",
+      "type": null,
+      "status": null,
+      "description": "Layer 2 Optimistic Rollup chain dengan native yield, dibangun di atas Ethereum",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2024–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Blast Blog, https://blog.blast.io/blast-mainnet-launch]; (HIGH) [Blastscan, https://blastscan.io]"
+      }
+    },
+    {
+      "id": "blast-ENT-011",
+      "projectSlug": "blast",
+      "name": "Blast Bridge",
+      "type": "Company",
+      "status": null,
+      "description": "Native bridge resmi untuk transfer aset antara Ethereum L1 dan Blast L2",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2024–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Blast Docs, https://docs.blast.io/bridging]; (HIGH) [Blast Blog, https://blog.blast.io/blast-mainnet-launch]"
+      }
+    },
+    {
+      "id": "blast-ENT-012",
+      "projectSlug": "blast",
+      "name": "Blastscan",
+      "type": "Company",
+      "status": null,
+      "description": "Block explorer resmi untuk Blast L2, menyediakan pencarian transaksi, token, dan kontrak",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2024–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Blastscan, https://blastscan.io]; (HIGH) [Blast Docs, https://docs.blast.io]"
+      }
+    },
+    {
+      "id": "blast-ENT-013",
+      "projectSlug": "blast",
+      "name": "blastL2 (GitHub Organization)",
+      "type": "Company",
+      "status": null,
+      "description": "Repositori kode sumber terbuka untuk protokol Blast, smart contracts, dan tooling pengembang",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [GitHub, https://github.com/blastL2]; (HIGH) [Blast Docs, https://docs.blast.io]"
+      }
+    },
+    {
+      "id": "blast-ENT-014",
+      "projectSlug": "blast",
+      "name": "Kaito",
+      "type": "Application",
+      "status": null,
+      "description": "Platform gaming/social yang berjalan di ekosistem Blast",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2024–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [Blast Blog, https://blog.blast.io/blast-mainnet-launch]; (MEDIUM) [Kaito Website, https://kaito.ai]"
+      }
+    },
+    {
+      "id": "blast-ENT-015",
+      "projectSlug": "blast",
+      "name": "Blast DAO",
+      "type": "DAO",
+      "status": null,
+      "description": "Organisasi otonom terdesentralisasi untuk governance protokol Blast (struktur detail belum diumumkan resmi)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "LOW",
+        "period": "2024–sekarang",
+        "exposureType": "unknown",
+        "evidence": "(LOW) [Blast Blog, https://blog.blast.io/blast-token-generation-event]; (LOW) [Blast Docs, https://docs.blast.io/governance]"
+      }
+    },
+    {
+      "id": "blast-ENT-016",
+      "projectSlug": "blast",
+      "name": "Blast Community",
+      "type": null,
+      "status": null,
+      "description": "Komunitas pengguna dan pengembang di Discord dan Telegram untuk dukungan, diskusi, dan pertumbuhan ekosistem",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [Discord, https://discord.gg/blast]; (HIGH) [Telegram, https://t.me/Blast_L2_Official]"
+      }
+    },
+    {
+      "id": "blast-ENT-017",
+      "projectSlug": "blast",
+      "name": "Blast Points/Gold",
+      "type": "Protocol",
+      "status": null,
+      "description": "Sistem insentif poin (Points) dan Gold untuk mendorong partisipasi pengguna dan likuiditas di ekosistem Blast",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Blast Blog, https://blog.blast.io/introducing-blast]; (HIGH) [Blast Docs, https://docs.blast.io/points]"
+      }
+    },
+    {
+      "id": "blast-ENT-018",
+      "projectSlug": "blast",
+      "name": "Cayman Islands Government",
+      "type": "Government",
+      "status": null,
+      "description": "Yurisdiksi pendirian Blast Foundation (Cayman Islands) yang mengatur kerangka hukum dan regulasi entitas",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "unknown",
+        "evidence": "(HIGH) [Blast Blog, https://blog.blast.io/introducing-blast]; (MEDIUM) [Cayman Islands Monetary Authority, https://www.cima.ky] PERSON FOUNDATION COMPANY PROTOCOL CHAIN INVESTOR INFRASTRUCTURE APPLICATION SECURITY DAO GOVERNMENT MEDIA COMMUNITY OTHER Total Entity: 19 Internal: 6 External: 13 Unknown: 0"
+      }
+    }
   ]
 }

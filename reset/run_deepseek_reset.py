@@ -69,6 +69,7 @@ import argparse
 import json
 import os
 import re
+import subprocess
 import sys
 import threading
 import time
@@ -127,6 +128,11 @@ MIN_PHASE_CHARS = 400  # matches tools/ingest.py's own MIN_PHASE_CHARS
 
 _print_lock = threading.Lock()
 _failures_lock = threading.Lock()
+# Guards run_ingest_extract_sync()'s subprocess chain specifically -- it reads/writes shared files
+# (examples/CaseStudies/*.md via ingest.py, poc/*.json via build_json.py and every extract_*.py)
+# that aren't safe for two projects to touch concurrently under --parallel > 1. Phase GENERATION
+# (the API calls) stays fully parallel across projects; only this chain is serialized.
+_pipeline_lock = threading.Lock()
 
 
 def log(msg: str) -> None:
@@ -340,6 +346,115 @@ def log_needs_review(project: str, report: dict) -> None:
             fh.write(f"{ts}\t{project}\tverify_10_phases failed\t{report}\n")
 
 
+# tools/*.py scripts chained after promote_to_data_project() succeeds -- each takes just this
+# project's already-assembled dossier, no repo-wide reprocessing except build_json.py (which is
+# fast/deterministic and always operates on the full examples/CaseStudies/ roster by design).
+_EXTRACT_SCRIPTS = ["extract_entities.py", "extract_decision_events.py", "extract_knowledge.py",
+                    "extract_behavior.py", "extract_qa.py", "extract_events.py"]
+# cif_patterns/cif_backtests/cif_decision_events are the OLD AirdropOS-style schema, not part of
+# the dedicated CIF Supabase project (uqtvjerhgvwoxiejvrli has only the 13 intelligence-workspace
+# tables) -- excluded here on purpose. "conflicts" is also excluded: unlike the other 6 tables,
+# nothing in _EXTRACT_SCRIPTS populates poc/conflicts.json automatically (tools/extract_conflicts.py
+# is hand-curated per project, see its own module docstring for why it isn't a general extractor
+# yet), so including it here would just re-sync whatever's already in that file, not this project's
+# actual conflicts.
+_SYNC_TABLES = "projects,entities,knowledge_items,evidence_items,events,qa_dimensions,qa_phases,behavior_profiles"
+
+
+def run_ingest_extract_sync(name: str, auto_sync: bool) -> tuple:
+    """Chains ingest -> build_json -> extract_* -> (optionally) sync, run right after
+    promote_to_data_project() succeeds for a project. Each stage is a hard gate: a subprocess
+    failure at any point stops the chain for THIS project (nothing further runs, the database is
+    never touched) and returns False with a short reason string; the caller moves on to the next
+    project regardless, same as verify_10_phases()'s failure path never blocking the queue.
+
+    Deliberately reuses the existing, already-proven tools/*.py scripts as subprocesses instead of
+    reimplementing their logic here. This gives a SECOND, independent quality gate beyond
+    verify_10_phases(): tools/ingest.py has its own validate_phase_content() check against the
+    ASSEMBLED dossier (not just the raw phase files verify_10_phases already checked), so a defect
+    that only shows up after assembly (a template edge case, a stray control character, whatever)
+    still gets caught here rather than silently reaching Supabase.
+
+    auto_sync gates ONLY the final database write -- ingest+build+extract always run and are safe
+    (nothing touches Supabase), matching the maintainer's own "not instant, strict selection"
+    requirement: even with --auto-sync passed, a project only reaches tools/sync_supabase.py after
+    verify_10_phases (raw-phase-level) AND ingest.py's validator (assembled-dossier-level) both
+    already passed for it specifically.
+    """
+    dossier_path = ROOT / "examples" / "CaseStudies" / f"{name}.md"
+
+    # Phase 11 is deliberately deferred (this whole chain only fires for --phases-limit 10 runs),
+    # but data_project/<name>/11-conflict.docx already exists as an empty (0-byte) scaffold file
+    # for most projects -- ingest.py's data_project loader globs *.docx unconditionally by
+    # filename, so it WOULD pick that up, detect it as the "conflict" phase key, then hard-fail the
+    # whole project in validate_phase_content() (near-empty content) rather than treating it as
+    # simply absent. Move it out of the way for the duration of this one ingest.py call (--allow-
+    # partial then correctly reports "missing phase(s): conflict" instead), and always restore it
+    # afterward regardless of outcome.
+    conflict_path = ROOT / "data_project" / name / "11-conflict.docx"
+    conflict_stash = None
+    if conflict_path.exists() and len(conflict_path.read_text(encoding="utf-8").strip()) < MIN_PHASE_CHARS:
+        conflict_stash = conflict_path.with_suffix(".docx.pending")
+        conflict_path.rename(conflict_stash)
+    try:
+        result = subprocess.run(
+            [sys.executable, "tools/ingest.py", "--type", "data_project",
+             "--input", f"data_project/{name}", "--model", "DeepSeek", "--no-build", "--allow-partial"],
+            cwd=ROOT, capture_output=True, text=True,
+        )
+    finally:
+        if conflict_stash is not None and conflict_stash.exists():
+            conflict_stash.rename(conflict_path)
+
+    for line in result.stdout.strip().splitlines()[-3:]:
+        log(f"  [{name}] ingest: {line}")
+    if result.returncode != 0:
+        log(f"  [{name}] ✗ ingest.py failed validation -- stopping chain, nothing synced. "
+            f"stderr: {result.stderr.strip()[-500:]}")
+        return False, "ingest_failed"
+    if not dossier_path.exists():
+        log(f"  [{name}] ✗ ingest.py exited 0 but {dossier_path} wasn't created -- stopping chain.")
+        return False, "ingest_no_output"
+
+    result = subprocess.run([sys.executable, "tools/build_json.py"], cwd=ROOT,
+                             capture_output=True, text=True)
+    if result.returncode != 0:
+        log(f"  [{name}] ✗ build_json.py failed -- stopping chain. stderr: {result.stderr.strip()[-500:]}")
+        return False, "build_json_failed"
+
+    for script in _EXTRACT_SCRIPTS:
+        result = subprocess.run([sys.executable, f"tools/{script}", str(dossier_path)],
+                                 cwd=ROOT, capture_output=True, text=True)
+        if result.returncode != 0:
+            log(f"  [{name}] ✗ {script} failed -- stopping chain. stderr: {result.stderr.strip()[-500:]}")
+            return False, f"{script}_failed"
+
+    log(f"  [{name}] ingest + build + extract complete -- poc/*.json updated.")
+
+    if not auto_sync:
+        log(f"  [{name}] --auto-sync not passed -- stopping here (not synced). Run "
+            f"'python3 tools/sync_supabase.py' yourself when ready.")
+        return True, "ingested_not_synced"
+
+    sb_url = os.environ.get("SUPABASE_URL")
+    sb_key = os.environ.get("SUPABASE_SERVICE_ROLE_KEY")
+    if not (sb_url and sb_key):
+        log(f"  [{name}] ✗ --auto-sync passed but SUPABASE_URL/SUPABASE_SERVICE_ROLE_KEY aren't "
+            f"both set in the environment -- skipping sync (data is safely in poc/*.json; export "
+            f"both and re-run, or sync manually).")
+        return True, "ingested_not_synced_no_creds"
+
+    result = subprocess.run(
+        [sys.executable, "tools/sync_supabase.py", "--only", _SYNC_TABLES],
+        cwd=ROOT, capture_output=True, text=True,
+    )
+    if result.returncode != 0:
+        log(f"  [{name}] ✗ sync_supabase.py failed -- stderr: {result.stderr.strip()[-500:]}")
+        return False, "sync_failed"
+    log(f"  [{name}] ✅ synced to Supabase (tables: {_SYNC_TABLES}).")
+    return True, "synced"
+
+
 def _prompt_placeholder(num: int, key: str) -> str:
     """Stand-in for a COMPLETED phase's full prompt text once its real output is already in
     context. The instructions themselves add no new information once the phase they produced is
@@ -507,7 +622,7 @@ def run_phase_11(name: str, base_url: str, token: str, model: str, proj_dir: Pat
 
 
 def run_project(name: str, base_url: str, token: str, model: str, dry_run: bool, phases_limit: int,
-                output_root: Path) -> bool:
+                output_root: Path, auto_sync: bool = False) -> bool:
     """Returns True if every requested phase completed (real or resumed-from-disk), False if a
     phase failed permanently (all retries exhausted) -- in which case later phases for this
     project are skipped (they need this one's output as context) but the run continues to the
@@ -618,6 +733,9 @@ def run_project(name: str, base_url: str, token: str, model: str, dry_run: bool,
             else:
                 plog(f"=== verified (already writing directly to data_project/{name}/, "
                      f"nothing to promote). ===")
+            with _pipeline_lock:
+                chain_ok, chain_status = run_ingest_extract_sync(name, auto_sync)
+            plog(f"=== ingest/extract/sync chain: {chain_status} ({'ok' if chain_ok else 'FAILED'}) ===")
         else:
             log_needs_review(name, report)
             plog(f"=== ✗ verification FAILED -- at least one of phases 2/3/9/10 didn't extract "
@@ -665,6 +783,15 @@ def main() -> None:
                           "independent conversation/thread, so there's no shared state between "
                           "them -- raise gradually and watch reset/failures.log for rate-limit "
                           "errors rather than jumping straight to a large number.")
+    ap.add_argument("--auto-sync", action="store_true",
+                     help="only meaningful with --phases-limit 10: after a project passes "
+                          "verify_10_phases() and is promoted to data_project/, also chain "
+                          "tools/ingest.py -> build_json.py -> extract_*.py -> tools/sync_supabase.py "
+                          "automatically, pushing that project straight to the live CIF Supabase "
+                          "database. Off by default -- without this flag the chain still runs "
+                          "ingest+extract (safe, no database writes) and stops there. Requires "
+                          "SUPABASE_URL + SUPABASE_SERVICE_ROLE_KEY in the environment; a project "
+                          "missing either just skips the sync step (data stays in poc/*.json).")
     args = ap.parse_args()
     if args.output_root:
         output_root = Path(args.output_root).resolve()
@@ -701,7 +828,7 @@ def main() -> None:
                 if i:
                     time.sleep(5)
                 futures[pool.submit(run_project, name, base_url, token, model, args.dry_run,
-                                     args.phases_limit, output_root)] = name
+                                     args.phases_limit, output_root, args.auto_sync)] = name
             for fut in as_completed(futures):
                 name = futures[fut]
                 try:
@@ -710,7 +837,8 @@ def main() -> None:
                     log(f"[{name}] ✗✗ unexpected exception, this project's thread crashed: {e}")
     else:
         for i, name in enumerate(projects):
-            run_project(name, base_url, token, model, args.dry_run, args.phases_limit, output_root)
+            run_project(name, base_url, token, model, args.dry_run, args.phases_limit, output_root,
+                        args.auto_sync)
             if i < len(projects) - 1:
                 log(f"sleeping {PROJECT_SLEEP_SECONDS}s before next project...")
                 time.sleep(PROJECT_SLEEP_SECONDS)

@@ -18,5 +18,16 @@
     "tags": [
       "l2"
     ]
+  },
+  {
+    "n": "Blast",
+    "tier": "Deep",
+    "file": "examples/CaseStudies/Blast.md",
+    "cat": "",
+    "era": "",
+    "tags": [
+      "points",
+      "l2"
+    ]
   }
 ]

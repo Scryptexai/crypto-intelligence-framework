@@ -9,7 +9,7 @@ structured against the `docs/` ontology.
 This is the master curation record for the dataset stored in `examples/`: what was added per batch,
 how the taxonomy is distributed, where the gaps are, and what is queued next.
 
-**Total curated projects: 2 (LayerZero D13, Arbitrum D14).**
+**Total curated projects: 3 (LayerZero D13, Arbitrum D14, Blast D15).**
 
 > **⚠ 2026-07-26 dataset reset (maintainer decision).** All prior projects — 12 Deep Dossiers (Ethereum,
 > Solana, BNB Chain, Cardano, Avalanche, Polkadot, Cosmos, dYdX, Aave, ether.fi, EigenLayer, Celestia) and
@@ -494,6 +494,39 @@ _Tier: Deep · anchor projects with full causal history._
 |---|---------|----------|-----|--------|------|-----------|
 | D13 | LayerZero | Interoperability / Omnichain Messaging (Bridge, GMP, DVN security) | 2021– | Deep Research (Gemini + Claude-direct + DeepSeek), Format v3 Dependency Pipeline (11/11 phases) | `CaseStudies/LayerZero.md` | `doc_backup/inbox/phased/LayerZero/01..11-*.docx` (per-phase, archived individually to `doc_backup/deep/LayerZero_<phase>_2026-07.docx`); full prompt history in `doc_backup/inbox/phased/LayerZero/PROMPTS-LOG.md` |
 | D14 | Arbitrum | Layer-2 scaling solution (Optimistic Rollup) | 2018– | Deep Research (DeepSeek), Format v3 Dependency Pipeline Track C (11/11 phases) | `CaseStudies/Arbitrum.md` | `data_project/Arbitrum/01..11-*.docx`, archived individually to `doc_backup/deep/Arbitrum_<phase>_2026-08.docx` |
+| D15 | Blast | Layer-2 (OP Stack, native yield) | 2023– | Deep Research (DeepSeek/Nemotron via gateway — see `reset/README.md` on model substitution), Format v3 Dependency Pipeline Track C (10/11 phases — **Phase 11 deliberately deferred**, see note below) | `CaseStudies/Blast.md` | `data_project/Blast/01..10-*.docx`, archived individually to `doc_backup/deep/Blast_<phase>_2026-08.docx` |
+
+**Blast (D15) — Phase 11 deliberately deferred, first project run through the new automated
+`run_ingest_extract_sync()` chain.** Used as the validation project for `reset/run_deepseek_reset.py`'s
+new modular pipeline (generate → `verify_10_phases` real-extractor gate → `promote_to_data_project` →
+`ingest.py` → `build_json.py` → 6 `extract_*.py` scripts, optionally → Supabase sync, each stage a hard
+gate) built to remove manual per-project babysitting across the 59-project `reset/projects.txt` queue.
+Phase 11 (CIF Validation Report / QA score) is intentionally not run yet — `11-conflict.docx` stays the
+original empty scaffold, handled via a temporary rename-around in `run_ingest_extract_sync()` so
+`tools/ingest.py --allow-partial` doesn't hard-fail on it. Consequently `poc/qa.json` has no Blast entry;
+this is expected (`tools/extract_qa.py`'s `parse_qa()` returns `None` gracefully when the "Validation &
+Quality Assurance" section is absent, not an error) and will resolve once Phase 11 is run.
+
+Verifying Blast end-to-end against the real extractors (not just a citation-density check) surfaced and
+fixed four real format bugs, all in `reset/phase_09_behavioral.txt` and one in the shared `tools/ingest.py`:
+- Phase 9's Decision Timeline, Strategic Objectives, Technical/Financial/Ecosystem/Governance/Recurring
+  Decision Pattern, Risk Response Pattern, and Strategic Trade-offs sections all used markdown headings
+  (`## Label`) or unlabeled markdown bold (`**title**`) instead of the exact flat-text formats
+  `tools/extract_decision_events.py` and `tools/extract_behavior.py` parse (`Keputusan: <title> (<date>)`,
+  numbered `1. <title>`, `Pola N: <title>`, `Trade-off N: <title>`) — the model was reasonably mirroring
+  the prompt's own visual structure since the prompt never said not to. Fixed in the prompt (with worked
+  examples) and mechanically in the already-generated `data_project/Blast/09-behavioral.docx`.
+- `tools/ingest.py`'s `OPEN_THREADS_RE` matched the phrase "open threads" anywhere within an 80-char
+  window, not just as a standalone heading — so an inline citation like "Supporting Dataset: ..., Phase 8
+  Open Threads" inside Blast's Decision Timeline silently truncated that phase's entire body at the
+  citation, dropping every section after it (Technical/Financial/Ecosystem/Governance Decision Pattern,
+  Risk Response, Recurring Behavioral Pattern, Strategic Trade-offs all vanished). Tightened to require
+  the whole line (only markdown/bullet/numbering decoration allowed) to match, not a substring.
+
+All fixes verified by re-running the real extractors against Blast's regenerated content: `poc/entities.json`
+(18), `poc/events.json` (15), `poc/decision_events.json` (10), `poc/knowledge.json` (42), and
+`poc/behavior.json` (4 objectives, 35 decision patterns, 10 risk responses, 8 trade-offs) all non-empty
+and structurally correct for Blast.
 
 _D1–D12 (Ethereum, Solana, BNB Chain, Cardano, Avalanche, Polkadot, Cosmos, dYdX, Aave, ether.fi, EigenLayer,
 Celestia) moved to `_archive_pre_v3/` in the 2026-07-26 dataset reset — see the note at the top of this file._

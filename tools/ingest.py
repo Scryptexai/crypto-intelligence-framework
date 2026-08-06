@@ -112,7 +112,14 @@ def phase_meta(key: str, raw: str) -> dict:
         return CONFLICT_META_VALIDATION
     return PHASE_META[key]
 
-OPEN_THREADS_RE = re.compile(r"(?im)^#{0,3}[^\n]{0,80}\bopen\s*threads?\b[^\n]*$")
+# Anchored to the WHOLE line (only markdown/bullet/numbering decoration allowed around the
+# phrase) -- a looser "phrase anywhere in an 80-char window" version previously matched inline
+# citations like "Supporting Dataset: ..., Phase 8 Open Threads" or "...Phase 8 Open Threads
+# (multiple transparency gaps)" inside an unrelated section (e.g. Decision Timeline/Trade-offs),
+# truncating that phase's body at the citation and silently dropping every section after it
+# (found via Blast Phase 9: Technical/Financial/Ecosystem/Governance Decision Pattern, Risk
+# Response, Recurring Behavioral Pattern and Strategic Trade-offs all vanished this way).
+OPEN_THREADS_RE = re.compile(r"(?im)^\s{0,3}#{0,3}\s*\**\s*open\s*threads?\s*\**\s*:?\s*$")
 
 def detect_phase_key(filename: str):
     """Match a phase key as a substring of the filename (case/punctuation-insensitive)."""

@@ -2,9 +2,9 @@
 window.CIF = {
   "meta": {
     "schema": "cif-export/1",
-    "generated": "2026-08-03 22:25 UTC",
-    "projects": 2,
-    "deep": 2,
+    "generated": "2026-08-06 13:24 UTC",
+    "projects": 3,
+    "deep": 3,
     "summary": 0,
     "sentiment": 0,
     "patterns": 16,
@@ -28,6 +28,17 @@ window.CIF = {
       "cat": "Layer-2 scaling solution (Optimistic Rollup)",
       "era": "2018–",
       "tags": [
+        "l2"
+      ]
+    },
+    {
+      "n": "Blast",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Blast.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "points",
         "l2"
       ]
     }

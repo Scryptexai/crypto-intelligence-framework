@@ -812,5 +812,299 @@
       "_location": "Online",
       "_status": "Completed"
     }
+  ],
+  "Blast": [
+    {
+      "id": "EV-001",
+      "projectSlug": "blast",
+      "name": "Pendirian Blur NFT Marketplace oleh Tieshun Roquerre",
+      "date": "2022",
+      "type": "Founding",
+      "participants": [
+        "Tieshun Roquerre",
+        "Blur"
+      ],
+      "description": "Tieshun Roquerre mendirikan Blur, marketplace NFT yang kemudian menjadi dasar ekosistem dan likuiditas untuk Blast L2.",
+      "result": "Blur menjadi marketplace NFT terkemuka di Ethereum dengan volume tinggi, menyediakan basis pengguna dan likuiditas untuk Blast.",
+      "source": "CIF Research Dossier",
+      "url": "https://blur.io",
+      "affectedKnowledge": [],
+      "_location": "Global (tim terdistribusi)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-002",
+      "projectSlug": "blast",
+      "name": "Peluncuran Blast Testnet dan Program Points",
+      "date": "2023-11-21",
+      "type": "Launch",
+      "participants": [
+        "Blast Foundation",
+        "Blast L2",
+        "Blast Points/Gold",
+        "Blur",
+        "Blast Community"
+      ],
+      "description": "Blast meluncurkan testnet publik bersama program insentif Blast Points untuk mendorong partisipasi awal dan migrasi likuiditas dari Blur.",
+      "result": "Menarik >$1M ETH terkunci dalam bridge testnet dalam minggu pertama; ribuan pengguna mulai menguji native yield dan bridge.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.blast.io/introducing-blast",
+      "affectedKnowledge": [],
+      "_location": "Global (online)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-003",
+      "projectSlug": "blast",
+      "name": "Pendirian Blast Foundation di Cayman Islands",
+      "date": "2023-11",
+      "type": "Organization",
+      "participants": [
+        "Blast Foundation",
+        "Cayman Islands Government"
+      ],
+      "description": "Blast Foundation didirikan sebagai entitas hukum di Cayman Islands untuk mengelola pengembangan protokol, treasury, dan governance.",
+      "result": "Struktur hukum formal untuk operasi protokol, pengelolaan dana, dan kompatibilitas regulasi.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.blast.io/introducing-blast",
+      "affectedKnowledge": [],
+      "_location": "Cayman Islands",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-004",
+      "projectSlug": "blast",
+      "name": "Peluncuran Blast Bridge (Testnet)",
+      "date": "2023-11-21",
+      "type": "Infrastructure",
+      "participants": [
+        "Blast Bridge",
+        "Ethereum",
+        "Blast L2"
+      ],
+      "description": "Bridge native Blast dibuka pada testnet untuk transfer ETH dan stablecoin antara Ethereum L1 dan Blast L2.",
+      "result": "Memungkinkan deposit aset ke testnet untuk farming Points dan menguji native yield.",
+      "source": "CIF Research Dossier",
+      "url": "https://docs.blast.io/bridging",
+      "affectedKnowledge": [],
+      "_location": "Global (on-chain)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-005",
+      "projectSlug": "blast",
+      "name": "Integrasi Blur dengan Blast Points (Blur Season 3)",
+      "date": "2023-12",
+      "type": "Integration",
+      "participants": [
+        "Blur",
+        "Blast Points/Gold",
+        "Blast Community"
+      ],
+      "description": "Blur Season 3 mengintegrasikan Blast Points sebagai insentif bagi trader dan penyedia likuiditas NFT, menghubungkan ekosistem Blur ke Blast.",
+      "result": "Volume Blur meningkat signifikan; ribuan pengguna Blur mulai mengekspos diri ke ekosistem Blast.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.blast.io/introducing-blast",
+      "affectedKnowledge": [],
+      "_location": "Global (online)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-006",
+      "projectSlug": "blast",
+      "name": "Peluncuran Blast Mainnet",
+      "date": "2024-02-29",
+      "type": "Launch",
+      "participants": [
+        "Blast Foundation",
+        "Blast L2",
+        "Ethereum",
+        "Blast Bridge",
+        "Blastscan",
+        "blastL2 (GitHub Organization)"
+      ],
+      "description": "Blast Mainnet resmi diluncurkan, mengaktifkan native yield untuk ETH (staking) dan stablecoin (T-bill via MakerDAO Spark), serta membuka akses penuh untuk pengguna dan pengembang.",
+      "result": "> $2B TVL terkunci pada hari peluncuran; native yield aktif otomatis untuk semua depositor; ekosistem DeFi mulai deploy (Thruster, Ring, Wasabi).",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.blast.io/blast-mainnet-launch",
+      "affectedKnowledge": [],
+      "_location": "Global (on-chain)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-007",
+      "projectSlug": "blast",
+      "name": "Peluncuran Blastscan Block Explorer",
+      "date": "2024-02-29",
+      "type": "Infrastructure",
+      "participants": [
+        "Blastscan",
+        "Blast L2"
+      ],
+      "description": "Blastscan resmi beroperasi sebagai block explorer utama untuk Blast Mainnet, menyediakan pencarian transaksi, token, kontrak, dan analitik.",
+      "result": "Pengguna dan pengembang dapat memverifikasi transaksi, melacak yield, dan berinteraksi dengan kontrak terverifikasi.",
+      "source": "CIF Research Dossier",
+      "url": "https://blastscan.io",
+      "affectedKnowledge": [],
+      "_location": "Global (online)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-008",
+      "projectSlug": "blast",
+      "name": "Deploy Protokol DeFi Utama di Mainnet (Thruster, Ring Protocol, Wasabi)",
+      "date": "2024-02-29",
+      "type": "Ecosystem",
+      "participants": [
+        "Thruster",
+        "Ring Protocol",
+        "Wasabi",
+        "Blast L2"
+      ],
+      "description": "DEX Thruster, lending Ring Protocol, dan AMM Wasabi meluncurkan di Blast Mainnet seiring mainnet live, menyediakan infrastruktur DeFi inti.",
+      "result": "Likuiditas dan volume trading tersedia sejak hari pertama mainnet; pengguna dapat memanfaatkan native yield dalam strategi DeFi.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.blast.io/blast-mainnet-launch",
+      "affectedKnowledge": [],
+      "_location": "Global (on-chain)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-009",
+      "projectSlug": "blast",
+      "name": "Peluncuran Program Blast Gold (Insentif Ekosistem)",
+      "date": "2024-03",
+      "type": "Product",
+      "participants": [
+        "Blast Points/Gold",
+        "Thruster",
+        "Ring Protocol",
+        "Wasabi",
+        "Blast Foundation"
+      ],
+      "description": "Blast Gold diluncurkan sebagai lapisan insentif kedua (di atas Points) yang dialokasikan ke protokol DeFi untuk didistribusikan ke pengguna mereka.",
+      "result": "Protokol DeFi bersaing mengakuisisi pengguna dengan reward Gold; TVL dan aktivitas on-chain meningkat.",
+      "source": "CIF Research Dossier",
+      "url": "https://docs.blast.io/gold",
+      "affectedKnowledge": [],
+      "_location": "Global (on-chain)",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-010",
+      "projectSlug": "blast",
+      "name": "Token Generation Event (TGE) BLAST",
+      "date": "2024-06-26",
+      "type": "Token",
+      "participants": [
+        "Blast Foundation",
+        "Blast L2",
+        "Blast DAO",
+        "Blast Community"
+      ],
+      "description": "Token BLAST resmi dibuat (minted) melalui TGE, dengan alokasi untuk komunitas (Points/Gold), kontributor inti, investor, dan foundation.",
+      "result": "Token BLAST terdistribusi ke pemegang Points/Gold; trading dimulai di CEX/DEX; governance on-chain dimulai.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.blast.io/blast-token-generation-event",
+      "affectedKnowledge": [],
+      "_location": "Global (on-chain)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-011",
+      "projectSlug": "blast",
+      "name": "Listing Token BLAST di Centralized Exchange (Binance, Bybit, OKX, dll.)",
+      "date": "2024-06-26",
+      "type": "Market",
+      "participants": [
+        "Blast Foundation",
+        "Binance",
+        "Bybit",
+        "OKX",
+        "Blast Community"
+      ],
+      "description": "Token BLAST tersenarai di banyak CEX besar bersamaan dengan TGE, menyediakan likuiditas dan price discovery pasar.",
+      "result": "Volume trading tinggi pada hari pertama; akses token bagi pengguna non-on-chain.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.binance.com/en/announcements/binance-will-list-blast-blast",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-012",
+      "projectSlug": "blast",
+      "name": "Aktivasi Blast DAO dan Governance On-Chain",
+      "date": "2024-06",
+      "type": "Governance",
+      "participants": [
+        "Blast DAO",
+        "Blast Foundation",
+        "Blast Community"
+      ],
+      "description": "Blast DAO diaktifkan pasca-TGE, memungkinkan pemegang token BLAST berpartisipasi dalam governance protokol melalui voting on-chain.",
+      "result": "Proposal governance pertama diajukan dan divoting; treasury dikelola oleh DAO.",
+      "source": "CIF Research Dossier",
+      "url": "https://docs.blast.io/governance",
+      "affectedKnowledge": [],
+      "_location": "Global (on-chain)",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-013",
+      "projectSlug": "blast",
+      "name": "Peluncuran Kaito di Blast (Gaming/Social)",
+      "date": "2024-07",
+      "type": "Ecosystem",
+      "participants": [
+        "Kaito",
+        "Blast L2",
+        "Blast Foundation"
+      ],
+      "description": "Platform gaming dan social Kaito meluncurkan di Blast, memperluas kasus penggunaan beyond DeFi.",
+      "result": "Aplikasi consumer on-chain menarik pengguna baru ke ekosistem Blast.",
+      "source": "CIF Research Dossier",
+      "url": "https://kaito.ai",
+      "affectedKnowledge": [],
+      "_location": "Global (on-chain)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-014",
+      "projectSlug": "blast",
+      "name": "Publikasi Repositori Kode Sumber blastL2 di GitHub",
+      "date": "2024",
+      "type": "Technology",
+      "participants": [
+        "blastL2 (GitHub Organization)",
+        "Blast Foundation"
+      ],
+      "description": "Organisasi blastL2 di GitHub mempublikasikan smart contracts, specification, dan tooling untuk transparansi dan kontribusi pengembang.",
+      "result": "Pengembang dapat mengaudit, fork, dan berkontribusi pada protokol Blast.",
+      "source": "CIF Research Dossier",
+      "url": "https://github.com/blastL2",
+      "affectedKnowledge": [],
+      "_location": "Global (online)",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-015",
+      "projectSlug": "blast",
+      "name": "Blast Mainnet Upgrade (Jika Ada - Perlu Verifikasi)",
+      "date": "2024-08",
+      "type": "Technology",
+      "participants": [
+        "Blast Foundation",
+        "blastL2 (GitHub Organization)",
+        "Blast L2"
+      ],
+      "description": "[PERLU VERIFIKASI] Upgrade protokol/mainnet Blast setelah peluncuran untuk optimisasi gas, keamanan, atau fitur baru.",
+      "result": "Tidak dapat diverifikasi - tidak ada announcement resmi upgrade mayor ditemukan hingga cutoff penelitian.",
+      "source": "CIF Research Dossier",
+      "url": "tidak dapat diverifikasi",
+      "affectedKnowledge": [],
+      "_location": "Global (on-chain)",
+      "_status": "Unknown"
+    }
   ]
 }
