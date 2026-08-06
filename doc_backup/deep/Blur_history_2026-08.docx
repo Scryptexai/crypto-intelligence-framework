@@ -1,0 +1,694 @@
+PROJECT: Blur
+
+Event ID
+
+EV-001
+
+Date
+
+2022
+
+Event Name
+
+Pendirian Blur Labs, Inc.
+
+Event Type
+
+Founding
+
+Description
+
+Blur Labs, Inc. didirikan sebagai entitas hukum di Delaware, Amerika Serikat oleh tiga founder pseudonim PacmanBlur, Galaga, dan Lord_kekl untuk mengembangkan marketplace NFT Blur.
+
+Participants
+
+Blur Labs, Inc., PacmanBlur, Galaga, Lord_kekl
+
+Location
+
+Delaware, Amerika Serikat
+
+Status
+
+Completed
+
+Immediate Result
+
+Entitas legal resmi untuk pengembangan protokol Blur terbentuk.
+
+Sources
+
+https://blur.io/blog/introducing-blur (MEDIUM) [TechCrunch, https://techcrunch.com/2022/11/01/blur-nft-marketplace-raises-11m-at-1b-valuation-from-paradigm]
+
+---
+
+Event ID
+
+EV-002
+
+Date
+
+2022-10-19
+
+Event Name
+
+Peluncuran Mainnet Blur Marketplace
+
+Event Type
+
+Launch
+
+Description
+
+Blur Marketplace diluncurkan langsung di Ethereum mainnet tanpa fase testnet publik terpisah, menawarkan agregator orderbook, bidding kolektif, dan zero platform fee untuk trader.
+
+Participants
+
+Blur Labs, Inc., Blur Marketplace, Ethereum
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Protokol marketplace menjadi live dan dapat diakses pengguna untuk trading NFT.
+
+Sources
+
+https://blur.io/blog/introducing-blur (HIGH) [Etherscan, https://etherscan.io/address/0x000000000000Ad05Ccc4F10445630FB830B95127]
+
+---
+
+Event ID
+
+EV-003
+
+Date
+
+2022-11-01
+
+Event Name
+
+Series A Funding $11M dari Paradigm
+
+Event Type
+
+Funding
+
+Description
+
+Blur Labs mengumpulkan dana Series A sebesar $11 juta dengan valuasi $1 miliar dipimpin oleh Paradigm, dengan partisipasi investor awal Variant Fund dan angel investor Cozomo de' Medici.
+
+Participants
+
+Blur Labs, Inc., Paradigm, Variant Fund, Cozomo de' Medici
+
+Location
+
+Amerika Serikat
+
+Status
+
+Completed
+
+Immediate Result
+
+Blur Labs mendapatkan pembiayaan $11M untuk ekspansi tim dan pengembangan produk.
+
+Sources
+
+https://www.paradigm.xyz/portfolio/blur (HIGH) [TechCrunch, https://techcrunch.com/2022/11/01/blur-nft-marketplace-raises-11m-at-1b-valuation-from-paradigm]
+
+---
+
+Event ID
+
+EV-004
+
+Date
+
+2023-02-14
+
+Event Name
+
+Token Generation Event (TGE) BLUR
+
+Event Type
+
+Token
+
+Description
+
+Token BLUR (ERC-20) dideploy dan diumumkan secara resmi, dengan alokasi untuk komunitas (Season 1 airdrop), tim, investor, dan treasury DAO. Kontrak token diverifikasi di Etherscan pada tanggal yang sama.
+
+Participants
+
+Blur Labs, Inc., BLUR Token, Blur DAO, Ethereum
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Token BLUR tersedia on-chain, airdrop Season 1 diklaim pengguna, dan trading dimulai di DEX/CEX.
+
+Sources
+
+https://blur.io/blog/blur-token (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/blur] [Etherscan, https://etherscan.io/token/0x5283D291DBCF85356a21bA090E6db59121208b44]
+
+---
+
+Event ID
+
+EV-005
+
+Date
+
+2023-02-14
+
+Event Name
+
+Listing BLUR di Binance
+
+Event Type
+
+Market
+
+Description
+
+Binance melisting token BLUR dengan pasangan BLUR/USDT, BLUR/BUSD, BLUR/BTC pada hari TGE, menyediakan likuiditas pasar terpusat utama untuk price discovery awal.
+
+Participants
+
+Binance, BLUR Token
+
+Location
+
+Binance Exchange
+
+Status
+
+Completed
+
+Immediate Result
+
+Trading BLUR dimulai di bursa terpusat terbesar dunia dengan volume signifikan.
+
+Sources
+
+https://www.binance.com/en/blog/1143099090879011840 (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/blur]
+
+---
+
+Event ID
+
+EV-006
+
+Date
+
+2023-02-15
+
+Event Name
+
+Listing BLUR di Coinbase (Experimental Label)
+
+Event Type
+
+Market
+
+Description
+
+Coinbase melisting token BLUR dengan label "Experimental" pada pasangan BLUR/USD dan BLUR/USDT, memperluas akses pasar ke investor ritel Amerika Serikat.
+
+Participants
+
+Coinbase, BLUR Token
+
+Location
+
+Coinbase Exchange
+
+Status
+
+Completed
+
+Immediate Result
+
+BLUR tersedia untuk trading di bursa terpusat terkemuka berbasis AS.
+
+Sources
+
+https://blog.coinbase.com/blur-blur-is-launching-on-coinbase-123 (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/blur]
+
+---
+
+Event ID
+
+EV-007
+
+Date
+
+2023-02-14
+
+Event Name
+
+Pembentukan Blur DAO dan Mulai Governance
+
+Event Type
+
+Governance
+
+Description
+
+Blur DAO dibentuk bersamaan dengan TGE, memungkinkan pemegang token BLUR mengajukan dan memilih proposal melalui Snapshot (off-chain) dan on-chain execution untuk parameter protokol dan pengelolaan treasury.
+
+Participants
+
+Blur DAO, BLUR Token, Blur Labs, Inc.
+
+Location
+
+Snapshot (off-chain), Ethereum Mainnet (execution)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Framework governance komunitas aktif dengan proposal pertama terkait fee dan reward.
+
+Sources
+
+https://blur.io/blog/blur-token (HIGH) [Snapshot, https://snapshot.org/#/blur.eth]
+
+---
+
+Event ID
+
+EV-008
+
+Date
+
+2023-04
+
+Event Name
+
+Audit Keamanan Blend oleh Trail of Bits
+
+Event Type
+
+Security
+
+Description
+
+Trail of Bits melakukan audit komprehensif terhadap smart contract Blend (protokol pinjaman NFT) sebelum mainnet launch, menemukan temuan tingkat kritis hingga informatif yang kemudian diperbaiki.
+
+Participants
+
+Trail of Bits, Blend, Blur Labs, Inc.
+
+Location
+
+Repositori publik GitHub
+
+Status
+
+Completed
+
+Immediate Result
+
+Laporan audit dipublikasikan, kerentanan diperbaiki sebelum deployment Blend mainnet.
+
+Sources
+
+https://github.com/trailofbits/publications/blob/master/reviews/Blend.pdf (HIGH) [Blur Blog, https://blur.io/blog/blend]
+
+---
+
+Event ID
+
+EV-009
+
+Date
+
+2023-04
+
+Event Name
+
+Audit Keamanan Blend oleh OpenZeppelin
+
+Event Type
+
+Security
+
+Description
+
+OpenZeppelin melakukan audit independen kedua untuk smart contract Blend, fokus pada logika pinjaman, likuidasi, dan oracle, melengkapi review Trail of Bits.
+
+Participants
+
+OpenZeppelin, Blend, Blur Labs, Inc.
+
+Location
+
+Repositori publik GitHub / Blog OpenZeppelin
+
+Status
+
+Completed
+
+Immediate Result
+
+Laporan audit kedua dipublikasikan, memberikan kepercayaan ganda sebelum launch Blend.
+
+Sources
+
+https://blog.openzeppelin.com/blend-audit (HIGH) [Blur Blog, https://blur.io/blog/blend]
+
+---
+
+Event ID
+
+EV-010
+
+Date
+
+2023-05-01
+
+Event Name
+
+Peluncuran Blend (NFT Lending Protocol)
+
+Event Type
+
+Launch
+
+Description
+
+Blend diluncurkan di Ethereum mainnet sebagai protokol pinjaman NFT peer-to-peer terintegrasi dengan Blur Marketplace, memungkinkan pengguna meminjam ETH menggunakan NFT sebagai collateral tanpa expiration date tetap.
+
+Participants
+
+Blur Labs, Inc., Blend, Ethereum, Blur Marketplace
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Protokol lending NFT live, volume pinjaman mencatat $100M+ dalam minggu pertama.
+
+Sources
+
+https://blur.io/blog/blend (HIGH) [Etherscan, https://etherscan.io/address/0x29469395eAf6f95920E59F858042f0e28D98a20B]
+
+---
+
+Event ID
+
+EV-011
+
+Date
+
+2023-05
+
+Event Name
+
+Musim Insentif Season 2 Blur
+
+Event Type
+
+Community
+
+Description
+
+Blur meluncurkan Season 2 program insentif dengan reward token BLUR untuk aktivitas trading, bidding, dan liquidity provision pada Blur Marketplace dan Blend, berlangsung beberapa bulan.
+
+Participants
+
+Blur Labs, Inc., Blur Community (Blur Nation), BLUR Token, Blur DAO
+
+Location
+
+Blur Marketplace, Blend
+
+Status
+
+Completed
+
+Immediate Result
+
+Volume trading dan aktivitas bidding meningkat signifikan selama periode Season 2.
+
+Sources
+
+https://blur.io/blog/blur-token (MEDIUM) [Discord, https://discord.gg/blur]
+
+---
+
+Event ID
+
+EV-012
+
+Date
+
+2023-11
+
+Event Name
+
+Musim Insentif Season 3 Blur
+
+Event Type
+
+Community
+
+Description
+
+Season 3 dimulai dengan struktur reward yang diperbarui, mencakup insentif untuk koleksi NFT baru, delegasi voting BLUR, dan partisipasi di Blend, bertujuan mempertahankan market share agar tetap dominan.
+
+Participants
+
+Blur Labs, Inc., Blur Community (Blur Nation), BLUR Token, Blur DAO
+
+Location
+
+Blur Marketplace, Blend
+
+Status
+
+Completed
+
+Immediate Result
+
+Blur mempertahankan posisi #1 NFT marketplace by volume di Ethereum selama Season 3.
+
+Sources
+
+https://blur.io/blog (MEDIUM) [Discord, https://discord.gg/blur]
+
+---
+
+Event ID
+
+EV-013
+
+Date
+
+2024-02
+
+Event Name
+
+Proposal Governance: Fee Switch Activation untuk BLUR Stakers
+
+Event Type
+
+Governance
+
+Description
+
+Proposal on-chain diajukan dan disetujui untuk mengaktifkan fee switch, mengarahkan sebagian protocol fee Blur Marketplace ke pemegang BLUR yang melakukan staking/delegasi, memperkenalkan value accrual ke token.
+
+Participants
+
+Blur DAO, BLUR Token, Blur Community (Blur Nation)
+
+Location
+
+Snapshot, Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Fee switch aktif, staker BLUR mulai menerima distribusi fee protokol.
+
+Sources
+
+https://snapshot.org/#/blur.eth (HIGH) [Etherscan, https://etherscan.io]
+
+---
+
+Event ID
+
+EV-014
+
+Date
+
+2024-06
+
+Event Name
+
+Peluncuran Blur Mobile App (Beta)
+
+Event Type
+
+Product
+
+Description
+
+Blur merilis aplikasi mobile beta untuk iOS dan Android, memungkinkan trading NFT, bidding, dan manajemen portfolio di perangkat mobile dengan fitur parity ke desktop.
+
+Participants
+
+Blur Labs, Inc., Blur Marketplace, Blur Community (Blur Nation)
+
+Location
+
+iOS App Store, Google Play Store (Beta)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Akses mobile memperluas basis pengguna ritel ke-delà power trader desktop.
+
+Sources
+
+https://blur.io/blog (MEDIUM) [Twitter @blur_io, https://twitter.com/blur_io]
+
+---
+
+Event ID
+
+EV-015
+
+Date
+
+2024-10
+
+Event Name
+
+Two-Year Anniversary: Market Share Dominasi Terus Berlanjut
+
+Event Type
+
+Market
+
+Description
+
+Blur men capai anniversary ke-2 dengan market share volume trading NFT Ethereum konstan di atas 60-70%, mengungguli OpenSea secara konsisten sejak awal 2023.
+
+Participants
+
+Blur Marketplace, Blur Community (Blur Nation), Ethereum
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Blur mengonsolidasikan posisi sebagai marketplace NFT dominan di Ethereum.
+
+Sources
+
+https://dune.com/queries (MEDIUM) [Twitter @blur_io, https://twitter.com/blur_io]
+
+---
+
+### KELOMPOK BERDASARKAN TAHUN
+
+#### 2022
+- EV-001: Pendirian Blur Labs, Inc. (Founding)
+- EV-002: Peluncuran Mainnet Blur Marketplace (Launch)
+- EV-003: Series A Funding $11M dari Paradigm (Funding)
+
+#### 2023
+- EV-004: Token Generation Event (TGE) BLUR (Token)
+- EV-005: Listing BLUR di Binance (Market)
+- EV-006: Listing BLUR di Coinbase (Market)
+- EV-007: Pembentukan Blur DAO dan Mulai Governance (Governance)
+- EV-008: Audit Keamanan Blend oleh Trail of Bits (Security)
+- EV-009: Audit Keamanan Blend oleh OpenZeppelin (Security)
+- EV-010: Peluncuran Blend (NFT Lending Protocol) (Launch)
+- EV-011: Musim Insentif Season 2 Blur (Community)
+- EV-012: Musim Insentif Season 3 Blur (Community)
+
+#### 2024
+- EV-013: Proposal Governance: Fee Switch Activation untuk BLUR Stakers (Governance)
+- EV-014: Peluncuran Blur Mobile App (Beta) (Product)
+- EV-015: Two-Year Anniversary: Market Share Dominasi Terus Berlanjut (Market)
+
+---
+
+### RINGKASAN
+
+Total Events: 15
+
+Founding: 1
+Funding: 1
+Launch: 2
+Technology: 0
+Governance: 2
+Security: 2
+Legal: 0
+Regulation: 0
+Partnership: 0
+Integration: 0
+Token: 1
+Market: 3
+Organization: 0
+Infrastructure: 0
+Community: 2
+Product: 1
+Ecosystem: 0
+Other: 0
+
+---
+
+### Open Threads
+
+- Tanggal pasti pendirian Blur Labs, Inc. (hanya tahun 2022 yang diketahui, tanpa bulan/tanggal spesifik dari filing Delaware resmi)
+- Tanggal deployment kontrak token BLUR on-chain vs announcement TGE (perbedaan 1-2 hari antara Etherscan dan blog resmi perlu direkonsiliasi)
+- Detail alokasi tokenomics resmi persen per kategori (community, team, investor, treasury) dari sumber primer (blog/whitepaper) vs data on-chain — sering tidak cocok
+- Status kepemilikan kontrak (ownership/admin keys) saat ini: apakah Blur Multisig sudah menyerahkan kontrol penuh ke Blur DAO via timelock atau masih memegang admin key kritis
+- Entity legal terpisah untuk Blend (apakah di bawah Blur Labs Inc yang sama atau entity baru) belum dikonfirmasi
+- Detail investor seed/private round selain Paradigm dan Variant Fund (termasuk alokasi token per investor) tidak diungkapkan resmi
+- Komposisi tim inti (core team) di luar 3 founder pseudonim (jumlah karyawan, peran, lokasi) tidak tersedia publik
+- Keterlibatan market maker (Wintermute, GSR) apakah mencakup token loan/option agreement standar industri tidak diverifikasi on-chain
+- Tanggal pasti mulai dan berakhirnya Season 2 dan Season 3 insentif (hanya bulan yang diketahui dari announcements Discord/blog)
+- Jumlah proposal governance total yang telah dilewatkan/gagal sejak DAO formation (butuh query Snapshot/on-chain untuk angka pasti)

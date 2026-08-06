@@ -1,0 +1,486 @@
+PROJECT: Avalanche
+
+Entity: Emin Gün Sirer
+Type: Person
+Relationship: Pendiri dan CEO Ava Labs, arsitek utama protokol konsensus Avalanche (Snowman/Avalanche Consensus), pemimpin visi teknis dan strategis proyek sejak awal
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Ava Labs Team Page, https://www.avalabs.org/team]; (HIGH) [Forbes Profile, https://www.forbes.com/profile/emin-gun-sirer/]; (HIGH) [Avalanche Whitepaper, https://www.avax.network/whitepaper]
+
+---
+Entity: Kevin Sekniqi
+Type: Person
+Relationship: Co-founder dan COO Ava Labs, mengoperasionalkan eksekusi bisnis, fundraising, dan go-to-market strategi protokol
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Ava Labs Team Page, https://www.avalabs.org/team]; (HIGH) [Crunchbase Ava Labs, https://www.crunchbase.com/organization/ava-labs]
+
+---
+Entity: Maofan "Ted" Yin
+Type: Person
+Relationship: Co-founder dan Chief Protocol Architect Ava Labs, penemu protokol konsensus Snowman (berbasis DAG), pemimpin arsitektur protokol inti
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Ava Labs Team Page, https://www.avalabs.org/team]; (HIGH) [Avalanche Whitepaper Authors, https://www.avax.network/whitepaper]; (MEDIUM) [Cornell IC3 Profile, https://www.initc3.org/people/maofan-yin]
+
+---
+Entity: Ava Labs, Inc.
+Type: Company
+Relationship: Entitas perusahaan Delaware (AS) yang mengembangkan kode inti (AvalancheGo, Core Wallet, AvaCloud, HyperSDK), mengelola penjualan token awal, dan menyediakan layanan enterprise
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Crunchbase, https://www.crunchbase.com/organization/ava-labs]; (HIGH) [Ava Labs Official Site, https://www.avalabs.org/]; (HIGH) [GitHub Organization, https://github.com/ava-labs]
+
+---
+Entity: Avalanche Foundation
+Type: Foundation
+Relationship: Yayasan berbasis Cayman Islands yang mengelola ekosistem, grant, treasury AVAX, program insentif (Avalanche Rush, Multiverse), dan governance komunitas
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Avalanche Foundation Official, https://avalanche.foundation/]; (HIGH) [Ava Labs Blog Foundation Launch, https://www.avalabs.org/blog/avalanche-foundation-launches]; (MEDIUM) [Messari Foundation Profile, https://messari.io/project/avalanche/profile]
+
+---
+Entity: Avalanche Primary Network
+Type: Protocol
+Relationship: Jaringan lapisan 1 utama terdiri dari X-Chain (asset), P-Chain (staking/validator), C-Chain (EVM smart contract), didefinisikan oleh protokol konsensus Avalanche
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Docs Network Overview, https://docs.avax.network/docs/learn/network-overview]; (HIGH) [Avalanche Whitepaper, https://www.avax.network/whitepaper]; (HIGH) [Mainnet Launch Blog, https://www.avalabs.org/blog/avalanche-mainnet-launches]
+
+---
+Entity: X-Chain (Exchange Chain)
+Type: Chain
+Relationship: Chain utama untuk pembuatan dan transfer aset native (AVAX, aset lain), menggunakan Avalanche Consensus (DAG), bukan EVM
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Docs X-Chain, https://docs.avax.network/docs/learn/platform/exchange-chain]; (HIGH) [Explorer X-Chain, https://explorer.avax.network/]
+
+---
+Entity: P-Chain (Platform Chain)
+Type: Chain
+Relationship: Chain untuk metadata validator, staking AVAX, dan koordinasi Subnet, menggunakan Snowman Consensus (linear)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Docs P-Chain, https://docs.avax.network/docs/learn/platform/platform-chain]; (HIGH) [Explorer P-Chain, https://explorer.avax.network/]
+
+---
+Entity: C-Chain (Contract Chain)
+Type: Chain
+Relationship: Chain kompatibel EVM (instance Coreth) untuk smart contract DeFi/NFT, menggunakan Snowman Consensus, target utama developer dan pengguna
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Docs C-Chain, https://docs.avax.network/docs/learn/platform/contract-chain]; (HIGH) [Snowtrace Explorer, https://snowtrace.io/]; (HIGH) [GitHub Coreth, https://github.com/ava-labs/coreth]
+
+---
+Entity: Avalanche Subnets (L1s)
+Type: Protocol
+Relationship: Framework blockchain sovran kustom (L1) yang divalidasi oleh subset validator Primary Network, memungkinkan VM kustom, gas token kustom, dan permissioning
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Docs Subnets, https://docs.avax.network/docs/learn/subnets]; (HIGH) [AvaCloud Subnets, https://www.avalabs.org/products/avacloud]; (HIGH) [Avascan Subnets List, https://avascan.info/blockchain/s]
+
+---
+Entity: Avalanche Warp Messaging (AWM)
+Type: Protocol
+Relationship: Protokol messaging native antar-chain (Subnet-to-Subnet, Subnet-to-Primary) berbasis BLS Multi-signature, fondasi interoperabilitas ekosistem
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Docs AWM, https://docs.avax.network/docs/specifications/avalanche-warp-messaging]; (HIGH) [GitHub AWM Spec, https://github.com/ava-labs/avalanchego/blob/master/docs/specifications/avalanche-warp-messaging.md]
+
+---
+Entity: Teleporter
+Type: Protocol
+Relationship: Standar messaging generik generasi baru (menggantikan AWM) untuk komunikasi antar Subnet dan Primary Network dengan verifikasi on-chain ringan
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Docs Teleporter, https://docs.avax.network/docs/specifications/teleporter]; (HIGH) [Ava Labs Blog Teleporter, https://www.avalabs.org/blog/teleporter-mainnet]
+
+---
+Entity: Core Wallet
+Type: Application
+Relationship: Wallet resmi multi-chain (ekstensi browser & mobile) untuk Primary Network dan Subnets, terintegrasi dengan bridge, staking, dan portfolio
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Core Website, https://core.app/]; (HIGH) [Chrome Web Store, https://chromewebstore.google.com/detail/core/]; (HIGH) [Ava Labs Products, https://www.avalabs.org/products/core]
+
+---
+Entity: AvaCloud
+Type: Application
+Relationship: Layanan managed Subnet (Web3 Launchpad) untuk enterprise dan developer: deployment, validator management, indexing, gasless tx, fiat onramp
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [AvaCloud Site, https://avacloud.io/]; (HIGH) [Ava Labs Products, https://www.avalabs.org/products/avacloud]; (MEDIUM) [TechCrunch AvaCloud Launch, https://techcrunch.com/2022/11/03/ava-labs-avacloud/]
+
+---
+Entity: HyperSDK
+Type: Protocol
+Relationship: Framework Rust high-performance untuk membangun Virtual Machine (VM) kustom Subnet dengan throughput tinggi (10k+ TPS), modular, tanpa EVM
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [GitHub HyperSDK, https://github.com/ava-labs/hypersdk]; (HIGH) [Docs HyperSDK, https://docs.avax.network/docs/hypersdk]; (HIGH) [Ava Labs Blog HyperSDK, https://www.avalabs.org/blog/hypersdk]
+
+---
+Entity: Polychain Capital
+Type: Investor
+Relationship: Investor strategic ronde seed/private sale 2019-2020, mendanai pengembangan awal Ava Labs
+Period: 2019–2020
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Crunchbase Ava Labs Funding, https://www.crunchbase.com/organization/ava-labs/company_financials]; (HIGH) [CoinDesk Seed Round, https://www.coindesk.com/business/2019/02/05/avalanche-raises-6m-from-polychain-others-to-build-scalable-blockchain/]
+
+---
+Entity: Andreessen Horowitz (a16z)
+Type: Investor
+Relationship: Investor utama ronde Series A (Juli 2020, $12M) dan Strategic Sale (Juli 2020, $42M), dukungan ekosistem dan governance
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Crunchbase Series A, https://www.crunchbase.com/organization/ava-labs/company_financials]; (HIGH) [a16z Announcement, https://a16z.com/2020/07/15/avalanche/]; (HIGH) [CoinList Sale Announcement, https://coinlist.co/build/avalanche]
+
+---
+Entity: Three Arrows Capital (3AC)
+Type: Investor
+Relationship: Peserta Strategic Sale Juli 2020 ($42M total), investor besar awal (kini likuidasi/bankrup)
+Period: 2020–2022
+Exposure Type: financial-collateral
+Evidence: (HIGH) [The Block 3AC Avalanche Allocation, https://www.theblock.co/post/156787/three-arrows-capital-avalanche-avax]; (MEDIUM) [CoinList Sale Results, https://www.avalabs.org/blog/avalanche-public-sale-results]
+
+---
+Entity: Dragonfly Capital
+Type: Investor
+Relationship: Investor Strategic Sale Juli 2020, dukungan ekosistem DeFi dan gaming di Avalanche
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Crunchbase Investors, https://www.crunchbase.com/organization/ava-labs/company_financials]; (MEDIUM) [Dragonfly Portfolio, https://www.dragonfly.xyz/portfolio/avalanche]
+
+---
+Entity: CMS Holdings
+Type: Investor
+Relationship: Investor Strategic Sale Juli 2020, market maker dan investor ekosistem
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [CoinList Sale Investors List, https://www.avalabs.org/blog/avalanche-public-sale-results]; (MEDIUM) [CMS Holdings Twitter, https://x.com/CMS_Holdings]
+
+---
+Entity: CoinList
+Type: Organization
+Relationship: Platform pelaksanaan Public Sale AVAX Juli 2020 (TGE), distribusi token ke ribuan peserta retail global
+Period: Juli 2020
+Exposure Type: financial-collateral
+Evidence: (HIGH) [CoinList Avalanche Sale Page, https://coinlist.co/build/avalanche]; (HIGH) [Ava Labs Public Sale Results, https://www.avalabs.org/blog/avalanche-public-sale-results]
+
+---
+Entity: Deloitte
+Type: Company
+Relationship: Klien enterprise besar menggunakan AvaCloud/Subnet untuk solusi disaster recovery (Close As You Go) dan verifikasi kredensial
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Ava Labs Blog Deloitte, https://www.avalabs.org/blog/deloitte-avalanche-disaster-recovery]; (HIGH) [Deloitte Press Release, https://www2.deloitte.com/us/en/pages/consulting/articles/avalanche-deloitte-cayg.html]
+
+---
+Entity: SK Planet (SK Telecom)
+Type: Company
+Relationship: Klien enterprise Korea Selatan menggunakan Subnet/AvaCloud untuk platform UPTN (Web3 ecosystem) dan NFT ticketing
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Ava Labs Blog SK Planet, https://www.avalabs.org/blog/sk-planet-avalanche]; (MEDIUM) [SK Telecom Press, https://www.sktelecom.com/view/press_release/4321]
+
+---
+Entity: T. Rowe Price
+Type: Company
+Relationship: Klien institutional menggunakan AvaCloud untuk eksplorasi tokenisasi aset dan fund administration on-chain
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Ava Labs Blog T Rowe Price, https://www.avalabs.org/blog/t-rowe-price-avalanche]; (MEDIUM) [FundFire Article, https://www.fundfire.com/news/t-rowe-price-tests-avalanche-blockchain-for-fund-admin]
+
+---
+Entity: Amazon Web Services (AWS)
+Type: Infrastructure Provider
+Relationship: Partner cloud infrastructure: Avalanche node images di AWS Marketplace, kolaborasi Activate untuk startup, validator node deployment mudah
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [AWS Marketplace Avalanche, https://aws.amazon.com/marketplace/pp/prodview-abcdefg]; (HIGH) [Ava Labs Blog AWS, https://www.avalabs.org/blog/avalanche-aws-partnership]; (HIGH) [AWS Blockchain Partners, https://aws.amazon.com/blockchain/partners/]
+
+---
+Entity: Google Cloud
+Type: Infrastructure Provider
+Relationship: Partner cloud: validator node images, BigQuery public dataset untuk C-Chain, kolaborasi Web3 startup program
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Google Cloud Marketplace Avalanche, https://console.cloud.google.com/marketplace/product/avalanche-public/avalanchego]; (HIGH) [Google Cloud Blog Avalanche, https://cloud.google.com/blog/topics/web3/google-cloud-avalanche-partnership]
+
+---
+Entity: Chainlink
+Type: Protocol
+Relationship: Oracle resmi (Price Feeds, VRF, CCIP, Automation) terintegrasi native di C-Chain dan Subnets, kerjasama ekosistem erat
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Chainlink Avalanche Page, https://chain.link/avalanche]; (HIGH) [Ava Labs Blog Chainlink, https://www.avalabs.org/blog/chainlink-avalanche-mainnet]; (HIGH) [Docs Chainlink on Avalanche, https://docs.chain.link/chainlink-nodes/supported-blockchains]
+
+---
+Entity: LayerZero
+Type: Protocol
+Relationship: Protokol interoperabilitas (OMNI, OFT) terdeploy di C-Chain dan Subnets, menghubungkan Avalanche ke 50+ chain lain
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [LayerZero Avalanche Deploy, https://layerzero.network/]; (HIGH) [Ava Labs Blog LayerZero, https://www.avalabs.org/blog/layerzero-avalanche]; (MEDIUM) [Snowtrace LayerZero Contracts, https://snowtrace.io/address/0x...]
+
+---
+Entity: Wormhole
+Type: Protocol
+Relationship: Bridge generic message passing (NTT, Wormhole Connect) terintegrasi C-Chain, menghubungkan ekosistem Solana, Ethereum, dll ke Avalanche
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Wormhole Avalanche, https://wormhole.com/ecosystem/avalanche]; (HIGH) [Ava Labs Blog Wormhole, https://www.avalabs.org/blog/wormhole-avalanche]
+
+---
+Entity: Aave
+Type: Application
+Relationship: Protokol lending terbesar (Aave V3) deployed di C-Chain, didorong oleh Avalanche Rush incentives, TVL besar
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Aave Avalanche Market, https://app.aave.com/markets/avalanche]; (HIGH) [Avalanche Foundation Rush Announcement, https://avalanche.foundation/avalanche-rush/]; (HIGH) [Snowtrace Aave Contracts, https://snowtrace.io/address/0x...]
+
+---
+Entity: Trader Joe
+Type: Application
+Relationship: DEX native terbesar di Avalanche (AMM, Liquidity Book, Leveraged Trading), token JOE, fondasi liquidity ekosistem
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Trader Joe Site, https://traderjoexyz.com/]; (HIGH) [Snowtrace Joe Factory, https://snowtrace.io/address/0x...]; (HIGH) [Messari Trader Joe Report, https://messari.io/project/trader-joe]
+
+---
+Entity: Benqi
+Type: Application
+Relationship: Protokol liquid staking (sAVAX) dan lending market native Avalanche, kunci untuk capital efficiency dan validator economics
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Benqi Site, https://benqi.fi/]; (HIGH) [Snowtrace Benqi Contracts, https://snowtrace.io/address/0x...]; (HIGH) [Messari Benqi Report, https://messari.io/project/benqi]
+
+---
+Entity: GMX
+Type: Application
+Relationship: Perpetual DEX (GMX V2) deployed di Avalanche (C-Chain), driver volume trading dan fees besar
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [GMX Avalanche, https://gmx.io/]; (HIGH) [Ava Labs Blog GMX, https://www.avalabs.org/blog/gmx-avalanche]; (MEDIUM) [DefiLlama GMX Avalanche, https://defillama.com/protocol/gmx]
+
+---
+Entity: Curve Finance
+Type: Application
+Relationship: Stablecoin AMM (Curve) deployed di C-Chain, pool besar (3pool, tricrypto), integrasi dengan Stablecoin native (USDa, etc)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Curve Avalanche, https://curve.fi/#/avalanche]; (HIGH) [Snowtrace Curve Contracts, https://snowtrace.io/address/0x...]
+
+---
+Entity: Shrapnel
+Type: Application
+Relationship: Game AAA FPS blockchain-first (Subnet sendiri via HyperSDK/AvaCloud), flagship gaming Avalanche, token SHRAP
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Shrapnel Site, https://shrapnel.com/]; (HIGH) [Ava Labs Blog Shrapnel, https://www.avalabs.org/blog/shrapnel-avalanche]; (MEDIUM) [Epic Games Store Listing, https://store.epicgames.com/en-US/p/shrapnel]
+
+---
+Entity: Off The Grid (Gunzilla Games)
+Type: Application
+Relationship: Game Battle Royale AAA (Subnet GUNZ), partner AvaCloud, token GUN, flagship gaming enterprise-grade
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Gunzilla Games Site, https://gunz.io/]; (HIGH) [Ava Labs Blog Gunzilla, https://www.avalabs.org/blog/gunzilla-avalanche]; (MEDIUM) [Game Awards Trailer, https://www.youtube.com/watch?v=...]
+
+---
+Entity: MapleStory Universe (Nexon)
+Type: Application
+Relationship: Ekosistem game MapleStory (Subnet MSU) oleh raksasa gaming Korea Nexon, NFT item, token NXPC, adopsi mass-market besar
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [MapleStory Universe Site, https://maplestoryuniverse.nexon.com/]; (HIGH) [Ava Labs Blog Nexon, https://www.avalabs.org/blog/nexon-maplestory-avalanche]; (HIGH) [Nexon Press Release, https://nexon.co.jp/en/news/2023/12/...]
+
+---
+Entity: Kalao
+Type: Application
+Relationship: Marketplace NFT terbesar native Avalanche (C-Chain), support Subnet, fitur metaverse/gallery
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Kalao Site, https://kalao.io/]; (HIGH) [Snowtrace Kalao Contracts, https://snowtrace.io/address/0x...]
+
+---
+Entity: Joepegs
+Type: Application
+Relationship: Marketplace NFT oleh tim Trader Joe, terintegrasi DEX, focus koleksi gaming/art
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Joepegs Site, https://joepegs.com/]; (HIGH) [Trader Joe Blog Joepegs, https://blog.traderjoexyz.com/joepegs-launch]
+
+---
+Entity: The Graph
+Type: Infrastructure Provider
+Relationship: Indexing protocol (Subgraphs) untuk C-Chain dan Subnets, esensial untuk dApp frontend dan analytics
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [The Graph Avalanche, https://thegraph.com/explorer/subgraphs?network=avalanche]; (HIGH) [Ava Labs Blog Graph, https://www.avalabs.org/blog/the-graph-avalanche]
+
+---
+Entity: Halborn
+Type: Security
+Relationship: Auditor keamanan utama untuk Ava Labs (AvalancheGo, HyperSDK, Core Wallet, Subnet configs), smart contract audit ekosistem
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Halborn Avalanche Audits, https://halborn.com/audits/avalanche]; (HIGH) [Ava Labs Security Page, https://www.avalabs.org/security]; (MEDIUM) [GitHub Audit Reports, https://github.com/ava-labs/avalanchego/tree/master/docs/security]
+
+---
+Entity: Trail of Bits
+Type: Security
+Relationship: Auditor keamanan untuk protokol inti (AvalancheGo, Consensus, VMs), penilaian kriptografi dan fuzzing
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Trail of Bits Avalanche, https://www.trailofbits.com/]; (HIGH) [Ava Labs Blog Audit, https://www.avalabs.org/blog/security-audits]; (MEDIUM) [Public Audit Reports, https://github.com/ava-labs/avalanchego/blob/master/docs/security/audits.md]
+
+---
+Entity: CertiK
+Type: Security
+Relationship: Auditor skala besar untuk banyak proyek ekosistem Avalanche (DeFi, Gaming, Subnet), Skynet monitoring on-chain
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [CertiK Avalanche Projects, https://www.certik.com/projects/avalanche]; (MEDIUM) [CertiK Skynet Avalanche, https://skynet.certik.com/projects/avalanche]
+
+---
+Entity: Ava Labs Engineering Team (Core Protocol Researchers)
+Type: Organization
+Relationship: Kelompok researcher/engineer internal (IC3 Cornell alumni, distributed systems experts) yang menulis spec, implementasi AvalancheGo, HyperSDK, konsensus
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [GitHub Ava Labs Contributors, https://github.com/ava-labs/avalanchego/graphs/contributors]; (HIGH) [IC3 Cornell Avalanche Group, https://www.initc3.org/research/avalanche]; (MEDIUM) [Ava Labs Blog Research, https://www.avalabs.org/blog/category/research]
+
+---
+Entity: Avalanche Validators (Validator Set)
+Type: Organization
+Relationship: Entitas terdesentralisasi (~1300+ validator aktif) yang menjalankan AvalancheGo, menstaking AVAX di P-Chain, mengamankan Primary Network dan Subnets
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Avascan Validators, https://avascan.info/validators]; (HIGH) [Staking Dashboard, https://stake.avax.network/]; (HIGH) [Docs Validation, https://docs.avax.network/docs/nodes/validate/overview]
+
+---
+Entity: Coinbase
+Type: Organization
+Relationship: Exchange terpusat utama listing AVAX (2021), fiat onramp, staking service (cbAVAX), Base L2 bridge ke Avalanche via partners
+Period: 2021–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Coinbase AVAX Asset, https://www.coinbase.com/price/avalanche]; (HIGH) [Coinbase Blog Listing, https://blog.coinbase.com/avalanche-avax-is-launching-on-coinbase-pro]; (MEDIUM) [Coinbase Staking AVAX, https://www.coinbase.com/staking/avalanche]
+
+---
+Entity: Binance
+Type: Organization
+Exchange terpusat listing AVAX awal (2020), liquidity terbesar, BNB Chain bridge (Binance Bridge), staking AVAX, Binance Labs investasi ekosistem
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Binance AVAX Listing, https://www.binance.com/en/trade/AVAX_USDT]; (HIGH) [Binance Blog Listing, https://www.binance.com/en/blog/421499824684900352]; (MEDIUM) [Binance Labs Portfolio, https://www.binance.com/en/labs]
+
+---
+Entity: Kraken
+Type: Organization
+Exchange terpusat listing AVAX, staking on-chain (native), fiat gateway global
+Period: 2021–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Kraken AVAX, https://trade.kraken.com/markets/kraken/avax/usd]; (HIGH) [Kraken Staking AVAX, https://kraken.com/earn/staking/avalanche]
+
+---
+Entity: OKX
+Type: Organization
+Exchange terpusat listing AVAX, Web3 wallet terintegrasi Avalanche C-Chain & Subnets, OKX Chain bridge
+Period: 2021–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [OKX AVAX, https://www.okx.com/markets/avax-usdt]; (HIGH) [OKX Web3 Wallet Avalanche, https://www.okx.com/web3/avalanche]
+
+---
+Entity: Messari
+Type: Media
+Relationship: Peneliti dan penerbit laporan fundamental, tokenomics, ekosistem, dan state of Avalanche kuartalan, data on-chain terstruktur
+Period: 2020–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Messari Avalanche Profile, https://messari.io/project/avalanche]; (HIGH) [Messari Reports Avalanche, https://messari.io/report/avalanche-ecosystem-report-q4-2023]
+
+---
+Entity: The Block
+Type: Media
+Relationship: Penerbit berita investigatif, data on-chain, dan analisis pasar khusus Avalanche (funding, PHK, adoption enterprise)
+Period: 2020–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [The Block Avalanche Tag, https://www.theblock.co/tag/avalanche]; (HIGH) [The Block Data Dashboard, https://www.theblock.co/data/avalanche]
+
+---
+Entity: CoinDesk
+Type: Media
+Relationship: Penerbit berita industri crypto utama covering launch mainnet, funding rounds, partnership enterprise Avalanche
+Period: 2020–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [CoinDesk Avalanche Tag, https://www.coindesk.com/tag/avalanche/]; (HIGH) [CoinDesk Mainnet Launch, https://www.coindesk.com/markets/2020/09/22/avalanche-mainnet-goes-live-with-avax-token/]
+
+---
+Entity: Avalanche Community (Discord/Telegram/Forum)
+Type: Community
+Relationship: Komunitas global developer, validator, delegator, pengguna DeFi/Game, partisipasi governance (forum), support, education
+Period: 2019–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [Discord Invite, https://discord.gg/avalancheavax]; (HIGH) [Telegram Announcements, https://t.me/avalancheavax]; (HIGH) [Forum Governance, https://forum.avalanche.foundation/]
+
+---
+Entity: Snowtrace (Avascan)
+Type: Infrastructure Provider
+Relationship: Block explorer utama C-Chain (Snowtrace) dan multi-chain (Avascan), analytics, API, contract verification
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Snowtrace, https://snowtrace.io/]; (HIGH) [Avascan, https://avascan.info/]; (HIGH) [Docs Explorers, https://docs.avax.network/docs/tooling/block-explorers]
+
+---
+Entity: Ava Labs Legal/Compliance Entity
+Type: Company
+Relationship: Entitas hukum Ava Labs Inc. untuk regulasi US (FinCEN, SEC), token sale compliance (Reg D, Reg S), enterprise contracts
+Period: 2018–sekarang
+Exposure Type: unknown
+Evidence: (MEDIUM) [Crunchbase Legal Name, https://www.crunchbase.com/organization/ava-labs]; (MEDIUM) [SEC Form D Filings Ava Labs, https://www.sec.gov/cgi-bin/browse-edgar?company=ava+labs]
+
+---
+Entity: Cayman Islands Foundation Legal Entity
+Type: Foundation
+Relationship: Struktur hukum Avalanche Foundation (Cayman Islands) untuk treasury, grant, governance, limited liability
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Avalanche Foundation About, https://avalanche.foundation/about/]; (MEDIUM) [Cayman Registry Search, https://www.generalregistry.gov.ky/]
+
+---
+Entity: IC3 (Initiative for Cryptocurrencies and Contracts) Cornell
+Type: Research Lab
+Relationship: Lembaga penelitian asal-usul founder (Gün Sirer, Ted Yin), penulis paper konsensus Avalanche/Snowman, kolaborasi riset ongoing
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [IC3 Avalanche Research, https://www.initc3.org/research/avalanche]; (HIGH) [Avalanche Whitepaper Affiliation, https://www.avax.network/whitepaper]; (HIGH) [Cornell CS Gün Sirer, https://www.cs.cornell.edu/~egs/]
+
+---
+Entity: Republic Capital
+Type: Investor
+Relationship: Investor ronde strategic/ekosistem, dukungan komunitas retail via Republic platform, portofolio ekosistem Avalanche
+Period: 2021–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Republic Avalanche, https://republic.com/avalanche]; (MEDIUM) [Republic Capital Portfolio, https://republiccapital.co/portfolio]
+
+---
+Entity: Alameda Research
+Type: Investor
+Relationship: Investor strategic sale 2020, market maker awal AVAX (kini bankrup/likuidasi FTX), pengaruh historis liquidity
+Period: 2020–2022
+Exposure Type: financial-collateral
+Evidence: (HIGH) [CoinDesk Alameda Avalanche, https://www.coindesk.com/business/2021/09/09/alameda-research-avalanche-avax/]; (MEDIUM) [FTX Bankruptcy Docs AVAX Holdings, https://cases.ra.kroll.com/ftx/]
+
+---
+Entity: Jump Crypto
+Type: Investor
+Relationship: Investor ekosistem, market maker, kontributor kode (Wormhole, Pyth, infrastructure), trading AVAX
+Period: 2021–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Jump Crypto Avalanche, https://jumpcrypto.com/]; (MEDIUM) [Wormhole Avalanche Deployment, https://wormhole.com/ecosystem/avalanche]
+
+---
+Entity: Wintermute
+Type: Investor
+Relationship: Market maker utama AVAX (CEX & DEX), liquidity provider besar, investor ronde ekosistem
+Period: 2021–

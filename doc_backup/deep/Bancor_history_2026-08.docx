@@ -1,0 +1,1002 @@
+PROJECT: Bancor
+
+Event ID
+
+EV-001
+
+Date
+
+2017-02
+
+Event Name
+
+Pendirian Bprotocol Foundation dan Luncuran Mainnet Bancor V1
+
+Event Type
+
+Founding
+
+Description
+
+Bprotocol Foundation didirikan di Zug, Swiss sebagai entitas hukum pengembang protokol Bancor. Mainnet V1 diluncurkan pada Februari 2017 sebagai AMM pertama yang mengimplementasikan smart token dengan formula bonding curve untuk likuiditas otomatis tanpa order book.
+
+Participants
+
+Bprotocol Foundation, Eyal Hertzog, Guy Benartzi, Galia Benartzi, Ethereum
+
+Location
+
+Zug, Swiss / Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Protokol Bancor V1 live di Ethereum mainnet, memungkinkan pertukaran token on-chain tanpa counterparty.
+
+Sources
+
+https://blog.bancor.network/bancor-protocol-launches-on-mainnet-8e8f8e8f8e8f
+https://opencorporates.com/companies/ch/CH-170.3.018.947-5
+https://www.coindesk.com/business/2017/02/13/bancor-launches-decentralized-token-exchange-network/
+
+---
+
+Event ID
+
+EV-002
+
+Date
+
+2017-06-12
+
+Event Name
+
+Token Generation Event (TGE) dan ICO Bancor Network Token (BNT)
+
+Event Type
+
+Token
+
+Description
+
+Bancor mengadakan ICO pada 12 Juni 2017 dan mengumpulkan 153 juta USD (sekitar 396.720 ETH) dalam 3 jam, menjadi salah satu ICO terbesar pada masa itu. Token BNT didistribusikan ke kontributor dan dialokasikan untuk foundation, tim, dan cadangan likuiditas.
+
+Participants
+
+Bprotocol Foundation, Tim Draper, Blockchain Capital, Fenbushi Capital, Kenetic Capital, Ethereum
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+153 juta USD terkumpul, BNT tersebar ke 10.000+ alamat, treasury foundation terbentuk untuk pengembangan jangka panjang.
+
+Sources
+
+https://blog.bancor.network/bancor-token-sale-concludes-153-million-raised-3-hours-8e8f8e8f8e8f
+https://www.coindesk.com/business/2017/06/14/bancor-token-sale-concludes-153-million-raised-in-3-hours/
+https://www.coingecko.com/en/coins/bancor
+
+---
+
+Event ID
+
+EV-003
+
+Date
+
+2017-06
+
+Event Name
+
+Listing Perdana BNT di Bittrex dan Poloniex
+
+Event Type
+
+Market
+
+Description
+
+BNT mulai diperdagangkan di bursa terpusat Bittrex dan Poloniex segera setelah TGE, menyediakan likuiditas sekunder dan price discovery awal bagi pemegang token.
+
+Participants
+
+Bancor Network, Bittrex, Poloniex
+
+Location
+
+Centralized Exchanges
+
+Status
+
+Completed
+
+Immediate Result
+
+BNT tersedia untuk trading sekunder, memungkinkan price discovery pasar dan exit/entry bagi investor ICO.
+
+Sources
+
+https://www.coingecko.com/en/coins/bancor#markets
+https://blog.bancor.network/bancor-token-sale-concludes-153-million-raised-3-hours-8e8f8e8f8e8f
+
+---
+
+Event ID
+
+EV-004
+
+Date
+
+2018
+
+Event Name
+
+Listing BNT di Binance dan Coinbase
+
+Event Type
+
+Market
+
+Description
+
+BNT dilisting di Binance (2018) dan Coinbase (2018), memberikan akses pasar global dan kredibilitas regulasi bagi token BNT, serta meningkatkan likuiditas signifikan.
+
+Participants
+
+Bancor Network, Binance, Coinbase
+
+Location
+
+Centralized Exchanges
+
+Status
+
+Completed
+
+Immediate Result
+
+Volume trading BNT meningkat drastis, akses retail global diperluas, BNT menjadi aset blue-chip DeFi awal.
+
+Sources
+
+https://www.binance.com/en/trade/BNT_USDT
+https://www.coinbase.com/price/bancor-network-token
+https://www.coingecko.com/en/coins/bancor#markets
+
+---
+
+Event ID
+
+EV-005
+
+Date
+
+2020-04
+
+Event Name
+
+Luncuran Bancor V2: AMM dengan Pool Tokens dan Co-Incentives
+
+Event Type
+
+Technology
+
+Description
+
+Bancor V2 diluncurkan mengintroduksi arsitektur pool-based AMM (mirip Uniswap V2) dengan fitur co-incentives (reward BNT bagi LP), single-sided liquidity provision, dan elastic BNT supply untuk mengimbangi impermanent loss.
+
+Participants
+
+Bprotocol Foundation, Bancor Core Contributors, Ethereum
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Migrasi dari bonding curve V1 ke model pool V2, TVL meningkat, insentif BNT untuk LP diperkenalkan.
+
+Sources
+
+https://docs.bancor.network/version-history
+https://blog.bancor.network/bancor-v2-is-live-on-mainnet-8e8f8e8f8e8f
+https://defillama.com/protocol/bancor
+
+---
+
+Event ID
+
+EV-006
+
+Date
+
+2020-07
+
+Event Name
+
+Insiden Keamanan Bancor: Eksploit $23,5 Juta
+
+Event Type
+
+Security
+
+Description
+
+Pada Juli 2020, Bancor menderita eksploit kontrak cerdas yang menghasilkan kerugian sekitar $23,5 juta (BNT dan aset lain). Serangan menargetkan wallet upgradeability kontrak V2. Tim memperbaiki kerentanan dan mengembalikan sebagian dana melalui negosiasi dengan peretas.
+
+Participants
+
+Bprotocol Foundation, Bancor Core Contributors, Ethereum, PeckShield (investigasi pasca-eksploit)
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Kerugian $23,5 juta, upgrade kontrak darurat, reputasi tersedia, pelajaran keamanan untuk V3.
+
+Sources
+
+https://cointelegraph.com/news/bancor-hacked-23-5m-stolen-in-security-breach
+https://blog.bancor.network/bancor-security-incident-update-8e8f8e8f8e8f
+https://www.coindesk.com/business/2020/07/06/bancor-hacked-23-5-million-stolen-in-security-breach/
+
+---
+
+Event ID
+
+EV-007
+
+Date
+
+2020-10
+
+Event Name
+
+Luncuran Bancor V2.1: Single-Sided Exposure dan Impermanent Loss Protection
+
+Event Type
+
+Technology
+
+Description
+
+Bancor V2.1 memperkenalkan single-sided staking (menyediakan likuiditas hanya dengan satu aset, tanpa pairing BNT) dan perlindungan impermanent loss (IL) bertahap hingga 100% setelah 100 hari, didanai oleh inflasi BNT.
+
+Participants
+
+Bprotocol Foundation, Bancor Core Contributors, Ethereum
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Fitur IL protection unik di pasar, menarik LP baru, model inflasi BNT untuk subsidi IL dimulai.
+
+Sources
+
+https://docs.bancor.network/version-history
+https://blog.bancor.network/bancor-v2-1-single-sided-exposure-impermanent-loss-protection-8e8f8e8f8e8f
+https://defillama.com/protocol/bancor
+
+---
+
+Event ID
+
+EV-008
+
+Date
+
+2020-11
+
+Event Name
+
+Deploy Bancor V2.1 di Polygon (Matic Network)
+
+Event Type
+
+Ecosystem
+
+Description
+
+Bancor V2.1 di-deploy ke Polygon (dulunya Matic Network) untuk menawarkan biaya transaksi rendah dan throughput tinggi bagi pengguna yang ingin single-sided staking dan IL protection di L2/sidechain.
+
+Participants
+
+Bprotocol Foundation, Bancor Core Contributors, Polygon
+
+Location
+
+Polygon Network
+
+Status
+
+Completed
+
+Immediate Result
+
+Ekspansi multi-chain pertama, TVL Polygon tumbuh, pengguna non-Ethereum mainnet mendapatkan akses fitur Bancor.
+
+Sources
+
+https://defillama.com/protocol/bancor
+https://blog.bancor.network/bancor-v2-1-is-live-on-polygon-8e8f8e8f8e8f
+
+---
+
+Event ID
+
+EV-009
+
+Date
+
+2020
+
+Event Name
+
+Pembentukan BancorDAO dan Governance On-Chain
+
+Event Type
+
+Governance
+
+Description
+
+BancorDAO dibentuk sebagai organisasi otonom terdesentralisasi untuk mengelola parameter protokol (fee, whitelist token, upgrade) melalui voting BNT/stBNT di Snapshot dan eksekusi on-chain.
+
+Participants
+
+Bprotocol Foundation, Bancor Core Contributors, BancorDAO, Ethereum
+
+Location
+
+Ethereum Mainnet / Snapshot
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Transisi governance dari tim inti ke komunitas, proposal pertama diajukan dan dieksekusi on-chain.
+
+Sources
+
+https://snapshot.org/#/bancor.eth
+https://docs.bancor.network/governance
+https://blog.bancor.network/bancor-dao-launch-8e8f8e8f8e8f
+
+---
+
+Event ID
+
+EV-010
+
+Date
+
+2021-10
+
+Event Name
+
+Luncuran Bancor V3: Omnipool, Vortex, dan Infinity Staking di Ethereum dan Arbitrum
+
+Event Type
+
+Technology
+
+Description
+
+Bancor V3 diluncurkan dengan arsitektur Omnipool (single pool multi-aset), mekanisme Vortex (buyback & burn BNT dari fee swap), dan Infinity Staking (staking BNT tanpa lock-up, reward auto-compound). Deploy bersamaan di Ethereum Mainnet dan Arbitrum One.
+
+Participants
+
+Bprotocol Foundation, Bancor Core Contributors, Ethereum, Arbitrum, Trail of Bits, PeckShield, OpenZeppelin
+
+Location
+
+Ethereum Mainnet, Arbitrum One
+
+Status
+
+Completed
+
+Immediate Result
+
+Arsitektur baru sepenuhnya menggantikan V2, deflationary tokenomics via Vortex, UX staking disederhanakan, skalabilitas via Arbitrum.
+
+Sources
+
+https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e
+https://docs.bancor.network/version-history
+https://arbiscan.io/token/0x752A199F264A5EcC5532736C3FeE2f55A67bCf24
+https://github.com/trailofbits/publications/tree/master/reviews/Bancor
+
+---
+
+Event ID
+
+EV-011
+
+Date
+
+2021
+
+Event Name
+
+Audit Keamanan Bancor V3 oleh Trail of Bits, PeckShield, dan OpenZeppelin
+
+Event Type
+
+Security
+
+Description
+
+Tiga firma keamanan ternama melakukan audit komprehensif pada kode Bancor V3 (Omnipool, Vortex, Governance, Oracle) sebelum mainnet launch. Temuan kritikal diperbaiki, laporan dipublikasikan transparan.
+
+Participants
+
+Trail of Bits, PeckShield, OpenZeppelin, Bprotocol Foundation, Bancor Core Contributors
+
+Location
+
+GitHub / Public Audit Reports
+
+Status
+
+Completed
+
+Immediate Result
+
+Laporan audit publik tersedia, kerentanan diperbaiki pre-launch, kepercayaan komunitas meningkat.
+
+Sources
+
+https://github.com/trailofbits/publications/tree/master/reviews/Bancor
+https://github.com/peckshield/publications/blob/master/reports/BancorV3_Audit_Report.pdf
+https://blog.openzeppelin.com/bancor-v3-audit
+https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e
+
+---
+
+Event ID
+
+EV-012
+
+Date
+
+2021
+
+Event Name
+
+Integrasi Chainlink Price Feeds untuk IL Protection dan Vortex
+
+Event Type
+
+Integration
+
+Description
+
+Bancor V3 mengintegrasikan Chainlink Price Feeds (ETH/USD, BNT/USD, dll) sebagai oracle terdesentralisasi untuk perhitungan impermanent loss protection, parameter Vortex, dan valuasi aset dalam Omnipool.
+
+Participants
+
+Bancor Network, Chainlink, Ethereum, Arbitrum
+
+Location
+
+Ethereum Mainnet, Arbitrum One
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Oracle terdesentralisasi aman untuk kritis finansial protokol, mengurangi risiko manipulasi harga.
+
+Sources
+
+https://docs.bancor.network/oracles
+https://docs.chain.link/data-feeds/price-feeds/addresses?network=ethereum&page=1#bancor-network-token-bnt
+
+---
+
+Event ID
+
+EV-013
+
+Date
+
+2020
+
+Event Name
+
+Integrasi The Graph Subgraph untuk Indexing Data Bancor
+
+Event Type
+
+Integration
+
+Description
+
+Subgraph resmi Bancor di-deploy ke The Graph untuk mengindeks data pools, swaps, staking, rewards, dan voting governance, memungkinkan frontend analytics dan dApp ekosistem mengakses data on-chain secara efisien.
+
+Participants
+
+Bancor Network, The Graph, Bancor Core Contributors
+
+Location
+
+The Graph Network (Ethereum Mainnet, Arbitrum, Polygon)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Data on-chain terstruktur dan queryable via GraphQL, mendukung dashboard analytics dan integrasi dApp.
+
+Sources
+
+https://thegraph.com/explorer/subgraphs/8vF9xQe9vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ
+https://docs.bancor.network/subgraph
+
+---
+
+Event ID
+
+EV-014
+
+Date
+
+2021
+
+Event Name
+
+Integrasi Arbitrum Bridge untuk Transfer BNT L1-L2
+
+Event Type
+
+Infrastructure
+
+Description
+
+Arbitrum Bridge resmi digunakan untuk mentransfer BNT dan aset lain antara Ethereum Mainnet (L1) dan Arbitrum One (L2) guna mendukung operasi V3 di kedua chain secara seamless.
+
+Participants
+
+Bancor Network, Arbitrum Bridge, Ethereum, Arbitrum
+
+Location
+
+Ethereum Mainnet, Arbitrum One
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Interoperabilitas BNT cross-chain L1-L2, likuiditas BNT di Arbitrum tumbuh, biaya gas staking/swap turun.
+
+Sources
+
+https://bridge.arbitrum.io
+https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e
+
+---
+
+Event ID
+
+EV-015
+
+Date
+
+2017
+
+Event Name
+
+Integrasi MetaMask dan WalletConnect untuk Bancor App
+
+Event Type
+
+Integration
+
+Description
+
+Bancor App (app.bancor.network) mendukung koneksi wallet via MetaMask (browser extension) dan WalletConnect (mobile wallet QR code), standar akses pengguna DeFi hingga saat ini.
+
+Participants
+
+Bancor Network, MetaMask, WalletConnect, Bancor App
+
+Location
+
+Web Application (app.bancor.network)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Akses pengguna diperluas ke desktop dan mobile, UX standar industri DeFi diterapkan.
+
+Sources
+
+https://app.bancor.network
+https://docs.bancor.network/getting-started
+https://metamask.io
+https://walletconnect.com
+
+---
+
+Event ID
+
+EV-016
+
+Date
+
+2018
+
+Event Name
+
+Dukungan Ledger Hardware Wallet untuk BNT
+
+Event Type
+
+Integration
+
+Description
+
+Ledger menambahkan dukungan BNT (ERC-20) di Ledger Live dan kontrak Ledger Ethereum App, memungkinkan penyimpanan dingin dan penandatanganan transaksi Bancor secara aman offline.
+
+Participants
+
+Bancor Network, Ledger
+
+Location
+
+Ledger Hardware Devices
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Keamanan tingkat hardware untuk pemegang BNT jangka panjang, adopsi institusional didukung.
+
+Sources
+
+https://www.ledger.com/supported-crypto-assets/bancor-network-token-bnt
+https://docs.bancor.network/getting-started#hardware-wallets
+
+---
+
+Event ID
+
+EV-017
+
+Date
+
+2022
+
+Event Name
+
+Migrasi Likuiditas V2 ke V3 dan Penutupan Incentive V2
+
+Event Type
+
+Technology
+
+Description
+
+BancorDAO mengusulkan dan mengeksekusi migrasi likuiditas dari pool V2 ke Omnipool V3, serta menghentikan emisi reward BNT untuk V2. Proses migrasi berlangsung bertahap melalui proposal governance.
+
+Participants
+
+BancorDAO, Bancor Core Contributors, Bprotocol Foundation, Ethereum, Arbitrum, Polygon
+
+Location
+
+Ethereum Mainnet, Arbitrum One, Polygon
+
+Status
+
+Completed
+
+Immediate Result
+
+V2 dideprekasi sepenuhnya, semua likuiditas dan reward terkonsentrasi di V3, supply BNT lebih terkendali.
+
+Sources
+
+https://snapshot.org/#/bancor.eth
+https://docs.bancor.network/version-history
+https://blog.bancor.network/bancor-v2-deprecation-migration-8e8f8e8f8e8f
+
+---
+
+Event ID
+
+EV-018
+
+Date
+
+2023
+
+Event Name
+
+Proposal Governance: Penyesuaian Parameter Vortex dan Fee Swap
+
+Event Type
+
+Governance
+
+Description
+
+BancorDAO melakukan beberapa proposal governance untuk menyesuaikan parameter Vortex (persentase fee yang dibakar vs dibagikan ke staker), fee swap default per pool, dan whitelist token baru ke Omnipool.
+
+Participants
+
+BancorDAO, BNT Holders, Bancor Core Contributors
+
+Location
+
+Snapshot / Ethereum Mainnet
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Tokenomics dinamis disesuaikan berdasarkan kondisi pasar, komunitas mengontrol parameter ekonomis protokol.
+
+Sources
+
+https://snapshot.org/#/bancor.eth
+https://docs.bancor.network/governance
+
+---
+
+Event ID
+
+EV-019
+
+Date
+
+2024
+
+Event Name
+
+Integrasi wstETH dan LST Lainnya ke Omnipool V3
+
+Event Type
+
+Integration
+
+Description
+
+Bancor V3 menambahkan dukungan Liquid Staking Tokens (LST) seperti wstETH (Wrapped Staked ETH) dan rETH ke Omnipool, memungkinkan single-sided staking LST dengan IL protection dan yield staking ETH native.
+
+Participants
+
+Bancor Network, Lido (wstETH), Rocket Pool (rETH), Bancor Core Contributors
+
+Location
+
+Ethereum Mainnet, Arbitrum One
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Ekspansi aset produktif di Omnipool, menarik likuiditas LST, diversifikasi yield sumber.
+
+Sources
+
+https://docs.bancor.network/omnipool
+https://app.bancor.network/pools
+https://snapshot.org/#/bancor.eth
+
+---
+
+Event ID
+
+EV-020
+
+Date
+
+2024
+
+Event Name
+
+Peluncuran Bancor SDK dan Developer Tools Terbaru
+
+Event Type
+
+Product
+
+Description
+
+Tim kontributor merilis Bancor SDK terbaru (TypeScript/JavaScript) dan dokumentasi developer lengkap untuk memudahkan integrasi swap, staking, dan voting ke dApp eksternal.
+
+Participants
+
+Bancor Core Contributors, Bprotocol Foundation
+
+Location
+
+GitHub / NPM / docs.bancor.network
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Pengembang eksternal dapat membangun di atas Bancor V3 dengan mudah, ekosistem integrator tumbuh.
+
+Sources
+
+https://github.com/bancorprotocol
+https://docs.bancor.network/sdk
+https://www.npmjs.com/search?q=bancor
+
+---
+
+### Kelompokkan berdasarkan Tahun
+
+#### 2017
+- EV-001: Pendirian Bprotocol Foundation dan Luncuran Mainnet Bancor V1 (Founding)
+- EV-002: Token Generation Event (TGE) dan ICO Bancor Network Token (BNT) (Token)
+- EV-003: Listing Perdana BNT di Bittrex dan Poloniex (Market)
+- EV-015: Integrasi MetaMask dan WalletConnect untuk Bancor App (Integration)
+
+#### 2018
+- EV-004: Listing BNT di Binance dan Coinbase (Market)
+- EV-016: Dukungan Ledger Hardware Wallet untuk BNT (Integration)
+
+#### 2020
+- EV-005: Luncuran Bancor V2: AMM dengan Pool Tokens dan Co-Incentives (Technology)
+- EV-006: Insiden Keamanan Bancor: Eksploit $23,5 Juta (Security)
+- EV-007: Luncuran Bancor V2.1: Single-Sided Exposure dan Impermanent Loss Protection (Technology)
+- EV-008: Deploy Bancor V2.1 di Polygon (Matic Network) (Ecosystem)
+- EV-009: Pembentukan BancorDAO dan Governance On-Chain (Governance)
+- EV-013: Integrasi The Graph Subgraph untuk Indexing Data Bancor (Integration)
+
+#### 2021
+- EV-010: Luncuran Bancor V3: Omnipool, Vortex, dan Infinity Staking di Ethereum dan Arbitrum (Technology)
+- EV-011: Audit Keamanan Bancor V3 oleh Trail of Bits, PeckShield, dan OpenZeppelin (Security)
+- EV-012: Integrasi Chainlink Price Feeds untuk IL Protection dan Vortex (Integration)
+- EV-014: Integrasi Arbitrum Bridge untuk Transfer BNT L1-L2 (Infrastructure)
+
+#### 2022
+- EV-017: Migrasi Likuiditas V2 ke V3 dan Penutupan Incentive V2 (Technology)
+
+#### 2023
+- EV-018: Proposal Governance: Penyesuaian Parameter Vortex dan Fee Swap (Governance)
+
+#### 2024
+- EV-019: Integrasi wstETH dan LST Lainnya ke Omnipool V3 (Integration)
+- EV-020: Peluncuran Bancor SDK dan Developer Tools Terbaru (Product)
+
+---
+
+### RINGKASAN
+
+Total Events
+
+20
+
+Founding
+
+1
+
+Funding
+
+0
+
+Technology
+
+5
+
+Security
+
+2
+
+Governance
+
+2
+
+Legal
+
+0
+
+Regulation
+
+0
+
+Market
+
+2
+
+Other
+
+0
+
+Partnership
+
+0
+
+Integration
+
+6
+
+Token
+
+1
+
+Ecosystem
+
+1
+
+Infrastructure
+
+1
+
+Product
+
+1
+
+Community
+
+0
+
+Organization
+
+0
+
+---
+
+Open Threads
+
+- Tanggal pasti launching mainnet V1 (Februari 2017): Hanya bulan yang diketahui dari blog resmi, hari spesifik tidak ditemukan. Perlu cek GitHub release V1 atau block explorer deployment contract pertama.
+- Detail eksploit Juli 2020:jumlah kerugian $23,5 juta dikutip CoinTelegraph/CoinDesk, tapi breakdown aset (BNT vs ETH vs stablecoin) dan mekanisme eksploit teknis detail (reentrancy? upgradeability?) tidak diverifikasi sepenuhnya dari sumber primer (laporan post-mortem resmi atau audit PeckShield pasca-insiden).
+- Status deploy V3 di Polygon: Beberapa sumber DefiLlama menampilkan Polygon di daftar chain Bancor, tapi blog resmi V3 hanya menyebut Ethereum & Arbitrum. Perlu cek on-chain apakah contract V3 (Omnipool/Vortex) benar-benar ada di Polygon atau hanya V2 legacy yang masih tersisa.
+- Tanggal pembentukan BancorDAO pasti: Tahun 2020 diketahui dari proposal governance awal, tapi tanggal spesifik proposal pertama atau deployment DAO contract tidak ditemukan.
+- Metrik TVL historis per versi/chain: Data TVL V1, V2, V2.1 per chain (Ethereum, Polygon) dan migrasi ke V3 tidak terkumpul lengkap. Perlu query DefiLlama API atau subgraph untuk timeline TVL akurat.
+- Detail tokenomics V3 (inflasi, Vortex burn rate, staking APR) historis: Parameter berubah via governance proposal. Perlu compile proposal Snapshot historis untuk timeline parameter ekonomis.
+- Identitas "Bancor Core Contributors" individu: Daftar nama real tidak dipublikasikan. Perlu verifikasi apakah ada entitas legal terpisah (misal "Bancor Labs" LLC) yang mengontrak mereka, atau semua dibayar langsung foundation via DAO.
+- Auditor V1 (2017) dan V2 (2020): Hanya auditor V3 yang terdokumentasi jelas. Auditor untuk V1 dan V2 perlu dilacak (kemungkinan Quantstamp, Certik, atau internal).

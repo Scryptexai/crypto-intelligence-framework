@@ -1,0 +1,591 @@
+PROJECT: AAVE
+
+## Market Category
+
+Primary Category: Decentralized Lending / Liquidity Protocol
+Secondary Category: Stablecoin Infrastructure (GHO), Institutional DeFi (Aave Arc, Aave Horizon), Cross-Chain Infrastructure (Aave V4 Hub-and-Spoke)
+Sector: DeFi
+Sub-sector: Money Market / Lending Protocol
+Sources:
+https://defillama.com/protocol/aave
+https://tokenterminal.com/terminal/projects/aave
+https://aave.com
+
+## Market Position
+
+Project Stage: Mature
+Primary Competitors: Compound, MakerDAO (Spark), Morpho, Euler, Venus, Radiant Capital, Benqi, Gearbox, Notional, Silo Finance
+Market Segment: Blue-chip DeFi lending protocol; largest multi-chain money market by TVL
+Geographic Focus: Global (on-chain); institutional focus via Aave Arc (permissioned) and Aave Horizon (RWA); regulatory engagement via Project Guardian (MAS Singapore)
+Sources:
+https://defillama.com/protocol/aave
+https://tokenterminal.com/terminal/projects/aave
+https://www.theblock.co/post/338483/aave-labs-drops-avara-brand-ethcc
+https://www.aave.org (Phase 2 L16-L17)
+
+## Trading Markets
+
+Exchange: Binance
+Spot: Yes
+Perpetual: Yes
+Futures: Yes
+Options: No
+OTC: Not verified
+Status: Live
+Sources:
+https://www.binance.com/en/trade/AAVE_USDT
+https://www.binance.com/en/futures/AAVEUSDT
+
+Exchange: HTX (Huobi)
+Spot: Yes
+Perpetual: Yes
+Futures: Not verified
+Options: No
+OTC: Not verified
+Status: Live
+Sources:
+https://www.htx.com/trade/aave_usdt
+https://www.htx.com/futures/AAVE_USDT
+
+Exchange: Gate.io
+Spot: Yes
+Perpetual: Yes
+Futures: Not verified
+Options: No
+OTC: Not verified
+Status: Live
+Sources:
+https://www.gate.io/trade/AAVE_USDT
+https://www.gate.io/futures_trade/AAVE_USDT
+
+Exchange: Coinbase
+Spot: Yes
+Perpetual: No
+Futures: No
+Options: No
+OTC: Not verified
+Status: Live
+Sources:
+https://www.coinbase.com/price/aave
+https://pro.coinbase.com/trade/AAVE-USD
+
+Exchange: OKX
+Spot: Yes
+Perpetual: Yes
+Futures: Yes
+Options: No
+OTC: Not verified
+Status: Live
+Sources:
+https://www.okx.com/trade/AAVE-USDT
+https://www.okx.com/futures/AAVE-USDT
+
+Exchange: Bybit
+Spot: Yes
+Perpetual: Yes
+Futures: Yes
+Options: No
+OTC: Not verified
+Status: Live
+Sources:
+https://www.bybit.com/trade/spot/AAVE/USDT
+https://www.bybit.com/trade/usdt/AAVEUSDT
+
+Exchange: KuCoin
+Spot: Yes
+Perpetual: Yes
+Futures: Not verified
+Options: No
+OTC: Not verified
+Status: Live
+Sources:
+https://www.kucoin.com/trade/AAVE-USDT
+https://www.kucoin.com/futures/AAVE_USDT
+
+Exchange: Kraken
+Spot: Yes
+Perpetual: No
+Futures: Not verified
+Options: No
+OTC: Not verified
+Status: Live
+Sources:
+https://trade.kraken.com/markets/kraken/aave/usd
+https://www.kraken.com/learn/what-is-aave-aave
+
+Exchange: Uniswap (DEX)
+Spot: Yes (AMM)
+Perpetual: No
+Futures: No
+Options: No
+OTC: No
+Status: Live
+Sources:
+https://app.uniswap.org/explore/tokens/ethereum/0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9
+
+## Liquidity
+
+Liquidity Source: CEX Order Books
+Major Liquidity Venue: Binance (AAVE/USDT spot & perpetual), OKX, Bybit, HTX
+DEX: Uniswap V3 (Ethereum Mainnet), Uniswap V3 (Arbitrum), Uniswap V3 (Polygon), Balancer, Curve (stkAAVE/AAVE)
+Bridge Liquidity: CCIP-enabled cross-chain via Chainlink; native Aave V4 hub-and-spoke liquidity routing; LayerZero (historical, rsETH exploit 2026)
+Status: Deep liquidity across major CEXs and DeFi venues; ~$1.5B+ 24h combined spot volume (aggregated)
+Sources:
+https://www.coingecko.com/en/coins/aave#markets
+https://defillama.com/protocol/aave
+https://aave.com/docs/aave-v4 (Phase 4)
+https://www.kucoin.com/news/en/aave-details-rseth-bridge-exploit-recovery-timeline-57855 (Phase 3 EV-030)
+
+## Adoption Metrics
+
+Metric Name: TVL (Total Value Locked)
+Value: $22.4B (aggregate across all chains, Aave V3 + V4)
+Date: 2026-07-15
+Sources:
+https://defillama.com/protocol/aave (HIGH)
+https://tokenterminal.com/terminal/projects/aave (MEDIUM)
+
+Metric Name: TVL (Ethereum Mainnet only)
+Value: $14.2B
+Date: 2026-07-15
+Sources:
+https://defillama.com/chain/Ethereum/protocols/aave (HIGH)
+
+Metric Name: Daily Active Users (Unique depositors/borrowers)
+Value: ~45,000 (7-day average across all deployments)
+Date: 2026-07-10
+Sources:
+https://dune.com/aavelabs (MEDIUM)
+https://tokenterminal.com/terminal/projects/aave (MEDIUM)
+
+Metric Name: Daily Transactions (Protocol interactions)
+Value: ~180,000 (7-day average across all chains)
+Date: 2026-07-10
+Sources:
+https://tokenterminal.com/terminal/projects/aave (MEDIUM)
+https://dune.com/aavelabs (MEDIUM)
+
+Metric Name: Total Unique Wallets (Cumulative)
+Value: ~1.2M (cumulative unique addresses interacting with Aave V2/V3/V4)
+Date: 2026-07-15
+Sources:
+https://dune.com/aavelabs (MEDIUM)
+https://aavescan.com (LOW)
+
+Metric Name: Developer Count (Monthly active contributors)
+Value: 120+ (across Aave Labs, BGD Labs, ACI (historical), independent)
+Date: 2026-06
+Sources:
+https://github.com/aave
+https://github.com/aave-dao/aave-v3-origin
+https://github.com/aave/aave-v4
+https://electriccapital.com/developer-report (MEDIUM)
+
+Metric Name: Annualized Protocol Revenue (Fees)
+Value: $773.62M (fees), $103.68M (net revenue to DAO)
+Date: 2026-05-07
+Sources:
+https://investor.wedbush.com (Phase 5)
+https://tokenterminal.com/terminal/projects/aave (HIGH)
+
+Metric Name: Cumulative Protocol Fees (All-time)
+Value: $2.21B
+Date: 2026-06
+Sources:
+https://thedefiant.io (Phase 5)
+https://tokenterminal.com/terminal/projects/aave (HIGH)
+
+Metric Name: GHO Supply (Circulating)
+Value: ~$185M
+Date: 2026-07-15
+Sources:
+https://defillama.com/stablecoins/gho (HIGH)
+https://aave.com/docs/ecosystem/gho (MEDIUM)
+
+Metric Name: stkAAVE Staked (Safety Module)
+Value: ~3.2M AAVE (~$480M at $150/AAVE)
+Date: 2026-07-15
+Sources:
+https://aavescan.com (MEDIUM)
+https://app.aave.com/stake (LOW)
+
+## Market Share
+
+Metric: TVL Share Among Lending Protocols (All Chains)
+Value: ~42% (Aave $22.4B / Total Lending TVL ~$53B)
+Date: 2026-07-15
+Sources:
+https://defillama.com/category/lending (HIGH)
+https://defillama.com/protocol/aave (HIGH)
+
+Metric: TVL Share on Ethereum Mainnet (Lending)
+Value: ~58% (Aave $14.2B / Ethereum Lending TVL ~$24.5B)
+Date: 2026-07-15
+Sources:
+https://defillama.com/chain/Ethereum/category/lending (HIGH)
+
+Metric: Borrow Volume Share (All Chains, 30d)
+Value: ~38%
+Date: 2026-07-15
+Sources:
+https://tokenterminal.com/terminal/projects/aave (MEDIUM)
+
+Metric: Active User Share (Lending Protocols, 30d)
+Value: ~35%
+Date: 2026-07-15
+Sources:
+https://tokenterminal.com/terminal/projects/aave (MEDIUM)
+
+## Competitor Landscape
+
+Competitor: Compound
+Category: Decentralized Lending (Blue-chip)
+Difference: Compound V3 single-asset supply markets; Aave multi-asset pools with isolation modes, flash loans, GHO stablecoin, institutional products (Arc/Horizon), V4 hub-and-spoke
+Market Segment: Ethereum-mainnet focused; migrating to Compound V3; smaller multi-chain footprint
+Sources:
+https://defillama.com/protocol/compound
+https://compound.finance
+
+Competitor: MakerDAO (Spark Protocol)
+Category: Decentralized Lending / CDP + Lending
+Difference: Maker/Spark uses DAI/USDS stablecoin backing, PSM, SparkLend for lending; Aave uses pooled lending with native GHO stablecoin, flash loans, broader multi-chain deployment
+Market Segment: RWA-heavy (Maker); Spark growing on Ethereum/L2s
+Sources:
+https://defillama.com/protocol/makerdao
+https://defillama.com/protocol/spark
+
+Competitor: Morpho
+Category: Decentralized Lending (Peer-to-Pool Optimization)
+Difference: Morpho optimizes supply/borrow rates via peer-to-peer matching on top of pools (Morpho Blue); Aave is native pooled with V4 hub-and-spoke; Morpho newer, faster-growing TVL but smaller absolute
+Market Segment: Rate-optimized lending; growing on Ethereum, Base
+Sources:
+https://defillama.com/protocol/morpho
+https://morpho.org
+
+Competitor: Euler
+Category: Decentralized Lending (Modular, Permissionless)
+Difference: Euler V2 modular vault-based lending with custom risk curves; Aave V4 hub-and-spoke with governance-managed risk; Euler younger, smaller TVL
+Market Segment: Modular lending; Ethereum + L2s
+Sources:
+https://defillama.com/protocol/euler
+https://euler.finance
+
+Competitor: Venus Protocol
+Category: Decentralized Lending (BNB Chain Native)
+Difference: Venus dominant on BNB Chain; Aave multi-chain leader; Venus uses VAI stablecoin; Aave uses GHO
+Market Segment: BNB Chain focused; expanding to other chains
+Sources:
+https://defillama.com/protocol/venus
+https://venus.io
+
+Competitor: Radiant Capital
+Category: Decentralized Lending (Cross-Chain, LayerZero)
+Difference: Radiant built on LayerZero for native cross-chain lending; Aave V4 uses CCIP/hub-and-spoke; Radiant smaller TVL, single protocol instance
+Market Segment: Omnichain lending; Arbitrum, BNB Chain, Ethereum
+Sources:
+https://defillama.com/protocol/radiant
+https://radiant.capital
+
+Competitor: Benqi
+Category: Decentralized Lending (Avalanche Native)
+Difference: Benqi dominant on Avalanche; Aave V3/V4 deployed on Avalanche; Benqi has liquid staking (sAVAX); Aave broader multi-chain
+Market Segment: Avalanche focused
+Sources:
+https://defillama.com/protocol/benqi
+https://benqi.fi
+
+Competitor: Gearbox
+Category: Decentralized Leverage / Credit Account
+Difference: Gearbox provides leverage via credit accounts; Aave provides standard overcollateralized lending; Gearbox composes on top of Aave/others
+Market Segment: Leverage/strategies; Ethereum, Arbitrum
+Sources:
+https://defillama.com/protocol/gearbox
+https://gearbox.fi
+
+Competitor: Notional
+Category: Fixed-Rate Lending
+Difference: Notional specializes in fixed-rate/fixed-term lending via fCash; Aave V3 variable/stable rates, V4 adding fixed-rate via Spokes/Stable Vaults; Notional smaller TVL
+Market Segment: Fixed-rate term lending; Ethereum, Arbitrum, Optimism
+Sources:
+https://defillama.com/protocol/notional
+https://notional.finance
+
+Competitor: Silo Finance
+Category: Isolated Market Lending
+Difference: Silo uses isolated silos per asset (risk isolation); Aave V3 isolation mode + V4 Spokes for isolation; Silo permissionless market creation; Aave governance-managed
+Market Segment: Isolated/permissionless markets; Ethereum, Arbitrum, Optimism, Base
+Sources:
+https://defillama.com/protocol/silo
+https://silo.finance
+
+## Narrative Position
+
+Narrative: Blue-Chip DeFi / Money Market Leader
+Status: Main Narrative
+Evidence: Largest lending TVL across chains; $2.21B cumulative fees; institutional adoption via Arc/Horizon; DAO governance maturity
+Sources:
+https://defillama.com/protocol/aave
+https://tokenterminal.com/terminal/projects/aave
+https://www.coindesk.com/tech/2026/04/13/aave-passes-landmark-vote-ending-months-long-fight-over-who-controls-protocol-revenue/
+
+Narrative: Real World Assets (RWA) / Institutional DeFi
+Status: Main Narrative
+Evidence: Aave Horizon (RWA lending market on v3.3); Aave Arc (permissioned KYC/AML); Project Guardian (MAS Singapore); Kraken white-label V3; Franklin Templeton/VanEck/Ripple mentioned as potential partners
+Sources:
+https://aave.com (Phase 2 L5-L8, L12-L14)
+https://www.aave.org (Phase 2 L16-L17)
+https://coinmarketcap.com (Phase 2 L33-L36)
+https://www.xt.com (Phase 2 L24-L25)
+
+Narrative: Native Stablecoin (GHO)
+Status: Secondary Narrative
+Evidence: GHO live since July 2023; $185M circulating; over-collateralized; revenue-generating for DAO; reduced borrow rates for stkAAVE stakers
+Sources:
+https://defillama.com/stablecoins/gho
+https://www.theblock.co/post/240297/aave-protocol-activates-gho-stablecoin-on-the-ethereum-mainnet (Phase 3 EV-024)
+
+Narrative: Cross-Chain Interoperability / Hub-and-Spoke Architecture
+Status: Main Narrative (V4)
+Evidence: Aave V4 hub-and-spoke with Chainlink CCIP; deployed Ethereum + Avalanche; isolates risk per Spoke; consolidates liquidity in Hubs
+Sources:
+https://aave.com/docs/aave-v4 (Phase 4)
+https://www.kucoin.com/news/en/aave-v4-deploys-to-the-avalanche-network-with-hub-and-spoke-architecture-57916 (Phase 3 EV-032)
+
+Narrative: Security-First Development / Formal Verification
+Status: Secondary Narrative
+Evidence: $1.5M security program; 345 cumulative audit days; Certora formal verification from design; 900+ researchers Sherlock contest; zero critical/high findings
+Sources:
+https://www.aave.com/blog/aave-v4-security-by-design (Phase 4)
+https://www.gate.com (Phase 2 L22-L25)
+
+Narrative: Governance Decentralization / DAO Maturity
+Status: Main Narrative
+Evidence: Aave Will Win proposal passed (75% support, $42.5M + 75k AAVE funding); Aligned Delegates Framework proposed; Orbit Program compensating delegates; Aave Foundation proposed for IP/brand
+Sources:
+https://finance.yahoo.com/news/aave-ends-month-long-wait-for-protocol-control-in-decisive-vote-180000698.html (Phase 3 EV-029)
+https://governance.aave.com (Phase 6)
+https://vote.onaave.com (Phase 2 L17-L22)
+
+Narrative: Modular DeFi / Composable Primitives
+Status: Secondary Narrative
+Evidence: V4 Spokes as modular lending modules; Aave V3.3 for Horizon; Aave Kit (planned developer toolkit); Lens Protocol (social graph, spun out)
+Sources:
+https://aave.com/docs/aave-v4 (Phase 4)
+https://www.gate.com (Phase 2 L9)
+https://www.htx.com (Phase 2 L29-L30)
+
+Narrative: Layer 2 / Multi-Chain Expansion
+Status: Main Narrative (Historical, now mature)
+Evidence: Deployed on 16+ chains (Ethereum, Polygon, Arbitrum, Optimism, Base, Avalanche, BNB, Fantom, Harmony, Gnosis, Scroll, Metis, ZKsync, Linea, Mantle, Plasma); L2Pool optimization
+Sources:
+https://aave.com (Phase 1 L10-L11)
+https://www.htx.com.gl/tokens/aave/ (Phase 1 L17-L19)
+
+## Market Timeline
+
+Date: 2017-11
+Milestone: ETHLend ICO & Platform Launch
+Description: ETHLend raises ~$16.2M via LEND token sale; launches P2P lending platform
+Related Historical Event ID: EV-002
+Sources:
+https://forklog.com/en/what-is-aave/ (Phase 3)
+https://icodrops.com/ethlend/ (Phase 3)
+
+Date: 2018-09-18
+Milestone: Rebrand to Aave
+Description: ETHLend rebrands to Aave; shifts from P2P to liquidity pool model
+Related Historical Event ID: EV-003
+Sources:
+https://in.marketscreener.com/news/latest/ETHLend-Announces-Launch-of-New-Parent-Company-Aave-27274926/ (Phase 3)
+
+Date: 2020-01-08
+Milestone: Aave V1 Mainnet Launch (Ethereum)
+Description: First version of pooled lending protocol live on Ethereum
+Related Historical Event ID: EV-005
+Sources:
+https://twitter.com/AaveAave/status/1214990573356167170 (Phase 3)
+
+Date: 2020-07-29
+Milestone: Aavenomics Announced
+Description: Governance token design, LEND→AAVE migration 100:1, Safety Module, 16M max supply
+Related Historical Event ID: EV-007
+Sources:
+https://www.theblock.co/post/72523/aave-decentralization-token-swap-aavenomics (Phase 3)
+
+Date: 2020-10
+Milestone: AAVE Token TGE & Migration
+Description: LEND→AAVE migration 100:1 completes; AAVE trading begins
+Related Historical Event ID: EV-009
+Sources:
+https://forklog.com/en/what-is-aave/ (Phase 3)
+https://www.htx.com/en-us/support/htx-will-support-the-migration-of-lend-to-aave (Phase 3)
+
+Date: 2020-10-12
+Milestone: Series B Funding ($25M)
+Description: Led by Blockchain Capital with Standard Crypto, Blockchain.com Ventures
+Related Historical Event ID: EV-010
+Sources:
+https://www.htx.com.co/tokens/aave/ (Phase 3)
+
+Date: 2020-12-03
+Milestone: Aave V2 Launch
+Description: aTokens, debt tokenization, credit delegation, batch flash loans, collateral swaps, fixed/variable rates
+Related Historical Event ID: EV-011
+Sources:
+https://medium.com/aave/the-aave-protocol-v2-f06f299cee04 (Phase 3)
+
+Date: 2021-03-31
+Milestone: Polygon Partnership & Deployment
+Description: Aave V2 on Polygon; $40M+ MATIC liquidity mining program
+Related Historical Event ID: EV-013, EV-014
+Sources:
+https://www.coindesk.com/tech/2021/03/31/defi-major-aave-working-with-polygon-to-bypass-ethereum-congestion/ (Phase 3)
+https://polygon.technology/blog/defiforall-kicking-off-l2-defi-summer-with-40-million-usd-in-liquidity-mining-rewards-from-polygon-for-aaves-polygon-markets (Phase 3)
+
+Date: 2021-11
+Milestone: Aave Arc Launch
+Description: Permissioned institutional platform with KYC/AML; Fireblocks as first whitelister
+Related Historical Event ID: EV-017
+Sources:
+https://www.chaindd.net/chaindd/2021/11/18/1376988.html (Phase 3)
+
+Date: 2022-03-16
+Milestone: Aave V3 Multi-Chain Launch (6 Networks)
+Description: V3 launches on Fantom, Avalanche, Harmony, Arbitrum, Optimism, Polygon with cross-chain, isolation mode, efficiency improvements
+Related Historical Event ID: EV-020
+Sources:
+https://twitter.com/AaveAave/status/1504137636105043971 (Phase 3)
+https://finance.yahoo.com/news/aave-launches-souped-v3-fantom-091738544.html (Phase 3)
+
+Date: 2022-12-24
+Milestone: Aave V1 Deactivation
+Description: Governance vote freezes V1 reserves; users can repay/withdraw only
+Related Historical Event ID: EV-021
+Sources:
+https://governance-v2.aave.com/governance/proposal/132/ (Phase 3)
+
+Date: 2023-01-27
+Milestone: Aave V3 Ethereum Mainnet Deployment
+Description: V3 deployed on Ethereum with 7 initial assets
+Related Historical Event ID: EV-022
+Sources:
+https://www.theblock.co/post/203767/aave-set-to-launch-third-version-of-its-crypto-lending-protocol-on-ethereum (Phase 3)
+
+Date: 2023-07-15
+Milestone: GHO Stablecoin Mainnet Launch
+Description: Aave-native over-collateralized stablecoin live on Ethereum
+Related Historical Event ID: EV-024
+Sources:
+https://www.theblock.co/post/240297/aave-protocol-activates-gho-stablecoin-on-the-ethereum-mainnet (Phase 3)
+
+Date: 2025-11-10
+Milestone: Aave V4 Whitepaper Released
+Description: Hub-and-spoke architecture detailed
+Related Historical Event ID: EV-025
+Sources:
+https://bitbulteni.com/aave-v4-whitepaper-138022/ (Phase 3)
+
+Date: 2026-02
+Milestone: Avara Brand Sunset
+Description: Aave Labs discontinues Avara umbrella brand
+Related Historical Event ID: EV-027
+Sources:
+https://www.theblock.co/post/338483/aave-labs-drops-avara-brand-ethcc (Phase 3)
+
+Date: 2026-03-30
+Milestone: Aave V4 Ethereum Mainnet Launch
+Description: Hub-and-spoke live with 3 Hubs (Core, Plus, Prime) and 11 Spokes
+Related Historical Event ID: EV-028
+Sources:
+https://aave.com/changelog (Phase 3)
+https://www.kucoin.com/news/en/aave-v4-launches-on-ethereum-mainnet-with-hub-and-spoke-model-57804 (Phase 3)
+
+Date: 2026-04-12
+Milestone: Aave Will Win Proposal Passes
+Description: 75% support; $42.5M stablecoin + 75k AAVE (48m linear vest) to Aave Labs
+Related Historical Event ID: EV-029
+Sources:
+https://finance.yahoo.com/news/aave-ends-month-long-wait-for-protocol-control-in-decisive-vote-180000698.html (Phase 3)
+https://www.coindesk.com/tech/2026/04/13/aave-passes-landmark-vote-ending-months-long-fight-over-who-controls-protocol-revenue/ (Phase 3)
+
+Date: 2026-05-31
+Milestone: KelpDAO rsETH Bridge Exploit
+Description: LayerZero V2 bridge exploit deposits 116.5k fake rsETH into Aave V3; ~$124-230M bad debt
+Related Historical Event ID: EV-030
+Sources:
+https://www.kucoin.com/news/en/aave-details-rseth-bridge-exploit-recovery-timeline-57855 (Phase 3)
+https://www.coindesk.com/tech/2026/06/01/aave-overhauls-listing-standards-after-230-million-rseth-exploit-exposed-bridge-risks/ (Phase 3)
+
+Date: 2026-06
+Milestone: Collateral Listing Standards Overhaul
+Description: Aave tightens asset onboarding rules post-exploit; bridge risk frameworks
+Related Historical Event ID: EV-031
+Sources:
+https://www.kucoin.com/news/en/aave-tightens-collateral-rules-after-230m-rseth-exploit-via-layerzero-bridge-57850 (Phase 3)
+
+Date: 2026-07-15
+Milestone: Aave V4 Avalanche Deployment
+Description: First multi-chain V4 deployment; 1 Hub + 3 Spokes on Avalanche
+Related Historical Event ID: EV-032
+Sources:
+https://www.kucoin.com/news/en/aave-v4-deploys-to-the-avalanche-network-with-hub-and-spoke-architecture-57916 (Phase 3)
+
+## Official Market Resources
+
+Official Dashboard: https://app.aave.com
+DefiLlama: https://defillama.com/protocol/aave
+CoinGecko: https://www.coingecko.com/en/coins/aave
+CoinMarketCap: https://coinmarketcap.com/currencies/aave/
+Token Terminal: https://tokenterminal.com/terminal/projects/aave
+Messari: https://messari.io/project/aave
+Explorer (Etherscan): https://etherscan.io/token/0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9
+Governance Forum: https://governance.aave.com
+Snapshot Voting: https://snapshot.org/#/aave.eth
+Dune Analytics (Aave Labs): https://dune.com/aavelabs
+Aavescan: https://aavescan.com
+Official Blog: https://aave.com/blog
+Documentation: https://aave.com/docs
+Developer Portal: https://aave.com/build
+
+## Summary
+
+Market Stage: Mature
+Primary Category: Decentralized Lending / Liquidity Protocol
+Competitor Count: 10+ direct lending competitors (Compound, Maker/Spark, Morpho, Euler, Venus, Radiant, Benqi, Gearbox, Notional, Silo)
+Major Narrative: Blue-Chip DeFi Leader; RWA/Institutional DeFi; Cross-Chain Hub-and-Spoke (V4); Native Stablecoin (GHO); Security-First; DAO Governance Maturity
+Trading Availability: Spot on 10+ major CEXs (Binance, Coinbase, Kraken, OKX, Bybit, HTX, Gate.io, KuCoin); Perpetuals on 7+ CEXs; Deep DEX liquidity (Uniswap V3 multi-chain)
+Adoption Metrics Available: TVL ($22.4B aggregate), Daily Users (~45k), Daily Txns (~180k), Cumulative Wallets (~1.2M), Revenue ($773.6M annualized fees), GHO Supply ($185M), stkAAVE Staked (~3.2M AAVE), Developer Count (120+)
+
+## Open Threads
+
+TVL Post-Exploit Recovery: TVL dropped ~$6.6B after rsETH exploit (May 2026); current $22.4B suggests recovery but exact timeline and composition (net new vs. market rebound) not verified from primary source.
+
+Market Share Precision: DefiLlama lending category TVL includes protocols with different architectures (CDP, peer-to-pool, isolated); "lending protocol" share definition varies. Need standardized segment definition.
+
+CEX Volume Aggregation: 24h combined spot volume ~$1.5B cited from aggregated sources; no single verified real-time feed covering all venues.
+
+Daily Active Users Definition: "Unique depositors/borrowers" vs "unique transacting addresses" vs "unique wallet connections" — methodology differs across Dune dashboards, Token Terminal, and internal Aave analytics.
+
+GHO Adoption Metrics: GHO supply $185M reported; but borrow volume, peg stability deviations, and minter distribution (Facilitators vs. Aave V3) not fully documented in verified public dashboards.
+
+Competitor TVL Comparisons: Morpho TVL growing rapidly (~$3.5B per DefiLlama July 2026); Euler V2, Silo, Radiant gaining share. Relative growth rates vs. Aave not quantified in verified comparative analysis.
+
+Institutional Adoption Quantification: Aave Horizon TVL, Arc participant count, Kraken white-label volume — specific numbers not publicly disclosed in verified format.
+
+Aave V4 Adoption Rate: V4 launched March 2026 (Ethereum) and July 2026 (Avalanche); migration from V3, Spoke utilization rates, Hub capital efficiency metrics not yet available in public dashboards.
+
+Bad Debt Resolution: rsETH exploit bad debt ($124-230M range) resolution across Kelp, LayerZero, Aave DAO — final allocation and recovery timeline not concluded.
+
+Token Buyback Mechanics: $50M/year buyback program active; but whether tokens are burned, sent to treasury, or recycled as incentives — conflicting reports (Phase 6 Open Threads). Exact mechanism impacts supply dynamics.
+
+Valuation Metrics: No traditional valuation (P/E, P/S) for protocol; Token Terminal provides P/F (Price/Fees) but methodology for "net revenue to token holders" vs "DAO revenue" differs.
+
+Geographic User Distribution: On-chain protocol; no KYC for main markets. Geographic adoption (US vs. EU vs. Asia vs. LatAm) inferred from chain deployment density, not measured.
+
+Developer Retention: 120+ monthly active contributors reported; but breakdown between Aave Labs employees, BGD Labs, grant recipients, and independent contributors not verified.
+
+Security Budget Sustainability: $1.5M V4 security program funded; ongoing bug bounty, formal verification, audit costs for future upgrades — long-term funding source (DAO grants vs. protocol revenue allocation) not documented.
+
+Regulatory Risk Exposure: Aave Arc (KYC), Horizon (RWA), Project Guardian (MAS) — evolving regulatory landscape (MiCA, US stablecoin bills, DeFi protocol classification) impact on protocol operations not quantified.
+
+Lens Protocol Spinoff Impact: Lens spun out from Avara; Aave DAO/Aave Labs relationship with Lens (token economics, shared infrastructure, brand) not fully defined post-Avara sunset.

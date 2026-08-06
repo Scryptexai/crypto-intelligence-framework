@@ -20,6 +20,45 @@
     ]
   },
   {
+    "n": "Aave",
+    "tier": "Deep",
+    "file": "examples/CaseStudies/Aave.md",
+    "cat": "",
+    "era": "",
+    "tags": []
+  },
+  {
+    "n": "Avalanche",
+    "tier": "Deep",
+    "file": "examples/CaseStudies/Avalanche.md",
+    "cat": "",
+    "era": "",
+    "tags": [
+      "l1"
+    ]
+  },
+  {
+    "n": "Axie Infinity",
+    "tier": "Deep",
+    "file": "examples/CaseStudies/Axie Infinity.md",
+    "cat": "",
+    "era": "",
+    "tags": [
+      "nft-community",
+      "governance"
+    ]
+  },
+  {
+    "n": "Bancor",
+    "tier": "Deep",
+    "file": "examples/CaseStudies/Bancor.md",
+    "cat": "",
+    "era": "",
+    "tags": [
+      "amm"
+    ]
+  },
+  {
     "n": "Blast",
     "tier": "Deep",
     "file": "examples/CaseStudies/Blast.md",
@@ -28,6 +67,16 @@
     "tags": [
       "points",
       "l2"
+    ]
+  },
+  {
+    "n": "Blur",
+    "tier": "Deep",
+    "file": "examples/CaseStudies/Blur.md",
+    "cat": "",
+    "era": "",
+    "tags": [
+      "nft-community"
     ]
   }
 ]

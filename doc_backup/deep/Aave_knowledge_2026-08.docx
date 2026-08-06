@@ -1,0 +1,210 @@
+PROJECT: AAVE
+
+Core Insights
+
+Insight 1: Transisi arsitektur dari P2P ke pooled liquidity kemudian ke hub-and-spoke mencerminkan evolusi alami menuju efisiensi modal dan isolasi risiko
+Explanation: Aave bermula sebagai ETHLend (P2P lending) pada 2017, beralih ke model liquidity pool dengan Aave V1 (2020), memperkenalkan aTokens dan debt tokenization di V2 (2020), isolation mode dan cross-chain di V3 (2022), hingga arsitektur hub-and-spoke di V4 (2026) yang memisahkan likuiditas (Hub) dari logika peminjaman berisiko (Spoke)【Phase 3 — EV-001】【Phase 3 — EV-003】【Phase 3 — EV-005】【Phase 3 — EV-011】【Phase 3 — EV-020】【Phase 3 — EV-028】【Phase 4 — Architecture】
+Evidence: Setiap major version mengatasi bottleneck versi sebelumnya: matching efficiency → capital efficiency → cross-chain fragmentation → unified liquidity with risk isolation
+Supporting Dataset: Phase 3 Historical Events, Phase 4 Architecture Evolution Technical Upgrade History
+Confidence: HIGH
+
+Insight 2: Desentralisasi progresif melalui tokenomics (Aavenomics) dan governance on-chain menciptakan DAO yang matang dengan kendali penuh atas protokol dan treasury
+Explanation: Dari founder-led (2017-2020) → Aavenomics announced Jul 2020 dengan Safety Module dan governance token AAVE【Phase 3 — EV-007】→ AIP-1 activates Safety Module incentives Sep 2020【Phase 3 — EV-008】→ Governance V2 on-chain voting Mar 2021【Phase 3 — EV-012】→ Aave Will Win proposal passed Apr 2026 dengan 75% support untuk fund core contributor【Phase 3 — EV-029】→ Aligned Delegates Framework proposed untuk delegate accountability【Phase 2 — Entity 80】
+Evidence: Token AAVE fixed supply 16M sejak TGE Oct 2020; stkAAVE ~3.2M staked di Safety Module Jul 2026; DAO treasury $329M incl AAVE / $132.7M ex-AAVE【Phase 6 — Token Information】【Phase 5 — Treasury】【Phase 8 — Adoption Metrics】
+Supporting Dataset: Phase 3 EV-007 EV-008 EV-012 EV-029, Phase 6 Governance Utility, Phase 2 Entity 12 Entity 80, Phase 5 Treasury
+Confidence: HIGH
+
+Insight 3: Diversifikasi revenue multi-stream (lending fees + stablecoin GHO + Chainlink SVR + app fees) menciptakan financial sustainability tanpa bergantung single revenue source
+Explanation: Protocol revenue 2025 $907M fees; 2026 YTD $333M; cumulative $2.21B fees; annualized net revenue $103.68M【Phase 5 — Revenue History】; GHO revenue >$14M annualized【Phase 5 — Revenue Model】; Chainlink SVR sebagai revenue stream tambahan【Phase 5 — Revenue Model】; buyback $50M/year dari protocol revenue【Phase 6 — Inflation/Deflation】
+Evidence: Revenue streams: borrow interest spread, liquidation fees, swap fees (interface), GHO revenue, Chainlink SVR, app fees
+Supporting Dataset: Phase 5 Revenue Model Revenue History, Phase 8 Adoption Metrics, Phase 6 Utility Inflation/Deflation
+Confidence: HIGH
+
+Insight 4: Security-first development dengan formal verification dari fase desain dan audit berlapis menjadi diferensiasi kompetitif dan risk mitigation
+Explanation: Aave V4 security program $1.5M, 345 cumulative audit days, 4 firma audit + 900+ peneliti Sherlock contest, Certora formal verification dari Maret 2025 (design phase)【Phase 4 — Security Model】【Phase 4 — Audit History】; zero critical/high findings; threat modeling sebagai living document【Phase 4 — Security Model】
+Evidence: Post-rsETH exploit (May 2026), Aave memperketat collateral onboarding framework dan bridge risk assessment【Phase 3 — EV-031】【Phase 5 — Financial Risk】
+Supporting Dataset: Phase 4 Security Model Audit History, Phase 3 EV-030 EV-031, Phase 5 Financial Risk
+Confidence: HIGH
+
+Insight 5: Ekspansi multi-chain berkelanjutan dengan strategic partnerships dan incentive alignment menciptakan network effects dan liquidity moat
+Explanation: Deploy di 16+ chains (Ethereum, Polygon, Arbitrum, Optimism, Base, Avalanche, BNB, Fantom, Harmony, Gnosis, Scroll, Metis, ZKsync, Linea, Mantle, Plasma)【Phase 1 — Chain(s)】【Phase 7 — External Dependencies】; Polygon partnership $40M MATIC liquidity mining (2021)【Phase 3 — EV-014】; Avalanche Rush $20M untuk Aave users (2021)【Phase 3 — EV-016】; V3 simultaneous 6-chain launch (2022)【Phase 3 — EV-020】; V4 Ethereum Mar 2026 → Avalanche Jul 2026【Phase 3 — EV-028】【Phase 3 — EV-032】
+Evidence: TVL aggregate $22.4B Jul 2026 (42% lending market share); Ethereum mainnet $14.2B (58% Ethereum lending share)【Phase 8 — Market Share】
+Supporting Dataset: Phase 1 Chain(s), Phase 3 EV-013 EV-014 EV-016 EV-020 EV-028 EV-032, Phase 7 External Dependencies Major Integrations, Phase 8 Market Share Adoption Metrics
+Confidence: HIGH
+
+Insight 6: Institutional adoption melalui permissioned products (Arc, Horizon) dan regulatory engagement (Project Guardian) membuka TAM baru di luar retail DeFi
+Explanation: Aave Arc launched Nov 2021 (KYC/AML, Fireblocks whitelister)【Phase 3 — EV-017】【Phase 2 — Entity 20】; Aave Horizon 2025 (RWA lending on v3.3)【Phase 2 — Entity 19】; Project Guardian (MAS Singapore) participation【Phase 2 — Entity 61】【Phase 7 — Major Integrations】; Kraken white-label V3 approved 2026【Phase 2 — Entity 63】【Phase 7 — Major Integrations】; potential TradFi partners: Franklin Templeton, VanEck, Ripple【Phase 2 — Entity 64 Entity 65 Entity 66】
+Evidence: Business Source License (BSL) proposal passed Dec 2021 (55% support) enables commercial licensing【Phase 3 — EV-018】
+Supporting Dataset: Phase 2 Entity 19 Entity 20 Entity 61 Entity 63 Entity 64 Entity 65 Entity 66, Phase 3 EV-015 EV-017 EV-018, Phase 7 Major Integrations, Phase 8 Narrative Position
+Confidence: HIGH
+
+Insight 7: Crisis response capability melalui DAO treasury deployment dan founder personal commitment membuktikan resilience protokol
+Explanation: rsETH exploit May 2026 → emergency response: 25,000 ETH (~$300M) DAO commitment + 5,000 ETH personal dari Stani Kulechov【Phase 5 — Financial Risk】【Phase 3 — EV-030】; TVL drop $6.6B → recovery ke $22.4B Jul 2026【Phase 8 — Open Threads】; bad debt $124-230M contained【Phase 5 — Financial Risk】
+Evidence: Treasury net worth YoY increase 130% menunjukkan recovery capacity【Phase 5 — Treasury】
+Supporting Dataset: Phase 5 Financial Risk Treasury, Phase 3 EV-030 EV-031, Phase 8 Adoption Metrics Open Threads
+Confidence: HIGH
+
+Insight 8: Token utility expansion dari governance-only ke staking yield, stablecoin borrow discount, dan delegate compensation menciptakan demand loop
+Explanation: AAVE utility: governance voting, Safety Module staking (rewards + insurance), reduced GHO borrow rates untuk stkAAVE, collateral, liquidity pools【Phase 6 — Utility】; GHO sebagai kompensasi delegate via Orbit Program【Phase 2 — Entity 79】; buyback $50M/year creates deflationary pressure【Phase 6 — Inflation/Deflation】
+Evidence: stkAAVE ~3.2M staked ($480M at $150/AAVE) Jul 2026【Phase 8 — Adoption Metrics】; supply fixed 16M sejak TGE; ~94.87% unlocked【Phase 6 — Supply Distribution】
+Supporting Dataset: Phase 6 Utility Inflation/Deflation Supply Distribution Major Token Events, Phase 2 Entity 79, Phase 8 Adoption Metrics
+Confidence: HIGH
+
+Strategic Principles
+
+Principle 1: Ethereum alignment first, multi-chain second — semua major version launch di Ethereum mainnet terlebih dahulu, kemudian expand ke L2/alt-chains
+Explanation: V1 Jan 2020 Ethereum【Phase 3 — EV-005】; V2 Dec 2020 Ethereum【Phase 3 — EV-011】; V3 6 chains Mar 2022 tapi Ethereum mainnet delayed ke Jan 2023【Phase 3 — EV-020】【Phase 3 — EV-022】; V4 Ethereum Mar 2026, Avalanche Jul 2026【Phase 3 — EV-028】【Phase 3 — EV-032】
+Evidence: L2Pool contracts optimized untuk rollups; Polygon first L2 partnership (2021) dengan $40M incentives【Phase 3 — EV-014】【Phase 4 — Architecture V3 V4】
+Supporting Dataset: Phase 3 EV-005 EV-011 EV-020 EV-022 EV-028 EV-032, Phase 4 Architecture V3 V4, Phase 7 External Dependencies Polygon
+Confidence: HIGH
+
+Principle 2: Modular architecture dengan risk isolation — V3 isolation mode → V4 hub-and-spoke (Hub = liquidity consolidation, Spoke = risk-isolated borrowing modules) → V3.3 untuk Horizon (RWA-specific)
+Explanation: V3 isolation mode limits exposure untuk risky assets【Phase 4 — Architecture V3】; V4 Spokes each dengan own risk parameters, collateral types, liquidation rules【Phase 4 — Core Components】; Capital tidak terfragmentasi; semua liquidity flow melalui Hubs; Spokes composable【Phase 4 — Architecture V4】
+Evidence: V4 Ethereum: 3 Hubs (Core, Plus, Prime) + 11 Spokes【Phase 3 — EV-028】; Avalanche: 1 Hub + 3 Spokes【Phase 3 — EV-032】
+Supporting Dataset: Phase 4 Architecture V3 V4 Core Components, Phase 2 Entity 17 Entity 19, Phase 3 EV-028 EV-032
+Confidence: HIGH
+
+Principle 3: Security before growth — formal verification dari fase desain, audit berlapis, public security contest, threat modeling sebagai living document
+Explanation: Certora engaged Mar 2025 untuk V4 design-phase verification【Phase 4 — Security Model】; 345 cumulative audit days across 4 firms + Sherlock 900+ researchers【Phase 4 — Audit History】; $1.5M security budget untuk V4【Phase 4 — Security Model】; zero critical/high findings
+Evidence: Post-exploit response: tightening collateral standards, bridge risk framework mandatory【Phase 3 — EV-031】【Phase 5 — Financial Risk】
+Supporting Dataset: Phase 4 Security Model Audit History, Phase 3 EV-030 EV-031, Phase 5 Financial Risk
+Confidence: HIGH
+
+Principle 4: Progressive decentralization via token-weighted voting — Founder control → Aavenomics (2020) → Governance V2 (2021) → DAO controls all parameters → Aave Will Win (2026) funds core contributor dengan milestone-based vesting
+Explanation: AIP-1 activated Safety Module incentives Sep 2020【Phase 3 — EV-008】; Governance V2 Mar 2021 on-chain voting【Phase 3 — EV-012】; Aave Will Win 75% support Apr 2026【Phase 3 — EV-029】; Voting power: AAVE, stkAAVE, aAAVE holders; delegation supported【Phase 6 — Governance】
+Evidence: Aave Foundation proposed 2026 untuk hold IP/brand; separate dari DAO operational governance【Phase 2 — Entity 13】
+Supporting Dataset: Phase 3 EV-007 EV-008 EV-012 EV-029, Phase 6 Governance, Phase 2 Entity 12 Entity 13
+Confidence: HIGH
+
+Principle 5: Infrastructure provider deep integration over vendor diversification — Long-term partnerships dengan critical infrastructure: Chainlink (oracle + CCIP), Certora (formal verification), 4 audit firms + Sherlock
+Explanation: Chainlink integration sejak V1; CCIP adoption untuk V4 cross-chain【Phase 7 — External Dependencies Chainlink】; Certora engaged Mar 2025 untuk V4 design-phase verification【Phase 4 — Security Model】; Security budget $1.5M untuk V4【Phase 4 — Security Model】
+Evidence: Aave berkontribusi ke Chainlink SVR (Smart Value Recapture) revenue stream【Phase 5 — Revenue Model】; rsETH exploit via LayerZero → tightening bridge risk standards【Phase 3 — EV-030】【Phase 7 — External Dependencies LayerZero】
+Supporting Dataset: Phase 7 External Dependencies Chainlink Certora ChainSecurity Trail of Bits Blackthorn Sherlock, Phase 4 Security Model Audit History
+Confidence: HIGH
+
+Principle 6: Revenue diversification as moat — Multiple streams: lending fees, GHO stablecoin revenue, Chainlink SVR, app fees, swap fees
+Explanation: 2025 revenue $907M fees; cumulative $2.21B fees【Phase 5 — Revenue History】; GHO revenue >$14M annualized【Phase 5 — Revenue Model】; Chainlink SVR sebagai revenue stream【Phase 5 — Revenue Model】; buyback $50M/year dari protocol revenue【Phase 6 — Inflation/Deflation】
+Evidence: Treasury composition diversified: 44.6% ETH, 39.5% stablecoins, 10.8% DeFi, 4.9% BTC【Phase 5 — Treasury】
+Supporting Dataset: Phase 5 Revenue Model Revenue History Treasury, Phase 6 Inflation/Deflation, Phase 8 Adoption Metrics
+Confidence: HIGH
+
+Success Factors
+
+Factor 1: First-mover advantage di pooled lending model + continuous innovation (V1→V2→V3→V4) mempertahankan market leadership
+Explanation: Aave V1 Jan 2020 first major pooled lending protocol【Phase 3 — EV-005】; V2 Dec 2020 introduced aTokens, flash loans batch, credit delegation【Phase 3 — EV-011】; V3 Mar 2022 isolation mode, cross-chain, 6-chain simultaneous launch【Phase 3 — EV-020】; V4 Mar 2026 hub-and-spoke modular architecture【Phase 3 — EV-028】; 42% lending TVL market share Jul 2026【Phase 8 — Market Share】
+Evidence: TVL $22.4B aggregate across 16+ chains; $2.21B cumulative fees; 1.2M cumulative unique wallets【Phase 8 — Adoption Metrics】
+Supporting Dataset: Phase 3 EV-005 EV-011 EV-020 EV-028, Phase 8 Market Share Adoption Metrics
+Confidence: HIGH
+
+Factor 2: Strong developer ecosystem dan tooling (Foundry, Hardhat, Address Book, SDK, APIs) menarik 120+ monthly active contributors
+Explanation: Aave V4 uses Foundry; V3 uses Hardhat【Phase 4 — Current Technical Stack】; Aave Address Book (BGD Labs) untuk address management【Phase 7 — Developer Ecosystem】; Developer portal aave.com/build【Phase 1 — Documentation】; GraphQL/REST APIs; TypeScript/JS SDK
+Evidence: 120+ monthly active contributors across Aave Labs, BGD Labs, independent【Phase 8 — Adoption Metrics】; Electric Capital developer report mentions Aave consistently top-tier
+Supporting Dataset: Phase 4 Current Technical Stack, Phase 7 Developer Ecosystem, Phase 1 Documentation, Phase 8 Adoption Metrics
+Confidence: HIGH
+
+Factor 3: Community-driven governance dengan delegate accountability frameworks (Orbit Program, Aligned Delegates Framework) memastikan DAO sustainability
+Explanation: Orbit Program compensates delegates dengan GHO【Phase 2 — Entity 79】; Aligned Delegates Framework proposed untuk identify/reward/account delegates【Phase 2 — Entity 80】; Aave Chan Initiative (core governance contributor) exited Mar 2026, transition ke ADF【Phase 2 — Entity 14】【Phase 3 — EV-029】
+Evidence: Aave Will Win proposal passed 75% support dengan structured funding untuk core contributor【Phase 3 — EV-029】; voting participation metrics available via Snapshot
+Supporting Dataset: Phase 2 Entity 14 Entity 79 Entity 80, Phase 3 EV-029, Phase 6 Governance
+Confidence: HIGH
+
+Factor 4: Strategic chain partnerships dengan aligned incentives (Polygon $40M, Avalanche $20M) mempercepat multi-chain adoption
+Explanation: Polygon partnership Mar 2021 + $40M MATIC liquidity mining【Phase 3 — EV-013】【Phase 3 — EV-014】; Avalanche Rush Aug 2021 $20M untuk Aave users【Phase 3 — EV-016】; V3 simultaneous 6-chain launch Mar 2022【Phase 3 — EV-020】; 16+ chains supported Jul 2026【Phase 1 — Chain(s)】
+Evidence: Polygon menjadi chain #2 by TVL; blueprint untuk multi-chain strategy【Phase 3 — EV-014】; Avalanche deployment V4 Jul 2026 first multi-chain V4【Phase 3 — EV-032】
+Supporting Dataset: Phase 3 EV-013 EV-014 EV-016 EV-020, Phase 7 Major Integrations External Dependencies, Phase 1 Chain(s)
+Confidence: HIGH
+
+Factor 5: Native stablecoin (GHO) menciptakan revenue stream baru, token utility, dan sovereign stablecoin narrative
+Explanation: GHO launched Jul 2023 over-collateralized via Aave V3 facilitators【Phase 3 — EV-024】; $185M circulating supply Jul 2026【Phase 8 — Adoption Metrics】; revenue >$14M annualized untuk DAO【Phase 5 — Revenue Model】; stkAAVE holders get borrow discount【Phase 6 — Utility】; used untuk delegate compensation Orbit Program【Phase 2 — Entity 79】
+Evidence: GHO supply growth dari $0 ke $185M dalam 3 tahun; peg stability maintained; facilitator model allows controlled expansion
+Supporting Dataset: Phase 3 EV-023 EV-024, Phase 6 Utility, Phase 8 Adoption Metrics Narrative Position, Phase 2 Entity 79, Phase 5 Revenue Model
+Confidence: HIGH
+
+Factor 6: Institutional product suite (Arc, Horizon) + regulatory engagement (Project Guardian) membuka TAM tradisional
+Explanation: Arc Nov 2021 permissioned KYC/AML【Phase 3 — EV-017】; Horizon 2025 RWA lending【Phase 2 — Entity 19】; Project Guardian MAS Singapore【Phase 2 — Entity 61】; Kraken white-label V3 2026【Phase 2 — Entity 63】; BSL license enables commercial deployment【Phase 3 — EV-018】
+Evidence: Potential TradFi partners: Franklin Templeton, VanEck, Ripple mentioned【Phase 2 — Entity 64 Entity 65 Entity 66】; RWA narrative growing 2025-2026
+Supporting Dataset: Phase 2 Entity 19 Entity 20 Entity 61 Entity 63 Entity 64 Entity 65 Entity 66, Phase 3 EV-015 EV-017 EV-018, Phase 8 Narrative Position
+Confidence: HIGH
+
+Failure Factors
+
+Factor 1: Bridge dependency risk — rsETH exploit via LayerZero V2 bridge (May 2026) menimbulkan $124-230M bad debt
+Explanation: LayerZero V2 bridge menerima pesan cross-chain palsu, melepaskan 116.5k rsETH di Ethereum tanpa burn di Unichain【Phase 3 — EV-030】; Penyerang deposit rsETH palsu ke Aave V3 sebagai collateral【Phase 3 — EV-030】; Aave tidak mengontrol bridge security tapi bear risk sebagai collateral recipient
+Evidence: TVL drop ~$6.6B post-exploit; massive withdrawals $8.45B【Phase 5 — Financial Risk】; Aave memperketat collateral onboarding standards pasca-exploit【Phase 3 — EV-031】
+Supporting Dataset: Phase 3 EV-030 EV-031, Phase 5 Financial Risk, Phase 7 External Dependencies LayerZero Kelp DAO
+Confidence: HIGH
+
+Factor 2: Governance conflict over revenue control menunda core contributor funding dan menciptakan ketidakpastian operasional
+Explanation: Aave Will Win proposal initial snapshot Dec 2025 hanya 3.01% support, 64.15% against【Phase 3 — EV-026】; Months-long governance fight sebelum proposal revisi passed Apr 2026 75% support【Phase 3 — EV-029】; Avara brand sunset Feb 2026 di tengah ketidakpastian【Phase 3 — EV-027】
+Evidence: Aave Labs funding uncertainty post-Avara sunset; DAO treasury control dispute【Phase 5 — Financial Risk】【Phase 2 — Entity 11】
+Supporting Dataset: Phase 3 EV-026 EV-027 EV-029, Phase 5 Financial Risk, Phase 2 Entity 10 Entity 11 Entity 12
+Confidence: HIGH
+
+Factor 3: V1 deactivation delay (2+ tahun coexistence) menciptakan fragmentation dan maintenance burden
+Explanation: V1 launched Jan 2020【Phase 3 — EV-005】; V2 Dec 2020【Phase 3 — EV-011】; V1 deactivation hanya Dec 2022 via governance vote【Phase 3 — EV-021】; Users masih dapat repay/withdraw tapi tidak supply/borrow baru
+Evidence: Migration path provided tapi 2+ tahun dual maintenance; V1 freeze via AIP-132【Phase 3 — EV-021】
+Supporting Dataset: Phase 3 EV-005 EV-011 EV-021, Phase 4 Technical Upgrade History
+Confidence: MEDIUM
+
+Factor 4: Token buyback mechanism ambiguity — conflicting reports apakah tokens burned atau kept in treasury
+Explanation: Phase 6 Inflation/Deflation menyebut "protocol fees digunakan untuk buyback dan burn AAVE"【Phase 6 — Inflation/Deflation】; Phase 6 Open Threads menyebut buyback lebih bersifat "demand-support program" tanpa explicit burn mechanism【Phase 6 — Open Threads】; ~0.8% supply bought back in 8 months【Phase 6 — Inflation/Deflation】
+Evidence: Supply fixed 16M; no inflationary emissions; deflationary pressure via buyback tapi mechanism unclear
+Supporting Dataset: Phase 6 Inflation/Deflation Open Threads, Phase 5 Revenue Model
+Confidence: LOW (conflicting sources)
+
+Factor 5: Aave Chan Initiative exit (Mar 2026) menciptakan governance contributor gap sebelum ADF fully operational
+Explanation: ACI announced shutdown Mar 2026【Phase 2 — Entity 14】; Transition ke Aligned Delegates Framework + Orbit Program【Phase 2 — Entity 80】【Phase 2 — Entity 79】; BGD Labs sebagai service provider【Phase 2 — Entity 42】
+Evidence: Governance continuity maintained tapi contributor pipeline disruption risk
+Supporting Dataset: Phase 2 Entity 14 Entity 42 Entity 79 Entity 80, Phase 3 EV-029, Phase 7 Service Provider Developer Ecosystem
+Confidence: MEDIUM
+
+Factor 6: Cross-chain liquidity fragmentation di V3 (pre-V4) membatasi capital efficiency
+Explanation: V3 deployed di 16+ chains dengan isolated liquidity pools per chain【Phase 4 — Architecture V3】; Capital terfragmentasi antar pasar di chain yang sama【Phase 4 — Architecture V4】; V4 hub-and-spoke solves ini tapi baru Mar 2026
+Evidence: V4 design explicitly addresses fragmentation: "Capital tidak lagi terfragmentasi antar pasar di chain yang sama; semua likuiditas mengalir melalui Liquidity Hubs"【Phase 4 — Architecture V4】
+Supporting Dataset: Phase 4 Architecture V3 V4, Phase 3 EV-020 EV-028
+Confidence: HIGH
+
+Decision Framework
+
+Step 1: Observe — Identify market gap, technical bottleneck, atau user need
+Explanation: ETHLend founding: P2P lending gap di early Ethereum (2017)【Phase 3 — EV-001】; V1→V2: capital inefficiency, non-tokenized positions, ETH native complexity【Phase 4 — Architecture V1】; V2→V3: cross-chain fragmentation, isolation mode need【Phase 3 — EV-020】; V3→V4: liquidity fragmentation across markets, risk isolation need【Phase 4 — Architecture V4】; Institutional need: KYC/AML compliance gap【Phase 3 — EV-015】; Stablecoin need: revenue diversification, token utility【Phase 3 — EV-024】
+Evidence: Setiap major decision rooted in observed problem tidak arbitrary feature addition
+Supporting Dataset: Phase 3 Historical Events, Phase 4 Architecture Evolution, Phase 2 Entity 15 Entity 16 Entity 17 Entity 19
+Confidence: HIGH
+
+Step 2: Evaluate — Technical feasibility, security implications, governance alignment, resource requirements
+Explanation: V4 security program: 345 audit days, formal verification dari design phase, threat modeling living document【Phase 4 — Security Model】; Multi-chain deployment: L2Pool optimization, chain selection based on TVL potential, user base, incentive alignment, EVM compatibility【Phase 3 — EV-013】【Phase 7 — External Dependencies】; Governance proposals: AIP process, community discussion, off-chain signaling (Snapshot), on-chain voting【Phase 6 — Governance】; Institutional products: regulatory landscape assessment (Project Guardian, MAS)【Phase 2 — Entity 61】【Phase 7 — Major Integrations】
+Evidence: Evaluation rigorous dan documented; security-first approach consistent
+Supporting Dataset: Phase 4 Security Model, Phase 3 EV-013 EV-020, Phase 6 Governance, Phase 2 Entity 61, Phase 7 External Dependencies
+Confidence: HIGH
+
+Step 3: Fund — Capital allocation via VC (early), protocol revenue (ongoing), DAO treasury (governance), emergency reserves (crisis)
+Explanation: Early VC: $3M Framework/3AC (Jul 2020) + $4.5M ParaFi (Jul 2020) + $25M Series B Blockchain Capital (Oct 2020)【Phase 5 — Funding History】; Later Stage VC $31M (Dec 2024) Lightspeed Faction, AVAIL, Alchemy【Phase 5 — Funding History】; Protocol revenue ke DAO treasury: $329M incl AAVE / $132.7M ex-AAVE【Phase 5 — Treasury】; Aave Will Win: $42.5M stablecoin + 75k AAVE (48m vest) ke Aave Labs【Phase 3 — EV-029】; Emergency: 25k ETH DAO + 5k ETH founder untuk rsETH exploit【Phase 5 — Financial Risk】
+Evidence: Multi-stage funding evolution: VC → protocol revenue → structured DAO funding
+Supporting Dataset: Phase 5 Funding History Treasury Revenue History, Phase 3 EV-029, Phase 5 Financial Risk
+Confidence: HIGH
+
+Step 4: Develop — Modular development dengan extensive testing, formal verification, public testnet, staged rollout
+Explanation: V1 public testnet Oct 2019 → mainnet Jan 2020【Phase 3 — EV-004】【Phase 3 — EV-005】; V4: Foundry framework, Certora formal verification Mar 2025 dari design phase, Sherlock public contest Nov 2025-Jan 2026 (900+ researchers)【Phase 4 — Security Model】【Phase 4 — Audit History】; V4 public testnet sebelum mainnet【Phase 4 — Technical Resources】; L2Pool optimized contracts untuk rollups【Phase 4 — Architecture V3】
+Evidence: Development framework evolution: Hardhat (V3) → Foundry (V4); testing comprehensive
+Supporting Dataset: Phase 3 EV-004 EV-005, Phase 4 Security Model Audit History Current Technical Stack Technical Resources, Phase 4 Architecture V3
+Confidence: HIGH
+
+Step 5: Launch — Phased deployment: Ethereum mainnet first, then multi-chain dengan incentives, monitoring, rapid iteration
+Explanation: V1 Ethereum Jan 2020【Phase 3 — EV-005】; V2 Ethereum Dec 2020【Phase 3 — EV-011】; V3: 6 chains simultaneous Mar 2022 (Fantom, Avalanche, Harmony, Arbitrum, Optimism, Polygon) → Ethereum Jan 2023【Phase 3 — EV-020】【Phase 3 — EV-022】; V4: Ethereum Mar 2026 (3 Hubs + 11 Spokes) → Avalanche Jul 2026 (1 Hub + 3 Spokes)【Phase 3 — EV-028】【Phase 3 — EV-032】; GHO: Goerli testnet Feb 2023 → Ethereum mainnet Jul 2023【Phase 3 — EV-023】【Phase 3 — EV-024】
+Evidence: Ethereum-first consistent; incentive programs begleiten chain launches
+Supporting Dataset: Phase 3 EV-005 EV-011 EV-020 EV-022 EV-028 EV-032 EV-023 EV-024, Phase 7 Major Integrations
+Confidence: HIGH
+
+Step 6: Govern — DAO controls parameters, upgrades, treasury, contributor funding via structured proposals dengan accountability frameworks
+Explanation: Aavenomics Jul 2020 establishes governance framework【Phase 3 — EV-007】; AIP-1 Sep 2020 activates Safety Module【Phase 3 — EV-008】; Governance V2 Mar 2021 on-chain voting【Phase 3 — EV-012】; Aave Will Win Apr 2026 funds core contributor dengan milestones【Phase 3 — EV-029】; Aligned Delegates Framework proposed untuk delegate accountability【Phase 2 — Entity 80】; Orbit Program compensates delegates GHO【Phase 2 — Entity 79】; Emergency governance: V1 deactivation Dec 2022【Phase 3 — EV-021】; rsETH response May-Jun 2026【Phase 3 — EV-031】
+Evidence: Governance maturity demonstrated through crisis response dan structured funding
+Supporting Dataset: Phase 3 EV-007 EV-008 EV-012 EV-021 EV-029 EV-031, Phase 2 Entity 79 Entity 80, Phase 6 Governance
+Confidence: HIGH
+
+Reusable Playbook
+
+Playbook 1: Progressive decentralization via tokenomics design — Launch utility token → introduce governance token dengan staking incentives → activate on-chain governance → fund core contributors via DAO proposals dengan vesting
+Explanation: LEND (utility, fee discount) 2017【Phase 3 — EV-002】→ Aavenomics Jul 2020: AAVE governance token, Safety Module staking, 16M max supply【Phase 3 — EV-007】→ Migration 100:1 Oct 2020【Phase 3 — EV-009】→ AIP-1 Safety Module incentives Sep 2020【Phase 3 — EV-008】→ Governance V2 Mar 2021 on-chain voting【Phase 3 — EV-012】→ Aave Will Win Apr 2026: $42.5M + 75k AAVE (48m vest) ke Aave Labs【Phase 3 — EV-029】
+Evidence: Token supply fixed sejak TGE; no inflationary emissions; staking aligns incentives; DAO controls treasury
+Supporting Dataset: Phase 3 EV-002 EV-007 EV-008 EV-009 EV-012 EV-02

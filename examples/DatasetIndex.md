@@ -9,7 +9,8 @@ structured against the `docs/` ontology.
 This is the master curation record for the dataset stored in `examples/`: what was added per batch,
 how the taxonomy is distributed, where the gaps are, and what is queued next.
 
-**Total curated projects: 3 (LayerZero D13, Arbitrum D14, Blast D15).**
+**Total curated projects: 8 (LayerZero D13, Arbitrum D14, Blast D15, Aave D16, Avalanche D17, Axie
+Infinity D18, Bancor D19, Blur D20).**
 
 > **⚠ 2026-07-26 dataset reset (maintainer decision).** All prior projects — 12 Deep Dossiers (Ethereum,
 > Solana, BNB Chain, Cardano, Avalanche, Polkadot, Cosmos, dYdX, Aave, ether.fi, EigenLayer, Celestia) and
@@ -495,6 +496,11 @@ _Tier: Deep · anchor projects with full causal history._
 | D13 | LayerZero | Interoperability / Omnichain Messaging (Bridge, GMP, DVN security) | 2021– | Deep Research (Gemini + Claude-direct + DeepSeek), Format v3 Dependency Pipeline (11/11 phases) | `CaseStudies/LayerZero.md` | `doc_backup/inbox/phased/LayerZero/01..11-*.docx` (per-phase, archived individually to `doc_backup/deep/LayerZero_<phase>_2026-07.docx`); full prompt history in `doc_backup/inbox/phased/LayerZero/PROMPTS-LOG.md` |
 | D14 | Arbitrum | Layer-2 scaling solution (Optimistic Rollup) | 2018– | Deep Research (DeepSeek), Format v3 Dependency Pipeline Track C (11/11 phases) | `CaseStudies/Arbitrum.md` | `data_project/Arbitrum/01..11-*.docx`, archived individually to `doc_backup/deep/Arbitrum_<phase>_2026-08.docx` |
 | D15 | Blast | Layer-2 (OP Stack, native yield) | 2023– | Deep Research (DeepSeek/Nemotron via gateway — see `reset/README.md` on model substitution), Format v3 Dependency Pipeline Track C (10/11 phases — **Phase 11 deliberately deferred**, see note below) | `CaseStudies/Blast.md` | `data_project/Blast/01..10-*.docx`, archived individually to `doc_backup/deep/Blast_<phase>_2026-08.docx` |
+| D16 | Aave | DeFi lending (money market) | 2017– | Deep Research (DeepSeek/Nemotron via gateway), Format v3 Dependency Pipeline Track C (10/11 phases — Phase 11 deferred) | `CaseStudies/Aave.md` | `data_project/Aave/01..10-*.docx`, archived to `doc_backup/deep/Aave_<phase>_2026-08.docx` |
+| D17 | Avalanche | Layer-1 (heterogeneous multi-chain/Subnet) | 2020– | Deep Research (DeepSeek/Nemotron via gateway), Format v3 Dependency Pipeline Track C (10/11 phases — Phase 11 deferred) | `CaseStudies/Avalanche.md` | `data_project/Avalanche/01..10-*.docx`, archived to `doc_backup/deep/Avalanche_<phase>_2026-08.docx` |
+| D18 | Axie Infinity | Gaming (play-to-earn, Ronin sidechain) | 2018– | Deep Research (DeepSeek/Nemotron via gateway), Format v3 Dependency Pipeline Track C (10/11 phases — Phase 11 deferred) | `CaseStudies/Axie Infinity.md` | `data_project/Axie Infinity/01..10-*.docx`, archived to `doc_backup/deep/Axie Infinity_<phase>_2026-08.docx` |
+| D19 | Bancor | DeFi AMM (single-sided staking, IL protection) | 2017– | Deep Research (DeepSeek/Nemotron via gateway), Format v3 Dependency Pipeline Track C (10/11 phases — Phase 11 deferred) | `CaseStudies/Bancor.md` | `data_project/Bancor/01..10-*.docx`, archived to `doc_backup/deep/Bancor_<phase>_2026-08.docx` |
+| D20 | Blur | NFT marketplace + lending (Blend) | 2022– | Deep Research (DeepSeek/Nemotron via gateway), Format v3 Dependency Pipeline Track C (10/11 phases — Phase 11 deferred) | `CaseStudies/Blur.md` | `data_project/Blur/01..10-*.docx`, archived to `doc_backup/deep/Blur_<phase>_2026-08.docx` |
 
 **Blast (D15) — Phase 11 deliberately deferred, first project run through the new automated
 `run_ingest_extract_sync()` chain.** Used as the validation project for `reset/run_deepseek_reset.py`'s
@@ -527,6 +533,65 @@ All fixes verified by re-running the real extractors against Blast's regenerated
 (18), `poc/events.json` (15), `poc/decision_events.json` (10), `poc/knowledge.json` (42), and
 `poc/behavior.json` (4 objectives, 35 decision patterns, 10 risk responses, 8 trade-offs) all non-empty
 and structurally correct for Blast.
+
+**D16–D20 (Aave, Avalanche, Axie Infinity, Bancor, Blur) — first real batch run through the automated
+`run_ingest_extract_sync()` chain, 2026-08-06.** Confirmed the pipeline's core promise: `verify_10_phases()`
+correctly caught every one of these 5 before they reached `data_project/`'s promoted state, logging them to
+`reset/needs_review.log` instead of silently corrupting the dataset. Diagnosis (via `verify_10_phases()`
+called directly against each project's raw phase files, plus `tools/ingest.py`'s `validate_phase_content()`
+against the assembled dossier) found **no new bug classes** — every failure was one of three already-known
+causes, each fixed **mechanically, at zero extra API cost**, never by discarding and re-researching:
+
+1. **Stale pre-fix content (Aave phases 2/3).** Aave's phases 1–6 were generated 2026-08-03, before this
+   session's Phase 2/3 prompt fixes (see the Blast section above) landed — `existing_phase_ok()`'s
+   resumability check only looks at file length, not format version, so it never got the corrected prompt.
+   Phase 3 (History) was a lossless mechanical reformat (`Event ID: EV-001` inline → `Event ID\n\nEV-001`
+   flat-label form — every field maps 1:1, verified 32/32 events re-parse identically). Phase 2 (Entity) used
+   an entirely different Indonesian field set (`Nama/Jenis/Fungsi Utama/Deskripsi Singkat/...`) with no
+   `Exposure Type` field at all — rather than fabricate one, the field mapping renames what exists
+   (`Nama→Entity`, `Jenis→Type`, `Fungsi Utama`+`Deskripsi Singkat→Relationship`, `Periode
+   Keterlibatan→Period`, `Sources→Evidence`) and leaves `Exposure Type` genuinely absent, exactly matching
+   `extract_entities.py`'s own "never fabricate, leave null" contract for fields the source material never
+   asserted. Verified 82/82 entities re-parse.
+2. **`## `-prefixed internal sub-headers (Avalanche + Bancor Phase 10, Bancor Phase 9)** — the same section-
+   boundary truncation bug as Blast's Phase 9 fix above, just recurring in Phase 10's `## Core Insights` /
+   `## Strategic Principles` / etc. Same sed-based strip, same fix.
+3. **Plain-paren or square-bracket internal citations instead of `【Phase — Section】`** (Aave, Bancor, Axie
+   Infinity, Blur — all Phase 9). `tools/ingest.py`'s `validate_phase_content()` only recognizes
+   `(HIGH/MEDIUM/LOW)` tags, 3+ `Sources:` URLs, or 3+ `【...】` internal citations as valid sourcing signals;
+   these four dossiers cited real, already-present Phase/Section references but in the wrong bracket
+   style (`(Phase 3 EV-008)` or `[Phase 3 EV-008]`), so the content-verification gate rejected them as
+   "no citation evidence" even though every claim was traceable. Fixed by regex-swapping the bracket
+   characters only (the citation text itself untouched) — 16–51 conversions per project, all verified
+   against `validate_phase_content()` afterward.
+
+**One additional format variant, Blur only:** instead of a standalone section header followed by numbered
+`Pola N: <title>` items, Blur's Phase 9 repeated the category name as a prefix on every item line
+(`Technical Decision Pattern: <title>`, `Financial Decision Pattern: <title>`, ...) with no header line and
+no numbering at all. Converted mechanically: on each category's first occurrence, insert the bare header
+line once, then renumber every subsequent same-category line to `Pola N: <title>` (or `Trade-off N:` for
+Strategic Trade-offs), stripping the repeated category prefix. No content changed, only structure.
+
+**A genuine content gap, left as-is, not papered over:** five of these Phase 9 files (Aave, Avalanche,
+Bancor, Axie Infinity, Blur) were cut off mid-generation before finishing every section — consistently near
+the *end* of the phase (Risk Response Pattern / Recurring Behavioral Pattern / Strategic Trade-offs), not
+the middle, which is consistent with the DeepSeek/Nemotron gateway's known output-length instability already
+documented for Phase 11 above. The truncated trailing fragment (a dangling `Pola N` with no title, or a
+sentence cut mid-word) was trimmed cleanly rather than left as broken prose, but the **missing sections were
+not invented** — `poc/behavior.json` honestly shows `tradeOffs: []` (and in Avalanche's case, no entry at
+all — its Phase 9 was missing section headers *and* Strategic Objectives/Decision Timeline entirely, beyond
+what a mechanical fix could safely reconstruct) for these five projects rather than fabricated data. **Open
+item, not yet done:** re-running Phase 9 specifically for these five (a full regeneration, not a
+reformat) would recover the missing Risk Response/Trade-offs content; if truncation keeps recurring as more
+projects go through the queue, Phase 9 likely needs the same call-splitting treatment already applied to
+Phase 11 (`PHASE11_STAGES`), since this session's Phase 9 prompt fixes substantially lengthened its expected
+output.
+
+**Aptos — left failing, not a format bug.** `data_project/Aptos/09-behavioral.docx` and `10-knowledge.docx`
+are both still literally empty (0 bytes; `reset/failures.log` shows repeated HTTP 504s on those two phases
+specifically). `existing_phase_ok()` correctly refuses to treat a 0-byte file as done, so the next resume
+run will call the API for these two phases automatically — no manual intervention needed, just a successful
+generation attempt.
 
 _D1–D12 (Ethereum, Solana, BNB Chain, Cardano, Avalanche, Polkadot, Cosmos, dYdX, Aave, ether.fi, EigenLayer,
 Celestia) moved to `_archive_pre_v3/` in the 2026-07-26 dataset reset — see the note at the top of this file._

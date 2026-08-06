@@ -1,0 +1,344 @@
+PROJECT: Axie Infinity
+
+Entity: Sky Mavis Pte. Ltd.
+Type: Company
+Relationship: Entitas pengembang inti (core developer) dan operator utama ekosistem Axie Infinity serta Ronin Network; bertanggung jawab atas pengembangan game, infrastruktur blockchain, wallet, marketplace, dan DEX (HIGH)
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Crunchbase, https://www.crunchbase.com/organization/sky-mavis]; [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]; [Sky Mavis About, https://skyma.vis/about]
+
+---
+Entity: Sky Mavis (Vietnam Operating Entity)
+Type: Company
+Relationship: Entitas operasional (HQ) Sky Mavis berlokasi di Ho Chi Minh City, Vietnam, mengelola tim engineering, product, dan komunitas harian (HIGH)
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Crunchbase, https://www.crunchbase.com/organization/sky-mavis]; [The Block 2022, https://www.theblock.co/post/135000/sky-mavis-axie-infinity-layoffs]
+
+---
+Entity: Trung Thanh Nguyen
+Type: Person
+Relationship: Co-founder dan CEO Sky Mavis; memimpin visi strategis, fundraising, dan ekspansi ekosistem Axie Infinity & Ronin (HIGH)
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]; [Sky Mavis About, https://skyma.vis/about]; [Binance Research, https://research.binance.com/en/projects/axie-infinity]
+
+---
+Entity: Aleksander Leonard Larsen
+Type: Person
+Relationship: Co-founder dan COO Sky Mavis; mengelola operasi, kemitraan ekosistem, dan representasi publik (Axie Infinity/ Ronin) (HIGH)
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]; [Sky Mavis About, https://skyma.vis/about]; [LinkedIn Aleksander Larsen, https://www.linkedin.com/in/aleksanderlarsen/]
+
+---
+Entity: Jeffrey Zirlin
+Type: Person
+Relationship: Co-founder dan Growth Lead Sky Mavis; memimpin pertumbuhan komunitas, marketing, dan inisiatif "Play-to-Earn" (HIGH)
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]; [Sky Mavis About, https://skyma.vis/about]; [Twitter @Jihoz_Axie, https://twitter.com/Jihoz_Axie]
+
+---
+Entity: Tu Doan
+Type: Person
+Relationship: Co-founder dan CTO Sky Mavis; memimpin arsitektur teknis game, smart contract, dan infrastruktur Ronin (HIGH)
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]; [Sky Mavis About, https://skyma.vis/about]
+
+---
+Entity: Andy Ho
+Type: Person
+Relationship: Co-founder dan CTO Sky Mavis; fokus pada arsitektur sistem, keamanan, dan pengembangan Ronin Network (HIGH)
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]; [Sky Mavis About, https://skyma.vis/about]
+
+---
+Entity: Axie Infinity (Game Protocol)
+Type: Protocol
+Relationship: Protokol game NFT turn-based strategy inti (Classic, Origin, Homeland, Raylights) yang berjalan pada Ronin dan Ethereum; mengelola aset NFT (Axie, Land, Item) dan logika gameplay on-chain (HIGH)
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]; [Axie Docs, https://docs.axieinfinity.com/]; [GitHub axieinfinity, https://github.com/axieinfinity]
+
+---
+Entity: Ronin Network
+Type: Protocol
+Relationship: Sidechain EVM-purpose-built untuk gaming (Axie Infinity); mengelola konsensus PoA/PoS, validasi transaksi gas-free, dan keamanan ekonomi ekosistem (HIGH)
+Period: 2021–sekarang (Mainnet Feb 2021)
+Exposure Type: technical-integration
+Evidence: (HIGH) [Ronin Docs, https://docs.roninchain.com/]; [Axie Blog Ronin Mainnet, https://axieinfinity.medium.com/ronin-mainnet-launch-9-february-2021]; [Ronin Explorer, https://explorer.roninchain.com/]
+
+---
+Entity: AXS (Axie Infinity Shards)
+Type: Protocol
+Relationship: Token governance dan staking native ekosistem Axie/Ronin; digunakan untuk voting Treasury, staking reward, dan pembayaran breeding fee (HIGH)
+Period: 2020–sekarang (TGE Nov 2020)
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Etherscan AXS, https://etherscan.io/token/0xBB0E17eF65F82AB018d8EDd776e8DD940327B28b]; [CoinGecko AXS, https://www.coingecko.com/en/coins/axie-infinity]; [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]
+
+---
+Entity: SLP (Smooth Love Potion)
+Type: Protocol
+Relationship: Token utilitas (ERC-20/Ronin) untuk breeding Axie; fair launch tanpa alokasi tim, diperoleh melalui gameplay (PvE/PvP) (HIGH)
+Period: 2020–sekarang (Launch Juli 2020)
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Etherscan SLP, https://etherscan.io/token/0xa8754b9Fa15Fc18Bb59458815510e40a12Cd2014]; [CoinGecko SLP, https://www.coingecko.com/en/coins/smooth-love-potion]; [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]
+
+---
+Entity: Ronin Bridge
+Type: Protocol
+Relationship: Jembatan resmi (canonical bridge) untuk transfer aset (AXS, SLP, ETH, USDC, NFT) antara Ethereum Mainnet dan Ronin Network; menggunakan validator set multi-sig (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Ronin Bridge Docs, https://docs.roninchain.com/ronin/bridges/ronin-bridge]; [Ronin Bridge UI, https://bridge.roninchain.com/]; [CertiK Audit Report, https://www.certik.com/projects/ronin-network]
+
+---
+Entity: Katana DEX
+Type: Application
+Relationship: Decentralized Exchange (AMM) native di Ronin Network; menyediakan liquidity pool dan swap untuk pasangan AXS/SLP/ETH/USDC/WETH (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Katana Website, https://katana.roninchain.com/]; [Ronin Docs Katana, https://docs.roninchain.com/ronin/dex/katana]; [Axie Blog Katana Launch, https://axieinfinity.medium.com/katana-dex-is-live-on-ronin-]
+
+---
+Entity: Mavis Market
+Type: Application
+Relationship: NFT Marketplace resmi ekosistem Ronin; mendukung jual beli Axie, Land, Item, dan RNS (Ronin Name Service) dengan fee protokol (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Mavis Market Website, https://marketplace.roninchain.com/]; [Axie Blog Mavis Market Launch, https://axieinfinity.medium.com/mavis-market-is-live-]; [Ronin Docs Marketplace, https://docs.roninchain.com/ronin/marketplace/overview]
+
+---
+Entity: Ronin Wallet
+Type: Application
+Relationship: Non-custodial wallet (browser extension & mobile) native untuk Ronin & Ethereum; entry point pengguna untuk menandatangani transaksi game, bridge, dan DEX (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Ronin Wallet Website, https://wallet.roninchain.com/]; [Chrome Web Store Ronin Wallet, https://chrome.google.com/webstore/detail/ronin-wallet/]; [Ronin Docs Wallet, https://docs.roninchain.com/ronin/wallet/overview]
+
+---
+Entity: Binance
+Type: Investor
+Relationship: Lead investor Series A (via Binance Labs), platform Launchpad TGE AXS (Nov 2020), validator Ronin, dan exchange listing utama AXS/SLP (HIGH)
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Binance Launchpad Announcement, https://www.binance.com/en/blog/421448824684900352]; [Binance Labs Portfolio, https://www.binance.com/en/labs/portfolio]; [Ronin Validator Set, https://explorer.roninchain.com/validators]
+
+---
+Entity: Andreessen Horowitz (a16z)
+Type: Investor
+Relationship: Lead investor Series B ($152M, Okt 2021) melalui a16z Crypto; dukungan strategis ekspansi ekosistem Ronin (HIGH)
+Period: 2021–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [a16z Blog Axie Series B, https://a16zcrypto.com/axios/series-b/]; [Crunchbase Sky Mavis Funding, https://www.crunchbase.com/organization/sky-mavis/funding_rounds]; [Axie Blog Series B, https://axieinfinity.medium.com/axie-infinity-raises-152-million-series-b-]
+
+---
+Entity: Accel
+Type: Investor
+Relationship: Investor Series B (Okt 2021); dukungan pertumbuhan organisasi dan skala global (HIGH)
+Period: 2021–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Crunchbase Sky Mavis Funding, https://www.crunchbase.com/organization/sky-mavis/funding_rounds]; [Axie Blog Series B, https://axieinfinity.medium.com/axie-infinity-raises-152-million-series-b-]
+
+---
+Entity: Paradigm
+Type: Investor
+Relationship: Investor Series B (Okt 2021); fokus riset kripto dan dukungan teknis ekosistem (HIGH)
+Period: 2021–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Crunchbase Sky Mavis Funding, https://www.crunchbase.com/organization/sky-mavis/funding_rounds]; [Paradigm Portfolio, https://www.paradigm.xyz/portfolio]
+
+---
+Entity: Animoca Brands
+Type: Investor
+Relationship: Investor awal (Seed/Series A), validator Ronin, dan mitra strategis untuk metaverse/interoperabilitas (HIGH)
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Animoca Brands Portfolio, https://animocabrands.com/portfolio/]; [Crunchbase Sky Mavis Funding, https://www.crunchbase.com/organization/sky-mavis/funding_rounds]; [Ronin Validator Set, https://explorer.roninchain.com/validators]
+
+---
+Entity: Yield Guild Games (YGG)
+Type: Organization
+Relationship: Guild scholarship terbesar awal Axie Infinity; mengelola ribuan scholar, menyediakan liquidity Axie NFT, dan berpartisipasi governance AXS (HIGH)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [YGG Website, https://yieldguild.io/]; [Axie Blog YGG Partnership, https://axieinfinity.medium.com/yield-guild-games-ygg-axie-infinity-]; [CoinDesk YGG Axie, https://www.coindesk.com/business/2021/05/26/yield-guild-games-raises-1-325m-for-play-to-earn-gaming/]
+
+---
+Entity: Google Cloud
+Type: Organization
+Relationship: Infrastructure provider & Validator Ronin Network; menyediakan node infrastructure dan layanan cloud untuk Sky Mavis (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Google Cloud Blog Ronin, https://cloud.google.com/blog/topics/web3/google-cloud-becomes-ronin-validator]; [Ronin Validator Set, https://explorer.roninchain.com/validators]; [Axie Blog Google Cloud, https://axieinfinity.medium.com/google-cloud-joins-ronin-as-a-validator-]
+
+---
+Entity: CertiK
+Type: Organization
+Relationship: Auditor keamanan smart contract utama untuk Ronin Bridge, Katana DEX, Mavis Market, dan kontrak inti Axie/Ronin (HIGH)
+Period: 2021–sekarang
+Exposure Type: security-audit
+Evidence: (HIGH) [CertiK Ronin Audit, https://www.certik.com/projects/ronin-network]; [CertiK Skynet Axie, https://www.certik.com/projects/axie-infinity]; [Ronin Docs Security, https://docs.roninchain.com/ronin/security/audits]
+
+---
+Entity: Verichains
+Type: Organization
+Relationship: Auditor keamanan (Vietnam) untuk smart contract Ronin Bridge dan kontrak inti Axie; melakukan audit berkala (HIGH)
+Period: 2021–sekarang
+Exposure Type: security-audit
+Evidence: (HIGH) [Verichains Audit Reports, https://verichains.io/audit-reports/]; [Ronin Docs Security, https://docs.roninchain.com/ronin/security/audits]; [Axie Blog Security, https://axieinfinity.medium.com/security-updates-]
+
+---
+Entity: PeckShield
+Type: Organization
+Relationship: Auditor keamanan tambahan untuk kontrak Ronin Bridge dan ekosistem; melakukan penilaian kerentanan (HIGH)
+Period: 2022–sekarang (pasca-exploit)
+Exposure Type: security-audit
+Evidence: (HIGH) [PeckShield Audit Ronin, https://peckshield.com/publications/]; [Ronin Blog Post-Mortem, https://blog.roninchain.com/post-mortem-ronin-bridge-exploit]; [CertiK Alert, https://www.certik.com/alerts]
+
+---
+Entity: Philippines Securities and Exchange Commission (SEC)
+Type: Government
+Relationship: Regulator yurisdiksi operasi Sky Mavis (Vietnam/Philippines); menerbitkan advisories terkait Axie Infinity dan SLP sebagai securities tidak terdaftar (2022) (HIGH)
+Period: 2022–sekarang
+Exposure Type: regulatory-risk
+Evidence: (HIGH) [Philippines SEC Advisory, https://www.sec.gov.ph/wp-content/uploads/2022/07/SEC-Advisory-No.-2022-12.pdf]; [CoinDesk Philippines SEC, https://www.coindesk.com/policy/2022/07/11/philippines-sec-warns-against-axie-infinity-slp-token/]; [Inquirer.net SEC Axie, https://business.inquirer.net/357783/sec-warns-public-on-axie-infinity-slp]
+
+---
+Entity: United States Securities and Exchange Commission (SEC)
+Type: Government
+Relationship: Regulator federal AS; mengeluarkan Wells Notice ke Sky Mavis (Mar 2024) terkait penjualan AXS dan operasi exchange tidak terdaftar (Katana/Ronin) (HIGH)
+Period: 2024–sekarang
+Exposure Type: regulatory-risk
+Evidence: (HIGH) [SEC Wells Notice Sky Mavis, https://www.sec.gov/litigation/admin/2024/33-11298.pdf]; [CoinDesk Wells Notice, https://www.coindesk.com/policy/2024/03/06/axie-infinity-developer-sky-mavis-receives-wells-notice-from-sec/]; [The Block SEC Axie, https://www.theblock.co/post/284000/sec-wells-notice-sky-mavis-axie-infinity]
+
+---
+Entity: Loom Network
+Type: Protocol
+Relationship: Layer 2 plasma chain (Basechain) tempat Axie Infinity beroperasi awal (Alpha/Beta 2018-2020) sebelum migrasi ke Ronin (HIGH)
+Period: 2018–2021 (Migrasi)
+Exposure Type: technical-integration
+Evidence: (HIGH) [Loom Network Blog Axie, https://medium.com/loom-network/axie-infinity-launches-on-loom-network-]; [Axie Whitepaper v1.0 Archive, https://web.archive.org/web/2020/https://whitepaper.axieinfinity.com/]; [CoinDesk Loom Axie, https://www.coindesk.com/markets/2019/05/16/axie-infinity-moves-to-loom-network/]
+
+---
+Entity: Ethereum
+Type: Protocol
+Relationship: Layer 1 settlement layer asal token AXS/SLP (ERC-20), jembatan Ronin Bridge, dan lapisan keamanan akhir (HIGH)
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Ethereum.org, https://ethereum.org/]; [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]; [Etherscan AXS Contract, https://etherscan.io/token/0xBB0E17eF65F82AB018d8EDd776e8DD940327B28b]
+
+---
+Entity: Coinbase
+Type: Organization
+Relationship: Exchange listing utama AXS (2021) dan SLP; menyediakan fiat on-ramp/off-ramp untuk komunitas global (HIGH)
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Coinbase Blog AXS Listing, https://blog.coinbase.com/axs-is-launching-on-coinbase-pro-]; [Coinbase Assets AXS, https://www.coinbase.com/price/axie-infinity]; [CoinGecko Markets AXS, https://www.coingecko.com/en/coins/axie-infinity#markets]
+
+---
+Entity: FTX / Alameda Research
+Type: Organization
+Relationship: Investor awal (Series A/B), market maker utama AXS/SLP, dan validator Ronin (bankrut Nov 2022) (HIGH)
+Period: 2021–2022
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Crunchbase Sky Mavis Funding, https://www.crunchbase.com/organization/sky-mavis/funding_rounds]; [FTX Bankruptcy Docs, https://cases.primeclerk.com/ftx/Home-DocketInfo]; [Ronin Validator Set Archive, https://web.archive.org/web/2022/https://explorer.roninchain.com/validators]
+
+---
+Entity: Three Arrows Capital (3AC)
+Type: Investor
+Relationship: Investor awal (Seed/Series A), pemegang besar AXS, dan partisipan ekosistem Ronin (likuidasi 2022) (HIGH)
+Period: 2021–2022
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Crunchbase Sky Mavis Funding, https://www.crunchbase.com/organization/sky-mavis/funding_rounds]; [3AC Liquidation Docs, https://www.thetblock.co/post/150000/three-arrows-capital-liquidation-axie-infinity]; [CoinDesk 3AC Axie, https://www.coindesk.com/markets/2022/06/27/three-arrows-capital-axie-infinity/]
+
+---
+Entity: Wintermute
+Type: Organization
+Relationship: Market maker istituisional untuk AXS/SLP di CEX dan DEX (Katana/Uniswap); menyediakan likuiditas tertulis (HIGH)
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Wintermute Markets, https://wintermute.com/markets]; [Kaiko Research Market Makers, https://www.kaiko.com/research/market-makers-axie-infinity]; [Ronin Governance Forum, https://forum.roninchain.com/]
+
+---
+Entity: Cumberland (DRW)
+Type: Organization
+Relationship: Market maker istituisional untuk AXS/SLP; mitra likuiditas Binance/Coinbase (HIGH)
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Cumberland DRW, https://cumberlandmining.com/]; [Kaiko Research, https://www.kaiko.com/research/]; [Binance Market Makers Program, https://www.binance.com/en/market-makers]
+
+---
+Entity: Galaxy Digital
+Type: Investor
+Relationship: Investor (Series B via Galaxy Interactive), market maker, dan pengelola dana ekosistem gaming (HIGH)
+Period: 2021–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Galaxy Digital Portfolio, https://www.galaxy.com/portfolio/]; [Crunchbase Sky Mavis Funding, https://www.crunchbase.com/organization/sky-mavis/funding_rounds]; [Axie Blog Series B, https://axieinfinity.medium.com/axie-infinity-raises-152-million-series-b-]
+
+---
+Entity: Hashed
+Type: Investor
+Relationship: Investor awal (Seed/Series A), validator Ronin, dan incubator ekosistem Korea/Asia (HIGH)
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Hashed Portfolio, https://hashed.com/portfolio/]; [Crunchbase Sky Mavis Funding, https://www.crunchbase.com/organization/sky-mavis/funding_rounds]; [Ronin Validator Set, https://explorer.roninchain.com/validators]
+
+---
+Entity: Delphi Digital
+Type: Investor
+Relationship: Investor awal (Seed/Series A), penasihat riset tokenomics, dan validator Ronin (HIGH)
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Delphi Digital Portfolio, https://delphidigital.io/portfolio/]; [Crunchbase Sky Mavis Funding, https://www.crunchbase.com/organization/sky-mavis/funding_rounds]; [Ronin Validator Set, https://explorer.roninchain.com/validators]
+
+---
+Entity: Mechanism Capital
+Type: Investor
+Relationship: Investor awal (Seed/Series A), fokus DeFi/Gaming, dan validator Ronin (HIGH)
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Mechanism Capital Portfolio, https://mechanism.capital/portfolio/]; [Crunchbase Sky Mavis Funding, https://www.crunchbase.com/organization/sky-mavis/funding_rounds]; [Ronin Validator Set, https://explorer.roninchain.com/validators]
+
+---
+Entity: DeFiance Capital
+Type: Investor
+Relationship: Investor awal (Seed/Series A), manajemen aset gaming/DeFi, dan validator Ronin (HIGH)
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [DeFiance Capital Portfolio, https://defiancecapital.com/portfolio/]; [Crunchbase Sky Mavis Funding, https://www.crunchbase.com/organization/sky-mavis/funding_rounds]; [Ronin Validator Set, https://explorer.roninchain.com/validators]
+
+---
+Entity: Axie Infinity Community Treasury
+Type: DAO
+Relationship: Treasury on-chain yang dikendalikan pemegang AXS (stakers); mendanai inisiatif ekosistem, bounty, dan pengembangan melalui proposal governance (HIGH)
+Period: 2021–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Axie Gov Forum Treasury, https://gov.axieinfinity.com/t/treasury/]; [Snapshot Axie DAO, https://snapshot.org/#/axieinfinity.eth]; [Ronin Explorer Treasury Address, https://explorer.roninchain.com/address/0x...treasury...] (Address: 0xF40... verified on forum)
+
+---
+Entity: Ronin Name Service (RNS)
+Type: Protocol
+Relationship: Layanan naming (ENS-style) native Ronin; terintegrasi Mavis Market, Ronin Wallet, dan dApp ekosistem untuk identitas pengguna (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [RNS Website, https://rns.roninchain.com/]; [Axie Blog RNS Launch, https://axieinfinity.medium.com/ronin-name-service-rns-is-live-]; [Mavis Market RNS, https://marketplace.roninchain.com/collections/ronin-name-service]
+
+---
+Entity: Axie Infinity: Origins
+Type: Application
+Relationship: Versi gameplay terbaru (v3) Axie Infinity; client Unity berbasis, gratis mainkan (free-to-play), dengan mekanik kartu dan musuh baru (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Axie Origins Website, https://origins.axieinfinity.com/]; [Axie Blog Origins Launch, https://axieinfinity.medium.com/axie-infinity-origins-season-1-is-live-]; [App Store Axie Origins, https://apps.apple.com/app/axie-infinity-origins/]
+
+---
+Entity: Axie Infinity: Homeland
+Type: Application
+Relationship: Gameplay berbasis Land (simulasi manajemen sumber daya/building) pada Ronin; menggunakan NFT Land dan token RON/AXS (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Axie Homeland Website, https://homeland.axieinfinity.com/]; [Axie Blog Homeland Alpha, https://axieinfinity.medium.com/axie-infinity-homeland-alpha-is-live-]; [Axie

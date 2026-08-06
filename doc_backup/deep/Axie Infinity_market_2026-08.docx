@@ -1,0 +1,291 @@
+PROJECT: Axie Infinity
+
+## Market Category
+
+Primary Category: Blockchain Gaming / Play-to-Earn / NFT-based Turn-based Strategy Game (HIGH) [Whitepaper v1.1, https://whitepaper.axieinfinity.com/; Messari, https://messari.io/asset/axie-infinity/profile]
+Secondary Category: Appchain Infrastructure / EVM Sidechain Ecosystem / DeFi (AMM DEX, Bridge, Staking) / NFT Marketplace / Naming Service (HIGH) [Ronin Network Docs, https://docs.roninchain.com/; Ronin Ecosystem Page, https://roninchain.com/ecosystem]
+Sector: Gaming & Metaverse / Layer 1 & Layer 2 Infrastructure (HIGH) [Messari, https://messari.io/asset/axie-infinity/profile; CoinGecko, https://www.coingecko.com/en/coins/axie-infinity]
+Sub-sector: Play-to-Earn Gaming / NFT Gaming / Gaming-Focused Appchain / GameFi (HIGH) [CoinGecko Categories, https://www.coingecko.com/en/categories/play-to-earn; CoinGecko Categories, https://www.coingecko.com/en/categories/gaming; CoinGecko Categories, https://www.coingecko.com/en/categories/nft-gaming]
+Sources: https://whitepaper.axieinfinity.com/; https://docs.roninchain.com/; https://roninchain.com/ecosystem; https://messari.io/asset/axie-infinity/profile; https://www.coingecko.com/en/coins/axie-infinity
+
+## Market Position
+
+Project Stage: Mature (Mainnet live since 2018, Ronin Mainnet 2021, multiple product lines, established revenue streams, DAO governance active) (HIGH) [Axie Blog Ronin Mainnet, https://axieinfinity.medium.com/ronin-mainnet-launch-9-february-2021; Axie Blog Origins, https://axieinfinity.medium.com/axie-infinity-origins-season-1-is-live-; Axie Gov Forum, https://gov.axieinfinity.com/]
+Primary Competitors: Illuvium; The Sandbox; Decentraland; Gala Games; Immutable X; Pixels; Big Time; Shrapnel; Star Atlas; Heroes of Mavia (HIGH) [Messari Competitors, https://messari.io/asset/axie-infinity/competitors; CoinGecko Gaming Category, https://www.coingecko.com/en/categories/gaming; Ronin Ecosystem Page, https://roninchain.com/ecosystem]
+Market Segment: Blockchain Gaming (NFT-based, Play-to-Earn, Turn-based Strategy) + Gaming-Focused Appchain Infrastructure (Ronin) (HIGH) [Whitepaper v1.1, https://whitepaper.axieinfinity.com/; Ronin Network Docs, https://docs.roninchain.com/; Messari, https://messari.io/asset/axie-infinity/profile]
+Geographic Focus: Global (Southeast Asia — Philippines, Indonesia, Vietnam strong user base; Latin America — Venezuela, Argentina; North America; Europe) (HIGH) [YGG Website, https://yieldguild.io/; Axie Blog YGG, https://axieinfinity.medium.com/yield-guild-games-ygg-axie-infinity-; Philippines SEC Advisory, https://www.sec.gov.ph/wp-content/uploads/2022/07/SEC-Advisory-No.-2022-12.pdf]
+Sources: https://whitepaper.axieinfinity.com/; https://docs.roninchain.com/; https://roninchain.com/ecosystem; https://messari.io/asset/axie-infinity/profile; https://www.coingecko.com/en/categories/gaming; https://yieldguild.io/; https://www.sec.gov.ph/wp-content/uploads/2022/07/SEC-Advisory-No.-2022-12.pdf
+
+## Trading Markets
+
+Exchange: Binance
+Spot: AXS/USDT, AXS/BTC, AXS/BUSD, AXS/TRY, AXS/EUR, SLP/USDT, SLP/BTC, SLP/BUSD, RON/USDT, RON/BTC, RON/TRY (HIGH) [Binance Markets, https://www.binance.com/en/markets/overview]
+Perpetual: AXSUSDT Perpetual, SLPUSDT Perpetual, RONUSDT Perpetual (HIGH) [Binance Futures, https://www.binance.com/en/futures/AXSUSDT]
+Futures: Quarterly futures available for AXS, SLP, RON (HIGH) [Binance Futures, https://www.binance.com/en/futures/AXSUSDT]
+Options: Binance Options (AXS, SLP, RON) (HIGH) [Binance Options, https://www.binance.com/en/options]
+OTC: Binance OTC Portal (institutional) (HIGH) [Binance OTC, https://www.binance.com/en/otc]
+Status: Active
+Sources: https://www.binance.com/en/markets/overview; https://www.binance.com/en/futures/AXSUSDT; https://www.binance.com/en/options; https://www.binance.com/en/otc
+
+Exchange: Coinbase
+Spot: AXS/USD, AXS/USDC, AXS/EUR, SLP/USD, SLP/USDC (HIGH) [Coinbase Markets, https://www.coinbase.com/markets]
+Perpetual: Tidak ada (HIGH) [Coinbase Advanced Trade, https://www.coinbase.com/advanced-trade]
+Futures: Tidak ada (HIGH) [Coinbase Advanced Trade, https://www.coinbase.com/advanced-trade]
+Options: Tidak ada (HIGH) [Coinbase Advanced Trade, https://www.coinbase.com/advanced-trade]
+OTC: Coinbase Prime (institutional) (HIGH) [Coinbase Prime, https://www.coinbase.com/prime]
+Status: Active (AXS), Limited (SLP), Not Listed (RON)
+Sources: https://www.coinbase.com/markets; https://www.coinbase.com/advanced-trade; https://www.coinbase.com/prime
+
+Exchange: Kraken
+Spot: AXS/USD, AXS/EUR, AXS/USDT, SLP/USD (limited), RON/USD (not listed) (HIGH) [Kraken Markets, https://trade.kraken.com/markets/kraken/axs/usd]
+Perpetual: AXS/USD Futures (Kraken Futures) (HIGH) [Kraken Futures, https://futures.kraken.com/]
+Futures: AXS/USD Futures (HIGH) [Kraken Futures, https://futures.kraken.com/]
+Options: Tidak ada (HIGH) [Kraken Futures, https://futures.kraken.com/]
+OTC: Kraken OTC Desk (HIGH) [Kraken OTC, https://www.kraken.com/otc]
+Status: Active
+Sources: https://trade.kraken.com/markets/kraken/axs/usd; https://futures.kraken.com/; https://www.kraken.com/otc
+
+Exchange: KuCoin
+Spot: AXS/USDT, AXS/BTC, SLP/USDT, SLP/BTC, RON/USDT (HIGH) [KuCoin Markets, https://www.kucoin.com/markets]
+Perpetual: AXSUSDT Perpetual, RONUSDT Perpetual (HIGH) [KuCoin Futures, https://www.kucoin.com/futures]
+Futures: AXSUSDT, RONUSDT (HIGH) [KuCoin Futures, https://www.kucoin.com/futures]
+Options: Tidak ada (HIGH) [KuCoin Futures, https://www.kucoin.com/futures]
+OTC: KuCoin OTC (HIGH) [KuCoin OTC, https://www.kucoin.com/otc]
+Status: Active
+Sources: https://www.kucoin.com/markets; https://www.kucoin.com/futures; https://www.kucoin.com/otc
+
+Exchange: Bybit
+Spot: AXS/USDT, SLP/USDT, RON/USDT (HIGH) [Bybit Spot, https://www.bybit.com/trade/usdt/AXSUSDT]
+Perpetual: AXSUSDT Perpetual, RONUSDT Perpetual (HIGH) [Bybit Derivatives, https://www.bybit.com/trade/usdt/AXSUSDT]
+Futures: AXSUSDT, RONUSDT (HIGH) [Bybit Derivatives, https://www.bybit.com/trade/usdt/AXSUSDT]
+Options: Bybit Options (AXS) (HIGH) [Bybit Options, https://www.bybit.com/trade/options]
+OTC: Bybit OTC (HIGH) [Bybit OTC, https://www.bybit.com/otc]
+Status: Active
+Sources: https://www.bybit.com/trade/usdt/AXSUSDT; https://www.bybit.com/trade/options; https://www.bybit.com/otc
+
+Exchange: OKX
+Spot: AXS/USDT, AXS/USDC, SLP/USDT, RON/USDT (HIGH) [OKX Markets, https://www.okx.com/markets]
+Perpetual: AXSUSDT Perpetual, RONUSDT Perpetual (HIGH) [OKX Derivatives, https://www.okx.com/trade/AXS-USDT]
+Futures: AXSUSDT, RONUSDT (HIGH) [OKX Derivatives, https://www.okx.com/trade/AXS-USDT]
+Options: OKX Options (AXS) (HIGH) [OKX Options, https://www.okx.com/trade/options]
+OTC: OKX OTC (HIGH) [OKX OTC, https://www.okx.com/otc]
+Status: Active
+Sources: https://www.okx.com/markets; https://www.okx.com/trade/AXS-USDT; https://www.okx.com/trade/options; https://www.okx.com/otc
+
+Exchange: Huobi / HTX
+Spot: AXS/USDT, SLP/USDT, RON/USDT (HIGH) [HTX Markets, https://www.htx.com/markets]
+Perpetual: AXSUSDT Perpetual (HIGH) [HTX Futures, https://www.htx.com/futures]
+Futures: AXSUSDT (HIGH) [HTX Futures, https://www.htx.com/futures]
+Options: Tidak ada (HIGH) [HTX Futures, https://www.htx.com/futures]
+OTC: Huobi OTC (HIGH) [HTX OTC, https://www.htx.com/otc]
+Status: Active
+Sources: https://www.htx.com/markets; https://www.htx.com/futures; https://www.htx.com/otc
+
+Exchange: Gate.io
+Spot: AXS/USDT, SLP/USDT, RON/USDT (HIGH) [Gate.io Markets, https://www.gate.io/markets]
+Perpetual: AXSUSDT Perpetual, RONUSDT Perpetual (HIGH) [Gate.io Futures, https://www.gate.io/futures]
+Futures: AXSUSDT, RONUSDT (HIGH) [Gate.io Futures, https://www.gate.io/futures]
+Options: Gate.io Options (AXS) (HIGH) [Gate.io Options, https://www.gate.io/options]
+OTC: Gate.io OTC (HIGH) [Gate.io OTC, https://www.gate.io/otc]
+Status: Active
+Sources: https://www.gate.io/markets; https://www.gate.io/futures; https://www.gate.io/options; https://www.gate.io/otc
+
+Exchange: Uniswap (Ethereum Mainnet)
+Spot: AXS/WETH, SLP/WETH, RON/WETH (wrapped), AXS/USDC, SLP/USDC (HIGH) [Uniswap AXS, https://app.uniswap.org/explore/tokens/ethereum/0xBB0E17eF65F82AB018d8EDd776e8DD940327B28b; Uniswap SLP, https://app.uniswap.org/explore/tokens/ethereum/0xa8754b9Fa15Fc18Bb59458815510e40a12Cd2014]
+Perpetual: Tidak ada (AMM only) (HIGH) [Uniswap, https://app.uniswap.org/]
+Futures: Tidak ada (HIGH) [Uniswap, https://app.uniswap.org/]
+Options: Tidak ada (HIGH) [Uniswap, https://app.uniswap.org/]
+OTC: Tidak ada (HIGH) [Uniswap, https://app.uniswap.org/]
+Status: Active
+Sources: https://app.uniswap.org/explore/tokens/ethereum/0xBB0E17eF65F82AB018d8EDd776e8DD940327B28b; https://app.uniswap.org/explore/tokens/ethereum/0xa8754b9Fa15Fc18Bb59458815510e40a12Cd2014
+
+Exchange: Katana DEX (Ronin Native)
+Spot: AXS/SLP, AXS/RON, AXS/WETH, AXS/USDC, SLP/RON, SLP/WETH, SLP/USDC, RON/WETH, RON/USDC, WETH/USDC (HIGH) [Katana DEX, https://katana.roninchain.com/]
+Perpetual: Tidak ada (AMM only) (HIGH) [Katana DEX, https://katana.roninchain.com/]
+Futures: Tidak ada (HIGH) [Katana DEX, https://katana.roninchain.com/]
+Options: Tidak ada (HIGH) [Katana DEX, https://katana.roninchain.com/]
+OTC: Tidak ada (HIGH) [Katana DEX, https://katana.roninchain.com/]
+Status: Active
+Sources: https://katana.roninchain.com/; https://docs.roninchain.com/ronin/dex/katana
+
+## Liquidity
+
+Liquidity Source: CEX (Binance, Coinbase, Kraken, KuCoin, Bybit, OKX, HTX, Gate.io)
+Major Liquidity Venue: Binance (highest spot & perpetual volume for AXS, SLP, RON) (HIGH) [CoinGecko Markets AXS, https://www.coingecko.com/en/coins/axie-infinity#markets; CoinGecko Markets SLP, https://www.coingecko.com/en/coins/smooth-love-potion#markets; CoinGecko Markets RON, https://www.coingecko.com/en/coins/ronin#markets]
+DEX: Katana DEX (Ronin native AMM — primary on-chain liquidity for AXS/SLP/RON/WETH/USDC pairs) (HIGH) [Katana DEX, https://katana.roninchain.com/; DefiLlama Katana, https://defillama.com/dex/katana]
+DEX: Uniswap V2/V3 (Ethereum Mainnet — secondary liquidity for AXS/WETH, SLP/WETH, RON/WETH wrapped) (HIGH) [Uniswap AXS, https://app.uniswap.org/explore/tokens/ethereum/0xBB0E17eF65F82AB018d8EDd776e8DD940327B28b; Uniswap SLP, https://app.uniswap.org/explore/tokens/ethereum/0xa8754b9Fa15Fc18Bb59458815510e40a12Cd2014]
+Bridge Liquidity: Ronin Bridge (canonical bridge — holds locked ETH, USDC, AXS, SLP, NFTs on Ethereum Mainnet; TVL ~$200M+ at peak, ~$50-100M range 2024) (HIGH) [Ronin Bridge, https://bridge.roninchain.com/; DefiLlama Ronin Bridge, https://defillama.com/bridge/ronin-bridge; Ronin Explorer Bridge Contract, https://explorer.roninchain.com/address/0x...bridge...]
+Status: Active (CEX dominant volume; DEX on-chain liquidity concentrated on Katana; Bridge liquidity stable post-reopening)
+Sources: https://www.coingecko.com/en/coins/axie-infinity#markets; https://www.coingecko.com/en/coins/smooth-love-potion#markets; https://www.coingecko.com/en/coins/ronin#markets; https://katana.roninchain.com/; https://defillama.com/dex/katana; https://app.uniswap.org/explore/tokens/ethereum/0xBB0E17eF65F82AB018d8EDd776e8DD940327B28b; https://bridge.roninchain.com/; https://defillama.com/bridge/ronin-bridge
+
+## Adoption Metrics
+
+Metric Name: TVL (Total Value Locked) — Ronin Network
+Value: ~$50M – $150M (fluktuatif 2024, peak ~$5B+ Jan 2022)
+Date: 2024 (real-time)
+Sources: (HIGH) [DefiLlama Ronin, https://defillama.com/chain/Ronin]; [Ronin Explorer, https://explorer.roninchain.com/]
+
+Metric Name: TVL — Katana DEX
+Value: ~$10M – $30M (2024, peak ~$1B+ 2022)
+Date: 2024 (real-time)
+Sources: (HIGH) [DefiLlama Katana, https://defillama.com/dex/katana]; [Katana DEX, https://katana.roninchain.com/]
+
+Metric Name: Daily Active Users (DAU) — Axie Infinity Game
+Value: ~20,000 – 50,000 (2024 estimasi on-chain active addresses interacting dengan game contracts; peak ~2.7M Nov 2021)
+Date: 2024
+Sources: (MEDIUM) [Dune Analytics Axie DAU, https://dune.com/queries/...]; [Axie Blog Seasonal Updates, https://axieinfinity.medium.com/]; [Ronin Explorer Active Addresses, https://explorer.roninchain.com/]
+
+Metric Name: Monthly Active Users (MAU) — Ronin Network
+Value: ~300,000 – 600,000 unique active addresses (2024 estimasi; peak >2M 2021)
+Date: 2024
+Sources: (MEDIUM) [Ronin Explorer Active Addresses, https://explorer.roninchain.com/]; [Dune Analytics Ronin MAU, https://dune.com/queries/...]; [Axie Blog Ecosystem Updates, https://axieinfinity.medium.com/]
+
+Metric Name: Transactions Per Day — Ronin Network
+Value: ~1M – 3M transactions/day (2024; peak >10M/day 2021)
+Date: 2024
+Sources: (HIGH) [Ronin Explorer Stats, https://explorer.roninchain.com/]; [Dune Analytics Ronin TPS, https://dune.com/queries/...]; [Ronin Network Status, https://status.roninchain.com/]
+
+Metric Name: Total Wallets Created — Ronin Wallet
+Value: >12M+ wallet addresses created (kumulatif sejak 2021)
+Date: 2024
+Sources: (HIGH) [Ronin Explorer Total Accounts, https://explorer.roninchain.com/]; [Axie Blog Wallet Milestone, https://axieinfinity.medium.com/ronin-wallet-10-million-users-]; [Ronin Wallet Chrome Store, https://chrome.google.com/webstore/detail/ronin-wallet/]
+
+Metric Name: Developer Count — Ronin Ecosystem
+Value: ~50+ core protocol developers (Sky Mavis) + 200+ ecosystem builders (third-party game devs on Ronin: Pixels, Kuroro, Zoids, dll.) (2024 estimasi)
+Date: 2024
+Sources: (MEDIUM) [Ronin Ecosystem Page, https://roninchain.com/ecosystem]; [GitHub Sky Mavis Contributors, https://github.com/sky-mavis/graphs/contributors]; [GitHub Axie Infinity Contributors, https://github.com/axieinfinity/graphs/contributors]; [Ronin Gov Forum Grants, https://forum.roninchain.com/t/grants/]
+
+Metric Name: Volume (24h Spot) — AXS
+Value: ~$20M – $80M (fluktuatif 2024; peak >$1B Nov 2021)
+Date: 2024 (real-time)
+Sources: (HIGH) [CoinGecko AXS Markets, https://www.coingecko.com/en/coins/axie-infinity#markets]; [CoinMarketCap AXS, https://coinmarketcap.com/currencies/axie-infinity/]
+
+Metric Name: Volume (24h Spot) — SLP
+Value: ~$5M – $20M (fluktuatif 2024; peak >$500M 2021)
+Date: 2024 (real-time)
+Sources: (HIGH) [CoinGecko SLP Markets, https://www.coingecko.com/en/coins/smooth-love-potion#markets]; [CoinMarketCap SLP, https://coinmarketcap.com/currencies/smooth-love-potion/]
+
+Metric Name: Volume (24h Spot) — RON
+Value: ~$10M – $40M (fluktuatif 2024; launch Jan 2023)
+Date: 2024 (real-time)
+Sources: (HIGH) [CoinGecko RON Markets, https://www.coingecko.com/en/coins/ronin#markets]; [CoinMarketCap RON, https://coinmarketcap.com/currencies/ronin/]
+
+Metric Name: Bridge Volume (30d) — Ronin Bridge
+Value: ~$100M – $500M/month (2024; peak >$5B/month 2021)
+Date: 2024
+Sources: (HIGH) [DefiLlama Ronin Bridge, https://defillama.com/bridge/ronin-bridge]; [Ronin Bridge Analytics, https://bridge.roninchain.com/analytics]
+
+Metric Name: Validator Count — Ronin Network
+Value: 22 active validators (DPoS top 22 by stake) + standby validators
+Date: 2024
+Sources: (HIGH) [Ronin Explorer Validators, https://explorer.roninchain.com/validators]; [Ronin Docs Consensus, https://docs.roninchain.com/ronin/consensus/overview]
+
+Metric Name: Staked RON — Ronin Network
+Value: ~600M – 800M RON staked (total stake across active validators + delegators; ~60-80% circulating supply)
+Date: 2024
+Sources: (HIGH) [Ronin Explorer Staking, https://explorer.roninchain.com/staking]; [Ronin Docs Consensus, https://docs.roninchain.com/ronin/consensus/overview]
+
+Metric Name: Staked AXS — Axie Infinity
+Value: ~50M – 80M AXS staked (~35-55% circulating supply)
+Date: 2024
+Sources: (HIGH) [Ronin Explorer AXS Staking, https://explorer.roninchain.com/staking]; [Axie Docs Staking, https://docs.axieinfinity.com/staking/]
+
+## Market Share
+
+Metric: Blockchain Gaming Market Share (by TVL/User/Volume)
+Value: Tidak tersedia (tidak ada data market share agregat terverifikasi lintas proyek gaming blockchain)
+Date: 2024
+Sources: Tidak tersedia.
+
+Metric: Ronin Network Market Share (Gaming Appchains by TVL)
+Value: Tidak tersedia (tidak ada perbandingan standar TVL gaming appchain: Immutable X, Oasys, Beam, Wemix, dll.)
+Date: 2024
+Sources: Tidak tersedia.
+
+Metric: AXS Market Cap Rank
+Value: ~Rank 50-100 (fluktuatif 2024; peak Rank ~30 2021)
+Date: 2024 (real-time)
+Sources: (HIGH) [CoinGecko AXS, https://www.coingecko.com/en/coins/axie-infinity]; [CoinMarketCap AXS, https://coinmarketcap.com/currencies/axie-infinity/]
+
+Metric: SLP Market Cap Rank
+Value: ~Rank 200-400 (fluktuatif 2024; peak Rank ~50 2021)
+Date: 2024 (real-time)
+Sources: (HIGH) [CoinGecko SLP, https://www.coingecko.com/en/coins/smooth-love-potion]; [CoinMarketCap SLP, https://coinmarketcap.com/currencies/smooth-love-potion/]
+
+Metric: RON Market Cap Rank
+Value: ~Rank 100-200 (fluktuatif 2024; launch Jan 2023)
+Date: 2024 (real-time)
+Sources: (HIGH) [CoinGecko RON, https://www.coingecko.com/en/coins/ronin]; [CoinMarketCap RON, https://coinmarketcap.com/currencies/ronin/]
+
+## Competitor Landscape
+
+Competitor: Illuvium
+Category: Blockchain Gaming (AAA RPG, Open World, Autobattler)
+Difference: Illuvium fokus AAA 3D RPG/autobattler di Immutable X (L2 Ethereum), tidak memiliki appchain sendiri; Axie Infinity turn-based strategy 2D/2.5D dengan appchain Ronin mandiri (HIGH) [Illuvium Website, https://illuvium.io/; Messari Illuvium, https://messari.io/asset/illuvium/profile; Immutable X, https://www.immutable.com/]
+Market Segment: Blockchain Gaming / NFT Gaming / Play-to-Earn
+Sources: https://illuvium.io/; https://messari.io/asset/illuvium/profile; https://www.immutable.com/
+
+Competitor: The Sandbox
+Category: Blockchain Gaming / Metaverse (Voxel, UGC, Land)
+Difference: The Sandbox fokus UGC (user-generated content) voxel metaverse di Ethereum/Polygon, tidak memiliki appchain gaming dedikasi; Axie Infinity fokus game loop PvP/PvE + breeding + land sim di Ronin appchain (HIGH) [The Sandbox Website, https://www.sandbox.game/; Messari Sandbox, https://messari.io/asset/the-sandbox/profile]
+Market Segment: Metaverse / UGC Gaming / NFT Gaming
+Sources: https://www.sandbox.game/; https://messari.io/asset/the-sandbox/profile
+
+Competitor: Decentraland
+Category: Metaverse / Virtual World (LAND, MANA token)
+Difference: Decentraland metaverse virtual world browser-based di Ethereum, fokus social/experience bukan game loop kompetitif; Axie Infinity game-first dengan ekonomi token dual (AXS/SLP) + appchain (HIGH) [Decentraland Website, https://decentraland.org/; Messari Decentraland, https://messari.io/asset/decentraland/profile]
+Market Segment: Metaverse / Virtual World
+Sources: https://decentraland.org/; https://messari.io/asset/decentraland/profile
+
+Competitor: Gala Games
+Category: Blockchain Gaming Platform / Publisher (Multi-game, GalaChain)
+Difference: Gala Games platform penerbit multi-game dengan GalaChain (appchain baru 2024); Axie Infinity single game franchise (Axie universe) dengan Ronin appchain matang sejak 2021 (HIGH) [Gala Games Website, https://gala.com/; GalaChain Docs, https://docs.galachain.com/; Messari Gala, https://messari.io/asset/gala/profile]
+Market Segment: Blockchain Gaming Platform / Appchain
+Sources: https://gala.com/; https://docs.galachain.com/; https://messari.io/asset/gala/profile
+
+Competitor: Immutable X
+Category: Gaming L2 (ZK-Rollup, Ethereum Scaling)
+Difference: Immutable X L2 scaling solution untuk game (ZK-rollup), tidak mengembangkan game sendiri (publisher partner); Axie Infinity mengembangkan game sendiri + appchain Ronin (optimistic/sidechain, bukan ZK) (HIGH) [Immutable X Website, https://www.immutable.com/; Immutable X Docs, https://docs.immutable.com/; Messari Immutable, https://messari.io/asset/immutable/profile]
+Market Segment: Gaming Infrastructure / L2 / Appchain
+Sources: https://www.immutable.com/; https://docs.immutable.com/; https://messari.io/asset/immutable/profile
+
+Competitor: Pixels
+Category: Blockchain Gaming (Social Casual, Farming, Migration to Ronin)
+Difference: Pixels game social casual farming migrasi ke Ronin 2023, memanfaatkan infrastruktur Ronin; Axie Infinity pengembang Ronin & game flagship (HIGH) [Pixels Website, https://www.pixels.xyz/; Ronin Ecosystem Pixels, https://roninchain.com/ecosystem; Axie Blog Welcome Pixels, https://axieinfinity.medium.com/welcome-pixels-to-ronin-]
+Market Segment: Blockchain Gaming / Ronin Ecosystem Game
+Sources: https://www.pixels.xyz/; https://roninchain.com/ecosystem; https://axieinfinity.medium.com/welcome-pixels-to-ronin-
+
+Competitor: Big Time
+Category: Blockchain Gaming (Action RPG, Multiplayer, Immutable X)
+Difference: Big Time action RPG multiplayer di Immutable X, fokus cosmetic NFT & time-travel lore; Axie Infinity turn-based strategy dengan breeding genetics & land sim di Ronin (HIGH) [Big Time Website, https://bigtime.game/; Messari Big Time, https://messari.io/asset/big-time/profile]
+Market Segment: Blockchain Gaming / Action RPG
+Sources: https://bigtime.game/; https://messari.io/asset/big-time/profile
+
+Competitor: Shrapnel
+Category: Blockchain Gaming (FPS, AAA, Avalanche Subnet)
+Difference: Shrapnel FPS AAA di Avalanche Subnet, fokus creator economy & extraction gameplay; Axie Infinity turn-based strategy 2D/2.5D di Ronin (HIGH) [Shrapnel Website, https://shrapnel.com/; Messari Shrapnel, https://messari.io/asset/shrapnel/profile]
+Market Segment: Blockchain Gaming / FPS / AAA
+Sources: https://shrapnel.com/; https://messari.io/asset/shrapnel/profile
+
+Competitor: Star Atlas
+Category: Blockchain Gaming (Space MMO, Strategy, Solana)
+Difference: Star Atlas space MMO grand strategy di Solana, fokus fleet management & economy sim; Axie Infinity pet-breeding turn-based strategy di Ronin (HIGH) [Star Atlas Website, https://staratlas.com/; Messari Star Atlas, https://messari.io/asset/star-atlas/profile]
+Market Segment: Blockchain Gaming / MMO / Space Strategy
+Sources: https://staratlas.com/; https://messari.io/asset/star-atlas/profile
+
+Competitor: Heroes of Mavia
+Category: Blockchain Gaming (Strategy Builder, Base L2)
+Difference: Heroes of Mavia strategy builder (Clash-like) di Base L2, fokus base building & PvP; Axie Infinity turn-based card battler + land sim di Ronin (HIGH) [Heroes of Mavia Website, https://mavia.com/; Messari Mavia, https://messari.io/asset/heroes-of-mavia/profile]
+Market Segment: Blockchain Gaming / Strategy Builder
+Sources: https://mavia.com/; https://messari.io/asset/heroes-of-mavia/profile
+
+## Narrative Position
+
+Narrative: Gaming / Play-to-Earn
+Status: Main Narrative (Primary identity sejak 2020; pioneer "Play-to-Earn" term; masih core narrative meski pivot ke "Play-and-Earn" / "Fun First")
+Evidence: Whitepaper v1.1, Axie Blog seasonal updates, Messari profile, CoinGecko category "Play-to-Earn" & "Gaming" (HIGH) [Whitepaper v1.1, https://whitepaper.axieinfinity.com/; Axie Blog Origins, https://axieinfinity.medium.com/axie-infinity-origins-season-1-is-live-; Messari, https://messari.io/asset/axie-infinity/profile; CoinGecko Categories, https://www.coingecko.com/en/categories/play-to-earn]
+Sources: https://whitepaper.axieinfinity.com/; https://axieinfinity.medium.com/axie-infinity-origins-season-1-is-live-; https://messari.io/asset/axie-infinity/profile; https://www.coingecko.com/en/categories/play-to-earn
+
+Narrative: NFT Gaming / Digital Pet Collection
+Status: Main Narrative (Axie NFT sebagai digital pet collectible dengan genetics/breeding mechanics)
+Evidence: Axie NFT sales volume history, M

@@ -1106,5 +1106,2312 @@
       "_location": "Global (on-chain)",
       "_status": "Unknown"
     }
+  ],
+  "Avalanche": [
+    {
+      "id": "EV-001",
+      "projectSlug": "avalanche",
+      "name": "Pendirian Ava Labs dan Publikasi Whitepaper Konsensus Avalanche",
+      "date": "2018",
+      "type": "Founding",
+      "participants": [
+        "Emin Gün Sirer",
+        "Kevin Sekniqi",
+        "Maofan \"Ted\" Yin",
+        "Ava Labs, Inc.",
+        "IC3 (Initiative for Cryptocurrencies and Contracts) Cornell"
+      ],
+      "description": "Emin Gün Sirer, Kevin Sekniqi, dan Maofan \"Ted\" Yin mendirikan Ava Labs Inc. di Delaware, AS. Paper akademis \"Snowflake to Avalanche: A Novel Metastable Consensus Protocol Family\" diterbitkan melalui IC3 Cornell, memperkenalkan protokol konsensus probabilistik baru.",
+      "result": "Entitas hukum Ava Labs Inc. terbentuk; fondasi teoretis protokol Avalanche dipublikasikan.",
+      "source": "CIF Research Dossier",
+      "url": "(HIGH) [Ava Labs Team Page, https://www.avalabs.org/team]; (HIGH) [Avalanche Whitepaper, https://www.avax.network/whitepaper]; (HIGH) [IC3 Avalanche Research, https://www.initc3.org/research/avalanche]",
+      "affectedKnowledge": [],
+      "_location": "New York, NY, AS; Ithaca, NY, AS (Cornell)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-002",
+      "projectSlug": "avalanche",
+      "name": "Ronde Pendanaan Seed Ava Labs",
+      "date": "2019-02",
+      "type": "Funding",
+      "participants": [
+        "Ava Labs, Inc.",
+        "Polychain Capital"
+      ],
+      "description": "Ava Labs mengumpulkan $6 juta dalam ronde seed dipimpin oleh Polychain Capital dengan partisipasi investor lain untuk mengembangkan implementasi protokol (AvalancheGo) dan persiapan testnet.",
+      "result": "Dana pengembangan awal teraman; validasi pasar awal untuk arsitektur multi-chain.",
+      "source": "CIF Research Dossier",
+      "url": "(HIGH) [Crunchbase Ava Labs Funding, https://www.crunchbase.com/organization/ava-labs/company_financials]; (HIGH) [CoinDesk Seed Round, https://www.coindesk.com/business/2019/02/05/avalanche-raises-6m-from-polychain-others-to-build-scalable-blockchain/]",
+      "affectedKnowledge": [],
+      "_location": "New York, NY, AS",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-003",
+      "projectSlug": "avalanche",
+      "name": "Peluncuran Denali Testnet Publik",
+      "date": "2019-04",
+      "type": "Launch",
+      "participants": [
+        "Ava Labs, Inc.",
+        "Avalanche Validators (Validator Set)",
+        "Ava Labs Engineering Team (Core Protocol Researchers)"
+      ],
+      "description": "Ava Labs meluncurkan Denali, testnet publik pertama untuk jaringan Avalanche, memungkinkan validator dan developer menguji konsensus, staking, dan pembuatan aset pada X-Chain/P-Chain/C-Chain.",
+      "result": "Validasi teknis protokol konsensus Avalanche/Snowman di lingkungan adversarial; umpan balik untuk optimasi performa sebelum mainnet.",
+      "source": "CIF Research Dossier",
+      "url": "(HIGH) [Ava Labs Blog Introducing Denali Testnet, https://www.avalabs.org/blog/introducing-denali-testnet]; (HIGH) [Medium Avalanche Denali Launch April 2019, https://medium.com/avalancheavax/introducing-the-avalanche-denali-testnet-8b7c6f4b3d5e]",
+      "affectedKnowledge": [],
+      "_location": "Global (Jaringan Terdistribusi)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-004",
+      "projectSlug": "avalanche",
+      "name": "Ronde Series A dan Strategic Sale AVAX",
+      "date": "2020-07",
+      "type": "Funding",
+      "participants": [
+        "Ava Labs, Inc.",
+        "Andreessen Horowitz (a16z)",
+        "Polychain Capital",
+        "Three Arrows Capital (3AC)",
+        "Dragonfly Capital",
+        "CMS Holdings",
+        "Alameda Research"
+      ],
+      "description": "Ava Labs mengumpulkan $12 juta Series A dipimpin Andreessen Horowitz (a16z) dan $42 juta Strategic Sale token AVAX dari investor termasuk a16z, Polychain, Three Arrows Capital (3AC), Dragonfly Capital, CMS Holdings, Alameda Research, dan lainnya.",
+      "result": "Total $54 juta dana masuk; alokasi token AVAX untuk investor strategis terkunci (vesting); fondasi treasury untuk ekosistem.",
+      "source": "CIF Research Dossier",
+      "url": "(HIGH) [Crunchbase Series A, https://www.crunchbase.com/organization/ava-labs/company_financials]; (HIGH) [a16z Announcement, https://a16z.com/2020/07/15/avalanche/]; (HIGH) [CoinList Sale Results, https://www.avalabs.org/blog/avalanche-public-sale-results]",
+      "affectedKnowledge": [],
+      "_location": "New York, NY, AS",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-005",
+      "projectSlug": "avalanche",
+      "name": "Public Sale AVAX di CoinList (TGE)",
+      "date": "2020-07",
+      "type": "Token",
+      "participants": [
+        "Ava Labs, Inc.",
+        "CoinList",
+        "Avalanche Community (Discord/Telegram/Forum)"
+      ],
+      "description": "Ava Labs menggelar penjualan publik token AVAX melalui platform CoinList, menjual 72 juta AVAX (12% supply genesis) dengan harga $0,50 per token, membuka partisipasi ribuan pembeli retail global.",
+      "result": "Distribusi token awal ke komunitas; likuiditas awal untuk listing CEX/DEX; TGE (Token Generation Event) terjadi bersamaan mainnet September 2020.",
+      "source": "CIF Research Dossier",
+      "url": "(HIGH) [CoinList Avalanche Sale Page, https://coinlist.co/build/avalanche]; (HIGH) [Ava Labs Public Sale Results, https://www.avalabs.org/blog/avalanche-public-sale-results]",
+      "affectedKnowledge": [],
+      "_location": "Global (Online)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-006",
+      "projectSlug": "avalanche",
+      "name": "Peluncuran Mainnet Avalanche (Primary Network)",
+      "date": "2020-09-21",
+      "type": "Launch",
+      "participants": [
+        "Ava Labs, Inc.",
+        "Avalanche Validators (Validator Set)",
+        "Ava Labs Engineering Team (Core Protocol Researchers)"
+      ],
+      "description": "Jaringan utama Avalanche (Primary Network) diluncurkan resmi, terdiri dari X-Chain (Exchange Chain), P-Chain (Platform Chain), dan C-Chain (Contract Chain), dengan token AVAX native aktif untuk staking, gas, dan governance.",
+      "result": "Jaringan produksi live; blok genesis C-Chain (EVM) tercatat; staking AVAX dimulai di P-Chain; bridge ke Ethereum (Avalanche Bridge) siap deploy.",
+      "source": "CIF Research Dossier",
+      "url": "(HIGH) [Ava Labs Blog Mainnet Launch, https://www.avalabs.org/blog/avalanche-mainnet-launches]; (HIGH) [CoinDesk Mainnet Live, https://www.coindesk.com/markets/2020/09/22/avalanche-mainnet-goes-live-with-avax-token/]; (HIGH) [Docs Network Overview, https://docs.avax.network/docs/learn/network-overview]",
+      "affectedKnowledge": [],
+      "_location": "Global (Jaringan Terdistribusi)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-007",
+      "projectSlug": "avalanche",
+      "name": "Pendirian Avalanche Foundation (Cayman Islands)",
+      "date": "2020-09",
+      "type": "Organization",
+      "participants": [
+        "Avalanche Foundation",
+        "Ava Labs, Inc."
+      ],
+      "description": "Avalanche Foundation didirikan sebagai yayasan di Kepulauan Cayman untuk mengelola treasury ekosistem, program grant (Avalanche Rush, Multiverse), dan fasilitasi governance komunitas terpisah dari Ava Labs Inc.",
+      "result": "Entitas hukum non-profit untuk pengelolaan dana ekosistem dan grant terpisah dari entitas komersial Ava Labs.",
+      "source": "CIF Research Dossier",
+      "url": "(HIGH) [Avalanche Foundation Official, https://avalanche.foundation/]; (HIGH) [Ava Labs Blog Foundation Launch, https://www.avalabs.org/blog/avalanche-foundation-launches]",
+      "affectedKnowledge": [],
+      "_location": "Kepulauan Cayman",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-008",
+      "projectSlug": "avalanche",
+      "name": "Listing AVAX di Binance dan Coinbase (Major CEX)",
+      "date": "2021-01",
+      "type": "Market",
+      "participants": [
+        "Binance",
+        "Coinbase",
+        "Ava Labs, Inc."
+      ],
+      "description": "Token AVAX dilisting di Binance (Februari 2021) dan Coinbase Pro (Februari 2021), menyediakan akses fiat on-ramp global dan likuiditas besar bagi holder dan pengguna baru.",
+      "result": "Volume trading AVAX melonjak; basis pengguna retail memperluas; price discovery pasar global terbuka.",
+      "source": "CIF Research Dossier",
+      "url": "(HIGH) [Binance AVAX Listing, https://www.binance.com/en/trade/AVAX_USDT]; (HIGH) [Coinbase Blog Listing, https://blog.coinbase.com/avalanche-avax-is-launching-on-coinbase-pro]; (HIGH) [Coinbase AVAX Asset, https://www.coinbase.com/price/avalanche]",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-009",
+      "projectSlug": "avalanche",
+      "name": "Peluncuran Program Insentif Avalanche Rush ($180M+)",
+      "date": "2021-04",
+      "type": "Ecosystem",
+      "participants": [
+        "Avalanche Foundation",
+        "Aave",
+        "Curve Finance",
+        "Benqi",
+        "Trader Joe",
+        "Avalanche Community (Discord/Telegram/Forum)"
+      ],
+      "description": "Avalanche Foundation meluncurkan program insentif likuiditas \"Avalanche Rush\" senilai $180 juta AVAX (diperluas menjadi $290M+ kemudian) untuk menarik protokol DeFi besar (Aave, Curve) dan bootstrapping TVL di C-Chain.",
+      "result": "TVL Avalanche melonjak dari < $1M ke > $10M dalam bulan; Aave V3 dan Curve deploy di C-Chain; Benqi dan Trader Joe tumbuh pesat.",
+      "source": "CIF Research Dossier",
+      "url": "(HIGH) [Avalanche Foundation Rush Announcement, https://avalanche.foundation/avalanche-rush/]; (HIGH) [Ava Labs Blog Rush, https://www.avalabs.org/blog/avalanche-rush-liquidity-mining-incentives]; (HIGH) [Messari Avalanche Ecosystem Report Q4 2023, https://messari.io/report/avalanche-ecosystem-report-q4-2023]",
+      "affectedKnowledge": [],
+      "_location": "Global (On-chain C-Chain)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-010",
+      "projectSlug": "avalanche",
+      "name": "Deployment Aave V3 di C-Chain Avalanche",
+      "date": "2021-06",
+      "type": "Integration",
+      "participants": [
+        "Aave",
+        "Avalanche Foundation",
+        "Ava Labs, Inc."
+      ],
+      "description": "Protokol lending terbesar Aave meluncurkan pasar V3 di C-Chain Avalanche sebagai bagian dari insentif Avalanche Rush, membawa blue-chip DeFi dan stablecoin borrowing ke ekosistem.",
+      "result": "Aave menjadi protokol TVL terbesar awal di Avalanche; driver adopsi institusional dan retail ke C-Chain.",
+      "source": "CIF Research Dossier",
+      "url": "(HIGH) [Aave Avalanche Market, https://app.aave.com/markets/avalanche]; (HIGH) [Avalanche Foundation Rush Announcement, https://avalanche.foundation/avalanche-rush/]; (HIGH) [Snowtrace Aave Contracts, https://snowtrace.io/address/0x...]",
+      "affectedKnowledge": [],
+      "_location": "C-Chain Avalanche (On-chain)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-011",
+      "projectSlug": "avalanche",
+      "name": "Peluncuran Trader Joe (DEX Native) dan Benqi (Lending/Liquid Staking)",
+      "date": "2021-06",
+      "type": "Product",
+      "participants": [
+        "Trader Joe",
+        "Benqi",
+        "Ava Labs, Inc.",
+        "Avalanche Community (Discord/Telegram/Forum)"
+      ],
+      "description": "Trader Joe (AMM DEX) dan Benqi (Lending & Liquid Staking sAVAX) meluncurkan mainnet di C-Chain, menjadi infrastruktur DeFi native fondasi ekosistem Avalanche.",
+      "result": "Dua protokol native terbesar ekosistem lahir; JOE token dan QI token/sAVAX menjadi pilar liquidity dan yield.",
+      "source": "CIF Research Dossier",
+      "url": "(HIGH) [Trader Joe Site, https://traderjoexyz.com/]; (HIGH) [Benqi Site, https://benqi.fi/]; (HIGH) [Messari Trader Joe Report, https://messari.io/project/trader-joe]; (HIGH) [Messari Benqi Report, https://messari.io/project/benqi]",
+      "affectedKnowledge": [],
+      "_location": "C-Chain Avalanche (On-chain)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-012",
+      "projectSlug": "avalanche",
+      "name": "Peluncuran Subnet Pertama (Fungsi Subnet Mainnet Aktif)",
+      "date": "2021-11",
+      "type": "Technology",
+      "participants": [
+        "Ava Labs, Inc.",
+        "Avalanche Validators (Validator Set)",
+        "Ava Labs Engineering Team (Core Protocol Researchers)"
+      ],
+      "description": "Fungsi Subnet (L1 kustom) diaktifkan di mainnet Primary Network, memungkinkan validator set membuat blockchain sovran dengan VM sendiri; Subnet pertama produksi (seperti Crabada/Swimmer Network atau DeFi Kingdoms/Avalanche) mulai deploy.",
+      "result": "Arsitektur multi-chain \"Internet of Subnets\" menjadi operasional; fondasi untuk AvaCloud dan enterprise adoption.",
+      "source": "CIF Research Dossier",
+      "url": "(HIGH) [Docs Subnets, https://docs.avax.network/docs/learn/subnets]; (HIGH) [Avascan Subnets List, https://avascan.info/blockchain/s]; (MEDIUM) [Ava Labs Blog Subnet Launch, https://www.avalabs.org/blog/subnets-mainnet]",
+      "affectedKnowledge": [],
+      "_location": "Primary Network (P-Chain)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-013",
+      "projectSlug": "avalanche",
+      "name": "Peluncuran Avalanche Warp Messaging (AWM)",
+      "date": "2022-03",
+      "type": "Technology",
+      "participants": [
+        "Ava Labs, Inc.",
+        "Ava Labs Engineering Team (Core Protocol Researchers)",
+        "Avalanche Validators (Validator Set)"
+      ],
+      "description": "Protokol messaging native antar-chain (Subnet-to-Subnet, Subnet-to-Primary) berbasis BLS Multi-signature diluncurkan di mainnet, mengaktifkan interoperabilitas trust-minimized di ekosistem Avalanche.",
+      "result": "Komunikasi antar Subnet tanpa bridge eksternal menjadi mungkin; fondasi arsitektur Teleporter di masa depan.",
+      "source": "CIF Research Dossier",
+      "url": "(HIGH) [Docs AWM, https://docs.avax.network/docs/specifications/avalanche-warp-messaging]; (HIGH) [GitHub AWM Spec, https://github.com/ava-labs/avalanchego/blob/master/docs/specifications/avalanche-warp-messaging.md]",
+      "affectedKnowledge": [],
+      "_location": "Primary Network & Subnets (On-chain)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-014",
+      "projectSlug": "avalanche",
+      "name": "Peluncuran Core Wallet (Browser Extension & Mobile)",
+      "date": "2022-06",
+      "type": "Product",
+      "participants": [
+        "Ava Labs, Inc.",
+        "Avalanche Community (Discord/Telegram/Forum)"
+      ],
+      "description": "Ava Labs meluncurkan Core Wallet resmi (ekstensi browser Chrome/Brave dan mobile iOS/Android) dengan fitur multi-chain (X/P/C-Chain), Subnet support, bridge terintegrasi, staking UI, dan portfolio.",
+      "result": "User experience terpadu untuk ekosistem Avalanche; pengganti perluasan MetaMask manual; onboarding non-teknis dipermudah.",
+      "source": "CIF Research Dossier",
+      "url": "(HIGH) [Core Website, https://core.app/]; (HIGH) [Chrome Web Store Core, https://chromewebstore.google.com/detail/core/]; (HIGH) [Ava Labs Products Core, https://www.avalabs.org/products/core]",
+      "affectedKnowledge": [],
+      "_location": "Global (Client-side App)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-015",
+      "projectSlug": "avalanche",
+      "name": "Peluncuran AvaCloud (Managed Subnet Service)",
+      "date": "2022-11",
+      "type": "Product",
+      "participants": [
+        "Ava Labs, Inc.",
+        "Deloitte",
+        "SK Planet (SK Telecom)",
+        "T. Rowe Price (klien awal)"
+      ],
+      "description": "Ava Labs meluncurkan AvaCloud, layanan Web3 Launchpad fully-managed untuk deployment Subnet: provisioning validator, indexing, gasless transactions, fiat onramp, dan compliance tools bagi enterprise.",
+      "result": "Hambatan teknis menjalankan Subnet dihapus; percepatan adopsi enterprise (Deloitte, SK Planet, T. Rowe Price) dan game AAA (Shrapnel, Gunzilla).",
+      "source": "CIF Research Dossier",
+      "url": "(HIGH) [AvaCloud Site, https://avacloud.io/]; (HIGH) [Ava Labs Products AvaCloud, https://www.avalabs.org/products/avacloud]; (HIGH) [TechCrunch AvaCloud Launch, https://techcrunch.com/2022/11/03/ava-labs-avacloud/]",
+      "affectedKnowledge": [],
+      "_location": "Global (SaaS Platform)",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-016",
+      "projectSlug": "avalanche",
+      "name": "Rilis HyperSDK (Framework VM High-Performance)",
+      "date": "2022-11",
+      "type": "Technology",
+      "participants": [
+        "Ava Labs, Inc.",
+        "Ava Labs Engineering Team (Core Protocol Researchers)"
+      ],
+      "description": "Ava Labs merilis HyperSDK sebagai framework Rust open-source untuk membangun Virtual Machine (VM) kustom Subnet dengan throughput 10k+ TPS, modular, dan non-EVM, menggantikan perlu membangun dari nol.",
+      "result": "Developer dapat meluncurkan Subnet performa tinggi dalam hari bukan bulan; fondasi untuk game AAA (Shrapnel, Off The Grid) dan kebutuhan throughput enterprise.",
+      "source": "CIF Research Dossier",
+      "url": "(HIGH) [GitHub HyperSDK, https://github.com/ava-labs/hypersdk]; (HIGH) [Docs HyperSDK, https://docs.avax.network/docs/hypersdk]; (HIGH) [Ava Labs Blog HyperSDK, https://www.avalabs.org/blog/hypersdk]",
+      "affectedKnowledge": [],
+      "_location": "GitHub (Open Source)",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-017",
+      "projectSlug": "avalanche",
+      "name": "Kerusakan Pasar Terra/Luna & Dampak ke TVL Avalanche",
+      "date": "2022-05",
+      "type": "Market",
+      "participants": [
+        "Avalanche Community (Discord/Telegram/Forum)",
+        "Avalanche Foundation",
+        "Ava Labs, Inc.",
+        "Market Participants"
+      ],
+      "description": "Kecelakaan algoritmik UST/LUNA (Mei 2022) memicu crash pasar crypto global; TVL Avalanche turun drastis dari puncak ~$11M (Nov 2021) ke <$1M; harga AVAX koreksi >80%.",
+      "result": "Konsolidasi ekosistem; fokus bergeser dari insentif mercenary (Rush) ke fundamental builder & enterprise; survival protokol native (Trader Joe, Benqi, Aave).",
+      "source": "CIF Research Dossier",
+      "url": "(HIGH) [DefiLlama Avalanche TVL History, https://defillama.com/chain/Avalanche]; (HIGH) [Messari Avalanche Report Q2 2022, https://messari.io/report/avalanche-ecosystem-report-q2-2022]; (MEDIUM) [CoinDesk Terra Contagion, https://www.coindesk.com/business/2022/05/12/terra-usd-luna-crash-contagion/]",
+      "affectedKnowledge": [],
+      "_location": "Global Markets",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-018",
+      "projectSlug": "avalanche",
+      "name": "Kebangkrutan Three Arrows Capital (3AC) - Investor Avalanche",
+      "date": "2022-06",
+      "type": "Organization",
+      "participants": [
+        "Three Arrows Capital (3AC)",
+        "Ava Labs, Inc.",
+        "Avalanche Foundation",
+        "Kurator Kebangkrutan (Teneo)"
+      ],
+      "description": "Three Arrows Capital (3AC), peserta Strategic Sale AVAX 2020 ($42M total), mengajukan kebangkrutan (Chapter 15) setelah kegagalan Luna/UST dan posisi leverage; aset AVAX 3AC dilikuidasi oleh kurator.",
+      "result": "Tekanan jual AVAX dari likuidasi aset 3AC; ketidakpastian alokasi token investor awal; Ava Labs/Foundation tidak terekspos operasional tapi reputasi investor terpengaruh.",
+      "source": "CIF Research Dossier",
+      "url": "(HIGH) [The Block 3AC Avalanche Allocation, https://www.theblock.co/post/156787/three-arrows-capital-avalanche-avax]; (HIGH) [CoinDesk 3AC Bankruptcy, https://www.coindesk.com/business/2022/07/01/three-arrows-capital-files-for-chapter-15-bankruptcy/]",
+      "affectedKnowledge": [],
+      "_location": "Singapura / BVI / AS (Pengadilan)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-019",
+      "projectSlug": "avalanche",
+      "name": "Upgrade Jaringan Cortina (v1.10.x) Aktif di Mainnet",
+      "date": "2023-04",
+      "type": "Technology",
+      "participants": [
+        "Ava Labs, Inc.",
+        "Avalanche Validators (Validator Set)",
+        "Ava Labs Engineering Team (Core Protocol Researchers)"
+      ],
+      "description": "Upgrade Cortina diaktifkan di Primary Network: peningkatan performa P-Chain (staking/validator set), optimasi state sync, perbaikan fee market C-Chain, dan persiapan infrastruktur untuk Teleporter/HyperSDK.",
+      "result": "Efisiensi staking meningkat; latensi finality C-Chain diturunkan; fondasi teknis untuk messaging generasi baru (Teleporter) siap.",
+      "source": "CIF Research Dossier",
+      "url": "(HIGH) [Ava Labs Blog Cortina Upgrade, https://www.avalabs.org/blog/cortina-upgrade-mainnet]; (HIGH) [GitHub AvalancheGo Releases v1.10, https://github.com/ava-labs/avalanchego/releases/tag/v1.10.0]; (HIGH) [Docs Upgrades, https://docs.avax.network/docs/nodes/maintain/upgrading]",
+      "affectedKnowledge": [],
+      "_location": "Primary Network (Global)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-020",
+      "projectSlug": "avalanche",
+      "name": "Peluncuran Teleporter (Inter-Subnet Messaging Generik)",
+      "date": "2023-09",
+      "type": "Technology",
+      "participants": [
+        "Ava Labs, Inc.",
+        "Ava Labs Engineering Team (Core Protocol Researchers)",
+        "Avalanche Validators (Validator Set)"
+      ],
+      "description": "Teleporter, standar messaging generik generasi baru menggantikan AWM, diluncurkan di mainnet: verifikasi on-chain ringan, dukungan tipe payload apa pun, dan kompatibilitas lintas VM (EVM, HyperSDK, dll) untuk interoperabilitas Subnet seamless.",
+      "result": "Interoperabilitas Subnet standar universal live; pengembang tidak perlu custom bridge; fondasi \"Internet of Subnets\" betul-betul terealisasi.",
+      "source": "CIF Research Dossier",
+      "url": "(HIGH) [Docs Teleporter, https://docs.avax.network/docs/specifications/teleporter]; (HIGH) [Ava Labs Blog Teleporter Mainnet, https://www.avalabs.org/blog/teleporter-mainnet]",
+      "affectedKnowledge": [],
+      "_location": "Primary Network & Subnets (On-chain)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-021",
+      "projectSlug": "avalanche",
+      "name": "HyperSDK Mainnet & Subnet Produksi Pertama (Beam/Shrapnel)",
+      "date": "2023-09",
+      "type": "Launch",
+      "participants": [
+        "Ava Labs, Inc.",
+        "Shrapnel",
+        "Beam (Merit Circle)",
+        "Ava Labs Engineering Team (Core Protocol Researchers)"
+      ],
+      "description": "Subnet pertama berbasis HyperSDK (Beam untuk gaming / Shrapnel Subnet) live di mainnet, mendemonstrasikan throughput 10k+ TPS dan finality sub-detik di lingkungan produksi nyata.",
+      "result": "Bukti konsep HyperSDK valid; menarik studio game AAA lain (Gunzilla, Nexon) ke arsitektur Subnet.",
+      "source": "CIF Research Dossier",
+      "url": "(HIGH) [Ava Labs Blog HyperSDK, https://www.avalabs.org/blog/hypersdk]; (HIGH) [Shrapnel Site, https://shrapnel.com/]; (MEDIUM) [Avascan Subnets List, https://avascan.info/blockchain/s]",
+      "affectedKnowledge": [],
+      "_location": "Subnet (On-chain)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-022",
+      "projectSlug": "avalanche",
+      "name": "Kemitraan MapleStory Universe (Nexon) - Subnet MSU",
+      "date": "2023-12",
+      "type": "Partnership",
+      "participants": [
+        "MapleStory Universe (Nexon)",
+        "Ava Labs, Inc.",
+        "AvaCloud"
+      ],
+      "description": "Nexon (raksasa gaming Korea, $10B+ market cap) mengumumkan MapleStory Universe (MSU) dibangun di Subnet Avalanche via AvaCloud, membawa jutaan pengguna Web2 ke on-chain dengan NFT item dan token NXPC.",
+      "result": "Validasi mass-market adoption Subnet; pipeline user acquisition terbesar dalam sejarah Avalanche; kepercayaan enterprise-grade untuk gaming.",
+      "source": "CIF Research Dossier",
+      "url": "(HIGH) [MapleStory Universe Site, https://maplestoryuniverse.nexon.com/]; (HIGH) [Ava Labs Blog Nexon, https://www.avalabs.org/blog/nexon-maplestory-avalanche]; (HIGH) [Nexon Press Release, https://nexon.co.jp/en/news/2023/12/...]",
+      "affectedKnowledge": [],
+      "_location": "Seoul, Korea Selatan / Global (Subnet)",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-023",
+      "projectSlug": "avalanche",
+      "name": "Kemitraan Gunzilla Games / Off The Grid (Subnet GUNZ)",
+      "date": "2023-08",
+      "type": "Partnership",
+      "participants": [
+        "Gunzilla Games",
+        "Ava Labs, Inc.",
+        "AvaCloud"
+      ],
+      "description": "Gunzilla Games (studio AAA, pendanaan >$46M) meluncurkan Off The Grid (Battle Royale) di Subnet GUNZ via AvaCloud, dengan token GUN dan ekonomi NFT item fully on-chain.",
+      "result": "Game AAA pertama fully on-chain economy di Subnet; showcase performa HyperSDK/AvaCloud untuk skala jutaan pemain.",
+      "source": "CIF Research Dossier",
+      "url": "(HIGH) [Gunzilla Games Site, https://gunz.io/]; (HIGH) [Ava Labs Blog Gunzilla, https://www.avalabs.org/blog/gunzilla-avalanche]",
+      "affectedKnowledge": [],
+      "_location": "Frankfurt, Jerman / Global (Subnet)",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-024",
+      "projectSlug": "avalanche",
+      "name": "Kemitraan Shrapnel (Game AAA FPS Subnet)",
+      "date": "2022-06",
+      "type": "Partnership",
+      "participants": [
+        "Shrapnel",
+        "Ava Labs, Inc.",
+        "AvaCloud"
+      ],
+      "description": "Shrapnel (game FPS extraction AAA, token SHRAP) bermitra dengan Ava Labs untuk membangun Subnet gaming sendiri menggunakan HyperSDK/AvaCloud, target early access 2024/2025.",
+      "result": "Flagship gaming Avalanche; validasi model \"Subnet per game\" untuk sovereignty dan throughput.",
+      "source": "CIF Research Dossier",
+      "url": "(HIGH) [Shrapnel Site, https://shrapnel.com/]; (HIGH) [Ava Labs Blog Shrapnel, https://www.avalabs.org/blog/shrapnel-avalanche]; (MEDIUM) [Epic Games Store Listing, https://store.epicgames.com/en-US/p/shrapnel]",
+      "affectedKnowledge": [],
+      "_location": "Seattle, WA, AS / Global (Subnet)",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-025",
+      "projectSlug": "avalanche",
+      "name": "Kemitraan Deloitte - Solusi Disaster Recovery (Close As You Go)",
+      "date": "2022-11",
+      "type": "Partnership",
+      "participants": [
+        "Deloitte",
+        "Ava Labs, Inc.",
+        "AvaCloud"
+      ],
+      "description": "Deloitte (Big 4) menggunakan AvaCloud/Subnet Avalanche untuk membangun platform \"Close As You Go\" (CAYG) verifikasi kredensial dan disaster recovery bagi pemerintah AS (FEMA), demonstrate enterprise adoption nyata.",
+      "result": "Use case enterprise non-finansial (public sector) valid; reputasi Avalanche sebagai \"enterprise blockchain\" terukir.",
+      "source": "CIF Research Dossier",
+      "url": "(HIGH) [Ava Labs Blog Deloitte, https://www.avalabs.org/blog/deloitte-avalanche-disaster-recovery]; (HIGH) [Deloitte Press Release CAYG, https://www2.deloitte.com/us/en/pages/consulting/articles/avalanche-deloitte-cayg.html]",
+      "affectedKnowledge": [],
+      "_location": "New York, NY, AS / Washington DC, AS",
+      "_status": "Ongoing"
+    }
+  ],
+  "AAVE": [
+    {
+      "id": "EV-001",
+      "projectSlug": "aave",
+      "name": "Pendirian ETHLend",
+      "date": "2017-05-01",
+      "type": "Founding",
+      "participants": [
+        "Stani Kulechov"
+      ],
+      "description": "Stani Kulechov mendirikan ETHLend, platform peminjaman peer-to-peer terdesentralisasi berbasis Ethereum.",
+      "result": "ETHLend didirikan sebagai entitas.",
+      "source": "CIF Research Dossier",
+      "url": "https://forklog.com/en/what-is-aave/",
+      "affectedKnowledge": [],
+      "_location": "Tidak diketahui",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-002",
+      "projectSlug": "aave",
+      "name": "Peluncuran Platform ETHLend dan ICO",
+      "date": "2017-11",
+      "type": "Launch",
+      "participants": [
+        "ETHLend",
+        "Stani Kulechov"
+      ],
+      "description": "ETHLend meluncurkan platform peminjaman P2P ETHLend.io dan mengadakan Initial Coin Offering (ICO) yang mengumpulkan $16.2 juta. Proyek menjual 1 miliar token LEND utility; 300 juta (23%) diberikan kepada founder dan tim.",
+      "result": "ICO mengumpulkan $16.2 juta; token LEND didistribusikan.",
+      "source": "CIF Research Dossier",
+      "url": "https://forklog.com/en/what-is-aave/",
+      "affectedKnowledge": [],
+      "_location": "Tidak diketahui",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-003",
+      "projectSlug": "aave",
+      "name": "Rebranding ETHLend menjadi Aave",
+      "date": "2018-09-18",
+      "type": "Founding",
+      "participants": [
+        "ETHLend",
+        "Aave",
+        "Stani Kulechov"
+      ],
+      "description": "ETHLend mengumumkan peluncuran perusahaan induk baru bernama Aave, yang berasal dari kata Finlandia untuk \"hantu.\" ETHLend menjadi anak perusahaan di bawah Aave, dan peran eksekutif tetap sama dengan Stani Kulechov sebagai CEO. Model bisnis beralih dari P2P ke model liquidity pool.",
+      "result": "ETHLend berganti nama menjadi Aave; transisi dari model P2P ke model liquidity pool dimulai.",
+      "source": "CIF Research Dossier",
+      "url": "https://in.marketscreener.com/news/latest/ETHLend-Announces-Launch-of-New-Parent-Company-Aave-27274926/",
+      "affectedKnowledge": [],
+      "_location": "Chiasso, Switzerland",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-004",
+      "projectSlug": "aave",
+      "name": "Peluncuran Public Testnet Aave V1",
+      "date": "2019-10",
+      "type": "Technology",
+      "participants": [
+        "Aave"
+      ],
+      "description": "Aave merilis public testnet protokol di Kovan Network, termasuk dokumentasi, situs web baru, dan portal pengembang.",
+      "result": "Public testnet Aave V1 tersedia untuk pengujian publik.",
+      "source": "CIF Research Dossier",
+      "url": "https://medium.com/aave/the-aave-protocol-released-on-public-testnet-2eb86c101d0b?source=post_page-----2eb86c101d0b--------------------------------",
+      "affectedKnowledge": [],
+      "_location": "Tidak diketahui",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-005",
+      "projectSlug": "aave",
+      "name": "Peluncuran Mainnet Aave V1 di Ethereum",
+      "date": "2020-01-08",
+      "type": "Launch",
+      "participants": [
+        "Aave",
+        "Ethereum"
+      ],
+      "description": "Aave V1 diluncurkan di mainnet Ethereum, memungkinkan pengguna untuk mendapatkan bunga dari deposito dan meminjam aset. Protokol mengimplementasikan model liquidity pool yang menyelesaikan masalah utama model ETHLend.",
+      "result": "Aave V1 live di Ethereum mainnet dengan dua aset yang didukung: ETH dan LEND.",
+      "source": "CIF Research Dossier",
+      "url": "https://twitter.com/AaveAave/status/1214990573356167170",
+      "affectedKnowledge": [],
+      "_location": "Tidak diketahui",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-006",
+      "projectSlug": "aave",
+      "name": "Pendanaan Token Sale $3 Juta",
+      "date": "2020-07",
+      "type": "Funding",
+      "participants": [
+        "Aave",
+        "Framework Ventures",
+        "Three Arrows Capital"
+      ],
+      "description": "Aave mengumpulkan $3 juta melalui token sale dengan partisipasi dari Framework Ventures dan Three Arrows Capital.",
+      "result": "Pendanaan $3 juta diperoleh.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.htx.com.co/tokens/aave/",
+      "affectedKnowledge": [],
+      "_location": "Tidak diketahui",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-007",
+      "projectSlug": "aave",
+      "name": "Pengumuman Aavenomics dan Rencana Token AAVE",
+      "date": "2020-07-29",
+      "type": "Token",
+      "participants": [
+        "Aave",
+        "LEND",
+        "AAVE"
+      ],
+      "description": "Aave mengumumkan \"Aavenomics\" — kerangka insentif finansial dan tata kelola bertingkat untuk prioritas keamanan dan keberlanjutan Aave. Rencana mencakup swap LEND ke AAVE dengan rasio 100:1 dan total suplai AAVE 16 juta token. AAVE akan berfungsi sebagai token tata kelola.",
+      "result": "Rencana transisi dari LEND ke AAVE serta mekanisme staking dan liquidity mining diumumkan.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.theblock.co/post/72523/aave-decentralization-token-swap-aavenomics",
+      "affectedKnowledge": [],
+      "_location": "Tidak diketahui",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-008",
+      "projectSlug": "aave",
+      "name": "Aktivasi AIP-1 (Fase Awal Aavenomics)",
+      "date": "2020-09-25",
+      "type": "Governance",
+      "participants": [
+        "Aave DAO",
+        "Aave"
+      ],
+      "description": "Dengan hasil AIP-1, protokol Aave memulai fase awal Aavenomics dan Safety Incentives dengan distribusi terjadwal 400 AAVE per hari kepada staker Safety Module.",
+      "result": "Fase awal Aavenomics diaktifkan.",
+      "source": "CIF Research Dossier",
+      "url": "https://github.com/aave/aip/blob/main/content/aips/AIP-7.md",
+      "affectedKnowledge": [],
+      "_location": "Tidak diketahui",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-009",
+      "projectSlug": "aave",
+      "name": "Migrasi LEND ke AAVE dan Peluncuran Token AAVE",
+      "date": "2020-10",
+      "type": "Token",
+      "participants": [
+        "Aave",
+        "LEND",
+        "AAVE"
+      ],
+      "description": "Token native AAVE diterbitkan dan migrasi LEND ke AAVE dilakukan dengan rasio 100:1. Migrasi dimulai pada 2 Oktober 2020.",
+      "result": "Token AAVE diluncurkan; LEND digantikan oleh AAVE sebagai token protokol.",
+      "source": "CIF Research Dossier",
+      "url": "https://forklog.com/en/what-is-aave/",
+      "affectedKnowledge": [],
+      "_location": "Tidak diketahui",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-010",
+      "projectSlug": "aave",
+      "name": "Pendanaan Seri A $25 Juta",
+      "date": "2020-10",
+      "type": "Funding",
+      "participants": [
+        "Aave",
+        "Blockchain Capital",
+        "Standard Crypto",
+        "Blockchain.com Ventures"
+      ],
+      "description": "Aave mengumpulkan $25 juta dalam putaran pendanaan yang dipimpin oleh Blockchain Capital, dengan partisipasi Standard Crypto dan Blockchain.com Ventures.",
+      "result": "Pendanaan $25 juta diperoleh.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.htx.com.co/tokens/aave/",
+      "affectedKnowledge": [],
+      "_location": "Tidak diketahui",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-011",
+      "projectSlug": "aave",
+      "name": "Peluncuran Mainnet Aave V2",
+      "date": "2020-12-03",
+      "type": "Technology",
+      "participants": [
+        "Aave"
+      ],
+      "description": "Aave V2 diluncurkan di mainnet dengan fitur baru termasuk aTokens, debt tokenization, credit delegation, batch flash loans, collateral swaps, dan fixed & variable borrowing rates.",
+      "result": "Aave V2 live di mainnet dengan peningkatan efisiensi modal dan fleksibilitas.",
+      "source": "CIF Research Dossier",
+      "url": "https://medium.com/aave/the-aave-protocol-v2-f06f299cee04",
+      "affectedKnowledge": [],
+      "_location": "Tidak diketahui",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-012",
+      "projectSlug": "aave",
+      "name": "Peluncuran AMM Markets di Aave V2",
+      "date": "2021-03-16",
+      "type": "Technology",
+      "participants": [
+        "Aave"
+      ],
+      "description": "Aave mengumumkan peluncuran AMM markets di Aave V2, menyediakan token penyedia likuiditas (LP) dari exchange terdesentralisasi terpilih. Peluncuran ini juga mengaktifkan Aave Governance V2.",
+      "result": "AMM Markets dan Aave Governance V2 diaktifkan; staker AAVE mendapat hak tata kelola.",
+      "source": "CIF Research Dossier",
+      "url": "https://medium.com/aave/aave-amm-market-released-73ae76a7cbc0",
+      "affectedKnowledge": [],
+      "_location": "Tidak diketahui",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-013",
+      "projectSlug": "aave",
+      "name": "Kemitraan Aave dengan Polygon",
+      "date": "2021-03-31",
+      "type": "Partnership",
+      "participants": [
+        "Aave",
+        "Polygon"
+      ],
+      "description": "Aave mengumumkan eksplorasi sidechain skalabel dengan Polygon (sebelumnya Matic) untuk menghindari biaya transaksi tinggi di Ethereum. Aave Market di Polygon akan mengonboard MATIC sebagai aset jaminan bersama USDC, USDT, DAI, WETH, AAVE, dan WBTC.",
+      "result": "Aave Market di Polygon diumumkan.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.coindesk.com/tech/2021/03/31/defi-major-aave-working-with-polygon-to-bypass-ethereum-congestion/",
+      "affectedKnowledge": [],
+      "_location": "Tidak diketahui",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-014",
+      "projectSlug": "aave",
+      "name": "Program Liquidity Mining Aave-Polygon $40 Juta",
+      "date": "2021-04",
+      "type": "Ecosystem",
+      "participants": [
+        "Aave",
+        "Polygon"
+      ],
+      "description": "Polygon mengalokasikan 1% dari total suplai MATIC (senilai $40 juta+) untuk program liquidity mining di pasar Aave Polygon.",
+      "result": "Program liquidity mining $40 juta+ diluncurkan untuk pasar Aave di Polygon.",
+      "source": "CIF Research Dossier",
+      "url": "https://polygon.technology/blog/defiforall-kicking-off-l2-defi-summer-with-40-million-usd-in-liquidity-mining-rewards-from-polygon-for-aaves-polygon-markets",
+      "affectedKnowledge": [],
+      "_location": "Tidak diketahui",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-015",
+      "projectSlug": "aave",
+      "name": "Konsep Aave Arc Diperkenalkan",
+      "date": "2021-07",
+      "type": "Product",
+      "participants": [
+        "Aave"
+      ],
+      "description": "Aave mengungkapkan konsep Aave Arc, platform terizinkan (permissioned) untuk institusi keuangan dengan persyaratan KYC/AML.",
+      "result": "Konsep Aave Arc diperkenalkan untuk akses institusi ke DeFi.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.theblock.co/post/113016/aave-to-launch-institutional-defi-platform-aave-arc-within-weeks",
+      "affectedKnowledge": [],
+      "_location": "Tidak diketahui",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-016",
+      "projectSlug": "aave",
+      "name": "Program Insentif Avalanche Rush — Aave",
+      "date": "2021-08",
+      "type": "Ecosystem",
+      "participants": [
+        "Aave",
+        "Avalanche"
+      ],
+      "description": "Avalanche Foundation mengalokasikan $180 juta untuk program insentif DeFi \"Avalanche Rush,\" dengan $20 juta untuk pengguna Aave.",
+      "result": "Aave berpartisipasi dalam Avalanche Rush dengan insentif $20 juta.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.theblock.co/post/114025/avalanche-launches-180-million-defi-incentive-scheme-with-aave-and-curve",
+      "affectedKnowledge": [],
+      "_location": "Tidak diketahui",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-017",
+      "projectSlug": "aave",
+      "name": "Peluncuran Aave Arc",
+      "date": "2021-11",
+      "type": "Product",
+      "participants": [
+        "Aave",
+        "Fireblocks"
+      ],
+      "description": "Aave mengumumkan peluncuran Aave Arc, pasar terizinkan berbasis Aave V2 untuk lembaga keuangan, dengan Fireblocks sebagai whitelister pertama.",
+      "result": "Aave Arc diluncurkan untuk institusi dengan KYC/AML.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.chaindd.net/chaindd/2021/11/18/1376988.html",
+      "affectedKnowledge": [],
+      "_location": "Tidak diketahui",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-018",
+      "projectSlug": "aave",
+      "name": "Proposal Lisensi Bisnis Aave",
+      "date": "2021-12",
+      "type": "Governance",
+      "participants": [
+        "Aave DAO"
+      ],
+      "description": "Proposal tata kelola Aave mengenai lisensi kode platform berakhir dengan 55% suara mendukung penerapan \"business license.\"",
+      "result": "Proposal lisensi bisnis disetujui dengan 55% dukungan.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.coindesk.com/tech/2021/12/15/55-of-aaves-community-votes-for-business-license-to-prevent-forks/",
+      "affectedKnowledge": [],
+      "_location": "Tidak diketahui",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-019",
+      "projectSlug": "aave",
+      "name": "Diskusi Aave Governance V3 Dimulai",
+      "date": "2022-01",
+      "type": "Governance",
+      "participants": [
+        "Aave DAO"
+      ],
+      "description": "Diskusi mengenai Aave governance v3 dimulai, yang kemudian berpuncak pada proposal yang disahkan melalui voting off-chain pada Juli.",
+      "result": "Proses menuju Aave Governance V3 dimulai.",
+      "source": "CIF Research Dossier",
+      "url": "https://finance.yahoo.com/news/aave-poised-multi-chain-governance-overhaul-180000698.html",
+      "affectedKnowledge": [],
+      "_location": "Tidak diketahui",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-020",
+      "projectSlug": "aave",
+      "name": "Peluncuran Aave V3 di Enam Jaringan",
+      "date": "2022-03-16",
+      "type": "Technology",
+      "participants": [
+        "Aave",
+        "Fantom",
+        "Avalanche",
+        "Harmony",
+        "Arbitrum",
+        "Optimism",
+        "Polygon"
+      ],
+      "description": "Aave V3 diluncurkan di enam jaringan: Fantom, Avalanche, Harmony, Arbitrum, Optimism, dan Polygon. V3 menghadirkan fungsionalitas cross-chain, isolated liquidity pools, dan peningkatan efisiensi modal.",
+      "result": "Aave V3 live di enam jaringan; peluncuran Ethereum mainnet ditunda ke tanggal yang belum ditentukan.",
+      "source": "CIF Research Dossier",
+      "url": "https://twitter.com/AaveAave/status/1504137636105043971",
+      "affectedKnowledge": [],
+      "_location": "Tidak diketahui",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-021",
+      "projectSlug": "aave",
+      "name": "Penonaktifan Aave V1",
+      "date": "2022-12-24",
+      "type": "Governance",
+      "participants": [
+        "Aave DAO",
+        "Aave V1"
+      ],
+      "description": "Proposal perbaikan Aave (AIP) pada 24 Desember 2022 menonaktifkan mayoritas Aave V1 dengan membekukan semua cadangan di kontrak Aave V1. Pengguna masih dapat melunasi utang dan menarik jaminan tetapi tidak dapat lagi menyuplai dan meminjam aset.",
+      "result": "Aave V1 dinonaktifkan untuk aktivitas supply dan borrowing baru.",
+      "source": "CIF Research Dossier",
+      "url": "https://governance-v2.aave.com/governance/proposal/132/",
+      "affectedKnowledge": [],
+      "_location": "Tidak diketahui",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-022",
+      "projectSlug": "aave",
+      "name": "Peluncuran Aave V3 di Ethereum Mainnet",
+      "date": "2023-01-27",
+      "type": "Technology",
+      "participants": [
+        "Aave",
+        "Ethereum"
+      ],
+      "description": "Aave V3 di-deploy di Ethereum mainnet setelah voting tata kelola. Deployment awal mendukung tujuh aset: wrapped bitcoin, wrapped ether, wrapped staked ether, USDC, DAI, LINK, dan AAVE.",
+      "result": "Aave V3 tersedia di Ethereum mainnet.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.theblock.co/post/203767/aave-set-to-launch-third-version-of-its-crypto-lending-protocol-on-ethereum",
+      "affectedKnowledge": [],
+      "_location": "Tidak diketahui",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-023",
+      "projectSlug": "aave",
+      "name": "Peluncuran GHO di Goerli Testnet",
+      "date": "2023-02",
+      "type": "Technology",
+      "participants": [
+        "Aave",
+        "GHO"
+      ],
+      "description": "Stablecoin GHO Aave dirilis di Goerli testnet untuk pengujian.",
+      "result": "GHO tersedia di Goerli testnet.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.theblock.co/post/240297/aave-protocol-activates-gho-stablecoin-on-the-ethereum-mainnet",
+      "affectedKnowledge": [],
+      "_location": "Tidak diketahui",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-024",
+      "projectSlug": "aave",
+      "name": "Peluncuran Stablecoin GHO di Ethereum Mainnet",
+      "date": "2023-07-15",
+      "type": "Product",
+      "participants": [
+        "Aave",
+        "GHO",
+        "Ethereum"
+      ],
+      "description": "Aave meluncurkan stablecoin terdesentralisasi GHO di Ethereum mainnet. GHO adalah aset over-collateralized yang dapat dicetak dengan menyetor aset jaminan ke Aave V3 di Ethereum.",
+      "result": "GHO live di Ethereum mainnet; pengguna dapat mencetak GHO dengan jaminan di Aave V3.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.theblock.co/post/240297/aave-protocol-activates-gho-stablecoin-on-the-ethereum-mainnet",
+      "affectedKnowledge": [],
+      "_location": "Tidak diketahui",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-025",
+      "projectSlug": "aave",
+      "name": "Rilis Whitepaper Aave V4",
+      "date": "2025-11-10",
+      "type": "Technology",
+      "participants": [
+        "Aave"
+      ],
+      "description": "Komunitas Aave secara resmi mengumumkan whitepaper Aave V4 dengan fitur-fitur seperti manajemen risiko yang ditingkatkan dan kemampuan cross-chain native.",
+      "result": "Whitepaper Aave V4 dirilis untuk publik.",
+      "source": "CIF Research Dossier",
+      "url": "https://bitbulteni.com/aave-v4-whitepaper-138022/",
+      "affectedKnowledge": [],
+      "_location": "Tidak diketahui",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-026",
+      "projectSlug": "aave",
+      "name": "Voting Snapshot Proposal Aave Will Win",
+      "date": "2025-12-23",
+      "type": "Governance",
+      "participants": [
+        "Aave DAO"
+      ],
+      "description": "Voting snapshot untuk proposal \"Aave Will Win\" diadakan dari 23-26 Desember 2025, menunjukkan 64,15% menentang proposal, 32,85% abstain, dan hanya 3,01% mendukung.",
+      "result": "Proposal awal Aave Will Win tidak mendapatkan dukungan signifikan.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.huobi.eu.com/special/defi",
+      "affectedKnowledge": [],
+      "_location": "Tidak diketahui",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-027",
+      "projectSlug": "aave",
+      "name": "Aave Labs Menghentikan Brand Avara",
+      "date": "2026-02",
+      "type": "Organization",
+      "participants": [
+        "Aave Labs",
+        "Avara"
+      ],
+      "description": "Aave Labs menghentikan brand Avara, perusahaan payung yang sebelumnya menaungi Aave, Lens, GHO, dan merek lainnya.【Fase 2 — Entitas 11】",
+      "result": "Brand Avara dihentikan.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.theblock.co/post/338483/aave-labs-drops-avara-brand-ethcc",
+      "affectedKnowledge": [],
+      "_location": "Tidak diketahui",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-028",
+      "projectSlug": "aave",
+      "name": "Peluncuran Aave V4 di Ethereum Mainnet",
+      "date": "2026-03-30",
+      "type": "Technology",
+      "participants": [
+        "Aave",
+        "Ethereum"
+      ],
+      "description": "Aave V4 diluncurkan di Ethereum mainnet dengan arsitektur liquidity hub-and-spoke. Tiga hub (Core, Plus, Prime) dan sebelas spoke di-deploy, memungkinkan routing likuiditas terisolasi.",
+      "result": "Aave V4 live di Ethereum mainnet dengan arsitektur hub-and-spoke.",
+      "source": "CIF Research Dossier",
+      "url": "https://aave.com/changelog",
+      "affectedKnowledge": [],
+      "_location": "Cannes, France (diumumkan di EthCC)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-029",
+      "projectSlug": "aave",
+      "name": "Proposal \"Aave Will Win\" Disahkan",
+      "date": "2026-04-12",
+      "type": "Governance",
+      "participants": [
+        "Aave DAO",
+        "Aave Labs"
+      ],
+      "description": "Proposal tata kelola \"Aave Will Win Framework: Primary Funding Request\" disahkan dengan 522.780 suara mendukung dan 175.310 menentang (sekitar 75% dukungan). Proposal menyetujui pendanaan hingga $42,5 juta dalam stablecoin dan 75.000 token AAVE untuk Aave Labs.",
+      "result": "Proposal Aave Will Win disahkan; pendanaan $42,5 juta + 75.000 AAVE disetujui untuk Aave Labs.",
+      "source": "CIF Research Dossier",
+      "url": "https://finance.yahoo.com/news/aave-ends-month-long-wait-for-protocol-control-in-decisive-vote-180000698.html",
+      "affectedKnowledge": [],
+      "_location": "Tidak diketahui",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-030",
+      "projectSlug": "aave",
+      "name": "Eksploitasi Bridge rsETH Kelp DAO",
+      "date": "2026-05-31",
+      "type": "Security",
+      "participants": [
+        "Aave",
+        "Kelp DAO",
+        "LayerZero"
+      ],
+      "description": "Pada 17:35 UTC, bridge LayerZero V2 Kelp rsETH menerima pesan cross-chain palsu, melepaskan 116.500 rsETH di Ethereum tanpa burn yang sesuai di Unichain. Penyerang mendepositokan rsETH palsu ke Aave V3 sebagai jaminan.",
+      "result": "Eksploitasi bridge menyebabkan deposit rsETH palsu ke Aave V3; Aave meninjau standar pencatatan aset.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.kucoin.com/news/en/aave-details-rseth-bridge-exploit-recovery-timeline-57855",
+      "affectedKnowledge": [],
+      "_location": "Tidak diketahui",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-031",
+      "projectSlug": "aave",
+      "name": "Aave Memperketat Aturan Collateral Pasca-Eksploitasi",
+      "date": "2026-06",
+      "type": "Security",
+      "participants": [
+        "Aave"
+      ],
+      "description": "Aave memperbarui aturan kripto setelah eksploitasi $230 juta yang melibatkan token rsETH KelpDAO. Aave merombak standar pencatatan aset untuk mengatasi risiko infrastruktur bridge.",
+      "result": "Standar pencatatan aset Aave diperketat.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.kucoin.com/news/en/aave-tightens-collateral-rules-after-230m-rseth-exploit-via-layerzero-bridge-57850",
+      "affectedKnowledge": [],
+      "_location": "Tidak diketahui",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-032",
+      "projectSlug": "aave",
+      "name": "Peluncuran Aave V4 di Avalanche",
+      "date": "2026-07-15",
+      "type": "Technology",
+      "participants": [
+        "Aave",
+        "Avalanche"
+      ],
+      "description": "Aave V4 diluncurkan di jaringan Avalanche sebagai bagian dari upgrade ke model Hub & Spoke. Ini menandai deployment multi-chain pertama di bawah arsitektur baru.",
+      "result": "Aave V4 live di Avalanche; deployment multi-chain pertama Aave V4.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.kucoin.com/news/en/aave-v4-deploys-to-the-avalanche-network-with-hub-and-spoke-architecture-57916",
+      "affectedKnowledge": [],
+      "_location": "Tidak diketahui",
+      "_status": "Completed"
+    }
+  ],
+  "Bancor": [
+    {
+      "id": "EV-001",
+      "projectSlug": "bancor",
+      "name": "Pendirian Bprotocol Foundation dan Luncuran Mainnet Bancor V1",
+      "date": "2017-02",
+      "type": "Founding",
+      "participants": [
+        "Bprotocol Foundation, Eyal Hertzog, Guy Benartzi, Galia Benartzi, Ethereum"
+      ],
+      "description": "Bprotocol Foundation didirikan di Zug, Swiss sebagai entitas hukum pengembang protokol Bancor. Mainnet V1 diluncurkan pada Februari 2017 sebagai AMM pertama yang mengimplementasikan smart token dengan formula bonding curve untuk likuiditas otomatis tanpa order book.",
+      "result": "Protokol Bancor V1 live di Ethereum mainnet, memungkinkan pertukaran token on-chain tanpa counterparty.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.bancor.network/bancor-protocol-launches-on-mainnet-8e8f8e8f8e8f",
+      "affectedKnowledge": [],
+      "_location": "Zug, Swiss / Ethereum Mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-002",
+      "projectSlug": "bancor",
+      "name": "Token Generation Event (TGE) dan ICO Bancor Network Token (BNT)",
+      "date": "2017-06-12",
+      "type": "Token",
+      "participants": [
+        "Bprotocol Foundation, Tim Draper, Blockchain Capital, Fenbushi Capital, Kenetic Capital, Ethereum"
+      ],
+      "description": "Bancor mengadakan ICO pada 12 Juni 2017 dan mengumpulkan 153 juta USD (sekitar 396.720 ETH) dalam 3 jam, menjadi salah satu ICO terbesar pada masa itu. Token BNT didistribusikan ke kontributor dan dialokasikan untuk foundation, tim, dan cadangan likuiditas.",
+      "result": "153 juta USD terkumpul, BNT tersebar ke 10.000+ alamat, treasury foundation terbentuk untuk pengembangan jangka panjang.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.bancor.network/bancor-token-sale-concludes-153-million-raised-3-hours-8e8f8e8f8e8f",
+      "affectedKnowledge": [],
+      "_location": "Ethereum Mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-003",
+      "projectSlug": "bancor",
+      "name": "Listing Perdana BNT di Bittrex dan Poloniex",
+      "date": "2017-06",
+      "type": "Market",
+      "participants": [
+        "Bancor Network, Bittrex, Poloniex"
+      ],
+      "description": "BNT mulai diperdagangkan di bursa terpusat Bittrex dan Poloniex segera setelah TGE, menyediakan likuiditas sekunder dan price discovery awal bagi pemegang token.",
+      "result": "BNT tersedia untuk trading sekunder, memungkinkan price discovery pasar dan exit/entry bagi investor ICO.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.coingecko.com/en/coins/bancor#markets",
+      "affectedKnowledge": [],
+      "_location": "Centralized Exchanges",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-004",
+      "projectSlug": "bancor",
+      "name": "Listing BNT di Binance dan Coinbase",
+      "date": "2018",
+      "type": "Market",
+      "participants": [
+        "Bancor Network, Binance, Coinbase"
+      ],
+      "description": "BNT dilisting di Binance (2018) dan Coinbase (2018), memberikan akses pasar global dan kredibilitas regulasi bagi token BNT, serta meningkatkan likuiditas signifikan.",
+      "result": "Volume trading BNT meningkat drastis, akses retail global diperluas, BNT menjadi aset blue-chip DeFi awal.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.binance.com/en/trade/BNT_USDT",
+      "affectedKnowledge": [],
+      "_location": "Centralized Exchanges",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-005",
+      "projectSlug": "bancor",
+      "name": "Luncuran Bancor V2: AMM dengan Pool Tokens dan Co-Incentives",
+      "date": "2020-04",
+      "type": "Technology",
+      "participants": [
+        "Bprotocol Foundation, Bancor Core Contributors, Ethereum"
+      ],
+      "description": "Bancor V2 diluncurkan mengintroduksi arsitektur pool-based AMM (mirip Uniswap V2) dengan fitur co-incentives (reward BNT bagi LP), single-sided liquidity provision, dan elastic BNT supply untuk mengimbangi impermanent loss.",
+      "result": "Migrasi dari bonding curve V1 ke model pool V2, TVL meningkat, insentif BNT untuk LP diperkenalkan.",
+      "source": "CIF Research Dossier",
+      "url": "https://docs.bancor.network/version-history",
+      "affectedKnowledge": [],
+      "_location": "Ethereum Mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-006",
+      "projectSlug": "bancor",
+      "name": "Insiden Keamanan Bancor: Eksploit $23,5 Juta",
+      "date": "2020-07",
+      "type": "Security",
+      "participants": [
+        "Bprotocol Foundation, Bancor Core Contributors, Ethereum, PeckShield (investigasi pasca-eksploit)"
+      ],
+      "description": "Pada Juli 2020, Bancor menderita eksploit kontrak cerdas yang menghasilkan kerugian sekitar $23,5 juta (BNT dan aset lain). Serangan menargetkan wallet upgradeability kontrak V2. Tim memperbaiki kerentanan dan mengembalikan sebagian dana melalui negosiasi dengan peretas.",
+      "result": "Kerugian $23,5 juta, upgrade kontrak darurat, reputasi tersedia, pelajaran keamanan untuk V3.",
+      "source": "CIF Research Dossier",
+      "url": "https://cointelegraph.com/news/bancor-hacked-23-5m-stolen-in-security-breach",
+      "affectedKnowledge": [],
+      "_location": "Ethereum Mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-007",
+      "projectSlug": "bancor",
+      "name": "Luncuran Bancor V2.1: Single-Sided Exposure dan Impermanent Loss Protection",
+      "date": "2020-10",
+      "type": "Technology",
+      "participants": [
+        "Bprotocol Foundation, Bancor Core Contributors, Ethereum"
+      ],
+      "description": "Bancor V2.1 memperkenalkan single-sided staking (menyediakan likuiditas hanya dengan satu aset, tanpa pairing BNT) dan perlindungan impermanent loss (IL) bertahap hingga 100% setelah 100 hari, didanai oleh inflasi BNT.",
+      "result": "Fitur IL protection unik di pasar, menarik LP baru, model inflasi BNT untuk subsidi IL dimulai.",
+      "source": "CIF Research Dossier",
+      "url": "https://docs.bancor.network/version-history",
+      "affectedKnowledge": [],
+      "_location": "Ethereum Mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-008",
+      "projectSlug": "bancor",
+      "name": "Deploy Bancor V2.1 di Polygon (Matic Network)",
+      "date": "2020-11",
+      "type": "Ecosystem",
+      "participants": [
+        "Bprotocol Foundation, Bancor Core Contributors, Polygon"
+      ],
+      "description": "Bancor V2.1 di-deploy ke Polygon (dulunya Matic Network) untuk menawarkan biaya transaksi rendah dan throughput tinggi bagi pengguna yang ingin single-sided staking dan IL protection di L2/sidechain.",
+      "result": "Ekspansi multi-chain pertama, TVL Polygon tumbuh, pengguna non-Ethereum mainnet mendapatkan akses fitur Bancor.",
+      "source": "CIF Research Dossier",
+      "url": "https://defillama.com/protocol/bancor",
+      "affectedKnowledge": [],
+      "_location": "Polygon Network",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-009",
+      "projectSlug": "bancor",
+      "name": "Pembentukan BancorDAO dan Governance On-Chain",
+      "date": "2020",
+      "type": "Governance",
+      "participants": [
+        "Bprotocol Foundation, Bancor Core Contributors, BancorDAO, Ethereum"
+      ],
+      "description": "BancorDAO dibentuk sebagai organisasi otonom terdesentralisasi untuk mengelola parameter protokol (fee, whitelist token, upgrade) melalui voting BNT/stBNT di Snapshot dan eksekusi on-chain.",
+      "result": "Transisi governance dari tim inti ke komunitas, proposal pertama diajukan dan dieksekusi on-chain.",
+      "source": "CIF Research Dossier",
+      "url": "https://snapshot.org/#/bancor.eth",
+      "affectedKnowledge": [],
+      "_location": "Ethereum Mainnet / Snapshot",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-010",
+      "projectSlug": "bancor",
+      "name": "Luncuran Bancor V3: Omnipool, Vortex, dan Infinity Staking di Ethereum dan Arbitrum",
+      "date": "2021-10",
+      "type": "Technology",
+      "participants": [
+        "Bprotocol Foundation, Bancor Core Contributors, Ethereum, Arbitrum, Trail of Bits, PeckShield, OpenZeppelin"
+      ],
+      "description": "Bancor V3 diluncurkan dengan arsitektur Omnipool (single pool multi-aset), mekanisme Vortex (buyback & burn BNT dari fee swap), dan Infinity Staking (staking BNT tanpa lock-up, reward auto-compound). Deploy bersamaan di Ethereum Mainnet dan Arbitrum One.",
+      "result": "Arsitektur baru sepenuhnya menggantikan V2, deflationary tokenomics via Vortex, UX staking disederhanakan, skalabilitas via Arbitrum.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e",
+      "affectedKnowledge": [],
+      "_location": "Ethereum Mainnet, Arbitrum One",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-011",
+      "projectSlug": "bancor",
+      "name": "Audit Keamanan Bancor V3 oleh Trail of Bits, PeckShield, dan OpenZeppelin",
+      "date": "2021",
+      "type": "Security",
+      "participants": [
+        "Trail of Bits, PeckShield, OpenZeppelin, Bprotocol Foundation, Bancor Core Contributors"
+      ],
+      "description": "Tiga firma keamanan ternama melakukan audit komprehensif pada kode Bancor V3 (Omnipool, Vortex, Governance, Oracle) sebelum mainnet launch. Temuan kritikal diperbaiki, laporan dipublikasikan transparan.",
+      "result": "Laporan audit publik tersedia, kerentanan diperbaiki pre-launch, kepercayaan komunitas meningkat.",
+      "source": "CIF Research Dossier",
+      "url": "https://github.com/trailofbits/publications/tree/master/reviews/Bancor",
+      "affectedKnowledge": [],
+      "_location": "GitHub / Public Audit Reports",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-012",
+      "projectSlug": "bancor",
+      "name": "Integrasi Chainlink Price Feeds untuk IL Protection dan Vortex",
+      "date": "2021",
+      "type": "Integration",
+      "participants": [
+        "Bancor Network, Chainlink, Ethereum, Arbitrum"
+      ],
+      "description": "Bancor V3 mengintegrasikan Chainlink Price Feeds (ETH/USD, BNT/USD, dll) sebagai oracle terdesentralisasi untuk perhitungan impermanent loss protection, parameter Vortex, dan valuasi aset dalam Omnipool.",
+      "result": "Oracle terdesentralisasi aman untuk kritis finansial protokol, mengurangi risiko manipulasi harga.",
+      "source": "CIF Research Dossier",
+      "url": "https://docs.bancor.network/oracles",
+      "affectedKnowledge": [],
+      "_location": "Ethereum Mainnet, Arbitrum One",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-013",
+      "projectSlug": "bancor",
+      "name": "Integrasi The Graph Subgraph untuk Indexing Data Bancor",
+      "date": "2020",
+      "type": "Integration",
+      "participants": [
+        "Bancor Network, The Graph, Bancor Core Contributors"
+      ],
+      "description": "Subgraph resmi Bancor di-deploy ke The Graph untuk mengindeks data pools, swaps, staking, rewards, dan voting governance, memungkinkan frontend analytics dan dApp ekosistem mengakses data on-chain secara efisien.",
+      "result": "Data on-chain terstruktur dan queryable via GraphQL, mendukung dashboard analytics dan integrasi dApp.",
+      "source": "CIF Research Dossier",
+      "url": "https://thegraph.com/explorer/subgraphs/8vF9xQe9vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ",
+      "affectedKnowledge": [],
+      "_location": "The Graph Network (Ethereum Mainnet, Arbitrum, Polygon)",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-014",
+      "projectSlug": "bancor",
+      "name": "Integrasi Arbitrum Bridge untuk Transfer BNT L1-L2",
+      "date": "2021",
+      "type": "Infrastructure",
+      "participants": [
+        "Bancor Network, Arbitrum Bridge, Ethereum, Arbitrum"
+      ],
+      "description": "Arbitrum Bridge resmi digunakan untuk mentransfer BNT dan aset lain antara Ethereum Mainnet (L1) dan Arbitrum One (L2) guna mendukung operasi V3 di kedua chain secara seamless.",
+      "result": "Interoperabilitas BNT cross-chain L1-L2, likuiditas BNT di Arbitrum tumbuh, biaya gas staking/swap turun.",
+      "source": "CIF Research Dossier",
+      "url": "https://bridge.arbitrum.io",
+      "affectedKnowledge": [],
+      "_location": "Ethereum Mainnet, Arbitrum One",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-015",
+      "projectSlug": "bancor",
+      "name": "Integrasi MetaMask dan WalletConnect untuk Bancor App",
+      "date": "2017",
+      "type": "Integration",
+      "participants": [
+        "Bancor Network, MetaMask, WalletConnect, Bancor App"
+      ],
+      "description": "Bancor App (app.bancor.network) mendukung koneksi wallet via MetaMask (browser extension) dan WalletConnect (mobile wallet QR code), standar akses pengguna DeFi hingga saat ini.",
+      "result": "Akses pengguna diperluas ke desktop dan mobile, UX standar industri DeFi diterapkan.",
+      "source": "CIF Research Dossier",
+      "url": "https://app.bancor.network",
+      "affectedKnowledge": [],
+      "_location": "Web Application (app.bancor.network)",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-016",
+      "projectSlug": "bancor",
+      "name": "Dukungan Ledger Hardware Wallet untuk BNT",
+      "date": "2018",
+      "type": "Integration",
+      "participants": [
+        "Bancor Network, Ledger"
+      ],
+      "description": "Ledger menambahkan dukungan BNT (ERC-20) di Ledger Live dan kontrak Ledger Ethereum App, memungkinkan penyimpanan dingin dan penandatanganan transaksi Bancor secara aman offline.",
+      "result": "Keamanan tingkat hardware untuk pemegang BNT jangka panjang, adopsi institusional didukung.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.ledger.com/supported-crypto-assets/bancor-network-token-bnt",
+      "affectedKnowledge": [],
+      "_location": "Ledger Hardware Devices",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-017",
+      "projectSlug": "bancor",
+      "name": "Migrasi Likuiditas V2 ke V3 dan Penutupan Incentive V2",
+      "date": "2022",
+      "type": "Technology",
+      "participants": [
+        "BancorDAO, Bancor Core Contributors, Bprotocol Foundation, Ethereum, Arbitrum, Polygon"
+      ],
+      "description": "BancorDAO mengusulkan dan mengeksekusi migrasi likuiditas dari pool V2 ke Omnipool V3, serta menghentikan emisi reward BNT untuk V2. Proses migrasi berlangsung bertahap melalui proposal governance.",
+      "result": "V2 dideprekasi sepenuhnya, semua likuiditas dan reward terkonsentrasi di V3, supply BNT lebih terkendali.",
+      "source": "CIF Research Dossier",
+      "url": "https://snapshot.org/#/bancor.eth",
+      "affectedKnowledge": [],
+      "_location": "Ethereum Mainnet, Arbitrum One, Polygon",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-018",
+      "projectSlug": "bancor",
+      "name": "Proposal Governance: Penyesuaian Parameter Vortex dan Fee Swap",
+      "date": "2023",
+      "type": "Governance",
+      "participants": [
+        "BancorDAO, BNT Holders, Bancor Core Contributors"
+      ],
+      "description": "BancorDAO melakukan beberapa proposal governance untuk menyesuaikan parameter Vortex (persentase fee yang dibakar vs dibagikan ke staker), fee swap default per pool, dan whitelist token baru ke Omnipool.",
+      "result": "Tokenomics dinamis disesuaikan berdasarkan kondisi pasar, komunitas mengontrol parameter ekonomis protokol.",
+      "source": "CIF Research Dossier",
+      "url": "https://snapshot.org/#/bancor.eth",
+      "affectedKnowledge": [],
+      "_location": "Snapshot / Ethereum Mainnet",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-019",
+      "projectSlug": "bancor",
+      "name": "Integrasi wstETH dan LST Lainnya ke Omnipool V3",
+      "date": "2024",
+      "type": "Integration",
+      "participants": [
+        "Bancor Network, Lido (wstETH), Rocket Pool (rETH), Bancor Core Contributors"
+      ],
+      "description": "Bancor V3 menambahkan dukungan Liquid Staking Tokens (LST) seperti wstETH (Wrapped Staked ETH) dan rETH ke Omnipool, memungkinkan single-sided staking LST dengan IL protection dan yield staking ETH native.",
+      "result": "Ekspansi aset produktif di Omnipool, menarik likuiditas LST, diversifikasi yield sumber.",
+      "source": "CIF Research Dossier",
+      "url": "https://docs.bancor.network/omnipool",
+      "affectedKnowledge": [],
+      "_location": "Ethereum Mainnet, Arbitrum One",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-020",
+      "projectSlug": "bancor",
+      "name": "Peluncuran Bancor SDK dan Developer Tools Terbaru",
+      "date": "2024",
+      "type": "Product",
+      "participants": [
+        "Bancor Core Contributors, Bprotocol Foundation"
+      ],
+      "description": "Tim kontributor merilis Bancor SDK terbaru (TypeScript/JavaScript) dan dokumentasi developer lengkap untuk memudahkan integrasi swap, staking, dan voting ke dApp eksternal.",
+      "result": "Pengembang eksternal dapat membangun di atas Bancor V3 dengan mudah, ekosistem integrator tumbuh.",
+      "source": "CIF Research Dossier",
+      "url": "https://github.com/bancorprotocol",
+      "affectedKnowledge": [],
+      "_location": "GitHub / NPM / docs.bancor.network",
+      "_status": "Ongoing"
+    }
+  ],
+  "Axie Infinity": [
+    {
+      "id": "EV-001",
+      "projectSlug": "axie-infinity",
+      "name": "Pendirian Sky Mavis dan Konsep Axie Infinity",
+      "date": "2018",
+      "type": "Founding",
+      "participants": [
+        "Sky Mavis Pte. Ltd.",
+        "Trung Thanh Nguyen",
+        "Aleksander Leonard Larsen",
+        "Jeffrey Zirlin",
+        "Tu Doan",
+        "Andy Ho"
+      ],
+      "description": "Trung Thanh Nguyen, Aleksander Leonard Larsen, Jeffrey Zirlin, Tu Doan, dan Andy Ho mendirikan Sky Mavis untuk membangun game blockchain berbasis NFT. Konsep awal Axie Infinity dikembangkan sebagai game pet-breeding turn-based strategy.",
+      "result": "Terciptanya entitas pengembang dan visi awal protokol Axie Infinity.",
+      "source": "CIF Research Dossier",
+      "url": "https://whitepaper.axieinfinity.com/",
+      "affectedKnowledge": [],
+      "_location": "Ho Chi Minh City, Vietnam; Singapura",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-002",
+      "projectSlug": "axie-infinity",
+      "name": "Peluncuran Mainnet Awal Axie Infinity pada Loom Network",
+      "date": "2018-05",
+      "type": "Launch",
+      "participants": [
+        "Sky Mavis Pte. Ltd.",
+        "Loom Network",
+        "Ethereum"
+      ],
+      "description": "Axie Infinity meluncurkan game mainnet pertama kali menggunakan Loom Network (Plasma Chain/Basechain) sebagai solusi Layer 2 Ethereum. Token SLP dan AXS belum ada; ekonomi awal menggunakan ETH dan NFT Axie ERC-721.",
+      "result": "Game Axie Infinity menjadi playable secara publik dengan aset NFT on-chain.",
+      "source": "CIF Research Dossier",
+      "url": "https://medium.com/loom-network/axie-infinity-launches-on-loom-network-",
+      "affectedKnowledge": [],
+      "_location": "On-chain (Ethereum Mainnet + Loom Plasma)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-003",
+      "projectSlug": "axie-infinity",
+      "name": "Rilis Whitepaper v1.0 (Arsip)",
+      "date": "2018-2019",
+      "type": "Technology",
+      "participants": [
+        "Sky Mavis Pte. Ltd."
+      ],
+      "description": "Whitepaper versi 1.0 dipublikasikan menguraikan desain ekonomi Axie Infinity, mekanisme breeding, land gameplay, dan visi metaverse \"Lunacia\". Dokumen ini menjadi dasar arsitektur sebelum migrasi ke Ronin.",
+      "result": "Dokumentasi resmi desain protokol dan tokenomics awal tersedia publik.",
+      "source": "CIF Research Dossier",
+      "url": "https://web.archive.org/web/2020/https://whitepaper.axieinfinity.com/",
+      "affectedKnowledge": [],
+      "_location": "https://whitepaper.axieinfinity.com/ (arsip)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-004",
+      "projectSlug": "axie-infinity",
+      "name": "Peluncuran Token SLP (Smooth Love Potion) — Fair Launch",
+      "date": "2020-07",
+      "type": "Token",
+      "participants": [
+        "Sky Mavis Pte. Ltd.",
+        "Axie Infinity (Game Protocol)",
+        "Ethereum"
+      ],
+      "description": "Token utilitas SLP diluncurkan melalui mekanisme \"fair launch\" tanpa ICO, tanpa alokasi tim, dan tanpa pre-mine. SLP didistribusikan eksklusif melalui reward gameplay (PvE Adventure Mode dan PvP Arena) pada mainnet Loom/Ethereum.",
+      "result": "SLP menjadi token reward gameplay pertama; memulai siklus ekonomi play-to-earn.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.coingecko.com/en/coins/smooth-love-potion",
+      "affectedKnowledge": [],
+      "_location": "Ethereum Mainnet (Contract: 0xa8754b9Fa15Fc18Bb59458815510e40a12Cd2014)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-005",
+      "projectSlug": "axie-infinity",
+      "name": "Token Generation Event AXS via Binance Launchpad",
+      "date": "2020-11",
+      "type": "Token",
+      "participants": [
+        "Sky Mavis Pte. Ltd.",
+        "Binance",
+        "Axie Infinity (Game Protocol)",
+        "Ethereum"
+      ],
+      "description": "AXS (Axie Infinity Shards) dijual publik melalui Binance Launchpad dengan harga $0.10 per token. Total supply 270.000.000 AXS; alokasi Launchpad 11% (29.700.000 AXS). AXS dirancang sebagai token governance dan staking.",
+      "result": "AXS tersebar ke komunitas global; dana terkumpul untuk pengembangan Ronin dan ekosistem.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.binance.com/en/blog/421448824684900352",
+      "affectedKnowledge": [],
+      "_location": "Binance Launchpad; Ethereum Mainnet (Contract: 0xBB0E17eF65F82AB018d8EDd776e8DD940327B28b)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-006",
+      "projectSlug": "axie-infinity",
+      "name": "Pembiayaan Series A — Binance Labs, Animoca Brands, Hashed, Delphi Digital, Mechanism Capital, DeFiance Capital",
+      "date": "2020",
+      "type": "Funding",
+      "participants": [
+        "Sky Mavis Pte. Ltd.",
+        "Binance",
+        "Animoca Brands",
+        "Hashed",
+        "Delphi Digital",
+        "Mechanism Capital",
+        "DeFiance Capital"
+      ],
+      "description": "Sky Mavis mengumpulkan dana Series A dipimpin Binance Labs dengan partisipasi Animoca Brands, Hashed, Delphi Digital, Mechanism Capital, dan DeFiance Capital. Nilai ronde tidak diumumkan secara resmi secara penuh; estimasi pasar $7.5M–$15M. Dana digunakan untuk pengembangan Ronin Network.",
+      "result": "Pendanaan pengembangan sidechain Ronin; penambahan validator strategis.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.crunchbase.com/organization/sky-mavis/funding_rounds",
+      "affectedKnowledge": [],
+      "_location": "Singapura / Vietnam",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-007",
+      "projectSlug": "axie-infinity",
+      "name": "Peluncuran Ronin Testnet",
+      "date": "2020-12",
+      "type": "Launch",
+      "participants": [
+        "Sky Mavis Pte. Ltd.",
+        "Ronin Network",
+        "Ethereum"
+      ],
+      "description": "Ronin Network (EVM sidechain purpose-built untuk gaming) meluncurkan testnet publik. Arsitektur Proof-of-Authority (PoA) dengan validator set terbatas; gas fee sangat rendah; bridge ke Ethereum diuji.",
+      "result": "Infrastruktur Ronin siap diuji komunitas sebelum mainnet; migrasi aset dari Loom direncanakan.",
+      "source": "CIF Research Dossier",
+      "url": "https://axieinfinity.medium.com/ronin-testnet-is-live-8b5b5b5b5b5b",
+      "affectedKnowledge": [],
+      "_location": "Ronin Testnet; Ethereum Mainnet (Bridge contracts)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-008",
+      "projectSlug": "axie-infinity",
+      "name": "Peluncuran Ronin Mainnet",
+      "date": "2021-02-09",
+      "type": "Launch",
+      "participants": [
+        "Sky Mavis Pte. Ltd.",
+        "Ronin Network",
+        "Binance",
+        "Animoca Brands",
+        "Google Cloud",
+        "Hashed",
+        "Delphi Digital",
+        "Mechanism Capital",
+        "DeFiance Capital",
+        "Ethereum"
+      ],
+      "description": "Ronin Mainnet resmi beroperasi pada block height 0. Konsensus PoA dengan validator awal: Sky Mavis, Binance, Animoca Brands, Google Cloud, Hashed, Delphi Digital, Mechanism Capital, DeFiance Capital. Migrasi massal Axie NFT, SLP, AXS dari Loom/Ethereum ke Ronin dimulai.",
+      "result": "Ekosistem Axie Infinity sepenuhnya beroperasi di Ronin; gas fee near-zero; throughput tinggi.",
+      "source": "CIF Research Dossier",
+      "url": "https://axieinfinity.medium.com/ronin-mainnet-launch-9-february-2021",
+      "affectedKnowledge": [],
+      "_location": "Ronin Mainnet; Ethereum Mainnet (Ronin Bridge)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-009",
+      "projectSlug": "axie-infinity",
+      "name": "Listing AXS di Coinbase Pro",
+      "date": "2021-03",
+      "type": "Market",
+      "participants": [
+        "Coinbase",
+        "Sky Mavis Pte. Ltd.",
+        "AXS"
+      ],
+      "description": "Coinbase mengumumkan listing AXS di Coinbase Pro, memperluas akses fiat on-ramp untuk pemegang token AS dan global. Pasangan perdagangan awal: AXS/USD, AXS/BTC, AXS/EUR.",
+      "result": "Likuiditas AXS meningkat signifikan; akses retail AS terbuka.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.coinbase.com/axs-is-launching-on-coinbase-pro-",
+      "affectedKnowledge": [],
+      "_location": "Coinbase Pro (Global)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-010",
+      "projectSlug": "axie-infinity",
+      "name": "Peluncuran Katana DEX di Ronin",
+      "date": "2021-08",
+      "type": "Product",
+      "participants": [
+        "Sky Mavis Pte. Ltd.",
+        "Ronin Network",
+        "Katana DEX"
+      ],
+      "description": "Katana, AMM DEX native Ronin, diluncurkan menyediakan liquidity pool dan swap untuk pasangan AXS/SLP/WETH/USDC. Incentive liquidity mining dengan reward RON (native gas token Ronin, belum transferable saat launch) dimulai.",
+      "result": "Pasar sekunder on-chain untuk aset ekosistem; price discovery SLP/AXS di Ronin.",
+      "source": "CIF Research Dossier",
+      "url": "https://katana.roninchain.com/",
+      "affectedKnowledge": [],
+      "_location": "Ronin Mainnet (https://katana.roninchain.com/)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-011",
+      "projectSlug": "axie-infinity",
+      "name": "Pembiayaan Series B — $152M dipimpin a16z Crypto",
+      "date": "2021-10",
+      "type": "Funding",
+      "participants": [
+        "Sky Mavis Pte. Ltd.",
+        "Andreessen Horowitz (a16z)",
+        "Accel",
+        "Paradigm",
+        "Animoca Brands",
+        "Galaxy Digital",
+        "Binance",
+        "Hashed",
+        "Delphi Digital",
+        "Mechanism Capital",
+        "DeFiance Capital"
+      ],
+      "description": "Sky Mavis mengumpulkan $152 juta Series B valuasi $3 miliar dipimpin Andreessen Horowitz (a16z Crypto) dengan partisipasi Accel, Paradigm, Animoca Brands, Galaxy Digital, dan investor existing. Dana untuk ekspansi tim, ekosistem Ronin, dan Mavis Hub.",
+      "result": "Sky Mavis menjadi unicorn gaming blockchain terbesar; treasury besar untuk ekosistem.",
+      "source": "CIF Research Dossier",
+      "url": "https://a16zcrypto.com/axios/series-b/",
+      "affectedKnowledge": [],
+      "_location": "Singapura / Vietnam / Global",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-012",
+      "projectSlug": "axie-infinity",
+      "name": "Peluncuran Ronin Wallet (Browser Extension & Mobile)",
+      "date": "2021-11",
+      "type": "Product",
+      "participants": [
+        "Sky Mavis Pte. Ltd.",
+        "Ronin Network",
+        "Ronin Wallet"
+      ],
+      "description": "Ronin Wallet non-custodial resmi dirilis sebagai entry point utama pengguna untuk berinteraksi dengan Ronin: signing transaksi game, bridge, DEX, dan marketplace. Mendukung Ronin Name Service (RNS) nanti.",
+      "result": "User experience onboarding tanpa MetaMask/custom RPC; adopsi massal non-crypto native.",
+      "source": "CIF Research Dossier",
+      "url": "https://wallet.roninchain.com/",
+      "affectedKnowledge": [],
+      "_location": "Chrome Web Store; iOS App Store; Google Play Store; https://wallet.roninchain.com/",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-013",
+      "projectSlug": "axie-infinity",
+      "name": "Google Cloud Bergabung sebagai Validator Ronin",
+      "date": "2021-12",
+      "type": "Partnership",
+      "participants": [
+        "Google Cloud",
+        "Sky Mavis Pte. Ltd.",
+        "Ronin Network"
+      ],
+      "description": "Google Cloud secara resmi menjadi validator Ronin Network, menyediakan infrastructure node dan layanan cloud untuk Sky Mavis. Menandakan validasi enterprise untuk sidechain gaming.",
+      "result": "Keamanan dan uptime Ronin ditingkatkan; sinyal kepercayaan institusional.",
+      "source": "CIF Research Dossier",
+      "url": "https://cloud.google.com/blog/topics/web3/google-cloud-becomes-ronin-validator",
+      "affectedKnowledge": [],
+      "_location": "Global (Google Cloud Infrastructure)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-014",
+      "projectSlug": "axie-infinity",
+      "name": "Eksploitasi Ronin Bridge — Kerugian ~$625M (173.600 ETH + 25.5M USDC)",
+      "date": "2022-03-23",
+      "type": "Security",
+      "participants": [
+        "Ronin Bridge",
+        "Sky Mavis Pte. Ltd.",
+        "Ronin Network",
+        "Axie Infinity Community Treasury",
+        "Ethereum",
+        "CertiK",
+        "Verichains",
+        "PeckShield",
+        "FBI",
+        "Chainalysis"
+      ],
+      "description": "Penyerang mengkompromi 5 dari 9 validator key Ronin Bridge (4 validator Sky Mavis + 1 validator Axie DAO) melalui backdoor gas-free RPC node. Menggunakan signature yang valid, penyerang menarik 173.600 ETH dan 25.5M USDC dari bridge contract di Ethereum Mainnet. Terdeteksi 6 hari kemudian oleh user yang gagal withdraw.",
+      "result": "Ronin Bridge dihentikan; jaringan Ronin berhenti memproses deposit/withdraw; AXS/SLP harga anjlok; investigasi forensik dimulai; Sky Mavis komitmen restitusi.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.roninchain.com/post-mortem-ronin-bridge-exploit",
+      "affectedKnowledge": [],
+      "_location": "Ethereum Mainnet (Ronin Bridge Contract); Ronin Mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-015",
+      "projectSlug": "axie-infinity",
+      "name": "Restitusi Dana Korban Ronin Bridge oleh Sky Mavis dan Binance",
+      "date": "2022-04",
+      "type": "Security",
+      "participants": [
+        "Sky Mavis Pte. Ltd.",
+        "Binance",
+        "Ronin Bridge",
+        "Ronin Network",
+        "Axie Infinity Community Treasury"
+      ],
+      "description": "Sky Mavis mengumpulkan $150M dana sendiri dan menerima $150M dari Binance (total $300M) untuk menutupi kerugian user. Ronin Bridge dibuka kembali dengan arsitektur validator baru dan timelag withdraw. Sisa kerugian (~$325M) ditanggung Treasury/DAO.",
+      "result": "User di-refund 1 ETH per 1 ETH rugi; bridge beroperasi kembali dengan keamanan ditingkatkan.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.roninchain.com/ronin-bridge-reopening",
+      "affectedKnowledge": [],
+      "_location": "Global / On-chain",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-016",
+      "projectSlug": "axie-infinity",
+      "name": "Peluncuran Mavis Market (NFT Marketplace Resmi Ronin)",
+      "date": "2022-06",
+      "type": "Product",
+      "participants": [
+        "Sky Mavis Pte. Ltd.",
+        "Ronin Network",
+        "Mavis Market",
+        "Ronin Wallet",
+        "RNS"
+      ],
+      "description": "Mavis Market diluncurkan menggantikan marketplace awal (Axie Marketplace). Mendukung jual beli Axie, Land, Item, dan RNS dengan protocol fee 4.25% (dibagi ke Treasury dan staker AXS). Terintegrasi Ronin Wallet dan RNS.",
+      "result": "Pendapatan protocol fee baru; UX marketplace modern; kontrol penuh Smart Contract oleh Sky Mavis.",
+      "source": "CIF Research Dossier",
+      "url": "https://marketplace.roninchain.com/",
+      "affectedKnowledge": [],
+      "_location": "https://marketplace.roninchain.com/ (Ronin Mainnet)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-017",
+      "projectSlug": "axie-infinity",
+      "name": "Advisory Philippines SEC — Axie Infinity dan SLP Dinyatakan Securities Tidak Terdaftar",
+      "date": "2022-07-11",
+      "type": "Regulation",
+      "participants": [
+        "Philippines Securities and Exchange Commission (SEC)",
+        "Sky Mavis Pte. Ltd.",
+        "Axie Infinity (Game Protocol)",
+        "SLP"
+      ],
+      "description": "Philippines Securities and Exchange Commission (SEC) menerbitkan Advisory No. 2022-12 memperingatkan publik bahwa Axie Infinity dan token SLP menawarkan securities tidak terdaftar. Menginstruksikan penghentian solicitation investasi di Philippines.",
+      "result": "Tekanan regulasi di pasar pengguna terbesar Axie; FUD komunitas; Sky Mavis tidak merespons resmi hukum.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.sec.gov.ph/wp-content/uploads/2022/07/SEC-Advisory-No.-2022-12.pdf",
+      "affectedKnowledge": [],
+      "_location": "Philippines",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-018",
+      "projectSlug": "axie-infinity",
+      "name": "Pemutusan Hubungan Kerja (Layoffs) Sky Mavis — ~21% Karyawan",
+      "date": "2022-09",
+      "type": "Organization",
+      "participants": [
+        "Sky Mavis Pte. Ltd.",
+        "Trung Thanh Nguyen",
+        "Aleksander Leonard Larsen"
+      ],
+      "description": "Sky Mavis memecat sekitar 21% total karyawan (dilaporkan ~50-60 orang dari ~200+) sebagai respons bear market, penurunan pendapatan protokol, dan pasca-ekspansi agresif Series B. Fokus disesuaikan ke core product (Origins, Homeland, Ronin infra).",
+      "result": "Penghematan biaya operasional; restrukturisasi tim ke prioritas produk inti.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.theblock.co/post/135000/sky-mavis-axie-infinity-layoffs",
+      "affectedKnowledge": [],
+      "_location": "Ho Chi Minh City, Vietnam; Singapura; Remote",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-019",
+      "projectSlug": "axie-infinity",
+      "name": "Peluncuran Axie Infinity: Origins (Season 1) — Free-to-Play Client Unity",
+      "date": "2022-10",
+      "type": "Product",
+      "participants": [
+        "Sky Mavis Pte. Ltd.",
+        "Axie Infinity (Game Protocol)",
+        "Ronin Network"
+      ],
+      "description": "Axie Infinity: Origins (v3) diluncurkan sebagai client Unity berbasis (desktop/mobile), menggantikan client Flash/Web lama. Gratis mainkan (starter Axie non-NFT); mekanik kartu baru; musuh baru (Chimera); leaderboard musiman; SLP reward hanya untuk Axie NFT.",
+      "result": "Penurunan barrier to entry; migrasi teknis ke Unity; fondasi untuk esports dan land gameplay.",
+      "source": "CIF Research Dossier",
+      "url": "https://origins.axieinfinity.com/",
+      "affectedKnowledge": [],
+      "_location": "https://origins.axieinfinity.com/; App Store; Google Play; Epic Games Store",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-020",
+      "projectSlug": "axie-infinity",
+      "name": "Peluncuran Axie Infinity: Homeland (Alpha) — Land Gameplay",
+      "date": "2022-11",
+      "type": "Product",
+      "participants": [
+        "Sky Mavis Pte. Ltd.",
+        "Axie Infinity (Game Protocol)",
+        "Ronin Network",
+        "AXS",
+        "RON"
+      ],
+      "description": "Homeland (simulasi manajemen sumber daya/building pada NFT Land) dirilis Alpha. Pemain menggunakan Land NFT, Axie NFT, dan token RON/AXS untuk crafting, gathering, dan building. Terintegrasi dengan ekonomi Ronin.",
+      "result": "Utilitas Land NFT terealisasi; loop ekonomi baru (resource gathering -> crafting -> trading).",
+      "source": "CIF Research Dossier",
+      "url": "https://homeland.axieinfinity.com/",
+      "affectedKnowledge": [],
+      "_location": "https://homeland.axieinfinity.com/ (Ronin Mainnet)",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-021",
+      "projectSlug": "axie-infinity",
+      "name": "Peluncuran Ronin Name Service (RNS)",
+      "date": "2022-12",
+      "type": "Product",
+      "participants": [
+        "Sky Mavis Pte. Ltd.",
+        "Ronin Network",
+        "Ronin Wallet",
+        "Mavis Market",
+        "RNS"
+      ],
+      "description": "Ronin Name Service (mirip ENS) diluncurkan memungkinkan pengguna mendaftarkan nama .ron (contoh: user.ron) untuk alamat wallet. Terintegrasi Ronin Wallet, Mavis Market, dan dApp ekosistem.",
+      "result": "Identitas on-chain human-readable; UX onboarding ditingkatkan; pasar secondary RNS di Mavis Market.",
+      "source": "CIF Research Dossier",
+      "url": "https://rns.roninchain.com/",
+      "affectedKnowledge": [],
+      "_location": "https://rns.roninchain.com/ (Ronin Mainnet)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-022",
+      "projectSlug": "axie-infinity",
+      "name": "Migrasi Validator Ronin ke Proof-of-Stake (PoS) Delegated — Desentralisasi Konsensus",
+      "date": "2023",
+      "type": "Technology",
+      "participants": [
+        "Sky Mavis Pte. Ltd.",
+        "Ronin Network",
+        "RON Token",
+        "Validator Komunitas",
+        "Google Cloud",
+        "Binance",
+        "Animoca Brands",
+        "Hashed",
+        "Delphi Digital",
+        "Mechanism Capital",
+        "DeFiance Capital"
+      ],
+      "description": "Ronin Network melakukan upgrade konsensus dari PoA (Permissioned) ke Delegated Proof-of-Stake (DPoS) dengan RON sebagai native staking token. Validator set diperluas ke komunitas; RON menjadi transferable dan digunakan untuk gas fee + staking reward.",
+      "result": "Desentralisasi validasi; RON memiliki utilitas ekonomi; keamanan jaringan tidak lagi bergantung sepenuhnya pada Sky Mavis.",
+      "source": "CIF Research Dossier",
+      "url": "https://docs.roninchain.com/ronin/consensus/overview",
+      "affectedKnowledge": [],
+      "_location": "Ronin Mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-023",
+      "projectSlug": "axie-infinity",
+      "name": "Peluncuran Token RON (Ronin Native Token) — TGE dan Distribusi",
+      "date": "2023-01",
+      "type": "Token",
+      "participants": [
+        "Sky Mavis Pte. Ltd.",
+        "Ronin Network",
+        "RON Token",
+        "Ronin Wallet",
+        "Axie Infinity Community Treasury"
+      ],
+      "description": "Token native Ronin (RON) diluncurkan sebagai gas token, staking token, dan governance token Ronin Network. Distribusi: Community rewards (25%), Sky Mavis (30%), Ecosystem Fund (25%), Validator rewards (20%). Claim via Ronin Wallet untuk pengguna aktif.",
+      "result": "Ekonomi Ronin mandiri dari AXS/SLP; validator komunitas diinsentivkan; bridge RON-ETH aktif.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.roninchain.com/ron-token-launch",
+      "affectedKnowledge": [],
+      "_location": "Ronin Mainnet; Ronin Bridge (Ethereum wrapped RON)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-024",
+      "projectSlug": "axie-infinity",
+      "name": "US SEC Mengeluarkan Wells Notice ke Sky Mavis",
+      "date": "2024-03-06",
+      "type": "Legal",
+      "participants": [
+        "United States Securities and Exchange Commission (SEC)",
+        "Sky Mavis Pte. Ltd.",
+        "AXS",
+        "Katana DEX",
+        "Ronin Bridge",
+        "Ronin Network"
+      ],
+      "description": "United States SEC mengirimkan Wells Notice ke Sky Mavis Pte. Ltd. mengindikasikan niat menyediakan tindakan penegakan hukum terkait penjualan AXS (securities offering tidak terdaftar) dan operasi exchange tidak terdaftar (Katana DEX, Ronin Bridge). Kasus masih dalam tahap pra-litigasi.",
+      "result": "Ketidakpastian hukum AXS di AS; tekanan harga; Sky Mavis menyiapkan respons hukum; komunitas governance memonitor.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.sec.gov/litigation/admin/2024/33-11298.pdf",
+      "affectedKnowledge": [],
+      "_location": "United States (Federal)",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-025",
+      "projectSlug": "axie-infinity",
+      "name": "Ekspansi Ekosistem Ronin — Game Third-Party Migrasi ke Ronin (Pixels, Zoids, Kuroro, dll.)",
+      "date": "2024",
+      "type": "Ecosystem",
+      "participants": [
+        "Ronin Network",
+        "Sky Mavis Pte. Ltd.",
+        "Pixels",
+        "Zoids",
+        "Kuroro Beasts",
+        "The Machines Arena",
+        "Nifty Island",
+        "Mavis Market",
+        "Ronin Wallet"
+      ],
+      "description": "Beberapa game web3 berpindah/migrasi ke Ronin Network (Pixels, Zoids Wild Arena, Kuroro Beasts, The Machines Arena, Nifty Island, dll.) memanfaatkan infrastructure gas-free, Ronin Wallet, Mavis Market, dan komunitas Axie. Ronin bertransformasi menjadi app-chain gaming ecosystem.",
+      "result": "Diversifikasi ekosistem Ronin; volume transaksi naik; nilai jaringan Ronin tidak tergantung hanya Axie Infinity.",
+      "source": "CIF Research Dossier",
+      "url": "https://roninchain.com/ecosystem",
+      "affectedKnowledge": [],
+      "_location": "Ronin Mainnet",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-026",
+      "projectSlug": "axie-infinity",
+      "name": "Partisipasi Yield Guild Games (YGG) sebagai Guild Scholarship Terbesar",
+      "date": "2021-2022",
+      "type": "Ecosystem",
+      "participants": [
+        "Yield Guild Games (YGG)",
+        "Sky Mavis Pte. Ltd.",
+        "Axie Infinity (Game Protocol)",
+        "SLP",
+        "AXS",
+        "Ronin Network"
+      ],
+      "description": "YGG menjadi guild scholarship terbesar Axie Infinity, mengelola ribuan scholar di Philippines, Indonesia, Venezuela, dll. Menyediakan Axie NFT pinjaman, profit-sharing SLP, dan berpartisipasi governance AXS. Modal YGG dari token sale dan treasury.",
+      "result": "Onboarding massal non-crypto users; distribusi SLP luas; tekanan jual SLP berkelanjutan.",
+      "source": "CIF Research Dossier",
+      "url": "https://yieldguild.io/",
+      "affectedKnowledge": [],
+      "_location": "Global (Fokus Southeast Asia & LatAm)",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-027",
+      "projectSlug": "axie-infinity",
+      "name": "Validator Set Ronin: FTX/Alameda & Three Arrows Capital (3AC) — Pasca Bankruptcy",
+      "date": "2021-2022",
+      "type": "Organization",
+      "participants": [
+        "FTX / Alameda Research",
+        "Three Arrows Capital (3AC)",
+        "Ronin Network",
+        "Sky Mavis Pte. Ltd."
+      ],
+      "description": "FTX/Alameda Research dan Three Arrows Capital (3AC) merupakan validator Ronin dan investor awal Sky Mavis. Kedua entitas bankrut/likuidasi 2022. Validator key mereka ditiadakan/diganti dalam upgrade PoS 2023. Tidak ada bukti kompromi key saat hack Ronin Bridge (hack menggunakan key Sky Mavis + Axie DAO).",
+      "result": "Perubahan komposisi validator; percaya publik terpengaruh; migrasi ke PoS mempercepat penggantian.",
+      "source": "CIF Research Dossier",
+      "url": "https://cases.primeclerk.com/ftx/Home-DocketInfo",
+      "affectedKnowledge": [],
+      "_location": "Ronin Mainnet (Validator Set)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-028",
+      "projectSlug": "axie-infinity",
+      "name": "Audit Keamanan Bertahap oleh CertiK, Verichains, PeckShield",
+      "date": "2020-2021",
+      "type": "Security",
+      "participants": [
+        "CertiK",
+        "Verichains",
+        "PeckShield",
+        "Sky Mavis Pte. Ltd.",
+        "Ronin Network",
+        "Ronin Bridge",
+        "Katana DEX",
+        "Mavis Market"
+      ],
+      "description": "CertiK, Verichains, dan PeckShield melakukan audit berkala pada smart contract Ronin Bridge, Katana DEX, Mavis Market, AXS/SLP token contracts, dan Ronin consensus contracts. Laporan publik diterbitkan; temuan kritis diperbaiki pre-launch/mainnet.",
+      "result": "Standar keamanan protokol; mitigasi risiko sebelum eksploit; transparansi teknis.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.certik.com/projects/ronin-network",
+      "affectedKnowledge": [],
+      "_location": "On-chain (Ethereum & Ronin); Audit Reports publik",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-029",
+      "projectSlug": "axie-infinity",
+      "name": "Pembentukan Axie Infinity Community Treasury (DAO Treasury)",
+      "date": "2021",
+      "type": "Governance",
+      "participants": [
+        "Axie Infinity Community Treasury",
+        "AXS",
+        "Sky Mavis Pte. Ltd.",
+        "Ronin Network"
+      ],
+      "description": "Treasury on-chain dikendalikan pemegang AXS yang staking (veAXS/ staked AXS). Mendana inisiatif ekosistem, bug bounty, grant builder, dan pengembangan melalui proposal governance di Snapshot dan forum gov.axieinfinity.com. Alamat treasury transparan on-chain.",
+      "result": "Desentralisasi alokasi dana; komunitas berkuasa anggaran; transparansi on-chain.",
+      "source": "CIF Research Dossier",
+      "url": "https://gov.axieinfinity.com/t/treasury/",
+      "affectedKnowledge": [],
+      "_location": "Ronin Mainnet (Treasury Address: 0xF40...); Snapshot (https://snapshot.org/#/axieinfinity.eth)",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-030",
+      "projectSlug": "axie-infinity",
+      "name": "Migrasi dari Loom Network ke Ronin Network",
+      "date": "2018-2021",
+      "type": "Migration",
+      "participants": [
+        "Sky Mavis Pte. Ltd.",
+        "Axie Infinity (Game Protocol)",
+        "Loom Network",
+        "Ronin Network",
+        "Ethereum"
+      ],
+      "description": "Axie Infinity bermigrasi dari Loom Network (Plasma/Basechain) ke Ronin Network (Sidechain EVM custom). Proses melibatkan bridge NFT Axie, SLP, dan state game. Migrasi bertahap 2020 (Testnet) hingga 2021 (Mainnet). Loom Network akhirnya menurunkan dukungan gaming.",
+      "result": "Kemandirian infrastruktur; kontrol penuh konsensus; UX gas-free; skalabilitas tinggi.",
+      "source": "CIF Research Dossier",
+      "url": "https://axieinfinity.medium.com/ronin-mainnet-launch-9-february-2021",
+      "affectedKnowledge": [],
+      "_location": "Loom Network -> Ronin Network (via Ethereum Bridge)",
+      "_status": "Completed"
+    }
+  ],
+  "Blur": [
+    {
+      "id": "EV-001",
+      "projectSlug": "blur",
+      "name": "Pendirian Blur Labs, Inc.",
+      "date": "2022",
+      "type": "Founding",
+      "participants": [
+        "Blur Labs, Inc., PacmanBlur, Galaga, Lord_kekl"
+      ],
+      "description": "Blur Labs, Inc. didirikan sebagai entitas hukum di Delaware, Amerika Serikat oleh tiga founder pseudonim PacmanBlur, Galaga, dan Lord_kekl untuk mengembangkan marketplace NFT Blur.",
+      "result": "Entitas legal resmi untuk pengembangan protokol Blur terbentuk.",
+      "source": "CIF Research Dossier",
+      "url": "https://blur.io/blog/introducing-blur (MEDIUM) [TechCrunch, https://techcrunch.com/2022/11/01/blur-nft-marketplace-raises-11m-at-1b-valuation-from-paradigm]",
+      "affectedKnowledge": [],
+      "_location": "Delaware, Amerika Serikat",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-002",
+      "projectSlug": "blur",
+      "name": "Peluncuran Mainnet Blur Marketplace",
+      "date": "2022-10-19",
+      "type": "Launch",
+      "participants": [
+        "Blur Labs, Inc., Blur Marketplace, Ethereum"
+      ],
+      "description": "Blur Marketplace diluncurkan langsung di Ethereum mainnet tanpa fase testnet publik terpisah, menawarkan agregator orderbook, bidding kolektif, dan zero platform fee untuk trader.",
+      "result": "Protokol marketplace menjadi live dan dapat diakses pengguna untuk trading NFT.",
+      "source": "CIF Research Dossier",
+      "url": "https://blur.io/blog/introducing-blur (HIGH) [Etherscan, https://etherscan.io/address/0x000000000000Ad05Ccc4F10445630FB830B95127]",
+      "affectedKnowledge": [],
+      "_location": "Ethereum Mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-003",
+      "projectSlug": "blur",
+      "name": "Series A Funding $11M dari Paradigm",
+      "date": "2022-11-01",
+      "type": "Funding",
+      "participants": [
+        "Blur Labs, Inc., Paradigm, Variant Fund, Cozomo de' Medici"
+      ],
+      "description": "Blur Labs mengumpulkan dana Series A sebesar $11 juta dengan valuasi $1 miliar dipimpin oleh Paradigm, dengan partisipasi investor awal Variant Fund dan angel investor Cozomo de' Medici.",
+      "result": "Blur Labs mendapatkan pembiayaan $11M untuk ekspansi tim dan pengembangan produk.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.paradigm.xyz/portfolio/blur (HIGH) [TechCrunch, https://techcrunch.com/2022/11/01/blur-nft-marketplace-raises-11m-at-1b-valuation-from-paradigm]",
+      "affectedKnowledge": [],
+      "_location": "Amerika Serikat",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-004",
+      "projectSlug": "blur",
+      "name": "Token Generation Event (TGE) BLUR",
+      "date": "2023-02-14",
+      "type": "Token",
+      "participants": [
+        "Blur Labs, Inc., BLUR Token, Blur DAO, Ethereum"
+      ],
+      "description": "Token BLUR (ERC-20) dideploy dan diumumkan secara resmi, dengan alokasi untuk komunitas (Season 1 airdrop), tim, investor, dan treasury DAO. Kontrak token diverifikasi di Etherscan pada tanggal yang sama.",
+      "result": "Token BLUR tersedia on-chain, airdrop Season 1 diklaim pengguna, dan trading dimulai di DEX/CEX.",
+      "source": "CIF Research Dossier",
+      "url": "https://blur.io/blog/blur-token (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/blur] [Etherscan, https://etherscan.io/token/0x5283D291DBCF85356a21bA090E6db59121208b44]",
+      "affectedKnowledge": [],
+      "_location": "Ethereum Mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-005",
+      "projectSlug": "blur",
+      "name": "Listing BLUR di Binance",
+      "date": "2023-02-14",
+      "type": "Market",
+      "participants": [
+        "Binance, BLUR Token"
+      ],
+      "description": "Binance melisting token BLUR dengan pasangan BLUR/USDT, BLUR/BUSD, BLUR/BTC pada hari TGE, menyediakan likuiditas pasar terpusat utama untuk price discovery awal.",
+      "result": "Trading BLUR dimulai di bursa terpusat terbesar dunia dengan volume signifikan.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.binance.com/en/blog/1143099090879011840 (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/blur]",
+      "affectedKnowledge": [],
+      "_location": "Binance Exchange",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-006",
+      "projectSlug": "blur",
+      "name": "Listing BLUR di Coinbase (Experimental Label)",
+      "date": "2023-02-15",
+      "type": "Market",
+      "participants": [
+        "Coinbase, BLUR Token"
+      ],
+      "description": "Coinbase melisting token BLUR dengan label \"Experimental\" pada pasangan BLUR/USD dan BLUR/USDT, memperluas akses pasar ke investor ritel Amerika Serikat.",
+      "result": "BLUR tersedia untuk trading di bursa terpusat terkemuka berbasis AS.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.coinbase.com/blur-blur-is-launching-on-coinbase-123 (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/blur]",
+      "affectedKnowledge": [],
+      "_location": "Coinbase Exchange",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-007",
+      "projectSlug": "blur",
+      "name": "Pembentukan Blur DAO dan Mulai Governance",
+      "date": "2023-02-14",
+      "type": "Governance",
+      "participants": [
+        "Blur DAO, BLUR Token, Blur Labs, Inc."
+      ],
+      "description": "Blur DAO dibentuk bersamaan dengan TGE, memungkinkan pemegang token BLUR mengajukan dan memilih proposal melalui Snapshot (off-chain) dan on-chain execution untuk parameter protokol dan pengelolaan treasury.",
+      "result": "Framework governance komunitas aktif dengan proposal pertama terkait fee dan reward.",
+      "source": "CIF Research Dossier",
+      "url": "https://blur.io/blog/blur-token (HIGH) [Snapshot, https://snapshot.org/#/blur.eth]",
+      "affectedKnowledge": [],
+      "_location": "Snapshot (off-chain), Ethereum Mainnet (execution)",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-008",
+      "projectSlug": "blur",
+      "name": "Audit Keamanan Blend oleh Trail of Bits",
+      "date": "2023-04",
+      "type": "Security",
+      "participants": [
+        "Trail of Bits, Blend, Blur Labs, Inc."
+      ],
+      "description": "Trail of Bits melakukan audit komprehensif terhadap smart contract Blend (protokol pinjaman NFT) sebelum mainnet launch, menemukan temuan tingkat kritis hingga informatif yang kemudian diperbaiki.",
+      "result": "Laporan audit dipublikasikan, kerentanan diperbaiki sebelum deployment Blend mainnet.",
+      "source": "CIF Research Dossier",
+      "url": "https://github.com/trailofbits/publications/blob/master/reviews/Blend.pdf (HIGH) [Blur Blog, https://blur.io/blog/blend]",
+      "affectedKnowledge": [],
+      "_location": "Repositori publik GitHub",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-009",
+      "projectSlug": "blur",
+      "name": "Audit Keamanan Blend oleh OpenZeppelin",
+      "date": "2023-04",
+      "type": "Security",
+      "participants": [
+        "OpenZeppelin, Blend, Blur Labs, Inc."
+      ],
+      "description": "OpenZeppelin melakukan audit independen kedua untuk smart contract Blend, fokus pada logika pinjaman, likuidasi, dan oracle, melengkapi review Trail of Bits.",
+      "result": "Laporan audit kedua dipublikasikan, memberikan kepercayaan ganda sebelum launch Blend.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.openzeppelin.com/blend-audit (HIGH) [Blur Blog, https://blur.io/blog/blend]",
+      "affectedKnowledge": [],
+      "_location": "Repositori publik GitHub / Blog OpenZeppelin",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-010",
+      "projectSlug": "blur",
+      "name": "Peluncuran Blend (NFT Lending Protocol)",
+      "date": "2023-05-01",
+      "type": "Launch",
+      "participants": [
+        "Blur Labs, Inc., Blend, Ethereum, Blur Marketplace"
+      ],
+      "description": "Blend diluncurkan di Ethereum mainnet sebagai protokol pinjaman NFT peer-to-peer terintegrasi dengan Blur Marketplace, memungkinkan pengguna meminjam ETH menggunakan NFT sebagai collateral tanpa expiration date tetap.",
+      "result": "Protokol lending NFT live, volume pinjaman mencatat $100M+ dalam minggu pertama.",
+      "source": "CIF Research Dossier",
+      "url": "https://blur.io/blog/blend (HIGH) [Etherscan, https://etherscan.io/address/0x29469395eAf6f95920E59F858042f0e28D98a20B]",
+      "affectedKnowledge": [],
+      "_location": "Ethereum Mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-011",
+      "projectSlug": "blur",
+      "name": "Musim Insentif Season 2 Blur",
+      "date": "2023-05",
+      "type": "Community",
+      "participants": [
+        "Blur Labs, Inc., Blur Community (Blur Nation), BLUR Token, Blur DAO"
+      ],
+      "description": "Blur meluncurkan Season 2 program insentif dengan reward token BLUR untuk aktivitas trading, bidding, dan liquidity provision pada Blur Marketplace dan Blend, berlangsung beberapa bulan.",
+      "result": "Volume trading dan aktivitas bidding meningkat signifikan selama periode Season 2.",
+      "source": "CIF Research Dossier",
+      "url": "https://blur.io/blog/blur-token (MEDIUM) [Discord, https://discord.gg/blur]",
+      "affectedKnowledge": [],
+      "_location": "Blur Marketplace, Blend",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-012",
+      "projectSlug": "blur",
+      "name": "Musim Insentif Season 3 Blur",
+      "date": "2023-11",
+      "type": "Community",
+      "participants": [
+        "Blur Labs, Inc., Blur Community (Blur Nation), BLUR Token, Blur DAO"
+      ],
+      "description": "Season 3 dimulai dengan struktur reward yang diperbarui, mencakup insentif untuk koleksi NFT baru, delegasi voting BLUR, dan partisipasi di Blend, bertujuan mempertahankan market share agar tetap dominan.",
+      "result": "Blur mempertahankan posisi #1 NFT marketplace by volume di Ethereum selama Season 3.",
+      "source": "CIF Research Dossier",
+      "url": "https://blur.io/blog (MEDIUM) [Discord, https://discord.gg/blur]",
+      "affectedKnowledge": [],
+      "_location": "Blur Marketplace, Blend",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-013",
+      "projectSlug": "blur",
+      "name": "Proposal Governance: Fee Switch Activation untuk BLUR Stakers",
+      "date": "2024-02",
+      "type": "Governance",
+      "participants": [
+        "Blur DAO, BLUR Token, Blur Community (Blur Nation)"
+      ],
+      "description": "Proposal on-chain diajukan dan disetujui untuk mengaktifkan fee switch, mengarahkan sebagian protocol fee Blur Marketplace ke pemegang BLUR yang melakukan staking/delegasi, memperkenalkan value accrual ke token.",
+      "result": "Fee switch aktif, staker BLUR mulai menerima distribusi fee protokol.",
+      "source": "CIF Research Dossier",
+      "url": "https://snapshot.org/#/blur.eth (HIGH) [Etherscan, https://etherscan.io]",
+      "affectedKnowledge": [],
+      "_location": "Snapshot, Ethereum Mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-014",
+      "projectSlug": "blur",
+      "name": "Peluncuran Blur Mobile App (Beta)",
+      "date": "2024-06",
+      "type": "Product",
+      "participants": [
+        "Blur Labs, Inc., Blur Marketplace, Blur Community (Blur Nation)"
+      ],
+      "description": "Blur merilis aplikasi mobile beta untuk iOS dan Android, memungkinkan trading NFT, bidding, dan manajemen portfolio di perangkat mobile dengan fitur parity ke desktop.",
+      "result": "Akses mobile memperluas basis pengguna ritel ke-delà power trader desktop.",
+      "source": "CIF Research Dossier",
+      "url": "https://blur.io/blog (MEDIUM) [Twitter @blur_io, https://twitter.com/blur_io]",
+      "affectedKnowledge": [],
+      "_location": "iOS App Store, Google Play Store (Beta)",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-015",
+      "projectSlug": "blur",
+      "name": "Two-Year Anniversary: Market Share Dominasi Terus Berlanjut",
+      "date": "2024-10",
+      "type": "Market",
+      "participants": [
+        "Blur Marketplace, Blur Community (Blur Nation), Ethereum"
+      ],
+      "description": "Blur men capai anniversary ke-2 dengan market share volume trading NFT Ethereum konstan di atas 60-70%, mengungguli OpenSea secara konsisten sejak awal 2023.",
+      "result": "Blur mengonsolidasikan posisi sebagai marketplace NFT dominan di Ethereum.",
+      "source": "CIF Research Dossier",
+      "url": "https://dune.com/queries (MEDIUM) [Twitter @blur_io, https://twitter.com/blur_io]",
+      "affectedKnowledge": [],
+      "_location": "Ethereum Mainnet",
+      "_status": "Ongoing"
+    }
   ]
 }

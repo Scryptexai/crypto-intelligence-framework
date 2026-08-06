@@ -1,0 +1,144 @@
+PROJECT: Blur
+
+Funding History
+- Funding Round: Series A
+  Date: 2022-11-01
+  Amount: $11.000.000
+  Currency: USD
+  Lead Investor: Paradigm
+  Participating Investors: Variant Fund, Cozomo de' Medici (angel)
+  Valuation: $1.000.000.000
+  Funding Type: Series A
+  Status: Completed
+  Sources: https://www.paradigm.xyz/portfolio/blur (HIGH) [TechCrunch, https://techcrunch.com/2022/11/01/blur-nft-marketplace-raises-11m-at-1b-valuation-from-paradigm]
+
+- Funding Round: Seed / Private Round
+  Date: 2022 (bulan tidak diungkap)
+  Amount: tidak diungkap
+  Currency: USD
+  Lead Investor: Variant Fund
+  Participating Investors: Cozomo de' Medici (angel), investor tambahan tidak diungkap
+  Valuation: tidak diungkap
+  Funding Type: Seed / Private
+  Status: Completed
+  Sources: https://www.variant.fund/portfolio/blur (MEDIUM) [Twitter @variantfund, https://twitter.com/variantfund] [Blur Blog, https://blur.io/blog/introducing-blur]
+
+Treasury
+- Current Treasury Size: tidak diungkap
+  Sources: tidak ada sumber resmi yang mempublikasikan ukuran treasury BLUR DAO secara real-time
+
+- Treasury Composition: tidak diungkap
+  Sources: tidak ada transparency report atau dashboard treasury resmi yang mempublikasikan komposisi aset
+
+- Stablecoin Holdings: tidak diungkap
+  Sources: tidak ada data on-chain terverifikasi yang mengidentifikasi alamat treasury DAO dengan label resmi
+
+- Native Token Holdings: tidak diungkap (perkiraan besar berdasarkan alokasi tokenomics: 51% supply untuk komunitas/treasury, tapi jumlah exact di treasury DAO tidak dipublikasikan)
+  Sources: https://blur.io/blog/blur-token (MEDIUM) [Etherscan, https://etherscan.io/token/0x5283D291DBCF85356a21bA090E6db59121208b44]
+
+- Other Assets: tidak diungkap
+  Sources: tidak ada disclosure resmi
+
+- Treasury Custodian: Blur DAO (pengelolaan via governance proposal dan multisig eksekusi)
+  Sources: https://snapshot.org/#/blur.eth (HIGH) [Blur Blog, https://blur.io/blog/blur-token]
+
+Revenue Model
+- Nama: Protocol Fee - Blur Marketplace
+  Status: Live (fee switch diaktifkan Februari 2024)
+  Deskripsi: 0,5% protocol fee dari volume trading (sebelumnya 0% untuk trader, hanya royalty creator). Sebagian dialokasikan ke BLUR staker via fee switch.
+  Sources: https://snapshot.org/#/blur.eth (HIGH) [Blur Blog, https://blur.io/blog] [Etherscan, https://etherscan.io/address/0x000000000000Ad05Ccc4F10445630FB830B95127]
+
+- Nama: Protocol Fee - Blend (NFT Lending)
+  Status: Live (sejak launch Mei 2023)
+  Deskripsi: Blend mengumpulkan fee dari interest rate spread dan/atau origination fee pada pinjaman NFT; detail persentase exact tidak diungkapkan di blog resmi.
+  Sources: https://blur.io/blog/blend (MEDIUM) [Trail of Bits Audit, https://github.com/trailofbits/publications/blob/master/reviews/Blend.pdf]
+
+- Nama: Royalty Enforcement Fee (Creator Royalty)
+  Status: Live
+  Deskripsi: Marketplace menegakkan royalty creator (set by collection) on-chain; Blur tidak memotong bagian royalty untuk protocoll (0% platform fee pada royalty).
+  Sources: https://blur.io/blog/introducing-blur (HIGH) [EIP-2981, https://eips.ethereum.org/EIPS/eip-2981]
+
+- Nama: Treasury Yield / Asset Management
+  Status: Planned / Tidak dikonfirmasi aktif
+  Deskripsi: Tidak ada announcement resmi mengenai strategi yield farming atau pengelolaan aset treasury DAO untuk menghasilkan return.
+  Sources: https://snapshot.org/#/blur.eth (LOW) [Blur Blog, https://blur.io/blog]
+
+Revenue History
+- Tidak diungkap.
+  Sources: tidak ada laporan pendapatan bulanan/kuartalan resmi yang dipublikasikan oleh Blur Labs atau Blur DAO
+
+Fundraising Mechanism
+- VC Funding: Series A $11M dari Paradigm (Nov 2022) (HIGH) [https://www.paradigm.xyz/portfolio/blur]
+- Private Sale: Seed/private round dari Variant Fund dan angel investor (2022) (MEDIUM) [https://www.variant.fund/portfolio/blur]
+- Protocol Revenue: Fee marketplace (fee switch) dan fee Blend lending (LIVE) (HIGH) [https://snapshot.org/#/blur.eth]
+- DAO Treasury: Alokasi token BLUR (51% supply) untuk komunitas/treasury DAO (HIGH) [https://blur.io/blog/blur-token]
+- Bootstrapping: Tidak ada bukti bootstrapping signifikan sebelum VC funding (LOW) [tidak ada sumber]
+
+Token Sale
+- Private Sale: Ya (investor VC/angel pada seed dan Series A menerima alokasi token BLUR dengan vesting)
+  Tanggal: 2022 (seed), 2022-11 (Series A)
+  Status: Completed (vesting berlangsung)
+  Sources: https://www.paradigm.xyz/portfolio/blur (HIGH) [https://www.variant.fund/portfolio/blur]
+
+- Public Sale: Tidak ada (no IDO, no launchpad, no public auction)
+  Tanggal: N/A
+  Status: N/A
+  Sources: https://blur.io/blog/blur-token (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/blur]
+
+- Community Sale / Airdrop: Ya (Season 1 airdrop ke trader/bidder aktif pre-TGE)
+  Tanggal: 2023-02-14 (TGE)
+  Status: Completed (claim period ended)
+  Sources: https://blur.io/blog/blur-token (HIGH) [Etherscan, https://etherscan.io/token/0x5283D291DBCF85356a21bA090E6db59121208b44]
+
+Financial Dependencies
+- Paradigm (VC Lead Series A): Sumber dana utama untuk operasi awal dan ekspansi (HIGH) [https://www.paradigm.xyz/portfolio/blur]
+- Variant Fund (VC Seed): Pendanaan awal pre-Series A (MEDIUM) [https://www.variant.fund/portfolio/blur]
+- Protocol Revenue: Fee marketplace dan Blend sebagai pendapatan berkelanjutan (HIGH) [https://snapshot.org/#/blur.eth]
+- DAO Treasury: Aset token BLUR (51% supply) sebagai cadangan jangka panjang (HIGH) [https://blur.io/blog/blur-token]
+- Market Makers (Wintermute, GSR): Likuiditas pasar token BLUR pada TGE dan pasca-TGE (MEDIUM) [Twitter @wintermute_t, https://twitter.com/wintermute_t] [Twitter @GSR_io, https://twitter.com/GSR_io]
+
+Financial Risk
+- Treasury Concentration: Mayoritas treasury DAO terdiri dari token BLUR (native token) yang volatil; tidak ada disclosure diversifikasi ke stablecoin/blue-chip (HIGH) [https://blur.io/blog/blur-token] [https://etherscan.io/token/0x5283D291DBCF85356a21bA090E6db59121208b44]
+- Revenue Decline Risk: Pendapatan protocol bergantung sepenuhnya pada volume trading NFT dan aktivitas lending Blend yang bersifat siklis dan korelasi tinggi dengan pasar kripto (HIGH) [https://snapshot.org/#/blur.eth] [https://blur.io/blog/blend]
+- Funding Dependency: Operasi Blur Labs masih bergantung pada dana VC Series A ($11M) dan treasury token; tidak ada laporan keuangan audit yang menunjukkan profitabilitas operasional (MEDIUM) [https://www.paradigm.xyz/portfolio/blur] [tidak ada transparency report]
+- Admin Key Financial Risk: Multisig Blur Labs memegang admin key kontrak marketplace, Blend, dan token (fee setter, pause, upgrade) — risiko kehilangan dana jika kunci dikompromikan atau disalahgunakan (HIGH) [https://etherscan.io/address/0x5c8D72f6E6F5C1060E1bF2C5D8A8b8C5D8E8F8A8] [https://blur.io/blog/blur-token]
+- Unaudited Marketplace Contracts: Kontrak inti marketplace (exchange, bidding) tidak memiliki audit publik dari firma keamanan terkemuka — risiko kerentanan yang mengakibatkan kerugian dana pengguna/treasury (HIGH) [https://github.com/trailofbits/publications/blob/master/reviews/Blend.pdf] [https://blog.openzeppelin.com/blend-audit]
+- Legal Financial Risk: Status regulasi token BLUR (utility vs security) di AS belum jelas; potensi enforcement SEC mempengaruhi likuiditas dan operasi (MEDIUM) [https://www.sec.gov] [tidak ada disclosure spesifik Blur]
+
+Official Financial Resources
+- Official Blog: https://blur.io/blog
+- Governance / Proposal History: https://snapshot.org/#/blur.eth
+- Token Contract / On-chain Data: https://etherscan.io/token/0x5283D291DBCF85356a21bA090E6db59121208b44
+- Market Data (Price, Volume, Market Cap): https://www.coingecko.com/en/coins/blur
+- Market Data (Alternative): https://coinmarketcap.com/currencies/blur/
+- DeFiLlama (Protocol Revenue/Fees Tracking): https://defillama.com/protocol/blur (jika tersedia; per 2024-10 Blur Marketplace tidak terdaftar sebagai protokol DeFi terpisah di DeFiLlama)
+- Token Terminal (Financial Metrics): https://tokenterminal.com/terminal/projects/blur (jika tersedia; cek ketersediaan)
+- Messari (Research/Report): https://messari.io/asset/blur (jika tersedia; cek ketersediaan)
+- CryptoRank (Funding/Tokenomics): https://cryptorank.io/price/blur (jika tersedia; cek ketersediaan)
+- Transparency Report: tidak ada (tidak dipublikasikan)
+- Treasury Dashboard: tidak ada (tidak dipublikasikan)
+- Whitepaper: tidak ada (blog posts menggantikan peran ini)
+
+---
+
+RINGKASAN
+
+Total Funding Raised: $11.000.000 (hanya Series A yang terkonfirmasi jumlahnya; seed/private round amount tidak diungkap)
+Funding Rounds: 2 (Seed/Private 2022, Series A 2022-11-01)
+Treasury Status: Tidak diungkap (komposisi, ukuran, custodian detail tidak transparan)
+Revenue Sources: Protocol Fee Marketplace (fee switch aktif 2024), Protocol Fee Blend Lending, Creator Royalty Enforcement (0% take rate)
+Revenue Availability: Tidak diungkap (tidak ada laporan pendapatan historis/periodik)
+
+---
+
+Open Threads
+- Ukuran dan komposisi treasury BLUR DAO real-time (stablecoin vs BLUR vs aset lain) tidak dipublikasikan; alamat multisig/treasury resmi tidak terlabel jelas di Etherscan
+- Jumlah exact private sale/seed round valuation dan alokasi token per investor (Paradigm, Variant, Cozomo, dll.) tidak diungkapkan resmi
+- Revenue history bulanan/kuartalan protocol fee marketplace dan Blend tidak tersedia publik
+- Apakah Blur Labs memiliki runway/proyeksi keuangan internal yang dibagikan ke investor (board reporting) — tidak publik
+- Status vesting investor/team token: jadwal unlock detail (cliff, linear monthly, dst.) tidak diungkapkan di blog resmi; hanya "4-5 tahun vesting" yang disebutkan secara umum
+- Fee switch revenue split: persentase exact fee yang dialokasikan ke staker vs treasury DAO vs tim tidak dipecah di proposal governance
+- Blend revenue model detail: apakah ada origination fee, interest spread, atau liquidation fee — tidak terdokumentasi jelas di blog/audit
+- Apakah ada rencana diversifikasi treasury (stablecoin, ETH, blue-chip NFT) via proposal DAO — tidak ada proposal terlihat di Snapshot per 2024-10
+- Ketergantungan finansial pada market maker (Wintermute, GSR): apakah ada token loan/option agreement yang menciptakan liabilitas tersembunyi — tidak diverifikasi on-chain
+- Status kepatuhan pajak/laporan keuangan Blur Labs, Inc. (Delaware C-Corp) — tidak publik

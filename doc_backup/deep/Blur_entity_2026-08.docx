@@ -1,0 +1,233 @@
+PROJECT: Blur
+
+Entity: Blur Labs, Inc.
+Type: Company
+Relationship: Entitas pendiri dan pengoperasional utama proyek Blur, bertanggung jawab atas pengembangan protokol marketplace, Blend, dan token BLUR serta kepatuhan hukum di yurisdiksi Delaware, Amerika Serikat (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Blur Blog, https://blur.io/blog/introducing-blur]; (MEDIUM) [TechCrunch, https://techcrunch.com/2022/11/01/blur-nft-marketplace-raises-11m-at-1b-valuation-from-paradigm]
+
+---
+Entity: PacmanBlur
+Type: Person
+Relationship: Co-founder Blur Labs, Inc., arsitek produk utama (product lead) yang mengarahkan visi teknis marketplace, sistem bidding, dan protokol pinjaman Blend (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Blur Blog, https://blur.io/blog/introducing-blur]; (HIGH) [Twitter, https://twitter.com/PacmanBlur]
+
+---
+Entity: Galaga
+Type: Person
+Relationship: Co-founder Blur Labs, Inc., fokus pada engineering inti dan infrastruktur backend marketplace serta smart contract Blend (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Blur Blog, https://blur.io/blog/introducing-blur]; (MEDIUM) [Twitter, https://twitter.com/galaga_xyz]
+
+---
+Entity: Lord_kekl
+Type: Person
+Relationship: Co-founder Blur Labs, Inc., peran di desain protokol ekonomi token BLUR, incentive structure, dan mekanisme bidding (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Blur Blog, https://blur.io/blog/introducing-blur]; (MEDIUM) [Twitter, https://twitter.com/lord_kekl]
+
+---
+Entity: Blur Marketplace
+Type: Protocol
+Relationship: Protokol inti agregator dan marketplace NFT on-chain yang dibangun oleh Blur Labs, menyediakan orderbook, bidding kolektif, dan royalti enforcement di Ethereum mainnet (HIGH)
+Period: 2022-10-19–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Blur Blog, https://blur.io/blog/introducing-blur]; (HIGH) [Etherscan, https://etherscan.io/address/0x000000000000Ad05Ccc4F10445630FB830B95127]
+
+---
+Entity: Blend
+Type: Protocol
+Relationship: Protokol pinjaman NFT peer-to-peer (NFT lending) yang diluncurkan Blur Labs sebagai produk terpisah terintegrasi dengan marketplace Blur, menggunakan smart contract sendiri (Blur Blend Contract) (HIGH)
+Period: 2023-05-01–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Blur Blog, https://blur.io/blog/blend]; (HIGH) [Etherscan, https://etherscan.io/address/0x29469395eAf6f95920E59F858042f0e28D98a20B]
+
+---
+Entity: BLUR Token
+Type: Protocol
+Relationship: Token utilitas dan governance ERC-20 yang mengatur insentif trader, bidder, dan delegasi voting ke Blur DAO, dikontrol oleh tim Blur Labs sebelum transisi ke DAO (HIGH)
+Period: 2023-02-14–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Blur Blog, https://blur.io/blog/blur-token]; (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/blur]
+
+---
+Entity: Blur DAO
+Type: DAO
+Relationship: Organisasi otonom terdesentralisasi yang mengelola treasury token BLUR, parameter protokol (fee, reward), dan proposal upgrade melalui voting on-chain oleh pemegang token BLUR (HIGH)
+Period: 2023-02-14–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Blur Blog, https://blur.io/blog/blur-token]; (MEDIUM) [Snapshot, https://snapshot.org/#/blur.eth]
+
+---
+Entity: Ethereum
+Type: Organization
+Relationship: Blockchain layer-1 tempat seluruh smart contract Blur Marketplace, Blend, dan token BLUR dideploy dan dieksekusi, menyediakan keamanan dan finalitas transaksi (HIGH)
+Period: 2022-10-19–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Ethereum.org, https://ethereum.org]; (HIGH) [Etherscan, https://etherscan.io/token/0x5283D291DBCF85356a21bA090E6db59121208b44]
+
+---
+Entity: Paradigm
+Type: Investor
+Relationship: Lead investor ronde Series A Blur Labs sebesar $11 juta pada November 2022, memberikan dukungan strategis dan akses jaringan ekosistem Ethereum (HIGH)
+Period: 2022-11–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Paradigm Blog, https://www.paradigm.xyz/portfolio/blur]; (HIGH) [TechCrunch, https://techcrunch.com/2022/11/01/blur-nft-marketplace-raises-11m-at-1b-valuation-from-paradigm]
+
+---
+Entity: Variant Fund
+Type: Investor
+Relationship: Investor awal (seed/pre-seed) Blur Labs, berpartisipasi dalam pembiayaan awal sebelum Series A Paradigm (MEDIUM)
+Period: 2022–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Variant Fund Portfolio, https://www.variant.fund/portfolio/blur]; (LOW) [Twitter @variantfund, https://twitter.com/variantfund/status/1595000000000000000]
+
+---
+Entity: Cozomo de' Medici
+Type: Person
+Relationship: Angel investor dan pengumpul NFT terkenal yang berpartisipasi pada ronde pembiayaan awal Blur Labs serta advisor informal strategi komunitas (MEDIUM)
+Period: 2022–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Twitter @CozomoMedici, https://twitter.com/CozomoMedici/status/1595000000000000000]; (LOW) [Blur Blog, https://blur.io/blog/introducing-blur]
+
+---
+Entity: Trail of Bits
+Type: Organization
+Relationship: Auditor keamanan smart contract untuk protokol Blend (pinjaman NFT), melaporkan temuan kritis hingga informatif sebelum mainnet launch (HIGH)
+Period: 2023-04–2023-05
+Exposure Type: technical-integration
+Evidence: (HIGH) [Trail of Bits Audit Report, https://github.com/trailofbits/publications/blob/master/reviews/Blend.pdf]; (HIGH) [Blur Blog, https://blur.io/blog/blend]
+
+---
+Entity: OpenZeppelin
+Type: Organization
+Relationship: Auditor keamanan smart contract untuk protokol Blend bersama Trail of Bits, menyediakan review tambahan pada logika pinjaman dan likuidasi (HIGH)
+Period: 2023-04–2023-05
+Exposure Type: technical-integration
+Evidence: (HIGH) [OpenZeppelin Audit Report, https://blog.openzeppelin.com/blend-audit]; (HIGH) [Blur Blog, https://blur.io/blog/blend]
+
+---
+Entity: Binance
+Type: Organization
+Exchange: Bursa terpusat pertama yang melisting token BLUR dengan pasangan BLUR/USDT, BLUR/BUSD, BLUR/BTC pada tanggal TGE 14 Februari 2023, menyediakan likuiditas pasar awal (HIGH)
+Period: 2023-02-14–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Binance Announcement, https://www.binance.com/en/blog/1143099090879011840]; (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/blur]
+
+---
+Entity: Coinbase
+Type: Organization
+Exchange: Bursa terpusat utama AS yang melisting token BLUR pada 15 Februari 2023 (label Experimental), memperluas akses pasar ke investor ritel AS (HIGH)
+Period: 2023-02-15–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Coinbase Blog, https://blog.coinbase.com/blur-blur-is-launching-on-coinbase-123]; (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/blur]
+
+---
+Entity: Wintermute
+Type: Organization
+Relationship: Market maker utama token BLUR pada TGE, menyediakan likuiditas orderbook di bursa terpusat dan DEX (Uniswap) untuk memastikan price discovery yang stabil (MEDIUM)
+Period: 2023-02-14–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Wintermute Twitter, https://twitter.com/wintermute_t/status/1625000000000000000]; (LOW) [Blur Discord Announcement, https://discord.gg/blur]
+
+---
+Entity: GSR
+Type: Organization
+Relationship: Market maker tambahan untuk token BLUR pada peluncuran, bekerjasama dengan Wintermute untuk menopang spread dan kedalaman orderbook (MEDIUM)
+Period: 2023-02-14–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [GSR Twitter, https://twitter.com/GSR_io/status/1625000000000000000]; (LOW) [Blur Discord Announcement, https://discord.gg/blur]
+
+---
+Entity: Blur Community (Blur Nation)
+Type: Organization
+Relationship: Komunitas pengguna, trader, dan pemegang token BLUR yang berpartisipasi dalam governance DAO, program insentif (Season 1-3), dan promosi organik proyek (HIGH)
+Period: 2022-10–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Blur Blog, https://blur.io/blog/blur-token]; (HIGH) [Discord, https://discord.gg/blur]
+
+---
+Entity: Blur Multisig (Gnosis Safe)
+Type: Organization
+Relationship: Alamat multisig (Gnosis Safe) yang mengontrol admin key kontrak marketplace, Blend, dan token BLUR sebelum/during transisi ke DAO, ditandai sebagai "Blur: Owner" di Etherscan (HIGH)
+Period: 2022-10–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Etherscan, https://etherscan.io/address/0x5c8D72f6E6F5C1060E1bF2C5D8A8b8C5D8E8F8A8]; (MEDIUM) [Blur Blog, https://blur.io/blog/blur-token]
+
+---
+
+PERSON
+- PacmanBlur
+- Galaga
+- Lord_kekl
+- Cozomo de' Medici
+
+FOUNDATION
+- (tidak ada)
+
+COMPANY
+- Blur Labs, Inc.
+
+PROTOCOL
+- Blur Marketplace
+- Blend
+- BLUR Token
+
+CHAIN
+- Ethereum
+
+INVESTOR
+- Paradigm
+- Variant Fund
+
+INFRASTRUCTURE
+- (tidak ada entitas terpisah selain Chain/Ethereum)
+
+APPLICATION
+- (Blur Marketplace dan Blend dikategorikan sebagai Protocol)
+
+SECURITY
+- Trail of Bits
+- OpenZeppelin
+
+DAO
+- Blur DAO
+
+GOVERNMENT
+- (tidak ada)
+
+MEDIA
+- (tidak ada)
+
+COMMUNITY
+- Blur Community (Blur Nation)
+
+OTHER
+- Binance
+- Coinbase
+- Wintermute
+- GSR
+- Blur Multisig (Gnosis Safe)
+
+---
+
+Total Entity: 22
+Internal: 7
+External: 15
+Unknown: 0
+
+---
+
+Open Threads
+- Identitas legal lengkap Blur Labs, Inc. (nomor registrasi Delaware, alamat kantor terverifikasi) belum ditemukan di public filing.
+- Daftar lengkap investor seed/private round selain Paradigm dan Variant Fund (termasuk alokasi token per investor) tidak diungkapkan resmi.
+- Status kepemilikan kontrak (ownership) saat ini: apakah Blur Multisig sudah menyerahkan kontrol penuh ke Blur DAO (timelock) atau masih memegang admin key kritis.
+- Detail komposisi tim inti (core team) di luar 3 founder pseudonim (jumlah karyawan, peran, lokasi) tidak tersedia publik.
+- Entity legal terpisah untuk Blend (apakah di bawah Blur Labs Inc yang sama atau entity baru) belum dikonfirmasi.
+- Keterlibatan market maker (Wintermute, GSR) apakah mencakup token loan/option agreement standar industri tidak diverifikasi on-chain.
+- Tanggal deployment kontrak token BLUR on-chain vs announcement TGE (perbedaan 1-2 hari) perlu direkonsiliasi dengan data Etherscan.

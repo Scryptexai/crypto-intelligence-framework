@@ -1,0 +1,705 @@
+PROJECT: AAVE
+
+## Ecosystem Position
+
+Primary Sector: Decentralized Lending / Liquidity Protocol
+
+Secondary Sector: Stablecoin Infrastructure (GHO), Institutional DeFi (Aave Arc, Aave Horizon), Cross-Chain Infrastructure (Aave V4 Hub-and-Spoke)
+
+Primary Chain: Ethereum
+
+Supported Chains: Ethereum, Polygon, Avalanche, BNB Chain, Fantom, Harmony, Base, Arbitrum, Optimism, Gnosis, Scroll, Metis, ZKsync Era, Linea, Mantle, Plasma
+
+Sources: https://aave.com (Phase 1), https://www.htx.com.gl/tokens/aave/ (Phase 1 L17-L19), https://aave.com (Phase 1 L10-L11)
+
+## External Dependencies
+
+Dependency Name: Chainlink
+Dependency Type: Oracle / Cross-Chain Infrastructure
+Purpose: Penyedia oracle harga aset dan standar CCIP untuk operasi lintas rantai Aave V4
+Criticality: Critical
+Status: Live
+Related Entity: Chainlink (Entity 34)
+Related Technology Component: AaveOracle (V3), CCIP integration (V4)
+Sources: https://www.kucoin.com (Phase 4 L5-L9), https://coinmarketcap.com (Phase 4 L12-L15), https://aave.com/docs/aave-v4 (Phase 4)
+
+Dependency Name: Ethereum
+Dependency Type: Chain
+Purpose: Settlement layer utama, deployment Aave V1, V2, V3, V4, token AAVE contract
+Criticality: Critical
+Status: Live
+Related Entity: Ethereum (Entity 45)
+Related Technology Component: Pool contracts, AAVE token contract 0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9
+Sources: https://www.htx.com.gl/tokens/aave/ (Phase 1 L17), https://aave.com/changelog (Phase 3 EV-028)
+
+Dependency Name: Polygon
+Dependency Type: Chain
+Purpose: Deployment Aave V3, liquidity mining program $40M+
+Criticality: High
+Status: Live
+Related Entity: Polygon (Entity 46)
+Related Technology Component: L2Pool (V3), AMM Markets
+Sources: https://aave.com (Phase 1 L10), https://www.coindesk.com/tech/2021/03/31/defi-major-aave-working-with-polygon-to-bypass-ethereum-congestion/ (Phase 3 EV-013), https://polygon.technology/blog/defiforall-kicking-off-l2-defi-summer-with-40-million-usd-in-liquidity-mining-rewards-from-polygon-for-aaves-polygon-markets (Phase 3 EV-014)
+
+Dependency Name: Avalanche
+Dependency Type: Chain
+Purpose: Deployment Aave V3 dan V4, program insentif Avalanche Rush $20M untuk Aave
+Criticality: High
+Status: Live
+Related Entity: Avalanche (Entity 47)
+Related Technology Component: L2Pool (V3), Liquidity Hub & Spokes (V4)
+Sources: https://aave.com (Phase 1 L10), https://www.theblock.co/post/114025/avalanche-launches-180-million-defi-incentive-scheme-with-aave-and-curve (Phase 3 EV-016), https://www.kucoin.com/news/en/aave-v4-deploys-to-the-avalanche-network-with-hub-and-spoke-architecture-57916 (Phase 3 EV-032)
+
+Dependency Name: Arbitrum
+Dependency Type: Chain
+Purpose: Deployment Aave V3, Stable Vaults Accounting Chain
+Criticality: High
+Status: Live
+Related Entity: Arbitrum (Entity 48)
+Related Technology Component: L2Pool (V3)
+Sources: https://aave.com (Phase 1 L10), https://www.htx.com.gl/tokens/aave/ (Phase 1 L18), https://uk.linkedin.com/company/aavelabs (Phase 2 L30-L34)
+
+Dependency Name: Base
+Dependency Type: Chain
+Purpose: Deployment Aave V3
+Criticality: High
+Status: Live
+Related Entity: Base (Entity 49)
+Related Technology Component: L2Pool (V3)
+Sources: https://aave.com (Phase 1 L10), https://www.htx.com.gl/tokens/aave/ (Phase 1 L18)
+
+Dependency Name: BNB Chain
+Dependency Type: Chain
+Purpose: Deployment Aave V3
+Criticality: High
+Status: Live
+Related Entity: BNB Chain (Entity 50)
+Related Technology Component: L2Pool (V3)
+Sources: https://aave.com (Phase 1 L11), https://www.htx.com.gl/tokens/aave/ (Phase 1 L17)
+
+Dependency Name: Optimism
+Dependency Type: Chain
+Purpose: Deployment Aave V3
+Criticality: High
+Status: Live
+Related Entity: Optimism (Entity 51)
+Related Technology Component: L2Pool (V3)
+Sources: https://www.htx.com.gl/tokens/aave/ (Phase 1 L18)
+
+Dependency Name: Gnosis
+Dependency Type: Chain
+Purpose: Deployment Aave V3
+Criticality: High
+Status: Live
+Related Entity: Gnosis (Entity 52)
+Related Technology Component: L2Pool (V3)
+Sources: https://www.htx.com.gl/tokens/aave/ (Phase 1 L18)
+
+Dependency Name: Scroll
+Dependency Type: Chain
+Purpose: Deployment Aave V3
+Criticality: High
+Status: Live
+Related Entity: Scroll (Entity 53)
+Related Technology Component: L2Pool (V3)
+Sources: https://www.htx.com.gl/tokens/aave/ (Phase 1 L18)
+
+Dependency Name: Metis
+Dependency Type: Chain
+Purpose: Deployment Aave V3
+Criticality: High
+Status: Live
+Related Entity: Metis (Entity 54)
+Related Technology Component: L2Pool (V3)
+Sources: https://www.htx.com.gl/tokens/aave/ (Phase 1 L18)
+
+Dependency Name: ZKsync Era
+Dependency Type: Chain
+Purpose: Deployment Aave V3
+Criticality: High
+Status: Live
+Related Entity: ZKsync Era (Entity 55)
+Related Technology Component: L2Pool (V3)
+Sources: https://www.htx.com.gl/tokens/aave/ (Phase 1 L19)
+
+Dependency Name: Fantom
+Dependency Type: Chain
+Purpose: Deployment Aave V3 (launch network V3)
+Criticality: High
+Status: Live
+Related Entity: Fantom (Entity 56)
+Related Technology Component: L2Pool (V3)
+Sources: https://www.htx.com.gl/tokens/aave/ (Phase 1 L17), https://twitter.com/AaveAave/status/1504137636105043971 (Phase 3 EV-020)
+
+Dependency Name: Harmony
+Dependency Type: Chain
+Purpose: Deployment Aave V3 (launch network V3)
+Criticality: High
+Status: Live
+Related Entity: Harmony (Entity 57)
+Related Technology Component: L2Pool (V3)
+Sources: https://www.htx.com.gl/tokens/aave/ (Phase 1 L17), https://twitter.com/AaveAave/status/1504137636105043971 (Phase 3 EV-020)
+
+Dependency Name: Linea
+Dependency Type: Chain
+Purpose: Deployment Aave
+Criticality: High
+Status: Live
+Related Entity: Linea (Entity 58)
+Related Technology Component: Pool contracts
+Sources: https://aave.com (Phase 1 L11), https://aave.com (Phase 1 L5)
+
+Dependency Name: Mantle
+Dependency Type: Chain
+Purpose: Deployment Aave
+Criticality: High
+Status: Live
+Related Entity: Mantle (Entity 59)
+Related Technology Component: Pool contracts
+Sources: https://aave.com (Phase 1 L11), https://aave.com (Phase 1 L5)
+
+Dependency Name: Plasma
+Dependency Type: Chain
+Purpose: Deployment Aave
+Criticality: High
+Status: Live
+Related Entity: Plasma (Entity 60)
+Related Technology Component: Pool contracts
+Sources: https://aave.com (Phase 1 L11)
+
+Dependency Name: LayerZero
+Dependency Type: Bridge / Cross-Chain Messaging
+Purpose: Infrastruktur cross-chain messaging (terlibat eksploitasi rsETH bridge Mei 2026)
+Criticality: High
+Status: Live
+Related Entity: LayerZero (Entity 68)
+Related Technology Component: Cross-chain functionality V3, bridge integrations
+Sources: https://www.kucoin.com/news/en/aave-details-rseth-bridge-exploit-recovery-timeline-57855 (Phase 3 EV-030), https://www.coindesk.com/tech/2026/06/01/aave-overhauls-listing-standards-after-230-million-rseth-exploit-exposed-bridge-risks/ (Phase 3 EV-031)
+
+Dependency Name: Kelp DAO
+Dependency Type: Protocol (Liquid Restaking)
+Purpose: Penyedia rsETH sebagai collateral di Aave V3 (terjadi eksploitasi bridge Mei 2026)
+Criticality: High
+Status: Live
+Related Entity: Kelp DAO (tidak terdaftar sebagai entity terpisah, merujuk pada Phase 3 EV-030)
+Related Technology Component: rsETH collateral di Aave V3
+Sources: https://www.kucoin.com/news/en/aave-details-rseth-bridge-exploit-recovery-timeline-57855 (Phase 3 EV-030), https://www.coindesk.com/tech/2026/06/01/aave-overhauls-listing-standards-after-230-million-rseth-exploit-exposed-bridge-risks/ (Phase 3 EV-031)
+
+Dependency Name: ChainSecurity
+Dependency Type: Security / Auditor
+Purpose: Manual audit Aave V4
+Criticality: High
+Status: Live
+Related Entity: ChainSecurity (Entity 35)
+Related Technology Component: Aave V4 smart contracts
+Sources: https://www.gate.com (Phase 2 L22), https://www.htx.com (Phase 2 L35), https://www.gate.com (Phase 2 L9)
+
+Dependency Name: Trail of Bits
+Dependency Type: Security / Auditor
+Purpose: Manual audit dan invariant testing Aave V4
+Criticality: High
+Status: Live
+Related Entity: Trail of Bits (Entity 36)
+Related Technology Component: Aave V4 smart contracts
+Sources: https://www.gate.com (Phase 2 L22), https://www.htx.com (Phase 2 L35), https://www.gate.com (Phase 2 L9)
+
+Dependency Name: Blackthorn
+Dependency Type: Security / Auditor
+Purpose: Manual audit Aave V4
+Criticality: High
+Status: Live
+Related Entity: Blackthorn (Entity 37)
+Related Technology Component: Aave V4 smart contracts
+Sources: https://www.gate.com (Phase 2 L24), https://www.htx.com (Phase 2 L35), https://www.gate.com (Phase 2 L9)
+
+Dependency Name: Certora
+Dependency Type: Security / Formal Verification
+Purpose: Formal verification Aave V4, design consultation, continuous security
+Criticality: Critical
+Status: Live
+Related Entity: Certora (Entity 38)
+Related Technology Component: Aave V4 smart contracts (formal verification)
+Sources: https://www.gate.com (Phase 2 L24), https://uk.linkedin.com/company/aavelabs (Phase 2 L38-L42), https://www.gate.com (Phase 2 L9)
+
+Dependency Name: Sherlock
+Dependency Type: Security / Bug Bounty Platform
+Purpose: Public security contest Aave V4 (6 minggu, 900+ peneliti)
+Criticality: High
+Status: Live
+Related Entity: Sherlock (Entity 39)
+Related Technology Component: Aave V4 smart contracts
+Sources: https://www.gate.com (Phase 2 L25), https://www.htx.com (Phase 2 L36), https://www.gate.com (Phase 2 L10)
+
+Dependency Name: OpenZeppelin
+Dependency Type: Security / Contract Libraries
+Purpose: Library kontrak standar (ERC20, AccessControl, dll) digunakan Aave
+Criticality: High
+Status: Live
+Related Entity: OpenZeppelin (Entity 40)
+Related Technology Component: Smart contract dependencies
+Sources: https://docs.originprotocol.com (Phase 2 L46-L47)
+
+Dependency Name: Foundry
+Dependency Type: SDK / Development Framework
+Purpose: Framework pengembangan utama Aave V4 (kompilasi, testing, deployment)
+Criticality: Critical
+Status: Live
+Related Entity: Tidak terdaftar sebagai entity terpisah
+Related Technology Component: Aave V4 development stack
+Sources: https://github.com/aave/aave-v4 (Phase 4)
+
+Dependency Name: Hardhat
+Dependency Type: SDK / Development Framework
+Purpose: Development environment Aave V3
+Criticality: High
+Status: Live
+Related Entity: Tidak terdaftar sebagai entity terpisah
+Related Technology Component: Aave V3 development stack
+Sources: https://github.com/aave-dao/aave-v3-origin (Phase 4)
+
+Dependency Name: Docker Compose
+Dependency Type: Infrastructure / Development Tool
+Purpose: Development environment
+Criticality: Medium
+Status: Live
+Related Entity: Tidak terdaftar sebagai entity terpisah
+Related Technology Component: Development environment
+Sources: https://github.com/aave/aave-v4 (Phase 4)
+
+Dependency Name: Node.js & Yarn
+Dependency Type: Infrastructure / Development Tool
+Purpose: Linting dan tooling
+Criticality: Medium
+Status: Live
+Related Entity: Tidak terdaftar sebagai entity terpisah
+Related Technology Component: Development tooling
+Sources: https://github.com/aave/aave-v4 (Phase 4)
+
+Dependency Name: Aave Address Book
+Dependency Type: SDK / Data Provider
+Purpose: Paket Solidity dan JavaScript untuk mengimpor alamat kontrak
+Criticality: Medium
+Status: Live
+Related Entity: BGD Labs (Entity 42)
+Related Technology Component: Address management
+Sources: https://github.com/bgd-labs/aave-address-book (Phase 4)
+
+Dependency Name: MetaMask
+Dependency Type: Wallet / Application
+Purpose: Wallet integration, mitra DeFi lending untuk fitur Stablecoin Earn
+Criticality: High
+Status: Live
+Related Entity: MetaMask (Entity 41)
+Related Technology Component: Frontend integration
+Sources: https://www.aave.org (Phase 2 L17-L19), https://www.aave.org (Phase 2 L23-L24)
+
+Dependency Name: Dune Analytics
+Dependency Type: Data Provider / Analytics
+Purpose: Platform analitik data on-chain untuk data Aave
+Criticality: Medium
+Status: Live
+Related Entity: Dune Analytics (Entity 78)
+Related Technology Component: Dashboard data
+Sources: https://www.htx.com.gl/tokens/aave/ (Phase 2 L39)
+
+Dependency Name: Monetary Authority of Singapore (MAS)
+Dependency Type: Government / Regulator
+Purpose: Project Guardian untuk kebutuhan institusional
+Criticality: Medium
+Status: Live
+Related Entity: Monetary Authority of Singapore (Entity 61)
+Related Technology Component: Institutional compliance framework
+Sources: https://www.aave.org (Phase 2 L16-L17)
+
+## Major Integrations
+
+Integration Name: Chainlink CCIP Integration
+Integrated With: Chainlink (Entity 34)
+Purpose: Standar cross-chain interoperability untuk Aave V4 hub-and-spoke architecture
+Status: Live
+Related Historical Event ID: EV-028 (Aave V4 launch dengan arsitektur hub-and-spoke menggunakan CCIP)
+Sources: https://www.kucoin.com (Phase 4 L5-L9), https://aave.com/docs/aave-v4 (Phase 4)
+
+Integration Name: Polygon AMM Markets & Liquidity Mining
+Integrated With: Polygon (Entity 46)
+Purpose: AMM markets di Aave V2 dan program liquidity mining $40M+ MATIC
+Status: Live
+Related Historical Event ID: EV-013 (Kemitraan Aave dengan Polygon), EV-014 (Program Liquidity Mining Aave-Polygon $40 Juta)
+Sources: https://www.coindesk.com/tech/2021/03/31/defi-major-aave-working-with-polygon-to-bypass-ethereum-congestion/ (Phase 3 EV-013), https://polygon.technology/blog/defiforall-kicking-off-l2-defi-summer-with-40-million-usd-in-liquidity-mining-rewards-from-polygon-for-aaves-polygon-markets (Phase 3 EV-014)
+
+Integration Name: Avalanche Rush Incentive Program
+Integrated With: Avalanche (Entity 47)
+Purpose: Program insentif DeFi $180M total, $20M dialokasikan untuk pengguna Aave
+Status: Live
+Related Historical Event ID: EV-016 (Program Insentif Avalanche Rush — Aave)
+Sources: https://www.theblock.co/post/114025/avalanche-launches-180-million-defi-incentive-scheme-with-aave-and-curve (Phase 3 EV-016)
+
+Integration Name: Aave Arc with Fireblocks
+Integrated With: Fireblocks (tidak terdaftar sebagai entity terpisah)
+Purpose: Whitelister pertama untuk Aave Arc (institutional permissioned platform)
+Status: Live
+Related Historical Event ID: EV-017 (Peluncuran Aave Arc)
+Sources: https://www.chaindd.net/chaindd/2021/11/18/1376988.html (Phase 3 EV-017)
+
+Integration Name: MetaMask Stablecoin Earn
+Integrated With: MetaMask (Entity 41)
+Purpose: Aave dipilih sebagai mitra DeFi lending untuk fitur Stablecoin Earn MetaMask
+Status: Live
+Related Historical Event ID: Tidak ada Event ID spesifik
+Sources: https://www.aave.org (Phase 2 L17-L19), https://www.aave.org (Phase 2 L23-L24)
+
+Integration Name: Project Guardian (MAS)
+Integrated With: Monetary Authority of Singapore (Entity 61), Project Guardian (Entity 62)
+Purpose: Inisiatif tokenisasi aset dan DeFi untuk kebutuhan institusional
+Status: Live
+Related Historical Event ID: Tidak ada Event ID spesifik
+Sources: https://www.aave.org (Phase 2 L16-L17)
+
+Integration Name: Kraken White-Label Aave V3
+Integrated With: Kraken (Entity 63) / Ink Foundation
+Purpose: Meluncurkan versi white-label Aave V3 atas persetujuan komunitas Aave
+Status: Live
+Related Historical Event ID: Tidak ada Event ID spesifik (terjadi 2026)
+Sources: https://coinmarketcap.com (Phase 2 L33-L36)
+
+Integration Name: GHO Stablecoin Integration
+Integrated With: Aave Protocol (Entity 16) / GHO (Entity 18)
+Purpose: Native stablecoin Aave yang diterbitkan oleh protokol, over-collateralized
+Status: Live
+Related Historical Event ID: EV-023 (Peluncuran GHO di Goerli Testnet), EV-024 (Peluncuran Stablecoin GHO di Ethereum Mainnet)
+Sources: https://www.theblock.co/post/240297/aave-protocol-activates-gho-stablecoin-on-the-ethereum-mainnet (Phase 3 EV-024)
+
+Integration Name: Aave V3 Multi-Chain Deployment
+Integrated With: Fantom (Entity 56), Avalanche (Entity 47), Harmony (Entity 57), Arbitrum (Entity 48), Optimism (Entity 51), Polygon (Entity 46)
+Purpose: Peluncuran Aave V3 di enam jaringan sekaligus dengan cross-chain functionality
+Status: Live
+Related Historical Event ID: EV-020 (Peluncuran Aave V3 di Enam Jaringan)
+Sources: https://twitter.com/AaveAave/status/1504137636105043971 (Phase 3 EV-020), https://finance.yahoo.com/news/aave-launches-souped-v3-fantom-091738544.html (Phase 3 EV-020)
+
+Integration Name: Aave V4 Avalanche Deployment
+Integrated With: Avalanche (Entity 47)
+Purpose: Deployment multi-chain pertama Aave V4 dengan satu Hub dan tiga Spokes
+Status: Live
+Related Historical Event ID: EV-032 (Peluncuran Aave V4 di Avalanche)
+Sources: https://www.kucoin.com/news/en/aave-v4-deploys-to-the-avalanche-network-with-hub-and-spoke-architecture-57916 (Phase 3 EV-032)
+
+Integration Name: BGD Labs Governance Interface
+Integrated With: BGD Labs (Entity 42)
+Purpose: Kontributor tata kelola yang menyediakan antarmuka governance
+Status: Live
+Related Historical Event ID: Tidak ada Event ID spesifik
+Sources: https://bingx.com (Phase 2 L33), https://aave.com (Phase 2 L18)
+
+Integration Name: Boardroom Governance Interface
+Integrated With: Boardroom (Entity 43)
+Purpose: Antarmuka tata kelola untuk Aave DAO
+Status: Live
+Related Historical Event ID: Tidak ada Event ID spesifik
+Sources: https://aave.com (Phase 2 L18)
+
+## Infrastructure Providers
+
+Provider: Chainlink
+Service: Oracle harga, CCIP cross-chain messaging
+Criticality: Critical
+Status: Live
+Sources: https://www.kucoin.com (Phase 4 L5-L9), https://coinmarketcap.com (Phase 4 L12-L15)
+
+Provider: Certora
+Service: Formal verification, design consultation, continuous security
+Criticality: Critical
+Status: Live
+Sources: https://www.gate.com (Phase 2 L24), https://uk.linkedin.com/company/aavelabs (Phase 2 L38-L42)
+
+Provider: ChainSecurity
+Service: Manual audit
+Criticality: High
+Status: Live
+Sources: https://www.gate.com (Phase 2 L22), https://www.htx.com (Phase 2 L35)
+
+Provider: Trail of Bits
+Service: Manual audit, invariant testing
+Criticality: High
+Status: Live
+Sources: https://www.gate.com (Phase 2 L22), https://www.htx.com (Phase 2 L35)
+
+Provider: Blackthorn
+Service: Manual audit
+Criticality: High
+Status: Live
+Sources: https://www.gate.com (Phase 2 L24), https://www.htx.com (Phase 2 L35)
+
+Provider: Sherlock
+Service: Public security contest platform, bug bounty
+Criticality: High
+Status: Live
+Sources: https://www.gate.com (Phase 2 L25), https://www.htx.com (Phase 2 L36)
+
+Provider: Enigma Dark
+Service: Invariant testing
+Criticality: High
+Status: Live
+Sources: https://www.gate.com (Phase 2 L22), https://www.htx.com (Phase 2 L35) [Enigma Dark tidak terdaftar sebagai entity terpisah di Phase 2]
+
+Provider: Stermi
+Service: Private manual review
+Criticality: Medium
+Status: Live
+Sources: https://www.gate.com (Phase 2 L22), https://www.htx.com (Phase 2 L35) [Stermi tidak terdaftar sebagai entity terpisah di Phase 2]
+
+Provider: Foundry
+Service: Development framework (compile, test, deploy)
+Criticality: Critical
+Status: Live
+Sources: https://github.com/aave/aave-v4 (Phase 4)
+
+Provider: Hardhat
+Service: Development environment (V3)
+Criticality: High
+Status: Live
+Sources: https://github.com/aave-dao/aave-v3-origin (Phase 4)
+
+Provider: BGD Labs
+Service: Aave Address Book (address management package)
+Criticality: Medium
+Status: Live
+Sources: https://github.com/bgd-labs/aave-address-book (Phase 4)
+
+Provider: Dune Analytics
+Service: Data analytics dashboard
+Criticality: Medium
+Status: Live
+Sources: https://www.htx.com.gl/tokens/aave/ (Phase 2 L39)
+
+Provider: Alchemy
+Service: Node infrastructure, investor
+Criticality: Medium
+Status: Live
+Sources: https://www.owler.com (Phase 2 L5)
+
+## Exchange Ecosystem
+
+Exchange: Kraken
+Listing Status: Listed
+Spot: Yes
+Perpetual: tidak diketahui
+OTC: tidak diketahui
+Launchpool: tidak diketahui
+Status: Live
+Sources: https://coinmarketcap.com (Phase 2 L33-L36) [white-label partnership], https://www.kraken.com/learn/what-is-aave-aave (implied)
+
+Exchange: Binance
+Listing Status: Listed
+Spot: Yes
+Perpetual: Yes
+OTC: tidak diketahui
+Launchpool: tidak diketahui
+Status: Live
+Sources: https://www.binance.com (Phase 2 L44) [referensi ETHLend]
+
+Exchange: HTX (Huobi)
+Listing Status: Listed
+Spot: Yes
+Perpetual: tidak diketahui
+OTC: tidak diketahui
+Launchpool: tidak diketahui
+Status: Live
+Sources: https://www.htx.com.gl/tokens/aave/ (Phase 1 L37)
+
+Exchange: Gate.io
+Listing Status: Listed
+Spot: Yes
+Perpetual: tidak diketahui
+OTC: tidak diketahui
+Launchpool: tidak diketahui
+Status: Live
+Sources: https://www.gate.com (Phase 1 L34-L35)
+
+Exchange: Coinbase
+Listing Status: Listed
+Spot: Yes
+Perpetual: tidak diketahui
+OTC: tidak diketahui
+Launchpool: tidak diketahui
+Status: Live
+Sources: https://www.coinbase.com/price/aave (implied dari Base deployment dan Coinbase Ventures investor)
+
+Exchange: OKX
+Listing Status: Listed
+Spot: Yes
+Perpetual: tidak diketahui
+OTC: tidak diketahui
+Launchpool: tidak diketahui
+Status: Live
+Sources: https://www.okx.com/markets/spot/aave-usdt (implied)
+
+Exchange: Bybit
+Listing Status: Listed
+Spot: Yes
+Perpetual: tidak diketahui
+OTC: tidak diketahui
+Launchpool: tidak diketahui
+Status: Live
+Sources: https://www.bybit.com/trade/spot/AAVE/USDT (implied)
+
+Exchange: KuCoin
+Listing Status: Listed
+Spot: Yes
+Perpetual: tidak diketahui
+OTC: tidak diketahui
+Launchpool: tidak diketahui
+Status: Live
+Sources: https://www.kucoin.com (Phase 4 L6-L7)
+
+## Wallet Ecosystem
+
+Wallet: MetaMask
+Support Type: Native integration, DeFi lending partner untuk Stablecoin Earn
+Status: Live
+Sources: https://www.aave.org (Phase 2 L17-L19), https://www.aave.org (Phase 2 L23-L24)
+
+Wallet: Coinbase Wallet
+Support Type: Ethereum & L2 support untuk Aave
+Status: Live
+Sources: https://www.coinbase.com/wallet (implied dari Base chain support)
+
+Wallet: Rainbow Wallet
+Support Type: Ethereum & L2 support
+Status: Live
+Sources: https://rainbow.me (implied)
+
+Wallet: Argent
+Support Type: DeFi integration, Aave support
+Status: Live
+Sources: https://www.argent.xyz (implied)
+
+Wallet: Frame
+Support Type: Ethereum wallet dengan Aave support
+Status: Live
+Sources: https://frame.sh (implied)
+
+Wallet: Ledger (Hardware)
+Support Type: Hardware wallet, Ethereum app support untuk Aave interaction
+Status: Live
+Sources: https://www.ledger.com (implied)
+
+Wallet: Trezor (Hardware)
+Support Type: Hardware wallet, Ethereum support
+Status: Live
+Sources: https://trezor.io (implied)
+
+Wallet: Safe (Gnosis Safe)
+Support Type: Multi-sig wallet, DAO treasury management
+Status: Live
+Sources: https://safe.global (implied dari Gnosis chain deployment)
+
+Wallet: WalletConnect
+Support Type: Protocol untuk menghubungkan wallet ke Aave interface
+Status: Live
+Sources: https://walletconnect.com (implied)
+
+## Developer Ecosystem
+
+SDK: Aave V3 SDK (TypeScript/JavaScript)
+API: Aave GraphQL API, Aave REST API
+Developer Tools: Aave Address Book, Foundry, Hardhat, Docker Compose
+Open Source Repository: https://github.com/aave, https://github.com/aave-dao/aave-v3-origin, https://github.com/aave/aave-v4
+Developer Portal: https://aave.com/build
+Hackathon: ETHGlobal hackathons (Aave sebagai sponsor), Aave-specific hackathons (tidak diketahui detail spesifik)
+Grant Program: Aave Grants DAO (tidak terdaftar sebagai entity terpisah), Aave Chan Initiative (Entity 14) sebelumnya mengelola grants, Aave Will Win framework (Entity 80) menyediakan funding
+Sources: https://aave.com/build (Phase 1), https://github.com/aave (Phase 1), https://github.com/aave-dao/aave-v3-origin (Phase 4), https://github.com/aave/aave-v4 (Phase 4), https://governance.aave.com (Phase 3 EV-029)
+
+## Applications
+
+Application: Aave App (Mobile)
+Category: Frontend / Mobile Interface
+Relationship: Internal application by Aave Labs
+Status: Live
+Sources: https://www.gate.com (Phase 2 L8-L9), https://coinmarketcap.com (Phase 2 L20)
+
+Application: Aave Pro (V4 UI)
+Category: Frontend / Web Interface
+Relationship: Internal dedicated UI for Aave V4
+Status: Live
+Sources: https://aave.com (Phase 4)
+
+Application: Aave Horizon
+Category: Institutional Lending (RWA)
+Relationship: Internal application built on Aave Protocol v3.3
+Status: Live
+Sources: https://aave.com (Phase 2 L5-L8), https://aave.com (Phase 2 L12-L14)
+
+Application: Aave Arc
+Category: Institutional DeFi (Permissioned)
+Relationship: Internal permissioned version of Aave
+Status: Live
+Sources: https://thedefiant.io (Phase 2 L11)
+
+Application: GHO Stablecoin
+Category: Stablecoin Protocol
+Relationship: Internal protocol product
+Status: Live
+Sources: https://uk.linkedin.com/company/aavelabs (Phase 2 L6), https://aave.com (Phase 2 L16)
+
+Application: Stable Vaults
+Category: Fixed-Rate Yield
+Relationship: Internal product
+Status: Live
+Sources: https://uk.linkedin.com/company/aavelabs (Phase 2 L30-L34), https://coinmarketcap.com (Phase 2 L13-L14)
+
+Application: Lens Protocol
+Category: Social Graph Protocol
+Relationship: Spun out, founded by Stani Kulechov (Entity 1), previously under Avara (Entity 11)
+Status: Live
+Sources: https://www.htx.com (Phase 2 L29-L30), https://seedtable.com (Phase 2 L4)
+
+Application: Aave Card
+Category: Payment Card
+Relationship: Planned product under Aave Will Win framework
+Status: Planned
+Sources: https://www.chaincatcher.com (Phase 2 L17), https://coinmarketcap.com (Phase 2 L21)
+
+Application: Aave Kit
+Category: Developer Toolkit
+Relationship: Planned product under Aave Will Win framework
+Status: Planned
+Sources: https://www.gate.com (Phase 2 L9)
+
+Application: MetaMask Stablecoin Earn
+Category: Wallet Feature
+Relationship: External integration, Aave as lending partner
+Status: Live
+Sources: https://www.aave.org (Phase 2 L17-L19)
+
+Application: Kraken White-Label Aave V3
+Category: White-Label Protocol
+Relationship: External deployment by Ink Foundation (Kraken)
+Status: Live
+Sources: https://coinmarketcap.com (Phase 2 L33-L36)
+
+Application: Boardroom
+Category: Governance Interface
+Relationship: External governance UI for Aave DAO
+Status: Live
+Sources: https://aave.com (Phase 2 L18)
+
+Application: BGD Labs Governance Interface
+Category: Governance Interface
+Relationship: External service provider / DAO contributor
+Status: Live
+Sources: https://bingx.com (Phase 2 L33), https://aave.com (Phase 2 L18)
+
+Application: Dune Analytics Dashboards
+Category: Analytics
+Relationship: External data provider
+Status: Live
+Sources: https://www.htx.com.gl/tokens/aave/ (Phase 2 L39)
+
+## Governance Ecosystem
+
+Foundation: Aave Foundation (Entity 13)
+DAO: Aave DAO (Entity 12)
+Council: Aligned Delegates Framework / ADF (Entity 80) — proposed framework untuk delegate accountability
+Committee: Aave Chan Initiative / ACI (Entity 14) — former core governance contributor (exited March 2026)
+Validator Group: Safety Module stakers (stkAAVE holders) — act as insurance backstop
+Sources: https://www.kucoin.com (Phase 2 L6-L7), https://www.theblock.co (Phase 2 L2

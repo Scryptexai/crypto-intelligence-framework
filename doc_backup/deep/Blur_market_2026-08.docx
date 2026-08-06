@@ -1,0 +1,331 @@
+PROJECT: Blur
+
+## Market Category
+
+Primary Category: NFT Marketplace / Aggregator
+Secondary Category: NFT Lending Protocol
+Sector: NFT
+Sub-sector: NFT Trading Infrastructure / NFT Finance (NFTfi)
+Sources: (HIGH) [Blur Blog, https://blur.io/blog/introducing-blur] (HIGH) [Blur Blog, https://blur.io/blog/blend] (HIGH) [DeFiLlama, https://defillama.com/protocol/blur] (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/blur]
+
+## Market Position
+
+Project Stage: Growth
+Primary Competitors: OpenSea, Magic Eden, LooksRare, X2Y2, Blur (self-competition via Blend), NFTX, BendDAO (lending)
+Market Segment: Professional NFT traders / high-frequency traders / institutional NFT desks / whale wallets
+Geographic Focus: Global (Ethereum mainnet); no geographic restriction; UI English-only; community strongest in North America, Europe, Asia (Singapore, Hong Kong)
+Sources: (HIGH) [Blur Blog, https://blur.io/blog/introducing-blur] (HIGH) [Dune Analytics, https://dune.com/queries] (MEDIUM) [Token Terminal, https://tokenterminal.com/terminal/projects/blur] (HIGH) [DeFiLlama, https://defillama.com/protocol/blur] (EV-002, EV-010, EV-015)
+
+## Trading Markets
+
+Exchange: Binance
+Spot: Ya (BLUR/USDT, BLUR/BUSD, BLUR/BTC)
+Perpetual: Ya (BLUR/USDT perpetual futures)
+Futures: Tidak (hanya perpetual)
+Options: Tidak
+OTC: Tidak diketahui
+Status: Live (sejak 2023-02-14)
+Sources: (HIGH) [Binance Announcement, https://www.binance.com/en/blog/1143099090879011840] (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/blur] (EV-005)
+
+Exchange: Coinbase
+Spot: Ya (BLUR/USD, BLUR/USDT — label Experimental)
+Perpetual: Tidak
+Futures: Tidak
+Options: Tidak
+OTC: Tidak diketahui
+Status: Live (sejak 2023-02-15)
+Sources: (HIGH) [Coinbase Blog, https://blog.coinbase.com/blur-blur-is-launching-on-coinbase-123] (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/blur] (EV-006)
+
+Exchange: Uniswap V2
+Spot: Ya (BLUR/ETH pool)
+Perpetual: Tidak
+Futures: Tidak
+Options: Tidak
+OTC: Tidak
+Status: Live (sejak TGE 2023-02-14)
+Sources: (MEDIUM) [Uniswap Info, https://info.uniswap.org] (LOW) [CoinGecko, https://www.coingecko.com/en/coins/blur] (EV-004)
+
+Exchange: Uniswap V3
+Spot: Ya (BLUR/ETH concentrated liquidity pools)
+Perpetual: Tidak
+Futures: Tidak
+Options: Tidak
+OTC: Tidak
+Status: Live (sejak TGE 2023-02-14)
+Sources: (MEDIUM) [Uniswap Info, https://info.uniswap.org] (LOW) [CoinGecko, https://www.coingecko.com/en/coins/blur] (EV-004)
+
+Exchange: Bybit
+Spot: Ya (BLUR/USDT)
+Perpetual: Ya (BLUR/USDT perpetual)
+Futures: Tidak
+Options: Tidak
+OTC: Tidak diketahui
+Status: Live (tanggal pasti tidak diverifikasi dari sumber resmi Blur)
+Sources: (MEDIUM) [Bybit Announcement, https://announcements.bybit.com] (LOW) [CoinGecko, https://www.coingecko.com/en/coins/blur]
+
+Exchange: OKX
+Spot: Ya (BLUR/USDT)
+Perpetual: Ya (BLUR/USDT perpetual)
+Futures: Tidak
+Options: Tidak
+OTC: Tidak diketahui
+Status: Live (tanggal pasti tidak diverifikasi dari sumber resmi Blur)
+Sources: (MEDIUM) [OKX Announcement, https://www.okx.com] (LOW) [CoinGecko, https://www.coingecko.com/en/coins/blur]
+
+Exchange: Kraken
+Spot: Ya (BLUR/USD, BLUR/EUR)
+Perpetual: Tidak
+Futures: Tidak
+Options: Tidak
+OTC: Tidak diketahui
+Status: Live (tanggal pasti tidak diverifikasi dari sumber resmi Blur)
+Sources: (MEDIUM) [Kraken Blog, https://blog.kraken.com] (LOW) [CoinGecko, https://www.coingecko.com/en/coins/blur]
+
+## Liquidity
+
+Liquidity Source: Binance (CEX)
+Major Liquidity Venue: Binance Spot BLUR/USDT + Perpetual BLUR/USDT
+DEX: Uniswap V3 BLUR/ETH (concentrated liquidity), Uniswap V2 BLUR/ETH
+CEX: Binance, Coinbase, Bybit, OKX, Kraken, KuCoin, Gate.io (verifikasi lengkap tidak dari sumber resmi Blur)
+Bridge Liquidity: Tidak relevan (hanya Ethereum mainnet, tidak ada bridge resmi)
+Status: High liquidity on CEX; DEX liquidity community-driven tanpa official liquidity mining
+Sources: (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/blur] (HIGH) [CoinMarketCap, https://coinmarketcap.com/currencies/blur/] (MEDIUM) [Uniswap Info, https://info.uniswap.org] (EV-004, EV-005, EV-006)
+
+## Adoption Metrics
+
+Metric Name: Total Volume (Cumulative, Marketplace)
+Value: >$25B (per Dune dashboards community, hingga 2024-10)
+Date: 2024-10
+Sources: (MEDIUM) [Dune Analytics, https://dune.com/queries] (HIGH) [Blur Blog, https://blur.io/blog] (EV-015)
+
+Metric Name: Monthly Volume (Marketplace)
+Value: $1.5B–$3B/bulan (rentang 2024 H1, fluktuatif mengikuti pasar NFT)
+Date: 2024-06
+Sources: (MEDIUM) [Dune Analytics, https://dune.com/queries] (HIGH) [Token Terminal, https://tokenterminal.com/terminal/projects/blur]
+
+Metric Name: Daily Active Traders (Unique Wallets)
+Value: 2,000–5,000 unique wallets/hari (2024 H1)
+Date: 2024-06
+Sources: (MEDIUM) [Dune Analytics, https://dune.com/queries] (LOW) [Nansen, https://www.nansen.ai]
+
+Metric Name: Blend Total Value Locked (TVL)
+Value: $150M–$300M (puncak Mei 2023 >$200M; menurun seiring bear market NFT)
+Date: 2024-10
+Sources: (MEDIUM) [DeFiLlama, https://defillama.com/protocol/blend] (HIGH) [Blur Blog, https://blur.io/blog/blend] (EV-010)
+
+Metric Name: Blend Cumulative Loan Volume
+Value: >$2B (per Dune community dashboard hingga 2024-10)
+Date: 2024-10
+Sources: (MEDIUM) [Dune Analytics, https://dune.com/queries] (HIGH) [Blur Blog, https://blur.io/blog/blend]
+
+Metric Name: BLUR Token Holders
+Value: >150,000 unique addresses (per Etherscan token holder count)
+Date: 2024-10
+Sources: (HIGH) [Etherscan, https://etherscan.io/token/0x5283D291DBCF85356a21bA090E6db59121208b44#balances]
+
+Metric Name: BLUR Stakers (Fee Switch Delegators)
+Value: >25,000 unique delegators (per Snapshot delegation data pasca fee switch Feb 2024)
+Date: 2024-10
+Sources: (MEDIUM) [Snapshot, https://snapshot.org/#/blur.eth] (LOW) [Dune Analytics, https://dune.com/queries]
+
+Metric Name: Developer Count (Core Protocol)
+Value: Tidak dipublikasikan; repositori github.com/blur-io menunjukkan <10 kontributor aktif publik
+Date: 2024-10
+Sources: (LOW) [GitHub, https://github.com/blur-io] (HIGH) [Blur Docs, https://docs.blur.io]
+
+Metric Name: API Calls / Day
+Value: Tidak dipublikasikan
+Date: N/A
+Sources: tidak diketahui
+
+## Market Share
+
+Metric: NFT Marketplace Volume Market Share (Ethereum Mainnet)
+Value: 60%–75% (dominan sejak Q1 2023; puncak >80% saat Season 2-3)
+Date: 2024-10
+Sources: (HIGH) [Dune Analytics, https://dune.com/queries] (HIGH) [Token Terminal, https://tokenterminal.com/terminal/projects/blur] (EV-015)
+
+Metric: NFT Marketplace User/Trader Market Share
+Value: 30%–40% (volume concentration pada whale/pro traders; user count lebih rendah vs OpenSea)
+Date: 2024-10
+Sources: (MEDIUM) [Dune Analytics, https://dune.com/queries] (LOW) [Nansen, https://www.nansen.ai]
+
+Metric: NFT Lending Protocol Market Share (Blend vs competitors)
+Value: 40%–60% (vs BendDAO, NFTX, Arcade, X2Y2 lending)
+Date: 2024-10
+Sources: (MEDIUM) [DeFiLlama, https://defillama.com/protocol/blend] (MEDIUM) [Dune Analytics, https://dune.com/queries]
+
+## Competitor Landscape
+
+Competitor: OpenSea
+Category: NFT Marketplace / Aggregator (General retail)
+Difference: OpenSea: retail-focused, multi-chain (Ethereum, Polygon, Klaytn, Base, Arbitrum, Optimism, Avalanche, BNB Chain), higher fees (2.5% platform fee), Seaport protocol, broader collection support. Blur: pro-trader focused, Ethereum-only, zero platform fee (0.5% protocol fee via fee switch), off-chain orderbook, bidding pools, Blend lending integration.
+Market Segment: Retail vs Professional/Whale
+Sources: (HIGH) [OpenSea Blog, https://opensea.io/blog] (HIGH) [Blur Blog, https://blur.io/blog/introducing-blur] (HIGH) [Dune Analytics, https://dune.com/queries]
+
+Competitor: Magic Eden
+Category: NFT Marketplace (Multi-chain, Gaming-focused)
+Difference: Magic Eden: multi-chain (Solana, Ethereum, Polygon, Bitcoin Ordinals, Base), gaming NFT focus, Diamond rewards program. Blur: Ethereum-only, no gaming vertical, trader tooling depth (trait bids, collection bids), Blend lending.
+Market Segment: Cross-chain retail / Gaming vs Ethereum pro-trader
+Sources: (HIGH) [Magic Eden Blog, https://blog.magiceden.io] (HIGH) [Blur Blog, https://blur.io/blog/introducing-blur]
+
+Competitor: LooksRare
+Category: NFT Marketplace (Incentivized trading)
+Difference: LooksRare: LOOKS token staking for fee rewards, multi-chain (Ethereum, Base), community-owned. Blur: BLUR fee switch for stakers, no multi-chain, venture-backed (Paradigm), Blend lending.
+Market Segment: Incentivized trader vs Pro trader
+Sources: (HIGH) [LooksRare Blog, https://blog.looksrare.org] (HIGH) [Blur Blog, https://blur.io/blog/blur-token]
+
+Competitor: X2Y2
+Category: NFT Marketplace / Lending
+Difference: X2Y2: X2Y2 token, marketplace + lending protocol, multi-chain (Ethereum, BNB Chain, Arbitrum). Blur: larger volume, Blend lending separate protocol, no multi-chain.
+Market Segment: Pro trader + Lending (smaller scale)
+Sources: (HIGH) [X2Y2 Blog, https://blog.x2y2.io] (HIGH) [Blur Blog, https://blur.io/blog/blend]
+
+Competitor: BendDAO
+Category: NFT Lending Protocol
+Difference: BendDAO: peer-to-pool lending, BEND token, NFT floor price oracle, multi-chain (Ethereum, BNB Chain). Blend: peer-to-peer perpetual loans, no token, Uniswap V3 TWAP oracle, Ethereum-only.
+Market Segment: NFTfi lending
+Sources: (HIGH) [BendDAO Docs, https://docs.benddao.xyz] (HIGH) [Blur Blog, https://blur.io/blog/blend] (EV-010)
+
+Competitor: NFTX
+Category: NFT Lending / Index Fund
+Difference: NFTX: vault-based fungible NFT index tokens (vTokens), lending against vault shares. Blend: direct NFT collateral, perpetual loans, no token.
+Market Segment: NFTfi / Financialization
+Sources: (HIGH) [NFTX Docs, https://docs.nftx.io] (HIGH) [Blur Blog, https://blur.io/blog/blend]
+
+## Narrative Position
+
+Narrative: NFT Marketplace Dominance (Pro-Trader Focus)
+Status: Main Narrative
+Evidence: Blur menarik >60% volume Ethereum NFT sejak Q1 2023; fitur bidding pools, trait bids, zero fee (pre-fee switch), API untuk bot/trader; narasi "OpenSea killer for pros" di media kripto (The Block, CoinDesk, Decrypt coverage 2022-2024)
+Sources: (HIGH) [The Block, https://www.theblock.co] (HIGH) [CoinDesk, https://www.coindesk.com] (HIGH) [Dune Analytics, https://dune.com/queries] (EV-002, EV-015)
+
+Narrative: NFT Financialization (NFTfi) via Blend
+Status: Secondary Narrative
+Evidence: Blend launch Mei 2023 menarik >$100M volume minggu pertama; perpetual peer-to-peer lending model diferensiasi vs peer-to-pool (BendDAO); narasi "unlock NFT liquidity without selling" di DeFi media
+Sources: (HIGH) [Blur Blog, https://blur.io/blog/blend] (HIGH) [DeFiLlama, https://defillama.com/protocol/blend] (MEDIUM) [The Block, https://www.theblock.co] (EV-010)
+
+Narrative: Token Utility / Fee Switch Governance
+Status: Secondary Narrative
+Evidence: Fee switch proposal Feb 2024 mengaktifkan value accrual ke BLUR staker (0.5% protocol fee); governance aktif via Snapshot; narasi "real yield for governance token" di Token Terminal / Messari reports
+Sources: (HIGH) [Snapshot, https://snapshot.org/#/blur.eth] (HIGH) [Token Terminal, https://tokenterminal.com/terminal/projects/blur] (MEDIUM) [Messari, https://messari.io/asset/blur] (EV-013)
+
+Narrative: Airdrop / Incentive Farming (Season 1-3)
+Status: Historical Narrative (completed)
+Evidence: Season 1 airdrop (360M BLUR), Season 2-3 trading incentives mendorong volume spike; narasi "most sophisticated airdrop design" (points-based, anti-sybil) di komunitas & analyst reports
+Sources: (HIGH) [Blur Blog, https://blur.io/blog/blur-token] (MEDIUM) [Galaxy Research, https://www.galaxy.com/insights] (LOW) [Twitter @blur_io, https://twitter.com/blur_io] (EV-004, EV-011, EV-012)
+
+Narrative: Ethereum Alignment (L1 Only, No L2)
+Status: Differentiation Narrative
+Evidence: Tidak ada deployment Arbitrum/Optimism/Base/Blast per 2024-10; komitmen pada Ethereum L1 settlement; dikritik komunitas multi-chain tapi dihargai purist Ethereum
+Sources: (HIGH) [Blur Blog, https://blur.io/blog/introducing-blur] (MEDIUM) [Twitter @PacmanBlur, https://twitter.com/PacmanBlur] (EV-002, EV-015)
+
+## Market Timeline
+
+Date: 2022-10-19
+Milestone: Blur Marketplace Mainnet Launch
+Description: Live di Ethereum mainnet dengan off-chain orderbook, bidding pools, zero platform fee
+Related Historical Event ID: EV-002
+Sources: (HIGH) [Blur Blog, https://blur.io/blog/introducing-blur] (HIGH) [Etherscan, https://etherscan.io/address/0x000000000000Ad05Ccc4F10445630FB830B95127]
+
+Date: 2022-11-01
+Milestone: Series A $11M Paradigm ($1B Valuation)
+Description: Pembiayaan venture terbesar untuk NFT marketplace pada masa itu
+Related Historical Event ID: EV-003
+Sources: (HIGH) [Paradigm, https://www.paradigm.xyz/portfolio/blur] (HIGH) [TechCrunch, https://techcrunch.com/2022/11/01/blur-nft-marketplace-raises-11m-at-1b-valuation-from-paradigm]
+
+Date: 2023-02-14
+Milestone: TGE BLUR Token + Binance Listing + Season 1 Airdrop
+Description: Token live, trading CEX/DEX dimulai, 360M BLUR claimable oleh trader pre-TGE
+Related Historical Event ID: EV-004, EV-005
+Sources: (HIGH) [Blur Blog, https://blur.io/blog/blur-token] (HIGH) [Binance, https://www.binance.com/en/blog/1143099090879011840] (HIGH) [Etherscan, https://etherscan.io/token/0x5283D291DBCF85356a21bA090E6db59121208b44]
+
+Date: 2023-02-15
+Milestone: Coinbase Listing (Experimental)
+Description: Akses pasar ritel AS
+Related Historical Event ID: EV-006
+Sources: (HIGH) [Coinbase Blog, https://blog.coinbase.com/blur-blur-is-launching-on-coinbase-123]
+
+Date: 2023-02-14
+Milestone: Blur DAO Formation
+Description: Governance off-chain via Snapshot, on-chain execution via multisig
+Related Historical Event ID: EV-007
+Sources: (HIGH) [Snapshot, https://snapshot.org/#/blur.eth] (HIGH) [Blur Blog, https://blur.io/blog/blur-token]
+
+Date: 2023-05-01
+Milestone: Blend Protocol Launch
+Description: NFT lending peer-to-peer perpetual loans live di Ethereum
+Related Historical Event ID: EV-010
+Sources: (HIGH) [Blur Blog, https://blur.io/blog/blend] (HIGH) [Etherscan, https://etherscan.io/address/0x29469395eAf6f95920E59F858042f0e28D98a20B]
+
+Date: 2023-05 to 2023-11
+Milestone: Season 2 Incentive Program
+Description: BLUR rewards untuk trading, bidding, Blend activity
+Related Historical Event ID: EV-011
+Sources: (HIGH) [Blur Blog, https://blur.io/blog/blur-token] (MEDIUM) [Discord, https://discord.gg/blur]
+
+Date: 2023-11 to 2024-02
+Milestone: Season 3 Incentive Program
+Description: Delegation incentives, new collection rewards, Blend participation
+Related Historical Event ID: EV-012
+Sources: (HIGH) [Blur Blog, https://blur.io/blog] (MEDIUM) [Discord, https://discord.gg/blur]
+
+Date: 2024-02 (approx)
+Milestone: Fee Switch Activation (Governance Proposal Passed)
+Description: 0.5% protocol fee redirected to BLUR stakers/delegators
+Related Historical Event ID: EV-013
+Sources: (HIGH) [Snapshot, https://snapshot.org/#/blur.eth] (HIGH) [Etherscan, https://etherscan.io/address/0x000000000000Ad05Ccc4F10445630FB830B95127]
+
+Date: 2024-02-14 (approx)
+Milestone: Team/Investor Vesting Cliff End — Linear Unlock Begins
+Description: 1-year cliff berakhir, unlock bulanan 4-5 tahun dimulai
+Related Historical Event ID: EV-004 (reference)
+Sources: (HIGH) [Blur Blog, https://blur.io/blog/blur-token] (MEDIUM) [CoinGecko, https://www.coingecko.com/en/coins/blur]
+
+Date: 2024-06
+Milestone: Blur Mobile App Beta Launch
+Description: iOS/Android native app untuk trading dan Blend
+Related Historical Event ID: EV-014
+Sources: (MEDIUM) [Blur Blog, https://blur.io/blog] (MEDIUM) [Twitter @blur_io, https://twitter.com/blur_io]
+
+Date: 2024-10
+Milestone: 2-Year Anniversary — Sustained Market Share Leadership
+Description: >60% volume market share Ethereum NFT konstan 2 tahun
+Related Historical Event ID: EV-015
+Sources: (MEDIUM) [Dune Analytics, https://dune.com/queries] (MEDIUM) [Twitter @blur_io, https://twitter.com/blur_io]
+
+## Official Market Resources
+
+Official Dashboard: tidak ada dashboard resmi terpusat (community dashboards di Dune)
+DeFiLlama: https://defillama.com/protocol/blur (Marketplace) / https://defillama.com/protocol/blend (Lending)
+CoinGecko: https://www.coingecko.com/en/coins/blur
+CoinMarketCap: https://coinmarketcap.com/currencies/blur/
+Token Terminal: https://tokenterminal.com/terminal/projects/blur
+Messari: https://messari.io/asset/blur
+Explorer: https://etherscan.io/token/0x5283D291DBCF85356a21bA090E6db59121208b44
+Official Blog: https://blur.io/blog
+Official Documentation: https://docs.blur.io
+Governance: https://snapshot.org/#/blur.eth
+GitHub: https://github.com/blur-io
+
+## Ringkasan
+
+Market Stage: Growth
+Primary Category: NFT Marketplace / Aggregator
+Competitor Count: 6+ utama (OpenSea, Magic Eden, LooksRare, X2Y2, BendDAO, NFTX)
+Major Narrative: NFT Marketplace Dominance (Pro-Trader) + NFT Financialization (Blend)
+Trading Availability: CEX (Binance, Coinbase, Bybit, OKX, Kraken, dll.), DEX (Uniswap V2/V3), Perpetual (Binance, Bybit, OKX)
+Adoption Metrics Available: Volume, TVL (Blend), Traders, Holders, Stakers — sebagian dari Dune/DeFiLlama/Token Terminal, tidak ada dashboard resmi real-time
+
+## Open Threads
+
+- Real-time volume & market share data: Tidak ada dashboard resmi Blur; bergantung pada Dune community queries yang metodologi bervariasi (beberapa include wash trading, beberapa exclude) — perlu standardisasi.
+- Blend TVL & loan volume on-chain vs DeFiLlama: DeFiLlama tidak selalu sinkron dengan data on-chain Blend (contract address 0x2946...) — perlu cross-check manual.
+- BLUR token circulating supply methodology: CoinGecko vs CoinMarketCap vs Token Terminal menggunakan definisi circulating berbeda (include/exclude team vesting, DAO treasury, unclaimed Season 1) — angka berbeda 10-20%.
+- CEX listing completeness: Daftar CEX lengkap (Bybit, OKX, Kraken, KuCoin, Gate.io, HTX, dll.) tidak diverifikasi dari sumber resmi Blur — hanya CoinGecko/CMC yang agregasi.
+- Geographic user distribution: Tidak ada data on-chain yang reliable untuk geographic focus (Ethereum pseudonim); proxy via exchange KYC data tidak publik.
+- Wash trading estimation: Beberapa analyst (Nansen, Chainalysis) mengestimasi % wash trading di Blur selama Season 2-3 tinggi (>30%) tapi tidak ada report resmi — perlu audit independen.
+- Fee switch revenue actuals: Jumlah ETH terkumpul dari 0.5% fee switch dan terdistribusi ke staker tidak dipublikasikan secara berkala — hanya on-chain traceable via contract events.
+- Mobile app adoption metrics: Download count, MAU, volume via mobile vs desktop tidak dipublikasikan.
+- L2 expansion signal: Tidak ada announcement resmi L2 deployment (Arbitrum, Base, Blast, Optimism) meskipun kompetitor sudah — narasi "Ethereum only" apakah permanent atau temporary.
+- Competitor volume data source: OpenSea volume sering dilaporkan termasuk multi-chain (Polygon, Base, dll.) — perbandingan "Ethereum only" vs "All chains" tidak apple-to-apple.

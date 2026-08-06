@@ -1,0 +1,199 @@
+PROJECT: Avalanche
+
+Funding History
+
+Funding Round: Seed
+Date: 2019-02
+Amount: $6.0M
+Currency: USD
+Lead Investor: Polychain Capital
+Participating Investors: tidak diungkapkan detail tambahan
+Valuation: tidak diungkapkan
+Funding Type: Seed
+Status: Completed
+Sources: (HIGH) [Crunchbase Ava Labs Funding, https://www.crunchbase.com/organization/ava-labs/company_financials]; (HIGH) [CoinDesk Seed Round, https://www.coindesk.com/business/2019/02/05/avalanche-raises-6m-from-polychain-others-to-build-scalable-blockchain/]
+
+Funding Round: Series A
+Date: 2020-07
+Amount: $12.0M
+Currency: USD
+Lead Investor: Andreessen Horowitz (a16z)
+Participating Investors: tidak diungkapkan investor tambahan untuk ronde Series A equity terpisah dari Strategic Sale
+Valuation: tidak diungkapkan
+Funding Type: Series A
+Status: Completed
+Sources: (HIGH) [Crunchbase Series A, https://www.crunchbase.com/organization/ava-labs/company_financials]; (HIGH) [a16z Announcement, https://a16z.com/2020/07/15/avalanche/]
+
+Funding Round: Strategic Sale (Private Token Sale)
+Date: 2020-07
+Amount: $42.0M
+Currency: USD
+Lead Investor: Andreessen Horowitz (a16z)
+Participating Investors: Polychain Capital; Three Arrows Capital (3AC); Dragonfly Capital; CMS Holdings; Alameda Research; Republic Capital; Jump Crypto; Wintermute; lainnya (total ~20+ investor)
+Valuation: tidak diungkapkan (harga token $0.50 per AVAX sama dengan Public Sale)
+Funding Type: Strategic / Private Sale
+Status: Completed
+Sources: (HIGH) [Crunchbase Ava Labs Funding, https://www.crunchbase.com/organization/ava-labs/company_financials]; (HIGH) [CoinList Sale Results, https://www.avalabs.org/blog/avalanche-public-sale-results]; (HIGH) [The Block 3AC Avalanche Allocation, https://www.theblock.co/post/156787/three-arrows-capital-avalanche-avax]
+
+Funding Round: Public Sale (CoinList)
+Date: 2020-07
+Amount: $36.0M
+Currency: USD
+Lead Investor: CoinList (platform)
+Participating Investors: Ribuan peserta retail global (kuota 72 juta AVAX @ $0.50)
+Valuation: tidak diungkapkan (FDV implied ~$360M pada supply 720M AVAX)
+Funding Type: Public Sale
+Status: Completed
+Sources: (HIGH) [CoinList Avalanche Sale Page, https://coinlist.co/build/avalanche]; (HIGH) [Ava Labs Public Sale Results, https://www.avalabs.org/blog/avalanche-public-sale-results]
+
+Funding Round: Avalanche Rush Incentive Program (Foundation Treasury Allocation)
+Date: 2021-04
+Amount: $180.0M+ (denominasi AVAX, setara $180M+ pada harga saat announcement)
+Currency: AVAX (token ekosistem)
+Lead Investor: Avalanche Foundation
+Participating Investors: Aave; Curve Finance; Benqi; Trader Joe; protokol DeFi lainnya
+Valuation: tidak適用 (program insentif, bukan fundraising)
+Funding Type: Grant / Treasury Injection
+Status: Completed (program berjalan ~12 bulan, diperluas menjadi $290M+ AVAX)
+Sources: (HIGH) [Avalanche Foundation Rush Announcement, https://avalanche.foundation/avalanche-rush/]; (HIGH) [Ava Labs Blog Rush, https://www.avalabs.org/blog/avalanche-rush-liquidity-mining-incentives]
+
+Funding Round: Avalanche Multiverse Program (Foundation Treasury Allocation)
+Date: 2021-11
+Amount: $290.0M+ (denominasi AVAX)
+Currency: AVAX (token ekosistem)
+Lead Investor: Avalanche Foundation
+Participating Investors: Protokol Subnet, GameFi, Enterprise, DeFi baru (Blizzard Fund, Subnet builders)
+Valuation: tidak適用
+Funding Type: Grant / Treasury Injection
+Status: Ongoing
+Sources: (HIGH) [Avalanche Foundation Multiverse, https://avalanche.foundation/multiverse/]; (HIGH) [Ava Labs Blog Multiverse, https://www.avalabs.org/blog/avalanche-multiverse-290m-ecosystem-incentive-program]
+
+Treasury
+
+Current Treasury Size: tidak diungkapkan (Avalanche Foundation tidak mempublikasikan dashboard treasury real-time dalam USD atau komposisi aset lengkap)
+Treasury Composition: tidak diungkapkan secara rinci
+Stablecoin Holdings: tidak diungkapkan
+Native Token Holdings: tidak diungkapkan (genesis allocation Foundation 9.26% dari 720M AVAX = ~66.7M AVAX per whitepaper/tokenomics publik, tapi saldo real-time tidak diverifikasi on-chain label Foundation wallet resmi)
+Other Assets: tidak diungkapkan
+Treasury Custodian: Avalanche Foundation (Cayman Islands entity), mengelola wallet multi-sig; detail penyalur custodian (Coinbase Custody, Fireblocks, dll) tidak diungkapkan resmi
+Sources: (HIGH) [Avalanche Foundation About, https://avalanche.foundation/about/]; (MEDIUM) [Messari Token Report Avalanche, https://messari.io/report/avalanche-token-report]; (HIGH) [Avalanche Whitepaper Tokenomics, https://www.avax.network/whitepaper]
+
+Revenue Model
+
+Nama: C-Chain Transaction Fees (Base Fee Burn)
+Status: Live
+Deskripsi: Setiap transaksi di C-Chain membayar base fee (EIP-1559 style) yang dibakar (burn) secara permanen, mengurangi supply AVAX; priority fee dibayar ke validator. Ini bukan pendapatan protokol/Ava Labs, melainkan mekanisme deflationary.
+Sources: (HIGH) [Docs C-Chain Fee Market, https://docs.avax.network/docs/learn/platform/contract-chain#fee-market]; (HIGH) [Avalanche Whitepaper, https://www.avax.network/whitepaper]
+
+Nama: Staking Rewards (Inflationary Issuance)
+Status: Live
+Deskripsi: Validator dan delegator menerima reward AVAX dari emis tahunan (target ~7-10% APY staking) yang berasal dari inflasi protocol (capped supply 720M, emis mengurangi sisa supply). Bukan revenue Ava Labs/Foundation.
+Sources: (HIGH) [Docs Staking Rewards, https://docs.avax.network/docs/nodes/validate/overview#rewards]; (HIGH) [Avalanche Whitepaper, https://www.avax.network/whitepaper]
+
+Nama: AvaCloud Enterprise Services (Managed Subnet Deployment)
+Status: Live
+Deskripsi: Ava Labs Inc. menagih biaya langganan/setup/operasional kepada klien enterprise (Deloitte, SK Planet, T. Rowe Price, Gunzilla, Nexon) untuk deployment dan manajemen Subnet via AvaCloud. Angka revenue tidak dipublikasikan (perusahaan swasta).
+Sources: (HIGH) [AvaCloud Site, https://avacloud.io/]; (HIGH) [TechCrunch AvaCloud Launch, https://techcrunch.com/2022/11/03/ava-labs-avacloud/]; (HIGH) [Ava Labs Blog Deloitte, https://www.avalabs.org/blog/deloitte-avalanche-disaster-recovery]
+
+Nama: Subnet Validation Fees (Custom Gas Token / Validation Rewards)
+Status: Live (per Subnet basis)
+Deskripsi: Setiap Subnet bisa mendefinisikan gas token sendiri dan reward validator sendiri; beberapa Subnet (seperti Beam, GUNZ) mungkin mengumpulkan fee ke treasury Subnet masing-masing, bukan ke Ava Labs/Foundation.
+Sources: (HIGH) [Docs Subnet Validation, https://docs.avax.network/docs/learn/subnets/validation]; (HIGH) [HyperSDK Docs, https://docs.avax.network/docs/hypersdk]
+
+Nama: Bridge Fees (Avalanche Bridge / AB)
+Status: Live
+Deskripsi: Avalanche Bridge (AB) mengumpulkan fee relayer untuk transfer aset lintas chain (Ethereum ↔ Avalanche). Fee dibayarkan ke relayer (warden) yang menjalankan SGX enclave, bukan langsung ke Ava Labs/Foundation.
+Sources: (HIGH) [Avalanche Bridge Docs, https://docs.avax.network/docs/tools/bridge/avalanche-bridge]; (HIGH) [Ava Labs Bridge Security, https://www.avalabs.org/bridge-security]
+
+Nama: MEV / Priority Fees (C-Chain)
+Status: Live
+Deskripsi: Priority fee (tip) di C-Chain dibayar ke validator yang memproduksi blok; tidak ada protokol MEV capture resmi (seperti PBS) yang dialokasikan ke treasury.
+Sources: (HIGH) [Docs C-Chain Fee Market, https://docs.avax.network/docs/learn/platform/contract-chain#fee-market]
+
+Nama: Grant / Ecosystem Funding (Foundation Treasury)
+Status: Live
+Deskripsi: Avalanche Foundation mendeployasikan treasury token AVAX (dari genesis allocation) untuk grant, insentif (Rush, Multiverse), investasi ekosistem (Blizzard Fund). Ini pengeluaran, bukan revenue.
+Sources: (HIGH) [Avalanche Foundation Portfolio, https://avalanche.foundation/portfolio/]; (HIGH) [Avalanche Foundation Grants, https://avalanche.foundation/grants/]
+
+Revenue History
+
+Tidak diungkapkan. Ava Labs Inc. (perusahaan swasta) tidak mempublikasikan laporan keuangan, revenue, atau profit/loss. Avalanche Foundation (yayasan) tidak mempublikasikan laporan revenue karena operasionalnya hibah/grant dari treasury token. Protocol fees (burn) on-chain terlihat tapi tidak dikategorikan sebagai "revenue" entitas.
+Sources: (HIGH) [Crunchbase Ava Labs, https://www.crunchbase.com/organization/ava-labs]; (HIGH) [Avalanche Foundation About, https://avalanche.foundation/about/]
+
+Fundraising Mechanism
+
+VC Funding: Ya (Seed Polychain; Series A a16z)
+Private Sale: Ya (Strategic Sale Juli 2020, $42M dari ~20+ investor institucioal/VC)
+Public Sale: Ya (CoinList Juli 2020, $36M dari retail global)
+Grant: Ya (Avalanche Foundation mengelola grant dari treasury genesis allocation: Rush $180M+, Multiverse $290M+, Blizzard Fund, dll)
+Foundation: Ya (Avalanche Foundation sebagai entitas terpisah mengelola treasury token untuk ekosistem)
+DAO Treasury: Tidak ada DAO treasury on-chain resmi; governance off-chain via forum, Foundation eksekusi.
+Protocol Revenue: Tidak ada (fee dibakar, staking reward dari inflasi, tidak ada fee switch ke treasury)
+Bootstrapping: Ya (pengembangan awal 2018-2019 didanai founder/seed sebelum token sale)
+Sources: (HIGH) [Crunchbase Ava Labs Funding, https://www.crunchbase.com/organization/ava-labs/company_financials]; (HIGH) [Ava Labs Blog Public Sale, https://www.avalabs.org/blog/avalanche-public-sale-results]; (HIGH) [Avalanche Foundation Rush, https://avalanche.foundation/avalanche-rush/]; (HIGH) [Avalanche Foundation Multiverse, https://avalanche.foundation/multiverse/]
+
+Token Sale
+
+Private Sale: Strategic Sale Juli 2020; Status: Completed; Tanggal: 2020-07; Amount: $42M; Harga: $0.50/AVAX; Vesting: Terdapat lock-up/vesting schedule (detail di Phase 6); Sources: (HIGH) [CoinList Sale Results, https://www.avalabs.org/blog/avalanche-public-sale-results]; (HIGH) [The Block 3AC Allocation, https://www.theblock.co/post/156787/three-arrows-capital-avalanche-avax]
+
+Public Sale: CoinList Public Sale Juli 2020; Status: Completed; Tanggal: 2020-07; Amount: $36M (72M AVAX); Harga: $0.50/AVAX; Vesting: TGE unlock portion + vesting (detail Phase 6); Sources: (HIGH) [CoinList Avalanche Sale, https://coinlist.co/build/avalanche]; (HIGH) [Ava Labs Public Sale Results, https://www.avalabs.org/blog/avalanche-public-sale-results]
+
+Launchpad: CoinList (platform penyelenggara Public Sale)
+Auction: Tidak (fixed price sale)
+Community Sale: Termasuk dalam Public Sale CoinList (tanpa wholesale discount)
+Sources: (HIGH) [CoinList Avalanche Sale, https://coinlist.co/build/avalanche]
+
+Financial Dependencies
+
+VC / Strategic Investors: Andreessen Horowitz (a16z), Polychain Capital, Dragonfly Capital, CMS Holdings, Republic Capital, Jump Crypto, Wintermute, dll (equity + token allocation)
+Foundation Treasury: Avalanche Foundation (genesis allocation 9.26% supply + unallocated/ecosystem tokens) sebagai sumber dana grant & insentif utama
+Protocol Economics: Inflationary staking rewards & fee burn mechanic menentukan supply dynamics, bukan revenue langsung
+Enterprise Revenue: Ava Labs Inc. bergantung pada kontrak AvaCloud & layanan enterprise untuk revenue operasional perusahaan
+Grant Programs: Ekosistem bergantung pada Foundation grant (Rush, Multiverse, Blizzard) untuk bootstrapping liquidity & builder
+Sources: (HIGH) [Crunchbase Investors, https://www.crunchbase.com/organization/ava-labs/company_financials]; (HIGH) [Avalanche Foundation Portfolio, https://avalanche.foundation/portfolio/]; (HIGH) [AvaCloud Site, https://avacloud.io/]
+
+Financial Risk
+
+Treasury Concentration: Avalanche Foundation menyimpan sebagian besar treasury dalam AVAX native (genesis allocation), terekspos volatilitas harga token secara signifikan; tidak diungkapkan diversifikasi ke stablecoin/asset lain
+Revenue Dependency: Ava Labs Inc. revenue bergantung pada kontrak enterprise (AvaCloud) yang jumlah klien & nilai kontrak tidak dipublikasikan; Foundation tidak memiliki revenue, hanya deployment treasury
+Funding Dependency: Ekosistem early-stage bergantung pada insentif token Foundation (Rush, Multiverse) untuk menarik TVL & builder; berlanjutnya program tidak terjamin jika treasury token habis/harga turun drastis
+Legal Financial Risk: Ava Labs Inc. sebagai entitas US (Delaware) terpapar risiko regulasi SEC terkait klasifikasi AVAX (security vs commodity); belum ada enforcement action resmi tapi risiko hukum keuangan ada
+Investor Liquidation Risk: Kebangkrutan Three Arrows Capital (2022) dan Alameda/FTX (2022) menyebabkan likuidasi token AVAX strategic sale besar ke pasar, menekan harga & likuiditas (historis, bukan risiko aktif)
+No Slashing / Staking Economics Risk: Tidak adanya slashing mengurangi keamanan jaringan jangka panjang, berpotensi mempengaruhi kepercayaan institusional & nilai staking yield
+Sources: (HIGH) [Avalanche Whitepaper Tokenomics, https://www.avax.network/whitepaper]; (HIGH) [CoinDesk 3AC Bankruptcy, https://www.coindesk.com/business/2022/07/01/three-arrows-capital-files-for-chapter-15-bankruptcy/]; (HIGH) [CoinDesk Alameda Avalanche, https://www.coindesk.com/business/2021/09/09/alameda-research-avalanche-avax/]; (HIGH) [Docs Staking Penalties, https://docs.avax.network/docs/nodes/validate/overview#penalties]; (MEDIUM) [SEC Framework Digital Assets, https://www.sec.gov/corpfin/framework-investment-contract-analysis-digital-assets]
+
+Official Financial Resources
+
+Official Blog (Ava Labs): https://www.avalabs.org/blog
+Official Blog (Avalanche Foundation): https://avalanche.foundation/blog/
+Transparency Report: Tidak ada laporan transparansi keuangan berkala resmi dari Foundation atau Ava Labs
+Treasury Dashboard: Tidak ada dashboard treasury on-chain real-time resmi (Foundation wallet address tidak di-label resmi publik)
+Governance Forum: https://forum.avalanche.foundation/
+Messari: https://messari.io/project/avalanche
+Token Terminal: https://tokenterminal.com/terminal/projects/avalanche
+DefiLlama: https://defillama.com/chain/Avalanche
+CryptoRank: https://cryptorank.io/price/avalanche
+Whitepaper: https://www.avax.network/whitepaper
+AvaCloud Pricing/Info: https://avacloud.io/pricing (jika ada, saat ini kontak sales)
+CoinList Sale Results: https://www.avalabs.org/blog/avalanche-public-sale-results
+
+Summary
+
+Total Funding Raised: ~$96M USD (Seed $6M + Series A $12M + Strategic Sale $42M + Public Sale $36M) — tidak termasuk nilai token insentif Foundation (Rush $180M+ AVAX, Multiverse $290M+ AVAX) karena denominasi token bukan cash raise
+Funding Rounds: 4 ronde utama (Seed, Series A, Strategic Sale, Public Sale) + 2 program insentif besar Foundation (Rush, Multiverse)
+Treasury Status: Tidak diungkapkan real-time; Foundation genesis allocation ~66.7M AVAX (9.26% supply) + ecosystem allocation ~25% supply (tersisa untuk grant/insentif); Ava Labs corporate treasury tidak publik
+Revenue Sources: Ava Labs Inc. — AvaCloud enterprise services (subscription/managed service fees); Avalanche Foundation — tidak ada revenue, hanya deployment treasury token; Protocol — fee burn (deflationary), staking inflation (reward ke validator), tidak ada fee switch ke treasury
+Revenue Availability: Tidak tersedia (private company + foundation non-revenue); on-chain fee burn data tersedia via block explorer tapi tidak diklasifikasikan sebagai revenue entitas
+
+Open Threads
+
+- Saldo treasury Avalanche Foundation real-time (AVAX, stablecoin, asset lain) tidak dipublikasikan; tidak ada wallet address resmi terlabel "Foundation Treasury" yang diverifikasi on-chain untuk tracking
+- Revenue Ava Labs Inc. dari AvaCloud (enterprise contracts) bersifat rahasia komersial; tidak ada estimasi pasar yang terverifikasi
+- Klasifikasi regulasi AVAX (security vs commodity) oleh SEC AS belum final; risiko hukum keuangan bagi Ava Labs Inc. dan holder token US masih terbuka
+- Detail vesting investor Strategic Sale (3AC, Alameda, dll) dan timeline unlock sisa token belum dipublikasikan lengkap oleh Ava Labs/Foundation (hanya ringkasan di whitepaper/tokenomics awal)
+- Mekanisme "fee switch" atau protokol revenue capture (seperti EIP-1559 burn vs treasury allocation) tidak ada di roadmap resmi; komunitas pernah mendiskusikan tapi tidak ada proposal formal
+- Diversifikasi treasury Foundation ke asset non-AVAX (stablecoin, blue-chip crypto) tidak dikonfirmasi; eksposur 100% AVAX berisiko jika bear market berlanjut
+- Avalanche Rush & Multiverse program dana AVAX: sisa allocation & jadwal deployment lanjutan tidak diungkapkan detail per kuartal
+- Blizzard Fund (VC arm Foundation) portfolio & return tidak dilaporkan publik
+- Subnet revenue model (gas token fees, validation fees) untuk Subnet besar (Beam, GUNZ, MSU) tidak transparan; apakah fee kembali ke treasury Subnet atau dibakar tidak distandarisasi
+- Ava Labs Inc. financial audit / financial statements tidak tersedia (private company); tidak ada laporan keuangan terverifikasi independen

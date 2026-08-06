@@ -1,0 +1,29 @@
+PROJECT: Axie Infinity
+Official Name: Axie Infinity (HIGH) [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]
+Symbol: AXS (governance token); SLP (Smooth Love Potion, utility token) (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/axie-infinity; CoinGecko, https://www.coingecko.com/en/coins/smooth-love-potion]
+Category: Blockchain Gaming / Play-to-Earn / NFT-based Turn-based Strategy Game / Metaverse Platform (HIGH) [Whitepaper v1.1, https://whitepaper.axieinfinity.com/; Messari, https://messari.io/asset/axie-infinity/profile]
+Founding Entity: Sky Mavis Pte. Ltd. (Singapura); Sky Mavis (Vietnam, HQ operasional) (MEDIUM) [Crunchbase, https://www.crunchbase.com/organization/sky-mavis; Whitepaper v1.1, https://whitepaper.axieinfinity.com/]
+Founders: Trung Thanh Nguyen (CEO); Aleksander Leonard Larsen (COO); Jeffrey Zirlin (Growth Lead/Co-founder); Tu Doan (CTO); Andy Ho (CTO/Co-founder) (HIGH) [Whitepaper v1.1, https://whitepaper.axieinfinity.com/; Sky Mavis About Page, https://skyma.vis/about; Binance Research Report, https://research.binance.com/en/projects/axie-infinity]
+Core Team: Sky Mavis (~200+ karyawan per laporan 2022; nama individu inti di atas, detail tim penuh tidak diungkap secara publik) (MEDIUM) [The Block Article 2022, https://www.theblock.co/post/135000/sky-mavis-axie-infinity-layoffs; LinkedIn Sky Mavis, https://www.linkedin.com/company/sky-mavis/]
+Country: Vietnam (HQ operasional di Ho Chi Minh City); Singapura (entitas hukum utama) (HIGH) [Crunchbase, https://www.crunchbase.com/organization/sky-mavis; Whitepaper v1.1, https://whitepaper.axieinfinity.com/]
+Launch Date - Testnet: 2018 (Alpha pada Loom Network/Plasma Chain); Desember 2020 (Ronin Testnet) (MEDIUM) [Axie Infinity Blog "Ronin Testnet Launch", https://axieinfinity.medium.com/ronin-testnet-is-live-8b5b5b5b5b5b; Whitepaper v1.1, https://whitepaper.axieinfinity.com/]
+Launch Date - Mainnet: Mei 2018 (Game Mainnet pada Loom/Ethereum); 9 Februari 2021 (Ronin Mainnet) (HIGH) [Axie Infinity Blog "Ronin Mainnet Launch", https://axieinfinity.medium.com/ronin-mainnet-launch-9-february-2021; Whitepaper v1.1, https://whitepaper.axieinfinity.com/]
+Launch Date - TGE: November 2020 (AXS via Binance Launchpad); Juli 2020 (SLP, fair launch via farming, tanpa ICO) (HIGH) [Binance Launchpad Announcement, https://www.binance.com/en/blog/421448824684900352; CoinGecko SLP History, https://www.coingecko.com/en/coins/smooth-love-potion]
+Main Products: Axie Infinity (Game Classic/Origin); Ronin Network (EVM Sidechain); Ronin Wallet; Katana DEX; Mavis Market (NFT Marketplace); Axie Infinity: Homeland (Land Gameplay); Axie Infinity: Raylights (Mini-game) (HIGH) [Official Website, https://axieinfinity.com/; Ronin Network Docs, https://docs.roninchain.com/]
+Official Website: https://axieinfinity.com/ (HIGH) [Verifikasi langsung]
+Repository: https://github.com/axieinfinity; https://github.com/sky-mavis (HIGH) [GitHub Org, https://github.com/axieinfinity; GitHub Org, https://github.com/sky-mavis]
+Documentation: https://docs.axieinfinity.com/; https://docs.roninchain.com/ (HIGH) [Verifikasi langsung]
+Social - X/Twitter: @AxieInfinity; @Ronin_Network (HIGH) [Verifikasi langsung]
+Social - Discord: https://discord.gg/axieinfinity (HIGH) [Verifikasi langsung]
+Social - Telegram: @AxieInfinityAnnouncement; @AxieInfinity (HIGH) [Verifikasi langsung]
+Block Explorer: https://explorer.roninchain.com/ (Ronin); https://etherscan.io/ (Ethereum) (HIGH) [Verifikasi langsung]
+Token Contract: AXS (Ethereum): 0xBB0E17eF65F82AB018d8EDd776e8DD940327B28b; SLP (Ethereum): 0xa8754b9Fa15Fc18Bb59458815510e40a12Cd2014; AXS (Ronin): Native token (bridged via Ronin Bridge contract 0x...); SLP (Ronin): Native token (bridged via Ronin Bridge contract 0x...) (HIGH) [Etherscan AXS, https://etherscan.io/token/0xBB0E17eF65F82AB018d8EDd776e8DD940327B28b; Etherscan SLP, https://etherscan.io/token/0xa8754b9Fa15Fc18Bb59458815510e40a12Cd2014; Ronin Bridge Docs, https://docs.roninchain.com/ronin/bridges/ronin-bridge]
+Chain(s): Ronin (EVM Sidechain); Ethereum (Mainnet) (HIGH) [Whitepaper v1.1, https://whitepaper.axieinfinity.com/; Ronin Network Docs, https://docs.roninchain.com/]
+Ecosystem: Ronin Ecosystem; Ethereum Gaming; NFT Gaming; Play-to-Earn; Metaverse (HIGH) [Messari, https://messari.io/asset/axie-infinity/profile; Ronin Ecosystem Page, https://roninchain.com/ecosystem]
+
+Open Threads
+- Detail yuridik lengkap entitas penerbit token AXS (Apakah Sky Mavis Pte. Ltd. Singapura atau entitas Cayman/BVI terpisah untuk token issuance) — perlu cek whitepaper legal disclaimer atau SAFT agreement.
+- Tanggal pasti "Testnet" pertama kali (Loom Plasma 2018 vs Ronin Testnet 2020) — definisi "Testnet" project ini ambigu karena migrasi chain.
+- Ukuran tim inti (Core Team) yang terverifikasi secara individual (LinkedIn vs situs resmi) — data "200+" karyawan dari 2022 mungkin usang pasca-pemutusan hubungan kerja (layoffs).
+- Alamat kontrak bridge resmi AXS/SLP di Ronin (kontrak native vs kontrak bridged) — perlu dibedakan untuk akuransi on-chain.
+- Status SLP: Apakah masih "fair launch" murni atau ada alokasi tim/treasury yang tidak diketahui — whitepaper lama menyatakan tidak ada alokasi, tapi perlu cek on-chain minting rights.

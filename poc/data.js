@@ -2,9 +2,9 @@
 window.CIF = {
   "meta": {
     "schema": "cif-export/1",
-    "generated": "2026-08-06 20:18 UTC",
-    "projects": 3,
-    "deep": 3,
+    "generated": "2026-08-06 21:45 UTC",
+    "projects": 8,
+    "deep": 8,
     "summary": 0,
     "sentiment": 0,
     "patterns": 16,
@@ -32,6 +32,45 @@ window.CIF = {
       ]
     },
     {
+      "n": "Aave",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Aave.md",
+      "cat": "",
+      "era": "",
+      "tags": []
+    },
+    {
+      "n": "Avalanche",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Avalanche.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "l1"
+      ]
+    },
+    {
+      "n": "Axie Infinity",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Axie Infinity.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "nft-community",
+        "governance"
+      ]
+    },
+    {
+      "n": "Bancor",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Bancor.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "amm"
+      ]
+    },
+    {
       "n": "Blast",
       "tier": "Deep",
       "file": "examples/CaseStudies/Blast.md",
@@ -40,6 +79,16 @@ window.CIF = {
       "tags": [
         "points",
         "l2"
+      ]
+    },
+    {
+      "n": "Blur",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Blur.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "nft-community"
       ]
     }
   ],

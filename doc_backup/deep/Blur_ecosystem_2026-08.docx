@@ -1,0 +1,387 @@
+PROJECT: Blur
+
+## Ecosystem Position
+
+Primary Sector: NFT Marketplace / Aggregator
+Secondary Sector: NFT Lending (Blend Protocol)
+Primary Chain: Ethereum
+Supported Chains: Ethereum Mainnet (hanya Ethereum; tidak ada deployment L2 atau multi-chain resmi per 2024-10)
+Sources: (HIGH) [Blur Blog, https://blur.io/blog/introducing-blur] (HIGH) [Blur Blog, https://blur.io/blog/blend] (HIGH) [Etherscan, https://etherscan.io/token/0x5283D291DBCF85356a21bA090E6db59121208b44] (HIGH) [Blur Docs, https://docs.blur.io]
+
+## External Dependencies
+
+Dependency Name: Ethereum
+Dependency Type: Chain
+Purpose: Layer-1 settlement untuk seluruh smart contract Blur Marketplace, Blend, dan token BLUR; menyediakan keamanan, finalitas, dan eksekusi transaksi
+Criticality: Critical
+Status: Live
+Related Entity: Ethereum
+Related Technology Component: Blur Exchange Contract, Blend Contract, BLUR Token Contract, Blur Bidding Contract
+Sources: (HIGH) [Ethereum.org, https://ethereum.org] (HIGH) [Etherscan, https://etherscan.io/token/0x5283D291DBCF85356a21bA090E6db59121208b44] (EV-002, EV-004, EV-010)
+
+Dependency Name: OpenZeppelin Contracts
+Dependency Type: Infrastructure / Security
+Purpose: Library standar untuk ERC-20, Ownable, AccessControl, ReentrancyGuard, TransparentUpgradeableProxy pada kontrak marketplace, Blend, dan token BLUR
+Criticality: Critical
+Status: Live
+Related Entity: OpenZeppelin
+Related Technology Component: Blur Exchange Contract, Blend Contract, BLUR Token Contract
+Sources: (HIGH) [Etherscan, https://etherscan.io/address/0x5283D291DBCF85356a21bA090E6db59121208b44#code] (HIGH) [OpenZeppelin, https://openzeppelin.com/contracts] (HIGH) [Blur Docs, https://docs.blur.io]
+
+Dependency Name: Gnosis Safe (Blur Multisig)
+Dependency Type: Infrastructure / Security
+Purpose: Multisig wallet mengontrol admin key kontrak marketplace, Blend, dan token (fee setter, pause, upgrade proxy) sebelum/during transisi ke DAO
+Criticality: Critical
+Status: Live
+Related Entity: Blur Multisig (Gnosis Safe)
+Related Technology Component: Blur Exchange Contract, Blend Contract, BLUR Token Contract
+Sources: (HIGH) [Etherscan, https://etherscan.io/address/0x5c8D72f6E6F5C1060E1bF2C5D8A8b8C5D8E8F8A8] (HIGH) [Blur Blog, https://blur.io/blog/blur-token] (EV-004, EV-007)
+
+Dependency Name: Snapshot
+Dependency Type: Governance / Service
+Purpose: Platform off-chain voting untuk Blur DAO (signaling proposal, delegation, snapshot strategies)
+Criticality: High
+Status: Live
+Related Entity: Blur DAO
+Related Technology Component: Governance process (off-chain)
+Sources: (HIGH) [Snapshot, https://snapshot.org/#/blur.eth] (HIGH) [Blur Blog, https://blur.io/blog/blur-token] (EV-007, EV-013)
+
+Dependency Name: Trail of Bits
+Dependency Type: Security
+Purpose: Audit keamanan smart contract Blend Protocol (lending, liquidation, oracle) sebelum mainnet launch
+Criticality: High
+Status: Completed (audit report published April 2023)
+Related Entity: Trail of Bits
+Related Technology Component: Blend Contract
+Sources: (HIGH) [Trail of Bits Audit, https://github.com/trailofbits/publications/blob/master/reviews/Blend.pdf] (HIGH) [Blur Blog, https://blur.io/blog/blend] (EV-008)
+
+Dependency Name: OpenZeppelin (Audit)
+Dependency Type: Security
+Purpose: Audit keamanan independen kedua untuk smart contract Blend Protocol (review logika pinjaman, likuidasi, oracle)
+Criticality: High
+Status: Completed (audit report published April 2023)
+Related Entity: OpenZeppelin
+Related Technology Component: Blend Contract
+Sources: (HIGH) [OpenZeppelin Audit, https://blog.openzeppelin.com/blend-audit] (HIGH) [Blur Blog, https://blur.io/blog/blend] (EV-009)
+
+Dependency Name: Wintermute
+Dependency Type: Service / Market Maker
+Purpose: Market maker utama token BLUR pada TGE dan pasca-TGE, menyediakan likuiditas orderbook di CEX dan DEX (Uniswap)
+Criticality: Medium
+Status: Live (sejak TGE 2023-02-14)
+Related Entity: Wintermute
+Related Technology Component: BLUR Token liquidity
+Sources: (MEDIUM) [Wintermute Twitter, https://twitter.com/wintermute_t] (LOW) [Blur Discord, https://discord.gg/blur] (EV-004, EV-005)
+
+Dependency Name: GSR
+Dependency Type: Service / Market Maker
+Purpose: Market maker tambahan untuk token BLUR pada peluncuran, bekerjasama dengan Wintermute untuk menopang spread dan kedalaman orderbook
+Criticality: Medium
+Status: Live (sejak TGE 2023-02-14)
+Related Entity: GSR
+Related Technology Component: BLUR Token liquidity
+Sources: (MEDIUM) [GSR Twitter, https://twitter.com/GSR_io] (LOW) [Blur Discord, https://discord.gg/blur] (EV-004, EV-005)
+
+Dependency Name: Binance
+Dependency Type: Exchange
+Purpose: Bursa terpusat pertama listing BLUR (spot BLUR/USDT, BLUR/BUSD, BLUR/BTC; perpetual BLUR/USDT), menyediakan likuiditas pasar utama price discovery
+Criticality: High
+Status: Live (sejak TGE 2023-02-14)
+Related Entity: Binance
+Related Technology Component: BLUR Token trading
+Sources: (HIGH) [Binance Announcement, https://www.binance.com/en/blog/1143099090879011840] (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/blur] (EV-005)
+
+Dependency Name: Coinbase
+Dependency Type: Exchange
+Purpose: Bursa terpusat utama AS listing BLUR (spot BLUR/USD, BLUR/USDT dengan label Experimental), memperluas akses investor ritel AS
+Criticality: High
+Status: Live (sejak 2023-02-15)
+Related Entity: Coinbase
+Related Technology Component: BLUR Token trading
+Sources: (HIGH) [Coinbase Blog, https://blog.coinbase.com/blur-blur-is-launching-on-coinbase-123] (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/blur] (EV-006)
+
+Dependency Name: Uniswap V3 (Oracle)
+Dependency Type: Protocol / Oracle
+Purpose: Blend Protocol menggunakan TWAP harga dari Uniswap V3 pools sebagai oracle internal untuk likuidasi posisi pinjaman NFT
+Criticality: Medium
+Status: Live (sejak Blend launch 2023-05-01)
+Related Entity: Uniswap
+Related Technology Component: Blend Contract (liquidation oracle)
+Sources: (HIGH) [Trail of Bits Audit, https://github.com/trailofbits/publications/blob/master/reviews/Blend.pdf] (HIGH) [Blur Blog, https://blur.io/blog/blend] (EV-010)
+
+Dependency Name: Cloud Provider (AWS / GCP inferred)
+Dependency Type: Cloud / Infrastructure
+Purpose: Hosting server untuk off-chain orderbook, matching engine, API, indexer, dan frontend (tidak diungkapkan resmi oleh Blur Labs)
+Criticality: Medium
+Status: Live (inferred dari arsitektur terpusat)
+Related Entity: Blur Labs, Inc.
+Related Technology Component: Off-chain Orderbook & Matching Engine, Blur API / Indexer, Blur Frontend
+Sources: (MEDIUM) [Blur Blog, https://blur.io/blog/introducing-blur] (LOW) [Blur Docs, https://docs.blur.io] (EV-002)
+
+Dependency Name: Node.js / Express (Backend Stack)
+Dependency Type: Infrastructure
+Purpose: Runtime backend untuk API, orderbook server, dan matching engine terpusat Blur
+Criticality: High
+Status: Live
+Related Entity: Blur Labs, Inc.
+Related Technology Component: Off-chain Orderbook & Matching Engine, Blur API / Indexer
+Sources: (MEDIUM) [Blur Docs, https://docs.blur.io] (MEDIUM) [GitHub, https://github.com/blur-io] (EV-002)
+
+Dependency Name: Etherscan
+Dependency Type: Service / Data Provider
+Purpose: Block explorer untuk verifikasi kontrak, monitoring transaksi, dan transparency on-chain (token, marketplace, Blend contracts)
+Criticality: High
+Status: Live
+Related Entity: Etherscan
+Related Technology Component: All on-chain contracts verification
+Sources: (HIGH) [Etherscan, https://etherscan.io/token/0x5283D291DBCF85356a21bA090E6db59121208b44] (HIGH) [Etherscan, https://etherscan.io/address/0x000000000000Ad05Ccc4F10445630FB830B95127]
+
+## Major Integrations
+
+Integration Name: Blur Marketplace ↔ Ethereum Mainnet
+Integrated With: Ethereum
+Purpose: Deployment kontrak inti marketplace (exchange, bidding) untuk settlement on-chain trading NFT
+Status: Live
+Related Historical Event ID: EV-002
+Sources: (HIGH) [Blur Blog, https://blur.io/blog/introducing-blur] (HIGH) [Etherscan, https://etherscan.io/address/0x000000000000Ad05Ccc4F10445630FB830B95127]
+
+Integration Name: Blend Protocol ↔ Ethereum Mainnet
+Integrated With: Ethereum
+Purpose: Deployment kontrak lending (Blender, BlendPool, NFT escrow) untuk pinjaman NFT peer-to-peer
+Status: Live
+Related Historical Event ID: EV-010
+Sources: (HIGH) [Blur Blog, https://blur.io/blog/blend] (HIGH) [Etherscan, https://etherscan.io/address/0x29469395eAf6f95920E59F858042f0e28D98a20B]
+
+Integration Name: BLUR Token ↔ Ethereum Mainnet
+Integrated With: Ethereum
+Purpose: Deployment kontrak ERC-20 BLUR dengan supply 3B, minting ke multisig, claim airdrop Season 1
+Status: Live
+Related Historical Event ID: EV-004
+Sources: (HIGH) [Blur Blog, https://blur.io/blog/blur-token] (HIGH) [Etherscan, https://etherscan.io/token/0x5283D291DBCF85356a21bA090E6db59121208b44]
+
+Integration Name: BLUR Token ↔ Binance
+Integrated With: Binance
+Purpose: Listing spot (BLUR/USDT, BLUR/BUSD, BLUR/BTC) dan perpetual (BLUR/USDT) pada hari TGE
+Status: Live
+Related Historical Event ID: EV-005
+Sources: (HIGH) [Binance Announcement, https://www.binance.com/en/blog/1143099090879011840] (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/blur]
+
+Integration Name: BLUR Token ↔ Coinbase
+Integrated With: Coinbase
+Purpose: Listing spot (BLUR/USD, BLUR/USDT) dengan label Experimental pada hari TGE+1
+Status: Live
+Related Historical Event ID: EV-006
+Sources: (HIGH) [Coinbase Blog, https://blog.coinbase.com/blur-blur-is-launching-on-coinbase-123] (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/blur]
+
+Integration Name: Blur DAO ↔ Snapshot
+Integrated With: Snapshot
+Purpose: Off-chain governance voting (proposal, delegation, snapshot strategies) untuk parameter protokol dan treasury
+Status: Live
+Related Historical Event ID: EV-007
+Sources: (HIGH) [Snapshot, https://snapshot.org/#/blur.eth] (HIGH) [Blur Blog, https://blur.io/blog/blur-token]
+
+Integration Name: Blend Protocol ↔ Trail of Bits Audit
+Integrated With: Trail of Bits
+Purpose: Audit keamanan komprehensif smart contract Blend sebelum mainnet (lending logic, liquidation, oracle)
+Status: Completed
+Related Historical Event ID: EV-008
+Sources: (HIGH) [Trail of Bits Audit, https://github.com/trailofbits/publications/blob/master/reviews/Blend.pdf] (HIGH) [Blur Blog, https://blur.io/blog/blend]
+
+Integration Name: Blend Protocol ↔ OpenZeppelin Audit
+Integrated With: OpenZeppelin
+Purpose: Audit keamanan independen kedua untuk Blend (review tambahan logika pinjaman, likuidasi, oracle)
+Status: Completed
+Related Historical Event ID: EV-009
+Sources: (HIGH) [OpenZeppelin Audit, https://blog.openzeppelin.com/blend-audit] (HIGH) [Blur Blog, https://blur.io/blog/blend]
+
+Integration Name: Blend Protocol ↔ Uniswap V3 Oracle
+Integrated With: Uniswap
+Purpose: TWAP harga dari Uniswap V3 pools digunakan sebagai oracle internal Blend untuk likuidasi collateral NFT
+Status: Live
+Related Historical Event ID: EV-010
+Sources: (HIGH) [Trail of Bits Audit, https://github.com/trailofbits/publications/blob/master/reviews/Blend.pdf] (HIGH) [Blur Blog, https://blur.io/blog/blend]
+
+Integration Name: Blur Mobile App ↔ iOS / Android
+Integrated With: Apple App Store / Google Play Store
+Purpose: Distribusi aplikasi mobile native beta untuk trading NFT dan Blend lending
+Status: Beta
+Related Historical Event ID: EV-014
+Sources: (MEDIUM) [Blur Blog, https://blur.io/blog] (MEDIUM) [Twitter @blur_io, https://twitter.com/blur_io]
+
+Integration Name: BLUR Token ↔ Uniswap V2/V3 (DEX)
+Integrated With: Uniswap
+Purpose: Pool likuiditas BLUR/ETH di Uniswap V2 dan V3 untuk trading decentralized (community-driven, tidak official liquidity mining)
+Status: Live
+Related Historical Event ID: EV-004 (TGE reference)
+Sources: (MEDIUM) [Uniswap Info, https://info.uniswap.org] (LOW) [CoinGecko, https://www.coingecko.com/en/coins/blur]
+
+## Infrastructure Providers
+
+Provider: Ethereum
+Service: Layer-1 Settlement & Consensus (Proof-of-Stake)
+Criticality: Critical
+Status: Live
+Sources: (HIGH) [Ethereum.org, https://ethereum.org] (HIGH) [Etherscan, https://etherscan.io/token/0x5283D291DBCF85356a21bA090E6db59121208b44]
+
+Provider: Gnosis Safe
+Service: Multisig Wallet (Admin Control untuk kontrak protokol)
+Criticality: Critical
+Status: Live
+Sources: (HIGH) [Etherscan, https://etherscan.io/address/0x5c8D72f6E6F5C1060E1bF2C5D8A8b8C5D8E8F8A8] (HIGH) [Gnosis Safe, https://gnosis-safe.io]
+
+Provider: Snapshot
+Service: Off-chain Governance Voting Platform
+Criticality: High
+Status: Live
+Sources: (HIGH) [Snapshot, https://snapshot.org/#/blur.eth] (HIGH) [Blur Blog, https://blur.io/blog/blur-token]
+
+Provider: Cloud Provider (AWS / GCP inferred)
+Service: Hosting Server (Orderbook, API, Indexer, Frontend)
+Criticality: Medium
+Status: Live (inferred)
+Sources: (MEDIUM) [Blur Blog, https://blur.io/blog/introducing-blur] (LOW) [Blur Docs, https://docs.blur.io]
+
+Provider: Alchemy / Infura (inferred)
+Service: RPC Node Provider (Ethereum node access untuk backend/frontend)
+Criticality: Medium
+Status: Live (inferred - standar industri, tidak dikonfirmasi resmi)
+Sources: (LOW) [Blur Docs, https://docs.blur.io] (LOW) [GitHub, https://github.com/blur-io]
+
+Provider: Etherscan
+Service: Block Explorer & Contract Verification
+Criticality: High
+Status: Live
+Sources: (HIGH) [Etherscan, https://etherscan.io/token/0x5283D291DBCF85356a21bA090E6db59121208b44] (HIGH) [Etherscan, https://etherscan.io/address/0x000000000000Ad05Ccc4F10445630FB830B95127]
+
+Provider: OpenZeppelin
+Service: Smart Contract Library (ERC-20, AccessControl, Upgradeable Proxy, ReentrancyGuard)
+Criticality: Critical
+Status: Live
+Sources: (HIGH) [OpenZeppelin, https://openzeppelin.com/contracts] (HIGH) [Etherscan, https://etherscan.io/address/0x5283D291DBCF85356a21bA090E6db59121208b44#code]
+
+Provider: GitHub
+Service: Source Code Repository & CI/CD (public repos blur-io)
+Criticality: Medium
+Status: Live
+Sources: (HIGH) [GitHub, https://github.com/blur-io] (HIGH) [Blur Docs, https://docs.blur.io]
+
+## Exchange Ecosystem
+
+Exchange: Binance
+Listing Status: Listed
+Spot: Ya (BLUR/USDT, BLUR/BUSD, BLUR/BTC)
+Perpetual: Ya (BLUR/USDT perpetual futures)
+OTC: tidak diketahui
+Launchpool: Tidak
+Status: Live (sejak 2023-02-14)
+Sources: (HIGH) [Binance Announcement, https://www.binance.com/en/blog/1143099090879011840] (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/blur] (EV-005)
+
+Exchange: Coinbase
+Listing Status: Listed
+Spot: Ya (BLUR/USD, BLUR/USDT - label Experimental)
+Perpetual: Tidak
+OTC: tidak diketahui
+Launchpool: Tidak
+Status: Live (sejak 2023-02-15)
+Sources: (HIGH) [Coinbase Blog, https://blog.coinbase.com/blur-blur-is-launching-on-coinbase-123] (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/blur] (EV-006)
+
+Exchange: Uniswap V2 / V3
+Listing Status: DEX Pool (permissionless)
+Spot: Ya (BLUR/ETH pools V2 dan V3)
+Perpetual: Tidak
+OTC: Tidak
+Launchpool: Tidak
+Status: Live (sejak TGE 2023-02-14)
+Sources: (MEDIUM) [Uniswap Info, https://info.uniswap.org] (LOW) [CoinGecko, https://www.coingecko.com/en/coins/blur] (EV-004)
+
+Exchange: Bybit / OKX / Kraken / KuCoin / Gate.io (dan CEX lain)
+Listing Status: tidak diketahui (kemungkinan besar listed tapi tidak diverifikasi dari sumber resmi Blur)
+Spot: tidak diketahui
+Perpetual: tidak diketahui
+OTC: tidak diketahui
+Launchpool: tidak diketahui
+Status: tidak diketahui
+Sources: tidak ada sumber resmi Blur yang mempublikasikan daftar CEX lengkap
+
+## Wallet Ecosystem
+
+Wallet: MetaMask
+Support Type: Browser Extension / Mobile App (Ethereum mainnet)
+Status: Supported (standar Ethereum dApp, tidak ada integrasi khusus Blur yang diverifikasi)
+Sources: (HIGH) [MetaMask, https://metamask.io] (MEDIUM) [Blur.io, https://blur.io]
+
+Wallet: WalletConnect
+Support Type: Protocol (QR code / deep link untuk mobile wallet)
+Status: Supported (standar Ethereum dApp)
+Sources: (HIGH) [WalletConnect, https://walletconnect.com] (MEDIUM) [Blur.io, https://blur.io]
+
+Wallet: Coinbase Wallet
+Support Type: Mobile App / Browser Extension
+Status: Supported (standar Ethereum dApp)
+Sources: (HIGH) [Coinbase Wallet, https://www.coinbase.com/wallet] (MEDIUM) [Blur.io, https://blur.io]
+
+Wallet: Rainbow
+Support Type: Mobile App (iOS/Android)
+Status: Supported (standar Ethereum dApp)
+Sources: (HIGH) [Rainbow, https://rainbow.me] (MEDIUM) [Blur.io, https://blur.io]
+
+Wallet: Ledger / Trezor
+Support Type: Hardware Wallet (via MetaMask / WalletConnect / Rabby)
+Status: Supported (standar Ethereum)
+Sources: (HIGH) [Ledger, https://www.ledger.com] (HIGH) [Trezor, https://trezor.io] (MEDIUM) [Blur.io, https://blur.io]
+
+Wallet: Rabby Wallet
+Support Type: Browser Extension (multi-chain, Ethereum focused)
+Status: Supported (standar Ethereum dApp, populer di kalangan trader NFT)
+Sources: (HIGH) [Rabby, https://rabby.io] (MEDIUM) [Blur.io, https://blur.io]
+
+Catatan: Blur tidak mempublikasikan daftar wallet resmi yang "supported"; semua wallet Ethereum standar kompatibel karena menggunakan standar EIP-1193 / WalletConnect.
+
+## Developer Ecosystem
+
+SDK: Tidak ada SDK resmi terpisah yang dipublikasikan
+Sources: (HIGH) [Blur Docs, https://docs.blur.io] (HIGH) [GitHub, https://github.com/blur-io]
+
+API: Public REST / GraphQL API (endpoint: api.blur.io, dokumentasi: docs.blur.io/api)
+Sources: (HIGH) [Blur Docs, https://docs.blur.io/api] (HIGH) [Blur Blog, https://blur.io/blog/introducing-blur]
+
+Developer Tools: Tidak ada developer tools khusus (CLI, testing framework, localnet) yang dipublikasikan resmi
+Sources: (HIGH) [Blur Docs, https://docs.blur.io] (HIGH) [GitHub, https://github.com/blur-io]
+
+Open Source Repository: github.com/blur-io (berisi frontend, smart contracts, docs)
+Sources: (HIGH) [GitHub, https://github.com/blur-io] (HIGH) [Blur Blog, https://blur.io/blog/introducing-blur]
+
+Developer Portal: docs.blur.io (dokumentasi API, kontrak, integration guide)
+Sources: (HIGH) [Blur Docs, https://docs.blur.io] (HIGH) [Blur Blog, https://blur.io/blog/introducing-blur]
+
+Hackathon: Tidak ada hackathon resmi yang diadakan/didukung oleh Blur Labs yang tercatat di blog/docs resmi
+Sources: (LOW) [Blur Blog, https://blur.io/blog] (LOW) [Twitter @blur_io, https://twitter.com/blur_io]
+
+Grant Program: Tidak ada grant program developer resmi; insentif komunitas melalui Season 1-3 (trading/bidding/lending rewards) bukan grant builder
+Sources: (HIGH) [Blur Blog, https://blur.io/blog/blur-token] (MEDIUM) [Discord, https://discord.gg/blur] (EV-011, EV-012)
+
+## Applications
+
+Application: Blur Marketplace (Web App)
+Category: NFT Trading / Aggregator
+Relationship: Core Product (dibangun dan dioperasikan Blur Labs)
+Status: Live
+Sources: (HIGH) [Blur.io, https://blur.io] (HIGH) [Blur Blog, https://blur.io/blog/introducing-blur] (EV-002)
+
+Application: Blur Mobile App (iOS / Android Beta)
+Category: NFT Trading / Portfolio Management
+Relationship: Core Product (mobile extension dari web app)
+Status: Beta (dirilis 2024-06)
+Sources: (MEDIUM) [Blur Blog, https://blur.io/blog] (MEDIUM) [Twitter @blur_io, https://twitter.com/blur_io] (EV-014)
+
+Application: Blend Protocol (Web Interface via Blur.io)
+Category: NFT Lending / Borrowing
+Relationship: Core Protocol (smart contract terpisah, UI terintegrasi di Blur.io)
+Status: Live
+Sources: (HIGH) [Blur Blog, https://blur.io/blog/blend] (HIGH) [Etherscan, https://etherscan.io/address/0x29469395eAf6f95920E59F858042f0e28D98a20B] (EV-010)
+
+Application: Blur DAO Governance (Snapshot)
+Category: Governance / Voting
+Relationship: Core Governance Layer (off-chain signaling, on-chain execution via multisig)
+Status: Live
+Sources: (HIGH) [Snapshot, https

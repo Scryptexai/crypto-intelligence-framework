@@ -1,0 +1,66 @@
+PROJECT: Avalanche
+
+## Token Information
+
+Official Token Name: Avalanche
+Symbol: AVAX
+Token Standard: Native (X-Chain/P-Chain); ERC-20 equivalent via Precompile & Wrapped AVAX (WAVAX) di C-Chain
+Blockchain: Avalanche Primary Network (X-Chain, P-Chain, C-Chain)
+Contract Address: Native di X-Chain & P-Chain (tidak ada kontrak); C-Chain Wrapped AVAX (WAVAX): 0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7 (HIGH) [Snowtrace WAVAX Contract, https://snowtrace.io/token/0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7; Docs C-Chain Precompiles, https://docs.avax.network/docs/specifications/c-chain-precompiles]
+Decimals: 18 (HIGH) [Avalanche Whitepaper, https://www.avax.network/whitepaper; Docs AVAX Denomination, https://docs.avax.network/docs/learn/platform/exchange-chain#avax-denominations]
+Status: Live (Mainnet sejak 2020-09-21) (HIGH) [Ava Labs Blog Mainnet Launch, https://www.avalabs.org/blog/avalanche-mainnet-launches]
+
+Sources: (HIGH) [Avalanche Whitepaper, https://www.avax.network/whitepaper]; (HIGH) [CoinGecko AVAX, https://www.coingecko.com/en/coins/avalanche]; (HIGH) [Ava Labs Blog Mainnet Launch, https://www.avalabs.org/blog/avalanche-mainnet-launches]
+
+## Supply
+
+Maximum Supply: 720.000.000 AVAX (Hard Cap) (HIGH) [Avalanche Whitepaper, https://www.avax.network/whitepaper]; (HIGH) [Messari Token Report, https://messari.io/report/avalanche-token-report]
+Total Supply: 720.000.000 AVAX (genesis max cap; supply saat ini < max cap karena sisa staking rewards belum terminting) (HIGH) [Avalanche Whitepaper, https://www.avax.network/whitepaper]
+Circulating Supply: ~410.000.000 AVAX (perkiraan November 2024, tidak real-time; termasuk token tervesting dari team, investor, foundation, dan staking rewards yang sudah terminting) (MEDIUM) [CoinGecko Circulating Supply, https://www.coingecko.com/en/coins/avalanche; Messari Token Terminal, https://tokenterminal.com/terminal/projects/avalanche]
+Initial Supply: 360.000.000 AVAX (50% dari max supply; genesis allocation saat TGE/Mainnet) (HIGH) [Avalanche Whitepaper, https://www.avax.network/whitepaper]
+Supply Type: Dynamic (Inflationary hingga max cap tercapai via staking rewards; Deflationary via fee burn C-Chain) (HIGH) [Avalanche Whitepaper, https://www.avax.network/whitepaper]; (HIGH) [Docs C-Chain Fee Market, https://docs.avax.network/docs/learn/platform/contract-chain#fee-market]
+
+Sources: (HIGH) [Avalanche Whitepaper, https://www.avax.network/whitepaper]; (HIGH) [Messari Token Report, https://messari.io/report/avalanche-token-report]; (HIGH) [Docs Staking Rewards, https://docs.avax.network/docs/nodes/validate/overview#rewards]
+
+## Distribution
+
+Community: 12% total supply (86.400.000 AVAX) — termaksud Airdrop 2.5% (18.000.000), Testnet Incentive 0.27% (1.944.000), Strategic Partners 5% (36.000.000), sisa untuk grant/ekosistem (HIGH) [Avalanche Whitepaper, https://www.avax.network/whitepaper]; (MEDIUM) [Messari Token Report, https://messari.io/report/avalanche-token-report]
+Team: 10% total supply (72.000.000 AVAX) (HIGH) [Avalanche Whitepaper, https://www.avax.network/whitepaper]
+Investors: 
+  - Seed Sale: 2.5% total supply (18.000.000 AVAX) (HIGH) [Avalanche Whitepaper, https://www.avax.network/whitepaper]
+  - Private Sale: 3.5% total supply (25.200.000 AVAX) (HIGH) [Avalanche Whitepaper, https://www.avax.network/whitepaper]
+  - Strategic Sale: 10% total supply (72.000.000 AVAX) — whitepaper; catatan: Phase 5 mencatat $42M strategic sale @ $0.50 = 84M AVAX (11.67%), terdapat perbedaan angka (Lihat Open Threads) (HIGH) [Avalanche Whitepaper, https://www.avax.network/whitepaper]; (HIGH) [Crunchbase Ava Labs Funding, https://www.crunchbase.com/organization/ava-labs/company_financials]
+  - Public Sale: 10% total supply (72.000.000 AVAX) — terjual 72M AVAX di CoinList @ $0.50 (HIGH) [Avalanche Whitepaper, https://www.avax.network/whitepaper]; (HIGH) [Ava Labs Public Sale Results, https://www.avalabs.org/blog/avalanche-public-sale-results]
+Foundation: 9.26% total supply (66.672.000 AVAX) (HIGH) [Avalanche Whitepaper, https://www.avax.network/whitepaper]; (HIGH) [Avalanche Foundation About, https://avalanche.foundation/about/]
+Treasury: Termasuk dalam Foundation allocation (9.26%) + Community/Ecosystem allocation (12%) yang dikelola Foundation; tidak ada treasury DAO on-chain terpisah (HIGH) [Avalanche Whitepaper, https://www.avax.network/whitepaper]; (HIGH) [Avalanche Foundation Portfolio, https://avalanche.foundation/portfolio/]
+Ecosystem: Termasuk dalam Community & Ecosystem (12%) + Staking Rewards (50% / 360.000.000 AVAX terminting berdecade) (HIGH) [Avalanche Whitepaper, https://www.avax.network/whitepaper]
+Advisors: Tidak terpisah di whitepaper; kemungkinan termasuk dalam Team atau Strategic Partners (MEDIUM) [Messari Token Report, https://messari.io/report/avalanche-token-report]
+Other: Staking Rewards (Future Minting): 50% total supply (360.000.000 AVAX) — diminting secara perlahan sebagai reward validator/delegator selama beberapa dekade (HIGH) [Avalanche Whitepaper, https://www.avax.network/whitepaper]
+
+Sources: (HIGH) [Avalanche Whitepaper, https://www.avax.network/whitepaper]; (HIGH) [Messari Token Report, https://messari.io/report/avalanche-token-report]; (HIGH) [Ava Labs Public Sale Results, https://www.avalabs.org/blog/avalanche-public-sale-results]
+
+## Vesting Schedule
+
+Category: Seed Sale
+Cliff: 1 tahun dari TGE (2020-09) (MEDIUM) [Messari Token Report, https://messari.io/report/avalanche-token-report]
+Vesting: 3 tahun linear bulanan setelah cliff (MEDIUM) [Messari Token Report, https://messari.io/report/avalanche-token-report]
+Unlock Frequency: Bulanan (MEDIUM) [Messari Token Report, https://messari.io/report/avalanche-token-report]
+Current Status: Fully Vested (sejak ~2024-09) (MEDIUM) [Messari Token Report, https://messari.io/report/avalanche-token-report]
+
+Category: Private Sale
+Cliff: 1 tahun dari TGE (2020-09) (MEDIUM) [Messari Token Report, https://messari.io/report/avalanche-token-report]
+Vesting: 2 tahun linear bulanan setelah cliff (MEDIUM) [Messari Token Report, https://messari.io/report/avalanche-token-report]
+Unlock Frequency: Bulanan (MEDIUM) [Messari Token Report, https://messari.io/report/avalanche-token-report]
+Current Status: Fully Vested (sejak ~2023-09) (MEDIUM) [Messari Token Report, https://messari.io/report/avalanche-token-report]
+
+Category: Strategic Sale
+Cliff: 1 tahun dari TGE (2020-09) (MEDIUM) [Messari Token Report, https://messari.io/report/avalanche-token-report]
+Vesting: 2 tahun linear bulanan setelah cliff (MEDIUM) [Messari Token Report, https://messari.io/report/avalanche-token-report]
+Unlock Frequency: Bulanan (MEDIUM) [Messari Token Report, https://messari.io/report/avalanche-token-report]
+Current Status: Fully Vested (sejak ~2023-09) (MEDIUM) [Messari Token Report, https://messari.io/report/avalanche-token-report]
+
+Category: Public Sale (CoinList)
+Cliff: Tidak ada (TGE unlock parsial) (HIGH) [CoinList Sale Terms, https://coinlist.co/build/avalanche]; (HIGH) [Ava Labs Public Sale Results, https://www.avalabs.org/blog/avalanche-public-sale-results]
+Vesting: 10% unlock di TGE; 90% vesting linear bulanan selama 18 bulan (HIGH) [CoinList Sale Terms, https://coinlist.co/build/avalanche]; (HIGH) [Ava Labs Public Sale Results, https://www.avalabs.org/blog/avalanche-public-sale-results]
+Unlock Frequency: Bulanan (HIGH) [CoinList Sale Terms, https://coinlist.co/build/avalanche]
+Current Status: Fully Vested (

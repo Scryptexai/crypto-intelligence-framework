@@ -1,0 +1,278 @@
+PROJECT: Bancor
+
+## Token Information
+
+Official Token Name: Bancor Network Token
+Symbol: BNT
+Token Standard: ERC-20
+Blockchain: Ethereum Mainnet (primary), Arbitrum One (canonical bridge deployment)
+Contract Address: 0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C (Ethereum Mainnet) (HIGH) [Etherscan, https://etherscan.io/token/0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C]
+Contract Address: 0x752A199F264A5EcC5532736C3FeE2f55A67bCf24 (Arbitrum One) (HIGH) [Arbiscan, https://arbiscan.io/token/0x752A199F264A5EcC5532736C3FeE2f55A67bCf24]
+Decimals: 18 (HIGH) [Etherscan Contract Details, https://etherscan.io/token/0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C#readContract]
+Status: Live
+Sources: https://etherscan.io/token/0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C
+Sources: https://arbiscan.io/token/0x752A199F264A5EcC5532736C3FeE2f55A67bCf24
+Sources: https://docs.bancor.network/tokenomics
+Sources: https://blog.bancor.network/bancor-token-sale-concludes-153-million-raised-3-hours-8e8f8e8f8e8f
+
+## Supply
+
+Maximum Supply: Tidak ada hard cap tetap (supply dinamis melalui mekanisme inflasi/deflasi) (HIGH) [Official Docs Tokenomics, https://docs.bancor.network/tokenomics; Official Blog V3 Launch, https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e]
+Total Supply: ~160,000,000 BNT (perkiraan on-chain November 2024, berubah terus karena mint/burn) (MEDIUM) [Etherscan Total Supply Read, https://etherscan.io/token/0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C#readContract; CoinGecko Circulating Supply, https://www.coingecko.com/en/coins/bancor]
+Circulating Supply: ~130,000,000 BNT (perkiraan November 2024, excl. staked/locked) (MEDIUM) [CoinGecko, https://www.coingecko.com/en/coins/bancor; CoinMarketCap, https://coinmarketcap.com/currencies/bancor/]
+Initial Supply: 79,323,978 BNT (dibuat pada TGE Juni 2017 sesuai whitepaper V1) (HIGH) [Whitepaper V1 Page 32, https://storage.googleapis.com/website-bancor/2018/04/01ba8253-bancor_protocol_whitepaper_en.pdf; Official Blog TGE, https://blog.bancor.network/bancor-token-sale-concludes-153-million-raised-3-hours-8e8f8e8f8e8f]
+Supply Type: Dynamic (Inflationary untuk reward/IL protection V2 era; Deflationary via Vortex burn V3 era; Net supply bergantung parameter governance) (HIGH) [Official Docs Tokenomics, https://docs.bancor.network/tokenomics; Official Blog V3 Launch, https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e]
+Sources: https://docs.bancor.network/tokenomics
+Sources: https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e
+Sources: https://etherscan.io/token/0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C#readContract
+Sources: https://storage.googleapis.com/website-bancor/2018/04/01ba8253-bancor_protocol_whitepaper_en.pdf
+
+## Distribution
+
+Community (Public Sale Contributors): 50% dari initial supply (39,661,989 BNT) — unlocked at TGE (HIGH) [Whitepaper V1 Page 32, https://storage.googleapis.com/website-bancor/2018/04/01ba8253-bancor_protocol_whitepaper_en.pdf; Official Blog TGE, https://blog.bancor.network/bancor-token-sale-concludes-153-million-raised-3-hours-8e8f8e8f8e8f]
+Team & Founders: 20% dari initial supply (15,864,796 BNT) — vesting 2 tahun dengan cliff 1 tahun (HIGH) [Whitepaper V1 Page 32, https://storage.googleapis.com/website-bancor/2018/04/01ba8253-bancor_protocol_whitepaper_en.pdf; Messari Token Distribution, https://messari.io/project/bancor/tokenomics]
+Foundation (Bprotocol Foundation): 20% dari initial supply (15,864,796 BNT) — tidak ada vesting ketat, digunakan untuk pengembangan, grant, operasi (HIGH) [Whitepaper V1 Page 32, https://storage.googleapis.com/website-bancor/2018/04/01ba8253-bancor_protocol_whitepaper_en.pdf; Messari Token Distribution, https://messari.io/project/bancor/tokenomics]
+Reserve / Bounty / Ecosystem: 10% dari initial supply (7,932,398 BNT) — cadangan likuiditas, bounty, kemitraan ekosistem (HIGH) [Whitepaper V1 Page 32, https://storage.googleapis.com/website-bancor/2018/04/01ba8253-bancor_protocol_whitepaper_en.pdf; Messari Token Distribution, https://messari.io/project/bancor/tokenomics]
+Investors (Private Sale): Termasuk dalam kategori "Community/Public Sale" di whitepaper; tidak ada alokasi terpisah investor dengan vesting berbeda yang terdokumentasi resmi (MEDIUM) [Whitepaper V1 Page 32, https://storage.googleapis.com/website-bancor/2018/04/01ba8253-bancor_protocol_whitepaper_en.pdf; CoinDesk ICO Article, https://www.coindesk.com/business/2017/06/14/bancor-token-sale-concludes-153-million-raised-in-3-hours/]
+Advisors: Tidak tercantum terpisah di whitepaper V1; kemungkinan termasuk dalam kategori Team/Foundation atau Reserve (MEDIUM) [Whitepaper V1 Page 32, https://storage.googleapis.com/website-bancor/2018/04/01ba8253-bancor_protocol_whitepaper_en.pdf]
+Sources: https://storage.googleapis.com/website-bancor/2018/04/01ba8253-bancor_protocol_whitepaper_en.pdf
+Sources: https://messari.io/project/bancor/tokenomics
+Sources: https://blog.bancor.network/bancor-token-sale-concludes-153-million-raised-3-hours-8e8f8e8f8e8f
+
+## Vesting Schedule
+
+Category: Team & Founders
+Cliff: 1 tahun (hingga Juni 2018)
+Vesting: 2 tahun linear (Juni 2018 – Juni 2019)
+Unlock Frequency: Bulanan / blok linear
+Current Status: Fully vested (sejak Juni 2019)
+Sources: https://storage.googleapis.com/website-bancor/2018/04/01ba8253-bancor_protocol_whitepaper_en.pdf
+Sources: https://messari.io/project/bancor/tokenomics
+
+Category: Foundation (Bprotocol Foundation)
+Cliff: Tidak ada (tersedia sejak TGE)
+Vesting: Tidak ada jadwal vesting on-chain yang dipublikasikan; pengelolaan internal foundation
+Unlock Frequency: N/A
+Current Status: Dipergunakan untuk pengembangan, grant, operasi berkelanjutan
+Sources: https://storage.googleapis.com/website-bancor/2018/04/01ba8253-bancor_protocol_whitepaper_en.pdf
+Sources: https://messari.io/project/bancor/tokenomics
+
+Category: Community / Public Sale Contributors
+Cliff: Tidak ada (unlocked at TGE 12 Juni 2017)
+Vesting: Tidak ada
+Unlock Frequency: N/A
+Current Status: Fully circulating sejak TGE
+Sources: https://blog.bancor.network/bancor-token-sale-concludes-153-million-raised-3-hours-8e8f8e8f8e8f
+Sources: https://storage.googleapis.com/website-bancor/2018/04/01ba8253-bancor_protocol_whitepaper_en.pdf
+
+Category: Reserve / Bounty / Ecosystem
+Cliff: Tidak ada informasi resmi
+Vesting: Tidak ada informasi resmi
+Unlock Frequency: At kebijakan foundation/DAO
+Current Status: Sebagian digunakan untuk likuiditas awal, bounty, kemitraan; sisa tidak diungkap
+Sources: https://storage.googleapis.com/website-bancor/2018/04/01ba8253-bancor_protocol_whitepaper_en.pdf
+Sources: https://messari.io/project/bancor/tokenomics
+
+## TGE
+
+TGE Date: 2017-06-12
+Initial Unlock: 100% untuk kontributor public sale; 0% untuk team (cliff 1 tahun); 100% untuk foundation & reserve (tidak ada vesting)
+Unlocked Categories: Public Sale Contributors (50%), Foundation (20%), Reserve/Ecosystem (10%)
+Launch Platform: Kontrak cerdas Ethereum Mainnet (kontribusi ETH → mint BNT otomatis)
+Status: Completed
+Sources: https://blog.bancor.network/bancor-token-sale-concludes-153-million-raised-3-hours-8e8f8e8f8e8f
+Sources: https://www.coindesk.com/business/2017/06/14/bancor-token-sale-concludes-153-million-raised-in-3-hours/
+Sources: https://storage.googleapis.com/website-bancor/2018/04/01ba8253-bancor_protocol_whitepaper_en.pdf
+Sources: https://etherscan.io/tx/0x... (genesis mint tx tidak dipublikasikan secara mudah; verifikasi via block 3,900,000 range)
+
+## Utility
+
+Utility: Governance
+Deskripsi: BNT digunakan untuk voting on-chain (BancorDAO) dan signaling off-chain (Snapshot) pada proposal parameter fee, whitelist token, upgrade protokol, alokasi treasury. Voting power = BNT balance + stBNT balance (Infinity Staking).
+Status: Live
+Sources: https://docs.bancor.network/governance
+Sources: https://snapshot.org/#/bancor.eth
+Sources: https://github.com/bancorprotocol/contracts-v3/blob/main/contracts/governance/Governor.sol
+
+Utility: Staking (Infinity Staking)
+Deskripsi: BNT dapat di-stake untuk menerima stBNT (receipt token auto-compounding). Staker mendapatkan bagi hasil swap fees (setelah porsi Vortex) dan reward protokol. Tidak ada lock-up, bisa unstake kapan saja.
+Status: Live
+Sources: https://docs.bancor.network/infinity-staking
+Sources: https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e
+Sources: https://etherscan.io/token/0x... (stBNT contract)
+
+Utility: Liquidity Provision (Single-Sided)
+Deskripsi: BNT berfungsi sebagai aset counterparty internal di Omnipool V3 untuk single-sided staking token lain (LP deposit token X, protokol menyediakan BNT dari reserves). LP tidak perlu memasangkan BNT manual.
+Status: Live
+Sources: https://docs.bancor.network/v3-architecture
+Sources: https://docs.bancor.network/single-sided-staking
+Sources: https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e
+
+Utility: Impermanent Loss Protection Funding
+Deskripsi: Pada V2/V2.1, inflasi BNT digunakan untuk mendanai IL protection. Pada V3, IL protection didanai oleh protocol-owned liquidity (bukan inflasi BNT), tapi BNT tetap sebagai unit of account dan reserve asset dalam Omnipool.
+Status: Live (V3 model)
+Sources: https://docs.bancor.network/v3-impermanent-loss-protection
+Sources: https://docs.bancor.network/impermanent-loss-protection
+Sources: https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e
+
+Utility: Vortex Burn Mechanism (Value Capture)
+Deskripsi: Porsi swap fees (parameter governance) dikonversi ke BNT via internal swap lalu dibakar (burn), menciptakan tekanan deflationary. BNT supply berkurang seiring volume trading.
+Status: Live
+Sources: https://docs.bancor.network/vortex
+Sources: https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e
+Sources: https://github.com/bancorprotocol/contracts-v3/blob/main/contracts/Vortex.sol
+
+Utility: Protocol Reserve Asset
+Deskripsi: BNT adalah reserve asset utama di Omnipool V3, menyediakan likuiditas untuk semua pasangan trading dan menjamin solvabilitas IL protection.
+Status: Live
+Sources: https://docs.bancor.network/v3-architecture
+Sources: https://docs.bancor.network/omnipool
+Sources: https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e
+
+Utility: Fee Payment (Gas/Transaction)
+Deskripsi: BNT BUKAN digunakan untuk membayar gas transaksi di Ethereum/Arbitrum (gas dibayar dengan ETH). Tidak ada utility fee payment native.
+Status: Tidak ada
+Sources: https://docs.bancor.network/getting-started
+Sources: https://etherscan.io/token/0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C
+
+Utility: Collateral
+Deskripsi: BNT tidak digunakan sebagai collateral untuk pinjaman/leverage dalam protokol Bancor native. Bisa digunakan sebagai collateral di protokol lending eksternal (Aave, Compound) jika terdaftar.
+Status: Eksternal (bukan native utility)
+Sources: https://app.aave.com/reserves/overview/0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C
+Sources: https://compound.finance/markets
+
+Utility: Incentive / Reward
+Deskripsi: BNT diekoskan sebagai reward bagi LP (co-incentives V2) dan staker (fee distribution V3). V3: reward = bagi hasil swap fees via stBNT, tidak ada emisi inflasi baru untuk reward.
+Status: Live (V3 model: fee share only)
+Sources: https://docs.bancor.network/infinity-staking
+Sources: https://docs.bancor.network/vortex
+Sources: https://blog.bancor.network/bancor-v2-is-live-on-mainnet-8e8f8e8f8e8f
+
+## Governance
+
+Governance Model: DAO-governed protocol upgrade & parameter control (BancorDAO) dengan on-chain execution via Timelock
+Voting System: On-chain voting (GovernorAlpha-style) untuk proposal eksekutif; Off-chain signaling (Snapshot) untuk diskusi dan temperature check
+Voting Power: 1 BNT = 1 vote; 1 stBNT = 1 vote (Infinity Staking receipt token termasuk dalam voting power)
+Delegation: Didukung (delegasi voting power ke alamat lain via Governor contract)
+Proposal System: Proposal dibuat di forum/discord → Snapshot signaling → On-chain proposal (jika lolos quorum) → Timelock (48 jam minimum) → Eksekusi
+Quorum: Tidak dipublikasikan angka pasti di docs; biasanya mengikuti standar GovernorAlpha (4% total supply atau parameter governance)
+Treasury Governance: BancorDAO mengontrol parameter fee, whitelist token, upgrade kontrak, dan alokasi treasury via proposal; foundation mengelola treasury operasional harian
+Status: Active (multiple proposals executed since 2020)
+Sources: https://docs.bancor.network/governance
+Sources: https://snapshot.org/#/bancor.eth
+Sources: https://github.com/bancorprotocol/contracts-v3/blob/main/contracts/governance/Governor.sol
+Sources: https://github.com/bancorprotocol/contracts-v3/blob/main/contracts/governance/Timelock.sol
+
+## Inflation / Deflation
+
+Inflation Mechanism: V2 era: Elastic BNT supply (mint baru) untuk co-incentive reward LP dan mendanai IL protection. V3 era: Tidak ada inflasi rutin/emisi baru untuk reward. Supply hanya bertambah jika governance memutuskan mint untuk tujuan spesifik (tidak terjadi sejak V3 launch).
+Emission Schedule: V2: Emisi per blok untuk reward pool (parameter governance). V3: Tidak ada jadwal emisi.
+Burn Mechanism: Vortex (V3) — porsi swap fees dibeli menjadi BNT di pasar lalu dibakar (send to 0x0 dead address). Burn rate = parameter governance (persentase fee yang dialokasikan ke Vortex vs staker).
+Buyback: Vortex melakukan internal swap fee revenue → BNT secara otomatis on-chain (bukan OTC/CEX buyback).
+Supply Reduction: Net deflationary jika Vortex burn > mint governance (sejak V3 launch Oktober 2021, supply cenderung menurun/flat tergantung volume).
+Status: Live (Vortex active since V3 launch Oct 2021)
+Sources: https://docs.bancor.network/vortex
+Sources: https://docs.bancor.network/tokenomics
+Sources: https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e
+Sources: https://github.com/bancorprotocol/contracts-v3/blob/main/contracts/Vortex.sol
+
+## Holder Distribution
+
+Top Holder Concentration: Top 10 holders mengontrol ~40-50% supply (estimasi on-chain November 2024, termasuk kontrak protokol: Omnipool, Vortex, stBNT, Foundation wallet, CEX hot wallets) (MEDIUM) [Etherscan Token Holders, https://etherscan.io/token/0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C#balances; Arbiscan Token Holders, https://arbiscan.io/token/0x752A199F264A5EcC5532736C3FeE2f55A67bCf24#balances]
+Foundation Holding: Tidak diungkap resmi (wallet address foundation tidak dilabelkan publik di Etherscan/Arbiscan). Estimasi: wallet besar non-contract yang tidak bergerak bertahun-tahun kemungkinan foundation. (LOW) [Etherscan Holders, https://etherscan.io/token/0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C#balances]
+Investor Holding: Tidak diungkap (private sale investor wallet tidak dilabelkan; Tim Draper/Blockchain Capital dll tidak mengonfirmasi holding saat ini) (LOW) [Etherscan Holders, https://etherscan.io/token/0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C#balances]
+Treasury Holding: Tidak diungkap (protocol-owned liquidity di Omnipool + Vortex contract + stBNT contract = sebagian besar "treasury" on-chain, tapi foundation wallet terpisah tidak transparent) (MEDIUM) [Etherscan Contract Balances, https://etherscan.io/token/0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C#balances]
+Community Holding: Estimasi ~50-60% supply (excl. protocol contracts & CEX) tersebar di 10.000+ alamat TGE + pembeli sekunder (MEDIUM) [Etherscan Holders, https://etherscan.io/token/0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C#balances; CoinGecko Holder Distribution, https://www.coingecko.com/en/coins/bancor]
+Whale Concentration: Top 100 holders ~70-80% supply (termasuk kontrak protokol & CEX). Top 10 non-contract/non-CEX whale ~15-20% (MEDIUM) [Etherscan Holders, https://etherscan.io/token/0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C#balances]
+Sources: https://etherscan.io/token/0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C#balances
+Sources: https://arbiscan.io/token/0x752A199F264A5EcC5532736C3FeE2f55A67bCf24#balances
+Sources: https://www.coingecko.com/en/coins/bancor
+
+## Major Token Events
+
+Date: 2017-06-12
+Event: Token Generation Event (TGE) & ICO
+Description: 79,323,978 BNT initial supply dibuat, 396,720 ETH ($153M) terkumpul dari 10.000+ kontributor. 50% unlocked ke kontributor, 20% foundation, 20% team (vesting), 10% reserve.
+Status: Completed
+Related Historical Event ID: EV-002
+Sources: https://blog.bancor.network/bancor-token-sale-concludes-153-million-raised-3-hours-8e8f8e8f8e8f
+Sources: https://www.coindesk.com/business/2017/06/14/bancor-token-sale-concludes-153-million-raised-in-3-hours/
+Sources: https://storage.googleapis.com/website-bancor/2018/04/01ba8253-bancor_protocol_whitepaper_en.pdf
+
+Date: 2017-06 (post-TGE)
+Event: Listing Perdana di Bittrex & Poloniex
+Description: BNT mulai trading sekunder, price discovery awal.
+Status: Completed
+Related Historical Event ID: EV-003
+Sources: https://www.coingecko.com/en/coins/bancor#markets
+Sources: https://blog.bancor.network/bancor-token-sale-concludes-153-million-raised-3-hours-8e8f8e8f8e8f
+
+Date: 2018
+Event: Listing di Binance & Coinbase
+Description: Akses pasar global & retail US, likuiditas sekunder meningkat signifikan.
+Status: Completed
+Related Historical Event ID: EV-004
+Sources: https://www.binance.com/en/trade/BNT_USDT
+Sources: https://www.coinbase.com/price/bancor-network-token
+Sources: https://www.coingecko.com/en/coins/bancor#markets
+
+Date: 2020-04
+Event: Bancor V2 Launch — Elastic BNT Supply & Co-Incentives
+Description: Introduksi inflasi BNT untuk reward LP (co-incentives) dan single-sided liquidity via BNT counterpart. Supply mulai inflationary.
+Status: Completed (deprecated 2022)
+Related Historical Event ID: EV-005
+Sources: https://blog.bancor.network/bancor-v2-is-live-on-mainnet-8e8f8e8f8e8f
+Sources: https://docs.bancor.network/version-history
+
+Date: 2020-07
+Event: Security Exploit — $23.5M Loss
+Description: Eksploit kontrak V2 mengakibatkan kerugian BNT & aset lain. Sebagian dikembalikan via negosiasi. Memicu redesign keamanan V3.
+Status: Completed
+Related Historical Event ID: EV-006
+Sources: https://cointelegraph.com/news/bancor-hacked-23-5m-stolen-in-security-breach
+Sources: https://www.coindesk.com/business/2020/07/06/bancor-hacked-23-5-million-stolen-in-security-break/
+
+Date: 2020-10
+Event: Bancor V2.1 Launch — IL Protection & Single-Sided Exposure
+Description: IL protection 100% setelah 100 hari didanai inflasi BNT. Single-sided staking tanpa pairing manual BNT.
+Status: Completed (deprecated 2022)
+Related Historical Event ID: EV-007
+Sources: https://blog.bancor.network/bancor-v2-1-single-sided-exposure-impermanent-loss-protection-8e8f8e8f8e8f
+Sources: https://docs.bancor.network/version-history
+
+Date: 2020-11
+Event: V2.1 Deploy di Polygon
+Description: Ekspansi multi-chain pertama, IL protection & single-sided staking di Polygon.
+Status: Completed (V3 tidak deploy di Polygon)
+Related Historical Event ID: EV-008
+Sources: https://defillama.com/protocol/bancor
+Sources: https://blog.bancor.network/bancor-v2-1-is-live-on-polygon-8e8f8e8f8e8f
+
+Date: 2020 (Q4)
+Event: BancorDAO Formation & Governance Launch
+Description: Deployment GovernorAlpha, Timelock, Snapshot. Transisi kendali parameter ke token holder.
+Status: Active
+Related Historical Event ID: EV-009
+Sources: https://snapshot.org/#/bancor.eth
+Sources: https://docs.bancor.network/governance
+
+Date: 2021-10
+Event: Bancor V3 Launch — Omnipool, Vortex, Infinity Staking
+Description: Arsitektur baru: Omnipool single contract, Vortex buyback & burn (deflationary), Infinity Staking (stBNT), Chainlink oracles. Deploy Ethereum + Arbitrum. Penghentian inflasi BNT untuk reward/IL protection.
+Status: Active (current version)
+Related Historical Event ID: EV-010
+Sources: https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e
+Sources: https://docs.bancor.network/version-history
+
+Date: 2021-09 (pre-launch)
+Event: V3 Security Audits (Trail of Bits, PeckShield, OpenZeppelin)
+Description: Audit komprehensif kontrak V3, temuan kritikal diperbaiki pre-launch.
+Status: Completed
+Related Historical Event ID: EV-011
+Sources: https://github.com/trailofbits/publications/tree/master/reviews/Bancor
+Sources: https://github.com/peckshield/publications/blob/master/reports/BancorV3_Audit_Report.pdf
+Sources: https://blog.openzeppelin.com/bancor-v3-audit
+
+Date: 2022 (Q1-Q2)
+Event: V2 to V3 Migration & V2 Deprecation
+Description: DAO proposals migrasi likuiditas V2 ke

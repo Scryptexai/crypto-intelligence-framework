@@ -1,0 +1,130 @@
+PROJECT: Avalanche
+
+## Market Category
+
+Primary Category: Layer 1 Blockchain (HIGH) [Avalanche Whitepaper, https://www.avax.network/whitepaper]; (HIGH) [Messari Profile, https://messari.io/project/avalanche]; (HIGH) [CoinGecko Category, https://www.coingecko.com/en/coins/avalanche]
+Secondary Category: Multi-chain Architecture / Subnet Framework (HIGH) [Docs Subnets, https://docs.avax.network/docs/learn/subnets]; (HIGH) [Ava Labs Ecosystem, https://www.avalabs.org/ecosystem]
+Sector: Smart Contract Platform / Infrastructure (HIGH) [CoinGecko Category, https://www.coingecko.com/en/categories/layer-1]; (HIGH) [Token Terminal Sector, https://tokenterminal.com/terminal/projects/avalanche]
+Sub-sector: EVM-compatible L1 / Enterprise Blockchain / Gaming Blockchain / DeFi Infrastructure (HIGH) [Ava Labs Products, https://www.avalabs.org/products]; (HIGH) [Messari Ecosystem Report Q4 2023, https://messari.io/report/avalanche-ecosystem-report-q4-2023]
+Sources: (HIGH) [Avalanche Whitepaper, https://www.avax.network/whitepaper]; (HIGH) [Messari Profile, https://messari.io/project/avalanche]; (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/avalanche]; (HIGH) [Token Terminal, https://tokenterminal.com/terminal/projects/avalanche]
+
+## Market Position
+
+Project Stage: Mature (Mainnet live sejak 2020-09-21, >4 tahun operasi, enterprise adoption, multiple Subnets live) (HIGH) [Ava Labs Blog Mainnet Launch, https://www.avalabs.org/blog/avalanche-mainnet-launches]; (HIGH) [AvaCloud Clients, https://avacloud.io/]; (HIGH) [Messari Ecosystem Report Q4 2023, https://messari.io/report/avalanche-ecosystem-report-q4-2023]
+Primary Competitors: Ethereum; Solana; Polygon; BNB Chain; Arbitrum; Optimism; Base; Polkadot; Cosmos; Near Protocol (HIGH) [Messari Competitor Set, https://messari.io/project/avalanche/competitors]; (HIGH) [Token Terminal Peers, https://tokenterminal.com/terminal/projects/avalanche/peers]; (HIGH) [DefiLlama Chains, https://defillama.com/chains]
+Market Segment: General-purpose L1 dengan fokus Subnet (app-specific chain), Enterprise/Institutional (AvaCloud), Gaming (HyperSDK), DeFi (C-Chain EVM), Cross-chain Interoperability (AWM/Teleporter) (HIGH) [Ava Labs Ecosystem, https://www.avalabs.org/ecosystem]; (HIGH) [AvaCloud Site, https://avacloud.io/]; (HIGH) [Docs Teleporter, https://docs.avax.network/docs/specifications/teleporter]
+Geographic Focus: Global (HQ AS: New York); Enterprise kuat di AS (Deloitte, T. Rowe Price); Gaming/Enterprise Asia (SK Planet Korea, Nexon Japan, Gunzilla Germany); Validator set terdistribusi global (HIGH) [Ava Labs Contact, https://www.avalabs.org/contact]; (HIGH) [Avascan Validators, https://avascan.info/validators]; (HIGH) [Ava Labs Blog Deloitte, https://www.avalabs.org/blog/deloitte-avalanche-disaster-recovery]; (HIGH) [Ava Labs Blog Nexon, https://www.avalabs.org/blog/nexon-maplestory-avalanche]
+Sources: (HIGH) [Ava Labs Blog Mainnet Launch, https://www.avalabs.org/blog/avalanche-mainnet-launches]; (HIGH) [Messari Profile, https://messari.io/project/avalanche]; (HIGH) [Token Terminal Peers, https://tokenterminal.com/terminal/projects/avalanche/peers]; (HIGH) [DefiLlama Chains, https://defillama.com/chains]; (HIGH) [AvaCloud Site, https://avacloud.io/]; (HIGH) [Ava Labs Blog Deloitte, https://www.avalabs.org/blog/deloitte-avalanche-disaster-recovery]; (HIGH) [Ava Labs Blog Nexon, https://www.avalabs.org/blog/nexon-maplestory-avalanche]
+
+## Trading Markets
+
+Exchange: Binance; Spot: Ya (AVAX/USDT, AVAX/BTC, AVAX/USDC, AVAX/FDUSD, AVAX/TRY, AVAX/EUR); Perpetual: Ya (AVAXUSDT Perpetual, AVAXUSD Perpetual, AVAXUSDC Perpetual); Futures: Ya (Quarterly Futures); Options: Ya (Binance Options AVAX); OTC: Ya (Binance OTC Portal); Status: Active (HIGH) [Binance AVAX Markets, https://www.binance.com/en/trade/AVAX_USDT]; (HIGH) [Binance Futures AVAX, https://www.binance.com/en/futures/AVAXUSDT]; (HIGH) [Binance Options, https://www.binance.com/en/options/AVAXUSDT]; (HIGH) [Binance OTC, https://www.binance.com/en/otc]
+
+Exchange: Coinbase (Coinbase Exchange / Advanced Trade); Spot: Ya (AVAX/USD, AVAX/USDC, AVAX/EUR, AVAX/GBP); Perpetual: Tidak; Futures: Tidak; Options: Tidak; OTC: Ya (Coinbase Prime OTC); Status: Active (HIGH) [Coinbase AVAX Markets, https://www.coinbase.com/price/avalanche]; (HIGH) [Coinbase Prime OTC, https://prime.coinbase.com/otc]; (HIGH) [Coinbase Blog Listing, https://blog.coinbase.com/avalanche-avax-is-launching-on-coinbase-pro]
+
+Exchange: Kraken; Spot: Ya (AVAX/USD, AVAX/EUR, AVAX/USDT, AVAX/GBP, AVAX/CAD); Perpetual: Ya (Kraken Futures AVAX/USD, AVAX/EUR); Futures: Ya (Kraken Futures); Options: Tidak; OTC: Ya (Kraken OTC Desk); Status: Active (HIGH) [Kraken AVAX Markets, https://trade.kraken.com/markets/kraken/avax/usd]; (HIGH) [Kraken Futures, https://futures.kraken.com/]; (HIGH) [Kraken OTC, https://kraken.com/otc]
+
+Exchange: OKX; Spot: Ya (AVAX/USDT, AVAX/USDC, AVAX/BTC); Perpetual: Ya (AVAXUSDT Perpetual, AVAXUSD Perpetual); Futures: Ya (Quarterly Futures); Options: Ya (OKX Options AVAX); OTC: Ya (OKX OTC); Status: Active (HIGH) [OKX AVAX Markets, https://www.okx.com/markets/avax-usdt]; (HIGH) [OKX Futures, https://www.okx.com/futures-trade/avax-usdt]; (HIGH) [OKX Options, https://www.okx.com/options]; (HIGH) [OKX OTC, https://www.okx.com/otc]
+
+Exchange: Bybit; Spot: Ya (AVAX/USDT, AVAX/USDC); Perpetual: Ya (AVAXUSDT Perpetual, AVAXUSD Inverse Perpetual); Futures: Ya (Bybit Futures); Options: Ya (Bybit Options AVAX); OTC: Ya (Bybit OTC); Status: Active (HIGH) [Bybit AVAX Spot, https://www.bybit.com/trade/spot/AVAX/USDT]; (HIGH) [Bybit Futures AVAX, https://www.bybit.com/trade/usdt/AVAXUSDT]; (HIGH) [Bybit Options, https://www.bybit.com/options]; (MEDIUM) [Bybit OTC, https://www.bybit.com/otc]
+
+Exchange: KuCoin; Spot: Ya (AVAX/USDT, AVAX/BTC, AVAX/USDC); Perpetual: Ya (KuCoin Futures AVAX/USDT); Futures: Ya; Options: Tidak; OTC: Ya (KuCoin OTC); Status: Active (HIGH) [KuCoin AVAX Spot, https://www.kucoin.com/trade/AVAX-USDT]; (HIGH) [KuCoin Futures AVAX, https://www.kucoin.com/futures/trade/AVAXUSDT]; (MEDIUM) [KuCoin OTC, https://www.kucoin.com/otc]
+
+Exchange: Gate.io; Spot: Ya (AVAX/USDT, AVAX/BTC, AVAX/USDC); Perpetual: Ya (Gate.io Futures AVAX/USDT); Futures: Ya; Options: Tidak; OTC: Ya (Gate.io OTC); Status: Active (HIGH) [Gate.io AVAX Spot, https://www.gate.io/trade/AVAX_USDT]; (HIGH) [Gate.io Futures, https://www.gate.io/futures_trade/USDT_AVAX]; (MEDIUM) [Gate.io OTC, https://www.gate.io/otc]
+
+Exchange: Crypto.com; Spot: Ya (AVAX/USDT, AVAX/USDC, AVAX/CRO); Perpetual: Ya (Crypto.com Exchange Futures AVAX/USDT); Futures: Ya; Options: Tidak; OTC: Ya (Crypto.com OTC); Status: Active (HIGH) [Crypto.com AVAX Spot, https://crypto.com/exchange/trade/AVAX_USDT]; (HIGH) [Crypto.com Futures, https://crypto.com/exchange/futures]; (MEDIUM) [Crypto.com OTC, https://crypto.com/otc]
+
+Exchange: HTX (Huobi); Spot: Ya (AVAX/USDT, AVAX/BTC, AVAX/USDC); Perpetual: Ya (HTX Futures AVAX/USDT); Futures: Ya; Options: Tidak; OTC: Ya (HTX OTC); Status: Active (HIGH) [HTX AVAX Spot, https://www.htx.com/trade/avax_usdt]; (HIGH) [HTX Futures, https://www.htx.com/futures]; (MEDIUM) [HTX OTC, https://www.htx.com/otc]
+
+Exchange: Bitget; Spot: Ya (AVAX/USDT, AVAX/USDC); Perpetual: Ya (Bitget Futures AVAX/USDT, AVAXUSD Coin-M); Futures: Ya; Options: Ya (Bitget Options AVAX); OTC: Ya (Bitget OTC); Status: Active (HIGH) [Bitget AVAX Spot, https://www.bitget.com/spot/AVAXUSDT]; (HIGH) [Bitget Futures, https://www.bitget.com/futures/AVAXUSDT]; (HIGH) [Bitget Options, https://www.bitget.com/options]; (MEDIUM) [Bitget OTC, https://www.bitget.com/otc]
+
+Sources: (HIGH) [Binance AVAX Markets, https://www.binance.com/en/trade/AVAX_USDT]; (HIGH) [Coinbase AVAX Markets, https://www.coinbase.com/price/avalanche]; (HIGH) [Kraken AVAX Markets, https://trade.kraken.com/markets/kraken/avax/usd]; (HIGH) [OKX AVAX Markets, https://www.okx.com/markets/avax-usdt]; (HIGH) [Bybit AVAX Spot, https://www.bybit.com/trade/spot/AVAX/USDT]; (HIGH) [KuCoin AVAX Spot, https://www.kucoin.com/trade/AVAX-USDT]; (HIGH) [Gate.io AVAX Spot, https://www.gate.io/trade/AVAX_USDT]; (HIGH) [Crypto.com AVAX Spot, https://crypto.com/exchange/trade/AVAX_USDT]; (HIGH) [HTX AVAX Spot, https://www.htx.com/trade/avax_usdt]; (HIGH) [Bitget AVAX Spot, https://www.bitget.com/spot/AVAXUSDT]
+
+## Liquidity
+
+Liquidity Source: CEX (Centralized Exchanges); Major Liquidity Venue: Binance (Spot & Perpetual volume terbesar global); DEX: Trader Joe (AMM & Liquidity Book utama C-Chain), Benqi (Liquid Staking sAVAX liquidity), Aave V3 (Lending market liquidity), Curve (Stablecoin liquidity), GMX (Perpetual DEX liquidity); Bridge Liquidity: Avalanche Bridge (AB) Ethereum ↔ Avalanche, LayerZero (OFT/ONFT liquidity pools), Wormhole (NTT liquidity), Chainlink CCIP (Token pool liquidity); Status: High liquidity di CEX top-10; DEX liquidity terpusat di Trader Joe & Benqi; Bridge liquidity tersebar multi-bridge (HIGH) [DefiLlama Avalanche DEXes, https://defillama.com/chain/Avalanche]; (HIGH) [CoinGecko Markets AVAX, https://www.coingecko.com/en/coins/avalanche#markets]; (HIGH) [Trader Joe Analytics, https://traderjoexyz.com/analytics]; (HIGH) [Avalanche Bridge Stats, https://bridge.avax.network/]; (HIGH) [LayerZero Scan Avalanche, https://layerzeroscan.com/]; (HIGH) [Wormhole Scan Avalanche, https://wormholescan.io/]
+Sources: (HIGH) [DefiLlama Avalanche, https://defillama.com/chain/Avalanche]; (HIGH) [CoinGecko Markets AVAX, https://www.coingecko.com/en/coins/avalanche#markets]; (HIGH) [Trader Joe Analytics, https://traderjoexyz.com/analytics]; (HIGH) [Avalanche Bridge Stats, https://bridge.avax.network/]; (HIGH) [LayerZero Scan, https://layerzeroscan.com/]; (HIGH) [Wormhole Scan, https://wormholescan.io/]
+
+## Adoption Metrics
+
+Metric Name: TVL (Total Value Locked); Value: ~$850M USD (per November 2024, fluktuatif); Date: 2024-11; Sources: (HIGH) [DefiLlama Avalanche TVL, https://defillama.com/chain/Avalanche]; (HIGH) [Token Terminal Avalanche TVL, https://tokenterminal.com/terminal/projects/avalanche]
+
+Metric Name: Daily Active Addresses (C-Chain); Value: ~50.000 - 100.000 alamat unik/hari (rentang 30 hari); Date: 2024-11; Sources: (HIGH) [Avascan Daily Active Addresses, https://avascan.info/stats/daily-active-addresses]; (HIGH) [Token Terminal Daily Active Users, https://tokenterminal.com/terminal/projects/avalanche]
+
+Metric Name: Daily Transactions (C-Chain); Value: ~500.000 - 1.500.000 tx/hari (termasuk Subnet traffic via Teleporter); Date: 2024-11; Sources: (HIGH) [Avascan Daily Transactions, https://avascan.info/stats/daily-transactions]; (HIGH) [Token Terminal Transactions, https://tokenterminal.com/terminal/projects/avalanche]
+
+Metric Name: Total Wallets Created (C-Chain); Value: >12.000.000 alamat unik (cumulative); Date: 2024-11; Sources: (HIGH) [Avascan Total Addresses, https://avascan.info/stats/total-addresses]; (MEDIUM) [Snowtrace Stats, https://snowtrace.io/]
+
+Metric Name: Developer Count (Full-time + Part-time); Value: ~400+ developer aktif bulanan (Electric Capital 2024 report); Date: 2024-07 (Electric Capital annual); Sources: (HIGH) [Electric Capital Developer Report 2024, https://www.electriccapital.com/developer-report-2024]; (HIGH) [Messari Developer Metrics, https://messari.io/project/avalanche/developers]
+
+Metric Name: DEX Volume (30d C-Chain); Value: ~$1.5B - $3B USD (fluktuatif, Trader Joe dominan); Date: 2024-11; Sources: (HIGH) [DefiLlama Avalanche DEX Volume, https://defillama.com/chain/Avalanche]; (HIGH) [Trader Joe Volume, https://traderjoexyz.com/analytics]
+
+Metric Name: Bridge Volume (30d Aggregate); Value: ~$500M - $1.5B USD (multi-bridge: AB, LayerZero, Wormhole, CCIP); Date: 2024-11; Sources: (HIGH) [DefiLlama Bridges Avalanche, https://defillama.com/bridges?chain=Avalanche]; (HIGH) [LayerZero Scan Volume, https://layerzeroscan.com/]; (HIGH) [Wormhole Scan Volume, https://wormholescan.io/]
+
+Metric Name: Cross-chain Messages (Teleporter/AWM 30d); Value: ~100.000 - 500.000 pesan/bulan (Teleporter live sejak Sept 2023); Date: 2024-11; Sources: (HIGH) [Avascan Teleporter Stats, https://avascan.info/teleporter]; (MEDIUM) [Ava Labs Blog Teleporter, https://www.avalabs.org/blog/teleporter-mainnet]
+
+Metric Name: Validator Count (Primary Network); Value: ~1.300+ validator aktif (stake min 2.000 AVAX); Date: 2024-11; Sources: (HIGH) [Avascan Validators, https://avascan.info/validators]; (HIGH) [Staking Dashboard, https://stake.avax.network/]
+
+Metric Name: Staked AVAX; Value: ~250.000.000+ AVAX (sekitar 60%+ circulating supply); Date: 2024-11; Sources: (HIGH) [Staking Dashboard, https://stake.avax.network/]; (HIGH) [Avascan Staking Stats, https://avascan.info/stats/staking]
+
+Metric Name: Subnet Count (Live); Value: ~100+ Subnet live (termasuk testnet & production); Date: 2024-11; Sources: (HIGH) [Avascan Subnets List, https://avascan.info/blockchain/s]; (HIGH) [AvaCloud Subnets, https://avacloud.io/]
+
+Sources: (HIGH) [DefiLlama Avalanche, https://defillama.com/chain/Avalanche]; (HIGH) [Token Terminal Avalanche, https://tokenterminal.com/terminal/projects/avalanche]; (HIGH) [Avascan Stats, https://avascan.info/stats]; (HIGH) [Electric Capital Developer Report 2024, https://www.electriccapital.com/developer-report-2024]; (HIGH) [Staking Dashboard, https://stake.avax.network/]; (HIGH) [Avascan Subnets List, https://avascan.info/blockchain/s]
+
+## Market Share
+
+Metric: TVL Market Share (among all chains); Value: ~1.5% - 2.0% (peringkat ~Top 10-12); Date: 2024-11; Sources: (HIGH) [DefiLlama Chains Ranking, https://defillama.com/chains]
+
+Metric: DEX Volume Market Share; Value: ~1% - 2% (peringkat ~Top 10); Date: 2024-11; Sources: (HIGH) [DefiLlama DEX Volume Ranking, https://defillama.com/dexs]
+
+Metric: Daily Active Users Market Share; Value: ~1% - 3% (bergantung definisi chain vs rollup); Date: 2024-11; Sources: (HIGH) [Token Terminal Active Users Ranking, https://tokenterminal.com/terminal/metrics/active_users]
+
+Metric: Developer Market Share (Electric Capital); Value: ~2% - 3% total crypto developers (peringkat ~Top 8-10); Date: 2024-07; Sources: (HIGH) [Electric Capital Developer Report 2024, https://www.electriccapital.com/developer-report-2024]
+
+Metric: Staking Market Cap Rank; Value: ~Top 5-7 Proof-of-Stake chains by staked value; Date: 2024-11; Sources: (HIGH) [Staking Rewards Avalanche, https://www.stakingrewards.com/earn/avalanche/]; (HIGH) [Token Terminal Staking, https://tokenterminal.com/terminal/projects/avalanche]
+
+Metric: Market Cap Rank (AVAX); Value: ~Top 10-15 by market cap (fluktuatif); Date: 2024-11; Sources: (HIGH) [CoinGecko AVAX, https://www.coingecko.com/en/coins/avalanche]; (HIGH) [CoinMarketCap AVAX, https://coinmarketcap.com/currencies/avalanche/]
+
+Sources: (HIGH) [DefiLlama Chains, https://defillama.com/chains]; (HIGH) [Token Terminal Metrics, https://tokenterminal.com/terminal/metrics]; (HIGH) [Electric Capital Developer Report 2024, https://www.electriccapital.com/developer-report-2024]; (HIGH) [Staking Rewards, https://www.stakingrewards.com/earn/avalanche/]; (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/avalanche]; (HIGH) [CoinMarketCap, https://coinmarketcap.com/currencies/avalanche/]
+
+## Competitor Landscape
+
+Competitor: Ethereum; Category: Layer 1 / Settlement Layer; Difference: Lebih terdesentralisasi, TVL & developer terbesar, biaya gas tinggi, finality ~12-15 menit (L1) vs Avalanche <2 detik; Market Segment: General-purpose L1, DeFi utama, Institutional adoption via L2; Sources: (HIGH) [Messari Ethereum Profile, https://messari.io/project/ethereum]; (HIGH) [Token Terminal Ethereum, https://tokenterminal.com/terminal/projects/ethereum]; (HIGH) [DefiLlama Ethereum, https://defillama.com/chain/Ethereum]
+
+Competitor: Solana; Category: Layer 1 / High-throughput Monolithic; Difference: Single-chain high TPS (~2k-4k real), outage history, validator hardware tinggi, tidak native multi-chain seperti Subnet; Market Segment: Retail DeFi, Memecoin, Gaming, High-frequency trading; Sources: (HIGH) [Messari Solana Profile, https://messari.io/project/solana]; (HIGH) [Token Terminal Solana, https://tokenterminal.com/terminal/projects/solana]; (HIGH) [DefiLlama Solana, https://defillama.com/chain/Solana]
+
+Competitor: Polygon (Polygon PoS / AggLayer); Category: L2 / Sidechain / AggLayer; Difference: EVM-equivalent, AggLayer untuk unified liquidity, MATIC→POL tokenomics, lebih terpusat ke Ethereum settlement; Market Segment: Ethereum scaling, Gaming, Enterprise, ZK roadmap; Sources: (HIGH) [Messari Polygon Profile, https://messari.io/project/polygon]; (HIGH) [Token Terminal Polygon, https://tokenterminal.com/terminal/projects/polygon]; (HIGH) [DefiLlama Polygon, https://defillama.com/chain/Polygon]
+
+Competitor: BNB Chain; Category: Layer 1 / EVM-compatible; Difference: BNB token utility, Binance ecosystem integration, validator set permissioned (21 active), opBNB L2; Market Segment: Binance user base, DeFi, Gaming, High throughput low fee; Sources: (HIGH) [Messari BNB Chain Profile, https://messari.io/project/bnb-chain]; (HIGH) [Token Terminal BNB, https://tokenterminal.com/terminal/projects/bnb-chain]; (HIGH) [DefiLlama BNB Chain, https://defillama.com/chain/BSC]
+
+Competitor: Arbitrum; Category: L2 Optimistic Rollup; Difference: Ethereum settlement, Nitro stack, ARB governance token, Stylus (WASM), Orbit chains (L3); Market Segment: Ethereum DeFi scaling, Institutional via Orbit; Sources: (HIGH) [Messari Arbitrum Profile, https://messari.io/project/arbitrum]; (HIGH) [Token Terminal Arbitrum, https://tokenterminal.com/terminal/projects/arbitrum]; (HIGH) [DefiLlama Arbitrum, https://defillama.com/chain/Arbitrum]
+
+Competitor: Optimism; Category: L2 Optimistic Rollup; Difference: Ethereum settlement, OP Stack (modular), Superchain vision, Retroactive Public Goods Funding; Market Segment: Ethereum DeFi scaling, Public goods, L3 via OP Stack; Sources: (HIGH) [Messari Optimism Profile, https://messari.io/project/optimism]; (HIGH) [Token Terminal Optimism, https://tokenterminal.com/terminal/projects/optimism]; (HIGH) [DefiLlama Optimism, https://defillama.com/chain/Optimism]
+
+Competitor: Base; Category: L2 Optimistic Rollup (OP Stack); Difference: Coinbase incubation, no token (sekarang), massive retail onramp, Superchain member; Market Segment: Coinbase user onboarding, Consumer apps, DeFi; Sources: (HIGH) [Messari Base Profile, https://messari.io/project/base]; (HIGH) [Token Terminal Base, https://tokenterminal.com/terminal/projects/base]; (HIGH) [DefiLlama Base, https://defillama.com/chain/Base]
+
+Competitor: Polkadot; Category: Layer 0 / Relay Chain + Parachains; Difference: Shared security model, parachain auctions, XCMP cross-chain messaging, DOT bonding; Market Segment: App-specific chains (Parachains), Cross-chain composability, Enterprise; Sources: (HIGH) [Messari Polkadot Profile, https://messari.io/project/polkadot]; (HIGH) [Token Terminal Polkadot, https://tokenterminal.com/terminal/projects/polkadot]; (HIGH) [DefiLlama Polkadot, https://defillama.com/chain/Polkadot]
+
+Competitor: Cosmos; Category: Layer 0 / IBC Network of Sovereign Chains; Difference: Tendermint consensus, IBC standard, no shared security (Interchain Security opsional), ATOM tokenomics; Market Segment: Sovereign app-chains, IBC ecosystem, DeFi (Osmosis, etc); Sources: (HIGH) [Messari Cosmos Profile, https://messari.io/project/cosmos]; (HIGH) [Token Terminal Cosmos, https://tokenterminal.com/terminal/projects/cosmos]; (HIGH) [DefiLlama Cosmos, https://defillama.com/chain/Cosmos]
+
+Competitor: Near Protocol; Category: Layer 1 / Sharded (Nightshade); Difference: Sharding untuk scalability, NEAR token, Aurora (EVM), Chain Abstraction narrative, AI x Crypto; Market Segment: Consumer apps, Chain abstraction, AI agents, Gaming; Sources: (HIGH) [Messari Near Profile, https://messari.io/project/near]; (HIGH) [Token Terminal Near, https://tokenterminal.com/terminal/projects/near]; (HIGH) [DefiLlama Near, https://defillama.com/chain/Near]
+
+Sources: (HIGH) [Messari Competitors, https://messari.io/project/avalanche/competitors]; (HIGH) [Token Terminal Peers, https://tokenterminal.com/terminal/projects/avalanche/peers]; (HIGH) [DefiLlama Chains, https://defillama.com/chains]
+
+## Narrative Position
+
+Narrative: Modular Blockchain / App-specific Chains (Subnets); Status: Main Narrative; Evidence: Arsitektur Subnet (L1 sovran) adalah differentiator utama vs monolithic L1 dan L2 rollup; AvaCloud & HyperSDK mempermudah deployment; Enterprise (Deloitte, SK Planet, T. Rowe Price) & Gaming AAA (Shrapnel, Gunzilla, Nexon) adopt Subnet; Sources: (HIGH) [Docs Subnets, https://docs.avax.network/docs/learn/subnets]; (HIGH) [AvaCloud Site, https://avacloud.io/]; (HIGH) [HyperSDK Docs, https://docs.avax.network/docs/hypersdk]; (HIGH) [Ava Labs Blog Deloitte, https://www.avalabs.org/blog/deloitte-avalanche-disaster-recovery]; (HIGH) [Ava Labs Blog Nexon, https://www.avalabs.org/blog/nexon-maplestory-avalanche]
+
+Narrative: Interoperability / Cross-chain Messaging (Teleporter / AWM); Status: Main Narrative; Evidence: Teleporter (Sept 2023) menyediakan messaging generik cross-VM antar Subnet & Primary Network; BLS multi-sig verification trust-minimized; Komplementer dengan LayerZero, Wormhole, CCIP untuk eksternal; Sources: (HIGH) [Docs Teleporter, https://docs.avax.network/docs/specifications/teleporter]; (HIGH) [Ava Labs Blog Teleporter, https://www.avalabs.org/blog/teleporter-mainnet]; (HIGH) [Docs AWM, https://docs.avax.network/docs/specifications/avalanche-warp-messaging]
+
+Narrative: Enterprise Blockchain / Institutional Adoption; Status: Main Narrative; Evidence: AvaCloud managed service untuk enterprise; Klien: Deloitte (CAYG disaster recovery), SK Planet (UPTN 30M users), T. Rowe Price (fund admin tokenization); Compliance tools, gasless tx, fiat onramp built-in; Sources: (HIGH) [AvaCloud Site, https://avacloud.io/]; (HIGH) [Ava Labs Blog Deloitte, https://www.avalabs.org/blog/deloitte-avalanche-disaster-recovery]; (HIGH) [Ava Labs Blog SK Planet, https://www.avalabs.org/blog/sk-planet-avalanche]; (HIGH) [Ava Labs Blog T Rowe Price, https://www.avalabs.org/blog/t-rowe-price-avalanche]
+
+Narrative: Gaming / GameFi (HyperSDK High-performance VM); Status: Main Narrative; Evidence: HyperSDK (Rust VM framework) 10k+ TPS sub-second finality; Game AAA: Shrapnel (FPS), Off The Grid/Gunzilla (Battle Royale), MapleStory Universe/Nexon (MMORPG IP); Subnet per game untuk sovereignty; Sources: (HIGH) [GitHub HyperSDK, https://github.com/ava-labs/hypersdk]; (HIGH) [Ava Labs Blog HyperSDK, https://www.avalabs.org/blog/hypersdk]; (HIGH) [Shrapnel Site, https://shrapnel.com/]; (HIGH) [Gunzilla Games Site, https://gunz.io/]; (HIGH) [MapleStory Universe Site, https://maplestoryuniverse.nexon.com/]
+
+Narrative: DeFi Infrastructure (C-Chain EVM + Native DeFi); Status: Secondary Narrative (post-Rush consolidation); Evidence: Aave V3, Trader Joe, Benqi (sAVAX), GMX, Curve live; TVL turun dari puncak $11B (Nov 2021) ke ~$850M; Fokus bergeser ke sustainable yield & native protocols; Sources: (HIGH) [DefiLlama Avalanche TVL History, https://defillama.com/chain/Avalanche]; (HIGH) [Aave Avalanche, https://app.aave.com/markets/avalanche]; (HIGH) [Trader Joe, https://traderjoexyz.com/]; (HIGH) [Benqi, https://benqi.fi/]; (HIGH) [Messari Avalanche Report Q4 2023, https://messari.io/report/avalanche-ecosystem-report-q4-2023]
+
+Narrative: RWA (Real World Asset) Tokenization; Status: Emerging Narrative; Evidence: Avalanche Evergreen Subnet (institutional, KYC/AML built-in) dikembangkan untuk RWA; Partnership T. Rowe Price (fund admin), Deloitte (credentialing); Chainlink CCIP untuk cross-chain RWA movement; Sources: (HIGH) [Ava Labs Blog T Rowe Price, https://www.avalabs.org/blog/t-rowe-price-avalanche]; (HIGH) [Chainlink CCIP Avalanche, https://docs.chain.link/ccip/supported-networks]; (MEDIUM) [Avalanche Evergreen Subnet Docs, https://docs.avax.network/docs/evergreen-subnets]
+
+Narrative: Chain Abstraction / Unified UX; Status: Emerging Narrative; Evidence: Core Wallet multi-chain (Primary Network + Subnets + Ethereum + L2s + Bitcoin); Teleporter untuk seamless cross-subnet UX; AvaCloud gasless tx & fiat onramp mengabstraksi complexity; Sources: (HIGH) [Core Website, https://core.app/]; (HIGH) [Ava Labs Products Core, https://www.avalabs.org/products/core]; (HIGH) [Docs Teleporter, https://docs.avax.network/docs/specifications/teleporter]; (HIGH) [AvaCloud Site, https://avacloud.io/]
+
+Narrative: AI x Crypto / DeP

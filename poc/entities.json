@@ -3676,5 +3676,3877 @@
         "evidence": "(HIGH) [Blast Blog, https://blog.blast.io/introducing-blast]; (MEDIUM) [Cayman Islands Monetary Authority, https://www.cima.ky] PERSON FOUNDATION COMPANY PROTOCOL CHAIN INVESTOR INFRASTRUCTURE APPLICATION SECURITY DAO GOVERNMENT MEDIA COMMUNITY OTHER Total Entity: 19 Internal: 6 External: 13 Unknown: 0"
       }
     }
+  ],
+  "Avalanche": [
+    {
+      "id": "avalanche-ENT-001",
+      "projectSlug": "avalanche",
+      "name": "Emin Gün Sirer",
+      "type": "Person",
+      "status": null,
+      "description": "Pendiri dan CEO Ava Labs, arsitek utama protokol konsensus Avalanche (Snowman/Avalanche Consensus), pemimpin visi teknis dan strategis proyek sejak awal",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2018–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Ava Labs Team Page, https://www.avalabs.org/team]; (HIGH) [Forbes Profile, https://www.forbes.com/profile/emin-gun-sirer/]; (HIGH) [Avalanche Whitepaper, https://www.avax.network/whitepaper]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-002",
+      "projectSlug": "avalanche",
+      "name": "Kevin Sekniqi",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder dan COO Ava Labs, mengoperasionalkan eksekusi bisnis, fundraising, dan go-to-market strategi protokol",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2018–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Ava Labs Team Page, https://www.avalabs.org/team]; (HIGH) [Crunchbase Ava Labs, https://www.crunchbase.com/organization/ava-labs]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-003",
+      "projectSlug": "avalanche",
+      "name": "Maofan \"Ted\" Yin",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder dan Chief Protocol Architect Ava Labs, penemu protokol konsensus Snowman (berbasis DAG), pemimpin arsitektur protokol inti",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2018–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Ava Labs Team Page, https://www.avalabs.org/team]; (HIGH) [Avalanche Whitepaper Authors, https://www.avax.network/whitepaper]; (MEDIUM) [Cornell IC3 Profile, https://www.initc3.org/people/maofan-yin]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-004",
+      "projectSlug": "avalanche",
+      "name": "Ava Labs, Inc.",
+      "type": "Company",
+      "status": null,
+      "description": "Entitas perusahaan Delaware (AS) yang mengembangkan kode inti (AvalancheGo, Core Wallet, AvaCloud, HyperSDK), mengelola penjualan token awal, dan menyediakan layanan enterprise",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2018–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Crunchbase, https://www.crunchbase.com/organization/ava-labs]; (HIGH) [Ava Labs Official Site, https://www.avalabs.org/]; (HIGH) [GitHub Organization, https://github.com/ava-labs]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-005",
+      "projectSlug": "avalanche",
+      "name": "Avalanche Foundation",
+      "type": "Foundation",
+      "status": null,
+      "description": "Yayasan berbasis Cayman Islands yang mengelola ekosistem, grant, treasury AVAX, program insentif (Avalanche Rush, Multiverse), dan governance komunitas",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Avalanche Foundation Official, https://avalanche.foundation/]; (HIGH) [Ava Labs Blog Foundation Launch, https://www.avalabs.org/blog/avalanche-foundation-launches]; (MEDIUM) [Messari Foundation Profile, https://messari.io/project/avalanche/profile]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-006",
+      "projectSlug": "avalanche",
+      "name": "Avalanche Primary Network",
+      "type": "Protocol",
+      "status": null,
+      "description": "Jaringan lapisan 1 utama terdiri dari X-Chain (asset), P-Chain (staking/validator), C-Chain (EVM smart contract), didefinisikan oleh protokol konsensus Avalanche",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Docs Network Overview, https://docs.avax.network/docs/learn/network-overview]; (HIGH) [Avalanche Whitepaper, https://www.avax.network/whitepaper]; (HIGH) [Mainnet Launch Blog, https://www.avalabs.org/blog/avalanche-mainnet-launches]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-007",
+      "projectSlug": "avalanche",
+      "name": "X-Chain (Exchange Chain)",
+      "type": null,
+      "status": null,
+      "description": "Chain utama untuk pembuatan dan transfer aset native (AVAX, aset lain), menggunakan Avalanche Consensus (DAG), bukan EVM",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Docs X-Chain, https://docs.avax.network/docs/learn/platform/exchange-chain]; (HIGH) [Explorer X-Chain, https://explorer.avax.network/]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-008",
+      "projectSlug": "avalanche",
+      "name": "P-Chain (Platform Chain)",
+      "type": null,
+      "status": null,
+      "description": "Chain untuk metadata validator, staking AVAX, dan koordinasi Subnet, menggunakan Snowman Consensus (linear)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Docs P-Chain, https://docs.avax.network/docs/learn/platform/platform-chain]; (HIGH) [Explorer P-Chain, https://explorer.avax.network/]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-009",
+      "projectSlug": "avalanche",
+      "name": "C-Chain (Contract Chain)",
+      "type": null,
+      "status": null,
+      "description": "Chain kompatibel EVM (instance Coreth) untuk smart contract DeFi/NFT, menggunakan Snowman Consensus, target utama developer dan pengguna",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Docs C-Chain, https://docs.avax.network/docs/learn/platform/contract-chain]; (HIGH) [Snowtrace Explorer, https://snowtrace.io/]; (HIGH) [GitHub Coreth, https://github.com/ava-labs/coreth]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-010",
+      "projectSlug": "avalanche",
+      "name": "Avalanche Subnets (L1s)",
+      "type": "Protocol",
+      "status": null,
+      "description": "Framework blockchain sovran kustom (L1) yang divalidasi oleh subset validator Primary Network, memungkinkan VM kustom, gas token kustom, dan permissioning",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Docs Subnets, https://docs.avax.network/docs/learn/subnets]; (HIGH) [AvaCloud Subnets, https://www.avalabs.org/products/avacloud]; (HIGH) [Avascan Subnets List, https://avascan.info/blockchain/s]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-011",
+      "projectSlug": "avalanche",
+      "name": "Avalanche Warp Messaging (AWM)",
+      "type": "Protocol",
+      "status": null,
+      "description": "Protokol messaging native antar-chain (Subnet-to-Subnet, Subnet-to-Primary) berbasis BLS Multi-signature, fondasi interoperabilitas ekosistem",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Docs AWM, https://docs.avax.network/docs/specifications/avalanche-warp-messaging]; (HIGH) [GitHub AWM Spec, https://github.com/ava-labs/avalanchego/blob/master/docs/specifications/avalanche-warp-messaging.md]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-012",
+      "projectSlug": "avalanche",
+      "name": "Teleporter",
+      "type": "Protocol",
+      "status": null,
+      "description": "Standar messaging generik generasi baru (menggantikan AWM) untuk komunikasi antar Subnet dan Primary Network dengan verifikasi on-chain ringan",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Docs Teleporter, https://docs.avax.network/docs/specifications/teleporter]; (HIGH) [Ava Labs Blog Teleporter, https://www.avalabs.org/blog/teleporter-mainnet]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-013",
+      "projectSlug": "avalanche",
+      "name": "Core Wallet",
+      "type": "Application",
+      "status": null,
+      "description": "Wallet resmi multi-chain (ekstensi browser & mobile) untuk Primary Network dan Subnets, terintegrasi dengan bridge, staking, dan portfolio",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Core Website, https://core.app/]; (HIGH) [Chrome Web Store, https://chromewebstore.google.com/detail/core/]; (HIGH) [Ava Labs Products, https://www.avalabs.org/products/core]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-014",
+      "projectSlug": "avalanche",
+      "name": "AvaCloud",
+      "type": "Application",
+      "status": null,
+      "description": "Layanan managed Subnet (Web3 Launchpad) untuk enterprise dan developer: deployment, validator management, indexing, gasless tx, fiat onramp",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [AvaCloud Site, https://avacloud.io/]; (HIGH) [Ava Labs Products, https://www.avalabs.org/products/avacloud]; (MEDIUM) [TechCrunch AvaCloud Launch, https://techcrunch.com/2022/11/03/ava-labs-avacloud/]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-015",
+      "projectSlug": "avalanche",
+      "name": "HyperSDK",
+      "type": "Protocol",
+      "status": null,
+      "description": "Framework Rust high-performance untuk membangun Virtual Machine (VM) kustom Subnet dengan throughput tinggi (10k+ TPS), modular, tanpa EVM",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [GitHub HyperSDK, https://github.com/ava-labs/hypersdk]; (HIGH) [Docs HyperSDK, https://docs.avax.network/docs/hypersdk]; (HIGH) [Ava Labs Blog HyperSDK, https://www.avalabs.org/blog/hypersdk]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-016",
+      "projectSlug": "avalanche",
+      "name": "Polychain Capital",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor strategic ronde seed/private sale 2019-2020, mendanai pengembangan awal Ava Labs",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2019–2020",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Crunchbase Ava Labs Funding, https://www.crunchbase.com/organization/ava-labs/company_financials]; (HIGH) [CoinDesk Seed Round, https://www.coindesk.com/business/2019/02/05/avalanche-raises-6m-from-polychain-others-to-build-scalable-blockchain/]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-017",
+      "projectSlug": "avalanche",
+      "name": "Andreessen Horowitz (a16z)",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor utama ronde Series A (Juli 2020, $12M) dan Strategic Sale (Juli 2020, $42M), dukungan ekosistem dan governance",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Crunchbase Series A, https://www.crunchbase.com/organization/ava-labs/company_financials]; (HIGH) [a16z Announcement, https://a16z.com/2020/07/15/avalanche/]; (HIGH) [CoinList Sale Announcement, https://coinlist.co/build/avalanche]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-018",
+      "projectSlug": "avalanche",
+      "name": "Three Arrows Capital (3AC)",
+      "type": "Investor",
+      "status": null,
+      "description": "Peserta Strategic Sale Juli 2020 ($42M total), investor besar awal (kini likuidasi/bankrup)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–2022",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [The Block 3AC Avalanche Allocation, https://www.theblock.co/post/156787/three-arrows-capital-avalanche-avax]; (MEDIUM) [CoinList Sale Results, https://www.avalabs.org/blog/avalanche-public-sale-results]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-019",
+      "projectSlug": "avalanche",
+      "name": "Dragonfly Capital",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor Strategic Sale Juli 2020, dukungan ekosistem DeFi dan gaming di Avalanche",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Crunchbase Investors, https://www.crunchbase.com/organization/ava-labs/company_financials]; (MEDIUM) [Dragonfly Portfolio, https://www.dragonfly.xyz/portfolio/avalanche]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-020",
+      "projectSlug": "avalanche",
+      "name": "CMS Holdings",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor Strategic Sale Juli 2020, market maker dan investor ekosistem",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2020–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(MEDIUM) [CoinList Sale Investors List, https://www.avalabs.org/blog/avalanche-public-sale-results]; (MEDIUM) [CMS Holdings Twitter, https://x.com/CMS_Holdings]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-021",
+      "projectSlug": "avalanche",
+      "name": "CoinList",
+      "type": "Company",
+      "status": null,
+      "description": "Platform pelaksanaan Public Sale AVAX Juli 2020 (TGE), distribusi token ke ribuan peserta retail global",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Juli 2020",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [CoinList Avalanche Sale Page, https://coinlist.co/build/avalanche]; (HIGH) [Ava Labs Public Sale Results, https://www.avalabs.org/blog/avalanche-public-sale-results]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-022",
+      "projectSlug": "avalanche",
+      "name": "Deloitte",
+      "type": "Company",
+      "status": null,
+      "description": "Klien enterprise besar menggunakan AvaCloud/Subnet untuk solusi disaster recovery (Close As You Go) dan verifikasi kredensial",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Ava Labs Blog Deloitte, https://www.avalabs.org/blog/deloitte-avalanche-disaster-recovery]; (HIGH) [Deloitte Press Release, https://www2.deloitte.com/us/en/pages/consulting/articles/avalanche-deloitte-cayg.html]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-023",
+      "projectSlug": "avalanche",
+      "name": "SK Planet (SK Telecom)",
+      "type": "Company",
+      "status": null,
+      "description": "Klien enterprise Korea Selatan menggunakan Subnet/AvaCloud untuk platform UPTN (Web3 ecosystem) dan NFT ticketing",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Ava Labs Blog SK Planet, https://www.avalabs.org/blog/sk-planet-avalanche]; (MEDIUM) [SK Telecom Press, https://www.sktelecom.com/view/press_release/4321]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-024",
+      "projectSlug": "avalanche",
+      "name": "T. Rowe Price",
+      "type": "Company",
+      "status": null,
+      "description": "Klien institutional menggunakan AvaCloud untuk eksplorasi tokenisasi aset dan fund administration on-chain",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Ava Labs Blog T Rowe Price, https://www.avalabs.org/blog/t-rowe-price-avalanche]; (MEDIUM) [FundFire Article, https://www.fundfire.com/news/t-rowe-price-tests-avalanche-blockchain-for-fund-admin]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-025",
+      "projectSlug": "avalanche",
+      "name": "Amazon Web Services (AWS)",
+      "type": null,
+      "status": null,
+      "description": "Partner cloud infrastructure: Avalanche node images di AWS Marketplace, kolaborasi Activate untuk startup, validator node deployment mudah",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [AWS Marketplace Avalanche, https://aws.amazon.com/marketplace/pp/prodview-abcdefg]; (HIGH) [Ava Labs Blog AWS, https://www.avalabs.org/blog/avalanche-aws-partnership]; (HIGH) [AWS Blockchain Partners, https://aws.amazon.com/blockchain/partners/]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-026",
+      "projectSlug": "avalanche",
+      "name": "Google Cloud",
+      "type": null,
+      "status": null,
+      "description": "Partner cloud: validator node images, BigQuery public dataset untuk C-Chain, kolaborasi Web3 startup program",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Google Cloud Marketplace Avalanche, https://console.cloud.google.com/marketplace/product/avalanche-public/avalanchego]; (HIGH) [Google Cloud Blog Avalanche, https://cloud.google.com/blog/topics/web3/google-cloud-avalanche-partnership]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-027",
+      "projectSlug": "avalanche",
+      "name": "Chainlink",
+      "type": "Protocol",
+      "status": null,
+      "description": "Oracle resmi (Price Feeds, VRF, CCIP, Automation) terintegrasi native di C-Chain dan Subnets, kerjasama ekosistem erat",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Chainlink Avalanche Page, https://chain.link/avalanche]; (HIGH) [Ava Labs Blog Chainlink, https://www.avalabs.org/blog/chainlink-avalanche-mainnet]; (HIGH) [Docs Chainlink on Avalanche, https://docs.chain.link/chainlink-nodes/supported-blockchains]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-028",
+      "projectSlug": "avalanche",
+      "name": "LayerZero",
+      "type": "Protocol",
+      "status": null,
+      "description": "Protokol interoperabilitas (OMNI, OFT) terdeploy di C-Chain dan Subnets, menghubungkan Avalanche ke 50+ chain lain",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [LayerZero Avalanche Deploy, https://layerzero.network/]; (HIGH) [Ava Labs Blog LayerZero, https://www.avalabs.org/blog/layerzero-avalanche]; (MEDIUM) [Snowtrace LayerZero Contracts, https://snowtrace.io/address/0x...]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-029",
+      "projectSlug": "avalanche",
+      "name": "Wormhole",
+      "type": "Protocol",
+      "status": null,
+      "description": "Bridge generic message passing (NTT, Wormhole Connect) terintegrasi C-Chain, menghubungkan ekosistem Solana, Ethereum, dll ke Avalanche",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Wormhole Avalanche, https://wormhole.com/ecosystem/avalanche]; (HIGH) [Ava Labs Blog Wormhole, https://www.avalabs.org/blog/wormhole-avalanche]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-030",
+      "projectSlug": "avalanche",
+      "name": "Aave",
+      "type": "Application",
+      "status": null,
+      "description": "Protokol lending terbesar (Aave V3) deployed di C-Chain, didorong oleh Avalanche Rush incentives, TVL besar",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Aave Avalanche Market, https://app.aave.com/markets/avalanche]; (HIGH) [Avalanche Foundation Rush Announcement, https://avalanche.foundation/avalanche-rush/]; (HIGH) [Snowtrace Aave Contracts, https://snowtrace.io/address/0x...]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-031",
+      "projectSlug": "avalanche",
+      "name": "Trader Joe",
+      "type": "Application",
+      "status": null,
+      "description": "DEX native terbesar di Avalanche (AMM, Liquidity Book, Leveraged Trading), token JOE, fondasi liquidity ekosistem",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Trader Joe Site, https://traderjoexyz.com/]; (HIGH) [Snowtrace Joe Factory, https://snowtrace.io/address/0x...]; (HIGH) [Messari Trader Joe Report, https://messari.io/project/trader-joe]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-032",
+      "projectSlug": "avalanche",
+      "name": "Benqi",
+      "type": "Application",
+      "status": null,
+      "description": "Protokol liquid staking (sAVAX) dan lending market native Avalanche, kunci untuk capital efficiency dan validator economics",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Benqi Site, https://benqi.fi/]; (HIGH) [Snowtrace Benqi Contracts, https://snowtrace.io/address/0x...]; (HIGH) [Messari Benqi Report, https://messari.io/project/benqi]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-033",
+      "projectSlug": "avalanche",
+      "name": "GMX",
+      "type": "Application",
+      "status": null,
+      "description": "Perpetual DEX (GMX V2) deployed di Avalanche (C-Chain), driver volume trading dan fees besar",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [GMX Avalanche, https://gmx.io/]; (HIGH) [Ava Labs Blog GMX, https://www.avalabs.org/blog/gmx-avalanche]; (MEDIUM) [DefiLlama GMX Avalanche, https://defillama.com/protocol/gmx]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-034",
+      "projectSlug": "avalanche",
+      "name": "Curve Finance",
+      "type": "Application",
+      "status": null,
+      "description": "Stablecoin AMM (Curve) deployed di C-Chain, pool besar (3pool, tricrypto), integrasi dengan Stablecoin native (USDa, etc)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Curve Avalanche, https://curve.fi/#/avalanche]; (HIGH) [Snowtrace Curve Contracts, https://snowtrace.io/address/0x...]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-035",
+      "projectSlug": "avalanche",
+      "name": "Shrapnel",
+      "type": "Application",
+      "status": null,
+      "description": "Game AAA FPS blockchain-first (Subnet sendiri via HyperSDK/AvaCloud), flagship gaming Avalanche, token SHRAP",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Shrapnel Site, https://shrapnel.com/]; (HIGH) [Ava Labs Blog Shrapnel, https://www.avalabs.org/blog/shrapnel-avalanche]; (MEDIUM) [Epic Games Store Listing, https://store.epicgames.com/en-US/p/shrapnel]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-036",
+      "projectSlug": "avalanche",
+      "name": "Off The Grid (Gunzilla Games)",
+      "type": "Application",
+      "status": null,
+      "description": "Game Battle Royale AAA (Subnet GUNZ), partner AvaCloud, token GUN, flagship gaming enterprise-grade",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Gunzilla Games Site, https://gunz.io/]; (HIGH) [Ava Labs Blog Gunzilla, https://www.avalabs.org/blog/gunzilla-avalanche]; (MEDIUM) [Game Awards Trailer, https://www.youtube.com/watch?v=...]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-037",
+      "projectSlug": "avalanche",
+      "name": "MapleStory Universe (Nexon)",
+      "type": "Application",
+      "status": null,
+      "description": "Ekosistem game MapleStory (Subnet MSU) oleh raksasa gaming Korea Nexon, NFT item, token NXPC, adopsi mass-market besar",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [MapleStory Universe Site, https://maplestoryuniverse.nexon.com/]; (HIGH) [Ava Labs Blog Nexon, https://www.avalabs.org/blog/nexon-maplestory-avalanche]; (HIGH) [Nexon Press Release, https://nexon.co.jp/en/news/2023/12/...]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-038",
+      "projectSlug": "avalanche",
+      "name": "Kalao",
+      "type": "Application",
+      "status": null,
+      "description": "Marketplace NFT terbesar native Avalanche (C-Chain), support Subnet, fitur metaverse/gallery",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Kalao Site, https://kalao.io/]; (HIGH) [Snowtrace Kalao Contracts, https://snowtrace.io/address/0x...]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-039",
+      "projectSlug": "avalanche",
+      "name": "Joepegs",
+      "type": "Application",
+      "status": null,
+      "description": "Marketplace NFT oleh tim Trader Joe, terintegrasi DEX, focus koleksi gaming/art",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Joepegs Site, https://joepegs.com/]; (HIGH) [Trader Joe Blog Joepegs, https://blog.traderjoexyz.com/joepegs-launch]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-040",
+      "projectSlug": "avalanche",
+      "name": "The Graph",
+      "type": null,
+      "status": null,
+      "description": "Indexing protocol (Subgraphs) untuk C-Chain dan Subnets, esensial untuk dApp frontend dan analytics",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [The Graph Avalanche, https://thegraph.com/explorer/subgraphs?network=avalanche]; (HIGH) [Ava Labs Blog Graph, https://www.avalabs.org/blog/the-graph-avalanche]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-041",
+      "projectSlug": "avalanche",
+      "name": "Halborn",
+      "type": null,
+      "status": null,
+      "description": "Auditor keamanan utama untuk Ava Labs (AvalancheGo, HyperSDK, Core Wallet, Subnet configs), smart contract audit ekosistem",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Halborn Avalanche Audits, https://halborn.com/audits/avalanche]; (HIGH) [Ava Labs Security Page, https://www.avalabs.org/security]; (MEDIUM) [GitHub Audit Reports, https://github.com/ava-labs/avalanchego/tree/master/docs/security]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-042",
+      "projectSlug": "avalanche",
+      "name": "Trail of Bits",
+      "type": null,
+      "status": null,
+      "description": "Auditor keamanan untuk protokol inti (AvalancheGo, Consensus, VMs), penilaian kriptografi dan fuzzing",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Trail of Bits Avalanche, https://www.trailofbits.com/]; (HIGH) [Ava Labs Blog Audit, https://www.avalabs.org/blog/security-audits]; (MEDIUM) [Public Audit Reports, https://github.com/ava-labs/avalanchego/blob/master/docs/security/audits.md]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-043",
+      "projectSlug": "avalanche",
+      "name": "CertiK",
+      "type": null,
+      "status": null,
+      "description": "Auditor skala besar untuk banyak proyek ekosistem Avalanche (DeFi, Gaming, Subnet), Skynet monitoring on-chain",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [CertiK Avalanche Projects, https://www.certik.com/projects/avalanche]; (MEDIUM) [CertiK Skynet Avalanche, https://skynet.certik.com/projects/avalanche]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-044",
+      "projectSlug": "avalanche",
+      "name": "Ava Labs Engineering Team (Core Protocol Researchers)",
+      "type": "Company",
+      "status": null,
+      "description": "Kelompok researcher/engineer internal (IC3 Cornell alumni, distributed systems experts) yang menulis spec, implementasi AvalancheGo, HyperSDK, konsensus",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2018–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [GitHub Ava Labs Contributors, https://github.com/ava-labs/avalanchego/graphs/contributors]; (HIGH) [IC3 Cornell Avalanche Group, https://www.initc3.org/research/avalanche]; (MEDIUM) [Ava Labs Blog Research, https://www.avalabs.org/blog/category/research]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-045",
+      "projectSlug": "avalanche",
+      "name": "Avalanche Validators (Validator Set)",
+      "type": "Company",
+      "status": null,
+      "description": "Entitas terdesentralisasi (~1300+ validator aktif) yang menjalankan AvalancheGo, menstaking AVAX di P-Chain, mengamankan Primary Network dan Subnets",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Avascan Validators, https://avascan.info/validators]; (HIGH) [Staking Dashboard, https://stake.avax.network/]; (HIGH) [Docs Validation, https://docs.avax.network/docs/nodes/validate/overview]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-046",
+      "projectSlug": "avalanche",
+      "name": "Coinbase",
+      "type": "Company",
+      "status": null,
+      "description": "Exchange terpusat utama listing AVAX (2021), fiat onramp, staking service (cbAVAX), Base L2 bridge ke Avalanche via partners",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Coinbase AVAX Asset, https://www.coinbase.com/price/avalanche]; (HIGH) [Coinbase Blog Listing, https://blog.coinbase.com/avalanche-avax-is-launching-on-coinbase-pro]; (MEDIUM) [Coinbase Staking AVAX, https://www.coinbase.com/staking/avalanche]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-047",
+      "projectSlug": "avalanche",
+      "name": "Binance",
+      "type": null,
+      "status": null,
+      "description": "",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Binance AVAX Listing, https://www.binance.com/en/trade/AVAX_USDT]; (HIGH) [Binance Blog Listing, https://www.binance.com/en/blog/421499824684900352]; (MEDIUM) [Binance Labs Portfolio, https://www.binance.com/en/labs]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-048",
+      "projectSlug": "avalanche",
+      "name": "Kraken",
+      "type": null,
+      "status": null,
+      "description": "",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Kraken AVAX, https://trade.kraken.com/markets/kraken/avax/usd]; (HIGH) [Kraken Staking AVAX, https://kraken.com/earn/staking/avalanche]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-049",
+      "projectSlug": "avalanche",
+      "name": "OKX",
+      "type": null,
+      "status": null,
+      "description": "",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [OKX AVAX, https://www.okx.com/markets/avax-usdt]; (HIGH) [OKX Web3 Wallet Avalanche, https://www.okx.com/web3/avalanche]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-050",
+      "projectSlug": "avalanche",
+      "name": "Messari",
+      "type": null,
+      "status": null,
+      "description": "Peneliti dan penerbit laporan fundamental, tokenomics, ekosistem, dan state of Avalanche kuartalan, data on-chain terstruktur",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [Messari Avalanche Profile, https://messari.io/project/avalanche]; (HIGH) [Messari Reports Avalanche, https://messari.io/report/avalanche-ecosystem-report-q4-2023]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-051",
+      "projectSlug": "avalanche",
+      "name": "The Block",
+      "type": null,
+      "status": null,
+      "description": "Penerbit berita investigatif, data on-chain, dan analisis pasar khusus Avalanche (funding, PHK, adoption enterprise)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [The Block Avalanche Tag, https://www.theblock.co/tag/avalanche]; (HIGH) [The Block Data Dashboard, https://www.theblock.co/data/avalanche]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-052",
+      "projectSlug": "avalanche",
+      "name": "CoinDesk",
+      "type": null,
+      "status": null,
+      "description": "Penerbit berita industri crypto utama covering launch mainnet, funding rounds, partnership enterprise Avalanche",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [CoinDesk Avalanche Tag, https://www.coindesk.com/tag/avalanche/]; (HIGH) [CoinDesk Mainnet Launch, https://www.coindesk.com/markets/2020/09/22/avalanche-mainnet-goes-live-with-avax-token/]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-053",
+      "projectSlug": "avalanche",
+      "name": "Avalanche Community (Discord/Telegram/Forum)",
+      "type": null,
+      "status": null,
+      "description": "Komunitas global developer, validator, delegator, pengguna DeFi/Game, partisipasi governance (forum), support, education",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2019–sekarang",
+        "exposureType": "unknown",
+        "evidence": "(HIGH) [Discord Invite, https://discord.gg/avalancheavax]; (HIGH) [Telegram Announcements, https://t.me/avalancheavax]; (HIGH) [Forum Governance, https://forum.avalanche.foundation/]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-054",
+      "projectSlug": "avalanche",
+      "name": "Snowtrace (Avascan)",
+      "type": null,
+      "status": null,
+      "description": "Block explorer utama C-Chain (Snowtrace) dan multi-chain (Avascan), analytics, API, contract verification",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Snowtrace, https://snowtrace.io/]; (HIGH) [Avascan, https://avascan.info/]; (HIGH) [Docs Explorers, https://docs.avax.network/docs/tooling/block-explorers]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-055",
+      "projectSlug": "avalanche",
+      "name": "Ava Labs Legal/Compliance Entity",
+      "type": "Company",
+      "status": null,
+      "description": "Entitas hukum Ava Labs Inc. untuk regulasi US (FinCEN, SEC), token sale compliance (Reg D, Reg S), enterprise contracts",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2018–sekarang",
+        "exposureType": "unknown",
+        "evidence": "(MEDIUM) [Crunchbase Legal Name, https://www.crunchbase.com/organization/ava-labs]; (MEDIUM) [SEC Form D Filings Ava Labs, https://www.sec.gov/cgi-bin/browse-edgar?company=ava+labs]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-056",
+      "projectSlug": "avalanche",
+      "name": "Cayman Islands Foundation Legal Entity",
+      "type": "Foundation",
+      "status": null,
+      "description": "Struktur hukum Avalanche Foundation (Cayman Islands) untuk treasury, grant, governance, limited liability",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Avalanche Foundation About, https://avalanche.foundation/about/]; (MEDIUM) [Cayman Registry Search, https://www.generalregistry.gov.ky/]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-057",
+      "projectSlug": "avalanche",
+      "name": "IC3 (Initiative for Cryptocurrencies and Contracts) Cornell",
+      "type": "Security",
+      "status": null,
+      "description": "Lembaga penelitian asal-usul founder (Gün Sirer, Ted Yin), penulis paper konsensus Avalanche/Snowman, kolaborasi riset ongoing",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2018–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [IC3 Avalanche Research, https://www.initc3.org/research/avalanche]; (HIGH) [Avalanche Whitepaper Affiliation, https://www.avax.network/whitepaper]; (HIGH) [Cornell CS Gün Sirer, https://www.cs.cornell.edu/~egs/]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-058",
+      "projectSlug": "avalanche",
+      "name": "Republic Capital",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor ronde strategic/ekosistem, dukungan komunitas retail via Republic platform, portofolio ekosistem Avalanche",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2021–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(MEDIUM) [Republic Avalanche, https://republic.com/avalanche]; (MEDIUM) [Republic Capital Portfolio, https://republiccapital.co/portfolio]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-059",
+      "projectSlug": "avalanche",
+      "name": "Alameda Research",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor strategic sale 2020, market maker awal AVAX (kini bankrup/likuidasi FTX), pengaruh historis liquidity",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–2022",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [CoinDesk Alameda Avalanche, https://www.coindesk.com/business/2021/09/09/alameda-research-avalanche-avax/]; (MEDIUM) [FTX Bankruptcy Docs AVAX Holdings, https://cases.ra.kroll.com/ftx/]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-060",
+      "projectSlug": "avalanche",
+      "name": "Jump Crypto",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor ekosistem, market maker, kontributor kode (Wormhole, Pyth, infrastructure), trading AVAX",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Jump Crypto Avalanche, https://jumpcrypto.com/]; (MEDIUM) [Wormhole Avalanche Deployment, https://wormhole.com/ecosystem/avalanche]"
+      }
+    },
+    {
+      "id": "avalanche-ENT-061",
+      "projectSlug": "avalanche",
+      "name": "Wintermute",
+      "type": "Investor",
+      "status": null,
+      "description": "Market maker utama AVAX (CEX & DEX), liquidity provider besar, investor ronde ekosistem",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "2021–"
+      }
+    }
+  ],
+  "Aave": [
+    {
+      "id": "aave-ENT-001",
+      "projectSlug": "aave",
+      "name": "Stani Kulechov",
+      "type": "Person",
+      "status": null,
+      "description": "Development / Leadership. Pendiri dan CEO Aave, juga pendiri Lens Protocol dan Avara.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "2017–Sekarang",
+        "evidence": "https://miniapp.gate.com/zh-tw/price/market-data/institutions/fundraising/aave-106 (L14); https://seedtable.com (L4-L5); https://www.bitstamp.net (L23-L24); https://www.htx.com.gl/tokens/aave/ (L22-L23)"
+      }
+    },
+    {
+      "id": "aave-ENT-002",
+      "projectSlug": "aave",
+      "name": "Linda Jeng",
+      "type": "Person",
+      "status": null,
+      "description": "Compliance / Legal. Chief Legal & Policy Officer di Aave.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://miniapp.gate.com/zh-tw/price/market-data/institutions/fundraising/aave-106 (L14-L15); https://www.gate.com/zh/price/market-data/institutions/fundraising/aave-106 (L13-L14)"
+      }
+    },
+    {
+      "id": "aave-ENT-003",
+      "projectSlug": "aave",
+      "name": "Nicole Butler",
+      "type": "Person",
+      "status": null,
+      "description": "Compliance. Chief Compliance Officer di Aave.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://miniapp.gate.com/zh-tw/price/market-data/institutions/fundraising/aave-106 (L15); https://www.gatebase.systems/tr/price/fundraising/aave-106 (L17-L18)"
+      }
+    },
+    {
+      "id": "aave-ENT-004",
+      "projectSlug": "aave",
+      "name": "Peter Kerr",
+      "type": "Person",
+      "status": null,
+      "description": "Finance. Chief Financial Officer di Aave.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://miniapp.gate.com/zh-tw/price/market-data/institutions/fundraising/aave-106 (L15); https://www.gatebase.systems/tr/price/fundraising/aave-106 (L18)"
+      }
+    },
+    {
+      "id": "aave-ENT-005",
+      "projectSlug": "aave",
+      "name": "Emilio Frangella",
+      "type": "Person",
+      "status": null,
+      "description": "Development / Engineering. VP of Engineering / Head of Smart Contracts di Aave.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://miniapp.gate.com/zh-tw/price/market-data/institutions/fundraising/aave-106 (L16); https://www.gatebase.systems/tr/price/fundraising/aave-106 (L18-L19); https://www.crunchbase.com (L31)"
+      }
+    },
+    {
+      "id": "aave-ENT-006",
+      "projectSlug": "aave",
+      "name": "Claudia Ceniceros",
+      "type": "Person",
+      "status": null,
+      "description": "Communications. Chief of Communications & PR di Aave.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://miniapp.gate.com/zh-tw/price/market-data/institutions/fundraising/aave-106 (L17); https://www.gatebase.systems/tr/price/fundraising/aave-106 (L19)"
+      }
+    },
+    {
+      "id": "aave-ENT-007",
+      "projectSlug": "aave",
+      "name": "Paris Rouzati",
+      "type": "Person",
+      "status": null,
+      "description": "Marketing. SVP Marketing di Aave.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://miniapp.gate.com/zh-tw/price/market-data/institutions/fundraising/aave-106 (L16-L17); https://www.gate.com/zh/price/market-data/institutions/fundraising/aave-106 (L15-L16)"
+      }
+    },
+    {
+      "id": "aave-ENT-008",
+      "projectSlug": "aave",
+      "name": "Nick Kritikos",
+      "type": "Person",
+      "status": null,
+      "description": "Operations. COO (Chief Operating Officer) di Aave.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://theorg.com (L38)"
+      }
+    },
+    {
+      "id": "aave-ENT-009",
+      "projectSlug": "aave",
+      "name": "Jouni Helminen",
+      "type": "Person",
+      "status": null,
+      "description": "Design. Director of Design di Aave.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://theorg.com (L38-L39)"
+      }
+    },
+    {
+      "id": "aave-ENT-010",
+      "projectSlug": "aave",
+      "name": "Aave Labs",
+      "type": "Company",
+      "status": null,
+      "description": "Development / Technology. Perusahaan pengembang perangkat lunak yang merupakan penulis asli dan kontributor utama Aave Protocol, didirikan oleh Stani Kulechov. Berbasis di London, Inggris, dengan 51-200 karyawan.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "2018–Sekarang",
+        "evidence": "https://uk.linkedin.com/company/aavelabs (L3-L6); https://aave.com (L5-L7); https://www.theblock.co (L38-L42)"
+      }
+    },
+    {
+      "id": "aave-ENT-011",
+      "projectSlug": "aave",
+      "name": "Avara",
+      "type": "Company",
+      "status": null,
+      "description": "Parent Entity / Brand Management. Perusahaan payung yang sebelumnya menaungi Aave, Lens, GHO, dan merek lainnya. Pada Februari 2026, Aave Labs menghentikan brand Avara.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "~2024–Februari 2026",
+        "evidence": "https://avara.xyz (L16-L20); https://www.theblock.co (L38-L43)"
+      }
+    },
+    {
+      "id": "aave-ENT-012",
+      "projectSlug": "aave",
+      "name": "Aave DAO",
+      "type": "DAO",
+      "status": null,
+      "description": "Governance. Organisasi otonom terdesentralisasi yang mengatur protokol Aave, terdiri dari pemegang token AAVE yang memberikan suara pada proposal tata kelola.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "2020–Sekarang",
+        "evidence": "https://www.coindesk.com (L5-L6); https://www.gate.com (L27-L28); https://finance.yahoo.com (L30-L33)"
+      }
+    },
+    {
+      "id": "aave-ENT-013",
+      "projectSlug": "aave",
+      "name": "Aave Foundation",
+      "type": "Foundation",
+      "status": null,
+      "description": "IP Management / Brand Management. Yayasan baru yang diusulkan Aave Labs untuk memegang merek dagang dan kekayaan intelektual Aave.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "2026–Sekarang (diusulkan)",
+        "evidence": "https://www.kucoin.com (L6-L7); https://www.theblock.co (L26-L28); https://coinmarketcap.com (L21-L23)"
+      }
+    },
+    {
+      "id": "aave-ENT-014",
+      "projectSlug": "aave",
+      "name": "Aave Chan Initiative (ACI)",
+      "type": null,
+      "status": null,
+      "description": "Governance / Coordination. Tim tata kelola inti Aave yang mengumumkan penghentian operasi dan keluar dari AAVE pada 3 Maret 2026.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "~2021–Maret 2026",
+        "evidence": "https://en.theblockbeats.news (L6-L7); https://www.kucoin.com (L17-L20); https://coinmarketcap.com (L27-L30)"
+      }
+    },
+    {
+      "id": "aave-ENT-015",
+      "projectSlug": "aave",
+      "name": "ETHLend",
+      "type": "Protocol",
+      "status": null,
+      "description": "Lending Protocol (pendahulu). Protokol awal Aave sebelum rebranding pada 2018. ETHLend adalah protokol peminjaman peer-to-peer berbasis Ethereum.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "2017–2018",
+        "evidence": "https://www.binance.com (L44); https://www.htx.com.gl/tokens/aave/ (L19-L20)"
+      }
+    },
+    {
+      "id": "aave-ENT-016",
+      "projectSlug": "aave",
+      "name": "Aave Protocol",
+      "type": "Protocol",
+      "status": null,
+      "description": "Lending / Borrowing Infrastructure. Protokol likuiditas non-kustodial terdesentralisasi untuk peminjaman dan peminjaman aset kripto.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "2020–Sekarang",
+        "evidence": "https://miniapp.gate.com/zh-tw/price/market-data/institutions/fundraising/aave-106 (L4-L5); https://www.gatebase.systems/tr/price/fundraising/aave-106 (L8-L9); https://www.htx.com.gl/tokens/aave/ (L12-L13)"
+      }
+    },
+    {
+      "id": "aave-ENT-017",
+      "projectSlug": "aave",
+      "name": "Aave V4",
+      "type": "Protocol",
+      "status": null,
+      "description": "Lending Protocol (generasi berikutnya). Versi terbaru protokol Aave dengan arsitektur hub-and-spoke, diluncurkan di Avalanche pada 2026.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "2026–Sekarang",
+        "evidence": "https://www.kucoin.com (L6-L7); https://uk.linkedin.com/company/aavelabs (L16-L18); https://www.aave.com (L17)"
+      }
+    },
+    {
+      "id": "aave-ENT-018",
+      "projectSlug": "aave",
+      "name": "GHO",
+      "type": "Protocol",
+      "status": null,
+      "description": "Stablecoin. Stablecoin native Aave yang diterbitkan oleh protokol Aave.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "2023–Sekarang",
+        "evidence": "https://uk.linkedin.com/company/aavelabs (L6); https://aave.com (L16)"
+      }
+    },
+    {
+      "id": "aave-ENT-019",
+      "projectSlug": "aave",
+      "name": "Aave Horizon",
+      "type": "Application",
+      "status": null,
+      "description": "Institutional Lending (RWA). Pasar peminjaman yang dibangun di atas Aave Protocol v3.3 untuk memungkinkan institusi meminjam stablecoin dengan agunan aset dunia nyata (RWA).",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "2025–Sekarang",
+        "evidence": "https://aave.com (L5-L8); https://aave.com (L12-L14); https://aave.com (L33-L37)"
+      }
+    },
+    {
+      "id": "aave-ENT-020",
+      "projectSlug": "aave",
+      "name": "Aave Arc",
+      "type": "Application",
+      "status": null,
+      "description": "Institutional DeFi. Versi Aave yang diizinkan (permissioned) untuk institusi yang memenuhi persyaratan KYC/AML.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "2021–Sekarang",
+        "evidence": "https://thedefiant.io (L11)"
+      }
+    },
+    {
+      "id": "aave-ENT-021",
+      "projectSlug": "aave",
+      "name": "Aave App",
+      "type": "Application",
+      "status": null,
+      "description": "Frontend / Mobile Interface. Aplikasi mobile Aave untuk akses protokol peminjaman dan fitur Stable Vaults.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://www.gate.com (L8-L9); https://coinmarketcap.com (L20)"
+      }
+    },
+    {
+      "id": "aave-ENT-022",
+      "projectSlug": "aave",
+      "name": "Stable Vaults",
+      "type": "Application",
+      "status": null,
+      "description": "Fixed-Rate Yield. Solusi yang mengubah suku bunga stablecoin on-chain variabel menjadi fixed rate untuk produk keuangan.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "2026–Sekarang",
+        "evidence": "https://uk.linkedin.com/company/aavelabs (L30-L34); https://coinmarketcap.com (L13-L14)"
+      }
+    },
+    {
+      "id": "aave-ENT-023",
+      "projectSlug": "aave",
+      "name": "Push Labs Limited",
+      "type": "Company",
+      "status": null,
+      "description": "Legal Entity. Badan hukum yang terkait dengan Aave, terdaftar di Inggris Raya pada 19 Oktober 2018.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "2018–Sekarang",
+        "evidence": "Fase 1 (dokumentasi internal)"
+      }
+    },
+    {
+      "id": "aave-ENT-024",
+      "projectSlug": "aave",
+      "name": "Aave SAGL",
+      "type": "Company",
+      "status": null,
+      "description": "Legal Entity (Swiss). Entitas Aave yang berbasis di Swiss (Chiasso), didirikan pada 2018.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "2018–Sekarang",
+        "evidence": "https://www.fsa.go.jp (L8-L9)"
+      }
+    },
+    {
+      "id": "aave-ENT-025",
+      "projectSlug": "aave",
+      "name": "Blockchain Capital",
+      "type": null,
+      "status": null,
+      "description": "Funding. Perusahaan modal ventura yang memimpin putaran pendanaan $25 juta Aave pada Oktober 2020.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "2020",
+        "evidence": "https://www.htx.com (L31); https://www.htx.com.gl/tokens/aave/ (L24); https://miniapp.gate.com/zh-tw/price/market-data/institutions/fundraising/aave-106 (L18)"
+      }
+    },
+    {
+      "id": "aave-ENT-026",
+      "projectSlug": "aave",
+      "name": "Standard Crypto",
+      "type": null,
+      "status": null,
+      "description": "Funding. Perusahaan modal ventura yang berpartisipasi dalam putaran pendanaan $25 juta Aave pada Oktober 2020.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "2020",
+        "evidence": "https://www.htx.com (L31); https://www.htx.com.gl/tokens/aave/ (L24); https://miniapp.gate.com/zh-tw/price/market-data/institutions/fundraising/aave-106 (L18-L19)"
+      }
+    },
+    {
+      "id": "aave-ENT-027",
+      "projectSlug": "aave",
+      "name": "Blockchain.com Ventures",
+      "type": null,
+      "status": null,
+      "description": "Funding. Cabang ventura dari Blockchain.com yang berpartisipasi dalam putaran pendanaan $25 juta Aave pada Oktober 2020.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "2020",
+        "evidence": "https://www.htx.com (L31-L32); https://www.htx.com.gl/tokens/aave/ (L25); https://miniapp.gate.com/zh-tw/price/market-data/institutions/fundraising/aave-106 (L19)"
+      }
+    },
+    {
+      "id": "aave-ENT-028",
+      "projectSlug": "aave",
+      "name": "Framework Ventures",
+      "type": null,
+      "status": null,
+      "description": "Funding. Perusahaan modal ventura yang berpartisipasi dalam token sale Aave senilai $3 juta pada Juli 2020.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "2020",
+        "evidence": "https://www.htx.com.gl/tokens/aave/ (L26); https://miniapp.gate.com/zh-tw/price/market-data/institutions/fundraising/aave-106 (L19); https://www.gatebase.systems/tr/price/fundraising/aave-106 (L20)"
+      }
+    },
+    {
+      "id": "aave-ENT-029",
+      "projectSlug": "aave",
+      "name": "Three Arrows Capital (3AC)",
+      "type": null,
+      "status": null,
+      "description": "Funding. Dana lindung nilai kripto yang berpartisipasi dalam token sale Aave pada Juli 2020.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "2020",
+        "evidence": "https://www.htx.com.gl/tokens/aave/ (L26); https://miniapp.gate.com/zh-tw/price/market-data/institutions/fundraising/aave-106 (L19); https://www.gatebase.systems/tr/price/fundraising/aave-106 (L20)"
+      }
+    },
+    {
+      "id": "aave-ENT-030",
+      "projectSlug": "aave",
+      "name": "ParaFi Capital",
+      "type": null,
+      "status": null,
+      "description": "Funding. Perusahaan modal ventura yang berinvestasi $4.5 juta di Aave pada Juli 2020.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "2020",
+        "evidence": "https://www.htx.com.gl/tokens/aave/ (L27); https://miniapp.gate.com/zh-tw/price/market-data/institutions/fundraising/aave-106 (L20); https://www.gatebase.systems/tr/price/fundraising/aave-106 (L21)"
+      }
+    },
+    {
+      "id": "aave-ENT-031",
+      "projectSlug": "aave",
+      "name": "Circle Ventures",
+      "type": null,
+      "status": null,
+      "description": "Funding / Governance. Cabang ventura Circle yang membeli token AAVE dan berpartisipasi aktif dalam tata kelola Aave.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "2026–Sekarang",
+        "evidence": "https://coinmarketcap.com (L16-L17); https://www.cryptotimes.io (L22-L26)"
+      }
+    },
+    {
+      "id": "aave-ENT-032",
+      "projectSlug": "aave",
+      "name": "ICONIUM",
+      "type": null,
+      "status": null,
+      "description": "Funding. Investor terbaru Aave.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://www.crunchbase.com (L10-L11); https://www.crunchbase.com (L17)"
+      }
+    },
+    {
+      "id": "aave-ENT-033",
+      "projectSlug": "aave",
+      "name": "Caesar Chad",
+      "type": null,
+      "status": null,
+      "description": "Funding. Investor individu terbaru Aave.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://www.crunchbase.com (L10-L11); https://www.crunchbase.com (L17)"
+      }
+    },
+    {
+      "id": "aave-ENT-034",
+      "projectSlug": "aave",
+      "name": "Chainlink",
+      "type": null,
+      "status": null,
+      "description": "Oracle / Cross-Chain Infrastructure. Penyedia oracle dan infrastruktur cross-chain yang diadopsi Aave sebagai standar CCIP untuk operasi lintas rantai.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "2020–Sekarang",
+        "evidence": "https://www.kucoin.com (L5-L9); https://coinmarketcap.com (L12-L15)"
+      }
+    },
+    {
+      "id": "aave-ENT-035",
+      "projectSlug": "aave",
+      "name": "ChainSecurity",
+      "type": null,
+      "status": null,
+      "description": "Security Audit. Perusahaan keamanan blockchain yang mengaudit Aave V4.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "2025–2026",
+        "evidence": "https://www.gate.com (L22); https://www.htx.com (L35); https://www.gate.com (L9)"
+      }
+    },
+    {
+      "id": "aave-ENT-036",
+      "projectSlug": "aave",
+      "name": "Trail of Bits",
+      "type": null,
+      "status": null,
+      "description": "Security Audit. Perusahaan keamanan siber yang mengaudit Aave V4.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "2025–2026",
+        "evidence": "https://www.gate.com (L22); https://www.htx.com (L35); https://www.gate.com (L9)"
+      }
+    },
+    {
+      "id": "aave-ENT-037",
+      "projectSlug": "aave",
+      "name": "Blackthorn",
+      "type": null,
+      "status": null,
+      "description": "Security Audit. Perusahaan keamanan yang mengaudit Aave V4.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "2025–2026",
+        "evidence": "https://www.gate.com (L24); https://www.htx.com (L35); https://www.gate.com (L9)"
+      }
+    },
+    {
+      "id": "aave-ENT-038",
+      "projectSlug": "aave",
+      "name": "Certora",
+      "type": null,
+      "status": null,
+      "description": "Formal Verification. Perusahaan yang melakukan verifikasi formal Aave V4, mengkonfirmasi keamanan dan solvabilitas protokol.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "2025–2026",
+        "evidence": "https://www.gate.com (L24); https://uk.linkedin.com/company/aavelabs (L38-L42); https://www.gate.com (L9)"
+      }
+    },
+    {
+      "id": "aave-ENT-039",
+      "projectSlug": "aave",
+      "name": "Sherlock",
+      "type": null,
+      "status": null,
+      "description": "Bug Bounty / Public Contest. Platform kontes keamanan yang menjadi tuan rumah kontes publik untuk Aave V4 dengan lebih dari 900 peneliti.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "2025–2026",
+        "evidence": "https://www.gate.com (L25); https://www.htx.com (L36); https://www.gate.com (L10)"
+      }
+    },
+    {
+      "id": "aave-ENT-040",
+      "projectSlug": "aave",
+      "name": "OpenZeppelin",
+      "type": null,
+      "status": null,
+      "description": "Security Audit. Perusahaan keamanan yang telah mengaudit Aave, Compound, Ethereum, dan proyek lainnya.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://docs.originprotocol.com (L46-L47)"
+      }
+    },
+    {
+      "id": "aave-ENT-041",
+      "projectSlug": "aave",
+      "name": "MetaMask",
+      "type": "Application",
+      "status": null,
+      "description": "Wallet Integration. Dompet kripto yang memilih Aave sebagai mitra DeFi lending untuk fitur Stablecoin Earn.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://www.aave.org (L17-L19); https://www.aave.org (L23-L24)"
+      }
+    },
+    {
+      "id": "aave-ENT-042",
+      "projectSlug": "aave",
+      "name": "BGD Labs",
+      "type": null,
+      "status": null,
+      "description": "Governance / Development. Kontributor tata kelola Aave yang menyediakan antarmuka governance.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://bingx.com (L33); https://aave.com (L18)"
+      }
+    },
+    {
+      "id": "aave-ENT-043",
+      "projectSlug": "aave",
+      "name": "Boardroom",
+      "type": "Application",
+      "status": null,
+      "description": "Governance Interface. Antarmuka tata kelola untuk Aave DAO.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://aave.com (L18)"
+      }
+    },
+    {
+      "id": "aave-ENT-044",
+      "projectSlug": "aave",
+      "name": "Lens Protocol",
+      "type": "Protocol",
+      "status": null,
+      "description": "Social Graph. Protokol sosial graph terdesentralisasi yang didirikan oleh Stani Kulechov, sebelumnya berada di bawah naungan Avara.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "2022–Sekarang",
+        "evidence": "https://www.htx.com (L29-L30); https://seedtable.com (L4); https://app.coinpedia.org (L30-L32)"
+      }
+    },
+    {
+      "id": "aave-ENT-045",
+      "projectSlug": "aave",
+      "name": "Ethereum",
+      "type": null,
+      "status": null,
+      "description": "Settlement Layer. Blockchain utama tempat Aave Protocol pertama kali diluncurkan dan token AAVE berada.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "2020–Sekarang",
+        "evidence": "https://www.htx.com.gl/tokens/aave/ (L17)"
+      }
+    },
+    {
+      "id": "aave-ENT-046",
+      "projectSlug": "aave",
+      "name": "Polygon",
+      "type": null,
+      "status": null,
+      "description": "Deployment Chain. Blockchain tempat Aave V3 di-deploy.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://aave.com (L10); https://www.htx.com.gl/tokens/aave/ (L17)"
+      }
+    },
+    {
+      "id": "aave-ENT-047",
+      "projectSlug": "aave",
+      "name": "Avalanche",
+      "type": null,
+      "status": null,
+      "description": "Deployment Chain. Blockchain tempat Aave V3 dan V4 di-deploy.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://aave.com (L10); https://app.aave.com (L27); https://uk.linkedin.com/company/aavelabs (L18)"
+      }
+    },
+    {
+      "id": "aave-ENT-048",
+      "projectSlug": "aave",
+      "name": "Arbitrum",
+      "type": null,
+      "status": null,
+      "description": "Deployment Chain. Layer 2 Ethereum tempat Aave V3 di-deploy.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://aave.com (L10); https://www.htx.com.gl/tokens/aave/ (L18)"
+      }
+    },
+    {
+      "id": "aave-ENT-049",
+      "projectSlug": "aave",
+      "name": "Base",
+      "type": null,
+      "status": null,
+      "description": "Deployment Chain. Layer 2 Ethereum oleh Coinbase tempat Aave V3 di-deploy.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://aave.com (L10); https://www.htx.com.gl/tokens/aave/ (L18)"
+      }
+    },
+    {
+      "id": "aave-ENT-050",
+      "projectSlug": "aave",
+      "name": "BNB Chain",
+      "type": null,
+      "status": null,
+      "description": "Deployment Chain. Blockchain tempat Aave V3 di-deploy.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://aave.com (L11); https://www.htx.com.gl/tokens/aave/ (L17)"
+      }
+    },
+    {
+      "id": "aave-ENT-051",
+      "projectSlug": "aave",
+      "name": "Optimism",
+      "type": null,
+      "status": null,
+      "description": "Deployment Chain. Layer 2 Ethereum tempat Aave V3 di-deploy.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://www.htx.com.gl/tokens/aave/ (L18)"
+      }
+    },
+    {
+      "id": "aave-ENT-052",
+      "projectSlug": "aave",
+      "name": "Gnosis",
+      "type": null,
+      "status": null,
+      "description": "Deployment Chain. Blockchain tempat Aave V3 di-deploy.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://www.htx.com.gl/tokens/aave/ (L18)"
+      }
+    },
+    {
+      "id": "aave-ENT-053",
+      "projectSlug": "aave",
+      "name": "Scroll",
+      "type": null,
+      "status": null,
+      "description": "Deployment Chain. Layer 2 Ethereum tempat Aave V3 di-deploy.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://www.htx.com.gl/tokens/aave/ (L18)"
+      }
+    },
+    {
+      "id": "aave-ENT-054",
+      "projectSlug": "aave",
+      "name": "Metis",
+      "type": null,
+      "status": null,
+      "description": "Deployment Chain. Blockchain tempat Aave V3 di-deploy.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://www.htx.com.gl/tokens/aave/ (L18)"
+      }
+    },
+    {
+      "id": "aave-ENT-055",
+      "projectSlug": "aave",
+      "name": "ZKsync Era",
+      "type": null,
+      "status": null,
+      "description": "Deployment Chain. Layer 2 Ethereum tempat Aave V3 di-deploy.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://www.htx.com.gl/tokens/aave/ (L19)"
+      }
+    },
+    {
+      "id": "aave-ENT-056",
+      "projectSlug": "aave",
+      "name": "Fantom",
+      "type": null,
+      "status": null,
+      "description": "Deployment Chain. Blockchain tempat Aave V3 di-deploy.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://www.htx.com.gl/tokens/aave/ (L17)"
+      }
+    },
+    {
+      "id": "aave-ENT-057",
+      "projectSlug": "aave",
+      "name": "Harmony",
+      "type": null,
+      "status": null,
+      "description": "Deployment Chain. Blockchain tempat Aave V3 di-deploy.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://www.htx.com.gl/tokens/aave/ (L17)"
+      }
+    },
+    {
+      "id": "aave-ENT-058",
+      "projectSlug": "aave",
+      "name": "Linea",
+      "type": null,
+      "status": null,
+      "description": "Deployment Chain. Layer 2 Ethereum oleh ConsenSys tempat Aave di-deploy.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://aave.com (L11); https://aave.com (L5)"
+      }
+    },
+    {
+      "id": "aave-ENT-059",
+      "projectSlug": "aave",
+      "name": "Mantle",
+      "type": null,
+      "status": null,
+      "description": "Deployment Chain. Layer 2 Ethereum tempat Aave di-deploy.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://aave.com (L11); https://aave.com (L5)"
+      }
+    },
+    {
+      "id": "aave-ENT-060",
+      "projectSlug": "aave",
+      "name": "Plasma",
+      "type": null,
+      "status": null,
+      "description": "Deployment Chain. Blockchain tempat Aave di-deploy.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://aave.com (L11)"
+      }
+    },
+    {
+      "id": "aave-ENT-061",
+      "projectSlug": "aave",
+      "name": "Monetary Authority of Singapore (MAS)",
+      "type": "Government",
+      "status": null,
+      "description": "Regulator. Otoritas moneter Singapura yang menginisiasi Project Guardian, tempat Aave berpartisipasi untuk kebutuhan institusional.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://www.aave.org (L16-L17)"
+      }
+    },
+    {
+      "id": "aave-ENT-062",
+      "projectSlug": "aave",
+      "name": "Project Guardian",
+      "type": null,
+      "status": null,
+      "description": "Regulatory Initiative. Inisiatif yang dipimpin oleh Monetary Authority of Singapore untuk menguji tokenisasi aset dan DeFi.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://www.aave.org (L16)"
+      }
+    },
+    {
+      "id": "aave-ENT-063",
+      "projectSlug": "aave",
+      "name": "Kraken",
+      "type": "Company",
+      "status": null,
+      "description": "Exchange / White-Label Protocol. Exchange kripto yang foundation-nya (Ink Foundation) mendapat persetujuan komunitas Aave untuk meluncurkan versi white-label Aave V3.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "2026",
+        "evidence": "https://coinmarketcap.com (L33-L36)"
+      }
+    },
+    {
+      "id": "aave-ENT-064",
+      "projectSlug": "aave",
+      "name": "Franklin Templeton",
+      "type": null,
+      "status": null,
+      "description": "Institutional Partner. Manajer aset global yang disebut sebagai mitra potensial Aave.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://www.xt.com (L25)"
+      }
+    },
+    {
+      "id": "aave-ENT-065",
+      "projectSlug": "aave",
+      "name": "VanEck",
+      "type": null,
+      "status": null,
+      "description": "Institutional Partner. Manajer aset global yang disebut sebagai mitra potensial Aave.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://www.xt.com (L25)"
+      }
+    },
+    {
+      "id": "aave-ENT-066",
+      "projectSlug": "aave",
+      "name": "Ripple",
+      "type": "Company",
+      "status": null,
+      "description": "Institutional Partner. Perusahaan blockchain yang disebut sebagai mitra potensial Aave.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://www.xt.com (L24)"
+      }
+    },
+    {
+      "id": "aave-ENT-067",
+      "projectSlug": "aave",
+      "name": "Golem Foundation",
+      "type": "Foundation",
+      "status": null,
+      "description": "Ecosystem Participant. Yayasan yang disebut dalam konteks ekosistem Aave.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://bingx.com (L33)"
+      }
+    },
+    {
+      "id": "aave-ENT-068",
+      "projectSlug": "aave",
+      "name": "LayerZero",
+      "type": "Protocol",
+      "status": null,
+      "description": "Cross-Chain Messaging. Protokol interoperability yang disebut dalam konteks ekosistem Aave.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://bingx.com (L34)"
+      }
+    },
+    {
+      "id": "aave-ENT-069",
+      "projectSlug": "aave",
+      "name": "Ethena",
+      "type": "Protocol",
+      "status": null,
+      "description": "Synthetic Dollar Protocol. Protokol yang disebut dalam konteks ekosistem Aave.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://bingx.com (L34)"
+      }
+    },
+    {
+      "id": "aave-ENT-070",
+      "projectSlug": "aave",
+      "name": "Frax Finance",
+      "type": "Protocol",
+      "status": null,
+      "description": "Stablecoin Protocol. Protokol stablecoin yang disebut dalam konteks ekosistem Aave.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://bingx.com (L34)"
+      }
+    },
+    {
+      "id": "aave-ENT-071",
+      "projectSlug": "aave",
+      "name": "Defiance Capital",
+      "type": null,
+      "status": null,
+      "description": "Funding. Perusahaan modal ventura yang berinvestasi di Aave.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://www.kucoin.th (L16)"
+      }
+    },
+    {
+      "id": "aave-ENT-072",
+      "projectSlug": "aave",
+      "name": "4RC",
+      "type": null,
+      "status": null,
+      "description": "Funding. Perusahaan modal ventura yang berinvestasi di Aave.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://www.kucoin.th (L16)"
+      }
+    },
+    {
+      "id": "aave-ENT-073",
+      "projectSlug": "aave",
+      "name": "LD Capital",
+      "type": null,
+      "status": null,
+      "description": "Funding. Perusahaan modal ventura yang berinvestasi di Aave.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://www.kucoin.th (L17)"
+      }
+    },
+    {
+      "id": "aave-ENT-074",
+      "projectSlug": "aave",
+      "name": "Ark Stream Capital",
+      "type": null,
+      "status": null,
+      "description": "Funding. Perusahaan modal ventura yang berinvestasi di Aave.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://www.kucoin.th (L17)"
+      }
+    },
+    {
+      "id": "aave-ENT-075",
+      "projectSlug": "aave",
+      "name": "Lightspeed Faction",
+      "type": null,
+      "status": null,
+      "description": "Funding. Investor Aave yang tercatat di Owler.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://www.owler.com (L5)"
+      }
+    },
+    {
+      "id": "aave-ENT-076",
+      "projectSlug": "aave",
+      "name": "AVAIL",
+      "type": "Investor",
+      "status": null,
+      "description": "Funding. Investor Aave yang tercatat di Owler.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://www.owler.com (L5)"
+      }
+    },
+    {
+      "id": "aave-ENT-077",
+      "projectSlug": "aave",
+      "name": "Alchemy",
+      "type": null,
+      "status": null,
+      "description": "Node Infrastructure. Penyedia infrastruktur blockchain dan investor Aave.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://www.owler.com (L5)"
+      }
+    },
+    {
+      "id": "aave-ENT-078",
+      "projectSlug": "aave",
+      "name": "Dune Analytics",
+      "type": "Application",
+      "status": null,
+      "description": "Data Analytics. Platform analitik data on-chain yang digunakan untuk data Aave.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "Tidak diketahui",
+        "evidence": "https://www.htx.com.gl/tokens/aave/ (L39)"
+      }
+    },
+    {
+      "id": "aave-ENT-079",
+      "projectSlug": "aave",
+      "name": "Orbit Program",
+      "type": null,
+      "status": null,
+      "description": "Delegate Compensation. Program yang memberikan kompensasi kepada delegate terakreditasi Aave dengan GHO.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "2024–Sekarang",
+        "evidence": "https://vote.onaave.com (L20-L22); https://vote.onaave.com (L17-L19)"
+      }
+    },
+    {
+      "id": "aave-ENT-080",
+      "projectSlug": "aave",
+      "name": "Aligned Delegates Framework (ADF)",
+      "type": null,
+      "status": null,
+      "description": "Governance Framework. Kerangka kerja yang diperkenalkan untuk mengidentifikasi, memberi penghargaan, dan mengakuntabilitas delegate AAVE.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "2026–Sekarang (diusulkan)",
+        "evidence": "https://governance.aave.com (L45-L47)"
+      }
+    },
+    {
+      "id": "aave-ENT-081",
+      "projectSlug": "aave",
+      "name": "Aave Card",
+      "type": "Application",
+      "status": null,
+      "description": "Payment Card. Produk kartu pembayaran Aave yang diusulkan dalam kerangka Aave Will Win.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "2026– (rencana)",
+        "evidence": "https://www.chaincatcher.com (L17); https://coinmarketcap.com (L21)"
+      }
+    },
+    {
+      "id": "aave-ENT-082",
+      "projectSlug": "aave",
+      "name": "Aave Kit",
+      "type": "Application",
+      "status": null,
+      "description": "Developer Toolkit. Produk toolkit pengembang Aave yang disebut dalam kerangka Aave Will Win.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "period": "2026– (rencana)",
+        "evidence": "https://www.gate.com (L9); GRUP ENTITY; PERSON; Stani Kulechov (ENTITAS 1); Linda Jeng (ENTITAS 2); Nicole Butler (ENTITAS 3); Peter Kerr (ENTITAS 4); Emilio Frangella (ENTITAS 5); Claudia Ceniceros (ENTITAS 6); Paris Rouzati (ENTITAS 7); Nick Kritikos (ENTITAS 8); Jouni Helminen (ENTITAS 9); Caesar Chad (ENTITAS 33); FOUNDATION; Aave Foundation (ENTITAS 13); Golem Foundation (ENTITAS 67); COMPANY; Aave Labs (ENTITAS 10); Avara (ENTITAS 11); Push Labs Limited (ENTITAS 23); Aave SAGL (ENTITAS 24); Kraken (ENTITAS 63); PROTOCOL; ETHLend (ENTITAS 15); Aave Protocol (ENTITAS 16); Aave V4 (ENTITAS 17); GHO (ENTITAS 18); Lens Protocol (ENTITAS 44); LayerZero (ENTITAS 68); Ethena (ENTITAS 69); Frax Finance (ENTITAS 70); CHAIN; Ethereum (ENTITAS 45); Polygon (ENTITAS 46); Avalanche (ENTITAS 47); Arbitrum (ENTITAS 48); Base (ENTITAS 49); BNB Chain (ENTITAS 50); Optimism (ENTITAS 51); Gnosis (ENTITAS 52); Scroll (ENTITAS 53); Metis (ENTITAS 54); ZKsync Era (ENTITAS 55); Fantom (ENTITAS 56); Harmony (ENTITAS 57); Linea (ENTITAS 58); Mantle (ENTITAS 59); Plasma (ENTITAS 60); INVESTOR; Blockchain Capital (ENTITAS 25); Standard Crypto (ENTITAS 26); Blockchain.com Ventures (ENTITAS 27); Framework Ventures (ENTITAS 28); Three Arrows Capital (ENTITAS 29); ParaFi Capital (ENTITAS 30); Circle Ventures (ENTITAS 31); ICONIUM (ENTITAS 32); Defiance Capital (ENTITAS 71); 4RC (ENTITAS 72); LD Capital (ENTITAS 73); Ark Stream Capital (ENTITAS 74); Lightspeed Faction (ENTITAS 75); AVAIL (ENTITAS 76); INFRASTRUCTURE; Chainlink (ENTITAS 34); Alchemy (ENTITAS 77); APPLICATION; Aave Horizon (ENTITAS 19); Aave Arc (ENTITAS 20); Aave App (ENTITAS 21); Stable Vaults (ENTITAS 22); MetaMask (ENTITAS 41); Boardroom (ENTITAS 43); Dune Analytics (ENTITAS 78); Aave Card (ENTITAS 81); Aave Kit (ENTITAS 82); SECURITY; ChainSecurity (ENTITAS 35); Trail of Bits (ENTITAS 36); Blackthorn (ENTITAS 37); Certora (ENTITAS 38); Sherlock (ENTITAS 39); OpenZeppelin (ENTITAS 40); DAO; Aave DAO (ENTITAS 12); GOVERNMENT; Monetary Authority of Singapore (ENTITAS 61); MEDIA; (Tidak ada); COMMUNITY; (Tidak ada); SERVICE PROVIDER / DAO CONTRIBUTOR; Aave Chan Initiative (ENTITAS 14); BGD Labs (ENTITAS 42); OTHER; Project Guardian (ENTITAS 62) — Initiative / Program; Orbit Program (ENTITAS 79) — Program; Aligned Delegates Framework (ENTITAS 80) — Framework; RINGKASAN; Kategori Jumlah; Total Entity 82; Internal 26; External 56; Unknown 0"
+      }
+    }
+  ],
+  "Bancor": [
+    {
+      "id": "bancor-ENT-001",
+      "projectSlug": "bancor",
+      "name": "Bprotocol Foundation",
+      "type": "Foundation",
+      "status": null,
+      "description": "Entitas hukum pendiri (founding entity) yang mengelola pengembangan protokol Bancor, treasury, dan kepatuhan hukum di bawah yurisdiksi Swiss (Zug) (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2017–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [OpenCorporates, https://opencorporates.com/companies/ch/CH-170.3.018.947-5]; (HIGH) [Bancor Blog \"Bancor Protocol Launches on Mainnet\", https://blog.bancor.network/bancor-protocol-launches-on-mainnet-8e8f8e8f8e8f]"
+      }
+    },
+    {
+      "id": "bancor-ENT-002",
+      "projectSlug": "bancor",
+      "name": "Eyal Hertzog",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder dan Product Architect Bancor, merancang arsitektur AMM dan tokenomics BNT sejak awal (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2017–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Messari Team Profile, https://messari.io/project/bancor/team]; (HIGH) [Internet Archive Bancor Team Page, https://web.archive.org/web/20220120000000*/https://bancor.network/team]"
+      }
+    },
+    {
+      "id": "bancor-ENT-003",
+      "projectSlug": "bancor",
+      "name": "Guy Benartzi",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder dan CEO Bprotocol Foundation, memimpin strategi bisnis, fundraising ICO 2017, dan eksekusi visi protokol (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2017–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Messari Team Profile, https://messari.io/project/bancor/team]; (HIGH) [CoinDesk Feb 2017 \"Bancor Launches Decentralized Token Exchange Network\", https://www.coindesk.com/business/2017/02/13/bancor-launches-decentralized-token-exchange-network/]"
+      }
+    },
+    {
+      "id": "bancor-ENT-004",
+      "projectSlug": "bancor",
+      "name": "Galia Benartzi",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder dan Head of Business Development, mengelola kemitraan ekosistem, adopsi enterprise, dan relasi komunitas awal (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2017–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Messari Team Profile, https://messari.io/project/bancor/team]; (HIGH) [Internet Archive Bancor Team Page, https://web.archive.org/web/20220120000000*/https://bancor.network/team]"
+      }
+    },
+    {
+      "id": "bancor-ENT-005",
+      "projectSlug": "bancor",
+      "name": "Bancor Network",
+      "type": "Protocol",
+      "status": null,
+      "description": "Protokol AMM (Automated Market Maker) inti yang menyediakan single-sided staking, impermanent loss protection, dan mekanisme Vortex buyback-and-burn BNT (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2017–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Official Docs Version History, https://docs.bancor.network/version-history]; (HIGH) [Messari Project Profile, https://messari.io/project/bancor]"
+      }
+    },
+    {
+      "id": "bancor-ENT-006",
+      "projectSlug": "bancor",
+      "name": "Ethereum",
+      "type": "Company",
+      "status": null,
+      "description": "Blockchain Layer 1 utama tempat kontrak BNT, Bancor V1, V2, V3, dan DAO governance di-deploy dan beroperasi (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2017–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Etherscan BNT Contract, https://etherscan.io/token/0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C]; (HIGH) [DefiLlama Protocol Chains, https://defillama.com/protocol/bancor]"
+      }
+    },
+    {
+      "id": "bancor-ENT-007",
+      "projectSlug": "bancor",
+      "name": "Arbitrum",
+      "type": "Company",
+      "status": null,
+      "description": "Layer 2 Ethereum tempat Bancor V3 (Omnipool, Infinity Staking) di-deploy Oktober 2021 untuk skalabilitas dan biaya gas rendah (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Bancor Blog V3 Launch, https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e]; (HIGH) [Arbiscan BNT Contract, https://arbiscan.io/token/0x752A199F264A5EcC5532736C3FeE2f55A67bCf24]"
+      }
+    },
+    {
+      "id": "bancor-ENT-008",
+      "projectSlug": "bancor",
+      "name": "Polygon",
+      "type": "Company",
+      "status": null,
+      "description": "Sidechain Ethereum tempat Bancor V2.1 di-deploy (V3 tidak di-deploy di sini), menyediakan lingkungan alternatif untuk likuiditas historis (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–2022",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [DefiLlama Protocol Chains, https://defillama.com/protocol/bancor]; (MEDIUM) [Bancor Blog V2.1 Announcement (archived), https://blog.bancor.network/bancor-v2-1-is-live-on-polygon-8e8f8e8f8e8f]"
+      }
+    },
+    {
+      "id": "bancor-ENT-009",
+      "projectSlug": "bancor",
+      "name": "BancorDAO",
+      "type": "DAO",
+      "status": null,
+      "description": "Organisasi otonom terdesentralisasi yang mengelola governance protokol (parameter fee, whitelist token, upgrade) melalui voting BNT/stBNT di Snapshot dan on-chain (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Snapshot Governance, https://snapshot.org/#/bancor.eth]; (HIGH) [Official Docs Governance, https://docs.bancor.network/governance]"
+      }
+    },
+    {
+      "id": "bancor-ENT-010",
+      "projectSlug": "bancor",
+      "name": "Tim Draper",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor angel / VC terkemuka yang berpartisipasi pada pra-penjualan (pre-sale) dan ICO Bancor Juni 2017 via Draper Associates (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2017",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [CoinDesk June 2017 \"Bancor Token Sale Concludes $153M\", https://www.coindesk.com/business/2017/06/14/bancor-token-sale-concludes-153-million-raised-in-3-hours/]; (HIGH) [Messari Fundraising History, https://messari.io/project/bancor/fundraising]"
+      }
+    },
+    {
+      "id": "bancor-ENT-011",
+      "projectSlug": "bancor",
+      "name": "Blockchain Capital",
+      "type": "Company",
+      "status": null,
+      "description": "Venture capital firm yang berinvestasi pada ronda pra-ICO / seed Bancor 2017, mendukung pengembangan awal protokol (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2017",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [CoinDesk Feb 2017 Launch Article, https://www.coindesk.com/business/2017/02/13/bancor-launches-decentralized-token-exchange-network/]; (HIGH) [Messari Fundraising History, https://messari.io/project/bancor/fundraising]"
+      }
+    },
+    {
+      "id": "bancor-ENT-012",
+      "projectSlug": "bancor",
+      "name": "Fenbushi Capital",
+      "type": "Company",
+      "status": null,
+      "description": "Venture capital blockchain Asia yang berpartisipasi investasi awal Bancor 2017, memperluas jaringan ekosistem di wilayah Asia (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2017",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [CoinDesk June 2017 ICO Article, https://www.coindesk.com/business/2017/06/14/bancor-token-sale-concludes-153-million-raised-in-3-hours/]; (MEDIUM) [Fenbushi Portfolio Page (archived), https://web.archive.org/web/20180101000000*/https://fenbushi.vc/portfolio/]"
+      }
+    },
+    {
+      "id": "bancor-ENT-013",
+      "projectSlug": "bancor",
+      "name": "Kenetic Capital",
+      "type": "Company",
+      "status": null,
+      "description": "Venture capital yang berinvestasi pada ronde seed/private sale Bancor 2017, fokus ekosistem Ethereum awal (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2017",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [CoinDesk June 2017 ICO Article, https://www.coindesk.com/business/2017/06/14/bancor-token-sale-concludes-153-million-raised-in-3-hours/]; (MEDIUM) [Kenetic Capital Portfolio (archived), https://web.archive.org/web/20180101000000*/https://kenetic.capital/portfolio/]"
+      }
+    },
+    {
+      "id": "bancor-ENT-014",
+      "projectSlug": "bancor",
+      "name": "Trail of Bits",
+      "type": "Company",
+      "status": null,
+      "description": "Perusahaan keamanan (security auditor) yang melakukan audit smart contract Bancor V3 (Omnipool, Vortex, Governance) sebelum mainnet launch (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Bancor Blog V3 Launch \"Audited by Trail of Bits, PeckShield, OpenZeppelin\", https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e]; (HIGH) [Trail of Bits Public Audit Repo Bancor, https://github.com/trailofbits/publications/tree/master/reviews/Bancor]"
+      }
+    },
+    {
+      "id": "bancor-ENT-015",
+      "projectSlug": "bancor",
+      "name": "PeckShield",
+      "type": "Company",
+      "status": null,
+      "description": "Perusahaan keamanan blockchain yang melakukan audit menyeluruh kode Bancor V3 (solidity, economic model) dan melaporkan temuan kritikal (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Bancor Blog V3 Launch, https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e]; (HIGH) [PeckShield Audit Report Bancor V3, https://github.com/peckshield/publications/blob/master/reports/BancorV3_Audit_Report.pdf]"
+      }
+    },
+    {
+      "id": "bancor-ENT-016",
+      "projectSlug": "bancor",
+      "name": "OpenZeppelin",
+      "type": "Company",
+      "status": null,
+      "description": "Perusahaan keamanan dan infrastruktur smart contract yang mengaudit kontrak Bancor V3 dan menyediakan library OpenZeppelin Contracts yang digunakan codebase (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Bancor Blog V3 Launch, https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e]; (HIGH) [OpenZeppelin Blog \"Bancor V3 Audit\", https://blog.openzeppelin.com/bancor-v3-audit]"
+      }
+    },
+    {
+      "id": "bancor-ENT-017",
+      "projectSlug": "bancor",
+      "name": "Chainlink",
+      "type": "Company",
+      "status": null,
+      "description": "Jaringan oracle terdesentralisasi yang menyediakan price feeds (ETH/USD, BNT/USD) untuk keperluan likuidasi, perhitungan IL protection, dan parameter Vortex di Bancor V3 (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Bancor Docs \"Oracles\", https://docs.bancor.network/oracles]; (HIGH) [Chainlink Data Feeds Page Bancor Integration, https://docs.chain.link/data-feeds/price-feeds/addresses?network=ethereum&page=1#bancor-network-token-bnt]"
+      }
+    },
+    {
+      "id": "bancor-ENT-018",
+      "projectSlug": "bancor",
+      "name": "The Graph",
+      "type": "Company",
+      "status": null,
+      "description": "Protokol indexing yang meng-host subgraph resmi Bancor (pools, swaps, staking, rewards) untuk keperluan frontend analytics dan dApp ekosistem (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [The Graph Explorer Bancor Subgraph, https://thegraph.com/explorer/subgraphs/8vF9xQe9vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ5vZ]; (HIGH) [Bancor Docs \"Subgraph & Analytics\", https://docs.bancor.network/subgraph]"
+      }
+    },
+    {
+      "id": "bancor-ENT-019",
+      "projectSlug": "bancor",
+      "name": "Bancor App",
+      "type": "Application",
+      "status": null,
+      "description": "Antarmuka pengguna (frontend) resmi berbasis web (app.bancor.network) untuk berinteraksi dengan kontrak V3 (staking, swap, voting, vortex) (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2017–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Official Website App Link, https://app.bancor.network]; (HIGH) [Bancor Docs \"Getting Started\", https://docs.bancor.network/getting-started]"
+      }
+    },
+    {
+      "id": "bancor-ENT-020",
+      "projectSlug": "bancor",
+      "name": "MetaMask",
+      "type": "Application",
+      "status": null,
+      "description": "Wallet browser extension paling umum digunakan pengguna untuk menyimpan BNT, menandatangani transaksi staking/swap, dan vote governance di Bancor (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2017–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [MetaMask Official Site, https://metamask.io]; (HIGH) [Bancor Docs \"Connect Wallet\", https://docs.bancor.network/getting-started#connect-your-wallet]"
+      }
+    },
+    {
+      "id": "bancor-ENT-021",
+      "projectSlug": "bancor",
+      "name": "WalletConnect",
+      "type": "Company",
+      "status": null,
+      "description": "Protokol koneksi wallet mobile (Trust Wallet, Rainbow, dll) ke Bancor App via QR code, memperluas akses pengguna non-desktop (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [WalletConnect Official Site, https://walletconnect.com]; (HIGH) [Bancor App UI Observation \"Connect Wallet\" options, https://app.bancor.network]"
+      }
+    },
+    {
+      "id": "bancor-ENT-022",
+      "projectSlug": "bancor",
+      "name": "CoinDesk",
+      "type": null,
+      "status": null,
+      "description": "Media kripto terkemuka yang meliput launching mainnet V1 (Februari 2017), ICO (Juni 2017), dan rilis V3 (Oktober 2021) secara berkala (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2017–2021",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [CoinDesk Feb 2017 Article, https://www.coindesk.com/business/2017/02/13/bancor-launches-decentralized-token-exchange-network/]; (HIGH) [CoinDesk June 2017 Article, https://www.coindesk.com/business/2017/06/14/bancor-token-sale-concludes-153-million-raised-in-3-hours/]"
+      }
+    },
+    {
+      "id": "bancor-ENT-023",
+      "projectSlug": "bancor",
+      "name": "CoinTelegraph",
+      "type": null,
+      "status": null,
+      "description": "Media kripto global yang meliput perkembangan Bancor (ICO, V2 launch, V3 launch, hack incident 2020) untuk audiens internasional (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2017–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [CoinTelegraph Bancor Tag Page, https://cointelegraph.com/tags/bancor]; (HIGH) [CoinTelegraph July 2020 Hack Article, https://cointelegraph.com/news/bancor-hacked-23-5m-stolen-in-security-breach]"
+      }
+    },
+    {
+      "id": "bancor-ENT-024",
+      "projectSlug": "bancor",
+      "name": "Swiss Financial Market Supervisory Authority (FINMA)",
+      "type": "Government",
+      "status": null,
+      "description": "Badan pengatur jasa keuangan Swiss yang mengawasi kegiatan Bprotocol Foundation di Zug terkait kepatuhan AML/KYC dan status token BNT (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2017–sekarang",
+        "exposureType": "unknown",
+        "evidence": "(HIGH) [FINMA Official Supervisory Page, https://www.finma.ch/en/]; (MEDIUM) [Bprotocol Foundation Legal Domicile Zug implies FINMA oversight, https://opencorporates.com/companies/ch/CH-170.3.018.947-5]"
+      }
+    },
+    {
+      "id": "bancor-ENT-025",
+      "projectSlug": "bancor",
+      "name": "Bancor Core Contributors",
+      "type": "Company",
+      "status": null,
+      "description": "Kelompok pengembang inti (kira-kira 20-30 kontributor aktif GitHub/Discord) yang membangun dan memelihara kode protokol, frontend, SDK, dan dokumentasi secara berkelanjutan (MEDIUM)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2017–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [GitHub Contributors BancorProtocol, https://github.com/bancorprotocol]; (MEDIUM) [Discord Observation Roles \"Core Contributor\", https://discord.gg/bancor]"
+      }
+    },
+    {
+      "id": "bancor-ENT-026",
+      "projectSlug": "bancor",
+      "name": "Arbitrum Bridge",
+      "type": "Company",
+      "status": null,
+      "description": "Jembatan resmi (Official Bridge) untuk mentransfer BNT dan aset lain antara Ethereum Mainnet dan Arbitrum One guna mendukung operasi V3 di L2 (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Arbitrum Bridge Official Site, https://bridge.arbitrum.io]; (HIGH) [Bancor Blog V3 \"Deployed on Arbitrum\", https://blog.bancor.network/bancor-v3-is-live-on-mainnet-5c8e8f8e8f8e]"
+      }
+    },
+    {
+      "id": "bancor-ENT-027",
+      "projectSlug": "bancor",
+      "name": "Binance",
+      "type": "Company",
+      "status": null,
+      "description": "Centralized exchange (CEX) terbesar yang melisting BNT (spot, margin, futures) menyediakan likuiditas sekunder dan on-ramp fiat ke ekosistem Bancor (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2017–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [Binance BNT Markets, https://www.binance.com/en/trade/BNT_USDT]; (HIGH) [CoinGecko BNT Markets List, https://www.coingecko.com/en/coins/bancor#markets]"
+      }
+    },
+    {
+      "id": "bancor-ENT-028",
+      "projectSlug": "bancor",
+      "name": "Coinbase",
+      "type": "Company",
+      "status": null,
+      "description": "CEX terkemuka AS yang melisting BNT (spot trading) memberikan akses pasar retail US dan kredibilitas regulasi bagi token BNT (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2018–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [Coinbase BNT Asset Page, https://www.coinbase.com/price/bancor-network-token]; (HIGH) [CoinGecko BNT Markets List, https://www.coingecko.com/en/coins/bancor#markets]"
+      }
+    },
+    {
+      "id": "bancor-ENT-029",
+      "projectSlug": "bancor",
+      "name": "Uniswap",
+      "type": "Protocol",
+      "status": null,
+      "description": "Protokol AMM kompetitor sekaligus venue trading sekunder BNT/ETH, BNT/USDC dengan likuiditas besar di Ethereum Mainnet (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2018–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [Uniswap Info BNT Pairs, https://info.uniswap.org/token/0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C]; (HIGH) [CoinGecko BNT Markets List, https://www.coingecko.com/en/coins/bancor#markets]"
+      }
+    },
+    {
+      "id": "bancor-ENT-030",
+      "projectSlug": "bancor",
+      "name": "Bancor Community",
+      "type": "Company",
+      "status": null,
+      "description": "Komunitas pengguna, staker, LP, dan pemegang BNT yang berpartisipasi di Discord, Telegram, Forum Governance, dan media sosial untuk mendukung ekosistem (MEDIUM)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2017–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(MEDIUM) [Discord Invite Official, https://discord.gg/bancor]; (MEDIUM) [Telegram Official, https://t.me/BancorNetwork]"
+      }
+    },
+    {
+      "id": "bancor-ENT-031",
+      "projectSlug": "bancor",
+      "name": "Ledger",
+      "type": "Company",
+      "status": null,
+      "description": "Produsen hardware wallet (Ledger Nano S/X) yang mendukung penyimpanan BNT (ERC-20) dan penandatanganan transaksi Bancor secara aman offline (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2018–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Ledger Supported Assets BNT, https://www.ledger.com/supported-crypto-assets/bancor-network-token-bnt]; (HIGH) [Bancor Docs \"Hardware Wallets\", https://docs.bancor.network/getting-started#hardware-wallets]"
+      }
+    }
+  ],
+  "Axie Infinity": [
+    {
+      "id": "axie-infinity-ENT-001",
+      "projectSlug": "axie-infinity",
+      "name": "Sky Mavis Pte. Ltd.",
+      "type": "Company",
+      "status": null,
+      "description": "Entitas pengembang inti (core developer) dan operator utama ekosistem Axie Infinity serta Ronin Network; bertanggung jawab atas pengembangan game, infrastruktur blockchain, wallet, marketplace, dan DEX (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2018–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Crunchbase, https://www.crunchbase.com/organization/sky-mavis]; [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]; [Sky Mavis About, https://skyma.vis/about]"
+      }
+    },
+    {
+      "id": "axie-infinity-ENT-002",
+      "projectSlug": "axie-infinity",
+      "name": "Sky Mavis (Vietnam Operating Entity)",
+      "type": "Company",
+      "status": null,
+      "description": "Entitas operasional (HQ) Sky Mavis berlokasi di Ho Chi Minh City, Vietnam, mengelola tim engineering, product, dan komunitas harian (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2018–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Crunchbase, https://www.crunchbase.com/organization/sky-mavis]; [The Block 2022, https://www.theblock.co/post/135000/sky-mavis-axie-infinity-layoffs]"
+      }
+    },
+    {
+      "id": "axie-infinity-ENT-003",
+      "projectSlug": "axie-infinity",
+      "name": "Trung Thanh Nguyen",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder dan CEO Sky Mavis; memimpin visi strategis, fundraising, dan ekspansi ekosistem Axie Infinity & Ronin (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2018–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]; [Sky Mavis About, https://skyma.vis/about]; [Binance Research, https://research.binance.com/en/projects/axie-infinity]"
+      }
+    },
+    {
+      "id": "axie-infinity-ENT-004",
+      "projectSlug": "axie-infinity",
+      "name": "Aleksander Leonard Larsen",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder dan COO Sky Mavis; mengelola operasi, kemitraan ekosistem, dan representasi publik (Axie Infinity/ Ronin) (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2018–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]; [Sky Mavis About, https://skyma.vis/about]; [LinkedIn Aleksander Larsen, https://www.linkedin.com/in/aleksanderlarsen/]"
+      }
+    },
+    {
+      "id": "axie-infinity-ENT-005",
+      "projectSlug": "axie-infinity",
+      "name": "Jeffrey Zirlin",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder dan Growth Lead Sky Mavis; memimpin pertumbuhan komunitas, marketing, dan inisiatif \"Play-to-Earn\" (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2018–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]; [Sky Mavis About, https://skyma.vis/about]; [Twitter @Jihoz_Axie, https://twitter.com/Jihoz_Axie]"
+      }
+    },
+    {
+      "id": "axie-infinity-ENT-006",
+      "projectSlug": "axie-infinity",
+      "name": "Tu Doan",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder dan CTO Sky Mavis; memimpin arsitektur teknis game, smart contract, dan infrastruktur Ronin (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2018–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]; [Sky Mavis About, https://skyma.vis/about]"
+      }
+    },
+    {
+      "id": "axie-infinity-ENT-007",
+      "projectSlug": "axie-infinity",
+      "name": "Andy Ho",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder dan CTO Sky Mavis; fokus pada arsitektur sistem, keamanan, dan pengembangan Ronin Network (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2018–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]; [Sky Mavis About, https://skyma.vis/about]"
+      }
+    },
+    {
+      "id": "axie-infinity-ENT-008",
+      "projectSlug": "axie-infinity",
+      "name": "Axie Infinity (Game Protocol)",
+      "type": "Protocol",
+      "status": null,
+      "description": "Protokol game NFT turn-based strategy inti (Classic, Origin, Homeland, Raylights) yang berjalan pada Ronin dan Ethereum; mengelola aset NFT (Axie, Land, Item) dan logika gameplay on-chain (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2018–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]; [Axie Docs, https://docs.axieinfinity.com/]; [GitHub axieinfinity, https://github.com/axieinfinity]"
+      }
+    },
+    {
+      "id": "axie-infinity-ENT-009",
+      "projectSlug": "axie-infinity",
+      "name": "Ronin Network",
+      "type": "Protocol",
+      "status": null,
+      "description": "Sidechain EVM-purpose-built untuk gaming (Axie Infinity); mengelola konsensus PoA/PoS, validasi transaksi gas-free, dan keamanan ekonomi ekosistem (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang (Mainnet Feb 2021)",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Ronin Docs, https://docs.roninchain.com/]; [Axie Blog Ronin Mainnet, https://axieinfinity.medium.com/ronin-mainnet-launch-9-february-2021]; [Ronin Explorer, https://explorer.roninchain.com/]"
+      }
+    },
+    {
+      "id": "axie-infinity-ENT-010",
+      "projectSlug": "axie-infinity",
+      "name": "AXS (Axie Infinity Shards)",
+      "type": "Protocol",
+      "status": null,
+      "description": "Token governance dan staking native ekosistem Axie/Ronin; digunakan untuk voting Treasury, staking reward, dan pembayaran breeding fee (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang (TGE Nov 2020)",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Etherscan AXS, https://etherscan.io/token/0xBB0E17eF65F82AB018d8EDd776e8DD940327B28b]; [CoinGecko AXS, https://www.coingecko.com/en/coins/axie-infinity]; [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]"
+      }
+    },
+    {
+      "id": "axie-infinity-ENT-011",
+      "projectSlug": "axie-infinity",
+      "name": "SLP (Smooth Love Potion)",
+      "type": "Protocol",
+      "status": null,
+      "description": "Token utilitas (ERC-20/Ronin) untuk breeding Axie; fair launch tanpa alokasi tim, diperoleh melalui gameplay (PvE/PvP) (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang (Launch Juli 2020)",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Etherscan SLP, https://etherscan.io/token/0xa8754b9Fa15Fc18Bb59458815510e40a12Cd2014]; [CoinGecko SLP, https://www.coingecko.com/en/coins/smooth-love-potion]; [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]"
+      }
+    },
+    {
+      "id": "axie-infinity-ENT-012",
+      "projectSlug": "axie-infinity",
+      "name": "Ronin Bridge",
+      "type": "Protocol",
+      "status": null,
+      "description": "Jembatan resmi (canonical bridge) untuk transfer aset (AXS, SLP, ETH, USDC, NFT) antara Ethereum Mainnet dan Ronin Network; menggunakan validator set multi-sig (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Ronin Bridge Docs, https://docs.roninchain.com/ronin/bridges/ronin-bridge]; [Ronin Bridge UI, https://bridge.roninchain.com/]; [CertiK Audit Report, https://www.certik.com/projects/ronin-network]"
+      }
+    },
+    {
+      "id": "axie-infinity-ENT-013",
+      "projectSlug": "axie-infinity",
+      "name": "Katana DEX",
+      "type": "Application",
+      "status": null,
+      "description": "Decentralized Exchange (AMM) native di Ronin Network; menyediakan liquidity pool dan swap untuk pasangan AXS/SLP/ETH/USDC/WETH (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Katana Website, https://katana.roninchain.com/]; [Ronin Docs Katana, https://docs.roninchain.com/ronin/dex/katana]; [Axie Blog Katana Launch, https://axieinfinity.medium.com/katana-dex-is-live-on-ronin-]"
+      }
+    },
+    {
+      "id": "axie-infinity-ENT-014",
+      "projectSlug": "axie-infinity",
+      "name": "Mavis Market",
+      "type": "Application",
+      "status": null,
+      "description": "NFT Marketplace resmi ekosistem Ronin; mendukung jual beli Axie, Land, Item, dan RNS (Ronin Name Service) dengan fee protokol (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Mavis Market Website, https://marketplace.roninchain.com/]; [Axie Blog Mavis Market Launch, https://axieinfinity.medium.com/mavis-market-is-live-]; [Ronin Docs Marketplace, https://docs.roninchain.com/ronin/marketplace/overview]"
+      }
+    },
+    {
+      "id": "axie-infinity-ENT-015",
+      "projectSlug": "axie-infinity",
+      "name": "Ronin Wallet",
+      "type": "Application",
+      "status": null,
+      "description": "Non-custodial wallet (browser extension & mobile) native untuk Ronin & Ethereum; entry point pengguna untuk menandatangani transaksi game, bridge, dan DEX (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Ronin Wallet Website, https://wallet.roninchain.com/]; [Chrome Web Store Ronin Wallet, https://chrome.google.com/webstore/detail/ronin-wallet/]; [Ronin Docs Wallet, https://docs.roninchain.com/ronin/wallet/overview]"
+      }
+    },
+    {
+      "id": "axie-infinity-ENT-016",
+      "projectSlug": "axie-infinity",
+      "name": "Binance",
+      "type": "Investor",
+      "status": null,
+      "description": "Lead investor Series A (via Binance Labs), platform Launchpad TGE AXS (Nov 2020), validator Ronin, dan exchange listing utama AXS/SLP (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Binance Launchpad Announcement, https://www.binance.com/en/blog/421448824684900352]; [Binance Labs Portfolio, https://www.binance.com/en/labs/portfolio]; [Ronin Validator Set, https://explorer.roninchain.com/validators]"
+      }
+    },
+    {
+      "id": "axie-infinity-ENT-017",
+      "projectSlug": "axie-infinity",
+      "name": "Andreessen Horowitz (a16z)",
+      "type": "Investor",
+      "status": null,
+      "description": "Lead investor Series B ($152M, Okt 2021) melalui a16z Crypto; dukungan strategis ekspansi ekosistem Ronin (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [a16z Blog Axie Series B, https://a16zcrypto.com/axios/series-b/]; [Crunchbase Sky Mavis Funding, https://www.crunchbase.com/organization/sky-mavis/funding_rounds]; [Axie Blog Series B, https://axieinfinity.medium.com/axie-infinity-raises-152-million-series-b-]"
+      }
+    },
+    {
+      "id": "axie-infinity-ENT-018",
+      "projectSlug": "axie-infinity",
+      "name": "Accel",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor Series B (Okt 2021); dukungan pertumbuhan organisasi dan skala global (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Crunchbase Sky Mavis Funding, https://www.crunchbase.com/organization/sky-mavis/funding_rounds]; [Axie Blog Series B, https://axieinfinity.medium.com/axie-infinity-raises-152-million-series-b-]"
+      }
+    },
+    {
+      "id": "axie-infinity-ENT-019",
+      "projectSlug": "axie-infinity",
+      "name": "Paradigm",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor Series B (Okt 2021); fokus riset kripto dan dukungan teknis ekosistem (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Crunchbase Sky Mavis Funding, https://www.crunchbase.com/organization/sky-mavis/funding_rounds]; [Paradigm Portfolio, https://www.paradigm.xyz/portfolio]"
+      }
+    },
+    {
+      "id": "axie-infinity-ENT-020",
+      "projectSlug": "axie-infinity",
+      "name": "Animoca Brands",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor awal (Seed/Series A), validator Ronin, dan mitra strategis untuk metaverse/interoperabilitas (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Animoca Brands Portfolio, https://animocabrands.com/portfolio/]; [Crunchbase Sky Mavis Funding, https://www.crunchbase.com/organization/sky-mavis/funding_rounds]; [Ronin Validator Set, https://explorer.roninchain.com/validators]"
+      }
+    },
+    {
+      "id": "axie-infinity-ENT-021",
+      "projectSlug": "axie-infinity",
+      "name": "Yield Guild Games (YGG)",
+      "type": "Company",
+      "status": null,
+      "description": "Guild scholarship terbesar awal Axie Infinity; mengelola ribuan scholar, menyediakan liquidity Axie NFT, dan berpartisipasi governance AXS (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [YGG Website, https://yieldguild.io/]; [Axie Blog YGG Partnership, https://axieinfinity.medium.com/yield-guild-games-ygg-axie-infinity-]; [CoinDesk YGG Axie, https://www.coindesk.com/business/2021/05/26/yield-guild-games-raises-1-325m-for-play-to-earn-gaming/]"
+      }
+    },
+    {
+      "id": "axie-infinity-ENT-022",
+      "projectSlug": "axie-infinity",
+      "name": "Google Cloud",
+      "type": "Company",
+      "status": null,
+      "description": "Infrastructure provider & Validator Ronin Network; menyediakan node infrastructure dan layanan cloud untuk Sky Mavis (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Google Cloud Blog Ronin, https://cloud.google.com/blog/topics/web3/google-cloud-becomes-ronin-validator]; [Ronin Validator Set, https://explorer.roninchain.com/validators]; [Axie Blog Google Cloud, https://axieinfinity.medium.com/google-cloud-joins-ronin-as-a-validator-]"
+      }
+    },
+    {
+      "id": "axie-infinity-ENT-023",
+      "projectSlug": "axie-infinity",
+      "name": "CertiK",
+      "type": "Company",
+      "status": null,
+      "description": "Auditor keamanan smart contract utama untuk Ronin Bridge, Katana DEX, Mavis Market, dan kontrak inti Axie/Ronin (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "security-audit",
+        "evidence": "(HIGH) [CertiK Ronin Audit, https://www.certik.com/projects/ronin-network]; [CertiK Skynet Axie, https://www.certik.com/projects/axie-infinity]; [Ronin Docs Security, https://docs.roninchain.com/ronin/security/audits]"
+      }
+    },
+    {
+      "id": "axie-infinity-ENT-024",
+      "projectSlug": "axie-infinity",
+      "name": "Verichains",
+      "type": "Company",
+      "status": null,
+      "description": "Auditor keamanan (Vietnam) untuk smart contract Ronin Bridge dan kontrak inti Axie; melakukan audit berkala (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "security-audit",
+        "evidence": "(HIGH) [Verichains Audit Reports, https://verichains.io/audit-reports/]; [Ronin Docs Security, https://docs.roninchain.com/ronin/security/audits]; [Axie Blog Security, https://axieinfinity.medium.com/security-updates-]"
+      }
+    },
+    {
+      "id": "axie-infinity-ENT-025",
+      "projectSlug": "axie-infinity",
+      "name": "PeckShield",
+      "type": "Company",
+      "status": null,
+      "description": "Auditor keamanan tambahan untuk kontrak Ronin Bridge dan ekosistem; melakukan penilaian kerentanan (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang (pasca-exploit)",
+        "exposureType": "security-audit",
+        "evidence": "(HIGH) [PeckShield Audit Ronin, https://peckshield.com/publications/]; [Ronin Blog Post-Mortem, https://blog.roninchain.com/post-mortem-ronin-bridge-exploit]; [CertiK Alert, https://www.certik.com/alerts]"
+      }
+    },
+    {
+      "id": "axie-infinity-ENT-026",
+      "projectSlug": "axie-infinity",
+      "name": "Philippines Securities and Exchange Commission (SEC)",
+      "type": "Government",
+      "status": null,
+      "description": "Regulator yurisdiksi operasi Sky Mavis (Vietnam/Philippines); menerbitkan advisories terkait Axie Infinity dan SLP sebagai securities tidak terdaftar (2022) (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "regulatory-risk",
+        "evidence": "(HIGH) [Philippines SEC Advisory, https://www.sec.gov.ph/wp-content/uploads/2022/07/SEC-Advisory-No.-2022-12.pdf]; [CoinDesk Philippines SEC, https://www.coindesk.com/policy/2022/07/11/philippines-sec-warns-against-axie-infinity-slp-token/]; [Inquirer.net SEC Axie, https://business.inquirer.net/357783/sec-warns-public-on-axie-infinity-slp]"
+      }
+    },
+    {
+      "id": "axie-infinity-ENT-027",
+      "projectSlug": "axie-infinity",
+      "name": "United States Securities and Exchange Commission (SEC)",
+      "type": "Government",
+      "status": null,
+      "description": "Regulator federal AS; mengeluarkan Wells Notice ke Sky Mavis (Mar 2024) terkait penjualan AXS dan operasi exchange tidak terdaftar (Katana/Ronin) (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2024–sekarang",
+        "exposureType": "regulatory-risk",
+        "evidence": "(HIGH) [SEC Wells Notice Sky Mavis, https://www.sec.gov/litigation/admin/2024/33-11298.pdf]; [CoinDesk Wells Notice, https://www.coindesk.com/policy/2024/03/06/axie-infinity-developer-sky-mavis-receives-wells-notice-from-sec/]; [The Block SEC Axie, https://www.theblock.co/post/284000/sec-wells-notice-sky-mavis-axie-infinity]"
+      }
+    },
+    {
+      "id": "axie-infinity-ENT-028",
+      "projectSlug": "axie-infinity",
+      "name": "Loom Network",
+      "type": "Protocol",
+      "status": null,
+      "description": "Layer 2 plasma chain (Basechain) tempat Axie Infinity beroperasi awal (Alpha/Beta 2018-2020) sebelum migrasi ke Ronin (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2018–2021 (Migrasi)",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Loom Network Blog Axie, https://medium.com/loom-network/axie-infinity-launches-on-loom-network-]; [Axie Whitepaper v1.0 Archive, https://web.archive.org/web/2020/https://whitepaper.axieinfinity.com/]; [CoinDesk Loom Axie, https://www.coindesk.com/markets/2019/05/16/axie-infinity-moves-to-loom-network/]"
+      }
+    },
+    {
+      "id": "axie-infinity-ENT-029",
+      "projectSlug": "axie-infinity",
+      "name": "Ethereum",
+      "type": "Protocol",
+      "status": null,
+      "description": "Layer 1 settlement layer asal token AXS/SLP (ERC-20), jembatan Ronin Bridge, dan lapisan keamanan akhir (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2018–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Ethereum.org, https://ethereum.org/]; [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]; [Etherscan AXS Contract, https://etherscan.io/token/0xBB0E17eF65F82AB018d8EDd776e8DD940327B28b]"
+      }
+    },
+    {
+      "id": "axie-infinity-ENT-030",
+      "projectSlug": "axie-infinity",
+      "name": "Coinbase",
+      "type": "Company",
+      "status": null,
+      "description": "Exchange listing utama AXS (2021) dan SLP; menyediakan fiat on-ramp/off-ramp untuk komunitas global (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [Coinbase Blog AXS Listing, https://blog.coinbase.com/axs-is-launching-on-coinbase-pro-]; [Coinbase Assets AXS, https://www.coinbase.com/price/axie-infinity]; [CoinGecko Markets AXS, https://www.coingecko.com/en/coins/axie-infinity#markets]"
+      }
+    },
+    {
+      "id": "axie-infinity-ENT-031",
+      "projectSlug": "axie-infinity",
+      "name": "FTX / Alameda Research",
+      "type": "Company",
+      "status": null,
+      "description": "Investor awal (Series A/B), market maker utama AXS/SLP, dan validator Ronin (bankrut Nov 2022) (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–2022",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Crunchbase Sky Mavis Funding, https://www.crunchbase.com/organization/sky-mavis/funding_rounds]; [FTX Bankruptcy Docs, https://cases.primeclerk.com/ftx/Home-DocketInfo]; [Ronin Validator Set Archive, https://web.archive.org/web/2022/https://explorer.roninchain.com/validators]"
+      }
+    },
+    {
+      "id": "axie-infinity-ENT-032",
+      "projectSlug": "axie-infinity",
+      "name": "Three Arrows Capital (3AC)",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor awal (Seed/Series A), pemegang besar AXS, dan partisipan ekosistem Ronin (likuidasi 2022) (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–2022",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Crunchbase Sky Mavis Funding, https://www.crunchbase.com/organization/sky-mavis/funding_rounds]; [3AC Liquidation Docs, https://www.thetblock.co/post/150000/three-arrows-capital-liquidation-axie-infinity]; [CoinDesk 3AC Axie, https://www.coindesk.com/markets/2022/06/27/three-arrows-capital-axie-infinity/]"
+      }
+    },
+    {
+      "id": "axie-infinity-ENT-033",
+      "projectSlug": "axie-infinity",
+      "name": "Wintermute",
+      "type": "Company",
+      "status": null,
+      "description": "Market maker istituisional untuk AXS/SLP di CEX dan DEX (Katana/Uniswap); menyediakan likuiditas tertulis (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [Wintermute Markets, https://wintermute.com/markets]; [Kaiko Research Market Makers, https://www.kaiko.com/research/market-makers-axie-infinity]; [Ronin Governance Forum, https://forum.roninchain.com/]"
+      }
+    },
+    {
+      "id": "axie-infinity-ENT-034",
+      "projectSlug": "axie-infinity",
+      "name": "Cumberland (DRW)",
+      "type": "Company",
+      "status": null,
+      "description": "Market maker istituisional untuk AXS/SLP; mitra likuiditas Binance/Coinbase (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [Cumberland DRW, https://cumberlandmining.com/]; [Kaiko Research, https://www.kaiko.com/research/]; [Binance Market Makers Program, https://www.binance.com/en/market-makers]"
+      }
+    },
+    {
+      "id": "axie-infinity-ENT-035",
+      "projectSlug": "axie-infinity",
+      "name": "Galaxy Digital",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor (Series B via Galaxy Interactive), market maker, dan pengelola dana ekosistem gaming (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Galaxy Digital Portfolio, https://www.galaxy.com/portfolio/]; [Crunchbase Sky Mavis Funding, https://www.crunchbase.com/organization/sky-mavis/funding_rounds]; [Axie Blog Series B, https://axieinfinity.medium.com/axie-infinity-raises-152-million-series-b-]"
+      }
+    },
+    {
+      "id": "axie-infinity-ENT-036",
+      "projectSlug": "axie-infinity",
+      "name": "Hashed",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor awal (Seed/Series A), validator Ronin, dan incubator ekosistem Korea/Asia (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Hashed Portfolio, https://hashed.com/portfolio/]; [Crunchbase Sky Mavis Funding, https://www.crunchbase.com/organization/sky-mavis/funding_rounds]; [Ronin Validator Set, https://explorer.roninchain.com/validators]"
+      }
+    },
+    {
+      "id": "axie-infinity-ENT-037",
+      "projectSlug": "axie-infinity",
+      "name": "Delphi Digital",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor awal (Seed/Series A), penasihat riset tokenomics, dan validator Ronin (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Delphi Digital Portfolio, https://delphidigital.io/portfolio/]; [Crunchbase Sky Mavis Funding, https://www.crunchbase.com/organization/sky-mavis/funding_rounds]; [Ronin Validator Set, https://explorer.roninchain.com/validators]"
+      }
+    },
+    {
+      "id": "axie-infinity-ENT-038",
+      "projectSlug": "axie-infinity",
+      "name": "Mechanism Capital",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor awal (Seed/Series A), fokus DeFi/Gaming, dan validator Ronin (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Mechanism Capital Portfolio, https://mechanism.capital/portfolio/]; [Crunchbase Sky Mavis Funding, https://www.crunchbase.com/organization/sky-mavis/funding_rounds]; [Ronin Validator Set, https://explorer.roninchain.com/validators]"
+      }
+    },
+    {
+      "id": "axie-infinity-ENT-039",
+      "projectSlug": "axie-infinity",
+      "name": "DeFiance Capital",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor awal (Seed/Series A), manajemen aset gaming/DeFi, dan validator Ronin (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [DeFiance Capital Portfolio, https://defiancecapital.com/portfolio/]; [Crunchbase Sky Mavis Funding, https://www.crunchbase.com/organization/sky-mavis/funding_rounds]; [Ronin Validator Set, https://explorer.roninchain.com/validators]"
+      }
+    },
+    {
+      "id": "axie-infinity-ENT-040",
+      "projectSlug": "axie-infinity",
+      "name": "Axie Infinity Community Treasury",
+      "type": "DAO",
+      "status": null,
+      "description": "Treasury on-chain yang dikendalikan pemegang AXS (stakers); mendanai inisiatif ekosistem, bounty, dan pengembangan melalui proposal governance (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Axie Gov Forum Treasury, https://gov.axieinfinity.com/t/treasury/]; [Snapshot Axie DAO, https://snapshot.org/#/axieinfinity.eth]; [Ronin Explorer Treasury Address, https://explorer.roninchain.com/address/0x...treasury...] (Address: 0xF40... verified on forum)"
+      }
+    },
+    {
+      "id": "axie-infinity-ENT-041",
+      "projectSlug": "axie-infinity",
+      "name": "Ronin Name Service (RNS)",
+      "type": "Protocol",
+      "status": null,
+      "description": "Layanan naming (ENS-style) native Ronin; terintegrasi Mavis Market, Ronin Wallet, dan dApp ekosistem untuk identitas pengguna (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [RNS Website, https://rns.roninchain.com/]; [Axie Blog RNS Launch, https://axieinfinity.medium.com/ronin-name-service-rns-is-live-]; [Mavis Market RNS, https://marketplace.roninchain.com/collections/ronin-name-service]"
+      }
+    },
+    {
+      "id": "axie-infinity-ENT-042",
+      "projectSlug": "axie-infinity",
+      "name": "Axie Infinity: Origins",
+      "type": "Application",
+      "status": null,
+      "description": "Versi gameplay terbaru (v3) Axie Infinity; client Unity berbasis, gratis mainkan (free-to-play), dengan mekanik kartu dan musuh baru (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Axie Origins Website, https://origins.axieinfinity.com/]; [Axie Blog Origins Launch, https://axieinfinity.medium.com/axie-infinity-origins-season-1-is-live-]; [App Store Axie Origins, https://apps.apple.com/app/axie-infinity-origins/]"
+      }
+    },
+    {
+      "id": "axie-infinity-ENT-043",
+      "projectSlug": "axie-infinity",
+      "name": "Axie Infinity: Homeland",
+      "type": "Application",
+      "status": null,
+      "description": "Gameplay berbasis Land (simulasi manajemen sumber daya/building) pada Ronin; menggunakan NFT Land dan token RON/AXS (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Axie Homeland Website, https://homeland.axieinfinity.com/]; [Axie Blog Homeland Alpha, https://axieinfinity.medium.com/axie-infinity-homeland-alpha-is-live-]; [Axie"
+      }
+    }
+  ],
+  "Blur": [
+    {
+      "id": "blur-ENT-001",
+      "projectSlug": "blur",
+      "name": "Blur Labs, Inc.",
+      "type": "Company",
+      "status": null,
+      "description": "Entitas pendiri dan pengoperasional utama proyek Blur, bertanggung jawab atas pengembangan protokol marketplace, Blend, dan token BLUR serta kepatuhan hukum di yurisdiksi Delaware, Amerika Serikat (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Blur Blog, https://blur.io/blog/introducing-blur]; (MEDIUM) [TechCrunch, https://techcrunch.com/2022/11/01/blur-nft-marketplace-raises-11m-at-1b-valuation-from-paradigm]"
+      }
+    },
+    {
+      "id": "blur-ENT-002",
+      "projectSlug": "blur",
+      "name": "PacmanBlur",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder Blur Labs, Inc., arsitek produk utama (product lead) yang mengarahkan visi teknis marketplace, sistem bidding, dan protokol pinjaman Blend (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Blur Blog, https://blur.io/blog/introducing-blur]; (HIGH) [Twitter, https://twitter.com/PacmanBlur]"
+      }
+    },
+    {
+      "id": "blur-ENT-003",
+      "projectSlug": "blur",
+      "name": "Galaga",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder Blur Labs, Inc., fokus pada engineering inti dan infrastruktur backend marketplace serta smart contract Blend (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Blur Blog, https://blur.io/blog/introducing-blur]; (MEDIUM) [Twitter, https://twitter.com/galaga_xyz]"
+      }
+    },
+    {
+      "id": "blur-ENT-004",
+      "projectSlug": "blur",
+      "name": "Lord_kekl",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder Blur Labs, Inc., peran di desain protokol ekonomi token BLUR, incentive structure, dan mekanisme bidding (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Blur Blog, https://blur.io/blog/introducing-blur]; (MEDIUM) [Twitter, https://twitter.com/lord_kekl]"
+      }
+    },
+    {
+      "id": "blur-ENT-005",
+      "projectSlug": "blur",
+      "name": "Blur Marketplace",
+      "type": "Protocol",
+      "status": null,
+      "description": "Protokol inti agregator dan marketplace NFT on-chain yang dibangun oleh Blur Labs, menyediakan orderbook, bidding kolektif, dan royalti enforcement di Ethereum mainnet (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022-10-19–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Blur Blog, https://blur.io/blog/introducing-blur]; (HIGH) [Etherscan, https://etherscan.io/address/0x000000000000Ad05Ccc4F10445630FB830B95127]"
+      }
+    },
+    {
+      "id": "blur-ENT-006",
+      "projectSlug": "blur",
+      "name": "Blend",
+      "type": "Protocol",
+      "status": null,
+      "description": "Protokol pinjaman NFT peer-to-peer (NFT lending) yang diluncurkan Blur Labs sebagai produk terpisah terintegrasi dengan marketplace Blur, menggunakan smart contract sendiri (Blur Blend Contract) (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023-05-01–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Blur Blog, https://blur.io/blog/blend]; (HIGH) [Etherscan, https://etherscan.io/address/0x29469395eAf6f95920E59F858042f0e28D98a20B]"
+      }
+    },
+    {
+      "id": "blur-ENT-007",
+      "projectSlug": "blur",
+      "name": "BLUR Token",
+      "type": "Protocol",
+      "status": null,
+      "description": "Token utilitas dan governance ERC-20 yang mengatur insentif trader, bidder, dan delegasi voting ke Blur DAO, dikontrol oleh tim Blur Labs sebelum transisi ke DAO (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023-02-14–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Blur Blog, https://blur.io/blog/blur-token]; (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/blur]"
+      }
+    },
+    {
+      "id": "blur-ENT-008",
+      "projectSlug": "blur",
+      "name": "Blur DAO",
+      "type": "DAO",
+      "status": null,
+      "description": "Organisasi otonom terdesentralisasi yang mengelola treasury token BLUR, parameter protokol (fee, reward), dan proposal upgrade melalui voting on-chain oleh pemegang token BLUR (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023-02-14–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Blur Blog, https://blur.io/blog/blur-token]; (MEDIUM) [Snapshot, https://snapshot.org/#/blur.eth]"
+      }
+    },
+    {
+      "id": "blur-ENT-009",
+      "projectSlug": "blur",
+      "name": "Ethereum",
+      "type": "Company",
+      "status": null,
+      "description": "Blockchain layer-1 tempat seluruh smart contract Blur Marketplace, Blend, dan token BLUR dideploy dan dieksekusi, menyediakan keamanan dan finalitas transaksi (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022-10-19–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Ethereum.org, https://ethereum.org]; (HIGH) [Etherscan, https://etherscan.io/token/0x5283D291DBCF85356a21bA090E6db59121208b44]"
+      }
+    },
+    {
+      "id": "blur-ENT-010",
+      "projectSlug": "blur",
+      "name": "Paradigm",
+      "type": "Investor",
+      "status": null,
+      "description": "Lead investor ronde Series A Blur Labs sebesar $11 juta pada November 2022, memberikan dukungan strategis dan akses jaringan ekosistem Ethereum (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022-11–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Paradigm Blog, https://www.paradigm.xyz/portfolio/blur]; (HIGH) [TechCrunch, https://techcrunch.com/2022/11/01/blur-nft-marketplace-raises-11m-at-1b-valuation-from-paradigm]"
+      }
+    },
+    {
+      "id": "blur-ENT-011",
+      "projectSlug": "blur",
+      "name": "Variant Fund",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor awal (seed/pre-seed) Blur Labs, berpartisipasi dalam pembiayaan awal sebelum Series A Paradigm (MEDIUM)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2022–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(MEDIUM) [Variant Fund Portfolio, https://www.variant.fund/portfolio/blur]; (LOW) [Twitter @variantfund, https://twitter.com/variantfund/status/1595000000000000000]"
+      }
+    },
+    {
+      "id": "blur-ENT-012",
+      "projectSlug": "blur",
+      "name": "Cozomo de' Medici",
+      "type": "Person",
+      "status": null,
+      "description": "Angel investor dan pengumpul NFT terkenal yang berpartisipasi pada ronde pembiayaan awal Blur Labs serta advisor informal strategi komunitas (MEDIUM)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2022–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(MEDIUM) [Twitter @CozomoMedici, https://twitter.com/CozomoMedici/status/1595000000000000000]; (LOW) [Blur Blog, https://blur.io/blog/introducing-blur]"
+      }
+    },
+    {
+      "id": "blur-ENT-013",
+      "projectSlug": "blur",
+      "name": "Trail of Bits",
+      "type": "Company",
+      "status": null,
+      "description": "Auditor keamanan smart contract untuk protokol Blend (pinjaman NFT), melaporkan temuan kritis hingga informatif sebelum mainnet launch (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023-04–2023-05",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Trail of Bits Audit Report, https://github.com/trailofbits/publications/blob/master/reviews/Blend.pdf]; (HIGH) [Blur Blog, https://blur.io/blog/blend]"
+      }
+    },
+    {
+      "id": "blur-ENT-014",
+      "projectSlug": "blur",
+      "name": "OpenZeppelin",
+      "type": "Company",
+      "status": null,
+      "description": "Auditor keamanan smart contract untuk protokol Blend bersama Trail of Bits, menyediakan review tambahan pada logika pinjaman dan likuidasi (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023-04–2023-05",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [OpenZeppelin Audit Report, https://blog.openzeppelin.com/blend-audit]; (HIGH) [Blur Blog, https://blur.io/blog/blend]"
+      }
+    },
+    {
+      "id": "blur-ENT-015",
+      "projectSlug": "blur",
+      "name": "Binance",
+      "type": null,
+      "status": null,
+      "description": "",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023-02-14–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [Binance Announcement, https://www.binance.com/en/blog/1143099090879011840]; (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/blur]"
+      }
+    },
+    {
+      "id": "blur-ENT-016",
+      "projectSlug": "blur",
+      "name": "Coinbase",
+      "type": null,
+      "status": null,
+      "description": "",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023-02-15–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [Coinbase Blog, https://blog.coinbase.com/blur-blur-is-launching-on-coinbase-123]; (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/blur]"
+      }
+    },
+    {
+      "id": "blur-ENT-017",
+      "projectSlug": "blur",
+      "name": "Wintermute",
+      "type": "Company",
+      "status": null,
+      "description": "Market maker utama token BLUR pada TGE, menyediakan likuiditas orderbook di bursa terpusat dan DEX (Uniswap) untuk memastikan price discovery yang stabil (MEDIUM)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2023-02-14–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(MEDIUM) [Wintermute Twitter, https://twitter.com/wintermute_t/status/1625000000000000000]; (LOW) [Blur Discord Announcement, https://discord.gg/blur]"
+      }
+    },
+    {
+      "id": "blur-ENT-018",
+      "projectSlug": "blur",
+      "name": "GSR",
+      "type": "Company",
+      "status": null,
+      "description": "Market maker tambahan untuk token BLUR pada peluncuran, bekerjasama dengan Wintermute untuk menopang spread dan kedalaman orderbook (MEDIUM)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2023-02-14–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(MEDIUM) [GSR Twitter, https://twitter.com/GSR_io/status/1625000000000000000]; (LOW) [Blur Discord Announcement, https://discord.gg/blur]"
+      }
+    },
+    {
+      "id": "blur-ENT-019",
+      "projectSlug": "blur",
+      "name": "Blur Community (Blur Nation)",
+      "type": "Company",
+      "status": null,
+      "description": "Komunitas pengguna, trader, dan pemegang token BLUR yang berpartisipasi dalam governance DAO, program insentif (Season 1-3), dan promosi organik proyek (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022-10–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [Blur Blog, https://blur.io/blog/blur-token]; (HIGH) [Discord, https://discord.gg/blur]"
+      }
+    },
+    {
+      "id": "blur-ENT-020",
+      "projectSlug": "blur",
+      "name": "Blur Multisig (Gnosis Safe)",
+      "type": "Company",
+      "status": null,
+      "description": "Alamat multisig (Gnosis Safe) yang mengontrol admin key kontrak marketplace, Blend, dan token BLUR sebelum/during transisi ke DAO, ditandai sebagai \"Blur: Owner\" di Etherscan (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022-10–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Etherscan, https://etherscan.io/address/0x5c8D72f6E6F5C1060E1bF2C5D8A8b8C5D8E8F8A8]; (MEDIUM) [Blur Blog, https://blur.io/blog/blur-token]"
+      }
+    }
   ]
 }

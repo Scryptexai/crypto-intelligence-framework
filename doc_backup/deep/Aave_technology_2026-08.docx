@@ -1,0 +1,183 @@
+TECHNOLOGY INTELLIGENCE DATASET — AAVE
+
+System Architecture
+
+V1 (2020): Arsitektur berbasis kontrak terpisah dengan PoolCore sebagai kontrak utama yang menyimpan state seluruh reserve dan aset yang disuplai. PoolAddressesProvider berfungsi sebagai registri global alamat protokol yang immutable. PoolDataProvider melakukan kalkulasi dan menyediakan data untuk Pool contract. V1 menggunakan ETH langsung (bukan WETH) dan posisi pengguna tidak ditokenisasi.
+
+V2 (2020): Peningkatan dari V1 dengan mengganti PoolCore — aset kini dipegang langsung oleh aTokens. Posisi pengguna ditokenisasi melalui aTokens. Memperkenalkan debt tokenization, credit delegation, batch flash loans, collateral swaps, dan fixed & variable borrowing rates.
+
+V3 (2022): Arsitektur modular dengan kontrak inti yang terdiri dari Pool (entry point utama), PoolConfigurator (konfigurasi), ACLManager (registri peran dan izin), PoolAddressesProvider (registri komponen), dan L2Pool (versi teroptimasi untuk rollup). Memperkenalkan isolated liquidity pools dan cross-chain functionality. Protokol di-deploy di 14+ jaringan blockchain.
+
+V4 (2026): Arsitektur modular hub-and-spoke yang memisahkan manajemen likuiditas dari operasi yang berhadapan dengan pengguna dan agunan. Liquidity Hub berfungsi sebagai lapisan settlement pusat yang mengonsolidasikan likuiditas dan akuntansi di seluruh protokol. Spokes adalah modul yang mengimplementasikan peminjaman modular dengan risiko terisolasi. Capital tidak lagi terfragmentasi antar pasar di chain yang sama; semua likuiditas mengalir melalui Liquidity Hubs.
+
+Core Components
+
+Pool (V1-V3): Kontrak entry point utama untuk interaksi pengguna dengan protokol. Mengekspos metode manajemen likuiditas seperti deposit() dan borrow().
+
+PoolAddressesProvider: Registri berbagai komponen protokol, termasuk ACLManager dan Pool contracts. Memiliki kemampuan untuk memperbarui pointer atau implementasi kontrak proxy.
+
+PoolConfigurator: Menyediakan metode konfigurasi untuk Pool contract. Fungsi write hanya dapat dipanggil oleh alamat dengan peran sistem yang dikelola oleh ACLManager.
+
+ACLManager (V3): Kontrak registri utama untuk peran dan izin sistem.
+
+L2Pool (V3): Modifikasi kontrak Pool untuk L2 rollup dengan metode yang dioptimalkan gas, menggunakan argumen input terenkripsi byte untuk mengurangi biaya transaksi di rollup.
+
+ATokens: Token penghasil yield yang dicetak dan dibakar saat supply dan withdraw aset ke Aave Pool. Mengimplementasikan standar EIP-20/ERC20.
+
+VariableDebtToken (V3): Token non-transferable yang menghasilkan bunga, merepresentasikan posisi dengan suku bunga variabel.
+
+AaveOracle: Registri oracle reserve untuk mendapatkan harga aset dan mengelola sumber harga.
+
+DefaultReserveInterestRateStrategy: Kontrak yang menyimpan informasi untuk menghitung dan memperbarui suku bunga reserve spesifik.
+
+Liquidity Hub (V4): Kontrak pintar yang memegang likuiditas protokol secara terpusat. Mengelola credit lines, menegakkan parameter risiko, dan beroperasi di bawah kontrol governance.
+
+Spoke (V4): Kontrak pintar yang terhubung ke Hub dan memberlakukan aturan peminjaman spesifik. Pengguna berinteraksi langsung dengan Spokes. Setiap Spoke dapat memiliki jenis agunan, parameter risiko, dan aturan likuidasi sendiri.
+
+Reserves (V4): Unit akuntansi untuk aset spesifik di dalam setiap Spoke. Melacak deposit, pinjaman, pembayaran, dan akrual bunga.
+
+Position Manager (V4): Komponen yang mengelola posisi pengguna, termasuk kontrak gateway.
+
+Access Control (V4): Kontrak yang mengelola kontrol akses.
+
+Config Engine (V4): Mesin konfigurasi untuk pembuatan payload governance.
+
+Consensus Mechanism
+
+N/A — Aave adalah protokol aplikasi yang berjalan di atas blockchain (Ethereum dan lainnya), bukan blockchain Layer 1 dengan mekanisme konsensus sendiri.
+
+Execution Environment
+
+EVM (Ethereum Virtual Machine) — protokol di-deploy sebagai smart contracts di jaringan berbasis EVM. Aave V3.3 di Aptos menggunakan Move VM, namun deployment utama berbasis EVM.
+
+Programming Languages
+
+Solidity — bahasa utama untuk smart contracts Aave di jaringan EVM.
+
+Move — digunakan untuk deployment Aave V3.3 di Aptos.
+
+TypeScript — digunakan untuk antarmuka dan query data.
+
+JavaScript — digunakan untuk tooling dan integrasi.
+
+Development Framework
+
+Foundry: Framework pengembangan utama untuk Aave V4. Digunakan untuk kompilasi, testing, dan deployment.
+
+Hardhat: Digunakan sebagai environment development untuk Aave V3, termasuk kompilasi, testing, dan deployment.
+
+Docker Compose: Digunakan untuk development environment.
+
+Node.js & Yarn: Untuk linting dan tooling.
+
+Aave Address Book: Paket Solidity dan JavaScript untuk mengimpor alamat kontrak.
+
+Security Model
+
+V4 Security-First Framework: Model keamanan berlapis yang diterapkan sepanjang siklus pengembangan, bukan hanya sebagai tahap akhir sebelum deployment. Lima pilar utama: verifikasi formal untuk menguji kode secara matematis, review berlapis menggabungkan audit manual dan pengujian otomatis, pemeriksaan berkelanjutan pada setiap pembaruan kode, bug bounty berkelanjutan, dan alat AI untuk memindai jalur serangan yang tidak biasa.
+
+Formal Verification: Certora terlibat sejak Maret 2025, bekerja sama dengan developer Aave Labs sejak tahap desain. Verifikasi formal berjalan paralel dengan penulisan kode.
+
+Threat Modeling: Model ancaman formal dipelihara sebagai dokumen hidup sepanjang program, diperbarui seiring evolusi codebase. Trust assumptions antar komponen sistem didokumentasikan secara eksplisit dan dibagikan ke semua tim audit.
+
+Invariant Testing: Dilakukan oleh Enigma Dark dan Trail of Bits pada periode September-November 2025.
+
+Public Security Contest: Kontes keamanan publik enam pekan di Sherlock (November 2025-Januari 2026) dengan lebih dari 900 peneliti dan 950+ temuan.
+
+Bug Bounty: Program bug bounty berkelanjutan untuk Aave V3 dan V4.
+
+Audit History
+
+Aave V4 Security Program: Program keamanan komprehensif dengan total biaya USD 1.5 juta, mencakup 345 hari review kumulatif, melibatkan empat firma utama dan 900+ peneliti independen. Tidak ditemukan kerentanan critical atau high-severity.
+
+Auditor Periode Scope Status Source
+Certora Maret 2025 – seterusnya Formal verification, design consultation, continuous security Completed 
+ChainSecurity September–November 2025 Manual audit Completed 
+Trail of Bits September–November 2025 Manual audit, invariant testing Completed 
+Blackthorn September–November 2025 Manual audit Completed 
+Stermi September–November 2025 Manual audit Completed 
+Enigma Dark September–November 2025 Invariant testing Completed 
+Sherlock November 2025–Januari 2026 Public security contest (900+ peneliti) Completed 
+Independent Researchers Mid 2025 Private manual reviews (Stermi, Deadrosesecxyz, Josselin, Kurt Barry) Completed 
+
+Technical Upgrade History
+
+Tanggal Nama Upgrade Deskripsi Singkat Status
+2020-01-08 Aave V1 Mainnet Peluncuran pertama protokol di Ethereum mainnet Completed
+2020-12-03 Aave V2 Mainnet Peningkatan dengan aTokens, debt tokenization, credit delegation, batch flash loans, collateral swaps, fixed & variable rates Completed
+2021-03-16 AMM Markets & Governance V2 Peluncuran AMM markets dan aktivasi Aave Governance V2【EV-012】 Completed
+2022-03-16 Aave V3 Multi-Chain Peluncuran V3 di enam jaringan: Fantom, Avalanche, Harmony, Arbitrum, Optimism, Polygon Completed
+2022-12-24 Aave V1 Deactivation Penonaktifan Aave V1 dengan pembekuan semua cadangan【EV-021】 Completed
+2023-01-27 Aave V3 Ethereum Mainnet Deployment V3 di Ethereum mainnet【EV-022】 Completed
+2026-03-30 Aave V4 Ethereum Mainnet Peluncuran V4 dengan arsitektur hub-and-spoke di Ethereum Completed
+2026-07-15 Aave V4 Avalanche Deployment V4 di Avalanche dengan satu Hub dan tiga Spokes Completed
+
+Current Technical Stack
+
+Smart Contracts: Solidity, Move (Aptos)
+
+Development Framework: Foundry, Hardhat, Docker Compose
+
+Testing: Forge test suite, gas snapshot testing, coverage reports (Lcov)
+
+Dependencies: Chainlink (oracle), OpenZeppelin (contract libraries)
+
+Infrastructure: Node.js, Yarn
+
+Deployment: Scripts berbasis Foundry untuk deploy batch dan chain-specific
+
+Address Management: Aave Address Book (JSON deployments ke GitHub Pages)
+
+Linting & Code Quality: Solidity linting melalui Node.js tooling
+
+Oracle: Chainlink sebagai penyedia oracle dan infrastruktur cross-chain【Entitas 34】
+
+User Interface: Aave Pro (V4 dedicated UI); Aave App (mobile)【Entitas 21】
+
+Known Technical Limitations
+
+V1 Limitations (Historical): Posisi tidak ditokenisasi, mengharuskan pengguna menghitung secara manual saldo supply & borrow dengan query ke kontrak individual. Menggunakan ETH langsung (bukan WETH) yang menambah kompleksitas. Flash loans terbatas pada single transaction.
+
+V3 Cross-Chain Bridge Risk (Identified 2026): Eksploitasi bridge rsETH Kelp DAO pada Mei 2026 mengungkapkan risiko infrastruktur bridge cross-chain. Aave merombak standar pencatatan aset untuk mengatasi risiko ini【EV-030】【EV-031】.
+
+General Protocol Constraints: Sistem dinamis dalam hal saldo underlying ERC20 tokens; utilisasi dan suku bunga dihitung berdasarkan keseimbangan underlying. Suku bunga ditentukan oleh kurva utilisasi yang mengukur seberapa banyak likuiditas aset yang sedang dipinjam (borrowed / total liquidity).
+
+Official Technical Resources
+
+Documentation: https://aave.com/docs[reference:101]
+
+Aave V3 Documentation: https://aave.com/docs/aave-v3[reference:102]
+
+Aave V4 Documentation: https://aave.com/docs/aave-v4[reference:103]
+
+GitHub - Aave V3 Origin: https://github.com/aave-dao/aave-v3-origin[reference:104]
+
+GitHub - Aave V4: https://github.com/aave/aave-v4[reference:105]
+
+Aave Address Book: https://github.com/bgd-labs/aave-address-book[reference:106]
+
+Developer Docs: https://aave.com/build【Phase 1】
+
+Whitepaper Aave V4: https://aave.com/docs/aave-v4[reference:107]
+
+Aave Protocol Overview: https://aave.com/docs[reference:108]
+
+Aave V4 Public Testnet: https://aave.com/blog/aave-v4-public-testnet-and-code-release[reference:109]
+
+Security Report: https://www.aave.com/blog/aave-v4-security-by-design[reference:110]
+
+RINGKASAN
+
+Kategori Nilai
+Architecture EVM-based; V1: PoolCore; V2: aTokens; V3: Modular; V4: Hub-and-Spoke
+Core Components Pool, PoolAddressesProvider, PoolConfigurator, ACLManager, ATokens, Liquidity Hub, Spoke, Reserves, Position Manager
+Audit Count 4 major firms + 900+ researchers + 6-week public contest; 345 cumulative days
+Major Upgrade Count 4 (V1, V2, V3, V4)
+
+OPEN THREADS
+
+· Aave V3.3 di Aptos: Dokumentasi menyebutkan arsitektur modular berbasis Move untuk Aave V3.3 di Aptos, namun detail deployment, status, dan fitur spesifik tidak terdokumentasi secara lengkap.
+· Aave Governance V3: Arsitektur Governance V3 disebut memiliki desain modular dengan tiga komponen utama, namun detail implementasi teknis dan status deployment tidak terdokumentasi secara jelas dalam sumber yang tersedia.
+· Aave V1 Testnet: Tanggal pasti peluncuran public testnet Aave V1 (October 2019) tidak terdokumentasi secara resmi dalam sumber yang dapat diverifikasi【Phase 1 Open Threads】.
+· Stable Vault Architecture: Dokumentasi menyebutkan Stable Vault dengan Accounting Chain di Arbitrum, namun detail arsitektur teknis lengkap dan status deployment tidak terdokumentasi secara komprehensif.
+· Aave Kit: Disebutkan sebagai produk toolkit pengembang dalam kerangka Aave Will Win【Entitas 82】, namun spesifikasi teknis dan status belum terdokumentasi.
