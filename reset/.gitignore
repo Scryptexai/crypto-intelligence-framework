@@ -1,1 +1,4 @@
+failures.log
+needs_review.log
+tmp_test/
 .env

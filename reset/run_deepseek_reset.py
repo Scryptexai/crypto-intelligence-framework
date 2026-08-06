@@ -82,6 +82,16 @@ ROOT = Path(__file__).resolve().parent.parent
 RESET_DIR = ROOT / "reset"
 DATA_PROJECT_ROOT = ROOT / "data_project"
 FAILURES_LOG = RESET_DIR / "failures.log"
+REVIEW_LOG = RESET_DIR / "needs_review.log"
+
+# Real extractors -- used by verify_10_phases() to check phases 2/3/9/10 actually parse into rows,
+# not just that tools/ingest.py's citation-density check passes (that check caught zero of the
+# four live format bugs found 2026-08-05, where all four phases passed it yet extracted 0 rows).
+sys.path.insert(0, str(ROOT / "tools"))
+import extract_entities as _extract_entities
+import extract_events as _extract_events
+import extract_decision_events as _extract_decision_events
+import extract_knowledge as _extract_knowledge
 
 PHASES = [
     (1, "foundation"), (2, "entity"), (3, "history"), (4, "technology"),
@@ -252,6 +262,82 @@ def call_with_retries(messages: list, base_url: str, token: str, model: str, pha
 
 def existing_phase_ok(path: Path) -> bool:
     return path.exists() and len(path.read_text(encoding="utf-8").strip()) >= MIN_PHASE_CHARS
+
+
+_PHASE_TITLES = {
+    "entity": "Entity Intelligence",
+    "history": "Historical Intelligence",
+    "knowledge": "Knowledge Extraction",
+}
+
+
+def _wrap_phase_for_extractor(proj_dir: Path, num: int, key: str, next_title: str) -> str:
+    """Wraps one phase file's raw saved content with the '## <Title>' header (+ a trailing
+    placeholder '## <next>' boundary) that tools/extract_*.py's section-search regexes expect --
+    the same shape tools/ingest.py produces when assembling the real dossier, built here for just
+    one phase so it can be checked in isolation without a full ./run.sh pass."""
+    path = proj_dir / f"{num:02d}-{key}.docx"
+    if not path.exists():
+        return ""
+    body = re.sub(r"(?im)^PROJECT:.*\n", "", path.read_text(encoding="utf-8"), count=1)
+    return f"## {_PHASE_TITLES[key]}\n_ref: x_\n\n{body}\n\n## {next_title}\n"
+
+
+def verify_10_phases(name: str, proj_dir: Path) -> tuple:
+    """Runs phases 2/3/9/10 through the real extractors (extract_entities/extract_events/
+    extract_decision_events/extract_knowledge) -- these are the phases with a strict
+    machine-format contract a model can drift away from (markdown headers, missing item numbers,
+    wrong field labels) while still writing genuinely researched, well-cited prose that sails
+    through validate_phase_content()'s citation-density check. Confirmed live, 2026-08-05: all
+    four of Blast's phases 2/3/9/10 passed that check yet extracted zero rows each.
+
+    Returns (all_ok: bool, report: dict) -- report always has all 4 keys (entities/events/
+    decisions/knowledge) with the extracted count, 0 if that phase's file is missing or nothing
+    parsed, so a caller can log exactly what's short even when all_ok is False."""
+    report = {"entities": 0, "events": 0, "decisions": 0, "knowledge": 0}
+
+    entity_text = _wrap_phase_for_extractor(proj_dir, 2, "entity", "Historical Intelligence")
+    if entity_text:
+        entities = (_extract_entities.parse_entities(entity_text, name)
+                    or _extract_entities.parse_entities_block(entity_text, name))
+        report["entities"] = len(entities)
+
+    history_text = _wrap_phase_for_extractor(proj_dir, 3, "history", "Technology Intelligence")
+    if history_text:
+        report["events"] = len(_extract_events.parse_events(history_text, name.lower()))
+
+    behavioral_path = proj_dir / "09-behavioral.docx"
+    if behavioral_path.exists():
+        decisions = _extract_decision_events.parse_keputusan_events(
+            behavioral_path.read_text(encoding="utf-8"), name)
+        report["decisions"] = len(decisions)
+
+    knowledge_text = _wrap_phase_for_extractor(proj_dir, 10, "knowledge", "Validation")
+    if knowledge_text:
+        report["knowledge"] = len(_extract_knowledge.parse_knowledge(knowledge_text, name))
+
+    all_ok = all(v > 0 for v in report.values())
+    return all_ok, report
+
+
+def promote_to_data_project(name: str, src_dir: Path) -> None:
+    """Copies phases 1-10 (NOT phase 11 -- deliberately deferred, see run_project()'s caller) from
+    src_dir into data_project/<name>/. Only called after verify_10_phases() passes."""
+    dest_dir = DATA_PROJECT_ROOT / name
+    dest_dir.mkdir(parents=True, exist_ok=True)
+    for num, key in PHASES[:10]:
+        src = src_dir / f"{num:02d}-{key}.docx"
+        if src.exists():
+            (dest_dir / f"{num:02d}-{key}.docx").write_text(
+                src.read_text(encoding="utf-8"), encoding="utf-8")
+
+
+def log_needs_review(project: str, report: dict) -> None:
+    REVIEW_LOG.parent.mkdir(parents=True, exist_ok=True)
+    ts = datetime.now(timezone.utc).isoformat()
+    with _failures_lock:
+        with REVIEW_LOG.open("a", encoding="utf-8") as fh:
+            fh.write(f"{ts}\t{project}\tverify_10_phases failed\t{report}\n")
 
 
 def _prompt_placeholder(num: int, key: str) -> str:
@@ -512,6 +598,33 @@ def run_project(name: str, base_url: str, token: str, model: str, dry_run: bool,
         if idx < len(phases) - 1:
             plog(f"sleeping {PHASE_SLEEP_SECONDS}s before next phase...")
             time.sleep(PHASE_SLEEP_SECONDS)
+
+    # --phases-limit 10 is the explicit signal that Phase 11 is being deliberately deferred (the
+    # maintainer's own call, 2026-08-05: run every project through 1-10 first, do Phase 11 "deep
+    # manual" per-project later) -- run the real-extractor quality gate and auto-promote phases
+    # 1-10 straight into data_project/ on a pass, exactly like the manual verify-then-cp done for
+    # Blast earlier, just automated so it scales across the whole project queue unattended.
+    if phases_limit == 10 and not dry_run:
+        ok, report = verify_10_phases(name, proj_dir)
+        plog(f"verify_10_phases: entities={report['entities']} events={report['events']} "
+             f"decisions={report['decisions']} knowledge={report['knowledge']} "
+             f"-- {'PASS' if ok else 'FAIL'}")
+        if ok:
+            if output_root != DATA_PROJECT_ROOT:
+                promote_to_data_project(name, proj_dir)
+                plog(f"=== verified + promoted: phases 1-10 copied to data_project/{name}/ "
+                     f"(Phase 11 still pending -- data_project/{name}/11-conflict.docx stays the "
+                     f"empty scaffold until that's done separately). ===")
+            else:
+                plog(f"=== verified (already writing directly to data_project/{name}/, "
+                     f"nothing to promote). ===")
+        else:
+            log_needs_review(name, report)
+            plog(f"=== ✗ verification FAILED -- at least one of phases 2/3/9/10 didn't extract "
+                 f"any rows despite passing the citation check. NOT promoted to data_project/. "
+                 f"Logged to {REVIEW_LOG.name} for manual review; output stays in "
+                 f"{output_root}/{name}/. ===")
+        return True
 
     # Deliberately NO automatic ./run.sh / ./run.sh sync call, in either mode -- pushing output
     # (test or real) into the assembled dossier or the live database is a decision a human makes
