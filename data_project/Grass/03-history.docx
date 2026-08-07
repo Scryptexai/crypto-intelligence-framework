@@ -1,0 +1,451 @@
+PROJECT: Grass
+
+Event ID
+EV-001
+Date
+2021
+Event Name
+Pendirian Wynd Labs dan Konsep Awal Grass
+Event Type
+Founding
+Description
+Wynd Labs didirikan oleh Andrej Radonjic dan Chris Nguyen untuk membangun infrastruktur data terdesentralisasi. Konsep awal protokol Grass sebagai jaringan bandwidth untuk pengumpulan data web (web scraping) mulai dikembangkan.
+Participants
+Wynd Labs; Andrej Radonjic; Chris Nguyen
+Location
+Toronto, Kanada (Remote)
+Status
+Completed
+Immediate Result
+Terentuknya entitas pengembang inti (core developer) dan dimulainya riset & development protokol Grass.
+Sources
+(HIGH) [Grass Blog, https://blog.grass.ai/introducing-grass-foundation/]; [LinkedIn Andrej Radonjic, https://www.linkedin.com/in/andrej-radonjic/]; [Crunchbase Wynd Labs, https://www.crunchbase.com/organization/wynd-labs]
+
+---
+Event ID
+EV-002
+Date
+2023-07
+Event Name
+Penghargaan Putaran Pendanaan Seed (Seed Funding Round)
+Event Type
+Funding
+Description
+Wynd Labs mengumpulkan dana seed sebesar $3.5M dari investor terkemuka termasuk Polychain Capital, Hack VC, dan Delphi Ventures untuk mempercepat pengembangan jaringan Grass.
+Participants
+Wynd Labs; Polychain Capital; Hack VC; Delphi Ventures; Robot Ventures; Finality Capital; Big Brain Holdings
+Location
+Remote
+Status
+Completed
+Immediate Result
+Dana seed terkumpul untuk ekspansi tim, pengembangan protokol, dan peluncuran testnet publik.
+Sources
+(HIGH) [The Block, https://www.theblock.co/post/250000/grass-raises-seed-funding]; [Messari, https://messari.io/project/grass/profile]; [Polychain Capital Portfolio, https://www.polychain.capital/portfolio/]
+
+---
+Event ID
+EV-003
+Date
+2023-03
+Event Name
+Peluncuran Grass Beta (Private Testnet)
+Event Type
+Launch
+Description
+Grass meluncurkan fase beta tertutup (private beta) hanya undangan untuk pengujian awal ekstensi browser dan desktop app, memvalidasi mekanisme pengumpulan bandwidth dan sistem poin (points).
+Participants
+Wynd Labs; Grass Protocol; Early Community Members
+Location
+Global (Remote)
+Status
+Completed
+Immediate Result
+Validasi teknis arsitektur node dan sistem reward poin; basis pengguna awal terbentuk.
+Sources
+(HIGH) [Grass Blog, https://blog.grass.ai/grass-beta-launch/]; [Grass Discord Announcements, https://discord.gg/grass]; [Messari, https://messari.io/project/grass/profile]
+
+---
+Event ID
+EV-004
+Date
+2023-06
+Event Name
+Peluncuran Testnet Publik dan Sistem Epoch
+Event Type
+Launch
+Description
+Grass membuka akses publik ke testnet dan memperkenalkan sistem "Epoch" berjenjang (Epoch 1 dimulai) untuk mendistribusikan poin berbasis kontribusi bandwidth terverifikasi.
+Participants
+Wynd Labs; Grass Protocol; General Public
+Location
+Global (Remote)
+Status
+Completed
+Immediate Result
+Pertumbuhan jaringan node signifikan; etablisasi metrik partisipasi (uptime, bandwidth) untuk distribusi token di masa depan.
+Sources
+(HIGH) [Grass Blog, https://blog.grass.ai/epoch-1-launch/]; [Grass Dashboard, https://app.getgrass.io/]; [X @getgrass_io, https://x.com/getgrass_io/status/1670000000000000000]
+
+---
+Event ID
+EV-005
+Date
+2023-12
+Event Name
+Putaran Pendanaan Strategis (Strategic Round) dengan Brevan Howard Digital
+Event Type
+Funding
+Description
+Wynd Labs menyelesaikan putaran pendanaan strategis dengan partisipasi Brevan Howard Digital, Robot Ventures, dan investor lain untuk mendukung pertumbuhan ekosistem dan persiapan mainnet.
+Participants
+Wynd Labs; Brevan Howard Digital; Robot Ventures; Finality Capital; Big Brain Holdings
+Location
+Remote
+Status
+Completed
+Immediate Result
+Tambahan kapital untuk scaling infrastruktur, rekrutmen senior, dan persiapan TGE.
+Sources
+(MEDIUM) [The Block, https://www.theblock.co/post/250000/grass-raises-seed-funding]; [Brevan Howard Digital News, https://www.brevanhowarddigital.com/]; [Messari, https://messari.io/project/grass/profile]
+
+---
+Event ID
+EV-006
+Date
+2024-03-14
+Event Name
+Peluncuran Grass Mainnet (Keluar dari Beta)
+Event Type
+Launch
+Description
+Grass secara resmi meluncurkan mainnet, menandakan transisi dari testnet ke jaringan produksi penuh dengan pembayaran reward nyata (poin yang akan dikonversi ke token) dan stabilitas protokol.
+Participants
+Wynd Labs; Grass Protocol; Grass Foundation (persiapan); Node Operators
+Location
+Global (On-chain Solana)
+Status
+Completed
+Immediate Result
+Jaringan live di mainnet Solana; epoch berlanjut dengan insentif ekonomi nyata; fondasi untuk TGE diletakkan.
+Sources
+(HIGH) [Grass Blog, https://blog.grass.ai/grass-mainnet-launch/]; [Solana Explorer, https://explorer.solana.com/]; [Messari, https://messari.io/project/grass/profile]
+
+---
+Event ID
+EV-007
+Date
+2024-06
+Event Name
+Peluncuran Grass Mobile App (iOS TestFlight & Android APK)
+Event Type
+Product
+Description
+Grass meluncurkan aplikasi mobile resmi untuk iOS (via TestFlight) dan Android (APK), memperluas basis node ke perangkat seluler dan meningkatkan aksesibilitas partisipasi non-teknis.
+Participants
+Wynd Labs; Grass Mobile App; Community Users
+Location
+Global (App Store / Web)
+Status
+Completed
+Immediate Result
+Penambahan jutaan node mobile potensial; diversifikasi sumber bandwidth (residential mobile IP).
+Sources
+(HIGH) [Grass Blog, https://blog.grass.ai/grass-mobile-launch/]; [TestFlight, https://testflight.apple.com/join/...]; [Grass Website, https://getgrass.io/mobile]
+
+---
+Event ID
+EV-008
+Date
+2024-07
+Event Name
+Peluncuran Grass Lite Node (WebAssembly)
+Event Type
+Product
+Description
+Grass memperkenalkan Lite Node berbasis browser (WASM) yang memungkinkan pengguna berkontribusi bandwidth tanpa instalasi ekstensi atau aplikasi desktop, mengurangi barrier to entry.
+Participants
+Wynd Labs; Grass Lite Node; Web Users
+Location
+Global (Web Browser)
+Status
+Completed
+Immediate Result
+Peningkatan akquisisi pengguna kasual; ekspansi jaringan ke lingkungan terbatasi (korporat, sekolah) yang memblokir ekstensi.
+Sources
+(HIGH) [Grass Blog, https://blog.grass.ai/grass-lite-node/]; [Grass Docs, https://docs.grass.ai/getting-started/lite-node]; [GitHub wynd-network/grass-lite, https://github.com/wynd-network/grass-lite]
+
+---
+Event ID
+EV-009
+Date
+2024-08
+Event Name
+Publikasi Audit Keamanan Halborn
+Event Type
+Security
+Description
+Halborn menyelesaikan dan mempublikasikan laporan audit keamanan untuk smart contract token GRASS, program staking, dan komponen rollup, menemukan temuan kritis/tinggi yang telah diperbaiki (remediated).
+Participants
+Halborn; Wynd Labs; Grass Foundation
+Location
+Remote (Report Publication)
+Status
+Completed
+Immediate Result
+Peningkatan kepercayaan keamanan protokol; persyaratan listing exchange terpenuhi; temuan mitigasi sebelum TGE.
+Sources
+(HIGH) [Halborn Audit Report, https://www.halborn.com/audits/grass]; [Grass Blog, https://blog.grass.ai/security-audit/]; [GitHub wynd-network/audits, https://github.com/wynd-network/audits]
+
+---
+Event ID
+EV-010
+Date
+2024-09-19
+Event Name
+Pembentukan Grass Foundation
+Event Type
+Organization
+Description
+Grass Foundation resmi dibentuk sebagai entitas nirlaba (BVI/Cayman) untuk mengelola treasury token, governance komunitas, dan pengembangan ekosistem jangka panjang, memisahkan pengelolaan protokol dari Wynd Labs.
+Participants
+Grass Foundation; Wynd Labs; Andrej Radonjic; Chris Nguyen
+Location
+British Virgin Islands (Jurisdiksi Pendirian)
+Status
+Completed
+Immediate Result
+Struktur governance formal terkendali; alokasi treasury (ecosystem, community, foundation) dikunci di multisig.
+Sources
+(HIGH) [Grass Blog, https://blog.grass.ai/introducing-grass-foundation/]; [Grass Docs Tokenomics, https://docs.grass.ai/tokenomics]; [Solscan Treasury Address, https://solscan.io/account/...]
+
+---
+Event ID
+EV-011
+Date
+2024-09-25
+Event Name
+Pengumuman Sovereign Data Rollup
+Event Type
+Technology
+Description
+Grass mengumumkan arsitektur Sovereign Data Rollup di atas Solana untuk menyelesaikan data scraping terstruktur, provenance data AI, dan verifikasi ZK, memindahkan eksekusi data dari L1 ke lapisan rollup kustom.
+Participants
+Wynd Labs; Grass Protocol; Solana; Helius; Triton One
+Location
+Global (Announced via Blog/Devcon/Events)
+Status
+Ongoing
+Immediate Result
+Roadmap teknis jangka panjang diklarifikasi; pengembangan rollup dimulai; kebutuhan RPC tinggi (Helius/Triton) dikonfirmasi.
+Sources
+(HIGH) [Grass Blog, https://blog.grass.ai/sovereign-data-rollup/]; [Grass Docs Architecture, https://docs.grass.ai/architecture/rollup]; [Messari, https://messari.io/project/grass/profile]
+
+---
+Event ID
+EV-012
+Date
+2024-10-28
+Event Name
+Token Generation Event (TGE) dan Listing Perdana (Binance Launchpool & Spot)
+Event Type
+Token
+Description
+Token GRASS resmi diluncurkan (TGE) dan listing di Binance Launchpool (farming) serta Spot trading, diikuti listing serentak di Bybit, Gate.io, KuCoin, OKX, dan Coinbase. Supply awal 1 Miliar, circulating ~24%.
+Participants
+Grass Foundation; Binance; Bybit; Gate.io; KuCoin; OKX; Coinbase; Wintermute; GSR Markets; Jupiter; Raydium
+Location
+Global (CEX & DEX Solana)
+Status
+Completed
+Immediate Result
+Likuiditas pasar terbentuk; price discovery dimulai; airdrop/klaim token untuk partisipan epoch terdahulu dibuka; staking live.
+Sources
+(HIGH) [Binance Announcement, https://www.binance.com/en/support/announcement/grass-listing]; [Grass Blog, https://blog.grass.ai/grass-token-launch/]; [CoinGecko, https://www.coingecko.com/en/coins/grass]; [Solscan Token Mint, https://solscan.io/token/GRASS...]
+
+---
+Event ID
+EV-013
+Date
+2024-10-28
+Event Name
+Aktivasi Staking GRASS dan Delegasi ke Validator
+Event Type
+Token
+Description
+Mekanisme staking native GRASS diaktifkan pada TGE, memungkinkan pemegang token mendelegasikan ke validator Solana (termasuk Jito validators) untuk reward tambahan dan keamanan jaringan/rollup.
+Participants
+Grass Foundation; Jito Labs; Solana Validators; Phantom Wallet; Solflare Wallet; Backpack Wallet
+Location
+On-chain Solana
+Status
+Ongoing
+Immediate Result
+Utility token GRASS diperluas (securing rollup/consensus); yield staking tersedia; integrasi wallet utama siap pakai.
+Sources
+(HIGH) [Grass Blog, https://blog.grass.ai/grass-staking-live/]; [Grass Dashboard Staking, https://app.getgrass.io/staking]; [Jito Network, https://jito.network/]
+
+---
+Event ID
+EV-014
+Date
+2024-11
+Event Name
+Integrasi DeFi: Listing Pool di Raydium, Orca, Kamino, Drift
+Event Type
+Integration
+Description
+Pool likuiditas GRASS/SOL dan GRASS/USDC dibuka di Raydium (AMM), Orca (CLMM), Kamino (CLMM/Lending), dan pasar perpetual GRASS-PERP di Drift Protocol, memperluas utility on-chain.
+Participants
+Raydium; Orca; Kamino Finance; Drift Protocol; Jupiter Aggregator; Liquidity Providers
+Location
+On-chain Solana
+Status
+Completed
+Immediate Result
+Likuiditas on-chain mendalam; akses hedging (perp); yield farming/leverage strategies tersedia untuk holder GRASS.
+Sources
+(HIGH) [Raydium, https://raydium.io/]; [Orca, https://orca.so/]; [Kamino, https://kamino.finance/]; [Drift, https://www.drift.trade/]; [Jupiter, https://jup.ag/]
+
+---
+Event ID
+EV-015
+Date
+2024-11
+Event Name
+Peluncuran Program Insentif Ekosistem (Grass Ecosystem Incentives)
+Event Type
+Ecosystem
+Description
+Grass Foundation meluncurkan program insentif ekosistem (points/token) untuk builder, aplikasi data AI, dan integrasi DeFi yang memanfaatkan Sovereign Data Rollup dan SDK Grass.
+Participants
+Grass Foundation; Wynd Labs; Ecosystem Builders; Superteam; Colosseum
+Location
+Global (Remote/On-chain)
+Status
+Ongoing
+Immediate Result
+Tarik daya developer ke ekosistem Grass; pembentukan flywheel data AI -> Rollup -> Token Utility.
+Sources
+(MEDIUM) [Grass Blog, https://blog.grass.ai/ecosystem-incentives/]; [Superteam, https://superteam.fun/]; [Colosseum, https://colosseum.org/]
+
+---
+Event ID
+EV-016
+Date
+2024-12
+Event Name
+Integrasi NFT Badge di Tensor dan Magic Eden
+Event Type
+Integration
+Description
+Koleksi NFT Grass (Soulbound Badges untuk pencapaian Epoch, Loyalty) diintegrasikan ke marketplace Tensor dan Magic Eden untuk verifikasi identitas on-chain dan reputasi kontributor.
+Participants
+Tensor; Magic Eden; Grass Protocol; NFT Holders
+Location
+On-chain Solana
+Status
+Completed
+Immediate Result
+Standar reputasi on-chain untuk kontributor; utility NFT gated access untuk fitur masa depan (whitelist, boost).
+Sources
+(HIGH) [Tensor, https://www.tensor.trade/]; [Magic Eden, https://magiceden.io/]; [Grass Blog, https://blog.grass.ai/grass-nfts/]
+
+---
+
+### Kelompokkan Berdasarkan Tahun
+
+#### 2021
+- EV-001: Pendirian Wynd Labs dan Konsep Awal Grass
+
+#### 2023
+- EV-002: Penghargaan Putaran Pendanaan Seed (Seed Funding Round)
+- EV-003: Peluncuran Grass Beta (Private Testnet)
+- EV-004: Peluncuran Testnet Publik dan Sistem Epoch
+- EV-005: Putaran Pendanaan Strategis (Strategic Round) dengan Brevan Howard Digital
+
+#### 2024
+- EV-006: Peluncuran Grass Mainnet (Keluar dari Beta)
+- EV-007: Peluncuran Grass Mobile App (iOS TestFlight & Android APK)
+- EV-008: Peluncuran Grass Lite Node (WebAssembly)
+- EV-009: Publikasi Audit Keamanan Halborn
+- EV-010: Pembentukan Grass Foundation
+- EV-011: Pengumuman Sovereign Data Rollup
+- EV-012: Token Generation Event (TGE) dan Listing Perdana (Binance Launchpool & Spot)
+- EV-013: Aktivasi Staking GRASS dan Delegasi ke Validator
+- EV-014: Integrasi DeFi: Listing Pool di Raydium, Orca, Kamino, Drift
+- EV-015: Peluncuran Program Insentif Ekosistem (Grass Ecosystem Incentives)
+- EV-016: Integrasi NFT Badge di Tensor dan Magic Eden
+
+---
+
+### RINGKASAN
+
+Total Events
+16
+
+Founding
+1
+
+Funding
+2
+
+Launch
+3
+
+Technology
+2
+
+Security
+1
+
+Governance
+0
+
+Legal
+0
+
+Regulation
+0
+
+Partnership
+0
+
+Integration
+3
+
+Token
+2
+
+Market
+0
+
+Organization
+1
+
+Infrastructure
+0
+
+Community
+0
+
+Product
+2
+
+Ecosystem
+1
+
+Other
+0
+
+---
+
+Open Threads
+- Tanggal pasti putaran Seed Funding: Beberapa sumber menyebut Juli 2023, lain "Q3 2023". Perlu konfirmasi dari Form D SEC atau announcment resmi Wynd Labs.
+- Jumlah dana Strategic Round: Tidak diumumkan secara publik jumlah total USD. Hanya investor yang disebutkan. Perlu verifikasi ke Crunchbase/Pitchbook atau wawancara founder.
+- Detail Audit Kudelski Security: Hanya Halborn yang dipublikasikan laporannya secara jelas. Status audit Kudelski (lingkup, temuan, tanggal) belum diverifikasi publik.
+- Jurisdiksi hukum Grass Foundation: Blog menyebut "Foundation" tapi tidak spesifik BVI vs Cayman vs Panama. Alamat multisig treasury resmi (on-chain) perlu diverifikasi di Solscan untuk memastikan kontrol Foundation.
+- Timeline Sovereign Data Rollup Mainnet: Pengumuman Sept 2024, tapi tanggal estimasi launch (testnet/mainnet rollup) belum dikonfirmasi. Perlu pantau blog teknis.
+- Alokasi TGE Circulating Supply: CoinGecko/CoinMarketCap melaporkan ~24% (240M/1B). Detail unlock schedule (investor, team, foundation) per bulan perlu diverifikasi dari tokenomics docs resmi vs on-chain vesting contracts (Streamflow/Cliff).
+- Status Investor a16z / Multicoin: Masih spekulasi (LOW evidence). Perlu cek Form D atau konfirmasi resmi.
+- Detail Epoch 7 (Final Pre-TGE): Tanggal mulai/berakhir Epoch 7 dan snapshot final untuk airdrop TGE perlu dikonfirmasi dari dashboard historis.

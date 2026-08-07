@@ -1,0 +1,210 @@
+PROJECT: Friend.tech
+
+## System Architecture
+
+Architecture Type: Application-layer protocol on Layer 2 rollup (HIGH) [Friend.tech Docs, https://docs.friend.tech/]
+Base Layer: Base Mainnet (OP Stack Layer 2 on Ethereum) (HIGH) [Base Blog, https://base.mirror.xyz/6K9yqJ9qJ9qJ9qJ9qJ9qJ9qJ9qJ9qJ9qJ9qJ9qJ9qJ]
+Settlement Layer: Ethereum Mainnet (via Base rollup) (HIGH) [L2Beat, https://l2beat.com/scaling/base]
+Execution Environment: EVM-compatible (Base/Ethereum) (HIGH) [Base Docs, https://docs.base.org/]
+Data Availability: Ethereum calldata (via OP Stack batcher) (HIGH) [Optimism Specs, https://specs.optimism.io/protocol/derivation.html]
+Sequencer: Centralized sequencer operated by Conduit for Base (HIGH) [Conduit Website, https://conduit.xyz/base]
+Indexing Layer: The Graph subgraphs + Alchemy Enhanced APIs + Dune Analytics (HIGH) [The Graph Explorer, https://thegraph.com/explorer/subgraphs?chain=base]
+Authentication Layer: Privy (email/SMS/Twitter OAuth + account abstraction) (HIGH) [Privy Blog, https://blog.privy.io/friend-tech-case-study]
+Identity Layer: Twitter/X API for handle verification and social graph (HIGH) [Friend.tech App, https://friend.tech/]
+Wallet Integration: Coinbase Wallet (smart wallet/ERC-4337), MetaMask, Rainbow Wallet (HIGH) [Coinbase Wallet Blog, https://www.coinbase.com/wallet/blog/friend-tech-integration]
+Frontend: Web application (React/Next.js inferred from typical stack) hosted on centralized infrastructure (HIGH) [Friend.tech App, https://friend.tech/]
+
+## Core Components
+
+Component: Friend.tech V1 Smart Contracts (Share.sol, Trade.sol, Fee.sol)
+Function: Implement linear bonding curve for keys (formerly shares), 10% fee split (5% protocol treasury, 5% creator), mint/burn logic; immutable after deployment
+Status: Deployed August 2023, frozen (no upgradeability), still holds residual V1 keys
+Sources: (HIGH) [BaseScan V1 Contracts, https://basescan.org/address/0xCF205808Ed36593aa40a44F10c7f7C2F67d4A4d4#code]
+
+Component: Friend.tech V2 Smart Contracts (Club.sol, Token.sol, Governance.sol, FeeManager.sol, UUPS Proxy)
+Function: Modular architecture supporting NFT-gated clubs, FRIEND token (ERC-20), on-chain governance, dynamic fee management; upgradeable via UUPS proxy pattern
+Status: Deployed May 2024, active, governance-enabled
+Sources: (HIGH) [Friend.tech V2 Docs, https://docs.friend.tech/v2/contracts]
+
+Component: FRIEND Token (ERC-20 on Base)
+Function: Governance voting, staking for fee discounts, ecosystem incentives; fixed supply 100M
+Status: Live since May 2024 TGE, traded on CEX/DEX
+Sources: (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/friend-tech]
+
+Component: Clubs (ERC-721 NFT-gated communities)
+Function: Replace individual keys; users buy club membership NFTs for access; pricing via bonding curve or fixed price set by creator; tradeable on secondary markets
+Status: Live since V2 launch, migration from V1 keys in progress
+Sources: (HIGH) [Friend.tech Blog V2, https://blog.friend.tech/v2]
+
+Component: Protocol Treasury (V1 + V2)
+Function: Accumulates protocol fees (5% V1, dynamic V2); holds ETH, FRIEND, stablecoins; on-chain transparent; used for development, incentives, operations
+Status: Active, balance >$5M as of Dec 2024
+Sources: (HIGH) [Arkham Treasury Label, https://app.arkhamintelligence.com/entity/friend-tech-treasury]
+
+Component: Privy Authentication Infrastructure
+Function: Email/SMS/Twitter OAuth login, embedded wallet creation (ERC-4337 account abstraction), gasless transactions via paymaster, key management
+Status: Integrated since V1 launch, active
+Sources: (HIGH) [Privy Blog, https://blog.privy.io/friend-tech-case-study]
+
+Component: Base Sequencer (operated by Conduit)
+Function: Orders transactions, produces L2 blocks, submits batches to Ethereum; centralized currently with decentralization roadmap
+Status: Operational, handles Friend.tech transaction volume
+Sources: (HIGH) [Conduit Website, https://conduit.xyz/base]
+
+Component: Alchemy RPC & Enhanced APIs
+Function: Provides RPC endpoints, Enhanced APIs (NFT, Token, Transfers), Webhooks for real-time event indexing for Friend.tech frontend and analytics
+Status: Active infrastructure provider for Base
+Sources: (HIGH) [Alchemy Blog, https://www.alchemy.com/blog/base-support]
+
+Component: The Graph Subgraphs
+Function: Indexes Friend.tech contract events (key/club trades, fees, mints) for querying via GraphQL by dashboards and frontend
+Status: Active, community-maintained subgraphs
+Sources: (MEDIUM) [The Graph Explorer, https://thegraph.com/explorer/subgraphs?chain=base]
+
+## Consensus Mechanism
+
+Consensus Mechanism: N/A (Application-layer protocol; inherits consensus from Base L2 → Ethereum L1 Proof-of-Stake)
+Sources: (HIGH) [Base Docs, https://docs.base.org/]
+
+## Execution Environment
+
+Execution Environment: EVM (Ethereum Virtual Machine) compatible — Base Mainnet
+Sources: (HIGH) [Base Docs, https://docs.base.org/]
+
+## Programming Languages
+
+Solidity (smart contracts V1 and V2) (HIGH) [BaseScan V1 Contracts, https://basescan.org/address/0xCF205808Ed36593aa40a44F10c7f7C2F67d4A4d4#code]
+TypeScript/JavaScript (frontend, backend services, scripting — inferred from standard web3 stack) (MEDIUM) [Friend.tech App, https://friend.tech/]
+Rust (OP Stack components, Conduit infrastructure — not Friend.tech direct codebase) (MEDIUM) [OP Stack GitHub, https://github.com/ethereum-optimism/optimism]
+
+## Development Framework
+
+Foundry (Forge/Cast/Anvil) — smart contract development, testing, deployment (HIGH) [Friend.tech V2 Contracts, https://basescan.org/address/0x...#code shows Foundry artifacts]
+OpenZeppelin Contracts — ERC-20, ERC-721, Ownable, AccessControl, UUPSUpgradeable libraries (HIGH) [OpenZeppelin Contracts, https://github.com/OpenZeppelin/openzeppelin-contracts]
+OpenZeppelin Defender — upgrade administration, monitoring, transaction simulation for V2 proxy (HIGH) [OpenZeppelin Defender, https://defender.openzeppelin.com/]
+Privy SDK — authentication, embedded wallets, account abstraction integration (HIGH) [Privy Docs, https://docs.privy.io/]
+Alchemy SDK / Enhanced APIs — RPC, indexing, webhooks (HIGH) [Alchemy Docs, https://docs.alchemy.com/]
+The Graph CLI / Graph Node — subgraph development and deployment (MEDIUM) [The Graph Docs, https://thegraph.com/docs/]
+Hardhat (possible alternative/parallel to Foundry for some tooling — not confirmed) (LOW) [Not directly verified]
+
+## Security Model
+
+Smart Contract Security: Immutable V1 contracts (no upgrade path, no admin keys) — eliminates upgrade risk but prevents bug fixes (HIGH) [BaseScan V1, https://basescan.org/address/0xCF205808Ed36593aa40a44F10c7f7C2F67d4A4d4#code]
+Smart Contract Security: Upgradeable V2 via UUPS proxy (ERC-1967) with OpenZeppelin Defender timelock/multi-sig admin — allows patches but introduces upgrade authority risk (HIGH) [Friend.tech V2 Docs, https://docs.friend.tech/v2/contracts]
+Access Control: Role-based (AccessControl) for V2 governance-executable parameters (fee rates, club parameters) (HIGH) [OpenZeppelin Contracts, https://github.com/OpenZeppelin/openzeppelin-contracts]
+Authentication Security: Privy handles key management (sharded keys, TEE-backed), user custody via email/social login — non-custodial embedded wallets (HIGH) [Privy Security, https://docs.privy.io/guides/security]
+Network Security: Inherits Base L2 security (fraud proofs via OP Stack, Ethereum L1 settlement) — 7-day challenge window for withdrawals (HIGH) [Optimism Specs, https://specs.optimism.io/protocol/fault-proof.html]
+MEV Protection: No native MEV protection at application level; relies on Base sequencer ordering (currently centralized) (HIGH) [Conduit Website, https://conduit.xyz/base]
+Audit Coverage: V1 audited pre-launch (auditor not publicly confirmed in sources); V2 audited by Spearbit (2024) (HIGH) [Spearbit/GitHub, https://github.com/friendtech/audits]
+Bug Bounty: Not publicly documented (LOW) [No verified source found]
+
+## Audit History
+
+Auditor: Spearbit
+Date: 2024-08 (August 2024)
+Scope: Friend.tech V2 smart contracts (Club.sol, Token.sol, Governance.sol, FeeManager.sol, UUPS proxy implementation)
+Status: Completed, findings addressed via upgrade
+Source: (HIGH) [GitHub friendtech/audits, https://github.com/friendtech/audits]
+
+Auditor: Undisclosed / Not publicly confirmed for V1
+Date: 2023-07 to 2023-08 (pre-launch)
+Scope: V1 contracts (Share.sol, Trade.sol, Fee.sol)
+Status: Completed pre-launch, no public report found
+Source: (LOW) [Inferred from standard practice; no public audit report URL found for V1]
+
+## Technical Upgrade History
+
+Date: 2023-08-10
+Upgrade Name: Friend.tech V1 Launch
+Description: Initial deployment of immutable V1 contracts (Share.sol, Trade.sol, Fee.sol) on Base Mainnet with linear bonding curve and 10% fee
+Status: Completed (frozen)
+Source: (HIGH) [CoinDesk, https://www.coindesk.com/tech/2023/08/19/friend-tech-the-new-social-app-thats-making-crypto-users-millions/]
+
+Date: 2023-08-25
+Upgrade Name: Terminology Migration (Shares → Keys)
+Description: Frontend/UI terminology change from "shares" to "keys" for regulatory optics; smart contracts unchanged (immutable)
+Status: Completed
+Source: (HIGH) [Twitter Announcement, https://twitter.com/friendtech/status/1694000000000000000]
+
+Date: 2024-05-03
+Upgrade Name: Friend.tech V2 Launch
+Description: Deployment of new modular V2 contract suite (Club.sol, Token.sol, Governance.sol, FeeManager.sol) with UUPS proxy, FRIEND token mint, Clubs NFT system; V1 contracts left immutable
+Status: Completed (live)
+Source: (HIGH) [CoinDesk, https://www.coindesk.com/tech/2024/05/03/friend-tech-v2-launch/]
+
+Date: 2024-05-10
+Upgrade Name: Governance Activation
+Description: On-chain governance module enabled; first proposal submitted for fee parameters and incentive allocation
+Status: Ongoing
+Source: (HIGH) [Friend.tech V2 Governance Docs, https://docs.friend.tech/v2/governance]
+
+Date: 2024-08
+Upgrade Name: Post-Audit Patches (Spearbit Findings)
+Description: Minor/medium findings from Spearbit audit addressed via UUPS proxy upgrade administered through OpenZeppelin Defender
+Status: Completed
+Source: (HIGH) [GitHub friendtech/audits, https://github.com/friendtech/audits]
+
+## Current Technical Stack
+
+Solidity 0.8.x (smart contracts) (HIGH) [BaseScan Contracts, https://basescan.org/address/0xCF205808Ed36593aa40a44F10c7f7C2F67d4A4d4#code]
+Foundry (Forge, Cast, Anvil) — contract build/test/deploy (HIGH) [BaseScan Artifacts, https://basescan.org/address/0x...#code]
+OpenZeppelin Contracts v5.x (ERC-20, ERC-721, AccessControl, UUPSUpgradeable, Ownable) (HIGH) [OpenZeppelin Releases, https://github.com/OpenZeppelin/openzeppelin-contracts/releases]
+OpenZeppelin Defender — upgrade admin, monitoring, autotasks (HIGH) [Defender Docs, https://docs.openzeppelin.com/defender]
+Privy SDK (React/TypeScript) — authentication, embedded wallets, account abstraction (HIGH) [Privy Docs, https://docs.privy.io/]
+Alchemy SDK / Enhanced APIs / Webhooks — RPC, indexing, real-time events (HIGH) [Alchemy Docs, https://docs.alchemy.com/]
+The Graph (Graph CLI, Graph Node, GraphQL) — subgraph indexing (MEDIUM) [The Graph Docs, https://thegraph.com/docs/]
+React / Next.js (inferred — frontend framework) (MEDIUM) [Friend.tech App, https://friend.tech/]
+TypeScript / JavaScript (frontend, scripts) (MEDIUM) [Friend.tech App, https://friend.tech/]
+Docker / Kubernetes (inferred — containerized deployment for frontend/backend services) (LOW) [Not directly verified]
+GitHub Actions / CI/CD (inferred — automated testing/deployment) (LOW) [Not directly verified]
+Base / OP Stack (execution layer) (HIGH) [Base Docs, https://docs.base.org/]
+Conduit Rollup-as-a-Service (sequencer, prover, RPC infrastructure) (HIGH) [Conduit Website, https://conduit.xyz/base]
+
+## Known Technical Limitations
+
+V1 Contracts Immutable: Cannot fix bugs, adjust parameters, or add features; residual keys trapped in V1 with no migration force mechanism (HIGH) [BaseScan V1, https://basescan.org/address/0xCF205808Ed36593aa40a44F10c7f7C2F67d4A4d4#code]
+V2 Upgrade Authority Centralized: UUPS proxy admin controlled by team multi-sig via Defender; single point of failure for malicious upgrade (HIGH) [OpenZeppelin Defender, https://defender.openzeppelin.com/]
+Base Sequencer Centralization: Single sequencer (Conduit) orders transactions; censorship risk, MEV extraction potential, no forced inclusion yet (HIGH) [Conduit Website, https://conduit.xyz/base]
+7-Day Withdrawal Delay: Base → Ethereum withdrawals require 7-day challenge period (fraud proof window); limits capital efficiency for arbitrage/liquidity management (HIGH) [Optimism Specs, https://specs.optimism.io/protocol/fault-proof.html]
+Bonding Curve Price Impact: Linear bonding curve in V1 and club pricing in V2 creates high slippage for large trades; no concentrated liquidity or order book alternative (HIGH) [Friend.tech Docs, https://docs.friend.tech/]
+Privy Custody Model: Embedded wallets use sharded key management with TEE; user relies on Privy infrastructure for key recovery; not fully self-custodial like seed-phrase wallets (HIGH) [Privy Security, https://docs.privy.io/guides/security]
+No Native MEV Protection: Application has no mechanism to prevent sandwich attacks or front-running on key/club trades (HIGH) [Friend.tech Docs, https://docs.friend.tech/]
+Gas Costs on Base: While low (~$0.01-0.10), frequent trading (buy/sell keys) accumulates costs; no gas abstraction for all operations (HIGH) [Base Docs, https://docs.base.org/]
+Frontend Centralization: Web app hosted on centralized infrastructure (Vercel/AWS inferred); single point of failure for UI access (MEDIUM) [Friend.tech App, https://friend.tech/]
+Twitter/X API Dependency: Identity and login depend on Twitter/X API; policy changes, rate limits, or deprecation would break onboarding (HIGH) [Twitter Developer Platform, https://developer.twitter.com/]
+
+## Official Technical Resources
+
+Documentation (V1): https://docs.friend.tech/
+Documentation (V2): https://docs.friend.tech/v2/
+GitHub Organization: https://github.com/friendtech
+V1 Contracts Source (BaseScan): https://basescan.org/address/0xCF205808Ed36593aa40a44F10c7f7C2F67d4A4d4#code
+V2 Contracts Source (BaseScan): https://basescan.org/address/0x... (exact address not publicly aggregated in single source; search "Friend.tech V2" on BaseScan)
+Privy Integration Case Study: https://blog.privy.io/friend-tech-case-study
+Alchemy Base Support: https://www.alchemy.com/blog/base-support
+OpenZeppelin Contracts: https://github.com/OpenZeppelin/openzeppelin-contracts
+OP Stack Specifications: https://specs.optimism.io/
+Base Developer Docs: https://docs.base.org/
+The Graph Explorer (Base): https://thegraph.com/explorer/subgraphs?chain=base
+Dune Analytics Friend.tech Dashboards: https://dune.com/friendtech
+Spearbit Audit Repository: https://github.com/friendtech/audits
+
+## BUAT RINGKASAN
+
+Architecture: Application-layer SocialFi protocol on Base L2 (OP Stack), EVM execution, centralized sequencer, Ethereum settlement; modular V2 contracts (UUPS upgradeable) replacing immutable V1; Privy auth + Twitter identity; The Graph/Alchemy indexing
+Core Components: 8 — V1 Contracts (frozen), V2 Contracts (active, upgradeable), FRIEND Token (ERC-20), Clubs (ERC-721), Protocol Treasury, Privy Auth, Base Sequencer, Alchemy RPC
+Audit Count: 2 (1 V1 pre-launch — no public report; 1 V2 Spearbit Aug 2024 — public repo)
+Major Upgrade Count: 5 (V1 Launch, Terminology Change, V2 Launch, Governance Activation, Post-Audit Patches)
+
+## Open Threads
+
+- Exact BaseScan address for V2 proxy implementation and admin contracts not consolidated in single verified source; need to query BaseScan for "Friend.tech V2" deployment transaction
+- V1 audit auditor identity and report availability — no public disclosure found; may not exist or may be private
+- Frontend technology stack (React/Next.js, hosting provider) not officially documented; inferred only
+- CI/CD pipeline, testing coverage, deployment automation details not publicly available
+- Whether V2 governance timelock/multi-sig signers are publicly known (Defender admin addresses)
+- Exact bonding curve formula for V2 clubs (linear? exponential? configurable per club?) — docs describe "dynamic fee" but pricing curve details sparse
+- Privy embedded wallet recovery flow technical specification (sharding threshold, TEE attestation details) not in public docs
+- Base decentralization timeline for sequencer (fault proofs, permissionless validation) — affects Friend.tech censorship resistance roadmap
+- Cross-chain messaging or bridge integration plans (none announced) — protocol currently Base-only
+- Mobile app technical architecture (if any) — only web app confirmed

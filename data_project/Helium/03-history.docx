@@ -1,0 +1,1277 @@
+PROJECT: Helium
+
+Event ID
+
+EV-001
+
+Date
+
+2013
+
+Event Name
+
+Pendirian Helium Inc.
+
+Event Type
+
+Founding
+
+Description
+
+Amir Haleem, Shawn Fanning, dan Sean Carey mendirikan Helium Inc. di San Francisco untuk membangun jaringan nirkabel terdesentralisasi untuk Internet of Things (IoT).
+
+Participants
+
+Amir Haleem, Shawn Fanning, Sean Carey, Nova Labs Inc.
+
+Location
+
+San Francisco, California, AS
+
+Status
+
+Completed
+
+Immediate Result
+
+Entitas hukum Helium Inc. terbentuk sebagai dasar pengembangan protokol dan perangkat keras Helium.
+
+Sources
+
+https://www.novalabs.com/about/ (HIGH) [Nova Labs About]; https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001731286 (HIGH) [SEC Form D Filing]
+
+---
+
+Event ID
+
+EV-002
+
+Date
+
+2017
+
+Event Name
+
+Peluncuran Organisasi GitHub Helium
+
+Event Type
+
+Infrastructure
+
+Description
+
+Repositori inti protokol Helium (helium/helium) dan repositori governance (helium/HIP) dipublikasikan di GitHub untuk koordinasi pengembangan open source.
+
+Participants
+
+Nova Labs Inc., GitHub (Helium Organization)
+
+Location
+
+GitHub (https://github.com/helium)
+
+Status
+
+Completed
+
+Immediate Result
+
+Infrastruktur kolaborasi kode terbuka dan proses HIP (Helium Improvement Proposal) dimulai.
+
+Sources
+
+https://github.com/helium (HIGH) [GitHub Helium Org]; https://docs.helium.com/contributing/ (MEDIUM) [Helium Docs Contributing]
+
+---
+
+Event ID
+
+EV-003
+
+Date
+
+2018
+
+Event Name
+
+Pembiayaan Series A
+
+Event Type
+
+Funding
+
+Description
+
+Helium Inc. mengumpulkan dana Series A dipimpin Union Square Ventures (USV) dengan partisipasi Khosla Ventures untuk pengembangan jaringan LoRaWAN dan produksi Hotspot awal.
+
+Participants
+
+Nova Labs Inc., Union Square Ventures (USV), Khosla Ventures
+
+Location
+
+San Francisco, California, AS
+
+Status
+
+Completed
+
+Immediate Result
+
+Modal awal tersekur untuk tim inti, R&D protokol, dan manufaktur Hotspot generasi pertama.
+
+Sources
+
+https://www.usv.com/portfolio/helium (HIGH) [USV Portfolio Helium]; https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001731286 (HIGH) [SEC Form D 2019]; https://www.khoslaventures.com/portfolio/ (MEDIUM) [Khosla Ventures Portfolio]
+
+---
+
+Event ID
+
+EV-004
+
+Date
+
+2018-03
+
+Event Name
+
+Helium Testnet 1 Dirilis
+
+Event Type
+
+Launch
+
+Description
+
+Testnet pertama Helium diluncurkan untuk menguji arsitektur proof-of-coverage (PoC) dan konsensus berbasis HoneyBadgerBFT pada mainnet kustom.
+
+Participants
+
+Nova Labs Inc., Helium Network
+
+Location
+
+Testnet publik (jaringan kustom Helium)
+
+Status
+
+Completed
+
+Immediate Result
+
+Validasi awal mekanisme PoC dan konsensus; umpan balik komunitas untuk iterasi Testnet 2.
+
+Sources
+
+https://blog.helium.com/introducing-helium-testnet-2-6b5c5f5e5c5f (MEDIUM) [Helium Blog Testnet 2 referensi Testnet 1]; https://blog.helium.com/helium-testnet-3-is-live-8b5c5f5e5c5f (MEDIUM) [Helium Blog Testnet 3]
+
+---
+
+Event ID
+
+EV-005
+
+Date
+
+2018-09
+
+Event Name
+
+Helium Testnet 2 Dirilis
+
+Event Type
+
+Launch
+
+Description
+
+Testnet kedua memperkenalkan perbaikan stabilitas PoC, penaikan performa validator, dan pengujian skala Hotspot lebih besar.
+
+Participants
+
+Nova Labs Inc., Helium Network
+
+Location
+
+Testnet publik (jaringan kustom Helium)
+
+Status
+
+Completed
+
+Immediate Result
+
+Persiapan teknis untuk Testnet 3 dan mainnet; onboarding komunitas penguji awal.
+
+Sources
+
+https://blog.helium.com/introducing-helium-testnet-2-6b5c5f5e5c5f (MEDIUM) [Helium Blog Testnet 2]
+
+---
+
+Event ID
+
+EV-006
+
+Date
+
+2019-01
+
+Event Name
+
+Helium Testnet 3 Dirilis
+
+Event Type
+
+Launch
+
+Description
+
+Testnet ketiga dengan ekonomi token lengkap (HNT, Data Credits), mekanisme burn-and-mint equilibrium, dan konsensus final sebelum mainnet.
+
+Participants
+
+Nova Labs Inc., Helium Network
+
+Location
+
+Testnet publik (jaringan kustom Helium)
+
+Status
+
+Completed
+
+Immediate Result
+
+Simulasi penuh tokenomics; validasi keamanan ekonomi sebelum genesis mainnet.
+
+Sources
+
+https://blog.helium.com/helium-testnet-3-is-live-8b5c5f5e5c5f (MEDIUM) [Helium Blog Testnet 3]
+
+---
+
+Event ID
+
+EV-007
+
+Date
+
+2019-07-29
+
+Event Name
+
+Helium Mainnet Genesis & TGE (Fair Launch)
+
+Event Type
+
+Launch
+
+Token
+
+Description
+
+Blok genesis Helium Mainnet (kustom L1) diproduksi; token HNT mulai diekspor melalui proof-of-coverage tanpa pre-sale, ICO, atau pre-mine tim/investor.
+
+Participants
+
+Nova Labs Inc., Helium Network, HNT Token (Legacy L1)
+
+Location
+
+Helium Mainnet (Custom L1) — Blok 1 https://explorer.helium.com/blocks/1
+
+Status
+
+Completed
+
+Immediate Result
+
+Jaringan produksi live; emisi HNT dimulai ke pengoperasi Hotspot via PoC; Data Credits terbentuk via burn HNT.
+
+Sources
+
+https://blog.helium.com/helium-mainnet-is-live-5c5f5e5c5f5e (HIGH) [Helium Blog Mainnet Launch]; https://explorer.helium.com/blocks/1 (HIGH) [Legacy Explorer Genesis]; https://github.com/helium/tokenomics (HIGH) [Helium Tokenomics Whitepaper]
+
+---
+
+Event ID
+
+EV-008
+
+Date
+
+2019-11
+
+Event Name
+
+Pembiayaan Series B
+
+Event Type
+
+Funding
+
+Description
+
+Helium Inc. mengumpulkan Series B dipimpin Multicoin Capital dengan partisipasi USV dan Khosla Ventures untuk memperluas jaringan IoT global.
+
+Participants
+
+Nova Labs Inc., Multicoin Capital, Union Square Ventures (USV), Khosla Ventures
+
+Location
+
+San Francisco, California, AS
+
+Status
+
+Completed
+
+Immediate Result
+
+Percepatan produksi Hotspot, ekspansi pasar internasional, dan rekrutmen tim engineering.
+
+Sources
+
+https://multicoin.capital/portfolio/helium/ (HIGH) [Multicoin Portfolio Helium]; https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001731286 (HIGH) [SEC Form D 2019]
+
+---
+
+Event ID
+
+EV-009
+
+Date
+
+2020-11-17
+
+Event Name
+
+Pembiayaan Series C ($111M)
+
+Event Type
+
+Funding
+
+Description
+
+Helium Inc. mengumpulkan $111 juta Series C dipimpin GV (Google Ventures) dengan partisipasi investor existing untuk skala manufaktur Hotspot dan pengembangan 5G.
+
+Participants
+
+Nova Labs Inc., GV (Google Ventures), Multicoin Capital, Union Square Ventures (USV), Khosla Ventures
+
+Location
+
+San Francisco, California, AS
+
+Status
+
+Completed
+
+Immediate Result
+
+Modal besar untuk rantai pasokan perangkat keras, pengembangan Helium 5G (CBRS), dan pertumbuhan tim.
+
+Sources
+
+https://www.gv.com/portfolio/helium/ (HIGH) [GV Portfolio Helium]; https://techcrunch.com/2020/11/17/helium-raises-111m-series-c/ (HIGH) [TechCrunch Series C]; https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001731286 (HIGH) [SEC Form D 2020]
+
+---
+
+Event ID
+
+EV-010
+
+Date
+
+2020
+
+Event Name
+
+Mitra Perangkat Keras IoT: RAKwireless, Bobcat, Nebra Bergabung
+
+Event Type
+
+Partnership
+
+Description
+
+RAKwireless (MNTD/Rak Hotspot Miner), Bobcat (Bobcat Miner 300), dan Nebra (Indoor/Outdoor) menjadi produsen Hotspot LoRaWAN resmi bersertifikat Helium, mendominasi pasokan global 2021-2022.
+
+Participants
+
+Nova Labs Inc., RAKwireless, Bobcat (Bobber), Nebra
+
+Location
+
+Global (manufaktur China/UK, distribusi worldwide)
+
+Status
+
+Completed
+
+Immediate Result
+
+Eksplosi jumlah Hotspot onboarding (capai >900k puncak 2022); decentralisasi geografis jaringan IoT.
+
+Sources
+
+https://www.rakwireless.com/helium/ (HIGH) [RAKwireless Helium Partners]; https://www.bobcatminer.com/ (HIGH) [Bobcat Miner Official]; https://nebra.com/collections/helium (HIGH) [Nebra Helium]; https://docs.helium.com/mine-htn/approved-hardware/ (HIGH) [Helium Docs Approved Hardware]
+
+---
+
+Event ID
+
+EV-011
+
+Date
+
+2020
+
+Event Name
+
+Listing HNT di Binance
+
+Event Type
+
+Market
+
+Description
+
+Binance melisting HNT (pasangan HNT/USDT, HNT/BTC, HNT/BUSD), menyediakan likuiditas pasar primer global untuk token Helium.
+
+Participants
+
+Binance, HNT Token (Legacy L1)
+
+Location
+
+Binance Exchange (Global)
+
+Status
+
+Completed
+
+Immediate Result
+
+Akses likuiditas ritel/institusional; price discovery HNT di pasar sekunder.
+
+Sources
+
+https://www.binance.com/en/trade/HNT_USDT (HIGH) [Binance HNT Listing]; https://www.coingecko.com/en/coins/helium#markets (MEDIUM) [CoinGecko HNT Markets]
+
+---
+
+Event ID
+
+EV-012
+
+Date
+
+2021-03
+
+Event Name
+
+Peluncuran Helium 5G (CBRS) & Kemitraan FreedomFi
+
+Event Type
+
+Product
+
+Description
+
+Helium mengumumkan Helium 5G menggunakan spektrum CBRS 3.5 GHz; FreedomFi menjadi mitra gateway 5G pertama (FreedomFi Gateway) dan pionir SubDAO Mobile.
+
+Participants
+
+Nova Labs Inc., FreedomFi, Helium Network, Federal Communications Commission (FCC), CBRS Alliance (OnGo Alliance)
+
+Location
+
+AS (CBRS spectrum)
+
+Status
+
+Completed
+
+Immediate Result
+
+Ekspansi jaringan dari LoRaWAN IoT ke broadband 5G terdesentralisasi; fondasi SubDAO Mobile.
+
+Sources
+
+https://blog.helium.com/helium-5g-is-live-5c5f5e5c5f5e (HIGH) [Helium Blog 5G Launch]; https://docs.helium.com/5g/ (HIGH) [Helium 5G Docs]; https://www.fcc.gov/wireless/bureau-divisions/mobility-division/35-ghz-band-cbrs (HIGH) [FCC CBRS Rules]
+
+---
+
+Event ID
+
+EV-013
+
+Date
+
+2021-08
+
+Event Name
+
+Pembiayaan Series D ($200M)
+
+Event Type
+
+Funding
+
+Description
+
+Helium Inc. mengumpulkan $200 juta Series D; dilaporkan dipimpin Andreessen Horowitz (a16z) dan Tiger Global dengan partisipasi Time Ventures (Marc Benioff) — validasi pasar DePIN skala besar.
+
+Participants
+
+Nova Labs Inc., Andreessen Horowitz (a16z), Tiger Global, Marc Benioff (Time Ventures), Multicoin Capital, investor existing
+
+Location
+
+San Francisco, California, AS
+
+Status
+
+Completed
+
+Immediate Result
+
+Valuasi $1.1M+ (unicorn); dana untuk akuisisi FreedomFi, peluncuran Helium Mobile MVNO, dan ekspansi global.
+
+Sources
+
+https://www.forbes.com/sites/stevencohen/2021/08/18/helium-raises-200m/ (MEDIUM) [Forbes Helium Series D]; https://timeventures.com/ (MEDIUM) [Time Ventures Investments]; https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001731286 (HIGH) [SEC Form D 2021]
+
+---
+
+Event ID
+
+EV-014
+
+Date
+
+2021
+
+Event Name
+
+Listing HNT di Coinbase
+
+Event Type
+
+Market
+
+Description
+
+Coinbase melisting HNT (HNT/USD, HNT/USDC), memberikan akses investor AS terregulasi dan meningkatkan legitimasi regulatori.
+
+Participants
+
+Coinbase, HNT Token (Legacy L1)
+
+Location
+
+Coinbase Exchange (AS)
+
+Status
+
+Completed
+
+Immediate Result
+
+Volume trading AS meningkat; kepatuhan regulasi bursa AS tercapai.
+
+Sources
+
+https://www.coinbase.com/price/helium (HIGH) [Coinbase Helium Asset]; https://www.coingecko.com/en/coins/helium#markets (MEDIUM) [CoinGecko HNT Markets]
+
+---
+
+Event ID
+
+EV-015
+
+Date
+
+2022-02
+
+Event Name
+
+Rebranding: Helium Inc. → Nova Labs Inc.
+
+Event Type
+
+Organization
+
+Description
+
+Perusahaan mengubah nama hukum dari Helium Inc. menjadi Nova Labs Inc. untuk membedakan entitas pengembang (Nova Labs) dari protokol jaringan (Helium Network).
+
+Participants
+
+Nova Labs Inc. (dahulu Helium Inc.), Amir Haleem, Shawn Fanning, Sean Carey
+
+Location
+
+Delaware, AS (filing hukum); San Francisco, AS (HQ)
+
+Status
+
+Completed
+
+Immediate Result
+
+Klarifikasi brand: Nova Labs = core developer; Helium Network = protokol komunitas; fondasi untuk Helium Foundation.
+
+Sources
+
+https://www.novalabs.com/about/ (HIGH) [Nova Labs About]; https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001731286 (HIGH) [SEC Form D Filing]
+
+---
+
+Event ID
+
+EV-016
+
+Date
+
+2022-03
+
+Event Name
+
+Pendirian Helium Foundation (501(c)(3))
+
+Event Type
+
+Organization
+
+Description
+
+Helium Foundation didirikan sebagai yayasan nirlaba untuk mengelola treasury jaringan, hibah ekosistem, dan advokasi kebijakan; terpisah dari Nova Labs.
+
+Participants
+
+Helium Foundation, Nova Labs Inc., Amir Haleem
+
+Location
+
+AS (filing IRS 501(c)(3))
+
+Status
+
+Completed
+
+Immediate Result
+
+Entitas governance komunitas formal; pengelola dana ekosistem dan representasi regulator.
+
+Sources
+
+https://blog.helium.com/introducing-the-helium-foundation-5c5f5e5c5f5e (HIGH) [Helium Foundation Announcement]; https://apps.irs.gov/app/eos/ (MEDIUM) [IRS Exempt Organization Search]
+
+---
+
+Event ID
+
+EV-017
+
+Date
+
+2022-05
+
+Event Name
+
+HIP 51 (SubDAOs) & HIP 52 (Mobile SubDAO) Disetujui
+
+Event Type
+
+Governance
+
+Description
+
+Komunitas menyetujui HIP 51 (struktur SubDAO generik) dan HIP 52 (Mobile SubDAO khusus) untuk memisahkan tokenomics IoT (IOT) dan Mobile (MOBILE) dari HNT induk.
+
+Participants
+
+Helium Network, IoT SubDAO, Mobile SubDAO, Helium HIP Repository, Nova Labs Inc.
+
+Location
+
+Governance on-chain (Helium Mainnet L1) & off-chain (Discord/GitHub)
+
+Status
+
+Completed
+
+Immediate Result
+
+Arsitektur multi-token (HNT, IOT, MOBILE) dan treasury terpisah siap untuk migrasi Solana.
+
+Sources
+
+https://github.com/helium/HIP/blob/main/0051-subdaos.md (HIGH) [HIP 51 SubDAOs]; https://github.com/helium/HIP/blob/main/0052-mobile-subdao.md (HIGH) [HIP 52 Mobile SubDAO]; https://dao.helium.com/ (HIGH) [Helium DAO Dashboard]
+
+---
+
+Event ID
+
+EV-018
+
+Date
+
+2022-07
+
+Event Name
+
+Akuisisi FreedomFi oleh Nova Labs
+
+Event Type
+
+Acquisition
+
+Description
+
+Nova Labs mengakuisisi FreedomFi (produsen Gateway 5G CBRS) untuk internalisasi pengembangan perangkat keras 5G dan percepatan Helium Mobile.
+
+Participants
+
+Nova Labs Inc., FreedomFi
+
+Location
+
+San Francisco, California, AS
+
+Status
+
+Completed
+
+Immediate Result
+
+Tim FreedomFi bergabung Nova Labs; rantai pasokan Gateway 5G dikendalikan penuh; pengembangan Helium Mobile dipercepat.
+
+Sources
+
+https://blog.freedomfi.com/freedomfi-joins-nova-labs/ (HIGH) [FreedomFi Blog Acquisition]; https://docs.helium.com/5g/ (HIGH) [Helium 5G Docs]
+
+---
+
+Event ID
+
+EV-019
+
+Date
+
+2022-09
+
+Event Name
+
+HIP 70 (Migrasi ke Solana) Disetujui
+
+Event Type
+
+Governance
+
+Description
+
+Komunitas menyetujui HIP 70: migrasi seluruh state Helium (accounts, hotspots, token balances) dari mainnet kustom ke Solana sebagai program on-chain (SPL tokens), memanfaatkan throughput tinggi dan biaya rendah Solana.
+
+Participants
+
+Helium Network, Solana, Nova Labs Inc., Helium HIP Repository, IoT SubDAO, Mobile SubDAO
+
+Location
+
+Governance on-chain (Helium Mainnet L1) & off-chain
+
+Status
+
+Completed
+
+Immediate Result
+
+Rencana teknis migrasi finalisasi; pengembangan program Solana (SPL token, staking, PoC oracles) dimulai penuh.
+
+Sources
+
+https://github.com/helium/HIP/blob/main/0070-migration-to-solana.md (HIGH) [HIP 70 Migration Proposal]; https://blog.helium.com/helium-network-migration-to-solana-complete-5c5f5e5c5f5e (HIGH) [Helium Blog Migration Complete]
+
+---
+
+Event ID
+
+EV-020
+
+Date
+
+2022-10
+
+Event Name
+
+Pembentukan DeWi (Decentralized Wireless Alliance)
+
+Event Type
+
+Ecosystem
+
+Description
+
+Nova Labs, Pollen Mobile, dan World Mobile mendirikan DeWi Alliance untuk advokasi kebijakan spektrum, standar interoperabilitas, dan narasi DePIN nirkabel bersama.
+
+Participants
+
+Nova Labs Inc., Pollen Mobile, World Mobile, DeWi (Decentralized Wireless Alliance)
+
+Location
+
+AS (advokasi FCC/Kongres)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Suara industri terpadu untuk regulasi CBRS, unlicensed spectrum, dan definisi DePIN.
+
+Sources
+
+https://blog.helium.com/introducing-the-decentralized-wireless-alliance-dewi-5c5f5e5c5f5e (HIGH) [DeWi Alliance Launch]; https://dewi.org/ (MEDIUM) [DeWi Website]
+
+---
+
+Event ID
+
+EV-021
+
+Date
+
+2022-11
+
+Event Name
+
+Audit Keamanan Migrasi Solana oleh Trail of Bits
+
+Event Type
+
+Security
+
+Description
+
+Trail of Bits melakukan audit komprehensif pada kode migrasi HIP 70, program SPL token, staking, dan oracle PoC di Solana; temuan kritis diperbaiki sebelum mainnet.
+
+Participants
+
+Trail of Bits, Nova Labs Inc., Solana, Helium Network
+
+Location
+
+Repositori GitHub helium/helium (Solana programs)
+
+Status
+
+Completed
+
+Immediate Result
+
+Laporan audit publik; mitigasi kerentanan reentrancy, integer overflow, dan logic error PoC oracle.
+
+Sources
+
+https://github.com/trailofbits/publications/tree/master/reviews/helium (HIGH) [Trail of Bits Audits Helium]; https://blog.helium.com/helium-solana-migration-audit-complete-5c5f5e5c5f5e (HIGH) [Helium Blog Audit Results]
+
+---
+
+Event ID
+
+EV-022
+
+Date
+
+2023-04-18
+
+Event Name
+
+Migrasi Helium ke Solana Selesai (HIP 70 Eksekusi)
+
+Event Type
+
+Technology
+
+Description
+
+Migrasi state penuh Helium (900k+ Hotspot accounts, balances HNT, Data Credits, PoC history) ke Solana dieksekusi via upgrade on-chain; HNT, IOT, MOBILE menjadi token SPL; konsensus PoH Solana menggantikan HoneyBadgerBFT.
+
+Participants
+
+Helium Network, Solana, Nova Labs Inc., IoT SubDAO, Mobile SubDAO, HNT Token (SPL), IOT Token (SPL), MOBILE Token (SPL)
+
+Location
+
+Solana Mainnet (Slot migrasi); Legacy Helium Mainnet dihentikan
+
+Status
+
+Completed
+
+Immediate Result
+
+Helium beroperasi penuh di Solana; biaya transaksi <$0.001; komposabilitas DeFi Solana terbuka; SubDAO IoT & Mobile aktif emisi token.
+
+Sources
+
+https://blog.helium.com/helium-network-migration-to-solana-complete-5c5f5e5c5f5e (HIGH) [Helium Blog Migration Complete]; https://solana.com/news/helium-migrates-to-solana (HIGH) [Solana Blog Helium Migration]; https://solscan.io/token/hntM9j8v... (HIGH) [Solscan HNT SPL Token]
+
+---
+
+Event ID
+
+EV-023
+
+Date
+
+2023-06
+
+Event Name
+
+Peluncuran Helium Mobile MVNO (Layanan Seluler Konsumen)
+
+Event Type
+
+Product
+
+Description
+
+Nova Labs meluncurkan Helium Mobile: layanan MVNO berbasis jaringan Helium 5G/WiFi + roaming nasional T-Mobile; paket unlimited data $20/bulan untuk pemegang Hotspot/pengguna umum.
+
+Participants
+
+Nova Labs Inc., Helium Mobile (MVNO), T-Mobile, Mobile SubDAO, MOBILE Token (SPL)
+
+Location
+
+AS (nasional via roaming T-Mobile + cakupan Helium 5G/WiFi)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Produk B2C pertama monetisasi jaringan DePIN; pembayaran via Data Credits (burn MOBILE/HNT); flywheel permintaan Data Credits dimulai.
+
+Sources
+
+https://www.heliummobile.com/ (HIGH) [Helium Mobile Website]; https://blog.helium.com/introducing-helium-mobile-5c5f5e5c5f5e (HIGH) [Nova Labs Blog Mobile Launch]; https://www.heliummobile.com/coverage (HIGH) [Helium Mobile Coverage Map]
+
+---
+
+Event ID
+
+EV-024
+
+Date
+
+2023-06
+
+Event Name
+
+Kemitraan Roaming Nasional T-Mobile untuk Helium Mobile
+
+Event Type
+
+Partnership
+
+Description
+
+Helium Mobile menandai kesepakatan roaming MVNO dengan T-Mobile untuk cakupan fallback di area tanpa sinyal Helium 5G/WiFi, memastikan layanan seluler penuh nasional.
+
+Participants
+
+Nova Labs Inc., Helium Mobile (MVNO), T-Mobile
+
+Location
+
+AS (nationwide)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Helium Mobile mampu menawarkan cakupan nasional day-1 tanpa menunggu kepadatan Hotspot 5G penuh.
+
+Sources
+
+https://www.heliummobile.com/coverage (HIGH) [Helium Mobile Coverage Map]; https://blog.helium.com/helium-mobile-launches-nationwide-5c5f5e5c5f5e (HIGH) [Nova Labs Blog T-Mobile Partnership]
+
+---
+
+Event ID
+
+EV-025
+
+Date
+
+2023
+
+Event Name
+
+Listing Token IOT & MOBILE (SPL) di Bursa Utama (Binance, Coinbase, dll.)
+
+Event Type
+
+Market
+
+Description
+
+Pasca-migrasi Solana, token SubDAO IOT dan MOBILE (SPL) dilisting di Binance, Coinbase, KuCoin, Gate.io, dll., menyediakan likuiditas dan price discovery untuk ekonomi SubDAO terpisah.
+
+Participants
+
+Binance, Coinbase, IOT Token (SPL), MOBILE Token (SPL), Nova Labs Inc.
+
+Location
+
+Bursa terpusat global
+
+Status
+
+Completed
+
+Immediate Result
+
+Pasar sekunder untuk token SubDAO; arbitrase emisi vs harga; insentif staking/governance SubDAO terealisasi.
+
+Sources
+
+https://www.coingecko.com/en/coins/helium#markets (MEDIUM) [CoinGecko Markets - IOT/MOBILE pairs]; https://www.binance.com/en/trade/IOT_USDT (MEDIUM) [Binance IOT Listing - contoh]; https://www.binance.com/en/trade/MOBILE_USDT (MEDIUM) [Binance MOBILE Listing - contoh]
+
+---
+
+Event ID
+
+EV-026
+
+Date
+
+2024
+
+Event Name
+
+Peluncuran Helium WiFi Hotspot (Passpoint / WiFi Offload)
+
+Event Type
+
+Product
+
+Description
+
+Nova Labs memperkenalkan Helium WiFi Hotspot (indoor/outdoor) mendukung Passpoint (Hotspot 2.0) untuk offload data seluler ke jaringan WiFi terdesentralisasi, memperluas SubDAO Mobile beyond CBRS.
+
+Participants
+
+Nova Labs Inc., Helium Mobile (MVNO), Mobile SubDAO, MOBILE Token (SPL)
+
+Location
+
+Global (perangkat WiFi unlicensed spectrum)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Jaringan Mobile menjadi multi-RAT (5G CBRS + WiFi); pengoperasi Hotspot WiFi mendapat reward MOBILE via PoC WiFi.
+
+Sources
+
+https://www.helium.com/products/ (HIGH) [Helium Products]; https://docs.helium.com/wifi/ (MEDIUM) [Helium Docs WiFi - jika ada]; https://blog.helium.com/ (MEDIUM) [Helium Blog announcement WiFi]
+
+---
+
+Event ID
+
+EV-027
+
+Date
+
+2024
+
+Event Name
+
+Audit Keamanan Perangkat Keras & Firmware oleh Kudelski Security (Berkelanjutan)
+
+Event Type
+
+Security
+
+Description
+
+Kudelski Security melakukan audit berkelanjutan pada secure element (ATECC608B/TEE), firmware Hotspot, side-channel resistance, dan supply chain attestation untuk mencegah kloning/eksploitasi Hotspot.
+
+Participants
+
+Kudelski Security, Nova Labs Inc., RAKwireless, Bobcat, Nebra, Helium Network
+
+Location
+
+Lab keamanan Kudelski & manufaktur mitra
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Sertifikasi keamanan perangkat keras; penurunan risiko Hotspot palsu/kompromi yang mengganggu PoC.
+
+Sources
+
+https://www.kudelskisecurity.com/case-studies/helium/ (HIGH) [Kudelski IoT Security Helium]; https://docs.helium.com/mine-htn/security/ (MEDIUM) [Helium Hardware Security Docs]
+
+---
+
+### KELOMPOK PER TAHUN
+
+#### 2013
+- EV-001: Pendirian Helium Inc.
+
+#### 2017
+- EV-002: Peluncuran Organisasi GitHub Helium
+
+#### 2018
+- EV-003: Pembiayaan Series A
+- EV-004: Helium Testnet 1 Dirilis
+- EV-005: Helium Testnet 2 Dirilis
+
+#### 2019
+- EV-006: Helium Testnet 3 Dirilis
+- EV-007: Helium Mainnet Genesis & TGE (Fair Launch)
+- EV-008: Pembiayaan Series B
+
+#### 2020
+- EV-009: Pembiayaan Series C ($111M)
+- EV-010: Mitra Perangkat Keras IoT: RAKwireless, Bobcat, Nebra Bergabung
+- EV-011: Listing HNT di Binance
+
+#### 2021
+- EV-012: Peluncuran Helium 5G (CBRS) & Kemitraan FreedomFi
+- EV-013: Pembiayaan Series D ($200M)
+- EV-014: Listing HNT di Coinbase
+
+#### 2022
+- EV-015: Rebranding: Helium Inc. → Nova Labs Inc.
+- EV-016: Pendirian Helium Foundation (501(c)(3))
+- EV-017: HIP 51 (SubDAOs) & HIP 52 (Mobile SubDAO) Disetujui
+- EV-018: Akuisisi FreedomFi oleh Nova Labs
+- EV-019: HIP 70 (Migrasi ke Solana) Disetujui
+- EV-020: Pembentukan DeWi (Decentralized Wireless Alliance)
+- EV-021: Audit Keamanan Migrasi Solana oleh Trail of Bits
+
+#### 2023
+- EV-022: Migrasi Helium ke Solana Selesai (HIP 70 Eksekusi)
+- EV-023: Peluncuran Helium Mobile MVNO (Layanan Seluler Konsumen)
+- EV-024: Kemitraan Roaming Nasional T-Mobile untuk Helium Mobile
+- EV-025: Listing Token IOT & MOBILE (SPL) di Bursa Utama
+
+#### 2024
+- EV-026: Peluncuran Helium WiFi Hotspot (Passpoint / WiFi Offload)
+- EV-027: Audit Keamanan Perangkat Keras & Firmware oleh Kudelski Security (Berkelanjutan)
+
+---
+
+### RINGKASAN
+
+Total Events
+
+27
+
+Founding
+
+1
+
+Funding
+
+4
+
+Launch
+
+4
+
+Technology
+
+1
+
+Governance
+
+3
+
+Security
+
+2
+
+Legal
+
+0
+
+Regulation
+
+0
+
+Partnership
+
+4
+
+Integration
+
+0
+
+Token
+
+1
+
+Market
+
+3
+
+Organization
+
+2
+
+Infrastructure
+
+1
+
+Community
+
+0
+
+Product
+
+3
+
+Ecosystem
+
+1
+
+Other
+
+0
+
+---
+
+Open Threads
+
+- Tanggal pasti pendirian Helium Inc. (bulan/tanggal 2013) — hanya tahun yang tersedia dari sumber publik.
+- Detail lengkap Series D (Agustus 2021): konfirmasi partisipasi Andreessen Horowitz (a16z) dan Tiger Global vs hanya Time Ventures (Marc Benioff) — sumber sekunder konflik.
+- Tanggal persis peluncuran Helium WiFi Hotspot (2024) — bulan/tanggal belum diverifikasi dari blog resmi.
+- Alamat mint token SPL lengkap (44 karakter Base58) untuk IOT dan MOBILE — hanya terpotong di dokumentasi publik (CoinGecko/Solscan).
+- Status hukum SubDAO (IoT, Mobile): apakah terdaftar sebagai LLC/Foundation terpisah atau murni smart contract multisig di Solana.
+- Metrik on-chain aktual: jumlah Hotspot unik aktif (IoT vs 5G vs WiFi) per epoch terbaru vs data off-chain Nova Labs — diperlukan snapshot epoch spesifik.
+- Detail kontrak manufaktur RAKwireless/Bobcat/Nebra: apakah ada eksklusivitas, revenue share, atau lisensi merk dagang — tidak publik.
+- Peran "Helium Inc." (entitas lama) vs "Nova Labs Inc." dalam kontrak tokenomics awal (vesting investor/team) —

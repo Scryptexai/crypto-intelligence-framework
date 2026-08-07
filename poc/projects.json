@@ -23,17 +23,51 @@
     "n": "Aave",
     "tier": "Deep",
     "file": "examples/CaseStudies/Aave.md",
-    "cat": "",
-    "era": "",
-    "tags": []
+    "cat": "DeFi lending (money market)",
+    "era": "2017–",
+    "tags": [
+      "defi"
+    ]
   },
   {
     "n": "Avalanche",
     "tier": "Deep",
     "file": "examples/CaseStudies/Avalanche.md",
+    "cat": "Layer-1 (heterogeneous multi-chain/Subnet)",
+    "era": "2020–",
+    "tags": [
+      "l1"
+    ]
+  },
+  {
+    "n": "Bancor",
+    "tier": "Deep",
+    "file": "examples/CaseStudies/Bancor.md",
+    "cat": "DeFi AMM (single-sided staking, IL protection)",
+    "era": "2017–",
+    "tags": [
+      "defi",
+      "amm"
+    ]
+  },
+  {
+    "n": "Blur",
+    "tier": "Deep",
+    "file": "examples/CaseStudies/Blur.md",
+    "cat": "NFT marketplace + lending (Blend)",
+    "era": "2022–",
+    "tags": [
+      "nft-community"
+    ]
+  },
+  {
+    "n": "Aptos",
+    "tier": "Deep",
+    "file": "examples/CaseStudies/Aptos.md",
     "cat": "",
     "era": "",
     "tags": [
+      "testnet-incentive",
       "l1"
     ]
   },
@@ -49,16 +83,6 @@
     ]
   },
   {
-    "n": "Bancor",
-    "tier": "Deep",
-    "file": "examples/CaseStudies/Bancor.md",
-    "cat": "",
-    "era": "",
-    "tags": [
-      "amm"
-    ]
-  },
-  {
     "n": "Blast",
     "tier": "Deep",
     "file": "examples/CaseStudies/Blast.md",
@@ -70,13 +94,14 @@
     ]
   },
   {
-    "n": "Blur",
+    "n": "Irys",
     "tier": "Deep",
-    "file": "examples/CaseStudies/Blur.md",
+    "file": "examples/CaseStudies/Irys.md",
     "cat": "",
     "era": "",
     "tags": [
-      "nft-community"
+      "testnet-incentive",
+      "l1"
     ]
   }
 ]

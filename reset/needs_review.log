@@ -3,3 +3,10 @@
 2026-08-06T19:53:39.667762+00:00	Bancor	verify_10_phases failed	{'entities': 31, 'events': 20, 'decisions': 14, 'knowledge': 0}
 2026-08-06T21:18:10.247135+00:00	Aave	verify_10_phases failed	{'entities': 0, 'events': 0, 'decisions': 12, 'knowledge': 33}
 2026-08-06T21:28:03.505903+00:00	Aave	verify_10_phases failed	{'entities': 0, 'events': 0, 'decisions': 12, 'knowledge': 33}
+2026-08-07T05:47:09.547017+00:00	Berachain	verify_10_phases failed	{'entities': 0, 'events': 0, 'decisions': 0, 'knowledge': 0}
+2026-08-07T08:52:59.140217+00:00	Cardano	verify_10_phases failed	{'entities': 50, 'events': 35, 'decisions': 14, 'knowledge': 0}
+2026-08-07T11:18:11.570838+00:00	Compound	verify_10_phases failed	{'entities': 63, 'events': 30, 'decisions': 13, 'knowledge': 0}
+2026-08-07T11:59:46.288762+00:00	Cosmos	verify_10_phases failed	{'entities': 0, 'events': 0, 'decisions': 7, 'knowledge': 0}
+2026-08-07T14:26:04.976296+00:00	EigenLayer	verify_10_phases failed	{'entities': 0, 'events': 0, 'decisions': 0, 'knowledge': 0}
+2026-08-07T17:44:42.784775+00:00	Friend.tech	verify_10_phases failed	{'entities': 45, 'events': 25, 'decisions': 7, 'knowledge': 0}
+2026-08-07T19:07:56.525837+00:00	Grass	verify_10_phases failed	{'entities': 60, 'events': 0, 'decisions': 12, 'knowledge': 45}

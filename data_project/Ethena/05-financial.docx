@@ -1,0 +1,216 @@
+PROJECT: Ethena
+
+## Funding History
+
+Funding Round: Series A
+Date: 2023 (tanggal closing pasti tidak diumumkan publik; The Block melaporkan pada 19 Maret 2024)
+Amount: $14M
+Currency: USD
+Lead Investor: Dragonfly Capital
+Participating Investors: Arthur Hayes (Maelstrom), Deribit, Bybit, OKX Ventures, Gemini, Huobi Ventures
+Valuation: tidak diungkap
+Funding Type: Series A
+Status: Completed
+Sources: https://www.theblock.co/post/281228/ethena-labs-raises-14m
+Sources: https://www.dragonfly.xyz/portfolio/ethena
+Sources: https://www.crunchbase.com/organization/ethena-labs
+
+Funding Round: Pre-Seed / Angel (tidak dikonfirmasi resmi sebagai ronde terpisah)
+Date: 2023 (sebelum Series A)
+Amount: tidak diungkap
+Currency: USD
+Lead Investor: tidak diungkap
+Participating Investors: tidak diungkap
+Valuation: tidak diungkap
+Funding Type: Seed / Angel (inferred from timeline)
+Status: tidak dapat diverifikasi sebagai ronde formal terpisah
+Sources: tidak ada sumber resmi yang mengonfirmasi ronde pre-seed terpisah
+
+## Treasury
+
+Current Treasury Size: tidak diungkap
+Treasury Composition: tidak diungkap secara detail
+Stablecoin Holdings: tidak diungkap
+Native Token Holdings: tidak diungkap (ENA treasury allocation ada di tokenomics tapi tidak di Phase 5)
+Other Assets: tidak diungkap (mungkin mencakup insurance fund, protocol-owned liquidity)
+Treasury Custodian: Copper (ClearLoop), Fireblocks (untuk institutional custody integration) (MEDIUM) [Ethena Blog, https://blog.ethena.fi/institutional-onboarding]
+Sources: https://blog.ethena.fi/institutional-onboarding
+Sources: https://copper.co/
+Sources: https://www.fireblocks.com/
+Catatan: Tidak ada transparency report, treasury dashboard, atau laporan keuangan resmi yang mempublikasikan komposisi treasury lengkap.
+
+## Revenue Model
+
+Nama: Protocol Yield dari Delta-Neutral Hedging (Funding Rate & Basis Trade)
+Status: Live
+Deskripsi: Protokol mengumpulkan yield dari funding rate positif pada posisi short perpetual futures yang hedging collateral (stETH, ETH, stablecoin). Yield ini dialokasikan ke sUSDe staker (setelah fee protokol) dan sebagian ke insurance fund.
+Sources: https://docs.ethena.fi/architecture/yield
+Sources: https://blog.ethena.fi/introducing-ethena
+Sources: https://dune.com/ethena/ethena-usde-supply
+
+Nama: Mint/Redeem Fees
+Status: Live
+Deskripsi: Fee kecil dikenakan saat user mint atau redeem USDe (basis point, parameter governance). Fee masuk ke protokol dan dapat dialokasikan ke insurance fund atau DAO treasury.
+Sources: https://docs.ethena.fi/architecture/fees
+Sources: https://snapshot.org/#/ethena.eth (proposal parameter fee)
+
+Nama: Insurance Fund Yield Accumulation
+Status: Live
+Deskripsi: Bagian dari protocol yield dialokasikan ke insurance fund contract on-chain sebagai buffer untuk negative funding rate scenarios. Fund ini idle atau mungkin di-deploy ke low-risk venue (tidak dikonfirmasi publik).
+Sources: https://docs.ethena.fi/architecture/insurance-fund
+
+Nama: Cross-chain Messaging Fees (LayerZero OFT / Wormhole)
+Status: Live
+Deskripsi: User membayar gas dan messaging fee saat transfer ENA/USDe cross-chain via LayerZero OFT atau Wormhole. Fee ini ke relayer/executor dan DVN/Guardian, bukan langsung ke protokol Ethena (kecuali jika ada fee protocol tambahan yang tidak diungkap).
+Sources: https://docs.layerzero.network/v2/developers/evm/oft/quickstart
+Sources: https://docs.wormhole.com/wormhole/token-bridging/token-bridging-overview
+
+Nama: Staking Fee (sUSDe)
+Status: Live
+Deskripsi: sUSDe menggunakan ERC-4626 vault; protocol fee dapat diambil dari yield sebelum akumulasi ke share price (parameter governance).
+Sources: https://docs.ethena.fi/susde
+Sources: https://github.com/ethena-labs (smart contract Staking.sol)
+
+## Revenue History
+
+Tidak diungkap.
+Catatan: Tidak ada laporan pendapatan bulanan/kuartalan resmi (transparency report) yang dipublikasikan Ethena Labs. Data yield real-time tersedia di Dune Analytics dashboard protokol (funding rate, APR sUSDe, total yield accrued) tapi tidak diagregasi sebagai "revenue" akuntansi korporat.
+Sources: https://dune.com/ethena/ethena-usde-supply
+Sources: https://defillama.com/protocol/ethena
+
+## Fundraising Mechanism
+
+VC Funding: Series A $14M dari Dragonfly Capital dan strategic investors (CEX, market maker, venture arms) (HIGH) [The Block, https://www.theblock.co/post/281228/ethena-labs-raises-14m]
+Private Sale: Termasuk dalam Series A (SAFT/token warrant untuk investor) — detail tidak dipublikasikan (MEDIUM) [Standar industri VC crypto, tidak ada dokumen SAFT publik]
+Public Sale: Tidak ada (ENA TGE bukan public sale melainkan token generation dan distribution ke komunitas, investor, tim, ekosistem) (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch]
+Grant: Tidak diketahui grant dari foundation/ecosystem fund (Ethereum Foundation, Arbitrum Foundation, Optimism OP grant, dll) — tidak diumumkan publik (LOW) [Tidak ditemukan announcement resmi]
+Foundation: Tidak ada foundation terpisah yang mendanai; Ethena Labs Ltd. adalah entity operator (HIGH) [Crunchbase, https://www.crunchbase.com/organization/ethena-labs]
+DAO Treasury: Post-TGE, DAO mengelola treasury ENA dan protocol fees; bukan mekanisme fundraising awal (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch]
+Protocol Revenue: Yield protocoli menjadi revenue berkelanjutan untuk operations, insurance fund, dan DAO treasury (HIGH) [Ethena Docs, https://docs.ethena.fi/architecture/yield]
+Bootstrapping: Founder capital awal (Guy Young) sebelum Series A — jumlah tidak diungkap (LOW) [Tidak ada sumber resmi]
+
+## Token Sale
+
+Catatan: Phase 5 instruksi: "Jangan membahas distribusi token maupun vesting. Itu adalah Phase 6."
+Token Sale: Tidak ada public token sale (ICO/IDO/Launchpad auction) untuk ENA. ENA TGE (2 April 2024) adalah token generation event dengan distribusi ke komunitas (airdrop/season 1), investor (Series A), tim, ekosistem, dan DAO treasury.
+Private Sale: Series A investors menerima token allocation via SAFT/token warrant (detail harga, vesting Phase 6) (MEDIUM) [The Block, https://www.theblock.co/post/281228/ethena-labs-raises-14m]
+Public Sale: Tidak ada
+Launchpad: Binance Launchpool (farming ENA via stake BNB/FDUSD, bukan pembelian token) — April 2024 (HIGH) [Binance Announcement, https://www.binance.com/en/support/announcement/ethena-ena-listing]
+Auction: Tidak ada
+Community Sale: Tidak ada
+Sources: https://blog.ethena.fi/ena-token-launch
+Sources: https://www.binance.com/en/support/announcement/ethena-ena-listing
+
+## Financial Dependencies
+
+Pihak: Dragonfly Capital (Lead Investor Series A)
+Peran: Dana utama pengembangan awal, strategic guidance
+Sources: https://www.theblock.co/post/281228/ethena-labs-raises-14m
+Sources: https://www.dragonfly.xyz/portfolio/ethena
+
+Pihak: Strategic Investors (Deribit, Bybit, OKX Ventures, Gemini, Huobi Ventures, Arthur Hayes/Maelstrom)
+Peran: Dana Series A + liquidity provision untuk hedging engine (CEX futures liquidity), strategic partnership
+Sources: https://www.theblock.co/post/281228/ethena-labs-raises-14m
+Sources: https://blog.deribit.com/ethena-labs-investment
+Sources: https://announcements.bybit.com/en-US/article/ethena-labs-investment
+
+Pihak: Protocol Revenue (Funding Rate Yield)
+Peran: Revenue berkelanjutan untuk operations, insurance fund, DAO treasury, incentive program
+Sources: https://docs.ethena.fi/architecture/yield
+Sources: https://dune.com/ethena/ethena-usde-supply
+
+Pihak: Ethena DAO (Post-TGE)
+Peran: Mengelola treasury protocol fees, ENA allocation, governance decisions pada parameter ekonomi
+Sources: https://snapshot.org/#/ethena.eth
+Sources: https://governance.ethena.fi
+
+Pihak: Market Makers (Wintermute, GSR)
+Peran: Liquidity provision CEX/DEX untuk ENA dan USDe, basis trade execution untuk hedging
+Sources: https://x.com/wintermute_t
+Sources: https://x.com/GSR_io
+Sources: https://www.theblock.co/post/281228/ethena-labs-raises-14m
+
+## Financial Risk
+
+Risiko: Treasury Concentration Risk (tidak diungkap komposisi)
+Deskripsi: Tidak ada transparency report treasury; tidak diketahui apakah treasury terkonsentrasi pada ENA token, stablecoin, atau asset berisiko lain. Jika ENA price turun signifikan, nilai treasury DAO turun.
+Status: Dikonfirmasi sebagai risiko oleh praktik industri (tidak ada disclosure resmi yang mengonfirmasi/menafikan)
+Sources: https://blog.ethena.fi/ena-token-launch (tokenomics mention DAO treasury allocation tapi tidak komposisi real-time)
+
+Risiko: Revenue Decline dari Negative Funding Rate Berkelanjutan
+Deskripsi: Protocol yield bergantung pada funding rate positif. Jika funding rate negatif berkelanjutan (bear market), yield sUSDe turun, insurance fund terserang, protocol revenue mengecil.
+Status: Dikonfirmasi di dokumentasi risiko resmi
+Sources: https://docs.ethena.fi/risks
+Sources: https://blog.ethena.fi/introducing-ethena
+
+Risiko: Funding Dependency pada Series A Capital
+Deskripsi: Operasional awal bergantung pada $14M Series A. Jika protocol revenue tidak cukup cover burn rate sebelum break-even, perlu ronde tambahan.
+Status: Inferensi standar startup (tidak ada laporan burn rate/runway publik)
+Sources: https://www.theblock.co/post/281228/ethena-labs-raises-14m
+
+Risiko: CEX Counterparty Risk (Hedging Engine)
+Deskripsi: Hedging engine bergantung pada CEX (Deribit, Bybit, OKX, Binance) untuk liquidity perpetual futures. Jika CEX freeze account, API down, atau regulatory action, hedging gagal -> protocol risk.
+Status: Dikonfirmasi di arsitektur dan risiko protokol
+Sources: https://docs.ethena.fi/architecture/hedging
+Sources: https://docs.ethena.fi/risks
+Sources: https://www.theblock.co/post/281228/ethena-labs-raises-14m
+
+Risiko: Legal/Regulatory Financial Risk (USDe Classification)
+Deskripsi: USDe belum memiliki legal opinion publik soal status regulatory (security, commodity, money transmission). Regulatory action bisa memaksa shutdown, fine, atau asset freeze.
+Status: Tidak ada legal opinion publik; risiko standar untuk synthetic dollar protocol
+Sources: https://docs.ethena.fi/risks
+Sources: https://blog.ethena.fi/introducing-ethena
+
+Risiko: Insurance Fund Insufficiency
+Deskripsi: Insurance fund size tidak transparan real-time. Jika negative funding rate event besar (seperti March 2020 crash), fund mungkin tidak cukup cover loss, memerlukan DAO injection atau socialized loss.
+Status: Dikonfirmasi sebagai risiko protokol; parameter update via governance (EV-030)
+Sources: https://docs.ethena.fi/architecture/insurance-fund
+Sources: https://snapshot.org/#/ethena.eth
+
+Risiko: Cross-chain Bridge Exploit Financial Loss
+Deskripsi: LayerZero OFT dan Wormhole bridge mengunci nilai TVL cross-chain. Exploit bridge bisa menciptakan unbacked USDe/ENA di chain tujuan, kerugian finansial untuk protokol dan user.
+Status: Risiko teknis dengan dampak finansial; audit Zellic cover cross-chain
+Sources: https://zellic.io/audits/ethena
+Sources: https://docs.layerzero.network/v2/developers/evm/oft/quickstart
+Sources: https://docs.wormhole.com/wormhole/token-bridging/token-bridging-overview
+
+## Official Financial Resources
+
+Official Blog: https://blog.ethena.fi
+Transparency Report: tidak tersedia (tidak ditemukan halaman/laporan transparency report bulanan/kuartalan)
+Treasury Dashboard: tidak tersedia (tidak ditemukan dashboard treasury real-time publik)
+Governance: https://governance.ethena.fi (forum) dan https://snapshot.org/#/ethena.eth (voting)
+Messari: https://messari.io/protocol/ethena (protocol page, mungkin ada report berbayar)
+Token Terminal: https://tokenterminal.com/terminal/projects/ethena (revenue/fees dashboard, berbayar untuk full access)
+DefiLlama: https://defillama.com/protocol/ethena (TVL, supply, chain breakdown, fees/revenue estimates)
+CryptoRank: https://cryptorank.io/price/ethena (token data, fundraising history)
+Whitepaper: tidak ada whitepaper formal; digantikan oleh blog post perkenalan: https://blog.ethena.fi/introducing-ethena
+Dune Analytics (Official Dashboards): https://dune.com/ethena (yield, supply, staking, governance metrics)
+
+## RINGKASAN
+
+Total Funding Raised: $14M (Series A, 2023) — hanya ronde yang diverifikasi publik
+Funding Rounds: 1 (Series A) — pre-seed/angel tidak dikonfirmasi sebagai ronde formal terpisah
+Treasury Status: Tidak diungkap (tidak ada transparency report, treasury dashboard, atau komposisi aset publik)
+Revenue Sources: Protocol yield (funding rate), mint/redeem fees, insurance fund allocation, staking fee (parameter governance)
+Revenue Availability: Real-time yield metrics tersedia di Dune Analytics dan DeFiLlama; laporan pendapatan akuntansi korporat tidak dipublikasikan
+
+## Open Threads
+
+- Jumlah pasti pre-seed/angel funding sebelum Series A (jika ada) — tidak diumumkan
+- Valuasi Series A — tidak diumumkan
+- Treasury composition real-time (stablecoin vs native token vs other assets) — tidak ada dashboard publik
+- Burn rate bulanan Ethena Labs Ltd. (opex: gaji ~30+ orang, infra, legal, audit, marketing) — tidak diungkap
+- Runway berbasis $14M Series A + protocol revenue — tidak dapat dihitung tanpa burn rate
+- Insurance fund size real-time dan asset composition — contract on-chain ada tapi tidak di-surfacing di dashboard resmi
+- Protocol fee revenue akumulasi historis (bukan yield APR) — tidak diagregasi sebagai revenue report
+- Apakah ada grant dari ecosystem foundation (Arbitrum, Optimism, Base, Ethereum Foundation) — tidak diumumkan
+- Legal opinion fee dan regulatory compliance cost — tidak diungkap
+- Audit cost (OpenZeppelin, Zellic, Spearbit) — tidak diungkap
+- Market maker agreement terms (Wintermute, GSR) — apakah ada fee/rebate arrangement — tidak publik
+- Custody fee arrangement dengan Copper/Fireblocks untuk institutional — tidak publik
+- ENA token sale/private sale terms (SAFT price, vesting) — Phase 6 tapi relevan finansial
+- DAO treasury management strategy (apakah di-invest ke Aave/Morpho untuk yield) — tidak transparan
+- Insurance fund investment policy (idle vs deployed) — tidak diungkap
+- Cross-chain messaging fee revenue share (jika ada) dengan LayerZero/Wormhole — tidak dikonfirmasi
+- Regulatory reserve/fine provision (jika ada) — tidak diungkap

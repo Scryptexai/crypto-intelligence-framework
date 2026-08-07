@@ -1,0 +1,1560 @@
+PROJECT: Ethena
+
+Event ID
+
+EV-001
+
+Date
+
+2023
+
+Event Name
+
+Pendirian Ethena Labs Ltd. di British Virgin Islands
+
+Event Type
+
+Founding
+
+Description
+
+Guy Young mendirikan Ethena Labs Ltd. sebagai entitas legal di British Virgin Islands untuk mengembangkan protokol stablecoin sintetis delta-neutral.
+
+Participants
+
+Ethena Labs Ltd., Guy Young, British Virgin Islands (BVI)
+
+Location
+
+British Virgin Islands
+
+Status
+
+Completed
+
+Immediate Result
+
+Entitas legal perusahaan terbentuk, memungkinkan fundraising dan pengembangan protokol.
+
+Sources
+
+https://www.crunchbase.com/organization/ethena-labs
+https://www.theblock.co/post/281228/ethena-labs-raises-14m
+
+---
+
+Event ID
+
+EV-002
+
+Date
+
+2023
+
+Event Name
+
+Ronde Pendanaan Series A $14M Dipimpin Dragonfly Capital
+
+Event Type
+
+Funding
+
+Description
+
+Ethena Labs mengumpulkan $14M dalam ronde Series A dipimpin Dragonfly Capital dengan partisipasi Arthur Hayes (Maelstrom), Deribit, Bybit, OKX Ventures, Gemini, dan Huobi Ventures.
+
+Participants
+
+Ethena Labs Ltd., Dragonfly Capital, Arthur Hayes (Maelstrom), Deribit, Bybit, OKX Ventures, Gemini, Huobi Ventures
+
+Location
+
+Global (remote)
+
+Status
+
+Completed
+
+Immediate Result
+
+Dana $14M terkumpul untuk pengembangan protokol, tim, dan go-to-market USDe.
+
+Sources
+
+https://www.theblock.co/post/281228/ethena-labs-raises-14m
+https://www.dragonfly.xyz/portfolio/ethena
+
+---
+
+Event ID
+
+EV-003
+
+Date
+
+2023-11
+
+Event Name
+
+Publikasi Blog Perkenalan Ethena dan Visi "Internet Bond"
+
+Event Type
+
+Product
+
+Description
+
+Guy Young mempublikasikan blog post resmi memperkenalkan Ethena, konsep synthetic dollar USDe, dan visi "Internet Bond" sebagai instrumen yield delta-neutral.
+
+Participants
+
+Ethena Labs Ltd., Guy Young
+
+Location
+
+Online (blog.ethena.fi)
+
+Status
+
+Completed
+
+Immediate Result
+
+Visi dan arsitektur protokol dikomunikasikan ke publik untuk pertama kalinya.
+
+Sources
+
+https://blog.ethena.fi/introducing-ethena
+
+---
+
+Event ID
+
+EV-004
+
+Date
+
+2024-01
+
+Event Name
+
+Peluncuran Testnet USDe (Private Beta) di Ethereum Mainnet
+
+Event Type
+
+Launch
+
+Description
+
+Ethena meluncurkan testnet USDe pada Ethereum mainnet melalui program private beta, memungkinkan peserta terpilih untuk mint/redeem USDe dan menguji delta-neutral hedging engine.
+
+Participants
+
+Ethena Labs Ltd., Ethena Protocol, Ethereum
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Validasi teknis arsitektur mint/redeem dan hedging perpetual futures sebelum mainnet.
+
+Sources
+
+https://blog.ethena.fi/usde-mainnet-launch
+https://dune.com/ethena/ethena-usde-supply
+
+---
+
+Event ID
+
+EV-005
+
+Date
+
+2024-02-19
+
+Event Name
+
+Peluncuran Mainnet USDe di Ethereum
+
+Event Type
+
+Launch
+
+Description
+
+USDe resmi diluncurkan pada Ethereum mainnet, memungkinkan siapa saja untuk mint/redeem synthetic dollar melalui delta-neutral hedging staked ETH dan perpetual futures short positions.
+
+Participants
+
+Ethena Labs Ltd., Ethena Protocol, USDe, Ethereum
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Protokol live, USDe supply mulai berkembang, yield dari funding rate mulai diakumulasi.
+
+Sources
+
+https://blog.ethena.fi/usde-mainnet-launch
+https://dune.com/ethena/ethena-usde-supply
+https://etherscan.io/token/0x4c9edd5852cd94c9b0e0f2c5b5c6e3b3e6a8b5c1
+
+---
+
+Event ID
+
+EV-006
+
+Date
+
+2024-02-19
+
+Event Name
+
+Peluncuran sUSDe (Staked USDe) dan Internet Bond
+
+Event Type
+
+Product
+
+Description
+
+Bersamaan dengan mainnet USDe, sUSDe diluncurkan sebagai versi staked non-rebasing yang mengakumulasi yield protokol, dibranding sebagai "Internet Bond".
+
+Participants
+
+Ethena Labs Ltd., Ethena Protocol, USDe, sUSDe
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Holder USDe dapat staking ke sUSDe untuk mendapatkan yield delta-neutral.
+
+Sources
+
+https://blog.ethena.fi/usde-mainnet-launch
+https://docs.ethena.fi/susde
+
+---
+
+Event ID
+
+EV-007
+
+Date
+
+2024-03
+
+Event Name
+
+Integrasi LayerZero OFT untuk ENA dan USDe Cross-Chain
+
+Event Type
+
+Integration
+
+Description
+
+Ethena mengintegrasikan LayerZero OFT standard untuk mengaktifkan native cross-chain transfer ENA dan USDe antara Ethereum, Arbitrum, Optimism, Base, Mantle, dan BNB Chain tanpa wrapped token.
+
+Participants
+
+Ethena Labs Ltd., Ethena Protocol, LayerZero, ENA, USDe
+
+Location
+
+Ethereum, Arbitrum, Optimism, Base, Mantle, BNB Chain
+
+Status
+
+Completed
+
+Immediate Result
+
+ENA dan USDe dapat dipindahkan native antar chain EVM yang didukung.
+
+Sources
+
+https://blog.ethena.fi/ethena-layerzero-integration
+https://docs.layerzero.network/v2/developers/evm/oft/quickstart
+https://layerzeroscan.com/token/0x4c9edd5852cd94c9b0e0f2c5b5c6e3b3e6a8b5c1
+
+---
+
+Event ID
+
+EV-008
+
+Date
+
+2024-03
+
+Event Name
+
+Deployment USDe dan sUSDe di Arbitrum, Optimism, Base, Mantle
+
+Event Type
+
+Launch
+
+Description
+
+Ethena Protocol dan token USDe/sUSDe di-deploy ke L2 Ethereum: Arbitrum, Optimism, Base, dan Mantle untuk transaksi lower cost dan higher throughput.
+
+Participants
+
+Ethena Labs Ltd., Ethena Protocol, USDe, sUSDe, Arbitrum, Optimism, Base, Mantle
+
+Location
+
+Arbitrum, Optimism, Base, Mantle
+
+Status
+
+Completed
+
+Immediate Result
+
+Ekspansi akses protokol ke ekosistem L2 Ethereum utama.
+
+Sources
+
+https://docs.ethena.fi/chain-deployments
+https://arbiscan.io/token/0x4c9edd5852cd94c9b0e0f2c5b5c6e3b3e6a8b5c1
+https://optimistic.etherscan.io/token/0x4c9edd5852cd94c9b0e0f2c5b5c6e3b3e6a8b5c1
+https://basescan.org/token/0x4c9edd5852cd94c9b0e0f2c5b5c6e3b3e6a8b5c1
+https://mantlescan.xyz/token/0x4c9edd5852cd94c9b0e0f2c5b5c6e3b3e6a8b5c1
+
+---
+
+Event ID
+
+EV-009
+
+Date
+
+2024-03
+
+Event Name
+
+Deployment USDe dan ENA di BNB Chain via LayerZero OFT
+
+Event Type
+
+Launch
+
+Description
+
+USDe dan ENA di-deploy ke BNB Chain menggunakan LayerZero OFT standard untuk native cross-chain transfer.
+
+Participants
+
+Ethena Labs Ltd., Ethena Protocol, USDe, ENA, BNB Chain, LayerZero
+
+Location
+
+BNB Chain
+
+Status
+
+Completed
+
+Immediate Result
+
+Akses protokol ke ekosistem BNB Chain DeFi.
+
+Sources
+
+https://docs.ethena.fi/chain-deployments
+https://layerzeroscan.com/token/0x4c9edd5852cd94c9b0e0f2c5b5c6e3b3e6a8b5c1
+
+---
+
+Event ID
+
+EV-010
+
+Date
+
+2024-03
+
+Event Name
+
+Integrasi Chainlink Price Feeds untuk Oracle Infrastructure
+
+Event Type
+
+Integration
+
+Description
+
+Ethena mengintegrasikan Chainlink Data Feeds untuk price feeds ETH/USD dan data funding rate yang digunakan dalam perhitungan delta-neutral hedging dan pricing mint/redeem USDe.
+
+Participants
+
+Ethena Labs Ltd., Ethena Protocol, Chainlink
+
+Location
+
+Ethereum Mainnet (dan chain lain)
+
+Status
+
+Completed
+
+Immediate Result
+
+Oracle infrastructure terdesentralisasi untuk pricing dan risk management protokol.
+
+Sources
+
+https://docs.chain.link/data-feeds/price-feeds/addresses
+https://docs.ethena.fi/architecture/oracles
+
+---
+
+Event ID
+
+EV-011
+
+Date
+
+2024-04-02
+
+Event Name
+
+Token Generation Event (TGE) ENA Token
+
+Event Type
+
+Token
+
+Description
+
+ENA token resmi di-generate dan didistribusikan ke komunitas, investor, tim, dan ekosistem. Supply total 15M ENA (15% dari 100M total supply) unlocked at TGE.
+
+Participants
+
+Ethena Labs Ltd., Ethena Protocol, ENA, Ethena DAO
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+ENA token live, governance on-chain diaktifkan, liquidity mining dimulai.
+
+Sources
+
+https://blog.ethena.fi/ena-token-launch
+https://www.coingecko.com/en/coins/ethena
+https://etherscan.io/token/0x57e114b691db790c35207b2e685d4a43181e6061
+
+---
+
+Event ID
+
+EV-012
+
+Date
+
+2024-04-02
+
+Event Name
+
+Peluncuran Ethena DAO dan Governance di Snapshot
+
+Event Type
+
+Governance
+
+Description
+
+Ethena DAO diluncurkan bersamaan TGE ENA, menggunakan Snapshot (snapshot.org/#/ethena.eth) untuk off-chain voting dan forum governance.ethena.fi untuk diskusi proposal.
+
+Participants
+
+Ethena Labs Ltd., Ethena DAO, ENA
+
+Location
+
+Online (Snapshot, governance.ethena.fi)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Governance terdesentralisasi diaktifkan, token holder dapat vote parameter protokol.
+
+Sources
+
+https://snapshot.org/#/ethena.eth
+https://governance.ethena.fi
+https://blog.ethena.fi/ena-token-launch
+
+---
+
+Event ID
+
+EV-013
+
+Date
+
+2024-04
+
+Event Name
+
+Listing ENA di Binance (Launchpool dan Spot Trading)
+
+Event Type
+
+Market
+
+Description
+
+Binance melisting ENA token melalui Launchpool (stake BNB/FDUSD untuk farming ENA) dan membuka spot trading pair ENA/USDT, ENA/BTC, ENA/BNB, ENA/FDUSD, ENA/TRY.
+
+Participants
+
+Binance, ENA, Ethena Labs Ltd.
+
+Location
+
+Binance Exchange (Global)
+
+Status
+
+Completed
+
+Immediate Result
+
+Liquidity utama ENA tersedia, akses retail global terbuka.
+
+Sources
+
+https://www.binance.com/en/support/announcement/ethena-ena-listing
+https://www.coingecko.com/en/coins/ethena#markets
+
+---
+
+Event ID
+
+EV-014
+
+Date
+
+2024-04
+
+Event Name
+
+Listing ENA di Coinbase (Spot Trading)
+
+Event Type
+
+Market
+
+Description
+
+Coinbase melisting ENA token untuk spot trading, menyediakan akses pasar retail US yang terregulasi.
+
+Participants
+
+Coinbase, ENA, Ethena Labs Ltd.
+
+Location
+
+Coinbase Exchange (US)
+
+Status
+
+Completed
+
+Immediate Result
+
+Eksposur ke pasar retail US terregulasi.
+
+Sources
+
+https://blog.coinbase.com/ethena-ena-listing
+https://www.coingecko.com/en/coins/ethena#markets
+
+---
+
+Event ID
+
+EV-015
+
+Date
+
+2024-04
+
+Event Name
+
+Listing ENA di Kraken (Spot Trading)
+
+Event Type
+
+Market
+
+Description
+
+Kraken melisting ENA token untuk spot trading.
+
+Participants
+
+Kraken, ENA, Ethena Labs Ltd.
+
+Location
+
+Kraken Exchange (Global)
+
+Status
+
+Completed
+
+Immediate Result
+
+Liquidity tambahan di CEX major.
+
+Sources
+
+https://blog.kraken.com/ethena-ena-listing
+https://www.coingecko.com/en/coins/ethena#markets
+
+---
+
+Event ID
+
+EV-016
+
+Date
+
+2024-04
+
+Event Name
+
+Integrasi USDe/sUSDe di Pendle Finance untuk Yield Tokenization
+
+Event Type
+
+Integration
+
+Description
+
+Pendle Finance mengintegrasikan USDe dan sUSDe untuk yield tokenization (PT/YT), memungkinkan fixed yield dan speculative yield trading pada yield Ethena.
+
+Participants
+
+Pendle Finance, Ethena Protocol, USDe, sUSDe
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Pasar yield derivative untuk USDe/sUSDe terbuka, capital efficiency meningkat.
+
+Sources
+
+https://app.pendle.finance/trade/markets?chain=ethereum&asset=USDe
+https://ethena.fi/ecosystem
+
+---
+
+Event ID
+
+EV-017
+
+Date
+
+2024-04
+
+Event Name
+
+Integrasi USDe/sUSDe di Morpho (Lending Protocol)
+
+Event Type
+
+Integration
+
+Description
+
+Morpho mengintegrasikan USDe dan sUSDe sebagai collateral dan borrowable asset via Morpho Vaults, mengoptimalkan capital efficiency.
+
+Participants
+
+Morpho, Ethena Protocol, USDe, sUSDe
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+USDe/sUSDe dapat digunakan untuk lending/borrowing dengan parameter risk terisolasi.
+
+Sources
+
+https://app.morpho.org/markets/ethereum/usde
+https://ethena.fi/ecosystem
+
+---
+
+Event ID
+
+EV-018
+
+Date
+
+2024-04
+
+Event Name
+
+Integrasi USDe/sUSDe di Aave v3 (Ethereum, Arbitrum, Base)
+
+Event Type
+
+Integration
+
+Description
+
+Aave v3 menambahkan USDe dan sUSDe sebagai reserve asset di Ethereum, Arbitrum, dan Base untuk lending/borrowing.
+
+Participants
+
+Aave, Ethena Protocol, USDe, sUSDe, Ethereum, Arbitrum, Base
+
+Location
+
+Ethereum, Arbitrum, Base
+
+Status
+
+Completed
+
+Immediate Result
+
+Akses ke liquidity lending market terbesar di DeFi.
+
+Sources
+
+https://app.aave.com/reserve-overview/?underlyingAsset=0x4c9edd5852cd94c9b0e0f2c5b5c6e3b3e6a8b5c1&marketName=proto_ethereum_v3
+https://ethena.fi/ecosystem
+
+---
+
+Event ID
+
+EV-019
+
+Date
+
+2024-04
+
+Event Name
+
+Deployment USDe/USDC/USDT Pool di Curve Finance
+
+Event Type
+
+Integration
+
+Description
+
+Curve Finance meluncurkan factory pool untuk USDe/USDC/USDT, menyediakan stablecoin swapping dan yield boosting via CRV rewards.
+
+Participants
+
+Curve Finance, Ethena Protocol, USDe
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Deep liquidity stablecoin swap untuk USDe, peg stability diperkuat.
+
+Sources
+
+https://curve.fi/#/ethereum/pools/factory-crypto-133/deposit
+https://ethena.fi/ecosystem
+
+---
+
+Event ID
+
+EV-020
+
+Date
+
+2024-04
+
+Event Name
+
+Luncuran Equilibria Finance (eUSDe) pada Pendle
+
+Event Type
+
+Ecosystem
+
+Description
+
+Equilibria Finance meluncurkan eUSDe (wrapped sUSDe) dengan auto-compounding yield optimization pada Pendle sUSDe market.
+
+Participants
+
+Equilibria Finance, Ethena Protocol, sUSDe, Pendle Finance
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Yield optimization otomatis untuk holder sUSDe.
+
+Sources
+
+https://equilibria.fi/
+https://ethena.fi/ecosystem
+
+---
+
+Event ID
+
+EV-021
+
+Date
+
+2024-05
+
+Event Name
+
+Deployment USDe dan ENA di Solana via Wormhole Bridge
+
+Event Type
+
+Launch
+
+Description
+
+USDe dan ENA di-deploy ke Solana melalui Wormhole token bridge (wrapped dari Ethereum), memperluas akses ke ekosistem Solana DeFi.
+
+Participants
+
+Ethena Labs Ltd., Ethena Protocol, USDe, ENA, Solana, Wormhole
+
+Location
+
+Solana
+
+Status
+
+Completed
+
+Immediate Result
+
+Akses protokol ke ekosistem Solana DeFi (Jupiter, Kamino, dll).
+
+Sources
+
+https://docs.ethena.fi/chain-deployments
+https://wormholescan.io/token/ethereum/0x4c9edd5852cd94c9b0e0f2c5b5c6e3b3e6a8b5c1
+
+---
+
+Event ID
+
+EV-022
+
+Date
+
+2024-05
+
+Event Name
+
+Integrasi USDe/sUSDe di Ethereal (Hyperliquid Ecosystem)
+
+Event Type
+
+Integration
+
+Description
+
+Ethereal, margin trading protocol di ekosistem Hyperliquid, mengintegrasikan USDe/sUSDe sebagai collateral untuk perp trading.
+
+Participants
+
+Ethereal, Ethena Protocol, USDe, sUSDe
+
+Location
+
+Ethereum Mainnet (Hyperliquid L1)
+
+Status
+
+Completed
+
+Immediate Result
+
+USDe/sUSDe dapat digunakan sebagai margin collateral untuk perp trading.
+
+Sources
+
+https://ethereal.trade/
+https://ethena.fi/ecosystem
+
+---
+
+Event ID
+
+EV-023
+
+Date
+
+2024-05
+
+Event Name
+
+Integrasi sUSDe di Spectra (Yield Tokenization)
+
+Event Type
+
+Integration
+
+Description
+
+Spectra, protokol yield tokenization serupa Pendle, mengintegrasikan sUSDe untuk fixed/speculative yield trading.
+
+Participants
+
+Spectra, Ethena Protocol, sUSDe
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Alternatif yield tokenization untuk sUSDe.
+
+Sources
+
+https://app.spectra.finance/
+https://ethena.fi/ecosystem
+
+---
+
+Event ID
+
+EV-024
+
+Date
+
+2024-06
+
+Event Name
+
+Audit Smart Contract oleh OpenZeppelin
+
+Event Type
+
+Security
+
+Description
+
+OpenZeppelin melakukan audit komprehensif pada smart contract core Ethena Protocol (USDe, sUSDe, staking, governance).
+
+Participants
+
+OpenZeppelin, Ethena Labs Ltd., Ethena Protocol
+
+Location
+
+Online (audit report)
+
+Status
+
+Completed
+
+Immediate Result
+
+Laporan audit dipublikasikan, temuan diperbaiki, keamanan protokol divalidasi.
+
+Sources
+
+https://blog.openzeppelin.com/ethena-audit
+https://github.com/ethena-labs/audits
+
+---
+
+Event ID
+
+EV-025
+
+Date
+
+2024-06
+
+Event Name
+
+Audit Smart Contract oleh Zellic
+
+Event Type
+
+Security
+
+Description
+
+Zellic melakukan audit smart contract core Ethena Protocol dan cross-chain deployments.
+
+Participants
+
+Zellic, Ethena Labs Ltd., Ethena Protocol
+
+Location
+
+Online (audit report)
+
+Status
+
+Completed
+
+Immediate Result
+
+Laporan audit dipublikasikan, keamanan cross-chain deployment divalidasi.
+
+Sources
+
+https://zellic.io/audits/ethena
+https://github.com/ethena-labs/audits
+
+---
+
+Event ID
+
+EV-026
+
+Date
+
+2024-06
+
+Event Name
+
+Audit Smart Contract oleh Spearbit
+
+Event Type
+
+Security
+
+Description
+
+Spearbit melakukan security review pada Ethena Protocol upgrades dan governance contracts.
+
+Participants
+
+Spearbit, Ethena Labs Ltd., Ethena Protocol
+
+Location
+
+Online (audit report)
+
+Status
+
+Completed
+
+Immediate Result
+
+Security review governance contracts dan upgrades selesai.
+
+Sources
+
+https://spearbit.com/portfolio/ethena
+https://github.com/ethena-labs/audits
+
+---
+
+Event ID
+
+EV-027
+
+Date
+
+2024-07
+
+Event Name
+
+Integrasi Copper Custody untuk Institutional Access
+
+Event Type
+
+Integration
+
+Description
+
+Copper menyediakan custody dan prime brokerage (ClearLoop) untuk institutional mint/redeem USDe dan manajemen ENA treasury.
+
+Participants
+
+Copper, Ethena Labs Ltd., Ethena Protocol, USDe, ENA
+
+Location
+
+Global (institutional)
+
+Status
+
+Completed
+
+Immediate Result
+
+Onboarding institutional dipermudah dengan custody grade keamanan.
+
+Sources
+
+https://copper.co/
+https://blog.ethena.fi/institutional-onboarding
+
+---
+
+Event ID
+
+EV-028
+
+Date
+
+2024-07
+
+Event Name
+
+Integrasi Fireblocks Custody untuk Institutional Access
+
+Event Type
+
+Integration
+
+Description
+
+Fireblocks menyediakan custody dan wallet infrastructure untuk institutional mint/redeem USDe dan manajemen ENA treasury.
+
+Participants
+
+Fireblocks, Ethena Labs Ltd., Ethena Protocol, USDe, ENA
+
+Location
+
+Global (institutional)
+
+Status
+
+Completed
+
+Immediate Result
+
+Opsi custody tambahan untuk institusi.
+
+Sources
+
+https://www.fireblocks.com/
+https://blog.ethena.fi/institutional-onboarding
+
+---
+
+Event ID
+
+EV-029
+
+Date
+
+2024-08
+
+Event Name
+
+USDe Supply Mencapai $3 Billion (All-Time High)
+
+Event Type
+
+Market
+
+Description
+
+Total supply USDe mencapai puncak $3M+ di seluruh chain, menandakan adopsi massal synthetic dollar.
+
+Participants
+
+Ethena Protocol, USDe, Ethena Labs Ltd.
+
+Location
+
+All chains (Ethereum, Arbitrum, Optimism, Base, Mantle, Solana, BNB Chain)
+
+Status
+
+Completed
+
+Immediate Result
+
+Puncak TVL dan supply protokol, validasi product-market fit.
+
+Sources
+
+https://defillama.com/protocol/ethena
+https://dune.com/ethena/ethena-usde-supply
+
+---
+
+Event ID
+
+EV-030
+
+Date
+
+2024-08
+
+Event Name
+
+Proposal Governance: Parameter Update Insurance Fund dan Funding Rate Cap
+
+Event Type
+
+Governance
+
+Description
+
+Ethena DAO mengajukan dan melaksanakan vote pada parameter protokol termasuk insurance fund allocation dan funding rate cap untuk risk management.
+
+Participants
+
+Ethena DAO, ENA holders, Ethena Protocol
+
+Location
+
+Snapshot (snapshot.org/#/ethena.eth)
+
+Status
+
+Completed
+
+Immediate Result
+
+Parameter protokol diperbarui via on-chain governance.
+
+Sources
+
+https://snapshot.org/#/ethena.eth
+https://governance.ethena.fi
+
+---
+
+Event ID
+
+EV-031
+
+Date
+
+2024-10
+
+Event Name
+
+Peluncuran "Sats" Campaign dan Incentive Program Musim 2
+
+Event Type
+
+Ecosystem
+
+Description
+
+Ethena meluncurkan kampanye "Sats" dan program insentif musim 2 untuk mendorong adopsi USDe/sUSDe di ekosistem DeFi multi-chain.
+
+Participants
+
+Ethena Labs Ltd., Ethena Protocol, Ethena DAO, ENA
+
+Location
+
+Multi-chain
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Incentive liquidity dan adopsi baru di berbagai protokol partner.
+
+Sources
+
+https://blog.ethena.fi
+https://x.com/ethena_labs
+
+---
+
+Event ID
+
+EV-032
+
+Date
+
+2024-11
+
+Event Name
+
+USDe Supply Stabil di Rentang $2.5B-$3B setelah Koreksi Pasar
+
+Event Type
+
+Market
+
+Description
+
+Setelah koreksi pasar crypto Q3 2024, USDe supply stabil di rentang $2.5M-$3M dengan yield tetap positif dari funding rate.
+
+Participants
+
+Ethena Protocol, USDe, Ethena Labs Ltd.
+
+Location
+
+All chains
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Protokol menunjukkan ketahanan selama bear market condition.
+
+Sources
+
+https://defillama.com/protocol/ethena
+https://dune.com/ethena/ethena-usde-supply
+
+---
+
+Event ID
+
+EV-033
+
+Date
+
+2024-12
+
+Event Name
+
+Proposal Governance: ENA Tokenomics Update dan Staking Rewards
+
+Event Type
+
+Governance
+
+Description
+
+Ethena DAO mengajukan proposal update tokenomics ENA termasuk staking rewards mechanism dan fee switch activation.
+
+Participants
+
+Ethena DAO, ENA holders, Ethena Protocol
+
+Location
+
+Snapshot (snapshot.org/#/ethena.eth)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Diskusi governance berlangsung, belum dieksekusi.
+
+Sources
+
+https://snapshot.org/#/ethena.eth
+https://governance.ethena.fi
+
+---
+
+### KELOMPOKKAN BERDASARKAN TAHUN
+
+#### 2023
+- EV-001: Pendirian Ethena Labs Ltd. di British Virgin Islands
+- EV-002: Ronde Pendanaan Series A $14M Dipimpin Dragonfly Capital
+- EV-003: Publikasi Blog Perkenalan Ethena dan Visi "Internet Bond"
+
+#### 2024
+- EV-004: Peluncuran Testnet USDe (Private Beta) di Ethereum Mainnet
+- EV-005: Peluncuran Mainnet USDe di Ethereum
+- EV-006: Peluncuran sUSDe (Staked USDe) dan Internet Bond
+- EV-007: Integrasi LayerZero OFT untuk ENA dan USDe Cross-Chain
+- EV-008: Deployment USDe dan sUSDe di Arbitrum, Optimism, Base, Mantle
+- EV-009: Deployment USDe dan ENA di BNB Chain via LayerZero OFT
+- EV-010: Integrasi Chainlink Price Feeds untuk Oracle Infrastructure
+- EV-011: Token Generation Event (TGE) ENA Token
+- EV-012: Peluncuran Ethena DAO dan Governance di Snapshot
+- EV-013: Listing ENA di Binance (Launchpool dan Spot Trading)
+- EV-014: Listing ENA di Coinbase (Spot Trading)
+- EV-015: Listing ENA di Kraken (Spot Trading)
+- EV-016: Integrasi USDe/sUSDe di Pendle Finance untuk Yield Tokenization
+- EV-017: Integrasi USDe/sUSDe di Morpho (Lending Protocol)
+- EV-018: Integrasi USDe/sUSDe di Aave v3 (Ethereum, Arbitrum, Base)
+- EV-019: Deployment USDe/USDC/USDT Pool di Curve Finance
+- EV-020: Luncuran Equilibria Finance (eUSDe) pada Pendle
+- EV-021: Deployment USDe dan ENA di Solana via Wormhole Bridge
+- EV-022: Integrasi USDe/sUSDe di Ethereal (Hyperliquid Ecosystem)
+- EV-023: Integrasi sUSDe di Spectra (Yield Tokenization)
+- EV-024: Audit Smart Contract oleh OpenZeppelin
+- EV-025: Audit Smart Contract oleh Zellic
+- EV-026: Audit Smart Contract oleh Spearbit
+- EV-027: Integrasi Copper Custody untuk Institutional Access
+- EV-028: Integrasi Fireblocks Custody untuk Institutional Access
+- EV-029: USDe Supply Mencapai $3 Billion (All-Time High)
+- EV-030: Proposal Governance: Parameter Update Insurance Fund dan Funding Rate Cap
+- EV-031: Peluncuran "Sats" Campaign dan Incentive Program Musim 2
+- EV-032: USDe Supply Stabil di Rentang $2.5B-$3B setelah Koreksi Pasar
+- EV-033: Proposal Governance: ENA Tokenomics Update dan Staking Rewards
+
+---
+
+### RINGKASAN
+
+Total Events
+
+33
+
+Founding
+
+1
+
+Funding
+
+1
+
+Launch
+
+6
+
+Technology
+
+7
+
+Governance
+
+4
+
+Security
+
+3
+
+Legal
+
+0
+
+Regulation
+
+0
+
+Partnership
+
+0
+
+Integration
+
+10
+
+Token
+
+1
+
+Market
+
+3
+
+Organization
+
+0
+
+Infrastructure
+
+0
+
+Community
+
+0
+
+Product
+
+2
+
+Ecosystem
+
+2
+
+Other
+
+0
+
+---
+
+Open Threads
+
+- Tanggal pasti ronde Series A: The Block artikel tanggal 19 Maret 2024 melaporkan ronde ini, namun dana kemungkinan dikumpulkan akhir 2023. Tanggal closing resmi tidak dipublikasikan.
+- Tanggal deployment spesifik per chain (Arbitrum, Optimism, Base, Mantle, BNB Chain, Solana) — hanya bulan (Maret-Mei 2024) yang tersedia dari blog/docs, tidak ada tanggal exact per chain.
+- Tanggal audit OpenZeppelin, Zellic, Spearbit — hanya bulan (Juni 2024) yang diketahui dari laporan, tanggal mulai/selesai audit tidak dipublikasikan detail.
+- Jumlah investor Series A tambahan: The Block menyebut 7 investor, apakah ada angel investor tambahan tidak terungkap.
+- Tanggal integrasi Copper/Fireblocks — hanya bulan (Juli 2024) dari blog announcement, tanggal kontrak penandatanganan tidak diketahui.
+- Governance proposal spesifik (EV-030, EV-033) — proposal ID dan hasil vote detail perlu diverifikasi di Snapshot.
+- "Sats" campaign details (EV-031) — mekanisme reward, durasi, dan budget belum sepenuhnya terdokumentasi di sumber publik.
+- Regulatory status USDe di jurisdiksi utama (US, EU, UK, Singapore) — tidak ada legal opinion publik, event regulatory belum terjadi tapi risiko ada.
+- Insurance fund size dan management — protokol menyebut insurance fund tapi ukuran real-time dan governance-nya tidak transparan di dashboard publik.
+- ENA token unlock schedule detail bulanan untuk team/investors — hanya high-level "4 tahun vesting" yang dipublikasikan, cliff schedule tidak tersedia.

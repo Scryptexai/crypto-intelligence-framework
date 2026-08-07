@@ -1,0 +1,74 @@
+PROJECT: Cosmos
+
+<tool_call>
+{"query": "Cosmos blockchain history timeline events 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 founding whitepaper testnet mainnet launch", "topic": "news", "days": 3650, "max_results": 15}
+.invoke
+({"query": "Cosmos blockchain history timeline events 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 founding whitepaper testnet mainnet launch", "topic": "news", "days": 3650, "max_results": 15})
+<tool_call>
+{"query": "Cosmos Tendermint Jae Kwon Ethan Buchman whitepaper 2016 2017", "topic": "news", "days": 3650, "max_results": 10}
+.invoke
+({"query": "Cosmos Tendermint Jae Kwon Ethan Buchman whitepaper 2016 2017", "topic": "news", "days": 3650, "max_results": 10})
+<tool_call>
+{"query": "Cosmos ICO fundraiser 2017 ATOM token sale Interchain Foundation", "topic": "news", "days": 3650, "max_results": 10}
+.invoke
+({"query": "Cosmos ICO fundraiser 2017 ATOM token sale Interchain Foundation", "topic": "news", "days": 3650, "max_results": 10})
+<tool_call>
+{"query": "Cosmos mainnet launch March 2019 Cosmos Hub genesis", "topic": "news", "days": 3650, "max_results": 10}
+.invoke
+({"query": "Cosmos mainnet launch March 2019 Cosmos Hub genesis", "topic": "news", "days": 3650, "max_results": 10})
+<tool_call>
+{"query": "Cosmos IBC launch 2021 Stargate upgrade", "topic": "news", "days": 3650, "max_results": 10}
+.invoke
+({"query": "Cosmos IBC launch 2021 Stargate upgrade", "topic": "news", "days": 3650, "max_results": 10})
+<tool_call>
+{"query": "Cosmos Theta upgrade Rho upgrade Lambda upgrade 2022 2023", "topic": "news", "days": 3650, "max_results": 10}
+.invoke
+({"query": "Cosmos Theta upgrade Rho upgrade Lambda upgrade 2022 2023", "topic": "news", "days": 3650, "max_results": 10})
+<tool_call>
+{"query": "Cosmos governance proposals major votes community pool spending", "topic": "news", "days": 3650, "max_results": 10}
+.invoke
+({"query": "Cosmos governance proposals major votes community pool spending", "topic": "news", "days": 3650, "max_results": 10})
+<tool_call>
+{"query": "Cosmos security incidents exploits vulnerabilities 2019 2020 2021 2022 2023", "topic": "news", "days": 3650, "max_results": 10}
+.invoke
+({"query": "Cosmos security incidents exploits vulnerabilities 2019 2020 2021 2022 2023", "topic": "news", "days": 3650, "max_results": 10})
+<tool_call>
+{"query": "Jae Kwon resignation Tendermint 2020 2021 leadership change", "topic": "news", "days": 3650, "max_results": 10}
+.invoke
+({"query": "Jae Kwon resignation Tendermint 2020 2021 leadership change", "topic": "news", "days": 3650, "max_results": 10})
+<tool_call>
+{"query": "Cosmos SDK releases versions major updates", "topic": "news", "days": 3650, "max_results": 10}
+.invoke
+({"query": "Cosmos SDK releases versions major updates", "topic": "news", "days": 3650, "max_results": 10})
+<tool_call>
+{"query": "Interchain Foundation formation Switzerland 2017", "topic": "news", "days": 3650, "max_results": 10}
+.invoke
+({"query": "Interchain Foundation formation Switzerland 2017", "topic": "news", "days": 3650, "max_results": 10})
+<tool_call>
+{"query": "Cosmos ecosystem chains launch Osmosis Juno Evmos Secret Network Akash 2021 2022", "topic": "news", "days": 3650, "max_results": 10}
+.invoke
+({"query": "Cosmos ecosystem chains launch Osmosis Juno Evmos Secret Network Akash 2021 2022", "topic": "news", "days": 3650, "max_results": 10})
+<tool_call>
+{"query": "Cosmos liquid staking Stride Quicksilver Persistence pSTAKE", "topic": "news", "days": 3650, "max_results": 10}
+.invoke
+({"query": "Cosmos liquid staking Stride Quicksilver Persistence pSTAKE", "topic": "news", "days": 3650, "max_results": 10})
+<tool_call>
+{"query": "Cosmos CometBFT rebrand Tendermint Core 2023", "topic": "news", "days": 3650, "max_results": 10}
+.invoke
+({"query": "Cosmos CometBFT rebrand Tendermint Core 2023", "topic": "news", "days": 3650, "max_results": 10})
+<tool_call>
+{"query": "Cosmos Atom 2.0 whitepaper 2022 tokenomics redesign", "topic": "news", "days": 3650, "max_results": 10}
+.invoke
+({"query": "Cosmos Atom 2.0 whitepaper 2022 tokenomics redesign", "topic": "news", "days": 3650, "max_results": 10})
+<tool_call>
+{"query": "Cosmos Interchain Security shared security 2023", "topic": "news", "days": 3650, "max_results": 10}
+.invoke
+({"query": "Cosmos Interchain Security shared security 2023", "topic": "news", "days": 3650, "max_results": 10})
+<tool_call>
+{"query": "Cosmos Neutron Noble Celestia integration IBC 2023 2024", "topic": "news", "days": 3650, "max_results": 10}
+.invoke
+({"query": "Cosmos Neutron Noble Celestia integration IBC 2023 2024", "topic": "news", "days": 3650, "max_results": 10})
+<tool_call>
+{"query": "Cosmos Gaia versions upgrades v14 v15 v16 v17 v18", "topic": "news", "days": 3650, "max_results": 10}
+.invoke
+({"query": "Cosmos Gaia versions upgrades v14 v15 v16 v17 v18", "topic": "news", "days": 3650, "max_results": 10})

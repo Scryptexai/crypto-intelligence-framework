@@ -1,0 +1,203 @@
+PROJECT: Friend.tech
+
+## Core Insights
+
+Insight 1: Single-Chain Maximalism sebagai Strategi Go-to-Market Efektif untuk Consumer Crypto
+Explanation: Friend.tech memilih eksklusif deploy di Base mainnet sejak V1 (EV-003) tanpa multi-chain deployment, memanfaatkan deep integration dengan ekosistem Base/Coinbase (Base Ecosystem Fund investor, Coinbase Wallet default onboarding, Conduit sequencer, Aerodrome DEX)【Phase 3 — EV-003】【Phase 2 — Base, Coinbase, Base Ecosystem Fund, Conduit, Coinbase Wallet】. Strategi ini mengurangi kompleksitas teknis dan operational overhead, serta memanfaatkan network effect Base sebagai "flagship app"【Phase 8 — Narrative Position】.
+Evidence: V1 Launch pada Base Mainnet (Invite-Only Beta)【Phase 3 — EV-003】; External Dependencies: Base (Critical), Coinbase (Critical), Conduit (High), Coinbase Wallet (High)【Phase 7 — External Dependencies】; Narrative: Base Ecosystem Flagship【Phase 8 — Narrative Position】; Competitor Landscape: Friend3 multi-chain, Stars Arena Avalanche — berbeda strategi【Phase 8 — Competitor Landscape】.
+Supporting Dataset: Phase 2 Entities; Phase 3 EV-002, EV-003, EV-007; Phase 4 Architecture; Phase 7 External Dependencies; Phase 8 Narrative Position, Competitor Landscape.
+Confidence: HIGH
+
+Insight 2: Immutable V1 → Upgradeable V2 via UUPS Proxy + Defender sebagai Pola Evolusi Smart Contract yang Berkelanjutan
+Explanation: V1 contracts (Share.sol, Trade.sol, Fee.sol) dibuat immutable untuk keamanan/kepercayaan【Phase 4 — Core Components】, namun membatasi iterasi (V1 volume menurun tanpa bisa di-update, EV-011). V2 dirancang modular upgradeable dari awal menggunakan UUPS proxy pattern dengan admin via OpenZeppelin Defender multi-sig【Phase 4 — Core Components, Technical Upgrade History】. Pola ini memungkinkan post-audit patches (EV-021) dan governance parameter updates tanpa redeploy.
+Evidence: V1 Contracts Immutable (frozen, no upgrade path)【Phase 4 — Core Components】; V2 UUPS Proxy upgradeable via OpenZeppelin Defender【Phase 4 — Core Components, Technical Upgrade History】; Technical Limitations: V1 Immutable, V2 Upgrade Authority Centralized【Phase 4 — Technical Limitations】; Post-Audit Patches via UUPS upgrade administered through Defender【Phase 4 — Technical Upgrade History】; Spearbit Audit Completed (V2 Contracts)【Phase 3 — EV-021】.
+Supporting Dataset: Phase 4 Core Components, Technical Limitations, Technical Upgrade History; Phase 2 Entity (OpenZeppelin); Phase 3 EV-014, EV-021.
+Confidence: HIGH
+
+Insight 3: Account Abstraction + Embedded Wallets + Twitter Identity = Onboarding Friction Near-Zero untuk Non-Crypto Users
+Explanation: Friend.tech menggunakan Privy (email/SMS/Twitter OAuth → embedded wallet ERC-4337) dan Coinbase Wallet (smart wallet, gasless paymaster) sejak V1 launch【Phase 3 — EV-003】, menghilangkan seed phrase friction. Twitter/X OAuth menjadi single sign-on dan social graph source【Phase 4 — Architecture】. Kombinasi ini memungkinkan adopsi massal 50k+ DAU peak【Phase 8 — Adoption Metrics】.
+Evidence: Privy integration sejak V1 (EV-003)【Phase 3 — EV-003】; Core Components: Privy Authentication Infrastructure【Phase 4 — Core Components】; External Dependencies: Privy (Critical), Coinbase Wallet (High), Twitter/X (Critical)【Phase 7 — External Dependencies】; Major Integrations: Friend.tech × Privy, × Coinbase Wallet, × Twitter/X【Phase 7 — Major Integrations】; DAU Peak >50k (Agustus 2023)【Phase 8 — Adoption Metrics】.
+Supporting Dataset: Phase 2 Entities (Privy, Coinbase Wallet); Phase 3 EV-003; Phase 4 Core Components, Architecture; Phase 7 External Dependencies, Major Integrations; Phase 8 Adoption Metrics.
+Confidence: HIGH
+
+Insight 4: Bonding Curve Fee Revenue Bisa Generate Treasury Runway Multi-Tahun dalam Bulan (Jika PMF Terjadi)
+Explanation: V1 fee model (10% split 5% protokol / 5% kreator) generate >$1M daily fees peak (EV-006) dan >$10M cumulative <3 minggu (EV-009). Treasury V2 balance >$5M per Desember 2024 (EV-025) berisi ETH, FRIEND, USDbC — mendanai runway tanpa follow-on funding.
+Evidence: $1M+ Daily Protocol Fees Achieved (EV-006)【Phase 3 — EV-006】; $10M+ Cumulative Protocol Fees (EV-009)【Phase 3 — EV-009】; Treasury Balance >$5M Confirmed (EV-025)【Phase 3 — EV-025】; Revenue History: Peak V1 >$1M/hari, >$10M kumulatif【Phase 5 — Revenue History】; Treasury Composition: ETH, FRIEND, USDbC【Phase 5 — Treasury】; Financial Risk: Funding Dependency — no follow-on funding announced post-seed【Phase 5 — Financial Risk】.
+Supporting Dataset: Phase 3 EV-006, EV-009, EV-020, EV-025; Phase 5 Revenue Model, Revenue History, Treasury; Phase 8 Adoption Metrics.
+Confidence: HIGH
+
+Insight 5: Token Distribution Opacity Menjadi Norma untuk Proyek VC-Backed SocialFi (Tidak Ada Public Breakdown)
+Explanation: Alokasi FRIEND token (community, team, investors, treasury, ecosystem) persentase tidak diungkap resmi; vesting schedule tidak dipublikasikan; hanya total supply 100M yang dikonfirmasi【Phase 6 — Distribution, Vesting Schedule, Open Threads】. Seed investors (Paradigm, a16z crypto, Variant, Base Ecosystem Fund) valuation $50M tapi token allocation tidak transparan【Phase 5 — Funding History】.
+Evidence: Distribution: semua kategori "persentase tidak diungkap resmi"【Phase 6 — Distribution】; Vesting Schedule: semua "tidak diketahui"【Phase 6 — Vesting Schedule】; Open Threads: allocation percentages, vesting details tidak diungkap【Phase 6 — Open Threads】; Seed Funding: Paradigm lead, $50M valuation, amount tidak diungkap【Phase 5 — Funding History】.
+Supporting Dataset: Phase 6 Distribution, Vesting Schedule, Open Threads; Phase 5 Funding History, Financial Dependencies.
+Confidence: HIGH
+
+Insight 6: Regulatory Optics Management via Terminology Shift ("Shares"→"Keys") dan Utility-Only Token Design
+Explanation: Proaktif mengubah terminologi "shares"→"keys" Agustus 2023 (EV-008) eksplisit untuk "menghindari implikasi regulasi sekuritas". FRIEND token utility terbatas pada governance, staking discount, ecosystem incentives — tidak ada profit-sharing, gas, validator, collateral【Phase 6 — Token Utility】. Narrative pivot ke "Consumer Crypto" (EV-024) mengurangi financial framing.
+Evidence: Rebrand "Shares" to "Keys" (Regulatory Optics) (EV-008)【Phase 3 — EV-008】; Token Utility: Governance, Staking Fee Discount, Ecosystem Incentives, Treasury Asset — no profit-sharing【Phase 6 — Token Utility】; Entities: SEC, CFTC sebagai regulatory risk【Phase 2 — SEC, CFTC】; Financial Risk: Legal Financial Risk — SEC/CFTC evaluation【Phase 5 — Financial Risk】; Narrative: Consumer Crypto pivot (EV-024)【Phase 8 — Narrative Position】.
+Supporting Dataset: Phase 3 EV-008; Phase 6 Token Utility; Phase 2 Entities (SEC, CFTC); Phase 5 Financial Risk; Phase 8 Narrative Position.
+Confidence: HIGH
+
+Insight 7: V1-to-V2 Migration via Claim/Konversi (Bukan Force Migration) Meninggalkan Residual Value di V1
+Explanation: Migrasi V1 keys ke V2 clubs bersifat voluntary claim/konversi selama beberapa minggu (EV-019); V1 contracts immutable tidak bisa force migrate. Sebagian kecil keys V1 masih di-hold tanpa claim【Phase 3 — Open Threads】. V1 revenue berhenti (contracts frozen); V2 revenue dari clubs fee dynamic governance-set.
+Evidence: Migration V1→V2 (EV-019)【Phase 3 — EV-019】; Technical Limitations: V1 Contracts Immutable【Phase 4 — Technical Limitations】; Revenue Model: V1 discontinued, V2 dynamic【Phase 5 — Revenue Model】; Open Threads: residual V1 keys unclaimed【Phase 3 — Open Threads】.
+Supporting Dataset: Phase 3 EV-014, EV-019, EV-020; Phase 4 Core Components, Technical Limitations; Phase 5 Revenue Model.
+Confidence: MEDIUM
+
+Insight 8: CEX-First Liquidity Strategy dengan Simultaneous Major Exchange Listing at TGE
+Explanation: FRIEND token listing simultan di Binance, Bybit, OKX hari TGE (EV-015), diikuti Coinbase Exchange & Kraken bulan depan (EV-018) — prioritas CEX liquidity > DEX. CEX volume mendominasi >90% (Phase 8 Liquidity). Market maker dependency (Wintermute, GSR) tanpa agreement detail publik.
+Evidence: CEX Listings TGE: Binance/Bybit/OKX May 3 (EV-015)【Phase 3 — EV-015】; Coinbase/Kraken June 5 (EV-018)【Phase 3 — EV-018】; Trading Markets: 5 CEX live【Phase 8 — Trading Markets】; Liquidity: CEX dominant >90% volume【Phase 8 — Liquidity】; Entities: Wintermute, GSR Markets (Medium dependency)【Phase 2 — Wintermute, GSR Markets】; Financial Risk: Market Making Dependency【Phase 5 — Financial Risk】.
+Supporting Dataset: Phase 3 EV-015, EV-018; Phase 6 Major Token Events; Phase 7 Major Integrations; Phase 8 Trading Markets, Liquidity; Phase 2 Entities; Phase 5 Financial Risk.
+Confidence: HIGH
+
+Insight 9: Governance Hybrid — Token-Weighted Voting Advisory, Team Multi-sig Execution (Bukan Full DAO)
+Explanation: Treasury dikelola team multi-sig; on-chain governance (FRIEND token voting) bisa propose parameter changes (fee clubs, insentif) tapi eksekusi butuh team multi-sig via Defender timelock【Phase 6 — Governance】. Upgrade authority centralized di team multi-sig【Phase 4 — Security Model】. Proposal threshold dan quorum tidak diungkap【Phase 6 — Open Threads】.
+Evidence: Governance: Treasury managed by team multi-sig, not directly DAO【Phase 6 — Governance】; Security Model: V2 Upgrade Authority Centralized — team multi-sig via Defender【Phase 4 — Security Model】; Governance Activation: First proposal fee parameters (EV-017)【Phase 3 — EV-017】; Open Threads: proposal threshold, quorum tidak terdokumentasi【Phase 6 — Open Threads】.
+Supporting Dataset: Phase 6 Governance, Open Threads; Phase 4 Security Model, Technical Upgrade History; Phase 3 EV-017; Phase 7 Major Integrations (OpenZeppelin Defender).
+Confidence: HIGH
+
+Insight 10: Analytics & Transparency via Third-Party Platforms (Dune, Nansen, Arkham, DeFi Llama) — No Self-Built Dashboard
+Explanation: Friend.tech tidak membangun analytics dashboard sendiri; mengandalkan komunitas Dune, platform institusional Nansen/Arkham, aggregator DeFi Llama untuk transparency【Phase 7 — External Dependencies, Major Integrations】. Official Market Resources semuanya third-party【Phase 8 — Official Market Resources】.
+Evidence: Entities: Dune, Nansen, Arkham, DeFi Llama, Token Terminal, Messari (Medium/Low dependency)【Phase 2 — Dune, Nansen, Arkham, DeFi Llama, Token Terminal, Messari】; EV-010 Nansen dashboard launch, EV-012 Arkham labels【Phase 3 — EV-010, EV-012】; Major Integrations: Analytics × Dune, Nansen, Arkham, DeFi Llama【Phase 7 — Major Integrations】; Official Market Resources: all third-party【Phase 8 — Official Market Resources】.
+Supporting Dataset: Phase 2 Entities; Phase 3 EV-010, EV-012; Phase 7 External Dependencies, Major Integrations; Phase 8 Official Market Resources.
+Confidence: HIGH
+
+## Strategic Principles
+
+Principle 1: Single-Chain Deep Integration Over Multi-Chain Breadth
+Explanation: Fokus eksklusif pada Base mainnet memanfaatkan full stack Base/Coinbase (chain, wallet, fund, sequencer, DEX) untuk speed to market dan user experience terintegrasi, bukan fragmentasi liquidity dan developer attention across chains.
+Evidence: V1 Launch pada Base Mainnet (EV-003)【Phase 3 — EV-003】; External Dependencies: Base (Critical), Coinbase (Critical), Conduit (High), Coinbase Wallet (High)【Phase 7 — External Dependencies】; Narrative: Base Ecosystem Flagship【Phase 8 — Narrative Position】; Competitor: Friend3 multi-chain, Stars Arena Avalanche — berbeda strategi【Phase 8 — Competitor Landscape】.
+Supporting Dataset: Phase 3 EV-003; Phase 7 External Dependencies; Phase 8 Narrative Position, Competitor Landscape.
+Confidence: HIGH
+
+Principle 2: Immutable V1 for Trust, Upgradeable V2 for Iteration
+Explanation: Deploy V1 immutable untuk membangun kepercayaan "code is law" dan menghindari rug pull risk; lalu V2 modular upgradeable (UUPS + Defender) untuk memungkinkan evolusi produk, audit patches, dan governance parameter updates tanpa migrasi ulang.
+Evidence: V1 Contracts Immutable (frozen, no upgrade path)【Phase 4 — Core Components】; V2 UUPS Proxy upgradeable via OpenZeppelin Defender【Phase 4 — Core Components, Technical Upgrade History】; Technical Limitations: V1 Immutable, V2 Upgrade Authority Centralized【Phase 4 — Technical Limitations】; Post-Audit Patches via UUPS upgrade (EV-021)【Phase 4 — Technical Upgrade History】.
+Supporting Dataset: Phase 4 Core Components, Technical Limitations, Technical Upgrade History; Phase 3 EV-014, EV-021.
+Confidence: HIGH
+
+Principle 3: Regulatory Optics as Product Design Constraint (Proactive, Not Reactive)
+Explanation: Terminologi "shares"→"keys" (EV-008) dan FRIEND token utility design (no profit-sharing, no gas, no validator) sengaja di-engineer untuk menghindari Howey Test security classification sejak awal, bukan patch belakangan.
+Evidence: Rebrand "Shares" to "Keys" (EV-008) explicit "untuk menghindari implikasi regulasi sekuritas"【Phase 3 — EV-008】; Token Utility: no gas, no validator, no collateral, no profit-sharing【Phase 6 — Token Utility】; Entities: SEC, CFTC as regulatory risk【Phase 2 — SEC, CFTC】; Narrative: Consumer Crypto pivot (EV-024)【Phase 8 — Narrative Position】.
+Supporting Dataset: Phase 3 EV-008; Phase 6 Token Utility; Phase 2 Entities; Phase 8 Narrative Position.
+Confidence: HIGH
+
+Principle 4: Account Abstraction + Social Identity = Consumer-Grade Onboarding
+Explanation: Embedded wallets (Privy ERC-4337) + Twitter OAuth + gasless paymaster (Coinbase Wallet) mengeliminasi seed phrase, gas complexity, dan wallet download — menciptakan UX setara Web2 app untuk onboarding massal.
+Evidence: Privy integration sejak V1 (EV-003)【Phase 3 — EV-003】; Core Components: Privy Authentication Infrastructure【Phase 4 — Core Components】; External Dependencies: Privy (Critical), Coinbase Wallet (High), Twitter/X (Critical)【Phase 7 — External Dependencies】; DAU Peak >50k (Agustus 2023)【Phase 8 — Adoption Metrics】.
+Supporting Dataset: Phase 3 EV-003; Phase 4 Core Components; Phase 7 External Dependencies; Phase 8 Adoption Metrics.
+Confidence: HIGH
+
+Principle 5: Protocol Fees as Primary Runway (Revenue-First, Not Fundraising-First)
+Explanation: V1 fee model generate >$10M cumulative fees <1 bulan (EV-009), mendanai treasury >$5M (EV-025) untuk runway multi-tahun tanpa follow-on funding. Seed funding hanya satu ronde (EV-004).
+Evidence: $10M+ Cumulative Protocol Fees (EV-009)【Phase 3 — EV-009】; Treasury Balance >$5M (EV-025)【Phase 3 — EV-025】; Funding History: 1 round only (Seed Aug 2023)【Phase 5 — Funding History】; Financial Risk: Funding Dependency — no follow-on funding announced post-seed【Phase 5 — Financial Risk】.
+Supporting Dataset: Phase 3 EV-009, EV-025; Phase 5 Funding History, Revenue History, Treasury, Financial Risk.
+Confidence: HIGH
+
+Principle 6: Third-Party Analytics as Transparency Layer (Build Social Graph, Not Dashboards)
+Explanation: Mengandalkan Dune (community), Nansen/Arkham (institutional), DeFi Llama (aggregator) untuk data transparency — menghemat engineering resources dan memanfaatkan credibility existing platforms.
+Evidence: EV-010 Nansen dashboard, EV-012 Arkham labels【Phase 3 — EV-010, EV-012】; Entities: Dune, Nansen, Arkham, DeFi Llama (Medium dependency)【Phase 2 — Dune, Nansen, Arkham, DeFi Llama】; Major Integrations: Analytics × all four【Phase 7 — Major Integrations】; Official Market Resources: all third-party【Phase 8 — Official Market Resources】.
+Supporting Dataset: Phase 2 Entities; Phase 3 EV-010, EV-012; Phase 7 Major Integrations; Phase 8 Official Market Resources.
+Confidence: HIGH
+
+## Success Factors
+
+Factor 1: Base Launch Timing & Flagship Status — First Mover Advantage pada L2 Baru
+Explanation: Friend.tech launch V1 (Agustus 2023) bertepatan dengan Base mainnet maturity (Februari 2023 launch, EV-002), menjadi aplikasi consumer pertama yang memanfaatkan Base throughput tinggi + biaya rendah. Base Ecosystem Fund investor, Coinbase Wallet default integration, Conduit infrastructure — menciptakan flywheel adoption.
+Evidence: Base Mainnet Launch (EV-002, Feb 2023)【Phase 3 — EV-002】; Friend.tech V1 Launch (EV-003, Aug 2023)【Phase 3 — EV-003】; Base Ecosystem Fund investor seed round【Phase 5 — Funding History】; Coinbase Wallet default integration【Phase 7 — Major Integrations】; Narrative: Base Ecosystem Flagship【Phase 8 — Narrative Position】.
+Supporting Dataset: Phase 3 EV-002, EV-003; Phase 5 Funding History; Phase 7 Major Integrations; Phase 8 Narrative Position.
+Confidence: HIGH
+
+Factor 2: Viral Bonding Curve Mechanics + Twitter Social Graph = Explosive Growth Loop
+Explanation: Linear bonding curve menciptakan FOMO/spekulasi harga keys; Twitter OAuth login + social graph import memungkinkan instant network effects — user membeli keys influencer → influencer promote → more users. Peak >50k DAU, >$1M daily fees dalam hari-hari pertama.
+Evidence: V1 bonding curve linear, fee 10%【Phase 4 — Core Components】; Twitter/X Identity integration【Phase 4 — Architecture】; DAU Peak >50k (Aug 2023)【Phase 8 — Adoption Metrics】; $1M+ Daily Fees (EV-006)【Phase 3 — EV-006】; $10M Cumulative <3 weeks (EV-009)【Phase 3 — EV-009】.
+Supporting Dataset: Phase 4 Core Components, Architecture; Phase 3 EV-006, EV-009; Phase 8 Adoption Metrics.
+Confidence: HIGH
+
+Factor 3: Tier-1 VC Validation (Paradigm Lead) + Strategic Coinbase Alignment
+Explanation: Seed round Paradigm lead + a16z crypto + Variant + Base Ecosystem Fund pada $50M valuation (EV-004) memberikan capital, credibility, dan strategic alignment dengan Coinbase/Base ecosystem — membuka akses distribution (Coinbase Wallet, Coinbase Exchange listing) dan infrastructure priority.
+Evidence: Seed Funding Paradigm lead $50M valuation (EV-004)【Phase 3 — EV-004】; Funding History: Paradigm, a16z crypto, Variant, Base Ecosystem Fund【Phase 5 — Funding History】; Coinbase Exchange listing FRIEND/USD (EV-018)【Phase 3 — EV-018】; Coinbase Wallet default integration【Phase 7 — Major Integrations】.
+Supporting Dataset: Phase 3 EV-004, EV-018; Phase 5 Funding History; Phase 7 Major Integrations.
+Confidence: HIGH
+
+Factor 4: Privy Account Abstraction Enabling Non-Crypto Native Onboarding
+Explanation: Privy embedded wallet (ERC-4337) + Twitter OAuth + gasless transactions menghilangkan seed phrase barrier — kunci untuk mencapai massa pengguna Twitter non-crypto. Case study Privy menyebut Friend.tech sebagai showcase account abstraction mass adoption.
+Evidence: Privy integration V1 launch (EV-003)【Phase 3 — EV-003】; Privy Blog Case Study【Phase 2 — Privy】; Core Components: Privy Authentication Infrastructure【Phase 4 — Core Components】; External Dependencies: Privy (Critical)【Phase 7 — External Dependencies】.
+Supporting Dataset: Phase 2 Privy; Phase 3 EV-003; Phase 4 Core Components; Phase 7 External Dependencies.
+Confidence: HIGH
+
+Factor 5: Rapid Revenue Generation Creating Financial Independence
+Explanation: >$10M protocol fees dalam 3 minggu (EV-009) menciptakan treasury yang mendanai V2 development tanpa fundraising tambahan. Financial runway >$5M treasury (EV-025) memungkinkan tim fokus produk bukan fundraising.
+Evidence: $10M+ Cumulative Fees (EV-009)【Phase 3 — EV-009】; Treasury >$5M (EV-025)【Phase 3 — EV-025】; Financial Risk: Funding Dependency — no follow-on funding needed【Phase 5 — Financial Risk】.
+Supporting Dataset: Phase 3 EV-009, EV-025; Phase 5 Revenue History, Treasury, Financial Risk.
+Confidence: HIGH
+
+## Failure Factors
+
+Factor 1: V1 Immutable Contracts Mencegah Iterasi Produk Saat Retensi Menurun
+Explanation: V1 contracts immutable (Share.sol, Trade.sol, Fee.sol frozen)【Phase 4 — Core Components】 berarti tim tidak bisa adjust bonding curve parameters, fee structure, atau tambah fitur retention saat volume menurun drastis post-peak (EV-011). Harus deploy V2 baru penuh — migration friction tinggi.
+Evidence: V1 Contracts Immutable (no upgrade path)【Phase 4 — Core Components】; Volume/Activity Decline (EV-011)【Phase 3 — EV-011】; Technical Limitations: V1 Immutable【Phase 4 — Technical Limitations】; Migration V1→V2 voluntary, residual keys unclaimed【Phase 3 — EV-019, Open Threads】.
+Supporting Dataset: Phase 4 Core Components, Technical Limitations; Phase 3 EV-011, EV-019, Open Threads.
+Confidence: HIGH
+
+Factor 2: Speculative Bonding Curve Model Tidak Sustainable untuk Retention Jangka Panjang
+Explanation: V1 linear bonding curve menciptakan spekulasi harga keys, bukan value sosial jangka panjang. User beli keys untuk flip, bukan akses konten. Ketika hype reda, volume collapse >90% (EV-011, EV-022). V2 clubs model belum terbukti fix retention.
+Evidence: Bonding curve linear V1【Phase 4 — Core Components】; Volume Decline Significant (EV-011)【Phase 3 — EV-011】; V2 Volume Low Stable (EV-022)【Phase 3 — EV-022】; DAU Current <5k vs Peak >50k【Phase 8 — Adoption Metrics】.
+Supporting Dataset: Phase 4 Core Components; Phase 3 EV-011, EV-022; Phase 8 Adoption Metrics.
+Confidence: HIGH
+
+Factor 3: Token Distribution Opacity Merusak Kepercayaan Komunitas & Investor
+Explanation: Tidak ada public breakdown alokasi FRIEND token (community, team, investors, treasury, ecosystem)【Phase 6 — Distribution, Open Threads】; vesting schedule tidak diungkap; circulating supply tidak dikonfirmasi resmi【Phase 6 — Open Threads】; CoinGecko/CoinMarketCap menampilkan "Self Reported" atau estimasi. Menciptakan ketidakpastian sell pressure dari team/investor unlock.
+Evidence: Distribution: all categories "persentase tidak diungkap resmi"【Phase 6 — Distribution】; Vesting Schedule: all "tidak diketahui"【Phase 6 — Vesting Schedule】; Open Threads: allocation percentages, vesting details, circulating supply tidak diungkap【Phase 6 — Open Threads】.
+Supporting Dataset: Phase 6 Distribution, Vesting Schedule, Open Threads.
+Confidence: HIGH
+
+Factor 4: Single Point of Failure — Twitter/X API Dependency untuk Identity & Login
+Explanation: 100% login dan identity verification bergantung Twitter/X OAuth API【Phase 4 — Architecture】【Phase 7 — External Dependencies】. Tidak ada fallback (email direct, Google, Farcaster, wallet-only). Perubahan Twitter API policy, rate limits, atau deprecation akan break onboarding sepenuhnya.
+Evidence: Identity Layer: Twitter/X API【Phase 4 — Architecture】; External Dependencies: Twitter/X (Critical)【Phase 7 — External Dependencies】; Technical Limitations: Twitter/X API Dependency【Phase 4 — Technical Limitations】.
+Supporting Dataset: Phase 4 Architecture, Technical Limitations; Phase 7 External Dependencies.
+Confidence: HIGH
+
+Factor 5: V2 Clubs Model Belum Menemukan Product-Market Fit (Volume & Retensi Rendah)
+Explanation: V2 launch Mei 2024 (EV-014) dengan clubs NFT, governance, FRIEND token — namun volume stabil di level rendah (EV-022), DAU <5k, price volatil $1.50→$0.30-0.60 (EV-023). Pivot announcement non-financial features (EV-024) Nov 2024 mengakui model clubs belum cukup.
+Evidence: V2 Launch + TGE (EV-014)【Phase 3 — EV-014】; V2 Volume Low Stable (EV-022)【Phase 3 — EV-022】; Price Volatility (EV-023)【Phase 3 — EV-023】; Non-Financial Features Announced (EV-024)【Phase 3 — EV-024】; DAU Current <5k【Phase 8 — Adoption Metrics】.
+Supporting Dataset: Phase 3 EV-014, EV-022, EV-023, EV-024; Phase 8 Adoption Metrics.
+Confidence: HIGH
+
+Factor 6: Centralized Upgrade Authority (Team Multi-sig via Defender) Menghadapi Kritik Desentralisasi
+Explanation: V2 UUPS proxy admin controlled by team multi-sig di OpenZeppelin Defender【Phase 4 — Security Model】. Governance proposal bisa trigger upgrade tapi eksekusi butuh team sign-off. Tidak ada timelock governance contract publik yang diverifikasi; Defender admin addresses tidak publik【Phase 6 — Open Threads】.
+Evidence: Security Model: V2 Upgrade Authority Centralized【Phase 4 — Security Model】; Technical Upgrade History: Post-Audit Patches via UUPS upgrade administered through Defender【Phase 4 — Technical Upgrade History】; Governance: Treasury managed by team multi-sig, not directly DAO【Phase 6 — Governance】; Open Threads: governance timelock controller addresses tidak publik【Phase 6 — Open Threads】.
+Supporting Dataset: Phase 4 Security Model, Technical Upgrade History; Phase 6 Governance, Open Threads.
+Confidence: MEDIUM
+
+## Decision Framework
+
+Observe → Evaluate → Fund → Develop → Launch → Govern
+Explanation: Rekonstruksi framework keputusan Friend.tech berdasarkan pola historis (EV-001 to EV-025) dan behavioral patterns (Phase 9).
+
+Step 1: Observe — Identify Infrastructure Readiness & Market Window
+Detail: Tim (Racer, Shrimp) mengamati Base mainnet launch (EV-002, Feb 2023) sebagai L2 dengan throughput tinggi + biaya rendah yang enable consumer app frequency trading. Konsep social token bonding curve sudah dikembangkan 2022 (EV-001).
+Evidence: EV-001 Konsep Awal 2022【Phase 3 — EV-001】; EV-002 Base Mainnet Launch Feb 2023【Phase 3 — EV-002】; Phase 9 Decision: Launch V1 on Base (trigger: Base ready).
+Supporting Dataset: Phase 3 EV-001, EV-002; Phase 9 Decision Pattern 1.
+Confidence: HIGH
+
+Step 2: Evaluate — Validate Technical Feasibility & Regulatory Risk
+Detail: Evaluasi: Base infrastructure ready, Privy account abstraction available, Twitter OAuth untuk identity. Regulatory risk assessed: "shares" terminology → changed to "keys" pre-public launch (EV-008) untuk Howey Test avoidance.
+Evidence: EV-003 V1 Launch invite-only (technical validation)【Phase 3 — EV-003】; EV-008 Rebrand shares→keys (regulatory optics)【Phase 3 — EV-008】; Phase 9 Decision: Rebrand for regulatory avoidance.
+Supporting Dataset: Phase 3 EV-003, EV-008; Phase 9 Decision Pattern 3.
+Confidence: HIGH
+
+Step 3: Fund — Single Seed Round from Tier-1 VCs at High Valuation
+Detail: Setelah V1 public launch explosive growth (EV-005, EV-006), seed round Paradigm lead $50M valuation (EV-004) dengan a16z, Variant, Base Ecosystem Fund. Tidak ada follow-on fundraising — runway dari protocol fees.
+Evidence: EV-004 Seed Funding Paradigm lead【Phase 3 — EV-004】; Phase 5 Funding History: 1 round only【Phase 5 — Funding History】; Phase 9 Pattern: Single Seed Round Only.
+Supporting Dataset: Phase 3 EV-004; Phase 5 Funding History; Phase 9 Pattern 1.
+Confidence: HIGH
+
+Step 4: Develop — Immutable V1 First, Then Modular Upgradeable V2
+Detail: V1 developed as immutable contracts (trust, speed to market). V2 developed modular (Club, Token, Governance, FeeManager separate) with UUPS proxy + Defender for upgradeability. Spearbit audit V2 before/after launch.
+Evidence: V1 Immutable【Phase 4 — Core Components】; V2 Modular UUPS【Phase 4 — Core Components】; EV-013 V2 Announcement, EV-014 V2 Launch【Phase 3 — EV-013, EV-014】; EV-021 Spearbit Audit【Phase 3 — EV-021】; Phase 9 Pattern: Immutable V1 → Upgradeable V2.
+Supporting Dataset: Phase 4 Core Components; Phase 3 EV-013, EV-014, EV-021; Phase 9 Pattern 2.
+Confidence: HIGH
+
+Step 5: Launch — Phased: Invite-Only → Public → Token TGE + Simultaneous CEX Listings
+Detail: V1: Invite-only beta (EV-003) → Public access (EV-005). V2: TGE + FRIEND token

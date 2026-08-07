@@ -1,0 +1,35 @@
+PROJECT: EigenLayer
+
+<invoke name="tavily_search">
+<param name="query">EigenLayer EIGEN token official name symbol contract address decimals blockchain</param>
+</invoke>
+<invoke name="tavily_search">
+<param name="query">EigenLayer EIGEN token supply maximum total circulating initial supply type fixed inflationary</param>
+</invoke>
+<invoke name="tavily_search">
+<param name="query">EigenLayer EIGEN token distribution allocation community team investors foundation treasury ecosystem advisors</param>
+</invoke>
+<invoke name="tavily_search">
+<param name="query">EigenLayer EIGEN token vesting schedule cliff vesting unlock frequency categories</param>
+</invoke>
+<invoke name="tavily_search">
+<param name="query">EigenLayer EIGEN token TGE date initial unlock launch platform status September 2024</param>
+</invoke>
+<invoke name="tavily_search">
+<param name="query">EigenLayer EIGEN token utility governance staking slashing fee payment collateral incentive reward</param>
+</invoke>
+<invoke name="tavily_search">
+<param name="query">EigenLayer EIGEN token governance model voting system delegation proposal treasury governance</param>
+</invoke>
+<invoke name="tavily_search">
+<param name="query">EigenLayer EIGEN token inflation emission schedule burn mechanism buyback supply reduction</param>
+</invoke>
+<invoke name="tavily_search">
+<param name="query">EigenLayer EIGEN token holder distribution top holders foundation investor treasury community whale concentration</param>
+</invoke>
+<invoke name="tavily_search">
+<param name="query">EigenLayer EIGEN token major events airdrop launch governance proposals slashing upgrades 2024</param>
+</invoke>
+<invoke name="tavily_search">
+<param name="query">EigenLayer EIGEN token official documentation whitepaper governance explorer contract GitHub dashboard</param>
+</invoke>

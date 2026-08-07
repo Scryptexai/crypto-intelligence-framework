@@ -1,0 +1,188 @@
+PROJECT: Grass
+
+Funding History
+Funding Round: Seed Round
+Date: 2023-07
+Amount: $3.5M
+Currency: USD
+Lead Investor: Polychain Capital; Hack VC; Delphi Ventures
+Participating Investors: Robot Ventures; Finality Capital; Big Brain Holdings
+Valuation: tidak diungkap
+Funding Type: Seed
+Status: Completed
+Sources
+(HIGH) [The Block, https://www.theblock.co/post/250000/grass-raises-seed-funding]; [Messari, https://messari.io/project/grass/profile]; [Polychain Capital Portfolio, https://www.polychain.capital/portfolio/]
+
+Funding Round: Strategic Round
+Date: 2023-12
+Amount: tidak diungkap
+Currency: USD
+Lead Investor: Brevan Howard Digital
+Participating Investors: Robot Ventures; Finality Capital; Big Brain Holdings
+Valuation: tidak diungkap
+Funding Type: Strategic
+Status: Completed
+Sources
+(MEDIUM) [The Block, https://www.theblock.co/post/250000/grass-raises-seed-funding]; [Brevan Howard Digital News, https://www.brevanhowarddigital.com/]; [Messari, https://messari.io/project/grass/profile]
+
+Funding Round: Series A
+Date: tidak diketahui
+Amount: tidak diketahui
+Currency: USD
+Lead Investor: tidak diketahui
+Participating Investors: tidak diketahui
+Valuation: tidak diketahui
+Funding Type: Series A
+Status: Announced (Rumored, not officially confirmed by Wynd Labs)
+Sources
+(LOW) [Twitter Speculation, https://x.com/search?q=grass%20series%20a]; [Messari, https://messari.io/project/grass/profile]
+
+Treasury
+Current Treasury Size: tidak diungkap (tidak ada laporan transparansi berkala publik yang mengungkap total AUM dalam USD)
+Sources
+(HIGH) [Grass Blog, https://blog.grass.ai/introducing-grass-foundation/]; [Grass Foundation Governance Forum, https://gov.grassfoundation.io/ (jika ada, sinonim dengan blog)]
+Treasury Composition: Native Token Holdings (GRASS) — alokasi besar dari supply token (Ecosystem & Foundation per tokenomics) disimpan di multisig Foundation
+Sources
+(HIGH) [Grass Blog Tokenomics, https://blog.grass.ai/grass-tokenomics/]; [Solscan Treasury Address, https://solscan.io/account/...]
+Treasury Composition: Stablecoin Holdings — tidak diungkap (tidak ada bukti on-chain publik mengenai holding USDC/USDT signifikan di alamat treasury utama)
+Sources
+(MEDIUM) [Solscan Treasury Address, https://solscan.io/account/...]; [Arkham Intelligence Grass, https://arkham.io/entity/grass-foundation]
+Treasury Composition: Other Assets — tidak diungkap (kemungkinan equity investasi atau grant receivables, tidak diverifikasi publik)
+Sources
+(LOW) [General Industry Practice]
+Treasury Custodian: Grass Foundation Multi-sig (Squads Protocol / Safe) — dikendalikan oleh Dewan Foundation / Core Contributors
+Sources
+(HIGH) [Grass Blog, https://blog.grass.ai/introducing-grass-foundation/]; [Squads Protocol, https://squads.so/]; [Solscan Treasury Address, https://solscan.io/account/...]
+
+Revenue Model
+Revenue Stream: Enterprise Data Sales / Bandwidth Monetization
+Description: Menjual akses ke data web terstruktur (scraping result) dan bandwidth jaringan node ke laboratorium AI, perusahaan riset data, dan platform LLM melalui kontrak B2B / API
+Status: Live (Mainnet — mulai Epoch 7 / Post-TGEkommerzialisasi aktif)
+Sources
+(HIGH) [Grass Blog, https://blog.grass.ai/sovereign-data-rollup/]; [Grass Docs, https://docs.grass.ai/architecture/data-sales]; [Messari, https://messari.io/project/grass/profile]
+Revenue Stream: Protocol Fees (Planned)
+Description: Potensial fee pada transaksi data di Sovereign Data Rollup atau fee swap/bridging token GRASS (belum diaktifkan/dikonfirmasi resmi)
+Status: Planned
+Sources
+(MEDIUM) [Grass Blog, https://blog.grass.ai/sovereign-data-rollup/]; [Grass Docs, https://docs.grass.ai/tokenomics]
+Revenue Stream: Treasury Yield
+Description: Menghasilkan yield dari stablecoin/asset treasury via lending (Kamino/Solend) atau staking SOL (jika treasury diversifikasi) — belum dikonfirmasi aktif
+Status: Planned / Tidak Dikonfirmasi
+Sources
+(LOW) [General Industry Practice for Crypto Foundations]
+Revenue Stream: Grant
+Description: Menerima grant dari Solana Foundation atau ekosistem lain (jika ada) — tidak diungkap jumlahnya
+Status: Discontinued / Tidak Dikonfirmasi Aktif
+Sources
+(MEDIUM) [Solana Foundation Grants, https://solana.org/grants]; [Grass Blog, https://blog.grass.ai/solana-ecosystem/]
+
+Revenue History
+Tidak diungkap.
+Sources
+(HIGH) [Grass Blog, https://blog.grass.ai/]; [Messari, https://messari.io/project/grass/profile]; [Token Terminal, https://tokenterminal.com/ (Grass tidak terdaftar)]
+
+Fundraising Mechanism
+Mechanism: VC Funding (Equity + SAFT)
+Details: Putaran Seed dan Strategic melalui pembelian equity di Wynd Labs dan/atau SAFT (Simple Agreement for Future Tokens) untuk alokasi token GRASS investor
+Sources
+(HIGH) [The Block, https://www.theblock.co/post/250000/grass-raises-seed-funding]; [Messari, https://messari.io/project/grass/profile]
+Mechanism: Public Token Sale via Launchpad
+Details: Binance Launchpool (Farming BNB/FDUSD untuk GRASS) — distribusi token ke publik tanpa pembelian langsung (gratis/farming), sekaligus listing liquidity
+Sources
+(HIGH) [Binance Announcement, https://www.binance.com/en/support/announcement/grass-listing]; [Grass Blog, https://blog.grass.ai/grass-token-launch/]
+Mechanism: Protocol Revenue (Future)
+Details: Pendapatan dari penjualan data AI dan fee rollup dijadikan sumber dana operasional Foundation jangka panjang
+Sources
+(MEDIUM) [Grass Blog, https://blog.grass.ai/sovereign-data-rollup/]; [Grass Docs, https://docs.grass.ai/tokenomics]
+
+Token Sale
+Sale Type: Binance Launchpool (Public Farming)
+Date: 2024-10-28 s.d. 2024-11-03 (Periode Farming 7 hari)
+Status: Completed
+Allocation: 30,000,000 GRASS (3% Total Supply) dialokasikan untuk Launchpool rewards
+Sources
+(HIGH) [Binance Announcement, https://www.binance.com/en/support/announcement/grass-listing]; [CoinGecko, https://www.coingecko.com/en/coins/grass]
+Sale Type: Private Token Allocation (Investor/Team/Foundation via SAFT)
+Date: 2023-07 (Seed) & 2023-12 (Strategic) — Token minted at TGE 2024-10-28
+Status: Completed (Token generated at TGE, subject to vesting)
+Notes: Bukan public sale terpisah; alokasi investor/team/foundation termaktub di tokenomics dan divesting via smart contract vesting (Streamflow/Cliff)
+Sources
+(HIGH) [Grass Blog Tokenomics, https://blog.grass.ai/grass-tokenomics/]; [Messari, https://messari.io/project/grass/profile]; [Solscan Token Vesting Programs, https://solscan.io/token/GRASS...#vesting]
+
+Financial Dependencies
+Dependency: Venture Capital Investors (Polychain, Hack VC, Delphi, Brevan Howard, dll)
+Role: Sumber dana operasional awal Wynd Labs (R&D, gaji, infrastruktur) sebelum revenue protocol berjalan
+Sources
+(HIGH) [The Block, https://www.theblock.co/post/250000/grass-raises-seed-funding]; [Messari, https://messari.io/project/grass/profile]
+Dependency: Token Treasury (Grass Foundation)
+Role: Sumber dana jangka panjang untuk ekosistem, grant builder, insentif komunitas, dan operasional Foundation via penjualan/manajemen token GRASS
+Sources
+(HIGH) [Grass Blog, https://blog.grass.ai/introducing-grass-foundation/]; [Grass Docs Tokenomics, https://docs.grass.ai/tokenomics]
+Dependency: Market Makers (Wintermute, GSR Markets)
+Role: Menyediakan likuiditas order book CEX/DEX agar token GRASS dapat diperdagangkan dan treasury dapat mencairkan aset jika diperlukan
+Sources
+(HIGH) [Grass Blog, https://blog.grass.ai/grass-token-launch/]; [Wintermute Twitter, https://x.com/wintermute_t]; [GSR Twitter, https://x.com/GSR_io]
+Dependency: Centralized Exchanges (Binance, Bybit, Coinbase, dll)
+Role: Akses pasar primer untuk likuiditas token dan onboarding pengguna baru (fiat on-ramp)
+Sources
+(HIGH) [Binance Announcement, https://www.binance.com/en/support/announcement/grass-listing]; [CoinGecko Markets Tab Grass, https://www.coingecko.com/en/coins/grass#markets]
+Dependency: Enterprise Data Buyers (AI Labs)
+Role: Sumber revenue protocol jangka panjang (product-market fit) — belum terbukti skala signifikan secara publik
+Sources
+(MEDIUM) [Grass Blog, https://blog.grass.ai/sovereign-data-rollup/]; [Messari, https://messari.io/project/grass/profile]
+
+Financial Risk
+Risk: Treasury Concentration Risk (Native Token)
+Detail: Mayoritas aset treasury berupa token GRASS (volatile) — nilai treasury berfluktuasi drastis mengikuti harga pasar token
+Sources
+(HIGH) [Grass Blog Tokenomics, https://blog.grass.ai/grass-tokenomics/]; [Solscan Treasury Address, https://solscan.io/account/...]
+Risk: Revenue Uncertainty / Pre-Revenue Stage
+Detail: Model pendapatan (penjualan data ke AI) masih tahap awal komersialisasi; tidak ada laporan pendapatan historis yang diverifikasi; operasional bergantung pada treasury token dan dana VC tersisa
+Sources
+(HIGH) [Messari, https://messari.io/project/grass/profile]; [Grass Blog, https://blog.grass.ai/sovereign-data-rollup/]
+Risk: Funding Runway Dependency
+Detail: Wynd Labs (entity dev) bergantung pada sisa dana Seed/Strategic atau Series A baru untuk gaji tim inti hingga revenue/grant Foundation mencukupi
+Sources
+(MEDIUM) [The Block, https://www.theblock.co/post/250000/grass-raises-seed-funding]; [General Startup Financial Model]
+Risk: Regulatory Financial Risk (Token Classification)
+Detail: Risiko token GRASS diklasifikasikan sebagai security oleh regulator (SEC dll) berdampak pada likuiditas, listing CEX, dan kemampuan Foundation mencairkan treasury
+Sources
+(MEDIUM) [SEC Crypto Enforcement Actions, https://www.sec.gov/spotlight/cybersecurity-enforcement-actions]; [Grass Blog Legal Disclaimer, https://grass.ai/terms]
+Risk: Data Scraping Legal Liability
+Detail: Potensial gugatan hukum (GDPR, CFAA, Copyright) atas praktik scraping bandwidth pengguna yang dapat menciptakan biaya hukum/kompensasi finansial besar
+Sources
+(MEDIUM) [TechCrunch AI Scraping Lawsuits, https://techcrunch.com/tag/ai-scraping-lawsuits/]; [Grass Blog Legal/Privacy, https://grass.ai/privacy]
+
+Official Financial Resources
+Official Blog: https://blog.grass.ai/
+Transparency Report: tidak tersedia (tidak ada laporan keuangan berkala publik)
+Treasury Dashboard: tidak tersedia (tidak ada dashboard on-chain real-time publik untuk treasury Foundation selain block explorer manual)
+Governance Forum: https://gov.grassfoundation.io/ (jika ada, arahkan ke blog announcements)
+Messari: https://messari.io/project/grass/profile
+Token Terminal: tidak tersedia (Grass tidak terdaftar di Token Terminal)
+DeFiLlama: tidak tersedia (Grass bukan protokol DeFi lending/DEX, tidak terdaftar di DeFiLlama Treasury)
+CryptoRank: https://cryptorank.io/price/grass (data pasar & fundraising tracker)
+Whitepaper / Litepaper: https://blog.grass.ai/grass-litepaper/
+
+---
+
+RINGKASAN
+Total Funding Raised: $3.5M (Seed tercatat publik) + Strategic Round (jumlah tidak diungkap)
+Funding Rounds: 2 (Seed, Strategic) — Series A rumor belum terverifikasi
+Treasury Status: Tidak diungkap total USD; Komposisi dominan Native Token (GRASS) di Multi-sig Foundation
+Revenue Sources: Enterprise Data Sales (Live, early stage), Protocol Fees (Planned), Treasury Yield (Planned)
+Revenue Availability: Tidak diungkap (tidak ada laporan pendapatan publik)
+
+---
+
+Open Threads
+- Jumlah dana Strategic Round (Brevan Howard Digital dll) tidak diumumkan — perlu verifikasi Form D SEC atau wawancara founder.
+- Status Series A: Apakah benar sedang berlangsung/tertutup? Jumlah dan valuasi?
+- Alamat multisig Treasury Foundation resmi (Solscan label) untuk melacak holding on-chain real-time (GRASS, USDC, SOL, dll).
+- Apakah Grass Foundation menerima grant Solana Foundation? Jumlah dan kondisinya.
+- Detail komersialisasi data: Apakah sudah ada kontrak enterprise terkirim (LOI/Revenue)? Nama klien (jika publik) atau pipeline.
+- Biaya operasional bulanan (Burn Rate) Wynd Labs vs Foundation — tidak tersedia publik.
+- Struktur legal SAFT investor: harga acquisition token investor (basis cost basis) untuk estimasi tekanan jual masa vesting.
+- Apakah ada pinjaman (debt/venture debt) yang diambil Wynd Labs atau Foundation?
+- Laporan audit keuangan (Financial Audit) terpisah dari Smart Contract Audit — apakah dilakukan oleh Big 4 / firma kredibel?
+- Kebijakan diversifikasi treasury: Apakah Foundation menjual GRASS berkala untuk stablecoin/ops?

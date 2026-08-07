@@ -20,3 +20,9 @@
 2026-08-06T15:58:09.549115+00:00	Aave	phase 10-knowledge	Aave phase 10-knowledge failed after 3 attempts: HTTP 504: {"error":{"message":"openai_error","type":"bad_response_status_code","param":"","code":"bad_response_status_code"}}
 2026-08-06T16:41:51.050761+00:00	Aptos	phase 09-behavioral	Aptos phase 09-behavioral failed after 3 attempts: HTTP 504: {"error":{"message":"openai_error","type":"bad_response_status_code","param":"","code":"bad_response_status_code"}}
 2026-08-06T20:10:10.623213+00:00	Berachain	phase 01-foundation	Berachain phase 01-foundation failed after 3 attempts: <urlopen error [Errno -3] Temporary failure in name resolution>
+2026-08-07T10:04:05.336217+00:00	Celestia	phase 10-knowledge	Celestia phase 10-knowledge failed after 3 attempts: HTTP 524: {"error":{"message":"openai_error","type":"bad_response_status_code","param":"","code":"bad_response_status_code"}}
+2026-08-07T13:18:43.208972+00:00	EOS	phase 09-behavioral	EOS phase 09-behavioral failed after 3 attempts: HTTP 504: {"error":{"message":"openai_error","type":"bad_response_status_code","param":"","code":"bad_response_status_code"}}
+2026-08-07T15:33:46.250719+00:00	Ethena	phase 06-token	Ethena phase 06-token failed after 3 attempts: HTTP 524: {"error":{"message":"openai_error","type":"bad_response_status_code","param":"","code":"bad_response_status_code"}}
+2026-08-07T16:14:43.007551+00:00	Ethereum	phase 03-history	Ethereum phase 03-history failed after 3 attempts: HTTP 504: {"error":{"message":"openai_error","type":"bad_response_status_code","param":"","code":"bad_response_status_code"}}
+2026-08-07T20:00:30.555517+00:00	Helium	phase 07-ecosystem	Helium phase 07-ecosystem failed after 3 attempts: <urlopen error [Errno -3] Temporary failure in name resolution>
+2026-08-07T20:22:35.497912+00:00	Hyperliquid	phase 01-foundation	Hyperliquid phase 01-foundation failed after 3 attempts: <urlopen error [Errno -3] Temporary failure in name resolution>

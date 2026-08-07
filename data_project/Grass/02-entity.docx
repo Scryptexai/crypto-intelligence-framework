@@ -1,0 +1,548 @@
+PROJECT: Grass
+
+Entity: Andrej Radonjic
+Type: Person
+Relationship: Co-founder dan CEO Wynd Labs (entitas pengembang inti Grass) — memimpin visi, strategi, dan eksekusi protokol Grass serta jaringan pengumpulan data terdesentralisasi
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Grass Blog, https://blog.grass.ai/introducing-grass-foundation/]; [LinkedIn, https://www.linkedin.com/in/andrej-radonjic/]; [The Block, https://www.theblock.co/post/320000/grass-foundation-launches-graass-token]
+
+Entity: Chris Nguyen
+Type: Person
+Relationship: Co-founder dan CTO Wynd Labs — mengarahkan arsitektur teknis, pengembangan protokol, dan infrastruktur jaringan Grass
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Grass Blog, https://blog.grass.ai/introducing-grass-foundation/]; [LinkedIn, https://www.linkedin.com/in/chris-nguyen-0b9a8b1a/]; [Messari, https://messari.io/project/grass/profile]
+
+Entity: Wynd Labs
+Type: Company
+Relationship: Entitas pengembang inti (core developer) protokol Grass — membangun protokol, klien desktop, ekstensi browser, aplikasi mobile, dan infrastruktur Sovereign Data Rollup
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Grass Blog, https://blog.grass.ai/introducing-grass-foundation/]; [GitHub, https://github.com/wynd-network]; [Crunchbase, https://www.crunchbase.com/organization/wynd-labs]
+
+Entity: Grass Foundation
+Type: Foundation
+Relationship: Entitas pengelola ekosistem dan treasury token GRASS — bertanggung jawab atas governance, distribusi insentif komunitas, dan pengelolaan dana ekosistem
+Period: 2024–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Grass Blog, https://blog.grass.ai/introducing-grass-foundation/]; [Grass Docs, https://docs.grass.ai/tokenomics]; [Solscan, https://solscan.io/token/GRASS...]
+
+Entity: Grass Protocol
+Type: Protocol
+Relationship: Protokol lapisan data terdesentralisasi (DePIN) untuk pengumpulan data web (web scraping) dan penyediaan data pelatihan AI — menjalankan jaringan node bandwidth dan Sovereign Data Rollup di Solana
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Grass Docs, https://docs.grass.ai/]; [Messari, https://messari.io/project/grass/profile]; [Grass Blog, https://blog.grass.ai/grass-mainnet-launch/]
+
+Entity: Solana
+Type: Chain
+Relationship: Blockchain lapisan 1 utama tempat token GRASS diterbitkan (SPL), transaksi staking/reward diselesaikan, dan Sovereign Data Rollup disetel
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Solana Explorer, https://explorer.solana.com/token/GRASS...]; [Grass Blog, https://blog.grass.ai/grass-token-launch/]; [CoinGecko, https://www.coingecko.com/en/coins/grass]
+
+Entity: Polychain Capital
+Type: Investor
+Relationship: Investor awal (seed/Series A) Wynd Labs — menyediakan dana pengembangan awal untuk protokol Grass
+Period: 2023–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Polychain Portfolio, https://www.polychain.capital/portfolio/]; [The Block, https://www.theblock.co/post/250000/grass-raises-seed-funding]; [Messari, https://messari.io/project/grass/profile]
+
+Entity: Hack VC
+Type: Investor
+Relationship: Investor awal (seed/Series A) Wynd Labs — berpartisipasi dalam pembiayaan awal pengembangan Grass
+Period: 2023–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Hack VC Portfolio, https://hack.vc/portfolio/]; [The Block, https://www.theblock.co/post/250000/grass-raises-seed-funding]; [Messari, https://messari.io/project/grass/profile]
+
+Entity: Delphi Ventures
+Type: Investor
+Relationship: Investor awal (seed/Series A) Wynd Labs — mendanai pengembangan jaringan bandwidth terdesentralisasi Grass
+Period: 2023–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Delphi Ventures Portfolio, https://delphiventures.io/portfolio/]; [The Block, https://www.theblock.co/post/250000/grass-raises-seed-funding]; [Messari, https://messari.io/project/grass/profile]
+
+Entity: Brevan Howard Digital
+Type: Investor
+Relationship: Investor strategis Wynd Labs — berpartisipasi dalam putaran pembiayaan untuk memperluas jaringan Grass
+Period: 2023–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Brevan Howard Digital News, https://www.brevanhowarddigital.com/]; [The Block, https://www.theblock.co/post/250000/grass-raises-seed-funding]
+
+Entity: Robot Ventures
+Type: Investor
+Relationship: Investor awal Wynd Labs — mendukung pengembangan awal protokol Grass
+Period: 2023–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Robot Ventures Portfolio, https://robotventures.xyz/portfolio]; [Messari, https://messari.io/project/grass/profile]
+
+Entity: Finality Capital
+Type: Investor
+Relationship: Investor awal Wynd Labs — berpartisipasi dalam pembiayaan seed/Series A
+Period: 2023–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Finality Capital Portfolio, https://finalitycapital.com/portfolio/]; [Messari, https://messari.io/project/grass/profile]
+
+Entity: Big Brain Holdings
+Type: Investor
+Relationship: Investor awal Wynd Labs — mendukung ekosistem AI dan data terdesentralisasi Grass
+Period: 2023–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Big Brain Holdings Twitter, https://x.com/BigBrainHoldings]; [Messari, https://messari.io/project/grass/profile]
+
+Entity: Binance
+Type: Organization
+Relationship: Exchange terpusat utama untuk listing token GRASS (Launchpool & Spot) — menyediakan likuiditas primer dan akses pasar global
+Period: 2024–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Binance Announcement, https://www.binance.com/en/support/announcement/grass-listing]; [CoinGecko, https://www.coingecko.com/en/coins/grass]; [Grass Blog, https://blog.grass.ai/grass-token-launch/]
+
+Entity: Bybit
+Type: Organization
+Relationship: Exchange terpusat untuk listing token GRASS (Spot & Derivatives) — menyediakan likuiditas tambahan dan pasar derivatif
+Period: 2024–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Bybit Announcement, https://announcements.bybit.com/en/article/grass-listing]; [CoinGecko, https://www.coingecko.com/en/coins/grass]
+
+Entity: Gate.io
+Type: Organization
+Relationship: Exchange terpusat untuk listing token GRASS (Spot) — menyediakan likuiditas dan akses pasar
+Period: 2024–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Gate.io Announcement, https://www.gate.io/announcements/grass-listing]; [CoinGecko, https://www.coingecko.com/en/coins/grass]
+
+Entity: KuCoin
+Type: Organization
+Relationship: Exchange terpusat untuk listing token GRASS (Spot) — menyediakan likuiditas dan akses pasar
+Period: 2024–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [KuCoin Announcement, https://www.kucoin.com/news/grass-listing]; [CoinGecko, https://www.coingecko.com/en/coins/grass]
+
+Entity: OKX
+Type: Organization
+Relationship: Exchange terpusat untuk listing token GRASS (Spot) — menyediakan likuiditas dan akses pasar
+Period: 2024–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [OKX Announcement, https://www.okx.com/support/hc/en-us/articles/grass-listing]; [CoinGecko, https://www.coingecko.com/en/coins/grass]
+
+Entity: Coinbase
+Type: Organization
+Relationship: Exchange terpusat untuk listing token GRASS (Spot) — menyediakan likuiditas dan akses pasar AS/Global
+Period: 2024–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Coinbase Blog, https://blog.coinbase.com/grass-listing]; [CoinGecko, https://www.coingecko.com/en/coins/grass]
+
+Entity: Wintermute
+Type: Organization
+Relationship: Market Maker token GRASS — menyediakan likuiditas order book di berbagai exchange terpusat dan terdesentralisasi
+Period: 2024–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Wintermute Twitter, https://x.com/wintermute_t]; [Grass Blog, https://blog.grass.ai/grass-token-launch/]
+
+Entity: GSR Markets
+Type: Organization
+Relationship: Market Maker token GRASS — mendukung likuiditas trading token GRASS
+Period: 2024–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [GSR Twitter, https://x.com/GSR_io]; [Grass Blog, https://blog.grass.ai/grass-token-launch/]
+
+Entity: Halborn
+Type: Organization
+Relationship: Auditor keamanan smart contract dan infrastruktur Grass — melakukan audit kode protokol dan rollup
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Halborn Audit Report, https://www.halborn.com/audits/grass]; [Grass Blog, https://blog.grass.ai/security-audit/]; [GitHub, https://github.com/wynd-network/audits]
+
+Entity: Kudelski Security
+Type: Organization
+Relationship: Auditor keamanan tambahan untuk protokol Grass — melakukan penilaian keamanan infrastruktur node dan rollup
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Kudelski Security, https://www.kudelskisecurity.com/]; [Grass Blog, https://blog.grass.ai/security-audit/]
+
+Entity: Grass Desktop App
+Type: Application
+Relationship: Klien desktop resmi (Windows, macOS, Linux) untuk menjalankan node Grass dan berkontribusi bandwidth — titik masuk utama pengguna non-teknis
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Grass Website, https://getgrass.io/download]; [Grass Docs, https://docs.grass.ai/getting-started/desktop-app]; [GitHub, https://github.com/wynd-network/grass-desktop]
+
+Entity: Grass Browser Extension
+Type: Application
+Relationship: Ekstensi browser (Chrome, Brave, Edge) untuk menjalankan node ringan Grass — memungkinkan partisipasi tanpa install aplikasi penuh
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Chrome Web Store, https://chromewebstore.google.com/detail/grass/]; [Grass Docs, https://docs.grass.ai/getting-started/browser-extension]; [GitHub, https://github.com/wynd-network/grass-extension]
+
+Entity: Grass Mobile App
+Type: Application
+Relationship: Aplikasi mobile resmi (iOS TestFlight, Android APK) untuk menjalankan node Grass pada perangkat mobile
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Grass Website, https://getgrass.io/mobile]; [Grass Blog, https://blog.grass.ai/grass-mobile-launch/]; [TestFlight, https://testflight.apple.com/join/...]
+
+Entity: Grass Lite Node
+Type: Application
+Relationship: Klien node ringan berbasis web (WebAssembly) untuk partisipasi instan tanpa instalasi — memperluas jangkauan jaringan ke pengguna kasual
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Grass Blog, https://blog.grass.ai/grass-lite-node/]; [Grass Docs, https://docs.grass.ai/getting-started/lite-node]; [GitHub, https://github.com/wynd-network/grass-lite]
+
+Entity: Sovereign Data Rollup
+Type: Protocol
+Relationship: Rollup data sovran (Sovereign Rollup) di atas Solana untuk penyelesaian data scraping terstruktur dan verifikasi provenance data AI — lapisan eksekusi data Grass
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Grass Blog, https://blog.grass.ai/sovereign-data-rollup/]; [Grass Docs, https://docs.grass.ai/architecture/rollup]; [Messari, https://messari.io/project/grass/profile]
+
+Entity: Grass Dashboard
+Type: Application
+Relationship: Portal web pengguna (app.getgrass.io) untuk manajemen akun, monitoring poin/epoch, referal, dan klaim reward token GRASS
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Grass Dashboard, https://app.getgrass.io/]; [Grass Docs, https://docs.grass.ai/dashboard]; [Grass Blog, https://blog.grass.ai/epoch-7-update/]
+
+Entity: Wynd Network GitHub
+Type: Organization
+Relationship: Organisasi GitHub resmi (wynd-network) hosting repositori open-source: grass-desktop, grass-extension, grass-lite, smart contracts, SDK, dan dokumentasi teknis
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [GitHub, https://github.com/wynd-network]; [Grass Docs, https://docs.grass.ai/developers/github]
+
+Entity: Grass Discord
+Type: Community
+Relationship: Server Discord resmi komunitas Grass — saluran utama dukungan, pengumuman, diskusi teknis, dan koordinasi komunitas (>500k member)
+Period: 2023–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [Discord, https://discord.gg/grass]; [Grass Website, https://getgrass.io/community]; [Grass Blog, https://blog.grass.ai/community-update/]
+
+Entity: Grass Telegram
+Type: Community
+Relationship: Grup Telegram resmi komunitas Grass — saluran pengumuman dan diskusi komunitas global (multibahasa)
+Period: 2023–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [Telegram, https://t.me/getgrassofficial]; [Grass Website, https://getgrass.io/community]
+
+Entity: Grass X (Twitter)
+Type: Media
+Relationship: Akun X resmi (@getgrass_io) — saluran pengumuman produk, update epoch, tokenomics, dan komunikasi resmi ke publik
+Period: 2022–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [X, https://x.com/getgrass_io]; [Grass Website, https://getgrass.io/]
+
+Entity: Grass Blog
+Type: Media
+Relationship: Blog resmi (blog.grass.ai) — penerbitan whitepaper, update teknis, tokenomics, pengumuman foundation, dan laporan audit
+Period: 2022–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [Grass Blog, https://blog.grass.ai/]; [Grass Website, https://getgrass.io/]
+
+Entity: Grass Docs
+Type: Media
+Relationship: Dokumentasi teknis resmi (docs.grass.ai) — spesifikasi protokol, panduan node, API, arsitektur rollup, dan panduan developer
+Period: 2023–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [Grass Docs, https://docs.grass.ai/]; [GitHub, https://github.com/wynd-network/docs]
+
+Entity: Messari
+Type: Media
+Relationship: Platform riset crypto yang mempublikasikan profil proyek, tokenomics, dan analisis fundamental Grass — referensi data pasar standar industri
+Period: 2023–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Messari, https://messari.io/project/grass/profile]; [Grass Blog, https://blog.grass.ai/]
+
+Entity: The Block
+Type: Media
+Relationship: Media berita crypto yang meliput funding, launch token, dan perkembangan protokol Grass — sumber verifikasikejadian publik
+Period: 2023–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [The Block, https://www.theblock.co/search?q=grass]; [Grass Blog, https://blog.grass.ai/]
+
+Entity: CoinGecko
+Type: Media
+Relationship: Aggregator data pasar yang melacak harga, volume, supply, dan listing exchange token GRASS — referensi data pasar independen
+Period: 2024–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/grass]; [Grass Blog, https://blog.grass.ai/grass-token-launch/]
+
+Entity: CoinMarketCap
+Type: Media
+Relationship: Aggregator data pasar yang melacak harga, volume, supply, dan listing exchange token GRASS — referensi data pasar independen
+Period: 2024–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [CoinMarketCap, https://coinmarketcap.com/currencies/grass/]; [Grass Blog, https://blog.grass.ai/grass-token-launch/]
+
+Entity: Solscan
+Type: Infrastructure
+Relationship: Block explorer Solana resmi untuk verifikasi token GRASS (mint address, holder, transfer, program ID rollup) — verifikasi on-chain primer
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Solscan, https://solscan.io/token/GRASS...]; [Solana Explorer, https://explorer.solana.com/]
+
+Entity: Helius
+Type: Infrastructure
+Relationship: Penyedia RPC dan indexing Solana yang digunakan Grass untuk infrastruktur backend, streaming data, dan integrasi wallet/dashboard
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Helius Blog, https://www.helius.dev/blog/grass-integration]; [Grass Docs, https://docs.grass.ai/developers/rpc]; [Twitter, https://x.com/heliuslabs]
+
+Entity: Triton One
+Type: Infrastructure
+Relationship: Penyedia RPC Solana performa tinggi yang mendukung infrastruktur jaringan Grass dan rollup
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Triton One, https://triton.one/]; [Grass Blog, https://blog.grass.ai/infrastructure-partners/]
+
+Entity: Jito Labs
+Type: Organization
+Relationship: Infrastruktur MEV/Staking Solana (Jito-Solana client) — relevan untuk validasi transaksi rollup Grass dan stake GRASS (jika適用)
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (LOW) [Jito Labs, https://jito.network/]; [Solana Foundation, https://solana.com/validators]
+
+Entity: Phantom Wallet
+Type: Application
+Relationship: Wallet Solana terpopuler yang mendukung token GRASS, staking, dan interaksi dApp Grass — titik masuk pengguna utama
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Phantom, https://phantom.app/]; [Grass Blog, https://blog.grass.ai/wallet-support/]
+
+Entity: Solflare Wallet
+Type: Application
+Relationship: Wallet Solana (browser extension & mobile) yang mendukung token GRASS dan interaksi ekosistem Grass
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Solflare, https://solflare.com/]; [Grass Blog, https://blog.grass.ai/wallet-support/]
+
+Entity: Backpack Wallet
+Type: Application
+Relationship: Wallet Solana (xNFT backend) yang mendukung token GRASS dan integrasi ekosistem Grass
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Backpack, https://backpack.app/]; [Grass Blog, https://blog.grass.ai/wallet-support/]
+
+Entity: Jupiter Aggregator
+Type: Protocol
+Relationship: DEX aggregator Solana utama untuk swap token GRASS — menyediakan rute likuiditas on-chain terbaik
+Period: 2024–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Jupiter, https://jup.ag/]; [Grass Blog, https://blog.grass.ai/grass-token-launch/]
+
+Entity: Raydium
+Type: Protocol
+Relationship: AMM/DEX Solana utama untuk pool likuiditas GRASS/SOL dan GRASS/USDC — penyedia likuiditas on-chain primer
+Period: 2024–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Raydium, https://raydium.io/]; [Grass Blog, https://blog.grass.ai/grass-token-launch/]
+
+Entity: Orca
+Type: Protocol
+Relationship: DEX Solana (CLAMM) untuk pool likuiditas terkonsentrasi GRASS — alternatif likuiditas on-chain
+Period: 2024–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Orca, https://orca.so/]; [CoinGecko, https://www.coingecko.com/en/coins/grass]
+
+Entity: Kamino Finance
+Type: Protocol
+Relationship: Protokol lending/leverage/CLMM Solana yang mendukung pool GRASS dan strategi yield — ekspansi utilitas token
+Period: 2024–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Kamino, https://kamino.finance/]; [Grass Blog, https://blog.grass.ai/defi-integrations/]
+
+Entity: Drift Protocol
+Type: Protocol
+Relationship: Perp DEX Solana yang melisting pasar perpetual GRASS-PERP — menyediakan hedging dan spekulasi on-chain
+Period: 2024–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Drift, https://www.drift.trade/]; [Grass Blog, https://blog.grass.ai/defi-integrations/]
+
+Entity: Pyth Network
+Type: Protocol
+Relationship: Oracle harga Solana yang menyediakan feed harga GRASS/USD untuk DeFi dan rollup settlement
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Pyth, https://pyth.network/]; [Grass Docs, https://docs.grass.ai/oracle]
+
+Entity: Switchboard
+Type: Protocol
+Relationship: Oracle terdesentralisasi Solana alternatif untuk feed data harga dan verifikasi data rollup Grass
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Switchboard, https://switchboard.xyz/]; [Grass Docs, https://docs.grass.ai/oracle]
+
+Entity: Tensor
+Type: Application
+Relationship: NFT Marketplace Solana yang digunakan Grass untuk kampanye NFT (Grass Badges, Epoch NFTs) dan identitas on-chain
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Tensor, https://www.tensor.trade/]; [Grass Blog, https://blog.grass.ai/grass-nfts/]
+
+Entity: Magic Eden
+Type: Application
+Relationship: NFT Marketplace Solana yang mendukung koleksi NFT Grass (Badges, Soulbound tokens) — distribusi sekunder
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Magic Eden, https://magiceden.io/]; [Grass Blog, https://blog.grass.ai/grass-nfts/]
+
+Entity: Solana Foundation
+Type: Foundation
+Relationship: Entitas non-profit yang mendukung ekosistem Solana — memberikan grant/dukungan teknis tidak langsung bagi proyek berbasis Solana seperti Grass
+Period: 2023–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Solana Foundation Grants, https://solana.org/grants]; [Grass Blog, https://blog.grass.ai/solana-ecosystem/]
+
+Entity: Colosseum
+Type: Organization
+Relationship: Accelerator/hackathon Solana (Colosseum) — Grass sering jadi sponsor/track sponsor hackathon Colosseum untuk rekrut developer
+Period: 2023–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (MEDIUM) [Colosseum, https://colosseum.org/]; [Twitter, https://x.com/colosseumhq]
+
+Entity: Superteam
+Type: Community
+Relationship: Komunitas builder Solana global (Superteam) — Grass berpartisipasi dalam event, grant, dan rekrutmen talent via Superteam
+Period: 2023–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (MEDIUM) [Superteam, https://superteam.fun/]; [Twitter, https://x.com/superteamfun]
+
+Entity: a16z crypto
+Type: Investor
+Relationship: Investor potensial/rumor (tidak terverifikasi resmi sebagai investor equity Grass) — sering dikaitkan naratif DePIN/AI Solana
+Period: tidak diketahui
+Exposure Type: unknown
+Evidence: (LOW) [Twitter Speculation, https://x.com/search?q=a16z%20grass]; [Messari, https://messari.io/project/grass/profile]
+
+Entity: Multicoin Capital
+Type: Investor
+Relationship: Investor potensial/rumor (tidak terverifikasi resmi sebagai investor equity Grass) — fokus DePIN Solana
+Period: tidak diketahui
+Exposure Type: unknown
+Evidence: (LOW) [Twitter Speculation, https://x.com/search?q=multicoin%20grass]; [Messari, https://messari.io/project/grass/profile]
+
+---
+
+PERSON
+Andrej Radonjic
+Chris Nguyen
+
+FOUNDATION
+Grass Foundation
+Solana Foundation
+
+COMPANY
+Wynd Labs
+Binance
+Bybit
+Gate.io
+KuCoin
+OKX
+Coinbase
+Wintermute
+GSR Markets
+Halborn
+Kudelski Security
+Helius
+Triton One
+Jito Labs
+Colosseum
+Tensor
+Magic Eden
+Phantom Wallet
+Solflare Wallet
+Backpack Wallet
+
+PROTOCOL
+Grass Protocol
+Sovereign Data Rollup
+Jupiter Aggregator
+Raydium
+Orca
+Kamino Finance
+Drift Protocol
+Pyth Network
+Switchboard
+
+CHAIN
+Solana
+
+INVESTOR
+Polychain Capital
+Hack VC
+Delphi Ventures
+Brevan Howard Digital
+Robot Ventures
+Finality Capital
+Big Brain Holdings
+a16z crypto
+Multicoin Capital
+
+INFRASTRUCTURE
+Solscan
+Helius
+Triton One
+
+APPLICATION
+Grass Desktop App
+Grass Browser Extension
+Grass Mobile App
+Grass Lite Node
+Grass Dashboard
+Phantom Wallet
+Solflare Wallet
+Backpack Wallet
+Jupiter Aggregator
+Raydium
+Orca
+Kamino Finance
+Drift Protocol
+Tensor
+Magic Eden
+
+SECURITY
+Halborn
+Kudelski Security
+
+DAO
+tidak ada
+
+GOVERNMENT
+tidak ada
+
+MEDIA
+Grass X (Twitter)
+Grass Blog
+Grass Docs
+Messari
+The Block
+CoinGecko
+CoinMarketCap
+
+COMMUNITY
+Grass Discord
+Grass Telegram
+Superteam
+
+OTHER
+Wynd Network GitHub
+
+---
+
+Total Entity: 62
+Internal: 8
+External: 54
+Unknown: 0
+
+---
+
+Open Threads
+- Verifikasi status investor a16z crypto dan Multicoin Capital: apakah benar-benar berpartisipasi putaran equity atau hanya spekulasi pasar.
+- Detail juridik Grass Foundation: jurusdiksi pendirian (BVI/Cayman/Delaware), struktur governance on-chain vs off-chain, dan alamat multisig treasury resmi.
+- Daftar lengkap investor Series A/Strategic setelah seed: apakah ada VC besar lain (Paradigm, Sequoia, Lightspeed, dll) yang belum diumumkan.
+- Identitas tim inti (Core Team) di luar 2 founder: Lead Protocol Engineer, Head of Research, Head of BD, dst — nama dan peran spesifik.
+- Detail auditor Kudelski Security: lingkup audit (smart contract vs node client vs rollup) dan publikasi laporan lengkap.
+- Keterlibatan Jito Labs: apakah Grass menggunakan Jito-Solana client untuk validator rollup atau MEV protection, dan apakah ada stake GRASS di Jito (JitoSOL).
+- Status grant Solana Foundation: apakah Grass menerima grant resmi, jumlahnya, dan milestone apa.
+- Rincian Market Maker agreement: Wintermute & GSR — apakah ada loan/option token, durasi kontrak, dan KPI likuiditas.
+- Entitas hukum Wynd Labs Inc: lokasi incorporasi (Delaware?), struktur kepemilikan IP protokol vs Foundation.
+- Daftar lengkap exchange listing (Tier 2/3/DEX) beserta tanggal listing pasangan trading spesifik.

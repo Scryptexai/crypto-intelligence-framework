@@ -1,0 +1,241 @@
+PROJECT: EOS
+
+## Token Information
+
+Official Token Name: EOS (HIGH) [EOS Network Foundation, https://eosnetwork.com/]
+Symbol: EOS (HIGH) [CoinMarketCap, https://coinmarketcap.com/currencies/eos/]
+Token Standard: Native Antelope (EOSIO) token standard pada EOS Mainnet; ERC-20 pada Ethereum (bridge token) (HIGH) [EOS Authority Contract, https://eosauthority.com/contract/eosio.token; Etherscan, https://etherscan.io/token/0x86Fa049857E0209aa7D9e616F7eb3b3B78ECfdb0]
+Blockchain: EOS Mainnet (Antelope Protocol) — native; Ethereum — ERC-20 bridge representation (HIGH) [EOS Network Foundation, https://eosnetwork.com/; Etherscan, https://etherscan.io/token/0x86Fa049857E0209aa7D9e616F7eb3b3B78ECfdb0]
+Contract Address: eosio.token @ EOS Mainnet (native); 0x86Fa049857E0209aa7D9e616F7eb3b3B78ECfdb0 @ Ethereum (ERC-20 bridge) (HIGH) [EOS Authority, https://eosauthority.com/contract/eosio.token; Etherscan, https://etherscan.io/token/0x86Fa049857E0209aa7D9e616F7eb3b3B78ECfdb0]
+Decimals: 4 (native EOS Mainnet standard) (HIGH) [EOSIO Technical Whitepaper, https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md]
+Status: Live (HIGH) [CoinMarketCap, https://coinmarketcap.com/currencies/eos/]
+Sources: (HIGH) [EOS Network Foundation, https://eosnetwork.com/]; (HIGH) [EOS Authority Contract, https://eosauthority.com/contract/eosio.token]; (HIGH) [Etherscan EOS Token, https://etherscan.io/token/0x86Fa049857E0209aa7D9e616F7eb3b3B78ECfdb0]
+
+## Supply
+
+Maximum Supply: tidak ada hard cap (inflationary) (HIGH) [EOSIO Technical Whitepaper, https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md]
+Total Supply: 1.124.025.822,5427 EOS (per 2024-12-01, per eosio.token contract `get_currency_stats`) (MEDIUM) [EOS Authority Token Stats, https://eosauthority.com/token/eosio.token/EOS]
+Circulating Supply: 1.124.025.822,5427 EOS (sama dengan total supply karena tidak ada token terkunci di kontrak sistem selain vesting Block.one yang sudah masuk sirkulasi) (MEDIUM) [EOS Authority Token Stats, https://eosauthority.com/token/eosio.token/EOS]
+Initial Supply: 1.000.000.000 EOS (distribusi ICO 900M + Block.one reserve 100M) (HIGH) [SEC Complaint vs Block.one, https://www.sec.gov/litigation/complaints/2019/pr2019-197.pdf]
+Supply Type: Inflationary (HIGH) [EOSIO Technical Whitepaper, https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md]
+Sources: (HIGH) [EOSIO Technical Whitepaper, https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md]; (MEDIUM) [EOS Authority Token Stats, https://eosauthority.com/token/eosio.token/EOS]; (HIGH) [SEC Complaint, https://www.sec.gov/litigation/complaints/2019/pr2019-197.pdf]
+
+## Distribution
+
+Community (Public ICO Participants): 90% (900.000.000 EOS) — didistribusikan via daily auction 341 hari (HIGH) [SEC Complaint, https://www.sec.gov/litigation/complaints/2019/pr2019-197.pdf]
+Team (Block.one Founders/Employees): 10% (100.000.000 EOS) — dialokasikan ke Block.one, vesting 10 tahun (10M/tahun) mulai 2018-06-14 (HIGH) [SEC Complaint, https://www.sec.gov/litigation/complaints/2019/pr2019-197.pdf]
+Investors: tidak ada alokasi private sale / VC terpisah — ICO bersifat permissionless public (HIGH) [SEC Complaint, https://www.sec.gov/litigation/complaints/2019/pr2019-197.pdf]
+Foundation (ENF): 0% initial supply — menerima alokasi inflasi 1% tahunan via `eosio.system` sejak 2021-09-22 (EV-017) (HIGH) [CoinDesk ENF Launch, https://www.coindesk.com/business/2021/09/22/eos-community-launches-foundation-to-take-over-from-block-one/]
+Treasury: 0% initial supply — ENF treasury dibangun dari inflasi 1%/tahun; Block.one treasury terpisah dari ICO proceeds (HIGH) [eosio.system Contract, https://github.com/EOSIO/eos/blob/master/contracts/eosio.system/eosio.system.cpp]
+Ecosystem: 0% initial supply — dana ekosistem (EOS Network Ventures, grants) berasal dari treasury ENF (inflasi) (MEDIUM) [EOS Network Foundation, https://eosnetwork.com/foundation/]
+Advisors: tidak ada alokasi terpisah terverifikasi (HIGH) [SEC Complaint, https://www.sec.gov/litigation/complaints/2019/pr2019-197.pdf]
+Other: Block.one reserve 100M EOS (termasuk di kategori Team di atas) (HIGH) [SEC Complaint, https://www.sec.gov/litigation/complaints/2019/pr2019-197.pdf]
+Sources: (HIGH) [SEC Complaint, https://www.sec.gov/litigation/complaints/2019/pr2019-197.pdf]; (HIGH) [CoinDesk ENF Launch, https://www.coindesk.com/business/2021/09/22/eos-community-launches-foundation-to-take-over-from-block-one/]; (HIGH) [eosio.system Contract, https://github.com/EOSIO/eos/blob/master/contracts/eosio.system/eosio.system.cpp]
+
+## Vesting Schedule
+
+Category: Block.one (Team/Founders Reserve)
+Cliff: 0 bulan (vesting dimulai langsung saat mainnet launch 2018-06-14)
+Vesting: 10 tahun linear (10.000.000 EOS per tahun)
+Unlock Frequency: Tahunan (claimable per tahun via smart contract `eosio.vesting` atau mekanisme serupa)
+Current Status: Tahun 1-6 (2018-2024) telah unlocked total 60.000.000 EOS; sisa 40.000.000 EOS terkunci hingga 2028 (MEDIUM) [EOS Authority Block.one Vesting, https://eosauthority.com/account/eosio.stake] (verification needed for exact contract)
+Sources: (HIGH) [SEC Complaint, https://www.sec.gov/litigation/complaints/2019/pr2019-197.pdf]; (MEDIUM) [EOS Authority Account eosio.stake, https://eosauthority.com/account/eosio.stake]
+
+Category: Public ICO Participants
+Cliff: 0 (token cair langsung setelah kontribusi harian selama ICO)
+Vesting: Tidak ada (fully unlocked at distribution)
+Unlock Frequency: Harian selama periode ICO 2017-06-26 s.d. 2018-06-01
+Current Status: Fully vested (HIGH) [SEC Complaint, https://www.sec.gov/litigation/complaints/2019/pr2019-197.pdf]
+Sources: (HIGH) [SEC Complaint, https://www.sec.gov/litigation/complaints/2019/pr2019-197.pdf]
+
+Category: ENF Inflation Allocation (1%/tahun)
+Cliff: 0 (mulai accrual sejak aktifasi proposal ENF di `eosio.system` 2021-09-22)
+Vesting: Continuous stream (per block minting)
+Unlock Frequency: Per block (continuous)
+Current Status: Ongoing — accumulated balance di akun `eosio.ef` / `eosio.fund` (amount tidak dipublikasikan real-time) (MEDIUM) [EOS Authority Contract eosio.system, https://eosauthority.com/contract/eosio.system]
+Sources: (HIGH) [CoinDesk ENF Launch, https://www.coindesk.com/business/2021/09/22/eos-community-launches-foundation-to-take-over-from-block-one/]; (MEDIUM) [EOS Authority eosio.system, https://eosauthority.com/contract/eosio.system]
+
+## TGE
+
+TGE Date: 2017-06-26 (mulai distribusi ICO) — 2018-06-01 (akhir distribusi) — 2018-06-14 (mainnet genesis snapshot & token migration ERC-20 → native) (HIGH) [SEC Complaint, https://www.sec.gov/litigation/complaints/2019/pr2019-197.pdf; CoinDesk Mainnet Launch, https://www.coindesk.com/markets/2018/06/14/eos-mainnet-launches-after-block-producers-vote/]
+Initial Unlock: 100% untuk partisipan ICO (token ERC-20 claimable setelah kontribusi harian); 0% untuk Block.one reserve (vesting 10 tahun) (HIGH) [SEC Complaint, https://www.sec.gov/litigation/complaints/2019/pr2019-197.pdf]
+Unlocked Categories: Public ICO allocation (900M EOS) — fully liquid sebagai ERC-20 sejak kontribusi; Block.one reserve (100M EOS) — locked dengan vesting 10 tahun (HIGH) [SEC Complaint, https://www.sec.gov/litigation/complaints/2019/pr2019-197.pdf]
+Launch Platform: Ethereum Mainnet (ERC-20 token distribution contract) → EOS Mainnet (native swap via snapshot 2018-06-14) (HIGH) [Block.one Blog Dawn 4.0, https://block.one/blog/block-one-releases-dawn-4-0/; CoinDesk Mainnet Launch, https://www.coindesk.com/markets/2018/06/14/eos-mainnet-launches-after-block-producers-vote/]
+Status: Completed (HIGH) [CoinMarketCap, https://coinmarketcap.com/currencies/eos/]
+Sources: (HIGH) [SEC Complaint, https://www.sec.gov/litigation/complaints/2019/pr2019-197.pdf]; (HIGH) [CoinDesk Mainnet Launch, https://www.coindesk.com/markets/2018/06/14/eos-mainnet-launches-after-block-producers-vote/]; (HIGH) [Block.one Blog Dawn 4.0, https://block.one/blog/block-one-releases-dawn-4-0/]
+
+## Utility
+
+Utility: Staking untuk Resource (CPU & NET)
+Deskripsi: Pemegang token men-stake EOS untuk mendapatkan bandwidth CPU (komputasi) dan NET (bandwidth jaringan) proporsional stake; unstaking memerlukan 72 jam cooldown
+Status: Live
+Sources: (HIGH) [EOS Network Foundation Resource Model, https://developers.eosnetwork.com/docs/resource-model]; (HIGH) [eosio.system Contract, https://github.com/EOSIO/eos/blob/master/contracts/eosio.system/eosio.system.cpp]
+
+Utility: Pembelian RAM
+Deskripsi: Token EOS digunakan untuk membeli RAM (state storage) melalui pasar Bancor algorithmik di `eosio.system`; harga naik/turun berdasarkan supply/demand
+Status: Live
+Sources: (HIGH) [EOS Network Foundation RAM Market, https://developers.eosnetwork.com/docs/resource-model/ram]; (HIGH) [eosio.system Contract RAM, https://github.com/EOSIO/eos/blob/master/contracts/eosio.system/eosio.system.cpp#L1150]
+
+Utility: Governance Voting (Block Producer Election)
+Deskripsi: 1 EOS (staked) = 1 vote weight untuk hingga 30 Block Producer; vote decay mengurangi kekuatan vote ~50% per tahun jika tidak di-refresh; top 21 BP terpilih memproduksi blok
+Status: Live
+Sources: (HIGH) [EOS Authority Block Producers, https://eosauthority.com/block-producers]; (HIGH) [EOSIO Technical Whitepaper, https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md]
+
+Utility: Governance Proposals & Referendum
+Deskripsi: Token holder dapat mengajukan dan memilih proposal on-chain (misalnya upgrade protokol, parameter sistem, alokasi treasury) via `eosio.forum` / `eosio.prods` workflow
+Status: Live (dengan partisipasi rendah historis)
+Sources: (MEDIUM) [EOS Network Foundation Governance, https://developers.eosnetwork.com/docs/governance]; (MEDIUM) [EOS Authority Proposals, https://eosauthority.com/proposals]
+
+Utility: Gas Fee untuk EOS EVM (Ethereum-compatible Execution)
+Deskripsi: Transaksi di EOS EVM mengonsumsi EOS CPU/NET (bukan ETH gas); biaya dipetakan ke resource stake pengguna; tidak ada fee terpisah ke treasury
+Status: Live (sejak 2022-04-01, EV-019)
+Sources: (HIGH) [EOS EVM Documentation Gas, https://developers.eosnetwork.com/docs/eos-evm/gas]; (HIGH) [EOS Network Foundation EOS EVM, https://eosnetwork.com/ecosystem/eos-evm/]
+
+Utility: Collateral & Liquidity di DeFi (Defibox, OrganicSwap, dll)
+Deskripsi: EOS digunakan sebagai collateral untuk pinjaman, pairing liquidity pool (EOS/USDT, EOS/USN, dll), dan yield farming di protokol DeFi ekosistem
+Status: Live
+Sources: (MEDIUM) [Defibox, https://defibox.com/]; (MEDIUM) [OrganicSwap, https://organicswap.io/]; (MEDIUM) [DappRadar EOS, https://dappradar.com/rankings/protocol/eos]
+
+Utility: Bridge Token (ERC-20 Representation)
+Deskripsi: Token EOS ERC-20 (0x86Fa...) mewakili claim atas native EOS via bridge; digunakan di DeFi Ethereum, CEX deposit/withdrawal, dan cross-chain liquidity
+Status: Live
+Sources: (HIGH) [Etherscan EOS Token, https://etherscan.io/token/0x86Fa049857E0209aa7D9e616F7eb3b3B78ECfdb0]; (MEDIUM) [EOS Network Foundation Bridge, https://eosnetwork.com/ecosystem/]
+
+Utility: REX (Resource Exchange) Staking Rewards
+Deskripsi: Token holder dapat men-deposit EOS ke REX (Resource Exchange) untuk mendapatkan share dari fee RAM trading dan loan interest; mekanisme ini menggantikan "savings" inflasi 4% awal
+Status: Live (diaktifkan 2019)
+Sources: (HIGH) [EOSIO System Contract REX, https://github.com/EOSIO/eos/blob/master/contracts/eosio.system/eosio.system.cpp#L2000]; (MEDIUM) [EOS Authority REX, https://eosauthority.com/rex]
+
+Utility: Payment / Medium of Exchange
+Deskripsi: EOS digunakan sebagai mata uang pembayaran di dApp, game (Ultra), NFT marketplace, dan layanan merchant yang terintegrasi Anchor/Wombat wallet
+Status: Live
+Sources: (MEDIUM) [Ultra.io, https://ultra.io/]; (MEDIUM) [Anchor Wallet, https://greymass.com/anchor]; (MEDIUM) [Wombat Wallet, https://wombat.app/]
+
+## Governance
+
+Governance Model: On-chain Token-Weighted Voting (DPoS) + Off-chain Social Consensus untuk Hard Forks (HIGH) [EOSIO Technical Whitepaper, https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md]
+Voting System: Continuous Approval Voting — setiap token staked memberikan 1 vote weight untuk hingga 30 kandidat BP; vote decay ~50%/tahun jika tidak di-refresh (HIGH) [EOS Authority Block Producers, https://eosauthority.com/block-producers]
+Voting Power: Proporsional stake (1 EOS staked = 1 vote weight); tidak ada quadratic voting atau delegasi representatif formal (HIGH) [EOSIO Technical Whitepaper, https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md]
+Delegation: Tidak ada delegasi vote formal di protokol (token holder harus vote langsung); proxy voting tersedia via tooling komunitas (misalnya `eosio.proxy` contract) tapi bukan fitur native protokol (MEDIUM) [EOS Authority Proxy Voting, https://eosauthority.com/proxy]
+Proposal System: On-chain proposals via `eosio.prods` / `eosio.forum` workflow; memerlukan 15/21 BP approval untuk eksekusi (hard fork, parameter change, treasury spend) (HIGH) [EOS Authority Proposals, https://eosauthority.com/proposals]
+Treasury Governance: ENF treasury (akun `eosio.ef`/`eosio.fund`) dikelola ENF leadership (Yves La Rose + board) — tidak ada on-chain multisig proposal requirement untuk pengeluaran rutin; large spend mungkin memerlukan BP approval (detail tidak transparan) (MEDIUM) [CoinDesk ENF Launch, https://www.coindesk.com/business/2021/09/22/eos-community-launches-foundation-to-take-over-from-block-one/]
+Status: Active (ongoing BP elections, periodic hard fork proposals)
+Sources: (HIGH) [EOSIO Technical Whitepaper, https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md]; (HIGH) [EOS Authority Block Producers, https://eosauthority.com/block-producers]; (HIGH) [EOS Authority Proposals, https://eosauthority.com/proposals]; (MEDIUM) [CoinDesk ENF Launch, https://www.coindesk.com/business/2021/09/22/eos-community-launches-foundation-to-take-over-from-block-one/]
+
+## Inflation / Deflation
+
+Inflation Mechanism: Protocol-level minting via `eosio.system` contract — ~1% سنوي to Block Producers (paid per block proportional to votes), ~1% سنوي to ENF (paid to `eosio.ef`/`eosio.fund`), sisanya (awal 4%, sekarang variable) ke REX pool / savings / burned (HIGH) [eosio.system Contract, https://github.com/EOSIO/eos/blob/master/contracts/eosio.system/eosio.system.cpp]
+Emission Schedule: Continuous per-block minting; total annual inflation target ~1-2% (tergantung parameter `continuous_rate` di `eosio.system` yang dapat diubah via BP proposal) (HIGH) [EOS Authority eosio.system State, https://eosauthority.com/contract/eosio.system]
+Burn Mechanism: RAM market fee 0.5% per trade dikumpulkan di `eosio.ramfee` — histori: diburn periodik via proposal BP; tidak ada auto-burn per transaksi (HIGH) [EOSIO System Contract RAM Fee, https://github.com/EOSIO/eos/blob/master/contracts/eosio.system/eosio.system.cpp#L1150]
+Buyback: Tidak ada program buyback resmi (HIGH) [EOS Network Foundation, https://eosnetwork.com/foundation/] (no mention in official docs)
+Supply Reduction: Hanya via manual burn dari `eosio.ramfee` accumulation (ad-hoc, governance-dependent) — tidak ada mekanisme deflationary terprogram (EIP-1555 style) (MEDIUM) [EOS Authority Proposals, https://eosauthority.com/proposals]
+Status: Inflationary (net supply increase ~1-2%/tahun setelah burn RAM fee minimal)
+Sources: (HIGH) [eosio.system Contract, https://github.com/EOSIO/eos/blob/master/contracts/eosio.system/eosio.system.cpp]; (HIGH) [EOS Authority eosio.system, https://eosauthority.com/contract/eosio.system]; (MEDIUM) [EOS Authority Proposals, https://eosauthority.com/proposals]
+
+## Holder Distribution
+
+Top Holder Concentration: Block.one (vesting reserve) ~40M EOS terkunci + sudah claimed ~60M EOS (total 100M initial) = ~8.9% supply; Top 10 accounts (termasuk exchange wallets, BP accounts, bridge contracts) mengontrol ~30-40% supply (estimasi on-chain) (MEDIUM) [EOS Authority Richlist, https://eosauthority.com/token/eosio.token/EOS/holders]
+Foundation Holding: ENF treasury balance di `eosio.ef`/`eosio.fund` — tidak dipublikasikan real-time; estimasi akumulasi inflasi 1%/tahun sejak Sep 2021 (~30-40M EOS) belum terverifikasi (LOW) [EOS Authority Account eosio.ef, https://eosauthority.com/account/eosio.ef] (balance visible but not officially confirmed as ENF treasury)
+Investor Holding: Tidak ada investor VC/private sale — distribusi 100% publik ICO; exchange wallets (Binance, OKX, Upbit, dll) holding besar untuk custody pengguna (MEDIUM) [EOS Authority Richlist, https://eosauthority.com/token/eosio.token/EOS/holders]
+Treasury Holding: Block.one treasury (dari ICO proceeds $4.1B) terpisah dari token supply; ENF treasury dari inflasi (lihat Foundation Holding) (HIGH) [SEC Complaint, https://www.sec.gov/litigation/complaints/2019/pr2019-197.pdf]
+Community Holding: Partisipan ICO publik (900M initial) + secondary market buyers — estimasi 50-60% supply tersebar ke ribuan alamat (MEDIUM) [EOS Authority Richlist, https://eosauthority.com/token/eosio.token/EOS/holders]
+Whale Concentration: Top 50 addresses mengontrol ~50%+ supply (termasuk exchange cold wallets, bridge contracts, BP accounts, Block.one) — Gini coefficient tinggi khas DPoS (MEDIUM) [EOS Authority Richlist, https://eosauthority.com/token/eosio.token/EOS/holders]
+Sources: (MEDIUM) [EOS Authority Richlist, https://eosauthority.com/token/eosio.token/EOS/holders]; (MEDIUM) [EOS Authority Account eosio.ef, https://eosauthority.com/account/eosio.ef]; (HIGH) [SEC Complaint, https://www.sec.gov/litigation/complaints/2019/pr2019-197.pdf]
+
+## Major Token Events
+
+Date: 2017-06-26
+Event: TGE Start / ICO Daily Auction Launch
+Description: Block.one memulai distribusi token EOS ERC-20 via smart contract Ethereum; 2M EOS/hari selama 341 hari
+Status: Completed
+Related Historical Event ID: EV-002
+Sources: (HIGH) [SEC Complaint, https://www.sec.gov/litigation/complaints/2019/pr2019-197.pdf]
+
+Date: 2018-06-01
+Event: TGE End / ICO Distribution Finalized
+Description: Periode distribusi 341 hari berakhir; total 1B EOS ERC-20 terdistribusi (900M publik, 100M Block.one reserve)
+Status: Completed
+Related Historical Event ID: EV-008
+Sources: (HIGH) [SEC Complaint, https://www.sec.gov/litigation/complaints/2019/pr2019-197.pdf]
+
+Date: 2018-06-14
+Event: Mainnet Genesis & Token Migration (Snapshot)
+Description: EOS Mainnet diluncurkan oleh 21 BP; snapshot ERC-20 balances digunakan untuk genesis native token balances; ERC-20 frozen/bridge-only
+Status: Completed
+Related Historical Event ID: EV-009
+Sources: (HIGH) [CoinDesk Mainnet Launch, https://www.coindesk.com/markets/2018/06/14/eos-mainnet-launches-after-block-producers-vote/]
+
+Date: 2018-06-15
+Event: Inflation & Voting Activation (eosio.system Go-Live)
+Description: Kontrak `eosio.system` diaktifkan; inflasi 5%/tahun dimulai (1% BP, 4% savings); staking, voting, RAM market live
+Status: Completed
+Related Historical Event ID: EV-010
+Sources: (HIGH) [EOSIO System Contract, https://github.com/EOSIO/eos/blob/master/contracts/eosio.system/eosio.system.cpp]
+
+Date: 2019-09-30
+Event: SEC Settlement — Block.one Penalty $24M
+Description: Block.one menyelesaikan tuntutan SEC atas ICO tidak terdaftar; membayar $24M tanpa admit/deny; tidak memengaruhi token mechanics langsung tapi menciptakan regulatory overhang
+Status: Completed
+Related Historical Event ID: EV-013
+Sources: (HIGH) [SEC Press Release, https://www.sec.gov/news/press-release/2019-197]
+
+Date: 2019-11-01 (approx)
+Event: REX (Resource Exchange) Launch
+Description: Savings allocation (4% inflasi) dialihkan ke REX pool; token holder bisa deposit EOS ke REX untuk yield dari RAM fee & loan interest
+Status: Completed
+Related Historical Event ID: (not in Phase 3 — add if needed)
+Sources: (HIGH) [EOSIO System Contract REX, https://github.com/EOSIO/eos/blob/master/contracts/eosio.system/eosio.system.cpp#L2000]
+
+Date: 2021-09-22
+Event: EOS Network Foundation (ENF) Formation & Inflation Redirect
+Description: ENF dibentuk; proposal BP mengalihkan 1% inflasi tahunan dari `eosio.saving` ke `eosio.ef` (ENF treasury); total inflasi BP 1% + ENF 1% = 2% target
+Status: Completed
+Related Historical Event ID: EV-017
+Sources: (HIGH) [CoinDesk ENF Launch, https://www.coindesk.com/business/2021/09/22/eos-community-launches-foundation-to-take-over-from-block-one/]
+
+Date: 2022-04-01
+Event: EOS EVM Mainnet Launch — New Utility
+Description: EOS EVM live; EOS menjadi gas token untuk eksekusi EVM (mapped ke CPU/NET); memperluas utility ke Ethereum developer ecosystem
+Status: Completed
+Related Historical Event ID: EV-019
+Sources: (HIGH) [EOS Network Foundation EOS EVM, https://eosnetwork.com/ecosystem/eos-evm/]
+
+Date: 2022-06-14
+Event: Spring Hard Fork / Leap 4.0 — RAM Market Reform
+Description: Hard fork mengaktifkan Spring SDK, reformasi pasar RAM (parameter Bancor curve), dan perbaikan throughput; mempengaruhi biaya state storage
+Status: Completed
+Related Historical Event ID: EV-020
+Sources: (HIGH) [GitHub Leap v4.0.0, https://github.com/AntelopeIO/leap/releases/tag/v4.0.0]
+
+Date: 2023-09-01
+Event: EOS Network Ventures Launch — Treasury Deployment
+Description: ENF meluncurkan dana venture dari treasury inflasi untuk investasi ekosistem; menciptakan aliran keluar (outflow) dari treasury ke equity/token portfolio
+Status: Ongoing
+Related Historical Event ID: EV-024
+Sources: (MEDIUM) [EOS Network Foundation, https://eosnetwork.com/foundation/]
+
+Date: 2024-01-01
+Event: Antelope Leap 5.0 — Resource Exhaustion Mitigation
+Description: Upgrade konsensus & resource metering mengurangi vektor spam; stabilisasi biaya CPU/NET bagi pengguna
+Status: Completed
+Related Historical Event ID: EV-025
+Sources: (HIGH) [GitHub Leap v5.0.0, https://github.com/AntelopeIO/leap/releases/tag/v5.0.0]
+
+## Official Token Resources
+
+Official Documentation: https://developers.eosnetwork.com/docs
+Whitepaper: https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md
+Governance: https://eosauthority.com/proposals
+Explorer: https://eosq.app/ (official ENF); https://bloks.io/ (community)
+Contract: https://eosauthority.com/contract/eosio.token (native); https://etherscan.io/token/0x86Fa049857E0209aa7D9e616F7eb3b3B78ECfdb0 (ERC-20)
+GitHub: https://github.com/eosnetworkfoundation; https://github.com/AntelopeIO
+Dashboard: https://eosauthority.com/token/eosio.token/EOS (token stats); https://eosauthority.com/contract/eosio.system (system params)
+
+## Summary
+
+Status: Live
+Supply Type: Inflationary (~1-2% net annual after burns)
+Total Supply: 1.124.025.822,5427 EOS (per 2024-12-01 on-chain)
+Distribution Categories: Community (Public ICO) 90%, Team/Founders (Block.one) 10% (vesting 10yr), Foundation (ENF) 0% initial (receives 1%/yr inflation), Treasury 0% initial, Ecosystem 0% initial, Investors 0%, Advisors 0%
+Utility Count: 8 (Staking CPU/NET, RAM Purchase, BP Voting, Governance Proposals, EOS EVM Gas, DeFi Collateral/Liquidity, Bridge Token, REX Yield)
+Governance: On-chain Token-Weighted DPoS Voting + Off-chain Social Consensus for

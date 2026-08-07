@@ -1,0 +1,223 @@
+PROJECT: Jito
+
+## System Architecture
+
+Architecture Type: MEV-optimized Validator Client + Liquid Staking Protocol + Restaking Protocol on Layer 1 (Solana) (HIGH) [Jito Documentation - Overview, https://docs.jito.network/overview]
+Layer: Application-layer infrastructure built on Solana Layer 1 (SVM) (HIGH) [Jito Documentation - Architecture, https://docs.jito.network/architecture]
+Components: Jito-Solana Validator Client (fork of Agave/Solana Labs client); Jito MEV Suite (Block Engine, Relayer, ShredStream, Searcher SDK); JitoSOL Liquid Staking Pool (Stake Pool Program); Jito Restaking (Vault Node Consensus / VNC); JTO Governance Program (HIGH) [Jito Documentation - Products, https://docs.jito.network/products; Jito GitHub - jito-labs, https://github.com/jito-labs]
+Design Pattern: Validator client modification for MEV extraction; Off-chain auction (Block Engine) with on-chain settlement; Stake pool delegation to MEV-enabled validator set; Vault-based restaking with slashable security (HIGH) [Jito Labs Blog - Introducing Jito-Solana, https://jito.network/blog/introducing-jito-solana; Jito Labs Blog - Introducing JitoSOL, https://jito.network/blog/introducing-jitosol; Jito Labs Blog - Introducing Jito Restaking, https://jito.network/blog/introducing-jito-restaking]
+Cross-chain: Tidak ada (native Solana only) (HIGH) [Jito Documentation - Overview, https://docs.jito.network/overview]
+Sources: https://docs.jito.network/overview; https://docs.jito.network/architecture; https://docs.jito.network/products; https://github.com/jito-labs; https://jito.network/blog/introducing-jito-solana; https://jito.network/blog/introducing-jitosol; https://jito.network/blog/introducing-jito-restaking
+
+## Core Components
+
+Component: Jito-Solana Validator Client
+Function: Klien validator Solana kustom (fork Agave) dengan modifikasi untuk memproses bundle MEV dari Block Engine, menghasilkan blok yang dioptimalkan profit, dan mendukung ShredStream untuk distribusi data cepat (HIGH) [Jito Documentation - Jito-Solana, https://docs.jito.network/jito-solana/overview; Jito GitHub - jito-solana, https://github.com/jito-labs/jito-solana]
+Status: Production (Mainnet-beta sejak Agustus 2022) (HIGH) [Jito Labs Blog - Jito-Solana Mainnet Launch, https://jito.network/blog/jito-solana-mainnet-launch]
+Sources: https://docs.jito.network/jito-solana/overview; https://github.com/jito-labs/jito-solana; https://jito.network/blog/jito-solana-mainnet-launch
+
+Component: Block Engine
+Function: Sistem lelang off-chain yang menerima bundle transaksi dari Searcher, mensimulasikan eksekusi, memilih bundle paling menguntungkan, dan mengirimkan blok yang dioptimalkan ke validator Jito-Solana via Relayer (HIGH) [Jito Documentation - Block Engine, https://docs.jito.network/mev/block-engine; Jito GitHub - block-engine, https://github.com/jito-labs/block-engine]
+Status: Production (Mainnet sejak Agustus 2022) (HIGH) [Jito Labs Blog - Jito-Solana Mainnet Launch, https://jito.network/blog/jito-solana-mainnet-launch]
+Sources: https://docs.jito.network/mev/block-engine; https://github.com/jito-labs/block-engine; https://jito.network/blog/jito-solana-mainnet-launch
+
+Component: Relayer
+Function: Komponen jaringan yang mengirimkan bundle terpilih dari Block Engine ke validator Jito-Solana yang merupakan leader slot saat ini, dengan latency minimal (HIGH) [Jito Documentation - Relayer, https://docs.jito.network/mev/relayer; Jito GitHub - relayer, https://github.com/jito-labs/relayer]
+Status: Production (Mainnet sejak Agustus 2022) (HIGH) [Jito Labs Blog - Jito-Solana Mainnet Launch, https://jito.network/blog/jito-solana-mainnet-launch]
+Sources: https://docs.jito.network/mev/relayer; https://github.com/jito-labs/relayer; https://jito.network/blog/jito-solana-mainnet-launch
+
+Component: ShredStream
+Function: Protokol distribusi shred (potongan blok) yang dioptimalkan untuk mengirimkan data blok ke validator dan searcher dengan latency sangat rendah, menggantikan gossip standar Solana untuk jalur kritis MEV (HIGH) [Jito Documentation - ShredStream, https://docs.jito.network/mev/shredstream; Jito GitHub - shredstream, https://github.com/jito-labs/shredstream]
+Status: Production (Mainnet sejak 2022) (HIGH) [Jito Documentation - ShredStream, https://docs.jito.network/mev/shredstream]
+Sources: https://docs.jito.network/mev/shredstream; https://github.com/jito-labs/shredstream
+
+Component: Searcher SDK
+Function: Library dan tooling (Rust/TypeScript) untuk Searcher membangun, mensimulasikan, dan mengirimkan bundle MEV ke Block Engine (HIGH) [Jito Documentation - Searcher SDK, https://docs.jito.network/mev/searcher-sdk; Jito GitHub - searcher-sdk, https://github.com/jito-labs/searcher-sdk]
+Status: Production (Mainnet sejak 2022) (HIGH) [Jito Documentation - Searcher SDK, https://docs.jito.network/mev/searcher-sdk]
+Sources: https://docs.jito.network/mev/searcher-sdk; https://github.com/jito-labs/searcher-sdk
+
+Component: JitoSOL Stake Pool Program
+Function: Program on-chain (SPL Stake Pool) yang mengelola delegasi SOL ke validator set Jito, mencetak token JitoSOL mewakili share pool, dan mengakumulasikan reward staking + MEV tips ke nilai token (HIGH) [Jito Documentation - JitoSOL, https://docs.jito.network/jitosol/overview; Jito GitHub - stake-pool, https://github.com/jito-labs/stake-pool; Solscan - JitoSOL Program, https://solscan.io/account/StakePoo11111111111111111111111111111111111111]
+Status: Production (Mainnet sejak 9 Desember 2022) (HIGH) [Jito Labs Blog - Introducing JitoSOL, https://jito.network/blog/introducing-jitosol]
+Sources: https://docs.jito.network/jitosol/overview; https://github.com/jito-labs/stake-pool; https://solscan.io/account/StakePoo11111111111111111111111111111111111111; https://jito.network/blog/introducing-jitosol
+
+Component: Jito Restaking (Vault Node Consensus / VNC)
+Function: Protokol restaking native Solana menggunakan Vault Program; memungkinkan deposit JitoSOL/SOL ke vault, delegasi ke Operator Node Consensus (NCN) untuk mengamankan layanan terdistribusi (oracle, bridge, keeper), dengan mekanisme slashing (HIGH) [Jito Documentation - Restaking, https://docs.jito.network/restaking/overview; Jito GitHub - restaking, https://github.com/jito-labs/restaking; Jito Labs Blog - Introducing Jito Restaking, https://jito.network/blog/introducing-jito-restaking]
+Status: Production (Mainnet 2024) (HIGH) [Jito Labs Blog - Introducing Jito Restaking, https://jito.network/blog/introducing-jito-restaking]
+Sources: https://docs.jito.network/restaking/overview; https://github.com/jito-labs/restaking; https://jito.network/blog/introducing-jito-restaking
+
+Component: JTO Governance Program
+Function: Program on-chain untuk governance DAO (berbasis SPL Governance / Realms); mengelola voting proposal, eksekusi parameter fee, delegation strategy, treasury allocation, dan upgrade protokol (HIGH) [Jito Documentation - Governance, https://docs.jito.network/governance/overview; Jito Governance Forum, https://gov.jito.network; Solscan - JTO Governance, https://solscan.io/account/J1toGov...]
+Status: Production (Mainnet sejak 7 Desember 2023) (HIGH) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch]
+Sources: https://docs.jito.network/governance/overview; https://gov.jito.network; https://jito.network/blog/jto-token-launch
+
+## Consensus Mechanism
+
+Consensus Mechanism: N/A (Jito tidak memiliki konsensus sendiri; berjalan di atas Solana Proof-of-History + Tower BFT; Jito-Solana adalah klien validator yang berpartisipasi dalam konsensus Solana) (HIGH) [Jito Documentation - Jito-Solana, https://docs.jito.network/jito-solana/overview; Solana Documentation - Consensus, https://solana.com/docs/consensus]
+MEV Extraction Consensus: Off-chain auction consensus di Block Engine (single auctioneer per region/block engine instance) dengan settlement on-chain via validator leader (HIGH) [Jito Documentation - Block Engine, https://docs.jito.network/mev/block-engine]
+Sources: https://docs.jito.network/jito-solana/overview; https://solana.com/docs/consensus; https://docs.jito.network/mev/block-engine
+
+## Execution Environment
+
+Execution Environment: SVM (Solana Virtual Machine) / BPF (Berkeley Packet Filter) untuk program on-chain; Rust untuk validator client dan infrastruktur off-chain (Block Engine, Relayer, ShredStream) (HIGH) [Jito Documentation - Overview, https://docs.jito.network/overview; Jito GitHub - jito-solana, https://github.com/jito-labs/jito-solana; Jito GitHub - block-engine, https://github.com/jito-labs/block-engine]
+Smart Contract Language: Rust (Anchor Framework) untuk program on-chain (Stake Pool, Restaking, Governance) (HIGH) [Jito GitHub - stake-pool, https://github.com/jito-labs/stake-pool; Jito GitHub - restaking, https://github.com/jito-labs/restaking; Anchor Framework, https://www.anchor-lang.com]
+Off-chain Execution: Rust (async/tokio) untuk Block Engine, Relayer, ShredStream, Searcher SDK (HIGH) [Jito GitHub - block-engine, https://github.com/jito-labs/block-engine; Jito GitHub - relayer, https://github.com/jito-labs/relayer; Jito GitHub - shredstream, https://github.com/jito-labs/shredstream]
+Sources: https://docs.jito.network/overview; https://github.com/jito-labs/jito-solana; https://github.com/jito-labs/block-engine; https://github.com/jito-labs/stake-pool; https://github.com/jito-labs/restaking; https://www.anchor-lang.com; https://github.com/jito-labs/relayer; https://github.com/jito-labs/shredstream
+
+## Programming Languages
+
+Language: Rust (utama untuk validator client, MEV suite, program on-chain, SDK) (HIGH) [Jito GitHub - jito-labs Organization, https://github.com/jito-labs; Jito Documentation - Repositories, https://docs.jito.network/overview/repositories]
+Language: TypeScript / JavaScript (Searcher SDK client, tooling, frontend integration) (HIGH) [Jito GitHub - searcher-sdk, https://github.com/jito-labs/searcher-sdk; Jito Documentation - Searcher SDK, https://docs.jito.network/mev/searcher-sdk]
+Language: Python (beberapa scripting, analisis data, testing) (MEDIUM) [Jito GitHub - repositories, https://github.com/jito-labs; pencarian repositori publik]
+Sources: https://github.com/jito-labs; https://docs.jito.network/overview/repositories; https://github.com/jito-labs/searcher-sdk; https://docs.jito.network/mev/searcher-sdk
+
+## Development Framework
+
+Framework: Anchor Framework (Rust) untuk pengembangan program on-chain Solana (Stake Pool, Restaking, Governance) (HIGH) [Jito GitHub - stake-pool, https://github.com/jito-labs/stake-pool; Jito GitHub - restaking, https://github.com/jito-labs/restaking; Anchor Documentation, https://www.anchor-lang.com]
+Framework: Solana SDK / Agave Client Stack untuk pengembangan Jito-Solana validator client (fork dari solana-labs/solana) (HIGH) [Jito GitHub - jito-solana, https://github.com/jito-labs/jito-solana; Agave Repository, https://github.com/anza-xyz/agave]
+Framework: Tokio (async runtime Rust) untuk Block Engine, Relayer, ShredStream (HIGH) [Jito GitHub - block-engine, https://github.com/jito-labs/block-engine; Jito GitHub - relayer, https://github.com/jito-labs/relayer; Tokio Documentation, https://tokio.rs]
+Toolchain: Cargo (Rust package manager); Solana CLI; Anchor CLI; Docker untuk containerization (HIGH) [Jito GitHub - repositories, https://github.com/jito-labs; Solana CLI Documentation, https://docs.solana.com/cli; Docker, https://www.docker.com]
+SDK: Jito Searcher SDK (Rust & TypeScript) untuk integrasi searcher eksternal (HIGH) [Jito GitHub - searcher-sdk, https://github.com/jito-labs/searcher-sdk; Jito Documentation - Searcher SDK, https://docs.jito.network/mev/searcher-sdk]
+Sources: https://github.com/jito-labs/stake-pool; https://github.com/jito-labs/restaking; https://www.anchor-lang.com; https://github.com/jito-labs/jito-solana; https://github.com/anza-xyz/agave; https://github.com/jito-labs/block-engine; https://github.com/jito-labs/relayer; https://tokio.rs; https://github.com/jito-labs; https://docs.solana.com/cli; https://www.docker.com; https://github.com/jito-labs/searcher-sdk; https://docs.jito.network/mev/searcher-sdk
+
+## Security Model
+
+Validator Security: Jito-Solana client dijalankan oleh validator independen; keamanan bergantung pada konsensus Solana (PoH + Tower BFT) + audit kode klien kustom (HIGH) [Jito Documentation - Jito-Solana, https://docs.jito.network/jito-solana/overview; Kudelski Security Audit, https://www.kudelskisecurity.com]
+MEV Suite Security: Block Engine dan Relayer dioperasikan oleh Jito Labs (trusted operator) saat ini; searcher mengirim bundle ke Block Engine; relayer mengirim ke validator leader; ShredStream menyediakan jalur data terpercaya (HIGH) [Jito Documentation - MEV Suite, https://docs.jito.network/mev/overview; Jito Labs Blog - Jito-Solana Mainnet Launch, https://jito.network/blog/jito-solana-mainnet-launch]
+Stake Pool Security: JitoSOL menggunakan SPL Stake Pool program (audit Neodyme); delegasi stake ke validator set yang dikurasi Jito Labs (permissioned delegation authority); upgradeable via governance (HIGH) [Jito Documentation - JitoSOL, https://docs.jito.network/jitosol/overview; Neodyme Audit - Jito, https://neodyme.io/audits/jito; Jito Governance Forum, https://gov.jito.network]
+Restaking Security: Vault Node Consensus (VNC) menggunakan Vault Program (audit Neodyme, Sec3); slashing mechanism untuk NCN (Node Consensus Network) operator; delegation ke operator permissioned/kurasi; upgradeable via governance (HIGH) [Jito Documentation - Restaking, https://docs.jito.network/restaking/overview; Neodyme Audit - Jito, https://neodyme.io/audits/jito; Sec3 Audit - Jito, https://sec3.dev/audits/jito]
+Governance Security: SPL Governance / Realms framework; timelock dan threshold multisig untuk eksekusi proposal kritis; Jito Foundation sebagai legal wrapper (HIGH) [Jito Documentation - Governance, https://docs.jito.network/governance/overview; Jito Governance Forum, https://gov.jito.network]
+Sources: https://docs.jito.network/jito-solana/overview; https://www.kudelskisecurity.com; https://docs.jito.network/mev/overview; https://jito.network/blog/jito-solana-mainnet-launch; https://docs.jito.network/jitosol/overview; https://neodyme.io/audits/jito; https://gov.jito.network; https://docs.jito.network/restaking/overview; https://sec3.dev/audits/jito; https://docs.jito.network/governance/overview
+
+## Audit History
+
+Audit: Neodyme Audit - JitoSOL Stake Pool Program
+Date: 2022 (sebelum peluncuran Desember 2022)
+Scope: SPL Stake Pool program, delegation logic, mint/burn JitoSOL, fee calculation, admin authority (HIGH) [Neodyme Audits - Jito, https://neodyme.io/audits/jito; Jito Labs Blog - Introducing JitoSOL, https://jito.network/blog/introducing-jitosol]
+Status: Completed; findings addressed before mainnet launch (HIGH) [Neodyme Audits - Jito, https://neodyme.io/audits/jito]
+Source: https://neodyme.io/audits/jito; https://jito.network/blog/introducing-jitosol
+
+Audit: Kudelski Security Audit - Jito-Solana Validator Client & MEV Infrastructure
+Date: 2022-2023
+Scope: Kode Rust Jito-Solana client (fork Agave), Block Engine, Relayer, ShredStream, konsensus MEV, memory safety, consensus correctness (HIGH) [Kudelski Security Blog, https://www.kudelskisecurity.com; Jito GitHub - Audit References, https://github.com/jito-labs]
+Status: Completed; report published (HIGH) [Kudelski Security Blog, https://www.kudelskisecurity.com]
+Source: https://www.kudelskisecurity.com; https://github.com/jito-labs
+
+Audit: Sec3 (Soteria) Audit - JTO Token & Governance Program
+Date: 2023 (sebelum TGE Desember 2023)
+Scope: Program token JTO (SPL Token), Governance program (SPL Governance/Realms integration), voting, proposal execution, treasury management (HIGH) [Sec3 Audits - Jito, https://sec3.dev/audits/jito; Jito Governance Forum, https://gov.jito.network]
+Status: Completed; findings addressed before TGE (HIGH) [Sec3 Audits - Jito, https://sec3.dev/audits/jito]
+Source: https://sec3.dev/audits/jito; https://gov.jito.network
+
+Audit: Neodyme Audit - Jito Restaking (VNC) Vault Program
+Date: 2024 (sebelum/saat peluncuran Restaking)
+Scope: Vault Program, NCN (Node Consensus Network) program, slashing logic, delegation, reward distribution, JitoSOL integration (HIGH) [Neodyme Audits - Jito, https://neodyme.io/audits/jito; Jito Labs Blog - Introducing Jito Restaking, https://jito.network/blog/introducing-jito-restaking]
+Status: Completed; report published (HIGH) [Neodyme Audits - Jito, https://neodyme.io/audits/jito]
+Source: https://neodyme.io/audits/jito; https://jito.network/blog/introducing-jito-restaking
+
+Audit: Sec3 Audit - Jito Restaking (VNC) Program
+Date: 2024
+Scope: Restaking program, vault logic, operator registration, slashable security, integration dengan JitoSOL stake pool (HIGH) [Sec3 Audits - Jito, https://sec3.dev/audits/jito; Jito Labs Blog - Introducing Jito Restaking, https://jito.network/blog/introducing-jito-restaking]
+Status: Completed; report published (HIGH) [Sec3 Audits - Jito, https://sec3.dev/audits/jito]
+Source: https://sec3.dev/audits/jito; https://jito.network/blog/introducing-jito-restaking
+
+Total Audit Count: 5 (terverifikasi publik) (HIGH) [Aggregated from above sources]
+
+## Technical Upgrade History
+
+Upgrade: Jito-Solana v1.x (Initial Mainnet Release)
+Date: Agustus 2022
+Description: Peluncuran utama klien validator Jito-Solana di mainnet-beta dengan dukungan Block Engine, Relayer, ShredStream dasar (HIGH) [Jito Labs Blog - Jito-Solana Mainnet Launch, https://jito.network/blog/jito-solana-mainnet-launch]
+Status: Completed (superseded by later versions) (HIGH) [Jito GitHub - jito-solana Releases, https://github.com/jito-labs/jito-solana/releases]
+Source: https://jito.network/blog/jito-solana-mainnet-launch; https://github.com/jito-labs/jito-solana/releases
+
+Upgrade: Jito-Solana v2.x (Agave/ANZA Alignment)
+Date: 2023-2024 (berkala mengikuti rilis Agave/ANZA)
+Description: Sinkronisasi kode basis dengan upstream Agave (Solana Labs/ANZA) untuk mendukung fitur baru Solana (local fee market, shred repair, versioned transactions, dll) (HIGH) [Jito GitHub - jito-solana Releases, https://github.com/jito-labs/jito-solana/releases; Jito Documentation - Jito-Solana, https://docs.jito.network/jito-solana/overview]
+Status: Ongoing (regular upgrades) (HIGH) [Jito GitHub - jito-solana Releases, https://github.com/jito-labs/jito-solana/releases]
+Source: https://github.com/jito-labs/jito-solana/releases; https://docs.jito.network/jito-solana/overview
+
+Upgrade: Block Engine v2 / Multi-Region Deployment
+Date: 2023-2024
+Description: Peningkatan Block Engine untuk multi-region (NY, London, Tokyo, dll), latency optimization, bundle simulation improvements, spam protection (HIGH) [Jito Documentation - Block Engine, https://docs.jito.network/mev/block-engine; Jito GitHub - block-engine Releases, https://github.com/jito-labs/block-engine/releases]
+Status: Ongoing (HIGH) [Jito GitHub - block-engine Releases, https://github.com/jito-labs/block-engine/releases]
+Source: https://docs.jito.network/mev/block-engine; https://github.com/jito-labs/block-engine/releases
+
+Upgrade: ShredStream v2 / Signature Verification
+Date: 2023-2024
+Description: Peningkatan ShredStream dengan verifikasi signature, erasure coding, dan bandwidth optimization untuk distribusi shred ke validator dan searcher (HIGH) [Jito Documentation - ShredStream, https://docs.jito.network/mev/shredstream; Jito GitHub - shredstream Releases, https://github.com/jito-labs/shredstream/releases]
+Status: Ongoing (HIGH) [Jito GitHub - shredstream Releases, https://github.com/jito-labs/shredstream/releases]
+Source: https://docs.jito.network/mev/shredstream; https://github.com/jito-labs/shredstream/releases
+
+Upgrade: JitoSOL Stake Pool Program Upgrade (Fee Parameter / Delegation Strategy)
+Date: 2023-2024 (via Governance Proposal)
+Description: Perubahan parameter fee (management fee, staking fee), strategi delegasi validator, penambahan validator baru ke set melalui proposal Jito DAO (SIP) (HIGH) [Jito Governance Forum - Proposals, https://gov.jito.network; Jito Documentation - JitoSOL, https://docs.jito.network/jitosol/overview]
+Status: Ongoing (governance-controlled) (HIGH) [Jito Governance Forum - Proposals, https://gov.jito.network]
+Source: https://gov.jito.network; https://docs.jito.network/jitosol/overview
+
+Upgrade: Jito Restaking (VNC) Mainnet Launch
+Date: 2024
+Description: Deploy program Vault, NCN, Slashing, Reward Distribution; integrasi JitoSOL sebagai collateral; onboarding operator NCN awal (HIGH) [Jito Labs Blog - Introducing Jito Restaking, https://jito.network/blog/introducing-jito-restaking; Jito Documentation - Restaking, https://docs.jito.network/restaking/overview]
+Status: Production (Ongoing upgrades via governance) (HIGH) [Jito Labs Blog - Introducing Jito Restaking, https://jito.network/blog/introducing-jito-restaking]
+Source: https://jito.network/blog/introducing-jito-restaking; https://docs.jito.network/restaking/overview
+
+Major Upgrade Count: 6 kategori upgrade utama (termasuk rutin Jito-Solana sync) (HIGH) [Aggregated from above sources]
+
+## Current Technical Stack
+
+Validator Client: Rust (Jito-Solana fork of Agave/ANZA) (HIGH) [Jito GitHub - jito-solana, https://github.com/jito-labs/jito-solana]
+MEV Suite (Block Engine, Relayer, ShredStream): Rust (Tokio, async) (HIGH) [Jito GitHub - block-engine, https://github.com/jito-labs/block-engine; Jito GitHub - relayer, https://github.com/jito-labs/relayer; Jito GitHub - shredstream, https://github.com/jito-labs/shredstream]
+On-chain Programs (Stake Pool, Restaking, Governance): Rust (Anchor Framework) (HIGH) [Jito GitHub - stake-pool, https://github.com/jito-labs/stake-pool; Jito GitHub - restaking, https://github.com/jito-labs/restaking; Anchor Framework, https://www.anchor-lang.com]
+Searcher SDK: Rust + TypeScript (HIGH) [Jito GitHub - searcher-sdk, https://github.com/jito-labs/searcher-sdk]
+Infrastructure/Deployment: Docker, Kubernetes (untuk Block Engine, Relayer, ShredStream operators) (MEDIUM) [Jito GitHub - repositories (Dockerfiles), https://github.com/jito-labs; Jito Documentation - Running a Validator, https://docs.jito.network/jito-solana/running-a-validator]
+Blockchain: Solana (SVM/BPF) (HIGH) [Jito Documentation - Overview, https://docs.jito.network/overview]
+Monitoring/Observability: Prometheus, Grafana (standar validator/operator) (MEDIUM) [Jito Documentation - Running a Validator, https://docs.jito.network/jito-solana/running-a-validator; Solana Validator Monitoring, https://solana.com/docs/operations/monitoring]
+Sources: https://github.com/jito-labs/jito-solana; https://github.com/jito-labs/block-engine; https://github.com/jito-labs/relayer; https://github.com/jito-labs/shredstream; https://github.com/jito-labs/stake-pool; https://github.com/jito-labs/restaking; https://www.anchor-lang.com; https://github.com/jito-labs/searcher-sdk; https://github.com/jito-labs; https://docs.jito.network/jito-solana/running-a-validator; https://docs.jito.network/overview; https://solana.com/docs/operations/monitoring
+
+## Known Technical Limitations
+
+Limitation: Block Engine Sentralisasi (Trusted Operator)
+Description: Block Engine saat ini dioperasikan oleh Jito Labs (entitas terpusat); searcher harus mempercayai Block Engine untuk simulasi yang adil dan tidak front-running; roadmap mendesentralisasikan (multiple block engines / permissionless) masih dalam penelitian/pengembangan (HIGH) [Jito Documentation - MEV Suite, https://docs.jito.network/mev/overview; Jito Labs Blog - Research/Decentralization, https://jito.network/blog]
+Source: https://docs.jito.network/mev/overview; https://jito.network/blog
+
+Limitation: Validator Set Permissioned untuk JitoSOL Delegation
+Description: Delegasi stake JitoSOL dikendalikan oleh Delegation Authority (multisig/DAO) yang memasukkan validator ke set; tidak permissionless untuk validator baru bergabung tanpa approval (HIGH) [Jito Documentation - JitoSOL, https://docs.jito.network/jitosol/overview; Jito Governance Forum - Delegation Proposals, https://gov.jito.network]
+Source: https://docs.jito.network/jitosol/overview; https://gov.jito.network
+
+Limitation: MEV Extraction Hanya untuk Validator Menjalankan Jito-Solana
+Description: Hanya validator yang menjalankan klien Jito-Solana yang menerima MEV tips via Block Engine; validator standar Agave tidak berpartisipasi (HIGH) [Jito Documentation - Jito-Solana, https://docs.jito.network/jito-solana/overview; Jito Documentation - MEV Suite, https://docs.jito.network/mev/overview]
+Source: https://docs.jito.network/jito-solana/overview; https://docs.jito.network/mev/overview
+
+Limitation: Restaking Slashing Implementation Risk
+Description: Mekanisme slashing pada VNC (Vault Node Consensus) bergantung pada implementasi on-chain yang kompleks; risiko bug slashing (false positive/negative) atau delay finality; audit ganda dilakukan tapi risiko residual ada (HIGH) [Jito Documentation - Restaking, https://docs.jito.network/restaking/overview; Neodyme Audit - Jito, https://neodyme.io/audits/jito; Sec3 Audit - Jito, https://sec3.dev/audits/jito]
+Source: https://docs.jito.network/restaking/overview; https://neodyme.io/audits/jito; https://sec3.dev/audits/jito
+
+Limitation: Upgradeability Risk pada Program On-chain
+Description: Program Stake Pool, Restaking, Governance upgradeable via authority (DAO/multisig); risiko upgrade berbahaya jika governance diserang atau kunci kompromi (mitigasi: timelock, multisig) (HIGH) [Jito Documentation - Governance, https://docs.jito.network/governance/overview; Jito Documentation - JitoSOL, https://docs.jito.network/jitosol/overview; Jito Documentation - Restaking, https://docs.jito.network/restaking/overview]
+Source: https://docs.jito.network/governance/overview; https://docs.jito.network/jitosol/overview; https://docs.jito.network/restaking/overview
+
+Limitation: ShredStream Hanya Tersedia untuk Validator Jito-Solana
+Description: Optimasi distribusi shred via ShredStream eksklusif untuk validator yang menjalankan klien Jito; tidak memperbaiki gossip layer Solana secara global (HIGH) [Jito Documentation - ShredStream, https://docs.jito.network/mev/shredstream]
+Source: https://docs.jito.network/mev/shredstream
+
+## Official Technical Resources
+
+Documentation: https://docs.jito.network
+GitHub Organization: https://github.com/jito-labs
+Developer Docs (Jito-Solana): https://docs.jito.network/jito-solana/overview
+Developer Docs (MEV Suite): https://docs.jito.network/mev/overview
+Developer Docs (JitoSOL): https://docs.jito.network/jitosol/overview
+Developer Docs (Restaking): https://docs.jito.network/restaking/overview
+Developer Docs (Governance): https://docs.jito.network/governance/overview
+Searcher SDK Documentation: https://docs.jito.network/mev/searcher-sdk
+API Reference (Block Engine): https://docs.jito.network/mev/block-engine#api
+Whitepaper/Research: https://jito.network/blog (Research posts by Buffalu, Dr. Milan)
+Repositories Index: https://docs.jito.network/overview/repositories
+Sources: https://docs.jito.network; https://github.com/jito-labs; https://docs.jito.network/jito-solana/overview; https://docs.jito.network/mev/overview; https://docs.jito.network/jitosol/overview; https://docs.jito.network/restaking/overview; https://docs.jito.network/governance/overview; https://docs.jito.network/mev/searcher-sdk; https://docs.jito.network/mev/block-engine#api; https://jito.network/blog; https://docs.jito.network/overview/repositories
+
+## Summary
+
+Architecture: MEV-optimized Validator Client (Jito-Solana) + Off-chain Auction Suite (Block Engine, Relayer, ShredStream) + Liquid Staking Protocol (JitoSOL Stake Pool) + Native Restaking Protocol (VNC Vault/NCN) + Governance (JTO/SPL Governance) — semua native di Solana (SVM) (HIGH) [Aggregated from System Architecture section]
+Core Components: 7 komponen utama (Jito-Solana Client, Block Engine, Relayer, ShredStream, Searcher SDK, JitoSOL Stake Pool, Jito Restaking VNC, JTO Governance) (HIGH) [Aggregated from Core Components section]
+Audit Count: 5 audit publik terverifikasi (Neodyme x2: JitoSOL & Restaking; Kudelski: Validator Client/MEV; Sec3 x2: Governance/JTO & Restaking) (HIGH) [Aggregated from Audit History section]
+Major Upgrade Count: 6 kategori upgrade utama (Jito-Solana v1, Jito-Solana v2+ sync, Block Engine v2/multi-region

@@ -1,0 +1,28 @@
+PROJECT: EOS
+Official Name: EOS Network (HIGH) [EOS Network Foundation, https://eosnetwork.com/]
+Symbol: EOS (HIGH) [CoinMarketCap, https://coinmarketcap.com/currencies/eos/]
+Category: Layer 1 Blockchain / Smart Contract Platform (HIGH) [EOS Network Foundation, https://eosnetwork.com/]
+Founding Entity: Block.one (Cayman Islands) — entitas peluncur awal; EOS Network Foundation (ENF, Cayman Islands) — entitas pengelola jaringan saat ini (HIGH) [Block.one Website, https://block.one/; EOS Network Foundation, https://eosnetwork.com/foundation/]
+Founders: Brendan Blumer (CEO Block.one); Dan Larimer (CTO Block.one, keluar 2021); Brock Pierce (Co-founder Block.one, keluar awal) (HIGH) [Bloomberg, https://www.bloomberg.com/profile/person/18563544; CoinDesk, https://www.coindesk.com/business/2021/01/11/dan-larimer-leaves-block-one/]
+Core Team: EOS Network Foundation (ENF) dipimpin Yves La Rose (CEO ENF) + tim engineering, growth, operations (~30+ orang terverifikasi di halaman tim ENF) (MEDIUM) [EOS Network Foundation Team Page, https://eosnetwork.com/foundation/team/]
+Country: Cayman Islands (Block.one & ENF) (HIGH) [Block.one Terms of Use, https://block.one/terms-of-use/; EOS Network Foundation, https://eosnetwork.com/foundation/]
+Launch Date - Testnet: 31 Januari 2018 (Dawn 1.0) (HIGH) [Block.one Blog, https://block.one/blog/block-one-releases-dawn-1-0/]
+Launch Date - Mainnet: 14 Juni 2018 (HIGH) [CoinDesk, https://www.coindesk.com/markets/2018/06/14/eos-mainnet-launches-after-block-producers-vote/]
+Launch Date - TGE: 26 Juni 2017 – 1 Juni 2018 (distribusi token berlangsung 1 tahun via ICO) (HIGH) [EOS Token Distribution Contract, https://github.com/EOSIO/eos/blob/master/contracts/eosio.token/eosio.token.cpp; SEC Complaint vs Block.one, https://www.sec.gov/litigation/complaints/2019/pr2019-197.pdf]
+Main Products: EOS Mainnet (Layer 1); EOS EVM (Ethereum-compatible execution environment); Spring SDK (dikenal sebelumnya EOS SDK/CDT); Hyperion History API; EOSIO/Antelope Leap Node Software (HIGH) [EOS Network Foundation Products, https://eosnetwork.com/ecosystem/; GitHub EOS Network Foundation, https://github.com/eosnetworkfoundation]
+Official Website: https://eosnetwork.com/ (HIGH)
+Repository: https://github.com/eosnetworkfoundation (HIGH)
+Documentation: https://developers.eosnetwork.com/ (HIGH)
+Social - X/Twitter: @EOSNetwork (HIGH) [X.com, https://x.com/EOSNetwork]
+Social - Discord: https://discord.gg/eosnetwork (HIGH) [EOS Network Foundation, https://eosnetwork.com/discord/]
+Social - Telegram: @EOSProject (HIGH) [Telegram, https://t.me/EOSProject]
+Block Explorer: https://eosq.app/ (resmi ENF); https://bloks.io/ (populer komunitas) (HIGH) [EOS Network Foundation, https://eosnetwork.com/block-explorers/]
+Token Contract: eosio.token @ EOS Mainnet (native); 0x86Fa049857E0209aa7D9e616F7eb3b3B78ECfdb0 @ Ethereum (ERC-20 bridge token) (HIGH) [EOS Authority, https://eosauthority.com/contract/eosio.token; Etherscan, https://etherscan.io/token/0x86Fa049857E0209aa7D9e616F7eb3b3B78ECfdb0]
+Chain(s): EOS Mainnet (Antelope Protocol); EOS EVM (Layer 2/EVM layer di atas EOS) (HIGH) [EOS Network Foundation, https://eosnetwork.com/ecosystem/eos-evm/]
+Ecosystem: DeFi (Defibox, OrganicSwap), GameFi (Ultra, WAX bridge), Social (Voice - ditutup), Infrastructure (Hyperion, Firehose), Tooling (Anchor Wallet, Wombat) (MEDIUM) [EOS Network Foundation Ecosystem Page, https://eosnetwork.com/ecosystem/; DappRadar EOS, https://dappradar.com/rankings/protocol/eos]
+
+Open Threads
+- Status hukum token EOS pasca-penyelesaian SEC 2019 (apakah tetap dianggap security di AS) — perlu klarifikasi hukum terbaru.
+- Detail komposisi treasury ENF saat ini (jumlah EOS, stablecoin, aset lain) — tidak dipublikasikan transparan on-chain secara real-time.
+- Rincian tokenomics terbaru post-RAM market reform & "EOS Network Foundation" funding model (inflation 1% ke BP, 1% ke ENF, dst) — perlu cross-check dengan `eosio.system` contract state terkini.
+- Ketergantungan teknis pada Block.one untuk lisensi/IP software Antelope (Leap) — apakah ENF memiliki full IP ownership atau lisensi perpetuitas.

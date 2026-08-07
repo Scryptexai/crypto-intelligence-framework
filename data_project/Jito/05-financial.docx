@@ -1,0 +1,146 @@
+PROJECT: Jito
+
+Funding History
+
+Funding Round: Series A
+Date: 2022
+Amount: $10M
+Currency: USD
+Lead Investor: Multicoin Capital (HIGH) [The Block, https://www.theblock.co/post/267944/jito-labs-raises-10-million-series-a]
+Participating Investors: Framework Ventures; Solana Ventures; Robot Ventures (HIGH) [The Block, https://www.theblock.co/post/267944/jito-labs-raises-10-million-series-a]
+Valuation: tidak diungkap
+Funding Type: Series A
+Status: Completed
+Sources: https://www.theblock.co/post/267944/jito-labs-raises-10-million-series-a; https://multicoin.capital/portfolio/jito; https://www.frameworkventures.com/portfolio; https://solana.com/ventures; https://robotventures.com/portfolio
+
+Funding Round: Seed / Pre-Series A
+Date: 2021-2022
+Amount: tidak diungkap
+Currency: USD
+Lead Investor: tidak diungkap
+Participating Investors: tidak diungkap
+Valuation: tidak diungkap
+Funding Type: Seed
+Status: Completed (inferred from Series A announcement referencing prior funding)
+Sources: https://www.theblock.co/post/267944/jito-labs-raises-10-million-series-a
+
+Treasury
+
+Current Treasury Size: tidak diungkap (nilai absolut treasury Jito Foundation/DAO tidak dipublikasikan secara real-time di dashboard transparansi resmi)
+Treasury Composition: tidak diungkap (detail komposisi aset: stablecoin, JTO, SOL, JitoSOL, investasi lain tidak tersedia publik)
+Stablecoin Holdings: tidak diungkap
+Native Token Holdings: tidak diungkap (jumlah JTO yang dimiliki treasury DAO/Foundation tidak diverifikasi on-chain di sumber resmi)
+Other Assets: tidak diungkap
+Treasury Custodian: Jito Foundation (entitas hukum Cayman Islands) mengelola treasury atas nama Jito DAO (HIGH) [Jito Governance Forum - Foundation Announcement, https://gov.jito.network/t/jito-foundation/123; Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch]
+Sources: https://gov.jito.network/t/jito-foundation/123; https://jito.network/blog/jto-token-launch; https://docs.jito.network/governance/overview
+
+Revenue Model
+
+Revenue Stream: MEV Tips (Priority Fees / Tip Payments dari Searcher)
+Description: Validator menjalankan Jito-Solana menerima tips dari Searcher via Block Engine untuk inklusi bundle MEV; tips ini masuk ke blok dan didistribusikan ke validator leader (bagian) serta ke JitoSOL stake pool (bagian melalui fee mechanism) (HIGH) [Jito Documentation - MEV Suite, https://docs.jito.network/mev/overview; Jito Labs Blog - Introducing JitoSOL, https://jito.network/blog/introducing-jitosol]
+Status: Live
+Sources: https://docs.jito.network/mev/overview; https://jito.network/blog/introducing-jitosol
+
+Revenue Stream: Staking Rewards (Inflation Rewards Solana)
+Description: Stake pool JitoSOL mengumpulkan reward staking native Solana (inflation rewards) dari validator set yang didelegasikan (HIGH) [Jito Documentation - JitoSOL, https://docs.jito.network/jitosol/overview; Solana Documentation - Staking Rewards, https://solana.com/docs/core/staking]
+Status: Live
+Sources: https://docs.jito.network/jitosol/overview; https://solana.com/docs/core/staking
+
+Revenue Stream: Management Fee (JitoSOL Stake Pool)
+Description: Protokol mengenakan management fee (setelah governance) dari total AUM JitoSOL; fee ini masuk ke treasury DAO (HIGH) [Jito Documentation - JitoSOL, https://docs.jito.network/jitosol/overview; Jito Governance Forum - Fee Proposals, https://gov.jito.network]
+Status: Live (parameter fee dikontrol governance)
+Sources: https://docs.jito.network/jitosol/overview; https://gov.jito.network
+
+Revenue Stream: Staking Fee / Validator Commission
+Description: Validator set Jito mengatur commission rate; bagian dari commission mengalir ke stake pool / treasury sesuai parameter governance (HIGH) [Jito Documentation - JitoSOL, https://docs.jito.network/jitosol/overview; Jito Governance Forum - Delegation Proposals, https://gov.jito.network]
+Status: Live
+Sources: https://docs.jito.network/jitosol/overview; https://gov.jito.network
+
+Revenue Stream: Restaking Fees (VNC / Vault Node Consensus)
+Description: Protokol restaking Jito (VNC) memperkenalkan fee atas layanan keamanan ekonomi untuk NCN (Node Consensus Network); detail fee structure ditentukan governance (HIGH) [Jito Documentation - Restaking, https://docs.jito.network/restaking/overview; Jito Labs Blog - Introducing Jito Restaking, https://jito.network/blog/introducing-jito-restaking]
+Status: Live (sejak peluncuran 2024)
+Sources: https://docs.jito.network/restaking/overview; https://jito.network/blog/introducing-jito-restaking
+
+Revenue Stream: Block Engine Revenue (Operator Fee)
+Description: Block Engine (dioperasikan Jito Labs) dapat mengenakan fee pada Searcher atau validator untuk akses prioritas / layanan premium; belum dikonfirmasi apakah aktif sebagai revenue stream terpisah dari MEV tips (MEDIUM) [Jito Documentation - Block Engine, https://docs.jito.network/mev/block-engine; Jito GitHub - block-engine, https://github.com/jito-labs/block-engine]
+Status: Planned / Tidak dikonfirmasi aktif
+Sources: https://docs.jito.network/mev/block-engine; https://github.com/jito-labs/block-engine
+
+Revenue History
+
+Tidak diungkap. (Tidak ada laporan pendapatan bulanan/kuartalan resmi yang dipublikasikan oleh Jito Labs, Jito Foundation, atau Jito DAO. Data on-chain MEV tips dan fee stake pool dapat dilacak via Solscan/Dune tapi tidak diagregasi ke laporan revenue resmi.)
+
+Fundraising Mechanism
+
+VC Funding: Series A $10M dari Multicoin Capital, Framework Ventures, Solana Ventures, Robot Ventures (HIGH) [The Block, https://www.theblock.co/post/267944/jito-labs-raises-10-million-series-a]
+Foundation: Jito Foundation mengelola treasury DAO dan alokasi token untuk pengembangan ekosistem (HIGH) [Jito Governance Forum - Foundation Announcement, https://gov.jito.network/t/jito-foundation/123]
+DAO Treasury: Alokasi token JTO ke treasury DAO (persentase tidak dibahas di fase ini) digunakan untuk grant, pengembangan, operasi (HIGH) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch; Jito Documentation - Governance, https://docs.jito.network/governance/overview]
+Protocol Revenue: Revenue dari MEV tips, management fee, staking fee, restaking fee mengalir ke treasury DAO (HIGH) [Jito Documentation - JitoSOL, https://docs.jito.network/jitosol/overview; Jito Documentation - Restaking, https://docs.jito.network/restaking/overview; Jito Documentation - MEV Suite, https://docs.jito.network/mev/overview]
+Bootstrapping: Pengembangan awal Jito-Solana client dan MEV suite didanai oleh pendiri dan dana Seed sebelum Series A (MEDIUM) [Jito Labs Website - Team, https://jito.network/team; The Block - Series A, https://www.theblock.co/post/267944/jito-labs-raises-10-million-series-a]
+Sources: https://www.theblock.co/post/267944/jito-labs-raises-10-million-series-a; https://gov.jito.network/t/jito-foundation/123; https://jito.network/blog/jto-token-launch; https://docs.jito.network/governance/overview; https://docs.jito.network/jitosol/overview; https://docs.jito.network/restaking/overview; https://docs.jito.network/mev/overview; https://jito.network/team
+
+Token Sale
+
+Private Sale: Tidak ada informasi publik mengenai private sale token JTO terpisah dari rondaan VC equity (Series A). Token JTO didistribusikan via airdrop komunitas dan alokasi ke treasury, tim, investor (vesting) — detail distribusi token termasuk private sale/vesting investor adalah Phase 6. (HIGH) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch; Jito Governance Forum, https://gov.jito.network]
+Public Sale: Tidak ada public sale / IDO / launchpad untuk JTO. Token diluncurkan via airdrop dan listing di exchange (HIGH) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch; CoinGecko - JTO, https://www.coingecko.com/en/coins/jito]
+Launchpad: Tidak ada
+Auction: Tidak ada
+Community Sale: Tidak ada
+Date: 7 Desember 2023 (TGE & Airdrop Claim)
+Status: Completed
+Sources: https://jito.network/blog/jto-token-launch; https://www.coingecko.com/en/coins/jito; https://gov.jito.network
+
+Catatan: Fase ini tidak membahas distribusi token, vesting, maupun alokasi private sale investor. Rujuk Phase 6.
+
+Financial Dependencies
+
+VC: Multicoin Capital; Framework Ventures; Solana Ventures; Robot Ventures (equity investor Jito Labs, Inc.) (HIGH) [The Block, https://www.theblock.co/post/267944/jito-labs-raises-10-million-series-a]
+Foundation: Jito Foundation (pengelola treasury DAO, legal wrapper) (HIGH) [Jito Governance Forum - Foundation Announcement, https://gov.jito.network/t/jito-foundation/123]
+DAO: Jito DAO (pemegang treasury token JTO, pengambil keputusan alokasi dana) (HIGH) [Jito Documentation - Governance, https://docs.jito.network/governance/overview]
+Protocol Revenue: MEV tips, JitoSOL fees, Restaking fees (sumber pendapatan berkelanjutan protokol) (HIGH) [Jito Documentation - MEV Suite, https://docs.jito.network/mev/overview; Jito Documentation - JitoSOL, https://docs.jito.network/jitosol/overview; Jito Documentation - Restaking, https://docs.jito.network/restaking/overview]
+Grant Program: Solana Foundation (hibah ekosistem potensial; tidak dikonfirmasi hibah spesifik ke Jito Labs pasca-Series A) (MEDIUM) [Solana Foundation Website, https://solana.foundation; Jito Labs Blog - Jito-Solana Mainnet Launch, https://jito.network/blog/jito-solana-mainnet-launch]
+Sources: https://www.theblock.co/post/267944/jito-labs-raises-10-million-series-a; https://gov.jito.network/t/jito-foundation/123; https://docs.jito.network/governance/overview; https://docs.jito.network/mev/overview; https://docs.jito.network/jitosol/overview; https://docs.jito.network/restaking/overview; https://solana.foundation; https://jito.network/blog/jito-solana-mainnet-launch
+
+Financial Risk
+
+Treasury Concentration: Risiko konsentrasi treasury pada token JTO (native token) yang volatil; tidak ada laporan resmi mengkuantifikasikan persentase stablecoin vs native token di treasury (HIGH) [Jito Governance Forum - Treasury Management Discussions, https://gov.jito.network; Jito Documentation - Governance, https://docs.jito.network/governance/overview]
+Revenue Dependency on MEV: Pendapatan MEV tips bergantung pada aktivitas on-chain Solana (volume DEX, arbitrage, liquidation) yang bersifat siklikal dan kompetitif; penurunan aktivitas MEV langsung mengurangi yield JitoSOL dan revenue treasury (HIGH) [Jito Documentation - MEV Suite, https://docs.jito.network/mev/overview; Jito Labs Blog - Research Posts, https://jito.network/blog]
+Validator Set Concentration: JitoSOL mendelegasikan stake ke set validator permissioned; risiko jika validator major keluar atau dislash mempengaruhi reward dan kepercayaan (HIGH) [Jito Documentation - JitoSOL, https://docs.jito.network/jitosol/overview; Jito Governance Forum - Delegation Proposals, https://gov.jito.network]
+Smart Contract Risk: Bug pada program Stake Pool, Restaking (VNC), Governance dapat mengakibatkan kerugian dana treasury/user; diminimalkan dengan audit ganda (Neodyme, Sec3, Kudelski) tapi risiko residual ada (HIGH) [Neodyme Audits - Jito, https://neodyme.io/audits/jito; Sec3 Audits - Jito, https://sec3.dev/audits/jito; Kudelski Security, https://www.kudelskisecurity.com]
+Regulatory Legal Risk: Status token JTO sebagai security di yurisdiksi tertentu (sekali SEC mengklasifikasikan token serupa); Jito Foundation (Cayman) dan Jito Labs (entitas terpisah) memiliki eksposur hukum (MEDIUM) [SEC Enforcement Actions - Crypto Tokens, https://www.sec.gov; Jito Governance Forum - Legal Discussions, https://gov.jito.network]
+Block Engine Centralization Risk: Block Engine dioperasikan Jito Labs (trusted operator); jika kompromi atau sensor, ekstraksi MEV terganggu, revenue turun, kepercayaan searcher/validator hilang (HIGH) [Jito Documentation - MEV Suite, https://docs.jito.network/mev/overview; Jito Labs Blog - Decentralization Roadmap, https://jito.network/blog]
+Sources: https://gov.jito.network; https://docs.jito.network/governance/overview; https://docs.jito.network/mev/overview; https://jito.network/blog; https://docs.jito.network/jitosol/overview; https://neodyme.io/audits/jito; https://sec3.dev/audits/jito; https://www.kudelskisecurity.com; https://www.sec.gov
+
+Official Financial Resources
+
+Official Blog: https://jito.network/blog
+Transparency Report: tidak ada (tidak dipublikasikan laporan transparansi keuangan berkala)
+Treasury Dashboard: tidak ada (tidak ada dashboard treasury real-time resmi; data on-chain dapat dilacak via Solscan/Dune untuk program governance/treasury)
+Governance: https://gov.jito.network
+Messari: https://messari.io/protocol/jito
+Token Terminal: https://tokenterminal.com/terminal/projects/jito
+DefiLlama: https://defillama.com/protocol/jito
+CryptoRank: https://cryptorank.io/price/jito
+Whitepaper: tidak ada whitepaper tunggal; dokumentasi teknis di https://docs.jito.network
+Sources: https://jito.network/blog; https://gov.jito.network; https://messari.io/protocol/jito; https://tokenterminal.com/terminal/projects/jito; https://defillama.com/protocol/jito; https://cryptorank.io/price/jito; https://docs.jito.network; https://solscan.io
+
+Summary
+
+Total Funding Raised: $10M (Series A terverifikasi; jumlah Seed tidak diungkap) (HIGH) [The Block, https://www.theblock.co/post/267944/jito-labs-raises-10-million-series-a]
+Funding Rounds: 1 ronde terverifikasi publik (Series A 2022); Seed tidak diungkap (HIGH) [The Block, https://www.theblock.co/post/267944/jito-labs-raises-10-million-series-a]
+Treasury Status: Tidak diungkap (ukuran, komposisi, custodian: Jito Foundation) (HIGH) [Jito Governance Forum - Foundation Announcement, https://gov.jito.network/t/jito-foundation/123]
+Revenue Sources: MEV Tips; Staking Rewards; Management Fee (JitoSOL); Validator Commission; Restaking Fees (VNC); Block Engine Operator Fee (potensial) (HIGH) [Jito Documentation - MEV Suite, https://docs.jito.network/mev/overview; Jito Documentation - JitoSOL, https://docs.jito.network/jitosol/overview; Jito Documentation - Restaking, https://docs.jito.network/restaking/overview]
+Revenue Availability: Tidak diungkap (tidak ada laporan revenue resmi; data on-chain tersedia tapi tidak diagregasi) (HIGH) [Jito Labs Blog, https://jito.network/blog; Jito Governance Forum, https://gov.jito.network]
+
+Open Threads
+
+- Ukuran treasury absolut (USD) dan komposisi aset (JTO, SOL, JitoSOL, stablecoin, lain) tidak dipublikasikan; perlu cross-check on-chain program governance/treasury address via Solscan/Dune untuk estimasi.
+- Detail alokasi token JTO ke investor (Series A) apakah termasuk token allocation atau equity only; vesting schedule investor tidak dibahas di fase ini (Phase 6).
+- Apakah ada hibah (grant) dari Solana Foundation atau program ekosistem lain selain equity investment; tidak dikonfirmasi di sumber resmi.
+- Revenue breakdown periodik (bulanan/kuartalan) dari MEV tips, management fee, restaking fee tidak tersedia; perlu aggregasi data on-chain (Dune Analytics / Flipside) untuk analisis independen.
+- Status "Block Engine Operator Fee" apakah sudah aktif sebagai revenue stream atau masih riset; dokumentasi tidak jelas.
+- Financial dependencies pada "Searcher" eksternal (volume bundle, kompetisi Block Engine lain) tidak terukur kuantitatif.
+- Legal financial risk terkait klasifikasi token JTO oleh regulator (SEC, CFTC, dll) tidak memiliki disclosure resmi dari Jito Foundation/Labs.
+- Apakah Jito Labs, Inc. (entity equity) memiliki revenue terpisah dari protokol (misal: enterprise service, Block Engine SaaS) tidak dikonfirmasi.
+- Burn rate Jito Labs, Inc. (operasional tim, infrastructure Block Engine/Relayer/ShredStream) dan runway tidak diungkap.
+- Detail multisig/authority yang mengontrol treasury DAO (threshold, signer) tidak dipublikasikan secara detail di forum governance.

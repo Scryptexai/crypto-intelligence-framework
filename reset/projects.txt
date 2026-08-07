@@ -80,3 +80,286 @@ Near
 Jupiter
 Curve
 Pendle
+Aptos
+Avalanche
+Axie Infinity
+Bancor
+Berachain
+Blast
+Blur
+Cardano
+Celestia
+Compound
+Cosmos
+EOS
+EigenLayer
+Ethena
+Ethereum
+Friend.tech
+Grass
+Helium
+Hyperliquid
+Irys
+Jito
+Kamino
+Lido
+MakerDAO
+MegaETH
+Monad
+Movement Labs
+Notcoin
+OlympusDAO
+Optimism
+Polymarket
+Pump.fun
+Pyth
+Render
+Solana
+Starknet
+SushiSwap
+Terra
+Uniswap
+Vana
+Walrus
+Wormhole
+Yearn Finance
+dYdX
+zkSync
+BNB Chain
+Polkadot
+EtherFi
+Sui
+Polygon
+Scroll
+Linea
+Injective
+Sei
+Near
+Jupiter
+Curve
+Pendle
+Algorand
+Tron
+Toncoin
+Kaspa
+Hedera
+Internet Computer
+MultiversX
+Fantom
+Celo
+Harmony
+Nervos Network
+Conflux
+Oasis Network
+IoTeX
+Moonbeam
+Moonriver
+Acala
+Astar
+Shiden
+Mina Protocol
+Aleph Zero
+Secret Network
+Zilliqa
+NEO
+Qtum
+ICON
+Ontology
+Waves
+Flow
+Base
+Mantle
+Taiko
+Immutable X
+Loopring
+Boba Network
+Metis
+Fuel Network
+Cartesi
+Eclipse
+Unichain
+Ink
+Mode Network
+Redstone
+ShapeShift
+ZKFair
+Aave
+PancakeSwap
+GMX
+Meteora
+Morpho
+Euler Finance
+Fluid
+Radiant Capital
+JustLend
+Venus Protocol
+Usual
+Sky
+Frax Finance
+Reserve Protocol
+Synthetix
+Kwenta
+Gains Network
+Velodrome
+Aerodrome
+Camelot
+Trader Joe
+Balancer
+1inch Network
+ParaSwap
+Convex Finance
+StakeDAO
+Instadapp
+DeBank
+Zapper
+Zerion
+Renzo
+Puffer Finance
+Swell Network
+KelpDAO
+Babylon
+Lombard
+Chainlink
+Supra
+Chronicle
+The Graph
+Covalent
+Goldsky
+Subsquid
+WalletConnect
+Socket
+Across
+Hop
+Axelar
+Hyperlane
+Celer
+Router
+Li.Fi
+0x
+Safe
+Privy
+Web3Auth
+Alchemy
+Infura
+QuickNode
+Ankr
+Blocknative
+Flashbots
+EigenDA
+Avail
+Filecoin
+Storj
+Akash Network
+io.net
+Aethir
+Nosana
+Golem
+Arweave
+Bittensor
+Fetch.ai
+SingularityNET
+Ocean Protocol
+Giza
+Almanak
+Synth
+Allora Network
+HeyAnon
+AIWayfinder
+Virtuals Protocol
+BlockDAG
+Ozak AI
+Qubic
+Solidus AI Tech
+Nuklai
+The Sandbox
+Decentraland
+Gala Games
+Illuvium
+Yield Guild Games
+Vulcan Forged
+Echelon Prime
+TreasureDAO
+Xai Games
+Proof of Play
+Wildcard
+HyveLabs
+Big Time
+Shrapnel
+Star Atlas
+Alien Worlds
+CryptoMines
+Nyan Heroes
+Portal
+Ondo Finance
+Maple Finance
+Figure
+Keeta Network
+Zebec
+Plume
+Centrifuge
+TrueFi
+Goldfinch
+Clearpool
+Propy
+RealT
+Tangible
+Swarm
+Backed
+Midas
+Mountain Protocol
+Superstate
+OpenEden
+Hivemapper
+Geodnet
+Silencio
+Nodle
+Chirp
+Wayru
+Uplink
+Monero
+Zcash
+Iron Fish
+Horizen
+Namada
+Nocturne
+Aztec
+Railgun
+Tornado Cash
+Dogecoin
+Shiba Inu
+Pepe
+Bonk
+Dogwifhat
+FLOKI
+Brett
+Popcat
+Mog Coin
+GIGGLE
+Fartcoin
+Pippin
+PENGU
+Official Trump
+Farcaster
+Lens Protocol
+Stacks
+RSK
+Merlin Chain
+B² Network
+BitLayer
+Core DAO
+Botanix
+Map Protocol
+Ordinals
+Runes
+Bitmap
+Tether
+USD Coin
+USDey
+PayPal USD
+FDUSD
+TrueUSD
+USDD
+Stellar
+XRP
+Alchemy Pay
+BitPay

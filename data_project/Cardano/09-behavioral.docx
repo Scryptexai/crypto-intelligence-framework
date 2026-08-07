@@ -1,0 +1,222 @@
+PROJECT: Cardano
+
+1. Membangun blockchain generasi ketiga berbasis penelitian akademis dan formal verification
+· Evidence: IOG mempublikasikan 100+ paper akademis peer-reviewed di venue top-tier (Eurocrypt, Crypto, IEEE S&P, Financial Cryptography) mencakup Ouroboros family, Hydra, Mithril, ZK-SNARKs, sidechains, formal methods; protokol konsensus Ouroboros memiliki bukti keamanan formal dalam model Universal Composability
+· Supporting Dataset: Phase 4 Technical Upgrade History (EV-035), Phase 4 Security Model, Phase 4 Official Technical Resources (IOG Research Library)
+
+2. Mencapai desentralisasi progresif melalui transisi konsensus dan tata kelola on-chain
+· Evidence: Hard fork Shelley (EV-011) mengaktifkan Ouroboros Praos dan stake pool operator komunitas (~1000+ SPO minggu pertama), mengakhiri era federated BFT; Hard fork Chang CIP-1694 (EV-022) bootstrap tata kelola konstitusional on-chain dengan Interim Constitutional Committee, DRep, dan SPO voting; Konstitusi diratifikasi komunitas via DRep voting (EV-023)
+· Supporting Dataset: Phase 3 History (EV-011, EV-022, EV-023), Phase 4 Consensus Mechanism, Phase 6 Governance, Phase 6 Major Token Events
+
+3. Mengembangkan infrastruktur identitas terdesentralisasi (DID) untuk adopsi enterprise dan pemerintah
+· Evidence: Atala PRISM mainnet live 2021-04 (EV-027); deployment skala nasional: Ethiopia (5 juta kredensial siswa), Georgia (verifikasi dokumen), Tanzania (identitas digital); standar W3C DID/Verifiable Credentials; Midnight partner chain memperluas ke privacy-preserving identity dengan ZK-SNARKs
+· Supporting Dataset: Phase 3 History (EV-027, EV-031), Phase 7 Major Integrations (Atala PRISM + Government Identity Systems), Phase 4 Core Components (Atala PRISM), Phase 8 Narrative Position
+
+4. Membangun ekosistem DeFi dan NFT native pada model eUTXO tanpa bergantung pada EVM
+· Evidence: Mary hard fork (EV-013) native multi-asset support tanpa smart contract; Alonzo hard fork (EV-014) Plutus V1 smart contracts; Vasil hard fork (EV-017) Plutus V2, reference inputs, inline datums meningkatkan composability; TVL puncak ~$450M (Maret 2024) dengan Minswap, Indigo, Liqwid, WingRiders, Lenfi, DexHunter; NFT volume bulanan puncak $50M+ via JPG Store
+· Supporting Dataset: Phase 3 History (EV-013, EV-014, EV-015, EV-017, EV-028, EV-029), Phase 4 Execution Environment, Phase 7 Exchange Ecosystem (DEX), Phase 8 Adoption Metrics (TVL, NFT Volume)
+
+5. Menciptakan model pendanaan berkelanjutan melalui treasury on-chain dan governance komunitas
+· Evidence: Voucher sale $62M (2015-2017) + genesis allocation 5.18B ADA ke tiga entitas; Shelley era monetary expansion mendanai staking rewards + treasury; Project Catalyst Fund 1-12+ mendistribusikan >100M ADA kumulatif (EV-012, EV-021); CIP-1694 mengintegrasikan treasury withdrawals ke governance actions konstitusional
+· Supporting Dataset: Phase 5 Funding History, Phase 5 Treasury, Phase 5 Fundraising Mechanism, Phase 6 Token Sale, Phase 6 Inflation/Deflation, Phase 3 History (EV-012, EV-021)
+
+6. Menyediakan skalabilitas Layer 2 melalui Hydra (state channels) dan Mithril (threshold signatures) serta partner chain Midnight
+· Evidence: Hydra testnet 2022 (EV-016), mainnet beta incremental 2024 (EV-025); Mithril mainnet 2023-02 (EV-019) fast sync untuk Daedalus/Lace; Midnight devnet v1/testnet 2024-10 (EV-024) ZK-smart contracts, DUST token, Polkadot SDK; Leios/Peras research untuk base-layer throughput
+· Supporting Dataset: Phase 3 History (EV-016, EV-019, EV-018, EV-024, EV-025), Phase 4 System Architecture (Layer 2, Partner Chain), Phase 4 Core Components (Hydra, Mithril, Midnight), Phase 8 Narrative Position
+
+7. Mempertahankan keamanan protokol melalui single-client Haskell dengan formal specification dan multiple audit
+· Evidence: cardano-node (Haskell/GHC) sole production implementation; 7 documented audits (Tweag Plutus Core 2021, Quarkslab Node 2020, KPMG formal spec 2018-19, Trail of Bits Marlowe 2022, Quarkslab Hydra 2023, Mithril audit 2023, academic peer review ongoing); no major consensus failure since 2017
+· Supporting Dataset: Phase 4 Security Model, Phase 4 Audit History, Phase 4 Current Technical Stack (Runtime), Phase 4 Known Technical Limitations (single-client risk)
+
+---
+
+Keputusan: Pendirian Input Output Hong Kong (IOHK/IOG) dan dimulainya penelitian Cardano (2015)
+· Trigger: Charles Hoskinson dan Jeremy Wood keluar dari Ethereum dengan visi blockchain generasi ketiga berbasis penelitian akademis dan formal verification, tidak "move fast and break things"
+· Evidence: Phase 3 EV-001; Phase 1 Founders; Phase 4 System Architecture (dual-layer, Ouroboros research)
+· Decision: Mendirikan IOG di Hong Kong sebagai perusahaan R&D; memulai penelitian protokol konsensus Proof-of-Stake Ouroboros dengan formal security proofs
+· Immediate Result: Program penelitian Ouroboros diluncurkan; fondasi teknis Cardano diletakkan sebelum ada kode produksi
+· Long-term Impact: Cardano menjadi protokol blockchain paling banyak dipublikasikan di venue akademis top-tier; keamanan protokol terbukti matematis; arsitektur dual-layer (CSL/CCL) dan Hard Fork Combinator lahir dari pendekatan ini
+· Supporting Dataset: Phase 3 EV-001, Phase 4 Technology (Architecture, Consensus, Security Model), Phase 1 Founding Entity
+
+Keputusan: Penjualan voucher ADA publik melalui Attain Alternative Strategies Ltd (2015-09 to 2017-01)
+· Trigger: Butuh dana ~$62M untuk pengembangan multi-tahun tanpa VC/private sale yang menciptakan tekanan unlock dan misalignment insentif
+· Evidence: Phase 3 EV-002; Phase 5 Token Sale; Phase 5 Funding History; Phase 6 Token Sale
+· Decision: Public voucher sale 16 bulan ke pasar Asia (utamanya Jepang) via entitas Swiss; tidak ada private sale, strategic sale, atau VC allocation; ~25.9B ADA terjual ke ~62M USD
+· Immediate Result: Dana pengembangan terkumpul; distribusi token awal tersebar ke ribuan peserta retail (bukan whale/VC); tidak ada vesting schedule protokol untuk komunitas
+· Long-term Impact: Distribusi token relatif merata (>50% supply di tangan retail per estimasi); tidak ada cliff unlock besar yang menimbulkan sell pressure tiba-tiba; namun entitas genesis (IOG, Emurgo, CF) memegang ~11.5% supply gabungan tanpa vesting protokol
+· Supporting Dataset: Phase 3 EV-002, Phase 5 Funding History, Phase 6 Distribution, Phase 6 Vesting Schedule
+
+Keputusan: Pendirian tiga entitas terpisah — IOG (R&D), Cardano Foundation (standarisasi/tata kelola), Emurgo (adopsi komersial) (2016-2017)
+· Trigger: Butuh pemisahan tugas yang jelas: pengembangan protokol, standarisasi/governance, dan komersialisasi agar tidak ada conflict of interest dan masing-masing bisa fokus
+· Evidence: Phase 3 EV-003 (CF), EV-005 (Emurgo); Phase 2 Entity (IOG, CF, Emurgo); Phase 1 Founding Entity
+· Decision: Cardano Foundation didirikan di Zug, Swiss (2016) sebagai yayasan nirlaba; Emurgo didirikan di Tokyo, Jepang (2017-07) sebagai venture builder; IOG tetap di Hong Kong sebagai R&D
+· Immediate Result: Struktur tri-entitas terbentuk sebelum mainnet launch; masing-masing menerima genesis allocation (IOG ~2.46B, CF ~648M, Emurgo ~2.07B ADA)
+· Long-term Impact: Pemisahan tanggung jawab memungkinkan CF jadi netral governance steward, IOG fokus research/engineering, Emurgo fokus business development; tapi menciptakan kompleksitas koordinasi dan transparansi keuangan terpisah (tidak ada laporan konsolidasi teraudit)
+· Supporting Dataset: Phase 3 EV-003, EV-005, Phase 2 Entity, Phase 5 Financial Dependencies
+
+Keputusan: Peluncuran mainnet dengan konsensus federated (Ouroboros BFT) — Era Byron (2017-09-29)
+· Trigger: Butuh mainnet live untuk mengaktifkan transfer ADA dan staking delegation sambil menunggu Ouroboros Praos (decentralized) siap produksi
+· Evidence: Phase 3 EV-007; Phase 4 Technical Upgrade History (Byron); Phase 4 Consensus Mechanism (Ouroboros BFT)
+· Decision: Launch mainnet dengan federated block production oleh IOG/Emurgo/CF nodes; Daedalus full-node wallet; Hard Fork Combinator architecture siap untuk upgrade seamless
+· Immediate Result: ADA transferable on-chain; listing Bittrex 2017-11 (EV-008); staking delegation live (tapi reward belum); fondasi untuk Shelley descentralisasi diletakkan
+· Long-term Impact: Hard Fork Combinator terbukti works — transisi ke Shelley (2020), Allegra, Mary, Alonzo, Babbage, Vasil, Chang semua via HFC tanpa chain split; model "launch early, decentralize later" jadi template Cardano
+· Supporting Dataset: Phase 3 EV-007, EV-008, Phase 4 Technical Upgrade History, Phase 4 Core Components (Hard Fork Combinator)
+
+Keputusan: Hard fork Shelley — transisi ke Ouroboros Praos fully decentralized (2020-07-29)
+· Trigger: Penelitian Ouroboros Praos selesai (formal proofs published); testnet berjalan stabil; komunitas siap mengoperasikan stake pool
+· Evidence: Phase 3 EV-011; Phase 4 Consensus Mechanism (Ouroboros Praos); Phase 4 Technical Upgrade History (Shelley); Phase 6 Utility (Staking)
+· Decision: Aktifkan Ouroboros Praos dengan VRF leader election; stake pool registration/delegation; incentive mechanism (reward sharing); monetary expansion dimulai untuk funding rewards + treasury
+· Immediate Result: ~1000+ SPO aktif minggu pertama; staking participation rate naik cepat ke >70%; jaringan fully decentralized block production
+· Long-term Impact: Staking participation stabil ~62-65% hingga 2024; monetary expansion schedule hardcoded mendanai rewards hingga ~2140; treasury on-chain mulai akumulasi fee + expansion untuk Catalyst
+· Supporting Dataset: Phase 3 EV-011, Phase 4 Consensus, Phase 6 Inflation/Deflation, Phase 8 Adoption Metrics (Staking Participation)
+
+Keputusan: Project Catalyst Fund 1 — eksperimen tata kelola on-chain treasury pertama (2020-08)
+· Trigger: Treasury on-chain mulai terakumulasi (fee + monetary expansion); butuh mekanisme distribusi transparan dan community-driven
+· Evidence: Phase 3 EV-012; Phase 5 Treasury; Phase 6 Utility (Treasury Funding); Phase 7 Infrastructure (Project Catalyst)
+· Decision: Launch Catalyst Fund 1 ($250k ADA) dengan proposal submission, community assessment, stake-weighted voting; dana dari treasury protokol
+· Immediate Result: 50+ proyek didanai; model funding komunitas on-chain terbukti works; fondasi Voltaire era (governance) diletakkan
+· Long-term Impact: >100M ADA kumulatif didistribusikan Fund 1-12+ (EV-021); terbesar on-chain DAO funding di industri; CIP-1694 kemudian mengintegrasikan treasury withdrawals ke governance actions konstitusional
+· Supporting Dataset: Phase 3 EV-012, EV-021, Phase 5 Treasury, Phase 6 Governance, Phase 7 Infrastructure
+
+Keputusan: Hard fork Mary — native multi-asset support tanpa smart contract (2021-03-01)
+· Trigger: Butuh fungible token dan NFT native di settlement layer sebelum smart contract Plutus siap (Alonzo); mengurangi kompleksitas dan biaya untuk token sederhana
+· Evidence: Phase 3 EV-013; Phase 4 Core Components (Native Asset Ledger); Phase 6 Utility (Native Asset Minting Fee); Phase 8 Adoption Metrics (Native Assets >100k policy IDs)
+· Decision: Implementasi multi-asset ledger di CSL: minting policies, asset names, metadata (CIP-25), minimum UTxO deposit (~1-2 ADA); tidak perlu Plutus script
+· Immediate Result: Ribuan policy ID dibuat minggu pertama; NFT boom dimulai sebelum smart contract; JPG Store, blue-chip collections (Ape Society, Clay Mates) lahir
+· Long-term Impact: >100k unique policy IDs (2024); native asset volume & NFT marketplace mature sebelum DeFi smart contract; ADA demand struktural dari minimum UTxO deposit untuk setiap asset
+· Supporting Dataset: Phase 3 EV-013, EV-029, Phase 4 Execution Environment, Phase 6 Utility, Phase 8 Adoption Metrics
+
+Keputusan: Hard fork Alonzo — Plutus V1 smart contracts live (2021-09-12)
+· Trigger: Plutus Core specification & compiler ready; testnet Alonzo purple/blue/white berjalan; developer ecosystem menunggu
+· Evidence: Phase 3 EV-014; Phase 4 Core Components (Plutus Platform); Phase 4 Execution Environment (eUTXO); Phase 3 EV-015 (Minswap/SundaeSwap launch)
+· Decision: Aktifkan Plutus V1 di mainnet via Hard Fork Combinator; eUTXO model dengan datum/redeemer; cost model CPU/memory units; script validation two-phase
+· Immediate Result: Era Goguen dimulai; Minswap, SundaeSwap, Meld, Liqwid, Indigo mulai pengembangan/testnet; DeFi TVL mulai tumbuh
+· Long-term Impact: eUTXO model terbukti bisa support complex DeFi (AMM, lending, synthetics); Vasil hard fork (2022) diperlukan untuk perbaikan throughput & cost model (Plutus V2, reference inputs, inline datums); concurrency bottleneck jadi fokus R&D berkelanjutan
+· Supporting Dataset: Phase 3 EV-014, EV-015, EV-017, Phase 4 Execution Environment, Phase 4 Known Limitations (eUTXO concurrency), Phase 8 Adoption Metrics (TVL)
+
+Keputusan: Hard fork Vasil — pipelining, reference inputs, inline datums, Plutus V2 (2022-09-22)
+· Trigger: Bottleneck throughput & script cost setelah Alonzo; penelitian CIP-31/32/33 selesai; SPO & developer testing di testnet
+· Evidence: Phase 3 EV-017; Phase 4 Technical Upgrade History (Vasil); Phase 4 Core Components (Plutus V2); Phase 4 Known Limitations
+· Decision: Aktifkan pipelined block diffusion (CIP-31 ~2-3x throughput), reference inputs (CIP-32), inline datums (CIP-33), reference scripts, Plutus V2 cost model improvements
+· Immediate Result: Block propagation dipercepat; ukuran script & biaya komputasi Plutus turun; DeFi composability meningkat drastis; TVL naik ke puncak ~$450M Maret 2024
+· Long-term Impact: Vasil jadi titik balik usability DeFi di Cardano; tapi eUTXO concurrency fundamental tetap ada; R&D lanjut ke Leios (base-layer) dan Hydra (L2)
+· Supporting Dataset: Phase 3 EV-017, EV-028, Phase 4 Technical Upgrade History, Phase 4 Known Limitations, Phase 8 Adoption Metrics (TVL peak)
+
+Keputusan: Pengumuman Midnight partner chain — privacy-preserving, ZK-SNARKs, Polkadot SDK (2022-11-18)
+· Trigger: Butuh solusi privacy & regulatory compliance untuk enterprise/government; eUTXO publik tidak cocok untuk data sensitif; sidechain model perlu shared security
+· Evidence: Phase 3 EV-018; Phase 4 System Architecture (Partner Chain); Phase 4 Core Components (Midnight); Phase 8 Narrative Position (Emerging Narrative)
+· Decision: Bangun partner chain di atas Polkadot SDK (Substrate) dengan ZK-SNARKs (Compact language), DUST token consensus, bridge ke Cardano mainnet; bukan sidechain tradisional tapi partner chain dengan shared security via SPO
+· Immediate Result: Roadmap privacy-preserving smart contract dipublikasikan; devnet v1 + public testnet 2024-10 (EV-024); Midnight jadi narrative emerging
+· Long-term Impact: Memperluas addressable market ke regulated finance, healthcare, identity; tapi bridge security model belum final; tambahan kompleksitas arsitektur multi-chain
+· Supporting Dataset: Phase 3 EV-018, EV-024, Phase 4 System Architecture, Phase 4 Core Components, Phase 8 Narrative Position
+
+Keputusan: Mithril mainnet — stake-based threshold multi-signatures untuk fast sync (2023-02)
+· Trigger: Daedalus full-node sync lambat (~hari); light client butuh trust-minimized bootstrap; governance tally butuh efisiensi
+· Evidence: Phase 3 EV-019; Phase 4 Core Components (Mithril); Phase 4 System Architecture (Layer 2); Phase 3 EV-020 (Lace wallet Mithril sync)
+· Decision: Deploy Mithril protocol: aggregator menghasilkan certified snapshot signed by threshold of stake; light client verify snapshot tanpa full history validation
+· Immediate Result: Daedalus/Lace fast sync enabled (menit vs hari); light client trust-minimized bootstrap; infrastructure untuk governance tally verification
+· Long-term Impact: Mithril jadi critical infrastructure untuk user onboarding (Lace) dan governance scaling; tapi aggregator saat ini IOG-operated, decentralization roadmap tidak dated
+· Supporting Dataset: Phase 3 EV-019, EV-020, Phase 4 Core Components, Phase 7 Infrastructure Providers (Mithril Network)
+
+Keputusan: Lace wallet launch — light wallet resmi IOG dengan Mithril fast sync (2023-04-19)
+· Trigger: Daedalus full-node terlalu berat untuk retail; Yoroi (Emurgo) ada tapi IOG butuh wallet sendiri untuk control UX & feature integration (Mithril, governance, NFT)
+· Evidence: Phase 3 EV-020; Phase 2 Entity (Lace Wallet); Phase 7 Wallet Ecosystem (Lace); Phase 4 Core Components (Mithril)
+· Decision: Bangun Lace dari ground-up (TypeScript/React) dengan multi-account, NFT gallery, staking dashboard, CIP-30 dApp connector, Mithril fast sync, hardware wallet support
+· Immediate Result: Wallet resmi modern dengan UX kompetitif; onboarding pengguna baru dipermudah; alternatif Daedalus untuk retail
+· Long-term Impact: Lace jadi primary interface untuk Voltaire governance (DRep registration, voting); tapi kompetisi wallet komunitas ketat (Eternl, Vespr, Typhon, Nami, Flint)
+· Supporting Dataset: Phase 3 EV-020, Phase 2 Entity, Phase 7 Wallet Ecosystem, Phase 6 Governance (DRep delegation)
+
+Keputusan: Hard fork Chang (CIP-1694) — bootstrap tata kelola konstitusional on-chain (2024-05)
+· Trigger: Voltaire era roadmap dari 2017; Catalyst terbukti scalable tapi limited ke treasury spending; butuh governance protocol parameter, hard fork initiation, constitution
+· Evidence: Phase 3 EV-022, EV-033, EV-034; Phase 4 Technical Upgrade History (Chang); Phase 6 Governance (CIP-1694); Phase 8 Narrative Position (Main Narrative)
+· Decision: Implementasi CIP-1694 via Hard Fork Combinator: Interim Constitutional Committee (9 seats), DRep registration/delegation, SPO voting, governance actions (parameter changes, treasury withdrawals, hard fork initiation, constitution ratification, CC member changes)
+· Immediate Result: Interim CC dilantik on-chain (EV-034); DRep registration dibuka; governance actions pertama diproses; Constitutional Convention Buenos Aires & Nairobi (EV-033) draft konstitusi
+· Long-term Impact: Constitution ratified by DRep vote Agustus 2024 (EV-023); era Voltaire penuh dimulai; first Layer 1 dengan constitutional governance on-chain ternary (CC, DRep, SPO); parameter changes now require constitutional compliance review
+· Supporting Dataset: Phase 3 EV-022, EV-023, EV-033, EV-034, Phase 4 Technical Upgrade History, Phase 6 Governance, Phase 8 Narrative Position
+
+Keputusan: Hydra Head protocol mainnet beta incremental releases (2024-12 ongoing)
+· Trigger: Butuh Layer 2 scaling untuk DeFi/gaming; state channel design (isomorphic) dipilih agar security = mainnet; testnet 2022 (EV-016) validasi arsitektur
+· Evidence: Phase 3 EV-025; Phase 4 Core Components (Hydra); Phase 4 System Architecture (Layer 2); Phase 4 Known Limitations (Hydra liveness requirements)
+· Decision: Release Hydra Head mainnet beta incremental (v0.15+): multi-party heads, off-chain tx processing, contestation period, fan-out settlement; Hydra node + client SDKs
+· Immediate Result: L2 state channel scaling tersedia untuk integrasi dApp; throughput horizontal scaling terbukti on-chain; adopsi awal oleh DEX & gaming dimulai
+· Long-term Impact: Hydra jadi primary L2 scaling solution Cardano; tapi liveness requirement (all parties online) & contestation period limit use cases; Leios/Peras research untuk base-layer complement
+· Supporting Dataset: Phase 3 EV-016, EV-025, Phase 4 Core Components, Phase 4 Known Limitations, Phase 8 Narrative Position
+
+---
+
+Evolution Pattern: Dari federated launch ke desentralisasi progresif konsensus lalu governance
+· Evolution: Byron (federated BFT, 2017) → Shelley (Ouroboros Praos decentralized consensus, 2020) → Voltaire (CIP-1694 constitutional governance, 2024). Setiap era via Hard Fork Combinator seamless, no chain split.
+· Evidence: Phase 3 EV-007, EV-011, EV-022; Phase 4 Technical Upgrade History; Phase 4 Core Components (Hard Fork Combinator); Phase 6 Governance
+· Supporting Dataset: Phase 3 History, Phase 4 Technology, Phase 6 Token
+
+Evolution Pattern: Dari settlement-only ke multi-asset ke smart contract ke governance-enabled
+· Evolution: CSL only (Byron-Shelley) → Native assets Mary (2021) → Plutus smart contracts Alonzo (2021) → Plutus V2 Vasil (2022) → Governance actions Chang (2024). Setiap layer tambahan fungsionalitas tanpa breaking changes.
+· Evidence: Phase 3 EV-013, EV-014, EV-017, EV-022; Phase 4 Core Components (Native Asset Ledger, Plutus Platform); Phase 4 Execution Environment
+· Supporting Dataset: Phase 3 History, Phase 4 Technology
+
+Evolution Pattern: Dari single wallet (Daedalus full-node) ke multi-wallet ecosystem dengan standar CIP-30/1852
+· Evolution: Daedalus only (2017) → Yoroi light wallet Emurgo (2018) → Nami/Eternl/Vespr/Typhon/Flint/GeroWallet community wallets (2021-2023) → Lace official light wallet IOG (2023) → Semua support CIP-30 dApp connector & CIP-1852 HD derivation
+· Evidence: Phase 3 EV-009, EV-010, EV-020; Phase 7 Wallet Ecosystem; Phase 2 Entity (Wallet entities)
+· Supporting Dataset: Phase 3 History, Phase 7 Ecosystem, Phase 2 Entity
+
+Evolution Pattern: Dari no treasury spending ke Catalyst DAO funding ke constitutional treasury governance
+· Evolution: Treasury accumulates (Shelley 2020) → Catalyst Fund 1 experimental (2020) → Fund 1-12+ >100M ADA (2023) → CIP-1694 integrates treasury withdrawals to constitutional governance actions (2024)
+· Evidence: Phase 3 EV-012, EV-021, EV-022; Phase 5 Treasury; Phase 6 Governance; Phase 6 Utility (Treasury Funding)
+· Supporting Dataset: Phase 3 History, Phase 5 Financial, Phase 6 Token
+
+Evolution Pattern: Dari single-chain ke partner chain model (Midnight) untuk privacy & specialized use cases
+· Evolution: Cardano mainnet only → Milkomeda C1 EVM sidechain (community) → Midnight partner chain (IOG, Polkadot SDK, ZK, DUST token, shared security via SPO) → Planned generic partner chain framework via CIP-1694 governance actions
+· Evidence: Phase 3 EV-018, EV-024; Phase 4 System Architecture (Partner Chain); Phase 4 Core Components (Midnight); Phase 7 Major Integrations (Milkomeda, Midnight)
+· Supporting Dataset: Phase 3 History, Phase 4 Technology, Phase 7 Ecosystem
+
+Evolution Pattern: Infrastructure maturation — dari minimal tooling ke developer stack lengkap (Aiken, MeshJS, Lucid, Helios, Blockfrost, Koios, Ogmios, Kupo)
+· Evolution: cardano-cli/Haskell only (2017-2020) → Plutus Tx/Haskell (2021) → MeshJS/Lucid TS SDKs (2022) → Aiken/Helios alternative languages (2022-2023) → Blockfrost/Koios hosted APIs + Ogmios/Kupo local stack (2021-2024) → DX comparable to EVM ecosystems (2024)
+· Evidence: Phase 3 EV-030; Phase 4 Development Framework; Phase 7 Infrastructure Providers; Phase 7 Developer Ecosystem
+· Supporting Dataset: Phase 3 History, Phase 4 Technology, Phase 7 Ecosystem
+
+---
+
+Pola 1: Academic Research First — protokol tidak diimplementasikan sebelum formal specification & peer-reviewed proofs selesai
+· Decision Pattern: Setiap major protocol component (Ouroboros family, Hydra, Mithril, Plutus Core, Midnight ZK) melalui siklus: research paper → formal spec (Agda/Coq) → peer review (Eurocrypt/Crypto/IEEE S&P) → prototype → testnet → mainnet via HFC
+· Evidence: Phase 4 Security Model (formal proofs UC model); Phase 4 Audit History (academic peer review ongoing); Phase 4 Official Technical Resources (IOG Research Library 100+ papers); Phase 3 EV-035 (100+ papers published)
+· Supporting Dataset: Phase 4 Technology, Phase 3 History
+
+Pola 2: Hard Fork Combinator untuk upgrade seamless tanpa chain split
+· Decision Pattern: Semua era transition (Byron→Shelley→Allegra→Mary→Alonzo→Babbage→Vasil→Chang/Conway) menggunakan Hard Fork Combinator yang menggabungkan ledger rules multiple eras; no contentious hard forks, no chain splits dalam sejarah Cardano
+· Evidence: Phase 3 EV-007, EV-011, EV-013, EV-014, EV-017, EV-022; Phase 4 Core Components (Hard Fork Combinator); Phase 4 Technical Upgrade History (10 major hard forks)
+· Supporting Dataset: Phase 3 History, Phase 4 Technology
+
+Pola 3: eUTXO model sebagai fundamental design choice — bukan account-based, bukan EVM-compatible
+· Decision Pattern: Extended UTxO model dipilih untuk deterministic fees, local transaction validation, parallelizability potential, native assets without smart contracts; trade-off: concurrency bottleneck untuk DeFi, butuh off-chain indexers, no native event/log system
+· Evidence: Phase 4 Execution Environment (eUTXO); Phase 4 Known Limitations (concurrency, no account model, no event system); Phase 3 EV-013 (Mary native assets), EV-014 (Alonzo Plutus), EV-017 (Vasil improvements)
+· Supporting Dataset: Phase 4 Technology, Phase 3 History
+
+Pola 4: Haskell/GHC sebagai single production implementation — no alternative client diversity
+· Decision Pattern: cardano-node (Haskell) sole production consensus client; alternative clients (TxPipe/Pallas Rust) experimental; Nix reproducible builds; formal spec in Agda/Coq tapi implementation single-language
+· Evidence: Phase 4 Current Technical Stack (Runtime); Phase 4 Known Limitations (single-client risk); Phase 4 Official Technical Resources (GitHub IOG cardano-node)
+· Supporting Dataset: Phase 4 Technology
+
+Pola 5: Layer 2 scaling via isomorphic state channels (Hydra) + threshold signatures (Mithril) — bukan rollup
+· Decision Pattern: Hydra Head protocol (isomorphic state channels, on-chain settlement, all-parties-online liveness) + Mithril (stake-based threshold multisig for certified snapshots) dipilih daripada rollup (ZK/optimistic); Midnight partner chain untuk ZK privacy bukan L2
+· Evidence: Phase 4 System Architecture (Layer 2); Phase 4 Core Components (Hydra, Mithril); Phase 4 Known Limitations (Hydra liveness, Mithril trust assumption); Phase 3 EV-016, EV-019, EV-025
+· Supporting Dataset: Phase 4 Technology, Phase 3 History
+
+Pola 6: Partner chain model (Midnight) untuk specialized use cases dengan shared security
+· Decision Pattern: Midnight dibangun di Polkadot SDK (Substrate) bukan native Cardano sidechain; ZK-SNARKs (Compact language), DUST token; shared security via Cardano SPO; bridge design in progress; bukan general-purpose L2 tapi purpose-built privacy chain
+· Evidence: Phase 3 EV-018, EV-024; Phase 4 System Architecture (Partner Chain); Phase 4 Core Components (Midnight); Phase 7 Major Integrations (Midnight bridge)
+· Supporting Dataset: Phase 3 History, Phase 4 Technology, Phase 7 Ecosystem
+
+---
+
+Pola 1: Public voucher sale only — no VC, no private sale, no strategic allocation
+· Decision Pattern: Satu-satunya fundraising eksternal adalah public voucher sale 16 bulan (2015-2017) via Swiss entity Attain Alternative Strategies Ltd ke pasar Asia (~$62M, ~25.9B ADA); tidak ada Series A/B, SAFT, launchpad, auction
+· Evidence: Phase 5 Funding History (ADA Voucher Sale); Phase 5 Fundraising Mechanism; Phase 6 Token Sale; Phase 3 EV-002
+· Supporting Dataset: Phase 5 Financial, Phase 6 Token, Phase 3 History
+
+Pola 2: Genesis allocation ke tiga entitas pendiri sebagai operational funding jangka panjang
+· Decision Pattern: Pada mainnet genesis, 5.18B ADA (11.5% initial supply) dialokasikan ke IOG (2.46B), Emurgo (2.07B), Cardano Foundation (648M) tanpa vesting protokol; entitas menjual secara discretionary untuk operasional
+· Evidence: Phase 5 Funding History (Genesis Allocation); Phase 6 Distribution; Phase 6 Vesting Schedule (no protocol vesting); Phase 5 Financial Dependencies (Genesis Entity Sell Pressure)
+· Supporting Dataset: Phase 5 Financial, Phase 6 Token, Phase 5 Financial Risk
+
+Pola 3: On-chain treasury funding via monetary expansion + transaction fees → Project Catalyst → CIP-1694 constitutional governance
+· Decision Pattern: Treasury accumulates dari fee + monetary expansion (Shelley 2020);

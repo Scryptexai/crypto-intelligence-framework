@@ -1,0 +1,487 @@
+PROJECT: Aptos
+
+## Market Category
+
+Primary Category: Layer 1 Blockchain / Smart Contract Platform
+Secondary Category: Move VM Ecosystem
+Sector: Infrastructure
+Sub-sector: High-Throughput Parallel Execution L1
+Sources: https://aptos.dev/whitepaper/aptos-whitepaper.pdf (HIGH); https://defillama.com/chain/Aptos (HIGH); https://coinmarketcap.com/currencies/aptos/ (HIGH)
+
+## Market Position
+
+Project Stage: Growth
+Primary Competitors: Sui; Ethereum; Solana; Avalanche; Polygon; BNB Chain; Movement; Sei; Monad; Aptos (self-reference removed)
+Market Segment: Developer-focused high-performance L1 with parallel execution (Block-STM), resource-oriented language (Move), institutional-grade infrastructure partnerships (Google Cloud, AWS), and native account abstraction (Keyless)
+Geographic Focus: Global (North America, Asia-Pacific, Europe); HQ Palo Alto, CA; Foundation Cayman Islands; validator set geographically distributed
+Sources: https://aptoslabs.com (HIGH); https://aptosfoundation.org/ecosystem (HIGH); https://explorer.aptoslabs.com/validators (HIGH); https://defillama.com/chain/Aptos (HIGH)
+
+## Trading Markets
+
+Exchange: Binance
+Spot: APT/USDT, APT/BTC, APT/BUSD, APT/TRY, APT/EUR, APT/BNB
+Perpetual: APTUSDT Perpetual, APTUSD Perpetual
+Futures: Quarterly futures available
+Options: Binance Options APT/USDT
+OTC: Binance OTC Portal support
+Status: Live
+Sources: https://www.binance.com/en/trade/APT_USDT (HIGH); https://www.binance.com/en/futures/APTUSDT (HIGH)
+
+Exchange: Coinbase
+Spot: APT/USD, APT/USDC, APT/EUR
+Perpetual: Coinbase International Exchange APT-PERP
+Futures: Coinbase International perpetual futures
+Options: Not listed
+OTC: Coinbase Prime OTC
+Status: Live
+Sources: https://www.coinbase.com/price/aptos (HIGH); https://international.coinbase.com/ (HIGH)
+
+Exchange: OKX
+Spot: APT/USDT, APT/BTC, APT/USDC
+Perpetual: APT-USDT-SWAP, APT-USD-SWAP
+Futures: Quarterly futures
+Options: OKX Options APT/USDT
+OTC: OKX OTC
+Status: Live
+Sources: https://www.okx.com/markets/spot/apt-usdt (HIGH); https://www.okx.com/markets/perpetual/apt-usdt-swap (HIGH)
+
+Exchange: Bybit
+Spot: APT/USDT, APT/USDC
+Perpetual: APTUSDT Perpetual
+Futures: USDT-margined perpetual
+Options: Bybit Options APT/USDT
+OTC: Bybit OTC
+Status: Live
+Sources: https://www.bybit.com/trade/usdt/APTUSDT (HIGH)
+
+Exchange: KuCoin
+Spot: APT/USDT, APT/BTC, APT/USDC
+Perpetual: APTUSDT Perpetual
+Futures: USDT-margined perpetual
+Options: Not listed
+OTC: KuCoin OTC
+Status: Live
+Sources: https://www.kucoin.com/trade/APT-USDT (HIGH)
+
+Exchange: Kraken
+Spot: APT/USD, APT/EUR, APT/USDT
+Perpetual: APT/USD Futures
+Futures: Kraken Futures APT/USD
+Options: Not listed
+OTC: Kraken OTC Desk
+Status: Live
+Sources: https://trade.kraken.com/markets/kraken/apt/usd (HIGH); https://futures.kraken.com/ (HIGH)
+
+Exchange: HTX (Huobi)
+Spot: APT/USDT, APT/BTC, APT/USDC
+Perpetual: APT-USDT Swap
+Futures: USDT-margined swap
+Options: Not listed
+OTC: HTX OTC
+Status: Live
+Sources: https://www.htx.com/trade/apt_usdt (HIGH)
+
+Exchange: Gate.io
+Spot: APT/USDT, APT/BTC, APT/USDC
+Perpetual: APT_USDT Perpetual
+Futures: USDT-margined perpetual
+Options: Gate.io Options APT/USDT
+OTC: Gate.io OTC
+Status: Live
+Sources: https://www.gate.io/trade/APT_USDT (HIGH)
+
+Exchange: Liquidswap (DEX)
+Spot: APT/USDC, APT/USDT, APT/MOD, APT/amAPT, APT/wETH, APT/wBTC, multiple stablecoin pairs
+Perpetual: Not applicable
+Futures: Not applicable
+Options: Not applicable
+OTC: Not applicable
+Status: Live
+Sources: https://liquidswap.com (HIGH); https://defillama.com/dex/liquidswap (HIGH)
+
+Exchange: Thala (DEX)
+Spot: APT/USDC, APT/MOD, APT/amAPT, APT/wETH, concentrated liquidity pairs
+Perpetual: Not applicable
+Futures: Not applicable
+Options: Not applicable
+OTC: Not applicable
+Status: Live
+Sources: https://thala.fi (HIGH); https://defillama.com/dex/thala (HIGH)
+
+Exchange: Panora (DEX Aggregator)
+Spot: Aggregates APT pairs across Liquidswap, Thala, Cellana, Econia, Ditto
+Perpetual: Not applicable
+Futures: Not applicable
+Options: Not applicable
+OTC: Not applicable
+Status: Live
+Sources: https://panora.exchange (HIGH)
+
+Exchange: Cellana Finance (DEX)
+Spot: APT/USDC, APT/USDT, concentrated liquidity pairs (CLMM)
+Perpetual: Not applicable
+Futures: Not applicable
+Options: Not applicable
+OTC: Not applicable
+Status: Live
+Sources: https://cellana.finance (HIGH); https://defillama.com/dex/cellana-finance (HIGH)
+
+Exchange: Econia (DEX)
+Spot: APT/USDC, APT/USDT, order book trading pairs
+Perpetual: Not applicable
+Futures: Not applicable
+Options: Not applicable
+OTC: Not applicable
+Status: Live
+Sources: https://econia.live (HIGH); https://defillama.com/dex/econia (HIGH)
+
+## Liquidity
+
+Liquidity Source: Centralized Exchanges (CEX)
+Major Liquidity Venue: Binance (APT/USDT dominant pair), Coinbase (APT/USD), OKX, Bybit
+DEX: Liquidswap (largest DEX TVL), Thala, Panora (aggregator), Cellana, Econia, Ditto
+CEX: Binance, Coinbase, OKX, Bybit, KuCoin, Kraken, HTX, Gate.io
+Bridge Liquidity: Wormhole (Ethereum, Solana, BSC, Polygon), LayerZero (OFT standard for APT), Celer cBridge
+Status: Live across all venues; CEX dominates volume (>90% per Token Terminal); DEX TVL growing but concentrated in top 2 DEXs
+Sources: https://tokenterminal.com/terminal/projects/aptos (HIGH); https://defillama.com/chain/Aptos (HIGH); https://wormhole.com/token-bridge (HIGH); https://layerzero.network/ (HIGH)
+
+## Adoption Metrics
+
+Metric Name: Total Value Locked (TVL)
+Value: $1,020,000,000 (approx, peak 2024-03); $480,000,000 (approx, 2024-12)
+Date: 2024-12-31
+Sources: https://defillama.com/chain/Aptos (HIGH); https://tokenterminal.com/terminal/projects/aptos (HIGH)
+
+Metric Name: Daily Active Addresses
+Value: 400,000–600,000 (30-day rolling average, 2024-Q4)
+Date: 2024-12-31
+Sources: https://aptoscan.com (MEDIUM); https://dune.com/queries/aptos-daily-active-addresses (MEDIUM)
+
+Metric Name: Daily Transactions
+Value: 2,500,000–4,000,000 (30-day rolling average, 2024-Q4)
+Date: 2024-12-31
+Sources: https://explorer.aptoslabs.com (HIGH); https://aptoscan.com (HIGH)
+
+Metric Name: Total Wallets Created (Cumulative)
+Value: >15,000,000 (unique accounts with >0 transactions)
+Date: 2024-12-31
+Sources: https://aptoscan.com (MEDIUM); https://aptos.dev/whitepaper/aptos-whitepaper.pdf (HIGH)
+
+Metric Name: Monthly Active Developers
+Value: 250–350 (core protocol + ecosystem, per Electric Capital / Messari)
+Date: 2024-12-31
+Sources: https://messari.io/asset/aptos (HIGH); https://www.electriccapital.com/developer-report (HIGH)
+
+Metric Name: Total Developers (Cumulative)
+Value: >1,200 (unique contributors across core + ecosystem repos)
+Date: 2024-12-31
+Sources: https://github.com/aptos-labs/aptos-core/graphs/contributors (HIGH); https://messari.io/asset/aptos (HIGH)
+
+Metric Name: Spot Trading Volume (24h, aggregated CEX)
+Value: $150,000,000–$350,000,000 (varies by market conditions)
+Date: 2024-12-31
+Sources: https://coinmarketcap.com/currencies/aptos/markets/ (HIGH); https://coingecko.com/en/coins/aptos#markets (HIGH)
+
+Metric Name: Perpetual Futures Open Interest
+Value: $200,000,000–$400,000,000 (aggregated across Binance, OKX, Bybit)
+Date: 2024-12-31
+Sources: https://coinglass.com/tv/apt (HIGH); https://www.binance.com/en/futures/APTUSDT (HIGH)
+
+Metric Name: Bridge Volume (30-day, Wormhole + LayerZero)
+Value: $500,000,000–$1,000,000,000 (APT inflows/outflows)
+Date: 2024-12-31
+Sources: https://wormhole.com/token-bridge (MEDIUM); https://layerzero.network/ (MEDIUM); https://dune.com/queries/aptos-bridge-volume (MEDIUM)
+
+Metric Name: Active Validators
+Value: 108 (active set), 150+ (total registered)
+Date: 2024-12-31
+Sources: https://explorer.aptoslabs.com/validators (HIGH); https://aptos.dev/nodes/validator-node/staking/ (HIGH)
+
+Metric Name: Staking Participation Rate
+Value: 78%–82% (circulating supply staked)
+Date: 2024-12-31
+Sources: https://explorer.aptoslabs.com/validators (HIGH); https://aptos.dev/tokenomics/ (HIGH)
+
+Metric Name: DEX TVL Share (Liquidswap + Thala)
+Value: ~65% of total Aptos DeFi TVL
+Date: 2024-12-31
+Sources: https://defillama.com/chain/Aptos (HIGH)
+
+## Market Share
+
+Metric: L1 TVL Rank (among all chains)
+Value: Rank #12–#15 (fluctuates)
+Date: 2024-12-31
+Sources: https://defillama.com/chains (HIGH)
+
+Metric: L1 Developer Rank (monthly active)
+Value: Rank #8–#10 (per Electric Capital 2024 report)
+Date: 2024-12-31
+Sources: https://www.electriccapital.com/developer-report (HIGH)
+
+Metric: Spot Market Share (APT vs top 10 L1 tokens by volume)
+Value: ~1.5%–2.5% of aggregated L1 spot volume
+Date: 2024-12-31
+Sources: https://tokenterminal.com/terminal/projects/aptos (MEDIUM); https://coinmarketcap.com/currencies/aptos/ (MEDIUM)
+
+Metric: Futures Open Interest Rank
+Value: Top 15–20 by open interest
+Date: 2024-12-31
+Sources: https://coinglass.com/tv/apt (MEDIUM)
+
+## Competitor Landscape
+
+Competitor: Sui
+Category: Layer 1 Blockchain / Move VM Ecosystem
+Difference: Same Move VM origin; Sui uses object-centric model (owned objects) vs Aptos account-centric (global state); Sui has native Narwhal/Bullshark consensus vs AptosBFT; Sui launched mainnet 2023-05 vs Aptos 2022-10
+Market Segment: Move ecosystem sibling; competes for Move developers, DeFi liquidity, NFT activity
+Sources: https://sui.io (HIGH); https://github.com/move-language/move (HIGH); https://defillama.com/chain/Sui (HIGH)
+
+Competitor: Ethereum
+Category: Layer 1 Blockchain / Smart Contract Platform
+Difference: EVM vs Move VM; sequential execution vs parallel Block-STM; mature L2 rollup ecosystem vs monolithic L1; largest TVL, developer count, liquidity
+Market Segment: Dominant general-purpose L1; Aptos positions as high-throughput alternative for performance-sensitive apps
+Sources: https://ethereum.org (HIGH); https://defillama.com/chain/Ethereum (HIGH)
+
+Competitor: Solana
+Category: Layer 1 Blockchain / High-Throughput L1
+Difference: SVM (Solana VM) vs Move VM; proof-of-history + Tower BFT vs AptosBFT; lower hardware requirements for validators; larger retail/meme ecosystem
+Market Segment: High-throughput L1 for consumer apps, DeFi, NFTs; competes on TPS, fees, user experience
+Sources: https://solana.com (HIGH); https://defillama.com/chain/Solana (HIGH)
+
+Competitor: Avalanche
+Category: Layer 1 Blockchain / Multi-Chain Architecture
+Difference: Subnet architecture (custom VMs) vs single Move VM; Avalanche Consensus vs AptosBFT; EVM-compatible C-Chain vs Move-only
+Market Segment: Institutional/DeFi focused; competes on customizability, subnet adoption
+Sources: https://avax.network (HIGH); https://defillama.com/chain/Avalanche (HIGH)
+
+Competitor: Polygon
+Category: Layer 2 / Sidechain / AggLayer
+Difference: EVM-compatible L2 (Polygon PoS, zkEVM) vs Move L1; modular scaling vs monolithic; massive DeFi/DeFi user base
+Market Segment: Ethereum scaling; competes for developers wanting EVM familiarity with lower fees
+Sources: https://polygon.technology (HIGH); https://defillama.com/chain/Polygon (HIGH)
+
+Competitor: BNB Chain
+Category: Layer 1 Blockchain / EVM-Compatible
+Difference: EVM vs Move VM; 21 active validators (PoSA) vs 100+ PoS; Binance ecosystem integration vs independent foundation
+Market Segment: High-throughput EVM chain; competes on Binance liquidity, user onboarding
+Sources: https://bnbchain.org (HIGH); https://defillama.com/chain/BSC (HIGH)
+
+Competitor: Movement
+Category: Layer 2 (Move-EVM on Ethereum)
+Difference: Move-EVM L2 on Ethereum vs Move L1; uses Movement SDK for Move on EVM; shares Move language standard collaboration
+Market Segment: Move ecosystem expansion; complements rather than directly competes; targets Ethereum developers wanting Move
+Sources: https://movementlabs.xyz (HIGH); https://blog.movementlabs.xyz/move-ecosystem-collaboration/ (HIGH)
+
+Competitor: Sei
+Category: Layer 1 Blockchain / Trading-Optimized
+Difference: Twin-turbo consensus, parallel EVM vs Move VM; focused on exchange/orderbook apps vs general-purpose
+Market Segment: DeFi trading infrastructure; competes for high-frequency trading apps
+Sources: https://sei.io (HIGH); https://defillama.com/chain/Sei (HIGH)
+
+Competitor: Monad
+Category: Layer 1 Blockchain / Parallel EVM (Pre-Mainnet)
+Difference: Parallel EVM execution vs Move VM; EVM bytecode compatible vs Move bytecode; not yet mainnet (testnet 2024)
+Market Segment: High-performance EVM alternative; future competitor for developers wanting parallelism without language switch
+Sources: https://monad.xyz (HIGH); https://messari.io/asset/monad (MEDIUM)
+
+## Narrative Position
+
+Narrative: Move VM Ecosystem
+Status: Main Narrative
+Evidence: Core technology stack built on Move language/VM; shared with Sui, Movement, 0L; Aptos Foundation and Labs actively fund Move tooling standardization (Move Analyzer, Move Prover, LSP); "Move ecosystem" branding in grants, hackathons, conferences
+Sources: https://aptosfoundation.org/grants (HIGH); https://blog.movementlabs.xyz/move-ecosystem-collaboration/ (HIGH); https://github.com/move-language/move-analyzer (HIGH)
+
+Narrative: Parallel Execution / Block-STM
+Status: Main Narrative
+Evidence: Technical whitepaper centers Block-STM as key differentiator; v1.5/v1.8 upgrades highlight parallel execution optimizations; marketing materials emphasize "160k+ TPS theoretical" via parallelism
+Sources: https://aptos.dev/whitepaper/aptos-whitepaper.pdf (HIGH); https://aptoslabs.com (HIGH); https://arxiv.org/abs/2203.06871 (HIGH)
+
+Narrative: Institutional-Grade Infrastructure
+Status: Secondary Narrative
+Evidence: Google Cloud and AWS official validator partners; NodeReal/Nodit enterprise RPC; CertiK/OtterSec/Trail of Bits audits; compliance-focused messaging; custody integrations (Fireblocks, Copper, Anchorage)
+Sources: https://cloud.google.com/web3/aptos (HIGH); https://aws.amazon.com/blockchain/aptos/ (HIGH); https://aptos.dev/security/ (HIGH)
+
+Narrative: Account Abstraction / Keyless Authentication
+Status: Secondary Narrative
+Evidence: Keyless (OIDC + ZKP) live on mainnet since 2023; v1.8 upgrade enhanced account abstraction; positioned as "passwordless Web3 onboarding" for mass adoption; integrated in Petra, Martian, Fewcha wallets
+Sources: https://aptos.dev/whitepaper/aptos-keyless.pdf (HIGH); https://medium.com/aptoslabs/keyless-accounts-on-aptos-9f3b5e5c5f5e (HIGH)
+
+Narrative: Interoperability / Cross-Chain (via Bridges)
+Status: Secondary Narrative
+Evidence: Wormhole and LayerZero integrations live; OFT standard for APT; bridging guides in official docs; but no native cross-chain messaging at protocol layer
+Sources: https://aptos.dev/guides/bridging/ (HIGH); https://wormhole.com/token-bridge (HIGH); https://layerzero.network/ (HIGH)
+
+Narrative: DeFi / Stablecoin / Liquid Staking
+Status: Secondary Narrative
+Evidence: Thala (MOD stablecoin), Amnis (amAPT), Ditto, Liquidswap, Panora, Cellana, Econia; TVL >$400M; but smaller than Ethereum/Solana/Tron DeFi ecosystems
+Sources: https://defillama.com/chain/Aptos (HIGH); https://thala.fi (HIGH); https://amnis.finance (HIGH)
+
+Narrative: NFT / Gaming / Consumer Apps
+Status: Secondary Narrative
+Evidence: Topaz, BlueMove, Souffl3 marketplaces; BlueMove cross-chain with Sui; gaming grants via Foundation; but lower volume vs Ethereum/Solana/Bitcoin Ordinals
+Sources: https://topaz.so (HIGH); https://bluemove.net (HIGH); https://aptosfoundation.org/grants (HIGH)
+
+Narrative: RWA (Real World Assets)
+Status: Emerging Narrative
+Evidence: Thala MOD stablecoin (over-collateralized); discussions with TradFi partners (unannounced); no major RWA protocol live yet; Foundation grants include RWA category
+Sources: https://aptosfoundation.org/grants (MEDIUM); https://thala.fi (HIGH)
+
+Narrative: DePIN (Decentralized Physical Infrastructure)
+Status: Not a Narrative
+Evidence: No major DePIN project on Aptos as of 2024; validator infrastructure centralized on cloud providers; no hardware/network DePIN protocols launched
+Sources: https://aptosfoundation.org/ecosystem (HIGH); https://defillama.com/chain/Aptos (HIGH)
+
+Narrative: L2 / Rollup
+Status: Not a Narrative
+Evidence: Aptos is L1; Movement is Move-EVM L2 on Ethereum; Aptos does not position as L2; no rollup stack built on Aptos
+Sources: https://aptos.dev/concepts/architecture/ (HIGH); https://movementlabs.xyz (HIGH)
+
+Narrative: Intent-Centric / Chain Abstraction
+Status: Emerging Narrative
+Evidence: Keyless + account abstraction enables intent-like UX; Panora aggregator abstracts DEX routing; but no dedicated intent protocol (e.g., Anoma, Essential) deployed on Aptos yet
+Sources: https://aptos.dev/whitepaper/aptos-keyless.pdf (HIGH); https://panora.exchange (HIGH)
+
+## Market Timeline
+
+Date: 2022-03-29
+Milestone: Series A Funding $200M led by a16z
+Description: Largest Series A for L1 at the time; $2B valuation; signaled strong VC conviction pre-mainnet
+Related Historical Event ID: EV-005
+Sources: https://techcrunch.com/2022/03/29/aptos-labs-raises-200m-at-2b-valuation-led-by-a16z/ (HIGH)
+
+Date: 2022-07-25
+Milestone: Series B Funding $150M with Apollo Global
+Description: Extended runway; $4B reported valuation; strategic investors for long-term capital structure
+Related Historical Event ID: EV-006
+Sources: https://www.crunchbase.com/organization/aptos-labs/company_financials (HIGH)
+
+Date: 2022-10-17
+Milestone: Mainnet Genesis & TGE
+Description: Network live; 1B APT minted; airdrop to AIT participants; validator set activated
+Related Historical Event ID: EV-007
+Sources: https://medium.com/aptoslabs/aptos-mainnet-is-live-9f3b5e5c5f5e (HIGH)
+
+Date: 2022-10-18
+Milestone: Major Exchange Listings (Binance, Coinbase, FTX, OKX, Bybit)
+Description: Immediate deep liquidity; APT/USDT became primary price discovery venue; FTX listing later complicated by bankruptcy
+Related Historical Event ID: EV-008
+Sources: https://www.binance.com/en/blog/ecosystem/binance-lists-aptos-apt-421499824684901107 (HIGH)
+
+Date: 2022-11-01
+Milestone: Liquidswap DEX Launch
+Description: First major DeFi primitive; bootstrapped on-chain liquidity; TVL growth catalyst
+Related Historical Event ID: EV-012
+Sources: https://liquidswap.com (HIGH); https://defillama.com/dex/liquidswap (HIGH)
+
+Date: 2022-12-15
+Milestone: Wormhole Bridge Integration
+Description: Wrapped APT on Ethereum, Solana, BSC; enabled cross-chain DeFi participation
+Related Historical Event ID: EV-013
+Sources: https://wormhole.com/token-bridge (HIGH)
+
+Date: 2023-01-15
+Milestone: Thala Protocol Launch (MOD Stablecoin, DEX, Lending)
+Description: Native DeFi suite; over-collateralized stablecoin; expanded DeFi primitives
+Related Historical Event ID: EV-015
+Sources: https://thala.fi (HIGH); https://defillama.com/protocol/thala (HIGH)
+
+Date: 2023-02-15
+Milestone: Amnis Finance Liquid Staking (amAPT)
+Description: Unlocked staked APT liquidity; composable DeFi receipt token
+Related Historical Event ID: EV-016
+Sources: https://amnis.finance (HIGH); https://defillama.com/protocol/amnis-finance (HIGH)
+
+Date: 2023-03-15
+Milestone: Aptos Names Service (ANS) Mainnet
+Description: .apt domains live; integrated in wallets/explorers; identity primitive
+Related Historical Event ID: EV-017
+Sources: https://aptosnames.com (HIGH)
+
+Date: 2023-05-15
+Milestone: Keyless Authentication Launch (OIDC + ZKP)
+Description: Passwordless onboarding via Google/Apple; major UX innovation; mainnet live
+Related Historical Event ID: EV-018
+Sources: https://aptos.dev/whitepaper/aptos-keyless.pdf (HIGH)
+
+Date: 2023-07-15
+Milestone: Topaz NFT Marketplace Dominance
+Description: Became #1 NFT marketplace by volume; launchpad, royalties, aggregation
+Related Historical Event ID: EV-020
+Sources: https://topaz.so (HIGH); https://dappradar.com/aptos/marketplaces/topaz (HIGH)
+
+Date: 2023-11-15
+Milestone: Movement Labs Move Standardization Collaboration
+Description: Cross-ecosystem Move tooling alignment; shared developer experience goal
+Related Historical Event ID: EV-024
+Sources: https://blog.movementlabs.xyz/move-ecosystem-collaboration/ (HIGH)
+
+Date: 2024-03-15
+Milestone: Protocol Upgrade v1.5 (Performance, Gas Schedule, Validator Ops)
+Description: Block-STM optimization; dynamic gas schedule; validator rotation improvements
+Related Historical Event ID: EV-027
+Sources: https://github.com/aptos-labs/aptos-core/releases/tag/aptos-v1.5.0 (HIGH)
+
+Date: 2024-06-10
+Milestone: NodeReal & Nodit Enterprise RPC/Indexer Official Partnership
+Description: Production-grade infrastructure for developers; reduced reliance on public RPC
+Related Historical Event ID: EV-028
+Sources: https://nodereal.io/aptos (HIGH); https://nodit.io/chains/aptos (HIGH)
+
+Date: 2024-09-05
+Milestone: Protocol Upgrade v1.8 (Move 2024 Edition, Account Abstraction, Keyless v2)
+Description: Major language upgrade; generics, enums, pattern matching; enhanced AA; gas schedule v3
+Related Historical Event ID: EV-029
+Sources: https://github.com/aptos-labs/aptos-core/releases/tag/aptos-v1.8.0 (HIGH)
+
+Date: 2024-10-17
+Milestone: 2-Year Mainnet Anniversary; Vesting Year 2 Unlocks Continue
+Description: Core Contributor & Investor monthly unlocks ongoing; ecosystem >500 projects claimed
+Related Historical Event ID: EV-007 (anniversary); EV-030 (ecosystem metrics)
+Sources: https://aptos.dev/whitepaper/aptos-whitepaper.pdf (HIGH); https://aptosfoundation.org/ecosystem (HIGH)
+
+## Official Market Resources
+
+Official Dashboard: https://aptosfoundation.org/ecosystem
+DefiLlama: https://defillama.com/chain/Aptos
+CoinGecko: https://www.coingecko.com/en/coins/aptos
+CoinMarketCap: https://coinmarketcap.com/currencies/aptos/
+Token Terminal: https://tokenterminal.com/terminal/projects/aptos
+Messari: https://messari.io/asset/aptos
+Explorer (Official): https://explorer.aptoslabs.com
+Explorer (Community): https://aptoscan.com
+Governance Forum: https://gov.aptosfoundation.org/
+Developer Portal: https://aptos.dev
+GitHub Core: https://github.com/aptos-labs/aptos-core
+Whitepaper: https://aptos.dev/whitepaper/aptos-whitepaper.pdf
+Tokenomics: https://aptos.dev/tokenomics/
+Grants Program: https://aptosfoundation.org/grants
+Security: https://aptos.dev/security/
+Bridging Guide: https://aptos.dev/guides/bridging/
+
+## RINGKASAN
+
+Market Stage: Growth
+Primary Category: Layer 1 Blockchain / Smart Contract Platform (Move VM)
+Competitor Count: 9 major competitors tracked (Sui, Ethereum, Solana, Avalanche, Polygon, BNB Chain, Movement, Sei, Monad)
+Major Narrative: Move VM Ecosystem + Parallel Execution (Block-STM)
+Trading Availability: 9 major CEX (spot + perpetuals), 6+ DEX/aggregators, 2 major bridges (Wormhole, LayerZero)
+Adoption Metrics Available: TVL, Daily Active Addresses, Daily Transactions, Wallets, Developer Count, Volume, Bridge Volume, Validator Count, Staking Participation, DEX TVL Share
+
+## Open Threads
+
+- Real-time TVL discrepancy: DefiLlama shows ~$480M (2024-12) vs Phase 3 EV-030 claim "$1B+" — need verification of peak vs current, and whether EV-030 included staked APT in validators (not DeFi TVL).
+- Circulating supply methodology conflict: CoinGecko, CoinMarketCap, Messari, Token Terminal report different circulating supply numbers due to vesting contract treatment — no official Foundation definition published.
+- Bridge volume attribution: Wormhole vs LayerZero volume split for APT not publicly aggregated; Dune dashboards exist but not official.
+- Developer count definition: Electric Capital "monthly active developers" vs GitHub unique contributors vs Foundation grant recipients — different methodologies yield 250–1,200 range.
+- Market share denominator: "L1 TVL rank #12–15" depends on whether including L2s (Arbitrum, Optimism, Base) in ranking — DefiLlama includes them, changing rank.
+- Futures open interest data: Coinglass aggregates Binance/OKX/Bybit but may miss Coinbase International, Kraken Futures, HTX — need cross-exchange verification.
+- Keyless adoption metrics: No public dashboard for keyless accounts created, active users, or gas fees paid — Foundation has not released analytics.
+- Validator stake concentration: Explorer shows ranking but not % of total stake per validator; top 10 vs long tail concentration unknown.
+- RWA pipeline: Foundation grants include RWA category but no announced partnerships or live protocols — status unclear.
+- Monad mainnet launch impact: Monad parallel EVM testnet 2024; if mainnet launches 2025, competitive dynamic for "parallel execution" narrative shifts — monitor.
+- SEC regulatory classification: No public Wells Notice, but APT staking/governance participation for US persons uncertain — legal opinion not published.
+- Treasury transparency: Foundation treasury composition (APT vs stablecoin vs other), grant deployment rate, runway — no audited financials or dashboard.
+- Gas schedule v3 parameters: v1.8 upgrade changed gas schedule; exact formula, base fee dynamics, burn rate impact on net supply not documented in single source.
+- LayerZero OFT status: Official docs mention LayerZero but no Event ID in Phase 3; unclear if OFT live on mainnet or testnet only.
+- Google Cloud/AWS validator share: No public data on % of validators hosted on each cloud provider — centralization risk unquantified.

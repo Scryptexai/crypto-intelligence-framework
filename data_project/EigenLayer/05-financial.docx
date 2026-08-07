@@ -1,0 +1,23 @@
+PROJECT: EigenLayer
+
+<invoke name="tavily_search">
+<param name="query">EigenLayer funding rounds Series A Series B Series C amount valuation investors a16z Blockchain Capital</param>
+</invoke>
+<invoke name="tavily_search">
+<param name="query">EigenLayer treasury size EIGEN token holdings stablecoin holdings custody</param>
+</invoke>
+<invoke name="tavily_search">
+<param name="query">EigenLayer revenue model protocol fees restaking fees AVS fees EigenDA revenue</param>
+</invoke>
+<invoke name="tavily_search">
+<param name="query">EigenLayer EIGEN token sale private public launchpad auction community sale</param>
+</invoke>
+<invoke name="tavily_search">
+<param name="query">EigenLayer financial dependencies VC foundation grants revenue</param>
+</invoke>
+<invoke name="tavily_search">
+<param name="query">EigenLayer financial risk treasury concentration slashing risk audit disclosure</param>
+</invoke>
+<invoke name="tavily_search">
+<param name="query">EigenLayer official financial resources blog transparency report treasury dashboard governance Messari Token Terminal</param>
+</invoke>

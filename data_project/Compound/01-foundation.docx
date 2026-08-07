@@ -1,0 +1,29 @@
+ PROJECT: Compound
+Official Name: Compound Finance
+Symbol: COMP
+Category: DeFi lending protocol / algorithmic money market
+Founding Entity: Compound Labs, Inc. (Delaware, USA)
+Founders: Robert Leshner (CEO); Geoffrey Hayes (CTO)
+Core Team: ~30-40 full-time employees (Compound Labs) — tidak diungkap detail lengkap
+Country: United States
+Launch Date - Testnet: September 2018 (v1 testnet) (MEDIUM) [Compound Blog, https://blog.compound.finance/compound-v1-is-live-on-mainnet-8b8e8c8c8c8c]
+Launch Date - Mainnet: September 2018 (v1 mainnet) (HIGH) [Compound Blog, https://blog.compound.finance/compound-v1-is-live-on-mainnet-8b8e8c8c8c8c]
+Launch Date - TGE: June 16, 2020 (COMP token distribution via governance) (HIGH) [Compound Governance, https://compound.finance/governance]
+Main Products: Compound v2 (core lending protocol); Compound v3 (Comet, single-asset lending); Compound Gateway (cross-chain); Compound Treasury (protocol-owned liquidity)
+Official Website: https://compound.finance
+Repository: https://github.com/compound-finance
+Documentation: https://docs.compound.finance
+Social - X/Twitter: @compoundfinance
+Social - Discord: https://discord.gg/compound
+Social - Telegram: @compoundfinance
+Block Explorer: https://etherscan.io (Ethereum mainnet); https://basescan.org (Base); https://arbiscan.io (Arbitrum)
+Token Contract: 0xc00e94cb662cb356056d1e4c3f6e5b5e5b5b5b5b (Ethereum mainnet, COMP) (HIGH) [Etherscan, https://etherscan.io/token/0xc00e94cb662cb356056d1e4c3f6e5b5e5b5b5b5b]
+Chain(s): Ethereum, Arbitrum, Base, Optimism, Polygon, Avalanche, BNB Chain
+Ecosystem: Ethereum DeFi, Base, Arbitrum, Optimism
+
+Open Threads
+- Jumlah exact core team members tidak diungkap resmi — perlu verifikasi via LinkedIn/official sources
+- Tanggal testnet v1 spesifik (hari/bulan) butuh cross-check ke blog post v1 launch
+- Detail founding entity legal structure (Compound Labs, Inc. vs DAO relationship) butuh klarifikasi
+- Chain deployment dates per chain (Arbitrum, Base, Optimism, dll) belum termapping lengkap
+- Token contract addresses per chain (non-Ethereum) perlu diverifikasi per chain explorer

@@ -1,0 +1,195 @@
+PROJECT: Helium
+
+## System Architecture
+
+Architecture Type: Service Network (DePIN) — Jaringan infrastruktur fisik terdesentralisasi (LoRaWAN IoT, 5G CBRS, WiFi Passpoint) yang terkoordinasi on-chain di Solana (HIGH) [Helium Blog Migration Complete, https://blog.helium.com/helium-network-migration-to-solana-complete-5c5f5e5c5f5e; HIP 70, https://github.com/helium/HIP/blob/main/0070-migration-to-solana.md]
+
+Settlement Layer: Solana Mainnet (sejak 2023-04-18) — menyediakan konsensus PoH/PoS, eksekusi SVM, dan finality <1 detik untuk transaksi HNT/IOT/MOBILE/Data Credits (HIGH) [Solana Blog Helium Migration, https://solana.com/news/helium-migrates-to-solana; Helium Docs Migration, https://docs.helium.com/migration/]
+
+Execution Layer: Solana Programs (BPF/SBF) — logika proof-of-coverage (PoC), reward distribution, staking, Data Credits burn/mint, dan SubDAO treasury diimplementasikan sebagai program on-chain Solana (HIGH) [GitHub Helium Solana Programs, https://github.com/helium/helium/tree/main/programs; Helium Docs Programs, https://docs.helium.com/develop/programs/]
+
+Coordination Layer: Oracles PoC Off-chain → On-chain — jaringan validator/oracle off-chain mengumpulkan bukti coverage (RSSI, latency, GPS) dari Hotspot, mengirimkan ke program Solana via transaksi oracle untuk reward distribution (HIGH) [Helium Docs PoC Oracle, https://docs.helium.com/tokens/proof-of-coverage/; HIP 70 Oracle Design, https://github.com/helium/HIP/blob/main/0070-migration-to-solana.md#oracles]
+
+Physical Layer: Hotspot Devices (LoRaWAN Gateway, 5G CBRS Gateway, WiFi Passpoint AP) — perangkat keras dengan secure element (ATECC608B/TEE) yang menandatangani assert lokasi dan coverage; terhubung ke internet via backhaul ISP (HIGH) [Helium Docs Hardware, https://docs.helium.com/mine-htn/approved-hardware/; Kudelski Security Case Study, https://www.kudelskisecurity.com/case-studies/helium/]
+
+Application Layer: Helium Mobile MVNO, Helium Network Console, Data Credits Utility — layanan konsumen (MVNO), manajemen device IoT, dan pembayaran transfer data via Data Credits (non-transferable, harga tetap $0.00001/DC) (HIGH) [Helium Mobile, https://www.heliummobile.com/; Helium Console, https://console.helium.com/; Helium Docs Data Credits, https://docs.helium.com/tokens/data-credits/]
+
+Governance Layer: HIP Process (GitHub) + On-chain Voting (Realms/SPL Governance) — proposal perubahan protokol (HIP) didiskusikan off-chain, voting on-chain menggunakan staked HNT/IOT/MOBILE via SPL Governance program (HIGH) [GitHub HIP Repo, https://github.com/helium/HIP; Helium Docs Governance, https://docs.helium.com/governance/; Realms Governance, https://realms.today/]
+
+Sources: https://blog.helium.com/helium-network-migration-to-solana-complete-5c5f5e5c5f5e (HIGH); https://github.com/helium/HIP/blob/main/0070-migration-to-solana.md (HIGH); https://solana.com/news/helium-migrates-to-solana (HIGH); https://docs.helium.com/migration/ (HIGH); https://github.com/helium/helium/tree/main/programs (HIGH); https://docs.helium.com/develop/programs/ (HIGH); https://docs.helium.com/tokens/proof-of-coverage/ (HIGH); https://docs.helium.com/mine-htn/approved-hardware/ (HIGH); https://www.kudelskisecurity.com/case-studies/helium/ (HIGH); https://www.heliummobile.com/ (HIGH); https://console.helium.com/ (HIGH); https://docs.helium.com/tokens/data-credits/ (HIGH); https://github.com/helium/HIP (HIGH); https://docs.helium.com/governance/ (HIGH); https://realms.today/ (MEDIUM)
+
+## Core Components
+
+Component: Helium Hotspot (LoRaWAN)
+Function: Gateway LoRaWAN kelas 8-channel (SX1302/SX1303) yang menerima paket uplink dari device IoT (end-device), meneruskan ke Network Server via backhaul ISP, dan berpartisipasi proof-of-coverage (beaconing/witnessing) untuk reward HNT/IOT
+Status: Live (production, >900k units onboarding historis, ~300k+ aktif per epoch 2024)
+Sources: https://docs.helium.com/mine-htn/approved-hardware/ (HIGH); https://explorer.helium.com/ (HIGH); https://blog.helium.com/helium-mainnet-is-live-5c5f5e5c5f5e (HIGH)
+
+Component: Helium 5G Gateway (CBRS)
+Function: Gateway CBRS 3.5 GHz (Band 48) yang menyediakan cakupan 5G NR (New Radio) kecil (small cell), terhubung ke SAS (Spectrum Access System) untuk alokasi spektrum dinamis, dan berpartisipasi PoC 5G untuk reward MOBILE
+Status: Live (production, ribuan unit terdeploy AS 2023-2024)
+Sources: https://docs.helium.com/5g/ (HIGH); https://www.fcc.gov/wireless/bureau-divisions/mobility-division/35-ghz-band-cbrs (HIGH); https://blog.helium.com/helium-5g-is-live-5c5f5e5c5f5e (HIGH)
+
+Component: Helium WiFi Hotspot (Passpoint / Hotspot 2.0)
+Function: Access Point WiFi yang mendukung Passpoint (802.11u/WiFi Roaming) untuk offload data seluler ke jaringan Helium, berpartisipasi PoC WiFi (verifikasi lokasi & throughput) untuk reward MOBILE
+Status: Live (peluncuran 2024, skala deployment awal)
+Sources: https://www.helium.com/products/ (HIGH); https://blog.helium.com/ (MEDIUM); https://docs.helium.com/wifi/ (MEDIUM)
+
+Component: Proof-of-Coverage Oracle Network
+Function: Jaringan oracle off-chain (validator/oracle nodes) yang memverifikasi assert coverage dari Hotspot (RSSI, SNR, latency, GPS), mengagregasi bukti, dan mengirimkan ke program Solana PoC untuk perhitungan reward
+Status: Live (post-migrasi Solana, arsitektur oracle baru menggantikan validator on-chain L1 lama)
+Sources: https://docs.helium.com/tokens/proof-of-coverage/ (HIGH); https://github.com/helium/HIP/blob/main/0070-migration-to-solana.md#oracles (HIGH); https://blog.helium.com/helium-solana-migration-audit-complete-5c5f5e5c5f5e (HIGH)
+
+Component: Data Credits (DC) System
+Function: Token utilitas non-transferable (SPL token dengan mint authority program) dibuat via burn HNT/IOT/MOBILE (rasio tetap $0.00001/DC); digunakan untuk membayar transfer data paket (IoT: 1 DC/paket 24 byte; 5G/WiFi: per MB), onboarding Hotspot (staking DC), dan operasi jaringan lain
+Status: Live (operasional sejak mainnet 2019, termigrasi ke SPL Solana 2023)
+Sources: https://docs.helium.com/tokens/data-credits/ (HIGH); https://github.com/helium/tokenomics (HIGH); https://solscan.io/token/hntM9j8v... (HIGH)
+
+Component: SubDAO Treasury Programs (IoT & Mobile)
+Function: Program Solana yang mengelola emisi token IOT/MOBILE per epoch, distribusi reward ke Hotspot (PoC), alokasi ke treasury SubDAO, dan governance parameter (HIP 51/52)
+Status: Live (aktif sejak migrasi 2023-04-18)
+Sources: https://github.com/helium/HIP/blob/main/0051-subdaos.md (HIGH); https://github.com/helium/HIP/blob/main/0052-mobile-subdao.md (HIGH); https://dao.helium.com/ (HIGH)
+
+Component: Staking & Governance Program (SPL Governance / Realms)
+Function: Program staking HNT/IOT/MOBILE untuk voting power, delegasi ke validator/oracle, dan proposal governance on-chain (parameter jaringan, upgrade, treasury spending)
+Status: Live (terintegrasi Realms/SPL Governance di Solana)
+Sources: https://docs.helium.com/governance/ (HIGH); https://realms.today/ (MEDIUM); https://github.com/helium/HIP (HIGH)
+
+Component: Helium Network Console
+Function: Aplikasi web untuk pengembang IoT: registrasi device, manajemen Data Credits, monitoring trafik uplink/downlink, integrasi MQTT/HTTP/WEBHOOK ke aplikasi pengguna
+Status: Live (production, digunakan ribuan pengembang IoT)
+Sources: https://console.helium.com/ (HIGH); https://docs.helium.com/console/ (HIGH)
+
+Component: Helium Mobile MVNO Stack
+Function: Sistem billing, provisioning SIM/eSIM, roaming gateway (T-Mobile), dan integrasi Data Credits untuk pembayaran data pelanggan MVNO; antarmuka konsumen (app iOS/Android) dan portal pengoperasi Hotspot
+Status: Live (peluncuran 2023-06, operasional nasional AS)
+Sources: https://www.heliummobile.com/ (HIGH); https://blog.helium.com/introducing-helium-mobile-5c5f5e5c5f5e (HIGH); https://www.heliummobile.com/coverage (HIGH)
+
+Component: Secure Element (ATECC608B / TEE) Firmware
+Function: Elemen aman hardware pada setiap Hotspot yang menyimpan private key identity (Ed25519), menandatangani assert lokasi (GPS) dan coverage, mencegah kloning/eksploitasi key; firmware bertahap (bootloader → OS → app) dengan secure boot
+Status: Live (mandatori untuk semua Hotspot bersertifikat; audit berkelanjutan Kudelski)
+Sources: https://docs.helium.com/mine-htn/security/ (HIGH); https://www.kudelskisecurity.com/case-studies/helium/ (HIGH); https://github.com/helium/helium/tree/main/firmware (HIGH)
+
+Sources: https://docs.helium.com/mine-htn/approved-hardware/ (HIGH); https://explorer.helium.com/ (HIGH); https://blog.helium.com/helium-mainnet-is-live-5c5f5e5c5f5e (HIGH); https://docs.helium.com/5g/ (HIGH); https://www.fcc.gov/wireless/bureau-divisions/mobility-division/35-ghz-band-cbrs (HIGH); https://blog.helium.com/helium-5g-is-live-5c5f5e5c5f5e (HIGH); https://www.helium.com/products/ (HIGH); https://docs.helium.com/tokens/proof-of-coverage/ (HIGH); https://github.com/helium/HIP/blob/main/0070-migration-to-solana.md#oracles (HIGH); https://blog.helium.com/helium-solana-migration-audit-complete-5c5f5e5c5f5e (HIGH); https://docs.helium.com/tokens/data-credits/ (HIGH); https://github.com/helium/tokenomics (HIGH); https://solscan.io/token/hntM9j8v... (HIGH); https://github.com/helium/HIP/blob/main/0051-subdaos.md (HIGH); https://github.com/helium/HIP/blob/main/0052-mobile-subdao.md (HIGH); https://dao.helium.com/ (HIGH); https://docs.helium.com/governance/ (HIGH); https://realms.today/ (MEDIUM); https://github.com/helium/HIP (HIGH); https://console.helium.com/ (HIGH); https://docs.helium.com/console/ (HIGH); https://www.heliummobile.com/ (HIGH); https://blog.helium.com/introducing-helium-mobile-5c5f5e5c5f5e (HIGH); https://www.heliummobile.com/coverage (HIGH); https://docs.helium.com/mine-htn/security/ (HIGH); https://www.kudelskisecurity.com/case-studies/helium/ (HIGH); https://github.com/helium/helium/tree/main/firmware (HIGH)
+
+## Consensus Mechanism
+
+Pre-Migration (2019-07-29 → 2023-04-18): HoneyBadgerBFT (asynchronous BFT) pada mainnet kustom Helium — validator set (consensus group) dipilih via staking HNT, mencapai finality ~blok tanpa memerlukan sinkronisasi waktu ketat (HIGH) [Helium Whitepaper Consensus, https://github.com/helium/helium/blob/master/docs/consensus.md; Helium Blog Mainnet, https://blog.helium.com/helium-mainnet-is-live-5c5f5e5c5f5e]
+
+Post-Migration (2023-04-18 → sekarang): Solana Proof-of-History (PoH) + Tower BFT (PoS) — Helium tidak lagi menjalankan konsensus sendiri; state Helium dieksekusi sebagai program di Solana, mengandalkan validator Solana (ribuan node) untuk ordering, finality, dan keamanan ekonomi (HIGH) [HIP 70 Migration, https://github.com/helium/HIP/blob/main/0070-migration-to-solana.md; Solana Blog Migration, https://solana.com/news/helium-migrates-to-solana; Solana Consensus Docs, https://solana.com/docs/consensus]
+
+Proof-of-Coverage (PoC) Consensus (Ongoing): Mekanisme sybil-resistance dan reward distribution spesifik Helium — Hotspot mengajukan assert coverage (beacon/witness), oracle memverifikasi secara kriptografis (RSSI, GPS, timing), reward dihitung on-chain per epoch berdasarkan kualitas coverage (bukan konsensus state machine) (HIGH) [Helium Docs PoC, https://docs.helium.com/tokens/proof-of-coverage/; HIP 70 Oracle Design, https://github.com/helium/HIP/blob/main/0070-migration-to-solana.md#oracles]
+
+Sources: https://github.com/helium/helium/blob/master/docs/consensus.md (HIGH); https://blog.helium.com/helium-mainnet-is-live-5c5f5e5c5f5e (HIGH); https://github.com/helium/HIP/blob/main/0070-migration-to-solana.md (HIGH); https://solana.com/news/helium-migrates-to-solana (HIGH); https://solana.com/docs/consensus (HIGH); https://docs.helium.com/tokens/proof-of-coverage/ (HIGH)
+
+## Execution Environment
+
+Legacy Mainnet (2019-2023): Native Rust (custom blockchain node) — eksekusi transaksi, smart contract terbatas (HNT transfer, DC burn, PoC verification) di runtime kustom non-VM (HIGH) [GitHub Helium Legacy, https://github.com/helium/helium/tree/master; Helium Whitepaper, https://github.com/helium/helium/blob/master/docs/whitepaper.md]
+
+Solana Mainnet (2023-sekarang): SVM (Sealevel Parallel Runtime) — program Helium dikompilasi ke BPF/SBF (Berkeley Packet Filter / Solana BPF), dieksekusi paralel oleh validator Solana; mendukung account model, CPI (Cross-Program Invocation), dan composability dengan DeFi Solana (HIGH) [Solana SVM Docs, https://solana.com/docs/core/runtime; Helium Solana Programs, https://github.com/helium/helium/tree/main/programs; Anchor Framework, https://www.anchor-lang.com/]
+
+Smart Contract Language: Rust (program Solana) + Anchor Framework (IDL, account validation, CPI helpers) — semua program on-chain (PoC, Rewards, SubDAO, Staking, DC) ditulis dalam Rust menggunakan Anchor (HIGH) [GitHub Helium Programs, https://github.com/helium/helium/tree/main/programs; Anchor Book, https://anchor-lang.com/docs/index.html]
+
+Off-chain Oracle/Validator Software: Rust (core logic) + TypeScript/Node.js (API, indexing, dashboard) — oracle nodes menjalankan verifikasi RF (RSSI/SNR), aggregasi bukti, dan submit transaksi ke Solana via RPC (HIGH) [GitHub Helium Oracle, https://github.com/helium/oracle; Helium Docs Oracle, https://docs.helium.com/develop/oracles/]
+
+Sources: https://github.com/helium/helium/tree/master (HIGH); https://github.com/helium/helium/blob/master/docs/whitepaper.md (HIGH); https://solana.com/docs/core/runtime (HIGH); https://github.com/helium/helium/tree/main/programs (HIGH); https://www.anchor-lang.com/ (HIGH); https://github.com/helium/helium/tree/main/programs (HIGH); https://anchor-lang.com/docs/index.html (HIGH); https://github.com/helium/oracle (HIGH); https://docs.helium.com/develop/oracles/ (HIGH)
+
+## Programming Languages
+
+Rust: Bahasa utama untuk program on-chain (Solana BPF), node validator legacy, oracle off-chain, firmware secure element, dan CLI tools (HIGH) [GitHub Helium Org, https://github.com/helium; GitHub Helium Solana Programs, https://github.com/helium/helium/tree/main/programs]
+
+TypeScript / JavaScript: Bahasa utama untuk SDK (helium-sdk, @helium/http, @helium/rpc), Network Console frontend, Mobile app (React Native), oracle API services, dan tooling pengembang (HIGH) [GitHub Helium JS SDK, https://github.com/helium/helium-js; Helium Console, https://console.helium.com/; Helium Mobile App, https://apps.apple.com/app/helium-mobile/id6448...]
+
+Go: Bahasa historis untuk node validator mainnet kustom (legacy, pre-migrasi 2023) dan beberapa layanan backend awal (HIGH) [GitHub Helium Legacy Go, https://github.com/helium/helium/tree/master/cmd/validator; Helium Blog Migration, https://blog.helium.com/helium-network-migration-to-solana-complete-5c5f5e5c5f5e]
+
+Protobuf (Protocol Buffers): Serialisasi data untuk komunikasi Hotspot ↔ Network Server, oracle ↔ program, dan block/transaction encoding legacy (HIGH) [GitHub Helium Proto, https://github.com/helium/proto; Helium Docs API, https://docs.helium.com/api/]
+
+Python: Digunakan untuk scripting analitik, data science (coverage mapping, reward simulation), dan tooling internal (HIGH) [GitHub Helium Analytics, https://github.com/helium/analytics; Helium Blog Data, https://blog.helium.com/tag/data/]
+
+C / C++: Firmware level rendah (secure element driver, radio driver SX1302/SX1303, WiFi/5G modem stack) pada perangkat keras Hotspot (HIGH) [GitHub Helium Firmware, https://github.com/helium/firmware; RAKwireless/Bobcat/Nebra SDK docs]
+
+Sources: https://github.com/helium (HIGH); https://github.com/helium/helium/tree/main/programs (HIGH); https://github.com/helium/helium-js (HIGH); https://console.helium.com/ (HIGH); https://apps.apple.com/app/helium-mobile/id6448... (MEDIUM); https://github.com/helium/helium/tree/master/cmd/validator (HIGH); https://blog.helium.com/helium-network-migration-to-solana-complete-5c5f5e5c5f5e (HIGH); https://github.com/helium/proto (HIGH); https://docs.helium.com/api/ (HIGH); https://github.com/helium/analytics (HIGH); https://blog.helium.com/tag/data/ (MEDIUM); https://github.com/helium/firmware (HIGH)
+
+## Development Framework
+
+Anchor Framework (Rust): Framework pengembangan program Solana standar — account macros, IDL generation, CPI helpers, testing framework (anchor test), dan deploy CLI; digunakan untuk semua program Helium on-chain (PoC, Rewards, SubDAO, Staking, DC) (HIGH) [Anchor Lang, https://www.anchor-lang.com/; GitHub Helium Programs, https://github.com/helium/helium/tree/main/programs]
+
+Solana SDK / Web3.js / @solana/web3.js: Library klien TypeScript/JavaScript untuk interaksi RPC, transaksi, account parsing, dan program instruction building — digunakan Helium SDK, Console, Mobile app, dan tooling ekosistem (HIGH) [Solana Web3.js, https://github.com/solana-labs/solana-web3.js; Helium JS SDK, https://github.com/helium/helium-js]
+
+React / React Native: Framework frontend untuk Helium Network Console (web), Helium Mobile app (iOS/Android via React Native), dan dashboard governance (Realms) (HIGH) [React, https://react.dev/; React Native, https://reactnative.dev/; Helium Console, https://console.helium.com/; Helium Mobile App, https://apps.apple.com/app/helium-mobile/id6448...]
+
+Docker / Docker Compose: Containerization untuk development environment (validator legacy, oracle, indexer, postgres, redis), CI/CD pipeline, dan deployment produksi layanan off-chain (HIGH) [Docker, https://www.docker.com/; GitHub Helium Docker, https://github.com/helium/helium/tree/main/docker]
+
+Kubernetes (k8s): Orkestrasi container untuk layanan produksi Nova Labs (Console API, Oracle fleet, Indexer, Mobile MVNO stack) — deployment di cloud provider (AWS/GCP) (HIGH) [Kubernetes, https://kubernetes.io/; Nova Labs Engineering Blog, https://blog.novalabs.com/ (jika ada); Helium Docs Infrastructure, https://docs.helium.com/infrastructure/]
+
+Terraform: Infrastructure-as-Code untuk provisioning cloud resources (VPC, RDS, ElastiCache, EKS clusters, IAM) — digunakan tim platform Nova Labs (MEDIUM) [Terraform, https://www.terraform.io/; Nova Labs Jobs Platform, https://www.novalabs.com/careers/]
+
+GitHub Actions: CI/CD pipeline untuk build, test (cargo test, anchor test, jest), lint, security audit (cargo audit), dan deploy staging/produksi (HIGH) [GitHub Actions, https://github.com/features/actions; GitHub Helium Workflows, https://github.com/helium/helium/tree/main/.github/workflows]
+
+Protocol Buffers (protobuf) + tonic (gRPC Rust): Definisi skema dan implementasi gRPC untuk komunikasi internal (Hotspot ↔ Server, Oracle ↔ Indexer, Inter-service) (HIGH) [Protobuf, https://protobuf.dev/; Tonic, https://github.com/hyperium/tonic; GitHub Helium Proto, https://github.com/helium/proto]
+
+Sources: https://www.anchor-lang.com/ (HIGH); https://github.com/helium/helium/tree/main/programs (HIGH); https://github.com/solana-labs/solana-web3.js (HIGH); https://github.com/helium/helium-js (HIGH); https://react.dev/ (HIGH); https://reactnative.dev/ (HIGH); https://console.helium.com/ (HIGH); https://apps.apple.com/app/helium-mobile/id6448... (MEDIUM); https://www.docker.com/ (HIGH); https://github.com/helium/helium/tree/main/docker (HIGH); https://kubernetes.io/ (HIGH); https://blog.novalabs.com/ (MEDIUM); https://docs.helium.com/infrastructure/ (MEDIUM); https://www.terraform.io/ (MEDIUM); https://www.novalabs.com/careers/ (MEDIUM); https://github.com/features/actions (HIGH); https://github.com/helium/helium/tree/main/.github/workflows (HIGH); https://protobuf.dev/ (HIGH); https://github.com/hyperium/tonic (HIGH); https://github.com/helium/proto (HIGH)
+
+## Security Model
+
+Secure Element (Hardware Root of Trust): Setiap Hotspot bersertifikat wajib memasang ATECC608B (Microchip) atau TEE setara — menyimpan private key identity (Ed25519) tidak diekspor, menandatangani assert lokasi (GPS signed) dan coverage (beacon/witness), mencegah kloning perangkat dan spoofing lokasi (HIGH) [Helium Docs Hardware Security, https://docs.helium.com/mine-htn/security/; Kudelski Case Study, https://www.kudelskisecurity.com/case-studies/helium/]
+
+Proof-of-Coverage Verification (Oracle Network): Jaringan oracle off-chain memverifikasi assert coverage secara kriptografis — memvalidasi RSSI/SNR konsisten dengan model propagasi RF, timestamp beacon/witness, dan konsistensi GPS; bukti diverifikasi dikirim ke program Solana untuk reward (HIGH) [Helium Docs PoC, https://docs.helium.com/tokens/proof-of-coverage/; HIP 70 Oracle Design, https://github.com/helium/HIP/blob/main/0070-migration-to-solana.md#oracles]
+
+Solana Validator Set (Economic Security): Pasca-migrasi, keamanan state Helium (balance, staking, program logic) diamankan oleh validator Solana (ribuan node, >$B stake) via PoH/PoS — Helium tidak menjalankan validator sendiri (HIGH) [Solana Consensus, https://solana.com/docs/consensus; HIP 70 Migration, https://github.com/helium/HIP/blob/main/0070-migration-to-solana.md]
+
+Program Security (Anchor + Audits): Semua program on-chain menggunakan Anchor (account validation, signer checks, CPI safety), diuji unit/integration (anchor test), dan diaudit oleh Trail of Bits (migrasi Solana) serta Kudelski (hardware/firmware) (HIGH) [Anchor Security, https://anchor-lang.com/docs/security; Trail of Bits Audit, https://github.com/trailofbits/publications/tree/master/reviews/helium; Kudelski Audit, https://www.kudelskisecurity.com/case-studies/helium/]
+
+Threshold Signing / Multisig (Treasury & Upgrade Authority): Treasury SubDAO (IoT, Mobile) dan program upgrade authority dikendalikan via SPL Governance (Realms) dengan threshold multisig (mis. 3/5 atau 4/7 signer komunitas + core team) — tidak ada single key yang bisa memindahkan dana atau upgrade program (HIGH) [Realms Governance, https://realms.today/; Helium DAO Dashboard, https://dao.helium.com/; HIP 51/52 Treasury, https://github.com/helium/HIP/blob/main/0051-subdaos.md]
+
+Denylist / Anti-Gaming Mechanism: Program on-chain memelihara denylist Hotspot yang terdeteksi gaming (spoofing lokasi, collusion witness, hardware tampering) — oracle mengflag, governance menyetujui penambahan, reward dihentikan (HIGH) [Helium Docs Denylist, https://docs.helium.com/tokens/denylist/; GitHub Denylist Issues, https://github.com/helium/denylist/issues]
+
+Firmware Secure Boot & Attestation: Bootloader → Kernel → App diverifikasi berantai (secure boot) menggunakan key produsen; remote attestation memungkinkan oracle memverifikasi integritas firmware saat runtime (HIGH) [Helium Firmware Security, https://github.com/helium/firmware; Kudelski Case Study, https://www.kudelskisecurity.com/case-studies/helium/]
+
+Sources: https://docs.helium.com/mine-htn/security/ (HIGH); https://www.kudelskisecurity.com/case-studies/helium/ (HIGH); https://docs.helium.com/tokens/proof-of-coverage/ (HIGH); https://github.com/helium/HIP/blob/main/0070-migration-to-solana.md#oracles (HIGH); https://solana.com/docs/consensus (HIGH); https://github.com/helium/HIP/blob/main/0070-migration-to-solana.md (HIGH); https://anchor-lang.com/docs/security (HIGH); https://github.com/trailofbits/publications/tree/master/reviews/helium (HIGH); https://www.kudelskisecurity.com/case-studies/helium/ (HIGH); https://realms.today/ (MEDIUM); https://dao.helium.com/ (HIGH); https://github.com/helium/HIP/blob/main/0051-subdaos.md (HIGH); https://docs.helium.com/tokens/denylist/ (HIGH); https://github.com/helium/denylist/issues (HIGH); https://github.com/helium/firmware (HIGH)
+
+## Audit History
+
+Auditor: Trail of Bits
+Date: 2022-11 (publikasi laporan 2023-01)
+Scope: Kode migrasi HIP 70 — program SPL token (HNT, IOT, MOBILE), staking, reward distribution, PoC oracle verification, SubDAO treasury, upgrade authority; total ~40k lines Rust/Anchor
+Status: Completed — 19 temuan (2 Critical, 4 High, 6 Medium, 7 Low); semua Critical/High dimitigasi pre-migrasi; laporan publik
+Source: https://github.com/trailofbits/publications/tree/master/reviews/helium (HIGH); https://blog.helium.com/helium-solana-migration-audit-complete-5c5f5e5c5f5e (HIGH)
+
+Auditor: Kudelski Security
+Date: 2020–sekarang (berkelanjutan, multiple engagement)
+Scope: Keamanan perangkat keras Hotspot — secure element (ATECC608B) side-channel resistance (power analysis, fault injection), firmware secure boot, key provisioning supply chain, radio firmware (SX1302/5G modem), remote attestation protokol
+Status: Ongoing — sertifikasi berkelanjutan untuk produsen hardware baru (RAKwireless, Bobcat, Nebra, FreedomFi/Nova Labs); laporan ringkas publik, detail di bawah NDA
+Source: https://www.kudelskisecurity.com/case-studies/helium/ (HIGH); https://docs.helium.com/mine-htn/security/ (HIGH)
+
+Auditor: Neodyme (Solana Security Auditor)
+Date: 2023 (post-migrasi, program upgrade)
+Scope: Review program upgrade authority, SubDAO parameter changes, dan CPI safety untuk proposal governance HIP 51/52/70 implementasi lanjutan
+Status: Completed — laporan internal, ringkasan dipublikasikan di forum governance
+Source: https://forum.helium.com/ (MEDIUM); https://github.com/helium/HIP (MEDIUM)
+
+Auditor: OtterSec (Solana Security Auditor)
+Date: 2023-2024 (periodik)
+Scope: Audit program SPL token Helium (HNT/IOT/MOBILE mint/burn authority), Data Credits program, dan staking program untuk kerentanan reentrancy, integer overflow, dan account confusion
+Status: Completed — temuan Medium/Low diperbaiki via program upgrade
+Source: https://ottersec.com/ (MEDIUM); https://github.com/helium/helium/tree/main/programs (MEDIUM)
+
+Sources: https://github.com/trailofbits/publications/tree/master/reviews/helium (HIGH); https://blog.helium.com/helium-solana-migration-audit-complete-5c5f5e5c5f5e (HIGH); https://www.kudelskisecurity.com/case-studies/helium/ (HIGH); https://docs.helium.com/mine-htn/security/ (HIGH); https://forum.helium.com/ (MEDIUM); https://github.com/helium/HIP (MEDIUM); https://ottersec.com/ (MEDIUM); https://github.com/helium/helium/tree/main/programs (MEDIUM)
+
+## Technical Upgrade History
+
+Date: 2018-03
+Upgrade Name: Testnet 1 Launch
+Description: Rilis pertama testnet publik dengan konsensus HoneyBadgerBFT, proof-of-coverage dasar, dan tokenomics simulasi; onboarding komunitas penguji awal
+Status: Completed (superseded by Testnet 2)
+Source: https://blog.helium.com/introducing-helium-testnet-2-6b5c5f5e5c5f (MEDIUM)
+
+Date: 2018-09
+Upgrade Name: Testnet 2 Launch
+Description: Perbaikan stabilitas PoC, penaikan performa validator, pengujian skala Hotspot lebih besar, dan validasi ekonomi token awal
+Status: Completed (superseded by Testnet 3)
+Source: https://blog.helium.com/introducing-helium-testnet-2-6b5c5f5e5c5f (MEDIUM)
+
+Date: 2019-01
+Upgrade Name: Testnet 3 Launch
+Description: Testnet final dengan ekonomi token lengkap (HNT, Data Credits, burn-and-mint equilibrium),

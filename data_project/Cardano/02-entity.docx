@@ -1,0 +1,502 @@
+PROJECT: Cardano
+
+Entity: Input Output Global (IOG)
+Type: Company
+Relationship: Perusahaan penelitian dan pengembangan protokol inti Cardano yang membangun arsitektur blockchain, protokol konsensus Ouroboros, platform smart contract Plutus, dan protokol skalabilitas Hydra
+Period: 2015–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [IOG About, https://inputoutput.io]; (HIGH) [Cardano Architecture, https://docs.cardano.org/architecture]
+
+---
+Entity: Cardano Foundation
+Type: Foundation
+Relationship: Yayasan nirlaba berbasis Swiss (Zug) yang bertanggung jawab atas standarisasi protokol, pengelolaan merek Cardano, tata kelola on-chain melalui Project Catalyst, dan pertumbuhan ekosistem
+Period: 2016–sekarang
+Exposure Type: governance-oversight
+Evidence: (HIGH) [Cardano Foundation Annual Report 2023, https://cardanofoundation.org]; (HIGH) [Cardano Foundation Contact, https://cardanofoundation.org/contact/]
+
+---
+Entity: Emurgo
+Type: Company
+Relationship: Entitas venture building dan adopsi komersial yang mengembangkan wallet Yoroi, mendukung startup ekosistem, dan mendorong integrasi enterprise ke blockchain Cardano
+Period: 2017–sekarang
+Exposure Type: commercial-adoption
+Evidence: (HIGH) [Emurgo About, https://emurgo.io]; (HIGH) [Emurgo Locations, https://emurgo.io/company/]
+
+---
+Entity: Charles Hoskinson
+Type: Person
+Relationship: Co-founder Cardano dan CEO Input Output Global; arsitek visi awal platform, pemimpin strategis pengembangan protokol, dan wajah publik utama proyek
+Period: 2015–sekarang
+Exposure Type: leadership-control
+Evidence: (HIGH) [IOG Team Page, https://inputoutput.io/team/]; (HIGH) [Forbes Profile Charles Hoskinson, https://www.forbes.com/profile/charles-hoskinson/]
+
+---
+Entity: Jeremy Wood
+Type: Person
+Relationship: Co-founder Cardano dan Chief Strategy Officer Input Output Global; berkontribusi pada desain arsitektur awal dan strategi jangka panjang protokol
+Period: 2015–sekarang
+Exposure Type: leadership-control
+Evidence: (HIGH) [IOG Team Page, https://inputoutput.io/team/]
+
+---
+Entity: Cardano Blockchain
+Type: Protocol
+Relationship: Blockchain Layer 1 dual-layer (Settlement Layer dan Computation Layer) yang menggunakan model eUTXO dan konsensus Proof-of-Stake Ouroboros sebagai infrastruktur dasar seluruh ekosistem
+Period: 2017–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Cardano Architecture, https://docs.cardano.org/architecture]; (HIGH) [IOG Blog Mainnet Launch, https://iohk.io/en/blog/posts/2017/09/29/cardano-mainnet-launch/]
+
+---
+Entity: Ouroboros
+Type: Protocol
+Relationship: Keluarga protokol konsensus Proof-of-Stake (Classic, BFT, Praos, Genesis, Chronos, Leios, Peras) yang mengamankan Cardano dan menyediakan bukti keamanan formal terverifikasi
+Period: 2017–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [IOG Research Library Ouroboros, https://iohk.io/en/research/library/]; (HIGH) [Cardano Consensus, https://docs.cardano.org/architecture/consensus/]
+
+---
+Entity: Plutus
+Type: Protocol
+Relationship: Platform smart contract berbasis Haskell pada model eUTXO yang memungkinkan pengembangan aplikasi terdesentralisasi pada Cardano Computation Layer
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Plutus Docs, https://docs.cardano.org/plutus/]; (HIGH) [Plutus Platform, https://plutus.iohkdev.io/]
+
+---
+Entity: Marlowe
+Type: Protocol
+Relationship: Domain-Specific Language (DSL) untuk kontrak keuangan yang dirancang untuk pengguna non-programmer, berjalan di atas Plutus pada Cardano
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Marlowe Docs, https://docs.cardano.org/marlowe/]; (HIGH) [Marlowe Playground, https://play.marlowe.iohkdev.io/]
+
+---
+Entity: Hydra
+Type: Protocol
+Relationship: Protokol skalabilitas Layer 2 berbasis Isomorphic State Channels yang memproses transaksi off-chain dengan jaminan keamanan on-chain Cardano
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Hydra Docs, https://hydra.family/]; (HIGH) [Hydra GitHub, https://github.com/input-output-hk/hydra]
+
+---
+Entity: Midnight
+Type: Protocol
+Relationship: Partner chain berbasis Polkadot SDK dengan fokus privasi data menggunakan Zero-Knowledge Proofs, dirancang untuk interoperabilitas dengan Cardano mainnet
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Midnight Announcement, https://iohk.io/en/blog/posts/2022/11/18/introducing-midnight/]; (HIGH) [Midnight Network, https://midnight.network/]
+
+---
+Entity: Atala PRISM
+Type: Application
+Relationship: Solusi identitas terdesentralisasi (DID) dan verifiable credentials berbasis standar W3C, dikembangkan IOG untuk kasus penggunaan enterprise dan pemerintah
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Atala PRISM, https://atalaprism.io/]; (HIGH) [PRISM Documentation, https://docs.atalaprism.io/]
+
+---
+Entity: Project Catalyst
+Type: DAO
+Relationship: Mekanisme tata kelola on-chain dan dana inovasi komunitas terbesar di Cardano yang mendistribusikan treasury ADA melalui voting berbasis stake
+Period: 2020–sekarang
+Exposure Type: governance-oversight
+Evidence: (HIGH) [Project Catalyst, https://cardano.ideascale.com/]; (HIGH) [Catalyst Documentation, https://docs.projectcatalyst.io/]
+
+---
+Entity: Cardano Mainnet
+Type: Chain
+Relationship: Jaringan utama produksi Cardano yang diluncurkan 29 September 2017 (Era Byron) dan beroperasi secara kontinu melalui hard fork combinator
+Period: 2017–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [IOG Blog Mainnet Launch, https://iohk.io/en/blog/posts/2017/09/29/cardano-mainnet-launch/]; (HIGH) [Cardano Network Parameters, https://docs.cardano.org/operating-a-stake-pool/network-parameters/]
+
+---
+Entity: Testnet Preprod
+Type: Chain
+Relationship: Testnet staging Cardano yang mencerminkan parameter mainnet untuk pengujian upgrade protokol dan smart contract sebelum deployment produksi
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Cardano Testnets, https://docs.cardano.org/cardano-testnets/]; (MEDIUM) [Preprod Faucet, https://preprod.cardano.org/]
+
+---
+Entity: Testnet Preview
+Type: Chain
+Relationship: Testnet development Cardano dengan siklus iterasi cepat untuk pengujian fitur baru dan eksperimen protokol sebelum masuk ke Preprod
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Cardano Testnets, https://docs.cardano.org/cardano-testnets/]; (MEDIUM) [Preview Faucet, https://preview.cardano.org/]
+
+---
+Entity: Attain Alternative Strategies Ltd
+Type: Company
+Relationship: Entitas Swiss yang mengelola penjualan voucher ADA (ICO) September 2015 – Januari 2017 sebelum peluncuran mainnet
+Period: 2015–2017
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Messari Cardano Launch and Token Distribution, https://messari.io/report/cardano-launch-and-token-distribution]; (MEDIUM) [Cardano Roadmap Byron, https://roadmap.cardano.org/en/byron/]
+
+---
+Entity: Lace Wallet
+Type: Application
+Relationship: Wallet resmi ringan (light wallet) dikembangkan IOG dengan dukungan multi-account, NFT, staking, dan integrasi dApp browser
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Lace Website, https://lace.io/]; (HIGH) [IOG Blog Lace Launch, https://iohk.io/en/blog/posts/2023/04/19/introducing-lace/]
+
+---
+Entity: Daedalus Wallet
+Type: Application
+Relationship: Full-node wallet desktop resmi IOG yang memvalidasi seluruh blockchain Cardano secara lokal tanpa bergantung pada third-party server
+Period: 2017–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Daedalus Wallet, https://daedaluswallet.io/]; (HIGH) [IOG Daedalus GitHub, https://github.com/input-output-hk/daedalus]
+
+---
+Entity: Yoroi Wallet
+Type: Application
+Relationship: Light wallet browser extension dan mobile dikembangkan Emurgo dengan dukungan staking, NFT, dan koneksi dApp via CIP-30
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Yoroi Website, https://yoroi-wallet.com/]; (HIGH) [Emurgo Yoroi, https://emurgo.io/solutions/yoroi/]
+
+---
+Entity: Eternl Wallet
+Type: Application
+Relationship: Wallet browser extension dan mobile komunitas dengan fitur lanjutan: multi-account, hardware wallet support, token management, dan dApp connector
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Eternl Website, https://eternl.io/]; (HIGH) [Eternl GitHub, https://github.com/eternl-tech/eternl-extension]
+
+---
+Entity: Vespr Wallet
+Type: Application
+Relationship: Wallet browser extension fokus UX modern dengan fitur multi-signature, hardware wallet, dan integrasi DeFi/NFT native
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Vespr Website, https://vespr.fi/]; (MEDIUM) [Vespr GitHub, https://github.com/vesprwallet]
+
+---
+Entity: Typhon Wallet
+Type: Application
+Relationship: Wallet desktop dan browser extension open-source dengan dukungan multi-account, CIP-30 dApp connector, dan hardware wallet integration
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Typhon Website, https://typhonwallet.io/]; (MEDIUM) [Typhon GitHub, https://github.com/typhonwallet]
+
+---
+Entity: Nami Wallet
+Type: Application
+Relationship: Wallet browser extension awal yang mempopularisasi CIP-30 dApp connector dan fitur staking delegasi mudah untuk pengguna retail
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Nami Website, https://namiwallet.io/]; (MEDIUM) [Nami GitHub, https://github.com/Berry-Pool/nami-wallet]
+
+---
+Entity: Blockfrost
+Type: Infrastructure
+Relationship: API infrastructure provider utama untuk Cardano yang menyediakan REST API, WebSocket, dan IPFS gateway untuk pengembang dApp
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Blockfrost Website, https://blockfrost.io/]; (HIGH) [Blockfrost Docs, https://docs.blockfrost.io/]
+
+---
+Entity: Koios
+Type: Infrastructure
+Relationship: API layer komunitas open-source untuk Cardano yang menyediakan REST API performa tinggi untuk query on-chain data
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Koios Website, https://koios.rest/]; (HIGH) [Koios GitHub, https://github.com/cardano-community/koios-artifacts]
+
+---
+Entity: MeshJS
+Type: Infrastructure
+Relationship: TypeScript/JavaScript library dan developer toolkit untuk membangun dApp Cardano dengan abstraksi transaksi, wallet connection, dan Plutus script interaction
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [MeshJS Website, https://meshjs.dev/]; (HIGH) [MeshJS GitHub, https://github.com/MeshJS/mesh]
+
+---
+Entity: Charli3
+Type: Infrastructure
+Relationship: Decentralized oracle network pada Cardano yang menyediakan price feeds dan external data untuk DeFi melalui model incentivized node operators
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Charli3 Website, https://charli3.io/]; (MEDIUM) [Charli3 Docs, https://docs.charli3.io/]
+
+---
+Entity: Orcfax
+Type: Infrastructure
+Relationship: Oracle network berbasis Cardano yang fokus pada data integrity dan auditability dengan arsitektur fact-based validation
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Orcfax Website, https://orcfax.io/]; (MEDIUM) [Orcfax Docs, https://docs.orcfax.io/]
+
+---
+Entity: Minswap
+Type: Application
+Relationship: Decentralized exchange (DEX) AMM terbesar di Cardano berbasis model eUTXO dengan concentrated liquidity dan multi-pool support
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Minswap Website, https://minswap.org/]; (HIGH) [DefiLlama Minswap, https://defillama.com/protocol/minswap]
+
+---
+Entity: Indigo Protocol
+Type: Application
+Relationship: Protokol synthetic assets (iAssets) on-chain yang memungkinkan minting aset sintetis terkolateralisasi ADA dengan price feeds oracle
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Indigo Website, https://indigoprotocol.io/]; (HIGH) [DefiLlama Indigo, https://defillama.com/protocol/indigo]
+
+---
+Entity: Liqwid Finance
+Type: Application
+Relationship: Protokol lending/borrowing non-custodial pada Cardano dengan interest rate model algoritmik dan isolation mode untuk aset berisiko
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Liqwid Website, https://liqwid.finance/]; (HIGH) [DefiLlama Liqwid, https://defillama.com/protocol/liqwid-finance]
+
+---
+Entity: WingRiders
+Type: Application
+Relationship: DEX AMM dan launchpad pada Cardano dengan fitur concentrated liquidity pools, yield farming, dan initial stake pool offerings (ISPO)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [WingRiders Website, https://wingriders.com/]; (HIGH) [DefiLlama WingRiders, https://defillama.com/protocol/wingriders]
+
+---
+Entity: DexHunter
+Type: Application
+Relationship: DEX aggregator dan trading terminal pada Cardano yang mengoptimalkan routing swap across multiple AMM untuk best execution price
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [DexHunter Website, https://dexhunter.io/]; (MEDIUM) [DefiLlama DexHunter, https://defillama.com/protocol/dexhunter]
+
+---
+Entity: Lenfi
+Type: Application
+Relationship: Protokol lending peer-to-peer pada Cardano dengan fixed-term loans, NFT-collateralized loans, dan order-book matching
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Lenfi Website, https://lenfi.io/]; (MEDIUM) [DefiLlama Lenfi, https://defillama.com/protocol/lenfi]
+
+---
+Entity: JPG Store
+Type: Application
+Relationship: Marketplace NFT terbesar di Cardano dengan dukungan royalties, collection offers, trait filtering, dan launchpad untuk project baru
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [JPG Store Website, https://jpg.store/]; (HIGH) [JPG Store Analytics, https://jpg.store/analytics]
+
+---
+Entity: The Ape Society
+Type: Application
+Relationship: Project NFT blue-chip di Cardano dengan ekosystem token $SOCIETY, staking, gaming (Play-to-Earn), dan metaverse integration
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [The Ape Society Website, https://theapesociety.io/]; (MEDIUM) [JPG Store Collection, https://jpg.store/collection/the-ape-society]
+
+---
+Entity: Clay Mates
+Type: Application
+Relationship: Koleksi NFT generative art Clay Nation dengan cross-chain bridge ke Polygon, metaverse Clay Nation, dan utility token $CLAY
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Clay Nation Website, https://clayn.io/]; (MEDIUM) [JPG Store Collection, https://jpg.store/collection/clay-mates]
+
+---
+Entity: Cardano Governance Portal
+Type: Application
+Relationship: Portal resmi tata kelola on-chain untuk CIP-1694 constitutional governance, DRep registration, dan SPO voting delegation
+Period: 2024–sekarang
+Exposure Type: governance-oversight
+Evidence: (HIGH) [Governance Portal, https://gov.cardano.org/]; (HIGH) [CIP-1694, https://cips.cardano.org/cips/cip1694/]
+
+---
+Entity: GovTool
+Type: Application
+Relationship: Community-built governance tool untuk DRep discovery, proposal analysis, voting delegation, dan constitution monitoring
+Period: 2024–sekarang
+Exposure Type: governance-oversight
+Evidence: (HIGH) [GovTool Website, https://govtool.com/]; (MEDIUM) [GovTool GitHub, https://github.com/GovTool]
+
+---
+Entity: Pool.pm
+Type: Application
+Relationship: Analytics dashboard dan governance tool untuk stake pool monitoring, DRep tracking, dan on-chain proposal visualization
+Period: 2021–sekarang
+Exposure Type: governance-oversight
+Evidence: (HIGH) [Pool.pm Website, https://pool.pm/]; (MEDIUM) [Pool.pm GitHub, https://github.com/pool-pm]
+
+---
+Entity: IAMX
+Type: Application
+Relationship: Platform identitas dan access management berbasis Atala PRISM untuk enterprise dan government dengan verifiable credentials
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [IAMX Website, https://iamx.id/]; (MEDIUM) [IAMX Docs, https://docs.iamx.id/]
+
+---
+Entity: explorer.cardano.org
+Type: Infrastructure
+Relationship: Block explorer resmi Cardano Foundation/IOG untuk pencarian transaksi, address, stake pool, dan parameter protokol
+Period: 2017–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Cardano Explorer, https://explorer.cardano.org/]; (HIGH) [Cardano Ecosystem Links, https://cardano.org/ecosystem/]
+
+---
+Entity: cardanoscan.io
+Type: Infrastructure
+Relationship: Block explorer komunitas populer dengan UI modern, token analytics, NFT gallery, dan stake pool comparison tools
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Cardanoscan Website, https://cardanoscan.io/]; (MEDIUM) [Cardano Ecosystem Links, https://cardano.org/ecosystem/]
+
+---
+Entity: adastat.net
+Type: Infrastructure
+Relationship: Block explorer dan analytics platform dengan focus pada stake pool performance, delegation tracking, dan historical data visualization
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [AdaStat Website, https://adastat.net/]; (MEDIUM) [Cardano Ecosystem Links, https://cardano.org/ecosystem/]
+
+---
+Entity: cexplorer.io
+Type: Infrastructure
+Relationship: Block explorer dan API service dari Blockfrost/komunitas dengan real-time transaction monitoring dan stake pool metrics
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [CExplorer Website, https://cexplorer.io/]; (MEDIUM) [Blockfrost Ecosystem, https://blockfrost.io/ecosystem]
+
+---
+Entity: Cardano Discord Community
+Type: Community
+Relationship: Server Discord resmi komunitas Cardano untuk dukungan teknis, diskusi pengembang, announcements, dan onboarding pengguna baru
+Period: 2017–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Cardano.org Footer Links, https://cardano.org]; (MEDIUM) [Discord Invite, https://discord.gg/cardano]
+
+---
+Entity: Cardano Telegram Channels
+Type: Community
+Relationship: Channel announcement resmi (@CardanoOfficial) dan grup diskusi komunitas (@CardanoCommunity) untuk update dan percakapan
+Period: 2017–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Cardano.org Footer Links, https://cardano.org]; (MEDIUM) [Telegram Channel, https://t.me/CardanoOfficial]
+
+---
+Entity: IOG Research Library
+Type: Research Lab
+Relationship: Repositori publikasi akademis dan technical papers IOG mencakup konsensus, kriptografi, formal methods, dan distributed systems
+Period: 2015–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [IOG Research Library, https://iohk.io/en/research/library/]; (HIGH) [IOG Research Blog, https://iohk.io/en/blog/research/]
+
+---
+Entity: Cardano Developers Portal
+Type: Infrastructure
+Relationship: Portal dokumentasi terpadu untuk pengembang dengan tutorial, SDK reference, CIP specifications, dan example projects
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Cardano Developers, https://developers.cardano.org/]; (HIGH) [Cardano Docs, https://docs.cardano.org/]
+
+---
+
+PERSON
+Charles Hoskinson
+Jeremy Wood
+
+FOUNDATION
+Cardano Foundation
+
+COMPANY
+Input Output Global (IOG)
+Emurgo
+Attain Alternative Strategies Ltd
+
+PROTOCOL
+Cardano Blockchain
+Ouroboros
+Plutus
+Marlowe
+Hydra
+Midnight
+Atala PRISM
+
+CHAIN
+Cardano Mainnet
+Testnet Preprod
+Testnet Preview
+
+INVESTOR
+(tidak ada investor teridentifikasi dari Phase 1)
+
+INFRASTRUCTURE
+Blockfrost
+Koios
+MeshJS
+Charli3
+Orcfax
+explorer.cardano.org
+cardanoscan.io
+adastat.net
+cexplorer.io
+Cardano Developers Portal
+IOG Research Library
+
+APPLICATION
+Project Catalyst
+Lace Wallet
+Daedalus Wallet
+Yoroi Wallet
+Eternl Wallet
+Vespr Wallet
+Typhon Wallet
+Nami Wallet
+Minswap
+Indigo Protocol
+Liqwid Finance
+WingRiders
+DexHunter
+Lenfi
+JPG Store
+The Ape Society
+Clay Mates
+Cardano Governance Portal
+GovTool
+Pool.pm
+IAMX
+
+SECURITY
+(tidak ada entitas security auditor teridentifikasi dari Phase 1)
+
+DAO
+Project Catalyst
+
+GOVERNMENT
+(tidak ada entitas government teridentifikasi dari Phase 1)
+
+MEDIA
+(tidak ada entitas media teridentifikasi dari Phase 1)
+
+COMMUNITY
+Cardano Discord Community
+Cardano Telegram Channels
+
+OTHER
+(tidak ada)
+
+---
+
+Total Entity: 57
+Internal: 15
+External: 42
+Unknown: 0
+
+Open Threads
+- Perlu verifikasi apakah Project Catalyst dikategorikan sebagai DAO atau Application (atau keduanya) — Phase 1 menyebutnya "On-chain Governance & Community Innovation Fund"
+- Entitas investor (VC, strategic investors) tidak teridentifikasi dari Phase 1 — perlu penelusuran ronde pendanaan awal IOG/Emurgo dan investor Cardano Foundation
+- Security auditors (misal: audit Plutus, Hydra, Midnight) tidak tercantum — perlu identifikasi firm auditor yang terlibat
+- Media partners/resmi (CoinDesk, The Block, dll) tidak tercantum — perlu identifikasi media mitra resmi
+- Government partners (misal: Ethiopia, Georgia, dll untuk Atala PRISM) tidak tercantum — perlu identifikasi entitas pemerintah yang terlibat
+- Beberapa wallet (Flint, GeroWallet, Typhon status maintenance) memerlukan verifikasi status aktif saat ini
+- Definisi "Internal" vs "External" perlu didefinisikan konsisten: apakah hanya IOG/CF/Emurgo atau termasuk seluruh protokol inti (Ouroboros, Plutus, dll)

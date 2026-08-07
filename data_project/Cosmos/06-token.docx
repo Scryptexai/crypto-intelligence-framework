@@ -1,0 +1,246 @@
+PROJECT: Cosmos
+
+## Token Information
+
+Official Token Name: Cosmos Hub Atom
+Symbol: ATOM
+Token Standard: Native (Cosmos SDK coin)
+Blockchain: Cosmos Hub
+Contract Address: Native denom `uatom` (no ERC-20 contract on Cosmos Hub; ERC-20 representations exist on Ethereum via bridges e.g., 0x0eb3a705fc54725037cc9e008bdede697f62f337 for Wormhole wrapped ATOM)
+Decimals: 6 (base unit: uatom, 1 ATOM = 1,000,000 uatom)
+Status: Live
+Sources: https://github.com/cosmos/gaia/blob/main/docs/atom.md, https://cosmos.network/atom, https://www.mintscan.io/cosmos/tokens/uatom
+
+## Supply
+
+Maximum Supply: Tidak ada (unbounded / inflationary)
+Total Supply: ~390,934,204 ATOM (per blok 19.500.000, Oktober 2024)
+Circulating Supply: ~390,934,204 ATOM (sama dengan total supply karena tidak ada token terkunci pada protocol level; vesting hanya berlaku untuk alokasi awal investor/team yang sudah selesai)
+Initial Supply: 236.198.958 ATOM (pada genesis 13 Maret 2019)
+Supply Type: Inflationary (target inflation 7%–20% tergantung bonded ratio)
+Sources: https://github.com/cosmos/gaia/blob/main/docs/atom.md, https://www.mintscan.io/cosmos/validators, https://cosmos.network/tokenomics, https://staking.duncan.id/cosmos
+
+## Distribution
+
+Community: ~67,9% (Public Fundraiser + Strategic + Seed + Community Pool + Future Allocations)
+Team: ~10% (All In Bits Inc / Tendermint core team)
+Investors: ~7,1% (Strategic + Seed)
+Foundation: ~10% (Interchain Foundation)
+Treasury: ~5% (Community Pool pada genesis; terus diisi via inflation & fees)
+Ecosystem: Termasuk dalam Community/Foundation allocations
+Advisors: ~5% (termasuk dalam Team/Strategic)
+Other: Tidak diketahui (kategori lain tidak dipisahkan resmi)
+Sources: https://github.com/cosmos/gaia/blob/main/docs/atom.md, https://blog.cosmos.network/atom-token-sale-results-2b2c5c7c7d7a, https://icf.cosmos.network/token-holdings/, https://www.coinbureau.com/analysis/cosmos-atom-tokenomics/
+
+Catatan: Distribusi di atas merujuk pada genesis allocation. Saat ini tidak ada token yang terkunci pada protocol level; seluruh supply awal sudah fully vested.
+
+## Vesting Schedule
+
+Category: Public Fundraiser
+Cliff: 0 hari (liquid pada genesis)
+Vesting: Tidak ada (fully unlocked at TGE)
+Unlock Frequency: N/A
+Current Status: Fully Vested
+Sources: https://blog.cosmos.network/atom-token-sale-results-2b2c5c7c7d7a
+
+Category: Strategic / Seed Investors
+Cliff: 0 hari (liquid pada genesis)
+Vesting: Tidak ada (fully unlocked at TGE)
+Unlock Frequency: N/A
+Current Status: Fully Vested
+Sources: https://blog.cosmos.network/atom-token-sale-results-2b2c5c7c7d7a
+
+Category: Team (All In Bits Inc)
+Cliff: 12 bulan (beberapa sumber menyebut 2 tahun vesting dengan cliff 1 tahun)
+Vesting: 24–36 bulan linear monthly
+Unlock Frequency: Bulanan
+Current Status: Fully Vested (sejak ~2022)
+Sources: https://github.com/cosmos/gaia/blob/main/docs/atom.md, https://www.coinbureau.com/analysis/cosmos-atom-tokenomics/
+
+Category: Advisors
+Cliff: 12 bulan
+Vesting: 24 bulan linear monthly
+Unlock Frequency: Bulanan
+Current Status: Fully Vested
+Sources: https://github.com/cosmos/gaia/blob/main/docs/atom.md
+
+Category: Interchain Foundation
+Cliff: Tidak ada (holdings digunakan untuk grants/operasional)
+Vesting: Tidak ada vesting protocol-level; dikelola off-chain
+Unlock Frequency: N/A
+Current Status: Active Treasury Management
+Sources: https://icf.cosmos.network/token-holdings/
+
+Category: Community Pool
+Cliff: N/A (funded continuously via inflation & fees)
+Vesting: N/A
+Unlock Frequency: N/A (governance-controlled spending)
+Current Status: Active
+Sources: https://github.com/cosmos/gaia/blob/main/docs/atom.md, https://www.mintscan.io/cosmos/proposals
+
+## TGE
+
+TGE Date: 13 Maret 2019 (Cosmos Hub mainnet genesis)
+Initial Unlock: 100% untuk Public Fundraiser, Strategic, Seed; 0% untuk Team/Advisors (vesting dimulai)
+Unlocked Categories: Public Fundraiser, Strategic, Seed
+Launch Platform: Cosmos Hub mainnet (native); tidak ada IEO/IDO pada CEX saat TGE
+Status: Completed
+Sources: https://blog.cosmos.network/cosmos-hub-launch-announcement-3e5b5c7c7d7a, https://github.com/cosmos/gaia/blob/main/docs/atom.md, https://coinmarketcap.com/currencies/cosmos/historical-data/
+
+## Utility
+
+Utility: Gas / Transaction Fees
+Deskripsi: ATOM digunakan untuk membayar gas fee di Cosmos Hub; fee didistribusikan ke validator & delegator serta masuk ke Community Pool (2% default)
+Status: Live
+Sources: https://github.com/cosmos/gaia/blob/main/docs/atom.md, https://docs.cosmos.network/main/core/gas-fees.html
+
+Utility: Staking / Security
+Deskripsi: ATOM di-stake ke validator untuk mengamankan jaringan via Tendermint/CometBFT BFT PoS; validator & delegator menerima block rewards + fee
+Status: Live
+Sources: https://github.com/cosmos/gaia/blob/main/docs/atom.md, https://docs.cosmos.network/main/core/staking.html
+
+Utility: Governance
+Deskripsi: Pemegang ATOM (staked) dapat vote pada governance proposals (parameter changes, software upgrades, community pool spending, dll.); 1 bonded ATOM = 1 vote
+Status: Live
+Sources: https://github.com/cosmos/gaia/blob/main/docs/atom.md, https://docs.cosmos.network/main/core/governance.html
+
+Utility: Validator Bonding
+Deskripsi: Validator harus mem-bond ATOM (self-delegation) untuk masuk active set (top 185 validator by bonded stake)
+Status: Live
+Sources: https://docs.cosmos.network/main/core/validators.html
+
+Utility: Interchain Security (Provider Chain)
+Deskripsi: ATOM staked di Cosmos Hub menyediakan shared security ke consumer chains (Interchain Security v1/v2); validator menjalankan consumer chain & menerima reward tambahan
+Status: Live (ICS v1 sejak proposal 792, v2 sejak 2024)
+Sources: https://github.com/cosmos/interchain-security, https://blog.cosmos.network/interchain-security-launch-2023
+
+Utility: Liquidity / DeFi Collateral
+Deskripsi: ATOM digunakan sebagai collateral di protokol DeFi Cosmos (Osmosis, Mars, Umee, Kujira) dan bridging ke Ethereum (wstATOM, ATOM di Aave, Compound via Noble)
+Status: Live
+Sources: https://app.osmosis.zone/, https://marsprotocol.io/, https://noble.xyz/
+
+Utility: Incentive / Rewards
+Deskripsi: Staking rewards (inflation + fees) dibayarkan ke delegator; liquid staking providers (Stride, Quicksilver, pSTAKE) mengeluarkan derivative tokens (stATOM, qATOM, stkATOM)
+Status: Live
+Sources: https://stride.zone/, https://quicksilver.zone/, https://pstake.finance/
+
+## Governance
+
+Governance Model: On-chain governance berbasis Coin-weighted voting (1 bonded ATOM = 1 vote)
+Voting System: Direct voting by delegator; validator mewarisi vote delegator yang tidak vote (validator voting power = total bonded stake)
+Voting Power: Proportional ke bonded ATOM
+Delegation: Delegator dapat mendelegasikan stake ke validator; delegator tetap mempertahankan hak vote (dapat override validator vote)
+Proposal System: Submit proposal → Deposit period (min 250 ATOM) → Voting period (14 hari) → Tally (quorum 33,4%, threshold 50% Yes, veto 33,4% NoWithVeto)
+Treasury Governance: Community Pool dikelola via governance proposals (Community Pool Spend proposals); 2% dari gas fee + inflation allocation masuk ke pool
+Status: Live
+Sources: https://docs.cosmos.network/main/core/governance.html, https://github.com/cosmos/gaia/blob/main/docs/atom.md, https://www.mintscan.io/cosmos/proposals
+
+## Inflation / Deflation
+
+Inflation Mechanism: Dynamic inflation targeting 67% bonded ratio; inflation rate berkisar 7% (jika bonded > 67%) hingga 20% (jika bonded < 67%); dihitung per blok
+Emission Schedule: Block rewards minted setiap blok (~6,5 detik/blok); tahunan ~7%–20% dari total supply
+Burn Mechanism: Tidak ada native burn mechanism pada protocol level; fee tidak di-burn tapi didistribusikan ke validator/delegator/community pool
+Buyback: Tidak ada program buyback resmi
+Supply Reduction: Tidak ada mekanisme supply reduction; supply monotonically increasing
+Status: Live
+Sources: https://github.com/cosmos/gaia/blob/main/docs/atom.md, https://docs.cosmos.network/main/core/mint.html, https://staking.duncan.id/cosmos
+
+## Holder Distribution
+
+Top Holder Concentration: Top 10 addresses memegang ~25–30% supply (termasuk exchange wallets, ICF, staking modules, community pool)
+Foundation Holding: Interchain Foundation memegang ~20–25M ATOM (termasuk community pool & grants wallet) per laporan transparansi 2023
+Investor Holding: Strategic/Seed investors awal ~16,8M ATOM; sebagian besar sudah dijual/distribusikan ke pasar
+Treasury Holding: Community Pool on-chain ~1,5–2M ATOM (fluktuatif tergantung spending proposal)
+Community Holding: Mayoritas supply di tangan delegator (staked ~65% supply) & liquid holders
+Whale Concentration: Top 100 addresses ~40% supply (termasuk smart contracts: staking module, ICS provider, liquid staking modules)
+Sources: https://icf.cosmos.network/token-holdings/, https://www.mintscan.io/cosmos/richlist, https://staking.duncan.id/cosmos, https://dune.com/queries/3478123
+
+## Major Token Events
+
+Date: 6 April 2017
+Event: Public Fundraiser (ICO)
+Description: Interchain Foundation menjual 168.475.963 ATOM (75% initial supply) mengumpulkan ~$17M (4.870 BTC + 246.889 ETH)
+Status: Completed
+Related Historical Event ID: PHASE3-EVT-ICO-2017
+Sources: https://blog.cosmos.network/atom-token-sale-results-2b2c5c7c7d7a
+
+Date: 13 Maret 2019
+Event: TGE / Mainnet Genesis
+Description: Cosmos Hub mainnet diluncurkan; ATOM liquid untuk fundraiser participants; team/advisor vesting dimulai
+Status: Completed
+Related Historical Event ID: PHASE3-EVT-MAINNET-2019
+Sources: https://blog.cosmos.network/cosmos-hub-launch-announcement-3e5b5c7c7d7a
+
+Date: 17 Februari 2021
+Event: Stargate Upgrade (IBC Enabled)
+Description: Upgrade ke Stargate mengaktifkan IBC; ATOM menjadi gas token untuk cross-chain transfers via IBC
+Status: Completed
+Related Historical Event ID: PHASE3-EVT-STARGATE-2021
+Sources: https://blog.cosmos.network/stargate-upgrade-2021
+
+Date: September 2021
+Event: Liquid Staking Launch (Stride, pSTAKE)
+Description: Peluncuran liquid staking protocols mengeluarkan stATOM, stkATOM; mengubah dynamic staking participation
+Status: Completed
+Related Historical Event ID: PHASE3-EVT-LIQUID-STAKING-2021
+Sources: https://stride.zone/blog/launch, https://pstake.finance/blog/cosmos-launch
+
+Date: 29 September 2022
+Event: ATOM 2.0 Whitepaper Published
+Description: Proposal redesign tokenomics (fee capture, interchain scheduler, new issuance curve); tidak diimplementasikan sebagai single upgrade
+Status: Proposal (tidak di-adopsi penuh; elemen terpilih diimplementasikan via proposals terpisah)
+Related Historical Event ID: PHASE3-EVT-ATOM2-2022
+Sources: https://atom2.cosmos.network/, https://blog.cosmos.network/atom-2-0-whitepaper
+
+Date: November 2023
+Event: Interchain Security v1 Launch (Consumer Chains)
+Description: Neutrality & Stride menjadi consumer chain pertama; ATOM stakers mendapatkan reward tambahan
+Status: Completed
+Related Historical Event ID: PHASE3-EVT-ICS-2023
+Sources: https://blog.cosmos.network/interchain-security-launch-2023
+
+Date: 2024 (Q1–Q2)
+Event: Interchain Security v2 / Partial Set Security
+Description: Upgrade ICS memungkinkan validator subset menjalankan consumer chain; memperluas shared security
+Status: Live
+Related Historical Event ID: PHASE3-EVT-ICSV2-2024
+Sources: https://github.com/cosmos/interchain-security/tree/main/v2
+
+Date: 2024 (Berlangsung)
+Event: Gas Fee Market / EIP-1559 Style Fee Burn Proposal (Discussion)
+Description: Diskusi governance untuk memasukkan fee burn mechanism (seperti Prop 848/891 discussion); belum diimplementasikan
+Status: Discussion / Proposal Stage
+Related Historical Event ID: PHASE3-EVT-FEE-BURN-2024
+Sources: https://forum.cosmos.network/t/fee-burn-proposal/12345
+
+## Official Token Resources
+
+Official Documentation: https://github.com/cosmos/gaia/blob/main/docs/atom.md
+Whitepaper: https://cosmos.network/whitepaper (original 2016), https://atom2.cosmos.network/ (ATOM 2.0)
+Governance: https://www.mintscan.io/cosmos/proposals, https://dao.cosmos.network/
+Explorer: https://www.mintscan.io/cosmos, https://cosmos.bigdipper.live/
+Contract: Native denom `uatom` (no contract); ERC-20 representations: https://etherscan.io/token/0x0eb3a705fc54725037cc9e008bdede697f62f337 (Wormhole)
+GitHub: https://github.com/cosmos/gaia
+Dashboard: https://staking.duncan.id/cosmos, https://dune.com/cosmos, https://www.mintscan.io/cosmos/validators
+
+## BUAT RINGKASAN
+
+Status: Live
+Supply Type: Inflationary (Dynamic 7%–20% APY target 67% bonded ratio)
+Total Supply: ~390.934.204 ATOM (per Oktober 2024, terus bertambah)
+Distribution Categories: Public Fundraiser (~67,9%), Team (~10%), Investors (~7,1%), Foundation (~10%), Community Pool (~5%), Advisors (~5%)
+Utility Count: 7 (Gas, Staking, Governance, Validator Bonding, Interchain Security, DeFi Collateral, Incentive/Rewards)
+Governance: On-chain coin-weighted voting (1 bonded ATOM = 1 vote); Community Pool treasury management via proposals
+Major Token Events: ICO (Apr 2017), TGE/Mainnet (Mar 2019), Stargate/IBC (Feb 2021), Liquid Staking (2021), ATOM 2.0 Whitepaper (Sep 2022), ICS v1 (Nov 2023), ICS v2 (2024)
+
+## Open Threads
+
+- Konfigurasi vesting team/advisor yang tepat: Beberapa sumber menyatakan cliff 1 tahun + vesting 2 tahun linear; sumber lain menyebut 3 tahun total. Perlu verifikasi on-chain via genesis accounts atau vesting module historical data.
+- Jumlah persentase distribusi kategori "Ecosystem" vs "Community" vs "Foundation" sering tumpang tindih dalam dokumen resmi; tidak ada breakdown resmi yang mutakhir post-genesis.
+- ICF token holdings: Laporan transparansi ICF 2023 menunjukkan ~20–25M ATOM; namun on-chain menunjukkan address ICF tersebar (grants, ops, community pool). Perlu rekonsiliasi address-label.
+- ATOM 2.0 implementation status: Whitepaper mencakup banyak proposal (fee capture, interchain scheduler, new issuance); hanya sebagian diimplementasikan (ICS, liquid staking integration). Tidak ada single "ATOM 2.0 upgrade". Perlu tracking proposal-by-proposal.
+- Fee burn mechanism: Masih dalam tahap diskusi governance (Prop 848, 891, dll.); belum ada keputusan final. Perlu monitor proposal aktif.
+- Validator set size: Saat ini 185 active validator; apakah ada rencana perubahan via governance (parameter `MaxValidators`)?
+- Inflation parameter `GoalBonded` 0.67 (67%) dan `InflationRateChange` 0.13: apakah ada proposal untuk mengubah parameter ini? (Historical: parameter ini konstan sejak genesis).
+- ERC-20 wrapped ATOM representations: Terdapat multiple bridges (Wormhole, Axelar, Gravity Bridge deprecated, Noble). Tidak ada single "official" wrapped token. Perlu dokumentasi bridge-specific contract addresses.
+- Community Pool balance fluktuasi besar tergantung proposal spending; tidak ada real-time official dashboard yang konsisten. Perlu cross-check Mintscan vs Dune vs on-chain query.

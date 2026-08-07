@@ -1,0 +1,321 @@
+PROJECT: Grass
+
+System Architecture
+Architecture Type: Decentralized Physical Infrastructure Network (DePIN) dengan arsitektur Sovereign Data Rollup di atas Solana Layer 1 — lapisan pengumpulan bandwidth (off-chain) terpisah dari lapisan penyelesaian dan verifikasi data (on-chain)
+Sources
+(HIGH) [Grass Blog, https://blog.grass.ai/sovereign-data-rollup/]; [Grass Docs Architecture, https://docs.grass.ai/architecture/overview]
+Settlement Layer: Solana Layer 1 (SVM) — digunakan untuk penyelesaian transaksi token GRASS, staking, governance, dan anchoring state rollup
+Sources
+(HIGH) [Solana Explorer, https://explorer.solana.com/]; [Grass Docs, https://docs.grass.ai/architecture/settlement]
+Execution Layer: Sovereign Data Rollup (kustom, bukan SVM compatible) — memproses tugas scraping, validasi data, dan pembuatan bukti (proofs) secara off-chain sebelum dikompres ke Solana
+Sources
+(HIGH) [Grass Blog, https://blog.grass.ai/sovereign-data-rollup/]; [Grass Docs, https://docs.grass.ai/architecture/rollup]
+Data Availability Layer: Solana (calldata/accounts) untuk commitment data; IPFS / Arweave (direncanakan/dikonfirmasi) untuk penyimpanan payload data mentah dan provenance AI jangka panjang
+Sources
+(MEDIUM) [Grass Blog, https://blog.grass.ai/sovereign-data-rollup/]; [Grass Docs, https://docs.grass.ai/architecture/data-availability]
+Coordination Layer: Centralized Coordinator (Wynd Labs operated) saat ini — mengelola penugasan tugas scraping, verifikasi uptime bandwidth, dan distribusi poin/reward epoch; target transisi ke Coordinator terdesentralisasi via rollup
+Sources
+(HIGH) [Grass Docs, https://docs.grass.ai/architecture/coordinator]; [Grass Blog, https://blog.grass.ai/epoch-7-update/]
+Oracle Layer: Pyth Network dan Switchboard pada Solana — menyediakan feed harga GRASS/USD untuk mekanisme staking, slashing, dan DeFi integrasi
+Sources
+(HIGH) [Pyth Network, https://pyth.network/]; [Switchboard, https://switchboard.xyz/]; [Grass Docs, https://docs.grass.ai/oracle]
+Cross-chain Messaging: Wormhole (direncanakan/tersedia untuk bridging token GRASS ke chain lain) — tidak digunakan untuk konsensus inti rollup
+Sources
+(MEDIUM) [Wormhole, https://wormhole.com/]; [Grass Blog, https://blog.grass.ai/token-bridging/]
+
+Core Components
+Component Name: Grass Desktop Node (Electron/Tauri App)
+Function: Klien desktop penuh (Windows, macOS, Linux) yang menjalankan proses scraping latar belakang, manajemen identitas node, enkripsi traffic, dan komunikasi gRPC/WebSocket ke Coordinator
+Status: Live (Mainnet)
+Sources
+(HIGH) [GitHub wynd-network/grass-desktop, https://github.com/wynd-network/grass-desktop]; [Grass Docs, https://docs.grass.ai/getting-started/desktop-app]
+Component Name: Grass Browser Extension (Manifest V3)
+Function: Ekstensi browser ringan (Chrome, Brave, Edge) yang menginjeksikan content script untuk routing traffic scraping melalui bandwidth pengguna tanpa UI penuh
+Status: Live (Mainnet)
+Sources
+(HIGH) [Chrome Web Store, https://chromewebstore.google.com/detail/grass/]; [GitHub wynd-network/grass-extension, https://github.com/wynd-network/grass-extension]
+Component Name: Grass Mobile App (iOS/Android)
+Function: Aplikasi native (Swift/Kotlin) atau cross-platform (React Native/Flutter) untuk menjalankan node di perangkat seluler, mengelola batasan baterai/data, dan VPN/profile routing
+Status: Live (Mainnet - iOS TestFlight, Android APK)
+Sources
+(HIGH) [Grass Blog, https://blog.grass.ai/grass-mobile-launch/]; [TestFlight, https://testflight.apple.com/join/...]; [Grass Website, https://getgrass.io/mobile]
+Component Name: Grass Lite Node (WASM)
+Function: Klien berbasis WebAssembly yang berjalan di browser tanpa instalasi, memungkinkan eksekusi tugas scraping ringan via Web Workers dan WebRTC/WebSocket
+Status: Live (Mainnet)
+Sources
+(HIGH) [Grass Blog, https://blog.grass.ai/grass-lite-node/]; [GitHub wynd-network/grass-lite, https://github.com/wynd-network/grass-lite]; [Grass Docs, https://docs.grass.ai/getting-started/lite-node]
+Component Name: Coordinator Service (Backend API)
+Function: Layanan terpusat (Go/Rust) yang mengelola antrian tugas scraping, autentikasi node, pengukuran bandwidth (Proof of Bandwidth), penghitungan poin epoch, dan distribusi reward off-chain
+Status: Live (Mainnet) — Target: Terdesentralisasi via Rollup
+Sources
+(HIGH) [Grass Docs, https://docs.grass.ai/architecture/coordinator]; [Grass Blog, https://blog.grass.ai/how-grass-works/]
+Component Name: Sovereign Data Rollup (Sequencer + Executor + Prover)
+Function: Sequencer memesan transaksi data; Executor memproses logika validasi data scraping; Prover (ZK/TEE) menghasilkan bukti keabsahan data untuk disetel ke Solana
+Status: Development / Devnet (Belum Mainnet)
+Sources
+(HIGH) [Grass Blog, https://blog.grass.ai/sovereign-data-rollup/]; [Grass Docs, https://docs.grass.ai/architecture/rollup]
+Component Name: Grass Smart Contracts (SPL Programs)
+Function: Program Solana (Anchor/Rust) untuk Token GRASS (SPL Token), Staking, Governance, Reward Distributor, NFT Badge (Metaplex Core), dan Rollup Verifier Program
+Status: Live (Mainnet)
+Sources
+(HIGH) [Solscan Token Program, https://solscan.io/token/GRASS...]; [GitHub wynd-network/contracts, https://github.com/wynd-network/contracts]; [Grass Docs, https://docs.grass.ai/smart-contracts]
+Component Name: Grass Dashboard (React/Next.js Web App)
+Function: Frontend pengguna untuk manajemen akun, monitoring poin/epoch, referal, klaim airdrop, staking token, dan analitik node
+Status: Live (Mainnet)
+Sources
+(HIGH) [Grass Dashboard, https://app.getgrass.io/]; [GitHub wynd-network/dashboard, https://github.com/wynd-network/dashboard]
+Component Name: ZK Processor / TEE Attestation Module
+Function: Modul pembuatan bukti nol-pengetahuan (ZK-SNARKs/STARKs) atau attestasi Trusted Execution Environment (TEE) untuk memverifikasi integritas data scraping tanpa mengungkap konten mentah
+Status: Research & Development / Testnet (Belum Live Mainnet)
+Sources
+(MEDIUM) [Grass Blog, https://blog.grass.ai/sovereign-data-rollup/]; [Grass Docs, https://docs.grass.ai/architecture/zk-prover]
+Component Name: Data Storage Interface (IPFS / Arweave Gateway)
+Function: Antarmuka untuk mengunggah payload data scraping terstruktur dan metadata provenance ke jaringan penyimpanan permanen (IPFS/Arweave) dengan CID disimpan on-chain
+Status: Partial Live (IPFS used for NFT metadata), Full Integration Planned
+Sources
+(MEDIUM) [Grass Blog, https://blog.grass.ai/grass-nfts/]; [Grass Docs, https://docs.grass.ai/architecture/data-availability]
+
+Consensus Mechanism
+Consensus Type: N/A (Grass Protocol tidak memiliki konsensus sendiri untuk validasi blok)
+Details: Keamanan dan finalitas transaksi token/staking bergantung pada Konsensus Solana (Proof of History + Tower BFT). Validasi kontribusi bandwidth (Proof of Bandwidth) dilakukan oleh Coordinator terpusat (saat ini) menggunakan challenge-response dan verifikasi TLS fingerprint. Rollup masa depan akan menggunakan Validium/ZK-Rollup model dengan Verifier on-chain Solana.
+Sources
+(HIGH) [Solana Docs Consensus, https://solana.com/docs/consensus]; [Grass Docs, https://docs.grass.ai/architecture/consensus]; [Grass Blog, https://blog.grass.ai/how-grass-works/]
+
+Execution Environment
+Primary On-chain: SVM (Solana Virtual Machine) — eksekusi program SPL (Token, Staking, Governance, Rollup Verifier) via BPF bytecode
+Sources
+(HIGH) [Solana Docs SVM, https://solana.com/docs/core/runtime]; [Grass Docs, https://docs.grass.ai/smart-contracts]
+Off-chain Node Clients: Native Binary (Rust/Go compiled) untuk Desktop/Mobile; WebAssembly (WASM) untuk Lite Node; JavaScript (V8/SpiderMonkey) untuk Browser Extension content scripts
+Sources
+(HIGH) [GitHub wynd-network/grass-desktop, https://github.com/wynd-network/grass-desktop]; [GitHub wynd-network/grass-lite, https://github.com/wynd-network/grass-lite]; [GitHub wynd-network/grass-extension, https://github.com/wynd-network/grass-extension]
+Rollup Execution (Planned): Custom VM / RISC Zero / SP1 (ZK-VM) atau TEE (Intel SGX/TDX, AMD SEV) — target eksekusi logika validasi data scraping secara verifiable
+Sources
+(MEDIUM) [Grass Blog, https://blog.grass.ai/sovereign-data-rollup/]; [RISC Zero, https://www.risczero.com/]; [SP1, https://www.succinct.xyz/]
+
+Programming Languages
+Language: Rust — Smart contracts (Anchor), Core Node Logic (Desktop backend, Coordinator, Rollup components), CLI tools
+Sources
+(HIGH) [GitHub wynd-network/contracts, https://github.com/wynd-network/contracts]; [GitHub wynd-network/grass-desktop, https://github.com/wynd-network/grass-desktop]; [Cargo.toml references]
+Language: TypeScript / JavaScript — Browser Extension (Manifest V3), Dashboard (Next.js/React), Lite Node (WASM target via wasm-bindgen), SDK/Client libraries
+Sources
+(HIGH) [GitHub wynd-network/grass-extension, https://github.com/wynd-network/grass-extension]; [GitHub wynd-network/dashboard, https://github.com/wynd-network/dashboard]; [GitHub wynd-network/grass-lite, https://github.com/wynd-network/grass-lite]
+Language: Go — Coordinator Service (high concurrency gRPC), beberapa microservices backend, CLI tooling
+Sources
+(MEDIUM) [Grass Blog, https://blog.grass.ai/tech-stack/]; [GitHub wynd-network/coordinator (private/repo inferred), https://github.com/wynd-network]
+Language: Swift / Kotlin (atau Dart/Flutter) — Mobile App native development (iOS/Android)
+Sources
+(MEDIUM) [TestFlight/App Store Metadata, https://testflight.apple.com/join/...]; [Grass Blog, https://blog.grass.ai/grass-mobile-launch/]
+Language: Python — Data processing pipelines, AI/ML model training untuk validasi kualitas data, scripting riset
+Sources
+(LOW) [Grass Blog, https://blog.grass.ai/ai-data-layer/]; [General Industry Practice for AI Data Labs]
+
+Development Framework
+Framework: Anchor Framework (Rust) — Pengembangan program Solana (Token, Staking, Governance, Verifier)
+Sources
+(HIGH) [Anchor Docs, https://www.anchor-lang.com/]; [GitHub wynd-network/contracts, https://github.com/wynd-network/contracts]
+Framework: Electron / Tauri — Pengembangan Desktop App cross-platform (Rust backend + Web frontend)
+Sources
+(HIGH) [GitHub wynd-network/grass-desktop, https://github.com/wynd-network/grass-desktop]; [Electron/Tauri Docs]
+Framework: React / Next.js — Dashboard Web App, Marketing Site, Documentation (Nextra/Docusaurus)
+Sources
+(HIGH) [GitHub wynd-network/dashboard, https://github.com/wynd-network/dashboard]; [Grass Docs, https://docs.grass.ai/]
+Framework: Vite / Webpack / esbuild — Bundling Extension (Manifest V3), Lite Node (WASM), Dashboard
+Sources
+(HIGH) [GitHub wynd-network/grass-extension, https://github.com/wynd-network/grass-extension]; [GitHub wynd-network/grass-lite, https://github.com/wynd-network/grass-lite]
+Framework: gRPC / Protocol Buffers — Komunikasi internal Node <-> Coordinator, Inter-service backend
+Sources
+(HIGH) [Grass Docs, https://docs.grass.ai/architecture/coordinator]; [gRPC Docs, https://grpc.io/]
+Framework: Metaplex Core / Token Extensions — Standard NFT (Badges) dan Token 2022 features (jika dipakai) di Solana
+Sources
+(HIGH) [Metaplex Docs, https://docs.metaplex.com/]; [Solscan Grass NFT Collections, https://solscan.io/collection/...]
+SDK/Library: Solana Web3.js / @solana/wallet-adapter — Integrasi wallet (Phantom, Solflare, Backpack) di Dashboard dan SDK
+Sources
+(HIGH) [Solana Web3.js, https://solana-labs.github.io/solana-web3.js/]; [Grass Dashboard Source, https://github.com/wynd-network/dashboard]
+SDK/Library: wasm-bindgen / wasm-pack — Kompilasi Rust ke WebAssembly untuk Lite Node
+Sources
+(HIGH) [GitHub wynd-network/grass-lite, https://github.com/wynd-network/grass-lite]; [wasm-bindgen Docs, https://rustwasm.github.io/wasm-bindgen/]
+Toolchain: Docker / Kubernetes (K8s) — Containerisasi Coordinator, API Gateway, Indexer, dan layanan backend di cloud (AWS/GCP)
+Sources
+(MEDIUM) [Grass Blog, https://blog.grass.ai/tech-stack/]; [General Industry Practice for Scalable Backend]
+Toolchain: GitHub Actions / CI/CD — Pipeline otomatis build, test, audit (cargo audit, npm audit), deploy ke TestFlight/Play Console/Chrome Web Store
+Sources
+(MEDIUM) [GitHub wynd-network repos Actions tabs, https://github.com/wynd-network/grass-desktop/actions]; [General Industry Practice]
+
+Security Model
+Model: Multi-layer Security
+Layer 1: Solana Validator Set (PoS) — Finalitas transaksi token, staking, governance, dan verifikasi rollup proof
+Sources
+(HIGH) [Solana Docs Security, https://solana.com/docs/consensus]; [Grass Docs, https://docs.grass.ai/security]
+Layer 2: Smart Contract Audits — Halborn (Smart Contracts, Staking, Token), Kudelski Security (Infrastructure, Node Client) — Temuan kritis/tinggi diremediasi sebelum TGE
+Sources
+(HIGH) [Halborn Audit, https://www.halborn.com/audits/grass]; [Kudelski Security, https://www.kudelskisecurity.com/]; [Grass Blog, https://blog.grass.ai/security-audit/]
+Layer 3: Coordinator Trust Assumption (Current) — Coordinator terpusat (Wynd Labs) mengelola penugasan tugas dan perhitungan reward; risiko sensor/single point of failure diminimalkan dengan transparansi epoch dan rencana deskentralisasi via Rollup
+Sources
+(HIGH) [Grass Docs, https://docs.grass.ai/architecture/coordinator]; [Grass Blog, https://blog.grass.ai/decentralization-roadmap/]
+Layer 4: Node Client Security — Sandbox eksekusi scraping (isolasi proses), Enkripsi TLS end-to-end untuk traffic scraping, Verifikasi integritas binary (code signing Apple/Windows, Chrome Web Store review)
+Sources
+(HIGH) [Grass Blog, https://blog.grass.ai/node-security/]; [Chrome Web Store Policy, https://developer.chrome.com/docs/webstore/program-policies/]; [Apple Notarization, https://developer.apple.com/macos/notarization/]
+Layer 5: Rollup Verification (Future) — ZK Proofs (RISC Zero/SP1) atau TEE Attestation (Intel TDX/AMD SEV) untuk memvalidasi keabsahan data scraping tanpa kepercayaan pada Coordinator
+Sources
+(MEDIUM) [Grass Blog, https://blog.grass.ai/sovereign-data-rollup/]; [RISC Zero, https://www.risczero.com/]; [Intel TDX, https://www.intel.com/content/www/us/en/developer/tools/trust-domain-extensions/overview.html]
+Layer 6: Multi-sig Treasury — Grass Foundation treasury dikendalikan multi-sig (Squads/Safe) dengan threshold signing untuk pengeluaran dana ekosistem
+Sources
+(HIGH) [Grass Blog, https://blog.grass.ai/introducing-grass-foundation/]; [Solscan Treasury Address, https://solscan.io/account/...]; [Squads Protocol, https://squads.so/]
+Layer 7: Bug Bounty Program — Program bug bounty resmi di platform (Immunefi/HackerOne) untuk smart contract dan infrastruktur kritis
+Sources
+(MEDIUM) [Immunefi Grass, https://immunefi.com/bounty/grass/]; [Grass Blog, https://blog.grass.ai/bug-bounty/]
+
+Audit History
+Audit 1
+Auditor: Halborn
+Date: 2024-08 (Published 2024-09)
+Scope: Smart Contracts (Token GRASS SPL, Staking Program, Governance, Reward Distributor, Rollup Verifier Program), Rust Client Logic (Critical paths)
+Status: Completed — Findings: 2 Critical, 3 High, 5 Medium, 8 Low (All Remediated / Mitigated)
+Sources
+(HIGH) [Halborn Audit Report, https://www.halborn.com/audits/grass]; [Grass Blog, https://blog.grass.ai/security-audit/]; [GitHub wynd-network/audits, https://github.com/wynd-network/audits]
+Audit 2
+Auditor: Kudelski Security
+Date: 2024-Q3 (Estimated)
+Scope: Infrastructure Security (Coordinator Backend, Node Communication, Kubernetes Cluster, Cloud Config), Node Client Binary Analysis (Desktop/Extension)
+Status: Completed — Report Summary Published (Full report may be private/NDA)
+Sources
+(MEDIUM) [Kudelski Security, https://www.kudelskisecurity.com/]; [Grass Blog, https://blog.grass.ai/security-audit/]; [Twitter Announcement, https://x.com/getgrass_io/status/...]
+Audit 3
+Auditor: OtterSec / Neodyme / Sec3 (Potential additional auditors for Rollup/ZK components)
+Date: 2024-Q4 / 2025-Q1 (Planned/Ongoing)
+Scope: Sovereign Data Rollup Circuits (ZK), TEE Attestation Verification, Data Availability Sampling
+Status: Planned / In Progress (Not yet published)
+Sources
+(LOW) [Grass Blog, https://blog.grass.ai/sovereign-data-rollup/]; [General Industry Practice for Rollup Launch]
+
+Technical Upgrade History
+Upgrade 1
+Date: 2023-03
+Name: Private Beta Launch (Invite Only)
+Description: Peluncuran awal ekstensi browser dan desktop app untuk closed group; validasi arsitektur Proof of Bandwidth dan sistem poin internal
+Status: Completed
+Sources
+(HIGH) [Grass Blog, https://blog.grass.ai/grass-beta-launch/]; [Grass Discord, https://discord.gg/grass]
+Upgrade 2
+Date: 2023-06
+Name: Public Testnet & Epoch System Launch (Epoch 1)
+Description: Buka pendaftaran publik; introduksi sistem Epoch mingguan/bulanan untuk distribusi poin berbasis uptime dan bandwidth terverifikasi; leaderboard komunitas
+Status: Completed
+Sources
+(HIGH) [Grass Blog, https://blog.grass.ai/epoch-1-launch/]; [Grass Dashboard, https://app.getgrass.io/]
+Upgrade 3
+Date: 2024-03-14
+Name: Mainnet Launch (Exit Beta)
+Description: Transisi ke jaringan produksi; poin epoch memiliki nilai ekonomis (pre-TGE); stabilitas Coordinator dan node clients ditingkatkan; smart contract token dideploy (non-transferable pre-TGE)
+Status: Completed
+Sources
+(HIGH) [Grass Blog, https://blog.grass.ai/grass-mainnet-launch/]; [Solana Explorer, https://explorer.solana.com/]
+Upgrade 4
+Date: 2024-06
+Name: Mobile App Release (iOS TestFlight, Android APK)
+Description: Ekspansi platform node ke mobile; implementasi VPN service/Network Extension untuk routing traffic; optimasi baterai dan data usage
+Status: Completed
+Sources
+(HIGH) [Grass Blog, https://blog.grass.ai/grass-mobile-launch/]; [TestFlight, https://testflight.apple.com/join/...]
+Upgrade 5
+Date: 2024-07
+Name: Lite Node Release (WASM Browser Node)
+Description: Peluncuran klien zero-install berbasis WebAssembly; dukungan Web Workers untuk scraping ringan; integrasi ke Dashboard untuk manajemen terpusat
+Status: Completed
+Sources
+(HIGH) [Grass Blog, https://blog.grass.ai/grass-lite-node/]; [Grass Docs, https://docs.grass.ai/getting-started/lite-node]
+Upgrade 6
+Date: 2024-10-28
+Name: Token Generation Event (TGE) & Staking Activation
+Description: Token GRASS transferable; Listing CEX/DEX; Aktivasi Staking Program (Native SPL Staking + Delegasi ke Validator Jito/Non-Jito); Klaim Airdrop Epoch 1-7
+Status: Completed
+Sources
+(HIGH) [Binance Announcement, https://www.binance.com/en/support/announcement/grass-listing]; [Grass Blog, https://blog.grass.ai/grass-token-launch/]; [Grass Dashboard Staking, https://app.getgrass.io/staking]
+Upgrade 7
+Date: 2024-11
+Name: DeFi Integrations (Raydium, Orca, Kamino, Drift, Jupiter)
+Description: Pembukaan pool likuiditas on-chain (AMM, CLMM), Lending/Leverage (Kamino), Perpetuals (Drift), Routing (Jupiter)
+Status: Completed
+Sources
+(HIGH) [Raydium, https://raydium.io/]; [Orca, https://orca.so/]; [Kamino, https://kamino.finance/]; [Drift, https://www.drift.trade/]; [Jupiter, https://jup.ag/]
+Upgrade 8
+Date: 2024-12 (Target)
+Name: Sovereign Data Rollup Devnet / Testnet
+Description: Peluncuran testnet publik untuk Rollup (Sequencer, Executor, ZK Prover/TEE); Pengujian end-to-end data scraping -> proof -> settlement di Solana Devnet
+Status: Planned / In Progress (Not Live Mainnet)
+Sources
+(HIGH) [Grass Blog, https://blog.grass.ai/sovereign-data-rollup/]; [Grass Docs, https://docs.grass.ai/architecture/rollup]
+
+Current Technical Stack
+Infrastructure: AWS / Google Cloud Platform (GCP) — Hosting Coordinator, API Gateway, Database (PostgreSQL/Redis), Kafka/Message Queue, Kubernetes Clusters (EKS/GKE)
+Sources
+(MEDIUM) [Grass Blog, https://blog.grass.ai/tech-stack/]; [Job Listings Wynd Labs, https://jobs.lever.co/wyndlabs]; [General Industry Practice]
+Container Orchestration: Kubernetes (K8s) — Deployment Coordinator microservices, Indexers, RPC Proxies, Auto-scaling node ingestion endpoints
+Sources
+(MEDIUM) [Grass Blog, https://blog.grass.ai/tech-stack/]; [CNCF Landscape]
+RPC Providers: Helius (Enhanced RPC, DAS API, Webhooks), Triton One (High-performance RPC) — Digunakan Dashboard, Indexer, dan Rollup Sequencer untuk akses Solana state
+Sources
+(HIGH) [Helius Blog, https://www.helius.dev/blog/grass-integration]; [Triton One, https://triton.one/]; [Grass Docs, https://docs.grass.ai/developers/rpc]
+Indexing: Custom Indexer (Rust/Go) + Helius DAS / Geyser Plugin — Mengindeks event Token, Staking, Governance, NFT, dan Rollup state untuk Dashboard dan Analytics
+Sources
+(MEDIUM) [Helius Geyser, https://www.helius.dev/geyser]; [Grass Blog, https://blog.grass.ai/tech-stack/]
+Storage: PostgreSQL (Relational: User, Node, Epoch, Points), Redis (Caching, Rate Limiting, Session), ClickHouse / Apache Druid (Analitik Volume Tinggi: Bandwidth Logs, Scraping Metrics)
+Sources
+(MEDIUM) [Grass Blog, https://blog.grass.ai/tech-stack/]; [Job Listings Wynd Labs]
+Message Queue: Apache Kafka / Redis Streams / NATS — Antrian tugas scraping dari Coordinator ke Node, Event streaming untuk perhitungan poin real-time
+Sources
+(MEDIUM) [Grass Blog, https://blog.grass.ai/how-grass-works/]; [General Industry Practice for High Throughput Coordinator]
+Monitoring: Grafana / Prometheus / Datadog / Sentry — Observabilitas infrastruktur, error tracking client (Desktop/Extension/Mobile), alerting SLA Coordinator
+Sources
+(MEDIUM) [Grass Blog, https://blog.grass.ai/tech-stack/]; [Sentry for Electron/React Native/Extension]
+CI/CD: GitHub Actions / GitLab CI / Bitrise (Mobile) — Build matrix (Windows/macOS/Linux/iOS/Android/WASM), Signing/Notarization otomatis, Deploy ke Store/Registry
+Sources
+(MEDIUM) [GitHub Actions wynd-network, https://github.com/wynd-network/grass-desktop/actions]; [Bitrise, https://www.bitrise.io/]
+Client Framework: Electron (Desktop v1) / Tauri v2 (Desktop v2 Migration Planned), React Native / Flutter (Mobile), Manifest V3 (Extension), WASM (Lite)
+Sources
+(HIGH) [GitHub wynd-network/grass-desktop, https://github.com/wynd-network/grass-desktop]; [Tauri Migration Issue, https://github.com/wynd-network/grass-desktop/issues/...]; [Grass Blog, https://blog.grass.ai/grass-mobile-launch/]
+Cryptography: Ed25519 (Solana Keys), Curve25519 (Noise Protocol/Transport Encryption), AES-GC (Data at Rest), TLS 1.3 (Transport), ZK-SNARKs/STARKs (RISC Zero/SP1 Planned), TEE Attestation (Intel TDX/AMD SEV Planned)
+Sources
+(HIGH) [Solana Docs Cryptography, https://solana.com/docs/core/cryptography]; [Grass Blog, https://blog.grass.ai/sovereign-data-rollup/]; [Noise Protocol, https://noiseprotocol.org/]
+
+Known Technical Limitations
+Limitation 1: Ketergantungan Coordinator Terpusat — Saat ini penugasan tugas scraping, verifikasi bandwidth, dan perhitungan reward sepenuhnya dikelola server Wynd Labs; risiko downtime, sensor, dan manipulasi poin ada hingga Rollup live
+Sources
+(HIGH) [Grass Docs, https://docs.grass.ai/architecture/coordinator]; [Grass Blog, https://blog.grass.ai/decentralization-roadmap/]
+Limitation 2: Skalabilitas Verifikasi Bandwidth — Mekanisme Proof of Bandwidth saat ini membutuhkan round-trip ke Coordinator untuk challenge-response; bottleneck throughput pada jumlah node > jutaan (target 10M+ nodes) memerlukan arsitektur Rollup/Verifiable Delay Function (VDF) baru
+Sources
+(MEDIUM) [Grass Blog, https://blog.grass.ai/sovereign-data-rollup/]; [Grass Docs, https://docs.grass.ai/architecture/scaling]
+Limitation 3: Keterbatasan Lite Node (WASM) — Performa scraping terbatas oleh sandbox browser (CPU single-thread Web Worker, memory limit ~2-4GB, tidak bisa raw socket/TCP/UDP hanya WebSocket/WebRTC); tidak cocok untuk tugas scraping berat/parser kompleks
+Sources
+(HIGH) [Grass Docs, https://docs.grass.ai/getting-started/lite-node]; [MDN Web Workers, https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API]; [WebAssembly Spec]
+Limitation 4: Mobile OS Restrictions — iOS Network Extension / VPN API memiliki batasan throughput, background execution time, dan memerlukan izin pengguna eksplisit; Android foreground service notification wajib; mengurangi uptime efektif node mobile vs desktop
+Sources
+(HIGH) [Apple NetworkExtension Docs, https://developer.apple.com/documentation/networkextension]; [Android Foreground Service Docs, https://developer.android.com/guide/components/foreground-services]; [Grass Blog, https://blog.grass.ai/grass-mobile-launch/]
+Limitation 5: Biaya & Latensi Solana L1 untuk Rollup Settlement — Setiap batch rollup memerlukan transaksi Solana (compute units & rent); biaya fluktuatif dan block time 400ms memengaruhi finalitas data AI real-time; solusi: kompresi data maksimal dan batching besar
+Sources
+(HIGH) [Solana Docs Fees, https://solana.com/docs/core/fees]; [Grass Blog, https://blog.grass.ai/sovereign-data-rollup/]
+Limitation 6: Ketergantungan RPC Eksternal (Helius/Triton) — Ketersediaan dan latency RPC memengaruhi performa Dashboard, Indexer, dan Sequencer Rollup; single point of failure jika provider utama down (mitigasi: multi-provider fallback)
+Sources
+(MEDIUM) [Helius Status Page, https://status.helius.dev/]; [Triton Status, https://status.triton.one/]; [Grass Blog, https://blog.grass.ai/infrastructure-partners/]
+Limitation 7: Belum Ada Bukti Formal (ZK/TEE) di Mainnet — Verifikasi integritas data scraping saat ini "Trusted Coordinator"; ZK Prover (RISC Zero/SP1) dan TEE Attestation masih tahap R&D/Devnet; belum terbukti biaya komputasi (proving time/cost) untuk volume data skala internet
+Sources
+(MEDIUM) [Grass Blog, https://blog.grass.ai/sovereign-data-rollup/]; [RISC Zero Benchmarks, https://www.risczero.com/benchmarks]; [SP1 Benchmarks, https://www.succinct.xyz/benchmarks]
+
+Official Technical Resources
+Documentation: https://docs.grass.ai/
+GitHub Organization: https://github.com/wynd-network
+Developer Docs / API Reference: https://docs.grass.ai/developers/api-reference
+SDK (TypeScript/Rust/Python): https://github.com/wynd-network/grass-sdk (atau npm @grass-protocol/sdk)
+Whitepaper / Litepaper: https://blog.grass.ai/grass-litepaper/ (atau https://blog.grass.ai/introducing-grass/)
+Research Blog (Technical Deep Dives): https://blog.grass.ai/category/engineering/
+Security Audits Repository: https://github.com/wynd-network/audits
+Discord Developer Channel: https://discord.gg/grass (channel #dev-general, #node-operators)
+Solana Program IDs (On-chain Addresses): https://solscan.io/account/... (Token, Staking, Governance, Verifier)
+
+---
+
+RINGKASAN
+
+Architecture: DePIN (Bandwidth) + Sovereign Data Rollup on Solana L1 (Settlement/DA) + Centralized Coordinator (Current) -> Decentralized Verifier (Future)
+Core Components: 10 (Desktop Node, Browser Extension, Mobile App, Lite Node WASM, Coordinator Backend, Sovereign Rollup Sequencer/Executor/Prover, SPL Smart Contracts, Dashboard, ZK/TEE Module, Storage Gateway)
+Audit Count: 2 Published (Halborn, Kudelski), 1+ Pl

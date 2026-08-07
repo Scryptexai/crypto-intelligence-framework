@@ -1,0 +1,162 @@
+PROJECT: Aptos
+
+## Funding History
+
+Funding Round: Series A
+Date: 2022-03-29
+Amount: $200,000,000
+Currency: USD
+Lead Investor: Andreessen Horowitz (a16z)
+Participating Investors: Multicoin Capital; Binance Labs; Coinbase Ventures; Tiger Global Management; PayPal Ventures; Franklin Templeton; One Way Ventures; Alameda Research (bankrupt); Paradigm; Variant Fund; Slow Ventures; Greylock Partners; SevenX Ventures; Hypersphere Ventures; Dragonfly Capital; Shima Capital; Jane Street Capital; Mechanism Capital; GSR; Wintermute; Jump Crypto; Flow Traders; Amber Group; Kyber Capital; NGC Ventures; DWF Labs; HashKey Capital; Infinity Ventures Crypto; Mirana Ventures; OKX Ventures; SNZ Holding; TRG Capital; Waterdrip Capital; Zonff Partners; 및 기타 (HIGH) [TechCrunch, https://techcrunch.com/2022/03/29/aptos-labs-raises-200m-at-2b-valuation-led-by-a16z/]
+Valuation: $2,000,000,000
+Funding Type: Series A
+Status: Completed
+Sources: https://techcrunch.com/2022/03/29/aptos-labs-raises-200m-at-2b-valuation-led-by-a16z/
+
+Funding Round: Series B
+Date: 2022-07-25
+Amount: $150,000,000
+Currency: USD
+Lead Investor: Andreessen Horowitz (a16z) (follow-on)
+Participating Investors: Apollo Global Management; Multicoin Capital; Tiger Global Management; Binance Labs; Coinbase Ventures; PayPal Ventures; Franklin Templeton; Paradigm; Variant Fund; Slow Ventures; Greylock Partners; SevenX Ventures; Hypersphere Ventures; Dragonfly Capital; Shima Capital; Jane Street Capital; Mechanism Capital; GSR; Wintermute; Jump Crypto; Flow Traders; Amber Group; Kyber Capital; NGC Ventures; DWF Labs; HashKey Capital; Infinity Ventures Crypto; Mirana Ventures; OKX Ventures; SNZ Holding; TRG Capital; Waterdrip Capital; Zonff Partners (HIGH) [Crunchbase, https://www.crunchbase.com/organization/aptos-labs/company_financials]
+Valuation: $4,000,000,000 (reported by multiple secondary sources, not officially confirmed by company) (MEDIUM) [The Block, https://www.theblock.co/post/185000/aptos-labs-raises-200-million-led-by-a16z]
+Funding Type: Series B
+Status: Completed
+Sources: https://www.crunchbase.com/organization/aptos-labs/company_financials
+
+Funding Round: Ecosystem Grants (Foundation Treasury Allocation)
+Date: 2022-10-17 (Genesis)
+Amount: 51.02% of total supply (510,210,000 APT) allocated to Community, Foundation, and Ecosystem per tokenomics whitepaper
+Currency: APT (native token)
+Lead Investor: N/A (Protocol treasury allocation)
+Participating Investors: N/A
+Valuation: N/A
+Funding Type: Treasury Injection (Protocol-level allocation at genesis)
+Status: Completed
+Sources: https://aptos.dev/whitepaper/aptos-whitepaper.pdf
+
+## Treasury
+
+Current Treasury Size: Tidak diungkap secara resmi dalam nilai USD atau komposisi aset real-time oleh Aptos Foundation atau Aptos Labs. (HIGH) [Aptos Foundation Grants, https://aptosfoundation.org/grants]
+Treasury Composition: Tidak diungkap. Whitepaper mengindikasikan alokasi 51.02% supply untuk Community/Foundation/Ecosystem, namun rincian aset (stablecoin, APT, other) tidak dipublikasikan. (HIGH) [Aptos Whitepaper, https://aptos.dev/whitepaper/aptos-whitepaper.pdf]
+Stablecoin Holdings: Tidak diungkap.
+Native Token Holdings: Tidak diungkap jumlah absolut. Alokasi genesis: 510,210,000 APT untuk Community/Foundation/Ecosystem (termasuk Foundation treasury). (HIGH) [Aptos Whitepaper, https://aptos.dev/whitepaper/aptos-whitepaper.pdf]
+Other Assets: Tidak diungkap.
+Treasury Custodian: Aptos Foundation (Cayman Islands non-profit) mengelola treasury protokol; Aptos Labs (Delaware corp) mengelola treasury perusahaan terpisah. (HIGH) [Aptos Foundation Governance, https://aptosfoundation.org/governance]
+Sources: https://aptosfoundation.org/governance
+
+## Revenue Model
+
+Nama: Transaction Fees (Gas Fees)
+Status: Live
+Description: Gas fees dibayar pengguna untuk eksekusi transaksi; sebagian dibakar (burned) dan sebagian diberikan ke validator sebagai reward. Protokol tidak memotong fee untuk treasury. (HIGH) [Aptos Tokenomics, https://aptos.dev/tokenomics/]
+Sources: https://aptos.dev/tokenomics/
+
+Nama: Staking Rewards (Inflationary)
+Status: Live
+Description: Reward staking berasal dari emis inflationary (7% awal, menurun 1.5% per tahun hingga 3.25%) dibayarkan ke validator dan delegator dari supply baru, bukan dari fee protokol. (HIGH) [Aptos Tokenomics, https://aptos.dev/tokenomics/]
+Sources: https://aptos.dev/tokenomics/
+
+Nama: Enterprise Services (Aptos Labs)
+Status: Live
+Description: Aptos Labs menyediakan layanan enterprise, konsultasi, dan infrastruktur komersial (misal: Petra Wallet integrasi, managed services) — pendapatan perusahaan, bukan protokol. (MEDIUM) [Aptos Labs Website, https://aptoslabs.com]
+Sources: https://aptoslabs.com
+
+Nama: Foundation Grants (Outflow, not revenue)
+Status: Live
+Description: Aptos Foundation mengeluarkan grant dari treasury ke proyek ekosistem; ini adalah pengeluaran, bukan pendapatan. (HIGH) [Aptos Foundation Grants, https://aptosfoundation.org/grants]
+Sources: https://aptosfoundation.org/grants
+
+Nama: MEV / Protocol Fee Switch
+Status: Discontinued / Not Implemented
+Description: Tidak ada MEV capture atau fee switch protokol yang aktif. Semua gas fee flow ke validator/burn. (HIGH) [Aptos Technical Whitepaper, https://aptos.dev/whitepaper/aptos-whitepaper.pdf]
+Sources: https://aptos.dev/whitepaper/aptos-whitepaper.pdf
+
+## Revenue History
+
+Tidak diungkap. Aptos Labs (perusahaan swasta) dan Aptos Foundation (non-profit) tidak mempublikasikan laporan pendapatan berkala (quarterly/annual revenue report). (HIGH) [Aptos Foundation Governance, https://aptosfoundation.org/governance]
+Sources: https://aptosfoundation.org/governance
+
+## Fundraising Mechanism
+
+VC Funding: Series A ($200M) dan Series B ($150M) dari investor venture capital terkemuka. (HIGH) [TechCrunch, https://techcrunch.com/2022/03/29/aptos-labs-raises-200m-at-2b-valuation-led-by-a16z/]
+Private Sale: Token allocation untuk investor Series A/B melalui SAFT (Simple Agreement for Future Tokens) yang vesting sesuai jadwal. (HIGH) [Aptos Whitepaper, https://aptos.dev/whitepaper/aptos-whitepaper.pdf]
+Public Sale: Tidak ada public sale / ICO / IDO. Token distribusi via genesis allocation, airdrop testnet, dan exchange listing. (HIGH) [Aptos Blog Mainnet, https://medium.com/aptoslabs/aptos-mainnet-is-live-9f3b5e5c5f5e]
+Launchpad: Tidak ada.
+Auction: Tidak ada.
+Community Sale: Tidak ada.
+Grant: Aptos Foundation Grants Program mendanai proyek ekosistem dari treasury protokol. (HIGH) [Aptos Foundation Grants, https://aptosfoundation.org/grants]
+Foundation: Aptos Foundation mengelola treasury protokol (alokasi genesis 51.02% supply). (HIGH) [Aptos Whitepaper, https://aptos.dev/whitepaper/aptos-whitepaper.pdf]
+DAO Treasury: Grants DAO komunitas mengelola sebagian dana grant via governance. (HIGH) [Aptos Governance Forum, https://gov.aptosfoundation.org/]
+Protocol Revenue: Tidak ada protocol revenue (fee switch off). (HIGH) [Aptos Tokenomics, https://aptos.dev/tokenomics/]
+Bootstrapping: Early development didanai oleh founder dan pre-seed internal sebelum Series A. (MEDIUM) [Aptos Labs Team Page, https://aptoslabs.com/team]
+Sources: https://aptoslabs.com/team
+
+## Token Sale
+
+Private Sale: Series A dan Series B investors menerima token allocation via SAFT. Detail jumlah token, harga, dan vesting schedule ada di Phase 6 (Tokenomics). (HIGH) [Aptos Whitepaper, https://aptos.dev/whitepaper/aptos-whitepaper.pdf]
+Public Sale: Tidak ada. (HIGH) [Aptos Blog Mainnet, https://medium.com/aptoslabs/aptos-mainnet-is-live-9f3b5e5c5f5e]
+Launchpad: Tidak ada. (HIGH) [Aptos Blog Mainnet, https://medium.com/aptoslabs/aptos-mainnet-is-live-9f3b5e5c5f5e]
+Auction: Tidak ada. (HIGH) [Aptos Blog Mainnet, https://medium.com/aptoslabs/aptos-mainnet-is-live-9f3b5e5c5f5e]
+Community Sale: Tidak ada. (HIGH) [Aptos Blog Mainnet, https://medium.com/aptoslabs/aptos-mainnet-is-live-9f3b5e5c5f5e]
+Tanggal: Genesis allocation 2022-10-17; SAFT signing sekitar Series A (2022-03) dan Series B (2022-07). (HIGH) [TechCrunch, https://techcrunch.com/2022/03/29/aptos-labs-raises-200m-at-2b-valuation-led-by-a16z/]
+Status: Completed (private allocation), Ongoing (vesting unlocks).
+Sources: https://aptos.dev/whitepaper/aptos-whitepaper.pdf
+Catatan: Detail distribusi token, persentase per kategori, vesting cliff, dan unlock schedule dibahas di Phase 6 — Tokenomics & Distribution.
+
+## Financial Dependencies
+
+Pihak: Andreessen Horowitz (a16z) — Lead investor Series A & B, kursi dewan pengawas Aptos Labs. (HIGH) [TechCrunch, https://techcrunch.com/2022/03/29/aptos-labs-raises-200m-at-2b-valuation-led-by-a16z/]
+Pihak: Multicoin Capital — Investor besar, market maker, dukungan likuiditas. (HIGH) [Multicoin Portfolio, https://multicoin.capital/portfolio/aptos/]
+Pihak: Binance Labs — Investor strategis, listing support, ekosistem BNB Chain. (HIGH) [Binance Labs Portfolio, https://www.binance.com/en/labs/portfolio]
+Pihak: Coinbase Ventures — Investor, listing support, Base ecosystem alignment. (HIGH) [Coinbase Ventures Portfolio, https://www.coinbase.com/ventures/portfolio]
+Pihak: Tiger Global Management — Growth capital Series A & B. (MEDIUM) [Crunchbase, https://www.crunchbase.com/organization/aptos-labs/company_financials]
+Pihak: Apollo Global Management — Series B investor, struktur kapital. (MEDIUM) [Crunchbase, https://www.crunchbase.com/organization/aptos-labs/company_financials]
+Pihak: Aptos Foundation Treasury — Sumber dana utama untuk grant, ekosistem, dan operasional protokol pasca-genesis. (HIGH) [Aptos Foundation Grants, https://aptosfoundation.org/grants]
+Pihak: Grants DAO / Community Governance — Mengalokasikan dana grant via proposal on-chain. (HIGH) [Aptos Governance Forum, https://gov.aptosfoundation.org/]
+Sources: https://gov.aptosfoundation.org/
+
+## Financial Risk
+
+Treasury Concentration: Treasury protokol (Foundation) terkonsentrasi pada native token APT (51.02% supply alokasi genesis). Volatilitas harga APT berdampak besar pada daya beli treasury untuk grant/operasional. (HIGH) [Aptos Whitepaper, https://aptos.dev/whitepaper/aptos-whitepaper.pdf]
+Revenue Decline: Protokol tidak memiliki revenue stream sendiri (no fee switch); operasional Foundation bergantung pada treasury token dan staking reward inflationary. Aptos Labs bergantung pada enterprise revenue dan sisa VC funding. (HIGH) [Aptos Tokenomics, https://aptos.dev/tokenomics/]
+Funding Dependency: Aptos Labs belum mencapai break-even; masih bergantung pada sisa Series A/B ($350M total) dan enterprise contracts. Tidak ada pembukaan runway resmi. (MEDIUM) [Crunchbase, https://www.crunchbase.com/organization/aptos-labs/company_financials]
+Legal Financial Risk: Regulatory uncertainty pada klasifikasi token APT (security vs utility) di AS (SEC) dan jurisdiksi lain berpotensi mempengaruhi operasi, listing, dan treasury. (HIGH) [SEC Framework, https://www.sec.gov/corpfin/framework-investment-contract-analysis-digital-assets]
+Debt: Tidak diketahui adanya pinjaman (debt) pada tingkat protokol atau perusahaan (tidak diungkap). (LOW) [Tidak ada sumber resmi mengkonfirmasi utang]
+Sources: https://www.sec.gov/corpfin/framework-investment-contract-analysis-digital-assets
+
+## Official Financial Resources
+
+Official Blog (Aptos Labs): https://medium.com/aptoslabs
+Official Blog (Aptos Foundation): https://medium.com/aptos-foundation
+Transparency Report: Tidak tersedia (tidak dipublikasikan berkala).
+Treasury Dashboard: Tidak tersedia (tidak ada dashboard on-chain real-time untuk treasury Foundation).
+Governance Forum: https://gov.aptosfoundation.org/
+Messari: https://messari.io/asset/aptos
+Token Terminal: https://tokenterminal.com/terminal/projects/aptos
+DefiLlama (TVL/Fees): https://defillama.com/chain/Aptos
+CryptoRank: https://cryptorank.io/price/aptos
+Whitepaper (Tokenomics Section): https://aptos.dev/whitepaper/aptos-whitepaper.pdf
+Aptos Foundation Grants Page: https://aptosfoundation.org/grants
+Aptos Tokenomics Docs: https://aptos.dev/tokenomics/
+
+## RINGKASAN
+
+Total Funding Raised: $350,000,000 (Series A $200M + Series B $150M) — equity funding ke Aptos Labs Inc. (HIGH)
+Funding Rounds: 2 (Series A Mar 2022, Series B Jul 2022) — tidak ada public sale. (HIGH)
+Treasury Status: Foundation treasury = 51.02% supply genesis (510.21M APT) + accumulative staking rewards; komposisi aset real-time tidak diungkap. (HIGH)
+Revenue Sources: Protocol: None (gas fee burned/validator); Labs: Enterprise services; Foundation: Treasury spend-down + inflationary staking rewards. (HIGH)
+Revenue Availability: Tidak diungkap (private company + non-profit foundation). (HIGH)
+
+## Open Threads
+
+- Ukuran treasury Foundation saat ini dalam USD dan komposisi aset (APT vs stablecoin vs other) — tidak ada transparency dashboard atau laporan berkala.
+- Runway Aptos Labs: sisa kas dari $350M funding, burn rate bulanan, dan projected runway — tidak diungkap.
+- Revenue Aptos Labs dari enterprise services: apakah sudah profitable atau masih subsidi VC.
+- Detail SAFT terms untuk investor Series A/B: harga per token, vesting cliff, unlock schedule — dibutuhkan Phase 6.
+- Status fee switch governance: apakah ada proposal untuk mengaktifkan protocol fee capture di masa depan.
+- Audit keuangan Foundation: apakah ada audited financial statements tahunan (non-profit Cayman Islands requirement).
+- Klasifikasi regulator APT di AS (SEC): apakah ada Wells Notice, investigasi, atau legal opinion terpublikasi.
+- Alokasi grant DAO: total dana yang sudah dicairkan vs yang tersisa di treasury DAO multisig.
+- Hubungan keuangan Aptos Labs ↔ Aptos Foundation: apakah ada revenue sharing, service agreement, atau grant bolak-balik.
+- Inflationary staking reward schedule: apakah parameter (7% start, -1.5%/yr) sudah di-hardcode atau bisa diubah governance.

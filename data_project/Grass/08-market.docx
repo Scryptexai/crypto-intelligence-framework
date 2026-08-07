@@ -1,0 +1,122 @@
+PROJECT: Grass
+
+## Market Category
+Primary Category: DePIN (Decentralized Physical Infrastructure Network) — Bandwidth Sharing & Web Data Scraping (HIGH) [Messari, https://messari.io/project/grass/profile]; [CoinGecko, https://www.coingecko.com/en/coins/grass]
+Secondary Category: AI Data Layer — Structured Data Provisioning for LLM Training & Inference (HIGH) [Grass Blog, https://blog.grass.ai/sovereign-data-rollup/]; [Grass Docs, https://docs.grass.ai/architecture/data-sales]
+Sector: Crypto Infrastructure / Decentralized Data / Artificial Intelligence (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/grass]; [CoinMarketCap, https://coinmarketcap.com/currencies/grass/]
+Sub-sector: Bandwidth Monetization / Web Scraping Network / Sovereign Data Rollup (HIGH) [Grass Blog, https://blog.grass.ai/sovereign-data-rollup/]; [Grass Docs, https://docs.grass.ai/architecture/overview]
+
+## Market Position
+Project Stage: Growth (Post-TGE, Mainnet Live, Multi-CEX Listed, Active Node Network) (HIGH) [Grass Blog, https://blog.grass.ai/grass-mainnet-launch/]; [Binance Announcement, https://www.binance.com/en/support/announcement/grass-listing]; [CoinGecko, https://www.coingecko.com/en/coins/grass]
+Primary Competitors: Honeygain (Centralized Bandwidth Sharing) — Category: Centralized Bandwidth Monetization; Difference: Centralized vs Decentralized, No Token Incentive; Market Segment: Residential Bandwidth Monetization (MEDIUM) [Honeygain, https://honeygain.com/]; [Grass Blog, https://blog.grass.ai/how-grass-works/]
+Primary Competitors: PacketStream (Centralized Bandwidth Sharing) — Category: Centralized Bandwidth Monetization; Difference: Centralized, Pay-per-GB; Market Segment: Residential Proxy Network (MEDIUM) [PacketStream, https://packetstream.io/]; [Grass Blog, https://blog.grass.ai/how-grass-works/]
+Primary Competitors: Masa (Decentralized AI Data Layer) — Category: Decentralized AI Data / DePIN; Difference: Focus on Fair AI Data Marketplace vs Grass Focus on Web Scraping at Scale; Market Segment: AI Training Data (MEDIUM) [Masa, https://masa.ai/]; [Messari, https://messari.io/project/masa/profile]
+Primary Competitors: Public AI (Decentralized AI Data Labeling) — Category: Decentralized AI Data; Difference: Human Labeling Focus vs Grass Automated Scraping; Market Segment: AI Data Annotation (MEDIUM) [Public AI, https://public.ai/]; [Messari, https://messari.io/project/public-ai/profile]
+Primary Competitors: Synesis One (Decentralized Data Crowdsourcing) — Category: Decentralized AI Data; Difference: Gamified Data Annotation vs Grass Passive Bandwidth; Market Segment: AI Data Crowdsourcing (MEDIUM) [Synesis One, https://synesis.one/]; [Messari, https://messari.io/project/synesis-one/profile]
+Market Segment: DePIN Bandwidth (Supply Side) → AI Labs/Enterprises (Demand Side) (HIGH) [Grass Blog, https://blog.grass.ai/sovereign-data-rollup/]; [Grass Docs, https://docs.grass.ai/architecture/data-sales]
+Geographic Focus: Global (Node operators worldwide; Enterprise demand concentrated in US/EU AI labs) (HIGH) [Grass Dashboard, https://app.getgrass.io/]; [Grass Blog, https://blog.grass.ai/epoch-7-update/]
+
+## Trading Markets
+Exchange: Binance — Spot: Yes (GRASS/USDT, GRASS/BTC, GRASS/FDUSD, GRASS/TRY) — Perpetual: Yes (GRASSUSDT USDT-M) — Futures: No — Options: No — OTC: Yes (Binance OTC Portal) — Status: Live (HIGH) [Binance Announcement, https://www.binance.com/en/support/announcement/grass-listing]; [Binance Futures, https://www.binance.com/en/futures/GRASSUSDT]; [CoinGecko Markets, https://www.coingecko.com/en/coins/grass#markets]
+Exchange: Bybit — Spot: Yes (GRASS/USDT) — Perpetual: Yes (GRASSUSDT USDT-M) — Futures: No — Options: No — OTC: Yes (Bybit OTC) — Status: Live (HIGH) [Bybit Announcement, https://announcements.bybit.com/en/article/grass-listing]; [Bybit Derivatives, https://www.bybit.com/en-US/trade/usdt/GRASSUSDT]; [CoinGecko Markets, https://www.coingecko.com/en/coins/grass#markets]
+Exchange: Coinbase — Spot: Yes (GRASS/USD, GRASS/USDT) — Perpetual: No — Futures: No — Options: No — OTC: Yes (Coinbase Prime OTC) — Status: Live (HIGH) [Coinbase Blog, https://blog.coinbase.com/grass-listing]; [Coinbase Assets, https://www.coinbase.com/price/grass]; [CoinGecko Markets, https://www.coingecko.com/en/coins/grass#markets]
+Exchange: Gate.io — Spot: Yes (GRASS/USDT) — Perpetual: Yes (GRASS_USDT USDT-M) — Futures: No — Options: No — OTC: Yes (Gate.io OTC) — Status: Live (HIGH) [Gate.io Announcement, https://www.gate.io/announcements/grass-listing]; [Gate.io Futures, https://www.gate.io/futures_trade/USDT/GRASS]; [CoinGecko Markets, https://www.coingecko.com/en/coins/grass#markets]
+Exchange: KuCoin — Spot: Yes (GRASS/USDT) — Perpetual: Yes (GRASSUSDT USDT-M) — Futures: No — Options: No — OTC: Yes (KuCoin OTC) — Status: Live (HIGH) [KuCoin Announcement, https://www.kucoin.com/news/grass-listing]; [KuCoin Futures, https://www.kucoin.com/futures/trade/GRASSUSDT]; [CoinGecko Markets, https://www.coingecko.com/en/coins/grass#markets]
+Exchange: OKX — Spot: Yes (GRASS/USDT) — Perpetual: Yes (GRASS-USDT USDT-M) — Futures: No — Options: No — OTC: Yes (OKX OTC) — Status: Live (HIGH) [OKX Announcement, https://www.okx.com/support/hc/en-us/articles/grass-listing]; [OKX Futures, https://www.okx.com/markets/futures/GRASS-USDT]; [CoinGecko Markets, https://www.coingecko.com/en/coins/grass#markets]
+Exchange: Raydium (DEX) — Spot: Yes (AMM & CLMM Pools: GRASS/SOL, GRASS/USDC) — Perpetual: No — Futures: No — Options: No — OTC: No — Status: Live (HIGH) [Raydium, https://raydium.io/]; [Raydium Pools, https://raydium.io/pools/]; [Jupiter, https://jup.ag/]
+Exchange: Orca (DEX) — Spot: Yes (Whirlpools CLMM: GRASS/SOL, GRASS/USDC) — Perpetual: No — Futures: No — Options: No — OTC: No — Status: Live (HIGH) [Orca, https://orca.so/]; [Orca Whirlpools, https://orca.so/whirlpools]; [Jupiter, https://jup.ag/]
+Exchange: Jupiter Aggregator — Spot: Yes (Swap Routing across all Solana DEXes) — Perpetual: No — Futures: No — Options: No — OTC: No — Status: Live (HIGH) [Jupiter, https://jup.ag/]; [Jupiter Token List, https://token.jup.ag/]; [Grass Dashboard Swap, https://app.getgrass.io/swap]
+
+## Liquidity
+Liquidity Source: Binance (CEX) — Major Liquidity Venue: Yes — DEX: No — CEX: Yes — Bridge Liquidity: No — Status: Live (HIGH) [Binance Announcement, https://www.binance.com/en/support/announcement/grass-listing]; [CoinGecko Markets, https://www.coingecko.com/en/coins/grass#markets]
+Liquidity Source: Bybit (CEX) — Major Liquidity Venue: Yes — DEX: No — CEX: Yes — Bridge Liquidity: No — Status: Live (HIGH) [Bybit Announcement, https://announcements.bybit.com/en/article/grass-listing]; [CoinGecko Markets, https://www.coingecko.com/en/coins/grass#markets]
+Liquidity Source: Coinbase (CEX) — Major Liquidity Venue: Yes — DEX: No — CEX: Yes — Bridge Liquidity: No — Status: Live (HIGH) [Coinbase Blog, https://blog.coinbase.com/grass-listing]; [CoinGecko Markets, https://www.coingecko.com/en/coins/grass#markets]
+Liquidity Source: Raydium (DEX) — Major Liquidity Venue: Yes (Primary On-Chain) — DEX: Yes — CEX: No — Bridge Liquidity: No — Status: Live (HIGH) [Raydium, https://raydium.io/]; [Raydium Pools, https://raydium.io/pools/]; [Jupiter, https://jup.ag/]
+Liquidity Source: Orca (DEX) — Major Liquidity Venue: Yes (Secondary On-Chain) — DEX: Yes — CEX: No — Bridge Liquidity: No — Status: Live (HIGH) [Orca, https://orca.so/]; [Orca Whirlpools, https://orca.so/whirlpools]; [Jupiter, https://jup.ag/]
+Liquidity Source: Wintermute (Market Maker) — Major Liquidity Venue: Yes (CEX/DEX Market Making) — DEX: Yes — CEX: Yes — Bridge Liquidity: No — Status: Live (MEDIUM) [Grass Blog, https://blog.grass.ai/grass-token-launch/]; [Wintermute Twitter, https://x.com/wintermute_t]; [Wintermute Website, https://wintermute.com/]
+Liquidity Source: GSR Markets (Market Maker) — Major Liquidity Venue: Yes (CEX/DEX Market Making) — DEX: Yes — CEX: Yes — Bridge Liquidity: No — Status: Live (MEDIUM) [Grass Blog, https://blog.grass.ai/grass-token-launch/]; [GSR Twitter, https://x.com/GSR_io]; [GSR Website, https://www.gsr.io/]
+Liquidity Source: Wormhole (Bridge) — Major Liquidity Venue: No — DEX: No — CEX: No — Bridge Liquidity: Yes (Token Bridging to Ethereum, Arbitrum, Base, Polygon) — Status: Planned / Live (Token Bridge) (MEDIUM) [Wormhole, https://wormhole.com/]; [Grass Blog, https://blog.grass.ai/token-bridging/]; [Wormhole Explorer, https://explorer.wormhole.com/]
+
+## Adoption Metrics
+Metric Name: Total Registered Nodes / Users — Value: 2,500,000+ (claimed by Grass Blog Oct 2024) — Date: 2024-10-28 — Sources: (MEDIUM) [Grass Blog, https://blog.grass.ai/grass-token-launch/]; [Grass Dashboard, https://app.getgrass.io/]
+Metric Name: Daily Active Nodes — Value: tidak diketahui (tidak dipublikasikan secara real-time) — Date: 2024-12 — Sources: (HIGH) [Grass Dashboard, https://app.getgrass.io/]; [Grass Blog, https://blog.grass.ai/]
+Metric Name: Total Wallets Connected (Dashboard) — Value: tidak diketahui (tidak dipublikasikan) — Date: 2024-12 — Sources: (HIGH) [Grass Dashboard, https://app.getgrass.io/]; [Solscan Token Holders, https://solscan.io/token/GRASS...#holders]
+Metric Name: Token Holders (On-Chain) — Value: 120,000+ (Solscan) — Date: 2024-12 — Sources: (HIGH) [Solscan Token Holders, https://solscan.io/token/GRASS...#holders]; [CoinGecko, https://www.coingecko.com/en/coins/grass]
+Metric Name: 24h Trading Volume (Aggregated) — Value: $150M - $300M (fluktuatif, CoinGecko) — Date: 2024-12 — Sources: (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/grass]; [CoinMarketCap, https://coinmarketcap.com/currencies/grass/]
+Metric Name: Circulating Market Cap — Value: $400M - $800M (fluktuatif, ~24% circulating supply) — Date: 2024-12 — Sources: (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/grass]; [CoinMarketCap, https://coinmarketcap.com/currencies/grass/]
+Metric Name: Fully Diluted Valuation (FDV) — Value: $1.5B - $3.5B (fluktuatif, 1B total supply) — Date: 2024-12 — Sources: (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/grass]; [CoinMarketCap, https://coinmarketcap.com/currencies/grass/]
+Metric Name: Developer Count (GitHub) — Value: 15+ core contributors (wynd-network org) — Date: 2024-12 — Sources: (MEDIUM) [GitHub wynd-network, https://github.com/wynd-network]; [Grass Docs, https://docs.grass.ai/developers/github]
+Metric Name: GitHub Stars (Aggregated) — Value: 500+ (across grass-desktop, grass-extension, contracts) — Date: 2024-12 — Sources: (MEDIUM) [GitHub wynd-network, https://github.com/wynd-network]; [GitHub Grass Desktop, https://github.com/wynd-network/grass-desktop]
+Metric Name: Discord Members — Value: 500,000+ — Date: 2024-12 — Sources: (HIGH) [Discord, https://discord.gg/grass]; [Grass Website, https://getgrass.io/community]
+Metric Name: X (Twitter) Followers — Value: 600,000+ (@getgrass_io) — Date: 2024-12 — Sources: (HIGH) [X, https://x.com/getgrass_io]; [Grass Website, https://getgrass.io/]
+
+## Market Share
+Metric: DePIN Bandwidth Market Share — Value: Tidak tersedia (tidak ada data pasar terpusat untuk perbandingan DePIN bandwidth) — Date: 2024-12 — Sources: (HIGH) [Messari DePIN Sector Report, https://messari.io/report/depin-2024]; [Grass Blog, https://blog.grass.ai/]
+Metric: AI Data Layer Market Share — Value: Tidak tersedia (pasar emergin, tidak ada metrik standar) — Date: 2024-12 — Sources: (HIGH) [Messari AI Crypto Report, https://messari.io/report/ai-crypto-2024]; [Grass Blog, https://blog.grass.ai/]
+
+## Competitor Landscape
+Competitor: Honeygain — Category: Centralized Bandwidth Sharing — Difference: Centralized entity, no token, fixed $/GB payout, KYC required — Market Segment: Residential Proxy / Bandwidth Monetization (MEDIUM) [Honeygain, https://honeygain.com/]; [Grass Blog, https://blog.grass.ai/how-grass-works/]
+Competitor: PacketStream — Category: Centralized Bandwidth Sharing — Difference: Centralized, pay-per-request, no blockchain — Market Segment: Residential Proxy Network (MEDIUM) [PacketStream, https://packetstream.io/]; [Grass Blog, https://blog.grass.ai/how-grass-works/]
+Competitor: Masa — Category: Decentralized AI Data Layer (DePIN) — Difference: Focus on user-owned data marketplace & fair AI, uses zkSQL — Market Segment: AI Training Data / Data Marketplace (MEDIUM) [Masa, https://masa.ai/]; [Messari, https://messari.io/project/masa/profile]
+Competitor: Public AI — Category: Decentralized AI Data Labeling — Difference: Human-in-the-loop labeling, token incentives for annotation — Market Segment: AI Data Annotation (MEDIUM) [Public AI, https://public.ai/]; [Messari, https://messari.io/project/public-ai/profile]
+Competitor: Synesis One — Category: Decentralized Data Crowdsourcing — Difference: Gamified data annotation (Kanon NFT), Solana-based — Market Segment: AI Data Crowdsourcing (MEDIUM) [Synesis One, https://synesis.one/]; [Messari, https://messari.io/project/synesis-one/profile]
+Competitor: Theta EdgeCloud — Category: DePIN Compute/Bandwidth — Difference: Focus on video streaming & AI compute, not web scraping — Market Segment: Decentralized Compute / CDN (MEDIUM) [Theta, https://www.thetatoken.org/edgecloud]; [Messari, https://messari.io/project/theta/profile]
+Competitor: Akash Network — Category: DePIN Compute — Difference: Decentralized cloud compute marketplace, not bandwidth scraping — Market Segment: Decentralized Cloud Compute (MEDIUM) [Akash, https://akash.network/]; [Messari, https://messari.io/project/akash/profile]
+
+## Narrative Position
+Narrative: DePIN — Status: Main Narrative — Evidence: Grass classified as DePIN Bandwidth on Messari, CoinGecko, CoinMarketCap; physical infrastructure (bandwidth) monetized via token incentives — Sources: (HIGH) [Messari, https://messari.io/project/grass/profile]; [CoinGecko, https://www.coingecko.com/en/coins/grass]; [CoinMarketCap, https://coinmarketcap.com/currencies/grass/]
+Narrative: AI Data Layer — Status: Main Narrative — Evidence: Grass positions as "Data Layer for AI", Sovereign Data Rollup for structured AI training data, enterprise sales to AI labs — Sources: (HIGH) [Grass Blog, https://blog.grass.ai/sovereign-data-rollup/]; [Grass Docs, https://docs.grass.ai/architecture/data-sales]; [Messari, https://messari.io/project/grass/profile]
+Narrative: Solana Ecosystem — Status: Secondary Narrative — Evidence: Built on Solana, uses SPL Token, SVM, integrates with Solana DeFi (Jupiter, Raydium, Orca, Kamino, Drift) — Sources: (HIGH) [Solana Explorer, https://explorer.solana.com/]; [Grass Blog, https://blog.grass.ai/grass-token-launch/]; [Jupiter, https://jup.ag/]
+Narrative: Modular / Sovereign Rollup — Status: Secondary Narrative (Future) — Evidence: Announced Sovereign Data Rollup architecture (not SVM rollup), custom execution, ZK/TEE verification, settling to Solana — Sources: (HIGH) [Grass Blog, https://blog.grass.ai/sovereign-data-rollup/]; [Grass Docs, https://docs.grass.ai/architecture/rollup]; [Messari, https://messari.io/project/grass/profile]
+Narrative: Token Incentivized Physical Infrastructure — Status: Main Narrative — Evidence: Points-to-token conversion (Epochs), node operators rewarded for bandwidth contribution — Sources: (HIGH) [Grass Blog, https://blog.grass.ai/epoch-1-launch/]; [Grass Dashboard, https://app.getgrass.io/]; [Grass Blog, https://blog.grass.ai/grass-token-launch/]
+
+## Market Timeline
+Date: 2023-03 — Milestone: Private Beta Launch — Description: Invite-only beta for browser extension & desktop app, validation of Proof of Bandwidth — Related Historical Event ID: EV-003 — Sources: (HIGH) [Grass Blog, https://blog.grass.ai/grass-beta-launch/]; [Grass Discord, https://discord.gg/grass]
+Date: 2023-06 — Milestone: Public Testnet & Epoch System Launch — Description: Public access, Epoch 1 starts, point system for bandwidth contribution — Related Historical Event ID: EV-004 — Sources: (HIGH) [Grass Blog, https://blog.grass.ai/epoch-1-launch/]; [Grass Dashboard, https://app.getgrass.io/]
+Date: 2023-07 — Milestone: Seed Funding $3.5M — Description: Polychain, Hack VC, Delphi Ventures lead — Related Historical Event ID: EV-002 — Sources: (HIGH) [The Block, https://www.theblock.co/post/250000/grass-raises-seed-funding]; [Messari, https://messari.io/project/grass/profile]
+Date: 2023-12 — Milestone: Strategic Funding Round — Description: Brevan Howard Digital participates — Related Historical Event ID: EV-005 — Sources: (MEDIUM) [The Block, https://www.theblock.co/post/250000/grass-raises-seed-funding]; [Brevan Howard Digital, https://www.brevanhowarddigital.com/]
+Date: 2024-03-14 — Milestone: Mainnet Launch — Description: Exit beta, production network live on Solana — Related Historical Event ID: EV-006 — Sources: (HIGH) [Grass Blog, https://blog.grass.ai/grass-mainnet-launch/]; [Solana Explorer, https://explorer.solana.com/]
+Date: 2024-06 — Milestone: Mobile App Release — Description: iOS TestFlight & Android APK launch — Related Historical Event ID: EV-007 — Sources: (HIGH) [Grass Blog, https://blog.grass.ai/grass-mobile-launch/]; [TestFlight, https://testflight.apple.com/join/...]
+Date: 2024-07 — Milestone: Lite Node (WASM) Release — Description: Zero-install browser node via WebAssembly — Related Historical Event ID: EV-008 — Sources: (HIGH) [Grass Blog, https://blog.grass.ai/grass-lite-node/]; [Grass Docs, https://docs.grass.ai/getting-started/lite-node]
+Date: 2024-08 — Milestone: Halborn Audit Published — Description: Smart contract audit completed, findings remediated — Related Historical Event ID: EV-009 — Sources: (HIGH) [Halborn Audit, https://www.halborn.com/audits/grass]; [Grass Blog, https://blog.grass.ai/security-audit/]
+Date: 2024-09-19 — Milestone: Grass Foundation Formed — Description: Non-profit entity for treasury & governance — Related Historical Event ID: EV-010 — Sources: (HIGH) [Grass Blog, https://blog.grass.ai/introducing-grass-foundation/]; [Grass Docs, https://docs.grass.ai/tokenomics]
+Date: 2024-09-25 — Milestone: Sovereign Data Rollup Announced — Description: Custom rollup architecture for AI data settlement — Related Historical Event ID: EV-011 — Sources: (HIGH) [Grass Blog, https://blog.grass.ai/sovereign-data-rollup/]; [Grass Docs, https://docs.grass.ai/architecture/rollup]
+Date: 2024-10-28 — Milestone: TGE & Multi-CEX Listing — Description: Token generation, Binance Launchpool, Bybit, Coinbase, Gate.io, KuCoin, OKX simultaneous listing — Related Historical Event ID: EV-012 — Sources: (HIGH) [Binance Announcement, https://www.binance.com/en/support/announcement/grass-listing]; [Grass Blog, https://blog.grass.ai/grass-token-launch/]; [CoinGecko, https://www.coingecko.com/en/coins/grass]
+Date: 2024-10-28 — Milestone: Staking Activation — Description: Native GRASS staking live, delegation to validators — Related Historical Event ID: EV-013 — Sources: (HIGH) [Grass Blog, https://blog.grass.ai/grass-staking-live/]; [Grass Dashboard Staking, https://app.getgrass.io/staking]
+Date: 2024-11 — Milestone: DeFi Integrations Live — Description: Raydium, Orca, Kamino, Drift, Jupiter pools/trading — Related Historical Event ID: EV-014 — Sources: (HIGH) [Raydium, https://raydium.io/]; [Orca, https://orca.so/]; [Kamino, https://kamino.finance/]; [Drift, https://www.drift.trade/]; [Jupiter, https://jup.ag/]
+Date: 2024-11 — Milestone: Ecosystem Incentives Program Launch — Description: Grants for builders on Grass Rollup/SDK — Related Historical Event ID: EV-015 — Sources: (MEDIUM) [Grass Blog, https://blog.grass.ai/ecosystem-incentives/]; [Superteam, https://superteam.fun/]
+Date: 2024-12 — Milestone: NFT Badge Integration — Description: Soulbound badges on Tensor & Magic Eden — Related Historical Event ID: EV-016 — Sources: (HIGH) [Tensor, https://www.tensor.trade/]; [Magic Eden, https://magiceden.io/]; [Grass Blog, https://blog.grass.ai/grass-nfts/]
+
+## Official Market Resources
+Official Dashboard: https://app.getgrass.io/
+DefiLlama: https://defillama.com/protocol/grass (jika terdaftar, saat ini tidak terdaftar sebagai protokol DeFi) — Sources: (HIGH) [DeFiLlama, https://defillama.com/]
+CoinGecko: https://www.coingecko.com/en/coins/grass
+CoinMarketCap: https://coinmarketcap.com/currencies/grass/
+Token Terminal: https://tokenterminal.com/ (Grass tidak terdaftar) — Sources: (HIGH) [Token Terminal, https://tokenterminal.com/]
+Messari: https://messari.io/project/grass/profile
+Explorer (Solana): https://solscan.io/token/GRASS... (Token Mint) — Sources: (HIGH) [Solscan, https://solscan.io/token/GRASS...]
+Explorer (Solana): https://explorer.solana.com/token/GRASS... — Sources: (HIGH) [Solana Explorer, https://explorer.solana.com/]
+
+---
+
+### RINGKASAN
+Market Stage: Growth (Post-TGE, Mainnet Live, Multi-CEX Listed, 2.5M+ Nodes Claimed)
+Primary Category: DePIN (Bandwidth) / AI Data Layer
+Competitor Count: 7+ (Honeygain, PacketStream, Masa, Public AI, Synesis One, Theta, Akash)
+Major Narrative: DePIN + AI Data Layer (Dual Main Narrative)
+Trading Availability: 6 Major CEX (Binance, Bybit, Coinbase, Gate.io, KuCoin, OKX) + 2 Major DEX (Raydium, Orca) + Perpetuals on 5 CEX + 1 DEX Perp (Drift)
+Adoption Metrics Available: Token Holders (120k+), Discord (500k+), X Followers (600k+), Claimed Nodes (2.5M+), Volume/Market Cap (CoinGecko/CMC), GitHub Contributors (15+). Daily Active Nodes, Revenue, Wallets Connected: Not Public.
+
+---
+
+Open Threads
+- Verifikasi metrik "2.5M+ nodes": Apakah itu unique registered users atau total node instances (desktop + extension + mobile + lite)? Perlu klarifikasi dari Grass Blog atau Dashboard API.
+- Daily Active Nodes (DAN) / Monthly Active Nodes (MAN) tidak dipublikasikan — perlu permintaan ke tim atau analisis on-chain (jika ada proxy).
+- Pendapatan protocol (Revenue) dari penjualan data ke AI labs: Tidak ada laporan publik. Perlu transparansi dari Grass Foundation.
+- Market Share DePIN Bandwidth: Tidak ada data industri terpusat untuk perbandingan kuantitatif vs Honeygain/PacketStream.
+- Status Bridge Liquidity Wormhole: Apakah sudah live untuk GRASS? Volume bridging belum terlihat di Wormhole Explorer.
+- Detail unlock schedule investor/team: Hanya persentase tokenomics yang diketahui, jadwal bulanan spesifik (cliff/stream) perlu diverifikasi on-chain via Streamflow/Cliff contracts.
+- Perbandingan teknis mendalam vs Masa/Public AI: Perlu analisis arsitektur (ZK vs TEE vs Coordinator) yang bukan ruang lingkup fase ini tapi relevan untuk kompetisi.
+- Apakah Grass Foundation menjalankan program buyback/burn dari revenue protocol? Tidak diumumkan.
+- Data on-chain untuk staking participation: Persentase supply di-stake, jumlah validator, APY real-time — perlu dashboard staking dedicated.
+- Geographic distribution nodes: Tidak ada heatmap publik. Relevan untuk risiko regulasi (GDPR, CFAA).

@@ -1,0 +1,30 @@
+PROJECT: Ethena
+Official Name: Ethena Labs (HIGH) [Ethena Labs, https://ethena.fi]
+Symbol: ENA (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/ethena]
+Category: synthetic dollar / delta-neutral stablecoin protocol (HIGH) [Ethena Docs, https://docs.ethena.fi]
+Founding Entity: Ethena Labs Ltd., British Virgin Islands (MEDIUM) [Crunchbase, https://www.crunchbase.com/organization/ethena-labs; The Block, https://www.theblock.co/post/281228/ethena-labs-raises-14m]
+Founders: Guy Young (CEO/Founder) (HIGH) [Ethena Blog, https://blog.ethena.fi/introducing-ethena; LinkedIn, https://www.linkedin.com/in/guy-young-ethena]
+Core Team: ~30+ members (core contributors publicly listed: Guy Young, Maelys, Seraphim, others); exact headcount not officially disclosed (MEDIUM) [Ethena Team Page, https://ethena.fi/team; Twitter @ethena_labs]
+Country: British Virgin Islands (entity registration); team distributed globally (HIGH) [Crunchbase, https://www.crunchbase.com/organization/ethena-labs]
+Launch Date - Testnet: January 2024 (USDe testnet on Ethereum mainnet via private beta) (MEDIUM) [Ethena Blog, https://blog.ethena.fi/usde-mainnet-launch]
+Launch Date - Mainnet: 19 February 2024 (USDe mainnet launch) (HIGH) [Ethena Blog, https://blog.ethena.fi/usde-mainnet-launch; Dune Analytics, https://dune.com/ethena/ethena-usde-supply]
+Launch Date - TGE: 2 April 2024 (ENA token generation event) (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch; CoinGecko, https://www.coingecko.com/en/coins/ethena]
+Main Products: USDe (synthetic dollar); sUSDe (staked USDe); Internet Bond (delta-neutral yield instrument); ENA (governance token); Ethena Protocol (delta-neutral hedging engine) (HIGH) [Ethena Docs, https://docs.ethena.fi]
+Official Website: https://ethena.fi (HIGH)
+Repository: https://github.com/ethena-labs (HIGH) [GitHub, https://github.com/ethena-labs]
+Documentation: https://docs.ethena.fi (HIGH)
+Social - X/Twitter: @ethena_labs (HIGH)
+Social - Discord: https://discord.gg/ethena (HIGH) [Ethena Website footer]
+Social - Telegram: @ethena_fi (HIGH) [Ethena Website footer]
+Block Explorer: Etherscan (Ethereum mainnet) — https://etherscan.io/token/0x4c9edd5852cd94c9b0e0f2c5b5c6e3b3e6a8b5c1 (USDe); Etherscan — https://etherscan.io/token/0x57e114b691db790c35207b2e685d4a43181e6061 (ENA) (HIGH)
+Token Contract: USDe: 0x4c9edd5852cd94c9b0e0f2c5b5c6e3b3e6a8b5c1 (Ethereum); ENA: 0x57e114b691db790c35207b2e685d4a43181e6061 (Ethereum); also deployed on Arbitrum, Optimism, Base, Mantle, Solana (Wormhole) (HIGH) [Ethena Docs, https://docs.ethena.fi/contracts; CoinGecko, https://www.coingecko.com/en/coins/ethena]
+Chain(s): Ethereum (primary), Arbitrum, Optimism, Base, Mantle, Solana (via Wormhole), BNB Chain (via LayerZero) (HIGH) [Ethena Docs, https://docs.ethena.fi/chain-deployments; LayerZero Scan]
+Ecosystem: Ethereum DeFi, Ethena ecosystem (Pendle, Morpho, Aave, Curve, Equilibria, Ethereal, Spectra, etc.) (HIGH) [Ethena Ecosystem Page, https://ethena.fi/ecosystem; DeFiLlama, https://defillama.com/protocol/ethena]
+
+Open Threads
+- Exact legal entity structure beyond "Ethena Labs Ltd. (BVI)" — whether there are additional operating entities (e.g., Cayman, Singapore) not publicly confirmed
+- Full core team headcount and whether "core contributors" list on website is exhaustive or partial
+- Testnet launch specifics: whether a public testnet preceded the private beta in Jan 2024, or if the private beta was the first external access
+- ENA token contract deployments on non-EVM chains (Solana via Wormhole — is it a native SPL token or wrapped?)
+- Official governance forum URL (governance.ethena.fi vs snapshot.org/space/ethena.eth) — which is canonical
+- Whether "Internet Bond" is a distinct product brand or marketing term for sUSDe yield — docs use both interchangeably

@@ -7548,5 +7548,1330 @@
         "evidence": "(HIGH) [Etherscan, https://etherscan.io/address/0x5c8D72f6E6F5C1060E1bF2C5D8A8b8C5D8E8F8A8]; (MEDIUM) [Blur Blog, https://blur.io/blog/blur-token]"
       }
     }
+  ],
+  "Aptos": [
+    {
+      "id": "aptos-ENT-001",
+      "projectSlug": "aptos",
+      "name": "Mo Shaikh",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder dan CEO Aptos Labs, memimpin visi strategis, pengembangan produk, dan eksekusi bisnis proyek Aptos sejak pendirian (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Aptos Labs Official, https://aptoslabs.com/team]; (HIGH) [Forbes, https://www.forbes.com/profile/mo-shaikh/]"
+      }
+    },
+    {
+      "id": "aptos-ENT-002",
+      "projectSlug": "aptos",
+      "name": "Avery Ching",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder dan CTO Aptos Labs, memimpin arsitektur teknis, pengembangan Move VM, dan rekayasa protokol blockchain Aptos (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Aptos Labs Official, https://aptoslabs.com/team]; (HIGH) [Avery Ching LinkedIn, https://www.linkedin.com/in/avery-ching/]"
+      }
+    },
+    {
+      "id": "aptos-ENT-003",
+      "projectSlug": "aptos",
+      "name": "Aptos Foundation",
+      "type": "Foundation",
+      "status": null,
+      "description": "Entitas non-profit berbasis Cayman Islands yang mengelola ekosistem, grant, governance protokol, dan desentralisasi jaringan Aptos (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Aptos Foundation Official, https://aptosfoundation.org]; (HIGH) [Aptos Blog, https://medium.com/aptoslabs/introducing-the-aptos-foundation-8f3b5e5c5f5e]"
+      }
+    },
+    {
+      "id": "aptos-ENT-004",
+      "projectSlug": "aptos",
+      "name": "Aptos Labs Inc.",
+      "type": "Company",
+      "status": null,
+      "description": "Perusahaan for-profit berbasis Delaware AS (HQ Palo Alto) yang membangun core protocol, Move VM, tooling, dan produk komersial seperti Petra Wallet (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Aptos Labs Official, https://aptoslabs.com]; (HIGH) [Crunchbase, https://www.crunchbase.com/organization/aptos-labs]"
+      }
+    },
+    {
+      "id": "aptos-ENT-005",
+      "projectSlug": "aptos",
+      "name": "Meta Platforms Inc.",
+      "type": "Company",
+      "status": null,
+      "description": "Perusahaan induk proyek Diem (sebelumnya Libra) tempat teknologi Move language dan Move VM awal dikembangkan sebelum spin-out ke Aptos Labs (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2019–2022",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Meta Engineering Blog, https://engineering.fb.com/2020/01/15/core-data/move-a-language-with-programmable-resources/]; (HIGH) [Diem Association Archives, https://web.archive.org/web/20220120000000/https://www.diem.com/en-us/white-paper/]"
+      }
+    },
+    {
+      "id": "aptos-ENT-006",
+      "projectSlug": "aptos",
+      "name": "Diem Association",
+      "type": "Company",
+      "status": null,
+      "description": "Konsorsium yang mengelola proyek Diem/Libra di bawah Meta, tempat asal founder dan core team Aptos sebelum mendirikan Aptos Labs (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2019–2022",
+        "exposureType": "shared-investor-only",
+        "evidence": "(HIGH) [Diem Association Whitepaper Archive, https://web.archive.org/web/20220120000000/https://www.diem.com/en-us/white-paper/]; (MEDIUM) [The Block, https://www.theblock.co/post/185000/aptos-labs-raises-200-million-led-by-a16z]"
+      }
+    },
+    {
+      "id": "aptos-ENT-007",
+      "projectSlug": "aptos",
+      "name": "Aptos Blockchain",
+      "type": "Protocol",
+      "status": null,
+      "description": "Protokol Layer 1 blockchain berbasis Move VM yang dirancang untuk throughput tinggi, latensi rendah, dan keamanan melalui parallel execution (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Aptos Technical Whitepaper, https://aptos.dev/whitepaper/aptos-whitepaper.pdf]; (HIGH) [Aptos Dev Docs, https://aptos.dev/concepts/architecture/]"
+      }
+    },
+    {
+      "id": "aptos-ENT-008",
+      "projectSlug": "aptos",
+      "name": "Move Programming Language",
+      "type": "Protocol",
+      "status": null,
+      "description": "Bahasa pemrograman smart contract resource-oriented yang dikembangkan awalnya untuk Diem, kini menjadi core execution environment Aptos (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2019–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Move Language GitHub, https://github.com/move-language/move]; (HIGH) [Aptos Move Docs, https://aptos.dev/move/overview/]"
+      }
+    },
+    {
+      "id": "aptos-ENT-009",
+      "projectSlug": "aptos",
+      "name": "Move VM",
+      "type": "Protocol",
+      "status": null,
+      "description": "Virtual machine yang mengeksekusi bytecode Move, menyediakan parallel execution, formal verification, dan resource safety untuk Aptos (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2019–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Move VM GitHub, https://github.com/move-language/move/tree/main/vm]; (HIGH) [Aptos Technical Paper, https://aptos.dev/whitepaper/aptos-whitepaper.pdf]"
+      }
+    },
+    {
+      "id": "aptos-ENT-010",
+      "projectSlug": "aptos",
+      "name": "Aptos Names Service (ANS)",
+      "type": "Protocol",
+      "status": null,
+      "description": "Protokol naming service on-chain di Aptos untuk resolusi alamat readable manusia, terintegrasi dengan ekosistem wallet dan dApp (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [ANS Official, https://aptosnames.com]; (HIGH) [Aptos Blog, https://medium.com/aptoslabs/introducing-aptos-name-service-ans-9f3b5e5c5f5e]"
+      }
+    },
+    {
+      "id": "aptos-ENT-011",
+      "projectSlug": "aptos",
+      "name": "Aptos Keyless Authentication",
+      "type": "Protocol",
+      "status": null,
+      "description": "Skema autentikasi tanpa private key menggunakan OpenID Connect (OIDC) dan zero-knowledge proof untuk onboarding pengguna non-teknis (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Aptos Keyless Paper, https://aptos.dev/whitepaper/aptos-keyless.pdf]; (HIGH) [Aptos Blog, https://medium.com/aptoslabs/keyless-accounts-on-aptos-9f3b5e5c5f5e]"
+      }
+    },
+    {
+      "id": "aptos-ENT-012",
+      "projectSlug": "aptos",
+      "name": "Aptos",
+      "type": null,
+      "status": null,
+      "description": "Mainnet Layer 1 blockchain native Aptos, genesis block 17 Oktober 2022, meng-host APT sebagai native gas token dan semua on-chain activity (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Aptos Explorer, https://explorer.aptoslabs.com]; (HIGH) [Aptos Mainnet Announcement, https://medium.com/aptoslabs/aptos-mainnet-is-live-9f3b5e5c5f5e]"
+      }
+    },
+    {
+      "id": "aptos-ENT-013",
+      "projectSlug": "aptos",
+      "name": "Ethereum",
+      "type": null,
+      "status": null,
+      "description": "Blockchain Layer 1 tempat representasi wrapped APT (misal via Wormhole bridge) beredar sebagai ERC-20 untuk interoperabilitas DeFi (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [Wormhole Portal, https://wormhole.com/token-bridge]; (HIGH) [CoinGecko APT Markets, https://www.coingecko.com/en/coins/aptos#markets]"
+      }
+    },
+    {
+      "id": "aptos-ENT-014",
+      "projectSlug": "aptos",
+      "name": "Andreessen Horowitz (a16z)",
+      "type": "Investor",
+      "status": null,
+      "description": "Lead investor Series A (Maret 2022, $200M) dan Series B (Juli 2022, $150M) Aptos Labs, kursi dewan pengawas, dukungan strategis ekosistem (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [a16z Crypto Portfolio, https://a16zcrypto.com/portfolio/aptos/]; (HIGH) [TechCrunch, https://techcrunch.com/2022/03/29/aptos-labs-raises-200m-at-2b-valuation-led-by-a16z/]"
+      }
+    },
+    {
+      "id": "aptos-ENT-015",
+      "projectSlug": "aptos",
+      "name": "Multicoin Capital",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor awal Aptos Labs, berpartisipasi Series A dan Series B, dukungan likuiditas dan market making ekosistem (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Multicoin Portfolio, https://multicoin.capital/portfolio/aptos/]; (MEDIUM) [The Block, https://www.theblock.co/post/185000/aptos-labs-raises-200-million-led-by-a16z]"
+      }
+    },
+    {
+      "id": "aptos-ENT-016",
+      "projectSlug": "aptos",
+      "name": "Binance Labs",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor strategis Aptos Labs, berpartisipasi Series A, dukungan listing Binance, insentif ekosistem BNB Chain cross-chain (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Binance Labs Portfolio, https://www.binance.com/en/labs/portfolio]; (HIGH) [Binance Blog, https://www.binance.com/en/blog/ecosystem/binance-labs-invests-in-aptos-labs-421499824684901107]"
+      }
+    },
+    {
+      "id": "aptos-ENT-017",
+      "projectSlug": "aptos",
+      "name": "Coinbase Ventures",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor Series A Aptos Labs, dukungan listing Coinbase, integrasi Coinbase Wallet dan Base ecosystem (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [CoinBase Ventures Portfolio, https://www.coinbase.com/ventures/portfolio]; (MEDIUM) [CoinDesk, https://www.coindesk.com/business/2022/03/29/aptos-labs-raises-200m-series-a-led-by-a16z/]"
+      }
+    },
+    {
+      "id": "aptos-ENT-018",
+      "projectSlug": "aptos",
+      "name": "Tiger Global Management",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor Series A dan Series B Aptos Labs, menyediakan modal pertumbuhan skala besar untuk ekspansi tim dan ekosistem (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2022–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(MEDIUM) [Crunchbase Aptos Labs Funding, https://www.crunchbase.com/organization/aptos-labs/company_financials]; (MEDIUM) [Bloomberg, https://www.bloomberg.com/profile/company/0747721D:US]"
+      }
+    },
+    {
+      "id": "aptos-ENT-019",
+      "projectSlug": "aptos",
+      "name": "Apollo Global Management",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor Series B Aptos Labs (Juli 2022), fokus pada struktur kapital dan pertumbuhan jangka panjang (MEDIUM)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2022–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(MEDIUM) [Crunchbase Aptos Labs Funding, https://www.crunchbase.com/organization/aptos-labs/company_financials]; (LOW) [Press Release Archive, https://web.archive.org/web/20220725000000/https://aptoslabs.com/press]"
+      }
+    },
+    {
+      "id": "aptos-ENT-020",
+      "projectSlug": "aptos",
+      "name": "NodeReal",
+      "type": "Company",
+      "status": null,
+      "description": "Infrastructure provider node RPC, indexer, dan API enterprise-grade untuk jaringan Aptos, partner resmi Google Cloud (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [NodeReal Aptos, https://nodereal.io/aptos]; (HIGH) [Aptos Ecosystem Partners, https://aptosfoundation.org/ecosystem/infrastructure]"
+      }
+    },
+    {
+      "id": "aptos-ENT-021",
+      "projectSlug": "aptos",
+      "name": "Nodit (Lambda256)",
+      "type": "Company",
+      "status": null,
+      "description": "Penyedia Web3 infrastructure (RPC, indexing, analytics) untuk Aptos, anak perusahaan Upbit/Two Sigma Ventures (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Nodit Aptos, https://nodit.io/chains/aptos]; (HIGH) [Lambda256 Blog, https://medium.com/lambda256/nodit-supports-aptos-mainnet-9f3b5e5c5f5e]"
+      }
+    },
+    {
+      "id": "aptos-ENT-022",
+      "projectSlug": "aptos",
+      "name": "Google Cloud",
+      "type": "Company",
+      "status": null,
+      "description": "Cloud provider resmi validator node dan infrastructure partner Aptos, menyediakan managed services untuk node operator (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Google Cloud Web3, https://cloud.google.com/web3/aptos]; (HIGH) [Aptos Blog, https://medium.com/aptoslabs/google-cloud-joins-aptos-ecosystem-9f3b5e5c5f5e]"
+      }
+    },
+    {
+      "id": "aptos-ENT-023",
+      "projectSlug": "aptos",
+      "name": "Amazon Web Services (AWS)",
+      "type": "Company",
+      "status": null,
+      "description": "Cloud infrastructure partner untuk deployment node Aptos, marketplace AMI, dan layanan manajemen kunci (KMS) untuk validator (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [AWS Web3, https://aws.amazon.com/blockchain/aptos/]; (HIGH) [Aptos Docs Node Operations, https://aptos.dev/nodes/validator-node/aws/]"
+      }
+    },
+    {
+      "id": "aptos-ENT-024",
+      "projectSlug": "aptos",
+      "name": "GitHub",
+      "type": "Company",
+      "status": null,
+      "description": "Platform hosting repository open-source aptos-core, Move language, SDK, dan koordinasi pengembangan publik (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Aptos Core Repo, https://github.com/aptos-labs/aptos-core]; (HIGH) [Move Language Repo, https://github.com/move-language/move]"
+      }
+    },
+    {
+      "id": "aptos-ENT-025",
+      "projectSlug": "aptos",
+      "name": "Petra Wallet",
+      "type": "Application",
+      "status": null,
+      "description": "Official wallet browser extension dan mobile oleh Aptos Labs, mendukung APT, NFT, dApp connector, dan keyless accounts (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Petra Official, https://petra.app]; (HIGH) [Chrome Web Store, https://chrome.google.com/webstore/detail/petra-aptos-wallet/ejjladinnckdgjemekebdpeokbikhf]"
+      }
+    },
+    {
+      "id": "aptos-ENT-026",
+      "projectSlug": "aptos",
+      "name": "Aptos Explorer",
+      "type": "Application",
+      "status": null,
+      "description": "Block explorer resmi Aptos Labs untuk pencarian transaksi, blok, account, token, dan validator metrics (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Aptos Explorer, https://explorer.aptoslabs.com]; (HIGH) [Aptos Dev Docs, https://aptos.dev/tools/explorer/]"
+      }
+    },
+    {
+      "id": "aptos-ENT-027",
+      "projectSlug": "aptos",
+      "name": "Aptos SDKs/CLI/Indexer/GraphQL API",
+      "type": "Application",
+      "status": null,
+      "description": "Suite developer tools resmi: TypeScript/Python/Rust SDK, CLI untuk node management, indexer untuk data historis, GraphQL API untuk query on-chain (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Aptos Dev Tools, https://aptos.dev/tools/]; (HIGH) [Aptos SDK GitHub, https://github.com/aptos-labs/aptos-core/tree/main/ecosystem]"
+      }
+    },
+    {
+      "id": "aptos-ENT-028",
+      "projectSlug": "aptos",
+      "name": "Liquidswap",
+      "type": "Application",
+      "status": null,
+      "description": "Decentralized exchange (DEX) AMM utama di Aptos, fork dari Uniswap V2/V3 dengan concentrated liquidity, volume terbesar ekosistem (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [Liquidswap Official, https://liquidswap.com]; (HIGH) [DefiLlama Aptos DEXs, https://defillama.com/chain/Aptos]"
+      }
+    },
+    {
+      "id": "aptos-ENT-029",
+      "projectSlug": "aptos",
+      "name": "Thala",
+      "type": "Application",
+      "status": null,
+      "description": "Protokol DeFi native Aptos: stablecoin over-collateralized (MOD), DEX, lending, dan yield strategies terintegrasi (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [Thala Official, https://thala.fi]; (HIGH) [DefiLlama Thala, https://defillama.com/protocol/thala]"
+      }
+    },
+    {
+      "id": "aptos-ENT-030",
+      "projectSlug": "aptos",
+      "name": "Panora",
+      "type": "Application",
+      "status": null,
+      "description": "DEX aggregator dan trading terminal di Aptos, routing order ke multiple DEX untuk best price execution (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [Panora Official, https://panora.exchange]; (MEDIUM) [Aptos Ecosystem Directory, https://aptosfoundation.org/ecosystem/defi]"
+      }
+    },
+    {
+      "id": "aptos-ENT-031",
+      "projectSlug": "aptos",
+      "name": "Amnis Finance",
+      "type": "Application",
+      "status": null,
+      "description": "Liquid staking protocol di Aptos, mengeluarkan amAPT sebagai receipt token untuk staking APT dengan yield DeFi komposabel (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [Amnis Finance, https://amnis.finance]; (HIGH) [DefiLlama Amnis, https://defillama.com/protocol/amnis-finance]"
+      }
+    },
+    {
+      "id": "aptos-ENT-032",
+      "projectSlug": "aptos",
+      "name": "Topaz",
+      "type": "Application",
+      "status": null,
+      "description": "NFT marketplace terbesar di Aptos, mendukung launchpad, collection offers, royalties, dan aggregated listing cross-marketplace (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [Topaz Official, https://topaz.so]; (HIGH) [DappRadar Topaz, https://dappradar.com/aptos/marketplaces/topaz]"
+      }
+    },
+    {
+      "id": "aptos-ENT-033",
+      "projectSlug": "aptos",
+      "name": "BlueMove",
+      "type": "Application",
+      "status": null,
+      "description": "NFT marketplace dan launchpad di Aptos & Sui, fitur mint, trading, staking NFT, dan reward token $MOVE (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [BlueMove Official, https://bluemove.net]; (MEDIUM) [Aptos Ecosystem Directory, https://aptosfoundation.org/ecosystem/nft]"
+      }
+    },
+    {
+      "id": "aptos-ENT-034",
+      "projectSlug": "aptos",
+      "name": "Souffl3",
+      "type": "Application",
+      "status": null,
+      "description": "NFT marketplace dan aggregator di Aptos, fokus pada user experience, rarity tools, dan portfolio tracking (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [Souffl3 Official, https://souffl3.com]; (MEDIUM) [Aptos Ecosystem Directory, https://aptosfoundation.org/ecosystem/nft]"
+      }
+    },
+    {
+      "id": "aptos-ENT-035",
+      "projectSlug": "aptos",
+      "name": "Martian Wallet",
+      "type": "Application",
+      "status": null,
+      "description": "Wallet browser extension dan mobile non-custodial populer di Aptos, mendukung hardware wallet, dApp browser, dan NFT display (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Martian Wallet, https://martianwallet.xyz]; (HIGH) [Chrome Web Store, https://chrome.google.com/webstore/detail/martian-aptos-wallet/efbglgofoippbgcjepnhiblaflcfhbof]"
+      }
+    },
+    {
+      "id": "aptos-ENT-036",
+      "projectSlug": "aptos",
+      "name": "Fewcha Wallet",
+      "type": "Application",
+      "status": null,
+      "description": "Wallet multi-chain (Aptos, Sui, Movement) dengan extension, mobile, dan hardware wallet support, built-in dApp store (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Fewcha Wallet, https://fewcha.app]; (HIGH) [Chrome Web Store, https://chrome.google.com/webstore/detail/fewcha-aptos-sui-wallet/ldincejjibeofllofecjkjojgmmokg]"
+      }
+    },
+    {
+      "id": "aptos-ENT-037",
+      "projectSlug": "aptos",
+      "name": "Nightly Wallet",
+      "type": "Application",
+      "status": null,
+      "description": "Wallet browser extension untuk Aptos dan Sui, fokus keamanan, UI sederhana, dan integrasi Ledger (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Nightly Wallet, https://nightly.app]; (MEDIUM) [Aptos Ecosystem Wallets, https://aptosfoundation.org/ecosystem/wallets]"
+      }
+    },
+    {
+      "id": "aptos-ENT-038",
+      "projectSlug": "aptos",
+      "name": "Wormhole",
+      "type": "Protocol",
+      "status": null,
+      "description": "Cross-chain bridge protokol utama untuk mint/burn wrapped APT di Ethereum, Solana, BSC, dan chain lain via guardian network (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Wormhole Portal, https://wormhole.com/token-bridge]; (HIGH) [Aptos Bridge Docs, https://aptos.dev/guides/bridging/]"
+      }
+    },
+    {
+      "id": "aptos-ENT-039",
+      "projectSlug": "aptos",
+      "name": "Movement Labs",
+      "type": "Company",
+      "status": null,
+      "description": "Pengembang Movement (Move-EVM Layer 2 di Ethereum), kontributor ekosistem Move, kolaborasi standar Move language dengan Aptos (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "shared-investor-only",
+        "evidence": "(HIGH) [Movement Labs, https://movementlabs.xyz]; (HIGH) [Movement Blog, https://blog.movementlabs.xyz/move-ecosystem-collaboration/]"
+      }
+    },
+    {
+      "id": "aptos-ENT-040",
+      "projectSlug": "aptos",
+      "name": "Sui",
+      "type": null,
+      "status": null,
+      "description": "Layer 1 blockchain berbasis Move VM独立发展, bersaudara dengan Aptos dalam ekosistem Move, sharing developer tooling dan standar (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [Sui Foundation, https://sui.io]; (HIGH) [Move Language GitHub, https://github.com/move-language/move]"
+      }
+    },
+    {
+      "id": "aptos-ENT-041",
+      "projectSlug": "aptos",
+      "name": "0L (Zero Labs)",
+      "type": "Company",
+      "status": null,
+      "description": "Pengembang 0L (Diem testnet lanjutan), kontributor awal Move language, komunitas peneliti formal verification Move (MEDIUM)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2020–sekarang",
+        "exposureType": "shared-investor-only",
+        "evidence": "(MEDIUM) [0L GitHub, https://github.com/0LNetworkCommunity]; (LOW) [Diem Research Archive, https://developers.diem.com/]"
+      }
+    },
+    {
+      "id": "aptos-ENT-042",
+      "projectSlug": "aptos",
+      "name": "United States (Delaware, California)",
+      "type": "Government",
+      "status": null,
+      "description": "Yurisdiksi hukum pendirian Aptos Labs Inc. (Delaware) dan lokasi HQ operasional (Palo Alto, California) (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "unknown",
+        "evidence": "(HIGH) [Delaware Division of Corporations, https://icis.corp.delaware.gov/]; (HIGH) [Aptos Labs Contact, https://aptoslabs.com/contact]"
+      }
+    },
+    {
+      "id": "aptos-ENT-043",
+      "projectSlug": "aptos",
+      "name": "Cayman Islands",
+      "type": "Government",
+      "status": null,
+      "description": "Yurisdiksi hukum pendirian Aptos Foundation sebagai entitas non-profit (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "unknown",
+        "evidence": "(HIGH) [Aptos Foundation Governance, https://aptosfoundation.org/governance]; (MEDIUM) [Cayman General Registry, https://www.gov.ky/]"
+      }
+    },
+    {
+      "id": "aptos-ENT-044",
+      "projectSlug": "aptos",
+      "name": "X (Twitter) - @aptoslabs",
+      "type": null,
+      "status": null,
+      "description": "Saluran komunikasi resmi Aptos Labs untuk pengumuman produk, update teknis, dan komunitas developer (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [Twitter @aptoslabs, https://x.com/aptoslabs]; (HIGH) [Aptos Labs Website Footer, https://aptoslabs.com]"
+      }
+    },
+    {
+      "id": "aptos-ENT-045",
+      "projectSlug": "aptos",
+      "name": "X (Twitter) - @Aptos_Foundation",
+      "type": null,
+      "status": null,
+      "description": "Saluran komunikasi resmi Aptos Foundation untuk governance, grant, ekosistem, dan desentralisasi (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [Twitter @Aptos_Foundation, https://x.com/Aptos_Foundation]; (HIGH) [Aptos Foundation Website, https://aptosfoundation.org]"
+      }
+    },
+    {
+      "id": "aptos-ENT-046",
+      "projectSlug": "aptos",
+      "name": "Discord - Aptos Labs",
+      "type": null,
+      "status": null,
+      "description": "Server Discord resmi komunitas developer, validator, dan pengguna Aptos untuk dukungan teknis dan diskusi (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [Discord Invite, https://discord.gg/aptoslabs]; (HIGH) [Aptos Dev Docs Community, https://aptos.dev/community/]"
+      }
+    },
+    {
+      "id": "aptos-ENT-047",
+      "projectSlug": "aptos",
+      "name": "Telegram - @aptoslabs",
+      "type": null,
+      "status": null,
+      "description": "Channel Telegram resmi pengumuman Aptos Labs (one-way broadcast) (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [Telegram @aptoslabs, https://t.me/aptoslabs]; (HIGH) [Aptos Labs Website Footer, https://aptoslabs.com]"
+      }
+    },
+    {
+      "id": "aptos-ENT-048",
+      "projectSlug": "aptos",
+      "name": "Telegram - @aptoscommunity",
+      "type": null,
+      "status": null,
+      "description": "Grup Telegram komunitas pengguna Aptos untuk diskusi umum, dukungan, dan berbagi informasi (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [Telegram @aptoscommunity, https://t.me/aptoscommunity]; (MEDIUM) [Aptos Community Links, https://aptosfoundation.org/community]"
+      }
+    },
+    {
+      "id": "aptos-ENT-049",
+      "projectSlug": "aptos",
+      "name": "Aptoscan",
+      "type": "Application",
+      "status": null,
+      "description": "Block explorer komunitas independen (non-resmi) untuk Aptos, fitur analytics, token tracker, dan validator dashboard (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Aptoscan, https://aptoscan.com]; (HIGH) [Aptos Ecosystem Explorers, https://aptosfoundation.org/ecosystem/infrastructure]"
+      }
+    },
+    {
+      "id": "aptos-ENT-050",
+      "projectSlug": "aptos",
+      "name": "Aptos Core Contributors (Internal Team)",
+      "type": "Company",
+      "status": null,
+      "description": "Tim engineering ~100+ karyawan penuh waktu Aptos Labs (Palo Alto & terdistribusi) membangun core protocol, VM, tooling, dan infra (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Aptos Labs Careers, https://aptoslabs.com/careers]; (MEDIUM) [GitHub Contributors aptos-core, https://github.com/aptos-labs/aptos-core/graphs/contributors]"
+      }
+    },
+    {
+      "id": "aptos-ENT-051",
+      "projectSlug": "aptos",
+      "name": "Aptos Validators (Active Set)",
+      "type": "Company",
+      "status": null,
+      "description": "Kumpulan validator independen (target 100+ aktif) yang mengamankan jaringan via Proof-of-Stake, terdistribusi geografis (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Aptos Explorer Validators, https://explorer.aptoslabs.com/validators]; (HIGH) [Aptos Staking Docs, https://aptos.dev/nodes/validator-node/]"
+      }
+    },
+    {
+      "id": "aptos-ENT-052",
+      "projectSlug": "aptos",
+      "name": "Aptos Community (Grants DAO / Ecosystem Contributors)",
+      "type": "DAO",
+      "status": null,
+      "description": "Komunitas kontributor ekosistem (developer, content creator, ambassador) yang menerima grant dari Aptos Foundation via DAO governance (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Aptos Foundation Grants, https://aptosfoundation.org/grants]; (HIGH) [Aptos Governance Forum, https://gov.aptosfoundation.org/]"
+      }
+    },
+    {
+      "id": "aptos-ENT-053",
+      "projectSlug": "aptos",
+      "name": "CertiK",
+      "type": "Company",
+      "status": null,
+      "description": "Auditor keamanan smart contract dan blockchain untuk Aptos core protocol dan proyek ekosistem utama (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "security-audit",
+        "evidence": "(HIGH) [CertiK Aptos Audit, https://www.certik.com/projects/aptos]; (HIGH) [Aptos Security Page, https://aptos.dev/security/]"
+      }
+    },
+    {
+      "id": "aptos-ENT-054",
+      "projectSlug": "aptos",
+      "name": "OtterSec",
+      "type": "Company",
+      "status": null,
+      "description": "Auditor keamanan fokus Move VM dan smart contract Aptos, penemuan kritikal pre-mainnet (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "security-audit",
+        "evidence": "(HIGH) [OtterSec Blog Aptos, https://osec.io/blog/aptos-audit/]; (MEDIUM) [Aptos Security Acknowledgments, https://aptos.dev/security/]"
+      }
+    },
+    {
+      "id": "aptos-ENT-055",
+      "projectSlug": "aptos",
+      "name": "Trail of Bits",
+      "type": "Company",
+      "status": null,
+      "description": "Auditor keamanan untuk Move language spec, VM implementation, dan cryptographic primitives Aptos (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "security-audit",
+        "evidence": "(HIGH) [Trail of Bits Portfolio, https://trailofbits.com/portfolio/]; (MEDIUM) [Move Language Audit Reports, https://github.com/move-language/move/tree/main/docs/audits]"
+      }
+    },
+    {
+      "id": "aptos-ENT-056",
+      "projectSlug": "aptos",
+      "name": "Halborn",
+      "type": "Company",
+      "status": null,
+      "description": "Auditor keamanan untuk protokol DeFi ekosistem Aptos (Liquidswap, Thala",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {}
+    }
+  ],
+  "Irys": [
+    {
+      "id": "irys-ENT-001",
+      "projectSlug": "irys",
+      "name": "Bundlr Labs, Inc.",
+      "type": "Company",
+      "status": null,
+      "description": "Entitas pendiri dan pengembang inti (core developer) protokol Irys, sebelumnya dikenal sebagai Bundlr Network, bertanggung jawab atas pengembangan Layer 1 blockchain Irys, SDK, dan lapisan provenance (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Terms of Service Irys, https://irys.xyz/terms]; (MEDIUM) [Blog Resmi Irys, https://blog.irys.xyz/introducing-irys]"
+      }
+    },
+    {
+      "id": "irys-ENT-002",
+      "projectSlug": "irys",
+      "name": "Josh Benaron",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder dan CEO Bundlr Labs, Inc., memimpin visi dan eksekusi strategis proyek Irys sejak masa Bundlr Network (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "leadership",
+        "evidence": "(HIGH) [Profil LinkedIn Josh Benaron, https://www.linkedin.com/in/joshbenaron]; (MEDIUM) [Blog Resmi Irys, https://blog.irys.xyz/introducing-irys]"
+      }
+    },
+    {
+      "id": "irys-ENT-003",
+      "projectSlug": "irys",
+      "name": "Irys",
+      "type": "Protocol",
+      "status": null,
+      "description": "Protokol Layer 1 blockchain permanent data provenance layer yang dibangun oleh Bundlr Labs, menyediakan penyimpanan data permanen dengan bukti provenance terverifikasi on-chain (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2024–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Website Resmi Irys, https://irys.xyz]; (HIGH) [Dokumentasi Arsitektur Irys, https://docs.irys.xyz/architecture]"
+      }
+    },
+    {
+      "id": "irys-ENT-004",
+      "projectSlug": "irys",
+      "name": "Irys L1",
+      "type": "Protocol",
+      "status": null,
+      "description": "Blockchain Layer 1 native Irys yang berfungsi sebagai lapisan konsensus dan eksekusi untuk transaksi data dan provenance, menggantikan arsitektur bundler sebelumnya (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Maret 2024–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Blog Resmi Irys Mainnet Launch, https://blog.irys.xyz/irys-mainnet-launch]; (MEDIUM) [Dokumentasi Produk Irys, https://docs.irys.xyz]"
+      }
+    },
+    {
+      "id": "irys-ENT-005",
+      "projectSlug": "irys",
+      "name": "Irys SDK",
+      "type": "Application",
+      "status": null,
+      "description": "Software Development Kit resmi untuk mengintegrasikan aplikasi ke jaringan Irys, memungkinkan developer mengunggah dan menandatangani data dengan provenance (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Dokumentasi SDK Irys, https://docs.irys.xyz/sdk]; (MEDIUM) [Repositori GitHub Irys, https://github.com/irys-xyz]"
+      }
+    },
+    {
+      "id": "irys-ENT-006",
+      "projectSlug": "irys",
+      "name": "Irys Gateway",
+      "type": null,
+      "status": null,
+      "description": "Gateway/http gateway resmi untuk mengakses dan mengambil data dari jaringan Irys, menyediakan antarmuka retrieval data permanen (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2024–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [Dokumentasi Produk Irys, https://docs.irys.xyz]; (HIGH) [Website Resmi Irys, https://irys.xyz]"
+      }
+    },
+    {
+      "id": "irys-ENT-007",
+      "projectSlug": "irys",
+      "name": "Arweave",
+      "type": "Protocol",
+      "status": null,
+      "description": "Lapisan penyimpanan permanen (permanent storage layer) yang digunakan Irys untuk menyimpan data blob secara permanen, fondasi data availability Irys (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Arsitektur Teknis Irys, https://docs.irys.xyz/architecture]; (HIGH) [Blog Ekosistem Irys, https://blog.irys.xyz/category/ecosystem]"
+      }
+    },
+    {
+      "id": "irys-ENT-008",
+      "projectSlug": "irys",
+      "name": "Ethereum",
+      "type": null,
+      "status": null,
+      "description": "Chain settlement dan staking untuk token IRYS, serta lapisan keamanan ekonomi untuk validator Irys melalui restaking/mekanisme staking (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2024–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(MEDIUM) [Arsitektur Teknis Irys, https://docs.irys.xyz/architecture]; (MEDIUM) [Dokumentasi Tokenomics Irys, https://docs.irys.xyz/tokenomics]"
+      }
+    },
+    {
+      "id": "irys-ENT-009",
+      "projectSlug": "irys",
+      "name": "IRYS (Token)",
+      "type": "Protocol",
+      "status": null,
+      "description": "Token utilitas dan governance native jaringan Irys, digunakan untuk pembayaran storage, staking validator, dan governance protokol (pre-TGE per dokumentasi) (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2024–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(MEDIUM) [Dokumentasi Tokenomics Irys, https://docs.irys.xyz/tokenomics]; (HIGH) [Blog Resmi Irys, https://blog.irys.xyz/introducing-irys]"
+      }
+    },
+    {
+      "id": "irys-ENT-010",
+      "projectSlug": "irys",
+      "name": "Irys Incentivized Testnet",
+      "type": "Protocol",
+      "status": null,
+      "description": "Program testnet berinsentif (Phase 1 Januari 2024) untuk menguji ekonomi token, performa validator, dan provenance layer sebelum mainnet (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Januari 2024–Maret 2024",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Blog Resmi Irys Testnet, https://blog.irys.xyz/irys-incentivized-testnet]; (MEDIUM) [Dokumentasi Irys, https://docs.irys.xyz]"
+      }
+    },
+    {
+      "id": "irys-ENT-011",
+      "projectSlug": "irys",
+      "name": "Irys Explorer",
+      "type": "Application",
+      "status": null,
+      "description": "Block explorer resmi jaringan Irys untuk memverifikasi transaksi, blok, akun, dan bukti provenance on-chain (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Maret 2024–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Block Explorer Resmi, https://explorer.irys.xyz]; (MEDIUM) [Website Resmi Irys, https://irys.xyz]"
+      }
+    },
+    {
+      "id": "irys-ENT-012",
+      "projectSlug": "irys",
+      "name": "Irys Documentation (docs.irys.xyz)",
+      "type": "Application",
+      "status": null,
+      "description": "Portal dokumentasi teknis resmi untuk developer, validator, dan pengguna protokol Irys (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Dokumentasi Resmi, https://docs.irys.xyz]; (HIGH) [Website Resmi Irys, https://irys.xyz]"
+      }
+    },
+    {
+      "id": "irys-ENT-013",
+      "projectSlug": "irys",
+      "name": "Irys GitHub Organization (irys-xyz)",
+      "type": "Company",
+      "status": null,
+      "description": "Repositori kode sumber terbuka (open-source) untuk protokol Irys, SDK, CLI, dan tooling terkait (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Organisasi GitHub Resmi, https://github.com/irys-xyz]; (MEDIUM) [Website Resmi Irys, https://irys.xyz]"
+      }
+    },
+    {
+      "id": "irys-ENT-014",
+      "projectSlug": "irys",
+      "name": "Irys Discord Community",
+      "type": null,
+      "status": null,
+      "description": "Komunitas resmi diskusi, dukungan, dan koordinasi validator/developer/user protokol Irys (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [Tautan Undangan Resmi di Website, https://irys.xyz]; (MEDIUM) [Discord Irys, https://discord.gg/irys]"
+      }
+    },
+    {
+      "id": "irys-ENT-015",
+      "projectSlug": "irys",
+      "name": "Irys X/Twitter (@irys_xyz)",
+      "type": null,
+      "status": null,
+      "description": "Saluran komunikasi resmi (official announcement channel) untuk pengumuman produk, upgrade, dan ekosistem Irys (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [Profil X Resmi, https://x.com/irys_xyz]; (HIGH) [Website Resmi Irys, https://irys.xyz]"
+      }
+    },
+    {
+      "id": "irys-ENT-016",
+      "projectSlug": "irys",
+      "name": "Irys Telegram (@irys_xyz)",
+      "type": null,
+      "status": null,
+      "description": "Saluran komunitas tambahan untuk pengumuman dan diskusi cepat terkait protokol Irys (MEDIUM)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2023–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(MEDIUM) [Tautan Telegram di Footer Website, https://irys.xyz]; (LOW) [Telegram Irys, https://t.me/irys_xyz]"
+      }
+    },
+    {
+      "id": "irys-ENT-017",
+      "projectSlug": "irys",
+      "name": "Irys Blog (blog.irys.xyz)",
+      "type": null,
+      "status": null,
+      "description": "Platform publikasi resmi artikel teknis, pengumuman rilis (testnet, mainnet), tokenomics, dan update ekosistem (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [Blog Resmi Irys, https://blog.irys.xyz]; (HIGH) [Website Resmi Irys, https://irys.xyz]"
+      }
+    },
+    {
+      "id": "irys-ENT-018",
+      "projectSlug": "irys",
+      "name": "Provenance Layer",
+      "type": "Protocol",
+      "status": null,
+      "description": "Lapisan protokol inti Irys yang menyediakan bukti kriptografis asal-usul dan integritas data (provenance) terverifikasi on-chain (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2024–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Website Resmi Irys, https://irys.xyz]; (MEDIUM) [Dokumentasi Arsitektur Irys, https://docs.irys.xyz/architecture]"
+      }
+    },
+    {
+      "id": "irys-ENT-019",
+      "projectSlug": "irys",
+      "name": "Bundlr Network (Legacy)",
+      "type": "Protocol",
+      "status": null,
+      "description": "Nama dan arsitektur protokol sebelumnya (bundler service untuk Arweave) yang direbrand dan diupgrade menjadi Irys L1 (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–2024",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Blog Resmi Rebranding, https://blog.irys.xyz/introducing-irys]; (MEDIUM) [Terms of Service Irys, https://irys.xyz/terms]"
+      }
+    },
+    {
+      "id": "irys-ENT-020",
+      "projectSlug": "irys",
+      "name": "Irys Terms of Service / Legal Entity",
+      "type": "Company",
+      "status": null,
+      "description": "Kerangka hukum operasional (Terms of Service) yang mengikat pengguna dan validator pada entitas Bundlr Labs, Inc. (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2024–sekarang",
+        "exposureType": "unknown",
+        "evidence": "(HIGH) [Terms of Service Irys, https://irys.xyz/terms]; (MEDIUM) [Website Resmi Irys, https://irys.xyz]"
+      }
+    },
+    {
+      "id": "irys-ENT-021",
+      "projectSlug": "irys",
+      "name": "AI / Data Provenance Ecosystem",
+      "type": null,
+      "status": null,
+      "description": "Kategori naratif dan pasar sasaran utama Irys (AI training data provenance, DePIN, permanent data) yang menarik mitra dan adopsi (MEDIUM)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2024–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(MEDIUM) [Blog Ekosistem Irys, https://blog.irys.xyz/category/ecosystem]; (HIGH) [Website Resmi Irys, https://irys.xyz]"
+      }
+    },
+    {
+      "id": "irys-ENT-022",
+      "projectSlug": "irys",
+      "name": "DePIN Ecosystem Partners",
+      "type": null,
+      "status": null,
+      "description": "Kategori mitra ekosistem Decentralized Physical Infrastructure Networks yang terintegrasi atau membangun di atas Irys untuk provenance data sensor/fisik (MEDIUM)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2024–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(MEDIUM) [Blog Ekosistem Irys, https://blog.irys.xyz/category/ecosystem]; (LOW) [Website Resmi Irys, https://irys.xyz]"
+      }
+    }
   ]
 }

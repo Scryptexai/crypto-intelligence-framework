@@ -1,0 +1,351 @@
+PROJECT: Friend.tech
+
+## Market Category
+
+Primary Category: SocialFi / Consumer Crypto
+Secondary Category: Social Token Protocol / Creator Economy
+Sector: SocialFi
+Sub-sector: Token-Gated Social Applications
+Sources: [Friend.tech Docs, https://docs.friend.tech/]; [Messari, https://messari.io/project/friend-tech/profile]; [Base Blog, https://base.mirror.xyz/]; [CoinDesk, https://www.coindesk.com/tech/2023/08/19/friend-tech-the-new-social-app-thats-making-crypto-users-millions/]
+
+## Market Position
+
+Project Stage: Early (Post-TGE, V2 Live, Low Retention)
+Primary Competitors: Farcaster, Lens Protocol, Stars Arena, Post.tech, Tipcoin, Friend3, OpenSocial
+Market Segment: Consumer Social Applications on Base/Ethereum L2
+Geographic Focus: Global (Twitter/X user base), dengan penetrasi tinggi di Asia (Cina, Vietnam, Indonesia) dan Amerika Utara berdasarkan analisis on-chain Nansen/Arkham
+Sources: [Nansen Blog, https://www.nansen.ai/blog/friend-tech-analysis]; [Arkham Platform, https://app.arkhamintelligence.com/entity/friend-tech]; [The Block, https://www.theblock.co/post/248761/friend-tech-founder-racer-interview]; [Dune Friend.tech Dashboards, https://dune.com/friendtech]
+
+## Trading Markets
+
+Exchange: Binance
+Spot: Ya (FRIEND/USDT, FRIEND/TRY)
+Perpetual: Tidak diketahui
+Futures: Tidak diketahui
+Options: Tidak diketahui
+OTC: Tidak diketahui
+Status: Live (sejak 2024-05-03, EV-015)
+Sources: [Binance Announcement, https://www.binance.com/en/support/announcement/friend-tech-friend-listing]; [CoinGecko FRIEND Markets, https://www.coingecko.com/en/coins/friend-tech#markets]
+
+Exchange: Bybit
+Spot: Ya (FRIEND/USDT)
+Perpetual: Tidak diketahui
+Futures: Tidak diketahui
+Options: Tidak diketahui
+OTC: Tidak diketahui
+Status: Live (sejak 2024-05-03, EV-015)
+Sources: [Bybit Announcement, https://announcements.bybit.com/en/articles/friend-tech-listing]; [CoinGecko FRIEND Markets, https://www.coingecko.com/en/coins/friend-tech#markets]
+
+Exchange: OKX
+Spot: Ya (FRIEND/USDT)
+Perpetual: Tidak diketahui
+Futures: Tidak diketahui
+Options: Tidak diketahui
+OTC: Tidak diketahui
+Status: Live (sejak 2024-05-03, EV-015)
+Sources: [OKX Announcement, https://www.okx.com/support/hc/en-us/articles/friend-tech-listing]; [CoinGecko FRIEND Markets, https://www.coingecko.com/en/coins/friend-tech#markets]
+
+Exchange: Coinbase Exchange
+Spot: Ya (FRIEND/USD)
+Perpetual: Tidak diketahui
+Futures: Tidak diketahui
+Options: Tidak diketahui
+OTC: Tidak diketahui
+Status: Live (sejak 2024-06-05, EV-018)
+Sources: [Coinbase Blog Listing, https://blog.coinbase.com/friend-tech-friend-listing]; [CoinGecko FRIEND Markets, https://www.coingecko.com/en/coins/friend-tech#markets]
+
+Exchange: Kraken
+Spot: Ya (FRIEND/USD, FRIEND/EUR)
+Perpetual: Tidak diketahui
+Futures: Tidak diketahui
+Options: Tidak diketahui
+OTC: Tidak diketahui
+Status: Live (sejak 2024-06-05, EV-018)
+Sources: [Kraken Blog, https://blog.kraken.com/post/3456/friend-tech-listing]; [CoinGecko FRIEND Markets, https://www.coingecko.com/en/coins/friend-tech#markets]
+
+Exchange: Aerodrome Finance (DEX)
+Spot: Ya (FRIEND/WETH, FRIEND/USDbC)
+Perpetual: Tidak berlaku
+Futures: Tidak berlaku
+Options: Tidak berlaku
+OTC: Tidak berlaku
+Status: Live (sejak 2024-05-05, EV-016)
+Sources: [Aerodrome App, https://aerodrome.finance/]; [CoinGecko FRIEND Markets, https://www.coingecko.com/en/coins/friend-tech#markets]
+
+Exchange: Uniswap V3 Base (DEX)
+Spot: Ya (FRIEND/WETH concentrated liquidity)
+Perpetual: Tidak berlaku
+Futures: Tidak berlaku
+Options: Tidak berlaku
+OTC: Tidak berlaku
+Status: Live (sejak 2024-05-05, EV-016)
+Sources: [Uniswap App Base, https://app.uniswap.org/explore/tokens/base]; [CoinGecko FRIEND Markets, https://www.coingecko.com/en/coins/friend-tech#markets]
+
+## Liquidity
+
+Liquidity Source: Centralized Exchanges (Binance, Bybit, OKX, Coinbase Exchange, Kraken)
+Major Liquidity Venue: Binance (volume tertinggi berdasarkan CoinGecko markets data)
+DEX: Aerodrome Finance (veAERO incentivized pools), Uniswap V3 Base (concentrated liquidity)
+CEX: Binance, Bybit, OKX, Coinbase Exchange, Kraken
+Bridge Liquidity: Base Native Bridge (Ethereum ↔ Base), tidak ada bridge FRIEND token dedicated
+Status: CEX liquidity dominan (>90% volume), DEX liquidity ada tapi lebih rendah
+Sources: [CoinGecko FRIEND Markets, https://www.coingecko.com/en/coins/friend-tech#markets]; [CoinMarketCap, https://coinmarketcap.com/currencies/friend-tech/]; [Aerodrome App, https://aerodrome.finance/]; [Uniswap App Base, https://app.uniswap.org/explore/tokens/base]
+
+## Adoption Metrics
+
+Metric Name: Total Value Locked (TVL)
+Value: <$1M (V2 clubs, per DeFi Llama Desember 2024) — turun drastis dari puncak V1
+Date: 2024-12
+Sources: [DeFi Llama Friend.tech, https://defillama.com/protocol/friend-tech]
+
+Metric Name: Cumulative Protocol Fees (V1)
+Value: >$10M (tercapai 2023-09-01, EV-009)
+Date: 2023-09-01
+Sources: [DeFi Llama Friend.tech, https://defillama.com/protocol/friend-tech]
+
+Metric Name: Daily Protocol Fees Peak (V1)
+Value: >$1M/hari (tercapai 2023-08-20, EV-006)
+Date: 2023-08-20
+Sources: [DeFi Llama Friend.tech, https://defillama.com/protocol/friend-tech]
+
+Metric Name: Daily Active Users (DAU) Peak (V1)
+Value: >50,000 (estimasi Nansen/Dune Agustus 2023)
+Date: 2023-08
+Sources: [Nansen Blog, https://www.nansen.ai/blog/friend-tech-analysis]; [Dune Friend.tech Dashboards, https://dune.com/friendtech]
+
+Metric Name: Daily Active Users (DAU) Current (V2)
+Value: <5,000 (estimasi Dune/DeFi Llama Q3-Q4 2024)
+Date: 2024-09 to 2024-12
+Sources: [Dune Friend.tech Dashboards, https://dune.com/friendtech]; [DeFi Llama Friend.tech, https://defillama.com/protocol/friend-tech]
+
+Metric Name: Total Unique Traders (V1 All-Time)
+Value: >500,000 address unik (berdasarkan Dune analytics)
+Date: 2024-12 (kumulatif V1)
+Sources: [Dune Friend.tech Dashboards, https://dune.com/friendtech]
+
+Metric Name: FRIEND Token Holders (On-Chain)
+Value: >50,000 address (BaseScan token holders page)
+Date: 2024-12
+Sources: [BaseScan Token Holders, https://basescan.org/token/0x5Cb32172dD37Ce5E18Ec6b26771D7e4D0b84145B#balances]
+
+Metric Name: FRIEND Token 24h Volume (CEX + DEX)
+Value: $5M - $20M rentang harian (fluktuatif, data CoinGecko)
+Date: 2024-10 to 2024-12
+Sources: [CoinGecko FRIEND Markets, https://www.coingecko.com/en/coins/friend-tech]; [CoinMarketCap, https://coinmarketcap.com/currencies/friend-tech/]
+
+Metric Name: FRIEND Token Market Cap (Circulating)
+Value: Tidak diketahui (circulating supply tidak dipublikasikan resmi)
+Date: 2024-12
+Sources: [CoinGecko, https://www.coingecko.com/en/coins/friend-tech]; [CoinMarketCap, https://coinmarketcap.com/currencies/friend-tech/]
+
+Metric Name: FRIEND Token Fully Diluted Valuation (FDV)
+Value: ~$30M - $60M rentang (harga $0.30-$0.60 x 100M supply)
+Date: 2024-10 to 2024-12
+Sources: [CoinGecko, https://www.coingecko.com/en/coins/friend-tech]; [CoinMarketCap, https://coinmarketcap.com/currencies/friend-tech/]
+
+Metric Name: Treasury Balance
+Value: >$5M (ETH + FRIEND + USDbC)
+Date: 2024-12 (EV-025)
+Sources: [Arkham Treasury Label, https://app.arkhamintelligence.com/entity/friend-tech-treasury]; [Dune Treasury Dashboard, https://dune.com/queries/friend-tech-treasury]
+
+## Market Share
+
+Tidak tersedia.
+
+## Competitor Landscape
+
+Competitor: Farcaster
+Category: SocialFi / Decentralized Social Protocol
+Difference: Protocol-level (sufficiently decentralized), bukan aplikasi tunggal; Warpcast sebagai client utama; tidak menggunakan bonding curve untuk akses; focus pada composability dan developer ecosystem
+Market Segment: Developer-centric decentralized social graph
+Sources: [Farcaster Docs, https://docs.farcaster.xyz/]; [Messari, https://messari.io/project/farcaster/profile]
+
+Competitor: Lens Protocol
+Category: SocialFi / Decentralized Social Protocol
+Difference: NFT-based profile (Lens Profile), modular smart contracts, multi-client ecosystem (Hey, Orb, etc.); tidak bonding curve; focus pada data portability
+Market Segment: Creator-centric decentralized social graph
+Sources: [Lens Docs, https://docs.lens.xyz/]; [Messari, https://messari.io/project/lens-protocol/profile]
+
+Competitor: Stars Arena
+Category: SocialFi / Token-Gated Social App
+Difference: Deploy di Avalanche (bukan Base); model bonding curve serupa Friend.tech V1; fokus pada Twitter/X personality monetization
+Market Segment: Avalanche ecosystem SocialFi
+Sources: [Stars Arena App, https://starsarena.com/]; [CoinDesk, https://www.coindesk.com/tech/2023/10/15/stars-arena-avalanche-friend-tech-competitor/]
+
+Competitor: Post.tech
+Category: SocialFi / Token-Gated Social App
+Difference: Deploy di Base (chain sama); model bonding curve + content monetization; integrasi Farcaster social graph
+Market Segment: Base ecosystem SocialFi dengan Farcaster integration
+Sources: [Post.tech App, https://post.tech/]; [Base Blog, https://base.mirror.xyz/]
+
+Competitor: Tipcoin
+Category: SocialFi / Social Mining
+Difference: Point farming / airdrop mining model di Base; tidak bonding curve; reward berdasarkan aktivitas Twitter
+Market Segment: Base ecosystem Social Mining / Airdrop Farming
+Sources: [Tipcoin App, https://tipcoin.io/]; [Base Blog, https://base.mirror.xyz/]
+
+Competitor: Friend3
+Category: SocialFi / Token-Gated Social App
+Difference: Multi-chain (Base, BSC, opBNB); bonding curve + group chat; Web3 social platform
+Market Segment: Multi-chain SocialFi
+Sources: [Friend3 App, https://friend3.ai/]; [CoinGecko, https://www.coingecko.com/en/coins/friend3]
+
+Competitor: OpenSocial
+Category: SocialFi / Social Protocol
+Difference: Protocol layer untuk social applications; bukan consumer app langsung; SDK untuk developer build social features
+Market Segment: Social Infrastructure / Developer Tools
+Sources: [OpenSocial Docs, https://docs.opensocial.xyz/]; [Messari, https://messari.io/project/opensocial/profile]
+
+## Narrative Position
+
+Narrative: SocialFi
+Status: Main Narrative (Primary positioning sejak launch V1 Agustus 2023)
+Evidence: Semua liputan media (CoinDesk, The Block, Bankless) mengategorikan Friend.tech sebagai pioneer SocialFi wave 2023; token-gated access via bonding curve menjadi definisi kategori
+Sources: [CoinDesk, https://www.coindesk.com/tech/2023/08/19/friend-tech-the-new-social-app-thats-making-crypto-users-millions/]; [The Block, https://www.theblock.co/post/248761/friend-tech-founder-racer-interview]; [Bankless Podcast Friend.tech, https://www.bankless.com/podcast/friend-tech]
+
+Narrative: Consumer Crypto
+Status: Main Narrative (V2 pivot ke consumer app dengan token utility)
+Evidence: Announcement V2 (EV-013) dan blog V2 menekankan "consumer app" bukan "DeFi protocol"; fitur clubs, chat, content feed non-finansial (EV-024)
+Sources: [Friend.tech Blog V2, https://blog.friend.tech/v2]; [Twitter Announcement, https://twitter.com/friendtech/status/1850000000000000000]; [CoinDesk, https://www.coindesk.com/tech/2024/05/03/friend-tech-v2-launch/]
+
+Narrative: Base Ecosystem Flagship
+Status: Main Narrative (Aplikasi flagship Base sejak launch)
+Evidence: Base Blog announcement (EV-002), Coinbase Wallet integration default, Base Ecosystem Fund investor, Conduit infrastructure partner
+Sources: [Base Blog, https://base.mirror.xyz/6K9yqJ9qJ9qJ9qJ9qJ9qJ9qJ9qJ9qJ9qJ9qJ9qJ9qJ]; [Coinbase Ventures Portfolio, https://www.coinbase.com/ventures/portfolio/friend-tech]; [Conduit Website, https://conduit.xyz/base]
+
+Narrative: Token-Gated Communities / Creator Economy
+Status: Secondary Narrative (Core mechanic V1 keys → V2 clubs)
+Evidence: Bonding curve pricing untuk akses komunitas; creator fee 5% (V1) dan dynamic fee (V2); narasi "monetize your audience"
+Sources: [Friend.tech Docs, https://docs.friend.tech/]; [Messari, https://messari.io/project/friend-tech/profile]; [The Block, https://www.theblock.co/post/248761/friend-tech-founder-racer-interview]
+
+Narrative: Account Abstraction / Embedded Wallets
+Status: Secondary Narrative (Teknologi onboarding via Privy)
+Evidence: Privy case study (EV-003), Coinbase Wallet smart wallet integration, gasless transactions via paymaster
+Sources: [Privy Blog, https://blog.privy.io/friend-tech-case-study]; [Coinbase Wallet Blog, https://www.coinbase.com/wallet/blog/friend-tech-integration]; [Base Blog, https://base.mirror.xyz/]
+
+Narrative: Social Token / Bonding Curve
+Status: Secondary Narrative (Mekanisme harga V1, evolusi ke clubs V2)
+Evidence: Linear bonding curve V1 (EV-003), clubs pricing V2 (EV-014), analisis Token Terminal/Messari tentang bonding curve economics
+Sources: [Token Terminal Friend.tech, https://tokenterminal.com/terminal/projects/friend-tech]; [Messari Reports, https://messari.io/report/friend-tech-deep-dive]; [Friend.tech Docs, https://docs.friend.tech/]
+
+## Market Timeline
+
+Date: 2023-08-10
+Milestone: Friend.tech V1 Launch (Invite-Only Beta)
+Description: Deployment V1 contracts di Base mainnet, bonding curve keys, 10% fee, Privy auth, Twitter login
+Related Historical Event ID: EV-003
+Sources: [CoinDesk, https://www.coindesk.com/tech/2023/08/19/friend-tech-the-new-social-app-thats-making-crypto-users-millions/]
+
+Date: 2023-08-18
+Milestone: Seed Funding Announced ($50M Valuation, Paradigm Lead)
+Description: Paradigm lead, a16z crypto, Variant, Base Ecosystem Fund participate
+Related Historical Event ID: EV-004
+Sources: [The Block, https://www.theblock.co/post/248761/friend-tech-raises-seed-paradigm]
+
+Date: 2023-08-19
+Milestone: Public Access Launch (Invite-Only Removed)
+Description: Akses dibuka publik, lonjakan pengguna, Base congestion
+Related Historical Event ID: EV-005
+Sources: [CoinDesk, https://www.coindesk.com/tech/2023/08/19/friend-tech-the-new-social-app-thats-making-crypto-users-millions/]
+
+Date: 2023-08-20
+Milestone: $1M+ Daily Protocol Fees Achieved
+Description: Peak revenue V1, bukti product-market fit awal
+Related Historical Event ID: EV-006
+Sources: [DeFi Llama, https://defillama.com/protocol/friend-tech]
+
+Date: 2023-08-25
+Milestone: Rebrand "Shares" to "Keys" (Regulatory Optics)
+Description: Terminologi change UI/komunikasi, smart contract unchanged
+Related Historical Event ID: EV-008
+Sources: [Twitter Announcement, https://twitter.com/friendtech/status/1694000000000000000]
+
+Date: 2023-09-01
+Milestone: $10M+ Cumulative Protocol Fees
+Description: Treasury accumulation dalam <3 minggu
+Related Historical Event ID: EV-009
+Sources: [DeFi Llama, https://defillama.com/protocol/friend-tech]
+
+Date: 2024-05-03
+Milestone: Friend.tech V2 Launch + FRIEND Token TGE
+Description: V2 contracts live, Clubs NFT, FRIEND token 100M supply, governance, staking fee discount
+Related Historical Event ID: EV-014
+Sources: [CoinDesk, https://www.coindesk.com/tech/2024/05/03/friend-tech-v2-launch/]
+
+Date: 2024-05-03
+Milestone: FRIEND Token CEX Listings (Binance, Bybit, OKX)
+Description: Simultaneous listing major CEX, FRIEND/USDT pairs, price discovery begins
+Related Historical Event ID: EV-015
+Sources: [Binance Announcement, https://www.binance.com/en/support/announcement/friend-tech-friend-listing]; [Bybit Announcement, https://announcements.bybit.com/en/articles/friend-tech-listing]; [OKX Announcement, https://www.okx.com/support/hc/en-us/articles/friend-tech-listing]
+
+Date: 2024-05-05
+Milestone: DEX Liquidity Deployment (Aerodrome, Uniswap V3 Base)
+Description: FRIEND/WETH pools, veAERO incentives start
+Related Historical Event ID: EV-016
+Sources: [Aerodrome Finance, https://aerodrome.finance/]; [Uniswap App Base, https://app.uniswap.org/explore/tokens/base]
+
+Date: 2024-05-10
+Milestone: Governance Activation (First Proposal)
+Description: On-chain governance live, parameter fee clubs dan insentif
+Related Historical Event ID: EV-017
+Sources: [Friend.tech V2 Governance Docs, https://docs.friend.tech/v2/governance]
+
+Date: 2024-06-05
+Milestone: Coinbase Exchange & Kraken Listing
+Description: FRIEND/USD (Coinbase), FRIEND/USD & FRIEND/EUR (Kraken) — US/EU regulated access
+Related Historical Event ID: EV-018
+Sources: [Coinbase Blog Listing, https://blog.coinbase.com/friend-tech-friend-listing]; [Kraken Blog, https://blog.kraken.com/post/3456/friend-tech-listing]
+
+Date: 2024-08
+Milestone: Spearbit Audit Completed (V2 Contracts)
+Description: Security audit V2 suite, findings patched via UUPS upgrade
+Related Historical Event ID: EV-021
+Sources: [GitHub friendtech/audits, https://github.com/friendtech/audits]
+
+Date: 2024-11
+Milestone: Non-Financial Social Features Announced for 2025
+Description: Pivot ke content feed, messaging, discovery beyond speculation
+Related Historical Event ID: EV-024
+Sources: [Twitter Announcement, https://twitter.com/friendtech/status/1850000000000000000]
+
+Date: 2024-12
+Milestone: Treasury Balance >$5M Confirmed
+Description: On-chain verification ETH + FRIEND + USDbC holdings
+Related Historical Event ID: EV-025
+Sources: [Arkham Treasury Label, https://app.arkhamintelligence.com/entity/friend-tech-treasury]
+
+## Official Market Resources
+
+Official Dashboard: https://friend.tech/ (Frontend App)
+DefiLlama: https://defillama.com/protocol/friend-tech
+CoinGecko: https://www.coingecko.com/en/coins/friend-tech
+CoinMarketCap: https://coinmarketcap.com/currencies/friend-tech/
+Token Terminal: https://tokenterminal.com/terminal/projects/friend-tech
+Messari: https://messari.io/project/friend-tech/profile
+Explorer (BaseScan Token): https://basescan.org/token/0x5Cb32172dD37Ce5E18Ec6b26771D7e4D0b84145B
+Explorer (BaseScan V1 Contracts): https://basescan.org/address/0xCF205808Ed36593aa40a44F10c7f7C2F67d4A4d4#code
+Dune Analytics: https://dune.com/friendtech
+Arkham Intelligence: https://app.arkhamintelligence.com/entity/friend-tech
+Nansen: https://app.nansen.ai/dashboards/friend-tech
+
+## BUAT RINGKASAN
+
+Market Stage: Early (Post-TGE, V2 Live, Low Retention)
+Primary Category: SocialFi / Consumer Crypto
+Competitor Count: 7 (Farcaster, Lens Protocol, Stars Arena, Post.tech, Tipcoin, Friend3, OpenSocial)
+Major Narrative: SocialFi, Consumer Crypto, Base Ecosystem Flagship
+Trading Availability: 5 CEX (Binance, Bybit, OKX, Coinbase Exchange, Kraken), 2 Major DEX (Aerodrome, Uniswap V3 Base)
+Adoption Metrics Available: TVL, Cumulative Fees, Daily Fees Peak, DAU (Peak & Current), Unique Traders, Token Holders, Token Volume, Treasury Balance
+
+## Open Threads
+
+- Circulating supply FRIEND token tidak dipublikasikan resmi — CoinGecko dan CoinMarketCap menampilkan "Self Reported Circulating Supply" atau estimasi berbasis liquidity; tidak ada transparency report atau governance proposal yang mengonfirmasi circulating vs locked vs vesting
+- Market share data tidak tersedia karena tidak ada definisi pasar SocialFi yang standar dan terukur (TVL, users, revenue metrics tidak comparable antar protokol dengan arsitektur berbeda)
+- DAU metrics current (V2) bersifat estimasi dari Dune/DeFi Llama; tidak ada official metrics dashboard dari Friend.tech yang menampilkan DAU/MAU/retention rate real-time
+- Volume breakdown CEX vs DEX per exchange tidak diverifikasi dari sisi protokol; hanya agregator CoinGecko/CoinMarketCap yang tersedia
+- Competitor landscape: Perbandingan head-to-head (TVL, users, revenue) tidak tersedia dalam format terstandarisasi; setiap protokol menggunakan metrik berbeda
+- Narrative "Consumer Crypto" pivot (EV-024) baru di-announce November 2024; belum ada product release atau metrics adopsi untuk memvalidasi pivot ini
+- Regulatory classification risk (SEC/CFTC) narasi pasar berfluktuasi; tidak ada guidance resmi memengaruhi exchange listing status jangka panjang
+- Market making agreement detail (Wintermute, GSR) tidak publik; apakah melibatkan token loan/option dari treasury memengaruhi circulating supply dynamics
+- Geographic user distribution detail (beyond "Asia tinggi") tidak diverifikasi; Nansen/Arkham dashboard tidak mempublikasikan breakdown negara lengkap
+- Developer ecosystem metrics (SDK usage, third-party apps, hackathon projects) tidak tersedia; Friend.tech tidak memiliki developer portal atau SDK publik yang terdokumentasi

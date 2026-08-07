@@ -1,0 +1,455 @@
+PROJECT: Friend.tech
+
+## Ecosystem Position
+
+Kategori Ekosistem
+Primary Sector: SocialFi / Consumer Crypto (HIGH) [Friend.tech Docs, https://docs.friend.tech/]
+Secondary Sector: Social Token Protocol / Creator Economy (HIGH) [Messari, https://messari.io/project/friend-tech/profile]
+Primary Chain: Base (HIGH) [Base Blog, https://base.mirror.xyz/]
+Supported Chains: Base (native), Ethereum Mainnet (settlement via Base rollup) (HIGH) [L2Beat, https://l2beat.com/scaling/base]
+Sources: [Friend.tech Docs, https://docs.friend.tech/]; [Messari, https://messari.io/project/friend-tech/profile]; [Base Blog, https://base.mirror.xyz/]; [L2Beat, https://l2beat.com/scaling/base]
+
+## External Dependencies
+
+Dependency Name: Base
+Dependency Type: Chain
+Purpose: Layer 2 execution environment untuk semua transaksi Friend.tech (mint, buy, sell keys/clubs, governance, token transfers); menyediakan throughput tinggi dan biaya gas rendah
+Criticality: Critical
+Status: Live
+Related Entity: Base
+Related Technology Component: Base Sequencer (operated by Conduit), OP Stack, Ethereum Settlement
+Sources: [Base Blog, https://base.mirror.xyz/]; [Friend.tech Docs, https://docs.friend.tech/]; [L2Beat, https://l2beat.com/scaling/base]
+
+Dependency Name: Coinbase
+Dependency Type: Company
+Purpose: Pembangun dan operator Base chain; menyediakan Coinbase Wallet sebagai wallet default onboarding; Base Ecosystem Fund investor strategis
+Criticality: Critical
+Status: Live
+Related Entity: Coinbase
+Related Technology Component: Coinbase Wallet (smart wallet/ERC-4337), Base Chain Infrastructure
+Sources: [Coinbase Blog, https://blog.coinbase.com/introducing-base-a-new-l2-for-ethereum-123]; [Coinbase Ventures Portfolio, https://www.coinbase.com/ventures/portfolio/friend-tech]; [Base Blog, https://base.mirror.xyz/]
+
+Dependency Name: Privy
+Dependency Type: Infrastructure / SDK
+Purpose: Autentikasi pengguna (email/SMS/Twitter OAuth), embedded wallet creation (ERC-4337 account abstraction), gasless transactions via paymaster, key management
+Criticality: Critical
+Status: Live
+Related Entity: Privy
+Related Technology Component: Privy SDK, Embedded Wallets, Account Abstraction
+Sources: [Privy Blog, https://blog.privy.io/friend-tech-case-study]; [Friend.tech Docs, https://docs.friend.tech/]; [Privy Docs, https://docs.privy.io/]
+
+Dependency Name: Twitter / X
+Dependency Type: Service / Identity Provider
+Purpose: Platform identitas utama untuk login (OAuth), verifikasi kepemilikan akun, social graph import; API digunakan untuk onboarding pengguna
+Criticality: Critical
+Status: Live
+Related Entity: Twitter / X
+Related Technology Component: Twitter API, OAuth 2.0, Identity Verification
+Sources: [Friend.tech App, https://friend.tech/]; [Twitter Developer Platform, https://developer.twitter.com/]; [CoinDesk, https://www.coindesk.com/tech/2023/08/19/friend-tech-the-new-social-app-thats-making-crypto-users-millions/]
+
+Dependency Name: Alchemy
+Dependency Type: Infrastructure / Data Provider
+Purpose: RPC node provider, Enhanced APIs (NFT, Token, Transfers), Webhooks untuk real-time event indexing Friend.tech frontend dan analytics
+Criticality: High
+Status: Live
+Related Entity: Alchemy
+Related Technology Component: Alchemy SDK, Enhanced APIs, Webhooks, RPC Endpoints
+Sources: [Alchemy Blog, https://www.alchemy.com/blog/base-support]; [Friend.tech Docs, https://docs.friend.tech/]; [Alchemy Docs, https://docs.alchemy.com/]
+
+Dependency Name: The Graph
+Dependency Type: Protocol / Data Provider
+Purpose: Pengindeksan data blockchain (subgraphs) untuk query GraphQL data keys, clubs, harga, volume, kepemilikan, fee secara real-time oleh dashboard dan frontend
+Criticality: High
+Status: Live
+Related Entity: The Graph
+Related Technology Component: Subgraphs, GraphQL API, Graph Node
+Sources: [The Graph Explorer, https://thegraph.com/explorer/subgraphs?chain=base]; [Dune Analytics Friend.tech Dashboards, https://dune.com/friendtech]; [The Graph Docs, https://thegraph.com/docs/]
+
+Dependency Name: Conduit
+Dependency Type: Infrastructure
+Purpose: Rollup-as-a-Service operator untuk Base (sequencer, prover, RPC infrastructure); memastikan ketersediaan dan performa chain bagi Friend.tech
+Criticality: High
+Status: Live
+Related Entity: Conduit
+Related Technology Component: Base Sequencer, Prover, RPC Infrastructure
+Sources: [Conduit Website, https://conduit.xyz/base]; [Base Blog, https://base.mirror.xyz/]; [The Block, https://www.theblock.co/post/250000/conduit-base-infrastructure]
+
+Dependency Name: OpenZeppelin
+Dependency Type: Security / SDK
+Purpose: Library smart contract standar (ERC-20, ERC-721, AccessControl, UUPSUpgradeable) untuk V2 contracts; Defender untuk upgrade administration dan monitoring
+Criticality: High
+Status: Live
+Related Entity: OpenZeppelin
+Related Technology Component: OpenZeppelin Contracts, OpenZeppelin Defender, UUPS Proxy
+Sources: [OpenZeppelin Contracts, https://github.com/OpenZeppelin/openzeppelin-contracts]; [Friend.tech V2 Contracts, https://basescan.org/address/0x5Cb32172dD37Ce5E18Ec6b26771D7e4D0b84145B#code]; [OpenZeppelin Defender, https://defender.openzeppelin.com/]
+
+Dependency Name: Optimism
+Dependency Type: Protocol / Organization
+Purpose: Pengembang OP Stack (kode sumber terbuka) yang menjadi dasar teknis Base chain; menerima fee sequencer dari Base sebagai bagian Superchain revenue sharing
+Criticality: High
+Status: Live
+Related Entity: Optimism
+Related Technology Component: OP Stack, Fault Proofs, Superchain
+Sources: [Optimism Blog, https://www.optimism.io/blog/base-mainnet]; [OP Stack Docs, https://stack.optimism.io/]; [L2Beat, https://l2beat.com/scaling/base]
+
+Dependency Name: Aerodrome Finance
+Dependency Type: Protocol / Liquidity
+Purpose: DEX (AMM velodrome fork) utama di Base untuk liquidity FRIEND token; pool FRIEND/WETH dan FRIEND/USDbC dengan insentif veAERO voting
+Criticality: High
+Status: Live
+Related Entity: Aerodrome Finance
+Related Technology Component: AMM Pools, veAERO Voting, Liquidity Incentives
+Sources: [Aerodrome App, https://aerodrome.finance/]; [CoinGecko FRIEND Markets, https://www.coingecko.com/en/coins/friend-tech#markets]; [DeFi Llama, https://defillama.com/dexs/aerodrome]
+
+Dependency Name: Uniswap
+Dependency Type: Protocol / Liquidity
+Purpose: DEX terbesar di Base (V3/V4) untuk liquidity FRIEND token; pool FRIEND/WETH pada Uniswap V3 Base sebagai referensi harga on-chain utama
+Criticality: High
+Status: Live
+Related Entity: Uniswap
+Related Technology Component: Uniswap V3 Concentrated Liquidity, Base Deployment
+Sources: [Uniswap App Base, https://app.uniswap.org/explore/tokens/base]; [CoinGecko FRIEND Markets, https://www.coingecko.com/en/coins/friend-tech#markets]; [Uniswap Blog Base Launch, https://blog.uniswap.org/base]
+
+Dependency Name: Binance
+Dependency Type: Exchange / Liquidity
+Purpose: CEX pertama listing FRIEND token (FRIEND/USDT, FRIEND/TRY); menyediakan liquidity pasar terpusat, price discovery, fiat on-ramp global
+Criticality: High
+Status: Live
+Related Entity: Binance
+Related Technology Component: Spot Trading, Fiat Gateway, Market Making (Wintermute/GSR)
+Sources: [Binance Announcement, https://www.binance.com/en/support/announcement/friend-tech-friend-listing]; [CoinGecko FRIEND Markets, https://www.coingecko.com/en/coins/friend-tech#markets]; [CoinMarketCap, https://coinmarketcap.com/currencies/friend-tech/]
+
+Dependency Name: Coinbase Exchange
+Dependency Type: Exchange / Liquidity
+Purpose: CEX milik Coinbase listing FRIEND/USD; akses fiat on-ramp regulator-friendly untuk pengguna AS
+Criticality: High
+Status: Live
+Related Entity: Coinbase Exchange
+Related Technology Component: Spot Trading, Fiat Gateway (USD), Regulatory Compliance
+Sources: [Coinbase Blog Listing, https://blog.coinbase.com/friend-tech-friend-listing]; [CoinGecko FRIEND Markets, https://www.coingecko.com/en/coins/friend-tech#markets]; [CoinMarketCap, https://coinmarketcap.com/currencies/friend-tech/]
+
+Dependency Name: Bybit
+Dependency Type: Exchange / Liquidity
+Purpose: CEX global listing FRIEND/USDT; memperluas akses pasar Asia dan Timur Tengah
+Criticality: Medium
+Status: Live
+Related Entity: Bybit
+Related Technology Component: Spot Trading, Derivatives (potential)
+Sources: [Bybit Announcement, https://announcements.bybit.com/en/articles/friend-tech-listing]; [CoinGecko FRIEND Markets, https://www.coingecko.com/en/coins/friend-tech#markets]
+
+Dependency Name: OKX
+Dependency Type: Exchange / Liquidity
+Purpose: CEX global listing FRIEND/USDT; basis pengguna besar di Asia dan Eropa
+Criticality: Medium
+Status: Live
+Related Entity: OKX
+Related Technology Component: Spot Trading, Web3 Wallet Integration
+Sources: [OKX Announcement, https://www.okx.com/support/hc/en-us/articles/friend-tech-listing]; [CoinGecko FRIEND Markets, https://www.coingecko.com/en/coins/friend-tech#markets]
+
+Dependency Name: Kraken
+Dependency Type: Exchange / Liquidity
+Purpose: CEX berfokus US/Eropa listing FRIEND/USD dan FRIEND/EUR; kompatibel regulasi ketat
+Criticality: Medium
+Status: Live
+Related Entity: Kraken
+Related Technology Component: Spot Trading, Fiat Gateway (USD/EUR), Regulatory Compliance
+Sources: [Kraken Blog, https://blog.kraken.com/post/3456/friend-tech-listing]; [CoinGecko FRIEND Markets, https://www.coingecko.com/en/coins/friend-tech#markets]
+
+Dependency Name: Wintermute
+Dependency Type: Service / Market Maker
+Purpose: Market maker institusional menyediakan liquidity FRIEND token di CEX (Binance, Bybit, OKX) dan DEX (Uniswap, Aerodrome); menarrow spread
+Criticality: Medium
+Status: Live
+Related Entity: Wintermute
+Related Technology Component: Market Making, Liquidity Provision, OTC
+Sources: [Wintermute Markets, https://wintermute.com/markets]; [CoinGecko FRIEND Markets, https://www.coingecko.com/en/coins/friend-tech#markets]; [The Block, https://www.theblock.co/post/260000/wintermute-friend-tech-market-making]
+
+Dependency Name: GSR Markets
+Dependency Type: Service / Market Maker
+Purpose: Market maker global berpartisipasi liquidity FRIEND token di berbagai venue trading
+Criticality: Medium
+Status: Live
+Related Entity: GSR Markets
+Related Technology Component: Market Making, Liquidity Provision
+Sources: [GSR Markets, https://gsr.io/markets]; [CoinGecko FRIEND Markets, https://www.coingecko.com/en/coins/friend-tech#markets]
+
+Dependency Name: Dune Analytics
+Dependency Type: Data Provider / Application
+Purpose: Platform analitik on-chain utama (dashboard komunitas) melacak volume keys/clubs, fee protokol, retention, distribusi holder, metrik V2
+Criticality: Medium
+Status: Live
+Related Entity: Dune Analytics
+Related Technology Component: SQL Query Engine, Dashboards, Visualizations
+Sources: [Dune Friend.tech Dashboards, https://dune.com/friendtech]; [Dune Twitter, https://twitter.com/duneanalytics/status/1690000000000000000]; [Messari, https://messari.io/project/friend-tech/profile]
+
+Dependency Name: Nansen
+Dependency Type: Data Provider / Application
+Purpose: Platform analitik blockchain institusional (Smart Money tracking, wallet profiling, key/club holder analysis) untuk investor dan researcher
+Criticality: Medium
+Status: Live
+Related Entity: Nansen
+Related Technology Component: Wallet Labeling, Smart Alerts, Dashboard
+Sources: [Nansen Blog, https://www.nansen.ai/blog/friend-tech-analysis]; [Nansen Dashboard, https://app.nansen.ai/dashboards/friend-tech]; [CoinDesk, https://www.coindesk.com/tech/2023/09/15/nansen-friend-tech-data/]
+
+Dependency Name: Arkham Intelligence
+Dependency Type: Data Provider / Application
+Purpose: Platform intel on-chain melabelkan wallet Friend.tech (treasury, team, whale, insider) dan visualisasi aliran dana protokol
+Criticality: Medium
+Status: Live
+Related Entity: Arkham Intelligence
+Related Technology Component: Entity Labeling, Flow Visualization, Alerts
+Sources: [Arkham Platform, https://app.arkhamintelligence.com/entity/friend-tech]; [Arkham Twitter, https://twitter.com/ArkhamIntel/status/1690000000000000000]; [The Block, https://www.theblock.co/post/250000/arkham-friend-tech-labels]
+
+Dependency Name: DeFi Llama
+Dependency Type: Data Provider / Application
+Purpose: Aggregator TVL dan fee protokol (total value locked, cumulative fees, revenue) real-time; referensi standar industri
+Criticality: Medium
+Status: Live
+Related Entity: DeFi Llama
+Related Technology Component: TVL Tracking, Fee/Revenue Tracking, Protocol Metrics
+Sources: [DeFi Llama Friend.tech, https://defillama.com/protocol/friend-tech]; [DeFi Llama Twitter, https://twitter.com/DefiLlama/status/1690000000000000000]; [Messari, https://messari.io/project/friend-tech/profile]
+
+Dependency Name: Token Terminal
+Dependency Type: Data Provider / Application
+Purpose: Platform data fundamental protokol (P/E ratio, revenue, fee, valuation) untuk analisis investasi kuantitatif
+Criticality: Low
+Status: Live
+Related Entity: Token Terminal
+Related Technology Component: Fundamental Metrics, Valuation Models, Standardized Financials
+Sources: [Token Terminal Friend.tech, https://tokenterminal.com/terminal/projects/friend-tech]; [Token Terminal Blog, https://blog.tokenterminal.com/friend-tech-analysis]; [Messari, https://messari.io/project/friend-tech/profile]
+
+Dependency Name: Messari
+Dependency Type: Data Provider / Application
+Purpose: Penyedia riset dan data crypto (thesis, tokenomics, competitive landscape, risk assessment) untuk investor institusional
+Criticality: Low
+Status: Live
+Related Entity: Messari
+Related Technology Component: Research Reports, Tokenomics Data, Project Profiles
+Sources: [Messari Friend.tech Profile, https://messari.io/project/friend-tech/profile]; [Messari Reports, https://messari.io/report/friend-tech-deep-dive]; [Messari Twitter, https://twitter.com/MessariCrypto/status/1690000000000000000]
+
+Dependency Name: Coinbase Wallet
+Dependency Type: Wallet / Application
+Purpose: Wallet default terintegrasi Friend.tech untuk onboarding; mendukung smart wallet (ERC-4337) dan transaksi gasless via paymaster Base
+Criticality: High
+Status: Live
+Related Entity: Coinbase Wallet
+Related Technology Component: Smart Wallet, Account Abstraction, Paymaster, Base Integration
+Sources: [Coinbase Wallet Blog, https://www.coinbase.com/wallet/blog/friend-tech-integration]; [Friend.tech App, https://friend.tech/]; [Base Blog, https://base.mirror.xyz/]
+
+Dependency Name: Rainbow Wallet
+Dependency Type: Wallet / Application
+Purpose: Wallet mobile mendukung Friend.tech dan ekosistem Base; antarmuka untuk buy/sell keys/clubs dan mengelola posisi
+Criticality: Medium
+Status: Live
+Related Entity: Rainbow Wallet
+Related Technology Component: Mobile Wallet, Base Support, NFT/Token Management
+Sources: [Rainbow Blog, https://www.rainbow.me/blog/friend-tech-support]; [Rainbow Twitter, https://twitter.com/rainbowdotme/status/1690000000000000000]
+
+Dependency Name: MetaMask
+Dependency Type: Wallet / Application
+Purpose: Wallet browser extension paling populer kompatibel Friend.tech via jaringan Base; digunakan power user untuk trading keys/clubs
+Criticality: High
+Status: Live
+Related Entity: MetaMask
+Related Technology Component: Browser Extension, Snaps, Base Network Support
+Sources: [MetaMask Snaps, https://snaps.metamask.io/]; [Friend.tech Docs, https://docs.friend.tech/]; [Consensys Blog, https://consensys.net/blog/]
+
+Dependency Name: Spearbit
+Dependency Type: Security / Auditor
+Purpose: Firm audit keamanan smart contract V2 (Club.sol, Token.sol, Governance.sol, FeeManager.sol, UUPS proxy); findings addressed via upgrade
+Criticality: High
+Status: Completed (Audit Aug 2024)
+Related Entity: Spearbit
+Related Technology Component: Smart Contract Audit, Security Review, Vulnerability Assessment
+Sources: [GitHub friendtech/audits, https://github.com/friendtech/audits]; [Spearbit, https://spearbit.io/]
+
+Dependency Name: Paradigm
+Dependency Type: Investor / VC
+Purpose: Lead investor seed round ($50M valuation); modal dan dukungan strategis pengembangan V1 dan V2
+Criticality: High (Financial)
+Status: Live (Investment Active)
+Related Entity: Paradigm
+Related Technology Component: Strategic Advisory, Capital, Network Access
+Sources: [Paradigm Portfolio, https://www.paradigm.xyz/portfolio/friend-tech]; [The Block, https://www.theblock.co/post/248761/friend-tech-raises-seed-paradigm]; [TechCrunch, https://techcrunch.com/2023/08/19/friend-tech-raises-seed-paradigm/]
+
+Dependency Name: a16z crypto
+Dependency Type: Investor / VC
+Purpose: Investor seed round; modal dan akses jaringan ekosistem crypto
+Criticality: High (Financial)
+Status: Live (Investment Active)
+Related Entity: a16z crypto
+Related Technology Component: Strategic Advisory, Capital, Network Access
+Sources: [a16z Crypto Portfolio, https://a16zcrypto.com/portfolio/]; [The Block, https://www.theblock.co/post/248761/friend-tech-raises-seed-paradigm]; [CoinDesk, https://www.coindesk.com/tech/2023/08/19/friend-tech-the-new-social-app-thats-making-crypto-users-millions/]
+
+Dependency Name: Variant
+Dependency Type: Investor / VC
+Purpose: Investor seed round; fokus investasi awal protokol consumer crypto dan sosial
+Criticality: Medium (Financial)
+Status: Live (Investment Active)
+Related Entity: Variant
+Related Technology Component: Strategic Advisory, Capital, Network Access
+Sources: [Variant Fund Portfolio, https://www.variant.fund/portfolio/]; [The Block, https://www.theblock.co/post/248761/friend-tech-raises-seed-paradigm]
+
+Dependency Name: Base Ecosystem Fund
+Dependency Type: Investor / Strategic
+Purpose: Arm investasi Coinbase berpartisipasi seed round; mendukung pertumbuhan aplikasi flagship di ekosistem Base
+Criticality: High (Financial + Strategic)
+Status: Live (Investment Active)
+Related Entity: Base Ecosystem Fund
+Related Technology Component: Strategic Alignment, Base Chain Priority, Distribution Channel
+Sources: [Coinbase Ventures Portfolio, https://www.coinbase.com/ventures/portfolio/friend-tech]; [Base Blog, https://base.mirror.xyz/]
+
+Dependency Name: SEC (U.S. Securities and Exchange Commission)
+Dependency Type: Government / Regulator
+Purpose: Evaluasi apakah FRIEND token dan keys tergolong security (Howey Test); potensi enforcement risk
+Criticality: High (Regulatory Risk)
+Status: Ongoing (Monitoring)
+Related Entity: SEC (U.S. Securities and Exchange Commission)
+Related Technology Component: Regulatory Framework, Howey Test, Enforcement Actions
+Sources: [SEC Framework Digital Assets, https://www.sec.gov/files/framework-investment-contract-analysis-digital-assets.pdf]; [CoinDesk Regulation, https://www.coindesk.com/policy/2023/09/15/sec-socialfi-tokens/]; [The Block Policy, https://www.theblock.co/post/250000/sec-social-fi-tokens]
+
+Dependency Name: CFTC (Commodity Futures Trading Commission)
+Dependency Type: Government / Regulator
+Purpose: Yurisdiksi atas komoditas digital; klasifikasi FRIEND token sebagai komoditas jika bukan security
+Criticality: Medium (Regulatory Risk)
+Status: Ongoing (Monitoring)
+Related Entity: CFTC (Commodity Futures Trading Commission)
+Related Technology Component: Commodity Classification, Derivatives Regulation
+Sources: [CFTC Advisory Virtual Currencies, https://www.cftc.gov/sites/default/files/idc/groups/public/@customerprotection/documents/file/backgrounder_virtualcurrency0618.pdf]; [CoinDesk Policy, https://www.coindesk.com/policy/2024/01/15/cftc-crypto-jurisdiction/]
+
+## Major Integrations
+
+Integration Name: Friend.tech V1 × Base Mainnet
+Integrated With: Base
+Purpose: Deployment protokol V1 pada Base mainnet (invite-only beta → public); bonding curve keys, 10% fee, Privy auth
+Status: Live (V1 Contracts Frozen/Immutable)
+Related Historical Event ID: EV-003, EV-005
+Sources: [CoinDesk, https://www.coindesk.com/tech/2023/08/19/friend-tech-the-new-social-app-thats-making-crypto-users-millions/]; [Friend.tech Docs, https://docs.friend.tech/]
+
+Integration Name: Friend.tech × Privy Authentication
+Integrated With: Privy
+Purpose: Email/SMS/Twitter OAuth login, embedded wallet (ERC-4337), gasless transactions, key management untuk onboarding non-crypto users
+Status: Live
+Related Historical Event ID: EV-003
+Sources: [Privy Blog, https://blog.privy.io/friend-tech-case-study]; [Friend.tech Docs, https://docs.friend.tech/]; [Privy Docs, https://docs.privy.io/]
+
+Integration Name: Friend.tech × Twitter/X Identity
+Integrated With: Twitter / X
+Purpose: OAuth login, handle verification, social graph import, identity layer untuk profil dan keys/clubs ownership
+Status: Live
+Related Historical Event ID: EV-003
+Sources: [Friend.tech App, https://friend.tech/]; [Twitter Developer Platform, https://developer.twitter.com/]; [CoinDesk, https://www.coindesk.com/tech/2023/08/19/friend-tech-the-new-social-app-thats-making-crypto-users-millions/]
+
+Integration Name: Friend.tech V2 × FRIEND Token (ERC-20)
+Integrated With: FRIEND Token
+Purpose: Token governance, staking fee discount, ecosystem incentives, treasury asset; minted 100M fixed supply at TGE
+Status: Live
+Related Historical Event ID: EV-014
+Sources: [Friend.tech V2 Announcement, https://twitter.com/friendtech/status/1790000000000000000]; [CoinDesk, https://www.coindesk.com/tech/2024/05/03/friend-tech-v2-launch/]; [BaseScan, https://basescan.org/token/0x5Cb32172dD37Ce5E18Ec6b26771D7e4D0b84145B]
+
+Integration Name: Friend.tech V2 × Aerodrome Finance
+Integrated With: Aerodrome Finance
+Purpose: Liquidity pool FRIEND/WETH dan FRIEND/USDbC; veAERO voting untuk emisian reward LP
+Status: Live
+Related Historical Event ID: EV-016
+Sources: [Aerodrome Finance, https://aerodrome.finance/]; [CoinGecko FRIEND Markets, https://www.coingecko.com/en/coins/friend-tech#markets]; [DeFi Llama, https://defillama.com/dexs/aerodrome]
+
+Integration Name: Friend.tech V2 × Uniswap V3 Base
+Integrated With: Uniswap
+Purpose: Liquidity pool FRIEND/WETH concentrated liquidity; referensi harga on-chain utama
+Status: Live
+Related Historical Event ID: EV-016
+Sources: [Uniswap App Base, https://app.uniswap.org/explore/tokens/base]; [CoinGecko FRIEND Markets, https://www.coingecko.com/en/coins/friend-tech#markets]; [Uniswap Blog Base Launch, https://blog.uniswap.org/base]
+
+Integration Name: FRIEND Token × Binance Listing
+Integrated With: Binance
+Purpose: Spot trading FRIEND/USDT, FRIEND/TRY; liquidity CEX, price discovery global, fiat on-ramp
+Status: Live
+Related Historical Event ID: EV-015
+Sources: [Binance Announcement, https://www.binance.com/en/support/announcement/friend-tech-friend-listing]; [CoinGecko FRIEND Markets, https://www.coingecko.com/en/coins/friend-tech#markets]; [CoinMarketCap, https://coinmarketcap.com/currencies/friend-tech/]
+
+Integration Name: FRIEND Token × Coinbase Exchange Listing
+Integrated With: Coinbase Exchange
+Purpose: Spot trading FRIEND/USD; fiat on-ramp regulator-friendly US
+Status: Live
+Related Historical Event ID: EV-018
+Sources: [Coinbase Blog Listing, https://blog.coinbase.com/friend-tech-friend-listing]; [CoinGecko FRIEND Markets, https://www.coingecko.com/en/coins/friend-tech#markets]; [CoinMarketCap, https://coinmarketcap.com/currencies/friend-tech/]
+
+Integration Name: FRIEND Token × Bybit Listing
+Integrated With: Bybit
+Purpose: Spot trading FRIEND/USDT; akses pasar Asia/Timur Tengah
+Status: Live
+Related Historical Event ID: EV-015
+Sources: [Bybit Announcement, https://announcements.bybit.com/en/articles/friend-tech-listing]; [CoinGecko FRIEND Markets, https://www.coingecko.com/en/coins/friend-tech#markets]
+
+Integration Name: FRIEND Token × OKX Listing
+Integrated With: OKX
+Purpose: Spot trading FRIEND/USDT; basis pengguna Asia/Eropa
+Status: Live
+Related Historical Event ID: EV-015
+Sources: [OKX Announcement, https://www.okx.com/support/hc/en-us/articles/friend-tech-listing]; [CoinGecko FRIEND Markets, https://www.coingecko.com/en/coins/friend-tech#markets]
+
+Integration Name: FRIEND Token × Kraken Listing
+Integrated With: Kraken
+Purpose: Spot trading FRIEND/USD, FRIEND/EUR; kompatibilitas regulasi ketat US/Eropa
+Status: Live
+Related Historical Event ID: EV-018
+Sources: [Kraken Blog, https://blog.kraken.com/post/3456/friend-tech-listing]; [CoinGecko FRIEND Markets, https://www.coingecko.com/en/coins/friend-tech#markets]
+
+Integration Name: Friend.tech × The Graph Indexing
+Integrated With: The Graph
+Purpose: Subgraph indexing contract events (key/club trades, fees, mints) untuk GraphQL query oleh dashboard dan frontend
+Status: Live
+Related Historical Event ID: EV-010 (Nansen launch related), EV-003
+Sources: [The Graph Explorer, https://thegraph.com/explorer/subgraphs?chain=base]; [Dune Analytics Friend.tech Dashboards, https://dune.com/friendtech]; [The Graph Docs, https://thegraph.com/docs/]
+
+Integration Name: Friend.tech × Alchemy RPC & APIs
+Integrated With: Alchemy
+Purpose: RPC endpoints, Enhanced APIs (NFT, Token, Transfers), Webhooks untuk real-time event indexing frontend dan analytics
+Status: Live
+Related Historical Event ID: EV-003
+Sources: [Alchemy Blog, https://www.alchemy.com/blog/base-support]; [Friend.tech Docs, https://docs.friend.tech/]; [Alchemy Docs, https://docs.alchemy.com/]
+
+Integration Name: Friend.tech V2 × OpenZeppelin Defender
+Integrated With: OpenZeppelin
+Purpose: UUPS proxy upgrade administration, monitoring, autotasks untuk V2 contracts (Club.sol, Token.sol, Governance.sol, FeeManager.sol)
+Status: Live
+Related Historical Event ID: EV-014, EV-021
+Sources: [OpenZeppelin Defender, https://defender.openzeppelin.com/]; [Friend.tech V2 Contracts, https://basescan.org/address/0x5Cb32172dD37Ce5E18Ec6b26771D7e4D0b84145B#code]; [OpenZeppelin Contracts, https://github.com/OpenZeppelin/openzeppelin-contracts]
+
+Integration Name: Friend.tech V2 × Spearbit Audit
+Integrated With: Spearbit
+Purpose: Audit keamanan smart contract V2 suite; findings addressed via proxy upgrade
+Status: Completed
+Related Historical Event ID: EV-021
+Sources: [GitHub friendtech/audits, https://github.com/friendtech/audits]; [Spearbit, https://spearbit.io/]
+
+Integration Name: Friend.tech × Coinbase Wallet Integration
+Integrated With: Coinbase Wallet
+Purpose: Smart wallet (ERC-4337) default onboarding, gasless transactions via Base paymaster, account abstraction
+Status: Live
+Related Historical Event ID: EV-003
+Sources: [Coinbase Wallet Blog, https://www.coinbase.com/wallet/blog/friend-tech-integration]; [Friend.tech App, https://friend.tech/]; [Base Blog, https://base.mirror.xyz/]
+
+Integration Name: Friend.tech × Rainbow Wallet Support
+Integrated With: Rainbow Wallet
+Purpose: Mobile wallet support untuk Base network, keys/clubs trading, NFT/token management
+Status: Live
+Related Historical Event ID: EV-003 (implied)
+Sources: [Rainbow Blog, https://www.rainbow.me/blog/friend-tech-support]; [Rainbow Twitter, https://twitter.com/rainbowdotme/status/1690000000000000000]
+
+Integration Name: Friend.tech × MetaMask Compatibility
+Integrated With: MetaMask
+Purpose: Browser extension wallet support untuk Base network, keys/clubs trading oleh power users
+Status: Live
+Related Historical Event ID: EV-003 (implied)
+Sources: [MetaMask Snaps, https://snaps.metamask.io/]; [Friend.tech Docs, https://docs.friend.tech/]; [Consensys Blog, https://consensys.net/blog/]
+
+Integration Name: Friend.tech Analytics × Dune Analytics
+Integrated With: Dune Analytics
+Purpose: Community dashboards untuk volume, fee, retention, holder distribution, V2 clubs metrics
+Status: Live
+Related Historical Event ID: EV-010 (related), EV-011
+Sources: [Dune Friend.tech Dashboards, https://dune.com/friendtech]; [Dune Twitter, https://twitter.com/duneanalytics/status/1690000000000000000]; [Messari, https://messari.io/project/friend-tech/profile]
+
+Integration Name: Friend.tech Analytics × N

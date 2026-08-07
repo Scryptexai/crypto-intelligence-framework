@@ -1,0 +1,391 @@
+PROJECT: Celestia
+
+Entity: Mustafa Al-Bassam
+Type: Person
+Relationship: CEO dan Co-founder Celestia Labs — memimpin visi strategis, pengembangan protokol, dan eksekusi bisnis untuk Celestia Data Availability Layer
+Period: 2019–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Celestia Blog "Celestia Labs raises $55M", https://blog.celestia.org/celestia-labs-raises-55m/]; [Celestia Team Page, https://celestia.org/team/]
+
+---
+Entity: Ismail Khoffi
+Type: Person
+Relationship: CTO dan Co-founder Celestia Labs — mengarahkan arsitektur teknis, konsensus CometBFT, dan pengembangan node Celestia
+Period: 2019–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Celestia Blog "Celestia Labs raises $55M", https://blog.celestia.org/celestia-labs-raises-55m/]; [Celestia Team Page, https://celestia.org/team/]
+
+---
+Entity: John Adler
+Type: Person
+Relationship: Core Contributor dan Co-founder — merancang arsitektur modular, Data Availability Sampling, dan integrasi rollup (Rollkit, Sovereign SDK)
+Period: 2019–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Celestia Blog "Celestia Labs raises $55M", https://blog.celestia.org/celestia-labs-raises-55m/]; [Celestia Team Page, https://celestia.org/team/]
+
+---
+Entity: Nick White
+Type: Person
+Relationship: COO dan Co-founder — mengelola operasi, go-to-market, ekosistem rollup, dan hubungan mitra untuk Celestia Labs
+Period: 2019–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Celestia Blog "Celestia Labs raises $55M", https://blog.celestia.org/celestia-labs-raises-55m/]; [Celestia Team Page, https://celestia.org/team/]
+
+---
+Entity: Josh Weintraub
+Type: Person
+Relationship: Core Contributor protokol — berkontribusi pada spesifikasi DA, light client, dan integrasi Blobstream
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Celestia GitHub Contributors, https://github.com/celestiaorg]; [Celestia Team Page, https://celestia.org/team/]
+
+---
+Entity: David Egas
+Type: Person
+Relationship: Core Contributor protokol — fokus pada konsensus, state machine, dan tooling pengembang
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Celestia GitHub Contributors, https://github.com/celestiaorg]; [Celestia Team Page, https://celestia.org/team/]
+
+---
+Entity: Celestia Foundation
+Type: Foundation
+Relationship: Entitas non-profit berbasis Zug, Switzerland — mengelola treasury protokol, governance on-chain, grant ekosistem, dan stewardship token TIA
+Period: 2023–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Celestia Blog "Celestia Mainnet Launch", https://blog.celestia.org/celestia-mainnet-launch/]; [Celestia Blog "TIA Genesis Drop", https://blog.celestia.org/tia-genesis-drop/]
+
+---
+Entity: Celestia Labs Inc.
+Type: Company
+Relationship: Perusahaan for-profit berbasis Delaware, USA — pengembang inti (core developer) protokol Celestia, mempekerjakan tim engineering, research, dan BD
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Crunchbase Celestia Labs, https://www.crunchbase.com/organization/celestia-labs]; [Celestia Blog "Celestia Labs raises $55M", https://blog.celestia.org/celestia-labs-raises-55m/]
+
+---
+Entity: Celestia Data Availability Layer
+Type: Protocol
+Relationship: Protokol inti (core protocol) — menyediakan data availability sampling, namespace merkle trees, dan blobspace untuk rollup sovereign dan smart contract
+Period: 2023–sekarang (mainnet)
+Exposure Type: technical-integration
+Evidence: (HIGH) [Celestia Docs "Architecture", https://docs.celestia.org/learn/architecture]; [Celestia Blog "What is Celestia?", https://blog.celestia.org/what-is-celestia/]
+
+---
+Entity: Blobstream
+Type: Protocol
+Relationship: Protokol bridge verifikasi DA — mengirimkan commitment header Celestia ke Ethereum/EVM via smart contract, memungkinkan rollup memverifikasi ketersediaan data trust-minimized
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Celestia Docs "Blobstream", https://docs.celestia.org/learn/blobstream]; [Blobstream Contracts Repo, https://github.com/celestiaorg/blobstream-contracts]
+
+---
+Entity: Quantum Gravity Bridge
+Type: Protocol
+Relationship: Protokol bridging trust-minimized (work in progress) — dirancang untuk transfer aset dan pesan lintas chain tanpa validator set terpusat
+Period: 2023–sekarang (R&D)
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Celestia Blog "Modular Ecosystem", https://blog.celestia.org/modular-ecosystem/]; [Celestia Research Forum, https://forum.celestia.org/]
+
+---
+Entity: Rollkit
+Type: Protocol
+Relationship: Framework sovereign rollup — SDK untuk membangun rollup yang menggunakan Celestia sebagai DA layer dan settlement layer opsional
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Rollkit GitHub, https://github.com/rollkit/rollkit]; [Celestia Blog "Modular Ecosystem", https://blog.celestia.org/modular-ecosystem/]
+
+---
+Entity: Sovereign SDK
+Type: Protocol
+Relationship: Framework rollup sovereign — toolkit untuk membangun blockchain sovereign dengan Celestia DA, tanpa smart contract settlement layer
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Sovereign SDK GitHub, https://github.com/Sovereign-Labs/sovereign-sdk]; [Celestia Blog "Modular Ecosystem", https://blog.celestia.org/modular-ecosystem/]
+
+---
+Entity: Celestia (Chain)
+Type: Chain
+Relationship: Blockchain layer-1 berbasis Cosmos SDK dan CometBFT — chain utama yang menjalankan protokol Data Availability, staking TIA, dan governance
+Period: 2023–sekarang (mainnet launch 31 Okt 2023)
+Exposure Type: technical-integration
+Evidence: (HIGH) [Celestia Blog "Celestia Mainnet Launch", https://blog.celestia.org/celestia-mainnet-launch/]; [Celestia Explorer, https://explorer.celestia.org/]
+
+---
+Entity: Ethereum
+Type: Chain
+Relationship: Settlement dan verification layer untuk Blobstream — smart contract Blobstream dideploy di Ethereum mainnet (dan L2) untuk verifikasi DA commitment
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Blobstream Contracts Repo, https://github.com/celestiaorg/blobstream-contracts]; [Celestia Docs "Blobstream", https://docs.celestia.org/learn/blobstream]
+
+---
+Entity: Bain Capital Crypto
+Type: Investor
+Relationship: Lead investor ronde Series A/B ($55M, Oktober 2022) — menyediakan modal untuk Celestia Labs Inc.
+Period: 2022–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Crunchbase Celestia Labs, https://www.crunchbase.com/organization/celestia-labs]; [Celestia Blog "Celestia Labs raises $55M", https://blog.celestia.org/celestia-labs-raises-55m/]
+
+---
+Entity: Polychain Capital
+Type: Investor
+Relationship: Investor ronde Series A/B ($55M, Oktober 2022) — menyediakan modal untuk Celestia Labs Inc.
+Period: 2022–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Crunchbase Celestia Labs, https://www.crunchbase.com/organization/celestia-labs]; [Celestia Blog "Celestia Labs raises $55M", https://blog.celestia.org/celestia-labs-raises-55m/]
+
+---
+Entity: 1kx
+Type: Investor
+Relationship: Investor ronde Series A/B ($55M, Oktober 2022) — menyediakan modal untuk Celestia Labs Inc.
+Period: 2022–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Crunchbase Celestia Labs, https://www.crunchbase.com/organization/celestia-labs]; [1kx Portfolio, https://www.1kx.network/portfolio/]
+
+---
+Entity: Robot Ventures
+Type: Investor
+Relationship: Investor ronde Series A/B ($55M, Oktober 2022) — menyediakan modal untuk Celestia Labs Inc.
+Period: 2022–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Crunchbase Celestia Labs, https://www.crunchbase.com/organization/celestia-labs]; [Robot Ventures Portfolio, https://www.robotventures.com/portfolio/]
+
+---
+Entity: Placeholder
+Type: Investor
+Relationship: Investor ronde Series A/B ($55M, Oktober 2022) — menyediakan modal untuk Celestia Labs Inc.
+Period: 2022–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Crunchbase Celestia Labs, https://www.crunchbase.com/organization/celestia-labs]; [Placeholder VC Portfolio, https://www.placeholder.vc/portfolio/]
+
+---
+Entity: Cosmostation
+Type: Organization
+Relationship: Penyedia block explorer (Mintscan) dan validator infrastruktur — mengoperasikan https://celestia.mintscan.io dan https://www.mintscan.io/celestia
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Mintscan Celestia, https://celestia.mintscan.io/]; [Cosmostation Website, https://cosmostation.io/]
+
+---
+Entity: Celestia Node Operators
+Type: Organization
+Relationship: Jaringan operator node (light client, full node, bridge node) — menjalankan infrastruktur P2P, DAS sampling, dan relay blob untuk jaringan Celestia
+Period: 2022–sekarang (testnet/mainnet)
+Exposure Type: technical-integration
+Evidence: (HIGH) [Celestia Docs "Running a Node", https://docs.celestia.org/nodes/]; [Celestia Blog "Arabica Testnet", https://blog.celestia.org/arabica-testnet/]
+
+---
+Entity: Blobstream Relayers
+Type: Organization
+Relationship: Relayer off-chain — mengirimkan header Celestia dan bukti DA ke smart contract Blobstream di Ethereum/EVM
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Celestia Docs "Blobstream Relayer", https://docs.celestia.org/learn/blobstream#relayers]; [Blobstream Relayer Repo, https://github.com/celestiaorg/blobstream-relayer]
+
+---
+Entity: Celestia App
+Type: Application
+Relationship: Aplikasi Cosmos SDK — state machine yang menjalankan modul staking, governance, fee market, dan DA pada chain Celestia
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Celestia GitHub celestia-app, https://github.com/celestiaorg/celestia-app]; [Celestia Docs "Architecture", https://docs.celestia.org/learn/architecture]
+
+---
+Entity: Informal Systems
+Type: Organization
+Relationship: Auditor keamanan — melakukan audit protokol konsensus, light client, dan Blobstream untuk Celestia
+Period: 2022–sekarang
+Exposure Type: security-audit
+Evidence: (HIGH) [Informal Systems Audit Reports, https://informal.systems/audits/]; [Celestia Blog "Security", https://blog.celestia.org/tag/security/]
+
+---
+Entity: Trail of Bits
+Type: Organization
+Relationship: Auditor keamanan — melakukan audit kode Celestia App, Blobstream contracts, dan cryptography primitives
+Period: 2023–sekarang
+Exposure Type: security-audit
+Evidence: (MEDIUM) [Trail of Bits Audits, https://github.com/trailofbits/publications/tree/master/audits]; [Celestia Blog "Security", https://blog.celestia.org/tag/security/]
+
+---
+Entity: Celestia Governance
+Type: DAO
+Relationship: Sistem governance on-chain — pemegang TIA memvote proposal parameter chain, upgrade, spend community pool, dan pengelolaan treasury
+Period: 2023–sekarang
+Exposure Type: governance
+Evidence: (HIGH) [Celestia Docs "Governance", https://docs.celestia.org/learn/governance]; [Celestia Blog "TIA Genesis Drop", https://blog.celestia.org/tia-genesis-drop/]
+
+---
+Entity: Celestia Blog
+Type: Media
+Relationship: Saluran komunikasi resmi — publikasi announcement, research, ecosystem update, dan dokumentasi teknis oleh tim Celestia
+Period: 2021–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Celestia Blog, https://blog.celestia.org/]; [Celestia Website Footer, https://celestia.org/]
+
+---
+Entity: Celestia Docs
+Type: Media
+Relationship: Dokumentasi teknis resmi — panduan node, developer, integrator, dan user untuk protokol Celestia dan ekosistemnya
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Celestia Docs, https://docs.celestia.org/]; [Celestia Website Footer, https://celestia.org/]
+
+---
+Entity: Celestia Discord Community
+Type: Community
+Relationship: Komunitas diskusi resmi — forum koordinasi validator, developer, relayer, dan pemegang token untuk support dan governance signaling
+Period: 2022–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Discord Invite, https://discord.gg/celestia]; [Celestia Website Footer, https://celestia.org/]
+
+---
+Entity: Celestia Twitter Community
+Type: Community
+Relationship: Komunitas media sosial resmi — announcements real-time, ecosystem highlights, dan engagement dengan @CelestiaOrg
+Period: 2021–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Twitter @CelestiaOrg, https://x.com/CelestiaOrg]; [Celestia Website Footer, https://celestia.org/]
+
+---
+Entity: TIA Token
+Type: Protocol
+Relationship: Native token (denom `utia`) — digunakan untuk staking, gas fee blobspace, governance voting, dan fee accrual (blobspace fees ke staker)
+Period: 2023–sekarang (TGE 31 Okt 2023)
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Celestia Docs "TIA Token", https://docs.celestia.org/learn/tia-token]; [Celestia Blog "TIA Genesis Drop", https://blog.celestia.org/tia-genesis-drop/]
+
+---
+Entity: wTIA (Wrapped TIA)
+Type: Protocol
+Relationship: ERC-20 wrapped TIA di Ethereum/Arbitrum — dideploy oleh pihak ketiga (bukan resmi Celestia Labs) untuk liquidity bridging dan DeFi
+Period: 2023–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Celestia Docs "TIA Token", https://docs.celestia.org/learn/tia-token]; [Arbiscan wTIA Contract, https://arbiscan.io/token/0x...]
+
+---
+Entity: Arbitrum Orbit
+Type: Protocol
+Relationship: Rollup framework yang menggunakan Celestia DA — chain Orbit dapat memposting batch data ke Celestia via Blobstream
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Celestia Blog "Arbitrum Orbit + Celestia", https://blog.celestia.org/arbitrum-orbit-celestia/]; [Arbitrum Orbit Docs, https://docs.arbitrum.io/arbitrum-orbit/]
+
+---
+Entity: Starknet
+Type: Protocol
+Relationship: ZK-Rollup yang mengintegrasikan Celestia DA — menggunakan Celestia untuk data availability sebagai alternatif atau tambahan dari Ethereum calldata
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Celestia Blog "Starknet + Celestia", https://blog.celestia.org/starknet-celestia/]; [Starknet Docs, https://docs.starknet.io/]
+
+---
+Entity: Polygon CDK
+Type: Protocol
+Relationship: Chain Development Kit yang mendukung Celestia DA — memungkinkan chain Polygon CDK menggunakan Celestia untuk data availability
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Celestia Blog "Polygon CDK + Celestia", https://blog.celestia.org/polygon-cdk-celestia/]; [Polygon CDK Docs, https://docs.polygon.technology/cdk/]
+
+---
+Entity: Sovereign Labs
+Type: Company
+Relationship: Pengembang Sovereign SDK — membangun framework rollup sovereign yang native menggunakan Celestia DA
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Sovereign Labs Website, https://sovereignlabs.xyz/]; [Sovereign SDK GitHub, https://github.com/Sovereign-Labs/sovereign-sdk]
+
+---
+Entity: Celestia Telegram
+Type: Community
+Relationship: Saluran Telegram resmi (@celestiaofficial) — announcements dan komunitas bahasa Indonesia/global
+Period: 2022–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (MEDIUM) [Telegram @celestiaofficial, https://t.me/celestiaofficial]; [Celestia Website Footer, https://celestia.org/]
+
+SETELAH SEMUA ENTITY
+
+PERSON
+- Mustafa Al-Bassam
+- Ismail Khoffi
+- John Adler
+- Nick White
+- Josh Weintraub
+- David Egas
+
+FOUNDATION
+- Celestia Foundation
+
+COMPANY
+- Celestia Labs Inc.
+- Sovereign Labs
+
+PROTOCOL
+- Celestia Data Availability Layer
+- Blobstream
+- Quantum Gravity Bridge
+- Rollkit
+- Sovereign SDK
+- TIA Token
+- wTIA (Wrapped TIA)
+- Arbitrum Orbit
+- Starknet
+- Polygon CDK
+
+CHAIN
+- Celestia (Chain)
+- Ethereum
+
+INVESTOR
+- Bain Capital Crypto
+- Polychain Capital
+- 1kx
+- Robot Ventures
+- Placeholder
+
+INFRASTRUCTURE
+- Cosmostation
+- Celestia Node Operators
+- Blobstream Relayers
+
+APPLICATION
+- Celestia App
+
+SECURITY
+- Informal Systems
+- Trail of Bits
+
+DAO
+- Celestia Governance
+
+GOVERNMENT
+- (tidak ada)
+
+MEDIA
+- Celestia Blog
+- Celestia Docs
+
+COMMUNITY
+- Celestia Discord Community
+- Celestia Twitter Community
+- Celestia Telegram
+
+OTHER
+- (tidak ada)
+
+RINGKASAN
+Total Entity: 38
+Internal: 18 (Person, Foundation, Company, Protocol, Chain, Application, DAO, Media, Community milik proyek)
+External: 20 (Investor, Infrastructure, Security, Protocol/Chain ekosistem mitra)
+Unknown: 0
+
+Open Threads
+- Daftar lengkap investor ronde Series A/B ($55M) — Crunchbase menyebut lebih banyak nama (Delphi Digital, Galaxy Digital, dll) yang butuh verifikasi silang
+- Identitas auditor tambahan selain Informal Systems dan Trail of Bits (misal: Zellic, Sigma Prime, atau audit internal)
+- Detail legal structure hubungan Celestia Labs (for-profit) dan Celestia Foundation (non-profit) — dokumen governance/resmi tidak yet publik
+- Alamat on-chain treasury Celestia Foundation vs Celestia Labs — butuh analisis label address
+- Status deploy wTIA resmi vs community — siapa deployer kontrak Ethereum/Arbitrum pertama kali
+- Daftar lengkap proposer/validator set genesis dan distribusi stake awal — butuh data on-chain block 0
+- Rincian grant program Celestia Foundation (jumlah, penerima, kategori) — butuh data dari forum governance
+- Status Quantum Gravity Bridge — apakah masih R&D atau ada testnet publik
+- Relayer set Blobstream — siapa operator relayer utama (Celestia Labs, third-party, permissionless)

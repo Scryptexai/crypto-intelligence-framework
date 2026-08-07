@@ -1,0 +1,11 @@
+PROJECT: EigenLayer
+
+**Open Threads**
+
+· Missing Phase 1-8 Compiled Datasets: The conversation history only contains search queries for Phases 1-8, not the actual compiled research results/datasets (01-foundation.docx, 02-entity.docx, 03-history.docx, 04-technology.docx, 05-financial.docx, 06-token.docx, 07-ecosystem.docx, 08-market.docx, 09-behavioral.docx). Phase 10 Knowledge Extraction requires these full datasets as context dependencies to extract insights, principles, and patterns with proper evidence citations.
+
+· Cannot Generate Knowledge Extraction Report Without Source Data: All sections (Core Insights, Strategic Principles, Success Factors, Failure Factors, Decision Framework, Reusable Playbook, Anti-patterns, Lessons Learned, Knowledge Summary) require specific evidence citations referencing Phase N — Label/Event IDs per the strict formatting rules. Every claim must have 【Phase N — Label】 citations attached inline.
+
+· Need Either: (a) User provides the compiled Phase 1-8 datasets, or (b) I conduct the research for Phases 1-8 by executing the search queries, synthesizing results into structured datasets, and then proceed to Phase 10.
+
+**Supporting Dataset**: Conversation history showing only search invocations for Phases 1-8, no compiled research outputs.

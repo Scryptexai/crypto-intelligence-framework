@@ -1,0 +1,35 @@
+PROJECT: EigenLayer
+
+<invoke name="tavily_search">
+<param name="query">EigenLayer EIGEN token trading exchanges Binance Coinbase Bybit OKX Kraken spot perpetual futures listing date</param>
+</invoke>
+<invoke name="tavily_search">
+<param name="query">EigenLayer TVL total value locked DefiLlama historical chart 2024 2025</param>
+</invoke>
+<invoke name="tavily_search">
+<param name="query">EigenLayer market cap EIGEN token CoinGecko CoinMarketCap circulating supply fully diluted valuation</param>
+</invoke>
+<invoke name="tavily_search">
+<param name="query">EigenLayer competitors restaking protocols Symbiotic Karak Babylon Ether.fi Lido comparison</param>
+</invoke>
+<invoke name="tavily_search">
+<param name="query">EigenLayer adoption metrics daily active users transactions wallets validator count node operators 2024</param>
+</invoke>
+<invoke name="tavily_search">
+<param name="query">EigenLayer EigenDA adoption metrics TVL rollups using EigenDA Arbitrum Optimism Mantle</param>
+</invoke>
+<invoke name="tavily_search">
+<param name="query">EigenLayer AVS Actively Validated Services count live mainnet 2024 EigenDA Witness Chain Lagrange Omni</param>
+</invoke>
+<invoke name="tavily_search">
+<param name="query">EigenLayer market narrative restaking modular blockchain data availability Ethereum scaling 2024 2025</param>
+</invoke>
+<invoke name="tavily_search">
+<param name="query">EigenLayer official dashboard DefiLlama CoinGecko CoinMarketCap Token Terminal Messari explorer URLs</param>
+</invoke>
+<invoke name="tavily_search">
+<param name="query">EigenLayer liquidity DEX Uniswap Curve Balancer CEX order book depth market makers Wintermute Jump Trading</param>
+</invoke>
+<invoke name="tavily_search">
+<param name="query">EigenLayer market share restaking sector TVL dominance percentage 2024</param>
+</invoke>

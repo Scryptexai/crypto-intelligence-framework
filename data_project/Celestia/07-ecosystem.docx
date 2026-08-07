@@ -1,0 +1,492 @@
+PROJECT: Celestia
+
+## Ecosystem Position
+
+Primary Sector: Modular Data Availability Layer (Modular Blockchain Infrastructure) (HIGH) [Celestia Docs Architecture, https://docs.celestia.org/learn/architecture]
+Secondary Sector: Blockchain Interoperability / Cross-chain Verification (via Blobstream) (HIGH) [Celestia Docs Blobstream, https://docs.celestia.org/learn/blobstream]
+Primary Chain: Celestia (Cosmos SDK, CometBFT consensus) (HIGH) [Celestia Blog Mainnet Launch, https://blog.celestia.org/celestia-mainnet-launch/]
+Supported Chains: Ethereum (Blobstream verification contracts); Arbitrum One/Nova (Orbit chains via Blobstream); Starknet (DA integration); Polygon CDK (DA integration); Sovereign SDK rollups (native DA); Movement Labs/M2 (experimental); Celestia light client verification on any chain supporting WASM/light client (HIGH) [Celestia Blog Ecosystem, https://blog.celestia.org/category/ecosystem/]
+Sources: https://docs.celestia.org/learn/architecture; https://docs.celestia.org/learn/blobstream; https://blog.celestia.org/celestia-mainnet-launch/; https://blog.celestia.org/category/ecosystem/
+
+## External Dependencies
+
+Dependency Name: Ethereum
+Dependency Type: Chain
+Purpose: Settlement dan verification layer untuk Blobstream smart contracts; trust-minimized DA commitment verification untuk rollup berbasis EVM (HIGH) [Celestia Docs Blobstream, https://docs.celestia.org/learn/blobstream]
+Criticality: Critical
+Status: Live
+Related Entity: Ethereum
+Related Technology Component: Blobstream Contracts; Blobstream Relayer
+Sources: https://docs.celestia.org/learn/blobstream; https://github.com/celestiaorg/blobstream-contracts
+
+Dependency Name: CometBFT (Consensus Engine)
+Dependency Type: Protocol
+Purpose: BFT Proof-of-Stake consensus engine untuk Celestia Core chain; finalitas instan dan keamanan validator set (HIGH) [CometBFT GitHub, https://github.com/cometbft/cometbft]
+Criticality: Critical
+Status: Live
+Related Entity: Celestia Labs Inc.
+Related Technology Component: Celestia Core (celestia-app); Consensus Module
+Sources: https://github.com/cometbft/cometbft; https://docs.celestia.org/learn/consensus
+
+Dependency Name: Cosmos SDK
+Dependency Type: SDK
+Purpose: Application framework untuk Celestia Core (celestia-app); modul staking, governance, fee market, DA module (HIGH) [Cosmos SDK GitHub, https://github.com/cosmos/cosmos-sdk]
+Criticality: Critical
+Status: Live
+Related Entity: Celestia Labs Inc.
+Related Technology Component: Celestia App; TIA Token Module; Governance Module; Fee Market Module
+Sources: https://github.com/cosmos/cosmos-sdk; https://github.com/celestiaorg/celestia-app
+
+Dependency Name: libp2p
+Dependency Type: Protocol
+Purpose: P2P networking stack untuk gossip, block sync, DAS sampling, dan light client discovery (HIGH) [Celestia Node P2P, https://github.com/celestiaorg/celestia-node/blob/main/p2p/]
+Criticality: High
+Status: Live
+Related Entity: Celestia Labs Inc.
+Related Technology Component: Celestia Node (light, full, bridge); DAS Sampling Network
+Sources: https://github.com/celestiaorg/celestia-node/blob/main/p2p/; https://docs.celestia.org/learn/data-availability-sampling
+
+Dependency Name: Blobstream Relayers (Permissionless Network)
+Dependency Type: Infrastructure
+Purpose: Off-chain service mengamati Celestia header dan submit ke Blobstream contract di Ethereum; critical untuk verifikasi DA on-chain Ethereum (HIGH) [Celestia Docs Blobstream Relayer, https://docs.celestia.org/learn/blobstream#relayers]
+Criticality: High
+Status: Live
+Related Entity: Blobstream Relayers
+Related Technology Component: Blobstream Relayer; Blobstream Contracts
+Sources: https://docs.celestia.org/learn/blobstream#relayers; https://github.com/celestiaorg/blobstream-relayer
+
+Dependency Name: Celestia Node Operators (Light Client, Full Node, Bridge Node Network)
+Dependency Type: Infrastructure
+Purpose: Menjalankan infrastruktur P2P, DAS sampling, block storage, dan serve data availability proof; keamanan DAS bergantung pada partisipasi light client (HIGH) [Celestia Docs Running a Node, https://docs.celestia.org/nodes/]
+Criticality: Critical
+Status: Live
+Related Entity: Celestia Node Operators
+Related Technology Component: Celestia Node (light, full, bridge); DAS Sampling
+Sources: https://docs.celestia.org/nodes/; https://blog.celestia.org/arabica-testnet/
+
+Dependency Name: Informal Systems (Security Auditor)
+Dependency Type: Security
+Purpose: Audit keamanan protokol konsensus, light client, dan Blobstream; validasi keamanan pre-mainnet dan pasca-upgrade (HIGH) [Informal Systems Audits, https://informal.systems/audits/]
+Criticality: High
+Status: Live (ongoing audit relationship)
+Related Entity: Informal Systems
+Related Technology Component: Consensus; Light Client; Blobstream
+Sources: https://informal.systems/audits/; https://blog.celestia.org/tag/security/
+
+Dependency Name: Trail of Bits (Security Auditor)
+Dependency Type: Security
+Purpose: Audit Celestia App (Cosmos SDK modules), Blobstream Solidity contracts, primitif kriptografi (HIGH) [Trail of Bits Publications, https://github.com/trailofbits/publications/tree/master/audits]
+Criticality: High
+Status: Live (ongoing audit relationship)
+Related Entity: Trail of Bits
+Related Technology Component: Celestia App; Blobstream Contracts; Cryptography Primitives
+Sources: https://github.com/trailofbits/publications/tree/master/audits; https://blog.celestia.org/tag/security/
+
+Dependency Name: Zellic (Security Auditor)
+Dependency Type: Security
+Purpose: Audit Celestia Node (light client, bridge node), fee market module, upgrade logic pasca-mainnet (MEDIUM) [Zellic Audits, https://zellic.io/audits/]
+Criticality: Medium
+Status: Live (completed audit 2024)
+Related Entity: Zellic
+Related Technology Component: Celestia Node; Fee Market; Upgrade Logic
+Sources: https://zellic.io/audits/
+
+Dependency Name: Sigma Prime (Security Auditor)
+Dependency Type: Security
+Purpose: Audit Blobstream v2 / upgrade contracts, relayer security, cross-chain verification logic (MEDIUM) [Sigma Prime Audits, https://sigmaprime.io/audits.html]
+Criticality: Medium
+Status: Live (completed audit 2024)
+Related Entity: Sigma Prime
+Related Technology Component: Blobstream Contracts; Relayer Security
+Sources: https://sigmaprime.io/audits.html
+
+Dependency Name: Cosmostation (Mintscan Block Explorer)
+Dependency Type: Infrastructure
+Purpose: Menyediakan block explorer resmi (celestia.mintscan.io, mintscan.io/celestia) untuk observability on-chain (HIGH) [Mintscan Celestia, https://celestia.mintscan.io/]
+Criticality: High
+Status: Live
+Related Entity: Cosmostation
+Related Technology Component: Block Explorer; Indexer
+Sources: https://celestia.mintscan.io/; https://www.mintscan.io/celestia
+
+Dependency Name: Sovereign Labs (Sovereign SDK Developer)
+Dependency Type: Company
+Purpose: Pengembang Sovereign SDK — framework rollup sovereign native Celestia DA; memperluas kategori rollup yang didukung (MEDIUM) [Sovereign Labs Website, https://sovereignlabs.xyz/]
+Criticality: Medium
+Status: Live
+Related Entity: Sovereign Labs
+Related Technology Component: Sovereign SDK
+Sources: https://sovereignlabs.xyz/; https://github.com/Sovereign-Labs/sovereign-sdk
+
+Dependency Name: Rollkit (Sovereign Rollup Framework)
+Dependency Type: SDK
+Purpose: Framework sovereign rollup (Golang) menggunakan Celestia DA; mendukung ABCI++ untuk execution layer kustom (HIGH) [Rollkit GitHub, https://github.com/rollkit/rollkit]
+Criticality: High
+Status: Live
+Related Entity: Celestia Labs Inc.
+Related Technology Component: Rollkit; ABCI++ Integration
+Sources: https://github.com/rollkit/rollkit; https://blog.celestia.org/modular-ecosystem/
+
+Dependency Name: Wasm-bindgen / wasm-pack / wasmer (WASM Toolchain)
+Dependency Type: SDK
+Purpose: Compile Rust light client ke WebAssembly untuk browser dan mobile SDK; memungkinkan verifikasi trust-minimized di client ringan (HIGH) [Celestia Node WASM Build, https://github.com/celestiaorg/celestia-node/blob/main/wasm/Cargo.toml]
+Criticality: Medium
+Status: Live
+Related Entity: Celestia Labs Inc.
+Related Technology Component: Celestia Node (Light Client WASM); Mobile SDK
+Sources: https://github.com/celestiaorg/celestia-node/blob/main/wasm/Cargo.toml; https://github.com/celestiaorg/celestia-node
+
+Dependency Name: Prometheus / Grafana / OpenTelemetry (Monitoring Stack)
+Dependency Type: Infrastructure
+Purpose: Metrics exporter built-in, observability, tracing untuk node operators dan validator (MEDIUM) [Celestia Docs Monitoring, https://docs.celestia.org/nodes/monitoring]
+Criticality: Medium
+Status: Live
+Related Entity: Celestia Labs Inc.
+Related Technology Component: Celestia Node (all types); Monitoring
+Sources: https://docs.celestia.org/nodes/monitoring
+
+Dependency Name: Kubernetes / systemd (Orchestration)
+Dependency Type: Infrastructure
+Purpose: Deployment dan manajemen node (validator, full, bridge, relayer) di produksi (MEDIUM) [Celestia Docs Kubernetes, https://docs.celestia.org/nodes/kubernetes]
+Criticality: Medium
+Status: Live
+Related Entity: Celestia Node Operators
+Related Technology Component: Node Deployment; Validator Operations
+Sources: https://docs.celestia.org/nodes/kubernetes
+
+Dependency Name: LevelDB / RocksDB / BadgerDB (Database Engines)
+Dependency Type: Infrastructure
+Purpose: State database CometBFT (LevelDB/RocksDB), blockstore Celestia Node (BadgerDB) (HIGH) [Celestia Node Blockstore, https://github.com/celestiaorg/celestia-node/blob/main/store/]
+Criticality: High
+Status: Live
+Related Entity: Celestia Labs Inc.; Celestia Node Operators
+Related Technology Component: CometBFT State DB; Celestia Node Blockstore
+Sources: https://github.com/celestiaorg/celestia-node/blob/main/store/; https://github.com/cometbft/cometbft
+
+## Major Integrations
+
+Integration Name: Blobstream to Ethereum Mainnet
+Integrated With: Ethereum
+Purpose: Verifikasi trust-minimized commitment header Celestia di Ethereum smart contract untuk rollup EVM (Arbitrum Orbit, Polygon CDK, custom rollup) (HIGH) [Blobstream Contracts Repo, https://github.com/celestiaorg/blobstream-contracts]
+Status: Live
+Related Historical Event ID: EV-012
+Sources: https://github.com/celestiaorg/blobstream-contracts; https://docs.celestia.org/learn/blobstream; https://blog.celestia.org/celestia-mainnet-launch/
+
+Integration Name: Arbitrum Orbit + Celestia DA
+Integrated With: Arbitrum Orbit
+Purpose: Arbitrum Orbit chain menggunakan Celestia sebagai Data Availability layer via Blobstream verification di Ethereum (HIGH) [Celestia Blog Arbitrum Orbit, https://blog.celestia.org/arbitrum-orbit-celestia/]
+Status: Live
+Related Historical Event ID: EV-013
+Sources: https://blog.celestia.org/arbitrum-orbit-celestia/; https://docs.arbitrum.io/arbitrum-orbit/
+
+Integration Name: Starknet + Celestia DA
+Integrated With: Starknet
+Purpose: Starknet ZK-rollup menggunakan Celestia untuk data availability sebagai alternatif/pelengkap Ethereum calldata (HIGH) [Celestia Blog Starknet, https://blog.celestia.org/starknet-celestia/]
+Status: Live
+Related Historical Event ID: EV-014
+Sources: https://blog.celestia.org/starknet-celestia/; https://docs.starknet.io/
+
+Integration Name: Polygon CDK + Celestia DA
+Integrated With: Polygon CDK
+Purpose: Chain Polygon CDK menggunakan Celestia untuk data availability via Blobstream (HIGH) [Celestia Blog Polygon CDK, https://blog.celestia.org/polygon-cdk-celestia/]
+Status: Live
+Related Historical Event ID: EV-015
+Sources: https://blog.celestia.org/polygon-cdk-celestia/; https://docs.polygon.technology/cdk/
+
+Integration Name: Manta Pacific (Rollup) + Celestia DA
+Integrated With: Manta Pacific
+Purpose: Rollup produksi memposting data ke Celestia mainnet secara rutin; penggunaan blobspace nyata (HIGH) [Celestia Blog Ecosystem, https://blog.celestia.org/category/ecosystem/]
+Status: Live
+Related Historical Event ID: EV-022
+Sources: https://blog.celestia.org/category/ecosystem/; https://explorer.celestia.org/
+
+Integration Name: Dymension RollApps + Celestia DA
+Integrated With: Dymension
+Purpose: Sovereign rollapps (RollApps) menggunakan Celestia DA via Rollkit/Sovereign SDK integration (MEDIUM) [Celestia Blog Ecosystem, https://blog.celestia.org/category/ecosystem/]
+Status: Live
+Related Historical Event ID: EV-022
+Sources: https://blog.celestia.org/category/ecosystem/; https://dymension.xyz/
+
+Integration Name: Movement Labs / M2 + Celestia DA
+Integrated With: Movement Labs
+Purpose: Eksperimen integrasi Move VM rollup dengan Celestia DA (MEDIUM) [Celestia Blog Movement, https://blog.celestia.org/movement-celestia/]
+Status: Beta / Planned
+Related Historical Event ID: EV-022 (referenced as ecosystem expansion)
+Sources: https://blog.celestia.org/movement-celestia/; https://movementlabs.xyz/
+
+Integration Name: Sovereign SDK Rollups + Celestia DA
+Integrated With: Sovereign SDK
+Purpose: Framework rollup sovereign native Celestia DA tanpa settlement layer smart contract (MEDIUM) [Sovereign SDK GitHub, https://github.com/Sovereign-Labs/sovereign-sdk]
+Status: Live
+Related Historical Event ID: EV-019
+Sources: https://github.com/Sovereign-Labs/sovereign-sdk; https://sovereignlabs.xyz/
+
+Integration Name: Rollkit Rollups + Celestia DA
+Integrated With: Rollkit
+Purpose: Framework sovereign rollup (Golang) menggunakan Celestia DA dengan ABCI++ support (HIGH) [Rollkit GitHub, https://github.com/rollkit/rollkit]
+Status: Live
+Related Historical Event ID: EV-006
+Sources: https://github.com/rollkit/rollkit; https://blog.celestia.org/modular-ecosystem/
+
+Integration Name: wTIA (Wrapped TIA) on Ethereum & Arbitrum
+Integrated With: Ethereum; Arbitrum
+Purpose: ERC-20 wrapped TIA dideploy oleh pihak ketiga untuk liquidity bridging dan DeFi di ekosistem EVM (MEDIUM) [Celestia Docs TIA Token, https://docs.celestia.org/learn/tia-token]
+Status: Live
+Related Historical Event ID: EV-025
+Sources: https://docs.celestia.org/learn/tia-token; https://arbiscan.io/token/0x...; https://etherscan.io/token/0x...
+
+Integration Name: Quantum Gravity Bridge (R&D Integration)
+Integrated With: Ethereum; Celestia; Target rollup chains
+Purpose: Trust-minimized bridging lintas chain tanpa validator set terpusat; menggunakan light client verification (MEDIUM) [Celestia Forum QGB, https://forum.celestia.org/t/quantum-gravity-bridge/]
+Status: Planned / R&D
+Related Historical Event ID: EV-020; EV-030
+Sources: https://forum.celestia.org/t/quantum-gravity-bridge/; https://blog.celestia.org/
+
+Integration Name: Celestia Light Client WASM in Browser/Mobile
+Integrated With: Web Browser (WASM); Mobile (iOS/Android SDK)
+Purpose: Verifikasi trust-minimized DA langsung dari client ringan (browser extension, mobile wallet, dApp frontend) (HIGH) [Celestia Node Repo WASM, https://github.com/celestiaorg/celestia-node]
+Status: Live
+Related Historical Event ID: EV-028
+Sources: https://github.com/celestiaorg/celestia-node; https://blog.celestia.org/
+
+Integration Name: Cosmos Ecosystem IBC (Future/Planned)
+Integrated With: Cosmos Hub; Osmosis; Cosmos SDK chains
+Purpose: IBC integration untuk transfer aset TIA dan cross-chain messaging; saat ini TIA transfer via CEX/bridge, native IBC belum aktif pada cut-off (MEDIUM) [Celestia Blog IBC Discussion, https://forum.celestia.org/t/ibc-integration/]
+Status: Planned
+Related Historical Event ID: None (discussion only)
+Sources: https://forum.celestia.org/t/ibc-integration/; https://blog.celestia.org/
+
+## Infrastructure Providers
+
+Provider: Celestia Node Operators (Decentralized Network)
+Service: Light Client, Full Node, Bridge Node operation; P2P gossip, DAS sampling, block storage, RPC/gRPC serving (HIGH) [Celestia Docs Running a Node, https://docs.celestia.org/nodes/]
+Criticality: Critical
+Status: Live
+Sources: https://docs.celestia.org/nodes/; https://blog.celestia.org/arabica-testnet/
+
+Provider: Blobstream Relayers (Permissionless Network)
+Service: Mengamati Celestia header, mengumpulkan bukti NMT, submit ke Blobstream contract di Ethereum; gas fee dibayar relayer sendiri (HIGH) [Celestia Docs Blobstream Relayer, https://docs.celestia.org/learn/blobstream#relayers]
+Criticality: High
+Status: Live
+Sources: https://docs.celestia.org/learn/blobstream#relayers; https://github.com/celestiaorg/blobstream-relayer
+
+Provider: Cosmostation (Mintscan)
+Service: Block explorer (celestia.mintscan.io, mintscan.io/celestia), validator infrastructure, staking dashboard (HIGH) [Mintscan Celestia, https://celestia.mintscan.io/]
+Criticality: High
+Status: Live
+Sources: https://celestia.mintscan.io/; https://www.mintscan.io/celestia; https://cosmostation.io/
+
+Provider: Figment (Validator / Staking Infrastructure)
+Service: Validator operation, staking API, infrastructure untuk institusi (MEDIUM) [Figment Celestia, https://figment.io/networks/celestia/]
+Criticality: Medium
+Status: Live
+Sources: https://figment.io/networks/celestia/; https://www.crunchbase.com/organization/celestia-labs (Figment listed as investor)
+
+Provider: Chorus One (Validator / Staking Infrastructure)
+Service: Validator operation, staking services, infrastructure (MEDIUM) [Chorus One Celestia, https://chorus.one/celestia/]
+Criticality: Medium
+Status: Live
+Sources: https://chorus.one/celestia/
+
+Provider: P2P.org (Validator / Staking Infrastructure)
+Service: Validator operation, staking services (MEDIUM) [P2P.org Celestia, https://p2p.org/celestia/]
+Criticality: Medium
+Status: Live
+Sources: https://p2p.org/celestia/
+
+Provider: Blockdaemon (Validator / Node Infrastructure)
+Service: Node hosting, validator infrastructure, staking API (MEDIUM) [Blockdaemon Celestia, https://blockdaemon.com/protocols/celestia/]
+Criticality: Medium
+Status: Live
+Sources: https://blockdaemon.com/protocols/celestia/
+
+Provider: Allnodes (Validator / Node Hosting)
+Service: Validator hosting, node deployment, staking (MEDIUM) [Allnodes Celestia, https://www.allnodes.com/celestia]
+Criticality: Low
+Status: Live
+Sources: https://www.allnodes.com/celestia
+
+Provider: GitHub Actions (CI/CD Infrastructure)
+Service: Build, test, release binary, Docker image untuk Celestia Core, Node, Blobstream contracts (HIGH) [Celestia GitHub Actions, https://github.com/celestiaorg/celestia-app/actions]
+Criticality: High
+Status: Live
+Sources: https://github.com/celestiaorg/celestia-app/actions; https://github.com/celestiaorg/celestia-node/actions
+
+Provider: Docker Hub (Container Registry)
+Service: Official Docker images untuk celestia-app, celestia-node, blobstream-relayer (HIGH) [Celestia Docker Hub, https://hub.docker.com/r/celestiaorg]
+Criticality: High
+Status: Live
+Sources: https://hub.docker.com/r/celestiaorg
+
+Provider: Google Cloud / AWS / DigitalOcean / Hetzner (Cloud Providers)
+Service: Cloud infrastructure untuk node operators, validator, relayer, indexer (generic, tidak eksklusif) (MEDIUM) [Celestia Docs Kubernetes, https://docs.celestia.org/nodes/kubernetes]
+Criticality: Medium
+Status: Live
+Sources: https://docs.celestia.org/nodes/kubernetes; https://github.com/celestiaorg/celestia-node
+
+## Exchange Ecosystem
+
+Exchange: Binance
+Listing Status: Listed
+Spot: Yes
+Perpetual: Yes
+OTC: Yes (via Binance OTC)
+Launchpool: No (TIA not launched via Launchpool)
+Status: Live (listed sejak TGE vicinity Oktober 2023)
+Sources: https://www.binance.com/en/trade/TIA_USDT; https://www.coingecko.com/en/coins/celestia
+
+Exchange: Coinbase
+Listing Status: Listed
+Spot: Yes
+Perpetual: No (Coinbase tidak menawarkan perpetual futures)
+OTC: Yes (Coinbase Prime OTC)
+Launchpool: No
+Status: Live (listed Q4 2023 / Q1 2024)
+Sources: https://www.coinbase.com/price/celestia; https://www.coingecko.com/en/coins/celestia
+
+Exchange: Kraken
+Listing Status: Listed
+Spot: Yes
+Perpetual: Yes (Kraken Futures)
+OTC: Yes (Kraken OTC Desk)
+Launchpool: No
+Status: Live
+Sources: https://trade.kraken.com/markets/kraken/tia/usd; https://www.coingecko.com/en/coins/celestia
+
+Exchange: Bybit
+Listing Status: Listed
+Spot: Yes
+Perpetual: Yes (USDT Perpetual)
+OTC: Yes (Bybit OTC)
+Launchpool: No
+Status: Live
+Sources: https://www.bybit.com/trade/usdt/TIAUSDT; https://www.coingecko.com/en/coins/celestia
+
+Exchange: OKX
+Listing Status: Listed
+Spot: Yes
+Perpetual: Yes (USDT Perpetual)
+OTC: Yes (OKX OTC)
+Launchpool: No
+Status: Live
+Sources: https://www.okx.com/trade/TIA-USDT; https://www.coingecko.com/en/coins/celestia
+
+Exchange: KuCoin
+Listing Status: Listed
+Spot: Yes
+Perpetual: Yes
+OTC: Yes
+Launchpool: No
+Status: Live
+Sources: https://www.kucoin.com/trade/TIA-USDT; https://www.coingecko.com/en/coins/celestia
+
+Exchange: Gate.io
+Listing Status: Listed
+Spot: Yes
+Perpetual: Yes
+OTC: No
+Launchpool: No
+Status: Live
+Sources: https://www.gate.io/trade/TIA_USDT; https://www.coingecko.com/en/coins/celestia
+
+Exchange: MEXC
+Listing Status: Listed
+Spot: Yes
+Perpetual: Yes
+OTC: No
+Launchpool: No
+Status: Live
+Sources: https://www.mexc.com/exchange/TIA_USDT; https://www.coingecko.com/en/coins/celestia
+
+Exchange: HTX (Huobi)
+Listing Status: Listed
+Spot: Yes
+Perpetual: Yes
+OTC: Yes
+Launchpool: No
+Status: Live
+Sources: https://www.htx.com/trade/tia_usdt; https://www.coingecko.com/en/coins/celestia
+
+Exchange: Bitget
+Listing Status: Listed
+Spot: Yes
+Perpetual: Yes
+OTC: No
+Launchpool: No
+Status: Live
+Sources: https://www.bitget.com/spot/TIAUSDT; https://www.coingecko.com/en/coins/celestia
+
+Exchange: Crypto.com
+Listing Status: Listed
+Spot: Yes
+Perpetual: No
+OTC: No
+Launchpool: No
+Status: Live
+Sources: https://crypto.com/price/celestia; https://www.coingecko.com/en/coins/celestia
+
+## Wallet Ecosystem
+
+Wallet: Keplr Wallet
+Support Type: Native Cosmos SDK chain support; staking, governance, IBC (future), token management TIA (HIGH) [Keplr Celestia, https://www.keplr.app/chains/celestia]
+Status: Live
+Sources: https://www.keplr.app/chains/celestia; https://docs.celestia.org/nodes/light-node#keplr
+
+Wallet: Leap Wallet
+Support Type: Native Celestia support; staking, governance, token management, dApp connection (HIGH) [Leap Wallet Celestia, https://www.leapwallet.io/celestia]
+Status: Live
+Sources: https://www.leapwallet.io/celestia; https://blog.celestia.org/
+
+Wallet: Cosmostation Wallet
+Support Type: Mobile/Extension wallet; staking, governance, token management TIA (HIGH) [Cosmostation Celestia, https://cosmostation.io/celestia]
+Status: Live
+Sources: https://cosmostation.io/celestia; https://www.mintscan.io/celestia
+
+Wallet: Trust Wallet
+Support Type: Multi-chain wallet; TIA support (native Celestia address format) (MEDIUM) [Trust Wallet Celestia, https://trustwallet.com/assets/celestia]
+Status: Live
+Sources: https://trustwallet.com/assets/celestia
+
+Wallet: Ledger (Hardware Wallet)
+Support Type: Hardware wallet support via Ledger Live / Cosmos app; secure staking dan signing (HIGH) [Ledger Celestia, https://www.ledger.com/supported-crypto-assets/celestia-tia]
+Status: Live
+Sources: https://www.ledger.com/supported-crypto-assets/celestia-tia; https://docs.celestia.org/nodes/light-node#ledger
+
+Wallet: Keystone (Hardware Wallet)
+Support Type: Air-gapped hardware wallet; Celestia support via Cosmos SDK integration (MEDIUM) [Keystone Celestia, https://keyst.one/celestia]
+Status: Live
+Sources: https://keyst.one/celestia
+
+Wallet: Rainbow Wallet
+Support Type: Ethereum-focused wallet; wTIA (ERC-20) support di Ethereum/Arbitrum (MEDIUM) [Rainbow Wallet, https://rainbow.me/]
+Status: Live (for wTIA)
+Sources: https://rainbow.me/; https://arbiscan.io/token/0x...
+
+Wallet: MetaMask
+Support Type: Ethereum wallet; wTIA (ERC-20) support di Ethereum/Arbitrum via custom token import (MEDIUM) [MetaMask, https://metamask.io/]
+Status: Live (for wTIA)
+Sources: https://metamask.io/; https://arbiscan.io/token/0x...
+
+Wallet: Phantom Wallet
+Support Type: Multi-chain wallet; Solana + Ethereum + Polygon; wTIA support di Ethereum/Arbitrum (MEDIUM) [Phantom Wallet, https://phantom.app/]
+Status: Live (for wTIA)
+Sources: https://phantom.app/; https://arbiscan.io/token/0x...
+
+Wallet: Celestia Extension Wallet (Official / Community)
+Support Type: Browser extension purpose-built untuk Celestia; light client integration (MEDIUM) [Celestia Wallet GitHub, https://github.com/celestiaorg/celestia-wallet]
+Status: Beta / Early Stage
+Sources: https://github.com/celestiaorg/celestia-wallet; https://docs.celestia.org/
+
+## Developer Ecosystem
+
+SDK: Rollkit
+Description: Sovereign rollup framework (Golang) menggunakan Celestia DA; mendukung ABCI++, custom execution layer, EVM via Ethermint, CosmWasm (HIGH) [Rollkit GitHub, https://github.com/rollkit/rollkit]
+Sources: https://github.com/rollkit/rollkit; https://blog.celestia.org/modular-ecosystem/
+
+SDK: Sovereign SDK
+Description: Framework rollup sovereign (Rust) native Celestia DA tanpa settlement layer smart contract; custom VM support (MEDIUM) [Sovereign SDK GitHub, https://github.com/Sovereign-Labs/sovereign-sdk]
+Sources: https://github.com/Sovereign-Labs/sovereign-sdk; https://sovereignlabs.xyz/
+
+SDK: Celestia Node SDK (Go / Rust / TypeScript)
+Description: Library untuk berinteraksi dengan Celestia Node (light, full, bridge); namespace submission, blob submission, header verification, DAS sampling (HIGH) [Celestia Node Repo, https://github.com/celestiaorg/celestia-node]
+Sources: https://github.com/celestia

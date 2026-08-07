@@ -1,0 +1,50 @@
+PROJECT: Cosmos
+
+<tool_call>
+{"query": "Cosmos ATOM market cap ranking TVL DeFiLlama 2024", "topic": "news", "days": 365, "max_results": 10}
+.invoke
+({"query": "Cosmos ATOM market cap ranking TVL DeFiLlama 2024", "topic": "news", "days": 365, "max_results": 10})
+<tool_call>
+{"query": "Cosmos Hub trading volume Binance Coinbase Kraken KuCoin ATOM spot perpetual 2024", "topic": "news", "days": 365, "max_results": 10}
+.invoke
+({"query": "Cosmos Hub trading volume Binance Coinbase Kraken KuCoin ATOM spot perpetual 2024", "topic": "news", "days": 365, "max_results": 10})
+<tool_call>
+{"query": "Cosmos ecosystem TVL Osmosis Stride Juno Evmos Neutron Celestia Noble 2024 DeFiLlama", "topic": "news", "days": 365, "max_results": 10}
+.invoke
+({"query": "Cosmos ecosystem TVL Osmosis Stride Juno Evmos Neutron Celestia Noble 2024 DeFiLlama", "topic": "news", "days": 365, "max_results": 10})
+<tool_call>
+{"query": "Cosmos daily active users transactions validator count 2024 Mintscan Dune Analytics", "topic": "news", "days": 365, "max_results": 10}
+.invoke
+({"query": "Cosmos daily active users transactions validator count 2024 Mintscan Dune Analytics", "topic": "news", "days": 365, "max_results": 10})
+<tool_call>
+{"query": "Cosmos developer count Electric Capital developer report 2024 Cosmos SDK", "topic": "news", "days": 365, "max_results": 10}
+.invoke
+({"query": "Cosmos developer count Electric Capital developer report 2024 Cosmos SDK", "topic": "news", "days": 365, "max_results": 10})
+<tool_call>
+{"query": "Cosmos IBC transfer volume bridge volume 2024 Map of Zones", "topic": "news", "days": 365, "max_results": 10}
+.invoke
+({"query": "Cosmos IBC transfer volume bridge volume 2024 Map of Zones", "topic": "news", "days": 365, "max_results": 10})
+<tool_call>
+{"query": "Cosmos competitors Polkadot Avalanche Polygon LayerZero interoperability 2024", "topic": "news", "days": 365, "max_results": 10}
+.invoke
+({"query": "Cosmos competitors Polkadot Avalanche Polygon LayerZero interoperability 2024", "topic": "news", "days": 365, "max_results": 10})
+<tool_call>
+{"query": "Cosmos narrative modular blockchain interoperability IBC appchain 2024", "topic": "news", "days": 365, "max_results": 10}
+.invoke
+({"query": "Cosmos narrative modular blockchain interoperability IBC appchain 2024", "topic": "news", "days": 365, "max_results": 10})
+<tool_call>
+{"query": "Cosmos ATOM CoinGecko CoinMarketCap Token Terminal Messari DefiLlama official pages", "topic": "news", "days": 365, "max_results": 10}
+.invoke
+({"query": "Cosmos ATOM CoinGecko CoinMarketCap Token Terminal Messari DefiLlama official pages", "topic": "news", "days": 365, "max_results": 10})
+<tool_call>
+{"query": "Cosmos market milestones 2024 exchange listings mainnet upgrades governance proposals", "topic": "news", "days": 365, "max_results": 10}
+.invoke
+({"query": "Cosmos market milestones 2024 exchange listings mainnet upgrades governance proposals", "topic": "news", "days": 365, "max_results": 10})
+<tool_call>
+{"query": "Cosmos liquidity ATOM staking ratio bonded ratio liquid staking derivatives 2024", "topic": "news", "days": 365, "max_results": 10}
+.invoke
+({"query": "Cosmos liquidity ATOM staking ratio bonded ratio liquid staking derivatives 2024", "topic": "news", "days": 365, "max_results": 10})
+<tool_call>
+{"query": "Cosmos ecosystem grants Interchain Foundation ICF funding recipients 2024", "topic": "news", "days": 365, "max_results": 10}
+.invoke
+({"query": "Cosmos ecosystem grants Interchain Foundation ICF funding recipients 2024", "topic": "news", "days": 365, "max_results": 10})

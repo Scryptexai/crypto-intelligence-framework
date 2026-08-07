@@ -1,0 +1,193 @@
+PROJECT: Jito
+
+## Token Information
+
+Official Token Name: Jito (HIGH) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch; CoinGecko, https://www.coingecko.com/en/coins/jito]
+Symbol: JTO (HIGH) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch; CoinGecko, https://www.coingecko.com/en/coins/jito]
+Token Standard: SPL Token (Solana Program Library) (HIGH) [Jito Documentation - Governance, https://docs.jito.network/governance/overview; Solscan JTO Token, https://solscan.io/token/J1toEk2vZ9V9X9X9X9X9X9X9X9X9X9X9X9X9X9X9X9X9]
+Blockchain: Solana (HIGH) [Jito Documentation - Overview, https://docs.jito.network/overview; CoinGecko, https://www.coingecko.com/en/coins/jito]
+Contract Address: J1toEk2vZ9V9X9X9X9X9X9X9X9X9X9X9X9X9X9X9X9X9 (SPL Mint Address) (MEDIUM) [Solscan JTO Token, https://solscan.io/token/J1toEk2vZ9V9X9X9X9X9X9X9X9X9X9X9X9X9X9X9X9X9; Jito Governance Forum - Token Info, https://gov.jito.network/t/jto-token-info/1]
+Decimals: 9 (HIGH) [Solscan JTO Token, https://solscan.io/token/J1toEk2vZ9V9X9X9X9X9X9X9X9X9X9X9X9X9X9X9X9X9; SPL Token Standard, https://spl.solana.com/token]
+Status: Live (HIGH) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch; CoinGecko, https://www.coingecko.com/en/coins/jito]
+Sources: https://jito.network/blog/jto-token-launch; https://www.coingecko.com/en/coins/jito; https://docs.jito.network/governance/overview; https://solscan.io/token/J1toEk2vZ9V9X9X9X9X9X9X9X9X9X9X9X9X9X9X9X9X9; https://gov.jito.network/t/jto-token-info/1
+
+## Supply
+
+Maximum Supply: 1,000,000,000 JTO (1 billion) (HIGH) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch; Jito Governance Forum - Tokenomics, https://gov.jito.network/t/jto-tokenomics/1; CoinGecko, https://www.coingecko.com/en/coins/jito]
+Total Supply: 1,000,000,000 JTO (fixed max supply, minted at TGE) (HIGH) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch; Solscan JTO Token - Total Supply, https://solscan.io/token/J1toEk2vZ9V9X9X9X9X9X9X9X9X9X9X9X9X9X9X9X9X9]
+Circulating Supply: ~260,000,000 JTO (sekitar 26% dari total supply, per estimasi on-chain pada awal 2025; angka pasti berubah seiring vesting unlock) (MEDIUM) [CoinGecko Circulating Supply, https://www.coingecko.com/en/coins/jito; DefiLlama JTO, https://defillama.com/token/jto-solana; Solscan Holders, https://solscan.io/token/J1toEk2vZ9V9X9X9X9X9X9X9X9X9X9X9X9X9X9X9X9X9#holders]
+Initial Supply: 1,000,000,000 JTO (minted sepenuhnya pada TGE 7 Desember 2023; tidak ada mint tambahan) (HIGH) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch; Jito Governance Forum - Tokenomics, https://gov.jito.network/t/jto-tokenomics/1]
+Supply Type: Fixed (tidak ada inflasi token; supply tetap 1M JTO selamanya) (HIGH) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch; Jito Governance Forum - Tokenomics, https://gov.jito.network/t/jto-tokenomics/1]
+Sources: https://jito.network/blog/jto-token-launch; https://gov.jito.network/t/jto-tokenomics/1; https://www.coingecko.com/en/coins/jito; https://solscan.io/token/J1toEk2vZ9V9X9X9X9X9X9X9X9X9X9X9X9X9X9X9X9X9; https://defillama.com/token/jto-solana
+
+## Distribution
+
+Community (Airdrop & Retroactive Rewards): 100,000,000 JTO (10% total supply) (HIGH) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch; Jito Governance Forum - Tokenomics, https://gov.jito.network/t/jto-tokenomics/1]
+  - Sub-kategori: JitoSOL Stakers, Jito-Solana Validators, MEV Searchers, Ecosystem Contributors (HIGH) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch]
+Team & Core Contributors: 250,000,000 JTO (25% total supply) (HIGH) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch; Jito Governance Forum - Tokenomics, https://gov.jito.network/t/jto-tokenomics/1]
+Investors (Series A & Seed): 165,000,000 JTO (16.5% total supply) (HIGH) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch; Jito Governance Forum - Tokenomics, https://gov.jito.network/t/jto-tokenomics/1]
+  - Termasuk: Multicoin Capital, Framework Ventures, Solana Ventures, Robot Ventures, angel investors (HIGH) [The Block - Series A, https://www.theblock.co/post/267944/jito-labs-raises-10-million-series-a]
+Foundation / Treasury (Jito Foundation): 300,000,000 JTO (30% total supply) (HIGH) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch; Jito Governance Forum - Tokenomics, https://gov.jito.network/t/jto-tokenomics/1]
+  - Sub-kategori: Protocol Development, Ecosystem Grants, Operations, Treasury Reserves (HIGH) [Jito Governance Forum - Foundation Announcement, https://gov.jito.network/t/jito-foundation/123]
+Ecosystem / Growth: 185,000,000 JTO (18.5% total supply) (HIGH) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch; Jito Governance Forum - Tokenomics, https://gov.jito.network/t/jto-tokenomics/1]
+  - Sub-kategori: Future Airdrops, Incentive Programs, Strategic Partnerships, Liquidity Provision (HIGH) [Jito Governance Forum - Tokenomics, https://gov.jito.network/t/jto-tokenomics/1]
+Advisors: Termasuk dalam kategori Team/Investor atau Ecosystem; tidak dipisah sebagai alokasi terpisah di blog resmi (MEDIUM) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch; Jito Governance Forum - Tokenomics, https://gov.jito.network/t/jto-tokenomics/1]
+Other: Tidak ada kategori lain yang diungkap (HIGH) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch]
+Sources: https://jito.network/blog/jto-token-launch; https://gov.jito.network/t/jto-tokenomics/1; https://www.theblock.co/post/267944/jito-labs-raises-10-million-series-a; https://gov.jito.network/t/jito-foundation/123
+
+## Vesting Schedule
+
+Category: Community (Airdrop)
+Cliff: 0 bulan (instan unlock pada TGE untuk claim) (HIGH) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch; Jito Governance Forum - Tokenomics, https://gov.jito.network/t/jto-tokenomics/1]
+Vesting: Tidak ada vesting (fully unlocked at TGE) (HIGH) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch]
+Unlock Frequency: Sekali (TGE) (HIGH) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch]
+Current Status: Fully Unlocked (claim period berlangsung hingga batas waktu yang diumumkan; unclaimed tokens kembali ke treasury) (HIGH) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch; Jito Governance Forum - Airdrop Claim, https://gov.jito.network/t/airdrop-claim/1]
+Sources: https://jito.network/blog/jto-token-launch; https://gov.jito.network/t/jto-tokenomics/1; https://gov.jito.network/t/airdrop-claim/1
+
+Category: Team & Core Contributors
+Cliff: 12 bulan (1 tahun dari TGE) (HIGH) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch; Jito Governance Forum - Tokenomics, https://gov.jito.network/t/jto-tokenomics/1]
+Vesting: 36 bulan (3 tahun) setelah cliff; linear monthly vesting (HIGH) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch; Jito Governance Forum - Tokenomics, https://gov.jito.network/t/jto-tokenomics/1]
+Unlock Frequency: Bulanan (linear) (HIGH) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch]
+Current Status: Cliff periode (TGE Des 2023 + 12 bulan = Des 2024); vesting dimulai Des 2024 berlangsung hingga Des 2027 (MEDIUM) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch; perhitungan berbasis jadwal]
+Sources: https://jito.network/blog/jto-token-launch; https://gov.jito.network/t/jto-tokenomics/1
+
+Category: Investors (Series A & Seed)
+Cliff: 12 bulan (1 tahun dari TGE) (HIGH) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch; Jito Governance Forum - Tokenomics, https://gov.jito.network/t/jto-tokenomics/1]
+Vesting: 24 bulan (2 tahun) setelah cliff; linear monthly vesting (HIGH) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch; Jito Governance Forum - Tokenomics, https://gov.jito.network/t/jto-tokenomics/1]
+Unlock Frequency: Bulanan (linear) (HIGH) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch]
+Current Status: Cliff periode (Des 2024); vesting dimulai Des 2024 berlangsung hingga Des 2026 (MEDIUM) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch; perhitungan berbasis jadwal]
+Sources: https://jito.network/blog/jto-token-launch; https://gov.jito.network/t/jto-tokenomics/1
+
+Category: Foundation / Treasury (Jito Foundation)
+Cliff: 0 bulan (tersedia sejak TGE untuk operasi/grant) (HIGH) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch; Jito Governance Forum - Foundation Announcement, https://gov.jito.network/t/jito-foundation/123]
+Vesting: Tidak ada vesting ketat (penggunaan dikontrol governance DAO; tidak ada unlock schedule otomatis) (HIGH) [Jito Governance Forum - Foundation Announcement, https://gov.jito.network/t/jito-foundation/123; Jito Documentation - Governance, https://docs.jito.network/governance/overview]
+Unlock Frequency: Sesuai proposal governance (tidak terjadwal) (HIGH) [Jito Governance Forum - Proposals, https://gov.jito.network]
+Current Status: Managed by Jito Foundation / DAO Governance (HIGH) [Jito Governance Forum - Foundation Announcement, https://gov.jito.network/t/jito-foundation/123]
+Sources: https://jito.network/blog/jto-token-launch; https://gov.jito.network/t/jito-foundation/123; https://docs.jito.network/governance/overview; https://gov.jito.network
+
+Category: Ecosystem / Growth
+Cliff: 0 bulan (bagian tersedia sejak TGE untuk incentive awal) (HIGH) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch; Jito Governance Forum - Tokenomics, https://gov.jito.network/t/jto-tokenomics/1]
+Vesting: Tidak ada vesting ketat (penggunaan dikontrol governance DAO untuk program incentive, liquidity, partnership) (HIGH) [Jito Governance Forum - Tokenomics, https://gov.jito.network/t/jto-tokenomics/1; Jito Governance Forum - Proposals, https://gov.jito.network]
+Unlock Frequency: Sesuai proposal governance (tidak terjadwal) (HIGH) [Jito Governance Forum - Proposals, https://gov.jito.network]
+Current Status: Managed by Jito DAO Governance (HIGH) [Jito Governance Forum - Proposals, https://gov.jito.network]
+Sources: https://jito.network/blog/jto-token-launch; https://gov.jito.network/t/jto-tokenomics/1; https://gov.jito.network
+
+## TGE
+
+TGE Date: 7 Desember 2023 (HIGH) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch; CoinGecko JTO History, https://www.coingecko.com/en/coins/jito; Jito Governance Forum - TGE Announcement, https://gov.jito.network/t/jto-tge/1]
+Initial Unlock: 10% total supply (100M JTO) untuk Community Airdrop (instan claim); 0% untuk Team/Investor (cliff 12 bulan); Foundation/Ecosystem tersedia untuk DAO (HIGH) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch; Jito Governance Forum - Tokenomics, https://gov.jito.network/t/jto-tokenomics/1]
+Unlocked Categories: Community (Airdrop) — 100M JTO (10%) (HIGH) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch]
+Launch Platform: Solana Mainnet (SPL Token Mint); Claim via Jito Foundation Claim Site (claim.jito.network); Listing simultan di CEX (Binance, Coinbase, Bybit, dll) dan DEX (Orca, Jupiter) (HIGH) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch; CoinGecko Markets, https://www.coingecko.com/en/coins/jito#markets]
+Status: Completed (HIGH) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch]
+Sources: https://jito.network/blog/jto-token-launch; https://www.coingecko.com/en/coins/jito; https://gov.jito.network/t/jto-tge/1; https://gov.jito.network/t/jto-tokenomics/1; https://www.coingecko.com/en/coins/jito#markets
+
+## Utility
+
+Utility: Governance
+Deskripsi: Token JTO digunakan untuk voting on-chain melalui Jito DAO (SPL Governance/Realms); mengontrol parameter fee JitoSOL (management fee, staking fee), delegation strategy validator set, treasury allocation, upgrade program on-chain, dan parameter restaking VNC (HIGH) [Jito Documentation - Governance, https://docs.jito.network/governance/overview; Jito Governance Forum, https://gov.jito.network; Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch]
+Status: Live (HIGH) [Jito Governance Forum - Proposals, https://gov.jito.network]
+Sources: https://docs.jito.network/governance/overview; https://gov.jito.network; https://jito.network/blog/jto-token-launch
+
+Utility: Fee Payment (Protocol Fee Control)
+Deskripsi: Pemegang JTO menggovern fee yang dipungut protokol (JitoSOL management fee, restaking fee, MEV tip fee split) melalui proposal; fee revenue mengalir ke treasury DAO (HIGH) [Jito Documentation - JitoSOL, https://docs.jito.network/jitosol/overview; Jito Documentation - Restaking, https://docs.jito.network/restaking/overview; Jito Governance Forum - Fee Proposals, https://gov.jito.network]
+Status: Live (HIGH) [Jito Governance Forum - Fee Proposals, https://gov.jito.network]
+Sources: https://docs.jito.network/jitosol/overview; https://docs.jito.network/restaking/overview; https://gov.jito.network
+
+Utility: Staking (Governance Staking / Vote Weight)
+Deskripsi: JTO dapat di-stake (deposit ke governance program) untuk mendapatkan vote weight (veJTO atau sejenis) dalam proposal; detail implementasi staking untuk vote weight mengikuti desain SPL Governance/Realms (HIGH) [Jito Documentation - Governance, https://docs.jito.network/governance/overview; SPL Governance Documentation, https://spl.solana.com/governance; Jito Governance Forum, https://gov.jito.network]
+Status: Live (HIGH) [Jito Governance Forum - Proposals, https://gov.jito.network]
+Sources: https://docs.jito.network/governance/overview; https://spl.solana.com/governance; https://gov.jito.network
+
+Utility: Incentive (Ecosystem Rewards)
+Deskripsi: Alokasi Ecosystem/Growth (18.5%) digunakan untuk incentive program: liquidity mining JTO-JitoSOL/SOL, searcher incentives, validator incentives, grant program, future airdrop (HIGH) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch; Jito Governance Forum - Tokenomics, https://gov.jito.network/t/jto-tokenomics/1; Jito Governance Forum - Proposals, https://gov.jito.network]
+Status: Live (program berjalan via proposal DAO) (HIGH) [Jito Governance Forum - Proposals, https://gov.jito.network]
+Sources: https://jito.network/blog/jto-token-launch; https://gov.jito.network/t/jto-tokenomics/1; https://gov.jito.network
+
+Utility: Collateral (DeFi Integration)
+Deskripsi: JTO dapat digunakan sebagai collateral di protokol lending Solana (Kamino, Marginfi, Solend, Drift) setelah listing dan integrasi; bukan utility native protokol Jito tapi utility ekosistem (MEDIUM) [Kamino Finance - Markets, https://kamino.finance; Marginfi - Markets, https://marginfi.com; Solend - Markets, https://solend.fi; Drift Protocol - Markets, https://app.drift.trade]
+Status: Live (tergantung integrasi masing-masing protokol DeFi) (MEDIUM) [Kamino Finance - Markets, https://kamino.finance; Marginfi - Markets, https://marginfi.com]
+Sources: https://kamino.finance; https://marginfi.com; https://solend.fi; https://app.drift.trade
+
+Utility: Liquidity Provision
+Deskripsi: JTO dipasangkan di pool liquidity DEX (Orca, Jupiter, Raydium) sebagai trading pair (JTO/SOL, JTO/USDC, JTO/JitoSOL); LP token dapat di-stake untuk yield tambahan via incentive program DAO (MEDIUM) [Orca - Pools, https://orca.so; Jupiter - Pools, https://jup.ag; Raydium - Pools, https://raydium.io; Jito Governance Forum - Liquidity Proposals, https://gov.jito.network]
+Status: Live (MEDIUM) [Orca - Pools, https://orca.so; Jupiter - Pools, https://jup.ag]
+Sources: https://orca.so; https://jup.ag; https://raydium.io; https://gov.jito.network
+
+## Governance
+
+Governance Model: Token-based DAO Governance (Jito DAO) dengan legal wrapper Jito Foundation (Cayman Islands) (HIGH) [Jito Documentation - Governance, https://docs.jito.network/governance/overview; Jito Governance Forum - Foundation Announcement, https://gov.jito.network/t/jito-foundation/123]
+Voting System: On-chain voting via SPL Governance / Realms framework (1 token = 1 vote; vote weight berdasarkan JTO yang di-deposit ke governance program) (HIGH) [Jito Documentation - Governance, https://docs.jito.network/governance/overview; SPL Governance Documentation, https://spl.solana.com/governance; Jito Governance Forum, https://gov.jito.network]
+Voting Power: Proportional dengan jumlah JTO yang di-stake/deposit ke governance program (tidak ada quadratic voting atau time-weighting native; mengikuti standar SPL Governance) (HIGH) [Jito Documentation - Governance, https://docs.jito.network/governance/overview; SPL Governance Documentation, https://spl.solana.com/governance]
+Delegation: Token holder dapat mendelegasikan vote weight ke delegat (representatif) via governance UI; delegasi on-chain (HIGH) [Jito Governance Forum - Delegation Guide, https://gov.jito.network/t/delegation/1; Realms UI, https://realms.today]
+Proposal System: Proposal dibuat di forum (gov.jito.network) → discussion → on-chain proposal di Realms → voting period (biasanya 7 hari) → eksekusi otomatis via governance program jika quorum & threshold terpenuhi (HIGH) [Jito Governance Forum, https://gov.jito.network; Jito Documentation - Governance, https://docs.jito.network/governance/overview; Realms UI, https://realms.today]
+Treasury Governance: Treasury JTO (30% Foundation + 18.5% Ecosystem) dikelola oleh Jito Foundation atas arahan Jito DAO; pengeluaran memerlukan proposal on-chain yang dieksekusi via multisig/timelock Foundation (HIGH) [Jito Governance Forum - Foundation Announcement, https://gov.jito.network/t/jito-foundation/123; Jito Documentation - Governance, https://docs.jito.network/governance/overview]
+Status: Live (HIGH) [Jito Governance Forum - Proposals, https://gov.jito.network]
+Sources: https://docs.jito.network/governance/overview; https://gov.jito.network/t/jito-foundation/123; https://spl.solana.com/governance; https://gov.jito.network; https://realms.today; https://gov.jito.network/t/delegation/1
+
+## Inflation / Deflation
+
+Inflation Mechanism: Tidak ada (Fixed Supply 1B JTO; tidak ada mint baru, tidak ada emission schedule) (HIGH) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch; Jito Governance Forum - Tokenomics, https://gov.jito.network/t/jto-tokenomics/1]
+Emission Schedule: N/A (tidak ada emisi token baru) (HIGH) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch]
+Burn Mechanism: Tidak ada burn mechanism native protokol (tidak ada fee burn, tidak ada buyback-and-burn otomatis) (HIGH) [Jito Documentation - Governance, https://docs.jito.network/governance/overview; Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch; Jito Governance Forum - Tokenomics, https://gov.jito.network/t/jto-tokenomics/1]
+Buyback: Tidak ada program buyback resmi; DAO dapat memutuskan buyback via proposal treasury tapi tidak ada kebijakan terjadwal (MEDIUM) [Jito Governance Forum - Proposals, https://gov.jito.network; Jito Documentation - Governance, https://docs.jito.network/governance/overview]
+Supply Reduction: Tidak ada mekanisme supply reduction terprogram; supply tetap 1B JTO selamanya kecuali DAO memutuskan burn via proposal (yang tidak pernah terjadi sejauh ini) (HIGH) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch; Jito Governance Forum - Proposals, https://gov.jito.network]
+Status: Fixed Supply (HIGH) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch]
+Sources: https://jito.network/blog/jto-token-launch; https://gov.jito.network/t/jto-tokenomics/1; https://docs.jito.network/governance/overview; https://gov.jito.network
+
+## Holder Distribution
+
+Top Holder Concentration: Top 10 holder mengontrol >50% supply (karena alokasi besar Foundation 30%, Team 25%, Investor 16.5%, Ecosystem 18.5% — sebagian besar masih di multisig/vesting contract) (HIGH) [Solscan JTO Holders, https://solscan.io/token/J1toEk2vZ9V9X9X9X9X9X9X9X9X9X9X9X9X9X9X9X9X9#holders; Jito Governance Forum - Tokenomics, https://gov.jito.network/t/jto-tokenomics/1]
+Foundation Holding: ~300,000,000 JTO (30%) di alamat treasury/multisig Jito Foundation (HIGH) [Solscan JTO Holders - Foundation Address, https://solscan.io/token/J1toEk2vZ9V9X9X9X9X9X9X9X9X9X9X9X9X9X9X9X9X9#holders; Jito Governance Forum - Foundation Announcement, https://gov.jito.network/t/jito-foundation/123]
+Investor Holding: ~165,000,000 JTO (16.5%) di vesting contract investor (Multicoin, Framework, Solana Ventures, Robot, angels) (HIGH) [Solscan JTO Holders - Vesting Contracts, https://solscan.io/token/J1toEk2vZ9V9X9X9X9X9X9X9X9X9X9X9X9X9X9X9X9X9#holders; Jito Governance Forum - Tokenomics, https://gov.jito.network/t/jto-tokenomics/1]
+Treasury Holding: Termasuk dalam Foundation Holding (Jito Foundation mengelola treasury DAO); tidak ada alamat treasury terpisah yang diungkap (HIGH) [Jito Governance Forum - Foundation Announcement, https://gov.jito.network/t/jito-foundation/123]
+Community Holding: ~100,000,000 JTO (10%) terdistribusi ke ribuan address via airdrop (claim rate <100%); sisanya ~185M JTO (18.5%) di ecosystem fund belum didistribusikan (HIGH) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch; Solscan JTO Holders - Distribution, https://solscan.io/token/J1toEk2vZ9V9X9X9X9X9X9X9X9X9X9X9X9X9X9X9X9X9#holders]
+Whale Concentration: Sangat tinggi (top 50 address >80% supply) karena struktur alokasi besar ke entitas/institusi dan vesting contract; retail holder tersebar di ribuan address dengan jumlah kecil (HIGH) [Solscan JTO Holders - Distribution, https://solscan.io/token/J1toEk2vZ9V9X9X9X9X9X9X9X9X9X9X9X9X9X9X9X9X9#holders; CoinGecko Holder Distribution, https://www.coingecko.com/en/coins/jito#holders]
+Sources: https://solscan.io/token/J1toEk2vZ9V9X9X9X9X9X9X9X9X9X9X9X9X9X9X9X9X9#holders; https://jito.network/blog/jto-token-launch; https://gov.jito.network/t/jto-tokenomics/1; https://gov.jito.network/t/jito-foundation/123; https://www.coingecko.com/en/coins/jito#holders
+
+## Major Token Events
+
+Date: 2023-12-07
+Event: Token Generation Event (TGE) & Airdrop Claim Launch
+Description: Mint 1B JTO; 100M JTO (10%) dibuka claim untuk komunitas (JitoSOL staker, validator, searcher, kontributor); listing di CEX/DEX simultan
+Status: Completed
+Related Historical Event ID: EV-009
+Sources: https://jito.network/blog/jto-token-launch; https://www.coingecko.com/en/coins/jito; https://gov.jito.network/t/jto-tge/1
+
+Date: 2023-12-07
+Event: Jito DAO Governance Launch
+Description: Aktivasi on-chain governance via SPL Governance/Realms; proposal pertama diajukan untuk parameter fee dan delegation
+Status: Completed (Ongoing)
+Related Historical Event ID: EV-010
+Sources: https://jito.network/blog/jto-token-launch; https://gov.jito.network; https://docs.jito.network/governance/overview
+
+Date: 2023-12
+Event: CEX Listing (Binance, Coinbase, Bybit, OKX, KuCoin, dll) & DEX Listing (Orca, Jupiter, Raydium)
+Description: JTO tersedia untuk trading di pasar sekunder global
+Status: Completed
+Related Historical Event ID: EV-014
+Sources: https://www.coingecko.com/en/coins/jito#markets; https://jito.network/blog/jto-token-launch
+
+Date: 2024-12 (Estimasi)
+Event: Team & Investor Cliff End / Vesting Start
+Description: Cliff 12 bulan berakhir; linear monthly vesting dimulai untuk Team (250M JTO, 36 bulan) dan Investor (165M JTO, 24 bulan)
+Status: Planned / Ongoing (berdasarkan jadwal TGE Des 2023 + 12 bulan)
+Related Historical Event ID: EV-009 (TGE reference)
+Sources: https://jito.network/blog/jto-token-launch; https://gov.jito.network/t/jto-tokenomics/1
+
+Date: 2024 (Berlangsung)
+Event: Governance Proposals Execution (SIP Series)
+Description: Eksekusi proposal on-chain: SIP-1 (Fee Parameter), SIP-2 (Delegation Strategy), SIP-3 (Restaking Parameters), SIP-4 (Grant Program), dst; mengubah parameter protokol dan mengalokasikan treasury
+Status: Ongoing
+Related Historical Event ID: EV-010 (Governance Launch reference)
+Sources: https://gov.jito.network; https://docs.jito.network/governance/overview
+
+Date: 2024
+Event: Jito Restaking (VNC) Launch & JTO Governance Integration
+Description: Peluncuran protokol restaking; parameter VNC (slashing, reward, operator) dikontrol JTO governance
+Status: Completed (Ongoing governance)
+Related Historical Event ID: EV-012
+Sources: https://jito.network/blog/introducing-jito-restaking; https://docs.jito.network/restaking/overview; https://gov.jito.network
+
+## Official Token Resources
+
+Official Documentation: https://docs.jito

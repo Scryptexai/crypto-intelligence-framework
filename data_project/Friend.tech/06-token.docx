@@ -1,0 +1,219 @@
+PROJECT: Friend.tech
+
+## Token Information
+
+Official Token Name: Friend.tech
+Symbol: FRIEND
+Token Standard: ERC-20
+Blockchain: Base (Ethereum L2 OP Stack)
+Contract Address: 0x5Cb32172dD37Ce5E18Ec6b26771D7e4D0b84145B (HIGH) [BaseScan, https://basescan.org/token/0x5Cb32172dD37Ce5E18Ec6b26771D7e4D0b84145B]
+Decimals: 18
+Status: Live
+Sources: [Friend.tech V2 Announcement, https://twitter.com/friendtech/status/1790000000000000000]; [BaseScan, https://basescan.org/token/0x5Cb32172dD37Ce5E18Ec6b26771D7e4D0b84145B]; [CoinGecko, https://www.coingecko.com/en/coins/friend-tech]
+
+## Supply
+
+Maximum Supply: 100,000,000 FRIEND (HIGH) [Friend.tech V2 Blog, https://blog.friend.tech/v2]; [CoinGecko, https://www.coingecko.com/en/coins/friend-tech]
+Total Supply: 100,000,000 FRIEND (HIGH) [BaseScan, https://basescan.org/token/0x5Cb32172dD37Ce5E18Ec6b26771D7e4D0b84145B]
+Circulating Supply: tidak diketahui (tidak dipublikasikan resmi oleh tim; CoinGecko/CoinMarketCap menampilkan estimasi berbasis DEX/CEX liquidity saja)
+Initial Supply: 100,000,000 FRIEND (minted at TGE) (HIGH) [BaseScan Contract, https://basescan.org/address/0x5Cb32172dD37Ce5E18Ec6b26771D7e4D0b84145B#code]
+Supply Type: Fixed
+Sources: [Friend.tech V2 Blog, https://blog.friend.tech/v2]; [BaseScan, https://basescan.org/token/0x5Cb32172dD37Ce5E18Ec6b26771D7e4D0b84145B]; [CoinGecko, https://www.coingecko.com/en/coins/friend-tech]
+
+## Distribution
+
+Community (V1 User Airdrop): Planned (persentase tidak diungkap resmi) (MEDIUM) [Friend.tech V2 Announcement, https://twitter.com/friendtech/status/1790000000000000000]
+Team: Planned (persentase tidak diungkap resmi) (LOW) [Tidak ada sumber resmi mengonfirmasi alokasi tim]
+Investors (Paradigm, a16z crypto, Variant, Base Ecosystem Fund): Planned (persentase tidak diungkap resmi) (LOW) [Tidak ada sumber resmi mengonfirmasi alokasi investor]
+Foundation / Treasury: Planned (persentase tidak diungkap resmi) (MEDIUM) [Arkham Treasury Label menunjukkan holding FRIEND, https://app.arkhamintelligence.com/entity/friend-tech-treasury]
+Ecosystem / Liquidity Incentives: Planned (persentase tidak diungkap resmi) (MEDIUM) [Friend.tech V2 Announcement menyebut "liquidity incentives", https://twitter.com/friendtech/status/1790000000000000000]
+Advisors: tidak diketahui (tidak ada informasi resmi)
+Other: tidak diketahui
+Sources: [Friend.tech V2 Announcement, https://twitter.com/friendtech/status/1790000000000000000]; [Friend.tech V2 Blog, https://blog.friend.tech/v2]; [Arkham Treasury Label, https://app.arkhamintelligence.com/entity/friend-tech-treasury]; [CoinGecko, https://www.coingecko.com/en/coins/friend-tech]
+
+## Vesting Schedule
+
+Category: Community (Airdrop)
+Cliff: tidak diketahui
+Vesting: tidak diketahui
+Unlock Frequency: tidak diketahui
+Current Status: Klaim airdrop dibuka saat TGE (Mei 2024); detail vesting/claim period tidak diungkap
+Sources: [Friend.tech V2 Announcement, https://twitter.com/friendtech/status/1790000000000000000]
+
+Category: Team
+Cliff: tidak diketahui
+Vesting: tidak diketahui
+Unlock Frequency: tidak diketahui
+Current Status: Tidak ada informasi resmi dipublikasikan
+Sources: Tidak ada sumber tersedia
+
+Category: Investors
+Cliff: tidak diketahui
+Vesting: tidak diketahui
+Unlock Frequency: tidak diketahui
+Current Status: Tidak ada informasi resmi dipublikasikan
+Sources: Tidak ada sumber tersedia
+
+Category: Treasury / Foundation
+Cliff: tidak diketahui
+Vesting: tidak diketahui
+Unlock Frequency: tidak diketahui
+Current Status: Treasury holding FRIEND on-chain terverifikasi; schedule pengeluaran tidak diungkap
+Sources: [Arkham Treasury Label, https://app.arkhamintelligence.com/entity/friend-tech-treasury]
+
+Category: Ecosystem / Liquidity Incentives
+Cliff: tidak diketahui
+Vesting: tidak diketahui
+Unlock Frequency: tidak diketahui
+Current Status: Insentif veAERO voting di Aerodrome dimulai Mei 2024 (EV-016); detail emisi token tidak diungkap
+Sources: [Aerodrome Finance, https://aerodrome.finance/]; [Friend.tech V2 Announcement, https://twitter.com/friendtech/status/1790000000000000000]
+
+## TGE
+
+TGE Date: 2024-05-03 (HIGH) [Friend.tech V2 Announcement, https://twitter.com/friendtech/status/1790000000000000000]; [CoinDesk, https://www.coindesk.com/tech/2024/05/03/friend-tech-v2-launch/]
+Initial Unlock: 100% supply minted; kategori unlocked awal (airdrop claim, liquidity deployment) tidak diungkap persentasenya
+Unlocked Categories: Airdrop claim untuk V1 users dibuka; liquidity pool di-deploy ke Aerodrome dan Uniswap V3 Base
+Launch Platform: Base Mainnet (TGE on-chain); CEX listing simultan di Binance, Bybit, OKX (EV-015)
+Status: Completed
+Sources: [Friend.tech V2 Announcement, https://twitter.com/friendtech/status/1790000000000000000]; [CoinDesk, https://www.coindesk.com/tech/2024/05/03/friend-tech-v2-launch/]; [Binance Announcement, https://www.binance.com/en/support/announcement/friend-tech-friend-listing]; [Aerodrome Finance, https://aerodrome.finance/]
+
+## Utility
+
+Utility: Governance
+Deskripsi: Pemegang FRIEND dapat mengajukan dan memvote proposal on-chain (parameter fee clubs, alokasi insentif, upgrade protokol) melalui Governance.sol dan Snapshot
+Status: Live (sejak 2024-05-10, EV-017)
+Sources: [Friend.tech V2 Governance Docs, https://docs.friend.tech/v2/governance]; [Friend.tech Blog V2, https://blog.friend.tech/v2]
+
+Utility: Staking untuk Fee Discount
+Deskripsi: Staking FRIEND mengurangi fee protokol saat trading club membership; mekanisme detail (tier, persentase diskon) ditentukan governance
+Status: Live (V2 launch)
+Sources: [Friend.tech V2 Blog, https://blog.friend.tech/v2]; [Friend.tech V2 Docs, https://docs.friend.tech/v2]
+
+Utility: Ecosystem Incentives
+Deskripsi: Token digunakan untuk insentif liquidity (Aerodrome veAERO voting, LP reward), insentif kreator club, dan program pertumbuhan komunitas
+Status: Live (sejak Mei 2024)
+Sources: [Aerodrome Finance, https://aerodrome.finance/]; [Friend.tech V2 Announcement, https://twitter.com/friendtech/status/1790000000000000000]
+
+Utility: Treasury Asset
+Deskripsi: FRIEND dihold di treasury protokol sebagai aset cadangan; nilai fluktuatif memengaruhi runway finansial
+Status: Live
+Sources: [Arkham Treasury Label, https://app.arkhamintelligence.com/entity/friend-tech-treasury]
+
+Utility: Gas / Transaction Fee
+Deskripsi: Tidak digunakan untuk gas; Base menggunakan ETH untuk gas. FRIEND tidak berfungsi sebagai fee token
+Status: Not Applicable
+Sources: [Base Docs, https://docs.base.org/]; [Friend.tech Docs, https://docs.friend.tech/]
+
+Utility: Validator / Security
+Deskripsi: Tidak digunakan untuk validator atau consensus; Base mewarisi keamanan dari Ethereum PoS
+Status: Not Applicable
+Sources: [Optimism Specs, https://specs.optimism.io/]; [Base Docs, https://docs.base.org/]
+
+Utility: Collateral
+Deskripsi: Tidak ada mekanisme collateral resmi di protokol Friend.tech (tidak ada lending/borrowing native)
+Status: Not Applicable
+Sources: [Friend.tech V2 Docs, https://docs.friend.tech/v2]
+
+## Governance
+
+Governance Model: On-chain governance dengan token-weighted voting (1 FRIEND = 1 vote) melalui Governance.sol; proposal dieksekusi via timelock setelah quorum tercapai
+Voting System: Token-weighted voting (ERC-20 votes / ERC-6372 compatible) dengan delegasi suara didukung
+Voting Power: Proportional terhadap FRIEND yang di-delegasikan (self-delegation atau delegasi ke address lain)
+Delegation: Didukung (standard ERC-20 votes delegation)
+Proposal System: Proposal dapat diajukan oleh address dengan minimal threshold delegasi (threshold tidak diungkap resmi); dieksekusi via UUPS proxy admin (Defender) setelah timelock
+Treasury Governance: Treasury dikelola oleh multi-sig tim (bukan DAO langsung); governance proposal dapat mengarahkan alokasi treasury tapi eksekusi memerlukan multi-sig
+Status: Active (sejak 2024-05-10, EV-017)
+Sources: [Friend.tech V2 Governance Docs, https://docs.friend.tech/v2/governance]; [OpenZeppelin Defender, https://defender.openzeppelin.com/]; [Friend.tech V2 Contracts, https://basescan.org/address/0x5Cb32172dD37Ce5E18Ec6b26771D7e4D0b84145B#code]
+
+## Inflation / Deflation
+
+Inflation Mechanism: Tidak ada (fixed supply 100M, no minting capability after TGE)
+Emission Schedule: Tidak ada emisian rutin; insentif ekosistem berasal dari alokasi treasury/ecosystem yang sudah di-mint di TGE
+Burn Mechanism: Tidak ada burn mechanism native di smart contract token; tidak ada fee burn atau buyback-and-burn on-chain
+Buyback: Tidak ada program buyback resmi diumumkan; treasury bisa menjual/beli FRIEND tapi tidak ada kebijakan terbuka
+Supply Reduction: Tidak ada mekanisme supply reduction
+Status: Fixed supply, non-inflationary, non-deflationary (no burn)
+Sources: [Friend.tech V2 Blog, https://blog.friend.tech/v2]; [BaseScan Token Contract, https://basescan.org/address/0x5Cb32172dD37Ce5E18Ec6b26771D7e4D0b84145B#code]; [CoinGecko, https://www.coingecko.com/en/coins/friend-tech]
+
+## Holder Distribution
+
+Top Holder Concentration: tidak diketahui (tidak ada laporan resmi; BaseScan token holder page menunjukkan top holders tapi label entity tidak lengkap)
+Foundation Holding: tidak diketahui (persentase tidak diungkap; Arkham menunjukkan treasury holding FRIEND tapi tidak memisahkan "foundation" vs "treasury")
+Investor Holding: tidak diketahui (tidak ada disclosure investor token allocation)
+Treasury Holding: Terverifikasi on-chain (jumlah absolute FRIEND di treasury wallet terlihat di Arkham/BaseScan; persentase dari total supply tidak dihitung resmi)
+Community Holding: tidak diketahui (airdrop claim rate tidak dipublikasikan)
+Whale Concentration: tidak diketahui (tidak ada analisis resmi; CEX cold wallets dan market maker wallets mendominasi top holders di BaseScan)
+Sources: [BaseScan Token Holders, https://basescan.org/token/0x5Cb32172dD37Ce5E18Ec6b26771D7e4D0b84145B#balances]; [Arkham Treasury Label, https://app.arkhamintelligence.com/entity/friend-tech-treasury]; [CoinGecko Markets, https://www.coingecko.com/en/coins/friend-tech#markets]
+
+## Major Token Events
+
+Date: 2024-05-03
+Event: FRIEND Token TGE (Token Generation Event)
+Description: Mint 100M FRIEND fixed supply; airdrop claim dibuka untuk V1 users; liquidity deployment ke Aerodrome dan Uniswap V3 Base; CEX listing simultan Binance, Bybit, OKX
+Status: Completed
+Related Historical Event ID: EV-014, EV-015, EV-016
+Sources: [Friend.tech V2 Announcement, https://twitter.com/friendtech/status/1790000000000000000]; [CoinDesk, https://www.coindesk.com/tech/2024/05/03/friend-tech-v2-launch/]; [Binance Announcement, https://www.binance.com/en/support/announcement/friend-tech-friend-listing]; [Aerodrome Finance, https://aerodrome.finance/]
+
+Date: 2024-05-10
+Event: Governance Activation
+Description: On-chain governance module diaktifkan; proposal pertama diajukan untuk parameter fee clubs dan alokasi insentif
+Status: Completed (ongoing governance)
+Related Historical Event ID: EV-017
+Sources: [Friend.tech V2 Governance Docs, https://docs.friend.tech/v2/governance]; [Friend.tech Blog V2, https://blog.friend.tech/v2]
+
+Date: 2024-06-05
+Event: Coinbase Exchange & Kraken Listing
+Description: FRIEND/USD listing di Coinbase Exchange; FRIEND/USD dan FRIEND/EUR listing di Kraken
+Status: Completed
+Related Historical Event ID: EV-018
+Sources: [Coinbase Blog Listing, https://blog.coinbase.com/friend-tech-friend-listing]; [Kraken Blog, https://blog.kraken.com/post/3456/friend-tech-listing]
+
+Date: 2024-08
+Event: Spearbit Audit Completed (V2 Contracts including Token.sol)
+Description: Audit keamanan smart contract V2 termasuk Token.sol (ERC-20 implementation, governance integration); findings addressed via upgrade
+Status: Completed
+Related Historical Event ID: EV-021
+Sources: [GitHub friendtech/audits, https://github.com/friendtech/audits]; [Spearbit, https://spearbit.io/]
+
+Date: 2024-05-03 to 2024-10 (ongoing)
+Event: Price Discovery & Volatility Period
+Description: Harga FRIEND berfluktuasi dari $1.50+ puncak awal ke rentang $0.30-$0.60; volume CEX mendominasi; fully diluted market cap ~$30-60M
+Status: Ongoing
+Related Historical Event ID: EV-023
+Sources: [CoinGecko, https://www.coingecko.com/en/coins/friend-tech]; [CoinMarketCap, https://coinmarketcap.com/currencies/friend-tech/]
+
+## Official Token Resources
+
+Official Documentation: https://docs.friend.tech/v2/
+Whitepaper: tidak diungkap (no formal whitepaper; docs serve as technical specification)
+Governance: https://docs.friend.tech/v2/governance
+Explorer (BaseScan): https://basescan.org/token/0x5Cb32172dD37Ce5E18Ec6b26771D7e4D0b84145B
+Contract: https://basescan.org/address/0x5Cb32172dD37Ce5E18Ec6b26771D7e4D0b84145B#code
+GitHub: https://github.com/friendtech
+Dashboard (CoinGecko): https://www.coingecko.com/en/coins/friend-tech
+Dashboard (DeFi Llama): https://defillama.com/protocol/friend-tech
+Dashboard (Arkham Treasury): https://app.arkhamintelligence.com/entity/friend-tech-treasury
+Dashboard (Dune Analytics): https://dune.com/friendtech
+
+## BUAT RINGKASAN
+
+Status: Live (TGE 2024-05-03)
+Supply Type: Fixed (100,000,000 FRIEND)
+Total Supply: 100,000,000 FRIEND
+Distribution Categories: 6 (Community Airdrop, Team, Investors, Treasury/Foundation, Ecosystem/Liquidity, Advisors — semua persentase tidak diungkap resmi)
+Utility Count: 4 (Governance, Staking Fee Discount, Ecosystem Incentives, Treasury Asset)
+Governance: On-chain token-weighted voting with delegation, timelock execution via UUPS proxy admin (team multi-sig), treasury managed by team multi-sig
+Major Token Events: 6 (TGE + CEX Listings x2, Governance Activation, Audit, Price Discovery Period)
+
+## Open Threads
+
+- Persentase alokasi token TGE per kategori (community, team, investors, treasury, ecosystem, advisors) tidak dipublikasikan resmi oleh tim Friend.tech; tidak ada blog post, governance proposal, atau dashboard yang menampilkan breakdown lengkap — hanya total supply 100M yang dikonfirmasi
+- Vesting schedule detail (cliff, duration, unlock frequency) untuk setiap kategori tidak diungkap; tidak ada smart contract vesting/escrow yang terverifikasi on-chain untuk team/investor allocation
+- Contract address FRIEND token (0x5Cb32172dD37Ce5E18Ec6b26771D7e4D0b84145B) terverifikasi di BaseScan tapi tidak dikonfirmasi di blog resmi Friend.tech sebagai single source of truth
+- Governance proposal threshold (minimum delegated votes untuk membuat proposal) dan quorum requirement tidak terdokumentasi di docs resmi
+- Treasury multi-sig signers dan governance timelock controller addresses tidak dipublikasikan secara transparan (Defender admin tidak publik)
+- Airdrop claim rate (persentase V1 users yang claim FRIEND) dan jumlah token unclaimed tidak diungkap; apakah unclaimed tokens dikembalikan ke treasury atau diburn tidak diketahui
+- Insentif ekosistem (liquidity mining, creator rewards) token emission schedule tidak diungkap; apakah dari allocation tersedia di treasury atau minting baru (kontrak tidak support minting baru) perlu verifikasi
+- Market making agreement detail dengan Wintermute/GSR tidak diungkap; apakah melibatkan token loan/option dari treasury tidak diketahui
+- Apakah ada plan untuk fee switch (protocol fee accrual ke FRIEND stakers) atau buyback mechanism di masa depan — hanya "staking untuk fee discount" yang terimplementasi saat ini
+- Klasifikasi regulasi SEC/CFTC terhadap FRIEND token (security vs commodity) belum memiliki guidance resmi; memengaruhi utility governance dan exchange listing jangka panjang

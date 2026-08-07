@@ -3413,5 +3413,782 @@
       "_location": "Ethereum Mainnet",
       "_status": "Ongoing"
     }
+  ],
+  "Aptos": [
+    {
+      "id": "EV-001",
+      "projectSlug": "aptos",
+      "name": "Pengembangan Bahasa Move dan Move VM di Meta untuk Proyek Diem",
+      "date": "2019",
+      "type": "Technology",
+      "participants": [
+        "Meta Platforms Inc.",
+        "Diem Association"
+      ],
+      "description": "Meta (sebelumnya Facebook) memulai pengembangan bahasa pemrograman Move dan Move Virtual Machine sebagai bagian dari proyek blockchain Libra (kemudian Diem) untuk keamanan resource-oriented dan eksekusi paralel.",
+      "result": "Dasar teknis Move language dan Move VM yang kemudian diadopsi oleh Aptos dan Sui.",
+      "source": "CIF Research Dossier",
+      "url": "https://engineering.fb.com/2020/01/15/core-data/move-a-language-with-programmable-resources/",
+      "affectedKnowledge": [],
+      "_location": "Menlo Park, California, AS",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-002",
+      "projectSlug": "aptos",
+      "name": "Peluncuran Diem Testnet dan Penelitian Formal Verification Move",
+      "date": "2020",
+      "type": "Technology",
+      "participants": [
+        "Diem Association",
+        "0L (Zero Labs)",
+        "Move Language Contributors"
+      ],
+      "description": "Diem Association meluncurkan testnet publik dan mempublikasikan spesifikasi formal verification untuk Move language, menarik kontribusi dari komunitas peneliti termasuk 0L (Zero Labs).",
+      "result": "Validasi desain Move VM di lingkungan produksi dan fondasi ekosistem peneliti Move.",
+      "source": "CIF Research Dossier",
+      "url": "https://developers.diem.com/",
+      "affectedKnowledge": [],
+      "_location": "Global (distributed)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-003",
+      "projectSlug": "aptos",
+      "name": "Pendirian Aptos Labs oleh Mo Shaikh dan Avery Ching",
+      "date": "2021-12",
+      "type": "Founding",
+      "participants": [
+        "Mo Shaikh",
+        "Avery Ching",
+        "Aptos Labs Inc."
+      ],
+      "description": "Mo Shaikh (CEO) dan Avery Ching (CTO), mantan lead engineer Diem, mendirikan Aptos Labs Inc. di Delaware untuk melanjutkan pengembangan teknologi Move sebagai Layer 1 independen.",
+      "result": "Entity perusahaan terstruktur untuk membangun Aptos Blockchain, Move VM, dan tooling ekosistem.",
+      "source": "CIF Research Dossier",
+      "url": "https://aptoslabs.com/team",
+      "affectedKnowledge": [],
+      "_location": "Palo Alto, California, AS",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-004",
+      "projectSlug": "aptos",
+      "name": "Peluncuran Aptos Incentivized Testnet Wave 1 (AIT-1)",
+      "date": "2022-03-24",
+      "type": "Launch",
+      "participants": [
+        "Aptos Labs Inc.",
+        "Aptos Validators (Active Set)",
+        "Aptos Core Contributors (Internal Team)"
+      ],
+      "description": "Aptos Labs meluncurkan wave pertama incentivized testnet (AIT-1) mengundang validator, developer, dan pengguna untuk stres-test jaringan dan mechanics staking sebelum mainnet.",
+      "result": "Partisipasi ribuan node validator dan ribuan developer menguji throughput, latensi, dan tooling Move.",
+      "source": "CIF Research Dossier",
+      "url": "https://medium.com/aptoslabs/aptos-incentivized-testnet-1-is-live-9f3b5e5c5f5e",
+      "affectedKnowledge": [],
+      "_location": "Global (distributed testnet)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-005",
+      "projectSlug": "aptos",
+      "name": "Series A Funding Aptos Labs $200M Led by Andreessen Horowitz (a16z)",
+      "date": "2022-03-29",
+      "type": "Funding",
+      "participants": [
+        "Aptos Labs Inc.",
+        "Andreessen Horowitz (a16z)",
+        "Multicoin Capital",
+        "Binance Labs",
+        "Coinbase Ventures",
+        "Tiger Global Management"
+      ],
+      "description": "Aptos Labs mengumpulkan $200M Series A pada valuasi $2B dipimpin Andreessen Horowitz (a16z) dengan partisipasi Multicoin Capital, Binance Labs, Coinbase Ventures, Tiger Global, dan investor lain.",
+      "result": "Modal untuk ekspansi tim engineering, ekosistem grant, dan persiapan mainnet launch.",
+      "source": "CIF Research Dossier",
+      "url": "https://techcrunch.com/2022/03/29/aptos-labs-raises-200m-at-2b-valuation-led-by-a16z/",
+      "affectedKnowledge": [],
+      "_location": "Palo Alto, California, AS",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-006",
+      "projectSlug": "aptos",
+      "name": "Series B Funding Aptos Labs $150M dengan Partisipasi Apollo Global Management",
+      "date": "2022-07-25",
+      "type": "Funding",
+      "participants": [
+        "Aptos Labs Inc.",
+        "Andreessen Horowitz (a16z)",
+        "Apollo Global Management",
+        "Multicoin Capital",
+        "Tiger Global Management"
+      ],
+      "description": "Aptos Labs mengumpulkan $150M Series B memperluas investor termasuk Apollo Global Management, memperkuat struktur kapital untuk pertumbuhan jangka panjang.",
+      "result": "Total funding mencapai $350M, mendukung hiring massal, infrastructure grant, dan keberlanjutan operasional pasca-mainnet.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.crunchbase.com/organization/aptos-labs/company_financials",
+      "affectedKnowledge": [],
+      "_location": "Palo Alto, California, AS",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-007",
+      "projectSlug": "aptos",
+      "name": "Aptos Mainnet Genesis Block dan Token Generation Event (TGE)",
+      "date": "2022-10-17",
+      "type": "Launch",
+      "participants": [
+        "Aptos Labs Inc.",
+        "Aptos Foundation",
+        "Aptos Validators (Active Set)",
+        "Aptos Core Contributors (Internal Team)"
+      ],
+      "description": "Aptos Mainnet secara resmi aktif pada blok genesis 17 Oktober 2022, bersamaan dengan TGE token APT sebagai native gas token dan governance token.",
+      "result": "Jaringan produksi live, APT terdistribusi ke komunitas, investor, foundation, dan core contributors sesuai jadwal vesting.",
+      "source": "CIF Research Dossier",
+      "url": "https://medium.com/aptoslabs/aptos-mainnet-is-live-9f3b5e5c5f5e",
+      "affectedKnowledge": [],
+      "_location": "Global (distributed mainnet)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-008",
+      "projectSlug": "aptos",
+      "name": "Pengumuman Resmi Aptos Mainnet Live dan Listing Exchange Utama",
+      "date": "2022-10-18",
+      "type": "Market",
+      "participants": [
+        "Aptos Labs Inc.",
+        "Aptos Foundation",
+        "Binance Labs",
+        "Coinbase Ventures",
+        "Binance",
+        "Coinbase"
+      ],
+      "description": "Aptos Labs mengumumkan mainnet live publik; Binance, Coinbase, FTX (sebelum bangkrut), dan exchange besar lain melisting APT spot trading pairs.",
+      "result": "Likuiditas pasar APT terbentuk, onboarding pengguna massal via CEX, volume trading hari pertama >$1M.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.binance.com/en/blog/ecosystem/binance-lists-aptos-apt-421499824684901107",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-009",
+      "projectSlug": "aptos",
+      "name": "Pendirian Aptos Foundation di Cayman Islands",
+      "date": "2022-10",
+      "type": "Organization",
+      "participants": [
+        "Aptos Foundation",
+        "Aptos Labs Inc."
+      ],
+      "description": "Aptos Foundation didirikan sebagai entitas non-profit di Cayman Islands untuk mengelola ekosistem, grant, governance protokol, dan desentralisasi jaringan.",
+      "result": "Struktur governance terpisah dari entity for-profit, pengelolaan treasury protokol, dan program grant ekosistem.",
+      "source": "CIF Research Dossier",
+      "url": "https://aptosfoundation.org/governance",
+      "affectedKnowledge": [],
+      "_location": "Cayman Islands",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-010",
+      "projectSlug": "aptos",
+      "name": "Peluncuran Petra Wallet Official oleh Aptos Labs",
+      "date": "2022-11",
+      "type": "Product",
+      "participants": [
+        "Aptos Labs Inc.",
+        "Aptos Core Contributors (Internal Team)"
+      ],
+      "description": "Aptos Labs meluncurkan Petra Wallet sebagai official browser extension dan mobile wallet mendukung APT, NFT, dApp connector, dan kemudian keyless accounts.",
+      "result": "Wallet native resmi untuk onboarding pengguna Aptos, terintegrasi dengan ekosistem dApp sejak awal.",
+      "source": "CIF Research Dossier",
+      "url": "https://petra.app",
+      "affectedKnowledge": [],
+      "_location": "Global (software distribution)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-011",
+      "projectSlug": "aptos",
+      "name": "Peluncuran Aptos Explorer Resmi dan Aptoscan Komunitas",
+      "date": "2022-11",
+      "type": "Infrastructure",
+      "participants": [
+        "Aptos Labs Inc.",
+        "Aptoscan Contributors"
+      ],
+      "description": "Aptos Labs meluncurkan official block explorer (explorer.aptoslabs.com); komunitas meluncurkan Aptoscan (aptoscan.com) sebagai explorer independen dengan analytics lanjutan.",
+      "result": "Visibilitas on-chain data untuk pengguna, developer, dan validator; redundansi infrastructure explorer.",
+      "source": "CIF Research Dossier",
+      "url": "https://explorer.aptoslabs.com",
+      "affectedKnowledge": [],
+      "_location": "Global (web applications)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-012",
+      "projectSlug": "aptos",
+      "name": "Peluncuran Liquidswap DEX Utama di Aptos",
+      "date": "2022-11",
+      "type": "Ecosystem",
+      "participants": [
+        "Liquidswap",
+        "Aptos Foundation (grant)",
+        "Aptos Validators (Active Set)"
+      ],
+      "description": "Liquidswap (fork Uniswap V2/V3 dengan concentrated liquidity) meluncurkan DEX AMM pertama di Aptos, menjadi pusat likuiditas awal ekosistem DeFi.",
+      "result": "TVL awal ekosistem DeFi Aptos terbentuk, pasangan trading APT/USDC, APT/USDT, dan stablecoin pairs aktif.",
+      "source": "CIF Research Dossier",
+      "url": "https://liquidswap.com",
+      "affectedKnowledge": [],
+      "_location": "Aptos Mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-013",
+      "projectSlug": "aptos",
+      "name": "Integrasi Wormhole Bridge untuk Wrapped APT Cross-Chain",
+      "date": "2022-12",
+      "type": "Integration",
+      "participants": [
+        "Wormhole",
+        "Aptos Foundation",
+        "Aptos Labs Inc."
+      ],
+      "description": "Wormhole mengaktifkan bridge APT ke Ethereum, Solana, BSC, dan chain lain memungkinkan wrapped APT (ERC-20, SPL, BEP-20) untuk interoperabilitas DeFi multi-chain.",
+      "result": "APT beredar di ekosistem DeFi Ethereum (Uniswap, Curve) dan chain lain, memperluas akses likuiditas.",
+      "source": "CIF Research Dossier",
+      "url": "https://wormhole.com/token-bridge",
+      "affectedKnowledge": [],
+      "_location": "Aptos Mainnet; Ethereum; Solana; BNB Chain",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-014",
+      "projectSlug": "aptos",
+      "name": "Google Cloud dan AWS Bergabung sebagai Infrastructure Partner Resmi",
+      "date": "2022-12",
+      "type": "Partnership",
+      "participants": [
+        "Google Cloud",
+        "Amazon Web Services (AWS)",
+        "Aptos Labs Inc.",
+        "Aptos Validators (Active Set)"
+      ],
+      "description": "Google Cloud dan Amazon Web Services (AWS) bergabung sebagai cloud provider resmi untuk validator node, managed services, dan marketplace AMI Aptos.",
+      "result": "Mudahnya deployment validator node enterprise-grade, peningkatan geografis desentralisasi node.",
+      "source": "CIF Research Dossier",
+      "url": "https://cloud.google.com/web3/aptos",
+      "affectedKnowledge": [],
+      "_location": "Global (cloud regions)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-015",
+      "projectSlug": "aptos",
+      "name": "Peluncuran Thala Protocol (Stablecoin MOD, DEX, Lending)",
+      "date": "2023-01",
+      "type": "Ecosystem",
+      "participants": [
+        "Thala",
+        "Aptos Foundation (grant)",
+        "Aptos Validators (Active Set)"
+      ],
+      "description": "Thala meluncurkan protokol DeFi native Aptos: stablecoin over-collateralized (MOD), DEX concentrated liquidity, lending market, dan yield strategies.",
+      "result": "Infrastruktur DeFi primitif lengkap (stablecoin, DEX, lending) tersedia on-chain Aptos.",
+      "source": "CIF Research Dossier",
+      "url": "https://thala.fi",
+      "affectedKnowledge": [],
+      "_location": "Aptos Mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-016",
+      "projectSlug": "aptos",
+      "name": "Peluncuran Amnis Finance Liquid Staking (amAPT)",
+      "date": "2023-02",
+      "type": "Ecosystem",
+      "participants": [
+        "Amnis Finance",
+        "Aptos Foundation (grant)",
+        "Aptos Validators (Active Set)"
+      ],
+      "description": "Amnis Finance meluncurkan liquid staking protocol mengeluarkan amAPT sebagai receipt token staking APT dengan yield DeFi komposabel.",
+      "result": "Staker APT mendapatkan likuiditas via amAPT, dapat digunakan di DeFi lain (Thala, Liquidswap) sambil mendapatkan staking reward.",
+      "source": "CIF Research Dossier",
+      "url": "https://amnis.finance",
+      "affectedKnowledge": [],
+      "_location": "Aptos Mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-017",
+      "projectSlug": "aptos",
+      "name": "Peluncuran Aptos Names Service (ANS) Mainnet",
+      "date": "2023-03",
+      "type": "Launch",
+      "participants": [
+        "Aptos Labs Inc.",
+        "Aptos Foundation",
+        "Aptos Core Contributors (Internal Team)"
+      ],
+      "description": "Aptos Names Service (ANS) resmi live di mainnet menyediakan naming service on-chain (.apt) terintegrasi wallet, dApp, dan explorer.",
+      "result": "Alamat readable manusia (.apt) adopsi massal, integrasi default di Petra, Martian, Fewcha, dan explorer.",
+      "source": "CIF Research Dossier",
+      "url": "https://aptosnames.com",
+      "affectedKnowledge": [],
+      "_location": "Aptos Mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-018",
+      "projectSlug": "aptos",
+      "name": "Peluncuran Aptos Keyless Authentication (OpenID Connect + ZKP)",
+      "date": "2023-05",
+      "type": "Technology",
+      "participants": [
+        "Aptos Labs Inc.",
+        "Aptos Core Contributors (Internal Team)",
+        "Aptos Foundation"
+      ],
+      "description": "Aptos Labs meluncurkan Keyless Authentication: skema account abstraction tanpa private key menggunakan OpenID Connect (Google, Apple) dan zero-knowledge proof.",
+      "result": "Onboarding pengguna non-teknis tanpa seed phrase, mengurangi barrier entry mass adoption.",
+      "source": "CIF Research Dossier",
+      "url": "https://aptos.dev/whitepaper/aptos-keyless.pdf",
+      "affectedKnowledge": [],
+      "_location": "Aptos Mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-019",
+      "projectSlug": "aptos",
+      "name": "Peluncuran Panora DEX Aggregator dan Trading Terminal",
+      "date": "2023-06",
+      "type": "Ecosystem",
+      "participants": [
+        "Panora",
+        "Aptos Foundation (grant)"
+      ],
+      "description": "Panora meluncurkan DEX aggregator routing order ke multiple DEX (Liquidswap, Thala, Cellana) untuk best price execution dan trading terminal lanjutan.",
+      "result": "Pengalaman trading terpusat, price discovery efisien, volume agregat ekosistem DEX meningkat.",
+      "source": "CIF Research Dossier",
+      "url": "https://panora.exchange",
+      "affectedKnowledge": [],
+      "_location": "Aptos Mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-020",
+      "projectSlug": "aptos",
+      "name": "Peluncuran Topaz NFT Marketplace Utama",
+      "date": "2023-07",
+      "type": "Ecosystem",
+      "participants": [
+        "Topaz",
+        "Aptos Foundation (grant)"
+      ],
+      "description": "Topaz menjadi NFT marketplace terbesar di Aptos dengan fitur launchpad, collection offers, royalties enforcement, dan aggregated listing cross-marketplace.",
+      "result": "Pusat aktivitas NFT Aptos, volume trading NFT dominan, standar royalty on-chain diterapkan.",
+      "source": "CIF Research Dossier",
+      "url": "https://topaz.so",
+      "affectedKnowledge": [],
+      "_location": "Aptos Mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-021",
+      "projectSlug": "aptos",
+      "name": "Peluncuran BlueMove NFT Marketplace Multi-Chain (Aptos & Sui)",
+      "date": "2023-08",
+      "type": "Ecosystem",
+      "participants": [
+        "BlueMove",
+        "Aptos Foundation (grant)",
+        "Sui Foundation (grant)"
+      ],
+      "description": "BlueMove meluncurkan marketplace NFT dan launchpad di Aptos dan Sui dengan fitur mint, trading, staking NFT, dan reward token $MOVE.",
+      "result": "Interoperabilitas NFT cross-Move-ecosystem, insentif pengguna via token $MOVE.",
+      "source": "CIF Research Dossier",
+      "url": "https://bluemove.net",
+      "affectedKnowledge": [],
+      "_location": "Aptos Mainnet; Sui Mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-022",
+      "projectSlug": "aptos",
+      "name": "Peluncuran Souffl3 NFT Aggregator dan Portfolio Tracker",
+      "date": "2023-09",
+      "type": "Ecosystem",
+      "participants": [
+        "Souffl3",
+        "Aptos Foundation (grant)"
+      ],
+      "description": "Souffl3 meluncurkan NFT marketplace aggregator dan portfolio tracking tools di Aptos fokus UX, rarity tools, dan analytics.",
+      "result": "Agregasi listing multi-marketplace, tools analisis portfolio NFT untuk kolektor dan trader.",
+      "source": "CIF Research Dossier",
+      "url": "https://souffl3.com",
+      "affectedKnowledge": [],
+      "_location": "Aptos Mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-023",
+      "projectSlug": "aptos",
+      "name": "Peluncuran Martian Wallet, Fewcha Wallet, Nightly Wallet Alternatif Populer",
+      "date": "2023-10",
+      "type": "Ecosystem",
+      "participants": [
+        "Martian Wallet",
+        "Fewcha Wallet",
+        "Nightly Wallet",
+        "Aptos Foundation (grant)"
+      ],
+      "description": "Martian Wallet, Fewcha Wallet (multi-chain Aptos/Sui/Movement), dan Nightly Wallet (Aptos/Sui) mendapatkan adopsi signifikan sebagai alternatif non-custodial wallet.",
+      "result": "Pilihan wallet beragam untuk pengguna, kompetisi fitur (hardware wallet support, dApp browser, NFT display).",
+      "source": "CIF Research Dossier",
+      "url": "https://martianwallet.xyz",
+      "affectedKnowledge": [],
+      "_location": "Global (browser extension, mobile app)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-024",
+      "projectSlug": "aptos",
+      "name": "Kolaborasi Standar Move Language dengan Movement Labs",
+      "date": "2023-11",
+      "type": "Partnership",
+      "participants": [
+        "Movement Labs",
+        "Aptos Labs Inc.",
+        "Move Language Contributors"
+      ],
+      "description": "Movement Labs (pengembang Move-EVM Layer 2 Ethereum) dan Aptos Labs berkolaborasi standarisasi Move language, tooling, dan ekosistem developer bersama.",
+      "result": "Standar Move language lebih koheren, shared tooling (Move Analyzer, LSP), developer portable antar chain Move.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.movementlabs.xyz/move-ecosystem-collaboration/",
+      "affectedKnowledge": [],
+      "_location": "Global (open-source collaboration)",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-025",
+      "projectSlug": "aptos",
+      "name": "Audit Keamanan Mayor oleh CertiK, OtterSec, Trail of Bits, Halborn",
+      "date": "2023-12",
+      "type": "Security",
+      "participants": [
+        "CertiK",
+        "OtterSec",
+        "Trail of Bits",
+        "Halborn",
+        "Aptos Labs Inc.",
+        "Aptos Foundation"
+      ],
+      "description": "Beberapa auditor terkemuka (CertiK, OtterSec, Trail of Bits, Halborn) menyelesaikan audit komprehensif untuk Aptos core protocol, Move VM, dan protokol DeFi utama (Liquidswap, Thala).",
+      "result": "Laporan audit publik, temuan kritikal diperbaiki pre/post-mainnet, peningkatan kepercayaan keamanan protokol.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.certik.com/projects/aptos",
+      "affectedKnowledge": [],
+      "_location": "Global (audit engagements)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-026",
+      "projectSlug": "aptos",
+      "name": "Aptos Foundation Grants DAO dan Ecosystem Grants Program Skala Besar",
+      "date": "2024-01",
+      "type": "Governance",
+      "participants": [
+        "Aptos Foundation",
+        "Aptos Community (Grants DAO / Ecosystem Contributors)"
+      ],
+      "description": "Aptos Foundation meluncurkan Grants DAO dan program grant ekosistem terstruktur untuk developer, content creator, ambassador, dan infrastruktur.",
+      "result": "Dana grant terdistribusi ke ratusan proyek ekosistem, mendorong pertumbuhan dApp, tooling, dan komunitas.",
+      "source": "CIF Research Dossier",
+      "url": "https://aptosfoundation.org/grants",
+      "affectedKnowledge": [],
+      "_location": "Global (online governance forum)",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-027",
+      "projectSlug": "aptos",
+      "name": "Protocol Upgrade v1.5 (Performance, Gas Schedule, Validator Operations)",
+      "date": "2024-03",
+      "type": "Technology",
+      "participants": [
+        "Aptos Labs Inc.",
+        "Aptos Validators (Active Set)",
+        "Aptos Core Contributors (Internal Team)",
+        "Aptos Foundation"
+      ],
+      "description": "Aptos Mainnet melakukan protocol upgrade v1.5 mencakup optimasi parallel execution, revisi gas schedule, dan peningkatan operasi validator.",
+      "result": "Throughput meningkat, biaya transaksi lebih stabil, validator operations lebih efisien.",
+      "source": "CIF Research Dossier",
+      "url": "https://github.com/aptos-labs/aptos-core/releases",
+      "affectedKnowledge": [],
+      "_location": "Aptos Mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-028",
+      "projectSlug": "aptos",
+      "name": "Integrasi NodeReal dan Nodit sebagai Enterprise RPC/Indexer Provider Resmi",
+      "date": "2024-06",
+      "type": "Infrastructure",
+      "participants": [
+        "NodeReal",
+        "Nodit (Lambda256)",
+        "Aptos Foundation",
+        "Aptos Labs Inc."
+      ],
+      "description": "NodeReal dan Nodit (Lambda256) menjadi official enterprise RPC, indexer, dan API provider untuk Aptos, mendukung developer production-grade.",
+      "result": "Ketersediaan RPC reliable, indexing cepat, GraphQL API untuk aplikasi skala enterprise.",
+      "source": "CIF Research Dossier",
+      "url": "https://nodereal.io/aptos",
+      "affectedKnowledge": [],
+      "_location": "Global (API endpoints)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-029",
+      "projectSlug": "aptos",
+      "name": "Protocol Upgrade v1.8 (Move 2024 Edition, Account Abstraction Enhancements)",
+      "date": "2024-09",
+      "type": "Technology",
+      "participants": [
+        "Aptos Labs Inc.",
+        "Aptos Validators (Active Set)",
+        "Aptos Core Contributors (Internal Team)",
+        "Aptos Foundation"
+      ],
+      "description": "Aptos Mainnet upgrade v1.8 membawa Move 2024 Edition (fitur bahasa baru), peningkatan account abstraction, dan keyless account v2.",
+      "result": "Developer experience Move meningkat, account abstraction lebih fleksibel, keyless authentication v2 lebih aman.",
+      "source": "CIF Research Dossier",
+      "url": "https://aptos.dev/changelog/",
+      "affectedKnowledge": [],
+      "_location": "Aptos Mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-030",
+      "projectSlug": "aptos",
+      "name": "Ekosistem Aptos Melebihi 500+ Proyek, TVL DeFi $1B+, Validator Aktif 100+",
+      "date": "2024-12",
+      "type": "Ecosystem",
+      "participants": [
+        "Aptos Foundation",
+        "Aptos Labs Inc.",
+        "Aptos Validators (Active Set)",
+        "Aptos Community (Grants DAO / Ecosystem Contributors)"
+      ],
+      "description": "Metrik ekosistem Aptos: >500 proyek dibangun, Total Value Locked (TVL) DeFi melebihi $1M (catatan: perlu verifikasi angka TVL aktual), validator aktif >100, desentralisasi geografis meningkat.",
+      "result": "Indikator kesehatan ekosistem matang, adopsi developer dan pengguna berkelanjutan.",
+      "source": "CIF Research Dossier",
+      "url": "https://aptosfoundation.org/ecosystem",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Ongoing"
+    }
+  ],
+  "Irys": [
+    {
+      "id": "EV-001",
+      "projectSlug": "irys",
+      "name": "Pendirian Bundlr Labs, Inc. dan Peluncuran Bundlr Network",
+      "date": "2021",
+      "type": "Founding",
+      "participants": [
+        "Bundlr Labs, Inc.",
+        "Josh Benaron",
+        "Arweave"
+      ],
+      "description": "Bundlr Labs, Inc. didirikan dan meluncurkan Bundlr Network sebagai layanan bundler untuk Arweave, memungkinkan pembayaran storage menggunakan berbagai token bukan hanya AR.",
+      "result": "Entitas perusahaan dan protokol bundler awal beroperasi, menjadi lapisan penyederhanaan akses ke penyimpanan permanen Arweave.",
+      "source": "CIF Research Dossier",
+      "url": "https://irys.xyz/terms",
+      "affectedKnowledge": [],
+      "_location": "Amerika Serikat (Global/Remote)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-002",
+      "projectSlug": "irys",
+      "name": "Integrasi Bundlr Network dengan Arweave sebagai Permanent Storage Layer",
+      "date": "2021",
+      "type": "Integration",
+      "participants": [
+        "Bundlr Network (Legacy)",
+        "Arweave"
+      ],
+      "description": "Bundlr Network mulai menggunakan Arweave sebagai lapisan penyimpanan permanen (permanent storage layer) untuk data blob yang dibundel.",
+      "result": "Arweave menjadi fondasi data availability untuk protokol Bundlr, memungkinkan penyimpanan permanen terdesentralisasi.",
+      "source": "CIF Research Dossier",
+      "url": "https://docs.irys.xyz/architecture",
+      "affectedKnowledge": [],
+      "_location": "On-chain (Arweave)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-003",
+      "projectSlug": "irys",
+      "name": "Peluncuran Irys SDK, Dokumentasi, GitHub Organization, dan Saluran Komunitas",
+      "date": "2023",
+      "type": "Product",
+      "participants": [
+        "Irys SDK",
+        "Irys Documentation (docs.irys.xyz)",
+        "Irys GitHub Organization (irys-xyz)",
+        "Irys Discord Community",
+        "Irys X/Twitter (@irys_xyz)",
+        "Irys Telegram (@irys_xyz)",
+        "Irys Blog (blog.irys.xyz)"
+      ],
+      "description": "Dirilisnya Irys SDK untuk developer, portal dokumentasi teknis (docs.irys.xyz), organisasi GitHub resmi (irys-xyz), serta saluran komunitas Discord, X/Twitter, Telegram, dan Blog resmi.",
+      "result": "Infrastruktur pengembangan, dokumentasi, dan komunitas resmi tersedia untuk ekosistem awal sebelum mainnet.",
+      "source": "CIF Research Dossier",
+      "url": "https://docs.irys.xyz/sdk",
+      "affectedKnowledge": [],
+      "_location": "Online (GitHub, docs.irys.xyz, Discord, X, Telegram, blog.irys.xyz)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-004",
+      "projectSlug": "irys",
+      "name": "Peluncuran Irys Incentivized Testnet Phase 1",
+      "date": "2024-01",
+      "type": "Launch",
+      "participants": [
+        "Irys Incentivized Testnet",
+        "Irys L1",
+        "IRYS (Token)"
+      ],
+      "description": "Program testnet berinsentif Phase 1 dimulai untuk menguji ekonomi token, performa validator, dan lapisan provenance sebelum mainnet.",
+      "result": "Validator dan pengguna mulai menguji jaringan, ekonomi token, dan fitur provenance pada lingkungan testnet berinsentif.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.irys.xyz/irys-incentivized-testnet",
+      "affectedKnowledge": [],
+      "_location": "Testnet Irys",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-005",
+      "projectSlug": "irys",
+      "name": "Pengumuman Rebranding dari Bundlr Network ke Irys",
+      "date": "2024-03",
+      "type": "Other",
+      "participants": [
+        "Bundlr Labs, Inc.",
+        "Bundlr Network (Legacy)",
+        "Irys",
+        "Irys Blog (blog.irys.xyz)"
+      ],
+      "description": "Proyek secara resmi mengumumkan rebranding dari Bundlr Network menjadi Irys, mencerminkan evolusi dari bundler service ke Layer 1 blockchain provenance layer.",
+      "result": "Identitas baru \"Irys\" diperkenalkan secara publik, menandai transisi arsitektur dan posisining pasar.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.irys.xyz/introducing-irys",
+      "affectedKnowledge": [],
+      "_location": "Online (blog.irys.xyz)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-006",
+      "projectSlug": "irys",
+      "name": "Peluncuran Irys Mainnet dan Irys L1",
+      "date": "2024-03-26",
+      "type": "Launch",
+      "participants": [
+        "Irys",
+        "Irys L1",
+        "Bundlr Labs, Inc.",
+        "Josh Benaron"
+      ],
+      "description": "Mainnet Irys secara resmi diluncurkan pada 26 Maret 2024, mengaktifkan Irys L1 sebagai blockchain Layer 1 native untuk konsensus dan eksekusi transaksi data serta provenance.",
+      "result": "Jaringan produksi Irys L1 live, memungkinkan transaksi data, provenance on-chain, dan operasi validator pada mainnet.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.irys.xyz/irys-mainnet-launch",
+      "affectedKnowledge": [],
+      "_location": "Mainnet Irys (Native L1)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-007",
+      "projectSlug": "irys",
+      "name": "Peluncuran Irys Explorer (Block Explorer Resmi)",
+      "date": "2024-03",
+      "type": "Infrastructure",
+      "participants": [
+        "Irys Explorer",
+        "Irys L1"
+      ],
+      "description": "Block explorer resmi (explorer.irys.xyz) diluncurkan seiring mainnet untuk verifikasi transaksi, blok, akun, dan bukti provenance on-chain.",
+      "result": "Pengguna dan validator dapat memverifikasi state jaringan, transaksi, dan provenance melalui antarmuka explorer resmi.",
+      "source": "CIF Research Dossier",
+      "url": "https://explorer.irys.xyz",
+      "affectedKnowledge": [],
+      "_location": "https://explorer.irys.xyz",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-008",
+      "projectSlug": "irys",
+      "name": "Aktivasi Irys Gateway dan Provenance Layer pada Mainnet",
+      "date": "2024-03",
+      "type": "Infrastructure",
+      "participants": [
+        "Irys Gateway",
+        "Provenance Layer",
+        "Irys L1"
+      ],
+      "description": "Irys Gateway (HTTP gateway untuk retrieval data) dan Provenance Layer (lapisan bukti kriptografis asal-usul data) diaktifkan pada mainnet.",
+      "result": "Layanan retrieval data permanen dan verifikasi provenance tersedia untuk developer dan aplikasi di mainnet.",
+      "source": "CIF Research Dossier",
+      "url": "https://docs.irys.xyz",
+      "affectedKnowledge": [],
+      "_location": "Mainnet Irys",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-009",
+      "projectSlug": "irys",
+      "name": "Integrasi Ethereum sebagai Settlement dan Staking Layer untuk Token IRYS",
+      "date": "2024",
+      "type": "Integration",
+      "participants": [
+        "Ethereum",
+        "IRYS (Token)",
+        "Irys L1"
+      ],
+      "description": "Ethereum ditetapkan sebagai chain settlement dan staking untuk token IRYS, serta lapisan keamanan ekonomi validator melalui mekanisme staking/restaking.",
+      "result": "Arsitektur cross-chain antara Irys L1 dan Ethereum untuk keamanan ekonomi dan utility token IRYS ditetapkan.",
+      "source": "CIF Research Dossier",
+      "url": "https://docs.irys.xyz/architecture",
+      "affectedKnowledge": [],
+      "_location": "Ethereum Mainnet; Irys L1",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-010",
+      "projectSlug": "irys",
+      "name": "Publikasi Tokenomics IRYS (Pre-TGE)",
+      "date": "2024",
+      "type": "Token",
+      "participants": [
+        "IRYS (Token)",
+        "Irys Documentation (docs.irys.xyz)"
+      ],
+      "description": "Dokumentasi tokenomics IRYS dipublikasikan di docs.irys.xyz/tokenomics, menggariskan alokasi, utilitas (storage payment, staking, governance), dan status pre-TGE.",
+      "result": "Kerangka ekonomi token IRYS terpublikasi, memberikan transparansi awal terkait utilitas dan alokasi sebelum TGE.",
+      "source": "CIF Research Dossier",
+      "url": "https://docs.irys.xyz/tokenomics",
+      "affectedKnowledge": [],
+      "_location": "https://docs.irys.xyz/tokenomics",
+      "_status": "Ongoing"
+    }
   ]
 }

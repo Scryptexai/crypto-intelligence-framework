@@ -1,0 +1,1385 @@
+PROJECT: EOS
+
+Event ID
+
+EV-001
+
+Date
+
+2017-05-01
+
+Event Name
+
+Pendirian Block.one
+
+Event Type
+
+Founding
+
+Description
+
+Block.one didirikan sebagai perusahaan teknologi blockchain di Cayman Islands oleh Brendan Blumer, Dan Larimer, dan Brock Pierce untuk mengembangkan protokol EOSIO dan mengadakan distribusi token EOS.
+
+Participants
+
+Block.one; Brendan Blumer; Dan Larimer; Brock Pierce
+
+Location
+
+Cayman Islands
+
+Status
+
+Completed
+
+Immediate Result
+
+Entitas legal Block.one terbentuk untuk memulai pengembangan EOSIO dan persiapan ICO token EOS.
+
+Sources
+
+https://block.one/terms-of-use/
+
+https://www.bloomberg.com/profile/person/18563544
+
+---
+
+Event ID
+
+EV-002
+
+Date
+
+2017-06-26
+
+Event Name
+
+Mulai Distribusi Token EOS (ICO Tahap 1)
+
+Event Type
+
+Token
+
+Description
+
+Block.one memulai distribusi token EOS melalui smart contract di Ethereum mainnet; periode distribusi berlangsung 341 hari hingga 1 Juni 2018 dengan total 1 miliar token dialokasikan.
+
+Participants
+
+Block.one; eosio.token Contract (Ethereum)
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Token EOS ERC-20 mulai didistribusikan ke peserta ICO; kontrak distribusi terkunci di blockchain Ethereum.
+
+Sources
+
+https://github.com/EOSIO/eos/blob/master/contracts/eosio.token/eosio.token.cpp
+
+https://www.sec.gov/litigation/complaints/2019/pr2019-197.pdf
+
+---
+
+Event ID
+
+EV-003
+
+Date
+
+2017-10-01
+
+Event Name
+
+Rilis Whitepaper EOSIO Technical
+
+Event Type
+
+Technology
+
+Description
+
+Block.one mempublikasikan whitepaper teknis EOSIO yang mendeskripsikan arsitektur Delegated Proof of Stake (DPoS), paralelisme eksekusi, dan model resource (CPU, NET, RAM).
+
+Participants
+
+Block.one; Dan Larimer
+
+Location
+
+https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md
+
+Status
+
+Completed
+
+Immediate Result
+
+Spesifikasi teknis protokol EOSIO tersedia publik untuk review komunitas dan pengembang.
+
+Sources
+
+https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md
+
+---
+
+Event ID
+
+EV-004
+
+Date
+
+2018-01-31
+
+Event Name
+
+Rilis Dawn 1.0 (Testnet Pertama)
+
+Event Type
+
+Launch
+
+Description
+
+Block.one merilis Dawn 1.0 sebagai implementasi testnet pertama perangkat lunak EOSIO; memvalidasi arsitektur DPoS dan konsensus BFT-DPoS di lingkungan live.
+
+Participants
+
+Block.one
+
+Location
+
+https://block.one/blog/block-one-releases-dawn-1-0/
+
+Status
+
+Completed
+
+Immediate Result
+
+Testnet pertama EOSIO beroperasi; pengembang mulai mencoba smart contract dan arsitektur resource.
+
+Sources
+
+https://block.one/blog/block-one-releases-dawn-1-0/
+
+---
+
+Event ID
+
+EV-005
+
+Date
+
+2018-03-01
+
+Event Name
+
+Rilis Dawn 2.0
+
+Event Type
+
+Technology
+
+Description
+
+Block.one merilis Dawn 2.0 dengan perbaikan performa, API RPC, dan dukungan multi-threading untuk eksekusi transaksi paralel.
+
+Participants
+
+Block.one
+
+Location
+
+https://block.one/blog/block-one-releases-dawn-2-0/
+
+Status
+
+Completed
+
+Immediate Result
+
+Testnet versi kedua dengan stabilitas dan fitur pengembang yang ditingkatkan.
+
+Sources
+
+https://block.one/blog/block-one-releases-dawn-2-0/
+
+---
+
+Event ID
+
+EV-006
+
+Date
+
+2018-04-01
+
+Event Name
+
+Rilis Dawn 3.0
+
+Event Type
+
+Technology
+
+Description
+
+Dawn 3.0 memperkenalkan sistem akun berbasis nama manusia (readable account names), perbaikan voting BP, dan manajemen resource RAM.
+
+Participants
+
+Block.one
+
+Location
+
+https://block.one/blog/block-one-releases-dawn-3-0/
+
+Status
+
+Completed
+
+Immediate Result
+
+Model akun dan resource yang akan digunakan mainnet mulai matang.
+
+Sources
+
+https://block.one/blog/block-one-releases-dawn-3-0/
+
+---
+
+Event ID
+
+EV-007
+
+Date
+
+2018-05-01
+
+Event Name
+
+Rilis Dawn 4.0 (Release Candidate)
+
+Event Type
+
+Technology
+
+Description
+
+Dawn 4.0 sebagai release candidate untuk mainnet; mencakup finalisasi konsensus, sistem voting 21 BP, dan parameter inflasi token.
+
+Participants
+
+Block.one
+
+Location
+
+https://block.one/blog/block-one-releases-dawn-4-0/
+
+Status
+
+Completed
+
+Immediate Result
+
+Kode siap produksi untuk peluncuran mainnet oleh Block Producers terpilih.
+
+Sources
+
+https://block.one/blog/block-one-releases-dawn-4-0/
+
+---
+
+Event ID
+
+EV-008
+
+Date
+
+2018-06-01
+
+Event Name
+
+Berakhirnya Periode Distribusi Token EOS (ICO)
+
+Event Type
+
+Token
+
+Description
+
+Periode distribusi token EOS berlangsung 341 hari secara resmi berakhir; total 1 miliar token EOS telah didistribusikan ke peserta ICO melalui kontrak Ethereum.
+
+Participants
+
+Block.one; eosio.token Contract (Ethereum)
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Supply awal token EOS ERC-20 finalisasi; persiapan snapshot untuk genesis mainnet.
+
+Sources
+
+https://www.sec.gov/litigation/complaints/2019/pr2019-197.pdf
+
+https://github.com/EOSIO/eos/blob/master/contracts/eosio.token/eosio.token.cpp
+
+---
+
+Event ID
+
+EV-009
+
+Date
+
+2018-06-14
+
+Event Name
+
+Peluncuran EOS Mainnet
+
+Event Type
+
+Launch
+
+Description
+
+Jaringan EOS Mainnet secara resmi diluncurkan setelah 21 Block Producer terpilih menghasilkan blok genesis; Block.one menyerahkan kode sumber ke komunitas.
+
+Participants
+
+Block.one; Block Producers (BP) Collective; EOS Mainnet
+
+Location
+
+https://www.coindesk.com/markets/2018/06/14/eos-mainnet-launches-after-block-producers-vote/
+
+Status
+
+Completed
+
+Immediate Result
+
+EOS Mainnet live dengan 21 BP aktif; token EOS native migrasi dari ERC-20 ke mainnet via snapshot.
+
+Sources
+
+https://www.coindesk.com/markets/2018/06/14/eos-mainnet-launches-after-block-producers-vote/
+
+https://eosnetwork.com/
+
+---
+
+Event ID
+
+EV-010
+
+Date
+
+2018-06-15
+
+Event Name
+
+Aktivasi Sistem Voting BP dan Inflasi
+
+Event Type
+
+Governance
+
+Description
+
+Kontrak eosio.system diaktifkan; pemegang token mulai voting Block Producer, staking CPU/NET, dan membeli RAM; inflasi 5% tahunan mulai dialokasikan (1% BP, 4% savings/disburn nanti).
+
+Participants
+
+Block Producers (BP) Collective; eosio.system Contract; EOS Mainnet
+
+Location
+
+EOS Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Mekanisme governance on-chain berfungsi; BP mulai menerima reward inflasi 1%.
+
+Sources
+
+https://github.com/EOSIO/eos/blob/master/contracts/eosio.system/eosio.system.cpp
+
+https://eosauthority.com/contract/eosio.system
+
+---
+
+Event ID
+
+EV-011
+
+Date
+
+2018-11-01
+
+Event Name
+
+Rilis EOSIO 1.0 (Versi Produksi Pertama)
+
+Event Type
+
+Technology
+
+Description
+
+Block.one merilis EOSIO 1.0 sebagai versi stabil pertama untuk deployment produksi; termasuk hardening keamanan dan optimisasi WASM runtime.
+
+Participants
+
+Block.one
+
+Location
+
+https://github.com/EOSIO/eos/releases/tag/v1.0.0
+
+Status
+
+Completed
+
+Immediate Result
+
+Standar perangkat lunak node untuk BP dan pengembang ekosistem.
+
+Sources
+
+https://github.com/EOSIO/eos/releases/tag/v1.0.0
+
+---
+
+Event ID
+
+EV-012
+
+Date
+
+2019-02-01
+
+Event Name
+
+Peluncuran Voice (Beta) oleh Block.one
+
+Event Type
+
+Product
+
+Description
+
+Block.one meluncurkan platform media sosial Voice di atas EOS Mainnet dengan model tokenisasi perhatian dan verifikasi identitas KYC.
+
+Participants
+
+Block.one; Voice; EOS Mainnet
+
+Location
+
+https://block.one/blog/voice-launches-beta/
+
+Status
+
+Cancelled
+
+Immediate Result
+
+Voice beta live; namun adopsi rendah dan biaya operasional tinggi.
+
+Sources
+
+https://block.one/blog/voice-launches-beta/
+
+---
+
+Event ID
+
+EV-013
+
+Date
+
+2019-09-30
+
+Event Name
+
+Penyelesaian Kasus SEC vs Block.one
+
+Event Type
+
+Legal
+
+Description
+
+SEC menyelesaikan tuntutan terhadap Block.one atas penjualan token EOS tidak terdaftar; Block.one membayar denda $24 juta tanpa mengakui atau menolak tuduhan.
+
+Participants
+
+U.S. Securities and Exchange Commission (SEC); Block.one
+
+Location
+
+https://www.sec.gov/news/press-release/2019-197
+
+Status
+
+Completed
+
+Immediate Result
+
+Kecamasan hukum federal AS atas ICO EOS terselesaikan; Block.one melanjutkan operasional.
+
+Sources
+
+https://www.sec.gov/news/press-release/2019-197
+
+https://www.sec.gov/litigation/complaints/2019/pr2019-197.pdf
+
+---
+
+Event ID
+
+EV-014
+
+Date
+
+2020-02-10
+
+Event Name
+
+Penutupan Platform Voice
+
+Event Type
+
+Product
+
+Description
+
+Block.one resmi menutup platform Voice setelah kurang dari satu tahun operasi; aset dan tim dialihkan ke proyek lain.
+
+Participants
+
+Block.one; Voice
+
+Location
+
+https://www.coindesk.com/business/2021/02/10/block-one-shuts-down-voice-social-media-platform/
+
+Status
+
+Completed
+
+Immediate Result
+
+Voice dihentikan; komunitas EOS kehilangan aplikasi flagship Block.one.
+
+Sources
+
+https://www.coindesk.com/business/2021/02/10/block-one-shuts-down-voice-social-media-platform/
+
+---
+
+Event ID
+
+EV-015
+
+Date
+
+2021-01-11
+
+Event Name
+
+Dan Larimer Keluar dari Block.one
+
+Event Type
+
+Organization
+
+Description
+
+Dan Larimer (CTO dan arsitek EOSIO) mengumumkan keluar dari Block.one untuk mengejar proyek pribadi; mengakhiri peran teknis langsungnya di protokol.
+
+Participants
+
+Dan Larimer; Block.one
+
+Location
+
+https://www.coindesk.com/business/2021/01/11/dan-larimer-leaves-block-one/
+
+Status
+
+Completed
+
+Immediate Result
+
+Kepemimpinan teknis Block.one beralih; komunitas mulai mendorong mandiri pengembangan protokol.
+
+Sources
+
+https://www.coindesk.com/business/2021/01/11/dan-larimer-leaves-block-one/
+
+---
+
+Event ID
+
+EV-016
+
+Date
+
+2021-03-01
+
+Event Name
+
+Rebranding EOSIO Menjadi Antelope Protocol
+
+Event Type
+
+Technology
+
+Description
+
+Komunitas dan kontributor utama memutuskan rebranding perangkat lunak node dari "EOSIO" ke "Antelope" untuk memisahkan identitas protokol dari Block.one; repositori dipindah ke AntelopeIO.
+
+Participants
+
+EOS Network Foundation Core Team; Block Producers (BP) Collective; Antelope Protocol (Leap Node Software)
+
+Location
+
+https://github.com/AntelopeIO/leap
+
+Status
+
+Completed
+
+Immediate Result
+
+Protokol bersifat netral vendor; fondasi untuk governance komunitas mandiri.
+
+Sources
+
+https://github.com/AntelopeIO/leap
+
+---
+
+Event ID
+
+EV-017
+
+Date
+
+2021-09-22
+
+Event Name
+
+Pembentukan EOS Network Foundation (ENF)
+
+Event Type
+
+Foundation
+
+Description
+
+Komunitas EOS meluncurkan EOS Network Foundation (ENF) sebagai entitas non-profit di Cayman Islands untuk mengelola pengembangan protokol, pertumbuhan ekosistem, dan treasury jaringan.
+
+Participants
+
+EOS Network Foundation (ENF); Yves La Rose; Block Producers (BP) Collective
+
+Location
+
+https://www.coindesk.com/business/2021/09/22/eos-community-launches-foundation-to-take-over-from-block-one/
+
+Status
+
+Completed
+
+Immediate Result
+
+ENF menjadi entitas pengelola resmi jaringan EOS; menerima alokasi inflasi 1% tahunan dari eosio.system.
+
+Sources
+
+https://www.coindesk.com/business/2021/09/22/eos-community-launches-foundation-to-take-over-from-block-one/
+
+https://eosnetwork.com/foundation/
+
+---
+
+Event ID
+
+EV-018
+
+Date
+
+2021-10-01
+
+Event Name
+
+Rilis Antelope Leap 3.1 (Versi Mayor Pertama Pasca-ENF)
+
+Event Type
+
+Technology
+
+Description
+
+ENF merilis Antelope Leap 3.1 dengan perbaikan performa, keamanan, dan kompatibilitas tooling; versi ini menjadi baseline node software untuk BP.
+
+Participants
+
+EOS Network Foundation Core Team; Antelope Protocol (Leap Node Software)
+
+Location
+
+https://github.com/AntelopeIO/leap/releases/tag/v3.1.0
+
+Status
+
+Completed
+
+Immediate Result
+
+Node software standar baru diadopsi BP; pengembangan dilanjutkan oleh ENF dan kontributor komunitas.
+
+Sources
+
+https://github.com/AntelopeIO/leap/releases/tag/v3.1.0
+
+---
+
+Event ID
+
+EV-019
+
+Date
+
+2022-04-01
+
+Event Name
+
+Peluncuran EOS EVM Mainnet
+
+Event Type
+
+Launch
+
+Description
+
+ENF meluncurkan EOS EVM — lingkungan eksekusi kompatibel Ethereum (EVM) yang berjalan di atas EOS Mainnet — memungkinkan deployment kontrak Solidity/Vyper asli.
+
+Participants
+
+EOS Network Foundation Core Team; EOS EVM; EOS Mainnet
+
+Location
+
+https://eosnetwork.com/ecosystem/eos-evm/
+
+Status
+
+Completed
+
+Immediate Result
+
+Pengembang Ethereum dapat memigrasikan dApp ke EOS dengan perubahan minimal; interoperabilitas ERC-20 native.
+
+Sources
+
+https://eosnetwork.com/ecosystem/eos-evm/
+
+https://github.com/eosnetworkfoundation/eos-evm
+
+---
+
+Event ID
+
+EV-020
+
+Date
+
+2022-06-14
+
+Event Name
+
+Upgrade Hard Fork "Spring" / EOSIO 3.0 / Leap 4.0
+
+Event Type
+
+Technology
+
+Description
+
+Hard fork terkoordinasi oleh BP dan ENF mengaktifkan fitur Spring SDK, perbaikan RAM market, dan peningkatan throughput; versi node naik ke Leap 4.0.
+
+Participants
+
+Block Producers (BP) Collective; EOS Network Foundation Core Team; Antelope Protocol (Leap Node Software)
+
+Location
+
+https://github.com/AntelopeIO/leap/releases/tag/v4.0.0
+
+Status
+
+Completed
+
+Immediate Result
+
+Protokol diperbarui dengan SDK modern (Spring) dan ekonomi RAM yang direvisi.
+
+Sources
+
+https://github.com/AntelopeIO/leap/releases/tag/v4.0.0
+
+https://eosnetwork.com/ecosystem/
+
+---
+
+Event ID
+
+EV-021
+
+Date
+
+2022-09-01
+
+Event Name
+
+Rilis Spring SDK (f.k.a. EOS SDK/CDT)
+
+Event Type
+
+Product
+
+Description
+
+ENF merilis Spring SDK sebagai toolkit pengembang baru untuk smart contract C++ di Antelope; menggantikan CDT lama dengan ergonomi modern dan tooling terintegrasi.
+
+Participants
+
+EOS Network Foundation Core Team; Spring SDK (f.k.a. EOS SDK/CDT)
+
+Location
+
+https://github.com/eosnetworkfoundation/spring
+
+Status
+
+Completed
+
+Immediate Result
+
+Pengalaman pengembang (DX) ditingkatkan; dukungan C++20, CMake, dan testing framework bawaan.
+
+Sources
+
+https://github.com/eosnetworkfoundation/spring
+
+https://eosnetwork.com/ecosystem/
+
+---
+
+Event ID
+
+EV-022
+
+Date
+
+2023-03-01
+
+Event Name
+
+Integrasi Hyperion History API ke Infrastruktur Resmi ENF
+
+Event Type
+
+Infrastructure
+
+Description
+
+ENF mengadopsi Hyperion History API (dikembangkan EOS Rio) sebagai layanan indeks data sejarah standar untuk eksplorator, wallet, dan dApp ekosistem.
+
+Participants
+
+EOS Network Foundation Core Team; Hyperion History API
+
+Location
+
+https://github.com/eosrio/hyperion
+
+Status
+
+Completed
+
+Immediate Result
+
+Ketersediaan data on-chain historis andal untuk seluruh ekosistem.
+
+Sources
+
+https://github.com/eosrio/hyperion
+
+https://eosnetwork.com/ecosystem/
+
+---
+
+Event ID
+
+EV-023
+
+Date
+
+2023-06-14
+
+Event Name
+
+Perayaan Tahun Ke-5 Mainnet & Kampanye "EOS Hot Sauce"
+
+Event Type
+
+Community
+
+Description
+
+ENF dan komunitas merayakan ulang tahun ke-5 mainnet dengan kampanye pertumbuhan ekosistem, hackathon, dan insentif likuiditas DeFi.
+
+Participants
+
+EOS Network Foundation (ENF); EOS Network Foundation Discord Community; EOS Project Telegram
+
+Location
+
+https://eosnetwork.com/
+
+Status
+
+Completed
+
+Immediate Result
+
+Aktivitas on-chain dan partisipasi komunitas meningkat signifikan selama periode kampanye.
+
+Sources
+
+https://eosnetwork.com/
+
+https://discord.gg/eosnetwork
+
+---
+
+Event ID
+
+EV-024
+
+Date
+
+2023-09-01
+
+Event Name
+
+Peluncuran Program "EOS Network Ventures" / Ecosystem Fund
+
+Event Type
+
+Funding
+
+Description
+
+ENF meluncurkan dana ekosistem untuk investasi strategis ke proyek DeFi, GameFi, dan infrastruktur di atas EOS/EOS EVM; ukuran dana tidak dipublikasikan detailnya.
+
+Participants
+
+EOS Network Foundation (ENF)
+
+Location
+
+https://eosnetwork.com/foundation/
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Pendanaan awal untuk startup ekosistem; portofolio investasi mulai terbentuk.
+
+Sources
+
+https://eosnetwork.com/foundation/
+
+---
+
+Event ID
+
+EV-025
+
+Date
+
+2024-01-01
+
+Event Name
+
+Rilis Antelope Leap 5.0 (Performa & Keamanan)
+
+Event Type
+
+Technology
+
+Description
+
+Leap 5.0 membawa peningkatan throughput signifikan, perbaikan konsensus BFT-DPoS, dan mitigasi vektor serangan resource exhaustion.
+
+Participants
+
+EOS Network Foundation Core Team; Antelope Protocol (Leap Node Software); Block Producers (BP) Collective
+
+Location
+
+https://github.com/AntelopeIO/leap/releases/tag/v5.0.0
+
+Status
+
+Completed
+
+Immediate Result
+
+BP mengupgrade node; jaringan lebih stabil di bawah beban tinggi.
+
+Sources
+
+https://github.com/AntelopeIO/leap/releases/tag/v5.0.0
+
+---
+
+Event ID
+
+EV-026
+
+Date
+
+2024-03-01
+
+Event Name
+
+Integrasi Firehose (StreamingFast) sebagai Standar Indexing Real-time
+
+Event Type
+
+Infrastructure
+
+Description
+
+ENF merekomendasikan Firehose oleh StreamingFast sebagai solusi streaming data blok real-time standar untuk pengembang dApp dan analytics.
+
+Participants
+
+EOS Network Foundation Core Team; Firehose (StreamingFast)
+
+Location
+
+https://streamingfast.io/firehose
+
+Status
+
+Completed
+
+Immediate Result
+
+Pengembang mengakses data blok terstruktur dengan latensi sub-sekon.
+
+Sources
+
+https://streamingfast.io/firehose
+
+https://eosnetwork.com/ecosystem/
+
+---
+
+Event ID
+
+EV-027
+
+Date
+
+2024-06-14
+
+Event Name
+
+Perayaan Tahun Ke-6 Mainnet & Rilis Roadmap 2024-2025
+
+Event Type
+
+Community
+
+Description
+
+ENF mempublikasikan roadmap teknis 2024-2025 mencakup: scaling horizontal (sidechain), zero-knowledge integration, dan perbaikan UX onboarding.
+
+Participants
+
+EOS Network Foundation (ENF); Yves La Rose
+
+Location
+
+https://eosnetwork.com/
+
+Status
+
+Completed
+
+Immediate Result
+
+Visibelnya arah teknis jangka menengah kepada komunitas dan investor.
+
+Sources
+
+https://eosnetwork.com/
+
+---
+
+Event ID
+
+EV-028
+
+Date
+
+2024-09-01
+
+Event Name
+
+Migrasi Token Bridge EOS ERC-20 ke Smart Contract Baru (Jika Terjadi)
+
+Event Type
+
+Technology
+
+Description
+
+Pembaruan kontrak bridge token EOS di Ethereum (0x86Fa049857E0209aa7D9e616F7eb3b3B78ECfdb0) untuk keamanan dan efisiensi gas; detail migrasi belum diverifikasi publik penuh.
+
+Participants
+
+EOS Network Foundation Core Team; eosio.token Contract; Etherscan
+
+Location
+
+https://etherscan.io/token/0x86Fa049857E0209aa7D9e616F7eb3b3B78ECfdb0
+
+Status
+
+Unknown
+
+Immediate Result
+
+Tidak diketahui (belum ada announcement resmi terverifikasi)
+
+Sources
+
+https://etherscan.io/token/0x86Fa049857E0209aa7D9e616F7eb3b3B78ECfdb0
+
+---
+
+Event ID
+
+EV-029
+
+Date
+
+2024-12-01
+
+Event Name
+
+Rilis Antelope Leap 6.0 (Rencana)
+
+Event Type
+
+Technology
+
+Description
+
+Rencana rilis Leap 6.0 dengan dukungan eksperimental untuk ZK-SNARK verification on-chain dan peningkatan parallel execution engine.
+
+Participants
+
+EOS Network Foundation Core Team; Antelope Protocol (Leap Node Software)
+
+Location
+
+https://github.com/AntelopeIO/leap
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Pengembangan di cabang main repositori; belum dirilis stabil.
+
+Sources
+
+https://github.com/AntelopeIO/leap
+
+---
+
+### KELOMPOKKAN BERDASARKAN TAHUN
+
+#### 2017
+- EV-001: Pendirian Block.one (Founding)
+- EV-002: Mulai Distribusi Token EOS (ICO Tahap 1) (Token)
+- EV-003: Rilis Whitepaper EOSIO Technical (Technology)
+
+#### 2018
+- EV-004: Rilis Dawn 1.0 (Testnet Pertama) (Launch)
+- EV-005: Rilis Dawn 2.0 (Technology)
+- EV-006: Rilis Dawn 3.0 (Technology)
+- EV-007: Rilis Dawn 4.0 (Release Candidate) (Technology)
+- EV-008: Berakhirnya Periode Distribusi Token EOS (ICO) (Token)
+- EV-009: Peluncuran EOS Mainnet (Launch)
+- EV-010: Aktivasi Sistem Voting BP dan Inflasi (Governance)
+- EV-011: Rilis EOSIO 1.0 (Versi Produksi Pertama) (Technology)
+
+#### 2019
+- EV-012: Peluncuran Voice (Beta) oleh Block.one (Product)
+- EV-013: Penyelesaian Kasus SEC vs Block.one (Legal)
+
+#### 2020
+- EV-014: Penutupan Platform Voice (Product)
+
+#### 2021
+- EV-015: Dan Larimer Keluar dari Block.one (Organization)
+- EV-016: Rebranding EOSIO Menjadi Antelope Protocol (Technology)
+- EV-017: Pembentukan EOS Network Foundation (ENF) (Foundation)
+- EV-018: Rilis Antelope Leap 3.1 (Versi Mayor Pertama Pasca-ENF) (Technology)
+
+#### 2022
+- EV-019: Peluncuran EOS EVM Mainnet (Launch)
+- EV-020: Upgrade Hard Fork "Spring" / EOSIO 3.0 / Leap 4.0 (Technology)
+- EV-021: Rilis Spring SDK (f.k.a. EOS SDK/CDT) (Product)
+
+#### 2023
+- EV-022: Integrasi Hyperion History API ke Infrastruktur Resmi ENF (Infrastructure)
+- EV-023: Perayaan Tahun Ke-5 Mainnet & Kampanye "EOS Hot Sauce" (Community)
+- EV-024: Peluncuran Program "EOS Network Ventures" / Ecosystem Fund (Funding)
+
+#### 2024
+- EV-025: Rilis Antelope Leap 5.0 (Performa & Keamanan) (Technology)
+- EV-026: Integrasi Firehose (StreamingFast) sebagai Standar Indexing Real-time (Infrastructure)
+- EV-027: Perayaan Tahun Ke-6 Mainnet & Rilis Roadmap 2024-2025 (Community)
+- EV-028: Migrasi Token Bridge EOS ERC-20 ke Smart Contract Baru (Jika Terjadi) (Technology)
+- EV-029: Rilis Antelope Leap 6.0 (Rencana) (Technology)
+
+---
+
+### RINGKASAN
+
+Total Events
+
+29
+
+Founding
+
+1
+
+Funding
+
+1
+
+Launch
+
+3
+
+Technology
+
+12
+
+Governance
+
+1
+
+Security
+
+0
+
+Legal
+
+1
+
+Regulation
+
+0
+
+Partnership
+
+0
+
+Integration
+
+0
+
+Token
+
+2
+
+Market
+
+0
+
+Organization
+
+1
+
+Infrastructure
+
+2
+
+Community
+
+2
+
+Product
+
+3
+
+Ecosystem
+
+0
+
+Other
+
+0
+
+---
+
+Open Threads
+
+- Tanggal pasti pembentukan ENF: beberapa sumber menyebut September 2021, tetapi tanggal eksak (22 Sep vs awal Oktober) perlu konfirmasi dari dokumen inkorporasi Cayman Islands resmi.
+- Detail komposisi dan ukuran dana "EOS Network Ventures" (EV-024) — tidak dipublikasikan transparan; perlu klarifikasi dari ENF.
+- Status migrasi bridge token ERC-20 (EV-028) — tidak ada announcement resmi terverifikasi; kontrak 0x86Fa... masih menunjukkan aktivitas tetapi kepemilikan/upgrade authority tidak jelas.
+- Rincian tokenomics inflasi terkini (persentase ke BP, ENF, RAM, savings) — perlu cross-check state `eosio.system` contract on-chain saat ini vs desain awal 1%/1%/dll.
+- Identitas entitas yang mengoperasikan/bertanggung jawab atas bridge token ERC-20 (0x86Fa...) — apakah ENF, Block.one, atau pihak ketiga.
+- Daftar lengkap 21 Block Producer aktif per 2024-12 dan afiliasi mereka — hanya tersedia sebagai daftar dinamis di eosauthority.com, tidak dalam format terstruktur terverifikasi.
+- Status kepemilikan IP/lisensi perangkat lunak Antelope (Leap) antara Block.one dan ENF — apakah ENF memiliki full ownership atau lisensi perpetuitas; tidak ada pernyataan hukum publik terverifikasi.
+- Detail audit keamanan terbaru untuk kontrak sistem (eosio.token, eosio.system) dan EOS EVM — tidak ditemukan laporan audit publik terbaru (2023-2024) dari firma ternama.

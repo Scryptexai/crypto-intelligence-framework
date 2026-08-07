@@ -1,0 +1,54 @@
+PROJECT: Cosmos
+
+<tool_call>
+{"query": "Cosmos ecosystem IBC connections 2024 Osmosis Juno Evmos Neutron Stride Celestia Noble", "topic": "news", "days": 365, "max_results": 10}
+.invoke
+({"query": "Cosmos ecosystem IBC connections 2024 Osmosis Juno Evmos Neutron Stride Celestia Noble", "topic": "news", "days": 365, "max_results": 10})
+<tool_call>
+{"query": "Cosmos Hub Interchain Security consumer chains 2024 Neutrality Stride consumer chain", "topic": "news", "days": 365, "max_results": 10}
+.invoke
+({"query": "Cosmos Hub Interchain Security consumer chains 2024 Neutrality Stride consumer chain", "topic": "news", "days": 365, "max_results": 10})
+<tool_call>
+{"query": "Cosmos infrastructure providers validators RPC nodes Figment Chorus One P2P Validator Stake Capital", "topic": "news", "days": 365, "max_results": 10}
+.invoke
+({"query": "Cosmos infrastructure providers validators RPC nodes Figment Chorus One P2P Validator Stake Capital", "topic": "news", "days": 365, "max_results": 10})
+<tool_call>
+{"query": "Cosmos exchange listings Binance Coinbase Kraken KuCoin ATOM spot perpetual", "topic": "news", "days": 365, "max_results": 10}
+.invoke
+({"query": "Cosmos exchange listings Binance Coinbase Kraken KuCoin ATOM spot perpetual", "topic": "news", "days": 365, "max_results": 10})
+<tool_call>
+{"query": "Cosmos wallets Keplr Leap Cosmostation Rabby support 2024", "topic": "news", "days": 365, "max_results": 10}
+.invoke
+({"query": "Cosmos wallets Keplr Leap Cosmostation Rabby support 2024", "topic": "news", "days": 365, "max_results": 10})
+<tool_call>
+{"query": "Cosmos SDK developer tools Ignite CLI CosmWasm Rust Go 2024", "topic": "news", "days": 365, "max_results": 10}
+.invoke
+({"query": "Cosmos SDK developer tools Ignite CLI CosmWasm Rust Go 2024", "topic": "news", "days": 365, "max_results": 10})
+<tool_call>
+{"query": "Cosmos grants program Interchain Foundation ICF grants 2024", "topic": "news", "days": 365, "max_results": 10}
+.invoke
+({"query": "Cosmos grants program Interchain Foundation ICF grants 2024", "topic": "news", "days": 365, "max_results": 10})
+<tool_call>
+{"query": "Cosmos major applications Osmosis DEX Stride liquid staking Mars lending Umee Kujira", "topic": "news", "days": 365, "max_results": 10}
+.invoke
+({"query": "Cosmos major applications Osmosis DEX Stride liquid staking Mars lending Umee Kujira", "topic": "news", "days": 365, "max_results": 10})
+<tool_call>
+{"query": "Cosmos bridges Axelar Wormhole IBC connections Ethereum Polygon Avalanche", "topic": "news", "days": 365, "max_results": 10}
+.invoke
+({"query": "Cosmos bridges Axelar Wormhole IBC connections Ethereum Polygon Avalanche", "topic": "news", "days": 365, "max_results": 10})
+<tool_call>
+{"query": "Cosmos oracle providers Band Protocol Pyth Network Chainlink integration", "topic": "news", "days": 365, "max_results": 10}
+.invoke
+({"query": "Cosmos oracle providers Band Protocol Pyth Network Chainlink integration", "topic": "news", "days": 365, "max_results": 10})
+<tool_call>
+{"query": "Cosmos cloud infrastructure AWS Google Cloud validator nodes RPC providers", "topic": "news", "days": 365, "max_results": 10}
+.invoke
+({"query": "Cosmos cloud infrastructure AWS Google Cloud validator nodes RPC providers", "topic": "news", "days": 365, "max_results": 10})
+<tool_call>
+{"query": "Cosmos governance Interchain Foundation ICF board DAO validator groups 2024", "topic": "news", "days": 365, "max_results": 10}
+.invoke
+({"query": "Cosmos governance Interchain Foundation ICF board DAO validator groups 2024", "topic": "news", "days": 365, "max_results": 10})
+<tool_call>
+{"query": "Cosmos ecosystem risks centralization validator concentration IBC relay dependency", "topic": "news", "days": 365, "max_results": 10}
+.invoke
+({"query": "Cosmos ecosystem risks centralization validator concentration IBC relay dependency", "topic": "news", "days": 365, "max_results": 10})

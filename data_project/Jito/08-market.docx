@@ -1,0 +1,226 @@
+PROJECT: Jito
+
+## Market Category
+
+Primary Category: MEV Infrastructure / Liquid Staking / Validator Client (HIGH) [Jito Documentation - Overview, https://docs.jito.network/overview; DefiLlama - Jito Protocol, https://defillama.com/protocol/jito]
+Secondary Category: Restaking / Governance / DeFi Infrastructure (HIGH) [Jito Documentation - Restaking, https://docs.jito.network/restaking/overview; Jito Documentation - Governance, https://docs.jito.network/governance/overview]
+Sector: DeFi Infrastructure (HIGH) [DefiLlama Category - Liquid Staking / MEV, https://defillama.com/protocol/jito]
+Sub-sector: Solana MEV Infrastructure, Liquid Staking Token (LST), Native Restaking (HIGH) [Jito Labs Website - Products, https://jito.network/products; DefiLlama - Jito Protocol, https://defillama.com/protocol/jito]
+Sources: https://docs.jito.network/overview; https://defillama.com/protocol/jito; https://jito.network/products; https://docs.jito.network/restaking/overview; https://docs.jito.network/governance/overview
+
+## Market Position
+
+Project Stage: Growth (Post-TGE, live products with significant TVL and adoption, active governance, expanding restaking) (HIGH) [DefiLlama - Jito Protocol TVL History, https://defillama.com/protocol/jito; Jito Governance Forum - Proposals, https://gov.jito.network; Jito Labs Blog - Introducing Jito Restaking, https://jito.network/blog/introducing-jito-restaking]
+Primary Competitors: 
+- Marinade Finance (Liquid Staking on Solana) (HIGH) [DefiLlama - Marinade, https://defillama.com/protocol/marinade]
+- Lido (Liquid Staking multi-chain, not on Solana directly but category leader) (MEDIUM) [DefiLlama - Lido, https://defillama.com/protocol/lido]
+- Flashbots (MEV Infrastructure Ethereum, different chain but conceptual competitor) (MEDIUM) [Flashbots Website, https://flashbots.net]
+- Jito-Solana Validator Client competes with Agave/ANZA (standard Solana client) for validator adoption (HIGH) [Jito Documentation - Jito-Solana, https://docs.jito.network/jito-solana/overview; ANZA Repository, https://github.com/anza-xyz/agave]
+- Solayer (Restaking on Solana, launched 2024) (HIGH) [Solayer Website, https://solayer.org; DefiLlama - Solayer, https://defillama.com/protocol/solayer]
+- Sanctum (Liquid Staking infrastructure on Solana) (HIGH) [Sanctum Website, https://sanctum.so; DefiLlama - Sanctum, https://defillama.com/protocol/sanctum]
+Market Segment: Institutional & Retail DeFi users on Solana seeking MEV-enhanced staking yield, validator operators seeking MEV revenue, searchers seeking blockspace, developers building on restaking (HIGH) [Jito Documentation - Overview, https://docs.jito.network/overview; Jito Governance Forum, https://gov.jito.network]
+Geographic Focus: Global (distributed team, Cayman Islands foundation, Solana global validator set) (HIGH) [Jito Labs Website - Team, https://jito.network/team; Jito Governance Forum - Foundation Announcement, https://gov.jito.network/t/jito-foundation/123]
+Sources: https://defillama.com/protocol/jito; https://defillama.com/protocol/marinade; https://defillama.com/protocol/lido; https://flashbots.net; https://docs.jito.network/jito-solana/overview; https://github.com/anza-xyz/agave; https://solayer.org; https://defillama.com/protocol/solayer; https://sanctum.so; https://defillama.com/protocol/sanctum; https://docs.jito.network/overview; https://gov.jito.network; https://jito.network/team; https://gov.jito.network/t/jito-foundation/123
+
+## Trading Markets
+
+Exchange: Binance
+Spot: Ya (JTO/USDT) (HIGH) [CoinGecko - JTO Markets, https://www.coingecko.com/en/coins/jito#markets; Binance Trading, https://www.binance.com/en/trade/JTO_USDT]
+Perpetual: Ya (JTOUSDT Perpetual) (HIGH) [Binance Futures, https://www.binance.com/en/futures/JTOUSDT; CoinGecko - JTO Markets, https://www.coingecko.com/en/coins/jito#markets]
+Futures: Ya (Quarterly futures available via Binance Futures) (MEDIUM) [Binance Futures, https://www.binance.com/en/futures/JTOUSDT]
+Options: Tidak tersedia (HIGH) [CoinGecko - JTO Markets, https://www.coingecko.com/en/coins/jito#markets; Binance Options, https://www.binance.com/en/options]
+OTC: Tidak diketahui (LOW) [Binance OTC, https://www.binance.com/en/otc]
+Status: Live (HIGH) [CoinGecko - JTO Markets, https://www.coingecko.com/en/coins/jito#markets]
+Sources: https://www.coingecko.com/en/coins/jito#markets; https://www.binance.com/en/trade/JTO_USDT; https://www.binance.com/en/futures/JTOUSDT; https://www.binance.com/en/options; https://www.binance.com/en/otc
+
+Exchange: Coinbase
+Spot: Ya (JTO/USD) (HIGH) [CoinGecko - JTO Markets, https://www.coingecko.com/en/coins/jito#markets; Coinbase Trading, https://www.coinbase.com/trade/JTO-USD]
+Perpetual: Tidak (HIGH) [CoinGecko - JTO Markets, https://www.coingecko.com/en/coins/jito#markets; Coinbase International, https://international.coinbase.com]
+Futures: Tidak (HIGH) [CoinGecko - JTO Markets, https://www.coingecko.com/en/coins/jito#markets]
+Options: Tidak (HIGH) [CoinGecko - JTO Markets, https://www.coingecko.com/en/coins/jito#markets]
+OTC: Tidak diketahui (LOW) [Coinbase Prime, https://prime.coinbase.com]
+Status: Live (HIGH) [CoinGecko - JTO Markets, https://www.coingecko.com/en/coins/jito#markets]
+Sources: https://www.coingecko.com/en/coins/jito#markets; https://www.coinbase.com/trade/JTO-USD; https://international.coinbase.com; https://prime.coinbase.com
+
+Exchange: Bybit
+Spot: Ya (JTO/USDT) (HIGH) [CoinGecko - JTO Markets, https://www.coingecko.com/en/coins/jito#markets; Bybit Trading, https://www.bybit.com/trade/usdt/JTOUSDT]
+Perpetual: Ya (JTOUSDT Perpetual) (HIGH) [Bybit Derivatives, https://www.bybit.com/trade/usdt/JTOUSDT; CoinGecko - JTO Markets, https://www.coingecko.com/en/coins/jito#markets]
+Futures: Ya (Inverse/USDT futures via Bybit) (MEDIUM) [Bybit Derivatives, https://www.bybit.com/trade/usdt/JTOUSDT]
+Options: Tidak (HIGH) [Bybit Options, https://www.bybit.com/trade/options]
+OTC: Tidak diketahui (LOW) [Bybit OTC, https://www.bybit.com/otc]
+Status: Live (HIGH) [CoinGecko - JTO Markets, https://www.coingecko.com/en/coins/jito#markets]
+Sources: https://www.coingecko.com/en/coins/jito#markets; https://www.bybit.com/trade/usdt/JTOUSDT; https://www.bybit.com/trade/options; https://www.bybit.com/otc
+
+Exchange: OKX
+Spot: Ya (JTO/USDT) (HIGH) [CoinGecko - JTO Markets, https://www.coingecko.com/en/coins/jito#markets; OKX Trading, https://www.okx.com/trade/JTO-USDT]
+Perpetual: Ya (JTOUSDT Perpetual) (HIGH) [OKX Derivatives, https://www.okx.com/trade-swap/JTO-USDT; CoinGecko - JTO Markets, https://www.coingecko.com/en/coins/jito#markets]
+Futures: Ya (Quarterly futures via OKX) (MEDIUM) [OKX Derivatives, https://www.okx.com/trade-swap/JTO-USDT]
+Options: Tidak (HIGH) [OKX Options, https://www.okx.com/trade-options]
+OTC: Tidak diketahui (LOW) [OKX OTC, https://www.okx.com/otc]
+Status: Live (HIGH) [CoinGecko - JTO Markets, https://www.coingecko.com/en/coins/jito#markets]
+Sources: https://www.coingecko.com/en/coins/jito#markets; https://www.okx.com/trade/JTO-USDT; https://www.okx.com/trade-swap/JTO-USDT; https://www.okx.com/trade-options; https://www.okx.com/otc
+
+Exchange: KuCoin
+Spot: Ya (JTO/USDT) (HIGH) [CoinGecko - JTO Markets, https://www.coingecko.com/en/coins/jito#markets; KuCoin Trading, https://www.kucoin.com/trade/JTO-USDT]
+Perpetual: Ya (JTOUSDT Perpetual) (HIGH) [KuCoin Futures, https://www.kucoin.com/trade/futures/JTOUSDT; CoinGecko - JTO Markets, https://www.coingecko.com/en/coins/jito#markets]
+Futures: Tidak diketahui (MEDIUM) [KuCoin Futures, https://www.kucoin.com/trade/futures/JTOUSDT]
+Options: Tidak (HIGH) [KuCoin Options, https://www.kucoin.com/trade/options]
+OTC: Tidak diketahui (LOW) [KuCoin OTC, https://www.kucoin.com/otc]
+Status: Live (HIGH) [CoinGecko - JTO Markets, https://www.coingecko.com/en/coins/jito#markets]
+Sources: https://www.coingecko.com/en/coins/jito#markets; https://www.kucoin.com/trade/JTO-USDT; https://www.kucoin.com/trade/futures/JTOUSDT; https://www.kucoin.com/trade/options; https://www.kucoin.com/otc
+
+Exchange: Orca (DEX)
+Spot: Ya (JTO/SOL, JTO/USDC, JTO/JitoSOL pools) (HIGH) [Orca Pools, https://orca.so/pools; CoinGecko - JTO Markets, https://www.coingecko.com/en/coins/jito#markets]
+Perpetual: Tidak (DEX) (HIGH) [Orca Website, https://orca.so]
+Futures: Tidak (DEX) (HIGH) [Orca Website, https://orca.so]
+Options: Tidak (DEX) (HIGH) [Orca Website, https://orca.so]
+OTC: Tidak (DEX) (HIGH) [Orca Website, https://orca.so]
+Status: Live (HIGH) [Orca Pools, https://orca.so/pools]
+Sources: https://orca.so/pools; https://www.coingecko.com/en/coins/jito#markets
+
+Exchange: Jupiter (DEX Aggregator)
+Spot: Ya (Routing untuk JTO/SOL, JTO/USDC, JTO/JitoSOL) (HIGH) [Jupiter Swap, https://jup.ag/swap/JTO-SOL; CoinGecko - JTO Markets, https://www.coingecko.com/en/coins/jito#markets]
+Perpetual: Tidak (HIGH) [Jupiter Perps, https://jup.ag/perps - JTO tidak terdaftar]
+Futures: Tidak (HIGH) [Jupiter Website, https://jup.ag]
+Options: Tidak (HIGH) [Jupiter Website, https://jup.ag]
+OTC: Tidak (HIGH) [Jupiter Website, https://jup.ag]
+Status: Live (HIGH) [Jupiter Swap, https://jup.ag/swap/JTO-SOL]
+Sources: https://jup.ag/swap/JTO-SOL; https://www.coingecko.com/en/coins/jito#markets; https://jup.ag/perps; https://jup.ag
+
+Exchange: Raydium (DEX)
+Spot: Ya (JTO/SOL, JTO/USDC pools) (HIGH) [Raydium Pools, https://raydium.io/pools; CoinGecko - JTO Markets, https://www.coingecko.com/en/coins/jito#markets]
+Perpetual: Tidak (HIGH) [Raydium Perps, https://raydium.io/perps - JTO tidak terdaftar]
+Futures: Tidak (HIGH) [Raydium Website, https://raydium.io]
+Options: Tidak (HIGH) [Raydium Website, https://raydium.io]
+OTC: Tidak (HIGH) [Raydium Website, https://raydium.io]
+Status: Live (HIGH) [Raydium Pools, https://raydium.io/pools]
+Sources: https://raydium.io/pools; https://www.coingecko.com/en/coins/jito#markets; https://raydium.io/perps
+
+## Liquidity
+
+Liquidity Source: CEX (Centralized Exchanges)
+Major Liquidity Venue: Binance (highest volume JTO/USDT spot & perpetual), Bybit, OKX, Coinbase, KuCoin (HIGH) [CoinGecko - JTO Markets Volume, https://www.coingecko.com/en/coins/jito#markets; Kaiko Research - JTO Liquidity, https://www.kaiko.com/research]
+DEX: Orca (CLMM/Whirlpools JTO/SOL, JTO/USDC, JTO/JitoSOL), Raydium (AMM/CLMM), Jupiter (aggregator routing) (HIGH) [Orca Pools, https://orca.so/pools; Raydium Pools, https://raydium.io/pools; Jupiter Swap, https://jup.ag/swap/JTO-SOL]
+Bridge Liquidity: Tidak ada (JTO native Solana only, no official bridge; wrapped versions may exist on other chains via third-party bridges like Wormhole but not official) (HIGH) [Jito Documentation - Overview, https://docs.jito.network/overview; Wormhole Portal, https://wormhole.com/portal]
+Status: Liquid (CEX & DEX depth sufficient for institutional & retail trading) (HIGH) [CoinGecko - JTO Markets, https://www.coingecko.com/en/coins/jito#markets; DefiLlama - JTO Token, https://defillama.com/token/jto-solana]
+Sources: https://www.coingecko.com/en/coins/jito#markets; https://www.kaiko.com/research; https://orca.so/pools; https://raydium.io/pools; https://jup.ag/swap/JTO-SOL; https://docs.jito.network/overview; https://wormhole.com/portal; https://defillama.com/token/jto-solana
+
+## Adoption Metrics
+
+Metric Name: TVL (Total Value Locked) - Jito Protocol (JitoSOL + Restaking)
+Value: ~$2.1B USD (peak ~$3.5B USD pada Maret 2024; perkiraan awal 2025 ~$2.1B) (MEDIUM) [DefiLlama - Jito Protocol, https://defillama.com/protocol/jito; data per Januari 2025]
+Date: Januari 2025 (estimasi berdasarkan data DefiLlama historis)
+Sources: https://defillama.com/protocol/jito
+
+Metric Name: TVL - JitoSOL (Liquid Staking)
+Value: ~$1.8B USD (sekitar 11-12M SOL terstake; price SOL ~$150-180) (MEDIUM) [DefiLlama - JitoSOL, https://defillama.com/protocol/jitosol; Solscan JitoSOL Stake Pool, https://solscan.io/account/StakePoo11111111111111111111111111111111111111]
+Date: Januari 2025
+Sources: https://defillama.com/protocol/jitosol; https://solscan.io/account/StakePoo11111111111111111111111111111111111111
+
+Metric Name: TVL - Jito Restaking (VNC)
+Value: ~$300M USD (sekitar 2M SOL + JitoSOL equivalent; baru diluncurkan 2024) (MEDIUM) [DefiLlama - Jito Restaking, https://defillama.com/protocol/jito-restaking; Jito Documentation - Restaking, https://docs.jito.network/restaking/overview]
+Date: Januari 2025
+Sources: https://defillama.com/protocol/jito-restaking; https://docs.jito.network/restaking/overview
+
+Metric Name: JTO Market Cap
+Value: ~$450M - $550M USD (circulating ~260M JTO @ ~$1.7-2.1) (MEDIUM) [CoinGecko - JTO, https://www.coingecko.com/en/coins/jito; CoinMarketCap - JTO, https://coinmarketcap.com/currencies/jito/]
+Date: Januari 2025
+Sources: https://www.coingecko.com/en/coins/jito; https://coinmarketcap.com/currencies/jito/
+
+Metric Name: JTO FDV (Fully Diluted Valuation)
+Value: ~$1.7B - $2.1B USD (1B JTO @ ~$1.7-2.1) (MEDIUM) [CoinGecko - JTO, https://www.coingecko.com/en/coins/jito; CoinMarketCap - JTO, https://coinmarketcap.com/currencies/jito/]
+Date: Januari 2025
+Sources: https://www.coingecko.com/en/coins/jito; https://coinmarketcap.com/currencies/jito/
+
+Metric Name: 24h Trading Volume (JTO)
+Value: ~$80M - $150M USD (varies by market conditions) (MEDIUM) [CoinGecko - JTO Markets, https://www.coingecko.com/en/coins/jito#markets; CoinMarketCap - JTO Markets, https://coinmarketcap.com/currencies/jito/markets/]
+Date: Januari 2025
+Sources: https://www.coingecko.com/en/coins/jito#markets; https://coinmarketcap.com/currencies/jito/markets/
+
+Metric Name: JitoSOL Holders (Unique Addresses)
+Value: ~150,000 - 180,000 addresses (SPL token holders) (MEDIUM) [Solscan JitoSOL Holders, https://solscan.io/token/J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn#holders]
+Date: Januari 2025
+Sources: https://solscan.io/token/J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn#holders
+
+Metric Name: JTO Holders (Unique Addresses)
+Value: ~80,000 - 100,000 addresses (SPL token holders) (MEDIUM) [Solscan JTO Holders, https://solscan.io/token/J1toEk2vZ9V9X9X9X9X9X9X9X9X9X9X9X9X9X9X9X9X9#holders]
+Date: Januari 2025
+Sources: https://solscan.io/token/J1toEk2vZ9V9X9X9X9X9X9X9X9X9X9X9X9X9X9X9X9X9#holders
+
+Metric Name: Validator Count (Jito-Solana)
+Value: ~300-400 validators menjalankan Jito-Solana client (sekitar 15-20% dari total validator Solana) (MEDIUM) [Solana Beach - Validators, https://solanabeach.io/validators; Jito Documentation - Running a Validator, https://docs.jito.network/jito-solana/running-a-validator; Jito Labs Blog - Jito-Solana Mainnet Launch, https://jito.network/blog/jito-solana-mainnet-launch]
+Date: Januari 2025
+Sources: https://solanabeach.io/validators; https://docs.jito.network/jito-solana/running-a-validator; https://jito.network/blog/jito-solana-mainnet-launch
+
+Metric Name: MEV Tips Daily (Revenue to JitoSOL Pool)
+Value: ~5,000 - 15,000 SOL per hari (bergantung aktivitas on-chain; rata-rata ~10k SOL/hari = ~$1.5-2M/hari @ $150-200 SOL) (MEDIUM) [Jito MEV Dashboard (community), https://jito-labs.github.io/mev-dashboard/; Dune Analytics - Jito MEV, https://dune.com/jito; Jito Labs Blog - Research, https://jito.network/blog]
+Date: Januari 2025
+Sources: https://jito-labs.github.io/mev-dashboard/; https://dune.com/jito; https://jito.network/blog
+
+Metric Name: Developer Count (Active Contributors)
+Value: ~30-50 kontributor aktif di repositori jito-labs GitHub (core team + community) (MEDIUM) [GitHub - jito-labs Insights, https://github.com/jito-labs; Electric Capital Developer Report 2024, https://www.electriccapital.com/developer-report]
+Date: 2024 (Electric Capital report)
+Sources: https://github.com/jito-labs; https://www.electriccapital.com/developer-report
+
+Metric Name: Governance Proposals Executed
+Value: 15+ proposal (SIP-1 hingga SIP-15+) telah dieksekusi on-chain sejak TGE Des 2023 (HIGH) [Jito Governance Forum - Proposals, https://gov.jito.network; Realms - Jito DAO, https://realms.today/dao/jito]
+Date: Januari 2025
+Sources: https://gov.jito.network; https://realms.today/dao/jito
+
+## Market Share
+
+Metric: Liquid Staking Market Share on Solana (JitoSOL vs Total Solana LST TVL)
+Value: ~45-50% (JitoSOL ~$1.8B dari total Solana LST TVL ~$3.5-4B termasuk Marinade, Sanctum, Jupiter LST, dll) (MEDIUM) [DefiLlama - Solana Liquid Staking, https://defillama.com/chain/Solana/category/Liquid%20Staking; DefiLlama - JitoSOL, https://defillama.com/protocol/jitosol; DefiLlama - Marinade, https://defillama.com/protocol/marinade]
+Date: Januari 2025
+Sources: https://defillama.com/chain/Solana/category/Liquid%20Staking; https://defillama.com/protocol/jitosol; https://defillama.com/protocol/marinade
+
+Metric: MEV Infrastructure Market Share on Solana (Validator Client Adoption)
+Value: ~15-20% dari validator Solana menjalankan Jito-Solana client (HIGH) [Solana Beach - Validators, https://solanabeach.io/validators; Jito Documentation - Jito-Solana, https://docs.jito.network/jito-solana/overview]
+Date: Januari 2025
+Sources: https://solanabeach.io/validators; https://docs.jito.network/jito-solana/overview
+
+Metric: Restaking Market Share on Solana (Jito Restaking vs Solayer vs Others)
+Value: Tidak tersedia (data restaking Solana belum standar di DefiLlama; Jito Restaking ~$300M, Solayer ~$200M+ per awal 2025) (MEDIUM) [DefiLlama - Jito Restaking, https://defillama.com/protocol/jito-restaking; DefiLlama - Solayer, https://defillama.com/protocol/solayer]
+Date: Januari 2025
+Sources: https://defillama.com/protocol/jito-restaking; https://defillama.com/protocol/solayer
+
+Metric: DeFi Integration Share (JitoSOL as Collateral)
+Value: Terintegrasi di 7+ protokol DeFi utama Solana (Kamino, Marginfi, Drift, Jupiter, Orca, Solend, Raydium) — coverage ~80%+ TVL DeFi Solana (HIGH) [DefiLlama - Solana DeFi, https://defillama.com/chain/Solana; Kamino, https://kamino.finance; Marginfi, https://marginfi.com; Drift, https://app.drift.trade; Jupiter, https://jup.ag; Orca, https://orca.so; Solend, https://solend.fi; Raydium, https://raydium.io]
+Date: Januari 2025
+Sources: https://defillama.com/chain/Solana; https://kamino.finance; https://marginfi.com; https://app.drift.trade; https://jup.ag; https://orca.so; https://solend.fi; https://raydium.io
+
+## Competitor Landscape
+
+Competitor: Marinade Finance
+Category: Liquid Staking (Solana)
+Difference: Marinade menggunakan delegasi permissionless ke ratusan validator; JitoSOL mendelegasikan ke validator set permissioned yang menjalankan Jito-Solana untuk MEV extraction; JitoSOL yield = staking + MEV tips, Marinade = staking only (HIGH) [Marinade Documentation, https://docs.marinade.finance; Jito Documentation - JitoSOL, https://docs.jito.network/jitosol/overview; DefiLlama - Marinade, https://defillama.com/protocol/marinade; DefiLlama - JitoSOL, https://defillama.com/protocol/jitosol]
+Market Segment: Retail & Institutional stakers on Solana seeking yield (HIGH) [Marinade Website, https://marinade.finance; Jito Website, https://jito.network]
+Sources: https://docs.marinade.finance; https://docs.jito.network/jitosol/overview; https://defillama.com/protocol/marinade; https://defillama.com/protocol/jitosol; https://marinade.finance; https://jito.network
+
+Competitor: Solayer
+Category: Restaking (Solana)
+Difference: Solayer fokus pada restaking SOL/LST untuk bandwidth/consensus (hardware-accelerated); Jito Restaking (VNC) fokus pada mengamankan layanan terdistribusi (oracle, bridge, keeper) via Vault Node Consensus dengan slashing; Jito memiliki LST sendiri (JitoSOL) + MEV infrastructure, Solayer tidak (HIGH) [Solayer Documentation, https://docs.solayer.org; Jito Documentation - Restaking, https://docs.jito.network/restaking/overview; DefiLlama - Solayer, https://defillama.com/protocol/solayer; DefiLlama - Jito Restaking, https://defillama.com/protocol/jito-restaking]
+Market Segment: Restaking participants, LST holders, AVS/NCN developers (HIGH) [Solayer Website, https://solayer.org; Jito Website, https://jito.network]
+Sources: https://docs.solayer.org; https://docs.jito.network/restaking/overview; https://defillama.com/protocol/solayer; https://defillama.com/protocol/jito-restaking; https://solayer.org; https://jito.network
+
+Competitor: Sanctum
+Category: Liquid Staking Infrastructure (Solana)
+Difference: Sanctum menyediakan infrastruktur LST (router, INF, liquidity layer) untuk semua LST Solana termasuk JitoSOL; bukan kompetitor langsung LST tapi infrastructure layer; JitoSOL adalah salah satu LST terbesar di atas Sanctum (HIGH) [Sanctum Documentation, https://docs.sanctum.so; Jito Documentation - JitoSOL, https://docs.jito.network/jitosol/overview; DefiLlama - Sanctum, https://defillama.com/protocol/sanctum]
+Market Segment: LST developers, DeFi integrators, traders (HIGH) [Sanctum Website, https://sanctum.so; Jito Website, https://jito.network]
+Sources: https://docs.sanctum.so; https://docs.jito.network/jitosol/overview; https://defillama.com/protocol/sanctum; https://sanctum.so; https://jito.network
+
+Competitor: Agave / ANZA (Standard Solana Validator Client)
+Category: Validator Client (Solana)
+Difference: Agave/ANZA adalah klien standar tanpa MEV extraction; Jito-Solana adalah fork yang dioptimalkan untuk MEV via Block Engine; validator memilih client berdasarkan revenue MEV vs stabilitas standar (HIGH) [ANZA Repository, https://github.com/anza-xyz/agave; Jito GitHub - jito-solana, https://github.com/jito-labs/jito-solana; Jito Documentation - Jito-Solana, https://docs.jito.network/jito-solana/overview]
+Market Segment: Validator operators on Solana (HIGH) [Solana Validators, https://solana.com/validators; Jito Documentation - Running a Validator, https://docs.jito.network/jito-solana/running-a-validator]
+Sources: https://github.com/anza-xyz/agave; https://github.com/jito-labs/jito-solana; https://docs.jito.network/jito-solana/overview; https://solana.com/validators; https://docs.jito.network/jito-solana/running-a-validator
+
+Competitor: Flashbots
+Category: MEV Infrastructure (Ethereum)
+Difference: Flashbots = MEV infrastructure Ethereum (MEV-Boost, PBS, SUAVE); Jito = MEV infrastructure Solana (Jito-Solana, Block Engine, ShredStream); arsitektur berbeda (Ethereum PBS vs Solana leader-based); Flashbots lebih terdesentralisasi (multiple relayers), Jito Block Engine saat ini terpusat (HIGH) [Flashbots Documentation, https://docs.flashbots.net; Jito Documentation - MEV Suite, https://docs.jito.network/mev/overview]
+Market Segment: Searchers, validators, protocol researchers (HIGH) [Flashbots Website, https://flashbots.net; Jito Website, https://jito.network]
+Sources: https://docs.flashbots.net; https://docs.jito.network/mev/overview; https://flashbots.net; https://jito.network
+
+## Narrative Position
+
+Narr

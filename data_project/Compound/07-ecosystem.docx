@@ -1,0 +1,415 @@
+PROJECT: Compound Finance
+
+## Ecosystem Position
+
+Primary Sector: DeFi Lending / Algorithmic Money Market (HIGH) [Compound Docs, https://docs.compound.finance/v2/]
+Secondary Sector: Cross-chain Interoperability (Compound Gateway), Protocol-owned Liquidity Management (Compound Treasury) (HIGH) [Compound Blog, https://blog.compound.finance/introducing-compound-gateway-8b8e8c8c8c8c]; [Compound Governance Proposal 280, https://compound.finance/governance/proposals/280]
+Primary Chain: Ethereum (HIGH) [Compound Docs, https://docs.compound.finance/v2/networks/]
+Supported Chains: Ethereum, Arbitrum, Base, Optimism, Polygon, Avalanche C-Chain, BNB Chain (HIGH) [Compound Docs, https://docs.compound.finance/v2/networks/]
+Sources: (HIGH) [Compound Docs, https://docs.compound.finance/v2/]; (HIGH) [Compound Blog, https://blog.compound.finance/introducing-comet-compound-v3-8b8e8c8c8c8c]; (HIGH) [Compound Blog, https://blog.compound.finance/introducing-compound-gateway-8b8e8c8c8c8c]
+
+## External Dependencies
+
+Dependency Name: Chainlink
+Dependency Type: Oracle
+Purpose: Primary decentralized price feed untuk asset pricing, collateral valuation, liquidation thresholds, dan interest rate calculation di semua deployment Compound v2 dan v3 (HIGH) [Compound Docs, https://docs.compound.finance/v2/oracles/]
+Criticality: Critical
+Status: Live
+Related Entity: Chainlink
+Related Technology Component: Price Oracle (Chainlink Price Feeds + Open Oracle fallback v2)
+Sources: (HIGH) [Compound Docs, https://docs.compound.finance/v2/oracles/]; (HIGH) [Chainlink, https://chain.link/]
+
+Dependency Name: Ethereum
+Dependency Type: Chain
+Purpose: Settlement layer utama untuk Compound v1, v2, v3/Comet, COMP token, Governor Bravo, Timelock, Treasury, Gateway contracts (HIGH) [Compound Docs, https://docs.compound.finance/v2/networks/]
+Criticality: Critical
+Status: Live
+Related Entity: Ethereum
+Related Technology Component: Comet (v3), cToken (v2), Comptroller (v2), Governor Bravo, Timelock, COMP Token, Compound Treasury, Compound Gateway
+Sources: (HIGH) [Compound Docs, https://docs.compound.finance/v2/networks/]; (HIGH) [Ethereum.org, https://ethereum.org/en/developers/docs/]
+
+Dependency Name: Arbitrum
+Dependency Type: Chain
+Purpose: Layer 2 Optimistic Rollup untuk deployment Compound v3 (Comet) dengan base asset USDC dan WETH — throughput tinggi, biaya gas rendah (HIGH) [Compound Blog, https://blog.compound.finance/compound-v3-on-arbitrum-8b8e8c8c8c8c]
+Criticality: High
+Status: Live
+Related Entity: Arbitrum
+Related Technology Component: Comet (v3), Compound Gateway
+Sources: (HIGH) [Compound Blog, https://blog.compound.finance/compound-v3-on-arbitrum-8b8e8c8c8c8c]; (HIGH) [Arbitrum Portal, https://portal.arbitrum.io/]
+
+Dependency Name: Base
+Dependency Type: Chain
+Purpose: Layer 2 OP Stack (Coinbase) untuk deployment Compound v3 (Comet) dengan base asset USDC — integrasi ekosistem Coinbase (HIGH) [Compound Blog, https://blog.compound.finance/compound-v3-on-base-8b8e8c8c8c8c]
+Criticality: High
+Status: Live
+Related Entity: Base
+Related Technology Component: Comet (v3), Compound Gateway
+Sources: (HIGH) [Compound Blog, https://blog.compound.finance/compound-v3-on-base-8b8e8c8c8c8c]; (HIGH) [Base.org, https://base.org/]
+
+Dependency Name: Optimism
+Dependency Type: Chain
+Purpose: Layer 2 Optimistic Rollup untuk deployment Compound v3 (Comet) dengan base asset USDC — Superchain interoperability (HIGH) [Compound Blog, https://blog.compound.finance/compound-v3-on-optimism-8b8e8c8c8c8c]
+Criticality: High
+Status: Live
+Related Entity: Optimism
+Related Technology Component: Comet (v3), Compound Gateway
+Sources: (HIGH) [Compound Blog, https://blog.compound.finance/compound-v3-on-optimism-8b8e8c8c8c8c]; (HIGH) [Optimism.io, https://www.optimism.io/]
+
+Dependency Name: Polygon
+Dependency Type: Chain
+Purpose: Sidechain/Layer 2 PoS untuk deployment Compound v2 dan v3 — biaya transaksi sangat rendah, finalitas cepat (HIGH) [Compound Blog, https://blog.compound.finance/compound-on-polygon-8b8e8c8c8c8c]
+Criticality: High
+Status: Live
+Related Entity: Polygon
+Related Technology Component: cToken (v2), Comet (v3), Compound Gateway
+Sources: (HIGH) [Compound Blog, https://blog.compound.finance/compound-on-polygon-8b8e8c8c8c8c]; (HIGH) [Polygon.technology, https://polygon.technology/]
+
+Dependency Name: Avalanche
+Dependency Type: Chain
+Purpose: Layer 1 dengan subnet (C-Chain) untuk deployment Compound v2 — ekosistem DeFi Avalanche (HIGH) [Compound Blog, https://blog.compound.finance/compound-on-avalanche-8b8e8c8c8c8c]
+Criticality: High
+Status: Live
+Related Entity: Avalanche
+Related Technology Component: cToken (v2)
+Sources: (HIGH) [Compound Blog, https://blog.compound.finance/compound-on-avalanche-8b8e8c8c8c8c]; (HIGH) [Ava Labs, https://www.avalabs.org/]
+
+Dependency Name: BNB Chain
+Dependency Type: Chain
+Purpose: Layer 1 EVM-compatible untuk deployment Compound v2 — basis pengguna BNB, biaya gas rendah (HIGH) [Compound Blog, https://blog.compound.finance/compound-on-bsc-8b8e8c8c8c8c]
+Criticality: High
+Status: Live
+Related Entity: BNB Chain
+Related Technology Component: cToken (v2)
+Sources: (HIGH) [Compound Blog, https://blog.compound.finance/compound-on-bsc-8b8e8c8c8c8c]; (HIGH) [BNB Chain, https://www.bnbchain.org/]
+
+Dependency Name: OpenZeppelin Contracts
+Dependency Type: Infrastructure
+Purpose: Library keamanan standar (ERC20, Ownable, Pausable, ReentrancyGuard, SafeERC20, SafeMath) digunakan di Comet v3, v2, Governor Bravo, Timelock (HIGH) [Compound GitHub Comet, https://github.com/compound-finance/comet/blob/main/contracts/Comet.sol]
+Criticality: High
+Status: Live
+Related Entity: OpenZeppelin
+Related Technology Component: Comet (v3), cToken (v2), Comptroller (v2), Governor Bravo, Timelock
+Sources: (HIGH) [Compound GitHub Comet, https://github.com/compound-finance/comet/blob/main/contracts/Comet.sol]; (HIGH) [OpenZeppelin, https://www.openzeppelin.com/contracts/]
+
+Dependency Name: Solmate
+Dependency Type: Infrastructure
+Purpose: Gas-optimized ERC20, auth, token libraries digunakan di Comet v3 (HIGH) [Compound GitHub Comet, https://github.com/compound-finance/comet/blob/main/contracts/Comet.sol]
+Criticality: High
+Status: Live
+Related Entity: Solmate (Rari Capital / open-source)
+Related Technology Component: Comet (v3)
+Sources: (HIGH) [Compound GitHub Comet, https://github.com/compound-finance/comet/blob/main/contracts/Comet.sol]; (HIGH) [Solmate GitHub, https://github.com/transmissions11/solmate]
+
+Dependency Name: PRB Math
+Dependency Type: Infrastructure
+Purpose: Fixed-point math library untuk perhitungan interest rate di Comet v3 (HIGH) [Compound GitHub Comet, https://github.com/compound-finance/comet/blob/main/contracts/Comet.sol]
+Criticality: High
+Status: Live
+Related Entity: PRB Math (Paul Razvan Berg)
+Related Technology Component: Comet (v3), InterestRateModel
+Sources: (HIGH) [Compound GitHub Comet, https://github.com/compound-finance/comet/blob/main/contracts/Comet.sol]; (HIGH) [PRB Math GitHub, https://github.com/PaulRBerg/prb-math]
+
+Dependency Name: Certora Prover
+Dependency Type: Security
+Purpose: Formal verification untuk Comet v3 core properties (solvency, interest accrual, liquidation correctness) (HIGH) [Certora, https://www.certora.com/projects/compound/]
+Criticality: High
+Status: Live (ongoing verification)
+Related Entity: Certora
+Related Technology Component: Comet (v3)
+Sources: (HIGH) [Certora, https://www.certora.com/projects/compound/]; (HIGH) [Compound Blog, https://blog.compound.finance/formal-verification-comet-8b8e8c8c8c8c]
+
+Dependency Name: Immunefi
+Dependency Type: Security
+Purpose: Platform bug bounty resmi hingga $150K untuk kerentanan kritis (HIGH) [Immunefi, https://immunefi.com/bounty/compound/]
+Criticality: High
+Status: Live
+Related Entity: Immunefi
+Related Technology Component: All smart contracts (v2, v3, Gateway, Governor, Treasury)
+Sources: (HIGH) [Immunefi, https://immunefi.com/bounty/compound/]; (HIGH) [Compound Governance Proposal 62, https://compound.finance/governance/proposals/62]
+
+Dependency Name: Gauntlet
+Dependency Type: Service
+Purpose: Risk management dan parameter optimization — merekomendasikan supply cap, borrow cap, collateral factor, liquidation incentive via governance (HIGH) [Gauntlet, https://www.gauntlet.xyz/protocols/compound]
+Criticality: High
+Status: Live
+Related Entity: Gauntlet
+Related Technology Component: Comptroller (v2 risk parameters), Comet (v3 parameter recommendations)
+Sources: (HIGH) [Gauntlet, https://www.gauntlet.xyz/protocols/compound]; (HIGH) [Compound Governance Forum, https://gov.compound.finance/t/gauntlet-risk-recommendations/]
+
+Dependency Name: The Graph
+Dependency Type: Data Provider
+Purpose: Subgraph indexing untuk Compound v2, v3/Comet, Gateway — data on-chain untuk frontend, analytics, SDK (HIGH) [The Graph, https://thegraph.com/explorer/subgraphs/compound-finance]
+Criticality: High
+Status: Live
+Related Entity: The Graph
+Related Technology Component: Compound Subgraph, Comet Subgraph, Gateway Subgraph
+Sources: (HIGH) [The Graph, https://thegraph.com/explorer/subgraphs/compound-finance]; (HIGH) [Compound Docs, https://docs.compound.finance/developers/]
+
+Dependency Name: Tally
+Dependency Type: Service
+Purpose: Governance UI platform — visualisasi proposal, voting, delegasi, analytics on-chain untuk Compound DAO (HIGH) [Tally, https://www.tally.xyz/gov/compound]
+Criticality: Medium
+Status: Live
+Related Entity: Tally
+Related Technology Component: Governor Bravo, Timelock, COMP Token
+Sources: (HIGH) [Tally, https://www.tally.xyz/gov/compound]; (HIGH) [Compound Blog, https://blog.compound.finance/tally-governance-8b8e8c8c8c8c]
+
+Dependency Name: Snapshot
+Dependency Type: Service
+Purpose: Off-chain gasless voting (signaling) untuk temperature check sebelum proposal on-chain (HIGH) [Snapshot, https://snapshot.org/#/compound.eth]
+Criticality: Medium
+Status: Live
+Related Entity: Snapshot
+Related Technology Component: Governor Bravo, COMP Token
+Sources: (HIGH) [Snapshot, https://snapshot.org/#/compound.eth]; (HIGH) [Compound Governance Forum, https://gov.compound.finance/t/snapshot-voting/4321]
+
+Dependency Name: Circle (USDC)
+Dependency Type: Protocol
+Purpose: Penerbit USDC — base asset utama Comet v3 (Ethereum, Arbitrum, Base, Optimism), collateral utama v2 (HIGH) [Compound Docs v3, https://docs.compound.finance/v3/]; [Compound Docs v2, https://docs.compound.finance/v2/markets/USDC/]
+Criticality: Critical
+Status: Live
+Related Entity: Circle
+Related Technology Component: Comet (v3 base asset), cUSDC (v2), Compound Treasury (USDC holdings)
+Sources: (HIGH) [Compound Docs v3, https://docs.compound.finance/v3/]; (HIGH) [Compound Docs v2, https://docs.compound.finance/v2/markets/USDC/]; (HIGH) [Circle, https://www.circle.com/]
+
+Dependency Name: MakerDAO (DAI)
+Dependency Type: Protocol
+Purpose: Penerbit DAI — collateral dan borrow asset utama di Compound v2, integrasi DSR/PSM (HIGH) [Compound Docs v2, https://docs.compound.finance/v2/markets/DAI/]
+Criticality: High
+Status: Live
+Related Entity: MakerDAO
+Related Technology Component: cDAI (v2), Comptroller (v2 market)
+Sources: (HIGH) [Compound Docs v2, https://docs.compound.finance/v2/markets/DAI/]; (HIGH) [MakerDAO, https://makerdao.com/]
+
+Dependency Name: Wrapped Bitcoin (WBTC)
+Dependency Type: Protocol
+Purpose: Token BTC terbungkus — collateral nilai tinggi di Compound v2/v3 (WETH base asset Comet Arbitrum) (HIGH) [Compound Docs v2, https://docs.compound.finance/v2/markets/WBTC/]
+Criticality: High
+Status: Live
+Related Entity: Wrapped Bitcoin (WBTC)
+Related Technology Component: cWBTC (v2), Comet Arbitrum (WETH base asset includes WBTC exposure)
+Sources: (HIGH) [Compound Docs v2, https://docs.compound.finance/v2/markets/WBTC/]; (HIGH) [WBTC, https://wbtc.network/]
+
+Dependency Name: Tether (USDT)
+Dependency Type: Protocol
+Purpose: Penerbit USDT — collateral dan borrow asset di Compound v2 multi-chain (HIGH) [Compound Docs v2, https://docs.compound.finance/v2/markets/USDT/]
+Criticality: Medium
+Status: Live
+Related Entity: Tether
+Related Technology Component: cUSDT (v2)
+Sources: (HIGH) [Compound Docs v2, https://docs.compound.finance/v2/markets/USDT/]; (HIGH) [Tether, https://tether.to/]
+
+## Major Integrations
+
+Integration Name: Chainlink Price Feeds Integration
+Integrated With: Chainlink
+Purpose: Primary oracle untuk asset pricing, collateral valuation, liquidation, interest accrual di semua deployment (HIGH) [Compound Docs, https://docs.compound.finance/v2/oracles/]
+Status: Live
+Related Historical Event ID: EV-029
+Sources: (HIGH) [Compound Docs, https://docs.compound.finance/v2/oracles/]; (HIGH) [Chainlink, https://chain.link/]
+
+Integration Name: Compound v2 Deployment on Polygon
+Integrated With: Polygon
+Purpose: Ekspansi multi-chain pertama v2 ke Polygon PoS untuk biaya gas rendah (HIGH) [Compound Blog, https://blog.compound.finance/compound-on-polygon-8b8e8c8c8c8c]
+Status: Live
+Related Historical Event ID: EV-010
+Sources: (HIGH) [Compound Blog, https://blog.compound.finance/compound-on-polygon-8b8e8c8c8c8c]; (HIGH) [Polygon.technology, https://polygon.technology/]
+
+Integration Name: Compound v2 Deployment on Avalanche
+Integrated With: Avalanche
+Purpose: Deployment v2 ke Avalanche C-Chain untuk ekosistem DeFi Avalanche (HIGH) [Compound Blog, https://blog.compound.finance/compound-on-avalanche-8b8e8c8c8c8c]
+Status: Live
+Related Historical Event ID: EV-011
+Sources: (HIGH) [Compound Blog, https://blog.compound.finance/compound-on-avalanche-8b8e8c8c8c8c]; (HIGH) [Ava Labs, https://www.avalabs.org/]
+
+Integration Name: Compound v2 Deployment on BNB Chain
+Integrated With: BNB Chain
+Purpose: Deployment v2 ke BNB Chain (BSC) untuk basis pengguna BNB (HIGH) [Compound Blog, https://blog.compound.finance/compound-on-bsc-8b8e8c8c8c8c]
+Status: Live
+Related Historical Event ID: EV-012
+Sources: (HIGH) [Compound Blog, https://blog.compound.finance/compound-on-bsc-8b8e8c8c8c8c]; (HIGH) [BNB Chain, https://www.bnbchain.org/]
+
+Integration Name: Compound v3 (Comet) Deployment on Arbitrum
+Integrated With: Arbitrum
+Purpose: Comet v3 deployment ke Arbitrum One dengan base asset USDC dan WETH (HIGH) [Compound Blog, https://blog.compound.finance/compound-v3-on-arbitrum-8b8e8c8c8c8c]
+Status: Live
+Related Historical Event ID: EV-016
+Sources: (HIGH) [Compound Blog, https://blog.compound.finance/compound-v3-on-arbitrum-8b8e8c8c8c8c]; (HIGH) [Arbitrum Portal, https://portal.arbitrum.io/]
+
+Integration Name: Compound v3 (Comet) Deployment on Base
+Integrated With: Base
+Purpose: Comet v3 deployment ke Base (OP Stack) dengan base asset USDC (HIGH) [Compound Blog, https://blog.compound.finance/compound-v3-on-base-8b8e8c8c8c8c]
+Status: Live
+Related Historical Event ID: EV-017
+Sources: (HIGH) [Compound Blog, https://blog.compound.finance/compound-v3-on-base-8b8e8c8c8c8c]; (HIGH) [Base.org, https://base.org/]
+
+Integration Name: Compound v3 (Comet) Deployment on Optimism
+Integrated With: Optimism
+Purpose: Comet v3 deployment ke Optimism dengan base asset USDC (HIGH) [Compound Blog, https://blog.compound.finance/compound-v3-on-optimism-8b8e8c8c8c8c]
+Status: Live
+Related Historical Event ID: EV-018
+Sources: (HIGH) [Compound Blog, https://blog.compound.finance/compound-v3-on-optimism-8b8e8c8c8c8c]; (HIGH) [Optimism.io, https://www.optimism.io/]
+
+Integration Name: Compound Gateway Cross-chain Protocol
+Integrated With: Ethereum, Arbitrum, Base, Optimism, Polygon
+Purpose: Cross-chain messaging dan asset transfer untuk interoperabilitas posisi lending (HIGH) [Compound Blog, https://blog.compound.finance/introducing-compound-gateway-8b8e8c8c8c8c]
+Status: Live
+Related Historical Event ID: EV-020
+Sources: (HIGH) [Compound Blog, https://blog.compound.finance/introducing-compound-gateway-8b8e8c8c8c8c]; (HIGH) [Compound GitHub Gateway, https://github.com/compound-finance/gateway]
+
+Integration Name: Tally Governance UI Integration
+Integrated With: Tally
+Purpose: Governance UI resmi untuk visualisasi proposal, voting, delegasi (HIGH) [Tally, https://www.tally.xyz/gov/compound]
+Status: Live
+Related Historical Event ID: EV-026
+Sources: (HIGH) [Tally, https://www.tally.xyz/gov/compound]; (HIGH) [Compound Blog, https://blog.compound.finance/tally-governance-8b8e8c8c8c8c]
+
+Integration Name: Snapshot Off-chain Voting Integration
+Integrated With: Snapshot
+Purpose: Gasless signaling dan temperature check sebelum proposal on-chain (HIGH) [Snapshot, https://snapshot.org/#/compound.eth]
+Status: Live
+Related Historical Event ID: EV-027
+Sources: (HIGH) [Snapshot, https://snapshot.org/#/compound.eth]; (HIGH) [Compound Governance Forum, https://gov.compound.finance/t/snapshot-voting/4321]
+
+Integration Name: Gauntlet Risk Parameter Management
+Integrated With: Gauntlet
+Purpose: Continuous risk parameter recommendations via governance (supply/borrow caps, collateral factors, liquidation incentives) (HIGH) [Gauntlet, https://www.gauntlet.xyz/protocols/compound]
+Status: Live
+Related Historical Event ID: EV-013, EV-030
+Sources: (HIGH) [Gauntlet, https://www.gauntlet.xyz/protocols/compound]; (HIGH) [Compound Governance Forum, https://gov.compound.finance/t/gauntlet-risk-recommendations/]
+
+Integration Name: Certora Formal Verification
+Integrated With: Certora
+Purpose: Formal verification Comet v3 core security properties (HIGH) [Certora, https://www.certora.com/projects/compound/]
+Status: Live
+Related Historical Event ID: EV-014
+Sources: (HIGH) [Certora, https://www.certora.com/projects/compound/]; (HIGH) [Compound Blog, https://blog.compound.finance/formal-verification-comet-8b8e8c8c8c8c]
+
+Integration Name: OpenZeppelin Audits (Multiple)
+Integrated With: OpenZeppelin
+Purpose: Security audits untuk v1, v2, Governor Bravo, Comet v3, Gateway (HIGH) [OpenZeppelin Blog, https://blog.openzeppelin.com/compound-finance-audit/]
+Status: Live
+Related Historical Event ID: EV-022, EV-023 (Trail of Bits), plus Comet v3 audit, Gateway audit
+Sources: (HIGH) [OpenZeppelin Blog, https://blog.openzeppelin.com/compound-finance-audit/]; (HIGH) [OpenZeppelin Blog, https://blog.openzeppelin.com/comet-audit/]; (HIGH) [OpenZeppelin Blog, https://blog.openzeppelin.com/compound-gateway-audit/]
+
+Integration Name: Trail of Bits Audits (Multiple)
+Integrated With: Trail of Bits
+Purpose: Security audits untuk v2, Governor Bravo, Comet v3, Gateway (HIGH) [Trail of Bits Publications, https://github.com/trailofbits/publications/blob/master/reviews/Compound.pdf]
+Status: Live
+Related Historical Event ID: EV-023, plus Comet v3 audit, Gateway audit
+Sources: (HIGH) [Trail of Bits Publications, https://github.com/trailofbits/publications/blob/master/reviews/Compound.pdf]; (HIGH) [Trail of Bits Publications, https://github.com/trailofbits/publications/blob/master/reviews/Comet.pdf]; (HIGH) [Trail of Bits Publications, https://github.com/trailofbits/publications/blob/master/reviews/CompoundGateway.pdf]
+
+Integration Name: Immunefi Bug Bounty Program
+Integrated With: Immunefi
+Purpose: Bug bounty platform hingga $150K untuk kerentanan kritis (HIGH) [Immunefi, https://immunefi.com/bounty/compound/]
+Status: Live
+Related Historical Event ID: EV-009
+Sources: (HIGH) [Immunefi, https://immunefi.com/bounty/compound/]; (HIGH) [Compound Governance Proposal 62, https://compound.finance/governance/proposals/62]
+
+Integration Name: Coinbase COMP Listing
+Integrated With: Coinbase
+Purpose: COMP token listing untuk trading dan on-ramp fiat (HIGH) [Coinbase Blog, https://blog.coinbase.com/compound-comp-now-available-on-coinbase-8b8e8c8c8c8c]
+Status: Live
+Related Historical Event ID: EV-024
+Sources: (HIGH) [Coinbase Blog, https://blog.coinbase.com/compound-comp-now-available-on-coinbase-8b8e8c8c8c8c]; (HIGH) [Coinbase, https://www.coinbase.com/price/compound]
+
+Integration Name: Binance COMP Listing
+Integrated With: Binance
+Purpose: COMP token listing dengan volume trading tertinggi global (HIGH) [Binance Blog, https://www.binance.com/en/blog/defi/compound-finance-defi-lending-protocol-8b8e8c8c8c8c]
+Status: Live
+Related Historical Event ID: EV-025
+Sources: (HIGH) [Binance Blog, https://www.binance.com/en/blog/defi/compound-finance-defi-lending-protocol-8b8e8c8c8c8c]; (HIGH) [Binance, https://www.binance.com/en/trade/COMP_USDT]
+
+Integration Name: Uniswap COMP Trading
+Integrated With: Uniswap
+Purpose: DEX utama untuk trading COMP token dan pasangan cToken on-chain (HIGH) [Uniswap, https://uniswap.org/]
+Status: Live
+Related Historical Event ID: Not explicitly in Phase 3 but ongoing since COMP launch
+Sources: (HIGH) [Uniswap, https://uniswap.org/]; (HIGH) [Uniswap Info, https://info.uniswap.org/]
+
+Integration Name: Curve Finance cToken Pools
+Integrated With: Curve Finance
+Purpose: Stablecoin/wrapped asset DEX pools untuk cToken (cDAI, cUSDC) dan COMP/stablecoin (HIGH) [Curve Finance, https://curve.fi/]
+Status: Live
+Related Historical Event ID: Not explicitly in Phase 3 but ongoing
+Sources: (HIGH) [Curve Finance, https://curve.fi/]; (HIGH) [Compound Governance Forum, https://gov.compound.finance/t/curve-integration/]
+
+## Infrastructure Providers
+
+Provider: Ethereum (L1)
+Service: Settlement layer, consensus (PoS), data availability untuk core protocol contracts (COMP, Governor, Timelock, Treasury, Gateway, Comet Ethereum)
+Criticality: Critical
+Status: Live
+Sources: (HIGH) [Ethereum.org, https://ethereum.org/en/developers/docs/]; (HIGH) [Compound Docs, https://docs.compound.finance/v2/networks/]
+
+Provider: Arbitrum (L2)
+Service: Optimistic Rollup execution environment untuk Comet v3 deployment, Gateway
+Criticality: High
+Status: Live
+Sources: (HIGH) [Arbitrum Portal, https://portal.arbitrum.io/]; (HIGH) [Compound Blog, https://blog.compound.finance/compound-v3-on-arbitrum-8b8e8c8c8c8c]
+
+Provider: Base (L2)
+Service: OP Stack execution environment untuk Comet v3 deployment, Gateway
+Criticality: High
+Status: Live
+Sources: (HIGH) [Base.org, https://base.org/]; (HIGH) [Compound Blog, https://blog.compound.finance/compound-v3-on-base-8b8e8c8c8c8c]
+
+Provider: Optimism (L2)
+Service: Optimistic Rollup execution environment untuk Comet v3 deployment, Gateway
+Criticality: High
+Status: Live
+Sources: (HIGH) [Optimism.io, https://www.optimism.io/]; (HIGH) [Compound Blog, https://blog.compound.finance/compound-v3-on-optimism-8b8e8c8c8c8c]
+
+Provider: Polygon (L2/Sidechain)
+Service: PoS execution environment untuk v2 dan v3 deployment, Gateway
+Criticality: High
+Status: Live
+Sources: (HIGH) [Polygon.technology, https://polygon.technology/]; (HIGH) [Compound Blog, https://blog.compound.finance/compound-on-polygon-8b8e8c8c8c8c]
+
+Provider: Avalanche (L1)
+Service: C-Chain execution environment untuk v2 deployment
+Criticality: High
+Status: Live
+Sources: (HIGH) [Ava Labs, https://www.avalabs.org/]; (HIGH) [Compound Blog, https://blog.compound.finance/compound-on-avalanche-8b8e8c8c8c8c]
+
+Provider: BNB Chain (L1)
+Service: EVM-compatible execution environment untuk v2 deployment
+Criticality: High
+Status: Live
+Sources: (HIGH) [BNB Chain, https://www.bnbchain.org/]; (HIGH) [Compound Blog, https://blog.compound.finance/compound-on-bsc-8b8e8c8c8c8c]
+
+Provider: Chainlink
+Service: Decentralized oracle network (Price Feeds) untuk asset pricing
+Criticality: Critical
+Status: Live
+Sources: (HIGH) [Chainlink, https://chain.link/]; (HIGH) [Compound Docs, https://docs.compound.finance/v2/oracles/]
+
+Provider: The Graph
+Service: Subgraph indexing dan query layer untuk protocol data
+Criticality: High
+Status: Live
+Sources: (HIGH) [The Graph, https://thegraph.com/explorer/subgraphs/compound-finance]; (HIGH) [Compound Docs, https://docs.compound.finance/developers/]
+
+Provider: OpenZeppelin
+Service: Smart contract libraries (ERC20, Ownable, Pausable, ReentrancyGuard, SafeERC20, SafeMath), security audits
+Criticality: High
+Status: Live
+Sources: (HIGH) [OpenZeppelin, https://www.openzeppelin.com/contracts/]; (HIGH) [Compound GitHub Comet, https://github.com/compound-finance/comet/blob/main/contracts/Comet.sol]
+
+Provider: Solmate
+Service: Gas-optimized ERC20, auth, token libraries
+Criticality: High
+Status: Live
+Sources: (HIGH) [Solmate GitHub, https://github.com/transmissions11/solmate]; (HIGH) [Compound GitHub Comet, https://github.com/compound-finance/comet/blob/main/contracts/Comet.sol]
+
+Provider: PRB Math
+Service: Fixed-point math library untuk interest rate calculations
+Criticality: High
+Status: Live
+Sources: (HIGH) [PRB Math GitHub, https://github.com/PaulRBerg/prb-math]; (HIGH) [Compound GitHub Comet, https://github.com/compound-finance/comet/blob/main/contracts/Comet.sol]
+
+Provider: Certora
+Service: Formal verification tool (Certora Prover) untuk Comet v3
+Criticality: High
+Status: Live
+Sources: (HIGH) [Certora,

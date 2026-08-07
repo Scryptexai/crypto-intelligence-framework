@@ -1,0 +1,374 @@
+PROJECT: EOS
+
+Entity: EOS Network Foundation (ENF)
+Type: Foundation
+Relationship: Entitas pengelola jaringan EOS saat ini yang bertanggung jawab atas pengembangan protokol, pertumbuhan ekosistem, operasi, dan pengelolaan treasury jaringan (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [EOS Network Foundation, https://eosnetwork.com/foundation/]; (HIGH) [CoinDesk, https://www.coindesk.com/business/2021/09/22/eos-community-launches-foundation-to-take-over-from-block-one/]
+
+---
+Entity: Block.one
+Type: Company
+Relationship: Entitas peluncur awal (original launcher) yang mengadakan ICO tahunan 2017–2018, mengembangkan perangkat lunak EOSIO awal, dan menyelesaikan tuntutan SEC 2019 sebesar $24 juta (HIGH)
+Period: 2017–2021 (peran aktif), 2021–sekarang (pemegang IP/lisensi)
+Exposure Type: technical-integration
+Evidence: (HIGH) [SEC Complaint vs Block.one, https://www.sec.gov/litigation/complaints/2019/pr2019-197.pdf]; (HIGH) [Block.one Blog, https://block.one/blog/block-one-releases-dawn-1-0/]; (HIGH) [CoinDesk, https://www.coindesk.com/business/2021/01/11/dan-larimer-leaves-block-one/]
+
+---
+Entity: Brendan Blumer
+Type: Person
+Relationship: CEO Block.one sejak pendirian; tokoh kunci di balik ICO EOS $4+ miliar dan visi awal protokol (HIGH)
+Period: 2017–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Bloomberg, https://www.bloomberg.com/profile/person/18563544]; (HIGH) [SEC Complaint vs Block.one, https://www.sec.gov/litigation/complaints/2019/pr2019-197.pdf]
+
+---
+Entity: Dan Larimer
+Type: Person
+Relationship: CTO Block.one dan arsitek utama arsitektur DPoS/EOSIO; keluar dari Block.one Januari 2021 (HIGH)
+Period: 2017–2021
+Exposure Type: technical-integration
+Evidence: (HIGH) [CoinDesk, https://www.coindesk.com/business/2021/01/11/dan-larimer-leaves-block-one/]; (HIGH) [Block.one Blog, https://block.one/blog/block-one-releases-dawn-1-0/]
+
+---
+Entity: Brock Pierce
+Type: Person
+Relationship: Co-founder Block.one; keluar pada tahap awal sebelum peluncuran mainnet (HIGH)
+Period: 2017–2018
+Exposure Type: financial-collateral
+Evidence: (HIGH) [CoinDesk, https://www.coindesk.com/business/2021/01/11/dan-larimer-leaves-block-one/]; (MEDIUM) [Forbes, https://www.forbes.com/sites/rogerhuang/2021/01/11/dan-larimer-leaves-block-one-what-does-it-mean-for-eos/]
+
+---
+Entity: Yves La Rose
+Type: Person
+Relationship: CEO EOS Network Foundation (ENF) memimpin tim engineering, growth, dan operations sejak pembentukan ENF 2021 (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [EOS Network Foundation Team Page, https://eosnetwork.com/foundation/team/]; (HIGH) [CoinDesk, https://www.coindesk.com/business/2021/09/22/eos-community-launches-foundation-to-take-over-from-block-one/]
+
+---
+Entity: EOS Network Foundation Core Team
+Type: Organization
+Relationship: Tim engineering, growth, operations (~30+ orang terverifikasi) yang membangun dan memelihara EOS Mainnet, EOS EVM, Spring SDK, Hyperion, dan infrastruktur terkait (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [EOS Network Foundation Team Page, https://eosnetwork.com/foundation/team/]; (MEDIUM) [GitHub EOS Network Foundation, https://github.com/eosnetworkfoundation]
+
+---
+Entity: U.S. Securities and Exchange Commission (SEC)
+Type: Government
+Relationship: Regulator yang menuntut Block.one atas penjualan token EOS tidak terdaftar; menyelesaikan kasus September 2019 dengan denda $24 juta tanpa mengakui atau menolak tuduhan (HIGH)
+Period: 2019 (penyelesaian)
+Exposure Type: unknown
+Evidence: (HIGH) [SEC Press Release, https://www.sec.gov/news/press-release/2019-197]; (HIGH) [SEC Complaint vs Block.one, https://www.sec.gov/litigation/complaints/2019/pr2019-197.pdf]
+
+---
+Entity: Antelope Protocol (Leap Node Software)
+Type: Protocol
+Relationship: Protokol konsensus dan perangkat lunak node (Leap) yang menjadi dasar EOS Mainnet; dikembangkan kolaboratif oleh ENF dan kontributor komunitas (HIGH)
+Period: 2021–sekarang (sebagai Antelope), 2018–2021 (sebagai EOSIO)
+Exposure Type: technical-integration
+Evidence: (HIGH) [GitHub AntelopeIO/leap, https://github.com/AntelopeIO/leap]; (HIGH) [EOS Network Foundation, https://eosnetwork.com/ecosystem/]
+
+---
+Entity: EOS Mainnet
+Type: Chain
+Relationship: Layer 1 blockchain utama yang menggunakan protokol Antelope/DPoS; diluncurkan 14 Juni 2018 oleh Block Producers terpilih (HIGH)
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [CoinDesk, https://www.coindesk.com/markets/2018/06/14/eos-mainnet-launches-after-block-producers-vote/]; (HIGH) [EOS Network Foundation, https://eosnetwork.com/]
+
+---
+Entity: EOS EVM
+Type: Protocol
+Relationship: Lingkungan eksekusi kompatibel Ethereum (EVM) yang berjalan di atas EOS Mainnet; memungkinkan deployment kontrak Solidity/Vyper asli (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [EOS Network Foundation EOS EVM, https://eosnetwork.com/ecosystem/eos-evm/]; (HIGH) [GitHub eosnetworkfoundation/eos-evm, https://github.com/eosnetworkfoundation/eos-evm]
+
+---
+Entity: Spring SDK (f.k.a. EOS SDK/CDT)
+Type: Application
+Relationship: Toolkit pengembang (SDK) untuk membangun smart contract dan dApp di ekosistem EOS/Antelope; dikelola ENF (HIGH)
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [EOS Network Foundation Products, https://eosnetwork.com/ecosystem/]; (HIGH) [GitHub eosnetworkfoundation/spring, https://github.com/eosnetworkfoundation/spring]
+
+---
+Entity: Hyperion History API
+Type: Infrastructure Provider
+Relationship: Layanan API sejarah/indeks data on-chain EOS yang dipakai eksplorator, wallet, dan dApp untuk query data historis (HIGH)
+Period: 2019–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [EOS Network Foundation Ecosystem, https://eosnetwork.com/ecosystem/]; (HIGH) [GitHub eosrio/hyperion, https://github.com/eosrio/hyperion]
+
+---
+Entity: Firehose (StreamingFast)
+Type: Infrastructure Provider
+Relationship: Layanan streaming data blok real-time dan indeks terstruktur untuk EOS/Antelope; digunakan pengembang untuk sinkronisasi cepat (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [StreamingFast Firehose, https://streamingfast.io/firehose]; (MEDIUM) [EOS Network Foundation Ecosystem, https://eosnetwork.com/ecosystem/]
+
+---
+Entity: Defibox
+Type: Application
+Relationship: Protokol DeFi terbesar di EOS (DEX AMM, lending, stablecoin USN); TVL historis paling tinggi ekosistem (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [DappRadar EOS, https://dappradar.com/rankings/protocol/eos]; (MEDIUM) [Defibox Official, https://defibox.com/]
+
+---
+Entity: OrganicSwap
+Type: Application
+Relationship: DEX AMM berbasis EOS dengan fokus pairing stablecoin dan token ekosistem; kontributor likuiditas DeFi (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [DappRadar EOS, https://dappradar.com/rankings/protocol/eos]; (MEDIUM) [OrganicSwap, https://organicswap.io/]
+
+---
+Entity: Ultra
+Type: Application
+Relationship: Platform GameFi/penerbitan game berbasis blockchain; menggunakan teknologi EOS/Antelope dan menjembatani ke WAX (MEDIUM)
+Period: 2019–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Ultra.io, https://ultra.io/]; (MEDIUM) [EOS Network Foundation Ecosystem, https://eosnetwork.com/ecosystem/]
+
+---
+Entity: WAX (Worldwide Asset eXchange)
+Type: Chain
+Relationship: Blockchain berjenis Antelope yang berfokus NFT/GameFi; memiliki bridge dan interoperabilitas dengan EOS Mainnet (MEDIUM)
+Period: 2019–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [WAX Official, https://wax.io/]; (MEDIUM) [EOS Network Foundation Ecosystem, https://eosnetwork.com/ecosystem/]
+
+---
+Entity: Voice
+Type: Application
+Relationship: Platform media sosial berbasis blockchain yang dibangun Block.one di atas EOS; ditutup 2021 (HIGH)
+Period: 2020–2021
+Exposure Type: technical-integration
+Evidence: (HIGH) [CoinDesk, https://www.coindesk.com/business/2021/02/10/block-one-shuts-down-voice-social-media-platform/]; (HIGH) [Block.one Blog, https://block.one/blog/voice-launches-beta/]
+
+---
+Entity: Anchor Wallet
+Type: Application
+Relationship: Wallet non-custodial populer untuk ekosistem Antelope (EOS, WAX, Telos, dll); mendukung signing, resource management, dan dApp browser (HIGH)
+Period: 2019–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Anchor Wallet, https://greymass.com/anchor]; (HIGH) [EOS Network Foundation Ecosystem, https://eosnetwork.com/ecosystem/]
+
+---
+Entity: Wombat Wallet
+Type: Application
+Relationship: Wallet mobile/web non-custodial untuk EOS dan chain Antelope lain; terintegrasi dApp store dan NFT gallery (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Wombat Wallet, https://wombat.app/]; (MEDIUM) [EOS Network Foundation Ecosystem, https://eosnetwork.com/ecosystem/]
+
+---
+Entity: EOS Authority
+Type: Infrastructure Provider
+Relationship: Penyedia block explorer resmi ENF (eosq.app), tooling voting BP, dan analisis on-chain; entitas komunitas independen (HIGH)
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [EOS Authority, https://eosauthority.com/]; (HIGH) [EOS Network Foundation Block Explorers, https://eosnetwork.com/block-explorers/]
+
+---
+Entity: Bloks.io
+Type: Infrastructure Provider
+Relationship: Block explorer populer komunitas untuk EOS dan chain Antelope lain; dikembangkan oleh HiveBP/EOS Cafe Block (MEDIUM)
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Bloks.io, https://bloks.io/]; (MEDIUM) [EOS Network Foundation Block Explorers, https://eosnetwork.com/block-explorers/]
+
+---
+Entity: Etherscan
+Type: Infrastructure Provider
+Relationship: Block explorer Ethereum yang menampilkan kontrak token EOS ERC-20 bridge (0x86Fa049857E0209aa7D9e616F7eb3b3B78ECfdb0) (HIGH)
+Period: 2017–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Etherscan EOS Token, https://etherscan.io/token/0x86Fa049857E0209aa7D9e616F7eb3b3B78ECfdb0]
+
+---
+Entity: DappRadar
+Type: Media
+Relationship: Platform analitik dApp yang melacak ranking protokol, TVL, dan aktivitas pengguna di ekosistem EOS (MEDIUM)
+Period: 2019–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (MEDIUM) [DappRadar EOS Rankings, https://dappradar.com/rankings/protocol/eos]
+
+---
+Entity: CoinMarketCap
+Type: Media
+Relationship: Penyedia data harga, market cap, dan volume trading token EOS; referensi pasar standar industri (HIGH)
+Period: 2017–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [CoinMarketCap EOS, https://coinmarketcap.com/currencies/eos/]
+
+---
+Entity: CoinDesk
+Type: Media
+Relationship: Media berita industri crypto yang meliput peluncuran mainnet, pembentukan ENF, keluarnya Dan Larimer, dan penutupan Voice (HIGH)
+Period: 2018–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [CoinDesk EOS Tag, https://www.coindesk.com/tag/eos/]
+
+---
+Entity: Bloomberg
+Type: Media
+Relationship: Media bisnis global yang memprofil Brendan Blumer dan meliput perkembangan Block.one/EOS (MEDIUM)
+Period: 2018–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (MEDIUM) [Bloomberg Brendan Blumer Profile, https://www.bloomberg.com/profile/person/18563544]
+
+---
+Entity: GitHub (Microsoft)
+Type: Company
+Relationship: Platform hosting repositori resmi kode EOS/Antelope (github.com/eosnetworkfoundation, github.com/AntelopeIO) (HIGH)
+Period: 2017–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [GitHub EOS Network Foundation, https://github.com/eosnetworkfoundation]; (HIGH) [GitHub AntelopeIO, https://github.com/AntelopeIO]
+
+---
+Entity: Cayman Islands Jurisdiction
+Type: Government
+Relationship: Yurisdiksi inkorporasi Block.one dan EOS Network Foundation; kerangka hukum operasi entitas (HIGH)
+Period: 2017–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [Block.one Terms of Use, https://block.one/terms-of-use/]; (HIGH) [EOS Network Foundation, https://eosnetwork.com/foundation/]
+
+---
+Entity: Block Producers (BP) Collective
+Type: Organization
+Relationship: 21 Block Producer aktif + cadangan yang divoting pemegang token; memproduksi blok, memvalidasi transaksi, dan menerima inflasi 1% tahunan (HIGH)
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [EOS Authority Block Producers, https://eosauthority.com/block-producers]; (HIGH) [EOS Network Foundation, https://eosnetwork.com/]
+
+---
+Entity: eosio.token Contract
+Type: Protocol
+Relationship: Kontrak sistem native yang mengelola supply token EOS, transfer, dan aksi terkait token di mainnet (HIGH)
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [EOS Authority Contract, https://eosauthority.com/contract/eosio.token]; (HIGH) [GitHub EOSIO eosio.token, https://github.com/EOSIO/eos/blob/master/contracts/eosio.token/eosio.token.cpp]
+
+---
+Entity: eosio.system Contract
+Type: Protocol
+Relationship: Kontrak sistem yang mengelola staking, voting BP, alokasi inflasi (1% BP, 1% ENF, dst), RAM market, dan resource management (HIGH)
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [EOS Authority Contract, https://eosauthority.com/contract/eosio.system]; (HIGH) [GitHub EOSIO eosio.system, https://github.com/EOSIO/eos/blob/master/contracts/eosio.system/eosio.system.cpp]
+
+---
+Entity: EOS Network Foundation Discord Community
+Type: Community Organization
+Relationship: Server Discord resmi komunitas EOS untuk diskusi pengembang, pemegang token, dan kontributor (~50k+ member) (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (MEDIUM) [EOS Network Foundation Discord, https://discord.gg/eosnetwork]
+
+---
+Entity: EOS Project Telegram
+Type: Community Organization
+Relationship: Grup Telegram resmi komunitas EOS untuk announcements dan diskusi umum (MEDIUM)
+Period: 2017–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (MEDIUM) [Telegram EOSProject, https://t.me/EOSProject]
+
+---
+Entity: EOS X/Twitter Account (@EOSNetwork)
+Type: Media
+Relationship: Akun media sosial resmi ENF untuk pengumuman rilis, upgrade jaringan, dan kampanye ekosistem (HIGH)
+Period: 2021–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [X.com EOSNetwork, https://x.com/EOSNetwork]
+
+### PERSON
+- Brendan Blumer
+- Dan Larimer
+- Brock Pierce
+- Yves La Rose
+
+### FOUNDATION
+- EOS Network Foundation (ENF)
+
+### COMPANY
+- Block.one
+- GitHub (Microsoft)
+- StreamingFast (Firehose provider)
+
+### PROTOCOL
+- Antelope Protocol (Leap Node Software)
+- EOS EVM
+- eosio.token Contract
+- eosio.system Contract
+
+### CHAIN
+- EOS Mainnet
+- WAX (Worldwide Asset eXchange)
+
+### INVESTOR
+- (Tidak teridentifikasi investor/VC spesifik dari Phase 1; ICO bersifat publik permissionless)
+
+### INFRASTRUCTURE
+- Hyperion History API
+- Firehose (StreamingFast)
+- EOS Authority
+- Bloks.io
+- Etherscan
+- Anchor Wallet
+- Wombat Wallet
+
+### APPLICATION
+- Spring SDK (f.k.a. EOS SDK/CDT)
+- Defibox
+- OrganicSwap
+- Ultra
+- Voice
+
+### SECURITY
+- (Tidak teridentifikasi auditor/firma keamanan spesifik dari Phase 1)
+
+### DAO
+- Block Producers (BP) Collective
+
+### GOVERNMENT
+- U.S. Securities and Exchange Commission (SEC)
+- Cayman Islands Jurisdiction
+
+### MEDIA
+- CoinMarketCap
+- CoinDesk
+- Bloomberg
+- DappRadar
+- EOS X/Twitter Account (@EOSNetwork)
+
+### COMMUNITY
+- EOS Network Foundation Discord Community
+- EOS Project Telegram
+
+### OTHER
+- EOS Network Foundation Core Team
+
+---
+
+**SUMMARY**
+
+Total Entity: 38
+Internal: 12 (ENF, Block.one, Core Team, Founders, BP Collective, EOS Mainnet, EOS EVM, Spring SDK, eosio.token, eosio.system, Antelope Protocol, Voice)
+External: 26 (SEC, Cayman Islands, GitHub, Media x5, Community x2, Infrastructure x7, DeFi/App x4, WAX, Ultra, Investors none identified)
+Unknown: 0
+
+---
+
+Open Threads
+- Identitas investor/VC early-stage (jika ada) selain ICO publik — Phase 1 tidak menyebut nama VC.
+- Detail auditor keamanan (security firms) yang memeriksa kontrak sistem EOS/Antelope — tidak tercakup Phase 1.
+- Daftar lengkap 21 Block Producer aktif saat ini dan afiliasi mereka — hanya diketahui sebagai kolektif.
+- Komposisi treasury ENF on-chain (alamat multi-sig, jumlah EOS/stablecoin) — tidak dipublikasikan transparan real-time.
+- Status kepemilikan IP/lisensi perangkat lunak Antelope (Leap) antara Block.one dan ENF — apakah ENF memiliki full ownership atau lisensi perpetuitas.
+- Entitas yang mengoperasikan bridge token EOS ERC-20 di Ethereum (0x86Fa049857E0209aa7D9e616F7eb3b3B78ECfdb0) — tidak jelas dari Phase 1.

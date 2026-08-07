@@ -1,0 +1,218 @@
+PROJECT: Cosmos
+
+1. Menjadi "Internet of Blockchains" melalui protokol IBC yang memungkinkan interoperabilitas sovereign chains
+· Evidence: Cosmos whitepaper (2016) mendefinisikan visi "Internet of Blockchains"; IBC dirilis via Stargate upgrade Februari 2021 (Phase 3 EV-STARGATE-2021); saat ini 100+ chains terhubung via IBC (Phase 7 data Map of Zones)
+· Supporting Dataset: Phase 1 Foundation, Phase 3 History (EV-STARGATE-2021), Phase 4 Technology (IBC spec), Phase 7 Ecosystem (IBC connections)
+
+2. Memberikan framework modular (Cosmos SDK + CometBFT) agar developer bisa membangun application-specific blockchains (appchains) tanpa konsensus dari nol
+· Evidence: Cosmos SDK dirilis 2018; Ignite CLI (Starport) mempermudah scaffolding; ratusan chains dibangun: Osmosis, Juno, Evmos, Neutron, Celestia, Noble, Stride (Phase 7 Major Applications); CometBFT rebrand 2023 memisahkan konsensus dari application layer (Phase 3 EV-COMETBFT-2023)
+· Supporting Dataset: Phase 3 History (SDK releases), Phase 4 Technology (SDK architecture), Phase 7 Ecosystem (SDK projects)
+
+3. Mengamankan ekosistem melalui shared security (Interchain Security) di mana ATOM stakers memvalidasi consumer chains
+· Evidence: ICS v1 launch November 2023 (Phase 3 EV-ICS-2023); Neutrality & Stride sebagai consumer chain pertama; ICS v2 2024 memperluas ke partial set security (Phase 3 EV-ICSV2-2024); ATOM utility diperluas ke provider chain revenue (Phase 6 Token Utility)
+· Supporting Dataset: Phase 3 History (ICS events), Phase 6 Token (Interchain Security utility), Phase 7 Ecosystem (consumer chains)
+
+4. Desentralisasi progresif governance melalui on-chain voting (1 bonded ATOM = 1 vote) dan Community Pool treasury management
+· Evidence: Governance live sejak genesis 2019; proposal parameter changes, software upgrades, community pool spending (Phase 6 Governance); ICF mengelola grants off-chain tapi on-chain treasury via Community Pool (Phase 5 Financial, Phase 6 Token)
+· Supporting Dataset: Phase 3 History (governance proposals), Phase 5 Financial (ICF grants), Phase 6 Token (governance model)
+
+5. Membangun tokenomics ATOM yang mengikat value capture ke utility (gas, staking, governance, ICS, DeFi collateral) tanpa supply cap
+· Evidence: Dynamic inflation 7–20% targeting 67% bonded ratio (Phase 6 Inflation); utility expansi: gas, staking, governance, validator bonding, ICS provider, DeFi collateral, liquid staking derivatives (Phase 6 Utility); ATOM 2.0 whitepaper 2022 propose fee capture tapi tidak diadopsi penuh (Phase 3 EV-ATOM2-2022)
+· Supporting Dataset: Phase 3 History (ATOM 2.0), Phase 6 Token (utility, inflation, distribution), Phase 8 Market (liquidity, staking ratio)
+
+Keputusan: Meluncurkan Public Fundraiser (ICO) April 2017 mengumpulkan ~$17M (4,870 BTC + 246,889 ETH) untuk 75% initial supply (168,475,963 ATOM)
+· Trigger: Perlu dana pengembangan Cosmos Network & Tendermint Core sebelum mainnet launch; visi whitepaper 2016 memerlukan kapital signifikan
+· Evidence: ICF blog "ATOM Token Sale Results" 2017; total 168.475.963 ATOM terjual; distribusi: public fundraiser 75%, strategic/seed ~7%, team ~10%, foundation ~10%, advisors ~5% (Phase 6 Distribution)
+· Decision: Menjual token ATOM via fundraiser publik dengan vesting 0 hari (liquid at TGE) untuk public/strategic/seed; team/advisor vesting 2-3 tahun
+· Immediate Result: ~$17M terkumpul; Interchain Foundation (ICF) dibentuk Swiss non-profit Juli 2017 sebagai treasury holder; All In Bits Inc (Tendermint) mendapat funding operasi
+· Long-term Impact: Distribusi token awal terbentuk; tidak ada vesting lockup untuk investor awal menciptakan sell pressure awal; ICF menjadi entity utama pengelola ekosistem
+· Supporting Dataset: Phase 3 EV-ICO-2017, Phase 5 Financial (funding), Phase 6 Token (distribution, vesting), Phase 2 Entity (ICF, All In Bits Inc)
+
+Keputusan: Meluncurkan Cosmos Hub Mainnet (Genesis) 13 Maret 2019
+· Trigger: Tendermint Core & Cosmos SDK siap production; fundraiser 2017 selesai; ICF mengelola treasury
+· Evidence: Blog "Cosmos Hub Launch Announcement" 2019; genesis block 236,198,958 ATOM; validator set 100 awal; Gaia v1.0.0 release (Phase 3 EV-MAINNET-2019)
+· Decision: Launch proof-of-stake hub dengan 100 validator; ATOM liquid untuk fundraiser participants; team/advisor vesting dimulai
+· Immediate Result: Jaringan live; staking & governance aktif; ATOM trading dimulai di exchange (Binance, dll) beberapa minggu setelahnya
+· Long-term Impact: Menjadi "Hub" pertama dalam arsitek hub-and-zone; fondasi untuk IBC nanti; distribusi token genesis mengunci alokasi awal
+· Supporting Dataset: Phase 3 EV-MAINNET-2019, Phase 4 Technology (consensus), Phase 6 Token (TGE), Phase 8 Market (exchange listings)
+
+Keputusan: Upgrade Stargate (IBC Enabled) 17 Februari 2021
+· Trigger: IBC spec finalized (ICS-20/23/24); kebutuhan cross-chain transfer & composability; ekosistem chains (Osmosis, Juno, dll) siap launch
+· Evidence: Stargate upgrade proposal passed; IBC module integrated ke Gaia; Cosmos Hub menjadi IBC router utama (Phase 3 EV-STARGATE-2021); Map of Zones menunjukkan IBC channels explosion post-Stargate
+· Decision: Hard fork ke Stargate (Gaia v7) mengaktifkan IBC, CosmWasm (wasm), state sync, protobuf migration
+· Immediate Result: IBC live; Osmosis launch Juni 2021; cross-chain DeFi bermula; ATOM menjadi gas token untuk IBC relayers
+· Long-term Impact: Memvalidasi visi "Internet of Blockchains"; menarik developer ke Cosmos SDK; memposisikan Cosmos Hub sebagai routing hub; IBC volume tumbuh eksponensial (Phase 8 Market IBC volume)
+· Supporting Dataset: Phase 3 EV-STARGATE-2021, Phase 4 Technology (IBC), Phase 7 Ecosystem (IBC chains), Phase 8 Market (IBC volume)
+
+Keputusan: Meluncurkan Liquid Staking (Stride, pSTAKE) 2021
+· Trigger: Staking ratio tinggi (>60%) mengurangi liquidity ATOM; DeFi butuh collateral liquid; competitor (Ethereum Lido) menunjukkan product-market fit
+· Evidence: Stride launch Sep 2021 (Phase 3 EV-LIQUID-STAKING-2021); pSTAKE stkATOM; Quicksilver qATOM 2022; liquid staking derivatives menjadi major DeFi primitive di Cosmos (Phase 7 Major Applications)
+· Decision: Mendukung liquid staking via IBC & Cosmos SDK modules; tidak ada protocol-level opposition; ICF grants ke Stride/pSTAKE
+· Immediate Result: stATOM, stkATOM, qATOM circulación; staking ratio tetap tinggi tapi liquidity DeFi meningkat; ATOM utility sebagai collateral expanse
+· Long-term Impact: Liquid staking derivatives menjadi >30% staked ATOM (Phase 8 Market liquidity); mengubah risk profile slashing (derivative holders); mendorong DeFi TVL growth (Osmosis, Mars, Umee)
+· Supporting Dataset: Phase 3 EV-LIQUID-STAKING-2021, Phase 6 Token (utility), Phase 7 Ecosystem (major apps), Phase 8 Market (TVL, liquidity)
+
+Keputusan: Mempublikasikan ATOM 2.0 Whitepaper September 2022 (tidak diimplementasikan sebagai single upgrade)
+· Trigger: Kritik tokenomics ATOM "hanya staking token" tanpa value capture dari IBC/economic activity; kompetitor (Polkadot, Avalanche) punya fee capture mechanism
+· Evidence: atom2.cosmos.network whitepaper; proposal: interchain scheduler, fee capture, new issuance curve, ATOM sebagai reserve currency; community feedback campuran; tidak ada single governance proposal untuk adopt penuh (Phase 3 EV-ATOM2-2022)
+· Decision: Mengeluarkan whitepaper sebagai signaling & discussion framework; implementasi pecah jadi proposals terpisah (ICS, liquid staking integration, fee market discussion)
+· Immediate Result: Debat komunitas intens; harga ATOM volatil; beberapa ide diadopsi (ICS v1/v2, partial fee capture via ICS revenue)
+· Long-term Impact: Membentuk roadmap 2023-2024; shift naratif dari "hub-and-spoke" ke "interchain security provider"; fee burn discussion masih ongoing 2024 (Phase 3 EV-FEE-BURN-2024)
+· Supporting Dataset: Phase 3 EV-ATOM2-2022, Phase 6 Token (major events), Phase 8 Market (narrative)
+
+Keputusan: Launch Interchain Security v1 (Consumer Chains) November 2023
+· Trigger: ATOM 2.0 proposal shared security; kebutuhan consumer chains (Neutrality, Stride) untuk security tanpa bootstrap validator set sendiri
+· Evidence: Proposal 792 passed; Neutrality & Stride onboard sebagai consumer chain pertama; validator Cosmos Hub menjalankan consumer chain binary (Phase 3 EV-ICS-2023); ICS v2 2024 partial set security (Phase 3 EV-ICSV2-2024)
+· Decision: Mengaktifkan ICS module di Cosmos Hub; ATOM stakers otomatis jadi provider validators; consumer chains bayar reward ke ATOM stakers
+· Immediate Result: ATOM stakers mendapat additional yield; consumer chains launch tanpa validator bootstrap; shared security model terbukti works
+· Long-term Impact: ATOM value capture dari consumer chain activity; memperkuat naratif ATOM sebagai "security asset"; menarik appchains yang butuh security tapi tidak mau run validator set
+· Supporting Dataset: Phase 3 EV-ICS-2023, EV-ICSV2-2024, Phase 6 Token (ICS utility), Phase 7 Ecosystem (consumer chains)
+
+Keputusan: Rebrand Tendermint Core ke CometBFT 2023
+· Trigger: Pemisahan konsensus engine dari Tendermint Inc (All In Bits Inc) branding; kebutuhan netralitas untuk ekosistem multi-chain; Informal Systems jadi maintainer utama
+· Evidence: CometBFT v1.0 release 2023; repo dipindah ke github.com/cometbft; Informal Systems lead maintenance; Tendermint Inc rebrand ke All In Bits Inc lalu fokus ke app-layer (Phase 3 EV-COMETBFT-2023)
+· Decision: Fork & rename Tendermint Core → CometBFT; governance komunitas (Informal, ICF, validator reps) mengelola roadmap
+· Immediate Result: Konsensus engine netral, tidak terikat single company; SDK & chains lain (Osmosis, Juno, dll) upgrade dependency
+· Long-term Impact: Mengurangi single-point-of-failure vendor; mempercepat upgrade konsensus (ABCI++ dst); memperkuat narrative "community-owned infrastructure"
+· Supporting Dataset: Phase 3 EV-COMETBFT-2023, Phase 4 Technology (consensus), Phase 2 Entity (Informal Systems, All In Bits Inc)
+
+Pola 1: Modular Architecture First — Memisahkan konsensus (CometBFT), networking, dan application layer (CosmWasm, SDK modules) agar upgrade independen
+· Decision Pattern: Setiap major upgrade (Stargate, Theta, Rho, Lambda, v14-v18) mengupgrade komponen terpisah tanpa breaking changes ke layer lain; IBC, CosmWasm, SDK modules diupgrade via governance proposals terpisah
+· Evidence: Stargate upgrade (IBC + protobuf + CosmWasm); Theta/Rho/Lambda (IBC performance, interchain accounts, liquid staking modules); CometBFT rebrand memisahkan konsensus dari SDK; ABCI++ upgrade 2024 hanya consensus layer
+· Supporting Dataset: Phase 3 History (upgrade timeline), Phase 4 Technology (architecture, upgrades), Phase 7 Ecosystem (SDK projects)
+
+Pola 2: Upgrade Bertahap dengan Pengujian Ekstensif di Testnet & Consumer Chains
+· Decision Pattern: Semua major upgrade (Stargate, ICS, CometBFT) diuji di testnet (Theta testnet, Rho testnet) dan deploy ke consumer chains/ICF chains sebelum mainnet; Gaia release candidate dikaji validator set
+· Evidence: Stargate testnet bulan sebelum mainnet; ICS v1 testnet dengan Neutrality/Stride; CometBFT testnet months sebelum v1.0; validator coordination via Discord/forum untuk upgrade signaling
+· Supporting Dataset: Phase 3 History (testnet events), Phase 4 Technology (upgrade process), Phase 7 Ecosystem (validator infrastructure)
+
+Pola 3: Mengadopsi Rust/CosmWasm sebagai Smart Contract Layer di Atas Go/Cosmos SDK
+· Decision Pattern: SDK core tetap Go; smart contract execution via CosmWasm (Rust/WASM) sebagai module; memungkinkan developer non-Go menulis contracts; Neutron, Juno, Osmosis pakai CosmWasm heaviliy
+· Evidence: CosmWasm integrated Stargate 2021; Neutron launch 2023 sebagai CosmWasm hub; Juno sebagai CosmWasm playground; ICF grants ke CosmWasm tooling (Phase 4 Technology, Phase 7 Ecosystem)
+· Supporting Dataset: Phase 4 Technology (CosmWasm), Phase 7 Ecosystem (major apps), Phase 5 Financial (ICF grants)
+
+Pola 4: IBC sebagai Standard Interoperabilitas — Menolak bridging trusted/centralized, memilih light-client verification trust-minimized
+· Decision Pattern: IBC spec (ICS-20/23/24) mandatory untuk chains dalam ekosistem; bridges ke Ethereum (Axelar, Wormhole, Noble) dibangun di atas IBC atau sebagai complementary; tidak ada native trusted bridge dari Cosmos Hub
+· Evidence: IBC enabled Stargate 2021; 100+ IBC chains 2024; Axelar/Wormhole/Noble sebagai external bridges; Map of Zones tracking IBC volume >$30B cumulative (Phase 4 Technology, Phase 7 Ecosystem, Phase 8 Market)
+· Supporting Dataset: Phase 3 EV-STARGATE-2021, Phase 4 Technology (IBC), Phase 7 Ecosystem (bridges), Phase 8 Market (IBC volume)
+
+Pola 1: Single Large Fundraiser (ICO 2017) + Treasury Management oleh Non-Profit Foundation (ICF)
+· Decision Pattern: Satu kali fundraiser publik $17M (2017); tidak ada Series A/B/C equity funding untuk ICF; Tendermint Inc (All In Bits) raise terpisah via equity; ICF mengelola treasury ATOM untuk grants, ops, ecosystem funding
+· Evidence: ICO 2017 results (Phase 3 EV-ICO-2017); ICF token holdings report 2023 ~20-25M ATOM (Phase 5 Financial); Tendermint Inc funding rounds terpisah (Phase 5 Financial); ICF grants program ongoing (Phase 5 Financial, Phase 7 Ecosystem)
+· Supporting Dataset: Phase 3 EV-ICO-2017, Phase 5 Financial (funding, treasury, grants), Phase 2 Entity (ICF, All In Bits Inc)
+
+Pola 2: Treasury Diversification Minimal — ICF Holdings Terpusat di ATOM, Sedikit Stablecoin/Fiat untuk Ops
+· Decision Pattern: ICF transparency report 2023 menunjukkan >90% treasury di ATOM; stablecoin/fiat hanya untuk operational runway 12-18 bulan; tidak ada strategi diversifikasi agresif ke BTC/ETH/stablecoin besar
+· Evidence: ICF token holdings report 2023 (Phase 5 Financial); community pool on-chain ~1.5-2M ATOM fluktuatif (Phase 6 Token); ICF grants denominated ATOM
+· Supporting Dataset: Phase 5 Financial (treasury), Phase 6 Token (holder distribution, community pool)
+
+Pola 3: Ecosystem Grants sebagai Primary Capital Deployment Mechanism
+· Decision Pattern: ICF mengeluarkan grants (bukan equity investment) ke core infrastructure (CosmWasm, IBC relayers, wallets, explorers, SDK tooling); grants ~$2-5M/tahun; recipient: Informal Systems, Stride, Keplr, Cosmostation, dll
+· Evidence: ICF grants program announcements (Phase 5 Financial, Phase 7 Ecosystem); grants recipients list (Informal, Stride, Keplr, Ignite, dll); tidak ada portfolio equity publik
+· Supporting Dataset: Phase 5 Financial (grants), Phase 7 Ecosystem (infrastructure providers, wallets), Phase 2 Entity (grant recipients)
+
+Pola 4: Tidak Ada Revenue Model Protocol-Level untuk Cosmos Hub — Bergantung Inflation & Transaction Fees ke Validators/Delegators/Community Pool
+· Decision Pattern: Cosmos Hub tidak mengambil protocol fee (seperti Ethereum base fee burn atau Solana fee capture); 100% gas fee → validators/delegators/community pool (2%); inflation → stakers; value capture hanya via Interchain Security revenue (baru 2023+)
+· Evidence: Gaia fee distribution params (Phase 6 Token utility, inflation); ATOM 2.0 proposal fee capture ditolak/tidak diadopsi; ICS revenue sharing mulai 2023 (Phase 3 EV-ATOM2-2022, EV-ICS-2023)
+· Supporting Dataset: Phase 3 EV-ATOM2-2022, Phase 6 Token (inflation, utility), Phase 8 Market (revenue model)
+
+Pola 1: IBC-First Expansion — Setiap Chain Baru Diwajibkan/Mendukung IBC Sejak Genesis
+· Decision Pattern: Chains built with Cosmos SDK (Osmosis, Juno, Evmos, Neutron, Stride, Celestia, Noble) mengaktifkan IBC day-1; ICF grants & technical support memprioritaskan IBC integration; Map of Zones sebagai metrics utama
+· Evidence: Osmosis launch Juni 2021 IBC-ready; Neutron launch 2023 IBC-native; Celestia (data availability) IBC-connected; Noble (asset issuance) IBC-centric; Map of Zones tracking 100+ chains (Phase 3 History chain launches, Phase 7 Ecosystem)
+· Supporting Dataset: Phase 3 History (chain launches), Phase 7 Ecosystem (IBC chains, major apps), Phase 8 Market (IBC volume)
+
+Pola 2: Interchain Security sebagai Ecosystem Expansion Lever — Menarik Appchains Tanpa Bootstrap Validator
+· Decision Pattern: ICS v1/v2 memungkinkan chains (Neutrality, Stride, dll) launch dengan security dari Cosmos Hub validator set; mengurangi barrier to entry appchain; ATOM stakers mendapat yield tambahan
+· Evidence: ICS v1 launch Nov 2023 (Phase 3 EV-ICS-2023); consumer chains onboard; ICS v2 partial set 2024 (Phase 3 EV-ICSV2-2024); appchains memilih ICS vs sovereign validator set
+· Supporting Dataset: Phase 3 EV-ICS-2023, EV-ICSV2-2024, Phase 6 Token (ICS utility), Phase 7 Ecosystem (consumer chains)
+
+Pola 3: Infrastructure Provider Neutrality — Mendukung Multi-Validator, Multi-RPC, Multi-Wallet Tanpa Endorsement Eksklusif
+· Decision Pattern: Cosmos Hub tidak memiliki official validator/RPC/wallet; ekosistem validator: Figment, Chorus One, P2P, Stake Capital, dll; RPC: Lavender, NodeStake, dll; Wallet: Keplr, Leap, Cosmostation, Rabby; ICF grants tersebar ke multiple providers
+· Evidence: Validator set 185 active (Phase 7 Ecosystem); RPC providers diverse; wallet support multi-chain; ICF grants ke Keplr, Leap, Cosmostation, Rabby (Phase 5 Financial, Phase 7 Ecosystem)
+· Supporting Dataset: Phase 5 Financial (grants), Phase 7 Ecosystem (validators, RPC, wallets), Phase 2 Entity (infrastructure providers)
+
+Pola 4: Bridge Strategy: IBC Native + External Bridges (Axelar, Wormhole, Noble) sebagai Complementary
+· Decision Pattern: IBC untuk intra-Cosmos; Axelar/Wormhole/Noble untuk Ethereum/EVM connectivity; tidak ada single "official" bridge; Noble mengeluarkan native USDC di Cosmos via IBC
+· Evidence: Axelar/Wormhole integration di Osmosis/Juno; Noble USBC launch 2023; IBC volume dominant intra-Cosmos; external bridge volume smaller tapi growing (Phase 7 Ecosystem, Phase 8 Market)
+· Supporting Dataset: Phase 7 Ecosystem (bridges), Phase 8 Market (IBC volume, bridge volume)
+
+Pola 1: On-Chain Governance sebagai Primary Decision Mechanism untuk Parameter Changes & Upgrades
+· Decision Pattern: Semua software upgrades (Stargate, Theta, Rho, Lambda, v14-v18), parameter changes (inflation, max validators, fee distribution), community pool spending melalui on-chain proposals; deposit 250 ATOM, voting period 14 hari, quorum 33.4%, threshold 50%
+· Evidence: Governance proposals di Mintscan (Phase 6 Governance); upgrade proposals passed dengan >90% validator participation; community pool spend proposals rutin (Phase 3 History governance, Phase 6 Token)
+· Supporting Dataset: Phase 3 History (governance proposals), Phase 6 Token (governance model), Phase 8 Market (governance activity)
+
+Pola 2: Validator Voting Power Inheritance — Delegator Bisa Override Validator Vote
+· Decision Pattern: Validator mewarisi voting power dari delegator yang tidak vote; delegator dapat vote langsung override; menciptakan checks-and-balances; validator groups (Validator DAOs) muncul tapi tidak dominan
+· Evidence: Governance spec (Phase 6 Governance); validator voting behavior analysis (Phase 8 Market); tidak ada single validator group kontrol >33% veto power
+· Supporting Dataset: Phase 6 Token (governance), Phase 8 Market (governance metrics)
+
+Pola 3: ICF sebagai Off-Chain Steward — Grants, Legal, Brand, Treasury Management Di Luar On-Chain Governance
+· Decision Pattern: ICF (Swiss foundation) mengelola treasury ATOM, legal entity, brand "Cosmos", grants program, conference (Cosmoverse); tidak kontrol on-chain governance tapi influential via signaling & funding
+· Evidence: ICF board & structure (Phase 2 Entity); ICF grants & transparency reports (Phase 5 Financial); ICF token holdings (Phase 6 Holder Distribution); Cosmoverse conference organizer
+· Supporting Dataset: Phase 2 Entity (ICF), Phase 5 Financial (ICF), Phase 6 Token (holder distribution)
+
+Pola 4: Signaling via Whitepapers & Forum Discussion Sebelum On-Chain Proposal (ATOM 2.0, Fee Burn, ICS)
+· Decision Pattern: Major changes didiskusikan di forum.cosmos.network, whitepaper (ATOM 2.0), research posts sebelum formal proposal; memungkinkan community feedback & iteration; ATOM 2.0 tidak jadi single proposal tapi pecah jadi multiple
+· Evidence: ATOM 2.0 whitepaper Sep 2022 (Phase 3 EV-ATOM2-2022); fee burn discussion 2024 (Phase 3 EV-FEE-BURN-2024); ICS design discussion 2022-2023 sebelum proposal 792
+· Supporting Dataset: Phase 3 History (major events), Phase 6 Token (major events), Phase 8 Market (narrative)
+
+Pola 1: Emergency Coordinator Intervention untuk Critical Bugs (Bukan Exploit) — Validator Set Coordination via Discord/Forum
+· Decision Pattern: Critical consensus bug (mis. CometBFT fork risk) → Informal Systems/ICF/validator leads koordinasi emergency patch & coordinated upgrade; tidak ada on-chain emergency mechanism (seperti Ethereum EF timelock)
+· Evidence: CometBFT upgrade coordination 2023; Gaia emergency patches; validator coordination channels (Phase 4 Technology, Phase 7 Ecosystem); tidak ada historical exploit di Cosmos Hub mainnet (Phase 3 History security incidents)
+· Supporting Dataset: Phase 3 History (security incidents), Phase 4 Technology (security model), Phase 7 Ecosystem (validator coordination)
+
+Pola 2: Market Crash Response: Tidak Ada Treasury Intervention — Biarkan Market Mechanics & Inflation Adjustment
+· Decision Pattern: Selama bear market 2022 (Terra/Luna collapse, FTX), ICF tidak melakukan buyback/market support; inflation mechanism otomatis naik (bonded ratio turun → inflation naik ke 20%) menginsentivkan staking; community pool spending lanjut via governance
+· Evidence: Inflation mechanics (Phase 6 Inflation); ICF transparency report 2022-2023 tidak ada market intervention; staking ratio tetap >60% (Phase 8 Market liquidity)
+· Supporting Dataset: Phase 3 History (2022 events), Phase 6 Token (inflation), Phase 8 Market (staking ratio)
+
+Pola 3: Regulatory Response: ICF Swiss Non-Profit Structure + Token Classification Clarity (ATOM sebagai Utility/Staking Token)
+· Decision Pattern: ICF incorporated Swiss foundation 2017 (Phase 2 Entity); ATOM positioned sebagai staking/governance/gas token bukan security; tidak ada public token sale setelah 2017; compliance via legal opinion & jurisdiction choice
+· Evidence: ICF Swiss registration; no subsequent token sales; ATOM utility documentation (Phase 6 Utility); exchange delisting risk minimal (Phase 8 Market exchange listings)
+· Supporting Dataset: Phase 2 Entity (ICF), Phase 5 Financial (funding), Phase 6 Token (utility), Phase 8 Market (exchange listings)
+
+Pola 4: Governance Conflict Resolution: On-Chain Voting + Off-Chain Signaling (Forum, Discord, Validator Calls)
+· Decision Pattern: Kontroversial proposals (ATOM 2.0, fee burn, community pool spending besar) → diskusi forum lama → signaling proposal (text proposal) → formal proposal; veto power (NoWithVeto 33.4%) digunakan untuk spam/attack proposals
+· Evidence: ATOM 2.0 discussion 2022 (Phase 3 EV-ATOM2-2022); fee burn discussion 2024 (Phase 3 EV-FEE-BURN-2024); community pool spend debates; NoWithVeto usage di Mintscan
+· Supporting Dataset: Phase 3 History (governance), Phase 6 Token (governance model), Phase 8 Market (governance activity)
+
+Pola 1: Upgrade Setelah Riset & Signaling Panjang (Stargate 2021, ICS 2023, CometBFT 2023)
+· Decision Pattern: Major upgrades didahului whitepaper/discussion 6-18 bulan; testnet panjang; validator coordination; tidak ada "rushed" mainnet upgrade
+· Evidence: Stargate discussed 2019, launched 2021; ICS discussed 2021 (ATOM 2.0), launched 2023; CometBFT discussed 2022, v1.0 2023 (Phase 3 History timeline)
+· Supporting Dataset: Phase 3 History (upgrade timeline), Phase 4 Technology (upgrade process)
+
+Pola 2: Ekosistem Expansion Mengikuti Infrastructure Readiness (IBC → DeFi → Liquid Staking → ICS)
+· Decision Pattern: IBC enable (2021) → Osmosis/DeFi launch (2021) → Liquid staking (2021-2022) → ICS (2023); setiap layer membutuhkan layer sebelumnya stable
+· Evidence: Timeline ekosistem (Phase 3 History chain launches, Phase 7 Ecosystem major apps); dependency chain jelas
+· Supporting Dataset: Phase 3 History, Phase 7 Ecosystem, Phase 8 Market (TVL growth)
+
+Pola 3: Grants Mengikuti Technical Priority Areas (CosmWasm, IBC Relayers, Wallets, SDK Tooling)
+· Decision Pattern: ICF grants konsisten ke core infrastructure: CosmWasm (2019+), IBC relayers (2021+), Keplr/Leap wallets (2020+), Ignite CLI (2021+); tidak ke application-layer projects (DEX, lending) kecuali infrastructure-enabling
+· Evidence: ICF grants recipients (Phase 5 Financial, Phase 7 Ecosystem); grants announcements fokus infrastructure
+· Supporting Dataset: Phase 5 Financial (grants), Phase 7 Ecosystem (infrastructure providers)
+
+Pola 4: Validator Set Stability — Top Validators Tetap Konsisten (Figment, Chorus One, P2P, Stake Capital, dll) Sepanjang 2019-2024
+· Decision Pattern: Validator set 185; top 20-30 validators stabil; baru-baru ini partial set security (ICS v2) memungkinkan subset; tidak ada validator turnover massal
+· Evidence: Validator rankings Mintscan 2019-2024 (Phase 7 Ecosystem); ICS v2 partial set (Phase 3 EV-ICSV2-2024); staking distribution stabil (Phase 8 Market liquidity)
+· Supporting Dataset: Phase 3 EV-ICSV2-2024, Phase 7 Ecosystem (validators), Phase 8 Market (staking ratio)
+
+Trade-off 1: Desentralisasi Validator vs Keamanan Shared Security (ICS)
+· Decision: ICS v1 memerlukan semua 185 validator menjalankan consumer chain binary; ICS v2 (2024) mengizinkan partial set (subset validator) untuk scalability
+· Trade-off: ICS v1: keamanan maksimal (full validator set) tapi operational burden tinggi → sedikit consumer chain onboard; ICS v2: lower barrier tapi security model lemah (subset validator bisa collude)
+· Evidence: ICS v1 launch Nov 2023 hanya 2 consumer chain (Neutrality, Stride); ICS v2 2024 dirancang untuk scale (Phase 3 EV-ICS-2023, EV-ICSV2-2024); validator feedback di forum/governance
+· Supporting Dataset: Phase 3 EV-ICS-2023, EV-ICSV2-2024, Phase 4 Technology (security model), Phase 7 Ecosystem (consumer chains)
+
+Trade-off 2: Inflation Tinggi (7-20%) untuk Staking Security vs Token Holder Dilution
+· Decision: Dynamic inflation targeting 67% bonded ratio; jika bonded ratio turun, inflation naik ke 20% → stakers diluted tapi network security maintained
+· Trade-off: Non-stakers (liquid holders, DeFi users) diluted ~7-20%/tahun; stakers net neutral atau positif; mendorong staking participation tapi mengurangi ATOM attractiveness sebagai medium of exchange/store of value non-staking
+· Evidence: Inflation params seit genesis (Phase 6 Inflation); bonded ratio ~65% (Phase 8 Market liquidity); ATOM 2.0 proposal fee capture untuk offset inflation (Phase 3 EV-ATOM2-2022)
+· Supporting Dataset: Phase 3 EV-ATOM2-2022, Phase 6 Token (inflation), Phase 8 Market (staking ratio, liquidity)
+
+Trade-off 3: Sovereign Appchains (No Rent Extraction) vs Value Capture ke ATOM
+· Decision: Cosmos SDK chains sovereign, tidak bayar fee ke Cosmos Hub; ATOM value capture hanya via ICS (shared security) dan gas di Hub; tidak ada "appchain tax" seperti Polkadot parachain auctions
+· Trade-off: Menarik developer (no rent) tapi ATOM tidak capture value dari ekosistem activity (Osmosis volume, Juno activity, dll); ICS sebagai partial solution tapi opt-in
+· Evidence: Sovereign chains model (Phase 1 Foundation, Phase 4 Technology); ATOM 2.0 critique "value capture" (Phase 3 EV-ATOM2-2022); ICS revenue sharing baru 2023+ (Phase 3 EV-ICS-2023)
+· Supporting Dataset: Phase 1 Foundation, Phase 3 EV-ATOM2-2022, EV-ICS-2023, Phase 4 Technology, Phase 6 Token (utility)
+
+Trade-off 4: Governance On-Chain Plutocracy (1 ATOM = 1 Vote) vs Inklusivitas Komunitas Kecil
+· Decision: Coin
