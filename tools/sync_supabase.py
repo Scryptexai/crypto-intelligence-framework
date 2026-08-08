@@ -392,9 +392,10 @@ ORDER = ["projects", "entities", "knowledge_items", "evidence_items", "events", 
          "cif_decision_events"]
 
 
-def upsert(base_url: str, key: str, table: str, rows: list):
-    if not rows:
-        return
+CHUNK_SIZE = 500
+
+
+def _post_batch(base_url: str, key: str, table: str, rows: list):
     conflict_target = ON_CONFLICT.get(table, "id")
     url = f"{base_url.rstrip('/')}/rest/v1/{table}?on_conflict={conflict_target}"
     body = json.dumps(rows).encode("utf-8")
@@ -410,6 +411,30 @@ def upsert(base_url: str, key: str, table: str, rows: list):
     except urllib.error.HTTPError as e:
         detail = e.read().decode("utf-8", errors="replace")
         sys.exit(f"upsert into {table} failed: HTTP {e.code}\n{detail}")
+
+
+def upsert(base_url: str, key: str, table: str, rows: list):
+    """Upsert rows, grouped by their exact key set and chunked.
+
+    PostgREST requires every object in one bulk POST to carry an IDENTICAL set of keys --
+    a mismatch fails the whole request with PGRST102 "All object keys must match". Several
+    row builders here deliberately OMIT a field rather than send null, so that an upsert
+    leaves the existing column untouched instead of blanking it (see project_rows'
+    docstring: cif_score is only present for projects that actually have a QA score, which
+    today is Track C dossiers with Phase 11 run). With 2 projects that happened to be
+    uniform; at 26 projects one row carried cif_score and 25 did not, so every sync died
+    before writing anything. Grouping by key set keeps the omit-means-leave-alone semantics
+    intact while satisfying PostgREST -- rather than forcing nulls in, which would silently
+    wipe real scores on every future sync. Chunking additionally keeps a single request from
+    carrying the full table (entities is already 1109 rows)."""
+    if not rows:
+        return
+    groups = {}
+    for row in rows:
+        groups.setdefault(tuple(sorted(row.keys())), []).append(row)
+    for group in groups.values():
+        for i in range(0, len(group), CHUNK_SIZE):
+            _post_batch(base_url, key, table, group[i:i + CHUNK_SIZE])
 
 
 def main():
