@@ -71,10 +71,30 @@ def run_ingest_extract_sync(name: str, auto_sync: bool) -> tuple:
             and len(conflict_path.read_text(encoding="utf-8").strip()) < config.MIN_PHASE_CHARS):
         conflict_stash = conflict_path.with_suffix(".docx.pending")
         conflict_path.rename(conflict_stash)
+    # --force, unconditionally. ingest.py's anti-duplicate guard skips any project whose
+    # dossier already exists. That is right for the inbox flow and wrong here: once a phase is
+    # regenerated the assembled dossier is stale, and every extractor downstream reads the
+    # DOSSIER, not the phase files.
+    #
+    # Observed on Lido 2026-08-08 and the reason this exists: Phase 9 regenerated cleanly
+    # (0 failed checks, 47,772 chars, verify PASS), the run reported success end to end, and
+    # poc/behavior.json still had no Lido entry -- ingest had logged "dossier exists /
+    # skipped(dup)" and the extractors re-parsed the old file. A silent no-op like that is
+    # worse than an error: it looks finished while the data never moves.
+    #
+    # Rebuilding always, instead of detecting staleness, is deliberate. Timestamps are
+    # unreliable (git checkout and rsync rewrite them). Content probing is worse: ingest
+    # relocates each phase's "Open Threads" into its own section and reflows prose, so the
+    # assembled text is not a substring of its inputs -- a probe-based attempt flagged every
+    # healthy project (Lido, Blast, Arbitrum, Aave, Cardano) as stale, while a single mid-file
+    # probe had the opposite failure and missed a pure append, the commonest shape of a
+    # regenerated fuller phase. Assembly is deterministic and the only date in the output is a
+    # month-granular archive filename, so rebuilding an unchanged project reproduces the file
+    # byte for byte and creates no git churn.
     try:
         result = _run([sys.executable, "tools/ingest.py", "--type", "data_project",
                        "--input", f"data_project/{name}", "--model", "DeepSeek",
-                       "--no-build", "--allow-partial"])
+                       "--no-build", "--allow-partial", "--force"])
     finally:
         if conflict_stash is not None and conflict_stash.exists():
             conflict_stash.rename(conflict_path)

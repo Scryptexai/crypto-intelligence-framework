@@ -386,5 +386,56 @@
       "OP Stack Alignment vs Customization Freedom",
       "First-Party Infrastructure Control vs Ecosystem Decentralization"
     ]
+  },
+  "Lido": {
+    "projectSlug": "lido",
+    "strategicObjectives": [
+      "Menjadi infrastruktur liquid staking dominan untuk Ethereum dan ekosistem L2",
+      "Membangun DAO yang berkelanjutan dengan treasury mandiri dan governance efektif",
+      "Menjaga keamanan protokol melalui audit berulang, bug bounty, dan upgrade bertahap",
+      "Mengintegrasikan stETH/wstETH sebagai \"money lego\" fundamental di DeFi Ethereum dan L2",
+      "Desentralisasi progresif node operator set melalui Staking Router modules"
+    ],
+    "decisionPatterns": [
+      "Ekspansi Pasca-Funding → Lalu Konsolidasi",
+      "Upgrade Mayor Selalu Melalui Governance Vote + Timelock + Multi-Audit",
+      "Integrasi DeFi Prioritaskan \"Big Three\" — Curve, Aave, Maker",
+      "Sunset Produk yang Tidak Menjangkau Product-Market Fit — Dengan Redemption Window",
+      "Menjawab Kritik Narasi dengan Solusi Teknis (Bukan Hanya Komunikasi)",
+      "Pendanaan Bertahap dengan Valuasi Meningkat — Internal Bootstrap → Series A → Series B → Protocol Revenue",
+      "Treasury Management — Legal Wrapper (Cayman Foundation) + Multisig 5-of-9 + Diversified Assets",
+      "Grant Program dan Core Contributor Budget — Funded dari Treasury, Dikelola via Governance",
+      "Token Distribution — Treasury Dominan (36.3%), Investor Vesting Long-term, Community via Liquidity Mining",
+      "Fee Switch sebagai Mekanisme Revenue Sustainable — Governance-Controlled Parameter",
+      "Ethereum Alignment First — Semua Keputusan Teknis Mengutamakan Ethereum Mainnet dan Roadmap-nya",
+      "Upgrade Bertahap dengan Pengujian Ekstensif dan Audit Multi-party",
+      "Modular Architecture untuk Fleksibilitas Tanpa Upgrade Kontrak Inti",
+      "Canonical Bridges Only untuk L2 Expansion — No Custom Bridge Contracts",
+      "Oracle Committee Multi-sig (5-of-9) untuk Beacon Chain Reporting — Trust Minimized tapi Bukan Trustless",
+      "Deep Integration dengan DeFi Primitif (Curve, Aave, Maker) — Membuat stETH/wstETH \"Base Layer\"",
+      "L2 Expansion via Canonical Bridge wstETH — Bukan Deploy Staking Contracts Baru",
+      "EigenLayer Integration sebagai LRT Provider — Leveraging Existing wstETH Distribution",
+      "Sunset Produk Non-Performing dengan Governance Vote dan Redemption Window",
+      "Node Operator Diversification via DVT Modules — Menjawab Centralization Narrative",
+      "Token-Weighted Voting (1 LDO = 1 Vote) dengan Dual-Lane Snapshot + Aragon",
+      "Multisig 5-of-9 Execution — Investor Reps + Core Contributors + Operator Reps",
+      "LIP (Lido Improvement Proposal) Process — Forum Discussion → Snapshot → On-chain",
+      "Governance Mengontrol Parameter Ekonomis (Fee Switch, Operator Fee, Withdrawal Fee)",
+      "Legal Structure Review Ongoing — Adaptive Compliance"
+    ],
+    "riskResponse": [
+      "FTX/Alameda Contagion (2022-11) — Transparansi On-chain + Peg Stability Maintained",
+      "Centralization Criticism (~28.5% ETH Staked) — Structural Response via V2 Staking Router + DVT Modules",
+      "Smart Contract Risk — Multi-Audit + Bug Bounty + Proxy Upgrade Timelock",
+      "Regulatory Uncertainty (MiCA, SEC) — Legal Structure Review + Foundation Wrapper",
+      "Slashing Risk — No Socialization, Transparent Disclosure, DVT Mitigation"
+    ],
+    "tradeOffs": [
+      "Desentralisasi vs Keamanan/Efisiensi Operator",
+      "Rebasin Token (stETH) vs DeFi Composability → Wrapper (wstETH) sebagai Solusi",
+      "Multi-chain Broad vs Focus Ethereum + L2",
+      "Fee Revenue vs StETH Yield Competitiveness",
+      "Legal Wrapper (Cayman Foundation) vs Full Desentralisasi \"Code is Law\""
+    ]
   }
 }
