@@ -2,9 +2,9 @@
 window.CIF = {
   "meta": {
     "schema": "cif-export/1",
-    "generated": "2026-08-08 11:34 UTC",
-    "projects": 26,
-    "deep": 26,
+    "generated": "2026-08-08 18:32 UTC",
+    "projects": 27,
+    "deep": 27,
     "summary": 0,
     "sentiment": 0,
     "patterns": 16,
@@ -155,6 +155,14 @@ window.CIF = {
         "stablecoin",
         "synthetic"
       ]
+    },
+    {
+      "n": "Friend.tech",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Friend.tech.md",
+      "cat": "",
+      "era": "",
+      "tags": []
     },
     {
       "n": "Grass",

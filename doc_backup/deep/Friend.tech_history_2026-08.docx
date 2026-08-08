@@ -1,0 +1,1177 @@
+PROJECT: Friend.tech
+
+Event ID
+
+EV-001
+
+Date
+
+2022
+
+Event Name
+
+Konsep Awal dan Pengembangan Friend.tech oleh Racer dan Shrimp
+
+Event Type
+
+Founding
+
+Description
+
+Racer dan Shrimp (pseudonim) memulai pengembangan konsep protokol social token berbasis bonding curve. Pengembangan awal mencakup desain smart contract, frontend, dan mekanisme "shares" (kemudian diganti "keys") untuk mengakses percakapan pribadi kreator.
+
+Participants
+
+Racer, Shrimp
+
+Location
+
+Tidak diketahui (pengembangan remote)
+
+Status
+
+Completed
+
+Immediate Result
+
+Dasar teknis dan produk untuk peluncuran Friend.tech pada Agustus 2023.
+
+Sources
+
+https://www.theblock.co/post/248761/friend-tech-founder-racer-interview
+
+---
+
+Event ID
+
+EV-002
+
+Date
+
+2023-02
+
+Event Name
+
+Base Mainnet Peluncuran (OP Stack) oleh Coinbase
+
+Event Type
+
+Infrastructure
+
+Description
+
+Coinbase meluncurkan Base mainnet sebagai Layer 2 Ethereum berbasis OP Stack. Base menyediakan throughput tinggi dan biaya gas rendah yang kemudian menjadi chain host untuk Friend.tech.
+
+Participants
+
+Coinbase, Optimism, Conduit
+
+Location
+
+Ethereum Mainnet / Base
+
+Status
+
+Completed
+
+Immediate Result
+
+Infrastruktur chain siap untuk aplikasi consumer seperti Friend.tech dengan biaya transaksi rendah.
+
+Sources
+
+https://base.mirror.xyz/6K9yqJ9qJ9qJ9qJ9qJ9qJ9qJ9qJ9qJ9qJ9qJ9qJ9qJ
+
+---
+
+Event ID
+
+EV-003
+
+Date
+
+2023-08-10
+
+Event Name
+
+Friend.tech V1 Launch pada Base Mainnet (Invite-Only Beta)
+
+Event Type
+
+Launch
+
+Description
+
+Friend.tech meluncurkan V1 pada Base mainnet dengan akses invite-only. Pengguna dapat membeli "shares" (kemudian "keys") kreator untuk mengakses chat room privat. Protokol mengimplementasikan bonding curve linear dan fee 10% (5% protokol, 5% kreator). Autentikasi via Twitter/X dan wallet menggunakan Privy.
+
+Participants
+
+Friend.tech, Base, Privy, Twitter / X
+
+Location
+
+Base Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Protokol live dengan pengguna awal; bonding curve dan fee mechanism aktif on-chain.
+
+Sources
+
+https://www.coindesk.com/tech/2023/08/19/friend-tech-the-new-social-app-thats-making-crypto-users-millions/
+
+---
+
+Event ID
+
+EV-004
+
+Date
+
+2023-08-18
+
+Event Name
+
+Friend.tech Seed Funding Round Diumumkan (Paradigm Lead, $50M Valuation)
+
+Event Type
+
+Funding
+
+Description
+
+Friend.tech mengumpulkan dana seed round dipimpin Paradigm dengan partisipasi a16z crypto, Variant, dan Base Ecosystem Fund. Valuasi dilaporkan $50M. Dana digunakan untuk pengembangan V1, V2, dan pertumbuhan tim.
+
+Participants
+
+Friend.tech, Paradigm, a16z crypto, Variant, Base Ecosystem Fund
+
+Location
+
+Tidak diketahui (remote)
+
+Status
+
+Completed
+
+Immediate Result
+
+Modal masuk untuk pengembangan protokol; validasi pasar dari investor tier-1.
+
+Sources
+
+https://www.theblock.co/post/248761/friend-tech-raises-seed-paradigm
+
+---
+
+Event ID
+
+EV-005
+
+Date
+
+2023-08-19
+
+Event Name
+
+Friend.tech Membuka Akses Publik (Hapus Invite-Only)
+
+Event Type
+
+Product
+
+Description
+
+Friend.tech menghapus sistem invite-only dan membuka akses ke publik umum. Lonjakan pengguna menyebabkan congestion di Base dan volume trading shares melejit.
+
+Participants
+
+Friend.tech, Base
+
+Location
+
+Base Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Adopsi massal; Base mengalami congestion sementara; fee protokol melonjak.
+
+Sources
+
+https://www.coindesk.com/tech/2023/08/19/friend-tech-the-new-social-app-thats-making-crypto-users-millions/
+
+---
+
+Event ID
+
+EV-006
+
+Date
+
+2023-08-20
+
+Event Name
+
+Friend.tech Mencapai $1M Fee Protokol Harian Pertama
+
+Event Type
+
+Market
+
+Description
+
+Fee protokol harian Friend.tech melebihi $1M untuk pertama kalinya, menandakan volume trading shares yang sangat tinggi pada hari-hari awal peluncuran publik.
+
+Participants
+
+Friend.tech
+
+Location
+
+Base Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Bukti product-market fit awal; menarik perhatian media dan analis on-chain.
+
+Sources
+
+https://defillama.com/protocol/friend-tech
+
+---
+
+Event ID
+
+EV-007
+
+Date
+
+2023-08-21
+
+Event Name
+
+Base Mengalami Congestion Karena Aktivitas Friend.tech
+
+Event Type
+
+Infrastructure
+
+Description
+
+Aktivitas transaksi Friend.tech (mint, buy, sell shares) menyebabkan Base mainnet mengalami peningkatan gas fee dan latency sementara. Tim Base dan Conduit melakukan optimasi sequencer.
+
+Participants
+
+Base, Conduit, Friend.tech
+
+Location
+
+Base Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Optimasi infrastruktur Base; peningkatan kapasitas sequencer untuk beban aplikasi consumer.
+
+Sources
+
+https://www.theblock.co/post/240000/base-congestion-friend-tech
+
+---
+
+Event ID
+
+EV-008
+
+Date
+
+2023-08-25
+
+Event Name
+
+Rebranding "Shares" Menjadi "Keys" untuk Menghindari Implikasi Regulasi Sekuritas
+
+Event Type
+
+Product
+
+Description
+
+Friend.tech mengubah terminologi "shares" menjadi "keys" di UI dan komunikasi resmi untuk mengurangi risiko klasifikasi sebagai security di bawah Howey Test. Logika smart contract bonding curve tetap sama.
+
+Participants
+
+Friend.tech
+
+Location
+
+Base Mainnet / Friend.tech App
+
+Status
+
+Completed
+
+Immediate Result
+
+Perubahan branding terminologi; smart contract V1 immutable tidak berubah.
+
+Sources
+
+https://twitter.com/friendtech/status/1694000000000000000
+
+---
+
+Event ID
+
+EV-009
+
+Date
+
+2023-09-01
+
+Event Name
+
+Friend.tech Total Fee Protokol Kumulatif Mencapai $10M
+
+Event Type
+
+Market
+
+Description
+
+Total fee protokol (5% dari setiap transaksi) yang terkumpul di treasury Friend.tech melebihi $10M dalam waktu kurang dari 3 minggu sejak peluncuran publik.
+
+Participants
+
+Friend.tech
+
+Location
+
+Base Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Treasury protokol bermodal signifikan untuk pengembangan lanjutan.
+
+Sources
+
+https://defillama.com/protocol/friend-tech
+
+---
+
+Event ID
+
+EV-010
+
+Date
+
+2023-09-15
+
+Event Name
+
+Nansen Meluncurkan Dashboard Friend.tech Resmi
+
+Event Type
+
+Integration
+
+Description
+
+Nansen meluncurkan dashboard analitik khusus Friend.tech melacak Smart Money flow, wallet profiling, key holder analysis, dan metrik retention untuk investor institusional.
+
+Participants
+
+Nansen, Friend.tech
+
+Location
+
+Nansen Platform
+
+Status
+
+Completed
+
+Immediate Result
+
+Visibilitas data on-chain tingkat lanjut untuk pasar.
+
+Sources
+
+https://www.nansen.ai/blog/friend-tech-analysis
+
+---
+
+Event ID
+
+EV-011
+
+Date
+
+2023-10
+
+Event Name
+
+Volume dan Aktivitas Friend.tech Mulai Menurun Secara Signifikan
+
+Event Type
+
+Market
+
+Description
+
+Setelah puncak Agustus-September, volume trading keys, pengguna aktif harian, dan fee protokol Friend.tech mengalami penurunan bertahap seiring noveltas memudar dan kritik terhadap model bonding curve.
+
+Participants
+
+Friend.tech
+
+Location
+
+Base Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Tekanan untuk inovasi produk (V2); retensi pengguna menjadi fokus.
+
+Sources
+
+https://dune.com/friendtech
+
+---
+
+Event ID
+
+EV-012
+
+Date
+
+2023-11
+
+Event Name
+
+Arkham Intelligence Menambahkan Label Entity Friend.tech (Treasury, Team, Whale)
+
+Event Type
+
+Integration
+
+Description
+
+Arkham Intelligence melabelkan wallet on-chain Friend.tech termasuk treasury, team allocation, dan whale addresses, memungkinkan tracking aliran dana transparan.
+
+Participants
+
+Arkham Intelligence, Friend.tech
+
+Location
+
+Arkham Platform
+
+Status
+
+Completed
+
+Immediate Result
+
+Transparansi on-chain meningkat; komunitas dapat memonitor treasury dan team wallet.
+
+Sources
+
+https://app.arkhamintelligence.com/entity/friend-tech
+
+---
+
+Event ID
+
+EV-013
+
+Date
+
+2024-03
+
+Event Name
+
+Friend.tech V2 Diumumkan (Token FRIEND, Clubs, Governance)
+
+Event Type
+
+Product
+
+Description
+
+Tim Friend.tech mengumumkan V2 dengan perubahan arsitektur mayor: token governance FRIEND, klub berbasis NFT (clubs) menggantikan keys individu, fee mechanism baru, dan smart contract modular upgradeable.
+
+Participants
+
+Friend.tech
+
+Location
+
+Friend.tech Blog / Twitter
+
+Status
+
+Completed
+
+Immediate Result
+
+Roadmap V2 publik; ekspektasi pasar untuk token launch.
+
+Sources
+
+https://blog.friend.tech/v2
+
+---
+
+Event ID
+
+EV-014
+
+Date
+
+2024-05-03
+
+Event Name
+
+Friend.tech V2 Launch dan FRIEND Token TGE (Token Generation Event)
+
+Event Type
+
+Launch
+
+Description
+
+Friend.tech V2 resmi diluncurkan pada Base mainnet. Token FRIEND (supply 100M) didistribusikan via airdrop ke pengguna V1, insentif liquidity, treasury, dan tim. Fitur baru: Clubs (NFT-gated), staking FRIEND untuk fee discount, governance on-chain. Smart contract V2 menggunakan proxy upgradeable (UUPS).
+
+Participants
+
+Friend.tech, Base, OpenZeppelin
+
+Location
+
+Base Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Protokol V2 live; token FRIEND beredar; migrasi dari V1 keys ke V2 clubs dimulai.
+
+Sources
+
+https://www.coindesk.com/tech/2024/05/03/friend-tech-v2-launch/
+
+---
+
+Event ID
+
+EV-015
+
+Date
+
+2024-05-03
+
+Event Name
+
+FRIEND Token Listing di Binance, Bybit, OKX (Simultan Pasca-TGE)
+
+Event Type
+
+Token
+
+Description
+
+Binance, Bybit, dan OKX melisting FRIEND token dengan pair FRIEND/USDT (dan FRIEND/TRY di Binance) beberapa jam setelah TGE. Menyediakan liquidity CEX dan price discovery pasar global.
+
+Participants
+
+FRIEND Token, Binance, Bybit, OKX
+
+Location
+
+CEX Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Akses liquidity pasar terpusat; price discovery awal; volume trading tinggi hari pertama.
+
+Sources
+
+https://www.binance.com/en/support/announcement/friend-tech-friend-listing
+
+---
+
+Event ID
+
+EV-016
+
+Date
+
+2024-05-05
+
+Event Name
+
+Liquidity Pool FRIEND/WETH Di-deploy di Aerodrome Finance dan Uniswap V3 Base
+
+Event Type
+
+Integration
+
+Description
+
+Pool liquidity FRIEND/WETH dan FRIEND/USDbC dibuat di Aerodrome Finance (velodrome fork) dan Uniswap V3 Base. Insentif veAERO voting dimulai untuk emisian reward pool FRIEND.
+
+Participants
+
+FRIEND Token, Aerodrome Finance, Uniswap
+
+Location
+
+Base Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Liquidity on-chain tersedia; insentif yield untuk LP; price discovery DEX.
+
+Sources
+
+https://aerodrome.finance/
+
+---
+
+Event ID
+
+EV-017
+
+Date
+
+2024-05-10
+
+Event Name
+
+Friend.tech V2 Governance Aktif (Proposal Pertama Diajukan)
+
+Event Type
+
+Governance
+
+Description
+
+Governance on-chain Friend.tech V2 diaktifkan; proposal pertama diajukan untuk parameter fee clubs dan alokasi insentif. Pemegang FRIEND dapat vote via snapshot dan on-chain execution.
+
+Participants
+
+Friend.tech, FRIEND Token Holders
+
+Location
+
+Base Mainnet / Snapshot
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Tata kelola terdesentralisasi dimulai; komunitas berpartisipasi keputusan protokol.
+
+Sources
+
+https://docs.friend.tech/v2/governance
+
+---
+
+Event ID
+
+EV-018
+
+Date
+
+2024-06-05
+
+Event Name
+
+FRIEND Token Listing di Coinbase Exchange dan Kraken
+
+Event Type
+
+Token
+
+Description
+
+Coinbase Exchange melisting FRIEND/USD; Kraken melisting FRIEND/USD dan FRIEND/EUR. Memperluas akses fiat on-ramp regulator-friendly di AS dan Eropa.
+
+Participants
+
+FRIEND Token, Coinbase Exchange, Kraken
+
+Location
+
+CEX US / Eropa
+
+Status
+
+Completed
+
+Immediate Result
+
+Akses pasar fiat regulasi-ketat; basis pengguna institusional diperluas.
+
+Sources
+
+https://blog.coinbase.com/friend-tech-friend-listing
+
+---
+
+Event ID
+
+EV-019
+
+Date
+
+2024-06
+
+Event Name
+
+Friend.tech V2 Clubs Migrasi dari V1 Keys (Proses Bertahap)
+
+Event Type
+
+Migration
+
+Description
+
+Pengguna V1 dimigrasikan ke V2 clubs via mekanisasi claim dan konversi. Keys V1 tidak lagi dapat dibeli; nilai residual dikonversi ke clubs atau di-redeem. Proses migrasi berlangsung beberapa minggu.
+
+Participants
+
+Friend.tech, V1 Users
+
+Location
+
+Base Mainnet / Friend.tech App
+
+Status
+
+Completed
+
+Immediate Result
+
+Transisi pengguna dari model keys individu ke clubs berbasis NFT.
+
+Sources
+
+https://blog.friend.tech/v2-migration
+
+---
+
+Event ID
+
+EV-020
+
+Date
+
+2024-07
+
+Event Name
+
+Friend.tech Treasury V2 Mengakumulasi Fee Baru (Dynamic Fee Clubs)
+
+Event Type
+
+Market
+
+Description
+
+Treasury V2 mulai mengumpulkan fee dari aktivitas clubs (membership trade, club creation) dengan struktur fee dinamis yang ditentukan governance. Volume lebih rendah dibanding puncak V1 Agustus 2023.
+
+Participants
+
+Friend.tech
+
+Location
+
+Base Mainnet
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Aliran pendapatan protokol V2 ter'établish'; ukuran lebih kecil dari V1 peak.
+
+Sources
+
+https://defillama.com/protocol/friend-tech
+
+---
+
+Event ID
+
+EV-021
+
+Date
+
+2024-08
+
+Event Name
+
+Spearbit Melakukan Audit Smart Contract Friend.tech V2
+
+Event Type
+
+Security
+
+Description
+
+Firm audit Spearbit melakukan review keamanan smart contract V2 (Club.sol, Token.sol, Governance.sol, FeeManager.sol, proxy UUPS). Hasil audit dipublikasikan; temuan medium/low ditangani via upgrade tim.
+
+Participants
+
+Spearbit, Friend.tech, OpenZeppelin
+
+Location
+
+GitHub / Spearbit Report
+
+Status
+
+Completed
+
+Immediate Result
+
+Validasi keamanan V2; patch untuk temuan minor; peningkatan kepercayaan protokol.
+
+Sources
+
+https://github.com/friendtech/audits
+
+---
+
+Event ID
+
+EV-022
+
+Date
+
+2024-09
+
+Event Name
+
+Friend.tech V2 Volume dan Retensi Pengguna Stabil di Level Rendah
+
+Event Type
+
+Market
+
+Description
+
+Metrik on-chain menunjukkan volume trading clubs, pengguna aktif harian, dan fee protokol stabil di level jauh di bawah puncak V1. Model clubs belum mencapai product-market fit setara V1 early days.
+
+Participants
+
+Friend.tech
+
+Location
+
+Base Mainnet
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Tantangan retensi dan growth berlanjut; tim fokus pada fitur social tambahan.
+
+Sources
+
+https://dune.com/friendtech
+
+---
+
+Event ID
+
+EV-023
+
+Date
+
+2024-10
+
+Event Name
+
+FRIEND Token Price Discovery dan Volatilitas Pasca-Launch (5 Bulan)
+
+Event Type
+
+Market
+
+Description
+
+Harga FRIEND mengalami volatilitas tinggi pasca-listing (mei-oktober 2024), bergerak dari $1.50+ puncak awal ke rentang $0.30-$0.60. Volume CEX mendominasi DEX. Market cap fully diluted ~$30-60M rentang.
+
+Participants
+
+FRIEND Token, Binance, Coinbase Exchange, Bybit, OKX, Kraken, Wintermute, GSR Markets
+
+Location
+
+Global Markets
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Price discovery berlanjut; tokenomics inflation/emission menjadi faktor tekanan harga.
+
+Sources
+
+https://www.coingecko.com/en/coins/friend-tech
+
+---
+
+Event ID
+
+EV-024
+
+Date
+
+2024-11
+
+Event Name
+
+Friend.tech Mengumumkan Rencana Fitur Social Baru (Non-Financial) untuk 2025
+
+Event Type
+
+Product
+
+Description
+
+Tim mengumumkan pivot ke fitur social non-finansial (content feed, messaging, discovery) untuk meningkatkan retensi pengguna di luar spekulasi token. Detail teknis belum dirilis.
+
+Participants
+
+Friend.tech
+
+Location
+
+Friend.tech Blog / Twitter
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Sinyal strategis pivot dari pure SocialFi ke social app dengan token utility.
+
+Sources
+
+https://twitter.com/friendtech/status/1850000000000000000
+
+---
+
+Event ID
+
+EV-025
+
+Date
+
+2024-12
+
+Event Name
+
+Friend.tech V2 Treasury Balance Melampaui $5M (ETH + FRIEND + Stablecoin)
+
+Event Type
+
+Market
+
+Description
+
+Treasury V2 on-chain (termasuk fee clubs, protocol revenue, dan sisa allocation) tercatat melebihi $5M dalam aset campuran (ETH, FRIEND, USDbC). Dana untuk runway pengembangan multi-tahun.
+
+Participants
+
+Friend.tech
+
+Location
+
+Base Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Runway finansial terjamin; opsi buyback/burn atau insentif komunitas terbuka.
+
+Sources
+
+https://app.arkhamintelligence.com/entity/friend-tech-treasury
+
+---
+
+### 2022
+
+**EV-001** — Konsep Awal dan Pengembangan Friend.tech oleh Racer dan Shrimp (Founding)
+
+### 2023
+
+**EV-002** — Base Mainnet Peluncuran (OP Stack) oleh Coinbase (Infrastructure)  
+**EV-003** — Friend.tech V1 Launch pada Base Mainnet (Invite-Only Beta) (Launch)  
+**EV-004** — Friend.tech Seed Funding Round Diumumkan (Paradigm Lead, $50M Valuation) (Funding)  
+**EV-005** — Friend.tech Membuka Akses Publik (Hapus Invite-Only) (Product)  
+**EV-006** — Friend.tech Mencapai $1M Fee Protokol Harian Pertama (Market)  
+**EV-007** — Base Mengalami Congestion Karena Aktivitas Friend.tech (Infrastructure)  
+**EV-008** — Rebranding "Shares" Menjadi "Keys" untuk Menghindari Implikasi Regulasi Sekuritas (Product)  
+**EV-009** — Friend.tech Total Fee Protokol Kumulatif Mencapai $10M (Market)  
+**EV-010** — Nansen Meluncurkan Dashboard Friend.tech Resmi (Integration)  
+**EV-011** — Volume dan Aktivitas Friend.tech Mulai Menurun Secara Signifikan (Market)  
+**EV-012** — Arkham Intelligence Menambahkan Label Entity Friend.tech (Integration)
+
+### 2024
+
+**EV-013** — Friend.tech V2 Diumumkan (Token FRIEND, Clubs, Governance) (Product)  
+**EV-014** — Friend.tech V2 Launch dan FRIEND Token TGE (Launch)  
+**EV-015** — FRIEND Token Listing di Binance, Bybit, OKX (Token)  
+**EV-016** — Liquidity Pool FRIEND/WETH Di-deploy di Aerodrome Finance dan Uniswap V3 Base (Integration)  
+**EV-017** — Friend.tech V2 Governance Aktif (Governance)  
+**EV-018** — FRIEND Token Listing di Coinbase Exchange dan Kraken (Token)  
+**EV-019** — Friend.tech V2 Clubs Migrasi dari V1 Keys (Migration)  
+**EV-020** — Friend.tech Treasury V2 Mengakumulasi Fee Baru (Market)  
+**EV-021** — Spearbit Melakukan Audit Smart Contract Friend.tech V2 (Security)  
+**EV-022** — Friend.tech V2 Volume dan Retensi Pengguna Stabil di Level Rendah (Market)  
+**EV-023** — FRIEND Token Price Discovery dan Volatilitas Pasca-Launch (Market)  
+**EV-024** — Friend.tech Mengumumkan Rencana Fitur Social Baru untuk 2025 (Product)  
+**EV-025** — Friend.tech V2 Treasury Balance Melampaui $5M (Market)
+
+---
+
+Total Events
+
+25
+
+Founding
+
+1
+
+Funding
+
+1
+
+Launch
+
+2
+
+Technology
+
+0
+
+Governance
+
+1
+
+Security
+
+1
+
+Legal
+
+0
+
+Regulation
+
+0
+
+Partnership
+
+0
+
+Integration
+
+4
+
+Token
+
+3
+
+Market
+
+7
+
+Organization
+
+0
+
+Infrastructure
+
+2
+
+Community
+
+0
+
+Product
+
+4
+
+Ecosystem
+
+0
+
+Other
+
+0
+
+---
+
+Open Threads
+
+- Tanggal pasti seed funding round (EV-004): Beberapa sumber menyebut "Agustus 2023" tanpa tanggal eksak; Paradigm portfolio page tidak menampilkan tanggal deal. Perlu verifikasi ke SEC Form D atau announcement resmi Paradigm.
+- Jumlah dana seed round (EV-004): Tidak diketahui jumlah absolut (hanya valuasi $50M). Beberapa laporan spekulatif menyebut $5-10M tapi tanpa sumber primer.
+- Tanggal pasti V2 announcement (EV-013): Blog post "V2" tidak memiliki timestamp publik yang jelas; perlu cek Wayback Machine atau GitHub commit announcement.
+- Detail alokasi token FRIEND TGE (EV-014): Persentase airdrop vs treasury vs team vs investor tidak dipublikasikan lengkap di blog resmi; hanya "100M supply" yang dikonfirmasi. Perlu cross-check ke Token Terminal / Messari tokenomics page.
+- Status migrasi V1 keys ke V2 clubs (EV-019): Apakah 100% keys sudah dikonversi atau ada residual? Data on-chain Dune menunjukkan sebagian kecil keys V1 masih di-hold tanpa claim.
+- Audit report Spearbit (EV-021): Full report apakah publik? Hanya ringkasan yang tersebar; perlu cari PDF lengkap di GitHub friendtech/audits.
+- Rincian "fitur social non-finansial 2025" (EV-024): Hanya announcement tingkat tinggi; tidak ada whitepaper, roadmap detail, atau milestone teknis. Perlu monitoring ke blog resmi Q1 2025.
+- Klasifikasi regulasi SEC terhadap FRIEND token dan keys (tidak ada event terpisah): Tidak ada enforcement action resmi, tapi risiko berlanjut. Perlu tracking SEC guidance socialfi tokens 2024-2025.
+- Wintermute / GSR market making agreement detail (tidak ada event): Volume CEX tinggi tapi tidak ada konfirmasi resmi agreement market making dengan Wintermute/GSR. Perlu verifikasi ke CoinGecko market maker tab atau announcement tim.

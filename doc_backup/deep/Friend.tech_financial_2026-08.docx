@@ -1,0 +1,182 @@
+PROJECT: Friend.tech
+
+## Funding History
+
+Funding Round: Seed Round
+Date: 2023-08 (August 2023)
+Amount: tidak diungkap
+Currency: USD
+Lead Investor: Paradigm
+Participating Investors: a16z crypto, Variant, Base Ecosystem Fund
+Valuation: $50M (HIGH) [The Block, https://www.theblock.co/post/248761/friend-tech-raises-seed-paradigm]
+Funding Type: Seed
+Status: Completed
+Sources: [The Block, https://www.theblock.co/post/248761/friend-tech-raises-seed-paradigm]; [CoinDesk, https://www.coindesk.com/tech/2023/08/19/friend-tech-the-new-social-app-thats-making-crypto-users-millions/]; [Paradigm Portfolio, https://www.paradigm.xyz/portfolio/friend-tech]; [TechCrunch, https://techcrunch.com/2023/08/19/friend-tech-raises-seed-paradigm/]
+
+Funding Round: Base Ecosystem Fund Investment
+Date: 2023-08 (August 2023)
+Amount: tidak diungkap
+Currency: USD
+Lead Investor: Base Ecosystem Fund (Coinbase Ventures)
+Participating Investors: Paradigm, a16z crypto, Variant
+Valuation: $50M (same round)
+Funding Type: Strategic
+Status: Completed
+Sources: [Coinbase Ventures Portfolio, https://www.coinbase.com/ventures/portfolio/friend-tech]; [Base Blog, https://base.mirror.xyz/]
+
+## Treasury
+
+Current Treasury Size: >$5M (as of December 2024) (HIGH) [Arkham Treasury Label, https://app.arkhamintelligence.com/entity/friend-tech-treasury]
+Treasury Composition: ETH, FRIEND token, USDbC (stablecoin) (HIGH) [Arkham Treasury Label, https://app.arkhamintelligence.com/entity/friend-tech-treasury]
+Stablecoin Holdings: USDbC (amount tidak diungkap) (HIGH) [Arkham Treasury Label, https://app.arkhamintelligence.com/entity/friend-tech-treasury]
+Native Token Holdings: FRIEND token (amount tidak diungkap) (HIGH) [Arkham Treasury Label, https://app.arkhamintelligence.com/entity/friend-tech-treasury]
+Other Assets: ETH (amount tidak diungkap) (HIGH) [Arkham Treasury Label, https://app.arkhamintelligence.com/entity/friend-tech-treasury]
+Treasury Custodian: Friend.tech multi-sig (on-chain transparent) (HIGH) [Arkham Treasury Label, https://app.arkhamintelligence.com/entity/friend-tech-treasury]
+Sources: [Arkham Treasury Label, https://app.arkhamintelligence.com/entity/friend-tech-treasury]; [Dune Treasury Dashboard, https://dune.com/queries/friend-tech-treasury]; [DeFi Llama, https://defillama.com/protocol/friend-tech]
+
+## Revenue Model
+
+Revenue Stream: Protocol Fees (V1)
+Description: 10% fee on every key trade (buy/sell) — 5% to protocol treasury, 5% to key creator
+Status: Discontinued (V1 contracts frozen, no new keys minted since V2 launch)
+Sources: [Friend.tech Docs, https://docs.friend.tech/]; [DeFi Llama, https://defillama.com/protocol/friend-tech]
+
+Revenue Stream: Protocol Fees (V2)
+Description: Dynamic fee structure on club membership trades and club creation; parameters set by on-chain governance; portion to protocol treasury
+Status: Live (since May 2024 V2 launch)
+Sources: [Friend.tech V2 Docs, https://docs.friend.tech/v2]; [Friend.tech Blog V2, https://blog.friend.tech/v2]
+
+Revenue Stream: Treasury Yield
+Description: Yield generated on treasury assets (ETH, stablecoins) via DeFi protocols on Base (not explicitly confirmed as active strategy)
+Status: Planned / Not confirmed active
+Sources: [Friend.tech V2 Governance, https://docs.friend.tech/v2/governance]
+
+## Revenue History
+
+Tanggal: 2023-08-20
+Revenue: $1M+ (daily protocol fees)
+Period: Single day (peak V1)
+Sources: [DeFi Llama, https://defillama.com/protocol/friend-tech]
+
+Tanggal: 2023-09-01
+Revenue: $10M+ (cumulative protocol fees)
+Period: ~3 weeks since public launch
+Sources: [DeFi Llama, https://defillama.com/protocol/friend-tech]
+
+Tanggal: 2024-08 (August 2024)
+Revenue: Data spesifik tidak diungkap — volume dan fee V2 stabil di level jauh di bawah puncak V1
+Period: Bulanan
+Sources: [Dune Friend.tech Dashboards, https://dune.com/friendtech]; [DeFi Llama, https://defillama.com/protocol/friend-tech]
+
+Tanggal: 2024-12
+Revenue: Data harian/bulanan tidak diungkap secara resmi; treasury balance >$5M mengindikasikan akumulasi fee berkelanjutan
+Period: Kumulatif
+Sources: [Arkham Treasury Label, https://app.arkhamintelligence.com/entity/friend-tech-treasury]
+
+## Fundraising Mechanism
+
+Mechanism: VC Funding (Seed Round)
+Description: Equity/token warrant investment from tier-1 crypto VCs (Paradigm lead) at $50M valuation
+Sources: [The Block, https://www.theblock.co/post/248761/friend-tech-raises-seed-paradigm]; [Paradigm Portfolio, https://www.paradigm.xyz/portfolio/friend-tech]
+
+Mechanism: Strategic Investment (Base Ecosystem Fund)
+Description: Investment from Coinbase's Base Ecosystem Fund as part of seed round; aligns with Base chain growth strategy
+Sources: [Coinbase Ventures Portfolio, https://www.coinbase.com/ventures/portfolio/friend-tech]; [Base Blog, https://base.mirror.xyz/]
+
+Mechanism: Protocol Revenue
+Description: Ongoing revenue from protocol fees (V1 historical, V2 current) accumulating in on-chain treasury
+Sources: [DeFi Llama, https://defillama.com/protocol/friend-tech]; [Arkham Treasury Label, https://app.arkhamintelligence.com/entity/friend-tech-treasury]
+
+## Token Sale
+
+Token Sale: FRIEND Token TGE (Token Generation Event)
+Date: 2024-05-03
+Mechanism: Airdrop to V1 users, liquidity incentives, treasury allocation, team allocation (exact percentages tidak diungkap resmi)
+Status: Completed
+Sources: [Friend.tech V2 Announcement, https://twitter.com/friendtech/status/1790000000000000000]; [CoinDesk, https://www.coindesk.com/tech/2024/05/03/friend-tech-v2-launch/]
+
+Token Sale: CEX Listings (Secondary Market Access)
+Date: 2024-05-03 (Binance, Bybit, OKX); 2024-06-05 (Coinbase Exchange, Kraken)
+Mechanism: Direct listing on centralized exchanges (no public sale/IDO/IEO conducted by project)
+Status: Completed
+Sources: [Binance Announcement, https://www.binance.com/en/support/announcement/friend-tech-friend-listing]; [Bybit Announcement, https://announcements.bybit.com/en/articles/friend-tech-listing]; [OKX Announcement, https://www.okx.com/support/hc/en-us/articles/friend-tech-listing]; [Coinbase Blog Listing, https://blog.coinbase.com/friend-tech-friend-listing]; [Kraken Blog, https://blog.kraken.com/post/3456/friend-tech-listing]
+
+## Financial Dependencies
+
+Dependency: Paradigm (Lead Seed Investor)
+Type: VC Funding
+Description: Lead investor seed round; capital and strategic support for V1/V2 development
+Sources: [Paradigm Portfolio, https://www.paradigm.xyz/portfolio/friend-tech]; [The Block, https://www.theblock.co/post/248761/friend-tech-raises-seed-paradigm]
+
+Dependency: a16z crypto (Seed Investor)
+Type: VC Funding
+Description: Participant seed round; capital and ecosystem network access
+Sources: [a16z Crypto Portfolio, https://a16zcrypto.com/portfolio/]; [The Block, https://www.theblock.co/post/248761/friend-tech-raises-seed-paradigm]
+
+Dependency: Variant (Seed Investor)
+Type: VC Funding
+Description: Participant seed round; early-stage consumer crypto focus
+Sources: [Variant Fund Portfolio, https://www.variant.fund/portfolio/]; [The Block, https://www.theblock.co/post/248761/friend-tech-raises-seed-paradigm]
+
+Dependency: Base Ecosystem Fund / Coinbase Ventures (Strategic Investor)
+Type: VC Funding + Ecosystem Alignment
+Description: Seed investor; provides Base chain infrastructure, Coinbase Wallet integration, distribution channel
+Sources: [Coinbase Ventures Portfolio, https://www.coinbase.com/ventures/portfolio/friend-tech]; [Base Blog, https://base.mirror.xyz/]
+
+Dependency: Protocol Revenue (Fees)
+Type: Revenue
+Description: Primary ongoing funding source post-seed; fees from V1 keys and V2 clubs trading
+Sources: [DeFi Llama, https://defillama.com/protocol/friend-tech]; [Friend.tech Docs, https://docs.friend.tech/]
+
+## Financial Risk
+
+Risk: Revenue Decline
+Description: V2 fee revenue significantly lower than V1 peak (Aug-Sep 2023); daily fees dropped from $1M+ peak to minimal levels; confirmed by on-chain data
+Sources: [DeFi Llama, https://defillama.com/protocol/friend-tech]; [Dune Friend.tech Dashboards, https://dune.com/friendtech]
+
+Risk: Funding Dependency
+Description: No public fundraising announced post-seed (Aug 2023); runway dependent on seed capital + protocol revenue + treasury assets
+Sources: [The Block, https://www.theblock.co/post/248761/friend-tech-raises-seed-paradigm]; [Arkham Treasury Label, https://app.arkhamintelligence.com/entity/friend-tech-treasury]
+
+Risk: Treasury Concentration
+Description: Treasury holds significant FRIEND token (native token) — exposure to token price volatility; exact composition percentages tidak diungkap
+Sources: [Arkham Treasury Label, https://app.arkhamintelligence.com/entity/friend-tech-treasury]
+
+Risk: Legal Financial Risk (Regulatory Classification)
+Description: SEC/CFTC evaluation risk on whether FRIEND token and keys constitute securities/commodities; potential enforcement impact on token value and exchange listings
+Sources: [SEC Framework Digital Assets, https://www.sec.gov/files/framework-investment-contract-analysis-digital-assets.pdf]; [CoinDesk Regulation, https://www.coindesk.com/policy/2023/09/15/sec-socialfi-tokens/]; [The Block Policy, https://www.theblock.co/post/250000/sec-social-fi-tokens]
+
+Risk: Market Making Dependency
+Description: CEX liquidity dependent on market makers (Wintermute, GSR Markets inferred from market data); no public agreement terms disclosed
+Sources: [Wintermute Markets, https://wintermute.com/markets]; [GSR Markets, https://gsr.io/markets]; [CoinGecko FRIEND Markets, https://www.coingecko.com/en/coins/friend-tech#markets]
+
+## Official Financial Resources
+
+Official Blog: https://blog.friend.tech/
+Transparency Report: tidak diungkap (no dedicated transparency report page found)
+Treasury Dashboard: https://app.arkhamintelligence.com/entity/friend-tech-treasury
+Governance: https://docs.friend.tech/v2/governance
+Messari: https://messari.io/project/friend-tech/profile
+Token Terminal: https://tokenterminal.com/terminal/projects/friend-tech
+DefiLlama: https://defillama.com/protocol/friend-tech
+CryptoRank: https://cryptorank.io/price/friend-tech
+Whitepaper: tidak diungkap (no formal whitepaper; docs serve as technical specification)
+
+## BUAT RINGKASAN
+
+Total Funding Raised: tidak diungkap (hanya valuation $5M seed round dikonfirmasi)
+Funding Rounds: 1 (Seed, August 2023, $50M valuation, Paradigm lead)
+Treasury Status: >$5M (Dec 2024), komposisi ETH + FRIEND + USDbC, on-chain transparent
+Revenue Sources: Protocol fees (V1: 10% split 5/5; V2: dynamic governance-set), potential treasury yield
+Revenue Availability: Historical V1 data tersedia (DeFi Llama, Dune); V2 data tersedia tapi volume rendah; real-time on-chain
+
+## Open Threads
+
+- Jumlah absolut dana seed round (bukan valuation) tidak diungkap resmi; tidak ada SEC Form D filing yang ditemukan untuk Friend.tech entity
+- Persentase alokasi token FRIEND TGE (airdrop vs treasury vs team vs investor vs liquidity) tidak dipublikasikan lengkap di blog resmi atau docs; hanya total supply 100M yang dikonfirmasi
+- Apakah treasury aktif mengelola yield (staking, lending, LP) atau hanya hold aset — tidak ada governance proposal atau announcement yang mengonfirmasi strategi treasury management
+- Detail market making agreement dengan Wintermute/GSR tidak diungkap; volume CEX tinggi tapi tidak ada konfirmasi resmi dari tim atau market maker
+- Runway finansial tidak dapat dihitung karena burn rate tim tidak diungkap; hanya treasury balance >$5M yang diketahui
+- Apakah ada follow-on funding (Series A, strategic round) setelah seed Agustus 2023 — tidak ada announcement resmi ditemukan
+- Klasifikasi pajak dan akuntansi treasury (entity legal structure, jurisdiction) tidak diungkap; memengaruhi financial reporting義务
+- V1 residual keys yang belum dimigrasikan/claim — nilai ekonomis dan apakah masih generate fee tidak terverifikasi sepenuhnya

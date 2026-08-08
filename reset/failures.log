@@ -27,3 +27,6 @@
 2026-08-07T20:00:30.555517+00:00	Helium	phase 07-ecosystem	Helium phase 07-ecosystem failed after 3 attempts: <urlopen error [Errno -3] Temporary failure in name resolution>
 2026-08-07T20:22:35.497912+00:00	Hyperliquid	phase 01-foundation	Hyperliquid phase 01-foundation failed after 3 attempts: <urlopen error [Errno -3] Temporary failure in name resolution>
 2026-08-08T02:06:06.834156+00:00	Ethereum	phase 04-technology	Ethereum phase 04-technology failed after 3 attempts: IncompleteRead(0 bytes read, 26710 more expected)
+2026-08-08T11:28:09.841773+00:00	OlympusDAO	phase 07-ecosystem	OlympusDAO phase 07-ecosystem failed after 3 attempts: HTTP 524: {"error":{"message":"openai_error","type":"bad_response_status_code","param":"","code":"bad_response_status_code"}}
+2026-08-08T16:49:18.856132+00:00	Lido	phase 09-behavioral	Lido phase 09-behavioral failed after 3 attempts: HTTP 504: {"error":{"message":"openai_error","type":"bad_response_status_code","param":"","code":"bad_response_status_code"}}
+2026-08-08T17:39:35.005800+00:00	Lido	phase 09-behavioral	Lido phase 9a failed after 3 attempts: HTTP 504: {"error":{"message":"openai_error","type":"bad_response_status_code","param":"","code":"bad_response_status_code"}}

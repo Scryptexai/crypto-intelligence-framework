@@ -22,3 +22,4 @@
 2026-08-08T03:43:06.528177+00:00	Jito	verify_10_phases failed	{'entities': 29, 'events': 15, 'decisions': 5, 'knowledge': 0}
 2026-08-08T06:54:33.092325+00:00	MegaETH	verify_10_phases failed	{'entities': 18, 'events': 11, 'decisions': 7, 'knowledge': 0}
 2026-08-08T08:46:51.477982+00:00	Movement Labs	verify_10_phases failed	{'entities': 25, 'events': 10, 'decisions': 9, 'knowledge': 0}
+2026-08-08T16:22:04.505018+00:00	Aave	verify_10_phases failed	{'entities': 82, 'events': 32, 'decisions': 0, 'knowledge': 33}

@@ -1,333 +1,378 @@
 PROJECT: Lido
 
-1. Menjadi infrastruktur liquid staking dominan di Ethereum dan L2
+Strategic Objectives
 
-· Evidence: Lido menguasai ~62% market share TVL liquid staking (~$28.5B dari $46B total kategori) dan ~28.5% dari total ETH staked di Beacon Chain (~9.1M ETH dari ~32M ETH) per Desember 2024
-· Supporting Dataset: Phase 8 Market Position, Phase 8 Adoption Metrics
+1. Menjadi infrastruktur liquid staking dominan untuk Ethereum dan ekosistem L2
 
-2. Membangun stETH/wstETH sebagai "base layer" DeFi primitives
+· Evidence: Lido menguasai ~62% market share TVL liquid staking dan ~28.5% total ETH staked (Phase 8 Market Position, Adoption Metrics). Semua keputusan ekspansi (Polygon, Optimism, Arbitrum, Base, zkSync) mendukung positioning ini.
+· Supporting Dataset: Phase 1 Project Info, Phase 3 EV-003, EV-006, EV-010, EV-012, EV-013, Phase 8 Market Position, Adoption Metrics
 
-· Evidence: stETH/wstETH terintegrasi ke Curve (>50% volume historis), Aave (collateral factor 82.5%), MakerDAO (exposure >$1B puncak), Yearn, Pendle, Morpho; wstETH menjadi collateral standar di L2 (Optimism, Arbitrum, Base, zkSync Era)
-· Supporting Dataset: Phase 7 Major Integrations, Phase 8 Market Share
+2. Membangun DAO yang berkelanjutan dengan treasury mandiri dan governance efektif
 
-3. Desentralisasi progresif melalui DAO governance dan Staking Router
+· Evidence: Pembentukan Lido DAO Foundation Cayman Islands (EV-007), fee switch activation 10% (EV-020), core contributor program formalization (EV-022), legal structure review ongoing (EV-024). Treasury memegang 36.3% LDO supply + fee revenue.
+· Supporting Dataset: Phase 2 Foundation/DAO entities, Phase 3 EV-007, EV-020, EV-022, EV-024, Phase 5 Treasury, Revenue Model, Phase 6 Distribution, Governance
 
-· Evidence: Lido DAO mengontrol parameter fee (LIP-22 fee switch 10%), node operator set (33 operator + DVT modules), upgrade kontrak (Lido V2 via LIP-14), legal structure; Staking Router memungkinkan permissionless onboarding via Simple DVT, Obol, SSV
-· Supporting Dataset: Phase 3 EV-013, EV-020, EV-021, Phase 6 Governance, Phase 4 Technical Upgrade History
+3. Menjaga keamanan protokol melalui audit berulang, bug bounty, dan upgrade bertahap
 
-4. Mempertahankan keamanan melalui multi-audit, bug bounty, dan oracle committee
+· Evidence: 5 major audit engagements (Sigma Prime x2, MixBytes x2, Quantstamp) + continuous program (Phase 4 Audit History). Bug bounty $1M di Immunefi. Upgrade V2 melalui governance vote LIP-14 dengan timelock.
+· Supporting Dataset: Phase 4 Security Model, Audit History, Technical Upgrade History, Phase 7 Infrastructure Providers (auditors)
 
-· Evidence: 5 major audit engagements (Sigma Prime x2, MixBytes x2, Quantstamp x1) + continuous program; Immunefi bug bounty max $1M; Oracle Committee 5-of-9 multi-sig; tidak ada eksploit mayor pada kontrak inti sejak launch
-· Supporting Dataset: Phase 4 Security Model, Phase 4 Audit History, Phase 7 Infrastructure Providers
+4. Mengintegrasikan stETH/wstETH sebagai "money lego" fundamental di DeFi Ethereum dan L2
 
-5. Ekspansi ekosistem melalui L2 deployment dan restaking integration
+· Evidence: Integrasi mendalam dengan Curve (primary liquidity), Aave (collateral factor 82.5%), MakerDAO (wstETH vault >$1B peak), Yearn, Pendle, Morpho, EigenLayer restaking (>50% TVL awal). wstETH deployed di 4 L2 via canonical bridges.
+· Supporting Dataset: Phase 3 EV-010, EV-012, EV-016, EV-018, Phase 7 Major Integrations, Applications, Phase 8 Market Share (DeFi Collateral)
 
-· Evidence: wstETH deployed ke Optimism, Arbitrum, Base, zkSync Era via canonical bridges; wstETH menjadi LRT dominan di EigenLayer (>50% TVL awal); stMATIC di Polygon; sunset Solana/Polkadot/Kusama untuk fokus resource
-· Supporting Dataset: Phase 3 EV-010, EV-012, EV-016, EV-014, EV-015, Phase 7 Major Integrations
+5. Desentralisasi progresif node operator set melalui Staking Router modules
 
----
+· Evidence: Genesis 10 operator (EV-003) → 33 professional operators + DVT clusters (Simple DVT, Obol, SSV) via permissionless modules (EV-021). Staking Router (V2) memungkinkan onboarding modular tanpa upgrade kontrak inti.
+· Supporting Dataset: Phase 3 EV-003, EV-013, EV-021, Phase 4 Core Components (Staking Router), Security Model, Phase 7 Infrastructure Providers (Obol, SSV, Simple DVT)
 
-Keputusan: Mainnet Launch Lido Protocol di Ethereum (2020-12-17)
-· Trigger: Kebutuhan liquid staking solution untuk Ethereum 2.0 BeChain chain; P2P.org memiliki infrastruktur validator dan capital untuk bootstrap
-· Evidence: Phase 3 EV-003; Phase 2 Entity P2P.org, Konstantin Lomashuk, Vasiliy Shapovalov
-· Decision: Deploy deposit contract, stETH (rebasing), withdrawal queue v1, oracle v1, node operator registry dengan 10 genesis operators (P2P.org, Figment, Chorus One, StakeFish, dll)
-· Immediate Result: Pengguna bisa deposit ETH → stETH 1:1; TVL awal ~10.000 ETH minggu pertama; stETH mulai rebasing harian
-· Long-term Impact: Menjadikan Lido first-mover liquid staking Ethereum; fondasi market dominance 62% LST TVL 2024
-· Supporting Dataset: Phase 3 EV-003, Phase 2 Entity P2P.org, Phase 4 System Architecture
+Decision Timeline
 
-Keputusan: TGE LDO Token dan Liquidity Mining Program (2021-01)
-· Trigger: Perlu governance token untuk DAO; incentivize liquidity stETH/ETH di Curve dan distribusi community
-· Evidence: Phase 3 EV-004; Phase 6 Token Distribution, TGE
-· Decision: Mint 1B LDO fixed supply; alokasi: Treasury 36.3%, Investors 22.18%, Team 20%, Community (LM) 10%, Operators 6.5%, Other 5.02%; LM program 1 tahun di Curve stETH/ETH + SushiSwap LDO/ETH
-· Immediate Result: LDO beredar, governance on-chain aktif via Snapshot + Aragon; treasury DAO menerima 363M LDO; stETH liquidity mendalam di Curve
-· Long-term Impact: Governance framework untuk semua keputusan protokol; treasury funding untuk core contributors, grants, incentives; investor alignment via vesting
-· Supporting Dataset: Phase 3 EV-004, Phase 6 Token Distribution, Phase 6 TGE
+Keputusan: Mainnet Launch Lido Protocol di Ethereum dengan 10 genesis node operator (2020-12-17)
+· Trigger: Ethereum Beacon Chain launch (Des 2020) menciptakan peluang liquid staking; P2P.org telah membangun MVP selama 2020
+· Evidence: Phase 1 Launch Date Mainnet 2020-12-17; Phase 3 EV-003 Mainnet Launch; Phase 4 Technical Upgrade History Mainnet Launch
+· Decision: Deploy deposit contract, stETH rebasing token, withdrawal queue v1, oracle v1, node operator registry v1 dengan 10 operator kurasi P2P.org
+· Immediate Result: TVL ~10.000 ETH minggu pertama; stETH rebasing harian berfungsi; validator rewards terdistribusi
+· Long-term Impact: Menetapkan arsitektur inti (deposit, stETH, oracle, operator registry) yang bertahan hingga V2; memulai network effect liquid staking
+· Supporting Dataset: Phase 1, Phase 3 EV-002, EV-003, Phase 4 Architecture, Technical Upgrade History
 
-Keputusan: Series A Funding Paradigm Lead $73M Valuation (2021-03-16)
-· Trigger: Perlu capital untuk scale tim, audit, DeFi integration; Paradigm sebagai lead investor strategis
-· Evidence: Phase 3 EV-005; Phase 5 Funding History
-· Decision: Series A dengan Paradigm lead, a16z, Dragonfly, Variant, Robot Ventures participate; Paradigm dapat kursi multisig treasury; equity/token warrant via Cayman Foundation
-· Immediate Result: Treasury diperkuat; percepatan Lido V2 development; ekosistem DeFi integration (Curve, Aave, Maker)
-· Long-term Impact: Investor besar committed ke long-term; governance influence via multisig; credibility untuk Series B
-· Supporting Dataset: Phase 3 EV-005, Phase 5 Funding History, Phase 2 Entity Paradigm, a16z, Dragonfly
+Keputusan: TGE LDO Token dengan Liquidity Mining di Curve dan SushiSwap (2021-01)
+· Trigger: Perlu token governance untuk DAO dan insentif liquidity awal stETH/ETH
+· Evidence: Phase 3 EV-004 TGE LDO; Phase 6 TGE, Distribution, Vesting Schedule; Phase 5 Token Sale
+· Decision: Mint 1B LDO fixed supply; alokasi treasury 36.3%, investor 22.18%, team 20%, community 10% (liquidity mining 1 tahun), operator 6.5%; liquidity mining di Curve stETH/ETH + SushiSwap LDO/ETH
+· Immediate Result: LDO beredar, governance on-chain aktif via Snapshot + Aragon; stETH/ETH pool Curve menjadi deepest liquidity venue
+· Long-term Impact: Membentuk struktur kepemilikan token yang memengaruhi governance hingga sekarang (treasury 36.3% dominan); Curve menjadi dependency kritis liquidity
+· Supporting Dataset: Phase 3 EV-004, Phase 5 Token Sale, Phase 6 Distribution, Vesting, TGE, Phase 7 Major Integrations (Curve)
 
-Keputusan: Launch Lido on Polygon (stMATIC) (2021-03)
-· Trigger: Ekspansi multi-chain pertama; Polygon memiliki DeFi ecosystem besar dan low fees
-· Evidence: Phase 3 EV-006; Phase 7 Major Integrations
-· Decision: Deploy native stMATIC contracts di Polygon mainnet dengan own node operator set; rebasing model mirip stETH
-· Immediate Result: stMATIC live di Polygon DeFi (Aave Polygon, QuickSwap, Curve Polygon); TVL puncak ~$200M (2022)
-· Long-term Impact: Bukti Lido bisa multi-chain; template untuk future L2 deployment; tapi focus kemudian shift ke Ethereum L2 via wstETH bridging
-· Supporting Dataset: Phase 3 EV-006, Phase 7 Major Integrations, Phase 4 Core Components
+Keputusan: Series A Funding dipimpin Paradigm valuation $73M (2021-03-16)
+· Trigger: Perlu dana untuk perluas tim, audit, ekosistem DeFi integration pasca-launch
+· Evidence: Phase 3 EV-005 Series A; Phase 5 Funding History Series A; Phase 2 Investor entities (Paradigm, a16z, Dragonfly, Variant, Robot Ventures)
+· Decision: Terima Series A Paradigm lead; investor mendapat kursi di multisig treasury awal; token allocation via SAFT dari pool investor 22.18%
+· Immediate Result: Treasury DAO diperkuat; percepatan pengembangan V2 dan cross-chain; Paradigm mendapat influence governance via multisig
+· Long-term Impact: Menetapkan pola investor VC dengan token warrant + multisig seat; valuation jump ke >$1B Series B tahun berikutnya
+· Supporting Dataset: Phase 2 Investors, Phase 3 EV-005, Phase 5 Funding History, Phase 6 Distribution (Investors)
 
-Keputusan: Pembentukan Lido DAO Foundation Cayman Islands (2021-08)
-· Trigger: Legal wrapper diperlukan untuk treasury management, kontrak hukum, compliance, limit liability token holder
-· Evidence: Phase 3 EV-007; Phase 2 Entity Lido DAO Foundation, Cayman Islands
-· Decision: Establish Limited Liability Foundation di Cayman Islands memegang kontrak protokol, treasury, IP atas nama DAO
-· Immediate Result: DAO bisa sign legal contracts, buka bank account, hire contractors, grant programs via legal entity
-· Long-term Impact: Struktur legal standar untuk DAO besar; namun review 2024 untuk compliance MiCA/SEC (ongoing)
-· Supporting Dataset: Phase 3 EV-007, Phase 2 Entity Lido DAO Foundation, Phase 5 Treasury Custodian
+Keputusan: Launch Lido on Polygon (stMATIC) — ekspansi multi-chain pertama (2021-03)
+· Trigger: Polygon tumbuh cepat sebagai L2/sidechain; permintaan liquid staking MATIC
+· Evidence: Phase 3 EV-006 Launch Polygon; Phase 1 Chains (Polygon); Phase 4 Core Components (stMATIC), Execution Environment; Phase 7 Major Integrations (Polygon)
+· Decision: Deploy native contracts di Polygon mainnet (bukan bridge stETH); stMATIC rebasing model mirip stETH; subset operator Ethereum
+· Immediate Result: TVL stMATIC puncak ~$200M (2022); integrasi DeFi Polygon (Aave, QuickSwap, Curve)
+· Long-term Impact: Membuktikan arsitektur portable ke EVM chain lain; namun kemudian fokus konsolidasi ke Ethereum + L2 (sunset non-EVM chains)
+· Supporting Dataset: Phase 3 EV-006, Phase 4 Execution Environment, Core Components, Phase 7 Major Integrations, Phase 8 Market Timeline
 
-Keputusan: Launch Lido on Solana (stSOL) (2021-12)
-· Trigger: Ekspansi ke ekosistem Solana yang berkembang pesat; demand liquid staking SOL
-· Evidence: Phase 3 EV-008; Phase 7 Major Integrations (Deprecated)
-· Decision: Deploy stSOL via Solana stake pool program (SPL); node operator set Solana (Chorus One, Figment, P2P.org); non-rebasing token
-· Immediate Result: stSOL terintegrasi Marinade, Orca, Saber, Jupiter; TVL puncak ~$500M early 2022
-· Long-term Impact: Adoption menurun akibat kompetisi native (Marinade, Jito, SolBlaze); sunset 2023 via governance vote; lesson: focus pada Ethereum + L2
-· Supporting Dataset: Phase 3 EV-008, EV-014, Phase 7 Major Integrations (Deprecated)
+Keputusan: Pembentukan Lido DAO Foundation di Cayman Islands (2021-08)
+· Trigger: Perlu legal wrapper untuk treasury, kontrak, IP, compliance, bank account
+· Evidence: Phase 3 EV-007 Legal; Phase 2 Foundation (Lido DAO), Government (Cayman Islands); Phase 5 Treasury Custodian; Phase 6 Governance
+· Decision:irikan Limited Liability Foundation Cayman Islands sebagai legal entity DAO; memegang kontrak protokol, treasury, IP; multisig 5-of-9 execution
+· Immediate Result: DAO dapat bertindak hukum, sign contracts, buka rekening bank, batasi liability token holder
+· Long-term Impact: Struktur legal yang memungkinkan DAO beroperasi lama; namun review 2024 mengevaluasi apakah perlu wrapper tambahan (MiCA, SEC)
+· Supporting Dataset: Phase 2 Foundation, Government, Phase 3 EV-007, Phase 5 Treasury Custodian, Phase 6 Governance, Phase 3 EV-024
 
-Keputusan: Lido V2 Mainnet Launch - Staking Router & Withdrawal Credentials 0x01 (2023-05-15)
-· Trigger: Ethereum Shanghai upgrade (EIP-4895) enable withdrawals; perlu modular operator onboarding untuk desentralisasi
-· Evidence: Phase 3 EV-013; Phase 4 Technical Upgrade History; Phase 4 System Architecture
-· Decision: Activate LIP-14: Staking Router (modular modules), withdrawal credentials 0x01, upgraded oracle, dynamic node operator registry
-· Immediate Result: Native withdrawals enabled (burn stETH → claim ETH); permissionless operator onboarding via DVT modules (Simple DVT, Obol, SSV); protokol siap EigenLayer
-· Long-term Impact: Desentralisasi validator set meningkat (33 operator + DVT clusters); withdrawal queue functional; foundation untuk restaking integration
-· Supporting Dataset: Phase 3 EV-013, Phase 4 Technical Upgrade History, Phase 4 Core Components
+Keputusan: wstETH Deployment di Optimism dan Arbitrum via canonical bridges (2022-05)
+· Trigger: L2 DeFi berkembang (Aave V3, Velodrome, GMX); butuh non-rebasing token composable
+· Evidence: Phase 3 EV-010 wstETH L2; Phase 1 Chains (Optimism, Arbitrum); Phase 4 Cross-chain Messaging, Core Components (wstETH); Phase 7 Major Integrations (Optimism, Arbitrum)
+· Decision: Deploy wstETH via Optimism Gateway dan Arbitrum Bridge (canonical); tidak deploy kontrak staking baru di L2
+· Immediate Result: wstETH supply L2 tumbuh >500k (2023); menjadi collateral utama DeFi L2
+· Long-term Impact: Menetapkan strategi "bridge wstETH, bukan deploy staking baru" untuk L2; diulang untuk Base, zkSync Era (EV-012)
+· Supporting Dataset: Phase 3 EV-010, EV-012, Phase 4 Cross-chain Messaging, Phase 7 Major Integrations, Phase 8 Market Timeline
 
-Keputusan: Sunset Lido on Solana (stSOL) via Governance (2023-06)
-· Trigger: Adoption menurun, biaya operasional tinggi, kompetisi native stake pools yang lebih efisien
-· Evidence: Phase 3 EV-014; Phase 6 Major Token Events; Phase 7 Major Integrations
-· Decision: DAO vote untuk sunset; migration window buka redeem stSOL → SOL; kontrak dihentikan Q4 2023
-· Immediate Result: User migrasi ke Marinade/Jito native; stSOL redemption contract aktif; resource realokasi ke Ethereum/L2
-· Long-term Impact: Demonstrasi governance effectiveness untuk product lifecycle management; focus resource konsolidasi
-· Supporting Dataset: Phase 3 EV-014, Phase 6 Major Token Events, Phase 7 Major Integrations
+Keputusan: Lido V2 Mainnet Launch — Staking Router + Withdrawal Credentials 0x01 (2023-05-15)
+· Trigger: Ethereum Shanghai upgrade (EIP-4895) enable native withdrawals; perlu modular operator onboarding untuk desentralisasi
+· Evidence: Phase 3 EV-013 V2 Launch, EV-019 Shanghai Readiness; Phase 4 Technical Upgrade History V2, Core Components (Staking Router, Withdrawal Queue), Security Model; Phase 7 Infrastructure (Obol, SSV, Simple DVT)
+· Decision: Activate via governance LIP-14: Staking Router (modular modules), withdrawal credentials 0x01, oracle v2, dynamic node operator registry
+· Immediate Result: Withdrawal stETH→ETH enabled (burn stETH, claim ETH dari queue); permissionless operator onboarding via modules; siap untuk EigenLayer
+· Long-term Impact: Arsitektur modular memungkinkan ekspansi operator tanpa upgrade kontrak; withdrawal queue memenuhi janji liquid staking; fondasi untuk restaking
+· Supporting Dataset: Phase 3 EV-013, EV-019, Phase 4 Technical Upgrade History, Core Components, Security Model, Phase 7 Infrastructure
 
-Keputusan: EigenLayer Restaking Integration - wstETH sebagai LRT (2023-07)
-· Trigger: EigenLayer mainnet launch; demand restaking yields di atas staking yields; wstETH sudah dominant DeFi collateral
-· Evidence: Phase 3 EV-016; Phase 7 Major Integrations; Phase 8 Narrative Position
-· Decision: Support wstETH sebagai collateral di EigenLayer contracts (no Lido contract upgrade needed); wstETH menjadi LRT dominan
-· Immediate Result: >50% TVL restaking awal EigenLayer dari wstETH; muncul LRT protocols (ezETH, rsETH, swETH) menggunakan wstETH underlying
-· Long-term Impact: wstETH menjadi "base layer" untuk restaking; Lido benefit dari restaking demand tanpa operate LRT native; reinforces DeFi primitive position
-· Supporting Dataset: Phase 3 EV-016, Phase 7 Major Integrations, Phase 8 Narrative Position
+Keputusan: Sunset Lido on Solana (stSOL), Polkadot (stDOT), Kusama (stKSM) (2023-06, 2023-09)
+· Trigger: Adoption rendah, biaya operasional tinggi, kompetisi native stake pools (Marinade, Jito), fokus resource ke Ethereum/L2
+· Evidence: Phase 3 EV-014 Sunset Solana, EV-015 Sunset Polkadot/Kusama; Phase 1 Chains (deprecated); Phase 4 Core Components (deprecated); Phase 7 Major Integrations (deprecated)
+· Decision: Governance vote menutup produk; redemption window dibuka untuk user exit ke native token; kontrak dihentikan Q4 2023
+· Immediate Result: TVL stSOL/stDOT/stKSM turun ke ~0; resource tim teralihkan ke Ethereum/L2/EigenLayer
+· Long-term Impact: Menunjukkan disiplin resource allocation; konsolidasi ke Ethereum alignment; non-EVM chains dibuang
+· Supporting Dataset: Phase 3 EV-008, EV-009, EV-014, EV-015, Phase 4 Core Components, Phase 7 Major Integrations
 
-Keputusan: Fee Switch Activation LIP-22 - 10% Treasury Allocation (2024-02)
-· Trigger: DAO treasury butuh revenue sustainable untuk grants, core contributor budget, insurance fund; protocol revenue sebelumnya hanya 5%
-· Evidence: Phase 3 EV-020; Phase 5 Revenue Model; Phase 6 Governance
-· Decision: Governance vote LIP-22 passed: fee switch dari 5% ke 10% staking rewards ke treasury (operator fee tetap 5% = total 15% fee)
-· Immediate Result: Treasury revenue meningkat signifikan; DAO memperluas grant program dan core contributor budget 2024-2025
-· Long-term Impact: Sustainable funding model untuk DAO operations; aligns token holder value dengan protocol revenue; governance control over fee parameter proven
-· Supporting Dataset: Phase 3 EV-020, Phase 5 Revenue Model, Phase 6 Governance
+Keputusan: Integrasi EigenLayer Restaking — wstETH sebagai LRT dominan (2023-07)
+· Trigger: EigenLayer launch restaking mainnet; wstETH sudah tersebar luas di DeFi sebagai collateral
+· Evidence: Phase 3 EV-016 EigenLayer Integration; Phase 2 Protocol (EigenLayer); Phase 4 Architecture (Cross-chain Messaging — native Ethereum); Phase 7 Major Integrations (EigenLayer), External Dependencies (EigenLayer)
+· Decision: Tidak deploy kontrak baru; wstETH existing langsung accepted sebagai restaking collateral di EigenLayer contracts
+· Immediate Result: wstETH >50% TVL restaking awal; muncul LRT protocols (ezETH, rsETH, swETH) menggunakan wstETH underlying
+· Long-term Impact: Memperkuat positioning wstETH sebagai "base layer" DeFi + restaking; Lido tidak perlu mengeluarkan LRT native (berbeda competitor)
+· Supporting Dataset: Phase 3 EV-016, Phase 2 EigenLayer, Phase 4 Architecture, Phase 7 Major Integrations, Phase 8 Narrative Position (Restaking)
+
+Keputusan: Fee Switch Activation — 10% staking rewards ke treasury via LIP-22 (2024-02)
+· Trigger: Treasury butuh revenue sustainable untuk grants, core contributor budget, insurance; 5% fee (2020-2024) dianggap tidak cukup
+· Evidence: Phase 3 EV-020 Fee Switch; Phase 5 Revenue Model (Staking Fee 10%), Financial Risk; Phase 6 Governance (LIP-22), Utility (Fee Switch Activation)
+· Decision: Governance vote meningkatkan protocol fee dari 5% ke 10% rewards; 5% operator + 10% DAO = 15% total fee
+· Immediate Result: Treasury revenue meningkat signifikan; DAO memperluas grant program dan budget 2024-2025
+· Long-term Impact: Membuat DAO financially sustainable tanpa bergantung token sale; namun meningkatkan tekanan pada stETH yield vs competitor
+· Supporting Dataset: Phase 3 EV-020, Phase 5 Revenue Model, Financial Risk, Phase 6 Governance, Utility, Phase 8 Market Timeline
 
 Keputusan: Permissionless Node Operator Onboarding via Staking Router Modules (2024-06)
-· Trigger: Kritik sentralisasi (~28.5% ETH staked market share); perlu desentralisasi validator set beyond curated 33 operators
-· Evidence: Phase 3 EV-021; Phase 4 Technical Upgrade History; Phase 8 Narrative Position (Risk)
-· Decision: Activate Simple DVT, Obol, SSV modules di Staking Router; onboard 20+ operator baru via governance votes; DVT clusters enabled
-· Immediate Result: Operator set expansion >30 entitas + DVT clusters; client diversity improvement; geographic distribution lebih tersebar
-· Long-term Impact: Mitigasi centralization risk narrative; pathway ke fully permissionless validator set; alignment dengan Ethereum credibly neutral ethos
-· Supporting Dataset: Phase 3 EV-021, Phase 4 Technical Upgrade History, Phase 8 Narrative Position
-
----
+· Trigger: Kritik sentralisasi (~28.5% ETH staked); perlu geographic/client diversity; DVT technology matang (Obol, SSV)
+· Evidence: Phase 3 EV-021 Node Operator Expansion; Phase 4 Core Components (Staking Router), Security Model (Validator Set), Known Limitations; Phase 7 Infrastructure Providers (Obol, SSV, Simple DVT); Phase 8 Narrative (Centralization Risk)
+· Decision: Activate Simple DVT, Obol, SSV modules via governance; onboard 20+ operator baru termasuk solo staker via DVT clusters
+· Immediate Result: Operator count naik ke 33+ entities + DVT clusters; client diversity diperbaiki; geographic spread meningkat
+· Long-term Impact: Menjawab narasi sentralisasi; arsitektur modular V2 terbukti works; template untuk future module types
+· Supporting Dataset: Phase 3 EV-013, EV-021, Phase 4 Staking Router, Security Model, Known Limitations, Phase 7 Infrastructure, Phase 8 Narrative
 
 Evolution Pattern
 
-Fase 1: Bootstrap & Launch (2020-2021)
-· Dari konsepsi P2P.org → testnet → mainnet launch stETH → TGE LDO → Series A funding
-· Fokus: Product-market fit liquid staking Ethereum; bootstrap liquidity via Curve; community distribution via LM
-· Teknologi: Simple architecture (deposit, stETH rebasing, oracle, withdrawal queue v1, curated 10 operators)
-· Governance: Aragon DAO + Snapshot; treasury 363M LDO; investor multisig seats
+Perubahan Strategi: Dari Multi-chain Broad → Ethereum + L2 Focus
+· Evidence: Phase 1 Chains (9 chains listed); Phase 3 EV-006 Polygon, EV-008 Solana, EV-009 Polkadot/Kusama, EV-010 Optimism/Arbitrum, EV-012 Base/zkSync, EV-014 Sunset Solana, EV-015 Sunset Polkadot/Kusama; Phase 4 Execution Environment (EVM chains live, non-EVM deprecated); Phase 8 Market Timeline
+· Description: 2020-2022: ekspansi agresif ke 5+ chains (Ethereum, Polygon, Solana, Polkadot, Kusama). 2023: sunset 3 non-EVM chains via governance. 2022-2024: fokus deployment wstETH ke L2 Ethereum via canonical bridges. Strategi bergeser dari "deploy staking contracts everywhere" ke "bridge wstETH ke L2 Ethereum yang berkembang".
 
-Fase 2: Multi-chain Expansion & DeFi Integration (2021-2022)
-· Launch Polygon (stMATIC), Solana (stSOL), Polkadot/Kusama (stDOT/stKSM); wstETH ke Optimism/Arbitrum
-· Series B funding (>$1B valuation); legal foundation established
-· Major DeFi integrations: Curve, Aave, Maker, Yearn → stETH menjadi DeFi primitive
-· Teknologi: wstETH wrapper untuk composability; canonical bridges untuk L2 deployment
+Perubahan Teknologi: Dari Monolithic Contracts → Modular Architecture (V2)
+· Evidence: Phase 3 EV-003 Mainnet (monolithic: deposit, stETH, withdrawal queue, oracle, operator registry), EV-013 V2 (Staking Router modules, dynamic registry, withdrawal credentials 0x01); Phase 4 Core Components (Staking Router, Node Operator Registry upgraded), Architecture (Modular), Technical Upgrade History
+· Description: V1 (2020): Semua logika dalam kontrak terpisah tapi tightly coupled; operator onboarding butuh upgrade kontrak. V2 (2023): Staking Router memisahkan validator allocation logic ke modules (Simple DVT, Obol, SSV, P2P.org); Node Operator Registry dynamic; withdrawal credentials 0x01 native. Memungkinkan permissionless innovation di layer module tanpa touch core.
 
-Fase 3: Consolidation & V2 Upgrade (2023)
-· Shanghai upgrade readiness → Lido V2 (Staking Router, 0x01 credentials, modular operators)
-· Sunset non-Ethereum chains (Solana, Polkadot, Kusama) via governance → focus resource
-· EigenLayer integration → wstETH sebagai LRT dominan
-· wstETH expansion ke Base, zkSync Era (new L2s)
+Perubahan Tokenomics: Dari Fee 5% Fixed → Fee Switch Governance-Controlled (10%)
+· Evidence: Phase 3 EV-004 TGE (fee 5% dari awal), EV-020 Fee Switch (10% activated Feb 2024); Phase 5 Revenue Model (Staking Fee 10%, Node Operator Fee 5%); Phase 6 Utility (Fee Switch Activation), Governance (LIP-22)
+· Description: Fee 5% hardcoded sejak launch 2020. Setelah 3+ tahun operasi dan treasury membutuhkan revenue sustainable, governance vote (LIP-22) mengaktifkan fee switch ke 10%. Menunjukkan tokenomics bukan immutable — DAO dapat adjust parameter ekonomis via governance.
 
-Fase 4: Maturation & Sustainable DAO (2024+)
-· Fee switch activation (10% treasury) → sustainable revenue model
-· Permissionless operator onboarding via DVT modules → desentralisasi progresif
-· Core contributor program formalization → structured development
-· Legal structure review untuk global compliance (MiCA, SEC)
-· wstETH supply milestone 1M → adoption maturity
+Perubahan Governance: Dari Curated Operator Set → Permissionless Modules + DVT
+· Evidence: Phase 3 EV-003 (10 genesis operators kurasi P2P.org), EV-021 (20+ baru via modules); Phase 4 Security Model (Validator Set permissioned), Staking Router (modules); Phase 7 Infrastructure (Obol, SSV, Simple DVT); Phase 8 Narrative (Centralization Risk)
+· Description: Genesis: 10 operator dipilih P2P.org. V2 Staking Router: modules memungkinkan DVT-based permissionless onboarding. 2024: governance approve Obol, SSV, Simple DVT modules + 20+ operator baru. Evolution dari "trusted set" ke "modular permissionless dengan DVT safety".
 
-Perubahan Strategi Utama:
-1. Dari multi-chain (Solana, Polkadot, Kusama) → konsolidasi ke Ethereum + L2 (wstETH bridging)
-2. Dari curated operators only → hybrid curated + permissionless DVT modules
-3. Dari 5% protocol fee → 10% fee switch via governance (revenue sustainability)
-4. Dari product expansion → product lifecycle management (sunset underperforming)
-5. Dari staking only → staking + restaking infrastructure (EigenLayer integration)
+Perubahan Revenue: Dari Zero Protocol Revenue → Sustainable Fee Revenue + Treasury Yield
+· Evidence: Phase 3 EV-004 (TGE, no fee revenue initially), EV-020 (Fee switch 10%); Phase 5 Revenue Model (Staking Fee 10%, Withdrawal Fee 0.1%, Treasury Yield), Funding History (Series A/B done, no further VC funding); Phase 8 Market Timeline
+· Description: 2020-2024: Protocol fee 5% tapi tidak diaktifkan penuh (fee switch off?); revenue mainly dari treasury management. 2024: Fee switch 10% activated → ~$45-55M annualized revenue. DAO menjadi financially independent post-VC funding.
 
----
+Technical Decision Pattern
 
-Pola 1: Ethereum Alignment First
+Pola 1: Ethereum Alignment First — Semua Keputusan Teknis Mengutamakan Ethereum Mainnet dan Roadmap-nya
+· Decision Pattern: Setiap upgrade teknis mayor (withdrawal credentials 0x01, Shanghai readiness, V2 Staking Router) disejajarkan dengan Ethereum roadmap (Beacon Chain, Shanghai/Capella, PBS/DVT future). Non-EVM chains (Solana, Polkadot, Kusama) dideprecate ketika resource konflik dengan Ethereum focus.
+· Evidence: Phase 3 EV-013 V2 (withdrawal credentials 0x01 untuk Shanghai), EV-019 Shanghai Readiness, EV-014/015 Sunset non-EVM; Phase 4 Architecture (Base Layer Ethereum), Consensus Mechanism (relies on Beacon Chain), Execution Environment (EVM only live), Known Limitations (L2 bridge risk acknowledged); Phase 8 Narrative (Ethereum Staking Centralization Risk)
+· Supporting Dataset: Phase 1, Phase 3 EV-013, EV-014, EV-015, EV-019, Phase 4 Architecture, Consensus, Execution Environment, Known Limitations, Phase 8 Narrative
 
-· Decision Pattern: Semua keputusan teknis utama mengutamakan alignment dengan Ethereum roadmap (Beacon Chain, Shanghai, EIP-4895, DVT, PBS)
-· Evidence: Mainnet launch menunggu Beacon Chain genesis (Phase 3 EV-003); Lido V2 withdrawal credentials 0x01 mengikuti EIP-4895 (Phase 3 EV-013); Staking Router modules mendukung DVT (Obol, SSV, Simple DVT) yang aligned dengan Ethereum PBS/DVT roadmap (Phase 3 EV-021); tidak build separate consensus/execution layer
-· Supporting Dataset: Phase 3 EV-003, EV-013, EV-021; Phase 4 System Architecture, Consensus Mechanism
+Pola 2: Upgrade Bertahap dengan Pengujian Ekstensif dan Audit Multi-party
+· Decision Pattern: Setiap major upgrade (Mainnet, V2, wstETH, L2 deployments) melalui: testnet → audit multiple firms → governance vote → timelock execution. V2 audit oleh Sigma Prime, MixBytes, Quantstamp sebelum launch. wstETH L2 deployments menggunakan canonical bridges (bukan custom bridge) untuk minimize attack surface.
+· Evidence: Phase 3 EV-002 Testnet, EV-003 Mainnet, EV-013 V2 (LIP-14 governance), EV-010/012 L2 deployments; Phase 4 Audit History (5 major audits), Security Model (proxy upgrades via governance timelock), Technical Upgrade History; Phase 7 External Dependencies (Canonical bridges)
+· Supporting Dataset: Phase 3 EV-002, EV-003, EV-010, EV-012, EV-013, Phase 4 Audit History, Security Model, Technical Upgrade History, Phase 7 External Dependencies
 
-Pola 2: Upgrade Bertahap dengan Pengujian Ekstensif
+Pola 3: Modular Architecture untuk Fleksibilitas Tanpa Upgrade Kontrak Inti
+· Decision Pattern: V2 Staking Router memisahkan validator allocation logic ke modules (Simple DVT, Obol, SSV, P2P.org module). Operator onboarding baru = deploy module baru, bukan upgrade Staking Router core. Oracle, Withdrawal Queue, Node Operator Registry juga terpisah dan upgradeable via proxy.
+· Evidence: Phase 3 EV-013 V2 Launch (Staking Router), EV-021 Module Expansion; Phase 4 Core Components (Staking Router, Node Operator Registry, Oracle, Withdrawal Queue), Architecture (Modular), Technical Upgrade History; Phase 7 Infrastructure (Obol, SSV, Simple DVT modules)
+· Supporting Dataset: Phase 3 EV-013, EV-021, Phase 4 Core Components, Architecture, Technical Upgrade History, Phase 7 Infrastructure
 
-· Decision Pattern: Major upgrade (V2) melalui testnet panjang, multiple audits, governance vote, timelock execution
-· Evidence: Lido V2 audited by Sigma Prime, MixBytes, Quantstamp sebelum launch (Phase 4 Audit History); LIP-14 governance vote dengan quorum 5% supply (Phase 3 EV-013); 48h timelock sebelum execution (Phase 6 Governance); Shanghai readiness testing sebelum mainnet (Phase 3 EV-019)
-· Supporting Dataset: Phase 4 Audit History, Phase 3 EV-013, EV-019; Phase 6 Governance
+Pola 4: Canonical Bridges Only untuk L2 Expansion — No Custom Bridge Contracts
+· Decision Pattern: wstETH deployment ke Optimism, Arbitrum, Base, zkSync Era semuanya menggunakan canonical bridge masing-masing chain (Optimism Gateway, Arbitrum Bridge, Base Bridge, zkSync Bridge). Tidak ada Lido-specific bridge contracts. Mengurangi attack surface dan dependency pada bridge security L2 native.
+· Evidence: Phase 3 EV-010 wstETH Optimism/Arbitrum, EV-012 wstETH Base/zkSync; Phase 4 Cross-chain Messaging (Canonical bridges), Execution Environment (L2 deployments); Phase 7 Major Integrations (Optimism, Arbitrum, Base, zkSync), External Dependencies (Canonical bridges); Phase 8 Market Timeline
+· Supporting Dataset: Phase 3 EV-010, EV-012, Phase 4 Cross-chain Messaging, Execution Environment, Phase 7 Major Integrations, External Dependencies, Phase 8 Market Timeline
 
-Pola 3: Modular Architecture untuk Fleksibilitas Jangka Panjang
+Pola 5: Oracle Committee Multi-sig (5-of-9) untuk Beacon Chain Reporting — Trust Minimized tapi Bukan Trustless
+· Decision Pattern: Oracle committee 9 entitas independen (P2P.org, Figment, Chorus One, dll), threshold 5-of-9 untuk submit beacon chain report (validator balances, exits, rewards). Governance dapat replace members. V2 upgrade menambah reporting untuk withdrawal credentials 0x01. Desain ini dipilih karena beacon chain state tidak dapat dibaca langsung oleh EVM (no light client pre-verkle).
+· Evidence: Phase 3 EV-013 V2 (oracle upgrade); Phase 4 Core Components (Oracle), Security Model (Oracle Security 5-of-9), Known Limitations (Oracle Centralization); Phase 7 External Dependencies (Oracle Committee), Infrastructure Providers (Figment, Chorus One as oracle members)
+· Supporting Dataset: Phase 3 EV-013, Phase 4 Core Components, Security Model, Known Limitations, Phase 7 External Dependencies, Infrastructure Providers
 
-· Decision Pattern: Memisahkan concerns ke modules terpisah (Staking Router, Node Operator Registry, Oracle, Withdrawal Queue) yang upgradeable independently
-· Evidence: Staking Router memungkinkan tambah module DVT tanpa upgrade core (Phase 4 Core Components); Node Operator Registry v2 dynamic (Phase 4 Core Components); Oracle v2 untuk withdrawal reporting (Phase 4 Core Components); wstETH wrapper terpisah dari stETH rebasing (Phase 4 Core Components)
-· Supporting Dataset: Phase 4 System Architecture, Core Components, Technical Upgrade History
+Financial Decision Pattern
 
-Pola 4: Security-First dengan Multiple Auditor dan Bug Bounty
+Pola 1: Pendanaan Bertahap dengan Valuasi Meningkat — Internal Bootstrap → Series A → Series B → Protocol Revenue
+· Decision Pattern: 2020: P2P.org internal funding (bootstrap). 2021-03: Series A Paradigm lead $73M valuation. 2022: Series B a16z/Dragonfly co-lead >$1B valuation (unicorn). 2024: Fee switch 10% activated → ~$45-55M annualized protocol revenue. Tidak ada funding rondelanjutan post-Series B; DAO mandiri via protocol fees.
+· Evidence: Phase 3 EV-001 Founding (P2P.org), EV-005 Series A, EV-011 Series B, EV-020 Fee Switch; Phase 5 Funding History (3 rounds), Revenue Model (Staking Fee 10%, Withdrawal Fee, Treasury Yield), Financial Dependencies (VC done, DAO revenue primary); Phase 8 Market Timeline
+· Supporting Dataset: Phase 3 EV-001, EV-005, EV-011, EV-020, Phase 5 Funding History, Revenue Model, Financial Dependencies, Phase 8 Market Timeline
 
-· Decision Pattern: Setiap major release diaudit oleh minimal 2 auditor independen; bug bounty $1M aktif continously
-· Evidence: Sigma Prime (deposit, withdrawal, oracle, V2), MixBytes (stETH, wstETH, NOR, V2 modules), Quantstamp (V2 router, withdrawal credentials) (Phase 4 Audit History); Immunefi $1M bounty (Phase 4 Security Model, Phase 7 Infrastructure); tidak ada eksploit mayor kontrak inti sejak 2020 (Phase 4 Security Model)
-· Supporting Dataset: Phase 4 Audit History, Phase 4 Security Model, Phase 7 Infrastructure Providers
+Pola 2: Treasury Management — Legal Wrapper (Cayman Foundation) + Multisig 5-of-9 + Diversified Assets
+· Decision Pattern: Treasury diubah ke legal entity (Cayman Foundation) untuk hukum compliance. Multisig 5-of-9 dengan signer: investor reps (Paradigm, a16z, Dragonfly), core contributors, node operator reps. Assets: LDO (363M), ETH, stETH, wstETH, DAI, USDC, DeFi tokens (CRV, CVX, dll). Yield dari DeFi strategies (Aave, Maker, Curve, Yearn). Tidak ada insurance fund untuk slashing.
+· Evidence: Phase 3 EV-007 Foundation, EV-020 Fee Switch (revenue increase); Phase 2 Foundation (Lido DAO), Government (Cayman Islands); Phase 5 Treasury (Custodian multisig 5-of-9, Composition, Stablecoin/Native/Other Assets), Revenue Model (Treasury Yield), Financial Risk (No insurance fund); Phase 6 Distribution (Foundation 36.3%)
+· Supporting Dataset: Phase 2 Foundation, Government, Phase 3 EV-007, EV-020, Phase 5 Treasury, Revenue Model, Financial Risk, Phase 6 Distribution
 
-Pola 5: Canonical Bridge Only untuk L2 Deployment
+Pola 3: Grant Program dan Core Contributor Budget — Funded dari Treasury, Dikelola via Governance
+· Decision Pattern: DAO Grants Program untuk ecosystem growth (tooling, research, security, integrations). Core Contributor Program formalized 2024 dengan quarterly budget, KPI, review — >20 contributors dibayar LDO/DAI. Semua via governance proposal dan multisig execution.
+· Evidence: Phase 3 EV-022 Core Contributor Formalization; Phase 5 Revenue Model (Grants/Ecosystem Funding), Fundraising Mechanism (DAO Treasury, Protocol Revenue); Phase 7 Developer Ecosystem (Grant Program, Core Contributor Budget); Phase 6 Governance (Treasury Management)
+· Supporting Dataset: Phase 3 EV-022, Phase 5 Revenue Model, Fundraising Mechanism, Phase 7 Developer Ecosystem, Phase 6 Governance
 
-· Decision Pattern: wstETH di-deploy ke L2 hanya via canonical bridges (Optimism Gateway, Arbitrum Bridge, Base Bridge, zkSync Bridge) — tidak build custom bridge
-· Evidence: wstETH di Optimism, Arbitrum, Base, zkSync Era semua via canonical bridge (Phase 3 EV-010, EV-012; Phase 7 Major Integrations); stMATIC di Polygon native deployment (bukan bridge) (Phase 3 EV-006); sunset Solana/Polkadot yang pakai custom integration
-· Supporting Dataset: Phase 3 EV-010, EV-012, EV-006; Phase 7 Major Integrations; Phase 4 Cross-chain Messaging
+Pola 4: Token Distribution — Treasury Dominan (36.3%), Investor Vesting Long-term, Community via Liquidity Mining
+· Decision Pattern: Fixed supply 1B LDO. Treasury 36.3% (paling besar) untuk DAO ops. Investor 22.18% dengan cliff 12 bulan + vesting 24-36 bulan. Team 20% cliff 12 bulan + vesting 36 bulan. Community 10% via liquidity mining 1 tahun (completed 2022). Operator 6.5% vesting 24-48 bulan. Tidak ada inflation/emission.
+· Evidence: Phase 3 EV-004 TGE; Phase 5 Token Sale (Private sale via SAFT, no public sale); Phase 6 Distribution (all categories), Vesting Schedule (all categories), TGE (Initial Unlock), Inflation/Deflation (Fixed supply)
+· Supporting Dataset: Phase 3 EV-004, Phase 5 Token Sale, Phase 6 Distribution, Vesting Schedule, TGE, Inflation/Deflation
 
----
+Pola 5: Fee Switch sebagai Mekanisme Revenue Sustainable — Governance-Controlled Parameter
+· Decision Pattern: Protocol fee tidak hardcoded permanen. Fee switch memungkinkan DAO mengubah fee (5% → 10% via LIP-22). Dengandrawal fee 0.1% terpisah. Desain ini memberikan fleksibilitas ekonomi tanpa upgrade kontrak.
+· Evidence: Phase 3 EV-020 Fee Switch Activation; Phase 5 Revenue Model (Staking Fee 10%, Withdrawal Fee 0.1%), Financial Risk (Revenue Decline risk); Phase 6 Utility (Fee Switch Activation), Governance (LIP-22 passed)
+· Supporting Dataset: Phase 3 EV-020, Phase 5 Revenue Model, Financial Risk, Phase 6 Utility, Governance
 
-Pola 1: Bootstrap Internal → VC Funding → Protocol Revenue Sustainability
+Ecosystem Decision Pattern
 
-· Decision Pattern: Early development funded by P2P.org (internal); Series A/B VC equity/token warrant untuk scale; post-TGE transition ke protocol revenue (fee switch) untuk DAO sustainability
-· Evidence: 2020 P2P.org internal funding (Phase 3 EV-001, Phase 5 Funding History); Series A Paradigm $73M val (Phase 3 EV-005); Series B a16z/Dragonfly >$1B val (Phase 3 EV-011); Fee switch LIP-22 10% treasury allocation (Phase 3 EV-020, Phase 5 Revenue Model); no further VC rounds setelah Series B
-· Supporting Dataset: Phase 3 EV-001, EV-005, EV-011, EV-020; Phase 5 Funding History, Revenue Model
+Pola 1: Deep Integration dengan DeFi Primitif (Curve, Aave, Maker) — Membuat stETH/wstETH "Base Layer"
+· Decision Pattern: Prioritaskan integrasi dengan protokol DeFi yang memiliki TVL terbesar dan composability tinggi: Curve (liquidity venue utama stETH/ETH), Aave (money market collateral factor 82.5%), MakerDAO (wstETH vault >$1B peak). Integrasi ini drive adoption stETH sebagai collateral standar.
+· Evidence: Phase 3 EV-018 Major DeFi Integrations (ongoing 2021-2024); Phase 7 Major Integrations (Curve, Aave, Maker, Yearn), Applications (Curve pool, Aave markets, Maker vault); Phase 8 Market Share (DeFi Collateral wstETH 35-40% Aave Ethereum, 60%+ L2s), Narrative (DeFi Infrastructure/Money Lego)
+· Supporting Dataset: Phase 3 EV-018, Phase 7 Major Integrations, Applications, Phase 8 Market Share, Narrative Position
 
-Pola 2: Treasury Management via DAO Governance dengan Multisig Execution
+Pola 2: L2 Expansion via Canonical Bridge wstETH — Bukan Deploy Staking Contracts Baru
+· Decision Pattern: Untuk setiap L2 Ethereum baru (Optimism, Arbitrum, Base, zkSync Era), strategi: deploy wstETH via canonical bridge → integrate dengan DeFi L2 (Aave V3, DEX, yield protocols). Tidak deploy deposit/staking contracts di L2. Polygon adalah pengecualian (native deployment stMATIC 2021, sebelum L2 ecosystem matang).
+· Evidence: Phase 3 EV-010 wstETH Optimism/Arbitrum, EV-012 wstETH Base/zkSync; Phase 1 Chains (L2s); Phase 4 Cross-chain Messaging (Canonical bridges), Execution Environment (L2 deployments wstETH only); Phase 7 Major Integrations (Optimism, Arbitrum, Base, zkSync), External Dependencies (Canonical bridges); Phase 8 Market Timeline
+· Supporting Dataset: Phase 3 EV-010, EV-012, Phase 1 Chains, Phase 4 Cross-chain Messaging, Execution Environment, Phase 7 Major Integrations, External Dependencies, Phase 8 Market Timeline
 
-· Decision Pattern: Treasury (363M LDO + fee revenue) dikendalikan DAO vote → multisig 5-of-9 execution (investor reps, core contributors, operator reps)
-· Evidence: Treasury address 0x3e40D73EB977Dc6a537aF587D48316feE66E9C8c (Phase 5 Treasury); Multisig signers: Paradigm, a16z, Dragonfly, core contributors, node operators (Phase 5 Treasury Custodian); Grants, core contributor budget, incentives funded via governance proposals (Phase 5 Revenue Model, Phase 6 Governance)
-· Supporting Dataset: Phase 5 Treasury, Treasury Custodian, Revenue Model; Phase 6 Governance
+Pola 3: EigenLayer Integration sebagai LRT Provider — Leveraging Existing wstETH Distribution
+· Decision Pattern: Tidak mengeluarkan LRT native (seperti Ether.fi eETH, Renzo ezETH). Sebagai gantinya, wstETH existing langsung accepted di EigenLayer contracts. Lido menyediakan >50% TVL restaking awal. Positioning: "base layer" untuk restaking protocols yang membangun di atas wstETH.
+· Evidence: Phase 3 EV-016 EigenLayer Integration; Phase 2 Protocol (EigenLayer); Phase 4 Architecture (Cross-chain Messaging — native Ethereum); Phase 7 Major Integrations (EigenLayer), External Dependencies (EigenLayer); Phase 8 Narrative (Restaking Secondary), Market Share (Restaking >50% early TVL)
+· Supporting Dataset: Phase 3 EV-016, Phase 2 EigenLayer, Phase 4 Architecture, Phase 7 Major Integrations, External Dependencies, Phase 8 Narrative, Market Share
 
-Pola 3: Token Distribution Prioritizing Long-term Alignment (Vesting Panjang)
+Pola 4: Sunset Produk Non-Performing dengan Governance Vote dan Redemption Window
+· Decision Pattern: Produk dengan adoption rendah (stSOL Solana, stDOT Polkadot, stKSM Kusama) ditutup via governance vote. Redemption window dibuka untuk user exit aman. Kontrak dihentikan setelah window tutup. Resource dialihkan ke core focus (Ethereum/L2).
+· Evidence: Phase 3 EV-014 Sunset Solana, EV-015 Sunset Polkadot/Kusama; Phase 1 Chains (deprecated); Phase 4 Core Components (deprecated); Phase 7 Major Integrations (deprecated); Phase 8 Market Timeline
+· Supporting Dataset: Phase 3 EV-008, EV-009, EV-014, EV-015, Phase 1 Chains, Phase 4 Core Components, Phase 7 Major Integrations, Phase 8 Market Timeline
 
-· Decision Pattern: Investors & team cliff 12 bulan + vesting 24-36 bulan; community LM 1 tahun linear; treasury no vesting (discretionary DAO)
-· Evidence: Tokenomics: Team/Investors cliff 12m + 36m vesting (Phase 6 Vesting Schedule); Community LM 12m linear (Phase 6 Vesting Schedule); Treasury 36.3% available at TGE untuk DAO ops (Phase 6 Distribution); Series B investor allocation dari pool existing (Phase 6 Major Token Events)
-· Supporting Dataset: Phase 6 Distribution, Vesting Schedule, Major Token Events
+Pola 5: Node Operator Diversification via DVT Modules — Menjawab Centralization Narrative
+· Decision Pattern: Kritik sentralisasi (~28.5% ETH staked) dijawab dengan: Staking Router modules (Simple DVT, Obol, SSV) memungkinkan permissionless onboarding. 20+ operator baru onboarded 2024 termasuk solo staker via DVT. Client diversity dan geographic spread menjadi KPI.
+· Evidence: Phase 3 EV-021 Node Operator Expansion; Phase 4 Security Model (Validator Set curated), Staking Router (modules), Known Limitations (Node Operator Permissioning); Phase 7 Infrastructure Providers (Obol, SSV, Simple DVT); Phase 8 Narrative (Centralization Risk), Competitor Landscape (Rocket Pool permissionless, DVT-based LRTs)
+· Supporting Dataset: Phase 3 EV-013, EV-021, Phase 4 Security Model, Staking Router, Known Limitations, Phase 7 Infrastructure, Phase 8 Narrative, Competitor Landscape
 
-Pola 4: Revenue Diversification - Staking Fee + Withdrawal Fee + Treasury Yield
+Governance Decision Pattern
 
-· Decision Pattern: Multiple revenue streams: 10% staking rewards (fee switch), 0.1% withdrawal fee, treasury DeFi yield (Aave, Maker, Curve)
-· Evidence: Fee switch 10% activated LIP-22 (Phase 5 Revenue Model); Withdrawal fee 0.1% live post-Shanghai (Phase 5 Revenue Model); Treasury yield strategies mentioned in forum (Phase 5 Revenue Model); Protocol revenue annualized ~$45-55M (Phase 8 Adoption Metrics)
-· Supporting Dataset: Phase 5 Revenue Model, Phase 3 EV-020, Phase 8 Adoption Metrics
+Pola 1: Token-Weighted Voting (1 LDO = 1 Vote) dengan Dual-Lane Snapshot + Aragon
+· Decision Pattern: Governance menggunakan Snapshot untuk signaling (gasless, quorum 5% supply, majority >50%) lalu Aragon DAO untuk on-chain execution (timelock 48 jam, quorum 5%, majority >50%). Delegation supported. Semua major decisions (V2 upgrade, fee switch, sunset, operator onboarding) melalui proses ini.
+· Evidence: Phase 3 EV-013 LIP-14 V2, EV-014 Sunset Solana, EV-015 Sunset Polkadot, EV-020 LIP-22 Fee Switch, EV-021 Operator Expansion; Phase 6 Governance (Model, Voting System, Voting Power, Delegation, Proposal System, Treasury Governance); Phase 7 Developer Ecosystem (Grant Program via governance)
+· Supporting Dataset: Phase 3 EV-013, EV-014, EV-015, EV-020, EV-021, Phase 6 Governance, Phase 7 Developer Ecosystem
 
-Pola 5: No Token Buyback / Burn - Fixed Supply Model
+Pola 2: Multisig 5-of-9 Execution — Investor Reps + Core Contributors + Operator Reps
+· Decision Pattern: On-chain proposal yang lolos dieksekusi oleh multisig 5-of-9 Lido DAO Foundation. Signer: Paradigm, a16z, Dragonfly (investor reps), core contributors, node operator reps. Desain ini balance antara DAO sovereignty dan operational security/investor confidence.
+· Evidence: Phase 3 EV-007 Foundation (multisig), EV-020 Fee Switch (execution); Phase 2 Foundation (Lido DAO), Government (Cayman Islands); Phase 5 Treasury Custodian (multisig 5-of-9); Phase 6 Governance (Treasury Governance multisig)
+· Supporting Dataset: Phase 2 Foundation, Government, Phase 3 EV-007, EV-020, Phase 5 Treasury Custodian, Phase 6 Governance
 
-· Decision Pattern: Supply fixed 1B LDO; no minting, no burning, no buyback program; value accrual via governance control over treasury & fee parameters
-· Evidence: Contract no mint/burn function (Phase 6 Inflation/Deflation); No buyback program (Phase 6 Inflation/Deflation); Governance controls fee switch, treasury spending (Phase 6 Governance); Value capture indirect via protocol revenue → treasury → grants/growth → protocol adoption → fee revenue
-· Supporting Dataset: Phase 6 Inflation/Deflation, Supply, Governance
+Pola 3: LIP (Lido Improvement Proposal) Process — Forum Discussion → Snapshot → On-chain
+· Decision Pattern: Proposal flow: diskusi di research.lido.fi (LIP) → Snapshot signaling vote → Aragon on-chain vote → multisig execution. Template terstandarisasi. Memungkinkan community input sebelum voting. Semua major upgrades mengikuti alur ini.
+· Evidence: Phase 3 EV-013 LIP-14, EV-020 LIP-22; Phase 6 Governance (Proposal System LIP), Community (Lido DAO Forum research.lido.fi); Phase 7 Community (Lido DAO Forum)
+· Supporting Dataset: Phase 3 EV-013, EV-020, Phase 6 Governance, Community, Phase 7 Community
 
----
+Pola 4: Governance Mengontrol Parameter Ekonomis (Fee Switch, Operator Fee, Withdrawal Fee)
+· Decision Pattern: Parameter fee tidak immutable. Fee switch (5%→10%), node operator fee (5%), withdrawal fee (0.1%) semuanya governance-adjustable. LIP-22 menunjukkan DAO dapat meningkatkan revenue ketika treasury butuh dana. Flexibility ini critical untuk sustainability.
+· Evidence: Phase 3 EV-020 Fee Switch; Phase 5 Revenue Model (Staking Fee 10%, Node Operator Fee 5%, Withdrawal Fee 0.1%); Phase 6 Utility (Fee Switch Activation), Governance (Proposal System)
+· Supporting Dataset: Phase 3 EV-020, Phase 5 Revenue Model, Phase 6 Utility, Governance
 
-Pola 1: Deep DeFi Integration sebagai Growth Strategy Utama
+Pola 5: Legal Structure Review Ongoing — Adaptive Compliance
+· Decision Pattern: 2021: Cayman Foundation established. 2024: Review struktur legal untuk MiCA EU, SEC US compliance. Forum discussion aktif (EV-024), legal counsel engaged. Belum ada binding vote. Menunjukkan governance proactive pada regulatory risk.
+· Evidence: Phase 3 EV-007 Foundation, EV-024 Legal Structure Review; Phase 2 Foundation (Lido DAO), Government (Cayman Islands); Phase 5 Financial Risk (Legal Financial Risk); Phase 6 Governance (Proposal System); Phase 8 Market Timeline
+· Supporting Dataset: Phase 3 EV-007, EV-024, Phase 2 Foundation, Government, Phase 5 Financial Risk, Phase 6 Governance, Phase 8 Market Timeline
 
-· Decision Pattern: Prioritaskan integrasi ke protokol DeFi terbesar (Curve, Aave, Maker, Yearn) untuk membuat stETH/wstETH menjadi "base layer" collateral
-· Evidence: Curve stETH/ETH pool >50% volume historis (Phase 7 Major Integrations); Aave collateral factor 82.5% di mainnet & L2s (Phase 7 Major Integrations); Maker wstETH vault >$1B exposure (Phase 7 Major Integrations); Yearn vault strategies (Phase 7 Major Integrations); Integrasi ini drive adoption stETH sebagai DeFi primitive
-· Supporting Dataset: Phase 7 Major Integrations, Phase 8 Market Share, Phase 8 Narrative Position
+Risk Response Pattern
 
-Pola 2: L2 Expansion via Canonical Bridge - Not Native Deployment
+Pola 1: FTX/Alameda Contagion (2022-11) — Transparansi On-chain + Peg Stability Maintained
+· Trigger: FTX collapse November 2022; Alameda known large stETH holder (~4M stETH borrowed/leveraged di Aave/Maker)
+· Evidence: Phase 3 EV-025 FTX Exposure Check; Phase 5 Financial Risk (Revenue Decline, Funding Dependency); Phase 7 Major Integrations (Aave, Maker); Phase 8 Market Timeline
+· Decision Pattern: Tidak ada emergency intervention protokol. Response: publish blog post transparansi on-chain analysis (Alameda positions, liquidations orderly), menegaskan Lido protocol tidak memiliki exposure ke FTX. stETH peg stabil $0.99-1.00 ETH selama kontagion.
+· Response: Blog post exposure check; on-chain monitoring; komunikasi proaktif ke komunitas
+· Result: Tidak ada depeg mayor; liquidasi Alameda di Aave/Maker berjalan tertib; Curve pool tetap liquide; menguatkan kepercayaan resilient design stETH
+· Supporting Dataset: Phase 3 EV-025, Phase 5 Financial Risk, Phase 7 Major Integrations, Phase 8 Market Timeline
 
-· Decision Pattern: Deploy wstETH ke L2 (Optimism, Arbitrum, Base, zkSync) via canonical bridges; tidak deploy native staking contracts di L2 (kecuali Polygon awalnya)
-· Evidence: wstETH di 4 L2 via canonical bridge (Phase 3 EV-010, EV-012; Phase 7 Major Integrations); stMATIC native di Polygon (Phase 3 EV-006); No native stETH contracts di L2; Focus pada wstETH composability di L2 DeFi (Aave V3, Velodrome, Aerodrome, SyncSwap)
-· Supporting Dataset: Phase 3 EV-010, EV-012, EV-006; Phase 7 Major Integrations; Phase 4 Cross-chain Messaging
+Pola 2: Centralization Criticism (~28.5% ETH Staked) — Structural Response via V2 Staking Router + DVT Modules
+· Trigger: Narita eksternal (researchers, competitors, Ethereum community) mengutip market share Lido sebagai risiko sentralisasi validator set. Internal: governance discussion di forum.
+· Evidence: Phase 3 EV-013 V2 (Staking Router design), EV-021 Operator Expansion (DVT modules); Phase 4 Security Model (Validator Set permissioned), Known Limitations (Node Operator Permissioning), Staking Router (modules); Phase 7 Infrastructure (Obol, SSV, Simple DVT); Phase 8 Narrative (Centralization Risk), Competitor Landscape (Rocket Pool permissionless, DVT LRTs)
+· Decision Pattern: Bukan defensive PR, tapi technical solution: V2 Staking Router modules (Simple DVT, Obol, SSV) memungkinkan permissionless onboarding. 2024: governance approve modules + 20+ operator baru. Client diversity dan geographic spread tracked.
+· Response: Deploy Staking Router modules; activate DVT modules; onboard diverse operators; publish transparency data
+· Result: Operator count 33+ + DVT clusters; client diversity improved; narrative partially addressed tapi market share tetap dominan
+· Supporting Dataset: Phase 3 EV-013, EV-021, Phase 4 Security Model, Known Limitations, Staking Router, Phase 7 Infrastructure, Phase 8 Narrative, Competitor Landscape
 
-Pola 3: Strategic Sunset Underperforming Non-Ethereum Products
+Pola 3: Smart Contract Risk — Multi-Audit + Bug Bounty + Proxy Upgrade Timelock
+· Trigger: Inherent risk smart contract bugs pada protokol mengelola $28B+ TVL. Historik exploit di DeFi lain.
+· Evidence: Phase 4 Security Model (Contract Upgradability proxy EIP-1967, Emergency Brakes, Bug Bounty $1M Immunefi, Audit Coverage), Audit History (5 major audits); Phase 7 Infrastructure Providers (Sigma Prime, MixBytes, Quantstamp, Immunefi)
+· Decision Pattern: Defense in depth: multiple audit firms (Sigma Prime, MixBytes, Quantstamp) untuk setiap major release. Bug bounty $1M max. Proxy upgrades via governance timelock 48h. Circuit breaker di oracle (max rebase delta). Withdrawal queue pause via governance.
+· Response: Continuous audit program; bug bounty; timelock upgrades; emergency brakes
+· Result: Tidak ada eksploit mayor kontrak inti sejak launch 2020; findings kritis diperbaiki pre-launch
+· Supporting Dataset: Phase 4 Security Model, Audit History, Phase 7 Infrastructure Providers
 
-· Decision Pattern: Tutup produk non-Ethereum (Solana, Polkadot, Kusama) via governance vote ketika adoption rendah & resource better allocated ke Ethereum/L2
-· Evidence: Sunset Solana stSOL (2023-06) - adoption menurun, kompetisi native (Phase 3 EV-014); Sunset Polkadot stDOT & Kusama stKSM (2023-09) - TVL rendah <$50M (Phase 3 EV-015); Governance vote untuk kedua sunset (Phase 6 Major Token Events); Resource realokasi ke V2, EigenLayer, L2 expansion
-· Supporting Dataset: Phase 3 EV-014, EV-015; Phase 6 Major Token Events; Phase 7 Major Integrations (Deprecated)
+Pola 4: Regulatory Uncertainty (MiCA, SEC) — Legal Structure Review + Foundation Wrapper
+· Trigger: Evolving global regulation (MiCA EU 2024, SEC enforcement US). DAO structure legal ambiguity.
+· Evidence: Phase 3 EV-007 Foundation (Cayman 2021), EV-024 Legal Review (2024 ongoing); Phase 2 Foundation (Lido DAO), Government (Cayman Islands); Phase 5 Financial Risk (Legal Financial Risk); Phase 6 Governance (Proposal System)
+· Decision Pattern: Proactive legal review 2024: evaluasi Cayman Foundation vs DUNA Wyoming vs BVI VASP. Legal counsel engaged. Forum discussion transparent. Belum ada binding decision. Foundation wrapper sudah provide liability limitation.
+· Response: Legal structure review forum discussion; legal counsel engagement; evaluate alternative wrappers
+· Result: Ongoing — no final decision yet; foundation structure remains active
+· Supporting Dataset: Phase 3 EV-007, EV-024, Phase 2 Foundation, Government, Phase 5 Financial Risk, Phase 6 Governance
 
-Pola 4: Restaking Integration sebagai Extension - Not Native LRT
+Pola 5: Slashing Risk — No Socialization, Transparent Disclosure, DVT Mitigation
+· Trigger: Validator slashing events (rare but possible) — protocol tidak mensosialisasikan loss.
+· Evidence: Phase 4 Security Model (Slashing Protection — no socialization, stETH holders bear pro-rata), Known Limitations (Slashing Risk Socialization); Phase 5 Financial Risk (Slashing Risk Financial Impact); Phase 7 Infrastructure (DVT modules Obol, SSV, Simple DVT)
+· Decision Pattern: Explicit no-insurance-fund policy. Slashing loss borne pro-rata by stETH holders. Mitigation: DVT modules (Obol, SSV, Simple DVT) reduce slashing probability via distributed validator technology. Transparent risk disclosure di docs.
+· Response: Document risk clearly; deploy DVT modules for operators who want extra protection; no treasury allocation for insurance
+· Result: No major slashing event to date; DVT adoption growing via modules
+· Supporting Dataset: Phase 4 Security Model, Known Limitations, Phase 5 Financial Risk, Phase 7 Infrastructure
 
-· Decision Pattern: Support wstETH sebagai collateral di EigenLayer (LRT) tapi tidak issue native LRT token; biarkan protocols lain (Ether.fi, Renzo, Puffer, Kelp) build LRT di atas wstETH
-· Evidence: wstETH accepted di EigenLayer mainnet (Phase 3 EV-016); >50% TVL restaking awal (Phase 7 Major Integrations); LRT protocols menggunakan wstETH underlying (Phase 8 Competitor Landscape); Lido focus tetap liquid staking infrastructure
-· Supporting Dataset: Phase 3 EV-016; Phase 7 Major Integrations; Phase 8 Competitor Landscape, Narrative Position
+Recurring Behavioral Pattern
 
-Pola 5: Infrastructure Provider Diversification via DVT Modules
+Pola 1: Ekspansi Pasca-Funding → Lalu Konsolidasi
+· Evidence: Phase 3 EV-005 Series A (Mar 2021) → EV-006 Polygon Launch (Mar 2021), EV-008 Solana (Dec 2021), EV-009 Polkadot/Kusama (Mar 2022). Phase 3 EV-011 Series B (2022) → EV-010 Optimism/Arbitrum (May 2022), EV-012 Base/zkSync (Feb 2023). Kemudian 2023: EV-014/015 Sunset 3 chains. Pattern: funding → aggressive expansion → consolidation ke core.
+· Supporting Dataset: Phase 3 EV-005, EV-006, EV-008, EV-009, EV-011, EV-010, EV-012, EV-014, EV-015, Phase 5 Funding History, Phase 8 Market Timeline
 
-· Decision Pattern: Dari curated 33 operators → hybrid curated + permissionless DVT modules (Simple DVT, Obol, SSV) untuk desentralisasi
-· Evidence: Genesis 10 operators → 33 professional entities (Phase 4 Security Model, Phase 7 Infrastructure); V2 Staking Router modules enable DVT clusters (Phase 3 EV-021); 20+ new operators onboarded 2024 (Phase 3 EV-021); Obol, SSV, Simple DVT modules live (Phase 7 Infrastructure Providers)
-· Supporting Dataset: Phase 3 EV-021; Phase 4 Security Model, Core Components; Phase 7 Infrastructure Providers
+Pola 2: Upgrade Mayor Selalu Melalui Governance Vote + Timelock + Multi-Audit
+· Evidence: Phase 3 EV-013 V2 (LIP-14), EV-014 Sunset Solana (vote), EV-015 Sunset Polkadot (vote), EV-020 Fee Switch (LIP-22), EV-021 Operator Expansion (multiple votes). Phase 4 Security Model (Proxy upgrades via governance timelock), Audit History (pre-launch audits). Phase 6 Governance (Proposal System, Treasury Governance).
+· Supporting Dataset: Phase 3 EV-013, EV-014, EV-015, EV-020, EV-021, Phase 4 Security Model, Audit History, Phase 6 Governance
 
----
+Pola 3: Integrasi DeFi Prioritaskan "Big Three" — Curve, Aave, Maker
+· Evidence: Phase 3 EV-018 Major DeFi Integrations (ongoing). Phase 7 Major Integrations (Curve primary liquidity, Aave collateral factor 82.5%, Maker >$1B peak exposure). Phase 8 Market Share (wstETH 35-40% Aave Ethereum collateral, 60%+ L2s). Yearn, Pendle, Morpho, EigenLayer sebagai layer kedua.
+· Supporting Dataset: Phase 3 EV-018, Phase 7 Major Integrations, Phase 8 Market Share
 
-Pola 1: Token-Weighted DAO Governance dengan Dual Voting (Snapshot + Aragon)
+Pola 4: Sunset Produk yang Tidak Menjangkau Product-Market Fit — Dengan Redemption Window
+· Evidence: Phase 3 EV-014 Sunset Solana (stSOL), EV-015 Sunset Polkadot/Kusama (stDOT/stKSM). Phase 1 Chains (deprecated). Phase 4 Core Components (deprecated). Phase 7 Major Integrations (deprecated). Semua via governance vote, redemption window, kontrak dihentikan.
+· Supporting Dataset: Phase 3 EV-008, EV-009, EV-014, EV-015, Phase 1 Chains, Phase 4 Core Components, Phase 7 Major Integrations
 
-· Decision Pattern: Off-chain signaling (Snapshot, gasless) → On-chain execution (Aragon, timelock 48h); 1 LDO = 1 vote; quorum 5% supply
-· Evidence: Governance model documented (Phase 6 Governance); Snapshot untuk signaling, Aragon untuk execution (Phase 6 Governance); Delegation supported (Phase 6 Governance); LIP process: forum → snapshot → on-chain → timelock → execute (Phase 6 Governance)
-· Supporting Dataset: Phase 6 Governance, Phase 3 EV-013, EV-014, EV-015, EV-020, EV-021
+Pola 5: Menjawab Kritik Narasi dengan Solusi Teknis (Bukan Hanya Komunikasi)
+· Evidence: Phase 8 Narrative (Centralization Risk) → Phase 3 EV-013 V2 Staking Router modules, EV-021 DVT modules activation. Phase 8 Narrative (Revenue Sustainability) → Phase 3 EV-020 Fee Switch 10%. Phase 8 Narrative (Regulatory) → Phase 3 EV-024 Legal Structure Review.
+· Supporting Dataset: Phase 3 EV-013, EV-020, EV-021, EV-024, Phase 8 Narrative Position
 
-Pola 2: Multisig 5-of-9 Execution dengan Stakeholder Representation
+Strategic Trade-offs
 
-· Decision Pattern: DAO vote passes → multisig 5-of-9 mengeksekusi; signers: investor reps (Paradigm, a16z, Dragonfly), core contributors, node operator reps
-· Evidence: Multisig composition (Phase 5 Treasury Custodian, Phase 2 Entity Lido DAO Foundation); Legal foundation sebagai legal wrapper (Phase 2 Entity Cayman Islands); Execution authority untuk treasury spending, contract upgrades, parameter changes
-· Supporting Dataset: Phase 5 Treasury Custodian, Phase 2 Entity Lido DAO Foundation, Phase 6 Governance
+Trade-off 1: Desentralisasi vs Keamanan/Efisiensi Operator
+· Decision: Genesis 10 operator kurasi P2P.org → V2 Staking Router modules untuk permissionless DVT onboarding
+· Trade-off: Operator permissioned (kurasi) memberikan keamanan/efisiensi awal (operator profesional, track record terbukti) tapi menciptakan sentralisasi (~28.5% ETH staked). Permissionless via DVT modules meningkatkan desentralisasi tapi menambah kompleksitas teknis (DVT overhead, module security) dan risiko operator kurang berpengalaman.
+· Evidence: Phase 3 EV-003 Genesis operators, EV-013 V2 Staking Router, EV-021 DVT modules; Phase 4 Security Model (Validator Set permissioned), Staking Router (modules), Known Limitations (Node Operator Permissioning); Phase 7 Infrastructure (Obol, SSV, Simple DVT); Phase 8 Narrative (Centralization Risk), Competitor Landscape (Rocket Pool permissionless from start)
+· Supporting Dataset: Phase 3 EV-003, EV-013, EV-021, Phase 4 Security Model, Staking Router, Known Limitations, Phase 7 Infrastructure, Phase 8 Narrative, Competitor Landscape
 
-Pola 3: Governance Control Over Critical Protocol Parameters
+Trade-off 2: Rebasin Token (stETH) vs DeFi Composability → Wrapper (wstETH) sebagai Solusi
+· Decision: stETH rebasing (balance berubah harian) → wstETH non-rebasing wrapper 1:1 untuk DeFi
+· Trade-off: Rebasing token secara ekonomi paling akurat merepresentasikan staked ETH + rewards (user balance naik otomatis). Tapi rebasing break composability dengan hampir semua DeFi protocol (Aave, Maker, Uniswap, bridges). Wrapper wstETH solve composability tapi menambah complexity (user harus wrap/unwrap), gas cost, dan mental model ganda.
+· Evidence: Phase 3 EV-003 stETH launch, EV-? wstETH launch (2021-03); Phase 4 Core Components (stETH rebasing, wstETH wrapper), Known Limitations (Rebasing Token Composability); Phase 7 Applications (stETH, wstETH); Phase 8 Narrative (DeFi Infrastructure)
+· Supporting Dataset: Phase 3 EV-003, Phase 4 Core Components, Known Limitations, Phase 7 Applications, Phase 8 Narrative
 
-· Decision Pattern: Semua parameter kritis (fee, operator set, upgrades, oracle committee) dikontrol via governance vote — tidak ada admin key unilateral
-· Evidence: Fee switch 5%→10% via LIP-22 (Phase 3 EV-020); Node operator onboarding/offboarding via vote (Phase 3 EV-021); Protocol upgrades V2 via LIP-14 (Phase 3 EV-013); Oracle committee changes via governance (Phase 4 Security Model); Sunset products via vote (Phase 3 EV-014, EV-015)
-· Supporting Dataset: Phase 3 EV-013, EV-014, EV-015, EV-020, EV-021; Phase 4 Security Model; Phase 6 Governance
+Trade-off 3: Multi-chain Broad vs Focus Ethereum + L2
+· Decision: 2021-2022 deploy ke 5 chains (Ethereum, Polygon, Solana, Polkadot, Kusama) → 2023 sunset 3 non-EVM chains, fokus Ethereum + L2
+· Trade-off: Multi-chain early capture market share di chain baru tapi menyebarkan resource tipis (devops, security, BD, support per chain). Non-EVM chains butuh arsitektur berbeda (Solana SVM, Polkadot Substrate). Konsolidasi ke Ethereum/L2 memanfaatkan canonical bridges, shared tooling, tapi meninggalkan user base chain lain.
+· Evidence: Phase 3 EV-006 Polygon, EV-008 Solana, EV-009 Polkadot/Kusama, EV-010/012 L2s, EV-014/015 Sunsets; Phase 1 Chains (9 listed), Phase 4 Execution Environment (EVM live, non-EVM deprecated); Phase 8 Market Timeline
+· Supporting Dataset: Phase 3 EV-006, EV-008, EV-009, EV-010, EV-012, EV-014, EV-015, Phase 1 Chains, Phase 4 Execution Environment, Phase 8 Market Timeline
 
-Pola 4: Legal Foundation sebagai DAO Wrapper untuk Compliance
+Trade-off 4: Fee Revenue vs StETH Yield Competitiveness
+· Decision: Fee switch 5% → 10% (LIP-2024) meningkatkan treasury revenue ~$45-55M/tahun tapi mengurangi net yield stETH holder
+· Trade-off: DAO butuh revenue sustainable untuk grants, core contributors, insurance. Tapi fee 10% + operator 5% = 15% total cut dari staking rewards. Competitor Rocket Pool fee ~15-20% (termasuk RPL inflation), cbETH fee opaque, LRT protocols fee variabel. Fee tinggi bisa dorong user ke competitor jika yield spread signifikan.
+· Evidence: Phase 3 EV-020 Fee Switch; Phase 5 Revenue Model (Staking Fee 10%, Node Operator Fee 5%), Financial Risk (Revenue Decline); Phase 6 Utility (Fee Switch); Phase 8 Competitor Landscape (Rocket Pool, cbETH, frxETH, LRTs)
+· Supporting Dataset: Phase 3 EV-020, Phase 5 Revenue Model, Financial Risk, Phase 6 Utility, Phase 8 Competitor Landscape
 
-· Decision Pattern: Cayman Islands Limited Liability Foundation memegang kontrak, treasury, IP; memungkinkan DAO beroperasi legally (contracts, banking, hiring)
-· Evidence: Foundation established 2021-08 (Phase 3 EV-007); Legal structure blog post (Phase 2 Entity Lido DAO Foundation); 2024 review untuk MiCA/SEC compliance (Phase 3 EV-024); Foundation address = treasury address (Phase 5 Treasury)
-· Supporting Dataset: Phase 3 EV-007, EV-024; Phase 2 Entity Lido DAO Foundation, Cayman Islands; Phase 5 Treasury
+Trade-off 5: Legal Wrapper (Cayman Foundation) vs Full Desentralisasi "Code is Law"
+· Decision: Cayman Islands Limited Liability Foundation sebagai legal entity DAO
+· Trade-off: Foundation memberikan legal personality (contracts, bank accounts, liability limitation, IP holding) critical untuk operasi dunia nyata. Tapi introduce jurisdictional risk (Cayman law), centralized legal entity yang bisa jadi target regulator, dan governance capture risk (foundation directors vs token holders). Alternative: pure on-chain DAO tanpa wrapper (higher regulatory risk, no legal contracts).
+· Evidence: Phase 3 EV-007 Foundation, EV-024 Legal Review; Phase 2 Foundation (Lido DAO), Government (Cayman Islands); Phase 5 Treasury Custodian (Foundation), Financial Risk (Legal Financial Risk); Phase 6 Governance (Treasury Governance)
+· Supporting Dataset: Phase 3 EV-007, EV-024, Phase 2 Foundation, Government, Phase 5 Treasury Custodian, Financial Risk, Phase 6 Governance
 
-Pola 5: Core Contributor Program Formalization via DAO Budget
+Behavioral Summary
 
-· Decision Pattern: DAO mengfund core contributors via quarterly budget dengan KPI/review; bukan employment tradisional tapi grant-based
-· Evidence: >20 core contributors dibayar via DAO grants (LDO/DAI) (Phase 3 EV-022); Teams: Protocol Eng, Frontend/SDK, Node Operator Tooling, Oracle, DevOps, Security, Governance Ops (Phase 3 EV-022); Budget proposals di forum (Phase 2 Entity Lido Core)
-· Supporting Dataset: Phase 3 EV-022; Phase 2 Entity Lido Core; Phase 7 Developer Ecosystem
+Prioritas Utama Proyek
+1. Ethereum Alignment — Semua keputusan teknis dan strategis disejajarkan dengan Ethereum roadmap (Beacon Chain, Shanghai, PBS, DVT). Non-EVM chains dideprecate ketika konflik.
+2. DAO Sustainability — Fee switch activation, treasury management, core contributor formalization, legal structure review semuatuju membuat DAO financially dan legally sustainable tanpa VC funding lanjutan.
+3. Security First — Multi-audit, bug bounty $1M, timelock upgrades, emergency brakes, DVT mitigation untuk slashing. Zero major exploit sejak 2020.
+4. DeFi Composability — wstETH sebagai "base layer" untuk Curve, Aave, Maker, EigenLayer, L2 DeFi. Integrasi mendalam drive adoption.
+5. Progressive Decentralization — Dari curated 10 operator → 33+ professional + DVT permissionless modules. Menjawab centralization narrative dengan solusi teknis.
 
----
+Cara Mengambil Keputusan
+- Data-driven: On-chain analytics (Dune, beaconcha.in) informasi fee switch, operator expansion, sunset decisions.
+- Governance-mediated: Semua major decisions melalui LIP process (forum → Snapshot → Aragon → multisig). Tidak ada unilateral decision oleh core team.
+- Technical conservatism: Canonical bridges only, multi-audit pre-launch, proxy upgrades dengan timelock, circuit breakers.
+- Narrative-responsive: Centralization critique → DVT modules. Revenue need → fee switch. Regulatory uncertainty → legal review.
 
-Pola 1: Market Crash / Contagion Response - Transparansi On-Chain & Peg Defense
+Faktor Paling Sering Mempengaruhi Keputusan
+1. Ethereum Roadmap — Technical upgrades (withdrawal credentials, DVT) mengikuti Ethereum consensus layer evolution.
+2. DAO Treasury Health — Fee switch, grant budget, core contributor payroll semua driven by treasury sustainability.
+3. Market Competition — Competitor moves (Rocket Pool permissionless, LRT protocols, cbETH) mendorong DVT modules, restaking integration.
+4. Regulatory Environment — Legal structure review, Cayman foundation, MiCA/SEC compliance planning.
+5. Community Governance Sentiment — Sunset votes, fee switch, operator onboarding semua require community approval.
 
-· Trigger: FTX/Alameda collapse November 2022 - kekhawatiran exposure Alameda (~4M stETH di Aave/Maker)
-· Decision Pattern: Proaktif publish exposure check; verify protocol tidak memiliki exposure; monitor liquidasi Alameda on-chain; communicate peg stability
-· Evidence: Phase 3 EV-025; Lido blog post "FTX Exposure Check"; on-chain analysis menunjukkan Alameda liquidasi tertib di Aave/Maker; stETH peg stabil $0.99-1.00 ETH; Curve pool tetap liquide
-· Response: Blog transparency, on-chain verification, community communication
-· Result: Tidak ada depeg mayor; kepercayaan resilient design stETH ter 강화; tidak perlu emergency intervention
-· Supporting Dataset: Phase 3 EV-025; Phase 7 Major Integrations (Aave, Maker, Curve)
+Pola Evolusi
+Phase 1 (2020-2021): Bootstrap & Launch — P2P.org internal funding → mainnet launch → TGE + liquidity mining → Series A. Establish core primitives (stETH, oracle, operators).
+Phase 2 (2021-2022): Aggressive Expansion — Polygon, Solana, Polkadot, Kusama, Optimism, Arbitrum. Series B funding. DeFi integrations (Curve, Aave, Maker, Yearn).
+Phase 3 (2023): Consolidation & Major Upgrade — V2 Staking Router + withdrawal credentials 0x01 (Shanghai ready). Sunset 3 non-EVM chains. EigenLayer integration. Base/zkSync L2 expansion.
+Phase 4 (2024): Maturity & Sustainability — Fee switch 10% (revenue). Permissionless operator onboarding via DVT modules. Core contributor formalization. Legal structure review. wstETH 1M milestone.
 
-Pola 2: Security Incident Prevention - Multi-Audit & Bug Bounty Proaktif
-
-· Trigger: General smart contract risk; high TVL ($28B+) membuat target tinggi
-· Decision Pattern: Pre-launch multiple audits; continuous audit program; $1M bug bounty; circuit breakers (oracle max rebase delta, withdrawal queue pause)
-· Evidence: 5 major audits (Sigma Prime, MixBytes, Quantstamp) (Phase 4 Audit History); Immunefi $1M bounty (Phase 4 Security Model, Phase 7 Infrastructure); Oracle circuit breaker, withdrawal pause via governance (Phase 4 Security Model); No major exploit kontrak inti sejak 2020
-· Response: Preventive security investment
-· Result: Zero major exploits on core contracts; trust as secure infrastructure
-· Supporting Dataset: Phase 4 Audit History, Security Model; Phase 7 Infrastructure Providers
-
-Pola 3: Centralization Criticism Response - Technical Desentralisasi via DVT
-
-· Trigger: Narasa risiko sentralisasi (~28.5% ETH staked market share, 33 curated operators)
-· Decision Pattern: Technical solution via Staking Router DVT modules (Simple DVT, Obol, SSV) untuk permissionless operator onboarding; client/geographic diversity push
-· Evidence: Phase 3 EV-021; Phase 4 Technical Upgrade History; Phase 8 Narrative Position (Risk); 20+ new operators onboarded 2024; DVT clusters active
-· Response: Protocol-level desentralisasi bukan hanya narrative
-· Result: Operator set expansion, client diversity improvement, mitigation narrative risk
-· Supporting Dataset: Phase 3 EV-021; Phase 4 Core Components; Phase 8 Narrative Position
-
-Pola 4: Regulatory Uncertainty Response - Legal Structure Review
-
-· Trigger: Global regulatory landscape evolving (MiCA EU, SEC US); Cayman Foundation structure mungkin insufficient
-· Decision Pattern: DAO forum discussion untuk evaluate future wrapper (Wyoming DUNA, BVI VASP); legal counsel engaged; no binding decision yet
-· Evidence: Phase 3 EV-024; Phase 5 Financial Risk (Legal); Forum discussion ongoing
-· Response: Proactive legal review sebelum enforcement
-· Result: Ongoing - belum ada keputusan final
-· Supporting Dataset: Phase 3 EV-024; Phase 5 Financial Risk; Phase 2 Entity Cayman Islands
-
-Pola 5: Product Failure Response - Governance-Driven Sunset dengan Redemption Window
-
-· Trigger: Produk non-Ethereum (Solana, Polkadot, Kusama) adoption rendah, resource drain
-· Decision Pattern: Governance vote untuk sunset; deployment redemption contracts; migration window untuk user exit; kontrak dihentikan
-· Evidence: Sunset Solana (EV-014), Polkadot/Kusama (EV-015) via governance vote; redemption windows Q3-Q4 2023; user migrasi ke native alternatives
-· Response: Orderly wind-down via DAO process
-· Result: Resource realokasi ke core Ethereum/L2; governance effectiveness demonstrated
-· Supporting Dataset: Phase 3 EV-014, EV-015; Phase 6 Major Token Events
-
----
-
-Pola 1: Selalu Audit Major Upgrade oleh Multiple Top-Tier Firms
-
-· Evidence: Mainnet launch: Sigma Prime (Phase 4 Audit History); V2: Sigma Prime + MixBytes + Quantstamp (Phase 4 Audit History); Continuous program untuk new modules (Phase 4 Audit History); Pattern konsisten sejak 20
+Kekuatan Utama
+1. Market Dominance — 62% LST TVL share, 28.5% ETH staked share, deepest liquidity (Curve), widest DeFi integration.
+2. Technical Maturity — 4+ years zero major exploit, modular V2 architecture, canonical bridge strategy, multi-audit culture.
+3. DAO Governance Maturity — Functional token-weighted governance dengan real decisions (V2, fee switch, sunsets, operators), multisig execution, grant program.
+4. Sustainable Revenue — Fee switch 10% + withdrawal fees + treasury yield = ~$45-55M annualized, no
