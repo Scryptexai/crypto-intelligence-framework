@@ -13,7 +13,7 @@ from . import config, phases as phases_mod, pipeline, prompts, validate
 from .logs import log, log_failure, log_needs_review, project_logger
 
 
-def run_project(name: str, base_url: str, token: str, model: str, dry_run: bool,
+def run_project(name: str, providers, dry_run: bool,
                 phases_limit: int, output_root: Path, auto_sync: bool = False) -> bool:
     """True if every requested phase completed (generated or resumed from disk), False if a
     phase failed permanently -- in which case later phases for this project are skipped (they
@@ -53,7 +53,7 @@ def run_project(name: str, base_url: str, token: str, model: str, dry_run: bool,
                     f"{len(config.PHASE11_STAGES)}-stage split]\n", encoding="utf-8")
                 plog(f"phase 11-conflict: [dry-run] wrote placeholder -> {out_path}")
                 continue
-            text, err = phases_mod.run_phase_11(name, base_url, token, model, proj_dir)
+            text, err = phases_mod.run_phase_11(name, providers, proj_dir)
             if err is not None:
                 plog(f"✗✗ {name} phase 11-conflict permanently failed, giving up on this "
                      f"project for now: {err}")
@@ -74,7 +74,7 @@ def run_project(name: str, base_url: str, token: str, model: str, dry_run: bool,
         else:
             try:
                 _, failures = phases_mod.run_phase(name, num, key, messages, proj_dir,
-                                                   base_url, token, model, plog)
+                                                   providers, plog)
             except Exception as e:  # noqa: BLE001
                 plog(f"✗✗ {name} phase {num:02d}-{key} permanently failed, giving up on this "
                      f"project for now: {e}")
@@ -127,7 +127,7 @@ def _finalise(name: str, proj_dir: Path, output_root: Path, auto_sync: bool, plo
          f"({'ok' if chain_ok else 'FAILED'}) ===")
 
 
-def run_queue(projects: list, base_url: str, token: str, model: str, dry_run: bool,
+def run_queue(projects: list, providers, dry_run: bool,
               phases_limit: int, output_root: Path, auto_sync: bool, parallel: int) -> None:
     if parallel > 1:
         with ThreadPoolExecutor(max_workers=parallel) as pool:
@@ -136,7 +136,7 @@ def run_queue(projects: list, base_url: str, token: str, model: str, dry_run: bo
                 # Small stagger so N threads don't all hit the API in the same instant.
                 if i:
                     time.sleep(5)
-                futures[pool.submit(run_project, name, base_url, token, model, dry_run,
+                futures[pool.submit(run_project, name, providers, dry_run,
                                     phases_limit, output_root, auto_sync)] = name
             for fut in as_completed(futures):
                 name = futures[fut]
@@ -146,8 +146,7 @@ def run_queue(projects: list, base_url: str, token: str, model: str, dry_run: bo
                     log(f"[{name}] ✗✗ unexpected exception, this project's thread crashed: {e}")
     else:
         for i, name in enumerate(projects):
-            run_project(name, base_url, token, model, dry_run, phases_limit, output_root,
-                        auto_sync)
+            run_project(name, providers, dry_run, phases_limit, output_root, auto_sync)
             if i < len(projects) - 1:
                 log(f"sleeping {config.PROJECT_SLEEP_SECONDS}s before next project...")
                 time.sleep(config.PROJECT_SLEEP_SECONDS)

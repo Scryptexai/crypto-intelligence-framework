@@ -23,8 +23,8 @@ from .api import call_with_retries
 from .logs import log_repair
 
 
-def generate_phase(messages: list, num: int, key: str, project_name: str, base_url: str,
-                   token: str, model: str, plog, max_tokens: int = None) -> tuple:
+def generate_phase(messages: list, num: int, key: str, project_name: str, providers,
+                   plog, max_tokens: int = None) -> tuple:
     """Generate one phase, repairing format failures in-place.
 
     `messages` is the running conversation; it is NOT mutated -- the caller decides what to
@@ -34,7 +34,7 @@ def generate_phase(messages: list, num: int, key: str, project_name: str, base_u
     is empty when the phase is clean.
     """
     label = f"{project_name} phase {num:02d}-{key}"
-    text = call_with_retries(messages, base_url, token, model, label, max_tokens=max_tokens)
+    text = call_with_retries(messages, providers, label, max_tokens=max_tokens)
     text = _ensure_header(text, project_name)
 
     if not config.REPAIR_ENABLED:
@@ -59,7 +59,7 @@ def generate_phase(messages: list, num: int, key: str, project_name: str, base_u
             {"role": "user", "content": repair_prompt},
         ]
         try:
-            candidate = call_with_retries(repair_messages, base_url, token, model,
+            candidate = call_with_retries(repair_messages, providers,
                                           f"{label} repair {attempt}", max_tokens=max_tokens)
         except Exception as e:  # noqa: BLE001 -- a failed repair keeps the draft we already have
             plog(f"phase {num:02d}-{key}: repair call failed ({e}) -- keeping previous draft")

@@ -9,6 +9,8 @@ retry policy lives in call_with_retries (transport-level). Content-quality retri
 separate concern and live in repair.py.
 """
 import json
+import re
+import threading
 import time
 import urllib.error
 import urllib.request
@@ -100,25 +102,91 @@ def call_model(messages: list, base_url: str, token: str, model: str,
     return extract_text(body)
 
 
-def call_with_retries(messages: list, base_url: str, token: str, model: str, phase_label: str,
-                      max_tokens: int = None) -> str:
-    """Transport-level retry only: network errors, timeouts, gateway 5xx, unparseable bodies.
+# Failures that mean "this endpoint cannot handle a request this big", as opposed to "try
+# again in a moment". Retrying the same provider with the same payload cannot fix these -- the
+# gateway timeout in particular is deterministic (measured twice on Lido at 310s and 306s for
+# an identical request), so burning the full retry budget on it just wastes ~15 minutes before
+# arriving at the same place. These rotate to the next provider immediately.
+_CAPACITY_FAILURE_RE = re.compile(
+    r"HTTP (?:408|413|502|503|504|520|522|524)\b"
+    r"|context[_ ]length|maximum context|too many tokens|payload too large|request too large"
+    r"|timed? out",
+    re.I,
+)
+
+
+def is_capacity_failure(err: Exception) -> bool:
+    return bool(_CAPACITY_FAILURE_RE.search(str(err)))
+
+
+# Providers that have already proven, in THIS run, that they cannot carry a heavy phase.
+# "Maximise the free gateway first" means proving its limit -- not re-proving it 21 times.
+# Once a heavy call rotates away from a provider on a capacity failure, later heavy calls skip
+# it outright: at ~300s per proof that would otherwise burn ~1.75 hours across a 21-project
+# repair run to reach the same conclusion each time. Ordinary phases are unaffected and keep
+# using the gateway normally, since the demotion is scoped to heavy calls only.
+_demoted_for_heavy = set()
+_demote_lock = threading.Lock()
+
+
+def call_with_retries(messages: list, providers, phase_label: str,
+                      max_tokens: int = None, heavy: bool = False) -> str:
+    """Send `messages`, retrying transient failures and rotating providers on capacity ones.
+
+    `providers` is a config.Provider or an ordered list of them (see config.load_providers).
+    The first is always tried first and given the full retry budget for ordinary errors --
+    the maintainer's rule is to exhaust the free gateway before spending elsewhere. A
+    capacity-class failure short-circuits that budget and moves straight to the next
+    provider, because more attempts against an endpoint that cannot fit the request are
+    guaranteed to fail the same way.
 
     A response that arrives intact but in the wrong FORMAT is not retried here -- that is
-    repair.py's job, because it needs a corrective instruction appended rather than the same
+    repair.py's job, since it needs a corrective instruction appended rather than the same
     request sent again unchanged.
     """
+    if isinstance(providers, config.Provider):
+        providers = [providers]
+
+    if heavy and len(providers) > 1:
+        with _demote_lock:
+            usable = [p for p in providers if p.name not in _demoted_for_heavy]
+        if usable and usable != providers:
+            skipped = [p.name for p in providers if p not in usable]
+            log(f"  ↷ {phase_label}: skipping {', '.join(skipped)} for this heavy phase "
+                f"(already proven too small earlier in this run)")
+            providers = usable
+
     last_err = None
-    for attempt in range(1, config.MAX_PHASE_RETRIES + 1):
-        try:
-            return call_model(messages, base_url, token, model, max_tokens=max_tokens)
-        except Exception as e:  # noqa: BLE001 -- any failure should trigger retry
-            last_err = e
-            log(f"  ✗ {phase_label} attempt {attempt}/{config.MAX_PHASE_RETRIES} failed: {e}")
-            if attempt < config.MAX_PHASE_RETRIES:
-                backoff = config.RETRY_BACKOFF_SECONDS[
-                    min(attempt - 1, len(config.RETRY_BACKOFF_SECONDS) - 1)]
-                log(f"  retrying {phase_label} in {backoff}s...")
-                time.sleep(backoff)
-    raise RuntimeError(
-        f"{phase_label} failed after {config.MAX_PHASE_RETRIES} attempts: {last_err}")
+
+    for idx, prov in enumerate(providers):
+        is_last_provider = idx == len(providers) - 1
+        for attempt in range(1, config.MAX_PHASE_RETRIES + 1):
+            try:
+                return call_model(messages, prov.base_url, prov.token, prov.model,
+                                  max_tokens=max_tokens)
+            except Exception as e:  # noqa: BLE001 -- any failure is retryable or rotatable
+                last_err = e
+                log(f"  ✗ {phase_label} [{prov.name}] attempt "
+                    f"{attempt}/{config.MAX_PHASE_RETRIES} failed: {e}")
+
+                if is_capacity_failure(e) and not is_last_provider:
+                    nxt = providers[idx + 1]
+                    log(f"  ↻ {phase_label}: {prov.name} cannot handle a request this size "
+                        f"-- rotating to {nxt.name} ({nxt.model}) instead of retrying")
+                    if heavy:
+                        with _demote_lock:
+                            _demoted_for_heavy.add(prov.name)
+                    break  # straight to the next provider
+
+                if attempt < config.MAX_PHASE_RETRIES:
+                    backoff = config.RETRY_BACKOFF_SECONDS[
+                        min(attempt - 1, len(config.RETRY_BACKOFF_SECONDS) - 1)]
+                    log(f"  retrying {phase_label} in {backoff}s...")
+                    time.sleep(backoff)
+                elif not is_last_provider:
+                    nxt = providers[idx + 1]
+                    log(f"  ↻ {phase_label}: {prov.name} exhausted its retries "
+                        f"-- rotating to {nxt.name} ({nxt.model})")
+
+    raise RuntimeError(f"{phase_label} failed on every provider "
+                       f"({', '.join(p.name for p in providers)}): {last_err}")

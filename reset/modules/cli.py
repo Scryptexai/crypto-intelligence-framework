@@ -154,12 +154,21 @@ def main(argv=None) -> None:
     if args.audit:
         sys.exit(_audit(projects, output_root))
 
-    base_url, token, model = config.load_credentials()
+    providers = config.load_providers()
+    base_url, token, model = providers[0].base_url, providers[0].token, providers[0].model
     if not args.dry_run and not (base_url and token and model):
         sys.exit("ANTHROPIC_BASE_URL, ANTHROPIC_AUTH_TOKEN, and ANTHROPIC_MODEL must all be set "
                  "in the environment (never hardcode these in a file). Use --dry-run to test "
                  "the pipeline's control flow without an API key, or --audit to inspect "
                  "existing files without any credentials at all.")
+
+    if len(providers) > 1:
+        chain = " -> ".join(f"{p.name}({p.model})" for p in providers)
+        log(f"Provider chain: {chain}. Heavy phases (9, 11) run as ONE call; the gateway is "
+            f"still tried first and rotation happens only on a capacity failure.")
+    else:
+        log("Provider chain: gateway only (set DEEPSEEK_API_KEY to enable rotation). "
+            "Heavy phases (9, 11) will be split into stages to fit its ~300s limit.")
 
     if args.redo_phases:
         try:
@@ -177,5 +186,5 @@ def main(argv=None) -> None:
         f"-- mode: {mode} -- {repair_note}"
         + (f" -- parallel={args.parallel}" if args.parallel > 1 else ""))
 
-    runner.run_queue(projects, base_url, token, model, args.dry_run, args.phases_limit,
+    runner.run_queue(projects, providers, args.dry_run, args.phases_limit,
                      output_root, args.auto_sync, args.parallel)

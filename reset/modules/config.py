@@ -92,8 +92,29 @@ _failures_lock = threading.Lock()
 _pipeline_lock = threading.Lock()
 
 
+class Provider:
+    """One model endpoint the pipeline can send a phase to.
+
+    `heavy_capable` marks a provider that can complete a big single call -- roughly 60k input
+    plus 8k output -- inside its own timeout. The shared gateway cannot (measured: it kills
+    any generation past ~300s), which is why phases 9 and 11 are staged there. A provider with
+    this flag gets the whole phase in ONE call instead, which is both faster and avoids
+    re-paying the ~58k-token prefill once per stage.
+    """
+
+    def __init__(self, name, base_url, token, model, heavy_capable=False):
+        self.name = name
+        self.base_url = base_url
+        self.token = token
+        self.model = model
+        self.heavy_capable = heavy_capable
+
+    def __repr__(self):
+        return f"<Provider {self.name} model={self.model} heavy={self.heavy_capable}>"
+
+
 def load_credentials() -> tuple:
-    """(base_url, token, model) from the environment. Never logged, never persisted.
+    """(base_url, token, model) for the PRIMARY provider. Never logged, never persisted.
 
     The ANTHROPIC_* names are historical: this gateway is OpenAI-compatible at
     /v1/chat/completions, not an Anthropic Messages API endpoint (see api.extract_text).
@@ -103,6 +124,33 @@ def load_credentials() -> tuple:
         os.environ.get("ANTHROPIC_AUTH_TOKEN"),
         os.environ.get("ANTHROPIC_MODEL"),
     )
+
+
+def load_providers() -> list:
+    """The provider chain, in the order calls are attempted.
+
+    [0] is always the primary gateway -- cheap/free, and the maintainer's explicit rule is to
+    exhaust it before spending on anything else. A second provider is appended only when
+    DEEPSEEK_API_KEY is set, and is used purely as an escape hatch: api.call_with_retries
+    rotates to it when the primary returns a capacity-class failure (gateway timeout, payload
+    too large, context length exceeded) -- the failures that retrying the same endpoint cannot
+    fix. Ordinary transient errors never trigger a rotation.
+
+    Set DEEPSEEK_BASE_URL / DEEPSEEK_MODEL to point at something other than the official API.
+    """
+    base_url, token, model = load_credentials()
+    providers = [Provider("gateway", base_url, token, model, heavy_capable=False)]
+
+    ds_key = os.environ.get("DEEPSEEK_API_KEY")
+    if ds_key:
+        providers.append(Provider(
+            name="deepseek",
+            base_url=os.environ.get("DEEPSEEK_BASE_URL", "https://api.deepseek.com"),
+            token=ds_key,
+            model=os.environ.get("DEEPSEEK_MODEL", "deepseek-chat"),
+            heavy_capable=True,
+        ))
+    return providers
 
 
 def load_projects(path: Path = None) -> list:

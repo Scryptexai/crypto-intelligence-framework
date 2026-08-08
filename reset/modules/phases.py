@@ -17,8 +17,21 @@ def existing_phase_ok(path: Path) -> bool:
     return path.exists() and len(path.read_text(encoding="utf-8").strip()) >= config.MIN_PHASE_CHARS
 
 
-def _run_staged_phase_9(name: str, messages: list, proj_dir: Path, base_url: str, token: str,
-                        model: str, plog) -> str:
+def _has_heavy_provider(providers) -> bool:
+    """True when some provider in the chain can take a heavy phase as a single call.
+
+    When one exists, Phase 9 and Phase 11 go back to their original single-prompt design and
+    the staged workarounds are skipped entirely: the gateway is still tried first (the rule is
+    to exhaust the free endpoint before spending), api.call_with_retries rotates on the
+    capacity failure, and after the first such rotation it stops re-proving the limit for the
+    rest of the run.
+    """
+    if isinstance(providers, config.Provider):
+        providers = [providers]
+    return any(getattr(p, "heavy_capable", False) for p in providers)
+
+
+def _run_staged_phase_9(name: str, messages: list, proj_dir: Path, providers, plog) -> str:
     """Phase 9 as three sequential calls on the running conversation (config.PHASE9_STAGES).
 
     Same root cause as Phase 11's four-stage split, measured independently here: the gateway
@@ -45,8 +58,8 @@ def _run_staged_phase_9(name: str, messages: list, proj_dir: Path, base_url: str
             plog(f"phase {stage_key}: sending ({prompt_file})...")
             messages.append({"role": "user",
                              "content": prompts.load_stage_prompt(prompt_file)})
-            response = call_with_retries(messages, base_url, token, model,
-                                         f"{name} phase {stage_key}")
+            response = call_with_retries(messages, providers,
+                                         f"{name} phase {stage_key}", heavy=True)
             tmp_path.write_text(response, encoding="utf-8")
             messages.append({"role": "assistant", "content": response})
             # Shrink the stage prompt now its answer is in context, same reasoning as
@@ -64,8 +77,8 @@ def _run_staged_phase_9(name: str, messages: list, proj_dir: Path, base_url: str
     return combined
 
 
-def run_phase(name: str, num: int, key: str, messages: list, proj_dir: Path, base_url: str,
-              token: str, model: str, plog) -> tuple:
+def run_phase(name: str, num: int, key: str, messages: list, proj_dir: Path, providers,
+              plog) -> tuple:
     """Generate one ordinary phase (1-10), self-repairing format failures, and save it.
 
     Appends the prompt + final output to `messages` (mutating it, as the running Track C
@@ -75,14 +88,20 @@ def run_phase(name: str, num: int, key: str, messages: list, proj_dir: Path, bas
     """
     out_path = proj_dir / f"{num:02d}-{key}.docx"
 
-    if num == 9:
-        # Generated in three stages (see _run_staged_phase_9); the stages already appended
-        # themselves to `messages`, so the single-prompt bookkeeping below is skipped. Spec
-        # checks still run against the assembled result, and self-repair is deliberately NOT
-        # applied here: a repair asks for a complete rewrite in one call, which is the exact
-        # thing that cannot finish inside the gateway's timeout for this phase.
+    if num == 9 and not _has_heavy_provider(providers):
+        # No provider can take Phase 9 in one call, so fall back to three stages (see
+        # _run_staged_phase_9). The stages already appended themselves to `messages`, so the
+        # single-prompt bookkeeping below is skipped. Spec checks still run against the
+        # assembled result; self-repair is deliberately NOT applied, because a repair asks for
+        # a complete rewrite in one call -- exactly what cannot finish inside the timeout here.
+        #
+        # Splitting is a workaround, not the better design: Phase 9's problem is its ~58k-token
+        # INPUT (it sits at the end of the chained conversation), not its ~6.5k-token output,
+        # which is a quarter of what Phase 2 emits without trouble. Each stage therefore
+        # re-pays that whole prefill, so three stages cost more total work than one call would.
+        # It exists only because the gateway cannot do the one call at all.
         from . import specs
-        text = _run_staged_phase_9(name, messages, proj_dir, base_url, token, model, plog)
+        text = _run_staged_phase_9(name, messages, proj_dir, providers, plog)
         failures = specs.run_checks(num, key, name, text)
         if failures:
             plog(f"phase {num:02d}-{key}: ⚠ assembled from stages but {len(failures)} check(s) "
@@ -99,7 +118,7 @@ def run_phase(name: str, num: int, key: str, messages: list, proj_dir: Path, bas
     plog(f"phase {num:02d}-{key}: sending...")
     messages.append({"role": "user", "content": prompt})
 
-    text, failures = repair.generate_phase(messages, num, key, name, base_url, token, model, plog)
+    text, failures = repair.generate_phase(messages, num, key, name, providers, plog)
     text, failures = _keep_better(out_path, text, failures, num, key, name, plog)
 
     out_path.write_text(text, encoding="utf-8")
@@ -149,7 +168,7 @@ def _keep_better(out_path: Path, text: str, failures: list, num: int, key: str, 
     return old_text, old_failures
 
 
-def run_phase_11(name: str, base_url: str, token: str, model: str, proj_dir: Path) -> tuple:
+def run_phase_11(name: str, providers, proj_dir: Path) -> tuple:
     """Phase 11 (Validation & QA) as four smaller, sequential API calls (PHASE11_STAGES)
     instead of one call appended to the full 10-phase running conversation.
 
@@ -209,9 +228,10 @@ def run_phase_11(name: str, base_url: str, token: str, model: str, proj_dir: Pat
                     {"role": "user", "content": prompt},
                 ]
             try:
-                response = call_with_retries(messages, base_url, token, model,
+                response = call_with_retries(messages, providers,
                                              f"{name} phase {stage_key}",
-                                             max_tokens=config.PHASE11_MAX_TOKENS)
+                                             max_tokens=config.PHASE11_MAX_TOKENS,
+                                             heavy=True)
             except Exception as e:  # noqa: BLE001
                 return None, e
             tmp_path.write_text(response, encoding="utf-8")
