@@ -1,0 +1,357 @@
+PROJECT: Hyperliquid
+
+## Ecosystem Position
+
+Primary Sector: Layer 1 Blockchain / Decentralized Exchange (Perpetual Futures & Spot) / On-chain Order Book (CLOB) (HIGH) [Phase 1 Foundation, https://hyperliquid.gitbook.io/hyperliquid-docs]
+Secondary Sector: EVM-compatible Execution Environment (HyperEVM) (HIGH) [Phase 4 Technology, https://hyperliquid.xyz/blog/hyperevm]
+Primary Chain: Hyperliquid L1 (HIGH) [Phase 1 Foundation, https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview]
+Supported Chains: Hyperliquid L1 (HIGH) [Phase 1 Foundation, https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview]; HyperEVM (EVM layer on top of Hyperliquid L1) (HIGH) [Phase 4 Technology, https://hyperliquid.xyz/blog/hyperevm]; Arbitrum (via Hyperliquid Native Bridge) (MEDIUM) [Phase 4 Technology, https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview]; Ethereum Mainnet (via Hyperliquid Native Bridge) (MEDIUM) [Phase 4 Technology, https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview]
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs; https://hyperliquid.xyz/blog/hyperevm; https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview; https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview
+
+## External Dependencies
+
+Dependency Name: Arbitrum
+Dependency Type: Chain
+Purpose: Target chain for Hyperliquid Native Bridge asset transfers (USDC, other assets) (MEDIUM)
+Criticality: Critical (bridge functionality depends on Arbitrum liveness and finality) (HIGH)
+Status: Live (MEDIUM)
+Related Entity: Hyperliquid Bridge (Phase 2 Entity)
+Related Technology Component: Hyperliquid Bridge (Phase 4 Core Components)
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview
+
+Dependency Name: Ethereum Mainnet
+Dependency Type: Chain
+Purpose: Target chain for Hyperliquid Native Bridge asset transfers (USDC, other assets) (MEDIUM)
+Criticality: Critical (bridge functionality depends on Ethereum liveness and finality) (HIGH)
+Status: Live (MEDIUM)
+Related Entity: Hyperliquid Bridge (Phase 2 Entity)
+Related Technology Component: Hyperliquid Bridge (Phase 4 Core Components)
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview
+
+Dependency Name: USDC (USD Coin)
+Dependency Type: Protocol / Stablecoin
+Purpose: Primary collateral and quote asset for Hyperliquid Perpetual DEX and Spot DEX trading (HIGH)
+Criticality: Critical (trading pairs denominated in USDC; protocol revenue in USDC) (HIGH)
+Status: Live (HIGH)
+Related Entity: Circle (issuer, not explicitly listed in Phase 2)
+Related Technology Component: Hyperliquid Perpetual DEX, Hyperliquid Spot DEX (Phase 4 Core Components)
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview
+
+Dependency Name: Susquehanna International Group (SIG)
+Dependency Type: Service / Market Maker
+Purpose: Institutional market making and liquidity provision on Hyperliquid Perpetual DEX (HIGH)
+Criticality: High (liquidity depth depends on professional market makers) (HIGH)
+Status: Live (HIGH)
+Related Entity: Susquehanna International Group (SIG) (Phase 2 Entity)
+Related Technology Component: Hyperliquid Perpetual DEX (Phase 4 Core Components)
+Sources: https://www.theblock.co/post/298123/hyperliquid-labs-raises-funding
+
+Dependency Name: GSR Markets
+Dependency Type: Service / Market Maker
+Purpose: Institutional market making and liquidity provision on Hyperliquid Perpetual DEX (HIGH)
+Criticality: High (liquidity depth depends on professional market makers) (HIGH)
+Status: Live (HIGH)
+Related Entity: GSR Markets (Phase 2 Entity)
+Related Technology Component: Hyperliquid Perpetual DEX (Phase 4 Core Components)
+Sources: https://www.theblock.co/post/298123/hyperliquid-labs-raises-funding
+
+Dependency Name: Cloud Infrastructure Providers (AWS / GCP / Other)
+Dependency Type: Infrastructure / Cloud
+Purpose: Hosting validator nodes, RPC endpoints, API services, indexers (inferred from standard blockchain operations) (LOW)
+Criticality: High (downtime affects validator participation and API availability) (MEDIUM)
+Status: Live (inferred) (LOW)
+Related Entity: Hyperliquid Labs (Phase 2 Entity)
+Related Technology Component: Validator Set, API (Phase 4 Core Components, Current Technical Stack)
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview (no explicit cloud provider disclosure)
+
+Dependency Name: Hypurrscan
+Dependency Type: Data Provider / Explorer
+Purpose: Primary block explorer and on-chain analytics for Hyperliquid L1 (HIGH)
+Criticality: Medium (alternative official explorer exists) (MEDIUM)
+Status: Live (HIGH)
+Related Entity: Hypurrscan (independent team, not in Phase 2)
+Related Technology Component: Block Explorer (Phase 4 Core Components)
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/ecosystem/explorers
+
+Dependency Name: Official Explorer (explorer.hyperliquid.xyz)
+Dependency Type: Data Provider / Explorer
+Purpose: Official block explorer for Hyperliquid L1 (HIGH)
+Criticality: Medium (backup to Hypurrscan) (MEDIUM)
+Status: Live (HIGH)
+Related Entity: Hyperliquid Labs (Phase 2 Entity)
+Related Technology Component: Block Explorer (Phase 4 Core Components)
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/ecosystem/explorers
+
+Dependency Name: DefiLlama
+Dependency Type: Data Provider / Analytics
+Purpose: TVL, volume, fees tracking for Hyperliquid ecosystem (MEDIUM)
+Criticality: Low (analytics only) (LOW)
+Status: Live (MEDIUM)
+Related Entity: DefiLlama (independent)
+Related Technology Component: N/A
+Sources: https://defillama.com/chain/Hyperliquid
+
+## Major Integrations
+
+Integration Name: Hyperliquid Native Bridge to Arbitrum
+Integrated With: Arbitrum
+Purpose: Enable cross-chain asset transfers (USDC, etc.) between Hyperliquid L1 and Arbitrum (MEDIUM)
+Status: Live (MEDIUM)
+Related Historical Event ID: EV-009 (Phase 3 History)
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview
+
+Integration Name: Hyperliquid Native Bridge to Ethereum Mainnet
+Integrated With: Ethereum Mainnet
+Purpose: Enable cross-chain asset transfers (USDC, etc.) between Hyperliquid L1 and Ethereum Mainnet (MEDIUM)
+Status: Live (MEDIUM)
+Related Historical Event ID: EV-009 (Phase 3 History)
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview
+
+Integration Name: HyperEVM Execution Layer on Hyperliquid L1
+Integrated With: Hyperliquid L1 (consensus & settlement)
+Purpose: Provide EVM-compatible smart contract execution with access to native CLOB via precompiles (HIGH)
+Status: Beta (Testnet live November 2024) (HIGH)
+Related Historical Event ID: EV-007 (Phase 3 History)
+Sources: https://hyperliquid.xyz/blog/hyperevm
+
+Integration Name: Spot DEX Integrated with Perpetual DEX on Shared CLOB
+Integrated With: Hyperliquid Perpetual DEX
+Purpose: Unified trading interface for spot and perpetual markets on same order book infrastructure (HIGH)
+Status: Live (HIGH)
+Related Historical Event ID: EV-006 (Phase 3 History)
+Sources: https://hyperliquid.xyz/blog/spot-launch
+
+Integration Name: HYPE Token Staking for Validator Security
+Integrated With: Hyperliquid L1 Validator Set
+Purpose: Activate Proof-of-Stake security for HyperBFT consensus via HYPE staking (HIGH)
+Status: Live (since TGE 2024-11-29) (HIGH)
+Related Historical Event ID: EV-008 (Phase 3 History)
+Sources: https://hyperliquid.xyz/blog/hype-genesis
+
+Integration Name: Ecosystem Fund Grants for HyperEVM Builders
+Integrated With: HyperEVM Developer Community
+Purpose: Incentivize dApp development on HyperEVM via builder grants (HIGH)
+Status: Ongoing (announced 2024) (HIGH)
+Related Historical Event ID: EV-010 (Phase 3 History)
+Sources: https://hyperliquid.xyz/blog/ecosystem-fund
+
+## Infrastructure Providers
+
+Provider: Hyperliquid Labs (Validator Operations)
+Service: Running core validator nodes, maintaining consensus, operating API/RPC endpoints (HIGH)
+Criticality: Critical (core protocol operation) (HIGH)
+Status: Live (HIGH)
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview
+
+Provider: Hyperliquid Validator Set (Permissioned/Permissionless unclear)
+Service: Validating blocks via HyperBFT, securing network (HIGH)
+Criticality: Critical (consensus safety) (HIGH)
+Status: Live (HIGH)
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview
+
+Provider: Hypurrscan (Independent)
+Service: Block explorer, transaction indexing, analytics (HIGH)
+Criticality: Medium (official explorer alternative exists) (MEDIUM)
+Status: Live (HIGH)
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/ecosystem/explorers
+
+Provider: Official Explorer (explorer.hyperliquid.xyz)
+Service: Official block explorer, transaction indexing (HIGH)
+Criticality: Medium (backup explorer) (MEDIUM)
+Status: Live (HIGH)
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/ecosystem/explorers
+
+Provider: Cloud Providers (Unspecified - AWS/GCP/Azure likely)
+Service: Infrastructure hosting for validators, APIs, indexers (inferred) (LOW)
+Criticality: High (availability dependency) (MEDIUM)
+Status: Live (inferred) (LOW)
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview (no explicit disclosure)
+
+## Exchange Ecosystem
+
+Exchange: CoinGecko
+Listing Status: Listed (HYPE token page)
+Spot: Yes (price tracking)
+Perpetual: No
+OTC: No
+Launchpool: No
+Status: Live (HIGH)
+Sources: https://www.coingecko.com/en/coins/hyperliquid
+
+Exchange: Centralized Exchanges (CEXs) for HYPE spot trading
+Listing Status: tidak diketahui (tidak diumumkan resmi di blog/docs; CoinGecko markets tab may show but not verified in Phase 1-6 sources)
+Spot: tidak diketahui
+Perpetual: tidak diketahui
+OTC: tidak diketahui
+Launchpool: tidak diketahui
+Status: Unknown (LOW)
+Sources: https://www.coingecko.com/en/coins/hyperliquid (markets tab not verified in research)
+
+Exchange: Hyperliquid Perpetual DEX (Native)
+Listing Status: Native Protocol
+Spot: No (separate Spot DEX)
+Perpetual: Yes (native perpetual futures)
+OTC: No
+Launchpool: No
+Status: Live (HIGH)
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview
+
+Exchange: Hyperliquid Spot DEX (Native)
+Listing Status: Native Protocol
+Spot: Yes (native spot markets)
+Perpetual: No
+OTC: No
+Launchpool: No
+Status: Live (HIGH)
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview
+
+## Wallet Ecosystem
+
+Wallet: MetaMask (via HyperEVM RPC)
+Support Type: EVM-compatible wallet for HyperEVM testnet/mainnet (inferred from EVM compatibility) (MEDIUM)
+Status: Planned / Beta (HyperEVM testnet supports MetaMask) (MEDIUM)
+Sources: https://hyperliquid.xyz/blog/hyperevm (EVM compatibility implies MetaMask support)
+
+Wallet: Hyperliquid Native Wallet (Web App)
+Support Type: Native web interface for trading, staking, bridging (HIGH)
+Status: Live (HIGH)
+Sources: https://hyperliquid.xyz (official web app)
+
+Wallet: Hardware Wallet Support (Ledger/Trezor via MetaMask/HyperEVM)
+Support Type: Indirect via MetaMask on HyperEVM (inferred) (LOW)
+Status: Planned / Beta (LOW)
+Sources: https://hyperliquid.xyz/blog/hyperevm (inferred)
+
+Wallet: Other Wallets (Rabby, Coinbase Wallet, etc. via HyperEVM)
+Support Type: EVM-compatible wallets (inferred) (LOW)
+Status: Planned / Beta (LOW)
+Sources: https://hyperliquid.xyz/blog/hyperevm (inferred)
+
+## Developer Ecosystem
+
+SDK: Hyperliquid TypeScript SDK
+API: REST API, WebSocket API (for trading, market data, account info) (HIGH)
+Developer Tools: Hyperliquid GitBook Documentation, API Reference (HIGH)
+Open Source Repository: https://github.com/hyperliquid-dex (Rust core, TypeScript SDK) (HIGH)
+Developer Portal: https://hyperliquid.gitbook.io/hyperliquid-docs (HIGH)
+Hackathon: tidak diketahui (tidak diumumkan di blog/docs resmi) (LOW)
+Grant Program: Hyperliquid Ecosystem Fund / Builder Grants (announced 2024) (HIGH)
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs; https://github.com/hyperliquid-dex; https://hyperliquid.xyz/blog/ecosystem-fund; https://hyperliquid.xyz/blog/hyperevm
+
+## Applications
+
+Application: Hyperliquid Perpetual DEX
+Category: Decentralized Exchange (Perpetual Futures)
+Relationship: Core Protocol (built by Hyperliquid Labs) (HIGH)
+Status: Live (HIGH)
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview
+
+Application: Hyperliquid Spot DEX
+Category: Decentralized Exchange (Spot)
+Relationship: Core Protocol (built by Hyperliquid Labs) (HIGH)
+Status: Live (HIGH)
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview
+
+Application: Hyperliquid Bridge
+Category: Cross-chain Bridge
+Relationship: Core Infrastructure (built by Hyperliquid Labs) (MEDIUM)
+Status: Live (MEDIUM)
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview
+
+Application: HyperEVM dApps (Testnet)
+Category: DeFi, Gaming, Tools (various)
+Relationship: Third-party builders on HyperEVM (testnet) (MEDIUM)
+Status: Beta (Testnet) (MEDIUM)
+Sources: https://hyperliquid.xyz/blog/hyperevm; https://hyperliquid.gitbook.io/hyperliquid-docs/ecosystem
+
+Application: Hypurrscan
+Category: Block Explorer / Analytics
+Relationship: Independent third-party tool (HIGH)
+Status: Live (HIGH)
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/ecosystem/explorers
+
+## Governance Ecosystem
+
+Foundation: Hyperliquid Foundation (indicated, not fully verified)
+DAO: Tidak ada DAO formal yang diumumkan (governance infrastructure early stage) (MEDIUM)
+Council: Tidak diumumkan (MEDIUM)
+Committee: Tidak diumumkan (MEDIUM)
+Validator Group: Hyperliquid Validator Set (permissioned/permissionless unclear) (HIGH)
+Sources: https://hyperliquid.xyz/blog/hype-genesis; https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview; https://hyperliquid.xyz/blog/ecosystem-fund
+
+## Ecosystem Risks
+
+Risk: Single Bridge Dependency (Hyperliquid Native Bridge)
+Description: All cross-chain asset transfers rely on a single native bridge secured by Hyperliquid validator set (trusted model). No alternative trust-minimized bridge (e.g., light client, ZK) live. (HIGH)
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview; https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview
+
+Risk: Centralized Validator Set (Permissioned Unclear)
+Description: Validator set composition, permissioning, and decentralization roadmap not publicly documented. Risk of collusion or censorship. (HIGH)
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview
+
+Risk: USDC Collateral Concentration
+Description: Entire perpetual and spot trading economy uses USDC as primary quote/settlement asset. Exposure to Circle/USDC regulatory, depeg, or blacklist risk. (HIGH)
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview
+
+Risk: Market Maker Dependency (SIG, GSR)
+Description: Liquidity depth heavily reliant on few institutional market makers. Withdrawal could severely impact order book quality. (HIGH)
+Sources: https://www.theblock.co/post/298123/hyperliquid-labs-raises-funding
+
+Risk: Cloud Infrastructure Centralization
+Description: Validator nodes and API services likely hosted on few cloud providers (AWS/GCP). Regional outage could halt consensus or API access. (MEDIUM)
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview (inferred, no explicit disclosure)
+
+Risk: Regulatory Exposure (Perpetual DEX, BVI Entity)
+Description: Hyperliquid Labs (BVI) operates perpetual futures DEX accessible globally. Risk of enforcement actions (CFTC, SEC, etc.) restricting access or seizing assets. (HIGH)
+Sources: https://messari.io/report/hyperliquid-deep-dive; https://www.theblock.co/post/298123/hyperliquid-labs-raises-funding
+
+Risk: No Formal Security Audits (Core Protocol)
+Description: HyperBFT consensus, CLOB matching engine, and native bridge have no publicly disclosed formal security audits. (HIGH)
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs (no audit reports); https://github.com/hyperliquid-dex (no audit reports)
+
+Risk: Tokenomics Opacity
+Description: HYPE token allocation, vesting, emission schedule, and fee switch mechanism not published. Uncertainty for stakers, investors, ecosystem participants. (HIGH)
+Sources: https://hyperliquid.xyz/blog/hype-genesis; https://hyperliquid.gitbook.io/hyperliquid-docs
+
+Risk: HyperEVM Mainnet Not Live
+Description: EVM execution layer still in testnet (Nov 2024). Mainnet launch timeline, compatibility, and security unproven in production. (MEDIUM)
+Sources: https://hyperliquid.xyz/blog/hyperevm
+
+## Official Ecosystem Resources
+
+Official Documentation: https://hyperliquid.gitbook.io/hyperliquid-docs
+Developer Portal: https://hyperliquid.gitbook.io/hyperliquid-docs
+GitHub: https://github.com/hyperliquid-dex
+Partner Documentation: https://hyperliquid.gitbook.io/hyperliquid-docs/ecosystem (explorers, tools)
+Grant Program: https://hyperliquid.xyz/blog/ecosystem-fund
+Ecosystem Dashboard: tidak tersedia (tidak ada dashboard ekosistem resmi publik) (LOW)
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs; https://github.com/hyperliquid-dex; https://hyperliquid.xyz/blog/ecosystem-fund
+
+## Summary
+
+Primary Ecosystem: Hyperliquid L1 (Sovereign Layer 1 with integrated CLOB DEX and HyperEVM)
+Supported Chains: Hyperliquid L1, HyperEVM, Arbitrum (bridge), Ethereum Mainnet (bridge)
+External Dependencies: 9 (Arbitrum, Ethereum, USDC, SIG, GSR, Cloud Providers, Hypurrscan, Official Explorer, DefiLlama)
+Major Integrations: 6 (Bridge to Arbitrum, Bridge to Ethereum, HyperEVM, Spot/Perp Unified CLOB, HYPE Staking, Ecosystem Fund)
+Infrastructure Providers: 5 (Hyperliquid Labs Validators, Validator Set, Hypurrscan, Official Explorer, Cloud Providers)
+Developer Programs: SDK (TypeScript), REST/WebSocket API, GitBook Docs, GitHub Repos, Ecosystem Fund Grants
+Applications: 6 (Perp DEX, Spot DEX, Native Bridge, HyperEVM dApps testnet, Hypurrscan, Native Web Wallet)
+
+## Open Threads
+
+- Daftar CEX yang melisting HYPE spot/perpetual (CoinGecko markets tab belum diverifikasi sebagai sumber resmi) — perlu cek CoinGecko "Markets" atau pengumuman resmi.
+- Dukungan wallet non-EVM native untuk Hyperliquid L1 (selain web app resmi) — apakah ada wallet mobile/hardware native support.
+- Detail cloud provider yang digunakan validator set dan Hyperliquid Labs — tidak diungkap, risiko sentralisasi infrastruktur tidak terukur.
+- Komposisi validator set (permissioned vs permissionless), jumlah validator, geografis, entity — tidak dipublikasikan.
+- Alternatif bridge trust-minimized (light client, ZK, IBC) di roadmap — tidak diumumkan.
+- Status audit keamanan formal untuk HyperBFT, CLOB engine, bridge contracts — tidak ditemukan laporan publik.
+- Detail tokenomics HYPE (alokasi, vesting, emission, fee switch) — whitepaper belum terbit.
+- Hubungan hukum Hyperliquid Labs (BVI) dan Hyperliquid Foundation (governance) — belum diverifikasi dokumen incorporasi foundation.
+- Rincian HyperEVM precompile untuk akses CLOB — spec teknis belum terdokumentasi lengkap.
+- Program hackathon / developer onboarding resmi selain Ecosystem Fund — tidak diumumkan.
+- Dukungan IBC / cross-chain messaging generik di luar native bridge — tidak disebut di docs.
+- Metrik desentralisasi staking (validator count, nakamoto coefficient, stake distribution) — tidak tersedia dashboard.
+- Rencana geo-blocking / compliance jurisdictional untuk perp DEX — tidak diumumkan.
+- Status oracle untuk funding rate / mark price perp (apakah murni on-chain CLOB atau butuh index price eksternal) — tidak terdokumentasi teknis detail.
+- Alokasi Ecosystem Fund dalam HYPE vs stablecoin vs equity — tidak diungkap.
+- Timeline HyperEVM mainnet launch dan audit pre-launch — tidak diumumkan.

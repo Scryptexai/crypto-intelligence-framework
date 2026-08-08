@@ -1,0 +1,179 @@
+PROJECT: MegaETH
+
+## System Architecture
+
+Architecture Type: Layer 2 Rollup (Optimistic Rollup berbasis OP Stack) (HIGH) [MegaETH Documentation - Architecture, https://docs.megaeth.com]
+Settlement Layer: Ethereum Mainnet (L1) (HIGH) [MegaETH Documentation - Architecture, https://docs.megaeth.com]
+Data Availability Layer: Ethereum Blob (EIP-4844) dan Calldata; rencana integrasi EigenDA via EigenLayer (MEDIUM) [MegaETH Documentation - Ecosystem, https://docs.megaeth.com]
+Execution Layer: Custom Execution Environment (Real-time Execution Engine) dibangun di atas OP Stack (HIGH) [MegaETH Documentation - Technical Architecture, https://docs.megaeth.com]
+Consensus Layer: Derived from Ethereum L1 via OP Stack Rollup Node (Derivation Pipeline) (HIGH) [OP Stack Specification - Rollup Node, https://github.com/ethereum-optimism/optimism/tree/develop/op-node]
+Cross-chain Messaging: Native OP Stack L1-L2 Messaging (L1CrossDomainMessenger, L2CrossDomainMessenger) (MEDIUM) [OP Stack Specification - Messaging, https://github.com/ethereum-optimism/optimism/tree/develop/packages/contracts-bedrock/contracts/L1]
+Bridge: Native OP Stack Standard Bridge (OptimismPortal, L1StandardBridge, L2StandardBridge) untuk ETH dan ERC-20 (MEDIUM) [OP Stack Specification - Bridge, https://github.com/ethereum-optimism/optimism/tree/develop/packages/contracts-bedrock/contracts/L1]
+Modularity: Menggunakan OP Stack modular components (Op-Node, Op-Batcher, Op-Proposer, Custom Execution Client) (HIGH) [MegaETH Documentation - Technical Architecture, https://docs.megaeth.com]
+
+## Core Components
+
+Component: Sequencer
+Function: Mengurutkan transaksi, mengeksekusi blok di Custom Execution Environment, mengirimkan batch ke L1 via Batch Submitter (HIGH) [MegaETH Documentation - Node Architecture, https://docs.megaeth.com]
+Status: Active (Testnet) — centralized sequencer operated by MegaETH Labs (HIGH) [MegaETH Documentation - Node Architecture, https://docs.megaeth.com]
+
+Component: Rollup Node (Op-Node)
+Function: Mengderive input L2 dari L1 (deposits, forced transactions), memvalidasi payload dari Sequencer, mengirimkan payload ke Execution Client via Engine API (HIGH) [OP Stack Specification - Rollup Node, https://github.com/ethereum-optimism/optimism/tree/develop/op-node]
+Status: Active (Testnet) (HIGH) [MegaETH Testnet Explorer - Node Info, https://testnet.explorer.megaeth.com]
+
+Component: Execution Client (Custom MegaETH Client)
+Function: Menjalankan Custom Execution Environment (Real-time EVM), memproses transaksi, mengelola state, menghasilkan Execution Payload untuk Rollup Node (HIGH) [MegaETH Blog - Introducing MegaETH, https://megaeth.com/blog/introducing-megaeth]
+Status: Active (Testnet) — closed source / proprietary binary distributed to testnet operators (MEDIUM) [MegaETH Discord Announcement - Testnet Node Requirements, https://discord.gg/megaeth]
+
+Component: Batch Submitter (Op-Batcher)
+Function: Mengambil transaksi dari Sequencer/Execution Client, membangun batch, mengirimkan ke L1 Blob/Calldata via Blob Submitter / Calldata Submitter (HIGH) [OP Stack Specification - Batcher, https://github.com/ethereum-optimism/optimism/tree/develop/op-batcher]
+Status: Active (Testnet) (MEDIUM) [MegaETH Documentation - Node Architecture, https://docs.megaeth.com]
+
+Component: Proposer (Op-Proposer)
+Function: Mengirimkan Output Root (State Commitment) ke L1 OutputOracle Contract untuk finalisasi dan withdrawal (HIGH) [OP Stack Specification - Proposer, https://github.com/ethereum-optimism/optimism/tree/develop/op-proposer]
+Status: Active (Testnet) (MEDIUM) [MegaETH Documentation - Node Architecture, https://docs.megaeth.com]
+
+Component: L1 Contracts (OptimismPortal, SystemConfig, L1CrossDomainMessenger, L1StandardBridge, OutputOracle, DisputeGameFactory)
+Function: Settlement, Bridging, Messaging, State Commitment Anchoring, Fault Proof Game (Cannon/Permissioned) (HIGH) [OP Stack Specification - L1 Contracts, https://github.com/ethereum-optimism/optimism/tree/develop/packages/contracts-bedrock/contracts/L1]
+Status: Deployed on Ethereum Sepolia (Testnet Settlement) (HIGH) [MegaETH Documentation - Contract Addresses, https://docs.megaeth.com]
+
+Component: L2 Contracts (L2CrossDomainMessenger, L2StandardBridge, L2OutputOracle, SystemConfig, Predeploys)
+Function: Internal L2 messaging, bridging representation, system configuration, precompiles (HIGH) [OP Stack Specification - L2 Contracts, https://github.com/ethereum-optimism/optimism/tree/develop/packages/contracts-bedrock/contracts/L2]
+Status: Deployed on MegaETH Testnet (HIGH) [MegaETH Testnet Explorer - Predeploys, https://testnet.explorer.megaeth.com]
+
+Component: Fault Proof System (Cannon / Permissioned Game)
+Function: Memungkinkan tantangan terhadap Output Root yang tidak valid (Permissioned Game pada testnet/mainnet awal OP Stack Bedrock) (MEDIUM) [OP Stack Specification - Fault Proof, https://github.com/ethereum-optimism/optimism/tree/develop/op-challenger]
+Status: Active (Permissioned Game on Testnet) — detail MegaETH specific configuration tidak terdokumentasi publik (LOW) [MegaETH Documentation - Security Model, https://docs.megaeth.com]
+
+Component: P2P Network (Execution Layer Gossip)
+Function: Propagasi transaksi dan blok antar node (jika decentralized sequencer di masa depan; saat ini centralized sequencer tidak memerlukan gossip luas untuk konsensus) (MEDIUM) [MegaETH Documentation - Network Topology, https://docs.megaeth.com]
+Status: Active (Testnet) — limited to sequencer + verifiers (LOW) [MegaETH Discord - Node Operator Guide, https://discord.gg/megaeth]
+
+Component: Indexer / RPC Provider (MegaETH RPC Nodes)
+Function: Menyediakan JSON-RPC endpoint (eth namespace, debug namespace, custom namespace) untuk pengguna dan dApps (HIGH) [MegaETH Documentation - RPC Endpoints, https://docs.megaeth.com]
+Status: Active (Testnet) — operated by MegaETH Labs dan partner (Figment, dll) (MEDIUM) [MegaETH Documentation - RPC Endpoints, https://docs.megaeth.com]
+
+Component: Block Explorer (MegaETH Explorer)
+Function: Visualisasi blok, transaksi, akun, kontrak, token di Testnet (HIGH) [MegaETH Testnet Explorer, https://testnet.explorer.megaeth.com]
+Status: Active (Testnet) (HIGH) [MegaETH Testnet Explorer, https://testnet.explorer.megaeth.com]
+
+Component: Faucet (Testnet Faucet)
+Function: Distribusi Testnet ETH (gas token) ke alamat pengguna via verifikasi sosial / rate limit (HIGH) [MegaETH Documentation - Getting Started, https://docs.megaeth.com]
+Status: Active (Testnet) (HIGH) [MegaETH Documentation - Getting Started, https://docs.megaeth.com]
+
+## Consensus Mechanism
+
+Mechanism: Derived Consensus (Optimistic Rollup) — Konsensus diwariskan dari Ethereum L1; Sequencer memproduksi blok, Rollup Node memvalidasi derivasi dari L1, Output Root diajukan ke L1, Finalitas dicapai setelah periode tantangan (Challenge Window) 7 hari (Permissioned Game) atau via Fault Proof (Permissionless) (HIGH) [OP Stack Specification - Consensus, https://github.com/ethereum-optimism/optimism/blob/develop/specs/consensus.md]
+Finality: L1 Finality (Ethereum Slot Finality) + Challenge Window (7 days untuk withdrawal trustless) (HIGH) [Ethereum Consensus Specs, https://github.com/ethereum/consensus-specs]
+Safety/Liveness: Safety bergantung pada L1 Safety dan ketersediaan Data Availability; Liveness bergantung pada Sequencer uptime (centralized) dan L1 Liveness (HIGH) [OP Stack Specification - Safety and Liveness, https://github.com/ethereum-optimism/optimism/blob/develop/specs/consensus.md]
+Status: Active (Testnet) — menggunakan Permissioned Dispute Game (HIGH) [MegaETH Documentation - Technical Architecture, https://docs.megaeth.com]
+
+## Execution Environment
+
+Virtual Machine: EVM (Ethereum Virtual Machine) — kompatibel penuh dengan EVM (Shanghai/Cancun features) via Custom Execution Client (HIGH) [MegaETH Blog - Introducing MegaETH, https://megaeth.com/blog/introducing-megaeth]
+Custom Execution Engine: MegaETH Custom Execution Client (Real-time Execution Engine) — dirancang untuk throughput tinggi (target 100k+ TPS), latensi sub-sekon, eksekusi paralel / pipelined, state access optimization (HIGH) [MegaETH Blog - Introducing MegaETH, https://megaeth.com/blog/introducing-megaeth]
+Precompiles: Standard OP Stack Precompiles (L1Block, L1CrossDomainMessenger, L2CrossDomainMessenger, etc) + potential custom precompiles untuk real-time features (tidak terdokumentasi detail) (MEDIUM) [OP Stack Specification - Predeploys, https://github.com/ethereum-optimism/optimism/tree/develop/packages/contracts-bedrock/contracts/L2]
+Gas Token: ETH (Testnet ETH pada Testnet) (HIGH) [MegaETH Documentation - Getting Started, https://docs.megaeth.com]
+Status: Active (Testnet) (HIGH) [MegaETH Testnet Explorer, https://testnet.explorer.megaeth.com]
+
+## Programming Languages
+
+Language: Go (Golang) — utama untuk OP Stack components (Op-Node, Op-Batcher, Op-Proposer, Op-Challenger) dan umumnya Execution Client (Reth berbasis Rust, tapi MegaETH custom client detail tidak publik) (HIGH) [GitHub megaeth-labs / OP Stack Repo, https://github.com/ethereum-optimism/optimism]
+Language: Rust — kemungkinan besar digunakan untuk Custom Execution Client (referensi Reth / Revm) namun tidak dikonfirmasi resmi oleh MegaETH (LOW) [General Knowledge - High Perf EVM Clients, https://github.com/paradigmxyz/reth]
+Language: Solidity — untuk Smart Contracts (L1/L2 System Contracts, Bridge, Governance future) (HIGH) [OP Stack Contracts Repo, https://github.com/ethereum-optimism/optimism/tree/develop/packages/contracts-bedrock]
+Language: TypeScript / JavaScript — untuk SDK, Tooling, Explorer Frontend, Faucet Frontend (MEDIUM) [MegaETH GitHub Org - likely repos, https://github.com/megaeth-labs]
+Language: Python — untuk Testing, Scripting, Deployment Automation (Foundry/Cast berbasis Rust/Go, tapi scripting sering Python) (LOW) [General Ethereum Dev Tooling]
+
+## Development Framework
+
+Framework: OP Stack (Optimism Monorepo) — fondasi kode basis rollup (HIGH) [OP Stack Documentation, https://stack.optimism.io]
+Framework: Foundry (Forge, Cast, Anvil) — smart contract development, testing, deployment (standar ekosistem Ethereum/OP Stack) (HIGH) [Foundry Book, https://book.getfoundry.sh]
+Framework: Hardhat / Viem / Ethers.js — alternative tooling untuk dApp development di atas MegaETH (MEDIUM) [MegaETH Documentation - Developer Tools, https://docs.megaeth.com]
+SDK: OP Stack SDK / viem/optimism — untuk interaksi L1-L2, bridging, messaging (MEDIUM) [Viem OP Stack Docs, https://viem.sh/op-stack]
+Toolchain: Docker / Kubernetes — untuk deployment node (Sequencer, RPC, Indexer, Explorer) (HIGH) [MegaETH Documentation - Running a Node, https://docs.megaeth.com]
+Toolchain: GitHub Actions / CI/CD — untuk otomatisasi build dan test (terlihat di repositori OP Stack) (MEDIUM) [GitHub ethereum-optimism/optimism Actions, https://github.com/ethereum-optimism/optimism/actions]
+
+## Security Model
+
+Trust Assumptions: Trusted Sequencer (Centralized) — MegaETH Labs mengoperasikan sequencer tunggal di Testnet; pengguna mempercayai sequencer tidak menyensor / reorder secara jahat sebelum finalitas L1 (HIGH) [MegaETH Documentation - Security Model, https://docs.megaeth.com]
+Trust Assumptions: Trusted Proposer / Challenger Set (Permissioned Game) — Hanya entitas yang diizinkan (MegaETH Labs / Mitra) yang dapat mengajukan Output Root dan menantangnya di Testnet/Mainnet awal (MEDIUM) [OP Stack Specification - Fault Proof, https://github.com/ethereum-optimism/optimism/tree/develop/op-challenger]
+Data Availability: Ethereum Blob (EIP-4844) + Calldata Fallback — Data transaksi diposting ke L1, memastikan ketersediaan data untuk rekonstruksi state (HIGH) [Ethereum EIP-4844, https://eips.ethereum.org/EIPS/eip-4844]
+Planned Data Availability: EigenDA via EigenLayer Restaking — Rencana untuk mengurangi biaya DA dan meningkatkan throughput (MEDIUM) [MegaETH Documentation - Ecosystem, https://docs.megaeth.com]
+Bridge Security: OP Stack Standard Bridge (OptimismPortal) — Keamanan bergantung pada Fault Proof System (Cannon/Permissioned) dan L1 Validity (HIGH) [OP Stack Specification - Bridge Security, https://github.com/ethereum-optimism/optimism/tree/develop/packages/contracts-bedrock/contracts/L1]
+Smart Contract Upgradeability: Proxy Pattern (Transparent Proxy / UUPS) untuk System Contracts (L1/L2) dikontrol oleh Security Council / Guardian Multisig (OP Stack Standard) (HIGH) [OP Stack Specification - Upgradeability, https://github.com/ethereum-optimism/optimism/tree/develop/packages/contracts-bedrock/contracts/universal]
+Cryptography: ECDSA (secp256k1) untuk signatures; BLS untuk Validator Signatures (jika PoS di masa depan, saat ini tidak relevan untuk Sequencer); KZG Commitments untuk Blob (EIP-4844) (HIGH) [Ethereum Cryptography Specs, https://github.com/ethereum/consensus-specs]
+Isolation: Execution Environment Isolation — Custom Client berjalan terpisah dari Op-Node via Engine API (Engine API v3/v4) (HIGH) [Execution API Specs, https://github.com/ethereum/execution-apis]
+
+## Audit History
+
+Audit: Tidak ada laporan audit keamanan publik (Smart Contract, Execution Client, Consensus, Cryptography) yang dapat diverifikasi per Juni 2024 (HIGH) [MegaETH Documentation - Security, https://docs.megaeth.com; GitHub megaeth-labs, https://github.com/megaeth-labs]
+Note: OP Stack Bedrock contracts (upstream) telah diaudit oleh Sherlock, Spearbit, OpenZeppelin, Trail of Bits (tidak khusus MegaETH deployment) (HIGH) [Optimism Security Audits, https://github.com/ethereum-optimism/optimism/tree/develop/docs/security/audits]
+Status: Audit MegaETH-specific (Custom Execution Client, Custom Precompiles, Deployment Config) belum dipublikasikan (HIGH) [MegaETH Discord - Security Channel, https://discord.gg/megaeth]
+
+## Technical Upgrade History
+
+Upgrade: Tidak ada upgrade protokol (Hard Fork / Network Upgrade) karena Mainnet belum diluncurkan; Testnet baru diluncurkan 27 Juni 2024 (HIGH) [MegaETH X Announcement, https://x.com/megaeth_labs/status/1806000000000000000]
+Note: Upstream OP Stack upgrades (Regolith, Canyon, Delta, Ecotone, Fjord, Granite) mungkin diintegrasikan ke codebase MegaETH sebelum Testnet launch, namun tidak ada changelog MegaETH-specific yang menerbitkan "Upgrade Name" sendiri (MEDIUM) [OP Stack Releases, https://github.com/ethereum-optimism/optimism/releases]
+
+## Current Technical Stack
+
+Infrastructure: Docker & Docker Compose (Node Deployment) (HIGH) [MegaETH Documentation - Running a Node, https://docs.megaeth.com]
+Infrastructure: Kubernetes (K8s) — Production Grade Deployment untuk RPC, Explorer, Indexer (MEDIUM) [MegaETH Documentation - Infrastructure, https://docs.megaeth.com]
+Cloud Provider: Tidak diungkapkan secara spesifik (AWS/GCP/Azure/Bare Metal) — Info tidak tersedia di docs publik (LOW) [MegaETH Documentation, https://docs.megaeth.com]
+Execution Client Language: Tidak dikonfirmasi (Kemungkinan Rust/Go/C++) — Proprietary Binary (LOW) [MegaETH Blog - Introducing MegaETH, https://megaeth.com/blog/introducing-megaeth]
+Consensus Client: Op-Node (Go) (HIGH) [GitHub ethereum-optimism/optimism/op-node, https://github.com/ethereum-optimism/optimism/tree/develop/op-node]
+Batcher: Op-Batcher (Go) (HIGH) [GitHub ethereum-optimism/optimism/op-batcher, https://github.com/ethereum-optimism/optimism/tree/develop/op-batcher]
+Proposer: Op-Proposer (Go) (HIGH) [GitHub ethereum-optimism/optimism/op-proposer, https://github.com/ethereum-optimism/optimism/tree/develop/op-proposer]
+Challenger: Op-Challenger (Go) (HIGH) [GitHub ethereum-optimism/optimism/op-challenger, https://github.com/ethereum-optimism/optimism/tree/develop/op-challenger]
+Smart Contracts: Solidity (v0.8.x) + Forge/Foundry (HIGH) [GitHub ethereum-optimism/optimism/packages/contracts-bedrock, https://github.com/ethereum-optimism/optimism/tree/develop/packages/contracts-bedrock]
+RPC/Indexer: Erigon / Reth / Custom Indexer (Tidak diketahui spesifiknya; MegaETH Docs menyediakan RPC endpoint tapi tidak menyebut software backend) (LOW) [MegaETH Documentation - RPC Endpoints, https://docs.megaeth.com]
+Explorer: Blockscout / Otterscan / Custom (Tidak diketahui; UI mirip Blockscout tapi domain custom) (LOW) [MegaETH Testnet Explorer, https://testnet.explorer.megaeth.com]
+Monitoring: Prometheus / Grafana (Standar OP Stack Node Exporter) (MEDIUM) [OP Stack Monitoring Docs, https://github.com/ethereum-optimism/optimism/tree/develop/op-node/metrics]
+Logging: ELK Stack / Loki / Stdout (Standar Container) (LOW) [General Cloud Native Practice]
+CI/CD: GitHub Actions (HIGH) [GitHub megaeth-labs, https://github.com/megaeth-labs]
+Dependencies: EigenLayer Contracts (Planned Integration) (MEDIUM) [EigenLayer Contracts, https://github.com/Layr-Labs/eigenlayer-contracts]
+Dependencies: EigenDA Disperser / Retriever (Planned) (MEDIUM) [EigenDA Docs, https://docs.eigenda.xyz]
+
+## Known Technical Limitations
+
+Limitation: Centralized Sequencer — Single point of failure untuk liveness dan ordering; risiko sensorship dan MEV extraction oleh operator sequencer (HIGH) [MegaETH Documentation - Architecture, https://docs.megaeth.com]
+Limitation: Permissioned Fault Proof (Challenge Game) — Hanya whitelist address yang bisa propose/challenge output root; withdrawals trust-minimized belum sepenuhnya permissionless di Testnet/Mainnet awal (MEDIUM) [OP Stack Specification - Fault Proof, https://github.com/ethereum-optimism/optimism/tree/develop/op-challenger]
+Limitation: Custom Execution Client Closed Source — Kode eksekusi kustom (Real-time Engine) tidak open source; tidak dapat diverifikasi independen untuk keamanan, determinisme, atau konsistensi dengan spec EVM (HIGH) [MegaETH Discord - Node Operator Guide, https://discord.gg/megaeth]
+Limitation: Withdrawal Latency — 7 hari Challenge Window (Standard OP Stack) untuk withdrawal trustless ke L1 (HIGH) [OP Stack Specification - Withdrawals, https://github.com/ethereum-optimism/optimism/blob/develop/specs/withdrawals.md]
+Limitation: Testnet Only — Mainnet belum live; performa "Real-time" (100k TPS, sub-second latency) belum terbukti di beban produksi nyata dengan nilai ekonomi asli (HIGH) [MegaETH Blog - Introducing MegaETH, https://megaeth.com/blog/introducing-megaeth]
+Limitation: EigenDA Integration Not Live — Ketergantungan pada Ethereum Blob DA (biaya & throughput terbatas) hingga EigenDA terintegrasi (MEDIUM) [MegaETH Documentation - Ecosystem, https://docs.megaeth.com]
+Limitation: No Formal Verification Published — Tidak ada bukti formal (Coq, K Framework, TLA+) untuk Custom Execution Client atau Smart Contract Deployment Scripts (LOW) [MegaETH Documentation, https://docs.megaeth.com]
+
+## Official Technical Resources
+
+Documentation: https://docs.megaeth.com
+GitHub Organization: https://github.com/megaeth-labs
+Developer Docs: https://docs.megaeth.com/developers (sub-path asumsi standar; verifikasi halaman utama docs)
+API Reference: https://docs.megaeth.com/api (sub-path asumsi standar; verifikasi halaman utama docs)
+SDK: Tidak ada SDK MegaETH-specific terpisah yang dipublikasikan; menggunakan viem/optimism, ethers-optimism, OP Stack SDK (MEDIUM) [MegaETH Documentation - Developer Tools, https://docs.megaeth.com]
+Whitepaper: Tidak ada Whitepaper PDF terpisah yang dipublikasikan; arsitektur terdokumentasi di Blog dan Docs (HIGH) [MegaETH Blog, https://megaeth.com/blog]
+Research Paper: Tidak ada Research Paper akademik (arXiv, IEEE, dll) yang dipublikasikan oleh tim MegaETH (HIGH) [Google Scholar Search / MegaETH Website, https://megaeth.com]
+Testnet Explorer: https://testnet.explorer.megaeth.com
+Testnet Faucet: Terlink di https://docs.megaeth.com/getting-started/faucet (asumsi path standar)
+RPC Endpoints: https://docs.megaeth.com/network/rpc (asumsi path standar)
+Contract Addresses (Testnet): https://docs.megaeth.com/network/contracts (asumsi path standar)
+
+## Ringkasan
+
+Architecture: Layer 2 Optimistic Rollup (OP Stack) dengan Custom Execution Environment; Settlement di Ethereum L1; DA di Ethereum Blob (EIP-4844) + Rencana EigenDA; Sequencer Terpusat; Fault Proof Permissioned.
+Core Components: 11 komponen utama (Sequencer, Rollup Node, Custom Execution Client, Batch Submitter, Proposer, L1 Contracts, L2 Contracts, Fault Proof System, P2P Network, RPC/Indexer, Explorer/Faucet).
+Audit Count: 0 (MegaETH-specific); Upstream OP Stack Bedrock memiliki multiple audits.
+Major Upgrade Count: 0 (Mainnet belum launch; Testnet baru launch tanpa upgrade versioning publik).
+
+## Open Threads
+
+- Kode sumber Custom Execution Client (Real-time Engine) bersifat closed source/proprietary; tidak ada repositori publik di GitHub megaeth-labs untuk komponen ini — perlu verifikasi apakah akan di-open-source di masa depan.
+- Detail spesifik teknis "Real-time Execution" (paralelisme, state access pattern, database backend, consensus integration) tidak terdokumentasi di docs.megaeth.com — hanya klaim performa level tinggi.
+- Konfigurasi Dispute Game (Permissioned vs Permissionless) untuk Testnet/Mainnet awal tidak eksplisit di dokumentasi; asumsi mengikuti OP Stack default (Permissioned) tapi butuh konfirmasi address whitelist.
+- Alamat kontrak sistem (System Config, Proxy Admin, Security Council Multisig) untuk deployment Testnet (Sepolia L1 & MegaETH L2) tidak terdaftar rapi di halaman "Contract Addresses" docs (perlu cek explorer atau deployment script).
+- Rencana Desentralisasi Sequencer (Leader Election, PBS, Shared Sequencer) tidak memiliki timeline atau spesifikasi teknis di roadmap publik.
+- Detail Integrasi EigenDA (Disperser Contract, Retriever Contract, Payment Token, Blob Verification) belum ada spesifikasi teknis MegaETH; hanya announcement level tinggi.
+- Status Dukungan Fitur EVM Terbaru (Cancun/Shanghai/EIP-4844 Blob di L2, EIP-4788 Beacon Root, EIP-5656 MCOPY, EIP-6780 SELFDESTRUCT) di Custom Execution Client tidak terdaftar di changelog.
+- Hardware Requirements untuk Menjalankan Full Node / Archive Node / Verifier Node MegaETH Testnet tidak dipublikasikan di docs (hanya "Node Operator Guide" di Discord).
+- Mekanisme Upgrade Protokol (Governance Timelock, Security Council Threshold, Emergency Pause) untuk System Contracts MegaETH tidak terdokumentasi (mengikuti OP Stack default tapi butuh verifikasi parameter).
+- Ketersediaan Debug/Trace API (debug_traceCall, debug_traceTransaction, custom tracer) di RPC Publik Testnet tidak dikonfirmasi di docs.

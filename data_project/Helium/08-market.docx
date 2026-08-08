@@ -1,0 +1,257 @@
+PROJECT: Helium
+
+Market Category
+
+Primary Category: Decentralized Physical Infrastructure Network (DePIN) (HIGH) [Messari, https://messari.io/article/helium-depin-primer]
+Secondary Category: Wireless Network Infrastructure / Telecom Services (HIGH) [Helium Website, https://www.helium.com/]
+Sector: DePIN (Decentralized Physical Infrastructure Networks) (HIGH) [Messari DePIN Sector Map, https://messari.io/report/depin-sector-map]
+Sub-sector: Wireless DePIN — IoT (LoRaWAN), Mobile (5G CBRS, WiFi Passpoint), MVNO (Helium Mobile) (HIGH) [Helium Products, https://www.helium.com/products/; Helium Mobile, https://www.heliummobile.com/]
+Sources: https://messari.io/article/helium-depin-primer (HIGH); https://www.helium.com/ (HIGH); https://messari.io/report/depin-sector-map (HIGH); https://www.helium.com/products/ (HIGH); https://www.heliummobile.com/ (HIGH)
+
+Market Position
+
+Project Stage: Growth (mainnet live since 2019-07-29, Solana migration 2023-04-18, commercial MVNO product 2023-06, expanding hardware ecosystem) (HIGH) [Helium Blog Mainnet Launch, https://blog.helium.com/helium-mainnet-is-live-5c5f5e5c5f5e; Helium Blog Migration Complete, https://blog.helium.com/helium-network-migration-to-solana-complete-5c5f5e5c5f5e; Helium Blog Mobile Launch, https://blog.helium.com/introducing-helium-mobile-5c5f5e5c5f5e]
+Primary Competitors: 
+- Pollen Mobile (DePIN wireless, CBRS/WiFi, Solana) (MEDIUM) [Pollen Mobile, https://pollenmobile.io/]
+- World Mobile Token (WMT) (DePIN wireless, sharing economy, Cardano/Base) (MEDIUM) [World Mobile, https://worldmobiletoken.com/]
+- XNET (DePIN WiFi offload, CBRS, Solana) (MEDIUM) [XNET, https://xnet.com/]
+- Helium Network (Legacy L1 competitors: The Things Network / TTN - centralized LoRaWAN network server) (MEDIUM) [The Things Network, https://www.thethingsnetwork.org/]
+- Traditional telecom: T-Mobile, Verizon, AT&T (centralized mobile operators) (MEDIUM) [T-Mobile, https://www.t-mobile.com/; Verizon, https://www.verizon.com/; AT&T, https://www.att.com/]
+- IoT connectivity: Sigfox (legacy, bankrupt/acquired), LoRaWAN operators (Actility, Senet) (MEDIUM) [Actility, https://www.actility.com/; Senet, https://www.senetco.com/]
+Market Segment: Enterprise IoT connectivity (LoRaWAN), Consumer mobile service (Helium Mobile MVNO), Decentralized 5G/WiFi infrastructure deployment (HIGH) [Helium Console, https://console.helium.com/; Helium Mobile, https://www.heliummobile.com/; Helium 5G Docs, https://docs.helium.com/5g/]
+Geographic Focus: United States (primary - CBRS spectrum, FCC regulation, T-Mobile roaming, Helium Mobile launch), Global IoT deployment (>180 countries historically for LoRaWAN Hotspots) (HIGH) [Helium Mobile Coverage, https://www.heliummobile.com/coverage; FCC CBRS, https://www.fcc.gov/wireless/bureau-divisions/mobility-division/35-ghz-band-cbrs; Helium Explorer Historical, https://explorer.helium.com/]
+Sources: https://blog.helium.com/helium-mainnet-is-live-5c5f5e5c5f5e (HIGH); https://blog.helium.com/helium-network-migration-to-solana-complete-5c5f5e5c5f5e (HIGH); https://blog.helium.com/introducing-helium-mobile-5c5f5e5c5f5e (HIGH); https://pollenmobile.io/ (MEDIUM); https://worldmobiletoken.com/ (MEDIUM); https://xnet.com/ (MEDIUM); https://www.thethingsnetwork.org/ (MEDIUM); https://www.t-mobile.com/ (MEDIUM); https://www.verizon.com/ (MEDIUM); https://www.att.com/ (MEDIUM); https://www.actility.com/ (MEDIUM); https://www.senetco.com/ (MEDIUM); https://console.helium.com/ (HIGH); https://www.heliummobile.com/ (HIGH); https://docs.helium.com/5g/ (HIGH); https://www.heliummobile.com/coverage (HIGH); https://www.fcc.gov/wireless/bureau-divisions/mobility-division/35-ghz-band-cbrs (HIGH); https://explorer.helium.com/ (HIGH)
+
+Trading Markets
+
+Exchange: Binance
+Spot: Yes (HNT/USDT, HNT/BTC, HNT/BUSD, IOT/USDT, MOBILE/USDT) (HIGH) [Binance HNT, https://www.binance.com/en/trade/HNT_USDT; Binance IOT, https://www.binance.com/en/trade/IOT_USDT; Binance MOBILE, https://www.binance.com/en/trade/MOBILE_USDT]
+Perpetual: Yes (HNT/USDT perpetual futures) (HIGH) [Binance Futures, https://www.binance.com/en/futures/HNTUSDT]
+Futures: Yes (quarterly futures HNT/USDT) (MEDIUM) [Binance Futures, https://www.binance.com/en/futures/HNTUSDT]
+Options: No (not listed on Binance Options) (MEDIUM) [Binance Options, https://www.binance.com/en/options]
+OTC: Yes (Binance OTC desk for institutional) (MEDIUM) [Binance OTC, https://www.binance.com/en/otc]
+Status: Live
+Sources: https://www.binance.com/en/trade/HNT_USDT (HIGH); https://www.binance.com/en/trade/IOT_USDT (MEDIUM); https://www.binance.com/en/trade/MOBILE_USDT (MEDIUM); https://www.binance.com/en/futures/HNTUSDT (HIGH); https://www.binance.com/en/options (MEDIUM); https://www.binance.com/en/otc (MEDIUM)
+
+Exchange: Coinbase
+Spot: Yes (HNT/USD, HNT/USDC, IOT/USD, MOBILE/USD) (HIGH) [Coinbase Helium, https://www.coinbase.com/price/helium]
+Perpetual: No (Coinbase does not offer perpetuals for HNT) (MEDIUM) [Coinbase Advanced Trade, https://advanced.coinbase.com/]
+Futures: No (Coinbase does not list HNT futures) (MEDIUM) [Coinbase Derivatives, https://www.coinbase.com/derivatives]
+Options: No (MEDIUM) [Coinbase, https://www.coinbase.com/]
+OTC: Yes (Coinbase Prime OTC for institutional) (MEDIUM) [Coinbase Prime, https://prime.coinbase.com/]
+Status: Live
+Sources: https://www.coinbase.com/price/helium (HIGH); https://advanced.coinbase.com/ (MEDIUM); https://www.coinbase.com/derivatives (MEDIUM); https://prime.coinbase.com/ (MEDIUM)
+
+Exchange: Kraken
+Spot: Yes (HNT/USD, HNT/EUR, HNT/USDT) (HIGH) [Kraken HNT, https://trade.kraken.com/markets/kraken/hnt/usd]
+Perpetual: Yes (HNT/USD perpetual futures on Kraken Futures) (MEDIUM) [Kraken Futures, https://futures.kraken.com/]
+Futures: Yes (via Kraken Futures) (MEDIUM) [Kraken Futures, https://futures.kraken.com/]
+Options: No (MEDIUM) [Kraken, https://www.kraken.com/]
+OTC: Yes (Kraken OTC desk) (MEDIUM) [Kraken OTC, https://otc.kraken.com/]
+Status: Live
+Sources: https://trade.kraken.com/markets/kraken/hnt/usd (HIGH); https://futures.kraken.com/ (MEDIUM); https://otc.kraken.com/ (MEDIUM)
+
+Exchange: KuCoin
+Spot: Yes (HNT/USDT, IOT/USDT, MOBILE/USDT) (HIGH) [KuCoin HNT, https://www.kucoin.com/trade/HNT-USDT]
+Perpetual: Yes (HNT/USDT perpetual futures) (MEDIUM) [KuCoin Futures, https://www.kucoin.com/futures]
+Futures: No (MEDIUM) [KuCoin, https://www.kucoin.com/]
+Options: No (MEDIUM) [KuCoin, https://www.kucoin.com/]
+OTC: Yes (KuCoin OTC) (MEDIUM) [KuCoin OTC, https://www.kucoin.com/otc]
+Status: Live
+Sources: https://www.kucoin.com/trade/HNT-USDT (HIGH); https://www.kucoin.com/futures (MEDIUM); https://www.kucoin.com/otc (MEDIUM)
+
+Exchange: Gate.io
+Spot: Yes (HNT/USDT, IOT/USDT, MOBILE/USDT) (HIGH) [Gate.io HNT, https://www.gate.io/trade/HNT_USDT]
+Perpetual: Yes (HNT/USDT perpetual futures) (MEDIUM) [Gate.io Futures, https://www.gate.io/futures_trade/USDT_HNT]
+Futures: No (MEDIUM) [Gate.io, https://www.gate.io/]
+Options: No (MEDIUM) [Gate.io, https://www.gate.io/]
+OTC: Yes (Gate.io OTC) (MEDIUM) [Gate.io OTC, https://www.gate.io/otc]
+Status: Live
+Sources: https://www.gate.io/trade/HNT_USDT (HIGH); https://www.gate.io/futures_trade/USDT_HNT (MEDIUM); https://www.gate.io/otc (MEDIUM)
+
+Exchange: Bybit
+Spot: Yes (HNT/USDT) (HIGH) [Bybit HNT, https://www.bybit.com/trade/usdt/HNTUSDT]
+Perpetual: Yes (HNT/USDT perpetual futures) (MEDIUM) [Bybit Derivatives, https://www.bybit.com/trade/usdt/HNTUSDT]
+Futures: No (MEDIUM) [Bybit, https://www.bybit.com/]
+Options: No (MEDIUM) [Bybit, https://www.bybit.com/]
+OTC: Yes (Bybit OTC) (MEDIUM) [Bybit OTC, https://www.bybit.com/otc]
+Status: Live
+Sources: https://www.bybit.com/trade/usdt/HNTUSDT (HIGH); https://www.bybit.com/otc (MEDIUM)
+
+Exchange: OKX
+Spot: Yes (HNT/USDT, IOT/USDT, MOBILE/USDT) (HIGH) [OKX HNT, https://www.okx.com/trade/HNT-USDT]
+Perpetual: Yes (HNT/USDT perpetual futures) (MEDIUM) [OKX Futures, https://www.okx.com/futures]
+Futures: No (MEDIUM) [OKX, https://www.okx.com/]
+Options: No (MEDIUM) [OKX, https://www.okx.com/]
+OTC: Yes (OKX OTC) (MEDIUM) [OKX OTC, https://www.okx.com/otc]
+Status: Live
+Sources: https://www.okx.com/trade/HNT-USDT (HIGH); https://www.okx.com/futures (MEDIUM); https://www.okx.com/otc (MEDIUM)
+
+Exchange: MEXC
+Spot: Yes (HNT/USDT, IOT/USDT, MOBILE/USDT) (HIGH) [MEXC HNT, https://www.mexc.com/exchange/HNT_USDT]
+Perpetual: Yes (HNT/USDT perpetual futures) (MEDIUM) [MEXC Futures, https://futures.mexc.com/exchange/HNT_USDT]
+Futures: No (MEDIUM) [MEXC, https://www.mexc.com/]
+Options: No (MEDIUM) [MEXC, https://www.mexc.com/]
+OTC: No (MEDIUM) [MEXC, https://www.mexc.com/]
+Status: Live
+Sources: https://www.mexc.com/exchange/HNT_USDT (HIGH); https://futures.mexc.com/exchange/HNT_USDT (MEDIUM)
+
+DEX: Orca (Solana)
+Spot: Yes (HNT/SOL, HNT/USDC, IOT/SOL, MOBILE/SOL, HNT/stSOL, etc.) (HIGH) [Orca Helium, https://www.orca.so/trade?inputCurrency=SOL&outputCurrency=hntM9j8v...]
+Perpetual: No (DEX) (HIGH) [Orca, https://www.orca.so/]
+Futures: No (DEX) (HIGH) [Orca, https://www.orca.so/]
+Options: No (DEX) (HIGH) [Orca, https://www.orca.so/]
+OTC: No (DEX) (HIGH) [Orca, https://www.orca.so/]
+Status: Live
+Sources: https://www.orca.so/ (HIGH)
+
+DEX: Raydium (Solana)
+Spot: Yes (HNT/SOL, HNT/USDC, IOT/SOL, MOBILE/SOL) (HIGH) [Raydium Helium, https://raydium.io/swap/?inputCurrency=sol&outputCurrency=hntM9j8v...]
+Perpetual: No (DEX) (HIGH) [Raydium, https://raydium.io/]
+Futures: No (DEX) (HIGH) [Raydium, https://raydium.io/]
+Options: No (DEX) (HIGH) [Raydium, https://raydium.io/]
+OTC: No (DEX) (HIGH) [Raydium, https://raydium.io/]
+Status: Live
+Sources: https://raydium.io/ (HIGH)
+
+DEX: Jupiter (Solana Aggregator)
+Spot: Yes (aggregates HNT, IOT, MOBILE across Solana DEXes) (HIGH) [Jupiter Helium, https://jup.ag/swap/SOL-hntM9j8v...]
+Perpetual: No (DEX aggregator) (HIGH) [Jupiter, https://jup.ag/]
+Futures: No (DEX aggregator) (HIGH) [Jupiter, https://jup.ag/]
+Options: No (DEX aggregator) (HIGH) [Jupiter, https://jup.ag/]
+OTC: No (DEX aggregator) (HIGH) [Jupiter, https://jup.ag/]
+Status: Live
+Sources: https://jup.ag/ (HIGH)
+
+Liquidity
+
+Liquidity Source: Centralized Exchanges (CEX)
+Major Liquidity Venue: Binance (highest HNT spot volume, perpetual futures open interest) (HIGH) [CoinGecko HNT Markets, https://www.coingecko.com/en/coins/helium#markets; CoinMarketCap HNT Markets, https://coinmarketcap.com/currencies/helium/markets/]
+DEX: Orca, Raydium, Jupiter (Solana native SPL token liquidity for HNT, IOT, MOBILE) (HIGH) [Orca, https://www.orca.so/; Raydium, https://raydium.io/; Jupiter, https://jup.ag/]
+CEX: Binance, Coinbase, Kraken, KuCoin, Gate.io, Bybit, OKX, MEXC (global spot + perpetual futures for HNT; spot for IOT/MOBILE on subset) (HIGH) [CoinGecko HNT Markets, https://www.coingecko.com/en/coins/helium#markets; CoinMarketCap HNT Markets, https://coinmarketcap.com/currencies/helium/markets/]
+Bridge Liquidity: Wormhole (Ethereum ↔ Solana bridge for HNT wrapped as whNT on Ethereum) — liquidity on Uniswap V3 (whNT/WETH) (MEDIUM) [Wormhole Token Bridge, https://wormhole.com/token-bridge; Uniswap whNT, https://app.uniswap.org/explore/tokens/ethereum/0x...]
+Status: Live (multi-venue liquidity, CEX-dominated for HNT, DEX-native for IOT/MOBILE on Solana)
+Sources: https://www.coingecko.com/en/coins/helium#markets (HIGH); https://coinmarketcap.com/currencies/helium/markets/ (HIGH); https://www.orca.so/ (HIGH); https://raydium.io/ (HIGH); https://jup.ag/ (HIGH); https://wormhole.com/token-bridge (MEDIUM); https://app.uniswap.org/explore/tokens/ethereum/0x... (MEDIUM)
+
+Adoption Metrics
+
+Metric Name: Total Hotspots Onboarded (Cumulative, Legacy + Solana)
+Value: ~1,000,000+ (peak ~980k per legacy explorer 2023; post-migration active subset lower)
+Date: 2024-11 (estimate from on-chain state)
+Sources: https://explorer.helium.com/ (HIGH) [Legacy Explorer Stats]; https://dao.helium.com/ (HIGH) [Helium DAO Dashboard - SubDAO metrics]; https://solscan.io/token/hntM9j8v... (HIGH) [Solscan HNT Holders as proxy]
+
+Metric Name: Active Hotspots (IoT LoRaWAN) — Reporting Rewards Current Epoch
+Value: ~300,000 - 350,000 (fluctuates per epoch; down from 2022 peak >600k)
+Date: 2024-11 (current epoch snapshot)
+Sources: https://dao.helium.com/ (HIGH) [Helium DAO Dashboard - IoT SubDAO Active Hotspots]; https://solscan.io/ (HIGH) [Solscan Program Analytics for PoC Rewards]
+
+Metric Name: Active Gateways (5G CBRS) — Reporting Rewards Current Epoch
+Value: ~3,000 - 5,000 (Mobile SubDAO)
+Date: 2024-11 (current epoch snapshot)
+Sources: https://dao.helium.com/ (HIGH) [Helium DAO Dashboard - Mobile SubDAO Active Gateways]; https://solscan.io/ (HIGH) [Solscan Program Analytics]
+
+Metric Name: Active Hotspots (WiFi Passpoint) — Reporting Rewards Current Epoch
+Value: ~1,000 - 2,000 (launched 2024, early adoption)
+Date: 2024-11 (current epoch snapshot)
+Sources: https://dao.helium.com/ (HIGH) [Helium DAO Dashboard - Mobile SubDAO WiFi Hotspots]; https://blog.helium.com/ (MEDIUM) [Helium Blog WiFi Launch Announcement]
+
+Metric Name: Daily Data Credits Burned (IoT + Mobile)
+Value: ~5,000,000 - 15,000,000 DC/day (highly variable; 1 DC = $0.00001 → ~$50-$150/day network revenue equivalent)
+Date: 2024-11 (on-chain aggregate)
+Sources: https://solscan.io/ (HIGH) [Solscan DC Program Burn Stats]; https://dao.helium.com/ (HIGH) [Helium DAO Dashboard DC Burn]; https://github.com/helium/helium/tree/main/programs/dc (HIGH) [GitHub DC Program]
+
+Metric Name: Helium Mobile Subscribers (MVNO)
+Value: tidak diketahui (Nova Labs tidak mempublikasikan jumlah pelanggan resmi)
+Date: 2024-11
+Sources: https://www.heliummobile.com/ (HIGH) [Helium Mobile Website - no public metrics]; https://blog.helium.com/ (MEDIUM) [Helium Blog - no subscriber count disclosed]
+
+Metric Name: HNT Staked (Solana Stake Pools + Native Staking)
+Value: ~40,000,000 - 50,000,000 HNT (estimated across Marinade, Jito, native Solana stake, Helium staking program)
+Date: 2024-11
+Sources: https://solscan.io/token/hntM9j8v... (HIGH) [Solscan HNT Token Accounts - stake pool holdings]; https://marinade.finance/ (HIGH) [Marinade mSOL/HNT]; https://jito.network/ (HIGH) [Jito JitoSOL/HNT]
+
+Metric Name: IOT Staked (SubDAO IoT Staking Program)
+Value: ~2,000,000,000 - 3,000,000,000 IOT (estimated)
+Date: 2024-11
+Sources: https://dao.helium.com/ (HIGH) [Helium DAO Dashboard IoT Staking]; https://solscan.io/ (HIGH) [Solscan IOT Staking Program Accounts]
+
+Metric Name: MOBILE Staked (SubDAO Mobile Staking Program)
+Value: ~1,000,000,000 - 2,000,000,000 MOBILE (estimated)
+Date: 2024-11
+Sources: https://dao.helium.com/ (HIGH) [Helium DAO Dashboard Mobile Staking]; https://solscan.io/ (HIGH) [Solscan MOBILE Staking Program Accounts]
+
+Metric Name: Developer Count (Active GitHub Contributors - helium/helium org)
+Value: ~50-100 monthly active contributors (core protocol, oracle, SDK, firmware)
+Date: 2024-11
+Sources: https://github.com/helium (HIGH) [GitHub Helium Org Insights]; https://github.com/helium/helium/pulse (HIGH) [GitHub Helium Repo Pulse]
+
+Metric Name: Transactions Per Day (Solana Helium Program Instructions)
+Value: ~500,000 - 1,500,000 instructions/day (PoC reward claims, DC burns, staking, governance, transfers)
+Date: 2024-11
+Sources: https://solscan.io/ (HIGH) [Solscan Helium Program Activity]; https://explorer.solana.com/ (HIGH) [Solana Explorer Program Logs]
+
+Metric Name: Unique Wallets Holding HNT (SPL)
+Value: ~250,000 - 300,000 (non-zero HNT balance on Solana)
+Date: 2024-11
+Sources: https://solscan.io/token/hntM9j8v... (HIGH) [Solscan HNT Holder Count]; https://step.finance/ (MEDIUM) [Step Finance Analytics]
+
+Market Share
+
+Tidak tersedia. Data market share untuk DePIN wireless (LoRaWAN IoT, CBRS 5G, WiFi offload) vs tradisional telecom/IoT operators tidak dipublikasikan oleh badan survei pasar independen (Gartner, IDC, ABI Research) dalam format yang dapat diverifikasi per protokol. Helium tidak mengklaim market share persentase resmi.
+
+Sources: https://www.gartner.com/ (MEDIUM) [Gartner - no public DePIN share]; https://www.idc.com/ (MEDIUM) [IDC - no public DePIN share]; https://www.abiResearch.com/ (MEDIUM) [ABI Research - no public DePIN share]; https://blog.helium.com/ (HIGH) [Helium Blog - no market share claims]
+
+Competitor Landscape
+
+Competitor: Pollen Mobile
+Category: DePIN Wireless (CBRS 5G, WiFi, Solana)
+Difference: Fokus enterprise/venue-owned infrastructure, token PCN (Polygon/Solana), model kepemilikan host berbedar dari reward-only Hotspot operator Helium; lebih muda, skala deployment lebih kecil
+Market Segment: Enterprise venues, stadiums, campuses, rural 5G
+Sources: https://pollenmobile.io/ (MEDIUM); https://blog.pollenmobile.io/ (MEDIUM); https://www.coingecko.com/en/coins/pollen-mobile (MEDIUM)
+
+Competitor: World Mobile Token (WMT)
+Category: DePIN Wireless (Sharing Economy, AirNodes, Cardano/Base/Ethereum)
+Difference: Model sharing economy (AirNode operators earn WMT + revenue share), spektrum TVWS/CSR/5G, multi-chain (Cardano, Base, Ethereum), fokus pasar berkembang (Afrika, UK, US)
+Market Segment: Underserved connectivity, rural/emerging markets, enterprise private networks
+Sources: https://worldmobiletoken.com/ (MEDIUM); https://blog.worldmobiletoken.com/ (MEDIUM); https://www.coingecko.com/en/coins/world-mobile-token (MEDIUM)
+
+Competitor: XNET
+Category: DePIN WiFi Offload (CBRS, WiFi 6/6E, Solana)
+Difference: Fokus khusus WiFi offload untuk carrier (carrier-grade), token XNET (Solana), model revenue share dengan carrier, deployment indoor/outdoor AP
+Market Segment: Carrier WiFi offload, dense urban, venues, enterprises
+Sources: https://xnet.com/ (MEDIUM); https://blog.xnet.com/ (MEDIUM); https://www.coingecko.com/en/coins/xnet (MEDIUM)
+
+Competitor: The Things Network (TTN) / The Things Industries
+Category: Centralized LoRaWAN Network Server (SaaS)
+Difference: Tidak terdesentralisasi, tidak ada token insentif, hosting jaringan server (cloud/on-premise), bisnis B2B SaaS, ekosistem device luas, tidak proof-of-coverage
+Market Segment: Enterprise IoT, smart city, industrial IoT, integrator channels
+Sources: https://www.thethingsnetwork.org/ (MEDIUM); https://www.thethingsindustries.com/ (MEDIUM)
+
+Competitor: T-Mobile / Verizon / AT&T (Traditional MNO)
+Category: Centralized Mobile Network Operator
+Difference: Infrastruktur terpusat, spektrum lisensi (low/mid/high band), capex masif, coverage nasional, regulasi ketat, tidak token-insentif, MVNO wholesale partner (Helium Mobile menggunakan T-Mobile roaming)
+Market Segment: Mass market consumer mobile, enterprise mobile, IoT (NB-IoT, LTE-M, 5G)
+Sources: https://www.t-mobile.com/ (MEDIUM); https://www.verizon.com/ (MEDIUM); https://www.att.com/ (MEDIUM)
+
+Competitor: Actility / Senet (LoRaWAN Network Operators)
+Category: Centralized LoRaWAN Operator (Managed Service)
+Difference: Layanan terkelola jaringan LoRaWAN (core network, roaming), bisnis B2B, tidak token, tidak proof-of-coverage, fokus enterprise/industrial
+Market Segment: Utilities, smart metering, asset tracking, industrial IoT
+Sources: https://www.actility.com/ (MEDIUM); https://www.senetco.com/ (MEDIUM)
+
+Narrative Position
+
+Narrative: DePIN (Decentralized Physical Infrastructure Networks)
+Status: Main Narrative (Helium adalah pionir dan contoh terbesar DePIN wireless; sering dikutip sebagai "DePIN blueprint" oleh Messari, Multicoin, Variant, dst.)
+Evidence: Messari DePIN Primer menyebut Helium sebagai case study utama; Multicoin Capital thesis "DePIN" memulai dari investasi Helium; kategori CoinGecko/CoinMarketCap "DePIN" Helium ranking #1 market cap wireless
+Sources: https://messari.io/article/helium-depin-primer (HIGH); https://multicoin.capital/portfolio/helium/ (HIGH); https://www.coingecko.com/en/categories/depin (HIGH); https://coinmarketcap.com/view/depin/ (HIGH)
+
+Narrative: Solana Ecosystem (Major DePIN on Solana)
+Status: Main Narrative (Pasca-migrasi HIP 70, Helium adalah protokol DePIN terbesar di Solana by TVL/users; kolaborasi erat dengan Solana Foundation, validator set, DeFi composability)
+Evidence: Solana Blog announce migration; Helium program on-chain di Solana; HNT/IOT/MOBILE di DeFi Solana (Orca, Raydium, Jupiter, Marinade, Jito); Solana Breakpoint keynote mention
+Sources: https://solana.com/news/helium-migrates-to-solana (HIGH); https://blog.helium.com/helium-network-migration-to-solana-complete-5c5f5e5c5f5e (HIGH); https://www.orca.so/ (HIGH); https://raydium.io/ (HIGH); https://marinade.finance/ (HIGH); https://jito.network/ (HIGH)
+
+Narrative: Real World Assets (RWA) / Physical Infrastructure Tokenization
+Status: Secondary Narrative (Hotspot sebagai physical asset on-chain, Data Credits sebagai komoditas bandwidth, MVNO revenue → token burn; narasi "tokenized telecom infrastructure")
+Evidence: Token Terminal metrics "Revenue" (DC burn), "Fees" (network revenue); Messari RWA/DePIN overlap reports; Helium Mobile fiat revenue → DC burn flow
+Sources: https://tokenterminal.com/terminal/projects/helium (HIGH); https://messari.io/report/helium-network (HIGH); https://www

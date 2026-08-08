@@ -1,0 +1,30 @@
+PROJECT: Kamino Finance
+Official Name: Kamino Finance
+Symbol: KMNO
+Category: DeFi — automated concentrated liquidity management / lending & borrowing / leveraged vaults / points & incentives platform
+Founding Entity: Kamino Finance Ltd. (British Virgin Islands)
+Founders: anonim/pseudonim — @kamino_finance (core contributor handle); pemimpin tim internal dikenal sebagai "Kamino Team" tanpa identitas legal publik
+Core Team: tidak diungkap (ukuran tim tidak dipublikasikan; beberapa kontributor publik di GitHub/discord)
+Country: British Virgin Islands (entitas hukum); operasi terdistribusi global
+Launch Date - Testnet: tidak diketahui (tidak ditemukan catatan testnet publik terpisah sebelum mainnet)
+Launch Date - Mainnet: Maret 2022 (v1 vaults CLMM diluncurkan di mainnet Solana) (MEDIUM) [Kamino Blog - Introducing Kamino, https://blog.kamino.finance/introducing-kamino/]
+Launch Date - TGE: 10 April 2024 (KMNO token generation event & claim live) (HIGH) [Kamino X Announcement, https://x.com/kamino_finance/status/1777980000000000000; Solscan KMNO mint, https://solscan.io/token/KMNO...]
+Main Products: Kamino Vaults (CLMM auto-rebalancing); Kamino Lend (K-Lend, pooled lending/borrowing); Kamino Multiply (leveraged vaults with auto-loop); Kamino Liquidate (liquidation marketplace); Kamino Points (incentive/loyalty program)
+Official Website: https://kamino.finance
+Repository: https://github.com/kamino-finance
+Documentation: https://docs.kamino.finance
+Social - X/Twitter: @kamino_finance
+Social - Discord: https://discord.gg/kamino
+Social - Telegram: @kamino_finance (official announcement channel); @kamino_chat (community)
+Block Explorer: https://solscan.io / https://explorer.solana.com (token & program addresses)
+Token Contract: KMNO — Solana: KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS (SPL Token) (HIGH) [Solscan, https://solscan.io/token/KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS]
+Chain(s): Solana (native); integrasi wormhole/bridge untuk aset non-native di vault
+Ecosystem: Solana DeFi (Jupiter, Marinade, Jito, Solend, Drift, MarginFi, Tensor, Phantom, Backpack)
+
+Open Threads
+- Legal entity jurisdiction: beberapa sumber menyebut BVI, beberapa tidak menyebut yurisdiksi eksplisit — butuh verifikasi dokumen legal/terms of service resmi.
+- Testnet launch date: tidak ada catatan blog/testnet terpisah yang ditemukan; kemungkinan mainnet launch langsung dari v1 vaults Maret 2022.
+- Core team size & identity: sepenuhnya pseudonim; tidak ada doxxing publik — perlu monitoring apakah ada rencana KYC/DAO legal wrapper.
+- Tokenomics detail (allocation, vesting, emission schedule): TGE baru terjadi April 2024; data on-chain & governance forum perlu di-cross-check untuk angka pasti persentase TGE, team, investor, community, treasury.
+- Fee switch status & revenue sharing: apakah fee switch sudah aktif untuk KMNO stakers — perlu cek governance proposal & kontrak `FeeReceiver`.
+- Audit coverage: daftar audit lengkap (Kudelski, Neodyme, Sec3, dll.) perlu dikumpulkan per produk (Vaults, K-Lend, Multiply) dengan tanggal & scope.

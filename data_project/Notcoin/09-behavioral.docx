@@ -1,0 +1,222 @@
+PROJECT: Notcoin
+
+1. Menjadi platform onboarding konsumen crypto terbesar di dunia melalui Telegram
+· Evidence: Notcoin mencapai 50 juta pengguna unik lifetime (EV-012) dan 35 juta pengguna aktif pada puncak mining phase (EV-003), memanfaatkan basis pengguna Telegram >900 juta MAU tanpa perlu download aplikasi terpisah atau seed phrase
+· Supporting Dataset: Phase 3 EV-002, EV-003, EV-012; Phase 7 External Dependencies (Telegram); Phase 8 Market Position
+
+2. Membangun ekosistem discovery & reward (Explore/Earn) yang mengunci utility token NOT pasca-TGE
+· Evidence: Peluncuran Notcoin Explore (EV-006) dan Earn (EV-008) bersamaan/sekitar TGE; 50+ kampanye Earn dari proyek TON (Tonstakers, bemo, TonWhales) mengharuskan hold/beli NOT untuk partisipasi; revenue share dari fee kampanye Earn menjadi model pendapatan berkelanjutan
+· Supporting Dataset: Phase 3 EV-005, EV-006, EV-008; Phase 6 Token Utility; Phase 5 Revenue Model; Phase 7 Major Integrations (Earn Campaigns)
+
+3. Mendorong adopsi Account Abstraction (ERC-4337) di TON melalui Notcoin Wallet untuk menghilangkan barrier teknis non-crypto users
+· Evidence: Peluncuran Notcoin Wallet (EV-010) dengan 2 juta+ smart wallet dideploy dalam 2 bulan; fitur social recovery via Telegram login, gasless via Paymaster, fiat on-ramp; Wallet menjadi entry point untuk pengguna baru ke ekosistem TON tanpa perlu Tonkeeper terpisah
+· Supporting Dataset: Phase 3 EV-010; Phase 4 Core Components (Smart Wallet); Phase 7 Wallet Ecosystem; Phase 8 Adoption Metrics
+
+4. Memanfaatkan Telegram Ads Platform sebagai revenue stream berbagi (revenue share) untuk mendanai operasional tanpa bergantung token sale
+· Evidence: Integrasi Telegram Ads Platform (EV-011) menjadikan Notcoin pilot Mini App monetisasi rewarded ads; revenue share mengalir ke Open Builders; tidak ada VC funding publik, tidak ada token sale (Phase 5 Funding History)
+· Supporting Dataset: Phase 3 EV-011; Phase 5 Funding History, Revenue Model; Phase 7 External Dependencies (Telegram Ads)
+
+5. Menjadi "Product Hunt" untuk Telegram Mini Apps di ekosistem TON melalui Notcoin Explore
+· Evidence: Explore menghosting discovery Mini App lain; kampanye Earn mendistribusikan token mitra ke pemegang NOT; Notcoin memotong fee dari reward pool; positioning sebagai platform distribusi & likuiditas perhatian untuk ekosistem TON
+· Supporting Dataset: Phase 3 EV-006, EV-008; Phase 7 Major Integrations (Explore & Earn); Phase 8 Narrative Position (Discovery Platform)
+
+Keputusan: Peluncuran Game Off-chain Terpusat di Telegram Mini App (2024-01-01)
+· Trigger: Ingin memvalidasi product-market fit tap-to-earn dengan kecepatan iterasi tinggi tanpa biaya gas & latency on-chain; memanfaatkan distribusi viral Telegram Bot API/Web App
+· Evidence: Phase 3 EV-002 (Launch); Phase 4 Architecture (Off-chain Game Backend centralized); Phase 8 Market Timeline (2024-01-01)
+· Decision: Membangun game logic sepenuhnya off-chain di server terpusat Open Builders; saldo NOT virtual disimpan database internal; on-chain settlement ditunda hingga mining phase selesai
+· Immediate Result: 1 juta pengguna dalam 2 minggu, 35 juta pada puncak (EV-003); biaya operasional rendah (no gas), UX mulus (instant tap), viral loop referral/kuadran
+· Long-term Impact: Membuktikan skala mass adoption mungkin via Telegram Mini App; menciptakan komunitas 35M+ sebelum token ada; namun menciptakan ketergantungan sentralisasi & trust pada fase awal (Phase 4 Known Limitations)
+· Supporting Dataset: Phase 3 EV-002, EV-003; Phase 4 Architecture, Known Limitations; Phase 8 Market Timeline
+
+Keputusan: Token Generation Event (TGE) dengan Distribusi 78% Komunitas Instan Tanpa Vesting (2024-05-16)
+· Trigger: Mining phase berakhir 1 April 2024 (EV-004); komunitas menunggu klaim on-chain; tekanan pasar & kompetitor (Hamster Kombat, Blum) mendekati TGE
+· Evidence: Phase 3 EV-004, EV-005; Phase 6 TGE, Distribution (78% community, 22% team/eco); Phase 6 Vesting Schedule (community 0 cliff, 0 vesting)
+· Decision: Mint full supply 102.7B NOT sekaligus; 78% diklaim instan oleh 11M+ wallet (EV-005); 22% dikirim ke alamat Open Builders tanpa vesting contract on-chain; listing serentak 5 CEX besar + 2 DEX
+· Immediate Result: Likuiditas instan besar, price discovery cepat, market cap >$1.5B dalam jam; 11M+ wallet unik on-chain hari pertama; NOT menjadi token TON paling liquide
+· Long-term Impact: Distribusi merata ke jutaan wallet menciptakan holder base luas tapi tanpa lockup menciptakan tekanan jual berkelanjutan; alokasi 22% tim/ekosistem tanpa vesting transparan menciptakan overhang risk & kepercayaan komunitas (Phase 6 Open Threads, Phase 5 Financial Risk)
+· Supporting Dataset: Phase 3 EV-004, EV-005; Phase 6 TGE, Distribution, Vesting Schedule, Major Token Events; Phase 5 Financial Risk
+
+Keputusan: Transisi dari Single Game ke Platform Ekosistem (Explore + Earn) Bersamaan TGE (2024-05-16)
+· Trigger: Mining phase berakhir — game tap-to-earn tidak sustainable long-term; perlu utility token NOT & revenue stream baru; TON Foundation mendorong ekosistem Mini App discovery
+· Evidence: Phase 3 EV-005, EV-006, EV-008; Phase 1 Core Products (Explore, Earn); Phase 7 Major Integrations (Explore & Earn Platform); Phase 8 Narrative Position (Discovery Platform)
+· Decision: Launch Notcoin Explore (discovery platform) hari TGE; Notcoin Earn (reward campaigns) Juli 2024; model fee dari reward pool mitra; NOT sebagai syarat akses Earn
+· Immediate Result: Utility NOT muncul (hold untuk Earn); volume DEX NOT/TON naik; 50+ kampanye Earn live (2025-01); revenue stream fee kampanye aktif
+· Long-term Impact: Notcoin bertransformasi dari "meme game" ke platform infrastruktur ekosistem TON; menciptakan flywheel: lebih banyak proyek join Earn → lebih banyak utility NOT → lebih banyak user hold NOT → lebih menarik bagi proyek baru; namun bergantung pada minat proyek mitra & volume user (Phase 8 Adoption Metrics)
+· Supporting Dataset: Phase 3 EV-005, EV-006, EV-008; Phase 6 Token Utility; Phase 7 Major Integrations; Phase 8 Market Position, Narrative Position
+
+Keputusan: Peluncuran Notcoin Smart Wallet (ERC-4337 Account Abstraction) Native di Mini App (2024-10)
+· Trigger: Friction onboarding pengguna non-crypto (seed phrase, gas fee, wallet terpisah); TON mendorong AA adoption; Notcoin punya 50M+ user base siap dikonversi ke wallet holder
+· Evidence: Phase 3 EV-010; Phase 4 Core Components (Smart Wallet AA); Phase 7 Wallet Ecosystem (Notcoin Wallet native); Phase 8 Adoption Metrics (2M+ deployments)
+· Decision: Build ERC-4337 wallet di TON (Paymaster, Bundler, Wallet contract) terintegrasi di Mini App; social recovery via Telegram auth; gasless via Paymaster Open Builders; fiat on-ramp partner
+· Immediate Result: 2M+ smart wallet dideploy 2 bulan; pengguna baru bisa transaksi on-chain tanpa keluar Telegram, tanpa TON untuk gas, tanpa seed phrase
+· Long-term Impact: Menciptakan moat kompetitif vs Mini App lain (Blum, Hamster, TapSwap belum punya native AA wallet); mengunci user ke ekosistem Notcoin; tapi menciptakan dependency pada Paymaster terpusat & upgradeability risk (Phase 4 Known Limitations)
+· Supporting Dataset: Phase 3 EV-010; Phase 4 Core Components, Security Model, Known Limitations; Phase 7 Wallet Ecosystem; Phase 8 Adoption Metrics
+
+Keputusan: Integrasi Telegram Ads Platform & Mini App Store sebagai Pilot (2024-11)
+· Trigger: Telegram meluncurkan Ads Platform resmi untuk Mini Apps; Notcoin sebagai app terbesar jadi kandidat alami pilot; perlu revenue non-token untuk sustainability
+· Evidence: Phase 3 EV-011; Phase 5 Revenue Model (Telegram Ads Revenue Share); Phase 7 External Dependencies (Telegram Ads Platform); Phase 8 Market Timeline
+· Decision: Opt-in ke Telegram Ads Platform (rewarded ads di Mini App); revenue share deal dengan Telegram; featured placement di Mini App Store resmi
+· Immediate Result: Revenue stream baru (ads revenue share); visibilitas organik meningkat drastis di dalam Telegram; validasi model monetisasi Mini App non-crypto
+· Long-term Impact: Mengurangi ketergantungan pada tokenomics & Earn fees; tapi menciptakan platform risk ekstrem — kebijakan Telegram Ads bisa berubah kapan saja, revenue share persentase tidak diungkap, tidak ada kontrak jangka panjang (Phase 5 Financial Risk, Phase 4 Known Limitations)
+· Supporting Dataset: Phase 3 EV-011; Phase 5 Revenue Model, Financial Dependencies; Phase 7 External Dependencies; Phase 4 Known Limitations
+
+Keputusan: Governance Off-chain Snapshot Non-binding Tanpa DAO On-chain (2024-07-15)
+· Trigger: Komunitas & ekosistem meminta suara arah treasury & parameter Earn; regulasi DAO on-chain kompleks; speed to market prioritized
+· Evidence: Phase 3 EV-009; Phase 6 Governance (Snapshot, 1 NOT = 1 vote, non-binding); Phase 7 Developer Ecosystem (Snapshot integration)
+· Decision: Launch Snapshot space notcoin.ton untuk gasless voting; proposal advisory only; eksekusi tetap di tangan Open Builders (multisig/admin tidak diungkap)
+· Immediate Result: Mekanisme signaling komunitas terstruktur; proposal pertama alokasi treasury & grant; partisipasi voting awal tertulis di blog
+· Long-term Impact: Menghindari kompleksitas & risiko legal DAO on-chain; tapi governance theater — komunitas tidak punya kekuatan eksekusi nyata; treasury 22% supply tetap dikontrol Open Builders tanpa accountability on-chain (Phase 6 Governance, Phase 5 Treasury)
+· Supporting Dataset: Phase 3 EV-009; Phase 6 Governance; Phase 5 Treasury; Phase 8 Open Threads
+
+Evolution Pattern: Dari Game Viral Off-chain ke Platform Ekosistem On-chain Multi-Produk
+· Perubahan Strategi: Awalnya (EV-002) hanya game tap-to-earn off-chain sederhana; setelah mining phase berakhir (EV-004), pivot ke platform ekosistem (Explore EV-006, Earn EV-008, Wallet EV-010) — dari single product jadi multi-product platform
+· Perubahan Teknologi: Off-chain centralized backend → On-chain TON Jetton + Smart Contracts (Earn campaigns, Wallet AA, NFT) → Account Abstraction (ERC-4337) + Paymaster infrastructure → AI-driven discovery roadmap (EV-013)
+· Perubahan Tokenomics: Token tidak ada saat launch game → TGE full supply mint → 78% community instant unlock → 22% team/eco opaque → Utility muncul via Earn access, governance weight, NFT benefits, wallet gas subsidy → Burn/buyback mechanism tidak ada (Phase 6 Inflation/Deflation)
+· Perubahan Governance: Tidak ada governance → Snapshot off-chain advisory → Roadmap menuju on-chain DAO (tidak diimplementasikan hingga 2025-01)
+· Evidence: Phase 3 EV-002 through EV-013 (sequential evolution); Phase 4 Technical Upgrade History (5 major upgrades); Phase 6 Major Token Events (10 events); Phase 8 Market Timeline
+
+Pola 1: Off-chain First, On-chain Settlement Later
+· Decision Pattern: Memulai produk dengan arsitektur off-chain terpusat (game logic, balance, leaderboard) untuk kecepatan, UX, dan biaya nol; baru beralih ke on-chain (TON Jetton, smart contracts) setelah product-market fit terbukti dan user base besar terkumpul
+· Evidence: Phase 3 EV-002 (Game launch off-chain Jan 2024) → EV-005 (TGE on-chain May 2024, 4 bulan kemudian); Phase 4 Architecture (Hybrid off-chain/on-chain); Phase 4 Known Limitations (Off-chain Game Centralization)
+· Supporting Dataset: Phase 3 EV-002, EV-005; Phase 4 Architecture, Technical Upgrade History, Known Limitations
+
+Pola 2: Telegram-Native Development (Mini App First, Blockchain Second)
+· Decision Pattern: Semua produk dibangun sebagai Telegram Mini App pertama kali; blockchain (TON) digunakan hanya untuk settlement, ownership, dan composability; tidak ada standalone mobile/web app atau browser-based dApp
+· Evidence: Phase 3 EV-002 (Launch di Telegram), EV-006 (Explore di Telegram Web App), EV-010 (Wallet embedded di Mini App); Phase 4 Execution Environment (Telegram Web App runtime); Phase 7 External Dependencies (Telegram Critical); Phase 8 Market Position (Telegram Mini App Ecosystem)
+· Supporting Dataset: Phase 3 EV-002, EV-006, EV-010; Phase 4 Execution Environment; Phase 7 External Dependencies; Phase 8 Market Position
+
+Pola 3: Account Abstraction sebagai Differentiator Kompetitif Utama
+· Decision Pattern: Investasi besar pada ERC-4337 Smart Wallet (Paymaster, Bundler, Social Recovery) untuk menghilangkan semua friction onboarding non-crypto users; wallet menjadi fitur core produk, bukan tambahan
+· Evidence: Phase 3 EV-010 (Wallet launch Oct 2024); Phase 4 Core Components (Smart Wallet AA); Phase 7 Wallet Ecosystem (Notcoin Wallet native first-party); Phase 8 Adoption Metrics (2M+ deployments 2 bulan); Phase 8 Narrative Position (Account Abstraction Adoption)
+· Supporting Dataset: Phase 3 EV-010; Phase 4 Core Components, Security Model; Phase 7 Wallet Ecosystem; Phase 8 Adoption Metrics, Narrative Position
+
+Pola 4: Standar TON Ecosystem (Jetton TEP-74, TonConnect, Tonapi) Tanpa Custom Infrastructure
+· Decision Pattern: Menggunakan standar & infrastruktur yang sudah ada di ekosistem TON (Jetton standard, TonConnect wallet connection, Tonapi indexer) daripada membangun custom solution; focus resources pada application layer
+· Evidence: Phase 4 Core Components (Jetton Master TEP-74, TonConnect SDK, Tonapi SDK); Phase 7 Infrastructure Providers (Tonapi Critical, TonConnect High); Phase 4 Development Framework (Blueprint, Tact, Telegram Mini Apps SDK)
+· Supporting Dataset: Phase 4 Core Components, Development Framework; Phase 7 Infrastructure Providers, Developer Ecosystem
+
+Pola 1: Zero VC Funding — Bootstrapped + Ecosystem Grant + Protocol Revenue
+· Decision Pattern: Tidak menggalang dana dari VC/strategic investor; pengembangan awal didanai internal (bootstrapping); menerima grant TON Foundation (nominal tidak diungkap); revenue dari Telegram Ads share & Earn campaign fees
+· Evidence: Phase 5 Funding History (No VC rounds, 1 Grant TON Foundation); Phase 5 Revenue Model (Telegram Ads, Earn Fees); Phase 5 Fundraising Mechanism (Bootstrapping, Grant, Protocol Revenue); Phase 2 Entity (No Investor category)
+· Supporting Dataset: Phase 5 Funding History, Revenue Model, Fundraising Mechanism; Phase 2 Entity
+
+Pola 2: Token Distribution 100% Fair Launch Style (No Sale, No Private Allocation) — Tapi Team Allocation Opaque
+· Decision Pattern: 78% supply ke komunitas gratis via mining off-chain (fair launch narrative); 0% investor/private sale; namun 22% tim/ekosistem tanpa breakdown, tanpa vesting on-chain, tanpa multisig transparan
+· Evidence: Phase 6 Distribution (78% community, 22% team/eco); Phase 6 Vesting Schedule (Community 0 vesting, Team/eco undisclosed); Phase 6 TGE (Full supply mint, team tokens sent to Open Builders address); Phase 5 Treasury (22% controlled by Open Builders, no DAO treasury)
+· Supporting Dataset: Phase 6 Distribution, Vesting Schedule, TGE; Phase 5 Treasury, Financial Risk
+
+Pola 3: Revenue Diversification dari Token ke Platform Fees & Ads
+· Decision Pattern: Awalnya tidak ada revenue model (game gratis); pasca-TGE membangun revenue stream: Earn campaign fees (take rate dari reward pool mitra), Telegram Ads revenue share, potensial fiat on-ramp fees — mengurangi ketergantungan pada token price
+· Evidence: Phase 5 Revenue Model (Telegram Ads, Earn Fees, Fiat On-ramp); Phase 3 EV-008 (Earn launch), EV-011 (Telegram Ads integration); Phase 5 Financial Dependencies (Telegram Ads, Earn partners)
+· Supporting Dataset: Phase 5 Revenue Model, Financial Dependencies; Phase 3 EV-008, EV-011
+
+Pola 4: Treasury Management Non-Transparent — Tidak Ada Dashboard, Proof-of-Reserves, atau Vesting Contract
+· Decision Pattern: Alokasi 22% (≈22.6B NOT) dikelola sepenuhnya oleh Open Builders tanpa 공개 on-chain custody (multisig/vesting contract), tanpa laporan berkala, tanpa transparency dashboard
+· Evidence: Phase 5 Treasury (Current Treasury Size undisclosed, Custodian Open Builders); Phase 6 Vesting Schedule (Team/eco no on-chain vesting verified); Phase 6 Holder Distribution (Foundation/Team holding not separated); Phase 5 Financial Risk (Treasury Concentration)
+· Supporting Dataset: Phase 5 Treasury, Financial Risk; Phase 6 Vesting Schedule, Holder Distribution
+
+Pola 1: Deep Integration dengan TON Core Infrastructure (Tonapi, TonConnect, TON Foundation)
+· Decision Pattern: Membangun di atas infrastruktur standar TON (Tonapi indexer, TonConnect wallet standard, TON Foundation grant) dan berkontribusi ke standar ekosistem (AA wallet deployment terbesar, Jetton adoption driver)
+· Evidence: Phase 7 External Dependencies (TON Chain Critical, Tonapi Critical, TonConnect High, TON Foundation High); Phase 7 Infrastructure Providers (Tonapi, TON Foundation); Phase 3 EV-003 (TON Foundation collaboration), EV-010 (TonConnect integration)
+· Supporting Dataset: Phase 7 External Dependencies, Infrastructure Providers; Phase 3 EV-003, EV-010
+
+Pola 2: CEX Listing Strategy — Top Tier Exchange First (Binance, Bybit, OKX Simultaneous Launch)
+· Decision Pattern: Prioritaskan listing di 3 CEX terbesar global (Binance, Bybit, OKX) serentak saat TGE + Launchpool Binance; memastikan likuiditas mendalam, akses fiat global, dan visibilitas mass market dari hari pertama
+· Evidence: Phase 3 EV-005 (TGE & Listing); Phase 7 Exchange Ecosystem (Binance, Bybit, OKX all Listed Spot + Perpetual); Phase 8 Trading Markets (5 major CEX live); Phase 2 Entity (Binance, Bybit, OKX as Liquidity Dependency)
+· Supporting Dataset: Phase 3 EV-005; Phase 7 Exchange Ecosystem; Phase 8 Trading Markets; Phase 2 Entity
+
+Pola 3: DEX Liquidity Via Permissionless Pools (Dedust, Ston.fi) Tanpa Incentivized LM Resmi
+· Decision Pattern: Tidak meluncurkan liquidity mining/resmi untuk pool DEX; membiarkan pool permissionless terbentuk organik di Dedust & Ston.fi; Orbs Network integration untuk advanced order types (dLIMIT/dTWAP) sebagai value-add
+· Evidence: Phase 7 Exchange Ecosystem (Dedust, Ston.fi Listed); Phase 7 Major Integrations (DEX Liquidity, Orbs Network); Phase 3 EV-005 (DEX pools live TGE); Phase 8 Liquidity (DEX TVL $3-6M vs CEX volume $150-300M)
+· Supporting Dataset: Phase 7 Exchange Ecosystem, Major Integrations; Phase 3 EV-005; Phase 8 Liquidity
+
+Pola 4: Ekosistem Partner Earn Sebagai Flywheel Distribusi & Utility
+· Decision Pattern: Membangun Notcoin Explore/Earn sebagai platform bagi proyek TON lain (Tonstakers, bemo, TonWhales, dll) menjalankan kampanye reward; Notcoin memotong fee, NOT mendapat utility (hold untuk ikut), proyek mitra mendapat user, user mendapat reward
+· Evidence: Phase 3 EV-006 (Explore), EV-008 (Earn); Phase 7 Major Integrations (Explore & Earn Platform dengan Tonstakers, bemo, TonWhales); Phase 6 Token Utility (Earn Campaign Participation); Phase 8 Adoption Metrics (50+ campaigns)
+· Supporting Dataset: Phase 3 EV-006, EV-008; Phase 7 Major Integrations; Phase 6 Token Utility; Phase 8 Adoption Metrics
+
+Pola 5: NFT & SBT Sebagai Identity & Access Layer (Getgems, TON Society)
+· Decision Pattern: Menggunakan NFT (Genesis collection Getgems) dan SBT (TON Society) sebagai voucher akses eksklusif, governance weight, dan verifikasi identitas — bukan sekadar koleksi seni
+· Evidence: Phase 3 EV-007 (Genesis NFT Getgems), EV-009 (Governance weight future); Phase 7 Major Integrations (Genesis NFT, TON Society SBT); Phase 6 Token Utility (NFT Voucher Redemption); Phase 2 Entity (Getgems, TON Society)
+· Supporting Dataset: Phase 3 EV-007; Phase 7 Major Integrations; Phase 6 Token Utility; Phase 2 Entity
+
+Pola 1: Off-chain Governance (Snapshot) sebagai Signaling Layer — Eksekusi Tetap Pusat
+· Decision Pattern: Menggunakan Snapshot untuk gasless voting 1 NOT = 1 vote; proposal bersifat advisory/non-binding; Open Builders memutuskan eksekusi; tidak ada delegasi, tidak ada quorum resmi, tidak ada timelock on-chain
+· Evidence: Phase 3 EV-009 (Snapshot launch); Phase 6 Governance (Off-chain Snapshot, non-binding, no delegation); Phase 7 Major Integrations (Governance Snapshot); Phase 5 Treasury (Open Builders control)
+· Supporting Dataset: Phase 3 EV-009; Phase 6 Governance; Phase 7 Major Integrations; Phase 5 Treasury
+
+Pola 2: Tidak Ada DAO On-chain, Tidak Ada Multisig Transparan, Tidak Ada Timelock untuk Treasury
+· Decision Pattern: Menghindari kompleksitas legal & teknis DAO on-chain; treasury 22% supply dikendalikan langsung Open Builders (admin address Jetton master, wallet AA Paymaster); komunitas hanya bisa signaling via Snapshot
+· Evidence: Phase 6 Governance (No on-chain DAO); Phase 6 Vesting Schedule (No vesting contract for team); Phase 5 Treasury (Custodian Open Builders, no multisig public); Phase 4 Security Model (Upgradeability risk, admin address)
+· Supporting Dataset: Phase 6 Governance, Vesting Schedule; Phase 5 Treasury; Phase 4 Security Model
+
+Pola 3: Governance Minimal Viable — Hanya Parameter Earn & Treasury Allocation, Bukan Protocol Upgrade
+· Decision Pattern: Scope governance terbatas pada alokasi treasury, parameter kampanye Earn, grant ekosistem; tidak mencakup upgrade smart contract, parameter protokol inti (Jetton master), atau pengambilan keputusan strategis produk
+· Evidence: Phase 3 EV-009 (Proposal pertama: treasury allocation & ecosystem grants); Phase 6 Governance (Proposal system: treasury, Earn parameters, grants); Phase 3 EV-010, EV-011, EV-013 (Product decisions Wallet, Ads, v2 roadmap made by team without vote)
+· Supporting Dataset: Phase 3 EV-009, EV-010, EV-011, EV-013; Phase 6 Governance
+
+Pola 1: Platform Dependency Risk — Mitigasi via Diversifikasi Produk & Revenue, Bukan Technical Decoupling
+· Trigger: Ketergantungan ekstrim pada Telegram (hosting, auth, distribusi, ads) & TON (settlement, wallet AA)
+· Decision Pattern: Menerima platform dependency sebagai trade-off untuk distribusi massal; mitigasi via membangun multiple produk (Explore, Earn, Wallet) yang menciptakan switching cost bagi user & revenue stream independen (Earn fees, Ads); tidak membangun fallback chain atau standalone app
+· Evidence: Phase 4 Known Limitations (Telegram Platform Dependency, Critical); Phase 7 External Dependencies (Telegram Critical, TON Critical); Phase 5 Financial Dependencies (Telegram, TON Foundation); Phase 3 EV-006, EV-008, EV-010, EV-011 (Product diversification)
+· Response: Diversifikasi produk & revenue dalam platform yang sama
+· Result: 50M+ users locked in Mini App ecosystem; revenue dari Ads & Earn; tapi single point of failure tetap ada
+· Supporting Dataset: Phase 4 Known Limitations; Phase 7 External Dependencies; Phase 5 Financial Dependencies; Phase 3 EV-006, EV-008, EV-010, EV-011
+
+Pola 2: Smart Contract Audit Risk — Deferred/Ignored (No Public Audit Until 2025-01)
+· Trigger: Kontrak kritis (Jetton Master, Wallet AA Paymaster/Bundler, Earn Campaigns) mengelola nilai besar tapi tidak diaudit publik
+· Decision Pattern: Meluncurkan kontrak tanpa audit publik formal; mengandalkan standar TON (TEP-74 Jetton), best practices AA, dan internal review; audit mungkin dijalankan privat tapi tidak dipublikasikan
+· Evidence: Phase 4 Audit History (No public audit found); Phase 4 Security Model (Upgradeability risk, Paymaster trust); Phase 4 Known Limitations (No Public Audit, High); Phase 6 Open Threads (Audit status unverified)
+· Response: Launch without public audit; rely on battle-tested standards
+· Result: No major exploit reported hingga 2025-01; tapi trust deficit di kalangan security-conscious users & institutions
+· Supporting Dataset: Phase 4 Audit History, Security Model, Known Limitations; Phase 6 Open Threads
+
+Pola 3: Competitive Response — Feature Parity + Differentiation (Wallet AA, Explore) Rather Than Token Incentive War
+· Trigger: Kompetitor (Hamster Kombat 300M users, Blum Binance Labs backing, Pixelverse Binance Launchpool) meluncurkan token & fitur serupa
+· Decision Pattern: Tidak bergantung pada token incentive lebih besar (tidak ada emission, tidak ada staking yield); fokus pada diferensiasi produk: Native AA Wallet (kompetitor belum punya), Explore/Earn platform (ecosystem flywheel), Telegram Ads integration (revenue share)
+· Evidence: Phase 8 Competitor Landscape (Hamster, Blum, TapSwap, Pixelverse, Catizen, Tonstation); Phase 3 EV-010 (Wallet AA launch), EV-006 (Explore), EV-011 (Ads); Phase 6 Inflation/Deflation (No inflation mechanism)
+· Response: Product differentiation > token inflation
+· Result: Retention via utility (Wallet, Earn) bukan yield farming; market cap rank top 50-70 maintained
+· Supporting Dataset: Phase 8 Competitor Landscape, Market Position; Phase 3 EV-006, EV-010, EV-011; Phase 6 Inflation/Deflation
+
+Pola 4: Regulatory Uncertainty — Entity Opacity & Jurisdiction Secrecy
+· Trigger: Regulasi crypto global ketat (MiCA EU, SEC US, dll); token NOT sebagai utility/consumer token dengan 50M+ user global
+· Decision Pattern: Tidak mengumumkan yurisdiksi inkorporasi Open Builders; tidak KYC pengguna (anonymous Telegram ID); tidak membatasi akses berdasarkan geografi; legal entity opacity sebagai strategi defensif
+· Evidence: Phase 1 Foundation (Country: Not disclosed, Jurisdiction not announced); Phase 2 Entity (Open Builders jurisdiction not disclosed); Phase 5 Financial Risk (Legal Financial Risk: jurisdiction undisclosed); Phase 8 Open Threads (Legal entity jurisdiction not verified)
+· Response: Operational opacity, no geo-blocking, no KYC
+· Result: Global access maintained; regulatory risk transferred to future
+· Supporting Dataset: Phase 1 Foundation; Phase 2 Entity; Phase 5 Financial Risk; Phase 8 Open Threads
+
+Pola 1: Launch Off-chain → On-chain Settlement After PMF (Berulang: Game → Token → Wallet → Earn)
+· Pattern: Setiap produk utama diluncurkan off-chain/centralized dulu (Game tap, Explore frontend, Wallet UI), baru komponen on-chain ditambahkan setelah adoption terbukti (Jetton NOT, Earn campaign contracts, Wallet AA contracts)
+· Evidence: Phase 3 EV-002 (Game off-chain) → EV-005 (Jetton on-chain); EV-006 (Explore launch) → EV-008 (Earn on-chain contracts); EV-010 (Wallet AA on-chain contracts deployed after UI ready)
+· Supporting Dataset: Phase 3 EV-002, EV-005, EV-006, EV-008, EV-010; Phase 4 Technical Upgrade History
+
+Pola 2: Telegram Platform Feature Adoption sebagai Early Adopter / Pilot (Berulang: Mini App, Ads Platform, Mini App Store)
+· Pattern: Setiap kali Telegram meluncurkan fitur platform baru (Mini Apps Jan 2024, Ads Platform Nov 2024, Mini App Store), Notcoin langsung jadi pilot/early adopter — mendapat first-mover advantage, revenue share, dan visibilitas
+· Evidence: Phase 3 EV-002 (Mini App launch Jan 2024), EV-011 (Ads Platform pilot Nov 2024); Phase 7 External Dependencies (Telegram Critical); Phase 8 Market Timeline
+· Supporting Dataset: Phase 3 EV-002, EV-011; Phase 7 External Dependencies; Phase 8 Market Timeline
+
+Pola 3: TON Ecosystem Standard Adoption Without Forking (Berulang: Jetton TEP-74, TonConnect, Tonapi, TEP-89 future)
+· Pattern: Selalu menggunakan standar resmi TON ecosystem tanpa modifikasi/custom fork; berkontribusi ke adoption standar (Jetton, TonConnect, AA) tapi tidak menciptakan standar competiting
+· Evidence: Phase 4 Core Components (Jetton TEP-74, TonConnect SDK, Tonapi SDK); Phase 7 Developer Ecosystem (Blueprint, Tact); Phase 4 Known Limitations (FunC maturity)
+· Supporting Dataset: Phase 4 Core Components, Development Framework, Known Limitations; Phase 7 Developer Ecosystem
+
+Pola 4: Community-First Token Distribution Then Platform Utility Building (Berulang: 78% airdrop → Explore/Earn utility → Wallet AA retention)
+· Pattern: Distribusi token luas gratis ke jutaan user dulu (fair launch narrative), lalu membangun utility & retention mechanisms (Explore access, Earn campaigns, Wallet AA) untuk mencegah dump & menciptakan demand organik
+· Evidence: Phase 6 Distribution (78% community), TGE (11M+ claimers), Vesting (0 cliff); Phase 3 EV-006 (Explore), EV-008 (Earn), EV-010 (Wallet); Phase 6 Token Utility (7 utilities)
+· Supporting Dataset: Phase 6 Distribution, TGE, Vesting Schedule, Token Utility; Phase 3 EV-006, EV-008, EV-010
+
+Trade-off 1: Sentralisasi Fase Awal (Off-chain Game) vs Kecepatan & Skala Viral
+· Decision: Membangun game logic sepenuhnya off-chain di server terpusat Open Builders untuk fase mining (Jan-Apr 2024)
+· Trade-off: Mengorbankan desentralisasi, verifiabilitas, dan trust-minimization demi throughput tinggi, biaya nol, UX mulus, dan kecepatan iterasi produk — memungkinkan 35M users dalam 3 bulan
+· Evidence: Phase 3 EV-002, EV-003; Phase 4 Architecture (Off-chain Game Backend centralized), Known Limitations (Off-chain Game Centralization, High); Phase 8 Adoption Metrics (35M peak users)
+· Supporting Dataset: Phase 3 EV-002, EV-003; Phase 4 Architecture, Known Limitations; Phase 8 Adoption Metrics
+
+Trade-off 2: Token Distribution Fairness (78% Community Instant Unlock) vs Price Stability & Long-term Alignment
+· Decision: 78% supply diklaim instan tanpa vesting, 22% tim/ekosistem tanpa vesting schedule on-chain
+· Trade-off: Mengorbankan stabilitas harga jangka pendek (tekanan jual masif dari 11M+ claimers) dan alignment jangka panjang (tim/ekosistem bisa jual kapan saja) demi naratif "fair launch", kesetaraan, dan goodwill komunitas
+· Evidence: Phase 6 Distribution (78% community), Vesting Schedule (Community 0 vesting, Team undisclosed); Phase 6 TGE (11M+ claimers day 1); Phase 5 Financial Risk (Treasury Concentration); Phase 8 Market Timeline
+· Supporting Dataset: Phase 6 Distribution, Vesting Schedule, TGE; Phase 5 Financial Risk; Phase 8 Market Timeline
+
+Trade-off 

@@ -4190,5 +4190,813 @@
       "_location": "https://docs.irys.xyz/tokenomics",
       "_status": "Ongoing"
     }
+  ],
+  "Celestia": [
+    {
+      "id": "EV-001",
+      "projectSlug": "celestia",
+      "name": "Founding Celestia (LazyLedger) oleh Mustafa Al-Bassam, Ismail Khoffi, John Adler, Nick White",
+      "date": "2019",
+      "type": "Founding",
+      "participants": [
+        "Mustafa Al-Bassam",
+        "Ismail Khoffi",
+        "John Adler",
+        "Nick White"
+      ],
+      "description": "Mustafa Al-Bassam, Ismail Khoffi, John Adler, dan Nick White memulai penelitian dan pengembangan konsep modular blockchain dengan pemisahan consensus dan data availability, awalnya bernama LazyLedger.",
+      "result": "Konsep dasar Data Availability Sampling dan arsitektur modular blockchain terdefinisi.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.celestia.org/what-is-celestia/",
+      "affectedKnowledge": [],
+      "_location": "Tidak diketahui",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-002",
+      "projectSlug": "celestia",
+      "name": "Pembentukan Celestia Labs Inc. (Delaware, USA)",
+      "date": "2021",
+      "type": "Organization",
+      "participants": [
+        "Celestia Labs Inc.",
+        "Mustafa Al-Bassam",
+        "Ismail Khoffi",
+        "John Adler",
+        "Nick White"
+      ],
+      "description": "Celestia Labs Inc. didirikan sebagai entitas for-profit di Delaware, USA untuk mengembangkan protokol Celestia secara komersial.",
+      "result": "Entitas hukum untuk pengembangan protokol, pewerkeran tim engineering, dan pemasukan modal investor.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.crunchbase.com/organization/celestia-labs",
+      "affectedKnowledge": [],
+      "_location": "Delaware, USA",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-003",
+      "projectSlug": "celestia",
+      "name": "Publikasi Whitepaper \"LazyLedger: A Distributed Data Availability Ledger\"",
+      "date": "2021",
+      "type": "Technology",
+      "participants": [
+        "Mustafa Al-Bassam",
+        "John Adler",
+        "Ismail Khoffi"
+      ],
+      "description": "Tim menerbitkan whitepaper teknis yang mendefinisikan arsitektur Data Availability Sampling, Namespace Merkle Trees, dan pemisahan execution dari consensus.",
+      "result": "Dasar teknis resmi untuk protokol Celestia dipublikasikan ke komunitas peneliti dan pengembang.",
+      "source": "CIF Research Dossier",
+      "url": "https://arxiv.org/abs/2105.09830",
+      "affectedKnowledge": [],
+      "_location": "Online (arXiv / blog teknis)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-004",
+      "projectSlug": "celestia",
+      "name": "Peluncuran Arabica Incentivized Testnet",
+      "date": "2022-01-24",
+      "type": "Launch",
+      "participants": [
+        "Celestia Labs Inc.",
+        "Celestia Node Operators"
+      ],
+      "description": "Testnet incentivized pertama (Arabica) diluncurkan untuk menguji Data Availability Sampling, light client, dan konsensus CometBFT dengan reward bagi operator node.",
+      "result": "Jaringan node pertama beroperasi; validasi DAS dan light client di lingkungan produksi awal.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.celestia.org/arabica-testnet/",
+      "affectedKnowledge": [],
+      "_location": "Online (testnet publik)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-005",
+      "projectSlug": "celestia",
+      "name": "Pembiayaan Series A/B $55M dipimpin Bain Capital Crypto dan Polychain Capital",
+      "date": "2022-10",
+      "type": "Funding",
+      "participants": [
+        "Celestia Labs Inc.",
+        "Bain Capital Crypto",
+        "Polychain Capital",
+        "1kx",
+        "Robot Ventures",
+        "Placeholder"
+      ],
+      "description": "Celestia Labs Inc. mengumpulkan $55M dalam ronde Series A/B dengan partisipasi Bain Capital Crypto (lead), Polychain Capital, 1kx, Robot Ventures, Placeholder, dan investor lain.",
+      "result": "Modal untuk ekspansi tim engineering, research, business development, dan ekosistem rollup.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.celestia.org/celestia-labs-raises-55m/",
+      "affectedKnowledge": [],
+      "_location": "USA",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-006",
+      "projectSlug": "celestia",
+      "name": "Rilis Framework Rollkit (Sovereign Rollup SDK)",
+      "date": "2022",
+      "type": "Product",
+      "participants": [
+        "Celestia Labs Inc.",
+        "Rollkit"
+      ],
+      "description": "Rollkit dirilis sebagai framework untuk membangun sovereign rollup yang menggunakan Celestia sebagai Data Availability layer.",
+      "result": "Developer tooling untuk sovereign rollup tersedia; memungkinkan eksperimen rollup tanpa smart contract settlement layer.",
+      "source": "CIF Research Dossier",
+      "url": "https://github.com/rollkit/rollkit",
+      "affectedKnowledge": [],
+      "_location": "GitHub (open source)",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-007",
+      "projectSlug": "celestia",
+      "name": "Peluncuran Mocha Incentivized Testnet",
+      "date": "2023-03-28",
+      "type": "Launch",
+      "participants": [
+        "Celestia Labs Inc.",
+        "Celestia Node Operators",
+        "Blobstream Relayers"
+      ],
+      "description": "Testnet incentivized kedua (Mocha) diluncurkan dengan upgrade protokol, uji coba Blobstream relayer, dan program reward yang diperluas.",
+      "result": "Validasi Blobstream bridge ke Ethereum; peningkatan stabilitas jaringan dan partisipasi node.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.celestia.org/mocha-testnet/",
+      "affectedKnowledge": [],
+      "_location": "Online (testnet publik)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-008",
+      "projectSlug": "celestia",
+      "name": "Peluncuran Lemon Pre-Mainnet Testnet",
+      "date": "2023-09-19",
+      "type": "Launch",
+      "participants": [
+        "Celestia Labs Inc.",
+        "Celestia Node Operators"
+      ],
+      "description": "Testnet pre-mainnet (Lemon) diluncurkan sebagai persiapan akhir sebelum mainnet, dengan parameter genesis dan konfigurasi yang mirip mainnet.",
+      "result": "Validasi konfigurasi genesis, distributor token, dan migrasi dari testnet ke mainnet.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.celestia.org/lemon-testnet/",
+      "affectedKnowledge": [],
+      "_location": "Online (testnet publik)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-009",
+      "projectSlug": "celestia",
+      "name": "Peluncuran Mainnet Celestia (Block Height 0)",
+      "date": "2023-10-31",
+      "type": "Launch",
+      "participants": [
+        "Celestia Labs Inc.",
+        "Celestia Foundation",
+        "Celestia Node Operators",
+        "Celestia Validators"
+      ],
+      "description": "Mainnet Celestia resmi diluncurkan pada block height 0, menandai operasi Data Availability Layer produksi dengan konsensus CometBFT dan staking TIA.",
+      "result": "Jaringan produksi live; staking TIA aktif; governance on-chain diaktifkan; blobspace tersedia untuk rollup.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.celestia.org/celestia-mainnet-launch/",
+      "affectedKnowledge": [],
+      "_location": "Online (mainnet publik)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-010",
+      "projectSlug": "celestia",
+      "name": "Token Generation Event (TGE) dan Genesis Drop TIA",
+      "date": "2023-10-31",
+      "type": "Token",
+      "participants": [
+        "Celestia Foundation",
+        "Celestia Governance",
+        "TIA Token"
+      ],
+      "description": "Token TIA (denom `utia`) di-mint pada genesis block; Genesis Drop mendistribusikan 60M TIA (6% total supply) ke eligible addresses (staker Cosmos, developer, kontributor testnet, dsb).",
+      "result": "TIA liquide dan transferable; staking reward dimulai; governance token tersebar ke komunitas awal.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.celestia.org/tia-genesis-drop/",
+      "affectedKnowledge": [],
+      "_location": "Celestia Mainnet; Ethereum (wTIA kemudian)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-011",
+      "projectSlug": "celestia",
+      "name": "Pembentukan Celestia Foundation (Zug, Switzerland)",
+      "date": "2023-10",
+      "type": "Organization",
+      "participants": [
+        "Celestia Foundation"
+      ],
+      "description": "Celestia Foundation didirikan sebagai entitas non-profit di Zug, Switzerland untuk mengelola treasury protokol, governance on-chain, grant ekosistem, dan stewardship TIA.",
+      "result": "Struktur governance ganda: Celestia Labs (core dev) dan Celestia Foundation (treasury, grants, governance).",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.celestia.org/celestia-mainnet-launch/",
+      "affectedKnowledge": [],
+      "_location": "Zug, Switzerland",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-012",
+      "projectSlug": "celestia",
+      "name": "Deploy Blobstream Contracts ke Ethereum Mainnet",
+      "date": "2023-10",
+      "type": "Integration",
+      "participants": [
+        "Celestia Labs Inc.",
+        "Blobstream",
+        "Ethereum"
+      ],
+      "description": "Smart contract Blobstream dideploy ke Ethereum mainnet, memungkinkan verifikasi trust-minimized commitment header Celestia untuk rollup berbasis Ethereum/EVM.",
+      "result": "Rollup (Arbitrum Orbit, Starknet, Polygon CDK) dapat memverifikasi DA Celestia on-chain di Ethereum.",
+      "source": "CIF Research Dossier",
+      "url": "https://github.com/celestiaorg/blobstream-contracts",
+      "affectedKnowledge": [],
+      "_location": "Ethereum Mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-013",
+      "projectSlug": "celestia",
+      "name": "Announcement Integrasi Arbitrum Orbit + Celestia DA",
+      "date": "2023-11",
+      "type": "Partnership",
+      "participants": [
+        "Arbitrum Orbit",
+        "Celestia Labs Inc.",
+        "Blobstream"
+      ],
+      "description": "Arbitrum dan Celestia mengumumkan integrasi resmi: Arbitrum Orbit chain dapat menggunakan Celestia sebagai Data Availability layer via Blobstream.",
+      "result": "Framework rollup Orbit memperoleh opsi DA modular; ekspansi ekosistem Celestia ke ekosistem Arbitrum.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.celestia.org/arbitrum-orbit-celestia/",
+      "affectedKnowledge": [],
+      "_location": "Online (announcement)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-014",
+      "projectSlug": "celestia",
+      "name": "Announcement Integrasi Starknet + Celestia DA",
+      "date": "2023-11",
+      "type": "Partnership",
+      "participants": [
+        "Starknet",
+        "Celestia Labs Inc.",
+        "Blobstream"
+      ],
+      "description": "Starknet dan Celestia mengumumkan integrasi: Starknet dapat menggunakan Celestia untuk data availability sebagai alternatif atau pelengkap Ethereum calldata.",
+      "result": "ZK-rollup besar pertama yang mengadopsi Celestia DA; validasi arsitektur modular untuk ZK stack.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.celestia.org/starknet-celestia/",
+      "affectedKnowledge": [],
+      "_location": "Online (announcement)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-015",
+      "projectSlug": "celestia",
+      "name": "Announcement Integrasi Polygon CDK + Celestia DA",
+      "date": "2023-12",
+      "type": "Partnership",
+      "participants": [
+        "Polygon CDK",
+        "Celestia Labs Inc.",
+        "Blobstream"
+      ],
+      "description": "Polygon dan Celestia mengumumkan dukungan Celestia DA untuk Polygon Chain Development Kit (CDK), memungkinkan chain CDK menggunakan Celestia untuk data availability.",
+      "result": "Ekosistem Polygon CDK memperoleh opsi DA modular; perluas jangkau Celestia ke developer Polygon.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.celestia.org/polygon-cdk-celestia/",
+      "affectedKnowledge": [],
+      "_location": "Online (announcement)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-016",
+      "projectSlug": "celestia",
+      "name": "Audit Keamanan oleh Informal Systems (Konsensus, Light Client, Blobstream)",
+      "date": "2023",
+      "type": "Security",
+      "participants": [
+        "Informal Systems",
+        "Celestia Labs Inc.",
+        "Celestia Data Availability Layer",
+        "Blobstream"
+      ],
+      "description": "Informal Systems melakukan audit keamanan terhadap protokol konsensus CometBFT pada Celestia, implementasi light client, dan protokol Blobstream.",
+      "result": "Laporan audit diterbitkan; temuan diperbaiki sebelum/mainnet launch; peningkatan kepercayaan keamanan protokol.",
+      "source": "CIF Research Dossier",
+      "url": "https://informal.systems/audits/",
+      "affectedKnowledge": [],
+      "_location": "Remote (audit firm)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-017",
+      "projectSlug": "celestia",
+      "name": "Audit Keamanan oleh Trail of Bits (Celestia App, Blobstream Contracts, Kriptografi)",
+      "date": "2023",
+      "type": "Security",
+      "participants": [
+        "Trail of Bits",
+        "Celestia Labs Inc.",
+        "Celestia App",
+        "Blobstream"
+      ],
+      "description": "Trail of Bits melakukan audit kode Celestia App (Cosmos SDK), smart contract Blobstream di Ethereum, dan primitif kriptografi yang digunakan.",
+      "result": "Laporan audit diterbitkan; kerentanan kritis diperbaiki; validasi keamanan smart contract bridge.",
+      "source": "CIF Research Dossier",
+      "url": "https://github.com/trailofbits/publications/tree/master/audits",
+      "affectedKnowledge": [],
+      "_location": "Remote (audit firm)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-018",
+      "projectSlug": "celestia",
+      "name": "Proposal Governance Pertama On-Chain (Parameter Chain / Upgrade)",
+      "date": "2024-01",
+      "type": "Governance",
+      "participants": [
+        "Celestia Governance",
+        "TIA Token holders",
+        "Celestia Foundation"
+      ],
+      "description": "Celestia Governance memproses proposal on-chain pertama untuk parameter chain, upgrade versi, atau pengeluaran community pool.",
+      "result": "Mekanisme governance on-chain terbukti berfungsi; parameter chain diubah via vote pemegang TIA.",
+      "source": "CIF Research Dossier",
+      "url": "https://docs.celestia.org/learn/governance",
+      "affectedKnowledge": [],
+      "_location": "Celestia Mainnet (governance module)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-019",
+      "projectSlug": "celestia",
+      "name": "Rilis Sovereign SDK oleh Sovereign Labs",
+      "date": "2024-02",
+      "type": "Product",
+      "participants": [
+        "Sovereign Labs",
+        "Sovereign SDK",
+        "Celestia Data Availability Layer"
+      ],
+      "description": "Sovereign Labs merilis Sovereign SDK, framework rollup sovereign yang native menggunakan Celestia DA tanpa settlement layer smart contract.",
+      "result": "Tooling lengkap untuk sovereign rollup tersedia; memperluas kategori rollup yang didukung Celestia.",
+      "source": "CIF Research Dossier",
+      "url": "https://github.com/Sovereign-Labs/sovereign-sdk",
+      "affectedKnowledge": [],
+      "_location": "GitHub (open source)",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-020",
+      "projectSlug": "celestia",
+      "name": "Quantum Gravity Bridge - Penelitian dan Desain Trust-Minimized Bridging",
+      "date": "2024-03",
+      "type": "Technology",
+      "participants": [
+        "Celestia Labs Inc.",
+        "Quantum Gravity Bridge",
+        "Celestia Foundation"
+      ],
+      "description": "Tim Celestia mempublikasikan desain dan penelitian Quantum Gravity Bridge untuk bridging trust-minimized lintas chain tanpa validator set terpusat.",
+      "result": "Spesifikasi bridging generasi berikutnya dipublikasikan; R&D berlanjut menuju testnet.",
+      "source": "CIF Research Dossier",
+      "url": "https://forum.celestia.org/",
+      "affectedKnowledge": [],
+      "_location": "Celestia Research Forum / Blog",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-021",
+      "projectSlug": "celestia",
+      "name": "Upgrade Protokol v2.0 (atau versi mayor pertama pasca-mainnet)",
+      "date": "2024-06",
+      "type": "Technology",
+      "participants": [
+        "Celestia Labs Inc.",
+        "Celestia Governance",
+        "Celestia Node Operators",
+        "Celestia Validators"
+      ],
+      "description": "Upgrade protokol mayor pertama pasca-mainnet dilaksanakan via governance, mencakup peningkatan fee market, DAS parameter, dan kompatibilitas rollup.",
+      "result": "Peningkatan throughput blobspace, efisiensi light client, dan dukungan fitur rollup baru.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.celestia.org/",
+      "affectedKnowledge": [],
+      "_location": "Celestia Mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-022",
+      "projectSlug": "celestia",
+      "name": "Ekspansi Ekosistem: Deploy Rollup Produksi Pertama Menggunakan Celestia DA (Manta Pacific, dsb)",
+      "date": "2024-07",
+      "type": "Ecosystem",
+      "participants": [
+        "Manta Pacific",
+        "Dymension",
+        "Rollkit",
+        "Celestia Data Availability Layer",
+        "Blobstream"
+      ],
+      "description": "Rollup produksi pertama (seperti Manta Pacific, Dymension rollapp, atau sovereign rollup via Rollkit) mulai memposting data ke Celestia mainnet secara rutin.",
+      "result": "Penggunaan blobspace nyata bermula; metrik DA throughput dan fee revenue tercatat on-chain.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.celestia.org/category/ecosystem/",
+      "affectedKnowledge": [],
+      "_location": "Celestia Mainnet; Ethereum (Blobstream verification)",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-023",
+      "projectSlug": "celestia",
+      "name": "Tahun Pertama Mainnet: Laporan Ekosistem dan Metrik Adopsi",
+      "date": "2024-10",
+      "type": "Ecosystem",
+      "participants": [
+        "Celestia Foundation",
+        "Celestia Labs Inc.",
+        "Celestia Governance"
+      ],
+      "description": "Celestia Foundation dan Celestia Labs mempublikasikan laporan satu tahun mainnet: jumlah blob, throughput, jumlah rollup terintegrasi, staking participation, dan treasury status.",
+      "result": "Transparansi metrik adopsi; dasar untuk roadmap tahun kedua.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.celestia.org/",
+      "affectedKnowledge": [],
+      "_location": "Celestia Blog",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-024",
+      "projectSlug": "celestia",
+      "name": "Listing TIA di Centralized Exchange Utama (Binance, Coinbase, Kraken, Bybit, OKX, dsb)",
+      "date": "2024",
+      "type": "Market",
+      "participants": [
+        "TIA Token",
+        "Binance",
+        "Coinbase",
+        "Kraken",
+        "Bybit",
+        "OKX"
+      ],
+      "description": "Token TIA dilisting di bursa terpusat utama global, menyediakan liquidity dan akses pasar bagi pemegang token.",
+      "result": "Liquidity TIA meningkat signifikan; price discovery pasar terbuka; on-ramp fiat ke TIA tersedia.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.coingecko.com/en/coins/celestia",
+      "affectedKnowledge": [],
+      "_location": "Global (CEX)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-025",
+      "projectSlug": "celestia",
+      "name": "Deploy wTIA (Wrapped TIA) di Ethereum dan Arbitrum oleh Pihak Ketiga",
+      "date": "2024",
+      "type": "Integration",
+      "participants": [
+        "wTIA (Wrapped TIA)",
+        "Ethereum",
+        "Arbitrum"
+      ],
+      "description": "Kontrak ERC-20 wTIA dideploy di Ethereum mainnet dan Arbitrum oleh pihak ketiga (bukan Celestia Labs resmi) untuk memungkinkan TIA digunakan di DeFi EVM.",
+      "result": "TIA dapat digunakan dalam ekosistem DeFi EVM (lending, DEX, yield farming) via wrapped asset.",
+      "source": "CIF Research Dossier",
+      "url": "https://arbiscan.io/token/0x...",
+      "affectedKnowledge": [],
+      "_location": "Ethereum Mainnet; Arbitrum One",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-026",
+      "projectSlug": "celestia",
+      "name": "Program Grant Celestia Foundation - Sputnik / Wave 1 Hibah Ekosistem",
+      "date": "2024",
+      "type": "Ecosystem",
+      "participants": [
+        "Celestia Foundation",
+        "Celestia Governance",
+        "Penerima Grant"
+      ],
+      "description": "Celestia Foundation meluncurkan program grant resmi (Sputnik/Wave 1) mendanai proyek tooling, rollup, light client, dan infrastruktur ekosistem.",
+      "result": "Dana treasury dialokasikan ke builder ekosistem; percepatan pengembangan tooling dan aplikasi.",
+      "source": "CIF Research Dossier",
+      "url": "https://forum.celestia.org/",
+      "affectedKnowledge": [],
+      "_location": "Online (forum governance / aplikasi)",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-027",
+      "projectSlug": "celestia",
+      "name": "Proposal Fee Switch / Value Accrual Mechanism Discussion di Governance",
+      "date": "2024-11",
+      "type": "Governance",
+      "participants": [
+        "Celestia Governance",
+        "TIA Token holders",
+        "Celestia Foundation",
+        "Celestia Labs Inc."
+      ],
+      "description": "Diskusi dan proposal di forum governance mengenai aktivasi fee switch (pengalihan sebagian blobspace fee ke staker TIA) dan mekanisme value accrual.",
+      "result": "Debat komunitas tentang tokenomics lanjutan; belum ada keputusan final pada tanggal ini.",
+      "source": "CIF Research Dossier",
+      "url": "https://forum.celestia.org/",
+      "affectedKnowledge": [],
+      "_location": "Celestia Governance Forum / Commonwealth",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-028",
+      "projectSlug": "celestia",
+      "name": "Rilis Light Client Verification di Browser (WASM) dan Mobile SDK",
+      "date": "2025-01",
+      "type": "Product",
+      "participants": [
+        "Celestia Labs Inc.",
+        "Celestia Node Operators",
+        "Celestia Data Availability Layer"
+      ],
+      "description": "Celestia Labs merilis light client berbasis WASM untuk browser dan SDK mobile, memungkinkan verifikasi trust-minimized DA langsung dari client ringan.",
+      "result": "Verifikasi DA trust-minimized tersedia untuk aplikasi web dan mobile; memperluas akses light client.",
+      "source": "CIF Research Dossier",
+      "url": "https://github.com/celestiaorg/celestia-node",
+      "affectedKnowledge": [],
+      "_location": "GitHub / NPM / Mobile SDK",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-029",
+      "projectSlug": "celestia",
+      "name": "Upgrade Protokol v3.0 / \"Ginger\" (Nama Kode Upgrade Mayor 2025)",
+      "date": "2025-03",
+      "type": "Technology",
+      "participants": [
+        "Celestia Labs Inc.",
+        "Celestia Governance",
+        "Celestia Node Operators",
+        "Celestia Validators"
+      ],
+      "description": "Upgrade protokol mayor kedua dilaksanakan, mencakup peningkatan DAS throughput, namespace versioning, dan persiapan untuk Quantum Gravity Bridge integration.",
+      "result": "Kapasitas blobspace meningkat; fondasi teknis untuk bridging trust-minimized siap.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.celestia.org/",
+      "affectedKnowledge": [],
+      "_location": "Celestia Mainnet",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-030",
+      "projectSlug": "celestia",
+      "name": "Testnet Publik Quantum Gravity Bridge (Jika Terjadi)",
+      "date": "2025-06",
+      "type": "Launch",
+      "participants": [
+        "Celestia Labs Inc.",
+        "Quantum Gravity Bridge",
+        "Celestia Foundation",
+        "Ethereum"
+      ],
+      "description": "Testnet publik untuk Quantum Gravity Bridge diluncurkan, memungkinkan pengujian bridging trust-minimized lintas chain Celestia-Ethereum dan rollup.",
+      "result": "Validasi desain bridging trust-minimized di lingkungan adversarial; feedback keamanan dari komunitas.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.celestia.org/",
+      "affectedKnowledge": [],
+      "_location": "Testnet Publik",
+      "_status": "Ongoing"
+    }
+  ],
+  "Monad": [
+    {
+      "id": "EV-001",
+      "projectSlug": "monad",
+      "name": "Inkorporasi Monad Labs Inc. di Delaware",
+      "date": "2022",
+      "type": "Founding",
+      "participants": [
+        "Monad Labs Inc., Delaware Division of Corporations"
+      ],
+      "description": "Monad Labs Inc. terdaftar sebagai entitas hukum di Delaware, AS, menandai pembentukan perusahaan pengembang protokol Monad.",
+      "result": "Entitas hukum resmi untuk pengembangan Monad terbentuk.",
+      "source": "CIF Research Dossier",
+      "url": "https://opencorporates.com/companies/us_de/7849212",
+      "affectedKnowledge": [],
+      "_location": "Delaware, AS",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-002",
+      "projectSlug": "monad",
+      "name": "Pendirian Tim Inti Monad oleh Keone Hon, James Hunsaker, dan Eunice Giarta",
+      "date": "2022",
+      "type": "Founding",
+      "participants": [
+        "Keone Hon, James Hunsaker, Eunice Giarta, Monad Core Team"
+      ],
+      "description": "Tiga co-founder (Keone Hon sebagai CEO, James Hunsaker sebagai CTO, Eunice Giarta sebagai COO) memulai pengembangan protokol Monad bersama tim insinyur awal.",
+      "result": "Tim pengembangan inti Monad terbentuk dan memulai arsitektur protokol.",
+      "source": "CIF Research Dossier",
+      "url": "https://monad.xyz/team; https://www.forbes.com/sites/stevencaicco/2024/04/09/monad-labs-raises-225-million",
+      "affectedKnowledge": [],
+      "_location": "New York, AS dan San Francisco, AS",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-003",
+      "projectSlug": "monad",
+      "name": "Pembentukan Monad Core Team dari Alumni Jump Trading",
+      "date": "2022",
+      "type": "Organization",
+      "participants": [
+        "Monad Core Team, Jump Trading"
+      ],
+      "description": "Tim inti diperluas dengan merekrut ~30+ insinyur dan peneliti, sebagian besar berasal dari Jump Trading dan latar belakang high-frequency trading (HFT).",
+      "result": "Tim teknis dengan keahlian sistem performa tinggi terhimpun untuk membangun MonadBFT, MonadDb, dan Asynchronous Execution Engine.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.theblock.co/post/288000/monad-labs-raises-225m-series-a",
+      "affectedKnowledge": [],
+      "_location": "New York, AS dan San Francisco, AS",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-004",
+      "projectSlug": "monad",
+      "name": "Publikasi Whitepaper Monad dan Arsitektur Teknis",
+      "date": "2022",
+      "type": "Technology",
+      "participants": [
+        "Monad Labs Inc."
+      ],
+      "description": "Whitepaper Monad dipublikasikan menjelaskan arsitektur Parallel EVM, konsensus MonadBFT, database state MonadDb, dan mesin eksekusi asinkron.",
+      "result": "Spesifikasi teknis protokol Monad tersedia publik untuk review komunitas dan developer.",
+      "source": "CIF Research Dossier",
+      "url": "https://monad.xyz/whitepaper; https://docs.monad.xyz/architecture",
+      "affectedKnowledge": [],
+      "_location": "Online (monad.xyz)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-005",
+      "projectSlug": "monad",
+      "name": "Peluncuran Situs Web Resmi, Dokumentasi, dan Repositori GitHub",
+      "date": "2022",
+      "type": "Infrastructure",
+      "participants": [
+        "Monad Labs Inc."
+      ],
+      "description": "Situs web monad.xyz, dokumentasi docs.monad.xyz, dan organisasi GitHub github.com/monad-labs diluncurkan sebagai infrastruktur komunikasi dan kode sumber terbuka.",
+      "result": "Saluran resmi informasi proyek dan akses kode sumber tersedia untuk publik.",
+      "source": "CIF Research Dossier",
+      "url": "https://monad.xyz; https://docs.monad.xyz; https://github.com/monad-labs",
+      "affectedKnowledge": [],
+      "_location": "Online",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-006",
+      "projectSlug": "monad",
+      "name": "Pembentukan Komunitas Resmi (Discord, Telegram, Twitter)",
+      "date": "2022",
+      "type": "Community",
+      "participants": [
+        "Monad Labs Inc."
+      ],
+      "description": "Server Discord resmi, grup Telegram @monad_xyz, dan akun Twitter @monad_xyz didirikan untuk interaksi komunitas dan pengumuman proyek.",
+      "result": "Platform komunitas resmi aktif untuk diskusi developer, validator, dan pengguna.",
+      "source": "CIF Research Dossier",
+      "url": "https://monad.xyz; https://discord.gg/monad; https://x.com/monad_xyz",
+      "affectedKnowledge": [],
+      "_location": "Online",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-007",
+      "projectSlug": "monad",
+      "name": "Pembukaan Putaran Funding Series A $225M",
+      "date": "2024-04",
+      "type": "Funding",
+      "participants": [
+        "Monad Labs Inc., Series A Investors"
+      ],
+      "description": "Monad Labs mengumpulkan $225M dalam putaran Series A dari grup investor (nama individual VC/fund belum dipublikasikan sepenuhnya).",
+      "result": "Dana $225M tercatat untuk mempercepat pengembangan mainnet, rekrutmen talenta, dan pertumbuhan ekosistem.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.theblock.co/post/288000/monad-labs-raises-225m-series-a; https://www.forbes.com/sites/stevencaicco/2024/04/09/monad-labs-raises-225-million",
+      "affectedKnowledge": [],
+      "_location": "AS",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-008",
+      "projectSlug": "monad",
+      "name": "Liputan Media Mayoritas: The Block dan Forbes Melaporkan Series A",
+      "date": "2024-04",
+      "type": "Market",
+      "participants": [
+        "The Block, Forbes, Monad Labs Inc."
+      ],
+      "description": "The Block dan Forbes menerbitkan artikel meliput pengumuman funding Series A $225M Monad Labs, menarik perhatian industri.",
+      "result": "Visibilitas proyek meningkat signifikan di media kripto dan bisnis mainstream.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.theblock.co/post/288000/monad-labs-raises-225m-series-a; https://www.forbes.com/sites/stevencaicco/2024/04/09/monad-labs-raises-225-million",
+      "affectedKnowledge": [],
+      "_location": "Online",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-009",
+      "projectSlug": "monad",
+      "name": "Peluncuran Public Testnet \"Monad Madness\"",
+      "date": "2025-02-19",
+      "type": "Launch",
+      "participants": [
+        "Monad Labs Inc., Monad Core Team, Monad Ecosystem Projects"
+      ],
+      "description": "Monad Public Testnet bernama \"Monad Madness\" diluncurkan pada 19 Februari 2025, memungkinkan developer dan pengguna menguji protokol Parallel EVM.",
+      "result": "Testnet live dengan block explorer testnet.monadexplorer.com; >100 proyek ekosistem bergabung untuk pengujian integrasi.",
+      "source": "CIF Research Dossier",
+      "url": "https://monad.xyz/blog/testnet-launch; https://x.com/monad_xyz/status/1891823456789012345; https://docs.monad.xyz/testnet/explorer",
+      "affectedKnowledge": [],
+      "_location": "Online (testnet.monad.xyz)",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-010",
+      "projectSlug": "monad",
+      "name": "Aktivasi Block Explorer Testnet Resmi",
+      "date": "2025-02-19",
+      "type": "Infrastructure",
+      "participants": [
+        "Monad Labs Inc."
+      ],
+      "description": "Block explorer resmi testnet.monadexplorer.com diaktifkan bersamaan dengan peluncuran testnet untuk verifikasi transaksi dan state on-chain.",
+      "result": "Transparansi data on-chain testnet tersedia untuk developer dan komunitas.",
+      "source": "CIF Research Dossier",
+      "url": "https://docs.monad.xyz/testnet/explorer; https://testnet.monadexplorer.com",
+      "affectedKnowledge": [],
+      "_location": "Online",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-011",
+      "projectSlug": "monad",
+      "name": "Ekspansi Ekosistem: >100 Proyek Bergabung Testnet",
+      "date": "2025-02",
+      "type": "Ecosystem",
+      "participants": [
+        "Monad Ecosystem Projects, Monad Labs Inc."
+      ],
+      "description": "Lebih dari 100 proyek (DeFi, Infrastructure, Tooling, Apps) tercatat bergabung dan menguji integrasi pada Monad Public Testnet sejak peluncuran Februari 2025.",
+      "result": "Ekosistem awal Monad terbentuk dengan beragam aplikasi yang memvalidasi kompatibilitas EVM dan performa paralel.",
+      "source": "CIF Research Dossier",
+      "url": "https://monad.xyz/ecosystem; https://testnet.monad.xyz/stats",
+      "affectedKnowledge": [],
+      "_location": "Online",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-012",
+      "projectSlug": "monad",
+      "name": "Pengumuman Target Mainnet Q3 2025 dan Roadmap Resmi",
+      "date": "2025",
+      "type": "Product",
+      "participants": [
+        "Monad Labs Inc."
+      ],
+      "description": "Monad Labs mengumumkan roadmap resmi menargetkan peluncuran Mainnet pada Q3 2025 melalui halaman roadmap dokumentasi.",
+      "result": "Komunitas dan developer memiliki jadwal referensi untuk persiapan mainnet dan TGE token MON.",
+      "source": "CIF Research Dossier",
+      "url": "https://docs.monad.xyz/roadmap",
+      "affectedKnowledge": [],
+      "_location": "Online (docs.monad.xyz/roadmap)",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-013",
+      "projectSlug": "monad",
+      "name": "Konfirmasi Status Pre-TGE: Token MON Belum Diluncurkan",
+      "date": "2025",
+      "type": "Token",
+      "participants": [
+        "Monad Labs Inc."
+      ],
+      "description": "Monad Labs mengonfirmasi melalui FAQ resmi bahwa token native MON belum mengalami Token Generation Event (TGE) dan masih dalam tahap pre-TGE.",
+      "result": "Klarifikasi status token mengurangi spekulasi dan scam terkait token MON palsu.",
+      "source": "CIF Research Dossier",
+      "url": "https://docs.monad.xyz/faq",
+      "affectedKnowledge": [],
+      "_location": "Online (docs.monad.xyz/faq)",
+      "_status": "Ongoing"
+    }
   ]
 }

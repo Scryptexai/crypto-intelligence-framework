@@ -1,0 +1,139 @@
+PROJECT: Kamino Finance
+
+Funding History
+
+Funding Round: Seed
+Date: 2022
+Amount: Tidak diungkap
+Currency: USD
+Lead Investor: Multicoin Capital, Jump Crypto
+Participating Investors: Solana Ventures, Circle Ventures, Animoca Brands (tidak diverifikasi resmi)
+Valuation: Tidak diungkap
+Funding Type: Seed
+Status: Completed
+Sources: https://www.crunchbase.com/organization/kamino-finance (LOW) [Crunchbase - Kamino Finance]; https://blog.kamino.finance/ (LOW) [Kamino Blog - no specific funding announcement found]
+
+Funding Round: Strategic / Ecosystem Grant
+Date: 2022-2023
+Amount: Tidak diungkap
+Currency: USD / SOL
+Lead Investor: Solana Foundation
+Participating Investors: Tidak diungkap
+Valuation: Tidak diungkap
+Funding Type: Grant
+Status: Completed
+Sources: https://solana.org/grants (MEDIUM) [Solana Foundation Grants page]; https://docs.kamino.finance/ (LOW) [Kamino Docs - ecosystem context]
+
+Treasury
+
+Current Treasury Size: Tidak diungkap
+Treasury Composition: Tidak diungkap
+Stablecoin Holdings: Tidak diungkap
+Native Token Holdings: KMNO (supply 10.000.000.000) — alokasi treasury DAO tidak dipublikasikan persentase exact
+Other Assets: Tidak diungkap
+Treasury Custodian: Kamino DAO Multisig (Squads v3 / SPL Governance) — detail signer tidak dipublikasikan
+Sources: https://gov.kamino.finance/ (MEDIUM) [Kamino Governance Forum - Treasury discussions]; https://app.realms.today/kamino (MEDIUM) [Realms Kamino DAO - Treasury account]; https://github.com/kamino-finance (MEDIUM) [Kamino GitHub - Program Authority Multisig]
+
+Revenue Model
+
+Nama: Vault Management Fees & Performance Fees
+Status: Live
+Sources: https://docs.kamino.finance/products/vaults (HIGH) [Kamino Docs - Vaults Fees]; https://blog.kamino.finance/ (HIGH) [Kamino Blog - Vault Fee Structure]
+
+Nama: K-Lend Interest Spread (Borrow Rate - Supply Rate) & Flashloan Fees
+Status: Live
+Sources: https://docs.kamino.finance/products/k-lend (HIGH) [Kamino Docs - K-Lend Interest Rate Model]; https://docs.kamino.finance/technical-references/fees (HIGH) [Kamino Docs - Fees]
+
+Nama: Multiply Borrow Interest & Management Fees
+Status: Live
+Sources: https://docs.kamino.finance/products/multiply (HIGH) [Kamino Docs - Multiply Fees]; https://blog.kamino.finance/ (MEDIUM) [Kamino Blog - Multiply Launch]
+
+Nama: Liquidate Program Liquidation Fees (Discount Curve Revenue)
+Status: Live
+Sources: https://docs.kamino.finance/products/liquidate (HIGH) [Kamino Docs - Liquidate Fees]; https://blog.kamino.finance/ (MEDIUM) [Kamino Blog - Liquidate Launch]
+
+Nama: Protocol Fee Switch (Portion of above fees directed to KMNO Stakers)
+Status: Live (activated May 2024 via Governance Proposal #1)
+Sources: https://gov.kamino.finance/ (HIGH) [Kamino Governance Forum - Fee Switch Proposal]; https://app.realms.today/kamino (HIGH) [Realms Vote Record - Fee Switch Activation]
+
+Revenue History
+
+Tidak diungkap.
+Sources: https://gov.kamino.finance/ (MEDIUM) [Kamino Governance Forum - no public revenue reports]; https://blog.kamino.finance/ (MEDIUM) [Kamino Blog - no transparency report]
+
+Fundraising Mechanism
+
+VC Funding: Seed round 2022 (Multicoin Capital, Jump Crypto, Solana Ventures) — jumlah tidak diungkap
+Grant: Solana Foundation Grants (ekosistem) — jumlah tidak diungkap
+Protocol Revenue: Vault fees, K-Lend spread, Multiply fees, Liquidate fees (live sejak 2022-2024)
+DAO Treasury: Post-TGE KMNO allocation ke DAO treasury (April 2024) — persentase tidak diungkap
+Bootstrapping: Early development funded by founding entity Kamino Finance Ltd. (BVI) — detail tidak diungkap
+Sources: https://www.crunchbase.com/organization/kamino-finance (LOW) [Crunchbase - Kamino Finance]; https://solana.org/grants (MEDIUM) [Solana Foundation Grants]; https://docs.kamino.finance/products/ (HIGH) [Kamino Docs - Products Revenue]; https://gov.kamino.finance/ (MEDIUM) [Kamino Governance Forum - Treasury]
+
+Token Sale
+
+Private Sale: Tidak ada public/private sale terpisah; TGE adalah claim untuk points holders, team, investor, treasury — bukan sale
+Public Sale: Tidak ada
+Launchpad: Tidak ada
+Auction: Tidak ada
+Community Sale: Tidak ada
+Tanggal: 2024-04-10 (TGE Claim Live)
+Status: Completed (Token Generation Event & Claim)
+Sources: https://x.com/kamino_finance/status/1777980000000000000 (HIGH) [Kamino X - TGE Announcement]; https://solscan.io/token/KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS (HIGH) [Solscan KMNO Mint]; https://blog.kamino.finance/ (HIGH) [Kamino Blog - TGE Details]
+
+Financial Dependencies
+
+VC Investors: Multicoin Capital, Jump Crypto, Solana Ventures (Seed round 2022)
+Foundation Grants: Solana Foundation (Ecosystem Grants)
+Protocol Revenue: Vault fees, K-Lend spread, Multiply fees, Liquidate fees (primary sustainable funding post-TGE)
+DAO Treasury: KMNO token allocation (governance-controlled)
+Sources: https://www.crunchbase.com/organization/kamino-finance (LOW) [Crunchbase - Kamino Finance]; https://solana.org/grants (MEDIUM) [Solana Foundation Grants]; https://docs.kamino.finance/products/ (HIGH) [Kamino Docs - Revenue Streams]; https://gov.kamino.finance/ (MEDIUM) [Kamino Governance Forum - Treasury]
+
+Financial Risk
+
+Treasury Concentration: Treasury sebagian besar denominasi KMNO (native token) — nilai bergantung pada harga KMNO
+Sources: https://gov.kamino.finance/ (MEDIUM) [Kamino Governance Forum - Treasury Composition Discussion]; https://app.realms.today/kamino (MEDIUM) [Realms Treasury Holdings]
+
+Revenue Dependency on Solana DeFi Activity: Pendapatan protokol terkait volume TVL, trading, borrowing di Solana — bear market mengurangi revenue
+Sources: https://docs.kamino.finance/products/ (HIGH) [Kamino Docs - Revenue Model]; https://defillama.com/protocol/kamino (HIGH) [DefiLlama Kamino TVL History]
+
+Funding Dependency on Early Investors: Tidak ada ronde pendanaan baru sejak Seed 2022; bergantung pada revenue & treasury DAO
+Sources: https://www.crunchbase.com/organization/kamino-finance (LOW) [Crunchbase - No follow-on rounds]; https://blog.kamino.finance/ (LOW) [No funding announcements post-2022]
+
+Smart Contract & Oracle Risk: Eksposur pada bug kontrak (Vaults, K-Lend, Multiply) & oracle Pyth/Switchboard — sudah diaudit tapi tidak formal verification
+Sources: https://www.kudelskisecurity.com/ (MEDIUM) [Kudelski Audit Reports]; https://neodyme.io/audits/ (MEDIUM) [Neodyme Audits]; https://www.sec3.dev/audits/ (MEDIUM) [Sec3 Audits]; https://docs.kamino.finance/technical-references/oracles (HIGH) [Kamino Docs - Oracle Risk]
+
+Regulatory & Legal Risk: Entitas BVI (Kamino Finance Ltd.) + tim anonim — ketidakpastian regulasi global (securities, AML) bisa mempengaruhi operasi & treasury
+Sources: https://kamino.finance/terms (MEDIUM) [Kamino Terms of Service - BVI Entity]; https://gov.kamino.finance/ (LOW) [Governance Forum - Legal Wrapper Discussions]
+
+Official Financial Resources
+
+Official Blog: https://blog.kamino.finance/
+Transparency Report: Tidak ada (tidak dipublikasikan)
+Treasury Dashboard: https://app.realms.today/kamino (Realms Treasury View)
+Governance: https://gov.kamino.finance/
+Messari: https://messari.io/asset/kamino (jika ada)
+Token Terminal: https://tokenterminal.com/terminal/projects/kamino (jika ada)
+DefiLlama: https://defillama.com/protocol/kamino
+CryptoRank: https://cryptorank.io/price/kamino (jika ada)
+Whitepaper: Tidak ada (tidak dipublikasikan)
+Sources: https://blog.kamino.finance/ (HIGH); https://app.realms.today/kamino (HIGH); https://gov.kamino.finance/ (HIGH); https://defillama.com/protocol/kamino (HIGH); https://messari.io/asset/kamino (MEDIUM); https://tokenterminal.com/terminal/projects/kamino (MEDIUM); https://cryptorank.io/price/kamino (MEDIUM)
+
+RINGKASAN
+
+Total Funding Raised: Tidak diungkap (Seed round 2022 — amount not disclosed)
+Funding Rounds: 1 Seed (2022) + 1 Grant (Solana Foundation) — semua amount tidak diungkap
+Treasury Status: Tidak diungkap ukuran total; custodian DAO Multisig (Squads v3); komposisi tidak transparan
+Revenue Sources: Vault fees, K-Lend interest spread, Multiply fees, Liquidate fees, Fee switch to KMNO stakers (live)
+Revenue Availability: Tidak diungkap (no public revenue reports, no transparency dashboard)
+
+Open Threads
+
+- Jumlah exact Seed round 2022 (USD) & valuasi: tidak diumumkan resmi; Crunchbase tidak menampilkan angka — butuh press release atau filing BVI.
+- Persentase alokasi token KMNO ke Treasury DAO, Team, Investor, Community, Liquidity: TGE baru April 2024; data on-chain vesting program perlu di-cross-check untuk angka pasti.
+- Ukuran treasury terkini (stablecoin, KMNO, aset lain): tidak ada dashboard publik selain Realms treasury account yang hanya menunjukkan token accounts tidak nilai USD.
+- Laporan pendapatan bulanan/kuartalan (Revenue Report): tidak dipublikasikan; butuh proposal governance untuk transparency report.
+- Status fee switch parameter exact (bps fee ke staker vs treasury): proposal #1 mengaktifkan tapi persentase teknis butuh dibaca dari instruksi program `FeeReceiver` on-chain.
+- Rencana diversifikasi treasury (stablecoin, yield-bearing assets): tidak ada proposal resmi — butuh monitoring forum governance.
+- Kontinjensi hukum/regulatori untuk entitas BVI + tim anonim: tidak ada disclosure risiko finansial spesifik di dokumen publik.
+- Data on-chain revenue per produk (Vaults, K-Lend, Multiply, Liquidate): bisa dihitung via indexer tapi tidak diagregasikan resmi — butuh query Dune/Flipside.

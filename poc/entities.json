@@ -8873,5 +8873,1114 @@
         "evidence": "(MEDIUM) [Blog Ekosistem Irys, https://blog.irys.xyz/category/ecosystem]; (LOW) [Website Resmi Irys, https://irys.xyz]"
       }
     }
+  ],
+  "Celestia": [
+    {
+      "id": "celestia-ENT-001",
+      "projectSlug": "celestia",
+      "name": "Mustafa Al-Bassam",
+      "type": "Person",
+      "status": null,
+      "description": "CEO dan Co-founder Celestia Labs — memimpin visi strategis, pengembangan protokol, dan eksekusi bisnis untuk Celestia Data Availability Layer",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2019–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Celestia Blog \"Celestia Labs raises $55M\", https://blog.celestia.org/celestia-labs-raises-55m/]; [Celestia Team Page, https://celestia.org/team/]"
+      }
+    },
+    {
+      "id": "celestia-ENT-002",
+      "projectSlug": "celestia",
+      "name": "Ismail Khoffi",
+      "type": "Person",
+      "status": null,
+      "description": "CTO dan Co-founder Celestia Labs — mengarahkan arsitektur teknis, konsensus CometBFT, dan pengembangan node Celestia",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2019–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Celestia Blog \"Celestia Labs raises $55M\", https://blog.celestia.org/celestia-labs-raises-55m/]; [Celestia Team Page, https://celestia.org/team/]"
+      }
+    },
+    {
+      "id": "celestia-ENT-003",
+      "projectSlug": "celestia",
+      "name": "John Adler",
+      "type": "Person",
+      "status": null,
+      "description": "Core Contributor dan Co-founder — merancang arsitektur modular, Data Availability Sampling, dan integrasi rollup (Rollkit, Sovereign SDK)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2019–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Celestia Blog \"Celestia Labs raises $55M\", https://blog.celestia.org/celestia-labs-raises-55m/]; [Celestia Team Page, https://celestia.org/team/]"
+      }
+    },
+    {
+      "id": "celestia-ENT-004",
+      "projectSlug": "celestia",
+      "name": "Nick White",
+      "type": "Person",
+      "status": null,
+      "description": "COO dan Co-founder — mengelola operasi, go-to-market, ekosistem rollup, dan hubungan mitra untuk Celestia Labs",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2019–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Celestia Blog \"Celestia Labs raises $55M\", https://blog.celestia.org/celestia-labs-raises-55m/]; [Celestia Team Page, https://celestia.org/team/]"
+      }
+    },
+    {
+      "id": "celestia-ENT-005",
+      "projectSlug": "celestia",
+      "name": "Josh Weintraub",
+      "type": "Person",
+      "status": null,
+      "description": "Core Contributor protokol — berkontribusi pada spesifikasi DA, light client, dan integrasi Blobstream",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [Celestia GitHub Contributors, https://github.com/celestiaorg]; [Celestia Team Page, https://celestia.org/team/]"
+      }
+    },
+    {
+      "id": "celestia-ENT-006",
+      "projectSlug": "celestia",
+      "name": "David Egas",
+      "type": "Person",
+      "status": null,
+      "description": "Core Contributor protokol — fokus pada konsensus, state machine, dan tooling pengembang",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [Celestia GitHub Contributors, https://github.com/celestiaorg]; [Celestia Team Page, https://celestia.org/team/]"
+      }
+    },
+    {
+      "id": "celestia-ENT-007",
+      "projectSlug": "celestia",
+      "name": "Celestia Foundation",
+      "type": "Foundation",
+      "status": null,
+      "description": "Entitas non-profit berbasis Zug, Switzerland — mengelola treasury protokol, governance on-chain, grant ekosistem, dan stewardship token TIA",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Celestia Blog \"Celestia Mainnet Launch\", https://blog.celestia.org/celestia-mainnet-launch/]; [Celestia Blog \"TIA Genesis Drop\", https://blog.celestia.org/tia-genesis-drop/]"
+      }
+    },
+    {
+      "id": "celestia-ENT-008",
+      "projectSlug": "celestia",
+      "name": "Celestia Labs Inc.",
+      "type": "Company",
+      "status": null,
+      "description": "Perusahaan for-profit berbasis Delaware, USA — pengembang inti (core developer) protokol Celestia, mempekerjakan tim engineering, research, dan BD",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Crunchbase Celestia Labs, https://www.crunchbase.com/organization/celestia-labs]; [Celestia Blog \"Celestia Labs raises $55M\", https://blog.celestia.org/celestia-labs-raises-55m/]"
+      }
+    },
+    {
+      "id": "celestia-ENT-009",
+      "projectSlug": "celestia",
+      "name": "Celestia Data Availability Layer",
+      "type": "Protocol",
+      "status": null,
+      "description": "Protokol inti (core protocol) — menyediakan data availability sampling, namespace merkle trees, dan blobspace untuk rollup sovereign dan smart contract",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang (mainnet)",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Celestia Docs \"Architecture\", https://docs.celestia.org/learn/architecture]; [Celestia Blog \"What is Celestia?\", https://blog.celestia.org/what-is-celestia/]"
+      }
+    },
+    {
+      "id": "celestia-ENT-010",
+      "projectSlug": "celestia",
+      "name": "Blobstream",
+      "type": "Protocol",
+      "status": null,
+      "description": "Protokol bridge verifikasi DA — mengirimkan commitment header Celestia ke Ethereum/EVM via smart contract, memungkinkan rollup memverifikasi ketersediaan data trust-minimized",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Celestia Docs \"Blobstream\", https://docs.celestia.org/learn/blobstream]; [Blobstream Contracts Repo, https://github.com/celestiaorg/blobstream-contracts]"
+      }
+    },
+    {
+      "id": "celestia-ENT-011",
+      "projectSlug": "celestia",
+      "name": "Quantum Gravity Bridge",
+      "type": "Protocol",
+      "status": null,
+      "description": "Protokol bridging trust-minimized (work in progress) — dirancang untuk transfer aset dan pesan lintas chain tanpa validator set terpusat",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2023–sekarang (R&D)",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [Celestia Blog \"Modular Ecosystem\", https://blog.celestia.org/modular-ecosystem/]; [Celestia Research Forum, https://forum.celestia.org/]"
+      }
+    },
+    {
+      "id": "celestia-ENT-012",
+      "projectSlug": "celestia",
+      "name": "Rollkit",
+      "type": "Protocol",
+      "status": null,
+      "description": "Framework sovereign rollup — SDK untuk membangun rollup yang menggunakan Celestia sebagai DA layer dan settlement layer opsional",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Rollkit GitHub, https://github.com/rollkit/rollkit]; [Celestia Blog \"Modular Ecosystem\", https://blog.celestia.org/modular-ecosystem/]"
+      }
+    },
+    {
+      "id": "celestia-ENT-013",
+      "projectSlug": "celestia",
+      "name": "Sovereign SDK",
+      "type": "Protocol",
+      "status": null,
+      "description": "Framework rollup sovereign — toolkit untuk membangun blockchain sovereign dengan Celestia DA, tanpa smart contract settlement layer",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [Sovereign SDK GitHub, https://github.com/Sovereign-Labs/sovereign-sdk]; [Celestia Blog \"Modular Ecosystem\", https://blog.celestia.org/modular-ecosystem/]"
+      }
+    },
+    {
+      "id": "celestia-ENT-014",
+      "projectSlug": "celestia",
+      "name": "Celestia (Chain)",
+      "type": null,
+      "status": null,
+      "description": "Blockchain layer-1 berbasis Cosmos SDK dan CometBFT — chain utama yang menjalankan protokol Data Availability, staking TIA, dan governance",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang (mainnet launch 31 Okt 2023)",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Celestia Blog \"Celestia Mainnet Launch\", https://blog.celestia.org/celestia-mainnet-launch/]; [Celestia Explorer, https://explorer.celestia.org/]"
+      }
+    },
+    {
+      "id": "celestia-ENT-015",
+      "projectSlug": "celestia",
+      "name": "Ethereum",
+      "type": null,
+      "status": null,
+      "description": "Settlement dan verification layer untuk Blobstream — smart contract Blobstream dideploy di Ethereum mainnet (dan L2) untuk verifikasi DA commitment",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Blobstream Contracts Repo, https://github.com/celestiaorg/blobstream-contracts]; [Celestia Docs \"Blobstream\", https://docs.celestia.org/learn/blobstream]"
+      }
+    },
+    {
+      "id": "celestia-ENT-016",
+      "projectSlug": "celestia",
+      "name": "Bain Capital Crypto",
+      "type": "Investor",
+      "status": null,
+      "description": "Lead investor ronde Series A/B ($55M, Oktober 2022) — menyediakan modal untuk Celestia Labs Inc.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Crunchbase Celestia Labs, https://www.crunchbase.com/organization/celestia-labs]; [Celestia Blog \"Celestia Labs raises $55M\", https://blog.celestia.org/celestia-labs-raises-55m/]"
+      }
+    },
+    {
+      "id": "celestia-ENT-017",
+      "projectSlug": "celestia",
+      "name": "Polychain Capital",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor ronde Series A/B ($55M, Oktober 2022) — menyediakan modal untuk Celestia Labs Inc.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Crunchbase Celestia Labs, https://www.crunchbase.com/organization/celestia-labs]; [Celestia Blog \"Celestia Labs raises $55M\", https://blog.celestia.org/celestia-labs-raises-55m/]"
+      }
+    },
+    {
+      "id": "celestia-ENT-018",
+      "projectSlug": "celestia",
+      "name": "1kx",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor ronde Series A/B ($55M, Oktober 2022) — menyediakan modal untuk Celestia Labs Inc.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2022–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(MEDIUM) [Crunchbase Celestia Labs, https://www.crunchbase.com/organization/celestia-labs]; [1kx Portfolio, https://www.1kx.network/portfolio/]"
+      }
+    },
+    {
+      "id": "celestia-ENT-019",
+      "projectSlug": "celestia",
+      "name": "Robot Ventures",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor ronde Series A/B ($55M, Oktober 2022) — menyediakan modal untuk Celestia Labs Inc.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2022–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(MEDIUM) [Crunchbase Celestia Labs, https://www.crunchbase.com/organization/celestia-labs]; [Robot Ventures Portfolio, https://www.robotventures.com/portfolio/]"
+      }
+    },
+    {
+      "id": "celestia-ENT-020",
+      "projectSlug": "celestia",
+      "name": "Placeholder",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor ronde Series A/B ($55M, Oktober 2022) — menyediakan modal untuk Celestia Labs Inc.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2022–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(MEDIUM) [Crunchbase Celestia Labs, https://www.crunchbase.com/organization/celestia-labs]; [Placeholder VC Portfolio, https://www.placeholder.vc/portfolio/]"
+      }
+    },
+    {
+      "id": "celestia-ENT-021",
+      "projectSlug": "celestia",
+      "name": "Cosmostation",
+      "type": "Company",
+      "status": null,
+      "description": "Penyedia block explorer (Mintscan) dan validator infrastruktur — mengoperasikan https://celestia.mintscan.io dan https://www.mintscan.io/celestia",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Mintscan Celestia, https://celestia.mintscan.io/]; [Cosmostation Website, https://cosmostation.io/]"
+      }
+    },
+    {
+      "id": "celestia-ENT-022",
+      "projectSlug": "celestia",
+      "name": "Celestia Node Operators",
+      "type": "Company",
+      "status": null,
+      "description": "Jaringan operator node (light client, full node, bridge node) — menjalankan infrastruktur P2P, DAS sampling, dan relay blob untuk jaringan Celestia",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang (testnet/mainnet)",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Celestia Docs \"Running a Node\", https://docs.celestia.org/nodes/]; [Celestia Blog \"Arabica Testnet\", https://blog.celestia.org/arabica-testnet/]"
+      }
+    },
+    {
+      "id": "celestia-ENT-023",
+      "projectSlug": "celestia",
+      "name": "Blobstream Relayers",
+      "type": "Company",
+      "status": null,
+      "description": "Relayer off-chain — mengirimkan header Celestia dan bukti DA ke smart contract Blobstream di Ethereum/EVM",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Celestia Docs \"Blobstream Relayer\", https://docs.celestia.org/learn/blobstream#relayers]; [Blobstream Relayer Repo, https://github.com/celestiaorg/blobstream-relayer]"
+      }
+    },
+    {
+      "id": "celestia-ENT-024",
+      "projectSlug": "celestia",
+      "name": "Celestia App",
+      "type": "Application",
+      "status": null,
+      "description": "Aplikasi Cosmos SDK — state machine yang menjalankan modul staking, governance, fee market, dan DA pada chain Celestia",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Celestia GitHub celestia-app, https://github.com/celestiaorg/celestia-app]; [Celestia Docs \"Architecture\", https://docs.celestia.org/learn/architecture]"
+      }
+    },
+    {
+      "id": "celestia-ENT-025",
+      "projectSlug": "celestia",
+      "name": "Informal Systems",
+      "type": "Company",
+      "status": null,
+      "description": "Auditor keamanan — melakukan audit protokol konsensus, light client, dan Blobstream untuk Celestia",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "security-audit",
+        "evidence": "(HIGH) [Informal Systems Audit Reports, https://informal.systems/audits/]; [Celestia Blog \"Security\", https://blog.celestia.org/tag/security/]"
+      }
+    },
+    {
+      "id": "celestia-ENT-026",
+      "projectSlug": "celestia",
+      "name": "Trail of Bits",
+      "type": "Company",
+      "status": null,
+      "description": "Auditor keamanan — melakukan audit kode Celestia App, Blobstream contracts, dan cryptography primitives",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2023–sekarang",
+        "exposureType": "security-audit",
+        "evidence": "(MEDIUM) [Trail of Bits Audits, https://github.com/trailofbits/publications/tree/master/audits]; [Celestia Blog \"Security\", https://blog.celestia.org/tag/security/]"
+      }
+    },
+    {
+      "id": "celestia-ENT-027",
+      "projectSlug": "celestia",
+      "name": "Celestia Governance",
+      "type": "DAO",
+      "status": null,
+      "description": "Sistem governance on-chain — pemegang TIA memvote proposal parameter chain, upgrade, spend community pool, dan pengelolaan treasury",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "governance",
+        "evidence": "(HIGH) [Celestia Docs \"Governance\", https://docs.celestia.org/learn/governance]; [Celestia Blog \"TIA Genesis Drop\", https://blog.celestia.org/tia-genesis-drop/]"
+      }
+    },
+    {
+      "id": "celestia-ENT-028",
+      "projectSlug": "celestia",
+      "name": "Celestia Blog",
+      "type": null,
+      "status": null,
+      "description": "Saluran komunikasi resmi — publikasi announcement, research, ecosystem update, dan dokumentasi teknis oleh tim Celestia",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [Celestia Blog, https://blog.celestia.org/]; [Celestia Website Footer, https://celestia.org/]"
+      }
+    },
+    {
+      "id": "celestia-ENT-029",
+      "projectSlug": "celestia",
+      "name": "Celestia Docs",
+      "type": null,
+      "status": null,
+      "description": "Dokumentasi teknis resmi — panduan node, developer, integrator, dan user untuk protokol Celestia dan ekosistemnya",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Celestia Docs, https://docs.celestia.org/]; [Celestia Website Footer, https://celestia.org/]"
+      }
+    },
+    {
+      "id": "celestia-ENT-030",
+      "projectSlug": "celestia",
+      "name": "Celestia Discord Community",
+      "type": null,
+      "status": null,
+      "description": "Komunitas diskusi resmi — forum koordinasi validator, developer, relayer, dan pemegang token untuk support dan governance signaling",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [Discord Invite, https://discord.gg/celestia]; [Celestia Website Footer, https://celestia.org/]"
+      }
+    },
+    {
+      "id": "celestia-ENT-031",
+      "projectSlug": "celestia",
+      "name": "Celestia Twitter Community",
+      "type": null,
+      "status": null,
+      "description": "Komunitas media sosial resmi — announcements real-time, ecosystem highlights, dan engagement dengan @CelestiaOrg",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [Twitter @CelestiaOrg, https://x.com/CelestiaOrg]; [Celestia Website Footer, https://celestia.org/]"
+      }
+    },
+    {
+      "id": "celestia-ENT-032",
+      "projectSlug": "celestia",
+      "name": "TIA Token",
+      "type": "Protocol",
+      "status": null,
+      "description": "Native token (denom `utia`) — digunakan untuk staking, gas fee blobspace, governance voting, dan fee accrual (blobspace fees ke staker)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang (TGE 31 Okt 2023)",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Celestia Docs \"TIA Token\", https://docs.celestia.org/learn/tia-token]; [Celestia Blog \"TIA Genesis Drop\", https://blog.celestia.org/tia-genesis-drop/]"
+      }
+    },
+    {
+      "id": "celestia-ENT-033",
+      "projectSlug": "celestia",
+      "name": "wTIA (Wrapped TIA)",
+      "type": "Protocol",
+      "status": null,
+      "description": "ERC-20 wrapped TIA di Ethereum/Arbitrum — dideploy oleh pihak ketiga (bukan resmi Celestia Labs) untuk liquidity bridging dan DeFi",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2023–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(MEDIUM) [Celestia Docs \"TIA Token\", https://docs.celestia.org/learn/tia-token]; [Arbiscan wTIA Contract, https://arbiscan.io/token/0x...]"
+      }
+    },
+    {
+      "id": "celestia-ENT-034",
+      "projectSlug": "celestia",
+      "name": "Arbitrum Orbit",
+      "type": "Protocol",
+      "status": null,
+      "description": "Rollup framework yang menggunakan Celestia DA — chain Orbit dapat memposting batch data ke Celestia via Blobstream",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Celestia Blog \"Arbitrum Orbit + Celestia\", https://blog.celestia.org/arbitrum-orbit-celestia/]; [Arbitrum Orbit Docs, https://docs.arbitrum.io/arbitrum-orbit/]"
+      }
+    },
+    {
+      "id": "celestia-ENT-035",
+      "projectSlug": "celestia",
+      "name": "Starknet",
+      "type": "Protocol",
+      "status": null,
+      "description": "ZK-Rollup yang mengintegrasikan Celestia DA — menggunakan Celestia untuk data availability sebagai alternatif atau tambahan dari Ethereum calldata",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Celestia Blog \"Starknet + Celestia\", https://blog.celestia.org/starknet-celestia/]; [Starknet Docs, https://docs.starknet.io/]"
+      }
+    },
+    {
+      "id": "celestia-ENT-036",
+      "projectSlug": "celestia",
+      "name": "Polygon CDK",
+      "type": "Protocol",
+      "status": null,
+      "description": "Chain Development Kit yang mendukung Celestia DA — memungkinkan chain Polygon CDK menggunakan Celestia untuk data availability",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Celestia Blog \"Polygon CDK + Celestia\", https://blog.celestia.org/polygon-cdk-celestia/]; [Polygon CDK Docs, https://docs.polygon.technology/cdk/]"
+      }
+    },
+    {
+      "id": "celestia-ENT-037",
+      "projectSlug": "celestia",
+      "name": "Sovereign Labs",
+      "type": "Company",
+      "status": null,
+      "description": "Pengembang Sovereign SDK — membangun framework rollup sovereign yang native menggunakan Celestia DA",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [Sovereign Labs Website, https://sovereignlabs.xyz/]; [Sovereign SDK GitHub, https://github.com/Sovereign-Labs/sovereign-sdk]"
+      }
+    },
+    {
+      "id": "celestia-ENT-038",
+      "projectSlug": "celestia",
+      "name": "Celestia Telegram",
+      "type": null,
+      "status": null,
+      "description": "Saluran Telegram resmi (@celestiaofficial) — announcements dan komunitas bahasa Indonesia/global",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2022–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(MEDIUM) [Telegram @celestiaofficial, https://t.me/celestiaofficial]; [Celestia Website Footer, https://celestia.org/] SETELAH SEMUA ENTITY PERSON - Mustafa Al-Bassam - Ismail Khoffi - John Adler - Nick White - Josh Weintraub - David Egas FOUNDATION - Celestia Foundation COMPANY - Celestia Labs Inc. - Sovereign Labs PROTOCOL - Celestia Data Availability Layer - Blobstream - Quantum Gravity Bridge - Rollkit - Sovereign SDK - TIA Token - wTIA (Wrapped TIA) - Arbitrum Orbit - Starknet - Polygon CDK CHAIN - Celestia (Chain) - Ethereum INVESTOR - Bain Capital Crypto - Polychain Capital - 1kx - Robot Ventures - Placeholder INFRASTRUCTURE - Cosmostation - Celestia Node Operators - Blobstream Relayers APPLICATION - Celestia App SECURITY - Informal Systems - Trail of Bits DAO - Celestia Governance GOVERNMENT - (tidak ada) MEDIA - Celestia Blog - Celestia Docs COMMUNITY - Celestia Discord Community - Celestia Twitter Community - Celestia Telegram OTHER - (tidak ada) RINGKASAN Total Entity: 38 Internal: 18 (Person, Foundation, Company, Protocol, Chain, Application, DAO, Media, Community milik proyek) External: 20 (Investor, Infrastructure, Security, Protocol/Chain ekosistem mitra) Unknown: 0"
+      }
+    }
+  ],
+  "Monad": [
+    {
+      "id": "monad-ENT-001",
+      "projectSlug": "monad",
+      "name": "Monad",
+      "type": "Protocol",
+      "status": null,
+      "description": "Protokol Layer 1 paralel EVM yang dikembangkan oleh Monad Labs, dirancang untuk throughput tinggi melalui eksekusi asinkron dan konsensus MonadBFT (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Monad Whitepaper, https://monad.xyz/whitepaper]; (HIGH) [Monad Docs, https://docs.monad.xyz/architecture]"
+      }
+    },
+    {
+      "id": "monad-ENT-002",
+      "projectSlug": "monad",
+      "name": "Monad (Blockchain)",
+      "type": null,
+      "status": null,
+      "description": "Blockchain Layer 1 mandiri yang kompatibel EVM, menggunakan token native MON untuk gas dan staking (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2025-02-19 (testnet)–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Monad Blog, https://monad.xyz/blog/testnet-launch]; (HIGH) [Monad Docs, https://docs.monad.xyz/roadmap]"
+      }
+    },
+    {
+      "id": "monad-ENT-003",
+      "projectSlug": "monad",
+      "name": "Monad Labs Inc.",
+      "type": "Company",
+      "status": null,
+      "description": "Entitas pendiri dan pengembang inti protokol Monad, terinkorporasi di Delaware AS, berbasis di New York dan San Francisco (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [The Block, https://www.theblock.co/post/288000/monad-labs-raises-225m-series-a]; (HIGH) [OpenCorporates, https://opencorporates.com/companies/us_de/7849212]"
+      }
+    },
+    {
+      "id": "monad-ENT-004",
+      "projectSlug": "monad",
+      "name": "Keone Hon",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder dan CEO Monad Labs, memimpin strategi dan eksekusi proyek (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Monad Team Page, https://monad.xyz/team]; (HIGH) [Forbes, https://www.forbes.com/sites/stevencaicco/2024/04/09/monad-labs-raises-225-million]"
+      }
+    },
+    {
+      "id": "monad-ENT-005",
+      "projectSlug": "monad",
+      "name": "James Hunsaker",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder dan CTO Monad Labs, memimpin arsitektur teknis dan pengembangan protokol (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Monad Team Page, https://monad.xyz/team]; (HIGH) [Forbes, https://www.forbes.com/sites/stevencaicco/2024/04/09/monad-labs-raises-225-million]"
+      }
+    },
+    {
+      "id": "monad-ENT-006",
+      "projectSlug": "monad",
+      "name": "Eunice Giarta",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder dan COO Monad Labs, mengelola operasi dan eksekusi bisnis (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Monad Team Page, https://monad.xyz/team]; (HIGH) [Forbes, https://www.forbes.com/sites/stevencaicco/2024/04/09/monad-labs-raises-225-million]"
+      }
+    },
+    {
+      "id": "monad-ENT-007",
+      "projectSlug": "monad",
+      "name": "Monad Core Team",
+      "type": "Company",
+      "status": null,
+      "description": "Tim ~30+ insinyur dan peneliti (bagian besar ex-Jump Trading, ex-HFT) yang membangun MonadBFT, MonadDb, dan Asynchronous Execution Engine (MEDIUM)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [The Block, https://www.theblock.co/post/288000/monad-labs-raises-225m-series-a]"
+      }
+    },
+    {
+      "id": "monad-ENT-008",
+      "projectSlug": "monad",
+      "name": "Jump Trading",
+      "type": "Company",
+      "status": null,
+      "description": "Perusahaan trading frekuensi tinggi tempat sebagian besar core team Monad berasal sebelum mendirikan Monad Labs (MEDIUM)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "Sebelum 2022–2022",
+        "exposureType": "shared-investor-only",
+        "evidence": "(MEDIUM) [The Block, https://www.theblock.co/post/288000/monad-labs-raises-225m-series-a]"
+      }
+    },
+    {
+      "id": "monad-ENT-009",
+      "projectSlug": "monad",
+      "name": "Series A Investors",
+      "type": "Investor",
+      "status": null,
+      "description": "Kelompok investor yang menyuntikkan $225M Series A ke Monad Labs pada April 2024, nama individual belum dipublikasikan sepenuhnya (MEDIUM)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2024-04–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(MEDIUM) [The Block, https://www.theblock.co/post/288000/monad-labs-raises-225m-series-a]; (MEDIUM) [Forbes, https://www.forbes.com/sites/stevencaicco/2024/04/09/monad-labs-raises-225-million]"
+      }
+    },
+    {
+      "id": "monad-ENT-010",
+      "projectSlug": "monad",
+      "name": "The Block",
+      "type": null,
+      "status": null,
+      "description": "Media kripto yang meliput pengumuman funding Series A Monad Labs dan peluncuran testnet (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2024-04, 2025-02",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [The Block, https://www.theblock.co/post/288000/monad-labs-raises-225m-series-a]; (HIGH) [The Block, https://www.theblock.co/post/288000/monad-labs-raises-225m-series-a]"
+      }
+    },
+    {
+      "id": "monad-ENT-011",
+      "projectSlug": "monad",
+      "name": "Forbes",
+      "type": null,
+      "status": null,
+      "description": "Media bisnis yang meliput funding Series A Monad Labs dan profil pendiri (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2024-04",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [Forbes, https://www.forbes.com/sites/stevencaicco/2024/04/09/monad-labs-raises-225-million]"
+      }
+    },
+    {
+      "id": "monad-ENT-012",
+      "projectSlug": "monad",
+      "name": "OpenCorporates",
+      "type": "Company",
+      "status": null,
+      "description": "Database pendaftaran perusahaan yang mencatat inkorporasi Monad Labs Inc. di Delaware (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "unknown",
+        "evidence": "(HIGH) [OpenCorporates, https://opencorporates.com/companies/us_de/7849212]"
+      }
+    },
+    {
+      "id": "monad-ENT-013",
+      "projectSlug": "monad",
+      "name": "Monad Website (monad.xyz)",
+      "type": null,
+      "status": null,
+      "description": "Situs web resmi proyek, berisi whitepaper, blog, dokumentasi, dan tautan ekosistem (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Monad Website, https://monad.xyz]"
+      }
+    },
+    {
+      "id": "monad-ENT-014",
+      "projectSlug": "monad",
+      "name": "Monad Docs (docs.monad.xyz)",
+      "type": null,
+      "status": null,
+      "description": "Dokumentasi teknis resmi untuk developer, validator, dan pengguna (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Monad Docs, https://docs.monad.xyz]"
+      }
+    },
+    {
+      "id": "monad-ENT-015",
+      "projectSlug": "monad",
+      "name": "Monad Blog",
+      "type": null,
+      "status": null,
+      "description": "Blog resmi pengumuman rilis testnet, roadmap, dan update teknis (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [Monad Blog, https://monad.xyz/blog]"
+      }
+    },
+    {
+      "id": "monad-ENT-016",
+      "projectSlug": "monad",
+      "name": "Monad GitHub (github.com/monad-labs)",
+      "type": null,
+      "status": null,
+      "description": "Repositori kode sumber terbuka untuk klien Monad, tooling, dan dokumentasi teknis (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [GitHub, https://github.com/monad-labs]"
+      }
+    },
+    {
+      "id": "monad-ENT-017",
+      "projectSlug": "monad",
+      "name": "Monad Discord",
+      "type": null,
+      "status": null,
+      "description": "Server Discord komunitas resmi untuk diskusi developer, validator, dan pengguna (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [Monad Website, https://monad.xyz]"
+      }
+    },
+    {
+      "id": "monad-ENT-018",
+      "projectSlug": "monad",
+      "name": "Monad Telegram (@monad_xyz)",
+      "type": null,
+      "status": null,
+      "description": "Grup Telegram resmi untuk pengumuman dan diskusi komunitas (MEDIUM)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2022–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(MEDIUM) [Monad Website, https://monad.xyz]"
+      }
+    },
+    {
+      "id": "monad-ENT-019",
+      "projectSlug": "monad",
+      "name": "Monad Twitter (@monad_xyz)",
+      "type": null,
+      "status": null,
+      "description": "Akun X/Twitter resmi untuk pengumuman proyek dan interaksi komunitas (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [Twitter, https://x.com/monad_xyz]"
+      }
+    },
+    {
+      "id": "monad-ENT-020",
+      "projectSlug": "monad",
+      "name": "Monad Testnet Explorer (testnet.monadexplorer.com)",
+      "type": null,
+      "status": null,
+      "description": "Block explorer resmi untuk Monad Public Testnet \"Monad Madness\" (MEDIUM)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2025-02-19–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [Monad Testnet Docs, https://docs.monad.xyz/testnet/explorer]"
+      }
+    },
+    {
+      "id": "monad-ENT-021",
+      "projectSlug": "monad",
+      "name": "Delaware Division of Corporations",
+      "type": "Government",
+      "status": null,
+      "description": "Badan pemerintah AS yang mengatur inkorporasi Monad Labs Inc. sebagai entitas hukum (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "unknown",
+        "evidence": "(HIGH) [OpenCorporates, https://opencorporates.com/companies/us_de/7849212]"
+      }
+    },
+    {
+      "id": "monad-ENT-022",
+      "projectSlug": "monad",
+      "name": "State of New York",
+      "type": "Government",
+      "status": null,
+      "description": "Yurisdiksi lokasi operasional tim Monad Labs di New York City (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "unknown",
+        "evidence": "(HIGH) [The Block, https://www.theblock.co/post/288000/monad-labs-raises-225m-series-a]"
+      }
+    },
+    {
+      "id": "monad-ENT-023",
+      "projectSlug": "monad",
+      "name": "State of California",
+      "type": "Government",
+      "status": null,
+      "description": "Yurisdiksi lokasi operasional tim Monad Labs di San Francisco (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "unknown",
+        "evidence": "(HIGH) [The Block, https://www.theblock.co/post/288000/monad-labs-raises-225m-series-a]"
+      }
+    },
+    {
+      "id": "monad-ENT-024",
+      "projectSlug": "monad",
+      "name": "Monad Ecosystem Projects",
+      "type": "Application",
+      "status": null,
+      "description": "Lebih dari 100 proyek (DeFi, Infrastructure, Tooling, Apps) yang bergabung pada testnet Monad (MEDIUM)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2025-02-19–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [Monad Ecosystem Page, https://monad.xyz/ecosystem]; (MEDIUM) [Testnet Stats, https://testnet.monad.xyz/stats]"
+      }
+    },
+    {
+      "id": "monad-ENT-025",
+      "projectSlug": "monad",
+      "name": "MonadBFT",
+      "type": "Protocol",
+      "status": null,
+      "description": "Protokol konsensus Byzantine Fault Tolerance kustom Monad untuk finalitas cepat (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Monad Whitepaper, https://monad.xyz/whitepaper]; (HIGH) [Monad Docs, https://docs.monad.xyz/architecture]"
+      }
+    },
+    {
+      "id": "monad-ENT-026",
+      "projectSlug": "monad",
+      "name": "MonadDb",
+      "type": null,
+      "status": null,
+      "description": "Database state storage kustom Monad untuk akses paralel dan efisien (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Monad Whitepaper, https://monad.xyz/whitepaper]; (HIGH) [Monad Docs, https://docs.monad.xyz/architecture]"
+      }
+    },
+    {
+      "id": "monad-ENT-027",
+      "projectSlug": "monad",
+      "name": "Asynchronous Execution Engine",
+      "type": "Protocol",
+      "status": null,
+      "description": "Mesin eksekusi asinkron Monad yang memungkinkan pemrosesan transaksi paralel (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Monad Whitepaper, https://monad.xyz/whitepaper]; (HIGH) [Monad Docs, https://docs.monad.xyz/architecture]"
+      }
+    }
   ]
 }

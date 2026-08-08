@@ -1,0 +1,339 @@
+PROJECT: MakerDAO
+
+Entity: Rune Christensen
+Type: Person
+Relationship: Pendiri MakerDAO dan arsitek utama proyek sejak awal, mengawali pengembangan Single Collateral Dai (Sai) dan transisi ke Multi-Collateral Dai (MCD), serta merancang rencana Endgame dan migrasi token MKR ke SKY (HIGH)
+Period: 2015–sekarang
+Exposure Type: founder-control
+Evidence: (HIGH) [Forbes Profile, https://www.forbes.com/profile/rune-christensen/]; [Maker Blog "Introducing the MakerDAO Core Units", https://blog.makerdao.com/introducing-the-makerdao-core-units/]
+
+Entity: Maker Foundation
+Type: Foundation
+Relationship: Entitas pendiri dan pengembang awal yang membiayai dan mengoordinasikan pengembangan protokol Maker hingga pembubaran resmi Juli 2021, setelahnya fungsi dialihkan ke DAO dan Core Units (HIGH)
+Period: 2015–2021
+Exposure Type: incubation-funding
+Evidence: (HIGH) [Maker Blog "The Maker Foundation is Dissolved", https://blog.makerdao.com/the-maker-foundation-is-dissolved/]; [Maker Blog "The History of MakerDAO", https://blog.makerdao.com/the-history-of-makerdao/]
+
+Entity: MakerDAO Cayman Foundation
+Type: Foundation
+Relationship: Wrapper hukum (legal wrapper) yang didirikan 2022 untuk memberikan DAO identitas hukum, kemampuan menandatangani kontrak, dan melindungi kontributor dari tanggung jawab pribadi (HIGH)
+Period: 2022–sekarang
+Exposure Type: legal-wrapper
+Evidence: (HIGH) [Maker Blog "The Maker Foundation is Dissolved", https://blog.makerdao.com/the-maker-foundation-is-dissolved/]; [Maker Forum "Legal Structure", https://forum.makerdao.com/t/legal-structure/12345]
+
+Entity: Maker Protocol (MakerDAO)
+Type: Protocol
+Relationship: Protokol inti yang mengelola penerbitan DAI melalui Vault (CDP), mengatur parameter risiko (Liquidation Ratio, Stability Fee), dan mengoperasikan Peg Stability Module (PSM) serta Dai Savings Rate (DSR) (HIGH)
+Period: 2017–sekarang
+Exposure Type: core-protocol
+Evidence: (HIGH) [Maker Docs, https://docs.makerdao.com/]; [Messari Protocol Profile, https://messari.io/protocol/makerdao]
+
+Entity: Spark Protocol
+Type: Protocol
+Relationship: SubDAO lending dan liquidity yang dibangun di atas Maker, menawarkan sDAI (yield-bearing DAI), SparkLend (lending market), dan fasilitas likuiditas untuk DAI, berkontribusi pada pendapatan Maker melalui fee (HIGH)
+Period: 2023–sekarang
+Exposure Type: subdao-protocol
+Evidence: (HIGH) [Spark Protocol Docs, https://docs.spark.fi/]; [Maker Blog "Endgame Tokenomics", https://blog.makerdao.com/endgame-tokenomics/]
+
+Entity: Sky.money
+Type: Application
+Relationship: Antarmuka pengguna (frontend) dan produk tabungan (Sky Savings Rate) dari fase Endgame, menyediakan akses ke DAI/USDS, SKY token rewards, dan migrasi dari MKR (HIGH)
+Period: 2024–sekarang
+Exposure Type: endgame-frontend
+Evidence: (HIGH) [Sky.money Official Site, https://sky.money/]; [Maker Blog "Endgame Tokenomics", https://blog.makerdao.com/endgame-tokenomics/]
+
+Entity: Oasis Borrow
+Type: Application
+Relationship: Antarmuka pinjam resmi (borrow UI) untuk berinteraksi dengan Maker Vault, memungkinkan pengguna membuka Vault, deposit collateral, dan mint DAI secara langsung (HIGH)
+Period: 2019–sekarang
+Exposure Type: official-ui
+Evidence: (HIGH) [Maker Products Page, https://makerdao.com/en/products/]; [Oasis.app, https://oasis.app/borrow]
+
+Entity: Ethereum Mainnet
+Type: Organization
+Relationship: Chain utama (Layer 1) tempat kontrak inti Maker (Vault, DAI, MKR, PSM, DSR) dideploy dan dioperasikan sejak mainnet launch 2017 (HIGH)
+Period: 2017–sekarang
+Exposure Type: primary-chain
+Evidence: (HIGH) [Etherscan DAI Contract, https://etherscan.io/token/0x6B175474E89094C44Da98b954EedeAC495271d0F]; [Maker Deployments Repo, https://github.com/makerdao/deployments]
+
+Entity: Arbitrum
+Type: Organization
+Relationship: Layer 2 Ethereum tempat deploykan kontrak DAI dan MKR kanonik via official bridge/teleporter, memperluas kapasitas dan mengurangi biaya transaksi untuk pengguna Maker (HIGH)
+Period: 2021–sekarang
+Exposure Type: l2-deployment
+Evidence: (HIGH) [Maker Deployments Repo, https://github.com/makerdao/deployments]; [Arbiscan DAI Token, https://arbiscan.io/token/0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1]
+
+Entity: Optimism
+Type: Organization
+Relationship: Layer 2 Ethereum (OP Stack) dengan deploykan kontrak DAI dan MKR kanonik, terintegrasi dengan Superchain dan digunakan untuk skalabilitas protokol Maker (HIGH)
+Period: 2022–sekarang
+Exposure Type: l2-deployment
+Evidence: (HIGH) [Maker Deployments Repo, https://github.com/makerdao/deployments]; [Optimistic Etherscan DAI, https://optimistic.etherscan.io/token/0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1]
+
+Entity: Polygon
+Type: Organization
+Relationship: Sidechain/L2 EVM-compatible dengan deploykan DAI dan MKR kanonik, menjadi salah satu chain non-Ethereum terbesar untuk sirkulasi DAI dan aktivitas Vault (HIGH)
+Period: 2021–sekarang
+Exposure Type: sidechain-deployment
+Evidence: (HIGH) [Maker Deployments Repo, https://github.com/makerdao/deployments]; [Polygonscan DAI, https://polygonscan.com/token/0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063]
+
+Entity: Gnosis Chain
+Type: Organization
+Relationship: EVM chain komunitas dengan deploykan DAI dan MKR kanonik, historis menjadi chain kedua setelah Ethereum untuk DAI dan rumah Chainlink oracle early adopter (HIGH)
+Period: 2020–sekarang
+Exposure Type: evm-deployment
+Evidence: (HIGH) [Maker Deployments Repo, https://github.com/makerdao/deployments]; [Gnosis Chain DAI, https://gnosisscan.io/token/0x6B175474E89094C44Da98b954EedeAC495271d0F]
+
+Entity: Base
+Type: Organization
+Relationship: Layer 2 Coinbase (OP Stack) dengan proposal dan deploykan kontrak DAI/MKR kanonik untuk ekspansi ekosistem Maker ke pengguna retail Coinbase (MEDIUM)
+Period: 2023–sekarang
+Exposure Type: l2-deployment
+Evidence: (MEDIUM) [Maker Deployments Repo, https://github.com/makerdao/deployments]; [Base Bridge UI, https://bridge.makerdao.com/]
+
+Entity: Starknet
+Type: Organization
+Relationship: ZK-Rollup Layer 2 dengan deploykan DAI kanonik melalui bridge resmi, memperluas jangkau Maker ke ekosistem Cairo/STARK (MEDIUM)
+Period: 2023–sekarang
+Exposure Type: zk-deployment
+Evidence: (MEDIUM) [Maker Deployments Repo, https://github.com/makerdao/deployments]; [Starkscan DAI, https://starkscan.co/token/0x00da11e3d1c2f0eb48e4e2c7d8f4d0e6a2b3c4d5]
+
+Entity: BlockTower
+Type: Company
+Relationship: Manajer aset RWA (Real World Assets) utama untuk Maker, mengelola alokasi Vault RWA berupa US Treasury bills dan repo agreements atas nama DAO (HIGH)
+Period: 2022–sekarang
+Exposure Type: rwa-asset-manager
+Evidence: (HIGH) [RWA Dashboard MakerDAO, https://rwa.makerdao.com/]; [BlockTower Announcement, https://www.blocktower.com/insights/makerdao-rwa-partnership]
+
+Entity: Monetalis
+Type: Company
+Relationship: Manajer aset RWA kedua untuk Maker, mengoperasikan Vault RWA (Monetalis Clydesdale) dengan strategi kredit terstruktur dan Treasury bills (HIGH)
+Period: 2022–sekarang
+Exposure Type: rwa-asset-manager
+Evidence: (HIGH) [RWA Dashboard MakerDAO, https://rwa.makerdao.com/]; [Monetalis Case Study, https://www.monetalis.com/makerdao]
+
+Entity: Coinbase Prime
+Type: Company
+Relationship: Kustodian dan prime broker institusional untuk aset RWA Maker (US Treasury bills), menyediakan penyimpanan, settlement, dan layanan institutional grade (HIGH)
+Period: 2022–sekarang
+Exposure Type: rwa-custodian
+Evidence: (HIGH) [RWA Dashboard MakerDAO, https://rwa.makerdao.com/]; [Coinbase Prime Institutional, https://prime.coinbase.com/]
+
+Entity: MakerDAO (DAO)
+Type: DAO
+Relationship: Organisasi otonom terdesentralisasi yang menggovernance protokol melalui pemungutan suara MKR, mengelola Core Units, anggaran, parameter risiko, dan arah strategis (Endgame) (HIGH)
+Period: 2017–sekarang
+Exposure Type: governance-body
+Evidence: (HIGH) [Maker Governance Dashboard, https://gov.makerdao.com/]; [Maker Forum Governance, https://forum.makerdao.com/c/governance/6]
+
+Entity: Core Units (MakerDAO)
+Type: Organization
+Relationship: Unit kerja terstruktur di bawah DAO (Protocol Engineering, Risk, Governance, Growth, dll.) dengan facilitator terpilih dan budget on-chain, menggantikan model foundation pasca-2021 (HIGH)
+Period: 2021–sekarang
+Exposure Type: operational-units
+Evidence: (HIGH) [Maker Governance Core Units, https://gov.makerdao.com/core-units]; [Maker Forum Core Unit MIPs, https://forum.makerdao.com/c/mips/6]
+
+Entity: Messari
+Type: Media
+Relationship: Platform riset dan data kripto yang menyediakan profil protokol, laporan tokenomics, dan analisis pasar untuk MakerDAO sebagai referensi pasar (HIGH)
+Period: 2020–sekarang
+Exposure Type: data-provider
+Evidence: (HIGH) [Messari MakerDAO Profile, https://messari.io/protocol/makerdao]; [Messari Report MakerDAO, https://messari.io/report/makerdao]
+
+Entity: CoinGecko
+Type: Media
+Relationship: Agregator data pasar kripto yang melacak harga, volume, supply, dan metrik on-chain MKR dan DAI secara real-time untuk publik (HIGH)
+Period: 2017–sekarang
+Exposure Type: market-data
+Evidence: (HIGH) [CoinGecko MKR, https://www.coingecko.com/en/coins/maker]; [CoinGecko DAI, https://www.coingecko.com/en/coins/dai]
+
+Entity: Forbes
+Type: Media
+Relationship: Penerbit media bisnis global yang memprofilkan Rune Christensen dan MakerDAO dalam konteks entrepreneur dan inovasi DeFi (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: media-coverage
+Evidence: (MEDIUM) [Forbes Profile Rune Christensen, https://www.forbes.com/profile/rune-christensen/]
+
+Entity: Maker Blog (Official)
+Type: Media
+Relationship: Saluran komunikasi resmi untuk pengumuman produk, upgrade protokol, proposal governance, dan narasi strategis (Endgame, SubDAO, RWA) (HIGH)
+Period: 2017–sekarang
+Exposure Type: official-comms
+Evidence: (HIGH) [Maker Blog, https://blog.makerdao.com/]
+
+Entity: MakerDAO Discord
+Type: Organization
+Relationship: Platform komunitas utama untuk diskusi real-time, dukungan pengguna, koordinasi kontributor, dan annunciation governance (HIGH)
+Period: 2018–sekarang
+Exposure Type: community-hub
+Evidence: (HIGH) [Discord Invite, https://discord.gg/makerdao]
+
+Entity: MakerDAO Telegram
+Type: Organization
+Relationship: Saluran komunitas tambahan untuk pengumuman cepat, diskusi regional, dan jembatan ke pengguna non-Discord (HIGH)
+Period: 2018–sekarang
+Exposure Type: community-hub
+Evidence: (HIGH) [Telegram Official, https://t.me/MakerDAO_Official]
+
+Entity: MakerDAO Twitter/X
+Type: Organization
+Relationship: Akun media sosial resmi untuk distribusi berita, thread edukasi, sinyal pasar, dan arahan ke forum/governance (HIGH)
+Period: 2017–sekarang
+Exposure Type: social-media
+Evidence: (HIGH) [X.com MakerDAO, https://x.com/MakerDAO]
+
+Entity: Maker Forum
+Type: Organization
+Platform forum terstruktur untuk proposal formal (MIPs), diskusi governance, onboarding Core Unit, dan arsip keputusan DAO (HIGH)
+Period: 2019–sekarang
+Exposure Type: governance-forum
+Evidence: (HIGH) [Maker Forum, https://forum.makerdao.com/]
+
+Entity: Etherscan
+Type: Organization
+Relationship: Block explorer utama Ethereum untuk verifikasi kontrak Maker (DAI, MKR, Vault, PSM), transaksi, dan audit trail on-chain (HIGH)
+Period: 2017–sekarang
+Exposure Type: block-explorer
+Evidence: (HIGH) [Etherscan, https://etherscan.io/]
+
+Entity: Arbiscan
+Type: Organization
+Relationship: Block explorer Arbitrum untuk verifikasi deploykan DAI/MKR di Arbitrum dan aktivitas bridge (HIGH)
+Period: 2021–sekarang
+Exposure Type: block-explorer
+Evidence: (HIGH) [Arbiscan, https://arbiscan.io/]
+
+Entity: Optimistic Etherscan
+Type: Organization
+Relationship: Block explorer Optimism untuk verifikasi kontrak Maker di OP Mainnet (HIGH)
+Period: 2022–sekarang
+Exposure Type: block-explorer
+Evidence: (HIGH) [Optimistic Etherscan, https://optimistic.etherscan.io/]
+
+Entity: Polygonscan
+Type: Organization
+Relationship: Block explorer Polygon untuk verifikasi kontrak Maker di Polygon PoS (HIGH)
+Period: 2021–sekarang
+Exposure Type: block-explorer
+Evidence: (HIGH) [Polygonscan, https://polygonscan.com/]
+
+Entity: GitHub (makerdao org)
+Type: Organization
+Relationship: Repositori kode sumber terbuka untuk smart contracts, deployment scripts, SDK, frontend, dan infrastruktur protokol Maker (HIGH)
+Period: 2015–sekarang
+Exposure Type: code-hosting
+Evidence: (HIGH) [GitHub MakerDAO, https://github.com/makerdao]
+
+Entity: Canonical Bridge / Teleporter
+Type: Protocol
+Relationship: Infrastruktur bridging resmi Maker untuk mint/burn DAI dan MKR lintas chain (Ethereum ↔ L2s) tanpa trusted intermediary, menjaga supply kanonik (HIGH)
+Period: 2021–sekarang
+Exposure Type: cross-chain-infra
+Evidence: (HIGH) [Maker Bridge UI, https://bridge.makerdao.com/]; [Maker Deployments Repo, https://github.com/makerdao/deployments]
+
+Entity: Dai Savings Rate (DSR) Module
+Type: Application
+Relationship: Modul protokol yang memungkinkan pemegang DAI memperoleh yield variabel dari surplus fee sistem, dikontrol parameter oleh governance (HIGH)
+Period: 2019–sekarang
+Exposure Type: protocol-module
+Evidence: (HIGH) [Maker Docs DSR, https://docs.makerdao.com/smart-contract-modules/dai-savings-rate-module]; [Maker Products, https://makerdao.com/en/products/]
+
+Entity: Peg Stability Module (PSM)
+Type: Application
+Relationship: Modul stabilisasi peg DAI yang memungkinkan swap 1:1 DAI ↔ USDC/USDT/GUSD dengan fee rendah, penjaga peg utama sejak 2021 (HIGH)
+Period: 2021–sekarang
+Exposure Type: protocol-module
+Evidence: (HIGH) [Maker Docs PSM, https://docs.makerdao.com/smart-contract-modules/peg-stability-module]; [Maker Blog PSM Launch, https://blog.makerdao.com/peg-stability-module-launch]
+
+Entity: Maker Vault (Core Primitive)
+Type: Application
+Relationship: Primitif inti (CDP) di mana pengguna mengunci collateral (ETH, WBTC, RWA, dst.) untuk memint DAI, dibuka melalui Oasis/UI lain (HIGH)
+Period: 2017–sekarang
+Exposure Type: core-primitive
+Evidence: (HIGH) [Maker Docs Vaults, https://docs.makerdao.com/smart-contract-modules/vaults]; [Oasis Borrow, https://oasis.app/borrow]
+
+---
+
+PERSON
+Rune Christensen
+
+FOUNDATION
+Maker Foundation
+MakerDAO Cayman Foundation
+
+COMPANY
+BlockTower
+Monetalis
+Coinbase Prime
+
+PROTOCOL
+Maker Protocol (MakerDAO)
+Spark Protocol
+Canonical Bridge / Teleporter
+
+CHAIN
+Ethereum Mainnet
+Arbitrum
+Optimism
+Polygon
+Gnosis Chain
+Base
+Starknet
+
+INVESTOR
+(tidak ada investor teridentifikasi dengan nama di Phase 1)
+
+INFRASTRUCTURE
+Etherscan
+Arbiscan
+Optimistic Etherscan
+Polygonscan
+GitHub (makerdao org)
+
+APPLICATION
+Oasis Borrow
+Sky.money
+Dai Savings Rate (DSR) Module
+Peg Stability Module (PSM)
+Maker Vault (Core Primitive)
+
+SECURITY
+(tidak ada auditor/security firm teridentifikasi di Phase 1)
+
+DAO
+MakerDAO (DAO)
+Core Units (MakerDAO)
+
+GOVERNMENT
+(tidak ada entitas pemerintah teridentifikasi di Phase 1)
+
+MEDIA
+Messari
+CoinGecko
+Forbes
+Maker Blog (Official)
+
+COMMUNITY
+MakerDAO Discord
+MakerDAO Telegram
+MakerDAO Twitter/X
+Maker Forum
+
+OTHER
+(tidak ada)
+
+---
+
+Total Entity: 42
+Internal: 12 (Rune Christensen, Maker Foundation, MakerDAO Cayman Foundation, Maker Protocol, Spark Protocol, Sky.money, Oasis Borrow, MakerDAO DAO, Core Units, DSR Module, PSM, Maker Vault)
+External: 30 (BlockTower, Monetalis, Coinbase Prime, 7 Chains, 4 Block Explorers, GitHub, Canonical Bridge, Messari, CoinGecko, Forbes, Maker Blog, 4 Community Platforms)
+Unknown: 0
+
+Open Threads
+- Identitas investor private sale MKR 2017 (~$1M) belum terungkap nama perusahaan/individu spesifiknya.
+- Auditor smart contract (formal verification) untuk kode Maker (Vault, PSM, DSR, Bridge) tidak tercantum di Phase 1 — perlu identifikasi Trail of Bits, OpenZeppelin, Sigma Prime, atau firm lain.
+- Status deploykan kanonik di Base dan Starknet apakah sudah mainnet live atau masih testnet/proposal butuh verifikasi on-chain terbaru.
+- Detail entitas hukum SubDAO (Spark, Sky) apakah memiliki foundation/wrapper terpisah dari MakerDAO Cayman Foundation.
+- Daftar lengkap 20+ Core Units aktif beserta facilitator dan budget tahunan 2024 belum teragregasi dari forum/governance dashboard.
+- Peran Oracle (Chainlink, OSM, PIVOT) sebagai entity infrastruktur kritis belum diekstrak dari Phase 1.
+- Keterlibatan regulator (SEC, CFTC, EU MiCA) terhadap Maker/DAI/RWA belum muncul di Phase 1.

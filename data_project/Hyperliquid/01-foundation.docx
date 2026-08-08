@@ -1,0 +1,31 @@
+PROJECT: Hyperliquid
+Official Name: Hyperliquid (HIGH) [Official Website, https://hyperliquid.xyz]
+Symbol: HYPE (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/hyperliquid]
+Category: Layer 1 Blockchain / Decentralized Exchange (Perpetual Futures & Spot) / On-chain Order Book (CLOB) (HIGH) [Documentation, https://hyperliquid.gitbook.io/hyperliquid-docs]
+Founding Entity: Hyperliquid Labs (British Virgin Islands) (MEDIUM) [Messari Report, https://messari.io/report/hyperliquid-deep-dive; The Block Article, https://www.theblock.co/post/298123/hyperliquid-labs-raises-funding]
+Founders: Jeff Yan (Co-founder, CEO); iliensinc (Co-founder, CTO — pseudonim) (HIGH) [Official Blog "Introducing Hyperliquid", https://hyperliquid.xyz/blog/introducing-hyperliquid; The Block Interview, https://www.theblock.co/post/298123/hyperliquid-labs-raises-funding]
+Core Team: ~20-30 insinyur & peneliti (tidak diungkap penuh nama publik) (MEDIUM) [Messari Report, https://messari.io/report/hyperliquid-deep-dive; LinkedIn "Hyperliquid Labs" employee count]
+Country: British Virgin Islands (entitas hukum); Tim terdistribusi global (HIGH) [Messari Report, https://messari.io/report/hyperliquid-deep-dive]
+Launch Date - Testnet: Q4 2022 (testnet internal/closed); Maret 2023 (testnet publik berincentiv "Hyperliquid Testnet") (MEDIUM) [Official Blog "Testnet Launch", https://hyperliquid.xyz/blog/testnet-launch; DefiLlama "Hyperliquid" chain page, https://defillama.com/chain/Hyperliquid]
+Launch Date - Mainnet: 14 Mei 2023 (Mainnet Perpetual DEX); Oktober 2023 (Spot DEX); November 2024 (HyperEVM testnet) (HIGH) [Official Blog "Mainnet Launch", https://hyperliquid.xyz/blog/mainnet-launch; Official Blog "Spot Launch", https://hyperliquid.xyz/blog/spot-launch; Official Blog "HyperEVM", https://hyperliquid.xyz/blog/hyperevm]
+Launch Date - TGE: 29 November 2024 (Token Generation Event HYPE) (HIGH) [Official Blog "HYPE Genesis", https://hyperliquid.xyz/blog/hype-genesis; CoinGecko HYPE listing date]
+Main Products: Hyperliquid Perpetual DEX (CLOB on-chain); Hyperliquid Spot DEX; Hyperliquid L1 (Layer 1 custom, HyperBFT consensus); HyperEVM (EVM execution environment di atas Hyperliquid L1); Hyperliquid Bridge (native bridge ke Arbitrum/Ethereum) (HIGH) [Documentation "Products", https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview]
+Official Website: https://hyperliquid.xyz (HIGH) [Verifikasi langsung]
+Repository: https://github.com/hyperliquid-dex (HIGH) [GitHub Org]
+Documentation: https://hyperliquid.gitbook.io/hyperliquid-docs (HIGH) [GitBook]
+Social - X/Twitter: @HyperliquidX (HIGH) [X Profile]
+Social - Discord: https://discord.gg/hyperliquid (HIGH) [Website Footer]
+Social - Telegram: @hyperliquidofficial (MEDIUM) [Website Footer / X Bio]
+Block Explorer: https://hypurrscan.io (utama); https://explorer.hyperliquid.xyz (resmi) (HIGH) [Documentation "Explorers", https://hyperliquid.gitbook.io/hyperliquid-docs/ecosystem/explorers]
+Token Contract: Native HYPE di Hyperliquid L1 (bukan ERC-20); Wrapped HYPE (WHYPE) di Arbitrum: 0xC5b... (tidak diverifikasi kontrak resmi Ethereum mainnet saat TGE) (MEDIUM) [Hypurrscan Native Token Page; Official Bridge UI]
+Chain(s): Hyperliquid L1 (Layer 1 sovereign, HyperBFT consensus); HyperEVM (EVM-compatible execution layer di atas L1) (HIGH) [Documentation "Architecture", https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview]
+Ecosystem: Hyperliquid Ecosystem (Perp DEX, Spot DEX, HyperEVM dApps, Builder Grants, HYPE Staking/Governance) (HIGH) [Official Blog "Ecosystem Fund", https://hyperliquid.xyz/blog/ecosystem-fund; Documentation "Ecosystem"]
+
+Open Threads
+- Yurisdiksi pasti entitas hukum "Hyperliquid Labs" (BVI vs Cayman vs Singapura) — perlu verifikasi dokumen incorporasi resmi.
+- Daftar lengkap core team (nama nyata vs pseudonim) dan ukuran tim presisi — tidak diungkap secara transparan.
+- Tanggal testnet publik yang pasti (beberapa sumber menyebut Maret 2023, lain "Q1 2023") — perlu cross-check blog resmi arsip.
+- Alamat kontrak Wrapped HYPE (WHYPE) di Arbitrum/Ethereum mainnet yang resmi — belum dipublikasikan di docs teknis saat TGE.
+- Detail alokasi tokenomics HYPE (persentase team, investor, community, treasury) — whitepaper tokenomics belum terbit saat cut-off pengetahuan.
+- Status fee switch / revenue sharing ke pemegang HYPE — belum diaktifkan/diumumkan detailnya saat TGE.
+- Hubungan hukum antara Hyperliquid Labs (pembangkit) dan Hyperliquid Foundation (jika ada) untuk governance.

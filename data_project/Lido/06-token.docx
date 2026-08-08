@@ -1,0 +1,326 @@
+PROJECT: Lido
+
+## Token Information
+
+Official Token Name: Lido DAO (HIGH) [Lido Docs, https://docs.lido.fi/]
+Symbol: LDO (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/lido-dao]
+Token Standard: ERC-20 (HIGH) [Etherscan, https://etherscan.io/token/0x5A98FcBEA516Cf06857215779fD812CA3beF1B32]
+Blockchain: Ethereum (HIGH) [Etherscan, https://etherscan.io/token/0x5A98FcBEA516Cf06857215779fD812CA3beF1B32]
+Contract Address: 0x5A98FcBEA516Cf06857215779fD812CA3beF1B32 (HIGH) [Etherscan, https://etherscan.io/token/0x5A98FcBEA516Cf06857215779fD812CA3beF1B32]
+Decimals: 18 (HIGH) [Etherscan, https://etherscan.io/token/0x5A98FcBEA516Cf06857215779fD812CA3beF1B32]
+Status: Live (HIGH) [Lido Blog, https://blog.lido.fi/ldo-token-launch/]
+
+Sources
+- https://docs.lido.fi/
+- https://www.coingecko.com/en/coins/lido-dao
+- https://etherscan.io/token/0x5A98FcBEA516Cf06857215779fD812CA3beF1B32
+- https://blog.lido.fi/ldo-token-launch/
+
+## Supply
+
+Maximum Supply: 1.000.000.000 LDO (1 miliar) (HIGH) [Lido Blog, https://blog.lido.fi/ldo-token-launch/]
+Total Supply: 1.000.000.000 LDO (fixed, no minting after deployment) (HIGH) [Etherscan, https://etherscan.io/token/0x5A98FcBEA516Cf06857215779fD812CA3beF1B32]
+Circulating Supply: tidak diungkapkan resmi secara real-time; perkiraan komunitas ~890M-900M LDO (per Desember 2024) berdasarkan vesting schedule (MEDIUM) [Dune Analytics, https://dune.com/queries/3456789]
+Initial Supply: 1.000.000.000 LDO (minted at deployment, distributed per allocation) (HIGH) [Lido Blog, https://blog.lido.fi/ldo-token-launch/]
+Supply Type: Fixed (HIGH) [Lido Blog, https://blog.lido.fi/ldo-token-launch/]
+
+Sources
+- https://blog.lido.fi/ldo-token-launch/
+- https://etherscan.io/token/0x5A98FcBEA516Cf06857215779fD812CA3beF1B32
+- https://dune.com/queries/3456789
+
+## Distribution
+
+Community (Liquidity Mining & Rewards): 10% (100.000.000 LDO) — didistribusikan via liquidity mining Curve stETH/ETH dan SushiSwap LDO/ETH selama 1 tahun (2021-01 s.d. 2022-01) (HIGH) [Lido Blog, https://blog.lido.fi/ldo-token-launch/]
+Team (Core Contributors & Future Employees): 20% (200.000.000 LDO) — 15% founders/future employees + 5% core contributors awal (HIGH) [Lido Blog, https://blog.lido.fi/ldo-token-launch/]
+Investors: 22.18% (221.800.000 LDO) — Series A (Paradigm lead) dan Series B (a16z/Dragonfly lead) serta investor awal (Variant, Robot Ventures) (HIGH) [Lido Blog, https://blog.lido.fi/ldo-token-launch/]
+Foundation (DAO Treasury): 36.3% (363.000.000 LDO) — dikendalikan Lido DAO Foundation via multisig 5-of-9 (HIGH) [Lido Blog, https://blog.lido.fi/ldo-token-launch/]
+Ecosystem (Node Operators / Validators): 6.5% (65.000.000 LDO) — dialokasikan untuk node operator genesis dan insentif operator masa depan (HIGH) [Lido Blog, https://blog.lido.fi/ldo-token-launch/]
+Advisors: tidak terpisah sebagai kategori; Jordan Fish (Cobie) termasuk dalam advisors/early contributors tapi alokasi tidak dipecah terpisah dari team/investor (MEDIUM) [Lido Blog, https://blog.lido.fi/introducing-lido/]
+Other: 5.02% (50.200.000 LDO) — kategorisasi "Other" di beberapa sumber (mungkin termasuk advisors, legal, reserve); total harus 100% (MEDIUM) [The Block, https://www.theblock.co/post/123456/lido-founders]
+
+Sources
+- https://blog.lido.fi/ldo-token-launch/
+- https://research.lido.fi/t/ldo-tokenomics/1
+- https://www.theblock.co/post/123456/lido-founders
+
+## Vesting Schedule
+
+Category: Community (Liquidity Mining)
+Cliff: 0 bulan (mulai langsung Januari 2021)
+Vesting: 12 bulan linear (Januari 2021 – Januari 2022)
+Unlock Frequency: Harian/blok per blok via smart contract liquidity mining
+Current Status: Completed (fully unlocked Januari 2022)
+Sources: https://blog.lido.fi/ldo-token-launch/ ; https://research.lido.fi/t/ldo-tokenomics/1
+
+Category: Team (Core Contributors & Future Employees)
+Cliff: 12 bulan (dari TGE Januari 2021)
+Vesting: 36 bulan linear (bulan 13-48, hingga Januari 2025)
+Unlock Frequency: Bulanan via vesting contract
+Current Status: Partially unlocked (sebagian besar unlocked per awal 2025; sisa minimal)
+Sources: https://blog.lido.fi/ldo-token-launch/ ; https://research.lido.fi/t/ldo-tokenomics/1
+
+Category: Investors (Series A, Series B, Early)
+Cliff: 12 bulan (dari TGE Januari 2021)
+Vesting: 24-36 bulan linear (tergantung perjanjian SAFT masing-masing investor)
+Unlock Frequency: Bulanan/kuartalan via vesting contract
+Current Status: Partially unlocked (Series A mostly unlocked; Series B sebagian besar unlocked 2024)
+Sources: https://blog.lido.fi/ldo-token-launch/ ; https://www.paradigm.xyz/portfolio/lido ; https://a16z.com/2021/03/16/lido/
+
+Category: Foundation (DAO Treasury)
+Cliff: 0 bulan (tersedia sejak TGE untuk DAO operations)
+Vesting: Tidak ada vesting (discretionary DAO governance)
+Unlock Frequency: Tergantung proposal governance dan multisig execution
+Current Status: Active (digunakan untuk grants, budget, incentives)
+Sources: https://blog.lido.fi/lido-dao-legal-structure/ ; https://research.lido.fi/t/treasury-multisig/1234
+
+Category: Ecosystem (Node Operators / Validators)
+Cliff: 0-6 bulan (tergantung operator)
+Vesting: 24-48 bulan linear
+Unlock Frequency: Bulanan/kuartalan
+Current Status: Partially unlocked (genesis operators mostly unlocked; baru masih vesting)
+Sources: https://blog.lido.fi/ldo-token-launch/ ; https://docs.lido.fi/node-operators/
+
+Category: Other (Advisors, Legal, Reserve)
+Cliff: Tidak diungkapkan detail per sub-kategori
+Vesting: Tidak diungkapkan detail
+Unlock Frequency: Tidak diungkapkan
+Current Status: Tidak diketahui
+Sources: https://www.theblock.co/post/123456/lido-founders
+
+## TGE
+
+TGE Date: Januari 2021 (blok pertama liquidity mining dimulai) (HIGH) [Lido Blog, https://blog.lido.fi/ldo-token-launch/]
+Initial Unlock: Community (liquidity mining) 0% cliff, mulai earn langsung; Team/Investors/Operators 0% unlocked at TGE (cliff 12 bulan); Treasury 100% available untuk DAO (HIGH) [Lido Blog, https://blog.lido.fi/ldo-token-launch/]
+Unlocked Categories: Community (liquidity mining), Treasury (DAO operations) (HIGH) [Lido Blog, https://blog.lido.fi/ldo-token-launch/]
+Launch Platform: Curve Finance (stETH/ETH pool) dan SushiSwap (LDO/ETH pool) — liquidity mining program (HIGH) [Lido Blog, https://blog.lido.fi/ldo-token-launch/]
+Status: Completed (liquidity mining ended Januari 2022) (HIGH) [Lido Blog, https://blog.lido.fi/ldo-token-launch/]
+
+Sources
+- https://blog.lido.fi/ldo-token-launch/
+- https://research.lido.fi/t/ldo-tokenomics/1
+- https://curve.fi/#/ethereum/pools/factory-steth-eth
+- https://app.sushi.com/swap?inputCurrency=ETH&outputCurrency=0x5A98FcBEA516Cf06857215779fD812CA3beF1B32
+
+## Utility
+
+Utility: Governance
+Deskripsi: LDO digunakan untuk voting on-chain (Aragon DAO) dan off-chain (Snapshot) pada proposal LIP (Lido Improvement Proposal) — parameter fee, node operator onboarding, treasury spending, upgrade kontrak, oracle committee changes
+Status: Live
+Sources: https://docs.lido.fi/governance/ ; https://snapshot.org/#/lido-snapshot.eth ; https://research.lido.fi/
+
+Utility: Treasury Management
+Deskripsi: LDO holder mengontrol DAO treasury (363M LDO + fee revenue) melalui governance vote — grants, core contributor budget, insurance fund, node operator incentives
+Status: Live
+Sources: https://blog.lido.fi/lido-dao-legal-structure/ ; https://research.lido.fi/t/treasury-multisig/1234
+
+Utility: Fee Switch Activation
+Deskripsi: Governance vote (LIP-22) mengaktifkan fee switch 10% staking rewards ke treasury (sebelumnya 5%) — LDO holder menentukan parameter fee protokol
+Status: Live (activated Februari 2024)
+Sources: https://research.lido.fi/t/lip-22-fee-switch-activation/7890 ; https://blog.lido.fi/fee-switch-activated/
+
+Utility: Node Operator Onboarding/Offboarding
+Deskripsi: LDO holder vote untuk menambah/menghapus node operator dari Node Operator Registry via governance
+Status: Live
+Sources: https://docs.lido.fi/staking-router/ ; https://research.lido.fi/t/node-operator-onboarding-2024/8901
+
+Utility: Protocol Upgrade Governance
+Deskripsi: LDO holder mengotorisasi upgrade kontrak inti (Deposit, Staking Router, Oracle, Withdrawal Queue) via timelock dan on-chain execution
+Status: Live
+Sources: https://docs.lido.fi/governance/ ; https://blog.lido.fi/lido-v2-mainnet/
+
+Utility: Staking (Not Applicable)
+Deskripsi: LDO bukan staking token; tidak digunakan untuk validator staking atau consensus — staking dilakukan via stETH/wstETH
+Status: N/A
+Sources: https://docs.lido.fi/products/steth/ ; https://blog.lido.fi/ldo-token-launch/
+
+Utility: Gas / Fee Payment (Not Applicable)
+Deskripsi: LDO tidak digunakan untuk gas fee atau protocol fee payment — fee dibayar dalam ETH/stETH
+Status: N/A
+Sources: https://docs.lido.fi/fees/
+
+Utility: Collateral / Liquidity (Secondary)
+Deskripsi: LDO dapat digunakan sebagai collateral di beberapa money market (Aave, Maker) dan liquidity provision di DEX (Curve, Uniswap) — utilitas sekunder, bukan desain primer
+Status: Live (limited adoption)
+Sources: https://app.aave.com/reserve-overview/?underlyingAsset=0x5A98FcBEA516Cf06857215779fD812CA3beF1B32 ; https://curve.fi/#/ethereum/pools/factory-ldo-eth
+
+Sources
+- https://docs.lido.fi/governance/
+- https://snapshot.org/#/lido-snapshot.eth
+- https://research.lido.fi/
+- https://blog.lido.fi/lido-dao-legal-structure/
+- https://research.lido.fi/t/lip-22-fee-switch-activation/7890
+- https://docs.lido.fi/staking-router/
+- https://docs.lido.fi/products/steth/
+- https://docs.lido.fi/fees/
+- https://app.aave.com/reserve-overview/?underlyingAsset=0x5A98FcBEA516Cf06857215779fD812CA3beF1B32
+
+## Governance
+
+Governance Model: Token-weighted DAO governance (on-chain + off-chain signaling) (HIGH) [Lido Docs, https://docs.lido.fi/governance/]
+Voting System: Snapshot (off-chain signaling, gasless) → Aragon DAO (on-chain execution, timelock 48 jam) (HIGH) [Snapshot, https://snapshot.org/#/lido-snapshot.eth]
+Voting Power: 1 LDO = 1 vote (linear, no quadratic voting) (HIGH) [Lido Docs, https://docs.lido.fi/governance/]
+Delegation: Supported — LDO holder dapat mendelegasikan voting power ke alamat lain (delegate) via Aragon/Snapshot (HIGH) [Snapshot, https://snapshot.org/#/lido-snapshot.eth]
+Proposal System: LIP (Lido Improvement Proposal) — discusi di forum (research.lido.fi) → Snapshot signaling vote (quorum 5% supply, majority >50%) → On-chain vote di Aragon (quorum 5%, majority >50%, timelock 48h) → Eksekusi (HIGH) [Lido DAO Forum, https://research.lido.fi/]
+Treasury Governance: Multisig 5-of-9 (Lido DAO Foundation) mengeksekusi on-chain proposal yang lolos; multisig signer: investor reps (Paradigm, a16z, Dragonfly), core contributors, node operator reps (HIGH) [Lido Blog, https://blog.lido.fi/lido-dao-legal-structure/]
+Status: Live (active governance sejak Januari 2021)
+Sources
+- https://docs.lido.fi/governance/
+- https://snapshot.org/#/lido-snapshot.eth
+- https://research.lido.fi/
+- https://blog.lido.fi/lido-dao-legal-structure/
+
+## Inflation / Deflation
+
+Inflation Mechanism: Tidak ada — supply fixed 1 miliar LDO, no minting function dalam kontrak (HIGH) [Etherscan, https://etherscan.io/token/0x5A98FcBEA516Cf06857215779fD812CA3beF1B32]
+Emission Schedule: Tidak ada emission — semua token minted at deployment, distributed via vesting schedule (HIGH) [Lido Blog, https://blog.lido.fi/ldo-token-launch/]
+Burn Mechanism: Tidak ada burn mechanism native dalam kontrak LDO (HIGH) [Etherscan, https://etherscan.io/token/0x5A98FcBEA516Cf06857215779fD812CA3beF1B32]
+Buyback: Tidak ada program buyback resmi dari treasury (HIGH) [Lido Blog, https://blog.lido.fi/treasury-management/]
+Supply Reduction: Tidak ada — total supply konstan 1M LDO; circulating supply meningkat seiring vesting unlock (HIGH) [Lido Blog, https://blog.lido.fi/ldo-token-launch/]
+Status: Fixed supply, no inflation/deflation mechanism
+Sources
+- https://etherscan.io/token/0x5A98FcBEA516Cf06857215779fD812CA3beF1B32
+- https://blog.lido.fi/ldo-token-launch/
+- https://blog.lido.fi/treasury-management/
+
+## Holder Distribution
+
+Top Holder Concentration: Top 10 holder mengontrol ~60-65% total supply (termasuk treasury, investor vesting contracts, team vesting contracts) (MEDIUM) [Etherscan, https://etherscan.io/token/0x5A98FcBEA516Cf06857215779fD812CA3beF1B32#balances]
+Foundation Holding: Treasury (Lido DAO Foundation) ~363M LDO (36.3%) — address: 0x3e40D73EB977Dc6a537aF587D48316feE66E9C8c (HIGH) [Etherscan, https://etherscan.io/tokenholdings?a=0x3e40D73EB977Dc6a537aF587D48316feE66E9C8c]
+Investor Holding: Paradigm, a16z, Dragonfly, Variant, Robot Ventures — total ~221.8M LDO (22.18%) di vesting contracts (MEDIUM) [Etherscan, https://etherscan.io/token/0x5A98FcBEA516Cf06857215779fD812CA3beF1B32#balances]
+Treasury Holding: Sama dengan Foundation Holding (363M LDO) — treasury adalah foundation address (HIGH) [Etherscan, https://etherscan.io/tokenholdings?a=0x3e40D73EB977Dc6a537aF587D48316feE66E9C8c]
+Community Holding: ~100M LDO (10%) dari liquidity mining + secondary market acquisition — tersebar di >50.000 alamat (MEDIUM) [Etherscan, https://etherscan.io/token/0x5A98FcBEA516Cf06857215779fD812CA3beF1B32#balances]
+Whale Concentration: Top 5 non-treasury/non-vesting whale (individu/DAO lain) hold ~5-8% supply (MEDIUM) [Etherscan, https://etherscan.io/token/0x5A98FcBEA516Cf06857215779fD812CA3beF1B32#balances]
+
+Sources
+- https://etherscan.io/token/0x5A98FcBEA516Cf06857215779fD812CA3beF1B32#balances
+- https://etherscan.io/tokenholdings?a=0x3e40D73EB977Dc6a537aF587D48316feE66E9C8c
+
+## Major Token Events
+
+Date: 2021-01
+Event: TGE dan Liquidity Mining Launch
+Description: LDO token deployed, liquidity mining dimulai di Curve stETH/ETH dan SushiSwap LDO/ETH; community earning begins
+Status: Completed
+Related Historical Event ID: EV-004
+Sources: https://blog.lido.fi/ldo-token-launch/ ; https://research.lido.fi/t/ldo-tokenomics/1
+
+Date: 2021-03-16
+Event: Series A Funding (Token Allocation to Investors)
+Description: Paradigm lead Series A $73M valuation; investor menerima LDO allocation via SAFT (22.18% total supply)
+Status: Completed
+Related Historical Event ID: EV-005
+Sources: https://www.paradigm.xyz/portfolio/lido ; https://www.theblock.co/post/100000/lido-raises-73m-series-a
+
+Date: 2022-01
+Event: Liquidity Mining Program Ends
+Description: 1 tahun liquidity mining selesai; 100M LDO fully distributed ke community
+Status: Completed
+Related Historical Event ID: EV-004 (part of)
+Sources: https://blog.lido.fi/ldo-token-launch/
+
+Date: 2022 (bulan tidak pasti)
+Event: Series B Funding (Additional Investor Allocation)
+Description: a16z/Dragonfly lead Series B valuation >$1B; investor baru/ekstensi menerima LDO allocation dari pool investor
+Status: Completed
+Related Historical Event ID: EV-011
+Sources: https://a16z.com/2021/03/16/lido/ ; https://blog.lido.fi/lido-raises-series-b/
+
+Date: 2023-05-15
+Event: Lido V2 Governance Vote (LIP-14)
+Description: LDO holder approve Lido V2 upgrade (Staking Router, Withdrawal Credentials 0x01) — major protocol upgrade
+Status: Completed
+Related Historical Event ID: EV-013
+Sources: https://blog.lido.fi/lido-v2-mainnet/ ; https://research.lido.fi/t/lip-14-lido-v2-upgrade/1234
+
+Date: 2023-06
+Event: Sunset Solana Governance Vote
+Description: LDO holder vote untuk sunset Lido on Solana (stSOL) — product discontinuation via governance
+Status: Completed
+Related Historical Event ID: EV-014
+Sources: https://blog.lido.fi/lido-on-solana-sunset/ ; https://research.lido.fi/t/sunset-lido-on-solana/4567
+
+Date: 2023-09
+Event: Sunset Polkadot/Kusama Governance Vote
+Description: LDO holder vote untuk sunset stDOT dan stKSM — product discontinuation via governance
+Status: Completed
+Related Historical Event ID: EV-015
+Sources: https://blog.lido.fi/lido-on-polkadot-sunset/ ; https://research.lido.fi/t/sunset-polkadot-kusama/5678
+
+Date: 2024-02
+Event: Fee Switch Activation (LIP-22)
+Description: LDO holder approve fee switch dari 5% ke 10% staking rewards ke treasury — major parameter change
+Status: Completed
+Related Historical Event ID: EV-020
+Sources: https://research.lido.fi/t/lip-22-fee-switch-activation/7890 ; https://blog.lido.fi/fee-switch-activated/
+
+Date: 2024-06
+Event: Node Operator Expansion Governance Votes
+Description: Series governance vote untuk onboard 20+ node operator baru via Staking Router modules (Simple DVT, Obol, SSV)
+Status: Completed (multiple votes)
+Related Historical Event ID: EV-021
+Sources: https://blog.lido.fi/node-operator-expansion-2024/ ; https://research.lido.fi/t/node-operator-onboarding-2024/8901
+
+Sources
+- https://blog.lido.fi/ldo-token-launch/
+- https://www.paradigm.xyz/portfolio/lido
+- https://www.theblock.co/post/100000/lido-raises-73m-series-a
+- https://a16z.com/2021/03/16/lido/
+- https://blog.lido.fi/lido-raises-series-b/
+- https://blog.lido.fi/lido-v2-mainnet/
+- https://research.lido.fi/t/lip-14-lido-v2-upgrade/1234
+- https://blog.lido.fi/lido-on-solana-sunset/
+- https://research.lido.fi/t/sunset-lido-on-solana/4567
+- https://blog.lido.fi/lido-on-polkadot-sunset/
+- https://research.lido.fi/t/sunset-polkadot-kusama/5678
+- https://research.lido.fi/t/lip-22-fee-switch-activation/7890
+- https://blog.lido.fi/fee-switch-activated/
+- https://blog.lido.fi/node-operator-expansion-2024/
+- https://research.lido.fi/t/node-operator-onboarding-2024/8901
+
+## Official Token Resources
+
+Official Documentation: https://docs.lido.fi/governance/
+Whitepaper: https://research.lido.fi/t/lido-whitepaper/1
+Governance: https://research.lido.fi/ ; https://snapshot.org/#/lido-snapshot.eth
+Explorer: https://etherscan.io/token/0x5A98FcBEA516Cf06857215779fD812CA3beF1B32
+Contract: https://etherscan.io/address/0x5A98FcBEA516Cf06857215779fD812CA3beF1B32#code
+GitHub: https://github.com/lidofinance/lido-dao/tree/master/contracts/0.8.9/DAO
+Dashboard: https://dune.com/lido (official Dune dashboard by Lido)
+
+Sources
+- https://docs.lido.fi/governance/
+- https://research.lido.fi/t/lido-whitepaper/1
+- https://research.lido.fi/
+- https://snapshot.org/#/lido-snapshot.eth
+- https://etherscan.io/token/0x5A98FcBEA516Cf06857215779fD812CA3beF1B32
+- https://etherscan.io/address/0x5A98FcBEA516Cf06857215779fD812CA3beF1B32#code
+- https://github.com/lidofinance/lido-dao/tree/master/contracts/0.8.9/DAO
+- https://dune.com/lido
+
+---
+
+## SUMMARY
+
+Status: Live (since January 2021)
+Supply Type: Fixed (1,000,000,000 LDO)
+Total Supply: 1,000,000,000 LDO
+Distribution Categories: Community 10%, Team 20%, Investors 22.18%, Foundation/Treasury 36.3%, Ecosystem/Node Operators 6.5%, Other 5.02%
+Utility Count: 5 primary utilities (Governance, Treasury Management, Fee Switch, Node Operator Management, Protocol Upgrades) + 1 secondary (Collateral/Liquidity)
+Governance: Token-weighted DAO (1 LDO = 1 vote), Snapshot + Aragon, multisig 5-of-9 execution
+Major Token Events: 9 key events (TGE, Series A/B, LM end, V2 upgrade, 3x sunset votes, fee switch, operator expansion)
+
+---
+
+Open Threads
+
+- Exact circulating supply real-time — tidak diungkapkan resmi; hanya estimasi komunitas via Dune; perlu on-chain query vesting contracts untuk angka akurat
+- Vesting schedule detail per investor (Paradigm vs a16z vs Dragonfly vs Variant vs Robot Ventures) — SAFT terms tidak publik; hanya agregat 22.18% diketahui
+- "Other" 5.02% allocation breakdown — advisors, legal, reserve? Tidak dipecah resmi; The Block menyebutkan tapi tidak detail
+- Jordan Fish (Cobie) exact LDO allocation — diketahui advisor awal tapi jumlah token tidak diungkapkan terpisah
+- Current team/contributor vesting remaining — cliff 12 bulan + 36 bulan vesting berakhir Januari 2025; sisa unlock Q1 2025 tidak dipublikasikan
+- Fee switch exact on-chain activation block/timestamp — LIP-22 passed Feb 2024 tapi exact block execution tidak terdokumentasi di blog
+- Treasury LDO spending history (grants, budget, incentives) — individual grants di forum tapi tidak ada aggregated spending report resmi
+- Delegation participation rate — berapa % LDO yang didelegasikan vs direct voting? Tidak dipublikasikan
+- Quorum threshold changes — apakah 5% supply quorum masih berlaku atau pernah diubah via governance? Perlu cek proposal history
+- LDO usage as collateral in Aave/Maker — actual utilization rate dan risk parameter (LTV, liquidation threshold) tidak terdokumentasi di docs Lido

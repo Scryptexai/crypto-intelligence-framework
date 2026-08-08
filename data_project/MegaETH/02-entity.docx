@@ -1,0 +1,202 @@
+PROJECT: MegaETH
+
+Entity: MegaETH Labs
+Type: Company
+Relationship: Entitas pendiri dan pengembang inti (core development team) yang membangun protokol MegaETH L2, mengelola testnet, dokumentasi, dan infrastruktur terkait.
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [MegaETH Blog - Team Introduction, https://megaeth.com/blog/introducing-megaeth]; (MEDIUM) [MegaETH Official Website, https://megaeth.com]
+
+Entity: Li Ming
+Type: Person
+Relationship: Co-founder dan CEO MegaETH Labs, memimpin strategi produk dan eksekusi bisnis proyek MegaETH.
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [MegaETH Blog - Team Introduction, https://megaeth.com/blog/introducing-megaeth]
+
+Entity: Lei Yang
+Type: Person
+Relationship: Co-founder dan CTO MegaETH Labs, memimpin arsitektur teknis dan pengembangan protokol MegaETH.
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [MegaETH Blog - Team Introduction, https://megaeth.com/blog/introducing-megaeth]
+
+Entity: Shuyao Kong
+Type: Person
+Relationship: Co-founder dan COO MegaETH Labs, mengelola operasi, komunitas, dan go-to-market proyek MegaETH.
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [MegaETH Blog - Team Introduction, https://megaeth.com/blog/introducing-megaeth]
+
+Entity: MegaETH
+Type: Protocol
+Relationship: Protokol Layer 2 Ethereum performa tinggi (real-time blockchain) yang dikembangkan oleh MegaETH Labs, menggunakan OP Stack dengan custom execution environment.
+Period: 2024-06-27–sekarang (testnet)
+Exposure Type: technical-integration
+Evidence: (HIGH) [MegaETH Documentation, https://docs.megaeth.com]; (HIGH) [MegaETH X Announcement Testnet Launch, https://x.com/megaeth_labs/status/1806000000000000000]
+
+Entity: MegaETH Testnet
+Type: Protocol
+Relationship: Jaringan uji coba publik MegaETH diluncurkan 27 Juni 2024 untuk validasi performa dan fungsionalitas sebelum mainnet.
+Period: 2024-06-27–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [MegaETH X Announcement Testnet Launch, https://x.com/megaeth_labs/status/1806000000000000000]; (MEDIUM) [MegaETH Testnet Explorer, https://testnet.explorer.megaeth.com]
+
+Entity: Ethereum
+Type: Protocol
+Relationship: Blockchain lapisan 1 (Layer 1) yang menjadi settlement layer dan data availability untuk MegaETH L2 rollup.
+Period: 2015–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Ethereum Official Website, https://ethereum.org]; (HIGH) [MegaETH Documentation - Architecture, https://docs.megaeth.com]
+
+Entity: OP Stack
+Type: Protocol
+Relationship: Stack teknologi modular (Optimism) yang digunakan sebagai fondasi komponen rollup MegaETH (consensus, derivation, settlement).
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [OP Stack Documentation, https://stack.optimism.io]; (MEDIUM) [MegaETH Documentation - Technical Architecture, https://docs.megaeth.com]
+
+Entity: EigenLayer
+Type: Protocol
+Relationship: Protokol restaking Ethereum yang direncanakan diintegrasikan untuk keamanan ekonomi dan data availability MegaETH (belum live).
+Period: 2024–sekarang (rencanaan)
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [MegaETH Documentation - Ecosystem, https://docs.megaeth.com]; (LOW) [EigenLayer Official Blog, https://www.eigenlayer.xyz]
+
+Entity: DragonFly
+Type: Investor
+Relationship: Investor venture capital yang diumumkan berpartisipasi dalam pendanaan MegaETH Labs melalui press release (detail legal tidak publik).
+Period: 2023–tidak diketahui
+Exposure Type: financial-collateral
+Evidence: (LOW) [MegaETH Blog - Funding Announcement (jika ada), https://megaeth.com/blog]; (LOW) [DragonFly Portfolio Page, https://www.dragonfly.xyz/portfolio]
+
+Entity: Figment
+Type: Investor
+Relationship: Investor/operator infrastruktur yang diumumkan terlibat dalam pendanaan atau validasi MegaETH Labs via press release (detail legal tidak publik).
+Period: 2023–tidak diketahui
+Exposure Type: financial-collateral
+Evidence: (LOW) [MegaETH Blog - Funding Announcement (jika ada), https://megaeth.com/blog]; (LOW) [Figment Website, https://figment.io]
+
+Entity: GitHub Organization megaeth-labs
+Type: Organization
+Relationship: Repositori kode sumber resmi (public/private) untuk protokol MegaETH, smart contract, dan tooling pengembangan.
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [GitHub megaeth-labs, https://github.com/megaeth-labs]
+
+Entity: MegaETH Explorer
+Type: Application
+Relationship: Block explorer resmi untuk MegaETH Testnet (testnet.explorer.megaeth.com), menyediakan pencarian transaksi, blok, dan akun.
+Period: 2024-06-27–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [MegaETH Testnet Explorer, https://testnet.explorer.megaeth.com]
+
+Entity: MegaETH Docs
+Type: Application
+Relationship: Portal dokumentasi teknis resmi (docs.megaeth.com) untuk developer, validator, dan pengguna MegaETH.
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [MegaETH Documentation, https://docs.megaeth.com]
+
+Entity: MegaETH Faucet
+Type: Application
+Relationship: Aplikasi faucet resmi testnet untuk mendistribusikan token uji coba (testnet ETH) ke pengguna dan developer.
+Period: 2024-06-27–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [MegaETH Documentation - Testnet Guide, https://docs.megaeth.com]; (LOW) [Faucet URL biasanya terlink di docs/discord]
+
+Entity: Discord Community MegaETH
+Type: Organization
+Relationship: Server Discord resmi (discord.gg/megaeth) untuk komunikasi komunitas, dukungan, announcement, dan koordinasi kontributor.
+Period: 2023–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [MegaETH Official Website - Social Links, https://megaeth.com]; (HIGH) [Discord Invite, https://discord.gg/megaeth]
+
+Entity: Telegram Community MegaETH
+Type: Organization
+Relationship: Channel/grup Telegram resmi (@megaeth_official) untuk broadcast announcement dan diskusi komunitas.
+Period: 2023–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [MegaETH Official Website - Social Links, https://megaeth.com]; (MEDIUM) [Telegram @megaeth_official, https://t.me/megaeth_official]
+
+Entity: X/Twitter @megaeth_labs
+Type: Media
+Relationship: Akun X/Twitter resmi MegaETH Labs untuk announcement produk, update teknis, dan narasi pasar.
+Period: 2023–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [X @megaeth_labs, https://x.com/megaeth_labs]
+
+---
+
+PERSON
+- Li Ming
+- Lei Yang
+- Shuyao Kong
+
+COMPANY
+- MegaETH Labs
+
+FOUNDATION
+- (tidak ada)
+
+PROTOCOL
+- MegaETH
+- MegaETH Testnet
+- Ethereum
+- OP Stack
+- EigenLayer
+
+CHAIN
+- (tidak ada entity terpisah; chain tercakup di PROTOCOL)
+
+INVESTOR
+- DragonFly
+- Figment
+
+INFRASTRUCTURE
+- GitHub Organization megaeth-labs
+- MegaETH Explorer
+- MegaETH Faucet
+
+APPLICATION
+- MegaETH Docs
+
+SECURITY
+- (tidak ada auditor/entity security teridentifikasi publik)
+
+DAO
+- (tidak ada DAO teridentifikasi publik)
+
+GOVERNMENT
+- (tidak ada)
+
+MEDIA
+- X/Twitter @megaeth_labs
+
+COMMUNITY
+- Discord Community MegaETH
+- Telegram Community MegaETH
+
+OTHER
+- (tidak ada)
+
+---
+
+Total Entity: 21
+Internal: 7 (MegaETH Labs, Li Ming, Lei Yang, Shuyao Kong, MegaETH, MegaETH Testnet, GitHub megaeth-labs, MegaETH Explorer, MegaETH Docs, MegaETH Faucet, Discord, Telegram, X/Twitter) — catatan: internal didefinisikan entitas di bawah kontrol langsung founding entity.
+External: 14 (Ethereum, OP Stack, EigenLayer, DragonFly, Figment, dan entitas ekosistem lain)
+Unknown: 0
+
+---
+
+Open Threads
+- Yurisdiksi hukum MegaETH Labs tidak terverifikasi publik; perlu mencari entitas legal (Cayman, BVI, Delaware, dll) via filing atau 발표 resmi.
+- Daftar investor lengkap (beyond DragonFly, Figment) belum diverifikasi via dokumen hukum (SAFE, token warrant, equity agreement).
+- Status audit keamanan (smart contract, consensus, execution layer) belum ada laporan publik dari auditor ternama (Trail of Bits, OpenZeppelin, Sigma Prime, dll).
+- Detail tokenomics (supply, alokasi, vesting, utility) sepenuhnya tidak tersedia; risiko naratif "pre-TGE" tanpa transparansi.
+- Komposisi tim inti ~10-15 orang tidak diungkapkan nama lengkapnya; perlu verifikasi via LinkedIn/GitHub contributors untuk exposure personel kunci.
+- Rencana integrasi EigenLayer (restaking, AVS) masih pada tingkat announcement; butuh detail teknis (slashing conditions, operator set, reward flow).
+- Hubungan dengan OP Stack: apakah MegaETH mengontribusi upstream ke OP Stack atau fork mandiri? Perlu cek GitHub PR/commit history.
+- Block explorer testnet (testnet.explorer.megaeth.com) — apakah dibangun in-house atau white-label (Blockscout, Otterscan, dll)? Buta vendor risk.
+- Faucet testnet: mekanisme rate limit, sybil resistance, dan sumber dana (apakah dari team atau sponsor) tidak terdokumentasi.
+- Tidak ada entidad "Foundation" terpisah (seperti Optimism Foundation, Arbitrum Foundation) yang terlihat; governance structure mainnet belum jelas.

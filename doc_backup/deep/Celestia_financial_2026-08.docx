@@ -1,0 +1,178 @@
+PROJECT: Celestia
+
+Funding History
+- Funding Round: Series A/B
+  Date: Oktober 2022
+  Amount: $55.000.000
+  Currency: USD
+  Lead Investor: Bain Capital Crypto; Polychain Capital (HIGH) [Celestia Blog "Celestia Labs raises $55M", https://blog.celestia.org/celestia-labs-raises-55m/]
+  Participating Investors: 1kx; Robot Ventures; Placeholder; Delphi Digital; Galaxy Digital; Figment Capital (MEDIUM) [Crunchbase Celestia Labs, https://www.crunchbase.com/organization/celestia-labs]
+  Valuation: tidak diungkap
+  Funding Type: Series A/B (equity investment ke Celestia Labs Inc.)
+  Status: Completed
+  Sources: https://blog.celestia.org/celestia-labs-raises-55m/; https://www.crunchbase.com/organization/celestia-labs
+
+- Funding Round: Seed / Pre-Series A (tidak diumumkan publik secara resmi)
+  Date: 2021 (perkiraan berdasarkan incorporasi Celestia Labs)
+  Amount: tidak diungkap
+  Currency: USD
+  Lead Investor: tidak diungkap
+  Participating Investors: tidak diungkap
+  Valuation: tidak diungkap
+  Funding Type: Seed (equity)
+  Status: Completed (inferred from Crunchbase funding history)
+  Sources: https://www.crunchbase.com/organization/celestia-labs
+
+Treasury
+- Current Treasury Size: tidak diungkap
+- Treasury Composition: tidak diungkap
+- Stablecoin Holdings: tidak diungkap
+- Native Token Holdings: tidak diungkap (Celestia Foundation mengelola treasury protokol termasuk alokasi TIA untuk community pool, grants, dan operasi; jumlah pasti tidak dipublikasikan) (MEDIUM) [Celestia Blog "TIA Genesis Drop", https://blog.celestia.org/tia-genesis-drop/]
+- Other Assets: tidak diungkap
+- Treasury Custodian: Celestia Foundation (Zug, Switzerland) — non-profit entity yang mengelola treasury on-chain via governance module (HIGH) [Celestia Blog "Celestia Mainnet Launch", https://blog.celestia.org/celestia-mainnet-launch/]
+- Sources: https://blog.celestia.org/celestia-mainnet-launch/; https://blog.celestia.org/tia-genesis-drop/
+
+Revenue Model
+- Revenue Stream: Blobspace Fees (Data Availability Fees)
+  Description: Pengguna rollup membayar fee untuk memposting blob data ke Celestia; fee market mengadopsi model EIP-1559 dengan base fee (dibakar) dan priority fee (ke proposer/validator) (HIGH) [Celestia Docs "Fee Market", https://docs.celestia.org/learn/fee-market]
+  Status: Live (sejak mainnet launch 31 Oktober 2023)
+  Sources: https://docs.celestia.org/learn/fee-market
+
+- Revenue Stream: Staking Rewards (Inflationary Issuance)
+  Description: TIA baru di-mint sebagai block reward untuk validator dan delegator; inflation rate diatur via governance (genesis ~7-8% per tahun, menurun seiring waktu) (HIGH) [Celestia Docs "TIA Token", https://docs.celestia.org/learn/tia-token]
+  Status: Live
+  Sources: https://docs.celestia.org/learn/tia-token
+
+- Revenue Stream: Fee Accrual ke Staker (Fee Switch / Value Accrual)
+  Description: Bagian dari blobspace fee (base fee atau priority fee) didistribusikan ke staker TIA; mekanisme "fee switch" masih dalam diskusi governance, belum diaktifkan penuh pada cut-off tanggal ini (MEDIUM) [Celestia Governance Forum "Fee Switch Discussion", https://forum.celestia.org/t/fee-switch-value-accrual/]
+  Status: Planned / In Discussion
+  Sources: https://forum.celestia.org/t/fee-switch-value-accrual/
+
+- Revenue Stream: Bridge Fees (Blobstream)
+  Description: Tidak ada fee protokol untuk verifikasi Blobstream di Ethereum; relayer membayar gas Ethereum sendiri; tidak ada revenue sharing ke Celestia (HIGH) [Celestia Docs "Blobstream", https://docs.celestia.org/learn/blobstream]
+  Status: Live (no fee)
+  Sources: https://docs.celestia.org/learn/blobstream
+
+- Revenue Stream: Enterprise Services / Licensing
+  Description: Celestia Labs menawarkan dukungan teknis dan integrasi untuk rollup enterprise; detail komersial tidak dipublikasikan (LOW) [Celestia Labs Website, https://celestia.org/team/]
+  Status: Planned / Early Stage
+  Sources: https://celestia.org/team/
+
+- Revenue Stream: Treasury Yield
+  Description: Celestia Foundation dapat mengelola treasury untuk yield (staking, lending); tidak ada laporan resmi mengenai aktivitas ini (LOW) [Celestia Blog "TIA Genesis Drop", https://blog.celestia.org/tia-genesis-drop/]
+  Status: Unknown
+  Sources: https://blog.celestia.org/tia-genesis-drop/
+
+- Revenue Stream: Grants (Outflow, bukan Revenue)
+  Description: Celestia Foundation mengeluarkan dana untuk grant ekosistem (Sputnik Wave 1 dll); ini adalah pengeluaran, bukan pendapatan (HIGH) [Celestia Forum "Grants Program", https://forum.celestia.org/c/grants/]
+  Status: Ongoing
+  Sources: https://forum.celestia.org/c/grants/
+
+Revenue History
+- Tanggal: tidak diungkap
+  Revenue: tidak diungkap
+  Period: tidak diungkap
+  Sources: tidak diungkap
+- Catatan: Celestia tidak mempublikasikan laporan pendapatan berkala (transparency report) dengan angka revenue blobspace fee, fee burn, atau staking reward aggregate. Data on-chain tersedia via block explorer tapi tidak diagregasikan ke laporan keuangan resmi. (HIGH) [Celestia Blog, https://blog.celestia.org/; Celestia Explorer, https://explorer.celestia.org/]
+
+Fundraising Mechanism
+- Mechanism: VC Equity Funding
+  Description: Celestia Labs Inc. (entitas for-profit) mengumpulkan modal via ronde equity Series A/B dari investor venture capital (Bain Capital Crypto, Polychain Capital, dll) (HIGH) [Celestia Blog "Celestia Labs raises $55M", https://blog.celestia.org/celestia-labs-raises-55m/]
+  Sources: https://blog.celestia.org/celestia-labs-raises-55m/
+
+- Mechanism: Foundation Treasury (Token Allocation)
+  Description: Celestia Foundation (non-profit) menerima alokasi token TIA pada genesis untuk mengelola treasury, grants, dan operasi protokol; bukan fundraising eksternal tapi alokasi internal (HIGH) [Celestia Blog "TIA Genesis Drop", https://blog.celestia.org/tia-genesis-drop/]
+  Sources: https://blog.celestia.org/tia-genesis-drop/
+
+- Mechanism: Protocol Revenue (Blobspace Fees)
+  Description: Pendapatan berkelanjutan dari fee data availability yang dibayar rollup; base fee dibakar, priority fee ke validator (HIGH) [Celestia Docs "Fee Market", https://docs.celestia.org/learn/fee-market]
+  Sources: https://docs.celestia.org/learn/fee-market
+
+- Mechanism: Grants (Outflow)
+  Description: Celestia Foundation mendistribusikan dana ke builder ekosistem via program grant (Sputnik); ini adalah penggunaan treasury, bukan sumber dana masuk (HIGH) [Celestia Forum "Grants Program", https://forum.celestia.org/c/grants/]
+  Sources: https://forum.celestia.org/c/grants/
+
+- Mechanism: Token Sale (Private/Community)
+  Description: Tidak ada public sale, launchpad, atau auction token TIA. Alokasi investor privat dilakukan via SAFT/equity round pada Series A/B; detail token sale terpisah tidak diumumkan (MEDIUM) [Celestia Blog "Celestia Labs raises $55M", https://blog.celestia.org/celestia-labs-raises-55m/]
+  Sources: https://blog.celestia.org/celestia-labs-raises-55m/
+
+Token Sale
+- Token Sale Type: Private Sale (via SAFT/Equity Round)
+  Date: Oktober 2022 (bersamaan Series A/B)
+  Status: Completed (token allocation vested untuk investor)
+  Sources: https://blog.celestia.org/celestia-labs-raises-55m/
+  Catatan: Investor Series A/B menerima alokasi TIA dengan jadwal vesting; detail persentase, cliff, dan durasi vesting tidak diumumkan publik (Phase 6 akan menelusuri tokenomics detail).
+
+- Token Sale Type: Public Sale / Launchpad / Auction / Community Sale
+  Date: Tidak ada
+  Status: Never Conducted
+  Sources: https://blog.celestia.org/tia-genesis-drop/
+  Catatan: TGE dilakukan via Genesis Drop (airdrop 6% supply ke eligible addresses) dan liquid TIA pada mainnet launch; tidak ada public sale.
+
+Financial Dependencies
+- Dependency: Venture Capital Investors (Celestia Labs)
+  Description: Celestia Labs bergantung pada modal VC ($55M Series A/B) untuk operasi pengembangan protokol, gaji tim, dan business development hingga protocol revenue mencukupi (HIGH) [Celestia Blog "Celestia Labs raises $55M", https://blog.celestia.org/celestia-labs-raises-55m/]
+  Sources: https://blog.celestia.org/celestia-labs-raises-55m/
+
+- Dependency: Celestia Foundation Treasury (Token Holdings)
+  Description: Foundation mengelola alokasi TIA genesis untuk grants, operasi, dan incentive ekosistem; kinerja treasury bergantung pada harga TIA dan pengelolaan token (HIGH) [Celestia Blog "TIA Genesis Drop", https://blog.celestia.org/tia-genesis-drop/]
+  Sources: https://blog.celestia.org/tia-genesis-drop/
+
+- Dependency: Protocol Revenue (Blobspace Demand)
+  Description: Jangka panjang, keberlanjutan finansial bergantung pada adopsi rollup dan permintaan blobspace yang menghasilkan fee revenue (HIGH) [Celestia Docs "Fee Market", https://docs.celestia.org/learn/fee-market]
+  Sources: https://docs.celestia.org/learn/fee-market
+
+- Dependency: Grant Programs (Ecosystem Funding)
+  Description: Ekosistem bergantung pada grant Foundation untuk mendanai tooling, rollup, dan infrastruktur; grant adalah outflow dari treasury (HIGH) [Celestia Forum "Grants Program", https://forum.celestia.org/c/grants/]
+  Sources: https://forum.celestia.org/c/grants/
+
+Financial Risk
+- Risk: Treasury Concentration (Native Token)
+  Description: Treasury Celestia Foundation terdiri terutama dari TIA; volatilitas harga TIA berdampak besar pada daya beli treasury untuk grants dan operasi (HIGH) [Celestia Blog "TIA Genesis Drop", https://blog.celestia.org/tia-genesis-drop/]
+  Sources: https://blog.celestia.org/tia-genesis-drop/
+
+- Risk: Revenue Dependency on Blobspace Adoption
+  Description: Protocol revenue sepenuhnya bergantung pada adopsi rollup yang menggunakan Celestia DA; jika adopsi rendah, fee revenue minim dan value accrual ke staker terbatas (HIGH) [Celestia Docs "Fee Market", https://docs.celestia.org/learn/fee-market]
+  Sources: https://docs.celestia.org/learn/fee-market
+
+- Risk: Funding Runway (Celestia Labs)
+  Description: Celestia Labs sebagai entitas for-profit memiliki runway terbatas dari $55M equity funding; perlu mencapai break-even atau fundraising tambahan (MEDIUM) [Crunchbase Celestia Labs, https://www.crunchbase.com/organization/celestia-labs]
+  Sources: https://www.crunchbase.com/organization/celestia-labs
+
+- Risk: Fee Switch Activation Uncertainty
+  Description: Mekanisme value accrual (fee switch) masih dalam diskusi governance; tidak ada jaminan kapan atau apakah akan diaktifkan, mempengaruhi naratif investasi TIA (MEDIUM) [Celestia Governance Forum "Fee Switch Discussion", https://forum.celestia.org/t/fee-switch-value-accrual/]
+  Sources: https://forum.celestia.org/t/fee-switch-value-accrual/
+
+- Risk: Regulatory / Token Classification
+  Description: Risiko klasifikasi TIA sebagai security oleh regulator (SEC dll) dapat mempengaruhi likuiditas, listing CEX, dan operasi Foundation/Labs (LOW) [General Crypto Regulatory Risk, tidak ada disclosure spesifik Celestia]
+  Sources: tidak ada disclosure resmi
+
+Official Financial Resources
+- Official Blog: https://blog.celestia.org/
+- Transparency Report: tidak ada (tidak dipublikasikan)
+- Treasury Dashboard: tidak ada (tidak dipublikasikan)
+- Governance Forum: https://forum.celestia.org/
+- Messari: https://messari.io/asset/celestia
+- Token Terminal: https://tokenterminal.com/terminal/projects/celestia
+- DefiLlama: https://defillama.com/chain/Celestia
+- CryptoRank: https://cryptorank.io/price/celestia
+- Whitepaper (LazyLedger): https://arxiv.org/abs/2105.09830
+
+RINGKASAN
+- Total Funding Raised: $55.000.000 (equity Series A/B Oktober 2022) (HIGH)
+- Funding Rounds: 1 ronde equity besar (Series A/B) + seed tidak diungkap (MEDIUM)
+- Treasury Status: Tidak diungkap (ukuran, komposisi, alamat on-chain) (HIGH)
+- Revenue Sources: Blobspace fees (base fee burn + priority fee to validator), Staking inflation rewards, Fee switch planned (MEDIUM)
+- Revenue Availability: Tidak diungkap (tidak ada laporan revenue berkala resmi) (HIGH)
+
+Open Threads
+- Ukuran treasury Celestia Foundation saat ini (jumlah TIA, stablecoin, aset lain) — butuh analisis on-chain address label Foundation atau governance proposal spend
+- Alokasi token TGE detail: persentase investor (Series A/B), team, foundation, community pool, airdrop, validators — butuh cross-check genesis.json dan blog tokenomics
+- Vesting schedule investor privat (SAFT) — cliff, durasi, unlock bulanan/tahunan — tidak diumumkan publik
+- Revenue metrics on-chain: total blobspace fee collected, base fee burned, priority fee distributed to validators per bulan — butuh indexer/query custom
+- Status fee switch activation: proposal governance nominal, timeline, persentase fee yang dialokasikan ke staker — butuh monitoring forum governance
+- Program grant Celestia Foundation (Sputnik Wave 1): total budget, jumlah penerima, kategori, sisa dana — butuh data dari forum governance
+- Financial runway Celestia Labs: sisa kas dari $55M, burn rate bulanan, rencana fundraising lanjutan — tidak diungkap
+- Valuation pada Series A/B — tidak diumumkan
+- Apakah ada revenue sharing dari Celestia Labs ke Foundation (licensing, enterprise support) — tidak diketahui
+- Alamat on-chain treasury Foundation dan Labs (multisig/DAI) untuk transparansi — butuh label address dari block explorer atau proposal

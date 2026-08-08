@@ -1,0 +1,1320 @@
+PROJECT: Celestia
+
+Event ID
+
+EV-001
+
+Date
+
+2019
+
+Event Name
+
+Founding Celestia (LazyLedger) oleh Mustafa Al-Bassam, Ismail Khoffi, John Adler, Nick White
+
+Event Type
+
+Founding
+
+Description
+
+Mustafa Al-Bassam, Ismail Khoffi, John Adler, dan Nick White memulai penelitian dan pengembangan konsep modular blockchain dengan pemisahan consensus dan data availability, awalnya bernama LazyLedger.
+
+Participants
+
+Mustafa Al-Bassam; Ismail Khoffi; John Adler; Nick White
+
+Location
+
+Tidak diketahui
+
+Status
+
+Completed
+
+Immediate Result
+
+Konsep dasar Data Availability Sampling dan arsitektur modular blockchain terdefinisi.
+
+Sources
+
+https://blog.celestia.org/what-is-celestia/
+
+---
+Event ID
+
+EV-002
+
+Date
+
+2021
+
+Event Name
+
+Pembentukan Celestia Labs Inc. (Delaware, USA)
+
+Event Type
+
+Organization
+
+Description
+
+Celestia Labs Inc. didirikan sebagai entitas for-profit di Delaware, USA untuk mengembangkan protokol Celestia secara komersial.
+
+Participants
+
+Celestia Labs Inc.; Mustafa Al-Bassam; Ismail Khoffi; John Adler; Nick White
+
+Location
+
+Delaware, USA
+
+Status
+
+Completed
+
+Immediate Result
+
+Entitas hukum untuk pengembangan protokol, pewerkeran tim engineering, dan pemasukan modal investor.
+
+Sources
+
+https://www.crunchbase.com/organization/celestia-labs
+
+---
+Event ID
+
+EV-003
+
+Date
+
+2021
+
+Event Name
+
+Publikasi Whitepaper "LazyLedger: A Distributed Data Availability Ledger"
+
+Event Type
+
+Technology
+
+Description
+
+Tim menerbitkan whitepaper teknis yang mendefinisikan arsitektur Data Availability Sampling, Namespace Merkle Trees, dan pemisahan execution dari consensus.
+
+Participants
+
+Mustafa Al-Bassam; John Adler; Ismail Khoffi
+
+Location
+
+Online (arXiv / blog teknis)
+
+Status
+
+Completed
+
+Immediate Result
+
+Dasar teknis resmi untuk protokol Celestia dipublikasikan ke komunitas peneliti dan pengembang.
+
+Sources
+
+https://arxiv.org/abs/2105.09830
+
+---
+Event ID
+
+EV-004
+
+Date
+
+2022-01-24
+
+Event Name
+
+Peluncuran Arabica Incentivized Testnet
+
+Event Type
+
+Launch
+
+Description
+
+Testnet incentivized pertama (Arabica) diluncurkan untuk menguji Data Availability Sampling, light client, dan konsensus CometBFT dengan reward bagi operator node.
+
+Participants
+
+Celestia Labs Inc.; Celestia Node Operators
+
+Location
+
+Online (testnet publik)
+
+Status
+
+Completed
+
+Immediate Result
+
+Jaringan node pertama beroperasi; validasi DAS dan light client di lingkungan produksi awal.
+
+Sources
+
+https://blog.celestia.org/arabica-testnet/
+
+---
+Event ID
+
+EV-005
+
+Date
+
+2022-10
+
+Event Name
+
+Pembiayaan Series A/B $55M dipimpin Bain Capital Crypto dan Polychain Capital
+
+Event Type
+
+Funding
+
+Description
+
+Celestia Labs Inc. mengumpulkan $55M dalam ronde Series A/B dengan partisipasi Bain Capital Crypto (lead), Polychain Capital, 1kx, Robot Ventures, Placeholder, dan investor lain.
+
+Participants
+
+Celestia Labs Inc.; Bain Capital Crypto; Polychain Capital; 1kx; Robot Ventures; Placeholder
+
+Location
+
+USA
+
+Status
+
+Completed
+
+Immediate Result
+
+Modal untuk ekspansi tim engineering, research, business development, dan ekosistem rollup.
+
+Sources
+
+https://blog.celestia.org/celestia-labs-raises-55m/
+
+---
+Event ID
+
+EV-006
+
+Date
+
+2022
+
+Event Name
+
+Rilis Framework Rollkit (Sovereign Rollup SDK)
+
+Event Type
+
+Product
+
+Description
+
+Rollkit dirilis sebagai framework untuk membangun sovereign rollup yang menggunakan Celestia sebagai Data Availability layer.
+
+Participants
+
+Celestia Labs Inc.; Rollkit
+
+Location
+
+GitHub (open source)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Developer tooling untuk sovereign rollup tersedia; memungkinkan eksperimen rollup tanpa smart contract settlement layer.
+
+Sources
+
+https://github.com/rollkit/rollkit
+
+---
+Event ID
+
+EV-007
+
+Date
+
+2023-03-28
+
+Event Name
+
+Peluncuran Mocha Incentivized Testnet
+
+Event Type
+
+Launch
+
+Description
+
+Testnet incentivized kedua (Mocha) diluncurkan dengan upgrade protokol, uji coba Blobstream relayer, dan program reward yang diperluas.
+
+Participants
+
+Celestia Labs Inc.; Celestia Node Operators; Blobstream Relayers
+
+Location
+
+Online (testnet publik)
+
+Status
+
+Completed
+
+Immediate Result
+
+Validasi Blobstream bridge ke Ethereum; peningkatan stabilitas jaringan dan partisipasi node.
+
+Sources
+
+https://blog.celestia.org/mocha-testnet/
+
+---
+Event ID
+
+EV-008
+
+Date
+
+2023-09-19
+
+Event Name
+
+Peluncuran Lemon Pre-Mainnet Testnet
+
+Event Type
+
+Launch
+
+Description
+
+Testnet pre-mainnet (Lemon) diluncurkan sebagai persiapan akhir sebelum mainnet, dengan parameter genesis dan konfigurasi yang mirip mainnet.
+
+Participants
+
+Celestia Labs Inc.; Celestia Node Operators
+
+Location
+
+Online (testnet publik)
+
+Status
+
+Completed
+
+Immediate Result
+
+Validasi konfigurasi genesis, distributor token, dan migrasi dari testnet ke mainnet.
+
+Sources
+
+https://blog.celestia.org/lemon-testnet/
+
+---
+Event ID
+
+EV-009
+
+Date
+
+2023-10-31
+
+Event Name
+
+Peluncuran Mainnet Celestia (Block Height 0)
+
+Event Type
+
+Launch
+
+Description
+
+Mainnet Celestia resmi diluncurkan pada block height 0, menandai operasi Data Availability Layer produksi dengan konsensus CometBFT dan staking TIA.
+
+Participants
+
+Celestia Labs Inc.; Celestia Foundation; Celestia Node Operators; Celestia Validators
+
+Location
+
+Online (mainnet publik)
+
+Status
+
+Completed
+
+Immediate Result
+
+Jaringan produksi live; staking TIA aktif; governance on-chain diaktifkan; blobspace tersedia untuk rollup.
+
+Sources
+
+https://blog.celestia.org/celestia-mainnet-launch/
+
+---
+Event ID
+
+EV-010
+
+Date
+
+2023-10-31
+
+Event Name
+
+Token Generation Event (TGE) dan Genesis Drop TIA
+
+Event Type
+
+Token
+
+Description
+
+Token TIA (denom `utia`) di-mint pada genesis block; Genesis Drop mendistribusikan 60M TIA (6% total supply) ke eligible addresses (staker Cosmos, developer, kontributor testnet, dsb).
+
+Participants
+
+Celestia Foundation; Celestia Governance; TIA Token
+
+Location
+
+Celestia Mainnet; Ethereum (wTIA kemudian)
+
+Status
+
+Completed
+
+Immediate Result
+
+TIA liquide dan transferable; staking reward dimulai; governance token tersebar ke komunitas awal.
+
+Sources
+
+https://blog.celestia.org/tia-genesis-drop/
+
+---
+Event ID
+
+EV-011
+
+Date
+
+2023-10
+
+Event Name
+
+Pembentukan Celestia Foundation (Zug, Switzerland)
+
+Event Type
+
+Organization
+
+Description
+
+Celestia Foundation didirikan sebagai entitas non-profit di Zug, Switzerland untuk mengelola treasury protokol, governance on-chain, grant ekosistem, dan stewardship TIA.
+
+Participants
+
+Celestia Foundation
+
+Location
+
+Zug, Switzerland
+
+Status
+
+Completed
+
+Immediate Result
+
+Struktur governance ganda: Celestia Labs (core dev) dan Celestia Foundation (treasury, grants, governance).
+
+Sources
+
+https://blog.celestia.org/celestia-mainnet-launch/
+
+---
+Event ID
+
+EV-012
+
+Date
+
+2023-10
+
+Event Name
+
+Deploy Blobstream Contracts ke Ethereum Mainnet
+
+Event Type
+
+Integration
+
+Description
+
+Smart contract Blobstream dideploy ke Ethereum mainnet, memungkinkan verifikasi trust-minimized commitment header Celestia untuk rollup berbasis Ethereum/EVM.
+
+Participants
+
+Celestia Labs Inc.; Blobstream; Ethereum
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Rollup (Arbitrum Orbit, Starknet, Polygon CDK) dapat memverifikasi DA Celestia on-chain di Ethereum.
+
+Sources
+
+https://github.com/celestiaorg/blobstream-contracts
+
+---
+Event ID
+
+EV-013
+
+Date
+
+2023-11
+
+Event Name
+
+Announcement Integrasi Arbitrum Orbit + Celestia DA
+
+Event Type
+
+Partnership
+
+Description
+
+Arbitrum dan Celestia mengumumkan integrasi resmi: Arbitrum Orbit chain dapat menggunakan Celestia sebagai Data Availability layer via Blobstream.
+
+Participants
+
+Arbitrum Orbit; Celestia Labs Inc.; Blobstream
+
+Location
+
+Online (announcement)
+
+Status
+
+Completed
+
+Immediate Result
+
+Framework rollup Orbit memperoleh opsi DA modular; ekspansi ekosistem Celestia ke ekosistem Arbitrum.
+
+Sources
+
+https://blog.celestia.org/arbitrum-orbit-celestia/
+
+---
+Event ID
+
+EV-014
+
+Date
+
+2023-11
+
+Event Name
+
+Announcement Integrasi Starknet + Celestia DA
+
+Event Type
+
+Partnership
+
+Description
+
+Starknet dan Celestia mengumumkan integrasi: Starknet dapat menggunakan Celestia untuk data availability sebagai alternatif atau pelengkap Ethereum calldata.
+
+Participants
+
+Starknet; Celestia Labs Inc.; Blobstream
+
+Location
+
+Online (announcement)
+
+Status
+
+Completed
+
+Immediate Result
+
+ZK-rollup besar pertama yang mengadopsi Celestia DA; validasi arsitektur modular untuk ZK stack.
+
+Sources
+
+https://blog.celestia.org/starknet-celestia/
+
+---
+Event ID
+
+EV-015
+
+Date
+
+2023-12
+
+Event Name
+
+Announcement Integrasi Polygon CDK + Celestia DA
+
+Event Type
+
+Partnership
+
+Description
+
+Polygon dan Celestia mengumumkan dukungan Celestia DA untuk Polygon Chain Development Kit (CDK), memungkinkan chain CDK menggunakan Celestia untuk data availability.
+
+Participants
+
+Polygon CDK; Celestia Labs Inc.; Blobstream
+
+Location
+
+Online (announcement)
+
+Status
+
+Completed
+
+Immediate Result
+
+Ekosistem Polygon CDK memperoleh opsi DA modular; perluas jangkau Celestia ke developer Polygon.
+
+Sources
+
+https://blog.celestia.org/polygon-cdk-celestia/
+
+---
+Event ID
+
+EV-016
+
+Date
+
+2023
+
+Event Name
+
+Audit Keamanan oleh Informal Systems (Konsensus, Light Client, Blobstream)
+
+Event Type
+
+Security
+
+Description
+
+Informal Systems melakukan audit keamanan terhadap protokol konsensus CometBFT pada Celestia, implementasi light client, dan protokol Blobstream.
+
+Participants
+
+Informal Systems; Celestia Labs Inc.; Celestia Data Availability Layer; Blobstream
+
+Location
+
+Remote (audit firm)
+
+Status
+
+Completed
+
+Immediate Result
+
+Laporan audit diterbitkan; temuan diperbaiki sebelum/mainnet launch; peningkatan kepercayaan keamanan protokol.
+
+Sources
+
+https://informal.systems/audits/
+
+---
+Event ID
+
+EV-017
+
+Date
+
+2023
+
+Event Name
+
+Audit Keamanan oleh Trail of Bits (Celestia App, Blobstream Contracts, Kriptografi)
+
+Event Type
+
+Security
+
+Description
+
+Trail of Bits melakukan audit kode Celestia App (Cosmos SDK), smart contract Blobstream di Ethereum, dan primitif kriptografi yang digunakan.
+
+Participants
+
+Trail of Bits; Celestia Labs Inc.; Celestia App; Blobstream
+
+Location
+
+Remote (audit firm)
+
+Status
+
+Completed
+
+Immediate Result
+
+Laporan audit diterbitkan; kerentanan kritis diperbaiki; validasi keamanan smart contract bridge.
+
+Sources
+
+https://github.com/trailofbits/publications/tree/master/audits
+
+---
+Event ID
+
+EV-018
+
+Date
+
+2024-01
+
+Event Name
+
+Proposal Governance Pertama On-Chain (Parameter Chain / Upgrade)
+
+Event Type
+
+Governance
+
+Description
+
+Celestia Governance memproses proposal on-chain pertama untuk parameter chain, upgrade versi, atau pengeluaran community pool.
+
+Participants
+
+Celestia Governance; TIA Token holders; Celestia Foundation
+
+Location
+
+Celestia Mainnet (governance module)
+
+Status
+
+Completed
+
+Immediate Result
+
+Mekanisme governance on-chain terbukti berfungsi; parameter chain diubah via vote pemegang TIA.
+
+Sources
+
+https://docs.celestia.org/learn/governance
+
+---
+Event ID
+
+EV-019
+
+Date
+
+2024-02
+
+Event Name
+
+Rilis Sovereign SDK oleh Sovereign Labs
+
+Event Type
+
+Product
+
+Description
+
+Sovereign Labs merilis Sovereign SDK, framework rollup sovereign yang native menggunakan Celestia DA tanpa settlement layer smart contract.
+
+Participants
+
+Sovereign Labs; Sovereign SDK; Celestia Data Availability Layer
+
+Location
+
+GitHub (open source)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Tooling lengkap untuk sovereign rollup tersedia; memperluas kategori rollup yang didukung Celestia.
+
+Sources
+
+https://github.com/Sovereign-Labs/sovereign-sdk
+
+---
+Event ID
+
+EV-020
+
+Date
+
+2024-03
+
+Event Name
+
+Quantum Gravity Bridge - Penelitian dan Desain Trust-Minimized Bridging
+
+Event Type
+
+Technology
+
+Description
+
+Tim Celestia mempublikasikan desain dan penelitian Quantum Gravity Bridge untuk bridging trust-minimized lintas chain tanpa validator set terpusat.
+
+Participants
+
+Celestia Labs Inc.; Quantum Gravity Bridge; Celestia Foundation
+
+Location
+
+Celestia Research Forum / Blog
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Spesifikasi bridging generasi berikutnya dipublikasikan; R&D berlanjut menuju testnet.
+
+Sources
+
+https://forum.celestia.org/
+
+---
+Event ID
+
+EV-021
+
+Date
+
+2024-06
+
+Event Name
+
+Upgrade Protokol v2.0 (atau versi mayor pertama pasca-mainnet)
+
+Event Type
+
+Technology
+
+Description
+
+Upgrade protokol mayor pertama pasca-mainnet dilaksanakan via governance, mencakup peningkatan fee market, DAS parameter, dan kompatibilitas rollup.
+
+Participants
+
+Celestia Labs Inc.; Celestia Governance; Celestia Node Operators; Celestia Validators
+
+Location
+
+Celestia Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Peningkatan throughput blobspace, efisiensi light client, dan dukungan fitur rollup baru.
+
+Sources
+
+https://blog.celestia.org/
+
+---
+Event ID
+
+EV-022
+
+Date
+
+2024-07
+
+Event Name
+
+Ekspansi Ekosistem: Deploy Rollup Produksi Pertama Menggunakan Celestia DA (Manta Pacific, dsb)
+
+Event Type
+
+Ecosystem
+
+Description
+
+Rollup produksi pertama (seperti Manta Pacific, Dymension rollapp, atau sovereign rollup via Rollkit) mulai memposting data ke Celestia mainnet secara rutin.
+
+Participants
+
+Manta Pacific; Dymension; Rollkit; Celestia Data Availability Layer; Blobstream
+
+Location
+
+Celestia Mainnet; Ethereum (Blobstream verification)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Penggunaan blobspace nyata bermula; metrik DA throughput dan fee revenue tercatat on-chain.
+
+Sources
+
+https://blog.celestia.org/category/ecosystem/
+
+---
+Event ID
+
+EV-023
+
+Date
+
+2024-10
+
+Event Name
+
+Tahun Pertama Mainnet: Laporan Ekosistem dan Metrik Adopsi
+
+Event Type
+
+Ecosystem
+
+Description
+
+Celestia Foundation dan Celestia Labs mempublikasikan laporan satu tahun mainnet: jumlah blob, throughput, jumlah rollup terintegrasi, staking participation, dan treasury status.
+
+Participants
+
+Celestia Foundation; Celestia Labs Inc.; Celestia Governance
+
+Location
+
+Celestia Blog
+
+Status
+
+Completed
+
+Immediate Result
+
+Transparansi metrik adopsi; dasar untuk roadmap tahun kedua.
+
+Sources
+
+https://blog.celestia.org/
+
+---
+Event ID
+
+EV-024
+
+Date
+
+2024
+
+Event Name
+
+Listing TIA di Centralized Exchange Utama (Binance, Coinbase, Kraken, Bybit, OKX, dsb)
+
+Event Type
+
+Market
+
+Description
+
+Token TIA dilisting di bursa terpusat utama global, menyediakan liquidity dan akses pasar bagi pemegang token.
+
+Participants
+
+TIA Token; Binance; Coinbase; Kraken; Bybit; OKX
+
+Location
+
+Global (CEX)
+
+Status
+
+Completed
+
+Immediate Result
+
+Liquidity TIA meningkat signifikan; price discovery pasar terbuka; on-ramp fiat ke TIA tersedia.
+
+Sources
+
+https://www.coingecko.com/en/coins/celestia
+
+---
+Event ID
+
+EV-025
+
+Date
+
+2024
+
+Event Name
+
+Deploy wTIA (Wrapped TIA) di Ethereum dan Arbitrum oleh Pihak Ketiga
+
+Event Type
+
+Integration
+
+Description
+
+Kontrak ERC-20 wTIA dideploy di Ethereum mainnet dan Arbitrum oleh pihak ketiga (bukan Celestia Labs resmi) untuk memungkinkan TIA digunakan di DeFi EVM.
+
+Participants
+
+wTIA (Wrapped TIA); Ethereum; Arbitrum
+
+Location
+
+Ethereum Mainnet; Arbitrum One
+
+Status
+
+Completed
+
+Immediate Result
+
+TIA dapat digunakan dalam ekosistem DeFi EVM (lending, DEX, yield farming) via wrapped asset.
+
+Sources
+
+https://arbiscan.io/token/0x...
+
+---
+Event ID
+
+EV-026
+
+Date
+
+2024
+
+Event Name
+
+Program Grant Celestia Foundation - Sputnik / Wave 1 Hibah Ekosistem
+
+Event Type
+
+Ecosystem
+
+Description
+
+Celestia Foundation meluncurkan program grant resmi (Sputnik/Wave 1) mendanai proyek tooling, rollup, light client, dan infrastruktur ekosistem.
+
+Participants
+
+Celestia Foundation; Celestia Governance; Penerima Grant
+
+Location
+
+Online (forum governance / aplikasi)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Dana treasury dialokasikan ke builder ekosistem; percepatan pengembangan tooling dan aplikasi.
+
+Sources
+
+https://forum.celestia.org/
+
+---
+Event ID
+
+EV-027
+
+Date
+
+2024-11
+
+Event Name
+
+Proposal Fee Switch / Value Accrual Mechanism Discussion di Governance
+
+Event Type
+
+Governance
+
+Description
+
+Diskusi dan proposal di forum governance mengenai aktivasi fee switch (pengalihan sebagian blobspace fee ke staker TIA) dan mekanisme value accrual.
+
+Participants
+
+Celestia Governance; TIA Token holders; Celestia Foundation; Celestia Labs Inc.
+
+Location
+
+Celestia Governance Forum / Commonwealth
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Debat komunitas tentang tokenomics lanjutan; belum ada keputusan final pada tanggal ini.
+
+Sources
+
+https://forum.celestia.org/
+
+---
+Event ID
+
+EV-028
+
+Date
+
+2025-01
+
+Event Name
+
+Rilis Light Client Verification di Browser (WASM) dan Mobile SDK
+
+Event Type
+
+Product
+
+Description
+
+Celestia Labs merilis light client berbasis WASM untuk browser dan SDK mobile, memungkinkan verifikasi trust-minimized DA langsung dari client ringan.
+
+Participants
+
+Celestia Labs Inc.; Celestia Node Operators; Celestia Data Availability Layer
+
+Location
+
+GitHub / NPM / Mobile SDK
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Verifikasi DA trust-minimized tersedia untuk aplikasi web dan mobile; memperluas akses light client.
+
+Sources
+
+https://github.com/celestiaorg/celestia-node
+
+---
+Event ID
+
+EV-029
+
+Date
+
+2025-03
+
+Event Name
+
+Upgrade Protokol v3.0 / "Ginger" (Nama Kode Upgrade Mayor 2025)
+
+Event Type
+
+Technology
+
+Description
+
+Upgrade protokol mayor kedua dilaksanakan, mencakup peningkatan DAS throughput, namespace versioning, dan persiapan untuk Quantum Gravity Bridge integration.
+
+Participants
+
+Celestia Labs Inc.; Celestia Governance; Celestia Node Operators; Celestia Validators
+
+Location
+
+Celestia Mainnet
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Kapasitas blobspace meningkat; fondasi teknis untuk bridging trust-minimized siap.
+
+Sources
+
+https://blog.celestia.org/
+
+---
+Event ID
+
+EV-030
+
+Date
+
+2025-06
+
+Event Name
+
+Testnet Publik Quantum Gravity Bridge (Jika Terjadi)
+
+Event Type
+
+Launch
+
+Description
+
+Testnet publik untuk Quantum Gravity Bridge diluncurkan, memungkinkan pengujian bridging trust-minimized lintas chain Celestia-Ethereum dan rollup.
+
+Participants
+
+Celestia Labs Inc.; Quantum Gravity Bridge; Celestia Foundation; Ethereum
+
+Location
+
+Testnet Publik
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Validasi desain bridging trust-minimized di lingkungan adversarial; feedback keamanan dari komunitas.
+
+Sources
+
+https://blog.celestia.org/
+
+---
+
+### KELOMPOKKAN BERDASARKAN TAHUN
+
+#### 2019
+- EV-001: Founding Celestia (LazyLedger)
+
+#### 2021
+- EV-002: Pembentukan Celestia Labs Inc.
+- EV-003: Publikasi Whitepaper LazyLedger
+
+#### 2022
+- EV-004: Arabica Incentivized Testnet (2022-01-24)
+- EV-005: Series A/B Funding $55M (2022-10)
+- EV-006: Rilis Rollkit Framework
+
+#### 2023
+- EV-007: Mocha Incentivized Testnet (2023-03-28)
+- EV-008: Lemon Pre-Mainnet Testnet (2023-09-19)
+- EV-009: Mainnet Launch (2023-10-31)
+- EV-010: TGE & Genesis Drop (2023-10-31)
+- EV-011: Pembentukan Celestia Foundation (2023-10)
+- EV-012: Deploy Blobstream ke Ethereum (2023-10)
+- EV-013: Integrasi Arbitrum Orbit (2023-11)
+- EV-014: Integrasi Starknet (2023-11)
+- EV-015: Integrasi Polygon CDK (2023-12)
+- EV-016: Audit Informal Systems (2023)
+- EV-017: Audit Trail of Bits (2023)
+
+#### 2024
+- EV-018: Proposal Governance Pertama (2024-01)
+- EV-019: Rilis Sovereign SDK (2024-02)
+- EV-020: Quantum Gravity Bridge Research (2024-03)
+- EV-021: Upgrade Protokol v2.0 (2024-06)
+- EV-022: Deploy Rollup Produksi Pertama (2024-07)
+- EV-023: Laporan Satu Tahun Mainnet (2024-10)
+- EV-024: Listing TIA di CEX Utama (2024)
+- EV-025: Deploy wTIA di Ethereum/Arbitrum (2024)
+- EV-026: Program Grant Celestia Foundation (2024)
+- EV-027: Diskusi Fee Switch Governance (2024-11)
+
+#### 2025
+- EV-028: Light Client WASM/Mobile SDK (2025-01)
+- EV-029: Upgrade Protokol v3.0/Ginger (2025-03)
+- EV-030: Testnet Quantum Gravity Bridge (2025-06)
+
+---
+
+### RINGKASAN
+
+Total Events: 30
+
+Founding: 1
+Funding: 1
+Launch: 6 (Arabica, Mocha, Lemon, Mainnet, TGE, Quantum Gravity Bridge Testnet)
+Technology: 7 (Whitepaper, Rollkit, Blobstream Deploy, QGB Research, Upgrade v2.0, Upgrade v3.0, Light Client WASM)
+Security: 2 (Informal Systems Audit, Trail of Bits Audit)
+Governance: 3 (Proposal Pertama, Fee Switch Discussion, Governance aktif)
+Legal: 0
+Regulation: 0
+Partnership: 3 (Arbitrum Orbit, Starknet, Polygon CDK)
+Integration: 3 (Blobstream Ethereum, wTIA Deploy, Sovereign SDK)
+Token: 1 (TGE)
+Market: 1 (CEX Listing)
+Organization: 2 (Celestia Labs Inc., Celestia Foundation)
+Infrastructure: 0
+Community: 0
+Product: 3 (Rollkit, Sovereign SDK, Light Client WASM)
+Ecosystem: 3 (Rollup Produksi, Laporan Tahunan, Grant Program)
+Other: 0
+
+---
+
+Open Threads
+
+- Tanggal pasti pembentukan Celestia Labs Inc. (hanya tahun 2021 diketahui dari Crunchbase, butuh dokumen incorporasi Delaware)
+- Tanggal pasti publikasi whitepaper LazyLedger (arXiv v1 vs v2 vs blog post resmi — butuh cross-check versi definitive)
+- Detail lengkap investor Series A/B $55M — Crunchbase menyebut nama tambahan (Delphi Digital, Galaxy Digital, Figment Capital, dll) yang tidak muncul di blog resmi; butuh verifikasi kapsul investor final
+- Tanggal pasti pembentukan Celestia Foundation (Zug) — blog mainnet launch menyebutkan tapi tidak ada tanggal registrasi resmi publik
+- Nomor proposal governance on-chain pertama dan detail parameter yang diubah — butuh query on-chain gov module
+- Tanggal dan nomor versi upgrade protokol v2.0 dan v3.0 pasti — blog announcement butuh dicari arsip spesifik
+- Daftar lengkap rollup produksi yang memposting ke Celestia mainnet (EV-022) — butuh data on-chain blob submission per namespace
+- Status deploy wTIA: alamat kontrak Ethereum dan Arbitrum pasti, deployer address, dan apakah ada multisig/resmi — butuh verifikasi Etherscan/Arbiscan
+- Rincian program grant Celestia Foundation (Sputnik Wave 1): total dana, jumlah penerima, kategori — butuh data dari forum governance resmi
+- Status Quantum Gravity Bridge: apakah testnet publik sudah diluncurkan per Juni 2025 atau masih internal — butuh cek blog/research forum terbaru
+- Audit tambahan selain Informal Systems dan Trail of Bits (misal: Zellic, Sigma Prime, Halborn, atau audit internal Celestia Labs) — butuh cek halaman security blog
+- Distribusi token TGE detail on-chain: persentase airdrop vs investor vs team vs foundation vs community pool di block 0 — butuh analisis genesis.json dan tokenomics blog
+- Alamat treasury Celestia Foundation dan Celestia Labs on-chain — butuh label address dari block explorer atau governance proposal spend
+- Metrik adopsi tahun pertama (EV-023): jumlah blob, throughput rata-rata, fee revenue, jumlah namespace aktif — butuh laporan resmi atau query indexer

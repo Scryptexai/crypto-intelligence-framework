@@ -1,0 +1,241 @@
+PROJECT: Movement Labs
+
+## Token Information
+
+Official Token Name: MOVE (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+Symbol: MOVE (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+Token Standard: tidak diketahui (belum diumumkan resmi apakah ERC-20, Move native, atau standar lain) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/; Movement Labs Discord FAQ, https://discord.gg/movementlabs]
+Blockchain: tidak diketahui (belum diumumkan resmi chain untuk token issuance; kemungkinan Ethereum L1 atau Movement M1 native) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+Contract Address: belum di-deploy (pre-TGE) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/; Movement Labs Discord FAQ, https://discord.gg/movementlabs]
+Decimals: tidak diketahui (belum diumumkan) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/]
+Status: Planned / Pre-TGE (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/; Movement Labs Discord FAQ, https://discord.gg/movementlabs]
+
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/, https://discord.gg/movementlabs
+
+## Supply
+
+Maximum Supply: tidak diketahui (belum dipublikasikan) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+Total Supply: tidak diketahui (belum dipublikasikan) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+Circulating Supply: 0 (pre-TGE, token belum exist) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/; Movement Labs Discord FAQ, https://discord.gg/movementlabs]
+Initial Supply: tidak diketahui (belum dipublikasikan) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+Supply Type: tidak diketahui (Fixed / Inflationary / Dynamic — belum diumumkan) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/, https://discord.gg/movementlabs
+
+## Distribution
+
+Community: Planned (persentase tidak diketahui) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+Team: Planned (persentase tidak diketahui) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+Investors: Planned (persentase tidak diketahui; asumsi standar VC crypto via SAFT/token warrant untuk Series A investors, belum dikonfirmasi resmi) (MEDIUM) [Crunchbase, https://www.crunchbase.com/organization/movement-labs; Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+Foundation: tidak diketahui (Movement Foundation belum dibentuk/ diumumkan) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+Treasury: Planned (persentase tidak diketahui) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+Ecosystem: Planned (persentase tidak diketahui; Head of Ecosystem role mengimplikasikan allocation) (MEDIUM) [Movement Labs Team Page, https://movementlabs.xyz/team; Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+Advisors: tidak diketahui (belum diumumkan) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+Other: tidak diketahui (belum diumumkan) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/, https://movementlabs.xyz/team, https://www.crunchbase.com/organization/movement-labs
+
+## Vesting Schedule
+
+Category: Community
+Cliff: tidak diketahui
+Vesting: tidak diketahui
+Unlock Frequency: tidak diketahui
+Current Status: Planned
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Category: Team
+Cliff: tidak diketahui
+Vesting: tidak diketahui
+Unlock Frequency: tidak diketahui
+Current Status: Planned
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Category: Investors
+Cliff: tidak diketahui
+Vesting: tidak diketahui
+Unlock Frequency: tidak diketahui
+Current Status: Planned (asumsi standar VC: 12-18 bulan cliff, 24-48 bulan vesting linear, belum dikonfirmasi)
+Sources: https://www.crunchbase.com/organization/movement-labs, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Category: Foundation
+Cliff: tidak diketahui
+Vesting: tidak diketahui
+Unlock Frequency: tidak diketahui
+Current Status: tidak diketahui (Foundation belum dibentuk)
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Category: Treasury
+Cliff: tidak diketahui
+Vesting: tidak diketahui
+Unlock Frequency: tidak diketahui
+Current Status: Planned
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Category: Ecosystem
+Cliff: tidak diketahui
+Vesting: tidak diketahui
+Unlock Frequency: tidak diketahui
+Current Status: Planned
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/, https://movementlabs.xyz/team
+
+Category: Advisors
+Cliff: tidak diketahui
+Vesting: tidak diketahui
+Unlock Frequency: tidak diketahui
+Current Status: tidak diketahui
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Category: Other
+Cliff: tidak diketahui
+Vesting: tidak diketahui
+Unlock Frequency: tidak diketahui
+Current Status: tidak diketahui
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+## TGE
+
+TGE Date: tidak diumumkan (belum ada jadwal resmi) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/; Movement Labs Discord FAQ, https://discord.gg/movementlabs]
+Initial Unlock: tidak diketahui (persentase dan kategori unlock TGE belum dipublikasikan) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+Unlocked Categories: tidak diketahui (belum diumumkan) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+Launch Platform: tidak diumumkan (CEX/DEX/Launchpad/Community sale — belum dikonfirmasi) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/; Movement Labs Discord FAQ, https://discord.gg/movementlabs]
+Status: Pre-TGE (belum terjadi) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/; Movement Labs Discord FAQ, https://discord.gg/movementlabs]
+
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/, https://discord.gg/movementlabs
+
+## Utility
+
+Utility: Gas / Fee Payment
+Deskripsi: Token MOVE direncanakan digunakan untuk pembayaran gas fee di M1 L2 dan Movement Network (native gas token untuk MoveVM/MEVM execution)
+Status: Planned
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Utility: Staking / Validator Security
+Deskripsi: Token MOVE direncanakan digunakan untuk staking oleh validator/sequencer dalam decentralized sequencer set untuk M1 dan Movement Network (economic security)
+Status: Planned
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Utility: Governance
+Deskripsi: Token MOVE direncanakan memberikan voting power untuk governance protokol (parameter upgrades, treasury allocation, DA layer selection, dll)
+Status: Planned
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Utility: Incentive / Reward
+Deskripsi: Token MOVE direncanakan untuk incentive program: developer grants, liquidity mining, testnet incentives (Parthenon), ecosystem growth
+Status: Planned
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/, https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/
+
+Utility: DA Layer Payment
+Deskripsi: Token MOVE berpotensi digunakan untuk pembayaran DA layer fees (Celestia, Avail, EigenDA) melalui DA adapter di Movement Network
+Status: Planned
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Utility: Cross-chain Messaging / Bridge Fees
+Deskripsi: Token MOVE berpotensi digunakan untuk fee cross-chain messaging dalam Movement Network coordinator
+Status: Planned
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+## Governance
+
+Governance Model: tidak diketahui (belum diumumkan; kemungkinan token-weighted voting via on-chain DAO atau off-chain snapshot dengan on-chain execution) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+Voting System: tidak diketahui (belum diumumkan; standar: 1 token = 1 vote atau quadratic voting) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+Voting Power: tidak diketahui (belum diumumkan; apakah delegatable, apakah ada quorum requirements) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+Delegation: tidak diketahui (belum diumumkan; apakah mendukung delegate voting) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+Proposal System: tidak diketahui (belum diumumkan; threshold proposal, timelock, execution delay) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+Treasury Governance: tidak diketahui (belum diumumkan; apakah DAO mengontrol treasury, multi-sig, atau foundation) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+Status: Planned (belum ada governance live; pre-TGE) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/; Movement Labs Discord FAQ, https://discord.gg/movementlabs]
+
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/, https://discord.gg/movementlabs
+
+## Inflation / Deflation
+
+Inflation Mechanism: tidak diketahui (belum diumumkan; apakah ada staking rewards inflation, ecosystem emissions, atau fixed supply) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+Emission Schedule: tidak diketahui (belum diumumkan) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+Burn Mechanism: tidak diketahui (belum diumumkan; apakah ada fee burn, MEV burn, atau buyback-and-burn) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+Buyback: tidak diketahui (belum diumumkan; apakah protocol revenue digunakan untuk buyback) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+Supply Reduction: tidak diketahui (belum diumumkan) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+Status: Planned (belum diumumkan detail) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+## Holder Distribution
+
+Top Holder Concentration: tidak diketahui (token belum exist, pre-TGE) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/; Movement Labs Discord FAQ, https://discord.gg/movementlabs]
+Foundation Holding: tidak diketahui (Foundation belum dibentuk, token belum exist) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+Investor Holding: tidak diketahui (token belum exist; allocation untuk Series A investors belum dikonfirmasi) (MEDIUM) [Crunchbase, https://www.crunchbase.com/organization/movement-labs; Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+Treasury Holding: tidak diketahui (token belum exist) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/]
+Community Holding: tidak diketahui (token belum exist) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/]
+Whale Concentration: tidak diketahui (token belum exist) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/]
+
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/, https://discord.gg/movementlabs, https://www.crunchbase.com/organization/movement-labs
+
+## Major Token Events
+
+Date: tidak diketahui
+Event: Token Generation Event (TGE)
+Description: Pembuatan dan distribusi awal token MOVE
+Status: Planned / Belum diumumkan
+Related Historical Event ID: tidak ada (belum terjadi)
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/, https://discord.gg/movementlabs
+
+Date: tidak diketahui
+Event: Public Sale / Launch
+Description: Penjualan publik atau listing token MOVE di exchange
+Status: Planned / Belum diumumkan
+Related Historical Event ID: tidak ada (belum terjadi)
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/, https://discord.gg/movementlabs
+
+Date: 2024-07-30
+Event: Testnet Incentive Program (Parthenon)
+Description: Program insentif testnet Parthenon (kemungkinan reward token MOVE di masa depan untuk early participants)
+Status: Ongoing (testnet live, token reward belum dikonfirmasi)
+Related Historical Event ID: EV-009
+Sources: https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/, https://discord.gg/movementlabs
+
+Date: 2024
+Event: Series A Funding ($38M) — Token Allocation Implication
+Description: Ronda Series A $38M kemungkinan menyertakan token allocation (SAFT/token warrant) untuk investor, detail tidak dipublikasikan
+Status: Completed (funding), Token allocation unconfirmed
+Related Historical Event ID: EV-006
+Sources: https://www.crunchbase.com/organization/movement-labs, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+## Official Token Resources
+
+Official Documentation: https://docs.movementlabs.xyz/ (dokumentasi teknis, belum ada tokenomics section)
+Whitepaper: tidak tersedia (vision di blog post: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/)
+Governance: tidak tersedia (belum ada DAO/governance portal)
+Explorer: tidak tersedia (token belum exist; testnet explorer: https://explorer.testnet.movementlabs.xyz/)
+Contract: belum di-deploy (pre-TGE)
+GitHub: https://github.com/movementlabsxyz (repositori protokol, belum ada token contract repo terpisah)
+Dashboard: tidak tersedia (belum ada token dashboard)
+
+## Summary
+
+Status: Planned / Pre-TGE
+Supply Type: tidak diketahui (belum diumumkan Fixed / Inflationary / Dynamic)
+Total Supply: tidak diketahui (belum dipublikasikan)
+Distribution Categories: 8 kategori planned (Community, Team, Investors, Foundation, Treasury, Ecosystem, Advisors, Other) — semua persentase tidak diketahui
+Utility Count: 6 utilitas planned (Gas/Fee Payment, Staking/Validator Security, Governance, Incentive/Reward, DA Layer Payment, Cross-chain Messaging/Bridge Fees)
+Governance: Planned (model, voting system, delegation, proposal system, treasury governance — semua belum diumumkan detail)
+Major Token Events: 4 events (TGE planned, Public Sale planned, Testnet Incentive ongoing, Series A funding completed with token implication)
+
+## Open Threads
+
+- Total supply MOVE token (fixed vs inflationary) — belum dipublikasikan resmi
+- Alokasi persentase per kategori distribusi (Community, Team, Investors, Foundation, Treasury, Ecosystem, Advisors, Other) — belum dipublikasikan resmi
+- Vesting schedule detail per kategori (cliff, durasi vesting, unlock frequency) — belum dipublikasikan resmi
+- TGE date dan initial unlock percentage — belum diumumkan resmi
+- Launch platform (CEX/DEX/Launchpad/Community sale) — belum diumumkan resmi
+- Token standard (ERC-20 di Ethereum, Move native di M1, atau dual) — belum diumumkan resmi
+- Contract address dan chain deployment — belum di-deploy
+- Governance model detail (voting system, delegation, proposal threshold, timelock) — belum diumumkan resmi
+- Inflation/emission schedule (staking rewards rate, ecosystem emissions) — belum diumumkan resmi
+- Burn mechanism (fee burn, MEV burn, buyback) — belum diumumkan resmi
+- Apakah akan dibentuk Movement Foundation terpisah dengan token allocation sendiri — belum dikonfirmasi
+- Series A investor token allocation detail (SAFT terms, valuation, unlock schedule) — tidak dipublikasikan, perlu verifikasi filing SEC Form D jika applicable
+- Testnet Parthenon incentive apakah akan memberikan token MOVE reward — Discord FAQ tidak mengonfirmasi, hanya "points" program
+- Regulatory compliance untuk token issuance (US securities law, Howey test, SAFT framework) — tidak diungkap
+- Token utility untuk DA layer payment (apakah MOVE digunakan langsung atau bridge ke native DA token) — belum detail teknis
+- Cross-chain messaging fee model dalam Movement Network (apakah MOVE sebagai gas atau fee token) — belum detail teknis
+- Decentralized sequencer staking requirement (minimum MOVE stake, slashing conditions) — belum diumumkan
+- Treasury governance post-TGE (DAO-controlled vs Foundation vs Company) — belum diumumkan

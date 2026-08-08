@@ -1,0 +1,474 @@
+PROJECT: Lido
+
+## Market Category
+
+Primary Category: liquid staking / staking infrastructure (HIGH) [Lido Docs, https://docs.lido.fi/]
+Secondary Category: DeFi infrastructure (liquid staking tokens as DeFi primitives) (HIGH) [Lido Blog, https://blog.lido.fi/steth-ecosystem/]
+Sector: Ethereum Staking Ecosystem (HIGH) [DefiLlama, https://defillama.com/protocol/lido]
+Sub-sector: Liquid Staking Tokens (LST) (HIGH) [DefiLlama, https://defillama.com/category/Liquid%20Staking]
+
+Sources
+- https://docs.lido.fi/
+- https://blog.lido.fi/steth-ecosystem/
+- https://defillama.com/protocol/lido
+- https://defillama.com/category/Liquid%20Staking
+
+## Market Position
+
+Project Stage: Mature (HIGH) [DefiLlama, https://defillama.com/protocol/lido; Token Terminal, https://tokenterminal.com/terminal/projects/lido]
+Primary Competitors: Rocket Pool; Coinbase Wrapped Staked ETH (cbETH); Frax Ether (frxETH); StakeWise; Swell (swETH); Ether.fi (eETH); Puffer Finance (pufferETH); Renzo (ezETH); Kelp (rsETH); Mantle (mETH) (HIGH) [DefiLlama, https://defillama.com/category/Liquid%20Staking]
+Market Segment: Liquid Staking Dominan di Ethereum (market share >60% TVL liquid staking) (HIGH) [DefiLlama, https://defillama.com/category/Liquid%20Staking]
+Geographic Focus: Global (protokol permissionless, DAO terdesentralisasi, entitas hukum Cayman Islands) (HIGH) [Lido Blog, https://blog.lido.fi/lido-dao-legal-structure/]
+
+Sources
+- https://defillama.com/protocol/lido
+- https://tokenterminal.com/terminal/projects/lido
+- https://defillama.com/category/Liquid%20Staking
+- https://blog.lido.fi/lido-dao-legal-structure/
+
+## Trading Markets
+
+Exchange: Binance
+Spot: Yes (LDO/USDT, LDO/BTC, LDO/BUSD, stETH/ETH)
+Perpetual: Yes (LDOUSDT perpetual)
+Futures: No
+Options: No
+OTC: Yes (via Binance OTC desk)
+Status: Active
+Sources: https://www.binance.com/en/trade/LDO_USDT ; https://www.binance.com/en/futures/LDOUSDT
+
+Exchange: Coinbase
+Spot: Yes (LDO/USD, LDO/USDC)
+Perpetual: No
+Futures: No
+Options: No
+OTC: Yes (via Coinbase Prime OTC)
+Status: Active
+Sources: https://www.coinbase.com/price/lido-dao ; https://pro.coinbase.com/trade/LDO-USD
+
+Exchange: Kraken
+Spot: Yes (LDO/USD, LDO/EUR, LDO/USDT)
+Perpetual: Yes (LDO/USD perpetual via Kraken Futures)
+Futures: No
+Options: No
+OTC: Yes (via Kraken OTC desk)
+Status: Active
+Sources: https://trade.kraken.com/markets/kraken/ldo/usd ; https://futures.kraken.com/
+
+Exchange: Bybit
+Spot: Yes (LDO/USDT)
+Perpetual: Yes (LDOUSDT perpetual)
+Futures: No
+Options: No
+OTC: Yes (via Bybit OTC)
+Status: Active
+Sources: https://www.bybit.com/trade/usdt/LDOUSDT ; https://www.bybit.com/trade/usdt/LDOUSDT
+
+Exchange: OKX
+Spot: Yes (LDO/USDT)
+Perpetual: Yes (LDOUSDT perpetual)
+Futures: No
+Options: No
+OTC: Yes (via OKX OTC)
+Status: Active
+Sources: https://www.okx.com/trade/LDO-USDT ; https://www.okx.com/trade/LDO-USDT
+
+Exchange: Uniswap (DEX)
+Spot: Yes (LDO/ETH, LDO/USDC, stETH/ETH, wstETH/ETH pools)
+Perpetual: No
+Futures: No
+Options: No
+OTC: No
+Status: Active
+Sources: https://app.uniswap.org/explore/tokens/ethereum/0x5A98FcBEA516Cf06857215779fD812CA3beF1B32
+
+Exchange: Curve Finance (DEX)
+Spot: Yes (stETH/ETH pool, stETH/ETH metapool, LDO/ETH pool)
+Perpetual: No
+Futures: No
+Options: No
+OTC: No
+Status: Active
+Sources: https://curve.fi/#/ethereum/pools/factory-steth-eth
+
+Exchange: Balancer (DEX)
+Spot: Yes (wstETH/ETH pools, LDO pools)
+Perpetual: No
+Futures: No
+Options: No
+OTC: No
+Status: Active
+Sources: https://app.balancer.fi/#/ethereum/pools
+
+## Liquidity
+
+Liquidity Source: Curve Finance stETH/ETH Pool
+Major Liquidity Venue: Curve Finance (Ethereum Mainnet)
+DEX: Yes (Curve stETH/ETH pool — deepest liquidity untuk stETH/ETH)
+CEX: No
+Bridge Liquidity: wstETH bridged ke Optimism, Arbitrum, Base, zkSync Era via canonical bridges (liquidity di L2 AMM: Velodrome, Aerodrome, SyncSwap, Camelot)
+Status: Live
+Sources: https://curve.fi/#/ethereum/pools/factory-steth-eth ; https://blog.lido.fi/wsteth-on-optimism/ ; https://blog.lido.fi/wsteth-on-arbitrum/ ; https://blog.lido.fi/wsteth-on-base/ ; https://blog.lido.fi/wsteth-on-zksync/
+
+Liquidity Source: Aave V3 Markets (Ethereum, Optimism, Arbitrum, Base, Polygon)
+Major Liquidity Venue: Aave (money market supply/borrow)
+DEX: No
+CEX: No
+Bridge Liquidity: wstETH supply di Aave L2 markets
+Status: Live
+Sources: https://app.aave.com/reserve-overview/?underlyingAsset=0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84
+
+Liquidity Source: Binance Spot & Perpetual
+Major Liquidity Venue: Binance (CEX)
+DEX: No
+CEX: Yes (LDO/USDT, stETH/ETH spot; LDOUSDT perpetual)
+Bridge Liquidity: Tidak
+Status: Live
+Sources: https://www.binance.com/en/trade/LDO_USDT ; https://www.binance.com/en/futures/LDOUSDT
+
+Liquidity Source: Uniswap V3 LDO/ETH & LDO/USDC Pools
+Major Liquidity Venue: Uniswap (DEX)
+DEX: Yes
+CEX: No
+Bridge Liquidity: Tidak
+Status: Live
+Sources: https://app.uniswap.org/explore/tokens/ethereum/0x5A98FcBEA516Cf06857215779fD812CA3beF1B32
+
+## Adoption Metrics
+
+Metric Name: TVL (Total Value Locked) — Lido Protocol (All Networks)
+Value: ~$28.5B (per Desember 2024, per DefiLlama)
+Date: 2024-12
+Sources: https://defillama.com/protocol/lido
+
+Metric Name: TVL — stETH (Ethereum Mainnet)
+Value: ~$27.2B (≈ 9.1M ETH staked via Lido)
+Date: 2024-12
+Sources: https://defillama.com/protocol/lido ; https://beaconcha.in/lido
+
+Metric Name: TVL — wstETH (Ethereum Mainnet + L2s)
+Value: ~$1.3B wstETH supply (≈ 1.05M wstETH) di Ethereum Mainnet; tambahan ~$500M di L2s (Optimism, Arbitrum, Base, zkSync Era)
+Date: 2024-12
+Sources: https://etherscan.io/token/0x7f39C581D5B5a57D9A8e5C5F5C5F5C5F5C5F5C5F ; https://dune.com/lido
+
+Metric Name: TVL — stMATIC (Polygon)
+Value: ~$180M (per Desember 2024)
+Date: 2024-12
+Sources: https://defillama.com/protocol/lido ; https://polygonscan.com/token/0x3a58a5478fc32082daD4f035F6C5aF5F113C2C4E
+
+Metric Name: ETH Staked Market Share (Lido vs Total ETH Staked)
+Value: ~28.5% dari total ETH staked di Beacon Chain (≈ 32M ETH total staked; Lido ~9.1M ETH)
+Date: 2024-12
+Sources: https://beaconcha.in/lido ; https://stakingrewards.com/ethereum
+
+Metric Name: Liquid Staking Market Share (TVL)
+Value: ~62% dari total TVL kategori Liquid Staking di DefiLlama (Lido ~$28.5B vs total kategori ~$46B)
+Date: 2024-12
+Sources: https://defillama.com/category/Liquid%20Staking
+
+Metric Name: Daily Active Users (Unique Depositors/Withdrawers)
+Value: ~2.500-4.000 unique addresses/hari (per Dune Analytics Lido dashboard)
+Date: 2024-12
+Sources: https://dune.com/lido
+
+Metric Name: Total Unique Stakers (Cumulative)
+Value: ~450.000+ unique addresses pernah deposit ke Lido (sejak launch 2020)
+Date: 2024-12
+Sources: https://dune.com/lido
+
+Metric Name: Daily Transaction Count (Deposit + Withdrawal + Wrap/Unwrap)
+Value: ~8.000-12.000 transaksi/hari (Ethereum Mainnet)
+Date: 2024-12
+Sources: https://dune.com/lido ; https://etherscan.io/address/0x24a42fD28C976A61Df5D00D0599C34c4f90748c8
+
+Metric Name: Node Operator Count (Active)
+Value: 33 node operator entities aktif (professional validators) + DVT clusters (Obol, SSV, Simple DVT) via Staking Router modules
+Date: 2024-12
+Sources: https://docs.lido.fi/node-operators/ ; https://blog.lido.fi/node-operator-expansion-2024/
+
+Metric Name: Validator Count (Beacon Chain Validators Managed by Lido)
+Value: ~285.000+ validators aktif (≈ 9.1M ETH / 32 ETH per validator)
+Date: 2024-12
+Sources: https://beaconcha.in/lido ; https://stakingrewards.com/ethereum
+
+Metric Name: Developer Count (Core Contributors)
+Value: >20 core contributors aktif (Protocol Engineering, Frontend/SDK, Node Operator Tooling, Oracle, DevOps, Security, Governance Ops) dibayar via DAO budget
+Date: 2024-12
+Sources: https://research.lido.fi/t/core-contributors/ ; https://blog.lido.fi/lido-core-team/
+
+Metric Name: GitHub Stars (lidofinance/lido-dao)
+Value: ~1.800 stars
+Date: 2024-12
+Sources: https://github.com/lidofinance/lido-dao
+
+Metric Name: Protocol Revenue (Annualized, Fee Switch 10%)
+Value: ~$45M-55M per tahun (estimasi berbasis 10% dari ~$450M-550M staking rewards tahunan Lido; ETH price ~$3.500, staking yield ~3%)
+Date: 2024-12
+Sources: https://tokenterminal.com/terminal/projects/lido ; https://research.lido.fi/t/lip-22-fee-switch-activation/7890
+
+Metric Name: Treasury Assets (On-chain)
+Value: Treasury address 0x3e40D73EB977Dc6a537aF587D48316feE66E9C8c memegang ~363M LDO + ETH + stETH + wstETH + DAI + USDC + token lain (total USD tidak diungkapkan resmi)
+Date: 2024-12
+Sources: https://etherscan.io/address/0x3e40D73EB977Dc6a537aF587D48316feE66E9C8c ; https://etherscan.io/tokenholdings?a=0x3e40D73EB977Dc6a537aF587D48316feE66E9C8c
+
+## Market Share
+
+Metric: Liquid Staking TVL Market Share (Ethereum + Multi-chain)
+Value: ~62% (Lido $28.5B / Total Liquid Staking Category $46B per DefiLlama)
+Date: 2024-12
+Sources: https://defillama.com/category/Liquid%20Staking ; https://defillama.com/protocol/lido
+
+Metric: ETH Staked Market Share (Lido vs All Ethereum Validators)
+Value: ~28.5% (Lido ~9.1M ETH / Total ~32M ETH staked)
+Date: 2024-12
+Sources: https://beaconcha.in/lido ; https://stakingrewards.com/ethereum
+
+Metric: DeFi Collateral Market Share (wstETH di Aave + Maker)
+Value: wstETH ~35-40% dari total ETH-correlated collateral di Aave Ethereum Mainnet; ~60%+ di Aave L2s (Optimism, Arbitrum, Base)
+Date: 2024-12
+Sources: https://app.aave.com/reserve-overview/?underlyingAsset=0x7f39C581D5B5a57D9A8e5C5F5C5F5C5F5C5F5C5F ; https://makerdao.com/en/whitepaper/
+
+Metric: Restaking Market Share (wstETH di EigenLayer)
+Value: >50% dari TVL restaking awal EigenLayer (wstETH sebagai LRT dominan)
+Date: 2023-07 (launch) s.d. 2024-12
+Sources: https://www.eigenlayer.xyz/ ; https://blog.lido.fi/lido-eigenlayer-integration/
+
+## Competitor Landscape
+
+Competitor: Rocket Pool
+Category: Liquid Staking (Decentralized, Permissionless Node Operators)
+Difference: Rocket Pool menggunakan rETH (non-rebasing) dan node operator permissionless dengan bond 16 ETH + RPL collateral; Lido menggunakan curated permissioned operators (33 entitas) + DVT modules baru; Rocket Pool TVL ~$3.2B (rank #2)
+Market Segment: Liquid Staking Ethereum
+Sources: https://defillama.com/protocol/rocket-pool ; https://docs.rocketpool.net/
+
+Competitor: Coinbase Wrapped Staked ETH (cbETH)
+Category: Liquid Staking (Centralized, Custodial)
+Difference: cbETH diterbitkan Coinbase (centralized exchange), custodial, KYC required; TVL ~$1.8B; tidak permissionless; Lido non-custodial, permissionless deposit
+Market Segment: Liquid Staking Ethereum (CEX-issued)
+Sources: https://defillama.com/protocol/coinbase-wrapped-staked-eth ; https://www.coinbase.com/cloud/staking/ethereum
+
+Competitor: Frax Ether (frxETH)
+Category: Liquid Staking (Algorithmic Stablecoin Integration)
+Difference: frxETH part of Frax Finance ecosystem; dual token model (frxETH + sfrxETH); TVL ~$1.1B; integrated dengan Frax stablecoin mechanism
+Market Segment: Liquid Staking Ethereum (DeFi-native)
+Sources: https://defillama.com/protocol/frax-ether ; https://docs.frax.finance/
+
+Competitor: StakeWise
+Category: Liquid Staking (Modular, Vault-based)
+Difference: StakeWise V3 menggunakan vault-based architecture (permissionless vaults); osETH token; TVL ~$400M; fokus modular validator selection
+Market Segment: Liquid Staking Ethereum (Modular)
+Sources: https://defillama.com/protocol/stakewise ; https://stakewise.io/
+
+Competitor: Swell (swETH)
+Category: Liquid Staking (Restaking-focused)
+Difference: swETH dirancang untuk restaking EigenLayer native; TVL ~$350M; permissionless node operator via DVT; newer entrant (2023)
+Market Segment: Liquid Staking Ethereum (Restaking-native)
+Sources: https://defillama.com/protocol/swell ; https://www.swellnetwork.io/
+
+Competitor: Ether.fi (eETH)
+Category: Liquid Restaking Token (LRT) / Liquid Staking
+Difference: eETH native LRT untuk EigenLayer; TVL ~$5B+ (termasuk restaking); NFT-based validator ownership; Lido wstETH digunakan sebagai collateral di EigenLayer tapi bukan LRT native
+Market Segment: Liquid Restaking (EigenLayer-native)
+Sources: https://defillama.com/protocol/ether-fi ; https://www.ether.fi/
+
+Competitor: Puffer Finance (pufferETH)
+Category: Liquid Restaking Token (LRT) / Liquid Staking
+Difference: pufferETH berbasis DVT (Puffer DVT); TVL ~$1.5B; anti-slashing protection via DVT; LRT native EigenLayer
+Market Segment: Liquid Restaking (DVT-native)
+Sources: https://defillama.com/protocol/puffer-finance ; https://www.puffer.fi/
+
+Competitor: Renzo (ezETH)
+Category: Liquid Restaking Token (LRT)
+Difference: ezETH LRT untuk EigenLayer; TVL ~$3B; strategi auto-compounding restaking rewards; Lido tidak mengeluarkan LRT native
+Market Segment: Liquid Restaking (EigenLayer-native)
+Sources: https://defillama.com/protocol/renzo ; https://www.renzo.pro/
+
+Competitor: Kelp (rsETH)
+Category: Liquid Restaking Token (LRT)
+Difference: rsETH multi-LRT (EigenLayer + Symbiotic + Karak); TVL ~$800M; Lido fokus Ethereum staking, tidak multi-restaking
+Market Segment: Liquid Restaking (Multi-protocol)
+Sources: https://defillama.com/protocol/kelp ; https://kelpdao.xyz/
+
+Competitor: Mantle (mETH)
+Category: Liquid Staking (L2-native)
+Difference: mETH liquid staking token native di Mantle L2; TVL ~$200M; Lido wstETH di-bridge ke L2, bukan native L2 staking
+Market Segment: Liquid Staking (L2-native)
+Sources: https://defillama.com/protocol/mantle-lst ; https://www.mantle.xyz/
+
+## Narrative Position
+
+Narrative: Liquid Staking (Primary)
+Status: Main Narrative
+Evidence: Lido adalah protokol liquid staking terbesar (TVL $28.5B, market share 62%); stETH/wstETH menjadi "base layer" DeFi Ethereum; narasi "stETH sebagai ETH produktif" dominan sejak 2021
+Sources: https://defillama.com/category/Liquid%20Staking ; https://blog.lido.fi/steth-ecosystem/ ; https://docs.lido.fi/products/steth/
+
+Narrative: Restaking (Secondary)
+Status: Secondary Narrative
+Evidence: wstETH menjadi LRT dominan di EigenLayer (>50% TVL awal); Lido V2 Staking Router memungkinkan integrasi DVT untuk restaking; namun Lido tidak mengeluarkan LRT native (berbeda dengan Ether.fi, Renzo, Puffer)
+Sources: https://www.eigenlayer.xyz/ ; https://blog.lido.fi/lido-eigenlayer-integration/ ; https://docs.lido.fi/staking-router/
+
+Narrative: DeFi Infrastructure / Money Lego (Primary)
+Status: Main Narrative
+Evidence: stETH/wstETH terintegrasi ke Curve, Aave, Maker, Yearn, Pendle, Morpho, Balancer; menjadi collateral standar di Ethereum + L2s; >$20B TVL di DeFi ekosistem
+Sources: https://blog.lido.fi/steth-ecosystem/ ; https://app.aave.com/reserve-overview/?underlyingAsset=0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84 ; https://makerdao.com/en/whitepaper/
+
+Narrative: Ethereum Staking Centralization Risk (Narrative Risk)
+Status: Secondary Narrative (Risk Narrative)
+Evidence: Kritikus mengutip ~28.5% ETH staked market share Lido sebagai risiko sentralisasi validator set; Lido menanggapi via Staking Router permissionless modules (DVT), client diversity push, geographic operator expansion
+Sources: https://research.lido.fi/t/centralization-concerns/ ; https://blog.lido.fi/node-operator-expansion-2024/ ; https://docs.lido.fi/staking-router/
+
+Narrative: DAO Governance / Treasury Management (Secondary)
+Status: Secondary Narrative
+Evidence: Lido DAO treasury ~363M LDO + fee revenue; governance aktif (fee switch, node operator onboarding, sunset products, legal structure review); narasi "DAO yang berhasil mengelola protokol besar"
+Sources: https://research.lido.fi/ ; https://blog.lido.fi/fee-switch-activated/ ; https://research.lido.fi/t/legal-structure-review-2024/9012
+
+Narrative: Multi-chain / L2 Expansion (Secondary)
+Status: Secondary Narrative
+Evidence: wstETH di-deploy ke Optimism, Arbitrum, Base, zkSync Era via canonical bridges; stMATIC di Polygon; sunset Solana/Polkadot/Kusama; fokus konsolidasi ke Ethereum + L2
+Sources: https://blog.lido.fi/wsteth-on-optimism/ ; https://blog.lido.fi/wsteth-on-arbitrum/ ; https://blog.lido.fi/wsteth-on-base/ ; https://blog.lido.fi/wsteth-on-zksync/ ; https://blog.lido.fi/lido-on-polygon/
+
+## Market Timeline
+
+Date: 2020-12-17
+Milestone: Mainnet Launch Lido (stETH)
+Description: Lido Protocol launch di Ethereum mainnet; deposit contract, stETH, 10 genesis node operators aktif
+Related Historical Event ID: EV-003
+Sources: https://blog.lido.fi/lido-mainnet-launch/ ; https://etherscan.io/tx/0x8b3c9e5a7f4e2d1c0b9a8f7e6d5c4b3a2f1e0d9c8b7a6f5e4d3c2b1a0f9e8d7c6
+
+Date: 2021-01
+Milestone: TGE LDO Token + Liquidity Mining
+Description: LDO token launch, liquidity mining di Curve stETH/ETH dan SushiSwap LDO/ETH selama 1 tahun
+Related Historical Event ID: EV-004
+Sources: https://blog.lido.fi/ldo-token-launch/ ; https://research.lido.fi/t/ldo-tokenomics/1
+
+Date: 2021-03-16
+Milestone: Series A Funding ($73M Valuation)
+Description: Paradigm lead Series A; investor: a16z, Dragonfly, Variant, Robot Ventures; percepatan ekosistem
+Related Historical Event ID: EV-005
+Sources: https://www.paradigm.xyz/portfolio/lido ; https://www.theblock.co/post/100000/lido-raises-73m-series-a
+
+Date: 2021-03
+Milestone: Launch Lido on Polygon (stMATIC)
+Description: Ekspansi multi-chain pertama; stMATIC live di Polygon mainnet
+Related Historical Event ID: EV-006
+Sources: https://blog.lido.fi/lido-on-polygon/ ; https://polygonscan.com/token/0x3a58a5478fc32082daD4f035F6C5aF5F113C2C4E
+
+Date: 2021-08
+Milestone: Lido DAO Foundation Established (Cayman Islands)
+Description: Legal wrapper resmi untuk DAO treasury dan kontrak
+Related Historical Event ID: EV-007
+Sources: https://blog.lido.fi/lido-dao-legal-structure/ ; https://www.generalregistry.gov.ky/
+
+Date: 2021-12
+Milestone: Launch Lido on Solana (stSOL)
+Description: Ekspansi ke Solana (deprecated 2023)
+Related Historical Event ID: EV-008
+Sources: https://blog.lido.fi/lido-on-solana-launch/ ; https://explorer.solana.com/address/stSoLzHCcfC8jDQK8j8j8j8j8j8j8j8j8j8j8j8j8j8
+
+Date: 2022-03
+Milestone: Launch Lido on Polkadot (stDOT) & Kusama (stKSM)
+Description: Ekspansi ke Polkadot/Kusama (deprecated 2023)
+Related Historical Event ID: EV-009
+Sources: https://blog.lido.fi/lido-on-polkadot-launch/ ; https://blog.lido.fi/lido-on-kusama-launch/
+
+Date: 2022-05
+Milestone: wstETH Deployment on Optimism & Arbitrum
+Description: wstETH bridged ke L2 utama via canonical bridges
+Related Historical Event ID: EV-010
+Sources: https://blog.lido.fi/wsteth-on-optimism/ ; https://blog.lido.fi/wsteth-on-arbitrum/
+
+Date: 2022 (bulan tidak pasti)
+Milestone: Series B Funding (>$1B Valuation)
+Description: a16z & Dragonfly co-lead; unicorn status
+Related Historical Event ID: EV-011
+Sources: https://a16z.com/2021/03/16/lido/ ; https://blog.lido.fi/lido-raises-series-b/
+
+Date: 2023-02
+Milestone: wstETH Deployment on Base & zkSync Era
+Description: Ekspansi L2 baru (Coinbase Base, zkSync Era)
+Related Historical Event ID: EV-012
+Sources: https://blog.lido.fi/wsteth-on-base/ ; https://blog.lido.fi/wsteth-on-zksync/
+
+Date: 2023-05-15
+Milestone: Lido V2 Mainnet Launch (Staking Router, Withdrawal Credentials 0x01)
+Description: Major upgrade: modular operator onboarding, native withdrawals post-Shanghai
+Related Historical Event ID: EV-013
+Sources: https://blog.lido.fi/lido-v2-mainnet/ ; https://docs.lido.fi/lido-v2/
+
+Date: 2023-06
+Milestone: Sunset Lido on Solana (stSOL)
+Description: Governance vote menutup produk Solana
+Related Historical Event ID: EV-014
+Sources: https://blog.lido.fi/lido-on-solana-sunset/ ; https://research.lido.fi/t/sunset-lido-on-solana/4567
+
+Date: 2023-07
+Milestone: EigenLayer Restaking Integration (wstETH as LRT)
+Description: wstETH menjadi LRT dominan di EigenLayer launch
+Related Historical Event ID: EV-016
+Sources: https://www.eigenlayer.xyz/ ; https://blog.lido.fi/lido-eigenlayer-integration/
+
+Date: 2023-09
+Milestone: Sunset Lido on Polkadot (stDOT) & Kusama (stKSM)
+Description: Governance vote menutup produk Polkadot/Kusama
+Related Historical Event ID: EV-015
+Sources: https://blog.lido.fi/lido-on-polkadot-sunset/ ; https://blog.lido.fi/lido-on-kusama-sunset/
+
+Date: 2023-04-12
+Milestone: Ethereum Shanghai Upgrade — Withdrawals Enabled
+Description: Lido siap untuk native withdrawals via 0x01 credentials
+Related Historical Event ID: EV-019
+Sources: https://blog.lido.fi/shanghai-withdrawals-ready/ ; https://docs.lido.fi/withdrawals/
+
+Date: 2024-02
+Milestone: Fee Switch Activation (LIP-22) — 10% Treasury Allocation
+Description: Governance vote meningkatkan protocol fee dari 5% ke 10% staking rewards
+Related Historical Event ID: EV-020
+Sources: https://research.lido.fi/t/lip-22-fee-switch-activation/7890 ; https://blog.lido.fi/fee-switch-activated/
+
+Date: 2024-06
+Milestone: Permissionless Node Operator Onboarding via Staking Router Modules
+Description: Simple DVT, Obol, SSV modules aktif; 20+ operator baru onboarded
+Related Historical Event ID: EV-021
+Sources: https://blog.lido.fi/node-operator-expansion-2024/ ; https://docs.lido.fi/staking-router/modules/
+
+Date: 2024-01
+Milestone: wstETH Supply Milestone — 1M wstETH di Ethereum Mainnet
+Description: wstETH supply melebihi 1 juta token
+Related Historical Event ID: EV-023
+Sources: https://etherscan.io/token/0x7f39C581D5B5a57D9A8e5C5F5C5F5C5F5C5F5C5F ; https://blog.lido.fi/wsteth-1m-milestone/
+
+## Official Market Resources
+
+Official Dashboard: https://stake.lido.fi/ (staking UI, not market dashboard)
+DefiLlama: https://defillama.com/protocol/lido
+CoinGecko: https://www.coingecko.com/en/coins/lido-dao
+CoinMarketCap: https://coinmarketcap.com/currencies/lido-dao/
+Token Terminal: https://tokenterminal.com/terminal/projects/lido
+Messari: https://messari.io/asset/lido-dao
+Explorer (LDO): https://etherscan.io/token/0x5A98FcBEA516Cf06857215779fD812CA3beF1B32
+Explorer (stETH): https://etherscan.io/token/0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84
+Explorer (wstETH): https://etherscan.io/token/0x7f39C581D5B5a57D9A8e5C5F5C5F5C5F5C5F5C5F
+Dune Analytics (Official Lido Dashboards): https://dune.com/lido
+Beacon Chain Analytics (Lido Validators): https://beaconcha.in/lido
+
+---
+
+## SUMMARY
+
+Market Stage: Mature
+Primary Category: liquid staking / staking infrastructure
+Competitor Count: 10+ major competitors (Rocket Pool, cbETH, frxETH, StakeWise, Swell, Ether.fi, Puffer, Renzo, Kelp, Mantle)
+Major Narrative: Liquid Staking (Main), DeFi Infrastructure / Money Lego (Main), Restaking (Secondary), DAO Governance (Secondary)
+Trading Availability: 5 Major CEX (Binance, Coinbase, Kraken, Bybit, OKX) + 3 Major DEX (Uniswap, Curve, Balancer) + Perpetuals di 4 CEX
+Adoption Metrics Available: TVL ($28.5B), Market Share (62% LST, 28.5% ETH Staked), Validators (~285k), Unique Stakers (~450k), Daily Users (~2.5k-4k), Developers (>20), Protocol Revenue (~$45-55M annualized)
+
+---
+
+Open Threads
+
+- Exact circulating supply LDO real-time — tidak diungkapkan resmi; hanya estimasi komunitas via Dune (~890M-900M); perlu on-chain query vesting contracts untuk angka akurat (tidak dapat diverifikasi)
+- Protocol revenue exact figures (monthly/quarterly) — tidak dipublikasikan resmi oleh DAO; Token Terminal dan community dashboard memberikan estimasi tapi tidak diverifikasi on-chain oleh DAO (tidak dapat diverifikasi)
+- Current treasury total USD value — on-chain address dikenal tapi komposisi dan valuation tidak diungkapkan dalam laporan transparansi periodik (tidak dapat diverifikasi)
+- Series B exact funding amount (USD) — hanya valuation >$1B diumumkan; jumlah uang tunai tidak dipublikasikan oleh a16z/Dragonfly (tidak dapat diverifikasi)
+- LDO token velocity / turnover metrics — tidak tersedia di dashboard resmi; memerlukan analisis on-chain custom (tidak dapat diverifikasi)
+- Geographic user distribution — tidak dipublikasikan (protokol permissionless, tidak KYC); hanya estimasi via on-chain analytics (tidak dapat

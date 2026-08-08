@@ -1,0 +1,510 @@
+PROJECT: Kamino Finance
+
+## Ecosystem Position
+
+Primary Sector: DeFi — Automated Concentrated Liquidity Management / Lending & Borrowing / Leveraged Vaults / Points & Incentives Platform
+Secondary Sector: DeFi Infrastructure / Yield Aggregation / Liquidation Marketplace / Governance Token Platform
+Primary Chain: Solana
+Supported Chains: Solana (native); Cross-chain asset access via Wormhole NTT (Ethereum, other EVM chains bridged assets)
+Sources: https://docs.kamino.finance/getting-started/overview (HIGH) [Kamino Docs - Overview]; https://blog.kamino.finance/introducing-kamino/ (HIGH) [Kamino Blog - Introducing Kamino]; https://docs.wormhole.com/wormhole/native-token-transfers (HIGH) [Wormhole NTT Docs]
+
+## External Dependencies
+
+Dependency Name: Solana
+Dependency Type: Chain
+Purpose: Layer 1 execution, settlement, data availability untuk semua program Kamino (Vaults, K-Lend, Multiply, Liquidate, KMNO Token, Staking, Governance)
+Criticality: Critical
+Status: Live
+Related Entity: Solana
+Related Technology Component: SVM Runtime, BPF Loader Upgradeable, SPL Token-2022, Pyth Oracle on Solana
+Sources: https://docs.solana.com/developing/programming-model/runtime (HIGH) [Solana Docs - Runtime]; https://github.com/kamino-finance (HIGH) [Kamino GitHub - Anchor/Rust programs deployed on Solana]
+
+Dependency Name: Pyth Network
+Dependency Type: Oracle
+Purpose: Primary price feeds untuk K-Lend interest rate calculation, Multiply health factor, Liquidate auction pricing, Vault rebalancing triggers
+Criticality: Critical
+Status: Live
+Related Entity: (Pyth Network - not explicitly listed as entity in Phase 2 but referenced in Phase 4)
+Related Technology Component: K-Lend Program (OracleConfig), Multiply Program (HealthFactorConfig), Liquidate Program (Auction pricing), Vaults Program (Rebalance triggers)
+Sources: https://docs.kamino.finance/technical-references/oracles (HIGH) [Kamino Docs - Oracles]; https://pyth.network/developers (HIGH) [Pyth Network Docs]
+
+Dependency Name: Switchboard
+Dependency Type: Oracle
+Purpose: Fallback price feeds untuk K-Lend & Multiply ketika Pyth stale/unavailable; redundancy oracle layer
+Criticality: High
+Status: Live
+Related Entity: (Switchboard - not explicitly listed as entity in Phase 2 but referenced in Phase 4)
+Related Technology Component: K-Lend Program (fallback oracle), Multiply Program (fallback health factor)
+Sources: https://docs.kamino.finance/technical-references/oracles (HIGH) [Kamino Docs - Oracle Security]; https://switchboard.xyz/docs (MEDIUM) [Switchboard Docs]
+
+Dependency Name: Wormhole
+Dependency Type: Bridge
+Purpose: Cross-chain asset transfer (Wormhole NTT) untuk membawa aset non-native (ETH, USDC Ethereum, dll.) ke Solana untuk digunakan di Kamino Vaults
+Criticality: High
+Status: Live
+Related Entity: Wormhole
+Related Technology Component: Vaults Program (cross-chain deposit integration), Wormhole NTT SDK
+Sources: https://docs.wormhole.com/wormhole/native-token-transfers (HIGH) [Wormhole NTT Docs]; https://blog.kamino.finance/ (MEDIUM) [Kamino Blog - Cross-chain Vault Announcement EV-018]
+
+Dependency Name: Jupiter
+Dependency Type: Protocol / SDK
+Purpose: Swap routing untuk Vault rebalancing, Multiply entry/exit flashloans, Jupiter Terminal integration untuk frontend swap UX
+Criticality: Critical
+Status: Live
+Related Entity: Jupiter
+Related Technology Component: Vaults Program (rebalance swap), Multiply Program (flashloan via Jupiter), Kamino Frontend (Jupiter Terminal)
+Sources: https://docs.jup.ag/ (HIGH) [Jupiter Docs - Integrations]; https://github.com/kamino-finance/kamino-multiply (HIGH) [Kamino GitHub - Multiply Jupiter integration]; https://blog.kamino.finance/ (MEDIUM) [Kamino Blog - Jupiter Integration EV-003]
+
+Dependency Name: Raydium CLMM / Orca Whirlpool
+Dependency Type: Protocol
+Purpose: Underlying CLMM pools tempat Kamino Vaults mendeploy posisi likuiditas terpusat (vault positions are positions on Raydium CLMM or Orca Whirlpool)
+Criticality: Critical
+Status: Live
+Related Entity: (Raydium / Orca - not explicitly listed as entities in Phase 2 but referenced in Phase 4)
+Related Technology Component: Vaults Program (CLMM Manager interacts with Raydium CLMM / Orca Whirlpool programs via CPI)
+Sources: https://docs.kamino.finance/products/vaults (HIGH) [Kamino Docs - Vaults]; https://github.com/kamino-finance/kamino-vaults (HIGH) [Kamino GitHub - Vaults CPI to Raydium/Orca]
+
+Dependency Name: Marinade Finance
+Dependency Type: Protocol
+Purpose: mSOL (liquid staked SOL) sebagai aset inti di Vaults (mSOL/SOL), K-Lend reserves, Multiply collateral
+Criticality: High
+Status: Live
+Related Entity: Marinade Finance
+Related Technology Component: Vaults Program (mSOL pools), K-Lend Program (mSOL reserve), Multiply Program (mSOL collateral)
+Sources: https://docs.marinade.finance/ (HIGH) [Marinade Docs]; https://app.kamino.finance/ (HIGH) [Kamino App - mSOL Vaults]
+
+Dependency Name: Jito Labs / JitoSOL
+Dependency Type: Protocol
+Purpose: JitoSOL (MEV liquid staked SOL) sebagai aset inti di Vaults (JitoSOL/SOL), K-Lend reserves, Multiply collateral, Restaking vaults
+Criticality: High
+Status: Live
+Related Entity: Jito Labs
+Related Technology Component: Vaults Program (JitoSOL pools), K-Lend Program (JitoSOL reserve), Multiply Program (JitoSOL collateral), Points Season 3 (JitoSOL bonus)
+Sources: https://www.jito.network/ (HIGH) [Jito Labs Website]; https://app.kamino.finance/ (HIGH) [Kamino App - JitoSOL Strategies]; https://blog.kamino.finance/ (HIGH) [Kamino Blog - Season 3 Jito Integration EV-011]
+
+Dependency Name: Squads v3 / SPL Governance
+Dependency Type: Infrastructure / Security
+Purpose: Multisig upgrade authority untuk semua program Kamino (Vaults, K-Lend, Multiply, Liquidate, Token, Staking); DAO governance execution via Realms
+Criticality: Critical
+Status: Live
+Related Entity: (Squads - not explicitly listed as entity in Phase 2 but referenced in Phase 4)
+Related Technology Component: Program Authority (Upgrade Authority), Kamino DAO (Realms execution)
+Sources: https://github.com/kamino-finance (MEDIUM) [Kamino GitHub - Program Authority Multisig]; https://app.realms.today/kamino (HIGH) [Realms Kamino DAO]; https://squads.so/ (MEDIUM) [Squads v3 Docs]
+
+Dependency Name: Yellowstone gRPC / Geyser Plugin
+Dependency Type: Infrastructure
+Purpose: Real-time indexing untuk Kamino Indexer (frontend data, points calculation, liquidation monitoring)
+Criticality: High
+Status: Live
+Related Entity: (Yellowstone/Geyser - Solana Foundation infrastructure)
+Related Technology Component: Kamino Indexer, Keeper/Liquidator Bots, Frontend API
+Sources: https://docs.kamino.finance/developers/api (MEDIUM) [Kamino Docs - Developer API]; https://github.com/kamino-finance/kamino-indexer (MEDIUM) [Kamino GitHub - Indexer inferred]; https://solana.com/developers (HIGH) [Solana Developers - Geyser]
+
+Dependency Name: Immunefi
+Dependency Type: Security
+Purpose: Bug bounty platform untuk Kamino (max reward $100,000 critical)
+Criticality: Medium
+Status: Live
+Related Entity: (Immunefi - not explicitly listed as entity in Phase 2)
+Related Technology Component: All Programs (Vaults, K-Lend, Multiply, Liquidate, Token, Staking)
+Sources: https://immunefi.com/bug-bounty/kamino/ (HIGH) [Immunefi Kamino Bug Bounty]; https://blog.kamino.finance/ (MEDIUM) [Kamino Blog - Security]
+
+Dependency Name: Kudelski Security / Neodyme / Sec3
+Dependency Type: Security
+Purpose: Smart contract auditors untuk Vaults, K-Lend, Multiply, Liquidate programs
+Criticality: High
+Status: Completed (periodic re-audits)
+Related Entity: Kudelski Security, Neodyme, Sec3
+Related Technology Component: All Core Programs (audited versions)
+Sources: https://www.kudelskisecurity.com/ (MEDIUM) [Kudelski Audit Reports]; https://neodyme.io/audits/ (MEDIUM) [Neodyme Audits]; https://www.sec3.dev/audits/ (MEDIUM) [Sec3 Audits]; https://gov.kamino.finance/ (MEDIUM) [Governance Forum - Audit Summaries]
+
+Dependency Name: Multicoin Capital / Jump Crypto / Solana Ventures
+Dependency Type: Financial / Investor
+Purpose: Seed funding (2022), strategic guidance, ecosystem connections
+Criticality: Medium
+Status: Completed (Seed round)
+Related Entity: Multicoin Capital, Jump Crypto / Jump Trading Group, Solana Ventures
+Related Technology Component: Treasury, Token Allocation (Investor vesting)
+Sources: https://www.crunchbase.com/organization/kamino-finance (LOW) [Crunchbase - Kamino Finance]; https://multicoin.capital/portfolio/ (MEDIUM) [Multicoin Portfolio]; https://jumpcrypto.com/portfolio/ (MEDIUM) [Jump Crypto Portfolio]; https://solana.org/ventures (MEDIUM) [Solana Ventures]
+
+## Major Integrations
+
+Integration Name: Jupiter Swap & Flashloan Integration
+Integrated With: Jupiter
+Purpose: Vault rebalancing swap routing; Multiply entry/exit via Jupiter flashloans; Frontend Jupiter Terminal untuk user swaps
+Status: Live
+Related Historical Event ID: EV-003 (Jupiter Integration 2022-06), EV-007 (Multiply Launch 2023-07 includes Jupiter flashloan)
+Sources: https://docs.jup.ag/ (HIGH) [Jupiter Docs - Integrations]; https://blog.kamino.finance/ (MEDIUM) [Kamino Blog - Jupiter Integration EV-003]; https://github.com/kamino-finance/kamino-multiply (HIGH) [Kamino GitHub - Multiply Jupiter flashloan]
+
+Integration Name: Wormhole NTT Cross-chain Vault Deposits
+Integrated With: Wormhole
+Purpose: Memungkinkan deposit aset non-native (ETH, USDC Ethereum, dll.) langsung ke Kamino Vaults via Wormhole Native Token Transfers
+Status: Live
+Related Historical Event ID: EV-018 (Wormhole NTT Integration 2024-06)
+Sources: https://docs.wormhole.com/wormhole/native-token-transfers (HIGH) [Wormhole NTT Docs]; https://blog.kamino.finance/ (MEDIUM) [Kamino Blog - Cross-chain Vault EV-018]
+
+Integration Name: Tensor Points Partnership (Season 1)
+Integrated With: Tensor
+Purpose: Cross-protocol incentive loop — Kamino Points Season 1 + Tensor Points Season 1 simultaneous farming
+Status: Completed (Season 1 ended)
+Related Historical Event ID: EV-009 (Kamino Points Season 1 with Tensor 2023-11)
+Sources: https://blog.kamino.finance/ (HIGH) [Kamino Blog - Tensor Partnership EV-009]; https://x.com/tensor_hq (HIGH) [Tensor X Announcement]
+
+Integration Name: Phantom Wallet Native Integration
+Integrated With: Phantom
+Purpose: Wallet connect, transaction signing, token display, staking/claim UX di Kamino App
+Status: Live
+Related Historical Event ID: (No specific event ID, ongoing since 2022)
+Sources: https://phantom.app/ (HIGH) [Phantom App - Kamino Integration]; https://docs.kamino.finance/getting-started/wallets (HIGH) [Kamino Docs - Wallet Support]
+
+Integration Name: Backpack Wallet / xNFT Integration
+Integrated With: Backpack
+Purpose: Wallet connect, xNFT support untuk Kamino positions, native KMNO token display
+Status: Live
+Related Historical Event ID: (No specific event ID, ongoing since 2023)
+Sources: https://backpack.app/ (HIGH) [Backpack Website]; https://x.com/kamino_finance (MEDIUM) [Kamino X - Backpack Integration]
+
+Integration Name: Multi-CEX Listing (Binance, Coinbase, Bybit, Gate.io, KuCoin)
+Integrated With: Binance, Coinbase, Bybit, Gate.io, KuCoin
+Purpose: Spot trading liquidity, fiat on-ramp, price discovery untuk KMNO token
+Status: Live
+Related Historical Event ID: EV-013 (Binance), EV-014 (Coinbase), EV-015 (Bybit/Gate.io/KuCoin) — all 2024-04-10
+Sources: https://www.binance.com/en/support/announcement/ (HIGH) [Binance Listing EV-013]; https://blog.coinbase.com/ (HIGH) [Coinbase Listing EV-014]; https://announcements.bybit.com/ (HIGH) [Bybit Listing EV-015]; https://www.gate.io/announcements/ (MEDIUM) [Gate.io Listing EV-015]; https://www.kucoin.com/news/ (MEDIUM) [KuCoin Listing EV-015]
+
+Integration Name: Solend / Drift / MarginFi Ecosystem Liquidity
+Integrated With: Solend, Drift Protocol, MarginFi
+Purpose: Shared asset pools (USDC, USDT, SOL, mSOL, JitoSOL), cross-protocol yield strategies, competitive/cooperative lending markets
+Status: Live (ecosystem-level, not direct smart contract integration)
+Related Historical Event ID: (No specific integration event, ongoing ecosystem presence)
+Sources: https://docs.solend.fi/ (MEDIUM) [Solend Docs]; https://docs.drift.trade/ (HIGH) [Drift Docs]; https://docs.marginfi.com/ (MEDIUM) [MarginFi Docs]; https://app.kamino.finance/ (HIGH) [Kamino App - Asset Overlap]
+
+Integration Name: Pyth Oracle Price Feeds Integration
+Integrated With: Pyth Network
+Purpose: On-chain price feeds untuk K-Lend reserves, Multiply health factor, Liquidate auctions, Vault rebalancing
+Status: Live
+Related Historical Event ID: (No specific event, core dependency since K-Lend launch 2022-09)
+Sources: https://docs.kamino.finance/technical-references/oracles (HIGH) [Kamino Docs - Oracles]; https://pyth.network/developers (HIGH) [Pyth Network Docs]
+
+Integration Name: Switchboard Fallback Oracle Integration
+Integrated With: Switchboard
+Purpose: Fallback price feeds untuk redundancy ketika Pyth stale
+Status: Live
+Related Historical Event ID: (No specific event, core dependency since K-Lend v2 / Multiply)
+Sources: https://docs.kamino.finance/technical-references/oracles (HIGH) [Kamino Docs - Oracle Security]; https://switchboard.xyz/docs (MEDIUM) [Switchboard Docs]
+
+Integration Name: Raydium CLMM / Orca Whirlpool Position Management
+Integrated With: Raydium, Orca
+Purpose: Vaults mendeploy dan mengelola posisi CLMM pada Raydium CLMM pools dan Orca Whirlpool pools via CPI
+Status: Live
+Related Historical Event ID: EV-002 (Vaults v1 Launch 2022-03), EV-002 upgrade v2 (2023-01)
+Sources: https://docs.kamino.finance/products/vaults (HIGH) [Kamino Docs - Vaults]; https://github.com/kamino-finance/kamino-vaults (HIGH) [Kamino GitHub - Vaults CPI]
+
+## Infrastructure Providers
+
+Provider: Solana Foundation / Solana Validators
+Service: Layer 1 Consensus, Block Production, RPC Endpoints (public & private)
+Criticality: Critical
+Status: Live
+Sources: https://solana.com/ (HIGH) [Solana Website]; https://docs.solana.com/ (HIGH) [Solana Docs]
+
+Provider: Pyth Network (Publishers & Wormhole Guardians)
+Service: Oracle Price Feeds (Publishers), Cross-chain Message Passing (Guardians for Wormhole)
+Criticality: Critical
+Status: Live
+Sources: https://pyth.network/ (HIGH) [Pyth Network]; https://wormhole.com/ (HIGH) [Wormhole Website]
+
+Provider: Jupiter Infrastructure
+Service: Swap API, Quote API, Terminal SDK, Flashloan Program
+Criticality: Critical
+Status: Live
+Sources: https://docs.jup.ag/ (HIGH) [Jupiter Docs]
+
+Provider: Squads Protocol
+Service: Multisig Wallet (Squads v3) untuk Program Upgrade Authority & DAO Treasury Management
+Criticality: Critical
+Status: Live
+Sources: https://squads.so/ (MEDIUM) [Squads v3 Docs]; https://app.realms.today/kamino (HIGH) [Realms Kamino DAO - Squads multisig]
+
+Provider: Realms (SPL Governance)
+Service: On-chain DAO Governance Platform (Proposal, Voting, Execution)
+Criticality: Critical
+Status: Live
+Sources: https://app.realms.today/kamino (HIGH) [Realms Kamino DAO]; https://spl.gov.solana.com/ (HIGH) [SPL Governance Docs]
+
+Provider: Yellowstone gRPC / Geyser Providers (Triton, Helius, QuickNode, etc.)
+Service: Real-time Geyser gRPC streams untuk Indexer
+Criticality: High
+Status: Live
+Sources: https://solana.com/developers (HIGH) [Solana Developers - Geyser]; https://www.helius.dev/ (MEDIUM) [Helius Geyser]; https://triton.one/ (MEDIUM) [Triton Geyser]
+
+Provider: Helius / QuickNode / Alchemy / Triton (RPC Providers)
+Service: RPC Endpoints untuk Frontend, Indexer, Bots, SDK clients
+Criticality: High
+Status: Live
+Sources: https://www.helius.dev/ (MEDIUM) [Helius RPC]; https://www.quicknode.com/ (MEDIUM) [QuickNode RPC]; https://www.alchemy.com/ (MEDIUM) [Alchemy Solana RPC]; https://triton.one/ (MEDIUM) [Triton RPC]
+
+Provider: Immunefi
+Service: Bug Bounty Platform Management
+Criticality: Medium
+Status: Live
+Sources: https://immunefi.com/bug-bounty/kamino/ (HIGH) [Immunefi Kamino Bug Bounty]
+
+Provider: Kudelski Security / Neodyme / Sec3
+Service: Smart Contract Security Audits
+Criticality: High
+Status: Periodic (Completed audits, re-audits on upgrades)
+Sources: https://www.kudelskisecurity.com/ (MEDIUM) [Kudelski]; https://neodyme.io/audits/ (MEDIUM) [Neodyme]; https://www.sec3.dev/audits/ (MEDIUM) [Sec3]
+
+Provider: GitHub Actions / CI/CD Infrastructure
+Service: Continuous Integration, Build, Test, IDL Generation, Deployment Pipeline
+Criticality: Medium
+Status: Live
+Sources: https://github.com/kamino-finance (HIGH) [Kamino GitHub - CI Workflows]; https://github.com/features/actions (HIGH) [GitHub Actions]
+
+Provider: Docker / Container Registry
+Service: Containerization untuk Indexer, Bots, Frontend, Localnet Development
+Criticality: Medium
+Status: Live
+Sources: https://github.com/kamino-finance (HIGH) [Kamino GitHub - Dockerfile]; https://www.docker.com/ (HIGH) [Docker]
+
+## Exchange Ecosystem
+
+Exchange: Binance
+Listing Status: Listed
+Spot: Yes (KMNO/USDT, KMNO/BTC, KMNO/BNB, KMNO/FDUSD, KMNO/TRY)
+Perpetual: tidak diketahui
+OTC: tidak diketahui
+Launchpool: tidak diketahui
+Status: Live (since 2024-04-10)
+Sources: https://www.binance.com/en/support/announcement/ (HIGH) [Binance Announcement EV-013]; https://coinmarketcap.com/currencies/kamino/markets/ (HIGH) [CoinMarketCap KMNO Markets]
+
+Exchange: Coinbase
+Listing Status: Listed
+Spot: Yes (KMNO/USD, KMNO/USDC)
+Perpetual: tidak diketahui
+OTC: tidak diketahui
+Launchpool: tidak diketahui
+Status: Live (since 2024-04-10)
+Sources: https://blog.coinbase.com/ (HIGH) [Coinbase Blog EV-014]; https://coinmarketcap.com/currencies/kamino/markets/ (HIGH) [CoinMarketCap KMNO Markets]
+
+Exchange: Bybit
+Listing Status: Listed
+Spot: Yes (KMNO/USDT)
+Perpetual: tidak diketahui
+OTC: tidak diketahui
+Launchpool: tidak diketahui
+Status: Live (since 2024-04-10)
+Sources: https://announcements.bybit.com/ (HIGH) [Bybit Announcement EV-015]; https://coinmarketcap.com/currencies/kamino/markets/ (HIGH) [CoinMarketCap KMNO Markets]
+
+Exchange: Gate.io
+Listing Status: Listed
+Spot: Yes (KMNO/USDT)
+Perpetual: tidak diketahui
+OTC: tidak diketahui
+Launchpool: tidak diketahui
+Status: Live (since 2024-04-10)
+Sources: https://www.gate.io/announcements/ (MEDIUM) [Gate.io Announcement EV-015]; https://coinmarketcap.com/currencies/kamino/markets/ (HIGH) [CoinMarketCap KMNO Markets]
+
+Exchange: KuCoin
+Listing Status: Listed
+Spot: Yes (KMNO/USDT)
+Perpetual: tidak diketahui
+OTC: tidak diketahui
+Launchpool: tidak diketahui
+Status: Live (since 2024-04-10)
+Sources: https://www.kucoin.com/news/ (MEDIUM) [KuCoin Announcement EV-015]; https://coinmarketcap.com/currencies/kamino/markets/ (HIGH) [CoinMarketCap KMNO Markets]
+
+Exchange: Jupiter Aggregator (DEX)
+Listing Status: Listed (via Jupiter Swap)
+Spot: Yes (KMNO/SOL, KMNO/USDC, KMNO/USDT, KMNO/mSOL, KMNO/JitoSOL via Jupiter routing)
+Perpetual: N/A (DEX)
+OTC: N/A
+Launchpool: N/A
+Status: Live
+Sources: https://jup.ag/ (HIGH) [Jupiter Swap]; https://app.kamino.finance/ (HIGH) [Kamino App - DEX Liquidity]
+
+Exchange: Raydium (DEX)
+Listing Status: Listed (KMNO pools)
+Spot: Yes (KMNO/SOL, KMNO/USDC CLMM pools)
+Perpetual: N/A
+OTC: N/A
+Launchpool: N/A (but Raydium has AcceleRaytor/launchpad separate)
+Status: Live
+Sources: https://raydium.io/ (HIGH) [Raydium]; https://app.kamino.finance/ (HIGH) [Kamino App - Vault LP positions]
+
+Exchange: Orca (DEX)
+Listing Status: Listed (KMNO pools)
+Spot: Yes (KMNO/SOL, KMNO/USDC Whirlpool pools)
+Perpetual: N/A
+OTC: N/A
+Launchpool: N/A
+Status: Live
+Sources: https://www.orca.so/ (HIGH) [Orca]; https://app.kamino.finance/ (HIGH) [Kamino App - Vault LP positions]
+
+## Wallet Ecosystem
+
+Wallet: Phantom
+Support Type: Native Wallet Connect, Transaction Signing, Token Display, Staking/Claim UX, xNFT support (limited)
+Status: Live
+Sources: https://phantom.app/ (HIGH) [Phantom App - Kamino Integration]; https://docs.kamino.finance/getting-started/wallets (HIGH) [Kamino Docs - Wallet Support]
+
+Wallet: Backpack
+Support Type: Native Wallet Connect, xNFT Support (Kamino position xNFTs), Token Display, KMNO Staking UI
+Status: Live
+Sources: https://backpack.app/ (HIGH) [Backpack Website]; https://x.com/kamino_finance (MEDIUM) [Kamino X - Backpack Integration]
+
+Wallet: Solflare
+Support Type: Wallet Connect, Transaction Signing, Token Display
+Status: Live
+Sources: https://solflare.com/ (MEDIUM) [Solflare Website]; https://docs.kamino.finance/getting-started/wallets (HIGH) [Kamino Docs - Wallet Support]
+
+Wallet: Glow
+Support Type: Wallet Connect, Transaction Signing, Token Display
+Status: Live
+Sources: https://glow.app/ (MEDIUM) [Glow Wallet]; https://docs.kamino.finance/getting-started/wallets (HIGH) [Kamino Docs - Wallet Support]
+
+Wallet: Trust Wallet
+Support Type: Wallet Connect, Token Display (SPL support)
+Status: Live
+Sources: https://trustwallet.com/ (MEDIUM) [Trust Wallet]; https://docs.kamino.finance/getting-started/wallets (HIGH) [Kamino Docs - Wallet Support]
+
+Wallet: Exodus
+Support Type: Wallet Connect, Token Display (SPL support)
+Status: Live
+Sources: https://www.exodus.com/ (MEDIUM) [Exodus Wallet]; https://docs.kamino.finance/getting-started/wallets (HIGH) [Kamino Docs - Wallet Support]
+
+Wallet: Ledger (Hardware)
+Support Type: Hardware Signing via Phantom/Backpack/Solflare integration
+Status: Live
+Sources: https://www.ledger.com/ (HIGH) [Ledger]; https://docs.kamino.finance/getting-started/wallets (HIGH) [Kamino Docs - Wallet Support]
+
+## Developer Ecosystem
+
+SDK: Kamino TypeScript SDK
+Description: Client-side SDK untuk berinteraksi dengan Vaults, K-Lend, Multiply, Liquidate, Staking, Points programs
+Repository: https://github.com/kamino-finance/kamino-sdk (jika public) atau embedded di frontend repo
+Status: Live
+Sources: https://docs.kamino.finance/developers/sdk (HIGH) [Kamino Docs - SDK]; https://github.com/kamino-finance (HIGH) [Kamino GitHub]
+
+API: Kamino REST API / GraphQL (via Indexer)
+Description: Query vault positions, lend obligations, multiply positions, points, rewards, APY data
+Endpoint: tidak dipublikasikan sebagai public API terpusat; frontend menggunakan internal indexer
+Status: Internal / Frontend-only
+Sources: https://docs.kamino.finance/developers/api (MEDIUM) [Kamino Docs - Developer API]; https://github.com/kamino-finance/kamino-indexer (MEDIUM) [Kamino GitHub - Indexer]
+
+Developer Tools: Anchor IDL (Interface Definition Language) untuk semua programs
+Description: IDL files untuk Vaults, K-Lend, Multiply, Liquidate, Token, Staking programs — enables type-safe client generation
+Status: Live (generated on each deploy)
+Sources: https://github.com/kamino-finance (HIGH) [Kamino GitHub - IDL in target/idl]; https://www.anchor-lang.com/ (HIGH) [Anchor Framework]
+
+Open Source Repository: https://github.com/kamino-finance
+Description: Mono-repo berisi programs (Vaults, K-Lend, Multiply, Liquidate), frontend, SDK, indexer, bots
+Status: Live (Partial — core programs open source, some infrastructure private)
+Sources: https://github.com/kamino-finance (HIGH) [Kamino GitHub Org]
+
+Developer Portal: https://docs.kamino.finance/developers
+Description: Documentation, SDK guide, API reference, program IDs, integration examples
+Status: Live
+Sources: https://docs.kamino.finance/developers (HIGH) [Kamino Developer Docs]
+
+Hackathon: Solana Hyperdrive / Solana Riptide / Grizzlython participation
+Description: Kamino team & community participation di Solana hackathons; bounty prizes untuk integrasi Kamino
+Status: Periodic
+Sources: https://solana.com/hackathons (HIGH) [Solana Hackathons]; https://blog.kamino.finance/ (MEDIUM) [Kamino Blog - Hackathon Announcements]
+
+Grant Program: Solana Foundation Grants (recipient), Kamino DAO Grants (proposed via EV-021)
+Description: Receiver of Solana Foundation ecosystem grants; proposer of DAO grants to builders via Treasury proposal
+Status: Received (SF Grants), Proposed (DAO Grants)
+Sources: https://solana.org/grants (MEDIUM) [Solana Foundation Grants]; https://gov.kamino.finance/ (MEDIUM) [Governance Forum - Treasury Proposal EV-021]
+
+## Applications
+
+Application: Kamino App (app.kamino.finance)
+Category: DeFi Frontend / Dashboard
+Relationship: Official frontend untuk Vaults, K-Lend, Multiply, Liquidate, Staking, Points, Governance
+Status: Live
+Sources: https://app.kamino.finance/ (HIGH) [Kamino App]; https://github.com/kamino-finance/kamino-frontend (MEDIUM) [Kamino GitHub - Frontend if public]
+
+Application: Kamino DAO Governance (Realms)
+Category: Governance Dashboard
+Relationship: On-chain governance interface untuk proposal, voting, treasury management
+Status: Live
+Sources: https://app.realms.today/kamino (HIGH) [Realms Kamino DAO]; https://gov.kamino.finance/ (HIGH) [Kamino Governance Forum]
+
+Application: Jupiter Terminal (embedded in Kamino App)
+Category: Swap Widget
+Relationship: Integrated swap UI untuk user token swaps dalam Kamino App
+Status: Live
+Sources: https://docs.jup.ag/ (HIGH) [Jupiter Terminal Docs]; https://app.kamino.finance/ (HIGH) [Kamino App]
+
+Application: Phantom Wallet (Kamino Integration)
+Category: Wallet
+Relationship: Primary wallet connector, transaction signer, token display untuk Kamino users
+Status: Live
+Sources: https://phantom.app/ (HIGH) [Phantom App]; https://app.kamino.finance/ (HIGH) [Kamino App]
+
+Application: Backpack Wallet (Kamino xNFT)
+Category: Wallet / xNFT App
+Relationship: Wallet connector + xNFT support untuk Kamino position tokens
+Status: Live
+Sources: https://backpack.app/ (HIGH) [Backpack]; https://x.com/kamino_finance (MEDIUM) [Kamino X - Backpack]
+
+Application: Tensor (Points Partnership)
+Category: NFT Marketplace
+Relationship: Cross-protocol Points Season 1 partnership (historical)
+Status: Completed (Season 1)
+Sources: https://blog.kamino.finance/ (HIGH) [Kamino Blog - Tensor Partnership EV-009]
+
+Application: DefiLlama (Kamino Dashboard)
+Category: Analytics / TVL Tracker
+Relationship: Third-party TVL, revenue, fees tracking untuk Kamino protocol
+Status: Live
+Sources: https://defillama.com/protocol/kamino (HIGH) [DefiLlama Kamino]
+
+Application: Token Terminal (Kamino)
+Category: Analytics / Financial Metrics
+Relationship: Third-party protocol revenue, fees, P/S ratio tracking
+Status: Live (if covered)
+Sources: https://tokenterminal.com/terminal/projects/kamino (MEDIUM) [Token Terminal Kamino]
+
+Application: Messari (Kamino)
+Category: Research / Analytics
+Relationship: Third-party protocol reports, tokenomics analysis
+Status: Live (if covered)
+Sources: https://messari.io/asset/kamino (MEDIUM) [Messari Kamino]
+
+## Governance Ecosystem
+
+Foundation: Solana Foundation
+Role: Ecosystem grant provider, Solana L1 stewardship yang mendukung Kamino secara tidak langsung
+Sources: https://solana.org/grants (MEDIUM) [Solana Foundation Grants]; https://solana.org/ (HIGH) [Solana Foundation]
+
+DAO: Kamino DAO
+Role: On-chain governance via Realms (SPL Governance); controls treasury, protocol parameters (fee switch, emissions, upgrades), strategic direction
+Sources: https://gov.kamino.finance/ (HIGH) [Kamino Governance Forum]; https://app.realms.today/kamino (HIGH) [Realms Kamino DAO]; https://blog.kamino.finance/ (HIGH) [Kamino Blog - DAO Launch EV-016]
+
+Council: (Tidak ada council terpisah; governance token-weighted via veKMNO)
+Sources: https://gov.kamino.finance/ (HIGH) [Kamino Governance Forum]; https://app.realms.today/kamino (HIGH) [Realms Kamino DAO]
+
+Committee: (Tidak ada committee formal terpublikasikan; working groups mungkin ada di forum tapi tidak resmi)
+Sources: https://gov.kamino.finance/ (MEDIUM) [Kamino Governance Forum - Discussions]
+
+Validator Group: (Tidak ada validator group khusus Kamino; Solana validators mengeksekusi transaksi Kamino)
+Sources: https://solana.com/ (HIGH) [Solana Validators]
+
+## Ecosystem Risks
+
+Risk: Single Chain Dependency — Solana
+Description: Seluruh protokol Kamino (Vaults, K-Lend, Multiply, Liquidate, Token, Governance) deployed hanya di Solana; tidak ada deployment multi-chain (EVM, SVM forks, appchains) — risiko sistemik Solana (outage, consensus bug, regulatory) mempengaruhi 100% operasi Kamino
+Confirmed: Yes
+Sources: https://docs.kamino.finance/getting-started/overview (HIGH) [Kamino Docs - Overview]; https://github.com/kamino-finance (HIGH) [Kamino GitHub - Solana-only programs]
+
+Risk: Oracle Dependency — Pyth Network (Primary) & Switchboard (Fallback)
+Description: K-Lend interest rates, Multiply health factor, Liquidate auctions, Vault rebalancing semua bergantung pada Pyth price feeds; Pyth outage/staleness berdampak langsung ke keamanan positions & liquidation efficiency
+Confirmed: Yes
+Sources: https://docs.kamino.finance/technical-references/oracles (HIGH) [Kamino Docs - Oracle Security]; https://pyth.network/ (HIGH) [Pyth Network Docs]
+
+Risk: Bridge Dependency — Wormhole NTT
+Description: Cross-chain vault deposits bergantung pada Wormhole NTT untuk asset bridging; Wormhole exploit/outage memblokir deposit/withdrawal aset non-native
+Confirmed: Yes
+Sources: https://docs.wormhole.com/wormhole/native-token-transfers (HIGH) [Wormhole NTT Docs]; https://blog.kamino.finance/ (MEDIUM) [Kamino Blog

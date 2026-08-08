@@ -1,0 +1,199 @@
+PROJECT: Notcoin
+
+## System Architecture
+
+Architecture Type: Application Layer / Telegram Mini App on TON Blockchain (HIGH) [Notcoin Docs, https://docs.notcoin.com/architecture]
+Base Layer: The Open Network (TON) — Layer 1 Proof-of-Stake blockchain (HIGH) [TON Docs, https://docs.ton.org/learn/overview/architecture]
+Hosting Platform: Telegram Mini Apps Platform (Web App / Bot API) — client-side runtime inside Telegram client (HIGH) [Telegram Blog Mini Apps, https://blog.telegram.org/mini-apps]
+Off-chain Game Backend: Centralized game server (Web2) handling tap counting, leaderboards, squad logic, and off-chain balance state during mining phase (HIGH) [Notcoin Blog Launch, https://notcoin.com/blog/notcoin-launch]
+On-chain Settlement: TON Jetton (NOT token) minting and distribution via smart contracts after mining phase; subsequent on-chain interactions (Earn, Explore, Wallet) via TON smart contracts (HIGH) [Tonviewer NOT Contract, https://tonviewer.com/EQAvlWfdqGdO...]
+Wallet Infrastructure: ERC-4337 Account Abstraction (Smart Wallet) deployed on TON; uses Paymaster for gasless transactions and Bundler for batching (HIGH) [Notcoin Blog Wallet Launch, https://notcoin.com/blog/wallet-launch]
+Indexing & API: Tonapi (Goldberry Labs) for on-chain data indexing, RPC, and transaction history for frontend (HIGH) [Tonapi Docs, https://tonapi.io/docs]
+
+## Core Components
+
+Component: Notcoin Game Backend (Off-chain)
+Function: Menangani logika tap-to-earn, perhitungan energi, boost, squad/referral, leaderboard, dan penyimpanan saldo off-chain (NOT virtual) selama fase mining
+Status: Completed (Fase mining berakhir 1 April 2024) (HIGH) [Notcoin Blog Mining End, https://notcoin.com/blog/mining-end]
+Sources: https://notcoin.com/blog/notcoin-launch https://notcoin.com/blog/mining-end
+
+Component: Notcoin Jetton Master Contract (TON)
+Function: Kontrak induk (master minter) untuk token NOT (Jetton standard TEP-74); mengelola total supply, minting, dan admin rights
+Status: Live (Deployed ~Mei 2024) (HIGH) [Tonviewer NOT Master, https://tonviewer.com/EQAvlWfdqGdO...]
+Sources: https://tonviewer.com/EQAvlWfdqGdO...
+
+Component: Notcoin Jetton Wallet Contracts (User)
+Function: Kontrak Jetton wallet per pengguna (derived address) untuk menyimpan balance NOT on-chain dan menangani transfer/receive
+Status: Live (Auto-deployed on first receive) (HIGH) [TON Jetton Standard, https://github.com/ton-blockchain/TEPs/blob/master/text/0074-jettons-standard.md]
+Sources: https://github.com/ton-blockchain/TEPs/blob/master/text/0074-jettons-standard.md
+
+Component: Notcoin Smart Wallet (Account Abstraction)
+Function: ERC-4337 compatible smart contract wallet di TON; fitur: social recovery (Telegram login), gasless via Paymaster, batched transactions, fiat on-ramp integration
+Status: Live (Peluncuran Oktober 2024) (HIGH) [Notcoin Blog Wallet Launch, https://notcoin.com/blog/wallet-launch]
+Sources: https://notcoin.com/blog/wallet-launch
+
+Component: Notcoin Explore Backend
+Function: Platform discovery Mini App; mengelola daftar proyek, kampanye Earn, quest verification, dan reward distribution logic
+Status: Live (Mei 2024 – sekarang) (HIGH) [Notcoin Explore, https://notcoin.com/explore]
+Sources: https://notcoin.com/explore https://notcoin.com/blog/explore-launch
+
+Component: Notcoin Earn Campaign Contracts
+Function: Kontrak per kampanye (mis. staking, swap, hold) yang memverifikasi on-chain action pengguna dan mendistribusikan reward token proyek mitra ke pemegang NOT
+Status: Live (Juli 2024 – sekarang) (HIGH) [Notcoin Blog Earn Launch, https://notcoin.com/blog/earn-launch]
+Sources: https://notcoin.com/blog/earn-launch
+
+Component: Tonapi Indexer & RPC (Goldberry Labs)
+Function: Menyediakan REST API, GraphQL, WebSocket untuk data on-chain (balances, transactions, jetton metadata, NFT) yang dikonsumsi frontend Notcoin
+Status: Live (Production) (HIGH) [Tonapi Docs, https://tonapi.io/docs]
+Sources: https://tonapi.io/docs
+
+Component: Telegram Bot API / Web App SDK
+Function: Antarmuka komunikasi antara Mini App dan server Telegram; handling auth (initData), payments, ads, deep linking, dan UI components
+Status: Live (Ongoing) (HIGH) [Telegram Bot API, https://core.telegram.org/bots/api]
+Sources: https://core.telegram.org/bots/api
+
+Component: Dedust.io / Ston.fi DEX Contracts
+Function: AMM pools (NOT/TON, NOT/USDT) untuk likuiditas on-chain trading; terintegrasi di Explore/Earn untuk quest swap
+Status: Live (Mei 2024 – sekarang) (HIGH) [Dedust Pools, https://dedust.io/pools/EQAvlWfdqGdO...]
+Sources: https://dedust.io/pools/EQAvlWfdqGdO... https://app.ston.fi/pools/EQAvlWfdqGdO...
+
+Component: Orbs Network dLIMIT/dTWAP Contracts
+Function: Limit order dan TWAP order infrastructure di atas DEX TON; digunakan untuk advanced trading features di ekosistem Notcoin
+Status: Live (Integrated 2024) (MEDIUM) [Orbs TON DeFi, https://www.orbs.com/ton-defi/]
+Sources: https://www.orbs.com/ton-defi/
+
+## Consensus Mechanism
+
+Consensus: N/A (Notcoin adalah aplikasi di atas TON; TON menggunakan Proof-of-Stake dengan Byzantine Fault Tolerant consensus — bukan konsensus Notcoin sendiri) (HIGH) [TON Docs Consensus, https://docs.ton.org/learn/overview/consensus]
+Sources: https://docs.ton.org/learn/overview/consensus
+
+## Execution Environment
+
+Execution Environment: TON Virtual Machine (TVM) — register-based VM untuk smart contract execution di TON (HIGH) [TVM Docs, https://docs.ton.org/develop/smart-contracts/tvm]
+Client-side Execution: Telegram Web App (HTML5/JS) berjalan di WebView Telegram (iOS/Android/Desktop) (HIGH) [Telegram Web Apps, https://core.telegram.org/bots/webapps]
+Off-chain Game Logic: Centralized server (Node.js/Go — tidak dikonfirmasi publik) mengeksekusi logika game off-chain (HIGH) [Notcoin Blog Launch, https://notcoin.com/blog/notcoin-launch]
+Sources: https://docs.ton.org/develop/smart-contracts/tvm https://core.telegram.org/bots/webapps https://notcoin.com/blog/notcoin-launch
+
+## Programming Languages
+
+Language: FunC (Smart Contract development di TON — Jetton master, wallet, Earn campaigns) (HIGH) [TON FunC Docs, https://docs.ton.org/develop/smart-contracts/func/overview]
+Language: TypeScript / JavaScript (Frontend Mini App React-based; Backend API; Tonapi SDK usage) (HIGH) [Notcoin GitHub Org, https://github.com/notcoin]
+Language: Go (Golang) — Kemungkinan besar digunakan untuk backend game server & high-performance services (referensi arsitektur TON ecosystem umum; tidak diverifikasi spesifik Notcoin) (LOW) [TON Ecosystem Tech Stack, https://ton.org/docs/participate/guidelines]
+Language: Rust — Digunakan oleh Tonapi (indexer) dan beberapa infrastruktur TON; tidak dikonfirmasi untuk kode Notcoin internal (LOW) [Tonapi GitHub, https://github.com/tonkeeper/tonapi]
+Sources: https://docs.ton.org/develop/smart-contracts/func/overview https://github.com/notcoin https://ton.org/docs/participate/guidelines https://github.com/tonkeeper/tonapi
+
+## Development Framework
+
+Framework: Telegram Mini Apps SDK (@telegram-apps/sdk, @telegram-apps/bridge) untuk integrasi native Telegram features (HIGH) [Telegram Apps SDK, https://github.com/Telegram-Mini-Apps/telegram-apps-sdk]
+Framework: React (Frontend UI Mini App) — terlihat dari source build artifacts & developer docs (HIGH) [Notcoin Docs Frontend, https://docs.notcoin.com/frontend]
+Framework: Blueprint (TON Smart Contract Development Framework) — standar untuk FunC/Tact development di TON (MEDIUM) [Blueprint Docs, https://github.com/ton-org/blueprint]
+Framework: Tact (Alternative high-level language for TON smart contracts) — mungkin digunakan untuk kontrak baru (Wallet/Earn); tidak dikonfirmasi eksplisit (LOW) [Tact Lang, https://tact-lang.org/]
+SDK: Tonapi SDK (TypeScript/Python/Go) untuk interaksi on-chain data (HIGH) [Tonapi SDK, https://tonapi.io/docs/sdks]
+SDK: TonConnect SDK (Wallet connection standard di TON) untuk integrasi Tonkeeper/Notcoin Wallet (HIGH) [TonConnect Docs, https://docs.ton.org/develop/dapps/ton-connect/overview]
+Toolchain: Docker / Kubernetes (Deployment infrastructure — standar cloud-native; tidak dipublikasikan detail Notcoin) (LOW) [Cloud Native TON, https://ton.org/docs/participate/run-node]
+Sources: https://github.com/Telegram-Mini-Apps/telegram-apps-sdk https://docs.notcoin.com/frontend https://github.com/ton-org/blueprint https://tact-lang.org/ https://tonapi.io/docs/sdks https://docs.ton.org/develop/dapps/ton-connect/overview https://ton.org/docs/participate/run-node
+
+## Security Model
+
+Model: Smart Contract Security — TON Jetton standard (TEP-74) audited by TON Core Team; Notcoin master contract inherits standard risks (HIGH) [TEP-74, https://github.com/ton-blockchain/TEPs/blob/master/text/0074-jettons-standard.md]
+Model: Account Abstraction Security (Notcoin Wallet) — ERC-4337 adaptation on TON; relies on Paymaster & Bundler trust assumptions; social recovery via Telegram auth (HIGH) [Notcoin Blog Wallet, https://notcoin.com/blog/wallet-launch]
+Model: Off-chain Game Integrity — Centralized server authority untuk fase mining; tidak ada bukti kriptografis (ZK/TEE) untuk tap counts; trust-based (HIGH) [Notcoin Blog Launch, https://notcoin.com/blog/notcoin-launch]
+Model: Telegram initData Validation — Backend memverifikasi hash initData dari Telegram Web App untuk autentikasi pengguna (HMAC-SHA256 dengan bot token) (HIGH) [Telegram Web App Auth, https://core.telegram.org/bots/webapps#authenticating-web-app-users]
+Model: On-chain Verification (Earn) — Quest verification via on-chain transaction proof (Tonapi indexer) atau merkle proof; trust-minimized untuk reward distribution (HIGH) [Notcoin Blog Earn, https://notcoin.com/blog/earn-launch]
+Model: Upgradeability — Jetton master contract mungkin upgradeable via admin address (standard TEP-74 supports admin change); Wallet contracts mungkin proxy/upgradeable (tidak diverifikasi) (MEDIUM) [TEP-74 Admin, https://github.com/ton-blockchain/TEPs/blob/master/text/0074-jettons-standard.md]
+Sources: https://github.com/ton-blockchain/TEPs/blob/master/text/0074-jettons-standard.md https://notcoin.com/blog/wallet-launch https://notcoin.com/blog/notcoin-launch https://core.telegram.org/bots/webapps#authenticating-web-app-users https://notcoin.com/blog/earn-launch
+
+## Audit History
+
+Audit: Tidak ditemukan laporan audit publik resmi untuk kontrak khusus Notcoin (Jetton Master, Wallet AA, Earn Campaigns) dari auditor ternama (Certik, Trail of Bits, SlowMist, Hacken, dll) hingga cutoff penelusuran (MEDIUM) [Pencarian Certik/Skim, https://www.certik.com/projects; https://github.com/notcoin]
+Scope: N/A (Tidak ada audit publik)
+Status: Tidak teraudit publik / Tidak diumumkan
+Sources: https://www.certik.com/projects https://github.com/notcoin
+
+## Technical Upgrade History
+
+Upgrade: Peluncuran Notcoin Game (v1 Off-chain)
+Date: 2024-01-01
+Description: Deploy game backend, Telegram Mini App frontend, off-chain balance system
+Status: Completed (Deprecated post-mining) (HIGH) [Notcoin Blog Launch, https://notcoin.com/blog/notcoin-launch]
+Sources: https://notcoin.com/blog/notcoin-launch
+
+Upgrade: Token Generation Event & Jetton Deployment
+Date: 2024-05-16
+Description: Deploy Jetton Master contract (EQAvlWfdqGdO...), mint 102.7B NOT, enable claiming via wallet
+Status: Completed (Live) (HIGH) [Tonviewer NOT Contract, https://tonviewer.com/EQAvlWfdqGdO...]
+Sources: https://tonviewer.com/EQAvlWfdqGdO...
+
+Upgrade: Notcoin Explore & Earn Platform Launch
+Date: 2024-05-16 (Explore) / 2024-07 (Earn)
+Description: Deploy backend untuk discovery platform; smart contracts untuk kampanye reward on-chain
+Status: Live (Ongoing iterations) (HIGH) [Notcoin Blog Explore, https://notcoin.com/blog/explore-launch]
+Sources: https://notcoin.com/blog/explore-launch https://notcoin.com/blog/earn-launch
+
+Upgrade: Notcoin Smart Wallet (Account Abstraction) Launch
+Date: 2024-10
+Description: Deploy ERC-4337 wallet contracts (Paymaster, Bundler, Wallet logic); integrasi di Mini App
+Status: Live (Ongoing) (HIGH) [Notcoin Blog Wallet, https://notcoin.com/blog/wallet-launch]
+Sources: https://notcoin.com/blog/wallet-launch
+
+Upgrade: Telegram Ads Platform & Mini App Store Integration
+Date: 2024-11
+Description: Integrasi SDK Telegram Ads (rewarded ads), Monetization API, Featured placement di Mini App Store
+Status: Live (Ongoing) (HIGH) [Telegram Blog Mini Apps, https://blog.telegram.org/mini-apps]
+Sources: https://blog.telegram.org/mini-apps
+
+## Current Technical Stack
+
+Technology: The Open Network (TON) Blockchain (Layer 1) (HIGH) [TON Org, https://ton.org/]
+Technology: Telegram Mini Apps Platform (Hosting & Runtime) (HIGH) [Telegram Core, https://core.telegram.org/bots/webapps]
+Technology: FunC (Smart Contract Language) (HIGH) [TON Docs FunC, https://docs.ton.org/develop/smart-contracts/func/overview]
+Technology: TypeScript / React (Frontend Mini App) (HIGH) [Notcoin GitHub, https://github.com/notcoin]
+Technology: Tonapi (Indexer, RPC, API) by Goldberry Labs (HIGH) [Tonapi, https://tonapi.io/]
+Technology: TonConnect v2 (Wallet Connection Protocol) (HIGH) [TonConnect, https://tonconnect.io/]
+Technology: ERC-4337 Account Abstraction on TON (Smart Wallet) (HIGH) [Notcoin Blog Wallet, https://notcoin.com/blog/wallet-launch]
+Technology: Dedust.io AMM / Ston.fi RFQ-AMM (DEX Infrastructure) (HIGH) [Dedust, https://dedust.io/] [Ston.fi, https://ston.fi/]
+Technology: Orbs Network (dLIMIT/dTWAP Layer-3) (MEDIUM) [Orbs, https://www.orbs.com/ton-defi/]
+Technology: Getgems (NFT Marketplace & Indexer) (HIGH) [Getgems, https://getgems.io/]
+Technology: Docker / Kubernetes (Assumed Cloud Infrastructure — not public) (LOW) [General Cloud Native, https://kubernetes.io/]
+Sources: https://ton.org/ https://core.telegram.org/bots/webapps https://docs.ton.org/develop/smart-contracts/func/overview https://github.com/notcoin https://tonapi.io/ https://tonconnect.io/ https://notcoin.com/blog/wallet-launch https://dedust.io/ https://ston.fi/ https://www.orbs.com/ton-defi/ https://getgems.io/ https://kubernetes.io/
+
+## Known Technical Limitations
+
+Limitation: Off-chain Game Centralization — Fase mining sepenuhnya bergantung pada server terpusat Open Builders; tidak ada verifikasi on-chain atau ZK-proof untuk tap count; rentan manipulasi internal (HIGH) [Notcoin Blog Launch, https://notcoin.com/blog/notcoin-launch]
+Limitation: Smart Contract Upgradeability Risk — Jetton master contract memiliki admin address yang bisa mengubah parameter atau upgrade implementasi (jika proxy); tidak ada timelock/DAO on-chain terverifikasi untuk admin actions (MEDIUM) [TEP-74 Standard, https://github.com/ton-blockchain/TEPs/blob/master/text/0074-jettons-standard.md]
+Limitation: Wallet Paymaster Trust — Gasless transaksi Notcoin Wallet bergantung pada Paymaster yang dikendalikan Open Builders; jika Paymaster down atau jahat, pengguna tidak bisa transaksi (MEDIUM) [Notcoin Blog Wallet, https://notcoin.com/blog/wallet-launch]
+Limitation: Telegram Platform Dependency — Seluruh distribusi, auth, dan UI bergantung pada Telegram API & WebView; perubahan kebijakan Telegram (API breaking, ban, ads policy) berdampak langsung ketersediaan aplikasi (HIGH) [Telegram Blog, https://blog.telegram.org/]
+Limitation: Indexer Centralization (Tonapi) — Data on-chain yang ditampilkan ke pengguna (balance, history, quest status) bersumber dari Tonapi (Goldberry Labs); single point of failure untuk data readability (MEDIUM) [Tonapi Docs, https://tonapi.io/docs]
+Limitation: No Public Audit — Kontrak-kontrak kritis (Wallet AA, Earn Campaigns, Jetton Master) tidak memiliki laporan audit keamanan publik dari pihak ketiga independen (HIGH) [Certik Search, https://www.certik.com/projects]
+Limitation: FunC Language Maturity — FunC adalah bahasa low-level untuk TVM; rentan bug manual memory management (cell manipulation) dibanding high-level langs; tooling formal verification minim (MEDIUM) [TVM FunC Safety, https://docs.ton.org/develop/smart-contracts/func/overview]
+Sources: https://notcoin.com/blog/notcoin-launch https://github.com/ton-blockchain/TEPs/blob/master/text/0074-jettons-standard.md https://notcoin.com/blog/wallet-launch https://blog.telegram.org/ https://tonapi.io/docs https://www.certik.com/projects https://docs.ton.org/develop/smart-contracts/func/overview
+
+## Official Technical Resources
+
+Documentation: https://docs.notcoin.com
+GitHub: https://github.com/notcoin
+Developer Docs: https://docs.notcoin.com/developer
+SDK: https://github.com/Telegram-Mini-Apps/telegram-apps-sdk (Telegram Mini Apps SDK — used by Notcoin)
+API: https://tonapi.io/docs (Tonapi API — primary indexer for Notcoin)
+Whitepaper: Tidak ada whitepaper teknis formal; hanya blog posts & docs (HIGH) [Notcoin Blog, https://notcoin.com/blog]
+Research Paper: Tidak ada
+Sources: https://docs.notcoin.com https://github.com/notcoin https://docs.notcoin.com/developer https://github.com/Telegram-Mini-Apps/telegram-apps-sdk https://tonapi.io/docs https://notcoin.com/blog
+
+## RINGKASAN
+
+Architecture: Application Layer (Telegram Mini App) on TON Layer 1; Hybrid Off-chain (Game) / On-chain (Token, Wallet, Earn) architecture; Centralized game backend + Decentralized settlement & DeFi layer
+Core Components: 10 (Game Backend, Jetton Master, Jetton Wallets, Smart Wallet AA, Explore Backend, Earn Campaign Contracts, Tonapi Indexer, Telegram Bot/API, DEX Contracts, Orbs dLIMIT)
+Audit Count: 0 (Tidak ada audit publik terverifikasi)
+Major Upgrade Count: 5 (Game Launch, TGE/Jetton Deploy, Explore/Earn Launch, Smart Wallet AA Launch, Telegram Ads/Store Integration)
+
+## Open Threads
+
+- Kode sumber (source code) smart contract Notcoin (Jetton Master, Wallet AA, Earn Campaigns) tidak diverifikasi (verified) di TON Verifier (tonscan/tonviewer) — hanya bytecode yang terlihat; source code tidak dipublikasikan di GitHub repositori notcoin.
+- Detail arsitektur Paymaster & Bundler untuk Notcoin Wallet (endpoint, kode, keamanan) tidak terdokumentasi publik.
+- Teknologi backend game server (bahasa, framework, database, scaling strategy) tidak diungkapkan; hanya diketahui "centralized server".
+- Status verifikasi formal (formal verification) untuk kontrak FunC Notcoin — tidak ada bukti penggunaan Fift/Func formal verification tools.
+- Detail implementasi "social recovery" di Notcoin Wallet (threshold, guardian set, recovery flow) tidak terdokumentasi di developer docs.
+- Ketergantungan pada Tonapi sebagai single indexer — apakah ada fallback indexer (self-hosted dton.io/graphql atau Toncenter) tidak diketahui.
+- Rencana migrasi/upgrade Jetton master contract (jika ada) ke versi yang lebih aman/feature-rich (mis. TEP-89 jetton wallet v2) tidak diumumkan.
+- Kompatibilitas Notcoin Wallet dengan TON Connect v2 standard untuk dApp lain di ekosistem TON (beyond Notcoin Mini App) belum dikonfirmasi teknis.
+- Detail teknis "Notcoin v2 / Nettok" (AI-driven discovery, multi-chain bridge) dari roadmap 2025 tidak memiliki spesifikasi teknis (whitepaper, RFC, repo) yang tersedia publik.

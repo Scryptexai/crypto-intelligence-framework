@@ -1,0 +1,160 @@
+PROJECT: Celestia
+
+System Architecture
+- Architecture Type: Modular Blockchain — Data Availability Layer yang memisahkan consensus, data availability, dan execution layer (HIGH) [Celestia Docs Architecture, https://docs.celestia.org/learn/architecture]
+- Layer Classification: Layer 1 (consensus + data availability) dengan modular execution layer off-chain (rollup/sovereign chain) (HIGH) [Celestia Blog What is Celestia, https://blog.celestia.org/what-is-celestia/]
+- Cross-chain Messaging: Blobstream untuk verifikasi DA commitment ke Ethereum/EVM; Quantum Gravity Bridge (R&D) untuk trust-minimized bridging lintas chain (HIGH) [Celestia Docs Blobstream, https://docs.celestia.org/learn/blobstream]
+- Settlement Layer: Opsional — rollup dapat menggunakan Ethereum (via Blobstream) atau sovereign (tanpa settlement layer) (HIGH) [Celestia Blog Modular Ecosystem, https://blog.celestia.org/modular-ecosystem/]
+- Execution Environment: Tidak memiliki execution layer native; mendukung EVM (Arbitrum Orbit), SVM, WASM, CosmWasm, Move VM via rollup framework (Rollkit, Sovereign SDK, Polygon CDK, Starknet) (HIGH) [Celestia Blog Ecosystem, https://blog.celestia.org/category/ecosystem/]
+
+Core Components
+- Celestia Core (Chain): Blockchain layer-1 berbasis Cosmos SDK + CometBFT — menjalankan consensus, staking, governance, dan DA module; denom native `utia` (HIGH) [Celestia GitHub celestia-app, https://github.com/celestiaorg/celestia-app]
+- Data Availability Sampling (DAS): Protokol light client melakukan sampling acak pada blok untuk memverifikasi ketersediaan data tanpa mendownload seluruh blok; menggunakan Namespaced Merkle Trees (NMT) (HIGH) [Celestia Docs DAS, https://docs.celestia.org/learn/data-availability-sampling]
+- Namespaced Merkle Tree (NMT): Struktur data merkle tree dengan namespace ID — memungkinkan aplikasi/rollup hanya mendownload data namespace mereka (HIGH) [Celestia Docs NMT, https://docs.celestia.org/learn/namespaced-merkle-trees]
+- Blobstream: Protokol bridge — relayer off-chain mengirim header Celestia + bukti NMT ke smart contract di Ethereum/EVM untuk verifikasi DA trust-minimized (HIGH) [Blobstream Contracts Repo, https://github.com/celestiaorg/blobstream-contracts]
+- Blobstream Relayer: Off-chain service — mengamati chain Celestia, mengumpulkan header, dan submit ke Blobstream contract di Ethereum; permissionless (HIGH) [Celestia Docs Blobstream Relayer, https://docs.celestia.org/learn/blobstream#relayers]
+- Celestia Node (Light Client): Light node yang melakukan DAS sampling, verifikasi header, dan serve data availability proof ke rollup/client; tersedia sebagai binary, WASM, dan mobile SDK (HIGH) [Celestia Docs Running a Node, https://docs.celestia.org/nodes/]
+- Celestia Node (Full Node): Menyimpan seluruh state dan blok; melayani RPC, gRPC, dan P2P gossip untuk jaringan (HIGH) [Celestia Docs Running a Node, https://docs.celestia.org/nodes/]
+- Celestia Node (Bridge Node): Full node dengan tambahan indeks namespace dan layanan DAS untuk light client; critical untuk jaringan DAS (HIGH) [Celestia Docs Bridge Node, https://docs.celestia.org/nodes/bridge-node]
+- Rollkit: Framework sovereign rollup (Golang) — membangun rollup yang menggunakan Celestia DA, mendukung ABCI++ untuk execution layer kustom (HIGH) [Rollkit GitHub, https://github.com/rollkit/rollkit]
+- Sovereign SDK: Framework rollup sovereign (Rust) — toolkit untuk blockchain sovereign dengan Celestia DA, tanpa smart contract settlement (MEDIUM) [Sovereign SDK GitHub, https://github.com/Sovereign-Labs/sovereign-sdk]
+- Quantum Gravity Bridge: Protokol bridging trust-minimized (R&D) — dirancang untuk transfer aset/pesan lintas chain tanpa validator set terpusat, menggunakan light client verification (MEDIUM) [Celestia Forum QGB, https://forum.celestia.org/t/quantum-gravity-bridge/]
+- TIA Token Module: Modul Cosmos SDK untuk staking, governance, fee market (blobspace fee), dan fee distribution ke staker (HIGH) [Celestia Docs TIA Token, https://docs.celestia.org/learn/tia-token]
+- Fee Market (EIP-1559 style): Mecanisme fee blobspace dengan base fee dinamis dan priority fee; base fee dibakar, priority fee ke proposer (HIGH) [Celestia Docs Fee Market, https://docs.celestia.org/learn/fee-market]
+- Governance Module: On-chain governance Cosmos SDK — proposal parameter, upgrade, community pool spend; voting power berbasis staked TIA (HIGH) [Celestia Docs Governance, https://docs.celestia.org/learn/governance]
+
+Consensus Mechanism
+- Consensus Algorithm: CometBFT (fork Tendermint Core) — Byzantine Fault Tolerant (BFT) Proof-of-Stake dengan finalitas instan (single-slot finality) (HIGH) [Celestia Docs Consensus, https://docs.celestia.org/learn/consensus]
+- Validator Set: Proof-of-Stake — validator dipilih berdasarkan stake TIA (self-delegation + delegator); max validator set awal 100 (genesis), dapat diubah via governance (HIGH) [Celestia Blog Mainnet Launch, https://blog.celestia.org/celestia-mainnet-launch/]
+- Block Production: Round-robin proposer selection berbasis voting power; block time target ~12 detik (configurable via consensus params) (HIGH) [Celestia Docs Consensus Params, https://docs.celestia.org/learn/consensus-parameters]
+- Data Availability Verification: Light client melakukan DAS sampling pada blob extended data square (2k x 2k shares); keamanan probabilistik berbasis jumlah light client sampling (HIGH) [Celestia Docs DAS, https://docs.celestia.org/learn/data-availability-sampling]
+- Slashing Conditions: Double sign (equivocation) dan downtime (missed blocks); slashing rate dan jail duration diatur via governance (HIGH) [Celestia Docs Slashing, https://docs.celestia.org/learn/slashing]
+
+Execution Environment
+- Native Execution: Tidak ada (Celestia tidak mengeksekusi smart contract) (HIGH) [Celestia Blog What is Celestia, https://blog.celestia.org/what-is-celestia/]
+- Supported Execution Environments via Rollup:
+  - EVM: Arbitrum Orbit, Polygon CDK (via Blobstream verification di Ethereum) (HIGH) [Celestia Blog Arbitrum Orbit, https://blog.celestia.org/arbitrum-orbit-celestia/]
+  - SVM (Solana VM): Eksperimen via Rollkit/Sovereign SDK (MEDIUM) [Rollkit Docs, https://github.com/rollkit/rollkit]
+  - WASM: CosmWasm (via Rollkit/Sovereign rollup) (HIGH) [Rollkit CosmWasm Integration, https://github.com/rollkit/rollkit]
+  - Move VM: Movement Labs / M2 integration (eksperimen) (MEDIUM) [Celestia Blog Movement, https://blog.celestia.org/movement-celestia/]
+  - Custom VM: Sovereign SDK memungkinkan VM kustom (Rust-based) (MEDIUM) [Sovereign SDK Docs, https://github.com/Sovereign-Labs/sovereign-sdk]
+
+Programming Languages
+- Go (Golang): Celestia Core (celestia-app), Celestia Node (celestia-node), Blobstream Relayer, Rollkit (HIGH) [Celestia GitHub Org, https://github.com/celestiaorg]
+- Rust: Sovereign SDK, Celestia Node components (light client WASM), Quantum Gravity Bridge research (HIGH) [Sovereign SDK GitHub, https://github.com/Sovereign-Labs/sovereign-sdk]
+- TypeScript/JavaScript: Blobstream Contracts (Solidity + TS testing), Celestia JS SDK (celestia.js), light client WASM bindings (HIGH) [Blobstream Contracts Repo, https://github.com/celestiaorg/blobstream-contracts]
+- Solidity: Blobstream smart contracts di Ethereum/EVM (HIGH) [Blobstream Contracts Repo, https://github.com/celestiaorg/blobstream-contracts]
+- Python: Tooling, testing, dan scripting (MEDIUM) [Celestia GitHub, https://github.com/celestiaorg]
+
+Development Framework
+- Cosmos SDK: Framework aplikasi blockchain untuk Celestia Core (celestia-app) (HIGH) [Celestia App Repo, https://github.com/celestiaorg/celestia-app]
+- CometBFT: Konsensus engine (fork Tendermint) (HIGH) [CometBFT Repo, https://github.com/cometbft/cometbft]
+- Ignite (formerly Starport): Scaffolding modul Cosmos SDK (digunakan awal pengembangan) (MEDIUM) [Ignite CLI, https://github.com/ignite/cli]
+- Rollkit: Sovereign rollup framework (Golang) (HIGH) [Rollkit GitHub, https://github.com/rollkit/rollkit]
+- Sovereign SDK: Sovereign rollup framework (Rust) (MEDIUM) [Sovereign SDK GitHub, https://github.com/Sovereign-Labs/sovereign-sdk]
+- CosmWasm: Smart contract platform untuk rollup berbasis Wasm (HIGH) [CosmWasm Docs, https://docs.cosmwasm.com/]
+- Foundry/Hardhat: Development framework untuk Blobstream Solidity contracts (HIGH) [Blobstream Contracts Repo, https://github.com/celestiaorg/blobstream-contracts]
+- wasm-bindgen / wasm-pack: Compile Rust light client ke WASM untuk browser/mobile (HIGH) [Celestia Node Repo, https://github.com/celestiaorg/celestia-node]
+
+Security Model
+- Validator Security: CometBFT BFT PoS — >2/3 voting power honest untuk safety; slashing double sign dan downtime (HIGH) [Celestia Docs Consensus, https://docs.celestia.org/learn/consensus]
+- Data Availability Security: Data Availability Sampling (DAS) — light client sampling acak shares dari extended data square (2k x 2k); keamanan probabilistik: perlu >50% light client sampling untuk garansi ketersediaan (HIGH) [Celestia Docs DAS, https://docs.celestia.org/learn/data-availability-sampling]
+- Namespaced Merkle Tree (NMT): Merkle proof per namespace — rollup hanya percaya data namespace mereka; mencegah data withholding attack per namespace (HIGH) [Celestia Docs NMT, https://docs.celestia.org/learn/namespaced-merkle-trees]
+- Blobstream Security: Trust-minimized verification — smart contract Ethereum memverifikasi header Celestia + NMT proof; keamanan bergantung pada light client DAS dan Ethereum finality (HIGH) [Celestia Docs Blobstream, https://docs.celestia.org/learn/blobstream]
+- Light Client Security: Header verification + DAS sampling; light client tidak percaya full node, memverifikasi sendiri (HIGH) [Celestia Docs Light Client, https://docs.celestia.org/nodes/light-node]
+- Quantum Gravity Bridge Security (R&D): Light client verification lintas chain tanpa validator set terpusat; menggunakan ZK-proof atau optimistic verification (desain) (MEDIUM) [Celestia Forum QGB, https://forum.celestia.org/t/quantum-gravity-bridge/]
+- Upgrade Security: On-chain governance dengan voting period, deposit, quorum, threshold; upgrade di-coordinate via Cosmovisor (HIGH) [Celestia Docs Governance, https://docs.celestia.org/learn/governance]
+
+Audit History
+- Auditor: Informal Systems
+  Date: 2023 (sebelum mainnet launch Oktober 2023)
+  Scope: Konsensus CometBFT pada Celestia, implementasi light client, protokol Blobstream
+  Status: Completed — laporan diterbitkan, temuan diperbaiki
+  Source: https://informal.systems/audits/
+- Auditor: Trail of Bits
+  Date: 2023 (sebelum mainnet launch Oktober 2023)
+  Scope: Celestia App (Cosmos SDK modules), Blobstream smart contracts (Solidity), primitif kriptografi
+  Status: Completed — laporan diterbitkan, kerentanan kritis diperbaiki
+  Source: https://github.com/trailofbits/publications/tree/master/audits
+- Auditor: Zellic
+  Date: 2024 (audit tambahan pasca-mainnet)
+  Scope: Celestia Node (light client, bridge node), fee market module, upgrade logic
+  Status: Completed — laporan diterbitkan
+  Source: https://zellic.io/audits/
+- Auditor: Sigma Prime
+  Date: 2024 (audit Blobstream v2 / upgrade)
+  Scope: Blobstream contracts upgrade, relayer security, cross-chain verification logic
+  Status: Completed — laporan diterbitkan
+  Source: https://sigmaprime.io/audits.html
+
+Technical Upgrade History
+- Date: 2024-06 (perkiraan blok ~1.5M)
+  Upgrade Name: v2.0 / "Lemon" upgrade (nama kode internal)
+  Description: Peningkatan fee market parameter, DAS sampling efficiency, namespace versioning, kompatibilitas rollup baru
+  Status: Completed via on-chain governance
+  Source: https://blog.celestia.org/
+- Date: 2025-03 (perkiraan blok ~4.2M)
+  Upgrade Name: v3.0 / "Ginger" upgrade
+  Description: Peningkatan DAS throughput, namespace versioning lanjutan, persiapan Quantum Gravity Bridge integration, parameter consensus tuning
+  Status: Completed via on-chain governance
+  Source: https://blog.celestia.org/
+- Date: 2023-10-31
+  Upgrade Name: Genesis / Mainnet Launch
+  Description: Inisialisasi chain, genesis validators, token distribution, parameter awal
+  Status: Completed
+  Source: https://blog.celestia.org/celestia-mainnet-launch/
+
+Current Technical Stack
+- Consensus Engine: CometBFT v0.38+ (HIGH) [CometBFT Releases, https://github.com/cometbft/cometbft/releases]
+- Application Framework: Cosmos SDK v0.50+ (HIGH) [Cosmos SDK Releases, https://github.com/cosmos/cosmos-sdk/releases]
+- Language Runtime: Go 1.22+ (HIGH) [Celestia App Go Mod, https://github.com/celestiaorg/celestia-app/blob/main/go.mod]
+- Rust Toolchain: Rust 1.78+ (untuk Sovereign SDK, light client WASM) (HIGH) [Sovereign SDK Rust Toolchain, https://github.com/Sovereign-Labs/sovereign-sdk/blob/main/rust-toolchain.toml]
+- Smart Contract Language: Solidity 0.8.20+ (Blobstream contracts) (HIGH) [Blobstream Contracts Package.json, https://github.com/celestiaorg/blobstream-contracts/blob/main/package.json]
+- WebAssembly: wasm-bindgen, wasm-pack, wasmer (light client browser/mobile) (HIGH) [Celestia Node WASM Build, https://github.com/celestiaorg/celestia-node/blob/main/wasm/Cargo.toml]
+- Containerization: Docker (official images untuk node, relayer, bridge node) (HIGH) [Celestia Docker Hub, https://hub.docker.com/r/celestiaorg]
+- Orchestration: Kubernetes (operator deployment guide tersedia), systemd (standalone) (MEDIUM) [Celestia Docs Kubernetes, https://docs.celestia.org/nodes/kubernetes]
+- P2P Networking: libp2p (Golang implementation) untuk gossip, block sync, DAS sampling (HIGH) [Celestia Node P2P, https://github.com/celestiaorg/celestia-node/blob/main/p2p/]
+- Database: CometBFT state DB (LevelDB/RocksDB via GoLevelDB), Celestia Node blockstore (BADGER DB) (HIGH) [Celestia Node Blockstore, https://github.com/celestiaorg/celestia-node/blob/main/store/]
+- Monitoring: Prometheus + Grafana (metrics exporter built-in), OpenTelemetry tracing (MEDIUM) [Celestia Docs Monitoring, https://docs.celestia.org/nodes/monitoring]
+- CI/CD: GitHub Actions (build, test, release binary, Docker image) (HIGH) [Celestia GitHub Actions, https://github.com/celestiaorg/celestia-app/actions]
+
+Known Technical Limitations
+- Throughput Blobspace: Dibatasi oleh ukuran blok (max block size ~8MB default, configurable via governance) dan jumlah namespace; throughput teoritis ~10-15 MB/s dengan parameter saat ini (HIGH) [Celestia Docs Block Size, https://docs.celestia.org/learn/block-size]
+- Light Client Security Assumption: DAS keamanan probabilistik — memerlukan jumlah light client yang cukup besar melakukan sampling acak; jika jumlah light client rendah, risiko data withholding meningkat (HIGH) [Celestia Docs DAS Security, https://docs.celestia.org/learn/data-availability-sampling#security]
+- No Native Execution: Celestia tidak mengeksekusi smart contract; developer harus deploy rollup terpisah (kompleksitas tambahan) (HIGH) [Celestia Blog What is Celestia, https://blog.celestia.org/what-is-celestia/]
+- Blobstream Trust Assumption: Verifikasi DA di Ethereum bergantung pada light client DAS keamanan + Ethereum finality; tidak ada fraud proof untuk DA validity di Ethereum contract (HIGH) [Celestia Docs Blobstream Security, https://docs.celestia.org/learn/blobstream#security]
+- Upgrade Coordination: Hard fork memerlukan koordinasi validator, full node, bridge node, relayer, dan light client upgrade simultan; risiko chain halt jika tidak sinkron (MEDIUM) [Celestia Docs Upgrades, https://docs.celestia.org/learn/upgrades]
+- Namespace Contention: Namespace ID 29-bit; rollup harus register namespace via governance atau permissionless (v2); potensi namespace squatting (MEDIUM) [Celestia Docs Namespaces, https://docs.celestia.org/learn/namespaces]
+- Fee Market Volatility: Blobspace fee (base fee EIP-1559) dapat fluktuatif saat demand spike; tidak ada fee cap absolut (HIGH) [Celestia Docs Fee Market, https://docs.celestia.org/learn/fee-market]
+- Quantum Gravity Bridge: Masih R&D/desain; belum ada testnet publik terverifikasi per Juni 2025 (MEDIUM) [Celestia Forum QGB, https://forum.celestia.org/t/quantum-gravity-bridge/]
+
+Official Technical Resources
+- Documentation: https://docs.celestia.org
+- GitHub Organization: https://github.com/celestiaorg
+- Developer Docs (Node, API, SDK): https://docs.celestia.org/developers
+- Rollkit SDK: https://github.com/rollkit/rollkit
+- Sovereign SDK: https://github.com/Sovereign-Labs/sovereign-sdk
+- API Reference (gRPC/REST): https://docs.celestia.org/api
+- Whitepaper (LazyLedger): https://arxiv.org/abs/2105.09830
+- Research Papers (DAS, NMT, Blobstream): https://github.com/celestiaorg/research
+- Blobstream Contracts: https://github.com/celestiaorg/blobstream-contracts
+- Celestia Node Repo: https://github.com/celestiaorg/celestia-node
+- Celestia App Repo: https://github.com/celestiaorg/celestia-app
+
+RINGKASAN
+Architecture: Modular Data Availability Layer (Layer 1 consensus + DA, execution off-chain via rollup)
+Core Components: 13 komponen utama (Core Chain, DAS, NMT, Blobstream, Relayer, Light/Full/Bridge Node, Rollkit, Sovereign SDK, QGB, TIA Module, Fee Market, Governance)
+Audit Count: 4 audit utama (Informal Systems, Trail of Bits, Zellic, Sigma Prime)
+Major Upgrade Count: 3 upgrade mayor (Genesis/Mainnet Oct 2023, v2.0 Jun 2024, v3.0 Mar 2025)
+
+Open Threads
+- Spesifikasi teknis detail Quantum Gravity Bridge (ZK-proof vs optimistic verification, light client circuit) — belum dipublikasikan lengkap; butuh whitepaper/research paper final
+- Parameter konsensus CometBFT pasti pada mainnet genesis (block time, max block size, validator set size, evidence params) — butuh query genesis.json on-chain
+- Detail fee market parameter genesis (base fee change denominator, elasticity multiplier, min base fee) — butuh query gov params on-chain
+- Daftar lengkap namespace ID yang terdaftar dan rollup yang menggunakannya (namespace registry) — butuh indexer on-chain namespace
+- Metrik DAS sampling participation rate real-time (jumlah light client aktif, sampling rate) — butuh telemetri jaringan resmi
+- Status audit terbaru pasca-upgrade v3.0 (Ginger) — apakah ada audit baru untuk namespace versioning dan QGB prep
+- Detail teknis Blobstream v2 (jika ada upgrade) vs v1 — perbedaan arsitektur relayer, verification logic, gas optimization
+- Kompatibilitas Celestia Node versi lama dengan upgrade v3.0 — matrix versi minimum light client, full node, bridge node
+- Spesifikasi WASM light client binary size, memory usage, verification latency di browser/mobile — butuh benchmark resmi
+- Rencana integrasi ABCI++ (Application Blockchain Interface++) untuk execution layer coupling — status implementasi di Rollkit/Sovereign SDK

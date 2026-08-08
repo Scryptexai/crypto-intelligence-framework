@@ -1,0 +1,198 @@
+PROJECT: Helium
+
+1. Membangun jaringan nirkabel terdesentralisasi global untuk IoT dan Mobile
+· Evidence: Helium dirancang sebagai DePIN wireless (LoRaWAN IoT, 5G CBRS, WiFi Passpoint) dengan proof-of-coverage sebagai mekanisme insentif; visi "The People's Network" sejak founding 2013 (Phase 1 Foundation; Phase 3 EV-001)
+· Supporting Dataset: Phase 1 Foundation, Phase 3 EV-001, EV-007, EV-012, EV-026
+
+2. Migrasi ke blockchain performa tinggi (Solana) untuk skalabilitas dan komposabilitas DeFi
+· Evidence: HIP 70 disetujui 2022-09 dan dieksekusi 2023-04-18 memindahkan state penuh ke Solana; menggantikan HoneyBadgerBFT custom L1 dengan PoH/PoS Solana; membuka akses DeFi Solana (Orca, Raydium, Marinade, Jito) (Phase 3 EV-019, EV-022; Phase 4 Architecture)
+· Supporting Dataset: Phase 3 EV-019, EV-022, Phase 4 Architecture, Consensus Mechanism, Execution Environment
+
+3. Membagi tokenomics via SubDAO (IoT dan Mobile) untuk alignment insentif per sub-jaringan
+· Evidence: HIP 51 (SubDAOs generik) dan HIP 52 (Mobile SubDAO) disetujui 2022-05; emisi IOT untuk Hotspot LoRaWAN, emisi MOBILE untuk Gateway 5G/WiFi; treasury terpisah per SubDAO (Phase 3 EV-017; Phase 6 Distribution, Governance)
+· Supporting Dataset: Phase 3 EV-017, Phase 6 Distribution, Governance, Inflation/Deflation
+
+4. Meluncurkan produk konsumen B2C (Helium Mobile MVNO) untuk menciptakan permintaan Data Credits nyata
+· Evidence: Helium Mobile diluncurkan 2023-06 dengan roaming T-Mobile nasional; subscription $20/bulan dikonversi ke DC burn (MOBILE/HNT); flywheel revenue → token burn → value accrual (Phase 3 EV-023, EV-024; Phase 5 Revenue Model; Phase 6 Utility)
+· Supporting Dataset: Phase 3 EV-023, EV-024, Phase 5 Revenue Model, Phase 6 Utility
+
+5. Membangun ekosistem perangkat keras terbuka melalui produsen OEM bersertifikat
+· Evidence: RAKwireless, Bobcat, Nebra, FreedomFi menjadi produsen Hotspot resmi; secure element (ATECC608B/TEE) mandatory; Nova Labs mengakuisisi FreedomFi 2022-07 untuk internalisasi hardware 5G (Phase 2 Entities; Phase 3 EV-010, EV-018; Phase 4 Core Components, Security Model)
+· Supporting Dataset: Phase 2 Entities (RAKwireless, Bobcat, Nebra, FreedomFi), Phase 3 EV-010, EV-018, Phase 4 Core Components, Security Model
+
+6. Menjaga fair launch dan tidak ada alokasi token tim/investor untuk kesetaraan distribusi
+· Evidence: Tokenomics whitepaper: 0% pre-mine, 0% team allocation, 0% investor allocation; 100% HNT diekspor via PoC sejak genesis 2019-07-29; investor memegang equity Nova Labs, bukan token (Phase 5 Fundraising Mechanism, Token Sale; Phase 6 Distribution, TGE)
+· Supporting Dataset: Phase 5 Fundraising Mechanism, Token Sale, Phase 6 Distribution, TGE
+
+Keputusan: Fair Launch Mainnet Genesis tanpa Pre-mine/Pre-sale (2019-07-29)
+· Trigger: Visi fondator "The People's Network" — jaringan dimiliki dan dioperasikan komunitas, bukan venture-backed token sale
+· Evidence: Helium Tokenomics Whitepaper menyatakan "no pre-mine, no ICO, no pre-sale"; genesis block 1 tidak mem-mint supply; emisi dimulai via PoC reward ke Hotspot operator (Phase 1 Foundation; Phase 3 EV-007; Phase 6 TGE, Distribution)
+· Decision: Meluncurkan mainnet custom L1 dengan emisi HNT 100% ke proof-of-coverage miners; investor hanya equity Nova Labs
+· Immediate Result: Distribusi token geografis luas (>180 negara historis); tidak ada unlock cliff/vesting yang menciptakan tekanan jual awal
+· Long-term Impact: Menjadi rujukan "fair launch" di industri DePIN; menghindari klasifikasi security token (Howey Test) karena tidak ada investment of money in common enterprise dengan expectation of profit from efforts of others
+· Supporting Dataset: Phase 1 Foundation, Phase 3 EV-007, Phase 5 Token Sale, Phase 6 TGE, Distribution
+
+Keputusan: Series C Funding $111M dipimpin GV (2020-11-17)
+· Trigger: Kebutuhan modal masif untuk rantai pasokan perangkat keras (supply chain) dan R&D Helium 5G CBRS
+· Evidence: TechCrunch melaporkan $111M Series C led by GV dengan partisipasi existing investors; digunakan untuk manufacturing scale dan 5G development (Phase 3 EV-009; Phase 5 Funding History)
+· Decision: Menerima strategic capital dari GV (Google Ventures) sebagai validasi teknis dan pasar
+· Immediate Result: Percepatan produksi Hotspot generasi 2-3; pengembangan FreedomFi Gateway 5G; rekrutmen tim engineering massal
+· Long-term Impact: Positioning Helium sebagai DePIN serious infrastructure project bukan crypto toy; menarik Series D $200M tahun berikutnya
+· Supporting Dataset: Phase 3 EV-009, Phase 5 Funding History
+
+Keputusan: HIP 51 & HIP 52 — SubDAO Structure untuk IoT dan Mobile (2022-05)
+· Trigger: Kompleksitas mengelola dua jaringan fisik berbeda (LoRaWAN IoT vs 5G/WiFi Mobile) dengan ekonomi unit yang berbedan di bawah satu token HNT
+· Evidence: HIP 51 membuat framework SubDAO generik; HIP 52 mendefinisikan Mobile SubDAO spesifik; token IOT dan MOBILE terpisah dari HNT induk; governance & treasury terpisah (Phase 3 EV-017; Phase 6 Distribution, Governance, Inflation/Deflation)
+· Decision: Memisahkan emisi, reward, dan governance per sub-jaringan via SubDAO on-chain programs
+· Immediate Result: Token IOT & MOBILE SPL siap untuk migrasi Solana; insentif operator Hotspot IoT vs Gateway 5G/WiFi terpisah dan transparan
+· Long-term Impact: Memungkinkan valuation terpisah per sub-network; Mobile SubDAO bisa funding MVNO ops; IoT SubDAO fokus LoRaWAN coverage
+· Supporting Dataset: Phase 3 EV-017, Phase 6 Distribution, Governance, Inflation/Deflation
+
+Keputusan: HIP 70 — Migrasi Penuh ke Solana (Disetujui 2022-09, Dieksekusi 2023-04-18)
+· Trigger: Keterbatasan custom L1: throughput rendah, biaya transaksi naik, kesulitan rekrut validator, tidak ada DeFi composability
+· Evidence: HIP 70 proposal detail migrasi state (accounts, hotspots, balances, PoC history) ke Solana programs; Trail of Bits audit 2022-11 (19 temuan, 2 Critical dimitigasi); migrasi executed 2023-04-18 (Phase 3 EV-019, EV-021, EV-022; Phase 4 Architecture, Consensus Mechanism, Technical Upgrade History)
+· Decision: Menghentikan custom L1 consensus (HoneyBadgerBFT); deploy Helium logic sebagai Solana programs (PoC oracle, rewards, SubDAO, staking, DC); HNT/IOT/MOBILE jadi SPL tokens
+· Immediate Result: Biaya transaksi <$0.001; finality <1 detik; akses DeFi Solana (staking pools, DEX, lending); 900k+ Hotspot accounts termigrasi
+· Long-term Impact: Helium menjadi protokol DePIN terbesar di Solana; developer ecosystem Solana bisa build di atas Helium; Nova Labs fokus application layer (Mobile, Console) bukan L1 maintenance
+· Supporting Dataset: Phase 3 EV-019, EV-021, EV-022, Phase 4 Architecture, Consensus Mechanism, Technical Upgrade History
+
+Keputusan: Peluncuran Helium Mobile MVNO dengan Roaming T-Mobile (2023-06)
+· Trigger: Butuh real-world demand untuk Data Credits (DC burn) agar tokenomics BME (Burn-and-Mint Equilibrium) berfungsi; IoT DC burn volume terlalu rendah
+· Evidence: Helium Mobile launch blog 2023-06; partnership T-Mobile untuk nationwide coverage fallback; $20/unlimited plan; revenue fiat → DC burn MOBILE/HNT (Phase 3 EV-023, EV-024; Phase 5 Revenue Model; Phase 6 Utility)
+· Decision: Mengoperasikan MVNO langsung (Nova Labs) bukan wholesale ke MVNO lain; full stack control (billing, provisioning, roaming gateway)
+· Immediate Result: Produk B2C pertama monetisasi jaringan DePIN; ribuan subscriber awal; DC burn volume Mobile mulai berkontribusi
+· Long-term Impact: Membuktikan DePIN bisa generate real revenue (bukan hanya speculative token); menarik regulator attention (state PUC/PSC); menciptakan flywheel: more subscribers → more DC burn → higher token value → more Hotspot deployment → better coverage → more subscribers
+· Supporting Dataset: Phase 3 EV-023, EV-024, Phase 5 Revenue Model, Phase 6 Utility
+
+Keputusan: Akuisisi FreedomFi (2022-07)
+· Trigger: Kebutuhan internalisasi pengembangan hardware 5G CBRS untuk percepatan Helium Mobile; FreedomFi sudah pionir Gateway 5G dan Mobile SubDAO
+· Evidence: FreedomFi blog announcement acquisition; team bergabung Nova Labs; rantai pasokan Gateway 5G dikendalikan penuh (Phase 3 EV-018; Phase 2 Entities FreedomFi; Phase 4 Core Components)
+· Decision: Acqui-hire FreedomFi team dan IP; menghentikan ketergantungan vendor eksternal untuk hardware 5G kritis
+· Immediate Result: Pengembangan Helium 5G Gateway generasi baru dipercepat; alignment roadmap hardware-software penuh
+· Long-term Impact: Nova Labs menjadi vertically integrated (protocol + hardware + MVNO service); mengurangi risiko supply chain tapi menambah operational complexity
+· Supporting Dataset: Phase 3 EV-018, Phase 2 Entities FreedomFi, Phase 4 Core Components
+
+Keputusan: Pendirian Helium Foundation 501(c)(3) (2022-03)
+· Trigger: Perlunya entitas legal terpisah dari Nova Labs untuk mengelola ecosystem grants, treasury komunitas, dan advokasi kebijakan (DeWi)
+· Evidence: Helium Foundation announcement blog 2022-03; IRS 501(c)(3) filing; terpisah dari Nova Labs Inc. (Phase 3 EV-016; Phase 2 Entities Helium Foundation; Phase 5 Treasury)
+· Decision: Membangun non-profit foundation dengan board terpisah; tidak ada alokasi token protokol otomatis; bergantung hibah komunitas
+· Immediate Result: Entity legal untuk grants, policy advocacy (DeWi alliance 2022-09), trademark stewardship
+· Long-term Impact: Governance legitimacy; tapi treasury transparency terbatas (Form 990 belum terverifikasi publik)
+· Supporting Dataset: Phase 3 EV-016, Phase 2 Entities Helium Foundation, Phase 5 Treasury
+
+Keputusan: Listing HNT di Binance (2021-11) dan Coinbase (2021)
+· Trigger: Butuh likuiditas pasar primer dan akses investor global/US setelah network effect IoT Hotspot explosion 2021
+· Evidence: Binance listing HNT/USDT Nov 2021; Coinbase listing 2021; volume trading melonjak (Phase 3 EV-011, EV-014; Phase 8 Trading Markets)
+· Decision: Prioritaskan CEX tier-1 untuk price discovery dan on-ramp fiat
+· Immediate Result: HNT price discovery global; akses retail/institutional US via Coinbase
+· Long-term Impact: CEX liquidity dominance (Binance highest volume); DEX liquidity secondary untuk IOT/MOBILE; token sebagai currency untuk DC burn butuh deep liquidity
+· Supporting Dataset: Phase 3 EV-011, EV-014, Phase 8 Trading Markets, Liquidity
+
+---
+
+Evolution Pattern
+
+Helium berevolusi melalui empat fase strategis yang jelas:
+
+Fase 1 — Protocol & Hardware Bootstrap (2013-2019): Fokus R&D protokol custom L1 (HoneyBadgerBFT), proof-of-coverage invention, dan produksi Hotspot generasi 1. Funding Series A/B dari USV, Khosla, Multicoin. Testnet 1-3 memvalidasi teknis. Fair launch mainnet 2019-07-29 tanpa pre-mine.
+
+Fase 2 — Network Effect Explosion & 5G Expansion (2020-2022): Series C $111M (GV) dan Series D $200M (a16z/Tiger Global) mendanai skala manufaktur OEM (RAKwireless, Bobcat, Nebra) → >900k Hotspot onboarded. Peluncuran Helium 5G CBRS via FreedomFi partnership. Governance evolution: HIP 51/52 SubDAOs memisahkan IoT vs Mobile tokenomics. Rebrand Helium Inc. → Nova Labs Inc. (2022-02) memisahkan core developer dari network protocol. Helium Foundation didirikan (2022-03). HIP 70 migrasi Solana disetujui (2022-09).
+
+Fase 3 — Solana Migration & Productization (2023): Migrasi eksekusi 2023-04-18 ke Solana programs (HIP 70). Biaya turun drastis, DeFi composability terbuka. Peluncuran Helium Mobile MVNO (2023-06) dengan roaming T-Mobile — produk B2C pertama. Listing IOT/MOBILE di CEX. Helium WiFi Hotspot (Passpoint) dirilis 2024 memperluas Mobile SubDAO beyond CBRS.
+
+Fase 4 — Revenue Flywheel & Maturation (2024-sekarang): Fokus pada growing DC burn volume (IoT + Mobile + WiFi) untuk BME equilibrium. Scaling Helium Mobile subscribers (data tidak publik). Enterprise Console monetization. Governance maturation via SPL Governance/Realms. DeWi alliance advokasi kebijakan spektrum. Hardware security audit berkelanjutan (Kudelski).
+
+Pola evolusi: Dari infrastructure protocol → ke hardware network → ke application layer (MVNO) → ke revenue-generating business. Setiap fase didanai VC, lalu tokenomics mengambil alih sebagai funding mechanism jangka panjang.
+
+---
+
+Pola 1: Arsitektur Modular dengan Layer Settlement Terpisah
+· Decision Pattern: Memisahkan consensus/settlement layer (custom L1 → Solana) dari application logic (PoC, rewards, SubDAO, DC) yang diimplementasikan sebagai smart contracts/programs
+· Evidence: Custom L1 2019-2023 (HoneyBadgerBFT) hanya untuk consensus & state; application logic di node software. Migrasi HIP 70 memindahkan application logic ke Solana programs (BPF/Anchor) sementara consensus diserahkan ke Solana validator set (Phase 4 Architecture, Consensus Mechanism, Execution Environment, Technical Upgrade History EV-022)
+· Supporting Dataset: Phase 4 Architecture, Consensus Mechanism, Execution Environment, Phase 3 EV-019, EV-022
+
+Pola 2: Proof-of-Coverage sebagai Sybil Resistance Fisik, Bukan Staking Ekonomis
+· Decision Pattern: Menggunakan verifikasi RF (RSSI, SNR, GPS, timing) via oracle off-chain sebagai bukti lokasi dan coverage nyata, bukan sekadar staking token
+· Evidence: PoC mechanism desde mainnet 2019; oracle network off-chain memverifikasi assert coverage Hotspot; reward berbasis kualitas coverage bukan stake weight (Phase 4 Core Components PoC Oracle Network, Consensus Mechanism PoC, Security Model PoC Verification)
+· Supporting Dataset: Phase 4 Core Components, Consensus Mechanism, Security Model
+
+Pola 3: Upgrade Bertahap dengan Testing Ekstensif (Testnet 1→2→3→Mainnet)
+· Decision Pattern: Melakukan 3 testnet publik selama ~1.5 tahun sebelum mainnet, masing-masing menambah fitur ekonomis dan konsensus
+· Evidence: Testnet 1 (2018-03) PoC dasar; Testnet 2 (2018-09) stabilitas validator; Testnet 3 (2019-01) tokenomics penuh (HNT, DC, BME); Mainnet genesis 2019-07-29 (Phase 3 EV-004, EV-005, EV-006, EV-007)
+· Supporting Dataset: Phase 3 EV-004, EV-005, EV-006, EV-007
+
+Pola 4: Migrasi Blockchain via State Export/Import, Bukan Bridge
+· Decision Pattern: HIP 70 memigrasikan seluruh state (accounts, balances, PoC history) via one-time state export ke Solana programs, bukan menjalankan dua chain paralel dengan bridge
+· Evidence: HIP 70 design "state migration" bukan "bridge"; legacy mainnet dihentikan sepenuhnya 2023-04-18; Hotspot identity (keypair di secure element) dipertahankan via account mapping (Phase 3 EV-019, EV-022; Phase 4 Architecture, Technical Upgrade History)
+· Supporting Dataset: Phase 3 EV-019, EV-022, Phase 4 Architecture, Technical Upgrade History
+
+Pola 5: Secure Element Hardware Root of Trust Mandatori
+· Decision Pattern: Setiap Hotspot wajib memiliki secure element (ATECC608B/TEE) yang menyimpan private key identity dan menandatangani assert lokasi/coverage
+· Evidence: Hardware security docs mandating secure element untuk approved hardware; Kudelski audit berkelanjutan side-channel resistance, secure boot, supply chain attestation (Phase 4 Core Components Secure Element, Security Model Secure Element, Audit History Kudelski)
+· Supporting Dataset: Phase 4 Core Components, Security Model, Audit History
+
+Pola 6: Rust + Anchor Framework untuk Semua Program On-chain
+· Decision Pattern: Standarisasi pengembangan program Solana menggunakan Rust dengan Anchor framework (account macros, IDL, CPI helpers, testing)
+· Evidence: Semua program Helium di GitHub (helium/helium/programs) menggunakan Anchor; PoC, Rewards, SubDAO, Staking, DC programs semua Rust/Anchor (Phase 4 Execution Environment, Development Framework, Programming Languages)
+· Supporting Dataset: Phase 4 Execution Environment, Development Framework, Programming Languages
+
+---
+
+Pola 1: VC Funding untuk Bootstrap, Tokenomics untuk Sustainability
+· Decision Pattern: Mengumpulkan $311M+ VC (Series A-D) untuk fund R&D, hardware supply chain, team scaling di fase awal; lalu beralih ke tokenomics (DC burn, Mobile revenue) sebagai funding mechanism jangka panjang
+· Evidence: Series A 2018 (USV/Khosla), Series B 2019 (Multicoin), Series C $111M 2020 (GV), Series D $200M 2021 (a16z/Tiger Global); zero token sale; investor equity only; protocol revenue via DC burn dan Mobile subscription (Phase 5 Funding History, Fundraising Mechanism, Revenue Model, Financial Dependencies)
+· Supporting Dataset: Phase 5 Funding History, Fundraising Mechanism, Revenue Model, Financial Dependencies
+
+Pola 2: Fair Launch Murni — 0% Alokasi Tim/Investor/Foundation pada TGE
+· Decision Pattern: Tidak ada pre-mine, pre-sale, team allocation, investor allocation, foundation allocation; 100% token diekspor via PoC mining
+· Evidence: Tokenomics whitepaper explicit "no pre-mine, no ICO"; genesis supply 0; HNT emission mulai block 1 via PoC; IOT/MOBILE emission mulai post-migration via SubDAO PoC (Phase 5 Token Sale; Phase 6 Distribution, TGE, Vesting Schedule)
+· Supporting Dataset: Phase 5 Token Sale, Phase 6 Distribution, TGE, Vesting Schedule
+
+Pola 3: SubDAO Treasury Sebagai Funding Mechanism Terprogram
+· Decision Pattern: Mengalokasikan persentase emisi per epoch ke SubDAO Treasury (IoT & Mobile) on-chain untuk ecosystem development, grants, operations — dikendalikan governance token-weighted
+· Evidence: HIP 51/52 define SubDAO treasury programs; ~10-20% emisi SubDAO per epoch ke treasury; spending via SPL Governance proposals (Phase 3 EV-017; Phase 5 Treasury; Phase 6 Distribution, Governance, Inflation/Deflation)
+· Supporting Dataset: Phase 3 EV-017, Phase 5 Treasury, Phase 6 Distribution, Governance, Inflation/Deflation
+
+Pola 4: Helium Foundation Sebagai Grant Vehicle Non-Profit Terpisah
+· Decision Pattern: Mendirikan 501(c)(3) foundation terpisah dari Nova Labs untuk ecosystem grants, policy advocacy, trademark stewardship — tanpa alokasi token protokol otomatis
+· Evidence: Foundation established 2022-03 (EV-016); IRS 501(c)(3); grants dari community donations; tidak ada protocol token allocation (Phase 3 EV-016; Phase 2 Entities Helium Foundation; Phase 5 Treasury)
+· Supporting Dataset: Phase 3 EV-016, Phase 2 Entities Helium Foundation, Phase 5 Treasury
+
+Pola 5: Revenue Diversification: DC Burn (On-chain) + Mobile Subscription (Fiat)
+· Decision Pattern: Dua aliran revenue: (1) Data Credits burn HNT/IOT/MOBILE on-chain (value accrual ke holders via supply reduction), (2) Helium Mobile fiat subscription $20/mo → dikonversi Nova Labs ke DC burn
+· Evidence: DC burn mechanism sejak 2019 (BME design); Mobile launch 2023-06 dengan fiat revenue; Nova Labs mengonversi fiat ke DC burn (Phase 5 Revenue Model; Phase 6 Utility; Phase 3 EV-023)
+· Supporting Dataset: Phase 5 Revenue Model, Phase 6 Utility, Phase 3 EV-023
+
+Pola 6: Tidak Ada Buyback Program — Mengandalkan Burn-and-Mint Equilibrium
+· Decision Pattern: Tidak mengimplementasikan token buyback dari pasar; supply reduction hanya via DC burn organik dari network usage
+· Evidence: Tokenomics whitepaper tidak menyebut buyback; BME design: demand untuk DC → burn token → supply reduction; tidak ada treasury-funded buyback (Phase 6 Inflation/Deflation; Phase 5 Financial Risk)
+· Supporting Dataset: Phase 6 Inflation/Deflation, Phase 5 Financial Risk
+
+---
+
+Pola 1: Hardware OEM Partnership Model (Bukan Vertical Manufacturing)
+· Decision Pattern: Bermitra dengan produsen hardware OEM bersertifikat (RAKwireless, Bobcat, Nebra, FreedomFi) untuk produksi dan distribusi Hotspot; Nova Labs menyediakan firmware, certification, secure element provisioning
+· Evidence: Approved hardware list docs; RAKwireless/Bobcat/Nebra dominate supply 2021-2022; FreedomFi acquired 2022 untuk internalisasi 5G hardware; Nova Labs tidak memproduksi IoT hardware sendiri post-2021 (Phase 2 Entities hardware partners; Phase 3 EV-010, EV-018; Phase 4 Core Components, External Dependencies)
+· Supporting Dataset: Phase 2 Entities, Phase 3 EV-010, EV-018, Phase 4 Core Components, External Dependencies
+
+Pola 2: Regulatory-First Approach untuk Spectrum Access (FCC/CBRS/SAS)
+· Decision Pattern: Proaktif compliance dengan regulasi spektrum: FCC Part 96 CBRS, SAS registration untuk Gateway 5G, carrier-grade compliance untuk MVNO
+· Evidence: Helium 5G docs detail regulatory compliance; SAS integration mandatory; T-Mobile roaming agreement untuk MVNO fallback; DeWi alliance untuk policy advocacy (Phase 2 Entities FCC, CBRS Alliance; Phase 3 EV-012; Phase 4 External Dependencies; Phase 7 External Dependencies FCC, SAS, T-Mobile, DeWi)
+· Supporting Dataset: Phase 2 Entities, Phase 3 EV-012, Phase 4 External Dependencies, Phase 7 External Dependencies
+
+Pola 3: Solana Ecosystem Deep Integration sebagai Settlement Layer
+· Decision Pattern: Memilih Solana sebagai single settlement layer pasca-migrasi; memanfaatkan DeFi composability (Orca, Raydium, Jupiter, Marinade, Jito), SPL Governance (Realms), SVM performance
+· Evidence: HIP 70 migration to Solana; HNT/IOT/MOBILE SPL tokens; staking via Marinade/Jito; DEX liquidity di Orca/Raydium; governance via Realms (Phase 3 EV-022; Phase 4 Architecture; Phase 7 Major Integrations, Infrastructure Providers, Exchange Ecosystem)
+· Supporting Dataset: Phase 3 EV-022, Phase 4 Architecture, Phase 7 Major Integrations, Infrastructure Providers, Exchange Ecosystem
+
+Pola 4: Carrier Partnership untuk MVNO Roaming (T-Mobile)
+· Decision Pattern: Bermitra dengan MNO incumbent (T-Mobile) untuk nationwide roaming fallback, memungkinkan Helium Mobile launch tanpa menunggu full coverage density
+· Evidence: Helium Mobile coverage map shows T-Mobile roaming; partnership announced 2023-06; critical dependency untuk consumer product viability (Phase 2 Entities T-Mobile; Phase 3 EV-023, EV-024; Phase 7 Major Integrations, External Dependencies)
+· Supporting Dataset: Phase 2 Entities T-Mobile, Phase 3 EV-023, EV-024, Phase 7 Major Integrations, External Dependencies
+
+Pola 5: Multi-RAT Expansion: LoRaWAN → 5G CBRS → WiFi Passpoint
+· Decision Pattern: Perluasan teknologi radio bertahap: IoT LoRaWAN (sub-GHz) → Mobile 5G CBRS (3.5 GHz) → Mobile WiFi Passpoint (2.4/5/6 GHz) — semua di bawah SubDAO Mobile reward MOBILE
+· Evidence: Product timeline: Helium Hotspot LoRaWAN 2019, Helium 5G 2021, Helium WiFi 2024; Mobile SubDAO mengelola 5G + WiFi rewards (Phase 3 EV-012, EV-026; Phase 4 Core Components; Phase 7 Major Integrations WiFi)
+· Supporting Dataset: Phase 3 EV-012, EV-026, Phase 4 Core Components, Phase 7 Major Integrations
+
+Pola 6: Auditor Specialization: Trail of Bits

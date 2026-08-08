@@ -94,6 +94,16 @@
     ]
   },
   {
+    "n": "Celestia",
+    "tier": "Deep",
+    "file": "examples/CaseStudies/Celestia.md",
+    "cat": "",
+    "era": "",
+    "tags": [
+      "modular"
+    ]
+  },
+  {
     "n": "Irys",
     "tier": "Deep",
     "file": "examples/CaseStudies/Irys.md",
@@ -101,6 +111,16 @@
     "era": "",
     "tags": [
       "testnet-incentive",
+      "l1"
+    ]
+  },
+  {
+    "n": "Monad",
+    "tier": "Deep",
+    "file": "examples/CaseStudies/Monad.md",
+    "cat": "",
+    "era": "",
+    "tags": [
       "l1"
     ]
   }

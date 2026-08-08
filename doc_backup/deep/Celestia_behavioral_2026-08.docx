@@ -1,0 +1,257 @@
+PROJECT: Celestia
+
+Strategic Objectives
+
+1. Menjadi Data Availability Layer standar untuk modular blockchain stack
+· Evidence: Whitepaper LazyLedger (2021) mendefinisikan arsitektur modular dengan pemisahan consensus, DA, dan execution; semua komunikasi resmi dan blog menekan narasi "Modular Blockchain" sebagai identitas utama (HIGH) [Phase 1 Foundation, https://blog.celestia.org/what-is-celestia/; Phase 3 EV-003, https://arxiv.org/abs/2105.09830]
+· Supporting Dataset: Phase 1 Foundation, Phase 3 EV-003, Phase 8 Narrative Position
+
+2. Memisahkan execution layer dari consensus layer untuk memungkinkan sovereign rollup dan app-chain
+· Evidence: Arsitektur tidak memiliki execution native; mendukung EVM (Arbitrum Orbit), SVM, WASM, Move VM via rollup framework (Rollkit, Sovereign SDK, Polygon CDK, Starknet) (HIGH) [Phase 4 System Architecture, https://docs.celestia.org/learn/architecture; Phase 7 Major Integrations]
+· Supporting Dataset: Phase 4 System Architecture, Phase 7 Major Integrations
+
+3. Membangun ekosistem rollup yang menggunakan Celestia DA melalui Blobstream dan verifikasi trust-minimized
+· Evidence: Integrasi live dengan Arbitrum Orbit (EV-013), Starknet (EV-014), Polygon CDK (EV-015), Manta Pacific, Dymension RollApps (EV-022), Sovereign SDK (EV-019), Rollkit (EV-006); Blobstream contracts di Ethereum (EV-012) (HIGH) [Phase 3 EV-012 to EV-015, EV-019, EV-022; Phase 7 Major Integrations]
+· Supporting Dataset: Phase 3 EV-012 to EV-015, EV-019, EV-022, Phase 7 Major Integrations
+
+4. Menciptakan value accrual untuk TIA melalui blobspace fees, staking, dan fee switch mekanisme
+· Evidence: Fee market EIP-1559 style live sejak mainnet; base fee dibakar, priority fee ke proposer; fee switch diskusi governance (EV-027) untuk mengalihkan sebagian fee ke staker (HIGH) [Phase 4 Fee Market, https://docs.celestia.org/learn/fee-market; Phase 5 Revenue Model; Phase 3 EV-027]
+· Supporting Dataset: Phase 4 Fee Market, Phase 5 Revenue Model, Phase 3 EV-027
+
+5. Desentralisasi progresif melalui Celestia Foundation (non-profit) dan governance on-chain
+· Evidence: Foundation didirikan Zug Swiss (EV-011) mengelola treasury, grants, governance; Celestia Labs (for-profit) sebagai core developer; governance on-chain aktif sejak mainnet (EV-018) (HIGH) [Phase 2 Foundation & Company entities; Phase 3 EV-011, EV-018; Phase 6 Governance]
+· Supporting Dataset: Phase 2 Foundation/Company entities, Phase 3 EV-011, EV-018, Phase 6 Governance
+
+6. Memperluas akses light client trust-minimized ke browser dan mobile untuk mass adoption
+· Evidence: Light client WASM dan mobile SDK rilis Jan 2025 (EV-028); DAS sampling oleh light client sebagai security model inti (HIGH) [Phase 3 EV-028; Phase 4 Security Model; Phase 7 Integration Light Client WASM]
+· Supporting Dataset: Phase 3 EV-028, Phase 4 Security Model, Phase 7 Integration Light Client WASM
+
+Decision Timeline
+
+Keputusan: Founding Celestia (LazyLedger) dan penelitian modular blockchain (2019)
+· Trigger: Masalah skalabilitas monolithic blockchain (execution + consensus + DA coupled); kebutuhan pemisahan layer
+· Evidence: Whitepaper LazyLedger 2021 mendefinisikan DAS dan NMT; founding team (Mustafa Al-Bassam, Ismail Khoffi, John Adler, Nick White) memiliki background cryptography, distributed systems, dan Ethereum research (HIGH) [Phase 1 Foundation; Phase 3 EV-001; Phase 2 Person entities]
+· Decision: Memulai penelitian dan pengembangan protokol Data Availability Sampling dengan Namespaced Merkle Trees
+· Immediate Result: Konsep dasar modular blockchain terdefinisi; fondasi teknis untuk Celestia
+· Long-term Impact: Menjadi pionir kategori Modular Blockchain; referensi arsitektur untuk EigenDA, Avail, dll
+· Supporting Dataset: Phase 1 Foundation, Phase 3 EV-001, Phase 3 EV-003
+
+Keputusan: Pembentukan Celestia Labs Inc. di Delaware sebagai entitas for-profit (2021)
+· Trigger: Perlu entitas hukum untuk 고용 tim engineering, fundraising VC, dan pengembangan protokol komersial
+· Evidence: Crunchbase menunjukkan incorporasi 2021; $55M Series A/B 2022 melalui Labs (HIGH) [Phase 2 Company entity; Phase 3 EV-002; Phase 5 Funding History]
+· Decision: Mendirikan Celestia Labs Inc. (Delaware) untuk core development, business development, dan equity fundraising
+· Immediate Result: Kapasitas hiring tim ~40+ engineer/researcher; modal untuk pengembangan protokol
+· Long-term Impact: Dual-entity structure (Labs + Foundation) menjadi model governance; Labs fokus execution, Foundation fokus treasury/stewardship
+· Supporting Dataset: Phase 2 Company entity, Phase 3 EV-002, Phase 5 Funding History
+
+Keputusan: Publikasi Whitepaper "LazyLedger: A Distributed Data Availability Ledger" (2021)
+· Trigger: Perlu publikasi teknis formal untuk validasi akademik dan komunitas peneliti
+· Evidence: arXiv:2105.09830 oleh Mustafa Al-Bassam, John Adler, dll; mendefinisikan DAS, NMT, modular thesis (HIGH) [Phase 3 EV-003; https://arxiv.org/abs/2105.09830]
+· Decision: Menerbitkan whitepaper teknis open access mendefinisikan arsitektur Celestia
+· Immediate Result: Dasar teknis resmi dipublikasikan; menarik perhatian investor dan researcher
+· Long-term Impact: Menjadi referensi standar modular DA layer; sitasi di penelitian EigenDA, Avail, Near DA
+· Supporting Dataset: Phase 3 EV-003
+
+Keputusan: Peluncuran Arabica Incentivized Testnet (2022-01-24)
+· Trigger: Perlu validasi DAS, light client, dan konsensus CometBFT di lingkungan produksi awal dengan insentif ekonomi
+· Evidence: Blog Arabica Testnet; program reward untuk operator node; first public network (HIGH) [Phase 3 EV-004; https://blog.celestia.org/arabica-testnet/]
+· Decision: Meluncurkan testnet incentivized pertama (Arabica) dengan reward bagi node operators
+· Immediate Result: Jaringan node pertama beroperasi; validasi DAS dan light client; komunitas operator terbentuk
+· Long-term Impact: Membangun infrastructure provider network awal; data untuk parameter mainnet
+· Supporting Dataset: Phase 3 EV-004, Phase 7 Infrastructure Providers
+
+Keputusan: Fundraising Series A/B $55M dipimpin Bain Capital Crypto dan Polychain Capital (2022-10)
+· Trigger: Perlu modal besar untuk ekspansi tim, research, BD, dan ekosistem rollup pasca-testnet Arabica
+· Evidence: Blog resmi "Celestia Labs raises $55M"; investor: Bain Capital Crypto, Polychain, 1kx, Robot Ventures, Placeholder, Delphi Digital, Galaxy Digital, Figment Capital (HIGH) [Phase 3 EV-005; Phase 5 Funding History; https://blog.celestia.org/celestia-labs-raises-55m/]
+· Decision: Mengumpulkan $55M equity funding Series A/B untuk Celestia Labs Inc.
+· Immediate Result: Runway untuk hiring agresif, research, business development, grant program
+· Long-term Impact: Financial dependency pada VC; tekanan untuk delivery mainnet dan adoption; investor token allocation dengan vesting
+· Supporting Dataset: Phase 3 EV-005, Phase 5 Funding History, Phase 6 Token Distribution
+
+Keputusan: Rilis Rollkit Framework untuk Sovereign Rollup (2022)
+· Trigger: Perlu developer tooling agar rollup dapat menggunakan Celestia DA tanpa settlement layer smart contract
+· Evidence: Rollkit GitHub rilis 2022; framework Golang dengan ABCI++ support (HIGH) [Phase 3 EV-006; https://github.com/rollkit/rollkit; Phase 7 SDK Rollkit]
+· Decision: Mengembangkan dan merilis Rollkit sebagai sovereign rollup SDK native Celestia DA
+· Immediate Result: Tooling tersedia untuk sovereign rollup; menarik builder eksperimen
+· Long-term Impact: Memperluas kategori rollup yang didukung (sovereign + settlement); diferensiasi vs EigenDA yang fokus Ethereum-aligned
+· Supporting Dataset: Phase 3 EV-006, Phase 7 SDK Rollkit, Phase 7 Major Integrations Rollkit
+
+Keputusan: Peluncuran Mocha Incentivized Testnet v2 (2023-03-28)
+· Trigger: Perlu upgrade protokol, uji coba Blobstream relayer, dan perluas partisipasi node sebelum mainnet
+· Evidence: Blog Mocha Testnet; Blobstream relayer testing; reward program diperluas (HIGH) [Phase 3 EV-007; https://blog.celestia.org/mocha-testnet/]
+· Decision: Meluncurkan testnet incentivized kedua (Mocha) dengan Blobstream integration testing
+· Immediate Result: Validasi Blobstream bridge ke Ethereum; peningkatan stabilitas jaringan
+· Long-term Impact: Memvalidasi cross-chain verification architecture sebelum mainnet
+· Supporting Dataset: Phase 3 EV-007, Phase 4 Blobstream, Phase 7 Integration Blobstream
+
+Keputusan: Peluncuran Lemon Pre-Mainnet Testnet (2023-09-19)
+· Trigger: Persiapan akhir sebelum mainnet dengan parameter genesis dan konfigurasi mirip production
+· Evidence: Blog Lemon Testnet; validasi konfigurasi genesis, token distribution, migrasi testnet ke mainnet (HIGH) [Phase 3 EV-008; https://blog.celestia.org/lemon-testnet/]
+· Decision: Meluncurkan testnet pre-mainnet (Lemon) sebagai dress rehearsal mainnet
+· Immediate Result: Validasi genesis config, token distribution mechanics, node migration process
+· Long-term Impact: Mengurangi risiko launch mainnet; memastikan smooth transition
+· Supporting Dataset: Phase 3 EV-008, Phase 3 EV-009
+
+Keputusan: Peluncuran Mainnet Celestia dan TGE (2023-10-31)
+· Trigger: Kesiapan teknis, komunitas, dan ekosistem untuk production launch
+· Evidence: Blog Mainnet Launch; block height 0; Genesis Drop 60M TIA (6% supply); staking aktif; governance on-chain (HIGH) [Phase 3 EV-009, EV-010; https://blog.celestia.org/celestia-mainnet-launch/; https://blog.celestia.org/tia-genesis-drop/]
+· Decision: Meluncurkan mainnet production dan Token Generation Event bersamaan dengan Genesis Drop
+· Immediate Result: Jaringan production live; TIA liquide dan transferable; staking reward dimulai; governance aktif
+· Long-term Impact: Memulai phase adoption rollup; price discovery pasar; tokenomics live; validator set economics aktif
+· Supporting Dataset: Phase 3 EV-009, EV-010, Phase 6 Token, Phase 8 Trading Markets
+
+Keputusan: Pembentukan Celestia Foundation di Zug, Switzerland (2023-10)
+· Trigger: Perlu entitas non-profit untuk mengelola treasury protokol, governance, grants, dan stewardship TIA terpisah dari Labs
+· Evidence: Blog Mainnet Launch menyebutkan Foundation; struktur dual entity (Labs for-profit, Foundation non-profit) (HIGH) [Phase 3 EV-011; Phase 2 Foundation entity; Phase 5 Treasury]
+· Decision: Mendirikan Celestia Foundation (Zug) sebagai steward protokol dan pengelola treasury
+· Immediate Result: Pemisahan core development (Labs) dari protocol governance/treasury (Foundation)
+· Long-term Impact: Model governance dual-entity; Foundation mengelola community pool, grants, fee switch decisions
+· Supporting Dataset: Phase 3 EV-011, Phase 2 Foundation, Phase 5 Treasury, Phase 6 Governance
+
+Keputusan: Deploy Blobstream Contracts ke Ethereum Mainnet (2023-10)
+· Trigger: Perlu verifikasi trust-minimized DA commitment di Ethereum untuk rollup EVM (Arbitrum Orbit, Polygon CDK, custom)
+· Evidence: Blobstream contracts repo; deploy Ethereum mainnet Oct 2023; relayer permissionless (HIGH) [Phase 3 EV-012; https://github.com/celestiaorg/blobstream-contracts; Phase 4 Blobstream; Phase 7 Integration Blobstream]
+· Decision: Mendeploy smart contract Blobstream di Ethereum mainnet untuk verifikasi header Celestia
+· Immediate Result: Rollup berbasis EVM dapat memverifikasi DA Celestia on-chain Ethereum
+· Long-term Impact: Membuka pasar rollup Ethereum-aligned; Blobstream menjadi critical infrastructure; dependency pada Ethereum finality dan gas costs
+· Supporting Dataset: Phase 3 EV-012, Phase 4 Blobstream, Phase 7 Integration Blobstream, Phase 7 External Dependencies Ethereum
+
+Keputusan: Announcement Integrasi Arbitrum Orbit + Celestia DA (2023-11)
+· Trigger: Ekspansi ekosistem ke rollup framework terbesar di Ethereum (Arbitrum Orbit)
+· Evidence: Blog Arbitrum Orbit + Celestia; partnership resmi dengan Offchain Labs (HIGH) [Phase 3 EV-013; https://blog.celestia.org/arbitrum-orbit-celestia/; Phase 7 Major Integrations Arbitrum Orbit]
+· Decision: Integrasi resmi dengan Arbitrum Orbit untuk menggunakan Celestia sebagai DA layer
+· Immediate Result: Orbit chains memperoleh opsi DA modular; validasi produk pasar untuk Celestia DA
+· Long-term Impact: Menarik developer Arbitrum ecosystem; menempatkan Celestia sebagai DA alternatif untuk EigenDA di Ethereum rollup stack
+· Supporting Dataset: Phase 3 EV-013, Phase 7 Major Integrations Arbitrum Orbit, Phase 8 Competitor Landscape EigenDA
+
+Keputusan: Announcement Integrasi Starknet + Celestia DA (2023-11)
+· Trigger: Validasi arsitektur modular untuk ZK-rollup besar; ekspansi ke non-EVM execution environment
+· Evidence: Blog Starknet + Celestia; ZK-rollup pertama mengadopsi Celestia DA (HIGH) [Phase 3 EV-014; https://blog.celestia.org/starknet-celestia/; Phase 7 Major Integrations Starknet]
+· Decision: Integrasi dengan Starknet untuk DA alternative/pelengkap Ethereum calldata
+· Immediate Result: Validasi Celestia DA untuk ZK stack; memperluas narrative ke beyond EVM
+· Long-term Impact: Menunjukkan flexibility execution environment; menarik ZK builder lain
+· Supporting Dataset: Phase 3 EV-014, Phase 7 Major Integrations Starknet, Phase 4 Execution Environment
+
+Keputusan: Announcement Integrasi Polygon CDK + Celestia DA (2023-12)
+· Trigger: Ekspansi ke ekosistem Polygon CDK yang berkembang; capture market share DA layer untuk app-chain
+· Evidence: Blog Polygon CDK + Celestia; CDK chains dapat menggunakan Celestia DA via Blobstream (HIGH) [Phase 3 EV-015; https://blog.celestia.org/polygon-cdk-celestia/; Phase 7 Major Integrations Polygon CDK]
+· Decision: Integrasi resmi dengan Polygon Chain Development Kit
+· Immediate Result: CDK chains memperoleh opsi DA modular; perluas jangkau ke developer Polygon
+· Long-term Impact: Multi-ecosystem DA provider strategy; tidak terikat single rollup stack
+· Supporting Dataset: Phase 3 EV-015, Phase 7 Major Integrations Polygon CDK
+
+Keputusan: Audit Keamanan oleh Informal Systems dan Trail of Bits (2023)
+· Trigger: Pre-mainnet security validation untuk consensus, light client, Blobstream, Celestia App, kriptografi
+· Evidence: Informal Systems audit consensus/light client/Blobstream; Trail of Bits audit Celestia App/Blobstream contracts/kriptografi; laporan diterbitkan (HIGH) [Phase 3 EV-016, EV-017; Phase 4 Audit History; https://informal.systems/audits/; https://github.com/trailofbits/publications/tree/master/audits]
+· Decision: Mengkontrak dua auditor top-tier untuk audit komprehensif pre-mainnet
+· Immediate Result: Temuan kritis diperbaiki sebelum launch; peningkatan kepercayaan keamanan
+· Long-term Impact: Membangun reputation security-first; standard untuk audit pasca-upgrade (Zellic, Sigma Prime 2024)
+· Supporting Dataset: Phase 3 EV-016, EV-017, Phase 4 Audit History, Phase 7 External Dependencies Auditors
+
+Keputusan: Proposal Governance On-Chain Pertama (2024-01)
+· Trigger: Aktivasi governance module pasca-mainnet; parameter chain perlu adjustment
+· Evidence: Docs Governance; proposal pertama processed on-chain (HIGH) [Phase 3 EV-018; https://docs.celestia.org/learn/governance; Phase 6 Governance]
+· Decision: Memproses proposal governance on-chain pertama untuk parameter chain/upgrade
+· Immediate Result: Mekanisme governance terbukti berfungsi; parameter chain diubah via vote
+· Long-term Impact: On-chain governance sebagai primary coordination mechanism; Foundation dan Labs sebagai proposer utama awal
+· Supporting Dataset: Phase 3 EV-018, Phase 6 Governance, Phase 2 DAO Celestia Governance
+
+Keputusan: Rilis Sovereign SDK oleh Sovereign Labs (2024-02)
+· Trigger: Perlu framework rollup sovereign berbasis Rust untuk complete tooling coverage (Golang Rollkit + Rust Sovereign SDK)
+· Evidence: Sovereign SDK GitHub release; framework rollup sovereign native Celestia DA tanpa settlement layer (MEDIUM) [Phase 3 EV-019; https://github.com/Sovereign-Labs/sovereign-sdk; Phase 7 SDK Sovereign SDK]
+· Decision: Mendukung/mengembangkan Sovereign SDK sebagai framework rollup sovereign alternatif
+· Immediate Result: Tooling lengkap untuk sovereign rollup tersedia (Rust-based); memperluas developer base
+· Long-term Impact: Dual-framework strategy (Rollkit Go + Sovereign SDK Rust); capture different developer preferences
+· Supporting Dataset: Phase 3 EV-019, Phase 7 SDK Sovereign SDK, Phase 2 Company Sovereign Labs
+
+Keputusan: Penelitian Quantum Gravity Bridge Trust-Minimized Bridging (2024-03)
+· Trigger: Perlu solusi bridging native tanpa validator set terpusat (trust-minimized) untuk cross-chain asset transfer
+· Evidence: Forum QGB research; desain light client verification cross-chain (MEDIUM) [Phase 3 EV-020; https://forum.celestia.org/t/quantum-gravity-bridge/; Phase 4 Quantum Gravity Bridge]
+· Decision: Memulai R&D Quantum Gravity Bridge untuk bridging generasi berikutnya
+· Immediate Result: Spesifikasi bridging trust-minimized dipublikasikan; R&D berlanjut
+· Long-term Impact: Jika berhasil, mengurangi dependency pada Blobstream/Ethereum untuk bridging; native interoperability
+· Supporting Dataset: Phase 3 EV-020, Phase 4 Quantum Gravity Bridge, Phase 7 Integration QGB
+
+Keputusan: Upgrade Protokol v2.0 Mayor Pertama (2024-06)
+· Trigger: Perlu peningkatan fee market, DAS efficiency, namespace versioning, kompatibilitas rollup baru
+· Evidence: Blog upgrade v2.0; completed via on-chain governance (HIGH) [Phase 3 EV-021; https://blog.celestia.org/; Phase 4 Technical Upgrade History]
+· Decision: Melakukan upgrade protokol mayor pertama pasca-mainnet via governance
+· Immediate Result: Peningkatan throughput blobspace, efisiensi light client, dukungan fitur rollup baru
+· Long-term Impact: Membuktikan upgrade coordination works; set precedent untuk upgrade berkala
+· Supporting Dataset: Phase 3 EV-021, Phase 4 Technical Upgrade History, Phase 6 Governance
+
+Keputusan: Deploy Rollup Produksi Pertama Menggunakan Celestia DA (2024-07)
+· Trigger: Adoption milestone - rollup nyata memposting data ke mainnet secara rutin
+· Evidence: Manta Pacific, Dymension RollApps, Rollkit/Sovereign SDK rollups mulai posting blob (HIGH) [Phase 3 EV-022; https://blog.celestia.org/category/ecosystem/; Phase 7 Major Integrations Manta/Dymension]
+· Decision: Mendukung dan memfasilitasi deploy rollup produksi di mainnet
+· Immediate Result: Penggunaan blobspace nyata bermula; fee revenue tercatat on-chain; metrik adoption real
+· Long-term Impact: Validasi product-market fit; revenue stream aktif; flywheel adoption rollup
+· Supporting Dataset: Phase 3 EV-022, Phase 7 Major Integrations, Phase 5 Revenue Model, Phase 8 Adoption Metrics
+
+Keputusan: Laporan Satu Tahun Mainnet dan Metrik Adopsi (2024-10)
+· Trigger: Transparansi dan accountability untuk komunitas, investor, dan stakeholder
+· Evidence: Blog one-year report; metrik blob, throughput, rollup count, staking, treasury (HIGH) [Phase 3 EV-023; https://blog.celestia.org/; Phase 8 Adoption Metrics]
+· Decision: Memublikasikan laporan tahunan ekosistem dan metrik adopsi
+· Immediate Result: Transparansi metrik; dasar roadmap tahun kedua
+· Long-term Impact: Membangun kepercayaan jangka panjang; data-driven decision making
+· Supporting Dataset: Phase 3 EV-023, Phase 8 Adoption Metrics
+
+Keputusan: Listing TIA di Centralized Exchange Utama (2024)
+· Trigger: Liquidity, price discovery, on-ramp fiat, akses pasar global untuk TIA
+· Evidence: Binance, Coinbase, Kraken, Bybit, OKX, KuCoin, Gate, MEXC, HTX, Bitget, Crypto.com listing (HIGH) [Phase 3 EV-024; Phase 8 Exchange Ecosystem; https://www.coingecko.com/en/coins/celestia]
+· Decision: Koordinasi listing di 11 major CEX global
+· Immediate Result: Liquidity TIA meningkat signifikan; price discovery terbuka; akses retail/institusi
+· Long-term Impact: CEX liquidity dominant vs DEX; market structure bergantung CEX; regulatory exposure
+· Supporting Dataset: Phase 3 EV-024, Phase 8 Exchange Ecosystem, Phase 8 Liquidity
+
+Keputusan: Deploy wTIA di Ethereum/Arbitrum oleh Pihak Ketiga (2024)
+· Trigger: Permintaan komunitas untuk TIA di DeFi EVM (lending, DEX, yield farming)
+· Evidence: wTIA ERC-20 deploy oleh third-party; tidak resmi Celestia Labs; liquidity di Uniswap V3 Arbitrum, Camelot (MEDIUM) [Phase 3 EV-025; Phase 6 wTIA; Phase 7 Integration wTIA; Phase 8 Liquidity DEX]
+· Decision: Mengizinkan/mendukung third-party wrapped TIA deployment (tidak resmi)
+· Immediate Result: TIA accessible di DeFi EVM; bridge liquidity terbentuk
+· Long-term Impact: Custody risk pada wTIA (third-party); Quantum Gravity Bridge sebagai solusi native jangka panjang
+· Supporting Dataset: Phase 3 EV-025, Phase 6 wTIA, Phase 7 Integration wTIA, Phase 4 Quantum Gravity Bridge
+
+Keputusan: Program Grant Celestia Foundation Sputnik Wave 1 (2024)
+· Trigger: Perlu mendanai builder ekosistem (tooling, rollup, light client, infra) untuk mempercepat adoption
+· Evidence: Forum governance grants program; dana treasury dialokasikan ke builder (HIGH) [Phase 3 EV-026; https://forum.celestia.org/c/grants/; Phase 5 Fundraising Mechanism Grants]
+· Decision: Meluncurkan program grant resmi (Sputnik Wave 1) dari treasury Foundation
+· Immediate Result: Dana treasury dialokasikan ke builder; percepatan tooling dan aplikasi
+· Long-term Impact: Flywheel ekosistem; dependency pada Foundation grants untuk early-stage projects
+· Supporting Dataset: Phase 3 EV-026, Phase 5 Fundraising Mechanism, Phase 7 Developer Ecosystem
+
+Keputusan: Diskusi Fee Switch / Value Accrual Mechanism di Governance (2024-11)
+· Trigger: Tekanan komunitas dan investor untuk value accrual TIA beyond staking inflation
+· Evidence: Forum governance discussion; proposal fee switch belum final (MEDIUM) [Phase 3 EV-027; https://forum.celestia.org/t/fee-switch-value-accrual/; Phase 5 Revenue Model Fee Switch]
+· Decision: Membuka diskusi dan proposal governance untuk fee switch (mengalihkan blobspace fee ke staker)
+· Immediate Result: Debat komunitas tentang tokenomics lanjutan; belum ada keputusan final
+· Long-term Impact: Critical untuk naratif investasi TIA; mempengaruhi staking participation dan token velocity
+· Supporting Dataset: Phase 3 EV-027, Phase 5 Revenue Model, Phase 6 Token Utility, Phase 8 Narrative Position
+
+Keputusan: Rilis Light Client WASM/Mobile SDK (2025-01)
+· Trigger: Perlu verifikasi trust-minimized DA langsung dari client ringan (browser, mobile) untuk mass adoption
+· Evidence: Light client WASM browser dan mobile SDK release; DAS sampling dari client side (HIGH) [Phase 3 EV-028; https://github.com/celestiaorg/celestia-node; Phase 7 Integration Light Client WASM]
+· Decision: Mengembangkan dan merilis light client WASM untuk browser dan mobile SDK
+· Immediate Result: Verifikasi DA trust-minimized tersedia untuk web/mobile app; memperluas light client adoption
+· Long-term Impact: Security model DAS diperkuat (lebih banyak light client); user experience trust-minimized tanpa full node
+· Supporting Dataset: Phase 3 EV-028, Phase 4 Security Model, Phase 7 Integration Light Client WASM
+
+Keputusan: Upgrade Protokol v3.0 "Ginger" (2025-03)
+· Trigger: Peningkatan DAS throughput, namespace versioning lanjutan, persiapan QGB integration
+· Evidence: Blog upgrade v3.0; completed via governance (HIGH) [Phase 3 EV-029; https://blog.celestia.org/; Phase 4 Technical Upgrade History]
+· Decision: Upgrade protokol mayor kedua dengan fokus scaling dan QGB preparation
+· Immediate Result: Kapasitas blobspace meningkat; fondasi teknis bridging trust-minimized siap
+· Long-term Impact: Scaling roadmap execution; QGB integration path cleared
+· Supporting Dataset: Phase 3 EV-029, Phase 4 Technical Upgrade History, Phase 4 Quantum Gravity Bridge
+
+Keputusan: Testnet Publik Quantum Gravity Bridge (2025-06, planned)
+· Trigger: Validasi desain bridging trust-minimized di lingkungan adversarial sebelum mainnet
+· Evidence: Blog/QGB forum; testnet publik planned Juni 2025 (MEDIUM) [Phase 3 EV-030; https://blog.celestia.org/; Phase 4 Quantum Gravity Bridge; Phase 7 Integration QGB]
+· Decision: Meluncurkan testnet publik QGB untuk pengujian bridging trust-minimized
+· Immediate Result: Validasi desain bridging; feedback keamanan dari komunitas
+· Long-term Impact: Jika sukses, native bridging tanpa trusted relayer/validator set; major differentiator vs competitors
+· Supporting Dataset: Phase 3 EV-030, Phase 4 Quantum Gravity Bridge, Phase 7 Integration QGB
+
+Evolution Pattern
+
+Perubahan Strategi: Dari Research Project ke Production DA Layer ke Modular

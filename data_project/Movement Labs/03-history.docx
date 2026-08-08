@@ -1,0 +1,477 @@
+PROJECT: Movement Labs
+
+Event ID
+
+EV-001
+
+Date
+
+2022
+
+Event Name
+
+Pendirian Movement Labs
+
+Event Type
+
+Founding
+
+Description
+
+Rushi Manche dan Cooper Scanlon mendirikan Movement Labs untuk membangun modular blockchain stack berbasis MoveVM.
+
+Participants
+
+Rushi Manche, Cooper Scanlon
+
+Location
+
+AS
+
+Status
+
+Completed
+
+Immediate Result
+
+Terjadinya entitas Movement Labs sebagai pendiri protokol Movement SDK, M1, dan Movement Network.
+
+Sources
+
+https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+---
+
+Event ID
+
+EV-002
+
+Date
+
+2022
+
+Event Name
+
+Inkorporasi Movement Labs Inc. sebagai Delaware C-Corp
+
+Event Type
+
+Organization
+
+Description
+
+Movement Labs Inc. terdaftar sebagai Delaware C-Corp di Amerika Serikat menjadi entitas hukum pengembang protokol Movement.
+
+Participants
+
+Movement Labs Inc.
+
+Location
+
+Delaware, AS
+
+Status
+
+Completed
+
+Immediate Result
+
+Keberadaan legal entity untuk fundraising, pengembangan, dan operasi bisnis.
+
+Sources
+
+https://www.crunchbase.com/organization/movement-labs
+
+---
+
+Event ID
+
+EV-003
+
+Date
+
+2024
+
+Event Name
+
+Pembukaan repositori GitHub Movement Labs
+
+Event Type
+
+Infrastructure
+
+Description
+
+Organisasi GitHub movementlabsxyz dibuat untuk hosting kode sumber Movement SDK, MoveVM, MEVM, dan tooling terkait.
+
+Participants
+
+Movement Labs GitHub Organization
+
+Location
+
+GitHub (cloud)
+
+Status
+
+Completed
+
+Immediate Result
+
+Ketersediaan kode sumber terbuka bagi developer dan kontributor ekosistem.
+
+Sources
+
+https://github.com/movementlabsxyz
+
+---
+
+Event ID
+
+EV-004
+
+Date
+
+2024
+
+Event Name
+
+Peluncuran situs dokumentasi resmi docs.movementlabs.xyz
+
+Event Type
+
+Infrastructure
+
+Description
+
+Dokumentasi teknis resmi dipublikasikan di docs.movementlabs.xyz menyediakan panduan developer, API reference, dan spec untuk Movement SDK, MoveVM, MEVM, dan M1.
+
+Participants
+
+Movement Labs Documentation
+
+Location
+
+docs.movementlabs.xyz
+
+Status
+
+Completed
+
+Immediate Result
+
+Akses developer ke referensi teknis lengkap untuk membangun di atas Movement stack.
+
+Sources
+
+https://docs.movementlabs.xyz/
+
+---
+
+Event ID
+
+EV-005
+
+Date
+
+2024
+
+Event Name
+
+Pembentukan komunitas Discord resmi Movement Labs
+
+Event Type
+
+Community
+
+Description
+
+Server Discord resmi dibuka di discord.gg/movementlabs untuk koordinasi testnet, pengumuman, dukungan developer, dan diskusi governance.
+
+Participants
+
+Movement Labs Discord Community
+
+Location
+
+Discord
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Saluran komunikasi real-time bagi developer, validator, dan komunitas ekosistem.
+
+Sources
+
+https://discord.gg/movementlabs
+
+---
+
+Event ID
+
+EV-006
+
+Date
+
+2024
+
+Event Name
+
+Ronde pendanaan Series A sebesar $38 juta
+
+Event Type
+
+Funding
+
+Description
+
+Movement Labs mengumpulkan $38M dalam ronde Series A untuk mempercepat pengembangan Movement SDK, M1 L2, dan ekosistem Move-based modular blockchain.
+
+Participants
+
+Movement Labs Inc., Series A Investors (undisclosed)
+
+Location
+
+AS
+
+Status
+
+Completed
+
+Immediate Result
+
+Dana untuk ekspansi tim, pengembangan produk, dan pertumbuhan ekosistem.
+
+Sources
+
+https://www.crunchbase.com/organization/movement-labs
+
+---
+
+Event ID
+
+EV-007
+
+Date
+
+2024
+
+Event Name
+
+Pengumuman publik Movement Labs, Movement SDK, M1, Movement Network, MoveVM, dan MEVM
+
+Event Type
+
+Product
+
+Description
+
+Blog post resmi "Introducing Movement Labs: Building the Move-Based Modular Blockchain Stack" mempublikasikan visi, arsitektur, dan produk inti Movement Labs.
+
+Participants
+
+Movement Labs Inc., Rushi Manche, Cooper Scanlon
+
+Location
+
+blog.movementlabs.xyz
+
+Status
+
+Completed
+
+Immediate Result
+
+Transparansi publik mengenai roadmap teknis dan produk Movement Labs.
+
+Sources
+
+https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+---
+
+Event ID
+
+EV-008
+
+Date
+
+2024
+
+Event Name
+
+Rekrutmen pemimpin ekosistem dan operasi: Sami Kassab (Head of Growth), Arjun Krishan (Head of Ecosystem), Tanya Kumar (Head of Operations)
+
+Event Type
+
+Organization
+
+Description
+
+Tiga peran kepemimpinan kunci diisi untuk memimpin pertumbuhan ekosistem, program builder, dan operasional perusahaan.
+
+Participants
+
+Sami Kassab, Arjun Krishan, Tanya Kumar, Movement Labs Inc.
+
+Location
+
+AS (remote/distributed)
+
+Status
+
+Completed
+
+Immediate Result
+
+Perluasan kapasitas eksekusi go-to-market, developer relations, dan operasional skala perusahaan.
+
+Sources
+
+https://movementlabs.xyz/team
+
+---
+
+Event ID
+
+EV-009
+
+Date
+
+2024-07-30
+
+Event Name
+
+Peluncuran testnet publik MEVM "Parthenon"
+
+Event Type
+
+Launch
+
+Description
+
+Testnet Parthenon diluncurkan sebagai lingkungan pengujian publik untuk MoveVM, MEVM, dan tooling Movement SDK sebelum mainnet M1.
+
+Participants
+
+Movement Labs Inc., Parthenon Testnet, Movement Testnet Explorer
+
+Location
+
+Testnet (cloud), explorer.testnet.movementlabs.xyz
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Developer dapat menguji kompatibilitas EVM di MoveVM, men-deploy kontrak Solidity, dan memvalidasi performa parallel execution.
+
+Sources
+
+https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/
+
+---
+
+Event ID
+
+EV-010
+
+Date
+
+2024
+
+Event Name
+
+Pengumunan rencana integrasi Data Availability layer: Celestia, Polygon Avail, EigenDA
+
+Event Type
+
+Partnership
+
+Description
+
+Movement Labs mengumumkan rencana integrasi modular DA layer Celestia, Avail, dan EigenDA untuk Movement Network dan M1 guna memisahkan data availability dari eksekusi.
+
+Participants
+
+Movement Labs Inc., Celestia, Polygon Avail, EigenDA
+
+Location
+
+blog.movementlabs.xyz
+
+Status
+
+Ongoing (planned)
+
+Immediate Result
+
+Penetapan arah arsitektur modular dengan multiple DA layer options untuk rollup Movement.
+
+Sources
+
+https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+---
+
+### KELOMPOK PER TAHUN
+
+#### 2022
+- EV-001: Pendirian Movement Labs
+- EV-002: Inkorporasi Movement Labs Inc. sebagai Delaware C-Corp
+
+#### 2024
+- EV-003: Pembukaan repositori GitHub Movement Labs
+- EV-004: Peluncuran situs dokumentasi resmi docs.movementlabs.xyz
+- EV-005: Pembentukan komunitas Discord resmi Movement Labs
+- EV-006: Ronde pendanaan Series A sebesar $38 juta
+- EV-007: Pengumuman publik Movement Labs, Movement SDK, M1, Movement Network, MoveVM, dan MEVM
+- EV-008: Rekrutmen pemimpin ekosistem dan operasi
+- EV-009: Peluncuran testnet publik MEVM "Parthenon" (2024-07-30)
+- EV-010: Pengumunan rencana integrasi Data Availability layer
+
+---
+
+### RINGKASAN
+
+Total Events: 10
+
+Founding: 1
+Funding: 1
+Launch: 1
+Technology: 0
+Governance: 0
+Security: 0
+Legal: 0
+Regulation: 0
+Partnership: 1
+Integration: 0
+Token: 0
+Market: 0
+Organization: 3
+Infrastructure: 2
+Community: 1
+Product: 1
+Ecosystem: 0
+Other: 0
+
+---
+
+### Open Threads
+
+- Tanggal pasti inkorporasi Delaware (bulan/hari) — Crunchbase hanya menunjukkan tahun 2022
+- Tanggal pasti pembukaan GitHub organization, docs site, dan Discord — hanya diketahui tahun 2024
+- Tanggal pasti pengumuman blog "Introducing Movement Labs" — hanya diketahui tahun 2024
+- Tanggal pasti rekrutmen Sami Kassab, Arjun Krishan, Tanya Kumar — hanya diketahui tahun 2024
+- Nama investor Series A individu dan alokasi masing-masing — tidak dipublikasikan resmi
+- Status integrasi DA layer (Celestia, Avail, EigenDA) — apakah sudah live di testnet Parthenon atau masih planned
+- Tanggal target mainnet launch M1 — belum diumumkan
+- Jadwal TGE token MOVE — belum diumumkan
+- Apakah akan dibentuk Movement Foundation terpisah (mirip Aptos/Sui Foundation) — belum dikonfirmasi
+- Status audit smart contract MEVM/M1 — belum ada laporan audit publik

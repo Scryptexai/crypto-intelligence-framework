@@ -1,0 +1,282 @@
+PROJECT: MegaETH
+
+## Core Insights
+
+Insight 1: Proyek Layer 2 dengan eksekusi kustom proprietary di atas OP Stack
+Explanation: MegaETH mengadopsi OP Stack sebagai fondasi modular (consensus, derivation, settlement, fault proof) namun mengganti Execution Layer sepenuhnya dengan Custom Execution Client (Real-time Engine) closed source untuk mengejar target 100k+ TPS dan sub-second latency【Phase 4 — System Architecture】【Phase 4 — Core Components】【Phase 4 — Execution Environment】
+Supporting Dataset: Phase 4 Technology, Phase 3 EV-011
+Confidence: HIGH
+
+Insight 2: Seluruh tokenomics, governance, dan struktur legal tersembunyi (opacity by design)
+Explanation: Tidak ada token contract, tidak ada whitepaper tokenomics, tidak ada DAO/Foundation, yurisdiksi entitas tidak diungkapkan, deal investor (DragonFly, Figment) tanpa jumlah/valuasi/struktur, treasury tidak transparan【Phase 1 — Foundation】【Phase 2 — Entity】【Phase 5 — Financial】【Phase 6 — Token】【Phase 6 — Governance】
+Supporting Dataset: Phase 1 Foundation, Phase 2 Entity, Phase 5 Financial, Phase 6 Token
+Confidence: HIGH
+
+Insight 3: Testnet live tanpa insentif ekonomi dan tanpa metrik adopsi publik
+Explanation: Public testnet diluncurkan 27 Juni 2024 dengan sequencer terpusat, explorer, faucet, RPC, bridge standar ke Sepolia — namun tidak ada points program, airdrop criteria, grant, hackathon, atau dashboard metrik (tx, address, TVL, DAU) yang dipublikasikan【Phase 3 — EV-007】【Phase 3 — EV-008】【Phase 3 — EV-009】【Phase 7 — Applications】【Phase 7 — Developer Ecosystem】【Phase 8 — Adoption Metrics】
+Supporting Dataset: Phase 3 History, Phase 7 Ecosystem, Phase 8 Market
+Confidence: HIGH
+
+Insight 4: Ketergantungan kritis pada dua dependency eksternal: OP Stack (upstream) dan EigenLayer (planned)
+Explanation: OP Stack bersifat Critical untuk consensus/derivation/settlement/fault proof; EigenLayer direncanakan Critical/High untuk DA (EigenDA) dan Economic Security (Restaking/AVS) — keduanya third-party protocol dengan timeline dan risiko sendiri【Phase 4 — System Architecture】【Phase 7 — External Dependencies】【Phase 7 — Ecosystem Risks】
+Supporting Dataset: Phase 4 Technology, Phase 7 Ecosystem
+Confidence: HIGH
+
+Insight 5: Tim founding tiga orang (CEO/CTO/COO) mengontrol penuh keputusan tanpa governance formal
+Explanation: Li Ming (CEO), Lei Yang (CTO), Shuyao Kong (COO) sebagai co-founder MegaETH Labs membuat semua keputusan strategis (arsitektur, funding, launch, tokenomics) tanpa voting, proposal, DAO, atau Security Council yang transparan【Phase 2 — Entity】【Phase 6 — Governance】【Phase 7 — Governance Ecosystem】【Phase 9 — Governance Decision Pattern】
+Supporting Dataset: Phase 2 Entity, Phase 6 Token, Phase 7 Ecosystem, Phase 9 Behavioral
+Confidence: HIGH
+
+Insight 6: Narrative "Real-time Blockchain" mendahului bukti teknis terverifikasi independen
+Explanation: Branding "Real-time Ethereum", "100k+ TPS", "sub-second latency" dipromosikan agresif sejak 2023 — namun custom execution client closed source, tidak ada benchmark independen, tidak ada audit MegaETH-specific, performa belum terbukti di beban produksi nyata【Phase 1 — Main Products】【Phase 4 — Known Technical Limitations】【Phase 8 — Narrative Position】【Phase 8 — Open Threads】
+Supporting Dataset: Phase 1 Foundation, Phase 4 Technology, Phase 8 Market
+Confidence: HIGH
+
+Insight 7: Infrastructure sepenuhnya first-party dan cloud-provider-undisclosed
+Explanation: MegaETH Labs mengoperasikan sendiri sequencer, RPC, explorer, faucet, docs, indexer; Figment sebagai investor/potential infra partner; cloud provider (AWS/GCP/Azure/bare metal) tidak diungkapkan — menciptakan single point of failure dan vendor lock-in【Phase 4 — Core Components】【Phase 7 — Infrastructure Providers】【Phase 7 — Ecosystem Risks】
+Supporting Dataset: Phase 4 Technology, Phase 7 Ecosystem
+Confidence: HIGH
+
+Insight 8: Pre-TGE strategy mempertahankan fleksibilitas tokenomics penuh tapi menghilangkan alignment ekonomis
+Explanation: Belum ada TGE, supply/distribution/vesting/utility/governance semuanya "Planned" atau "tidak diketahui" — investor menunggu liquidity event, komunitas tidak ada stake, builder tidak ada insentif token【Phase 1 — Launch Date TGE】【Phase 6 — Token Information】【Phase 6 — Distribution】【Phase 6 — Vesting Schedule】【Phase 6 — TGE】【Phase 6 — Governance】
+Supporting Dataset: Phase 1 Foundation, Phase 6 Token
+Confidence: HIGH
+
+## Strategic Principles
+
+Principle 1: Modular Architecture Adoption — Gunakan stack modular matur (OP Stack) untuk lapisan non-diferensiasi, fokus engineering pada execution layer kustom
+Explanation: MegaETH mengadopsi OP Stack penuh (Op-Node, Op-Batcher, Op-Proposer, Op-Challenger, Contracts Bedrock) untuk consensus, derivation, settlement, fault proof, bridge — hanya mengganti Execution Client【Phase 4 — System Architecture】【Phase 4 — Core Components】【Phase 3 — EV-011】
+Evidence: 【Phase 4 — System Architecture】【Phase 4 — Core Components】【Phase 3 — EV-011】
+Supporting Dataset: Phase 4 Technology, Phase 3 History
+Confidence: HIGH
+
+Principle 2: Narrative-First Positioning — Bangun narasi pasar kuat ("Real-time Blockchain", "OP Stack + EigenLayer", "Modular Execution") sebelum detail teknis dan bukti performa lengkap tersedia
+Explanation: Blog perkenalan 2023, announcement testnet 2024, dan dokumentasi secara konsisten memposisikan MegaETH pada intersection narasi High-performance L2, OP Stack Superchain, EigenLayer Modular DA — tanpa benchmark independen【Phase 1 — Main Products】【Phase 8 — Narrative Position】【Phase 9 — Recurring Behavioral Pattern】
+Evidence: 【Phase 1 — Main Products】【Phase 8 — Narrative Position】【Phase 9 — Recurring Behavioral Pattern Pola 1】
+Supporting Dataset: Phase 1 Foundation, Phase 8 Market, Phase 9 Behavioral
+Confidence: HIGH
+
+Principle 3: Closed Core, Open Periphery — Lindungi IP/optimisasi inti (Custom Execution Client) sebagai closed source, buka peripheral infrastructure (Explorer, Faucet, Docs, RPC, OP Stack components) untuk developer onboarding
+Explanation: Execution Client proprietary binary; Explorer/Faucet/Docs/RPC publik; OP Stack components open source upstream【Phase 4 — Core Components】【Phase 4 — Known Technical Limitations】【Phase 7 — Applications】【Phase 7 — Developer Ecosystem】
+Evidence: 【Phase 4 — Core Components】【Phase 4 — Known Technical Limitations】【Phase 7 — Applications】【Phase 7 — Developer Ecosystem】
+Supporting Dataset: Phase 4 Technology, Phase 7 Ecosystem
+Confidence: HIGH
+
+Principle 4: Investor Signaling Without Financial Transparency — Gunakan nama investor tier-1 (DragonFly, Figment) sebagai social proof, tapi jaga kerahasiaan deal terms, amount, valuation, token warrant
+Explanation: Announcement funding hanya nama investor; tidak ada jumlah, valuasi, struktur SAFE/equity/token warrant; treasury opacity total【Phase 3 — EV-003】【Phase 5 — Funding History】【Phase 5 — Financial Risk】【Phase 6 — Major Token Events】
+Evidence: 【Phase 3 — EV-003】【Phase 5 — Funding History】【Phase 5 — Financial Risk】【Phase 6 — Major Token Events】
+Supporting Dataset: Phase 3 History, Phase 5 Financial, Phase 6 Token
+Confidence: HIGH
+
+Principle 5: Centralized Launch for Speed — Terima centralisasi sequencer, permissioned fault proof, first-party infra untuk mempercepat testnet launch; desentralisasi sebagai roadmap item tanpa timeline komitmen
+Explanation: Sequencer tunggal MegaETH Labs; Permissioned Dispute Game; semua infra first-party; roadmap desentralisasi "Planned" tanpa spec/timeline【Phase 4 — Core Components】【Phase 4 — Security Model】【Phase 7 — Ecosystem Risks】【Phase 9 — Risk Response Pattern Pola 2】
+Evidence: 【Phase 4 — Core Components】【Phase 4 — Security Model】【Phase 7 — Ecosystem Risks】【Phase 9 — Risk Response Pattern Pola 2】
+Supporting Dataset: Phase 4 Technology, Phase 7 Ecosystem, Phase 9 Behavioral
+Confidence: HIGH
+
+Principle 6: Regulatory Opacity as Flexibility — Sembunyikan yurisdiksi legal entity, tokenomics, governance structure untuk menjaga fleksibilitas struktur token issuance dan menghindari compliance burden early stage
+Explanation: Country "tidak diketahui"; tidak ada Foundation/DAO; tokenomics sepenuhnya unpublished; legal opinion tidak ada【Phase 1 — Foundation】【Phase 2 — Entity】【Phase 5 — Financial Risk】【Phase 6 — Open Threads】【Phase 9 — Risk Response Pattern Pola 5】
+Evidence: 【Phase 1 — Foundation】【Phase 2 — Entity】【Phase 5 — Financial Risk】【Phase 6 — Open Threads】【Phase 9 — Risk Response Pattern Pola 5】
+Supporting Dataset: Phase 1 Foundation, Phase 2 Entity, Phase 5 Financial, Phase 6 Token, Phase 9 Behavioral
+Confidence: HIGH
+
+## Success Factors
+
+Factor 1: Tim founding dengan background teknis kuat (CTO Lei Yang memimpin arsitektur custom execution) dan investor tier-1 validation (DragonFly, Figment)
+Explanation: Co-founder CTO memimpin pengembangan Real-time Engine; CEO produk/strategi; COO operasi; investor DragonFly/Figment memberikan capital + credibility + potential infra support【Phase 2 — Entity】【Phase 3 — EV-003】【Phase 9 — Decision Timeline】
+Evidence: 【Phase 2 — Entity】【Phase 3 — EV-003】【Phase 9 — Decision Timeline Keputusan: Pendirian...】
+Supporting Dataset: Phase 2 Entity, Phase 3 History, Phase 9 Behavioral
+Confidence: HIGH
+
+Factor 2: OP Stack adoption mengurangi engineering burden pada consensus/derivation/settlement/fault proof — tim fokus pada execution layer differentiation
+Explanation: Menggunakan komponen OP Stack yang matur, teraudit (Sherlock, Spearbit, OpenZeppelin, Trail of Bits upstream), dan terintegrasi dengan Ethereum L1【Phase 4 — Audit History】【Phase 7 — External Dependencies】【Phase 9 — Risk Response Pattern Pola 1】
+Evidence: 【Phase 4 — Audit History】【Phase 7 — External Dependencies】【Phase 9 — Risk Response Pattern Pola 1】
+Supporting Dataset: Phase 4 Technology, Phase 7 Ecosystem, Phase 9 Behavioral
+Confidence: HIGH
+
+Factor 3: Testnet launch on schedule (27 Juni 2024) dengan full stack: sequencer, explorer, faucet, RPC, bridge, docs — menunjukkan execution capability
+Explanation: EV-007, EV-008, EV-009 terlaksana bersamaan; developer dapat deploy kontrak, test bridge, benchmark performa【Phase 3 — EV-007】【Phase 3 — EV-008】【Phase 3 — EV-009】【Phase 4 — Current Technical Stack】
+Evidence: 【Phase 3 — EV-007】【Phase 3 — EV-008】【Phase 3 — EV-009】【Phase 4 — Current Technical Stack】
+Supporting Dataset: Phase 3 History, Phase 4 Technology
+Confidence: HIGH
+
+Factor 4: EVM full compatibility memastikan low friction untuk existing Ethereum developers dan tooling (Foundry, Hardhat, viem/optimism, ethers-optimism)
+Explanation: Custom Execution Client menargetkan EVM Shanghai/Cancun compatibility; standard OP Stack precompiles; tooling standar supported【Phase 4 — Execution Environment】【Phase 4 — Developer Framework】【Phase 7 — Developer Ecosystem】
+Evidence: 【Phase 4 — Execution Environment】【Phase 4 — Developer Framework】【Phase 7 — Developer Ecosystem】
+Supporting Dataset: Phase 4 Technology, Phase 7 Ecosystem
+Confidence: HIGH
+
+Factor 5: EigenLayer integration narrative menarik align dengan modular blockchain trend dan restaking capital — positioning untuk future DA cost reduction
+Explanation: Announcement EV-010; EigenLayer sebagai Critical/High dependency; narasi Modular DA + Economic Security【Phase 3 — EV-010】【Phase 7 — External Dependencies】【Phase 8 — Narrative Position】
+Evidence: 【Phase 3 — EV-010】【Phase 7 — External Dependencies】【Phase 8 — Narrative Position】
+Supporting Dataset: Phase 3 History, Phase 7 Ecosystem, Phase 8 Market
+Confidence: MEDIUM
+
+## Failure Factors
+
+Factor 1: Zero audit transparency untuk custom execution client dan deployment config — tidak ada laporan audit publik dari auditor ternama untuk MegaETH-specific code
+Explanation: Audit History "Tidak ada laporan audit keamanan publik... MegaETH-specific... belum dipublikasikan"; hanya upstream OP Stack audits【Phase 4 — Audit History】【Phase 9 — Technical Decision Pattern Pola 6】
+Evidence: 【Phase 4 — Audit History】【Phase 9 — Technical Decision Pattern Pola 6】
+Supporting Dataset: Phase 4 Technology, Phase 9 Behavioral
+Confidence: HIGH
+
+Factor 2: Custom Execution Client closed source mencegah verifikasi independen keamanan, determinisme, dan konsistensi EVM — trust assumption tinggi
+Explanation: Known Limitations "Custom Execution Client Closed Source — tidak dapat diverifikasi independen"; proprietary binary distributed to node operators【Phase 4 — Known Technical Limitations】【Phase 4 — Core Components】【Phase 9 — Technical Decision Pattern Pola 2】
+Evidence: 【Phase 4 — Known Technical Limitations】【Phase 4 — Core Components】【Phase 9 — Technical Decision Pattern Pola 2】
+Supporting Dataset: Phase 4 Technology, Phase 9 Behavioral
+Confidence: HIGH
+
+Factor 3: Tidak ada metrik adopsi publik (tx count, unique addresses, DAU, TVL, developer count) — tidak dapat memvalidasi product-market fit atau traction
+Explanation: Adoption Metrics seluruhnya "tidak diketahui"; testnet explorer tidak menampilkan statistik agregat; tidak ada dashboard analytics resmi【Phase 8 — Adoption Metrics】【Phase 7 — Applications】【Phase 8 — Ringkasan】
+Evidence: 【Phase 8 — Adoption Metrics】【Phase 7 — Applications】【Phase 8 — Ringkasan】
+Supporting Dataset: Phase 8 Market, Phase 7 Ecosystem
+Confidence: HIGH
+
+Factor 4: Tidak ada ecosystem incentives (grant, hackathon, points, airdrop) — risiko kekosongan aplikasi third-party pada mainnet launch
+Explanation: Developer Ecosystem "Grant Program: Tidak Diumumkan, Hackathon: Tidak Diumumkan"; Applications hanya 3 first-party infra apps【Phase 7 — Developer Ecosystem】【Phase 7 — Applications】【Phase 9 — Recurring Behavioral Pattern Pola 4】
+Evidence: 【Phase 7 — Developer Ecosystem】【Phase 7 — Applications】【Phase 9 — Recurring Behavioral Pattern Pola 4】
+Supporting Dataset: Phase 7 Ecosystem, Phase 9 Behavioral
+Confidence: HIGH
+
+Factor 5: Single sequencer centralization risk — censorship, MEV extraction, liveness dependency pada satu operator (MegaETH Labs) tanpa failover transparan
+Explanation: Ecosystem Risks "Single Sequencer Dependency Confirmed: Yes"; Security Model "Trusted Sequencer (Centralized)"; Known Limitations "Centralized Sequencer — Single point of failure"【Phase 7 — Ecosystem Risks】【Phase 4 — Security Model】【Phase 4 — Known Technical Limitations】
+Evidence: 【Phase 7 — Ecosystem Risks】【Phase 4 — Security Model】【Phase 4 — Known Technical Limitations】
+Supporting Dataset: Phase 7 Ecosystem, Phase 4 Technology
+Confidence: HIGH
+
+Factor 6: EigenDA integration execution risk — dependency pada third-party protocol (EigenLayer) yang sendiri belum fully battle-tested, tanpa fallback plan atau spec teknis publik
+Explanation: External Dependencies EigenLayer "Critical/High" status "Planned"; Ecosystem Risks "EigenDA Integration Execution Risk Confirmed: Yes"; Open Threads "Spesifikasi teknis... belum dipublikasikan"【Phase 7 — External Dependencies】【Phase 7 — Ecosystem Risks】【Phase 7 — Open Threads】
+Evidence: 【Phase 7 — External Dependencies】【Phase 7 — Ecosystem Risks】【Phase 7 — Open Threads】
+Supporting Dataset: Phase 7 Ecosystem
+Confidence: HIGH
+
+Factor 7: Treasury dan financial opacity total — tidak dapat assess runway, burn rate, financial health, atau investor token warrant exposure
+Explanation: Treasury seluruh field "tidak diungkap"; Funding History amount/valuation "tidak diungkap"; Financial Risk "Tidak dapat diverifikasi karena komposisi dan ukuran treasury tidak diungkapkan"【Phase 5 — Treasury】【Phase 5 — Funding History】【Phase 5 — Financial Risk】
+Evidence: 【Phase 5 — Treasury】【Phase 5 — Funding History】【Phase 5 — Financial Risk】
+Supporting Dataset: Phase 5 Financial
+Confidence: HIGH
+
+## Decision Framework
+
+Step 1: Observe — Identifikasi narrative trend dan technical gap di pasar (Real-time L2, Modular DA, Parallel EVM)
+Explanation: 2023 founding didasari visi "Real-time Ethereum" di intersection OP Stack + EigenLayer + High-performance narrative【Phase 3 — EV-001】【Phase 3 — EV-002】【Phase 8 — Narrative Position】【Phase 9 — Evolution Pattern】
+Evidence: 【Phase 3 — EV-001】【Phase 3 — EV-002】【Phase 8 — Narrative Position】【Phase 9 — Evolution Pattern】
+Supporting Dataset: Phase 3 History, Phase 8 Market, Phase 9 Behavioral
+Confidence: HIGH
+
+Step 2: Evaluate — Pilih OP Stack sebagai fondasi modular (build vs buy decision: buy consensus/derivation/settlement, build execution)
+Explanation: Finalisasi arsitektur EV-011: adopsi OP Stack components + custom execution environment; trade-off customization freedom vs speed/security inheritance【Phase 3 — EV-011】【Phase 4 — System Architecture】【Phase 9 — Strategic Trade-offs Trade-off 5】
+Evidence: 【Phase 3 — EV-011】【Phase 4 — System Architecture】【Phase 9 — Strategic Trade-offs Trade-off 5】
+Supporting Dataset: Phase 3 History, Phase 4 Technology, Phase 9 Behavioral
+Confidence: HIGH
+
+Step 3: Fund — Single Seed/Strategic round dari tier-1 VC (DragonFly, Figment) tanpa disclosure terms; no public/private sale, no grant, no revenue
+Explanation: EV-003 funding announcement nama investor only; Financial Dependencies hanya VC; Revenue Model 0 live, 4 planned【Phase 3 — EV-003】【Phase 5 — Funding History】【Phase 5 — Financial Dependencies】【Phase 5 — Revenue Model】
+Evidence: 【Phase 3 — EV-003】【Phase 5 — Funding History】【Phase 5 — Financial Dependencies】【Phase 5 — Revenue Model】
+Supporting Dataset: Phase 3 History, Phase 5 Financial
+Confidence: HIGH
+
+Step 4: Develop — Parallel track: (a) Custom Execution Client proprietary R&D (CTO-led), (b) OP Stack integration & testnet infra setup (team), (c) EigenLayer integration design (planned)
+Explanation: GitHub org, Docs, Community 2023; Custom Execution Client closed source; Testnet components built in-house【Phase 3 — EV-004】【Phase 3 — EV-005】【Phase 3 — EV-006】【Phase 4 — Core Components】【Phase 9 — Technical Decision Pattern Pola 1-3】
+Evidence: 【Phase 3 — EV-004】【Phase 3 — EV-005】【Phase 3 — EV-006】【Phase 4 — Core Components】【Phase 9 — Technical Decision Pattern Pola 1-3】
+Supporting Dataset: Phase 3 History, Phase 4 Technology, Phase 9 Behavioral
+Confidence: HIGH
+
+Step 5: Launch — Public Testnet 27 Juni 2024 dengan full first-party stack (Sequencer, Explorer, Faucet, RPC, Bridge, Docs) — no incentives, no third-party apps
+Explanation: EV-007, EV-008, EV-009 simultaneous launch; centralized sequencer; permissioned fault proof; generic EVM wallet support only【Phase 3 — EV-007】【Phase 3 — EV-008】【Phase 3 — EV-009】【Phase 7 — Applications】【Phase 7 — Wallet Ecosystem】
+Evidence: 【Phase 3 — EV-007】【Phase 3 — EV-008】【Phase 3 — EV-009】【Phase 7 — Applications】【Phase 7 — Wallet Ecosystem】
+Supporting Dataset: Phase 3 History, Phase 7 Ecosystem
+Confidence: HIGH
+
+Step 6: Govern — Founder-controlled decision making; OP Stack default Security Council (undisclosed address/signers); Token governance planned but undefined; No DAO/Foundation
+Explanation: Phase 2 no DAO/Foundation; Phase 6 Governance Pre-Governance; Phase 7 Security Council implicit via OP Stack defaults; Phase 9 Governance Decision Pattern Pola 1-3【Phase 2 — Entity】【Phase 6 — Governance】【Phase 7 — Governance Ecosystem】【Phase 9 — Governance Decision Pattern Pola 1-3】
+Evidence: 【Phase 2 — Entity】【Phase 6 — Governance】【Phase 7 — Governance Ecosystem】【Phase 9 — Governance Decision Pattern Pola 1-3】
+Supporting Dataset: Phase 2 Entity, Phase 6 Token, Phase 7 Ecosystem, Phase 9 Behavioral
+Confidence: HIGH
+
+Step 7: Iterate — Mainnet launch & TGE timeline undisclosed; EigenDA integration execution; Decentralized sequencer R&D; Tokenomics design; Audit program — semua "Planned" tanpa komitmen tanggal
+Explanation: Phase 1 Launch Date Mainnet/TGE n/a; Phase 3 EV-010 Planned; Phase 4 Known Limitations; Phase 6 Token all "tidak diketahui/belum dipublikasikan"【Phase 1 — Foundation】【Phase 3 — EV-010】【Phase 4 — Known Technical Limitations】【Phase 6 — Token】
+Evidence: 【Phase 1 — Foundation】【Phase 3 — EV-010】【Phase 4 — Known Technical Limitations】【Phase 6 — Token】
+Supporting Dataset: Phase 1 Foundation, Phase 3 History, Phase 4 Technology, Phase 6 Token
+Confidence: HIGH
+
+## Reusable Playbook
+
+Playbook 1: Modular Stack Adoption untuk L2 Development — Adopsi OP Stack (atau stack modular serupa) untuk consensus/derivation/settlement/fault proof, fokus R&D pada execution layer differentiation
+Explanation: MegaETH menunjukkan OP Stack components (Op-Node, Op-Batcher, Op-Proposer, Op-Challenger, Contracts Bedrock) dapat di-reuse sebagai black box, mengurangi engineering burden ~70% rollup logic【Phase 4 — System Architecture】【Phase 4 — Core Components】【Phase 9 — Technical Decision Pattern Pola 1】
+Evidence: 【Phase 4 — System Architecture】【Phase 4 — Core Components】【Phase 9 — Technical Decision Pattern Pola 1】
+Supporting Dataset: Phase 4 Technology, Phase 9 Behavioral
+Confidence: HIGH
+Applicable When: Membangun L2/EVM rollup baru dengan resource terbatas; butuh security inheritance dan Ethereum alignment; punya execution layer innovation unik
+
+Playbook 2: Narrative-First Positioning di Intersection Multiple Trends — Kombinasikan 3-4 narasi trending (High-performance, Modular, Restaking, OP Stack) untuk mindshare investor/builder sebelum mainnet
+Explanation: MegaETH positioning: "Real-time Blockchain" (High-perf) + "OP Stack Ecosystem" (Superchain) + "Modular Execution Layer" (Custom) + "EigenLayer Restaking" (DA+Security)【Phase 8 — Narrative Position】【Phase 9 — Strategic Principles Principle 2】【Phase 9 — Recurring Behavioral Pattern Pola 1】
+Evidence: 【Phase 8 — Narrative Position】【Phase 9 — Strategic Principles Principle 2】【Phase 9 — Recurring Behavioral Pattern Pola 1】
+Supporting Dataset: Phase 8 Market, Phase 9 Behavioral
+Confidence: HIGH
+Applicable When: Early stage project butuh investor attention dan developer mindshare; dapat deliver technical differentiation pada salah satu narasi
+
+Playbook 3: Closed Core Execution Client untuk Performance Moat — Jaga execution engine proprietary sebagai competitive advantage, buka peripheral infra untuk developer adoption
+Explanation: Custom Execution Client closed source (Real-time Engine); Explorer/Faucet/Docs/RPC open; Standard tooling compatibility (Foundry, Hardhat, viem)【Phase 4 — Core Components】【Phase 4 — Known Technical Limitations】【Phase 7 — Applications】【Phase 7 — Developer Ecosystem】【Phase 9 — Recurring Behavioral Pattern Pola 2】
+Evidence: 【Phase 4 — Core Components】【Phase 4 — Known Technical Limitations】【Phase 7 — Applications】【Phase 7 — Developer Ecosystem】【Phase 9 — Recurring Behavioral Pattern Pola 2】
+Supporting Dataset: Phase 4 Technology, Phase 7 Ecosystem, Phase 9 Behavioral
+Confidence: HIGH
+Applicable When: Performance innovation adalah core differentiator; tim memiliki deep systems expertise; siap accept trust assumption trade-off
+
+Playbook 4: Tier-1 VC Signaling Without Financial Disclosure — Announce investor names untuk credibility, dengan hold deal terms confidential untuk negotiation leverage
+Explanation: DragonFly, Figment announced EV-003; amount/valuation/structure undisclosed; token warrant assumption standard industri【Phase 3 — EV-003】【Phase 5 — Funding History】【Phase 5 — Financial Risk】【Phase 9 — Financial Decision Pattern Pola 1】
+Evidence: 【Phase 3 — EV-003】【Phase 5 — Funding History】【Phase 5 — Financial Risk】【Phase 9 — Financial Decision Pattern Pola 1】
+Supporting Dataset: Phase 3 History, Phase 5 Financial, Phase 9 Behavioral
+Confidence: MEDIUM
+Applicable When: Pre-revenue, pre-token, butuh capital + credibility; investor tier-1 memberikan signal value > capital amount
+
+Playbook 5: Centralized Testnet Launch untuk Speed — Launch testnet dengan sequencer tunggal, permissioned fault proof, first-party infra; desentralisasi sebagai post-mainnet roadmap
+Explanation: EV-007/008/009 testnet launch centralized; Security Model Trusted Sequencer; Permissioned Game; Roadmap desentralisasi "Planned" no timeline【Phase 3 — EV-007】【Phase 4 — Security Model】【Phase 7 — Ecosystem Risks】【Phase 9 — Risk Response Pattern Pola 2】
+Evidence: 【Phase 3 — EV-007】【Phase 4 — Security Model】【Phase 7 — Ecosystem Risks】【Phase 9 — Risk Response Pattern Pola 2】
+Supporting Dataset: Phase 3 History, Phase 4 Technology, Phase 7 Ecosystem, Phase 9 Behavioral
+Confidence: HIGH
+Applicable When: Technical validation priority > decentralization purity; tim kecil; butuh real-world performance data sebelum invest desentralisasi R&D
+
+Playbook 6: Pre-TGE Opacity untuk Tokenomics Flexibility — Delay TGE sepenuhnya, publish zero tokenomics detail, maintain full design freedom until regulatory/mainnet clarity
+Explanation: Token Information Pre-TGE; Supply/Distribution/Vesting/TGE/Utility/Governance all "tidak diketahui/belum dipublikasikan"; Regulatory Opacity Principle【Phase 1 — Foundation】【Phase 6 — Token】【Phase 9 — Strategic Principles Principle 6】【Phase 9 — Strategic Trade-offs Trade-off 4】
+Evidence: 【Phase 1 — Foundation】【Phase 6 — Token】【Phase 9 — Strategic Principles Principle 6】【Phase 9 — Strategic Trade-offs Trade-off 4】
+Supporting Dataset: Phase 1 Foundation, Phase 6 Token, Phase 9 Behavioral
+Confidence: HIGH
+Applicable When: Regulatory uncertainty tinggi; token design belum final; butuh avoid premature community expectation dan investor liquidity pressure
+
+## Anti-patterns
+
+Anti-pattern 1: Over-centralization pada critical path (Sequencer, Fault Proof, Infra, Governance) tanpa timeline desentralisasi yang komitmen
+Explanation: Sequencer tunggal MegaETH Labs; Permissioned Dispute Game (whitelist proposer/challenger); Semua infra first-party; Founder-controlled governance; Security Council address undisclosed【Phase 4 — Core Components】【Phase 4 — Security Model】【Phase 7 — Infrastructure Providers】【Phase 7 — Governance Ecosystem】【Phase 9 — Governance Decision Pattern Pola 1,4】【Phase 9 — Ecosystem Risks】
+Evidence: 【Phase 4 — Core Components】【Phase 4 — Security Model】【Phase 7 — Infrastructure Providers】【Phase 7 — Governance Ecosystem】【Phase 9 — Governance Decision Pattern Pola 1,4】【Phase 9 — Ecosystem Risks】
+Supporting Dataset: Phase 4 Technology, Phase 7 Ecosystem, Phase 9 Behavioral
+Confidence: HIGH
+Why Avoid: Menciptakan single point of failure, censorship risk, MEV extraction by operator, trust assumption tinggi, regulatory risk (centralized entity), community trust erosion
+
+Anti-pattern 2: Closed Source Core Component (Execution Client) tanpa audit publik dan verifikasi independen
+Explanation: Custom Execution Client proprietary binary; 0 MegaETH-specific audit; tidak dapat diverifikasi determinisme/keamanan/konsistensi EVM【Phase 4 — Core Components】【Phase 4 — Known Technical Limitations】【Phase 4 — Audit History】【Phase 9 — Technical Decision Pattern Pola 6】
+Evidence: 【Phase 4 — Core Components】【Phase 4 — Known Technical Limitations】【Phase 4 — Audit History】【Phase 9 — Technical Decision Pattern Pola 6】
+Supporting Dataset: Phase 4 Technology, Phase 9 Behavioral
+Confidence: HIGH
+Why Avoid: Blokir kontribusi komunitas, mencegah security research, menciptakan "trust me" dependency, sulit audit nanti (codebase besar), investor/institusi tidak bisa due diligence teknis
+
+Anti-pattern 3: Premature Narrative Scaling tanpa Technical Proof — Marketing "100k TPS, sub-second latency" sebelum benchmark independen, audit, atau production load test
+Explanation: Narrative "Real-time Blockchain" sejak 2023; Known Limitations "Performa belum terbukti di beban produksi nyata"; No independent benchmark【Phase 1 — Main Products】【Phase 4 — Known Technical Limitations】【Phase 8 — Narrative Position】【Phase 8 — Open Threads】【Phase 9 — Recurring Behavioral Pattern Pola 1】
+Evidence: 【Phase 1 — Main Products】【Phase 4 — Known Technical Limitations】【Phase 8 — Narrative Position】【Phase 8 — Open Threads】【Phase 9 — Recurring Behavioral Pattern Pola 1】
+Supporting Dataset: Phase 1 Foundation, Phase 4 Technology, Phase 8 Market, Phase 9 Behavioral
+Confidence: HIGH
+Why Avoid: Credibility gap saat mainnet launch; developer/investor skepticism; competitor dengan proof akan menang mindshare; regulatory scrutiny pada exaggerated claims
+
+Anti-pattern 4: Zero Ecosystem Incentives pada Testnet Phase — Launch testnet tanpa points, grant, hackathon, airdrop criteria — resulting in low organic adoption
+Explanation: Testnet EV-007 live tanpa insentif; Developer Ecosystem no grant/hackathon; Applications 0 third-party; Adoption Metrics all unknown【Phase 3 — EV-007】【Phase 7 — Developer Ecosystem】【Phase 7 — Applications】【Phase 8 — Adoption Metrics】【Phase 9 — Recurring Behavioral Pattern Pola 4】
+Evidence: 【Phase 3 — EV-007】【Phase 7 — Developer Ecosystem】【Phase 7 — Applications】【Phase 8 — Adoption Metrics】【Phase 9 — Recurring Behavioral Pattern Pola 4】
+Supporting Dataset: Phase 3 History, Phase 7 Ecosystem, Phase 8 Market, Phase 9 Behavioral
+Confidence: HIGH
+Why Avoid: Tidak ada builder traction; ghost chain risk pada mainnet; tidak ada feedback loop produk; investor metrics kosong; community tidak terbentuk organik
+
+Anti-pattern 5: Critical Dependency Announcement tanpa Technical Specification — Announce EigenDA integration sebagai narasi utama tanpa contract addresses, payment flows, slashing conditions, fallback plan
+Explanation: EV-010 EigenLayer announcement; External Dependencies "Planned" no spec; Ecosystem Risks "Execution Risk"; Open Threads "Spesifikasi teknis belum dipublikasikan"【Phase 3 — EV-010】【Phase 7 — External Dependencies】【Phase 7 — Ecosystem Risks】【Phase 7 — Open Threads】【Phase 9 — Recurring Behavioral Pattern Pola 5】
+Evidence: 【Phase 3 — EV-010】【Phase 7 — External Dependencies】【Phase 7 — Ecosystem Risks】【Phase 7 — Open Threads】【Phase 9 — Recurring Behavioral Pattern Pola 5】
+Supporting Dataset: Phase 3 History, Phase 7 Ecosystem, Phase 9 Behavioral
+Confidence: HIGH
+Why Avoid: Timeline mainnet bergantung third-party; technical debt tersembunyi; investor due diligence

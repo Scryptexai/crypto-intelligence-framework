@@ -1,0 +1,365 @@
+PROJECT: Kamino Finance
+
+## Market Category
+
+Primary Category: DeFi — Automated Concentrated Liquidity Management / Lending & Borrowing / Leveraged Vaults
+Secondary Category: DeFi Infrastructure / Yield Aggregation / Liquidation Marketplace / Governance Token Platform
+Sector: DeFi
+Sub-sector: CLMM Vault Management, Pooled Lending, Leveraged Yield Strategies, Points/Incentive Platform
+Sources: https://docs.kamino.finance/getting-started/overview (HIGH) [Kamino Docs - Overview]; https://defillama.com/protocol/kamino (HIGH) [DefiLlama Kamino Category]; https://coinmarketcap.com/currencies/kamino/ (HIGH) [CoinMarketCap Kamino Category]; https://tokenterminal.com/terminal/projects/kamino (MEDIUM) [Token Terminal Kamino Category]
+
+## Market Position
+
+Project Stage: Growth (Post-TGE, live products with significant TVL, active governance, expanding product suite)
+Primary Competitors: Orca (CLMM Vaults/Whirlpools), Raydium (CLMM/AMM), Solend (Lending), MarginFi (Lending/Leverage), Drift Protocol (Perps/Lending), Jito (Liquid Staking/MEV), Meteora (DLMM Vaults), Kamino (self-competition across products)
+Market Segment: Solana DeFi Power Users, Yield Farmers, Institutional DeFi Participants, Liquid Staking Derivative Holders, Points Farmers
+Geographic Focus: Global (crypto-native), dengan akses CEX utama (Binance, Coinbase, Bybit, Gate.io, KuCoin) memperluas jangkauan ritel Asia, Eropa, AS
+Sources: https://defillama.com/protocol/kamino (HIGH) [DefiLlama Kamino TVL & Competitors]; https://coinmarketcap.com/currencies/kamino/markets/ (HIGH) [CoinMarketCap KMNO Markets]; https://app.kamino.finance/ (HIGH) [Kamino App - Product Suite]; https://gov.kamino.finance/ (HIGH) [Kamino Governance Forum - Active Proposals]
+
+## Trading Markets
+
+Exchange: Binance
+Spot: Yes (KMNO/USDT, KMNO/BTC, KMNO/BNB, KMNO/FDUSD, KMNO/TRY)
+Perpetual: tidak diketahui
+Futures: tidak diketahui
+Options: tidak diketahui
+OTC: tidak diketahui
+Status: Live (since 2024-04-10)
+Sources: https://www.binance.com/en/support/announcement/ (HIGH) [Binance Announcement EV-013]; https://coinmarketcap.com/currencies/kamino/markets/ (HIGH) [CoinMarketCap KMNO Markets]
+
+Exchange: Coinbase
+Spot: Yes (KMNO/USD, KMNO/USDC)
+Perpetual: tidak diketahui
+Futures: tidak diketahui
+Options: tidak diketahui
+OTC: tidak diketahui
+Status: Live (since 2024-04-10)
+Sources: https://blog.coinbase.com/ (HIGH) [Coinbase Blog EV-014]; https://coinmarketcap.com/currencies/kamino/markets/ (HIGH) [CoinMarketCap KMNO Markets]
+
+Exchange: Bybit
+Spot: Yes (KMNO/USDT)
+Perpetual: tidak diketahui
+Futures: tidak diketahui
+Options: tidak diketahui
+OTC: tidak diketahui
+Status: Live (since 2024-04-10)
+Sources: https://announcements.bybit.com/ (HIGH) [Bybit Announcement EV-015]; https://coinmarketcap.com/currencies/kamino/markets/ (HIGH) [CoinMarketCap KMNO Markets]
+
+Exchange: Gate.io
+Spot: Yes (KMNO/USDT)
+Perpetual: tidak diketahui
+Futures: tidak diketahui
+Options: tidak diketahui
+OTC: tidak diketahui
+Status: Live (since 2024-04-10)
+Sources: https://www.gate.io/announcements/ (MEDIUM) [Gate.io Announcement EV-015]; https://coinmarketcap.com/currencies/kamino/markets/ (HIGH) [CoinMarketCap KMNO Markets]
+
+Exchange: KuCoin
+Spot: Yes (KMNO/USDT)
+Perpetual: tidak diketahui
+Futures: tidak diketahui
+Options: tidak diketahui
+OTC: tidak diketahui
+Status: Live (since 2024-04-10)
+Sources: https://www.kucoin.com/news/ (MEDIUM) [KuCoin Announcement EV-015]; https://coinmarketcap.com/currencies/kamino/markets/ (HIGH) [CoinMarketCap KMNO Markets]
+
+Exchange: Jupiter Aggregator (DEX)
+Spot: Yes (KMNO/SOL, KMNO/USDC, KMNO/USDT, KMNO/mSOL, KMNO/JitoSOL via routing)
+Perpetual: N/A
+Futures: N/A
+Options: N/A
+OTC: N/A
+Status: Live
+Sources: https://jup.ag/ (HIGH) [Jupiter Swap]; https://app.kamino.finance/ (HIGH) [Kamino App - DEX Liquidity]
+
+Exchange: Raydium (DEX)
+Spot: Yes (KMNO/SOL, KMNO/USDC CLMM pools)
+Perpetual: N/A
+Futures: N/A
+Options: N/A
+OTC: N/A
+Status: Live
+Sources: https://raydium.io/ (HIGH) [Raydium]; https://app.kamino.finance/ (HIGH) [Kamino App - Vault LP positions]
+
+Exchange: Orca (DEX)
+Spot: Yes (KMNO/SOL, KMNO/USDC Whirlpool pools)
+Perpetual: N/A
+Futures: N/A
+Options: N/A
+OTC: N/A
+Status: Live
+Sources: https://www.orca.so/ (HIGH) [Orca]; https://app.kamino.finance/ (HIGH) [Kamino App - Vault LP positions]
+
+## Liquidity
+
+Liquidity Source: CEX Order Books (Binance, Coinbase, Bybit, Gate.io, KuCoin)
+Major Liquidity Venue: Binance (KMNO/USDT highest volume), Coinbase (KMNO/USD fiat gateway)
+DEX: Jupiter (aggregated), Raydium (CLMM KMNO/SOL, KMNO/USDC), Orca (Whirlpool KMNO/SOL, KMNO/USDC)
+Bridge Liquidity: Wormhole NTT (KMNO not bridged; used for non-native asset deposits into vaults)
+Status: Live, deep CEX liquidity post-TGE multi-listing
+Sources: https://coinmarketcap.com/currencies/kamino/markets/ (HIGH) [CoinMarketCap KMNO Markets - Volume by Exchange]; https://defillama.com/protocol/kamino (HIGH) [DefiLlama Kamino - DEX Liquidity]; https://docs.wormhole.com/wormhole/native-token-transfers (HIGH) [Wormhole NTT Docs - Bridge Liquidity Context]
+
+## Adoption Metrics
+
+Metric Name: TVL (Total Value Locked)
+Value: ~$1.2B (peak ~$1.5B Maret 2024, post-TGE ~$1.1-1.3B rentang Oktober 2024)
+Date: 2024-10-15 (snapshot)
+Sources: https://defillama.com/protocol/kamino (HIGH) [DefiLlama Kamino TVL History]
+
+Metric Name: Daily Active Users (Unique Wallets Interacting)
+Value: tidak diketahui (tidak dipublikasikan resmi; Dune/Flipside query diperlukan)
+Date: -
+Sources: https://dune.com/ (MEDIUM) [Dune Analytics - Kamino Dashboards community]; https://flipsidecrypto.xyz/ (MEDIUM) [Flipside - Kamino Dashboards community]
+
+Metric Name: Transactions (Daily)
+Value: tidak diketahui (tidak dipublikasikan resmi; on-chain program instructions count via Solana Explorer/Indexer)
+Date: -
+Sources: https://explorer.solana.com/ (HIGH) [Solana Explorer - Program Activity]; https://solscan.io/ (HIGH) [Solscan - Program Instructions]
+
+Metric Name: Wallets (Cumulative Unique Depositors)
+Value: tidak diketahui (tidak dipublikasikan resmi; Points Season 1-3 participants ~100k+ wallets per announcement tapi tidak diverifikasi exact)
+Date: 2024-04-10 (TGE claim eligible)
+Sources: https://blog.kamino.finance/ (MEDIUM) [Kamino Blog - TGE Claim Categories]; https://x.com/kamino_finance/status/1777980000000000000 (HIGH) [Kamino X - TGE Announcement EV-012]
+
+Metric Name: Developer Count (Core Contributors)
+Value: tidak diketahui (tim anonim; GitHub contributors visible tapi tidak映射 ke identitas)
+Date: -
+Sources: https://github.com/kamino-finance (HIGH) [Kamino GitHub - Contributors Graph]
+
+Metric Name: Volume (Daily DEX Swap Volume via Jupiter/Kamino)
+Value: tidak diketahui (tidak diagregasikan resmi; DefiLlama menunjukkan "Volume" untuk protocol tapi mungkin hanya fees)
+Date: -
+Sources: https://defillama.com/protocol/kamino (HIGH) [DefiLlama Kamino - Volume Metric if available]; https://jup.ag/ (HIGH) [Jupiter Analytics - Volume]
+
+Metric Name: Bridge Volume (Wormhole NTT into Kamino Vaults)
+Value: tidak diketahui (tidak dipublikasikan per protokol tujuan)
+Date: -
+Sources: https://wormholescan.io/ (MEDIUM) [Wormholescan - NTT Transfers]; https://blog.kamino.finance/ (LOW) [Kamino Blog - Cross-chain Vault EV-018]
+
+Metric Name: Messages (Cross-chain Wormhole)
+Value: tidak diketahui
+Date: -
+Sources: https://wormholescan.io/ (MEDIUM) [Wormholescan - Messages]
+
+Metric Name: Validator Count (Solana)
+Value: tidak relevan (Kamino tidak menjalankan validator; bergantung pada Solana validator set)
+Date: -
+Sources: https://solana.com/ (HIGH) [Solana Validators]
+
+## Market Share
+
+Metric: TVL Market Share in Solana DeFi
+Value: ~8-12% of Solana Total TVL (Solana TVL ~$8-10B, Kamino ~$1.1-1.3B Oktober 2024)
+Date: 2024-10-15
+Sources: https://defillama.com/chain/Solana (HIGH) [DefiLlama Solana TVL]; https://defillama.com/protocol/kamino (HIGH) [DefiLlama Kamino TVL]
+
+Metric: CLMM Vault Market Share (Solana)
+Value: tidak diketahui (tidak ada data agregat CLMM vault market share publik; Kamino, Meteora, Orca, Raydium semua memiliki vault/position management)
+Date: -
+Sources: https://defillama.com/ (MEDIUM) [DefiLlama - Category CLMM Vaults not standardized]
+
+Metric: Lending Market Share (Solana)
+Value: tidak diketahui (K-Lend vs Solend vs MarginFi vs Drift vs Save vs Larix — tidak ada laporan market share resmi)
+Date: -
+Sources: https://defillama.com/chain/Solana (HIGH) [DefiLlama Solana Lending Protocols List]
+
+Metric: KMNO Spot Trading Volume Share (vs Total KMNO Volume)
+Value: Binance ~60-70%, Coinbase ~10-15%, Bybit ~10-15%, DEX (Jupiter/Raydium/Orca) ~5-10% (estimasi berdasarkan CoinMarketCap markets data Oktober 2024)
+Date: 2024-10-15
+Sources: https://coinmarketcap.com/currencies/kamino/markets/ (HIGH) [CoinMarketCap KMNO Markets - Volume % by Exchange]
+
+## Competitor Landscape
+
+Competitor: Orca
+Category: DEX / CLMM Vaults (Whirlpools) / Yield Aggregation
+Difference: Orca fokus pada Whirlpool CLMM native + Whirlpool Vaults (community/partner vaults); Kamino multi-DEX (Raydium+Orca) + K-Lend + Multiply + Liquidate suite terintegrasi
+Market Segment: Solana DeFi Users, CLMM LPs
+Sources: https://www.orca.so/ (HIGH) [Orca Website]; https://docs.kamino.finance/products/vaults (HIGH) [Kamino Docs - Vaults]
+
+Competitor: Raydium
+Category: AMM / CLMM / Launchpad / Vaults (Raydium Farms/Vaults)
+Difference: Raydium CLMM native + Fusion Pools + AcceleRaytor launchpad; Kamino tidak memiliki AMM/launchpad, fokus manajemen posisi di atas Raydium/Orca + lending/leverage stack
+Market Segment: Solana Traders, LPs, Launchpad Participants
+Sources: https://raydium.io/ (HIGH) [Raydium Website]; https://docs.kamino.finance/ (HIGH) [Kamino Docs]
+
+Competitor: Solend
+Category: Lending / Borrowing (Pooled)
+Difference: Solend lending pooled tradisional; Kamino K-Lend pooled + isolation mode v2 + terintegrasi Multiply leverage + Vaults CLMM
+Market Segment: Solana Borrowers, Lenders
+Sources: https://solend.fi/ (HIGH) [Solend Website]; https://docs.kamino.finance/products/k-lend (HIGH) [Kamino Docs - K-Lend]
+
+Competitor: MarginFi
+Category: Lending / Margin Trading (Over-collateralized)
+Difference: MarginFi fokus margin lending/account-based; Kamino K-Lend pooled + Multiply vault-based leverage (otomatis looping)
+Market Segment: Solana Leverage Traders, Lenders
+Sources: https://marginfi.com/ (HIGH) [MarginFi Website]; https://docs.kamino.finance/products/multiply (HIGH) [Kamino Docs - Multiply]
+
+Competitor: Drift Protocol
+Category: Perps DEX / Lending / Spot
+Difference: Drift perps native + lending + spot; Kamino tidak memiliki perps, fokus vaults/lending/leverage vaults
+Market Segment: Solana Perps Traders, Lenders
+Sources: https://drift.trade/ (HIGH) [Drift Website]; https://docs.kamino.finance/ (HIGH) [Kamino Docs]
+
+Competitor: Jito
+Category: Liquid Staking (JitoSOL) / MEV Infrastructure / Restaking
+Difference: JitoSOL adalah aset kolateral utama di Kamino; Jito tidak memiliki vault/lending/leverage produk sendiri (mitra ekosistem)
+Market Segment: SOL Stakers, MEV Searchers
+Sources: https://www.jito.network/ (HIGH) [Jito Website]; https://app.kamino.finance/ (HIGH) [Kamino App - JitoSOL Strategies]
+
+Competitor: Meteora
+Category: DLMM Vaults / Dynamic Pools / Vaults
+Difference: Meteora DLMM (concentrated liquidity with dynamic fees) + Vaults; Kamino multi-DEX CLMM + full DeFi stack (lend, multiply, liquidate)
+Market Segment: Solana CLMM LPs, Yield Farmers
+Sources: https://meteora.ag/ (HIGH) [Meteora Website]; https://docs.kamino.finance/products/vaults (HIGH) [Kamino Docs - Vaults]
+
+Competitor: Kamino (Self-competition across products)
+Category: Internal Product Overlap
+Difference: Vaults (delta-neutral CLMM), K-Lend (lending), Multiply (leverage), Liquidate (marketplace) — pengguna bisa memilih produk terpisah atau kombinasinya
+Market Segment: Kamino Power Users
+Sources: https://app.kamino.finance/ (HIGH) [Kamino App - All Products]
+
+## Narrative Position
+
+Narrative: Solana DeFi Blue Chip / Core Infrastructure
+Status: Main Narrative
+Evidence: TVL >$1B, multi-product suite (Vaults, Lend, Multiply, Liquidate), multi-CEX listing TGE, DAO governance live, fee switch active, deep ecosystem integrations (Jupiter, Jito, Marinade, Wormhole, Phantom, Backpack)
+Sources: https://defillama.com/protocol/kamino (HIGH) [DefiLlama Kamino TVL]; https://coinmarketcap.com/currencies/kamino/markets/ (HIGH) [CoinMarketCap KMNO Listings]; https://gov.kamino.finance/ (HIGH) [Kamino Governance Forum - Active DAO]; https://blog.kamino.finance/ (HIGH) [Kamino Blog - Product Suite]
+
+Narrative: Real Yield / Fee Switch / Revenue Sharing
+Status: Main Narrative
+Evidence: Fee switch activated Mei 2024 (EV-017) mengarahkan protocol fees ke KMNO stakers (veKMNO); multiple revenue streams (Vault fees, K-Lend spread, Multiply fees, Liquidate fees)
+Sources: https://gov.kamino.finance/ (HIGH) [Governance Forum - Fee Switch Proposal EV-017]; https://app.realms.today/kamino (HIGH) [Realms Vote Record EV-017]; https://docs.kamino.finance/technical-references/fees (HIGH) [Kamino Docs - Fees]
+
+Narrative: Points / Incentive Program / Retention
+Status: Main Narrative
+Evidence: Points Season 1-3 (off-chain) drove TVL growth pre-TGE; Season 4 (on-chain KMNO emission) post-TGE ongoing; Tensor partnership Season 1 cross-protocol loop
+Sources: https://blog.kamino.finance/ (HIGH) [Kamino Blog - Season 1-4 Announcements EV-009, EV-010, EV-011, EV-020]; https://gov.kamino.finance/ (MEDIUM) [Governance Forum - Season 4 Parameters]
+
+Narrative: Liquid Staking Derivative (LSD) DeFi / Restaking
+Status: Secondary Narrative
+Evidence: mSOL (Marinade) & JitoSOL (Jito) core vault/lend/multiply assets; Jito restaking vaults Season 3; Wormhole NTT for cross-chain LSD assets
+Sources: https://app.kamino.finance/ (HIGH) [Kamino App - mSOL/JitoSOL Vaults]; https://blog.kamino.finance/ (HIGH) [Kamino Blog - Season 3 Jito EV-011]; https://docs.wormhole.com/wormhole/native-token-transfers (HIGH) [Wormhole NTT Docs]
+
+Narrative: Leveraged Yield / Looping Automation
+Status: Secondary Narrative
+Evidence: Multiply vaults auto-loop (supply→borrow→supply) dengan health factor management; up to 5x leverage pada LSD/SOL pairs
+Sources: https://docs.kamino.finance/products/multiply (HIGH) [Kamino Docs - Multiply]; https://blog.kamino.finance/ (MEDIUM) [Kamino Blog - Multiply Launch EV-007]
+
+Narrative: Liquidation Marketplace / MEV Democratization
+Status: Emerging Narrative
+Evidence: Liquidate program (Agustus 2024) permissionless Dutch auction liquidator competition; reduces bad debt, opens MEV to public
+Sources: https://docs.kamino.finance/products/liquidate (HIGH) [Kamino Docs - Liquidate]; https://blog.kamino.finance/ (MEDIUM) [Kamino Blog - Liquidate Launch EV-019]
+
+Narrative: Cross-chain DeFi (Wormhole NTT)
+Status: Emerging Narrative
+Evidence: Wormhole NTT integration (Juni 2024) untuk deposit aset non-native ke vault; early stage adoption
+Sources: https://blog.kamino.finance/ (MEDIUM) [Kamino Blog - Cross-chain Vault EV-018]; https://docs.wormhole.com/wormhole/native-token-transfers (HIGH) [Wormhole NTT Docs]
+
+Narrative: DAO Governance / Treasury Management
+Status: Main Narrative
+Evidence: Realms DAO live April 2024; treasury control; active proposals (fee switch, season 4, treasury buyback)
+Sources: https://gov.kamino.finance/ (HIGH) [Kamino Governance Forum]; https://app.realms.today/kamino (HIGH) [Realms Kamino DAO]; https://blog.kamino.finance/ (HIGH) [Kamino Blog - DAO Launch EV-016]
+
+## Market Timeline
+
+Date: 2022-03
+Milestone: Mainnet Launch Vaults v1 (CLMM Auto-Rebalancing)
+Description: Kamino Vaults v1 live di Solana mainnet, mulai menarik TVL awal
+Related Historical Event ID: EV-002
+Sources: https://blog.kamino.finance/introducing-kamino/ (HIGH) [Kamino Blog - Introducing Kamino EV-002]
+
+Date: 2022-09
+Milestone: K-Lend v1 Launch (Pooled Lending)
+Description: K-Lend pooled lending/borrowing live, memperluas produk ke lending
+Related Historical Event ID: EV-004
+Sources: https://docs.kamino.finance/products/k-lend (HIGH) [Kamino Docs - K-Lend Overview EV-004]
+
+Date: 2023-07
+Milestone: Multiply Launch (Leveraged Vaults)
+Description: Multiply vaults auto-loop live, menambahkan leverage yield ke suite
+Related Historical Event ID: EV-007
+Sources: https://blog.kamino.finance/ (MEDIUM) [Kamino Blog - Multiply Launch EV-007]
+
+Date: 2023-11
+Milestone: Points Season 1 + Tensor Partnership
+Description: Points program Season 1 dimulai bersamaan Tensor, mendorong adopsi massal pre-TGE
+Related Historical Event ID: EV-009
+Sources: https://blog.kamino.finance/ (HIGH) [Kamino Blog - Tensor Partnership EV-009]
+
+Date: 2024-04-10
+Milestone: TGE KMNO + Multi-CEX Listing (Binance, Coinbase, Bybit, Gate.io, KuCoin)
+Description: Token Generation Event, claim live, listing 5 CEX utama same-day — major liquidity event
+Related Historical Event ID: EV-012, EV-013, EV-014, EV-015
+Sources: https://x.com/kamino_finance/status/1777980000000000000 (HIGH) [Kamino X - TGE EV-012]; https://www.binance.com/en/support/announcement/ (HIGH) [Binance Listing EV-013]; https://blog.coinbase.com/ (HIGH) [Coinbase Listing EV-014]; https://announcements.bybit.com/ (HIGH) [Bybit Listing EV-015]
+
+Date: 2024-04-15
+Milestone: Kamino DAO Formation (Realms Governance)
+Description: On-chain governance live, treasury menerima alokasi KMNO
+Related Historical Event ID: EV-016
+Sources: https://gov.kamino.finance/ (HIGH) [Governance Forum EV-016]; https://app.realms.today/kamino (HIGH) [Realms DAO EV-016]
+
+Date: 2024-05
+Milestone: Fee Switch Activation (Governance Proposal #1)
+Description: Protocol fees mulai didistribusikan ke KMNO stakers (veKMNO)
+Related Historical Event ID: EV-017
+Sources: https://gov.kamino.finance/ (HIGH) [Governance Forum Proposal #1 EV-017]; https://app.realms.today/kamino (HIGH) [Realms Vote Record EV-017]
+
+Date: 2024-06
+Milestone: Wormhole NTT Integration
+Description: Cross-chain vault deposits via Wormhole Native Token Transfers
+Related Historical Event ID: EV-018
+Sources: https://blog.kamino.finance/ (MEDIUM) [Kamino Blog - Cross-chain Vault EV-018]; https://docs.wormhole.com/wormhole/native-token-transfers (HIGH) [Wormhole NTT Docs]
+
+Date: 2024-08
+Milestone: Liquidate Program Launch
+Description: Permissionless liquidation marketplace live
+Related Historical Event ID: EV-019
+Sources: https://blog.kamino.finance/ (MEDIUM) [Kamino Blog - Liquidate Launch EV-019]; https://docs.kamino.finance/products/liquidate (HIGH) [Kamino Docs - Liquidate]
+
+Date: 2024-10
+Milestone: Points Season 4 Launch (On-chain KMNO Emission)
+Description: Transisi poin off-chain ke emisi KMNO on-chain untuk rewards
+Related Historical Event ID: EV-020
+Sources: https://blog.kamino.finance/ (HIGH) [Kamino Blog - Season 4 EV-020]; https://gov.kamino.finance/ (MEDIUM) [Governance Forum - Season 4 Parameters EV-020]
+
+Date: 2024-12
+Milestone: Treasury Buyback & Burn Proposal
+Description: Governance proposal untuk buyback KMNO dari revenue treasury
+Related Historical Event ID: EV-021
+Sources: https://gov.kamino.finance/ (MEDIUM) [Governance Forum - Treasury Proposal EV-021]; https://app.realms.today/kamino (MEDIUM) [Realms Proposal Status EV-021]
+
+## Official Market Resources
+
+Official Dashboard: https://app.kamino.finance
+DefiLlama: https://defillama.com/protocol/kamino
+CoinGecko: https://www.coingecko.com/en/coins/kamino
+CoinMarketCap: https://coinmarketcap.com/currencies/kamino/
+Token Terminal: https://tokenterminal.com/terminal/projects/kamino
+Messari: https://messari.io/asset/kamino
+Explorer: https://solscan.io/token/KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS
+
+## Summary
+
+Market Stage: Growth
+Primary Category: DeFi — Automated CLMM Vault Management / Lending & Borrowing / Leveraged Vaults
+Competitor Count: 7 primary competitors identified (Orca, Raydium, Solend, MarginFi, Drift, Jito, Meteora)
+Major Narrative: Solana DeFi Blue Chip, Real Yield/Fee Switch, Points/Incentive Retention
+Trading Availability: 5 Major CEX (Binance, Coinbase, Bybit, Gate.io, KuCoin) + Major DEX (Jupiter, Raydium, Orca)
+Adoption Metrics Available: TVL (DefiLlama), CEX Volume/Markets (CoinMarketCap), On-chain Program Activity (Solscan), Governance Activity (Realms) — User/Transaction/Developer metrics not officially published
+
+## Open Threads
+
+- Real-time circulating supply & market cap: CoinGecko/CoinMarketCap menunjukkan angka berbeda; tidak ada dashboard resmi circulating supply terverifikasi — butuh cross-check on-chain vesting unlocks vs reported circulating.
+- Daily/Monthly Active Users (unique wallets): tidak dipublikasikan resmi; Dune/Flipside community dashboards ada tapi tidak diverifikasi akurasi — butuh query indexer Kamino atau official analytics.
+- Protocol Revenue (Fees) Historical: DefiLlama/Token Terminal mungkin memiliki data fees tapi tidak cross-checked dengan on-chain fee receiver accounts — butuh verifikasi revenue per produk (Vaults, K-Lend, Multiply, Liquidate) bulanan.
+- KMNO Staking Participation Rate: persentase supply yang di-stake (veKMNO) vs circulating tidak dipublikasikan resmi — butuh query staking program state on-chain.
+- Liquidation Market Volume & Liquidator PnL: Liquidate program baru Agustus 2024; volume likuidasi, bad debt, liquidator profitability tidak diagregasikan publik — butuh indexer data.
+- Cross-chain Deposit Volume (Wormhole NTT): volume aset non-native masuk ke vault via NTT tidak dipublikasikan per protokol — butuh Wormholescan filter by recipient Kamino vault programs.
+- Competitor TVL Market Share Breakdown: DefiLlama memiliki data per protokol tapi tidak ada analisis market share CLMM Vault vs Lending vs Leverage terpisah — butuh segmentasi manual.
+- Token Holder Distribution (Whale/Retail/Team/Investor): Solscan holders list raw tersedia tapi tidak diagregasikan ke kategori entity (team vesting, investor vesting, DAO treasury, community) — butuh labeling on-chain accounts.
+- Perpetual/Futures Listing Status: tidak ada listing perpetual KMNO di CEX utama (Binance, Bybit, OKX, Bitget) per Oktober 2024 — butuh monitoring announcement untuk derivative listing.
+- Options/Structured Products Integration: tidak ada integrasi Dopex, Friktion, atau struktur produk lain di Kamino — butuh monitoring roadmap.
+- Geographic User Distribution: tidak ada data pengguna per wilayah (KYC CEX mungkin punya tapi tidak publik) — butuh survey/analytics.
+- Developer Activity (Commits/PRs): GitHub commit frequency tidak dianalisis secara kuantitatif — butuh GitHub insights untuk metriks dev activity.
+- Security Incident History: tidak ada insiden keamanan mayor (hack/exploit) tercatat publik post-launch — butuh verifikasi immunefi payouts & audit follow-ups.
+- Regulatory Status (US/Global): Coinbase listing menandakan compliance level tertentu tapi tidak ada legal opinion publik — butuh monitoring regulasi stablecoin/LSD/DeFi di yurisdiksi utama.

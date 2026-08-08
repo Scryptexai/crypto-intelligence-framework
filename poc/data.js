@@ -2,9 +2,9 @@
 window.CIF = {
   "meta": {
     "schema": "cif-export/1",
-    "generated": "2026-08-07 21:36 UTC",
-    "projects": 10,
-    "deep": 10,
+    "generated": "2026-08-08 07:43 UTC",
+    "projects": 12,
+    "deep": 12,
     "summary": 0,
     "sentiment": 0,
     "patterns": 16,
@@ -106,6 +106,16 @@ window.CIF = {
       ]
     },
     {
+      "n": "Celestia",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Celestia.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "modular"
+      ]
+    },
+    {
       "n": "Irys",
       "tier": "Deep",
       "file": "examples/CaseStudies/Irys.md",
@@ -113,6 +123,16 @@ window.CIF = {
       "era": "",
       "tags": [
         "testnet-incentive",
+        "l1"
+      ]
+    },
+    {
+      "n": "Monad",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Monad.md",
+      "cat": "",
+      "era": "",
+      "tags": [
         "l1"
       ]
     }

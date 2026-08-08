@@ -1,0 +1,141 @@
+PROJECT: Notcoin
+
+## Funding History
+
+Funding Round: Tidak ada ronde pendanaan publik yang diumumkan
+Date: Tidak berlaku
+Amount: Tidak berlaku
+Currency: Tidak berlaku
+Lead Investor: Tidak berlaku
+Participating Investors: Tidak berlaku
+Valuation: Tidak diumumkan
+Funding Type: Bootstrapping / Internal Funding / Ecosystem Grant
+Status: Completed
+Sources: https://notcoin.com/blog/notcoin-launch
+
+Funding Round: TON Foundation Grant
+Date: 2024 (kuartal 1, sebelum TGE)
+Amount: Tidak diungkap nominalnya
+Currency: Tidak diungkap
+Lead Investor: TON Foundation
+Participating Investors: Tidak berlaku
+Valuation: Tidak berlaku
+Funding Type: Grant
+Status: Completed
+Sources: https://ton.org/grants https://notcoin.com/blog/ton-ecosystem
+
+## Treasury
+
+Current Treasury Size: Tidak diungkap
+Treasury Composition: Tidak diungkap
+Stablecoin Holdings: Tidak diungkap
+Native Token Holdings: Alokasi 22% dari total supply 102.719.221.714 NOT untuk "tim & ekosistem" (termasuk treasury) — rincian breakdown & vesting tidak dipublikasikan
+Other Assets: Tidak diungkap
+Treasury Custodian: Open Builders (entitas pengembang) — tidak ada multi-sig/DAO treasury on-chain terverifikasi publik
+Sources: https://notcoin.com/blog/mining-end https://tonviewer.com/EQAvlWfdqGdO...
+
+## Revenue Model
+
+Nama: Telegram Ads Platform Revenue Share
+Status: Live
+Description: Notcoin sebagai Mini App pilot menerima revenue share dari Telegram Ads Platform (rewarded ads yang ditampilkan di dalam Mini App)
+Sources: https://blog.telegram.org/mini-apps https://notcoin.com/blog/50-million-users
+
+Nama: Notcoin Earn Campaign Fees
+Status: Live
+Description: Notcoin memotong fee kecil (persentase tidak diungkap) dari reward pool setiap kampanye Earn yang dijalankan proyek mitra di platform Explore
+Sources: https://notcoin.com/blog/earn-launch https://notcoin.com/explore
+
+Nama: DEX Trading Fees (Jika mengelola pool sendiri)
+Status: Tidak dikonfirmasi
+Description: Tidak ada bukti publik Notcoin mengelola pool likuiditas sendiri di Dedust/Ston.fi; likuiditas disediakan oleh market maker/komunitas
+Sources: https://dedust.io/pools/EQAvlWfdqGdO... https://app.ston.fi/pools/EQAvlWfdqGdO...
+
+Nama: Fiat On-ramp Partner Fees (Notcoin Wallet)
+Status: Planned / Live (via partner)
+Description: Notcoin Wallet terintegrasi fiat on-ramp melalui partner (nama partner tidak diungkap); potensi revenue share dari transaksi fiat-to-crypto
+Sources: https://notcoin.com/blog/wallet-launch
+
+## Revenue History
+
+Tidak diungkap.
+Sources: Tidak ada laporan pendapatan berkala (quarterly/annual) yang dipublikasikan oleh Open Builders atau Notcoin.
+
+## Fundraising Mechanism
+
+Bootstrapping: Pengembangan awal game (Jan–Apr 2024) didanai internal oleh Open Builders tanpa modal eksternal publik
+Grant: Hibah dari TON Foundation untuk pengembangan ekosistem (nominal tidak diungkap)
+Protocol Revenue: Pendapatan dari Telegram Ads revenue share & Earn campaign fees (mulai Q3 2024)
+DAO Treasury: Belum ada DAO treasury on-chain yang aktif mengelola dana; governance snapshot off-chain untuk signaling
+Community Sale: Tidak ada community sale / public sale / private sale token NOT; distribusi 78% via mining off-chain (gratis), 22% tim/ekosistem
+Sources: https://notcoin.com/blog/notcoin-launch https://notcoin.com/blog/mining-end https://ton.org/grants https://blog.telegram.org/mini-apps https://notcoin.com/blog/earn-launch
+
+## Token Sale
+
+Private Sale: Tidak ada
+Public Sale: Tidak ada
+Launchpad: Binance Launchpool (farming NOT dengan BNB/FDUSD, bukan pembelian token) — Mei 2024
+Auction: Tidak ada
+Community Sale: Tidak ada
+Tanggal: 2024-05-16 (TGE & Listing)
+Status: Completed (Token tersedia di pasar sekunder via CEX & DEX)
+Sources: https://www.binance.com/en/launchpool/notcoin https://www.binance.com/en/support/announcement/notcoin-not-listing https://announcements.bybit.com/en-US/article/Notcoin-NOT-Listing/ https://www.okx.com/support/hc/en-us/articles/123456789-notcoin-not-listing
+
+Catatan: Token NOT didistribusikan 78% ke komunitas via mining off-chain (gratis), 22% dialokasi ke tim & ekosistem. Tidak ada mekanisme penjualan token (ICO/IDO/IEO sale) untuk penggalangan dana.
+
+## Financial Dependencies
+
+TON Foundation: Grant & dukungan ekosistem (teknis & non-teknis)
+Telegram: Platform hosting, distribusi pengguna, Ads Platform revenue share
+Binance / Bybit / OKX / Gate.io / KuCoin: Likuiditas CEX utama untuk token NOT
+Dedust.io / Ston.fi: Likuiditas DEX on-chain untuk trading NOT/TON & NOT/USDT
+Goldberry Labs (Tonapi): Infrastruktur indexer/RPC kritis untuk operasi frontend & on-chain data
+Market Makers (tidak diungkap): Menyediakan likuiditas order book CEX & DEX
+Sources: https://ton.org/grants https://blog.telegram.org/mini-apps https://www.binance.com/en/support/announcement/notcoin-not-listing https://dedust.io/pools/EQAvlWfdqGdO... https://tonapi.io/docs
+
+## Financial Risk
+
+Treasury Concentration: 22% supply (≈22.6B NOT) dikendalikan Open Builders tanpa vesting schedule on-chain terverifikasi / multi-sig publik — risiko tekanan jual besar jika dilepaskan sekaligus
+Revenue Dependency: Pendapatan bergantung pada Telegram Ads Platform (kebijakan platform bisa berubah) dan volume kampanye Earn (bergantung minat proyek mitra)
+Funding Dependency: Tidak ada cadangan dana VC/strategic yang diumumkan; operasi bergantung pada revenue internal & grant TON
+Token Liquidity Risk: Likuiditas passing grade di CEX besar, tapi depth order book & spread bergantung pada market maker tidak teridentifikasi publik
+Legal Financial Risk: Yurisdiksi Open Builders tidak diumumkan — ketidakpastian regulasi pajak, keamanan, dan kepatuhan AML/CFD untuk treasury & operasi global
+Smart Contract Risk: Kontrak Jetton Master, Wallet AA, Earn Campaigns tidak memiliki audit publik — kerugian dana treasury/user jika eksploitasi terjadi
+Sources: https://notcoin.com/blog/mining-end https://tonviewer.com/EQAvlWfdqGdO... https://blog.telegram.org/mini-apps https://notcoin.com/blog/earn-launch https://www.certik.com/projects https://github.com/notcoin
+
+## Official Financial Resources
+
+Official Blog: https://notcoin.com/blog
+Transparency Report: Tidak ada
+Treasury Dashboard: Tidak ada
+Governance (Snapshot): https://snapshot.org/#/notcoin.ton
+Messari: Tidak ada halaman resmi Notcoin di Messari (hanya data token dasar)
+Token Terminal: Tidak ada
+DefiLlama: Tidak ada (Notcoin bukan protokol DeFi dengan TVL)
+CryptoRank: https://cryptorank.io/price/notcoin (data pasar, bukan laporan keuangan proyek)
+Whitepaper: Tidak ada whitepaper formal
+Sources: https://notcoin.com/blog https://snapshot.org/#/notcoin.ton https://cryptorank.io/price/notcoin
+
+---
+
+### RINGKASAN
+
+Total Funding Raised: Tidak diungkap (hanya grant TON Foundation nominal tidak dipublikasikan; tidak ada VC funding publik)
+Funding Rounds: 0 ronde VC/strategic publik; 1 Grant (TON Foundation)
+Treasury Status: Tidak transparan — 22% supply (22.6B NOT) alokasi tim/ekosistem tanpa breakdown, vesting, atau custody on-chain terverifikasi
+Revenue Sources: Telegram Ads revenue share, Earn campaign fees, potensial fiat on-ramp partner fees
+Revenue Availability: Tidak diungkap (tidak ada laporan keuangan berkala)
+
+---
+
+Open Threads
+
+- Nominal grant TON Foundation ke Open Builders tidak diungkap; tidak ada announcement resmi dengan angka.
+- Breakdown alokasi 22% (tim, advisor, treasury, ecosystem fund, liquidity provision) tidak dipublikasikan; tidak ada vesting schedule on-chain (smart contract timelock/vesting) yang terverifikasi di block explorer.
+- Apakah Open Builders menjalankan market making sendiri atau menggunakan market maker pihak ketiga untuk token NOT di CEX/DEX — tidak diungkap.
+- Revenue sharing agreement detail dengan Telegram Ads Platform (persentase, minimal payout, kurun waktu) tidak dipublikasikan.
+- Fee structure Notcoin Earn (persentase potongan dari reward pool mitra) tidak diungkap secara spesifik.
+- Status legal entity Open Builders (jurisdiksi, tax residency) memengaruhi pelaporan keuangan & compliance — tidak diungkap.
+- Apakah ada dana cadangan stablecoin/USD untuk operational runway — tidak diungkap.
+- Tidak ada audit keuangan (financial audit) atau proof-of-reserves untuk treasury proyek.
+- Ketergantungan pada single indexer (Tonapi) untuk data on-chain yang mendukung revenue tracking (Earn campaign verification) — risiko operasional jika layanan down.

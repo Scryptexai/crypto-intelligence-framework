@@ -1,0 +1,573 @@
+PROJECT: MegaETH
+
+Event ID
+
+EV-001
+
+Date
+
+2023
+
+Event Name
+
+Pendirian MegaETH Labs
+
+Event Type
+
+Founding
+
+Description
+
+MegaETH Labs didirikan sebagai entitas pengembang inti untuk membangun protokol Layer 2 Ethereum berperforma tinggi (MegaETH). Tiga co-founder (Li Ming, Lei Yang, Shuyao Kong) membentuk tim awal.
+
+Participants
+
+MegaETH Labs; Li Ming; Lei Yang; Shuyao Kong
+
+Location
+
+tidak diketahui
+
+Status
+
+Completed
+
+Immediate Result
+
+Terbentuknya entitas legal dan tim inti pengembangan MegaETH.
+
+Sources
+
+https://megaeth.com/blog/introducing-megaeth
+
+---
+
+Event ID
+
+EV-002
+
+Date
+
+2023
+
+Event Name
+
+Publikasi Blog Perkenalan Tim MegaETH
+
+Event Type
+
+Organization
+
+Description
+
+MegaETH Labs mempublikasikan blog resmi "Introducing MegaETH" yang memperkenalkan tiga co-founder (CEO Li Ming, CTO Lei Yang, COO Shuyao Kong) dan visi proyek "real-time blockchain".
+
+Participants
+
+MegaETH Labs; Li Ming; Lei Yang; Shuyao Kong
+
+Location
+
+Online (Blog Resmi)
+
+Status
+
+Completed
+
+Immediate Result
+
+Identitas tim founding dan narasi proyek menjadi publik.
+
+Sources
+
+https://megaeth.com/blog/introducing-megaeth
+
+---
+
+Event ID
+
+EV-003
+
+Date
+
+2023
+
+Event Name
+
+Pengumuman Pendanaan Awal (Seed/Strategic) dari DragonFly dan Figment
+
+Event Type
+
+Funding
+
+Description
+
+MegaETH Labs mengumumkan telah menerima investasi dari DragonFly dan Figment melalui press release / blog resmi (detail jumlah dan struktur deal tidak diungkapkan publik).
+
+Participants
+
+MegaETH Labs; DragonFly; Figment
+
+Location
+
+Online (Announcement)
+
+Status
+
+Completed
+
+Immediate Result
+
+Terjaminnya dana operasional dan pengembangan awal; validasi investor tier-1.
+
+Sources
+
+https://megaeth.com/blog/introducing-megaeth
+
+---
+
+Event ID
+
+EV-004
+
+Date
+
+2023
+
+Event Name
+
+Peluncuran Repositori GitHub Organization megaeth-labs
+
+Event Type
+
+Infrastructure
+
+Description
+
+Organisasi GitHub resmi `megaeth-labs` dibuat dan mulai meng-host kode sumber protokol, smart contract, dan tooling pengembangan (beberapa repo bersifat private/internal).
+
+Participants
+
+MegaETH Labs; GitHub Organization megaeth-labs
+
+Location
+
+https://github.com/megaeth-labs
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Infrastruktur version control dan kolaborasi teknis tersedia untuk tim internal dan kontributor eksternal.
+
+Sources
+
+https://github.com/megaeth-labs
+
+---
+
+Event ID
+
+EV-005
+
+Date
+
+2023
+
+Event Name
+
+Peluncuran Portal Dokumentasi Resmi (docs.megaeth.com)
+
+Event Type
+
+Product
+
+Description
+
+Dokumentasi teknis resmi MegaETH diluncurkan di `docs.megaeth.com` mencakup arsitektur, panduan developer, spesifikasi konsensus, dan integrasi OP Stack.
+
+Participants
+
+MegaETH Labs; MegaETH Docs
+
+Location
+
+https://docs.megaeth.com
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Referensi teknis tunggal (single source of truth) tersedia untuk developer dan validator.
+
+Sources
+
+https://docs.megaeth.com
+
+---
+
+Event ID
+
+EV-006
+
+Date
+
+2023
+
+Event Name
+
+Pembentukan Komunitas Resmi (Discord, Telegram, X/Twitter)
+
+Event Type
+
+Community
+
+Description
+
+Saluran komunitas resmi didirikan: Discord (`discord.gg/megaeth`), Telegram (`@megaeth_official`), dan X/Twitter (`@megaeth_labs`) untuk komunikasi, announcement, dan dukungan pengguna.
+
+Participants
+
+MegaETH Labs; Discord Community MegaETH; Telegram Community MegaETH; X/Twitter @megaeth_labs
+
+Location
+
+Online
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Infrastruktur komunikasi dan distribusi narasi proyek beroperasi.
+
+Sources
+
+https://megaeth.com
+
+---
+
+Event ID
+
+EV-007
+
+Date
+
+2024-06-27
+
+Event Name
+
+Peluncuran MegaETH Public Testnet
+
+Event Type
+
+Launch
+
+Description
+
+MegaETH Labs meluncurkan jaringan testnet publik "MegaETH Testnet" untuk validasi performa eksekusi real-time, throughput tinggi, dan latensi rendah sebelum mainnet. Faucet dan Explorer tersedia bersamaan.
+
+Participants
+
+MegaETH Labs; MegaETH Testnet; MegaETH Explorer; MegaETH Faucet
+
+Location
+
+Online (Jaringan Testnet)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Developer dan pengguna dapat menguji transaksi, deploy kontrak, dan benchmark performa L2 MegaETH.
+
+Sources
+
+https://x.com/megaeth_labs/status/1806000000000000000
+
+---
+
+Event ID
+
+EV-008
+
+Date
+
+2024-06-27
+
+Event Name
+
+Peluncuran MegaETH Testnet Explorer
+
+Event Type
+
+Infrastructure
+
+Description
+
+Block explorer resmi testnet (`testnet.explorer.megaeth.com`) goes live menyediakan pencarian blok, transaksi, akun, dan verifikasi kontrak untuk jaringan testnet.
+
+Participants
+
+MegaETH Labs; MegaETH Explorer
+
+Location
+
+https://testnet.explorer.megaeth.com
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Transparansi on-chain dan tool debugging tersedia untuk partisipan testnet.
+
+Sources
+
+https://testnet.explorer.megaeth.com
+
+---
+
+Event ID
+
+EV-009
+
+Date
+
+2024-06-27
+
+Event Name
+
+Peluncuran MegaETH Testnet Faucet
+
+Event Type
+
+Infrastructure
+
+Description
+
+Faucet resmi testnet dibuka untuk mendistribusikan testnet ETH (token uji coba) ke developer dan pengguna guna memungkinkan interaksi dengan jaringan testnet.
+
+Participants
+
+MegaETH Labs; MegaETH Faucet
+
+Location
+
+Terlink di https://docs.megaeth.com dan Discord resmi
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Pengguna mendapatkan gas token gratis untuk menguji fungsionalitas jaringan.
+
+Sources
+
+https://docs.megaeth.com
+
+---
+
+Event ID
+
+EV-010
+
+Date
+
+2024
+
+Event Name
+
+Pengumuman Rencana Integrasi EigenLayer (Restaking & DA)
+
+Event Type
+
+Partnership
+
+Description
+
+MegaETH Labs mengumumkan rencana integrasi dengan EigenLayer untuk keamanan ekonomi (restaking) dan ketersediaan data (Data Availability) melalui dokumentasi ekosistem dan 발표 komunitas (belum live di testnet/mainnet).
+
+Participants
+
+MegaETH Labs; EigenLayer
+
+Location
+
+https://docs.megaeth.com
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Kerangka kerja kolaborasi teknis dengan EigenLayer didefinisikan; sinyal komitmen ke modular security.
+
+Sources
+
+https://docs.megaeth.com
+
+---
+
+Event ID
+
+EV-011
+
+Date
+
+2024
+
+Event Name
+
+Finalisasi Arsitektur Berbasis OP Stack dengan Custom Execution Environment
+
+Event Type
+
+Technology
+
+Description
+
+MegaETH mengkonfirmasi penggunaan OP Stack (Optimism) sebagai fondasi modul rollup (consensus, derivation, settlement) sambil mengembangkan execution environment kustom untuk target "real-time" performance.
+
+Participants
+
+MegaETH Labs; OP Stack; MegaETH
+
+Location
+
+https://docs.megaeth.com
+
+Status
+
+Completed
+
+Immediate Result
+
+Tumpukan teknologi (tech stack) utama protokol dikunci; pengembangan fokus pada lapisan eksekusi kustom.
+
+Sources
+
+https://docs.megaeth.com
+
+---
+
+### KELOMPOKKAN BERDASARKAN TAHUN
+
+#### 2023
+- EV-001: Pendirian MegaETH Labs
+- EV-002: Publikasi Blog Perkenalan Tim MegaETH
+- EV-003: Pengumuman Pendanaan Awal dari DragonFly dan Figment
+- EV-004: Peluncuran Repositori GitHub Organization megaeth-labs
+- EV-005: Peluncuran Portal Dokumentasi Resmi (docs.megaeth.com)
+- EV-006: Pembentukan Komunitas Resmi (Discord, Telegram, X/Twitter)
+
+#### 2024
+- EV-007: Peluncuran MegaETH Public Testnet (2024-06-27)
+- EV-008: Peluncuran MegaETH Testnet Explorer (2024-06-27)
+- EV-009: Peluncuran MegaETH Testnet Faucet (2024-06-27)
+- EV-010: Pengumuman Rencana Integrasi EigenLayer
+- EV-011: Finalisasi Arsitektur Berbasis OP Stack dengan Custom Execution Environment
+
+---
+
+### RINGKASAN
+
+Total Events
+
+11
+
+Founding
+
+1
+
+Funding
+
+1
+
+Launch
+
+1
+
+Technology
+
+1
+
+Governance
+
+0
+
+Security
+
+0
+
+Legal
+
+0
+
+Regulation
+
+0
+
+Partnership
+
+1
+
+Integration
+
+0
+
+Token
+
+0
+
+Market
+
+0
+
+Organization
+
+1
+
+Infrastructure
+
+3
+
+Community
+
+1
+
+Product
+
+1
+
+Ecosystem
+
+0
+
+Other
+
+0
+
+---
+
+Open Threads
+
+- Tanggal pasti pendirian perusahaan (incorporation date) dan yurisdiksi hukum MegaETH Labs tidak tersedia di sumber publik; Phase 1/2 hanya menyebut "2023".
+- Tanggal pasti blog "Introducing MegaETH" dipublikasikan tidak tercantum di Phase 1/2 (hanya tahun 2023); diperlukan verifikasi timestamp halaman blog.
+- Detail ronde pendanaan (jumlah, valuasi, SAFE vs equity, jadwal unlock token warrant) sepenuhnya tidak tersedia; Phase 1/2 hanya menyebut nama investor DragonFly dan Figment via "press release" tanpa URL spesifik announcement funding.
+- Tanggal peluncuran GitHub Organization, Docs, dan Komunitas (Discord/Telegram/X) hanya diperkirakan "2023" berdasarkan konteks "sejak 2023" di Phase 2; tidak ada timestamp spesifik (commit pertama, domain registration date, server creation date).
+- Status integrasi EigenLayer: Phase 1/2 menyebut "direncanakan" dan "belum live"; tidak ada announcement resmi joint blog post atau spesifikasi teknis AVS/operator set yang diverifikasi.
+- Tidak ada event Security Audit ditemukan di Phase 1/2; status audit smart contract dan execution layer belum tersedia publik.
+- Tidak ada event Token Launch (TGE), Mainnet Launch, atau Governance Vote (DAO Formation) karena proyek masih tahap testnet per Juni 2024.
+- ID Tweet announcement testnet di Phase 1 (`status/1806000000000000000`) tampak seperti placeholder; perlu verifikasi ID tweet asli untuk sitasi akurat.

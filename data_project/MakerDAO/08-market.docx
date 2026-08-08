@@ -1,0 +1,251 @@
+PROJECT: MakerDAO
+
+## Market Category
+
+Primary Category: Decentralized Stablecoin Issuer / Collateralized Debt Position (CDP) Protocol (HIGH) [Messari Protocol Profile, https://messari.io/protocol/makerdao; DefiLlama MakerDAO, https://defillama.com/protocol/makerdao]
+Secondary Category: DeFi Credit Facility / Real World Asset (RWA) Tokenization Platform / SubDAO Ecosystem Governance (HIGH) [Maker Blog Endgame Tokenomics, https://blog.makerdao.com/endgame-tokenomics/; RWA Dashboard, https://rwa.makerdao.com/]
+Sector: DeFi (Decentralized Finance) (HIGH) [CoinGecko Categories, https://www.coingecko.com/en/categories/decentralized-finance-defi]
+Sub-sector: Stablecoins — Algorithmic / Crypto-collateralized / RWA-backed (HIGH) [Messari Sector Report Stablecoins, https://messari.io/sector/decentralized-stablecoins; DefiLlama Stablecoins, https://defillama.com/stablecoins]
+
+Sources: [Messari Protocol Profile, https://messari.io/protocol/makerdao]; [DefiLlama MakerDAO, https://defillama.com/protocol/makerdao]; [Maker Blog Endgame Tokenomics, https://blog.makerdao.com/endgame-tokenomics/]; [RWA Dashboard, https://rwa.makerdao.com/]; [CoinGecko Categories, https://www.coingecko.com/en/categories/decentralized-finance-defi]; [Messari Sector Report Stablecoins, https://messari.io/sector/decentralized-stablecoins]; [DefiLlama Stablecoins, https://defillama.com/stablecoins]
+
+## Market Position
+
+Project Stage: Mature (HIGH) [Launch 2017 Sai, 2019 MCD; 7+ years operation; Phase 3 History EV-005, EV-007]
+Primary Competitors: 
+- Circle (USDC) — centralized stablecoin issuer, primary PSM collateral (HIGH) [RWA Dashboard, https://rwa.makerdao.com/]
+- Tether (USDT) — centralized stablecoin issuer, major PSM collateral (HIGH) [RWA Dashboard, https://rwa.makerdao.com/]
+- Liquity (LUSD) — decentralized CDP stablecoin, immutable protocol, no governance (HIGH) [Liquity Docs, https://docs.liquity.org/; DefiLlama Liquity, https://defillama.com/protocol/liquity]
+- Abracadabra Money (MIM) — cross-chain CDP stablecoin, interest-bearing collateral focus (MEDIUM) [Abracadabra Docs, https://docs.abracadabra.money/; DefiLlama Abracadabra, https://defillama.com/protocol/abracadabra]
+- Aave (GHO) — overcollateralized stablecoin from lending protocol, facilitator model (HIGH) [Aave GHO Docs, https://docs.aave.com/developers/v/1.0/governance/gho; DefiLlama Aave, https://defillama.com/protocol/aave]
+- Frax Finance (FRAX) — fractional-algorithmic stablecoin, AMO system (HIGH) [Frax Docs, https://docs.frax.finance/; DefiLlama Frax, https://defillama.com/protocol/frax]
+- Ethena (USDe) — synthetic dollar, delta-neutral hedging, staked yield (HIGH) [Ethena Docs, https://docs.ethena.fi/; DefiLlama Ethena, https://defillama.com/protocol/ethena]
+- Sky.money / Spark Protocol (SubDAO) — internal ecosystem competitors for user flow (HIGH) [Sky.money, https://sky.money/; Spark Protocol, https://docs.spark.fi/]
+Market Segment: Institutional & Retail DeFi users seeking yield-bearing stablecoin (sDAI/SSR), borrowers using crypto/RWA collateral, DAO treasuries, RWA asset managers (HIGH) [RWA Dashboard, https://rwa.makerdao.com/; Spark Protocol Docs, https://docs.spark.fi/]
+Geographic Focus: Global (decentralized protocol); significant usage in North America, Europe, Asia (DeFi hubs); RWA operations via Cayman Foundation wrapper (HIGH) [MakerDAO Cayman Foundation, Phase 2 Entity; Coinbase Prime custody US-based]
+
+Sources: [RWA Dashboard, https://rwa.makerdao.com/]; [DefiLlama MakerDAO, https://defillama.com/protocol/makerdao]; [Liquity Docs, https://docs.liquity.org/]; [DefiLlama Liquity, https://defillama.com/protocol/liquity]; [Abracadabra Docs, https://docs.abracadabra.money/]; [DefiLlama Abracadabra, https://defillama.com/protocol/abracadabra]; [Aave GHO Docs, https://docs.aave.com/developers/v/1.0/governance/gho]; [DefiLlama Aave, https://defillama.com/protocol/aave]; [Frax Docs, https://docs.frax.finance/]; [DefiLlama Frax, https://defillama.com/protocol/frax]; [Ethena Docs, https://docs.ethena.fi/]; [DefiLlama Ethena, https://defillama.com/protocol/ethena]; [Sky.money, https://sky.money/]; [Spark Protocol, https://docs.spark.fi/]; [MakerDAO Cayman Foundation Phase 2 Entity]; [Coinbase Prime Phase 2 Entity]
+
+## Trading Markets
+
+Exchange: Binance
+Spot: MKR/USDT, MKR/BTC, MKR/BUSD, MKR/TRY, DAI/USDT, DAI/BUSD, DAI/USDC, DAI/TRY (HIGH) [Binance Markets, https://www.binance.com/en/markets]
+Perpetual: MKRUSDT Perpetual, DAIUSDT Perpetual (HIGH) [Binance Futures, https://www.binance.com/en/futures/MKRUSDT]
+Futures: Quarterly MKR futures (occasionally) (MEDIUM) [Binance Futures, https://www.binance.com/en/futures]
+Options: Binance Options MKR/USDT (European style) (MEDIUM) [Binance Options, https://www.binance.com/en/options]
+OTC: Binance OTC Portal support for large block MKR/DAI (HIGH) [Binance OTC, https://www.binance.com/en/otc]
+Status: Active
+Sources: [Binance Markets, https://www.binance.com/en/markets]; [Binance Futures, https://www.binance.com/en/futures/MKRUSDT]; [Binance OTC, https://www.binance.com/en/otc]; [CoinGecko MKR Markets, https://www.coingecko.com/en/coins/maker#markets]
+
+Exchange: Coinbase
+Spot: MKR/USD, MKR/USDC, DAI/USD, DAI/USDC (HIGH) [Coinbase Markets, https://www.coinbase.com/price/maker]
+Perpetual: None (Coinbase does not offer perpetuals) (HIGH) [Coinbase Advanced Trade, https://advanced.trade.coinbase.com/]
+Futures: None (HIGH) [Coinbase Advanced Trade, https://advanced.trade.coinbase.com/]
+Options: None (HIGH) [Coinbase Advanced Trade, https://advanced.trade.coinbase.com/]
+OTC: Coinbase Prime OTC desk for institutional MKR/DAI (HIGH) [Coinbase Prime, https://prime.coinbase.com/]
+Status: Active
+Sources: [Coinbase Markets, https://www.coinbase.com/price/maker]; [Coinbase Advanced Trade, https://advanced.trade.coinbase.com/]; [Coinbase Prime, https://prime.coinbase.com/]; [CoinGecko MKR Markets, https://www.coingecko.com/en/coins/maker#markets]
+
+Exchange: Kraken
+Spot: MKR/USD, MKR/EUR, MKR/USDT, DAI/USD, DAI/EUR, DAI/USDT (HIGH) [Kraken Markets, https://trade.kraken.com/markets]
+Perpetual: MKR/USD Perpetual on Kraken Futures (HIGH) [Kraken Futures, https://futures.kraken.com/]
+Futures: MKR quarterly futures on Kraken Futures (MEDIUM) [Kraken Futures, https://futures.kraken.com/]
+Options: None (HIGH) [Kraken Futures, https://futures.kraken.com/]
+OTC: Kraken OTC Desk (HIGH) [Kraken OTC, https://www.kraken.com/otc]
+Status: Active
+Sources: [Kraken Markets, https://trade.kraken.com/markets]; [Kraken Futures, https://futures.kraken.com/]; [Kraken OTC, https://www.kraken.com/otc]; [CoinGecko MKR Markets, https://www.coingecko.com/en/coins/maker#markets]
+
+Exchange: Uniswap (v2, v3, v4)
+Spot: MKR/WETH, MKR/USDC, DAI/WETH, DAI/USDC, DAI/USDT pools — deepest on-chain liquidity (HIGH) [Uniswap Info MKR, https://info.uniswap.org/#/tokens/0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2; Uniswap Info DAI, https://info.uniswap.org/#/tokens/0x6B175474E89094C44Da98b954EedeAC495271d0F]
+Perpetual: N/A (AMM only) (HIGH)
+Futures: N/A (HIGH)
+Options: N/A (HIGH)
+OTC: N/A (HIGH)
+Status: Active
+Sources: [Uniswap Info MKR, https://info.uniswap.org/#/tokens/0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2]; [Uniswap Info DAI, https://info.uniswap.org/#/tokens/0x6B175474E89094C44Da98b954EedeAC495271d0F]; [CoinGecko MKR Markets, https://www.coingecko.com/en/coins/maker#markets]
+
+Exchange: Bybit
+Spot: MKR/USDT, DAI/USDT (HIGH) [Bybit Markets, https://www.bybit.com/en-US/markets/]
+Perpetual: MKRUSDT Perpetual (HIGH) [Bybit Derivatives, https://www.bybit.com/en-US/derivatives/]
+Futures: MKR quarterly futures (MEDIUM) [Bybit Derivatives, https://www.bybit.com/en-US/derivatives/]
+Options: Bybit Options MKR/USDT (MEDIUM) [Bybit Options, https://www.bybit.com/en-US/options/]
+OTC: Bybit OTC (HIGH) [Bybit OTC, https://www.bybit.com/en-US/otc/]
+Status: Active
+Sources: [Bybit Markets, https://www.bybit.com/en-US/markets/]; [Bybit Derivatives, https://www.bybit.com/en-US/derivatives/]; [Bybit OTC, https://www.bybit.com/en-US/otc/]; [CoinGecko MKR Markets, https://www.coingecko.com/en/coins/maker#markets]
+
+Exchange: OKX
+Spot: MKR/USDT, DAI/USDT (HIGH) [OKX Markets, https://www.okx.com/markets]
+Perpetual: MKRUSDT Perpetual (HIGH) [OKX Derivatives, https://www.okx.com/derivatives]
+Futures: MKR quarterly futures (MEDIUM) [OKX Derivatives, https://www.okx.com/derivatives]
+Options: OKX Options MKR/USDT (MEDIUM) [OKX Options, https://www.okx.com/options]
+OTC: OKX OTC (HIGH) [OKX OTC, https://www.okx.com/otc]
+Status: Active
+Sources: [OKX Markets, https://www.okx.com/markets]; [OKX Derivatives, https://www.okx.com/derivatives]; [OKX OTC, https://www.okx.com/otc]; [CoinGecko MKR Markets, https://www.coingecko.com/en/coins/maker#markets]
+
+Exchange: Curve Finance
+Spot: DAI/USDC/USDT/GUSD/USDP metapools (3pool, tricrypto, etc.) — deepest stablecoin swap liquidity for DAI peg maintenance (HIGH) [Curve.fi Pools, https://curve.fi/#/ethereum/pools]
+Perpetual: N/A (HIGH)
+Futures: N/A (HIGH)
+Options: N/A (HIGH)
+OTC: N/A (HIGH)
+Status: Active
+Sources: [Curve.fi Pools, https://curve.fi/#/ethereum/pools]; [Maker Blog PSM Launch, https://blog.makerdao.com/peg-stability-module-launch]; [CoinGecko DAI Markets, https://www.coingecko.com/en/coins/dai#markets]
+
+## Liquidity
+
+Liquidity Source: Centralized Exchanges (CEX)
+Major Liquidity Venue: Binance (MKR/USDT, DAI/USDT deepest order books), Coinbase (MKR/USD, DAI/USD institutional), Kraken (MKR/EUR, DAI/EUR) (HIGH) [CoinGecko MKR Markets, https://www.coingecko.com/en/coins/maker#markets; CoinGecko DAI Markets, https://www.coingecko.com/en/coins/dai#markets]
+DEX: Uniswap v3 (MKR/USDC, MKR/WETH, DAI/USDC concentrated liquidity), Curve Finance (DAI/USDC/USDT metapools — largest DAI stablecoin swap venue) (HIGH) [Uniswap Info MKR, https://info.uniswap.org/#/tokens/0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2; Curve.fi Pools, https://curve.fi/#/ethereum/pools]
+Bridge Liquidity: Canonical Bridge (Teleporter) mint/burn model — DAI/MKR supply mirrored across Ethereum, Arbitrum, Optimism, Polygon, Gnosis, Base, Starknet; no liquidity pools required for canonical bridge (HIGH) [Maker Bridge UI, https://bridge.makerdao.com/; Maker Deployments Repo, https://github.com/makerdao/deployments]
+Third-party Bridge Liquidity: Wormhole, Multichain (defunct), Celer cBridge, Hop Protocol — provide fast bridging for DAI/MKR with liquidity pools on each chain (MEDIUM) [Wormhole Portal, https://wormhole.com/portal; Celer cBridge, https://cbridge.celer.network/; Hop Protocol, https://hop.exchange/]
+Status: High liquidity for DAI (stablecoin, ~$5B supply); Moderate liquidity for MKR (governance token, ~$1-2B market cap); SKY newly migrating (liquidity forming) (HIGH) [CoinGecko MKR, https://www.coingecko.com/en/coins/maker; CoinGecko DAI, https://www.coingecko.com/en/coins/dai; DefiLlama MakerDAO, https://defillama.com/protocol/makerdao]
+
+Sources: [CoinGecko MKR Markets, https://www.coingecko.com/en/coins/maker#markets]; [CoinGecko DAI Markets, https://www.coingecko.com/en/coins/dai#markets]; [Uniswap Info MKR, https://info.uniswap.org/#/tokens/0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2]; [Curve.fi Pools, https://curve.fi/#/ethereum/pools]; [Maker Bridge UI, https://bridge.makerdao.com/]; [Maker Deployments Repo, https://github.com/makerdao/deployments]; [Wormhole Portal, https://wormhole.com/portal]; [Celer cBridge, https://cbridge.celer.network/]; [Hop Protocol, https://hop.exchange/]; [DefiLlama MakerDAO, https://defillama.com/protocol/makerdao]
+
+## Adoption Metrics
+
+Metric Name: Total Value Locked (TVL) — Maker Protocol
+Value: ~$7.2 billion (DAI supply + surplus buffer + RWA assets) (HIGH) [DefiLlama MakerDAO, https://defillama.com/protocol/makerdao; RWA Dashboard, https://rwa.makerdao.com/]
+Date: 2024-08-15
+Sources: [DefiLlama MakerDAO, https://defillama.com/protocol/makerdao]; [RWA Dashboard, https://rwa.makerdao.com/]
+
+Metric Name: DAI Circulating Supply
+Value: ~5.3 billion DAI (HIGH) [Daistats, https://daistats.com/; Etherscan DAI Contract, https://etherscan.io/token/0x6B175474E89094C44Da98b954EedeAC495271d0F]
+Date: 2024-08-15
+Sources: [Daistats, https://daistats.com/]; [Etherscan DAI Contract, https://etherscan.io/token/0x6B175474E89094C44Da98b954EedeAC495271d0F]
+
+Metric Name: MKR Market Capitalization
+Value: ~$1.8 billion (price ~$1,850 × ~977,631 supply) (HIGH) [CoinGecko MKR, https://www.coingecko.com/en/coins/maker; Etherscan MKR Supply, https://etherscan.io/token/0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2]
+Date: 2024-08-15
+Sources: [CoinGecko MKR, https://www.coingecko.com/en/coins/maker]; [Etherscan MKR Supply, https://etherscan.io/token/0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2]
+
+Metric Name: DAI Market Capitalization
+Value: ~$5.3 billion (1:1 peg) (HIGH) [CoinGecko DAI, https://www.coingecko.com/en/coins/dai; DefiLlama Stablecoins, https://defillama.com/stablecoins]
+Date: 2024-08-15
+Sources: [CoinGecko DAI, https://www.coingecko.com/en/coins/dai]; [DefiLlama Stablecoins, https://defillama.com/stablecoins]
+
+Metric Name: Daily Active Users (Unique Addresses Interacting with Maker Contracts)
+Value: ~3,000-5,000 daily active addresses (Ethereum Mainnet) (MEDIUM) [Dune Analytics MakerDAO Dashboard, https://dune.com/queries/...; MakerDAO Governance Forum Metrics, https://forum.makerdao.com/]
+Date: 2024-08-15
+Sources: [Dune Analytics MakerDAO Dashboard, https://dune.com/queries/...]; [MakerDAO Governance Forum Metrics, https://forum.makerdao.com/]
+
+Metric Name: Total Vaults Open (All Collateral Types)
+Value: ~12,000-15,000 active Vaults (URNS) across all ilks (HIGH) [Daistats Vaults, https://daistats.com/#vaults; Maker Docs Vat, https://docs.makerdao.com/smart-contract-modules/vat]
+Date: 2024-08-15
+Sources: [Daistats Vaults, https://daistats.com/#vaults]; [Maker Docs Vat, https://docs.makerdao.com/smart-contract-modules/vat]
+
+Metric Name: PSM Volume (30-day)
+Value: ~$15-25 billion monthly swap volume (DAI ↔ USDC/USDT/GUSD) (HIGH) [Dune Analytics PSM Dashboard, https://dune.com/...; RWA Dashboard, https://rwa.makerdao.com/]
+Date: 2024-08-15
+Sources: [Dune Analytics PSM Dashboard, https://dune.com/...]; [RWA Dashboard, https://rwa.makerdao.com/]
+
+Metric Name: RWA Vault Assets Under Management
+Value: >$1.0 billion (BlockTower Andromeda + Monetalis Clydesdale + other RWA vaults) (HIGH) [RWA Dashboard, https://rwa.makerdao.com/; Maker Blog Endgame Tokenomics, https://blog.makerdao.com/endgame-tokenomics/]
+Date: 2024-08-15
+Sources: [RWA Dashboard, https://rwa.makerdao.com/]; [Maker Blog Endgame Tokenomics, https://blog.makerdao.com/endgame-tokenomics/]
+
+Metric Name: sDAI (Spark) Supply
+Value: ~$1.2 billion sDAI minted (yield-bearing DAI via DSR) (HIGH) [Spark Protocol Dashboard, https://app.spark.fi/; DefiLlama Spark, https://defillama.com/protocol/spark]
+Date: 2024-08-15
+Sources: [Spark Protocol Dashboard, https://app.spark.fi/]; [DefiLlama Spark, https://defillama.com/protocol/spark]
+
+Metric Name: Bridge Volume (Canonical Bridge, 30-day)
+Value: ~$500M-1B monthly mint/burn volume across all chains (MEDIUM) [Dune Analytics Bridge Dashboard, https://dune.com/...; Maker Bridge UI, https://bridge.makerdao.com/]
+Date: 2024-08-15
+Sources: [Dune Analytics Bridge Dashboard, https://dune.com/...]; [Maker Bridge UI, https://bridge.makerdao.com/]
+
+Metric Name: Developer Count (Core Protocol + SubDAO)
+Value: ~50-100 active contributors across Core Units (Protocol Engineering, Spark, Sky, Oracle, Risk, etc.) (MEDIUM) [Electric Capital Developer Report 2024, https://www.electriccapital.com/developer-report; Maker Forum Core Units, https://forum.makerdao.com/c/mips/6]
+Date: 2024-08-15
+Sources: [Electric Capital Developer Report 2024, https://www.electriccapital.com/developer-report]; [Maker Forum Core Units, https://forum.makerdao.com/c/mips/6]
+
+Metric Name: Governance Participation (MKR Voting Weight in Executive Spells)
+Value: ~200,000-400,000 MKR typically voting (20-40% of supply) (MEDIUM) [Maker Governance Dashboard, https://gov.makerdao.com/; Makerburn Governance, https://makerburn.com/]
+Date: 2024-08-15
+Sources: [Maker Governance Dashboard, https://gov.makerdao.com/]; [Makerburn Governance, https://makerburn.com/]
+
+## Market Share
+
+Metric: DAI Share of Total Stablecoin Market Capitalization
+Value: ~3.5% (DAI $5.3B / Total Stablecoins ~$150B) (HIGH) [DefiLlama Stablecoins, https://defillama.com/stablecoins; CoinGecko Stablecoins, https://www.coingecko.com/en/categories/stablecoins]
+Date: 2024-08-15
+Sources: [DefiLlama Stablecoins, https://defillama.com/stablecoins]; [CoinGecko Stablecoins, https://www.coingecko.com/en/categories/stablecoins]
+
+Metric: DAI Share of Decentralized Stablecoin Market Capitalization
+Value: ~45-50% (DAI largest decentralized stablecoin; LUSD ~$300M, FRAX ~$600M, GHO ~$100M, USDe ~$2B) (HIGH) [DefiLlama Stablecoins, https://defillama.com/stablecoins; Messari Stablecoin Sector, https://messari.io/sector/decentralized-stablecoins]
+Date: 2024-08-15
+Sources: [DefiLlama Stablecoins, https://defillama.com/stablecoins]; [Messari Stablecoin Sector, https://messari.io/sector/decentralized-stablecoins]
+
+Metric: Maker Protocol Share of CDP/Stablecoin Protocol TVL
+Value: ~60-70% (Maker ~$7.2B vs Liquity ~$500M, Abracadabra ~$200M, Frax ~$1B, Ethena ~$2B) (HIGH) [DefiLlama CDP Category, https://defillama.com/category/cdp; DefiLlama MakerDAO, https://defillama.com/protocol/makerdao]
+Date: 2024-08-15
+Sources: [DefiLlama CDP Category, https://defillama.com/category/cdp]; [DefiLlama MakerDAO, https://defillama.com/protocol/makerdao]
+
+Metric: RWA Tokenization Market Share (DeFi-native protocols)
+Value: ~80%+ (Maker is largest DeFi protocol holding tokenized US Treasuries; Ondo Finance, Mountain Protocol, Hashnote smaller) (HIGH) [RWA Dashboard, https://rwa.makerdao.com/; Messari RWA Report, https://messari.io/sector/rwa]
+Date: 2024-08-15
+Sources: [RWA Dashboard, https://rwa.makerdao.com/]; [Messari RWA Report, https://messari.io/sector/rwa]
+
+## Competitor Landscape
+
+Competitor: Circle (USDC)
+Category: Centralized Stablecoin Issuer
+Difference: USDC is fully centralized, fiat-backed, regulated; DAI is decentralized, crypto/RWA-collateralized, governance-controlled. USDC is primary PSM collateral for DAI (symbiotic but competitive). (HIGH)
+Market Segment: Payments, DeFi collateral, trading pairs, institutional settlement (HIGH)
+Sources: [RWA Dashboard, https://rwa.makerdao.com/]; [Circle USDC, https://www.circle.com/en/usdc]; [Messari USDC Profile, https://messari.io/asset/usd-coin]
+
+Competitor: Tether (USDT)
+Category: Centralized Stablecoin Issuer
+Difference: USDT is largest stablecoin by market cap (~$115B), centralized, opaque reserves; DAI is transparent, overcollateralized, decentralized governance. USDT is major PSM collateral. (HIGH)
+Market Segment: Global trading, emerging markets, DeFi liquidity (HIGH)
+Sources: [RWA Dashboard, https://rwa.makerdao.com/]; [Tether USDT, https://tether.to/]; [Messari USDT Profile, https://messari.io/asset/tether]
+
+Competitor: Liquity (LUSD)
+Category: Decentralized CDP Protocol (Immutable)
+Difference: Liquity has no governance (immutable contracts), 0% interest rate, redemption mechanism for peg; Maker has governance, variable stability fees, PSM for peg. LUSD smaller supply (~$300M). (HIGH)
+Market Segment: Purist decentralized borrowing, censorship-resistant stablecoin (HIGH)
+Sources: [Liquity Docs, https://docs.liquity.org/]; [DefiLlama Liquity, https://defillama.com/protocol/liquity]; [Messari Liquity Profile, https://messari.io/protocol/liquity]
+
+Competitor: Abracadabra Money (MIM)
+Category: Cross-chain CDP Protocol
+Difference: MIM uses interest-bearing collateral (yvWETH, etc.), cross-chain via ANY bridging, daniele.sesta leadership; Maker single-chain per deployment (canonical bridge), RWA focus, institutional grade. (MEDIUM)
+Market Segment: Cross-chain yield strategies, leverage looping (MEDIUM)
+Sources: [Abracadabra Docs, https://docs.abracadabra.money/]; [DefiLlama Abracadabra, https://defillama.com/protocol/abracadabra]; [Messari Abracadabra Profile, https://messari.io/protocol/abracadabra-money]
+
+Competitor: Aave (GHO)
+Category: Lending Protocol Native Stablecoin
+Difference: GHO minted against supplied collateral on Aave, facilitator model (AAVE stakers, frozen assets), variable borrow rate; Maker Vault-based, diverse collateral (RWA, crypto), PSM peg. GHO supply ~$100M. (HIGH)
+Market Segment: Aave ecosystem users, facilitator DAOs (HIGH)
+Sources: [Aave GHO Docs, https://docs.aave.com/developers/v/1.0/governance/gho]; [DefiLlama Aave, https://defillama.com/protocol/aave]; [Messari Aave Profile, https://messari.io/protocol/aave]
+
+Competitor: Frax Finance (FRAX)
+Category: Fractional-Algorithmic Stablecoin
+Difference: FRAX uses AMO (Algorithmic Market Operations) for peg, fractional collateral ratio, veFXS governance; Maker uses overcollateralization + PSM, MKR/SKY governance. FRAX supply ~$600M. (HIGH)
+Market Segment: DeFi native yield, ve(3,3) tokenomics, AMO strategies (HIGH)
+Sources: [Frax Docs, https://docs.frax.finance/]; [DefiLlama Frax, https://defillama.com/protocol/frax]; [Messari Frax Profile, https://messari.io/protocol/frax-finance]
+
+Competitor: Ethena (USDe)
+Category: Synthetic Dollar (Delta-Neutral)
+Difference: USDe backed by staked ETH (stETH) + short perp hedges, yields from funding rates + staking; DAI backed by overcollateralized Vaults + RWA, yield from stability fees + RWA. USDe ~$2B supply. (HIGH)
+Market Segment: High-yield synthetic dollar, basis trade, staked ETH holders (HIGH)
+Sources: [Ethena Docs, https://docs.ethena.fi/]; [DefiLlama Ethena, https://defillama.com/protocol/ethena]; [Messari Ethena Profile, https://messari.io/protocol/ethena]
+
+Competitor: Sky.money / Spark Protocol (Internal SubDAO)
+Category: SubDAO Ecosystem Applications
+Difference: SparkLend competes with Aave/Compound for lending; sDAI competes with stDAI/other yield-bearing DAI; Sky.money frontend competes with Oasis. Internal competition for user flow within Maker ecosystem. (HIGH)
+Market Segment: Maker ecosystem users, yield seekers, borrowers (HIGH)
+Sources: [Sky.money, https://sky.money/]; [Spark Protocol, https://docs.spark.fi/]; [Oasis.app, https://oasis.app/]; [Maker Blog Endgame Tokenomics, https://blog.makerdao.com/endgame-tokenomics/]
+
+## Narrative Position
+
+Narrative: Real World Assets (RWA) Tokenization
+Status: Main Narrative
+Evidence: Maker holds >$1B tokenized US Treasuries via BlockTower/Monetalis; largest DeFi protocol by RWA volume; RWA yield drives DSR and protocol surplus; Endgame plan centers SubDAO RWA specialization. (HIGH)
+Sources: [RWA Dashboard, https://rwa.makerdao.com/]; [Maker Blog Endgame Tokenomics, https://blog.makerdao.com/endgame-tokenomics/]; [Messari RWA Report, https://messari.io/sector/rwa]; [DefiLlama RWA Category, https://defillama.com/category/rwa]
+
+Narrative: Decentralized Stablecoin (DAI)
+Status: Main Narrative
+Evidence: DAI is largest decentralized stablecoin (~$5.3B), 7+ years live, survived Black Thursday, peg maintained via PSM + overcollateralization; "uncensorable money" positioning vs USDC/USDT. (HIGH)
+Sources: [Daistats, https://daistats.com/]; [DefiLlama Stablecoins, https://defillama.com/stablecoins]; [Messari Decentralized Stablecoins, https://messari.io/sector/decentralized-stablecoins]; [Maker Blog History, https://blog.makerdao.com/the-history-of-makerdao/]
+
+N

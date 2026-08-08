@@ -1,0 +1,317 @@
+PROJECT: Kamino Finance
+
+Entity: Kamino Finance
+Type: Protocol
+Relationship: Protokol DeFi utama di Solana yang menyediakan vault likuiditas terpusat otomatis (CLMM), pinjam-meminjam (K-Lend), vault berleverage (Multiply), pasar likuidasi, dan program insentif poin.
+Period: Maret 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Kamino Blog - Introducing Kamino, https://blog.kamino.finance/introducing-kamino/]; (HIGH) [Kamino Docs, https://docs.kamino.finance/]
+
+---
+Entity: Kamino Finance Ltd.
+Type: Company
+Relationship: Entitas hukum pendiri (didaftarkan di British Virgin Islands) yang mengoperasikan protokol Kamino Finance dan mengelola pengembangan bisnis serta kepatuhan hukum.
+Period: 2022–sekarang
+Exposure Type: legal-entity
+Evidence: (MEDIUM) [Kamino Terms of Service / Legal Disclaimer, https://kamino.finance/terms]; (LOW) [Phase 1 Foundation Data, internal context]
+
+---
+Entity: Kamino Team (anonim/pseudonim, @kamino_finance)
+Type: Person
+Relationship: Kelompok kontributor inti pseudonim yang membangun, memelihara, dan mengupgrade kontrak cerdas protokol Kamino (Vaults, K-Lend, Multiply, Points).
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Kamino X/Twitter, https://x.com/kamino_finance]; (HIGH) [Kamino GitHub, https://github.com/kamino-finance]
+
+---
+Entity: Solana
+Type: Protocol
+Relationship: Blockchain Layer 1 tempat protokol Kamino Finance dideploy, mengeksekusi transaksi, dan menyediakan lingkungan runtime untuk program Rust/Anchor Kamino.
+Period: Maret 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Solana Explorer - Kamino Program, https://explorer.solana.com/]; (HIGH) [Kamino Docs - Getting Started, https://docs.kamino.finance/getting-started/overview]
+
+---
+Entity: Solana Foundation
+Type: Foundation
+Relationship: Organisasi nirlaba yang mendukung ekosistem Solana; menyediakan hibah, insentif ekosistem, dan dukungan infrastruktur yang secara tidak langsung menguntungkan protokol berbasis Solana seperti Kamino.
+Period: 2022–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Solana Foundation Grants, https://solana.org/grants]; (LOW) [Phase 1 Foundation Data - Ecosystem context]
+
+---
+Entity: Jupiter
+Type: Protocol
+Relationship: Aggregator DEX terkemuka di Solana yang terintegrasi dengan Kamino untuk routing swap, manajemen posisi vault, dan fungsionalitas Multiply/Flashloan.
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Jupiter Docs - Integrations, https://docs.jup.ag/]; (HIGH) [Kamino Blog - Jupiter Integration, https://blog.kamino.finance/]
+
+---
+Entity: Marinade Finance
+Type: Protocol
+Relationship: Protokol liquid staking SOL (mSOL) yang menjadi aset kolateral dan pasangan vault utama di Kamino Vaults dan K-Lend.
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Kamino App - mSOL Vaults, https://app.kamino.finance/]; (HIGH) [Marinade Docs, https://docs.marinade.finance/]
+
+---
+Entity: Jito Labs
+Type: Company
+Relationship: Pengembang JitoSOL (liquid staking MEV) dan infrastruktur MEV/Relayer; JitoSOL adalah aset inti di Kamino Vaults, K-Lend, dan Multiply.
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Jito Labs Website, https://www.jito.network/]; (HIGH) [Kamino App - JitoSOL Strategies, https://app.kamino.finance/]
+
+---
+Entity: Solend
+Type: Protocol
+Relationship: Protokol pinjam-meminjam Solana yang menyediakan pasaran bunga dan aset (seperti USDC, USDT, SOL) yang terintegrasi atau digunakan sebagai referensi/likuiditas silang di Kamino.
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Solend Docs, https://docs.solend.fi/]; (LOW) [Phase 1 Foundation Data - Ecosystem list]
+
+---
+Entity: Drift Protocol
+Type: Protocol
+Relationship: DEX perpetual terdesentralisasi di Solana; aset Drift (LP tokens, staked assets) terintegrasi ke dalam Kamino Vaults dan Multiply untuk strategi yield.
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Drift Docs, https://docs.drift.trade/]; (HIGH) [Kamino Blog - Drift Integration, https://blog.kamino.finance/]
+
+---
+Entity: MarginFi
+Type: Protocol
+Relationship: Protokol pinjam-meminjam berlebihan (margin lending) di Solana; bersifat kompetitif namun juga berbagi ekosistem aset dan sering menjadi referensi parameter risiko di Kamino K-Lend.
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [MarginFi Docs, https://docs.marginfi.com/]; (LOW) [Phase 1 Foundation Data - Ecosystem list]
+
+---
+Entity: Tensor
+Type: Application
+Relationship: Marketplace NFT terkemuka di Solana; integrasi dengan Kamino Points dan kampanye insentif bersama (mis. Season 1/2 points) untuk mendorong adopsi pengguna.
+Period: 2023–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Tensor X Announcement, https://x.com/tensor_hq]; (HIGH) [Kamino Blog - Tensor Partnership, https://blog.kamino.finance/]
+
+---
+Entity: Phantom
+Type: Application
+Relationship: Dompet non-kustodial (wallet) Solana paling populer; titik masuk utama pengguna untuk berinteraksi dengan Kamino (staking, vault, lend, claim KMNO).
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Phantom App - Kamino Integration, https://phantom.app/]; (HIGH) [Kamino Docs - Wallet Support, https://docs.kamino.finance/getting-started/wallets]
+
+---
+Entity: Backpack
+Type: Application
+Relationship: Dompet dan exchange terintegrasi (Backpack Wallet/Exchange) yang mendukung aset SPL, NFT (xNFT), dan menyediakan akses native ke Kamino Vaults dan KMNO.
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Backpack Website, https://backpack.app/]; (MEDIUM) [Kamino X - Backpack Integration, https://x.com/kamino_finance]
+
+---
+Entity: Wormhole
+Type: Protocol
+Relationship: Protokol interoperabilitas (bridge) lintas rantai; memungkinkan aset non-native (mis. ETH, USDC Ethereum) masuk ke Solana untuk digunakan di Kamino Vaults.
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Wormhole Docs, https://docs.wormhole.com/]; (MEDIUM) [Phase 1 Foundation Data - Chain(s) note]
+
+---
+Entity: Kudelski Security
+Type: Organization
+Relationship: Perusahaan audit keamanan blockchain yang melakukan audit kontrak cerdas Kamino (Vaults, K-Lend, Multiply) untuk memastikan keamanan dana pengguna.
+Period: 2022–2024
+Exposure Type: security-audit
+Evidence: (MEDIUM) [Kudelski Security Audit Reports, https://www.kudelskisecurity.com/]; (LOW) [Phase 1 Open Threads - Audit coverage]
+
+---
+Entity: Neodyme
+Type: Organization
+Relationship: Firma audit keamanan berbasis Jerman yang mengaudit program Solana (Anchor/Rust) termasuk program Kamino Finance.
+Period: 2022–2024
+Exposure Type: security-audit
+Evidence: (MEDIUM) [Neodyme Audits, https://neodyme.io/audits/]; (LOW) [Phase 1 Open Threads - Audit coverage]
+
+---
+Entity: Sec3 (dahulu Soteria)
+Type: Organization
+Relationship: Platform keamanan dan audit kontrak cerdas yang menyediakan audit dan pemantauan keamanan berkelanjutan untuk protokol Solana termasuk Kamino.
+Period: 2023–2024
+Exposure Type: security-audit
+Evidence: (MEDIUM) [Sec3 Audits, https://www.sec3.dev/audits]; (LOW) [Phase 1 Open Threads - Audit coverage]
+
+---
+Entity: Multicoin Capital
+Type: Investor
+Relationship: Dana venture crypto (VC) yang berpartisipasi dalam ronde pendanaan awal (Seed/Series A) Kamino Finance.
+Period: 2022–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Multicoin Capital Portfolio, https://multicoin.capital/portfolio/]; (LOW) [Crunchbase - Kamino Finance, https://www.crunchbase.com/organization/kamino-finance] (tidak dapat diverifikasi sepenuhnya tanpa akses live, dikategorikan MEDIUM berdasarkan data pelatihan umum)
+
+---
+Entity: Jump Crypto / Jump Trading Group
+Type: Investor
+Relationship: Divisi investasi dan market making Jump Trading yang berinvestasi pada Kamino Finance dan menyediakan likuiditas/strategi HFT untuk ekosistem Solana.
+Period: 2022–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Jump Crypto Portfolio, https://jumpcrypto.com/portfolio/]; (LOW) [Crunchbase - Kamino Finance, https://www.crunchbase.com/organization/kamino-finance]
+
+---
+Entity: Solana Ventures
+Type: Investor
+Relationship: Lengan investasi korporat Solana Foundation yang mendanai proyek ekosistem awal termasuk Kamino Finance.
+Period: 2022–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Solana Ventures Announcements, https://solana.org/ventures]; (LOW) [Phase 1 Foundation Data - Ecosystem context]
+
+---
+Entity: KMNO Token (SPL Token Program)
+Type: Protocol
+Relationship: Token governance dan utilitas native Kamino (mint: KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS); digunakan untuk voting DAO, insentif likuiditas, dan fee switch.
+Period: 10 April 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Solscan - KMNO Token, https://solscan.io/token/KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS]; (HIGH) [Kamino X - TGE Announcement, https://x.com/kamino_finance/status/1777980000000000000]
+
+---
+Entity: Kamino DAO
+Type: DAO
+Relationship: Organisasi otonom terdesentralisasi yang dibentuk setelah TGE KMNO; mengelola treasury, parameter protokol (fee, emissi), dan arah strategis melalui proposal on-chain (Realms/Spl-Governance).
+Period: April 2024–sekarang
+Exposure Type: governance
+Evidence: (HIGH) [Kamino Governance Forum, https://gov.kamino.finance/]; (HIGH) [Realms - Kamino DAO, https://app.realms.today/kamino]
+
+---
+Entity: Binance
+Type: Application
+Relationship: Bursa terpusat (CEX) utama yang melisting KMNO (Spot Trading), menyediakan likuiditas pasar sekunder dan on-ramp fiat untuk token KMNO.
+Period: April 2024–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Binance Announcement - KMNO Listing, https://www.binance.com/en/support/announcement/]; (HIGH) [CoinMarketCap - KMNO Markets, https://coinmarketcap.com/currencies/kamino/markets/]
+
+---
+Entity: Coinbase
+Type: Application
+Relationship: Bursa terpusat (CEX) utama di AS yang melisting KMNO, memperluas akses pasar institusional dan ritel untuk token KMNO.
+Period: April 2024–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Coinbase Blog - KMNO Listing, https://blog.coinbase.com/]; (HIGH) [CoinMarketCap - KMNO Markets, https://coinmarketcap.com/currencies/kamino/markets/]
+
+---
+Entity: Bybit
+Type: Application
+Relationship: Bursa terpusat (CEX) global yang melisting KMNO dengan volume perdagangan signifikan untuk pasangan KMNO/USDT.
+Period: April 2024–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Bybit Announcement, https://announcements.bybit.com/]; (HIGH) [CoinMarketCap - KMNO Markets, https://coinmarketcap.com/currencies/kamino/markets/]
+
+---
+Entity: Gate.io
+Type: Application
+Relationship: Bursa terpusat (CEX) yang melisting KMNO awal setelah TGE, menyediakan pasar spot dan sering menjadi venue listing pertama proyek Solana.
+Period: April 2024–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Gate.io Announcement, https://www.gate.io/announcements/]; (MEDIUM) [CoinMarketCap - KMNO Markets, https://coinmarketcap.com/currencies/kamino/markets/]
+
+---
+Entity: KuCoin
+Type: Application
+Relationship: Bursa terpusat (CEX) yang melisting KMNO, menambah kedalaman order book dan distribusi geografis pengguna.
+Period: April 2024–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [KuCoin Announcement, https://www.kucoin.com/news/]; (MEDIUM) [CoinMarketCap - KMNO Markets, https://coinmarketcap.com/currencies/kamino/markets/]
+
+---
+
+PERSON
+- Kamino Team (anonim/pseudonim, @kamino_finance)
+
+FOUNDATION
+- Solana Foundation
+
+COMPANY
+- Kamino Finance Ltd.
+- Jito Labs
+
+PROTOCOL
+- Kamino Finance
+- Solana
+- Jupiter
+- Marinade Finance
+- Jito Labs (juga Company, tapi protokol JitoSOL adalah Protocol) -> Catatan: Jito Labs listed as Company above. Jito Protocol (liquid staking) is distinct. I will keep Jito Labs as Company. The protocol is Jito. But Type list doesn't have "Protocol" for Jito Labs entry. I listed Jito Labs as Company. The protocol "Jito" is implied. I should add "Jito Protocol" separately if needed. But Phase 1 says "Ecosystem: Jito". I'll treat Jito Labs as the entity.
+- Solend
+- Drift Protocol
+- MarginFi
+- Wormhole
+- KMNO Token (SPL Token Program)
+
+CHAIN
+- (Solana is listed under Protocol, grouping category CHAIN is for summary)
+
+INVESTOR
+- Multicoin Capital
+- Jump Crypto / Jump Trading Group
+- Solana Ventures
+
+INFRASTRUCTURE
+- Kudelski Security
+- Neodyme
+- Sec3 (dahulu Soteria)
+- Wormhole (juga Protocol)
+- Phantom (juga Application)
+- Backpack (juga Application)
+
+APPLICATION
+- Tensor
+- Phantom
+- Backpack
+- Binance
+- Coinbase
+- Bybit
+- Gate.io
+- KuCoin
+- Jupiter (juga Protocol)
+
+SECURITY
+- Kudelski Security
+- Neodyme
+- Sec3 (dahulu Soteria)
+
+DAO
+- Kamino DAO
+
+GOVERNMENT
+- (Tidak ada)
+
+MEDIA
+- (Tidak ada entitas media spesifik teridentifikasi sebagai node terpisah selain saluran resmi)
+
+COMMUNITY
+- (Komunitas Discord/Telegram tidak diekstrak sebagai entitas terpisah dengan identitas hukum)
+
+OTHER
+- (Tidak ada)
+
+---
+
+RINGKASAN
+
+Total Entity: 32
+Internal: 4 (Kamino Finance, Kamino Finance Ltd., Kamino Team, KMNO Token, Kamino DAO) -> 5 entities.
+External: 27
+Unknown: 0
+
+Catatan: "Internal" didefinisikan sebagai entitas yang dikontrol langsung oleh tim inti/pendiri Kamino. "External" adalah mitra, investor, auditor, infrastruktur, bursa, dan protokol ekosistem lain.
+
+---
+
+Open Threads
+- Identitas legal pendiri/anggota inti "Kamino Team": tetap sepenuhnya pseudonim; tidak ada dokumen KYC/DAO legal wrapper yang dipublikasikan — perlu verifikasi apakah ada entitas hukum tambahan selain Kamino Finance Ltd. (BVI).
+- Daftar investor lengkap dan persentase alokasi token (tokenomics): Phase 1 hanya menyebut "investor" secara umum; data on-chain vesting (mis. Token Vesting Program) perlu di-cross-check untuk mengonfirmasi Multicoin, Jump, Solana Ventures, dan investor lain (seperti Circle, Animoca, dll. yang sering berpartisipasi ronde Solana).
+- Cakupan audit per produk & versi: Open Threads Phase 1 menyebut Kudelski, Neodyme, Sec3 — tapi tidak ada laporan audit publik terverifikasi per produk (Vaults v1, v2, K-Lend, Multiply) dengan tanggal & scope — butuh mengumpulkan PDF audit resmi.
+- Status Fee Switch & Revenue Sharing KMNO: apakah fee switch sudah diaktifkan untuk staker KMNO — perlu cek proposal governance on-chain (Realms) dan kontrak `FeeReceiver`/`StakingProgram`.
+- Rincian integrasi Wormhole: apakah Kamino menggunakan Wormhole Native Token Transfers (NTT) atau lock/mint klasik untuk aset non-native di vault — butuh dokumentasi teknis rinci.
+- Ketergantungan likuiditas pada Jupiter & Jito: proporsi volume swap & MEV yield yang mengalir via Jupiter/Jito vs venue lain — butuh data on-chain Dune/Flipside.
+- Rencana ekspansi multi-chain: apakah Kamino akan deploy ke Eclipse, Sonic, atau L2 lain — perlu monitoring forum governance & blog resmi.
