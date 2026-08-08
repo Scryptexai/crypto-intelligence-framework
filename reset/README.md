@@ -74,6 +74,35 @@ content but specific broken phases (each printed with the exact `--redo-phases` 
 fix it), and projects never started (all phases empty — the normal queue picks these up, no
 decision needed).
 
+`--audit-json` prints the same classification as JSON for a script to consume, plus the split
+`--audit` doesn't show: `phase11_todo` (clear on phases 1-10, no audit yet) vs `phase11_done`.
+
+## Running the whole repair programme unattended
+
+`run_pipeline_stages.sh` chains the stages the maintainer agreed, in order, in one command:
+
+```bash
+./reset/run_pipeline_stages.sh --dry-run     # print the exact plan; no API calls, no writes
+./reset/run_pipeline_stages.sh               # the real thing (expect a day or more)
+./reset/run_pipeline_stages.sh --stages phase11,publish
+```
+
+| stage | what it does |
+|---|---|
+| `repair` | every project `--audit-json` calls broken → targeted `--redo-phases` regeneration |
+| `publish` | `./run.sh build`, `git commit`, `git push` (opt-in), `./run.sh sync` |
+| `phase11` | Phase 11 for projects already clear on phases 1-10 (`phase11_todo`) |
+| `publish` | again, so the audits reach `poc/qa.json` and the database |
+
+**No state file and no hardcoded project list.** Every stage recomputes its work from disk, so
+a run killed halfway doesn't redo what it already fixed, and a list can't go stale over a run
+that spans days. The one thing disk state can't express — "this project has failed repeatedly,
+stop paying for it" — is `reset/stage_attempts.log` plus `PIPELINE_MAX_ATTEMPTS` (default 3).
+
+`reset/systemd/` has the unit + timer to run this on a VPS, and a README covering the four
+things that will bite you (chief among them: `TimeoutStartSec=infinity`, without which systemd
+kills the run after 90 seconds).
+
 ## Files
 
 - `phase_01_foundation.txt` … `phase_10_knowledge.txt` — 10 of the 11 Track C phase prompts, extracted verbatim
@@ -184,8 +213,17 @@ After a `--commit` run (or once you've committed the projects you've reviewed), 
   failed one's output as context, so fabricating a skip would poison everything after it. The script logs
   the failure and moves to the next project; re-running the script later resumes the stalled project exactly
   where it left off (see resumability above).
-- **Never auto-runs `./run.sh` / `./run.sh sync`, in test or commit mode** — a real, cautionary example of
-  why: an early version of this script did trigger them automatically, and a single-phase test run ended up
-  scanning every other unrelated `data_project/` folder and attempting a database sync before anyone had
-  looked at the new output's quality. Ingesting and syncing are always a separate, deliberate, manual step
-  now.
+- **`run_deepseek_reset.py` never auto-runs `./run.sh` / `./run.sh sync`, in test or commit mode** — a real,
+  cautionary example of why: an early version of this script did trigger them automatically, and a
+  single-phase test run ended up scanning every other unrelated `data_project/` folder and attempting a
+  database sync before anyone had looked at the new output's quality. Ingesting and syncing stay a separate,
+  deliberate step.
+
+  Two later additions opt back into that deliberately, and neither weakens the rule — both are gated behind a
+  flag you have to type, and both only reach the database *after* a project has passed `verify_10_phases`
+  and `ingest.py`'s own validator:
+
+  - `--auto-sync` (with `--phases-limit 10`) syncs one project at a time, as it passes.
+  - `run_pipeline_stages.sh` runs `./run.sh build` and `./run.sh sync` as its `publish` stage. That script's
+    entire purpose is to be unattended, so "a human decides when to sync" is replaced by "the quality gate
+    decides" — the same gate, just without the wait.

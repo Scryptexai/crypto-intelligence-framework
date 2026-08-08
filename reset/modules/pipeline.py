@@ -30,15 +30,25 @@ SYNC_TABLES = ("projects,entities,knowledge_items,evidence_items,events,"
 
 
 def promote_to_data_project(name: str, src_dir) -> None:
-    """Copies phases 1-10 (NOT phase 11 -- deliberately deferred) into data_project/<name>/.
-    Only called after validate.verify_10_phases() passes."""
+    """Copies the generated phases into data_project/<name>/.
+
+    Only called after validate.verify_10_phases() passes, and only from a non-commit run --
+    a --commit run already writes straight into data_project/, so there is nothing to move.
+
+    Phases 1-10 always. Phase 11 only when it holds real content: it is usually an empty
+    scaffold (deliberately deferred), and copying a 0-byte file over a real audit produced by
+    an earlier pass would silently destroy it.
+    """
     dest_dir = config.DATA_PROJECT_ROOT / name
     dest_dir.mkdir(parents=True, exist_ok=True)
-    for num, key in config.PHASES[:10]:
+    for num, key in config.PHASES:
         src = src_dir / f"{num:02d}-{key}.docx"
-        if src.exists():
-            (dest_dir / f"{num:02d}-{key}.docx").write_text(
-                src.read_text(encoding="utf-8"), encoding="utf-8")
+        if not src.exists():
+            continue
+        text = src.read_text(encoding="utf-8")
+        if num == 11 and len(text.strip()) < config.MIN_PHASE_CHARS:
+            continue
+        (dest_dir / f"{num:02d}-{key}.docx").write_text(text, encoding="utf-8")
 
 
 def _run(cmd: list) -> subprocess.CompletedProcess:

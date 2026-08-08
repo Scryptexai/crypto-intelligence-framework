@@ -93,10 +93,18 @@ def run_project(name: str, providers, dry_run: bool,
         plog(f"⚠ phases saved with unresolved spec checks: {unresolved} "
              f"(see reset/repairs.log -- a check failing across many projects is a prompt bug)")
 
-    # --phases-limit 10 is the explicit signal that Phase 11 is being deliberately deferred:
-    # run every project through 1-10 first, do Phase 11 per-project later. Run the real
-    # quality gate and auto-promote on a pass.
-    if phases_limit == 10 and not dry_run:
+    # Finalise whenever the run actually covered phases 1-10, which is the input the quality
+    # gate and every extractor read:
+    #   10 -- Phase 11 deliberately deferred (the bulk-repair mode)
+    #   11 -- the later per-project Phase 11 pass over an already-clean project
+    #    0 -- an ordinary full run, all 11 phases in one go
+    # A smaller --phases-limit is a partial/test run and is left alone: verify_10_phases would
+    # fail on phases that were never asked for.
+    #
+    # 11 and 0 were added 2026-08-08. Without them a Phase 11 pass wrote 11-conflict.docx and
+    # stopped -- the dossier was never rebuilt, so extract_qa.py kept parsing a dossier with no
+    # Phase 11 in it and poc/qa.json stayed at one project no matter how many audits ran.
+    if phases_limit in (0, 10, 11) and not dry_run:
         _finalise(name, proj_dir, output_root, auto_sync, plog)
     return True
 

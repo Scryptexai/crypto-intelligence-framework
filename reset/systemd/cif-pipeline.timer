@@ -1,0 +1,25 @@
+[Unit]
+Description=Run the CIF research pipeline daily
+Documentation=file:///opt/crypto-intelligence-framework/reset/systemd/README.md
+
+[Timer]
+Unit=cif-pipeline.service
+
+# Ten minutes after boot, so a reboot mid-programme resumes on its own rather than waiting
+# out the rest of the day.
+OnBootSec=10min
+
+# 24h after the previous run FINISHED, not after it started. With OnCalendar the timer would
+# tick while a 30-hour run was still going and the elapsed schedule would drift; measuring
+# from inactive means "a day of rest between runs" no matter how long a run takes.
+OnUnitInactiveSec=24h
+
+# Catch up on a firing missed while the box was off.
+Persistent=true
+
+# Nothing here is time-critical; let systemd spread the load.
+AccuracySec=1min
+RandomizedDelaySec=5min
+
+[Install]
+WantedBy=timers.target

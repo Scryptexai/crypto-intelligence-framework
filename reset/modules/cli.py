@@ -5,7 +5,9 @@ Kept separate from runner.py so the pipeline can be driven from other code (a te
 notebook, a future scheduler) without going through argparse.
 """
 import argparse
+import json
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 from . import config, runner, validate
@@ -50,6 +52,11 @@ def build_parser() -> argparse.ArgumentParser:
     ap.add_argument("--audit", action="store_true",
                     help="diagnose what's already on disk (per project, per phase) and exit. "
                          "Makes no API calls and writes nothing.")
+    ap.add_argument("--audit-json", action="store_true",
+                    help="same inspection as --audit but printed as JSON on stdout, for a "
+                         "driver script to consume (see reset/run_pipeline_stages.sh). Adds "
+                         "the phase-11 split --audit doesn't show: which clean projects still "
+                         "need it. Also makes no API calls and writes nothing.")
     ap.add_argument("--redo-phases",
                     help="comma-separated phase numbers to regenerate for the selected "
                          "project(s), e.g. '9,10' or '2,3'. Deletes just those phase files "
@@ -58,21 +65,36 @@ def build_parser() -> argparse.ArgumentParser:
     return ap
 
 
-def _audit(projects: list, output_root: Path) -> int:
-    """Per-phase verdict for projects that already have files on disk.
+def _classify(projects: list, output_root: Path) -> tuple:
+    """Sorts every project with files on disk into clean / broken / not-started.
 
     Three outcomes, kept apart because they need different actions: a project where EVERY
     phase is empty simply hasn't been started (the queue will pick it up on the next run and
     it needs no decision), whereas a project with real content in some phases and problems in
     others is the one worth a targeted --redo-phases. Lumping them together buried 5 genuinely
     broken projects under 39 untouched scaffolds.
+
+    Returns (clean, broken, not_started, dirs) where broken is [(name, {phase: [problem]})]
+    and dirs maps every classified name to the directory it was read from.
     """
-    roots = {config.DATA_PROJECT_ROOT, output_root}
-    clean, broken, not_started = [], [], []
+    # Ordered and deduplicated, with the real dataset first. This was a set until 2026-08-08,
+    # which made the verdict for any project present in BOTH roots depend on set iteration
+    # order -- i.e. on PYTHONHASHSEED, so it changed between runs of the same command. Aptos
+    # is the live example: a stale reset/tmp_test/Aptos/ from an old test run sat next to the
+    # real data_project/Aptos/, and consecutive audits reported "phases 2,3,9,10 broken" and
+    # "phase 9 broken" for it. Harmless while a human read the output; not harmless once a
+    # driver script regenerates whatever the audit names.
+    #
+    # data_project/ wins because that is the dataset that ships, and because the fix command
+    # --audit prints is a --commit command, which writes there regardless of what was read.
+    roots = [config.DATA_PROJECT_ROOT] + [r for r in (output_root,)
+                                          if r != config.DATA_PROJECT_ROOT]
+    clean, broken, not_started, dirs = [], [], [], {}
     for name in projects:
         proj_dir = next((r / name for r in roots if (r / name).is_dir()), None)
         if proj_dir is None:
             continue
+        dirs[name] = proj_dir
         report = validate.diagnose_project(name, proj_dir)
         bad = {k: v for k, v in report.items() if v != ["ok"]}
         if not bad:
@@ -81,6 +103,53 @@ def _audit(projects: list, output_root: Path) -> int:
             not_started.append(name)
         else:
             broken.append((name, bad))
+    return clean, broken, not_started, dirs
+
+
+def _phases_of(bad: dict) -> list:
+    """The phase numbers behind a --audit "needs attention" entry, e.g. {"09-behavioral": ...}
+    -> [9]. This is what --redo-phases takes."""
+    return sorted(int(p.split("-")[0]) for p in bad)
+
+
+def _audit_json(projects: list, output_root: Path) -> int:
+    """--audit's classification as JSON, plus the phase-11 split, for reset/run_pipeline_stages.sh.
+
+    Deliberately recomputed from disk on every call rather than written once to a state file.
+    The staged driver runs for a day or more and repairs projects as it goes, so a list frozen
+    at the start is wrong by the time the later stages read it -- exactly the drift that makes
+    a hardcoded "group B" go stale mid-run.
+
+    phase11_todo encodes the maintainer's rule directly: Phase 11 is only for projects already
+    clear on phases 1-10. A project that is broken, or never started, is not in it -- running
+    an audit of phases that don't exist yet would produce a confident QA report about nothing.
+    """
+    clean, broken, not_started, dirs = _classify(projects, output_root)
+
+    phase11_done, phase11_todo = [], []
+    for name in clean:
+        path = dirs[name] / "11-conflict.docx"
+        done = (path.exists()
+                and len(path.read_text(encoding="utf-8", errors="replace").strip())
+                >= config.MIN_PHASE_CHARS)
+        (phase11_done if done else phase11_todo).append(name)
+
+    print(json.dumps({
+        "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "output_root": str(output_root),
+        "clean": sorted(clean),
+        "broken": [{"project": name, "phases": _phases_of(bad), "problems": bad}
+                   for name, bad in sorted(broken)],
+        "not_started": sorted(not_started),
+        "phase11_done": sorted(phase11_done),
+        "phase11_todo": sorted(phase11_todo),
+    }, indent=2))
+    return 0
+
+
+def _audit(projects: list, output_root: Path) -> int:
+    """Human-readable per-phase verdict for projects that already have files on disk."""
+    clean, broken, not_started, _ = _classify(projects, output_root)
 
     if not (clean or broken or not_started):
         print("no projects with files on disk matched the selection")
@@ -93,7 +162,7 @@ def _audit(projects: list, output_root: Path) -> int:
     if broken:
         print(f"✗ {len(broken)} project(s) need attention:\n")
         for name, bad in sorted(broken):
-            phases = ",".join(str(int(p.split('-')[0])) for p in sorted(bad))
+            phases = ",".join(str(n) for n in _phases_of(bad))
             print(f"  {name}")
             for phase, problems in sorted(bad.items()):
                 print(f"      {phase:16} {', '.join(problems)}")
@@ -151,6 +220,8 @@ def main(argv=None) -> None:
         if args.projects_limit:
             projects = projects[: args.projects_limit]
 
+    if args.audit_json:
+        sys.exit(_audit_json(projects, output_root))
     if args.audit:
         sys.exit(_audit(projects, output_root))
 
