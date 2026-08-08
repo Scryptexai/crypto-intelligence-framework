@@ -45,6 +45,19 @@ PHASE11_STAGES = [
     ("11d", "phase_11d_scoring.txt", [(9, "behavioral"), (10, "knowledge")]),
 ]
 
+# Phase 9 (Behavioral) is split into three sequential calls on the SAME running conversation,
+# for the same reason Phase 11 is split into four: the gateway kills any single generation
+# that runs past ~300s (measured twice on Lido, 2026-08-08: HTTP 504 at 310s and 306s). A
+# complete Phase 9 averages ~27,500 chars / ~7,850 tokens of output across the 28 real
+# dossiers on disk, which cannot finish in time on this backend. Splitting the OUTPUT ask
+# three ways (input stays the same -- it is the phases 1-8 context and cannot shrink) puts
+# each call comfortably under the limit. Ordered so each stage is roughly a third of the work.
+PHASE9_STAGES = [
+    ("9a", "phase_09a_objectives.txt"),
+    ("9b", "phase_09b_patterns.txt"),
+    ("9c", "phase_09c_risk.txt"),
+]
+
 MAX_TOKENS = int(os.environ.get("RESET_MAX_TOKENS", "14000"))
 # Phase 11b alone carries almost everything the old single-call Phase 11 produced (the real
 # Arbitrum Phase 11 section is ~38.9k chars, ~9.7k tokens estimated -- already over the old

@@ -17,6 +17,53 @@ def existing_phase_ok(path: Path) -> bool:
     return path.exists() and len(path.read_text(encoding="utf-8").strip()) >= config.MIN_PHASE_CHARS
 
 
+def _run_staged_phase_9(name: str, messages: list, proj_dir: Path, base_url: str, token: str,
+                        model: str, plog) -> str:
+    """Phase 9 as three sequential calls on the running conversation (config.PHASE9_STAGES).
+
+    Same root cause as Phase 11's four-stage split, measured independently here: the gateway
+    kills any single generation past ~300s (HTTP 504 at 310s and 306s on two consecutive Lido
+    attempts, 2026-08-08), and a complete Phase 9 averages ~7,850 output tokens -- far more
+    than this backend can produce in five minutes. Only the OUTPUT ask can shrink; the input
+    is the phases 1-8 context and is what makes the analysis possible at all, so it stays.
+
+    Unlike Phase 11, these stages run ON the running conversation rather than a freshly built
+    one: Phase 9 is pure analysis over phases 1-8 and needs that context, and each completed
+    stage stays in the conversation so a later stage can refer back to what it already
+    established instead of contradicting it.
+
+    Per-stage resumability via 09-stage-*.tmp mirrors run_phase_11: if stage 9c times out,
+    re-running does not pay for 9a and 9b again.
+    """
+    parts = []
+    for stage_key, prompt_file in config.PHASE9_STAGES:
+        tmp_path = proj_dir / f"09-stage-{stage_key}.tmp"
+        if tmp_path.exists() and len(tmp_path.read_text(encoding="utf-8").strip()) >= 200:
+            response = tmp_path.read_text(encoding="utf-8")
+            plog(f"phase {stage_key}: already done, resuming from {tmp_path.name} (no API call)")
+        else:
+            plog(f"phase {stage_key}: sending ({prompt_file})...")
+            messages.append({"role": "user",
+                             "content": prompts.load_stage_prompt(prompt_file)})
+            response = call_with_retries(messages, base_url, token, model,
+                                         f"{name} phase {stage_key}")
+            tmp_path.write_text(response, encoding="utf-8")
+            messages.append({"role": "assistant", "content": response})
+            # Shrink the stage prompt now its answer is in context, same reasoning as
+            # prompts.prompt_placeholder for ordinary phases.
+            messages[-2]["content"] = f"[Phase {stage_key} instructions were sent here; " \
+                                      f"see that stage's output below.]"
+            plog(f"phase {stage_key}: done ({len(response)} chars)")
+            if stage_key != config.PHASE9_STAGES[-1][0]:
+                time.sleep(config.PHASE_SLEEP_SECONDS)
+        parts.append(response.strip())
+
+    combined = prompts.ensure_project_header("\n\n".join(parts), name)
+    for stage_key, _ in config.PHASE9_STAGES:
+        (proj_dir / f"09-stage-{stage_key}.tmp").unlink(missing_ok=True)
+    return combined
+
+
 def run_phase(name: str, num: int, key: str, messages: list, proj_dir: Path, base_url: str,
               token: str, model: str, plog) -> tuple:
     """Generate one ordinary phase (1-10), self-repairing format failures, and save it.
@@ -27,6 +74,25 @@ def run_phase(name: str, num: int, key: str, messages: list, proj_dir: Path, bas
     Returns (text, remaining_failures).
     """
     out_path = proj_dir / f"{num:02d}-{key}.docx"
+
+    if num == 9:
+        # Generated in three stages (see _run_staged_phase_9); the stages already appended
+        # themselves to `messages`, so the single-prompt bookkeeping below is skipped. Spec
+        # checks still run against the assembled result, and self-repair is deliberately NOT
+        # applied here: a repair asks for a complete rewrite in one call, which is the exact
+        # thing that cannot finish inside the gateway's timeout for this phase.
+        from . import specs
+        text = _run_staged_phase_9(name, messages, proj_dir, base_url, token, model, plog)
+        failures = specs.run_checks(num, key, name, text)
+        if failures:
+            plog(f"phase {num:02d}-{key}: ⚠ assembled from stages but {len(failures)} check(s) "
+                 f"still failing: {', '.join(c.name for c, _ in failures)}")
+        text, failures = _keep_better(out_path, text, failures, num, key, name, plog)
+        out_path.write_text(text, encoding="utf-8")
+        plog(f"phase {num:02d}-{key}: done ({len(text)} chars, "
+             f"{len(config.PHASE9_STAGES)}-stage split) -> {out_path}")
+        return text, failures
+
     prompt_template = prompts.load_phase_prompt(num, key)
     prompt = prompt_template.replace("<NAMA PROJECT>", name) if num == 1 else prompt_template
 

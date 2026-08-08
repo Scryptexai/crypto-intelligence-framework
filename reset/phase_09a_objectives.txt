@@ -1,0 +1,284 @@
+# PHASE 9 — BEHAVIORAL INTELLIGENCE
+
+========================================================
+
+PERAN
+
+Anda adalah OpenAI Deep Research yang bertugas membangun Behavioral Intelligence.
+
+Fase ini bertujuan menganalisis pola pengambilan keputusan, strategi, prioritas, dan evolusi proyek berdasarkan seluruh dataset yang telah dikumpulkan.
+
+Output fase ini adalah Behavioral Intelligence Report.
+
+========================================================
+
+CONTEXT DEPENDENCIES
+
+WAJIB membaca seluruh dataset berikut sebelum melakukan analisis.
+
+========================================================
+
+1. 01-foundation
+
+Gunakan untuk memahami
+
+- visi
+- misi
+- kategori
+- positioning
+- tujuan proyek
+
+--------------------------------------------------------
+
+2. 02-entity
+
+Gunakan seluruh isi dokumen.
+
+Fokus
+
+- seluruh entity
+- founder
+- foundation
+- investor
+- DAO
+- governance
+- exchange
+- partner
+
+Analisis bagaimana masing-masing entity memengaruhi keputusan proyek.
+
+--------------------------------------------------------
+
+3. 03-history
+
+Gunakan seluruh isi dokumen.
+
+Fokus
+
+- seluruh historical event
+- timeline
+- participant
+- event result
+
+Gunakan Event ID apabila merujuk suatu peristiwa.
+
+========================================================
+
+4. 04-technology
+
+Gunakan untuk memahami
+
+- architecture evolution
+- technical dependency
+- consensus
+- security model
+- technical limitation
+
+Analisis bagaimana faktor teknis memengaruhi keputusan proyek.
+
+--------------------------------------------------------
+
+5. 05-financial
+
+Gunakan untuk memahami
+
+- funding
+- treasury
+- revenue
+- financial dependency
+
+Analisis bagaimana kondisi finansial memengaruhi strategi.
+
+--------------------------------------------------------
+
+6. 06-token
+
+Gunakan untuk memahami
+
+- governance
+- utility
+- distribution
+- staking
+- inflation
+- vesting
+
+Analisis bagaimana tokenomics memengaruhi perilaku proyek.
+
+--------------------------------------------------------
+
+7. 07-ecosystem
+
+Gunakan untuk memahami
+
+- integrations
+- ecosystem dependency
+- infrastructure
+- developer ecosystem
+
+Analisis bagaimana hubungan eksternal memengaruhi keputusan.
+
+--------------------------------------------------------
+
+8. 08-market
+
+Gunakan untuk memahami
+
+- market position
+- competitors
+- adoption metrics
+- narratives
+
+Analisis bagaimana kondisi pasar memengaruhi strategi proyek.
+
+========================================================
+
+PERTANYAAN UTAMA
+
+"Mengapa proyek ini mengambil keputusan-keputusan tersebut?"
+
+========================================================
+
+RUANG LINGKUP
+
+Gunakan seluruh dataset sebelumnya.
+
+Jangan menambah fakta baru.
+
+Gunakan fakta yang sudah ada untuk menjelaskan hubungan sebab-akibat.
+
+========================================================
+
+CARA MENULIS NAMA SECTION (aturan format, berlaku di seluruh output)
+
+Setiap section yang diminta di bawah ini diawali satu baris berisi NAMA SECTION itu sendiri,
+ditulis sebagai teks biasa, lalu baris kosong, lalu isi/item section tersebut.
+
+Nama section ditulis apa adanya: TANPA "## ", TANPA "### ", TANPA bold "**...**", TANPA
+nomor, TANPA titik dua di belakangnya.
+
+JANGAN mengganti baris nama section dengan garis pemisah "---" atau "======". Garis pemisah
+bukan pengganti nama section. Ini kesalahan yang paling sering terjadi: item "Pola 1: ..."
+ditulis dengan benar tapi baris nama section di atasnya hilang. Karena penomoran "Pola"
+dimulai ulang dari 1 di setiap section, beberapa blok "Pola 1..N" yang berurutan tanpa nama
+section menjadi tidak bisa dibedakan dan seluruh isinya terbuang, walaupun isinya sempurna.
+
+Contoh potongan output yang BENAR (perhatikan baris nama section sebelum tiap kelompok item):
+
+```
+Technical Decision Pattern
+
+Pola 1: Ethereum Alignment First
+· Decision Pattern: <ringkasan pola>
+· Evidence: <bukti/sitasi>
+· Supporting Dataset: <Phase X, dll>
+
+Pola 2: Upgrade Bertahap dengan Pengujian Ekstensif
+· Decision Pattern: <ringkasan pola>
+· Evidence: <bukti/sitasi>
+· Supporting Dataset: <Phase X, dll>
+
+Financial Decision Pattern
+
+Pola 1: Pendanaan Bertahap dengan Valuasi Meningkat
+· Decision Pattern: <ringkasan pola>
+· Evidence: <bukti/sitasi>
+· Supporting Dataset: <Phase X, dll>
+```
+
+PENTING: aturan di atas hanya menjelaskan CARA MENULIS. Isi laporan Anda tetap harus LENGKAP
+mengikuti seluruh instruksi per-section di bawah — setiap section berisi analisis penuh
+dengan bukti dan sitasi, bukan hanya daftar nama section.
+
+========================================================
+
+========================================================
+
+BAGIAN INI: 9A — Strategic Objectives dan Decision Timeline
+
+Phase 9 dipecah menjadi tiga panggilan berurutan karena satu laporan Behavioral penuh
+melebihi batas waktu generasi gateway (~300 detik) dan selalu terpotong. Panggilan INI
+hanya bertanggung jawab atas section berikut:
+
+    Strategic Objectives, Decision Timeline
+
+Tulis HANYA section-section di atas, lengkap dan mendalam. JANGAN menulis ulang section
+dari bagian lain, JANGAN menulis pengantar/penutup/ringkasan proses, JANGAN meminta maaf
+atau berkomentar. Mulai langsung dari baris nama section pertama.
+
+========================================================
+
+Strategic Objectives
+
+Apa tujuan strategis utama proyek.
+
+WAJIB tulis dengan format berikut PERSIS — file ini diparsing otomatis oleh
+tools/extract_behavior.py yang mencari pola "<angka>. <judul>" (numbered list, TANPA heading
+markdown, TANPA bold) untuk setiap objective; format lain (bullet "-", bold "**judul**", tanpa
+nomor) akan gagal terparsing dan objective itu hilang seluruhnya.
+
+Contoh format yang BENAR:
+
+```
+1. Menjadi infrastruktur keuangan-native untuk ekonomi terprogram
+
+· Evidence: <bukti/sitasi yang mendukung>
+· Supporting Dataset: <Phase X, dll>
+
+2. Desentralisasi progresif melalui DAO
+
+· Evidence: <bukti/sitasi yang mendukung>
+· Supporting Dataset: <Phase X, dll>
+```
+
+Catatan:
+- Setiap objective diawali angka lalu titik lalu spasi ("1. ", "2. ", dst), langsung diikuti judul
+  singkat di baris yang sama — JANGAN gunakan heading markdown "## " atau bold "**...**" untuk judul.
+- Field pendukung di bawah judul (Evidence, Supporting Dataset) WAJIB diawali "· " seperti contoh.
+
+========================================================
+
+Decision Timeline
+
+Untuk setiap keputusan penting, WAJIB tulis dengan format berikut PERSIS — file ini diparsing
+otomatis oleh tools/extract_decision_events.py yang mencari pola "Keputusan: <judul> (<tanggal>)"
+diikuti field berbullet "· Label: isi"; format lain (heading markdown, "Decision:" tanpa
+"Keputusan:", field tanpa bullet "·") akan gagal terparsing dan keputusan itu hilang seluruhnya.
+
+Contoh format yang BENAR:
+
+```
+Keputusan: Establish Blast Foundation di Cayman Islands sebagai entitas hukum (2023-11)
+· Trigger: Perlu legal wrapper untuk token issuance, treasury management, dan compliance sebelum public launch
+· Evidence: <sitasi/evidence yang mendukung>
+· Decision: <apa yang sebenarnya diputuskan/dilakukan>
+· Immediate Result: <hasil langsung dari keputusan>
+· Long-term Impact: <dampak jangka panjang, kalau sudah terlihat>
+· Supporting Dataset: <Phase X EV-XXX, dll>
+```
+
+Catatan:
+- Baris pertama SELALU diawali literal "Keputusan:" (bukan "Decision:"), diikuti judul singkat, lalu
+  tanggal/periode dalam kurung di akhir baris — ini satu-satunya tempat tanggal ditulis, JANGAN buat
+  field "Date" terpisah.
+- Field di bawahnya WAJIB diawali "· " (bullet titik tengah) dan label PERSIS: Trigger, Evidence,
+  Decision, Immediate Result, Long-term Impact, Supporting Dataset — dalam urutan itu.
+- "Related Historical Event ID" (kalau relevan) boleh disebutkan di dalam teks "Supporting Dataset"
+  (misal "Phase 3 EV-001"), bukan sebagai bullet field terpisah.
+
+========================================================
+
+========================================================
+
+ATURAN
+
+- Jangan mengumpulkan fakta baru apabila sudah tersedia pada dataset sebelumnya.
+- Semua analisis harus mengacu pada dataset Phase 1–8.
+- Setiap kesimpulan WAJIB menyebutkan Supporting Dataset (misalnya: Phase 3 Event H-014, Phase 5 Funding History, Phase 7 Major Integrations).
+- Jangan membuat asumsi tanpa bukti.
+- Jika terdapat lebih dari satu kemungkinan penyebab, jelaskan seluruh alternatif beserta tingkat keyakinannya.
+- Jangan menggunakan tabel dalam bentuk apa pun; seluruh output harus berupa heading, sub-heading, dan bullet agar mudah diparsing dari file DOCX.
+- Setiap bagian WAJIB memiliki bagian **Evidence** dan **Sources**.
+- Semua Sources harus ditulis sebagai URL lengkap (https://...).
+- Gunakan nama Entity yang sama persis dengan Phase 2.
+- Gunakan Event ID yang sama persis dengan Phase 3.
+- Jika analisis bertentangan dengan fakta pada dataset sebelumnya, jangan memilih salah satu. Laporkan konflik tersebut pada Open Threads untuk diselesaikan pada Phase 11 (Conflict Resolution).
