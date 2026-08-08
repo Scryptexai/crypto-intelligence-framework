@@ -92,17 +92,22 @@ def run_phase(name: str, num: int, key: str, messages: list, proj_dir: Path, pro
     """
     out_path = proj_dir / f"{num:02d}-{key}.docx"
 
-    if num == 9 and not _has_heavy_provider(providers):
-        # No provider can take Phase 9 in one call, so fall back to three stages (see
-        # _run_staged_phase_9). The stages already appended themselves to `messages`, so the
-        # single-prompt bookkeeping below is skipped. Spec checks still run against the
-        # assembled result; self-repair is deliberately NOT applied, because a repair asks for
-        # a complete rewrite in one call -- exactly what cannot finish inside the timeout here.
+    if num == 9 and not config.STREAM_RESPONSES and not _has_heavy_provider(providers):
+        # LAST RESORT ONLY -- reached when streaming has been disabled (RESET_NO_STREAM=1) and
+        # no heavy-capable provider is configured, i.e. the request is going out in the exact
+        # shape that hits the gateway's ~300s non-streaming ceiling.
         #
-        # Splitting is the correct remedy for THIS gateway, not a workaround: the limit it
-        # hits is generation time, and cutting the output per call is the only lever that
-        # moves it (config.PHASE9_STAGES has the measurements). It is skipped entirely when a
-        # faster provider is available, since one call is simpler and re-pays no prefill.
+        # Splitting is NOT the preferred fix, and is off by default, because it is unsound for
+        # this data: the three stage outputs are concatenated, and nothing stops a stage from
+        # re-emitting a section that belongs to another. extract_behavior._sections() merges
+        # repeated headers (setdefault + append), and "Pola N:" numbering restarts inside every
+        # section, so a duplicated heading silently fuses two groups and corrupts the item
+        # numbering. The extractors were never designed for a phase assembled from pieces.
+        #
+        # The real remedy is streaming (config.STREAM_RESPONSES): the ceiling was an artifact
+        # of sending a non-streaming request that returns no bytes until generation ends, not
+        # of Phase 9 being too large. With streaming on -- the default -- Phase 9 goes through
+        # this function's normal single-prompt path like every other phase.
         from . import specs
         text = _run_staged_phase_9(name, messages, proj_dir, providers, plog)
         failures = specs.run_checks(num, key, name, text)

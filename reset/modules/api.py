@@ -47,18 +47,63 @@ def extract_text(body: dict) -> str:
     raise ValueError(f"unrecognized response shape, no text found: {json.dumps(body)[:800]}")
 
 
+def _read_sse_stream(resp) -> str:
+    """Accumulate an OpenAI-style SSE completion into one string.
+
+    Wire format is one `data: {json}` line per chunk, terminated by `data: [DONE]`, with
+    blank lines and `:`-prefixed keep-alive comments interleaved. The text lives in
+    choices[0].delta.content (streaming) though some gateways send a full `message` object on
+    the final chunk instead, so both are accepted.
+    """
+    parts = []
+    for raw_line in resp:
+        line = raw_line.decode("utf-8", errors="replace").strip()
+        if not line or line.startswith(":"):
+            continue  # keep-alive / comment
+        if not line.startswith("data:"):
+            continue
+        payload = line[5:].strip()
+        if payload == "[DONE]":
+            break
+        try:
+            chunk = json.loads(payload)
+        except json.JSONDecodeError:
+            continue  # a partial/garbled frame must not abort a completed generation
+        for choice in chunk.get("choices") or []:
+            piece = (choice.get("delta") or {}).get("content")
+            if piece is None:
+                piece = (choice.get("message") or {}).get("content")
+            if piece:
+                parts.append(piece)
+    text = "".join(parts)
+    if not text.strip():
+        raise RuntimeError("stream ended with no content (no data: chunks carried text)")
+    return text
+
+
 def call_model(messages: list, base_url: str, token: str, model: str,
-               max_tokens: int = None) -> str:
+               max_tokens: int = None, stream: bool = None) -> str:
     """POST to {base_url}/v1/chat/completions (OpenAI-compatible -- see extract_text's
     docstring for how this was confirmed against the real endpoint, 2026-08-05). Raises on
-    any failure (network, timeout, non-200, unparseable body) -- caller handles retry."""
+    any failure (network, timeout, non-200, unparseable body) -- caller handles retry.
+
+    Streaming is ON by default, and that is what makes long phases possible at all. The
+    gateway returns HTTP 504 on any NON-streaming request whose generation runs past ~300s
+    (measured twice on Lido at 310s and 306s) -- the classic proxy "no bytes received yet"
+    timeout, since a non-streaming response sends nothing until the whole completion is
+    finished. With stream=true the first token arrives within seconds and data keeps flowing,
+    so that idle timer never fires and the generation may take as long as it needs. The client
+    still bounds the whole thing with REQUEST_TIMEOUT_SECONDS.
+
+    This is the reason Phase 9 does not need its prompt split: the ceiling was an artifact of
+    how the request was sent, not of the phase being too big. Pass stream=False only to
+    reproduce the old behaviour.
+    """
+    if stream is None:
+        stream = config.STREAM_RESPONSES
     url = base_url.rstrip("/") + "/v1/chat/completions"
-    # Explicit stream: false -- without this, some proxies default a very large completion to
-    # SSE streaming server-side regardless of client intent; a streamed "data: {...}\n\n" body
-    # fed to json.loads() fails with the same opaque "Expecting value: line 1 column 1
-    # (char 0)" this script hit before the real cause (wrong endpoint path) was found.
     payload = {"model": model, "max_tokens": max_tokens or config.MAX_TOKENS,
-               "messages": messages, "stream": False}
+               "messages": messages, "stream": bool(stream)}
     data = json.dumps(payload).encode("utf-8")
     # Debug aid, 2026-08-05: a UA-spoofed Python request to this same URL still got the
     # gateway's fallback HTML back while an equivalent curl succeeded -- dumping the EXACT
@@ -80,6 +125,12 @@ def call_model(messages: list, base_url: str, token: str, model: str,
     try:
         with urllib.request.urlopen(req, timeout=config.REQUEST_TIMEOUT_SECONDS) as resp:
             status = resp.status
+            if stream:
+                ctype = (resp.headers.get("Content-Type") or "").lower()
+                if "text/event-stream" in ctype:
+                    return _read_sse_stream(resp)
+                # Asked for a stream, got a plain body: some gateways ignore the flag. Fall
+                # through and parse it as an ordinary JSON response rather than failing.
             raw = resp.read().decode("utf-8", errors="replace")
     except urllib.error.HTTPError as e:
         err_body = e.read().decode("utf-8", errors="replace")[:800]

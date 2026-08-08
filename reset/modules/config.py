@@ -70,6 +70,14 @@ PHASE9_STAGES = [
     ("9c", "phase_09c_risk.txt"),
 ]
 
+# Stream responses (SSE) rather than waiting for one complete JSON body. This is what lifts
+# the gateway's ~300s ceiling: a non-streaming request sends nothing until generation is
+# finished, so the proxy's "no bytes received" timer fires and returns 504 mid-generation
+# (measured on Lido at 310s and 306s). Streaming keeps data flowing from the first token, so
+# the timer never fires and a phase may take as long as it needs -- bounded only by this
+# client's REQUEST_TIMEOUT_SECONDS. Set RESET_NO_STREAM=1 to reproduce the old behaviour.
+STREAM_RESPONSES = os.environ.get("RESET_NO_STREAM", "") != "1"
+
 MAX_TOKENS = int(os.environ.get("RESET_MAX_TOKENS", "14000"))
 # Phase 11b alone carries almost everything the old single-call Phase 11 produced (the real
 # Arbitrum Phase 11 section is ~38.9k chars, ~9.7k tokens estimated -- already over the old
