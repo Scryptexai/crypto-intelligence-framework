@@ -34,6 +34,7 @@ def run_phase(name: str, num: int, key: str, messages: list, proj_dir: Path, bas
     messages.append({"role": "user", "content": prompt})
 
     text, failures = repair.generate_phase(messages, num, key, name, base_url, token, model, plog)
+    text, failures = _keep_better(out_path, text, failures, num, key, name, plog)
 
     out_path.write_text(text, encoding="utf-8")
     messages.append({"role": "assistant", "content": text})
@@ -43,6 +44,43 @@ def run_phase(name: str, num: int, key: str, messages: list, proj_dir: Path, bas
     messages[-2]["content"] = prompts.prompt_placeholder(num, key)
     plog(f"phase {num:02d}-{key}: done ({len(text)} chars) -> {out_path}")
     return text, failures
+
+
+def _keep_better(out_path: Path, text: str, failures: list, num: int, key: str, name: str,
+                 plog) -> tuple:
+    """When --redo-phases set the previous version aside as <file>.bak, keep whichever of the
+    two is actually better and drop the backup.
+
+    "Better" = fewer failed spec checks; ties go to the longer text, because the failure this
+    guards against is a regeneration that answers with a fraction of the content (a 622-char
+    stub replacing a complete 25KB phase, observed 2026-08-08) while tripping the same number
+    of checks as the real thing it overwrote.
+
+    Without this, --redo-phases was a one-way destructive operation: the old file was deleted
+    up front and whatever came back took its place, good or not.
+    """
+    backup = out_path.with_suffix(".docx.bak")
+    if not backup.exists():
+        return text, failures
+
+    old_text = backup.read_text(encoding="utf-8")
+    from . import specs
+    old_failures = specs.run_checks(num, key, name, old_text)
+
+    new_better = (len(failures), -len(text)) <= (len(old_failures), -len(old_text))
+    if new_better:
+        plog(f"phase {num:02d}-{key}: keeping the NEW output "
+             f"({len(failures)} failed check(s), {len(text)} chars) over the previous version "
+             f"({len(old_failures)} failed, {len(old_text)} chars)")
+        backup.unlink()
+        return text, failures
+
+    plog(f"phase {num:02d}-{key}: ⚠ regeneration was WORSE "
+         f"({len(failures)} failed check(s), {len(text)} chars) than the version it replaced "
+         f"({len(old_failures)} failed, {len(old_text)} chars) -- restoring the previous "
+         f"version and discarding the new one")
+    backup.unlink()
+    return old_text, old_failures
 
 
 def run_phase_11(name: str, base_url: str, token: str, model: str, proj_dir: Path) -> tuple:

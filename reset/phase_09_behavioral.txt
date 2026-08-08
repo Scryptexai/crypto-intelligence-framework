@@ -148,57 +148,46 @@ Gunakan fakta yang sudah ada untuk menjelaskan hubungan sebab-akibat.
 
 ========================================================
 
-STRUKTUR OUTPUT — BACA INI DULU SEBELUM MENULIS APA PUN
+CARA MENULIS NAMA SECTION (aturan format, berlaku di seluruh output)
 
-Nama-nama section di bawah ini BUKAN sekadar judul instruksi untuk Anda baca — setiap nama
-section WAJIB Anda TULIS ULANG PERSIS di dalam output Anda, sebagai TEKS BIASA di barisnya
-sendiri, tepat sebelum item-item section tersebut.
+Setiap section yang diminta di bawah ini diawali satu baris berisi NAMA SECTION itu sendiri,
+ditulis sebagai teks biasa, lalu baris kosong, lalu isi/item section tersebut.
 
-Output Anda WAJIB memuat 11 baris header ini, PERSIS seperti ini (huruf besar-kecil sama
-persis), berurutan, masing-masing di baris sendiri:
+Nama section ditulis apa adanya: TANPA "## ", TANPA "### ", TANPA bold "**...**", TANPA
+nomor, TANPA titik dua di belakangnya.
 
-Strategic Objectives
-Decision Timeline
-Evolution Pattern
-Technical Decision Pattern
-Financial Decision Pattern
-Ecosystem Decision Pattern
-Governance Decision Pattern
-Risk Response Pattern
-Recurring Behavioral Pattern
-Strategic Trade-offs
-Behavioral Summary
+JANGAN mengganti baris nama section dengan garis pemisah "---" atau "======". Garis pemisah
+bukan pengganti nama section. Ini kesalahan yang paling sering terjadi: item "Pola 1: ..."
+ditulis dengan benar tapi baris nama section di atasnya hilang. Karena penomoran "Pola"
+dimulai ulang dari 1 di setiap section, beberapa blok "Pola 1..N" yang berurutan tanpa nama
+section menjadi tidak bisa dibedakan dan seluruh isinya terbuang, walaupun isinya sempurna.
 
-ATURAN KERAS soal header:
-- TANPA "## ", TANPA "### ", TANPA bold "**...**", TANPA nomor, TANPA tanda titik dua.
-  Tulis apa adanya: baris berisi persis "Technical Decision Pattern" dan tidak lain.
-- JANGAN mengganti baris header dengan garis pemisah "---" atau "======". Garis pemisah
-  BUKAN pengganti nama section. Kesalahan paling sering terjadi: model menulis item
-  "Pola 1: ..." dengan benar tapi MENGHILANGKAN baris nama section di atasnya — akibatnya
-  seluruh section itu tidak terbaca dan hilang total dari database, walau isinya sempurna.
-- Penomoran item ("Pola 1:", "Pola 2:", ...) dimulai ulang dari 1 di SETIAP section. Itu
-  sebabnya baris nama section wajib ada — tanpanya enam blok "Pola 1..N" yang berurutan
-  tidak bisa dibedakan satu sama lain.
-
-Contoh potongan output yang BENAR:
+Contoh potongan output yang BENAR (perhatikan baris nama section sebelum tiap kelompok item):
 
 ```
 Technical Decision Pattern
 
 Pola 1: Ethereum Alignment First
-· Decision Pattern: ...
-· Evidence: ...
+· Decision Pattern: <ringkasan pola>
+· Evidence: <bukti/sitasi>
+· Supporting Dataset: <Phase X, dll>
 
 Pola 2: Upgrade Bertahap dengan Pengujian Ekstensif
-· Decision Pattern: ...
-· Evidence: ...
+· Decision Pattern: <ringkasan pola>
+· Evidence: <bukti/sitasi>
+· Supporting Dataset: <Phase X, dll>
 
 Financial Decision Pattern
 
 Pola 1: Pendanaan Bertahap dengan Valuasi Meningkat
-· Decision Pattern: ...
-· Evidence: ...
+· Decision Pattern: <ringkasan pola>
+· Evidence: <bukti/sitasi>
+· Supporting Dataset: <Phase X, dll>
 ```
+
+PENTING: aturan di atas hanya menjelaskan CARA MENULIS. Isi laporan Anda tetap harus LENGKAP
+mengikuti seluruh instruksi per-section di bawah — setiap section berisi analisis penuh
+dengan bukti dan sitasi, bukan hanya daftar nama section.
 
 ========================================================
 

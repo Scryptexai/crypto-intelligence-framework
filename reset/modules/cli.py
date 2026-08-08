@@ -107,7 +107,14 @@ def _audit(projects: list, output_root: Path) -> int:
 
 
 def _delete_phases(projects: list, output_root: Path, phase_nums: list) -> None:
-    """Remove the named phase files so the resume logic regenerates exactly those."""
+    """Set the named phases aside so the resume logic regenerates exactly those.
+
+    Renamed to <file>.bak rather than deleted. A regeneration can come back WORSE than what
+    it replaced -- observed live 2026-08-08, when a prompt change made the model answer Phase
+    9 with a 622-char stub, wiping Aave's complete 25KB phase (12 decision events -> 0) with
+    no way back except git. phases.run_phase compares the new output against this backup and
+    keeps whichever scores better, so a bad regeneration can no longer destroy good data.
+    """
     keys = {num: key for num, key in config.PHASES}
     for name in projects:
         for root in {config.DATA_PROJECT_ROOT, output_root}:
@@ -120,9 +127,11 @@ def _delete_phases(projects: list, output_root: Path, phase_nums: list) -> None:
                     continue
                 target = proj_dir / f"{num:02d}-{key}.docx"
                 if target.exists():
-                    target.unlink()
-                    log(f"[{name}] --redo-phases: removed {target.relative_to(config.ROOT)} "
-                        f"(will be regenerated)")
+                    backup = target.with_suffix(".docx.bak")
+                    target.replace(backup)
+                    log(f"[{name}] --redo-phases: set aside "
+                        f"{target.relative_to(config.ROOT)} -> {backup.name} "
+                        f"(regenerating; the better of the two is kept)")
 
 
 def main(argv=None) -> None:
