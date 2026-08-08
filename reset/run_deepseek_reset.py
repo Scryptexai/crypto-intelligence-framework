@@ -46,7 +46,10 @@ Credentials — read from environment only, NEVER hardcoded or logged:
                            log, or commit this value.
     ANTHROPIC_MODEL        e.g. DeepSeek-V4-Pro
 Optional tuning (sensible defaults if unset):
-    RESET_MAX_TOKENS            default 8192
+    RESET_MAX_TOKENS            default 14000 (raised from 8192 2026-08-08: Phase 9's real average
+                                 output across 9 verified projects came out to ~7769 tokens, right at
+                                 the 8192 ceiling, which is the actual cause of Phase 9 repeatedly
+                                 truncating mid-generation across 7+ projects -- not flaky content)
     RESET_REQUEST_TIMEOUT_SECS  default 900 (long prompts / big responses can be slow)
     RESET_PHASE_SLEEP_SECS      default 60   (gap between phases, same project)
     RESET_PROJECT_SLEEP_SECS    default 300  (gap between projects)
@@ -112,7 +115,7 @@ PHASE11_STAGES = [
     ("11d", "phase_11d_scoring.txt", [(9, "behavioral"), (10, "knowledge")]),
 ]
 
-MAX_TOKENS = int(os.environ.get("RESET_MAX_TOKENS", "8192"))
+MAX_TOKENS = int(os.environ.get("RESET_MAX_TOKENS", "14000"))
 # Phase 11b alone carries almost everything the old single-call Phase 11 produced (the real
 # Arbitrum Phase 11 section is ~38.9k chars, ~9.7k tokens estimated -- already over the default
 # 8192). Its own constant so phases 1-10 aren't forced to allow bigger (and slower/costlier)
