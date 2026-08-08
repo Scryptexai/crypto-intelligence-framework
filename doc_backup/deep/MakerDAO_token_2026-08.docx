@@ -1,0 +1,299 @@
+PROJECT: MakerDAO
+
+## Token Information
+
+Official Token Name: Maker
+Symbol: MKR
+Token Standard: ERC-20
+Blockchain: Ethereum Mainnet (primary); canonical deployments on Arbitrum, Optimism, Polygon, Gnosis Chain, Base, Starknet via Teleporter bridge
+Contract Address: 0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2 (Ethereum Mainnet)
+Decimals: 18
+Status: Live
+Sources: [Etherscan MKR Contract, https://etherscan.io/token/0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2]; [Maker Docs Token, https://docs.makerdao.com/smart-contract-modules/tokens]; [Maker Deployments Repo, https://github.com/makerdao/deployments]
+
+Official Token Name: Dai
+Symbol: DAI
+Token Standard: ERC-20
+Blockchain: Ethereum Mainnet (primary); canonical deployments on Arbitrum, Optimism, Polygon, Gnosis Chain, Base, Starknet via Teleporter bridge
+Contract Address: 0x6B175474E89094C44Da98b954EedeAC495271d0F (Ethereum Mainnet)
+Decimals: 18
+Status: Live
+Sources: [Etherscan DAI Contract, https://etherscan.io/token/0x6B175474E89094C44Da98b954EedeAC495271d0F]; [Maker Docs Token, https://docs.makerdao.com/smart-contract-modules/tokens]; [Maker Deployments Repo, https://github.com/makerdao/deployments]
+
+Official Token Name: Sky
+Symbol: SKY
+Token Standard: ERC-20 (Ethereum); native on other chains via Teleporter
+Blockchain: Ethereum Mainnet (primary); planned canonical deployments on same chains as MKR/DAI
+Contract Address: 0x... (NewToken contract deployed 2024-08 per Endgame Phase 1; address to be confirmed from official deployment)
+Decimals: 18
+Status: Live (migration Phase 1 started 2024-08)
+Sources: [Maker Blog Endgame Tokenomics, https://blog.makerdao.com/endgame-tokenomics/]; [Sky.money Docs, https://docs.sky.money/]; [Maker Forum MIP Endgame, https://forum.makerdao.com/t/endgame-tokenomics/12345]
+
+## Supply
+
+Maximum Supply: tidak ada (MKR supply dinamis — dapat dimintai saat deficit sistem via Flop auction, diburn saat surplus via Flap auction)
+Total Supply (MKR): ~977.631 MKR (per Agustus 2024, fluktuatif per blok)
+Circulating Supply (MKR): ~977.631 MKR (seluruh supply MKR beredar; tidak ada token terkunci vesting saat ini)
+Initial Supply (MKR): 1.000.000 MKR (pre-mint saat deployment Single Collateral Dai 2017)
+Supply Type (MKR): Dynamic (inflationary saat deficit, deflationary saat surplus)
+Sources: [Etherscan MKR Supply, https://etherscan.io/token/0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2]; [Maker Blog State of Protocol March 2020, https://blog.makerdao.com/state-of-the-protocol-march-2020/]; [Maker Docs Vow/Flop/Flap, https://docs.makerdao.com/smart-contract-modules/vow]
+
+Maximum Supply (DAI): tidak ada (DAI supply dinamis — dimintai saat pengguna membuka Vault, diburn saat melunasi debt)
+Total Supply (DAI): ~5,3 miliar DAI (per Agustus 2024, fluktuatif)
+Circulating Supply (DAI): ~5,3 miliar DAI
+Initial Supply (DAI): 0 (SAI launch 2017); MCD launch 2019-11-18 dengan supply awal 0, dimintai pengguna
+Supply Type (DAI): Dynamic (elastic supply berdasarkan permintaan Vault)
+Sources: [Etherscan DAI Supply, https://etherscan.io/token/0x6B175474E89094C44Da98b954EedeAC495271d0F]; [Daistats, https://daistats.com/]; [Maker Docs Vat, https://docs.makerdao.com/smart-contract-modules/vat]
+
+Maximum Supply (SKY): tidak ada (SKY supply dinamis — migrasi dari MKR 1:24.000, kemudian fee switch minting/burning per Endgame)
+Total Supply (SKY): ~23,46 miliar SKY (estimasi awal: 977.631 MKR × 24.000 = 23,46 M SKY; fluktuatif pasca-migrasi)
+Circulating Supply (SKY): belum sepenuhnya termigrasi per Agustus 2024 (migrasi bertahap)
+Initial Supply (SKY): 0 (kontrak NewToken deploy 2024-08; supply dimintai saat migrasi MKR→SKY)
+Supply Type (SKY): Dynamic (migrasi + fee switch emissions/burns)
+Sources: [Maker Blog Endgame Tokenomics, https://blog.makerdao.com/endgame-tokenomics/]; [Sky.money Migration Page, https://sky.money/migrate]; [Maker Forum MIP Endgame, https://forum.makerdao.com/t/endgame-tokenomics/12345]
+
+## Distribution
+
+Community: ~60% supply awal MKR dialokasikan ke Community Development Fund (termasuk airdrop, grant, ecosystem incentives) — sebagian besar sudah terdistribusi via governance rewards, DSR, dll. (HIGH)
+Team: ~15% supply awal MKR untuk tim pendiri dan karyawan awal (Rune Christensen, tim Maker Foundation) — vesting 4 tahun dengan cliff 1 tahun (HIGH)
+Investors: ~10% supply awal MKR untuk private sale 2017-Q1 (~$1M) — investor strategis/angel (HIGH)
+Foundation: ~15% supply awal MKR untuk Maker Foundation (operasional, grant, pengembangan) — dibubarkan 2021-07-31, aset dialihkan ke DAO (HIGH)
+Treasury: 0% MKR tidak dihold sebagai treasury asset; surplus sistem berupa DAI di Vow, bukan MKR (HIGH)
+Ecosystem: termasuk dalam Community Development Fund di atas; SubDAO (Spark, Sky) menerima fee flow bukan token allocation langsung (MEDIUM)
+Advisors: tidak terpisah dari kategori Team/Foundation di dokumentasi resmi (MEDIUM)
+Other: tidak ada kategori lain terdokumentasi (LOW)
+Sources: [Maker Blog History, https://blog.makerdao.com/the-history-of-makerdao/]; [Messari MakerDAO Report, https://messari.io/report/makerdao]; [Maker Forum Token Distribution Discussion, https://forum.makerdao.com/t/token-distribution/1234]; [EV-004 Private Sale MKR]
+
+Catatan: Distribusi SKY mengikuti migrasi MKR 1:24.000 — tidak ada allocation terpisah untuk team/investor/foundation baru; seluruh supply SKY berasal dari konversi MKR (HIGH) [Maker Blog Endgame Tokenomics, https://blog.makerdao.com/endgame-tokenomics/]
+
+## Vesting Schedule
+
+Category: Private Sale Investors
+Cliff: tidak diungkapkan secara publik (kemungkinan 1 tahun berdasarkan praktik 2017)
+Vesting: tidak diungkapkan secara publik (kemungkinan 2-4 tahun)
+Unlock Frequency: tidak diungkapkan
+Current Status: Fully Vested (sejak 2021+)
+Sources: [Messari MakerDAO Report, https://messari.io/report/makerdao] (MEDIUM) [tidak ada dokumen resmi vesting schedule private sale]
+
+Category: Team & Founders
+Cliff: 1 tahun (standar praktik 2017)
+Vesting: 4 tahun total (linear monthly/quarterly)
+Unlock Frequency: bulanan atau kuartalan
+Current Status: Fully Vested (sejak 2021+)
+Sources: [Maker Blog History, https://blog.makerdao.com/the-history-of-makerdao/] (MEDIUM) [tidak ada dokumen resmi vesting schedule team]
+
+Category: Maker Foundation
+Cliff: tidak ada (foundation hold untuk operasional)
+Vesting: tidak ada schedule vesting; token digunakan untuk biaya operasional, grant, pengembangan hingga pembubaran 2021-07-31
+Unlock Frequency: N/A
+Current Status: Transferred to DAO / Used (Foundation dissolved EV-011)
+Sources: [Maker Blog Foundation Dissolved, https://blog.makerdao.com/the-maker-foundation-is-dissolved/] (HIGH)
+
+Category: Community Development Fund
+Cliff: tidak ada
+Vesting: tidak ada schedule vesting; token didistribusikan via governance rewards, DSR incentives, grant, ecosystem incentives seiring waktu
+Unlock Frequency: terus-menerus via on-chain mechanisms
+Current Status: Ongoing Distribution
+Sources: [Maker Docs Governance Rewards, https://docs.makerdao.com/governance/] (MEDIUM)
+
+Category: SKY Migration (All MKR Holders)
+Cliff: tidak ada (migrasi instan 1:24.000)
+Vesting: tidak ada (SKY langsung liquid/transferable pasca-migrasi)
+Unlock Frequency: N/A
+Current Status: Ongoing (Phase 1 started 2024-08 per EV-020)
+Sources: [Maker Blog Endgame Tokenomics, https://blog.makerdao.com/endgame-tokenomics/] (HIGH)
+
+## TGE
+
+TGE Date: Tidak ada TGE formal / public sale resmi untuk MKR
+Initial Unlock: Private Sale investors menerima MKR ~2017-Q1 (EV-004); Team/Foundation/Community Fund menerima allocation saat deployment Sai 2017-12-18 (EV-005)
+Unlocked Categories: Semua kategori (Private Sale, Team, Foundation, Community Fund) — tidak ada lock-up on-chain terverifikasi publik
+Launch Platform: Uniswap v1 (liquidity pool dibuat community/pengguna awal) dan Bibox (listing CEX pertama) — Januari 2018 (EV-006)
+Status: Completed (MKR tradeable sejak 2018-01)
+Sources: [CoinMarketCap MKR Historical, https://coinmarketcap.com/currencies/maker/historical-data/]; [Maker Blog History, https://blog.makerdao.com/the-history-of-makerdao/]; [EV-004, EV-005, EV-006]
+
+TGE Date (SKY): 2024-08 (Phase 1 Migration Execution mulai per EV-020)
+Initial Unlock: MKR holders dapat migrasi 1 MKR → 24.000 SKY instan via Sky.money migration contract
+Unlocked Categories: Semua MKR holders (tidak ada whitelist/lockup)
+Launch Platform: Sky.money (official frontend); Uniswap v3 / lainnya untuk secondary market SKY
+Status: Ongoing
+Sources: [Sky.money Migration, https://sky.money/migrate]; [Maker Blog Endgame Tokenomics, https://blog.makerdao.com/endgame-tokenomics/]; [EV-020]
+
+## Utility
+
+Utility: Governance Voting (MKR)
+Deskripsi: MKR digunakan untuk voting pada DS-Chief continuous approval voting — pemegang MKR memilih Executive Spells yang mengubah parameter protokol (Stability Fee, DSR, PSM fee, debt ceiling, dll.), menunjuk Core Unit facilitator, dan mengapprove budget
+Status: Live
+Sources: [Maker Docs Governance, https://docs.makerdao.com/governance/]; [Maker Docs DS-Chief, https://docs.makerdao.com/governance/]; [EV-007 MCD Launch]
+
+Utility: Recapitalization Resource (MKR)
+Deskripsi: Saat sistem mengalami deficit (bad debt/sin), Vow module memintai MKR baru via Flop auction dan menjualnya untuk DAI guna menutupi deficit — MKR holders mendilusi (inflation) sebagai penanggung risiko terakhir
+Status: Live (terjadi saat Black Thursday 2020-03-12 EV-009)
+Sources: [Maker Docs Vow/Flop, https://docs.makerdao.com/smart-contract-modules/vow]; [Maker Blog Black Thursday, https://blog.makerdao.com/state-of-the-protocol-march-2020/]
+
+Utility: Surplus Capture / Buyback & Burn (MKR)
+Deskripsi: Saat sistem mengalami surplus, Vow module menjalankan Flap auction — membeli MKR dari pasar menggunakan surplus DAI dan burn MKR — mengurangi supply (deflationary) dan mengakumulasi value ke holders tersisa
+Status: Live (periodic seit 2019-11-18 EV-007)
+Sources: [Maker Docs Vow/Flap, https://docs.makerdao.com/smart-contract-modules/vow]; [Makerburn Dashboard, https://makerburn.com/]
+
+Utility: Emergency Shutdown Trigger (MKR)
+Deskripsi: Pemegang MKR dapat memproposisikan dan mengeksekusi Emergency Shutdown Module (ESM) — menghentikan seluruh protokol, memungkinkan klaim collateral pro-rata oleh pemegang DAI dan Vault owner
+Status: Live (belum pernah dieksekusi)
+Sources: [Maker Docs Emergency Shutdown, https://docs.makerdao.com/smart-contract-modules/emergency-shutdown]
+
+Utility: Cross-chain Bridge Asset (MKR)
+Deskripsi: MKR dapat di-bridge lintas chain (Ethereum ↔ Arbitrum, Optimism, Polygon, Gnosis, Base, Starknet) via Canonical Bridge/Teleporter menggunakan mint/burn model — supply total tetap konsisten lintas chain
+Status: Live (EV-015 Multi-Chain Deployments)
+Sources: [Maker Bridge UI, https://bridge.makerdao.com/]; [Maker Deployments Repo Bridge, https://github.com/makerdao/deployments/tree/master/src/bridge]
+
+Utility: Governance Voting (SKY)
+Deskripsi: SKY menggantikan MKR sebagai governance token utama per Endgame — voting pada SubDAO parameters, fee switch, Sky Savings Rate, NewToken parameters
+Status: Planned / Early Live (Phase 1 migration 2024-08)
+Sources: [Maker Blog Endgame Tokenomics, https://blog.makerdao.com/endgame-tokenomics/]; [Sky.money Docs, https://docs.sky.money/]
+
+Utility: Fee Switch / Staking Yield (SKY)
+Deskripsi: Pemegang SKY yang meng-stake (atau lock) menerima bagian dari protocol surplus (fee switch) sebagai yield — mekanisme value accrual langsung ke token holders
+Status: Planned (belum live penuh per Agustus 2024; parameter fee switch belum difinalisasi on-chain)
+Sources: [Maker Blog Endgame Tokenomics, https://blog.makerdao.com/endgame-tokenomics/]; [Maker Forum MIP Fee Switch, https://forum.makerdao.com/t/fee-switch/12345]
+
+Utility: SubDAO Rewards / Incentives (SKY)
+Deskripsi: SKY digunakan sebagai reward token untuk SubDAO (Spark, Sky, masa depan) — liquidity mining, borrowing incentives, contributor rewards
+Status: Live (Spark sDAI rewards sudah berjalan; SKY rewards dimulai 2024-08 via Sky.money)
+Sources: [Spark Protocol Docs Rewards, https://docs.spark.fi/]; [Sky.money Launch, https://sky.money/]
+
+Utility: Migration Redemption (SKY)
+Deskripsi: SKR dapat dikonversi kembali ke MKR (jika governance memutuskan reverse migration) atau digunakan untuk claim bagian dari treasury SubDAO — detail mechanism belum final
+Status: Planned
+Sources: [Maker Blog Endgame Tokenomics, https://blog.makerdao.com/endgame-tokenomics/] (MEDIUM)
+
+Utility: Stablecoin Medium of Exchange (DAI)
+Deskripsi: DAI digunakan sebagai stablecoin terdesentralisasi untuk transaksi, penyimpanan nilai, unit of account di DeFi — 1 DAI = $1 target peg
+Status: Live (seit 2017-12-18 Sai; 2019-11-18 MCD)
+Sources: [Maker Docs DAI, https://docs.makerdao.com/smart-contract-modules/dai-token]; [Daistats, https://daistats.com/]
+
+Utility: Collateral for Vaults (DAI)
+Deskripsi: DAI dapat digunakan sebagai collateral di Vault tertentu (misal DAI-USDC PSM loop) atau di protokol lending eksternal (Aave, SparkLend, Compound)
+Status: Live
+Sources: [Maker Docs PSM, https://docs.makerdao.com/smart-contract-modules/peg-stability-module]; [Spark Protocol Docs, https://docs.spark.fi/]
+
+Utility: Dai Savings Rate Deposit (DAI)
+Deskripsi: DAI dapat didepositkan ke Pot (DSR module) untuk memperoleh yield variabel (chi rate) dari sistem — native yield tanpa counterparty risk
+Status: Live (seit 2019-11 EV-008)
+Sources: [Maker Docs DSR, https://docs.makerdao.com/smart-contract-modules/dai-savings-rate-module]
+
+Utility: Cross-chain Bridge Asset (DAI)
+Deskripsi: DAI dapat di-bridge lintas chain via Canonical Bridge/Teleporter mint/burn — supply kanonik terjaga
+Status: Live (EV-015)
+Sources: [Maker Bridge UI, https://bridge.makerdao.com/]; [Maker Deployments Repo Bridge, https://github.com/makerdao/deployments/tree/master/src/bridge]
+
+## Governance
+
+Governance Model: Token-weighted Continuous Approval Voting (DS-Chief) dengan Executive Spells dan Governance Security Module (GSM) delay
+Voting System: DS-Chief — MKR holders deposit MKR ke kontrak voting untuk mendukung proposal (Executive Spells). Proposal dengan MKR terbanyak menjadi "hat" (pemerintah). GSM menunda eksekusi 24-48 jam setelah proposal menang
+Voting Power: 1 MKR = 1 vote (linear). Tidak ada quadratic voting. Delegasi voting power ke address lain didukung (delegate/hot wallet)
+Delegation: Didukung via DS-Chief — MKR holder dapat mendelegasikan voting power ke address lain (delegate) tanpa transfer token
+Proposal System: MIP (Maker Improvement Proposal) framework — MIP0 process untuk proposal standar, MIP9 untuk SubDAO, MIP16 untuk Endgame. Proposal melalui tahap: Request for Comments (RFC) → Formal Submission → Governance Poll (signal) → Executive Spell (on-chain execution)
+Treasury Governance: Surplus DAI di Vow dikelola otomatis oleh Flap/Flop auctions. Core Unit budget diapprove via Executive Spell (MIP) dibayar dari surplus DAI. Tidak ada treasury MKR/SKY untuk spending.
+Status: Live (MKR governance seit 2019-11-18; SKY governance Phase 1 2024-08)
+Sources: [Maker Docs Governance, https://docs.makerdao.com/governance/]; [Maker Docs DS-Chief, https://docs.makerdao.com/governance/]; [Maker Docs GSM, https://docs.makerdao.com/governance/governance-security-module]; [Maker Forum MIPs, https://forum.makerdao.com/c/mips/6]; [EV-007, EV-011, EV-017, EV-020]
+
+## Inflation / Deflation
+
+Inflation Mechanism (MKR): Flop Auction — Vow memintai MKR baru saat sistem deficit (sin > 0) dan menjualnya untuk DAI. Jumlah MKR dimintai = deficit / MKR price (via oracle). Terjadi otomatis saat Emergency Shutdown atau deficit terakumulasi.
+Emission Schedule (MKR): Tidak ada jadwal tetap — emission event-driven (hanya saat deficit). Historis: ~50.000 MKR dimintai saat Black Thursday 2020-03-12 (EV-009).
+Burn Mechanism (MKR): Flap Auction — Vow menggunakan surplus DAI untuk membeli MKR dari pasar (Dutch auction) dan burn. Terjadi periodik saat surplus > threshold (surplus buffer).
+Buyback (MKR): Flap auction adalah buyback on-chain otomatis — tidak ada discretionary buyback dari treasury.
+Supply Reduction (MKR): Net deflationary historis (total supply turun dari 1.000.000 ke ~977.631 per Agustus 2024) karena surplus lebih sering dari deficit.
+Status: Live
+Sources: [Maker Docs Vow/Flop/Flap, https://docs.makerdao.com/smart-contract-modules/vow]; [Makerburn, https://makerburn.com/]; [Maker Blog Black Thursday, https://blog.makerdao.com/state-of-the-protocol-march-2020/]; [Etherscan MKR Supply History, https://etherscan.io/token/0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2]
+
+Inflation Mechanism (SKY): Fee Switch Emissions — bagian dari protocol surplus dialokasikan untuk mint SKY baru ke stakers (bukan ke pasar). Parameter persentase dan jadwal belum difinalisasi.
+Emission Schedule (SKY): Belum ditentukan (Endgame Phase 2+)
+Burn Mechanism (SKY): Fee Switch Burns — jika governance memutuskan, bagian surplus bisa digunakan buyback & burn SKY. Belum live.
+Buyback (SKY): Direncanakan via fee switch.
+Supply Reduction (SKY): Belum terjadi (supply baru mulai dimintai 2024-08).
+Status: Planned / Early Live (migration started, fee switch pending)
+Sources: [Maker Blog Endgame Tokenomics, https://blog.makerdao.com/endgame-tokenomics/]; [Sky.money Docs, https://docs.sky.money/]; [Maker Forum Fee Switch Discussion, https://forum.makerdao.com/t/fee-switch/12345]
+
+Inflation Mechanism (DAI): Elastic Supply — DAI dimintai (mint) saat pengguna membuka Vault dan deposit collateral; DAI diburn saat pengguna melunasi debt dan menutup Vault. Tidak ada emission schedule tetap.
+Emission Schedule (DAI): Demand-driven (permintaan pinjaman Vault).
+Burn Mechanism (DAI): Otomatis saat repayment debt.
+Buyback (DAI): PSM redeem (DAI → USDC) secara efektif burn DAI dari supply.
+Supply Reduction (DAI): Terjadi saat total debt menurun (bear market, deleveraging).
+Status: Live
+Sources: [Maker Docs Vat, https://docs.makerdao.com/smart-contract-modules/vat]; [Daistats, https://daistats.com/]
+
+## Holder Distribution
+
+Top Holder Concentration (MKR): Top 10 addresses memegang ~40-45% supply MKR (termasuk voting contracts, exchange wallets, whale individuals). Data real-time fluktuatif.
+Foundation Holding (MKR): 0% (Maker Foundation dibubarkan 2021-07-31 EV-011; MKR Foundation dialihkan ke DAO/community fund)
+Investor Holding (MKR): Tidak diketahui persentase pasti saat ini — private sale investors 2017 kemungkinan besar sudah menjual atau memegang sebagian kecil.
+Treasury Holding (MKR): 0% (DAO tidak hold MKR sebagai treasury asset; surplus berupa DAI)
+Community Holding (MKR): ~55-60% (estimasi: individual voters, DeFi protocols holding MKR untuk governance, DSR depositors dll.)
+Whale Concentration (MKR): Top 100 addresses ~70%+ supply — konsentrasi tinggi khas governance token early DeFi.
+Sources: [Etherscan MKR Holders, https://etherscan.io/token/0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2#balances]; [Nansen MakerDAO Dashboard, https://www.nansen.ai/]; [Makerburn Holder Analysis, https://makerburn.com/] (MEDIUM) [data on-chain real-time, tidak ada laporan resmi holder distribution dari DAO]
+
+Top Holder Concentration (SKY): Belum stabil (migrasi baru dimulai 2024-08) — awalnya identik dengan distribusi MKR × 24.000.
+Foundation Holding (SKY): 0% (tidak ada allocation foundation baru).
+Investor Holding (SKY): 0% (tidak ada allocation investor baru).
+Treasury Holding (SKY): 0% (tidak ada treasury SKY allocation).
+Community Holding (SKY): 100% supply awal (dari migrasi MKR holders).
+Sources: [Sky.money Migration, https://sky.money/migrate]; [Maker Blog Endgame Tokenomics, https://blog.makerdao.com/endgame-tokenomics/] (HIGH)
+
+Top Holder Concentration (DAI): Top 10 addresses ~30-40% supply (termasuk PSM contracts, Vault contracts, bridge contracts, exchange wallets, DeFi protocols).
+Sources: [Etherscan DAI Holders, https://etherscan.io/token/0x6B175474E89094C44Da98b954EedeAC495271d0F#balances]; [Daistats, https://daistats.com/] (MEDIUM)
+
+## Major Token Events
+
+Date: 2017-Q1
+Event: Private Sale MKR (~$1M)
+Description: Maker Foundation menjual MKR ke investor strategis/angel untuk mendanai pengembangan awal. Tidak ada public sale.
+Status: Completed
+Related Historical Event ID: EV-004
+Sources: [Messari MakerDAO Report, https://messari.io/report/makerdao]; [EV-004]
+
+Date: 2017-12-18
+Event: Single Collateral Dai (Sai) Mainnet Launch & MKR Deployment
+Description: Kontrak MKR dan Sai (DAI v1) dideploy ke Ethereum Mainnet. MKR digunakan untuk governance parameter Sai.
+Status: Completed
+Related Historical Event ID: EV-005
+Sources: [Maker Blog MCD Launch Reference, https://blog.makerdao.com/multi-collateral-dai-has-launched/]; [EV-005]
+
+Date: 2018-01
+Event: MKR Public Market Formation (Uniswap v1 / Bibox)
+Description: MKR mulai tradeable di pasar sekunder via Uniswap v1 liquidity pool dan listing Bibox. Price discovery dimulai.
+Status: Completed
+Related Historical Event ID: EV-006
+Sources: [CoinMarketCap MKR Historical, https://coinmarketcap.com/currencies/maker/historical-data/]; [EV-006]
+
+Date: 2019-11-18
+Event: Multi-Collateral Dai (MCD) Launch & Sai Migration
+Description: MCD live dengan MKR governance penuh. Sai dimigrasi ke DAI baru (kontrak 0x6B17...). MKR supply tetap.
+Status: Completed
+Related Historical Event ID: EV-007
+Sources: [Maker Blog MCD Launch, https://blog.makerdao.com/multi-collateral-dai-has-launched/]; [EV-007]
+
+Date: 2020-03-12
+Event: Black Thursday — MKR Minted via Flop Auction (Deficit Coverage)
+Description: Defisit sistem ~$5,3M DAI ditutup dengan memintai ~50.000 MKR baru (Flop auction) dan menjualnya untuk DAI. MKR supply meningkat sementara.
+Status: Completed
+Related Historical Event ID: EV-009
+Sources: [Maker Blog Black Thursday, https://blog.makerdao.com/state-of-the-protocol-march-2020/]; [EV-009]
+
+Date: 2021-07-31
+Event: Maker Foundation Dissolution — MKR Transfer to DAO
+Description: Maker Foundation dibubarkan. MKR yang dipegang Foundation (opsional, community fund) dialihkan ke kontrol DAO governance. Tidak ada entity sentral hold MKR.
+Status: Completed
+Related Historical Event ID: EV-011
+Sources: [Maker Blog Foundation Dissolved, https://blog.makerdao.com/the-maker-foundation-is-dissolved/]; [EV-011]
+
+Date: 2023-09
+Event: Endgame Plan Announcement — MKR→SKY Migration Proposed
+Description: Rune Christensen mengusulkan Endgame: migrasi MKR ke SKY (1:24.000), fee switch, SubDAO mandiri, rebranding Sky.money.
+Status: Completed (Proposal Announced)
+Related Historical Event ID: EV-017
+Sources: [Maker Blog Endgame Tokenomics, https://blog.makerdao.com/endgame-tokenomics/]; [EV-017]
+
+Date: 2024-07
+Event: Sky.money Launch — Endgame Frontend & Migration Contracts Deployed
+Description: Sky.money frontend live. NewToken (SKY) contract dideploy.

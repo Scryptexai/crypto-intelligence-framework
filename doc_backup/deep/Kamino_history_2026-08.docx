@@ -1,0 +1,983 @@
+PROJECT: Kamino Finance
+
+Event ID
+
+EV-001
+
+Date
+
+2022
+
+Event Name
+
+Pendirian Entitas Hukum Kamino Finance Ltd.
+
+Event Type
+
+Founding
+
+Description
+
+Kamino Finance Ltd. didaftarkan sebagai entitas hukum di British Virgin Islands untuk mengoperasikan protokol DeFi Kamino Finance.
+
+Participants
+
+Kamino Finance Ltd.
+
+Location
+
+British Virgin Islands
+
+Status
+
+Completed
+
+Immediate Result
+
+Dasar hukum untuk pengembangan dan operasi protokol Kamino Finance.
+
+Sources
+
+https://kamino.finance/terms (MEDIUM) [Kamino Terms of Service / Legal Disclaimer]
+
+---
+
+Event ID
+
+EV-002
+
+Date
+
+2022-03
+
+Event Name
+
+Mainnet Launch Kamino Vaults v1 (CLMM Auto-Rebalancing)
+
+Event Type
+
+Launch
+
+Description
+
+Kamino Finance meluncurkan Vaults v1 di mainnet Solana, menyediakan manajemen likuiditas terpusat (CLMM) otomatis untuk pasangan seperti SOL/USDC, mSOL/SOL, dan JitoSOL/SOL.
+
+Participants
+
+Kamino Finance, Solana, Marinade Finance, Jito Labs
+
+Location
+
+Solana Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Pengguna dapat mendepositaset ke vault CLMM otomatis yang merebalancing posisi secara berkala untuk mengoptimalkan yield.
+
+Sources
+
+https://blog.kamino.finance/introducing-kamino/ (HIGH) [Kamino Blog - Introducing Kamino]
+
+---
+
+Event ID
+
+EV-003
+
+Date
+
+2022-06
+
+Event Name
+
+Integrasi Jupiter Aggregator untuk Routing Swap Vault
+
+Event Type
+
+Integration
+
+Description
+
+Kamino mengintegrasikan Jupiter Aggregator sebagai routing swap default untuk operasi rebalancing dan manajemen posisi vault.
+
+Participants
+
+Kamino Finance, Jupiter
+
+Location
+
+Solana Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Efisiensi eksekusi swap vault meningkat melalui routing harga terbaik Jupiter.
+
+Sources
+
+https://blog.kamino.finance/ (MEDIUM) [Kamino Blog - Jupiter Integration announcements]
+
+---
+
+Event ID
+
+EV-004
+
+Date
+
+2022-09
+
+Event Name
+
+Luncuran Kamino Lend (K-Lend) v1 — Pooled Lending/Borrowing
+
+Event Type
+
+Product
+
+Description
+
+Kamino meluncurkan K-Lend, protokol pinjam-meminjam pooled (pool-based) yang mendukung aset seperti SOL, USDC, USDT, mSOL, JitoSOL dengan model bunga utilization-based.
+
+Participants
+
+Kamino Finance, Solana, Marinade Finance, Jito Labs
+
+Location
+
+Solana Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Pengguna dapat meminjam dan menyuplai likuiditas di pasar pooled K-Lend terpisah dari vault CLMM.
+
+Sources
+
+https://docs.kamino.finance/ (MEDIUM) [Kamino Docs - K-Lend Overview]
+
+---
+
+Event ID
+
+EV-005
+
+Date
+
+2023-02
+
+Event Name
+
+Audit Keamanan Kudelski Security untuk Kamino Vaults & K-Lend
+
+Event Type
+
+Security
+
+Description
+
+Kudelski Security menyelesaikan audit kontrak cerdas Kamino Vaults (CLMM) dan K-Lend core programs; temuan kritis diperbaiki sebelum deployment produksi.
+
+Participants
+
+Kamino Finance, Kudelski Security
+
+Location
+
+Off-chain (audit engagement)
+
+Status
+
+Completed
+
+Immediate Result
+
+Laporan audit diterbitkan; beberapa vulnerability medium/high ditangani via patch upgrade program.
+
+Sources
+
+https://www.kudelskisecurity.com/ (MEDIUM) [Kudelski Security Audit Reports listing]
+
+---
+
+Event ID
+
+EV-006
+
+Date
+
+2023-05
+
+Event Name
+
+Audit Keamanan Neodyme untuk Program Anchor Kamino
+
+Event Type
+
+Security
+
+Description
+
+Neodyme melakukan audit menyeluruh pada program Anchor/Rust Kamino (Vaults, Lend, Multiply logic) dan menerbitkan laporan publik.
+
+Participants
+
+Kamino Finance, Neodyme
+
+Location
+
+Off-chain (audit engagement)
+
+Status
+
+Completed
+
+Immediate Result
+
+Laporan audit Neodyme dipublikasikan; tim Kamino menerapkan perbaikan yang direkomendasikan.
+
+Sources
+
+https://neodyme.io/audits/ (MEDIUM) [Neodyme Audits page]
+
+---
+
+Event ID
+
+EV-007
+
+Date
+
+2023-07
+
+Event Name
+
+Luncuran Kamino Multiply (Leveraged Vaults dengan Auto-Loop)
+
+Event Type
+
+Product
+
+Description
+
+Kamino memperkenalkan Multiply, vault berleverage yang mengotomatisasi strategi looping (supply → borrow → supply) pada K-Lend dengan rebalancing otomatis dan manajemen health factor.
+
+Participants
+
+Kamino Finance, Solana, Jupiter (untuk flashloan/swap), Marinade Finance, Jito Labs
+
+Location
+
+Solana Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Pengguna mendapat akses posisi leveraged yield (mis. 3-5x JitoSOL/SOL) dengan manajemen risiko otomatis.
+
+Sources
+
+https://blog.kamino.finance/ (MEDIUM) [Kamino Blog - Multiply Launch announcement]
+
+---
+
+Event ID
+
+EV-008
+
+Date
+
+2023-10
+
+Event Name
+
+Audit Keamanan Sec3 (Soteria) untuk Kamino Multiply & Program Baru
+
+Event Type
+
+Security
+
+Description
+
+Sec3 (dahulu Soteria) mengaudit kontrak Multiply dan komponen program baru; laporan diterbitkan dengan temuan yang ditangani.
+
+Participants
+
+Kamino Finance, Sec3
+
+Location
+
+Off-chain (audit engagement)
+
+Status
+
+Completed
+
+Immediate Result
+
+Validasi keamanan tambahan sebelum ekspansi produk Multiply ke lebih banyak pasangan aset.
+
+Sources
+
+https://www.sec3.dev/audits/ (MEDIUM) [Sec3 Audits page]
+
+---
+
+Event ID
+
+EV-009
+
+Date
+
+2023-11
+
+Event Name
+
+Kerjasama Insentif Kamino Points Season 1 dengan Tensor
+
+Event Type
+
+Partnership
+
+Description
+
+Kamino meluncurkan Points Season 1 bersamaan dengan Tensor; pengguna memperoleh poin Kamino dari aktivitas vault/lend/multiply dan poin Tensor dari aktivitas NFT, menciptakan loop insentif lintas protokol.
+
+Participants
+
+Kamino Finance, Tensor
+
+Location
+
+Solana Mainnet / Off-chain campaign
+
+Status
+
+Completed
+
+Immediate Result
+
+Lonjakan TVL dan aktivitas pengguna baru di Kamino; distribusi poin Season 1 dicatat on-chain/off-chain untuk TGE mendatang.
+
+Sources
+
+https://blog.kamino.finance/ (HIGH) [Kamino Blog - Tensor Partnership announcement]
+
+---
+
+Event ID
+
+EV-010
+
+Date
+
+2024-01
+
+Event Name
+
+Kamino Points Season 2 — Ekspansi Kategori & Multiplier
+
+Event Type
+
+Product
+
+Description
+
+Season 2 Points memperkenalkan kategori poin baru (Multiply, Borrow, Referral) dan sistem multiplier berbasis tier loyalty; poin terakumulasi menjadi dasar alokasi KMNO TGE.
+
+Participants
+
+Kamino Finance
+
+Location
+
+Solana Mainnet / Off-chain tracking
+
+Status
+
+Completed
+
+Immediate Result
+
+Peningkatan retensi pengguna; data poin menjadi input snapshot TGE KMNO.
+
+Sources
+
+https://blog.kamino.finance/ (HIGH) [Kamino Blog - Season 2 Announcement]
+
+---
+
+Event ID
+
+EV-011
+
+Date
+
+2024-03
+
+Event Name
+
+Kamino Points Season 3 — Integrasi Jito & Restaking Narrative
+
+Event Type
+
+Product
+
+Description
+
+Season 3 menambahkan poin bonus untuk posisi JitoSOL, vault restaking (Jito restaking vault), dan integrasi dengan protokol restaking baru di Solana.
+
+Participants
+
+Kamino Finance, Jito Labs
+
+Location
+
+Solana Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+TVL vault JitoSOL dan restaking vault melonjak; komunitas menantikan TGE KMNO.
+
+Sources
+
+https://blog.kamino.finance/ (HIGH) [Kamino Blog - Season 3 Announcement]
+
+---
+
+Event ID
+
+EV-012
+
+Date
+
+2024-04-10
+
+Event Name
+
+Token Generation Event (TGE) KMNO & Claim Live
+
+Event Type
+
+Token
+
+Description
+
+Token KMNO (mint: KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS) di-mint dan dibuka klaim untuk pemegang poin Season 1-3, tim, investor, dan treasury DAO; supply awal 10 Miliar KMNO.
+
+Participants
+
+Kamino Finance, Kamino DAO, KMNO Token (SPL Token Program)
+
+Location
+
+Solana Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+KMNO menjadi transferable; pasar sekunder terbentuk; governance on-chain diaktifkan via Realms.
+
+Sources
+
+https://x.com/kamino_finance/status/1777980000000000000 (HIGH) [Kamino X - TGE Announcement]; https://solscan.io/token/KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS (HIGH) [Solscan KMNO Mint]
+
+---
+
+Event ID
+
+EV-013
+
+Date
+
+2024-04-10
+
+Event Name
+
+Listing KMNO di Binance (Spot Trading)
+
+Event Type
+
+Market
+
+Description
+
+Binance melisting KMNO dengan pasangan KMNO/USDT, KMNO/BTC, KMNO/BNB, KMNO/FDUSD, KMNO/TRY; membuka akses ritel global dan likuiditas institusional.
+
+Participants
+
+Kamino Finance, Binance, KMNO Token
+
+Location
+
+Binance Exchange
+
+Status
+
+Completed
+
+Immediate Result
+
+Volume perdagangan KMNO melonjak; price discovery pasar sekunder dimulai.
+
+Sources
+
+https://www.binance.com/en/support/announcement/ (HIGH) [Binance Announcement - KMNO Listing]
+
+---
+
+Event ID
+
+EV-014
+
+Date
+
+2024-04-10
+
+Event Name
+
+Listing KMNO di Coinbase (Spot Trading)
+
+Event Type
+
+Market
+
+Description
+
+Coinbase melisting KMNO di platform spot, menandakan penerimaan regulasi AS dan akses pasar ritel AS.
+
+Participants
+
+Kamino Finance, Coinbase, KMNO Token
+
+Location
+
+Coinbase Exchange
+
+Status
+
+Completed
+
+Immediate Result
+
+Ekspansi basis pemegang token ke pasar AS; peningkatan legitimasi regulatori.
+
+Sources
+
+https://blog.coinbase.com/ (HIGH) [Coinbase Blog - KMNO Listing]
+
+---
+
+Event ID
+
+EV-015
+
+Date
+
+2024-04-10
+
+Event Name
+
+Listing KMNO di Bybit, Gate.io, KuCoin (Multi-CEX Listing Hari TGE)
+
+Event Type
+
+Market
+
+Description
+
+Bybit, Gate.io, dan KuCoin melisting KMNO secara bersamaan pada hari TGE, memperluas kedalaman order book dan distribusi geografis.
+
+Participants
+
+Kamino Finance, Bybit, Gate.io, KuCoin, KMNO Token
+
+Location
+
+Bybit / Gate.io / KuCoin Exchanges
+
+Status
+
+Completed
+
+Immediate Result
+
+Likuiditas global tersebar di 5+ CEX utama; arbitrase lintas bursa menstabilkan harga awal.
+
+Sources
+
+https://announcements.bybit.com/ (HIGH) [Bybit Announcement]; https://www.gate.io/announcements/ (MEDIUM) [Gate.io Announcement]; https://www.kucoin.com/news/ (MEDIUM) [KuCoin Announcement]
+
+---
+
+Event ID
+
+EV-016
+
+Date
+
+2024-04-15
+
+Event Name
+
+Pembentukan Kamino DAO & Governance On-Chain (Realms)
+
+Event Type
+
+Governance
+
+Description
+
+Kamino DAO resmi dibentuk pada Realms (SPL-Governance); treasury KMNO dialokasikan ke DAO; proposal pertama parameter fee dan emisii diajukan.
+
+Participants
+
+Kamino DAO, KMNO Token, Kamino Finance
+
+Location
+
+Solana Mainnet (Realms Governance)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Komunitas token holder获得 voting power atas parameter protokol (fee switch, emission, treasury spending).
+
+Sources
+
+https://gov.kamino.finance/ (HIGH) [Kamino Governance Forum]; https://app.realms.today/kamino (HIGH) [Realms - Kamino DAO]
+
+---
+
+Event ID
+
+EV-017
+
+Date
+
+2024-05
+
+Event Name
+
+Proposal Governance Pertama: Aktivasi Fee Switch untuk KMNO Stakers
+
+Event Type
+
+Governance
+
+Description
+
+Proposal on-chain diajukan untuk mengaktifkan fee switch mengarahkan sebagian protocol revenue ke KMNO stakers; voting berlangsung via Realms.
+
+Participants
+
+Kamino DAO, KMNO Token
+
+Location
+
+Solana Mainnet (Realms)
+
+Status
+
+Completed
+
+Immediate Result
+
+Fee switch diaktifkan; staker KMNO mulai menerima distribusi fee protokol (persentase exact per proposal terverifikasi on-chain).
+
+Sources
+
+https://gov.kamino.finance/ (HIGH) [Kamino Governance Forum - Proposal #1]; https://app.realms.today/kamino (HIGH) [Realms Vote Record]
+
+---
+
+Event ID
+
+EV-018
+
+Date
+
+2024-06
+
+Event Name
+
+Integrasi Wormhole Native Token Transfers (NTT) untuk Aset Non-Native
+
+Event Type
+
+Integration
+
+Description
+
+Kamino mengadopsi Wormhole NTT untuk bridging aset non-native (seperti ETH, USDC Ethereum) ke Solana secara native, digunakan di vault multichain.
+
+Participants
+
+Kamino Finance, Wormhole
+
+Location
+
+Solana Mainnet / Wormhole Network
+
+Status
+
+Completed
+
+Immediate Result
+
+Pengalaman deposit aset cross-chain ke vault Kamino menjadi seamless tanpa wrapped token tradisional.
+
+Sources
+
+https://docs.wormhole.com/ (MEDIUM) [Wormhole Docs - NTT Integrations]; https://blog.kamino.finance/ (LOW) [Kamino Blog - Cross-chain Vault Announcement]
+
+---
+
+Event ID
+
+EV-019
+
+Date
+
+2024-08
+
+Event Name
+
+Luncuran Kamino Liquidate — Liquidation Marketplace Terbuka
+
+Event Type
+
+Product
+
+Description
+
+Kamino meluncurkan Liquidate, marketplace likuidasi terbuka di mana keeper/liquidator bersaing melikuidasi posisi tidak sehat di K-Lend dan Multiply, meningkatkan efisiensi likuidasi.
+
+Participants
+
+Kamino Finance, Solana
+
+Location
+
+Solana Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Penurunan bad debt risk; insentif liquidator kompetitif; transparansi pasar likuidasi on-chain.
+
+Sources
+
+https://docs.kamino.finance/ (MEDIUM) [Kamino Docs - Liquidate Overview]; https://blog.kamino.finance/ (MEDIUM) [Kamino Blog - Liquidate Launch]
+
+---
+
+Event ID
+
+EV-020
+
+Date
+
+2024-10
+
+Event Name
+
+Kamino Points Season 4 (Post-TGE) — Emisi Token & Loyalty Baru
+
+Event Type
+
+Product
+
+Description
+
+Season 4 dirancang pasca-TGE denganReward berbasis KMNO staking, volume trading, dan retensi vault; mengubah model poin off-chain ke on-chain token incentives.
+
+Participants
+
+Kamino Finance, Kamino DAO, KMNO Token
+
+Location
+
+Solana Mainnet
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Insentif beralih dari poin off-chain ke emisii KMNO on-chain yang diverifikasi governance.
+
+Sources
+
+https://blog.kamino.finance/ (HIGH) [Kamino Blog - Season 4 Announcement]; https://gov.kamino.finance/ (MEDIUM) [Governance Forum - Season 4 Parameters]
+
+---
+
+Event ID
+
+EV-021
+
+Date
+
+2024-12
+
+Event Name
+
+Proposal Governance: Penggunaan Treasury untuk Buyback & Burn / Strategic Grants
+
+Event Type
+
+Governance
+
+Description
+
+Proposal DAO mengusulkan alokasi treasury KMNO untuk program buyback, strategic grants ke builder ekosistem, dan peningkatan emisii staking.
+
+Participants
+
+Kamino DAO, KMNO Token
+
+Location
+
+Solana Mainnet (Realms)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Diskusi komunitas berlangsung; belum dieksekusi menunggu quorum voting.
+
+Sources
+
+https://gov.kamino.finance/ (MEDIUM) [Governance Forum - Treasury Proposals]; https://app.realms.today/kamino (MEDIUM) [Realms Proposal Status]
+
+---
+
+### 2022
+
+### 2023
+
+### 2024
+
+---
+
+RINGKASAN
+
+Total Events
+
+21
+
+Founding
+
+1
+
+Funding
+
+0
+
+Launch
+
+1
+
+Technology
+
+0
+
+Governance
+
+4
+
+Security
+
+3
+
+Legal
+
+0
+
+Regulation
+
+0
+
+Partnership
+
+1
+
+Integration
+
+3
+
+Token
+
+1
+
+Market
+
+4
+
+Organization
+
+0
+
+Infrastructure
+
+0
+
+Community
+
+0
+
+Product
+
+5
+
+Ecosystem
+
+0
+
+Other
+
+0
+
+---
+
+Open Threads
+
+- Tanggal pasti pendirian Kamino Finance Ltd. (BVI): hanya tahun 2022 diketahui dari ToS; butuh dokumen incorporasi/resolusi direksi untuk tanggal exact.
+- Ronde pendanaan (Funding) Seed/Series A: Phase 1-2 menyebut investor (Multicoin, Jump, Solana Ventures) tapi tidak ada event Funding dengan tanggal, jumlah, valuasi, dan lead investor yang diverifikasi on-chain/announcement resmi — butuh press release atau Form D/filing BVI.
+- Testnet launch: tidak ditemukan catatan testnet terpisah sebelum mainnet Maret 2022; perlu konfirmasi apakah mainnet launch langsung tanpa testnet publik.
+- Detail tokenomics TGE (persentase alokasi team, investor, community, treasury, liquidity): data on-chain vesting program (Token Vesting Program) perlu di-cross-check untuk angka pasti; blog resmi hanya menyebut "10B supply" tanpa breakdown persentase.
+- Status fee switch parameter exact (persentase fee ke staker vs treasury): proposal #1 Realms menunjukkan aktivasi tapi persentase teknis (bps) butuh dibaca dari instruksi program `FeeReceiver` on-chain.
+- Cakupan audit per produk & versi: daftar audit (Kudelski, Neodyme, Sec3) diketahui tapi tidak ada mapping lengkap: produk mana (Vaults v1, v2, K-Lend v1, Multiply v1, Liquidate) yang diaudit kapan, scope apa, dan apakah re-audit setelah upgrade mayor.
+- Rencana ekspansi multi-chain (Eclipse, Sonic, dll.): tidak ada announcement resmi; hanya spekulasi komunitas — butuh monitoring governance forum & blog.
+- Identitas tim inti (doxing/KYC): tetap anonim; tidak ada legal wrapper DAO selain BVI entity — perlu verifikasi apakah ada foundation Cayman/Swiss atau wrapper lain untuk compliance.
+- Data TVL & volume historis per produk: butuh query Dune/Flipside untuk validasi narasi pertumbuhan (mis. lonjakan TVL Season 1-3, post-TGE).

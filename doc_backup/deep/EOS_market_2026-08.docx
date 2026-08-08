@@ -1,0 +1,304 @@
+PROJECT: EOS
+
+## Market Category
+
+Primary Category: Layer 1 Blockchain / Smart Contract Platform  
+Sources: (HIGH) [EOS Network Foundation, https://eosnetwork.com/]; (HIGH) [CoinMarketCap, https://coinmarketcap.com/currencies/eos/]
+
+Secondary Category: EVM-Compatible Execution Environment  
+Sources: (HIGH) [EOS Network Foundation EOS EVM, https://eosnetwork.com/ecosystem/eos-evm/]
+
+Sector: Blockchain Infrastructure  
+Sources: (HIGH) [EOS Network Foundation, https://eosnetwork.com/]; (HIGH) [Messari, https://messari.io/asset/eos]
+
+Sub-sector: DPoS Layer 1 with Native EVM Layer  
+Sources: (HIGH) [EOS Network Foundation, https://eosnetwork.com/]; (HIGH) [AntelopeIO Leap, https://github.com/AntelopeIO/leap]
+
+## Market Position
+
+Project Stage: Mature  
+Sources: (HIGH) [CoinDesk Mainnet Launch 2018, https://www.coindesk.com/markets/2018/06/14/eos-mainnet-launches-after-block-producers-vote/]; (HIGH) [EOS Network Foundation, https://eosnetwork.com/] (6+ years mainnet uptime since 2018-06-14)
+
+Primary Competitors: Ethereum; Solana; Cardano; Avalanche; BNB Chain; Polygon; Tron; WAX; Telos  
+Sources: (HIGH) [CoinMarketCap Categories, https://coinmarketcap.com/categories/view/smart-contract-platform/]; (MEDIUM) [Messari EOS Competitors, https://messari.io/asset/eos/competitors]; (HIGH) [EOS Network Foundation Ecosystem, https://eosnetwork.com/ecosystem/]
+
+Market Segment: General-purpose smart contract platform targeting developers seeking high throughput, zero gas fees (via resource staking), and Ethereum compatibility via EOS EVM  
+Sources: (HIGH) [EOS Network Foundation Developers, https://developers.eosnetwork.com/]; (HIGH) [EOS EVM Documentation, https://developers.eosnetwork.com/docs/eos-evm]
+
+Geographic Focus: Global (Cayman Islands incorporated entities; worldwide community, BPs, and users)  
+Sources: (HIGH) [Block.one Terms of Use, https://block.one/terms-of-use/]; (HIGH) [EOS Network Foundation, https://eosnetwork.com/foundation/]; (HIGH) [EOS Authority Block Producers, https://eosauthority.com/block-producers]
+
+## Trading Markets
+
+Exchange: Binance  
+Spot: Yes (EOS/USDT, EOS/BTC, EOS/BNB, EOS/BUSD, EOS/ETH, EOS/EUR, EOS/TRY, EOS/USDC, EOS/FDUSD)  
+Perpetual: Yes (EOSUSDT Perpetual, EOSUSDC Perpetual)  
+Futures: Yes (Quarterly futures via Binance Futures)  
+Options: Yes (Binance Options)  
+OTC: Yes (Binance OTC Portal)  
+Status: Active  
+Sources: (HIGH) [Binance EOS Markets, https://www.binance.com/en/trade/EOS_USDT]; (HIGH) [CoinMarketCap EOS Markets, https://coinmarketcap.com/currencies/eos/markets/]
+
+Exchange: OKX  
+Spot: Yes (EOS/USDT, EOS/BTC, EOS/ETH, EOS/USDC)  
+Perpetual: Yes (EOS-USDT-SWAP, EOS-USDC-SWAP)  
+Futures: Yes (Quarterly futures)  
+Options: Yes (OKX Options)  
+OTC: Yes (OKX OTC)  
+Status: Active  
+Sources: (HIGH) [OKX EOS Markets, https://www.okx.com/trade/EOS-USDT]; (HIGH) [CoinMarketCap EOS Markets, https://coinmarketcap.com/currencies/eos/markets/]
+
+Exchange: Upbit  
+Spot: Yes (EOS/KRW, EOS/USDT, EOS/BTC)  
+Perpetual: No  
+Futures: No  
+Options: No  
+OTC: No  
+Status: Active  
+Sources: (HIGH) [Upbit EOS Markets, https://upbit.com/exchange?code=CRIX.UPBIT.KRW-EOS]; (HIGH) [CoinMarketCap EOS Markets, https://coinmarketcap.com/currencies/eos/markets/]
+
+Exchange: Coinbase  
+Spot: Yes (EOS/USD, EOS/USDC, EOS/EUR)  
+Perpetual: No (Coinbase International Exchange separate)  
+Futures: No  
+Options: No  
+OTC: Yes (Coinbase Prime OTC)  
+Status: Active  
+Sources: (HIGH) [Coinbase EOS, https://www.coinbase.com/price/eos]; (HIGH) [CoinMarketCap EOS Markets, https://coinmarketcap.com/currencies/eos/markets/]
+
+Exchange: Kraken  
+Spot: Yes (EOS/USD, EOS/EUR, EOS/USDT, EOS/ETH, EOS/XBT)  
+Perpetual: Yes (EOS/USD Futures on Kraken Futures)  
+Futures: Yes (Kraken Futures)  
+Options: No  
+OTC: Yes (Kraken OTC)  
+Status: Active  
+Sources: (HIGH) [Kraken EOS, https://trade.kraken.com/markets/kraken/eos/usd]; (HIGH) [CoinMarketCap EOS Markets, https://coinmarketcap.com/currencies/eos/markets/]
+
+Exchange: Huobi / HTX  
+Spot: Yes (EOS/USDT, EOS/BTC, EOS/HT, EOS/ETH)  
+Perpetual: Yes (EOS-USDT Perpetual, Quarterly)  
+Futures: Yes (Quarterly futures)  
+Options: No  
+OTC: Yes (HTX OTC)  
+Status: Active  
+Sources: (HIGH) [HTX EOS Markets, https://www.htx.com/trade/eos_usdt]; (HIGH) [CoinMarketCap EOS Markets, https://coinmarketcap.com/currencies/eos/markets/]
+
+Exchange: Gate.io  
+Spot: Yes (EOS/USDT, EOS/BTC, EOS/ETH, EOS/USDC)  
+Perpetual: Yes (EOS_USDT Perpetual)  
+Futures: No  
+Options: No  
+OTC: No  
+Status: Active  
+Sources: (HIGH) [Gate.io EOS, https://www.gate.io/trade/EOS_USDT]; (HIGH) [CoinMarketCap EOS Markets, https://coinmarketcap.com/currencies/eos/markets/]
+
+Exchange: KuCoin  
+Spot: Yes (EOS/USDT, EOS/BTC, EOS/ETH, EOS/USDC)  
+Perpetual: Yes (EOSUSDT Perpetual)  
+Futures: No  
+Options: No  
+OTC: Yes (KuCoin OTC)  
+Status: Active  
+Sources: (HIGH) [KuCoin EOS, https://www.kucoin.com/trade/EOS-USDT]; (HIGH) [CoinMarketCap EOS Markets, https://coinmarketcap.com/currencies/eos/markets/]
+
+Exchange: Bybit  
+Spot: Yes (EOS/USDT, EOS/USDC)  
+Perpetual: Yes (EOSUSDT Perpetual, EOSUSDC Perpetual)  
+Futures: Yes (Inverse/USDT futures)  
+Options: Yes (Bybit Options)  
+OTC: No  
+Status: Active  
+Sources: (HIGH) [Bybit EOS, https://www.bybit.com/trade/spot/EOS/USDT]; (HIGH) [CoinMarketCap EOS Markets, https://coinmarketcap.com/currencies/eos/markets/]
+
+Exchange: Uniswap (Ethereum DEX)  
+Spot: Yes (EOS/WETH, EOS/USDC, EOS/USDT pools on Ethereum mainnet via ERC-20 bridge token)  
+Perpetual: No  
+Futures: No  
+Options: No  
+OTC: No  
+Status: Active  
+Sources: (HIGH) [Uniswap EOS Pools, https://app.uniswap.org/explore/tokens/ethereum/0x86Fa049857E0209aa7D9e616F7eb3b3B78ECfdb0]; (HIGH) [Etherscan EOS Token, https://etherscan.io/token/0x86Fa049857E0209aa7D9e616F7eb3b3B78ECfdb0]
+
+## Liquidity
+
+Liquidity Source: CEX (Centralized Exchanges)  
+Major Liquidity Venue: Binance (highest spot & perpetual volume), OKX, Upbit (KRW pair dominance), Coinbase (USD fiat on-ramp), Kraken, HTX, Bybit  
+Status: Deep order books across top 10 CEXs; tight spreads on major pairs (EOS/USDT, EOS/BTC, EOS/KRW)  
+Sources: (HIGH) [CoinMarketCap EOS Markets, https://coinmarketcap.com/currencies/eos/markets/]; (HIGH) [Kaiko EOS Liquidity Data (reference), https://www.kaiko.com/]
+
+Liquidity Source: DEX (Decentralized Exchanges)  
+Major Liquidity Venue: Defibox (native EOS Mainnet AMM — largest TVL), OrganicSwap (native EOS AMM), Uniswap V2/V3 (Ethereum ERC-20 bridge token)  
+Status: Native DEX liquidity concentrated in EOS/USDT, EOS/USN, EOS/EOSDAC pairs; Ethereum DEX liquidity in EOS/WETH, EOS/USDC — lower depth vs CEX  
+Sources: (MEDIUM) [Defibox, https://defibox.com/]; (MEDIUM) [OrganicSwap, https://organicswap.io/]; (HIGH) [Uniswap EOS Pools, https://app.uniswap.org/explore/tokens/ethereum/0x86Fa049857E0209aa7D9e616F7eb3b3B78ECfdb0]; (MEDIUM) [DappRadar EOS, https://dappradar.com/rankings/protocol/eos]
+
+Liquidity Source: Bridge Liquidity  
+Major Liquidity Venue: ERC-20 Bridge Token (0x86Fa049857E0209aa7D9e616F7eb3b3B78ECfdb0) on Ethereum — custodied by bridge operator (entity not publicly verified); WAX Bridge for cross-chain NFT/token transfer  
+Status: Bridge token supply ~100M+ ERC-20 EOS (per Etherscan holders); redemption liquidity dependent on bridge operator solvency — no public proof-of-reserves  
+Sources: (HIGH) [Etherscan EOS Token Holders, https://etherscan.io/token/0x86Fa049857E0209aa7D9e616F7eb3b3B78ECfdb0#balances]; (MEDIUM) [WAX Official Bridge, https://wax.io/]; (MEDIUM) [EOS Network Foundation Bridge, https://eosnetwork.com/ecosystem/]
+
+## Adoption Metrics
+
+Metric Name: TVL (Total Value Locked)  
+Value: $45.2M (DefiLlama, 2024-12-01)  
+Date: 2024-12-01  
+Sources: (HIGH) [DefiLlama EOS, https://defillama.com/chain/EOS]; (MEDIUM) [DefiLlama EOS EVM, https://defillama.com/chain/EOS%20EVM]
+
+Metric Name: Daily Active Addresses  
+Value: ~15,000–25,000 (7-day moving average, native EOS Mainnet)  
+Date: 2024-11-01 to 2024-11-30  
+Sources: (MEDIUM) [EOS Authority Stats, https://eosauthority.com/network/stats]; (MEDIUM) [Token Terminal EOS, https://tokenterminal.com/terminal/projects/eos]
+
+Metric Name: Daily Transactions  
+Value: ~500,000–1,200,000 (native mainnet, includes voting/claims/transfers)  
+Date: 2024-11-01 to 2024-11-30  
+Sources: (MEDIUM) [EOS Authority Network Stats, https://eosauthority.com/network/stats]; (MEDIUM) [Blockchair EOS, https://blockchair.com/eos/stats]
+
+Metric Name: Total Accounts Created  
+Value: ~2.1M (cumulative since genesis)  
+Date: 2024-12-01  
+Sources: (MEDIUM) [EOS Authority Accounts, https://eosauthority.com/accounts]; (MEDIUM) [EOS Network Foundation, https://eosnetwork.com/]
+
+Metric Name: Developer Count (Monthly Active)  
+Value: ~120–180 (Electric Capital / ENF estimate)  
+Date: 2024-Q3  
+Sources: (MEDIUM) [Electric Capital Developer Report 2024, https://www.electriccapital.com/developer-report]; (LOW) [EOS Network Foundation Blog, https://eosnetwork.com/blog/] (verification needed)
+
+Metric Name: 24h Spot Volume (Aggregated)  
+Value: $150M–$300M (varies by market conditions)  
+Date: 2024-11-30  
+Sources: (HIGH) [CoinMarketCap EOS, https://coinmarketcap.com/currencies/eos/]; (HIGH) [CoinGecko EOS, https://www.coingecko.com/en/coins/eos]
+
+Metric Name: 24h Perpetual Volume (Aggregated)  
+Value: $500M–$1.5B (Binance, OKX, Bybit dominant)  
+Date: 2024-11-30  
+Sources: (HIGH) [CoinMarketCap EOS Markets, https://coinmarketcap.com/currencies/eos/markets/]; (HIGH) [Coinglass EOS Futures, https://www.coinglass.com/tv/Binance_EOSUSDT]
+
+Metric Name: Bridge Volume (ERC-20 ↔ Native, 30d)  
+Value: ~$20M–$50M (estimated via bridge contract flows — not officially tracked)  
+Date: 2024-11-01 to 2024-11-30  
+Sources: (LOW) [Etherscan Bridge Contract Txns, https://etherscan.io/token/0x86Fa049857E0209aa7D9e616F7eb3b3B78ECfdb0]; (LOW) [Dune Analytics EOS Bridge (community dashboard), https://dune.com/] (verification needed)
+
+Metric Name: Block Producer Count  
+Value: 21 Active + ~50 Standby (rotating via vote)  
+Date: 2024-12-01  
+Sources: (HIGH) [EOS Authority Block Producers, https://eosauthority.com/block-producers]; (HIGH) [EOSIO Technical Whitepaper, https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md]
+
+Metric Name: EOS EVM Daily Transactions  
+Value: ~5,000–20,000 (since 2022 launch)  
+Date: 2024-11-01 to 2024-11-30  
+Sources: (MEDIUM) [EOS EVM Explorer, https://explorer.eosevm.io/]; (MEDIUM) [DappRadar EOS EVM, https://dappradar.com/rankings/protocol/eos-evm]
+
+## Market Share
+
+Metric: Layer 1 TVL Share (vs Ethereum, Solana, BNB, Tron, Avalanche, Polygon, Cardano)  
+Value: <0.1% (DefiLlama ranking ~35th by TVL)  
+Date: 2024-12-01  
+Sources: (HIGH) [DefiLlama Chains Ranking, https://defillama.com/chains]; (HIGH) [DefiLlama EOS, https://defillama.com/chain/EOS]
+
+Metric: Spot Trading Volume Share (vs top 100 assets)  
+Value: ~0.3%–0.5% (ranked ~40–60 by 24h volume)  
+Date: 2024-11-30  
+Sources: (HIGH) [CoinMarketCap Rankings, https://coinmarketcap.com/rankings/]; (HIGH) [CoinGecko Rankings, https://www.coingecko.com/en/coins/eos]
+
+Metric: Developer Market Share (Electric Capital)  
+Value: ~0.5%–0.8% of total crypto monthly active developers  
+Date: 2024-Q3  
+Sources: (MEDIUM) [Electric Capital Developer Report 2024, https://www.electriccapital.com/developer-report]
+
+Metric: Perpetual Open Interest Share  
+Value: ~0.2%–0.4% of aggregate crypto perpetual OI  
+Date: 2024-11-30  
+Sources: (MEDIUM) [Coinglass Aggregated OI, https://www.coinglass.com/]; (LOW) [Bybit/OKX/Binance API aggregated — not officially published]
+
+## Competitor Landscape
+
+Competitor: Ethereum  
+Category: Layer 1 Smart Contract Platform (PoS)  
+Difference: Ethereum uses PoS with L2 scaling (rollups); EOS uses DPoS with native EVM layer (EOS EVM) and resource staking model (no gas fees)  
+Market Segment: General-purpose, DeFi, NFTs, institutional adoption  
+Sources: (HIGH) [Ethereum.org, https://ethereum.org/]; (HIGH) [EOS Network Foundation EOS EVM, https://eosnetwork.com/ecosystem/eos-evm/]
+
+Competitor: Solana  
+Category: Layer 1 High-Throughput Blockchain (PoH/PoS)  
+Difference: Solana optimizes for single-shard high TPS via parallel Sealevel runtime; EOS uses DPoS with WASM + EVM layer, resource staking, and 0.5s block time  
+Market Segment: High-frequency trading, DeFi, consumer apps, memecoins  
+Sources: (HIGH) [Solana.com, https://solana.com/]; (HIGH) [EOS Network Foundation, https://eosnetwork.com/]
+
+Competitor: BNB Chain  
+Category: Layer 1 EVM-Compatible (PoSA)  
+Difference: BNB Chain is EVM-native with centralized validator set (21 active); EOS has native WASM + EOS EVM layer, DPoS with vote decay, and on-chain governance  
+Market Segment: DeFi, GameFi, Binance ecosystem integration  
+Sources: (HIGH) [BNB Chain, https://www.bnbchain.org/]; (HIGH) [EOS Network Foundation, https://eosnetwork.com/]
+
+Competitor: Polygon  
+Category: Layer 2 / Sidechain Scaling for Ethereum (PoS)  
+Difference: Polygon is Ethereum-aligned scaling (PoS, zkEVM, CDK); EOS is independent L1 with own consensus and native EVM layer  
+Market Segment: Ethereum scaling, DeFi, gaming, enterprise  
+Sources: (HIGH) [Polygon.technology, https://polygon.technology/]; (HIGH) [EOS Network Foundation EOS EVM, https://eosnetwork.com/ecosystem/eos-evm/]
+
+Competitor: Avalanche  
+Category: Layer 1 Multi-Chain (PoS, Subnets)  
+Difference: Avalanche uses subnet architecture for custom chains; EOS uses single mainnet with EVM layer and Antelope IBC for cross-chain  
+Market Segment: DeFi, enterprise subnets, gaming  
+Sources: (HIGH) [Avalanche, https://www.avalabs.org/]; (MEDIUM) [AntelopeIO IBC, https://github.com/AntelopeIO/leap/tree/main/contracts/eosio.ibc]
+
+Competitor: Cardano  
+Category: Layer 1 UTXO-Based Smart Contract Platform (PoS)  
+Difference: Cardano uses eUTXO model and Plutus (Haskell); EOS uses account-based WASM/EVM with C++/Solidity  
+Market Segment: DeFi, identity, government partnerships  
+Sources: (HIGH) [Cardano.org, https://cardano.org/]; (HIGH) [EOS Network Foundation, https://eosnetwork.com/]
+
+Competitor: Tron  
+Category: Layer 1 DPoS Smart Contract Platform (EVM-Compatible)  
+Difference: Tron is EVM-native DPoS with high stablecoin volume (USDT); EOS has native WASM + EOS EVM, resource staking, and Antelope protocol  
+Market Segment: Stablecoin transfers, DeFi, content/media  
+Sources: (HIGH) [Tron.network, https://tron.network/]; (HIGH) [EOS Network Foundation, https://eosnetwork.com/]
+
+Competitor: WAX  
+Category: Layer 1 Antelope-Based (DPoS) Focused on NFT/GameFi  
+Difference: WAX is purpose-built for NFT/GameFi with custom tooling; EOS is general-purpose with EOS EVM and broader DeFi  
+Market Segment: NFT, GameFi, collectibles, WAX Cloud Wallet users  
+Sources: (HIGH) [WAX Official, https://wax.io/]; (HIGH) [EOS Network Foundation Ecosystem, https://eosnetwork.com/ecosystem/]
+
+Competitor: Telos  
+Category: Layer 1 Antelope-Based (DPoS) with EVM (tEVM)  
+Difference: Telos launched native EVM (tEVM) earlier (2021); EOS launched EOS EVM 2022; both share Antelope codebase but separate governance/token  
+Market Segment: DeFi, EVM dApps, governance experiments  
+Sources: (HIGH) [Telos.net, https://www.telos.net/]; (HIGH) [EOS Network Foundation EOS EVM, https://eosnetwork.com/ecosystem/eos-evm/]
+
+## Narrative Position
+
+Narrative: EVM-Compatible Layer 1 (Native EVM Layer)  
+Status: Main Narrative  
+Evidence: EOS EVM live since 2022-04-01 (EV-019); marketed as "Ethereum compatibility with EOS performance"; Solidity/Vyper deployment via standard tooling (Hardhat/Foundry)  
+Sources: (HIGH) [EOS Network Foundation EOS EVM, https://eosnetwork.com/ecosystem/eos-evm/]; (HIGH) [EOS Network Foundation Blog, https://eosnetwork.com/blog/]
+
+Narrative: DPoS Governance & On-Chain Upgradability  
+Status: Main Narrative  
+Evidence: Continuous BP voting since 2018-06-15 (EV-010); 10+ coordinated hard forks (Dawn 1-4, Mainnet, EOSIO 1.0, Leap 3.1/4.0/5.0); on-chain proposals via eosio.system  
+Sources: (HIGH) [EOS Authority Proposals, https://eosauthority.com/proposals]; (HIGH) [GitHub AntelopeIO/leap Releases, https://github.com/AntelopeIO/leap/releases]
+
+Narrative: WebAssembly (WASM) Smart Contracts with C++ SDK (Spring)  
+Status: Secondary Narrative  
+Evidence: Spring SDK released 2022 (EV-021); C++20, CMake, integrated testing; positioned as performant alternative to Solidity  
+Sources: (HIGH) [GitHub eosnetworkfoundation/spring, https://github.com/eosnetworkfoundation/spring]; (HIGH) [EOS Network Foundation Ecosystem, https://eosnetwork.com/ecosystem/]
+
+Narrative: GameFi / NFT (via Ultra, WAX Bridge)  
+Status: Secondary Narrative  
+Evidence: Ultra platform on Antelope/EOS tech; WAX bridge for NFT interoperability; ENF ecosystem page lists gaming projects  
+Sources: (MEDIUM) [Ultra.io, https://ultra.io/]; (MEDIUM) [WAX Official, https://wax.io/]; (MEDIUM) [EOS Network Foundation Ecosystem, https://eosnetwork.com/ecosystem/]
+
+Narrative: DeFi (Defibox, OrganicSwap, REX Yield)  
+Status: Secondary Narrative  
+Evidence: Defibox largest TVL on EOS; REX resource exchange yields; EOS EVM enabling Ethereum DeFi migration  
+Sources: (MEDIUM) [Defibox, https://defibox.com/]; (MEDIUM) [OrganicSwap, https://organicswap.io/]; (HIGH) [EOSIO System Contract REX, https://github.com/EOSIO/eos/blob/master/contracts/eosio.system/eosio.system.cpp#L2000]
+
+Narrative: Modular / Interoperability (Antelope IBC)  
+Status: Emerging / Experimental Narrative  
+Evidence: eosio.ibc contract exists in Leap; not widely adopted in production; roadmap mentions horizontal scaling via sidechains  
+Sources: (MEDIUM) [AntelopeIO IBC Contract, https://github.com/AntelopeIO/leap/tree/main/contracts/eosio.ibc]; (MEDIUM) [EOS Network Foundation Roadmap 2024, https://eosnetwork.com/]
+
+Narrative: Zero-Knowledge / ZK Integration (Leap 6.0 Roadmap)  
+Status: Future / Planned Narrative  
+Evidence: Leap 6.0 (planned 202

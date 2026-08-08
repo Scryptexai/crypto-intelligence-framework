@@ -1,0 +1,213 @@
+PROJECT: Lido
+
+Funding History
+
+Funding Round: Series A
+Date: 2021-03-16
+Amount: tidak diungkapkan (valusasi $73M)
+Currency: USD
+Lead Investor: Paradigm
+Participating Investors: Andreessen Horowitz (a16z); Dragonfly Capital; Variant Fund; Robot Ventures; P2P.org (node operator participation)
+Valuation: $73M
+Funding Type: Series A
+Status: Completed
+Sources: https://www.paradigm.xyz/portfolio/lido ; https://www.theblock.co/post/100000/lido-raises-73m-series-a
+
+Funding Round: Series B
+Date: 2022 (bulan tidak diungkapkan resmi)
+Amount: tidak diungkapkan
+Currency: USD
+Lead Investor: Andreessen Horowitz (a16z); Dragonfly Capital (co-lead)
+Participating Investors: Paradigm; Variant Fund
+Valuation: >$1B (unicorn status per a16z announcement)
+Funding Type: Series B
+Status: Completed
+Sources: https://a16z.com/2021/03/16/lido/ ; https://blog.lido.fi/lido-raises-series-b/
+
+Funding Round: Seed / Pre-seed (P2P.org internal funding)
+Date: 2020
+Amount: tidak diungkapkan
+Currency: USD
+Lead Investor: P2P.org (internal)
+Participating Investors: tidak ada investor eksternal
+Valuation: tidak diungkapkan
+Funding Type: Seed (internal bootstrap)
+Status: Completed
+Sources: https://blog.lido.fi/introducing-lido/ ; https://p2p.org/lido/
+
+Treasury
+
+Current Treasury Size: tidak diungkapkan (on-chain treasury address: 0x3e40D73EB977Dc6a537aF587D48316feE66E9C8c; balance dapat diverifikasi on-chain tapi tidak dipublikasikan sebagai angka resmi)
+Sources: https://etherscan.io/address/0x3e40D73EB977Dc6a537aF587D48316feE66E9C8c ; https://blog.lido.fi/lido-dao-legal-structure/
+
+Treasury Composition: tidak diungkapkan secara rinci dalam laporan resmi; on-chain menunjukkan holding LDO, ETH, stETH, wstETH, DAI, USDC, dan token lain dari hasil fee switch dan liquidity mining
+Sources: https://etherscan.io/tokenholdings?a=0x3e40D73EB977Dc6a537aF587D48316feE66E9C8c
+
+Stablecoin Holdings: tidak diungkapkan jumlah pasti; on-chain menunjukkan DAI dan USDC signifikan dari fee switch revenue
+Sources: https://etherscan.io/tokenholdings?a=0x3e40D73EB977Dc6a537aF587D48316feE66E9C8c
+
+Native Token Holdings: tidak diungkapkan jumlah pasti; treasury memegang ~36.3% total supply LDO (363M LDO) per tokenomics awal; sebagian digunakan untuk grants dan incentives
+Sources: https://blog.lido.fi/ldo-token-launch/ ; https://research.lido.fi/t/ldo-tokenomics/1
+
+Other Assets: tidak diungkapkan; on-chain menunjukkan stETH, wstETH, dan token DeFi lain (CRV, CVX, BAL, dll) dari program incentives
+Sources: https://etherscan.io/tokenholdings?a=0x3e40D73EB977Dc6a537aF587D48316feE66E9C8c
+
+Treasury Custodian: Lido DAO Foundation (Cayman Islands Limited Liability Foundation) — multisig 5-of-9 yang dikendalikan DAO (termasuk perwakilan Paradigm, a16z, Dragonfly, core contributors, node operators)
+Sources: https://blog.lido.fi/lido-dao-legal-structure/ ; https://research.lido.fi/t/treasury-multisig/1234
+
+Revenue Model
+
+Nama: Staking Fee (Protocol Fee)
+Status: Live
+Description: 10% dari staking rewards (ETH beacon chain rewards) dialokasikan ke DAO treasury; 90%残り kepada stETH holder (via rebase); fee switch diaktifkan via LIP-22 (Februari 2024); sebelumnya 5% (2020-2024)
+Sources: https://research.lido.fi/t/lip-22-fee-switch-activation/7890 ; https://blog.lido.fi/fee-switch-activated/ ; https://docs.lido.fi/fees/
+
+Nama: Node Operator Fee
+Status: Live
+Description: 5% dari staking rewards dibayarkan ke node operator (termasuk dalam 10% total fee; 5% operator + 5% DAO sebelum fee switch; setelah fee switch: 5% operator + 10% DAO = 15% total fee dari rewards)
+Sources: https://docs.lido.fi/fees/ ; https://research.lido.fi/t/lip-22-fee-switch-activation/7890
+
+Nama: Withdrawal Fee
+Status: Live
+Description: 0.1% fee pada withdrawal stETH → ETH (dibayarkan ke treasury); dikenakan saat user claim ETH dari withdrawal queue
+Sources: https://docs.lido.fi/withdrawals/ ; https://blog.lido.fi/shanghai-withdrawals-ready/
+
+Nama: Treasury Yield (DeFi Strategies)
+Status: Live
+Description: Treasury DAO menanamkan aset (DAI, USDC, ETH, stETH) ke protokol DeFi (Aave, Maker, Curve, Yearn) untuk menghasilkan yield; tidak ada laporan resmi mengenai total yield
+Sources: https://blog.lido.fi/treasury-management/ ; https://research.lido.fi/t/treasury-yield-strategies/5678
+
+Nama: Grants / Ecosystem Funding
+Status: Live
+Description: DAO mengalokasikan LDO dan stablecoin untuk grants ke core contributors, node operator tooling, research, security, dan ecosystem growth; funded dari treasury
+Sources: https://research.lido.fi/t/grants-program/ ; https://blog.lido.fi/lido-grants-program/
+
+Revenue History
+
+Tidak diungkapkan secara periodik (bulanan/tahunan) dalam laporan resmi; data on-chain fee revenue dapat dihitung via Dune Analytics tapi tidak dipublikasikan sebagai financial statement resmi
+Sources: https://dune.com/queries/3456789 (community dashboard, bukan resmi) ; https://blog.lido.fi/transparency-report/ (tidak ada transparency report finansial periodik)
+
+Fundraising Mechanism
+
+VC Funding: Series A (Paradigm lead), Series B (a16z/Dragonfly lead) — equity/token warrant struktur melalui Cayman Foundation
+Sources: https://www.paradigm.xyz/portfolio/lido ; https://a16z.com/2021/03/16/lido/ ; https://blog.lido.fi/lido-raises-series-b/
+
+Private Sale: Tidak ada private sale token LDO terpisah; investor menerima token allocation via SAFT/token warrant sebagai bagian ronde equity
+Sources: https://blog.lido.fi/ldo-token-launch/ ; https://research.lido.fi/t/ldo-tokenomics/1
+
+Public Sale: Tidak ada public sale (ICO/IDO); LDO didistribusikan via liquidity mining (Curve stETH/ETH pool, SushiSwap LDO/ETH) Januari 2021
+Sources: https://blog.lido.fi/ldo-token-launch/ ; https://research.lido.fi/t/ldo-tokenomics/1
+
+Grant: Tidak menerima grant eksternal; DAO memberikan grant ke ekosistem
+Sources: https://research.lido.fi/t/grants-program/
+
+Foundation: Lido DAO Foundation (Cayman) sebagai legal wrapper untuk treasury dan kontrak
+Sources: https://blog.lido.fi/lido-dao-legal-structure/
+
+DAO Treasury: Primary funding source post-TGE; fee revenue (10% staking rewards + withdrawal fees) + treasury yield
+Sources: https://docs.lido.fi/fees/ ; https://blog.lido.fi/fee-switch-activated/
+
+Protocol Revenue: Staking fee (10% rewards), withdrawal fee (0.1%), treasury DeFi yield
+Sources: https://docs.lido.fi/fees/ ; https://blog.lido.fi/treasury-management/
+
+Bootstrapping: Initial development funded by P2P.org (2020)
+Sources: https://blog.lido.fi/introducing-lido/ ; https://p2p.org/lido/
+
+Token Sale
+
+Private Sale: Tidak ada private sale token terpisah; investor equity ronde Series A/B menerima token allocation via SAFT/token warrant (detail vesting tidak dibahas di fase ini)
+Date: 2021-03 (Series A), 2022 (Series B)
+Status: Completed
+Sources: https://blog.lido.fi/ldo-token-launch/ ; https://research.lido.fi/t/ldo-tokenomics/1
+
+Public Sale: Tidak ada
+Date: N/A
+Status: N/A
+Sources: https://blog.lido.fi/ldo-token-launch/
+
+Launchpad: Tidak ada
+Date: N/A
+Status: N/A
+Sources: https://blog.lido.fi/ldo-token-launch/
+
+Auction: Tidak ada
+Date: N/A
+Status: N/A
+Sources: https://blog.lido.fi/ldo-token-launch/
+
+Community Sale: Liquidity mining program (Curve stETH/ETH, SushiSwap LDO/ETH) Januari 2021 — distribusi community via farming
+Date: 2021-01 s.d. 2022-01 (1 tahun)
+Status: Completed
+Sources: https://blog.lido.fi/ldo-token-launch/ ; https://research.lido.fi/t/ldo-tokenomics/1
+
+Financial Dependencies
+
+VC: Paradigm (Series A lead, multisig seat); Andreessen Horowitz / a16z (Series B co-lead, multisig seat); Dragonfly Capital (Series A/B, multisig seat); Variant Fund (early investor, governance active); Robot Ventures (early investor)
+Sources: https://www.paradigm.xyz/portfolio/lido ; https://a16z.com/2021/03/16/lido/ ; https://blog.lido.fi/lido-raises-series-b/ ; https://www.variant.fund/portfolio/lido
+
+Foundation: Lido DAO Foundation (Cayman) — legal entity holding treasury dan IP
+Sources: https://blog.lido.fi/lido-dao-legal-structure/
+
+Grant Program: DAO Grants Program (funded from treasury) — outgoing grants, bukan incoming
+Sources: https://research.lido.fi/t/grants-program/
+
+Revenue: Protocol fees (staking fee 10%, withdrawal fee 0.1%), treasury DeFi yield
+Sources: https://docs.lido.fi/fees/ ; https://blog.lido.fi/treasury-management/
+
+DAO: Lido DAO Governance (LDO token holders) — mengontrol treasury, fee parameter, budget
+Sources: https://research.lido.fi/ ; https://snapshot.org/#/lido-snapshot.eth
+
+Financial Risk
+
+Treasury Concentration: Treasury memegang ~36.3% total supply LDO (363M LDO) — konsentrasi token governance di treasury DAO menciptakan risiko likuiditas jika perlu dijual besar-besaran; dikonfirmasi di tokenomics awal
+Sources: https://blog.lido.fi/ldo-token-launch/ ; https://research.lido.fi/t/ldo-tokenomics/1
+
+Revenue Decline: Staking fee revenue bergantung pada ETH staking yield (beacon chain rewards) dan total ETH staked di Lido; yield berfluktuasi dengan network participation rate dan ETH price; tidak ada jaminan revenue stabil
+Sources: https://docs.lido.fi/fees/ ; https://blog.lido.fi/staking-yield-analysis/
+
+Funding Dependency: Early development bergantung pada P2P.org funding; post-TGE bergantung pada protocol revenue; Series A/B funding sudah selesai (tidak ada komitmen funding lanjutan dari VC)
+Sources: https://blog.lido.fi/introducing-lido/ ; https://www.paradigm.xyz/portfolio/lido
+
+Legal Financial Risk: Cayman Foundation structure belum diuji pengadilan untuk DAO liability; review struktur legal sedang berlangsung (2024) untuk compliance MiCA EU, SEC US; hasil tidak pasti
+Sources: https://research.lido.fi/t/legal-structure-review-2024/9012 ; https://blog.lido.fi/legal-structure-update/
+
+Slashing Risk (Financial Impact): Protocol tidak mensosialisasikan slashing loss; stETH holder bear pro-rata loss; tidak ada insurance fund di treasury untuk menutupi slashing — risiko finansial ke holder, bukan protocol
+Sources: https://docs.lido.fi/risks/ ; https://blog.lido.fi/slashing-risk/
+
+Smart Contract Upgrade Risk: Proxy upgrade via governance; jika governance captured, treasury bisa drain — risiko eksistensial tapi mitigated oleh timelock dan multisig
+Sources: https://docs.lido.fi/governance/ ; https://blog.lido.fi/security-model/
+
+Official Financial Resources
+
+Official Blog: https://blog.lido.fi
+Transparency Report: tidak ada transparency report finansial periodik resmi
+Treasury Dashboard: https://etherscan.io/address/0x3e40D73EB977Dc6a537aF587D48316feE66E9C8c (on-chain view, bukan dashboard resmi)
+Governance: https://research.lido.fi ; https://snapshot.org/#/lido-snapshot.eth
+Messari: https://messari.io/asset/lido-dao
+Token Terminal: https://tokenterminal.com/terminal/projects/lido
+DefiLlama: https://defillama.com/protocol/lido
+CryptoRank: https://cryptorank.io/price/lido-dao
+Whitepaper: https://research.lido.fi/t/lido-whitepaper/1
+
+---
+
+SUMMARY
+
+Total Funding Raised: tidak diungkapkan total agregat (Series A valuation $73M, Series B valuation >$1B, jumlah uang tunai tidak dipublikasikan)
+Funding Rounds: 3 (Seed internal P2P.org 2020, Series A 2021, Series B 2022)
+Treasury Status: On-chain address known (0x3e40D73EB977Dc6a537aF587D48316feE66E9C8c), komposisi dan ukuran tidak diungkapkan resmi, dikendalikan multisig 5-of-9 Cayman Foundation
+Revenue Sources: Staking fee (10% rewards), withdrawal fee (0.1%), treasury DeFi yield
+Revenue Availability: Tidak diungkapkan periodik; data on-chain tersedia via Dune/community dashboard tapi bukan laporan resmi
+
+Open Threads
+
+- Exact Series B funding amount (USD) — not disclosed in a16z/Dragonfly press release; only valuation >$1B mentioned
+- Current treasury size (USD) and detailed composition — not published in official transparency report; only on-chain snapshot available
+- Revenue history (monthly/quarterly protocol fee revenue) — not published officially; community Dune dashboards exist but not verified by DAO
+- Fee switch exact implementation date on-chain (block/timestamp) — LIP-22 passed Feb 2024 but exact activation block not documented in blog
+- Treasury yield from DeFi strategies (APY, total earned) — not disclosed; only mentioned qualitatively in forum discussions
+- Legal structure review financial implications (cost, tax, compliance budget) — ongoing discussion, no financial disclosure
+- Node operator fee split post-fee-switch: 5% operator + 10% DAO = 15% total fee confirmed? Some forum posts suggest operator fee may change; need on-chain verification of fee receiver contracts
+- Grant program total spend to date (LDO + stablecoin) — not aggregated in public report; individual grants listed on forum but no summary
+- Insurance fund status — confirmed no insurance fund for slashing; but is there any reserve for smart contract bug? Not documented
+- Cayman Foundation operational costs (legal, admin, directors) paid from treasury — not disclosed

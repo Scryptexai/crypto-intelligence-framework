@@ -1,0 +1,747 @@
+PROJECT: Ethena
+
+## Ecosystem Position
+
+Primary Sector: synthetic dollar / delta-neutral stablecoin protocol (HIGH) [Ethena Docs, https://docs.ethena.fi]
+Secondary Sector: DeFi yield infrastructure / governance token ecosystem (HIGH) [Ethena Ecosystem, https://ethena.fi/ecosystem]
+Primary Chain: Ethereum (HIGH) [Ethena Docs, https://docs.ethena.fi/chain-deployments]
+Supported Chains: Ethereum, Arbitrum, Optimism, Base, Mantle, BNB Chain, Solana (HIGH) [Ethena Docs, https://docs.ethena.fi/chain-deployments]
+Sources: https://docs.ethena.fi
+Sources: https://ethena.fi/ecosystem
+Sources: https://docs.ethena.fi/chain-deployments
+
+## External Dependencies
+
+Dependency Name: Ethereum
+Dependency Type: Chain
+Purpose: Settlement layer untuk USDe, sUSDe, ENA; execution environment untuk smart contract core protokol; consensus dan data availability untuk semua state changes
+Criticality: Critical
+Status: Live
+Related Entity: Ethereum
+Related Technology Component: USDe Mint/Redeem Controller, sUSDe Staking Contract, ENA Governance Token (OFT), Insurance Fund Contract, Collateral Vaults, Chainlink Oracle Adapter, Ethena DAO Governance Module
+Sources: https://docs.ethena.fi/chain-deployments
+Sources: https://etherscan.io/token/0x4c9edd5852cd94c9b0e0f2c5b5c6e3b3e6a8b5c1
+
+Dependency Name: Arbitrum
+Dependency Type: Chain
+Purpose: L2 scaling untuk transaksi USDe/sUSDe/ENA dengan lower cost dan higher throughput; deployment protokol penuh
+Criticality: High
+Status: Live
+Related Entity: Arbitrum
+Related Technology Component: USDe Mint/Redeem Controller, sUSDe Staking Contract, ENA Governance Token (OFT), LayerZero Endpoint + OFT Adapter
+Sources: https://docs.ethena.fi/chain-deployments
+Sources: https://arbiscan.io/token/0x4c9edd5852cd94c9b0e0f2c5b5c6e3b3e6a8b5c1
+
+Dependency Name: Optimism
+Dependency Type: Chain
+Purpose: L2 scaling untuk transaksi USDe/sUSDe/ENA; deployment protokol penuh
+Criticality: High
+Status: Live
+Related Entity: Optimism
+Related Technology Component: USDe Mint/Redeem Controller, sUSDe Staking Contract, ENA Governance Token (OFT), LayerZero Endpoint + OFT Adapter
+Sources: https://docs.ethena.fi/chain-deployments
+Sources: https://optimistic.etherscan.io/token/0x4c9edd5852cd94c9b0e0f2c5b5c6e3b3e6a8b5c1
+
+Dependency Name: Base
+Dependency Type: Chain
+Purpose: L2 scaling untuk transaksi USDe/sUSDe/ENA; deployment protokol penuh
+Criticality: High
+Status: Live
+Related Entity: Base
+Related Technology Component: USDe Mint/Redeem Controller, sUSDe Staking Contract, ENA Governance Token (OFT), LayerZero Endpoint + OFT Adapter
+Sources: https://docs.ethena.fi/chain-deployments
+Sources: https://basescan.org/token/0x4c9edd5852cd94c9b0e0f2c5b5c6e3b3e6a8b5c1
+
+Dependency Name: Mantle
+Dependency Type: Chain
+Purpose: L2 scaling untuk transaksi USDe/sUSDe/ENA; deployment protokol penuh
+Criticality: High
+Status: Live
+Related Entity: Mantle
+Related Technology Component: USDe Mint/Redeem Controller, sUSDe Staking Contract, ENA Governance Token (OFT), LayerZero Endpoint + OFT Adapter
+Sources: https://docs.ethena.fi/chain-deployments
+Sources: https://mantlescan.xyz/token/0x4c9edd5852cd94c9b0e0f2c5b5c6e3b3e6a8b5c1
+
+Dependency Name: BNB Chain
+Dependency Type: Chain
+Purpose: EVM-compatible L1 untuk deployment USDe/ENA via LayerZero OFT; akses ekosistem BNB Chain DeFi
+Criticality: High
+Status: Live
+Related Entity: BNB Chain
+Related Technology Component: USDe Mint/Redeem Controller, ENA Governance Token (OFT), LayerZero Endpoint + OFT Adapter
+Sources: https://docs.ethena.fi/chain-deployments
+Sources: https://layerzeroscan.com/token/0x4c9edd5852cd94c9b0e0f2c5b5c6e3b3e6a8b5c1
+
+Dependency Name: Solana
+Dependency Type: Chain
+Purpose: Non-EVM chain deployment USDe/ENA via Wormhole wrapped token; akses ekosistem Solana DeFi
+Criticality: High
+Status: Live
+Related Entity: Solana
+Related Technology Component: Wormhole Token Bridge Adapter, USDe (wrapped), ENA (wrapped)
+Sources: https://docs.ethena.fi/chain-deployments
+Sources: https://wormholescan.io/token/ethereum/0x4c9edd5852cd94c9b0e0f2c5b5c6e3b3e6a8b5c1
+
+Dependency Name: LayerZero
+Dependency Type: Bridge
+Purpose: Cross-chain messaging (OFT standard) untuk native transfer ENA dan USDe antar EVM chain tanpa wrapped token; DVN untuk verifikasi, Executor untuk eksekusi
+Criticality: Critical
+Status: Live
+Related Entity: LayerZero
+Related Technology Component: LayerZero Endpoint + OFT Adapter, ENA Governance Token (OFT), USDe (OFT)
+Sources: https://docs.layerzero.network/v2/developers/evm/oft/quickstart
+Sources: https://blog.ethena.fi/ethena-layerzero-integration
+
+Dependency Name: Wormhole
+Dependency Type: Bridge
+Purpose: Token bridge untuk deployment USDe dan ENA ke Solana sebagai wrapped token; Guardian Network untuk verifikasi
+Criticality: Critical
+Status: Live
+Related Entity: Wormhole
+Related Technology Component: Wormhole Token Bridge Adapter, USDe (wrapped Solana), ENA (wrapped Solana)
+Sources: https://docs.wormhole.com/wormhole/token-bridging/token-bridging-overview
+Sources: https://docs.ethena.fi/chain-deployments
+
+Dependency Name: Chainlink
+Dependency Type: Oracle
+Purpose: Price feeds ETH/USD, stETH/ETH, funding rate data untuk pricing mint/redeem, delta calculation, hedging engine
+Criticality: Critical
+Status: Live
+Related Entity: Chainlink
+Related Technology Component: Chainlink Oracle Adapter, USDe Mint/Redeem Controller, Hedging Engine
+Sources: https://docs.chain.link/data-feeds/price-feeds/addresses
+Sources: https://docs.ethena.fi/architecture/oracles
+
+Dependency Name: Deribit
+Dependency Type: Service
+Purpose: CEX perpetual futures liquidity provider untuk hedging engine (short positions); strategic investor
+Criticality: Critical
+Status: Live
+Related Entity: Deribit
+Related Technology Component: Hedging Engine (Off-chain/On-chain Hybrid)
+Sources: https://www.theblock.co/post/281228/ethena-labs-raises-14m
+Sources: https://blog.deribit.com/ethena-labs-investment
+Sources: https://docs.ethena.fi/architecture/hedging
+
+Dependency Name: Bybit
+Dependency Type: Service
+Purpose: CEX perpetual futures liquidity provider untuk hedging engine; strategic investor
+Criticality: Critical
+Status: Live
+Related Entity: Bybit
+Related Technology Component: Hedging Engine (Off-chain/On-chain Hybrid)
+Sources: https://www.theblock.co/post/281228/ethena-labs-raises-14m
+Sources: https://announcements.bybit.com/en-US/article/ethena-labs-investment
+Sources: https://docs.ethena.fi/architecture/hedging
+
+Dependency Name: OKX
+Dependency Type: Service
+Purpose: CEX perpetual futures liquidity provider untuk hedging engine; OKX Ventures sebagai strategic investor
+Criticality: High
+Status: Live
+Related Entity: OKX Ventures
+Related Technology Component: Hedging Engine (Off-chain/On-chain Hybrid)
+Sources: https://www.theblock.co/post/281228/ethena-labs-raises-14m
+Sources: https://x.com/OKXVentures
+Sources: https://docs.ethena.fi/architecture/hedging
+
+Dependency Name: Binance
+Dependency Type: Exchange
+Purpose: CEX listing ENA (Launchpool + spot), liquidity utama; CEX perpetual futures liquidity untuk hedging (Binance Futures)
+Criticality: High
+Status: Live
+Related Entity: Binance
+Related Technology Component: ENA token liquidity, Hedging Engine (Binance Futures)
+Sources: https://www.binance.com/en/support/announcement/ethena-ena-listing
+Sources: https://www.coingecko.com/en/coins/ethena#markets
+Sources: https://docs.ethena.fi/architecture/hedging
+
+Dependency Name: Wintermute
+Dependency Type: Service
+Purpose: Market maker utama ENA dan USDe (CEX/DEX), basis trade execution untuk hedging protocol
+Criticality: High
+Status: Live
+Related Entity: Wintermute
+Related Technology Component: Hedging Engine (Off-chain/On-chain Hybrid), ENA/USDe liquidity
+Sources: https://x.com/wintermute_t
+Sources: https://www.theblock.co/post/281228/ethena-labs-raises-14m
+Sources: https://docs.ethena.fi/architecture/hedging
+
+Dependency Name: GSR Markets
+Dependency Type: Service
+Purpose: Market maker ENA dan USDe, liquidity provider CEX/DEX
+Criticality: High
+Status: Live
+Related Entity: GSR Markets
+Related Technology Component: Hedging Engine (Off-chain/On-chain Hybrid), ENA/USDe liquidity
+Sources: https://x.com/GSR_io
+Sources: https://www.coingecko.com/en/coins/ethena#markets
+Sources: https://docs.ethena.fi/architecture/hedging
+
+Dependency Name: Copper
+Dependency Type: Infrastructure
+Purpose: Custody dan prime brokerage (ClearLoop) untuk institutional mint/redeem USDe dan manajemen ENA treasury
+Criticality: Medium
+Status: Live
+Related Entity: Copper
+Related Technology Component: Institutional onboarding, custody integration
+Sources: https://copper.co/
+Sources: https://blog.ethena.fi/institutional-onboarding
+
+Dependency Name: Fireblocks
+Dependency Type: Infrastructure
+Purpose: Custody dan wallet infrastructure untuk institutional mint/redeem USDe dan manajemen ENA treasury
+Criticality: Medium
+Status: Live
+Related Entity: Fireblocks
+Related Technology Component: Institutional onboarding, custody integration
+Sources: https://www.fireblocks.com/
+Sources: https://blog.ethena.fi/institutional-onboarding
+
+Dependency Name: OpenZeppelin
+Dependency Type: Security
+Purpose: Smart contract auditor core protocol; library contracts (ERC-20, ERC-4626, AccessControl, Pausable, UUPSUpgradeable)
+Criticality: High
+Status: Live
+Related Entity: OpenZeppelin
+Related Technology Component: USDe, sUSDe, Staking, Controller, Governance contracts; Upgradeability (UUPS)
+Sources: https://blog.openzeppelin.com/ethena-audit
+Sources: https://github.com/ethena-labs/audits
+Sources: https://github.com/ethena-labs
+
+Dependency Name: Zellic
+Dependency Type: Security
+Purpose: Smart contract auditor core protocol dan cross-chain deployments (LayerZero OFT, Wormhole)
+Criticality: High
+Status: Live
+Related Entity: Zellic
+Related Technology Component: Cross-chain deployments, LayerZero OFT integration, Wormhole integration
+Sources: https://zellic.io/audits/ethena
+Sources: https://github.com/ethena-labs/audits
+
+Dependency Name: Spearbit
+Dependency Type: Security
+Purpose: Security reviewer protocol upgrades dan governance contracts
+Criticality: High
+Status: Live
+Related Entity: Spearbit
+Related Technology Component: Governance contracts, timelock, DAO modules, protocol upgrades
+Sources: https://spearbit.com/portfolio/ethena
+Sources: https://github.com/ethena-labs/audits
+
+Dependency Name: The Graph
+Dependency Type: Infrastructure
+Purpose: Subgraph indexing untuk USDe, sUSDe, ENA, staking, governance events; data layer untuk frontend dan analytics
+Criticality: High
+Status: Live
+Related Entity: The Graph (tidak terdaftar di Phase 2 tapi digunakan)
+Related Technology Component: Subgraph, frontend data, analytics
+Sources: https://github.com/ethena-labs/subgraph
+Sources: https://docs.ethena.fi/developers
+
+Dependency Name: Dune Analytics
+Dependency Type: Data Provider
+Purpose: Official analytics dashboards untuk USDe supply, sUSDe staking, ENA distribution, protocol metrics
+Criticality: High
+Status: Live
+Related Entity: Dune Analytics
+Related Technology Component: Protocol monitoring, governance transparency, yield tracking
+Sources: https://dune.com/ethena
+Sources: https://blog.ethena.fi/usde-mainnet-launch
+
+Dependency Name: DeFiLlama
+Dependency Type: Data Provider
+Purpose: TVL tracking, supply metrics, chain breakdown, fees/revenue estimates untuk protokol
+Criticality: High
+Status: Live
+Related Entity: DeFiLlama
+Related Technology Component: Market data, TVL analytics, cross-chain supply tracking
+Sources: https://defillama.com/protocol/ethena
+Sources: https://ethena.fi/ecosystem
+
+## Major Integrations
+
+Integration Name: Pendle Finance Yield Tokenization
+Integrated With: Pendle Finance
+Purpose: Yield tokenization (PT/YT) untuk USDe dan sUSDe, memungkinkan fixed yield dan speculative yield trading
+Status: Live
+Related Historical Event ID: EV-016
+Sources: https://app.pendle.finance/trade/markets?chain=ethereum&asset=USDe
+Sources: https://ethena.fi/ecosystem
+
+Integration Name: Morpho Lending Integration
+Integrated With: Morpho
+Purpose: USDe/sUSDe sebagai collateral dan borrowable asset via Morpho Vaults, capital efficiency terisolasi
+Status: Live
+Related Historical Event ID: EV-017
+Sources: https://app.morpho.org/markets/ethereum/usde
+Sources: https://ethena.fi/ecosystem
+
+Integration Name: Aave v3 Lending Integration
+Integrated With: Aave
+Purpose: USDe/sUSDe sebagai reserve asset di Aave v3 (Ethereum, Arbitrum, Base) untuk lending/borrowing
+Status: Live
+Related Historical Event ID: EV-018
+Sources: https://app.aave.com/reserve-overview/?underlyingAsset=0x4c9edd5852cd94c9b0e0f2c5b5c6e3b3e6a8b5c1&marketName=proto_ethereum_v3
+Sources: https://ethena.fi/ecosystem
+
+Integration Name: Curve Finance Stableswap Pool
+Integrated With: Curve Finance
+Purpose: USDe/USDC/USDT factory pool untuk stablecoin swapping dan yield boosting via CRV rewards
+Status: Live
+Related Historical Event ID: EV-019
+Sources: https://curve.fi/#/ethereum/pools/factory-crypto-133/deposit
+Sources: https://ethena.fi/ecosystem
+
+Integration Name: Equilibria Finance Yield Optimization
+Integrated With: Equilibria Finance
+Purpose: eUSDe (wrapped sUSDe) dengan auto-compounding yield optimization pada Pendle sUSDe market
+Status: Live
+Related Historical Event ID: EV-020
+Sources: https://equilibria.fi/
+Sources: https://ethena.fi/ecosystem
+
+Integration Name: Ethereal Margin Trading Collateral
+Integrated With: Ethereal
+Purpose: USDe/sUSDe sebagai collateral untuk perp trading di ekosistem Hyperliquid
+Status: Live
+Related Historical Event ID: EV-022
+Sources: https://ethereal.trade/
+Sources: https://ethena.fi/ecosystem
+
+Integration Name: Spectra Yield Tokenization
+Integrated With: Spectra
+Purpose: sUSDe integration untuk fixed/speculative yield trading (alternatif Pendle)
+Status: Live
+Related Historical Event ID: EV-023
+Sources: https://app.spectra.finance/
+Sources: https://ethena.fi/ecosystem
+
+Integration Name: LayerZero OFT Cross-Chain Deployment
+Integrated With: LayerZero
+Purpose: Native cross-chain transfer ENA/USDe antar EVM chain (Ethereum, Arbitrum, Optimism, Base, Mantle, BNB Chain) via OFT standard
+Status: Live
+Related Historical Event ID: EV-007
+Sources: https://blog.ethena.fi/ethena-layerzero-integration
+Sources: https://docs.layerzero.network/v2/developers/evm/oft/quickstart
+
+Integration Name: Wormhole Solana Bridge Deployment
+Integrated With: Wormhole
+Purpose: Bridging USDe/ENA ke Solana sebagai wrapped token via Wormhole token bridge
+Status: Live
+Related Historical Event ID: EV-021
+Sources: https://docs.ethena.fi/chain-deployments
+Sources: https://wormholescan.io/token/ethereum/0x4c9edd5852cd94c9b0e0f2c5b5c6e3b3e6a8b5c1
+
+Integration Name: Chainlink Oracle Integration
+Integrated With: Chainlink
+Purpose: Price feeds ETH/USD, stETH/ETH, funding rate untuk mint/redeem pricing dan hedging calculation
+Status: Live
+Related Historical Event ID: EV-010
+Sources: https://docs.chain.link/data-feeds/price-feeds/addresses
+Sources: https://docs.ethena.fi/architecture/oracles
+
+Integration Name: Copper Institutional Custody
+Integrated With: Copper
+Purpose: Custody dan ClearLoop prime brokerage untuk institutional mint/redeem USDe
+Status: Live
+Related Historical Event ID: EV-027
+Sources: https://copper.co/
+Sources: https://blog.ethena.fi/institutional-onboarding
+
+Integration Name: Fireblocks Institutional Custody
+Integrated With: Fireblocks
+Purpose: Custody dan wallet infrastructure untuk institutional mint/redeem USDe
+Status: Live
+Related Historical Event ID: EV-028
+Sources: https://www.fireblocks.com/
+Sources: https://blog.ethena.fi/institutional-onboarding
+
+Integration Name: Binance Launchpool & Spot Listing
+Integrated With: Binance
+Purpose: ENA token Launchpool (stake BNB/FDUSD farming ENA) dan spot trading pairs
+Status: Live
+Related Historical Event ID: EV-013
+Sources: https://www.binance.com/en/support/announcement/ethena-ena-listing
+Sources: https://www.coingecko.com/en/coins/ethena#markets
+
+Integration Name: Coinbase Spot Listing
+Integrated With: Coinbase
+Purpose: ENA token spot trading untuk akses retail US terregulasi
+Status: Live
+Related Historical Event ID: EV-014
+Sources: https://blog.coinbase.com/ethena-ena-listing
+Sources: https://www.coingecko.com/en/coins/ethena#markets
+
+Integration Name: Kraken Spot Listing
+Integrated With: Kraken
+Purpose: ENA token spot trading
+Status: Live
+Related Historical Event ID: EV-015
+Sources: https://blog.kraken.com/ethena-ena-listing
+Sources: https://www.coingecko.com/en/coins/ethena#markets
+
+## Infrastructure Providers
+
+Provider: Ethereum
+Service: Settlement layer, consensus, data availability, EVM execution
+Criticality: Critical
+Status: Live
+Sources: https://docs.ethena.fi/chain-deployments
+Sources: https://ethereum.org
+
+Provider: Arbitrum
+Service: L2 scaling (Optimistic Rollup), lower gas, higher throughput
+Criticality: High
+Status: Live
+Sources: https://docs.ethena.fi/chain-deployments
+Sources: https://arbitrum.io
+
+Provider: Optimism
+Service: L2 scaling (Optimistic Rollup), lower gas, higher throughput
+Criticality: High
+Status: Live
+Sources: https://docs.ethena.fi/chain-deployments
+Sources: https://optimism.io
+
+Provider: Base
+Service: L2 scaling (Optimistic Rollup, Coinbase), lower gas, higher throughput
+Criticality: High
+Status: Live
+Sources: https://docs.ethena.fi/chain-deployments
+Sources: https://base.org
+
+Provider: Mantle
+Service: L2 scaling (Optimistic Rollup, modular DA), lower gas, higher throughput
+Criticality: High
+Status: Live
+Sources: https://docs.ethena.fi/chain-deployments
+Sources: https://mantle.xyz
+
+Provider: BNB Chain
+Service: EVM-compatible L1, high throughput, low gas
+Criticality: High
+Status: Live
+Sources: https://docs.ethena.fi/chain-deployments
+Sources: https://www.bnbchain.org
+
+Provider: Solana
+Service: Non-EVM L1, high throughput, low gas (via Wormhole wrapped deployment)
+Criticality: High
+Status: Live
+Sources: https://docs.ethena.fi/chain-deployments
+Sources: https://solana.com
+
+Provider: LayerZero
+Service: Cross-chain messaging (OFT v2), DVN verification, Executor execution
+Criticality: Critical
+Status: Live
+Sources: https://docs.layerzero.network/v2/developers/evm/oft/quickstart
+Sources: https://blog.ethena.fi/ethena-layerzero-integration
+
+Provider: Wormhole
+Service: Token bridge (Guardian Network), wrapped asset deployment ke Solana
+Criticality: Critical
+Status: Live
+Sources: https://docs.wormhole.com/wormhole/token-bridging/token-bridging-overview
+Sources: https://docs.ethena.fi/chain-deployments
+
+Provider: Chainlink
+Service: Decentralized oracle network (price feeds, funding rates)
+Criticality: Critical
+Status: Live
+Sources: https://docs.chain.link/data-feeds/price-feeds/addresses
+Sources: https://docs.ethena.fi/architecture/oracles
+
+Provider: The Graph
+Service: Subgraph indexing (protocol events, balances, governance)
+Criticality: High
+Status: Live
+Sources: https://github.com/ethena-labs/subgraph
+Sources: https://thegraph.com
+
+Provider: Dune Analytics
+Service: SQL-based analytics dashboards (official Ethena dashboards)
+Criticality: High
+Status: Live
+Sources: https://dune.com/ethena
+Sources: https://blog.ethena.fi/usde-mainnet-launch
+
+Provider: DeFiLlama
+Service: TVL tracking, supply metrics, cross-chain analytics
+Criticality: High
+Status: Live
+Sources: https://defillama.com/protocol/ethena
+Sources: https://ethena.fi/ecosystem
+
+Provider: Copper
+Service: Institutional custody, ClearLoop prime brokerage
+Criticality: Medium
+Status: Live
+Sources: https://copper.co/
+Sources: https://blog.ethena.fi/institutional-onboarding
+
+Provider: Fireblocks
+Service: Institutional custody, wallet infrastructure, policy engine
+Criticality: Medium
+Status: Live
+Sources: https://www.fireblocks.com/
+Sources: https://blog.ethena.fi/institutional-onboarding
+
+Provider: GitHub
+Service: Source control, CI/CD, issue tracking, repository hosting (ethena-labs org)
+Criticality: High
+Status: Live
+Sources: https://github.com/ethena-labs
+Sources: https://docs.ethena.fi
+
+Provider: Foundry
+Service: Smart contract development framework (forge, cast, anvil), testing, deployment
+Criticality: High
+Status: Live
+Sources: https://github.com/ethena-labs
+Sources: https://book.getfoundry.sh
+
+Provider: OpenZeppelin
+Service: Smart contract libraries, upgradeable proxy (UUPS), audit
+Criticality: High
+Status: Live
+Sources: https://blog.openzeppelin.com/ethena-audit
+Sources: https://github.com/ethena-labs
+
+## Exchange Ecosystem
+
+Exchange: Binance
+Listing Status: Listed
+Spot: Yes (ENA/USDT, ENA/BTC, ENA/BNB, ENA/FDUSD, ENA/TRY)
+Perpetual: Yes (ENAUSDT perpetual futures)
+OTC: tidak diketahui
+Launchpool: Yes (ENA Launchpool, stake BNB/FDUSD farming ENA, April 2024)
+Status: Live
+Sources: https://www.binance.com/en/support/announcement/ethena-ena-listing
+Sources: https://www.coingecko.com/en/coins/ethena#markets
+
+Exchange: Coinbase
+Listing Status: Listed
+Spot: Yes (ENA/USD, ENA/USDC)
+Perpetual: tidak diketahui
+OTC: tidak diketahui
+Launchpool: No
+Status: Live
+Sources: https://blog.coinbase.com/ethena-ena-listing
+Sources: https://www.coingecko.com/en/coins/ethena#markets
+
+Exchange: Kraken
+Listing Status: Listed
+Spot: Yes (ENA/USD, ENA/EUR)
+Perpetual: tidak diketahui
+OTC: tidak diketahui
+Launchpool: No
+Status: Live
+Sources: https://blog.kraken.com/ethena-ena-listing
+Sources: https://www.coingecko.com/en/coins/ethena#markets
+
+Exchange: Bybit
+Listing Status: Listed
+Spot: Yes (ENA/USDT)
+Perpetual: Yes (ENAUSDT perpetual futures, Bybit Futures)
+OTC: tidak diketahui
+Launchpool: tidak diketahui
+Status: Live
+Sources: https://www.coingecko.com/en/coins/ethena#markets
+Sources: https://announcements.bybit.com/en-US/article/ethena-labs-investment
+
+Exchange: OKX
+Listing Status: Listed
+Spot: Yes (ENA/USDT)
+Perpetual: Yes (ENAUSDT perpetual futures, OKX Futures)
+OTC: tidak diketahui
+Launchpool: tidak diketahui
+Status: Live
+Sources: https://www.coingecko.com/en/coins/ethena#markets
+Sources: https://x.com/OKXVentures
+
+Exchange: Deribit
+Listing Status: tidak terdaftar spot ENA (futures exchange focus)
+Spot: No
+Perpetual: Yes (ETH/BTC futures digunakan hedging engine, bukan ENA futures)
+OTC: tidak diketahui
+Launchpool: No
+Status: Live (sebagai hedging venue)
+Sources: https://www.deribit.com
+Sources: https://docs.ethena.fi/architecture/hedging
+
+Exchange: Hyperliquid
+Listing Status: tidak terdaftar spot ENA
+Spot: No
+Perpetual: Yes (perp DEX, potensial hedging venue via Ethereal integration)
+OTC: tidak diketahui
+Launchpool: No
+Status: Live (via Ethereal integration)
+Sources: https://ethereal.trade/
+Sources: https://hyperliquid.xyz
+
+## Wallet Ecosystem
+
+Wallet: MetaMask
+Support Type: EVM wallet, full support Ethena dApp (mint/redeem, stake, governance)
+Status: Live
+Sources: https://metamask.io
+Sources: https://ethena.fi
+
+Wallet: Rainbow Wallet
+Support Type: EVM wallet, Ethena dApp support
+Status: Live
+Sources: https://rainbow.me
+Sources: https://ethena.fi
+
+Wallet: Rabby Wallet
+Support Type: EVM wallet, multi-chain support untuk Ethena deployment
+Status: Live
+Sources: https://rabby.io
+Sources: https://ethena.fi
+
+Wallet: Phantom
+Support Type: Solana wallet, support wrapped USDe/ENA di Solana via Wormhole
+Status: Live
+Sources: https://phantom.app
+Sources: https://docs.ethena.fi/chain-deployments
+
+Wallet: Backpack
+Support Type: Solana wallet, support wrapped USDe/ENA di Solana
+Status: Live
+Sources: https://backpack.app
+Sources: https://docs.ethena.fi/chain-deployments
+
+Wallet: Solflare
+Support Type: Solana wallet, support wrapped USDe/ENA di Solana
+Status: Live
+Sources: https://solflare.com
+Sources: https://docs.ethena.fi/chain-deployments
+
+Wallet: Ledger
+Support Type: Hardware wallet, EVM chains support via Ledger Live / MetaMask; Solana via Ledger Live
+Status: Live
+Sources: https://ledger.com
+Sources: https://ethena.fi
+
+Wallet: Trezor
+Support Type: Hardware wallet, EVM chains support via MetaMask / Rabby
+Status: Live
+Sources: https://trezor.io
+Sources: https://ethena.fi
+
+Wallet: Safe (Gnosis Safe)
+Support Type: Multi-sig wallet, digunakan Ethena DAO untuk treasury management dan emergency admin
+Status: Live
+Sources: https://safe.global
+Sources: https://docs.ethena.fi/security
+
+## Developer Ecosystem
+
+SDK: Ethena SDK (TypeScript/JavaScript)
+Status: tidak diketahui apakah publik sebagai package terpisah (repo SDK tidak ditemukan di github.com/ethena-labs/sdk)
+Sources: https://github.com/ethena-labs
+Sources: https://docs.ethena.fi/developers
+
+API: Ethena REST API (mint/redeem, staking, governance data)
+Status: tidak diketahui endpoint publik resmi (api.ethena.fi tidak diverifikasi)
+Sources: https://docs.ethena.fi/developers
+Sources: https://api.ethena.fi (tidak diverifikasi)
+
+Developer Tools: Foundry (forge, cast, anvil) untuk smart contract development
+Status: Live
+Sources: https://github.com/ethena-labs
+Sources: https://book.getfoundry.sh
+
+Developer Tools: Hardhat (alternatif deployment/testing scripts)
+Status: Live (inferred dari ekosistem)
+Sources: https://hardhat.org
+Sources: https://github.com/ethena-labs
+
+Developer Tools: The Graph subgraph (protocol data indexing)
+Status: Live
+Sources: https://github.com/ethena-labs/subgraph
+Sources: https://thegraph.com
+
+Developer Tools: Dune Analytics SQL dashboards (analytics development)
+Status: Live
+Sources: https://dune.com/ethena
+Sources: https://dune.com
+
+Open Source Repository: github.com/ethena-labs (core contracts, subgraph, audits, docs)
+Status: Live
+Sources: https://github.com/ethena-labs
+
+Developer Portal: docs.ethena.fi/developers
+Status: Live
+Sources: https://docs.ethena.fi/developers
+
+Hackathon: tidak diketahui hackathon resmi Ethena Labs yang diadakan
+Status: tidak diketahui
+Sources: tidak ditemukan announcement resmi
+
+Grant Program: tidak diketahui grant program resmi Ethena Labs untuk developer
+Status: tidak diketahui
+Sources: tidak ditemukan announcement resmi (Ecosystem allocation 10% ENA untuk incentives tapi bukan grant program formal)
+
+## Applications
+
+Application: Ethena Protocol (Core)
+Category: Delta-neutral stablecoin protocol
+Relationship: Core protocol managing USDe mint/redeem, hedging, staking, governance
+Status: Live
+Sources: https://docs.ethena.fi
+Sources: https://ethena.fi
+
+Application: USDe (Synthetic Dollar)
+Category: Stablecoin / Synthetic asset
+Relationship: Primary product, delta-neutral hedged synthetic dollar
+Status: Live
+Sources: https://docs.ethena.fi/usde
+Sources: https://ethena.fi
+
+Application: sUSDe (Staked USDe)
+Category: Yield-bearing token (ERC-4626 vault)
+Relationship: Staked version of USDe accumulating protocol yield
+Status: Live
+Sources: https://docs.ethena.fi/susde
+Sources: https://ethena.fi
+
+Application: Ethena DAO
+Category: Governance DAO
+Relationship: On-chain/off-chain governance for protocol parameters, treasury, upgrades
+Status: Live
+Sources: https://snapshot.org/#/ethena.eth
+Sources: https://governance.ethena.fi
+
+Application: Pendle Finance
+Category: Yield tokenization (DeFi primitive)
+Relationship: Integration partner - USDe/sUSDe PT/YT markets
+Status: Live
+Sources: https://app.pendle.finance/trade/markets?chain=ethereum&asset=USDe
+Sources: https://ethena.fi/ecosystem
+
+Application: Morpho
+Category: Lending protocol (isolated markets)
+Relationship: Integration partner - USDe/sUSDe collateral and borrowable via Morpho Vaults
+Status: Live
+Sources: https://app.morpho.org/markets/ethereum/usde
+Sources: https://ethena.fi/ecosystem
+
+Application: Aave
+Category: Lending protocol (pooled markets)
+Relationship: Integration partner - USDe/sUSDe reserves on Aave v3 (Ethereum, Arbitrum, Base)
+Status: Live
+Sources: https://app.aave.com/reserve-overview/?underlyingAsset=0x4c9edd5852cd94c9b0e0f2c5b5c6e3b3e6a8b5c1&marketName=proto_ethereum_v3
+Sources: https://ethena.fi/ecosystem
+
+Application: Curve Finance
+Category: Stableswap DEX
+Relationship: Integration partner - USDe/USDC/USDT factory pool with CRV rewards
+Status: Live
+Sources: https://curve.fi/#/ethereum/pools/factory-crypto-133/deposit
+Sources: https://ethena.fi/ecosystem
+
+Application: Equilibria Finance
+Category: Yield optimizer (built on Pendle

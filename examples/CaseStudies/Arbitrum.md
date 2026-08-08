@@ -1,7 +1,7 @@
 # Arbitrum — Deep Case Study (Phased)
 
 **CIF Dataset — Deep Dossier · Tier: Deep (anchor project)**
-**Source:** Deep Research (Gemini), Format v3 Dependency Pipeline (11/11 phases: foundation, entity, history, technology, financial, token, ecosystem, market, behavioral, knowledge, conflict). **Auto-assembled** by `tools/ingest.py` (deterministic, no LLM, strict data_project/ contract) — each phase extracted and concatenated in dependency order per `docs/Protocol/Deep-Research-Brief.md`; the reasoning is the source reports'.
+**Source:** Deep Research (DeepSeek), Format v3 Dependency Pipeline (11/11 phases: foundation, entity, history, technology, financial, token, ecosystem, market, behavioral, knowledge, conflict). **Auto-assembled** by `tools/ingest.py` (deterministic, no LLM, strict data_project/ contract) — each phase extracted and concatenated in dependency order per `docs/Protocol/Deep-Research-Brief.md`; the reasoning is the source reports'.
 **Raw sources archived:** doc_backup/deep/Arbitrum_foundation_2026-08.docx, doc_backup/deep/Arbitrum_entity_2026-08.docx, doc_backup/deep/Arbitrum_history_2026-08.docx, doc_backup/deep/Arbitrum_technology_2026-08.docx, doc_backup/deep/Arbitrum_financial_2026-08.docx, doc_backup/deep/Arbitrum_token_2026-08.docx, doc_backup/deep/Arbitrum_ecosystem_2026-08.docx, doc_backup/deep/Arbitrum_market_2026-08.docx, doc_backup/deep/Arbitrum_behavioral_2026-08.docx, doc_backup/deep/Arbitrum_knowledge_2026-08.docx, doc_backup/deep/Arbitrum_conflict_2026-08.docx.
 **Phases not run:** none.
 

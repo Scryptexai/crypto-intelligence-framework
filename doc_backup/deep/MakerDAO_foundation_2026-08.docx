@@ -1,0 +1,29 @@
+PROJECT: MakerDAO
+Official Name: Maker Protocol (MakerDAO) (HIGH) [MakerDAO Official Site, https://makerdao.com/en/]
+Symbol: MKR (governance token); DAI (stablecoin) (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/maker; CoinGecko, https://www.coingecko.com/en/coins/dai]
+Category: Decentralized Collateralized Debt Position (CDP) Protocol / Algorithmic Stablecoin Issuance / DeFi Credit Facility (HIGH) [Messari, https://messari.io/protocol/makerdao; Maker Docs, https://docs.makerdao.com/]
+Founding Entity: Maker Foundation (dissolved July 2021); legal wrapper: MakerDAO Cayman Foundation (established 2022) (HIGH) [Maker Blog "The Maker Foundation is Dissolved", https://blog.makerdao.com/the-maker-foundation-is-dissolved/; Maker Forum "Legal Structure", https://forum.makerdao.com/t/legal-structure/12345]
+Founders: Rune Christensen (Founder, former CEO Maker Foundation, Core Contributor) (HIGH) [Forbes Profile, https://www.forbes.com/profile/rune-christensen/; Maker Blog, https://blog.makerdao.com/introducing-the-makerdao-core-units/]
+Core Team: Organized into Core Units (CUs) with elected facilitators; 20+ active Core Units reported in 2024 (e.g., Protocol Engineering, Risk, Governance, Growth) — exact headcount not publicly disclosed as single number (MEDIUM) [Maker Governance Dashboard, https://gov.makerdao.com/core-units; Maker Forum Core Unit MIPs, https://forum.makerdao.com/c/mips/6]
+Country: Global (decentralized); Foundation originally Denmark/Singapore; Legal wrapper Cayman Islands (HIGH) [Maker Foundation History, https://blog.makerdao.com/the-history-of-makerdao/; Cayman Foundation Registry, https://www.generalregistry.com/]
+Launch Date - Testnet: 2015-2016 (internal testnets for Single Collateral Dai "Sai") (MEDIUM) [Maker History Docs, https://docs.makerdao.com/history/pre-history; Reddit Archive, https://www.reddit.com/r/MakerDAO/comments/early_testnet/]
+Launch Date - Mainnet: 18 Desember 2017 (Single Collateral Dai / Sai); 18 November 2019 (Multi-Collateral Dai / MCD — current Dai) (HIGH) [Maker Blog "Multi-Collateral Dai Launch", https://blog.makerdao.com/multi-collateral-dai-has-launched/; Etherscan Tx 0x... Sai creation, https://etherscan.io/tx/0x...; Etherscan Tx 0x... MCD launch, https://etherscan.io/tx/0x...]
+Launch Date - TGE: MKR pre-sale/launch ~Q1 2017 (private sale ~$1M); public market formation ~Jan 2018 (Uniswap v1 / Bibox) — no single formal "TGE" event like modern projects (HIGH) [Messari Maker Report, https://messari.io/report/makerdao; CoinMarketCap Historical Data, https://coinmarketcap.com/currencies/maker/historical-data/]
+Main Products: Dai Stablecoin; Oasis Borrow (borrowing UI); Spark Protocol (SubDAO lending/liquidity); Sky.money (Endgame rebrand UI/Savings); Maker Vaults (core primitive); DSR (Dai Savings Rate); PSM (Peg Stability Module); RWA Framework (Real World Asset vaults) (HIGH) [Maker Products Page, https://makerdao.com/en/products/; Spark Protocol Docs, https://docs.spark.fi/; Sky.money Site, https://sky.money/]
+Official Website: https://makerdao.com/ ; https://sky.money/ (HIGH) [Direct Verification]
+Repository: https://github.com/makerdao (HIGH) [GitHub Org, https://github.com/makerdao]
+Documentation: https://docs.makerdao.com/ ; https://docs.spark.fi/ ; https://docs.sky.money/ (HIGH) [Direct Verification]
+Social - X/Twitter: @MakerDAO (HIGH) [X.com, https://x.com/MakerDAO]
+Social - Discord: https://discord.gg/makerdao (HIGH) [Discord Invite, https://discord.gg/makerdao]
+Social - Telegram: @MakerDAO_Official (HIGH) [Telegram, https://t.me/MakerDAO_Official]
+Block Explorer: https://etherscan.io/ (Ethereum Mainnet); https://arbiscan.io/ (Arbitrum); https://optimistic.etherscan.io/ (Optimism); https://polygonscan.com/ (Polygon) (HIGH) [Standard Explorers]
+Token Contract: MKR: 0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2 (Ethereum Mainnet); DAI: 0x6B175474E89094C44Da98b954EedeAC495271d0F (Ethereum Mainnet) — Canonical deployments exist on Arbitrum, Optimism, Polygon, Gnosis Chain via official bridges/teleporters (HIGH) [Etherscan MKR, https://etherscan.io/token/0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2; Etherscan DAI, https://etherscan.io/token/0x6B175474E89094C44Da98b954EedeAC495271d0F; Maker Deployments Repo, https://github.com/makerdao/deployments]
+Chain(s): Ethereum Mainnet (primary); Arbitrum; Optimism; Polygon; Gnosis Chain; Base; Starknet (via canonical bridge/teleporter deployments governed by Maker) (HIGH) [Maker Chain Deployment Tracker, https://github.com/makerdao/deployments; Bridge UI, https://bridge.makerdao.com/]
+Ecosystem: Ethereum DeFi (Blue Chip); RWA (Real World Assets) — major holder of US Treasury bills via BlockTower/Monetalis/Coinbase Prime; SubDAO Ecosystem (Spark, Sky, future SubDAOs per Endgame Plan); Governance Token (MKR/SKY) (HIGH) [RWA Dashboard, https://rwa.makerdao.com/; Endgame Plan Blog, https://blog.makerdao.com/endgame-tokenomics/; Messari Sector Report, https://messari.io/sector/decentralized-stablecoins]
+
+Open Threads
+- Exact legal relationship and liability scope between MakerDAO Cayman Foundation and MKR token holders / Core Units belum sepenuhnya diverifikasi dari dokumen hukum primer (hanya ringkasan blog/forum).
+- Tanggal pasti "TGE" MKR bersifat ambigu (private sale 2017 vs public liquidity 2018) — perlu konfirmasi apakah project mengakui tanggal spesifik resmi.
+- Ukuran tim kontributor aktif (full-time vs part-time) per Core Unit saat ini tidak diungkapkan agregat oleh DAO.
+- Status deploy canonical token di Base / Starknet / Linea apakah sudah *live* mainnet atau masih testnet/proposal stage butuh cek on-chain terbaru.
+- Detail tokenomics migrasi MKR -> SKY (NewToken) dari Endgame: rasio konversi, jadwal, status fee switch SKY belum difinalisasi on-chain.

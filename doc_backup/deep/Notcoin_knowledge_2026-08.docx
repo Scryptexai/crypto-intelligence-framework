@@ -1,0 +1,225 @@
+PROJECT: Notcoin
+
+Core Insights
+
+Insight 1: Off-chain First, On-chain Settlement Later Memungkinkan Skala Mass Adoption Tanpa Biaya Gas
+Explanation: Notcoin meluncurkan game tap-to-earn sepenuhnya off-chain di server terpusat Open Builders pada Januari 2024, menunda on-chain settlement (Jetton NOT di TON) hingga Mei 2024 setelah 35 juta pengguna terkumpul【Phase 3 — EV-002】【Phase 3 — EV-003】. Arsitektur hybrid ini mengorbankan desentralisasi awal demi throughput tinggi, biaya nol, dan UX mulus【Phase 4 — Known Limitations】.
+Evidence: Game launch off-chain Jan 2024【Phase 3 — EV-002】; 35M users peak Mar 2024【Phase 3 — EV-003】; TGE on-chain May 2024【Phase 3 — EV-005】; Architecture hybrid off-chain/on-chain【Phase 4 — Architecture】; Centralization limitation acknowledged【Phase 4 — Known Limitations】.
+Supporting Dataset: Phase 3 Events, Phase 4 Architecture, Phase 4 Known Limitations.
+Confidence: HIGH
+
+Insight 2: Distribusi Token 78% Ke Komunitas Instan Tanpa Vesting Menciptakan Holder Base Luas Tapi Tekanan Jual Berkelanjutan
+Explanation: Pada TGE 16 Mei 2024, 78% dari 102,719,221,714 NOT (≈80,121,000,000 NOT) diklaim instan oleh 11,000,000+ wallet unik tanpa cliff atau vesting, sedangkan 22% (≈22,598,000,000 NOT) dialokasi ke tim/ekosistem tanpa vesting schedule on-chain terverifikasi【Phase 6 — Distribution】【Phase 6 — Vesting Schedule】【Phase 3 — EV-005】.
+Evidence: 78% community allocation【Phase 6 — Distribution】; Community 0 vesting【Phase 6 — Vesting Schedule】; 11M+ claimers day 1【Phase 3 — EV-005】; Team/eco 22% no on-chain vesting verified【Phase 6 — Vesting Schedule】【Phase 5 — Treasury】.
+Supporting Dataset: Phase 6 Token Distribution, Phase 6 Vesting Schedule, Phase 3 EV-005, Phase 5 Treasury.
+Confidence: HIGH
+
+Insight 3: Telegram Mini App Platform Sebagai Saluran Distribusi Eksklusif Menghilangkan Friction Onboarding Non-Crypto Users
+Explanation: Notcoin dibangun eksklusif sebagai Telegram Mini App, memanfaatkan basis pengguna Telegram >900 juta MAU, Bot API, Web App SDK, dan initData auth tanpa perlu download aplikasi terpisah atau seed phrase【Phase 7 — External Dependencies: Telegram】【Phase 4 — Execution Environment】. Ini memungkinkan 50 juta pengguna unik lifetime per Desember 2024【Phase 3 — EV-012】.
+Evidence: Telegram Mini App exclusive【Phase 7 — External Dependencies: Telegram】; Telegram Web App runtime【Phase 4 — Execution Environment】; 50M+ unique users Dec 2024【Phase 3 — EV-012】; No separate app/seed phrase required【Phase 3 — EV-002】.
+Supporting Dataset: Phase 7 External Dependencies, Phase 4 Execution Environment, Phase 3 EV-012.
+Confidence: HIGH
+
+Insight 4: Account Abstraction (ERC-4337) Native Wallet Menjadi Differentiator Kompetitif Utama vs Mini App Lain
+Explanation: Notcoin Wallet (ERC-4337 di TON) diluncurkan Oktober 2024 dengan social recovery via Telegram login, gasless via Paymaster Open Builders, batched transactions, dan fiat on-ramp — mencapai 2,000,000+ deployments dalam 2 bulan【Phase 3 — EV-010】【Phase 8 — Adoption Metrics】. Kompetitor utama (Hamster Kombat, Blum, TapSwap) belum memiliki native AA wallet per Januari 2025【Phase 8 — Competitor Landscape】.
+Evidence: Wallet launch Oct 2024【Phase 3 — EV-010】; 2M+ deployments 2 months【Phase 8 — Adoption Metrics】; ERC-4337 features【Phase 4 — Core Components: Smart Wallet】; Competitors lack native AA wallet【Phase 8 — Competitor Landscape】.
+Supporting Dataset: Phase 3 EV-010, Phase 8 Adoption Metrics, Phase 4 Core Components, Phase 8 Competitor Landscape.
+Confidence: HIGH
+
+Insight 5: Model Revenue Diversification Dari Token Ke Platform Fees & Ads Mengurangi Ketergantungan Harga Token
+Explanation: Pasca-TGE, Notcoin membangun tiga revenue stream: (1) Telegram Ads Platform revenue share (pilot Nov 2024)【Phase 3 — EV-011】, (2) Earn campaign fees (take rate dari reward pool mitra, live Jul 2024)【Phase 3 — EV-008】, (3) Potensial fiat on-ramp partner fees via Notcoin Wallet【Phase 5 — Revenue Model】. Tidak ada VC funding publik, tidak ada token sale【Phase 5 — Funding History】.
+Evidence: Telegram Ads revenue share pilot Nov 2024【Phase 3 — EV-011】; Earn campaign fees live Jul 2024【Phase 3 — EV-008】; Fiat on-ramp partner fees planned【Phase 5 — Revenue Model】; Zero VC funding, zero token sale【Phase 5 — Funding History】.
+Supporting Dataset: Phase 3 EV-011, EV-008, Phase 5 Revenue Model, Phase 5 Funding History.
+Confidence: MEDIUM
+
+Insight 6: Governance Off-chain Snapshot Non-binding Menjadi Signaling Layer Saja, Eksekusi Tetap Pusat di Open Builders
+Explanation: Snapshot governance diluncurkan 15 Juli 2024 (1 NOT = 1 vote, gasless) untuk proposal treasury allocation & Earn parameters, namun bersifat advisory/non-binding tanpa delegasi, tanpa quorum resmi, tanpa timelock on-chain【Phase 3 — EV-009】【Phase 6 — Governance】. Treasury 22% supply dikendalikan langsung Open Builders (admin address Jetton master, Paymaster wallet AA)【Phase 5 — Treasury】【Phase 4 — Security Model】.
+Evidence: Snapshot launch Jul 2024【Phase 3 — EV-009】; Off-chain non-binding【Phase 6 — Governance】; No delegation/quorum/timelock【Phase 6 — Governance】; Treasury controlled by Open Builders【Phase 5 — Treasury】; Admin address Jetton master【Phase 4 — Security Model】.
+Supporting Dataset: Phase 3 EV-009, Phase 6 Governance, Phase 5 Treasury, Phase 4 Security Model.
+Confidence: HIGH
+
+Insight 7: Ekosistem Partner Earn (Explore/Earn) Menciptakan Flywheel Utility Token NOT Tanpa Inflation
+Explanation: Notcoin Explore (May 2024) dan Earn (Jul 2024) memungkinkan 50+ proyek TON (Tonstakers, bemo, TonWhales) menjalankan kampanye reward on-chain; Notcoin memotong fee, NOT mendapat utility (hold untuk ikut), proyek mendapat user, user mendapat reward【Phase 3 — EV-006】【Phase 3 — EV-008】【Phase 8 — Adoption Metrics】. Supply NOT fixed 102.7B, tidak ada inflation mechanism【Phase 6 — Inflation/Deflation】.
+Evidence: Explore launch May 2024【Phase 3 — EV-006】; Earn launch Jul 2024【Phase 3 — EV-008】; 50+ campaigns Jan 2025【Phase 8 — Adoption Metrics】; Fee model【Phase 5 — Revenue Model】; Fixed supply no inflation【Phase 6 — Inflation/Deflation】.
+Supporting Dataset: Phase 3 EV-006, EV-008, Phase 8 Adoption Metrics, Phase 5 Revenue Model, Phase 6 Inflation/Deflation.
+Confidence: HIGH
+
+Insight 8: Ketergantungan Ekstrim Pada Telegram & TON Menciptakan Platform Risk Yang Tidak Bisa Dieliminasi Teknis
+Explanation: Seluruh distribusi, auth, UI, ads revenue, dan settlement bergantung pada Telegram (Critical) dan TON (Critical)【Phase 7 — External Dependencies】. Perubahan kebijakan Telegram (API breaking, ban, ads policy) atau TON (consensus, validator set) berdampak langsung ketersediaan aplikasi【Phase 4 — Known Limitations: Telegram Platform Dependency】. Tidak ada fallback chain atau standalone app【Phase 9 — Pola 1: Platform Dependency Risk】.
+Evidence: Telegram Critical dependency【Phase 7 — External Dependencies】; TON Critical dependency【Phase 7 — External Dependencies】; Telegram Platform Dependency High【Phase 4 — Known Limitations】; No fallback chain/standalone app【Phase 9 — Pola 1】.
+Supporting Dataset: Phase 7 External Dependencies, Phase 4 Known Limitations, Phase 9 Pola 1.
+Confidence: HIGH
+
+Insight 9: Smart Contract Audit Deferred/Ignored — Tidak Ada Audit Publik Untuk Kontrak Kritis Hingga Jan 2025
+Explanation: Kontrak Jetton Master, Wallet AA (Paymaster/Bundler), Earn Campaign contracts mengelola nilai besar namun tidak memiliki laporan audit publik dari auditor independen (Certik, Trail of Bits, dll)【Phase 4 — Audit History】【Phase 4 — Known Limitations: No Public Audit】. Mengandalkan standar TON (TEP-74) dan internal review saja【Phase 4 — Security Model】.
+Evidence: No public audit found【Phase 4 — Audit History】; No Public Audit High limitation【Phase 4 — Known Limitations】; Relies on TEP-74 standard【Phase 4 — Security Model】; Audit status unverified【Phase 6 — Open Threads】.
+Supporting Dataset: Phase 4 Audit History, Phase 4 Known Limitations, Phase 4 Security Model, Phase 6 Open Threads.
+Confidence: HIGH
+
+Insight 10: Entity Opacity (Yurisdiksi Open Builders Tidak Diungkap) Sebagai Strategi Defensif Regulatory Uncertainty
+Explanation: Open Builders tidak mengumumkan yurisdiksi inkorporasi, nomor registrasi, atau legal entity details【Phase 1 — Foundation】【Phase 2 — Entity: Open Builders】. Tidak KYC pengguna (anonymous Telegram ID), tidak geo-blocking【Phase 9 — Pola 4: Regulatory Uncertainty】. Legal financial risk: jurisdiction undisclosed【Phase 5 — Financial Risk】.
+Evidence: Jurisdiction not disclosed【Phase 1 — Foundation】; Open Builders jurisdiction not announced【Phase 2 — Entity】; No KYC, no geo-blocking【Phase 9 — Pola 4】; Legal financial risk jurisdiction undisclosed【Phase 5 — Financial Risk】.
+Supporting Dataset: Phase 1 Foundation, Phase 2 Entity, Phase 9 Pola 4, Phase 5 Financial Risk.
+Confidence: MEDIUM
+
+Strategic Principles
+
+Principle 1: Off-chain First, On-chain Settlement After Product-Market Fit
+Explanation: Setiap produk utama diluncurkan off-chain/centralized dulu (Game tap, Explore frontend, Wallet UI), baru komponen on-chain ditambahkan setelah adoption terbukti (Jetton NOT, Earn campaign contracts, Wallet AA contracts)【Phase 9 — Pola 1: Launch Off-chain → On-chain Settlement After PMF】.
+Evidence: Game off-chain Jan 2024 → Jetton on-chain May 2024【Phase 3 — EV-002】【Phase 3 — EV-005】; Explore launch May 2024 → Earn on-chain contracts Jul 2024【Phase 3 — EV-006】【Phase 3 — EV-008】; Wallet UI ready → AA contracts deployed Oct 2024【Phase 3 — EV-010】.
+Supporting Dataset: Phase 9 Pola 1, Phase 3 Events, Phase 4 Technical Upgrade History.
+Confidence: HIGH
+
+Principle 2: Telegram-Native Development — Mini App First, Blockchain Second
+Explanation: Semua produk dibangun sebagai Telegram Mini App pertama kali; blockchain (TON) digunakan hanya untuk settlement, ownership, dan composability; tidak ada standalone mobile/web app atau browser-based dApp【Phase 9 — Pola 2: Telegram-Native Development】.
+Evidence: Launch di Telegram Jan 2024【Phase 3 — EV-002】; Explore di Telegram Web App【Phase 3 — EV-006】; Wallet embedded di Mini App【Phase 3 — EV-010】; Execution Environment Telegram Web App【Phase 4 — Execution Environment】; Telegram Critical dependency【Phase 7 — External Dependencies】.
+Supporting Dataset: Phase 9 Pola 2, Phase 3 Events, Phase 4 Execution Environment, Phase 7 External Dependencies.
+Confidence: HIGH
+
+Principle 3: Account Abstraction Sebagai Differentiator Kompetitif Utama
+Explanation: Investasi besar pada ERC-4337 Smart Wallet (Paymaster, Bundler, Social Recovery) untuk menghilangkan semua friction onboarding non-crypto users; wallet menjadi fitur core produk, bukan tambahan【Phase 9 — Pola 3: Account Abstraction Sebagai Differentiator】.
+Evidence: Wallet AA launch Oct 2024【Phase 3 — EV-010】; 2M+ deployments 2 months【Phase 8 — Adoption Metrics】; Native first-party wallet【Phase 7 — Wallet Ecosystem】; Competitors lack AA wallet【Phase 8 — Competitor Landscape】.
+Supporting Dataset: Phase 9 Pola 3, Phase 3 EV-010, Phase 8 Adoption Metrics, Phase 7 Wallet Ecosystem, Phase 8 Competitor Landscape.
+Confidence: HIGH
+
+Principle 4: Standar TON Ecosystem Adoption Without Forking
+Explanation: Selalu menggunakan standar & infrastruktur yang sudah ada di ekosistem TON (Jetton TEP-74, TonConnect, Tonapi, Blueprint, Tact) daripada membangun custom solution; focus resources pada application layer【Phase 9 — Pola 3: TON Ecosystem Standard Adoption】.
+Evidence: Jetton TEP-74 standard【Phase 4 — Core Components】; TonConnect SDK【Phase 4 — Development Framework】【Phase 7 — Developer Ecosystem】; Tonapi SDK【Phase 4 — Development Framework】【Phase 7 — Infrastructure Providers】; Blueprint/Tact framework【Phase 4 — Development Framework】.
+Supporting Dataset: Phase 9 Pola 3, Phase 4 Core Components, Phase 4 Development Framework, Phase 7 Infrastructure Providers, Phase 7 Developer Ecosystem.
+Confidence: HIGH
+
+Principle 5: Community-First Token Distribution Then Platform Utility Building
+Explanation: Distribusi token luas gratis ke jutaan user dulu (fair launch narrative 78% community, 0% investor), lalu membangun utility & retention mechanisms (Explore access, Earn campaigns, Wallet AA) untuk mencegah dump & menciptakan demand organik【Phase 9 — Pola 4: Community-First Token Distribution】.
+Evidence: 78% community allocation【Phase 6 — Distribution】; 11M+ claimers TGE【Phase 3 — EV-005】; 0 vesting community【Phase 6 — Vesting Schedule】; Explore/Earn/Wallet utility post-TGE【Phase 3 — EV-006】【Phase 3 — EV-008】【Phase 3 — EV-010】; 7 token utilities【Phase 6 — Token Utility】.
+Supporting Dataset: Phase 9 Pola 4, Phase 6 Distribution, Phase 3 EV-005, Phase 6 Vesting Schedule, Phase 3 Events, Phase 6 Token Utility.
+Confidence: HIGH
+
+Success Factors
+
+Factor 1: First-Mover Advantage Di Telegram Mini App Tap-to-Earn Category
+Explanation: Notcoin meluncurkan game tap-to-earn di Telegram Mini App pada Januari 2024, menjadi "first mover" & largest user base di kategori ini; 35 juta pengguna puncak Maret 2024 sebelum kompetitor (Hamster Kombat Mar 2024, Blum, TapSwap) skala besar【Phase 3 — EV-002】【Phase 3 — EV-003】【Phase 8 — Market Position】.
+Evidence: Game launch Jan 2024【Phase 3 — EV-002】; 35M peak users Mar 2024【Phase 3 — EV-003】; Recognized as category leader【Phase 8 — Market Position】; Competitors launched later【Phase 8 — Competitor Landscape】.
+Supporting Dataset: Phase 3 EV-002, EV-003, Phase 8 Market Position, Phase 8 Competitor Landscape.
+Confidence: HIGH
+
+Factor 2: Viral Loop Referral/Squad Mechanics Tanpa Biaya Gas (Off-chain)
+Explanation: Game logic off-chain memungkinkan referral/squad mechanics instan, biaya nol, tanpa gas fee, mendorong viral growth 1 juta pengguna dalam 2 minggu, 35 juta pada puncak【Phase 3 — EV-002】【Phase 3 — EV-003】【Phase 4 — Architecture: Off-chain Game Backend】.
+Evidence: 1M users in 2 weeks【Phase 3 — EV-002】; 35M peak users【Phase 3 — EV-003】; Off-chain centralized backend【Phase 4 — Architecture】; No gas cost for users【Phase 4 — Known Limitations】.
+Supporting Dataset: Phase 3 EV-002, EV-003, Phase 4 Architecture, Phase 4 Known Limitations.
+Confidence: HIGH
+
+Factor 3: Top-Tier CEX Listing Strategy Serentak TGE (Binance, Bybit, OKX)
+Explanation: Listing serentak di 3 CEX terbesar global (Binance Launchpool & Spot, Bybit Spot, OKX Spot) + 2 DEX utama (Dedust, Ston.fi) pada TGE 16 Mei 2024 memastikan likuiditas mendalam, akses fiat global, dan visibilitas mass market dari hari pertama【Phase 3 — EV-005】【Phase 7 — Exchange Ecosystem】【Phase 8 — Trading Markets】.
+Evidence: Simultaneous listing 5 CEX + 2 DEX TGE May 16 2024【Phase 3 — EV-005】; Binance/Bybit/OKX all Spot + Perpetual【Phase 7 — Exchange Ecosystem】; $150-300M 24h volume Jan 2025【Phase 8 — Adoption Metrics】.
+Supporting Dataset: Phase 3 EV-005, Phase 7 Exchange Ecosystem, Phase 8 Trading Markets, Phase 8 Adoption Metrics.
+Confidence: HIGH
+
+Factor 4: Telegram Ads Platform Pilot Integration Memberikan Revenue Non-Token
+Explanation: Menjadi pilot Telegram Ads Platform (Nov 2024) memberikan revenue share dari rewarded ads, mengurangi ketergantungan pada token price & Earn fees saja【Phase 3 — EV-011】【Phase 5 — Revenue Model】【Phase 7 — External Dependencies: Telegram Ads】.
+Evidence: Ads Platform pilot Nov 2024【Phase 3 — EV-011】; Revenue share model【Phase 5 — Revenue Model】; Telegram Ads Critical dependency【Phase 7 — External Dependencies】.
+Supporting Dataset: Phase 3 EV-011, Phase 5 Revenue Model, Phase 7 External Dependencies.
+Confidence: MEDIUM
+
+Factor 5: Account Abstraction Wallet Native Deployment Terbesar Di TON (2M+ Dalam 2 Bulan)
+Explanation: Notcoin Wallet ERC-4337 mencapai 2,000,000+ smart wallet deployments dalam 2 bulan pasca-launch Okt 2024, validasi product-market fit untuk AA wallet di consumer app【Phase 3 — EV-010】【Phase 8 — Adoption Metrics】【Phase 8 — Narrative Position: Account Abstraction】.
+Evidence: Wallet launch Oct 2024【Phase 3 — EV-010】; 2M+ deployments 2 months【Phase 8 — Adoption Metrics】; Largest AA wallet deployment on TON【Phase 8 — Narrative Position】.
+Supporting Dataset: Phase 3 EV-010, Phase 8 Adoption Metrics, Phase 8 Narrative Position.
+Confidence: HIGH
+
+Failure Factors
+
+Factor 1: Treasury Management Non-Transparent — 22% Supply (≈22.6B NOT) Tanpa Vesting On-chain, Multisig, Atau Dashboard Publik
+Explanation: Alokasi 22% tim/ekosistem dikirim ke alamat Open Builders tanpa vesting contract on-chain terverifikasi, tanpa multisig transparan, tanpa transparency dashboard, tanpa laporan berkala【Phase 5 — Treasury】【Phase 6 — Vesting Schedule】【Phase 5 — Financial Risk: Treasury Concentration】.
+Evidence: 22% team/eco no on-chain vesting【Phase 6 — Vesting Schedule】; Treasury custodian Open Builders no multisig public【Phase 5 — Treasury】; Treasury Concentration risk【Phase 5 — Financial Risk】; No transparency dashboard【Phase 5 — Official Financial Resources】.
+Supporting Dataset: Phase 5 Treasury, Phase 6 Vesting Schedule, Phase 5 Financial Risk, Phase 5 Official Financial Resources.
+Confidence: HIGH
+
+Factor 2: Smart Contract Audit Deferred — Tidak Ada Audit Publik Untuk Kontrak Mengelola Nilai Besar
+Explanation: Kontrak Jetton Master, Wallet AA (Paymaster/Bundler), Earn Campaign contracts tidak memiliki laporan audit publik dari auditor independen hingga Jan 2025【Phase 4 — Audit History】【Phase 4 — Known Limitations: No Public Audit】【Phase 6 — Open Threads】.
+Evidence: No public audit found【Phase 4 — Audit History】; No Public Audit High limitation【Phase 4 — Known Limitations】; Audit status unverified【Phase 6 — Open Threads】.
+Supporting Dataset: Phase 4 Audit History, Phase 4 Known Limitations, Phase 6 Open Threads.
+Confidence: HIGH
+
+Factor 3: Governance Theater — Snapshot Non-binding Tanpa Eksekusi On-chain Atau Delegasi
+Explanation: Governance Snapshot (Jul 2024) bersifat advisory only, 1 NOT = 1 vote tanpa delegasi, tanpa quorum resmi, tanpa timelock; eksekusi tetap di tangan Open Builders【Phase 3 — EV-009】【Phase 6 — Governance】【Phase 9 — Pola 1: Off-chain Governance】.
+Evidence: Snapshot non-binding【Phase 6 — Governance】; No delegation/quorum/timelock【Phase 6 — Governance】; Execution by Open Builders【Phase 9 — Pola 1】; Proposal scope limited【Phase 6 — Governance】.
+Supporting Dataset: Phase 3 EV-009, Phase 6 Governance, Phase 9 Pola 1.
+Confidence: HIGH
+
+Factor 4: Platform Dependency Risk Tidak Bisa Dieliminasi — Single Point of Failure Telegram & TON
+Explanation: Seluruh stack bergantung pada Telegram (hosting, auth, distribusi, ads) dan TON (settlement, AA); tidak ada fallback chain, standalone app, atau technical decoupling【Phase 4 — Known Limitations: Telegram Platform Dependency】【Phase 7 — External Dependencies: Telegram Critical, TON Critical】【Phase 9 — Pola 1】.
+Evidence: Telegram Platform Dependency Critical【Phase 4 — Known Limitations】; Telegram Critical, TON Critical【Phase 7 — External Dependencies】; No fallback chain/standalone app【Phase 9 — Pola 1】.
+Supporting Dataset: Phase 4 Known Limitations, Phase 7 External Dependencies, Phase 9 Pola 1.
+Confidence: HIGH
+
+Factor 5: Tokenomics Team Allocation Opaque — Breakdown 22% (Tim, Advisor, Treasury, Ecosystem) Tidak Diungkap
+Explanation: Hanya high-level 78%/22% yang dipublikasikan; breakdown detail tim, advisor, treasury, ecosystem fund, vesting schedule tidak dipublikasikan secara granular【Phase 6 — Distribution】【Phase 6 — Vesting Schedule】【Phase 1 — Open Threads】.
+Evidence: Only high-level 78/22 published【Phase 6 — Distribution】; Team/eco breakdown not disclosed【Phase 6 — Vesting Schedule】; Open thread: detail tokenomics not published【Phase 1 — Open Threads】.
+Supporting Dataset: Phase 6 Distribution, Phase 6 Vesting Schedule, Phase 1 Open Threads.
+Confidence: HIGH
+
+Decision Framework
+
+Step 1: Observe — Validasi Product-Market Fit Via Off-chain MVP Di Telegram Mini App
+Explanation: Launch game tap-to-earn off-chain di Telegram Mini App (Jan 2024) untuk mengukur retention, viral coefficient, dan skala tanpa biaya gas & latency on-chain【Phase 3 — EV-002】【Phase 9 — Pola 1】.
+Evidence: Game launch off-chain Jan 2024【Phase 3 — EV-002】; 35M users peak Mar 2024【Phase 3 — EV-003】; Off-chain first pattern【Phase 9 — Pola 1】.
+Supporting Dataset: Phase 3 EV-002, EV-003, Phase 9 Pola 1.
+Confidence: HIGH
+
+Step 2: Evaluate — Mining Phase End & Tokenomics Design (Apr 2024)
+Explanation: Berakhirkan mining phase 1 Apr 2024; snapshot saldo off-chain; announce tokenomics 78% community / 22% team-eco; full supply mint 102.7B NOT【Phase 3 — EV-004】【Phase 6 — Distribution】.
+Evidence: Mining end Apr 1 2024【Phase 3 — EV-004】; Tokenomics announcement【Phase 3 — EV-004】; 78/22 allocation【Phase 6 — Distribution】; Full supply mint【Phase 6 — TGE】.
+Supporting Dataset: Phase 3 EV-004, Phase 6 Distribution, Phase 6 TGE.
+Confidence: HIGH
+
+Step 3: Fund — Bootstrapping + TON Foundation Grant + Protocol Revenue (Tidak Ada VC)
+Explanation: Pengembangan awal internal funding; grant TON Foundation (nominal tidak diungkap); revenue dari Telegram Ads share & Earn fees pasca-TGE【Phase 5 — Funding History】【Phase 5 — Revenue Model】【Phase 9 — Pola 1: Zero VC Funding】.
+Evidence: No VC rounds【Phase 5 — Funding History】; TON Foundation grant【Phase 5 — Funding History】; Telegram Ads revenue share【Phase 5 — Revenue Model】; Earn campaign fees【Phase 5 — Revenue Model】.
+Supporting Dataset: Phase 5 Funding History, Phase 5 Revenue Model, Phase 9 Pola 1.
+Confidence: HIGH
+
+Step 4: Develop — Parallel Track: On-chain Settlement (Jetton) + Platform Infrastructure (Explore/Earn/Wallet AA)
+Explanation: Pasca-TGE Mei 2024: deploy Jetton NOT, launch Explore, develop Earn campaign contracts, build Wallet AA (Paymaster/Bundler)【Phase 3 — EV-005】【Phase 3 — EV-006】【Phase 3 — EV-008】【Phase 3 — EV-010】【Phase 4 — Technical Upgrade History】.
+Evidence: TGE & Jetton deploy May 2024【Phase 3 — EV-005】; Explore launch May 2024【Phase 3 — EV-006】; Earn contracts Jul 2024【Phase 3 — EV-008】; Wallet AA Oct 2024【Phase 3 — EV-010】; 5 major upgrades【Phase 4 — Technical Upgrade History】.
+Supporting Dataset: Phase 3 Events, Phase 4 Technical Upgrade History.
+Confidence: HIGH
+
+Step 5: Launch — Simultaneous CEX/DEX Listing + Community Claim + Explore Live
+Explanation: TGE 16 Mei 2024: mint full supply, 11M+ wallet claim, listing Binance/Bybit/OKX/Gate.io/KuCoin + Dedust/Ston.fi, Explore live same day【Phase 3 — EV-005】【Phase 3 — EV-006】【Phase 7 — Exchange Ecosystem】.
+Evidence: TGE May 16 2024【Phase 3 — EV-005】; 11M+ claimers day 1【Phase 3 — EV-005】; 5 CEX + 2 DEX simultaneous【Phase 7 — Exchange Ecosystem】; Explore live TGE【Phase 3 — EV-006】.
+Supporting Dataset: Phase 3 EV-005, EV-006, Phase 7 Exchange Ecosystem.
+Confidence: HIGH
+
+Step 6: Govern — Off-chain Snapshot Signaling + Centralized Execution By Open Builders
+Explanation: Snapshot governance Jul 2024 untuk treasury allocation & Earn parameters; proposal advisory; eksekusi oleh Open Builders (multisig/admin tidak diungkap)【Phase 3 — EV-009】【Phase 6 — Governance】【Phase 9 — Pola 1: Off-chain Governance】.
+Evidence: Snapshot launch Jul 2024【Phase 3 — EV-009】; Off-chain non-binding【Phase 6 — Governance】; Execution by Open Builders【Phase 9 — Pola 1】.
+Supporting Dataset: Phase 3 EV-009, Phase 6 Governance, Phase 9 Pola 1.
+Confidence: HIGH
+
+Reusable Playbook
+
+Playbook 1: Off-chain MVP Di Platform Distribusi Massal (Telegram Mini App) Sebelum On-chain Settlement
+Explanation: Bangun produk awal off-chain di platform dengan user base besar (Telegram 900M+ MAU) untuk validasi PMF dengan biaya nol & UX mulus; baru tokenize & on-chain settlement setelah user base terbukti【Phase 9 — Pola 1】【Phase 3 — EV-002】【Phase 3 — EV-005】.
+Evidence: Off-chain game Jan 2024【Phase 3 — EV-002】; 35M users before TGE【Phase 3 — EV-003】; TGE May 2024 after PMF proven【Phase 3 — EV-005】.
+Supporting Dataset: Phase 9 Pola 1, Phase 3 EV-002, EV-003, EV-005.
+Confidence: HIGH
+
+Playbook 2: Fair Launch Narrative 100% Community Airdrop (No Sale, No Investor) + Post-TGE Utility Building
+Explanation: Distribusi 78-100% supply gratis ke komunitas via mining/airdrop (fair launch), 0% investor/private sale; lalu bangun utility (Explore access, Earn campaigns, Wallet features) untuk retention & demand organik【Phase 6 — Distribution】【Phase 6 — Vesting Schedule】【Phase 3 — EV-006】【Phase 3 — EV-008】【Phase 3 — EV-010】.
+Evidence: 78% community, 0% investor【Phase 6 — Distribution】; 0 vesting community【Phase 6 — Vesting Schedule】; Explore/Earn/Wallet utility post-TGE【Phase 3 — EV-006】【Phase 3 — EV-008】【Phase 3 — EV-010】.
+Supporting Dataset: Phase 6 Distribution, Phase 6 Vesting Schedule, Phase 3 EV-006, EV-008, EV-010.
+Confidence: HIGH
+
+Playbook 3: Native Account Abstraction Wallet Sebagai Moat Kompetitif Di Consumer Crypto App
+Explanation: Investasi pada ERC-4337 AA wallet (social recovery, gasless Paymaster, batched tx, fiat on-ramp) embedded di app utama untuk menghilangkan seed phrase & gas friction; menciptakan switching cost tinggi vs kompetitor【Phase 3 — EV-010】【Phase 8 — Adoption Metrics: 2M+ wallets】【Phase 8 — Competitor Landscape】.
+Evidence: Wallet AA launch Oct 2024【Phase 3 — EV-010】; 2M+ deployments 2 months【Phase 8 — Adoption Metrics】; Competitors lack native AA wallet【Phase 8 — Competitor Landscape】.
+Supporting Dataset: Phase 3 EV-010, Phase 8 Adoption Metrics, Phase 8 Competitor Landscape.
+Confidence: HIGH
+
+Playbook 4: Ecosystem Flywheel Via Discovery Platform (Explore) + Reward Campaigns (Earn) Dengan Fee Model
+Explanation: Bangun platform discovery untuk app lain di ekosistem yang sama; biarkan partner menjalankan reward campaigns (Earn) ke holder token Anda; ambil fee dari reward pool; token mendapat utility (hold untuk ikut), partner dapat user, user dapat reward【Phase 3 — EV-006】【Phase 3 — EV-008】【Phase 5 — Revenue Model】【Phase 8 — Adoption Metrics: 50+ campaigns】.
+Evidence: Explore launch May 2024【Phase 3 — EV-006】; Earn launch Jul 2024【Phase 3 — EV-008】; Fee from reward pool【Phase 5 — Revenue Model】; 50+ campaigns Jan 2025【Phase 8 — Adoption Metrics】.
+Supporting Dataset: Phase 3 EV-006, EV-008, Phase 5 Revenue Model, Phase 8 Adoption Metrics.
+Confidence: HIGH
+
+Playbook 5: Early

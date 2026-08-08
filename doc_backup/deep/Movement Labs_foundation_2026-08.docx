@@ -1,0 +1,31 @@
+PROJECT: Movement Labs
+Official Name: Movement Labs (HIGH) [Movement Labs Website, https://movementlabs.xyz/]
+Symbol: MOVE (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+Category: Move-based modular blockchain stack / Layer 2 / MoveVM execution environment (HIGH) [Movement Labs Website, https://movementlabs.xyz/]
+Founding Entity: Movement Labs Inc., Delaware, USA (HIGH) [Movement Labs Careers, https://movementlabs.xyz/careers; Crunchbase, https://www.crunchbase.com/organization/movement-labs]
+Founders: Rushi Manche (Co-founder & CEO); Cooper Scanlon (Co-founder & CTO) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/; LinkedIn Rushi Manche, https://www.linkedin.com/in/rushimanchofficial/; LinkedIn Cooper Scanlon, https://www.linkedin.com/in/cooper-scanlon-91a5a71b8/]
+Core Team: ~30+ orang (termasuk engineer, researcher, BD) — nama terverifikasi: Rushi Manche, Cooper Scanlon, Sami Kassab (Head of Growth), Arjun Krishan (Head of Ecosystem), Tanya Kumar (Head of Operations) (MEDIUM) [Movement Labs Website Team Page, https://movementlabs.xyz/team; LinkedIn Movement Labs, https://www.linkedin.com/company/movementlabs/]
+Country: USA (Delaware) (HIGH) [Crunchbase, https://www.crunchbase.com/organization/movement-labs]
+Launch Date - Testnet: 2024-07-30 (Mevm Testnet "Parthenon") (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/]
+Launch Date - Mainnet: belum diluncurkan (pre-mainnet) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+Launch Date - TGE: pre-TGE (belum diumumkan jadwal resmi) (HIGH) [Movement Labs Discord Announcement, https://discord.gg/movementlabs; Movement Labs Blog, https://blog.movementlabs.xyz/]
+Main Products: Movement SDK (modular MoveVM framework); M1 (Move-based L2 on Ethereum); Movement Network (interconnected Move chains); MoveVM (EVM-compatible Move execution); MEVM (Move-EVM compatibility layer) (HIGH) [Movement Labs Website, https://movementlabs.xyz/products; Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+Official Website: https://movementlabs.xyz/ (HIGH) [Direct access]
+Repository: https://github.com/movementlabsxyz (HIGH) [GitHub Organization, https://github.com/movementlabsxyz]
+Documentation: https://docs.movementlabs.xyz/ (HIGH) [Movement Docs, https://docs.movementlabs.xyz/]
+Social - X/Twitter: @movementlabsxyz (HIGH) [X Profile, https://x.com/movementlabsxyz]
+Social - Discord: https://discord.gg/movementlabs (HIGH) [Discord Invite, https://discord.gg/movementlabs]
+Social - Telegram: @movementlabsxyz (MEDIUM) [Telegram Handle, https://t.me/movementlabsxyz]
+Block Explorer: belum tersedia (mainnet belum live); testnet explorer: https://explorer.testnet.movementlabs.xyz/ (HIGH) [Movement Testnet Explorer, https://explorer.testnet.movementlabs.xyz/]
+Token Contract: belum di-deploy (pre-TGE) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/; Discord FAQ, https://discord.gg/movementlabs]
+Chain(s): Ethereum (L1 settlement); Movement M1 (L2); MEVM testnet (Parthenon); planned: Movement Network (multi-chain) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/; Movement Labs Website, https://movementlabs.xyz/]
+Ecosystem: Move ecosystem (Aptos, Sui, 0L); Ethereum L2 ecosystem; Modular blockchain stack (Celestia DA, Polygon Avail, EigenDA integrations planned) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/; Movement Labs Twitter, https://x.com/movementlabsxyz]
+
+Open Threads
+- Konfirmasi yurisdiksi legal entity yang pasti (Delaware C-Corp vs struktur lain) — perlu cek filing resmi
+- Rincian tokenomics MOVE (alokasi, vesting, utility) — belum dipublikasikan resmi
+- Tanggal mainnet launch target — belum diumumkan pasti
+- Daftar investor dan jumlah funding ronde apa saja — Crunchbase menyebut Series A $38M tapi detail investor tidak lengkap
+- Status integrasi DA layer (Celestia, Avail, EigenDA) — apakah sudah live di testnet atau masih planned
+- Ukuran tim eksak (full-time vs contractor) — website team page tidak exhaustive
+- Smart contract audit status untuk MEVM/M1 — belum ada laporan audit publik yang ditemukan

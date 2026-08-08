@@ -1,0 +1,200 @@
+PROJECT: EOS
+
+## Core Insights
+
+Insight 1: Transisi bertahap dari entitas sentral (Block.one) ke foundation komunitas (ENF) mendemonstrasikan pola desentralisasi proaktif yang dipicu oleh kepergian founder dan tekanan regulator
+Explanation: EOS berevolusi dari Block.one yang mengontrol ICO $4.1B, pengembangan protokol (Dawn 1-4), dan peluncuran mainnet (EV-001–EV-009), menjadi ENF yang dibentuk 2021-09-22 (EV-017) setelah keluarnya Dan Larimer (EV-015) dan rebranding EOSIO→Antelope (EV-016). Transisi ini terjadi melalui proposal BP yang mengalihkan 1% inflasi tahunan ke `eosio.ef` (ENF treasury)【Phase 3 — EV-015】【Phase 3 — EV-016】【Phase 3 — EV-017】.
+Evidence: Block.one mendominasi 2017-2021; Larimer keluar Jan 2021; Antelope rebrand Mar 2021; ENF formed Sep 2021 dengan mandat inflasi 1%/tahun【Phase 3 — EV-015】【Phase 3 — EV-016】【Phase 3 — EV-017】.
+Supporting Dataset: Phase 3 History (EV-001 through EV-017), Phase 2 Entities (Block.one, ENF, Dan Larimer, Yves La Rose, BP Collective)
+Confidence: HIGH
+
+Insight 2: Arsitektur dual-layer (Native WASM + EOS EVM sebagai kontrak WASM native) memungkinkan kompatibilitas Ethereum tanpa mengorbankan konsensus DPoS atau resource model stake-based
+Explanation: EOS EVM diluncurkan 2022-04-01 (EV-019) sebagai smart contract WASM native di atas Antelope Leap runtime, bukan sidechain terpisah. Gas fee dipetakan ke CPU/NET staking; precompiles menyediakan interoperabilitas native token, RAM, voting【Phase 4 — Execution Environment】【Phase 3 — EV-019】.
+Evidence: EOS EVM live Apr 2022; berbasis go-ethereum/revm di WASM; JSON-RPC kompatibel Ethereum; gas mapping ke CPU/NET【Phase 4 — Execution Environment】【Phase 3 — EV-019】.
+Supporting Dataset: Phase 4 Technology (System Architecture, Execution Environment, Core Components), Phase 3 EV-019
+Confidence: HIGH
+
+Insight 3: Model resource stake-based (CPU/NET) + RAM market algoritmik (Bancor) menghilangkan gas fee per-transaksi namun menciptakan friksi UX (staking, 72h unstaking, volatilitas harga RAM)
+Explanation: Pengguna harus stake EOS untuk bandwidth CPU/NET (proporsional stake) dan beli RAM via pasar Bancor 0.5% fee. Unstaking butuh 72 jam. Model ini zero-gas tapi memerlukan kapital upfront dan manajemen resource aktif【Phase 4 — Resource Model】【Phase 6 — Utility】.
+Evidence: Staking CPU/NET untuk bandwidth; RAM market Bancor algorithm; 72h cooldown unstaking; zero gas fee per tx【Phase 4 — Resource Model】【Phase 6 — Utility (Staking CPU/NET, RAM Purchase)】.
+Supporting Dataset: Phase 4 Technology (Resource Model, System Architecture), Phase 6 Token (Utility, Inflation/Deflation)
+Confidence: HIGH
+
+Insight 4: Treasury ENF sepenuhnya bergantung pada inflasi protokol (1%/tahun native EOS) tanpa diversifikasi terverifikasi, menciptakan risiko konsentrasi dan ketergantungan harga token
+Explanation: ENF menerima 1% inflasi tahunan via `eosio.system` sejak Sep 2021 (EV-017). Treasury size, komposisi (EOS vs stablecoin), dan alamat multi-sig tidak dipublikasikan real-time. Tidak ada revenue protocol fees, buyback, atau diversifikasi terverifikasi【Phase 5 — Revenue Model】【Phase 5 — Treasury】【Phase 5 — Financial Risk】.
+Evidence: Revenue stream utama = Protocol Inflation Allocation 1% annual to ENF; Treasury size/composition tidak diungkap; Financial Risk: "Treasury Concentration — predominantly held in native EOS token"【Phase 5 — Revenue Model】【Phase 5 — Treasury】【Phase 5 — Financial Risk】.
+Supporting Dataset: Phase 5 Financial (Revenue Model, Treasury, Financial Risk), Phase 6 Token (Inflation/Deflation), Phase 3 EV-017
+Confidence: HIGH
+
+Insight 5: Governance on-chain DPoS dengan continuous approval voting + vote decay (~50%/tahun) menciptakan accountability BP berkelanjutan tapi partisipasi token holder rendah historis
+Explanation: 1 EOS staked = 1 vote weight untuk 30 BP; vote decay memaksa refresh berkala; top 21 BP aktif. Upgrade protokol butuh 15/21 BP approval via `eosio.prods` workflow. Treasury governance terpusat di ENF leadership tanpa on-chain multisig requirement rutin【Phase 6 — Governance】【Phase 4 — Consensus Mechanism】.
+Evidence: Continuous approval voting; vote decay ~50%/yr; 15/21 BP untuk hard fork; ENF treasury managed by leadership tanpa on-chain proposal mandatory【Phase 6 — Governance】【Phase 4 — Consensus Mechanism】.
+Supporting Dataset: Phase 6 Token (Governance), Phase 4 Technology (Consensus Mechanism), Phase 3 History (Technical Upgrade History)
+Confidence: HIGH
+
+Insight 6: Ekosistem bergantung kritis pada dua provider infrastruktur eksternal tunggal (Hyperion: EOS Rio, Firehose: StreamingFast) tanpa alternatif resmi tertulis
+Explanation: ENF menetapkan Hyperion (full history) dan Firehose (real-time streaming) sebagai dual indexing standard resmi (EV-022, EV-026). Keduanya "Critical/High" criticality di External Dependencies. Tidak ada dokumentasi fallback atau provider alternatif resmi【Phase 7 — External Dependencies】【Phase 7 — Infrastructure Providers】.
+Evidence: Hyperion (EOS Rio) adopted 2023-03; Firehose (StreamingFast) recommended 2024-03; keduanya "High/Critical" criticality; no official alternative documented【Phase 7 — External Dependencies】【Phase 7 — Infrastructure Providers】.
+Supporting Dataset: Phase 7 Ecosystem (External Dependencies, Infrastructure Providers), Phase 3 EV-022, EV-026
+Confidence: HIGH
+
+Insight 7: Tokenomics inflasi net ~1-2%/tahun (1% BP, 1% ENF, sisanya REX/savings/burn) stabil sejak 2021; utility ditambah via layer baru (REX 2019, EOS EVM 2022) tanpa mengubah supply mechanics
+Explanation: Inflasi 5% awal (1% BP, 4% savings) → REX launch 2019 mengalihkan savings ke yield pool → ENF formation 2021 redirect 1% ke ENF → target 2% total (1% BP + 1% ENF). Supply ~1.124B per Dec 2024. Tidak ada hard cap【Phase 6 — Inflation/Deflation】【Phase 3 — EV-010】【Phase 3 — EV-017】【Phase 3 — EV-019】.
+Evidence: Initial 5% inflation (1% BP, 4% savings); REX 2019; ENF 1% redirect 2021; current ~1-2% net; supply 1.124B Dec 2024【Phase 6 — Inflation/Deflation】【Phase 3 — EV-010】【Phase 3 — EV-017】【Phase 3 — EV-019】.
+Supporting Dataset: Phase 6 Token (Inflation/Deflation, Supply, Major Token Events), Phase 3 History (EV-010, EV-017, EV-019)
+Confidence: HIGH
+
+Insight 8: Audit keamanan difokuskan pada komponen terpisah (EOS EVM, Spring SDK, konsensus) oleh firma berbeda per periode, bukan audit komprehensif full node Leap 5.x/6.x
+Explanation: Trail of Bits (2018 consensus/WASM), PeckShield (2018 launch), CertiK (2022 EOS EVM), Halborn (2023 Leap consensus/P2P), OpenZeppelin (2024 Spring SDK). Tidak ada audit full node 2023-2024【Phase 4 — Audit History】【Phase 4 — Known Technical Limitations (Audit Coverage Gap)】.
+Evidence: 5 audit terverifikasi komponen spesifik; no comprehensive public audit for Leap 5.x/6.x full codebase【Phase 4 — Audit History】【Phase 4 — Known Technical Limitations】.
+Supporting Dataset: Phase 4 Technology (Audit History, Known Technical Limitations)
+Confidence: HIGH
+
+Insight 9: Adopsi EOS EVM masih rendah (~5k-20k tx/hari) vs native mainnet (~500k-1.2M tx/hari) meski narasi utama "EVM-Compatible Layer 1"
+Explanation: EOS EVM live Apr 2022 (EV-019) sebagai narasi utama (Phase 8 Narrative Position). Daily tx EOS EVM ~5k-20k vs native ~500k-1.2M (Nov 2024). TVL EOS Mainnet $45.2M (rank ~35th), EOS EVM TVL terpisah lebih kecil【Phase 8 — Adoption Metrics】【Phase 8 — Narrative Position】.
+Evidence: EOS EVM tx 5k-20k/day vs native 500k-1.2M/day; TVL $45.2M rank ~35th; Main Narrative "EVM-Compatible Layer 1"【Phase 8 — Adoption Metrics】【Phase 8 — Narrative Position】.
+Supporting Dataset: Phase 8 Market (Adoption Metrics, Narrative Position), Phase 3 EV-019
+Confidence: HIGH
+
+Insight 10: Distribusi token ICO permissionless 341 hari (90% publik, 10% Block.one vesting 10yr) menciptakan distribusi luas tapi Block.one reserve 100M EOS (vesting hingga 2028) menjadi supply overhang
+Explanation: ICO 2017-06-26 s.d. 2018-06-01 (EV-002, EV-008): 900M ke publik via daily auction, 100M ke Block.one vesting 10M/tahun. Per 2024 ~60M unlocked, 40M terkunci hingga 2028. Tidak ada private sale/VC allocation【Phase 6 — Distribution】【Phase 6 — Vesting Schedule】【Phase 3 — EV-002】【Phase 3 — EV-008】.
+Evidence: 90% public ICO, 10% Block.one 10yr vesting; ~60M unlocked 2018-2024, 40M locked until 2028; no private sale/VC【Phase 6 — Distribution】【Phase 6 — Vesting Schedule】【Phase 3 — EV-002】【Phase 3 — EV-008】.
+Supporting Dataset: Phase 6 Token (Distribution, Vesting Schedule, Major Token Events), Phase 3 History (EV-002, EV-008)
+Confidence: HIGH
+
+## Strategic Principles
+
+Principle 1: Modular Architecture dengan Layer Terpisah (Native WASM + EVM Layer)
+Explanation: Memisahkan execution environment native (WASM/C++ via Spring SDK) dari EVM-compatible layer (EOS EVM) yang berjalan sebagai smart contract di atas native layer, bukan sidechain terpisah. Memungkinkan paralel development dan upgrade independen【Phase 4 — System Architecture】【Phase 4 — Execution Environment】【Phase 3 — EV-019】【Phase 3 — EV-020】.
+Evidence: Antelope Leap (WASM runtime) base layer; EOS EVM deployed as WASM contract with precompiles; gas mapping ke CPU/NET【Phase 4 — System Architecture】【Phase 4 — Execution Environment】【Phase 3 — EV-019】【Phase 3 — EV-020】.
+Supporting Dataset: Phase 4 Technology (System Architecture, Execution Environment, Core Components), Phase 3 History (EV-019, EV-020)
+Confidence: HIGH
+
+Principle 2: Upgrade Bertahap melalui Hard Fork Terkoordinasi BP-ENF
+Explanation: Semua upgrade protokol mayor (Dawn 1-4, EOSIO 1.0, Leap 3.1/4.0/5.0) dilakukan via hard fork yang memerlukan koordinasi 15/21 BP + proposal ENF; tidak ada on-chain automatic upgrade mechanism. Pola: major release ~tahunan setelah ENF terbentuk【Phase 4 — Consensus Mechanism】【Phase 3 — Technical Upgrade History】.
+Evidence: 10+ hard fork terkoordinasi; BFT finality butuh 15/21 signatures; upgrade via `eosio.prods` schedule change【Phase 4 — Consensus Mechanism】【Phase 3 — Technical Upgrade History】.
+Supporting Dataset: Phase 4 Technology (Consensus Mechanism, Technical Upgrade History), Phase 3 History (EV-004 through EV-011, EV-018, EV-020, EV-025)
+Confidence: HIGH
+
+Principle 3: Resource Model Stake-Based (CPU/NET) + RAM Market Algorithmic (Bancor)
+Explanation: Menghilangkan gas fee per transaksi; mengganti dengan model staking token untuk bandwidth (CPU/NET) dan pasar algoritmik untuk state storage (RAM). Menciptakan zero-gas UX tapi memerlukan kapital upfront dan manajemen resource aktif【Phase 4 — Resource Model】【Phase 6 — Utility】.
+Evidence: Staking CPU/NET untuk bandwidth; RAM market Bancor algorithm; 0.5% fee per trade; zero gas fee per tx【Phase 4 — Resource Model】【Phase 6 — Utility (Staking CPU/NET, RAM Purchase)】.
+Supporting Dataset: Phase 4 Technology (Resource Model, System Architecture), Phase 6 Token (Utility)
+Confidence: HIGH
+
+Principle 4: Desentralisasi Progresif melalui Transisi Entity (Block.one → Antelope/ENF → BP Collective)
+Explanation: Stepwise decentralization: 2017-2021 Block.one kendali penuh → 2021 Larimer exit → Antelope rebrand (netral vendor) → ENF formation (mandat inflasi 1%) → BP Collective govern upgrade. Setiap tahap dipicu event krusial (founder exit, regulatory settlement, product failure)【Phase 3 — EV-001 through EV-017】【Phase 2 — Entities】.
+Evidence: Block.one dominan 2017-2021; Larimer exit Jan 2021; Antelope rebrand Mar 2021; ENF formed Sep 2021 dengan inflasi 1%; BP Collective govern upgrade【Phase 3 — EV-015】【Phase 3 — EV-016】【Phase 3 — EV-017】【Phase 2 — Entities】.
+Supporting Dataset: Phase 3 History (EV-001 through EV-017), Phase 2 Entities (Block.one, ENF, BP Collective, Dan Larimer, Yves La Rose)
+Confidence: HIGH
+
+Principle 5: Ekspansi Utility Token Melalui Layer Baru Bukan Mengubah Tokenomics Dasar
+Explanation: Tokenomics inti (inflasi 1% BP, 1% ENF) stabil sejak 2021; utility ditambah via layer/protocol baru: REX (2019, resource exchange yield), EOS EVM (2022, gas mapping), Spring SDK (2022, dev tooling) — tanpa mengubah supply mechanics【Phase 6 — Inflation/Deflation】【Phase 3 — EV-010】【Phase 3 — EV-019】【Phase 3 — EV-021】.
+Evidence: 2018 staking CPU/NET+RAM+voting; 2019 REX yield; 2022 EOS EVM gas mapping; tokenomics stable since 2021【Phase 6 — Inflation/Deflation】【Phase 3 — EV-010】【Phase 3 — EV-019】【Phase 3 — EV-021】.
+Supporting Dataset: Phase 6 Token (Inflation/Deflation, Utility), Phase 3 History (EV-010, EV-019, EV-021)
+Confidence: HIGH
+
+Principle 6: Community-Driven Governance dengan On-Chain Accountability (Vote Decay + BP Election)
+Explanation: Continuous approval voting dengan vote decay ~50%/tahun memaksa token holder refresh vote; top 21 BP aktif. Membuat accountability berkelanjutan tapi partisipasi rendah historis. Treasury governance terpusat di ENF leadership【Phase 6 — Governance】【Phase 4 — Consensus Mechanism】.
+Evidence: 1 EOS staked = 1 vote weight untuk 30 BP; vote decay ~50%/yr; 15/21 BP untuk hard fork; ENF treasury managed by leadership【Phase 6 — Governance】【Phase 4 — Consensus Mechanism】.
+Supporting Dataset: Phase 6 Token (Governance), Phase 4 Technology (Consensus Mechanism)
+Confidence: HIGH
+
+## Success Factors
+
+Factor 1: ICO Publik Permissionless $4.1B (2017-2018) Membangun Distribusi Token Luas dan Treasury Awal Masif
+Explanation: Year-long daily auction di Ethereum tanpa KYC/whitelist mengumpulkan ~$4.1B dari ribuan peserta global. Menciptakan community ownership 90% supply sejak genesis, fondasi distribusi luas untuk DPoS voting legitimacy【Phase 5 — Funding History】【Phase 6 — Distribution】【Phase 3 — EV-002】【Phase 3 — EV-008】.
+Evidence: $4.1B raised via 341-day public sale; 900M EOS to public, 100M to Block.one; no private sale/VC【Phase 5 — Funding History】【Phase 6 — Distribution】【Phase 3 — EV-002】【Phase 3 — EV-008】.
+Supporting Dataset: Phase 5 Financial (Funding History), Phase 6 Token (Distribution, Token Sale), Phase 3 History (EV-002, EV-008)
+Confidence: HIGH
+
+Factor 2: Mainnet Launch oleh BP Collective (Bukan Block.one) Menetapkan Preseden Governance On-Chain Sejak Hari Pertama
+Explanation: Block.one menolak memproduksi blok genesis; 21 BP terpilih voting on-chain meluncurkan mainnet 2018-06-14 (EV-009). Mengalihkan kendali jaringan instan ke BP Collective, menetapkan pola upgrade terkoordinasi BP-ENF yang berlanjut hingga sekarang【Phase 3 — EV-009】【Phase 3 — EV-010】【Phase 2 — Entity (BP Collective)】.
+Evidence: 21 BP menghasilkan blok genesis; Block.one menyerahkan kode ke komunitas; voting BP aktif sejak 2018-06-15【Phase 3 — EV-009】【Phase 3 — EV-010】【Phase 2 — Entity (BP Collective)】.
+Supporting Dataset: Phase 3 History (EV-009, EV-010), Phase 2 Entities (BP Collective)
+Confidence: HIGH
+
+Factor 3: Transisi ke ENF (2021) Memastikan Kelanjutan Pengembangan Protokol Pasca-Founder Exit
+Explanation: Keluarnya Dan Larimer (EV-015) tidak menghentikan pengembangan. ENF dibentuk (EV-017) dengan mandat inflasi 1%/tahun, merekrut tim 30+ orang, memimpin Leap 3.1/4.0/5.0, EOS EVM, Spring SDK. Foundation model provides sustainable funding tanpa bergantung single entity【Phase 3 — EV-015】【Phase 3 — EV-017】【Phase 2 — Entity (ENF, Yves La Rose)】.
+Evidence: Larimer exit Jan 2021; ENF formed Sep 2021 dengan 1% inflation mandate; tim 30+; Leap 3.1/4.0/5.0, EOS EVM, Spring SDK delivered【Phase 3 — EV-015】【Phase 3 — EV-017】【Phase 2 — Entity (ENF, Yves La Rose)】.
+Supporting Dataset: Phase 3 History (EV-015, EV-017), Phase 2 Entities (ENF, Yves La Rose, ENF Core Team)
+Confidence: HIGH
+
+Factor 4: Arsitektur Dual-Layer (WASM Native + EOS EVM) Memperluas Addressable Market ke Ethereum Developer Ecosystem
+Explanation: EOS EVM (EV-019) memungkinkan deployment kontrak Solidity/Vyper asli via Hardhat/Foundry/MetaMask. Gas fee mapped ke CPU/NET staking (zero gas UX untuk user). Menarik developer Ethereum tanpa migrasi full stack【Phase 4 — Execution Environment】【Phase 7 — Major Integrations (EOS EVM)】【Phase 8 — Narrative Position】.
+Evidence: EOS EVM live Apr 2022; Solidity/Vyper support; Hardhat/Foundry/MetaMask compatible; gas mapped to CPU/NET stake【Phase 4 — Execution Environment】【Phase 7 — Major Integrations (EOS EVM)】【Phase 8 — Narrative Position】.
+Supporting Dataset: Phase 4 Technology (Execution Environment), Phase 7 Ecosystem (Major Integrations), Phase 8 Market (Narrative Position)
+Confidence: HIGH
+
+Factor 5: Spring SDK (2022) Modernisasi Developer Experience (C++20, CMake, Integrated Testing) Menggantikan CDT Legacy
+Explanation: Spring SDK (EV-021) menyediakan toolkit C++20 modern dengan CMake, Clang/LLVM WASM target, integrated testing framework, ABI generation. Mengatasi friksi CDT legacy dan meningkatkan DX untuk kontrak native WASM【Phase 4 — Development Framework】【Phase 3 — EV-021】【Phase 7 — Developer Ecosystem】.
+Evidence: Spring SDK released 2022; C++20, CMake, testing terintegrasi; replaces CDT legacy; OpenZeppelin audit 2024【Phase 4 — Development Framework】【Phase 3 — EV-021】【Phase 7 — Developer Ecosystem】.
+Supporting Dataset: Phase 4 Technology (Development Framework), Phase 3 History (EV-021), Phase 7 Ecosystem (Developer Ecosystem)
+Confidence: HIGH
+
+Factor 6: Dual Indexing Standard (Hyperion Full History + Firehose Real-Time) Menyediakan Infrastruktur Data Andal untuk Seluruh Ekosistem
+Explanation: ENF menetapkan Hyperion (EOS Rio) untuk full-history REST/GraphQL dan Firehose (StreamingFast) untuk sub-second gRPC streaming sebagai standar resmi (EV-022, EV-026). Mengurangi fragmentasi provider, memastikan ketersediaan data on-chain konsisten untuk explorer, wallet, dApp【Phase 7 — Infrastructure Providers】【Phase 7 — External Dependencies】【Phase 3 — EV-022】【Phase 3 — EV-026】.
+Evidence: Hyperion adopted 2023-03; Firehose recommended 2024-03; both "Critical/High" criticality; official standard for ecosystem【Phase 7 — Infrastructure Providers】【Phase 7 — External Dependencies】【Phase 3 — EV-022】【Phase 3 — EV-026】.
+Supporting Dataset: Phase 7 Ecosystem (Infrastructure Providers, External Dependencies), Phase 3 History (EV-022, EV-026)
+Confidence: HIGH
+
+## Failure Factors
+
+Factor 1: Kegagalan Voice (Platform Media Sosial Block.one) — Tutup <1 Tahun, Menghabiskan Sumber Daya Tanpa Adopsi
+Explanation: Block.one meluncurkan Voice beta 2019-02 (EV-012) di atas EOS Mainnet dengan model tokenisasi perhatian + KYC. Adopsi rendah, biaya operasional tinggi, ditutup 2020-02-10 (EV-014). Menghabiskan engineering resources Block.one yang bisa difokuskan ke protokol【Phase 3 — EV-012】【Phase 3 — EV-014】【Phase 2 — Entity (Voice)】.
+Evidence: Voice beta Feb 2019; closed Feb 2020 (<1 yr); low adoption, high cost; team/assets reallocated【Phase 3 — EV-012】【Phase 3 — EV-014】【Phase 2 — Entity (Voice)】.
+Supporting Dataset: Phase 3 History (EV-012, EV-014), Phase 2 Entities (Voice)
+Confidence: HIGH
+
+Factor 2: Kurangnya Transparansi Treasury ENF — Size, Composition, Multi-sig Addresses Tidak Dipublikasikan Real-Time
+Explanation: ENF menerima 1% inflasi tahunan sejak Sep 2021 (~3-4 tahun), tapi treasury size, komposisi (EOS vs stablecoin), alamat multi-sig custodian tidak transparan. Tidak ada audited financial statements, transparency dashboard, atau on-chain tracking resmi【Phase 5 — Treasury】【Phase 5 — Financial Risk】【Phase 6 — Holder Distribution】.
+Evidence: Treasury size/composition tidak diungkap; multi-sig addresses not confirmed; no audited financials; no transparency dashboard【Phase 5 — Treasury】【Phase 5 — Financial Risk】【Phase 6 — Holder Distribution】.
+Supporting Dataset: Phase 5 Financial (Treasury, Financial Risk), Phase 6 Token (Holder Distribution)
+Confidence: HIGH
+
+Factor 3: Audit Coverage Gap — Tidak Ada Audit Komprehensif Full Node Leap 5.x/6.x (Hanya Komponen Terpisah)
+Explanation: Audit历史覆盖 Trail of Bits (2018), PeckShield (2018), CertiK (2022 EOS EVM), Halborn (2023 Leap consensus/P2P), OpenZeppelin (2024 Spring SDK). Tidak ada audit full node 2023-2024 mencakup consensus, P2P, WASM runtime, chainbase secara utuh【Phase 4 — Audit History】【Phase 4 — Known Technical Limitations (Audit Coverage Gap)】.
+Evidence: 5 audit komponen spesifik; no comprehensive public audit for Leap 5.x/6.x full codebase【Phase 4 — Audit History】【Phase 4 — Known Technical Limitations】.
+Supporting Dataset: Phase 4 Technology (Audit History, Known Technical Limitations)
+Confidence: HIGH
+
+Factor 4: Adopsi EOS EVM Rendah vs Native Mainnet (5k-20k vs 500k-1.2M tx/hari) Meski Narasi Utama
+Explanation: EOS EVM live Apr 2022 sebagai Main Narrative "EVM-Compatible Layer 1" (Phase 8), tapi daily transactions ~5k-20k vs native ~500k-1.2M (Nov 2024). TVL EOS Mainnet $45.2M (rank ~35th), EOS EVM TVL lebih kecil. Developer adoption belum signifikan【Phase 8 — Adoption Metrics】【Phase 8 — Narrative Position】.
+Evidence: EOS EVM tx 5k-20k/day vs native 500k-1.2M/day; TVL $45.2M rank ~35th; Main Narrative "EVM-Compatible Layer 1"【Phase 8 — Adoption Metrics】【Phase 8 — Narrative Position】.
+Supporting Dataset: Phase 8 Market (Adoption Metrics, Narrative Position)
+Confidence: HIGH
+
+Factor 5: Ketergantungan Infrastruktur Kritis pada Single Provider Eksternal (Hyperion: EOS Rio, Firehose: StreamingFast) Tanpa Fallback Resmi
+Explanation: Dual indexing standard bergantung 100% pada EOS Rio (Hyperion) dan StreamingFast (Firehose). Tidak ada dokumentasi alternatif, SLA, atau contingency plan jika provider down. Single point of failure untuk data layer seluruh ekosistem【Phase 7 — External Dependencies】【Phase 7 — Infrastructure Providers】.
+Evidence: Hyperion (EOS Rio) "High" criticality; Firehose (StreamingFast) "High" criticality; no official alternative documented【Phase 7 — External Dependencies】【Phase 7 — Infrastructure Providers】.
+Supporting Dataset: Phase 7 Ecosystem (External Dependencies, Infrastructure Providers)
+Confidence: HIGH
+
+Factor 6: Regulatory Overhang SEC Settlement 2019 ($24M) Menciptakan Ketidakpastian Hukum Token EOS di AS
+Explanation: Block.one settle SEC complaint Sep 2019 (EV-013) bayar $24M tanpa admit/deny. Tidak ada legal opinion publik dari ENF post-settlement apakah EOS dianggap security di AS. Mempengaruhi exchange listing, institutional custody, US user access【Phase 3 — EV-013】【Phase 5 — Financial Risk】【Phase 2 — Entity (SEC)】.
+Evidence: SEC settlement Sep 2019 $24M; no public legal opinion from ENF post-settlement; exchange delisting risk, custody issues persist【Phase 3 — EV-013】【Phase 5 — Financial Risk】【Phase 2 — Entity (SEC)】.
+Supporting Dataset: Phase 3 History (EV-013), Phase 5 Financial (Financial Risk), Phase 2 Entities (SEC)
+Confidence: HIGH
+
+Factor 7: Fragmentasi Tooling Pengembang (CDT Legacy vs Spring SDK vs EOSJS vs Anchor Link vs Wharf Kit) Meningkatkan Kompleksitas Onboarding
+Explanation: Koeksistensi CDT (legacy), Spring SDK (modern C++), EOSJS (legacy JS), Anchor Link/Wharf Kit (TypeScript session management) tanpa migrasi path jelas. Developer harus memilih stack tanpa guidance resmi terpusat【Phase 4 — Development Framework】【Phase 4 — Known Technical Limitations】【Phase 7 — Developer Ecosystem】.
+Evidence: CDT legacy, Spring SDK modern, EOSJS legacy, Anchor Link/Wharf Kit TypeScript; no unified migration path【Phase 4 — Development Framework】【Phase 4 — Known Technical Limitations】【Phase 7 — Developer Ecosystem】.
+Supporting Dataset: Phase 4 Technology (Development Framework, Known Technical Limitations), Phase 7 Ecosystem (Developer Ecosystem)
+Confidence: HIGH
+
+## Decision Framework
+
+Step 1: Observe — Identifikasi Trigger Krusial (Founder Exit, Regulatory Event, Product Failure, Technical Bottleneck)
+Explanation: Keputusan besar dipicu oleh event eksternal/internal: Larimer exit (EV-015) → Antelope rebrand; SEC settlement (EV-013) → regulatory strategy; Voice failure (EV-014) → resource reallocation; Resource exhaustion attacks → Leap 5.0 (EV-025)【Phase 3 — EV-013】【Phase 3 — EV-014】【Phase 3 — EV-015】【Phase 3 — EV-025】.
+Evidence: Larimer exit Jan 2021 → Antelope rebrand Mar 2021; SEC settlement Sep 2019; Voice shutdown Feb 2020; Leap 5.0 Jan 2024 for resource exhaustion mitigation【Phase 3 — EV-013】【Phase 3 — EV-014】【Phase 3 — EV-015】【Phase 3 — EV-025】.
+Supporting Dataset: Phase 3 History (EV-013, EV-014, EV-015, EV-025), Phase 9 Behavioral (Risk Response Patterns)
+Confidence: HIGH
+
+Step 2: Evaluate — Konsultasi Komunitas + BP Signaling + ENF Technical Assessment
+Explanation: Sebelum hard fork/upgrade mayor: ENF mempersiapkan teknis (Leap release candidate), BP signaling via testnet/vote, komunitas diskusi di Discord/Telegram/GitHub. Contoh: Spring Hard Fork/Leap 4.0 (EV-020) terkoordinasi BP+ENF【Phase 3 — EV-020】【Phase 4 — Technical Upgrade History】【Phase 6 — Governance】.
+Evidence: Leap release candidates tested by BP; BP signaling via votes; community discussion on Discord/Telegram; Spring/Leap 4.0 coordinated BP+ENF【Phase 3 — EV-020】【Phase 4 — Technical Upgrade History】【Phase 6 — Governance】.
+Supporting Dataset: Phase 3 History (EV-020), Phase 4 Technology (Technical Upgrade History), Phase 6 Token (Governance)
+Confidence: HIGH
+
+Step 3: Fund — Alokasi Treasury Inflasi (1%/tahun ke ENF) untuk Prioritas Roadmap
+Explanation: ENF menggunakan inflasi 1%/tahun (native EOS) untuk mendanai: core protocol dev (Leap), EOS EVM, Spring SDK, Hyperion/Firehose integration, Grants, EOS Network Ventures. Tidak ada external fundraising post-ICO【Phase 5 — Revenue Model】【Phase 3 — EV-017】【

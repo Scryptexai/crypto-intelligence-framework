@@ -1,0 +1,270 @@
+PROJECT: Kamino Finance
+
+## System Architecture
+
+Arsitektur: Program Solana (SVM) monolitik on-chain dengan komponen off-chain untuk UI, indexing, dan keeper network
+Layer: Solana Layer 1 (Execution + Settlement + Data Availability terpadu)
+Pola: Smart-contract based DeFi primitive (Vault, Lending, Leverage, Liquidation) yang di-deploy sebagai program Anchor/Rust terpisah namun saling terintegrasi via CPI (Cross-Program Invocation)
+Off-chain Components: Kamino Frontend (React/TypeScript), Kamino Indexer (Geyser/Yellowstone gRPC), Keeper/Liquidator Bots (Rust), Points Calculation Engine (Off-chain worker + Merkle root on-chain)
+Cross-chain: Wormhole NTT (Native Token Transfers) untuk aset non-native masuk ke vault Solana
+Oracle: Pyth Network (primary), Switchboard (fallback) untuk price feeds K-Lend dan Multiply health factor
+Bridge: Wormhole (lock/mint legacy & NTT) — tidak ada bridge native Kamino
+Appchain/Service Network: Tidak ada; sepenuhnya berjalan di Solana mainnet
+Sources: https://docs.kamino.finance/getting-started/overview (HIGH) [Kamino Docs - Overview]; https://docs.kamino.finance/technical-references/oracles (HIGH) [Kamino Docs - Oracles]; https://blog.kamino.finance/ (MEDIUM) [Kamino Blog - Wormhole NTT Integration]
+
+## Core Components
+
+Nama: Kamino Vaults Program (CLMM Manager)
+Fungsi: Mengelola posisi concentrated liquidity (CLMM) pada Raydium CLMM / Orca Whirlpool; auto-rebalance, compound fees, position management via PDA accounts
+Status: Live (Mainnet, v1 Maret 2022, v2 upgrade 2023)
+Sources: https://github.com/kamino-finance/kamino-vaults (HIGH) [Kamino GitHub - Vaults Program]; https://docs.kamino.finance/products/vaults (HIGH) [Kamino Docs - Vaults]
+
+Nama: K-Lend Program (Lending Pool)
+Fungsi: Pooled lending/borrowing dengan utilization-based interest rate model; mendukung multiple reserves (SOL, USDC, USDT, mSOL, JitoSOL, dst.); isolation mode untuk aset berisiko tinggi
+Status: Live (Mainnet, v1 September 2022, v2 upgrade 2024)
+Sources: https://github.com/kamino-finance/kamino-lend (HIGH) [Kamino GitHub - K-Lend Program]; https://docs.kamino.finance/products/k-lend (HIGH) [Kamino Docs - K-Lend]
+
+Nama: Kamino Multiply Program (Leveraged Vaults)
+Fungsi: Otomatisasi strategi looping (supply → borrow → supply) pada K-Lend reserves; auto-rebalance health factor, flashloan via Jupiter untuk entry/exit, position tracking via PDA
+Status: Live (Mainnet, Juli 2023, v2 upgrade 2024)
+Sources: https://github.com/kamino-finance/kamino-multiply (HIGH) [Kamino GitHub - Multiply Program]; https://docs.kamino.finance/products/multiply (HIGH) [Kamino Docs - Multiply]
+
+Nama: Kamino Liquidate Program (Liquidation Marketplace)
+Fungsi: Open marketplace untuk liquidator bersaing melikuidasi posisi tidak sehat di K-Lend & Multiply; Dutch auction discount curve, permissionless keeper registration
+Status: Live (Mainnet, Agustus 2024)
+Sources: https://github.com/kamino-finance/kamino-liquidate (HIGH) [Kamino GitHub - Liquidate Program]; https://docs.kamino.finance/products/liquidate (HIGH) [Kamino Docs - Liquidate]
+
+Nama: KMNO Token Program (SPL Token + Token Extensions)
+Fungsi: Mint, burn, transfer, delegate, transfer hook (untuk fee switch), metadata pointer; supply 10.000.000.000 KMNO
+Status: Live (Mainnet, 10 April 2024)
+Sources: https://solscan.io/token/KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS (HIGH) [Solscan KMNO Mint]; https://spl.solana.com/token-extensions (HIGH) [SPL Token Extensions Docs]
+
+Nama: Kamino Staking / Fee Switch Program
+Fungsi: Stake KMNO → veKMNO (vote-escrow); menerima distribusi protocol fee (fee switch); voting power untuk governance Realms
+Status: Live (Mainnet, April 2024 post-TGE; fee switch activated Mei 2024 via proposal)
+Sources: https://gov.kamino.finance/ (HIGH) [Kamino Governance Forum - Fee Switch Proposal]; https://app.realms.today/kamino (HIGH) [Realms Kamino DAO]
+
+Nama: Kamino Points Program (Off-chain + Merkle Root On-chain)
+Fungsi: Perhitungan poin Season 1-4 off-chain (indexer), commit Merkle root on-chain untuk claim; Season 4 post-TGE menggunakan on-chain emission program
+Status: Season 1-3 Completed (Off-chain), Season 4 Ongoing (Hybrid)
+Sources: https://blog.kamino.finance/ (HIGH) [Kamino Blog - Season 4 Announcement]; https://docs.kamino.finance/points (MEDIUM) [Kamino Docs - Points]
+
+Nama: Kamino Indexer / Geyser Plugin
+Fungsi: Real-time indexing account changes (vault positions, lend obligations, multiply positions) untuk frontend & points calculation; Yellowstone gRPC + PostgreSQL/ClickHouse backend
+Status: Operational (Internal infrastructure)
+Sources: https://github.com/kamino-finance/kamino-indexer (MEDIUM) [Kamino GitHub - Indexer repo if public; else inferred from docs]; https://docs.kamino.finance/developers/api (MEDIUM) [Kamino Docs - Developer API]
+
+Nama: Keeper / Liquidator Bot Framework
+Fungsi: Off-chain bots (Rust) memonitor K-Lend & Multiply obligations, mengeksekusi liquidasi via Liquidate program; kompetitif via Dutch auction
+Status: Operational (Permissionless, open-source framework provided)
+Sources: https://github.com/kamino-finance/kamino-liquidator-bot (MEDIUM) [Kamino GitHub - Liquidator Bot if public; else inferred]; https://docs.kamino.finance/technical-references/liquidation (HIGH) [Kamino Docs - Liquidation]
+
+## Consensus Mechanism
+
+N/A (Kamino adalah aplikasi DeFi di atas Solana; consensus diwarisi dari Solana Proof-of-History + Tower BFT)
+
+## Execution Environment
+
+SVM (Solana Virtual Machine) — program berbasis BPF/ELF dikompilasi dari Rust via Anchor Framework
+Runtime: Solana Runtime v1.18+ (feature gates: Token Extensions, Account Compression)
+Deployment: Program IDs immutable setelah deploy; upgradeable via BPF Loader Upgradeable (admin key multisig tim inti)
+Sources: https://docs.solana.com/developing/programming-model/runtime (HIGH) [Solana Docs - Runtime]; https://github.com/kamino-finance (HIGH) [Kamino GitHub - Anchor/Rust codebase]
+
+## Programming Languages
+
+Rust (smart contracts / programs)
+TypeScript / React (frontend, SDK, indexer workers)
+Python (data analytics, points calculation scripts)
+Shell / Dockerfile (devops, deployment scripts)
+Sources: https://github.com/kamino-finance/kamino-vaults (HIGH) [Kamino GitHub - Vaults Rust]; https://github.com/kamino-finance/kamino-frontend (MEDIUM) [Kamino GitHub - Frontend TypeScript if public]; https://docs.kamino.finance/developers/sdk (HIGH) [Kamino Docs - SDK TypeScript]
+
+## Development Framework
+
+Anchor Framework v0.29+ (Rust smart contract framework untuk Solana)
+SPL Token Program / Token Extensions (Token-2022)
+Solana SDK / Solana Web3.js v1.90+ (client-side interaction)
+Yellowstone gRPC / Geyser Plugin (indexing)
+Pyth Network SDK / Switchboard SDK (oracle integration)
+Jupiter Swap API v6 / Jupiter Terminal (swap routing & flashloan)
+Wormhole NTT SDK (cross-chain token transfer)
+Docker / Docker Compose (localnet, CI/CD)
+GitHub Actions (CI pipeline: cargo test, anchor build, idl generation, typescript client build)
+Sources: https://github.com/kamino-finance (HIGH) [Kamino GitHub - Anchor.toml, Cargo.toml]; https://www.anchor-lang.com/ (HIGH) [Anchor Framework Docs]; https://docs.kamino.finance/developers/sdk (HIGH) [Kamino Docs - SDK]
+
+## Security Model
+
+Program Authority: Upgrade authority disimpan di Multisig (Squads v3 / SPL Governance) dikendalikan tim inti — bukan fully immutable
+Access Control: PDA (Program Derived Address) untuk vault positions, lend obligations, multiply positions; hanya program yang bisa men-sign instruksi kritis
+Oracle Security: Pyth pull oracle (price accounts verified on-chain); Switchboard V2 pull feeds sebagai fallback; staleness threshold & confidence interval checks di K-Lend & Multiply
+Liquidation Protection: Health factor real-time check; Dutch auction discount curve mencegah toxic liquidation; permissionless liquidator registration
+Reentrancy Protection: Solana runtime single-threaded per transaction + Anchor `#[account(mut)]` checks; CPI reentrancy mitigated via account locking pattern
+Audit Coverage: Multiple audits (Kudelski, Neodyme, Sec3) pada Vaults, K-Lend, Multiply, Liquidate — detail di Audit History
+Bug Bounty: Immunefi bug bounty program aktif (maksimal reward $100.000 untuk critical)
+Sources: https://github.com/kamino-finance (HIGH) [Kamino GitHub - Program authority multisig]; https://docs.kamino.finance/technical-references/oracles (HIGH) [Kamino Docs - Oracle Security]; https://immunefi.com/bug-bounty/kamino/ (HIGH) [Immunefi Kamino Bug Bounty]; https://www.kudelskisecurity.com/ (MEDIUM) [Kudelski Audit Reports]; https://neodyme.io/audits/ (MEDIUM) [Neodyme Audits]; https://www.sec3.dev/audits/ (MEDIUM) [Sec3 Audits]
+
+## Audit History
+
+Auditor: Kudelski Security
+Tanggal: 2023-02 (selesai)
+Scope: Kamino Vaults (CLMM Manager) & K-Lend Core Programs (Lending Pool, Reserve, Obligation)
+Status: Completed — temuan Critical/High diperbaiki via program upgrade; laporan ringkas dipublikasikan
+Sources: https://www.kudelskisecurity.com/ (MEDIUM) [Kudelski Security Audit Reports listing]; https://blog.kamino.finance/ (MEDIUM) [Kamino Blog - Audit Announcement]
+
+Auditor: Neodyme
+Tanggal: 2023-05 (selesai)
+Scope: Program Anchor Kamino menyeluruh (Vaults, K-Lend, Multiply logic pre-launch)
+Status: Completed — laporan publik diterbitkan; perbaikan diterapkan sebelum Multiply launch Juli 2023
+Sources: https://neodyme.io/audits/ (MEDIUM) [Neodyme Audits page]; https://blog.kamino.finance/ (MEDIUM) [Kamino Blog - Neodyme Audit]
+
+Auditor: Sec3 (dahulu Soteria)
+Tanggal: 2023-10 (selesai)
+Scope: Kamino Multiply Program & komponen program baru (Liquidate logic early review)
+Status: Completed — temuan ditangani; laporan tersedia pada halaman audit Sec3
+Sources: https://www.sec3.dev/audits/ (MEDIUM) [Sec3 Audits page]; https://blog.kamino.finance/ (MEDIUM) [Kamino Blog - Sec3 Audit]
+
+Auditor: Kudelski Security (Re-audit / Follow-up)
+Tanggal: 2024-03 (selesai)
+Scope: K-Lend v2 Upgrade (Isolation Mode, New Rate Model), Liquidate Program Pre-launch
+Status: Completed — laporan internal; summary di forum governance
+Sources: https://gov.kamino.finance/ (MEDIUM) [Kamino Governance Forum - Audit Summary]; https://www.kudelskisecurity.com/ (LOW) [Kudelski Reports - not all public]
+
+Auditor: Neodyme (Re-audit)
+Tanggal: 2024-06 (selesai)
+Scope: Kamino Liquidate Program Final, Multiply v2 Upgrade
+Status: Completed
+Sources: https://neodyme.io/audits/ (MEDIUM) [Neodyme Audits page]; https://gov.kamino.finance/ (MEDIUM) [Governance Forum - Audit Summary]
+
+## Technical Upgrade History
+
+Tanggal: 2022-03
+Nama Upgrade: Vaults v1 Launch (Initial Deploy)
+Deskripsi Singkat: Deploy program Vaults CLMM Manager pertama kali ke mainnet;支持 Raydium CLMM pools
+Status: Completed (Superseded by v2)
+Sources: https://blog.kamino.finance/introducing-kamino/ (HIGH) [Kamino Blog - Introducing Kamino]
+
+Tanggal: 2023-01
+Nama Upgrade: Vaults v2 (Auto-Compound & Multi-Pool Support)
+Deskripsi Singkat: Upgrade program Vaults menambahkan auto-compound fees, dukungan multi-pool per vault, rebalancing algorithm improvement
+Status: Completed
+Sources: https://github.com/kamino-finance/kamino-vaults/releases (MEDIUM) [Kamino GitHub - Vaults Releases if tagged]; https://blog.kamino.finance/ (MEDIUM) [Kamino Blog - Vaults v2]
+
+Tanggal: 2022-09
+Nama Upgrade: K-Lend v1 Launch
+Deskripsi Singkat: Deploy K-Lend Lending Pool program dengan utilization-based rate model, multiple reserves
+Status: Completed (Superseded by v2)
+Sources: https://docs.kamino.finance/products/k-lend (HIGH) [Kamino Docs - K-Lend Overview]
+
+Tanggal: 2023-07
+Nama Upgrade: Multiply v1 Launch
+Deskripsi Singkat: Deploy Multiply Program untuk leveraged vaults dengan auto-loop, Jupiter flashloan integration
+Status: Completed (Superseded by v2)
+Sources: https://blog.kamino.finance/ (MEDIUM) [Kamino Blog - Multiply Launch]
+
+Tanggal: 2024-03
+Nama Upgrade: K-Lend v2 (Isolation Mode, Dynamic Rate Curves, New Reserves)
+Deskripsi Singkat: Major upgrade K-Lend menambahkan isolation mode untuk aset berisiko, kurva bunga dinamis, dukungan reserve baru (JitoSOL, bnSOL, dll.)
+Status: Completed
+Sources: https://gov.kamino.finance/ (HIGH) [Governance Forum - K-Lend v2 Proposal]; https://docs.kamino.finance/products/k-lend (HIGH) [Kamino Docs - K-Lend v2]
+
+Tanggal: 2024-04
+Nama Upgrade: KMNO Token Deploy (Token-2022 Extensions)
+Deskripsi Singkat: Deploy SPL Token-2022 dengan transfer hook untuk fee switch, metadata pointer, mint supply 10B
+Status: Completed
+Sources: https://solscan.io/token/KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS (HIGH) [Solscan KMNO Mint]; https://spl.solana.com/token-extensions (HIGH) [SPL Token Extensions Docs]
+
+Tanggal: 2024-05
+Nama Upgrade: Fee Switch Activation (Staking Program Upgrade)
+Deskripsi Singkat: Upgrade Staking/FeeSwitch program mengaktifkan distribusi protocol fee ke KMNO stakers via governance proposal
+Status: Completed
+Sources: https://gov.kamino.finance/ (HIGH) [Governance Forum - Fee Switch Proposal]; https://app.realms.today/kamino (HIGH) [Realms Vote Record]
+
+Tanggal: 2024-06
+Nama Upgrade: Multiply v2 (Health Factor Improvement, New Collateral Types)
+Deskripsi Singkat: Upgrade Multiply dengan perhitungan health factor lebih ketat, dukungan collateral baru, gas optimization
+Status: Completed
+Sources: https://gov.kamino.finance/ (MEDIUM) [Governance Forum - Multiply v2]; https://docs.kamino.finance/products/multiply (HIGH) [Kamino Docs - Multiply]
+
+Tanggal: 2024-08
+Nama Upgrade: Liquidate Program Launch (v1)
+Deskripsi Singkat: Deploy Liquidate Program baru (terpisah dari K-Lend) sebagai marketplace permissionless
+Status: Completed
+Sources: https://blog.kamino.finance/ (MEDIUM) [Kamino Blog - Liquidate Launch]; https://docs.kamino.finance/products/liquidate (HIGH) [Kamino Docs - Liquidate]
+
+Tanggal: 2024-10
+Nama Upgrade: Points Season 4 On-chain Emission Program
+Deskripsi Singkat: Deploy program emisi KMNO on-chain untuk Season 4 (menggantikan off-chain Merkle root claim)
+Status: Ongoing
+Sources: https://blog.kamino.finance/ (HIGH) [Kamino Blog - Season 4 Announcement]; https://gov.kamino.finance/ (MEDIUM) [Governance Forum - Season 4 Parameters]
+
+## Current Technical Stack
+
+Rust 1.75+ (smart contracts)
+Anchor Framework 0.29+ (program framework)
+Solana SDK 1.18+ / Solana Web3.js 1.90+ (client)
+TypeScript 5.x / React 18 / Next.js 14 (frontend & SDK)
+Node.js 20 LTS (backend workers, indexer)
+PostgreSQL 15 / ClickHouse (indexer database)
+Yellowstone gRPC / Geyser Plugin (real-time indexing)
+Docker 24+ / Docker Compose (containerization)
+GitHub Actions (CI/CD pipeline)
+Pyth Network SDK / Switchboard SDK (oracle)
+Jupiter Swap API v6 / Jupiter Terminal (swap & flashloan)
+Wormhole NTT SDK (cross-chain)
+SPL Token-2022 / Token Extensions (KMNO token)
+Squads v3 Multisig / SPL Governance (program authority)
+Immunefi (bug bounty platform)
+Sources: https://github.com/kamino-finance (HIGH) [Kamino GitHub - Cargo.toml, package.json, Dockerfile, CI workflows]; https://docs.kamino.finance/developers/sdk (HIGH) [Kamino Docs - SDK]; https://www.anchor-lang.com/ (HIGH) [Anchor Framework]; https://solana.com/developers (HIGH) [Solana Developers]; https://www.pyth.network/developers (HIGH) [Pyth Developers]; https://docs.jup.ag/ (HIGH) [Jupiter Docs]; https://docs.wormhole.com/ (HIGH) [Wormhole Docs]
+
+## Known Technical Limitations
+
+Keterbatasan: Program upgrade authority masih bersifat multisig tim inti (bukan fully immutable / timelock DAO on-chain) — risiko sentralisasi upgrade
+Sources: https://github.com/kamino-finance (MEDIUM) [Kamino GitHub - Program Authority Multisig]; https://gov.kamino.finance/ (MEDIUM) [Governance Forum - Decentralization Discussion]
+
+Keterbatasan: K-Lend v2 isolation mode hanya berlaku untuk reserve baru; reserve lama (SOL, USDC, mSOL, JitoSOL) tetap di mode pooled standar — kontagion risiko antar reserve lama masih ada
+Sources: https://docs.kamino.finance/products/k-lend (HIGH) [Kamino Docs - K-Lend Isolation Mode]; https://gov.kamino.finance/ (MEDIUM) [Governance Forum - Isolation Mode Design]
+
+Keterbatasan: Multiply health factor calculation bergantung pada Pyth price feed update frequency (slot-based) — selama volatility ekstrem (slot miss / oracle stall) health factor bisa stale sebentar
+Sources: https://docs.kamino.finance/technical-references/oracles (HIGH) [Kamino Docs - Oracle Staleness Threshold]; https://pyth.network/ (HIGH) [Pyth Network Docs - Update Frequency]
+
+Keterbatasan: Liquidate program Dutch auction discount curve parameter tetap (fixed) hingga diubah via governance — tidak adaptif real-time terhadap kondisi pasar
+Sources: https://docs.kamino.finance/products/liquidate (HIGH) [Kamino Docs - Liquidate Auction Parameters]; https://gov.kamino.finance/ (MEDIUM) [Governance Forum - Liquidate Parameters]
+
+Keterbatasan: Points Season 1-3 calculation sepenuhnya off-chain (trusted indexer) — tidak ada verifikasi on-chain hingga Merkle root commit; pengguna harus mempercayai operator indexer
+Sources: https://blog.kamino.finance/ (HIGH) [Kamino Blog - Season 1-3 Methodology]; https://docs.kamino.finance/points (MEDIUM) [Kamino Docs - Points]
+
+Keterbatasan: Wormhole NTT integration hanya mendukung aset yang sudah terdaftar di NTT registry; aset non-native baru memerlukan proposal Wormhole governance terlebih dahulu
+Sources: https://docs.wormhole.com/wormhole/native-token-transfers (HIGH) [Wormhole NTT Docs]; https://blog.kamino.finance/ (MEDIUM) [Kamino Blog - Cross-chain Vault]
+
+Keterbatasan: Program account size limit (10 KB) membatasi kompleksitas state per PDA — beberapa vault posisi kompleks memerlukan multiple PDA accounts
+Sources: https://docs.solana.com/developing/programming-model/accounts (HIGH) [Solana Docs - Account Size]; https://github.com/kamino-finance/kamino-vaults (MEDIUM) [Kamino GitHub - Vault State Layout]
+
+## Official Technical Resources
+
+Documentation: https://docs.kamino.finance
+GitHub: https://github.com/kamino-finance
+Developer Docs: https://docs.kamino.finance/developers
+SDK: https://docs.kamino.finance/developers/sdk
+API: https://docs.kamino.finance/developers/api
+Whitepaper: tidak tersedia (tidak ada whitepaper teknis resmi dipublikasikan; hanya blog & docs)
+Research Paper: tidak tersedia
+Sources: https://docs.kamino.finance (HIGH) [Kamino Docs Home]; https://github.com/kamino-finance (HIGH) [Kamino GitHub Org]; https://docs.kamino.finance/developers (HIGH) [Kamino Developer Docs]
+
+## Summary
+
+Architecture: SVM-based DeFi protocol suite (Vaults, K-Lend, Multiply, Liquidate) on Solana L1 with off-chain indexer, keeper bots, and Wormhole NTT for cross-chain assets
+Core Components: 9 (Vaults Program, K-Lend Program, Multiply Program, Liquidate Program, KMNO Token Program, Fee Switch/Staking Program, Points Program, Indexer, Liquidator Bot Framework)
+Audit Count: 5 (Kudelski 2x, Neodyme 2x, Sec3 1x) across Vaults, K-Lend, Multiply, Liquidate
+Major Upgrade Count: 10 (Vaults v1→v2, K-Lend v1→v2, Multiply v1→v2, KMNO Deploy, Fee Switch, Liquidate Launch, Season 4 Emission, plus initial launches)
+
+## Open Threads
+
+- Program upgrade authority multisig composition: tidak dipublikasikan detail signer set (jumlah, threshold, identitas) — butuh verifikasi on-chain via `solana program show <PROGRAM_ID> --upgrade-authority` atau Squads v3 dashboard
+- K-Lend v2 isolation mode migration path untuk reserve lama (SOL, USDC, mSOL, JitoSOL): apakah akan dimigrasi ke isolation mode atau tetap pooled — belum ada proposal resmi
+- Oracle staleness threshold exact value (slots) untuk K-Lend & Multiply: dokumentasi menyejukkan "staleness check" tapi tidak menampilkan angka pasti — butuh baca kode program `lending::state::OracleConfig` atau `multiply::state::HealthFactorConfig`
+- Liquidate Dutch auction curve parameters (starting discount, end discount, duration): tidak terdokumentasi di docs publik — butuh cek program state on-chain atau proposal governance
+- Points Season 1-3 indexer operator identity & decentralization plan: apakah akan di-decentralisasi via multiple indexer / ZK proof — belum ada announcement
+- Wormhole NTT asset registry expansion process untuk Kamino: apakah Kamino mengusulkan aset baru ke Wormhole DAO atau menunggu — butuh monitoring forum Wormhole & Kamino
+- Formal verification status: tidak ada bukti formal verification (Certora, Coq, dll.) untuk core math (rebalancing, health factor, rate curves) — hanya audit manual
+- Client-side SDK versioning & breaking change policy: tidak terdokumentasi di developer docs — butuh cek GitHub releases & changelog
+- Disaster recovery / pause mechanism: apakah ada "pause authority" atau circuit breaker di program (mis. `Pause` instruction) — tidak ditemukan di docs; butuh cek IDL/program code
+- Gas/compute unit optimization roadmap: apakah ada rencana migrasi ke Solana v2 / Firedancer / SVM optimizations — belum ada statement teknis resmi

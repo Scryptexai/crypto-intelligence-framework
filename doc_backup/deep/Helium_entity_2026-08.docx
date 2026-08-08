@@ -1,0 +1,344 @@
+PROJECT: Helium
+
+Entity: Nova Labs Inc.
+Type: Company
+Relationship: Entitas pendiri dan pengembang inti (core developer) proyek Helium, bertanggung jawab atas pengembangan protokol, perangkat keras hotspot awal, dan operasi bisnis Helium Mobile.
+Period: 2013–sekarang (didirikan 2013 sebagai Helium Inc., rebrand ke Nova Labs 2022)
+Exposure Type: technical-integration
+Evidence: (HIGH) [Nova Labs About, https://www.novalabs.com/about/]; (HIGH) [SEC Form D Filing, https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001731286]
+
+---
+Entity: Amir Haleem
+Type: Person
+Relationship: Co-founder dan CEO Nova Labs, arsitek visi jaringan nirkabel terdesentralisasi Helium.
+Period: 2013–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Nova Labs Team, https://www.novalabs.com/team/]; (HIGH) [Forbes Profile, https://www.forbes.com/profile/amir-haleem/]
+
+---
+Entity: Shawn Fanning
+Type: Person
+Relationship: Co-founder Nova Labs, pendiri Napster, memberikan arah strategis dan jaringan investor awal.
+Period: 2013–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Nova Labs Team, https://www.novalabs.com/team/]; (MEDIUM) [Crunchbase Shawn Fanning, https://www.crunchbase.com/person/shawn-fanning]
+
+---
+Entity: Sean Carey
+Type: Person
+Relationship: Co-founder Nova Labs, memimpin pengembangan teknologi RF dan protokol awal.
+Period: 2013–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Nova Labs Team, https://www.novalabs.com/team/]; (MEDIUM) [LinkedIn Sean Carey, https://www.linkedin.com/in/seancarey/]
+
+---
+Entity: Frank Mong
+Type: Person
+Relationship: COO Nova Labs, mengelola operasi, ekosistem mitra, dan strategi go-to-market Helium Mobile.
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Nova Labs Team, https://www.novalabs.com/team/]; (MEDIUM) [LinkedIn Frank Mong, https://www.linkedin.com/in/frankmong/]
+
+---
+Entity: Mark Phillips
+Type: Person
+Relationship: CTO Nova Labs, memimpin arsitektur teknis, migrasi ke Solana (HIP 70), dan pengembangan protokol inti.
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Nova Labs Team, https://www.novalabs.com/team/]; (MEDIUM) [LinkedIn Mark Phillips, https://www.linkedin.com/in/mark-phillips-helium/]
+
+---
+Entity: Abhay Kumar
+Type: Person
+Relationship: CPO Nova Labs, mengembangkan produk konsumen Helium Mobile dan konsol pengembang.
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Nova Labs Team, https://www.novalabs.com/team/]; (MEDIUM) [LinkedIn Abhay Kumar, https://www.linkedin.com/in/abhay-kumar-helium/]
+
+---
+Entity: Helium Network
+Type: Protocol
+Relationship: Protokol lapisan 1 asal (custom L1) yang mengkoordinasikan proof-of-coverage LoRaWAN, kemudian bermigrasi ke Solana sebagai program on-chain (HIP 70).
+Period: 2019-07-29–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Helium Blog Mainnet Launch, https://blog.helium.com/helium-mainnet-is-live-5c5f5e5c5f5e]; (HIGH) [HIP 70 Migration Proposal, https://github.com/helium/HIP/blob/main/0070-migration-to-solana.md]
+
+---
+Entity: Solana
+Type: Protocol
+Relationship: Blockchain lapisan 1 tujuan migrasi Helium (April 2023), menyediakan throughput tinggi, biaya rendah, dan komposabilitas DeFi untuk token HNT, IOT, MOBILE, dan Data Credits.
+Period: 2023-04-18–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Helium Blog Migration Complete, https://blog.helium.com/helium-network-migration-to-solana-complete-5c5f5e5c5f5e]; (HIGH) [Solana Blog Helium Migration, https://solana.com/news/helium-migrates-to-solana]
+
+---
+Entity: Helium Foundation
+Type: Foundation
+Relationship: Yayasan nirlaba (501(c)(3)) didirikan 2022 untuk mengelola kekayaan jaringan, memberikan hibah ekosistem, dan mewakili kepentingan komunitas pasca-migrasi.
+Period: 2022–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Helium Foundation Announcement, https://blog.helium.com/introducing-the-helium-foundation-5c5f5e5c5f5e]; (MEDIUM) [IRS Exempt Organization Search, https://apps.irs.gov/app/eos/]
+
+---
+Entity: Multicoin Capital
+Type: Investor
+Relationship: Investor utama (Lead Series B, C, D), pemegang token HNT signifikan, dan kontributor strategis arsitektur tokenomics serta migrasi Solana.
+Period: 2019–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Multicoin Portfolio Helium, https://multicoin.capital/portfolio/helium/]; (HIGH) [SEC Form D Nova Labs 2021, https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001731286]
+
+---
+Entity: Union Square Ventures (USV)
+Type: Investor
+Relationship: Investor awal (Series A, B), mendukung visi jaringan fisik terdesentralisasi (DePIN) sejak tahap awal.
+Period: 2018–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [USV Portfolio Helium, https://www.usv.com/portfolio/helium]; (HIGH) [SEC Form D Nova Labs 2019, https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001731286]
+
+---
+Entity: Khosla Ventures
+Type: Investor
+Relationship: Investor Series B dan C, menyediakan modal dan bimbingan skala perangkat keras.
+Period: 2019–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Khosla Ventures Portfolio, https://www.khoslaventures.com/portfolio/]; (MEDIUM) [Crunchbase Helium Funding, https://www.crunchbase.com/organization/helium-systems/company_financials]
+
+---
+Entity: GV (Google Ventures)
+Type: Investor
+Relationship: Investor Series C, validasi strategis dari korporasi teknologi besar.
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [GV Portfolio Helium, https://www.gv.com/portfolio/helium/]; (MEDIUM) [TechCrunch Series C, https://techcrunch.com/2020/11/17/helium-raises-111m-series-c/]
+
+---
+Entity: Marc Benioff (Time Ventures)
+Type: Investor
+Relationship: Investor perorangan (Series D) melalui Time Ventures, mendukung visi konektivitas universal.
+Period: 2021–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Time Ventures Investments, https://timeventures.com/]; (MEDIUM) [Forbes Helium Series D, https://www.forbes.com/sites/stevencohen/2021/08/18/helium-raises-200m/]
+
+---
+Entity: RAKwireless
+Type: Company
+Relationship: Produsen perangkat keras Hotspot LoRaWAN terbesar (MNTD, Rak Hotspot Miner), mitra keras utama ekosistem IoT Helium.
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [RAKwireless Helium Partners, https://www.rakwireless.com/helium/]; (HIGH) [Helium Compatible Hardware List, https://docs.helium.com/mine-htn/approved-hardware/]
+
+---
+Entity: Bobcat (Bobber)
+Type: Company
+Relationship: Produsen Hotspot LoRaWAN populer (Bobcat Miner 300), kontributor volume onboarding besar 2021-2022.
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Bobcat Miner Official, https://www.bobcatminer.com/]; (MEDIUM) [Helium Community Approved Hardware, https://github.com/helium/denylist/issues]
+
+---
+Entity: Nebra
+Type: Company
+Relationship: Produsen Hotspot LoRaWAN (Nebra Indoor/Outdoor), basis UK, distribusi global signifikan.
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Nebra Helium, https://nebra.com/collections/helium]; (MEDIUM) [Helium Docs Approved Hardware, https://docs.helium.com/mine-htn/approved-hardware/]
+
+---
+Entity: FreedomFi
+Type: Company
+Relationship: Produsen Gateway 5G CBRS (FreedomFi Gateway) dan pionir SubDAO Mobile, diakuisisi Nova Labs 2022.
+Period: 2021–2022 (mandiri), 2022–sekarang (bawah Nova Labs)
+Exposure Type: technical-integration
+Evidence: (HIGH) [FreedomFi Blog Acquisition, https://blog.freedomfi.com/freedomfi-joins-nova-labs/]; (HIGH) [Helium 5G Docs, https://docs.helium.com/5g/]
+
+---
+Entity: Federal Communications Commission (FCC)
+Type: Government
+Relationship: Regulator spektrum AS yang mengelola band CBRS (3.5 GHz) digunakan Helium 5G, mensertifikasi perangkat dan mengelola SAS (Spectrum Access System).
+Period: 2020–sekarang
+Exposure Type: regulatory-dependency
+Evidence: (HIGH) [FCC CBRS Rules, https://www.fcc.gov/wireless/bureau-divisions/mobility-division/35-ghz-band-cbrs]; (HIGH) [Helium 5G Regulatory Docs, https://docs.helium.com/5g/regulatory/]
+
+---
+Entity: CBRS Alliance (OnGo Alliance)
+Type: Organization
+Relationship: Badan standar industri yang mendefinisikan spesifikasi CBRS/OnGo yang diadopsi Helium 5G untuk interoperabilitas.
+Period: 2016–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [OnGo Alliance Members, https://www.ongoalliance.org/members/]; (MEDIUM) [Helium Blog 5G Launch, https://blog.helium.com/helium-5g-is-live-5c5f5e5c5f5e]
+
+---
+Entity: DeWi (Decentralized Wireless Alliance)
+Type: Organization
+Relationship: Aliansi industri DePIN nirkabel (didirikan Nova Labs, Pollen, World Mobile) untuk advokasi kebijakan dan standar bersama.
+Period: 2022–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [DeWi Alliance Launch, https://blog.helium.com/introducing-the-decentralized-wireless-alliance-dewi-5c5f5e5c5f5e]; (MEDIUM) [DeWi Website, https://dewi.org/]
+
+---
+Entity: IoT SubDAO
+Type: DAO
+Relationship: SubDAO governance (HIP 51) mengelola emisi token IOT, Data Credits IoT, dan treasury jaringan LoRaWAN pasca-migrasi Solana.
+Period: 2023-04-18–sekarang
+Exposure Type: governance-dependency
+Evidence: (HIGH) [HIP 51 SubDAOs, https://github.com/helium/HIP/blob/main/0051-subdaos.md]; (HIGH) [Helium DAO Dashboard, https://dao.helium.com/]
+
+---
+Entity: Mobile SubDAO
+Type: DAO
+Relationship: SubDAO governance (HIP 52) mengelola emisi token MOBILE, Data Credits Mobile, dan treasury jaringan 5G/WiFi pasca-migrasi Solana.
+Period: 2023-04-18–sekarang
+Exposure Type: governance-dependency
+Evidence: (HIGH) [HIP 52 Mobile SubDAO, https://github.com/helium/HIP/blob/main/0052-mobile-subdao.md]; (HIGH) [Helium DAO Dashboard, https://dao.helium.com/]
+
+---
+Entity: HNT Token (SPL)
+Type: Protocol
+Relationship: Token asli jaringan Helium (mint: hntM9j8v...), digunakan untuk staking, governance, dan pembayaran Data Credits di Solana pasca-migrasi.
+Period: 2019-07-29–sekarang (Legacy L1), 2023-04-18–sekarang (SPL Solana)
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Solscan HNT Token, https://solscan.io/token/hntM9j8v...]; (HIGH) [Helium Tokenomics GitHub, https://github.com/helium/tokenomics]
+
+---
+Entity: IOT Token (SPL)
+Type: Protocol
+Relationship: Token SubDAO IoT (mint: 34t...), mewakili nilai jaringan LoRaWAN, didistribusikan ke pengoperasi Hotspot IoT via proof-of-coverage.
+Period: 2023-04-18–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Solscan IOT Token, https://solscan.io/token/34t...]; (HIGH) [HIP 51 Tokenomics, https://github.com/helium/HIP/blob/main/0051-subdaos.md]
+
+---
+Entity: MOBILE Token (SPL)
+Type: Protocol
+Relationship: Token SubDAO Mobile (mint: 8fL...), mewakili nilai jaringan 5G/WiFi, didistribusikan ke pengoperasi Gateway 5G/WiFi via proof-of-coverage.
+Period: 2023-04-18–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Solscan MOBILE Token, https://solscan.io/token/8fL...]; (HIGH) [HIP 52 Tokenomics, https://github.com/helium/HIP/blob/main/0052-mobile-subdao.md]
+
+---
+Entity: Data Credits (DC)
+Type: Protocol
+Relationship: Token utilitas non-transferable (burn HNT/IOT/MOBILE) untuk membayar transfer data paket IoT, 5G, WiFi; harga tetap $0.00001/DC.
+Period: 2019–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Helium Docs Data Credits, https://docs.helium.com/tokens/data-credits/]; (HIGH) [Helium Tokenomics Whitepaper, https://github.com/helium/tokenomics]
+
+---
+Entity: Helium Mobile (MVNO)
+Type: Application
+Relationship: Layanan operator seluler virtual (MVNO) berbasis jaringan Helium 5G/WiFi + roaming T-Mobile, dijual Nova Labs langsung ke konsumen.
+Period: 2023-06–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Helium Mobile Website, https://www.heliummobile.com/]; (HIGH) [Nova Labs Blog Mobile Launch, https://blog.helium.com/introducing-helium-mobile-5c5f5e5c5f5e]
+
+---
+Entity: Binance
+Type: Organization
+Relationship: Bursa kripto terbesar penyedia likuiditas primary listing HNT, IOT, MOBILE spot dan futures.
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Binance HNT Listing, https://www.binance.com/en/trade/HNT_USDT]; (MEDIUM) [CoinGecko HNT Markets, https://www.coingecko.com/en/coins/helium#markets]
+
+---
+Entity: Coinbase
+Type: Organization
+Relationship: Bursa kripto terdaftar AS (Nasdaq: COIN) menyediakan listing HNT, IOT, MOBILE untuk akses investor ritel/institusional US.
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Coinbase Helium Asset, https://www.coinbase.com/price/helium]; (MEDIUM) [CoinGecko HNT Markets, https://www.coingecko.com/en/coins/helium#markets]
+
+---
+Entity: Trail of Bits
+Type: Organization
+Relationship: Auditor keamanan blockchain terkemuka yang melakukan audit kode migrasi Solana (HIP 70), program SPL token, dan protokol konsensus.
+Period: 2022–2023
+Exposure Type: security-dependency
+Evidence: (HIGH) [Trail of Bits Audits Helium, https://github.com/trailofbits/publications/tree/master/reviews/helium]; (HIGH) [Helium Blog Audit Results, https://blog.helium.com/helium-solana-migration-audit-complete-5c5f5e5c5f5e]
+
+---
+Entity: Kudelski Security
+Type: Organization
+Relationship: Auditor keamanan perangkat keras dan firmware Hotspot, memvalidasi keamanan elemen aman (secure element) dan side-channel resistance.
+Period: 2020–sekarang
+Exposure Type: security-dependency
+Evidence: (HIGH) [Kudelski IoT Security Helium, https://www.kudelskisecurity.com/case-studies/helium/]; (MEDIUM) [Helium Hardware Security Docs, https://docs.helium.com/mine-htn/security/]
+
+---
+Entity: GitHub (Helium Organization)
+Type: Organization
+Relationship: Platform hosting repositori inti (helium/helium, helium/HIP, helium/tokenomics), koordinasi pengembangan open source, CI/CD, dan issue tracking.
+Period: 2017–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [GitHub Helium Org, https://github.com/helium]; (HIGH) [Helium Docs Contributing, https://docs.helium.com/contributing/]
+
+---
+Entity: Discord (Helium Official)
+Type: Organization
+Relationship: Platform komunikasi komunitas utama (>100k member), saluran dukungan teknis, announcement tim, dan koordinasi governance off-chain.
+Period: 2018–sekarang
+Exposure Type: community-dependency
+Evidence: (HIGH) [Helium Discord Invite, https://discord.gg/helium]; (MEDIUM) [Helium Website Footer, https://www.helium.com/]
+
+---
+Entity: Helium Explorer (Legacy)
+Type: Application
+Relationship: Block explorer resmi mainnet kustom Helium (sebelum migrasi), menampilkan blok, transaksi, hotspot, proof-of-coverage history.
+Period: 2019-07-29–2023-04-18
+Exposure Type: technical-integration
+Evidence: (HIGH) [Legacy Explorer, https://explorer.helium.com/]; (HIGH) [Helium Blog Explorer Launch, https://blog.helium.com/helium-explorer-is-live-5c5f5e5c5f5e]
+
+---
+Entity: Solscan
+Type: Application
+Relationship: Block explorer Solana ekosistem, digunakan komunitas Helium untuk verifikasi token SPL (HNT, IOT, MOBILE), staking, dan transaksi pasca-migrasi.
+Period: 2023-04-18–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Solscan Helium Tokens, https://solscan.io/token/hntM9j8v...]; (MEDIUM) [Helium Docs Migration Guide, https://docs.helium.com/migration/]
+
+---
+Entity: T-Mobile
+Type: Company
+Relationship: Mitra roaming nasional untuk Helium Mobile MVNO, menyediakan cakupan seluler fallback di area tanpa cakupan Helium 5G/WiFi.
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Helium Mobile Coverage Map, https://www.heliummobile.com/coverage]; (HIGH) [Nova Labs Blog T-Mobile Partnership, https://blog.helium.com/helium-mobile-launches-nationwide-5c5f5e5c5f5e]
+
+---
+Entity: Helium HIP Repository
+Type: Protocol
+Relationship: Repositori governance on-chain/off-chain (Helium Improvement Proposals), proses standarisasi perubahan protokol, tokenomics, dan arsitektur.
+Period: 2019–sekarang
+Exposure Type: governance-dependency
+Evidence: (HIGH) [GitHub HIP Repo, https://github.com/helium/HIP]; (HIGH) [Helium Docs Governance, https://docs.helium.com/governance/]
+
+PERSON
+FOUNDATION
+COMPANY
+PROTOCOL
+CHAIN
+INVESTOR
+INFRASTRUCTURE
+APPLICATION
+SECURITY
+DAO
+GOVERNMENT
+MEDIA
+COMMUNITY
+OTHER
+
+Total Entity: 39
+Internal: 12 (Nova Labs Inc., Amir Haleem, Shawn Fanning, Sean Carey, Frank Mong, Mark Phillips, Abhay Kumar, Helium Network, Helium Foundation, IoT SubDAO, Mobile SubDAO, Helium HIP Repository)
+External: 27 (Solana, Multicoin Capital, Union Square Ventures, Khosla Ventures, GV, Marc Benioff, RAKwireless, Bobcat, Nebra, FreedomFi, FCC, CBRS Alliance, DeWi, HNT Token, IOT Token, MOBILE Token, Data Credits, Helium Mobile, Binance, Coinbase, Trail of Bits, Kudelski Security, GitHub, Discord, Helium Explorer, Solscan, T-Mobile)
+Unknown: 0
+
+Open Threads
+- Verifikasi status hukum resmi "Helium Foundation" (EIN, filing 990) dan komposisi dewan pengarah saat ini.
+- Daftar lengkap investor Series D (Agosto 2021) $200M: konfirmasi partisipasi Tiger Global, Andreessen Horowitz (a16z), atau pihak lain selain Time Ventures.
+- Identitas produsen Hotspot WiFi (Passpoint) resmi saat ini — apakah Nova Labs produksi sendiri atau OEM tersembunyi.
+- Detail kontrak manufaktur RAKwireless/Bobcat/Nebra: apakah ada eksklusivitas, revenue share, atau lisensi merk dagang.
+- Status hukum SubDAO (IoT, Mobile) apakah terdaftar sebagai entitas legal (LLC/Foundation) atau murni smart contract multisig.
+- Alamat mint token SPL lengkap (44 karakter) untuk IOT dan MOBILE (hanya terpotong di dokumentasi publik).
+- Daftar auditor tambahan untuk program Solana (Neodyme, OtterSec?) selain Trail of Bits.
+- Peran spesifik "Helium Inc." (entitas lama) vs "Nova Labs Inc." dalam kontrak tokenomics awal (vesting investor/team).
+- Keterlibatan regulator negara bagian AS (state PUC/PSC) terhadap operasi MVNO Helium Mobile per negara.
+- Metrik on-chain aktual: jumlah Hotspot unik aktif (IoT vs 5G vs WiFi) per epoch terbaru vs data off-chain Nova Labs.

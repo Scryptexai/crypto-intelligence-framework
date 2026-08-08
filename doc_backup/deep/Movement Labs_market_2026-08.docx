@@ -1,0 +1,298 @@
+PROJECT: Movement Labs
+
+## Market Category
+
+Primary Category: Move-based modular blockchain stack / Layer 2 execution environment (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+Secondary Category: Ethereum L2 scaling / Modular blockchain infrastructure (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+Sector: Layer 2 / Modular Blockchain / MoveVM Execution Environment (HIGH) [Movement Labs Website, https://movementlabs.xyz/]
+Sub-sector: Move-EVM Compatible Rollup Framework (MEDIUM) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/]
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/, https://movementlabs.xyz/, https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/
+
+## Market Position
+
+Project Stage: Pre-TGE / Pre-Mainnet / Early Development (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/; Movement Labs Discord FAQ, https://discord.gg/movementlabs]
+Primary Competitors: Aptos (Move L1), Sui (Move L1), 0L (Zero Layer) (Move ecosystem peers) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]; Arbitrum (Ethereum L2), Optimism (Ethereum L2), Base (Ethereum L2) (Ethereum L2 competitors) (HIGH) [Ethereum L2 Landscape, https://l2beat.com/]; Celestia (Modular DA), Polygon Avail (Modular DA), EigenDA (Modular DA) (Modular stack peers) (MEDIUM) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+Market Segment: Developer-focused modular blockchain infrastructure targeting Move developers and Ethereum dApp builders seeking EVM compatibility on MoveVM (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+Geographic Focus: Global (remote/distributed team); legal entity Delaware, USA (HIGH) [Crunchbase, https://www.crunchbase.com/organization/movement-labs; Movement Labs Careers, https://movementlabs.xyz/careers]
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/, https://discord.gg/movementlabs, https://www.crunchbase.com/organization/movement-labs, https://l2beat.com/, https://movementlabs.xyz/careers
+
+## Trading Markets
+
+Exchange: Tidak ada (pre-TGE, token MOVE belum di-deploy) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/; Movement Labs Discord FAQ, https://discord.gg/movementlabs]
+Spot: Tidak tersedia (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/; CoinGecko, https://www.coingecko.com/; CoinMarketCap, https://coinmarketcap.com/]
+Perpetual: Tidak tersedia (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/; CoinGecko, https://www.coingecko.com/; CoinMarketCap, https://coinmarketcap.com/]
+Futures: Tidak tersedia (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/; CoinGecko, https://www.coingecko.com/; CoinMarketCap, https://coinmarketcap.com/]
+Options: Tidak tersedia (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/; CoinGecko, https://www.coingecko.com/; CoinMarketCap, https://coinmarketcap.com/]
+OTC: Tidak tersedia (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/; Movement Labs Discord FAQ, https://discord.gg/movementlabs]
+Status: Pre-TGE — tidak ada market trading (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/; Movement Labs Discord FAQ, https://discord.gg/movementlabs]
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/, https://discord.gg/movementlabs, https://www.coingecko.com/, https://coinmarketcap.com/
+
+## Liquidity
+
+Liquidity Source: Tidak ada (token MOVE belum exist, pre-TGE) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/; Movement Labs Discord FAQ, https://discord.gg/movementlabs]
+Major Liquidity Venue: Tidak ada (HIGH) [CoinGecko, https://www.coingecko.com/; CoinMarketCap, https://coinmarketcap.com/]
+DEX: Tidak ada (HIGH) [DefiLlama, https://defillama.com/; CoinGecko, https://www.coingecko.com/]
+CEX: Tidak ada (HIGH) [CoinGecko, https://www.coingecko.com/; CoinMarketCap, https://coinmarketcap.com/]
+Bridge Liquidity: Tidak ada (mainnet bridge belum live; testnet Parthenon bridge ke Ethereum Sepolia/Holesky untuk testing saja) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/; Testnet Explorer, https://explorer.testnet.movementlabs.xyz/]
+Status: Pre-liquidity — tidak ada token, tidak ada pool, tidak ada bridge liquidity live (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/; Movement Labs Discord FAQ, https://discord.gg/movementlabs]
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/, https://discord.gg/movementlabs, https://www.coingecko.com/, https://coinmarketcap.com/, https://defillama.com/, https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/, https://explorer.testnet.movementlabs.xyz/
+
+## Adoption Metrics
+
+Metric Name: TVL (Total Value Locked)
+Value: $0 (pre-mainnet, tidak ada bridge/contract live di mainnet)
+Date: 2024 (current)
+Sources: https://defillama.com/ (HIGH) — Movement tidak listed; https://blog.movementlabs.xyz/ (HIGH) — pre-mainnet
+
+Metric Name: Daily Active Users (DAU)
+Value: tidak diketahui (pre-mainnet; testnet Parthenon metrics tidak dipublikasikan secara agregat)
+Date: 2024
+Sources: https://explorer.testnet.movementlabs.xyz/ (MEDIUM) — explorer menunjukkan transaksi per blok tapi tidak DAU agregat; https://blog.movementlabs.xyz/ (HIGH) — tidak ada metrics dashboard publik
+
+Metric Name: Transactions (Daily/Total)
+Value: tidak diketahui (testnet Parthenon aktivitas tidak diagregasikan publik; mainnet belum live)
+Date: 2024
+Sources: https://explorer.testnet.movementlabs.xyz/ (MEDIUM) — per-block tx visible; https://blog.movementlabs.xyz/ (HIGH) — tidak ada metrics publik
+
+Metric Name: Wallets (Unique Addresses)
+Value: tidak diketahui (testnet addresses tidak diagregasikan publik; mainnet belum live)
+Date: 2024
+Sources: https://explorer.testnet.movementlabs.xyz/ (MEDIUM) — per-tx address visible; https://blog.movementlabs.xyz/ (HIGH) — tidak ada metrics publik
+
+Metric Name: Developer Count
+Value: tidak diketahui (GitHub organization movementlabsxyz memiliki kontributor tapi jumlah developer ekosistem tidak dipublikasikan)
+Date: 2024
+Sources: https://github.com/movementlabsxyz (MEDIUM) — repositori publik dengan kontributor; https://blog.movementlabs.xyz/ (HIGH) — tidak ada developer census publik
+
+Metric Name: Volume (Trading/Protocol)
+Value: $0 (pre-TGE, pre-mainnet)
+Date: 2024
+Sources: https://blog.movementlabs.xyz/ (HIGH) — pre-mainnet; https://www.coingecko.com/ (HIGH) — tidak listed
+
+Metric Name: Bridge Volume
+Value: $0 (mainnet bridge belum live; testnet bridge volume tidak dipublikasikan)
+Date: 2024
+Sources: https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/ (HIGH) — testnet only; https://explorer.testnet.movementlabs.xyz/ (MEDIUM) — tidak ada bridge volume agregat
+
+Metric Name: Messages (Cross-chain)
+Value: 0 (Movement Network cross-chain messaging belum live)
+Date: 2024
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/ (HIGH) — planned only
+
+Metric Name: Validator Count
+Value: 0 (decentralized sequencer set belum live; testnet menggunakan centralized sequencer tunggal)
+Date: 2024
+Sources: https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/ (HIGH) — centralized sequencer; https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/ (HIGH) — planned decentralized sequencer
+
+Sources: https://defillama.com/, https://explorer.testnet.movementlabs.xyz/, https://blog.movementlabs.xyz/, https://github.com/movementlabsxyz/, https://www.coingecko.com/, https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+## Market Share
+
+Tidak tersedia. (HIGH) [DefiLlama, https://defillama.com/; L2Beat, https://l2beat.com/; CoinGecko, https://www.coingecko.com/; Token Terminal, https://tokenterminal.com/ — Movement Labs tidak listed di platform market share manapun karena pre-mainnet, pre-TGE]
+
+## Competitor Landscape
+
+Competitor: Aptos
+Category: Move L1 Blockchain
+Difference: Aptos adalah Layer 1 independen dengan MoveVM native; Movement adalah modular stack (SDK + MoveVM + MEVM) targeting Ethereum L2 settlement dan multi-chain interoperability via Movement Network
+Market Segment: Move ecosystem / Smart Contract Platform
+Sources: https://aptosfoundation.org/, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Competitor: Sui
+Category: Move L1 Blockchain (Object-centric Move)
+Difference: Sui menggunakan Move object model dan consensus Narwhal/Tusk; Movement menggunakan MoveVM dengan EVM compatibility (MEVM) dan Ethereum settlement
+Market Segment: Move ecosystem / Smart Contract Platform
+Sources: https://sui.io/, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Competitor: 0L (Zero Layer)
+Category: Move Community / Open-source Move Tooling
+Difference: 0L adalah komunitas open-source mengembangkan Move toolchain standar; Movement adalah commercial entity membangun proprietary MoveVM/MEVM/SDK di atas upstream Move toolchain
+Market Segment: Move ecosystem / Developer Tooling
+Sources: https://0l.network/, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/, https://github.com/movementlabsxyz
+
+Competitor: Arbitrum
+Category: Ethereum L2 (Optimistic Rollup)
+Difference: Arbitrum menggunakan EVM-equivalent execution (Nitro); Movement menggunakan MoveVM dengan MEVM compatibility layer, parallel execution, dan formal verification
+Market Segment: Ethereum L2 Scaling
+Sources: https://arbitrum.io/, https://l2beat.com/, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Competitor: Optimism
+Category: Ethereum L2 (Optimistic Rollup / OP Stack)
+Difference: Optimism menggunakan EVM-equivalent (OP Stack); Movement menggunakan MoveVM dengan modular DA options dan MEVM untuk EVM compatibility
+Market Segment: Ethereum L2 Scaling / Modular Stack
+Sources: https://optimism.io/, https://l2beat.com/, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Competitor: Base
+Category: Ethereum L2 (OP Stack / Optimistic Rollup)
+Difference: Base dibangun di atas OP Stack oleh Coinbase; Movement membangun custom MoveVM stack dengan modular architecture
+Market Segment: Ethereum L2 Scaling
+Sources: https://base.org/, https://l2beat.com/, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Competitor: Celestia
+Category: Modular Data Availability Layer
+Difference: Celestia menyediakan DA layer; Movement mengintegrasikan Celestia sebagai DA option untuk Movement rollups — hubungan complementary bukan direct competitor
+Market Segment: Modular Blockchain Stack
+Sources: https://celestia.org/, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Competitor: Polygon Avail
+Category: Modular Data Availability Layer
+Difference: Avail menyediakan DA layer; Movement mengintegrasikan Avail sebagai DA option — complementary relationship
+Market Segment: Modular Blockchain Stack
+Sources: https://www.availproject.org/, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Competitor: EigenDA
+Category: Modular Data Availability Layer (EigenLayer restaking)
+Difference: EigenDA menyediakan DA via EigenLayer; Movement mengintegrasikan EigenDA sebagai DA option — complementary relationship
+Market Segment: Modular Blockchain Stack / Restaking
+Sources: https://eigenlayer.xyz/eigenda, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+## Narrative Position
+
+Narrative: Modular Blockchain
+Status: Main Narrative
+Evidence: Movement Labs secara eksplisit memposisikan diri sebagai "Move-based modular blockchain stack" dengan pemisahan execution (MoveVM), settlement (Ethereum), DA (pluggable Celestia/Avail/EigenDA), dan sequencing (decentralized planned)
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Narrative: MoveVM / Move Language Ecosystem
+Status: Main Narrative
+Evidence: Produk inti Movement adalah MoveVM, MEVM, Movement SDK — semua berbasis Move language; positioning sebagai "bringing Move to Ethereum" via MEVM
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/, https://movementlabs.xyz/products
+
+Narrative: Ethereum L2 Scaling
+Status: Main Narrative
+Evidence: M1 dirancang sebagai Move-based L2 pada Ethereum dengan settlement di Ethereum L1; MEVM memungkinkan Ethereum dApps migrasi ke MoveVM
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/, https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/
+
+Narrative: EVM Compatibility / EVM Equivalence
+Status: Secondary Narrative
+Evidence: MEVM (Move-EVM compatibility layer) memungkinkan Solidity contracts berjalan di MoveVM tanpa modifikasi; mendukung Hardhat/Foundry tooling
+Sources: https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/, https://docs.movementlabs.xyz/
+
+Narrative: Parallel Execution
+Status: Secondary Narrative
+Evidence: MoveVM mendukung parallel execution berbasis dependency graph (mirip Block-STM) untuk throughput tinggi
+Sources: https://movementlabs.xyz/products, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Narrative: Formal Verification
+Status: Secondary Narrative
+Evidence: MoveVM terintegrasi dengan Move Prover untuk formal verification smart contracts
+Sources: https://movementlabs.xyz/products, https://docs.movementlabs.xyz/
+
+Narrative: Interoperability / Cross-chain Messaging
+Status: Secondary Narrative (Planned)
+Evidence: Movement Network direncanakan untuk cross-chain messaging antar Move chains; detail protokol belum dipublikasikan
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Narrative: Restaking / EigenLayer Integration
+Status: Secondary Narrative (Planned)
+Evidence: EigenDA integration direncanakan sebagai DA option; tidak ada native restaking narrative untuk Movement token
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Narrative: AI / DePIN / Gaming / RWA / Intent / Chain Abstraction
+Status: Tidak diterapkan (tidak ada positioning eksplisit dalam narasi ini)
+Evidence: Blog visi dan dokumentasi teknis tidak menyebutkan vertical-specific narrative ini
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/, https://docs.movementlabs.xyz/
+
+## Market Timeline
+
+Date: 2022
+Milestone: Pendirian Movement Labs
+Description: Rushi Manche dan Cooper Scanlon mendirikan Movement Labs untuk membangun modular blockchain stack berbasis MoveVM
+Related Historical Event ID: EV-001
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Date: 2022
+Milestone: Inkorporasi Movement Labs Inc. (Delaware C-Corp)
+Description: Legal entity formation untuk fundraising dan operasi
+Related Historical Event ID: EV-002
+Sources: https://www.crunchbase.com/organization/movement-labs
+
+Date: 2024
+Milestone: Series A Funding $38M
+Description: Pembiayaan Series A untuk pengembangan Movement SDK, M1, dan ekosistem
+Related Historical Event ID: EV-006
+Sources: https://www.crunchbase.com/organization/movement-labs
+
+Date: 2024
+Milestone: Public Launch Announcement (Blog Post)
+Description: Pengumuman resmi Movement Labs, Movement SDK, M1, Movement Network, MoveVM, MEVM
+Related Historical Event ID: EV-007
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Date: 2024-07-30
+Milestone: Parthenon Testnet Launch (MEVM Testnet)
+Description: Testnet publik pertama untuk MoveVM, MEVM, Movement SDK tooling
+Related Historical Event ID: EV-009
+Sources: https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/
+
+Date: 2024
+Milestone: DA Layer Integration Announcements (Celestia, Avail, EigenDA)
+Description: Roadmap integrasi modular DA layer untuk Movement Network dan M1
+Related Historical Event ID: EV-010
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Date: Belum terjadwal
+Milestone: Mainnet Launch (M1)
+Description: Peluncuran M1 L2 mainnet di Ethereum — belum diumumkan tanggal
+Related Historical Event ID: Belum ada
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/, https://discord.gg/movementlabs
+
+Date: Belum terjadwal
+Milestone: TGE (Token Generation Event) MOVE
+Description: Pembuatan dan distribusi token MOVE — belum diumumkan jadwal
+Related Historical Event ID: Belum ada
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/, https://discord.gg/movementlabs
+
+Date: Belum terjadwal
+Milestone: Exchange Listing (CEX/DEX)
+Description: Listing token MOVE di exchange — belum diumumkan
+Related Historical Event ID: Belum ada
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/, https://discord.gg/movementlabs
+
+## Official Market Resources
+
+Official Dashboard: tidak tersedia (pre-mainnet)
+DefiLlama: https://defillama.com/ (Movement tidak listed)
+CoinGecko: https://www.coingecko.com/ (MOVE tidak listed)
+CoinMarketCap: https://coinmarketcap.com/ (MOVE tidak listed)
+Token Terminal: https://tokenterminal.com/ (Movement tidak listed)
+Messari: https://messari.io/ (Movement tidak listed)
+Explorer (Testnet): https://explorer.testnet.movementlabs.xyz/
+Explorer (Mainnet): belum tersedia
+GitHub: https://github.com/movementlabsxyz
+Documentation: https://docs.movementlabs.xyz/
+Official Blog: https://blog.movementlabs.xyz/
+Official Website: https://movementlabs.xyz/
+Discord: https://discord.gg/movementlabs
+
+## Summary
+
+Market Stage: Pre-TGE / Pre-Mainnet / Early Development
+Primary Category: Move-based modular blockchain stack / Layer 2 execution environment
+Competitor Count: 9 identified (Aptos, Sui, 0L, Arbitrum, Optimism, Base, Celestia, Polygon Avail, EigenDA) — mix of direct competitors (Move L1s, Ethereum L2s) dan complementary modular stack peers (DA layers)
+Major Narrative: Modular Blockchain, MoveVM Ecosystem, Ethereum L2 Scaling, EVM Compatibility, Parallel Execution, Formal Verification
+Trading Availability: None (pre-TGE, no token deployed, no exchange listings)
+Adoption Metrics Available: None live (all metrics $0 or tidak diketahui — pre-mainnet; testnet metrics tidak diagregasikan publik)
+
+## Open Threads
+
+- Kapan mainnet M1 target launch — belum diumumkan resmi (perlu konfirmasi roadmap terbaru)
+- Kapan TGE MOVE token — belum diumumkan resmi (Discord FAQ hanya "pre-TGE")
+- Apakah akan ada public token sale / community sale sebelum exchange listing — tidak dikonfirmasi
+- Nama investor Series A individu dan apakah mereka mendapat token allocation (SAFT terms) — Crunchbase hanya total $38M, detail tidak publik; perlu cek SEC Form D filing jika applicable
+- Tokenomics MOVE detail (total supply, alokasi, vesting, inflation/deflation mechanism) — belum dipublikasikan resmi
+- Exchange listing plan (CEX tier 1 vs DEX first) — tidak diumumkan
+- Market maker / liquidity provider arrangement untuk post-TGE — tidak diumumkan
+- Testnet Parthenon adoption metrics agregat (DAU, tx/day, unique wallets, TVL testnet) — tidak dipublikasikan di dashboard publik; hanya per-block di explorer
+- Developer count ekosistem (jumlah builder aktif di Movement SDK, jumlah dApps dalam development) — tidak ada census publik
+- Audit status smart contract (MoveVM, MEVM, M1 settlement contracts) — belum ada audit publik; timeline audit tidak diumumkan
+- Decentralized sequencer set launch timeline dan staking requirement — belum diumumkan
+- Movement Network cross-chain messaging protocol spec dan launch timeline — belum dipublikasikan teknis
+- DA layer integration priority (Celestia vs Avail vs EigenDA mana first untuk mainnet) — belum diumumkan
+- Regulatory compliance untuk token issuance (US securities law, Howey test analysis) — tidak diungkap
+- Apakah akan dibentuk Movement Foundation terpisah pre-TGE atau post-TGE — belum dikonfirmasi
+- Enterprise partnerships selain DA layer (oracle, bridge, indexer, institutional) — belum diumumkan
+- Competitive positioning vs Monad (parallel EVM), Sei (parallel EVM), MegaETH (real-time EVM) — narasi parallel execution overlapping tapi tidak dibandingkan eksplisit
+- Grant program / ecosystem fund size dan launch timeline — Head of Ecosystem hired (Arjun Krishan) tapi program belum diumumkan
+- Testnet incentive program detail (points → token allocation conversion rate) — Discord FAQ tidak mengonfirmasi token reward untuk points
+- Financial runway Movement Labs Inc. berdasarkan Series A $38M dan burn rate — tidak diungkap (tidak ada transparency report)

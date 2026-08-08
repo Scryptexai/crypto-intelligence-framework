@@ -1,0 +1,214 @@
+PROJECT: Kamino Finance
+
+Core Insights
+
+Insight 1: Arsitektur Monolitik SVM dengan Komposabilitas CPI Menjadi Fondasi Eksekusi Cepat
+Explanation: Kamino mendeploy seluruh logika inti (Vaults, K-Lend, Multiply, Liquidate, Token, Staking) sebagai program Anchor/Rust terpisah di Solana mainnet yang saling berkomunikasi via Cross-Program Invocation (CPI). Pendekatan ini menghindari kompleksitas appchain/rollup dan memanfaatkan kecepatan serta komposabilitas native Solana SVM.
+Evidence: System Architecture menyatakan "SVM-based DeFi protocol suite... on Solana L1"; Core Components mencatat 9 program terpisah; External Dependencies menandai Solana sebagai Critical【Phase 4 — System Architecture】【Phase 4 — Core Components】【Phase 7 — External Dependencies】
+Supporting Dataset: Phase 4 (System Architecture, Core Components, Execution Environment), Phase 7 (External Dependencies)
+Confidence: High
+
+Insight 2: Strategi "Ecosystem First" — Membangun di Atas Primitif Solana Bukan Membangun dari Nol
+Explanation: Setiap produk inti bergantung pada infrastruktur ekosistem yang ada: Vaults menggunakan Raydium CLMM & Orca Whirlpool; K-Lend/Multiply menggunakan Pyth oracle; Multiply menggunakan Jupiter flashloan; Aset inti mSOL (Marinade) & JitoSOL (Jito); Wormhole NTT untuk bridging. Kamino tidak membangun AMM, LSD, oracle, atau bridge sendiri.
+Evidence: Core Components menunjukkan Vaults CPI ke Raydium/Orca, Multiply Jupiter integration; Major Integrations mencatat Jupiter, Raydium, Orca, Marinade, Jito, Wormhole; External Dependencies menandai semuanya Critical/High【Phase 4 — Core Components】【Phase 7 — Major Integrations】【Phase 7 — External Dependencies】
+Supporting Dataset: Phase 4 (Core Components), Phase 7 (Major Integrations, External Dependencies)
+Confidence: High
+
+Insight 3: Tokenomics Fixed Supply (10B) dengan Emisi Hanya dari Alokasi Treasury — Tidak Ada Inflasi Protokol
+Explanation: Max supply = Total supply = Initial mint 10B KMNO pada TGE. Season 4 emission sourced dari treasury allocation yang sudah di-mint TGE; tidak ada minting mechanism baru di token program. Fee switch mengarahkan protocol revenue ke veKMNO stakers tanpa mencetak token baru.
+Evidence: Supply mencatat "Fixed (max supply = total supply = initial mint)"; Inflation/Deflation menyatakan "No protocol inflation, emission from treasury"; Token Information: Token-2022 tanpa mint authority baru【Phase 6 — Supply】【Phase 6 — Inflation/Deflation】【Phase 6 — Token Information】
+Supporting Dataset: Phase 6 (Supply, Inflation/Deflation, Token Information), Phase 3 (EV-012, EV-020)
+Confidence: High
+
+Insight 4: Desentralisasi Progresif — DAO Formation Post-TGE dengan Realms, Upgrade Authority Masih Multisig Tim
+Explanation: Kamino DAO dibentuk 5 hari post-TGE (EV-016) di Realms (SPL Governance); Fee Switch diaktifkan via Proposal #1 (EV-017); Treasury dikendalikan DAO. Namun program upgrade authority tetap di Squads v3 multisig tim inti anonim — belum fully decentralized ke DAO timelock.
+Evidence: EV-016 DAO Formation, EV-017 Fee Switch Activation; Governance model: token-weighted via veKMNO; Known Limitations: "Upgrade authority masih multisig tim, bukan immutable/timelock DAO"【Phase 3 — EV-016】【Phase 3 — EV-017】【Phase 6 — Governance】【Phase 4 — Known Limitations】
+Supporting Dataset: Phase 3 (EV-016, EV-017), Phase 6 (Governance), Phase 4 (Security Model, Known Limitations), Phase 2 (Entity: Kamino DAO, Kamino Team)
+Confidence: High
+
+Insight 5: Flywheel Incentive Berkelanjutan — Points Season 1-3 (Off-chain) → Season 4 (On-chain KMNO Emission)
+Explanation: Points program bertahap: Season 1 dengan Tensor partnership (EV-009) mendorong adopsi awal; Season 2-3 ekspansi kategori (EV-010, EV-011); Season 4 post-TGE transisi ke on-chain KMNO emission program (EV-020) menggantikan off-chain Merkle root. Membangun retention jangka panjang aligned dengan tokenomics.
+Evidence: EV-009, EV-010, EV-011, EV-020; Utility: Incentive/Reward Season 4; Narrative: Points/Incentive Program【Phase 3 — EV-009】【Phase 3 — EV-010】【Phase 3 — EV-011】【Phase 3 — EV-020】【Phase 6 — Utility】【Phase 8 — Narrative】
+Supporting Dataset: Phase 3 (EV-009, EV-010, EV-011, EV-020), Phase 6 (Utility), Phase 8 (Narrative)
+Confidence: High
+
+Insight 6: Revenue Diversification Multi-Product Sejak Awal — 4 Revenue Stream Paralel
+Explanation: Vault fees (management + performance), K-Lend interest spread, Multiply borrow interest + management fees, Liquidate fees. Mengurangi ketergantungan single product. Fee switch (EV-017) mendistribusikan portion ke veKMNO stakers menciptakan "Real Yield" narrative.
+Evidence: Revenue Model mencatat 4 named streams live; Product launches EV-002, EV-004, EV-007, EV-019; Narrative: Real Yield/Fee Switch【Phase 5 — Revenue Model】【Phase 3 — EV-002】【Phase 3 — EV-004】【Phase 3 — EV-007】【Phase 3 — EV-019】【Phase 8 — Narrative】
+Supporting Dataset: Phase 5 (Revenue Model), Phase 3 (EV-002, EV-004, EV-007, EV-019), Phase 8 (Narrative)
+Confidence: High
+
+Insight 7: Security-First dengan Multi-Audit Berulang — 5 Audits Tanpa Major Exploit Post-Launch
+Explanation: Proaktif: Kudelski (2x), Neodyme (2x), Sec3 (1x) pre/post major launches; Immunefi bug bounty $100k max; tidak ada insiden keamanan mayor tercatat publik post-launch. Upgrade authority multisig memungkinkan patch cepat.
+Evidence: Security Events EV-005, EV-006, EV-008, re-audits 2024; Audit History 5 audits; Security Model Bug Bounty; Open Threads: no security incident recorded【Phase 3 — EV-005】【Phase 3 — EV-006】【Phase 3 — EV-008】【Phase 4 — Audit History】【Phase 4 — Security Model】【Phase 8 — Open Threads】
+Supporting Dataset: Phase 3 (EV-005, EV-006, EV-008), Phase 4 (Audit History, Security Model), Phase 8 (Open Threads)
+Confidence: High
+
+Insight 8: Oracle Risk Mitigation via Dual Layer — Pyth Primary + Switchboard Fallback dengan Staleness Checks On-Chain
+Explanation: Semua pricing kritis (K-Lend rates, Multiply health factor, Liquidate auction, Vault rebalance) menggunakan Pyth pull oracle primary dengan Switchboard V2 fallback; staleness threshold & confidence interval di-enforce on-chain. Known Limitations mengakui dependency pada Pyth update frequency.
+Evidence: Security Model Oracle Security; Known Limitations Pyth update frequency dependency; External Dependencies Pyth Critical, Switchboard High; Ecosystem Risks Oracle Dependency Confirmed【Phase 4 — Security Model】【Phase 4 — Known Limitations】【Phase 7 — External Dependencies】【Phase 8 — Ecosystem Risks】
+Supporting Dataset: Phase 4 (Security Model, Known Limitations), Phase 7 (External Dependencies), Phase 8 (Ecosystem Risks)
+Confidence: High
+
+Insight 9: Cross-Chain Expansion via Wormhole NTT Bukan Native Multi-Chain Deployment
+Explanation: Ekspansi multi-chain dilakukan melalui Wormhole NTT bridging aset non-native ke vault Solana (EV-018), bukan deploy program ke chain lain (Eclipse, Sonic, EVM L2). Mengurangi complexity tapi menciptakan bridge dependency.
+Evidence: EV-018 Wormhole NTT Integration; System Architecture Cross-chain: Wormhole NTT; External Dependencies Wormhole High; Major Integrations Wormhole NTT; Open Threads multi-chain expansion plans【Phase 3 — EV-018】【Phase 4 — System Architecture】【Phase 7 — External Dependencies】【Phase 7 — Major Integrations】【Phase 8 — Open Threads】
+Supporting Dataset: Phase 3 (EV-018), Phase 4 (System Architecture), Phase 7 (External Dependencies, Major Integrations), Phase 8 (Open Threads)
+Confidence: High
+
+Insight 10: Transparansi Finansial Terbatas — No Public Revenue Reports, Treasury Dashboard Minimal
+Explanation: Tidak mempublikasikan laporan pendapatan bulanan/kuartalan; treasury dashboard hanya Realms raw token accounts; DefiLlama/Token Terminal third-party data saja. Circulating supply real-time & unlock schedule tidak diverifikasi resmi.
+Evidence: Revenue History Undisclosed; Official Financial Resources No Transparency Report; Treasury Dashboard Realms only; Open Threads Revenue historical, Circulating supply verification【Phase 5 — Revenue History】【Phase 5 — Official Financial Resources】【Phase 8 — Open Threads】
+Supporting Dataset: Phase 5 (Revenue History, Official Financial Resources), Phase 8 (Open Threads, Adoption Metrics)
+Confidence: High
+
+Strategic Principles
+
+Principle 1: Ecosystem First — Build on Existing Primitives, Not From Scratch
+Explanation: Kamino secara konsisten memilih integrasi dengan infrastruktur Solana yang matang (Jupiter, Pyth, Raydium, Orca, Marinade, Jito, Wormhole) daripada membangun komponen sendiri. Mengurangi time-to-market, risiko teknis, dan biaya operasional sambil memanfaatkan network effect ekosistem.
+Evidence: External Dependencies 7 Critical/High integrations; Major Integrations 10+ protokol; Core Components CPI calls ke Raydium/Orca, Jupiter flashloan, Pyth oracle【Phase 7 — External Dependencies】【Phase 7 — Major Integrations】【Phase 4 — Core Components】
+Supporting Dataset: Phase 7 (External Dependencies, Major Integrations), Phase 4 (Core Components, System Architecture)
+Confidence: High
+
+Principle 2: Security Before Growth — Multi-Audit Pre-Deployment untuk Setiap Major Release
+Explanation: Setiap produk besar (Vaults v1→v2, K-Lend v1→v2, Multiply v1→v2, Liquidate v1) didahului audit minimal 1 auditor ternama (Kudelski, Neodyme, Sec3). Re-audit pada upgrade besar. Bug bounty Immunefi $100k max aktif. Upgrade authority multisig memungkinkan patch cepat.
+Evidence: Security Events EV-005, EV-006, EV-008, re-audits 2024; Audit History 5 audits; Security Model Bug Bounty; Known Limitations upgrade authority multisig【Phase 3 — EV-005】【Phase 3 — EV-006】【Phase 3 — EV-008】【Phase 4 — Audit History】【Phase 4 — Security Model】【Phase 4 — Known Limitations】
+Supporting Dataset: Phase 3 (EV-005, EV-006, EV-008), Phase 4 (Audit History, Security Model, Known Limitations)
+Confidence: High
+
+Principle 3: Progressive Decentralization — DAO Post-TGE, Parameter Control First, Upgrade Authority Later
+Explanation: Urutan: TGE → DAO Formation (EV-016) → Fee Switch Activation via Proposal (EV-017) → Parameter Governance (Season 4 EV-020, Treasury EV-021) → Upgrade Authority masih multisig tim (belum fully DAO). Menyeimbangkan kecepatan eksekusi dengan alignment jangka panjang.
+Evidence: EV-016, EV-017, EV-020, EV-021; Governance model Realms; Known Limitations upgrade authority multisig tim【Phase 3 — EV-016】【Phase 3 — EV-017】【Phase 3 — EV-020】【Phase 3 — EV-021】【Phase 6 — Governance】【Phase 4 — Known Limitations】
+Supporting Dataset: Phase 3 (EV-016, EV-017, EV-020, EV-021), Phase 6 (Governance), Phase 4 (Known Limitations)
+Confidence: High
+
+Principle 4: Fixed Supply Tokenomics — No Inflation, Emission from Treasury Allocation Only
+Explanation: Max supply = Total supply = Initial mint 10B KMNO. Season 4 emission sourced dari treasury allocation (bukan mint baru). Fee switch distribusi revenue bukan inflasi. Buyback & burn proposal (EV-021) untuk deflationary pressure. Menciptakan scarcity narrative.
+Evidence: Supply Fixed 10B; Inflation/Deflation No protocol inflation; Token Information Token-2022 no mint authority; EV-021 Buyback proposal【Phase 6 — Supply】【Phase 6 — Inflation/Deflation】【Phase 6 — Token Information】【Phase 3 — EV-021】
+Supporting Dataset: Phase 6 (Supply, Inflation/Deflation, Token Information), Phase 3 (EV-021)
+Confidence: High
+
+Principle 5: Incentive Alignment via Progressive Points → Token Emission — Retention Over Mercenary Capital
+Explanation: Points Season 1-3 (off-chain) drive TVL growth pre-TGE dengan partnership cross-protocol (Tensor EV-009, Jito EV-011). Season 4 (on-chain KMNO emission) post-TGE align incentives dengan token holders. Transisi dari mercenary points farming ke sustainable token-aligned retention.
+Evidence: EV-009, EV-010, EV-011, EV-020; Utility Incentive/Reward Season 4; Narrative Points/Incentive Program【Phase 3 — EV-009】【Phase 3 — EV-010】【Phase 3 — EV-011】【Phase 3 — EV-020】【Phase 6 — Utility】【Phase 8 — Narrative】
+Supporting Dataset: Phase 3 (EV-009, EV-010, EV-011, EV-020), Phase 6 (Utility), Phase 8 (Narrative)
+Confidence: High
+
+Principle 6: Revenue Diversification from Day One — Multi-Product Stack Membuat Protocol Resilien
+Explanation: Tidak bergantung single revenue stream. 4 produk core (Vaults, K-Lend, Multiply, Liquidate) masing-masing generate fees. Fee switch mengagregasikan ke veKMNO stakers. Mengurangi risiko single product failure.
+Evidence: Revenue Model 4 streams; Product launches EV-002, EV-004, EV-007, EV-019; Narrative Real Yield/Fee Switch【Phase 5 — Revenue Model】【Phase 3 — EV-002】【Phase 3 — EV-004】【Phase 3 — EV-007】【Phase 3 — EV-019】【Phase 8 — Narrative】
+Supporting Dataset: Phase 5 (Revenue Model), Phase 3 (EV-002, EV-004, EV-007, EV-019), Phase 8 (Narrative)
+Confidence: High
+
+Success Factors
+
+Factor 1: Deep Ecosystem Integration dengan Solana Core Infrastructure (Jupiter, Pyth, Raydium/Orca, Marinade, Jito)
+Explanation: Setiap produk inti terintegrasi native dengan infrastruktur terbaik di Solana: Vaults→Raydium CLMM/Orca Whirlpool, K-Lend/Multiply→Pyth oracle, Multiply→Jupiter flashloan, Assets→mSOL/JitoSOL. Membuat Kamino "unforkable" dan embedded dalam ekosistem.
+Evidence: External Dependencies 7 Critical/High; Major Integrations 10+ protokol; Core Components CPI calls; Adoption Metrics TVL >$1B【Phase 7 — External Dependencies】【Phase 7 — Major Integrations】【Phase 4 — Core Components】【Phase 8 — Adoption Metrics】
+Supporting Dataset: Phase 7 (External Dependencies, Major Integrations), Phase 4 (Core Components), Phase 8 (Adoption Metrics)
+Confidence: High
+
+Factor 2: Product Suite Lengkap (Vaults + Lending + Leverage + Liquidation) Menciptakan Flywheel Internal
+Explanation: Vaults menyediakan yield basis → K-Lend menyediakan borrowing → Multiply otomatisasi leverage looping → Liquidate memastikan efisiensi likuidasi. User flow internal tanpa keluar protokol. Cross-product revenue diversification.
+Evidence: Core Components 4 core programs; Product launches sequential EV-002, EV-004, EV-007, EV-019; Revenue Model 4 streams; Market Position Growth stage【Phase 4 — Core Components】【Phase 3 — EV-002】【Phase 3 — EV-004】【Phase 3 — EV-007】【Phase 3 — EV-019】【Phase 5 — Revenue Model】【Phase 8 — Market Position】
+Supporting Dataset: Phase 4 (Core Components), Phase 3 (EV-002, EV-004, EV-007, EV-019), Phase 5 (Revenue Model), Phase 8 (Market Position)
+Confidence: High
+
+Factor 3: Points Program Bertahap dengan Partnership Cross-Protocol (Tensor, Jito) Mendongkrak Adopsi Pre-TGE
+Explanation: Season 1 Tensor partnership (EV-009) menciptakan cross-protocol loop; Season 3 JitoSOL/restaking bonus (EV-011) alignment dengan LSD narrative. Points holders menjadi eligible TGE claim → community ownership dari day-1.
+Evidence: EV-009 Tensor Partnership, EV-011 Season 3 Jito; TGE Claim categories include points holders EV-012; TVL peak ~$1.5B Maret 2024 pre-TGE【Phase 3 — EV-009】【Phase 3 — EV-011】【Phase 3 — EV-012】【Phase 8 — Adoption Metrics】
+Supporting Dataset: Phase 3 (EV-009, EV-011, EV-012), Phase 8 (Adoption Metrics)
+Confidence: High
+
+Factor 4: Multi-CEX Listing Same-Day TGE (Binance, Coinbase, Bybit, Gate.io, KuCoin) Memberikan Likuiditas Instan & Distribusi Global
+Explanation: Listing 5 CEX utama pada hari TGE yang sama (EV-013, EV-014, EV-015) menghilangkan liquidity bootstrap problem. Binance volume ~60-70%, Coinbase fiat gateway US, Bybit/Gate.io/KuCoin geographic reach. Price discovery efisien day-1.
+Evidence: EV-013 Binance, EV-014 Coinbase, EV-015 Bybit/Gate.io/KuCoin; Trading Markets 5 CEX + 3 DEX; Liquidity Major venue Binance/Coinbase; Market Share CEX volume distribution【Phase 3 — EV-013】【Phase 3 — EV-014】【Phase 3 — EV-015】【Phase 8 — Trading Markets】【Phase 8 — Liquidity】【Phase 8 — Market Share】
+Supporting Dataset: Phase 3 (EV-013, EV-014, EV-015), Phase 8 (Trading Markets, Liquidity, Market Share)
+Confidence: High
+
+Factor 5: Security Track Record Bersih — 5 Audits Multi-Auditor, Bug Bounty $100k, No Major Exploit
+Explanation: Kudelski 2x, Neodyme 2x, Sec3 1x覆盖所有core programs. Immunefi bug bounty active. Upgrade authority multisig memungkinkan rapid patch. Membangun trust institucional dan retail.
+Evidence: Security Events EV-005, EV-006, EV-008; Audit History 5 audits; Security Model Bug Bounty; Open Threads no security incident【Phase 3 — EV-005】【Phase 3 — EV-006】【Phase 3 — EV-008】【Phase 4 — Audit History】【Phase 4 — Security Model】【Phase 8 — Open Threads】
+Supporting Dataset: Phase 3 (EV-005, EV-006, EV-008), Phase 4 (Audit History, Security Model), Phase 8 (Open Threads)
+Confidence: High
+
+Factor 6: Fee Switch Activation (EV-017) Menciptakan Real Yield Narrative yang Dapat Diverifikasi On-Chain
+Explanation: Protocol fees dari 4 revenue streams diarahkan ke veKMNO stakers via governance proposal. Menjadikan KMNO bukan hanya governance token tapi yield-bearing asset. Narrative "Real Yield" tervalidasi on-chain.
+Evidence: EV-017 Fee Switch Activation; Utility Staking/Fee Switch; Revenue Model Protocol Fee Switch; Narrative Real Yield/Fee Switch【Phase 3 — EV-017】【Phase 6 — Utility】【Phase 5 — Revenue Model】【Phase 8 — Narrative】
+Supporting Dataset: Phase 3 (EV-017), Phase 6 (Utility), Phase 5 (Revenue Model), Phase 8 (Narrative)
+Confidence: High
+
+Failure Factors
+
+Factor 1: Transparansi Finansial & Tokenomics Minimal — Tidak Ada Public Revenue Reports, Circulating Supply Unverified, Alokasi Persentase Tidak Dipublikasikan
+Explanation: Tidak mempublikasikan laporan pendapatan bulanan/kuartalan; treasury dashboard hanya Realms raw token accounts; persentase alokasi KMNO ke Team, Investors, Treasury, Community, Ecosystem tidak dipublikasikan resmi. CoinGecko/CoinMarketCap circulating supply berbeda-beda tanpa metodologi terverifikasi.
+Evidence: Revenue History Undisclosed; Official Financial Resources No Transparency Report; Distribution percentages "tidak diketahui" untuk semua kategori; Vesting Schedule parameter "tidak diketahui" untuk Team/Investors; Open Threads Circulating supply verification【Phase 5 — Revenue History】【Phase 5 — Official Financial Resources】【Phase 6 — Distribution】【Phase 6 — Vesting Schedule】【Phase 8 — Open Threads】
+Supporting Dataset: Phase 5 (Revenue History, Official Financial Resources), Phase 6 (Distribution, Vesting Schedule), Phase 8 (Open Threads)
+Confidence: High
+
+Factor 2: Upgrade Authority Masih Tersentralisasi di Multisig Tim Anonim — Belum Fully Decentralized ke DAO
+Explanation: Program upgrade authority dipegang Squads v3 multisig tim inti anonim. DAO mengontrol treasury & parameter tapi belum upgrade authority. Tim anonim (tidak doxxed) + centralized upgrade = single point of failure & regulatory risk.
+Evidence: Security Model Program Authority multisig tim; Known Limitations "Upgrade authority multisig tim, bukan immutable/timelock DAO"; Entity Kamino Team anonim; Entity Kamino Finance Ltd. BVI【Phase 4 — Security Model】【Phase 4 — Known Limitations】【Phase 2 — Entity: Kamino Team】【Phase 2 — Entity: Kamino Finance Ltd.】
+Supporting Dataset: Phase 4 (Security Model, Known Limitations), Phase 2 (Entity: Kamino Team, Kamino Finance Ltd.)
+Confidence: High
+
+Factor 3: Single Chain Dependency — 100% Operasi di Solana, Tidak Ada Deployment Multi-Chain
+Explanation: Seluruh protokol (Vaults, K-Lend, Multiply, Liquidate, Token, Governance) deployed hanya di Solana. Risiko sistemik Solana (outage, consensus bug, regulatory) mempengaruhi 100% operasi. Cross-chain hanya via Wormhole NTT untuk asset bridging, bukan program deployment.
+Evidence: Ecosystem Position Primary Chain Solana; System Architecture Solana L1 only; External Dependencies Solana Critical; Ecosystem Risks Single Chain Dependency Confirmed; Open Threads Multi-chain expansion plans【Phase 7 — Ecosystem Position】【Phase 4 — System Architecture】【Phase 7 — External Dependencies】【Phase 8 — Ecosystem Risks】【Phase 8 — Open Threads】
+Supporting Dataset: Phase 7 (Ecosystem Position, External Dependencies), Phase 4 (System Architecture), Phase 8 (Ecosystem Risks, Open Threads)
+Confidence: High
+
+Factor 4: Oracle Concentration Risk — Pyth Primary untuk Semua Pricing Kritis, Fallback Switchboard Belum Terbukti di Kondisi Ekstrem
+Explanation: K-Lend rates, Multiply health factor, Liquidate auction, Vault rebalance semua bergantung Pyth. Switchboard fallback ada tapi tidak terbukti saat Pyth outage bersamaan. Staleness threshold & confidence interval checks on-chain tapi parameter exact tidak transparan.
+Evidence: Security Model Oracle Security; Known Limitations Pyth update frequency dependency; External Dependencies Pyth Critical, Switchboard High; Ecosystem Risks Oracle Dependency Confirmed【Phase 4 — Security Model】【Phase 4 — Known Limitations】【Phase 7 — External Dependencies】【Phase 8 — Ecosystem Risks】
+Supporting Dataset: Phase 4 (Security Model, Known Limitations), Phase 7 (External Dependencies), Phase 8 (Ecosystem Risks)
+Confidence: High
+
+Factor 5: Treasury Concentration di Native Token KMNO — Nilai Treasury Bergantung Harga KMNO, Belum Ada Diversifikasi Terverifikasi
+Explanation: Treasury sebagian besar KMNO (native token). EV-021 proposal buyback & burn menggunakan protocol revenue untuk diversifikasi tapi masih proposal stage. Tidak ada transparency report komposisi treasury (stablecoin vs KMNO vs yield-bearing assets).
+Evidence: Treasury Composition undisclosed, KMNO heavy; Financial Risk Treasury Concentration; Fundraising Mechanism DAO Treasury post-TGE; EV-021 Buyback proposal; Open Threads Treasury composition breakdown【Phase 5 — Treasury】【Phase 5 — Financial Risk】【Phase 5 — Fundraising Mechanism】【Phase 3 — EV-021】【Phase 8 — Open Threads】
+Supporting Dataset: Phase 5 (Treasury, Financial Risk, Fundraising Mechanism), Phase 3 (EV-021), Phase 8 (Open Threads)
+Confidence: High
+
+Factor 6: Keterbatasan Data Adopsi — Daily Active Users, Transactions, Developer Count Tidak Dipublikasikan Resmi
+Explanation: Metriks adopsi kunci (DAU, daily txns, unique wallets cumulative, developer count) tidak dipublikasikan resmi. Hanya TVL (DefiLlama) dan CEX volume (CoinMarketCap) yang tersedia. Menghambang analisis fundamental investor & researcher.
+Evidence: Adoption Metrics DAU/Txns/Wallets/Devs "tidak diketahui"; Open Threads Real-time circulating supply, Daily/Monthly Active Users, Developer Activity【Phase 8 — Adoption Metrics】【Phase 8 — Open Threads】
+Supporting Dataset: Phase 8 (Adoption Metrics, Open Threads)
+Confidence: High
+
+Decision Framework
+
+Step 1: Observe — Identifikasi Peluang di Ekosistem Solana & Gap Produk
+Explanation: Tim mengamati kemunculan CLMM (Raydium/Orca), kebutuhan manajemen posisi otomatis, kurangnya lending terintegrasi leverage, dan permintaan yield LSD (mSOL/JitoSOL). Mengidentifikasi first-mover advantage untuk Vaults CLMM auto-rebalancing.
+Evidence: EV-001 Founding 2022; EV-002 Vaults v1 Launch Maret 2022; Blog "Introducing Kamino"【Phase 3 — EV-001】【Phase 3 — EV-002】【Phase 1 — Launch Date Mainnet】
+Supporting Dataset: Phase 3 (EV-001, EV-002), Phase 1 (Launch Date Mainnet)
+Confidence: High
+
+Step 2: Evaluate — Validasi Teknis & Keamanan via Multi-Audit Sebelum Setiap Major Launch
+Explanation: Setiap produk besar (Vaults v1→v2, K-Lend v1→v2, Multiply v1→v2, Liquidate v1) didahului audit Kudelski/Neodyme/Sec3. Re-audit pada upgrade besar. Hanya meluncurkan setelah temuan critical/high diperbaiki.
+Evidence: EV-005 Kudelski Audit 2023-02; EV-006 Neodyme Audit 2023-05; EV-008 Sec3 Audit 2023-10; Re-audits 2024 untuk K-Lend v2, Liquidate, Multiply v2【Phase 3 — EV-005】【Phase 3 — EV-006】【Phase 3 — EV-008】【Phase 4 — Audit History】
+Supporting Dataset: Phase 3 (EV-005, EV-006, EV-008), Phase 4 (Audit History, Technical Upgrade History)
+Confidence: High
+
+Step 3: Fund — Seed Round 2022 (Multicoin, Jump, Solana Ventures) + Grant Solana Foundation, Lalu Protocol Revenue & DAO Treasury
+Explanation: Satu ronde Seed 2022 undisclosed amount dari VC tier-1 + ecosystem grant. Tidak ada follow-on round. Post-TGE operasi didanai protocol revenue (4 streams) + DAO treasury KMNO allocation. Financial independence dari VC.
+Evidence: Funding History Seed 2022; Financial Dependencies VC investors, Foundation grants, Protocol revenue, DAO treasury; No funding events post-2022【Phase 5 — Funding History】【Phase 5 — Financial Dependencies】【Phase 3 — History no funding events post-2022】
+Supporting Dataset: Phase 5 (Funding History, Financial Dependencies), Phase 3 (History)
+Confidence: High
+
+Step 4: Develop — Arsitektur Monolitik SVM dengan CPI, PDA-Centric State, Token-2022 Extensions
+Explanation: Develop di Solana SVM menggunakan Anchor/Rust. Program terpisah per produk (Vaults, K-Lend, Multiply, Liquidate, Token, Staking) terintegrasi via CPI. PDA untuk positions/obligations. KMNO Token-2022 dengan transfer hook untuk fee switch.
+Evidence: System Architecture SVM monolitik; Core Components 9 programs; Execution Environment SVM BPF Loader Upgradeable; KMNO Token Program Token-2022; Current Technical Stack Rust/Anchor/TypeScript【Phase 4 — System Architecture】【Phase 4 — Core Components】【Phase 4 — Execution Environment】【Phase 6 — Token Information】【Phase 4 — Current Technical Stack】
+Supporting Dataset: Phase 4 (System Architecture, Core Components, Execution Environment, Current Technical Stack), Phase 6 (Token Information)
+Confidence: High
+
+Step 5: Launch — Bertahap: Vaults v1 (2022-03) → K-Lend v1 (2022-09) → Multiply v1 (2023-07) → Liquidate v1 (2024-08) → TGE KMNO + Multi-CEX Listing + DAO Formation (2024-04)
+Explanation: Product launches sequential membangun stack DeFi lengkap. TGE 10 April 2024 dengan claim points holders + listing 5 CEX same-day. DAO formation 5 hari बाद. Fee Switch activation Mei 2024 via proposal.
+Evidence: EV-002 Vaults v1, EV-004 K-Lend v1, EV-007 Multiply v1, EV-019 Liquidate v1, EV-012 TGE, EV-013/014/015 CEX Listings, EV-016 DAO, EV-017 Fee Switch【Phase 3 — EV-002】【Phase 3 — EV-004】【Phase 3 — EV-007】【Phase 3 — EV-019】【Phase 3 — EV-012】【Phase 3 — EV-013】【Phase 3 — EV-014】【Phase 3 — EV-015】【Phase 3 — EV-016】【Phase 3 — EV-017】
+Supporting Dataset: Phase 3 (EV-002, EV-004, EV-007, EV-019, EV-012, EV-013, EV-014, EV-015, EV-016, EV-017)
+Confidence: High
+
+Step 6: Govern — DAO Realms Token-Weighted (veKMNO), Parameter Control Via Proposal, Treasury Spending Via Proposal, Upgrade Authority Masih Multisig Tim
+Explanation: Governance on-chain via Realms. 1 KMNO = 1 vote via veKMNO. Proposal untuk parameter (Fee Switch EV-017, Season 4 EV-020, Treasury Buyback EV-021). Treasury spending via proposal. Upgrade authority belum fully DAO.
+Evidence: EV-016 DAO Formation, EV-017 Fee Switch, EV-020 Season 4, EV-021 Treasury; Governance Model Realms; Known Limitations upgrade authority multisig【Phase 3 — EV-016】【Phase 3 — EV-017】【Phase 3 — EV-020】【Phase 3 — EV-021】【Phase 6 — Governance】【Phase 4 — Known Limitations】
+Supporting Dataset: Phase 3 (EV-016, EV-017, EV-020, EV-021),

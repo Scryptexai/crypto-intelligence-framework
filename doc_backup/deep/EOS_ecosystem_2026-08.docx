@@ -1,0 +1,437 @@
+PROJECT: EOS
+
+## Ecosystem Position
+
+Primary Sector: Layer 1 Blockchain / Smart Contract Platform (HIGH) [EOS Network Foundation, https://eosnetwork.com/]
+Secondary Sector: EVM-Compatible Execution Environment (via EOS EVM) (HIGH) [EOS Network Foundation EOS EVM, https://eosnetwork.com/ecosystem/eos-evm/]
+Primary Chain: EOS Mainnet (Antelope Protocol) (HIGH) [EOS Network Foundation, https://eosnetwork.com/]
+Supported Chains: Ethereum (via ERC-20 bridge token 0x86Fa049857E0209aa7D9e616F7eb3b3B78ECfdb0), WAX (Antelope-based cross-chain bridge), other Antelope chains (Telos, UX Network) via IBC (experimental) (HIGH) [Etherscan EOS Token, https://etherscan.io/token/0x86Fa049857E0209aa7D9e616F7eb3b3B78ECfdb0; WAX Official, https://wax.io/; AntelopeIO IBC, https://github.com/AntelopeIO/leap/tree/main/contracts/eosio.ibc]
+Sources: (HIGH) [EOS Network Foundation, https://eosnetwork.com/]; (HIGH) [EOS Network Foundation EOS EVM, https://eosnetwork.com/ecosystem/eos-evm/]; (HIGH) [Etherscan EOS Token, https://etherscan.io/token/0x86Fa049857E0209aa7D9e616F7eb3b3B78ECfdb0]; (MEDIUM) [WAX Official, https://wax.io/]; (MEDIUM) [AntelopeIO IBC, https://github.com/AntelopeIO/leap/tree/main/contracts/eosio.ibc]
+
+## External Dependencies
+
+Dependency Name: Antelope Protocol (Leap Node Software)
+Dependency Type: Protocol
+Purpose: Core consensus, networking, WASM runtime, dan system contracts (eosio.token, eosio.system) yang menjalankan EOS Mainnet
+Criticality: Critical
+Status: Live
+Related Entity: Antelope Protocol (Leap Node Software)
+Related Technology Component: Antelope Leap Node Software; eosio.system Contract; eosio.token Contract
+Sources: (HIGH) [GitHub AntelopeIO/leap, https://github.com/AntelopeIO/leap]; (HIGH) [EOS Network Foundation, https://eosnetwork.com/ecosystem/]
+
+Dependency Name: Block Producers (BP) Collective
+Dependency Type: Validator Group
+Purpose: Block production, consensus finality (BFT-DPoS), governance voting, protocol upgrade execution
+Criticality: Critical
+Status: Live
+Related Entity: Block Producers (BP) Collective
+Related Technology Component: Block Producer (BP) Nodes; eosio.system Contract voting logic
+Sources: (HIGH) [EOS Authority Block Producers, https://eosauthority.com/block-producers]; (HIGH) [EOSIO Technical Whitepaper, https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md]
+
+Dependency Name: Ethereum Mainnet (Bridge Contract)
+Dependency Type: Chain / Bridge
+Purpose: Host ERC-20 representation of EOS (0x86Fa049857E0209aa7D9e616F7eb3b3B78ECfdb0) untuk cross-chain liquidity, CEX deposit/withdrawal, DeFi composability
+Criticality: High
+Status: Live
+Related Entity: Etherscan
+Related Technology Component: eosio.token Contract (native); Bridge Contract 0x86Fa... (Ethereum)
+Sources: (HIGH) [Etherscan EOS Token, https://etherscan.io/token/0x86Fa049857E0209aa7D9e616F7eb3b3B78ECfdb0]; (MEDIUM) [EOS Network Foundation Bridge, https://eosnetwork.com/ecosystem/]
+
+Dependency Name: Hyperion History API (EOS Rio)
+Dependency Type: Infrastructure / Data Provider
+Purpose: Full-history indexing dan query API untuk explorer, wallet, dApp analytics; standar resmi ENF sejak 2023
+Criticality: High
+Status: Live
+Related Entity: Hyperion History API
+Related Technology Component: Hyperion History API; ElasticSearch backend; Node.js API layer
+Sources: (HIGH) [GitHub eosrio/hyperion, https://github.com/eosrio/hyperion]; (HIGH) [EOS Network Foundation Ecosystem, https://eosnetwork.com/ecosystem/]
+
+Dependency Name: Firehose (StreamingFast)
+Dependency Type: Infrastructure / Data Provider
+Purpose: Real-time structured block streaming (gRPC/Protobuf) dengan latensi sub-sekon untuk dApp sync dan analytics; direkomendasikan ENF 2024
+Criticality: High
+Status: Live
+Related Entity: Firehose (StreamingFast)
+Related Technology Component: Firehose (StreamingFast); Go gRPC server; Flatbuffers schema
+Sources: (HIGH) [StreamingFast Firehose, https://streamingfast.io/firehose]; (HIGH) [EOS Network Foundation Ecosystem, https://eosnetwork.com/ecosystem/]
+
+Dependency Name: Anchor Wallet (Greymass)
+Dependency Type: Wallet / SDK
+Purpose: Non-custodial signing, resource management, dApp browser, session management (Anchor Link/Wharf Kit) untuk end-user access
+Criticality: High
+Status: Live
+Related Entity: Anchor Wallet
+Related Technology Component: Anchor Link (TypeScript); Wharf Kit (TypeScript); Wallet desktop/mobile app
+Sources: (HIGH) [Anchor Wallet, https://greymass.com/anchor]; (HIGH) [EOS Network Foundation Ecosystem, https://eosnetwork.com/ecosystem/]
+
+Dependency Name: Wombat Wallet
+Dependency Type: Wallet
+Purpose: Mobile/web non-custodial wallet dengan dApp store, NFT gallery, fiat on-ramp integration
+Criticality: Medium
+Status: Live
+Related Entity: Wombat Wallet
+Related Technology Component: Wombat Wallet app; Web3 provider injection
+Sources: (MEDIUM) [Wombat Wallet, https://wombat.app/]; (MEDIUM) [EOS Network Foundation Ecosystem, https://eosnetwork.com/ecosystem/]
+
+Dependency Name: GitHub (Microsoft)
+Dependency Type: Cloud / Infrastructure
+Purpose: Hosting repositori resmi (AntelopeIO/leap, eosnetworkfoundation/*), CI/CD (GitHub Actions), issue tracking, release distribution
+Criticality: High
+Status: Live
+Related Entity: GitHub (Microsoft)
+Related Technology Component: GitHub Actions workflows; Docker image publishing; Release artifacts
+Sources: (HIGH) [GitHub AntelopeIO, https://github.com/AntelopeIO]; (HIGH) [GitHub EOS Network Foundation, https://github.com/eosnetworkfoundation]
+
+Dependency Name: Docker Hub
+Dependency Type: Cloud / Infrastructure
+Purpose: Distribusi Docker images resmi untuk nodeos, Hyperion, Firehose, EOS EVM — digunakan BP dan operator infrastruktur
+Criticality: Medium
+Status: Live
+Related Entity: Docker Hub
+Related Technology Component: Docker images (nodeos, hyperion, firehose, eos-evm)
+Sources: (MEDIUM) [Docker Hub AntelopeIO, https://hub.docker.com/u/antelopeio]; (MEDIUM) [Docker Hub EOS Rio, https://hub.docker.com/u/eosrio]
+
+Dependency Name: ElasticSearch / OpenSearch
+Dependency Type: Infrastructure / Data Provider
+Purpose: Backend storage untuk Hyperion History API (full-history indexing); required untuk query performance
+Criticality: High
+Status: Live
+Related Entity: ElasticSearch / OpenSearch
+Related Technology Component: Hyperion History API ElasticSearch indices
+Sources: (MEDIUM) [GitHub eosrio/hyperion Architecture, https://github.com/eosrio/hyperion/blob/master/docs/architecture.md]
+
+Dependency Name: Google Cloud / AWS / Cloud Providers (BP Infrastructure)
+Dependency Type: Cloud
+Purpose: Sebagian besar 21 Block Producer aktif menjalankan node di cloud provider (AWS, Google Cloud, DigitalOcean, bare metal) — single-point-of-failure risk jika terkonsentrasi
+Criticality: High
+Status: Live
+Related Entity: Block Producers (BP) Collective
+Related Technology Component: Block Producer (BP) Nodes hosting
+Sources: (MEDIUM) [EOS Authority BP Infrastructure Survey (community), https://eosauthority.com/block-producers] (verification needed for current provider breakdown)
+
+Dependency Name: CertiK / Halborn / Trail of Bits / PeckShield / OpenZeppelin
+Dependency Type: Security
+Purpose: Historical audit partners untuk konsensus, WASM runtime, EOS EVM, Spring SDK; tidak ada continuous audit program terverifikasi
+Criticality: Medium
+Status: Live (periodic)
+Related Entity: CertiK; Halborn; Trail of Bits; PeckShield; OpenZeppelin
+Related Technology Component: Antelope Leap consensus; EOS EVM contracts; Spring SDK toolchain
+Sources: (HIGH) [Trail of Bits EOSIO Audit, https://github.com/trailofbits/publications/blob/master/reviews/EOSIO.pdf]; (MEDIUM) [CertiK EOS EVM Audit, https://www.certik.com/projects/eos-evm]; (MEDIUM) [Halborn Antelope Audit, https://halborn.com/audits/antelope]; (LOW) [OpenZeppelin Blog, https://blog.openzeppelin.com/antelope-spring-sdk-audit]
+
+Dependency Name: Cayman Islands Jurisdiction
+Dependency Type: Government / Legal
+Purpose: Inkorporasi Block.one dan EOS Network Foundation; kerangka hukum operasional, treasury, governance
+Criticality: High
+Status: Live
+Related Entity: Cayman Islands Jurisdiction
+Related Technology Component: Legal entity structure; Foundation bylaws
+Sources: (HIGH) [Block.one Terms of Use, https://block.one/terms-of-use/]; (HIGH) [EOS Network Foundation, https://eosnetwork.com/foundation/]
+
+Dependency Name: U.S. Securities and Exchange Commission (SEC)
+Dependency Type: Government / Regulatory
+Purpose: Regulatory oversight dari settlement 2019; memengaruhi status hukum token EOS di AS, exchange listing, institutional custody
+Criticality: High
+Status: Live (ongoing regulatory exposure)
+Related Entity: U.S. Securities and Exchange Commission (SEC)
+Related Technology Component: Token classification risk; Exchange delisting risk
+Sources: (HIGH) [SEC Press Release, https://www.sec.gov/news/press-release/2019-197]; (HIGH) [SEC Complaint, https://www.sec.gov/litigation/complaints/2019/pr2019-197.pdf]
+
+## Major Integrations
+
+Integration Name: EOS EVM (Ethereum-Compatible Execution)
+Integrated With: Ethereum Virtual Machine (EVM) ecosystem — Solidity/Vyper contracts, Hardhat/Foundry/Truffle tooling, MetaMask (via RPC), Ethereum JSON-RPC standard
+Purpose: Memungkinkan deployment kontrak Ethereum asli di atas EOS Mainnet dengan gas fee mapped ke EOS CPU/NET; interoperabilitas ERC-20 native via precompiles
+Status: Live
+Related Historical Event ID: EV-019
+Sources: (HIGH) [EOS Network Foundation EOS EVM, https://eosnetwork.com/ecosystem/eos-evm/]; (HIGH) [GitHub eosnetworkfoundation/eos-evm, https://github.com/eosnetworkfoundation/eos-evm]
+
+Integration Name: Hyperion History API (Official Indexing Standard)
+Integrated With: EOS Mainnet (Antelope Leap nodeos) — consumes block data via ship protocol / state-history plugin
+Purpose: Menyediakan REST/GraphQL API untuk full-history query (transactions, actions, accounts, tokens) ke explorer, wallet, dApp
+Status: Live
+Related Historical Event ID: EV-022
+Sources: (HIGH) [GitHub eosrio/hyperion, https://github.com/eosrio/hyperion]; (HIGH) [EOS Network Foundation Ecosystem, https://eosnetwork.com/ecosystem/]
+
+Integration Name: Firehose Real-Time Streaming (StreamingFast)
+Integrated With: EOS Mainnet (Antelope Leap nodeos) — consumes block stream via Firehose-enabled nodeos plugin
+Purpose: Sub-second structured block streaming (gRPC/Protobuf) untuk real-time dApp sync, analytics, MEV monitoring
+Status: Live
+Related Historical Event ID: EV-026
+Sources: (HIGH) [StreamingFast Firehose, https://streamingfast.io/firehose]; (HIGH) [EOS Network Foundation Ecosystem, https://eosnetwork.com/ecosystem/]
+
+Integration Name: Spring SDK (C++ Smart Contract Framework)
+Integrated With: Antelope Leap WASM runtime (wavm/wabt); CMake/Clang/LLVM toolchain; C++20 standard library
+Purpose: Modern toolkit untuk compile, test, deploy smart contract C++ ke WASM; menggantikan CDT legacy
+Status: Live
+Related Historical Event ID: EV-021
+Sources: (HIGH) [GitHub eosnetworkfoundation/spring, https://github.com/eosnetworkfoundation/spring]; (HIGH) [EOS Network Foundation Ecosystem, https://eosnetwork.com/ecosystem/]
+
+Integration Name: WAX Bridge (Cross-Chain NFT/GameFi)
+Integrated With: WAX (Worldwide Asset eXchange) — Antelope-based chain dengan bridge contract untuk token/NFT transfer
+Purpose: Interoperabilitas aset (token, NFT) antara EOS dan WAX untuk GameFi (Ultra) dan marketplace
+Status: Live
+Related Historical Event ID: (Not explicitly in Phase 3 — referenced in Phase 1 Ecosystem)
+Sources: (MEDIUM) [WAX Official, https://wax.io/]; (MEDIUM) [Ultra.io, https://ultra.io/]; (MEDIUM) [EOS Network Foundation Ecosystem, https://eosnetwork.com/ecosystem/]
+
+Integration Name: Anchor Link / Wharf Kit (dApp Integration SDK)
+Integrated With: Anchor Wallet (Greymass); EOS Mainnet RPC endpoints; TypeScript/JavaScript build systems
+Purpose: Session management, transaction signing, identity (SIWE-style), resource provider abstraction untuk dApp developer
+Status: Live
+Related Historical Event ID: (Not explicitly in Phase 3)
+Sources: (HIGH) [Anchor Wallet, https://greymass.com/anchor]; (HIGH) [Wharf Kit GitHub, https://github.com/wharfkit]
+
+Integration Name: ERC-20 Bridge Token (Ethereum)
+Integrated With: Ethereum Mainnet (ERC-20 standard); CEX/DEX liquidity pools (Uniswap, Binance, OKX); Multichain bridges (Wormhole, etc. — unverified)
+Purpose: Representasi EOS di Ethereum untuk trading, DeFi collateral, cross-chain liquidity
+Status: Live
+Related Historical Event ID: EV-002 (TGE start), EV-009 (Mainnet snapshot)
+Sources: (HIGH) [Etherscan EOS Token, https://etherscan.io/token/0x86Fa049857E0209aa7D9e616F7eb3b3B78ECfdb0]; (MEDIUM) [EOS Network Foundation Bridge, https://eosnetwork.com/ecosystem/]
+
+Integration Name: Antelope IBC (Inter-Blockchain Communication)
+Integrated With: Other Antelope chains (Telos, UX Network, WAX) via eosio.ibc contract
+Purpose: Trust-minimized cross-chain messaging dan token transfer antar chain Antelope
+Status: Beta / Experimental
+Related Historical Event ID: (Not in Phase 3 — referenced in Phase 4 Architecture)
+Sources: (MEDIUM) [AntelopeIO IBC Contract, https://github.com/AntelopeIO/leap/tree/main/contracts/eosio.ibc]
+
+Integration Name: Defibox DeFi Protocol Integration
+Integrated With: EOS Mainnet (native WASM contracts); EOS EVM (potential future)
+Purpose: AMM DEX, lending, stablecoin (USN) — largest DeFi TVL di EOS; menggunakan EOS sebagai base pair dan collateral
+Status: Live
+Related Historical Event ID: (Not in Phase 3)
+Sources: (MEDIUM) [Defibox, https://defibox.com/]; (MEDIUM) [DappRadar EOS, https://dappradar.com/rankings/protocol/eos]
+
+Integration Name: OrganicSwap DEX Integration
+Integrated With: EOS Mainnet (native WASM contracts)
+Purpose: AMM DEX fokus stablecoin pairing dan token ekosistem; kontributor likuiditas DeFi
+Status: Live
+Related Historical Event ID: (Not in Phase 3)
+Sources: (MEDIUM) [OrganicSwap, https://organicswap.io/]; (MEDIUM) [DappRadar EOS, https://dappradar.com/rankings/protocol/eos]
+
+Integration Name: Ultra GameFi Platform Integration
+Integrated With: EOS Mainnet / Antelope tech stack; WAX bridge untuk NFT interoperability
+Purpose: Platform penerbitan game blockchain; menggunakan EOS/Antelope untuk asset ownership, marketplace, token economy
+Status: Live
+Related Historical Event ID: (Not in Phase 3)
+Sources: (MEDIUM) [Ultra.io, https://ultra.io/]; (MEDIUM) [EOS Network Foundation Ecosystem, https://eosnetwork.com/ecosystem/]
+
+Integration Name: EOS Network Ventures (Ecosystem Fund Deployment)
+Integrated With: ENF Treasury (inflation-funded); Portfolio projects (equity/token investments)
+Purpose: Strategic capital deployment ke early-stage DeFi, GameFi, infrastructure projects di ekosistem EOS/EOS EVM
+Status: Live (Ongoing)
+Related Historical Event ID: EV-024
+Sources: (MEDIUM) [EOS Network Foundation, https://eosnetwork.com/foundation/]; (LOW) [EOS Network Foundation Blog, https://eosnetwork.com/blog/]
+
+## Infrastructure Providers
+
+Provider: Hyperion History API (EOS Rio)
+Service: Full-history indexing (ElasticSearch backend), REST/GraphQL API untuk on-chain data query
+Criticality: High
+Status: Live
+Sources: (HIGH) [GitHub eosrio/hyperion, https://github.com/eosrio/hyperion]; (HIGH) [EOS Network Foundation Ecosystem, https://eosnetwork.com/ecosystem/]
+
+Provider: Firehose (StreamingFast)
+Service: Real-time structured block streaming (gRPC/Protobuf/Flatbuffers), sub-second latency, cursor-based sync
+Criticality: High
+Status: Live
+Sources: (HIGH) [StreamingFast Firehose, https://streamingfast.io/firehose]; (HIGH) [EOS Network Foundation Ecosystem, https://eosnetwork.com/ecosystem/]
+
+Provider: EOS Authority
+Service: Block explorer (eosq.app — official ENF), BP voting tooling, on-chain analytics, contract ABI explorer, proposal dashboard
+Criticality: High
+Status: Live
+Sources: (HIGH) [EOS Authority, https://eosauthority.com/]; (HIGH) [EOS Network Foundation Block Explorers, https://eosnetwork.com/block-explorers/]
+
+Provider: Bloks.io (HiveBP / EOS Cafe Block)
+Service: Community block explorer untuk EOS dan chain Antelope lain; token analytics, account lookup, transaction debug
+Criticality: Medium
+Status: Live
+Sources: (MEDIUM) [Bloks.io, https://bloks.io/]; (MEDIUM) [EOS Network Foundation Block Explorers, https://eosnetwork.com/block-explorers/]
+
+Provider: Anchor Wallet (Greymass)
+Service: Non-custodial wallet (desktop/mobile), Anchor Link SDK, Wharf Kit, resource provider, dApp browser
+Criticality: High
+Status: Live
+Sources: (HIGH) [Anchor Wallet, https://greymass.com/anchor]; (HIGH) [EOS Network Foundation Ecosystem, https://eosnetwork.com/ecosystem/]
+
+Provider: Wombat Wallet
+Service: Mobile/web non-custodial wallet, dApp store, NFT gallery, fiat on-ramp (MoonPay/Transak), Web3 provider
+Criticality: Medium
+Status: Live
+Sources: (MEDIUM) [Wombat Wallet, https://wombat.app/]; (MEDIUM) [EOS Network Foundation Ecosystem, https://eosnetwork.com/ecosystem/]
+
+Provider: Block Producers (BP) Collective — 21 Active + Standbys
+Service: Block production, consensus validation, BFT finality signatures, network governance, protocol upgrade execution
+Criticality: Critical
+Status: Live
+Sources: (HIGH) [EOS Authority Block Producers, https://eosauthority.com/block-producers]; (HIGH) [EOSIO Technical Whitepaper, https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md]
+
+Provider: GitHub (Microsoft)
+Service: Source code hosting, CI/CD (Actions), release distribution, issue tracking, documentation wiki
+Criticality: High
+Status: Live
+Sources: (HIGH) [GitHub AntelopeIO, https://github.com/AntelopeIO]; (HIGH) [GitHub EOS Network Foundation, https://github.com/eosnetworkfoundation]
+
+Provider: Docker Hub
+Service: Container image registry untuk nodeos, Hyperion, Firehose, EOS EVM official images
+Criticality: Medium
+Status: Live
+Sources: (MEDIUM) [Docker Hub AntelopeIO, https://hub.docker.com/u/antelopeio]; (MEDIUM) [Docker Hub EOS Rio, https://hub.docker.com/u/eosrio]
+
+Provider: Cloud Providers (AWS, Google Cloud, DigitalOcean, Bare Metal — BP operated)
+Service: Hosting infrastructure untuk Block Producer nodes, API endpoints, Hyperion/Firehose instances
+Criticality: High
+Status: Live
+Sources: (MEDIUM) [EOS Authority BP Infrastructure Survey (community), https://eosauthority.com/block-producers] (verification needed)
+
+## Exchange Ecosystem
+
+Exchange: Binance
+Listing Status: Listed
+Spot: Yes (EOS/USDT, EOS/BTC, EOS/BNB, EOS/BUSD, dll)
+Perpetual: Yes (EOSUSDT Perpetual)
+OTC: Yes (Binance OTC desk)
+Launchpool: No (historical Launchpad 2017 — not Launchpool)
+Status: Active
+Sources: (HIGH) [Binance EOS Markets, https://www.binance.com/en/trade/EOS_USDT]; (HIGH) [CoinMarketCap EOS Markets, https://coinmarketcap.com/currencies/eos/markets/]
+
+Exchange: OKX
+Listing Status: Listed
+Spot: Yes (EOS/USDT, EOS/BTC, EOS/ETH)
+Perpetual: Yes (EOS-USDT-SWAP)
+OTC: Yes (OKX OTC)
+Launchpool: No
+Status: Active
+Sources: (HIGH) [OKX EOS Markets, https://www.okx.com/trade/EOS-USDT]; (HIGH) [CoinMarketCap EOS Markets, https://coinmarketcap.com/currencies/eos/markets/]
+
+Exchange: Upbit
+Listing Status: Listed
+Spot: Yes (EOS/KRW, EOS/USDT, EOS/BTC)
+Perpetual: No
+OTC: No
+Launchpool: No
+Status: Active
+Sources: (HIGH) [Upbit EOS Markets, https://upbit.com/exchange?code=CRIX.UPBIT.KRW-EOS]; (HIGH) [CoinMarketCap EOS Markets, https://coinmarketcap.com/currencies/eos/markets/]
+
+Exchange: Coinbase
+Listing Status: Listed
+Spot: Yes (EOS/USD, EOS/USDC, EOS/EUR)
+Perpetual: No (Coinbase International Exchange separate)
+OTC: Yes (Coinbase Prime OTC)
+Launchpool: No
+Status: Active
+Sources: (HIGH) [Coinbase EOS, https://www.coinbase.com/price/eos]; (HIGH) [CoinMarketCap EOS Markets, https://coinmarketcap.com/currencies/eos/markets/]
+
+Exchange: Kraken
+Listing Status: Listed
+Spot: Yes (EOS/USD, EOS/EUR, EOS/USDT)
+Perpetual: Yes (EOS/USD Futures on Kraken Futures)
+OTC: Yes (Kraken OTC)
+Launchpool: No
+Status: Active
+Sources: (HIGH) [Kraken EOS, https://trade.kraken.com/markets/kraken/eos/usd]; (HIGH) [CoinMarketCap EOS Markets, https://coinmarketcap.com/currencies/eos/markets/]
+
+Exchange: Huobi / HTX
+Listing Status: Listed
+Spot: Yes (EOS/USDT, EOS/BTC, EOS/HT)
+Perpetual: Yes (EOS-USDT Quarterly/Perpetual)
+OTC: Yes
+Launchpool: No
+Status: Active
+Sources: (HIGH) [HTX EOS Markets, https://www.htx.com/trade/eos_usdt]; (HIGH) [CoinMarketCap EOS Markets, https://coinmarketcap.com/currencies/eos/markets/]
+
+Exchange: Gate.io
+Listing Status: Listed
+Spot: Yes (EOS/USDT, EOS/BTC, EOS/ETH)
+Perpetual: Yes (EOS_USDT Perpetual)
+OTC: No
+Launchpool: No
+Status: Active
+Sources: (HIGH) [Gate.io EOS, https://www.gate.io/trade/EOS_USDT]; (HIGH) [CoinMarketCap EOS Markets, https://coinmarketcap.com/currencies/eos/markets/]
+
+Exchange: KuCoin
+Listing Status: Listed
+Spot: Yes (EOS/USDT, EOS/BTC, EOS/ETH)
+Perpetual: Yes (EOSUSDT Perpetual)
+OTC: Yes (KuCoin OTC)
+Launchpool: No
+Status: Active
+Sources: (HIGH) [KuCoin EOS, https://www.kucoin.com/trade/EOS-USDT]; (HIGH) [CoinMarketCap EOS Markets, https://coinmarketcap.com/currencies/eos/markets/]
+
+Exchange: Bybit
+Listing Status: Listed
+Spot: Yes (EOS/USDT)
+Perpetual: Yes (EOSUSDT Perpetual)
+OTC: No
+Launchpool: No
+Status: Active
+Sources: (HIGH) [Bybit EOS, https://www.bybit.com/trade/spot/EOS/USDT]; (HIGH) [CoinMarketCap EOS Markets, https://coinmarketcap.com/currencies/eos/markets/]
+
+Exchange: Uniswap (Ethereum DEX)
+Listing Status: Listed (via ERC-20 bridge token)
+Spot: Yes (EOS/WETH, EOS/USDC, EOS/USDT pools on Ethereum mainnet)
+Perpetual: No
+OTC: No
+Launchpool: No
+Status: Active
+Sources: (HIGH) [Uniswap EOS Pools, https://app.uniswap.org/explore/tokens/ethereum/0x86Fa049857E0209aa7D9e616F7eb3b3B78ECfdb0]; (HIGH) [Etherscan EOS Token, https://etherscan.io/token/0x86Fa049857E0209aa7D9e616F7eb3b3B78ECfdb0]
+
+## Wallet Ecosystem
+
+Wallet: Anchor Wallet (Greymass)
+Support Type: Full (Native Antelope + EOS EVM via MetaMask Snap / custom RPC); Desktop (Win/Mac/Linux), Mobile (iOS/Android), Browser Extension
+Status: Live
+Sources: (HIGH) [Anchor Wallet, https://greymass.com/anchor]; (HIGH) [EOS Network Foundation Ecosystem, https://eosnetwork.com/ecosystem/]
+
+Wallet: Wombat Wallet
+Support Type: Full (Native Antelope + EOS EVM); Mobile (iOS/Android), Web, Browser Extension; dApp store, NFT gallery, fiat on-ramp
+Status: Live
+Sources: (MEDIUM) [Wombat Wallet, https://wombat.app/]; (MEDIUM) [EOS Network Foundation Ecosystem, https://eosnetwork.com/ecosystem/]
+
+Wallet: MetaMask (via EOS EVM RPC / Snap)
+Support Type: EOS EVM only (EVM-compatible RPC); tidak support native Antelope WASM contracts langsung
+Status: Live
+Sources: (HIGH) [EOS EVM Documentation Metamask, https://developers.eosnetwork.com/docs/eos-evm/metamask]; (HIGH) [MetaMask, https://metamask.io/]
+
+Wallet: TokenPocket
+Support Type: Full (Native Antelope multi-chain: EOS, WAX, Telos, BSC, Ethereum, etc.); Mobile, Desktop, Extension
+Status: Live
+Sources: (MEDIUM) [TokenPocket, https://www.tokenpocket.pro/]; (MEDIUM) [EOS Network Foundation Ecosystem, https://eosnetwork.com/ecosystem/]
+
+Wallet: MathWallet
+Support Type: Full (Native Antelope multi-chain); Mobile, Desktop, Extension, Hardware wallet integration
+Status: Live
+Sources: (MEDIUM) [MathWallet, https://mathwallet.org/]; (MEDIUM) [EOS Network Foundation Ecosystem, https://eosnetwork.com/ecosystem/]
+
+Wallet: Ledger Hardware Wallet (via Anchor/TokenPocket/MathWallet)
+Support Type: Cold storage signing untuk native Antelope (EOS) via Ledger App "EOS" (community maintained) + EOS EVM via Ethereum app
+Status: Live
+Sources: (MEDIUM) [Ledger EOS App, https://github.com/LedgerHQ/app-eos]; (MEDIUM) [Anchor Wallet Ledger Support, https://greymass.com/anchor]
+
+Wallet: Trezor Hardware Wallet
+Support Type: Native Antelope (EOS) via Trezor Firmware + third-party bridge (Trezor Connect); EOS EVM via Ethereum app
+Status: Live
+Sources: (MEDIUM) [Trezor EOS Support, https://wiki.trezor.io/Coins:_EOS]; (MEDIUM) [Trezor Connect, https://github.com/trezor/connect]
+
+Wallet: Scatter (Legacy / Deprecated)
+Support Type: Native Antelope (desktop) — tidak dipelihara aktif, digantikan Anchor
+Status: Deprecated
+Sources: (LOW) [Scatter GitHub (archived), https://github.com/GetScatter]; (MEDIUM) [EOS Network Foundation Ecosystem (no Scatter listed), https://eosnetwork.com/ecosystem/]
+
+## Developer Ecosystem
+
+SDK: Spring SDK (f.k.a. EOS SDK/CDT)
+Description: Official C++20 smart contract framework (CMake, Clang/LLVM WASM target, integrated testing, ABI generation); replaces legacy CDT
+Sources: (HIGH) [GitHub eosnetworkfoundation/spring, https://github.com/eosnetworkfoundation/spring]; (HIGH) [EOS Network Foundation Ecosystem, https://eosnetwork.com/ecosystem/]
+
+SDK: EOS EVM Tooling (Hardhat / Foundry / Truffle compatible)
+Description: Standard Ethereum development stack works out-of-the-box via EOS EVM JSON-RPC endpoint; Solidity 0.8+, Vyper support
+Sources: (HIGH) [EOS EVM Documentation, https://developers.eosnetwork.com/docs/eos-evm]; (HIGH) [GitHub eosnetworkfoundation/eos-evm, https://github.com/eosnetworkfoundation/eos-evm]
+
+SDK: Anchor Link / Wharf Kit (TypeScript)
+Description: Transaction signing, session management, identity (SIWE), resource provider abstraction, dApp integration library untuk Antelope chains
+Sources: (HIGH) [Anchor Wallet, https://greymass.com/anchor]; (HIGH) [Wharf Kit GitHub, https://github.com/wharfkit]
+
+SDK: EOSJS (Legacy JavaScript/TypeScript)
+Description: Legacy RPC client untuk interaksi nodeos; masih dipakai komunitas tapi tidak dikembangkan aktif
+Sources: (MEDIUM) [EOSJS GitHub, https://github.com/EOSIO/eosjs]; (

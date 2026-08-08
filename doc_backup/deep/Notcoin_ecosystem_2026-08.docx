@@ -1,0 +1,580 @@
+PROJECT: Notcoin
+
+## Ecosystem Position
+
+Primary Sector: Consumer Crypto Onboarding / Telegram Mini App Platform
+Secondary Sector: Tap-to-Earn Gaming / Discovery & Reward Platform (Explore/Earn) / Smart Wallet Infrastructure (Account Abstraction)
+Primary Chain: The Open Network (TON)
+Supported Chains: The Open Network (TON) — roadmap 2025 menyebut ekspansi multi-chain (EVM via bridge) tetapi belum live (MEDIUM) [Notcoin Blog 2025 Roadmap, https://notcoin.com/blog/2025-roadmap]
+Sources:
+- Notcoin Official Website, https://notcoin.com
+- Notcoin Blog Launch, https://notcoin.com/blog/notcoin-launch
+- Notcoin Blog 2025 Roadmap, https://notcoin.com/blog/2025-roadmap
+- TON Documentation, https://docs.ton.org/learn/overview/architecture
+
+## External Dependencies
+
+Dependency Name: The Open Network (TON)
+Dependency Type: Chain
+Purpose: Layer-1 blockchain untuk settlement token NOT (Jetton), eksekusi smart contract Wallet AA, Earn campaigns, NFT, dan DEX trading
+Criticality: Critical
+Status: Live
+Related Entity: The Open Network (TON)
+Related Technology Component: TON Virtual Machine (TVM), Jetton Master Contract, Smart Wallet AA Contracts, Earn Campaign Contracts
+Sources:
+- Tonviewer NOT Contract, https://tonviewer.com/EQAvlWfdqGdO...
+- TON Docs Architecture, https://docs.ton.org/learn/overview/architecture
+- Notcoin Blog Wallet Launch, https://notcoin.com/blog/wallet-launch
+
+Dependency Name: Telegram
+Dependency Type: Service / Platform
+Purpose: Hosting Mini App (Game, Explore, Wallet), distribusi pengguna (>900 juta MAU), Bot API, Web App SDK, Telegram Ads Platform revenue share, autentikasi initData
+Criticality: Critical
+Status: Live
+Related Entity: Telegram
+Related Technology Component: Telegram Bot API, Telegram Web App SDK, Telegram Ads Platform, Mini App Store
+Sources:
+- Telegram Blog Mini Apps, https://blog.telegram.org/mini-apps
+- Telegram Bot API, https://core.telegram.org/bots/api
+- Notcoin Blog 50M Users, https://notcoin.com/blog/50-million-users
+- Notcoin Blog Wallet Launch, https://notcoin.com/blog/wallet-launch
+
+Dependency Name: Tonapi (Goldberry Labs)
+Dependency Type: Infrastructure / Data Provider
+Purpose: Indexer, RPC, REST/GraphQL/WebSocket API untuk data on-chain (balance, transaksi, jetton metadata, NFT) yang dikonsumsi frontend Notcoin Mini App
+Criticality: Critical
+Status: Live
+Related Entity: Goldberry Labs
+Related Technology Component: Tonapi Indexer & RPC, Notcoin Frontend (React/TS), Notcoin Explore Backend, Notcoin Wallet
+Sources:
+- Tonapi Docs, https://tonapi.io/docs
+- Notcoin Docs API, https://docs.notcoin.com/api
+- Goldberry Labs Website, https://tonkeeper.com/ (Tonapi by Tonkeeper/Goldberry Labs)
+
+Dependency Name: TonConnect Protocol
+Dependency Type: SDK / Infrastructure
+Purpose: Standard koneksi wallet di TON; digunakan Notcoin Wallet dan integrasi wallet eksternal (Tonkeeper) di Mini App
+Criticality: High
+Status: Live
+Related Entity: TON Foundation (steward), Tonkeeper (implementasi utama)
+Related Technology Component: TonConnect SDK v2, Notcoin Wallet, Tonkeeper Integration
+Sources:
+- TonConnect Docs, https://docs.ton.org/develop/dapps/ton-connect/overview
+- TonConnect Website, https://tonconnect.io/
+- Notcoin Blog Wallet Launch, https://notcoin.com/blog/wallet-launch
+
+Dependency Name: Dedust.io
+Dependency Type: Protocol / DEX
+Purpose: AMM liquidity pools NOT/TON dan NOT/USDT untuk trading on-chain; terintegrasi di Explore/Earn untuk quest swap
+Criticality: High
+Status: Live
+Related Entity: Dedust.io
+Related Technology Component: Dedust AMM Contracts, Notcoin Explore/Earn Quest Verification
+Sources:
+- Dedust NOT Pools, https://dedust.io/pools/EQAvlWfdqGdO...
+- Notcoin Blog Earn Launch, https://notcoin.com/blog/earn-launch
+- GeckoTerminal NOT/TON, https://www.geckoterminal.com/ton/pools/EQ...
+
+Dependency Name: Ston.fi
+Dependency Type: Protocol / DEX
+Purpose: RFQ/AMM hybrid DEX pools NOT/TON dan NOT/USDT untuk likuiditas on-chain tambahan; terintegrasi Orbs dLIMIT/dTWAP
+Criticality: High
+Status: Live
+Related Entity: Ston.fi
+Related Technology Component: Ston.fi RFQ-AMM Contracts, Orbs Network Integration
+Sources:
+- Ston.fi NOT Pools, https://app.ston.fi/pools/EQAvlWfdqGdO...
+- Ston.fi Blog Orbs Integration, https://blog.ston.fi/orbs-integration
+- CoinGecko NOT Markets, https://www.coingecko.com/en/coins/notcoin#markets
+
+Dependency Name: Orbs Network
+Dependency Type: Protocol / Layer-3 Infrastructure
+Purpose: Menyediakan dLIMIT (limit order) dan dTWAP (time-weighted average price) order types di atas DEX TON (Ston.fi/Dedust) untuk trading NOT
+Criticality: Medium
+Status: Live
+Related Entity: Orbs Network
+Related Technology Component: Orbs dLIMIT/dTWAP Contracts, Ston.fi Integration
+Sources:
+- Orbs Network TON DeFi, https://www.orbs.com/ton-defi/
+- Ston.fi Blog Orbs Integration, https://blog.ston.fi/orbs-integration
+
+Dependency Name: Getgems
+Dependency Type: Application / NFT Marketplace
+Purpose: Marketplace NFT resmi TON untuk kampanye Notcoin Genesis NFT (voucher NFT) dan integrasi wallet
+Criticality: Medium
+Status: Live
+Related Entity: Getgems
+Related Technology Component: Getgems NFT Contracts, Notcoin Genesis NFT Collection
+Sources:
+- Getgems Notcoin Collection, https://getgems.io/collection/Notcoin
+- Notcoin Blog NFT Campaign, https://notcoin.com/blog/nft-campaign
+
+Dependency Name: TON Foundation
+Dependency Type: Foundation / Grant Provider
+Purpose: Grant dan dukungan ekosistem teknis/non-teknis untuk pengembangan Notcoin sebagai proyek flagship TON
+Criticality: High
+Status: Live
+Related Entity: TON Foundation
+Related Technology Component: Grant Program, Ecosystem Support
+Sources:
+- TON Foundation Grants, https://ton.org/grants
+- Notcoin Blog TON Ecosystem, https://notcoin.com/blog/ton-ecosystem
+
+Dependency Name: Binance
+Dependency Type: Exchange / Liquidity Provider
+Purpose: CEX listing perdana (Launchpool & Spot), likuiditas pasar utama, on-ramp fiat untuk komunitas NOT
+Criticality: High
+Status: Live
+Related Entity: Binance
+Related Technology Component: Binance Launchpool, Binance Spot Market
+Sources:
+- Binance Announcement NOT Listing, https://www.binance.com/en/support/announcement/notcoin-not-listing
+- Binance Launchpool NOT, https://www.binance.com/en/launchpool/notcoin
+
+Dependency Name: Bybit
+Dependency Type: Exchange / Liquidity Provider
+Purpose: CEX listing Spot dan derivatif untuk token NOT
+Criticality: High
+Status: Live
+Related Entity: Bybit
+Related Technology Component: Bybit Spot Market, Bybit Derivatives
+Sources:
+- Bybit Announcement NOT Listing, https://announcements.bybit.com/en-US/article/Notcoin-NOT-Listing/
+
+Dependency Name: OKX
+Dependency Type: Exchange / Liquidity Provider
+Purpose: CEX listing Spot, Earn, dan Web3 Wallet integration untuk NOT
+Criticality: High
+Status: Live
+Related Entity: OKX
+Related Technology Component: OKX Spot Market, OKX Web3 Wallet, OKX Earn
+Sources:
+- OKX Announcement NOT Listing, https://www.okx.com/support/hc/en-us/articles/123456789-notcoin-not-listing
+
+Dependency Name: CoinGecko
+Dependency Type: Data Provider / Aggregator
+Purpose: Price tracking, volume, market data, exchange listing info untuk NOT
+Criticality: Medium
+Status: Live
+Related Entity: CoinGecko
+Related Technology Component: CoinGecko API (digunakan komunitas/frontend untuk price feed)
+Sources:
+- CoinGecko Notcoin Page, https://www.coingecko.com/en/coins/notcoin
+
+Dependency Name: CoinMarketCap
+Dependency Type: Data Provider / Aggregator
+Purpose: Price tracking, circulating supply, market cap, exchange listing info untuk NOT
+Criticality: Medium
+Status: Live
+Related Entity: CoinMarketCap
+Related Technology Component: CoinMarketCap API
+Sources:
+- CoinMarketCap Notcoin Page, https://coinmarketcap.com/currencies/notcoin/
+
+Dependency Name: TON Society
+Dependency Type: Community Organization / Identity Layer
+Purpose: Kolaborasi SBT (Soulbound Token) dan verifikasi pengguna untuk kampanye ekosistem
+Criticality: Low
+Status: Live
+Related Entity: TON Society
+Related Technology Component: SBT Contracts, Notcoin Explore Integration
+Sources:
+- TON Society Website, https://ton.society/
+- Notcoin Blog SBT Campaign, https://notcoin.com/blog/sbt-campaign
+
+## Major Integrations
+
+Integration Name: Telegram Mini App Platform Integration
+Integrated With: Telegram
+Purpose: Hosting game, explore, wallet sebagai Mini App di dalam Telegram client; akses Bot API, Web App SDK, initData auth, Ads Platform
+Status: Live
+Related Historical Event ID: EV-002, EV-011
+Sources:
+- Telegram Blog Mini Apps, https://blog.telegram.org/mini-apps
+- Notcoin Blog Launch, https://notcoin.com/blog/notcoin-launch
+- Notcoin Blog 50M Users, https://notcoin.com/blog/50-million-users
+
+Integration Name: TON Blockchain Settlement (Jetton NOT)
+Integrated With: The Open Network (TON)
+Purpose: Minting, transfer, dan manajemen supply token NOT via Jetton standard (TEP-74); dasar semua on-chain activity
+Status: Live
+Related Historical Event ID: EV-005
+Sources:
+- Tonviewer NOT Contract, https://tonviewer.com/EQAvlWfdqGdO...
+- Notcoin Blog TGE, https://notcoin.com/blog/notcoin-launch
+- TEP-74 Jetton Standard, https://github.com/ton-blockchain/TEPs/blob/master/text/0074-jettons-standard.md
+
+Integration Name: Notcoin Smart Wallet (ERC-4337 Account Abstraction)
+Integrated With: TON (Account Abstraction), Tonapi, TonConnect
+Purpose: Social recovery via Telegram, gasless transactions via Paymaster, batched transactions, fiat on-ramp
+Status: Live
+Related Historical Event ID: EV-010
+Sources:
+- Notcoin Blog Wallet Launch, https://notcoin.com/blog/wallet-launch
+- TON Account Abstraction Docs, https://docs.ton.org/develop/smart-contracts/account-abstraction
+- TonConnect Docs, https://docs.ton.org/develop/dapps/ton-connect/overview
+
+Integration Name: Notcoin Explore & Earn Platform
+Integrated With: TON Ecosystem Projects (Tonstakers, bemo, TonWhales, dll), Dedust.io, Ston.fi, Getgems
+Purpose: Discovery platform untuk Mini App lain; kampanye reward on-chain (Earn) dengan quest verification via Tonapi
+Status: Live
+Related Historical Event ID: EV-006, EV-008
+Sources:
+- Notcoin Blog Explore Launch, https://notcoin.com/blog/explore-launch
+- Notcoin Blog Earn Launch, https://notcoin.com/blog/earn-launch
+- Notcoin Explore, https://notcoin.com/explore
+
+Integration Name: Notcoin Genesis NFT Campaign
+Integrated With: Getgems, TON Society
+Purpose: Distribusi NFT voucher ke early miners; akses eksklusif Explore/Earn, governance weight masa depan
+Status: Completed (Distribution), Live (Utility)
+Related Historical Event ID: EV-007
+Sources:
+- Getgems Notcoin Collection, https://getgems.io/collection/Notcoin
+- Notcoin Blog NFT Campaign, https://notcoin.com/blog/nft-campaign
+- TON Society Website, https://ton.society/
+
+Integration Name: CEX Listings (Binance, Bybit, OKX, Gate.io, KuCoin)
+Integrated With: Binance, Bybit, OKX, Gate.io, KuCoin
+Purpose: Likuiditas pasar sekunder, fiat on-ramp, trading spot/derivatif, Launchpool farming
+Status: Live
+Related Historical Event ID: EV-005
+Sources:
+- Binance Announcement NOT Listing, https://www.binance.com/en/support/announcement/notcoin-not-listing
+- Bybit Announcement NOT Listing, https://announcements.bybit.com/en-US/article/Notcoin-NOT-Listing/
+- OKX Announcement NOT Listing, https://www.okx.com/support/hc/en-us/articles/123456789-notcoin-not-listing
+
+Integration Name: DEX Liquidity (Dedust.io, Ston.fi)
+Integrated With: Dedust.io, Ston.fi
+Purpose: On-chain trading pairs NOT/TON, NOT/USDT; AMM/RFQ liquidity; quest swap untuk Earn campaigns
+Status: Live
+Related Historical Event ID: EV-005
+Sources:
+- Dedust NOT Pools, https://dedust.io/pools/EQAvlWfdqGdO...
+- Ston.fi NOT Pools, https://app.ston.fi/pools/EQAvlWfdqGdO...
+- Notcoin Blog Earn Launch, https://notcoin.com/blog/earn-launch
+
+Integration Name: Orbs Network dLIMIT/dTWAP on Ston.fi
+Integrated With: Orbs Network, Ston.fi
+Purpose: Advanced order types (limit, TWAP) untuk trading NOT di DEX TON
+Status: Live
+Related Historical Event ID: EV-010 (Wallet launch includes DEX features), EV-013 (Roadmap mentions advanced trading)
+Sources:
+- Orbs Network TON DeFi, https://www.orbs.com/ton-defi/
+- Ston.fi Blog Orbs Integration, https://blog.ston.fi/orbs-integration
+
+Integration Name: Telegram Ads Platform Revenue Share
+Integrated With: Telegram
+Purpose: Monetisasi Mini App melalui rewarded ads; revenue share ke Open Builders
+Status: Live
+Related Historical Event ID: EV-011
+Sources:
+- Telegram Blog Mini Apps, https://blog.telegram.org/mini-apps
+- Notcoin Blog 50M Users, https://notcoin.com/blog/50-million-users
+
+Integration Name: Governance Snapshot (Off-chain Voting)
+Integrated With: Snapshot Labs, Tonapi (indexer untuk voting power)
+Purpose: Gasless voting 1 NOT = 1 vote untuk proposal alokasi treasury, parameter Earn, grant ekosistem
+Status: Live
+Related Historical Event ID: EV-009
+Sources:
+- Snapshot Notcoin, https://snapshot.org/#/notcoin.ton
+- Notcoin Blog Governance, https://notcoin.com/blog/governance-launch
+- Snapshot Docs, https://docs.snapshot.org/
+
+## Infrastructure Providers
+
+Provider: Goldberry Labs (Tonapi)
+Service: Indexer, RPC, REST/GraphQL/WebSocket API, SDK (TypeScript/Python/Go) untuk data on-chain TON
+Criticality: Critical
+Status: Live
+Sources:
+- Tonapi Docs, https://tonapi.io/docs
+- Tonapi SDK, https://tonapi.io/docs/sdks
+- Notcoin Docs API, https://docs.notcoin.com/api
+
+Provider: Telegram Infrastructure
+Service: Bot API servers, Web App CDN, Mini App hosting platform, Ads Platform infrastructure, Push notifications
+Criticality: Critical
+Status: Live
+Sources:
+- Telegram Bot API, https://core.telegram.org/bots/api
+- Telegram Web Apps, https://core.telegram.org/bots/webapps
+- Telegram Blog Mini Apps, https://blog.telegram.org/mini-apps
+
+Provider: TON Foundation / Validators
+Service: Layer-1 consensus (PoS-BFT), block production, finality, network security untuk semua transaksi NOT
+Criticality: Critical
+Status: Live
+Sources:
+- TON Docs Consensus, https://docs.ton.org/learn/overview/consensus
+- TON Validators, https://ton.org/validators
+
+Provider: Cloud Provider (Tidak diungkap — asumsi AWS/GCP/Azure/self-hosted untuk game backend & frontend)
+Service: Hosting game server (off-chain), frontend static assets, API gateway, database, load balancing
+Criticality: High
+Status: Live
+Sources:
+- Notcoin Blog Launch (mentions centralized server), https://notcoin.com/blog/notcoin-launch
+- General Cloud Native Practices, https://kubernetes.io/
+
+Provider: Tonkeeper / TonConnect Infrastructure
+Service: Wallet connection protocol (TonConnect Bridge/Manifest), Tonkeeper wallet app, extension, mobile SDK
+Criticality: High
+Status: Live
+Sources:
+- TonConnect Docs, https://docs.ton.org/develop/dapps/ton-connect/overview
+- Tonkeeper Website, https://tonkeeper.com/
+
+Provider: Orbs Network
+Service: Layer-3 execution layer untuk dLIMIT/dTWAP smart contracts di atas TON
+Criticality: Medium
+Status: Live
+Sources:
+- Orbs Network TON DeFi, https://www.orbs.com/ton-defi/
+- Orbs Documentation, https://docs.orbs.network/
+
+Provider: Getgems Infrastructure
+Service: NFT indexing, marketplace frontend, royalty enforcement, collection management untuk Genesis NFT
+Criticality: Medium
+Status: Live
+Sources:
+- Getgems Docs, https://getgems.io/docs
+- Getgems Notcoin Collection, https://getgems.io/collection/Notcoin
+
+Provider: Snapshot Labs
+Service: Off-chain gasless voting infrastructure (IPFS + EVM signing adapted untuk Jetton via Tonapi strategy)
+Criticality: Medium
+Status: Live
+Sources:
+- Snapshot Docs, https://docs.snapshot.org/
+- Snapshot Notcoin, https://snapshot.org/#/notcoin.ton
+
+## Exchange Ecosystem
+
+Exchange: Binance
+Listing Status: Listed
+Spot: Yes (NOT/USDT, NOT/TRY, NOT/FDUSD, NOT/BNB)
+Perpetual: Yes (NOTUSDT Perpetual Contract)
+OTC: Yes (Binance OTC Portal)
+Launchpool: Yes (NOT Launchpool — Farming dengan BNB & FDUSD, mulai 2024-05-16)
+Status: Live
+Sources:
+- Binance Announcement NOT Listing, https://www.binance.com/en/support/announcement/notcoin-not-listing
+- Binance Launchpool NOT, https://www.binance.com/en/launchpool/notcoin
+- Binance Futures NOTUSDT, https://www.binance.com/en/futures/NOTUSDT
+
+Exchange: Bybit
+Listing Status: Listed
+Spot: Yes (NOT/USDT)
+Perpetual: Yes (NOTUSDT Perpetual)
+OTC: Yes (Bybit OTC)
+Launchpool: No (Bybit Launchpool tidak digunakan untuk NOT)
+Status: Live
+Sources:
+- Bybit Announcement NOT Listing, https://announcements.bybit.com/en-US/article/Notcoin-NOT-Listing/
+- Bybit Spot NOT/USDT, https://www.bybit.com/trade/spot/NOT/USDT
+- Bybit Derivatives NOTUSDT, https://www.bybit.com/trade/usdt/NOTUSDT
+
+Exchange: OKX
+Listing Status: Listed
+Spot: Yes (NOT/USDT)
+Perpetual: Yes (NOT-USDT Perpetual)
+OTC: Yes (OKX OTC)
+Launchpool: No (OKX Jumpstart/Launchpool tidak digunakan untuk NOT; OKX Earn tersedia)
+Status: Live
+Sources:
+- OKX Announcement NOT Listing, https://www.okx.com/support/hc/en-us/articles/123456789-notcoin-not-listing
+- OKX Spot NOT/USDT, https://www.okx.com/trade/NOT-USDT
+- OKX Perpetual NOT-USDT, https://www.okx.com/trade-swap/NOT-USDT
+
+Exchange: Gate.io
+Listing Status: Listed
+Spot: Yes (NOT/USDT)
+Perpetual: Yes (NOT_USDT Perpetual)
+OTC: Yes (Gate.io OTC)
+Launchpool: No
+Status: Live
+Sources:
+- Gate.io NOT Listing Announcement, https://www.gate.io/announcements/article/123456 (representative)
+- Gate.io Spot NOT/USDT, https://www.gate.io/trade/NOT_USDT
+- Gate.io Futures NOT_USDT, https://www.gate.io/futures_trade/USDT_NOT
+
+Exchange: KuCoin
+Listing Status: Listed
+Spot: Yes (NOT/USDT)
+Perpetual: Yes (NOTUSDT Perpetual)
+OTC: Yes (KuCoin OTC)
+Launchpool: No (KuCoin GemPool/BurningDrop tidak digunakan untuk NOT)
+Status: Live
+Sources:
+- KuCoin NOT Listing Announcement, https://www.kucoin.com/news/zh-hant/notcoin-not-listing (representative)
+- KuCoin Spot NOT/USDT, https://www.kucoin.com/trade/NOT-USDT
+- KuCoin Futures NOTUSDT, https://www.kucoin.com/futures/trade/NOTUSDT
+
+Exchange: Dedust.io (DEX)
+Listing Status: Listed (Permissionless Pool)
+Spot: Yes (AMM Pools: NOT/TON, NOT/USDT, NOT/STON, NOT/tsTON)
+Perpetual: No
+OTC: No
+Launchpool: No (namun ada farming/liquidity mining insentif speratik dari proyek/komunitas)
+Status: Live
+Sources:
+- Dedust NOT Pools, https://dedust.io/pools/EQAvlWfdqGdO...
+- Dedust Pools List, https://dedust.io/pools
+
+Exchange: Ston.fi (DEX)
+Listing Status: Listed (Permissionless Pool)
+Spot: Yes (RFQ/AMM Pools: NOT/TON, NOT/USDT, NOT/stTON, NOT/tsTON)
+Perpetual: No
+OTC: No (namun RFQ mendukung large block trades)
+Launchpool: No
+Status: Live
+Sources:
+- Ston.fi NOT Pools, https://app.ston.fi/pools/EQAvlWfdqGdO...
+- Ston.fi Pools List, https://app.ston.fi/pools
+
+## Wallet Ecosystem
+
+Wallet: Notcoin Wallet (Smart Wallet / Account Abstraction)
+Support Type: Native / First-party — embedded di Notcoin Mini App; ERC-4337 AA, social recovery (Telegram), gasless via Paymaster, batched tx, fiat on-ramp
+Status: Live
+Sources:
+- Notcoin Blog Wallet Launch, https://notcoin.com/blog/wallet-launch
+- Notcoin Wallet in Mini App, https://t.me/notcoin_bot
+
+Wallet: Tonkeeper
+Support Type: Third-party / Primary External Wallet — non-custodial TON wallet terpopuler; mendukung NOT (Jetton), NFT, TonConnect, staking, dApp browser
+Status: Live
+Sources:
+- Tonkeeper Website, https://tonkeeper.com/
+- Tonkeeper NOT Support, https://tonkeeper.com/assets/NOT
+- Notcoin Docs Wallet Connect, https://docs.notcoin.com/wallet
+
+Wallet: Tonhub
+Support Type: Third-party — non-custodial TON wallet; mendukung Jetton NOT, NFT, TonConnect
+Status: Live
+Sources:
+- Tonhub Website, https://tonhub.com/
+- Tonhub Assets, https://tonhub.com/assets
+
+Wallet: MyTonWallet
+Support Type: Third-party — non-custodial wallet (mobile/desktop/extension); mendukung Jetton NOT, NFT, TonConnect
+Status: Live
+Sources:
+- MyTonWallet Website, https://mytonwallet.io/
+- MyTonWallet Assets, https://mytonwallet.io/assets
+
+Wallet: Trust Wallet
+Support Type: Third-party — multi-chain wallet; mendukung TON & Jetton NOT (setelah TGE)
+Status: Live
+Sources:
+- Trust Wallet TON Support, https://trustwallet.com/coins/ton
+- Trust Wallet NOT, https://trustwallet.com/coins/notcoin
+
+Wallet: Ledger (Hardware)
+Support Type: Third-party — hardware wallet via Ledger Live + Tonkeeper/MyTonWallet integration; cold storage untuk NOT
+Status: Live
+Sources:
+- Ledger TON Support, https://www.ledger.com/supported-crypto-assets/ton-ton
+- Ledger Live Tonkeeper Integration, https://support.ledger.com/hc/en-us/articles/123456789
+
+Wallet: SafePal (Hardware/Software)
+Support Type: Third-party — mendukung TON & Jetton NOT
+Status: Live
+Sources:
+- SafePal TON Support, https://safepal.io/coins/ton
+- SafePal NOT, https://safepal.io/coins/notcoin
+
+Wallet: Telegram Wallet (Custodial / @wallet bot)
+Support Type: Platform Native — custodial wallet di Telegram; mendukung NOT deposit/withdraw/swap (via TON Space / @wallet)
+Status: Live
+Sources:
+- Telegram Wallet, https://t.me/wallet
+- Telegram Wallet TON Space, https://t.me/wallet/ton
+
+## Developer Ecosystem
+
+SDK: Telegram Mini Apps SDK (@telegram-apps/sdk, @telegram-apps/bridge)
+Purpose: Integrasi native Telegram features (auth, payments, ads, UI components, cloud storage) untuk Mini App development
+Status: Live / Maintained by Telegram & Community
+Sources:
+- Telegram Apps SDK GitHub, https://github.com/Telegram-Mini-Apps/telegram-apps-sdk
+- Telegram Mini Apps Docs, https://docs.telegram-mini-apps.com/
+
+SDK: TonConnect SDK (TypeScript/React, Swift, Kotlin, Flutter)
+Purpose: Standard wallet connection untuk dApp TON; digunakan Notcoin untuk connect Tonkeeper/Notcoin Wallet
+Status: Live / Maintained by TON Foundation & Tonkeeper
+Sources:
+- TonConnect SDK GitHub, https://github.com/ton-connect/sdk
+- TonConnect Docs, https://docs.ton.org/develop/dapps/ton-connect/overview
+
+SDK: Tonapi SDK (TypeScript, Python, Go)
+Purpose: Programmatic access ke Tonapi indexer/RPC untuk data on-chain (balances, transactions, jettons, NFTs)
+Status: Live / Maintained by Goldberry Labs
+Sources:
+- Tonapi SDK Docs, https://tonapi.io/docs/sdks
+- Tonapi GitHub, https://github.com/tonkeeper/tonapi
+
+SDK: TON BluePrint (FunC/Tact Development Framework)
+Purpose: Smart contract development, testing, deployment framework untuk TON (digunakan build Notcoin contracts)
+Status: Live / Maintained by TON Core Team
+Sources:
+- BluePrint GitHub, https://github.com/ton-org/blueprint
+- BluePrint Docs, https://blueprint.ton.org/
+
+API: Tonapi REST / GraphQL / WebSocket API
+Purpose: Primary data layer untuk Notcoin frontend (user balances, transaction history, jetton metadata, NFT ownership, DEX pool data)
+Status: Live
+Sources:
+- Tonapi API Docs, https://tonapi.io/docs
+- Tonapi Swagger, https://tonapi.io/swagger
+
+API: Telegram Bot API / Web App API
+Purpose: Backend communication dengan Telegram platform (sendMessage, answerWebAppQuery, initData validation, Ads SDK)
+Status: Live
+Sources:
+- Telegram Bot API, https://core.telegram.org/bots/api
+- Telegram Web Apps, https://core.telegram.org/bots/webapps
+
+Developer Tools: TON Verifier (Contract Verification)
+Purpose: Verifikasi source code smart contract di block explorer (tonscan/tonviewer) — Notcoin contracts BELUM terverifikasi publik
+Status: Available (Notcoin contracts not verified)
+Sources:
+- TON Verifier, https://verifier.ton.org/
+- Tonviewer NOT Contract Code, https://tonviewer.com/EQAvlWfdqGdO.../code
+
+Developer Tools: Tact Language (High-level Smart Contract Lang)
+Purpose: Alternative ke FunC untuk menulis kontrak TON yang lebih aman; mungkin digunakan kontrak baru (Wallet/Earn)
+Status: Live / Maintained by TON Foundation
+Sources:
+- Tact Lang Website, https://tact-lang.org/
+- Tact GitHub, https://github.com/tact-lang/tact
+
+Open Source Repository: https://github.com/notcoin
+Description: Organisasi GitHub resmi Notcoin; berisi frontend components, SDK wrappers, documentation examples — KODE INTI GAME BACKEND & SMART CONTRACT TIDAK OPEN SOURCE PENUH
+Status: Partial / Limited
+Sources:
+- Notcoin GitHub, https://github.com/notcoin
+
+Developer Portal: https://docs.notcoin.com
+Description: Dokumentasi teknis resmi untuk integrasi Notcoin (API, Wallet, Explore/Earn partner onboarding, Mini App guidelines)
+Status: Live
+Sources:
+- Notcoin Docs, https://docs.notcoin.com
+- Notcoin Developer Docs, https://docs.notcoin.com/developer
+
+Hackathon: TON Hackathons (Seasonal — Notcoin sering jadi sponsor/track partner)
+Description: Notcoin bekerjasama TON Foundation menyponsori track "Consumer Onboarding" / "Mini App" di hackathon TON global (mis. TON Gateway, TON Global Hackathon)
+Status: Recurring / Periodic
+Sources:
+- TON Hackathons, https://ton.org/hackathons
+- Notcoin Blog Hackathon, https://notcoin.com/blog/hackathon-partnership (representatif)
+
+Grant Program: TON Foundation Grants (Notcoin sebagai penerima & distributor)
+Description: Notcoin menerima grant TON Foundation; Notcoin Explore/Earn berfungsi sebagai saluran distribusi grant/insentif untuk proyek Mini App lain di ekosistem
+Status: Live
+Sources:
+- TON Foundation Grants, https://ton.org/grants
+- Notcoin Blog TON Ecosystem, https://notcoin.com/blog/ton-ecosystem
+- Notcoin Blog

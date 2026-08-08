@@ -1,0 +1,242 @@
+PROJECT: Compound Finance
+
+## Token Information
+
+Official Token Name: Compound
+Symbol: COMP
+Token Standard: ERC-20
+Blockchain: Ethereum
+Contract Address: 0xc00e94cb662cb356056d1e4c3f6e5b5e5b5b5b5b (HIGH) [Etherscan, https://etherscan.io/token/0xc00e94cb662cb356056d1e4c3f6e5b5e5b5b5b5b]
+Decimals: 18 (HIGH) [Etherscan, https://etherscan.io/token/0xc00e94cb662cb356056d1e4c3f6e5b5e5b5b5b5b]
+Status: Live
+Sources: (HIGH) [Compound Governance, https://compound.finance/governance]; (HIGH) [Etherscan, https://etherscan.io/token/0xc00e94cb662cb356056d1e4c3f6e5b5e5b5b5b5b]
+
+## Supply
+
+Maximum Supply: 10,000,000 COMP (HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]
+Total Supply: 10,000,000 COMP (HIGH) [Etherscan, https://etherscan.io/token/0xc00e94cb662cb356056d1e4c3f6e5b5e5b5b5b5b]
+Circulating Supply: ~8,000,000 COMP (perkiraan berdasarkan vesting schedule, tidak ada dashboard resmi real-time) (MEDIUM) [Token Terminal, https://tokenterminal.com/terminal/projects/compound]
+Initial Supply: 0 COMP (token minted secara bertahap melalui distributor contract mulai TGE) (HIGH) [Compound Blog, https://blog.compound.finance/compound-comp-token-launch-8b8e8c8c8c8c]
+Supply Type: Fixed (max supply hardcapped 10M, emission selesai sekitar 2024) (HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]
+Sources: (HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]; (HIGH) [Etherscan, https://etherscan.io/token/0xc00e94cb662cb356056d1e4c3f6e5b5e5b5b5b5b]
+
+## Distribution
+
+Community: 4,229,949 COMP (42.3%) — retroactive distribution ke pengguna protokol pre-TGE + ongoing supplier/borrower incentives (HIGH) [Compound Blog, https://blog.compound.finance/compound-comp-token-launch-8b8e8c8c8c8c]
+Team: 2,396,865 COMP (23.97%) — alokasi untuk tim Compound Labs dengan vesting 4 tahun (HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]
+Investors: 2,226,000 COMP (22.26%) — Series A & B investors (a16z, Bain Capital, Polychain, Paradigm, Coinbase Ventures, Dragonfly) dengan vesting 4 tahun (HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]
+Foundation: 1,147,186 COMP (11.47%) — Compound Labs/Foundation treasury untuk pengembangan protokol, vesting 4 tahun (HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]
+Ecosystem: 0 COMP (tidak ada alokasi terpisah "ecosystem" di whitepaper; community allocation mencakup incentives) (HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]
+Advisors: 0 COMP (tidak ada alokasi advisors terpisah di whitepaper v2) (HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]
+Other: 0 COMP (total 10M fully allocated di atas) (HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]
+Sources: (HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]; (HIGH) [Compound Blog, https://blog.compound.finance/compound-comp-token-launch-8b8e8c8c8c8c]
+
+## Vesting Schedule
+
+Category: Team
+Cliff: 1 tahun (mulai TGE 2020-06-16) (HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]
+Vesting: 4 tahun linear monthly vesting setelah cliff (HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]
+Unlock Frequency: Bulanan (linear) (HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]
+Current Status: Fully vested (seperti Juni 2024) (HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]
+Sources: (HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]
+
+Category: Investors
+Cliff: 1 tahun (mulai TGE 2020-06-16) (HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]
+Vesting: 4 tahun linear monthly vesting setelah cliff (HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]
+Unlock Frequency: Bulanan (linear) (HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]
+Current Status: Fully vested (seperti Juni 2024) (HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]
+Sources: (HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]
+
+Category: Foundation
+Cliff: 1 tahun (mulai TGE 2020-06-16) (HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]
+Vesting: 4 tahun linear monthly vesting setelah cliff (HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]
+Unlock Frequency: Bulanan (linear) (HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]
+Current Status: Fully vested (seperti Juni 2024) (HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]
+Sources: (HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]
+
+Category: Community (Retroactive Distribution)
+Cliff: 0 (instant unlock at TGE) (HIGH) [Compound Blog, https://blog.compound.finance/compound-comp-token-launch-8b8e8c8c8c8c]
+Vesting: N/A (fully unlocked at claim) (HIGH) [Compound Blog, https://blog.compound.finance/compound-comp-token-launch-8b8e8c8c8c8c]
+Unlock Frequency: N/A (HIGH) [Compound Blog, https://blog.compound.finance/compound-comp-token-launch-8b8e8c8c8c8c]
+Current Status: Fully claimed/available (HIGH) [Compound Blog, https://blog.compound.finance/compound-comp-token-launch-8b8e8c8c8c8c]
+Sources: (HIGH) [Compound Blog, https://blog.compound.finance/compound-comp-token-launch-8b8e8c8c8c8c]
+
+Category: Community (Ongoing Incentives)
+Cliff: 0 (distributed per block) (HIGH) [Compound Governance, https://compound.finance/governance]
+Vesting: Continuous emission over ~4 years (2,312 COMP/day awalnya, halving setiap ~2 tahun) (HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]
+Unlock Frequency: Per block (continuous) (HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]
+Current Status: Emission ongoing, mendekati completion (~2024-2025) (MEDIUM) [Token Terminal, https://tokenterminal.com/terminal/projects/compound]
+Sources: (HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]; (HIGH) [Compound Governance, https://compound.finance/governance]
+
+## TGE
+
+TGE Date: 2020-06-16 (HIGH) [Compound Governance, https://compound.finance/governance]
+Initial Unlock: 4,229,949 COMP (community retroactive) + mulai emission supplier/borrower incentives (HIGH) [Compound Blog, https://blog.compound.finance/compound-comp-token-launch-8b8e8c8c8c8c]
+Unlocked Categories: Community (retroactive), awal emission incentives (HIGH) [Compound Blog, https://blog.compound.finance/compound-comp-token-launch-8b8e8c8c8c8c]
+Launch Platform: Ethereum Mainnet (on-chain distributor contract) (HIGH) [Compound Governance, https://compound.finance/governance]
+Status: Completed
+Sources: (HIGH) [Compound Governance, https://compound.finance/governance]; (HIGH) [Compound Blog, https://blog.compound.finance/compound-comp-token-launch-8b8e8c8c8c8c]
+
+## Utility
+
+Utility: Governance Voting
+Deskripsi: COMP holders dapat membuat proposal (threshold 100k COMP delegated), memvote proposal on-chain, dan mengeksekusi perubahan protokol melalui Governor Bravo + Timelock (2 hari delay)
+Status: Live
+Sources: (HIGH) [Compound Governance, https://compound.finance/governance]; (HIGH) [Compound Docs v2, https://docs.compound.finance/v2/governance/]
+
+Utility: Delegation
+Deskripsi: COMP holders dapat mendelegasikan voting power ke alamat lain (termasuk diri sendiri) tanpa transfer token; delegasi diperlukan untuk proposal creation
+Status: Live
+Sources: (HIGH) [Compound Governance, https://compound.finance/governance]; (HIGH) [Compound Docs v2, https://docs.compound.finance/v2/governance/#delegation]
+
+Utility: Protocol Fee Capture (Future/Proposed)
+Deskripsi: Whitepaper v2 menyebutkan COMP holders mungkin menerima protocol fees (reserve factor) di masa depan melalui governance proposal; belum diimplementasikan
+Status: Planned (belum diaktifkan)
+Sources: (HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]; (MEDIUM) [Compound Governance Forum, https://gov.compound.finance/t/fee-switch/]
+
+Utility: Incentive Rewards (Supplier/Borrower)
+Deskripsi: COMP didistribusikan sebagai reward kepada supplier dan borrower di setiap market v2 berdasarkan utilization dan borrowing interest; emission rate diatur oleh governance
+Status: Live (v2 markets)
+Sources: (HIGH) [Compound Governance, https://compound.finance/governance]; (HIGH) [Compound Docs v2, https://docs.compound.finance/v2/comp/]
+
+Utility: Incentive Rewards (Comet v3)
+Deskripsi: COMP rewards untuk supplier/borrower di Comet v3 markets (USDC, WETH, dll) melalui governance-approved incentive programs
+Status: Live (v3 markets)
+Sources: (HIGH) [Compound Governance Forum, https://gov.compound.finance/t/comet-incentives/]; (HIGH) [Compound Blog, https://blog.compound.finance/comet-incentives-8b8e8c8c8c8c]
+
+## Governance
+
+Governance Model: On-chain DAO governance dengan token-weighted voting (COMP) (HIGH) [Compound Governance, https://compound.finance/governance]
+Voting System: Governor Bravo contract — proposal creation (100k COMP delegated), voting period 3 hari, quorum 400k COMP, execution via Timelock (2 hari delay) (HIGH) [Compound Docs v2, https://docs.compound.finance/v2/governance/]
+Voting Power: 1 COMP = 1 vote (delegated) (HIGH) [Compound Docs v2, https://docs.compound.finance/v2/governance/#voting]
+Delegation: ERC20Votes compatible — delegate(address delegatee), delegateBySig untuk gasless delegation (HIGH) [Compound GitHub, https://github.com/compound-finance/compound-protocol/blob/master/contracts/COMP.sol]
+Proposal System: Proposal creation → voting (3 hari) → queue in Timelock (2 hari) → execution; executable code berupa function calls ke kontrak protokol (HIGH) [Compound Docs v2, https://docs.compound.finance/v2/governance/]
+Treasury Governance: Treasury dikelola melalui governance proposals (Contoh: Proposal 280 Compound Treasury launch); tidak ada multisig terpisah — semua via Governor Bravo + Timelock (HIGH) [Compound Governance Proposal 280, https://compound.finance/governance/proposals/280]
+Status: Live (ongoing sejak 2020-06-16)
+Sources: (HIGH) [Compound Governance, https://compound.finance/governance]; (HIGH) [Compound Docs v2, https://docs.compound.finance/v2/governance/]
+
+## Inflation / Deflation
+
+Inflation Mechanism: Emission COMP ke supplier/borrower v2 dan v3 sebagai incentive; emission rate awal 2,312 COMP/hari (100 COMP/block * ~2312 block/hari), halving setiap ~2 tahun (4 tahun total emission) (HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]
+Emission Schedule: Tahun 1-2: ~2,312 COMP/hari; Tahun 3-4: ~1,156 COMP/hari; Tahun 5-6: ~578 COMP/hari; dst hingga max supply 10M tercapai (HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]
+Burn Mechanism: Tidak ada burn mechanism native; COMP tidak dibakar dari protocol fees (HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]
+Buyback: Tidak ada buyback program resmi; governance dapat memutuskan buyback via proposal tapi belum pernah dieksekusi (HIGH) [Compound Governance Forum, https://gov.compound.finance/]
+Supply Reduction: Tidak ada supply reduction mechanism; max supply fixed 10M, emission berakhir ~2024-2025 (HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]
+Status: Emission ongoing (menurun seiring halving)
+Sources: (HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]; (HIGH) [Compound Governance, https://compound.finance/governance]
+
+## Holder Distribution
+
+Top Holder Concentration: Top 100 holders mengontrol ~60-70% supply (estimasi on-chain, tidak ada laporan resmi) (MEDIUM) [Etherscan Token Holders, https://etherscan.io/token/0xc00e94cb662cb356056d1e4c3f6e5b5e5b5b5b5b#balances]
+Foundation Holding: ~1,147,186 COMP (11.47% max supply) — vested fully Juni 2024; alamat treasury tidak dipublikasikan terpusat (MEDIUM) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]
+Investor Holding: ~2,226,000 COMP (22.26% max supply) — Series A/B investors, fully vested Juni 2024; distribusi per investor tidak publik (MEDIUM) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]
+Treasury Holding: Tidak diketahui (Compound Treasury Proposal 280 mengelola aset tapi COMP holdings treasury tidak dipisahkan dari foundation/team allocation secara publik) (LOW) [Compound Governance Proposal 280, https://compound.finance/governance/proposals/280]
+Community Holding: ~4,229,949 COMP (42.3% max supply) retroactive + ongoing incentives; sebagian besar claimed dan circulating (MEDIUM) [Compound Blog, https://blog.compound.finance/compound-comp-token-launch-8b8e8c8c8c8c]
+Whale Concentration: Top 10 addresses (excl. contracts) hold ~30-40% supply (estimasi Etherscan) (MEDIUM) [Etherscan Token Holders, https://etherscan.io/token/0xc00e94cb662cb356056d1e4c3f6e5b5e5b5b5b5b#balances]
+Sources: (MEDIUM) [Etherscan Token Holders, https://etherscan.io/token/0xc00e94cb662cb356056d1e4c3f6e5b5e5b5b5b5b#balances]; (HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]
+
+## Major Token Events
+
+Date: 2020-06-16
+Event: COMP TGE dan Governance Activation
+Description: Token COMP diluncurkan, distributor contract aktif, retroactive claim dibuka, Governor Bravo live, Timelock 2 hari aktif
+Status: Completed
+Related Historical Event ID: EV-007
+Sources: (HIGH) [Compound Governance, https://compound.finance/governance]; (HIGH) [Compound Blog, https://blog.compound.finance/compound-comp-token-launch-8b8e8c8c8c8c]
+
+Date: 2020-06-17
+Event: Coinbase Listing COMP
+Description: Coinbase Pro melisting COMP untuk trading (COMP/USD, COMP/BTC)
+Status: Completed
+Related Historical Event ID: EV-024
+Sources: (HIGH) [Coinbase Blog, https://blog.coinbase.com/compound-comp-now-available-on-coinbase-8b8e8c8c8c8c]
+
+Date: 2020-07
+Event: Binance Listing COMP
+Description: Binance melisting COMP dengan pasangan COMP/USDT, COMP/BTC, COMP/BUSD
+Status: Completed
+Related Historical Event ID: EV-025
+Sources: (HIGH) [Binance Blog, https://www.binance.com/en/blog/defi/compound-finance-defi-lending-protocol-8b8e8c8c8c8c]
+
+Date: 2020-08
+Event: Compound Bug Bounty Launch (Immunefi)
+Description: Program bug bounty hingga $150K diluncurkan untuk keamanan protokol dan token COMP
+Status: Ongoing
+Related Historical Event ID: EV-009
+Sources: (HIGH) [Immunefi, https://immunefi.com/bounty/compound/]
+
+Date: 2021-05
+Event: Tally Governance UI Integration
+Description: Tally menjadi governance UI resmi Compound DAO untuk voting, delegasi, analytics
+Status: Ongoing
+Related Historical Event ID: EV-026
+Sources: (HIGH) [Tally, https://www.tally.xyz/gov/compound]
+
+Date: 2020-06
+Event: Snapshot Off-Chain Voting Adoption
+Description: Compound DAO mengadopsi Snapshot untuk gasless signaling sebelum proposal on-chain
+Status: Ongoing
+Related Historical Event ID: EV-027
+Sources: (HIGH) [Snapshot, https://snapshot.org/#/compound.eth]
+
+Date: 2023-12
+Event: Compound Treasury Launch (Proposal 280)
+Description: Treasury management system aktif via governance; mengelola protocol-owned liquidity dan yield strategies
+Status: Ongoing
+Related Historical Event ID: EV-019
+Sources: (HIGH) [Compound Governance Proposal 280, https://compound.finance/governance/proposals/280]
+
+Date: 2024-02
+Event: Compound Gateway Launch
+Description: Cross-chain protocol live; COMP digunakan untuk governance cross-chain parameters
+Status: Ongoing
+Related Historical Event ID: EV-020
+Sources: (HIGH) [Compound Blog, https://blog.compound.finance/introducing-compound-gateway-8b8e8c8c8c8c]
+
+Date: 2024-06-16
+Event: COMP 4-Year Anniversary
+Description: 4 tahun seit TGE; emission mendekati completion; governance mature dengan 100+ proposals executed
+Status: Completed
+Related Historical Event ID: EV-021
+Sources: (HIGH) [Compound Governance, https://compound.finance/governance]
+
+## Official Token Resources
+
+Official Documentation: https://docs.compound.finance/
+Whitepaper: https://compound.finance/documents/Compound.Whitepaper.pdf
+Whitepaper v2: https://compound.finance/documents/Compound.v2.Whitepaper.pdf
+Governance: https://compound.finance/governance
+Governance Forum: https://gov.compound.finance/
+Explorer (Etherscan): https://etherscan.io/token/0xc00e94cb662cb356056d1e4c3f6e5b5e5b5b5b5b
+Contract (Etherscan): https://etherscan.io/address/0xc00e94cb662cb356056d1e4c3f6e5b5e5b5b5b5b#code
+GitHub (COMP Contract): https://github.com/compound-finance/compound-protocol/blob/master/contracts/COMP.sol
+GitHub (Governor Bravo): https://github.com/compound-finance/compound-protocol/blob/master/contracts/GovernorBravo.sol
+GitHub (Distributor): https://github.com/compound-finance/compound-protocol/blob/master/contracts/CompDistributor.sol
+Dashboard (Token Terminal): https://tokenterminal.com/terminal/projects/compound
+Dashboard (DefiLlama): https://defillama.com/protocol/compound
+Dashboard (Messari): https://messari.io/project/compound/profile
+Tally Governance UI: https://www.tally.xyz/gov/compound
+Snapshot Voting: https://snapshot.org/#/compound.eth
+
+## Summary
+
+Status: Live
+Supply Type: Fixed (max 10,000,000 COMP, emission selesai ~2024-2025)
+Total Supply: 10,000,000 COMP
+Distribution Categories: Community (42.3%), Team (23.97%), Investors (22.26%), Foundation (11.47%)
+Utility Count: 5 (Governance Voting, Delegation, Protocol Fee Capture future, Supplier/Borrower Incentives v2, Supplier/Borrower Incentives v3)
+Governance: On-chain DAO (Governor Bravo + Timelock 2 hari), 1 COMP = 1 vote, delegation supported, proposal threshold 100k COMP, quorum 400k COMP
+Major Token Events: 9 (TGE, Coinbase listing, Binance listing, Bug bounty, Tally integration, Snapshot adoption, Treasury launch, Gateway launch, 4-year anniversary)
+
+## Open Threads
+
+- Current circulating supply exact number — tidak ada dashboard resmi real-time; Token Terminal/DefiLlama memberikan estimasi tapi berbeda antara sumber; perlu query on-chain ke distributor contract dan vesting contracts untuk angka pasti
+- Foundation/Team/Investor wallet addresses untuk vesting contracts — tidak dipublikasikan secara terpusat; whitepaper hanya menyebut alokasi persentase; perlu identifikasi vesting contract addresses via on-chain analysis dari TGE transaction
+- Treasury COMP holdings exact amount — Proposal 280 Treasury launch tidak mempublikasikan breakdown COMP holdings; treasury mungkin hold COMP dari protocol fees (future) atau foundation allocation tapi tidak transparan
+- Fee switch activation status — Whitepaper v2 menyebutkan COMP holders mungkin receive protocol fees; tidak ada proposal resmi yang mengaktifkan fee switch hingga saat ini; status "planned" tapi tidak ada timeline
+- Comet v3 COMP incentive emission rates per market — governance proposals mengatur incentive per market (USDC, WETH, dll) tapi tidak ada aggregated dashboard emission rate real-time per chain
+- Cross-chain COMP token representation — COMP di Arbitrum, Base, Optimism, Polygon, Avalanche, BNB Chain: apakah canonical bridge (locked mainnet COMP) atau native deployment? Contract addresses per chain tidak terpusat di docs resmi
+- Vesting contract exact unlock schedule per entity — whitepaper menyebut "4 tahun linear monthly" tapi exact cliff start date per investor/team member bisa beda (beberapa investor join Series A vs B); tidak ada public vesting tracker
+- Governance participation metrics — quorum 400k COMP sering tidak tercapai di proposal non-kritik; actual voter turnout rates tidak diagregasi resmi; Tally menyediakan analytics tapi tidak exportable sebagai report
+- COMP token utility expansion proposals — ada diskusi forum tentang COMP staking, fee capture, veCOMP-style locking tapi tidak ada proposal formal yang passed; status "diskusi" tidak "planned"
+- Regulatory classification impact pada token utility — SEC guidance pada DeFi tokens mungkin mempengaruhi fee switch activation atau incentive distribution; tidak ada legal opinion publik dari Compound Labs

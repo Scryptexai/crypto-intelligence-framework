@@ -55,6 +55,22 @@ DECISION_PATTERN_SECTIONS = {
 
 _header_alt = "|".join(re.escape(h) for h in SECTION_HEADERS)
 
+# Same markdown-tolerance fix as extract_knowledge.py's _normalise_headers -- see that module's
+# docstring for the full rationale. Includes the trailing recap headers that aren't parsed as
+# item sections but still have to lose their markup so they can't break the phase boundary.
+_ALL_INTERNAL_HEADERS = SECTION_HEADERS + ["Behavioral Summary", "Open Threads"]
+_internal_header_alt = "|".join(re.escape(h) for h in _ALL_INTERNAL_HEADERS)
+_HEADER_MARKUP_RE = re.compile(
+    rf"(?im)^[ \t]*(?:#{{1,6}}[ \t]*)?\*{{0,2}}({_internal_header_alt})\*{{0,2}}[ \t]*:?[ \t]*$"
+)
+
+
+def _normalise_headers(text):
+    """Strip `## `/`### `/`**...**` decoration off this phase's internal section headers.
+    The model adds it routinely despite the prompt asking for bare text; left in place it both
+    hides the headers from _sections() and truncates the phase body at the boundary lookahead."""
+    return _HEADER_MARKUP_RE.sub(r"\1", text)
+
 
 def _project_name(text):
     m = re.search(r"^#\s+(.+?)(?:\s+—|\s+-\s|$)", text, re.M)
@@ -77,7 +93,11 @@ def _sections(body):
 
 
 def parse_behavior(text, project_name):
-    m = re.search(r"^## Behavioral Intelligence\n(.*?)(?=\n## )", text, re.S | re.M)
+    text = _normalise_headers(text)
+    # Boundary pinned to the phase that actually follows Behavioral Intelligence (Knowledge
+    # Extraction), or end of file -- not a bare `\n## ` that any internal header could trip.
+    m = re.search(r"^## Behavioral Intelligence\n(.*?)(?=\n## Knowledge Extraction|\Z)",
+                   text, re.S | re.M)
     body = m.group(1) if m else ""
     sections = _sections(body)
 

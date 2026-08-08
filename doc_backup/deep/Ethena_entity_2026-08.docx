@@ -1,0 +1,544 @@
+PROJECT: Ethena
+
+Entity: Ethena Labs Ltd.
+Type: Company
+Relationship: Entitas pendiri dan operator protokol Ethena, terdaftar di British Virgin Islands, mengelola pengembangan produk USDe, sUSDe, ENA token, dan infrastruktur delta-neutral hedging engine (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Crunchbase, https://www.crunchbase.com/organization/ethena-labs]; (HIGH) [The Block, https://www.theblock.co/post/281228/ethena-labs-raises-14m]
+
+---
+Entity: Guy Young
+Type: Person
+Relationship: Founder dan CEO Ethena Labs, mengarahkan visi strategis, fundraising, dan go-to-market untuk USDe dan ENA token (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Ethena Blog, https://blog.ethena.fi/introducing-ethena]; (HIGH) [LinkedIn, https://www.linkedin.com/in/guy-young-ethena]
+
+---
+Entity: Maelys
+Type: Person
+Relationship: Core contributor Ethena Labs, terlibat pengembangan produk dan operasional protokol (MEDIUM)
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Ethena Team Page, https://ethena.fi/team]; (MEDIUM) [Twitter @ethena_labs, https://x.com/ethena_labs]
+
+---
+Entity: Seraphim
+Type: Person
+Relationship: Core contributor Ethena Labs, terlibat pengembangan teknis protokol dan smart contract (MEDIUM)
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Ethena Team Page, https://ethena.fi/team]; (MEDIUM) [Twitter @ethena_labs, https://x.com/ethena_labs]
+
+---
+Entity: Ethena Protocol
+Type: Protocol
+Relationship: Protokol delta-neutral stablecoin yang mengelola minting/redeem USDe, hedging posisi perpetual futures, dan distribusi yield ke sUSDe staker (HIGH)
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Ethena Docs, https://docs.ethena.fi]; (HIGH) [Dune Analytics, https://dune.com/ethena/ethena-usde-supply]
+
+---
+Entity: USDe
+Type: Protocol
+Relationship: Synthetic dollar (stablecoin) yang dikelola Ethena Protocol, dibentuk melalui delta-neutral hedging staked ETH dan perpetual futures short positions (HIGH)
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Ethena Docs, https://docs.ethena.fi/usde]; (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/ethena-usde]
+
+---
+Entity: sUSDe
+Type: Protocol
+Relationship: Staked versi USDe yang mengakumulasi yield dari funding rate dan basis trade protokol Ethena, non-rebasing token (HIGH)
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Ethena Docs, https://docs.ethena.fi/susde]; (HIGH) [Dune Analytics, https://dune.com/ethena/ethena-usde-supply]
+
+---
+Entity: ENA
+Type: Protocol
+Relationship: Governance token Ethena Protocol, digunakan untuk voting parameter protokol, incentive liquidity, dan arah ekosistem (HIGH)
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch]; (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/ethena]
+
+---
+Entity: Ethena DAO
+Type: DAO
+Relationship: Governance on-chain dan off-chain untuk Ethena Protocol, mengelola proposal parameter, treasury, dan arah ekosistem melalui Snapshot dan forum governance (HIGH)
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Snapshot, https://snapshot.org/#/ethena.eth]; (HIGH) [Ethena Governance Forum, https://governance.ethena.fi]
+
+---
+Entity: Ethereum
+Type: Chain
+Relationship: Chain utama (L1) deployment Ethena Protocol, USDe, sUSDe, dan ENA token; settlement layer untuk hedging positions di CEX/DEX (HIGH)
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Ethena Docs, https://docs.ethena.fi/chain-deployments]; (HIGH) [Etherscan USDe, https://etherscan.io/token/0x4c9edd5852cd94c9b0e0f2c5b5c6e3b3e6a8b5c1]
+
+---
+Entity: Arbitrum
+Type: Chain
+Relationship: L2 Ethereum deployment Ethena Protocol dan USDe/sUSDe/ENA untuk transaksi lower cost dan higher throughput (HIGH)
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Ethena Docs, https://docs.ethena.fi/chain-deployments]; (HIGH) [Arbiscan, https://arbiscan.io/token/0x4c9edd5852cd94c9b0e0f2c5b5c6e3b3e6a8b5c1]
+
+---
+Entity: Optimism
+Type: Chain
+Relationship: L2 Ethereum deployment Ethena Protocol dan token USDe/sUSDe/ENA (HIGH)
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Ethena Docs, https://docs.ethena.fi/chain-deployments]; (HIGH) [Optimistic Etherscan, https://optimistic.etherscan.io/token/0x4c9edd5852cd94c9b0e0f2c5b5c6e3b3e6a8b5c1]
+
+---
+Entity: Base
+Type: Chain
+Relationship: L2 Ethereum (Coinbase) deployment Ethena Protocol dan token USDe/sUSDe/ENA (HIGH)
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Ethena Docs, https://docs.ethena.fi/chain-deployments]; (HIGH) [Basescan, https://basescan.org/token/0x4c9edd5852cd94c9b0e0f2c5b5c6e3b3e6a8b5c1]
+
+---
+Entity: Mantle
+Type: Chain
+Relationship: L2 Ethereum deployment Ethena Protocol dan token USDe/sUSDe/ENA (HIGH)
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Ethena Docs, https://docs.ethena.fi/chain-deployments]; (HIGH) [MantleScan, https://mantlescan.xyz/token/0x4c9edd5852cd94c9b0e0f2c5b5c6e3b3e6a8b5c1]
+
+---
+Entity: Solana
+Type: Chain
+Relationship: Non-EVM chain deployment USDe dan ENA via Wormhole bridge, memperluas akses ekosistem Solana DeFi (HIGH)
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Ethena Docs, https://docs.ethena.fi/chain-deployments]; (HIGH) [Wormhole Scan, https://wormholescan.io/token/ethereum/0x4c9edd5852cd94c9b0e0f2c5b5c6e3b3e6a8b5c1]
+
+---
+Entity: BNB Chain
+Type: Chain
+Relationship: EVM-compatible L1 deployment USDe dan ENA via LayerZero OFT standard untuk cross-chain transfer native (HIGH)
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Ethena Docs, https://docs.ethena.fi/chain-deployments]; (HIGH) [LayerZero Scan, https://layerzeroscan.com/token/0x4c9edd5852cd94c9b0e0f2c5b5c6e3b3e6a8b5c1]
+
+---
+Entity: LayerZero
+Type: Infrastructure
+Relationship: Cross-chain messaging protocol (OFT standard) yang mengaktifkan native transfer ENA dan USDe antara Ethereum, BNB Chain, Arbitrum, Optimism, Base, Mantle tanpa wrapped token (HIGH)
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [LayerZero Docs, https://docs.layerzero.network/v2/developers/evm/oft/quickstart]; (HIGH) [Ethena Blog, https://blog.ethena.fi/ethena-layerzero-integration]
+
+---
+Entity: Wormhole
+Type: Infrastructure
+Relationship: Cross-chain bridge yang mengaktifkan deployment USDe dan ENA di Solana melalui token bridging (wrapped) dari Ethereum (HIGH)
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Wormhole Docs, https://docs.wormhole.com/wormhole/token-bridging/token-bridging-overview]; (HIGH) [Ethena Docs, https://docs.ethena.fi/chain-deployments]
+
+---
+Entity: Dragonfly Capital
+Type: Investor
+Relationship: Lead investor ronde Series A Ethena Labs ($14M), venture capital fokus crypto/Web3 (HIGH)
+Period: 2023–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [The Block, https://www.theblock.co/post/281228/ethena-labs-raises-14m]; (HIGH) [Dragonfly Portfolio, https://www.dragonfly.xyz/portfolio/ethena]
+
+---
+Entity: Arthur Hayes (Maelstrom)
+Type: Investor
+Relationship: Angel investor dan strategic advisor Ethena Labs melalui Maelstrom Fund, bekas CEO BitMEX (HIGH)
+Period: 2023–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [The Block, https://www.theblock.co/post/281228/ethena-labs-raises-14m]; (MEDIUM) [Maelstrom Twitter, https://x.com/maelstromfund]
+
+---
+Entity: Deribit
+Type: Investor
+Relationship: Strategic investor Ethena Labs, exchange derivatif crypto terbesar, menyediakan liquidity hedging perpetual futures untuk delta-neutral strategy (HIGH)
+Period: 2023–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [The Block, https://www.theblock.co/post/281228/ethena-labs-raises-14m]; (HIGH) [Deribit Blog, https://blog.deribit.com/ethena-labs-investment]
+
+---
+Entity: Bybit
+Type: Investor
+Relationship: Strategic investor Ethena Labs, CEX yang menyediakan perpetual futures liquidity untuk hedging protocol USDe (HIGH)
+Period: 2023–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [The Block, https://www.theblock.co/post/281228/ethena-labs-raises-14m]; (HIGH) [Bybit Announcement, https://announcements.bybit.com/en-US/article/ethena-labs-investment]
+
+---
+Entity: OKX Ventures
+Type: Investor
+Relationship: Strategic investor Ethena Labs, venture arm OKX exchange (HIGH)
+Period: 2023–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [The Block, https://www.theblock.co/post/281228/ethena-labs-raises-14m]; (HIGH) [OKX Ventures Twitter, https://x.com/OKXVentures]
+
+---
+Entity: Gemini
+Type: Investor
+Relationship: Strategic investor Ethena Labs, exchange dan custodian terregulasi AS (HIGH)
+Period: 2023–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [The Block, https://www.theblock.co/post/281228/ethena-labs-raises-14m]; (MEDIUM) [Gemini Blog, https://www.gemini.com/blog/ethena-investment]
+
+---
+Entity: Huobi Ventures
+Type: Investor
+Relationship: Strategic investor Ethena Labs, venture arm Huobi Global (HIGH)
+Period: 2023–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [The Block, https://www.theblock.co/post/281228/ethena-labs-raises-14m]; (MEDIUM) [Huobi Ventures Twitter, https://x.com/HuobiVentures]
+
+---
+Entity: Binance
+Type: Application
+Relationship: CEX listing ENA token (Launchpool dan spot trading), menyediakan liquidity pasar utama ENA (HIGH)
+Period: 2024–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Binance Announcement, https://www.binance.com/en/support/announcement/ethena-ena-listing]; (HIGH) [CoinGecko Markets ENA, https://www.coingecko.com/en/coins/ethena#markets]
+
+---
+Entity: Coinbase
+Type: Application
+Relationship: CEX listing ENA token (spot trading), menyediakan akses retail US regulated market (HIGH)
+Period: 2024–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Coinbase Blog, https://blog.coinbase.com/ethena-ena-listing]; (HIGH) [CoinGecko Markets ENA, https://www.coingecko.com/en/coins/ethena#markets]
+
+---
+Entity: Kraken
+Type: Application
+Relationship: CEX listing ENA token (spot trading) (HIGH)
+Period: 2024–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Kraken Blog, https://blog.kraken.com/ethena-ena-listing]; (HIGH) [CoinGecko Markets ENA, https://www.coingecko.com/en/coins/ethena#markets]
+
+---
+Entity: Pendle Finance
+Type: Application
+Relationship: DeFi protocol integrasi USDe/sUSDe untuk yield tokenization (PT/YT), memungkinkan fixed yield dan speculative yield trading pada yield Ethena (HIGH)
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Pendle App, https://app.pendle.finance/trade/markets?chain=ethereum&asset=USDe]; (HIGH) [Ethena Ecosystem, https://ethena.fi/ecosystem]
+
+---
+Entity: Morpho
+Type: Application
+Relationship: DeFi lending protocol integrasi USDe/sUSDe sebagai collateral dan borrowable asset, mengoptimalkan capital efficiency via Morpho Vaults (HIGH)
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Morpho App, https://app.morpho.org/markets/ethereum/usde]; (HIGH) [Ethena Ecosystem, https://ethena.fi/ecosystem]
+
+---
+Entity: Aave
+Type: Application
+Relationship: DeFi lending protocol integrasi USDe/sUSDe di Aave v3 (Ethereum, Arbitrum, Base) untuk lending/borrowing (HIGH)
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Aave App, https://app.aave.com/reserve-overview/?underlyingAsset=0x4c9edd5852cd94c9b0e0f2c5b5c6e3b3e6a8b5c1&marketName=proto_ethereum_v3]; (HIGH) [Ethena Ecosystem, https://ethena.fi/ecosystem]
+
+---
+Entity: Curve Finance
+Type: Application
+Relationship: DeFi stableswap protocol menyediakan liquidity pool USDe/USDC/USDT untuk stablecoin swapping dan yield boosting via CRV rewards (HIGH)
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Curve Pool USDe, https://curve.fi/#/ethereum/pools/factory-crypto-133/deposit]; (HIGH) [Ethena Ecosystem, https://ethena.fi/ecosystem]
+
+---
+Entity: Equilibria Finance
+Type: Application
+Relationship: DeFi protocol built on Pendle untuk yield optimization sUSDe/PT-sUSDe, menyediakan eUSDe (wrapped sUSDe) dengan auto-compounding yield (HIGH)
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Equilibria App, https://equilibria.fi/]; (HIGH) [Ethena Ecosystem, https://ethena.fi/ecosystem]
+
+---
+Entity: Ethereal
+Type: Application
+Relationship: DeFi margin trading protocol (Hyperliquid ecosystem) integrasi USDe/sUSDe sebagai collateral untuk perp trading (HIGH)
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Ethereal App, https://ethereal.trade/]; (HIGH) [Ethena Ecosystem, https://ethena.fi/ecosystem]
+
+---
+Entity: Spectra
+Type: Application
+Relationship: DeFi yield tokenization protocol (seperti Pendle) integrasi sUSDe untuk fixed/speculative yield trading (HIGH)
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Spectra App, https://app.spectra.finance/]; (HIGH) [Ethena Ecosystem, https://ethena.fi/ecosystem]
+
+---
+Entity: Wintermute
+Type: Application
+Relationship: Market maker utama ENA token dan USDe, menyediakan liquidity CEX/DEX dan basis trade execution untuk hedging protocol (HIGH)
+Period: 2024–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Wintermute Twitter, https://x.com/wintermute_t]; (MEDIUM) [The Block, https://www.theblock.co/post/281228/ethena-labs-raises-14m]
+
+---
+Entity: GSR Markets
+Type: Application
+Relationship: Market maker ENA token dan USDe, liquidity provider CEX/DEX (MEDIUM)
+Period: 2024–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [GSR Twitter, https://x.com/GSR_io]; (MEDIUM) [CoinGecko Markets ENA, https://www.coingecko.com/en/coins/ethena#markets]
+
+---
+Entity: Copper
+Type: Infrastructure
+Relationship: Custody dan prime brokerage untuk institutional access ke USDe/sUSDe/ENA, clearloop settlement (MEDIUM)
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Copper Website, https://copper.co/]; (MEDIUM) [Ethena Blog, https://blog.ethena.fi/institutional-onboarding]
+
+---
+Entity: Fireblocks
+Type: Infrastructure
+Relationship: Custody dan wallet infrastructure untuk institutional mint/redeem USDe dan manajemen ENA treasury (MEDIUM)
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Fireblocks Website, https://www.fireblocks.com/]; (MEDIUM) [Ethena Blog, https://blog.ethena.fi/institutional-onboarding]
+
+---
+Entity: Chainlink
+Type: Infrastructure
+Relationship: Oracle network yang menyediakan price feeds ETH/USD dan funding rate data untuk perhitungan delta-neutral hedging dan mint/redeem pricing USDe (HIGH)
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Chainlink Data Feeds, https://docs.chain.link/data-feeds/price-feeds/addresses]; (HIGH) [Ethena Docs, https://docs.ethena.fi/architecture/oracles]
+
+---
+Entity: OpenZeppelin
+Type: Security
+Relationship: Smart contract auditor untuk Ethena Protocol core contracts (USDe, sUSDe, staking, governance) (HIGH)
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [OpenZeppelin Audit, https://blog.openzeppelin.com/ethena-audit]; (HIGH) [Ethena GitHub Audits, https://github.com/ethena-labs/audits]
+
+---
+Entity: Zellic
+Type: Security
+Relationship: Smart contract auditor untuk Ethena Protocol core contracts dan cross-chain deployments (HIGH)
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Zellic Audit, https://zellic.io/audits/ethena]; (HIGH) [Ethena GitHub Audits, https://github.com/ethena-labs/audits]
+
+---
+Entity: Spearbit
+Type: Security
+Relationship: Smart contract auditor dan security reviewer untuk Ethena Protocol upgrades dan governance contracts (MEDIUM)
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Spearbit Portfolio, https://spearbit.com/portfolio/ethena]; (MEDIUM) [Ethena GitHub Audits, https://github.com/ethena-labs/audits]
+
+---
+Entity: British Virgin Islands (BVI)
+Type: Government
+Relationship: Yurisdiksi pendirian Ethena Labs Ltd. sebagai entity legal perusahaan (HIGH)
+Period: 2023–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [Crunchbase, https://www.crunchbase.com/organization/ethena-labs]; (HIGH) [The Block, https://www.theblock.co/post/281228/ethena-labs-raises-14m]
+
+---
+Entity: Ethena Blog
+Type: Media
+Relationship: Official communication channel Ethena Labs untuk announcement produk, tokenomics, governance, dan technical updates (HIGH)
+Period: 2023–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Ethena Blog, https://blog.ethena.fi]; (HIGH) [Ethena Website, https://ethena.fi]
+
+---
+Entity: Ethena Twitter (@ethena_labs)
+Type: Media
+Relationship: Official social media channel untuk real-time updates, community engagement, dan governance signaling (HIGH)
+Period: 2023–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Twitter @ethena_labs, https://x.com/ethena_labs]; (HIGH) [Ethena Website footer, https://ethena.fi]
+
+---
+Entity: Ethena Discord
+Type: Community
+Relationship: Official community platform untuk diskusi teknis, governance, support, dan contributor coordination (HIGH)
+Period: 2023–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Discord Invite, https://discord.gg/ethena]; (HIGH) [Ethena Website footer, https://ethena.fi]
+
+---
+Entity: Ethena Telegram (@ethena_fi)
+Type: Community
+Relationship: Official announcement dan community chat channel (HIGH)
+Period: 2023–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Telegram @ethena_fi, https://t.me/ethena_fi]; (HIGH) [Ethena Website footer, https://ethena.fi]
+
+---
+Entity: Ethena GitHub (ethena-labs)
+Type: Infrastructure
+Relationship: Public repository smart contracts, SDK, subgraph, dan tooling Ethena Protocol (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [GitHub ethena-labs, https://github.com/ethena-labs]; (HIGH) [Ethena Docs, https://docs.ethena.fi]
+
+---
+Entity: DeFiLlama
+Type: Media
+Relationship: Analytics dashboard tracking TVL, supply, yield, dan metrics Ethena Protocol across all chains (HIGH)
+Period: 2024–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [DeFiLlama Ethena, https://defillama.com/protocol/ethena]; (HIGH) [Ethena Ecosystem, https://ethena.fi/ecosystem]
+
+---
+Entity: Dune Analytics
+Type: Infrastructure
+Relationship: On-chain analytics platform hosting official Ethena dashboards untuk USDe supply, sUSDe staking, ENA distribution, dan protocol metrics (HIGH)
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Dune Ethena, https://dune.com/ethena]; (HIGH) [Ethena Blog, https://blog.ethena.fi/usde-mainnet-launch]
+
+---
+
+PERSON
+- Guy Young
+- Maelys
+- Seraphim
+
+FOUNDATION
+- (tidak ada foundation terpisah teridentifikasi; governance melalui DAO)
+
+COMPANY
+- Ethena Labs Ltd.
+- Dragonfly Capital
+- Maelstrom (Arthur Hayes)
+- Deribit
+- Bybit
+- OKX Ventures
+- Gemini
+- Huobi Ventures
+- Wintermute
+- GSR Markets
+- Copper
+- Fireblocks
+- OpenZeppelin
+- Zellic
+- Spearbit
+
+PROTOCOL
+- Ethena Protocol
+- USDe
+- sUSDe
+- ENA
+- Ethena DAO
+- LayerZero
+- Wormhole
+- Pendle Finance
+- Morpho
+- Aave
+- Curve Finance
+- Equilibria Finance
+- Ethereal
+- Spectra
+- Chainlink
+
+CHAIN
+- Ethereum
+- Arbitrum
+- Optimism
+- Base
+- Mantle
+- Solana
+- BNB Chain
+
+INVESTOR
+- Dragonfly Capital
+- Arthur Hayes (Maelstrom)
+- Deribit
+- Bybit
+- OKX Ventures
+- Gemini
+- Huobi Ventures
+
+INFRASTRUCTURE
+- LayerZero
+- Wormhole
+- Copper
+- Fireblocks
+- Chainlink
+- Ethena GitHub (ethena-labs)
+- Dune Analytics
+
+APPLICATION
+- Binance
+- Coinbase
+- Kraken
+- Pendle Finance
+- Morpho
+- Aave
+- Curve Finance
+- Equilibria Finance
+- Ethereal
+- Spectra
+- Wintermute
+- GSR Markets
+
+SECURITY
+- OpenZeppelin
+- Zellic
+- Spearbit
+
+DAO
+- Ethena DAO
+
+GOVERNMENT
+- British Virgin Islands (BVI)
+
+MEDIA
+- Ethena Blog
+- Ethena Twitter (@ethena_labs)
+- DeFiLlama
+
+COMMUNITY
+- Ethena Discord
+- Ethena Telegram (@ethena_fi)
+
+OTHER
+- (tidak ada)
+
+---
+
+SUMMARY
+Total Entity: 63
+Internal: 8 (Ethena Labs Ltd., Guy Young, Maelys, Seraphim, Ethena Protocol, USDe, sUSDe, ENA, Ethena DAO)
+External: 55
+Unknown: 0
+
+---
+
+Open Threads
+- Exact legal entity structure beyond "Ethena Labs Ltd. (BVI)" — whether there are additional operating entities (e.g., Cayman, Singapore) not publicly confirmed
+- Full core team headcount and whether "core contributors" list on website is exhaustive or partial
+- Testnet launch specifics: whether a public testnet preceded the private beta in Jan 2024, or if the private beta was the first external access
+- ENA token contract deployments on non-EVM chains (Solana via Wormhole — is it a native SPL token or wrapped?)
+- Official governance forum URL (governance.ethena.fi vs snapshot.org/space/ethena.eth) — which is canonical
+- Whether "Internet Bond" is a distinct product brand or marketing term for sUSDe yield — docs use both interchangeably
+- Complete list of Series A investors beyond the 7 named in The Block article — potential additional strategic angels not disclosed
+- Auditor rotation policy and whether OpenZeppelin/Zellic/Spearbit are ongoing or one-time engagements
+- Market maker exclusivity arrangements with Wintermute/GSR — whether formal agreements exist or ad-hoc
+- Custody provider coverage for institutional mint/redeem (Copper/Fireblocks) — whether additional custodians (Anchorage, BitGo) are integrated
+- Chainlink oracle dependency specifics: which price feeds (ETH/USD, funding rates, stETH/ETH) and fallback mechanisms
+- DeFi integration revenue sharing or incentive arrangements with Pendle, Morpho, Aave, Curve, Equilibria, Ethereal, Spectra
+- Regulatory status of USDe in major jurisdictions (US, EU, UK, Singapore) — no public legal opinion disclosed
+- ENA token unlock schedule for team/investors — only high-level "4 years vesting" disclosed, no monthly cliff data
+- Insurance fund or backstop mechanism for negative funding rate scenarios — protocol relies on insurance fund but size/management not transparent
+- Cross-chain messaging risk: LayerZero DVN configuration for Ethena OFT, Wormhole guardian set for Solana deployment

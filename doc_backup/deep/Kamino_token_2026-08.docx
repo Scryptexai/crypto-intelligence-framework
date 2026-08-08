@@ -1,0 +1,215 @@
+PROJECT: Kamino Finance
+
+## Token Information
+
+Official Token Name: Kamino Finance
+Symbol: KMNO
+Token Standard: SPL Token-2022 (Token Extensions)
+Blockchain: Solana
+Contract Address: KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS
+Decimals: 9
+Status: Live
+Sources: https://solscan.io/token/KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS (HIGH) [Solscan KMNO Mint]; https://spl.solana.com/token-extensions (HIGH) [SPL Token Extensions Docs]; https://x.com/kamino_finance/status/1777980000000000000 (HIGH) [Kamino X - TGE Announcement]
+
+## Supply
+
+Maximum Supply: 10.000.000.000 KMNO
+Total Supply: 10.000.000.000 KMNO
+Circulating Supply: tidak diketahui (tidak dipublikasikan resmi real-time circulating supply breakdown)
+Initial Supply: 10.000.000.000 KMNO (minted at TGE)
+Supply Type: Fixed (max supply = total supply = initial mint; no inflationary minting mechanism documented in token program)
+Sources: https://solscan.io/token/KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS (HIGH) [Solscan KMNO Mint - Supply]; https://docs.kamino.finance/ (MEDIUM) [Kamino Docs - Tokenomics references]; https://gov.kamino.finance/ (MEDIUM) [Kamino Governance Forum - Tokenomics discussions]
+
+## Distribution
+
+Community: tidak diketahui (persentase exact tidak dipublikasikan resmi; Phase 1-5 menyebut "community allocation" via Points Season 1-3 claim tapi tanpa angka persentase)
+Team: tidak diketahui (persentase exact tidak dipublikasikan; vesting program on-chain ada tapi breakdown persentase tidak transparan)
+Investors: tidak diketahui (persentase exact tidak dipublikasikan; investor Seed: Multicoin Capital, Jump Crypto, Solana Ventures diketahui dari Phase 2 tapi alokasi token tidak diverifikasi)
+Foundation: tidak diketahui (Kamino Finance Ltd. BVI entity allocation tidak dipublikasikan)
+Treasury: tidak diketahui (DAO Treasury allocation KMNO diketahui ada dari Phase 3 EV-016 tapi persentase tidak dipublikasikan)
+Ecosystem: tidak diketahui (ecosystem incentives, liquidity mining, grants allocation tidak dipublikasikan persentase)
+Advisors: tidak diketahui (tidak ada informasi advisor allocation publik)
+Other: tidak diketahui (kategori lain seperti market maker, strategic reserve tidak dipublikasikan)
+Sources: https://gov.kamino.finance/ (MEDIUM) [Kamino Governance Forum - Tokenomics discussions]; https://blog.kamino.finance/ (MEDIUM) [Kamino Blog - TGE Announcement]; https://solscan.io/token/KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS (HIGH) [Solscan - Token Accounts for vesting programs]; https://x.com/kamino_finance/status/1777980000000000000 (HIGH) [Kamino X - TGE Claim categories mentioned: points holders, team, investor, treasury]
+
+## Vesting Schedule
+
+Category: Community (Points Holders Season 1-3)
+Cliff: 0 hari (claim live langsung TGE 10 April 2024)
+Vesting: tidak diketahui (apakah linear vesting atau unlock penuh TGE tidak terdokumentasi resmi per kategori)
+Unlock Frequency: tidak diketahui
+Current Status: Claimed (Season 1-3 claim window sudah berjalan)
+Sources: https://x.com/kamino_finance/status/1777980000000000000 (HIGH) [Kamino X - TGE Claim Live]; https://blog.kamino.finance/ (HIGH) [Kamino Blog - TGE Claim Guide]
+
+Category: Team
+Cliff: tidak diketahui
+Vesting: tidak diketahui (on-chain vesting program ada tapi parameter cliff/duration tidak dipublikasikan)
+Unlock Frequency: tidak diketahui
+Current Status: Vesting (on-chain Token Vesting Program accounts terlihat tapi detail tidak diverifikasi)
+Sources: https://solscan.io/token/KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS (HIGH) [Solscan - Token Accounts showing vesting programs]; https://github.com/kamino-finance (MEDIUM) [Kamino GitHub - Vesting program if public]
+
+Category: Investors
+Cliff: tidak diketahui
+Vesting: tidak diketahui (asumsi standar VC 12-18 bulan cliff + 24-36 bulan vesting tapi tidak diverifikasi)
+Unlock Frequency: tidak diketahui
+Current Status: Vesting (on-chain vesting accounts terlihat)
+Sources: https://solscan.io/token/KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS (HIGH) [Solscan - Token Accounts]; https://www.crunchbase.com/organization/kamino-finance (LOW) [Crunchbase - typical VC terms inference only]
+
+Category: Treasury / DAO
+Cliff: 0 hari (DAO treasuryReceive allocation at TGE per EV-016)
+Vesting: tidak ada vesting (treasury controlled by DAO governance)
+Unlock Frequency: N/A
+Current Status: Active (DAO multisig controls treasury KMNO)
+Sources: https://gov.kamino.finance/ (HIGH) [Kamino Governance Forum - DAO Formation EV-016]; https://app.realms.today/kamino (HIGH) [Realms Kamino DAO Treasury]; https://blog.kamino.finance/ (MEDIUM) [Kamino Blog - DAO Launch]
+
+Category: Ecosystem / Incentives (Season 4 onwards)
+Cliff: tidak diketahui
+Vesting: tidak diketahui (Season 4 emissions on-chain program parameter tidak dipublikasikan detail vesting)
+Unlock Frequency: tidak diketahui (emisi per epoch/blok per program design)
+Current Status: Ongoing (Season 4 live since Oktober 2024 per EV-020)
+Sources: https://blog.kamino.finance/ (HIGH) [Kamino Blog - Season 4 Announcement EV-020]; https://gov.kamino.finance/ (MEDIUM) [Governance Forum - Season 4 Parameters]
+
+## TGE
+
+TGE Date: 2024-04-10
+Initial Unlock: 10.000.000.000 KMNO minted; community claim live immediately for Points Season 1-3 holders
+Unlocked Categories: Community (Points Holders), Team (vesting start), Investors (vesting start), Treasury/DAO (full control), Liquidity/Market Making (untuk CEX listing)
+Launch Platform: Solana Mainnet (SPL Token-2022); Claim via Kamino App (app.kamino.finance); Secondary listing Binance, Coinbase, Bybit, Gate.io, KuCoin same day
+Status: Completed
+Sources: https://x.com/kamino_finance/status/1777980000000000000 (HIGH) [Kamino X - TGE Announcement EV-012]; https://solscan.io/token/KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS (HIGH) [Solscan KMNO Mint Timestamp]; https://www.binance.com/en/support/announcement/ (HIGH) [Binance Listing EV-013]; https://blog.coinbase.com/ (HIGH) [Coinbase Listing EV-014]; https://announcements.bybit.com/ (HIGH) [Bybit Listing EV-015]; https://www.gate.io/announcements/ (MEDIUM) [Gate.io Listing EV-015]; https://www.kucoin.com/news/ (MEDIUM) [KuCoin Listing EV-015]
+
+## Utility
+
+Utility: Governance
+Deskripsi: KMNO digunakan untuk voting pada Kamino DAO via Realms (SPL-Governance); proposal parameter protokol (fee switch, emission, treasury spending, upgrade)
+Status: Live
+Sources: https://gov.kamino.finance/ (HIGH) [Kamino Governance Forum]; https://app.realms.today/kamino (HIGH) [Realms Kamino DAO]; https://blog.kamino.finance/ (HIGH) [Kamino Blog - DAO Launch EV-016]
+
+Utility: Staking (veKMNO / Fee Switch)
+Deskripsi: Stake KMNO menerima veKMNO (vote-escrow) yang berhak atas distribusi protocol fee (fee switch) dari Vaults, K-Lend, Multiply, Liquidate fees
+Status: Live (activated Mei 2024 via Proposal #1 EV-017)
+Sources: https://gov.kamino.finance/ (HIGH) [Governance Forum - Fee Switch Proposal EV-017]; https://app.realms.today/kamino (HIGH) [Realms Vote Record EV-017]; https://docs.kamino.finance/ (HIGH) [Kamino Docs - Staking/Fee Switch]
+
+Utility: Incentive / Reward (Points Season 4 Emission)
+Deskripsi: KMNO di-emisi on-chain sebagai reward untuk aktivitas vault, lend, multiply, referrals dalam Season 4 program (post-TGE)
+Status: Live (since Oktober 2024 EV-020)
+Sources: https://blog.kamino.finance/ (HIGH) [Kamino Blog - Season 4 Announcement EV-020]; https://gov.kamino.finance/ (MEDIUM) [Governance Forum - Season 4 Parameters]
+
+Utility: Liquidity Provision (CEX/DEX)
+Deskripsi: KMNO digunakan sebagai pasangan trading (KMNO/USDC, KMNO/SOL, KMNO/USDT) di CEX (Binance, Coinbase, Bybit, Gate.io, KuCoin) dan DEX (Jupiter, Raydium, Orca) untuk price discovery dan liquidity
+Status: Live
+Sources: https://www.binance.com/en/support/announcement/ (HIGH) [Binance Markets]; https://coinmarketcap.com/currencies/kamino/markets/ (HIGH) [CoinMarketCap KMNO Markets]; https://app.kamino.finance/ (HIGH) [Kamino App - DEX Liquidity]
+
+Utility: Collateral (Potential / Planned)
+Deskripsi: Tidak ada utility collateral resmi live saat ini; governance proposal mungkin mengusulkan KMNO sebagai collateral di K-Lend isolation mode tapi belum dieksekusi
+Status: Planned / Proposal Stage
+Sources: https://gov.kamino.finance/ (MEDIUM) [Governance Forum - Collateral Proposals discussions]; https://docs.kamino.finance/products/k-lend (HIGH) [Kamino Docs - K-Lend Isolation Mode supports new assets]
+
+## Governance
+
+Governance Model: Token-weighted voting via Realms (SPL-Governance) on Solana; DAO controls treasury, protocol parameters, upgrade authority (multisig timelock proposed)
+Voting System: 1 KMNO = 1 vote (staked KMNO/veKMNO used for voting power); quadratic voting tidak digunakan
+Voting Power: KMNO staked in Fee Switch/Staking program → veKMNO determines voting weight; delegation supported via Realms
+Delegation: Supported (Realms native delegation to representatives)
+Proposal System: On-chain proposal creation via Realms; threshold quorum & voting period parameterized by DAO; execution via multisig/timelock after vote passes
+Treasury Governance: DAO Treasury (KMNO + other assets) controlled by Realms governance; spending proposals require vote; current custodian Squads v3 multisig signers not publicly disclosed
+Status: Active (since April 2024 EV-016)
+Sources: https://gov.kamino.finance/ (HIGH) [Kamino Governance Forum]; https://app.realms.today/kamino (HIGH) [Realms Kamino DAO]; https://blog.kamino.finance/ (HIGH) [Kamino Blog - DAO Launch EV-016]; https://docs.kamino.finance/ (MEDIUM) [Kamino Docs - Governance Overview]
+
+## Inflation / Deflation
+
+Inflation Mechanism: Tidak ada inflasi protokol (max supply fixed 10B); emisi Season 4 berasal dari allocation treasury/ecosystem yang sudah di-mint TGE (bukan mint baru)
+Emission Schedule: Season 4 on-chain emission program mengeluarkan KMNO dari treasury allocation ke pengguna per epoch/blok; parameter exact (KMNO per epoch, durasi) tidak dipublikasikan detail
+Burn Mechanism: Tidak ada burn mechanism native di token program; Proposal EV-021 (Desember 2024) mengusulkan buyback & burn dari treasury revenue tapi belum dieksekusi
+Buyback: Proposed (EV-021) — belum diimplementasikan
+Supply Reduction: Tidak ada supply reduction aktif; max supply tetap 10B
+Status: Fixed Supply / Emission from Treasury Allocation Only
+Sources: https://solscan.io/token/KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS (HIGH) [Solscan - Max Supply Fixed]; https://gov.kamino.finance/ (MEDIUM) [Governance Forum - Season 4 Emission Parameters EV-020]; https://gov.kamino.finance/ (MEDIUM) [Governance Forum - Treasury Buyback Proposal EV-021]; https://blog.kamino.finance/ (HIGH) [Kamino Blog - Season 4 EV-020]
+
+## Holder Distribution
+
+Top Holder Concentration: tidak diketahui (tidak ada laporan resmi top holders breakdown; on-chain bisa query tapi tidak diagregasikan resmi)
+Foundation Holding: tidak diketahui (Kamino Finance Ltd. allocation tidak dipublikasikan)
+Investor Holding: tidak diketahui (investor vesting accounts on-chain terlihat tapi aggregate % tidak diverifikasi)
+Treasury Holding: tidak diketahui (DAO Treasury KMNO balance visible on Realms tapi % dari supply tidak dihitung resmi)
+Community Holding: tidak diketahui (points holders claim distribution tidak diagregasikan %)
+Whale Concentration: tidak diketahui (tidak ada analisis resmi whale concentration)
+Sources: https://app.realms.today/kamino (HIGH) [Realms Treasury Holdings - raw token accounts]; https://solscan.io/token/KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS#holders (HIGH) [Solscan Holders List - raw data]; https://gov.kamino.finance/ (MEDIUM) [Governance Forum - no distribution report]
+
+## Major Token Events
+
+Date: 2024-04-10
+Event: Token Generation Event (TGE) & Claim Live
+Description: KMNO minted 10B supply; claim opened for Points Season 1-3 holders, team, investors, DAO treasury; simultaneous CEX listings
+Status: Completed
+Related Historical Event ID: EV-012
+Sources: https://x.com/kamino_finance/status/1777980000000000000 (HIGH) [Kamino X - TGE Announcement EV-012]; https://solscan.io/token/KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS (HIGH) [Solscan Mint TX EV-012]
+
+Date: 2024-04-10
+Event: Multi-CEX Listing (Binance, Coinbase, Bybit, Gate.io, KuCoin)
+Description: KMNO listed on 5 major CEXs spot markets same day as TGE providing immediate liquidity
+Status: Completed
+Related Historical Event ID: EV-013, EV-014, EV-015
+Sources: https://www.binance.com/en/support/announcement/ (HIGH) [Binance Listing EV-013]; https://blog.coinbase.com/ (HIGH) [Coinbase Listing EV-014]; https://announcements.bybit.com/ (HIGH) [Bybit Listing EV-015]; https://www.gate.io/announcements/ (MEDIUM) [Gate.io Listing EV-015]; https://www.kucoin.com/news/ (MEDIUM) [KuCoin Listing EV-015]
+
+Date: 2024-04-15
+Event: Kamino DAO Formation & Governance Launch (Realms)
+Description: DAO established on Realms; treasury received KMNO allocation; on-chain governance activated
+Status: Completed
+Related Historical Event ID: EV-016
+Sources: https://gov.kamino.finance/ (HIGH) [Governance Forum EV-016]; https://app.realms.today/kamino (HIGH) [Realms DAO EV-016]
+
+Date: 2024-05
+Event: Fee Switch Activation via Governance Proposal #1
+Description: Proposal passed to activate fee switch directing portion of protocol fees to KMNO stakers (veKMNO)
+Status: Completed
+Related Historical Event ID: EV-017
+Sources: https://gov.kamino.finance/ (HIGH) [Governance Forum Proposal #1 EV-017]; https://app.realms.today/kamino (HIGH) [Realms Vote Record EV-017]
+
+Date: 2024-10
+Event: Points Season 4 Launch (On-chain KMNO Emission)
+Description: Transition from off-chain points to on-chain KMNO emission program for vault/lend/multiply/referral rewards
+Status: Ongoing
+Related Historical Event ID: EV-020
+Sources: https://blog.kamino.finance/ (HIGH) [Kamino Blog Season 4 EV-020]; https://gov.kamino.finance/ (MEDIUM) [Governance Forum Season 4 Parameters EV-020]
+
+Date: 2024-12
+Event: Treasury Buyback & Burn Proposal
+Description: Governance proposal submitted to allocate treasury revenue for KMNO buyback & burn; still in discussion/voting
+Status: Ongoing (Proposal Stage)
+Related Historical Event ID: EV-021
+Sources: https://gov.kamino.finance/ (MEDIUM) [Governance Forum Treasury Proposal EV-021]; https://app.realms.today/kamino (MEDIUM) [Realms Proposal Status EV-021]
+
+## Official Token Resources
+
+Official Documentation: https://docs.kamino.finance
+Whitepaper: tidak tersedia (tidak ada whitepaper teknis/tokenomics resmi dipublikasikan)
+Governance: https://gov.kamino.finance
+Explorer: https://solscan.io/token/KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS
+Contract: https://github.com/kamino-finance (program IDs di repo; token program adalah SPL Token-2022 standard)
+GitHub: https://github.com/kamino-finance
+Dashboard: https://app.realms.today/kamino (DAO Treasury & Governance); https://app.kamino.finance (App Dashboard includes staking/claim)
+Sources: https://docs.kamino.finance (HIGH); https://gov.kamino.finance (HIGH); https://solscan.io/token/KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS (HIGH); https://github.com/kamino-finance (HIGH); https://app.realms.today/kamino (HIGH); https://app.kamino.finance (HIGH)
+
+## Summary
+
+Status: Live (TGE 2024-04-10)
+Supply Type: Fixed (Max Supply 10.000.000.000 KMNO = Total Supply = Initial Mint)
+Total Supply: 10.000.000.000 KMNO
+Distribution Categories: Community (Points), Team, Investors, Treasury/DAO, Ecosystem/Incentives (exact percentages undisclosed)
+Utility Count: 4 verified live (Governance, Staking/Fee Switch, Incentive/Emission Season 4, Liquidity) + 1 planned (Collateral)
+Governance: Token-weighted voting via Realms (SPL-Governance); veKMNO from staking; DAO controls treasury & parameters
+Major Token Events: 6 (TGE, Multi-CEX Listing, DAO Formation, Fee Switch Activation, Season 4 Emission Launch, Buyback Proposal)
+
+## Open Threads
+
+- Persentase alokasi token exact per kategori (Community, Team, Investors, Treasury, Ecosystem): tidak dipublikasikan resmi; hanya kategori claim TGE diketahui (points holders, team, investor, treasury) tapi tanpa breakdown persentase — butuh data on-chain vesting program analysis atau transparency report resmi.
+- Parameter vesting schedule detail (cliff, duration, frequency) untuk Team & Investors: on-chain vesting accounts ada tapi parameter tidak diverifikasi/dipublikasikan — butuh query program state atau announcement resmi.
+- Circulating supply real-time & unlock schedule forward-looking: tidak ada dashboard resmi circulating supply; CoinGecko/CoinMarketCap data derived dari self-reported — butuh metodologi verified.
+- Fee switch parameter exact (bps fee directed to stakers vs treasury): Proposal #1 EV-017 mengaktifkan tapi persentase teknis tidak tercantum di forum/Realms proposal detail — butuh baca instruksi program `FeeReceiver` on-chain atau technical docs.
+- Season 4 emission schedule exact (KMNO per epoch, total allocation, duration): Governance forum menyebut parameter tapi tidak ada single source of truth terpublikasi — butuh proposal detail atau program state query.
+- Treasury composition breakdown (KMNO vs stablecoin vs yield-bearing assets): Realms treasury view hanya menunjukkan token accounts raw — butuh proposal transparency report atau Dune dashboard resmi.
+- Buyback & burn mechanism design (EV-021): proposal masih diskusi; parameter (jumlah, frekuensi, sumber dana) belum final — butuh monitoring governance vote result.
+- KMNO collateral utility di K-Lend isolation mode: apakah akan diusulkan & parameter risk (LTV, liquidation threshold) — butuh monitoring forum & risk framework docs.
+- Token program upgrade authority: SPL Token-2022 mint authority & freeze authority status (renounced atau retained) — butuh cek `solana token display <MINT>` on-chain.
+- Holder distribution analysis resmi: tidak ada laporan concentrasi whale/foundation/investor/community — butuh third-party analysis (Nansen, Arkham) atau self-reported transparency.

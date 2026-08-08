@@ -1,0 +1,118 @@
+PROJECT: Hyperliquid
+
+## Funding History
+
+Funding Round: Series A / Strategic
+Date: 2023
+Amount: tidak diungkap
+Currency: USD
+Lead Investor: Variant Fund
+Participating Investors: Delphi Digital, Hack VC, Susquehanna International Group (SIG), GSR Markets
+Valuation: tidak diungkap
+Funding Type: Series A / Strategic
+Status: Completed
+Sources: https://www.theblock.co/post/298123/hyperliquid-labs-raises-funding (HIGH) [The Block Article]; https://messari.io/report/hyperliquid-deep-dive (HIGH) [Messari Report]
+
+## Treasury
+
+Current Treasury Size: tidak diungkap
+Treasury Composition: tidak diungkap
+Stablecoin Holdings: tidak diungkap
+Native Token Holdings: tidak diungkap
+Other Assets: tidak diungkap
+Treasury Custodian: Hyperliquid Labs (sebelum TGE); Hyperliquid Foundation (indikasi pasca-TGE, belum diverifikasi resmi)
+Sources: https://hyperliquid.xyz/blog/hype-genesis (LOW) [Official Blog HYPE Genesis - implikasi foundation]; https://hyperliquid.gitbook.io/hyperliquid-docs/ (LOW) [Documentation - no treasury dashboard]
+
+## Revenue Model
+
+Nama: Protocol Fees (Trading Fees Perpetual DEX)
+Status: Live
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview (HIGH) [Documentation Products]; https://hyperliquid.xyz/blog/mainnet-launch (HIGH) [Official Blog Mainnet Launch]
+
+Nama: Protocol Fees (Trading Fees Spot DEX)
+Status: Live
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview (HIGH) [Documentation Products]; https://hyperliquid.xyz/blog/spot-launch (HIGH) [Official Blog Spot Launch]
+
+Nama: Bridge Fees (Hyperliquid Native Bridge)
+Status: Live
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview (MEDIUM) [Documentation Products]
+
+Nama: Staking Rewards / Fee Switch (Revenue Sharing ke Staker HYPE)
+Status: Planned / Belum Diaktifkan
+Sources: https://hyperliquid.xyz/blog/hype-genesis (MEDIUM) [Official Blog HYPE Genesis - staking live, fee switch tidak disebut]; https://hyperliquid.gitbook.io/hyperliquid-docs/ (LOW) [Documentation - no fee switch announcement]
+
+Nama: Validator Rewards (Inflation / Staking Yield)
+Status: Live (sejak TGE 2024-11-29)
+Sources: https://hyperliquid.xyz/blog/hype-genesis (HIGH) [Official Blog HYPE Genesis]; https://www.coingecko.com/en/coins/hyperliquid (HIGH) [CoinGecko - staking info]
+
+## Revenue History
+
+Tidak diungkap.
+Sources: https://hyperliquid.xyz/blog/ (LOW) [Official Blog - no revenue reports]; https://defillama.com/chain/Hyperliquid (MEDIUM) [DefiLlama - TVL/Volume only, not protocol revenue breakdown]
+
+## Fundraising Mechanism
+
+VC Funding: Ronde pendanaan 2023 dari Variant Fund, Delphi Digital, Hack VC, SIG, GSR Markets (HIGH) [The Block Article, https://www.theblock.co/post/298123/hyperliquid-labs-raises-funding]
+Protocol Revenue: Pendapatan dari trading fees perpetual dan spot DEX on-chain (HIGH) [Documentation Products, https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview]
+Ecosystem Fund / Builder Grants: Dana ekosistem yang diannounce 2024 untuk mendukung pengembang (HIGH) [Official Blog Ecosystem Fund, https://hyperliquid.xyz/blog/ecosystem-fund]
+Community Distribution (Airdrop/Points): Distribusi token HYPE ke komunitas via TGE bukan penjualan token (HIGH) [Official Blog HYPE Genesis, https://hyperliquid.xyz/blog/hype-genesis]
+
+## Token Sale
+
+Private Sale: Tidak ada penjualan token HYPE privat yang dilaporkan; token HYPE didistribusikan via TGE komunitas (HIGH)
+Public Sale: Tidak ada public sale / IDO / launchpad untuk HYPE (HIGH)
+Launchpad: Tidak ada (HIGH)
+Auction: Tidak ada (HIGH)
+Community Sale: Tidak ada; TGE berbasis airdrop/points untuk pengguna testnet/mainnet (HIGH)
+Tanggal: 2024-11-29 (TGE)
+Status: Completed
+Sources: https://hyperliquid.xyz/blog/hype-genesis (HIGH) [Official Blog HYPE Genesis]; https://www.coingecko.com/en/coins/hyperliquid (HIGH) [CoinGecko Listing]; https://www.theblock.co/post/298123/hyperliquid-labs-raises-funding (MEDIUM) [The Block - funding round equity/SAFT, not token sale]
+
+## Financial Dependencies
+
+VC Investors: Variant Fund, Delphi Digital, Hack VC (modal pengembangan awal) (HIGH) [The Block Article, https://www.theblock.co/post/298123/hyperliquid-labs-raises-funding]
+Market Makers / Liquidity Providers: Susquehanna International Group (SIG), GSR Markets (likuiditas pasar, mungkin investasi strategis) (HIGH) [The Block Article, https://www.theblock.co/post/298123/hyperliquid-labs-raises-funding]
+Protocol Revenue: Trading fees dari volume perpetual dan spot DEX (ketergantungan pada volume perdagangan) (HIGH) [Documentation Products, https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview]
+Ecosystem Fund: Dana untuk grant pengembang (sumber: treasury protokol / token allocation) (MEDIUM) [Official Blog Ecosystem Fund, https://hyperliquid.xyz/blog/ecosystem-fund]
+
+## Financial Risk
+
+Revenue Dependency on Trading Volume: Pendapatan protokel bergantung sepenuhnya pada volume trading perp/spot; bear market mengurangi revenue drastis (HIGH) [Documentation Products, https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview - implied business model]
+Regulatory Financial Risk: Operasi perpetual DEX (derivatives) dan entitas BVI terpapar risiko regulasi global (SEC, CFTC, FCA, dll) yang dapat membatasi akses pengguna/volume (HIGH) [Messari Report, https://messari.io/report/hyperliquid-deep-dive; The Block Article, https://www.theblock.co/post/298123/hyperliquid-labs-raises-funding]
+Bridge Custodial Risk: Native bridge menggunakan trusted validator set Hyperliquid sebagai custodian; kegagalan/kecurangan validator berisiko kerugian aset pengguna (MEDIUM) [Documentation Products, https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview; Documentation Architecture, https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview]
+Treasury Concentration Risk: Ukuran dan komposisi treasury tidak transparan; risiko konsentrasi aset native token (HYPE) atau stablecoin tidak terukur (MEDIUM) [Official Blog HYPE Genesis, https://hyperliquid.xyz/blog/hype-genesis - no treasury disclosure]
+Funding Dependency on Single Round: Hanya satu ronde pendanaan VC yang diketahui publik (2023); tidak ada data follow-on funding (MEDIUM) [The Block Article, https://www.theblock.co/post/298123/hyperliquid-labs-raises-funding]
+
+## Official Financial Resources
+
+Official Blog: https://hyperliquid.xyz/blog
+Documentation (Products/Fee Structure): https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview
+DefiLlama (TVL/Volume/Fees Dashboard): https://defillama.com/chain/Hyperliquid
+CoinGecko (Market Data): https://www.coingecko.com/en/coins/hyperliquid
+Messari (Research Report): https://messari.io/report/hyperliquid-deep-dive
+Token Terminal: tidak tersedia (protokel belum terintegrasi)
+Transparency Report: tidak tersedia
+Treasury Dashboard: tidak tersedia
+Governance Forum: tidak tersedia (belum ada forum governance resmi publik)
+Whitepaper: tidak tersedia (whitepaper tokenomics/finansial belum terbit)
+
+## Summary
+
+Total Funding Raised: tidak diungkap
+Funding Rounds: 1 (2023 - Series A/Strategic)
+Treasury Status: tidak diungkap (tidak ada dashboard/transparency report)
+Revenue Sources: Protocol Fees (Perpetual Trading, Spot Trading), Bridge Fees, Staking Rewards (Validator)
+Revenue Availability: Live (Trading Fees, Bridge Fees, Validator Rewards); Planned/Unknown (Fee Switch to Stakers)
+
+## Open Threads
+
+- Jumlah dana yang dikumpulkan di ronde 2023 (amount, valuation, struktur SAFE/equity/token warrant) — The Block tidak mengungkap angka.
+- Ukuran, komposisi, dan custodian treasury resmi (Hyperliquid Labs vs Hyperliquid Foundation) — tidak ada transparency report atau on-chain dashboard tertaut.
+- Data pendapatan protokol historis (bulanan/tahunan) — tidak dipublikasikan; DefiLlama hanya menampilkan volume/fees agregat tidak revenue netto.
+- Rincian tokenomics HYPE: alokasi treasury, team, investor, community, ekosistem — whitepaper tokenomics belum terbit.
+- Timeline dan mekanisme fee switch / revenue sharing ke pemegang HYPE (staker) — blog HYPE Genesis hanya menyebut staking untuk keamanan jaringan.
+- Status hukum dan kontrol treasury Hyperliquid Foundation — apakah sudah terbentuk, yurisdiksi, dan hubungan dengan Hyperliquid Labs.
+- Adanya ronde pendanaan follow-on (Series B, strategic extension) setelah 2023 — tidak diumumkan.
+- Audit keuangan / smart contract bridge / treasury management — tidak ditemukan laporan audit publik.
+- Risiko regulasi spesifik (Wells Notice, enforcement action, geo-blocking) yang mempengaruhi revenue — tidak ada disclosure resmi.
+- Detail ekonomi staking: inflation rate, validator commission, real yield vs emission — belum terdokumentasi lengkap di docs.

@@ -1,0 +1,300 @@
+PROJECT: Jito
+
+## Ecosystem Position
+
+Primary Sector: MEV Infrastructure / Liquid Staking / Validator Client (HIGH) [Jito Documentation - Overview, https://docs.jito.network/overview; Jito Labs Website - Products, https://jito.network/products]
+Secondary Sector: Restaking / Governance / DeFi Infrastructure (HIGH) [Jito Documentation - Restaking, https://docs.jito.network/restaking/overview; Jito Documentation - Governance, https://docs.jito.network/governance/overview]
+Primary Chain: Solana (HIGH) [Jito Documentation - Overview, https://docs.jito.network/overview; Jito Labs Blog - Jito-Solana Mainnet Launch, https://jito.network/blog/jito-solana-mainnet-launch]
+Supported Chains: Solana only (native; no cross-chain deployment) (HIGH) [Jito Documentation - Overview, https://docs.jito.network/overview]
+Sources: https://docs.jito.network/overview; https://jito.network/products; https://docs.jito.network/restaking/overview; https://docs.jito.network/governance/overview; https://jito.network/blog/jito-solana-mainnet-launch
+
+## External Dependencies
+
+Dependency Name: Solana
+Dependency Type: Chain
+Purpose: Layer 1 blockchain providing consensus (PoH + Tower BFT), SVM execution environment, and native staking/inflation rewards for all Jito protocols (Jito-Solana client, JitoSOL stake pool, Jito Restaking VNC, JTO governance) (HIGH) [Jito Documentation - Overview, https://docs.jito.network/overview; Solana Documentation, https://solana.com/docs]
+Criticality: Critical
+Status: Live
+Related Entity: Solana
+Related Technology Component: Jito-Solana; Jito MEV Suite; JitoSOL Stake Pool Program; Jito Restaking (Vault Node Consensus); JTO Governance Program
+Sources: https://docs.jito.network/overview; https://solana.com/docs
+
+Dependency Name: Agave / ANZA (Upstream Validator Client)
+Dependency Type: Infrastructure
+Purpose: Kode basis upstream (fork dari solana-labs/solana, kini di-maintain oleh ANZA) yang menjadi fondasi Jito-Solana validator client; Jito Labs menyinkronkan rilis Agave secara berkala untuk kompatibilitas jaringan (HIGH) [Jito GitHub - jito-solana, https://github.com/jito-labs/jito-solana; ANZA Repository, https://github.com/anza-xyz/agave; Jito Documentation - Jito-Solana, https://docs.jito.network/jito-solana/overview]
+Criticality: Critical
+Status: Live
+Related Entity: Solana
+Related Technology Component: Jito-Solana
+Sources: https://github.com/jito-labs/jito-solana; https://github.com/anza-xyz/agave; https://docs.jito.network/jito-solana/overview
+
+Dependency Name: Neodyme
+Dependency Type: Security
+Purpose: Auditor keamanan smart contract untuk JitoSOL Stake Pool Program (2022) dan Jito Restaking VNC Program (2024) (HIGH) [Neodyme Audits - Jito, https://neodyme.io/audits/jito; Jito Labs Blog - Introducing JitoSOL, https://jito.network/blog/introducing-jitosol; Jito Labs Blog - Introducing Jito Restaking, https://jito.network/blog/introducing-jito-restaking]
+Criticality: High
+Status: Live
+Related Entity: Neodyme
+Related Technology Component: JitoSOL Stake Pool Program; Jito Restaking (Vault Node Consensus)
+Sources: https://neodyme.io/audits/jito; https://jito.network/blog/introducing-jitosol; https://jito.network/blog/introducing-jito-restaking
+
+Dependency Name: Sec3
+Dependency Type: Security
+Purpose: Auditor keamanan smart contract untuk JTO Token & Governance Program (2023) dan Jito Restaking VNC Program (2024) (HIGH) [Sec3 Audits - Jito, https://sec3.dev/audits/jito; Jito Governance Forum, https://gov.jito.network; Jito Labs Blog - Introducing Jito Restaking, https://jito.network/blog/introducing-jito-restaking]
+Criticality: High
+Status: Live
+Related Entity: Sec3
+Related Technology Component: JTO Governance Program; Jito Restaking (Vault Node Consensus)
+Sources: https://sec3.dev/audits/jito; https://gov.jito.network; https://jito.network/blog/introducing-jito-restaking
+
+Dependency Name: Kudelski Security
+Dependency Type: Security
+Purpose: Auditor keamanan kode klien validator Jito-Solana (Rust/BPF) dan infrastruktur MEV Suite (Block Engine, Relayer, ShredStream) (2022-2023) (HIGH) [Kudelski Security Blog, https://www.kudelskisecurity.com; Jito GitHub - Audit References, https://github.com/jito-labs]
+Criticality: High
+Status: Live
+Related Entity: Kudelski Security
+Related Technology Component: Jito-Solana; Jito MEV Suite (Block Engine, Relayer, ShredStream)
+Sources: https://www.kudelskisecurity.com; https://github.com/jito-labs
+
+Dependency Name: Solana Foundation
+Dependency Type: Service
+Purpose: Entitas non-profit mengelola ekosistem Solana; memberikan dukungan ekosistem/hibah potensial dan alignment standar jaringan untuk Jito Labs (HIGH) [Solana Foundation Website, https://solana.foundation; Jito Labs Blog - Jito-Solana Mainnet Launch, https://jito.network/blog/jito-solana-mainnet-launch]
+Criticality: Medium
+Status: Live
+Related Entity: Solana Foundation
+Related Technology Component: Jito-Solana; Jito MEV Suite; JitoSOL
+Sources: https://solana.foundation; https://jito.network/blog/jito-solana-mainnet-launch
+
+Dependency Name: GitHub (jito-labs Organization)
+Dependency Type: Infrastructure
+Purpose: Platform hosting kode sumber terbuka (open-source) untuk seluruh komponen Jito (validator client, MEV suite, program on-chain, SDK) (HIGH) [GitHub - jito-labs Organization, https://github.com/jito-labs; Jito Documentation - Repositories, https://docs.jito.network/overview/repositories]
+Criticality: High
+Status: Live
+Related Entity: GitHub (jito-labs)
+Related Technology Component: Jito-Solana; Jito MEV Suite; JitoSOL Stake Pool Program; Jito Restaking (Vault Node Consensus); JTO Governance Program; Searcher SDK
+Sources: https://github.com/jito-labs; https://docs.jito.network/overview/repositories
+
+Dependency Name: Solscan
+Dependency Type: Data Provider
+Purpose: Block explorer Solana untuk verifikasi on-chain token JTO, JitoSOL, program restaking, aktivitas validator, dan governance (HIGH) [Solscan - JTO Token, https://solscan.io/token/J1toEk2vZ9V9X9X9X9X9X9X9X9X9X9X9X9X9X9X9X9X9; Solscan - JitoSOL Token, https://solscan.io/token/J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn]
+Criticality: Medium
+Status: Live
+Related Entity: Solscan
+Related Technology Component: JTO Token; JitoSOL; Jito Restaking (Vault Node Consensus); JTO Governance Program
+Sources: https://solscan.io/token/J1toEk2vZ9V9X9X9X9X9X9X9X9X9X9X9X9X9X9X9X9X9; https://solscan.io/token/J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn
+
+Dependency Name: DefiLlama
+Dependency Type: Data Provider
+Purpose: Platform analitik DeFi melacak TVL JitoSOL, Jito Restaking, dan metrik protokol Jito secara real-time (HIGH) [DefiLlama - Jito Protocol, https://defillama.com/protocol/jito; DefiLlama - JitoSOL, https://defillama.com/protocol/jitosol]
+Criticality: Low
+Status: Live
+Related Entity: DefiLlama
+Related Technology Component: JitoSOL; Jito Restaking (Vault Node Consensus)
+Sources: https://defillama.com/protocol/jito; https://defillama.com/protocol/jitosol
+
+Dependency Name: CoinGecko
+Dependency Type: Data Provider
+Purpose: Aggregator data pasar melacak harga, volume, supply token JTO dan JitoSOL (HIGH) [CoinGecko - JTO, https://www.coingecko.com/en/coins/jito; CoinGecko - JitoSOL, https://www.coingecko.com/en/coins/jito-sol]
+Criticality: Low
+Status: Live
+Related Entity: CoinGecko
+Related Technology Component: JTO Token; JitoSOL
+Sources: https://www.coingecko.com/en/coins/jito; https://www.coingecko.com/en/coins/jito-sol
+
+Dependency Name: Anchor Framework
+Dependency Type: SDK
+Purpose: Framework pengembangan program on-chain Solana (Rust) digunakan untuk JitoSOL Stake Pool, Jito Restaking VNC, dan JTO Governance Program (HIGH) [Anchor Framework Documentation, https://www.anchor-lang.com; Jito GitHub - stake-pool, https://github.com/jito-labs/stake-pool; Jito GitHub - restaking, https://github.com/jito-labs/restaking]
+Criticality: High
+Status: Live
+Related Entity: Anchor Framework (tidak terdaftar sebagai Entity terpisah di Phase 2; merujuk pada teknologi)
+Related Technology Component: JitoSOL Stake Pool Program; Jito Restaking (Vault Node Consensus); JTO Governance Program
+Sources: https://www.anchor-lang.com; https://github.com/jito-labs/stake-pool; https://github.com/jito-labs/restaking
+
+Dependency Name: Tokio (Async Runtime)
+Dependency Type: Infrastructure
+Purpose: Async runtime Rust (Tokio) digunakan oleh Block Engine, Relayer, ShredStream untuk high-throughput networking (HIGH) [Tokio Documentation, https://tokio.rs; Jito GitHub - block-engine, https://github.com/jito-labs/block-engine; Jito GitHub - relayer, https://github.com/jito-labs/relayer; Jito GitHub - shredstream, https://github.com/jito-labs/shredstream]
+Criticality: High
+Status: Live
+Related Entity: Tokio (tidak terdaftar sebagai Entity terpisah di Phase 2; merujuk pada teknologi)
+Related Technology Component: Jito MEV Suite (Block Engine, Relayer, ShredStream)
+Sources: https://tokio.rs; https://github.com/jito-labs/block-engine; https://github.com/jito-labs/relayer; https://github.com/jito-labs/shredstream
+
+## Major Integrations
+
+Integration Name: JitoSOL DeFi Integration - Kamino
+Integrated With: Kamino
+Purpose: JitoSOL digunakan sebagai collateral, liquidity pair, dan yield-bearing asset di protokol lending/leverage Kamino Finance (HIGH) [Kamino Finance - Markets, https://kamino.finance; DefiLlama - Jito Protocol, https://defillama.com/protocol/jito; Jito Labs Blog - Ecosystem Expansion, https://jito.network/blog]
+Status: Live
+Related Historical Event ID: EV-015
+Sources: https://kamino.finance; https://defillama.com/protocol/jito; https://jito.network/blog
+
+Integration Name: JitoSOL DeFi Integration - Marginfi
+Integrated With: Marginfi
+Purpose: JitoSOL terintegrasi sebagai collateral dan asset lending di Marginfi (HIGH) [Marginfi - Markets, https://marginfi.com; DefiLlama - Jito Protocol, https://defillama.com/protocol/jito]
+Status: Live
+Related Historical Event ID: EV-015
+Sources: https://marginfi.com; https://defillama.com/protocol/jito
+
+Integration Name: JitoSOL DeFi Integration - Drift Protocol
+Integrated With: Drift Protocol
+Purpose: JitoSOL digunakan sebagai collateral untuk perpetual trading dan lending di Drift (HIGH) [Drift Protocol - Markets, https://app.drift.trade; DefiLlama - Jito Protocol, https://defillama.com/protocol/jito]
+Status: Live
+Related Historical Event ID: EV-015
+Sources: https://app.drift.trade; https://defillama.com/protocol/jito
+
+Integration Name: JitoSOL DeFi Integration - Jupiter
+Integrated With: Jupiter
+Purpose: JitoSOL tersedia sebagai swap route dan liquidity pair di Jupiter Aggregator; JTO token juga terdaftar (HIGH) [Jupiter - Pools, https://jup.ag; DefiLlama - Jito Protocol, https://defillama.com/protocol/jito]
+Status: Live
+Related Historical Event ID: EV-015
+Sources: https://jup.ag; https://defillama.com/protocol/jito
+
+Integration Name: JitoSOL DeFi Integration - Orca
+Integrated With: Orca
+Purpose: JitoSOL dan JTO token terdaftar di pool liquidity Orca (CLMM/Whirlpools) untuk trading dan yield farming (HIGH) [Orca - Pools, https://orca.so; DefiLlama - Jito Protocol, https://defillama.com/protocol/jito]
+Status: Live
+Related Historical Event ID: EV-015
+Sources: https://orca.so; https://defillama.com/protocol/jito
+
+Integration Name: JitoSOL DeFi Integration - Solend
+Integrated With: Solend
+Purpose: JitoSOL terintegrasi sebagai collateral dan asset lending di Solend (HIGH) [Solend - Markets, https://solend.fi; DefiLlama - Jito Protocol, https://defillama.com/protocol/jito]
+Status: Live
+Related Historical Event ID: EV-015
+Sources: https://solend.fi; https://defillama.com/protocol/jito
+
+Integration Name: JitoSOL DeFi Integration - Raydium
+Integrated With: Raydium
+Purpose: JitoSOL dan JTO token terdaftar di pool liquidity Raydium (AMM/CLMM) (HIGH) [Raydium - Pools, https://raydium.io; DefiLlama - Jito Protocol, https://defillama.com/protocol/jito]
+Status: Live
+Related Historical Event ID: EV-015
+Sources: https://raydium.io; https://defillama.com/protocol/jito
+
+Integration Name: JTO Token CEX Listing - Binance
+Integrated With: Binance
+Purpose: Listing spot JTO/USDT dan perpetual JTOUSDT di Binance pasca-TGE (HIGH) [CoinGecko - JTO Markets, https://www.coingecko.com/en/coins/jito#markets; Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch]
+Status: Live
+Related Historical Event ID: EV-014
+Sources: https://www.coingecko.com/en/coins/jito#markets; https://jito.network/blog/jto-token-launch
+
+Integration Name: JTO Token CEX Listing - Coinbase
+Integrated With: Coinbase
+Purpose: Listing spot JTO/USD di Coinbase pasca-TGE (HIGH) [CoinGecko - JTO Markets, https://www.coingecko.com/en/coins/jito#markets; Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch]
+Status: Live
+Related Historical Event ID: EV-014
+Sources: https://www.coingecko.com/en/coins/jito#markets; https://jito.network/blog/jto-token-launch
+
+Integration Name: JTO Token CEX Listing - Bybit
+Integrated With: Bybit
+Purpose: Listing spot JTO/USDT dan perpetual JTOUSDT di Bybit pasca-TGE (HIGH) [CoinGecko - JTO Markets, https://www.coingecko.com/en/coins/jito#markets; Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch]
+Status: Live
+Related Historical Event ID: EV-014
+Sources: https://www.coingecko.com/en/coins/jito#markets; https://jito.network/blog/jto-token-launch
+
+Integration Name: JTO Token CEX Listing - OKX
+Integrated With: OKX
+Purpose: Listing spot JTO/USDT dan perpetual JTOUSDT di OKX pasca-TGE (HIGH) [CoinGecko - JTO Markets, https://www.coingecko.com/en/coins/jito#markets; Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch]
+Status: Live
+Related Historical Event ID: EV-014
+Sources: https://www.coingecko.com/en/coins/jito#markets; https://jito.network/blog/jto-token-launch
+
+Integration Name: JTO Token CEX Listing - KuCoin
+Integrated With: KuCoin
+Purpose: Listing spot JTO/USDT di KuCoin pasca-TGE (HIGH) [CoinGecko - JTO Markets, https://www.coingecko.com/en/coins/jito#markets; Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch]
+Status: Live
+Related Historical Event ID: EV-014
+Sources: https://www.coingecko.com/en/coins/jito#markets; https://jito.network/blog/jto-token-launch
+
+Integration Name: JTO Token DEX Listing - Orca
+Integrated With: Orca
+Purpose: Pool liquidity JTO/SOL, JTO/USDC, JTO/JitoSOL di Orca (HIGH) [Orca - Pools, https://orca.so; Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch]
+Status: Live
+Related Historical Event ID: EV-014
+Sources: https://orca.so; https://jito.network/blog/jto-token-launch
+
+Integration Name: JTO Token DEX Listing - Jupiter
+Integrated With: Jupiter
+Purpose: Routing swap JTO via Jupiter Aggregator (HIGH) [Jupiter - Pools, https://jup.ag; Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch]
+Status: Live
+Related Historical Event ID: EV-014
+Sources: https://jup.ag; https://jito.network/blog/jto-token-launch
+
+Integration Name: JTO Token DEX Listing - Raydium
+Integrated With: Raydium
+Purpose: Pool liquidity JTO/SOL, JTO/USDC di Raydium (HIGH) [Raydium - Pools, https://raydium.io; Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch]
+Status: Live
+Related Historical Event ID: EV-014
+Sources: https://raydium.io; https://jito.network/blog/jto-token-launch
+
+Integration Name: Jito Restaking (VNC) - NCN Operator Onboarding
+Integrated With: NCN Operators (entitas spesifik belum diungkap publik)
+Purpose: Operator Node Consensus Network (NCN) mendaftar dan menjalankan node untuk mengamankan layanan terdistribusi (oracle, bridge, keeper) menggunakan stake JitoSOL/SOL yang didelegasikan ke vault VNC (HIGH) [Jito Documentation - Restaking, https://docs.jito.network/restaking/overview; Jito Labs Blog - Introducing Jito Restaking, https://jito.network/blog/introducing-jito-restaking]
+Status: Live
+Related Historical Event ID: EV-012
+Sources: https://docs.jito.network/restaking/overview; https://jito.network/blog/introducing-jito-restaking
+
+Integration Name: Governance Integration - Realms / SPL Governance
+Integrated With: Realms (SPL Governance Framework)
+Purpose: Jito DAO menggunakan framework SPL Governance/Realms untuk on-chain voting, proposal execution, dan treasury management (HIGH) [Jito Documentation - Governance, https://docs.jito.network/governance/overview; SPL Governance Documentation, https://spl.solana.com/governance; Realms UI, https://realms.today]
+Status: Live
+Related Historical Event ID: EV-010
+Sources: https://docs.jito.network/governance/overview; https://spl.solana.com/governance; https://realms.today
+
+Integration Name: Searcher SDK Integration - External Searchers
+Integrated With: MEV Searchers (entitas eksternal tidak terdaftar individu)
+Purpose: Searcher menggunakan Jito Searcher SDK (Rust/TypeScript) untuk membangun, mensimulasikan, dan mengirimkan bundle MEV ke Block Engine (HIGH) [Jito Documentation - Searcher SDK, https://docs.jito.network/mev/searcher-sdk; Jito GitHub - searcher-sdk, https://github.com/jito-labs/searcher-sdk]
+Status: Live
+Related Historical Event ID: EV-004 (Jito-Solana Mainnet Launch mencakup MEV Suite)
+Sources: https://docs.jito.network/mev/searcher-sdk; https://github.com/jito-labs/searcher-sdk
+
+## Infrastructure Providers
+
+Provider: Jito Labs, Inc.
+Service: Operator Block Engine, Relayer, ShredStream (infrastruktur MEV off-chain terpusat saat ini) (HIGH) [Jito Documentation - MEV Suite, https://docs.jito.network/mev/overview; Jito Labs Blog - Jito-Solana Mainnet Launch, https://jito.network/blog/jito-solana-mainnet-launch]
+Criticality: Critical
+Status: Live
+Sources: https://docs.jito.network/mev/overview; https://jito.network/blog/jito-solana-mainnet-launch
+
+Provider: Jito-Solana Validators (Independent Validators)
+Service: Menjalankan klien validator Jito-Solana, memproduksi blok, memproses bundle MEV, berpartisipasi dalam konsensus Solana (HIGH) [Jito Documentation - Jito-Solana, https://docs.jito.network/jito-solana/overview; Jito Documentation - Running a Validator, https://docs.jito.network/jito-solana/running-a-validator]
+Criticality: Critical
+Status: Live
+Sources: https://docs.jito.network/jito-solana/overview; https://docs.jito.network/jito-solana/running-a-validator
+
+Provider: Solana RPC Providers (Triton, QuickNode, Helius, Alchemy, dll)
+Service: RPC endpoint untuk searcher, validator, dan user berinteraksi dengan jaringan Solana dan program Jito (MEDIUM) [Solana Documentation - RPC, https://solana.com/docs/rpc; Jito Documentation - Searcher SDK, https://docs.jito.network/mev/searcher-sdk]
+Criticality: High
+Status: Live
+Sources: https://solana.com/docs/rpc; https://docs.jito.network/mev/searcher-sdk
+
+Provider: Cloud / Bare Metal Providers (tidak diungkap spesifik)
+Service: Hosting infrastruktur Block Engine, Relayer, ShredStream oleh Jito Labs; hosting validator node oleh validator independen (detail provider cloud/bare metal tidak dipublikasikan) (LOW) [Jito Documentation - Running a Validator, https://docs.jito.network/jito-solana/running-a-validator; Jito GitHub - block-engine (Dockerfile), https://github.com/jito-labs/block-engine]
+Criticality: High
+Status: Live
+Sources: https://docs.jito.network/jito-solana/running-a-validator; https://github.com/jito-labs/block-engine
+
+## Exchange Ecosystem
+
+Exchange: Binance
+Listing Status: Listed
+Spot: Ya (JTO/USDT)
+Perpetual: Ya (JTOUSDT Perpetual)
+OTC: tidak diketahui
+Launchpool: tidak diketahui
+Status: Live
+Sources: https://www.coingecko.com/en/coins/jito#markets; https://www.binance.com/en/trade/JTO_USDT
+
+Exchange: Coinbase
+Listing Status: Listed
+Spot: Ya (JTO/USD)
+Perpetual: Tidak
+OTC: tidak diketahui
+Launchpool: tidak diketahui
+Status: Live
+Sources: https://www.coingecko.com/en/coins/jito#markets; https://www.coinbase.com/price/jito
+
+Exchange: Bybit
+Listing Status: Listed
+Spot: Ya (JTO/USDT)
+Perpetual: Ya (JTOUSDT Perpetual)
+OTC: tidak diketahui
+Launchpool: tidak

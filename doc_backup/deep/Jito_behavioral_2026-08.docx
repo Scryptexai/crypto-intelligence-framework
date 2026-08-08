@@ -1,0 +1,301 @@
+PROJECT: Jito
+
+1. Menjadi infrastruktur MEV-native terdepan di Solana
+
+· Evidence: Jito Labs membangun Jito-Solana validator client, Block Engine, Relayer, ShredStream sebagai suite MEV terintegrasi (Phase 4 Core Components: Jito-Solana, Block Engine, Relayer, ShredStream). Peluncuran mainnet Agustus 2022 (Phase 3 EV-004) menandakan komitmen infrastruktur tingkat protokol.
+· Supporting Dataset: Phase 3 EV-004, Phase 4 Core Components, Phase 4 System Architecture
+
+2. Menciptakan Liquid Staking Token (JitoSOL) yang mengakumulasikan yield staking + MEV tips
+
+· Evidence: JitoSOL diluncurkan 9 Desember 2022 (Phase 3 EV-005) dengan desain stake pool yang mendelegasikan ke validator Jito-Solana untuk menangkap MEV tips. Dokumentasi menyatakan JitoSOL "accumulates staking rewards and MEV tips" (Phase 4 Core Components: JitoSOL Stake Pool Program).
+· Supporting Dataset: Phase 3 EV-005, Phase 4 Core Components, Phase 6 Utility
+
+3. Memperluas ke Restaking Native (VNC) untuk mengamankan layanan terdistribusi
+
+· Evidence: Peluncuran Jito Restaking (Vault Node Consensus) 2024 (Phase 3 EV-012) memungkinkan JitoSOL/SOL distake ulang untuk oracle, bridge, keeper. Whitepaper/blog menyebut "securing distributed services" (Phase 4 Core Components: Jito Restaking VNC).
+· Supporting Dataset: Phase 3 EV-012, Phase 4 Core Components, Phase 7 Major Integrations (NCN Operator Onboarding)
+
+4. Desentralisasi progresif melalui Jito DAO dan Jito Foundation
+
+· Evidence: Pembentukan Jito Foundation 2023 (Phase 3 EV-008), TGE JTO dan peluncuran DAO 7 Desember 2023 (Phase 3 EV-009, EV-010). Governance mengontrol fee, delegation, treasury, upgrade (Phase 6 Governance, Phase 4 Security Model).
+· Supporting Dataset: Phase 3 EV-008, EV-009, EV-010, Phase 6 Governance, Phase 4 Security Model
+
+5. Mempertahankan keunggulan teknis melalui sinkronisasi berkala dengan upstream Agave/ANZA
+
+· Evidence: Jito-Solana v2.x upgrades mengikuti rilis Agave/ANZA untuk kompatibilitas jaringan (Phase 4 Technical Upgrade History: Jito-Solana v2.x Agave/ANZA Alignment). Fork strategy memerlukan maintenance berkelanjutan.
+· Supporting Dataset: Phase 4 Technical Upgrade History, Phase 4 System Architecture, Phase 7 External Dependencies (Agave/ANZA)
+
+Keputusan: Peluncuran Jito-Solana Validator Client Mainnet (2022-08)
+· Trigger: Perlu infrastructure MEV-native di Solana karena tidak ada PBS (Proposer-Builder Separation) native; validator standar tidak mengekstrak MEV.
+· Evidence: Phase 3 EV-004 (Jito-Solana Mainnet Launch), Phase 4 Core Components (Jito-Solana), Phase 1 Category (MEV infrastructure/Validator Client)
+· Decision: Merilis fork klien validator Solana (Jito-Solana) dengan modifikasi untuk memproses bundle MEV dari Block Engine, ShredStream untuk distribusi data cepat.
+· Immediate Result: Validator dapat menjalankan klien MEV-optimized; ekstraksi MEV on-chain dimulai via Block Engine/Relayer.
+· Long-term Impact: Menjadi dasar untuk JitoSOL yield (MEV tips), menarik ~300-400 validator (15-20% market share), menciptakan moat teknis vs Agave standar.
+· Supporting Dataset: Phase 3 EV-004, Phase 4 Core Components, Phase 8 Market Share
+
+Keputusan: Peluncuran JitoSOL Liquid Staking Pool (2022-12-09)
+· Trigger: Butuh mekanisme distribusi MEV tips ke staker retail/institusional; stake pool SPL memungkinkan token representatif (JitoSOL) yang yield-bearing.
+· Evidence: Phase 3 EV-005 (Introducing JitoSOL), Phase 4 Core Components (JitoSOL Stake Pool Program), Phase 6 Utility (Staking Rewards + MEV Tips)
+· Decision: Deploy SPL Stake Pool program, mendelegasikan SOL ke validator set Jito-Solana, mencetak JitoSOL yang mengakumulasikan staking rewards + MEV tips.
+· Immediate Result: JitoSOL live di mainnet; integrasi DeFi dimulai (Phase 3 EV-015).
+· Long-term Impact: Menjadi LST terbesar Solana (~45-50% market share, ~$1.8B TVL), primary yield vehicle untuk ekosistem, driver adopsi JTO governance.
+· Supporting Dataset: Phase 3 EV-005, EV-015, Phase 4 Core Components, Phase 8 Market Share/Adoption Metrics
+
+Keputusan: Pembentukan Jito Foundation di Cayman Islands (2023)
+· Trigger: Perlu legal wrapper untuk token issuance (JTO), treasury management, compliance, dan pengelolaan aset protokol secara terdesentralisasi.
+· Evidence: Phase 3 EV-008 (Jito Foundation Formation), Phase 2 Entity (Jito Foundation), Phase 6 Governance (Legal wrapper)
+· Decision: Mendirikan Jito Foundation sebagai entitas non-profit Cayman Islands mengelola treasury DAO, token allocation (30% Foundation, 18.5% Ecosystem).
+· Immediate Result: Struktur hukum untuk TGE JTO dan DAO governance siap.
+· Long-term Impact: Memisahkan entitas pengembang (Jito Labs, Inc.) dari pengelola protokol (Foundation/DAO), mengurangi regulatory risk bagi core team.
+· Supporting Dataset: Phase 3 EV-008, Phase 2 Entity, Phase 6 Governance
+
+Keputusan: Token Generation Event & Airdrop JTO (2023-12-07)
+· Trigger: Desentralisasi governance, mendistribusikan kepemilikan ke komunitas (staker, validator, searcher, kontributor), memicu liquidity dan price discovery.
+· Evidence: Phase 3 EV-009 (TGE & Airdrop), Phase 6 TGE (10% Community Airdrop, 1B max supply), Phase 6 Distribution
+· Decision: Mint 1B JTO fixed supply; alokasi 10% airdrop instan claim, 25% team (12m cliff, 36m vesting), 16.5% investor (12m cliff, 24m vesting), 30% Foundation, 18.5% Ecosystem.
+· Immediate Result: JTO listed di Binance, Coinbase, Bybit, OKX, KuCoin + DEX (Orca, Jupiter, Raydium); DAO governance aktif.
+· Long-term Impact: Membuat pasar token, mengaktifkan on-chain governance (15+ SIP dieksekusi), mendanai ekosistem via treasury.
+· Supporting Dataset: Phase 3 EV-009, EV-010, EV-014, Phase 6 TGE/Distribution/Vesting
+
+Keputusan: Peluncuran Jito Restaking (VNC) (2024)
+· Trigger: Narasi restaking (EigenLayer) trending; Jito memiliki LST terbesar (JitoSOL) dan validator set terpercaya; peluang memperluas utility JitoSOL dan revenue protocol.
+· Evidence: Phase 3 EV-012 (Introducing Jito Restaking), Phase 4 Core Components (Jito Restaking VNC), Phase 7 Major Integrations (NCN Operator Onboarding)
+· Decision: Membangun Vault Node Consensus (VNC) native Solana: Vault Program, NCN Program, Slashing, Reward Distribution; integrasi JitoSOL sebagai collateral.
+· Immediate Result: ~$300M TVL restaking awal 2025; operator NCN onboarding berlangsung.
+· Long-term Impact: Membuka revenue stream baru (restaking fees), memperkuat moat JitoSOL vs LST lain, positioning sebagai "EigenLayer Solana".
+· Supporting Dataset: Phase 3 EV-012, Phase 4 Core Components, Phase 8 Adoption Metrics/Competitor Landscape (vs Solayer)
+
+Evolution Pattern: Dari Validator Client → MEV Suite → Liquid Staking → Governance → Restaking (Vertical Integration)
+
+· Phase 2021-2022 (Foundation & Infra): Fokus pada Jito-Solana client dan MEV Suite (Block Engine, Relayer, ShredStream) — infrastructure layer (Phase 3 EV-001, EV-003, EV-004, EV-007).
+· Phase 2022-2023 (Product & Distribution): Peluncuran JitoSOL (LST) mengubah MEV tips menjadi yield untuk masa; ekspansi integrasi DeFi luas (Phase 3 EV-005, EV-006, EV-015).
+· Phase 2023 (Decentralization): Foundation, TGE, DAO, Governance — transisi ke community-owned protocol (Phase 3 EV-008, EV-009, EV-010, EV-011).
+· Phase 2024 (Expansion): Restaking (VNC) memperluas utility JitoSOL ke economic security layer; audit ganda (Neodyme, Sec3) untuk keamanan (Phase 3 EV-012, EV-013).
+· Pattern: Setiap lapisan baru dibangun di atas lapisan sebelumnya (MEV infra → LST capture → Governance control → Restaking leverage), menciptakan flywheel vertikal.
+
+Pola 1: Fork Upstream Client dengan Modifikasi MEV-specific (Vertical Integration)
+
+· Decision Pattern: Memilih fork Agave/Solana Labs client (kini ANZA) dan menambahkan MEV logic (Block Engine integration, ShredStream) alih-alih membangun client dari nol atau menggunakan proxy/relayer eksternal semata.
+· Evidence: Phase 4 System Architecture (Jito-Solana fork of Agave), Phase 4 Core Components (Jito-Solana modifications), Phase 7 External Dependencies (Agave/ANZA upstream), Phase 4 Technical Upgrade History (v2.x sync with Agave).
+· Supporting Dataset: Phase 4 System Architecture, Phase 4 Core Components, Phase 7 External Dependencies, Phase 4 Technical Upgrade History
+
+Pola 2: Off-chain Auction (Block Engine) + On-chain Settlement via Validator Leader
+
+· Decision Pattern: MEV extraction menggunakan arsitektur hybrid: Block Engine (off-chain, trusted operator Jito Labs) menjalankan auction/bundle simulation; Relayer mengirim bundle ke validator leader (on-chain) untuk eksekusi. Tidak menggunakan PBS in-protocol (Solana tidak punya PBS).
+· Evidence: Phase 4 Core Components (Block Engine, Relayer), Phase 4 Consensus Mechanism (Off-chain auction consensus), Phase 4 Security Model (Block Engine centralized operator), Phase 8 Competitor Landscape (vs Flashbots PBS).
+· Supporting Dataset: Phase 4 Core Components, Phase 4 Consensus Mechanism, Phase 4 Security Model, Phase 8 Competitor Landscape
+
+Pola 3: Audit Ganda (Multiple Auditors) untuk Setiap Rilis Utama
+
+· Decision Pattern: Setiap rilis protokol mayor (JitoSOL, JTO/Governance, Restaking) diaudit oleh minimal 2 firma keamanan berbeda (Neodyme + Kudelski untuk client/MEV; Neodyme + Sec3 untuk Restaking; Sec3 untuk JTO/Governance).
+· Evidence: Phase 4 Audit History (5 audits: Neodyme x2, Kudelski x1, Sec3 x2), Phase 3 Security Events (EV-006, EV-007, EV-011, EV-013), Phase 4 Security Model.
+· Supporting Dataset: Phase 4 Audit History, Phase 3 EV-006, EV-007, EV-011, EV-013, Phase 4 Security Model
+
+Pola 4: Program On-chain Upgradeable via DAO Governance (SPL Governance/Realms)
+
+· Decision Pattern: Semua program on-chain (Stake Pool, Restaking, Governance, Token) menggunakan upgrade authority yang dikontrol DAO melalui SPL Governance/Realms; tidak ada immutable contracts.
+· Evidence: Phase 4 Core Components (JitoSOL Stake Pool Program, Jito Restaking VNC, JTO Governance Program), Phase 4 Security Model (Upgradeability Risk), Phase 6 Governance (On-chain voting via Realms), Phase 3 EV-010 (DAO Launch).
+· Supporting Dataset: Phase 4 Core Components, Phase 4 Security Model, Phase 6 Governance, Phase 3 EV-010
+
+Pola 1: Single Series A Equity Funding ($10M) → Token-based Treasury untuk Operasi Jangka Panjang
+
+· Decision Pattern: Hanya satu ronde equity funding terverifikasi publik (Series A $10M dari Multicoin, Framework, Solana Ventures, Robot — Phase 5 Funding History). Pasca-TGE, treasury DAO (30% Foundation + 18.5% Ecosystem = 48.5% supply) menjadi sumber dana utama untuk pengembangan, grant, operasi.
+· Evidence: Phase 5 Funding History (Series A $10M), Phase 6 Distribution (Foundation 30%, Ecosystem 18.5%), Phase 5 Treasury (Managed by Jito Foundation), Phase 3 EV-002 (Series A).
+· Supporting Dataset: Phase 5 Funding History, Phase 6 Distribution, Phase 5 Treasury, Phase 3 EV-002
+
+Pola 2: Revenue Diversification dari MEV Tips → Staking Fee → Restaking Fee
+
+· Decision Pattern: Protokol secara bertahap menambah revenue stream: awalnya MEV tips (via Block Engine ke validator → JitoSOL pool), lalu Management Fee/Staking Fee JitoSOL (governance-controlled), lalu Restaking Fees VNC (baru 2024). Mengurangi ketergantungan pada MEV siklikal.
+· Evidence: Phase 5 Revenue Model (MEV Tips, Staking Rewards, Management Fee, Validator Commission, Restaking Fees), Phase 3 EV-005 (JitoSOL launch), EV-012 (Restaking launch), Phase 6 Utility (Fee Control).
+· Supporting Dataset: Phase 5 Revenue Model, Phase 3 EV-005, EV-012, Phase 6 Utility
+
+Pola 3: Token Allocation Berbobot ke Insentif Jangka Panjang (Team/Investor Vesting 2-3 Tahun)
+
+· Decision Pattern: Alokasi besar ke Team (25%, 36m vesting) dan Investor (16.5%, 24m vesting) dengan cliff 12 bulan; menunjukkan komitmen jangka panjang. Community airdrop hanya 10% instan unlock.
+· Evidence: Phase 6 Distribution (Team 25%, Investor 16.5%), Phase 6 Vesting Schedule (Cliff 12m, Vesting 24-36m), Phase 6 TGE (10% Community unlocked).
+· Supporting Dataset: Phase 6 Distribution, Phase 6 Vesting Schedule, Phase 6 TGE
+
+Pola 4: Treasury Management oleh Foundation/DAO tanpa Transparansi Real-time Publik
+
+· Decision Pattern: Treasury dikelola Jito Foundation atas arahan DAO; tidak ada dashboard treasury real-time, tidak ada laporan keuangan berkala. Data on-chain tersedia tapi tidak diagregasi resmi.
+· Evidence: Phase 5 Treasury (Current size/composition tidak diungkap, Custodian: Jito Foundation), Phase 5 Official Financial Resources (No transparency report, No treasury dashboard), Phase 6 Governance (Treasury Governance via Foundation multisig/timelock).
+· Supporting Dataset: Phase 5 Treasury, Phase 5 Official Financial Resources, Phase 6 Governance
+
+Pola 1: Integrasi DeFi "LST-First" — JitoSOL sebagai Primitive Yield-bearing di Seluruh Ekosistem Solana
+
+· Decision Pattern: Prioritas integrasi JitoSOL ke protokol lending (Kamino, Marginfi, Solend), perp DEX (Drift), AMM/CLMM (Orca, Raydium), aggregator (Jupiter) — menjadikan JitoSOL collateral/liquidity standard.
+· Evidence: Phase 3 EV-015 (Ecosystem Expansion), Phase 7 Major Integrations (7+ DeFi integrations listed), Phase 8 Market Share (DeFi Integration Share ~80%+ TVL coverage).
+· Supporting Dataset: Phase 3 EV-015, Phase 7 Major Integrations, Phase 8 Market Share
+
+Pola 2: Kemitraan Infra Struktural dengan Solana Foundation/ANZA untuk Kompatibilitas Jaringan
+
+· Decision Pattern: Jito Labs bekerja sama erat dengan Solana Foundation (ekosistem support) dan menyinkronkan Jito-Solana dengan upstream ANZA/Agave rilis demi rilis — memastikan validator client tetap kompatibel dan aman.
+· Evidence: Phase 7 External Dependencies (Solana Foundation, Agave/ANZA), Phase 4 Technical Upgrade History (Jito-Solana v2.x Agave Alignment), Phase 3 EV-004 (Mainnet Launch context).
+· Supporting Dataset: Phase 7 External Dependencies, Phase 4 Technical Upgrade History, Phase 3 EV-004
+
+Pola 3: Ekspansi Vertikal ke Restaking (VNC) Menggunakan Aset & Validator Set Sendiri
+
+· Decision Pattern: Alih-alih mitra restaking lain (seperti Solayer), Jito membangun VNC native sendiri yang leverage JitoSOL, validator set Jito-Solana, dan governance JTO — menciptakan stack vertikal penuh.
+· Evidence: Phase 3 EV-012 (Jito Restaking Launch), Phase 4 Core Components (Jito Restaking VNC), Phase 7 Major Integrations (NCN Operator Onboarding), Phase 8 Competitor Landscape (vs Solayer).
+· Supporting Dataset: Phase 3 EV-012, Phase 4 Core Components, Phase 7 Major Integrations, Phase 8 Competitor Landscape
+
+Pola 4: Listing CEX Agresif Pasca-TGE untuk Likuiditas & Distribusi Token
+
+· Decision Pattern: JTO listing simultan di 5+ CEX Tier-1 (Binance, Coinbase, Bybit, OKX, KuCoin) + DEX utama saat TGE — memastikan price discovery, akses retail/institusional, dan likuiditas untuk governance participation.
+· Evidence: Phase 3 EV-014 (CEX Listing), Phase 7 Exchange Ecosystem (5 CEX listed dengan spot + perpetual di sebagian), Phase 6 TGE (Launch Platform).
+· Supporting Dataset: Phase 3 EV-014, Phase 7 Exchange Ecosystem, Phase 6 TGE
+
+Pola 1: Governance Minimal Viable → Progressive Parameter Control
+
+· Decision Pattern: DAO diluncurkan dengan kontrol parameter fee dan delegation (SIP-1, SIP-2), lalu diperluas ke restaking parameters, grant program, treasury allocation. Tidak langsung mengontrol upgrade client/MEV infra (masih Jito Labs).
+· Evidence: Phase 3 EV-010 (DAO Launch), Phase 6 Governance (Voting System, Proposal System), Phase 7 Major Integrations (Governance Integration - Realms), Phase 8 Market Narrative (Progressive Decentralization).
+· Supporting Dataset: Phase 3 EV-010, Phase 6 Governance, Phase 7 Major Integrations, Phase 8 Market Narrative
+
+Pola 2: Legal Wrapper (Foundation) Memisahkan Liabilitas Hukum dari DAO
+
+· Decision Pattern: Jito Foundation (Cayman) bertindak sebagai legal entity mengelola treasury, menandatangani kontrak, compliance; DAO fokus on-chain decision making. Memisahkan operational risk dari token holder.
+· Evidence: Phase 2 Entity (Jito Foundation, Jito DAO), Phase 3 EV-008 (Foundation Formation), Phase 6 Governance (Treasury Governance via Foundation), Phase 5 Financial Risk (Regulatory Legal Risk).
+· Supporting Dataset: Phase 2 Entity, Phase 3 EV-008, Phase 6 Governance, Phase 5 Financial Risk
+
+Pola 3: SPL Governance/Realms Framework Standar — Tidak Custom Governance Logic
+
+· Decision Pattern: Menggunakan framework SPL Governance/Realms off-the-shelf untuk voting, proposal, execution, delegation — mengurangi smart contract risk dan audit burden, leverage existing tooling.
+· Evidence: Phase 6 Governance (Voting System: SPL Governance/Realms), Phase 4 Core Components (JTO Governance Program), Phase 3 EV-011 (Sec3 Audit Governance), Phase 7 Major Integrations (Governance Integration - Realms).
+· Supporting Dataset: Phase 6 Governance, Phase 4 Core Components, Phase 3 EV-011, Phase 7 Major Integrations
+
+Pola 4: Delegasi Vote Weight ke Representatif (Delegation) untuk Partisipasi Pasif
+
+· Decision Pattern: Token holder dapat mendelegasikan vote weight ke delegat via governance UI (Realms) — mengatasi voter apathy dan memungkinkan partisipasi institusional/retail tanpa active monitoring.
+· Evidence: Phase 6 Governance (Delegation: on-chain via Realms UI), Phase 7 Major Integrations (Governance Integration - Realms), Phase 6 Governance Model.
+· Supporting Dataset: Phase 6 Governance, Phase 7 Major Integrations, Phase 6 Governance Model
+
+Pola 1: Respons Proaktif terhadap Risiko Sentralisasi Block Engine — Roadmap Desentralisasi
+
+· Decision Pattern: Mengakui Block Engine saat ini trusted operator (Jito Labs); mempublikasikan roadmap/penelitian untuk desentralisasi (multiple block engines, permissionless) — meskipun belum terealisasi.
+· Evidence: Phase 4 Known Technical Limitations (Block Engine Centralization), Phase 4 Security Model (MEV Suite Security), Phase 1 Category (MEV infrastructure), Phase 8 Market Narrative (Decentralization Roadmap).
+· Trigger: Kritik komunitas/riset tentang single point of failure MEV extraction.
+· Response: Riset terbuka (blog Jito Labs), desain arsitektur multi-block-engine, tidak ada timeline komitmen keras.
+· Result: Narasi desentralisasi terjaga; implementasi belum ada (2025).
+· Supporting Dataset: Phase 4 Known Technical Limitations, Phase 4 Security Model, Phase 1 Category, Phase 8 Market Narrative
+
+Pola 2: Audit Pre-emptif Ganda Sebelum Setiap Major Launch
+
+· Decision Pattern: Sebelum JitoSOL (2022), JTO/Governance (2023), Restaking (2024) — masing-masing diaudit 2 firma independen (Neodyme+Kudelski, Sec3, Neodyme+Sec3). Zero major exploit sejauh ini.
+· Evidence: Phase 4 Audit History (5 audits), Phase 3 Security Events (EV-006, EV-007, EV-011, EV-013), Phase 4 Security Model.
+· Trigger: Rilis protokol baru dengan TVL besar; standar keamanan ekosistem Solana.
+· Response: Kontrak auditor terkemuka (Neodyme, Sec3, Kudelski), memperbaiki findings sebelum mainnet.
+· Result: Tidak ada insiden keamanan mayor terlapor; kepercayaan institusional terjaga.
+· Supporting Dataset: Phase 4 Audit History, Phase 3 EV-006, EV-007, EV-011, EV-013, Phase 4 Security Model
+
+Pola 3: Adaptasi Cepat pada Narasi Pasar (Restaking 2024 mengikuti EigenLayer Trend)
+
+· Decision Pattern: Meluncurkan Restaking (VNC) 2024 seiring hype EigenLayer/mainnet; membangun native solution bukan partnership — capture narrative dan revenue baru.
+· Evidence: Phase 3 EV-012 (Restaking Launch 2024), Phase 8 Competitor Landscape (vs Solayer), Phase 8 Market Narrative (Restaking Narrative), Phase 5 Revenue Model (Restaking Fees new stream).
+· Trigger: EigenLayer mainnet/mainstream attention; kompetitor Solayer muncul.
+· Response: Bangun VNC native dengan slashing, NCN, JitoSOL integration; audit ganda; launch 2024.
+· Result: ~$300M TVL awal 2025; positioning sebagai "EigenLayer Solana".
+· Supporting Dataset: Phase 3 EV-012, Phase 8 Competitor Landscape, Phase 8 Market Narrative, Phase 5 Revenue Model
+
+Pola 4: Tidak Ada Respons Darurat (Emergency Intervention) Terpublik — Belum Pernah Exploit/Major Incident
+
+· Decision Pattern: Belum ada insiden exploit, hack, atau market crash yang memerlukan emergency multisig intervention atau chain halt. Security model bergantung pada audit dan monitoring.
+· Evidence: Phase 4 Audit History (no post-audit exploits reported), Phase 3 History (no security incident events), Phase 4 Security Model (no emergency council described), Phase 5 Financial Risk (Smart Contract Risk acknowledged but no incident).
+· Trigger: N/A (belum terjadi).
+· Response: N/A.
+· Result: N/A.
+· Supporting Dataset: Phase 4 Audit History, Phase 3 History, Phase 4 Security Model, Phase 5 Financial Risk
+
+Pola 1: Vertical Stack Building — Setiap Layer Baru Membangun di Atas Layer Sebelumnya
+
+· Decision Pattern: MEV Infra (2022) → LST capture yield (2022) → Governance control params (2023) → Restaking leverage LST/validator (2024). Setiap produk memperkuat moat produk sebelumnya.
+· Evidence: Phase 3 Timeline (EV-004→EV-005→EV-009/010→EV-012), Phase 4 System Architecture (Components interdependence), Phase 8 Evolution Pattern (Vertical Integration).
+· Supporting Dataset: Phase 3 History, Phase 4 System Architecture, Phase 8 Evolution Pattern
+
+Pola 2: Post-Funding/Post-Launch Expansion ke Adjacent Category
+
+· Decision Pattern: Pasca-Series A (2022) → Launch Jito-Solana & JitoSOL; Pasca-TGE (2023) → Launch DAO & Restaking (204). Setiap milestone funding/launch diikuti ekspansi produk.
+· Evidence: Phase 3 EV-002 (Series A 2022) → EV-004/005 (Launch 2022); EV-009 (TGE 2023) → EV-010 (DAO) → EV-012 (Restaking 2024).
+· Supporting Dataset: Phase 3 History (EV-002, EV-004, EV-005, EV-009, EV-010, EV-012)
+
+Pola 3: Double Audit Standard untuk Setiap Rilis Smart Contract Baru
+
+· Decision Pattern: Konsisten menggunakan 2 auditor independen untuk JitoSOL, JTO/Governance, Restaking. Menjadi standar operasional internal.
+· Evidence: Phase 4 Audit History (Neodyme+Kudelski untuk client/MEV; Neodyme+Sec3 untuk Restaking; Sec3 untuk JTO), Phase 3 Security Events.
+· Supporting Dataset: Phase 4 Audit History, Phase 3 EV-006, EV-007, EV-011, EV-013
+
+Pola 4: Governance Parameter Control Sebelum Protocol Upgrade Control
+
+· Decision Pattern: DAO pertama kali mengontrol fee/delegation (parameter), baru nanti upgrade program (authority). Upgrade client/MEV infra masih di tangan Jito Labs.
+· Evidence: Phase 6 Governance (Proposal System: fee, delegation, treasury), Phase 4 Security Model (Upgradeability Risk), Phase 3 EV-010 (DAO Launch scope).
+· Supporting Dataset: Phase 6 Governance, Phase 4 Security Model, Phase 3 EV-010
+
+Trade-off 1: Desentralisasi MEV Extraction (Block Engine) vs Latency/Efisiensi Eksekusi
+
+· Decision: Mempertahankan Block Engine sebagai single trusted operator (Jito Labs) untuk auction off-chain latency rendah, alih-alih desentralisasi multi-relayer seperti Flashbots.
+· Trade-off: Mengorbankan desentralisasi dan trust-minimization demi performa MEV extraction (latency kritis di Solana leader-based consensus).
+· Evidence: Phase 4 Known Technical Limitations (Block Engine Centralization), Phase 4 Security Model (MEV Suite Security), Phase 8 Competitor Landscape (vs Flashbots PBS), Phase 4 Consensus Mechanism (Off-chain auction).
+· Supporting Dataset: Phase 4 Known Technical Limitations, Phase 4 Security Model, Phase 8 Competitor Landscape, Phase 4 Consensus Mechanism
+
+Trade-off 2: Permissioned Validator Set untuk JitoSOL vs Permissionless Delegation (Marinade Model)
+
+· Decision: JitoSOL mendelegasikan stake hanya ke validator yang menjalankan Jito-Solana (kurasi permissioned via DAO), bukan permissionless ke ribuan validator.
+· Trade-off: Mengorbankan desentralisasi stake distribution dan censorship resistance demi memastikan MEV tips tertangkap maksimal (hanya validator Jito-Solana yang menerima bundle).
+· Evidence: Phase 4 Known Technical Limitations (Validator Set Permissioned), Phase 4 Core Components (JitoSOL delegation authority), Phase 8 Competitor Landscape (vs Marinade permissionless), Phase 6 Governance (Delegation Strategy proposals).
+· Supporting Dataset: Phase 4 Known Technical Limitations, Phase 4 Core Components, Phase 8 Competitor Landscape, Phase 6 Governance
+
+Trade-off 3: Fixed Token Supply (No Inflation) vs Ongoing Incentive Budget
+
+· Decision: JTO supply fixed 1B, tidak ada emisi/inflasi. Incentive budget berasal dari alokasi Ecosystem (18.5%) dan Treasury (30%) yang terbatas.
+· Trade-off: Mengorbankan kemampuan mengeluarkan token baru untuk incentive jangka sangat panjang (beyond 18.5% allocation) demi kepastian supply dan narasi "hard cap" untuk investor.
+· Evidence: Phase 6 Supply (Fixed 1B, No inflation), Phase 6 Inflation/Deflation (No emission), Phase 6 Distribution (Ecosystem 18.5%), Phase 5 Financial Risk (Treasury Concentration).
+· Supporting Dataset: Phase 6 Supply, Phase 6 Inflation/Deflation, Phase 6 Distribution, Phase 5 Financial Risk
+
+Trade-off 4: Upgradeability via DAO vs Immutable Contracts Security
+
+· Decision: Semua program on-chain upgradeable via DAO authority (SPL Governance). Tidak ada immutable contracts.
+· Trade-off: Mengorbankan keamanan "code is law" / immutable guarantee demi fleksibilitas parameter, bug fix, dan feature upgrade tanpa migrasi kontrak.
+· Evidence: Phase 4 Security Model (Upgradeability Risk), Phase 4 Core Components (Program upgradeable), Phase 6 Governance (Proposal execution), Phase 4 Audit History (audit covers upgrade authority).
+· Supporting Dataset: Phase 4 Security Model, Phase 4 Core Components, Phase 6 Governance, Phase 4 Audit History
+
+Trade-off 5: Single Chain Focus (Solana Only) vs Multi-chain Expansion
+
+· Decision: Semua produk (Jito-Solana, JitoSOL, Restaking, JTO) native Solana only. Tidak ada deployment cross-chain (Ethereum, L2, dll).
+· Trade-off: Mengorbangkan TAM (Total Addressable Market) multi-chain dan diversifikasi risiko chain-specific demi fokus eksekusi, keunggulan teknis SVM, dan resource constraints tim.
+· Evidence: Phase 1 Chain (Solana only), Phase 4 System Architecture (Cross-chain: Tidak ada), Phase 7 External Dependencies (Solana only), Phase 8 Market Position (Primary Chain: Solana).
+· Supporting Dataset: Phase 1 Chain, Phase 4 System Architecture, Phase 7 External Dependencies, Phase 8 Market Position
+
+Behavioral Summary
+
+Prioritas Utama Proyek:
+1. Vertical Integration: Membangun stack penuh MEV → LST → Governance → Restaking di Solana.
+2. Technical Moat: Mempertahankan keunggulan Jito-Solana client dan Block Engine latency.
+3. Yield Leadership: Memastikan JitoSOL yield (staking + MEV) unggul vs kompetitor LST.
+4. Progressive Decentralization: Beralih dari Jito Labs-controlled ke DAO-governed bertahap.
+
+Cara Mengambil Keputusan:
+- Data-driven dari on-chain metrics (MEV volume, TVL, validator adoption).
+- Research-led (Buffalu, Dr. Milan mempublikasikan analisis MEV/restaking).
+- Governance-minimum-viable: parameter dulu, upgrade nanti.
+- Security-first: double audit sebelum setiap major launch.
+
+Faktor Paling Sering Mempengaruhi Keputusan:
+1. Solana Architecture Constraints (leader-based, no PBS, high throughput) → mendesain Block Engine/ShredStream.
+2. Competitive Landscape (Marinade, Solayer, Flashbots) → diferensiasi via MEV yield & vertical stack.
+3. Regulatory Environment (token classification, Foundation legal wrapper) → struktur DAO/Foundation.
+4. Capital Efficiency (Single Series A, Token Treasury) → revenue diversification & tokenomics design.
+
+Pola Evolusi:
+- 2021-2022: Infrastructure Build (Client + MEV Suite)
+- 2022-2023: Product-Market Fit (JitoSOL + DeFi Integration)
+- 2023-2024: Decentralization & Governance (Foundation, TGE, DAO)
+- 2024+: Expansion Layer (Restaking VNC, NCN Ecosystem)
+
+Kekuatan Utama:
+- Moat teknis unik: Jito-Solana client + Block Engine + ShredStream (single provider MEV infra Solana).
+- JitoSOL dominan: ~45-50% LST market share, integrasi DeFi paling luas.
+- Treasury besar (48.5% supply) untuk funding jangka panjang tanpa dilution.
+- Tim riset kuat (Buffalu, Dr. Milan) memandu roadmap.
+- Audit standar tinggi (double audit) → zero major exploit.
+
+Kelemahan Utama:
+- Block Engine terpusat (single point of failure

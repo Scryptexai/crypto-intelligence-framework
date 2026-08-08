@@ -1,0 +1,145 @@
+PROJECT: MegaETH
+
+## Funding History
+
+Funding Round: Seed / Strategic (Unnamed Round)
+Date: 2023
+Amount: tidak diungkap
+Currency: tidak diungkap
+Lead Investor: DragonFly
+Participating Investors: Figment
+Valuation: tidak diungkap
+Funding Type: Seed / Strategic
+Status: Announced
+Sources: https://megaeth.com/blog/introducing-megaeth
+
+---
+
+## Treasury
+
+Current Treasury Size: tidak diungkap
+Treasury Composition: tidak diungkap
+Stablecoin Holdings: tidak diungkap
+Native Token Holdings: tidak diungkap (belum ada token resmi)
+Other Assets: tidak diungkap
+Treasury Custodian: tidak diungkap
+Sources: tidak diungkap
+
+---
+
+## Revenue Model
+
+Nama: Protocol Fees (L2 Transaction Fees)
+Status: Planned
+Sources: https://docs.megaeth.com
+
+Nama: Bridge Fees (L1-L2 Standard Bridge)
+Status: Planned
+Sources: https://docs.megaeth.com
+
+Nama: Sequencer Revenue (MEV / Priority Fees)
+Status: Planned
+Sources: https://docs.megaeth.com
+
+Nama: Data Availability Fees (EigenDA integration revenue share if applicable)
+Status: Planned
+Sources: https://docs.megaeth.com
+
+---
+
+## Revenue History
+
+Tidak diungkap.
+Sources: tidak diungkap
+
+---
+
+## Fundraising Mechanism
+
+VC Funding: DragonFly, Figment (announced 2023)
+Private Sale: tidak diungkap
+Public Sale: belum terjadi
+Grant: tidak diungkap
+Foundation: tidak diungkap (tidak ada Foundation terpisah teridentifikasi)
+DAO Treasury: tidak diungkap (tidak ada DAO teridentifikasi)
+Protocol Revenue: belum live (testnet only)
+Bootstrapping: tidak diungkap
+Sources: https://megaeth.com/blog/introducing-megaeth
+
+---
+
+## Token Sale
+
+Private Sale: belum terjadi
+Public Sale: belum terjadi
+Launchpad: belum terjadi
+Auction: belum terjadi
+Community Sale: belum terjadi
+Tanggal: n/a
+Status: pre-TGE (belum ada Token Generation Event)
+Sources: https://megaeth.com/blog/introducing-megaeth
+
+Catatan: Tidak ada token sale atau TGE yang diumumkan per Juni 2024. Proyek masih dalam tahap testnet.
+
+---
+
+## Financial Dependencies
+
+VC: DragonFly, Figment (investor yang diumumkan)
+Foundation: tidak diungkap
+Grant Program: tidak diungkap
+Revenue: belum ada (testnet)
+DAO: tidak diungkap
+Sources: https://megaeth.com/blog/introducing-megaeth
+
+---
+
+## Financial Risk
+
+Funding Dependency: Proyek bergantung pada dana VC (DragonFly, Figment) untuk operasional dan pengembangan sebelum mainnet launch dan revenue protocol live. Detail jumlah dana, runway, dan kondisi follow-on funding tidak diungkapkan.
+Sources: https://megaeth.com/blog/introducing-megaeth
+
+Treasury Concentration: Tidak dapat diverifikasi karena komposisi dan ukuran treasury tidak diungkapkan.
+Sources: tidak diungkap
+
+Legal Financial Risk: Yurisdiksi hukum MegaETH Labs tidak diungkapkan publik; struktur kepemilikan token (jika ada), SAFE/token warrant terms dengan investor tidak tersedia untuk verifikasi.
+Sources: https://megaeth.com/blog/introducing-megaeth
+
+---
+
+## Official Financial Resources
+
+Official Blog: https://megaeth.com/blog
+Transparency Report: tidak diungkap
+Treasury Dashboard: tidak diungkap
+Governance: tidak diungkap (tidak ada governance portal teridentifikasi)
+Messari: tidak diungkap (belum ada halaman proyek Messari terverifikasi)
+Token Terminal: tidak diungkap (belum ada halaman proyek Token Terminal terverifikasi)
+DefiLlama: tidak diungkap (belum terdaftar di DefiLlama)
+CryptoRank: tidak diungkap (belum terdaftar di CryptoRank)
+Whitepaper: tidak diungkap (tidak ada whitepaper PDF terpisah; arsitektur di blog dan docs)
+
+---
+
+## Ringkasan
+
+Total Funding Raised: tidak diungkap (hanya announcement investor nama tanpa jumlah)
+Funding Rounds: 1 (Seed/Strategic 2023 - DragonFly, Figment)
+Treasury Status: tidak diungkap
+Revenue Sources: 0 live (testnet only); 4 planned (Protocol Fees, Bridge Fees, Sequencer Revenue, DA Fees)
+Revenue Availability: Tidak tersedia (belum mainnet)
+
+---
+
+## Open Threads
+
+- Jumlah dana yang dikumpulkan dari DragonFly dan Figment sepenuhnya tidak diungkapkan (tidak ada angka di press release/blog resmi).
+- Valuasi perusahaan pada ronde pendanaan 2023 tidak diungkapkan.
+- Struktur deal (SAFE, equity, token warrant, discount, valuation cap) tidak tersedia publik.
+- Apakah ada ronde pendanaan tambahan (Series A, Strategic Extension) setelah 2023 tidak dikonfirmasi.
+- Tidak ada transparency report, treasury dashboard, atau laporan keuangan berkala yang dipublikasikan.
+- Tidak ada informasi tentang legal entity jurisdiction yang mempengaruhi pajak, regulasi token, dan pelaporan keuangan.
+- Tokenomics (supply, alokasi investor, vesting schedule) sepenuhnya tidak tersedia; tidak dapat menilai financial exposure investor vs community.
+- Status aplikasi grant (Ethereum Foundation, Optimism RPGF, EigenLayer ecosystem grant) tidak diketahui.
+- Burn rate, runway, dan proyeksi kebutuhan dana hingga mainnet launch tidak diungkapkan.
+- Tidak ada auditor keuangan independen teridentifikasi untuk MegaETH Labs.

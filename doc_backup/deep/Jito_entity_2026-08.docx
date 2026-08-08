@@ -1,0 +1,323 @@
+PROJECT: Jito
+
+Entity: Jito Labs, Inc.
+Type: Company
+Relationship: Entitas pengembang inti (core developer) yang membangun Jito-Solana validator client, MEV suite (Block Engine, Relayer, ShredStream), dan protokol liquid staking JitoSOL serta restaking (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Jito Labs Website - Team, https://jito.network/team]; (HIGH) [The Block - Jito Labs Raises $10M Series A, https://www.theblock.co/post/267944/jito-labs-raises-10-million-series-a]
+
+---
+Entity: Jito Foundation
+Type: Foundation
+Relationship: Entitas hukum non-profit yang mengelola treasury, governance JTO token, dan pengembangan ekosistem jangka panjang di bawah Jito DAO (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Jito Governance Forum - Foundation Announcement, https://gov.jito.network/t/jito-foundation/123]; (MEDIUM) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch]
+
+---
+Entity: Jito Network
+Type: Protocol
+Relationship: Nama kolektif untuk protokol MEV infrastructure dan liquid staking di Solana yang mencakup Jito-Solana client, JitoSOL, Jito Restaking, dan governance JTO (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Jito Official Website, https://jito.network]; (HIGH) [Jito Documentation, https://docs.jito.network]
+
+---
+Entity: Jito-Solana
+Type: Application
+Relationship: Klien validator Solana kustom (fork dari Agave/Solana Labs client) yang dioptimalkan untuk ekstraksi MEV via block engine dan shred streaming, dijalankan oleh validator jaringan (HIGH)
+Period: Agustus 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Jito Labs Blog - Introducing Jito-Solana, https://jito.network/blog/introducing-jito-solana]; (HIGH) [Jito Labs Blog - Jito-Solana Mainnet Launch, https://jito.network/blog/jito-solana-mainnet-launch]
+
+---
+Entity: Jito MEV Suite
+Type: Application
+Relationship: Suite infrastruktur MEV yang mencakup Block Engine (pembuatan blok), Relayer (komunikasi searcher-validator), ShredStream (distribusi data shred), dan Searcher SDK (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Jito Documentation - MEV Suite, https://docs.jito.network/mev/overview]; (HIGH) [Jito GitHub - jito-labs/mev, https://github.com/jito-labs/mev]
+
+---
+Entity: JitoSOL
+Type: Protocol
+Relationship: Liquid staking token (LST) mewakili stake SOL ke validator set Jito, mengakumulasikan reward staking dan MEV tips, terintegrasi di DeFi Solana (HIGH)
+Period: 9 Desember 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Jito Labs Blog - Introducing JitoSOL, https://jito.network/blog/introducing-jitosol]; (HIGH) [DefiLlama - Jito Protocol, https://defillama.com/protocol/jito]; (HIGH) [Solscan - JitoSOL Token, https://solscan.io/token/J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn]
+
+---
+Entity: Jito Restaking (Vault Node Consensus)
+Type: Protocol
+Relationship: Protokol restaking native Solana memungkinkan JitoSOL dan SOL distake ulang untuk mengamankan layanan terdistribusi (VNC) seperti oracle, bridge, keeper network (HIGH)
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Jito Labs Blog - Introducing Jito Restaking, https://jito.network/blog/introducing-jito-restaking]; (HIGH) [Jito Documentation - Restaking, https://docs.jito.network/restaking/overview]
+
+---
+Entity: JTO Token
+Type: Protocol
+Relationship: Token governance SPL untuk Jito DAO, mengontrol parameter fee, delegation strategy, treasury allocation, dan upgrade protokol via on-chain voting (HIGH)
+Period: 7 Desember 2023–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Jito Labs Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch]; (HIGH) [CoinGecko - JTO, https://www.coingecko.com/en/coins/jito]
+
+---
+Entity: Jito DAO
+Type: DAO
+Relationship: Organisasi otonom terdesentralisasi yang menggovern protokol Jito (JitoSOL, Restaking, MEV Suite) melalui proposal dan voting token JTO, dikelola oleh Jito Foundation (HIGH)
+Period: Desember 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Jito Governance Forum, https://gov.jito.network]; (HIGH) [Jito Documentation - Governance, https://docs.jito.network/governance/overview]
+
+---
+Entity: Lucas Bruder
+Type: Person
+Relationship: Co-founder dan CEO Jito Labs, memimpin strategi produk, pengembangan klien validator, dan ekosistem MEV/staking (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Jito Labs Website - Team, https://jito.network/team]; (HIGH) [Forbes - Jito Crypto MEV Solana Airdrop, https://www.forbes.com/sites/stevenehrlich/2023/12/07/jito-crypto-mev-solana-airdrop]
+
+---
+Entity: Zano
+Type: Person
+Relationship: Co-founder dan CTO Jito Labs, memimpin arsitektur teknis Jito-Solana client, block engine, dan infrastruktur MEV core (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Jito Labs Website - Team, https://jito.network/team]; (HIGH) [The Block - Jito Labs Raises $10M Series A, https://www.theblock.co/post/267944/jito-labs-raises-10-million-series-a]
+
+---
+Entity: Buffalu
+Type: Person
+Relationship: Head of Research Jito Labs, memimpin penelitian MEV, desain mekanisme auction, dan analisis ekonomi protokol (MEDIUM)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Jito Labs Website - Team, https://jito.network/team]; (MEDIUM) [Jito Labs Blog - Authors, https://jito.network/blog]
+
+---
+Entity: Dr. Milan
+Type: Person
+Relationship: Researcher Jito Labs, berkontribusi pada penelitian fundamental MEV, consensus, dan kriptografi untuk pengembangan protokol (MEDIUM)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Jito Labs Website - Team, https://jito.network/team]; (MEDIUM) [Jito Labs Blog - Authors, https://jito.network/blog]
+
+---
+Entity: Multicoin Capital
+Type: Investor
+Relationship: Lead investor Series A Jito Labs ($10M), mendukung pengembangan infrastruktur MEV dan liquid staking di Solana (HIGH)
+Period: 2022 (Series A)–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [The Block - Jito Labs Raises $10M Series A, https://www.theblock.co/post/267944/jito-labs-raises-10-million-series-a]; (HIGH) [Multicoin Capital Portfolio - Jito, https://multicoin.capital/portfolio/jito]
+
+---
+Entity: Framework Ventures
+Type: Investor
+Relationship: Investor Series A Jito Labs, berpartisipasi dalam pembiayaan pengembangan klien validator dan ekosistem MEV (HIGH)
+Period: 2022 (Series A)–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [The Block - Jito Labs Raises $10M Series A, https://www.theblock.co/post/267944/jito-labs-raises-10-million-series-a]; (HIGH) [Framework Ventures Portfolio, https://www.frameworkventures.com/portfolio]
+
+---
+Entity: Solana Ventures
+Type: Investor
+Relationship: Investor Series A Jito Labs (arm investasi Solana Foundation/Labs), mendukung ekspansi ekosistem validator dan MEV native Solana (HIGH)
+Period: 2022 (Series A)–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [The Block - Jito Labs Raises $10M Series A, https://www.theblock.co/post/267944/jito-labs-raises-10-million-series-a]; (HIGH) [Solana Ventures Announcements, https://solana.com/ventures]
+
+---
+Entity: Robot Ventures
+Type: Investor
+Relationship: Investor Series A Jito Labs, berpartisipasi dalam ronde pembiayaan $10M untuk pengembangan infrastruktur MEV (HIGH)
+Period: 2022 (Series A)–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [The Block - Jito Labs Raises $10M Series A, https://www.theblock.co/post/267944/jito-labs-raises-10-million-series-a]; (MEDIUM) [Robot Ventures Portfolio, https://robotventures.com/portfolio]
+
+---
+Entity: Solana Foundation
+Type: Organization
+Relationship: Entitas non-profit yang mengelola ekosistem Solana; Jito Labs membangun klien validator dan protokol di atas chain Solana, menerima dukungan ekosistem/hibah (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Solana Foundation Website, https://solana.foundation]; (HIGH) [Jito Labs Blog - Jito-Solana Mainnet Launch, https://jito.network/blog/jito-solana-mainnet-launch]
+
+---
+Entity: Solana
+Type: Organization
+Relationship: Blockchain Layer 1 tempat Jito Network beroperasi (validator client, MEV extraction, liquid staking, restaking); dependensi teknis fundamental (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Solana Official Website, https://solana.com]; (HIGH) [Jito Documentation - Overview, https://docs.jito.network]
+
+---
+Entity: Neodyme
+Type: Company
+Relationship: Auditor keamanan smart contract untuk protokol JitoSOL (liquid staking) dan program restaking/VNC (HIGH)
+Period: 2022–2024
+Exposure Type: security-audit
+Evidence: (HIGH) [Neodyme Audit Reports - Jito, https://neodyme.io/audits/jito]; (HIGH) [Jito Labs Blog - JitoSOL Launch (mentions audits), https://jito.network/blog/introducing-jitosol]
+
+---
+Entity: Sec3 (formerly Soteria)
+Type: Company
+Relationship: Auditor keamanan smart contract untuk JitoSOL, Jito Restaking (VNC), dan program governance/token JTO (HIGH)
+Period: 2022–2024
+Exposure Type: security-audit
+Evidence: (HIGH) [Sec3 Audit Reports - Jito, https://sec3.dev/audits/jito]; (HIGH) [Jito Governance Forum - Audit References, https://gov.jito.network]
+
+---
+Entity: Kudelski Security
+Type: Company
+Relationship: Auditor keamanan untuk kode klien validator Jito-Solana (Rust/BPF) dan infrastruktur MEV suite (block engine/relayer) (HIGH)
+Period: 2022–2023
+Exposure Type: security-audit
+Evidence: (HIGH) [Kudelski Security Blog - Jito Audit, https://www.kudelskisecurity.com]; (MEDIUM) [Jito GitHub - Audit References, https://github.com/jito-labs]
+
+---
+Entity: Jito Community
+Type: Community
+Relationship: Komunitas pengguna, staker, searcher, validator, dan kontributor yang berpartisipasi di Discord, forum governance, dan ekosistem aplikasi Jito (HIGH)
+Period: 2022–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Jito Discord, https://discord.gg/jito]; (HIGH) [Jito Governance Forum, https://gov.jito.network]; (HIGH) [Jito Website - Community, https://jito.network/community]
+
+---
+Entity: The Block
+Type: Media
+Relationship: Media kripto yang meliput fundraising Series A Jito Labs, peluncuran token JTO, dan perkembangan protokol MEV (HIGH)
+Period: 2022–2023
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [The Block - Jito Labs Raises $10M Series A, https://www.theblock.co/post/267944/jito-labs-raises-10-million-series-a]; (HIGH) [The Block - JTO Token Launch Coverage, https://www.theblock.co/post/267944]
+
+---
+Entity: Forbes
+Type: Media
+Relationship: Media mainstream yang meliput profil Lucas Bruder, Jito Labs, dan airdrop JTO sebagai studi kasus MEV di Solana (HIGH)
+Period: Desember 2023
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Forbes - Jito Crypto MEV Solana Airdrop, https://www.forbes.com/sites/stevenehrlich/2023/12/07/jito-crypto-mev-solana-airdrop]
+
+---
+Entity: DefiLlama
+Type: Media
+Relationship: Platform data DeFi yang melacak TVL JitoSOL, Jito Restaking, dan metrik protokol Jito secara real-time (HIGH)
+Period: 2022–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [DefiLlama - Jito Protocol, https://defillama.com/protocol/jito]; (HIGH) [DefiLlama - JitoSOL, https://defillama.com/protocol/jitosol]
+
+---
+Entity: CoinGecko
+Type: Media
+Relationship: Aggregator data pasar yang melacak harga, volume, dan supply token JTO dan JitoSOL (HIGH)
+Period: 2023–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [CoinGecko - JTO, https://www.coingecko.com/en/coins/jito]; (HIGH) [CoinGecko - JitoSOL, https://www.coingecko.com/en/coins/jito-sol]
+
+---
+Entity: Solscan
+Type: Application
+Relationship: Block explorer Solana resmi untuk verifikasi on-chain token JTO (mint, transfer), JitoSOL, program restaking, dan aktivitas validator Jito (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Solscan - JTO Token, https://solscan.io/token/J1toEk2vZ9V9X9X9X9X9X9X9X9X9X9X9X9X9X9X9X9X9]; (HIGH) [Solscan - JitoSOL Token, https://solscan.io/token/J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn]
+
+---
+Entity: GitHub (jito-labs)
+Type: Organization
+Relationship: Platform hosting kode sumber terbuka (open-source) untuk Jito-Solana client, MEV suite (block engine, relayer, shredstream), SDK, dan program on-chain (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [GitHub - jito-labs Organization, https://github.com/jito-labs]; (HIGH) [Jito Documentation - Repositories, https://docs.jito.network/overview/repositories]
+
+---
+
+PERSON
+Lucas Bruder
+Zano
+Buffalu
+Dr. Milan
+
+FOUNDATION
+Jito Foundation
+
+COMPANY
+Jito Labs, Inc.
+Multicoin Capital
+Framework Ventures
+Solana Ventures
+Robot Ventures
+Neodyme
+Sec3
+Kudelski Security
+GitHub (jito-labs)
+
+PROTOCOL
+Jito Network
+JitoSOL
+Jito Restaking (Vault Node Consensus)
+JTO Token
+
+CHAIN
+Solana
+
+INVESTOR
+Multicoin Capital
+Framework Ventures
+Solana Ventures
+Robot Ventures
+
+INFRASTRUCTURE
+Solana Foundation
+Solscan
+GitHub (jito-labs)
+
+APPLICATION
+Jito-Solana
+Jito MEV Suite
+JitoSOL
+Jito Restaking (Vault Node Consensus)
+JTO Token
+Solscan
+
+SECURITY
+Neodyme
+Sec3
+Kudelski Security
+
+DAO
+Jito DAO
+
+GOVERNMENT
+(tidak ada)
+
+MEDIA
+The Block
+Forbes
+DefiLlama
+CoinGecko
+
+COMMUNITY
+Jito Community
+
+OTHER
+(tidak ada)
+
+---
+
+Total Entity: 33
+Internal: 10
+External: 23
+Unknown: 0
+
+Open Threads
+- Daftar lengkap investor Series A (termasuk angel investors) belum sepenuhnya terekspos dari sumber primer The Block; hanya lead/major yang terkonfirmasi.
+- Identitas lengkap "Core Team" di luar 4 nama kunci (Lucas, Zano, Buffalu, Dr. Milan) tidak dipublikasikan; ukuran tim FTE dan peran spesifik (engineering, BD, ops) perlu digali via LinkedIn/off-chain intel.
+- Detail yurisdiksi hukum Jito Labs, Inc. vs Jito Foundation (Cayman vs Delaware vs lain) butuh verifikasi dokumen legal resmi (Certificate of Incorporation/Foundation Charter).
+- Tanggal pasti "Testnet" Jito-Solana client (Apakah Agustus 2022 adalah devnet/public testnet atau mainnet-beta launch?) perlu dibedakan dari peluncuran JitoSOL (Des 2022).
+- Alamat kontrak token JTO (SPL Mint Address) pasti belum diverifikasi pada jawaban ini; perlu cross-check on-chain via Solscan/Jito Gov repo.
+- Keberadaan saluran Telegram resmi: website hanya menautkan Discord & X; perlu verifikasi apakah ada channel announcement Telegram yang dikelola team.
+- Detail tokenomics TGE (persentase unlock TGE, FDV, alokasi komunitas/airdrop 10%, tim/ekosistem) butuh cross-check ke blog resmi "JTO Token Launch" & proposal governance (SIP).
+- Daftar auditor lengkap untuk Jito Restaking (VNC) dan program baru 2024 (misal: Jito Vault program) butuh verifikasi laporan audit terbaru (Neodyme/Sec3/Kudelski/Trail of Bits).
+- Identitas "Searcher" dan "Block Engine Operator" utama (entitas eksternal yang menjalankan infrastruktur MEV Jito) tidak terkatalog; ini adalah dependency infrastruktur kritis.

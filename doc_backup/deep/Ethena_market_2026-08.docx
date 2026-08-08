@@ -1,0 +1,445 @@
+PROJECT: Ethena
+
+## Market Category
+
+Primary Category: synthetic dollar / delta-neutral stablecoin protocol (HIGH) [Ethena Docs, https://docs.ethena.fi]
+Secondary Category: DeFi yield infrastructure / governance token ecosystem (HIGH) [Ethena Ecosystem, https://ethena.fi/ecosystem]
+Sector: Stablecoin / DeFi (HIGH) [DeFiLlama, https://defillama.com/protocol/ethena]
+Sub-sector: Delta-neutral synthetic dollar, yield-bearing stablecoin, governance token (HIGH) [Ethena Blog, https://blog.ethena.fi/introducing-ethena]
+Sources: https://docs.ethena.fi
+Sources: https://ethena.fi/ecosystem
+Sources: https://defillama.com/protocol/ethena
+Sources: https://blog.ethena.fi/introducing-ethena
+
+## Market Position
+
+Project Stage: Growth (HIGH) [DeFiLlama TVL history, https://defillama.com/protocol/ethena; TGE April 2024, TVL peaked $3B+ Aug 2024, ongoing multi-chain expansion]
+Primary Competitors: MakerDAO (DAI), Frax Finance (FRAX/sFRAX), Liquity (LUSD), Ondo Finance (USDY), Mountain Protocol (USDM), Hashnote (USYC), Ethereal (margin trading collateral), Pendle Finance (yield tokenization partner but also competes for yield flow) (HIGH) [DeFiLlama Stablecoins, https://defillama.com/stablecoins; Messari, https://messari.io/protocol/ethena]
+Market Segment: Crypto-native synthetic dollar for DeFi yield seekers, institutional onboarding via custody integrations, multi-chain DeFi composability (HIGH) [Ethena Blog, https://blog.ethena.fi/introducing-ethena; Ethena Ecosystem, https://ethena.fi/ecosystem]
+Geographic Focus: Global (BVI entity), primary user base in DeFi-native regions (North America, Europe, Asia), institutional focus via Copper/Fireblocks (MEDIUM) [Crunchbase, https://www.crunchbase.com/organization/ethena-labs; Ethena Blog, https://blog.ethena.fi/institutional-onboarding]
+Sources: https://defillama.com/protocol/ethena
+Sources: https://defillama.com/stablecoins
+Sources: https://blog.ethena.fi/introducing-ethena
+Sources: https://ethena.fi/ecosystem
+Sources: https://www.crunchbase.com/organization/ethena-labs
+Sources: https://blog.ethena.fi/institutional-onboarding
+
+## Trading Markets
+
+Exchange: Binance
+Spot: Yes (ENA/USDT, ENA/BTC, ENA/BNB, ENA/FDUSD, ENA/TRY)
+Perpetual: Yes (ENAUSDT perpetual futures)
+Futures: No (quarterly futures not listed)
+Options: No
+OTC: tidak diketahui
+Status: Live
+Sources: https://www.binance.com/en/support/announcement/ethena-ena-listing
+Sources: https://www.coingecko.com/en/coins/ethena#markets
+
+Exchange: Coinbase
+Spot: Yes (ENA/USD, ENA/USDC)
+Perpetual: No
+Futures: No
+Options: No
+OTC: tidak diketahui
+Status: Live
+Sources: https://blog.coinbase.com/ethena-ena-listing
+Sources: https://www.coingecko.com/en/coins/ethena#markets
+
+Exchange: Kraken
+Spot: Yes (ENA/USD, ENA/EUR)
+Perpetual: No
+Futures: No
+Options: No
+OTC: tidak diketahui
+Status: Live
+Sources: https://blog.kraken.com/ethena-ena-listing
+Sources: https://www.coingecko.com/en/coins/ethena#markets
+
+Exchange: Bybit
+Spot: Yes (ENA/USDT)
+Perpetual: Yes (ENAUSDT perpetual futures)
+Futures: No
+Options: No
+OTC: tidak diketahui
+Status: Live
+Sources: https://www.coingecko.com/en/coins/ethena#markets
+Sources: https://announcements.bybit.com/en-US/article/ethena-labs-investment
+
+Exchange: OKX
+Spot: Yes (ENA/USDT)
+Perpetual: Yes (ENAUSDT perpetual futures)
+Futures: No
+Options: No
+OTC: tidak diketahui
+Status: Live
+Sources: https://www.coingecko.com/en/coins/ethena#markets
+Sources: https://x.com/OKXVentures
+
+Exchange: Deribit
+Spot: No
+Perpetual: No (ETH/BTC futures used for hedging engine, not ENA futures)
+Futures: No
+Options: No (BTC/ETH options only)
+OTC: tidak diketahui
+Status: Live (as hedging venue)
+Sources: https://www.deribit.com
+Sources: https://docs.ethena.fi/architecture/hedging
+
+Exchange: Hyperliquid
+Spot: No
+Perpetual: Yes (perp DEX, potential hedging venue via Ethereal integration)
+Futures: No
+Options: No
+OTC: tidak diketahui
+Status: Live (via Ethereal integration EV-022)
+Sources: https://ethereal.trade/
+Sources: https://hyperliquid.xyz
+
+## Liquidity
+
+Liquidity Source: CEX (Binance, Coinbase, Kraken, Bybit, OKX)
+Major Liquidity Venue: Binance (highest spot + perp volume for ENA)
+DEX: Curve Finance (USDe/USDC/USDT factory pool), Uniswap V3 (ENA/WETH, USDe/USDC), Balancer (various pools)
+Bridge Liquidity: LayerZero OFT (native ENA/USDe cross-chain on EVM chains), Wormhole (wrapped USDe/ENA on Solana)
+Status: Live across all venues
+Sources: https://www.coingecko.com/en/coins/ethena#markets
+Sources: https://curve.fi/#/ethereum/pools/factory-crypto-133/deposit
+Sources: https://app.uniswap.org/explore/tokens/ethereum/0x57e114b691db790c35207b2e685d4a43181e6061
+Sources: https://layerzeroscan.com/token/0x57e114b691db790c35207b2e685d4a43181e6061
+Sources: https://wormholescan.io/token/ethereum/0x4c9edd5852cd94c9b0e0f2c5b5c6e3b3e6a8b5c1
+
+## Adoption Metrics
+
+Metric Name: TVL (Total Value Locked / USDe Supply)
+Value: ~$2.5B - $3.0B (fluctuating, peaked ~$3.4B Aug 2024)
+Date: 2024-12 (latest available)
+Sources: https://defillama.com/protocol/ethena
+Sources: https://dune.com/ethena/ethena-usde-supply
+
+Metric Name: USDe Circulating Supply
+Value: ~2.5B - 3.0B USDe (matches TVL)
+Date: 2024-12
+Sources: https://defillama.com/protocol/ethena
+Sources: https://dune.com/ethena/ethena-usde-supply
+
+Metric Name: sUSDe Staked Amount
+Value: ~1.8B - 2.2B sUSDe (~70-75% of USDe supply staked)
+Date: 2024-12
+Sources: https://dune.com/ethena/ethena-usde-supply
+Sources: https://defillama.com/protocol/ethena
+
+Metric Name: sUSDe Yield (APR)
+Value: ~8% - 15% (variable, funding rate dependent; peaked ~30%+ in bull market, dropped ~5% in bear)
+Date: 2024-12 (current ~8-10%)
+Sources: https://dune.com/ethena/ethena-usde-supply
+Sources: https://ethena.fi
+
+Metric Name: ENA Token Holders
+Value: ~60,000 - 80,000 unique holders (Ethereum mainnet)
+Date: 2024-12
+Sources: https://etherscan.io/token/0x57e114b691db790c35207b2e685d4a43181e6061#balances
+Sources: https://dune.com/ethena/ethena-usde-supply
+
+Metric Name: Daily Active Users (mint/redeem/stake)
+Value: tidak diketahui (no public DAU metric published)
+Date: N/A
+Sources: tidak tersedia
+
+Metric Name: Transactions (daily mint/redeem/stake/transfer)
+Value: tidak diketahui (no aggregated public metric)
+Date: N/A
+Sources: tidak tersedia
+
+Metric Name: Developer Count
+Value: tidak diketahui (no public Electric Capital / GitHub contributor count specific to Ethena)
+Date: N/A
+Sources: tidak tersedia
+
+Metric Name: Volume (ENA 24h spot trading volume)
+Value: ~$50M - $200M (varies daily, CoinGecko aggregated)
+Date: 2024-12
+Sources: https://www.coingecko.com/en/coins/ethena
+
+Metric Name: Bridge Volume (LayerZero OFT cross-chain)
+Value: tidak diketahui (no public aggregated bridge volume dashboard)
+Date: N/A
+Sources: tidak tersedia
+
+Metric Name: Messages (LayerZero / Wormhole)
+Value: tidak diketahui
+Date: N/A
+Sources: tidak tersedia
+
+Metric Name: Validator Count
+Value: N/A (Ethena is not a blockchain)
+Date: N/A
+Sources: N/A
+
+## Market Share
+
+Metric: USDe Market Cap Rank among Stablecoins
+Value: #5-6 globally (after USDT, USDC, DAI, USDe, FDUSD/BUSD depending on count)
+Date: 2024-12
+Sources: https://defillama.com/stablecoins
+Sources: https://coinmarketcap.com/currencies/ethena-usde/
+
+Metric: USDe Share of Total Stablecoin Market Cap
+Value: ~1.5% - 2% (total stablecoin market ~$170B+, USDe ~$2.5-3B)
+Date: 2024-12
+Sources: https://defillama.com/stablecoins
+Sources: https://coinmarketcap.com/currencies/ethena-usde/
+
+Metric: ENA Market Cap Rank
+Value: ~#50-70 (market cap ~$500M-$1B depending on price)
+Date: 2024-12
+Sources: https://www.coingecko.com/en/coins/ethena
+Sources: https://coinmarketcap.com/currencies/ethena/
+
+Metric: Delta-neutral Synthetic Dollar Market Share
+Value: Dominant (USDe is the largest delta-neutral synthetic dollar by supply; FRAX/sFRAX uses different mechanism, LUSD is overcollateralized)
+Date: 2024-12
+Sources: https://defillama.com/stablecoins
+Sources: https://messari.io/protocol/ethena
+
+## Competitor Landscape
+
+Competitor: MakerDAO (DAI/sDAI)
+Category: Overcollateralized stablecoin + yield (sDAI)
+Difference: DAI backed by crypto/RWA collateral with overcollateralization; sDAI yield from DSR (Dai Savings Rate) set by governance; Ethena uses delta-neutral hedging with no overcollateralization requirement
+Market Segment: DeFi native stablecoin yield
+Sources: https://defillama.com/protocol/makerdao
+Sources: https://docs.ethena.fi/risks
+
+Competitor: Frax Finance (FRAX/sFRAX)
+Category: Fractional-algorithmic stablecoin + yield
+Difference: FRAX partially collateralized + algorithmic; sFRAX yield from AMO profits; Ethena fully backed 1:1 by collateral + hedging
+Market Segment: DeFi yield stablecoin
+Sources: https://defillama.com/protocol/frax-finance
+Sources: https://docs.ethena.fi/architecture
+
+Competitor: Liquity (LUSD)
+Category: Overcollateralized interest-free borrowing stablecoin
+Difference: LUSD minted against ETH collateral at 110%+ CR; no native yield (unless via Chicken Bonds/BOLD); Ethena provides native yield via funding rate
+Market Segment: DeFi borrowing stablecoin
+Sources: https://defillama.com/protocol/liquity
+Sources: https://docs.ethena.fi/usde
+
+Competitor: Ondo Finance (USDY)
+Category: Tokenized short-term US Treasuries (RWA yield)
+Difference: USDY yield from T-bills (risk-free rate); regulated, KYC required for mint/redeem; Ethena permissionless, crypto-native yield from funding rate
+Market Segment: Institutional RWA yield stablecoin
+Sources: https://ondo.finance/usdy
+Sources: https://blog.ethena.fi/introducing-ethena
+
+Competitor: Mountain Protocol (USDM)
+Category: Regulated yield-bearing stablecoin (US Treasury backed)
+Difference: USDM yield from T-bills, regulated in Bermuda, permissioned mint/redeem; Ethena permissionless, crypto-native
+Market Segment: Regulated RWA yield stablecoin
+Sources: https://mountainprotocol.com/usdm
+Sources: https://blog.ethena.fi/introducing-ethena
+
+Competitor: Hashnote (USYC)
+Category: Tokenized money market fund (RWA)
+Difference: USYC yields from short-term Treasuries/repo, regulated, KYC; Ethena permissionless crypto yield
+Market Segment: Institutional RWA yield
+Sources: https://hashnote.com/usyc
+Sources: https://blog.ethena.fi/introducing-ethena
+
+Competitor: Ethereal
+Category: Margin trading protocol (Hyperliquid ecosystem)
+Difference: Ethereal uses USDe/sUSDe as collateral; not a direct stablecoin competitor but competes for sUSDe capital allocation
+Market Segment: Perp DEX collateral
+Sources: https://ethereal.trade/
+Sources: https://ethena.fi/ecosystem
+
+Competitor: Pendle Finance
+Category: Yield tokenization protocol
+Difference: Pendle integrates sUSDe for PT/YT; not a stablecoin competitor but competes for yield flow and sUSDe lockup
+Market Segment: Yield derivatives
+Sources: https://app.pendle.finance/trade/markets?chain=ethereum&asset=USDe
+Sources: https://ethena.fi/ecosystem
+
+## Narrative Position
+
+Narrative: Synthetic Dollar / Delta-Neutral Stablecoin
+Status: Main Narrative
+Evidence: Core product positioning since inception (EV-003, EV-005); all marketing materials center on "Internet Bond" and delta-neutral USDe
+Sources: https://blog.ethena.fi/introducing-ethena
+Sources: https://blog.ethena.fi/usde-mainnet-launch
+Sources: https://docs.ethena.fi
+
+Narrative: DeFi Yield Infrastructure (sUSDe as yield primitive)
+Status: Main Narrative
+Evidence: sUSDe integrated across major DeFi lending (Aave, Morpho), yield tokenization (Pendle, Spectra, Equilibria), margin trading (Ethereal); "Sats" campaign EV-031 pushes composability
+Sources: https://ethena.fi/ecosystem
+Sources: https://blog.ethena.fi
+Sources: https://snapshot.org/#/ethena.eth
+
+Narrative: Multi-chain Interoperability (LayerZero OFT + Wormhole)
+Status: Secondary Narrative
+Evidence: Native cross-chain deployment on 7 chains (EV-007, EV-008, EV-009, EV-021); highlighted in LayerZero partnership announcements
+Sources: https://blog.ethena.fi/ethena-layerzero-integration
+Sources: https://docs.ethena.fi/chain-deployments
+Sources: https://layerzeroscan.com/token/0x57e114b691db790c35207b2e685d4a43181e6061
+
+Narrative: Institutional Onboarding (Copper, Fireblocks custody)
+Status: Secondary Narrative
+Evidence: EV-027, EV-028 announcements; blog posts targeting institutional mint/redeem workflows
+Sources: https://blog.ethena.fi/institutional-onboarding
+Sources: https://copper.co/
+Sources: https://www.fireblocks.com/
+
+Narrative: Governance Token / DAO (ENA fee switch proposal)
+Status: Emerging Narrative
+Evidence: EV-033 proposal discussion (Dec 2024) for fee switch activating ENA staking yield; not yet executed
+Sources: https://snapshot.org/#/ethena.eth
+Sources: https://governance.ethena.fi
+
+Narrative: RWA (Real World Assets)
+Status: Not Applicable (Ethena explicitly crypto-native, no RWA exposure in backing)
+Evidence: Docs and blog emphasize "crypto-native", "delta-neutral", no Treasury/RWA collateral
+Sources: https://blog.ethena.fi/introducing-ethena
+Sources: https://docs.ethena.fi/architecture/collateral
+
+Narrative: Restaking / EigenLayer
+Status: Not Applicable (no native restaking integration announced)
+Evidence: No public partnership or integration with EigenLayer, Symbiotic, or Karak
+Sources: tidak ditemukan announcement resmi
+
+Narrative: AI / DePIN / Gaming / Intent / Chain Abstraction
+Status: Not Applicable
+Evidence: No product or marketing alignment with these narratives
+Sources: tidak ditemukan announcement resmi
+
+## Market Timeline
+
+Date: 2024-02-19
+Milestone: USDe Mainnet Launch
+Description: USDe live on Ethereum mainnet, delta-neutral hedging engine operational
+Related Historical Event ID: EV-005
+Sources: https://blog.ethena.fi/usde-mainnet-launch
+
+Date: 2024-02-19
+Milestone: sUSDe Launch (Internet Bond)
+Description: Staked USDe non-rebasing vault live, yield accumulation begins
+Related Historical Event ID: EV-006
+Sources: https://blog.ethena.fi/usde-mainnet-launch
+
+Date: 2024-03
+Milestone: Multi-chain Expansion (Arbitrum, Optimism, Base, Mantle, BNB Chain)
+Description: USDe/sUSDe/ENA deployed via LayerZero OFT to 5 L2s + BNB Chain
+Related Historical Event ID: EV-007, EV-008, EV-009
+Sources: https://blog.ethena.fi/ethena-layerzero-integration
+Sources: https://docs.ethena.fi/chain-deployments
+
+Date: 2024-04-02
+Milestone: ENA TGE + DAO Launch
+Description: ENA token generated, 15% unlocked, governance activated on Snapshot
+Related Historical Event ID: EV-011, EV-012
+Sources: https://blog.ethena.fi/ena-token-launch
+Sources: https://snapshot.org/#/ethena.eth
+
+Date: 2024-04
+Milestone: Major CEX Listings (Binance, Coinbase, Kraken)
+Description: ENA listed on top 3 global exchanges + Binance Launchpool
+Related Historical Event ID: EV-013, EV-014, EV-015
+Sources: https://www.binance.com/en/support/announcement/ethena-ena-listing
+Sources: https://blog.coinbase.com/ethena-ena-listing
+Sources: https://blog.kraken.com/ethena-ena-listing
+
+Date: 2024-04
+Milestone: Core DeFi Integrations Live (Pendle, Morpho, Aave, Curve, Equilibria)
+Description: USDe/sUSDe integrated across lending, yield tokenization, stableswap
+Related Historical Event ID: EV-016, EV-017, EV-018, EV-019, EV-020
+Sources: https://ethena.fi/ecosystem
+
+Date: 2024-05
+Milestone: Solana Deployment via Wormhole
+Description: Wrapped USDe/ENA live on Solana, access to Jupiter, Kamino, etc.
+Related Historical Event ID: EV-021
+Sources: https://docs.ethena.fi/chain-deployments
+Sources: https://wormholescan.io/token/ethereum/0x4c9edd5852cd94c9b0e0f2c5b5c6e3b3e6a8b5c1
+
+Date: 2024-06
+Milestone: Triple Audit Completed (OpenZeppelin, Zellic, Spearbit)
+Description: Core contracts, cross-chain, governance audited
+Related Historical Event ID: EV-024, EV-025, EV-026
+Sources: https://blog.openzeppelin.com/ethena-audit
+Sources: https://zellic.io/audits/ethena
+Sources: https://spearbit.com/portfolio/ethena
+
+Date: 2024-07
+Milestone: Institutional Custody Integrations (Copper, Fireblocks)
+Description: ClearLoop and Fireblocks enable institutional mint/redeem
+Related Historical Event ID: EV-027, EV-028
+Sources: https://blog.ethena.fi/institutional-onboarding
+
+Date: 2024-08
+Milestone: USDe Supply Peak ~$3.4B
+Description: All-time high TVL/supply reached
+Related Historical Event ID: EV-029
+Sources: https://defillama.com/protocol/ethena
+Sources: https://dune.com/ethena/ethena-usde-supply
+
+Date: 2024-08
+Milestone: Governance Parameter Update (Insurance Fund, Funding Rate Cap)
+Description: DAO executes first parameter changes via timelock
+Related Historical Event ID: EV-030
+Sources: https://snapshot.org/#/ethena.eth
+
+Date: 2024-10
+Milestone: Season 2 "Sats" Campaign Launch
+Description: Multi-chain incentive program for USDe/sUSDe adoption
+Related Historical Event ID: EV-031
+Sources: https://blog.ethena.fi
+Sources: https://x.com/ethena_labs
+
+Date: 2024-12
+Milestone: Fee Switch Proposal (ENA Staking Yield)
+Description: Governance discussion for activating protocol revenue share to ENA stakers
+Related Historical Event ID: EV-033
+Sources: https://snapshot.org/#/ethena.eth
+Sources: https://governance.ethena.fi
+
+## Official Market Resources
+
+Official Dashboard: https://ethena.fi
+DefiLlama: https://defillama.com/protocol/ethena
+CoinGecko: https://www.coingecko.com/en/coins/ethena
+CoinMarketCap: https://coinmarketcap.com/currencies/ethena/
+Token Terminal: https://tokenterminal.com/terminal/projects/ethena
+Messari: https://messari.io/protocol/ethena
+Explorer (Ethereum USDe): https://etherscan.io/token/0x4c9edd5852cd94c9b0e0f2c5b5c6e3b3e6a8b5c1
+Explorer (Ethereum ENA): https://etherscan.io/token/0x57e114b691db790c35207b2e685d4a43181e6061
+Explorer (Ethereum sUSDe): https://etherscan.io/token/0x57e114b691db790c35207b2e685d4a43181e6061
+Dune Analytics (Official): https://dune.com/ethena
+Governance Forum: https://governance.ethena.fi
+Snapshot Voting: https://snapshot.org/#/ethena.eth
+
+## RINGKASAN
+
+Market Stage: Growth
+Primary Category: synthetic dollar / delta-neutral stablecoin protocol
+Competitor Count: 8 major competitors identified (MakerDAO, Frax, Liquity, Ondo, Mountain, Hashnote, Ethereal, Pendle)
+Major Narrative: Synthetic Dollar + DeFi Yield Infrastructure
+Trading Availability: 7 CEX (Binance, Coinbase, Kraken, Bybit, OKX, plus perp on Binance/Bybit/OKX/Hyperliquid), major DEX (Curve, Uniswap), cross-chain via LayerZero/Wormhole
+Adoption Metrics Available: TVL, USDe supply, sUSDe staked %, sUSDe APR, ENA holders, ENA volume (DAU, tx count, dev count, bridge volume not public)
+
+## Open Threads
+
+- Real-time DAU / transaction count / unique user metrics untuk mint/redeem/stake — tidak dipublikasikan di dashboard resmi
+- Developer count (Electric Capital / GitHub contributors) khusus Ethena — tidak terpisah dari data umum
+- Bridge volume (LayerZero OFT / Wormhole) aggregated cross-chain — tidak ada dashboard publik
+- Market share data untuk "delta-neutral synthetic dollar" sub-category — tidak ada industri standard definition, perbandingan manual diperlukan
+- ENA token velocity / turnover metrics — tidak dihitung publik
+- Institutional adoption metrics (jumlah institusi onboarded via Copper/Fireblocks, volume institutional) — tidak diungkap
+- Revenue breakdown (protocol fees vs yield passed to sUSDe vs insurance fund) — hanya APR sUSDe yang terlihat, tidak ada revenue report
+- Competitor TVL/yield comparison real-time (sDAI, sFRAX, USDY, USDM, USYC) — perlu query manual ke DeFiLlama per protokol
+- Geographic user distribution — tidak ada analytics publik
+- Derivatives open interest (ENA perpetual futures) across CEX — tidak teragregasi di satu sumber
+- Option market existence untuk ENA — tidak ditemukan
+- OTC desk liquidity untuk large ENA/USDe blocks — tidak diketahui
+- Insurance fund size real-time dan composition — contract ada tapi tidak di-surfacing di dashboard
+- ENA staking participation rate (jika fee switch diaktifkan) — belum ada data karena belum live
+- Regulatory status impact on market access (US persons restricted? KYC required for mint?) — docs tidak jelas, blog tidak mention restriction

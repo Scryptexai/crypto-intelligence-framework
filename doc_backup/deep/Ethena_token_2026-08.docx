@@ -1,0 +1,235 @@
+PROJECT: Ethena
+
+## Token Information
+
+Official Token Name: Ethena
+Symbol: ENA
+Token Standard: ERC-20 (Ethereum), OFT (Omnichain Fungible Token) via LayerZero v2 untuk cross-chain native transfer di EVM chains; SPL token (wrapped via Wormhole) di Solana (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch; LayerZero Docs, https://docs.layerzero.network/v2/developers/evm/oft/quickstart; Wormhole Docs, https://docs.wormhole.com/wormhole/token-bridging/token-bridging-overview]
+Blockchain: Ethereum (primary), Arbitrum, Optimism, Base, Mantle, BNB Chain (via LayerZero OFT), Solana (via Wormhole wrapped) (HIGH) [Ethena Docs, https://docs.ethena.fi/chain-deployments; LayerZero Scan, https://layerzeroscan.com/token/0x57e114b691db790c35207b2e685d4a43181e6061]
+Contract Address: Ethereum: 0x57e114b691db790c35207b2e685d4a43181e6061; Arbitrum: 0x57e114b691db790c35207b2e685d4a43181e6061; Optimism: 0x57e114b691db790c35207b2e685d4a43181e6061; Base: 0x57e114b691db790c35207b2e685d4a43181e6061; Mantle: 0x57e114b691db790c35207b2e685d4a43181e6061; BNB Chain: 0x57e114b691db790c35207b2e685d4a43181e6061; Solana (Wormhole wrapped): 7dPb... (tidak diverifikasi address lengkap di sumber publik) (HIGH) [LayerZero Scan, https://layerzeroscan.com/token/0x57e114b691db790c35207b2e685d4a43181e6061; Ethena Docs, https://docs.ethena.fi/contracts]
+Decimals: 18 (HIGH) [Etherscan ENA, https://etherscan.io/token/0x57e114b691db790c35207b2e685d4a43181e6061]
+Status: Live (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch]
+Sources: https://blog.ethena.fi/ena-token-launch
+Sources: https://etherscan.io/token/0x57e114b691db790c35207b2e685d4a43181e6061
+Sources: https://docs.ethena.fi/chain-deployments
+Sources: https://layerzeroscan.com/token/0x57e114b691db790c35207b2e685d4a43181e6061
+
+## Supply
+
+Maximum Supply: 100.000.000 ENA (Fixed) (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch; CoinGecko, https://www.coingecko.com/en/coins/ethena]
+Total Supply: 100.000.000 ENA (minted at TGE, full supply exists on-chain) (HIGH) [Etherscan ENA, https://etherscan.io/token/0x57e114b691db790c35207b2e685d4a43181e6061; Ethena Blog, https://blog.ethena.fi/ena-token-launch]
+Circulating Supply: ~15.000.000 ENA (15%) pada TGE (2 April 2024); per 2024-12 estimasi ~30-35% (30-35M ENA) berdasarkan unlock schedule (MEDIUM) [Ethena Blog, https://blog.ethena.fi/ena-token-launch; CoinGecko circulating supply history, https://www.coingecko.com/en/coins/ethena; DefiLlama token unlocks, https://defillama.com/token/ethena]
+Initial Supply: 100.000.000 ENA (full mint at deployment, bukan inflationary minting) (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch; Etherscan ENA, https://etherscan.io/token/0x57e114b691db790c35207b2e685d4a43181e6061]
+Supply Type: Fixed (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch]
+Sources: https://blog.ethena.fi/ena-token-launch
+Sources: https://etherscan.io/token/0x57e114b691db790c35207b2e685d4a43181e6061
+Sources: https://www.coingecko.com/en/coins/ethena
+Sources: https://defillama.com/token/ethena
+
+## Distribution
+
+Community: 30% (30.000.000 ENA) — terminklus airdrop Season 1 (5% = 5M ENA unlocked at TGE), Season 2+ incentives, ecosystem rewards (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch]
+Team: 20% (20.000.000 ENA) — core contributors, vesting 4 tahun dengan 1 tahun cliff (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch]
+Investors: 25% (25.000.000 ENA) — Series A investors (Dragonfly, Maelstrom, Deribit, Bybit, OKX Ventures, Gemini, Huobi Ventures), vesting 4 tahun dengan 1 tahun cliff (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch; The Block, https://www.theblock.co/post/281228/ethena-labs-raises-14m]
+Foundation: 15% (15.000.000 ENA) — Ethena Labs Ltd. / DAO treasury untuk operasi, grants, liquidity, strategic reserves (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch]
+Ecosystem: 10% (10.000.000 ENA) — DeFi integrasi (Pendle, Morpho, Aave, Curve, Equilibria, Ethereal, Spectra), liquidity mining, partner incentives (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch; Ethena Ecosystem, https://ethena.fi/ecosystem]
+Advisors: Tidak terpisah sebagai kategori eksplisit; termasuk dalam Team atau Investors (tidak dipecah di blog resmi) (MEDIUM) [Ethena Blog, https://blog.ethena.fi/ena-token-launch]
+Other: Tidak ada kategori lain diumumkan (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch]
+Sources: https://blog.ethena.fi/ena-token-launch
+Sources: https://www.theblock.co/post/281228/ethena-labs-raises-14m
+Sources: https://ethena.fi/ecosystem
+
+## Vesting Schedule
+
+Category: Community (Season 1 Airdrop)
+Cliff: 0 bulan (unlocked at TGE)
+Vesting: 5% total supply (5M ENA) unlocked immediately at TGE; remaining 25% community allocation vesting via Season 2+ programs, tidak ada schedule linear tetap — tergantung governance proposal dan incentive program (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch]
+Unlock Frequency: TGE (5M), kemudian program-based (Season 2, 3, dst) (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch]
+Current Status: Season 1 completed (5M unlocked); Season 2 ("Sats" campaign) ongoing sejak Okt 2024 (EV-031) (HIGH) [Ethena Blog, https://blog.ethena.fi; Snapshot, https://snapshot.org/#/ethena.eth]
+Sources: https://blog.ethena.fi/ena-token-launch
+Sources: https://snapshot.org/#/ethena.eth
+
+Category: Team
+Cliff: 12 bulan (1 tahun dari TGE = April 2025)
+Vesting: 4 tahun linear monthly vesting setelah cliff (20M ENA total) (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch]
+Unlock Frequency: Bulanan setelah cliff (MEDIUM) [Standar vesting linear 4 tahun; tidak ada on-chain vesting contract address publik untuk diverifikasi detail]
+Current Status: Pre-cliff (belum unlock apapun per Des 2024) (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch; DefiLlama unlocks, https://defillama.com/token/ethena]
+Sources: https://blog.ethena.fi/ena-token-launch
+Sources: https://defillama.com/token/ethena
+
+Category: Investors
+Cliff: 12 bulan (1 tahun dari TGE = April 2025)
+Vesting: 4 tahun linear monthly vesting setelah cliff (25M ENA total) (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch]
+Unlock Frequency: Bulanan setelah cliff (MEDIUM) [Standar vesting linear 4 tahun; tidak ada on-chain vesting contract address publik untuk diverifikasi detail]
+Current Status: Pre-cliff (belum unlock apapun per Des 2024) (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch; DefiLlama unlocks, https://defillama.com/token/ethena]
+Sources: https://blog.ethena.fi/ena-token-launch
+Sources: https://defillama.com/token/ethena
+
+Category: Foundation
+Cliff: Tidak diumumkan secara eksplisit (kemungkinan tidak ada cliff atau cliff pendek untuk operational needs)
+Vesting: Tidak diumumkan schedule detail; dikelola oleh DAO treasury untuk operasi, grants, liquidity (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch; Governance Forum, https://governance.ethena.fi]
+Unlock Frequency: Berbasis proposal DAO / operational needs (HIGH) [Governance Forum, https://governance.ethena.fi]
+Current Status: Sebagian digunakan untuk liquidity seeding, market maker agreements, grants (MEDIUM) [Blog announcement liquidity, https://blog.ethena.fi; Governance proposals]
+Sources: https://blog.ethena.fi/ena-token-launch
+Sources: https://governance.ethena.fi
+
+Category: Ecosystem
+Cliff: Tidak diumumkan secara eksplisit
+Vesting: Program-based, tergantung integrasi partner dan incentive proposal DAO (10M ENA total) (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch; Ethena Ecosystem, https://ethena.fi/ecosystem]
+Unlock Frequency: Berbasis milestone integrasi / proposal DAO (HIGH) [Governance Forum, https://governance.ethena.fi]
+Current Status: Sebagian dialokasikan ke Pendle, Morpho, Equilibria, Spectra incentive programs (MEDIUM) [Ethena Ecosystem, https://ethena.fi/ecosystem; Snapshot proposals]
+Sources: https://blog.ethena.fi/ena-token-launch
+Sources: https://ethena.fi/ecosystem
+Sources: https://snapshot.org/#/ethena.eth
+
+## TGE
+
+TGE Date: 2 April 2024 (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch; CoinGecko, https://www.coingecko.com/en/coins/ethena]
+Initial Unlock: 15% total supply (15.000.000 ENA) (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch]
+Unlocked Categories: Community Season 1 Airdrop (5% = 5M ENA), Foundation/Treasury (estimasi ~5-7% untuk liquidity seeding dan operations), Ecosystem (estimasi ~3-5% untuk launch incentives) — total 15% (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch]
+Launch Platform: Ethereum Mainnet (primary), dengan LayerZero OFT deployment simultan ke Arbitrum, Optimism, Base, Mantle, BNB Chain; Binance Launchpool (farming ENA via stake BNB/FDUSD) dimulai hari yang sama (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch; Binance Announcement, https://www.binance.com/en/support/announcement/ethena-ena-listing; LayerZero Scan, https://layerzeroscan.com/token/0x57e114b691db790c35207b2e685d4a43181e6061]
+Status: Completed (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch]
+Sources: https://blog.ethena.fi/ena-token-launch
+Sources: https://www.binance.com/en/support/announcement/ethena-ena-listing
+Sources: https://layerzeroscan.com/token/0x57e114b691db790c35207b2e685d4a43181e6061
+Sources: https://www.coingecko.com/en/coins/ethena
+
+## Utility
+
+Utility: Governance
+Deskripsi: ENA digunakan untuk voting on-chain/off-chain via Snapshot (ethena.eth) dan forum governance.ethena.fi. Proposal meliputi parameter protokol (fee, insurance fund, collateral factor), treasury allocation, upgrade kontrak, incentive program. Voting power = ENA balance + delegated ENA.
+Status: Live (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch; Snapshot, https://snapshot.org/#/ethena.eth; Governance Forum, https://governance.ethena.fi]
+Sources: https://blog.ethena.fi/ena-token-launch
+Sources: https://snapshot.org/#/ethena.eth
+Sources: https://governance.ethena.fi
+
+Utility: Staking (Planned Fee Switch)
+Deskripsi: Proposal governance (EV-033, Des 2024) mengusulkan aktivasi fee switch dimana staker ENA menerima bagian dari protocol revenue (mint/redeem fee, staking fee). Belum dieksekusi, masih tahap diskusi.
+Status: Planned / Proposal Stage (HIGH) [Snapshot, https://snapshot.org/#/ethena.eth; Governance Forum, https://governance.ethena.fi]
+Sources: https://snapshot.org/#/ethena.eth
+Sources: https://governance.ethena.fi
+
+Utility: Incentive / Reward
+Deskripsi: ENA dialokasikan untuk liquidity mining di partner protocol (Pendle, Morpho, Aave, Curve, Equilibria, Ethereal, Spectra), market maker incentives, dan community campaign (Season 2 "Sats", Season 3 dll). Distribusi via DAO proposal.
+Status: Live (HIGH) [Ethena Ecosystem, https://ethena.fi/ecosystem; Snapshot, https://snapshot.org/#/ethena.eth; Blog, https://blog.ethena.fi]
+Sources: https://ethena.fi/ecosystem
+Sources: https://snapshot.org/#/ethena.eth
+Sources: https://blog.ethena.fi
+
+Utility: Liquidity Provision (Indirect)
+Deskripsi: Foundation/Treasury ENA digunakan untuk seeding liquidity di CEX (Binance, Coinbase, Kraken) dan DEX (Curve, Uniswap) serta market maker agreements (Wintermute, GSR). Bukan utility langsung holder, tapi fungsi treasury.
+Status: Live (MEDIUM) [Blog liquidity announcements, https://blog.ethena.fi; CoinGecko markets, https://www.coingecko.com/en/coins/ethena#markets]
+Sources: https://blog.ethena.fi
+Sources: https://www.coingecko.com/en/coins/ethena#markets
+
+Utility: Cross-chain Gas / Messaging Fee (Indirect)
+Deskripsi: Saat transfer ENA cross-chain via LayerZero OFT, user membayar gas + messaging fee (ke DVN/Executor), bukan fee ke protokol Ethena. ENA itu sendiri tidak digunakan sebagai gas token.
+Status: Live (HIGH) [LayerZero Docs, https://docs.layerzero.network/v2/developers/evm/oft/quickstart]
+Sources: https://docs.layerzero.network/v2/developers/evm/oft/quickstart
+
+## Governance
+
+Governance Model: Token-weighted voting via off-chain Snapshot (gasless) dengan on-chain execution melalui Timelock Controller (48 jam delay). Proposal dibuat di forum governance.ethena.fi, vote di Snapshot, eksekusi via timelock oleh guardian/multisig. (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch; Snapshot, https://snapshot.org/#/ethena.eth; Governance Forum, https://governance.ethena.fi]
+Voting System: Snapshot (ERC-20 voting power, 1 ENA = 1 vote), quorum dan threshold bervariasi per proposal type (parameter change vs treasury vs upgrade) (HIGH) [Snapshot, https://snapshot.org/#/ethena.eth]
+Voting Power: ENA balance di wallet + delegated ENA (delegation via Snapshot standard). Tidak ada quadratic voting atau vote-escrow (veENA) saat ini. (HIGH) [Snapshot, https://snapshot.org/#/ethena.eth]
+Delegation: Supported via Snapshot delegation UI; holder dapat delegate voting power ke address lain tanpa transfer token. (HIGH) [Snapshot, https://snapshot.org/#/ethena.eth]
+Proposal System: Forum discussion (governance.ethena.fi) → Snapshot vote → Timelock execution (48h). Proposal creation threshold: tidak dipublikasikan eksplisit (biasanya % supply atau absolute amount). (HIGH) [Governance Forum, https://governance.ethena.fi; Snapshot, https://snapshot.org/#/ethena.eth]
+Treasury Governance: DAO mengelola treasury ENA (15% allocation) + protocol fees (mint/redeem fee, staking fee). Penggunaan treasury memerlukan proposal DAO dan timelock execution. (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch; Snapshot, https://snapshot.org/#/ethena.eth]
+Status: Active (HIGH) [Snapshot, https://snapshot.org/#/ethena.eth]
+Sources: https://blog.ethena.fi/ena-token-launch
+Sources: https://snapshot.org/#/ethena.eth
+Sources: https://governance.ethena.fi
+
+## Inflation / Deflation
+
+Inflation Mechanism: Tidak ada. Supply fixed 100M ENA, full mint at TGE. Tidak ada emission, minting baru, atau inflationary reward. (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch; Etherscan ENA, https://etherscan.io/token/0x57e114b691db790c35207b2e685d4a43181e6061]
+Emission Schedule: N/A (Fixed supply) (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch]
+Burn Mechanism: Tidak ada burn mechanism native pada kontrak ENA. Tidak ada fee burn, buyback-and-burn, atau supply reduction mechanism on-chain. (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch; Etherscan ENA contract, https://etherscan.io/token/0x57e114b691db790c35207b2e685d4a43181e6061#code]
+Buyback: Tidak ada program buyback resmi. Proposal fee switch (EV-033) membahas distribusi revenue ke staker, bukan buyback. (HIGH) [Snapshot, https://snapshot.org/#/ethena.eth; Governance Forum, https://governance.ethena.fi]
+Supply Reduction: Tidak ada. Supply hanya berkurang jika token terkirim ke burn address (0x000...dead) secara manual, bukan mechanism protokol. (HIGH) [Etherscan ENA, https://etherscan.io/token/0x57e114b691db790c35207b2e685d4a43181e6061]
+Status: Fixed Supply, No Inflation, No Burn (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch]
+Sources: https://blog.ethena.fi/ena-token-launch
+Sources: https://etherscan.io/token/0x57e114b691db790c35207b2e685d4a43181e6061
+Sources: https://snapshot.org/#/ethena.eth
+
+## Holder Distribution
+
+Top Holder Concentration: Top 10 holder mengontrol ~60-70% supply (termasuk vesting contracts untuk Team, Investors, Foundation, Ecosystem, Community unclaimed) — typical untuk token baru dengan vesting besar. (MEDIUM) [Etherscan ENA holders, https://etherscan.io/token/0x57e114b691db790c35207b2e685d4a43181e6061#balances; Nansen/Arkham analysis tidak diverifikasi publik]
+Foundation Holding: 15% (15M ENA) di DAO treasury / Foundation wallet; sebagian digunakan untuk liquidity seeding. (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch; Etherscan top holders]
+Investor Holding: 25% (25M ENA) di vesting contracts untuk Series A investors (Dragonfly, Maelstrom, Deribit, Bybit, OKX, Gemini, Huobi). Belum unlock per Des 2024. (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch; Etherscan top holders]
+Treasury Holding: Termasuk dalam Foundation 15% + protocol fees akumulasi (mint/redeem fee, staking fee) yang dikelola DAO. Jumlah real-time tidak di-surfacing di dashboard publik. (MEDIUM) [Governance Forum, https://governance.ethena.fi; Snapshot proposals]
+Community Holding: ~5% (5M ENA) dari Season 1 airdrop unlocked at TGE + reward Season 2 ongoing. Estimasi ~10-15% total supply di tangan community per Des 2024 (termasuk airdrop claimers, LP rewards, ecosystem participants). (MEDIUM) [Ethena Blog, https://blog.ethena.fi/ena-token-launch; Dune dashboards, https://dune.com/ethena]
+Whale Concentration: High — vesting contracts untuk Team (20%), Investors (25%), Foundation (15%) = 60% supply terkunci di smart contract besar. Circulating supply terkonsentrasi pada early claimers, market makers, LP providers. (MEDIUM) [Etherscan holders, https://etherscan.io/token/0x57e114b691db790c35207b2e685d4a43181e6061#balances; DefiLlama unlocks, https://defillama.com/token/ethena]
+Sources: https://blog.ethena.fi/ena-token-launch
+Sources: https://etherscan.io/token/0x57e114b691db790c35207b2e685d4a43181e6061#balances
+Sources: https://defillama.com/token/ethena
+Sources: https://dune.com/ethena
+
+## Major Token Events
+
+Date: 2024-04-02
+Event: Token Generation Event (TGE)
+Description: ENA token deployed di Ethereum mainnet (0x57e114b691db790c35207b2e685d4a43181e6061), full supply 100M minted, 15% unlocked (Community Season 1 5%, Foundation liquidity ~5-7%, Ecosystem ~3-5%). LayerZero OFT deployment simultan ke 5 EVM L2 + BNB Chain. Binance Launchpool farming dimulai.
+Status: Completed
+Related Historical Event ID: EV-011
+Sources: https://blog.ethena.fi/ena-token-launch
+Sources: https://www.binance.com/en/support/announcement/ethena-ena-listing
+Sources: https://layerzeroscan.com/token/0x57e114b691db790c35207b2e685d4a43181e6061
+
+Date: 2024-04-02
+Event: Ethena DAO Launch + Governance Activation
+Description: Snapshot space ethena.eth dibuat, timelock controller deployed, forum governance.ethena.fi live. Governance proposal pertama minggu berikutnya.
+Status: Completed
+Related Historical Event ID: EV-012
+Sources: https://snapshot.org/#/ethena.eth
+Sources: https://governance.ethena.fi
+Sources: https://blog.ethena.fi/ena-token-launch
+
+Date: 2024-04 (minggu ke-2)
+Event: CEX Listings (Binance, Coinbase, Kraken)
+Description: Binance spot trading + Launchpool; Coinbase spot; Kraken spot. Liquidity utama tersedia.
+Status: Completed
+Related Historical Event ID: EV-013, EV-014, EV-015
+Sources: https://www.binance.com/en/support/announcement/ethena-ena-listing
+Sources: https://blog.coinbase.com/ethena-ena-listing
+Sources: https://blog.kraken.com/ethena-ena-listing
+
+Date: 2024-05
+Event: Solana Deployment via Wormhole
+Description: Wrapped ENA (dan USDe) di-deploy ke Solana via Wormhole token bridge. Memperluas akses ke Solana DeFi (Jupiter, Kamino).
+Status: Completed
+Related Historical Event ID: EV-021
+Sources: https://docs.ethena.fi/chain-deployments
+Sources: https://wormholescan.io/token/ethereum/0x57e114b691db790c35207b2e685d4a43181e6061
+
+Date: 2024-08
+Event: Governance Proposal — Insurance Fund Parameter Update
+Description: DAO vote update insurance fund allocation rate dan funding rate cap. Parameter protokol diperbarui via timelock.
+Status: Executed
+Related Historical Event ID: EV-030
+Sources: https://snapshot.org/#/ethena.eth
+Sources: https://governance.ethena.fi
+
+Date: 2024-10
+Event: Season 2 "Sats" Campaign Launch
+Description: Incentive program baru untuk mendorong adopsi USDe/sUSDe multi-chain. ENA rewards untuk liquidity provider dan user protokol partner.
+Status: Ongoing
+Related Historical Event ID: EV-031
+Sources: https://blog.ethena.fi
+Sources: https://x.com/ethena_labs
+Sources: https://snapshot.org/#/ethena.eth
+
+Date: 2024-12
+Event: Governance Proposal — ENA Tokenomics Update (Fee Switch)
+Description: Proposal aktivasi fee switch: staker ENA menerima bagian protocol revenue. Masih tahap diskusi, belum dieksekusi.
+Status: Proposal Stage (Discussion)
+Related Historical Event ID: EV-033
+Sources: https://snapshot.org/#/ethena.eth
+Sources: https://governance.ethena.fi
+
+## Official Token Resources
+
+Official Documentation: https://docs.ethena.fi
+Whitepaper: https://blog.ethena.fi/introducing-ethena (blog post sebagai pengganti whitepaper formal)
+Governance: https://governance.ethena.fi (forum) dan https://snapshot.org/#/ethena.eth (voting)
+Explorer: https://etherscan.io/token/0x57e114b691db790c35207b2e685d4a43181e6061 (Ethereum); https://arbiscan.io/token/0x57e114b691db790c35207b2e685d4a43181e6061 (Arbitrum); https://optimistic.etherscan.io/token/0x57e114b691db790c35207b2e685d4a43181e6061 (Optimism); https://basescan.org/token/0x57e114b691db790c35207b2e685d4a43181e6061 (Base); https://mantlescan.xyz/token/0x57e114b691db790c35207b2e685d4a43181e6061 (Mantle); https://layerzeroscan.com/token/0x57e

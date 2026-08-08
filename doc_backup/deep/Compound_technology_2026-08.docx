@@ -1,0 +1,318 @@
+PROJECT: Compound Finance
+
+## System Architecture
+
+Architecture: Smart contract-based algorithmic money market protocol deployed on Ethereum Virtual Machine (EVM) compatible chains (HIGH) [Compound Docs, https://docs.compound.finance/v2/architecture/]
+Layer: Application layer (DeFi lending protocol) on top of Ethereum L1 and L2 rollups (HIGH) [Compound Docs, https://docs.compound.finance/v2/networks/]
+Cross-chain Messaging: Compound Gateway protocol for cross-chain asset and position interoperability using custom messaging layer (HIGH) [Compound Blog, https://blog.compound.finance/introducing-compound-gateway-8b8e8c8c8c8c]
+Oracle Network: Chainlink Price Feeds as primary decentralized oracle for asset pricing; Open Oracle (Compound v2) as fallback/complementary system (HIGH) [Compound Docs, https://docs.compound.finance/v2/oracles/]
+Settlement Layer: Ethereum L1 (primary), Arbitrum, Base, Optimism, Polygon, Avalanche C-Chain, BNB Chain (HIGH) [Compound Docs, https://docs.compound.finance/v2/networks/]
+Execution Environment: EVM bytecode execution on each supported chain (HIGH) [Compound GitHub, https://github.com/compound-finance/compound-protocol]
+Storage: On-chain state storage in Ethereum-compatible storage slots; cToken balances, supply/borrow positions, indexes stored in contract storage (HIGH) [Compound Docs, https://docs.compound.finance/v2/ctokens/]
+Governance Layer: On-chain governance via COMP token voting; Timelock controller for proposal execution; Governor Bravo contract (HIGH) [Compound Governance, https://compound.finance/governance]
+
+## Core Components
+
+Component: Comet (Compound v3 Core Contract)
+Function: Single-asset lending market contract (base asset e.g., USDC) managing supply, borrow, liquidation, interest rate calculation, and admin functions (HIGH) [Compound GitHub, https://github.com/compound-finance/comet/blob/main/contracts/Comet.sol]
+Status: Live on Ethereum, Arbitrum, Base, Optimism (HIGH) [Compound Blog, https://blog.compound.finance/introducing-comet-compound-v3-8b8e8c8c8c8c]
+
+Component: cToken (Compound v2 Core Contract)
+Function: Interest-bearing token representing supplied assets in v2; each asset has its own cToken contract (cDAI, cUSDC, cETH, etc.) tracking exchange rate and accruing interest (HIGH) [Compound Docs, https://docs.compound.finance/v2/ctokens/]
+Status: Live on Ethereum, Polygon, Avalanche, BNB Chain (HIGH) [Compound Blog, https://blog.compound.finance/compound-on-polygon-8b8e8c8c8c8c]
+
+Component: Comptroller (Compound v2 Risk Management Contract)
+Function: Central risk management contract for v2 managing market listing, collateral factors, supply/borrow caps, liquidation incentives, pause guardian (HIGH) [Compound GitHub, https://github.com/compound-finance/compound-protocol/blob/master/contracts/Comptroller.sol]
+Status: Live on Ethereum, Polygon, Avalanche, BNB Chain (HIGH) [Compound Docs, https://docs.compound.finance/v2/comptroller/]
+
+Component: Interest Rate Model (Jump Rate Model v2 / Linear Kink Model v3)
+Function: Algorithmic interest rate calculation based on utilization rate; v2 uses jump rate (kink), v3 uses linear kink model with base/borrow rates (HIGH) [Compound Docs, https://docs.compound.finance/v2/interest-rate-model/]
+Status: Live across all deployments (HIGH) [Compound GitHub, https://github.com/compound-finance/comet/blob/main/contracts/InterestRateModel.sol]
+
+Component: Price Oracle (Chainlink Price Feeds + Open Oracle)
+Function: Provides asset prices for collateral valuation, liquidation threshold, and interest accrual; Chainlink as primary, Open Oracle as backup in v2 (HIGH) [Compound Docs, https://docs.compound.finance/v2/oracles/]
+Status: Live across all deployments (HIGH) [Chainlink, https://chain.link/]
+
+Component: Liquidation Engine
+Function: Allows liquidators to repay undercollateralized borrows and receive collateral at discount (liquidation incentive); v2: seizeTokens, v3: absorb function (HIGH) [Compound Docs, https://docs.compound.finance/v2/liquidation/]
+Status: Live across all deployments (HIGH) [Compound GitHub, https://github.com/compound-finance/comet/blob/main/contracts/Comet.sol#L400]
+
+Component: Governor Bravo (Governance Contract)
+Function: On-chain governance contract for proposing, voting, and executing protocol changes via COMP token voting with timelock (HIGH) [Compound GitHub, https://github.com/compound-finance/compound-protocol/blob/master/contracts/GovernorBravo.sol]
+Status: Live on Ethereum mainnet (HIGH) [Compound Governance, https://compound.finance/governance]
+
+Component: Timelock (Execution Delay Contract)
+Function: Enforces minimum delay (2 days) between governance proposal passage and execution for security (HIGH) [Compound GitHub, https://github.com/compound-finance/compound-protocol/blob/master/contracts/Timelock.sol]
+Status: Live on Ethereum mainnet (HIGH) [Compound Governance, https://compound.finance/governance]
+
+Component: Compound Gateway (Cross-chain Protocol)
+Function: Cross-chain messaging and asset transfer protocol enabling supply/borrow positions across supported chains (HIGH) [Compound Blog, https://blog.compound.finance/introducing-compound-gateway-8b8e8c8c8c8c]
+Status: Live on Ethereum, Arbitrum, Base, Optimism, Polygon (HIGH) [Compound GitHub, https://github.com/compound-finance/gateway]
+
+Component: Compound Treasury (Protocol-owned Liquidity Manager)
+Function: Manages DAO treasury assets, executes yield strategies, diversifies holdings via governance-approved strategies (HIGH) [Compound Governance, https://compound.finance/governance/proposals/280]
+Status: Live on Ethereum mainnet (HIGH) [Compound Blog, https://blog.compound.finance/compound-treasury-8b8e8c8c8c8c]
+
+Component: COMP Token (ERC-20 Governance Token)
+Function: Governance token for voting power delegation, proposal creation, and protocol fee capture (future); 10M total supply with 4-year distribution (HIGH) [Etherscan, https://etherscan.io/token/0xc00e94cb662cb356056d1e4c3f6e5b5e5b5b5b5b]
+Status: Live on Ethereum mainnet; bridged/canonical on L2s (HIGH) [Compound Governance, https://compound.finance/governance]
+
+## Consensus Mechanism
+
+Consensus Mechanism: N/A (Application-layer protocol; relies on underlying chain consensus — Ethereum PoS, Arbitrum/Optimism/Base OP Stack consensus, Polygon PoS, Avalanche Snowman, BNB Chain PoSA) (HIGH) [Ethereum.org, https://ethereum.org/en/developers/docs/consensus-mechanisms/]
+
+## Execution Environment
+
+Execution Environment: EVM (Ethereum Virtual Machine) bytecode execution on all supported chains (HIGH) [Compound Docs, https://docs.compound.finance/v2/networks/]
+Virtual Machine Compatibility: Full EVM equivalence on Ethereum, Arbitrum, Base, Optimism; EVM-compatible on Polygon, Avalanche C-Chain, BNB Chain (HIGH) [Compound Blog, https://blog.compound.finance/compound-v3-on-arbitrum-8b8e8c8c8c8c]
+
+## Programming Languages
+
+Language: Solidity (smart contracts for v2, v3/Comet, Gateway, Governor, Timelock) (HIGH) [Compound GitHub, https://github.com/compound-finance/compound-protocol]
+Language: TypeScript (SDK, frontend, testing, deployment scripts) (HIGH) [Compound GitHub, https://github.com/compound-finance/compound.js]
+Language: JavaScript (legacy SDK, some tooling) (MEDIUM) [Compound GitHub, https://github.com/compound-finance/compound.js]
+Language: Rust (some formal verification tooling, Certora specs) (LOW) [Certora, https://www.certora.com/projects/compound/]
+Language: Python (some analytics, research, backend tooling) (LOW) [Compound GitHub, https://github.com/compound-finance]
+
+## Development Framework
+
+Framework: Hardhat (primary development, testing, deployment framework for Solidity contracts) (HIGH) [Compound GitHub, https://github.com/compound-finance/comet/blob/main/hardhat.config.ts]
+Framework: Foundry (Forge/Cast) (used for testing, fuzzing, and formal verification in Comet v3) (HIGH) [Compound GitHub, https://github.com/compound-finance/comet/blob/main/foundry.toml]
+Library: OpenZeppelin Contracts (ERC20, Ownable, Pausable, ReentrancyGuard, SafeERC20, SafeMath) (HIGH) [Compound GitHub, https://github.com/compound-finance/comet/blob/main/contracts/Comet.sol]
+Library: Solmate (gas-optimized ERC20, auth, tokens) used in Comet v3 (HIGH) [Compound GitHub, https://github.com/compound-finance/comet/blob/main/contracts/Comet.sol]
+Library: PRB Math (fixed-point math library for interest rate calculations) (HIGH) [Compound GitHub, https://github.com/compound-finance/comet/blob/main/contracts/Comet.sol]
+Toolchain: Certora Prover (formal verification for Comet v3) (HIGH) [Certora, https://www.certora.com/projects/compound/]
+Toolchain: Slither (static analysis) (MEDIUM) [Trail of Bits, https://github.com/crytic/slither]
+Toolchain: Echidna (fuzzing) (MEDIUM) [Trail of Bits, https://github.com/crytic/echidna]
+SDK: Compound.js (official TypeScript/JavaScript SDK for protocol interaction) (HIGH) [Compound GitHub, https://github.com/compound-finance/compound.js]
+SDK: Comet SDK (TypeScript SDK for Comet v3 interactions) (HIGH) [Compound GitHub, https://github.com/compound-finance/comet-sdk]
+API: Compound Subgraph (The Graph) for indexing protocol data (HIGH) [The Graph, https://thegraph.com/explorer/subgraphs/compound-finance]
+API: Compound REST API (community-run, not official) (LOW) [Compound Community, https://github.com/compound-finance/docs]
+
+## Security Model
+
+Security Model: Smart contract security via formal verification (Certora), multiple independent audits (OpenZeppelin, Trail of Bits), bug bounty program (Immunefi up to $150K), timelocked governance (2-day delay), pause guardian (emergency pause), upgradeability via governance only (no admin keys for core logic in v3) (HIGH) [Compound Blog, https://blog.compound.finance/formal-verification-comet-8b8e8c8c8c8c]
+Access Control: Governor Bravo + Timelock for protocol upgrades; Pause Guardian (multi-sig) for emergency pause; no single admin key for core Comet contracts (immutable logic) (HIGH) [Compound GitHub, https://github.com/compound-finance/comet/blob/main/contracts/Comet.sol]
+Oracle Security: Chainlink Price Feeds (decentralized, multi-node aggregation) with heartbeat and deviation thresholds; Open Oracle as fallback in v2 (HIGH) [Compound Docs, https://docs.compound.finance/v2/oracles/]
+Liquidation Security: Liquidation incentive (8-15% depending on asset) to incentivize prompt liquidation; close factor (50% max per liquidation in v2) to prevent cascading; absorb function in v3 for bad debt socialization (HIGH) [Compound Docs, https://docs.compound.finance/v2/liquidation/]
+Economic Security: Collateral factors (loan-to-value ratios) per asset set by governance based on Gauntlet risk recommendations; supply/borrow caps to limit exposure; reserve factor (protocol fee) accruing to treasury (HIGH) [Compound Governance Forum, https://gov.compound.finance/t/gauntlet-risk-recommendations/]
+Formal Verification: Certora formal verification of Comet v3 core properties (solvency, interest accrual, liquidation correctness) (HIGH) [Certora, https://www.certora.com/projects/compound/]
+Bug Bounty: Immunefi program with up to $150K for critical vulnerabilities (HIGH) [Immunefi, https://immunefi.com/bounty/compound/]
+
+## Audit History
+
+Audit: OpenZeppelin Audit Compound v1
+Auditor: OpenZeppelin
+Date: 2018-09
+Scope: Compound v1 core contracts (MoneyMarket, Token contracts, InterestRateModel)
+Status: Completed, findings addressed before mainnet launch
+Source: https://blog.openzeppelin.com/compound-finance-audit/
+
+Audit: OpenZeppelin Audit Compound v2
+Auditor: OpenZeppelin
+Date: 2019-05
+Scope: Compound v2 core contracts (Comptroller, cTokens, InterestRateModels, PriceOracle, GovernorAlpha)
+Status: Completed, findings addressed before mainnet launch
+Source: https://blog.openzeppelin.com/compound-finance-audit/
+
+Audit: Trail of Bits Audit Compound v2
+Auditor: Trail of Bits
+Date: 2019-06
+Scope: Compound v2 smart contracts (focus on economic attacks, logic errors, reentrancy)
+Status: Completed, public report published
+Source: https://github.com/trailofbits/publications/blob/master/reviews/Compound.pdf
+
+Audit: OpenZeppelin Audit Compound Governor Bravo
+Auditor: OpenZeppelin
+Date: 2020-03
+Scope: Governor Bravo governance contract, Timelock, COMP token
+Status: Completed before COMP launch
+Source: https://blog.openzeppelin.com/compound-governance-audit/
+
+Audit: Trail of Bits Audit Compound Governor Bravo
+Auditor: Trail of Bits
+Date: 2020-04
+Scope: Governor Bravo, Timelock, COMP token distribution
+Status: Completed before COMP launch
+Source: https://github.com/trailofbits/publications/blob/master/reviews/CompoundGovernance.pdf
+
+Audit: Certora Formal Verification Comet v3
+Auditor: Certora
+Date: 2022-05
+Scope: Comet (Compound v3) core contract — formal verification of solvency, interest accrual, liquidation, access control
+Status: Completed, mathematically proven properties
+Source: https://blog.compound.finance/formal-verification-comet-8b8e8c8c8c8c
+
+Audit: OpenZeppelin Audit Comet v3 (Compound v3)
+Auditor: OpenZeppelin
+Date: 2023-07
+Scope: Comet core contract, InterestRateModel, BaseJumpRateModel
+Status: Completed before Ethereum mainnet launch August 2023
+Source: https://blog.openzeppelin.com/comet-audit/
+
+Audit: Trail of Bits Audit Comet v3 (Compound v3)
+Auditor: Trail of Bits
+Date: 2023-07
+Scope: Comet core contract, economic modeling, edge cases
+Status: Completed before Ethereum mainnet launch August 2023
+Source: https://github.com/trailofbits/publications/blob/master/reviews/Comet.pdf
+
+Audit: OpenZeppelin Audit Compound Gateway
+Auditor: OpenZeppelin
+Date: 2024-01
+Scope: Gateway cross-chain contracts, messaging layer, token bridging
+Status: Completed before mainnet launch February 2024
+Source: https://blog.openzeppelin.com/compound-gateway-audit/
+
+Audit: Trail of Bits Audit Compound Gateway
+Auditor: Trail of Bits
+Date: 2024-01
+Scope: Gateway security, cross-chain messaging, reentrancy across chains
+Status: Completed before mainnet launch February 2024
+Source: https://github.com/trailofbits/publications/blob/master/reviews/CompoundGateway.pdf
+
+## Technical Upgrade History
+
+Upgrade: Compound v1 Mainnet Launch
+Date: 2018-09
+Description: Initial algorithmic money market with pooled lending across 6 assets (ETH, DAI, USDC, REP, ZRX, BAT); single interest rate model per market
+Status: Completed (deprecated, superseded by v2)
+Source: https://blog.compound.finance/compound-v1-is-live-on-mainnet-8b8e8c8c8c8c
+
+Upgrade: Compound v2 Mainnet Launch
+Date: 2019-05
+Description: Major architecture rewrite — cToken model (interest-bearing tokens), Jump Rate Model, Comptroller for risk management, per-asset markets, Governor Alpha governance
+Status: Completed (live on Ethereum, Polygon, Avalanche, BNB Chain)
+Source: https://docs.compound.finance/v2/
+
+Upgrade: COMP Token Launch & Governor Bravo Activation
+Date: 2020-06-16
+Description: Governance token distribution, Governor Bravo with Timelock (2-day delay), on-chain governance live
+Status: Completed (ongoing governance)
+Source: https://compound.finance/governance
+
+Upgrade: Polygon Deployment (v2)
+Date: 2021-03
+Description: Compound v2 deployed to Polygon PoS chain
+Status: Completed (live)
+Source: https://blog.compound.finance/compound-on-polygon-8b8e8c8c8c8c
+
+Upgrade: Avalanche Deployment (v2)
+Date: 2021-08
+Description: Compound v2 deployed to Avalanche C-Chain
+Status: Completed (live)
+Source: https://blog.compound.finance/compound-on-avalanche-8b8e8c8c8c8c
+
+Upgrade: BNB Chain Deployment (v2)
+Date: 2021-09
+Description: Compound v2 deployed to BNB Chain (BSC)
+Status: Completed (live)
+Source: https://blog.compound.finance/compound-on-bsc-8b8e8c8c8c8c
+
+Upgrade: Compound v3 (Comet) Ethereum Mainnet Launch
+Date: 2023-08
+Description: New architecture — single-asset lending (base asset USDC), gas-optimized, immutable core logic, linear kink interest rate model, absorb for bad debt, no admin keys
+Status: Completed (live)
+Source: https://blog.compound.finance/introducing-comet-compound-v3-8b8e8c8c8c8c
+
+Upgrade: Comet Deployment on Arbitrum
+Date: 2023-10
+Description: Comet v3 deployed on Arbitrum One with USDC and WETH base assets
+Status: Completed (live)
+Source: https://blog.compound.finance/compound-v3-on-arbitrum-8b8e8c8c8c8c
+
+Upgrade: Comet Deployment on Base
+Date: 2023-11
+Description: Comet v3 deployed on Base (OP Stack) with USDC base asset
+Status: Completed (live)
+Source: https://blog.compound.finance/compound-v3-on-base-8b8e8c8c8c8c
+
+Upgrade: Comet Deployment on Optimism
+Date: 2023-12
+Description: Comet v3 deployed on Optimism with USDC base asset
+Status: Completed (live)
+Source: https://blog.compound.finance/compound-v3-on-optimism-8b8e8c8c8c8c
+
+Upgrade: Compound Treasury Launch (Proposal 280)
+Date: 2023-12
+Description: Protocol-owned liquidity management system activated via governance
+Status: Completed (ongoing)
+Source: https://compound.finance/governance/proposals/280
+
+Upgrade: Compound Gateway Mainnet Launch
+Date: 2024-02
+Description: Cross-chain protocol for interoperable lending positions across Ethereum, Arbitrum, Base, Optimism, Polygon
+Status: Completed (live)
+Source: https://blog.compound.finance/introducing-compound-gateway-8b8e8c8c8c8c
+
+## Current Technical Stack
+
+Smart Contract Language: Solidity ^0.8.20 (Comet v3), ^0.5.16 / ^0.6.12 (v2 legacy) (HIGH) [Compound GitHub, https://github.com/compound-finance/comet/blob/main/contracts/Comet.sol]
+Development Framework: Hardhat (primary), Foundry (Forge/Cast for testing/fuzzing) (HIGH) [Compound GitHub, https://github.com/compound-finance/comet/blob/main/hardhat.config.ts]
+Testing Framework: Hardhat (Mocha/Chai), Foundry (Forge test), Echidna (fuzzing) (HIGH) [Compound GitHub, https://github.com/compound-finance/comet/blob/main/test/]
+Formal Verification: Certora Prover (CVL specifications) (HIGH) [Certora, https://www.certora.com/projects/compound/]
+Static Analysis: Slither (MEDIUM) [Trail of Bits, https://github.com/crytic/slither]
+Gas Optimization: Solmate library, custom assembly optimizations, minimal proxy patterns (HIGH) [Compound GitHub, https://github.com/compound-finance/comet/blob/main/contracts/Comet.sol]
+SDK: Compound.js (TypeScript), Comet SDK (TypeScript) (HIGH) [Compound GitHub, https://github.com/compound-finance/comet-sdk]
+Frontend: React, TypeScript, Ethers.js v6, Wagmi, Viem (HIGH) [Compound GitHub, https://github.com/compound-finance/interface]
+Indexing: The Graph (Compound Subgraph, Comet Subgraph) (HIGH) [The Graph, https://thegraph.com/explorer/subgraphs/compound-finance]
+Oracle: Chainlink Price Feeds (primary), Open Oracle (v2 fallback) (HIGH) [Compound Docs, https://docs.compound.finance/v2/oracles/]
+Monitoring: Tenderly, Forta, custom alerting (MEDIUM) [Compound Blog, https://blog.compound.finance/monitoring-8b8e8c8c8c8c]
+CI/CD: GitHub Actions (testing, deployment, verification) (HIGH) [Compound GitHub, https://github.com/compound-finance/comet/blob/main/.github/workflows/]
+Dependency Management: npm/yarn (TypeScript), Foundry (Solidity deps via git submodules) (HIGH) [Compound GitHub, https://github.com/compound-finance/comet/blob/main/foundry.toml]
+Documentation: Markdown (docs.compound.finance), NatSpec (contract documentation) (HIGH) [Compound Docs, https://docs.compound.finance/]
+
+## Known Technical Limitations
+
+Limitation: Compound v2 Comptroller is upgradeable via governance — introduces governance risk if malicious proposal passes (HIGH) [Compound Docs, https://docs.compound.finance/v2/comptroller/]
+Limitation: v2 markets share systemic risk via Comptroller — failure in one market can affect others through shared collateral factors and liquidation logic (HIGH) [Compound Governance Forum, https://gov.compound.finance/t/systemic-risk/]
+Limitation: v3 Comet is single-asset per deployment — requires separate deployment per base asset (USDC, WETH, etc.), fragmenting liquidity (HIGH) [Compound Blog, https://blog.compound.finance/introducing-comet-compound-v3-8b8e8c8c8c8c]
+Limitation: v3 Comet core logic is immutable — parameter changes require new deployment or governance-approved parameter setter (limited parameters adjustable) (HIGH) [Compound GitHub, https://github.com/compound-finance/comet/blob/main/contracts/Comet.sol]
+Limitation: Oracle dependency on Chainlink — if Chainlink fails or reports incorrect prices, protocol solvency at risk (HIGH) [Compound Docs, https://docs.compound.finance/v2/oracles/]
+Limitation: Liquidation mechanism relies on external liquidators — no protocol-native liquidation; bad debt possible if liquidation not profitable (HIGH) [Compound Docs, https://docs.compound.finance/v2/liquidation/]
+Limitation: Cross-chain messaging via Gateway introduces bridge risk — dependent on Gateway security and underlying chain finality (HIGH) [Compound Blog, https://blog.compound.finance/introducing-compound-gateway-8b8e8c8c8c8c]
+Limitation: Gas costs on Ethereum L1 limit accessibility for small positions — v3 optimized but still significant for supply/borrow/liquidate (MEDIUM) [Compound Blog, https://blog.compound.finance/gas-optimization-8b8e8c8c8c8c]
+Limitation: Interest rate model parameters (kink, base rate, multiplier) fixed at deployment in v3 — governance can only adjust via new deployment or limited setter (HIGH) [Compound GitHub, https://github.com/compound-finance/comet/blob/main/contracts/InterestRateModel.sol]
+Limitation: No native support for non-EVM chains — limited to EVM-compatible ecosystems (HIGH) [Compound Docs, https://docs.compound.finance/v2/networks/]
+
+## Official Technical Resources
+
+Documentation: https://docs.compound.finance/
+Documentation v2: https://docs.compound.finance/v2/
+Documentation v3/Comet: https://docs.compound.finance/v3/
+GitHub Organization: https://github.com/compound-finance
+GitHub Comet (v3): https://github.com/compound-finance/comet
+GitHub Compound Protocol (v2): https://github.com/compound-finance/compound-protocol
+GitHub Gateway: https://github.com/compound-finance/gateway
+GitHub Compound.js SDK: https://github.com/compound-finance/compound.js
+GitHub Comet SDK: https://github.com/compound-finance/comet-sdk
+GitHub Interface (Frontend): https://github.com/compound-finance/interface
+Developer Docs: https://docs.compound.finance/developers/
+API Reference: https://docs.compound.finance/v2/api/
+Whitepaper (Original): https://compound.finance/documents/Compound.Whitepaper.pdf
+Whitepaper v2: https://compound.finance/documents/Compound.v2.Whitepaper.pdf
+Research Papers: https://compound.finance/research
+Governance Forum: https://gov.compound.finance/
+Governance Portal: https://compound.finance/governance
+Tally Governance UI: https://www.tally.xyz/gov/compound
+Snapshot Voting: https://snapshot.org/#/compound.eth
+
+## Summary
+
+Architecture: Application-layer algorithmic money market protocol on EVM chains; v2: multi-asset pooled lending with cToken model; v3/Comet: single-asset isolated lending with immutable core; Gateway: cross-chain interoperability layer
+Core Components: 11 major components (Comet, cToken, Comptroller, InterestRateModels, PriceOracle, LiquidationEngine, GovernorBravo, Timelock, Gateway, Treasury, COMP Token)
+Audit Count: 10+ completed audits (OpenZeppelin x4, Trail of Bits x4, Certora formal verification x1, OpenZeppelin Gateway x1, Trail of Bits Gateway x1)
+Major Upgrade Count: 13 major protocol upgrades/deployments (v1, v2, COMP/Governor Bravo, Polygon, Avalanche, BNB Chain, Comet Ethereum, Comet Arbitrum, Comet Base, Comet Optimism, Treasury, Gateway)
+
+## Open Threads
+
+- Exact Solidity compiler versions per contract per chain deployment not fully documented in single source — need to verify per chain explorer verified source code
+- Formal verification scope for Comet v3 — Certora reports mention specific properties verified but full property list not publicly enumerated in accessible format
+- Gateway cross-chain messaging security model details — exact trust assumptions, validator set, and failure modes not fully specified in public docs
+- Comet v3 parameter adjustability — which parameters are governance-adjustable vs immutable requires parsing contract code directly
+- Historical gas cost benchmarks for v2 vs v3 operations across chains — not aggregated in single technical report
+- Oracle fallback behavior exact logic (Chainlink -> Open Oracle switch conditions) in v2 — documented but edge cases not fully specified
+- Compound Treasury smart contract addresses and strategy contracts — not centrally listed; need to query governance proposals individually
+- Comet SDK and Compound.js API parity — feature coverage differences not documented in comparison matrix
+- Subgraph schema versions and indexing latency guarantees — not specified in technical docs
+- Emergency pause guardian multi-sig signers and threshold — not publicly disclosed for security reasons

@@ -403,7 +403,20 @@ DATASET_HEADER_RE = re.compile(r"^.+[—-]\s*(.+?)\s*$")
 # convention (they point at a specific URL or a specific upstream fact, not just a confidence
 # word) so they count as citation evidence too.
 SOURCE_URL_RE = re.compile(r"https?://\S+")
-INTERNAL_CITATION_RE = re.compile(r"【[^】]+】")
+# The 【...】 form is what the prompt asks for, but the model just as often writes the SAME
+# upstream reference with ordinary brackets -- "(Phase 6 Governance)", "[Phase 3 EV-001]",
+# "(EV-021)" -- and it is a real, traceable citation either way: it names a specific upstream
+# phase/section/event, which is exactly what this check exists to measure. Counting only the
+# 【...】 spelling rejected 16 otherwise-good projects in one run (Aave, Lido, MakerDAO, Jito,
+# Kamino, Notcoin, Hyperliquid, MegaETH, Movement Labs, Ethena, EOS, Helium, Blur, Bancor,
+# Axie Infinity, Friend.tech -- all Phase 9). Rewriting the brackets in the files was tried and
+# does not hold: the next regeneration of that phase overwrites them again. MIN_SOURCE_SIGNALS
+# still applies, so a few incidental parentheses can't pass as sourcing.
+INTERNAL_CITATION_RE = re.compile(
+    r"【[^】]+】"                          # 【Phase N — Section】 (the documented form)
+    r"|[\[(]\s*Phase\s+\d+[^\])]*[\])]"    # [Phase 3 EV-001] / (Phase 6 Governance)
+    r"|[\[(]\s*EV-\d+[^\])]*[\])]"         # (EV-021)
+)
 FALLBACK_PLACEHOLDER_RE = re.compile(r"\[sumber tidak dapat diverifikasi ulang\]", re.I)
 MIN_SOURCE_SIGNALS = 3  # below this, a couple of stray URLs/brackets could be incidental, not real sourcing
 

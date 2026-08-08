@@ -192,7 +192,11 @@ def extract_from_dossier(path):
     text = path.read_text(encoding="utf-8")
     project_name = _project_name(text) or path.stem
 
-    m = re.search(r"^## Entity Intelligence\n(.*?)(?=\n## )", text, re.S | re.M)
+    # Boundary pinned to the phase that follows Entity Intelligence (Historical Intelligence)
+    # rather than a bare `\n## `, so a markdown-formatted internal header inside Phase 2 can't
+    # truncate the body and zero out every entity.
+    m = re.search(r"^## Entity Intelligence\n(.*?)(?=\n## Historical Intelligence|\Z)",
+                   text, re.S | re.M)
     body = m.group(1) if m else ""
     body = re.sub(r"^_ref:.*\n", "", body)
     body = re.sub(r"^PROJECT:.*\n", "", body, flags=re.M)

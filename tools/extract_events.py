@@ -76,7 +76,11 @@ def extract_project_name(text: str) -> str:
 
 
 def parse_events(text: str, project_slug: str) -> list[dict]:
-    hist_match = re.search(r"^## Historical Intelligence\n(.*?)(?=\n^## )", text, re.S | re.M)
+    # Boundary pinned to the phase that follows Historical Intelligence (Technology Intelligence)
+    # rather than a bare `\n## `, so a markdown-formatted internal header inside Phase 3 (year
+    # groupings, RINGKASAN, Open Threads) can't truncate the body and zero out every event.
+    hist_match = re.search(r"^## Historical Intelligence\n(.*?)(?=\n^## Technology Intelligence|\Z)",
+                            text, re.S | re.M)
     if not hist_match:
         return []
     section = hist_match.group(1)

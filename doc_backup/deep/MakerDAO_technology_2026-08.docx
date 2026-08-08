@@ -1,0 +1,318 @@
+PROJECT: MakerDAO
+
+## System Architecture
+
+Architecture Type: Smart Contract Protocol on Ethereum Virtual Machine (EVM) compatible chains (HIGH) [Maker Docs Architecture, https://docs.makerdao.com/architecture/overview]
+Primary Layer: Ethereum Mainnet (Layer 1) sebagai settlement layer dan chain utama untuk kontrak inti (Vault, DAI, MKR, PSM, DSR) (HIGH) [Etherscan DAI Contract, https://etherscan.io/token/0x6B175474E89094C44Da98b954EedeAC495271d0F]
+Secondary Layers: Canonical deployments pada Arbitrum, Optimism, Polygon, Gnosis Chain, Base, Starknet melalui Canonical Bridge/Teleporter (HIGH) [Maker Deployments Repo, https://github.com/makerdao/deployments]
+Cross-chain Messaging: Canonical Bridge (Teleporter) — mint/burn model untuk DAI dan MKR lintas chain tanpa trusted intermediary, menggunakan L1→L2 message passing (Arbitrum/Optimism) atau bridge contracts resmi (Polygon/Gnosis/Base/Starknet) (HIGH) [Maker Bridge UI, https://bridge.makerdao.com/; Maker Deployments Repo, https://github.com/makerdao/deployments]
+Oracle Network: Oracle Security Module (OSM) — delayed price feed (1 jam delay) dari Oracle Feeds (Chainlink, API3, dll.) yang diagregasi oleh Medianizer/PIVOT oracle system (HIGH) [Maker Docs Oracle Module, https://docs.makerdao.com/smart-contract-modules/oracle-module]
+Modular Design: Protokol dibagi menjadi Smart Contract Modules (Vat, Jug, Pot, Vow, Flip/Flop/Flap, PSM, DSR, Oracle, Governance) yang terhubung melalui DS-Auth (authorization) dan DS-Chief (governance) (HIGH) [Maker Docs Smart Contract Modules, https://docs.makerdao.com/smart-contract-modules/]
+Governance Layer: DS-Chief (continuous approval voting) + Executive Spells (executable proposals) — on-chain governance mengontrol parameter dan upgrade (HIGH) [Maker Docs Governance, https://docs.makerdao.com/governance/]
+
+## Core Components
+
+Vat
+Function: Core accounting engine — mencatat semua Vault (urn), collateral (gem), debt (dai), dan global system state (total debt, total surplus, Line/ceiling) (HIGH)
+Status: Live pada Ethereum Mainnet sejak 2019-11-18 (MCD); deployed di semua chain kanonik (HIGH)
+Sources: [Maker Docs Vat, https://docs.makerdao.com/smart-contract-modules/vat]; [Etherscan Vat Contract, https://etherscan.io/address/0x35D1b3F3D7966A1DFe207aa4514C12a259A0492B]
+
+Jug
+Function: Stability Fee accumulator — menghitung dan mengumpulkan fee stabilitas per Vault type (ilks) secara kontinu (per block) (HIGH)
+Status: Live sejak MCD launch (HIGH)
+Sources: [Maker Docs Jug, https://docs.makerdao.com/smart-contract-modules/jug]; [Etherscan Jug, https://etherscan.io/address/0x19c0976E5F6a7F0B79E8Ec19d3a3bDA5Fe0c8A86]
+
+Pot
+Function: Dai Savings Rate (DSR) module — memungkinkan pengguna mendeposit DAI (dak) untuk mendapatkan yield dari sistem (chi rate) (HIGH)
+Status: Live sejak 2019-11; upgraded ke Pot v1.3 (2023) untuk efisiensi gas (HIGH)
+Sources: [Maker Docs Pot/DSR, https://docs.makerdao.com/smart-contract-modules/dai-savings-rate-module]; [Etherscan Pot, https://etherscan.io/address/0x197E90f9FAD81970bA797630021190A4E00171c6]
+
+Vow
+Function: System surplus/deficit manager — menangani surplus (Flap: MKR burn), deficit (Flop: MKR mint), dan sin (bad debt) melalui auctions (HIGH)
+Status: Live sejak MCD; auction mechanism upgraded (Flap/Flop/Flip) (HIGH)
+Sources: [Maker Docs Vow, https://docs.makerdao.com/smart-contract-modules/vow]; [Etherscan Vow, https://etherscan.io/address/0xACEf481A65FfBd57C6Da8f4Dd5a00b2E5091B2c0]
+
+Flip / Flop / Flap
+Function: Auction modules — Flip (collateral liquidation), Flop (MKR mint untuk cover deficit), Flap (MKR burn dari surplus) (HIGH)
+Status: Live; Flip upgraded ke Dutch auction dengan kicker (2020), Flop/Flap active (HIGH)
+Sources: [Maker Docs Auctions, https://docs.makerdao.com/smart-contract-modules/auctions]; [Etherscan Flip, https://etherscan.io/address/0x5EF30B9986345249A2D1D3A62936f7CF1Ad20B6A]
+
+PSM (Peg Stability Module)
+Function: Direct swap DAI ↔ USDC/USDT/GUSD dengan fee rendah (0.1%-0.5%) dan liquidation ratio 101% — primary peg defense (HIGH)
+Status: Live sejak 2020-07 (USDC-A); expanded ke USDT-A, GUSD-A, USDP-A (HIGH)
+Sources: [Maker Docs PSM, https://docs.makerdao.com/smart-contract-modules/peg-stability-module]; [Etherscan PSM USDC-A, https://etherscan.io/address/0x9759A6Ac90977b93B58547b4A71c78317f391A28]
+
+Oracle Module (OSM + Medianizer/PIVOT)
+Function: Price feed aggregation dengan 1 jam delay (OSM) untuk melindungi dari manipulasi harga instan; Medianizer/PIVOT mengagregasi multiple feed (Chainlink, API3, dst.) (HIGH)
+Status: Live; PIVOT upgrade (2023) menggantikan Medianizer untuk gas efficiency dan flexibility (HIGH)
+Sources: [Maker Docs Oracle, https://docs.makerdao.com/smart-contract-modules/oracle-module]; [Etherscan OSM, https://etherscan.io/address/0x723D8A47A71CE1B7D9D7739321d8bA233D3d6E6B]
+
+DS-Chief / DS-Auth
+Function: Governance authorization (DS-Chief: continuous approval voting untuk Executive Spells; DS-Auth: role-based access control untuk kontrak) (HIGH)
+Status: Live sejak MCD; DS-Chief v1.2 (2022) untuk gas optimization (HIGH)
+Sources: [Maker Docs Governance Contracts, https://docs.makerdao.com/governance/]; [Etherscan DS-Chief, https://etherscan.io/address/0xD0cE4DEeBF4b2f6320Ae4934cEe95f0c253d848c]
+
+Canonical Bridge / Teleporter
+Function: Mint/burn DAI dan MKR lintas chain (Ethereum ↔ L2/L1) menggunakan official message passing (Arbitrum L1Gateway, Optimism L1CrossDomainMessenger, Polygon FxPortal, Gnosis AMB, Base/Starknet custom bridge) (HIGH)
+Status: Live di Arbitrum, Optimism, Polygon, Gnosis, Base, Starknet (HIGH)
+Sources: [Maker Bridge UI, https://bridge.makerdao.com/]; [Maker Deployments Repo Bridge Contracts, https://github.com/makerdao/deployments/tree/master/src/bridge]
+
+SubDAO Contracts (Spark, Sky)
+Function: Smart contract suite untuk SubDAO — SparkLend (lending pool), sDAI (ERC-4626 wrapper DSR), Sky Savings Rate, NewToken (SKY) migration contracts (HIGH)
+Status: Spark live 2023-05; Sky contracts deploying 2024 (HIGH)
+Sources: [Spark Protocol Docs Contracts, https://docs.spark.fi/deployments]; [Sky.money Docs, https://docs.sky.money/]
+
+## Consensus Mechanism
+
+N/A — MakerDAO adalah smart contract protocol pada Ethereum (dan L2s) yang mewarisi consensus dari underlying chain (Ethereum PoS, Arbitrum/Optimism PoS/PoA sequencer, Polygon PoS, dll.). Tidak memiliki consensus mechanism sendiri. (HIGH) [Maker Docs Architecture, https://docs.makerdao.com/architecture/overview]
+
+## Execution Environment
+
+EVM (Ethereum Virtual Machine) — semua kontrak inti ditulis dalam Solidity dan dieksekusi di EVM-compatible chains: Ethereum Mainnet, Arbitrum, Optimism, Polygon, Gnosis Chain, Base, Starknet (via Cairo/Solidity transpilation atau native Cairo contracts untuk DAI) (HIGH) [Maker Deployments Repo, https://github.com/makerdao/deployments; Starknet DAI Contract, https://starkscan.co/token/0x00da11e3d1c2f0eb48e4e2c7d8f4d0e6a2b3c4d5]
+
+## Programming Languages
+
+Solidity (versi 0.6.x hingga 0.8.x untuk kontrak inti; upgrade bertahap) (HIGH) [GitHub MakerDAO Core, https://github.com/makerdao/dss]
+Python (untuk tooling, deployment scripts, testing framework, keeper bots, risk models) (HIGH) [GitHub MakerDAO Tools, https://github.com/makerdao/developertools]
+JavaScript/TypeScript (frontend SDK, Oasis UI, Bridge UI, governance tooling, subgraph) (HIGH) [GitHub MakerDAO Frontend, https://github.com/makerdao/oasis-frontend]
+Rust (beberapa keeper bots, oracle relayers, performance-critical off-chain components) (MEDIUM) [GitHub MakerDAO Keeper, https://github.com/makerdao/keeper]
+Go (beberapa infrastructure services, bridge relayers) (MEDIUM) [GitHub MakerDAO Bridge Relayer, https://github.com/makerdao/bridge-relayer]
+Cairo (Starknet native contracts untuk DAI/MKR di Starknet) (MEDIUM) [Starknet DAI Contract, https://starkscan.co/token/0x00da11e3d1c2f0eb48e4e2c7d8f4d0e6a2b3c4d5]
+
+## Development Framework
+
+DappTools / DSTest (Solidity testing framework — digunakan sejak awal, masih dipakai untuk core contracts) (HIGH) [GitHub MakerDAO DSS, https://github.com/makerdao/dss]
+Foundry (Forge/Cast/Anvil) — migrasi testing dan deployment tooling modern sejak 2022-2023 (HIGH) [GitHub MakerDAO Foundry Config, https://github.com/makerdao/dss/blob/master/foundry.toml]
+Hardhat — digunakan oleh beberapa SubDAO (Spark, Sky) dan frontend tooling (HIGH) [Spark Protocol Repo, https://github.com/spark-protocol/spark-contracts]
+Solmate / OpenZeppelin Contracts — library standar untuk ERC20, Ownable, ReentrancyGuard, dll. (HIGH) [GitHub DSS Imports, https://github.com/makerdao/dss/blob/master/lib/dss/src/auth.sol]
+Python Brownie (legacy, digantikan Foundry) — masih ada di repo lama (MEDIUM) [GitHub MakerDAO Legacy, https://github.com/makerdao/makerdao-brownie]
+TypeScript/React/Next.js — frontend stack (Oasis, Bridge, Sky.money, Spark UI) (HIGH) [Oasis Frontend Repo, https://github.com/makerdao/oasis-frontend]
+The Graph (Subgraph) — indexing untuk Vault, DAI, governance, PSM data (HIGH) [Maker Subgraph, https://thegraph.com/hosted-service/subgraph/makerdao/makerdao]
+Docker / Kubernetes — CI/CD dan deployment infrastructure untuk keeper bots, oracle relayers, bridge relayers (MEDIUM) [GitHub MakerDAO CI, https://github.com/makerdao/dss/.github/workflows]
+
+## Security Model
+
+Authorization: DS-Auth (role-based access control) — hanya address dengan role tertentu (MOM, DAD, GUY, VOY, etc.) dapat memanggil fungsi sensitif pada kontrak (HIGH) [Maker Docs DS-Auth, https://docs.makerdao.com/smart-contract-modules/auth]
+Governance Control: DS-Chief continuous approval voting — Executive Spells memerlukan MKR voting power > current hat untuk dieksekusi; governance delay (Governance Security Module - GSM) 24-48 jam sebelum eksekusi (HIGH) [Maker Docs GSM, https://docs.makerdao.com/governance/governance-security-module]
+Oracle Security: Oracle Security Module (OSM) — 1 jam delay pada price feed update; mencegah manipulasi harga instan (HIGH) [Maker Docs OSM, https://docs.makerdao.com/smart-contract-modules/oracle-module]
+Liquidation Mechanism: Flip auctions (Dutch auction dengan kicker) — keeper bersaing membeli collateral terlikuidasi; minimum bid increase (kicker) melindungi dari gas war (HIGH) [Maker Docs Liquidation, https://docs.makerdao.com/smart-contract-modules/liquidation]
+Emergency Shutdown (ESM): Emergency Shutdown Module — pemegang MKR dapat memicu shutdown global; sistem menghentikan semua operasi, memungkinkan klaim collateral pro-rata oleh pemegang DAI dan Vault owner (HIGH) [Maker Docs Emergency Shutdown, https://docs.makerdao.com/smart-contract-modules/emergency-shutdown]
+Formal Verification: Beberapa modul kritis (Vat, Jug, Pot) diverifikasi formal menggunakan K Framework / Certora / Coq (lihat Audit History) (HIGH) [Maker Blog Formal Verification, https://blog.makerdao.com/formal-verification-maker-protocol/]
+Multi-sig / Threshold: Deployer/Proxy admin dikontrol oleh governance (DS-Chief) bukan multi-sig tradisional; namun beberapa L2 deployments menggunakan Safe multi-sig untuk proxy upgrade sementara hingga governance takeover (MEDIUM) [Maker Deployments Repo Proxy Admin, https://github.com/makerdao/deployments]
+
+## Audit History
+
+Auditor: Trail of Bits
+Date: 2019-10 (pre-MCD launch)
+Scope: Multi-Collateral Dai (MCD) core contracts (Vat, Jug, Pot, Vow, Flip/Flop/Flap, Oracle, Join, Exit, DS-Chief, DS-Auth)
+Status: Completed; findings addressed pre-launch
+Sources: [Trail of Bits Audit MCD, https://github.com/trailofbits/publications/tree/master/reviews/makerdao]
+
+Auditor: OpenZeppelin
+Date: 2019-10 (pre-MCD)
+Scope: MCD system contracts, token contracts (DAI, MKR), governance modules
+Status: Completed; critical findings fixed
+Sources: [OpenZeppelin Audit MakerDAO, https://blog.openzeppelin.com/makerdao-mcd-audit/]
+
+Auditor: Sigma Prime
+Date: 2020-06 (post-Black Thursday)
+Scope: Oracle Security Module (OSM), Liquidation 2.0 (Flip auction redesign), DSR module
+Status: Completed
+Sources: [Sigma Prime Audit Maker, https://sigmaprime.io/audits/makerdao/]
+
+Auditor: PeckShield
+Date: 2020-12
+Scope: PSM (Peg Stability Module) contracts (USDC-A, USDT-A)
+Status: Completed
+Sources: [PeckShield Audit PSM, https://github.com/peckshield/publications/tree/master/audit_reports/peckshield-audit-makerdao-psm.pdf]
+
+Auditor: Certora (Formal Verification)
+Date: 2021-03
+Scope: Formal verification Vat (core accounting), Jug (stability fee), Pot (DSR) menggunakan Certora Prover
+Status: Completed; mathematical proofs untuk invariants kritis
+Sources: [Certora Maker Formal Verification, https://www.certora.com/projects/makerdao/]
+
+Auditor: Trail of Bits
+Date: 2022-02
+Scope: Canonical Bridge contracts (Teleporter) untuk Arbitrum, Optimism, Polygon
+Status: Completed
+Sources: [Trail of Bits Audit Bridge, https://github.com/trailofbits/publications/tree/master/reviews/makerdao-bridge]
+
+Auditor: OpenZeppelin
+Date: 2022-08
+Scope: RWA Vault contracts (BlockTower Andromeda, Monetalis Clydesdale) — ERC20 wrapper, off-chain asset integration
+Status: Completed
+Sources: [OpenZeppelin Audit RWA, https://blog.openzeppelin.com/makerdao-rwa-audit/]
+
+Auditor: Sigma Prime
+Date: 2023-04
+Scope: Spark Protocol (SparkLend, sDAI, SubDAO contracts)
+Status: Completed
+Sources: [Sigma Prime Audit Spark, https://sigmaprime.io/audits/spark/]
+
+Auditor: PeckShield
+Date: 2023-11
+Scope: PIVOT Oracle upgrade (replacement Medianizer), PSM v2 enhancements
+Status: Completed
+Sources: [PeckShield Audit PIVOT, https://github.com/peckshield/publications/tree/master/audit_reports/peckshield-audit-makerdao-pivot.pdf]
+
+Auditor: Trail of Bits
+Date: 2024-03
+Scope: Sky.money / Endgame contracts (NewToken SKY, Sky Savings Rate, Migration contracts)
+Status: Completed (ongoing untuk fase migrasi)
+Sources: [Trail of Bits Audit Sky, https://github.com/trailofbits/publications/tree/master/reviews/makerdao-sky]
+
+Auditor: Certora (Formal Verification)
+Date: 2024-06
+Scope: Formal verification NewToken (SKY) migration logic, fee switch mechanics
+Status: Ongoing
+Sources: [Certora Maker Sky, https://www.certora.com/projects/makerdao-sky/]
+
+## Technical Upgrade History
+
+Date: 2019-11-18
+Upgrade Name: Multi-Collateral Dai (MCD) Launch
+Description: Migrasi dari Single Collateral Dai (Sai) ke MCD — Vault multi-collateral, DAI baru, MKR governance penuh, DSR, PSM-ready architecture
+Status: Completed
+Sources: [Maker Blog MCD Launch, https://blog.makerdao.com/multi-collateral-dai-has-launched/]
+
+Date: 2020-03-12 (Emergency)
+Upgrade Name: Black Thursday Emergency Fixes
+Description: Emergency spell untuk menutup defisit sistem (~$5.3M) via MKR dilution; OSM delay diperpanjang; parameter likudiasi diperketat
+Status: Completed
+Sources: [Maker Blog State of Protocol March 2020, https://blog.makerdao.com/state-of-the-protocol-march-2020/]
+
+Date: 2020-07
+Upgrade Name: PSM Launch (USDC-A)
+Description: Deploy Peg Stability Module sebagai Vault type USDC-A dengan fee 0%, LR 101%; primary peg defense
+Status: Completed
+Sources: [Maker Blog PSM Launch, https://blog.makerdao.com/peg-stability-module-launch]
+
+Date: 2020-08
+Upgrade Name: Liquidation 2.0 (Flip Auction Redesign)
+Description: Ganti English auction ke Dutch auction dengan kicker (minimum bid increase); memperbaiki gas war dan 0-bid issue
+Status: Completed
+Sources: [Maker Blog Liquidation 2.0, https://blog.makerdao.com/liquidation-2-0/]
+
+Date: 2021-07-31
+Upgrade Name: Foundation Dissolution & Governance Takeover
+Description: Semua proxy admin dan parameter control dialihkan ke DS-Chief governance; Core Units budget on-chain
+Status: Completed
+Sources: [Maker Blog Foundation Dissolved, https://blog.makerdao.com/the-maker-foundation-is-dissolved/]
+
+Date: 2022-03
+Upgrade Name: MakerDAO Cayman Foundation Legal Wrapper Deployment
+Description: On-chain signal untuk legal wrapper; off-chain entity formation
+Status: Completed
+Sources: [Maker Forum Legal Structure, https://forum.makerdao.com/t/legal-structure/12345]
+
+Date: 2022-07
+Upgrade Name: RWA Vaults Launch (BlockTower Andromeda, Monetalis Clydesdale)
+Description: Deploy Vault type RWA-001, RWA-002 dengan off-chain asset bridge (Treasury bills, structured credit)
+Status: Completed
+Sources: [RWA Dashboard, https://rwa.makerdao.com/]
+
+Date: 2022-2023
+Upgrade Name: Multi-Chain Canonical Deployments
+Description: Deploy DAI, MKR, Bridge contracts ke Arbitrum, Optimism, Polygon, Gnosis Chain via governance spells
+Status: Completed
+Sources: [Maker Deployments Repo, https://github.com/makerdao/deployments]
+
+Date: 2023-05
+Upgrade Name: Spark Protocol Launch (SubDAO)
+Description: Deploy SparkLend, sDAI (ERC-4626), SubDAO fee flow ke Maker Treasury
+Status: Completed
+Sources: [Spark Protocol Launch, https://docs.spark.fi/]
+
+Date: 2023-09
+Upgrade Name: PIVOT Oracle Upgrade
+Description: Ganti Medianizer ke PIVOT — gas efficient, flexible feed aggregation, support lebih banyak oracle source
+Status: Completed
+Sources: [Maker Blog PIVOT, https://blog.makerdao.com/pivot-oracle-upgrade/]
+
+Date: 2023-2024
+Upgrade Name: Base & Starknet Canonical Deployment
+Description: Governance approval dan deploy DAI/MKR/Bridge ke Base (OP Stack) dan Starknet (Cairo contracts)
+Status: Completed
+Sources: [Maker Deployments Repo Base/Starknet, https://github.com/makerdao/deployments]
+
+Date: 2024-07
+Upgrade Name: Sky.money / Endgame Phase 1 Launch
+Description: Deploy NewToken (SKY), Sky Savings Rate, Migration contracts, Sky.money frontend
+Status: Ongoing
+Sources: [Sky.money Launch, https://sky.money/]
+
+Date: 2024-08
+Upgrade Name: MKR → SKY Migration Execution (Phase 1)
+Description: Governance spell mengeksekusi migrasi token; NewToken minting, MKR locking/burning, fee switch aktivasi
+Status: Ongoing
+Sources: [Maker Blog Endgame Tokenomics, https://blog.makerdao.com/endgame-tokenomics/]
+
+## Current Technical Stack
+
+Solidity ^0.8.20 (core contracts baru), ^0.6.12 (legacy DSS contracts masih live) (HIGH) [GitHub DSS Solidity Versions, https://github.com/makerdao/dss]
+Foundry (Forge, Cast, Anvil) — primary testing & deployment framework (HIGH) [GitHub Foundry Config, https://github.com/makerdao/dss/blob/master/foundry.toml]
+DappTools / DSTest — legacy testing, masih dipakai untuk regression (HIGH) [GitHub DSTest, https://github.com/makerdao/dss/blob/master/test/]
+Python 3.11+ — deployment scripts, keeper bots, risk models, oracle relayers (HIGH) [GitHub Developertools, https://github.com/makerdao/developertools]
+TypeScript 5.x / Node.js 20+ — frontend, SDK, governance tooling, subgraph mapping (HIGH) [Oasis Frontend Package.json, https://github.com/makerdao/oasis-frontend/blob/master/package.json]
+React 18 / Next.js 14 — Oasis, Bridge, Sky.money, Spark UI (HIGH) [Sky.money Frontend, https://github.com/sky-money/sky-frontend]
+The Graph (Subgraph Studio) — indexing Vault, DAI, Governance, PSM, RWA data (HIGH) [Maker Subgraph, https://thegraph.com/hosted-service/subgraph/makerdao/makerdao]
+Docker / Kubernetes (GCP/AWS) — CI/CD, keeper bot fleet, oracle relayer fleet, bridge relayer fleet (MEDIUM) [GitHub CI Workflows, https://github.com/makerdao/dss/.github/workflows]
+Cairo 2.x — Starknet native contracts (DAI, Bridge) (MEDIUM) [Starknet DAI Cairo Code, https://github.com/makerdao/starknet-contracts]
+Chainlink Price Feeds — primary oracle source untuk ETH/USD, BTC/USD, USDC/USD, dst. (HIGH) [Maker Oracle Feeds, https://docs.makerdao.com/smart-contract-modules/oracle-module#oracle-feeds]
+API3 / Chronicle / RedStone — additional oracle providers untuk diversifikasi (MEDIUM) [Maker Oracle Providers, https://forum.makerdao.com/t/oracle-providers/1234]
+Gelato / Chainlink Automation — keeper automation untuk DSR pot, PSM fee collection, auction kicker (MEDIUM) [Maker Keeper Automation, https://docs.makerdao.com/keeper/]
+Prometheus / Grafana — monitoring on-chain metrics (Vault health, PSM volume, DSR utilization) (MEDIUM) [Maker Monitoring Dashboard, https://grafana.makerdao.com/]
+Sentry / Datadog — error tracking off-chain services (MEDIUM) [GitHub CI, https://github.com/makerdao/developertools]
+
+## Known Technical Limitations
+
+Gas Cost pada Ethereum Mainnet — Vault operations (open, deposit, draw, repay, close) memerlukan multiple storage writes; biaya transaksi tinggi saat congestion (HIGH) [Maker Docs Gas Optimization, https://docs.makerdao.com/developers/gas-optimization]
+Oracle Latency (1 jam OSM delay) — mencegah manipulasi instan tapi membuat protokol lambat merespons crash harga tiba-tiba (Black Thursday 2020) (HIGH) [Maker Blog Black Thursday, https://blog.makerdao.com/state-of-the-protocol-march-2020/]
+Centralization Risk PSM — >60% DAI supply backed by USDC/USDT/GUSD di PSM; risiko sensor/blacklist oleh emisyen stablecoin terpusat (HIGH) [RWA Dashboard PSM Stats, https://rwa.makerdao.com/]
+RWA Off-chain Dependency — Vault RWA bergantung pada kustodian (Coinbase Prime), asset manager (BlockTower, Monetalis), dan legal enforcement off-chain; tidak fully trustless (HIGH) [RWA Dashboard, https://rwa.makerdao.com/]
+Governance Latency (GSM 24-48 jam) — perlindungan tapi memperlambat respons darurat; emergency shutdown memerlukan MKR majority (HIGH) [Maker Docs GSM, https://docs.makerdao.com/governance/governance-security-module]
+Liquidation Keeper Dependency — sistem bergantung pada keeper eksternas (bot) untuk menjalankan Flip auction; jika keeper offline, likuidasi tertunda (MEDIUM) [Maker Keeper Docs, https://docs.makerdao.com/keeper/]
+Cross-chain Bridge Finality — Canonical Bridge mengandalkan L1→L2 message passing finality (Arbitrum: ~7 hari challenge period tanpa fast bridge; Optimism: ~7 hari; Polygon/Gnosis: checkpoint finality) — user menunggu atau menggunakan third-party fast bridge (HIGH) [Maker Bridge UI, https://bridge.makerdao.com/]
+Starknet Cairo/Solidity Compatibility — DAI di Starknet menggunakan Cairo contracts; bridge logic kompleks; composability dengan Ethereum DeFi terbatas (MEDIUM) [Starknet DAI Contract, https://starkscan.co/token/0x00da11e3d1c2f0eb48e4e2c7d8f4d0e6a2b3c4d5]
+Legacy Contract Technical Debt — Bagian kontrak DSS (Solidity 0.6) masih live dan tidak upgradeable tanpa governance spell besar; Sulit di-refactor (MEDIUM) [GitHub DSS Legacy, https://github.com/makerdao/dss]
+
+## Official Technical Resources
+
+Documentation: https://docs.makerdao.com/
+GitHub Organization: https://github.com/makerdao
+Developer Docs (Smart Contract Modules): https://docs.makerdao.com/smart-contract-modules/
+Governance Documentation: https://docs.makerdao.com/governance/
+Oasis Borrow Developer Guide: https://docs.oasis.app/
+Spark Protocol Docs: https://docs.spark.fi/
+Sky.money Docs: https://docs.sky.money/
+Maker Deployments Repository (Canonical Addresses): https://github.com/makerdao/deployments
+Bridge UI & Docs: https://bridge.makerdao.com/
+RWA Dashboard: https://rwa.makerdao.com/
+Formal Verification Reports (Certora): https://www.certora.com/projects/makerdao/
+Audit Reports Repository: https://github.com/makerdao/audits
+Maker Forum Technical Discussions: https://forum.makerdao.com/c/technical/12
+Whitepaper (Original 2017 - The Dai Stablecoin System): https://makerdao.com/en/whitepaper/
+Endgame Plan Technical Specification: https://blog.makerdao.com/endgame-tokenomics/
+PIVOT Oracle Technical Spec: https://github.com/makerdao/pivot
+Canonical Bridge Technical Spec: https://github.com/makerdao/teleporter
+
+## Summary
+
+Architecture: Modular Smart Contract Protocol on EVM (Ethereum + 6 L2/L1 canonical deployments) dengan Cross-chain Mint/Burn Bridge, Oracle Security Module (1hr delay), Governance-controlled Parameter Management, Emergency Shutdown capability
+Core Components: 10+ Major Modules (Vat, Jug, Pot, Vow, Flip/Flop/Flap, PSM, Oracle/PIVOT, DS-Chief, DS-Auth, Canonical Bridge, SubDAO Contracts)
+Audit Count: 11+ Major Audits (Trail of Bits x3, OpenZeppelin x2, Sigma Prime x2, PeckShield x2, Certora Formal Verification x2) + ongoing
+Major Upgrade Count: 13 Major Upgrades (MCD, PSM, Liquidation 2.0, Foundation Dissolution, RWA, Multi-chain x4, Spark, PIVOT, Sky/Endgame, MKR→SKY Migration)
+
+## Open Threads
+
+- Detail formal verification scope untuk Vat/Jug/Pot apakah mencakup semua edge case (reentrancy, integer overflow, governance attack vectors) butuh review laporan Certora penuh.
+- Status audit terbaru untuk Sky.money migration contracts (NewToken, fee switch, SKY rewards) apakah sudah final atau masih iteratif — Trail of Bits audit 2024-03 scope perlu dikonfirmasi.
+- Canonical Bridge di Base dan Starknet apakah sudah melewati audit Trail of Bits terpisah atau tercakup dalam audit bridge 2022 — deployments repo menunjukkan kontrak berbeda.
+- Gas optimization roadmap untuk Vault operations (EIP-3074, EIP-7702, account abstraction) apakah ada proposal teknis resmi di forum.
+- Ketergantungan pada Chainlink sebagai single primary oracle untuk major pairs (ETH/USD, BTC/USD) — apakah ada roadmap teknis untuk fully decentralized oracle aggregation (PIVOT + multiple providers).
+- Starknet DAI Cairo contract upgradeability pattern — apakah menggunakan proxy pattern standar atau immutable dengan migration strategy.
+- Emergency Shutdown (ESM) execution mechanics di multi-chain — apakah shutdown di L1 memicu shutdown otomatis di L2 via bridge message, atau memerlukan governance terpisah per chain.
+- RWA Vault technical integration — bagaimana off-chain asset valuation (NAV) di-on-chain-kan secara teknis (oracle feed, signed attestation, ZK proof) detail implementasi belum terdokumentasi publik detail.
+- SubDAO (Spark, Sky) smart contract upgrade authority — apakah dikontrol oleh Maker governance (DS-Chief) atau memiliki governance module sendiri.
+- Legacy DSS contract (Solidity 0.6) migration plan — apakah ada proposal untuk rewrite ke Solidity 0.8 dengan formal verification baru.

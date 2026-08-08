@@ -1,250 +1,296 @@
 PROJECT: Bancor
 
-Strategic Objectives
+## Strategic Objectives
 
-1. Menyediakan infrastruktur AMM dengan single-sided staking dan perlindungan impermanent loss penuh untuk likuiditas aset volatil
+1. Menjadi protokol AMM dengan single-sided staking dan proteksi impermanent loss terdepan
+· Evidence: Bancor V1 (2017) memperkenalkan bonding curve AMM; V2.1 (2020) meluncurkan single-sided exposure dan IL protection 100% setelah 100 hari; V3 (2021) mempertahankan fitur ini sebagai diferensiasi utama dari Uniswap/Curve/Balancer [Phase 3 EV-001, EV-005, EV-007, EV-010]
+· Supporting Dataset: Phase 3 History, Phase 4 Technology, Phase 8 Market
 
-· Evidence: V2.1 (Oktober 2020) memperkenalkan single-sided exposure dan IL protection 100% setelah 100 hari; V3 (Oktober 2021) mempertahankan fitur ini dengan arsitektur Omnipool dan pendanaan via protocol-owned liquidity bukan inflasi BNT 【Phase 3 EV-007, EV-010; Phase 4 Core Components: Impermanent Loss Protection Module, Omnipool】
-· Supporting Dataset: Phase 3 EV-007, EV-010; Phase 4 Core Components
+2. Menciptakan tokenomics deflationary melalui mekanisme buyback-and-burn (Vortex)
+· Evidence: V3 memperkenalkan Vortex yang mengumpulkan swap fees, membeli BNT di pasar, dan membakarnya; parameter fee split dikontrol DAO; narasi "deflationary tokenomics" menjadi pilar pemasaran V3 [Phase 3 EV-010, Phase 6 Token Inflation/Deflation, Phase 8 Narrative Position]
+· Supporting Dataset: Phase 3 History, Phase 6 Token, Phase 8 Market
 
-2. Menciptakan tokenomics deflationary melalui mekanisme Vortex buyback-and-burn yang mengikat nilai protokol ke BNT
+3. Desentralisasi progresif melalui BancorDAO dengan kendali parameter on-chain
+· Evidence: BancorDAO dibentuk 2020 (EV-009) dengan GovernorAlpha, Timelock, Snapshot; proposal mengontrol fee, whitelist token, upgrade kontrak, alokasi treasury; foundation tetap mengelola operasi harian [Phase 2 Entity BancorDAO, Phase 3 EV-009, EV-018, Phase 6 Governance]
+· Supporting Dataset: Phase 2 Entity, Phase 3 History, Phase 6 Token
 
-· Evidence: V3 launch memperkenalkan Vortex yang mengumpulkan swap fees, membeli BNT di pasar, dan membakarnya; parameter fee split dikontrol DAO 【Phase 3 EV-010; Phase 4 Core Components: Vortex; Phase 6 Inflation/Deflation: Burn Mechanism】
-· Supporting Dataset: Phase 3 EV-010; Phase 4 Core Components; Phase 6 Inflation/Deflation
+4. Ekspansi multi-chain selektif dengan fokus Ethereum dan Arbitrum untuk skalabilitas
+· Evidence: V3 di-deploy bersamaan di Ethereum Mainnet dan Arbitrum One Oktober 2021 (EV-010); Polygon hanya menerima V2.1 legacy (EV-008); tidak ada deployment V3 di Optimism, Base, atau L1 lain [Phase 3 EV-008, EV-010, EV-014, Phase 4 Architecture, Phase 7 Chain Dependencies]
+· Supporting Dataset: Phase 3 History, Phase 4 Technology, Phase 7 Ecosystem
 
-3. Mencapai desentralisasi progresif melalui BancorDAO dengan kendali on-chain atas parameter protokol, upgrade, dan whitelisting aset
+5. Membangun ekosistem developer melalui SDK, subgraph, dan dokumentasi terbuka
+· Evidence: Bancor SDK v2 dirilis 2024 (EV-020); The Graph subgraph live sejak 2020 (EV-013); dokumentasi teknis lengkap di docs.bancor.network; repositori GitHub publik [Phase 3 EV-013, EV-020, Phase 4 Developer Tools, Phase 7 Developer Ecosystem]
+· Supporting Dataset: Phase 3 History, Phase 4 Technology, Phase 7 Ecosystem
 
-· Evidence: BancorDAO dibentuk Q4 2020 dengan GovernorAlpha, Timelock, Snapshot; proposal dieksekusi on-chain untuk fee, whitelist, upgrade, migrasi V2→V3 【Phase 3 EV-009, EV-017, EV-018; Phase 4 Security Model: TimelockController; Phase 6 Governance】
-· Supporting Dataset: Phase 3 EV-009, EV-017, EV-018; Phase 4 Security Model; Phase 6 Governance
+## Decision Timeline
 
-4. Mengekspansi ke Layer 2 (Arbitrum) untuk skalabilitas dan biaya gas rendah sambil mempertahankan keamanan Ethereum L1
-
-· Evidence: V3 deploy bersamaan di Ethereum Mainnet dan Arbitrum One Oktober 2021; Arbitrum Bridge untuk transfer BNT L1↔L2; ~30-40% TVL di Arbitrum 【Phase 3 EV-010, EV-014; Phase 4 Architecture; Phase 7 External Dependencies: Arbitrum Bridge, Arbitrum Chain】
-· Supporting Dataset: Phase 3 EV-010, EV-014; Phase 4 Architecture; Phase 7 External Dependencies
-
-5. Menjadi hub likuiditas untuk Liquid Staking Tokens (LST) seperti wstETH/rETH dengan yield staking native + IL protection
-
-· Evidence: Governance proposal 2024 menambahkan wstETH, rETH ke Omnipool V3; single-sided staking LST dengan IL protection 【Phase 3 EV-019; Phase 7 Major Integrations: wstETH/LST Integration; Phase 8 Narrative: LST/Restaking Secondary Narrative】
-· Supporting Dataset: Phase 3 EV-019; Phase 7 Major Integrations; Phase 8 Narrative
-
-Decision Timeline
-
-Keputusan: Pendirian Bprotocol Foundation di Zug, Swiss dan Luncuran Bancor V1 Mainnet (2017-02)
+Keputusan: Pendirian Bprotocol Foundation di Zug, Swiss dan luncurkan V1 mainnet (2017-02)
 · Trigger: Visi membangun AMM pertama dengan bonding curve untuk likuiditas otomatis tanpa order book
-· Evidence: Bprotocol Foundation terdaftar di Zug; V1 mainnet launch Februari 2017 sebagai Smart Token AMM 【Phase 1 Founding Entity, Launch Date; Phase 3 EV-001; Phase 2 Entity: Bprotocol Foundation】
-· Decision: Mendirikan foundation hukum Swiss dan meluncurkan V1 di Ethereum mainnet dengan formula bonding curve
-· Immediate Result: Protokol live, pertama mengimplementasikan AMM on-chain; menarik perhatian pasar DeFi awal
-· Long-term Impact: Menetapkan Bancor sebagai pioneer AMM; fondasi untuk ICO $153M Juni 2017
-· Supporting Dataset: Phase 1 Founding Entity; Phase 3 EV-001; Phase 2 Bprotocol Foundation
+· Evidence: Phase 3 EV-001 "Pendirian Bprotocol Foundation dan Luncuran Mainnet Bancor V1"; Phase 1 Foundation Entity
+· Decision: Mendirikan foundation Swiss, mengembangkan kontrak V1, deploy ke Ethereum mainnet Februari 2017
+· Immediate Result: Protokol V1 live, smart token dengan formula bonding curve beroperasi
+· Long-term Impact: Menetapkan Bancor sebagai pionir AMM; fondasi legal Swiss memengaruhi compliance hingga sekarang
+· Supporting Dataset: Phase 1 Foundation, Phase 2 Entity Bprotocol Foundation, Phase 3 EV-001
 
-Keputusan: Token Generation Event (ICO) Juni 2017 mengumpulkan $153M (2017-06-12)
-· Trigger: Perlu dana besar untuk pengembangan jangka panjang, treasury, dan ekosistem setelah V1 launch
-· Evidence: ICO 12 Juni 2017, 396,720 ETH ($153M) dalam 3 jam; distribusi 50% public, 20% foundation, 20% team (vesting 2yr), 10% reserve 【Phase 3 EV-002; Phase 5 Funding History ICO; Phase 6 Distribution, TGE】
-· Decision: Melakukan public token sale uncapped (hard cap tercapai cepat) dengan distribusi token BNT ERC-20
-· Immediate Result: Treasury $153M terbentuk; BNT tersebar ke 10,000+ alamat; listing di Bittrex/Poloniex
-· Long-term Impact: Modal utama pengembangan 2017-2021 (V2, V2.1, V3, audit, tim); tidak ada ronde equity VC pasca-ICO
-· Supporting Dataset: Phase 3 EV-002; Phase 5 Funding History; Phase 6 Distribution, TGE
+Keputusan: Mengadakan ICO publik Juni 2017 mengumpulkan $153M (2017-06-12)
+· Trigger: Butuh dana besar untuk pengembangan jangka panjang, treasury, dan ekosistem
+· Evidence: Phase 3 EV-002 "Token Generation Event (TGE) dan ICO Bancor Network Token (BNT)"; Phase 5 Funding History
+· Decision: Public sale tanpa hard cap terpisah dari private sale, 396,720 ETH terkumpul dalam 3 jam
+· Immediate Result: Treasury $153M terbentuk, BNT tersebar ke 10.000+ alamat, investor strategis (Draper, Blockchain Capital) masuk
+· Long-term Impact: Modal utama 2017-2021; tidak ada ronde equity pasca-ICO; token distribution menentukan governance power hingga sekarang
+· Supporting Dataset: Phase 3 EV-002, Phase 5 Funding History, Phase 6 Token Distribution
 
-Keputusan: Luncuran Bancor V2 dengan pool-based AMM, co-incentives, dan elastic BNT supply (2020-04)
-· Trigger: V1 bonding curve terbatas skalabilitas dan UX; kompetisi Uniswap V2 pool model dominan
-· Evidence: V2 April 2020: pool-based AMM, BNT rewards untuk LP (co-incentives), single-sided via BNT counterpart, elastic supply 【Phase 3 EV-005; Phase 4 Technical Upgrade History V2; Phase 6 Inflation/Deflation V2 era】
-· Decision: Migrasi arsitektur dari bonding curve ke constant product pools dengan insentif BNT inflasioner
-· Immediate Result: TVL meningkat, LP mendapat reward BNT, model single-sided exposure awal diperkenalkan
-· Long-term Impact: Menciptakan ketergantungan pada inflasi BNT untuk insentif; memerlukan redesign V2.1/V3 untuk IL protection
-· Supporting Dataset: Phase 3 EV-005; Phase 4 Technical Upgrade History; Phase 6 Inflation/Deflation
+Keputusan: Migrasi arsitektur dari bonding curve V1 ke pool-based V2 (2020-04)
+· Trigger: Kompetisi dari Uniswap V2 (pool-based) yang lebih efisien; kebutuhan co-incentives dan single-sided liquidity
+· Evidence: Phase 3 EV-005 "Luncuran Bancor V2"; Phase 4 Technical Upgrade History
+· Decision: Redesign penuh ke constant product AMM dengan pool tokens, elastic BNT supply, BNT rewards untuk LP
+· Immediate Result: TVL meningkat, model inflasi BNT dimulai, single-sided liquidity via BNT counterpart diperkenalkan
+· Long-term Impact: Pola "upgrade arsitektur fundamental" berulang (V1→V2→V3); inflasi BNT menciptakan tekanan jual berkelanjutan hingga V3
+· Supporting Dataset: Phase 3 EV-005, Phase 4 Technical Upgrade History, Phase 6 Token Inflation
 
-Keputusan: Respons darurat dan redesign keamanan pasca eksploit $23.5M Juli 2020 (2020-07)
-· Trigger: Eksploit kontrak V2 upgradeability mencuri $23.5M BNT dan aset lain
-· Evidence: Hack Juli 2020 kerugian $23.5M; PeckShield audit pasca-eksploit; tim memperbaiki kerentanan dan negosiasi pengembalian dana 【Phase 3 EV-006; Phase 4 Security Model post-exploit hardening; Phase 4 Audit History PeckShield post-exploit】
-· Decision: Upgrade kontrak darurat, menghapus single-key wallet upgradeability, migrasi ke DAO-governed timelock, audit ulang
-· Immediate Result: Sebagian dana dikembalikan; kepercayaan terpukul; fondasi keamanan V3 (multi-audit, upgradeable proxy DAO-controlled)
-· Long-term Impact: Arsitektur keamanan V3 dibangun pada pelajaran ini: UUPS proxy, Timelock 48h, multi-audit pre-launch, bug bounty ImmuneFi
-· Supporting Dataset: Phase 3 EV-006; Phase 4 Security Model; Phase 4 Audit History
+Keputusan: Merespons eksploit $23.5M Juli 2020 dengan redesign keamanan dan V2.1 (2020-07)
+· Trigger: Eksploit kontrak V2 menargetkan wallet upgradeability, kerugian $23.5M BNT dan aset lain
+· Evidence: Phase 3 EV-006 "Insiden Keamanan Bancor"; Phase 4 Security Model (post-exploit hardening); Phase 7 Risk Response
+· Decision: Emergency patch, negosiasi dengan peretas, audit PeckShield pasca-eksploit, hapus single-key upgradeability, migrasi ke DAO-governed timelock
+· Immediate Result: Sebagian dana dikembalikan, V2.1 dirancang dengan model keamanan baru (DAO timelock, pausable)
+· Long-term Impact: V3 arsitektur proxy UUPS/Transparent + Timelock 48h adalah respons langsung; bug bounty ImmuneFi $100k diluncurkan; keamanan jadi prioritas absolut
+· Supporting Dataset: Phase 3 EV-006, Phase 4 Security Model, Phase 7 Ecosystem Risks
 
-Keputusan: Luncuran V2.1 dengan IL Protection 100% (100 hari) dan Single-Sided Exposure penuh (2020-10)
-· Trigger: LP takut impermanent loss; V2 masih memerlukan pairing BNT manual untuk single-sided
-· Evidence: V2.1 Oktober 2020: IL protection bertahap 100% setelah 100 hari didanai inflasi BNT; true single-sided staking tanpa pairing 【Phase 3 EV-007; Phase 4 Core Components IL Protection Module; Phase 6 Inflation/Deflation V2 era】
-· Decision: Mengimplementasikan IL protection aset tunggal dengan vesting 100 hari, difunding via emisi BNT baru
-· Immediate Result: Fitur unik di pasar; menarik LP baru; inflasi BNT meningkat untuk subsidi IL
-· Long-term Impact: Model inflasi untuk IL protection terbukti tidak berkelanjutan; V3 menggantinya dengan protocol-owned liquidity funding
-· Supporting Dataset: Phase 3 EV-007; Phase 4 Core Components; Phase 6 Inflation/Deflation
+Keputusan: Luncurkan V2.1 dengan IL protection 100% dan single-sided exposure (2020-10)
+· Trigger: LP takut impermanent loss; kompetitor tidak menawarkan proteksi native; BNT inflation bisa mendanai proteksi
+· Evidence: Phase 3 EV-007 "Luncuran Bancor V2.1"; Phase 4 Core Components IL Protection Module; Phase 8 Narrative
+· Decision: Implementasi IL protection bertahap (100% setelah 100 hari) didanai mint BNT baru; single-sided staking tanpa pairing manual BNT
+· Immediate Result: Fitur unik di pasar, menarik LP baru, narasi "IL protection" jadi identitas brand
+· Long-term Impact: V3 mempertahankan IL protection tapi ganti funding dari inflasi BNT ke protocol-owned liquidity; fitur ini tetap differentiator utama 2024
+· Supporting Dataset: Phase 3 EV-007, Phase 4 Technology, Phase 8 Narrative Position
 
 Keputusan: Deploy V2.1 ke Polygon untuk ekspansi multi-chain pertama (2020-11)
-· Trigger: Gas Ethereum tinggi; permintaan pengguna untuk biaya transaksi rendah
-· Evidence: V2.1 di Polygon November 2020; TVL Polygon tumbuh; V3 tidak di-deploy ke Polygon 【Phase 3 EV-008; Phase 4 Technical Upgrade History V2.1 Polygon; Phase 7 External Dependencies Polygon】
-· Decision: Deploy kontrak V2.1 ke Polygon (Matic) sebagai sidechain alternatif
-· Immediate Result: Akses pengguna non-mainnet ke fitur IL protection; TVL multi-chain pertama
-· Long-term Impact: Fragmentasi likuiditas; V3 hanya di Ethereum+Arbitrum; Polygon terjebak V2 legacy tanpa upgrade path jelas
-· Supporting Dataset: Phase 3 EV-008; Phase 4 Technical Upgrade History; Phase 7 External Dependencies
+· Trigger: Gas Ethereum tinggi; Polygon menawarkan L2/sidechain murah; butuh akses pengguna non-whale
+· Evidence: Phase 3 EV-008 "Deploy Bancor V2.1 di Polygon"; Phase 4 Architecture; Phase 7 Chain Dependencies
+· Decision: Deploy kontrak V2.1 ke Polygon (Matic Network) dengan IL protection dan single-sided staking
+· Immediate Result: TVL Polygon tumbuh, pengguna L2 mendapatkan akses fitur Bancor
+· Long-term Impact: V3 TIDAK di-deploy ke Polygon (hanya Ethereum + Arbitrum); Polygon tetap legacy V2.1; pola "multi-chain selektif" terbentuk
+· Supporting Dataset: Phase 3 EV-008, Phase 4 Architecture, Phase 7 Chain Dependencies
 
-Keputusan: Pembentukan BancorDAO dan governance on-chain (2020-Q4)
-· Trigger: Kebutuhan desentralisasi kendali parameter setelah V2/V2.1; komunitas meminta kendali
-· Evidence: DAO launch Q4 2020 dengan GovernorAlpha, Timelock, Snapshot; proposal pertama dieksekusi 【Phase 3 EV-009; Phase 4 Security Model Timelock; Phase 6 Governance】
-· Decision: Membangun tata kelola terdesentralisasi dengan voting BNT/stBNT, Timelock 48h, Snapshot signaling
-· Immediate Result: Transisi kendali parameter (fee, whitelist, upgrade) dari tim inti ke token holder
-· Long-term Impact: Semua upgrade mayor (V3 launch, V2 deprecation, LST whitelisting, parameter Vortex) melalui DAO
-· Supporting Dataset: Phase 3 EV-009; Phase 4 Security Model; Phase 6 Governance
+Keputusan: Membentuk BancorDAO dan meluncurkan governance on-chain (2020-Q4)
+· Trigger: Matangnya protokol; tekanan komunitas untuk desentralisasi; persiapan V3 yang butuh governance parameter
+· Evidence: Phase 3 EV-009 "Pembentukan BancorDAO"; Phase 2 Entity BancorDAO; Phase 6 Governance
+· Decision: Deploy GovernorAlpha, Timelock, Snapshot space; transisi kontrol parameter (fee, whitelist, upgrade) ke token holder
+· Immediate Result: Proposal pertama diajukan dan dieksekusi on-chain; foundation mengurangi kontrol langsung
+· Long-term Impact: Semua upgrade V3, parameter Vortex, whitelist token LST (wstETH/rETH) lewat DAO; foundation tetap kelola treasury operasional
+· Supporting Dataset: Phase 3 EV-009, Phase 2 Entity BancorDAO, Phase 6 Governance
 
-Keputusan: Luncuran Bancor V3 dengan Omnipool, Vortex, Infinity Staking di Ethereum + Arbitrum (2021-10)
-· Trigger: V2/V2.1 arsitektur multi-pool kompleks, inflasi BNT tidak berkelanjutan, UX fragmenter, gas tinggi
-· Evidence: V3 Oktober 2021: Omnipool single contract, Vortex buyback&burn, stBNT auto-compound, Chainlink oracle, deploy dual-chain 【Phase 3 EV-010; Phase 4 Architecture, Core Components, Technical Upgrade History V3; Phase 6 Inflation/Deflation V3 era】
-· Decision: Redesain total arsitektur: single Omnipool, deflationary tokenomics, L2 scaling, oracle terdesentralisasi
-· Immediate Result: V3 live di 2 chain; inflasi BNT dihentikan; Vortex burn aktif; staking disederhanakan via stBNT
-· Long-term Impact: Model berkelanjutan tanpa inflasi; nilai BNT terikat ke fee revenue; fondasi untuk LST integration 2024
-· Supporting Dataset: Phase 3 EV-010; Phase 4 Architecture, Core Components; Phase 6 Inflation/Deflation
+Keputusan: Luncurkan V3 dengan Omnipool, Vortex, Infinity Staking di Ethereum + Arbitrum (2021-10)
+· Trigger: V2 kompleks (multi-pool), inflasi BNT tidak berkelanjutan, butuh UX lebih sederhana, skalabilitas L2
+· Evidence: Phase 3 EV-010 "Luncuran Bancor V3"; Phase 4 Technical Upgrade History; Phase 8 Market Position
+· Decision: Arsitektur Omnipool single contract, Vortex buyback & burn (deflationary), Infinity Staking (stBNT auto-compound), Chainlink oracles, deploy dual-chain
+· Immediate Result: V2 dideprekasi 2022; supply BNT beralih deflationary; UX staking disederhanakan; TVL berpindah ke V3
+· Long-term Impact: Model tokenomics berubah fundamental (inflationary → deflationary); Arbitrum jadi ~30-40% TVL; single-sided staking + IL protection tetap core
+· Supporting Dataset: Phase 3 EV-010, Phase 4 Technology, Phase 6 Token Inflation/Deflation
 
-Keputusan: Audit komprehensif V3 oleh Trail of Bits, PeckShield, OpenZeppelin pre-launch (2021-09)
-· Trigger: Trauma eksploit 2020; kebutuhan kepercayaan institusional dan komunitas untuk V3
-· Evidence: 3 firma top audit V3 core contracts (~40k lines); laporan publik; temuan kritikal diperbaiki pre-launch 【Phase 3 EV-011; Phase 4 Audit History V3; Phase 7 Major Integrations Security Audits】
-· Decision: Menginvestasi audit multi-firma transparan sebelum mainnet launch
-· Immediate Result: Kontrak V3 lebih aman; laporan publik membangun kepercayaan; standar keamanan tinggi
-· Long-term Impact: Bug bounty ImmuneFi $100k max; tidak ada eksploit mayor V3 sejak launch Oktober 2021
-· Supporting Dataset: Phase 3 EV-011; Phase 4 Audit History; Phase 7 Major Integrations
+Keputusan: Audit V3 oleh Trail of Bits, PeckShield, OpenZeppelin pre-launch (2021-09)
+· Trigger: Trauma eksploit 2020; V3 kompleksitas tinggi (Omnipool, Vortex, proxy upgradeable); butuh kepercayaan institusional
+· Evidence: Phase 3 EV-011 "Audit Keamanan Bancor V3"; Phase 4 Audit History; Phase 7 Security Integrations
+· Decision: Kontrak 3 firma audit top-tier secara paralel, publikasi laporan transparan, perbaiki temuan kritikal sebelum mainnet
+· Immediate Result: Laporan publik tersedia, kerentanan diperbaiki, komunitas percaya launch V3
+· Long-term Impact: Standar audit multi-firma jadi norma; bug bounty ImmuneFi $100k diluncurkan; tidak ada eksploit mayor V3 sejak launch
+· Supporting Dataset: Phase 3 EV-011, Phase 4 Audit History, Phase 7 Security Integrations
 
-Keputusan: Integrasi Chainlink Price Feeds sebagai oracle utama untuk IL Protection dan Vortex (2021)
-· Trigger: Butuh oracle terdesentralisasi andal untuk valuasi aset, perhitungan IL, parameter Vortex
-· Evidence: V3 mengintegrasikan Chainlink feeds (ETH/USD, BNT/USD, dll) via OracleReader contract 【Phase 3 EV-012; Phase 4 Core Components OracleReader; Phase 7 External Dependencies Chainlink】
-· Decision: Mengadopsi Chainlink sebagai single oracle provider untuk semua kritikal finansial
-· Immediate Result: Oracle aman untuk pricing, IL calculation, Vortex accounting
-· Long-term Impact: Ketergantungan kritis pada Chainlink; tidak ada fallback oracle terintegrasi (risk identified Phase 7)
-· Supporting Dataset: Phase 3 EV-012; Phase 4 Core Components; Phase 7 External Dependencies
+Keputusan: Integrasi Chainlink Price Feeds sebagai oracle tunggal untuk V3 (2021)
+· Trigger: Butuh oracle terdesentralisasi untuk IL protection, Vortex accounting, asset valuation; Chainlink standar industri
+· Evidence: Phase 3 EV-012 "Integrasi Chainlink"; Phase 4 Core Components OracleReader; Phase 7 External Dependencies
+· Decision: Gunakan Chainlink Price Feeds (ETH/USD, BNT/USD, dll) via OracleReader contract; tidak ada fallback oracle
+· Immediate Result: Oracle aman untuk kritis finansial protokol
+· Long-term Impact: Single point of failure oracle; jika Chainlink stale/terkompromi, IL protection dan Vortex bisa salah hitung; tidak ada diversifikasi oracle hingga 2024
+· Supporting Dataset: Phase 3 EV-012, Phase 4 Technology, Phase 7 Ecosystem Risks
 
-Keputusan: Migrasi likuiditas V2 ke V3 dan depresiasi V2 via DAO proposals (2022-Q1/Q2)
-· Trigger: V3 live; perlu konsentrasi likuiditas, menghentikan inflasi V2, menyederhanakan protokol
-· Evidence: DAO proposals migrasi LP, stop V2 emissions, disable V2 contracts via governance 【Phase 3 EV-017; Phase 4 Technical Upgrade History V2 Deprecation; Phase 6 Major Token Events V2 Deprecation】
-· Decision: Proses migrasi bertahap melalui governance: LP withdraw V2 → deposit V3; V2 contracts dinonaktifkan
-· Immediate Result: V2 dideprekasi sepenuhnya; semua likuiditas & reward di V3; supply BNT lebih terkendali
-· Long-term Impact: Protokol single-version; tidak ada fragmentasi V2/V3; governance terbukti efektif untuk koordinasi mayor
-· Supporting Dataset: Phase 3 EV-017; Phase 4 Technical Upgrade History; Phase 6 Major Token Events
+Keputusan: Migrasi likuiditas V2 ke V3 dan deprecate V2 sepenuhnya (2022-Q1-Q2)
+· Trigger: V3 live, V2 fragmentasi likuiditas, emisi reward V2 mengganggu tokenomics V3
+· Evidence: Phase 3 EV-017 "Migrasi Likuiditas V2 ke V3"; Phase 4 Technical Upgrade History; Phase 6 Token Events
+· Decision: DAO proposal migrasi bertahap, hentikan emisi V2, nonaktifkan kontrak V2 via governance
+· Immediate Result: V2 mati, semua likuiditas & reward di V3, supply BNT lebih terkendali
+· Long-term Impact: Tidak ada fragmentasi versi; fokus pengembangan single codebase; pengguna V2 terpaksa migrasi
+· Supporting Dataset: Phase 3 EV-017, Phase 4 Technology, Phase 6 Token
 
-Keputusan: Penyesuaian parameter Vortex dan fee swap via governance berkala (2023-2024)
-· Trigger: Kondisi pasar berubah; perlu optimasi fee revenue vs staker yield vs burn rate
-· Evidence: Beberapa proposal Snapshot 2023-2024 menyesuaikan Vortex fee split, swap fee default, whitelist token 【Phase 3 EV-018; Phase 6 Governance; Phase 7 Governance Ecosystem BancorDAO】
-· Decision: DAO mengelola tokenomics dinamis via parameter changes tanpa code upgrade
-· Immediate Result: Fee split Vortex:staker disesuaikan; swap fee per pool dioptimasi; aset baru diwhitelist
-· Long-term Impact: Fleksibilitas ekonomi protokol; responsif ke pasar; risiko parameter change tiba-tiba (Phase 7 Risk)
-· Supporting Dataset: Phase 3 EV-018; Phase 6 Governance; Phase 7 Governance Ecosystem
+Keputusan: Menambahkan wstETH dan rETH ke Omnipool V3 via governance (2024-Q1-Q2)
+· Trigger: Tren LST/restaking besar (Lido, Rocket Pool); butuh yield ETH native + IL protection; diversifikasi reserve asset
+· Evidence: Phase 3 EV-019 "Integrasi wstETH dan LST"; Phase 7 Major Integrations; Phase 8 Narrative LST/Restaking
+· Decision: Proposal DAO whitelist wstETH, rETH sebagai reserve asset di Omnipool dengan IL protection
+· Immediate Result: LP bisa single-sided stake wstETH/rETH dapat stETH yield + swap fees + IL protection
+· Long-term Impact: Narasi "LST/restaking" jadi secondary narrative 2024; menarik likuiditas institusional; template untuk aset produktif lain
+· Supporting Dataset: Phase 3 EV-019, Phase 7 Integrations, Phase 8 Narrative
 
-Keputusan: Integrasi wstETH dan rETH ke Omnipool V3 (2024-Q1/Q2)
-· Trigger: Tren LST/restaking besar; permintaan yield staking ETH native + IL protection
-· Evidence: Governance proposal menambahkan wstETH (Lido), rETH (Rocket Pool) sebagai reserve Omnipool 【Phase 3 EV-019; Phase 7 Major Integrations wstETH/LST; Phase 8 Narrative LST Secondary】
-· Decision: Whitelisting LST sebagai reserve asset di Omnipool dengan single-sided staking + IL protection
-· Immediate Result: Ekspansi aset produktif; menarik likuiditas LST; diversifikasi yield sumber (staking yield + fees + IL protection)
-· Long-term Impact: Positioning Bancor sebagai hub LST yield terproteksi; diferensiasi vs AMM lain
-· Supporting Dataset: Phase 3 EV-019; Phase 7 Major Integrations; Phase 8 Narrative
+## Evolution Pattern
 
-Keputusan: Peluncuran Bancor SDK v2 dan developer tools terbaru (2024)
-· Trigger: Butuh menarik integrator eksternal; SDK lama outdated; ekosistem developer minimal
-· Evidence: SDK TypeScript/JS baru dirilis 2024 dengan docs lengkap, npm packages, programmatic interfaces 【Phase 3 EV-020; Phase 4 Current Tech Stack SDK; Phase 7 Developer Ecosystem SDK】
-· Decision: Investasi developer experience: SDK modern, docs, contoh kode, NPM publishing
-· Immediate Result: External developers bisa build di atas Bancor V3 mudah; potensi integrasi dApp baru
-· Long-term Impact: Ekosistem integrator tumbuh; mengurangi ketergantungan pada frontend resmi alone
-· Supporting Dataset: Phase 3 EV-020; Phase 4 Current Tech Stack; Phase 7 Developer Ecosystem
+Perubahan Strategi: Dari bonding curve pioneer (V1) → pool-based AMM dengan inflasi reward (V2) → single-sided + IL protection (V2.1) → Omnipool deflationary dengan protocol-owned liquidity (V3)
+· Evidence: Phase 3 timeline EV-001, EV-005, EV-007, EV-010 menunjukkan evolusi arsitektur fundamental setiap 1-2 tahun; Phase 4 Technical Upgrade History
+· Drivers: Kompetisi (Uniswap V2/V3), kebutuhan diferensiasi (IL protection), keberlanjutan tokenomics (inflasi → deflationary), UX (single-sided), skalabilitas (Arbitrum)
 
-Evolution Pattern
+Perubahan Teknologi: Smart token bonding curve → Multi-pool AMM → Single Omnipool contract dengan internal accounting
+· Evidence: Phase 4 Architecture evolution; Phase 3 EV-001 (V1 bonding curve), EV-005 (V2 pool-based), EV-010 (V3 Omnipool)
+· Drivers: Gas efficiency (single contract vs banyak pool), composability (internal accounting), upgradeability (proxy pattern), cross-chain (Arbitrum deployment)
 
-Perubahan Strategi: Dari Bonding Curve Pioneer → Pool-based AMM dengan Insentif Inflasioner → Omnipool Deflationary dengan IL Protection Protocol-Owned
-· Evidence: V1 (2017) bonding curve smart tokens; V2 (2020) pool-based + BNT inflation rewards; V2.1 (2020) IL protection funded by inflation; V3 (2021) Omnipool + Vortex burn + protocol-owned liquidity funding IL protection, zero inflation 【Phase 3 EV-001, EV-005, EV-007, EV-010; Phase 4 Technical Upgrade History; Phase 6 Inflation/Deflation evolution】
-· Supporting Dataset: Phase 3 EV-001, EV-005, EV-007, EV-010; Phase 4 Technical Upgrade History; Phase 6 Inflation/Deflation
+Perubahan Tokenomics: Fixed supply TGE → Elastic supply inflationary (V2 co-incentives, V2.1 IL funding) → Deflationary via Vortex burn (V3)
+· Evidence: Phase 6 Token Inflation/Deflation; Phase 3 EV-005 (V2 elastic supply), EV-007 (V2.1 IL funding via inflation), EV-010 (V3 Vortex burn, no inflation)
+· Drivers: Eksploit 2020 mempercepat redesign; tekanan jual dari inflasi berkelanjutan; narasi "value capture" via buyback & burn lebih menarik investor
 
-Perubahan Teknologi: Dari Multi-pool Per-token → Single Omnipool Contract → Cross-chain Dual Deployment (Ethereum + Arbitrum)
-· Evidence: V1: per-token smart token contracts; V2: multiple pool contracts; V3: single Omnipool contract managing all reserves; deployed simultaneously on Ethereum L1 and Arbitrum L2 【Phase 4 Architecture; Phase 4 Technical Upgrade History V3; Phase 7 External Dependencies Arbitrum Bridge】
-· Supporting Dataset: Phase 4 Architecture; Phase 4 Technical Upgrade History; Phase 7 External Dependencies
+Perubahan Governance: Team/foundation kontrol penuh → BancorDAO dengan parameter control → Full upgrade authority via Timelock
+· Evidence: Phase 2 Entity BancorDAO; Phase 3 EV-009 (DAO formation), EV-010 (V3 governance), EV-018 (parameter proposals 2023)
+· Drivers: Regulatory pressure (Swiss foundation), komunitas minta desentralisasi, V3 butuh parameter dinamis (fee, Vortex split, whitelist)
 
-Perubahan Tokenomics: Dari Inflationary (Reward/IL Funding) → Deflationary (Vortex Burn) → Dynamic Parameter-Controlled
-· Evidence: V1: fixed supply; V2/V2.1: elastic supply minting for co-incentives & IL protection; V3: no routine inflation, Vortex burns BNT from fees, DAO controls fee split parameter 【Phase 6 Inflation/Deflation; Phase 3 EV-010, EV-018; Phase 4 Core Components Vortex】
-· Supporting Dataset: Phase 6 Inflation/Deflation; Phase 3 EV-010, EV-018; Phase 4 Core Components
+Perubahan Ekosistem: Ethereum only → Ethereum + Polygon (V2.1) → Ethereum + Arbitrum (V3 only)
+· Evidence: Phase 3 EV-008 (Polygon V2.1), EV-010 (V3 Ethereum+Arbitrum), EV-014 (Arbitrum Bridge); Phase 7 Chain Dependencies
+· Drivers: Gas Ethereum tinggi → Polygon murah tapi V3 tidak deploy; Arbitrum dipilih untuk V3 karena EVM equivalence, security, ecosystem DeFi; Polygon legacy V2.1 saja
 
-Perubahan Governance: Dari Tim Pusat (Foundation) → BancorDAO Hybrid (Snapshot + On-chain Timelock) → Full Parameter Control via DAO
-· Evidence: 2017-2020: foundation/tim kontrol penuh; Q4 2020: DAO launch dengan GovernorAlpha + Timelock; 2022: V2 deprecation via DAO; 2023-2024: parameter Vortex/fee/whitelist via DAO proposals 【Phase 3 EV-009, EV-017, EV-018; Phase 4 Security Model Timelock; Phase 6 Governance】
-· Supporting Dataset: Phase 3 EV-009, EV-017, EV-018; Phase 4 Security Model; Phase 6 Governance
+## Technical Decision Pattern
 
-Perubahan Ekosistem: Dari Ethereum Only → Ethereum + Polygon (V2 legacy) → Ethereum + Arbitrum (V3 primary) → LST Integration Hub
-· Evidence: V1/V2: Ethereum only; V2.1: Polygon deployment; V3: Ethereum+Arbitrum only (no Polygon V3); 2024: wstETH/rETH whitelisted for LST yield + IL protection 【Phase 3 EV-008, EV-010, EV-019; Phase 7 External Dependencies chains; Phase 8 Narrative LST】
-· Supporting Dataset: Phase 3 EV-008, EV-010, EV-019; Phase 7 External Dependencies; Phase 8 Narrative
+Pola 1: Arsitektur Upgrade Fundamental Setiap Generasi (V1→V2→V3)
+· Decision Pattern: Setiap major version mengganti arsitektur inti sepenuhnya (bonding curve → pool-based → omnipool), bukan incremental improvement; migrasi data/likuiditas via governance proposal
+· Evidence: Phase 3 EV-001, EV-005, EV-010; Phase 4 Technical Upgrade History; Phase 4 Architecture
+· Supporting Dataset: Phase 3 History, Phase 4 Technology
 
-Technical Decision Pattern
+Pola 2: Keamanan Sebagai Prioritas Absolut Pasca-Eksploit 2020
+· Decision Pattern: Setelah hack $23.5M, semua keputusan teknis V3 berorientasi keamanan: multi-audit (3 firma), proxy upgradeable + DAO timelock 48h, pausable, reentrancy guard, bug bounty $100k, hapus single-key upgradeability
+· Evidence: Phase 3 EV-006, EV-011; Phase 4 Security Model; Phase 7 Security Integrations; Phase 7 Ecosystem Risks
+· Supporting Dataset: Phase 3 History, Phase 4 Technology, Phase 7 Ecosystem
 
-Pola 1: Arsitektur Upgradeable Proxy (UUPS/Transparent) Dikontrol DAO Timelock untuk Semua Kontrak Inti
-· Decision Pattern: Semua kontrak kritis V3 (Omnipool, Vortex, InfinityStaking, OracleReader, Governance) menggunakan upgradeable proxy pattern dengan ProxyAdmin dikontrol TimelockController (48h delay) yang dieksekusi oleh BancorDAO proposal
-· Evidence: Contracts V3 menggunakan OpenZeppelin UUPS/TransparentUpgradeableProxy; Timelock.sol 48h minimum delay; ProxyAdmin owned by DAO 【Phase 4 Security Model Upgradeable Proxy; Phase 4 Core Components Governance Contracts; Phase 4 Current Tech Stack OpenZeppelin Contracts】
-· Supporting Dataset: Phase 4 Security Model; Phase 4 Core Components; Phase 4 Current Tech Stack
+Pola 3: Oracle Tunggal (Chainlink) Tanpa Fallback
+· Decision Pattern: Mengandalkan Chainlink Price Feeds sebagai single source of truth untuk IL protection, Vortex, valuation; tidak mengintegrasikan Redstone, Pyth, atau TWAP sebagai fallback
+· Evidence: Phase 3 EV-012; Phase 4 Core Components OracleReader; Phase 7 External Dependencies; Phase 7 Ecosystem Risks
+· Supporting Dataset: Phase 3 History, Phase 4 Technology, Phase 7 Ecosystem
 
-Pola 2: Multi-Audit Pre-Launch oleh Firma Top-Tier (Trail of Bits, PeckShield, OpenZeppelin) sebagai Standar Wajib
-· Decision Pattern: Setiap rilis mayor (V3) diaudit oleh minimal 3 firma keamanan ternama secara independen; laporan dipublikasikan transparan; temuan kritikal wajib diperbaiki sebelum mainnet
-· Evidence: V3 audit oleh Trail of Bits, PeckShield, OpenZeppelin September 2021; laporan publik di GitHub/blog; V2 post-exploit audit PeckShield; V1 audit Quantstamp; V2 audit CertiK 【Phase 4 Audit History; Phase 3 EV-011; Phase 7 Major Integrations Security Audits】
-· Supporting Dataset: Phase 4 Audit History; Phase 3 EV-011; Phase 7 Major Integrations
+Pola 4: Bridge Kanonik Saja (Arbitrum Bridge) untuk Cross-Chain
+· Decision Pattern: Hanya menggunakan Arbitrum canonical bridge untuk transfer BNT L1↔L2; tidak integrasi fast bridge (Hop, Across, Synapse, Celer) meski withdrawal L2→L1 butuh 7 hari
+· Evidence: Phase 3 EV-014; Phase 4 Architecture; Phase 7 Infrastructure Providers; Phase 7 Ecosystem Risks
+· Supporting Dataset: Phase 3 History, Phase 4 Technology, Phase 7 Ecosystem
 
-Pola 3: Oracle Terpusat pada Chainlink Price Feeds Tanpa Fallback Terintegrasi
-· Decision Pattern: Seluruh valuasi aset, IL protection calculation, Vortex accounting bergantung pada Chainlink Price Feeds via OracleReader contract; tidak ada integrasi TWAP, Pyth, Redstone, atau oracle lain sebagai fallback
-· Evidence: OracleReader contract aggregates Chainlink feeds; docs menyebut "Chainlink Price Feeds" sebagai oracle; tidak ada mention fallback oracle di docs/architecture 【Phase 4 Core Components OracleReader; Phase 7 External Dependencies Chainlink; Phase 7 Ecosystem Risks Oracle Dependency】
-· Supporting Dataset: Phase 4 Core Components; Phase 7 External Dependencies; Phase 7 Ecosystem Risks
+Pola 5: Upgradeable Proxy (UUPS/Transparent) Dikontrol DAO Timelock
+· Decision Pattern: Semua kontrak inti (Omnipool, Vortex, Staking, OracleReader) upgradeable via proxy pattern; admin = ProxyAdmin dikontrol Timelock DAO (48h delay); tidak ada immutable contracts
+· Evidence: Phase 4 Security Model; Phase 4 Core Components Governance Contracts; Phase 7 Ecosystem Risks (upgradeable contract governance risk)
+· Supporting Dataset: Phase 4 Technology, Phase 7 Ecosystem
 
-Pola 4: Cross-chain Menggunakan Canonical Bridge Saja (Arbitrum Bridge) Tanpa Fast Bridge Integration
-· Decision Pattern: Transfer BNT L1↔L2 sepenuhnya via Arbitrum canonical bridge (7-day withdrawal L2→L1); tidak ada integrasi native dengan fast bridges (Hop, Across, Synapse, Celer) di protokol atau frontend
-· Evidence: V3 deployed Ethereum+Arbitrum; Arbitrum Bridge digunakan untuk transfer; blog V3 mention bridge; frontend tidak menawarkan opsi fast bridge 【Phase 3 EV-014; Phase 4 Architecture Cross-chain; Phase 7 External Dependencies Arbitrum Bridge; Phase 7 Ecosystem Risks Bridge Dependency】
-· Supporting Dataset: Phase 3 EV-014; Phase 4 Architecture; Phase 7 External Dependencies; Phase 7 Ecosystem Risks
+Pola 6: Single-Sided Staking Sebagai Diferensiasi Teknis Utama
+· Decision Pattern: Dari V2.1 hingga V3, arsitektur dirancang untuk single-sided exposure: LP deposit token X, protokol menyediakan BNT counterparty dari reserves; tidak perlu user pairing manual
+· Evidence: Phase 3 EV-007, EV-010; Phase 4 Core Components Omnipool; Phase 8 Narrative Position
+· Supporting Dataset: Phase 3 History, Phase 4 Technology, Phase 8 Market
 
-Pola 5: Single Omnipool Contract untuk Semua Reserve Assets (V3) vs Multi-Pool (V2)
-· Decision Pattern: V3 mengkonsolidasikan semua likuiditas ke satu kontrak Omnipool dengan internal accounting, menggantikan model multi-pool terpisah V2; memungkinkan efisiensi gas, shared liquidity, unified fee collection untuk Vortex
-· Evidence: V3 architecture docs: "single Omnipool contract holding all protocol reserves"; V2 memiliki pool per pasangan; Omnipool manages all whitelisted tokens internally 【Phase 4 Architecture; Phase 4 Core Components Omnipool; Phase 4 Technical Upgrade History V3】
-· Supporting Dataset: Phase 4 Architecture; Phase 4 Core Components; Phase 4 Technical Upgrade History
+## Financial Decision Pattern
 
-Pola 6: Hardhat + ethers.js + TypeScript Strict + OpenZeppelin Libraries sebagai Stack Baku
-· Decision Pattern: Development framework konsisten: Hardhat untuk build/test/deploy; ethers.js v6 untuk contract interaction; TypeScript strict mode untuk all off-chain code; OpenZeppelin Contracts v4 untuk libraries (ERC20, Upgradeable, ReentrancyGuard, Math)
-· Evidence: contracts-v3 package.json: hardhat, ethers, @openzeppelin/contracts; frontend package.json: ethers, typescript strict; SDK TypeScript 【Phase 4 Development Framework; Phase 4 Current Tech Stack; Phase 4 Programming Languages】
-· Supporting Dataset: Phase 4 Development Framework; Phase 4 Current Tech Stack; Phase 4 Programming Languages
+Pola 1: Satu Ronde Fundraising Besar (ICO $153M) Tanpa Equity Pasca-ICO
+· Decision Pattern: Seluruh pengembangan 2017-2024 didanai dari ICO Juni 2017 ($153M); tidak ada Series A/B, tidak ada grant publik, tidak ada revenue sharing ke investor equity
+· Evidence: Phase 5 Funding History (hanya 2 ronde: private sale Mei 2017 + public sale Juni 2017); Phase 5 Financial Dependencies; Phase 2 Entity Investors
+· Supporting Dataset: Phase 5 Financial, Phase 2 Entity
 
-Financial Decision Pattern
+Pola 2: Treasury Opacity — Tidak Ada Transparency Report
+· Decision Pattern: Bprotocol Foundation tidak mempublikasikan dashboard treasury, komposisi aset, ukuran, atau laporan keuangan berkala; komunitas tidak bisa verifikasi runway/diversifikasi
+· Evidence: Phase 5 Treasury (Current Treasury Size: "Tidak diungkap"); Phase 5 Financial Risk; Phase 7 Ecosystem Risks (Treasury Opacity)
+· Supporting Dataset: Phase 5 Financial, Phase 7 Ecosystem
 
-Pola 1: Sumber Dana Utama Hanya ICO 2017 ($153M) — Tidak Ada Fundraising Eksternal Pasca-ICO
-· Decision Pattern: Seluruh pengembangan 2017-2024 didanai dari proceeds ICO $153M (396,720 ETH) yang dialokasikan ke foundation (20%), team (20% vesting), reserve (10%); tidak ada Series A, grant, atau equity funding tercatat
-· Evidence: Messari fundraising hanya menunjukkan ICO 2017; Crunchbase tidak menampilkan ronde equity pasca-ICO; foundation mengelola treasury dari alokasi token awal 【Phase 5 Funding History; Phase 5 Treasury; Phase 6 Distribution】
-· Supporting Dataset: Phase 5 Funding History; Phase 5 Treasury; Phase 6 Distribution
+Pola 3: Revenue Model Berbagi Fee Protocol ke Staker (Fee Switch On Sejak V3)
+· Decision Pattern: Swap fees dari Omnipool → sebagian ke Vortex burn, sisanya ke stBNT staker; tidak ada fee ke treasury foundation; protocol revenue = value capture via BNT burn + staker yield
+· Evidence: Phase 5 Revenue Model; Phase 6 Token Utility (Staking, Vortex); Phase 4 Core Components Vortex, Infinity Staking
+· Supporting Dataset: Phase 5 Financial, Phase 6 Token, Phase 4 Technology
 
-Pola 2: Revenue Model Sepenuhnya Bergantung pada Protocol Swap Fees (Fee Switch On Sejak V3 Oktober 2021)
-· Decision Pattern: Pendapatan protokol = swap fees dari Omnipool (default 0.1-1% per pool, set via DAO); fee dikumpulkan dalam aset yang di-swap; dibagi antara Vortex burn dan staker reward; tidak ada revenue stream lain (enterprise, licensing, grant)
-· Evidence: V3 launch mengaktifkan fee collection; Vortex mechanism mengambil porsi fee; sisa ke stBNT holders; docs tidak mention revenue lain 【Phase 5 Revenue Model; Phase 4 Core Components Vortex, Infinity Staking; Phase 3 EV-010】
-· Supporting Dataset: Phase 5 Revenue Model; Phase 4 Core Components; Phase 3 EV-010
+Pola 4: Tokenomics Shift dari Inflationary ke Deflationary Via Governance
+· Decision Pattern: V2/V2.1 mint BNT untuk reward & IL protection (inflationary); V3 governance memutuskan hentikan inflasi, gunakan Vortex buyback & burn dari fees (deflationary); parameter burn rate dikontrol DAO
+· Evidence: Phase 6 Token Inflation/Deflation; Phase 3 EV-005, EV-007, EV-010; Phase 6 Governance; Phase 8 Narrative Deflationary
+· Supporting Dataset: Phase 6 Token, Phase 3 History, Phase 8 Market
 
-Pola 3: Treasury Opacity — Tidak Ada Transparency Report, Dashboard, atau Laporan Keuangan Berkala
-· Decision Pattern: Bprotocol Foundation tidak mempublikasikan ukuran treasury, komposisi aset (stablecoin, BNT, ETH, dll), wallet address custodian, atau strategi manajemen dana; komunitas tidak bisa verifikasi runway/diversifikasi
-· Evidence: Blog, docs, governance proposals tidak memiliki treasury dashboard; Etherscan top holders tidak label foundation wallet; Messari/Token Terminal estimasi saja 【Phase 5 Treasury; Phase 7 Ecosystem Risks Treasury Opacity; Phase 5 Financial Risk Treasury Concentration】
-· Supporting Dataset: Phase 5 Treasury; Phase 7 Ecosystem Risks; Phase 5 Financial Risk
+Pola 5: Tidak Ada Pinjaman/Leverage Protocol — Operating dari Treasury & Fees
+· Decision Pattern: Tidak ada debt, lending, atau leverage yang dipublikasikan; operasi didanai sisa ICO + protocol fees; V3 fees cukup untuk operasi & insentif
+· Evidence: Phase 5 Financial Risk (No Debt); Phase 5 Financial Dependencies; Phase 5 Revenue Model
+· Supporting Dataset: Phase 5 Financial
 
-Pola 4: Tokenomics Deflationary via Vortex Buyback-and-Burn sebagai Value Capture Utama (Sejak V3)
-· Decision Pattern: Vortex mengumpulkan swap fees → internal swap ke BNT → burn (kirim ke 0x0); burn rate = parameter DAO; menciptakan tekanan deflationary sebanding volume trading; tidak ada buyback OTC/CEX
-· Evidence: Vortex contract logic: fee collection → swap to BNT → burn; DAO controls fee split parameter; no inflationary emissions since V3 【Phase 6 Inflation/Deflation Burn Mechanism; Phase 4 Core Components Vortex; Phase 3 EV-010】
-· Supporting Dataset: Phase 6 Inflation/Deflation; Phase 4 Core Components; Phase 3 EV-010
+## Ecosystem Decision Pattern
 
-Pola 5: Staking Yield = Real Yield dari Protocol Fees (Bukan Inflasi Token) — stBNT Auto-compounding
-· Decision Pattern: Infinity Staking (stBNT) memberikan bagi hasil swap fees (real yield) setelah porsi Vortex; tidak ada emisi BNT baru untuk reward; auto-compounding via stBNT rebasing; no lock-up
-· Evidence: V3 docs: "stakers earn share of swap fees"; stBNT auto-compounding; V2 co-incentives inflasioner dihentikan; Phase 6 Utility Staking, Inflation/Deflation 【Phase 6 Utility Staking; Phase 6 Inflation/Deflation; Phase 4 Core Components Infinity Staking】
-· Supporting Dataset: Phase 6 Utility; Phase 6 Inflation/Deflation; Phase 4 Core Components
+Pola 1: Integrasi Infrastruktur Kritis Hanya Dengan Provider Terpercaya Ternama (Chainlink, The Graph, OpenZeppelin, Arbitrum)
+· Decision Pattern: Oracle = Chainlink only; Indexing = The Graph only; Smart contract lib = OpenZeppelin only; L2 = Arbitrum only; Bridge = Arbitrum Bridge only; tidak diversifikasi vendor untuk komponen kritis
+· Evidence: Phase 3 EV-011, EV-012, EV-013, EV-014; Phase 4 Security Model (OpenZeppelin audit); Phase 7 External Dependencies; Phase 7 Infrastructure Providers
+· Supporting Dataset: Phase 3 History, Phase 4 Technology, Phase 7 Ecosystem
 
-Ecosystem Decision Pattern
+Pola 2: Ekspansi Multi-Chain Selektif — Hanya Deploy V3 di Ethereum + Arbitrum
+· Decision Pattern: V1/V2 Ethereum only; V2.1 ke Polygon (sidechain); V3 hanya Ethereum + Arbitrum (L2 optimistic rollup); tidak deploy ke Optimism, Base, BNB Chain, Avalanche, Polygon zkEVM, dll
+· Evidence: Phase 3 EV-008, EV-010, EV-014; Phase 4 Architecture; Phase 7 Chain Dependencies; Phase 7 Ecosystem Risks (Chain Dependency)
+· Supporting Dataset: Phase 3 History, Phase 4 Technology, Phase 7 Ecosystem
 
-Pola 1: Integrasi Oracle Ekslusif dengan Chainlink untuk Semua Kebutuhan Kritis Finansial
-· Decision Pattern: Chainlink Price Feeds sebagai single source of truth untuk asset valuation, IL protection calculation, Vortex parameter determination; tidak ada diversifikasi oracle provider
-· Evidence: OracleReader contract aggregates Chainlink feeds; docs "Oracles" page hanya Chainlink; V3 launch blog mention Chainlink integration 【Phase 3 EV-012; Phase 7 External Dependencies Chainlink; Phase 7 Major Integrations Chainlink】
-· Supporting Dataset: Phase 3 EV-012; Phase 7 External Dependencies; Phase 7 Major Integrations
+Pola 3: Partnership Aset Produktif (LST) Via Governance Whitelisting
+· Decision Pattern: Menambahkan wstETH (Lido) dan rETH (Rocket Pool) ke Omnipool via proposal DAO 2024; tidak permissionless pool creation — butuh Chainlink feed + DAO approval; template untuk aset yield-bearing lain
+· Evidence: Phase 3 EV-019; Phase 7 Major Integrations (wstETH/rETH); Phase 8 Narrative LST/Restaking; Phase 4 Core Components OracleReader (feed requirement)
+· Supporting Dataset: Phase 3 History, Phase 7 Ecosystem, Phase 8 Market
 
-Pola 2: Ekspansi Layer 2 Hanya ke Arbitrum One (Canonical) — Mengabaikan Optimism, Base, zkSync, Polygon V3
-· Decision Pattern: V3 deployed hanya di Ethereum L1 dan Arbitrum L2; Polygon hanya V2 legacy; tidak ada deployment V3 ke L2 lain رغم ekosistem DeFi besar di Optimism/Base
-· Evidence: V3 launch blog: "Deployed on Ethereum and Arbitrum"; DefiLlama chains: Ethereum, Arbitrum only for V3; Polygon TVL shows V2 only 【Phase 3 EV-010; Phase 4 Architecture chains; Phase 7 External Dependencies Arbitrum; Phase 8 Market Primary Chain】
-· Supporting Dataset: Phase 3 EV-010; Phase 4 Architecture; Phase 7 External Dependencies; Phase 8 Market
+Pola 4: Listing CEX Major (Binance, Coinbase, Kraken) Sebagai Likuiditas Sekunder & On-Ramp
+· Decision Pattern: BNT terlisting di Binance 2018, Coinbase 2018, Kraken, HTX, OKX; CEX menyediakan deep order book, fiat on-ramp, perpetual futures; Vortex buyback bergantung likuiditas CEX/DEX
+· Evidence: Phase 3 EV-004; Phase 5 Financial Dependencies; Phase 7 Exchange Ecosystem; Phase 8 Trading Markets
+· Supporting Dataset: Phase 3 History, Phase 5 Financial, Phase 7 Ecosystem, Phase 8 Market
 
-Pola 3: Partnership CEX untuk Likuiditas Sekunder — Binance, Coinbase, Kraken, HTX, OKX sebagai On-ramp Utama
-· Decision Pattern: Fokus listing di CEX tier-1 global untuk likuiditas BNT, price discovery, dan Vortex buyback market depth; tidak ada upaya listing DEX-specific atau market making program publik
-· Evidence: BNT listed di Binance (spot+perp), Coinbase, Kraken, HTX, OKX, Bittrex, Poloniex; CoinGecko markets shows CEX volume dominant 【Phase 7 Exchange Ecosystem; Phase 7 External Dependencies Binance/Coinbase; Phase 8 Trading Markets】
-· Supporting Dataset: Phase 7 Exchange Ecosystem; Phase 7 External Dependencies; Phase 8 Trading Markets
+Pola 5: Developer Ecosystem Dibangun Via SDK + Subgraph + Open Source
+· Decision Pattern: SDK TypeScript (@bancor/sdk) 2024, The Graph subgraph 2020, frontend open source, docs lengkap; tidak ada grant program besar/budgeting publik untuk developer (hanya DAO grants ad-hoc)
+· Evidence: Phase 3 EV-013, EV-020; Phase 4 Developer Tools; Phase 7 Developer Ecosystem; Phase 7 Applications
+· Supporting Dataset: Phase 3 History, Phase 4 Technology, Phase 7 Ecosystem
 
-Pola 4: Wallet Integration Standar Industri — MetaMask (Injected) + WalletConnect (Mobile) + Ledger (Hardware)
-· Decision Pattern: Mengadopsi standar wallet connection yang sudah mapan; tidak membangun wallet proprietary atau memaksa wallet tertentu; frontend mendukung semua wallet via WalletConnect
-· Evidence: App supports MetaMask injected, WalletConnect QR, Ledger hardware; docs "Connect Wallet" page shows these options 【Phase 3 EV-015, EV-016; Phase 7 Wallet Ecosystem; Phase 7 External Dependencies MetaMask/WalletConnect/Ledger】
-· Supporting Dataset: Phase 3 EV-015, EV-016; Phase 7 Wallet Ecosystem; Phase 7 External Dependencies
+## Governance Decision Pattern
 
-Pola 5: Developer Ecosystem Minimal Hingga 2024 — SDK Baru Dirilis 7 Tahun Setelah Launch
-· Decision Pattern: Tidak ada SDK resmi atau developer tools yang dipromosikan 2017-2023; hanya 2024 merilis @bancor/sdk v2 dengan docs lengkap; hackathon participation sporadic; grant program via DAO proposals only
-· Evidence: SDK npm package @bancor/sdk v2.x 2024 release; GitHub repos: contracts, frontend, sdk, subgraph; hackathon mentions di blog periodic; grants via Snapshot proposals 【Phase 3 EV-020; Phase 7 Developer Ecosystem SDK, Hackathon, Grant Program; Phase 4 Current Tech Stack SDK】
-· Supporting Dataset: Phase 3 EV-020; Phase 7 Developer Ecosystem; Phase 4 Current Tech Stack
+Pola 1: Desentralisasi Bertahap — Foundation → DAO Parameter Control → DAO Upgrade Authority
+· Decision Pattern: 2017-2020 foundation kontrol penuh; 2020 DAO formation (parameter fee, whitelist); 2021 V3 upgrade authority ke DAO via Timelock; foundation tetap kelola treasury ops & legal
+· Evidence: Phase 2 Entity Bprotocol Foundation, BancorDAO; Phase 3 EV-009, EV-010, EV-017, EV-018; Phase 6 Governance Model
+· Supporting Dataset: Phase 2 Entity, Phase 3 History, Phase 6 Token
+
+Pola 2: Voting Power = BNT + stBNT (Infinity Staking Receipt Token)
+· Decision Pattern: 1 BNT = 1 vote; 1 stBNT = 1 vote; mendorong staking untuk governance participation; tidak ada delegation ke representative council — direct token voting
+· Evidence: Phase 6 Governance (Voting Power, Delegation); Phase 2 Entity BancorDAO; Phase 3 EV-018 (proposal 2023)
+· Supporting Dataset: Phase 6 Token, Phase 2 Entity, Phase 3 History
+
+Pola 3: Off-Chain Signaling (Snapshot) → On-Chain Execution (Timelock 48h)
+· Decision Pattern: Proposal dibahas forum/discord → Snapshot temperature check → On-chain proposal (quorum) → Timelock 48h → Eksekusi; memisahkan signaling gasless dari execution binding
+· Evidence: Phase 2 Entity BancorDAO; Phase 3 EV-009, EV-018; Phase 6 Governance (Proposal System); Phase 7 Infrastructure Providers (Snapshot)
+· Supporting Dataset: Phase 2 Entity, Phase 3 History, Phase 6 Token, Phase 7 Ecosystem
+
+Pola 4: Parameter Ekonomis Dinamis Dikontrol DAO (Fee, Vortex Split, Whitelist)
+· Decision Pattern: Fee swap per pool, Vortex burn percentage vs staker share, token whitelist, IL protection parameter — semuanya lewat proposal DAO; tidak hardcoded di kontrak
+· Evidence: Phase 3 EV-018 (2023 parameter proposals); Phase 6 Governance; Phase 4 Core Components Vortex, OracleReader; Phase 8 Narrative DAO Governance
+· Supporting Dataset: Phase 3 History, Phase 4 Technology, Phase 6 Token, Phase 8 Market
+
+Pola 5: Security Council / Emergency Multisig Implisit Via Timelock Signers
+· Decision Pattern: TimelockController memerlukan multisig signers untuk eksekusi; identitas, jumlah, threshold (misal 3-of-5) tidak dipublikasikan; foundation kemungkinan besar mengontrol signifikan
+· Evidence: Phase 4 Security Model (Timelock); Phase 7 Ecosystem Risks (Upgradeable Contract Governance Risk); Phase 2 Entity (Foundation)
+· Supporting Dataset: Phase 4 Technology, Phase 7 Ecosystem, Phase 2 Entity
+
+## Risk Response Pattern
+
+Pola 1: Respons Darurat Eksploit 2020 — Patch, Negosiasi, Audit, Redesign Arsitektur Keamanan
+· Decision Pattern: Saat hack $23.5M: (1) emergency pause/upgrade kontrak, (2) negosiasi dengan peretas kembalikan dana, (3) audit PeckShield root cause, (4) redesign V2.1/V3: hapus single-key upgradeability, DAO timelock, pausable, multi-audit, bug bounty
+· Trigger: Eksploit Juli 2020 menargetkan wallet upgradeability V2
+· Evidence: Phase 3 EV-006; Phase 4 Security Model (post-exploit hardening); Phase 7 Ecosystem Risks
+· Response: Kontrak darurat upgrade, audit pasca-eksploit, V2.1 dengan model keamanan baru, V3 dengan proxy UUPS + Timelock + multi-audit + ImmuneFi $100k
+· Result: Tidak ada eksploit mayor V3 sejak launch Okt 2021; keamanan jadi brand identity
+· Supporting Dataset: Phase 3 EV-006, Phase 4 Technology, Phase 7 Ecosystem
+
+Pola 2: Respons Tekanan Jual Inflasi BNT — Redesign Tokenomics ke Deflationary (Vortex)
+· Decision Pattern: Inflasi BNT V2/V2.1 menciptakan tekanan jual berkelanjutan; V3 governance memutuskan hentikan inflasi, implementasi Vortex buyback & burn dari fees; parameter burn rate adjustable via DAO
+· Trigger: Tokenomics inflationary tidak berkelanjutan; komunitas & investor mengeluh supply dilution
+· Evidence: Phase 3 EV-005, EV-007, EV-010; Phase 6 Token Inflation/Deflation; Phase 8 Narrative Deflationary
+· Response: V3 launch dengan Vortex, zero inflation, fee switch on, burn mechanism
+· Result: Supply BNT cenderung flat/menurun sejak 2021; narasi "deflationary" jadi marketing pillar
+· Supporting Dataset: Phase 3 History, Phase 6 Token, Phase 8 Market
+
+Pola 3: Respons Gas Ethereum Tinggi — Deploy Arbitrum L2 untuk V3
+· Decision Pattern: Gas Ethereum mahal mengganggu UX staking/swap; V3 deploy dual-chain Ethereum + Arbitrum Oktober 2021; Polygon hanya V2.1 legacy
+· Trigger: Gas fee Ethereum 2021 bull run > $50-100/tx; pengguna retail terkeluar
+· Evidence: Phase 3 EV-010, EV-014; Phase 4 Architecture; Phase 7 Chain Dependencies; Phase 8 Market Position
+· Response: Deploy V3 ke Arbitrum One (canonical bridge), frontend support cross-chain UX
+· Result: ~30-40% TVL V3 di Arbitrum; gas murah; tapi withdrawal L2→L1 7 hari via canonical bridge
+· Supporting Dataset: Phase 3 History, Phase 4 Technology, Phase 7 Ecosystem, Phase 8 Market
+
+Pola 4: Respons Regulatory (Swiss Foundation) — Legal Wrapper, Compliance, No US Persons di ICO
+· Decision Pattern: Bprotocol Foundation di Zug, Swiss; ICO 2017 exclude US persons; foundation handle legal/compliance; token BNT tidak dijual ulang foundation; DAO governance mengurangi centralization risk
+· Trigger: Regulasi ICO 2017 (SEC DAO Report Juli 2017); Swiss FINMA oversight
+· Evidence: Phase 1 Foundation (Swiss); Phase 2 Entity FINMA; Phase 5 Financial Risk (Regulatory); Phase 3 EV-002 (ICO details)
+· Response: Swiss legal entity, KYC/AML untuk ICO, foundation treasury management, DAO decentralization
+· Result: Beroperasi 7+ tahun tanpa enforcement action mayor; BNT listed Coinbase (US compliant)
+· Supporting Dataset: Phase 1 Foundation, Phase 2 Entity, Phase 5 Financial, Phase 3 History
+
+Pola 5: Respons Bear Market / Low Volume — Parameter Fee & Vortex Adjustment Via DAO
+· Decision Pattern: Volume swap turun → fee revenue turun → Vortex burn turun → staker yield turun; DAO proposal menyesuaikan fee swap, Vortex split percentage untuk balance revenue vs user cost
+· Trigger: Market condition bear 2022-2023, volume & TVL drop signifikan
+· Evidence: Phase 3 EV-018 (2023 parameter proposals); Phase 6 Governance; Phase 4 Core Components Vortex; Phase 8 Adoption Metrics (TVL/volume drop)
+· Response: Governance proposal mengubah fee default, Vor

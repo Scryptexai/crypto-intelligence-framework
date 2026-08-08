@@ -1,0 +1,190 @@
+PROJECT: EOS
+
+## Funding History
+
+Funding Round: Public Sale (ICO)  
+Date: 2017-06-26 to 2018-06-01  
+Amount: $4.1B  
+Currency: USD (raised in ETH, BTC, USD)  
+Lead Investor: Public participants (permissionless year-long distribution)  
+Participating Investors: Public retail and institutional participants via Ethereum smart contract  
+Valuation: tidak diungkap (no traditional valuation; token price determined by market during distribution)  
+Funding Type: Public Sale  
+Status: Completed  
+Sources: (HIGH) [SEC Complaint vs Block.one, https://www.sec.gov/litigation/complaints/2019/pr2019-197.pdf]  
+Sources: (HIGH) [CoinDesk, https://www.coindesk.com/markets/2018/06/14/eos-mainnet-launches-after-block-producers-vote/]  
+Sources: (MEDIUM) [Bloomberg, https://www.bloomberg.com/news/articles/2018-06-02/eos-raises-4-billion-in-year-long-ico-the-largest-ever]
+
+Funding Round: EOS Network Ventures (Ecosystem Fund)  
+Date: 2023-09-01 (announced)  
+Amount: tidak diungkap  
+Currency: USD/EOS  
+Lead Investor: EOS Network Foundation (ENF)  
+Participating Investors: ENF treasury allocation  
+Valuation: tidak diungkap  
+Funding Type: Treasury Injection / Grant Program  
+Status: Ongoing  
+Sources: (MEDIUM) [EOS Network Foundation, https://eosnetwork.com/foundation/]  
+Sources: (LOW) [EOS Network Foundation Blog, https://eosnetwork.com/blog/] (verification needed for exact announcement page)
+
+## Treasury
+
+Current Treasury Size: tidak diungkap  
+Treasury Composition: tidak diungkap  
+Stablecoin Holdings: tidak diungkap  
+Native Token Holdings: tidak diungkap (ENF receives 1% annual inflation in EOS; exact balance not published real-time)  
+Other Assets: tidak diungkap  
+Treasury Custodian: EOS Network Foundation (ENF) — multi-sig accounts managed by ENF leadership (detail tidak dipublikasikan)  
+Sources: (HIGH) [EOS Network Foundation, https://eosnetwork.com/foundation/]  
+Sources: (MEDIUM) [CoinDesk ENF Launch, https://www.coindesk.com/business/2021/09/22/eos-community-launches-foundation-to-take-over-from-block-one/]  
+Sources: (HIGH) [eosio.system Contract Parameters, https://eosauthority.com/contract/eosio.system] (shows inflation allocation to `eosio.ef` / `eosio.fund` accounts)
+
+## Revenue Model
+
+Revenue Stream: Protocol Inflation Allocation (1% annual to ENF)  
+Status: Live  
+Description: eosio.system contract mints ~1% annual inflation allocated to ENF account (`eosio.ef`/`eosio.fund`) for protocol development, ecosystem growth, operations.  
+Sources: (HIGH) [eosio.system Contract Source, https://github.com/EOSIO/eos/blob/master/contracts/eosio.system/eosio.system.cpp]  
+Sources: (HIGH) [EOS Authority Contract State, https://eosauthority.com/contract/eosio.system]
+
+Revenue Stream: Block Producer Rewards (1% annual to BPs) — not direct revenue to foundation but network cost  
+Status: Live  
+Description: 1% annual inflation paid to 21 active BPs and standbys proportionally to votes; funded by token holders via dilution.  
+Sources: (HIGH) [eosio.system Contract Source, https://github.com/EOSIO/eos/blob/master/contracts/eosio.system/eosio.system.cpp]
+
+Revenue Stream: RAM Market Fees (0.5% fee on RAM trades)  
+Status: Live  
+Description: Bancor-algorithm RAM market charges 0.5% fee on each RAM buy/sell; fees accumulate in `eosio.ramfee` account; usage/destination determined by governance (historically burned or redirected).  
+Sources: (HIGH) [EOSIO System Contract RAM Market, https://github.com/EOSIO/eos/blob/master/contracts/eosio.system/eosio.system.cpp#L1150]  
+Sources: (MEDIUM) [EOS Network Foundation Resource Model, https://developers.eosnetwork.com/docs/resource-model/ram]
+
+Revenue Stream: EOS EVM Gas Fees (mapped to EOS CPU/NET)  
+Status: Live  
+Description: EOS EVM transactions consume EOS CPU/NET resources; users stake EOS for bandwidth; no direct protocol fee to treasury — resource costs paid to network (BP rewards via inflation).  
+Sources: (HIGH) [EOS EVM Documentation Gas, https://developers.eosnetwork.com/docs/eos-evm/gas]  
+Sources: (MEDIUM) [EOS EVM GitHub, https://github.com/eosnetworkfoundation/eos-evm]
+
+Revenue Stream: EOS Network Ventures Investment Returns  
+Status: Planned / Early Stage  
+Description: Equity/token investments in ecosystem projects; returns not yet realized or disclosed.  
+Sources: (LOW) [EOS Network Foundation, https://eosnetwork.com/foundation/] (no public portfolio or returns data)
+
+Revenue Stream: Grant Programs (Outflow, not revenue)  
+Status: Live  
+Description: ENF distributes grants to builders; funded by inflation allocation.  
+Sources: (MEDIUM) [EOS Network Foundation Grants, https://eosnetwork.com/grants/]
+
+## Revenue History
+
+Tidak diungkap.  
+Sources: (HIGH) [EOS Network Foundation, https://eosnetwork.com/foundation/] (no public financial statements, transparency reports, or revenue dashboards found)  
+Sources: (MEDIUM) [Messari EOS, https://messari.io/asset/eos] (no revenue data published)  
+Sources: (MEDIUM) [Token Terminal EOS, https://tokenterminal.com/terminal/projects/eos] (no revenue data published)
+
+## Fundraising Mechanism
+
+Mechanism: Public Sale (ICO) — year-long token distribution on Ethereum (2017-2018) raising ~$4.1B  
+Sources: (HIGH) [SEC Complaint, https://www.sec.gov/litigation/complaints/2019/pr2019-197.pdf]
+
+Mechanism: Protocol Inflation (Ongoing) — 1% annual token inflation allocated to ENF treasury via on-chain `eosio.system` contract  
+Sources: (HIGH) [eosio.system Contract, https://github.com/EOSIO/eos/blob/master/contracts/eosio.system/eosio.system.cpp]
+
+Mechanism: Ecosystem Fund (Treasury Deployment) — ENF allocates portion of treasury to EOS Network Ventures for strategic investments  
+Sources: (MEDIUM) [EOS Network Foundation, https://eosnetwork.com/foundation/]
+
+Mechanism: Grant Program (Treasury Deployment) — ENF awards grants to developers/projects from inflation-funded treasury  
+Sources: (MEDIUM) [EOS Network Foundation Grants, https://eosnetwork.com/grants/]
+
+## Token Sale
+
+Sale Type: Public Sale (ICO)  
+Date: 2017-06-26 to 2018-06-01  
+Status: Completed  
+Amount Raised: $4.1B  
+Currency: ETH, BTC, USD (via Ethereum smart contract)  
+Token Distributed: 1,000,000,000 EOS (ERC-20) over 341 days  
+Price Mechanism: Daily auction — 2,000,000 EOS per day distributed proportionally to daily contributions; final 100M EOS reserved for Block.one  
+Sources: (HIGH) [SEC Complaint, https://www.sec.gov/litigation/complaints/2019/pr2019-197.pdf]  
+Sources: (HIGH) [EOS Token Distribution Contract, https://github.com/EOSIO/eos/blob/master/contracts/eosio.token/eosio.token.cpp]  
+Sources: (HIGH) [CoinDesk ICO Summary, https://www.coindesk.com/markets/2018/06/14/eos-mainnet-launches-after-block-producers-vote/]
+
+Note: No private sale, launchpad, auction (other than daily), or community sale separate from the main ICO.
+
+## Financial Dependencies
+
+Dependency: EOS Network Foundation (ENF) — primary current funding recipient via 1% annual protocol inflation  
+Sources: (HIGH) [eosio.system Contract, https://eosauthority.com/contract/eosio.system]  
+Sources: (HIGH) [CoinDesk ENF Launch, https://www.coindesk.com/business/2021/09/22/eos-community-launches-foundation-to-take-over-from-block-one/]
+
+Dependency: Block.one (Historical) — initial capital from ICO proceeds (~$4.1B) used to fund early development, Block.one operations, Voice, and strategic investments; no ongoing financial obligation to ENF after 2021 transition  
+Sources: (HIGH) [SEC Complaint, https://www.sec.gov/litigation/complaints/2019/pr2019-197.pdf]  
+Sources: (MEDIUM) [CoinDesk Dan Larimer Exit, https://www.coindesk.com/business/2021/01/11/dan-larimer-leaves-block-one/]
+
+Dependency: Block Producers (BPs) — receive 1% annual inflation; operational costs covered by rewards; no direct funding to ENF but network security dependency  
+Sources: (HIGH) [eosio.system Contract, https://github.com/EOSIO/eos/blob/master/contracts/eosio.system/eosio.system.cpp]
+
+Dependency: Token Price (EOS) — inflation funding value denominated in EOS; USD purchasing power of ENF treasury correlates with EOS market price  
+Sources: (MEDIUM) [CoinMarketCap EOS, https://coinmarketcap.com/currencies/eos/]
+
+Dependency: Grant Recipients / Portfolio Companies — ENF capital deployment via grants and EOS Network Ventures creates financial exposure to project success  
+Sources: (LOW) [EOS Network Foundation Grants, https://eosnetwork.com/grants/] (no public portfolio disclosure)
+
+## Financial Risk
+
+Risk: Regulatory / Legal Financial Risk — SEC settlement 2019 ($24M penalty) established precedent; ongoing risk of token classification as security in US affecting exchange listings, custody, institutional adoption  
+Sources: (HIGH) [SEC Press Release, https://www.sec.gov/news/press-release/2019-197]  
+Sources: (HIGH) [SEC Complaint, https://www.sec.gov/litigation/complaints/2019/pr2019-197.pdf]
+
+Risk: Treasury Concentration — ENF treasury predominantly held in native EOS token (inflation allocations); lack of diversification exposes operations to EOS price volatility  
+Sources: (HIGH) [eosio.system Contract Inflation Allocation, https://eosauthority.com/contract/eosio.system]  
+Sources: (MEDIUM) [EOS Network Foundation, https://eosnetwork.com/foundation/] (no public diversification disclosure)
+
+Risk: Revenue Decline / Funding Dependency on Inflation — ENF operational budget depends on 1% annual inflation; if token price drops significantly, USD-denominated runway shrinks; no alternative revenue streams confirmed (protocol fees, enterprise services)  
+Sources: (HIGH) [eosio.system Contract, https://github.com/EOSIO/eos/blob/master/contracts/eosio.system/eosio.system.cpp]  
+Sources: (MEDIUM) [EOS Network Foundation, https://eosnetwork.com/foundation/]
+
+Risk: Lack of Financial Transparency — No public treasury dashboard, audited financial statements, transparency reports, or real-time on-chain treasury tracking for ENF multi-sig addresses  
+Sources: (HIGH) [EOS Network Foundation, https://eosnetwork.com/foundation/] (no transparency page)  
+Sources: (MEDIUM) [Messari EOS, https://messari.io/asset/eos] (no treasury data)
+
+Risk: EOS Network Ventures Capital Loss — Early-stage venture investments carry high failure rate; no public portfolio or performance data to assess risk  
+Sources: (LOW) [EOS Network Foundation, https://eosnetwork.com/foundation/]
+
+Risk: Block.one IP / Licensing Uncertainty — Antelope (Leap) software IP ownership/licensing between Block.one and ENF not publicly clarified; potential future licensing costs or restrictions  
+Sources: (MEDIUM) [CoinDesk ENF Launch, https://www.coindesk.com/business/2021/09/22/eos-community-launches-foundation-to-take-over-from-block-one/]  
+Sources: (LOW) [AntelopeIO GitHub, https://github.com/AntelopeIO/leap] (no license file clarifying Block.one vs ENF ownership)
+
+## Official Financial Resources
+
+Official Blog: https://eosnetwork.com/blog/  
+Transparency Report: tidak tersedia (no dedicated transparency report page)  
+Treasury Dashboard: tidak tersedia (no public dashboard)  
+Governance: https://eosauthority.com/ (BP voting, proposals)  
+Messari: https://messari.io/asset/eos  
+Token Terminal: https://tokenterminal.com/terminal/projects/eos  
+DefiLlama: https://defillama.com/chain/EOS  
+CryptoRank: https://cryptorank.io/price/eos  
+Whitepaper (Technical): https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md  
+EOS Network Foundation: https://eosnetwork.com/foundation/  
+EOS Network Foundation Grants: https://eosnetwork.com/grants/  
+EOS Authority Contracts (on-chain state): https://eosauthority.com/contract/eosio.system
+
+## Summary
+
+Total Funding Raised: $4.1B (ICO 2017-2018)  
+Funding Rounds: 1 (Public Sale/ICO) + 1 ongoing ecosystem fund (size undisclosed)  
+Treasury Status: tidak diungkap (no public disclosure of size, composition, or custodian details)  
+Revenue Sources: Protocol inflation (1% annual to ENF), RAM market fees (0.5% on trades, destination governance-dependent), EOS EVM resource consumption (indirect via CPU/NET staking), venture investment returns (unrealized)  
+Revenue Availability: tidak diungkap (no historical revenue data, financial statements, or transparency reports published)
+
+## Open Threads
+
+- Ukuran treasury ENF saat ini (jumlah EOS, stablecoin, aset lain) — tidak dipublikasikan; alamat multi-sig ENF tidak dikonfirmasi resmi untuk tracking on-chain.
+- Rincian alokasi inflasi 1% tahunan: apakah 100% mengalir ke ENF atau ada pembagian internal (operasional, grant, ventures, cadangan) — tidak ada breakdown publik.
+- Ukuran dan komposisi dana EOS Network Ventures — hanya diumumkan "diluncurkan" September 2023 tanpa jumlah, portofolio, atau kriteria investasi.
+- Status fee pasar RAM (0.5%): apakah fee tersebut diburn, dialokasikan ke ENF, atau ditahan di `eosio.ramfee` — governance history tidak terdokumentasi terpusat.
+- Pendapatan aktual dari EOS EVM (gas fees mapped ke CPU/NET) — apakah ada surplus yang mengalir ke treasury atau semuanya ke BP via inflation.
+- Laporan keuangan teraudit / transparency report ENF — tidak ada sama sekali di domain resmi.
+- Risiko hukum token EOS pasca-SEC 2019: apakah ENF mendapatkan legal opinion bahwa EOS bukan security di AS saat ini — tidak dipublikasikan.
+- Kepemilikan IP Antelope/Leap: apakah ENF memiliki full ownership atau lisensi perpetuitas royalty-free dari Block.one — tidak ada pernyataan hukum publik.
+- Data on-chain untuk treasury ENF: alamat `eosio.ef` / `eosio.fund` balance history — tersedia di block explorer tapi tidak dikurasi sebagai financial dashboard.

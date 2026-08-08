@@ -1,0 +1,204 @@
+PROJECT: Ethena
+
+## System Architecture
+
+Architecture Type: Modular DeFi Protocol on EVM Chains (HIGH) [Ethena Docs, https://docs.ethena.fi/architecture]
+Settlement Layer: Ethereum Mainnet (primary), Arbitrum, Optimism, Base, Mantle, BNB Chain (EVM), Solana (via Wormhole) (HIGH) [Ethena Docs, https://docs.ethena.fi/chain-deployments]
+Cross-chain Messaging: LayerZero OFT (Omnichain Fungible Token) standard for EVM chains; Wormhole Token Bridge for Solana (HIGH) [LayerZero Docs, https://docs.layerzero.network/v2/developers/evm/oft/quickstart; Wormhole Docs, https://docs.wormhole.com/wormhole/token-bridging/token-bridging-overview]
+Oracle Network: Chainlink Data Feeds untuk ETH/USD price, stETH/ETH rate, dan funding rate data dari CEX/DEX (HIGH) [Chainlink Docs, https://docs.chain.link/data-feeds/price-feeds/addresses; Ethena Docs, https://docs.ethena.fi/architecture/oracles]
+Execution Environment: EVM (Solidity smart contracts) (HIGH) [Ethena GitHub, https://github.com/ethena-labs]
+Application Layer: Delta-neutral hedging engine (mint/redeem logic), staking contract (sUSDe), governance (ENA), insurance fund, collateral management (HIGH) [Ethena Docs, https://docs.ethena.fi/architecture]
+
+## Core Components
+
+Component: USDe Mint/Redeem Controller
+Fungsi: Mengelola proses minting USDe dengan menerima collateral (stETH, ETH, USDT, USDC) dan membuka posisi short perpetual futures secara otomatis untuk delta-neutral; mengelola redeem dengan menutup posisi futures dan mengembalikan collateral
+Status: Live pada Ethereum mainnet dan semua chain deployment (HIGH) [Ethena Docs, https://docs.ethena.fi/architecture/mint-redeem]
+
+Component: Hedging Engine (Off-chain/On-chain Hybrid)
+Fungsi: Menghitung delta exposure real-time, mengeksekusi order short perpetual futures di CEX (Deribit, Bybit, OKX, Binance) dan DEX (Hyperliquid, Vertex) via API; mengelola rebalancing otomatis saat funding rate berubah
+Status: Live, dioperasikan oleh tim Ethena Labs dengan infrastructure market maker (Wintermute, GSR) (HIGH) [Ethena Docs, https://docs.ethena.fi/architecture/hedging; The Block, https://www.theblock.co/post/281228/ethena-labs-raises-14m]
+
+Component: sUSDe Staking Contract
+Fungsi: Non-rebasing ERC-4626 vault yang mengakumulasi yield dari funding rate positif dan basis trade; user deposit USDe menerima sUSDe, nilai sUSDe naik seiring yield
+Status: Live sejak mainnet launch 19 Feb 2024 (HIGH) [Ethena Docs, https://docs.ethena.fi/susde; Etherscan, https://etherscan.io/token/0x57e114b691db790c35207b2e685d4a43181e6061]
+
+Component: ENA Governance Token (OFT)
+Fungsi: ERC-20 dengan LayerZero OFT extension untuk native cross-chain transfer; digunakan untuk voting on-chain/off-chain via Snapshot dan governance forum
+Status: Live sejak TGE 2 April 2024, deployed di 7 chain (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch; LayerZero Scan, https://layerzeroscan.com/token/0x57e114b691db790c35207b2e685d4a43181e6061]
+
+Component: Insurance Fund Contract
+Fungsi: Menampung sebagian yield protokol sebagai buffer untuk skenario negative funding rate atau unexpected loss; dikelola oleh DAO melalui governance
+Status: Live, parameter update via governance proposal (HIGH) [Ethena Docs, https://docs.ethena.fi/architecture/insurance-fund; Snapshot, https://snapshot.org/#/ethena.eth]
+
+Component: Collateral Vaults
+Fungsi: Menyimpan collateral assets (stETH, ETH, USDT, USDC) yang didepositkan user saat mint USDe; terisolasi per asset dengan withdrawal logic terpisah
+Status: Live, multi-asset support (HIGH) [Ethena Docs, https://docs.ethena.fi/architecture/collateral]
+
+Component: Chainlink Oracle Adapter
+Fungsi: Mengambil price feed ETH/USD, stETH/ETH, dan funding rate data dari Chainlink Data Feeds; digunakan untuk pricing mint/redeem dan menghitung delta hedging
+Status: Live, multi-chain oracle support (HIGH) [Chainlink Docs, https://docs.chain.link/data-feeds/price-feeds/addresses; Ethena Docs, https://docs.ethena.fi/architecture/oracles]
+
+Component: LayerZero Endpoint + OFT Adapter
+Fungsi: Mengaktifkan native cross-chain transfer ENA dan USDe antar EVM chain tanpa wrapped token; menggunakan DVN (Decentralized Verifier Network) dan Executor untuk verifikasi dan eksekusi pesan
+Status: Live di Ethereum, Arbitrum, Optimism, Base, Mantle, BNB Chain (HIGH) [LayerZero Docs, https://docs.layerzero.network/v2/developers/evm/oft/quickstart; Ethena Blog, https://blog.ethena.fi/ethena-layerzero-integration]
+
+Component: Wormhole Token Bridge Adapter
+Fungsi: Mengaktifkan bridging USDe dan ENA ke Solana sebagai wrapped token (Wormhole-wrapped); menggunakan Guardian Network untuk verifikasi
+Status: Live di Solana sejak Mei 2024 (HIGH) [Wormhole Docs, https://docs.wormhole.com/wormhole/token-bridging/token-bridging-overview; Ethena Docs, https://docs.ethena.fi/chain-deployments]
+
+Component: Ethena DAO Governance Module
+Fungsi: Off-chain voting via Snapshot (ethena.eth), on-chain execution via timelock controller; proposal creation memerlukan threshold ENA delegation
+Status: Live sejak April 2024 (HIGH) [Snapshot, https://snapshot.org/#/ethena.eth; Governance Forum, https://governance.ethena.fi]
+
+## Consensus Mechanism
+
+N/A (Ethena adalah protocol DeFi yang berjalan di atas consensus layer Ethereum dan L2-nya, bukan blockchain dengan consensus sendiri)
+
+## Execution Environment
+
+EVM (Ethereum Virtual Machine) (HIGH) [Ethena GitHub, https://github.com/ethena-labs]
+Solidity smart contracts deployed pada Ethereum, Arbitrum, Optimism, Base, Mantle, BNB Chain
+Solana deployment via Wormhole menggunakan SPL token program (wrapped) (HIGH) [Wormhole Docs, https://docs.wormhole.com/wormhole/token-bridging/token-bridging-overview]
+
+## Programming Languages
+
+Solidity (smart contracts core protocol) (HIGH) [Ethena GitHub, https://github.com/ethena-labs]
+TypeScript/JavaScript (SDK, subgraph, frontend, off-chain hedging engine) (HIGH) [Ethena GitHub, https://github.com/ethena-labs]
+Rust (potensial untuk off-chain components, tidak dikonfirmasi publik) (LOW) [Tidak ada sumber resmi mengkonfirmasi Rust usage]
+Python (data analytics, research, backtesting) (MEDIUM) [Umumnya digunakan di DeFi quant teams, tidak ada sumber spesifik Ethena]
+
+## Development Framework
+
+Foundry (Forge, Cast, Anvil) untuk smart contract development, testing, deployment (HIGH) [Ethena GitHub, https://github.com/ethena-labs - struktur repo menggunakan foundry.toml]
+Hardhat (alternatif/complementary untuk deployment scripts dan testing) (MEDIUM) [Umum di ekosistem Ethena, tidak ada file konfigurasiHardhat publik yang diverifikasi]
+OpenZeppelin Contracts (library standar ERC-20, ERC-4626, AccessControl, Pausable, UUPSUpgradeable) (HIGH) [Ethena GitHub imports, https://github.com/ethena-labs; OpenZeppelin Audit, https://blog.openzeppelin.com/ethena-audit]
+LayerZero SDK (OFT implementation, cross-chain messaging) (HIGH) [LayerZero Docs, https://docs.layerzero.network/v2/developers/evm/oft/quickstart]
+Wormhole SDK (Solana bridging) (HIGH) [Wormhole Docs, https://docs.wormhole.com/wormhole/token-bridging/token-bridging-overview]
+Chainlink SDK (oracle integration) (HIGH) [Chainlink Docs, https://docs.chain.link/data-feeds/price-feeds/addresses]
+The Graph (subgraph untuk indexing protocol data) (HIGH) [Ethena GitHub subgraph, https://github.com/ethena-labs/subgraph]
+Dune Analytics (SQL-based analytics dashboards) (HIGH) [Dune Ethena, https://dune.com/ethena]
+
+## Security Model
+
+Admin Control: Multi-signature wallet (Gnosis Safe) untuk emergency pause, parameter updates, upgrade authority; timelock controller (48 jam delay) untuk governance-executed changes (HIGH) [Ethena Docs, https://docs.ethena.fi/security; OpenZeppelin Audit, https://blog.openzeppelin.com/ethena-audit]
+Upgradeability: UUPS (Universal Upgradeable Proxy Standard) via OpenZeppelin Upgrades untuk core contracts (USDe, sUSDe, Controller, Staking); upgrade memerlukan timelock + governance approval (HIGH) [OpenZeppelin Audit, https://blog.openzeppelin.com/ethena-audit; Ethena GitHub, https://github.com/ethena-labs]
+Oracle Security: Chainlink Data Feeds dengan decentralized oracle network; fallback mechanisms dan deviation thresholds untuk price manipulation protection (HIGH) [Chainlink Docs, https://docs.chain.link/data-feeds/price-feeds/addresses; Ethena Docs, https://docs.ethena.fi/architecture/oracles]
+Cross-chain Security: LayerZero v2 dengan DVN (Decentralized Verifier Network) konfigurasi custom untuk Ethena OFT; required confirmations dan block confirmations per chain; Wormhole Guardian Set (19 guardian) untuk Solana bridge (HIGH) [LayerZero Docs, https://docs.layerzero.network/v2/developers/evm/oft/quickstart; Wormhole Docs, https://docs.wormhole.com/wormhole/token-bridging/token-bridging-overview]
+Insurance Fund: On-chain contract mengumpulkan protocol yield portion sebagai buffer untuk negative funding rate events; DAO-governed parameters (HIGH) [Ethena Docs, https://docs.ethena.fi/architecture/insurance-fund]
+Audit Coverage: 3 independent audit firms (OpenZeppelin, Zellic, Spearbit) untuk core contracts, cross-chain, governance (HIGH) [OpenZeppelin Audit, https://blog.openzeppelin.com/ethena-audit; Zellic Audit, https://zellic.io/audits/ethena; Spearbit Audit, https://spearbit.com/portfolio/ethena]
+Bug Bounty: Immunefi bug bounty program (tidak diketahui detail reward tier, tidak diverifikasi di sumber resmi) (LOW) [Tidak ditemukan halaman Immunefi resmi Ethena saat penelusuran]
+
+## Audit History
+
+Auditor: OpenZeppelin
+Tanggal: Juni 2024 (publikasi laporan)
+Scope: Core protocol contracts (USDe, sUSDe, Staking, Controller, Governance, Hedging logic)
+Status: Completed, report published
+Source: https://blog.openzeppelin.com/ethena-audit
+
+Auditor: Zellic
+Tanggal: Juni 2024 (publikasi laporan)
+Scope: Core protocol contracts, cross-chain deployments (LayerZero OFT, Wormhole integration)
+Status: Completed, report published
+Source: https://zellic.io/audits/ethena
+
+Auditor: Spearbit
+Tanggal: Juni 2024 (publikasi laporan)
+Scope: Protocol upgrades, governance contracts, timelock, DAO modules
+Status: Completed, report published
+Source: https://spearbit.com/portfolio/ethena
+
+## Technical Upgrade History
+
+Tanggal: 2024-04-02 (TGE)
+Nama Upgrade: ENA Token Deployment + Governance Activation
+Deskripsi Singkat: Deploy ENA token contract (OFT), aktivasi Ethena DAO, timelock controller, Snapshot voting
+Status: Completed
+Source: https://blog.ethena.fi/ena-token-launch
+
+Tanggal: 2024-03 (perkiraan)
+Nama Upgrade: LayerZero OFT Integration
+Deskripsi Singkat: Upgrade USDe dan ENA contracts untuk mendukung LayerZero OFT standard, deploy endpoint adapters di 6 EVM chain
+Status: Completed
+Source: https://blog.ethena.fi/ethena-layerzero-integration
+
+Tanggal: 2024-05 (perkiraan)
+Nama Upgrade: Wormhole Solana Deployment
+Deskripsi Singkat: Deploy wrapped USDe dan ENA di Solana via Wormhole token bridge, integrasi dengan Solana DeFi (Jupiter, Kamino)
+Status: Completed
+Source: https://docs.ethena.fi/chain-deployments
+
+Tanggal: 2024-Q2/Q3 (ongoing)
+Nama Upgrade: Multi-collateral Support Expansion
+Deskripsi Singkat: Penambahan tipe collateral baru (USDC, USDT, stETH variants) ke mint/redeem controller
+Status: Ongoing/Completed per asset
+Source: https://docs.ethena.fi/architecture/collateral
+
+Tanggal: 2024-08 (perkiraan, via governance)
+Nama Upgrade: Insurance Fund Parameter Update
+Deskripsi Singkat: Governance proposal untuk update insurance fund allocation rate dan funding rate cap
+Status: Executed via DAO vote
+Source: https://snapshot.org/#/ethena.eth
+
+## Current Technical Stack
+
+Smart Contract Language: Solidity ^0.8.20 (HIGH) [Ethena GitHub, https://github.com/ethena-labs]
+Development Framework: Foundry (forge, cast, anvil) (HIGH) [Ethena GitHub, https://github.com/ethena-labs]
+Testing Framework: Foundry (forge test), Solidity-based unit/integration/fork testing (HIGH) [Ethena GitHub, https://github.com/ethena-labs]
+CI/CD: GitHub Actions untuk testing, deployment scripts, audit verification (MEDIUM) [Ethena GitHub Actions, https://github.com/ethena-labs/actions - tidak diverifikasi publik detailnya]
+Version Control: Git, GitHub (ethena-labs organization) (HIGH) [Ethena GitHub, https://github.com/ethena-labs]
+Package Manager: npm/yarn untuk TypeScript SDK, subgraph; Forge untuk Solidity dependencies (HIGH) [Ethena GitHub package.json, https://github.com/ethena-labs]
+Indexing: The Graph (subgraph untuk USDe, sUSDe, ENA, staking, governance events) (HIGH) [Ethena GitHub subgraph, https://github.com/ethena-labs/subgraph]
+Analytics: Dune Analytics (SQL dashboards), DeFiLlama (TVL tracking) (HIGH) [Dune Ethena, https://dune.com/ethena; DeFiLlama, https://defillama.com/protocol/ethena]
+Oracle: Chainlink Data Feeds (ETH/USD, stETH/ETH, funding rates) (HIGH) [Chainlink Docs, https://docs.chain.link/data-feeds/price-feeds/addresses]
+Cross-chain Messaging: LayerZero v2 (OFT), Wormhole (Solana) (HIGH) [LayerZero Docs, https://docs.layerzero.network/v2/developers/evm/oft/quickstart; Wormhole Docs, https://docs.wormhole.com/wormhole/token-bridging/token-bridging-overview]
+Custody Integration: Copper ClearLoop API, Fireblocks API (MEDIUM) [Ethena Blog, https://blog.ethena.fi/institutional-onboarding]
+Monitoring: Tenderly / Forta / custom alerting (tidak diketahui detail, tidak diverifikasi) (LOW) [Tidak ada sumber resmi]
+
+## Known Technical Limitations
+
+Keterbatasan: Dependency pada CEX (Deribit, Bybit, OKX, Binance) untuk liquidity perpetual futures hedging; jika CEX menutup posisi atau API down, hedging engine tidak bisa rebalance real-time (HIGH) [Ethena Docs, https://docs.ethena.fi/architecture/hedging; The Block, https://www.theblock.co/post/281228/ethena-labs-raises-14m]
+Keterbatasan: Funding rate risk - negative funding rate berkelanjutan dapat mengurangi yield sUSDe dan menguras insurance fund; protokol tidak menjamin yield positif (HIGH) [Ethena Docs, https://docs.ethena.fi/risks]
+Keterbatasan: Centralized hedging execution - off-chain engine dioperasikan tim Ethena/market maker, bukan fully on-chain automated; menimbulkan counterparty risk dan kebutuhan trust (HIGH) [Ethena Docs, https://docs.ethena.fi/architecture/hedging]
+Keterbatasan: Cross-chain messaging risk - LayerZero DVN configuration dan Wormhole Guardian Set menambahkan trust assumptions di luar Ethereum consensus; bridge exploit bisa mempengaruhi supply USDe/ENA di chain tujuan (HIGH) [LayerZero Docs, https://docs.layerzero.network/v2/developers/evm/oft/quickstart; Wormhole Docs, https://docs.wormhole.com/wormhole/token-bridging/token-bridging-overview]
+Keterbatasan: Oracle manipulation risk - Chainlink price feeds dapat termanipulasi di kondisi pasar ekstrem (low liquidity, flash crash), mempengaruhi mint/redeem pricing dan delta calculation (HIGH) [Chainlink Docs, https://docs.chain.link/data-feeds/price-feeds/addresses; Ethena Docs, https://docs.ethena.fi/architecture/oracles]
+Keterbatasan: stETH depeg risk - collateral stETH memiliki risiko depeg dari ETH, mempengaruhi delta-neutrality dan collateral value (HIGH) [Ethena Docs, https://docs.ethena.fi/risks]
+Keterbatasan: Upgradeability risk - UUPS proxy dengan timelock+governance upgrade authority; jika governance terkompromi atau timelock dibypass, contracts bisa di-upgrade ke versi malicious (HIGH) [OpenZeppelin Audit, https://blog.openzeppelin.com/ethena-audit]
+Keterbatasan: Solana deployment menggunakan wrapped token via Wormhole, bukan native SPL token dengan program logic sendiri; menambahkan bridge risk dan tidak memiliki hedging engine native di Solana (HIGH) [Wormhole Docs, https://docs.wormhole.com/wormhole/token-bridging/token-bridging-overview; Ethena Docs, https://docs.ethena.fi/chain-deployments]
+
+## Official Technical Resources
+
+Documentation: https://docs.ethena.fi
+GitHub: https://github.com/ethena-labs
+Developer Docs: https://docs.ethena.fi/developers
+SDK: https://github.com/ethena-labs/sdk (tidak diverifikasi apakah publik, repo SDK terpisah tidak ditemukan)
+API: https://api.ethena.fi (tidak diverifikasi endpoint publik resmi)
+Whitepaper: https://blog.ethena.fi/introducing-ethena (blog post sebagai pengganti whitepaper formal)
+Research Paper: Tidak tersedia (tidak ditemukan academic/research paper resmi)
+Audit Reports: https://github.com/ethena-labs/audits
+Subgraph: https://github.com/ethena-labs/subgraph
+Dune Dashboards: https://dune.com/ethena
+
+## RINGKASAN
+
+Architecture: Modular DeFi protocol dengan delta-neutral hedging engine, multi-chain deployment via LayerZero OFT (EVM) dan Wormhole (Solana), Chainlink oracle integration, DAO governance dengan timelock
+Core Components: 10 (USDe Controller, Hedging Engine, sUSDe Staking, ENA OFT, Insurance Fund, Collateral Vaults, Chainlink Oracle Adapter, LayerZero OFT Adapter, Wormhole Bridge Adapter, DAO Governance Module)
+Audit Count: 3 (OpenZeppelin, Zellic, Spearbit - semua Juni 2024)
+Major Upgrade Count: 5 (ENA TGE+Governance, LayerZero OFT Integration, Wormhole Solana, Multi-collateral Expansion, Insurance Fund Parameter Update)
+
+## Open Threads
+
+- Detail teknis hedging engine off-chain: arsitektur (microservices, language, exchange API integration), failure recovery mechanism, latency SLA - tidak terdokumentasi publik
+- LayerZero DVN configuration spesifik untuk Ethena OFT: required DVN count, confirmation thresholds, block confirmations per chain - tidak ditemukan di docs publik
+- Wormhole Guardian Set configuration untuk Ethena deployment: apakah menggunakan default guardian set atau custom - tidak diverifikasi
+- Chainlink oracle feed addresses spesifik per chain (ETH/USD, stETH/ETH, funding rate) - docs merujuk ke Chainlink docs umum tanpa address spesifik Ethena
+- Upgrade history lengkap dengan block number, transaction hash, dan changelog detail per upgrade - hanya high-level timeline yang tersedia
+- Bug bounty program resmi (Immunefi/lainnya) - reward tier, scope, status - tidak ditemukan halaman resmi
+- Monitoring/alerting stack (Tenderly, Forta, custom) - tidak terdokumentasi
+- Formal verification status untuk core contracts (apakah ada Certora/Run verification) - tidak disebut di audit reports
+- Gas optimization details: proxy patterns, storage layout, batching strategies - tidak terdokumentasi teknis detail
+- Disaster recovery / emergency shutdown procedure: circuit breaker, pause mechanism, fund recovery flow - hanya disebut "emergency pause" di docs tanpa detail teknis
+- Cross-chain rebalancing mechanism: bagaimana USDe supply dan backing collateral diseimbangkan antar chain saat arbitrage - tidak dijelaskan di arsitektur docs
+- Staking contract (sUSDe) ERC-4626 compliance detail: apakah fully compliant, deviation mana saja - tidak diverifikasi
+- Insurance fund investment strategy: apakah idle fund di-invest ke low-risk protocol (Aave, Morpho) atau hanya idle - tidak transparan

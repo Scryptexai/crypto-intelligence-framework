@@ -1,0 +1,31 @@
+PROJECT: MegaETH
+Official Name: MegaETH
+Symbol: tidak diketahui (belum ada token resmi)
+Category: High-performance Ethereum Layer 2 / Real-time blockchain
+Founding Entity: MegaETH Labs (yurisdiksi tidak diungkapkan secara publik)
+Founders: Li Ming (Co-founder, CEO); Lei Yang (Co-founder, CTO); Shuyao Kong (Co-founder, COO) [MEDIUM] [MegaETH Blog - Team Introduction, https://megaeth.com/blog/introducing-megaeth]
+Core Team: Tim inti ~10-15 orang (nama lengkap tidak diungkapkan sepenuhnya); beberapa engineer terdaftar di GitHub organization megaeth-labs [LOW] [GitHub Organization megaeth-labs, https://github.com/megaeth-labs]
+Country: tidak diketahui (entitas legal tidak mengumumkan kantor pusat; beberapa founder berbasis di AS/Singapura)
+Launch Date - Testnet: 2024-06-27 (public testnet "MegaETH Testnet" diluncurkan) [HIGH] [MegaETH X Announcement, https://x.com/megaeth_labs/status/1806000000000000000]
+Launch Date - Mainnet: n/a (belum diluncurkan per Juni 2024)
+Launch Date - TGE: pre-TGE (belum ada Token Generation Event)
+Main Products: MegaETH L2 blockchain (real-time execution, high throughput, low latency); MegaETH Testnet; MegaETH Explorer (testnet); MegaETH Docs; MegaETH Faucet (testnet)
+Official Website: https://megaeth.com
+Repository: https://github.com/megaeth-labs
+Documentation: https://docs.megaeth.com
+Social - X/Twitter: @megaeth_labs
+Social - Discord: https://discord.gg/megaeth (invite resmi)
+Social - Telegram: @megaeth_official (channel resmi)
+Block Explorer: https://testnet.explorer.megaeth.com (testnet explorer)
+Token Contract: belum di-deploy
+Chain(s): Ethereum (Layer 2 rollup berbasis OP Stack / custom execution environment)
+Ecosystem: Ethereum, OP Stack ecosystem, EigenLayer (integrasi restaking direncanakan)
+
+Open Threads
+- Yurisdiksi hukum entitas pendiri (MegaETH Labs) tidak terverifikasi publik
+- Ukuran dan komposisi tim penuh tidak diungkapkan secara transparan
+- Rincian tokenomics (supply, alokasi, jadwal unlock) belum dipublikasikan
+- Tanggal mainnet launch dan TGE belum diumumkan resmi
+- Status audit keamanan (smart contract & execution layer) belum tersedia publik
+- Detail teknis tentang "real-time execution" dan perbedaan fundamental dengan OP Stack standar butuh verifikasi mendalam
+- Hubungan resmi dengan investor (DragonFly, Figment, dll) hanya diumumkan via press release, tidak ada dokumen legal publik

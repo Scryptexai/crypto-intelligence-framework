@@ -1,0 +1,306 @@
+PROJECT: Movement Labs
+
+## Ecosystem Position
+
+Primary Sector: Move-based modular blockchain stack / Layer 2 execution environment (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+Secondary Sector: Ethereum L2 scaling / Modular blockchain infrastructure (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+Primary Chain: Ethereum (L1 settlement untuk M1 rollup) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+Supported Chains: Movement M1 (L2, pre-mainnet), Parthenon Testnet (MEVM testnet), Planned: Movement Network multi-chain (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/; Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/, https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/
+
+## External Dependencies
+
+Dependency Name: Ethereum
+Dependency Type: Chain
+Purpose: Layer 1 settlement, finality, data availability (fallback), economic security untuk M1 rollup
+Criticality: Critical
+Status: Live (testnet Parthenon menggunakan Ethereum Sepolia/Holesky untuk settlement)
+Related Entity: Ethereum
+Related Technology Component: Ethereum Settlement Contracts, M1 Sequencer, Parthenon Testnet
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/, https://docs.movementlabs.xyz/
+
+Dependency Name: Celestia
+Dependency Type: Protocol
+Purpose: Modular Data Availability layer untuk Movement Network dan M1 (alternatif DA)
+Criticality: High
+Status: Planned (diumumkan di roadmap, belum live di testnet Parthenon)
+Related Entity: Celestia
+Related Technology Component: DA Layer Adapters, Movement SDK, Movement Network Coordinator
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Dependency Name: Polygon Avail
+Dependency Type: Protocol
+Purpose: Modular Data Availability layer untuk Movement stack (alternatif DA)
+Criticality: High
+Status: Planned (diumumkan di roadmap, belum live di testnet Parthenon)
+Related Entity: Polygon Avail
+Related Technology Component: DA Layer Adapters, Movement SDK, Movement Network Coordinator
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Dependency Name: EigenDA
+Dependency Type: Protocol
+Purpose: EigenLayer-based Data Availability service untuk Movement Network (alternatif DA)
+Criticality: High
+Status: Planned (diumumkan di roadmap, belum live di testnet Parthenon)
+Related Entity: EigenDA
+Related Technology Component: DA Layer Adapters, Movement SDK, Movement Network Coordinator
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Dependency Name: Move Language Toolchain (Move Compiler, Move Prover, Move VM reference)
+Dependency Type: SDK
+Purpose: Dasar teknis untuk MoveVM implementation, smart contract compilation, formal verification
+Criticality: Critical
+Status: Live (Movement Labs berkontribusi dan menggunakan upstream Move toolchain dari ekosistem Move)
+Related Entity: Aptos, Sui, 0L (Zero Layer) — sebagai kontributor/maintainer ekosistem Move
+Related Technology Component: MoveVM, Movement SDK, MEVM Compiler/Transpiler
+Sources: https://github.com/movementlabsxyz, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Dependency Name: GitHub
+Dependency Type: Infrastructure
+Purpose: Source code hosting, CI/CD, issue tracking untuk Movement SDK, MoveVM, MEVM, dll
+Criticality: High
+Status: Live (github.com/movementlabsxyz aktif sejak 2023)
+Related Entity: Movement Labs GitHub Organization
+Related Technology Component: Semua repositori protokol (movement-sdk, movevm, mevm, dll)
+Sources: https://github.com/movementlabsxyz
+
+Dependency Name: Series A Investors (undisclosed)
+Dependency Type: Service (Financial)
+Purpose: Primary capital source $38M untuk operasi, pengembangan, ekosistem
+Criticality: Critical
+Status: Live (Series A closed 2024, proceeds digunakan untuk runway)
+Related Entity: Series A Investors (undisclosed)
+Related Technology Component: Tidak langsung teknis; mendanai pengembangan semua komponen
+Sources: https://www.crunchbase.com/organization/movement-labs
+
+Dependency Name: Discord
+Dependency Type: Infrastructure
+Purpose: Komunikasi komunitas, developer support, testnet coordination, announcements
+Criticality: Medium
+Status: Live (discord.gg/movementlabs aktif sejak 2023)
+Related Entity: Movement Labs Discord Community
+Related Technology Component: Parthenon Testnet coordination, developer onboarding
+Sources: https://discord.gg/movementlabs
+
+Dependency Name: Kubernetes / Cloud Infrastructure (provider tidak diungkap)
+Dependency Type: Cloud
+Purpose: Orkestrasi testnet Parthenon nodes, RPC endpoints, explorer hosting
+Criticality: High
+Status: Live (testnet Parthenon berjalan di infrastructure cloud)
+Related Entity: Movement Labs Inc. (operator)
+Related Technology Component: Parthenon Testnet, M1 Sequencer, Movement Testnet Explorer
+Sources: https://github.com/movementlabsxyz (Docker/Kubernetes configs di repositori), https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/
+
+## Major Integrations
+
+Integration Name: Parthenon Testnet ↔ Ethereum Settlement
+Integrated With: Ethereum (Sepolia/Holesky testnet)
+Purpose: State root submission, finality verification, bridge testing untuk M1 L2 architecture
+Status: Live (testnet)
+Related Historical Event ID: EV-009
+Sources: https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/, https://explorer.testnet.movementlabs.xyz/
+
+Integration Name: Movement SDK ↔ MoveVM/MEVM
+Integrated With: MoveVM, MEVM (internal protocols)
+Purpose: Framework integration untuk VM execution layer dalam Movement SDK
+Status: Live (development/testnet)
+Related Historical Event ID: EV-007, EV-009
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/, https://github.com/movementlabsxyz/movement-sdk
+
+Integration Name: MEVM ↔ Ethereum Tooling (Hardhat, Foundry)
+Integrated With: Hardhat, Foundry (Ethereum development frameworks)
+Purpose: Kompatibilitas developer tooling untuk deploy Solidity contracts via MEVM
+Status: Live (testnet Parthenon mendukung Hardhat/Foundry workflow)
+Related Historical Event ID: EV-009
+Sources: https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/, https://docs.movementlabs.xyz/
+
+Integration Name: Movement SDK ↔ Celestia DA Adapter (Planned)
+Integrated With: Celestia
+Purpose: Data availability publishing ke Celestia blobstream untuk Movement rollups
+Status: Planned
+Related Historical Event ID: EV-010
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Integration Name: Movement SDK ↔ Polygon Avail DA Adapter (Planned)
+Integrated With: Polygon Avail
+Purpose: Data availability publishing ke Avail network untuk Movement rollups
+Status: Planned
+Related Historical Event ID: EV-010
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Integration Name: Movement SDK ↔ EigenDA Adapter (Planned)
+Integrated With: EigenDA
+Purpose: Data availability publishing via EigenDA disperser untuk Movement rollups
+Status: Planned
+Related Historical Event ID: EV-010
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Integration Name: Movement Network Coordinator ↔ Cross-chain Messaging (Planned)
+Integrated With: Movement Network chains (M1, future app-chains)
+Purpose: Interoperabilitas cross-chain messaging antar Move-based chains
+Status: Planned
+Related Historical Event ID: EV-007 (announcement only)
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+## Infrastructure Providers
+
+Provider: GitHub (Microsoft)
+Service: Source control, CI/CD (GitHub Actions), package registry, issue tracking
+Criticality: High
+Status: Live
+Sources: https://github.com/movementlabsxyz
+
+Provider: Discord (Discord Inc.)
+Service: Real-time community chat, announcements, developer support, testnet coordination
+Criticality: Medium
+Status: Live
+Sources: https://discord.gg/movementlabs
+
+Provider: Ethereum RPC Providers (tidak diungkap spesifik provider: Alchemy/Infura/QuickNode/self-hosted)
+Service: Ethereum L1 RPC access untuk settlement contract interaction, event indexing
+Criticality: Critical
+Status: Live (testnet)
+Sources: https://docs.movementlabs.xyz/ (implied by architecture), https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/
+
+Provider: Cloud Infrastructure (provider tidak diungkap: AWS/GCP/Azure/bare metal)
+Service: Kubernetes orchestration, VM hosting untuk sequencer, RPC nodes, explorer, indexer
+Criticality: High
+Status: Live (testnet Parthenon)
+Sources: https://github.com/movementlabsxyz (Docker/K8s configs), https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/
+
+Provider: Movement Testnet Explorer (self-hosted oleh Movement Labs)
+Service: Block explorer untuk Parthenon testnet (tx, block, state visualization)
+Criticality: Medium
+Status: Live
+Sources: https://explorer.testnet.movementlabs.xyz/
+
+## Exchange Ecosystem
+
+Exchange: Tidak ada (pre-TGE, token MOVE belum di-deploy)
+Listing Status: Not Applicable
+Spot: Tidak ada
+Perpetual: Tidak ada
+OTC: Tidak ada
+Launchpool: Tidak ada
+Status: Pre-TGE
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/, https://discord.gg/movementlabs
+
+## Wallet Ecosystem
+
+Wallet: Tidak diumumkan resmi dukungan wallet spesifik untuk mainnet
+Support Type: Planned (EVM-compatible wallets via MEVM: MetaMask, Rabby, dll; Move-native wallets: Petra, Martian, dll — inferensi dari arsitektur)
+Status: Planned
+Sources: https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/ (MEVM EVM compatibility implies MetaMask support), https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/ (Move-native implies Move wallet support)
+
+## Developer Ecosystem
+
+SDK: Movement SDK (modular framework untuk rollup/app-chain), MEVM Compiler/Transpiler (Solidity → Move bytecode)
+Sources: https://movementlabs.xyz/products, https://github.com/movementlabsxyz/movement-sdk, https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/
+
+API: JSON-RPC MEVM endpoint (Parthenon testnet: https://mevm.testnet.movementlabs.xyz/), Movement SDK programmatic APIs
+Sources: https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/, https://docs.movementlabs.xyz/api
+
+Developer Tools: Movement CLI (project scaffolding, deployment, testing), Move Prover (formal verification), Hardhat/Foundry plugins (via MEVM), Movement SDK TypeScript/JavaScript client
+Sources: https://github.com/movementlabsxyz, https://docs.movementlabs.xyz/, https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/
+
+Open Source Repository: https://github.com/movementlabsxyz (repositori: movement-sdk, movevm, mevm, movement-docs, dll)
+Sources: https://github.com/movementlabsxyz
+
+Developer Portal: https://docs.movementlabs.xyz/ (technical documentation, API reference, SDK guides)
+Sources: https://docs.movementlabs.xyz/
+
+Hackathon: Tidak diumumkan resmi hackathon Movement Labs branded (per cut-off knowledge)
+Sources: https://blog.movementlabs.xyz/, https://movementlabs.xyz/, https://discord.gg/movementlabs
+
+Grant Program: Tidak diumumkan resmi program grant (Head of Ecosystem Arjun Krishan terhired, mengimplikasikan program akan datang, belum launch)
+Sources: https://movementlabs.xyz/team, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+## Applications
+
+Application: Tidak ada aplikasi live di mainnet (pre-mainnet)
+Category: Not Applicable
+Relationship: Not Applicable
+Status: Pre-mainnet
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/, https://explorer.testnet.movementlabs.xyz/ (hanya testnet activity)
+
+## Governance Ecosystem
+
+Foundation: Tidak dibentuk (Movement Foundation belum diumumkan)
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+DAO: Tidak ada (pre-TGE, governance token MOVE belum exist)
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/, https://discord.gg/movementlabs
+
+Council: Tidak ada
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Committee: Tidak ada
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Validator Group: Tidak ada (testnet menggunakan centralized sequencer dioperasikan Movement Labs; decentralized sequencer set planned untuk mainnet)
+Sources: https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+## Ecosystem Risks
+
+Risk: Single Chain Settlement Dependency — M1 bergantung sepenuhnya pada Ethereum L1 untuk finality, settlement, dan economic security; tidak ada alternative settlement layer
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/, https://docs.movementlabs.xyz/
+
+Risk: Planned DA Layer Dependencies Not Live — Celestia, Avail, EigenDA integrations diumumkan tapi belum live di testnet; mainnet launch bergantung pada minimal satu DA adapter berfungsi
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/, https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/
+
+Risk: Centralized Sequencer (Testnet) — Parthenon testnet menggunakan single sequencer dioperasikan Movement Labs; single point of failure untuk transaction ordering, censorship resistance tidak ada
+Sources: https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/
+
+Risk: No Security Audit Completed — MoveVM, MEVM, Movement SDK, M1 settlement contracts belum memiliki laporan audit publik; mainnet launch memerlukan audit completion
+Sources: https://blog.movementlabs.xyz/, https://github.com/movementlabsxyz, https://docs.movementlabs.xyz/
+
+Risk: Financial Dependency on Series A Proceeds — Single known funding round $38M; tidak ada revenue; runway bergantung pada treasury management; token treasury belum exist
+Sources: https://www.crunchbase.com/organization/movement-labs, https://blog.movementlabs.xyz/
+
+Risk: Move Ecosystem Fragmentation — Movement bergantung pada upstream Move toolchain (compiler, prover, VM) yang dikembangkan oleh Aptos/Sui/0L; divergensi spec atau breaking changes upstream mempengaruhi Movement
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/, https://github.com/movementlabsxyz
+
+Risk: Regulatory Uncertainty (US) — Delaware C-Corp issuing token MOVE; US securities law (Howey test) applicability ke MOVE token belum diklarifikasi; bisa mempengaruhi TGE dan operasi
+Sources: https://www.crunchbase.com/organization/movement-labs, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+
+Risk: MEVM Compatibility Gaps — MEVM tidak 100% kompatibel EVM (precompiles, opcode, gas semantics); aplikasi Ethereum existing mungkin butuh modifikasi untuk deploy di M1
+Sources: https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/, https://docs.movementlabs.xyz/
+
+## Official Ecosystem Resources
+
+Official Documentation: https://docs.movementlabs.xyz/
+Developer Portal: https://docs.movementlabs.xyz/
+GitHub: https://github.com/movementlabsxyz
+Partner Documentation: Celestia (https://docs.celestia.org/), Polygon Avail (https://docs.availproject.org/), EigenDA (https://docs.eigenlayer.xyz/eigenda) — untuk planned DA integrations
+Grant Program: Tidak tersedia (belum diumumkan)
+Ecosystem Dashboard: Tidak tersedia (pre-mainnet)
+
+## Summary
+
+Primary Ecosystem: Move-based modular blockchain stack (Movement SDK, MoveVM, MEVM) dengan Ethereum sebagai settlement layer
+Supported Chains: Ethereum (L1 settlement, live testnet), Movement M1 (L2, pre-mainnet), Parthenon Testnet (MEVM, live), Planned: Movement Network multi-chain
+External Dependencies: 8 dependencies (1 Critical Chain: Ethereum; 3 High Planned DA: Celestia, Avail, EigenDA; 1 Critical SDK: Move toolchain; 1 High Infra: GitHub; 1 Critical Financial: Series A Investors; 1 High Cloud: K8s/Cloud provider; 1 Medium Community: Discord)
+Major Integrations: 7 integrations (1 Live testnet: Parthenon↔Ethereum; 2 Live dev: SDK↔VM, MEVM↔Hardhat/Foundry; 4 Planned: DA adapters x3, Network Coordinator)
+Infrastructure Providers: 5 providers (GitHub, Discord, Ethereum RPC, Cloud/K8s, Self-hosted Explorer)
+Developer Programs: SDK, CLI, API, Docs, GitHub repos live; Hackathon & Grant Program belum diumumkan
+Applications: 0 live (pre-mainnet)
+Governance: 0 entities (pre-TGE, no Foundation/DAO)
+
+## Open Threads
+
+- Nama provider cloud infrastructure spesifik (AWS/GCP/Azure/bare metal) untuk testnet Parthenon — tidak diungkap di sumber publik
+- Ethereum RPC provider spesifik yang digunakan (Alchemy/Infura/QuickNode/self-hosted) — tidak diungkap
+- Status implementasi DA layer adapters: apakah sudah ada kode di repositori GitHub (celestia-adapter, avail-adapter, eigenda-adapter) atau masih desain — perlu cek repositori movement-sdk
+- Detail teknis Movement Network cross-chain messaging protocol: apakah menggunakan IBC, Hyperlane, LayerZero, atau custom — belum dipublikasikan
+- Wallet support resmi yang akan didukung mainnet: daftar wallet EVM-compatible dan Move-native yang akan diintegrasikan — belum diumumkan
+- Hackathon/grant program timeline: apakah akan diluncurkan sebelum mainnet atau setelah — Head of Ecosystem hired tapi tidak ada announcement
+- Audit firm yang akan dihire untuk MoveVM/MEVM/M1 contracts — belum diumumkan
+- Decentralized sequencer set spec: consensus mechanism, validator requirements, staking token (MOVE?), slashing conditions — belum diumumkan
+- Movement Foundation formation timeline: apakah akan dibentuk pre-TGE atau post-TGE — belum dikonfirmasi
+- Series A investor identity dan token allocation terms (SAFT) — Crunchbase hanya total $38M, detail tidak publik; perlu cek SEC Form D filing jika applicable
+- MEVM compatibility test suite results: pass rate vs Ethereum mainnet test vectors — tidak dipublikasikan
+- DA layer integration priority: Celestia vs Avail vs EigenDA yang mana first untuk mainnet — belum diumumkan
+- Testnet Parthenon incentive program detail: apakah "points" akan convert ke token MOVE allocation — Discord FAQ tidak mengonfirmasi
+- Enterprise partnerships selain DA layer: apakah ada integrasi dengan oracle (Chainlink, Pyth), bridge (LayerZero, Wormhole), indexer (The Graph, Subsquid) — belum diumumkan
+- Regulatory counsel untuk token issuance compliance (US) — tidak diungkap
+- Movement Labs Inc. legal structure untuk token distribution: apakah token di-issue oleh company langsung atau melalui foundation terpisah — belum diklarifikasi

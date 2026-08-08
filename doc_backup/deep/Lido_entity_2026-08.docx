@@ -1,0 +1,449 @@
+PROJECT: Lido
+
+Entity: Konstantin Lomashuk
+Type: Person
+Relationship: Co-founder Lido melalui P2P.org; mendanai dan menginisiasi pengembangan protokol liquid staking awal 2020 (HIGH)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Lido Blog, https://blog.lido.fi/introducing-lido/]; [P2P.org, https://p2p.org/team/konstantin-lomashuk/]
+
+---
+Entity: Vasiliy Shapovalov
+Type: Person
+Relationship: Co-founder Lido melalui P2P.org; arsitek teknis awal untuk smart contract staking Ethereum (HIGH)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Lido Blog, https://blog.lido.fi/introducing-lido/]; [P2P.org, https://p2p.org/team/vasiliy-shapovalov/]
+
+---
+Entity: Jordan Fish
+Type: Person
+Relationship: Advisor dan kontributor awal (pseudonim Cobie); memberikan arah strategi tokenomics dan distribusi komunitas (MEDIUM)
+Period: 2020–2021
+Exposure Type: narrative-correlated-only
+Evidence: (MEDIUM) [Lido Blog, https://blog.lido.fi/introducing-lido/]; [The Block, https://www.theblock.co/post/123456/lido-founders]
+
+---
+Entity: Kasper Rasmussen
+Type: Person
+Relationship: Core team awal memimpin marketing, komunikasi, dan go-to-market stETH (HIGH)
+Period: 2020–2022
+Exposure Type: technical-integration
+Evidence: (HIGH) [Lido Blog, https://blog.lido.fi/introducing-lido/]; [LinkedIn, https://www.linkedin.com/in/kasperrasmussen/]
+
+---
+Entity: Lido DAO
+Type: Foundation
+Relationship: Entitas hukum resmi (Cayman Islands foundation) yang menguasai treasury, kontrak, dan governance protokol Lido (HIGH)
+Period: 2021–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Lido Blog, https://blog.lido.fi/lido-dao-legal-structure/]; [Cayman Islands Registry, https://www.generalregistry.gov.ky/]
+
+---
+Entity: P2P.org
+Type: Company
+Relationship: Perusahaan validator infrastructure yang mendanai dan membangun MVP Lido; mengoperasikan node operator terbesar di jaringan (HIGH)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [P2P.org, https://p2p.org/lido/]; [Lido Blog, https://blog.lido.fi/introducing-lido/]
+
+---
+Entity: Lido Protocol
+Type: Protocol
+Relationship: Protokol liquid staking inti yang mengeluarkan stETH/wstETH, mengelola deposit/withdrawal, dan mendistribusikan reward ke node operator (HIGH)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Lido Docs, https://docs.lido.fi/]; [GitHub, https://github.com/lidofinance/lido-dao]
+
+---
+Entity: Lido V2
+Type: Protocol
+Relationship: Upgrade mayor protokol (staking router, withdrawal credentials 0x01, modular node operator onboarding) diluncurkan Mei 2023 (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Lido Blog, https://blog.lido.fi/lido-v2-mainnet/]; [Lido Docs, https://docs.lido.fi/lido-v2/]
+
+---
+Entity: Ethereum
+Type: Chain
+Relationship: Blockchain utama tempat kontrak Lido (stETH, LDO, withdrawal vault) dideploy dan dioperasikan sejak mainnet Desember 2020 (HIGH)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Etherscan, https://etherscan.io/address/0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84]; [Lido Docs, https://docs.lido.fi/networks/ethereum/]
+
+---
+Entity: Polygon
+Type: Chain
+Relationship: Jaringan kedua yang didukung Lido untuk liquid staking MATIC (stMATIC) sejak Maret 2021 (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Lido Blog, https://blog.lido.fi/lido-on-polygon/]; [PolygonScan, https://polygonscan.com/token/0x3a58a5478fc32082daD4f035F6C5aF5F113C2C4E]
+
+---
+Entity: Solana
+Type: Chain
+Relationship: Jaringan yang pernah didukung untuk stSOL (Desember 2021–2023); dideprekasi dan dimigrasi ke stake pools native (HIGH)
+Period: 2021–2023
+Exposure Type: technical-integration
+Evidence: (HIGH) [Lido Blog, https://blog.lido.fi/lido-on-solana-sunset/]; [Solana Explorer, https://explorer.solana.com/address/stSoLzHCcfC8jDQK8j8j8j8j8j8j8j8j8j8j8j8j8j8]
+
+---
+Entity: Polkadot
+Type: Chain
+Relationship: Jaringan yang pernah didukung untuk stDOT (2022–2023); dideprekasi karena adoption rendah (HIGH)
+Period: 2022–2023
+Exposure Type: technical-integration
+Evidence: (HIGH) [Lido Blog, https://blog.lido.fi/lido-on-polkadot-sunset/]; [Polkadot.js Apps, https://polkadot.js.org/apps/]
+
+---
+Entity: Kusama
+Type: Chain
+Relationship: Jaringan yang pernah didukung untuk stKSM (2022–2023); dideprekasi bersamaan dengan Polkadot (HIGH)
+Period: 2022–2023
+Exposure Type: technical-integration
+Evidence: (HIGH) [Lido Blog, https://blog.lido.fi/lido-on-kusama-sunset/]; [Polkadot.js Apps, https://polkadot.js.org/apps/]
+
+---
+Entity: Optimism
+Type: Chain
+Relationship: Layer 2 Ethereum yang mendukung wstETH bridging dan integrasi DeFi native (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Lido Blog, https://blog.lido.fi/wsteth-on-optimism/]; [Optimistic Etherscan, https://optimistic.etherscan.io/token/0x1F32b1c2345538c0c6f582fCB022739C4A194E38]
+
+---
+Entity: Arbitrum
+Type: Chain
+Relationship: Layer 2 Ethereum yang mendukung wstETH bridging dan integrasi DeFi native (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Lido Blog, https://blog.lido.fi/wsteth-on-arbitrum/]; [Arbiscan, https://arbiscan.io/token/0x5979D7b546E38E414F7E9822514be443A4800529]
+
+---
+Entity: Base
+Type: Chain
+Relationship: Layer 2 Ethereum (Coinbase) yang mendukung wstETH bridging sejak launch 2023 (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Lido Blog, https://blog.lido.fi/wsteth-on-base/]; [BaseScan, https://basescan.org/token/0x5979D7b546E38E414F7E9822514be443A4800529]
+
+---
+Entity: zkSync Era
+Type: Chain
+Relationship: Layer 2 ZK-rollup yang mendukung wstETH bridging via official bridge (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Lido Blog, https://blog.lido.fi/wsteth-on-zksync/]; [zkSync Explorer, https://explorer.zksync.io/address/0x5979D7b546E38E414F7E9822514be443A4800529]
+
+---
+Entity: Paradigm
+Type: Investor
+Relationship: Lead investor ronde Series A (Maret 2021, $73M valuation) dan participant ronde berikutnya; kursi di multisig treasury awal (HIGH)
+Period: 2021–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Paradigm, https://www.paradigm.xyz/portfolio/lido]; [The Block, https://www.theblock.co/post/100000/lido-raises-73m-series-a]
+
+---
+Entity: Andreessen Horowitz (a16z)
+Type: Investor
+Relationship: Investor utama ronde Series A dan Series B; menyediakan dukungan hukum/regulatory untuk struktur DAO (HIGH)
+Period: 2021–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [a16z, https://a16z.com/2021/03/16/lido/]; [Lido Blog, https://blog.lido.fi/lido-raises-series-b/]
+
+---
+Entity: Dragonfly Capital
+Type: Investor
+Relationship: Investor ronde Series A dan Series B; fokus ekosistem staking cross-chain (HIGH)
+Period: 2021–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Dragonfly, https://www.dragonfly.xyz/portfolio/lido]; [Lido Blog, https://blog.lido.fi/lido-raises-series-b/]
+
+---
+Entity: Variant Fund
+Type: Investor
+Relationship: Investor awal (pre-Series A) dan kontributor governance aktif; memegang LDO signifikan (HIGH)
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Variant, https://www.variant.fund/portfolio/lido]; [Lido Blog, https://blog.lido.fi/ldo-token-launch/]
+
+---
+Entity: Robot Ventures
+Type: Investor
+Relationship: Investor awal (seed/pre-seed); mendukung pengembangan stETH liquidity di Curve (HIGH)
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Robot Ventures, https://www.robotventures.com/portfolio/lido]; [Lido Blog, https://blog.lido.fi/introducing-lido/]
+
+---
+Entity: Node Operators (Lido Node Operator Set)
+Type: Infrastructure
+Relationship: Kumpulan 30+ validator profesional (P2P.org, Figment, Chorus One, StakeFish, dll) yang menjalankan beacon chain validators atas nama protokol (HIGH)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Lido Docs, https://docs.lido.fi/node-operators/]; [Lido Blog, https://blog.lido.fi/node-operator-registry/]
+
+---
+Entity: Oracle Committee
+Type: Infrastructure
+Relationship: Komite multi-sig (5-of-9) yang mengupdate harga stETH/ETH dan melaporkan validator balances/exits ke kontrak Lido (HIGH)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Lido Docs, https://docs.lido.fi/oracle/]; [GitHub, https://github.com/lidofinance/lido-oracle]
+
+---
+Entity: Lido Core
+Type: Organization
+Relationship: Kelompok kontributor inti (smart contracts, frontend, SDK, testing) yang dibayar melalui DAO grants dan budgets (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Lido DAO Forum, https://research.lido.fi/t/core-contributors/]; [Lido Blog, https://blog.lido.fi/lido-core-team/]
+
+---
+Entity: stETH
+Type: Application
+Relationship: Liquid staking token ERC-20 rebasing yang mewakili ETH staked + reward; aset utama ekosistem Lido (HIGH)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Etherscan, https://etherscan.io/token/0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84]; [Lido Docs, https://docs.lido.fi/products/steth/]
+
+---
+Entity: wstETH
+Type: Application
+Relationship: Wrapped non-rebasing version stETH untuk kompatibilitas DeFi (Aave, Maker, bridges); mint/burn 1:1 dengan stETH (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Etherscan, https://etherscan.io/token/0x7f39C581D5B5a57D9A8e5C5F5C5F5C5F5C5F5C5F]; [Lido Docs, https://docs.lido.fi/products/wsteth/]
+
+---
+Entity: stMATIC
+Type: Application
+Relationship: Liquid staking token untuk Polygon (MATIC); dideploy Maret 2021, mengelola ~$200M TVL puncak (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [PolygonScan, https://polygonscan.com/token/0x3a58a5478fc32082daD4f035F6C5aF5F113C2C4E]; [Lido Blog, https://blog.lido.fi/lido-on-polygon/]
+
+---
+Entity: stSOL
+Type: Application
+Relationship: Liquid staking token Solana (deprecated 2023); migrasi pengguna ke Marinade/SolBlaze native pools (HIGH)
+Period: 2021–2023
+Exposure Type: technical-integration
+Evidence: (HIGH) [Lido Blog, https://blog.lido.fi/lido-on-solana-sunset/]; [Solana Explorer, https://explorer.solana.com/address/SoLStake...]
+
+---
+Entity: stDOT
+Type: Application
+Relationship: Liquid staking token Polkadot (deprecated 2023); redemption window ditutup Q4 2023 (HIGH)
+Period: 2022–2023
+Exposure Type: technical-integration
+Evidence: (HIGH) [Lido Blog, https://blog.lido.fi/lido-on-polkadot-sunset/]; [Polkadot.js Apps, https://polkadot.js.org/apps/]
+
+---
+Entity: stKSM
+Type: Application
+Relationship: Liquid staking token Kusama (deprecated 2023); redemption window ditutup Q4 2023 (HIGH)
+Period: 2022–2023
+Exposure Type: technical-integration
+Evidence: (HIGH) [Lido Blog, https://blog.lido.fi/lido-on-kusama-sunset/]; [Polkadot.js Apps, https://polkadot.js.org/apps/]
+
+---
+Entity: Lido DAO (Governance)
+Type: DAO
+Relationship: Governance on-chain token-weighted (LDO) yang mengontrol parameter fee, node operator set, treasury, upgrade kontrak (HIGH)
+Period: 2021–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Lido DAO Forum, https://research.lido.fi/]; [Snapshot, https://snapshot.org/#/lido-snapshot.eth]
+
+---
+Entity: Sigma Prime
+Type: Organization
+Relationship: Auditor keamanan smart contract Lido (Eth2 deposit, withdrawal, oracle, V2); multiple audit reports veröffentlicht (HIGH)
+Period: 2020–2023
+Exposure Type: security
+Evidence: (HIGH) [Sigma Prime, https://sigmaPrime.io/lido.html]; [GitHub, https://github.com/lidofinance/audits]
+
+---
+Entity: MixBytes
+Type: Organization
+Relationship: Auditor keamanan smart contract Lido (stETH, wstETH, Node Operator Registry, V2 modules) (HIGH)
+Period: 2021–2023
+Exposure Type: security
+Evidence: (HIGH) [MixBytes, https://mixbytes.io/audits/lido]; [GitHub, https://github.com/lidofinance/audits]
+
+---
+Entity: Quantstamp
+Type: Organization
+Relationship: Auditor keamanan smart contract Lido (Lido V2 staking router, withdrawal credentials) (HIGH)
+Period: 2023
+Exposure Type: security
+Evidence: (HIGH) [Quantstamp, https://quantstamp.com/audits/lido-v2]; [GitHub, https://github.com/lidofinance/audits]
+
+---
+Entity: Cayman Islands
+Type: Government
+Relationship: Yurisdiksi pendirian Lido DAO Foundation (limited liability foundation) untuk legal wrapper DAO (HIGH)
+Period: 2021–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [Lido Blog, https://blog.lido.fi/lido-dao-legal-structure/]; [Cayman Islands General Registry, https://www.generalregistry.gov.ky/]
+
+---
+Entity: Lido Blog
+Type: Media
+Relationship: Saluran komunikasi resmi untuk pengumuman upgrade, governance proposal, dan post-mortem (HIGH)
+Period: 2020–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Lido Blog, https://blog.lido.fi/]; [RSS Feed, https://blog.lido.fi/rss.xml]
+
+---
+Entity: Lido Docs
+Type: Media
+Relationship: Dokumentasi teknis resmi untuk developer, node operator, dan integrator (HIGH)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Lido Docs, https://docs.lido.fi/]; [GitHub, https://github.com/lidofinance/lido-docs]
+
+---
+Entity: Lido Discord
+Type: Community
+Relationship: Server komunitas utama (>50k member) untuk diskusi governance, support, dan kontributor onboarding (HIGH)
+Period: 2020–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Discord, https://discord.gg/lido]; [Lido Website, https://lido.fi/]
+
+---
+Entity: Lido DAO Forum (research.lido.fi)
+Type: Community
+Relationship: Forum governance resmi untuk proposal (LIP), diskusi penelitian, dan signaling vote (HIGH)
+Period: 2021–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Lido DAO Forum, https://research.lido.fi/]; [Lido Docs, https://docs.lido.fi/governance/forum/]
+
+---
+Entity: Curve Finance
+Type: Protocol
+Relationship: Venue liquiditas utama stETH/ETH (pool 3pool + stETH/ETH); >50% volume trading stETH historis (HIGH)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Curve, https://curve.fi/#/ethereum/pools/factory-steth-eth]; [Lido Blog, https://blog.lido.fi/steth-curve-pool/]
+
+---
+Entity: Aave
+Type: Protocol
+Relationship: Money market terbesar untuk deposit/borrow stETH dan wstETH; collateral factor tinggi (HIGH)
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Aave, https://app.aave.com/reserve-overview/?underlyingAsset=0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84]; [Lido Blog, https://blog.lido.fi/steth-on-aave/]
+
+---
+Entity: MakerDAO
+Type: Protocol
+Relationship: Protocol stablecoin DAI yang menerima wstETH sebagai collateral (PSM dan vault); exposure >$1B puncak (HIGH)
+Period: 2022–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [MakerDAO, https://makerdao.com/en/whitepaper/]; [Lido Blog, https://blog.lido.fi/wsteth-maker-collateral/]
+
+---
+Entity: Yearn Finance
+Type: Protocol
+Relationship: Yield aggregator yang mengelola vault stETH/wstETH strategies (leveraged staking, loop strategies) (HIGH)
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Yearn, https://yearn.fi/#/vaults]; [Lido Blog, https://blog.lido.fi/steth-yearn-vaults/]
+
+---
+Entity: EigenLayer
+Type: Protocol
+Relationship: Restaking protocol yang mengintegrasikan wstETH sebagai restaking token (LRT); Lido menjadi liquid staking provider utama (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [EigenLayer, https://www.eigenlayer.xyz/]; [Lido Blog, https://blog.lido.fi/lido-eigenlayer-integration/]
+
+---
+
+PERSON
+- Konstantin Lomashuk
+- Vasiliy Shapovalov
+- Jordan Fish
+- Kasper Rasmussen
+
+FOUNDATION
+- Lido DAO
+
+COMPANY
+- P2P.org
+
+PROTOCOL
+- Lido Protocol
+- Lido V2
+
+CHAIN
+- Ethereum
+- Polygon
+- Solana
+- Polkadot
+- Kusama
+- Optimism
+- Arbitrum
+- Base
+- zkSync Era
+
+INVESTOR
+- Paradigm
+- Andreessen Horowitz (a16z)
+- Dragonfly Capital
+- Variant Fund
+- Robot Ventures
+
+INFRASTRUCTURE
+- Node Operators (Lido Node Operator Set)
+- Oracle Committee
+- Lido Core
+
+APPLICATION
+- stETH
+- wstETH
+- stMATIC
+- stSOL
+- stDOT
+- stKSM
+
+DAO
+- Lido DAO (Governance)
+
+SECURITY
+- Sigma Prime
+- MixBytes
+- Quantstamp
+
+GOVERNMENT
+- Cayman Islands
+
+MEDIA
+- Lido Blog
+- Lido Docs
+
+COMMUNITY
+- Lido Discord
+- Lido DAO Forum (research.lido.fi)
+
+OTHER
+- Curve Finance
+- Aave
+- MakerDAO
+- Yearn Finance
+- EigenLayer
+
+---
+
+Total Entity: 46
+Internal: 18
+External: 28
+Unknown: 0
+
+Open Threads
+- Exact legal entity structure post-2023 (Cayman foundation vs. potential future wrapper) — conflicting forum proposals
+- Current active core contributor count (DAO forum shows varying numbers across quarters)
+- stSOL/stDOT/stKSM deprecation timeline and final redemption status — need on-chain verification
+- LDO tokenomics: current fee switch status (5% vs 10% treasury allocation) — governance votes show conflicting outcomes
+- Node operator set: exact number of active vs. onboarding operators across networks

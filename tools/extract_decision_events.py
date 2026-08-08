@@ -154,7 +154,12 @@ def extract_from_dossier(path):
     text = path.read_text(encoding="utf-8")
     project_name = _project_name(text) or path.stem
 
-    m = re.search(r"^## Behavioral Intelligence\n(.*?)(?=\n## )", text, re.S | re.M)
+    # Boundary pinned to the phase that actually follows Behavioral Intelligence rather than a
+    # bare `\n## `: the model frequently markdown-formats Phase 9's own internal headers
+    # (`## Decision Timeline`, `## Strategic Objectives`, ...), and a bare lookahead stops at the
+    # first of those, truncating the body to near-nothing and yielding zero decision events.
+    m = re.search(r"^## Behavioral Intelligence\n(.*?)(?=\n## Knowledge Extraction|\Z)",
+                   text, re.S | re.M)
     behavioral_body = m.group(1) if m else ""
 
     m2 = re.search(r"^## Open Questions\n(.*?)(?=\n## |\Z)", text, re.S | re.M)

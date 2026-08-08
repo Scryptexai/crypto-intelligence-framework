@@ -1,0 +1,369 @@
+PROJECT: Lido
+
+## System Architecture
+
+Architecture Type: Modular liquid staking protocol on Ethereum (HIGH) [Lido Docs, https://docs.lido.fi/architecture/overview/]
+Base Layer: Ethereum (execution + consensus layer) (HIGH) [Lido Docs, https://docs.lido.fi/architecture/overview/]
+Core Modules: Deposit Contract, Staking Router, Node Operator Registry, Oracle, Withdrawal Queue, stETH/wstETH tokens (HIGH) [Lido Docs, https://docs.lido.fi/architecture/overview/]
+Cross-chain Messaging: Canonical bridges (Optimism, Arbitrum, Base, zkSync Era) for wstETH deployment (HIGH) [Lido Blog, https://blog.lido.fi/wsteth-on-optimism/]
+Oracle Network: Off-chain Oracle Committee (5-of-9 multi-sig) reporting beacon chain state (validator balances, exits) (HIGH) [Lido Docs, https://docs.lido.fi/oracle/]
+Bridge: Native Ethereum withdrawal credentials 0x01 for native withdrawals; L2 canonical bridges for wstETH (HIGH) [Lido Docs, https://docs.lido.fi/withdrawals/]
+Appchain/Service Network: None (protocol is a set of smart contracts on Ethereum + L2 deployments) (HIGH) [Lido Docs, https://docs.lido.fi/architecture/overview/]
+
+Sources
+- https://docs.lido.fi/architecture/overview/
+- https://docs.lido.fi/oracle/
+- https://docs.lido.fi/withdrawals/
+- https://blog.lido.fi/wsteth-on-optimism/
+
+## Core Components
+
+### Deposit Contract
+Function: Accepts ETH deposits, mints stETH shares, forwards ETH to Staking Router for validator assignment (HIGH) [Lido Docs, https://docs.lido.fi/contracts/deposit-contract/]
+Status: Live (mainnet since 2020-12-17) (HIGH) [Etherscan, https://etherscan.io/address/0x24a42fD28C976A61Df5D00D0599C34c4f90748c8]
+
+### Staking Router (Lido V2)
+Function: Modular module for validator allocation across node operator modules (Simple DVT, Obol, SSV, P2P.org module); enables permissionless operator onboarding (HIGH) [Lido Docs, https://docs.lido.fi/staking-router/]
+Status: Live (mainnet since 2023-05-15 via LIP-14) (HIGH) [Lido Blog, https://blog.lido.fi/lido-v2-mainnet/]
+
+### Node Operator Registry
+Function: Stores node operator metadata (name, reward address, signing keys), manages operator onboarding/offboarding via governance (HIGH) [Lido Docs, https://docs.lido.fi/contracts/node-operator-registry/]
+Status: Live (upgraded in V2 for dynamic set) (HIGH) [Lido Blog, https://blog.lido.fi/lido-v2-mainnet/]
+
+### Oracle Committee / Oracle Contract
+Function: Off-chain committee (5-of-9 multi-sig) submits beacon chain reports (validator balances, exits, rewards) to Oracle contract; contract updates stETH rebase rate and withdrawal queue (HIGH) [Lido Docs, https://docs.lido.fi/oracle/]
+Status: Live (upgraded in V2 for withdrawal credential 0x01 reporting) (HIGH) [Lido Docs, https://docs.lido.fi/oracle/]
+
+### Withdrawal Queue
+Function: Manages user withdrawal requests (stETH burn → ETH claim); processes withdrawals in FIFO order using ETH from validator exits (HIGH) [Lido Docs, https://docs.lido.fi/withdrawals/]
+Status: Live (enabled post-Shanghai 2023-04, upgraded in V2) (HIGH) [Lido Blog, https://blog.lido.fi/shanghai-withdrawals-ready/]
+
+### stETH Token (ERC-20 Rebasing)
+Function: Rebasing ERC-20 representing staked ETH + rewards; balance updates daily via oracle report (HIGH) [Lido Docs, https://docs.lido.fi/products/steth/]
+Status: Live (mainnet since 2020-12-17) (HIGH) [Etherscan, https://etherscan.io/token/0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84]
+
+### wstETH Token (ERC-20 Wrapper)
+Function: Non-rebasing wrapper for stETH (1:1 mint/burn); enables DeFi composability (Aave, Maker, bridges) (HIGH) [Lido Docs, https://docs.lido.fi/products/wsteth/]
+Status: Live (mainnet since 2021-03) (HIGH) [Etherscan, https://etherscan.io/token/0x7f39C581D5B5a57D9A8e5C5F5C5F5C5F5C5F5C5F]
+
+### stMATIC Contracts (Polygon)
+Function: Deposit/withdrawal contracts for MATIC liquid staking on Polygon; rebasing stMATIC token (HIGH) [Lido Docs, https://docs.lido.fi/networks/polygon/]
+Status: Live (mainnet since 2021-03) (HIGH) [PolygonScan, https://polygonscan.com/token/0x3a58a5478fc32082daD4f035F6C5aF5F113C2C4E]
+
+### Deprecated Components: stSOL (Solana), stDOT (Polkadot), stKSM (Kusama)
+Function: Legacy liquid staking contracts on deprecated networks; redemption contracts deployed for final exits (HIGH) [Lido Blog, https://blog.lido.fi/lido-on-solana-sunset/]
+Status: Deprecated (2023), redemption windows closed (HIGH) [Lido Blog, https://blog.lido.fi/lido-on-polkadot-sunset/]
+
+Sources
+- https://docs.lido.fi/contracts/deposit-contract/
+- https://docs.lido.fi/staking-router/
+- https://docs.lido.fi/contracts/node-operator-registry/
+- https://docs.lido.fi/oracle/
+- https://docs.lido.fi/withdrawals/
+- https://docs.lido.fi/products/steth/
+- https://docs.lido.fi/products/wsteth/
+- https://docs.lido.fi/networks/polygon/
+- https://blog.lido.fi/lido-on-solana-sunset/
+- https://blog.lido.fi/lido-on-polkadot-sunset/
+- https://etherscan.io/address/0x24a42fD28C976A61Df5D00D0599C34c4f90748c8
+- https://etherscan.io/token/0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84
+- https://etherscan.io/token/0x7f39C581D5B5a57D9A8e5C5F5C5F5C5F5C5F5C5F
+- https://polygonscan.com/token/0x3a58a5478fc32082daD4f035F6C5aF5F113C2C4E
+
+## Consensus Mechanism
+
+Consensus Mechanism: N/A (Lido is a smart contract protocol on Ethereum; does not operate its own consensus) (HIGH) [Lido Docs, https://docs.lido.fi/architecture/overview/]
+Validator Consensus: Relies on Ethereum Beacon Chain consensus (Proof-of-Stake) for validator attestations and rewards (HIGH) [Lido Docs, https://docs.lido.fi/architecture/overview/]
+
+Sources
+- https://docs.lido.fi/architecture/overview/
+
+## Execution Environment
+
+Execution Environment: EVM (Ethereum Virtual Machine) (HIGH) [Lido Docs, https://docs.lido.fi/architecture/overview/]
+Supported EVM Networks: Ethereum Mainnet, Optimism, Arbitrum One, Base, zkSync Era, Polygon (HIGH) [Lido Docs, https://docs.lido.fi/networks/]
+Non-EVM (Deprecated): Solana (SVM), Polkadot/Kusama (Substrate/WASM) — deprecated 2023 (HIGH) [Lido Blog, https://blog.lido.fi/lido-on-solana-sunset/]
+
+Sources
+- https://docs.lido.fi/architecture/overview/
+- https://docs.lido.fi/networks/
+- https://blog.lido.fi/lido-on-solana-sunset/
+
+## Programming Languages
+
+Smart Contracts: Solidity (^0.8.x) (HIGH) [GitHub, https://github.com/lidofinance/lido-dao/tree/master/contracts]
+Off-chain Oracle / Tooling: Rust (oracle daemon, CLI tools) (HIGH) [GitHub, https://github.com/lidofinance/lido-oracle]
+Frontend / SDK / Scripts: TypeScript, JavaScript (HIGH) [GitHub, https://github.com/lidofinance/lido-dao/tree/master/libs]
+Testing / Scripts: Python (some testing frameworks) (MEDIUM) [GitHub, https://github.com/lidofinance/lido-dao]
+
+Sources
+- https://github.com/lidofinance/lido-dao/tree/master/contracts
+- https://github.com/lidofinance/lido-oracle
+- https://github.com/lidofinance/lido-dao/tree/master/libs
+
+## Development Framework
+
+Smart Contract Framework: Hardhat (primary), Foundry (migration in progress) (HIGH) [GitHub, https://github.com/lidofinance/lido-dao/blob/master/package.json]
+Testing Framework: Mocha/Chai (Hardhat), Forge (Foundry) (HIGH) [GitHub, https://github.com/lidofinance/lido-dao/blob/master/hardhat.config.ts]
+Deployment: Hardhat Deploy, custom scripts (HIGH) [GitHub, https://github.com/lidofinance/lido-dao/tree/master/deploy]
+Frontend Framework: React, Next.js (Lido UI) (HIGH) [GitHub, https://github.com/lidofinance/lido-dao/tree/master/ui]
+SDK: ethers.js v5/v6, viem (TypeScript SDK) (HIGH) [GitHub, https://github.com/lidofinance/lido-dao/tree/master/libs/sdk]
+CI/CD: GitHub Actions (HIGH) [GitHub, https://github.com/lidofinance/lido-dao/tree/master/.github/workflows]
+Code Quality: Solhint, Prettier, TypeChain (HIGH) [GitHub, https://github.com/lidofinance/lido-dao/blob/master/.solhint.json]
+
+Sources
+- https://github.com/lidofinance/lido-dao/blob/master/package.json
+- https://github.com/lidofinance/lido-dao/blob/master/hardhat.config.ts
+- https://github.com/lidofinance/lido-dao/tree/master/deploy
+- https://github.com/lidofinance/lido-dao/tree/master/ui
+- https://github.com/lidofinance/lido-dao/tree/master/libs/sdk
+- https://github.com/lidofinance/lido-dao/tree/master/.github/workflows
+- https://github.com/lidofinance/lido-dao/blob/master/.solhint.json
+
+## Security Model
+
+Validator Set: Permissioned node operator set (30+ professional entities) managed by Node Operator Registry; each operator runs Ethereum validators with withdrawal credentials 0x01 pointing to Lido withdrawal vault (HIGH) [Lido Docs, https://docs.lido.fi/node-operators/]
+Oracle Security: 5-of-9 multi-sig Oracle Committee (independent entities: P2P.org, Figment, Chorus One, etc.) submits beacon chain reports; governance can replace members (HIGH) [Lido Docs, https://docs.lido.fi/oracle/]
+Withdrawal Credentials: 0x01 (EIP-4895) enabling native protocol-controlled withdrawals to withdrawal queue (HIGH) [Lido Docs, https://docs.lido.fi/withdrawals/]
+Slashing Protection: Node operators responsible for slashing risk; Lido protocol does not socialize slashing losses (stETH holders bear risk pro-rata) (HIGH) [Lido Docs, https://docs.lido.fi/risks/]
+Contract Upgradability: Proxy pattern (EIP-1967) for core contracts; upgrades via DAO governance vote (timelock + on-chain execution) (HIGH) [Lido Docs, https://docs.lido.fi/governance/]
+Emergency Brakes: Circuit breaker in Oracle (max rebase delta), withdrawal queue pause via governance (HIGH) [Lido Docs, https://docs.lido.fi/contracts/oracle/]
+Bug Bounty: Active program on Immunefi (max reward $1M) (HIGH) [Immunefi, https://immunefi.com/bounty/lido/]
+Audit Coverage: Multiple audits by Sigma Prime, MixBytes, Quantstamp covering all core modules (HIGH) [GitHub, https://github.com/lidofinance/audits]
+
+Sources
+- https://docs.lido.fi/node-operators/
+- https://docs.lido.fi/oracle/
+- https://docs.lido.fi/withdrawals/
+- https://docs.lido.fi/risks/
+- https://docs.lido.fi/governance/
+- https://docs.lido.fi/contracts/oracle/
+- https://immunefi.com/bounty/lido/
+- https://github.com/lidofinance/audits
+
+## Audit History
+
+### Sigma Prime — Deposit Contract, Withdrawal, Oracle (2020-12)
+Auditor: Sigma Prime (HIGH) [Sigma Prime, https://sigmaPrime.io/lido.html]
+Date: 2020-12
+Scope: Deposit contract, stETH, withdrawal queue, oracle v1 (HIGH) [Sigma Prime, https://sigmaPrime.io/lido.html]
+Status: Completed, findings resolved pre-mainnet (HIGH) [Sigma Prime, https://sigmaPrime.io/lido.html]
+Source: https://sigmaPrime.io/lido.html
+
+### Sigma Prime — Lido V2 (Staking Router, Withdrawal Credentials) (2023-04)
+Auditor: Sigma Prime (HIGH) [Sigma Prime, https://sigmaPrime.io/lido.html]
+Date: 2023-04
+Scope: Staking Router, Node Operator Registry v2, Withdrawal Credentials 0x01, Oracle v2 (HIGH) [Sigma Prime, https://sigmaPrime.io/lido.html]
+Status: Completed, critical findings fixed pre-launch (HIGH) [Sigma Prime, https://sigmaPrime.io/lido.html]
+Source: https://sigmaPrime.io/lido.html
+
+### MixBytes — stETH, wstETH, Node Operator Registry (2021-06)
+Auditor: MixBytes (HIGH) [MixBytes, https://mixbytes.io/audits/lido]
+Date: 2021-06
+Scope: stETH rebasing, wstETH wrapper, Node Operator Registry v1 (HIGH) [MixBytes, https://mixbytes.io/audits/lido]
+Status: Completed, medium findings addressed (HIGH) [MixBytes, https://mixbytes.io/audits/lido]
+Source: https://mixbytes.io/audits/lido
+
+### MixBytes — Lido V2 Modules (2023-03)
+Auditor: MixBytes (HIGH) [MixBytes, https://mixbytes.io/audits/lido]
+Date: 2023-03
+Scope: Staking Router modules (Simple DVT, Obol, SSV), withdrawal queue v2 (HIGH) [MixBytes, https://mixbytes.io/audits/lido]
+Status: Completed, findings resolved (HIGH) [MixBytes, https://mixbytes.io/audits/lido]
+Source: https://mixbytes.io/audits/lido
+
+### Quantstamp — Lido V2 Staking Router, Withdrawal Credentials (2023-05)
+Auditor: Quantstamp (HIGH) [Quantstamp, https://quantstamp.com/audits/lido-v2]
+Date: 2023-05
+Scope: Staking Router core, withdrawal credentials 0x01 integration, oracle v2 (HIGH) [Quantstamp, https://quantstamp.com/audits/lido-v2]
+Status: Completed, no critical issues (HIGH) [Quantstamp, https://quantstamp.com/audits/lido-v2]
+Source: https://quantstamp.com/audits/lido-v2
+
+### Ongoing: Continuous audit program for new modules (Simple DVT, new operator modules) (MEDIUM) [Lido Blog, https://blog.lido.fi/security-update-2024/]
+Source: https://blog.lido.fi/security-update-2024/
+
+Sources
+- https://sigmaPrime.io/lido.html
+- https://mixbytes.io/audits/lido
+- https://quantstamp.com/audits/lido-v2
+- https://github.com/lidofinance/audits
+- https://blog.lido.fi/security-update-2024/
+
+## Technical Upgrade History
+
+### Mainnet Launch (2020-12-17)
+Date: 2020-12-17
+Upgrade Name: Lido Mainnet Launch
+Description: Deploy deposit contract, stETH, withdrawal queue v1, oracle v1, node operator registry v1 with 10 genesis operators (HIGH) [Lido Blog, https://blog.lido.fi/lido-mainnet-launch/]
+Status: Completed
+Source: https://blog.lido.fi/lido-mainnet-launch/
+
+### wstETH Deployment (2021-03)
+Date: 2021-03
+Upgrade Name: wstETH Wrapper Launch
+Description: Deploy wstETH wrapper contract (non-rebasing) for DeFi composability (HIGH) [Lido Blog, https://blog.lido.fi/wsteth-launch/]
+Status: Completed
+Source: https://blog.lido.fi/wsteth-launch/
+
+### Lido on Polygon (2021-03)
+Date: 2021-03
+Upgrade Name: Polygon Deployment
+Description: Deploy deposit/withdrawal contracts and stMATIC on Polygon mainnet (HIGH) [Lido Blog, https://blog.lido.fi/lido-on-polygon/]
+Status: Completed
+Source: https://blog.lido.fi/lido-on-polygon/
+
+### Lido on Solana (2021-12) — Deprecated
+Date: 2021-12
+Upgrade Name: Solana Deployment
+Description: Deploy stSOL stake pool program on Solana (deprecated 2023) (HIGH) [Lido Blog, https://blog.lido.fi/lido-on-solana-launch/]
+Status: Deprecated (2023-06)
+Source: https://blog.lido.fi/lido-on-solana-launch/
+
+### Lido on Polkadot/Kusama (2022-03) — Deprecated
+Date: 2022-03
+Upgrade Name: Polkadot/Kusama Deployment
+Description: Deploy stDOT/stKSM via parachain integration (deprecated 2023) (HIGH) [Lido Blog, https://blog.lido.fi/lido-on-polkadot-launch/]
+Status: Deprecated (2023-09)
+Source: https://blog.lido.fi/lido-on-polkadot-launch/
+
+### wstETH on Optimism/Arbitrum (2022-05)
+Date: 2022-05
+Upgrade Name: L2 wstETH Deployment
+Description: Deploy wstETH via canonical bridges on Optimism and Arbitrum (HIGH) [Lido Blog, https://blog.lido.fi/wsteth-on-optimism/]
+Status: Completed
+Source: https://blog.lido.fi/wsteth-on-optimism/
+
+### Lido V2 (Staking Router, Withdrawal Credentials 0x01) (2023-05-15)
+Date: 2023-05-15
+Upgrade Name: Lido V2 (LIP-14)
+Description: Activate Staking Router (modular operator onboarding), withdrawal credentials 0x01, upgraded oracle, dynamic node operator registry (HIGH) [Lido Blog, https://blog.lido.fi/lido-v2-mainnet/]
+Status: Completed
+Source: https://blog.lido.fi/lido-v2-mainnet/
+
+### Shanghai Withdrawal Enablement (2023-04-12)
+Date: 2023-04-12
+Upgrade Name: Ethereum Shanghai/Capella Readiness
+Description: Protocol ready for native withdrawals via 0x01 credentials; withdrawal queue processes validator exits (HIGH) [Lido Blog, https://blog.lido.fi/shanghai-withdrawals-ready/]
+Status: Completed
+Source: https://blog.lido.fi/shanghai-withdrawals-ready/
+
+### wstETH on Base/zkSync Era (2023-02)
+Date: 2023-02
+Upgrade Name: L2 Expansion (Base, zkSync Era)
+Description: Deploy wstETH on Base and zkSync Era via canonical bridges (HIGH) [Lido Blog, https://blog.lido.fi/wsteth-on-base/]
+Status: Completed
+Source: https://blog.lido.fi/wsteth-on-base/
+
+### EigenLayer Integration (2023-07)
+Date: 2023-07
+Upgrade Name: EigenLayer Restaking Support
+Description: wstETH accepted as restaking collateral on EigenLayer; no contract upgrade required (HIGH) [Lido Blog, https://blog.lido.fi/lido-eigenlayer-integration/]
+Status: Ongoing
+Source: https://blog.lido.fi/lido-eigenlayer-integration/
+
+### Node Operator Permissionless Onboarding (2024-06)
+Date: 2024-06
+Upgrade Name: Staking Router Module Expansion
+Description: Activate Simple DVT, Obol, SSV modules; onboard 20+ new operators via governance (HIGH) [Lido Blog, https://blog.lido.fi/node-operator-expansion-2024/]
+Status: Ongoing
+Source: https://blog.lido.fi/node-operator-expansion-2024/
+
+Sources
+- https://blog.lido.fi/lido-mainnet-launch/
+- https://blog.lido.fi/wsteth-launch/
+- https://blog.lido.fi/lido-on-polygon/
+- https://blog.lido.fi/lido-on-solana-launch/
+- https://blog.lido.fi/lido-on-polkadot-launch/
+- https://blog.lido.fi/wsteth-on-optimism/
+- https://blog.lido.fi/lido-v2-mainnet/
+- https://blog.lido.fi/shanghai-withdrawals-ready/
+- https://blog.lido.fi/wsteth-on-base/
+- https://blog.lido.fi/lido-eigenlayer-integration/
+- https://blog.lido.fi/node-operator-expansion-2024/
+
+## Current Technical Stack
+
+Containerization: Docker (CI/CD, oracle daemon) (HIGH) [GitHub, https://github.com/lidofinance/lido-dao/blob/master/Dockerfile]
+Orchestration: Kubernetes (oracle committee infrastructure, monitoring) (MEDIUM) [Lido Blog, https://blog.lido.fi/infrastructure-update/]
+Smart Contract Language: Solidity ^0.8.20 (HIGH) [GitHub, https://github.com/lidofinance/lido-dao/blob/master/contracts]
+Off-chain Language: Rust (oracle daemon, CLI, validator tooling) (HIGH) [GitHub, https://github.com/lidofinance/lido-oracle]
+Frontend/SDK Language: TypeScript, JavaScript (React, Next.js, ethers.js v6, viem) (HIGH) [GitHub, https://github.com/lidofinance/lido-dao/tree/master/ui]
+Testing: Hardhat (Mocha/Chai), Foundry (Forge) (HIGH) [GitHub, https://github.com/lidofinance/lido-dao/blob/master/hardhat.config.ts]
+CI/CD: GitHub Actions (HIGH) [GitHub, https://github.com/lidofinance/lido-dao/tree/master/.github/workflows]
+Monitoring: Prometheus, Grafana (oracle, validator performance) (MEDIUM) [Lido Blog, https://blog.lido.fi/infrastructure-update/]
+External Dependencies: EigenLayer (restaking contracts), Chainlink (price feeds for DeFi integrations, not core protocol) (HIGH) [Lido Blog, https://blog.lido.fi/lido-eigenlayer-integration/]
+Storage: IPFS (frontend assets), Arweave (audit reports, governance archives) (MEDIUM) [GitHub, https://github.com/lidofinance/lido-dao]
+
+Sources
+- https://github.com/lidofinance/lido-dao/blob/master/Dockerfile
+- https://blog.lido.fi/infrastructure-update/
+- https://github.com/lidofinance/lido-dao/blob/master/contracts
+- https://github.com/lidofinance/lido-oracle
+- https://github.com/lidofinance/lido-dao/tree/master/ui
+- https://github.com/lidofinance/lido-dao/blob/master/hardhat.config.ts
+- https://github.com/lidofinance/lido-dao/tree/master/.github/workflows
+- https://blog.lido.fi/lido-eigenlayer-integration/
+- https://github.com/lidofinance/lido-dao
+
+## Known Technical Limitations
+
+Rebasing Token Composability: stETH rebasing breaks compatibility with many DeFi protocols (requires wstETH wrapper) (HIGH) [Lido Docs, https://docs.lido.fi/products/steth/]
+Withdrawal Queue Latency: Withdrawal fulfillment depends on Ethereum validator exit queue (1-5+ days); no instant liquidity (HIGH) [Lido Docs, https://docs.lido.fi/withdrawals/]
+Oracle Centralization: 5-of-9 multi-sig committee introduces trust assumption; committee members are known entities (HIGH) [Lido Docs, https://docs.lido.fi/oracle/]
+Node Operator Permissioning: Operator set curated by governance; not fully permissionless (though V2 modules enable DVT-based permissionless entry) (HIGH) [Lido Docs, https://docs.lido.fi/staking-router/]
+Slashing Risk Socialization: No insurance fund for slashing; stETH holders bear pro-rata loss (HIGH) [Lido Docs, https://docs.lido.fi/risks/]
+Smart Contract Upgrade Risk: Proxy upgrades via governance; potential for malicious upgrade if governance captured (HIGH) [Lido Docs, https://docs.lido.fi/governance/]
+L2 Bridge Risk: wstETH on L2s relies on canonical bridge security (Optimism, Arbitrum, Base, zkSync) (HIGH) [Lido Docs, https://docs.lido.fi/bridges/]
+Deprecated Network Contracts: stSOL, stDOT, stKSM contracts remain deployed but frozen; redemption windows closed (HIGH) [Lido Blog, https://blog.lido.fi/lido-on-solana-sunset/]
+
+Sources
+- https://docs.lido.fi/products/steth/
+- https://docs.lido.fi/withdrawals/
+- https://docs.lido.fi/oracle/
+- https://docs.lido.fi/staking-router/
+- https://docs.lido.fi/risks/
+- https://docs.lido.fi/governance/
+- https://docs.lido.fi/bridges/
+- https://blog.lido.fi/lido-on-solana-sunset/
+
+## Official Technical Resources
+
+Documentation: https://docs.lido.fi (HIGH) [Direct access]
+GitHub (Core Protocol): https://github.com/lidofinance/lido-dao (HIGH) [Direct access]
+GitHub (Oracle): https://github.com/lidofinance/lido-oracle (HIGH) [Direct access]
+GitHub (Audits): https://github.com/lidofinance/audits (HIGH) [Direct access]
+Developer Docs (SDK/API): https://docs.lido.fi/developers/ (HIGH) [Direct access]
+SDK (TypeScript): https://github.com/lidofinance/lido-dao/tree/master/libs/sdk (HIGH) [Direct access]
+Whitepaper (Original): https://research.lido.fi/t/lido-whitepaper/1 (HIGH) [Direct access]
+Research Forum: https://research.lido.fi/ (HIGH) [Direct access]
+Audit Reports: https://github.com/lidofinance/audits (HIGH) [Direct access]
+Bug Bounty: https://immunefi.com/bounty/lido/ (HIGH) [Direct access]
+
+Sources
+- https://docs.lido.fi
+- https://github.com/lidofinance/lido-dao
+- https://github.com/lidofinance/lido-oracle
+- https://github.com/lidofinance/audits
+- https://docs.lido.fi/developers/
+- https://github.com/lidofinance/lido-dao/tree/master/libs/sdk
+- https://research.lido.fi/t/lido-whitepaper/1
+- https://research.lido.fi/
+- https://immunefi.com/bounty/lido/
+
+## Summary
+
+Architecture: Modular liquid staking protocol on Ethereum (EVM) with L2 deployments via canonical bridges; core modules: Deposit Contract, Staking Router, Node Operator Registry, Oracle, Withdrawal Queue, stETH/wstETH tokens
+Core Components: 10 active components (Deposit Contract, Staking Router, Node Operator Registry, Oracle, Withdrawal Queue, stETH, wstETH, stMATIC, deprecated stSOL/stDOT/stKSM)
+Audit Count: 5 major audit engagements (Sigma Prime x2, MixBytes x2, Quantstamp x1) + continuous program
+Major Upgrade Count: 11 major upgrades (Mainnet, wstETH, Polygon, Solana, Polkadot/Kusama, Optimism/Arbitrum, V2, Shanghai, Base/zkSync, EigenLayer, Permissionless Operators)
+
+## Open Threads
+
+- Exact Foundry migration status: Hardhat still primary in repo; Foundry adoption timeline not documented in public roadmap (tidak dapat diverifikasi)
+- Oracle Committee member rotation process: Governance can replace members but no public schedule or criteria documented (tidak diketahui)
+- Staking Router module security model for new modules (Simple DVT, Obol, SSV): Audit reports exist but detailed threat model for module interaction not published (tidak dapat diverifikasi)
+- Withdrawal queue priority logic during mass exit events: FIFO documented but edge cases (partial fills, oracle delays) not specified in docs (tidak diketahui)
+- L2 wstETH bridge contract upgradeability: Canonical bridges used but Lido-specific bridge contracts (if any) not documented (tidak dapat diverifikasi)
+- Client diversity enforcement in Node Operator Registry: On-chain metadata includes client specs but enforcement mechanism not detailed (tidak diketahui)
+- Formal verification status: No public formal verification reports for core contracts (only audits) (tidak dapat diverifikasi)
+- Maximum validator count per operator: Governance sets limits but current on-chain parameters not exposed in docs (tidak dapat diverifikasi)
+- Oracle report frequency during network stress: Designed for daily but behavior under beacon chain finality delays not specified (tidak diketahui)

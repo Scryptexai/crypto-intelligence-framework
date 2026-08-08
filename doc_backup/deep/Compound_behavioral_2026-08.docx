@@ -1,0 +1,271 @@
+PROJECT: Compound Finance
+
+1. Menjadi protokol money market algorithmic standar di DeFi
+· Evidence: Compound v1 (2018) memperkenalkan model pooled lending algorithmic pertama di Ethereum; v2 (2019) dengan cToken dan Jump Rate Model menjadi blueprint industri yang difork banyak protokol (Venus, Cream, dll) (HIGH) [Phase 3 EV-002, EV-005]
+· Supporting Dataset: Phase 3 EV-002, EV-005; Phase 4 Technical Upgrade History; Phase 8 Market Position
+
+2. Desentralisasi progresif melalui DAO on-chain
+· Evidence: COMP token launch Juni 2020 (EV-007) mentransfer kendali parameter protokol, upgrade, dan treasury ke COMP holders via Governor Bravo + Timelock; 100+ proposal dieksekusi sejak 2020 (HIGH) [Phase 3 EV-007, EV-008, EV-021]
+· Supporting Dataset: Phase 3 EV-007, EV-008, EV-021; Phase 6 Token Governance; Phase 2 Entity: Compound DAO, Governor Bravo
+
+3. Minimasi governance & keamanan tinggi via arsitektur immutable (Comet v3)
+· Evidence: Comet v3 (2023) dirancang single-asset, core logic immutable, no admin keys, formal verification Certora, multiple top-tier audits — mengurangi attack surface governance (HIGH) [Phase 3 EV-015; Phase 4 Security Model, Audit History; Phase 8 Narrative: Governance Minimization]
+· Supporting Dataset: Phase 3 EV-015; Phase 4 Security Model, Known Technical Limitations; Phase 8 Narrative Position
+
+4. Ekspansi multi-chain strategis ke L2 dan alt-L1 bermassa pengguna
+· Evidence: Deployment berurutan: Polygon (Mar 2021), Avalanche (Agu 2021), BNB Chain (Sep 2021), lalu Comet v3 ke Arbitrum (Okt 2023), Base (Nov 2023), Optimism (Des 2023) — mengikuti likuiditas dan basis pengguna (HIGH) [Phase 3 EV-010, EV-011, EV-012, EV-016, EV-017, EV-018]
+· Supporting Dataset: Phase 3 EV-010, EV-011, EV-012, EV-016, EV-017, EV-018; Phase 7 Major Integrations; Phase 8 Adoption Metrics per chain
+
+5. Membangun infrastruktur cross-chain native (Gateway) untuk interoperabilitas posisi lending
+· Evidence: Compound Gateway launch Feb 2024 (EV-020) memungkinkan supply/borrow lintas chain tanpa bridge tradisional — diferensiasi vs kompetitor (HIGH) [Phase 3 EV-020; Phase 4 Core Components: Gateway; Phase 7 Major Integrations: Gateway]
+· Supporting Dataset: Phase 3 EV-020; Phase 4 Core Components; Phase 7 Major Integrations; Phase 8 Narrative: Cross-chain Interoperability
+
+6. Manajemen treasury berkelanjutan via Protocol-owned Liquidity
+· Evidence: Proposal 280 (Des 2023) meluncurkan Compound Treasury untuk mengelola POL, yield strategies, diversifikasi — mengurangi ketergantungan COMP emissions (HIGH) [Phase 3 EV-019; Phase 5 Treasury, Revenue Model; Phase 8 Narrative: Treasury Management]
+· Supporting Dataset: Phase 3 EV-019; Phase 5 Treasury, Revenue Model; Phase 8 Narrative Position
+
+Keputusan: Pendirian Compound Labs, Inc. dan pengembangan protokol lending algorithmic (2017)
+· Trigger: Tidak adanya primitive lending on-chain yang efisien dan permissionless di Ethereum awal; peluang menciptakan money market algorithmic
+· Evidence: Robert Leshner dan Geoffrey Hayes mendirikan Compound Labs 2017 untuk membangun protokol lending algorithmic (HIGH) [Phase 1 Foundation; Phase 3 EV-001]
+· Decision: Membangun perusahaan (Compound Labs) untuk mengembangkan protokol open-source, bukan DAO langsung dari awal
+· Immediate Result: Entity perusahaan terbentuk, pengembangan v1 dimulai
+· Long-term Impact: Memisahkan pengembangan inti (Labs) dari governance protokol (DAO) — model yang kemudian ditiru banyak proyek DeFi
+· Supporting Dataset: Phase 1 Foundation; Phase 3 EV-001; Phase 2 Entity: Compound Labs, Robert Leshner, Geoffrey Hayes
+
+Keputusan: Launch Compound v1 Mainnet dengan 6 aset awal (2018-09)
+· Trigger: Kesiapan smart contract v1 setelah testnet; kebutuhan membuktikan product-market fit lending on-chain
+· Evidence: v1 launch Sept 2018 dengan ETH, DAI, USDC, REP, ZRX, BAT — first algorithmic money market live (HIGH) [Phase 3 EV-002, EV-003]
+· Decision: Deploy v1 ke Ethereum mainnet dengan model pooled lending dan single interest rate per market
+· Immediate Result: Protokol live, TVL awal ~$0, validasi konsep
+· Long-term Impact: Menetapkan Compound sebagai pioneer DeFi lending; arsitektur v1 menjadi fondasi v2
+· Supporting Dataset: Phase 3 EV-002, EV-003; Phase 4 Technical Upgrade History: v1 Launch
+
+Keputusan: Series A $25M dipimpin a16z dan Bain Capital Ventures (2019-05-08)
+· Trigger: Kebutuhan dana untuk scaling tim, pengembangan v2, dan ekspansi ekosistem pasca-v1 traction
+· Evidence: TechCrunch melaporkan Series A $25M lead a16z + Bain Capital Ventures + Polychain (HIGH) [Phase 3 EV-004; Phase 5 Funding History]
+· Decision: Menerima venture funding dari investor crypto terkemuka alih-alih token sale atau community funding
+· Immediate Result: Runway signifikan untuk hire dan R&D v2
+· Long-term Impact: Validasi institusional DeFi lending; investor menjadi stakeholder jangka panjang (beberapa ikut Series B)
+· Supporting Dataset: Phase 3 EV-004; Phase 5 Funding History; Phase 2 Entity: a16z, Bain Capital Ventures, Polychain Capital
+
+Keputusan: Launch Compound v2 dengan cToken model dan Comptroller (2019-05)
+· Trigger: Keterbatasan v1 (single rate model, tidak ada interest-bearing token representasi posisi, governance minimal)
+· Evidence: v2 memperkenalkan cToken (interest-bearing), Jump Rate Model, Comptroller risk management, Governor Alpha (HIGH) [Phase 3 EV-005; Phase 4 Technical Upgrade History: v2 Launch]
+· Decision: Rewrite arsitektur penuh — cToken sebagai ERC20 yield-bearing, per-asset market隔离 via Comptroller
+· Immediate Result: v2 menjadi standar DeFi lending, TVL tumbuh eksponensial 2020 (DeFi Summer)
+· Long-term Impact: Arsitektur cToken difork banyak protokol; Comptroller pattern menjadi referensi risk management on-chain
+· Supporting Dataset: Phase 3 EV-005; Phase 4 Technical Upgrade History, Core Components; Phase 8 Market Timeline
+
+Keputusan: Series B $100M dipimpin Paradigm (2020-05-27)
+· Trigger: Pertumbuhan TVL pesat, kebutuhan kapital untuk multi-chain expansion, tim besar, dan Kompetisi dengan Aave yg raise besar
+· Evidence: CoinDesk melaporkan Series B $100M lead Paradigm + Coinbase Ventures, Dragonfly, a16z, Bain, Polychain (HIGH) [Phase 3 EV-006; Phase 5 Funding History]
+· Decision: Large Series B dari investor strategic (Paradigm research, Coinbase ecosystem, Dragonfly Asia)
+· Immediate Result: War chest besar untuk scaling; Coinbase Ventures investor → align dengan Base deployment kemudian
+· Long-term Impact: Paradigm involvement membawa research-driven approach; Coinbase Ventures link ke Base L2
+· Supporting Dataset: Phase 3 EV-006; Phase 5 Funding History; Phase 2 Entity: Paradigm, Coinbase Ventures, Dragonfly Capital
+
+Keputusan: COMP Token Launch & Governor Bravo Activation (2020-06-16)
+· Trigger: Kebutuhan legitimate governance mechanism untuk parameter protokol, upgrade, treasury; tren "DeFi governance token" (COMP, YFI, UNI)
+· Evidence: COMP TGE Juni 2020, retroactive distribution ke pengguna, Governor Bravo + 2-day Timelock live (HIGH) [Phase 3 EV-007, EV-008; Phase 6 Token Governance]
+· Decision: Distribusi COMP via retroactive usage (bukan sale), on-chain governance dengan timelock, no admin keys untuk parameter changes
+· Immediate Result: DAO terbentuk, 4.2M COMP terdistribusi, governance live; COMP price discovery di pasar
+· Long-term Impact: Compound DAO jadi model DAO DeFi tertua & terbesar; governance minimization narrative muncul kemudian (Comet v3)
+· Supporting Dataset: Phase 3 EV-007, EV-008; Phase 6 Token Launch, Governance; Phase 8 Narrative: Governance Minimization
+
+Keputusan: Multi-chain Deployment v2 — Polygon (Mar 2021), Avalanche (Agu 2021), BNB Chain (Sep 2021)
+· Trigger: Ethereum gas fee tinggi 2021 mendorong pengguna ke L2/alt-L1; kompetitor (Aave) sudah multi-chain
+· Evidence: Blog post deployment berurutan ke 3 chain non-Ethereum (HIGH) [Phase 3 EV-010, EV-011, EV-012; Phase 7 Major Integrations]
+· Decision: Deploy v2 contracts (Comptroller + cTokens) ke chain baru dengan parameter governance yang sama
+· Immediate Result: Akses pengguna baru, TVL multi-chain tumbuh, diversifikasi chain risk
+· Long-term Impact: Membiasakan komunitas multi-chain; menyiapkan groundwork untuk Comet v3 deployment ke L2
+· Supporting Dataset: Phase 3 EV-010, EV-011, EV-012; Phase 7 Major Integrations; Phase 8 Adoption Metrics per chain
+
+Keputusan: Gauntlet dipilih sebagai Risk Manager resmi via Proposal 62 (2021-10)
+· Trigger: Kebutuhan parameter risiko (collateral factor, caps, liquidation incentive) yang data-driven dan terus diupdate
+· Evidence: Proposal 62 mengangkat Gauntlet untuk rekomendasi parameter risiko berkala via governance (HIGH) [Phase 3 EV-013; Phase 7 Major Integrations: Gauntlet]
+· Decision: Outsource risk parameter management ke firma khusus (Gauntlet) alih-alih internal team atau ad-hoc community votes
+· Immediate Result: Framework risiko terstruktur, update berkala via proposal on-chain
+· Long-term Impact: Model "risk manager as a service" jadi standar DeFi (Aave juga pakai Gauntlet/Chaos Labs); mengurangi governance fatigue
+· Supporting Dataset: Phase 3 EV-013, EV-030; Phase 7 External Dependencies: Gauntlet; Phase 8 Narrative
+
+Keputusan: Formal Verification Comet v3 oleh Certora (2022-05)
+· Trigger: Kompleksitas Comet v3 (single-asset, immutable core) memerlukan jaminan matematis sebelum mainnet
+· Evidence: Certora melakukan formal verification properti solvency, interest accrual, liquidation untuk Comet (HIGH) [Phase 3 EV-014; Phase 4 Audit History: Certora]
+· Decision: Investasi formal verification (bukan hanya audit tradisional) untuk core contract v3
+· Immediate Result: Mathematical proofs untuk critical properties; confidence tinggi untuk launch
+· Long-term Impact: Differentiator keamanan vs kompetitor; narrative "High Assurance DeFi" / Formal Verification
+· Supporting Dataset: Phase 3 EV-014; Phase 4 Audit History, Security Model; Phase 8 Narrative: Formal Verification
+
+Keputusan: Launch Compound v3 (Comet) di Ethereum Mainnet (2023-08)
+· Trigger: Kebutuhan arsitektur baru: gas efficient, isolated risk (single-asset), immutable core, governance minimized — response ke kompleksitas & risk v2
+· Evidence: Comet v3 launch Aug 2023 dengan base asset USDC, linear kink rate model, absorb bad debt, no admin keys (HIGH) [Phase 3 EV-015; Phase 4 Technical Upgrade History: Comet Launch]
+· Decision: Clean-slate rewrite (bukan upgrade v2) dengan filosofi berbeda: simplicity, safety, capital efficiency > flexibility
+· Immediate Result: Comet live di Ethereum; v2 tetap live paralel (tidak forced migration)
+· Long-term Impact: Dua arsitektur coexist (v2 multi-asset, v3 single-asset); Comet jadi template untuk deployment L2 selanjutnya
+· Supporting Dataset: Phase 3 EV-015; Phase 4 Technical Upgrade History, Core Components, Known Limitations; Phase 8 Narrative: Governance Minimization
+
+Keputusan: Comet v3 Deployment ke Arbitrum (Okt 2023), Base (Nov 2023), Optimism (Des 2023)
+· Trigger: L2 adoption meningkat, Base (Coinbase) traction besar, kebutuhan TVL growth post-bear market
+· Evidence: Blog post deployment berurutan ke 3 L2 utama (HIGH) [Phase 3 EV-016, EV-017, EV-018; Phase 7 Major Integrations]
+· Decision: Deploy Comet instances terpisah per L2 dengan base asset USDC (Arbitrum: USDC + WETH)
+· Immediate Result: TVL Comet tersebar multi-L2; Base jadi Comet deployment terbesar di L2
+· Long-term Impact: Membentuk "Comet network" cross-L2; Gateway kemudian menghubungkan instances ini
+· Supporting Dataset: Phase 3 EV-016, EV-017, EV-018; Phase 7 Major Integrations; Phase 8 Adoption Metrics per chain
+
+Keputusan: Compound Treasury Launch via Proposal 280 (2023-12)
+· Trigger: DAO treasury mengandung COMP & stablecoin idle; kebutuhan yield & diversifikasi sustainable
+· Evidence: Proposal 280 mengaktifkan Treasury management dengan strategi yield & diversifikasi (HIGH) [Phase 3 EV-019; Phase 5 Treasury, Revenue Model]
+· Decision: Membangun treasury management system on-chain dengan governance-approved strategies
+· Immediate Result: Treasury aktif generate yield, diversifikasi holdings
+· Long-term Impact: Mengurangi tekanan jual COMP emissions; model sustainable DAO treasury
+· Supporting Dataset: Phase 3 EV-019; Phase 5 Treasury, Revenue Model; Phase 8 Narrative: Treasury Management
+
+Keputusan: Compound Gateway Launch (2024-02)
+· Trigger: Fragmentasi likuiditas & posisi di multiple Comet instances (Ethereum + 4 L2) + Polygon v2; kebutuhan unified UX cross-chain
+· Evidence: Gateway launch Feb 2024 dengan custom messaging layer untuk cross-chain supply/borrow (HIGH) [Phase 3 EV-020; Phase 4 Core Components: Gateway; Phase 7 Major Integrations: Gateway]
+· Decision: Build native cross-chain protocol (bukan pakai LayerZero/Wormhole) untuk tight integration dengan Comet architecture
+· Immediate Result: Infrastructure cross-chain live; early adoption phase
+· Long-term Impact: Potensi "unified lending layer" across chains; differentiator vs Aave (yang pakai LayerZero untuk cross-chain)
+· Supporting Dataset: Phase 3 EV-020; Phase 4 Core Components; Phase 7 Major Integrations; Phase 8 Narrative: Cross-chain Interoperability
+
+Evolution Pattern
+
+Dari perusahaan sentralisasi ke DAO progresif: 2017-2019 Compound Labs membangun v1/v2 secara sentralisasi (EV-001, EV-002, EV-005); 2020 COMP launch memulai transisi ke DAO (EV-007, EV-008); 2021-2024 DAO mengelola parameter, treasury, deployment via proposal (EV-013, EV-019, EV-020). Pola: progressive decentralization dengan Labs tetap sebagai core contributor.
+
+Dari pooled multi-asset (v1/v2) ke isolated single-asset (Comet v3): v1/v2 menggunakan Comptroller shared risk model — satu market gagal berdampak sistemik; Comet v3 memilih isolated markets per base asset — risk tidak menyebar. Trade-off: capital efficiency (v2) vs safety/isolation (v3). Evolution didorong oleh pengalaman bear market 2022 (bad debt, cascading liquidation) dan keinginan governance minimization.
+
+Dari Ethereum-only ke multi-chain strategis: 2018-2020 hanya Ethereum; 2021 ekspansi ke Polygon, Avalanche, BNB Chain (v2); 2023-2024 Comet ke Arbitrum, Base, Optimism (L2 focus); 2024 Gateway menghubungkan semuanya. Evolution mengikuti likuiditas & user migration: L2 growth 2023-2024 (Base traction) jadi driver utama.
+
+Dari external audits ke formal verification: v1/v2 audit OpenZeppelin + Trail of Bits (tradisional); Comet v3 tambah Certora formal verification (mathematical proofs); Gateway audit keduanya. Evolution: security assurance level naik seiring value at risk & complexity.
+
+Dari no treasury management ke active POL management: 2020-2023 treasury passive (COMP + reserve factor accrual); Des 2023 Proposal 280 launch active Treasury management dengan yield strategies. Evolution: DAO maturity & need sustainable funding post-token emissions.
+
+Pola 1: Ethereum Alignment First, L2 Expansion Second
+· Decision Pattern: Semua core protocol launch (v1, v2, v3/Comet, Governor Bravo, Timelock, COMP, Treasury, Gateway) debut di Ethereum mainnet dulu, baru deploy ke L2/alt-chain berurutan
+· Evidence: v1/v2/v3/Comet Ethereum launch (EV-002, EV-005, EV-015); Governor Bravo + Timelock Ethereum (EV-007); Gateway Ethereum + L2 (EV-020); L2 deployments months later (EV-016, EV-017, EV-018)
+· Supporting Dataset: Phase 3 EV-002, EV-005, EV-007, EV-015, EV-016, EV-017, EV-018, EV-020; Phase 4 Architecture; Phase 7 Infrastructure Providers
+
+Pola 2: Immutable Core + Governance-Adjustable Parameters Only
+· Decision Pattern: Comet v3 core logic immutable (no upgradeability, no admin keys); hanya parameter terbatas (base rate, kink, reserve factor) yang bisa diubah via governance setter; major changes = new deployment
+· Evidence: Comet v3 design: "no admin keys", immutable core, limited parameter setters (HIGH) [Phase 4 Core Components: Comet; Known Limitations; Security Model]
+· Supporting Dataset: Phase 4 Core Components, Known Technical Limitations, Security Model; Phase 8 Narrative: Governance Minimization
+
+Pola 3: Formal Verification untuk Core Critical Contracts
+· Decision Pattern: Menggunakan Certora Prover untuk formal verification Comet v3 (solvency, interest accrual, liquidation) sebelum mainnet; bukan hanya audit tradisional
+· Evidence: Certora formal verification May 2022 (EV-014); Comet launch Aug 2023 setelah verification complete (HIGH) [Phase 3 EV-014; Phase 4 Audit History: Certora]
+· Supporting Dataset: Phase 3 EV-014; Phase 4 Audit History, Security Model; Phase 8 Narrative: Formal Verification
+
+Pola 4: Gas Optimization via Solmate + Custom Assembly + Minimal Proxy
+· Decision Pattern: Comet v3 menggunakan Solmate (gas-optimized ERC20), PRB Math (fixed-point), custom assembly, minimal proxy pattern — prioritas gas efficiency untuk L2 & mainnet
+· Evidence: Comet contracts import Solmate, PRB Math, custom math routines (HIGH) [Phase 4 Programming Languages, Development Framework, Current Technical Stack]
+· Supporting Dataset: Phase 4 Programming Languages, Development Framework, Current Technical Stack; Phase 8 Narrative: Gas Efficiency
+
+Pola 5: Chainlink sebagai Oracle Primary, Open Oracle Fallback (v2)
+· Decision Pattern: Chainlink Price Feeds sebagai oracle utama semua deployment; v2 punya Open Oracle fallback; v3 rely sepenuhnya Chainlink
+· Evidence: Chainlink integration documented di v2/v3 docs; Oracle security critical untuk liquidation (HIGH) [Phase 4 Core Components: Price Oracle; Security Model; Phase 7 External Dependencies: Chainlink]
+· Supporting Dataset: Phase 4 Core Components, Security Model; Phase 7 External Dependencies; Phase 3 EV-029
+
+Pola 1: Venture Funding untuk Pengembangan Inti, Protocol Revenue untuk Sustainability
+· Decision Pattern: Series A ($25M, 2019) & Series B ($100M, 2020) mendanai Compound Labs operations & R&D; post-2020 protocol revenue (reserve factor) & Treasury yield menjadi funding source DAO
+· Evidence: Funding history Phase 5; Revenue model reserve factor + Treasury yield (Phase 5); Labs vs DAO financial separation tidak fully transparent (Phase 5 Open Threads)
+· Supporting Dataset: Phase 3 EV-004, EV-006; Phase 5 Funding History, Revenue Model, Treasury; Phase 2 Entity: Compound Labs vs Compound DAO
+
+Pola 2: Tidak Ada Token Sale — Distribusi Retroactive & Emissions
+· Decision Pattern: COMP tidak dijual via private/public sale; didistribusikan retroactive ke pengguna (4.2M) + emissions ke supplier/borrower + allocation tim/investor dengan 4-year vesting
+· Evidence: Phase 6 Token Sale: "Tidak ada token sale"; Distribution: retroactive + emissions + team/investor vesting (Phase 6 Token Distribution)
+· Supporting Dataset: Phase 3 EV-007; Phase 6 Token Sale, Distribution; Phase 8 Market Timeline
+
+Pola 3: Treasury Diversification & Yield Generation Post-Proposal 280
+· Decision Pattern: Sebelum Des 2023 treasury passive; setelah Proposal 280 aktif managed POL dengan yield strategies & diversifikasi asset
+· Evidence: Proposal 280 launch Treasury (EV-019); Revenue streams: reserve factor + treasury yield (Phase 5 Revenue Model)
+· Supporting Dataset: Phase 3 EV-019; Phase 5 Treasury, Revenue Model; Phase 8 Narrative: Treasury Management
+
+Pola 4: Reserve Factor sebagai Primary Protocol Revenue
+· Decision Pattern: Reserve factor (5-20% dari borrow interest) adalah revenue utama protokol sejak v1; mengalir ke treasury/DAO; tidak ada fee switching ke token holders (no fee switch)
+· Evidence: Reserve factor documented v2/v3 docs; no fee switch mechanism (Phase 5 Revenue Model; Phase 6 Token Utility)
+· Supporting Dataset: Phase 4 Core Components: Interest Rate Model; Phase 5 Revenue Model; Phase 6 Token Utility
+
+Pola 1: Deploy ke Chain dengan Massa Pengguna & Likuiditas Tinggi
+· Decision Pattern: Ekspansi chain mengikuti user base & liquidity: Polygon (2021, low fees), Avalanche (2021, DeFi growth), BNB Chain (2021, user base); lalu L2: Arbitrum (2023, largest L2), Base (2023, Coinbase ecosystem), Optimism (2023, Superchain)
+· Evidence: Deployment timeline EV-010, EV-011, EV-012, EV-016, EV-017, EV-018; TVL per chain Phase 8 Adoption Metrics
+· Supporting Dataset: Phase 3 EV-010, EV-011, EV-012, EV-016, EV-017, EV-018; Phase 7 Major Integrations; Phase 8 Adoption Metrics
+
+Pola 2: Build Native Cross-chain (Gateway) Alih-alih Integrasi Bridge Existing
+· Decision Pattern: Membangun Compound Gateway (custom messaging) untuk cross-chain lending positions, bukan mengintegrasikan LayerZero/Wormhole/Axelar
+· Evidence: Gateway launch EV-020; custom messaging layer; tight integration dengan Comet architecture (Phase 4 Core Components: Gateway; Phase 7 Major Integrations: Gateway)
+· Supporting Dataset: Phase 3 EV-020; Phase 4 Core Components; Phase 7 Major Integrations; Phase 8 Narrative: Cross-chain Interoperability
+
+Pola 3: Partnership dengan Risk Manager Specialist (Gauntlet) untuk Parameter Management
+· Decision Pattern: Outsource risk parameter updates ke Gauntlet via governance proposals berkala; bukan internal team atau ad-hoc community
+· Evidence: Proposal 62 (EV-013) appoint Gauntlet; continuous updates EV-030; Gauntlet juga serve Aave, Maker (Phase 7 External Dependencies: Gauntlet)
+· Supporting Dataset: Phase 3 EV-013, EV-030; Phase 7 External Dependencies, Major Integrations; Phase 8 Narrative
+
+Pola 4: Auditor Top-Tier Berulang (OpenZeppelin + Trail of Bits) untuk Setiap Major Release
+· Decision Pattern: Setiap major release (v1, v2, Governor Bravo, Comet v3, Gateway) diaudit oleh OpenZeppelin DAN Trail of Bits — dual audit pattern
+· Evidence: Audit history: OpenZeppelin v1, v2, Governor, Comet, Gateway; Trail of Bits v2, Governor, Comet, Gateway (Phase 4 Audit History)
+· Supporting Dataset: Phase 4 Audit History; Phase 7 Major Integrations: OpenZeppelin, Trail of Bits
+
+Pola 5: Integrasi Erat dengan Coinbase/Base Ecosystem
+· Decision Pattern: Coinbase Ventures investor Series B (EV-006); Coinbase listing COMP (EV-024); Comet deploy Base (EV-017); Base jadi Comet L2 terbesar TVL
+· Evidence: Coinbase Ventures Series B (Phase 3 EV-006); Coinbase listing (EV-024); Comet Base deployment (EV-017); TVL Base ~$200M (Phase 8 Adoption Metrics)
+· Supporting Dataset: Phase 3 EV-006, EV-017, EV-024; Phase 2 Entity: Coinbase Ventures, Coinbase; Phase 7 Major Integrations; Phase 8 Adoption Metrics, Narrative: Base Ecosystem
+
+Pola 1: On-Chain Governance dengan Timelock untuk Semua Protocol Changes
+· Decision Pattern: Semua parameter changes, upgrades, treasury actions melalui Governor Bravo + 2-day Timelock; no emergency multisig untuk core logic (v3), pause guardian only untuk emergency pause
+· Evidence: Governor Bravo + Timelock live since EV-007; Comet v3 no admin keys (Phase 4 Security Model; Phase 6 Token Governance)
+· Supporting Dataset: Phase 3 EV-007, EV-008; Phase 4 Core Components: Governor Bravo, Timelock, Comet; Phase 6 Token Governance
+
+Pola 2: Off-Chain Signaling (Snapshot) Sebelum On-Chain Proposal
+· Decision Pattern: Gunakan Snapshot untuk temperature check & signaling (gasless) sebelum formal proposal on-chain; mengurangi governance fatigue & failed proposals
+· Evidence: Snapshot adoption EV-027; Compound DAO menggunakan Snapshot untuk signaling (Phase 3 EV-027; Phase 7 Major Integrations: Snapshot)
+· Supporting Dataset: Phase 3 EV-027; Phase 7 Major Integrations; Phase 2 Entity: Snapshot
+
+Pola 3: Delegasi COMP ke Representative (Delegates) untuk Partisipasi Efisien
+· Decision Pattern: COMP holders mendelegasikan voting power ke delegates (Gauntlet, OpenZeppelin, individuals); delegates melakukan voting aktif; ~15-25% COMP supply typically voting
+· Evidence: Tally governance UI shows delegate voting; participation rate 15-25% (Phase 8 Adoption Metrics); Delegation mechanism in Governor Bravo (Phase 6 Token Governance)
+· Supporting Dataset: Phase 6 Token Governance; Phase 7 Major Integrations: Tally; Phase 8 Adoption Metrics
+
+Pola 4: Proposal Formal oleh Core Contributors (Labs, Gauntlet) + Community Review
+· Decision Pattern: Major proposals (parameter updates, deployments, treasury) diajukan oleh Compound Labs atau Gauntlet; community review di forum → Snapshot → on-chain vote
+· Evidence: Proposal 62 (Gauntlet), Proposal 280 (Labs), Gateway proposal (Labs) — semua dari core contributors (Phase 3 EV-013, EV-019, EV-020; Phase 7 Major Integrations)
+· Supporting Dataset: Phase 3 EV-013, EV-019, EV-020; Phase 7 Major Integrations; Phase 2 Entity: Compound Labs, Gauntlet
+
+Pola 1: Formal Verification & Multi-Audit sebagai Respons Keamanan Proaktif
+· Decision Pattern: Investasi formal verification (Certora) + dual audit (OpenZeppelin + Trail of Bits) untuk setiap major release; bug bounty $150K Immunefi ongoing
+· Evidence: Certora Comet v3 (EV-014); Audit history 10+ audits; Immunefi bounty EV-009 (Phase 3; Phase 4 Audit History, Security Model; Phase 7 External Dependencies)
+· Trigger: High TVL ($2B+), immutable core (Comet), no upgrade path → butuh highest assurance
+· Response: Formal verification + multiple top-tier audits + continuous bug bounty
+· Result: Zero major exploits pada core contracts v2/v3/Gateway; minor issues caught pre-launch
+· Supporting Dataset: Phase 3 EV-009, EV-014; Phase 4 Audit History, Security Model; Phase 7 External Dependencies: Certora, OpenZeppelin, Trail of Bits, Immunefi
+
+Pola 2: Gauntlet Parameter Updates Responsif terhadap Kondisi Pasar
+· Decision Pattern: Gauntlet mengusulkan parameter changes (caps, collateral factors, liquidation incentives) via governance saat volatilitas tinggi atau market regime shift
+· Evidence: Continuous proposals EV-030; Gauntlet recommendations di forum (Phase 3 EV-030; Phase 7 External Dependencies: Gauntlet)
+· Trigger: Market volatility, asset depeg risk (USDC depeg Mar 2023), new asset listings, utilization spikes
+· Response: Rapid governance proposals untuk adjust supply/borrow caps, collateral factors
+· Result: Protocol solvency maintained through multiple market cycles (2022 bear, 2023 USDC depeg)
+· Supporting Dataset: Phase 3 EV-030; Phase 7 External Dependencies: Gauntlet; Phase 8 Market Timeline
+
+Pola 3: Tidak Ada Emergency Governance Override untuk Core Logic (Comet v3)
+· Decision Pattern: Comet v3 immutable — no admin keys, no emergency upgrade; bad debt handled via absorb mechanism (socialization); pause guardian hanya untuk pause/unpause
+· Evidence: Comet v3 design: no admin keys, absorb for bad debt, pause guardian only (Phase 4 Core Components: Comet; Security Model; Known Limitations)
+· Trigger: Governance attack risk, key compromise risk, desire for credible neutrality
+· Response: Remove admin keys entirely; rely on formal verification + parameter setters only
+* Result: Governance minimization achieved; but parameter changes require new deployment
+* Supporting Dataset: Phase 4 Core Components, Security Model, Known Limitations; Phase 8 Narrative: Governance Minimization
+
+Pola 4: Multi-chain Deployment sebagai Risk Diversification
+* Decision Pattern: Deploy ke multiple chains (Ethereum + 6 chains) untuk diversifikasi chain risk (L2 sequencer downtime, chain halt, bridge risk)
+* Evidence: 7 chain deployments (Phase 3 EV-010, EV-011, EV-012, EV-016, EV-017, EV-018); TVL tersebar (Phase 8 Adoption Metrics)
+* Trigger: Single-chain dependency risk (Ethereum gas spikes, congestion); user migration to L2
+* Response: Parallel deployments v2/v3 across chains; Gateway untuk interoperability
+* Result: TVL tersebar, protocol survives chain-specific issues
+* Supporting Dataset: Phase 3 EV-010, EV-011, EV-012, EV-016, EV-017, EV-018; Phase 8 Adoption Metrics
+
+Pola 1: Major Architecture Rewrite Setiap ~4 Tahun (v1→v2→v3)
+* Decision Pattern: v1 (2018) → v2 (2019, 1 tahun) → v3/Comet (2023, 4 tahun) — clean-slate rewrites bukan incremental upgrades
+* Evidence: Technical upgrade history EV-002, EV-005, EV-015 (Phase 3; Phase 4 Technical Upgrade History)
+* Supporting Dataset: Phase 3 EV-002, EV-005, EV-015; Phase 4 Technical Upgrade History
+
+Pola 2: Ekspansi Multi-chain Pasca-Funding / Major Release
+* Decision

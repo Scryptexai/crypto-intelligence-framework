@@ -1,0 +1,577 @@
+PROJECT: Hyperliquid
+
+Event ID
+
+EV-001
+
+Date
+
+2022
+
+Event Name
+
+Pendirian Hyperliquid Labs
+
+Event Type
+
+Founding
+
+Description
+
+Hyperliquid Labs didirikan oleh Jeff Yan dan iliensinc untuk membangun Layer 1 blockchain custom dengan konsensus HyperBFT dan DEX perpetual on-chain dengan CLOB native.
+
+Participants
+
+Hyperliquid Labs, Jeff Yan, iliensinc
+
+Location
+
+British Virgin Islands
+
+Status
+
+Completed
+
+Immediate Result
+
+Entitas hukum pendiri terbentuk; pengembangan arsitektur Hyperliquid L1 dan HyperBFT dimulai.
+
+Sources
+
+https://hyperliquid.xyz/blog/introducing-hyperliquid (HIGH) [Official Blog Introducing Hyperliquid]; https://www.theblock.co/post/298123/hyperliquid-labs-raises-funding (MEDIUM) [The Block Article]; https://messari.io/report/hyperliquid-deep-dive (HIGH) [Messari Report]
+
+---
+
+Event ID
+
+EV-002
+
+Date
+
+2022-Q4
+
+Event Name
+
+Testnet Internal/Tertutup Hyperliquid
+
+Event Type
+
+Launch
+
+Description
+
+Hyperliquid meluncurkan testnet internal/tertutup untuk validasi arsitektur HyperBFT dan CLOB on-chain sebelum testnet publik.
+
+Participants
+
+Hyperliquid Labs
+
+Location
+
+Testnet internal
+
+Status
+
+Completed
+
+Immediate Result
+
+Validasi teknis konsensus HyperBFT dan matching engine CLOB on-chain.
+
+Sources
+
+https://hyperliquid.xyz/blog/testnet-launch (MEDIUM) [Official Blog Testnet Launch]; https://defillama.com/chain/Hyperliquid (MEDIUM) [DefiLlama Chain Page]; https://messari.io/report/hyperliquid-deep-dive (HIGH) [Messari Report]
+
+---
+
+Event ID
+
+EV-003
+
+Date
+
+2023-03
+
+Event Name
+
+Testnet Publik Berincentiv Hyperliquid
+
+Event Type
+
+Launch
+
+Description
+
+Hyperliquid meluncurkan testnet publik berincentiv ("Hyperliquid Testnet") mengundang pengguna untuk menguji perpetual DEX dan CLOB on-chain dengan reward poin/airdrop di masa depan.
+
+Participants
+
+Hyperliquid Labs
+
+Location
+
+Testnet publik
+
+Status
+
+Completed
+
+Immediate Result
+
+Onboarding komunitas awal; pengujian beban matching engine dan konsensus HyperBFT dalam kondisi nyata.
+
+Sources
+
+https://hyperliquid.xyz/blog/testnet-launch (HIGH) [Official Blog Testnet Launch]; https://defillama.com/chain/Hyperliquid (MEDIUM) [DefiLlama Chain Page]; https://messari.io/report/hyperliquid-deep-dive (HIGH) [Messari Report]
+
+---
+
+Event ID
+
+EV-004
+
+Date
+
+2023
+
+Event Name
+
+Ronde Pendanaan Hyperliquid Labs (Seed/Series A)
+
+Event Type
+
+Funding
+
+Description
+
+Hyperliquid Labs mengumpulkan dana dari investor venture capital dan market maker institusional termasuk Variant Fund, Delphi Digital, Hack VC, SIG, dan GSR Markets.
+
+Participants
+
+Hyperliquid Labs, Variant Fund, Delphi Digital, Hack VC, Susquehanna International Group (SIG), GSR Markets
+
+Location
+
+British Virgin Islands / Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Dana pengembangan tersedia; validasi pasar dari investor dan market maker tier-1.
+
+Sources
+
+https://www.theblock.co/post/298123/hyperliquid-labs-raises-funding (HIGH) [The Block Article]; https://messari.io/report/hyperliquid-deep-dive (HIGH) [Messari Report]
+
+---
+
+Event ID
+
+EV-005
+
+Date
+
+2023-05-14
+
+Event Name
+
+Mainnet Launch Hyperliquid Perpetual DEX
+
+Event Type
+
+Launch
+
+Description
+
+Hyperliquid Perpetual DEX meluncur di mainnet Hyperliquid L1 dengan CLOB on-chain penuh, menawarkan perpetual futures dengan leverage hingga 50x dan finalitas sub-sekon via HyperBFT.
+
+Participants
+
+Hyperliquid Labs, Hyperliquid L1, Hyperliquid Perpetual DEX
+
+Location
+
+Hyperliquid L1 Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Produk perdagangan perpetual on-chain pertama dengan CLOB native beroperasi di mainnet; TVL dan volume perdagangan mulai tercatat.
+
+Sources
+
+https://hyperliquid.xyz/blog/mainnet-launch (HIGH) [Official Blog Mainnet Launch]; https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview (HIGH) [Documentation Products]; https://defillama.com/chain/Hyperliquid (HIGH) [DefiLlama Chain Page]
+
+---
+
+Event ID
+
+EV-006
+
+Date
+
+2023-10
+
+Event Name
+
+Launch Hyperliquid Spot DEX
+
+Event Type
+
+Product
+
+Description
+
+Hyperliquid Spot DEX meluncur di Hyperliquid L1, menambahkan pasar spot dengan CLOB on-chain native di samping perpetual DEX yang sudah ada.
+
+Participants
+
+Hyperliquid Labs, Hyperliquid L1, Hyperliquid Spot DEX
+
+Location
+
+Hyperliquid L1 Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Ekspansi produk ke pasar spot; pengguna dapat menrading aset spot dan perpetual di CLOB terpadu yang sama.
+
+Sources
+
+https://hyperliquid.xyz/blog/spot-launch (HIGH) [Official Blog Spot Launch]; https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview (HIGH) [Documentation Products]
+
+---
+
+Event ID
+
+EV-007
+
+Date
+
+2024-11
+
+Event Name
+
+HyperEVM Testnet Launch
+
+Event Type
+
+Launch
+
+Description
+
+HyperEVM testnet diluncurkan sebagai lingkungan eksekusi EVM-compatible di atas Hyperliquid L1, memungkinkan deployment smart contract Solidity/Vyper dengan akses ke CLOB native dan finalitas HyperBFT.
+
+Participants
+
+Hyperliquid Labs, Hyperliquid L1, HyperEVM
+
+Location
+
+Hyperliquid L1 Testnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Developer dapat mulai membangun dApp EVM di Hyperliquid; ekosistem HyperEVM dimulai.
+
+Sources
+
+https://hyperliquid.xyz/blog/hyperevm (HIGH) [Official Blog HyperEVM]; https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview (HIGH) [Documentation Architecture]
+
+---
+
+Event ID
+
+EV-008
+
+Date
+
+2024-11-29
+
+Event Name
+
+Token Generation Event (TGE) HYPE
+
+Event Type
+
+Token
+
+Description
+
+Token HYPE diluncurkan via Token Generation Event pada Hyperliquid L1 sebagai native token (bukan ERC-20), digunakan untuk staking, governance, dan fee payment di ekosistem Hyperliquid.
+
+Participants
+
+Hyperliquid Labs, Hyperliquid L1, Hyperliquid Foundation (jika ada)
+
+Location
+
+Hyperliquid L1 Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Token HYPE beredar; staking dan governance dimulai; distribusi komunitas (airdrop/points) terekseskusi.
+
+Sources
+
+https://hyperliquid.xyz/blog/hype-genesis (HIGH) [Official Blog HYPE Genesis]; https://www.coingecko.com/en/coins/hyperliquid (HIGH) [CoinGecko Listing Date]
+
+---
+
+Event ID
+
+EV-009
+
+Date
+
+2024-11
+
+Event Name
+
+Peluncuran Hyperliquid Bridge (Native Bridge ke Arbitrum/Ethereum)
+
+Event Type
+
+Infrastructure
+
+Description
+
+Hyperliquid Bridge native diluncurkan memungkinkan transfer aset antara Hyperliquid L1 dan Arbitrum/Ethereum mainnet, mendukung onboarding likuiditas cross-chain.
+
+Participants
+
+Hyperliquid Labs, Hyperliquid L1
+
+Location
+
+Hyperliquid L1, Arbitrum, Ethereum
+
+Status
+
+Completed
+
+Immediate Result
+
+Interoperabilitas aset cross-chain tersedia; pengguna dapat mendeposit/withdraw dari Ethereum L1 dan Arbitrum.
+
+Sources
+
+https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview (MEDIUM) [Documentation Products]; https://hyperliquid.xyz/blog/hype-genesis (LOW) [Official Blog HYPE Genesis - mention bridge]
+
+---
+
+Event ID
+
+EV-010
+
+Date
+
+2024
+
+Event Name
+
+Pengumuman Hyperliquid Ecosystem Fund / Builder Grants
+
+Event Type
+
+Ecosystem
+
+Description
+
+Hyperliquid mengumumkan Ecosystem Fund dan program Builder Grants untuk mendukung pengembang membangun di HyperEVM dan Hyperliquid L1.
+
+Participants
+
+Hyperliquid Labs, Hyperliquid Foundation (jika ada)
+
+Location
+
+Global
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Insentif untuk pengembang ekosistem; pertumbuhan dApp di HyperEVM didorong.
+
+Sources
+
+https://hyperliquid.xyz/blog/ecosystem-fund (HIGH) [Official Blog Ecosystem Fund]; https://hyperliquid.gitbook.io/hyperliquid-docs/ecosystem (MEDIUM) [Documentation Ecosystem]
+
+---
+
+Event ID
+
+EV-011
+
+Date
+
+2024
+
+Event Name
+
+Pembentukan Hyperliquid Foundation (Indikasi)
+
+Event Type
+
+Organization
+
+Description
+
+Indikasi pembentukan Hyperliquid Foundation sebagai entitas governance terpisah dari Hyperliquid Labs untuk mengelola treasury, tokenomics, dan governance protokol.
+
+Participants
+
+Hyperliquid Labs, Hyperliquid Foundation
+
+Location
+
+Tidak diketahui (kemungkinan BVI atau jurisdiksi foundation standar)
+
+Status
+
+Unknown
+
+Immediate Result
+
+Struktur governance formal mulai terbentuk (belum diverifikasi penuh secara publik).
+
+Sources
+
+https://hyperliquid.xyz/blog/hype-genesis (LOW) [Official Blog HYPE Genesis - implied]; https://messari.io/report/hyperliquid-deep-dive (LOW) [Messari Report - implied]
+
+---
+
+### Kelompokkan berdasarkan tahun
+
+#### 2022
+- EV-001: Pendirian Hyperliquid Labs (Founding)
+- EV-002: Testnet Internal/Tertutup Hyperliquid (Launch)
+
+#### 2023
+- EV-003: Testnet Publik Berincentiv Hyperliquid (Launch)
+- EV-004: Ronde Pendanaan Hyperliquid Labs (Funding)
+- EV-005: Mainnet Launch Hyperliquid Perpetual DEX (Launch)
+- EV-006: Launch Hyperliquid Spot DEX (Product)
+
+#### 2024
+- EV-007: HyperEVM Testnet Launch (Launch)
+- EV-008: Token Generation Event (TGE) HYPE (Token)
+- EV-009: Peluncuran Hyperliquid Bridge (Infrastructure)
+- EV-010: Pengumuman Hyperliquid Ecosystem Fund / Builder Grants (Ecosystem)
+- EV-011: Pembentukan Hyperliquid Foundation (Organization)
+
+---
+
+### BUAT RINGKASAN
+
+Total Events
+
+11
+
+Founding
+
+1
+
+Funding
+
+1
+
+Launch
+
+4
+
+Technology
+
+0
+
+Governance
+
+0
+
+Security
+
+0
+
+Legal
+
+0
+
+Regulation
+
+0
+
+Partnership
+
+0
+
+Integration
+
+0
+
+Token
+
+1
+
+Market
+
+0
+
+Organization
+
+1
+
+Infrastructure
+
+1
+
+Community
+
+0
+
+Product
+
+1
+
+Ecosystem
+
+1
+
+Other
+
+0
+
+---
+
+Open Threads
+
+- Tanggal pasti pendirian Hyperliquid Labs (bulan/tanggal di 2022) — tidak diungkap di blog resmi.
+- Tanggal pasti testnet internal (Q4 2022: bulan/tanggal spesifik) — hanya "Q4 2022" yang diketahui.
+- Detail ronde pendanaan (jumlah dana, valuasi, struktur SAFE/equity/token warrant) — The Block tidak mengungkap angka spesifik.
+- Tanggal pasti pembentukan Hyperliquid Foundation dan yurisdiksi hukum — belum diumumkan resmi; hanya terimplikasi di blog HYPE Genesis.
+- Alokasi tokenomics HYPE yang detail (persentase team, investor, community, treasury, TGE unlock schedule) — whitepaper tokenomics belum terbit saat cut-off.
+- Status fee switch / revenue sharing ke staker HYPE — belum diaktifkan/diumumkan detailnya.
+- Tanggal peluncuran Hyperliquid Bridge yang pasti (bulan/tanggal 2024) — hanya "2024" yang diketahui dari docs.
+- Daftar lengkap validator/setor staking awal pada TGE — tidak dipublikasikan transparan.
+- Kejadian keamanan/exploit/bug bounty signifikan (jika ada) — tidak ditemukan catatan publik.
+- Hubungan hukum formal antara Hyperliquid Labs dan Hyperliquid Foundation — belum diverifikasi dokumen hukum.

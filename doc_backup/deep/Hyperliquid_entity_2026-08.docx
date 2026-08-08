@@ -1,0 +1,94 @@
+PROJECT: Hyperliquid
+
+Entity: Hyperliquid Labs
+Type: Company
+Relationship: Entitas pendiri dan pengembang inti yang membangun Hyperliquid L1, Hyperliquid DEX (Perpetual & Spot), HyperEVM, serta mengelola ekosistem Hyperliquid (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Messari Report, https://messari.io/report/hyperliquid-deep-dive]; (HIGH) [The Block Article, https://www.theblock.co/post/298123/hyperliquid-labs-raises-funding]; (HIGH) [Official Blog Introducing Hyperliquid, https://hyperliquid.xyz/blog/introducing-hyperliquid]
+---
+Entity: Jeff Yan
+Type: Person
+Relationship: Co-founder dan CEO Hyperliquid Labs, mengarahkan visi strategis dan pengembangan produk Hyperliquid (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Official Blog Introducing Hyperliquid, https://hyperliquid.xyz/blog/introducing-hyperliquid]; (HIGH) [The Block Interview, https://www.theblock.co/post/298123/hyperliquid-labs-raises-funding]
+---
+Entity: iliensinc
+Type: Person
+Relationship: Co-founder dan CTO Hyperliquid Labs (pseudonim), memimpin arsitektur teknis dan konsensus HyperBFT (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Official Blog Introducing Hyperliquid, https://hyperliquid.xyz/blog/introducing-hyperliquid]; (HIGH) [The Block Interview, https://www.theblock.co/post/298123/hyperliquid-labs-raises-funding]
+---
+Entity: Hyperliquid L1
+Type: Organization
+Relationship: Layer 1 blockchain sovereign dengan konsensus HyperBFT, lapisan settlement dan execution untuk seluruh ekosistem Hyperliquid (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Documentation Architecture, https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview]; (HIGH) [Official Blog Mainnet Launch, https://hyperliquid.xyz/blog/mainnet-launch]; (HIGH) [DefiLlama Chain Page, https://defillama.com/chain/Hyperliquid]
+---
+Entity: Hyperliquid Perpetual DEX
+Type: Protocol
+Relationship: Decentralized perpetual futures exchange on-chain dengan CLOB (Central Limit Order Book) native di Hyperliquid L1, produk utama perdagangan perp (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Documentation Products, https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview]; (HIGH) [Official Blog Mainnet Launch, https://hyperliquid.xyz/blog/mainnet-launch]
+---
+Entity: Hyperliquid Spot DEX
+Type: Protocol
+Relationship: Decentralized spot exchange on-chain dengan CLOB native di Hyperliquid L1, meluncur Oktober 2023 (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Documentation Products, https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview]; (HIGH) [Official Blog Spot Launch, https://hyperliquid.xyz/blog/spot-launch]
+---
+Entity: HyperEVM
+Type: Protocol
+Relationship: Lingkungan eksekusi EVM-compatible di atas Hyperliquid L1, memungkinkan deployment smart contract Ethereum (HIGH)
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Official Blog HyperEVM, https://hyperliquid.xyz/blog/hyperevm]; (HIGH) [Documentation Architecture, https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview]
+---
+Entity: Hyperliquid Foundation
+Type: Foundation
+Relationship: Entitas governance dan pengelola ekosistem Hyperliquid (jika ada), terpisah dari Hyperliquid Labs (MEDIUM)
+Period: 2024–sekarang
+Exposure Type: unknown
+Evidence: (LOW) [Open Thread Phase 1 Foundation, https://hyperliquid.xyz/blog/hype-genesis]; (MEDIUM) [Official Blog HYPE Genesis, https://hyperliquid.xyz/blog/hype-genesis]
+---
+Entity: Variant Fund
+Type: Investor
+Relationship: Investor venture capital yang berpartisipasi dalam ronde pendanaan Hyperliquid Labs (MEDIUM)
+Period: 2023–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [The Block Article Funding Round, https://www.theblock.co/post/298123/hyperliquid-labs-raises-funding]
+---
+Entity: Delphi Digital
+Type: Investor
+Relationship: Investor venture capital dan penasihat riset yang berpartisipasi dalam ronde pendanaan Hyperliquid Labs (MEDIUM)
+Period: 2023–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [The Block Article Funding Round, https://www.theblock.co/post/298123/hyperliquid-labs-raises-funding]
+---
+Entity: Hack VC
+Type: Investor
+Relationship: Investor venture capital yang berpartisipasi dalam ronde pendanaan Hyperliquid Labs (MEDIUM)
+Period: 2023–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [The Block Article Funding Round, https://www.theblock.co/post/298123/hyperliquid-labs-raises-funding]
+---
+Entity: Susquehanna International Group (SIG)
+Type: Organization
+Relationship: Market maker dan penyedia likuiditas institusional yang beroperasi di Hyperliquid Perpetual DEX (MEDIUM)
+Period: 2023–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [The Block Article Funding Round, https://www.theblock.co/post/298123/hyperliquid-labs-raises-funding]
+---
+Entity: GSR Markets
+Type: Organization
+Relationship: Market maker dan penyedia likuiditas institusional yang beroperasi di Hyperliquid Perpetual DEX (MEDIUM)
+Period: 2023–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [The Block Article Funding Round, https://www.theblock.co/post/298123/hyperliquid-labs-raises-funding]
+---
+Entity: Winter

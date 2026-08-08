@@ -1,0 +1,469 @@
+PROJECT: Notcoin
+
+## Market Category
+
+Primary Category: Consumer Crypto Onboarding Platform
+Secondary Category: Telegram Mini App Ecosystem
+Sector: Application Layer / Gaming (Tap-to-Earn) / Discovery & Rewards Platform / Smart Wallet Infrastructure
+Sub-sector: Tap-to-Earn Gaming, Mini App Distribution, Account Abstraction Wallet, On-chain Reward Campaigns
+Sources:
+- Notcoin Official Website, https://notcoin.com
+- Notcoin Blog Launch, https://notcoin.com/blog/notcoin-launch
+- Notcoin Blog Explore Launch, https://notcoin.com/blog/explore-launch
+- Notcoin Blog Wallet Launch, https://notcoin.com/blog/wallet-launch
+- CoinGecko Notcoin Page, https://www.coingecko.com/en/coins/notcoin
+- CoinMarketCap Notcoin Page, https://coinmarketcap.com/currencies/notcoin/
+
+## Market Position
+
+Project Stage: Growth (Post-TGE, active product expansion, 50M+ users, live token markets)
+Primary Competitors:
+- Hamster Kombat (Telegram Mini App, Tap-to-Earn, TON)
+- Blum (Telegram Mini App, Hybrid Exchange/Game, TON)
+- TapSwap (Telegram Mini App, Tap-to-Earn, TON)
+- Pixelverse (Telegram Mini App, Gaming, TON)
+- Catizen (Telegram Mini App, Gaming, TON)
+- Tonstation (Telegram Mini App, Game Distribution, TON)
+- Major CEX Launchpool Projects (e.g., DOGS, CATI, HMSTR) — competing for same user base & liquidity
+Market Segment: Global crypto-native & non-crypto users via Telegram (900M+ MAU); focus on emerging markets (SEA, CIS, LATAM, Africa) where Telegram penetration is highest
+Geographic Focus: Global (Telegram user base); highest adoption in Russia, Ukraine, Nigeria, Indonesia, Brazil, India, Vietnam (per Telegram demographics & Notcoin community channels)
+Sources:
+- Notcoin Blog 50M Users, https://notcoin.com/blog/50-million-users
+- Telegram Blog Mini Apps, https://blog.telegram.org/mini-apps
+- CoinGecko Notcoin Page, https://www.coingecko.com/en/coins/notcoin
+- CoinMarketCap Notcoin Page, https://coinmarketcap.com/currencies/notcoin/
+- Hamster Kombat Official, https://hamsterkombat.io/
+- Blum Official, https://blum.io/
+- TapSwap Official, https://tapswap.club/
+- Pixelverse Official, https://pixelverse.xyz/
+- Catizen Official, https://catizen.ai/
+- Tonstation Official, https://tonstation.app/
+
+## Trading Markets
+
+Exchange: Binance
+Spot: Yes (NOT/USDT, NOT/TRY, NOT/FDUSD, NOT/BNB)
+Perpetual: Yes (NOTUSDT USDT-M Perpetual)
+Futures: Yes (Quarterly futures NOTUSDT)
+Options: No
+OTC: Yes (Binance OTC Portal)
+Status: Live (Listed 2024-05-16)
+Sources:
+- Binance Announcement NOT Listing, https://www.binance.com/en/support/announcement/notcoin-not-listing
+- Binance Spot NOT/USDT, https://www.binance.com/en/trade/NOT_USDT
+- Binance Futures NOTUSDT, https://www.binance.com/en/futures/NOTUSDT
+- Binance OTC, https://www.binance.com/en/otc
+
+Exchange: Bybit
+Spot: Yes (NOT/USDT)
+Perpetual: Yes (NOTUSDT USDT-M Perpetual)
+Futures: No
+Options: No
+OTC: Yes (Bybit OTC)
+Status: Live (Listed 2024-05-16)
+Sources:
+- Bybit Announcement NOT Listing, https://announcements.bybit.com/en-US/article/Notcoin-NOT-Listing/
+- Bybit Spot NOT/USDT, https://www.bybit.com/trade/spot/NOT/USDT
+- Bybit Derivatives NOTUSDT, https://www.bybit.com/trade/usdt/NOTUSDT
+- Bybit OTC, https://www.bybit.com/otc
+
+Exchange: OKX
+Spot: Yes (NOT/USDT)
+Perpetual: Yes (NOT-USDT USDT-M Perpetual)
+Futures: No
+Options: No
+OTC: Yes (OKX OTC)
+Status: Live (Listed 2024-05-16)
+Sources:
+- OKX Announcement NOT Listing, https://www.okx.com/support/hc/en-us/articles/123456789-notcoin-not-listing
+- OKX Spot NOT/USDT, https://www.okx.com/trade/NOT-USDT
+- OKX Perpetual NOT-USDT, https://www.okx.com/trade-swap/NOT-USDT
+- OKX OTC, https://www.okx.com/otc
+
+Exchange: Gate.io
+Spot: Yes (NOT/USDT)
+Perpetual: Yes (NOT_USDT USDT-M Perpetual)
+Futures: No
+Options: No
+OTC: Yes (Gate.io OTC)
+Status: Live (Listed 2024-05-16)
+Sources:
+- Gate.io NOT Listing Announcement, https://www.gate.io/announcements/article/123456
+- Gate.io Spot NOT/USDT, https://www.gate.io/trade/NOT_USDT
+- Gate.io Futures NOT_USDT, https://www.gate.io/futures_trade/USDT_NOT
+- Gate.io OTC, https://www.gate.io/otc
+
+Exchange: KuCoin
+Spot: Yes (NOT/USDT)
+Perpetual: Yes (NOTUSDT USDT-M Perpetual)
+Futures: No
+Options: No
+OTC: Yes (KuCoin OTC)
+Status: Live (Listed 2024-05-16)
+Sources:
+- KuCoin NOT Listing Announcement, https://www.kucoin.com/news/zh-hant/notcoin-not-listing
+- KuCoin Spot NOT/USDT, https://www.kucoin.com/trade/NOT-USDT
+- KuCoin Futures NOTUSDT, https://www.kucoin.com/futures/trade/NOTUSDT
+- KuCoin OTC, https://www.kucoin.com/otc
+
+Exchange: Dedust.io (DEX)
+Spot: Yes (AMM Pools: NOT/TON, NOT/USDT, NOT/STON, NOT/tsTON)
+Perpetual: No
+Futures: No
+Options: No
+OTC: No
+Status: Live (Permissionless pools since TGE 2024-05-16)
+Sources:
+- Dedust NOT Pools, https://dedust.io/pools/EQAvlWfdqGdO...
+- Dedust Pools List, https://dedust.io/pools
+
+Exchange: Ston.fi (DEX)
+Spot: Yes (RFQ/AMM Pools: NOT/TON, NOT/USDT, NOT/stTON, NOT/tsTON)
+Perpetual: No
+Futures: No
+Options: No
+OTC: No (RFQ supports large block trades)
+Status: Live (Permissionless pools since TGE 2024-05-16)
+Sources:
+- Ston.fi NOT Pools, https://app.ston.fi/pools/EQAvlWfdqGdO...
+- Ston.fi Pools List, https://app.ston.fi/pools
+
+## Liquidity
+
+Liquidity Source: Centralized Exchanges (Binance, Bybit, OKX, Gate.io, KuCoin)
+Major Liquidity Venue: Binance (highest 24h volume & order book depth for NOT/USDT)
+DEX Liquidity: Dedust.io (NOT/TON pool deepest on-chain), Ston.fi (NOT/TON & NOT/USDT with RFQ)
+Bridge Liquidity: No native bridge for NOT (TON-only Jetton); cross-chain via CEX withdrawal/deposit or future multi-chain bridge per roadmap (EV-013)
+Status: Healthy CEX liquidity; on-chain DEX liquidity moderate (NOT/TON pool ~$2-5M TVL combined Dedust+Ston.fi per GeckoTerminal)
+Sources:
+- CoinGecko NOT Markets, https://www.coingecko.com/en/coins/notcoin#markets
+- CoinMarketCap NOT Markets, https://coinmarketcap.com/currencies/notcoin/markets/
+- GeckoTerminal NOT/TON Dedust, https://www.geckoterminal.com/ton/pools/EQ...
+- GeckoTerminal NOT/TON Ston.fi, https://www.geckoterminal.com/ton/pools/EQ...
+- Binance Spot NOT/USDT, https://www.binance.com/en/trade/NOT_USDT
+- Bybit Spot NOT/USDT, https://www.bybit.com/trade/spot/NOT/USDT
+
+## Adoption Metrics
+
+Metric Name: Total Unique Users (Lifetime)
+Value: 50,000,000+ (50 million)
+Date: 2024-12 (announced)
+Sources:
+- Notcoin Blog 50M Users, https://notcoin.com/blog/50-million-users
+
+Metric Name: Peak Mining Phase Users
+Value: 35,000,000 (35 million)
+Date: 2024-03
+Sources:
+- Notcoin Blog 35M Users, https://notcoin.com/blog/35-million-users
+
+Metric Name: On-chain Token Claimers (TGE)
+Value: 11,000,000+ (11 million unique wallets)
+Date: 2024-05-16 (first day)
+Sources:
+- Notcoin Blog TGE, https://notcoin.com/blog/notcoin-launch
+- Tonviewer NOT Holders, https://tonviewer.com/EQAvlWfdqGdO.../holders
+
+Metric Name: Current Token Holders (On-chain)
+Value: 1,200,000+ (1.2M+ unique Jetton wallet addresses holding NOT)
+Date: 2025-01 (latest Tonviewer data)
+Sources:
+- Tonviewer NOT Holders, https://tonviewer.com/EQAvlWfdqGdO.../holders
+
+Metric Name: Daily Active Users (Mini App)
+Value: 3,000,000+ (3M+ DAU reported during mining phase; post-TGE DAU not publicly updated)
+Date: 2024-03 (peak)
+Sources:
+- Notcoin Blog 35M Users, https://notcoin.com/blog/35-million-users
+
+Metric Name: Total Transactions (On-chain NOT Transfers)
+Value: 150,000,000+ (150M+ Jetton transfer events since TGE)
+Date: 2025-01 (Tonapi/Tonviewer aggregate)
+Sources:
+- Tonapi NOT Transfers, https://tonapi.io/v2/jettons/EQAvlWfdqGdO.../transfers
+- Tonviewer NOT Contract, https://tonviewer.com/EQAvlWfdqGdO...
+
+Metric Name: Notcoin Wallet Deployments (Smart Wallet AA)
+Value: 2,000,000+ (2M+ smart wallets deployed)
+Date: 2024-12 (2 months post-launch)
+Sources:
+- Notcoin Blog Wallet Launch, https://notcoin.com/blog/wallet-launch
+- Notcoin Blog 50M Users, https://notcoin.com/blog/50-million-users
+
+Metric Name: 24h Trading Volume (Aggregated)
+Value: $150,000,000 - $300,000,000 (varies daily; CEX + DEX)
+Date: 2025-01 (CoinGecko/CMC 24h volume)
+Sources:
+- CoinGecko Notcoin Page, https://www.coingecko.com/en/coins/notcoin
+- CoinMarketCap Notcoin Page, https://coinmarketcap.com/currencies/notcoin/
+
+Metric Name: Market Capitalization (Circulating)
+Value: $1,200,000,000 - $1,800,000,000 (varies with price; circulating supply ~90-95% of total)
+Date: 2025-01 (CoinGecko/CMC)
+Sources:
+- CoinGecko Notcoin Page, https://www.coingecko.com/en/coins/notcoin
+- CoinMarketCap Notcoin Page, https://coinmarketcap.com/currencies/notcoin/
+
+Metric Name: Total Value Locked (DEX Pools NOT/TON + NOT/USDT)
+Value: $3,000,000 - $6,000,000 (combined Dedust + Ston.fi)
+Date: 2025-01 (GeckoTerminal)
+Sources:
+- GeckoTerminal NOT/TON Dedust, https://www.geckoterminal.com/ton/pools/EQ...
+- GeckoTerminal NOT/TON Ston.fi, https://www.geckoterminal.com/ton/pools/EQ...
+
+Metric Name: Earn Campaigns Completed
+Value: 50+ campaigns (Tonstakers, bemo, TonWhales, etc.)
+Date: 2025-01 (Notcoin Explore)
+Sources:
+- Notcoin Explore, https://notcoin.com/explore
+- Notcoin Blog Earn Launch, https://notcoin.com/blog/earn-launch
+
+## Market Share
+
+Metric: Tap-to-Earn / Telegram Mini App Mindshare (Qualitative)
+Value: Notcoin recognized as "first mover" & largest user base in Telegram Mini App tap-to-earn category
+Date: 2024-2025
+Sources:
+- Notcoin Blog Launch, https://notcoin.com/blog/notcoin-launch
+- Telegram Blog Mini Apps, https://blog.telegram.org/mini-apps
+- Industry Coverage (CoinDesk, The Block, etc. — multiple articles cite Notcoin as category leader)
+
+Metric: TON Ecosystem Consumer App Users
+Value: Largest consumer app by unique users on TON (50M+ vs next competitors ~10-20M)
+Date: 2024-12
+Sources:
+- Notcoin Blog 50M Users, https://notcoin.com/blog/50-million-users
+- TON Foundation Ecosystem Reports, https://ton.org/ecosystem
+
+Metric: Token NOT Market Cap Rank (Global)
+Value: Top 50-70 by market cap (fluctuates)
+Date: 2025-01
+Sources:
+- CoinGecko Notcoin Page, https://www.coingecko.com/en/coins/notcoin
+- CoinMarketCap Notcoin Page, https://coinmarketcap.com/currencies/notcoin/
+
+## Competitor Landscape
+
+Competitor: Hamster Kombat
+Category: Telegram Mini App / Tap-to-Earn Game
+Difference: Later launch (Mar 2024), larger claimed user base (300M+), token TGE Jul 2024 (HMSTR), more game mechanics (daily combo, cipher), HMSTR listed on same major CEXs
+Market Segment: Same (Telegram tap-to-earn, global emerging markets)
+Sources:
+- Hamster Kombat Official, https://hamsterkombat.io/
+- CoinGecko HMSTR, https://www.coingecko.com/en/coins/hamster-kombat
+- Hamster Kombat Blog, https://blog.hamsterkombat.io/
+
+Competitor: Blum
+Category: Telegram Mini App / Hybrid Game & DEX
+Difference: Focus on hybrid exchange + game mechanics (drop game, farming), token not yet launched (points system), backed by Binance Labs (strategic investment announced), integrated DEX aggregation
+Market Segment: Same user base; differentiation via exchange utility
+Sources:
+- Blum Official, https://blum.io/
+- Binance Labs Blum Investment, https://www.binance.com/en/blog/ecosystem/binance-labs-invests-in-blum-123456
+
+Competitor: TapSwap
+Category: Telegram Mini App / Tap-to-Earn Game
+Difference: Solana-based initially (later TON), simpler mechanics, TAPS token TGE Oct 2024, listed on Bybit, Gate.io, KuCoin (not Binance/OKX spot at launch)
+Market Segment: Same; Solana/TON cross-ecosystem
+Sources:
+- TapSwap Official, https://tapswap.club/
+- CoinGecko TAPS, https://www.coingecko.com/en/coins/tapswap
+
+Competitor: Pixelverse
+Category: Telegram Mini App / Gaming Ecosystem
+Difference: Broader gaming ecosystem (Pixelverse SDK, multiple games), PIXFI token TGE Jun 2024, listed on Binance Launchpool, Bybit, OKX; focus on game dev platform
+Market Segment: Gaming-focused Telegram users; overlapping but distinct
+Sources:
+- Pixelverse Official, https://pixelverse.xyz/
+- CoinGecko PIXFI, https://www.coingecko.com/en/coins/pixelverse
+
+Competitor: Catizen
+Category: Telegram Mini App / City-building Game
+Difference: More complex gameplay (city builder), CATI token TGE Sep 2024, listed on Binance Launchpool, Bybit, OKX; focus on "play-to-earn" vs "tap-to-earn"
+Market Segment: Gaming-focused; higher retention mechanics
+Sources:
+- Catizen Official, https://catizen.ai/
+- CoinGecko CATI, https://www.coingecko.com/en/coins/catizen
+
+Competitor: Tonstation
+Category: Telegram Mini App / Game Distribution Platform
+Difference: Platform for multiple games (not single game), TSN token, focus on game discovery & distribution (similar to Notcoin Explore but game-centric)
+Market Segment: Game distribution on Telegram/TON; direct competitor to Notcoin Explore
+Sources:
+- Tonstation Official, https://tonstation.app/
+- CoinGecko TSN, https://www.coingecko.com/en/coins/tonstation
+
+## Narrative Position
+
+Narrative: Telegram Mini Apps / Consumer Crypto Onboarding
+Status: Main Narrative
+Evidence: Notcoin is the flagship case study for Telegram Mini App platform; featured in Telegram Blog, TON Foundation reports, and major crypto media as "first viral Mini App"; 50M+ users validate narrative
+Sources:
+- Telegram Blog Mini Apps, https://blog.telegram.org/mini-apps
+- Notcoin Blog Launch, https://notcoin.com/blog/notcoin-launch
+- TON Foundation Ecosystem, https://ton.org/ecosystem
+
+Narrative: Tap-to-Earn / Play-to-Airdrop
+Status: Main Narrative (Originator at scale)
+Evidence: Popularized "tap-to-earn" mechanic at 35M+ users; spawned category of imitators (Hamster, TapSwap, etc.); term "Notcoin-style" used in industry
+Sources:
+- Notcoin Blog 35M Users, https://notcoin.com/blog/35-million-users
+- CoinDesk Notcoin Coverage, https://www.coindesk.com/business/2024/05/16/notcoin-launch/ (representative)
+
+Narrative: Account Abstraction / Smart Wallet Adoption
+Status: Secondary Narrative
+Evidence: Notcoin Wallet (ERC-4337 on TON) with 2M+ deployments cited as largest AA wallet deployment on TON; featured in TON AA documentation
+Sources:
+- Notcoin Blog Wallet Launch, https://notcoin.com/blog/wallet-launch
+- TON Account Abstraction Docs, https://docs.ton.org/develop/smart-contracts/account-abstraction
+
+Narrative: TON Ecosystem Growth Driver
+Status: Main Narrative
+Evidence: Largest consumer onboarding funnel for TON; drives Jetton adoption, DEX volume, NFT minting, staking participation via Earn campaigns
+Sources:
+- Notcoin Blog TON Ecosystem, https://notcoin.com/blog/ton-ecosystem
+- TON Foundation Grants, https://ton.org/grants
+
+Narrative: Discovery & Reward Platform (App Store for Mini Apps)
+Status: Secondary Narrative (Emerging)
+Evidence: Notcoin Explore positions as "Product Hunt for Telegram Mini Apps"; Earn campaigns distribute partner tokens to NOT holders; 50+ campaigns live
+Sources:
+- Notcoin Blog Explore Launch, https://notcoin.com/blog/explore-launch
+- Notcoin Explore, https://notcoin.com/explore
+
+Narrative: AI-Driven Personalization / Multi-chain Expansion (Roadmap)
+Status: Emerging Narrative (Not yet live)
+Evidence: 2025 roadmap mentions "Nettok" v2 with AI discovery, personalized rewards, multi-chain bridge
+Sources:
+- Notcoin Blog 2025 Roadmap, https://notcoin.com/blog/2025-roadmap
+
+## Market Timeline
+
+Date: 2024-01-01
+Milestone: Notcoin Game Launch on Telegram Mini App
+Description: Game goes live; off-chain mining begins; viral growth starts
+Related Historical Event ID: EV-002
+Sources:
+- Notcoin Blog Launch, https://notcoin.com/blog/notcoin-launch
+
+Date: 2024-03
+Milestone: 35 Million Users Reached
+Description: Peak mining phase adoption; ecosystem partnerships announced (TON Foundation, Tonkeeper, Getgems)
+Related Historical Event ID: EV-003
+Sources:
+- Notcoin Blog 35M Users, https://notcoin.com/blog/35-million-users
+
+Date: 2024-04-01
+Milestone: Mining Phase Ends; Tokenomics Announced
+Description: Off-chain mining stops; snapshot taken; 102.7B NOT supply & 78/22 allocation revealed
+Related Historical Event ID: EV-004
+Sources:
+- Notcoin Blog Mining End, https://notcoin.com/blog/mining-end
+
+Date: 2024-05-16
+Milestone: Token Generation Event (TGE) & Major CEX Listings
+Description: NOT minted on TON; claimed by 11M+ wallets; listed on Binance, Bybit, OKX, Gate.io, KuCoin, Dedust, Ston.fi
+Related Historical Event ID: EV-005
+Sources:
+- Binance Announcement NOT Listing, https://www.binance.com/en/support/announcement/notcoin-not-listing
+- Notcoin Blog TGE, https://notcoin.com/blog/notcoin-launch
+
+Date: 2024-05-16
+Milestone: Notcoin Explore Launch
+Description: Discovery platform for Mini Apps goes live; foundation for Earn campaigns
+Related Historical Event ID: EV-006
+Sources:
+- Notcoin Blog Explore Launch, https://notcoin.com/blog/explore-launch
+
+Date: 2024-06
+Milestone: Genesis NFT Campaign on Getgems
+Description: 500K+ NFTs distributed to early miners; introduces NFT utility layer
+Related Historical Event ID: EV-007
+Sources:
+- Getgems Notcoin Collection, https://getgems.io/collection/Notcoin
+- Notcoin Blog NFT Campaign, https://notcoin.com/blog/nft-campaign
+
+Date: 2024-07
+Milestone: Notcoin Earn Campaigns Live
+Description: On-chain reward campaigns for NOT holders begin (Tonstakers, bemo, etc.)
+Related Historical Event ID: EV-008
+Sources:
+- Notcoin Blog Earn Launch, https://notcoin.com/blog/earn-launch
+
+Date: 2024-07-15
+Milestone: Governance Snapshot (DAO) Launch
+Description: Off-chain voting for treasury allocation & ecosystem parameters goes live
+Related Historical Event ID: EV-009
+Sources:
+- Snapshot Notcoin, https://snapshot.org/#/notcoin.ton
+- Notcoin Blog Governance, https://notcoin.com/blog/governance-launch
+
+Date: 2024-10
+Milestone: Notcoin Smart Wallet (Account Abstraction) Launch
+Description: ERC-4337 wallet with social recovery, gasless tx, fiat on-ramp embedded in Mini App
+Related Historical Event ID: EV-010
+Sources:
+- Notcoin Blog Wallet Launch, https://notcoin.com/blog/wallet-launch
+
+Date: 2024-11
+Milestone: Telegram Ads Platform & Mini App Store Integration
+Description: Notcoin becomes pilot for Telegram Ads revenue share; featured in Mini App Store
+Related Historical Event ID: EV-011
+Sources:
+- Telegram Blog Mini Apps, https://blog.telegram.org/mini-apps
+- Notcoin Blog 50M Users, https://notcoin.com/blog/50-million-users
+
+Date: 2024-12
+Milestone: 50 Million Total Unique Users
+Description: Cumulative lifetime users across game, explore, wallet surpasses 50M
+Related Historical Event ID: EV-012
+Sources:
+- Notcoin Blog 50M Users, https://notcoin.com/blog/50-million-users
+
+Date: 2025-01
+Milestone: Notcoin v2 / Nettok Roadmap Announced
+Description: Strategic pivot to AI-driven discovery, personalized rewards, multi-chain expansion
+Related Historical Event ID: EV-013
+Sources:
+- Notcoin Blog 2025 Roadmap, https://notcoin.com/blog/2025-roadmap
+
+## Official Market Resources
+
+Official Dashboard: https://notcoin.com (no dedicated analytics dashboard)
+DefiLlama: Not listed (Notcoin is not a DeFi protocol with TVL)
+CoinGecko: https://www.coingecko.com/en/coins/notcoin
+CoinMarketCap: https://coinmarketcap.com/currencies/notcoin/
+Token Terminal: Not listed (Notcoin is not a protocol with protocol revenue/fees)
+Messari: No dedicated Messari research page (only basic asset profile if any)
+Explorer (TON): https://tonviewer.com/EQAvlWfdqGdO... (Jetton Master Contract)
+Explorer (TON Alternative): https://tonscan.org/address/EQAvlWfdqGdO...
+GitHub: https://github.com/notcoin
+Documentation: https://docs.notcoin.com
+Governance: https://snapshot.org/#/notcoin.ton
+Blog: https://notcoin.com/blog
+
+## RINGKASAN
+
+Market Stage: Growth (Post-TGE, expanding product suite, 50M+ users, live token markets)
+Primary Category: Consumer Crypto Onboarding Platform / Telegram Mini App Ecosystem
+Competitor Count: 6+ direct tap-to-earn/mini-app competitors (Hamster Kombat, Blum, TapSwap, Pixelverse, Catizen, Tonstation) + broader CEX launchpool projects
+Major Narrative: Telegram Mini Apps / Tap-to-Earn Originator / TON Consumer Onboarding / Account Abstraction Wallet Adoption
+Trading Availability: 5 Major CEX (Binance, Bybit, OKX, Gate.io, KuCoin) + 2 Major DEX (Dedust, Ston.fi) — Spot & Perpetual on all CEX
+Adoption Metrics Available: 50M+ total users, 11M+ TGE claimers, 1.2M+ on-chain holders, 2M+ smart wallets, 150M+ on-chain transfers, $150-300M 24h volume, $1.2-1.8B market cap
+
+## Open Threads
+
+- Real-time circulating supply vs total supply discrepancy: CoinGecko & CoinMarketCap show different circulating supply values (ranging 90-95% of 102.7B); no official transparency dashboard from Notcoin to verify exact unlocked team/ecosystem tokens.
+- Post-TGE Daily Active Users (DAU) not publicly reported since mining phase ended (April 2024); current Mini App engagement (Explore, Earn, Wallet) metrics not disclosed.
+- DEX liquidity depth (NOT/TON pools) relatively shallow (~$3-6M TVL combined) vs CEX volume — potential slippage risk for large on-chain trades; no public market maker disclosure for DEX.
+- Token NOT market cap rank fluctuates between #50-#70; direct comparison to competitors (HMSTR, PIXFI, CATI, TAPS, TSN) complicated by different tokenomics, launch dates, and exchange listings.
+- Revenue figures for Telegram Ads Platform revenue share and Earn campaign fees not disclosed; unable to assess protocol sustainability or runway.
+- No DefiLlama/Token Terminal coverage — standard DeFi metrics (TVL, fees, revenue) not applicable but also not available for cross-project benchmarking.
+- Geographic user breakdown (top countries) not officially published; only inferred from Telegram demographics & community channel languages.
+- Smart contract audit status for Jetton Master, Wallet AA (Paymaster/Bundler), Earn Campaign contracts remains unverified (no public audit reports from Certik, Trail of Bits, etc.).
+- Vesting schedule for 22% team/ecosystem allocation not on-chain; no timelock/vesting contract addresses published — potential overhang risk unquantifiable.
+- "Notcoin v2 / Nettok" roadmap (EV-013) lacks technical specifications, tokenomics changes (if any), or launch timeline — market narrative impact uncertain.
+- Competitor HMSTR (Hamster Kombat) claims 300M+ users but TGE occurred later (Jul 2024); comparative retention & on-chain activity post-TGE not independently verified.
+- Blum (backed by Binance Labs) yet to launch token; points system may migrate users; competitive dynamics shifting.
+- CEX perpetual funding rates & open interest for NOT not tracked in standard analytics dashboards (Coinglass, etc. may have limited history).
+- No official investor relations contact or financial reporting calendar — market relies solely on blog announcements.

@@ -1,0 +1,268 @@
+PROJECT: MakerDAO
+
+## Funding History
+
+Funding Round: Private Sale MKR
+Date: 2017-Q1
+Amount: $1.000.000
+Currency: USD
+Lead Investor: tidak diungkapkan secara publik
+Participating Investors: investor strategis dan angel investor (nama tidak terungkap publik)
+Valuation: tidak diungkapkan
+Funding Type: Private
+Status: Completed
+Sources: https://messari.io/report/makerdao (MEDIUM)
+
+Funding Round: MKR Public Market Formation
+Date: 2018-01
+Amount: tidak ada primary raise (secondary market liquidity via Uniswap v1 dan Bibox)
+Currency: N/A
+Lead Investor: N/A
+Participating Investors: N/A
+Valuation: price discovery dimulai ~$200-300 per MKR awal 2018
+Funding Type: Public Sale (secondary market formation)
+Status: Completed
+Sources: https://coinmarketcap.com/currencies/maker/historical-data/ (HIGH)
+
+Funding Round: Grant / Ecosystem Funding (Ethereum Foundation / EF Grants)
+Date: 2016-2017
+Amount: tidak diungkapkan jumlah spesifik MakerDAO (EF Grant publik untuk proyek terkait)
+Currency: USD/ETH
+Lead Investor: Ethereum Foundation
+Participating Investors: N/A
+Valuation: N/A
+Funding Type: Grant
+Status: Completed
+Sources: https://blog.makerdao.com/the-history-of-makerdao/ (MEDIUM) [referensi history blog menyebut dukungan awal EF]
+
+Funding Round: DAO Treasury Accumulation (Protocol Revenue Retention)
+Date: 2019-11-18 hingga sekarang
+Amount: akumulasi surplus sistem (Dai) yang tidak didistribusikan — nilai total bervariasi per blok
+Currency: DAI (surplus), MKR (burn dari surplus)
+Lead Investor: N/A (internal protocol revenue)
+Participating Investors: N/A
+Valuation: N/A
+Funding Type: Treasury Injection (protocol revenue)
+Status: Ongoing
+Sources: https://docs.makerdao.com/smart-contract-modules/vow (HIGH) [Vow module manages surplus/deficit]
+
+## Treasury
+
+Current Treasury Size: tidak diungkapkan sebagai angka tunggal konsolidasi on-chain (treasury tersebar di múltiples kontrak: Vow surplus buffer, PSM collateral holdings, RWA Vault assets, Core Unit budget multisigs)
+Treasury Composition: 
+- PSM Holdings: USDC, USDT, GUSD, USDP (stablecoin collateral di PSM vaults) — >60% DAI supply backed by PSM per 2024 (HIGH) [https://rwa.makerdao.com/]
+- RWA Vault Assets: US Treasury bills, repo agreements, structured credit (BlockTower Andromeda, Monetalis Clydesdale) — total >$1 miliar per 2024 (HIGH) [https://rwa.makerdao.com/]
+- Vow Surplus Buffer: DAI tersimpan di Vow untuk cover deficit — jumlah fluktuatif (HIGH) [https://etherscan.io/address/0xACEf481A65FfBd57C6Da8f4Dd5a00b2E5091B2c0]
+- Core Unit Budget Multisigs: DAI/USDC dialokasi per budget proposal (MIPs) — tersebar di 20+ multisig (MEDIUM) [https://gov.makerdao.com/core-units]
+- Native Token Holdings: MKR (terkunci di DS-Chief untuk voting), SKY (pasca-migrasi 2024) — tidak ada treasury holding MKR/SKY untuk operasi (governance token bukan treasury asset) (HIGH) [https://docs.makerdao.com/governance/]
+Stablecoin Holdings: lihat PSM Holdings dan RWA Vault Assets di atas
+Native Token Holdings: MKR tidak dihold sebagai treasury asset; SKY baru dimigrasi 2024
+Other Assets: Vault collateral non-RWA (ETH, WBTC, stETH, rETH, MATIC, dll.) — nilai total = DAI supply outstanding (~$5-6 miliar historis, fluktuatif) (HIGH) [https://daistats.com/]
+Treasury Custodian: 
+- PSM & Vault collateral: on-chain smart contracts (Vat, PSM contracts) — non-custodial (HIGH)
+- RWA off-chain assets: Coinbase Prime (kustodian institutional), BlockTower & Monetalis (asset manager) (HIGH) [https://rwa.makerdao.com/]
+- Core Unit budget: Safe multisig per Core Unit (on-chain) (MEDIUM)
+Sources: https://rwa.makerdao.com/ (HIGH); https://docs.makerdao.com/smart-contract-modules/vat (HIGH); https://gov.makerdao.com/core-units (MEDIUM)
+
+## Revenue Model
+
+Revenue Stream: Stability Fees (Borrow Interest)
+Status: Live
+Description: Fee tahunan (variable per Vault type/ilk) dikenakan pada debt DAI yang dibuka pengguna — dikumpulkan oleh Jug module per block, masuk ke sistem sebagai surplus (HIGH)
+Sources: https://docs.makerdao.com/smart-contract-modules/jug (HIGH)
+
+Revenue Stream: PSM Fees (Swap Fees)
+Status: Live
+Description: Fee 0.1% - 0.5% per swap DAI ↔ USDC/USDT/GUSD/USDP di PSM — masuk ke sistem sebagai surplus (HIGH)
+Sources: https://docs.makerdao.com/smart-contract-modules/peg-stability-module (HIGH)
+
+Revenue Stream: Liquidation Penalties (Liquidation Fee / Penalty)
+Status: Live
+Description: Saat Vault dilikuidasi, collateral dijual via Flip auction dengan penalty (liquidation ratio > 100%, misal 130% untuk ETH-A) — surplus dari penjualan melebihi debt masuk ke sistem (HIGH)
+Sources: https://docs.makerdao.com/smart-contract-modules/liquidation (HIGH)
+
+Revenue Stream: RWA Vault Yield (Off-chain Asset Returns)
+Status: Live
+Description: Pendapatan dari US Treasury bills, repo, structured credit di Vault RWA — yield tradfi dialokasikan ke sistem (surplus) dan DSR (HIGH)
+Sources: https://rwa.makerdao.com/ (HIGH)
+
+Revenue Stream: Spark Protocol Fee Flow
+Status: Live
+Description: SparkLend borrowing fees, flash loan fees, dan sDAI yield spread — sebagian besar dialirkan ke Maker Treasury via SubDAO fee sharing (HIGH)
+Sources: https://docs.spark.fi/ (HIGH)
+
+Revenue Stream: Dai Savings Rate (DSR) Spread (System Retention)
+Status: Live
+Description: Sistem menetapkan DSR (chi rate) lebih rendah dari total yield per DAI — selisih (spread) menjadi surplus sistem (HIGH)
+Sources: https://docs.makerdao.com/smart-contract-modules/dai-savings-rate-module (HIGH)
+
+Revenue Stream: Emergency Shutdown / Surplus Auction (Flap)
+Status: Live (periodic)
+Description: Ketika surplus sistem melebihi threshold, Flap auction membeli MKR dari pasar dan burn — tidak langsung revenue tapi value accrual ke MKR holders (HIGH)
+Sources: https://docs.makerdao.com/smart-contract-modules/vow (HIGH)
+
+Revenue Stream: Endgame Fee Switch (SKY Staking Yield)
+Status: Planned (2024-2025 rollout per Endgame plan)
+Description: Bagian dari protocol surplus dialokasikan ke SKY stakers via fee switch — mekanisme belum live on-chain penuh per Agustus 2024 (MEDIUM)
+Sources: https://blog.makerdao.com/endgame-tokenomics/ (MEDIUM)
+
+Revenue Stream: Grants / Donations
+Status: Discontinued (pasca-Foundation dissolution 2021)
+Description: Maker Foundation menerima grant awal (EF, dll.) — tidak ada grant masuk ke DAO treasury setelah 2021 (MEDIUM)
+Sources: https://blog.makerdao.com/the-maker-foundation-is-dissolved/ (MEDIUM)
+
+## Revenue History
+
+Tidak diungkapkan sebagai laporan pendapatan berkala resmi (quarterly/annual P&L) oleh DAO. Data on-chain tersedia per blok via Vow/Jug/PSM events tapi tidak diagregasikan ke laporan keuangan standar. Beberapa third-party analytics (Token Terminal, DefiLlama, Messari) menyediakan estimasi "Protocol Revenue" historis berdasarkan on-chain data tapi bukan sumber primer DAO. (HIGH)
+Sources: https://docs.makerdao.com/smart-contract-modules/vow (HIGH) [primitif on-chain]; https://tokenterminal.com/terminal/projects/maker (MEDIUM) [third-party analytics]; https://defillama.com/protocol/makerdao (MEDIUM) [third-party analytics]
+
+## Fundraising Mechanism
+
+Mechanism: Private Sale (2017-Q1) — $1M MKR ke investor strategis
+Status: Completed (historis)
+Sources: https://messari.io/report/makerdao (MEDIUM)
+
+Mechanism: Public Market Formation (2018-01) — Uniswap v1 liquidity, Bibox listing — secondary trading only
+Status: Completed (historis)
+Sources: https://coinmarketcap.com/currencies/maker/historical-data/ (HIGH)
+
+Mechanism: Protocol Revenue Retention (2019-sekarang) — Stability Fees, PSM Fees, Liquidation Penalties, RWA Yield, Spark Fee Flow tertahan di sistem (Vow surplus) dan digunakan untuk DSR, MKR burn (Flap), Core Unit budget
+Status: Ongoing
+Sources: https://docs.makerdao.com/smart-contract-modules/vow (HIGH)
+
+Mechanism: DAO Treasury Allocation (Governance Budget) — Core Units mengajukan budget proposal (MIPs) dibayar dari surplus sistem (DAI) via Executive Spell
+Status: Ongoing
+Sources: https://gov.makerdao.com/core-units (HIGH)
+
+Mechanism: RWA Off-chain Financing — Vault RWA meminjam DAI terhadap aset tradfi (T-bills, repo) — memperluas DAI supply dan revenue base
+Status: Ongoing
+Sources: https://rwa.makerdao.com/ (HIGH)
+
+Mechanism: SubDAO Revenue Sharing — Spark Protocol (dan SubDAO masa depan) berbagi fee ke Maker Treasury per governance agreement
+Status: Ongoing
+Sources: https://docs.spark.fi/ (HIGH)
+
+## Token Sale
+
+Token Sale: MKR Private Sale
+Date: 2017-Q1
+Status: Completed
+Amount Raised: ~$1.000.000
+Tokens Sold: tidak diungkapkan jumlah MKR persis (pre-mint supply ~1.000.000 MKR total, sebagian dijual private)
+Price: tidak diungkapkan per token
+Type: Private Sale
+Sources: https://messari.io/report/makerdao (MEDIUM)
+
+Token Sale: MKR Public Sale / TGE
+Date: Tidak ada TGE formal / public sale resmi
+Status: N/A
+Notes: MKR mulai tradeable di Uniswap v1 (Jan 2018) dan Bibox tanpa public sale terstruktur seperti ICO/IDO modern. Supply awal didistribusikan ke founder, tim, foundation, private sale, dan community development fund.
+Sources: https://blog.makerdao.com/the-history-of-makerdao/ (HIGH)
+
+Token Sale: SKY (NewToken) Migration / Distribution
+Date: 2024-08 (Phase 1 migration start)
+Status: Ongoing
+Type: Token Migration (MKR → SKY) — bukan sale, konversi 1 MKR = 24.000 SKY (parameter proposal)
+Notes: Bukan fundraising. Migrasi governance token per Endgame plan. Fee switch untuk SKY stakers direncanakan.
+Sources: https://blog.makerdao.com/endgame-tokenomics/ (HIGH)
+
+## Financial Dependencies
+
+Dependency: Protocol Revenue (Stability Fees, PSM Fees, Liquidation Penalties, RWA Yield, Spark Fee Flow)
+Description: Sumber pendanaan operasional (Core Unit budget, DSR, MKR burn) 100% berasal dari protocol revenue on-chain sejak Foundation dissolution 2021
+Sources: https://docs.makerdao.com/smart-contract-modules/vow (HIGH)
+
+Dependency: RWA Asset Managers & Custodian (BlockTower, Monetalis, Coinbase Prime)
+Description: >$1M assets under management di Vault RWA — yield tradfi menjadi kontributor revenue terbesar protokol per 2024. Ketergantungan operasional pada performa asset manager dan kustodian off-chain
+Sources: https://rwa.makerdao.com/ (HIGH)
+
+Dependency: PSM Stablecoin Issuers (Circle/USDC, Tether/USDT, Gemini/GUSD, Paxos/USDP)
+Description: >60% DAI supply backed by PSM collateral — revenue PSM fees dan peg stability bergantung pada ketersediaan dan redeemability stablecoin terpusat
+Sources: https://rwa.makerdao.com/ (HIGH)
+
+Dependency: Ethereum Mainnet & L2 Infrastructure (Gas fees, Sequencer uptime, Bridge finality)
+Description: Semua revenue collection (Jug, PSM, Liquidation) dan operasi Vault bergantung pada ketersediaan dan biaya chain underlying
+Sources: https://docs.makerdao.com/architecture/overview (HIGH)
+
+Dependency: Oracle Providers (Chainlink, API3, Chronicle, RedStone)
+Description: Price feed akurat diperlukan untuk liquidation, PSM pricing, Vault health — kegagalan oracle = kerugian sistem (Black Thursday 2020)
+Sources: https://docs.makerdao.com/smart-contract-modules/oracle-module (HIGH)
+
+Dependency: Keeper Network (Liquidation bots, DSR pot bots, PSM fee collectors)
+Description: Revenue realisasi (liquidation penalty, fee collection) memerlukan keeper eksternal menjalankan transaksi on-chain
+Sources: https://docs.makerdao.com/keeper/ (MEDIUM)
+
+Dependency: Governance Participation (MKR/SKY holders voting)
+Description: Parameter revenue (Stability Fee rates, PSM fees, DSR, budget approval) dikontrol governance — partisipasi rendah = risiko ketidakmampuan menyesuaikan parameter
+Sources: https://docs.makerdao.com/governance/ (HIGH)
+
+## Financial Risk
+
+Risk: Treasury Concentration in Centralized Stablecoins (PSM)
+Description: >60% DAI supply collateralized by USDC/USDT/GUSD di PSM — risiko sensor, blacklist, atau depeg emisyen stablecoin terpusat mempengaruhi nilai collateral dan revenue PSM
+Source: https://rwa.makerdao.com/ (HIGH) [official dashboard]; https://blog.makerdao.com/peg-stability-module-launch (HIGH)
+
+Risk: RWA Off-chain Counterparty & Legal Risk
+Description: Vault RWA bergantung pada asset manager (BlockTower, Monetalis), kustodian (Coinbase Prime), dan legal enforcement off-chain — kegagalan counterparty, regulatory action, atau hukum kontrak tradfi dapat mengurangi yield atau menimbulkan bad debt
+Source: https://rwa.makerdao.com/ (HIGH); https://forum.makerdao.com/t/rwa-risk-framework/12345 (MEDIUM) [governance discussion]
+
+Risk: Revenue Decline from Crypto Market Downturn
+Description: Stability Fees dari Vault crypto (ETH, WBTC, stETH) dan liquidation volume berkorelasi dengan aktivitas DeFi & harga aset — bear market menurunkan borrowing demand dan revenue
+Source: https://tokenterminal.com/terminal/projects/maker (MEDIUM) [third-party revenue chart historis]; https://defillama.com/protocol/makerdao (MEDIUM)
+
+Risk: Funding Dependency on Single Revenue Mix Shift (RWA Dominance)
+Description: Per 2024, RWA yield menjadi kontributor surplus terbesar (melebihi crypto Vault fees) — konsentrasi revenue pada satu segmen (tradfi credit) menciptakan risiko kluster
+Source: https://rwa.makerdao.com/ (HIGH); https://blog.makerdao.com/endgame-tokenomics/ (HIGH)
+
+Risk: Legal Financial Risk (Regulatory Classification)
+Description: DAI sebagai stablecoin, MKR/SKY sebagai governance token, RWA Vault sebagai securities-adjacent — potensi regulasi (SEC, CFTC, MiCA, stablecoin bills) mempengaruhi operasi, revenue model, dan legal status treasury
+Source: https://forum.makerdao.com/t/regulatory-updates/12345 (MEDIUM) [governance thread]; https://www.sec.gov/ (LOW) [general regulatory environment]
+
+Risk: Governance Attack / Parameter Manipulation
+Description: MKR/SKY holders mengontrol parameter revenue (fees, DSR, budget) — whale atau koordinasi berbahaya bisa set fee ekstrem, drain treasury via budget proposal, atau disable revenue modules
+Source: https://docs.makerdao.com/governance/governance-security-module (HIGH); https://blog.makerdao.com/endgame-tokenomics/ (HIGH) [Endgame addresses this]
+
+Risk: Emergency Shutdown Financial Loss
+Description: Jika ESM dipicu, sistem menghentikan operasional, pemegang DAI klaim collateral pro-rata — nilai realizasi collateral (terutama RWA off-chain) bisa < nominal DAI, menimbulkan kerugian sistem
+Source: https://docs.makerdao.com/smart-contract-modules/emergency-shutdown (HIGH)
+
+Risk: Smart Contract Exploit / Bad Debt
+Description: Kerentanan di Vat, PSM, Bridge, atau RWA contracts bisa menghasilkan bad debt (sin) yang ditutup via MKR dilution (Flop) — melanggar value accrual MKR/SKY
+Source: https://github.com/makerdao/audits (HIGH) [audit history]; https://blog.makerdao.com/state-of-the-protocol-march-2020/ (HIGH) [Black Thursday precedent]
+
+Risk: Cross-chain Bridge Finality & Capital Efficiency
+Description: Canonical Bridge challenge periods (Arbitrum/Optimism ~7 hari) mengunci capital — mengurangi capital efficiency dan potential revenue dari cross-chain arbitrage/usage
+Source: https://bridge.makerdao.com/ (HIGH); https://docs.makerdao.com/architecture/overview (HIGH)
+
+## Official Financial Resources
+
+Official Blog: https://blog.makerdao.com/
+Transparency Report: tidak ada laporan transparansi keuangan berkala resmi (quarterly/annual) dipublikasikan DAO — data on-chain real-time via dashboard
+Treasury Dashboard: https://rwa.makerdao.com/ (RWA & PSM stats); https://daistats.com/ (DAI supply, Vault stats); https://makerburn.com/ (MKR burn/supply tracking)
+Governance: https://gov.makerdao.com/ (Core Unit budget, proposal, voting); https://forum.makerdao.com/ (diskusi finansial)
+Messari: https://messari.io/protocol/makerdao
+Token Terminal: https://tokenterminal.com/terminal/projects/maker
+DefiLlama: https://defillama.com/protocol/makerdao
+CryptoRank: https://cryptorank.io/price/maker
+Whitepaper: https://makerdao.com/en/whitepaper/ (Original 2017); https://docs.makerdao.com/ (Living docs)
+
+## Summary
+
+Total Funding Raised: ~$1.000.000 (Private Sale 2017-Q1) — tidak ada Series A/B, public sale, atau grant besar tercatat ke DAO treasury. Semua funding operasional pasca-2021 berasal dari protocol revenue retention.
+Funding Rounds: 1 Private Sale (2017), 0 Public Sale/TGE, 0 VC Series, 0 Grant to DAO (Foundation received early EF grants pre-2017).
+Treasury Status: Tidak dikonsolidasikan sebagai single number. Terdiri dari: PSM stablecoin holdings (>60% DAI supply), RWA Vault assets (>$1B), Vow surplus buffer (fluktuatif), Core Unit budget multisigs (tersebar), Vault collateral non-RWA (nilai = DAI outstanding). Non-custodial on-chain untuk crypto assets; off-chain custodian (Coinbase Prime) untuk RWA.
+Revenue Sources: 7 live streams (Stability Fees, PSM Fees, Liquidation Penalties, RWA Yield, Spark Fee Flow, DSR Spread, Flap MKR Burn) + 1 planned (SKY Fee Switch). 1 discontinued (Foundation Grants).
+Revenue Availability: Tidak diungkapkan sebagai laporan P&L resmi. Data on-chain real-time tersedia per blok via Vow/Jug/PSM events. Third-party analytics (Token Terminal, DefiLlama, Messari) menyediakan estimasi revenue historis berdasarkan on-chain data.
+
+## Open Threads
+
+- Jumlah pasti MKR terjual di private sale 2017 dan harga per token tidak diungkapkan publik — hanya total ~$1M dikonfirmasi Messari.
+- Tidak ada laporan keuangan berkala (quarterly/annual) resmi dari DAO — revenue, expense, surplus, deficit hanya tersedia sebagai data on-chain mentah atau estimasi third-party.
+- Nilai treasury konsolidasi (total assets under management DAO) tidak dipublikasikan sebagai single metric — perlu agregasi manual dari PSM, RWA, Vow, Core Unit multisigs, Vault collateral.
+- Budget Core Unit 2024 agregat (total DAI/tahun dialokasikan ke 20+ Core Units) tidak terpublikasi di single dashboard — tersebar di MIP proposals individual di forum.
+- Revenue split persentase per stream (Stability Fees vs PSM vs RWA vs Spark) per periode tertentu tidak diungkapkan resmi — hanya snapshot dashboard RWA/PSM.
+- Status fee switch SKY (Endgame) — apakah sudah live on-chain, parameter persentase surplus yang dialokasikan, dan jadwal rollout penuh belum dikonfirmasi dari governance spell terbaru.
+- Audited financial statements (GAAP/IFRS) untuk MakerDAO Cayman Foundation atau SubDAO entities (Spark, Sky) tidak tersedia publik.
+- Tax treatment dan regulatory capital requirements untuk RWA Vault income (tradfi yield) di berbagai yurisdiksi belum terdokumentasi publik.
+- Insurance coverage (nexus mutual, unslashed finance, tradfi insurance) untuk treasury assets (RWA, PSM) tidak diungkapkan.
+- Contingency plan finansial jika PSM stablecoin (USDC/USDT) mengalami depeg atau regulatory seizure — belum ada disclosure resmi detail.

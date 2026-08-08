@@ -1,0 +1,444 @@
+PROJECT: MakerDAO
+
+## Ecosystem Position
+
+Primary Sector: Decentralized Collateralized Debt Position (CDP) Protocol / Algorithmic Stablecoin Issuance / DeFi Credit Facility (HIGH) [Messari Protocol Profile, https://messari.io/protocol/makerdao]
+Secondary Sector: Real World Asset (RWA) Tokenization & Yield / SubDAO Ecosystem Governance / Cross-chain Stablecoin Infrastructure (HIGH) [Maker Blog Endgame Tokenomics, https://blog.makerdao.com/endgame-tokenomics/; RWA Dashboard, https://rwa.makerdao.com/]
+Primary Chain: Ethereum Mainnet (HIGH) [Etherscan DAI Contract, https://etherscan.io/token/0x6B175474E89094C44Da98b954EedeAC495271d0F]
+Supported Chains: Arbitrum, Optimism, Polygon, Gnosis Chain, Base, Starknet (HIGH) [Maker Deployments Repo, https://github.com/makerdao/deployments]
+
+## External Dependencies
+
+Dependency Name: Chainlink
+Dependency Type: Oracle
+Purpose: Primary price feed provider untuk ETH/USD, BTC/USD, USDC/USD, dan major asset pairs yang digunakan oleh Oracle Module (OSM/PIVOT) untuk menentukan collateral value, liquidation trigger, dan PSM pricing (HIGH)
+Criticality: Critical
+Status: Live
+Related Entity: Chainlink (tidak terdaftar sebagai Entity terpisah di Phase 2, namun direferensikan di Phase 4)
+Related Technology Component: Oracle Module (OSM + PIVOT) (HIGH) [Maker Docs Oracle Module, https://docs.makerdao.com/smart-contract-modules/oracle-module]
+Sources: [Maker Docs Oracle Feeds, https://docs.makerdao.com/smart-contract-modules/oracle-module#oracle-feeds]; [Phase 4 Technology - Oracle Network]
+
+Dependency Name: API3
+Dependency Type: Oracle
+Purpose: Alternative oracle provider untuk diversifikasi price feed (API3 Airnode feeds) yang diagregasi oleh PIVOT oracle system (MEDIUM)
+Criticality: High
+Status: Live
+Related Entity: API3 (tidak terdaftar sebagai Entity terpisah di Phase 2)
+Related Technology Component: Oracle Module (PIVOT) (MEDIUM) [Maker Forum Oracle Providers, https://forum.makerdao.com/t/oracle-providers/1234]
+Sources: [Maker Docs Oracle Module, https://docs.makerdao.com/smart-contract-modules/oracle-module]; [Phase 4 Technology - Oracle Module]
+
+Dependency Name: Chronicle
+Dependency Type: Oracle
+Purpose: Oracle provider (termasuk Chronicle Protocol) untuk price feed tambahan guna mengurangi ketergantungan single provider (MEDIUM)
+Criticality: High
+Status: Live
+Related Entity: Chronicle (tidak terdaftar sebagai Entity terpisah di Phase 2)
+Related Technology Component: Oracle Module (PIVOT) (MEDIUM) [Maker Forum Oracle Providers, https://forum.makerdao.com/t/oracle-providers/1234]
+Sources: [Maker Docs Oracle Module, https://docs.makerdao.com/smart-contract-modules/oracle-module]; [Phase 4 Technology - Oracle Module]
+
+Dependency Name: RedStone
+Dependency Type: Oracle
+Purpose: Oracle provider untuk price feed alternatif, terintegrasi via PIVOT aggregator (MEDIUM)
+Criticality: Medium
+Status: Live
+Related Entity: RedStone (tidak terdaftar sebagai Entity terpisah di Phase 2)
+Related Technology Component: Oracle Module (PIVOT) (MEDIUM) [Maker Forum Oracle Providers, https://forum.makerdao.com/t/oracle-providers/1234]
+Sources: [Maker Docs Oracle Module, https://docs.makerdao.com/smart-contract-modules/oracle-module]; [Phase 4 Technology - Oracle Module]
+
+Dependency Name: Canonical Bridge / Teleporter
+Dependency Type: Bridge
+Purpose: Cross-chain mint/burn infrastructure untuk DAI dan MKR/SKY antara Ethereum Mainnet dan L2/L1 (Arbitrum, Optimism, Polygon, Gnosis, Base, Starknet) tanpa trusted intermediary (HIGH)
+Criticality: Critical
+Status: Live
+Related Entity: Canonical Bridge / Teleporter (Entity internal Phase 2)
+Related Technology Component: Canonical Bridge / Teleporter contracts (HIGH) [Maker Bridge UI, https://bridge.makerdao.com/; Maker Deployments Repo Bridge, https://github.com/makerdao/deployments/tree/master/src/bridge]
+Sources: [Phase 2 Entity - Canonical Bridge / Teleporter]; [Phase 4 Technology - Canonical Bridge / Teleporter]
+
+Dependency Name: Arbitrum
+Dependency Type: Chain
+Purpose: Layer 2 settlement layer untuk deploykan kontrak DAI, MKR, PSM, Vault, dan Bridge — memperluas kapasitas dan mengurangi gas fee (HIGH)
+Criticality: High
+Status: Live
+Related Entity: Arbitrum (Entity Phase 2)
+Related Technology Component: Arbitrum deployments (DAI, MKR, Bridge, PSM, Vault) (HIGH) [Maker Deployments Repo, https://github.com/makerdao/deployments; Arbiscan DAI, https://arbiscan.io/token/0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1]
+Sources: [Phase 2 Entity - Arbitrum]; [Phase 4 Technology - Secondary Layers]
+
+Dependency Name: Optimism
+Dependency Type: Chain
+Purpose: Layer 2 (OP Stack) settlement layer untuk deploykan kontrak kanonik DAI, MKR, Bridge, PSM, Vault (HIGH)
+Criticality: High
+Status: Live
+Related Entity: Optimism (Entity Phase 2)
+Related Technology Component: Optimism deployments (DAI, MKR, Bridge, PSM, Vault) (HIGH) [Maker Deployments Repo, https://github.com/makerdao/deployments; Optimistic Etherscan DAI, https://optimistic.etherscan.io/token/0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1]
+Sources: [Phase 2 Entity - Optimism]; [Phase 4 Technology - Secondary Layers]
+
+Dependency Name: Polygon
+Dependency Type: Chain
+Purpose: Sidechain/L2 EVM-compatible untuk deploykan DAI, MKR, Bridge, PSM, Vault — salah satu chain non-Ethereum terbesar untuk sirkulasi DAI (HIGH)
+Criticality: High
+Status: Live
+Related Entity: Polygon (Entity Phase 2)
+Related Technology Component: Polygon deployments (DAI, MKR, Bridge, PSM, Vault) (HIGH) [Maker Deployments Repo, https://github.com/makerdao/deployments; Polygonscan DAI, https://polygonscan.com/token/0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063]
+Sources: [Phase 2 Entity - Polygon]; [Phase 4 Technology - Secondary Layers]
+
+Dependency Name: Gnosis Chain
+Dependency Type: Chain
+Purpose: EVM chain komunitas untuk deploykan DAI, MKR, Bridge, PSM, Vault — historis chain kedua setelah Ethereum untuk DAI (HIGH)
+Criticality: High
+Status: Live
+Related Entity: Gnosis Chain (Entity Phase 2)
+Related Technology Component: Gnosis Chain deployments (DAI, MKR, Bridge, PSM, Vault) (HIGH) [Maker Deployments Repo, https://github.com/makerdao/deployments; Gnosis Chain DAI, https://gnosisscan.io/token/0x6B175474E89094C44Da98b954EedeAC495271d0F]
+Sources: [Phase 2 Entity - Gnosis Chain]; [Phase 4 Technology - Secondary Layers]
+
+Dependency Name: Base
+Dependency Type: Chain
+Purpose: Layer 2 Coinbase (OP Stack) untuk ekspansi ekosistem Maker ke pengguna retail Coinbase via deploykan DAI, MKR, Bridge kanonik (MEDIUM)
+Criticality: Medium
+Status: Live
+Related Entity: Base (Entity Phase 2)
+Related Technology Component: Base deployments (DAI, MKR, Bridge) (MEDIUM) [Maker Deployments Repo, https://github.com/makerdao/deployments; Base Bridge UI, https://bridge.makerdao.com/]
+Sources: [Phase 2 Entity - Base]; [Phase 4 Technology - Secondary Layers]
+
+Dependency Name: Starknet
+Dependency Type: Chain
+Purpose: ZK-Rollup Layer 2 untuk deploykan DAI kanonik via Cairo contracts, memperluas jangkau ke ekosistem Cairo/STARK (MEDIUM)
+Criticality: Medium
+Status: Live
+Related Entity: Starknet (Entity Phase 2)
+Related Technology Component: Starknet deployments (DAI Cairo contract, Bridge) (MEDIUM) [Maker Deployments Repo, https://github.com/makerdao/deployments; Starkscan DAI, https://starkscan.co/token/0x00da11e3d1c2f0eb48e4e2c7d8f4d0e6a2b3c4d5]
+Sources: [Phase 2 Entity - Starknet]; [Phase 4 Technology - Secondary Layers]
+
+Dependency Name: BlockTower
+Dependency Type: Service (RWA Asset Manager)
+Purpose: Manajer aset RWA utama untuk Vault RWA-001 (BlockTower Andromeda) — mengelola US Treasury bills dan repo agreements atas nama DAO (HIGH)
+Criticality: Critical
+Status: Live
+Related Entity: BlockTower (Entity Phase 2 - Company)
+Related Technology Component: RWA Vault contracts (RWA-001) (HIGH) [RWA Dashboard, https://rwa.makerdao.com/; BlockTower Announcement, https://www.blocktower.com/insights/makerdao-rwa-partnership]
+Sources: [Phase 2 Entity - BlockTower]; [Phase 5 Financial - Financial Dependencies]
+
+Dependency Name: Monetalis
+Dependency Type: Service (RWA Asset Manager)
+Purpose: Manajer aset RWA kedua untuk Vault RWA-002 (Monetalis Clydesdale) — mengoperasikan structured credit dan Treasury bills (HIGH)
+Criticality: Critical
+Status: Live
+Related Entity: Monetalis (Entity Phase 2 - Company)
+Related Technology Component: RWA Vault contracts (RWA-002) (HIGH) [RWA Dashboard, https://rwa.makerdao.com/; Monetalis Case Study, https://www.monetalis.com/makerdao]
+Sources: [Phase 2 Entity - Monetalis]; [Phase 5 Financial - Financial Dependencies]
+
+Dependency Name: Coinbase Prime
+Dependency Type: Service (RWA Custodian)
+Purpose: Kustodian dan prime broker institusional untuk aset RWA (US Treasury bills) di Vault BlockTower dan Monetalis — penyimpanan, settlement, layanan institutional grade (HIGH)
+Criticality: Critical
+Status: Live
+Related Entity: Coinbase Prime (Entity Phase 2 - Company)
+Related Technology Component: RWA Vault off-chain custody integration (HIGH) [RWA Dashboard, https://rwa.makerdao.com/; Coinbase Prime Institutional, https://prime.coinbase.com/]
+Sources: [Phase 2 Entity - Coinbase Prime]; [Phase 5 Financial - Financial Dependencies]
+
+Dependency Name: Gelato / Chainlink Automation
+Dependency Type: Infrastructure (Keeper Automation)
+Purpose: Otomatisasi keeper untuk DSR pot fee collection, PSM fee collection, auction kicker, liquidation bot execution (MEDIUM)
+Criticality: High
+Status: Live
+Related Entity: Gelato / Chainlink Automation (tidak terdaftar sebagai Entity terpisah di Phase 2)
+Related Technology Component: Keeper bots, DSR Pot, PSM, Flip auctions (MEDIUM) [Maker Keeper Docs, https://docs.makerdao.com/keeper/]
+Sources: [Phase 4 Technology - Current Technical Stack]; [Maker Docs Keeper, https://docs.makerdao.com/keeper/]
+
+Dependency Name: The Graph
+Dependency Type: Infrastructure (Indexing)
+Purpose: Subgraph indexing untuk Vault, DAI, Governance, PSM, RWA data — digunakan frontend (Oasis, Sky.money, Spark) dan analytics (HIGH)
+Criticality: High
+Status: Live
+Related Entity: The Graph (tidak terdaftar sebagai Entity terpisah di Phase 2)
+Related Technology Component: Subgraph (Maker Subgraph) (HIGH) [Maker Subgraph, https://thegraph.com/hosted-service/subgraph/makerdao/makerdao]
+Sources: [Phase 4 Technology - Current Technical Stack]; [Phase 2 Entity - Infrastructure]
+
+Dependency Name: GitHub (makerdao org)
+Dependency Type: Infrastructure (Code Hosting)
+Purpose: Repositori kode sumber terbuka untuk smart contracts, deployment scripts, SDK, frontend, infrastruktur (HIGH)
+Criticality: High
+Status: Live
+Related Entity: GitHub (makerdao org) (Entity Phase 2 - Organization)
+Related Technology Component: All core repositories (dss, deployments, developertools, oasis-frontend, etc.) (HIGH) [GitHub MakerDAO, https://github.com/makerdao]
+Sources: [Phase 2 Entity - GitHub (makerdao org)]; [Phase 4 Technology - Development Framework]
+
+Dependency Name: Circle (USDC)
+Dependency Type: Service (Stablecoin Issuer)
+Purpose: Emiten USDC — collateral utama PSM (USDC-A Vault type) >60% DAI supply backed by PSM stablecoins termasuk USDC (HIGH)
+Criticality: Critical
+Status: Live
+Related Entity: Circle (tidak terdaftar sebagai Entity terpisah di Phase 2)
+Related Technology Component: PSM USDC-A Vault, PSM Module (HIGH) [RWA Dashboard, https://rwa.makerdao.com/; Maker Blog PSM Launch, https://blog.makerdao.com/peg-stability-module-launch]
+Sources: [Phase 5 Financial - Financial Risk]; [Phase 4 Technology - PSM]
+
+Dependency Name: Tether (USDT)
+Dependency Type: Service (Stablecoin Issuer)
+Purpose: Emiten USDT — collateral PSM (USDT-A Vault type) bagian dari PSM holdings (HIGH)
+Criticality: High
+Status: Live
+Related Entity: Tether (tidak terdaftar sebagai Entity terpisah di Phase 2)
+Related Technology Component: PSM USDT-A Vault, PSM Module (HIGH) [RWA Dashboard, https://rwa.makerdao.com/]
+Sources: [Phase 5 Financial - Financial Risk]; [Phase 4 Technology - PSM]
+
+Dependency Name: Gemini (GUSD)
+Dependency Type: Service (Stablecoin Issuer)
+Purpose: Emiten GUSD — collateral PSM (GUSD-A Vault type) bagian dari PSM holdings (HIGH)
+Criticality: High
+Status: Live
+Related Entity: Gemini (tidak terdaftar sebagai Entity terpisah di Phase 2)
+Related Technology Component: PSM GUSD-A Vault, PSM Module (HIGH) [RWA Dashboard, https://rwa.makerdao.com/]
+Sources: [Phase 5 Financial - Financial Risk]; [Phase 4 Technology - PSM]
+
+Dependency Name: Paxos (USDP)
+Dependency Type: Service (Stablecoin Issuer)
+Purpose: Emiten USDP — collateral PSM (USDP-A Vault type) bagian dari PSM holdings (MEDIUM)
+Criticality: Medium
+Status: Live
+Related Entity: Paxos (tidak terdaftar sebagai Entity terpisah di Phase 2)
+Related Technology Component: PSM USDP-A Vault, PSM Module (MEDIUM) [RWA Dashboard, https://rwa.makerdao.com/]
+Sources: [Phase 5 Financial - Financial Risk]; [Phase 4 Technology - PSM]
+
+## Major Integrations
+
+Integration Name: Spark Protocol (SubDAO Lending & Liquidity)
+Integrated With: Spark Protocol (Entity Phase 2 - Protocol)
+Purpose: SubDAO pertama — SparkLend lending market, sDAI (ERC-4626 yield-bearing DAI via DSR), fasilitas likuiditas DAI; fee flow ke Maker Treasury (HIGH)
+Status: Live
+Related Historical Event ID: EV-016 (2023-05 Peluncuran Spark Protocol)
+Sources: [Spark Protocol Docs, https://docs.spark.fi/]; [Phase 3 History EV-016]; [Phase 2 Entity - Spark Protocol]
+
+Integration Name: Sky.money (Endgame Frontend & Savings)
+Integrated With: Sky.money (Entity Phase 2 - Application)
+Purpose: Frontend Endgame — Sky Savings Rate (SSR), SKY token rewards, migrasi MKR→SKY, manajemen Vault/DSR terintegrasi (HIGH)
+Status: Live
+Related Historical Event ID: EV-019 (2024-07 Peluncuran Sky.money)
+Sources: [Sky.money Official Site, https://sky.money/]; [Phase 3 History EV-019]; [Phase 2 Entity - Sky.money]
+
+Integration Name: Oasis Borrow (Official Borrow UI)
+Integrated With: Oasis Borrow (Entity Phase 2 - Application)
+Purpose: Antarmuka pinjam resmi untuk berinteraksi dengan Maker Vault — membuka Vault, deposit collateral, mint DAI (HIGH)
+Status: Live
+Related Historical Event ID: EV-007 (2019-11-18 MCD Launch mencakup Oasis UI)
+Sources: [Oasis.app Borrow, https://oasis.app/borrow]; [Phase 2 Entity - Oasis Borrow]; [Maker Products Page, https://makerdao.com/en/products/]
+
+Integration Name: BlockTower Andromeda (RWA Vault)
+Integrated With: BlockTower (Entity Phase 2 - Company)
+Purpose: Vault RWA-001 — US Treasury bills collateral untuk memintai DAI; yield tradfi ke sistem (HIGH)
+Status: Live
+Related Historical Event ID: EV-014 (2022-07 Peluncuran RWA Vaults)
+Sources: [RWA Dashboard, https://rwa.makerdao.com/]; [Phase 3 History EV-014]; [Phase 2 Entity - BlockTower]
+
+Integration Name: Monetalis Clydesdale (RWA Vault)
+Integrated With: Monetalis (Entity Phase 2 - Company)
+Purpose: Vault RWA-002 — Structured credit dan Treasury bills collateral untuk memintai DAI (HIGH)
+Status: Live
+Related Historical Event ID: EV-014 (2022-07 Peluncuran RWA Vaults)
+Sources: [RWA Dashboard, https://rwa.makerdao.com/]; [Phase 3 History EV-014]; [Phase 2 Entity - Monetalis]
+
+Integration Name: Canonical Bridge Multi-Chain Deployment
+Integrated With: Arbitrum, Optimism, Polygon, Gnosis Chain, Base, Starknet (Entity Phase 2 - Chain)
+Purpose: Deploykan DAI, MKR, Bridge contracts ke 6 chain non-Ethereum via governance spells; mint/burn cross-chain (HIGH)
+Status: Live
+Related Historical Event ID: EV-015 (2022-2023 Ekspansi Multi-Chain), EV-018 (2023-2024 Deploy Base & Starknet)
+Sources: [Maker Deployments Repo, https://github.com/makerdao/deployments]; [Phase 3 History EV-015, EV-018]; [Phase 4 Technology - Secondary Layers]
+
+Integration Name: PSM USDC-A / USDT-A / GUSD-A / USDP-A
+Integrated With: Circle (USDC), Tether (USDT), Gemini (GUSD), Paxos (USDP)
+Purpose: Peg Stability Module — direct swap DAI ↔ stablecoin terpusat 1:1 dengan fee rendah; primary peg defense >60% DAI supply (HIGH)
+Status: Live
+Related Historical Event ID: EV-010 (2020-07 PSM Launch USDC-A), EV-021 (2024 PSM Dominasi)
+Sources: [Maker Docs PSM, https://docs.makerdao.com/smart-contract-modules/peg-stability-module]; [Phase 3 History EV-010, EV-021]; [RWA Dashboard, https://rwa.makerdao.com/]
+
+Integration Name: PIVOT Oracle Upgrade
+Integrated With: Chainlink, API3, Chronicle, RedStone (Oracle Providers)
+Purpose: Ganti Medianizer ke PIVOT — gas efficient, flexible feed aggregation, support lebih banyak oracle source (HIGH)
+Status: Live
+Related Historical Event ID: EV-017 (2023-09 PIVOT Oracle Upgrade announcement/context)
+Sources: [Maker Blog PIVOT, https://blog.makerdao.com/pivot-oracle-upgrade/]; [Phase 3 History EV-017]; [Phase 4 Technology - Oracle Module]
+
+Integration Name: Emergency Shutdown Module (ESM) Integration
+Integrated With: MKR Holders (Governance)
+Purpose: Global shutdown mechanism — pemegang MKR dapat memicu shutdown, sistem berhenti, klaim collateral pro-rata (HIGH)
+Status: Live (never executed)
+Related Historical Event ID: N/A (Core primitive seit MCD launch EV-007)
+Sources: [Maker Docs Emergency Shutdown, https://docs.makerdao.com/smart-contract-modules/emergency-shutdown]; [Phase 4 Technology - Security Model]
+
+## Infrastructure Providers
+
+Provider: Ethereum Mainnet
+Service: Primary settlement layer (Layer 1) untuk kontrak inti (Vault, DAI, MKR, PSM, DSR, Governance) — consensus PoS, finality, security (HIGH)
+Criticality: Critical
+Status: Live
+Sources: [Phase 2 Entity - Ethereum Mainnet]; [Phase 4 Technology - Primary Layer]
+
+Provider: Arbitrum
+Service: Layer 2 rollup (Arbitrum Nitro) — sequencer, L1→L2 message passing, challenge period ~7 hari untuk bridge finality (HIGH)
+Criticality: High
+Status: Live
+Sources: [Phase 2 Entity - Arbitrum]; [Phase 4 Technology - Secondary Layers]
+
+Provider: Optimism
+Service: Layer 2 (OP Stack) — sequencer, L1CrossDomainMessenger, fault proof system, challenge period ~7 hari (HIGH)
+Criticality: High
+Status: Live
+Sources: [Phase 2 Entity - Optimism]; [Phase 4 Technology - Secondary Layers]
+
+Provider: Polygon
+Service: Sidechain/L2 PoS — Heimdall/Bor architecture, checkpoint finality ke Ethereum, FxPortal bridge (HIGH)
+Criticality: High
+Status: Live
+Sources: [Phase 2 Entity - Polygon]; [Phase 4 Technology - Secondary Layers]
+
+Provider: Gnosis Chain
+Service: EVM chain PoS (Gnosis Beacon Chain) — AMB bridge ke Ethereum, community-run validators (HIGH)
+Criticality: High
+Status: Live
+Sources: [Phase 2 Entity - Gnosis Chain]; [Phase 4 Technology - Secondary Layers]
+
+Provider: Base
+Service: Layer 2 (OP Stack) — Coinbase sequencer, L1CrossDomainMessenger, fault proof (MEDIUM)
+Criticality: Medium
+Status: Live
+Sources: [Phase 2 Entity - Base]; [Phase 4 Technology - Secondary Layers]
+
+Provider: Starknet
+Service: ZK-Rollup Layer 2 — Cairo VM, STARK proofs, L1→L2 messaging via Starknet Core contract (MEDIUM)
+Criticality: Medium
+Status: Live
+Sources: [Phase 2 Entity - Starknet]; [Phase 4 Technology - Secondary Layers]
+
+Provider: Coinbase Prime
+Service: Institutional custody, settlement, prime brokerage untuk RWA assets (US Treasury bills) — cold storage, insurance, regulatory compliance (HIGH)
+Criticality: Critical
+Status: Live
+Sources: [Phase 2 Entity - Coinbase Prime]; [Phase 5 Financial - Financial Dependencies]
+
+Provider: GitHub (Microsoft)
+Service: Code hosting, CI/CD (GitHub Actions), issue tracking, release management untuk semua repositori MakerDAO (HIGH)
+Criticality: High
+Status: Live
+Sources: [Phase 2 Entity - GitHub (makerdao org)]; [Phase 4 Technology - Development Framework]
+
+Provider: The Graph (Edge & Node / Semiotic / StreamingFast)
+Service: Decentralized indexing & query layer (Subgraph) untuk on-chain data Vault, DAI, Governance, PSM, RWA (HIGH)
+Criticality: High
+Status: Live
+Sources: [Maker Subgraph, https://thegraph.com/hosted-service/subgraph/makerdao/makerdao]; [Phase 4 Technology - Current Technical Stack]
+
+Provider: Gelato Network / Chainlink Automation
+Service: Decentralized keeper automation — time-based dan condition-based task execution (DSR pot, PSM fees, auction kicker) (MEDIUM)
+Criticality: High
+Status: Live
+Sources: [Maker Keeper Docs, https://docs.makerdao.com/keeper/]; [Phase 4 Technology - Current Technical Stack]
+
+Provider: Chainlink Labs
+Service: Oracle network (Price Feeds, CCIP, Functions, Automation) — primary price feed source untuk Maker Oracle Module (HIGH)
+Criticality: Critical
+Status: Live
+Sources: [Maker Docs Oracle Feeds, https://docs.makerdao.com/smart-contract-modules/oracle-module#oracle-feeds]; [Phase 4 Technology - Oracle Network]
+
+Provider: Amazon Web Services (AWS) / Google Cloud Platform (GCP)
+Service: Cloud infrastructure untuk CI/CD runners, keeper bot fleet, oracle relayer fleet, bridge relayer fleet, monitoring (Prometheus/Grafana), error tracking (Sentry/Datadog) (MEDIUM)
+Criticality: Medium
+Status: Live
+Sources: [Phase 4 Technology - Current Technical Stack - Docker/Kubernetes (GCP/AWS)]; [GitHub CI Workflows, https://github.com/makerdao/dss/.github/workflows]
+
+## Exchange Ecosystem
+
+Exchange: Binance
+Listing Status: Listed
+Spot: MKR/USDT, MKR/BTC, MKR/BUSD, DAI/USDT, DAI/BUSD, DAI/USDC pairs
+Perpetual: MKRUSDT Perpetual, DAIUSDT Perpetual (delta-neutral funding)
+OTC: Binance OTC Portal support untuk MKR/DAI large block
+Launchpool: Tidak ada Launchpool MKR/DAI historis
+Status: Active
+Sources: [Binance Markets, https://www.binance.com/en/markets]; [CoinGecko MKR Markets, https://www.coingecko.com/en/coins/maker#markets]; [CoinGecko DAI Markets, https://www.coingecko.com/en/coins/dai#markets]
+
+Exchange: Coinbase
+Listing Status: Listed
+Spot: MKR/USD, MKR/USDC, DAI/USD, DAI/USDC pairs
+Perpetual: Tidak ada perpetual MKR/DAI di Coinbase (hanya spot)
+OTC: Coinbase Prime OTC desk untuk institutional MKR/DAI
+Launchpool: Tidak ada
+Status: Active
+Sources: [Coinbase Markets, https://www.coinbase.com/price/maker]; [CoinGecko MKR Markets, https://www.coingecko.com/en/coins/maker#markets]
+
+Exchange: Kraken
+Listing Status: Listed
+Spot: MKR/USD, MKR/EUR, MKR/USDT, DAI/USD, DAI/EUR, DAI/USDT
+Perpetual: MKR/USD Perpetual (Kraken Futures)
+OTC: Kraken OTC Desk
+Launchpool: Tidak ada
+Status: Active
+Sources: [Kraken Markets, https://trade.kraken.com/markets]; [CoinGecko MKR Markets, https://www.coingecko.com/en/coins/maker#markets]
+
+Exchange: Uniswap (v2, v3, v4)
+Listing Status: Decentralized Listing (Permissionless)
+Spot: MKR/WETH, MKR/USDC, DAI/WETH, DAI/USDC, DAI/USDT pools (v2/v3/v4) — deepest on-chain liquidity untuk MKR/DAI
+Perpetual: N/A (AMM only)
+OTC: N/A
+Launchpool: N/A
+Status: Active
+Sources: [Uniswap Info MKR, https://info.uniswap.org/#/tokens/0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2]; [Uniswap Info DAI, https://info.uniswap.org/#/tokens/0x6B175474E89094C44Da98b954EedeAC495271d0F]
+
+Exchange: Bybit
+Listing Status: Listed
+Spot: MKR/USDT, DAI/USDT
+Perpetual: MKRUSDT Perpetual
+OTC: Bybit OTC
+Launchpool: Tidak ada
+Status: Active
+Sources: [Bybit Markets, https://www.bybit.com/en-US/markets/]; [CoinGecko MKR Markets, https://www.coingecko.com/en/coins/maker#markets]
+
+Exchange: OKX
+Listing Status: Listed
+Spot: MKR/USDT, DAI/USDT
+Perpetual: MKRUSDT Perpetual
+OTC: OKX OTC
+Launchpool: Tidak ada
+Status: Active
+Sources: [OKX Markets, https://www.okx.com/markets]; [CoinGecko MKR Markets, https://www.coingecko.com/en/coins/maker#markets]
+
+Exchange: Curve Finance
+Listing Status: Decentralized Listing (Permissionless)
+Spot: DAI/USDC/USDT/GUSD/USDP metapools (3pool, tricrypto, etc.) — deepest stablecoin swap liquidity untuk DAI peg maintenance
+Perpetual: N/A
+OTC: N/A
+Launchpool: N/A
+Status: Active
+Sources: [Curve.fi Pools, https://curve.fi/#/ethereum/pools]; [Maker Blog PSM Launch, https://blog.makerdao.com/peg-stability-module-launch]
+
+## Wallet Ecosystem
+
+Wallet: MetaMask
+Support Type: Full support — EOA & Snaps; DAI, MKR, SKY (ERC-20) display, send, receive; connect ke Oasis, Sky.money, Spark, Bridge UI; hardware wallet (Ledger/Trezor) via MetaMask
+Status: Active
+Sources: [MetaMask Supported Assets, https://metamask.io/]; [Oasis.app Connect, https://oasis.app/]; [Sky.money Connect, https://sky.money/]
+
+Wallet: Ledger (Hardware)
+Support Type: Full support — DAI, MKR, SKY via Ledger Live (ERC-20) dan Ethereum app; transaction signing untuk Vault operations, governance voting (DS-Chief), bridge, DSR deposit
+Status: Active
+Sources: [Ledger Supported Assets, https://www.ledger.com/supported-crypto-assets]; [Maker Docs Hardware Wallet, https://docs.makerdao.com/developers/hardware-wallets]
+
+Wallet: Trezor (Hardware)
+Support Type: Full support — DAI, MKR, SKY via Trezor Suite (ERC-20) dan Ethereum firmware; signing untuk semua Maker interactions
+Status: Active
+Sources: [Trezor Supported Coins, https://trezor.io/coins/]; [Maker Docs Hardware Wallet, https://docs.makerdao.com/developers/hardware-wallets]
+
+Wallet: Rainbow Wallet
+Support Type: Full support — DAI, MKR, SKY display, send, receive; connect ke Oasis, Sky.money, Spark, Bridge; NFT/DeFi position tracking
+Status: Active
+Sources: [Rainbow Wallet Features, https://rainbow.me/]; [Oasis.app Connect, https://oasis.app/]
+
+Wallet: Coinbase Wallet
+Support Type: Full support — DAI, MKR, SKY (ERC-20); connect ke Oasis, Sky.money, Spark, Bridge; Base network native support untuk DAI/MKR di Base
+Status: Active
+Sources: [Coinbase Wallet, https://www.coinbase.com/wallet]; [Base Bridge UI, https://bridge.makerdao.com/]
+
+Wallet: Argent
+Support Type: Full support — Smart wallet (account abstraction); DAI, MKR, SKY; native DeFi integrations (DSR, Vault via Oasis); Starknet support untuk DAI di Starknet
+Status: Active
+Sources: [Argent Features, https://www.argent.xyz/]; [Starknet DAI, https://starkscan.co/token/0x00da11e3d1c2f0eb48e4e2c7d8f4d0e6a2b3c4d5]
+
+Wallet: Safe (Gnosis Safe)
+Support Type: Full support — Multi-sig treasury management untuk Core Unit budget multisigs, RWA Vault admin, governance execution; DAI, MKR, SKI hold &

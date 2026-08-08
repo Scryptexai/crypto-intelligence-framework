@@ -1,0 +1,774 @@
+PROJECT: Jito
+
+Event ID
+
+EV-001
+
+Date
+
+2021
+
+Event Name
+
+Pendirian Jito Labs
+
+Event Type
+
+Founding
+
+Description
+
+Lucas Bruder dan Zano mendirikan Jito Labs, Inc. untuk membangun infrastruktur MEV dan liquid staking di Solana.
+
+Participants
+
+Lucas Bruder; Zano; Jito Labs, Inc.
+
+Location
+
+Terdistribusi (remote global)
+
+Status
+
+Completed
+
+Immediate Result
+
+Entitas pengembang inti (core developer) Jito Network terbentuk.
+
+Sources
+
+https://jito.network/team
+https://www.theblock.co/post/267944/jito-labs-raises-10-million-series-a
+
+---
+
+Event ID
+
+EV-002
+
+Date
+
+2022
+
+Event Name
+
+Pembiayaan Series A Jito Labs
+
+Event Type
+
+Funding
+
+Description
+
+Jito Labs mengumpulkan $10 juta dalam ronde Series A yang dipimpin oleh Multicoin Capital dengan partisipasi Framework Ventures, Solana Ventures, dan Robot Ventures.
+
+Participants
+
+Jito Labs, Inc.; Multicoin Capital; Framework Ventures; Solana Ventures; Robot Ventures
+
+Location
+
+Terdistribusi
+
+Status
+
+Completed
+
+Immediate Result
+
+Dana $10M untuk pengembangan Jito-Solana validator client, MEV suite, dan protokol liquid staking.
+
+Sources
+
+https://www.theblock.co/post/267944/jito-labs-raises-10-million-series-a
+https://multicoin.capital/portfolio/jito
+
+---
+
+Event ID
+
+EV-003
+
+Date
+
+2022-08
+
+Event Name
+
+Peluncuran Jito-Solana Testnet/Devnet
+
+Event Type
+
+Launch
+
+Description
+
+Jito Labs merilis Jito-Solana validator client di testnet/devnet, memungkinkan validator menguji ekstraksi MEV via block engine dan shred streaming.
+
+Participants
+
+Jito Labs, Inc.; Jito-Solana; Solana
+
+Location
+
+Solana Devnet/Testnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Klien validator MEV-optimized tersedia untuk pengujian komunitas validator.
+
+Sources
+
+https://jito.network/blog/introducing-jito-solana
+https://solana.compass.live/validators/jito
+
+---
+
+Event ID
+
+EV-004
+
+Date
+
+2022-08
+
+Event Name
+
+Peluncuran Jito-Solana Mainnet
+
+Event Type
+
+Launch
+
+Description
+
+Jito-Solana validator client dirilis di mainnet-beta Solana, memungkinkan validator produksi menjalankan klien MEV-optimized.
+
+Participants
+
+Jito Labs, Inc.; Jito-Solana; Solana; Jito MEV Suite
+
+Location
+
+Solana Mainnet-beta
+
+Status
+
+Completed
+
+Immediate Result
+
+Validator dapat berpartisipasi dalam ekstraksi MEV on-chain via Jito Block Engine dan Relayer.
+
+Sources
+
+https://jito.network/blog/jito-solana-mainnet-launch
+https://docs.jito.network/mev/overview
+
+---
+
+Event ID
+
+EV-005
+
+Date
+
+2022-12-09
+
+Event Name
+
+Peluncuran JitoSOL Liquid Staking Pool
+
+Event Type
+
+Launch
+
+Description
+
+Jito Labs meluncurkan JitoSOL, liquid staking token yang mewakili stake SOL ke validator set Jito dan mengakumulasikan reward staking serta MEV tips.
+
+Participants
+
+Jito Labs, Inc.; JitoSOL; Jito Network; Solana
+
+Location
+
+Solana Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Protokol liquid staking native Jito beroperasi; JitoSOL terintegrasi ke DeFi Solana.
+
+Sources
+
+https://jito.network/blog/introducing-jitosol
+https://defillama.com/protocol/jito
+https://solscan.io/token/J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn
+
+---
+
+Event ID
+
+EV-006
+
+Date
+
+2022
+
+Event Name
+
+Audit Keamanan JitoSOL oleh Neodyme
+
+Event Type
+
+Security
+
+Description
+
+Neodyme melakukan audit keamanan smart contract untuk protokol JitoSOL liquid staking sebelum peluncuran mainnet.
+
+Participants
+
+Neodyme; Jito Labs, Inc.; JitoSOL
+
+Location
+
+Remote
+
+Status
+
+Completed
+
+Immediate Result
+
+Laporan audit diterbitkan; temuan diperbaiki sebelum peluncuran JitoSOL Desember 2022.
+
+Sources
+
+https://neodyme.io/audits/jito
+https://jito.network/blog/introducing-jitosol
+
+---
+
+Event ID
+
+EV-007
+
+Date
+
+2022
+
+Event Name
+
+Audit Keamanan Jito-Solana Client oleh Kudelski Security
+
+Event Type
+
+Security
+
+Description
+
+Kudelski Security melakukan audit keamanan kode klien validator Jito-Solana (Rust/BPF) dan infrastruktur MEV suite (block engine/relayer).
+
+Participants
+
+Kudelski Security; Jito Labs, Inc.; Jito-Solana; Jito MEV Suite
+
+Location
+
+Remote
+
+Status
+
+Completed
+
+Immediate Result
+
+Laporan audit untuk kode validator client dan infrastruktur MEV core diterbitkan.
+
+Sources
+
+https://www.kudelskisecurity.com
+https://github.com/jito-labs
+
+---
+
+Event ID
+
+EV-008
+
+Date
+
+2023
+
+Event Name
+
+Pembentukan Jito Foundation
+
+Event Type
+
+Organization
+
+Description
+
+Jito Foundation didirikan sebagai entitas non-profit di Cayman Islands untuk mengelola treasury, governance JTO token, dan pengembangan ekosistem jangka panjang.
+
+Participants
+
+Jito Foundation; Jito Labs, Inc.; Jito DAO
+
+Location
+
+Cayman Islands
+
+Status
+
+Completed
+
+Immediate Result
+
+Struktur hukum untuk governance terdesentralisasi dan pengelolaan treasury protokol terbentuk.
+
+Sources
+
+https://gov.jito.network/t/jito-foundation/123
+https://jito.network/blog/jto-token-launch
+
+---
+
+Event ID
+
+EV-009
+
+Date
+
+2023-12-07
+
+Event Name
+
+Token Generation Event (TGE) dan Airdrop JTO
+
+Event Type
+
+Token
+
+Description
+
+Token governance JTO dibuat (mint) dan diklaim via airdrop ke komunitas (staker JitoSOL, validator, searcher, kontributor) serta dialokasikan ke treasury DAO, tim, dan investor.
+
+Participants
+
+Jito Foundation; JTO Token; Jito DAO; Jito Community; Jito Labs, Inc.
+
+Location
+
+Solana Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+JTO token beredar; governance on-chain diaktifkan; Jito DAO mulai beroperasi.
+
+Sources
+
+https://jito.network/blog/jto-token-launch
+https://www.coingecko.com/en/coins/jito
+https://gov.jito.network
+
+---
+
+Event ID
+
+EV-010
+
+Date
+
+2023-12-07
+
+Event Name
+
+Peluncuran Jito DAO Governance
+
+Event Type
+
+Governance
+
+Description
+
+Jito DAO diluncurkan bersamaan dengan TGE JTO, memungkinkan pemegang token mengusulkan dan memilih parameter fee, delegation strategy, treasury allocation, dan upgrade protokol.
+
+Participants
+
+Jito DAO; Jito Foundation; JTO Token; Jito Community
+
+Location
+
+Solana Mainnet (on-chain voting via Realms/SPL Governance)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Mekanisme governance terdesentralisasi untuk protokol Jito (JitoSOL, Restaking, MEV Suite) aktif.
+
+Sources
+
+https://gov.jito.network
+https://docs.jito.network/governance/overview
+https://jito.network/blog/jto-token-launch
+
+---
+
+Event ID
+
+EV-011
+
+Date
+
+2023
+
+Event Name
+
+Audit Keamanan Program Governance/JTO oleh Sec3
+
+Event Type
+
+Security
+
+Description
+
+Sec3 (dahulu Soteria) melakukan audit keamanan smart contract untuk program governance, token JTO, dan sistem voting DAO.
+
+Participants
+
+Sec3; Jito Labs, Inc.; JTO Token; Jito DAO
+
+Location
+
+Remote
+
+Status
+
+Completed
+
+Immediate Result
+
+Laporan audit program on-chain governance dan token JTO diterbitkan sebelum TGE.
+
+Sources
+
+https://sec3.dev/audits/jito
+https://gov.jito.network
+
+---
+
+Event ID
+
+EV-012
+
+Date
+
+2024
+
+Event Name
+
+Peluncuran Jito Restaking (Vault Node Consensus)
+
+Event Type
+
+Launch
+
+Description
+
+Jito Labs meluncurkan protokol restaking native Solana (VNC) memungkinkan JitoSOL dan SOL distake ulang untuk mengamankan layanan terdistribusi (oracle, bridge, keeper network).
+
+Participants
+
+Jito Labs, Inc.; Jito Restaking (Vault Node Consensus); JitoSOL; Solana
+
+Location
+
+Solana Mainnet
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Protokol restaking Jito beroperasi; VNC (Vault Node Consensus) menerima deposit dan mengkoordinasikan operator node.
+
+Sources
+
+https://jito.network/blog/introducing-jito-restaking
+https://docs.jito.network/restaking/overview
+
+---
+
+Event ID
+
+EV-013
+
+Date
+
+2024
+
+Event Name
+
+Audit Keamanan Jito Restaking (VNC) oleh Neodyme dan Sec3
+
+Event Type
+
+Security
+
+Description
+
+Neodyme dan Sec3 melakukan audit keamanan smart contract untuk program Jito Restaking (Vault Node Consensus), vault program, dan integrasi JitoSOL.
+
+Participants
+
+Neodyme; Sec3; Jito Labs, Inc.; Jito Restaking (Vault Node Consensus)
+
+Location
+
+Remote
+
+Status
+
+Completed
+
+Immediate Result
+
+Laporan audit untuk protokol restaking dan program vault diterbitkan; temuan diperbaiki sebelum/bersama peluncuran.
+
+Sources
+
+https://neodyme.io/audits/jito
+https://sec3.dev/audits/jito
+https://jito.network/blog/introducing-jito-restaking
+
+---
+
+Event ID
+
+EV-014
+
+Date
+
+2023-12
+
+Event Name
+
+Listing Token JTO di Exchange Utama
+
+Event Type
+
+Market
+
+Description
+
+Token JTO terdaftar (listing) di exchange terpusat utama (Binance, Coinbase, Bybit, dll) dan DEX (Orca, Jupiter) pasca-TGE.
+
+Participants
+
+JTO Token; Binance; Coinbase; Bybit; Orca; Jupiter; Jito Foundation
+
+Location
+
+Global (CEX & DEX)
+
+Status
+
+Completed
+
+Immediate Result
+
+Likuiditas pasar JTO tersedia; price discovery dimulai; aksesibilitas token bagi komunitas luas.
+
+Sources
+
+https://www.coingecko.com/en/coins/jito
+https://www.binance.com/en/trade/JTO_USDT
+https://www.coinbase.com/price/jito
+
+---
+
+Event ID
+
+EV-015
+
+Date
+
+2022-2024
+
+Event Name
+
+Ekspansi Ekosistem Integrasi JitoSOL di DeFi Solana
+
+Event Type
+
+Ecosystem
+
+Description
+
+JitoSOL terintegrasi ke protokol DeFi utama Solana (Kamino, Marginfi, Drift, Jupiter, Orca, Solend, dll) sebagai collateral, liquidity pair, dan yield-bearing asset.
+
+Participants
+
+JitoSOL; Kamino; Marginfi; Drift Protocol; Jupiter; Orca; Solend; Jito Labs, Inc.
+
+Location
+
+Solana Mainnet
+
+Status
+
+Ongoing
+
+Immediate Result
+
+JitoSOL menjadi LST dengan adopsi DeFi terluas di Solana; TVL dan utility token meningkat.
+
+Sources
+
+https://defillama.com/protocol/jito
+https://kamino.finance
+https://marginfi.com
+https://app.drift.trade
+
+---
+
+### KELOMPOK PER TAHUN
+
+#### 2021
+- EV-001: Pendirian Jito Labs
+
+#### 2022
+- EV-002: Pembiayaan Series A Jito Labs
+- EV-003: Peluncuran Jito-Solana Testnet/Devnet
+- EV-004: Peluncuran Jito-Solana Mainnet
+- EV-005: Peluncuran JitoSOL Liquid Staking Pool
+- EV-006: Audit Keamanan JitoSOL oleh Neodyme
+- EV-007: Audit Keamanan Jito-Solana Client oleh Kudelski Security
+- EV-015: Ekspansi Ekosistem Integrasi JitoSOL di DeFi Solana (mulai 2022)
+
+#### 2023
+- EV-008: Pembentukan Jito Foundation
+- EV-009: Token Generation Event (TGE) dan Airdrop JTO
+- EV-010: Peluncuran Jito DAO Governance
+- EV-011: Audit Keamanan Program Governance/JTO oleh Sec3
+- EV-014: Listing Token JTO di Exchange Utama
+
+#### 2024
+- EV-012: Peluncuran Jito Restaking (Vault Node Consensus)
+- EV-013: Audit Keamanan Jito Restaking (VNC) oleh Neodyme dan Sec3
+- EV-015: Ekspansi Ekosistem Integrasi JitoSOL di DeFi Solana (berlanjut 2024)
+
+---
+
+### RINGKASAN
+
+Total Events
+
+15
+
+Founding
+
+1
+
+Funding
+
+1
+
+Launch
+
+5
+
+Technology
+
+0
+
+Governance
+
+1
+
+Security
+
+4
+
+Legal
+
+0
+
+Regulation
+
+0
+
+Partnership
+
+0
+
+Integration
+
+1
+
+Token
+
+1
+
+Market
+
+1
+
+Organization
+
+1
+
+Infrastructure
+
+0
+
+Community
+
+0
+
+Product
+
+0
+
+Ecosystem
+
+1
+
+Other
+
+0
+
+---
+
+Open Threads
+
+- Tanggal pasti pembentukan Jito Foundation (bulan/tahun 2023) belum diverifikasi dari dokumen legal resmi (Certificate of Foundation Cayman Islands).
+- Tanggal pasti audit Kudelski Security untuk Jito-Solana client (bulan/tahun 2022-2023) belum dikonfirmasi dari laporan audit publik atau blog Kudelski.
+- Detail alokasi tokenomics TGE JTO (persentase airdrop 10%, komunitas, tim, investor, treasury) butuh cross-check ke blog resmi "JTO Token Launch" dan proposal governance (SIP) untuk angka pasti.
+- Daftar lengkap investor Series A (termasuk angel investors individual) belum terekspos sepenuhnya dari sumber primer The Block; hanya lead/major yang terkonfirmasi.
+- Tanggal pasti "Testnet" Jito-Solana client (Apakah Agustus 2022 adalah devnet/public testnet atau mainnet-beta launch?) perlu dibedakan dari peluncuran JitoSOL (Des 2022) — sumber blog "Introducing Jito-Solana" vs "Jito-Solana Mainnet Launch" butuh verifikasi timestamp pasti.
+- Alamat kontrak token JTO (SPL Mint Address) pasti belum diverifikasi pada jawaban ini; perlu cross-check on-chain via Solscan/Jito Gov repo.
+- Keberadaan saluran Telegram resmi: website hanya menautkan Discord & X; perlu verifikasi apakah ada channel announcement Telegram yang dikelola team.
+- Identitas "Searcher" dan "Block Engine Operator" utama (entitas eksternal yang menjalankan infrastruktur MEV Jito) tidak terkatalog; ini adalah dependency infrastruktur kritis.
+- Detail proposal governance Jito DAO yang sudah dieksekusi (SIP-1, SIP-2, dst) dan parameter yang diubah (fee, delegation strategy) butuh enumerasi dari forum governance untuk timeline lengkap.
+- Tanggal peluncuran Jito Restaking (VNC) mainnet yang pasti (bulan/tanggal 2024) butuh verifikasi dari blog "Introducing Jito Restaking" atau on-chain program deploy timestamp.

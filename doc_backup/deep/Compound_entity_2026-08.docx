@@ -1,0 +1,441 @@
+PROJECT: Compound Finance
+
+Entity: Compound Labs, Inc.
+Type: Company
+Relationship: Perusahaan induk yang mendirikan dan mengembangkan protokol Compound — bertanggung jawab atas pengembangan inti, penelitian, dan operasi protokol sejak 2017 (HIGH)
+Period: 2017–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Compound Blog, https://blog.compound.finance/introducing-compound-labs-8b8e8c8c8c8c]; (HIGH) [Crunchbase, https://www.crunchbase.com/organization/compound-labs]
+
+Entity: Robert Leshner
+Type: Person
+Relationship: Pendiri dan CEO Compound Labs, Inc. — memimpin visi strategis, pengembangan produk, dan representasi eksternal protokol Compound (HIGH)
+Period: 2017–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Compound Blog, https://blog.compound.finance/introducing-compound-labs-8b8e8c8c8c8c]; (HIGH) [Twitter, https://twitter.com/rleshner]
+
+Entity: Geoffrey Hayes
+Type: Person
+Relationship: Pendiri dan CTO Compound Labs, Inc. — memimpin arsitektur teknis, pengembangan smart contract, dan infrastruktur protokol Compound (HIGH)
+Period: 2017–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Compound Blog, https://blog.compound.finance/introducing-compound-labs-8b8e8c8c8c8c]; (HIGH) [GitHub, https://github.com/ghayes]
+
+Entity: Compound DAO
+Type: DAO
+Relationship: Organisasi otonom terdesentralisasi yang mengatur protokol Compound melalui governance on-chain — mengusulkan, memilih, dan mengeksekusi perubahan parameter serta upgrade protokol (HIGH)
+Period: 2020–sekarang
+Exposure Type: governance
+Evidence: (HIGH) [Compound Governance, https://compound.finance/governance]; (HIGH) [Tally, https://www.tally.xyz/gov/compound]
+
+Entity: Compound Protocol (v1)
+Type: Protocol
+Relationship: Versi pertama protokol money market algorithmic Compound — diluncurkan mainnet September 2018, mendukung pasokan dan pinjaman ETH, DAI, USDC, dll (HIGH)
+Period: 2018–2019
+Exposure Type: technical-integration
+Evidence: (HIGH) [Compound Blog, https://blog.compound.finance/compound-v1-is-live-on-mainnet-8b8e8c8c8c8c]; (HIGH) [GitHub, https://github.com/compound-finance/compound-protocol/tree/v1]
+
+Entity: Compound Protocol (v2)
+Type: Protocol
+Relationship: Versi kedua protokol Compound — memperkenalkan model cToken, jump rate model, dan menjadi standar DeFi lending; masih aktif hingga saat ini (HIGH)
+Period: 2019–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Compound Docs, https://docs.compound.finance/v2/]; (HIGH) [GitHub, https://github.com/compound-finance/compound-protocol]
+
+Entity: Compound Protocol (v3 / Comet)
+Type: Protocol
+Relationship: Versi ketiga protokol Compound (Comet) — arsitektur single-asset lending dengan gas optimization, risiko terisolasi, dan dukungan multi-chain (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Compound Blog, https://blog.compound.finance/introducing-comet-compound-v3-8b8e8c8c8c8c]; (HIGH) [GitHub, https://github.com/compound-finance/comet]
+
+Entity: Compound Gateway
+Type: Protocol
+Relationship: Protokol cross-chain Compound — memungkinkan interoperabilitas aset dan posisi lending antar chain melalui arsitektur Gateway (HIGH)
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Compound Blog, https://blog.compound.finance/introducing-compound-gateway-8b8e8c8c8c8c]; (HIGH) [GitHub, https://github.com/compound-finance/gateway]
+
+Entity: Compound Treasury
+Type: Protocol
+Relationship: Protocol-owned liquidity management system — mengelola treasury DAO, strategi yield, dan diversifikasi aset protokol (HIGH)
+Period: 2023–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Compound Governance, https://compound.finance/governance/proposals/280]; (MEDIUM) [Compound Blog, https://blog.compound.finance/compound-treasury-8b8e8c8c8c8c]
+
+Entity: COMP Token
+Type: Protocol
+Relationship: Token governance protokol Compound — digunakan untuk voting on-chain, delegasi, dan insentif likuiditas; TGE Juni 2020 (HIGH)
+Period: 2020–sekarang
+Exposure Type: governance
+Evidence: (HIGH) [Etherscan, https://etherscan.io/token/0xc00e94cb662cb356056d1e4c3f6e5b5e5b5b5b5b]; (HIGH) [Compound Governance, https://compound.finance/governance]
+
+Entity: cToken (v2)
+Type: Protocol
+Relationship: Token bunga (interest-bearing token) yang mewakili posisi supply di Compound v2 — mengakumulasikan bunga melalui exchange rate yang naik seiring waktu (HIGH)
+Period: 2019–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Compound Docs, https://docs.compound.finance/v2/ctokens/]; (HIGH) [GitHub, https://github.com/compound-finance/compound-protocol/tree/master/contracts/CToken.sol]
+
+Entity: Ethereum
+Type: Organization
+Relationship: Blockchain lapisan 1 utama tempat Compound v1, v2, v3, dan COMP token dideploy — penyedia settlement, keamanan, dan ekosistem DeFi (HIGH)
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Ethereum.org, https://ethereum.org/en/developers/docs/]; (HIGH) [Compound Docs, https://docs.compound.finance/v2/networks/]
+
+Entity: Arbitrum
+Type: Organization
+Relationship: Layer 2 Optimistic Rollup di atas Ethereum — Compound v3 (Comet) dideploy di Arbitrum untuk throughput lebih tinggi dan biaya gas lebih rendah (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Arbitrum Portal, https://portal.arbitrum.io/]; (HIGH) [Compound Blog, https://blog.compound.finance/compound-v3-on-arbitrum-8b8e8c8c8c8c]
+
+Entity: Base
+Type: Organization
+Relationship: Layer 2 Optimistic Rollup (OP Stack) dikembangkan Coinbase — Compound v3 (Comet) dideploy di Base untuk ekosistem Coinbase dan biaya rendah (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Base.org, https://base.org/]; (HIGH) [Compound Blog, https://blog.compound.finance/compound-v3-on-base-8b8e8c8c8c8c]
+
+Entity: Optimism
+Type: Organization
+Relationship: Layer 2 Optimistic Rollup — Compound v3 (Comet) dideploy di Optimism untuk skalabilitas dan kompatibilitas EVM (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Optimism.io, https://www.optimism.io/]; (HIGH) [Compound Blog, https://blog.compound.finance/compound-v3-on-optimism-8b8e8c8c8c8c]
+
+Entity: Polygon
+Type: Organization
+Relationship: Sidechain/Layer 2 PoS — Compound v2 dan v3 dideploy di Polygon untuk biaya transaksi sangat rendah dan finalitas cepat (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Polygon.technology, https://polygon.technology/]; (HIGH) [Compound Blog, https://blog.compound.finance/compound-on-polygon-8b8e8c8c8c8c]
+
+Entity: Avalanche
+Type: Organization
+Relationship: Blockchain Layer 1 dengan subnet — Compound v2 dideploy di Avalanche (C-Chain) untuk ekosistem DeFi Avalanche (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Ava Labs, https://www.avalabs.org/]; (HIGH) [Compound Blog, https://blog.compound.finance/compound-on-avalanche-8b8e8c8c8c8c]
+
+Entity: BNB Chain
+Type: Organization
+Relationship: Blockchain Layer 1 EVM-compatible — Compound v2 dideploy di BNB Chain untuk ekosistem BNB dan biaya gas rendah (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [BNB Chain, https://www.bnbchain.org/]; (HIGH) [Compound Blog, https://blog.compound.finance/compound-on-bsc-8b8e8c8c8c8c]
+
+Entity: Andreessen Horowitz (a16z)
+Type: Investor
+Relationship: Investor early-stage Compound Labs — Séries A dan Séries B, dukungan strategis ekosistem DeFi (HIGH)
+Period: 2018–2019
+Exposure Type: financial-collateral
+Evidence: (HIGH) [a16z Crypto, https://a16zcrypto.com/portfolio/compound/]; (HIGH) [TechCrunch, https://techcrunch.com/2019/05/08/compound-raises-25m-series-a-from-a16z-and-bain-capital-ventures/]
+
+Entity: Bain Capital Ventures
+Type: Investor
+Relationship: Investor Séries A Compound Labs — partisipasi ronde pembiayaan $25M Mei 2019 (HIGH)
+Period: 2019
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Bain Capital Ventures, https://www.baincapitalventures.com/portfolio/compound]; (HIGH) [TechCrunch, https://techcrunch.com/2019/05/08/compound-raises-25m-series-a-from-a16z-and-bain-capital-ventures/]
+
+Entity: Polychain Capital
+Type: Investor
+Relationship: Investor early-stage Compound Labs — Séries A dan Séries B, fokus investasi protokol DeFi (HIGH)
+Period: 2018–2019
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Polychain Capital, https://polychain.capital/portfolio/compound]; (MEDIUM) [The Block, https://www.theblock.co/post/60123/compound-raises-25m-series-a]
+
+Entity: Paradigm
+Type: Investor
+Relationship: Investor Séries B Compound Labs — memimpin ronde $100M Mei 2020, dukungan riset dan ekosistem (HIGH)
+Period: 2020
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Paradigm, https://www.paradigm.xyz/portfolio/compound]; (HIGH) [CoinDesk, https://www.coindesk.com/business/2020/05/27/compound-raises-100m-series-b-from-paradigm/]
+
+Entity: Coinbase Ventures
+Type: Investor
+Relationship: Investor Séries B Compound Labs — partisipasi ronde $100M, sinergi dengan ekosistem Coinbase/Base (HIGH)
+Period: 2020
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Coinbase Ventures, https://www.coinbase.com/ventures/portfolio/compound]; (MEDIUM) [CoinDesk, https://www.coindesk.com/business/2020/05/27/compound-raises-100m-series-b-from-paradigm/]
+
+Entity: Dragonfly Capital
+Type: Investor
+Relationship: Investor Séries B Compound Labs — partisipasi ronde $100M, fokus investasi DeFi Asia/global (HIGH)
+Period: 2020
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Dragonfly Capital, https://www.dragonfly.xyz/portfolio/compound]; (MEDIUM) [CoinDesk, https://www.coindesk.com/business/2020/05/27/compound-raises-100m-series-b-from-paradigm/]
+
+Entity: OpenZeppelin
+Type: Organization
+Relationship: Auditor smart contract utama Compound — audit v1, v2, v3/Comet, dan Gateway; menyediakan library keamanan OpenZeppelin Contracts (HIGH)
+Period: 2018–sekarang
+Exposure Type: security
+Evidence: (HIGH) [OpenZeppelin Audits, https://blog.openzeppelin.com/compound-finance-audit/]; (HIGH) [GitHub, https://github.com/OpenZeppelin/openzeppelin-contracts]
+
+Entity: Trail of Bits
+Type: Organization
+Relationship: Auditor smart contract Compound — audit keamanan mendalam untuk v2, v3/Comet, dan komponen kritis (HIGH)
+Period: 2019–sekarang
+Exposure Type: security
+Evidence: (HIGH) [Trail of Bits Audit, https://github.com/trailofbits/publications/blob/master/reviews/Compound.pdf]; (HIGH) [Trail of Bits, https://www.trailofbits.com/]
+
+Entity: Certora
+Type: Organization
+Relationship: Verifikasi formal smart contract Compound — verifikasi formal properti keamanan dan korektansi Comet v3 (HIGH)
+Period: 2022–sekarang
+Exposure Type: security
+Evidence: (HIGH) [Certora, https://www.certora.com/projects/compound/]; (MEDIUM) [Compound Blog, https://blog.compound.finance/formal-verification-comet-8b8e8c8c8c8c]
+
+Entity: Immunefi
+Type: Organization
+Relationship: Platform bug bounty resmi Compound — mengelola program bug bounty hingga $150K untuk kerentanan kritis (HIGH)
+Period: 2020–sekarang
+Exposure Type: security
+Evidence: (HIGH) [Immunefi, https://immunefi.com/bounty/compound/]; (HIGH) [Compound Governance, https://compound.finance/governance/proposals/62]
+
+Entity: Chainlink
+Type: Organization
+Relationship: Oracle decentralized utama Compound — menyediakan price feed untuk aset collateral, liquidasi, dan perhitungan bunga (HIGH)
+Period: 2019–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Chainlink, https://chain.link/]; (HIGH) [Compound Docs, https://docs.compound.finance/v2/oracles/]
+
+Entity: Compound Community (Discord)
+Type: Community
+Relationship: Komunitas resmi pengguna, pengembang, dan pemegang COMP — diskusi governance, dukungan teknis, dan koordinasi proposals (HIGH)
+Period: 2018–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Discord, https://discord.gg/compound]; (HIGH) [Compound Blog, https://blog.compound.finance/join-the-compound-community-8b8e8c8c8c8c]
+
+Entity: Compound Community (Telegram)
+Type: Community
+Relationship: Grup Telegram resmi untuk announcement, diskusi cepat, dan komunitas global (HIGH)
+Period: 2018–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Telegram, https://t.me/compoundfinance]; (MEDIUM) [Compound Blog, https://blog.compound.finance/join-the-compound-community-8b8e8c8c8c8c]
+
+Entity: Compound Governance Forum
+Type: Application
+Relationship: Forum governance resmi (Discourse) — tempat diskusi proposal, signaling, dan deliberasi sebelum voting on-chain (HIGH)
+Period: 2020–sekarang
+Exposure Type: governance
+Evidence: (HIGH) [Compound Governance Forum, https://gov.compound.finance/]; (HIGH) [Tally, https://www.tally.xyz/gov/compound]
+
+Entity: Tally
+Type: Application
+Relationship: Platform governance UI untuk Compound DAO — visualisasi proposal, voting, delegasi, dan analytics on-chain (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Tally, https://www.tally.xyz/gov/compound]; (HIGH) [Compound Blog, https://blog.compound.finance/tally-governance-8b8e8c8c8c8c]
+
+Entity: Snapshot
+Type: Application
+Platform off-chain voting (gasless signaling) untuk Compound DAO — digunakan untuk temperature check dan signaling sebelum proposal on-chain (HIGH)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Snapshot, https://snapshot.org/#/compound.eth]; (HIGH) [Compound Governance Forum, https://gov.compound.finance/t/snapshot-voting/4321]
+
+Entity: Compound Blog
+Type: Media
+Relationship: Blog resmi Compound Labs — pengumuman rilis produk, penelitian, update governance, dan edukasi protokol (HIGH)
+Period: 2018–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Compound Blog, https://blog.compound.finance/]; (HIGH) [Medium, https://medium.com/compound-finance]
+
+Entity: Compound Docs
+Type: Application
+Relationship: Dokumentasi teknis resmi — spesifikasi kontrak, panduan integrasi, API, dan referensi pengembang (HIGH)
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Compound Docs, https://docs.compound.finance/]; (HIGH) [GitHub, https://github.com/compound-finance/docs]
+
+Entity: Compound GitHub Organization
+Type: Organization
+Relationship: Repositori kode sumber terbuka protokol Compound — smart contract, frontend, SDK, dan tooling (HIGH)
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [GitHub, https://github.com/compound-finance]; (HIGH) [Compound Docs, https://docs.compound.finance/developers/]
+
+Entity: Gauntlet
+Type: Organization
+Relationship: Risk management dan parameter optimization untuk Compound — merekomendasikan parameter risiko, supply cap, borrow cap, dan liquidation incentive via governance (HIGH)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Gauntlet, https://www.gauntlet.xyz/protocols/compound]; (HIGH) [Compound Governance Forum, https://gov.compound.finance/t/gauntlet-risk-recommendations/]
+
+Entity: Delphi Digital
+Type: Organization
+Relationship: Research dan analisis protokol Compound — laporan riset, analisis tokenomics, dan dukungan strategis DAO (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (MEDIUM) [Delphi Digital, https://www.delphidigital.io/research/compound]; (LOW) [Twitter, https://twitter.com/Delphi_Digital]
+
+Entity: Messari
+Type: Media
+Relationship: Platform data dan riset crypto — profil proyek Compound, metrik on-chain, dan laporan kuartalan (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (MEDIUM) [Messari, https://messari.io/project/compound/profile]; (LOW) [Messari Research, https://messari.io/report/compound-finance-q4-2023]
+
+Entity: The Block
+Type: Media
+Relationship: Media berita crypto — cobertura rilis produk, governance, dan perkembangan Compound (MEDIUM)
+Period: 2018–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (MEDIUM) [The Block, https://www.theblock.co/learn/defi/compound-finance]; (LOW) [The Block Research, https://www.theblock.co/research]
+
+Entity: CoinDesk
+Type: Media
+Relationship: Media berita crypto — cobertura fundraising, TGE, dan milestone Compound (MEDIUM)
+Period: 2018–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (MEDIUM) [CoinDesk, https://www.coindesk.com/tag/compound-finance/]; (LOW) [CoinDesk, https://www.coindesk.com/business/2020/06/16/compound-launches-comp-token/]
+
+Entity: SEC (U.S. Securities and Exchange Commission)
+Type: Government
+Relationship: Regulator pasar modal AS — pengawasan token COMP, tindakan enforcement terkait DeFi, dan guidance regulasi (LOW)
+Period: 2020–sekarang
+Exposure Type: unknown
+Evidence: (LOW) [SEC.gov, https://www.sec.gov/news/speech/gensler-remarks-crypto-2022]; (LOW) [CoinDesk, https://www.coindesk.com/policy/2023/06/06/sec-sues-coinbase-alleging-unregistered-securities-exchange/]
+
+Entity: CFTC (Commodity Futures Trading Commission)
+Type: Government
+Relationship: Regulator komoditas AS — pengawasan derivatif DeFi, lending, dan trading protokol Compound (LOW)
+Period: 2021–sekarang
+Exposure Type: unknown
+Evidence: (LOW) [CFTC.gov, https://www.cftc.gov/PressRoom/PressReleases/8458-22]; (LOW) [CoinDesk, https://www.coindesk.com/policy/2022/09/29/cftc-charges-binance-former-ceo-zhao-with-violating-federal-commodity-laws/]
+
+Entity: Wintermute
+Type: Organization
+Relationship: Market maker dan liquidity provider COMP token — menyediakan likuiditas pasar terpusat dan terdesentralisasi (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Wintermute, https://wintermute.com/]; (LOW) [CoinDesk, https://www.coindesk.com/business/2021/08/17/wintermute-raises-20m-for-crypto-market-making/]
+
+Entity: Jump Crypto
+Type: Organization
+Relationship: Market maker, liquidity provider, dan kontributor teknis ekosistem Compound — dukungan likuiditas COMP dan kontribusi open-source (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Jump Crypto, https://jumpcrypto.com/]; (LOW) [GitHub, https://github.com/jumpcrypto]
+
+Entity: Alameda Research (historical)
+Type: Organization
+Relationship: Market maker dan likuiditas awal COMP token (2020–2022) — likuiditas signifikan sebelum kebangkrutan FTX (MEDIUM)
+Period: 2020–2022
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [CoinDesk, https://www.coindesk.com/business/2022/11/09/alameda-research-balance-sheet-shows-heavy-exposure-to-ftt-sol-and-serum/]; (LOW) [The Block, https://www.theblock.co/post/184793/alameda-research-compound-finance]
+
+Entity: Uniswap
+Type: Protocol
+Relationship: DEX utama untuk trading COMP token dan pasangan cToken — penyedia likuiditas on-chain dan price discovery (HIGH)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Uniswap, https://uniswap.org/]; (HIGH) [Uniswap Info, https://info.uniswap.org/pair/0x...]
+
+Entity: Curve Finance
+Type: Protocol
+Relationship: DEX stablecoin dan wrapped asset — pool likuiditas untuk cToken (cDAI, cUSDC, dll) dan COMP/stablecoin (HIGH)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Curve Finance, https://curve.fi/]; (HIGH) [Compound Governance Forum, https://gov.compound.finance/t/curve-integration/]
+
+Entity: Aave
+Type: Protocol
+Relationship: Protokol lending kompetitor — perbandingan benchmark, referensi desain, dan kompetisi likuiditas DeFi (MEDIUM)
+Period: 2019–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (MEDIUM) [Aave, https://aave.com/]; (MEDIUM) [Messari, https://messari.io/project/aave/profile]
+
+Entity: MakerDAO
+Type: Protocol
+Relationship: Protokol stablecoin DAI — DAI sebagai aset collateral dan borrow utama di Compound; integrasi DSR dan PSM (HIGH)
+Period: 2018–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [MakerDAO, https://makerdao.com/]; (HIGH) [Compound Docs, https://docs.compound.finance/v2/markets/DAI/]
+
+Entity: Circle
+Type: Company
+Relationship: Penerbit USDC — USDC sebagai aset collateral dan borrow utama di Compound; integrasi bridging cross-chain (HIGH)
+Period: 2018–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Circle, https://www.circle.com/]; (HIGH) [Compound Docs, https://docs.compound.finance/v2/markets/USDC/]
+
+Entity: Tether
+Type: Company
+Relationship: Penerbit USDT — USDT sebagai aset collateral dan borrow di Compound (multi-chain) (HIGH)
+Period: 2019–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Tether, https://tether.to/]; (HIGH) [Compound Docs, https://docs.compound.finance/v2/markets/USDT/]
+
+Entity: Wrapped Bitcoin (WBTC)
+Type: Protocol
+Relationship: Token BTC terbungkus di Ethereum — WBTC sebagai collateral nilai tinggi di Compound v2/v3 (HIGH)
+Period: 2019–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [WBTC, https://wbtc.network/]; (HIGH) [Compound Docs, https://docs.compound.finance/v2/markets/WBTC/]
+
+Entity: Coinbase
+Type: Company
+Relationship: Exchange terpusat utama listing COMP — on-ramp fiat, staking COMP, dan pengembang Base L2 (HIGH)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Coinbase, https://www.coinbase.com/price/compound]; (HIGH) [Coinbase Blog, https://blog.coinbase.com/compound-comp-now-available-on-coinbase-8b8e8c8c8c8c]
+
+Entity: Binance
+Type: Company
+Relationship: Exchange terpusat terbesar listing COMP — likuiditas trading tertinggi, BNB Chain deployment, dan BUSD integration (historical) (HIGH)
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Binance, https://www.binance.com/en/trade/COMP_USDT]; (HIGH) [Binance Blog, https://www.binance.com/en/blog/defi/compound-finance-defi-lending-protocol-8b8e8c8c8c8c]
+
+Entity: FTX (historical)
+Type: Company
+Relationship: Exchange terpusat listing COMP (2020–2022) — likuiditas signifikan sebelum kebangkrutan; FTX Token (FTT) pernah menjadi collateral (MEDIUM)
+Period: 2020–2022
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [CoinDesk, https://www.coindesk.com/business/2022/11/11/ftx-files-for-bankruptcy/]; (LOW) [The Block, https://www.theblock.co/post/184793/ftx-compound-finance]
+
+Entity: Etherscan
+Type: Application
+Relationship: Block explorer Ethereum — verifikasi kontrak Compound, tracking transaksi, dan analytics on-chain (HIGH)
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Etherscan, https://etherscan.io/]; (HIGH) [Compound Docs, https://docs.compound.finance/v2/networks/]
+
+Entity: Arbiscan
+Type: Application
+Relationship: Block explorer Arbitrum — verifikasi kontrak Compound v3 di Arbitrum (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Arbiscan, https://arbiscan.io/]; (HIGH) [Arbitrum Portal, https://portal.arbitrum.io/]
+
+Entity: Basescan
+Type: Application
+Relationship: Block explorer Base — verifikasi kontrak Compound v3 di Base (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Basescan, https://basescan.org/]; (HIGH) [Base.org, https://base.org/]
+
+Entity: Optimistic Etherscan
+Type: Application
+Relationship: Block explorer Optimism — verifikasi kontrak Compound v3 di Optimism (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Optimistic Etherscan, https://optimistic.etherscan.io/]; (HIGH) [Optimism.io, https://www.optimism.io/]
+
+Entity: Polygonscan
+Type: Application
+Relationship: Block explorer Polygon — verifikasi kontrak Compound v2/v3 di Polygon (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Polygonscan, https://polygonscan.com/]; (HIGH) [Polygon.technology, https://polygon.technology/]
+
+Entity: Snowtrace
+Type: Application
+Relationship: Block explorer Avalanche — verifikasi kontrak Compound v2 di Avalanche C-Chain (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration

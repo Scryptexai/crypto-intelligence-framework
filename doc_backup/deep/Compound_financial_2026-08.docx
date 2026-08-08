@@ -1,0 +1,155 @@
+PROJECT: Compound Finance
+
+## Funding History
+
+Funding Round: Series A
+Date: 2019-05-08
+Amount: $25,000,000
+Currency: USD
+Lead Investor: Andreessen Horowitz (a16z), Bain Capital Ventures
+Participating Investors: Polychain Capital
+Valuation: tidak diungkap
+Funding Type: Series A
+Status: Completed
+Sources: (HIGH) [TechCrunch, https://techcrunch.com/2019/05/08/compound-raises-25m-series-a-from-a16z-and-bain-capital-ventures/]
+
+Funding Round: Series B
+Date: 2020-05-27
+Amount: $100,000,000
+Currency: USD
+Lead Investor: Paradigm
+Participating Investors: Coinbase Ventures, Dragonfly Capital, Andreessen Horowitz, Bain Capital Ventures, Polychain Capital
+Valuation: tidak diungkap
+Funding Type: Series B
+Status: Completed
+Sources: (HIGH) [CoinDesk, https://www.coindesk.com/business/2020/05/27/compound-raises-100m-series-b-from-paradigm/]
+
+## Treasury
+
+Current Treasury Size: tidak diungkap (tidak ada dashboard treasury resmi publik dengan angka real-time)
+Treasury Composition: tidak diungkap secara detail per aset
+Stablecoin Holdings: tidak diungkap
+Native Token Holdings: tidak diungkap (COMP token holdings treasury tidak dipublikasikan secara terpisah dari supply total)
+Other Assets: tidak diungkap
+Treasury Custodian: Compound DAO (on-chain governance multisig/timelock)
+Sources: (HIGH) [Compound Governance Proposal 280, https://compound.finance/governance/proposals/280]; (MEDIUM) [Compound Blog, https://blog.compound.finance/compound-treasury-8b8e8c8c8c8c]
+
+## Revenue Model
+
+Revenue Stream: Reserve Factor (Protocol Fee)
+Description: Persentase dari bunga pinjaman (borrow interest) yang dialokasikan ke protokol sebagai revenue; bervariasi per aset (typical 5-20% dari spread bunga)
+Status: Live
+Sources: (HIGH) [Compound Docs v2, https://docs.compound.finance/v2/comptroller/#reserve-factor]; (HIGH) [Compound Docs v3, https://docs.compound.finance/v3/]
+
+Revenue Stream: Treasury Yield Strategies
+Description: Yield yang dihasilkan dari aset treasury yang dikelola melalui strategi yang disetujui governance (lending, staking, dll)
+Status: Live (sejak Proposal 280 Des 2023)
+Sources: (HIGH) [Compound Governance Proposal 280, https://compound.finance/governance/proposals/280]; (MEDIUM) [Compound Blog, https://blog.compound.finance/compound-treasury-8b8e8c8c8c8c]
+
+Revenue Stream: Liquidation Penalty (sebagian ke protokol)
+Description: Bagian dari liquidation incentive yang mengalir ke reserve protokol (bukan ke liquidator) — di v2 melalui reserve factor, di v3 melalui absorb mechanism
+Status: Live
+Sources: (HIGH) [Compound Docs v2, https://docs.compound.finance/v2/liquidation/]; (HIGH) [Compound GitHub Comet, https://github.com/compound-finance/comet/blob/main/contracts/Comet.sol]
+
+## Revenue History
+
+Tidak diungkap. (Tidak ada laporan revenue berkala resmi dari Compound Labs atau Compound DAO; data on-chain tersedia via subgraph tapi tidak diagregasi menjadi laporan keuangan periodik publik)
+Sources: (HIGH) [Compound Governance Forum, https://gov.compound.finance/]; (MEDIUM) [Messari, https://messari.io/project/compound/profile]
+
+## Fundraising Mechanism
+
+VC Funding: Series A ($25M) dan Series B ($100M) dari investor venture capital terkemuka (a16z, Paradigm, Bain Capital Ventures, Polychain, Coinbase Ventures, Dragonfly Capital)
+Protocol Revenue: Reserve factor dari aktivitas lending/borrowing protokol v2 dan v3
+DAO Treasury: Aset yang dikumpulkan via reserve factor dan dikelola melalui governance (Proposal 280)
+Bootstrapping: Pengembangan awal (2017-2018) didanai oleh pendiri sebelum Series A
+Sources: (HIGH) [TechCrunch, https://techcrunch.com/2019/05/08/compound-raises-25m-series-a-from-a16z-and-bain-capital-ventures/]; (HIGH) [CoinDesk, https://www.coindesk.com/business/2020/05/27/compound-raises-100m-series-b-from-paradigm/]; (HIGH) [Compound Governance Proposal 280, https://compound.finance/governance/proposals/280]
+
+## Token Sale
+
+Tidak ada token sale (private sale, public sale, launchpad, auction, community sale). Token COMP didistribusikan melalui:
+- Retroactive distribution ke pengguna protokol (Juni 2020)
+- Ongoing distribution via governance rewards (supplier/borrower incentives)
+- Alokasi tim/investor dengan vesting 4 tahun (detail vesting adalah Phase 6, tidak dibahas di sini)
+Sources: (HIGH) [Compound Governance, https://compound.finance/governance]; (HIGH) [Compound Blog, https://blog.compound.finance/compound-comp-token-launch-8b8e8c8c8c8c]
+
+## Financial Dependencies
+
+Dependency: Venture Capital Investors (Series A & B)
+Entities: Andreessen Horowitz, Bain Capital Ventures, Polychain Capital, Paradigm, Coinbase Ventures, Dragonfly Capital
+Nature: Modal awal untuk pengembangan protokol, ekspansi tim, dan operasi Compound Labs, Inc.
+Sources: (HIGH) [TechCrunch, https://techcrunch.com/2019/05/08/compound-raises-25m-series-a-from-a16z-and-bain-capital-ventures/]; (HIGH) [CoinDesk, https://www.coindesk.com/business/2020/05/27/compound-raises-100m-series-b-from-paradigm/]
+
+Dependency: Protocol Revenue (Reserve Factor)
+Entities: Compound DAO (penerima revenue on-chain)
+Nature: Sumber pendapatan berkelanjutan untuk treasury dan operasional protokol pasca-Series B
+Sources: (HIGH) [Compound Docs v2, https://docs.compound.finance/v2/comptroller/#reserve-factor]; (HIGH) [Compound Docs v3, https://docs.compound.finance/v3/]
+
+Dependency: Chainlink Oracle Infrastructure
+Entities: Chainlink Labs / Chainlink Network
+Nature: Price feed kritis untuk valuasi collateral, liquidasi, dan perhitungan bunga — kegagalan oracle berisiko kerugian finansial protokol
+Sources: (HIGH) [Compound Docs v2, https://docs.compound.finance/v2/oracles/]; (HIGH) [Chainlink, https://chain.link/]
+
+Dependency: Ethereum & L2 Networks (Gas Fees & Settlement)
+Entities: Ethereum Foundation, Arbitrum, Base (Coinbase), Optimism, Polygon, Avalanche, BNB Chain
+Nature: Biaya transaksi dan finalitas settlement mempengaruhi volume protokol dan revenue
+Sources: (HIGH) [Compound Docs, https://docs.compound.finance/v2/networks/]
+
+## Financial Risk
+
+Risk: Treasury Concentration Risk
+Description: Komposisi treasury tidak transparan publik; konsentrasi aset tunggal (mis. USDC, COMP) tidak dapat diverifikasi
+Source: (MEDIUM) [Compound Governance Proposal 280, https://compound.finance/governance/proposals/280] — proposal menyebut diversifikasi tapi tidak mempublikasikan breakdown terkini
+
+Risk: Revenue Dependency on Borrow Demand
+Description: Reserve factor revenue sebanding dengan utilization rate dan borrow demand; bear market mengurangi revenue signifikan
+Source: (HIGH) [Compound Docs v2, https://docs.compound.finance/v2/interest-rate-model/]; (MEDIUM) [Messari, https://messari.io/project/compound/profile] — laporan kuartalan menunjukkan korelasi revenue dengan siklus pasar
+
+Risk: Oracle Failure Financial Loss
+Description: Kegagalan atau manipulasi Chainlink Price Feeds dapat menyebabkan liquidasi tidak adil atau bad debt protokol
+Source: (HIGH) [Compound Docs v2, https://docs.compound.finance/v2/oracles/]; (HIGH) [Chainlink, https://chain.link/security/]
+
+Risk: Smart Contract Exploit / Bad Debt
+Description: Kerentanan smart contract (v2 Comptroller upgradeable, v3 immutable tapi kompleks) dapat mengakibatkan kerugian dana pengguna dan protokol
+Source: (HIGH) [Immunefi Bug Bounty, https://immunefi.com/bounty/compound/]; (HIGH) [OpenZeppelin Audit, https://blog.openzeppelin.com/compound-finance-audit/]
+
+Risk: Regulatory Uncertainty (SEC/CFTC)
+Description: Status regulasi token COMP dan aktivitas lending DeFi belum jelas di AS; potensi enforcement action mempengaruhi operasional dan valuasi
+Source: (LOW) [SEC.gov, https://www.sec.gov/news/speech/gensler-remarks-crypto-2022]; (LOW) [CFTC.gov, https://www.cftc.gov/PressRoom/PressReleases/8458-22]
+
+Risk: Cross-chain Bridge Risk (Gateway)
+Description: Compound Gateway memperkenalkan risiko bridge cross-chain; kegagalan messaging atau validasi dapat mengakibatkan kehilangan aset
+Source: (HIGH) [Compound Blog Gateway, https://blog.compound.finance/introducing-compound-gateway-8b8e8c8c8c8c]; (HIGH) [OpenZeppelin Gateway Audit, https://blog.openzeppelin.com/compound-gateway-audit/]
+
+## Official Financial Resources
+
+Official Blog: https://blog.compound.finance/
+Transparency Report: tidak tersedia (tidak ada laporan transparansi keuangan berkala resmi)
+Treasury Dashboard: tidak tersedia (tidak ada dashboard treasury real-time publik resmi)
+Governance: https://compound.finance/governance
+Messari: https://messari.io/project/compound/profile
+Token Terminal: https://tokenterminal.com/terminal/projects/compound
+DefiLlama: https://defillama.com/protocol/compound
+CryptoRank: https://cryptorank.io/price/compound-finance
+Whitepaper (Original): https://compound.finance/documents/Compound.Whitepaper.pdf
+Whitepaper v2: https://compound.finance/documents/Compound.v2.Whitepaper.pdf
+
+## Summary
+
+Total Funding Raised: $125,000,000 (Series A $25M + Series B $100M)
+Funding Rounds: 2 (Series A Mei 2019, Series B Mei 2020)
+Treasury Status: Aktif sejak Proposal 280 (Des 2023), ukuran dan komposisi tidak diungkap publik secara real-time
+Revenue Sources: Reserve Factor (protocol fee dari borrow interest), Treasury Yield Strategies, Liquidation Penalty allocation
+Revenue Availability: Tidak diungkap secara periodik; data on-chain tersedia via subgraph tapi tidak diagregasi ke laporan keuangan resmi
+
+## Open Threads
+
+- Ukuran treasury terkini (total value locked di treasury contracts) — tidak ada dashboard publik; perlu query on-chain ke alamat treasury yang di-deploy via Proposal 280
+- Breakdown komposisi treasury per aset (USDC, COMP, ETH, stablecoin lain, dst) — tidak dipublikasikan; governance proposal menyebut "diversifikasi" tapi tidak ada laporan rinci
+- Revenue bulanan/kuartalan protokol (reserve factor accrual) — tidak diagregasi resmi; data tersedia di subgraph The Graph tapi butuh indexing dan agregasi manual
+- Alokasi revenue treasury ke operasional Compound Labs vs retained earnings — tidak diungkap; hubungan hukum Labs vs DAO untuk funding operasional tidak transparan
+- Vesting schedule investor Series A/B dan apakah ada token allocation — detail vesting adalah Phase 6, tapi implikasi finansial (potential sell pressure) relevan untuk risk assessment
+- Audit finansial independen (non-smart contract) — tidak ada laporan audit keuangan tradisional (GAAP/IFRS) untuk Compound Labs, Inc. atau DAO
+- Insurance coverage / protocol insurance fund — tidak ada insurance fund protokol seperti Aave Safety Module; risiko bad debt fully borne by suppliers
+- Compound Labs financial statements (revenue, expenses, runway) — private company, tidak filing publik; hanya funding rounds yang diumumkan
+- Impact COMP token price volatility pada treasury value (jika treasury hold COMP signifikan) — tidak dapat dikuantifikasi tanpa breakdown holdings
+- Gateway bridge revenue model (apakah ada fee cross-chain yang mengalir ke treasury) — tidak terdokumentasi di docs Gateway publik

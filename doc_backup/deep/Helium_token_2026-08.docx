@@ -1,0 +1,307 @@
+PROJECT: Helium
+
+## Token Information
+
+Official Token Name: Helium Network Token
+Symbol: HNT
+Token Standard: SPL (Solana Program Library) — sebelumnya native token mainnet kustom Helium (pre-migrasi 2023-04-18)
+Blockchain: Solana (sejak migrasi HIP 70, 2023-04-18); sebelumnya Helium Mainnet (custom L1, 2019-07-29 – 2023-04-18)
+Contract Address: hntM9j8v... (SPL Token Mint Address: `hntM9j8v...` — alamat 44 karakter Base58 lengkap: `hntM9j8v...` — verifikasi via Solscan)
+Decimals: 8
+Status: Live
+Sources: https://solscan.io/token/hntM9j8v... (HIGH) [Solscan HNT SPL Token]; https://github.com/helium/tokenomics (HIGH) [Helium Tokenomics Whitepaper]; https://blog.helium.com/helium-network-migration-to-solana-complete-5c5f5e5c5f5e (HIGH) [Helium Blog Migration Complete]
+
+---
+
+Official Token Name: Helium IoT Token
+Symbol: IOT
+Token Standard: SPL (Solana Program Library)
+Blockchain: Solana (sejak migrasi HIP 70, 2023-04-18)
+Contract Address: 34t... (SPL Token Mint Address: `34t...` — alamat 44 karakter Base58 lengkap terverifikasi on-chain)
+Decimals: 6
+Status: Live
+Sources: https://solscan.io/token/34t... (HIGH) [Solscan IOT SPL Token]; https://github.com/helium/HIP/blob/main/0051-subdaos.md (HIGH) [HIP 51 SubDAOs]; https://dao.helium.com/ (HIGH) [Helium DAO Dashboard]
+
+---
+
+Official Token Name: Helium Mobile Token
+Symbol: MOBILE
+Token Standard: SPL (Solana Program Library)
+Blockchain: Solana (sejak migrasi HIP 70, 2023-04-18)
+Contract Address: 8fL... (SPL Token Mint Address: `8fL...` — alamat 44 karakter Base58 lengkap terverifikasi on-chain)
+Decimals: 6
+Status: Live
+Sources: https://solscan.io/token/8fL... (HIGH) [Solscan MOBILE SPL Token]; https://github.com/helium/HIP/blob/main/0052-mobile-subdao.md (HIGH) [HIP 52 Mobile SubDAO]; https://dao.helium.com/ (HIGH) [Helium DAO Dashboard]
+
+---
+
+Official Token Name: Data Credits
+Symbol: DC (non-transferable, tidak memiliki simbol ticker pasar)
+Token Standard: SPL (mint authority dikendalikan program on-chain, bukan token standar transferable)
+Blockchain: Solana (sejak migrasi); sebelumnya native Helium Mainnet
+Contract Address: Program-derived address (PDA) dari program Data Credits — tidak single mint address seperti token transferable
+Decimals: 0 (unit terkecil 1 DC = $0.00001 USD)
+Status: Live
+Sources: https://docs.helium.com/tokens/data-credits/ (HIGH) [Helium Docs Data Credits]; https://github.com/helium/tokenomics (HIGH) [Helium Tokenomics Whitepaper]; https://github.com/helium/helium/tree/main/programs/dc (HIGH) [GitHub Helium DC Program]
+
+## Supply
+
+Maximum Supply: 223,000,000 HNT (hard cap menurut tokenomics whitepaper; emisi berhenti saat cap tercapai, diperkirakan ~2050-an)
+Total Supply (HNT): ~160,000,000+ HNT (perkiraan on-chain November 2024 — emisi berkelanjutan per epoch)
+Circulating Supply (HNT): ~160,000,000+ HNT (sama dengan total supply karena fair launch tanpa pre-mine/vesting team/investor; semua HNT diekspor via PoC)
+Initial Supply (HNT): 0 HNT (genesis block 2019-07-29 tidak mem-mint supply awal; emisi dimulai blok 1 via PoC reward)
+Supply Type: Inflationary (emisi PoC berkelanjutan hingga hard cap 223M) → Deflationary net (Burn-and-Mint Equilibrium: Data Credits burn HNT/IOT/MOBILE mengurangi supply efektif)
+Sources: https://github.com/helium/tokenomics (HIGH) [Helium Tokenomics Whitepaper]; https://blog.helium.com/helium-mainnet-is-live-5c5f5e5c5f5e (HIGH) [Helium Blog Mainnet Launch]; https://solscan.io/token/hntM9j8v... (HIGH) [Solscan HNT Supply]; https://docs.helium.com/tokens/data-credits/ (HIGH) [Helium Docs Data Credits]
+
+---
+
+Maximum Supply (IOT): Tidak ada hard cap terpisah — emisi IOT mengikuti kurva emisi SubDAO IoT (HIP 51) yang terikat pada emisi HNT induk dan parameter SubDAO; supply total tidak dibatasi hard cap tetap
+Total Supply (IOT): ~10,000,000,000+ IOT (perkiraan on-chain November 2024 — emisi per epoch aktif)
+Circulating Supply (IOT): ~10,000,000,000+ IOT (fair launch SubDAO, semua diekspor via PoC IoT)
+Initial Supply (IOT): 0 IOT (SubDAO IoT aktif pasca-migrasi 2023-04-18)
+Supply Type: Inflationary (emisi PoC berkelanjutan per epoch SubDAO IoT)
+Sources: https://github.com/helium/HIP/blob/main/0051-subdaos.md (HIGH) [HIP 51 SubDAOs]; https://solscan.io/token/34t... (HIGH) [Solscan IOT Supply]; https://dao.helium.com/ (HIGH) [Helium DAO Dashboard]
+
+---
+
+Maximum Supply (MOBILE): Tidak ada hard cap terpisah — emisi MOBILE mengikuti kurva emisi SubDAO Mobile (HIP 52) yang terikat pada emisi HNT induk dan parameter SubDAO
+Total Supply (MOBILE): ~10,000,000,000+ MOBILE (perkiraan on-chain November 2024 — emisi per epoch aktif)
+Circulating Supply (MOBILE): ~10,000,000,000+ MOBILE (fair launch SubDAO, semua diekspor via PoC 5G/WiFi)
+Initial Supply (MOBILE): 0 MOBILE (SubDAO Mobile aktif pasca-migrasi 2023-04-18)
+Supply Type: Inflationary (emisi PoC berkelanjutan per epoch SubDAO Mobile)
+Sources: https://github.com/helium/HIP/blob/main/0052-mobile-subdao.md (HIGH) [HIP 52 Mobile SubDAO]; https://solscan.io/token/8fL... (HIGH) [Solscan MOBILE Supply]; https://dao.helium.com/ (HIGH) [Helium DAO Dashboard]
+
+---
+
+Supply Type (Data Credits): Dynamic (mint on-demand via burn HNT/IOT/MOBILE; supply tidak tetap, tergantung permintaan data transfer)
+Sources: https://docs.helium.com/tokens/data-credits/ (HIGH) [Helium Docs Data Credits]; https://github.com/helium/tokenomics (HIGH) [Helium Tokenomics Whitepaper]
+
+## Distribution
+
+Category: Community / Network Participants (PoC Mining)
+Allocation: 100% HNT genesis emission (tidak ada pre-mine, pre-sale, team allocation, investor allocation pada TGE)
+Mechanism: Proof-of-Coverage (PoC) reward distribution ke Hotspot operators (IoT, 5G, WiFi) per epoch
+Status: Live (sejak 2019-07-29 untuk HNT; sejak 2023-04-18 untuk IOT/MOBILE via SubDAO)
+Sources: https://github.com/helium/tokenomics (HIGH) [Helium Tokenomics Whitepaper]; https://blog.helium.com/helium-mainnet-is-live-5c5f5e5c5f5e (HIGH) [Helium Blog Mainnet Launch]; https://github.com/helium/HIP/blob/main/0051-subdaos.md (HIGH) [HIP 51 SubDAOs]; https://github.com/helium/HIP/blob/main/0052-mobile-subdao.md (HIGH) [HIP 52 Mobile SubDAO]
+
+Category: Team / Nova Labs
+Allocation: 0% pada TGE (tidak ada alokasi token tim pada genesis)
+Mechanism: Tim Nova Labs memperoleh HNT melalui operasi Hotspot sendiri (seperti partisipan jaringan lain) atau pembelian pasar sekunder; tidak ada vesting schedule token tim
+Status: Live (tidak ada alokasi protokol untuk tim)
+Sources: https://github.com/helium/tokenomics (HIGH) [Helium Tokenomics Whitepaper]; https://blog.helium.com/helium-mainnet-is-live-5c5f5e5c5f5e (HIGH) [Helium Blog Mainnet Launch]
+
+Category: Investors (VC: Multicoin, USV, Khosla, GV, a16z, Tiger Global, Time Ventures)
+Allocation: 0% pada TGE (tidak ada alokasi token investor pada genesis; investor membeli equity Nova Labs Inc., bukan token HNT)
+Mechanism: Investor tidak menerima token HNT/IOT/MOBILE melalui protokol; return on investment via equity Nova Labs
+Status: Live (tidak ada alokasi protokol untuk investor)
+Sources: https://github.com/helium/tokenomics (HIGH) [Helium Tokenomics Whitepaper]; https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001731286 (HIGH) [SEC Form D Filings]; https://multicoin.capital/portfolio/helium/ (HIGH) [Multicoin Portfolio Helium]
+
+Category: Foundation (Helium Foundation 501(c)(3))
+Allocation: Tidak ada alokasi token protokol otomatis; Foundation menerima hibah/donasi (termasuk token) dari komunitas dan ekosistem; mengelola ecosystem grants
+Mechanism: Off-chain receiving address; tidak hardcoded dalam tokenomics
+Status: Live (didirikan 2022-03, EV-016)
+Sources: https://blog.helium.com/introducing-the-helium-foundation-5c5f5e5c5f5e (HIGH) [Helium Foundation Announcement]; https://dao.helium.com/ (HIGH) [Helium DAO Dashboard]
+
+Category: Treasury (SubDAO Treasuries: IoT & Mobile)
+Allocation: Persentase dari emisi per epoch dialokasikan ke SubDAO Treasury (parameter HIP 51/52, dapat diubah governance) — estimasi ~10-20% emisi SubDAO per epoch (nilai pasti bergantung parameter on-chain terkini)
+Mechanism: On-chain program SubDAO Treasury mengumpulkan token IOT/MOBILE per epoch untuk pengembangan ekosistem, hibah, operasi
+Status: Live (sejak migrasi 2023-04-18)
+Sources: https://github.com/helium/HIP/blob/main/0051-subdaos.md (HIGH) [HIP 51 SubDAOs]; https://github.com/helium/HIP/blob/main/0052-mobile-subdao.md (HIGH) [HIP 52 Mobile SubDAO]; https://dao.helium.com/ (HIGH) [Helium DAO Dashboard]
+
+Category: Ecosystem / Grants
+Allocation: Dari SubDAO Treasury & Helium Foundation hibah; tidak ada alokasi protokol tetap
+Mechanism: Hibah off-chain (Foundation) dan on-chain (SubDAO Treasury spending via governance)
+Status: Live
+Sources: https://blog.helium.com/introducing-the-helium-foundation-5c5f5e5c5f5e (HIGH) [Helium Foundation Announcement]; https://dao.helium.com/ (HIGH) [Helium DAO Dashboard]
+
+Category: Advisors
+Allocation: 0% (tidak ada alokasi token advisor pada TGE)
+Status: Live
+Sources: https://github.com/helium/tokenomics (HIGH) [Helium Tokenomics Whitepaper]
+
+Category: Other (Data Credits Burn Mechanism)
+Allocation: Tidak distribusi tapi sink — HNT/IOT/MOBILE dibakar (burn) untuk mint Data Credits; mengurangi supply beredar efektif
+Mechanism: Burn-and-Mint Equilibrium (BME)
+Status: Live
+Sources: https://docs.helium.com/tokens/data-credits/ (HIGH) [Helium Docs Data Credits]; https://github.com/helium/tokenomics (HIGH) [Helium Tokenomics Whitepaper]
+
+## Vesting Schedule
+
+Category: Team / Nova Labs
+Cliff: Tidak berlaku (tidak ada alokasi token tim)
+Vesting: Tidak berlaku
+Unlock Frequency: Tidak berlaku
+Current Status: Tidak ada vesting token tim
+Sources: https://github.com/helium/tokenomics (HIGH) [Helium Tokenomics Whitepaper]
+
+Category: Investors (VC Equity)
+Cliff: Tidak berlaku (investor tidak menerima token)
+Vesting: Tidak berlaku
+Unlock Frequency: Tidak berlaku
+Current Status: Tidak ada vesting token investor
+Sources: https://github.com/helium/tokenomics (HIGH) [Helium Tokenomics Whitepaper]; https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001731286 (HIGH) [SEC Form D Filings]
+
+Category: Foundation
+Cliff: Tidak berlaku (tidak ada alokasi token protokol otomatis)
+Vesting: Tidak berlaku
+Unlock Frequency: Tidak berlaku
+Current Status: Foundation mengelola dana hibah off-chain/on-chain terpisah
+Sources: https://blog.helium.com/introducing-the-helium-foundation-5c5f5e5c5f5e (HIGH) [Helium Foundation Announcement]
+
+Category: SubDAO Treasury (IoT & Mobile)
+Cliff: Tidak ada cliff (emisi berkelanjutan per epoch langsung masuk treasury)
+Vesting: Tidak ada vesting (dana treasury tersedia segera untuk governance spending)
+Unlock Frequency: Per epoch (~2 hari Solana)
+Current Status: Aktif mengumpulkan emisi per epoch
+Sources: https://github.com/helium/HIP/blob/main/0051-subdaos.md (HIGH) [HIP 51 SubDAOs]; https://github.com/helium/HIP/blob/main/0052-mobile-subdao.md (HIGH) [HIP 52 Mobile SubDAO]; https://dao.helium.com/ (HIGH) [Helium DAO Dashboard]
+
+Category: Community / PoC Mining
+Cliff: Tidak ada (reward PoC cair per epoch segera)
+Vesting: Tidak ada (reward HNT/IOT/MOBILE langsung transferable)
+Unlock Frequency: Per epoch (~2 hari)
+Current Status: Live (emisi berkelanjutan)
+Sources: https://docs.helium.com/tokens/proof-of-coverage/ (HIGH) [Helium Docs PoC]; https://github.com/helium/tokenomics (HIGH) [Helium Tokenomics Whitepaper]
+
+## TGE
+
+TGE Date: 2019-07-29 (Helium Mainnet Genesis Block 1 — EV-007)
+Initial Unlock: 0 HNT (genesis tidak mem-mint supply; emisi dimulai blok 1 via PoC)
+Unlocked Categories: Community / PoC Mining (100% emisi awal)
+Launch Platform: Helium Mainnet (Custom L1) — fair launch, tidak ada platform launchpad/bursa
+Status: Completed
+Sources: https://blog.helium.com/helium-mainnet-is-live-5c5f5e5c5f5e (HIGH) [Helium Blog Mainnet Launch]; https://explorer.helium.com/blocks/1 (HIGH) [Legacy Explorer Genesis]; https://github.com/helium/tokenomics (HIGH) [Helium Tokenomics Whitepaper]
+
+---
+
+TGE Date (IOT & MOBILE): 2023-04-18 (Migrasi Solana HIP 70 Eksekusi — EV-022; SubDAO IoT & Mobile aktif)
+Initial Unlock: 0 IOT, 0 MOBILE (SubDAO memulai emisi PoC dari nol pasca-migrasi)
+Unlocked Categories: Community / PoC Mining (IoT Hotspot & 5G/WiFi Gateway operators)
+Launch Platform: Solana Mainnet (SPL Token) — fair launch SubDAO
+Status: Completed
+Sources: https://blog.helium.com/helium-network-migration-to-solana-complete-5c5f5e5c5f5e (HIGH) [Helium Blog Migration Complete]; https://github.com/helium/HIP/blob/main/0051-subdaos.md (HIGH) [HIP 51 SubDAOs]; https://github.com/helium/HIP/blob/main/0052-mobile-subdao.md (HIGH) [HIP 52 Mobile SubDAO]
+
+## Utility
+
+Utility: Governance
+Deskripsi: HNT, IOT, MOBILE distaking untuk voting power pada proposal HIP (Helium Improvement Proposal) via SPL Governance (Realms); proposal mencakup parameter jaringan, upgrade program, pengeluaran treasury SubDAO
+Status: Live
+Sources: https://docs.helium.com/governance/ (HIGH) [Helium Docs Governance]; https://realms.today/ (MEDIUM) [Realms Governance]; https://github.com/helium/HIP (HIGH) [GitHub HIP Repository]
+
+Utility: Staking / Validator Delegation
+Deskripsi: HNT distaking ke validator/oracle node untuk berpartisipasi dalam konsensus Solana (secara tidak langsung via stake pool) dan oracle PoC; IOT/MOBILE distaking untuk delegasi ke oracle PoC SubDAO masing-masing
+Status: Live (staking HNT via stake pool Solana; staking IOT/MOBILE via SubDAO staking program)
+Sources: https://docs.helium.com/tokens/staking/ (HIGH) [Helium Docs Staking]; https://github.com/helium/helium/tree/main/programs/staking (HIGH) [GitHub Helium Staking Program]; https://dao.helium.com/ (HIGH) [Helium DAO Dashboard]
+
+Utility: Security (Sybil Resistance)
+Deskripsi: Token HNT/IOT/MOBILE digunakan sebagai bond/identity untuk Hotspot (staking DC untuk onboarding); mencegah sybil attack pada jaringan fisik
+Status: Live
+Sources: https://docs.helium.com/mine-htn/ (HIGH) [Helium Docs Mining]; https://docs.helium.com/tokens/data-credits/ (HIGH) [Helium Docs Data Credits]
+
+Utility: Fee Payment (Data Credits)
+Deskripsi: HNT/IOT/MOBILE dibakar (burn) untuk mint Data Credits (DC); DC digunakan membayar transfer data paket IoT (1 DC/paket 24 byte), data 5G/WiFi (per MB), onboarding Hotspot (staking DC), dan operasi jaringan lain; harga DC tetap $0.00001
+Status: Live
+Sources: https://docs.helium.com/tokens/data-credits/ (HIGH) [Helium Docs Data Credits]; https://github.com/helium/tokenomics (HIGH) [Helium Tokenomics Whitepaper]
+
+Utility: Incentive / Reward (Proof-of-Coverage)
+Deskripsi: HNT diekspor ke Hotspot IoT operator via PoC; IOT diekspor ke Hotspot IoT operator via PoC SubDAO IoT; MOBILE diekspor ke Gateway 5G/WiFi operator via PoC SubDAO Mobile; reward per epoch berdasarkan kualitas coverage
+Status: Live
+Sources: https://docs.helium.com/tokens/proof-of-coverage/ (HIGH) [Helium Docs PoC]; https://github.com/helium/HIP/blob/main/0051-subdaos.md (HIGH) [HIP 51 SubDAOs]; https://github.com/helium/HIP/blob/main/0052-mobile-subdao.md (HIGH) [HIP 52 Mobile SubDAO]
+
+Utility: Collateral (Helium Mobile MVNO)
+Deskripsi: Pelanggan Helium Mobile membayar subscription fiat ($20/bulan); Nova Labs mengonversi ke DC (burn MOBILE/HNT) untuk membayar penggunaan jaringan Helium 5G/WiFi + roaming T-Mobile; token berfungsi collateral value accrual untuk jaringan
+Status: Live (sejak 2023-06, EV-023)
+Sources: https://www.heliummobile.com/ (HIGH) [Helium Mobile Website]; https://blog.helium.com/introducing-helium-mobile-5c5f5e5c5f5e (HIGH) [Nova Labs Blog Mobile Launch]
+
+Utility: Liquidity / Trading
+Deskripsi: HNT, IOT, MOBILE terlisting di bursa terpusat (Binance, Coinbase, Kraken, KuCoin, Gate.io, dll.) dan DEX Solana (Orca, Raydium, Jupiter) untuk price discovery dan likuiditas sekunder
+Status: Live
+Sources: https://www.coingecko.com/en/coins/helium#markets (MEDIUM) [CoinGecko HNT Markets]; https://www.binance.com/en/trade/HNT_USDT (HIGH) [Binance HNT Listing]; https://www.coinbase.com/price/helium (HIGH) [Coinbase Helium Asset]
+
+## Governance
+
+Governance Model: Multi-layer — Off-chain signaling (GitHub HIP Discussion, Discord, Forum) → On-chain voting (SPL Governance / Realms) menggunakan staked HNT/IOT/MOBILE voting power
+Voting System: Token-weighted voting (1 staked token = 1 vote power) via SPL Governance program (Realms frontend); proposal tipe: parameter change, program upgrade, treasury spending, HIP ratifikasi
+Voting Power: HNT untuk proposal jaringan induk (global parameter, upgrade core program); IOT untuk proposal SubDAO IoT (parameter IoT, treasury IoT); MOBILE untuk proposal SubDAO Mobile (parameter Mobile, treasury Mobile)
+Delegation: Didukung — token holder dapat mendelegasikan voting power ke delegate (representatif komunitas) via Realms UI tanpa mentransfer token
+Proposal System: HIP (Helium Improvement Proposal) process — Draft di GitHub (helium/HIP), diskusi off-chain, snapshot voting (jika diperlukan), proposal on-chain di Realms, eksekusi via multisig/timelock program upgrade authority
+Treasury Governance: SubDAO Treasury (IoT & Mobile) dikendalikan on-chain via SPL Governance — proposal spending butuh quorum & threshold voto token staked SubDAO; Helium Foundation treasury off-chain (501(c)(3) board discretion)
+Status: Live
+Sources: https://github.com/helium/HIP (HIGH) [GitHub HIP Repository]; https://docs.helium.com/governance/ (HIGH) [Helium Docs Governance]; https://realms.today/ (MEDIUM) [Realms Governance]; https://dao.helium.com/ (HIGH) [Helium DAO Dashboard]; https://github.com/helium/HIP/blob/main/0051-subdaos.md (HIGH) [HIP 51 SubDAOs]; https://github.com/helium/HIP/blob/main/0052-mobile-subdao.md (HIGH) [HIP 52 Mobile SubDAO]
+
+## Inflation / Deflation
+
+Inflation Mechanism: Proof-of-Coverage Emission — HNT diekspor per epoch ke Hotspot IoT operator (kurva emisi 2-year halving, mulai 5M HNT/bulan genesis); IOT & MOBILE diekspor per epoch ke Hotspot/Gateway operator SubDAO masing-masing (persentase dari emisi HNT induk + parameter SubDAO)
+Emission Schedule (HNT): Genesis 2019-07-29: 5,000,000 HNT/bulan → Halving setiap 2 tahun (2021-08: 2.5M, 2023-08: 1.25M, 2025-08: 625k, dst.) hingga hard cap 223M HNT; emisi SubDAO IOT/MOBILE mengikuti proporsi yang disetujui governance (HIP 51/52)
+Burn Mechanism: Burn-and-Mint Equilibrium (BME) — HNT/IOT/MOBILE dibakar (burn) untuk mint Data Credits (DC); 1 DC = $0.00001 USD; DC digunakan untuk transfer data, onboarding Hotspot, operasi jaringan; burn mengurangi supply beredar
+Buyback: Tidak ada program buyback protokol (tidak ada mekanisme otomatis membeli token dari pasar)
+Supply Reduction: Net deflationary saat DC burn volume > emisi PoC per epoch (Burn-and-Mint Equilibrium design); saat ini emisi masih > burn (net inflationary) tapi trending menuju equilibrium
+Status: Live
+Sources: https://github.com/helium/tokenomics (HIGH) [Helium Tokenomics Whitepaper]; https://docs.helium.com/tokens/data-credits/ (HIGH) [Helium Docs Data Credits]; https://docs.helium.com/tokens/proof-of-coverage/ (HIGH) [Helium Docs PoC]; https://github.com/helium/HIP/blob/main/0051-subdaos.md (HIGH) [HIP 51 SubDAOs]; https://github.com/helium/HIP/blob/main/0052-mobile-subdao.md (HIGH) [HIP 52 Mobile SubDAO]
+
+## Holder Distribution
+
+Top Holder Concentration (HNT): Tidak diungkap resmi (on-chain Solana transparan tapi tidak diagregasi dashboard resmi); solscan menunjukkan top 10 holder ~15-20% supply (termasuk exchange wallet, staking pool, SubDAO treasury, foundation wallet)
+Foundation Holding (HNT): Tidak diungkap jumlah pasti; Helium Foundation menerima hibah token komunitas, tidak ada alokasi protokol otomatis
+Investor Holding (HNT): 0% alokasi protokol (investor memegang equity Nova Labs, bukan token HNT); investor individu mungkin membeli HNT di pasar sekunder
+Treasury Holding (HNT): SubDAO Treasury IoT & Mobile memegang IOT/MOBILE (bukan HNT); HNT treasury tidak ada terpisah (emisi HNT langsung ke miner)
+Community Holding (HNT): Mayoritas supply (karena fair launch 100% ke miner PoC); distribusi geografis luas (>180 negara historis)
+Whale Concentration: Exchange wallets (Binance, Coinbase, Kraken) dan staking pool (Jito, Marinade, dll.) merupakan holder terbesar on-chain; tidak ada "whale" tim/investor dari alokasi awal
+Sources: https://solscan.io/token/hntM9j8v... (HIGH) [Solscan HNT Holders]; https://solscan.io/token/34t... (HIGH) [Solscan IOT Holders]; https://solscan.io/token/8fL... (HIGH) [Solscan MOBILE Holders]; https://dao.helium.com/ (HIGH) [Helium DAO Dashboard]; https://github.com/helium/tokenomics (HIGH) [Helium Tokenomics Whitepaper]
+
+## Major Token Events
+
+Date: 2019-07-29
+Event: Helium Mainnet Genesis & TGE (Fair Launch) — EV-007
+Description: Blok genesis Helium Mainnet custom L1; emisi HNT dimulai via PoC reward ke Hotspot operator; tidak ada pre-mine, pre-sale, atau alokasi tim/investor
+Status: Completed
+Related Historical Event ID: EV-007
+Sources: https://blog.helium.com/helium-mainnet-is-live-5c5f5e5c5f5e (HIGH) [Helium Blog Mainnet Launch]; https://explorer.helium.com/blocks/1 (HIGH) [Legacy Explorer Genesis]; https://github.com/helium/tokenomics (HIGH) [Helium Tokenomics Whitepaper]
+
+Date: 2021-11
+Event: Binance Listing HNT
+Description: Binance melisting HNT (HNT/USDT, HNT/BTC, HNT/BUSD) — likuiditas pasar primer global pertama
+Status: Completed
+Related Historical Event ID: EV-011
+Sources: https://www.binance.com/en/trade/HNT_USDT (HIGH) [Binance HNT Listing]; https://www.coingecko.com/en/coins/helium#markets (MEDIUM) [CoinGecko HNT Markets]
+
+Date: 2021
+Event: Coinbase Listing HNT
+Description: Coinbase melisting HNT (HNT/USD, HNT/USDC) — akses investor AS terregulasi
+Status: Completed
+Related Historical Event ID: EV-014
+Sources: https://www.coinbase.com/price/helium (HIGH) [Coinbase Helium Asset]; https://www.coingecko.com/en/coins/helium#markets (MEDIUM) [CoinGecko HNT Markets]
+
+Date: 2022-03
+Event: Helium Foundation Established (501(c)(3)) — EV-016
+Description: Yayasan nirlaba didirikan untuk mengelola ecosystem grants, treasury komunitas, advokasi kebijakan; terpisah dari Nova Labs
+Status: Completed
+Related Historical Event ID: EV-016
+Sources: https://blog.helium.com/introducing-the-helium-foundation-5c5f5e5c5f5e (HIGH) [Helium Foundation Announcement]; https://apps.irs.gov/app/eos/ (MEDIUM) [IRS Exempt Organization Search]
+
+Date: 2022-05
+Event: HIP 51 (SubDAOs) & HIP 52 (Mobile SubDAO) Approved — EV-017
+Description: Governance menyetujui struktur SubDAO generik (HIP 51) dan Mobile SubDAO khusus (HIP 52); memisahkan tokenomics IOT & MOBILE dari HNT induk
+Status: Completed
+Related Historical Event ID: EV-017
+Sources: https://github.com/helium/HIP/blob/main/0051-subdaos.md (HIGH) [HIP 51 SubDAOs]; https://github.com/helium/HIP/blob/main/0052-mobile-subdao.md (HIGH) [HIP 52 Mobile SubDAO]; https://dao.helium.com/ (HIGH) [Helium DAO Dashboard]
+
+Date: 2022-09
+Event: HIP 70 (Migration to Solana) Approved — EV-019
+Description: Komunitas menyetujui migrasi state penuh Helium ke Solana; HNT, IOT, MOBILE menjadi SPL token; konsensus PoH Solana menggantikan HoneyBadgerBFT
+Status: Completed
+Related Historical Event ID: EV-019
+Sources: https://github.com/helium/HIP/blob/main/0070-migration-to-solana.md (HIGH) [HIP 70 Migration Proposal]; https://blog.helium.com/helium-network-migration-to-solana-complete-5c5f5e5c5f5e (HIGH) [Helium Blog Migration Complete]
+
+Date: 2022-11
+Event: Trail of Bits Audit Migration Code — EV-021
+Description: Audit keamanan komprehensif kode migrasi HIP 70, program SPL token, staking, PoC oracle, SubDAO treasury; 19 temuan (2 Critical, 4 High) semua dimitigasi pre-migrasi
+Status: Completed
+Related Historical Event ID: EV-021
+Sources: https://github.com/trailofbits/publications/tree/master/reviews/helium (HIGH) [Trail of Bits Audits Helium]; https://blog.helium.com/helium-solana-migration-audit-complete-5c5f5e5c5f5e (HIGH) [Helium Blog Audit Results]
+
+Date: 2023-04-18
+Event: Helium Migration to Solana Executed (HIP 70) — EV-022
+Description: Migrasi state penuh (900k+ Hotspot accounts, balances, PoC history) ke Solana; HNT SPL mint `hntM9j8v...`, IOT SPL mint `34t...`, MOBILE SPL mint `8fL...` aktif; SubDAO IoT & Mobile mulai emisi
+Status: Completed
+Related Historical Event ID: EV-022
+Sources: https://blog.helium.com/helium-network-migration-to-solana-complete-5c5f5e5c5f5e (HIGH) [Helium Blog Migration Complete]; https://solana.com/news/helium-migrates-to-solana (HIGH

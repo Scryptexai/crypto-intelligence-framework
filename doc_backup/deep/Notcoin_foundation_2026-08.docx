@@ -1,0 +1,29 @@
+PROJECT: Notcoin
+Official Name: Notcoin
+Symbol: NOT
+Category: Telegram Mini App / Tap-to-Earn Game / Consumer Crypto Onboarding
+Founding Entity: Open Builders (yurisdiksi tidak diumumkan secara publik)
+Founders: Sasha Plotnikov (Co-founder, CEO); Mad Tail (Co-founder, CTO — pseudonim)
+Core Team: Open Builders (tim inti ~10-15 orang identitas terverifikasi parsial; kontributor eksternal & advisor tidak diungkapkan totalnya)
+Country: Tidak diumumkan (tim terdistribusi global; entitas hukum Open Builders tidak mempublikasikan yurisdiksi inkorporasi)
+Launch Date - Testnet: n/a (produk diluncurkan langsung di Telegram mainnet environment)
+Launch Date - Mainnet: 1 Januari 2024 (HIGH) [Notcoin Blog, https://notcoin.com/blog/notcoin-launch]
+Launch Date - TGE: 16 Mei 2024 (HIGH) [Binance Announcement, https://www.binance.com/en/support/announcement/notcoin-not-listing]
+Main Products: Notcoin Game (Tap-to-Earn Mini App di Telegram); Notcoin Explore (discovery platform untuk Mini App lain); Notcoin Earn (kampanye reward on-chain); Notcoin Wallet (smart wallet berbasis Telegram/ERC-4337)
+Official Website: https://notcoin.com
+Repository: https://github.com/notcoin (organisasi GitHub publik; repositori utama game tidak open-source penuh)
+Documentation: https://docs.notcoin.com
+Social - X/Twitter: @notcoin
+Social - Discord: https://discord.gg/notcoin
+Social - Telegram: @notcoin (channel resmi); @notcoin_bot (bot game)
+Block Explorer: https://tonscan.org (TON mainnet explorer untuk token NOT)
+Token Contract: EQB... (TON Jetton master address: EQAvlWfdqGdO... — lengkap: EQAvlWfdqGdO-...; verifikasi di tonscan.org) (HIGH) [Tonviewer, https://tonviewer.com/EQAvlWfdqGdO...]
+Chain(s): The Open Network (TON)
+Ecosystem: TON Ecosystem / Telegram Mini App Ecosystem
+
+Open Threads
+- Yurisdiksi inkorporasi legal entity Open Builders (tidak diumumkan di website, whitepaper, atau filing publik)
+- Ukuran tim penuh & komposisi (hanya 2 founder yang identitasnya relatif terbuka; sisa "tidak diungkap")
+- Apakah smart contract game v1 pernah diaudit (tidak ditemukan laporan audit publik pada tanggal penelusuran)
+- Detail tokenomics lengkap (alokasi tim, investor, treasury, community) — hanya high-level yang dipublikasikan (78% community, 22% tim/ekosistem) tanpa breakdown detail & vesting schedule resmi
+- Status open-source game engine / backend (repositori GitHub ada tapi tidak berisi core game logic)

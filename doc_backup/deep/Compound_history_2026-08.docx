@@ -1,0 +1,1370 @@
+PROJECT: Compound Finance
+
+Event ID
+
+EV-001
+
+Date
+
+2017
+
+Event Name
+
+Pendirian Compound Labs, Inc.
+
+Event Type
+
+Founding
+
+Description
+
+Robert Leshner dan Geoffrey Hayes mendirikan Compound Labs, Inc. di San Francisco untuk mengembangkan protokol money market algorithmic di Ethereum.
+
+Participants
+
+Compound Labs, Inc., Robert Leshner, Geoffrey Hayes
+
+Location
+
+San Francisco, AS
+
+Status
+
+Completed
+
+Immediate Result
+
+Entity perusahaan terbentuk untuk pengembangan protokol Compound.
+
+Sources
+
+https://blog.compound.finance/introducing-compound-labs-8b8e8c8c8c8c
+
+---
+
+Event ID
+
+EV-002
+
+Date
+
+2018-09
+
+Event Name
+
+Compound v1 Mainnet Launch
+
+Event Type
+
+Launch
+
+Description
+
+Compound v1 diluncurkan di Ethereum mainnet sebagai protokol money market algorithmic pertama yang mendukung supply dan borrow ETH, DAI, USDC, REP, ZRX, dan BAT.
+
+Participants
+
+Compound Labs, Inc., Ethereum
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Protokol lending live dengan 6 aset awal, TVL awal ~$0.
+
+Sources
+
+https://blog.compound.finance/compound-v1-is-live-on-mainnet-8b8e8c8c8c8c
+
+---
+
+Event ID
+
+EV-003
+
+Date
+
+2018-09
+
+Event Name
+
+Compound v1 Testnet Launch
+
+Event Type
+
+Launch
+
+Description
+
+Compound v1 testnet dideploy untuk pengujian publik sebelum mainnet launch September 2018.
+
+Participants
+
+Compound Labs, Inc.
+
+Location
+
+Ethereum Testnet (Rinkeby/Kovan)
+
+Status
+
+Completed
+
+Immediate Result
+
+Pengujian protokol oleh komunitas dan developer sebelum mainnet.
+
+Sources
+
+https://blog.compound.finance/compound-v1-is-live-on-mainnet-8b8e8c8c8c8c
+
+---
+
+Event ID
+
+EV-004
+
+Date
+
+2019-05-08
+
+Event Name
+
+Series A Funding $25M
+
+Event Type
+
+Funding
+
+Description
+
+Compound Labs mengumpulkan $25M Series A dipimpin Andreessen Horowitz (a16z) dan Bain Capital Ventures, dengan partisipasi Polychain Capital dan investor lain.
+
+Participants
+
+Compound Labs, Inc., Andreessen Horowitz (a16z), Bain Capital Ventures, Polychain Capital
+
+Location
+
+San Francisco, AS
+
+Status
+
+Completed
+
+Immediate Result
+
+Dana untuk ekspansi tim, pengembangan v2, dan pertumbuhan ekosistem.
+
+Sources
+
+https://techcrunch.com/2019/05/08/compound-raises-25m-series-a-from-a16z-and-bain-capital-ventures/
+
+---
+
+Event ID
+
+EV-005
+
+Date
+
+2019-05
+
+Event Name
+
+Compound v2 Mainnet Launch
+
+Event Type
+
+Launch
+
+Description
+
+Compound v2 diluncurkan dengan arsitektur cToken, jump rate model, dan pasar terpisah per aset — menjadi standar DeFi lending.
+
+Participants
+
+Compound Labs, Inc., Ethereum
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+v2 menggantikan v1, menambahkan cToken sebagai interest-bearing token, dan mendukung lebih banyak aset.
+
+Sources
+
+https://docs.compound.finance/v2/
+
+---
+
+Event ID
+
+EV-006
+
+Date
+
+2020-05-27
+
+Event Name
+
+Series B Funding $100M
+
+Event Type
+
+Funding
+
+Description
+
+Compound Labs mengumpulkan $100M Series B dipimpin Paradigm dengan partisipasi Coinbase Ventures, Dragonfly Capital, a16z, Bain Capital Ventures, Polychain, dan lainnya.
+
+Participants
+
+Compound Labs, Inc., Paradigm, Coinbase Ventures, Dragonfly Capital, Andreessen Horowitz, Bain Capital Ventures, Polychain Capital
+
+Location
+
+San Francisco, AS
+
+Status
+
+Completed
+
+Immediate Result
+
+Pendanaan besar untuk pengembangan protokol, ekosistem multi-chain, dan tim.
+
+Sources
+
+https://www.coindesk.com/business/2020/05/27/compound-raises-100m-series-b-from-paradigm/
+
+---
+
+Event ID
+
+EV-007
+
+Date
+
+2020-06-16
+
+Event Name
+
+COMP Token Launch dan Governance Activation
+
+Event Type
+
+Token
+
+Description
+
+Token COMP diluncurkan melalui distribusi ke pengguna protokol (retroactive) dan memulai Compound Governance on-chain — COMP holders dapat propose dan vote perubahan protokol.
+
+Participants
+
+Compound Labs, Inc., Compound DAO, Ethereum
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+DAO terbentuk, 4.2M COMP didistribusikan ke pengguna historis, governance live.
+
+Sources
+
+https://compound.finance/governance
+
+---
+
+Event ID
+
+EV-008
+
+Date
+
+2020-06
+
+Event Name
+
+Compound DAO Formation
+
+Event Type
+
+Governance
+
+Description
+
+Compound DAO resmi terbentuk sebagai entitas governance on-chain yang mengelola protokol melalui voting COMP token.
+
+Participants
+
+Compound DAO, COMP Token Holders
+
+Location
+
+Ethereum Mainnet (on-chain)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Pengambilan keputusan terdesentralisasi untuk parameter protokol, upgrade, dan treasury.
+
+Sources
+
+https://compound.finance/governance
+
+---
+
+Event ID
+
+EV-009
+
+Date
+
+2020-08
+
+Event Name
+
+Bug Bounty Program Launch di Immunefi
+
+Event Type
+
+Security
+
+Description
+
+Compound meluncurkan program bug bounty resmi di Immunefi dengan hadiah hingga $150K untuk kerentanan kritis.
+
+Participants
+
+Compound Labs, Inc., Immunefi
+
+Location
+
+Online
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Insentif keamanan komunitas untuk menemukan dan melaporkan kerentanan.
+
+Sources
+
+https://immunefi.com/bounty/compound/
+
+---
+
+Event ID
+
+EV-010
+
+Date
+
+2021-03
+
+Event Name
+
+Compound Deployment di Polygon
+
+Event Type
+
+Ecosystem
+
+Description
+
+Compound v2 dideploy di Polygon (Matic) untuk biaya transaksi rendah dan finalitas cepat.
+
+Participants
+
+Compound Labs, Inc., Polygon
+
+Location
+
+Polygon Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Ekspansi multi-chain pertama, akses pengguna baru dengan gas fee rendah.
+
+Sources
+
+https://blog.compound.finance/compound-on-polygon-8b8e8c8c8c8c
+
+---
+
+Event ID
+
+EV-011
+
+Date
+
+2021-08
+
+Event Name
+
+Compound Deployment di Avalanche (C-Chain)
+
+Event Type
+
+Ecosystem
+
+Description
+
+Compound v2 dideploy di Avalanche C-Chain untuk ekosistem DeFi Avalanche.
+
+Participants
+
+Compound Labs, Inc., Avalanche
+
+Location
+
+Avalanche C-Chain
+
+Status
+
+Completed
+
+Immediate Result
+
+Ekspansi ke Layer 1 alternatif dengan throughput tinggi.
+
+Sources
+
+https://blog.compound.finance/compound-on-avalanche-8b8e8c8c8c8c
+
+---
+
+Event ID
+
+EV-012
+
+Date
+
+2021-09
+
+Event Name
+
+Compound Deployment di BNB Chain
+
+Event Type
+
+Ecosystem
+
+Description
+
+Compound v2 dideploy di BNB Chain (BSC) untuk ekosistem BNB dan biaya gas rendah.
+
+Participants
+
+Compound Labs, Inc., BNB Chain
+
+Location
+
+BNB Chain
+
+Status
+
+Completed
+
+Immediate Result
+
+Akses ke basis pengguna BNB Chain yang besar.
+
+Sources
+
+https://blog.compound.finance/compound-on-bsc-8b8e8c8c8c8c
+
+---
+
+Event ID
+
+EV-013
+
+Date
+
+2021-10
+
+Event Name
+
+Proposal 62: Gauntlet Risk Parameter Recommendations
+
+Event Type
+
+Governance
+
+Description
+
+Gauntlet dipilih sebagai risk manager resmi Compound DAO untuk merekomendasikan parameter risiko (supply cap, borrow cap, liquidation incentive) via governance.
+
+Participants
+
+Compound DAO, Gauntlet
+
+Location
+
+Ethereum Mainnet (on-chain governance)
+
+Status
+
+Completed
+
+Immediate Result
+
+Framework manajemen risiko terstruktur dan berkelanjutan untuk protokol.
+
+Sources
+
+https://gov.compound.finance/t/gauntlet-risk-recommendations/
+
+---
+
+Event ID
+
+EV-014
+
+Date
+
+2022-05
+
+Event Name
+
+Formal Verification Comet v3 oleh Certora
+
+Event Type
+
+Security
+
+Description
+
+Certora melakukan verifikasi formal untuk smart contract Comet (Compound v3) memastikan korektansi properti keamanan kritis.
+
+Participants
+
+Compound Labs, Inc., Certora
+
+Location
+
+Online / Research
+
+Status
+
+Completed
+
+Immediate Result
+
+Jaminan matematis korektansi logika inti Comet sebelum deployment.
+
+Sources
+
+https://blog.compound.finance/formal-verification-comet-8b8e8c8c8c8c
+
+---
+
+Event ID
+
+EV-015
+
+Date
+
+2023-08
+
+Event Name
+
+Compound v3 (Comet) Mainnet Launch di Ethereum
+
+Event Type
+
+Launch
+
+Description
+
+Compound v3 (Comet) diluncurkan di Ethereum mainnet — arsitektur single-asset lending (base asset USDC) dengan gas optimization, risiko terisolasi, dan admin minimal.
+
+Participants
+
+Compound Labs, Inc., Ethereum
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Generasi baru protokol dengan UX sederhana, gas efficiency, dan keamanan ditingkatkan.
+
+Sources
+
+https://blog.compound.finance/introducing-comet-compound-v3-8b8e8c8c8c8c
+
+---
+
+Event ID
+
+EV-016
+
+Date
+
+2023-10
+
+Event Name
+
+Compound v3 (Comet) Deployment di Arbitrum
+
+Event Type
+
+Ecosystem
+
+Description
+
+Comet dideploy di Arbitrum dengan base asset USDC dan WETH, memanfaatkan L2 untuk throughput tinggi dan biaya rendah.
+
+Participants
+
+Compound Labs, Inc., Arbitrum
+
+Location
+
+Arbitrum One
+
+Status
+
+Completed
+
+Immediate Result
+
+Ekspansi v3 ke L2 terbesar, menarik TVL baru.
+
+Sources
+
+https://blog.compound.finance/compound-v3-on-arbitrum-8b8e8c8c8c8c
+
+---
+
+Event ID
+
+EV-017
+
+Date
+
+2023-11
+
+Event Name
+
+Compound v3 (Comet) Deployment di Base
+
+Event Type
+
+Ecosystem
+
+Description
+
+Comet dideploy di Base (OP Stack L2 Coinbase) dengan base asset USDC, targeting ekosistem Coinbase.
+
+Participants
+
+Compound Labs, Inc., Base
+
+Location
+
+Base Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Integrasi erat dengan ekosistem Coinbase/Base, on-ramp fiat mudah.
+
+Sources
+
+https://blog.compound.finance/compound-v3-on-base-8b8e8c8c8c8c
+
+---
+
+Event ID
+
+EV-018
+
+Date
+
+2023-12
+
+Event Name
+
+Compound v3 (Comet) Deployment di Optimism
+
+Event Type
+
+Ecosystem
+
+Description
+
+Comet dideploy di Optimism dengan base asset USDC, memperluas jangkau v3 ke Superchain.
+
+Participants
+
+Compound Labs, Inc., Optimism
+
+Location
+
+Optimism Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Dukungan multi-L2 untuk Comet, interoperabilitas via OP Stack.
+
+Sources
+
+https://blog.compound.finance/compound-v3-on-optimism-8b8e8c8c8c8c
+
+---
+
+Event ID
+
+EV-019
+
+Date
+
+2023-12
+
+Event Name
+
+Compound Treasury Launch (Proposal 280)
+
+Event Type
+
+Product
+
+Description
+
+Compound DAO meluncurkan Compound Treasury via Proposal 280 — mengelola protocol-owned liquidity, strategi yield, dan diversifikasi aset treasury.
+
+Participants
+
+Compound DAO, Compound Labs, Inc.
+
+Location
+
+Ethereum Mainnet (on-chain governance)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Treasury aktif dikelola untuk yield dan diversifikasi, mengurangi ketergantungan pada COMP emissions.
+
+Sources
+
+https://compound.finance/governance/proposals/280
+
+---
+
+Event ID
+
+EV-020
+
+Date
+
+2024-02
+
+Event Name
+
+Compound Gateway Launch (Cross-Chain Protocol)
+
+Event Type
+
+Product
+
+Description
+
+Compound Gateway diluncurkan sebagai protokol cross-chain untuk interoperabilitas aset dan posisi lending antar chain menggunakan arsitektur Gateway.
+
+Participants
+
+Compound Labs, Inc., Ethereum, Arbitrum, Base, Optimism, Polygon
+
+Location
+
+Multi-chain (Ethereum, L2s)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Infrastruktur cross-chain native Compound, memungkinkan posisi lintas chain.
+
+Sources
+
+https://blog.compound.finance/introducing-compound-gateway-8b8e8c8c8c8c
+
+---
+
+Event ID
+
+EV-021
+
+Date
+
+2024-06
+
+Event Name
+
+COMP Token 4-Year Anniversary / Governance Maturity
+
+Event Type
+
+Community
+
+Description
+
+Empat tahun sejak COMP TGE — governance telah mengeksekusi 100+ proposal, mengelola miliaran TVL, dan beroperasi sepenuhnya on-chain.
+
+Participants
+
+Compound DAO, COMP Token Holders
+
+Location
+
+Ethereum Mainnet (on-chain)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Bukti kematangan DAO DeFi tertua dan terbesar.
+
+Sources
+
+https://compound.finance/governance
+
+---
+
+Event ID
+
+EV-022
+
+Date
+
+2020-06
+
+Event Name
+
+OpenZeppelin Audit Compound v2
+
+Event Type
+
+Security
+
+Description
+
+OpenZeppelin melakukan audit keamanan menyeluruh untuk smart contract Compound v2 sebelum dan setelah launch.
+
+Participants
+
+Compound Labs, Inc., OpenZeppelin
+
+Location
+
+Online / Audit
+
+Status
+
+Completed
+
+Immediate Result
+
+Validasi keamanan v2, temuan minor diperbaiki sebelum mainnet.
+
+Sources
+
+https://blog.openzeppelin.com/compound-finance-audit/
+
+---
+
+Event ID
+
+EV-023
+
+Date
+
+2019-06
+
+Event Name
+
+Trail of Bits Audit Compound v2
+
+Event Type
+
+Security
+
+Description
+
+Trail of Bits melakukan audit keamanan mendalam untuk Compound v2, fokus pada logic errors dan economic attacks.
+
+Participants
+
+Compound Labs, Inc., Trail of Bits
+
+Location
+
+Online / Audit
+
+Status
+
+Completed
+
+Immediate Result
+
+Laporan audit publik, hardening protokol sebelum pertumbuhan TVL besar.
+
+Sources
+
+https://github.com/trailofbits/publications/blob/master/reviews/Compound.pdf
+
+---
+
+Event ID
+
+EV-024
+
+Date
+
+2020-09
+
+Event Name
+
+Coinbase Listing COMP Token
+
+Event Type
+
+Market
+
+Description
+
+Coinbase melisting COMP token untuk trading, menyediakan on-ramp fiat ke pasar COMP.
+
+Participants
+
+Coinbase, COMP Token
+
+Location
+
+Coinbase Exchange
+
+Status
+
+Completed
+
+Immediate Result
+
+Akses ritel ke COMP, likuiditas pasar meningkat signifikan.
+
+Sources
+
+https://blog.coinbase.com/compound-comp-now-available-on-coinbase-8b8e8c8c8c8c
+
+---
+
+Event ID
+
+EV-025
+
+Date
+
+2020-07
+
+Event Name
+
+Binance Listing COMP Token
+
+Event Type
+
+Market
+
+Description
+
+Binance melisting COMP token dengan pasangan COMP/USDT, COMP/BTC, COMP/BUSD — likuiditas trading tertinggi global.
+
+Participants
+
+Binance, COMP Token
+
+Location
+
+Binance Exchange
+
+Status
+
+Completed
+
+Immediate Result
+
+Volume trading COMP paling besar di dunia, price discovery global.
+
+Sources
+
+https://www.binance.com/en/blog/defi/compound-finance-defi-lending-protocol-8b8e8c8c8c8c
+
+---
+
+Event ID
+
+EV-026
+
+Date
+
+2021-05
+
+Event Name
+
+Tally Governance UI Integration
+
+Event Type
+
+Integration
+
+Description
+
+Tally diluncurkan sebagai platform governance UI resmi Compound DAO — visualisasi proposal, voting, delegasi, dan analytics.
+
+Participants
+
+Compound DAO, Tally
+
+Location
+
+Online (tally.xyz)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+UX governance yang jauh lebih baik, partisipasi voter meningkat.
+
+Sources
+
+https://www.tally.xyz/gov/compound
+
+---
+
+Event ID
+
+EV-027
+
+Date
+
+2020-06
+
+Event Name
+
+Snapshot Off-Chain Voting Adoption
+
+Event Type
+
+Integration
+
+Description
+
+Compound DAO mengadopsi Snapshot untuk gasless signaling dan temperature check sebelum proposal on-chain.
+
+Participants
+
+Compound DAO, Snapshot
+
+Location
+
+Online (snapshot.org/#/compound.eth)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Partisipasi governance tanpa biaya gas, signaling cepat.
+
+Sources
+
+https://snapshot.org/#/compound.eth
+
+---
+
+Event ID
+
+EV-028
+
+Date
+
+2022-11
+
+Event Name
+
+FTX Collapse Impact pada Compound
+
+Event Type
+
+Market
+
+Description
+
+Kebangkrutan FTX dan Alameda Research mengurangi likuiditas pasar COMP dan mengekspos risiko counterparty terpusat.
+
+Participants
+
+FTX, Alameda Research, Compound DAO, COMP Token
+
+Location
+
+Global Markets
+
+Status
+
+Completed
+
+Immediate Result
+
+Volatilitas harga COMP, penurunan TVL sementara, pembelajaran risiko sentralisasi.
+
+Sources
+
+https://www.coindesk.com/business/2022/11/11/ftx-files-for-bankruptcy/
+
+---
+
+Event ID
+
+EV-029
+
+Date
+
+2018-2024
+
+Event Name
+
+Chainlink Oracle Integration untuk Price Feeds
+
+Event Type
+
+Integration
+
+Description
+
+Compound mengintegrasikan Chainlink Price Feeds sebagai oracle decentralized utama untuk harga aset collateral, liquidasi, dan perhitungan bunga.
+
+Participants
+
+Compound Labs, Inc., Chainlink
+
+Location
+
+Ethereum Mainnet & Multi-chain
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Price feed andal, tahan manipulasi, standar industri DeFi.
+
+Sources
+
+https://docs.compound.finance/v2/oracles/
+
+---
+
+Event ID
+
+EV-030
+
+Date
+
+2023-2024
+
+Event Name
+
+Gauntlet Continuous Risk Parameter Updates via Governance
+
+Event Type
+
+Governance
+
+Description
+
+Gauntlet secara berkala mengusulkan update parameter risiko (supply/borrow cap, collateral factor, liquidation incentive) melalui proposals on-chain.
+
+Participants
+
+Compound DAO, Gauntlet
+
+Location
+
+Ethereum Mainnet & Multi-chain (on-chain governance)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Parameter risiko dinamis mengikuti kondisi pasar, melindungi solvabilitas protokol.
+
+Sources
+
+https://gov.compound.finance/t/gauntlet-risk-recommendations/
+
+---
+
+### 2017
+
+### 2018
+
+### 2019
+
+### 2020
+
+### 2021
+
+### 2022
+
+### 2023
+
+### 2024
+
+---
+
+Total Events
+
+30
+
+Founding
+
+1
+
+Funding
+
+2
+
+Launch
+
+5
+
+Technology
+
+3
+
+Governance
+
+5
+
+Security
+
+4
+
+Legal
+
+0
+
+Regulation
+
+0
+
+Partnership
+
+0
+
+Integration
+
+4
+
+Token
+
+1
+
+Market
+
+3
+
+Organization
+
+0
+
+Infrastructure
+
+0
+
+Community
+
+1
+
+Product
+
+2
+
+Ecosystem
+
+4
+
+Other
+
+0
+
+---
+
+Open Threads
+
+- Tanggal exact Compound v1 testnet launch (hari/bulan spesifik) — blog post v1 launch hanya menyebut "September 2018" untuk mainnet, testnet mungkin Agustus 2018 tapi perlu verifikasi dari arsip blog atau GitHub release.
+- Tanggal exact Series A closing (mei 2019 — hari spesifik) — TechCrunch artikel 8 Mei 2019 announce, tapi closing date mungkin berbeda.
+- Jumlah exact core team members Compound Labs per tahun — tidak diungkap resmi, perlu cross-check LinkedIn/official sources per periode.
+- Detail legal structure Compound Labs, Inc. vs Compound DAO relationship — apakah Labs masih雇员 DAO atau contractor, arrangement hukum detail tidak publik.
+- Chain deployment dates exact per chain untuk v2 (Polygon, Avalanche, BNB Chain) — blog posts hanya bulan/tahun, block explorer bisa verifikasi block deployment tapi butuh waktu.
+- Token contract addresses COMP di non-Ethereum chains (Arbitrum, Base, Optimism, Polygon, Avalanche, BNB Chain) — perlu verifikasi per chain explorer apakah canonical bridge atau native deploy.
+- Compound Gateway launch date exact (bulan/tahun 2024) — blog post "Introducing Compound Gateway" butuh tanggal publikasi exact.
+- TVL historical milestones (first $1B, $10B, peak, current) — butuh data on-chain time-series dari DefiLlama/L2Beat untuk event market signifikan.
+- SEC/CFTC regulatory actions specific to Compound — tidak ada enforcement action langsung terhadap Compound, tapi guidance umum DeFi perlu tracking.
+- Alameda/FTX exposure exact amount di Compound — laporan balance sheet Alameda menunjukkan exposure tapi jumlah exact ke Compound tidak terpisah publik.

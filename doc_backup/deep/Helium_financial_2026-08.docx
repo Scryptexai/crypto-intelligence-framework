@@ -1,0 +1,181 @@
+PROJECT: Helium
+
+## Funding History
+
+Funding Round: Series A
+Date: 2018
+Amount: tidak diungkap
+Currency: USD
+Lead Investor: Union Square Ventures (USV)
+Participating Investors: Khosla Ventures
+Valuation: tidak diungkap
+Funding Type: Series A
+Status: Completed
+Sources: https://www.usv.com/portfolio/helium (HIGH); https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001731286 (HIGH); https://www.khoslaventures.com/portfolio/ (MEDIUM)
+
+Funding Round: Series B
+Date: 2019-11
+Amount: tidak diungkap
+Currency: USD
+Lead Investor: Multicoin Capital
+Participating Investors: Union Square Ventures (USV), Khosla Ventures
+Valuation: tidak diungkap
+Funding Type: Series B
+Status: Completed
+Sources: https://multicoin.capital/portfolio/helium/ (HIGH); https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001731286 (HIGH)
+
+Funding Round: Series C
+Date: 2020-11-17
+Amount: $111M
+Currency: USD
+Lead Investor: GV (Google Ventures)
+Participating Investors: Multicoin Capital, Union Square Ventures (USV), Khosla Ventures
+Valuation: tidak diungkap (dilaporkan ~$1.1B post-money oleh sumber sekunder pasca-Series D)
+Funding Type: Series C
+Status: Completed
+Sources: https://www.gv.com/portfolio/helium/ (HIGH); https://techcrunch.com/2020/11/17/helium-raises-111m-series-c/ (HIGH); https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001731286 (HIGH)
+
+Funding Round: Series D
+Date: 2021-08
+Amount: $200M
+Currency: USD
+Lead Investor: Andreessen Horowitz (a16z) dan Tiger Global (dilaporkan Forbes, belum dikonfirmasi filing SEC)
+Participating Investors: Marc Benioff (Time Ventures), Multicoin Capital, investor existing
+Valuation: $1.1B+ (unicorn, dilaporkan Forbes)
+Funding Type: Series D
+Status: Completed
+Sources: https://www.forbes.com/sites/stevencohen/2021/08/18/helium-raises-200m/ (MEDIUM); https://timeventures.com/ (MEDIUM); https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001731286 (HIGH)
+
+## Treasury
+
+Current Treasury Size: tidak diungkap (tidak ada laporan keuangan resmi Nova Labs Inc. atau Helium Foundation yang mencakup total treasury gabungan)
+Treasury Composition: tidak diungkap (detail aset spesifik tidak dipublikasikan)
+Stablecoin Holdings: tidak diungkap
+Native Token Holdings: tidak diungkap (Nova Labs allocation HNT awal tidak dipublikasikan; SubDAO treasury on-chain terlihat di Solscan tapi tidak diagregasi resmi)
+Other Assets: tidak diungkap
+Treasury Custodian: 
+- Nova Labs Inc. (corporate treasury, tidak diungkap)
+- Helium Foundation (501(c)(3), mengelola ecosystem grants, filing IRS 990 belum terverifikasi publik)
+- IoT SubDAO Treasury (on-chain Solana program, address terverifikasi via HIP 51)
+- Mobile SubDAO Treasury (on-chain Solana program, address terverifikasi via HIP 52)
+Sources: https://blog.helium.com/introducing-the-helium-foundation-5c5f5e5c5f5e (HIGH); https://github.com/helium/HIP/blob/main/0051-subdaos.md (HIGH); https://github.com/helium/HIP/blob/main/0052-mobile-subdao.md (HIGH); https://dao.helium.com/ (HIGH); https://apps.irs.gov/app/eos/ (MEDIUM)
+
+## Revenue Model
+
+Revenue Stream: Data Credits (DC) Burn
+Description: Pengguna membakar HNT/IOT/MOBILE untuk membuat Data Credits (harga tetap $0.00001/DC) guna membayar transfer data paket IoT (1 DC/paket 24 byte), 5G/WiFi (per MB), dan onboarding Hotspot (staking DC). Burn mengurangi supply token native.
+Status: Live
+Sources: https://docs.helium.com/tokens/data-credits/ (HIGH); https://github.com/helium/tokenomics (HIGH); https://solscan.io/token/hntM9j8v... (HIGH)
+
+Revenue Stream: Helium Mobile Subscription
+Description: Layanan MVNO konsumen $20/bulan (unlimited talk/text/data) dibayar via kartu kredit/fiat; Nova Labs mengonversi ke Data Credits (burn MOBILE/HNT) untuk membayar penggunaan jaringan Helium 5G/WiFi + roaming T-Mobile.
+Status: Live
+Sources: https://www.heliummobile.com/ (HIGH); https://blog.helium.com/introducing-helium-mobile-5c5f5e5c5f5e (HIGH); https://www.heliummobile.com/coverage (HIGH)
+
+Revenue Stream: Hardware Sales (Legacy/Indirect)
+Description: Nova Labs awalnya menjual Helium Hotspot sendiri (generasi 1-2); sejak 2021-2022 produksi dialihkan ke mitra OEM (RAKwireless, Bobcat, Nebra, FreedomFi). Nova Labs tidak lagi memproduksi/jual perangkat keras IoT langsung; pendapatan hardware saat ini tidak diketahui (mungkin lisensi/royalty atau tidak ada).
+Status: Discontinued (produksi langsung), Planned/Unknown (royalty OEM)
+Sources: https://docs.helium.com/mine-htn/approved-hardware/ (HIGH); https://blog.freedomfi.com/freedomfi-joins-nova-labs/ (HIGH); https://www.rakwireless.com/helium/ (HIGH)
+
+Revenue Stream: Enterprise / Console Fees
+Description: Helium Network Console menawarkan tier gratis dan berbayar untuk pengembang IoT (API rate limit, data retention, integrasi lanjutan). Detail harga dan pendapatan tidak diungkap.
+Status: Live
+Sources: https://console.helium.com/ (HIGH); https://docs.helium.com/console/ (HIGH)
+
+Revenue Stream: Exchange Listing Fees (Indirect)
+Description: Listing HNT, IOT, MOBILE di bursa terpusat (Binance, Coinbase, dll.) mungkin melibatkan fee listing atau market making agreement; detail tidak diungkap dan bukan revenue protokol langsung.
+Status: Live (historis)
+Sources: https://www.binance.com/en/trade/HNT_USDT (HIGH); https://www.coinbase.com/price/helium (HIGH); https://www.coingecko.com/en/coins/helium#markets (MEDIUM)
+
+Revenue Stream: Grant / Ecosystem Funding
+Description: Helium Foundation mendistribusikan hibah ke pengembang ekosistem; dana berasal dari treasury foundation (sumber: alokasi tokenomics awal, donasi, dll.). Bukan revenue Nova Labs.
+Status: Live
+Sources: https://blog.helium.com/introducing-the-helium-foundation-5c5f5e5c5f5e (HIGH); https://dao.helium.com/ (HIGH)
+
+## Revenue History
+
+Tidak diungkap. Nova Labs Inc. adalah perusahaan swasta (Delaware C-Corp) tidak wajib melaporkan pendapatan publik. Helium Foundation (501(c)(3)) belum mempublikasikan IRS Form 990 yang terverifikasi. Data on-chain (DC burn volume, Mobile SubDAO revenue) tersedia tapi tidak diagregasi ke laporan pendapatan korporat.
+
+Sources: https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001731286 (HIGH); https://apps.irs.gov/app/eos/ (MEDIUM); https://dao.helium.com/ (HIGH); https://solscan.io/ (HIGH)
+
+## Fundraising Mechanism
+
+VC Funding: Series A, B, C, D dari investor institusional (USV, Khosla, Multicoin, GV, a16z, Tiger Global, Time Ventures) — total terkumpul $311M+ yang diungkap ($111M + $200M + Series A/B tidak diungkap)
+Fair Launch / Token Emission: Tidak ada private sale, public sale, ICO, atau pre-mine. Token HNT diekspor secara adil (fair launch) via proof-of-coverage mulai genesis 2019-07-29. SubDAO token IOT & MOBILE diekspor via PoC pasca-migrasi 2023.
+Foundation Grants: Helium Foundation (501(c)(3)) mengelola dana ekosistem untuk hibah pengembang.
+DAO Treasury: IoT SubDAO & Mobile SubDAO treasury on-chain menerima alokasi emisi token per epoch (HIP 51/52) untuk pengembangan sub-ekosistem masing-masing.
+Protocol Revenue (Burn): Data Credits burn mechanism (bukan revenue tunai tapi value accrual ke token holders via supply reduction).
+Bootstrapping: Pengembangan awal (2013-2018) didanai pendiri dan pendanaan awal sebelum Series A.
+
+Sources: https://github.com/helium/tokenomics (HIGH); https://blog.helium.com/helium-mainnet-is-live-5c5f5e5c5f5e (HIGH); https://www.usv.com/portfolio/helium (HIGH); https://multicoin.capital/portfolio/helium/ (HIGH); https://www.gv.com/portfolio/helium/ (HIGH); https://www.forbes.com/sites/stevencohen/2021/08/18/helium-raises-200m/ (MEDIUM); https://blog.helium.com/introducing-the-helium-foundation-5c5f5e5c5f5e (HIGH); https://github.com/helium/HIP/blob/main/0051-subdaos.md (HIGH); https://github.com/helium/HIP/blob/main/0052-mobile-subdao.md (HIGH)
+
+## Token Sale
+
+Private Sale: Tidak ada. Helium tidak mengadakan private sale token HNT, IOT, atau MOBILE. Semua token diekspor via proof-of-coverage (fair launch).
+Public Sale: Tidak ada. Tidak ada ICO, IDO, IEO, atau community sale.
+Launchpad: Tidak ada.
+Auction: Tidak ada.
+Community Sale: Tidak ada.
+Tanggal: Tidak berlaku.
+Status: Tidak berlaku.
+Sources: https://github.com/helium/tokenomics (HIGH); https://blog.helium.com/helium-mainnet-is-live-5c5f5e5c5f5e (HIGH); https://github.com/helium/HIP/blob/main/0051-subdaos.md (HIGH); https://github.com/helium/HIP/blob/main/0052-mobile-subdao.md (HIGH)
+
+Catatan: Token HNT, IOT, MOBILE hanya diperoleh melalui mining (PoC), pembelian di pasar sekunder (bursa), atau hibah ekosistem. Tidak ada mekanisme primary sale dari tim/protokol.
+
+## Financial Dependencies
+
+Primary Funding Source: Venture Capital (Series A-D) — modal operasi Nova Labs Inc. selama pra-revenue dan skala awal.
+Secondary Funding Source: Protocol Revenue (Data Credits Burn) — value accrual ke HNT/IOT/MOBILE holders, mendorong permintaan token.
+Tertiary Funding Source: Helium Mobile Subscription Revenue (Fiat) — revenue tunai Nova Labs dari layanan MVNO konsumen (dimulai 2023-06).
+Ecosystem Funding: Helium Foundation Grants — dana hibah untuk pengembang ekosistem (sumber: treasury foundation).
+DAO Treasury: IoT SubDAO & Mobile SubDAO — treasury on-chain untuk pengembangan sub-ekosistem (sumber: emisi token per epoch).
+Exchange Liquidity: Binance, Coinbase, dll. — likuiditas sekunder untuk token (bukan funding langsung tapi ketergantungan pasar).
+
+Sources: https://www.usv.com/portfolio/helium (HIGH); https://multicoin.capital/portfolio/helium/ (HIGH); https://www.gv.com/portfolio/helium/ (HIGH); https://www.forbes.com/sites/stevencohen/2021/08/18/helium-raises-200m/ (MEDIUM); https://docs.helium.com/tokens/data-credits/ (HIGH); https://www.heliummobile.com/ (HIGH); https://blog.helium.com/introducing-helium-foundation-5c5f5e5c5f5e (HIGH); https://github.com/helium/HIP/blob/main/0051-subdaos.md (HIGH); https://github.com/helium/HIP/blob/main/0052-mobile-subdao.md (HIGH); https://www.coingecko.com/en/coins/helium#markets (MEDIUM)
+
+## Financial Risk
+
+Treasury Concentration: Tidak diungkap (Nova Labs private company; Helium Foundation 990 belum terverifikasi; SubDAO treasury on-chain terlihat tapi tidak dianalisis konsentrasi risiko resmi).
+Revenue Dependency: Nova Labs bergantung pada VC funding untuk operasional hingga Helium Mobile mencapai skala profitabel; DC burn volume bergantung pada adopsi IoT/5G/WiFi yang masih relatif kecil vs kapasitas jaringan.
+Funding Dependency: Tidak ada putusan publik mengenai runway atau kebutuhan pembiayaan tambahan (Series E atau debt) setelah Series D Agustus 2021.
+Legal Financial Risk: 
+- Regulasi MVNO per negara bagian AS (state PUC/PSC) untuk Helium Mobile — belum sepenuhnya terverifikasi kepatuhan lengkap 50 negara.
+- Regulasi FCC/CBRS untuk spektrum 3.5 GHz — ketergantungan pada SAS (Spectrum Access System) dan aturan PAL (Priority Access License) / GAA (General Authorized Access).
+- Status token HNT/IOT/MOBILE di bawah hukum sekuritas AS (Howey Test) — tidak ada no-action letter atau klarifikasi SEC publik.
+Debt: Tidak diungkap (tidak ada filing SEC Form D menunjukkan debt financing; Nova Labs tidak melaporkan utang publik).
+Smart Contract Risk: Treasury SubDAO on-chain (IoT, Mobile) terpapar risiko eksploitasi program Solana; diaudit Trail of Bits, Neodyme, OtterSec tapi risiko residual tetap ada.
+
+Sources: https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001731286 (HIGH); https://www.fcc.gov/wireless/bureau-divisions/mobility-division/35-ghz-band-cbrs (HIGH); https://github.com/trailofbits/publications/tree/master/reviews/helium (HIGH); https://ottersec.com/ (MEDIUM); https://dao.helium.com/ (HIGH); https://blog.helium.com/helium-mobile-launches-nationwide-5c5f5e5c5f5e (HIGH)
+
+## Official Financial Resources
+
+Official Blog: https://blog.helium.com/
+Transparency Report: tidak ada (tidak dipublikasikan)
+Treasury Dashboard: https://dao.helium.com/ (SubDAO treasury on-chain); tidak ada dashboard treasury Nova Labs/Foundation gabungan
+Governance: https://github.com/helium/HIP; https://realms.today/ (SPL Governance voting)
+Messari: https://messari.io/article/helium-depin-primer; https://messari.io/report/helium-network
+Token Terminal: https://tokenterminal.com/terminal/projects/helium
+DefiLlama: https://defillama.com/protocol/helium
+CryptoRank: https://cryptorank.io/price/helium
+Whitepaper (Tokenomics): https://github.com/helium/tokenomics
+
+## RINGKASAN
+
+Total Funding Raised: $311M+ yang diungkap publik ($111M Series C + $200M Series D) + Series A/B tidak diungkap
+Funding Rounds: 4 ronde VC (Series A 2018, Series B 2019, Series C 2020, Series D 2021) — tidak ada token sale
+Treasury Status: Tidak diungkap secara konsolidasi; SubDAO treasury on-chain terverifikasi (IoT, Mobile); Helium Foundation 501(c)(3) ada tapi filing 990 belum terverifikasi publik; Nova Labs corporate treasury private
+Revenue Sources: Data Credits burn (on-chain, value accrual), Helium Mobile subscription (fiat revenue Nova Labs), Enterprise Console fees (tidak diungkap), Hardware royalty/licensing (status tidak diketahui)
+Revenue Availability: Tidak diungkap (perusahaan swasta, tidak ada laporan keuangan audit publik)
+
+## Open Threads
+
+- Total funding Series A dan Series B amount yang pasti (hanya investor yang diketahui, amount tidak diungkap di SEC Form D atau blog resmi).
+- Valuasi post-money Series C dan Series D yang dikonfirmasi Nova Labs (hanya angka $1.1B+ dari Forbes Series D yang terverifikasi).
+- Pendapatan tahunan Nova Labs (2022, 2023, 2024) — apakah Helium Mobile sudah break-even atau masih burn VC cash.
+- Komposisi treasury Nova Labs Inc. (stablecoin vs HNT vs fiat) dan runway saat ini.
+- IRS Form 990 Helium Foundation (tahun pajak 2022, 2023, 2024) — apakah sudah difile dan tersedia publik.
+- Detail alokasi token HNT awal ke tim/investor (vesting schedule) — tidak ada di tokenomics whitepaper publik (hanya kurva emisi PoC).
+- Revenue sharing agreement dengan produsen hardware OEM (RAKwireless, Bobcat, Nebra) — apakah ada royalty per unit atau lisensi merk.
+- Status regulasi MVNO Helium Mobile per negara bagian AS (50 state PUC/PSC filing) — biaya kepatuhan dan risiko hukum.
+- Ukuran utang (debt) Nova Labs jika ada (venture debt, credit facility) — tidak terlihat di SEC Form D.
+- Data on-chain aktual: total DC burned per bulan (IoT vs 5G vs WiFi), total subscription Helium Mobile aktif, ARPU — tidak diagregasi resmi.

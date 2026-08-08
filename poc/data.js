@@ -2,9 +2,9 @@
 window.CIF = {
   "meta": {
     "schema": "cif-export/1",
-    "generated": "2026-08-08 07:43 UTC",
-    "projects": 12,
-    "deep": 12,
+    "generated": "2026-08-08 10:47 UTC",
+    "projects": 26,
+    "deep": 26,
     "summary": 0,
     "sentiment": 0,
     "patterns": 16,
@@ -106,6 +106,16 @@ window.CIF = {
       ]
     },
     {
+      "n": "Cardano",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Cardano.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "l1"
+      ]
+    },
+    {
       "n": "Celestia",
       "tier": "Deep",
       "file": "examples/CaseStudies/Celestia.md",
@@ -113,6 +123,66 @@ window.CIF = {
       "era": "",
       "tags": [
         "modular"
+      ]
+    },
+    {
+      "n": "Compound",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Compound.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "governance"
+      ]
+    },
+    {
+      "n": "EOS",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/EOS.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "l1"
+      ]
+    },
+    {
+      "n": "Ethena",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Ethena.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "stablecoin",
+        "synthetic"
+      ]
+    },
+    {
+      "n": "Grass",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Grass.md",
+      "cat": "",
+      "era": "",
+      "tags": []
+    },
+    {
+      "n": "Helium",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Helium.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "depin"
+      ]
+    },
+    {
+      "n": "Hyperliquid",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Hyperliquid.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "perps",
+        "l1"
       ]
     },
     {
@@ -127,6 +197,61 @@ window.CIF = {
       ]
     },
     {
+      "n": "Jito",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Jito.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "airdrop",
+        "liquid-staking",
+        "governance"
+      ]
+    },
+    {
+      "n": "Kamino",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Kamino.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "points"
+      ]
+    },
+    {
+      "n": "Lido",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Lido.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "liquid-staking",
+        "oracle",
+        "governance"
+      ]
+    },
+    {
+      "n": "MakerDAO",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/MakerDAO.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "stablecoin",
+        "governance"
+      ]
+    },
+    {
+      "n": "MegaETH",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/MegaETH.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "l2"
+      ]
+    },
+    {
       "n": "Monad",
       "tier": "Deep",
       "file": "examples/CaseStudies/Monad.md",
@@ -135,6 +260,25 @@ window.CIF = {
       "tags": [
         "l1"
       ]
+    },
+    {
+      "n": "Movement Labs",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Movement Labs.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "modular",
+        "l2"
+      ]
+    },
+    {
+      "n": "Notcoin",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Notcoin.md",
+      "cat": "",
+      "era": "",
+      "tags": []
     }
   ],
   "patterns": [

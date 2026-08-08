@@ -76,6 +76,29 @@ FIELD_LABELS = ["Description", "Explanation", "Evidence", "Supporting Dataset", 
 _header_alt = "|".join(re.escape(h) for h, _, _ in SECTIONS)
 _field_alt = "|".join(re.escape(l) for l in FIELD_LABELS)
 
+# Every internal header this phase can emit, including the trailing recap ones that aren't
+# parsed as item sections but still have to be stripped of markdown -- see _normalise_headers.
+_ALL_INTERNAL_HEADERS = [h for h, _, _ in SECTIONS] + ["Knowledge Summary", "Open Threads"]
+_internal_header_alt = "|".join(re.escape(h) for h in _ALL_INTERNAL_HEADERS)
+_HEADER_MARKUP_RE = re.compile(
+    rf"(?im)^[ \t]*(?:#{{1,6}}[ \t]*)?\*{{0,2}}({_internal_header_alt})\*{{0,2}}[ \t]*:?[ \t]*$"
+)
+
+
+def _normalise_headers(text):
+    """Strip markdown decoration (`## Core Insights`, `### Core Insights`, `**Core Insights**`)
+    off this phase's internal section headers, leaving the bare text the parser expects.
+
+    The Track C prompt asks for bare headers, but the model routinely adds markdown anyway --
+    observed across EOS, Ethena, Jito, MegaETH, Movement Labs, Cardano, Compound, Cosmos,
+    Friend.tech and more, each time with genuinely good research underneath. Two separate things
+    break when it does, which is why this is normalised centrally instead of being patched per
+    project: _sections() stops recognising the headers, and -- far worse -- parse_knowledge's
+    own phase-boundary lookahead used to stop dead at the first internal `## `, truncating the
+    whole phase body to a couple of dozen characters and silently yielding zero items. Safe to
+    do unconditionally: none of these names collide with a phase title."""
+    return _HEADER_MARKUP_RE.sub(r"\1", text)
+
 
 def _project_name(text):
     m = re.search(r"^#\s+(.+?)(?:\s+—|\s+-\s|$)", text, re.M)
@@ -87,13 +110,21 @@ def _slugify(name):
 
 
 def _sections(body):
+    """{header: section_text} for whichever headers appear, concatenating repeats.
+
+    A header legitimately appears more than once -- the phase lists its real items under
+    "Strategic Principles", then the closing Knowledge Summary recaps the same headings with a
+    line or two each (verified on Arbitrum: 2x "Strategic Principles", 2x "Success Factors").
+    Assigning into the dict instead of appending let the tiny recap silently REPLACE the real
+    section, dropping most items (Arbitrum parsed 6 items instead of 39). Same setdefault/join
+    approach extract_behavior.py already uses for exactly this reason."""
     matches = list(re.finditer(rf"(?:^|\n)({_header_alt})\s*\n", body))
     out = {}
     for i, m in enumerate(matches):
         start = m.end()
         end = matches[i + 1].start() if i + 1 < len(matches) else len(body)
-        out[m.group(1)] = body[start:end]
-    return out
+        out.setdefault(m.group(1), []).append(body[start:end])
+    return {k: "\n".join(v) for k, v in out.items()}
 
 
 def _extract_field(block, label):
@@ -105,7 +136,16 @@ def _extract_field(block, label):
 
 
 def parse_knowledge(text, project_name):
-    m = re.search(r"^## Knowledge Extraction\n(.*?)(?=\n## )", text, re.S | re.M)
+    text = _normalise_headers(text)
+    # Anchored on the titles that actually FOLLOW Knowledge Extraction in an assembled dossier
+    # (phase 11 under either of its two names, the assembled Open Questions recap, or end of
+    # file) rather than a bare `\n## `. The bare version stopped at the phase's own first
+    # internal header whenever the model markdown-formatted it -- _normalise_headers now
+    # removes those anyway, but pinning the boundary to real phase titles keeps this correct
+    # even if some future phase emits a header this module doesn't know about.
+    m = re.search(
+        r"^## Knowledge Extraction\n(.*?)(?=\n## (?:Validation|Conflicting|Open Questions)|\Z)",
+        text, re.S | re.M)
     body = m.group(1) if m else ""
     sections = _sections(body)
 
