@@ -77,12 +77,32 @@ ingest modes (which still exist mechanically in `tools/ingest.py` but are no lon
 Target scale (~1000 projects) ≈ ~50 deep + ~950 summary ≈ **~150 sessions**. State persists in git, so
 per-session cost stays flat regardless of dataset size.
 
-## Application layer (product/UI, not knowledge)
+## Repo boundary — this repo is DATA INTEGRATION only
 
-Before building or changing anything user-facing (UI, trust/citation display, project-identification flow,
-Supabase/AirdropOS bridge), read `docs/Project/ApplicationBlueprint.md` first — it is the locked plan for
-positioning, the three-layer trust architecture, the hybrid project-identification flow, and the build-phase
-sequencing. Don't re-derive these decisions from scratch; update that file if a decision changes.
+**The frontend and backend live in a separate Next.js repo, owned by a different team.** This repo does not
+build UI. Its output is data: the research pipeline, the extraction contracts, `poc/*.json`, and the Supabase
+tables the other repo reads. Work stops at the database.
+
+| Lane | Owner | Scope |
+|------|-------|-------|
+| **Data integration** | **this repo** | `reset/` pipeline, `tools/` extractors + sync, `data_project/`, `examples/`, `poc/*.json`, Supabase schema and contents |
+| Frontend + backend | separate Next.js repo | every user-facing surface, API serving layer, auth/RBAC/SSO, rendering |
+
+Consequences worth internalising, because they change what "done" means here:
+
+- A surface being unbuilt is **not this repo's problem**. A surface being *unbuildable because the data isn't
+  there* **is** — e.g. the `relationships` table is empty, so an entity-graph screen would render nothing.
+- The frontend reads real data as of 2026-08-08, so **thin data is immediately visible as a thin product**.
+  A dossier that exists but was never extracted into `poc/*.json` is invisible to users (this actually
+  happened to Friend.tech).
+- Don't clone, read, or plan work in the frontend repo. If something there needs to change, say so and hand
+  it over.
+
+**Product decisions still live here as documentation:** `docs/Project/ApplicationBlueprint.md` is the locked
+plan for positioning, the three-layer trust architecture, the identification flow, and build-phase
+sequencing — read it before changing anything that affects what the product can claim, and update it if a
+decision changes. `docs/Project/EnterpriseRoadmap.md` sequences longer-term modules and tags each one
+`[data]` or `[frontend]`.
 
 ## Roles — pick one per session, then read its runbook
 
