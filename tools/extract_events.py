@@ -68,10 +68,20 @@ def slugify(name: str) -> str:
 
 
 def extract_project_name(text: str) -> str:
-    m = re.search(r"^PROJECT:\s*(.+)$", text, re.M)
+    """The assembled dossier's H1 title first, the phase file's own 'PROJECT:' header second.
+
+    That order matters and used to be reversed. `projects.slug` -- which `events.project_slug`
+    has a foreign key to -- is derived from the dossier title (ingest.py writes it from the
+    data_project/<Folder> name), while the PROJECT: header carries whatever the model wrote,
+    which is often a longer trade name: "Kamino" vs "Kamino Finance" slugged to `kamino` vs
+    `kamino-finance`, and the whole events sync died on a FK violation. Every sibling extractor
+    already keys off the H1, so this simply stops events.py being the odd one out. The
+    PROJECT: fallback is still needed for the raw single-phase files that verify_10_phases
+    feeds in, which have no H1 at all."""
+    m = re.search(r"^#\s+(.+?)(?:\s+—|\s+-\s|$)", text, re.M)
     if m:
         return m.group(1).strip()
-    m = re.search(r"^#\s*(.+?)\s*—", text, re.M)
+    m = re.search(r"^PROJECT:\s*(.+)$", text, re.M)
     return m.group(1).strip() if m else ""
 
 
