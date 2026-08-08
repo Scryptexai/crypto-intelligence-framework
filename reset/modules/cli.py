@@ -162,13 +162,19 @@ def main(argv=None) -> None:
                  "the pipeline's control flow without an API key, or --audit to inspect "
                  "existing files without any credentials at all.")
 
-    if len(providers) > 1:
-        chain = " -> ".join(f"{p.name}({p.model})" for p in providers)
-        log(f"Provider chain: {chain}. Heavy phases (9, 11) run as ONE call; the gateway is "
-            f"still tried first and rotation happens only on a capacity failure.")
+    chain = " -> ".join(f"{p.name}({p.model})" for p in providers)
+    if config.STREAM_RESPONSES:
+        mode = ("streaming ON -- every phase goes out as ONE call; the gateway's ~300s "
+                "non-streaming ceiling does not apply")
+    elif len(providers) > 1 or any(p.heavy_capable for p in providers):
+        mode = ("streaming OFF -- heavy phases (9, 11) rely on rotating to a heavy-capable "
+                "provider to survive the gateway's ~300s ceiling")
     else:
-        log("Provider chain: gateway only (set DEEPSEEK_API_KEY to enable rotation). "
-            "Heavy phases (9, 11) will be split into stages to fit its ~300s limit.")
+        mode = ("streaming OFF and no fallback provider -- heavy phases (9, 11) fall back to "
+                "the STAGED split, which risks duplicated sections; prefer leaving streaming on")
+    log(f"Provider chain: {chain} | {mode}")
+    if len(providers) == 1:
+        log("  (set DEEPSEEK_API_KEY to add a fallback provider for capacity failures)")
 
     if args.redo_phases:
         try:
