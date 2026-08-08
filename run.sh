@@ -83,6 +83,10 @@ run_extract_iw_fields() {
     "$PY" tools/extract_knowledge.py "${real[@]}"
     "$PY" tools/extract_behavior.py "${real[@]}"
     "$PY" tools/extract_qa.py "${real[@]}"
+    # Timeline events (poc/events.json). Was missing here while every other extractor was
+    # wired in, so a manual `./run.sh build` left events.json stale -- only the reset
+    # pipeline's own chain regenerated it.
+    "$PY" tools/extract_events.py "${real[@]}"
   fi
 }
 

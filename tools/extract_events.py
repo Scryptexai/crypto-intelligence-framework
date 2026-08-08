@@ -91,7 +91,15 @@ def parse_events(text: str, project_slug: str) -> list[dict]:
         sources = [s.strip() for s in m.group("sources").strip().splitlines() if s.strip()]
         participants = [p.strip() for p in m.group("participants").split(";") if p.strip()]
         rows.append({
-            "id": m.group("id"),
+            # Prefixed with the project slug because Intelligence Workspace's `events` table
+            # keys on a bare `id`, so it must be unique across every project ever synced --
+            # not just within one dossier. The dossier's own numbering restarts at EV-001 for
+            # each project, so 25 projects produced 25 rows all claiming id "EV-001" and the
+            # upsert died with "ON CONFLICT DO UPDATE command cannot affect row a second time"
+            # (Postgres 21000) before writing anything. Same convention extract_entities.py
+            # already uses (<slug>-ENT-NNN) for exactly this reason; the original EV-NNN stays
+            # readable as the id's suffix and is unchanged in the prose citations that use it.
+            "id": f"{project_slug}-{m.group('id')}",
             "projectSlug": project_slug,
             "name": m.group("name").strip(),
             "date": m.group("date").strip(),
@@ -109,24 +117,35 @@ def parse_events(text: str, project_slug: str) -> list[dict]:
 
 
 def main():
-    if len(sys.argv) != 2:
-        sys.exit("usage: python3 tools/extract_events.py <path-to-dossier.md>")
-    path = Path(sys.argv[1])
-    text = path.read_text(encoding="utf-8")
-    project_name = extract_project_name(text)
-    if not project_name:
-        sys.exit("could not find project name (PROJECT: <Name> header)")
-    slug = slugify(project_name)
-
-    events = parse_events(text, slug)
-    if not events:
-        sys.exit(f"no Historical Intelligence EV-### blocks found in {path} "
-                  f"(Track A/B dossiers don't carry this format)")
+    # Accepts N dossiers, like every sibling extractor -- a single-file-only signature meant
+    # `./run.sh` could not batch this script the way it batches the others, so poc/events.json
+    # silently went stale on every manual build. A dossier with no EV-### blocks (Track A/B)
+    # is skipped with a note instead of aborting the whole batch.
+    if len(sys.argv) < 2:
+        sys.exit("usage: python3 tools/extract_events.py <dossier.md> [more.md ...]")
 
     data = json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else {}
-    data[project_name] = events
+    for arg in sys.argv[1:]:
+        path = Path(arg)
+        if not path.exists():
+            print(f"[extract_events] skip (not found): {arg}", file=sys.stderr)
+            continue
+        text = path.read_text(encoding="utf-8")
+        project_name = extract_project_name(text)
+        if not project_name:
+            print(f"[extract_events] skip ({path.name}): no 'PROJECT: <Name>' header",
+                  file=sys.stderr)
+            continue
+        events = parse_events(text, slugify(project_name))
+        if not events:
+            print(f"[extract_events] {project_name}: no Historical Intelligence EV-### blocks "
+                  f"(Track A/B dossier? skipped)", file=sys.stderr)
+            continue
+        data[project_name] = events
+        print(f"✅ extracted {len(events)} event(s) for {project_name}")
+
     OUT.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"✅ extracted {len(events)} event(s) for {project_name} -> {OUT}")
+    print(f"-> {OUT.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":

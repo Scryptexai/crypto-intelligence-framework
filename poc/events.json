@@ -1,7 +1,7 @@
 {
   "Arbitrum": [
     {
-      "id": "EV-001",
+      "id": "arbitrum-EV-001",
       "projectSlug": "arbitrum",
       "name": "Awal Riset Arbitrum sebagai Proyek Kelas di Princeton",
       "date": "2014",
@@ -18,7 +18,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-002",
+      "id": "arbitrum-EV-002",
       "projectSlug": "arbitrum",
       "name": "Publikasi Paper Arbitrum di USENIX Security",
       "date": "2018-07",
@@ -39,7 +39,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-003",
+      "id": "arbitrum-EV-003",
       "projectSlug": "arbitrum",
       "name": "Pendirian Offchain Labs",
       "date": "2018-08",
@@ -59,7 +59,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-004",
+      "id": "arbitrum-EV-004",
       "projectSlug": "arbitrum",
       "name": "Posting Perdana Arbitrum di EthResearch",
       "date": "2018-10",
@@ -77,7 +77,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-005",
+      "id": "arbitrum-EV-005",
       "projectSlug": "arbitrum",
       "name": "Seed Round Pendanaan",
       "date": "2019-04-02",
@@ -98,7 +98,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-006",
+      "id": "arbitrum-EV-006",
       "projectSlug": "arbitrum",
       "name": "Pengenalan Arbitrum sebagai Solusi Skalabilitas",
       "date": "2019-04-15",
@@ -115,7 +115,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-007",
+      "id": "arbitrum-EV-007",
       "projectSlug": "arbitrum",
       "name": "Investasi Coinbase Ventures",
       "date": "2019-09-04",
@@ -133,7 +133,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-008",
+      "id": "arbitrum-EV-008",
       "projectSlug": "arbitrum",
       "name": "Testnet Perdana Arbitrum",
       "date": "2020-02",
@@ -150,7 +150,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-009",
+      "id": "arbitrum-EV-009",
       "projectSlug": "arbitrum",
       "name": "Testnet dengan General Contract Deployment",
       "date": "2020-10",
@@ -167,7 +167,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-010",
+      "id": "arbitrum-EV-010",
       "projectSlug": "arbitrum",
       "name": "Testnet Mainnet Release Candidate",
       "date": "2021-03",
@@ -184,7 +184,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-011",
+      "id": "arbitrum-EV-011",
       "projectSlug": "arbitrum",
       "name": "Series A Pendanaan",
       "date": "2021-04-01",
@@ -203,7 +203,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-012",
+      "id": "arbitrum-EV-012",
       "projectSlug": "arbitrum",
       "name": "Mainnet Beta untuk Developer",
       "date": "2021-05",
@@ -220,7 +220,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-013",
+      "id": "arbitrum-EV-013",
       "projectSlug": "arbitrum",
       "name": "Launch Arbitrum One Mainnet Publik",
       "date": "2021-08-31",
@@ -238,7 +238,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-014",
+      "id": "arbitrum-EV-014",
       "projectSlug": "arbitrum",
       "name": "Series B Pendanaan $120 Juta",
       "date": "2021-08-31",
@@ -262,7 +262,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-015",
+      "id": "arbitrum-EV-015",
       "projectSlug": "arbitrum",
       "name": "Ravi Mhatre Bergabung dengan Board Offchain Labs",
       "date": "2021-08-31",
@@ -281,7 +281,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-016",
+      "id": "arbitrum-EV-016",
       "projectSlug": "arbitrum",
       "name": "Deployment Uniswap, Curve, Aave, Sushi di Arbitrum",
       "date": "2021-09",
@@ -302,7 +302,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-017",
+      "id": "arbitrum-EV-017",
       "projectSlug": "arbitrum",
       "name": "Nitro Testnet Diluncurkan",
       "date": "2022-04",
@@ -319,7 +319,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-018",
+      "id": "arbitrum-EV-018",
       "projectSlug": "arbitrum",
       "name": "Arbitrum Odyssey Dimulai",
       "date": "2022-06-22",
@@ -338,7 +338,7 @@
       "_status": "Cancelled"
     },
     {
-      "id": "EV-019",
+      "id": "arbitrum-EV-019",
       "projectSlug": "arbitrum",
       "name": "Arbitrum Odyssey Dihentikan Sementara",
       "date": "2022-06-29",
@@ -356,7 +356,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-020",
+      "id": "arbitrum-EV-020",
       "projectSlug": "arbitrum",
       "name": "Arbitrum Nova Diluncurkan untuk Developer",
       "date": "2022-07",
@@ -373,7 +373,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-021",
+      "id": "arbitrum-EV-021",
       "projectSlug": "arbitrum",
       "name": "Arbitrum Nova Diluncurkan ke Publik",
       "date": "2022-08-09",
@@ -390,7 +390,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-022",
+      "id": "arbitrum-EV-022",
       "projectSlug": "arbitrum",
       "name": "Upgrade Arbitrum One ke Arbitrum Nitro",
       "date": "2022-08-31",
@@ -408,7 +408,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-023",
+      "id": "arbitrum-EV-023",
       "projectSlug": "arbitrum",
       "name": "Pengumuman Token ARB",
       "date": "2023-02",
@@ -426,7 +426,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-024",
+      "id": "arbitrum-EV-024",
       "projectSlug": "arbitrum",
       "name": "Token Generation Event (TGE) ARB",
       "date": "2023-03-16",
@@ -444,7 +444,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-025",
+      "id": "arbitrum-EV-025",
       "projectSlug": "arbitrum",
       "name": "Airdrop ARB dan Listing di Exchange",
       "date": "2023-03-23",
@@ -467,7 +467,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-026",
+      "id": "arbitrum-EV-026",
       "projectSlug": "arbitrum",
       "name": "Pembentukan Arbitrum Foundation",
       "date": "2023-03",
@@ -487,7 +487,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-027",
+      "id": "arbitrum-EV-027",
       "projectSlug": "arbitrum",
       "name": "AIP-1 Proposal Diajukan",
       "date": "2023-04-01",
@@ -505,7 +505,7 @@
       "_status": "Completed (ditolak/dibatalkan)"
     },
     {
-      "id": "EV-028",
+      "id": "arbitrum-EV-028",
       "projectSlug": "arbitrum",
       "name": "AIP-1 Ditolak oleh DAO",
       "date": "2023-04-17",
@@ -523,7 +523,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-029",
+      "id": "arbitrum-EV-029",
       "projectSlug": "arbitrum",
       "name": "Arbitrum Stylus Live di Mainnet",
       "date": "2024-09-03",
@@ -541,7 +541,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-030",
+      "id": "arbitrum-EV-030",
       "projectSlug": "arbitrum",
       "name": "NFT Minting Perdana Stylus",
       "date": "2024-09-09",
@@ -559,7 +559,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-031",
+      "id": "arbitrum-EV-031",
       "projectSlug": "arbitrum",
       "name": "Arbitrum Audit Subsidy Program Diluncurkan",
       "date": "2025-08-01",
@@ -577,7 +577,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-032",
+      "id": "arbitrum-EV-032",
       "projectSlug": "arbitrum",
       "name": "AGV Council Elections Dimulai",
       "date": "2025-11-27",
@@ -595,7 +595,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-033",
+      "id": "arbitrum-EV-033",
       "projectSlug": "arbitrum",
       "name": "Exploit $17M di SwapNet dan Aperture Finance",
       "date": "2026-01-25",
@@ -617,7 +617,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-034",
+      "id": "arbitrum-EV-034",
       "projectSlug": "arbitrum",
       "name": "Nominee Selection Phase Security Council Elections",
       "date": "2026-03-22",
@@ -635,7 +635,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-035",
+      "id": "arbitrum-EV-035",
       "projectSlug": "arbitrum",
       "name": "Security Council Election Voting",
       "date": "2026-04-12 - 2026-05-03",
@@ -653,7 +653,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-036",
+      "id": "arbitrum-EV-036",
       "projectSlug": "arbitrum",
       "name": "KelpDAO Bridge Exploit",
       "date": "2026-04-18",
@@ -673,7 +673,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-037",
+      "id": "arbitrum-EV-037",
       "projectSlug": "arbitrum",
       "name": "Restraining Order dari Pengadilan AS terhadap Arbitrum DAO",
       "date": "2026-04-30",
@@ -692,7 +692,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-038",
+      "id": "arbitrum-EV-038",
       "projectSlug": "arbitrum",
       "name": "Pengumuman Hasil Security Council Election",
       "date": "2026-05-05",
@@ -718,7 +718,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-039",
+      "id": "arbitrum-EV-039",
       "projectSlug": "arbitrum",
       "name": "Stake DAO Exploit di Arbitrum",
       "date": "2026-05-27",
@@ -736,7 +736,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-040",
+      "id": "arbitrum-EV-040",
       "projectSlug": "arbitrum",
       "name": "On-Chain Vote Budget Proposal 2027",
       "date": "2026-06-08",
@@ -754,7 +754,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-041",
+      "id": "arbitrum-EV-041",
       "projectSlug": "arbitrum",
       "name": "Robinhood Chain Diluncurkan di Arbitrum Orbit",
       "date": "2026-07-01",
@@ -774,7 +774,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-042",
+      "id": "arbitrum-EV-042",
       "projectSlug": "arbitrum",
       "name": "Lumi Finance Exploit di Arbitrum",
       "date": "2026-07-13",
@@ -793,7 +793,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-043",
+      "id": "arbitrum-EV-043",
       "projectSlug": "arbitrum",
       "name": "Rotasi Kunci Security Council dan Pengangkatan Patrick Collins",
       "date": "2026-07",
@@ -815,7 +815,7 @@
   ],
   "Blast": [
     {
-      "id": "EV-001",
+      "id": "blast-EV-001",
       "projectSlug": "blast",
       "name": "Pendirian Blur NFT Marketplace oleh Tieshun Roquerre",
       "date": "2022",
@@ -833,7 +833,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-002",
+      "id": "blast-EV-002",
       "projectSlug": "blast",
       "name": "Peluncuran Blast Testnet dan Program Points",
       "date": "2023-11-21",
@@ -854,7 +854,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-003",
+      "id": "blast-EV-003",
       "projectSlug": "blast",
       "name": "Pendirian Blast Foundation di Cayman Islands",
       "date": "2023-11",
@@ -872,7 +872,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-004",
+      "id": "blast-EV-004",
       "projectSlug": "blast",
       "name": "Peluncuran Blast Bridge (Testnet)",
       "date": "2023-11-21",
@@ -891,7 +891,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-005",
+      "id": "blast-EV-005",
       "projectSlug": "blast",
       "name": "Integrasi Blur dengan Blast Points (Blur Season 3)",
       "date": "2023-12",
@@ -910,7 +910,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-006",
+      "id": "blast-EV-006",
       "projectSlug": "blast",
       "name": "Peluncuran Blast Mainnet",
       "date": "2024-02-29",
@@ -932,7 +932,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-007",
+      "id": "blast-EV-007",
       "projectSlug": "blast",
       "name": "Peluncuran Blastscan Block Explorer",
       "date": "2024-02-29",
@@ -950,7 +950,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-008",
+      "id": "blast-EV-008",
       "projectSlug": "blast",
       "name": "Deploy Protokol DeFi Utama di Mainnet (Thruster, Ring Protocol, Wasabi)",
       "date": "2024-02-29",
@@ -970,7 +970,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-009",
+      "id": "blast-EV-009",
       "projectSlug": "blast",
       "name": "Peluncuran Program Blast Gold (Insentif Ekosistem)",
       "date": "2024-03",
@@ -991,7 +991,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-010",
+      "id": "blast-EV-010",
       "projectSlug": "blast",
       "name": "Token Generation Event (TGE) BLAST",
       "date": "2024-06-26",
@@ -1011,7 +1011,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-011",
+      "id": "blast-EV-011",
       "projectSlug": "blast",
       "name": "Listing Token BLAST di Centralized Exchange (Binance, Bybit, OKX, dll.)",
       "date": "2024-06-26",
@@ -1032,7 +1032,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-012",
+      "id": "blast-EV-012",
       "projectSlug": "blast",
       "name": "Aktivasi Blast DAO dan Governance On-Chain",
       "date": "2024-06",
@@ -1051,7 +1051,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-013",
+      "id": "blast-EV-013",
       "projectSlug": "blast",
       "name": "Peluncuran Kaito di Blast (Gaming/Social)",
       "date": "2024-07",
@@ -1070,7 +1070,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-014",
+      "id": "blast-EV-014",
       "projectSlug": "blast",
       "name": "Publikasi Repositori Kode Sumber blastL2 di GitHub",
       "date": "2024",
@@ -1088,7 +1088,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-015",
+      "id": "blast-EV-015",
       "projectSlug": "blast",
       "name": "Blast Mainnet Upgrade (Jika Ada - Perlu Verifikasi)",
       "date": "2024-08",
@@ -1109,7 +1109,7 @@
   ],
   "Avalanche": [
     {
-      "id": "EV-001",
+      "id": "avalanche-EV-001",
       "projectSlug": "avalanche",
       "name": "Pendirian Ava Labs dan Publikasi Whitepaper Konsensus Avalanche",
       "date": "2018",
@@ -1130,7 +1130,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-002",
+      "id": "avalanche-EV-002",
       "projectSlug": "avalanche",
       "name": "Ronde Pendanaan Seed Ava Labs",
       "date": "2019-02",
@@ -1148,7 +1148,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-003",
+      "id": "avalanche-EV-003",
       "projectSlug": "avalanche",
       "name": "Peluncuran Denali Testnet Publik",
       "date": "2019-04",
@@ -1167,7 +1167,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-004",
+      "id": "avalanche-EV-004",
       "projectSlug": "avalanche",
       "name": "Ronde Series A dan Strategic Sale AVAX",
       "date": "2020-07",
@@ -1190,7 +1190,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-005",
+      "id": "avalanche-EV-005",
       "projectSlug": "avalanche",
       "name": "Public Sale AVAX di CoinList (TGE)",
       "date": "2020-07",
@@ -1209,7 +1209,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-006",
+      "id": "avalanche-EV-006",
       "projectSlug": "avalanche",
       "name": "Peluncuran Mainnet Avalanche (Primary Network)",
       "date": "2020-09-21",
@@ -1228,7 +1228,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-007",
+      "id": "avalanche-EV-007",
       "projectSlug": "avalanche",
       "name": "Pendirian Avalanche Foundation (Cayman Islands)",
       "date": "2020-09",
@@ -1246,7 +1246,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-008",
+      "id": "avalanche-EV-008",
       "projectSlug": "avalanche",
       "name": "Listing AVAX di Binance dan Coinbase (Major CEX)",
       "date": "2021-01",
@@ -1265,7 +1265,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-009",
+      "id": "avalanche-EV-009",
       "projectSlug": "avalanche",
       "name": "Peluncuran Program Insentif Avalanche Rush ($180M+)",
       "date": "2021-04",
@@ -1287,7 +1287,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-010",
+      "id": "avalanche-EV-010",
       "projectSlug": "avalanche",
       "name": "Deployment Aave V3 di C-Chain Avalanche",
       "date": "2021-06",
@@ -1306,7 +1306,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-011",
+      "id": "avalanche-EV-011",
       "projectSlug": "avalanche",
       "name": "Peluncuran Trader Joe (DEX Native) dan Benqi (Lending/Liquid Staking)",
       "date": "2021-06",
@@ -1326,7 +1326,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-012",
+      "id": "avalanche-EV-012",
       "projectSlug": "avalanche",
       "name": "Peluncuran Subnet Pertama (Fungsi Subnet Mainnet Aktif)",
       "date": "2021-11",
@@ -1345,7 +1345,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-013",
+      "id": "avalanche-EV-013",
       "projectSlug": "avalanche",
       "name": "Peluncuran Avalanche Warp Messaging (AWM)",
       "date": "2022-03",
@@ -1364,7 +1364,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-014",
+      "id": "avalanche-EV-014",
       "projectSlug": "avalanche",
       "name": "Peluncuran Core Wallet (Browser Extension & Mobile)",
       "date": "2022-06",
@@ -1382,7 +1382,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-015",
+      "id": "avalanche-EV-015",
       "projectSlug": "avalanche",
       "name": "Peluncuran AvaCloud (Managed Subnet Service)",
       "date": "2022-11",
@@ -1402,7 +1402,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-016",
+      "id": "avalanche-EV-016",
       "projectSlug": "avalanche",
       "name": "Rilis HyperSDK (Framework VM High-Performance)",
       "date": "2022-11",
@@ -1420,7 +1420,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-017",
+      "id": "avalanche-EV-017",
       "projectSlug": "avalanche",
       "name": "Kerusakan Pasar Terra/Luna & Dampak ke TVL Avalanche",
       "date": "2022-05",
@@ -1440,7 +1440,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-018",
+      "id": "avalanche-EV-018",
       "projectSlug": "avalanche",
       "name": "Kebangkrutan Three Arrows Capital (3AC) - Investor Avalanche",
       "date": "2022-06",
@@ -1460,7 +1460,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-019",
+      "id": "avalanche-EV-019",
       "projectSlug": "avalanche",
       "name": "Upgrade Jaringan Cortina (v1.10.x) Aktif di Mainnet",
       "date": "2023-04",
@@ -1479,7 +1479,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-020",
+      "id": "avalanche-EV-020",
       "projectSlug": "avalanche",
       "name": "Peluncuran Teleporter (Inter-Subnet Messaging Generik)",
       "date": "2023-09",
@@ -1498,7 +1498,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-021",
+      "id": "avalanche-EV-021",
       "projectSlug": "avalanche",
       "name": "HyperSDK Mainnet & Subnet Produksi Pertama (Beam/Shrapnel)",
       "date": "2023-09",
@@ -1518,7 +1518,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-022",
+      "id": "avalanche-EV-022",
       "projectSlug": "avalanche",
       "name": "Kemitraan MapleStory Universe (Nexon) - Subnet MSU",
       "date": "2023-12",
@@ -1537,7 +1537,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-023",
+      "id": "avalanche-EV-023",
       "projectSlug": "avalanche",
       "name": "Kemitraan Gunzilla Games / Off The Grid (Subnet GUNZ)",
       "date": "2023-08",
@@ -1556,7 +1556,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-024",
+      "id": "avalanche-EV-024",
       "projectSlug": "avalanche",
       "name": "Kemitraan Shrapnel (Game AAA FPS Subnet)",
       "date": "2022-06",
@@ -1575,7 +1575,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-025",
+      "id": "avalanche-EV-025",
       "projectSlug": "avalanche",
       "name": "Kemitraan Deloitte - Solusi Disaster Recovery (Close As You Go)",
       "date": "2022-11",
@@ -1596,7 +1596,7 @@
   ],
   "AAVE": [
     {
-      "id": "EV-001",
+      "id": "aave-EV-001",
       "projectSlug": "aave",
       "name": "Pendirian ETHLend",
       "date": "2017-05-01",
@@ -1613,7 +1613,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-002",
+      "id": "aave-EV-002",
       "projectSlug": "aave",
       "name": "Peluncuran Platform ETHLend dan ICO",
       "date": "2017-11",
@@ -1631,7 +1631,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-003",
+      "id": "aave-EV-003",
       "projectSlug": "aave",
       "name": "Rebranding ETHLend menjadi Aave",
       "date": "2018-09-18",
@@ -1650,7 +1650,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-004",
+      "id": "aave-EV-004",
       "projectSlug": "aave",
       "name": "Peluncuran Public Testnet Aave V1",
       "date": "2019-10",
@@ -1667,7 +1667,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-005",
+      "id": "aave-EV-005",
       "projectSlug": "aave",
       "name": "Peluncuran Mainnet Aave V1 di Ethereum",
       "date": "2020-01-08",
@@ -1685,7 +1685,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-006",
+      "id": "aave-EV-006",
       "projectSlug": "aave",
       "name": "Pendanaan Token Sale $3 Juta",
       "date": "2020-07",
@@ -1704,7 +1704,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-007",
+      "id": "aave-EV-007",
       "projectSlug": "aave",
       "name": "Pengumuman Aavenomics dan Rencana Token AAVE",
       "date": "2020-07-29",
@@ -1723,7 +1723,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-008",
+      "id": "aave-EV-008",
       "projectSlug": "aave",
       "name": "Aktivasi AIP-1 (Fase Awal Aavenomics)",
       "date": "2020-09-25",
@@ -1741,7 +1741,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-009",
+      "id": "aave-EV-009",
       "projectSlug": "aave",
       "name": "Migrasi LEND ke AAVE dan Peluncuran Token AAVE",
       "date": "2020-10",
@@ -1760,7 +1760,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-010",
+      "id": "aave-EV-010",
       "projectSlug": "aave",
       "name": "Pendanaan Seri A $25 Juta",
       "date": "2020-10",
@@ -1780,7 +1780,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-011",
+      "id": "aave-EV-011",
       "projectSlug": "aave",
       "name": "Peluncuran Mainnet Aave V2",
       "date": "2020-12-03",
@@ -1797,7 +1797,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-012",
+      "id": "aave-EV-012",
       "projectSlug": "aave",
       "name": "Peluncuran AMM Markets di Aave V2",
       "date": "2021-03-16",
@@ -1814,7 +1814,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-013",
+      "id": "aave-EV-013",
       "projectSlug": "aave",
       "name": "Kemitraan Aave dengan Polygon",
       "date": "2021-03-31",
@@ -1832,7 +1832,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-014",
+      "id": "aave-EV-014",
       "projectSlug": "aave",
       "name": "Program Liquidity Mining Aave-Polygon $40 Juta",
       "date": "2021-04",
@@ -1850,7 +1850,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-015",
+      "id": "aave-EV-015",
       "projectSlug": "aave",
       "name": "Konsep Aave Arc Diperkenalkan",
       "date": "2021-07",
@@ -1867,7 +1867,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-016",
+      "id": "aave-EV-016",
       "projectSlug": "aave",
       "name": "Program Insentif Avalanche Rush — Aave",
       "date": "2021-08",
@@ -1885,7 +1885,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-017",
+      "id": "aave-EV-017",
       "projectSlug": "aave",
       "name": "Peluncuran Aave Arc",
       "date": "2021-11",
@@ -1903,7 +1903,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-018",
+      "id": "aave-EV-018",
       "projectSlug": "aave",
       "name": "Proposal Lisensi Bisnis Aave",
       "date": "2021-12",
@@ -1920,7 +1920,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-019",
+      "id": "aave-EV-019",
       "projectSlug": "aave",
       "name": "Diskusi Aave Governance V3 Dimulai",
       "date": "2022-01",
@@ -1937,7 +1937,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-020",
+      "id": "aave-EV-020",
       "projectSlug": "aave",
       "name": "Peluncuran Aave V3 di Enam Jaringan",
       "date": "2022-03-16",
@@ -1960,7 +1960,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-021",
+      "id": "aave-EV-021",
       "projectSlug": "aave",
       "name": "Penonaktifan Aave V1",
       "date": "2022-12-24",
@@ -1978,7 +1978,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-022",
+      "id": "aave-EV-022",
       "projectSlug": "aave",
       "name": "Peluncuran Aave V3 di Ethereum Mainnet",
       "date": "2023-01-27",
@@ -1996,7 +1996,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-023",
+      "id": "aave-EV-023",
       "projectSlug": "aave",
       "name": "Peluncuran GHO di Goerli Testnet",
       "date": "2023-02",
@@ -2014,7 +2014,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-024",
+      "id": "aave-EV-024",
       "projectSlug": "aave",
       "name": "Peluncuran Stablecoin GHO di Ethereum Mainnet",
       "date": "2023-07-15",
@@ -2033,7 +2033,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-025",
+      "id": "aave-EV-025",
       "projectSlug": "aave",
       "name": "Rilis Whitepaper Aave V4",
       "date": "2025-11-10",
@@ -2050,7 +2050,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-026",
+      "id": "aave-EV-026",
       "projectSlug": "aave",
       "name": "Voting Snapshot Proposal Aave Will Win",
       "date": "2025-12-23",
@@ -2067,7 +2067,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-027",
+      "id": "aave-EV-027",
       "projectSlug": "aave",
       "name": "Aave Labs Menghentikan Brand Avara",
       "date": "2026-02",
@@ -2085,7 +2085,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-028",
+      "id": "aave-EV-028",
       "projectSlug": "aave",
       "name": "Peluncuran Aave V4 di Ethereum Mainnet",
       "date": "2026-03-30",
@@ -2103,7 +2103,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-029",
+      "id": "aave-EV-029",
       "projectSlug": "aave",
       "name": "Proposal \"Aave Will Win\" Disahkan",
       "date": "2026-04-12",
@@ -2121,7 +2121,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-030",
+      "id": "aave-EV-030",
       "projectSlug": "aave",
       "name": "Eksploitasi Bridge rsETH Kelp DAO",
       "date": "2026-05-31",
@@ -2140,7 +2140,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-031",
+      "id": "aave-EV-031",
       "projectSlug": "aave",
       "name": "Aave Memperketat Aturan Collateral Pasca-Eksploitasi",
       "date": "2026-06",
@@ -2157,7 +2157,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-032",
+      "id": "aave-EV-032",
       "projectSlug": "aave",
       "name": "Peluncuran Aave V4 di Avalanche",
       "date": "2026-07-15",
@@ -2177,7 +2177,7 @@
   ],
   "Bancor": [
     {
-      "id": "EV-001",
+      "id": "bancor-EV-001",
       "projectSlug": "bancor",
       "name": "Pendirian Bprotocol Foundation dan Luncuran Mainnet Bancor V1",
       "date": "2017-02",
@@ -2194,7 +2194,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-002",
+      "id": "bancor-EV-002",
       "projectSlug": "bancor",
       "name": "Token Generation Event (TGE) dan ICO Bancor Network Token (BNT)",
       "date": "2017-06-12",
@@ -2211,7 +2211,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-003",
+      "id": "bancor-EV-003",
       "projectSlug": "bancor",
       "name": "Listing Perdana BNT di Bittrex dan Poloniex",
       "date": "2017-06",
@@ -2228,7 +2228,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-004",
+      "id": "bancor-EV-004",
       "projectSlug": "bancor",
       "name": "Listing BNT di Binance dan Coinbase",
       "date": "2018",
@@ -2245,7 +2245,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-005",
+      "id": "bancor-EV-005",
       "projectSlug": "bancor",
       "name": "Luncuran Bancor V2: AMM dengan Pool Tokens dan Co-Incentives",
       "date": "2020-04",
@@ -2262,7 +2262,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-006",
+      "id": "bancor-EV-006",
       "projectSlug": "bancor",
       "name": "Insiden Keamanan Bancor: Eksploit $23,5 Juta",
       "date": "2020-07",
@@ -2279,7 +2279,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-007",
+      "id": "bancor-EV-007",
       "projectSlug": "bancor",
       "name": "Luncuran Bancor V2.1: Single-Sided Exposure dan Impermanent Loss Protection",
       "date": "2020-10",
@@ -2296,7 +2296,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-008",
+      "id": "bancor-EV-008",
       "projectSlug": "bancor",
       "name": "Deploy Bancor V2.1 di Polygon (Matic Network)",
       "date": "2020-11",
@@ -2313,7 +2313,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-009",
+      "id": "bancor-EV-009",
       "projectSlug": "bancor",
       "name": "Pembentukan BancorDAO dan Governance On-Chain",
       "date": "2020",
@@ -2330,7 +2330,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-010",
+      "id": "bancor-EV-010",
       "projectSlug": "bancor",
       "name": "Luncuran Bancor V3: Omnipool, Vortex, dan Infinity Staking di Ethereum dan Arbitrum",
       "date": "2021-10",
@@ -2347,7 +2347,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-011",
+      "id": "bancor-EV-011",
       "projectSlug": "bancor",
       "name": "Audit Keamanan Bancor V3 oleh Trail of Bits, PeckShield, dan OpenZeppelin",
       "date": "2021",
@@ -2364,7 +2364,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-012",
+      "id": "bancor-EV-012",
       "projectSlug": "bancor",
       "name": "Integrasi Chainlink Price Feeds untuk IL Protection dan Vortex",
       "date": "2021",
@@ -2381,7 +2381,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-013",
+      "id": "bancor-EV-013",
       "projectSlug": "bancor",
       "name": "Integrasi The Graph Subgraph untuk Indexing Data Bancor",
       "date": "2020",
@@ -2398,7 +2398,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-014",
+      "id": "bancor-EV-014",
       "projectSlug": "bancor",
       "name": "Integrasi Arbitrum Bridge untuk Transfer BNT L1-L2",
       "date": "2021",
@@ -2415,7 +2415,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-015",
+      "id": "bancor-EV-015",
       "projectSlug": "bancor",
       "name": "Integrasi MetaMask dan WalletConnect untuk Bancor App",
       "date": "2017",
@@ -2432,7 +2432,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-016",
+      "id": "bancor-EV-016",
       "projectSlug": "bancor",
       "name": "Dukungan Ledger Hardware Wallet untuk BNT",
       "date": "2018",
@@ -2449,7 +2449,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-017",
+      "id": "bancor-EV-017",
       "projectSlug": "bancor",
       "name": "Migrasi Likuiditas V2 ke V3 dan Penutupan Incentive V2",
       "date": "2022",
@@ -2466,7 +2466,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-018",
+      "id": "bancor-EV-018",
       "projectSlug": "bancor",
       "name": "Proposal Governance: Penyesuaian Parameter Vortex dan Fee Swap",
       "date": "2023",
@@ -2483,7 +2483,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-019",
+      "id": "bancor-EV-019",
       "projectSlug": "bancor",
       "name": "Integrasi wstETH dan LST Lainnya ke Omnipool V3",
       "date": "2024",
@@ -2500,7 +2500,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-020",
+      "id": "bancor-EV-020",
       "projectSlug": "bancor",
       "name": "Peluncuran Bancor SDK dan Developer Tools Terbaru",
       "date": "2024",
@@ -2519,7 +2519,7 @@
   ],
   "Axie Infinity": [
     {
-      "id": "EV-001",
+      "id": "axie-infinity-EV-001",
       "projectSlug": "axie-infinity",
       "name": "Pendirian Sky Mavis dan Konsep Axie Infinity",
       "date": "2018",
@@ -2541,7 +2541,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-002",
+      "id": "axie-infinity-EV-002",
       "projectSlug": "axie-infinity",
       "name": "Peluncuran Mainnet Awal Axie Infinity pada Loom Network",
       "date": "2018-05",
@@ -2560,7 +2560,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-003",
+      "id": "axie-infinity-EV-003",
       "projectSlug": "axie-infinity",
       "name": "Rilis Whitepaper v1.0 (Arsip)",
       "date": "2018-2019",
@@ -2577,7 +2577,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-004",
+      "id": "axie-infinity-EV-004",
       "projectSlug": "axie-infinity",
       "name": "Peluncuran Token SLP (Smooth Love Potion) — Fair Launch",
       "date": "2020-07",
@@ -2596,7 +2596,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-005",
+      "id": "axie-infinity-EV-005",
       "projectSlug": "axie-infinity",
       "name": "Token Generation Event AXS via Binance Launchpad",
       "date": "2020-11",
@@ -2616,7 +2616,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-006",
+      "id": "axie-infinity-EV-006",
       "projectSlug": "axie-infinity",
       "name": "Pembiayaan Series A — Binance Labs, Animoca Brands, Hashed, Delphi Digital, Mechanism Capital, DeFiance Capital",
       "date": "2020",
@@ -2639,7 +2639,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-007",
+      "id": "axie-infinity-EV-007",
       "projectSlug": "axie-infinity",
       "name": "Peluncuran Ronin Testnet",
       "date": "2020-12",
@@ -2658,7 +2658,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-008",
+      "id": "axie-infinity-EV-008",
       "projectSlug": "axie-infinity",
       "name": "Peluncuran Ronin Mainnet",
       "date": "2021-02-09",
@@ -2684,7 +2684,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-009",
+      "id": "axie-infinity-EV-009",
       "projectSlug": "axie-infinity",
       "name": "Listing AXS di Coinbase Pro",
       "date": "2021-03",
@@ -2703,7 +2703,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-010",
+      "id": "axie-infinity-EV-010",
       "projectSlug": "axie-infinity",
       "name": "Peluncuran Katana DEX di Ronin",
       "date": "2021-08",
@@ -2722,7 +2722,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-011",
+      "id": "axie-infinity-EV-011",
       "projectSlug": "axie-infinity",
       "name": "Pembiayaan Series B — $152M dipimpin a16z Crypto",
       "date": "2021-10",
@@ -2749,7 +2749,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-012",
+      "id": "axie-infinity-EV-012",
       "projectSlug": "axie-infinity",
       "name": "Peluncuran Ronin Wallet (Browser Extension & Mobile)",
       "date": "2021-11",
@@ -2768,7 +2768,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-013",
+      "id": "axie-infinity-EV-013",
       "projectSlug": "axie-infinity",
       "name": "Google Cloud Bergabung sebagai Validator Ronin",
       "date": "2021-12",
@@ -2787,7 +2787,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-014",
+      "id": "axie-infinity-EV-014",
       "projectSlug": "axie-infinity",
       "name": "Eksploitasi Ronin Bridge — Kerugian ~$625M (173.600 ETH + 25.5M USDC)",
       "date": "2022-03-23",
@@ -2813,7 +2813,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-015",
+      "id": "axie-infinity-EV-015",
       "projectSlug": "axie-infinity",
       "name": "Restitusi Dana Korban Ronin Bridge oleh Sky Mavis dan Binance",
       "date": "2022-04",
@@ -2834,7 +2834,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-016",
+      "id": "axie-infinity-EV-016",
       "projectSlug": "axie-infinity",
       "name": "Peluncuran Mavis Market (NFT Marketplace Resmi Ronin)",
       "date": "2022-06",
@@ -2855,7 +2855,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-017",
+      "id": "axie-infinity-EV-017",
       "projectSlug": "axie-infinity",
       "name": "Advisory Philippines SEC — Axie Infinity dan SLP Dinyatakan Securities Tidak Terdaftar",
       "date": "2022-07-11",
@@ -2875,7 +2875,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-018",
+      "id": "axie-infinity-EV-018",
       "projectSlug": "axie-infinity",
       "name": "Pemutusan Hubungan Kerja (Layoffs) Sky Mavis — ~21% Karyawan",
       "date": "2022-09",
@@ -2894,7 +2894,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-019",
+      "id": "axie-infinity-EV-019",
       "projectSlug": "axie-infinity",
       "name": "Peluncuran Axie Infinity: Origins (Season 1) — Free-to-Play Client Unity",
       "date": "2022-10",
@@ -2913,7 +2913,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-020",
+      "id": "axie-infinity-EV-020",
       "projectSlug": "axie-infinity",
       "name": "Peluncuran Axie Infinity: Homeland (Alpha) — Land Gameplay",
       "date": "2022-11",
@@ -2934,7 +2934,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-021",
+      "id": "axie-infinity-EV-021",
       "projectSlug": "axie-infinity",
       "name": "Peluncuran Ronin Name Service (RNS)",
       "date": "2022-12",
@@ -2955,7 +2955,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-022",
+      "id": "axie-infinity-EV-022",
       "projectSlug": "axie-infinity",
       "name": "Migrasi Validator Ronin ke Proof-of-Stake (PoS) Delegated — Desentralisasi Konsensus",
       "date": "2023",
@@ -2982,7 +2982,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-023",
+      "id": "axie-infinity-EV-023",
       "projectSlug": "axie-infinity",
       "name": "Peluncuran Token RON (Ronin Native Token) — TGE dan Distribusi",
       "date": "2023-01",
@@ -3003,7 +3003,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-024",
+      "id": "axie-infinity-EV-024",
       "projectSlug": "axie-infinity",
       "name": "US SEC Mengeluarkan Wells Notice ke Sky Mavis",
       "date": "2024-03-06",
@@ -3025,7 +3025,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-025",
+      "id": "axie-infinity-EV-025",
       "projectSlug": "axie-infinity",
       "name": "Ekspansi Ekosistem Ronin — Game Third-Party Migrasi ke Ronin (Pixels, Zoids, Kuroro, dll.)",
       "date": "2024",
@@ -3050,7 +3050,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-026",
+      "id": "axie-infinity-EV-026",
       "projectSlug": "axie-infinity",
       "name": "Partisipasi Yield Guild Games (YGG) sebagai Guild Scholarship Terbesar",
       "date": "2021-2022",
@@ -3072,7 +3072,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-027",
+      "id": "axie-infinity-EV-027",
       "projectSlug": "axie-infinity",
       "name": "Validator Set Ronin: FTX/Alameda & Three Arrows Capital (3AC) — Pasca Bankruptcy",
       "date": "2021-2022",
@@ -3092,7 +3092,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-028",
+      "id": "axie-infinity-EV-028",
       "projectSlug": "axie-infinity",
       "name": "Audit Keamanan Bertahap oleh CertiK, Verichains, PeckShield",
       "date": "2020-2021",
@@ -3116,7 +3116,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-029",
+      "id": "axie-infinity-EV-029",
       "projectSlug": "axie-infinity",
       "name": "Pembentukan Axie Infinity Community Treasury (DAO Treasury)",
       "date": "2021",
@@ -3136,7 +3136,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-030",
+      "id": "axie-infinity-EV-030",
       "projectSlug": "axie-infinity",
       "name": "Migrasi dari Loom Network ke Ronin Network",
       "date": "2018-2021",
@@ -3159,7 +3159,7 @@
   ],
   "Blur": [
     {
-      "id": "EV-001",
+      "id": "blur-EV-001",
       "projectSlug": "blur",
       "name": "Pendirian Blur Labs, Inc.",
       "date": "2022",
@@ -3176,7 +3176,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-002",
+      "id": "blur-EV-002",
       "projectSlug": "blur",
       "name": "Peluncuran Mainnet Blur Marketplace",
       "date": "2022-10-19",
@@ -3193,7 +3193,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-003",
+      "id": "blur-EV-003",
       "projectSlug": "blur",
       "name": "Series A Funding $11M dari Paradigm",
       "date": "2022-11-01",
@@ -3210,7 +3210,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-004",
+      "id": "blur-EV-004",
       "projectSlug": "blur",
       "name": "Token Generation Event (TGE) BLUR",
       "date": "2023-02-14",
@@ -3227,7 +3227,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-005",
+      "id": "blur-EV-005",
       "projectSlug": "blur",
       "name": "Listing BLUR di Binance",
       "date": "2023-02-14",
@@ -3244,7 +3244,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-006",
+      "id": "blur-EV-006",
       "projectSlug": "blur",
       "name": "Listing BLUR di Coinbase (Experimental Label)",
       "date": "2023-02-15",
@@ -3261,7 +3261,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-007",
+      "id": "blur-EV-007",
       "projectSlug": "blur",
       "name": "Pembentukan Blur DAO dan Mulai Governance",
       "date": "2023-02-14",
@@ -3278,7 +3278,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-008",
+      "id": "blur-EV-008",
       "projectSlug": "blur",
       "name": "Audit Keamanan Blend oleh Trail of Bits",
       "date": "2023-04",
@@ -3295,7 +3295,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-009",
+      "id": "blur-EV-009",
       "projectSlug": "blur",
       "name": "Audit Keamanan Blend oleh OpenZeppelin",
       "date": "2023-04",
@@ -3312,7 +3312,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-010",
+      "id": "blur-EV-010",
       "projectSlug": "blur",
       "name": "Peluncuran Blend (NFT Lending Protocol)",
       "date": "2023-05-01",
@@ -3329,7 +3329,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-011",
+      "id": "blur-EV-011",
       "projectSlug": "blur",
       "name": "Musim Insentif Season 2 Blur",
       "date": "2023-05",
@@ -3346,7 +3346,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-012",
+      "id": "blur-EV-012",
       "projectSlug": "blur",
       "name": "Musim Insentif Season 3 Blur",
       "date": "2023-11",
@@ -3363,7 +3363,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-013",
+      "id": "blur-EV-013",
       "projectSlug": "blur",
       "name": "Proposal Governance: Fee Switch Activation untuk BLUR Stakers",
       "date": "2024-02",
@@ -3380,7 +3380,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-014",
+      "id": "blur-EV-014",
       "projectSlug": "blur",
       "name": "Peluncuran Blur Mobile App (Beta)",
       "date": "2024-06",
@@ -3397,7 +3397,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-015",
+      "id": "blur-EV-015",
       "projectSlug": "blur",
       "name": "Two-Year Anniversary: Market Share Dominasi Terus Berlanjut",
       "date": "2024-10",
@@ -3416,7 +3416,7 @@
   ],
   "Aptos": [
     {
-      "id": "EV-001",
+      "id": "aptos-EV-001",
       "projectSlug": "aptos",
       "name": "Pengembangan Bahasa Move dan Move VM di Meta untuk Proyek Diem",
       "date": "2019",
@@ -3434,7 +3434,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-002",
+      "id": "aptos-EV-002",
       "projectSlug": "aptos",
       "name": "Peluncuran Diem Testnet dan Penelitian Formal Verification Move",
       "date": "2020",
@@ -3453,7 +3453,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-003",
+      "id": "aptos-EV-003",
       "projectSlug": "aptos",
       "name": "Pendirian Aptos Labs oleh Mo Shaikh dan Avery Ching",
       "date": "2021-12",
@@ -3472,7 +3472,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-004",
+      "id": "aptos-EV-004",
       "projectSlug": "aptos",
       "name": "Peluncuran Aptos Incentivized Testnet Wave 1 (AIT-1)",
       "date": "2022-03-24",
@@ -3491,7 +3491,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-005",
+      "id": "aptos-EV-005",
       "projectSlug": "aptos",
       "name": "Series A Funding Aptos Labs $200M Led by Andreessen Horowitz (a16z)",
       "date": "2022-03-29",
@@ -3513,7 +3513,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-006",
+      "id": "aptos-EV-006",
       "projectSlug": "aptos",
       "name": "Series B Funding Aptos Labs $150M dengan Partisipasi Apollo Global Management",
       "date": "2022-07-25",
@@ -3534,7 +3534,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-007",
+      "id": "aptos-EV-007",
       "projectSlug": "aptos",
       "name": "Aptos Mainnet Genesis Block dan Token Generation Event (TGE)",
       "date": "2022-10-17",
@@ -3554,7 +3554,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-008",
+      "id": "aptos-EV-008",
       "projectSlug": "aptos",
       "name": "Pengumuman Resmi Aptos Mainnet Live dan Listing Exchange Utama",
       "date": "2022-10-18",
@@ -3576,7 +3576,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-009",
+      "id": "aptos-EV-009",
       "projectSlug": "aptos",
       "name": "Pendirian Aptos Foundation di Cayman Islands",
       "date": "2022-10",
@@ -3594,7 +3594,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-010",
+      "id": "aptos-EV-010",
       "projectSlug": "aptos",
       "name": "Peluncuran Petra Wallet Official oleh Aptos Labs",
       "date": "2022-11",
@@ -3612,7 +3612,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-011",
+      "id": "aptos-EV-011",
       "projectSlug": "aptos",
       "name": "Peluncuran Aptos Explorer Resmi dan Aptoscan Komunitas",
       "date": "2022-11",
@@ -3630,7 +3630,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-012",
+      "id": "aptos-EV-012",
       "projectSlug": "aptos",
       "name": "Peluncuran Liquidswap DEX Utama di Aptos",
       "date": "2022-11",
@@ -3649,7 +3649,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-013",
+      "id": "aptos-EV-013",
       "projectSlug": "aptos",
       "name": "Integrasi Wormhole Bridge untuk Wrapped APT Cross-Chain",
       "date": "2022-12",
@@ -3668,7 +3668,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-014",
+      "id": "aptos-EV-014",
       "projectSlug": "aptos",
       "name": "Google Cloud dan AWS Bergabung sebagai Infrastructure Partner Resmi",
       "date": "2022-12",
@@ -3688,7 +3688,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-015",
+      "id": "aptos-EV-015",
       "projectSlug": "aptos",
       "name": "Peluncuran Thala Protocol (Stablecoin MOD, DEX, Lending)",
       "date": "2023-01",
@@ -3707,7 +3707,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-016",
+      "id": "aptos-EV-016",
       "projectSlug": "aptos",
       "name": "Peluncuran Amnis Finance Liquid Staking (amAPT)",
       "date": "2023-02",
@@ -3726,7 +3726,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-017",
+      "id": "aptos-EV-017",
       "projectSlug": "aptos",
       "name": "Peluncuran Aptos Names Service (ANS) Mainnet",
       "date": "2023-03",
@@ -3745,7 +3745,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-018",
+      "id": "aptos-EV-018",
       "projectSlug": "aptos",
       "name": "Peluncuran Aptos Keyless Authentication (OpenID Connect + ZKP)",
       "date": "2023-05",
@@ -3764,7 +3764,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-019",
+      "id": "aptos-EV-019",
       "projectSlug": "aptos",
       "name": "Peluncuran Panora DEX Aggregator dan Trading Terminal",
       "date": "2023-06",
@@ -3782,7 +3782,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-020",
+      "id": "aptos-EV-020",
       "projectSlug": "aptos",
       "name": "Peluncuran Topaz NFT Marketplace Utama",
       "date": "2023-07",
@@ -3800,7 +3800,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-021",
+      "id": "aptos-EV-021",
       "projectSlug": "aptos",
       "name": "Peluncuran BlueMove NFT Marketplace Multi-Chain (Aptos & Sui)",
       "date": "2023-08",
@@ -3819,7 +3819,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-022",
+      "id": "aptos-EV-022",
       "projectSlug": "aptos",
       "name": "Peluncuran Souffl3 NFT Aggregator dan Portfolio Tracker",
       "date": "2023-09",
@@ -3837,7 +3837,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-023",
+      "id": "aptos-EV-023",
       "projectSlug": "aptos",
       "name": "Peluncuran Martian Wallet, Fewcha Wallet, Nightly Wallet Alternatif Populer",
       "date": "2023-10",
@@ -3857,7 +3857,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-024",
+      "id": "aptos-EV-024",
       "projectSlug": "aptos",
       "name": "Kolaborasi Standar Move Language dengan Movement Labs",
       "date": "2023-11",
@@ -3876,7 +3876,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-025",
+      "id": "aptos-EV-025",
       "projectSlug": "aptos",
       "name": "Audit Keamanan Mayor oleh CertiK, OtterSec, Trail of Bits, Halborn",
       "date": "2023-12",
@@ -3898,7 +3898,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-026",
+      "id": "aptos-EV-026",
       "projectSlug": "aptos",
       "name": "Aptos Foundation Grants DAO dan Ecosystem Grants Program Skala Besar",
       "date": "2024-01",
@@ -3916,7 +3916,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-027",
+      "id": "aptos-EV-027",
       "projectSlug": "aptos",
       "name": "Protocol Upgrade v1.5 (Performance, Gas Schedule, Validator Operations)",
       "date": "2024-03",
@@ -3936,7 +3936,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-028",
+      "id": "aptos-EV-028",
       "projectSlug": "aptos",
       "name": "Integrasi NodeReal dan Nodit sebagai Enterprise RPC/Indexer Provider Resmi",
       "date": "2024-06",
@@ -3956,7 +3956,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-029",
+      "id": "aptos-EV-029",
       "projectSlug": "aptos",
       "name": "Protocol Upgrade v1.8 (Move 2024 Edition, Account Abstraction Enhancements)",
       "date": "2024-09",
@@ -3976,7 +3976,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-030",
+      "id": "aptos-EV-030",
       "projectSlug": "aptos",
       "name": "Ekosistem Aptos Melebihi 500+ Proyek, TVL DeFi $1B+, Validator Aktif 100+",
       "date": "2024-12",
@@ -3998,7 +3998,7 @@
   ],
   "Irys": [
     {
-      "id": "EV-001",
+      "id": "irys-EV-001",
       "projectSlug": "irys",
       "name": "Pendirian Bundlr Labs, Inc. dan Peluncuran Bundlr Network",
       "date": "2021",
@@ -4017,7 +4017,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-002",
+      "id": "irys-EV-002",
       "projectSlug": "irys",
       "name": "Integrasi Bundlr Network dengan Arweave sebagai Permanent Storage Layer",
       "date": "2021",
@@ -4035,7 +4035,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-003",
+      "id": "irys-EV-003",
       "projectSlug": "irys",
       "name": "Peluncuran Irys SDK, Dokumentasi, GitHub Organization, dan Saluran Komunitas",
       "date": "2023",
@@ -4058,7 +4058,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-004",
+      "id": "irys-EV-004",
       "projectSlug": "irys",
       "name": "Peluncuran Irys Incentivized Testnet Phase 1",
       "date": "2024-01",
@@ -4077,7 +4077,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-005",
+      "id": "irys-EV-005",
       "projectSlug": "irys",
       "name": "Pengumuman Rebranding dari Bundlr Network ke Irys",
       "date": "2024-03",
@@ -4097,7 +4097,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-006",
+      "id": "irys-EV-006",
       "projectSlug": "irys",
       "name": "Peluncuran Irys Mainnet dan Irys L1",
       "date": "2024-03-26",
@@ -4117,7 +4117,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-007",
+      "id": "irys-EV-007",
       "projectSlug": "irys",
       "name": "Peluncuran Irys Explorer (Block Explorer Resmi)",
       "date": "2024-03",
@@ -4135,7 +4135,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-008",
+      "id": "irys-EV-008",
       "projectSlug": "irys",
       "name": "Aktivasi Irys Gateway dan Provenance Layer pada Mainnet",
       "date": "2024-03",
@@ -4154,7 +4154,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-009",
+      "id": "irys-EV-009",
       "projectSlug": "irys",
       "name": "Integrasi Ethereum sebagai Settlement dan Staking Layer untuk Token IRYS",
       "date": "2024",
@@ -4173,7 +4173,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-010",
+      "id": "irys-EV-010",
       "projectSlug": "irys",
       "name": "Publikasi Tokenomics IRYS (Pre-TGE)",
       "date": "2024",
@@ -4193,7 +4193,7 @@
   ],
   "Celestia": [
     {
-      "id": "EV-001",
+      "id": "celestia-EV-001",
       "projectSlug": "celestia",
       "name": "Founding Celestia (LazyLedger) oleh Mustafa Al-Bassam, Ismail Khoffi, John Adler, Nick White",
       "date": "2019",
@@ -4213,7 +4213,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-002",
+      "id": "celestia-EV-002",
       "projectSlug": "celestia",
       "name": "Pembentukan Celestia Labs Inc. (Delaware, USA)",
       "date": "2021",
@@ -4234,7 +4234,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-003",
+      "id": "celestia-EV-003",
       "projectSlug": "celestia",
       "name": "Publikasi Whitepaper \"LazyLedger: A Distributed Data Availability Ledger\"",
       "date": "2021",
@@ -4253,7 +4253,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-004",
+      "id": "celestia-EV-004",
       "projectSlug": "celestia",
       "name": "Peluncuran Arabica Incentivized Testnet",
       "date": "2022-01-24",
@@ -4271,7 +4271,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-005",
+      "id": "celestia-EV-005",
       "projectSlug": "celestia",
       "name": "Pembiayaan Series A/B $55M dipimpin Bain Capital Crypto dan Polychain Capital",
       "date": "2022-10",
@@ -4293,7 +4293,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-006",
+      "id": "celestia-EV-006",
       "projectSlug": "celestia",
       "name": "Rilis Framework Rollkit (Sovereign Rollup SDK)",
       "date": "2022",
@@ -4311,7 +4311,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-007",
+      "id": "celestia-EV-007",
       "projectSlug": "celestia",
       "name": "Peluncuran Mocha Incentivized Testnet",
       "date": "2023-03-28",
@@ -4330,7 +4330,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-008",
+      "id": "celestia-EV-008",
       "projectSlug": "celestia",
       "name": "Peluncuran Lemon Pre-Mainnet Testnet",
       "date": "2023-09-19",
@@ -4348,7 +4348,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-009",
+      "id": "celestia-EV-009",
       "projectSlug": "celestia",
       "name": "Peluncuran Mainnet Celestia (Block Height 0)",
       "date": "2023-10-31",
@@ -4368,7 +4368,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-010",
+      "id": "celestia-EV-010",
       "projectSlug": "celestia",
       "name": "Token Generation Event (TGE) dan Genesis Drop TIA",
       "date": "2023-10-31",
@@ -4387,7 +4387,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-011",
+      "id": "celestia-EV-011",
       "projectSlug": "celestia",
       "name": "Pembentukan Celestia Foundation (Zug, Switzerland)",
       "date": "2023-10",
@@ -4404,7 +4404,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-012",
+      "id": "celestia-EV-012",
       "projectSlug": "celestia",
       "name": "Deploy Blobstream Contracts ke Ethereum Mainnet",
       "date": "2023-10",
@@ -4423,7 +4423,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-013",
+      "id": "celestia-EV-013",
       "projectSlug": "celestia",
       "name": "Announcement Integrasi Arbitrum Orbit + Celestia DA",
       "date": "2023-11",
@@ -4442,7 +4442,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-014",
+      "id": "celestia-EV-014",
       "projectSlug": "celestia",
       "name": "Announcement Integrasi Starknet + Celestia DA",
       "date": "2023-11",
@@ -4461,7 +4461,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-015",
+      "id": "celestia-EV-015",
       "projectSlug": "celestia",
       "name": "Announcement Integrasi Polygon CDK + Celestia DA",
       "date": "2023-12",
@@ -4480,7 +4480,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-016",
+      "id": "celestia-EV-016",
       "projectSlug": "celestia",
       "name": "Audit Keamanan oleh Informal Systems (Konsensus, Light Client, Blobstream)",
       "date": "2023",
@@ -4500,7 +4500,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-017",
+      "id": "celestia-EV-017",
       "projectSlug": "celestia",
       "name": "Audit Keamanan oleh Trail of Bits (Celestia App, Blobstream Contracts, Kriptografi)",
       "date": "2023",
@@ -4520,7 +4520,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-018",
+      "id": "celestia-EV-018",
       "projectSlug": "celestia",
       "name": "Proposal Governance Pertama On-Chain (Parameter Chain / Upgrade)",
       "date": "2024-01",
@@ -4539,7 +4539,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-019",
+      "id": "celestia-EV-019",
       "projectSlug": "celestia",
       "name": "Rilis Sovereign SDK oleh Sovereign Labs",
       "date": "2024-02",
@@ -4558,7 +4558,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-020",
+      "id": "celestia-EV-020",
       "projectSlug": "celestia",
       "name": "Quantum Gravity Bridge - Penelitian dan Desain Trust-Minimized Bridging",
       "date": "2024-03",
@@ -4577,7 +4577,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-021",
+      "id": "celestia-EV-021",
       "projectSlug": "celestia",
       "name": "Upgrade Protokol v2.0 (atau versi mayor pertama pasca-mainnet)",
       "date": "2024-06",
@@ -4597,7 +4597,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-022",
+      "id": "celestia-EV-022",
       "projectSlug": "celestia",
       "name": "Ekspansi Ekosistem: Deploy Rollup Produksi Pertama Menggunakan Celestia DA (Manta Pacific, dsb)",
       "date": "2024-07",
@@ -4618,7 +4618,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-023",
+      "id": "celestia-EV-023",
       "projectSlug": "celestia",
       "name": "Tahun Pertama Mainnet: Laporan Ekosistem dan Metrik Adopsi",
       "date": "2024-10",
@@ -4637,7 +4637,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-024",
+      "id": "celestia-EV-024",
       "projectSlug": "celestia",
       "name": "Listing TIA di Centralized Exchange Utama (Binance, Coinbase, Kraken, Bybit, OKX, dsb)",
       "date": "2024",
@@ -4659,7 +4659,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-025",
+      "id": "celestia-EV-025",
       "projectSlug": "celestia",
       "name": "Deploy wTIA (Wrapped TIA) di Ethereum dan Arbitrum oleh Pihak Ketiga",
       "date": "2024",
@@ -4678,7 +4678,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-026",
+      "id": "celestia-EV-026",
       "projectSlug": "celestia",
       "name": "Program Grant Celestia Foundation - Sputnik / Wave 1 Hibah Ekosistem",
       "date": "2024",
@@ -4697,7 +4697,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-027",
+      "id": "celestia-EV-027",
       "projectSlug": "celestia",
       "name": "Proposal Fee Switch / Value Accrual Mechanism Discussion di Governance",
       "date": "2024-11",
@@ -4717,7 +4717,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-028",
+      "id": "celestia-EV-028",
       "projectSlug": "celestia",
       "name": "Rilis Light Client Verification di Browser (WASM) dan Mobile SDK",
       "date": "2025-01",
@@ -4736,7 +4736,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-029",
+      "id": "celestia-EV-029",
       "projectSlug": "celestia",
       "name": "Upgrade Protokol v3.0 / \"Ginger\" (Nama Kode Upgrade Mayor 2025)",
       "date": "2025-03",
@@ -4756,7 +4756,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-030",
+      "id": "celestia-EV-030",
       "projectSlug": "celestia",
       "name": "Testnet Publik Quantum Gravity Bridge (Jika Terjadi)",
       "date": "2025-06",
@@ -4778,7 +4778,7 @@
   ],
   "Monad": [
     {
-      "id": "EV-001",
+      "id": "monad-EV-001",
       "projectSlug": "monad",
       "name": "Inkorporasi Monad Labs Inc. di Delaware",
       "date": "2022",
@@ -4795,7 +4795,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-002",
+      "id": "monad-EV-002",
       "projectSlug": "monad",
       "name": "Pendirian Tim Inti Monad oleh Keone Hon, James Hunsaker, dan Eunice Giarta",
       "date": "2022",
@@ -4812,7 +4812,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-003",
+      "id": "monad-EV-003",
       "projectSlug": "monad",
       "name": "Pembentukan Monad Core Team dari Alumni Jump Trading",
       "date": "2022",
@@ -4829,7 +4829,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-004",
+      "id": "monad-EV-004",
       "projectSlug": "monad",
       "name": "Publikasi Whitepaper Monad dan Arsitektur Teknis",
       "date": "2022",
@@ -4846,7 +4846,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-005",
+      "id": "monad-EV-005",
       "projectSlug": "monad",
       "name": "Peluncuran Situs Web Resmi, Dokumentasi, dan Repositori GitHub",
       "date": "2022",
@@ -4863,7 +4863,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-006",
+      "id": "monad-EV-006",
       "projectSlug": "monad",
       "name": "Pembentukan Komunitas Resmi (Discord, Telegram, Twitter)",
       "date": "2022",
@@ -4880,7 +4880,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-007",
+      "id": "monad-EV-007",
       "projectSlug": "monad",
       "name": "Pembukaan Putaran Funding Series A $225M",
       "date": "2024-04",
@@ -4897,7 +4897,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-008",
+      "id": "monad-EV-008",
       "projectSlug": "monad",
       "name": "Liputan Media Mayoritas: The Block dan Forbes Melaporkan Series A",
       "date": "2024-04",
@@ -4914,7 +4914,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-009",
+      "id": "monad-EV-009",
       "projectSlug": "monad",
       "name": "Peluncuran Public Testnet \"Monad Madness\"",
       "date": "2025-02-19",
@@ -4931,7 +4931,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-010",
+      "id": "monad-EV-010",
       "projectSlug": "monad",
       "name": "Aktivasi Block Explorer Testnet Resmi",
       "date": "2025-02-19",
@@ -4948,7 +4948,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-011",
+      "id": "monad-EV-011",
       "projectSlug": "monad",
       "name": "Ekspansi Ekosistem: >100 Proyek Bergabung Testnet",
       "date": "2025-02",
@@ -4965,7 +4965,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-012",
+      "id": "monad-EV-012",
       "projectSlug": "monad",
       "name": "Pengumuman Target Mainnet Q3 2025 dan Roadmap Resmi",
       "date": "2025",
@@ -4982,7 +4982,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-013",
+      "id": "monad-EV-013",
       "projectSlug": "monad",
       "name": "Konfirmasi Status Pre-TGE: Token MON Belum Diluncurkan",
       "date": "2025",
@@ -5001,7 +5001,7 @@
   ],
   "Cardano": [
     {
-      "id": "EV-001",
+      "id": "cardano-EV-001",
       "projectSlug": "cardano",
       "name": "Pendirian Input Output Hong Kong (IOHK/IOG) dan Dimulainya Penelitian Cardano",
       "date": "2015",
@@ -5018,7 +5018,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-002",
+      "id": "cardano-EV-002",
       "projectSlug": "cardano",
       "name": "Penjualan Voucher ADA (ICO) Dimulai melalui Attain Alternative Strategies Ltd",
       "date": "2015-09",
@@ -5035,7 +5035,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-003",
+      "id": "cardano-EV-003",
       "projectSlug": "cardano",
       "name": "Pendirian Cardano Foundation di Zug, Swiss",
       "date": "2016",
@@ -5052,7 +5052,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-004",
+      "id": "cardano-EV-004",
       "projectSlug": "cardano",
       "name": "Testnet Internal K-Era Beroperasi",
       "date": "2017-03",
@@ -5069,7 +5069,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-005",
+      "id": "cardano-EV-005",
       "projectSlug": "cardano",
       "name": "Pendirian Emurgo di Tokyo, Jepang",
       "date": "2017-07",
@@ -5086,7 +5086,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-006",
+      "id": "cardano-EV-006",
       "projectSlug": "cardano",
       "name": "Peluncuran Testnet Publik Cardano (Era Byron)",
       "date": "2017-10-02",
@@ -5103,7 +5103,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-007",
+      "id": "cardano-EV-007",
       "projectSlug": "cardano",
       "name": "Peluncuran Mainnet Cardano (Era Byron)",
       "date": "2017-09-29",
@@ -5120,7 +5120,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-008",
+      "id": "cardano-EV-008",
       "projectSlug": "cardano",
       "name": "Listing Perdana ADA di Bittrex",
       "date": "2017-11",
@@ -5137,7 +5137,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-009",
+      "id": "cardano-EV-009",
       "projectSlug": "cardano",
       "name": "Peluncuran Wallet Yoroi oleh Emurgo",
       "date": "2018-04",
@@ -5154,7 +5154,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-010",
+      "id": "cardano-EV-010",
       "projectSlug": "cardano",
       "name": "Daedalus Mainnet Flight (Wallet Full-Node Produksi Stabil)",
       "date": "2018-07",
@@ -5171,7 +5171,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-011",
+      "id": "cardano-EV-011",
       "projectSlug": "cardano",
       "name": "Hard Fork Shelley: Transisi ke Konsensus Terdesentralisasi (Ouroboros Praos)",
       "date": "2020-07-29",
@@ -5188,7 +5188,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-012",
+      "id": "cardano-EV-012",
       "projectSlug": "cardano",
       "name": "Project Catalyst Fund 1: Program Tata Kelola On-Chain Perdana Diluncurkan",
       "date": "2020-08",
@@ -5205,7 +5205,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-013",
+      "id": "cardano-EV-013",
       "projectSlug": "cardano",
       "name": "Hard Fork Mary: Dukungan Native Tokens (Multi-Asset) dan Metadata",
       "date": "2021-03-01",
@@ -5222,7 +5222,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-014",
+      "id": "cardano-EV-014",
       "projectSlug": "cardano",
       "name": "Hard Fork Alonzo: Peluncuran Smart Contract Plutus (Era Goguen)",
       "date": "2021-09-12",
@@ -5239,7 +5239,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-015",
+      "id": "cardano-EV-015",
       "projectSlug": "cardano",
       "name": "Peluncuran Minswap dan SundaeSwap (DEX AMM Pertama Mainnet)",
       "date": "2021-11",
@@ -5256,7 +5256,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-016",
+      "id": "cardano-EV-016",
       "projectSlug": "cardano",
       "name": "Peluncuran Testnet Hydra (Isomorphic State Channels)",
       "date": "2022-03",
@@ -5273,7 +5273,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-017",
+      "id": "cardano-EV-017",
       "projectSlug": "cardano",
       "name": "Hard Fork Vasil: Peningkatan Throughput & Plutus V2 (CIP-31, CIP-32, CIP-33)",
       "date": "2022-09-22",
@@ -5290,7 +5290,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-018",
+      "id": "cardano-EV-018",
       "projectSlug": "cardano",
       "name": "Pengumuman Midnight Partner Chain (Privacy-Preserving, ZK, Polkadot SDK)",
       "date": "2022-11-18",
@@ -5307,7 +5307,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-019",
+      "id": "cardano-EV-019",
       "projectSlug": "cardano",
       "name": "Peluncuran Mithril: Stake-Based Threshold Multi-Signatures untuk Fast Sync",
       "date": "2023-02",
@@ -5324,7 +5324,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-020",
+      "id": "cardano-EV-020",
       "projectSlug": "cardano",
       "name": "Peluncuran Lace Wallet (Light Wallet Resmi IOG)",
       "date": "2023-04-19",
@@ -5341,7 +5341,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-021",
+      "id": "cardano-EV-021",
       "projectSlug": "cardano",
       "name": "Project Catalyst Fund 10: Total Dana Treasury Melebihi $100M ADA",
       "date": "2023-06",
@@ -5358,7 +5358,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-022",
+      "id": "cardano-EV-022",
       "projectSlug": "cardano",
       "name": "Hard Fork Chang (CIP-1694): Bootstrap Tata Kelola Konstitusional On-Chain",
       "date": "2024-05",
@@ -5375,7 +5375,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-023",
+      "id": "cardano-EV-023",
       "projectSlug": "cardano",
       "name": "Ratifikasi Konstitusi Cardano (Constitution) oleh Komunitas",
       "date": "2024-08",
@@ -5392,7 +5392,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-024",
+      "id": "cardano-EV-024",
       "projectSlug": "cardano",
       "name": "Midnight Devnet v1 & Testnet Publik: ZK Smart Contract & DUST Token Live",
       "date": "2024-10",
@@ -5409,7 +5409,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-025",
+      "id": "cardano-EV-025",
       "projectSlug": "cardano",
       "name": "Hydra Head Protocol Mainnet Beta & Incremental Releases",
       "date": "2024-12",
@@ -5426,7 +5426,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-026",
+      "id": "cardano-EV-026",
       "projectSlug": "cardano",
       "name": "Ekspansi Exchange Listing Global: ADA Tersedia di 100+ Exchange Termasuk Binance, Coinbase, Kraken, OKX, Bybit",
       "date": "2017-2024",
@@ -5443,7 +5443,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-027",
+      "id": "cardano-EV-027",
       "projectSlug": "cardano",
       "name": "Peluncuran Atala PRISM Mainnet: Decentralized Identity (DID) & Verifiable Credentials",
       "date": "2021-04",
@@ -5460,7 +5460,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-028",
+      "id": "cardano-EV-028",
       "projectSlug": "cardano",
       "name": "Pertumbuhan Ekosistem DeFi: TVL Puncak $400M+ (Minswap, Indigo, Liqwid, WingRiders, Lenfi, DexHunter)",
       "date": "2022-2024",
@@ -5477,7 +5477,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-029",
+      "id": "cardano-EV-029",
       "projectSlug": "cardano",
       "name": "Ledakan NFT Cardano: JPG Store Marketplace Dominan, Blue-Chip Collections (Ape Society, Clay Mates, Pavia)",
       "date": "2022-2024",
@@ -5494,7 +5494,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-030",
+      "id": "cardano-EV-030",
       "projectSlug": "cardano",
       "name": "Infrastruktur Pengembang Matang: Blockfrost, Koios, MeshJS, Aiken, Plutarch, Helios",
       "date": "2023-2024",
@@ -5511,7 +5511,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-031",
+      "id": "cardano-EV-031",
       "projectSlug": "cardano",
       "name": "Cardano Summit 2022: Pengumuman Resmi Midnight & Nation-State Partnerships",
       "date": "2022-03",
@@ -5528,7 +5528,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-032",
+      "id": "cardano-EV-032",
       "projectSlug": "cardano",
       "name": "Cardano Summit 2023: CIP-1694 Governance Workshop & Constitutional Convention Rencana",
       "date": "2023-09",
@@ -5545,7 +5545,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-033",
+      "id": "cardano-EV-033",
       "projectSlug": "cardano",
       "name": "Cardano Constitutional Convention: Buenos Aires & Nairobi (Drafting Konstitusi)",
       "date": "2024-03",
@@ -5562,7 +5562,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-034",
+      "id": "cardano-EV-034",
       "projectSlug": "cardano",
       "name": "Interim Constitutional Committee (ICC) Resmi Dibentuk & Aktif On-Chain",
       "date": "2024-06",
@@ -5579,7 +5579,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-035",
+      "id": "cardano-EV-035",
       "projectSlug": "cardano",
       "name": "Penelitian Akademis & Formal Verification Terbit: 100+ Papers (Ouroboros, Hydra, Mithril, ZK, Consensus)",
       "date": "2017-2024",
@@ -5598,7 +5598,7 @@
   ],
   "Compound": [
     {
-      "id": "EV-001",
+      "id": "compound-EV-001",
       "projectSlug": "compound",
       "name": "Pendirian Compound Labs, Inc.",
       "date": "2017",
@@ -5615,7 +5615,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-002",
+      "id": "compound-EV-002",
       "projectSlug": "compound",
       "name": "Compound v1 Mainnet Launch",
       "date": "2018-09",
@@ -5632,7 +5632,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-003",
+      "id": "compound-EV-003",
       "projectSlug": "compound",
       "name": "Compound v1 Testnet Launch",
       "date": "2018-09",
@@ -5649,7 +5649,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-004",
+      "id": "compound-EV-004",
       "projectSlug": "compound",
       "name": "Series A Funding $25M",
       "date": "2019-05-08",
@@ -5666,7 +5666,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-005",
+      "id": "compound-EV-005",
       "projectSlug": "compound",
       "name": "Compound v2 Mainnet Launch",
       "date": "2019-05",
@@ -5683,7 +5683,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-006",
+      "id": "compound-EV-006",
       "projectSlug": "compound",
       "name": "Series B Funding $100M",
       "date": "2020-05-27",
@@ -5700,7 +5700,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-007",
+      "id": "compound-EV-007",
       "projectSlug": "compound",
       "name": "COMP Token Launch dan Governance Activation",
       "date": "2020-06-16",
@@ -5717,7 +5717,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-008",
+      "id": "compound-EV-008",
       "projectSlug": "compound",
       "name": "Compound DAO Formation",
       "date": "2020-06",
@@ -5734,7 +5734,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-009",
+      "id": "compound-EV-009",
       "projectSlug": "compound",
       "name": "Bug Bounty Program Launch di Immunefi",
       "date": "2020-08",
@@ -5751,7 +5751,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-010",
+      "id": "compound-EV-010",
       "projectSlug": "compound",
       "name": "Compound Deployment di Polygon",
       "date": "2021-03",
@@ -5768,7 +5768,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-011",
+      "id": "compound-EV-011",
       "projectSlug": "compound",
       "name": "Compound Deployment di Avalanche (C-Chain)",
       "date": "2021-08",
@@ -5785,7 +5785,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-012",
+      "id": "compound-EV-012",
       "projectSlug": "compound",
       "name": "Compound Deployment di BNB Chain",
       "date": "2021-09",
@@ -5802,7 +5802,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-013",
+      "id": "compound-EV-013",
       "projectSlug": "compound",
       "name": "Proposal 62: Gauntlet Risk Parameter Recommendations",
       "date": "2021-10",
@@ -5819,7 +5819,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-014",
+      "id": "compound-EV-014",
       "projectSlug": "compound",
       "name": "Formal Verification Comet v3 oleh Certora",
       "date": "2022-05",
@@ -5836,7 +5836,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-015",
+      "id": "compound-EV-015",
       "projectSlug": "compound",
       "name": "Compound v3 (Comet) Mainnet Launch di Ethereum",
       "date": "2023-08",
@@ -5853,7 +5853,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-016",
+      "id": "compound-EV-016",
       "projectSlug": "compound",
       "name": "Compound v3 (Comet) Deployment di Arbitrum",
       "date": "2023-10",
@@ -5870,7 +5870,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-017",
+      "id": "compound-EV-017",
       "projectSlug": "compound",
       "name": "Compound v3 (Comet) Deployment di Base",
       "date": "2023-11",
@@ -5887,7 +5887,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-018",
+      "id": "compound-EV-018",
       "projectSlug": "compound",
       "name": "Compound v3 (Comet) Deployment di Optimism",
       "date": "2023-12",
@@ -5904,7 +5904,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-019",
+      "id": "compound-EV-019",
       "projectSlug": "compound",
       "name": "Compound Treasury Launch (Proposal 280)",
       "date": "2023-12",
@@ -5921,7 +5921,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-020",
+      "id": "compound-EV-020",
       "projectSlug": "compound",
       "name": "Compound Gateway Launch (Cross-Chain Protocol)",
       "date": "2024-02",
@@ -5938,7 +5938,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-021",
+      "id": "compound-EV-021",
       "projectSlug": "compound",
       "name": "COMP Token 4-Year Anniversary / Governance Maturity",
       "date": "2024-06",
@@ -5955,7 +5955,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-022",
+      "id": "compound-EV-022",
       "projectSlug": "compound",
       "name": "OpenZeppelin Audit Compound v2",
       "date": "2020-06",
@@ -5972,7 +5972,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-023",
+      "id": "compound-EV-023",
       "projectSlug": "compound",
       "name": "Trail of Bits Audit Compound v2",
       "date": "2019-06",
@@ -5989,7 +5989,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-024",
+      "id": "compound-EV-024",
       "projectSlug": "compound",
       "name": "Coinbase Listing COMP Token",
       "date": "2020-09",
@@ -6006,7 +6006,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-025",
+      "id": "compound-EV-025",
       "projectSlug": "compound",
       "name": "Binance Listing COMP Token",
       "date": "2020-07",
@@ -6023,7 +6023,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-026",
+      "id": "compound-EV-026",
       "projectSlug": "compound",
       "name": "Tally Governance UI Integration",
       "date": "2021-05",
@@ -6040,7 +6040,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-027",
+      "id": "compound-EV-027",
       "projectSlug": "compound",
       "name": "Snapshot Off-Chain Voting Adoption",
       "date": "2020-06",
@@ -6057,7 +6057,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-028",
+      "id": "compound-EV-028",
       "projectSlug": "compound",
       "name": "FTX Collapse Impact pada Compound",
       "date": "2022-11",
@@ -6074,7 +6074,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-029",
+      "id": "compound-EV-029",
       "projectSlug": "compound",
       "name": "Chainlink Oracle Integration untuk Price Feeds",
       "date": "2018-2024",
@@ -6091,7 +6091,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-030",
+      "id": "compound-EV-030",
       "projectSlug": "compound",
       "name": "Gauntlet Continuous Risk Parameter Updates via Governance",
       "date": "2023-2024",
@@ -6110,7 +6110,7 @@
   ],
   "Grass": [
     {
-      "id": "EV-001",
+      "id": "grass-EV-001",
       "projectSlug": "grass",
       "name": "Pendirian Wynd Labs dan Konsep Awal Grass",
       "date": "2021",
@@ -6129,7 +6129,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-002",
+      "id": "grass-EV-002",
       "projectSlug": "grass",
       "name": "Penghargaan Putaran Pendanaan Seed (Seed Funding Round)",
       "date": "2023-07",
@@ -6152,7 +6152,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-003",
+      "id": "grass-EV-003",
       "projectSlug": "grass",
       "name": "Peluncuran Grass Beta (Private Testnet)",
       "date": "2023-03",
@@ -6171,7 +6171,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-004",
+      "id": "grass-EV-004",
       "projectSlug": "grass",
       "name": "Peluncuran Testnet Publik dan Sistem Epoch",
       "date": "2023-06",
@@ -6190,7 +6190,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-005",
+      "id": "grass-EV-005",
       "projectSlug": "grass",
       "name": "Putaran Pendanaan Strategis (Strategic Round) dengan Brevan Howard Digital",
       "date": "2023-12",
@@ -6211,7 +6211,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-006",
+      "id": "grass-EV-006",
       "projectSlug": "grass",
       "name": "Peluncuran Grass Mainnet (Keluar dari Beta)",
       "date": "2024-03-14",
@@ -6231,7 +6231,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-007",
+      "id": "grass-EV-007",
       "projectSlug": "grass",
       "name": "Peluncuran Grass Mobile App (iOS TestFlight & Android APK)",
       "date": "2024-06",
@@ -6250,7 +6250,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-008",
+      "id": "grass-EV-008",
       "projectSlug": "grass",
       "name": "Peluncuran Grass Lite Node (WebAssembly)",
       "date": "2024-07",
@@ -6269,7 +6269,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-009",
+      "id": "grass-EV-009",
       "projectSlug": "grass",
       "name": "Publikasi Audit Keamanan Halborn",
       "date": "2024-08",
@@ -6288,7 +6288,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-010",
+      "id": "grass-EV-010",
       "projectSlug": "grass",
       "name": "Pembentukan Grass Foundation",
       "date": "2024-09-19",
@@ -6308,7 +6308,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-011",
+      "id": "grass-EV-011",
       "projectSlug": "grass",
       "name": "Pengumuman Sovereign Data Rollup",
       "date": "2024-09-25",
@@ -6329,7 +6329,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-012",
+      "id": "grass-EV-012",
       "projectSlug": "grass",
       "name": "Token Generation Event (TGE) dan Listing Perdana (Binance Launchpool & Spot)",
       "date": "2024-10-28",
@@ -6356,7 +6356,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-013",
+      "id": "grass-EV-013",
       "projectSlug": "grass",
       "name": "Aktivasi Staking GRASS dan Delegasi ke Validator",
       "date": "2024-10-28",
@@ -6378,7 +6378,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-014",
+      "id": "grass-EV-014",
       "projectSlug": "grass",
       "name": "Integrasi DeFi: Listing Pool di Raydium, Orca, Kamino, Drift",
       "date": "2024-11",
@@ -6400,7 +6400,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-015",
+      "id": "grass-EV-015",
       "projectSlug": "grass",
       "name": "Peluncuran Program Insentif Ekosistem (Grass Ecosystem Incentives)",
       "date": "2024-11",
@@ -6421,7 +6421,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-016",
+      "id": "grass-EV-016",
       "projectSlug": "grass",
       "name": "Integrasi NFT Badge di Tensor dan Magic Eden",
       "date": "2024-12",
@@ -6443,7 +6443,7 @@
   ],
   "EOS": [
     {
-      "id": "EV-001",
+      "id": "eos-EV-001",
       "projectSlug": "eos",
       "name": "Pendirian Block.one",
       "date": "2017-05-01",
@@ -6463,7 +6463,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-002",
+      "id": "eos-EV-002",
       "projectSlug": "eos",
       "name": "Mulai Distribusi Token EOS (ICO Tahap 1)",
       "date": "2017-06-26",
@@ -6481,7 +6481,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-003",
+      "id": "eos-EV-003",
       "projectSlug": "eos",
       "name": "Rilis Whitepaper EOSIO Technical",
       "date": "2017-10-01",
@@ -6499,7 +6499,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-004",
+      "id": "eos-EV-004",
       "projectSlug": "eos",
       "name": "Rilis Dawn 1.0 (Testnet Pertama)",
       "date": "2018-01-31",
@@ -6516,7 +6516,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-005",
+      "id": "eos-EV-005",
       "projectSlug": "eos",
       "name": "Rilis Dawn 2.0",
       "date": "2018-03-01",
@@ -6533,7 +6533,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-006",
+      "id": "eos-EV-006",
       "projectSlug": "eos",
       "name": "Rilis Dawn 3.0",
       "date": "2018-04-01",
@@ -6550,7 +6550,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-007",
+      "id": "eos-EV-007",
       "projectSlug": "eos",
       "name": "Rilis Dawn 4.0 (Release Candidate)",
       "date": "2018-05-01",
@@ -6567,7 +6567,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-008",
+      "id": "eos-EV-008",
       "projectSlug": "eos",
       "name": "Berakhirnya Periode Distribusi Token EOS (ICO)",
       "date": "2018-06-01",
@@ -6585,7 +6585,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-009",
+      "id": "eos-EV-009",
       "projectSlug": "eos",
       "name": "Peluncuran EOS Mainnet",
       "date": "2018-06-14",
@@ -6604,7 +6604,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-010",
+      "id": "eos-EV-010",
       "projectSlug": "eos",
       "name": "Aktivasi Sistem Voting BP dan Inflasi",
       "date": "2018-06-15",
@@ -6623,7 +6623,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-011",
+      "id": "eos-EV-011",
       "projectSlug": "eos",
       "name": "Rilis EOSIO 1.0 (Versi Produksi Pertama)",
       "date": "2018-11-01",
@@ -6640,7 +6640,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-012",
+      "id": "eos-EV-012",
       "projectSlug": "eos",
       "name": "Peluncuran Voice (Beta) oleh Block.one",
       "date": "2019-02-01",
@@ -6659,7 +6659,7 @@
       "_status": "Cancelled"
     },
     {
-      "id": "EV-013",
+      "id": "eos-EV-013",
       "projectSlug": "eos",
       "name": "Penyelesaian Kasus SEC vs Block.one",
       "date": "2019-09-30",
@@ -6677,7 +6677,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-014",
+      "id": "eos-EV-014",
       "projectSlug": "eos",
       "name": "Penutupan Platform Voice",
       "date": "2020-02-10",
@@ -6695,7 +6695,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-015",
+      "id": "eos-EV-015",
       "projectSlug": "eos",
       "name": "Dan Larimer Keluar dari Block.one",
       "date": "2021-01-11",
@@ -6713,7 +6713,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-016",
+      "id": "eos-EV-016",
       "projectSlug": "eos",
       "name": "Rebranding EOSIO Menjadi Antelope Protocol",
       "date": "2021-03-01",
@@ -6732,7 +6732,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-017",
+      "id": "eos-EV-017",
       "projectSlug": "eos",
       "name": "Pembentukan EOS Network Foundation (ENF)",
       "date": "2021-09-22",
@@ -6751,7 +6751,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-018",
+      "id": "eos-EV-018",
       "projectSlug": "eos",
       "name": "Rilis Antelope Leap 3.1 (Versi Mayor Pertama Pasca-ENF)",
       "date": "2021-10-01",
@@ -6769,7 +6769,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-019",
+      "id": "eos-EV-019",
       "projectSlug": "eos",
       "name": "Peluncuran EOS EVM Mainnet",
       "date": "2022-04-01",
@@ -6788,7 +6788,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-020",
+      "id": "eos-EV-020",
       "projectSlug": "eos",
       "name": "Upgrade Hard Fork \"Spring\" / EOSIO 3.0 / Leap 4.0",
       "date": "2022-06-14",
@@ -6807,7 +6807,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-021",
+      "id": "eos-EV-021",
       "projectSlug": "eos",
       "name": "Rilis Spring SDK (f.k.a. EOS SDK/CDT)",
       "date": "2022-09-01",
@@ -6825,7 +6825,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-022",
+      "id": "eos-EV-022",
       "projectSlug": "eos",
       "name": "Integrasi Hyperion History API ke Infrastruktur Resmi ENF",
       "date": "2023-03-01",
@@ -6843,7 +6843,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-023",
+      "id": "eos-EV-023",
       "projectSlug": "eos",
       "name": "Perayaan Tahun Ke-5 Mainnet & Kampanye \"EOS Hot Sauce\"",
       "date": "2023-06-14",
@@ -6862,7 +6862,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-024",
+      "id": "eos-EV-024",
       "projectSlug": "eos",
       "name": "Peluncuran Program \"EOS Network Ventures\" / Ecosystem Fund",
       "date": "2023-09-01",
@@ -6879,7 +6879,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-025",
+      "id": "eos-EV-025",
       "projectSlug": "eos",
       "name": "Rilis Antelope Leap 5.0 (Performa & Keamanan)",
       "date": "2024-01-01",
@@ -6898,7 +6898,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-026",
+      "id": "eos-EV-026",
       "projectSlug": "eos",
       "name": "Integrasi Firehose (StreamingFast) sebagai Standar Indexing Real-time",
       "date": "2024-03-01",
@@ -6916,7 +6916,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-027",
+      "id": "eos-EV-027",
       "projectSlug": "eos",
       "name": "Perayaan Tahun Ke-6 Mainnet & Rilis Roadmap 2024-2025",
       "date": "2024-06-14",
@@ -6934,7 +6934,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-028",
+      "id": "eos-EV-028",
       "projectSlug": "eos",
       "name": "Migrasi Token Bridge EOS ERC-20 ke Smart Contract Baru (Jika Terjadi)",
       "date": "2024-09-01",
@@ -6953,7 +6953,7 @@
       "_status": "Unknown"
     },
     {
-      "id": "EV-029",
+      "id": "eos-EV-029",
       "projectSlug": "eos",
       "name": "Rilis Antelope Leap 6.0 (Rencana)",
       "date": "2024-12-01",
@@ -6973,7 +6973,7 @@
   ],
   "Ethena": [
     {
-      "id": "EV-001",
+      "id": "ethena-EV-001",
       "projectSlug": "ethena",
       "name": "Pendirian Ethena Labs Ltd. di British Virgin Islands",
       "date": "2023",
@@ -6990,7 +6990,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-002",
+      "id": "ethena-EV-002",
       "projectSlug": "ethena",
       "name": "Ronde Pendanaan Series A $14M Dipimpin Dragonfly Capital",
       "date": "2023",
@@ -7007,7 +7007,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-003",
+      "id": "ethena-EV-003",
       "projectSlug": "ethena",
       "name": "Publikasi Blog Perkenalan Ethena dan Visi \"Internet Bond\"",
       "date": "2023-11",
@@ -7024,7 +7024,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-004",
+      "id": "ethena-EV-004",
       "projectSlug": "ethena",
       "name": "Peluncuran Testnet USDe (Private Beta) di Ethereum Mainnet",
       "date": "2024-01",
@@ -7041,7 +7041,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-005",
+      "id": "ethena-EV-005",
       "projectSlug": "ethena",
       "name": "Peluncuran Mainnet USDe di Ethereum",
       "date": "2024-02-19",
@@ -7058,7 +7058,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-006",
+      "id": "ethena-EV-006",
       "projectSlug": "ethena",
       "name": "Peluncuran sUSDe (Staked USDe) dan Internet Bond",
       "date": "2024-02-19",
@@ -7075,7 +7075,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-007",
+      "id": "ethena-EV-007",
       "projectSlug": "ethena",
       "name": "Integrasi LayerZero OFT untuk ENA dan USDe Cross-Chain",
       "date": "2024-03",
@@ -7092,7 +7092,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-008",
+      "id": "ethena-EV-008",
       "projectSlug": "ethena",
       "name": "Deployment USDe dan sUSDe di Arbitrum, Optimism, Base, Mantle",
       "date": "2024-03",
@@ -7109,7 +7109,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-009",
+      "id": "ethena-EV-009",
       "projectSlug": "ethena",
       "name": "Deployment USDe dan ENA di BNB Chain via LayerZero OFT",
       "date": "2024-03",
@@ -7126,7 +7126,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-010",
+      "id": "ethena-EV-010",
       "projectSlug": "ethena",
       "name": "Integrasi Chainlink Price Feeds untuk Oracle Infrastructure",
       "date": "2024-03",
@@ -7143,7 +7143,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-011",
+      "id": "ethena-EV-011",
       "projectSlug": "ethena",
       "name": "Token Generation Event (TGE) ENA Token",
       "date": "2024-04-02",
@@ -7160,7 +7160,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-012",
+      "id": "ethena-EV-012",
       "projectSlug": "ethena",
       "name": "Peluncuran Ethena DAO dan Governance di Snapshot",
       "date": "2024-04-02",
@@ -7177,7 +7177,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-013",
+      "id": "ethena-EV-013",
       "projectSlug": "ethena",
       "name": "Listing ENA di Binance (Launchpool dan Spot Trading)",
       "date": "2024-04",
@@ -7194,7 +7194,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-014",
+      "id": "ethena-EV-014",
       "projectSlug": "ethena",
       "name": "Listing ENA di Coinbase (Spot Trading)",
       "date": "2024-04",
@@ -7211,7 +7211,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-015",
+      "id": "ethena-EV-015",
       "projectSlug": "ethena",
       "name": "Listing ENA di Kraken (Spot Trading)",
       "date": "2024-04",
@@ -7228,7 +7228,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-016",
+      "id": "ethena-EV-016",
       "projectSlug": "ethena",
       "name": "Integrasi USDe/sUSDe di Pendle Finance untuk Yield Tokenization",
       "date": "2024-04",
@@ -7245,7 +7245,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-017",
+      "id": "ethena-EV-017",
       "projectSlug": "ethena",
       "name": "Integrasi USDe/sUSDe di Morpho (Lending Protocol)",
       "date": "2024-04",
@@ -7262,7 +7262,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-018",
+      "id": "ethena-EV-018",
       "projectSlug": "ethena",
       "name": "Integrasi USDe/sUSDe di Aave v3 (Ethereum, Arbitrum, Base)",
       "date": "2024-04",
@@ -7279,7 +7279,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-019",
+      "id": "ethena-EV-019",
       "projectSlug": "ethena",
       "name": "Deployment USDe/USDC/USDT Pool di Curve Finance",
       "date": "2024-04",
@@ -7296,7 +7296,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-020",
+      "id": "ethena-EV-020",
       "projectSlug": "ethena",
       "name": "Luncuran Equilibria Finance (eUSDe) pada Pendle",
       "date": "2024-04",
@@ -7313,7 +7313,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-021",
+      "id": "ethena-EV-021",
       "projectSlug": "ethena",
       "name": "Deployment USDe dan ENA di Solana via Wormhole Bridge",
       "date": "2024-05",
@@ -7330,7 +7330,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-022",
+      "id": "ethena-EV-022",
       "projectSlug": "ethena",
       "name": "Integrasi USDe/sUSDe di Ethereal (Hyperliquid Ecosystem)",
       "date": "2024-05",
@@ -7347,7 +7347,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-023",
+      "id": "ethena-EV-023",
       "projectSlug": "ethena",
       "name": "Integrasi sUSDe di Spectra (Yield Tokenization)",
       "date": "2024-05",
@@ -7364,7 +7364,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-024",
+      "id": "ethena-EV-024",
       "projectSlug": "ethena",
       "name": "Audit Smart Contract oleh OpenZeppelin",
       "date": "2024-06",
@@ -7381,7 +7381,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-025",
+      "id": "ethena-EV-025",
       "projectSlug": "ethena",
       "name": "Audit Smart Contract oleh Zellic",
       "date": "2024-06",
@@ -7398,7 +7398,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-026",
+      "id": "ethena-EV-026",
       "projectSlug": "ethena",
       "name": "Audit Smart Contract oleh Spearbit",
       "date": "2024-06",
@@ -7415,7 +7415,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-027",
+      "id": "ethena-EV-027",
       "projectSlug": "ethena",
       "name": "Integrasi Copper Custody untuk Institutional Access",
       "date": "2024-07",
@@ -7432,7 +7432,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-028",
+      "id": "ethena-EV-028",
       "projectSlug": "ethena",
       "name": "Integrasi Fireblocks Custody untuk Institutional Access",
       "date": "2024-07",
@@ -7449,7 +7449,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-029",
+      "id": "ethena-EV-029",
       "projectSlug": "ethena",
       "name": "USDe Supply Mencapai $3 Billion (All-Time High)",
       "date": "2024-08",
@@ -7466,7 +7466,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-030",
+      "id": "ethena-EV-030",
       "projectSlug": "ethena",
       "name": "Proposal Governance: Parameter Update Insurance Fund dan Funding Rate Cap",
       "date": "2024-08",
@@ -7483,7 +7483,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-031",
+      "id": "ethena-EV-031",
       "projectSlug": "ethena",
       "name": "Peluncuran \"Sats\" Campaign dan Incentive Program Musim 2",
       "date": "2024-10",
@@ -7500,7 +7500,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-032",
+      "id": "ethena-EV-032",
       "projectSlug": "ethena",
       "name": "USDe Supply Stabil di Rentang $2.5B-$3B setelah Koreksi Pasar",
       "date": "2024-11",
@@ -7517,7 +7517,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-033",
+      "id": "ethena-EV-033",
       "projectSlug": "ethena",
       "name": "Proposal Governance: ENA Tokenomics Update dan Staking Rewards",
       "date": "2024-12",
@@ -7536,7 +7536,7 @@
   ],
   "Helium": [
     {
-      "id": "EV-001",
+      "id": "helium-EV-001",
       "projectSlug": "helium",
       "name": "Pendirian Helium Inc.",
       "date": "2013",
@@ -7553,7 +7553,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-002",
+      "id": "helium-EV-002",
       "projectSlug": "helium",
       "name": "Peluncuran Organisasi GitHub Helium",
       "date": "2017",
@@ -7570,7 +7570,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-003",
+      "id": "helium-EV-003",
       "projectSlug": "helium",
       "name": "Pembiayaan Series A",
       "date": "2018",
@@ -7587,7 +7587,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-004",
+      "id": "helium-EV-004",
       "projectSlug": "helium",
       "name": "Helium Testnet 1 Dirilis",
       "date": "2018-03",
@@ -7604,7 +7604,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-005",
+      "id": "helium-EV-005",
       "projectSlug": "helium",
       "name": "Helium Testnet 2 Dirilis",
       "date": "2018-09",
@@ -7621,7 +7621,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-006",
+      "id": "helium-EV-006",
       "projectSlug": "helium",
       "name": "Helium Testnet 3 Dirilis",
       "date": "2019-01",
@@ -7638,7 +7638,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-007",
+      "id": "helium-EV-007",
       "projectSlug": "helium",
       "name": "Helium Mainnet Genesis & TGE (Fair Launch)",
       "date": "2019-07-29",
@@ -7655,7 +7655,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-008",
+      "id": "helium-EV-008",
       "projectSlug": "helium",
       "name": "Pembiayaan Series B",
       "date": "2019-11",
@@ -7672,7 +7672,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-009",
+      "id": "helium-EV-009",
       "projectSlug": "helium",
       "name": "Pembiayaan Series C ($111M)",
       "date": "2020-11-17",
@@ -7689,7 +7689,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-010",
+      "id": "helium-EV-010",
       "projectSlug": "helium",
       "name": "Mitra Perangkat Keras IoT: RAKwireless, Bobcat, Nebra Bergabung",
       "date": "2020",
@@ -7706,7 +7706,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-011",
+      "id": "helium-EV-011",
       "projectSlug": "helium",
       "name": "Listing HNT di Binance",
       "date": "2020",
@@ -7723,7 +7723,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-012",
+      "id": "helium-EV-012",
       "projectSlug": "helium",
       "name": "Peluncuran Helium 5G (CBRS) & Kemitraan FreedomFi",
       "date": "2021-03",
@@ -7740,7 +7740,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-013",
+      "id": "helium-EV-013",
       "projectSlug": "helium",
       "name": "Pembiayaan Series D ($200M)",
       "date": "2021-08",
@@ -7757,7 +7757,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-014",
+      "id": "helium-EV-014",
       "projectSlug": "helium",
       "name": "Listing HNT di Coinbase",
       "date": "2021",
@@ -7774,7 +7774,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-015",
+      "id": "helium-EV-015",
       "projectSlug": "helium",
       "name": "Rebranding: Helium Inc. → Nova Labs Inc.",
       "date": "2022-02",
@@ -7791,7 +7791,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-016",
+      "id": "helium-EV-016",
       "projectSlug": "helium",
       "name": "Pendirian Helium Foundation (501(c)(3))",
       "date": "2022-03",
@@ -7808,7 +7808,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-017",
+      "id": "helium-EV-017",
       "projectSlug": "helium",
       "name": "HIP 51 (SubDAOs) & HIP 52 (Mobile SubDAO) Disetujui",
       "date": "2022-05",
@@ -7825,7 +7825,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-018",
+      "id": "helium-EV-018",
       "projectSlug": "helium",
       "name": "Akuisisi FreedomFi oleh Nova Labs",
       "date": "2022-07",
@@ -7842,7 +7842,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-019",
+      "id": "helium-EV-019",
       "projectSlug": "helium",
       "name": "HIP 70 (Migrasi ke Solana) Disetujui",
       "date": "2022-09",
@@ -7859,7 +7859,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-020",
+      "id": "helium-EV-020",
       "projectSlug": "helium",
       "name": "Pembentukan DeWi (Decentralized Wireless Alliance)",
       "date": "2022-10",
@@ -7876,7 +7876,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-021",
+      "id": "helium-EV-021",
       "projectSlug": "helium",
       "name": "Audit Keamanan Migrasi Solana oleh Trail of Bits",
       "date": "2022-11",
@@ -7893,7 +7893,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-022",
+      "id": "helium-EV-022",
       "projectSlug": "helium",
       "name": "Migrasi Helium ke Solana Selesai (HIP 70 Eksekusi)",
       "date": "2023-04-18",
@@ -7910,7 +7910,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-023",
+      "id": "helium-EV-023",
       "projectSlug": "helium",
       "name": "Peluncuran Helium Mobile MVNO (Layanan Seluler Konsumen)",
       "date": "2023-06",
@@ -7927,7 +7927,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-024",
+      "id": "helium-EV-024",
       "projectSlug": "helium",
       "name": "Kemitraan Roaming Nasional T-Mobile untuk Helium Mobile",
       "date": "2023-06",
@@ -7944,7 +7944,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-025",
+      "id": "helium-EV-025",
       "projectSlug": "helium",
       "name": "Listing Token IOT & MOBILE (SPL) di Bursa Utama (Binance, Coinbase, dll.)",
       "date": "2023",
@@ -7961,7 +7961,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-026",
+      "id": "helium-EV-026",
       "projectSlug": "helium",
       "name": "Peluncuran Helium WiFi Hotspot (Passpoint / WiFi Offload)",
       "date": "2024",
@@ -7978,7 +7978,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-027",
+      "id": "helium-EV-027",
       "projectSlug": "helium",
       "name": "Audit Keamanan Perangkat Keras & Firmware oleh Kudelski Security (Berkelanjutan)",
       "date": "2024",
@@ -7997,7 +7997,7 @@
   ],
   "Hyperliquid": [
     {
-      "id": "EV-001",
+      "id": "hyperliquid-EV-001",
       "projectSlug": "hyperliquid",
       "name": "Pendirian Hyperliquid Labs",
       "date": "2022",
@@ -8014,7 +8014,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-002",
+      "id": "hyperliquid-EV-002",
       "projectSlug": "hyperliquid",
       "name": "Testnet Internal/Tertutup Hyperliquid",
       "date": "2022-Q4",
@@ -8031,7 +8031,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-003",
+      "id": "hyperliquid-EV-003",
       "projectSlug": "hyperliquid",
       "name": "Testnet Publik Berincentiv Hyperliquid",
       "date": "2023-03",
@@ -8048,7 +8048,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-004",
+      "id": "hyperliquid-EV-004",
       "projectSlug": "hyperliquid",
       "name": "Ronde Pendanaan Hyperliquid Labs (Seed/Series A)",
       "date": "2023",
@@ -8065,7 +8065,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-005",
+      "id": "hyperliquid-EV-005",
       "projectSlug": "hyperliquid",
       "name": "Mainnet Launch Hyperliquid Perpetual DEX",
       "date": "2023-05-14",
@@ -8082,7 +8082,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-006",
+      "id": "hyperliquid-EV-006",
       "projectSlug": "hyperliquid",
       "name": "Launch Hyperliquid Spot DEX",
       "date": "2023-10",
@@ -8099,7 +8099,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-007",
+      "id": "hyperliquid-EV-007",
       "projectSlug": "hyperliquid",
       "name": "HyperEVM Testnet Launch",
       "date": "2024-11",
@@ -8116,7 +8116,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-008",
+      "id": "hyperliquid-EV-008",
       "projectSlug": "hyperliquid",
       "name": "Token Generation Event (TGE) HYPE",
       "date": "2024-11-29",
@@ -8133,7 +8133,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-009",
+      "id": "hyperliquid-EV-009",
       "projectSlug": "hyperliquid",
       "name": "Peluncuran Hyperliquid Bridge (Native Bridge ke Arbitrum/Ethereum)",
       "date": "2024-11",
@@ -8150,7 +8150,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-010",
+      "id": "hyperliquid-EV-010",
       "projectSlug": "hyperliquid",
       "name": "Pengumuman Hyperliquid Ecosystem Fund / Builder Grants",
       "date": "2024",
@@ -8167,7 +8167,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-011",
+      "id": "hyperliquid-EV-011",
       "projectSlug": "hyperliquid",
       "name": "Pembentukan Hyperliquid Foundation (Indikasi)",
       "date": "2024",
@@ -8186,7 +8186,7 @@
   ],
   "Jito": [
     {
-      "id": "EV-001",
+      "id": "jito-EV-001",
       "projectSlug": "jito",
       "name": "Pendirian Jito Labs",
       "date": "2021",
@@ -8205,7 +8205,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-002",
+      "id": "jito-EV-002",
       "projectSlug": "jito",
       "name": "Pembiayaan Series A Jito Labs",
       "date": "2022",
@@ -8226,7 +8226,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-003",
+      "id": "jito-EV-003",
       "projectSlug": "jito",
       "name": "Peluncuran Jito-Solana Testnet/Devnet",
       "date": "2022-08",
@@ -8245,7 +8245,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-004",
+      "id": "jito-EV-004",
       "projectSlug": "jito",
       "name": "Peluncuran Jito-Solana Mainnet",
       "date": "2022-08",
@@ -8265,7 +8265,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-005",
+      "id": "jito-EV-005",
       "projectSlug": "jito",
       "name": "Peluncuran JitoSOL Liquid Staking Pool",
       "date": "2022-12-09",
@@ -8285,7 +8285,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-006",
+      "id": "jito-EV-006",
       "projectSlug": "jito",
       "name": "Audit Keamanan JitoSOL oleh Neodyme",
       "date": "2022",
@@ -8304,7 +8304,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-007",
+      "id": "jito-EV-007",
       "projectSlug": "jito",
       "name": "Audit Keamanan Jito-Solana Client oleh Kudelski Security",
       "date": "2022",
@@ -8324,7 +8324,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-008",
+      "id": "jito-EV-008",
       "projectSlug": "jito",
       "name": "Pembentukan Jito Foundation",
       "date": "2023",
@@ -8343,7 +8343,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-009",
+      "id": "jito-EV-009",
       "projectSlug": "jito",
       "name": "Token Generation Event (TGE) dan Airdrop JTO",
       "date": "2023-12-07",
@@ -8364,7 +8364,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-010",
+      "id": "jito-EV-010",
       "projectSlug": "jito",
       "name": "Peluncuran Jito DAO Governance",
       "date": "2023-12-07",
@@ -8384,7 +8384,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-011",
+      "id": "jito-EV-011",
       "projectSlug": "jito",
       "name": "Audit Keamanan Program Governance/JTO oleh Sec3",
       "date": "2023",
@@ -8404,7 +8404,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-012",
+      "id": "jito-EV-012",
       "projectSlug": "jito",
       "name": "Peluncuran Jito Restaking (Vault Node Consensus)",
       "date": "2024",
@@ -8424,7 +8424,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-013",
+      "id": "jito-EV-013",
       "projectSlug": "jito",
       "name": "Audit Keamanan Jito Restaking (VNC) oleh Neodyme dan Sec3",
       "date": "2024",
@@ -8444,7 +8444,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-014",
+      "id": "jito-EV-014",
       "projectSlug": "jito",
       "name": "Listing Token JTO di Exchange Utama",
       "date": "2023-12",
@@ -8467,7 +8467,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-015",
+      "id": "jito-EV-015",
       "projectSlug": "jito",
       "name": "Ekspansi Ekosistem Integrasi JitoSOL di DeFi Solana",
       "date": "2022-2024",
@@ -8493,7 +8493,7 @@
   ],
   "Kamino Finance": [
     {
-      "id": "EV-001",
+      "id": "kamino-finance-EV-001",
       "projectSlug": "kamino-finance",
       "name": "Pendirian Entitas Hukum Kamino Finance Ltd.",
       "date": "2022",
@@ -8510,7 +8510,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-002",
+      "id": "kamino-finance-EV-002",
       "projectSlug": "kamino-finance",
       "name": "Mainnet Launch Kamino Vaults v1 (CLMM Auto-Rebalancing)",
       "date": "2022-03",
@@ -8527,7 +8527,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-003",
+      "id": "kamino-finance-EV-003",
       "projectSlug": "kamino-finance",
       "name": "Integrasi Jupiter Aggregator untuk Routing Swap Vault",
       "date": "2022-06",
@@ -8544,7 +8544,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-004",
+      "id": "kamino-finance-EV-004",
       "projectSlug": "kamino-finance",
       "name": "Luncuran Kamino Lend (K-Lend) v1 — Pooled Lending/Borrowing",
       "date": "2022-09",
@@ -8561,7 +8561,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-005",
+      "id": "kamino-finance-EV-005",
       "projectSlug": "kamino-finance",
       "name": "Audit Keamanan Kudelski Security untuk Kamino Vaults & K-Lend",
       "date": "2023-02",
@@ -8578,7 +8578,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-006",
+      "id": "kamino-finance-EV-006",
       "projectSlug": "kamino-finance",
       "name": "Audit Keamanan Neodyme untuk Program Anchor Kamino",
       "date": "2023-05",
@@ -8595,7 +8595,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-007",
+      "id": "kamino-finance-EV-007",
       "projectSlug": "kamino-finance",
       "name": "Luncuran Kamino Multiply (Leveraged Vaults dengan Auto-Loop)",
       "date": "2023-07",
@@ -8612,7 +8612,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-008",
+      "id": "kamino-finance-EV-008",
       "projectSlug": "kamino-finance",
       "name": "Audit Keamanan Sec3 (Soteria) untuk Kamino Multiply & Program Baru",
       "date": "2023-10",
@@ -8629,7 +8629,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-009",
+      "id": "kamino-finance-EV-009",
       "projectSlug": "kamino-finance",
       "name": "Kerjasama Insentif Kamino Points Season 1 dengan Tensor",
       "date": "2023-11",
@@ -8646,7 +8646,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-010",
+      "id": "kamino-finance-EV-010",
       "projectSlug": "kamino-finance",
       "name": "Kamino Points Season 2 — Ekspansi Kategori & Multiplier",
       "date": "2024-01",
@@ -8663,7 +8663,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-011",
+      "id": "kamino-finance-EV-011",
       "projectSlug": "kamino-finance",
       "name": "Kamino Points Season 3 — Integrasi Jito & Restaking Narrative",
       "date": "2024-03",
@@ -8680,7 +8680,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-012",
+      "id": "kamino-finance-EV-012",
       "projectSlug": "kamino-finance",
       "name": "Token Generation Event (TGE) KMNO & Claim Live",
       "date": "2024-04-10",
@@ -8697,7 +8697,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-013",
+      "id": "kamino-finance-EV-013",
       "projectSlug": "kamino-finance",
       "name": "Listing KMNO di Binance (Spot Trading)",
       "date": "2024-04-10",
@@ -8714,7 +8714,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-014",
+      "id": "kamino-finance-EV-014",
       "projectSlug": "kamino-finance",
       "name": "Listing KMNO di Coinbase (Spot Trading)",
       "date": "2024-04-10",
@@ -8731,7 +8731,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-015",
+      "id": "kamino-finance-EV-015",
       "projectSlug": "kamino-finance",
       "name": "Listing KMNO di Bybit, Gate.io, KuCoin (Multi-CEX Listing Hari TGE)",
       "date": "2024-04-10",
@@ -8748,7 +8748,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-016",
+      "id": "kamino-finance-EV-016",
       "projectSlug": "kamino-finance",
       "name": "Pembentukan Kamino DAO & Governance On-Chain (Realms)",
       "date": "2024-04-15",
@@ -8765,7 +8765,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-017",
+      "id": "kamino-finance-EV-017",
       "projectSlug": "kamino-finance",
       "name": "Proposal Governance Pertama: Aktivasi Fee Switch untuk KMNO Stakers",
       "date": "2024-05",
@@ -8782,7 +8782,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-018",
+      "id": "kamino-finance-EV-018",
       "projectSlug": "kamino-finance",
       "name": "Integrasi Wormhole Native Token Transfers (NTT) untuk Aset Non-Native",
       "date": "2024-06",
@@ -8799,7 +8799,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-019",
+      "id": "kamino-finance-EV-019",
       "projectSlug": "kamino-finance",
       "name": "Luncuran Kamino Liquidate — Liquidation Marketplace Terbuka",
       "date": "2024-08",
@@ -8816,7 +8816,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-020",
+      "id": "kamino-finance-EV-020",
       "projectSlug": "kamino-finance",
       "name": "Kamino Points Season 4 (Post-TGE) — Emisi Token & Loyalty Baru",
       "date": "2024-10",
@@ -8833,7 +8833,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-021",
+      "id": "kamino-finance-EV-021",
       "projectSlug": "kamino-finance",
       "name": "Proposal Governance: Penggunaan Treasury untuk Buyback & Burn / Strategic Grants",
       "date": "2024-12",
@@ -8852,7 +8852,7 @@
   ],
   "Lido": [
     {
-      "id": "EV-001",
+      "id": "lido-EV-001",
       "projectSlug": "lido",
       "name": "Konsepsi dan Pendirian Lido oleh P2P.org",
       "date": "2020",
@@ -8873,7 +8873,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-002",
+      "id": "lido-EV-002",
       "projectSlug": "lido",
       "name": "Luncurkan Testnet Lido di Ethereum Pyrmont/Prater",
       "date": "2020-12",
@@ -8892,7 +8892,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-003",
+      "id": "lido-EV-003",
       "projectSlug": "lido",
       "name": "Mainnet Launch Lido di Ethereum (stETH)",
       "date": "2020-12-17",
@@ -8913,7 +8913,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-004",
+      "id": "lido-EV-004",
       "projectSlug": "lido",
       "name": "TGE LDO Token dan Liquidity Mining Program",
       "date": "2021-01",
@@ -8938,7 +8938,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-005",
+      "id": "lido-EV-005",
       "projectSlug": "lido",
       "name": "Series A Funding — Paradigm Lead Investor ($73M Valuation)",
       "date": "2021-03-16",
@@ -8961,7 +8961,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-006",
+      "id": "lido-EV-006",
       "projectSlug": "lido",
       "name": "Launch Lido on Polygon (stMATIC)",
       "date": "2021-03",
@@ -8981,7 +8981,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-007",
+      "id": "lido-EV-007",
       "projectSlug": "lido",
       "name": "Pembentukan Lido DAO Foundation (Cayman Islands)",
       "date": "2021-08",
@@ -8999,7 +8999,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-008",
+      "id": "lido-EV-008",
       "projectSlug": "lido",
       "name": "Launch Lido on Solana (stSOL)",
       "date": "2021-12",
@@ -9019,7 +9019,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-009",
+      "id": "lido-EV-009",
       "projectSlug": "lido",
       "name": "Launch Lido on Polkadot (stDOT) dan Kusama (stKSM)",
       "date": "2022-03",
@@ -9041,7 +9041,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-010",
+      "id": "lido-EV-010",
       "projectSlug": "lido",
       "name": "wstETH Deployment di Optimism dan Arbitrum",
       "date": "2022-05",
@@ -9061,7 +9061,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-011",
+      "id": "lido-EV-011",
       "projectSlug": "lido",
       "name": "Series B Funding — a16z dan Dragonfly Lead",
       "date": "2022-12",
@@ -9082,7 +9082,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-012",
+      "id": "lido-EV-012",
       "projectSlug": "lido",
       "name": "wstETH Deployment di Base dan zkSync Era",
       "date": "2023-02",
@@ -9102,7 +9102,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-013",
+      "id": "lido-EV-013",
       "projectSlug": "lido",
       "name": "Lido V2 Mainnet Launch (Staking Router, Withdrawal Credentials 0x01)",
       "date": "2023-05-15",
@@ -9124,7 +9124,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-014",
+      "id": "lido-EV-014",
       "projectSlug": "lido",
       "name": "Sunset Announcement Lido on Solana (stSOL)",
       "date": "2023-06",
@@ -9145,7 +9145,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-015",
+      "id": "lido-EV-015",
       "projectSlug": "lido",
       "name": "Sunset Announcement Lido on Polkadot (stDOT) dan Kusama (stKSM)",
       "date": "2023-09",
@@ -9168,7 +9168,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-016",
+      "id": "lido-EV-016",
       "projectSlug": "lido",
       "name": "Integrasi EigenLayer Restaking (wstETH sebagai LRT)",
       "date": "2023-07",
@@ -9188,7 +9188,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-017",
+      "id": "lido-EV-017",
       "projectSlug": "lido",
       "name": "Security Audits — Sigma Prime, MixBytes, Quantstamp",
       "date": "2020-2023",
@@ -9209,7 +9209,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-018",
+      "id": "lido-EV-018",
       "projectSlug": "lido",
       "name": "Major DeFi Integrations — Curve, Aave, Maker, Yearn",
       "date": "2021-2024",
@@ -9231,7 +9231,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-019",
+      "id": "lido-EV-019",
       "projectSlug": "lido",
       "name": "Ethereum Shanghai Upgrade (Withdrawal Enabled) — Lido Readiness",
       "date": "2022-09",
@@ -9252,7 +9252,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-020",
+      "id": "lido-EV-020",
       "projectSlug": "lido",
       "name": "Lido DAO Governance — Fee Switch Activation (10% Treasury Allocation)",
       "date": "2024-02",
@@ -9272,7 +9272,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-021",
+      "id": "lido-EV-021",
       "projectSlug": "lido",
       "name": "Node Operator Set Expansion — Permissionless Onboarding via Staking Router",
       "date": "2024-06",
@@ -9295,7 +9295,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-022",
+      "id": "lido-EV-022",
       "projectSlug": "lido",
       "name": "Lido Core Contributor Program Formalization",
       "date": "2023-2024",
@@ -9314,7 +9314,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-023",
+      "id": "lido-EV-023",
       "projectSlug": "lido",
       "name": "wstETH Supply Milestone — 1M wstETH di Ethereum Mainnet",
       "date": "2024-01",
@@ -9334,7 +9334,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-024",
+      "id": "lido-EV-024",
       "projectSlug": "lido",
       "name": "Lido DAO Legal Structure Review — Future Wrapper Proposals",
       "date": "2024-03",
@@ -9353,7 +9353,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-025",
+      "id": "lido-EV-025",
       "projectSlug": "lido",
       "name": "FTX Collapse Impact — Lido Exposure Check",
       "date": "2022-11",
@@ -9377,7 +9377,7 @@
   ],
   "MakerDAO": [
     {
-      "id": "EV-001",
+      "id": "makerdao-EV-001",
       "projectSlug": "makerdao",
       "name": "Awal Konsep dan Riset MakerDAO oleh Rune Christensen",
       "date": "2014",
@@ -9394,7 +9394,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-002",
+      "id": "makerdao-EV-002",
       "projectSlug": "makerdao",
       "name": "Pendirian Maker Foundation dan Pengembangan Prototipe",
       "date": "2015",
@@ -9411,7 +9411,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-003",
+      "id": "makerdao-EV-003",
       "projectSlug": "makerdao",
       "name": "Testnet Internal Single Collateral Dai (Sai)",
       "date": "2015-2016",
@@ -9428,7 +9428,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-004",
+      "id": "makerdao-EV-004",
       "projectSlug": "makerdao",
       "name": "Private Sale MKR (~$1 Juta)",
       "date": "2017-Q1",
@@ -9445,7 +9445,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-005",
+      "id": "makerdao-EV-005",
       "projectSlug": "makerdao",
       "name": "Mainnet Launch Single Collateral Dai (Sai)",
       "date": "2017-12-18",
@@ -9462,7 +9462,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-006",
+      "id": "makerdao-EV-006",
       "projectSlug": "makerdao",
       "name": "Pembentukan Pasar Publik MKR (Uniswap v1 / Bibox)",
       "date": "2018-01",
@@ -9479,7 +9479,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-007",
+      "id": "makerdao-EV-007",
       "projectSlug": "makerdao",
       "name": "Mainnet Launch Multi-Collateral Dai (MCD) dan Migrasi Sai ke Dai",
       "date": "2019-11-18",
@@ -9496,7 +9496,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-008",
+      "id": "makerdao-EV-008",
       "projectSlug": "makerdao",
       "name": "Peluncuran Dai Savings Rate (DSR) Module",
       "date": "2019-11",
@@ -9513,7 +9513,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-009",
+      "id": "makerdao-EV-009",
       "projectSlug": "makerdao",
       "name": "Black Thursday — Kegagalan Likuidasi dan Defisit Sistem",
       "date": "2020-03-12",
@@ -9530,7 +9530,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-010",
+      "id": "makerdao-EV-010",
       "projectSlug": "makerdao",
       "name": "Peluncuran Peg Stability Module (PSM) — USDC-A Vault Type",
       "date": "2020-07",
@@ -9547,7 +9547,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-011",
+      "id": "makerdao-EV-011",
       "projectSlug": "makerdao",
       "name": "Pembubaran Maker Foundation dan Transisi ke DAO Penuh",
       "date": "2021-07-31",
@@ -9564,7 +9564,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-012",
+      "id": "makerdao-EV-012",
       "projectSlug": "makerdao",
       "name": "Pembentukan Core Units Pertama (Protocol Engineering, Risk, Governance, Growth)",
       "date": "2021-07",
@@ -9581,7 +9581,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-013",
+      "id": "makerdao-EV-013",
       "projectSlug": "makerdao",
       "name": "Pendirian MakerDAO Cayman Foundation (Legal Wrapper)",
       "date": "2022-03",
@@ -9598,7 +9598,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-014",
+      "id": "makerdao-EV-014",
       "projectSlug": "makerdao",
       "name": "Peluncuran Real World Asset (RWA) Vaults — BlockTower & Monetalis",
       "date": "2022-07",
@@ -9615,7 +9615,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-015",
+      "id": "makerdao-EV-015",
       "projectSlug": "makerdao",
       "name": "Ekspansi Multi-Chain: Deploy Kanonik ke Arbitrum, Optimism, Polygon, Gnosis Chain",
       "date": "2022-2023",
@@ -9632,7 +9632,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-016",
+      "id": "makerdao-EV-016",
       "projectSlug": "makerdao",
       "name": "Peluncuran Spark Protocol (SubDAO Lending & Liquidity)",
       "date": "2023-05",
@@ -9649,7 +9649,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-017",
+      "id": "makerdao-EV-017",
       "projectSlug": "makerdao",
       "name": "Pengumuman Rencana Endgame (Tokenomics Baru, SubDAO, Rebranding)",
       "date": "2023-09",
@@ -9666,7 +9666,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-018",
+      "id": "makerdao-EV-018",
       "projectSlug": "makerdao",
       "name": "Deploy Kanonik ke Base dan Starknet",
       "date": "2023-2024",
@@ -9683,7 +9683,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-019",
+      "id": "makerdao-EV-019",
       "projectSlug": "makerdao",
       "name": "Peluncuran Sky.money (Endgame Frontend & Savings)",
       "date": "2024-07",
@@ -9700,7 +9700,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-020",
+      "id": "makerdao-EV-020",
       "projectSlug": "makerdao",
       "name": "Eksekusi Migrasi Token MKR → SKY (NewToken) — Fase 1",
       "date": "2024-08",
@@ -9717,7 +9717,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-021",
+      "id": "makerdao-EV-021",
       "projectSlug": "makerdao",
       "name": "PSM Dominasi: USDC/USDT/GUSD Sebagai Collateral Utama Peg",
       "date": "2024",
@@ -9734,7 +9734,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-022",
+      "id": "makerdao-EV-022",
       "projectSlug": "makerdao",
       "name": "RWA Treasury Allocation Melebihi $1 Miliar",
       "date": "2024",
@@ -9753,7 +9753,7 @@
   ],
   "MegaETH": [
     {
-      "id": "EV-001",
+      "id": "megaeth-EV-001",
       "projectSlug": "megaeth",
       "name": "Pendirian MegaETH Labs",
       "date": "2023",
@@ -9773,7 +9773,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-002",
+      "id": "megaeth-EV-002",
       "projectSlug": "megaeth",
       "name": "Publikasi Blog Perkenalan Tim MegaETH",
       "date": "2023",
@@ -9793,7 +9793,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-003",
+      "id": "megaeth-EV-003",
       "projectSlug": "megaeth",
       "name": "Pengumuman Pendanaan Awal (Seed/Strategic) dari DragonFly dan Figment",
       "date": "2023",
@@ -9812,7 +9812,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-004",
+      "id": "megaeth-EV-004",
       "projectSlug": "megaeth",
       "name": "Peluncuran Repositori GitHub Organization megaeth-labs",
       "date": "2023",
@@ -9830,7 +9830,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-005",
+      "id": "megaeth-EV-005",
       "projectSlug": "megaeth",
       "name": "Peluncuran Portal Dokumentasi Resmi (docs.megaeth.com)",
       "date": "2023",
@@ -9848,7 +9848,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-006",
+      "id": "megaeth-EV-006",
       "projectSlug": "megaeth",
       "name": "Pembentukan Komunitas Resmi (Discord, Telegram, X/Twitter)",
       "date": "2023",
@@ -9868,7 +9868,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-007",
+      "id": "megaeth-EV-007",
       "projectSlug": "megaeth",
       "name": "Peluncuran MegaETH Public Testnet",
       "date": "2024-06-27",
@@ -9888,7 +9888,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-008",
+      "id": "megaeth-EV-008",
       "projectSlug": "megaeth",
       "name": "Peluncuran MegaETH Testnet Explorer",
       "date": "2024-06-27",
@@ -9906,7 +9906,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-009",
+      "id": "megaeth-EV-009",
       "projectSlug": "megaeth",
       "name": "Peluncuran MegaETH Testnet Faucet",
       "date": "2024-06-27",
@@ -9924,7 +9924,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-010",
+      "id": "megaeth-EV-010",
       "projectSlug": "megaeth",
       "name": "Pengumuman Rencana Integrasi EigenLayer (Restaking & DA)",
       "date": "2024",
@@ -9942,7 +9942,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-011",
+      "id": "megaeth-EV-011",
       "projectSlug": "megaeth",
       "name": "Finalisasi Arsitektur Berbasis OP Stack dengan Custom Execution Environment",
       "date": "2024",
@@ -9963,7 +9963,7 @@
   ],
   "Movement Labs": [
     {
-      "id": "EV-001",
+      "id": "movement-labs-EV-001",
       "projectSlug": "movement-labs",
       "name": "Pendirian Movement Labs",
       "date": "2022",
@@ -9980,7 +9980,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-002",
+      "id": "movement-labs-EV-002",
       "projectSlug": "movement-labs",
       "name": "Inkorporasi Movement Labs Inc. sebagai Delaware C-Corp",
       "date": "2022",
@@ -9997,7 +9997,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-003",
+      "id": "movement-labs-EV-003",
       "projectSlug": "movement-labs",
       "name": "Pembukaan repositori GitHub Movement Labs",
       "date": "2024",
@@ -10014,7 +10014,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-004",
+      "id": "movement-labs-EV-004",
       "projectSlug": "movement-labs",
       "name": "Peluncuran situs dokumentasi resmi docs.movementlabs.xyz",
       "date": "2024",
@@ -10031,7 +10031,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-005",
+      "id": "movement-labs-EV-005",
       "projectSlug": "movement-labs",
       "name": "Pembentukan komunitas Discord resmi Movement Labs",
       "date": "2024",
@@ -10048,7 +10048,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-006",
+      "id": "movement-labs-EV-006",
       "projectSlug": "movement-labs",
       "name": "Ronde pendanaan Series A sebesar $38 juta",
       "date": "2024",
@@ -10065,7 +10065,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-007",
+      "id": "movement-labs-EV-007",
       "projectSlug": "movement-labs",
       "name": "Pengumuman publik Movement Labs, Movement SDK, M1, Movement Network, MoveVM, dan MEVM",
       "date": "2024",
@@ -10082,7 +10082,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-008",
+      "id": "movement-labs-EV-008",
       "projectSlug": "movement-labs",
       "name": "Rekrutmen pemimpin ekosistem dan operasi: Sami Kassab (Head of Growth), Arjun Krishan (Head of Ecosystem), Tanya Kumar (Head of Operations)",
       "date": "2024",
@@ -10099,7 +10099,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-009",
+      "id": "movement-labs-EV-009",
       "projectSlug": "movement-labs",
       "name": "Peluncuran testnet publik MEVM \"Parthenon\"",
       "date": "2024-07-30",
@@ -10116,7 +10116,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-010",
+      "id": "movement-labs-EV-010",
       "projectSlug": "movement-labs",
       "name": "Pengumunan rencana integrasi Data Availability layer: Celestia, Polygon Avail, EigenDA",
       "date": "2024",
@@ -10135,7 +10135,7 @@
   ],
   "Notcoin": [
     {
-      "id": "EV-001",
+      "id": "notcoin-EV-001",
       "projectSlug": "notcoin",
       "name": "Pendirian Open Builders dan Konsep Awal Notcoin",
       "date": "2023-11",
@@ -10152,7 +10152,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-002",
+      "id": "notcoin-EV-002",
       "projectSlug": "notcoin",
       "name": "Peluncuran Notcoin Game di Telegram (Mainnet)",
       "date": "2024-01-01",
@@ -10169,7 +10169,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-003",
+      "id": "notcoin-EV-003",
       "projectSlug": "notcoin",
       "name": "Pencapaian 35 Juta Pengguna dan Kolaborasi Ekosistem TON",
       "date": "2024-03",
@@ -10186,7 +10186,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-004",
+      "id": "notcoin-EV-004",
       "projectSlug": "notcoin",
       "name": "Berakhirnya Fase Mining (Tap-to-Earn) dan Announcement Tokenomics",
       "date": "2024-04-01",
@@ -10203,7 +10203,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-005",
+      "id": "notcoin-EV-005",
       "projectSlug": "notcoin",
       "name": "Token Generation Event (TGE) dan Listing Perdana di CEX",
       "date": "2024-05-16",
@@ -10220,7 +10220,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-006",
+      "id": "notcoin-EV-006",
       "projectSlug": "notcoin",
       "name": "Peluncuran Notcoin Explore (Discovery Platform)",
       "date": "2024-05-16",
@@ -10237,7 +10237,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-007",
+      "id": "notcoin-EV-007",
       "projectSlug": "notcoin",
       "name": "Kampanye Notcoin Genesis NFT di Getgems",
       "date": "2024-06",
@@ -10254,7 +10254,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-008",
+      "id": "notcoin-EV-008",
       "projectSlug": "notcoin",
       "name": "Peluncuran Notcoin Earn (On-chain Reward Campaigns)",
       "date": "2024-07",
@@ -10271,7 +10271,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-009",
+      "id": "notcoin-EV-009",
       "projectSlug": "notcoin",
       "name": "Peluncuran Governance Snapshot (Notcoin DAO)",
       "date": "2024-07-15",
@@ -10288,7 +10288,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-010",
+      "id": "notcoin-EV-010",
       "projectSlug": "notcoin",
       "name": "Peluncuran Notcoin Wallet (Smart Wallet / Account Abstraction)",
       "date": "2024-10",
@@ -10305,7 +10305,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-011",
+      "id": "notcoin-EV-011",
       "projectSlug": "notcoin",
       "name": "Integrasi Telegram Ads Platform & Mini App Store",
       "date": "2024-11",
@@ -10322,7 +10322,7 @@
       "_status": "Ongoing"
     },
     {
-      "id": "EV-012",
+      "id": "notcoin-EV-012",
       "projectSlug": "notcoin",
       "name": "Pencapaian 50 Juta Total Pengguna Unik (Lifetime)",
       "date": "2024-12",
@@ -10339,7 +10339,7 @@
       "_status": "Completed"
     },
     {
-      "id": "EV-013",
+      "id": "notcoin-EV-013",
       "projectSlug": "notcoin",
       "name": "Rilis Notcoin v2 / Roadmap 2025 (Nettok)",
       "date": "2025-01",
