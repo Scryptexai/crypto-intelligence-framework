@@ -1,0 +1,215 @@
+PROJECT: Aptos
+
+1. Menjadi Layer 1 performa tinggi dengan eksekusi paralel Block-STM dan Move VM
+· Evidence: Whitepaper teknis memposisikan Block-STM dan Move VM sebagai diferensiasi utama vs EVM/SVM; upgrade v1.5 dan v1.8 fokus optimasi Block-STM dan Move 2024 Edition (HIGH) [Aptos Technical Whitepaper, https://aptos.dev/whitepaper/aptos-whitepaper.pdf]; [GitHub Releases v1.5, https://github.com/aptos-labs/aptos-core/releases/tag/aptos-v1.5.0]; [GitHub Releases v1.8, https://github.com/aptos-labs/aptos-core/releases/tag/aptos-v1.8.0]
+· Supporting Dataset: Phase 4 (System Architecture, Execution Environment, Technical Upgrade History)
+
+2. Membangun ekosistem Move VM bersama Sui dan Movement melalui standarisasi tooling
+· Evidence: Kolaborasi Movement Labs untuk standarisasi Move language, Move Analyzer, LSP; grant Foundation untuk tooling Move; hackathon "Aptos x Movement Hackathon" (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/move-ecosystem-collaboration/]; [Aptos Foundation Grants, https://aptosfoundation.org/grants]
+· Supporting Dataset: Phase 3 (EV-024), Phase 7 (Major Integrations, Developer Ecosystem)
+
+3. Desentralisasi progresif melalui Foundation (Cayman) terpisah dari Labs (Delaware) dan Grants DAO
+· Evidence: Aptos Foundation non-profit Cayman Islands mengelola treasury protokol (51.02% supply); Grants DAO komunitas voting proposal; Labs fokus produk komersial (Petra, enterprise) (HIGH) [Aptos Foundation Governance, https://aptosfoundation.org/governance]; [Aptos Whitepaper, https://aptos.dev/whitepaper/aptos-whitepaper.pdf]
+· Supporting Dataset: Phase 2 (Entity: Aptos Foundation, Aptos Labs Inc., Aptos Community Grants DAO), Phase 5 (Treasury, Fundraising Mechanism), Phase 6 (Governance)
+
+4. Onboarding massal non-teknis melalui Keyless Authentication (OIDC + ZKP) tanpa seed phrase
+· Evidence: Keyless live mainnet 2023-05 (EV-018); v1.8 upgrade Keyless v2; terintegrasi Petra, Martian, Fewcha; whitepaper Keyless diterbitkan (HIGH) [Aptos Keyless Paper, https://aptos.dev/whitepaper/aptos-keyless.pdf]; [Medium Announcement, https://medium.com/aptoslabs/keyless-accounts-on-aptos-9f3b5e5c5f5e]
+· Supporting Dataset: Phase 3 (EV-018, EV-029), Phase 4 (Core Components: Keyless Module), Phase 7 (Applications: Keyless)
+
+5. Menjamin keamanan melalui multi-auditor (CertiK, OtterSec, Trail of Bits, Halborn, Quantstamp, Zellic, Spearbit) dan formal verification (Move Prover)
+· Evidence: 7 auditor independen melaporkan temuan; Move Prover digunakan untuk framework kritis (coin, stake, governance); bug bounty Immunefi aktif (HIGH) [CertiK Aptos, https://www.certik.com/projects/aptos]; [OtterSec Blog, https://osec.io/blog/aptos-audit/]; [Trail of Bits Portfolio, https://trailofbits.com/portfolio/]; [Immunefi Bug Bounty, https://immunefi.com/bug-bounty/aptoslabs/]
+· Supporting Dataset: Phase 4 (Security Model, Audit History), Phase 7 (External Dependencies: Security)
+
+6. Memperluas likuiditas cross-chain melalui Wormhole dan LayerZero tanpa native cross-chain messaging
+· Evidence: Wormhole integration EV-013 (2022-12); LayerZero OFT standard live; bridging guide resmi; tidak ada native IBC/XCMP (HIGH) [Wormhole Portal, https://wormhole.com/token-bridge]; [LayerZero, https://layerzero.network/]; [Aptos Bridging Guide, https://aptos.dev/guides/bridging/]
+· Supporting Dataset: Phase 3 (EV-013), Phase 7 (Major Integrations, External Dependencies), Phase 8 (Trading Markets: Bridge Liquidity)
+
+7. Menarik developer dan institusi melalui infrastructure partnership Google Cloud, AWS, NodeReal, Nodit
+· Evidence: Google Cloud & AWS validator partner EV-014 (2022-12); NodeReal & Nodit enterprise RPC EV-028 (2024-06); managed services, KMS, AMI marketplace (HIGH) [Google Cloud Web3, https://cloud.google.com/web3/aptos]; [AWS Blockchain, https://aws.amazon.com/blockchain/aptos/]; [NodeReal, https://nodereal.io/aptos]; [Nodit, https://nodit.io/chains/aptos]
+· Supporting Dataset: Phase 3 (EV-014, EV-028), Phase 7 (Infrastructure Providers, External Dependencies)
+
+8. Mengelola treasury protokol (51.02% supply) melalui Foundation dan Grants DAO tanpa protocol revenue (fee switch off)
+· Evidence: Whitepaper alokasi 51.02% Community/Foundation/Ecosystem; Foundation Cayman mengelola; Grants DAO proposal; gas fee 100% base burn, priority ke validator; tidak ada fee switch (HIGH) [Aptos Whitepaper, https://aptos.dev/whitepaper/aptos-whitepaper.pdf]; [Aptos Tokenomics, https://aptos.dev/tokenomics/]; [Aptos Foundation Grants, https://aptosfoundation.org/grants]
+· Supporting Dataset: Phase 5 (Treasury, Revenue Model, Fundraising Mechanism), Phase 6 (Distribution, Inflation/Deflation, Governance)
+
+Keputusan: Pendirian Aptos Labs Inc. oleh Mo Shaikh dan Avery Ching (2021-12)
+· Trigger: Berhenti proyek Diem di Meta; keinginan melanjutkan teknologi Move sebagai L1 independen
+· Evidence: Founder profile Mo Shaikh (CEO) dan Avery Ching (CTO) mantan lead engineer Diem; Aptos Labs incorporated Delaware (HIGH) [Aptos Labs Team, https://aptoslabs.com/team]; [Forbes Profile Mo Shaikh, https://www.forbes.com/profile/mo-shaikh/]
+· Decision: Mendirikan perusahaan for-profit Delaware untuk membangun core protocol, Move VM, tooling, produk komersial
+· Immediate Result: Entity terstruktur untuk fundraising, hiring, pengembangan mainnet
+· Long-term Impact: Pemisahan legal entity dari Foundation (non-profit) memungkinkan VC funding $350M dan komersialisasi produk (Petra Wallet, enterprise services)
+· Supporting Dataset: Phase 2 (Entity: Mo Shaikh, Avery Ching, Aptos Labs Inc.), Phase 3 (EV-003)
+
+Keputusan: Series A Funding $200M led by Andreessen Horowitz (2022-03-29)
+· Trigger: Perlu modal untuk ekspansi tim engineering, ekosistem grant, persiapan mainnet launch
+· Evidence: TechCrunch melaporkan $200M pada valuasi $2B; investor: a16z, Multicoin, Binance Labs, Coinbase Ventures, Tiger Global, dll (HIGH) [TechCrunch, https://techcrunch.com/2022/03/29/aptos-labs-raises-200m-at-2b-valuation-led-by-a16z/]
+· Decision: Equity funding Series A ke Aptos Labs Inc. dengan SAFT untuk token allocation investor (13.48% supply)
+· Immediate Result: Runway panjang pre-mainnet; sinyal kepercayaan VC tier-1; investor strategis (Binance, Coinbase) untuk listing support
+· Long-term Impact: Investor mendapat kursi dewan pengawas; token vesting 1 tahun cliff + 4 tahun linear mulai Okt 2023; alignment jangka panjang tapi sell pressure vesting bulanan
+· Supporting Dataset: Phase 3 (EV-005), Phase 5 (Funding History), Phase 6 (Vesting Schedule: Investors)
+
+Keputusan: Series B Funding $150M dengan Apollo Global Management (2022-07-25)
+· Trigger: Perlu memperkuat struktur kapital untuk pertumbuhan jangka panjang pasca-mainnet
+· Evidence: Crunchbase melaporkan $150M Series B; Apollo Global join; total funding $350M; valuasi dilaporkan $4B (HIGH) [Crunchbase, https://www.crunchbase.com/organization/aptos-labs/company_financials]; [The Block, https://www.theblock.co/post/185000/aptos-labs-raises-200-million-led-by-a16z]
+· Decision: Equity funding Series B lanjutan dengan investor baru (Apollo) dan follow-on existing
+· Immediate Result: Total kapital $350M mendukung hiring massal, infrastructure grant, keberlanjutan operasional
+· Long-term Impact: Treasury Labs terisi untuk runway multi-tahun; tidak ada fundraising tambahan tercatat sejak Juli 2022
+· Supporting Dataset: Phase 3 (EV-006), Phase 5 (Funding History)
+
+Keputusan: Aptos Mainnet Genesis Block dan TGE (2022-10-17)
+· Trigger: Testnet incentivized (AIT-1/2/3) selesai; validator set siap; protokol matang untuk produksi
+· Evidence: Mainnet live blok genesis 17 Okt 2022; 1B APT dimintakan; airdrop AIT claimed; validator aktif (HIGH) [Aptos Blog Mainnet, https://medium.com/aptoslabs/aptos-mainnet-is-live-9f3b5e5c5f5e]
+· Decision: Meluncurkan mainnet produksi dengan full tokenomics (staking, governance, gas fee) sekaligus
+· Immediate Result: Jaringan live; APT terdistribusi ke kategori: Community 51.02%, Core Contributors 19%, Foundation 16.50%, Investors 13.48%
+· Long-term Impact: Cliff 1 tahun untuk Contributors & Investors berakhir Okt 2023; vesting bulanan 4 tahun hingga Okt 2026; sell pressure berkelanjutan dari unlock bulanan
+· Supporting Dataset: Phase 3 (EV-007), Phase 5 (Funding History), Phase 6 (TGE, Distribution, Vesting Schedule)
+
+Keputusan: Major Exchange Listings Binance, Coinbase, FTX, OKX, Bybit (2022-10-18)
+· Trigger: Mainnet live; perlu likuiditas dan price discovery segera; investor strategis (Binance Labs, Coinbase Ventures) memfasilitasi
+· Evidence: Binance listing announcement hari setelah mainnet; Coinbase, FTX, OKX, Bybit listing serentak (HIGH) [Binance Blog, https://www.binance.com/en/blog/ecosystem/binance-lists-aptos-apt-421499824684901107]; [CoinDesk, https://www.coindesk.com/business/2022/03/29/aptos-labs-raises-200m-series-a-led-by-a16z/]
+· Decision: Listing spot trading pairs di 9+ major CEX secara bersamaan pada hari pertama trading
+· Immediate Result: Likuiditas mendalam instan; volume hari pertama >$1M; APT/USDT Binance jadi primary price discovery
+· Long-term Impact: CEX mendominasi >90% volume (Token Terminal); dependency pada Binance/Coinbase untuk liquidity; FTX bankruptcy kemudian mempengaruhi perception
+· Supporting Dataset: Phase 3 (EV-008), Phase 7 (Exchange Ecosystem), Phase 8 (Trading Markets)
+
+Keputusan: Pendirian Aptos Foundation di Cayman Islands (2022-10)
+· Trigger: Perlu entitas non-profit terpisah dari Labs untuk mengelola treasury protokol, grant, governance, desentralisasi
+· Evidence: Foundation established Cayman Islands non-profit; mengelola 16.50% supply + bagian Community 51.02%; Grants DAO (HIGH) [Aptos Foundation Governance, https://aptosfoundation.org/governance]; [Aptos Whitepaper, https://aptos.dev/whitepaper/aptos-whitepaper.pdf]
+· Decision: Membuat Foundation sebagai legal wrapper untuk protokol; Labs tetap for-profit Delaware
+· Immediate Result: Pemisahan kepentingan komersial (Labs) vs protokol (Foundation); Foundation mengelola treasury, grant, validator onboarding
+· Long-term Impact: Governance hybrid: Foundation council + Grants DAO komunitas; Labs berkontribusi code tapi tidak mengontrol treasury protokol
+· Supporting Dataset: Phase 2 (Entity: Aptos Foundation), Phase 3 (EV-009), Phase 5 (Treasury), Phase 6 (Governance)
+
+Keputusan: Peluncuran Petra Wallet Official (2022-11)
+· Trigger: Perlu wallet native resmi untuk onboarding pengguna, dApp connector, NFT display, Keyless support
+· Evidence: Petra Wallet live browser extension & mobile; official Aptos Labs product; auto-update Chrome Web Store (HIGH) [Petra Official, https://petra.app]; [Chrome Web Store, https://chrome.google.com/webstore/detail/petra-aptos-wallet/ejjladinnckdgjemekebdpeokbikhf]
+· Decision: Membangun wallet first-party sebagai public good dan onboarding tool
+· Immediate Result: Wallet default untuk pengguna baru; terintegrasi ANS, Keyless, semua dApp via wallet adapter
+· Long-term Impact: Menjadi referensi standar wallet adapter; komersialisasi potensial via enterprise features; kompetisi dengan wallet komunitas (Martian, Fewcha, Nightly)
+· Supporting Dataset: Phase 3 (EV-010), Phase 4 (Core Components: Petra Wallet), Phase 7 (Wallet Ecosystem)
+
+Keputusan: Integrasi Wormhole Bridge untuk Wrapped APT Cross-Chain (2022-12)
+· Trigger: Perlu interoperabilitas APT ke Ethereum, Solana, BSC untuk DeFi cross-chain; tidak ada native cross-chain messaging
+· Evidence: Wormhole activated bridge APT ke Ethereum, Solana, BSC, Polygon; wrapped APT ERC-20/SPL/BEP-20 (HIGH) [Wormhole Portal, https://wormhole.com/token-bridge]; [Aptos Bridging Guide, https://aptos.dev/guides/bridging/]
+· Decision: Mengadopsi Wormhole sebagai bridge utama; kemudian LayerZero OFT standard
+· Immediate Result: APT beredar di Uniswap, Curve, DeFi Ethereum; bridge volume signifikan
+· Long-term Impact: Dependency pada bridge eksternal (Wormhole, LayerZero) untuk cross-chain liquidity; risiko bridge hack; multiple wrapped APT representations (tidak ada single official)
+· Supporting Dataset: Phase 3 (EV-013), Phase 7 (Major Integrations, External Dependencies), Phase 8 (Trading Markets: Bridge Liquidity)
+
+Keputusan: Google Cloud dan AWS Bergabung sebagai Infrastructure Partner Resmi (2022-12)
+· Trigger: Perlu enterprise-grade validator hosting, managed services, geografis desentralisasi node
+· Evidence: Google Cloud & AWS official partner; managed validator services, AMI marketplace, KMS (HIGH) [Google Cloud Web3, https://cloud.google.com/web3/aptos]; [AWS Blockchain, https://aws.amazon.com/blockchain/aptos/]
+· Decision: Partnership dengan hyperscaler cloud untuk validator infrastructure
+· Immediate Result: Mudahnya deployment validator enterprise; peningkatan geografis node
+· Long-term Impact: Konsentrasi validator di Google Cloud & AWS (centralization risk); dependency pada cloud provider; NodeReal/Nodit kemudian jadi enterprise RPC/indexer provider
+· Supporting Dataset: Phase 3 (EV-014), Phase 7 (Infrastructure Providers, External Dependencies, Ecosystem Risks)
+
+Keputusan: Peluncuran Thala Protocol (MOD Stablecoin, DEX, Lending) (2023-01)
+· Trigger: Perlu DeFi primitives native (stablecoin, DEX, lending) untuk bootstrapping ekosistem
+· Evidence: Thala launch MOD over-collateralized stablecoin, DEX concentrated liquidity, lending market; grant Foundation (HIGH) [Thala Official, https://thala.fi]; [DefiLlama Thala, https://defillama.com/protocol/thala]
+· Decision: Mendukung via grant Foundation pengembangan DeFi suite lengkap
+· Immediate Result: Infrastruktur DeFi primitif tersedia on-chain; MOD stablecoin, lending, DEX
+· Long-term Impact: Thala menjadi top DeFi protocol TVL; MOD stablecoin adoption; composability dengan liquid staking (amAPT)
+· Supporting Dataset: Phase 3 (EV-015), Phase 7 (Applications: Thala), Phase 8 (Adoption Metrics: DEX TVL Share)
+
+Keputusan: Peluncuran Amnis Finance Liquid Staking (amAPT) (2023-02)
+· Trigger: Perlu unlock likuiditas staked APT (78-82% supply staked) untuk DeFi composability
+· Evidence: Amnis launch liquid staking amAPT; grant Foundation; composable di Thala, Liquidswap (HIGH) [Amnis Finance, https://amnis.finance]; [DefiLlama Amnis, https://defillama.com/protocol/amnis-finance]
+· Decision: Mendukung liquid staking protocol via grant
+· Immediate Result: Staker mendapat amAPT usable di DeFi sambil earning staking reward
+· Long-term Impact: amAPT menjadi major liquid staking token; meningkatkan capital efficiency staked APT; risiko smart contract concentration
+· Supporting Dataset: Phase 3 (EV-016), Phase 7 (Applications: Amnis), Phase 8 (Adoption Metrics: Staking Participation)
+
+Keputusan: Peluncuran Aptos Names Service (ANS) Mainnet (2023-03)
+· Trigger: Perlu identity primitive .apt domains untuk UX, resolusi alamat, integrasi wallet/explorer
+· Evidence: ANS live mainnet 2023-03; .apt domains; integrated Petra, Martian, Fewcha, explorer (HIGH) [ANS Official, https://aptosnames.com]; [Medium ANS Announcement, https://medium.com/aptoslabs/introducing-aptos-name-service-ans-9f3b5e5c5f5e]
+· Decision: Deploy naming service on-chain sebagai core protocol service
+· Immediate Result: Adopsi massal .apt domains; default integration di wallet/explorer
+· Long-term Impact: Identity layer untuk Keyless, reputation, social graph; revenue stream via renewal fees (APT burn)
+· Supporting Dataset: Phase 3 (EV-017), Phase 4 (Core Components: ANS Contracts), Phase 7 (Applications: ANS)
+
+Keputusan: Peluncuran Aptos Keyless Authentication (OIDC + ZKP) (2023-05)
+· Trigger: Perlu menurunkan barrier entry mass adoption; passwordless onboarding via Google/Apple
+· Evidence: Keyless live mainnet 2023-05; OIDC + ZKP (Groth16); whitepaper Keyless; integrated wallets (HIGH) [Aptos Keyless Paper, https://aptos.dev/whitepaper/aptos-keyless.pdf]; [Medium Keyless, https://medium.com/aptoslabs/keyless-accounts-on-aptos-9f3b5e5c5f5e]
+· Decision: Implementasi account abstraction native via Keyless module on-chain
+· Immediate Result: Onboarding non-teknis tanpa seed phrase; transaksi gas APT tetap dibayar
+· Long-term Impact: v1.8 upgrade Keyless v2 (2024-09); differentiator UX vs EVM/SVM; adoption metrics tidak dipublikasikan
+· Supporting Dataset: Phase 3 (EV-018, EV-029), Phase 4 (Core Components: Keyless Module, Execution Environment: Account Abstraction), Phase 7 (Applications: Keyless)
+
+Keputusan: Protocol Upgrade v1.5 (Performance, Gas Schedule, Validator Operations) (2024-03-15)
+· Trigger: Perlu optimasi Block-STM, revisi gas schedule, peningkatan operasi validator berdasarkan pengalaman produksi 1.5 tahun
+· Evidence: v1.5 release notes: Block-STM optimization, dynamic gas schedule, validator set rotation improvements (HIGH) [GitHub Release v1.5, https://github.com/aptos-labs/aptos-core/releases/tag/aptos-v1.5.0]
+· Decision: Major upgrade fokus performance dan gas economics
+· Immediate Result: Throughput meningkat, biaya transaksi lebih stabil, validator operations efisien
+· Long-term Impact: Menunjukkan komitmen iterative improvement; v1.8 kemudian bawa Move 2024 Edition
+· Supporting Dataset: Phase 3 (EV-027), Phase 4 (Technical Upgrade History), Phase 8 (Market Timeline)
+
+Keputusan: Integrasi NodeReal dan Nodit sebagai Enterprise RPC/Indexer Provider Resmi (2024-06-10)
+· Trigger: Perlu production-grade RPC, indexing, GraphQL API untuk developer enterprise; public RPC tidak cukup reliable
+· Evidence: NodeReal & Nodit official partner; enterprise RPC, indexer gRPC v2, GraphQL API (HIGH) [NodeReal Aptos, https://nodereal.io/aptos]; [Nodit Aptos, https://nodit.io/chains/aptos]
+· Decision: Menunjuk provider enterprise resmi untuk infrastructure critical
+· Immediate Result: RPC reliable, indexing cepat, API production-grade
+· Long-term Impact: Konsentrasi infrastructure pada 2 provider (NodeReal, Nodit); risiko single point of failure; Foundation grant mendukung
+· Supporting Dataset: Phase 3 (EV-028), Phase 7 (Infrastructure Providers, External Dependencies, Ecosystem Risks)
+
+Keputusan: Protocol Upgrade v1.8 (Move 2024 Edition, Account Abstraction Enhancements) (2024-09-05)
+· Trigger: Major language upgrade Move 2024 Edition (generics, enums, pattern matching), Keyless v2, gas schedule v3
+· Evidence: v1.8 release: Move 2024 Edition features, enhanced account abstraction, Keyless v2, gas schedule v3 (HIGH) [GitHub Release v1.8, https://github.com/aptos-labs/aptos-core/releases/tag/aptos-v1.8.0]
+· Decision: Breaking language upgrade untuk developer experience dan expressiveness
+· Immediate Result: Developer experience Move meningkat; account abstraction lebih fleksibel; gas schedule v3
+· Long-term Impact: Kompatibilitas bytecode versi lama butuh migration tooling; standardisasi Move ecosystem dengan Movement/Sui
+· Supporting Dataset: Phase 3 (EV-029), Phase 4 (Technical Upgrade History, Execution Environment), Phase 8 (Market Timeline)
+
+## Evolution Pattern
+
+Fase 1: Pre-Mainnet Foundation Building (2021-12 – 2022-10)
+· Deskripsi: Pendirian Aptos Labs oleh mantan Diem team; Series A $200M (Mar 2022) dan Series B $150M (Jul 2022) dari tier-1 VC; AIT-1/2/3 incentivized testnet memvalidasi Block-STM dan Move VM di skala besar; pendirian Foundation Cayman Islands; persiapan genesis allocation 1B APT.
+· Perubahan Strategi: Dari R&D internal (Diem) ke L1 independen dengan VC backing besar; fokus pada teknologi diferensiasi (Move, Block-STM) sebelum go-to-market.
+· Perubahan Teknologi: Move language & VM diadaptasi dari Diem; Block-STM parallel execution diimplementasikan; AptosBFT v1 consensus; framework awal (coin, stake, governance).
+· Perubahan Tokenomics: Genesis allocation finalisasi: Community 51.02%, Core Contributors 19%, Foundation 16.50%, Investors 13.48%; vesting 1yr cliff + 4yr linear untuk Contributors/Investors.
+· Perubahan Governance: Labs (Delaware corp) membangun protokol; Foundation (Cayman non-profit) dirancang untuk post-genesis treasury & governance.
+· Supporting Dataset: Phase 3 (EV-003, EV-004, EV-005, EV-006, EV-009), Phase 5 (Funding History), Phase 6 (Distribution, Vesting Schedule)
+
+Fase 2: Mainnet Launch & Early Ecosystem Bootstrapping (2022-10 – 2023-06)
+· Deskripsi: Mainnet genesis & TGE (17 Okt 2022); listing 9+ major CEX hari berikutnya; Petra Wallet, Explorer, Liquidswap DEX, Wormhole bridge, Google Cloud/AWS partnership dalam 2 bulan; Thala (MOD stablecoin, DEX, lending), Amnis (amAPT liquid staking), ANS (.apt domains), Keyless Authentication (OIDC+ZKP) diluncurkan Q1-Q2 2023.
+· Perubahan Strategi: Dari "build protocol" ke "grow ecosystem" — Foundation grant program aktif; DeFi primitives (stablecoin, DEX, lending, liquid staking) menjadi prioritas; identity (ANS, Keyless) sebagai UX differentiator.
+· Perubahan Teknologi: Keyless module on-chain; ANS contracts; v1.1/v1.2 upgrades (gas optimizations, Keyless/ANS support); AptosBFT v3; state sync improvements.
+· Perubahan Tokenomics: Airdrop AIT fully unlocked at TGE; Foundation treasury aktif spending; Investor/Contributor tokens masih terkunci (cliff Okt 2023).
+· Perubahan Governance: Framework upgrade proposals on-chain; Grants DAO mulai berbentuk; validator set target 100+ aktif.
+· Supporting Dataset: Phase 3 (EV-007, EV-008, EV-010 thru EV-018), Phase 4 (Technical Upgrade History), Phase 5 (Treasury), Phase 6 (TGE, Utility), Phase 7 (Applications, Developer Ecosystem)
+
+Fase 3: Ecosystem Maturation & Scaling (2023-07 – 2024-09)
+· Deskripsi: NFT marketplace (Topaz, BlueMove, Souffl3); DEX aggregator (Panora); wallet alternatives (Martian, Fewcha, Nightly); Movement Labs Move standardization collaboration; major audits (CertiK, OtterSec, Trail of Bits, Halborn, Quantstamp, Zellic, Spearbit); Grants DAO formalisasi; v1.5 upgrade (Mar 2024) performance; NodeReal/Nodit enterprise RPC (Jun 2024); v1.8 upgrade (Sep 2024) Move 2024 Edition, Keyless v2, gas schedule v3; ecosystem >500 projects claimed.
+· Perubahan Strategi: Dari "core primitives" ke "ecosystem breadth" — NFT, gaming, consumer apps, tooling standardization; enterprise infrastructure (NodeReal, Nodit) untuk production dApp; developer experience (Move 2024 Edition, Move Analyzer, LSP).
+· Perubahan Teknologi: Move 2024 Edition (generics, enums, pattern matching); Keyless v2; gas schedule v3; indexer gRPC v2 full rollout; Block-STM optimizations berkelanjutan.
+· Perubahan Tokenomics: Cliff 1 tahun berakhir Okt 2023; vesting bulanan Contributors/Investors berlangsung (tahun 2 dari 4); staking reward inflation 7% → turun 1.5%/tahun; base fee burn ongoing.
+· Perubahan Governance: Grants DAO aktif; Foundation council oversight; on-chain framework upgrades v1.5, v1.6, v1.8 executed; validator set 108 aktif.
+· Supporting Dataset: Phase 3 (EV-019 thru EV-029), Phase 4 (Technical Upgrade History, Audit History), Phase 5 (Financial Dependencies), Phase 6 (Inflation/Deflation, Major Token Events), Phase 7 (Applications, Governance Ecosystem, Ecosystem Risks), Phase 8 (Market Timeline)
+
+Fase 4: Current State & Roadmap (2024-10 – Present)
+· Deskripsi: 2-year mainnet anniversary; vesting year 2 unlocks continue; v1.9 roadmap (ZK-validator proofs, light client); RWA narrative emerging; DePIN not pursued; institutional infrastructure mature; regulatory uncertainty (SEC classification) looming.
+· Perubahan Strategi: Fokus pada ZK-light client untuk trust-minimized bridging (mengurangi bridge dependency); RWA partnerships exploration; Move ecosystem leadership via standardization; regulatory engagement needed.
+· Perubahan Teknologi: v1.9 planned: ZK-validator proofs, light client protocol; Move Prover adoption push; state pruning untuk storage growth mitigation.
+· Perubahan Tokenomics: Vesting Contributors/Investors tahun 3/4 (2025-2026); net supply dynamic (inflation vs burn); fee switch masih off.
+· Perubahan Governance: Desentralisasi progresif via Grants DAO; Foundation treasury transparency pressure; validator stake concentration monitoring.
+· Supporting Dataset: Phase 3 (EV-030), Phase 4 (Known Technical Limitations, Current Technical Stack), Phase 5 (Financial Risk), Phase 6 (Open Threads), Phase 7 (Ecosystem Risks, Official Resources), Phase 8 (Narrative Position, Open Threads)
+
+## Technical Decision Pattern
+
+Pola 1: Parallel Execution via Block-STM sebagai Core Differentiator
+· Decision Pattern: Memilih Block-STM (optimistic Software Transactional Memory) untuk parallel execution bukan sharding atau L2; investasi berkelanjutan pada optimasi Block-STM (v1.5, v1.8)
+· Evidence: Whitepaper teknis centered pada Block-STM; arxiv paper Block-STM; v1.5 release notes "Block-STM optimization"; v1.8 lanjutan; known limitation: high contention workloads (popular DEX) reduced parallelism (HIGH) [Aptos Technical Whitepaper, https://aptos.dev/whitepaper/aptos-whitepaper.pdf]; [Block-STM Paper, https://arxiv.org/abs/2203.06871]; [GitHub Release v1.5, https://github.com/aptos-labs/aptos-core/releases/tag/aptos-v1.5.0]; [Known Limitations, https://aptos.dev/whitepaper/aptos-whitepaper.pdf]
+· Supporting Dataset: Phase 4 (System Architecture, Execution Environment, Known Technical Limitations, Technical Upgrade History)
+
+Pola 2: Move VM & Resource-Oriented Programming sebagai Security Foundation
+· Decision Pattern: Mengadopsi Move language/VM dari Diem dengan resource linearity, formal verification (Move Prover), module upgradability; tidak membuat VM baru
+· Evidence: Move language developed at Meta for Diem (2019); Aptos adopt sepenuhnya; Move Prover used for core framework (coin, stake, governance); 7 auditor review VM implementation (HIGH) [Move Language GitHub, https://github.com/move-language/move]; [Move Prover Docs, https://move-language.github.io/move/prover.html]; [Audit History, https://aptos.dev/security/]
+· Supporting Dataset: Phase 3 (EV-001, EV-002), Phase 4 (Execution Environment, Security Model, Audit History), Phase 7 (External Dependencies: Move Language, Move VM)
+
+Pola 3: AptosBFT Evolution (v1 → v3 → v4) dengan Instant Finality
+· Decision Pattern: Iterative consensus upgrade: v1 genesis, v3 (EV-013 timeframe) faster finality, v4 (current) Jolteon-derived; instant finality 2-round voting; no slashing
+· Evidence: Consensus docs AptosBFT v4; Jolteon paper arxiv; v1.3 upgrade "AptosBFT v3"; v1.5 "validator set rotation improvements"; slashing not implemented per staking FAQ (HIGH) [Aptos Consensus Docs, https://aptos.dev/concepts/consensus/]; [Jolteon Paper, https://arxiv.org/abs/2203.11250]; [GitHub Release v1.3, https://github.com/aptos-labs/aptos-core/releases/tag/aptos-v1.3.0]; [Staking FAQ Slashing, https://aptos.dev/nodes/validator-node/staking/#slashing]
+· Supporting Dataset: Phase 3 (EV-013 implicit), Phase 4 (Consensus Mechanism, Technical Upgrade History)
+
+Pola 4: Account Abstraction Native via Keyless (OIDC + ZKP) bukan EIP-4337 Style
+· Decision Pattern: Implementasi Keyless sebagai on-chain module dengan ZKP (Groth16) verifying OIDC JWT; tidak adopt EIP-4337 account abstraction
