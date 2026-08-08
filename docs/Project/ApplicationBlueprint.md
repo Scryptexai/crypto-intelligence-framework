@@ -8,6 +8,16 @@ re-litigating decisions already made. Update this file when a decision changes �
 
 Written: 2026-07-24. Source: maintainer discussion, no new research.
 
+**Revision 2026-08-08 — §7/§8, prompted by an enterprise-platform proposal.** The maintainer proposed a
+Palantir/Bloomberg-style module list (connectors, ontology, collaboration, compliance, intelligence,
+operations). Checking it against this file surfaced that §7's telemetry non-goal was **mis-worded, not
+merely misread**: taken literally it forbade the live Observable layer that §9.3's own trust mechanism
+requires. That bullet now separates positioning (don't sell CIF as on-chain telemetry) from plumbing (a
+bounded connector set is required). One genuinely new non-goal was added — never forecast CIF Score, since
+it measures our research completeness rather than project health — and §8 now records that the Sentiment
+track is dormant rather than rejected. The full module list is triaged and sequenced in
+`docs/Project/EnterpriseRoadmap.md`; this file stays the source of truth for positioning and trust rules.
+
 **Revision 2026-07-26 — v1 → v2 (maintainer decision, after LayerZero proved out the 11-phase pipeline).**
 v1 was written before any project had gone through the Format v3 phased pipeline — it scoped CIF's whole
 product around one use case ("pattern-matching copilot for a due-diligence decision") because that was the
@@ -195,7 +205,14 @@ coded.
 
 ## 7. Non-goals (explicit, to prevent scope creep)
 
-- CIF does not claim real-time on-chain telemetry (that's Nansen's job, not this product's).
+- CIF does not **position or sell itself** as a real-time on-chain telemetry product — that is Nansen's job,
+  and competing there abandons the structural differentiator in §2 (pre-token projects are invisible to
+  on-chain tools, not merely deprioritized). *This bullet is about positioning, not plumbing.* CIF **does**
+  pull a bounded set of Observable metrics (TVL, funding rounds, unlock schedules), because §9.3's second
+  trust mechanism requires exactly that — verifiable-today facts shown next to a still-pending read. The
+  bound is explicit: connectors exist to serve the Observable layer and the daily catalog refresh, at daily
+  freshness, not to become a general data platform. Wording revised 2026-08-08 (see Status) because the
+  original phrasing read as a ban on §9.3.2 itself.
 - CIF does not output a bare score/verdict with no visible evidence chain — Section 3 is non-negotiable, even
   under UI-simplicity pressure. This includes never gating trust-depth to upsell (§9) — the paywall gates
   scope and continuity, never the citation/evidence chain itself.
@@ -204,6 +221,14 @@ coded.
 - CIF never publishes a "signal being watched" without an objective, checkable trigger condition and a
   commitment to grade the resolution publicly either way (§9) — this is what keeps the base-case/signal
   framing from degrading into "hedged both ways, always right."
+- **CIF never forecasts its own CIF Score as a user-facing output** (added 2026-08-08). CIF Score measures
+  *research completeness* — the six dimensions in `tools/extract_qa.py` are Research Quality, Consistency,
+  Evidence, Coverage, Conflict, Knowledge, all properties of **our dossier**, not of the project. "This
+  project's CIF Score will reach 92 in three months" therefore forecasts our own future diligence, which is
+  worthless to a user and, worse, invites reading a research-completeness number as a project-health
+  number. Forward-looking statements about a *project* use §9.4's Current Read (Pattern Confidence +
+  Trajectory Probability) and nothing else. Ranking dossiers by weakest coverage to decide what to research
+  next is legitimate and encouraged — as a maintainer-ops view, never a product surface.
 - The daily-curated-catalog identification flow (§4) does not get silently replaced by live per-user LLM
   classification as the primary path to save engineering effort — hybrid stays a fallback only, unless a
   future maintainer decision explicitly revises this file.
@@ -236,6 +261,12 @@ coded.
 - (v2) Which of §2b's new surfaces (due-diligence export, entity graph explorer, founder/team lookup,
   red-flag scanner, analog comparison) ship in the first build-out vs. later — §2b describes what the data
   supports, not a sequencing commitment; needs a build-phase pass similar to §6's, once 11.1 is settled.
+- **Sentiment: dormant, not rejected** (recorded 2026-08-08). `tools/ingest.py` still supports a `sentiment`
+  type and `examples/Sentiment/` exists, but holds only a README — the track was never carried into the
+  Format v3 era and this document has never taken a position on it either way. Reviving it needs a specific
+  job, not a general "add sentiment analysis": the two candidates worth considering are (a) an Observable-
+  layer input under §9.3.2, or (b) a *divergence* signal — where crowd sentiment disagrees with the Current
+  Read, which is more interesting than sentiment on its own. Undecided; whoever revives it should say which.
 
 ## 9. Monetization & Trust Strategy
 

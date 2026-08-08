@@ -35,8 +35,17 @@ Project/
 ├── Principles.md
 ├── Scope.md
 ├── Roadmap.md
-└── Versioning.md
+├── Versioning.md
+├── ApplicationBlueprint.md      ← product spec: positioning, trust architecture, monetization
+├── EnterpriseRoadmap.md         ← enterprise module triage + sequencing gates + lane ownership
+├── AirdropOS-UI-Audit.md        ← audit of the AirdropOS frontend against ApplicationBlueprint
+└── AirdropOS-Rebuild-Prompt.md
 ```
+
+**Read `ApplicationBlueprint.md` before changing anything user-facing** — it holds the locked decisions
+(§3 trust architecture, §7 non-goals, §9 monetization) that every other document inherits.
+`EnterpriseRoadmap.md` sequences longer-term modules on top of it and records which lane owns each:
+data integration (this repo) vs. frontend/backend integration (the frontend team).
 
 ## Workflow Position
 
