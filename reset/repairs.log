@@ -1,0 +1,2 @@
+2026-08-08T13:04:49.137843+00:00	TestProj	phase 02-entity	attempt 1	failed=min_length,ingest_contract,entities_parse	repaired
+2026-08-08T13:05:05.450585+00:00	X	phase 02-entity	attempt 1	failed=no_junk,ingest_contract,entities_parse	no_improvement

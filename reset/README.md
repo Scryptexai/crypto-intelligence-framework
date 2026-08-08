@@ -6,6 +6,74 @@ original DeepSeek run" section — the prompt set actually used to research Arbi
 time, so a long queue of projects can run unattended instead of being pasted into a chat UI by hand one
 phase at a time.
 
+## Layout (modular since 2026-08-08)
+
+`run_deepseek_reset.py` is now a thin entrypoint; all logic lives in `modules/`, one file per
+responsibility, each importing only from the ones above it:
+
+| module | owns |
+|---|---|
+| `config.py` | paths, constants, tunables, locks, credential + queue loading |
+| `logs.py` | console + `failures.log` / `needs_review.log` / `repairs.log` |
+| `api.py` | HTTP client for the gateway; transport-level retry only |
+| `prompts.py` | loading/assembling prompt text (no network, no validation) |
+| `specs.py` | **what "correct output" means per phase, and how to ask for it again** |
+| `validate.py` | project-level quality gate (`verify_10_phases`, `diagnose_project`) |
+| `repair.py` | **the self-healing loop: spec check → corrective retry** |
+| `phases.py` | generating one phase, and the four-stage Phase 11 |
+| `pipeline.py` | promote → ingest → build → extract → optional Supabase sync |
+| `runner.py` | per-project orchestration + sequential/parallel queue |
+| `cli.py` | argparse and entrypoint wiring |
+
+Where to change what: a new/changed output format → `specs.py` (add a `Check` + its repair
+hint); prompt wording → `phase_NN_*.txt`, not code; a new pipeline stage → `pipeline.py`; a
+new flag → `cli.py`; retry/backoff/timeouts → `config.py`.
+
+## Self-repair (the loop that fixes its own output)
+
+Every phase is checked the moment it arrives against the **real downstream parsers** —
+`tools/extract_*.py` and `tools/ingest.py`'s own `validate_phase_content`, not an
+approximation. If a check fails, the output is sent back with a precise corrective
+instruction (exact literal labels + a worked example) and regenerated, up to
+`RESET_MAX_REPAIR_ATTEMPTS` times (default 2).
+
+Details that matter:
+
+- **The repair exchange is not left in the conversation.** Later phases see only the final
+  corrected output. Keeping the rejected draft and the correction in context would teach the
+  model that malformed-then-fixed is acceptable, and would grow every later request by the
+  size of a whole failed phase.
+- **A repair that doesn't improve things stops the loop.** A model that ignored an explicit
+  format correction once won't comply on attempt three — that's a prompt bug to fix in
+  `phase_NN_*.txt`, and `repairs.log` is what makes it visible. A check that repairs on nearly
+  every project is being paid for with a wasted generation each time.
+- **A phase that still fails is saved anyway**, with its failures recorded. Real research
+  isn't thrown away over a format problem; the project-level gate is what stops it reaching
+  the database.
+
+Checks currently enforced: `no_junk` (leaked `<tool_call>` syntax, "I'll search for…"
+narration with no findings, meta-commentary, decorative banners — the failure mode that
+produced Berachain/EigenLayer/Cosmos), `min_length`, `ingest_contract` (PROJECT header +
+citation density), plus per-phase `entities_parse` / `events_parse` / `decisions_parse` /
+`behavior_sections` / `knowledge_parse`.
+
+Set `RESET_DISABLE_REPAIR=1` to turn the loop off.
+
+## Diagnosing and fixing existing data
+
+```bash
+# what's on disk and what's wrong with it — no API calls, no credentials, writes nothing
+python3 reset/run_deepseek_reset.py --audit
+
+# regenerate ONLY the named phases of one project; every other phase loads from disk free
+python3 reset/run_deepseek_reset.py --commit --phases-limit 10 --project Cosmos --redo-phases 2,3
+```
+
+`--audit` separates three cases deliberately: projects that fully pass, projects with real
+content but specific broken phases (each printed with the exact `--redo-phases` command to
+fix it), and projects never started (all phases empty — the normal queue picks these up, no
+decision needed).
+
 ## Files
 
 - `phase_01_foundation.txt` … `phase_10_knowledge.txt` — 10 of the 11 Track C phase prompts, extracted verbatim
