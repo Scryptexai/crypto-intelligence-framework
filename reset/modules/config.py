@@ -47,11 +47,23 @@ PHASE11_STAGES = [
 
 # Phase 9 (Behavioral) is split into three sequential calls on the SAME running conversation,
 # for the same reason Phase 11 is split into four: the gateway kills any single generation
-# that runs past ~300s (measured twice on Lido, 2026-08-08: HTTP 504 at 310s and 306s). A
-# complete Phase 9 averages ~27,500 chars / ~7,850 tokens of output across the 28 real
-# dossiers on disk, which cannot finish in time on this backend. Splitting the OUTPUT ask
-# three ways (input stays the same -- it is the phases 1-8 context and cannot shrink) puts
-# each call comfortably under the limit. Ordered so each stage is roughly a third of the work.
+# past ~300s (measured twice on Lido, 2026-08-08: HTTP 504 at 310s and 306s).
+#
+# What actually decides this is OUTPUT SIZE, not input. Measured across the 8 projects this
+# script generated end to end (Arbitrum/LayerZero excluded -- they were researched by hand in
+# a chat UI and never went through this gateway):
+#
+#   phase 09-behavioral   input 38,983 tok   output 8,436 tok   -> 504
+#   phase 10-knowledge    input 45,459 tok   output 7,721 tok   -> succeeds
+#
+# Phase 10 carries MORE input and still finishes, so prefill is not the discriminator. Phase 9
+# simply has the largest output of any phase, and at this backend's throughput that lands just
+# past the wall: the only generation rate consistent with both facts is ~26-28 tok/s, which
+# puts Phase 9 at 301-324s (over) and Phase 10 at 276-297s (just under). Splitting the output
+# three ways gives ~2,800 tok per call, ~100-110s each -- comfortably inside.
+#
+# (An earlier revision of this comment blamed the ~58k-token prefill. That was inferred from
+# Arbitrum's phase sizes, which are not this gateway's output at all; the table above is.)
 PHASE9_STAGES = [
     ("9a", "phase_09a_objectives.txt"),
     ("9b", "phase_09b_patterns.txt"),

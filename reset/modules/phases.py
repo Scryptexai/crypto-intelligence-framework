@@ -34,11 +34,15 @@ def _has_heavy_provider(providers) -> bool:
 def _run_staged_phase_9(name: str, messages: list, proj_dir: Path, providers, plog) -> str:
     """Phase 9 as three sequential calls on the running conversation (config.PHASE9_STAGES).
 
-    Same root cause as Phase 11's four-stage split, measured independently here: the gateway
-    kills any single generation past ~300s (HTTP 504 at 310s and 306s on two consecutive Lido
-    attempts, 2026-08-08), and a complete Phase 9 averages ~7,850 output tokens -- far more
-    than this backend can produce in five minutes. Only the OUTPUT ask can shrink; the input
-    is the phases 1-8 context and is what makes the analysis possible at all, so it stays.
+    Same root cause as Phase 11's four-stage split: the gateway kills any single generation
+    past ~300s (HTTP 504 at 310s and 306s on two consecutive Lido attempts, 2026-08-08).
+
+    It is the OUTPUT that decides this, not the input -- see config.PHASE9_STAGES for the
+    measured table. Phase 10 carries MORE context (45,459 tok vs 38,983) and still finishes;
+    Phase 9 just has the largest output of any phase (8,436 tok), which at this backend's
+    ~26-28 tok/s lands at 301-324s, barely over the wall. Three stages put each call at
+    ~2,800 output tokens / ~100-110s. The input stays whole -- it is the phases 1-8 context
+    and is what makes the analysis possible.
 
     Unlike Phase 11, these stages run ON the running conversation rather than a freshly built
     one: Phase 9 is pure analysis over phases 1-8 and needs that context, and each completed
@@ -95,11 +99,10 @@ def run_phase(name: str, num: int, key: str, messages: list, proj_dir: Path, pro
         # assembled result; self-repair is deliberately NOT applied, because a repair asks for
         # a complete rewrite in one call -- exactly what cannot finish inside the timeout here.
         #
-        # Splitting is a workaround, not the better design: Phase 9's problem is its ~58k-token
-        # INPUT (it sits at the end of the chained conversation), not its ~6.5k-token output,
-        # which is a quarter of what Phase 2 emits without trouble. Each stage therefore
-        # re-pays that whole prefill, so three stages cost more total work than one call would.
-        # It exists only because the gateway cannot do the one call at all.
+        # Splitting is the correct remedy for THIS gateway, not a workaround: the limit it
+        # hits is generation time, and cutting the output per call is the only lever that
+        # moves it (config.PHASE9_STAGES has the measurements). It is skipped entirely when a
+        # faster provider is available, since one call is simpler and re-pays no prefill.
         from . import specs
         text = _run_staged_phase_9(name, messages, proj_dir, providers, plog)
         failures = specs.run_checks(num, key, name, text)
