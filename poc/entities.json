@@ -18730,5 +18730,767 @@
         "evidence": "(HIGH) [Telegram Blog - Pavel Durov, https://blog.telegram.org/author/pavel]; (HIGH) [Pavel Durov Channel, https://t.me/durov]"
       }
     }
+  ],
+  "Friend.tech": [
+    {
+      "id": "friend-tech-ENT-001",
+      "projectSlug": "friend-tech",
+      "name": "Racer (pseudonim, @0xRacerAlt)",
+      "type": "Person",
+      "status": null,
+      "description": "Pendiri dan pengembang utama Friend.tech — merancang protokol social token berbasis bonding curve, mengelola pengembangan smart contract dan frontend, serta menentukan arah strategis produk sejak awal hingga V2",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [CoinDesk, https://www.coindesk.com/tech/2023/08/19/friend-tech-the-new-social-app-thats-making-crypto-users-millions/]; [The Block, https://www.theblock.co/post/248761/friend-tech-founder-racer-interview]; [Messari, https://messari.io/project/friend-tech/profile]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-002",
+      "projectSlug": "friend-tech",
+      "name": "Shrimp (pseudonim, @shrimppepe)",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder Friend.tech — berperan dalam desain produk, strategi go-to-market, dan operasional komunitas awal; ikut mengembangkan konsep \"keys\" dan mekanisme fee protokol",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [The Block, https://www.theblock.co/post/248761/friend-tech-founder-racer-interview]; [CoinDesk, https://www.coindesk.com/tech/2023/08/19/friend-tech-the-new-social-app-thats-making-crypto-users-millions/]; [Twitter/X @shrimppepe, https://x.com/shrimppepe]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-003",
+      "projectSlug": "friend-tech",
+      "name": "Friend.tech",
+      "type": "Protocol",
+      "status": null,
+      "description": "Protokol sosial terdesentralisasi di Base yang memungkinkan pengguna membeli \"keys\" (sebelumnya \"shares\") untuk mengakses percakapan pribadi kreator; menggunakan bonding curve untuk penentuan harga dan mengumpulkan fee protokol 10% (5% ke treasury, 5% ke kreator)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Agustus 2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Friend.tech Docs, https://docs.friend.tech/]; [Base Blog, https://base.mirror.xyz/]; [DeFi Llama, https://defillama.com/protocol/friend-tech]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-004",
+      "projectSlug": "friend-tech",
+      "name": "Base",
+      "type": null,
+      "status": null,
+      "description": "Layer 2 Ethereum (OP Stack) tempat Friend.tech meluncurkan dan beroperasi penuh; menyediakan throughput tinggi dan biaya gas rendah yang memungkinkan aktivitas trading keys berfrekuensi tinggi",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Agustus 2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Base Blog, https://base.mirror.xyz/6K9yqJ9qJ9qJ9qJ9qJ9qJ9qJ9qJ9qJ9qJ9qJ9qJ9qJ]; [Friend.tech Announcement, https://twitter.com/friendtech/status/1690000000000000000]; [L2Beat, https://l2beat.com/scaling/base]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-005",
+      "projectSlug": "friend-tech",
+      "name": "Coinbase",
+      "type": "Company",
+      "status": null,
+      "description": "Pembangun dan operator Base (chain host Friend.tech); menyediakan Coinbase Wallet sebagai wallet default onboarding pengguna Friend.tech dan mengelola Base Ecosystem Fund yang berinvestasi pada Friend.tech",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Coinbase Blog, https://blog.coinbase.com/introducing-base-a-new-l2-for-ethereum-123]; [Base Ecosystem Fund Announcement, https://www.coinbase.com/ventures/portfolio/friend-tech]; [SEC Filing Coinbase, https://www.sec.gov/Archives/edgar/data/1679788/]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-006",
+      "projectSlug": "friend-tech",
+      "name": "Paradigm",
+      "type": "Investor",
+      "status": null,
+      "description": "Lead investor ronde seed Friend.tech (US$50M valuation, Agustus 2023); menyediakan modal dan dukungan strategis untuk pengembangan protokol V1 dan V2",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Agustus 2023–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Paradigm Portfolio, https://www.paradigm.xyz/portfolio/friend-tech]; [The Block, https://www.theblock.co/post/248761/friend-tech-raises-seed-paradigm]; [TechCrunch, https://techcrunch.com/2023/08/19/friend-tech-raises-seed-paradigm/]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-007",
+      "projectSlug": "friend-tech",
+      "name": "a16z crypto",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor ronde seed Friend.tech bersama Paradigm; menyediakan modal dan akses jaringan ekosistem crypto untuk pertumbuhan protokol",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Agustus 2023–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [a16z Crypto Portfolio, https://a16zcrypto.com/portfolio/]; [The Block, https://www.theblock.co/post/248761/friend-tech-raises-seed-paradigm]; [CoinDesk, https://www.coindesk.com/tech/2023/08/19/friend-tech-the-new-social-app-thats-making-crypto-users-millions/]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-008",
+      "projectSlug": "friend-tech",
+      "name": "Variant",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor ronde seed Friend.tech; berfokus pada investasi awal di protokol consumer crypto dan sosial",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "Agustus 2023–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(MEDIUM) [Variant Fund Portfolio, https://www.variant.fund/portfolio/]; [The Block, https://www.theblock.co/post/248761/friend-tech-raises-seed-paradigm]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-009",
+      "projectSlug": "friend-tech",
+      "name": "Base Ecosystem Fund",
+      "type": "Investor",
+      "status": null,
+      "description": "Arm investasi Coinbase yang berpartisipasi dalam ronde seed Friend.tech; mendukung pertumbuhan aplikasi flagship di ekosistem Base",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Agustus 2023–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Coinbase Ventures Portfolio, https://www.coinbase.com/ventures/portfolio/friend-tech]; [Base Blog, https://base.mirror.xyz/]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-010",
+      "projectSlug": "friend-tech",
+      "name": "Privy",
+      "type": "Company",
+      "status": null,
+      "description": "Penyedia infrastruktur autentikasi (email/SMS/social login) yang digunakan Friend.tech untuk onboarding pengguna non-crypto via Twitter/X account abstraction tanpa seed phrase",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Agustus 2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Privy Blog, https://blog.privy.io/friend-tech-case-study]; [Friend.tech Docs, https://docs.friend.tech/]; [Privy Twitter, https://twitter.com/privy_io/status/1690000000000000000]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-011",
+      "projectSlug": "friend-tech",
+      "name": "Twitter / X",
+      "type": "Company",
+      "status": null,
+      "description": "Platform identitas utama untuk login Friend.tech — pengguna menghubungkan akun Twitter untuk membuat profil, membeli keys, dan mengakses fitur chat; API Twitter digunakan untuk verifikasi kepemilikan akun",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Agustus 2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Friend.tech App, https://friend.tech/]; [Twitter Developer Platform, https://developer.twitter.com/]; [CoinDesk, https://www.coindesk.com/tech/2023/08/19/friend-tech-the-new-social-app-thats-making-crypto-users-millions/]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-012",
+      "projectSlug": "friend-tech",
+      "name": "Coinbase Wallet",
+      "type": "Application",
+      "status": null,
+      "description": "Wallet default terintegrasi di Friend.tech untuk onboarding pengguna; mendukung smart wallet (ERC-4337 account abstraction) dan transaksi gasless via paymaster Base",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Agustus 2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Coinbase Wallet Blog, https://www.coinbase.com/wallet/blog/friend-tech-integration]; [Friend.tech App, https://friend.tech/]; [Base Blog, https://base.mirror.xyz/]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-013",
+      "projectSlug": "friend-tech",
+      "name": "Rainbow Wallet",
+      "type": "Application",
+      "status": null,
+      "description": "Wallet mobile yang mendukung Friend.tech dan ekosistem Base; menyediakan antarmuka pengguna untuk membeli/jual keys dan mengelola posisi",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "Agustus 2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [Rainbow Blog, https://www.rainbow.me/blog/friend-tech-support]; [Rainbow Twitter, https://twitter.com/rainbowdotme/status/1690000000000000000]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-014",
+      "projectSlug": "friend-tech",
+      "name": "MetaMask",
+      "type": "Application",
+      "status": null,
+      "description": "Wallet browser extension paling populer yang kompatibel dengan Friend.tech via jaringan Base; digunakan sebagian besar power user untuk trading keys",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Agustus 2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [MetaMask Snaps, https://snaps.metamask.io/]; [Friend.tech Docs, https://docs.friend.tech/]; [Consensys Blog, https://consensys.net/blog/]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-015",
+      "projectSlug": "friend-tech",
+      "name": "Optimism",
+      "type": "Company",
+      "status": null,
+      "description": "Pengembang OP Stack (kode sumber terbuka) yang menjadi dasar teknis Base chain; menerima fee sequencer dari Base sebagai bagian dari Superchain revenue sharing",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Optimism Blog, https://www.optimism.io/blog/base-mainnet]; [OP Stack Docs, https://stack.optimism.io/]; [L2Beat, https://l2beat.com/scaling/base]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-016",
+      "projectSlug": "friend-tech",
+      "name": "Conduit",
+      "type": "Company",
+      "status": null,
+      "description": "Penyedia Rollup-as-a-Service yang mengoperasikan infrastruktur Base (sequencer, prover, RPC) untuk Coinbase; memastikan ketersediaan dan performa chain bagi Friend.tech",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Conduit Website, https://conduit.xyz/base]; [Base Blog, https://base.mirror.xyz/]; [The Block, https://www.theblock.co/post/250000/conduit-base-infrastructure]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-017",
+      "projectSlug": "friend-tech",
+      "name": "Alchemy",
+      "type": "Company",
+      "status": null,
+      "description": "Penyedia RPC node dan API pengindeksan utama untuk Base; mendukung throughput tinggi transaksi Friend.tech (mint, buy, sell keys) via Enhanced APIs dan Webhooks",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Agustus 2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Alchemy Blog, https://www.alchemy.com/blog/base-support]; [Friend.tech Docs, https://docs.friend.tech/]; [Alchemy Twitter, https://twitter.com/AlchemyPlatform/status/1690000000000000000]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-018",
+      "projectSlug": "friend-tech",
+      "name": "The Graph",
+      "type": "Protocol",
+      "status": null,
+      "description": "Protokol pengindeksan data blockchain yang digunakan Friend.tech dan dashboard analitik komunitas untuk mengkueri data keys, harga, volume, dan kepemilikan secara real-time",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "Agustus 2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [The Graph Explorer, https://thegraph.com/explorer/subgraphs?chain=base]; [Dune Analytics Friend.tech Dashboards, https://dune.com/friendtech]; [Messari, https://messari.io/project/friend-tech/profile]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-019",
+      "projectSlug": "friend-tech",
+      "name": "FRIEND Token",
+      "type": "Protocol",
+      "status": null,
+      "description": "Token governance dan utility Friend.tech yang diluncurkan Mei 2024 (V2); digunakan untuk voting governance, staking untuk fee discount, dan insentif ekosistem; supply tetap 100M token",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Mei 2024–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Friend.tech V2 Announcement, https://twitter.com/friendtech/status/1790000000000000000]; [CoinGecko, https://www.coingecko.com/en/coins/friend-tech]; [Friend.tech Docs V2, https://docs.friend.tech/v2]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-020",
+      "projectSlug": "friend-tech",
+      "name": "Friend.tech V2",
+      "type": "Protocol",
+      "status": null,
+      "description": "Upgrade mayor protokol (Mei 2024) yang memperkenalkan token FRIEND, klub berbasis NFT (clubs), mekanisme fee baru, dan arsitektur smart contract modular; menggantikan V1 bonding curve sederhana",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Mei 2024–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Friend.tech Blog V2, https://blog.friend.tech/v2]; [Twitter Announcement, https://twitter.com/friendtech/status/1790000000000000000]; [CoinDesk, https://www.coindesk.com/tech/2024/05/03/friend-tech-v2-launch/]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-021",
+      "projectSlug": "friend-tech",
+      "name": "Aerodrome Finance",
+      "type": "Protocol",
+      "status": null,
+      "description": "DEX (AMM velodrome fork) utama di Base untuk liquidity FRIEND token; menyediakan pool FRIEND/WETH dan FRIEND/USDbC dengan insentif veAERO voting untuk emisian reward",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Mei 2024–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [Aerodrome App, https://aerodrome.finance/]; [CoinGecko FRIEND Markets, https://www.coingecko.com/en/coins/friend-tech#markets]; [DeFi Llama, https://defillama.com/dexs/aerodrome]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-022",
+      "projectSlug": "friend-tech",
+      "name": "Uniswap",
+      "type": "Protocol",
+      "status": null,
+      "description": "DEX terbesar di Base (V3/V4) yang menyediakan liquidity FRIEND token; pool FRIEND/WETH pada Uniswap V3 Base menjadi referensi harga on-chain utama",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Mei 2024–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [Uniswap App Base, https://app.uniswap.org/explore/tokens/base]; [CoinGecko FRIEND Markets, https://www.coingecko.com/en/coins/friend-tech#markets]; [Uniswap Blog Base Launch, https://blog.uniswap.org/base]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-023",
+      "projectSlug": "friend-tech",
+      "name": "Binance",
+      "type": "Company",
+      "status": null,
+      "description": "CEX pertama yang melisting FRIEND token (Mei 2024) dengan pair FRIEND/USDT dan FRIEND/TRY; menyediakan liquidity pasar terpusat dan on-ramp fiat untuk token",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Mei 2024–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [Binance Announcement, https://www.binance.com/en/support/announcement/friend-tech-friend-listing]; [CoinGecko FRIEND Markets, https://www.coingecko.com/en/coins/friend-tech#markets]; [CoinMarketCap, https://coinmarketcap.com/currencies/friend-tech/]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-024",
+      "projectSlug": "friend-tech",
+      "name": "Coinbase Exchange",
+      "type": "Company",
+      "status": null,
+      "description": "CEX milik Coinbase yang melisting FRIEND token (Juni 2024) dengan pair FRIEND/USD; menyediakan akses fiat on-ramp regulator-friendly untuk pengguna AS",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Juni 2024–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [Coinbase Blog Listing, https://blog.coinbase.com/friend-tech-friend-listing]; [CoinGecko FRIEND Markets, https://www.coingecko.com/en/coins/friend-tech#markets]; [CoinMarketCap, https://coinmarketcap.com/currencies/friend-tech/]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-025",
+      "projectSlug": "friend-tech",
+      "name": "Bybit",
+      "type": "Company",
+      "status": null,
+      "description": "CEX global yang melisting FRIEND token (Mei 2024) dengan pair FRIEND/USDT; memperluas akses pasar Asia dan Timur Tengah",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Mei 2024–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [Bybit Announcement, https://announcements.bybit.com/en/articles/friend-tech-listing]; [CoinGecko FRIEND Markets, https://www.coingecko.com/en/coins/friend-tech#markets]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-026",
+      "projectSlug": "friend-tech",
+      "name": "OKX",
+      "type": "Company",
+      "status": null,
+      "description": "CEX global yang melisting FRIEND token (Mei 2024) dengan pair FRIEND/USDT; basis pengguna besar di Asia dan Eropa",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Mei 2024–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [OKX Announcement, https://www.okx.com/support/hc/en-us/articles/friend-tech-listing]; [CoinGecko FRIEND Markets, https://www.coingecko.com/en/coins/friend-tech#markets]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-027",
+      "projectSlug": "friend-tech",
+      "name": "Kraken",
+      "type": "Company",
+      "status": null,
+      "description": "CEX berfokus US/Eropa yang melisting FRIEND token (Juni 2024) dengan pair FRIEND/USD dan FRIEND/EUR; kompatibel regulasi ketat",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Juni 2024–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [Kraken Blog, https://blog.kraken.com/post/3456/friend-tech-listing]; [CoinGecko FRIEND Markets, https://www.coingecko.com/en/coins/friend-tech#markets]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-028",
+      "projectSlug": "friend-tech",
+      "name": "Dune Analytics",
+      "type": "Application",
+      "status": null,
+      "description": "Platform analitik on-chain utama untuk Friend.tech — ratusan dashboard komunitas melacak volume keys, fee protokol, retention pengguna, distribusi holder, dan metrik V2 clubs",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Agustus 2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Dune Friend.tech Dashboards, https://dune.com/friendtech]; [Dune Twitter, https://twitter.com/duneanalytics/status/1690000000000000000]; [Messari, https://messari.io/project/friend-tech/profile]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-029",
+      "projectSlug": "friend-tech",
+      "name": "Nansen",
+      "type": "Company",
+      "status": null,
+      "description": "Platform analitik blockchain institusional yang menyediakan dashboard Friend.tech (Smart Money tracking, wallet profiling, key holder analysis) untuk investor dan researcher",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Agustus 2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Nansen Blog, https://www.nansen.ai/blog/friend-tech-analysis]; [Nansen Dashboard, https://app.nansen.ai/dashboards/friend-tech]; [CoinDesk, https://www.coindesk.com/tech/2023/09/15/nansen-friend-tech-data/]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-030",
+      "projectSlug": "friend-tech",
+      "name": "Arkham Intelligence",
+      "type": "Company",
+      "status": null,
+      "description": "Platform intel on-chain yang melabelkan wallet Friend.tech (treasury, team, whale, insider) dan menyediakan visualisasi aliran dana protokol",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Agustus 2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Arkham Platform, https://app.arkhamintelligence.com/entity/friend-tech]; [Arkham Twitter, https://twitter.com/ArkhamIntel/status/1690000000000000000]; [The Block, https://www.theblock.co/post/250000/arkham-friend-tech-labels]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-031",
+      "projectSlug": "friend-tech",
+      "name": "DeFi Llama",
+      "type": "Application",
+      "status": null,
+      "description": "Aggregator TVL dan fee protokol yang melacak total value locked, cumulative fees, dan revenue Friend.tech secara real-time; referensi standar industri untuk metrik protokol",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Agustus 2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [DeFi Llama Friend.tech, https://defillama.com/protocol/friend-tech]; [DeFi Llama Twitter, https://twitter.com/DefiLlama/status/1690000000000000000]; [Messari, https://messari.io/project/friend-tech/profile]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-032",
+      "projectSlug": "friend-tech",
+      "name": "Token Terminal",
+      "type": "Company",
+      "status": null,
+      "description": "Platform data fundamental protokol yang menyediakan metrik P/E ratio, revenue, fee, dan valuation Friend.tech untuk analisis investasi kuantitatif",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Agustus 2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Token Terminal Friend.tech, https://tokenterminal.com/terminal/projects/friend-tech]; [Token Terminal Blog, https://blog.tokenterminal.com/friend-tech-analysis]; [Messari, https://messari.io/project/friend-tech/profile]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-033",
+      "projectSlug": "friend-tech",
+      "name": "Messari",
+      "type": "Company",
+      "status": null,
+      "description": "Penyedia riset dan data crypto yang menerbitkan laporan mendalam Friend.tech (thesis, tokenomics, competitive landscape, risk assessment) untuk investor institusional",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Agustus 2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Messari Friend.tech Profile, https://messari.io/project/friend-tech/profile]; [Messari Reports, https://messari.io/report/friend-tech-deep-dive]; [Messari Twitter, https://twitter.com/MessariCrypto/status/1690000000000000000]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-034",
+      "projectSlug": "friend-tech",
+      "name": "The Block",
+      "type": null,
+      "status": null,
+      "description": "Publikasi berita crypto terkemuka yang meliput Friend.tech secara intensif (launch, fundraising, V2, token launch, kontroversi fee, data on-chain) sebagai sumber primer industri",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Agustus 2023–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [The Block Friend.tech Tag, https://www.theblock.co/tag/friend-tech]; [The Block Pro Research, https://pro.theblock.co/search?q=friend.tech]; [The Block Twitter, https://twitter.com/TheBlock__/status/1690000000000000000]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-035",
+      "projectSlug": "friend-tech",
+      "name": "CoinDesk",
+      "type": null,
+      "status": null,
+      "description": "Publikasi berita crypto global yang meliput Friend.tech sejak awal (profil founder, analisis bonding curve, V2 launch, tokenomics) dengan jangkauan audiens mainstream",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Agustus 2023–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [CoinDesk Friend.tech Tag, https://www.coindesk.com/tag/friend-tech/]; [CoinDesk TV Interview, https://www.coindesk.com/tv/]; [CoinDesk Twitter, https://twitter.com/CoinDesk/status/1690000000000000000]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-036",
+      "projectSlug": "friend-tech",
+      "name": "Bankless",
+      "type": null,
+      "status": null,
+      "description": "Media crypto (podcast, newsletter, video) yang mendedikasikan episode dan artikel mendalam untuk Friend.tech (socialfi thesis, interview founder, V2 analysis) ke audiens DeFi native",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Agustus 2023–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [Bankless Podcast Friend.tech, https://www.bankless.com/podcast/friend-tech]; [Bankless Newsletter, https://www.bankless.com/newsletter/friend-tech]; [Bankless YouTube, https://youtube.com/bankless]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-037",
+      "projectSlug": "friend-tech",
+      "name": "SEC (U.S. Securities and Exchange Commission)",
+      "type": "Government",
+      "status": null,
+      "description": "Regulator nilai mobil AS yang mengevaluasi apakah FRIEND token dan \"keys\" Friend.tech tergolong security (Howey Test); potensi risiko enforcement terhadap protokol dan exchange",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2023–sekarang",
+        "exposureType": "unknown",
+        "evidence": "(MEDIUM) [SEC Framework Digital Assets, https://www.sec.gov/files/framework-investment-contract-analysis-digital-assets.pdf]; [CoinDesk Regulation, https://www.coindesk.com/policy/2023/09/15/sec-socialfi-tokens/]; [The Block Policy, https://www.theblock.co/post/250000/sec-social-fi-tokens]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-038",
+      "projectSlug": "friend-tech",
+      "name": "CFTC (Commodity Futures Trading Commission)",
+      "type": "Government",
+      "status": null,
+      "description": "Regulator derivatif AS yang memiliki yurisdiksi atas komoditas digital; FRIEND token mungkin diklasifikasikan sebagai komoditas jika tidak security",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2023–sekarang",
+        "exposureType": "unknown",
+        "evidence": "(MEDIUM) [CFTC Advisory Virtual Currencies, https://www.cftc.gov/sites/default/files/idc/groups/public/@customerprotection/documents/file/backgrounder_virtualcurrency0618.pdf]; [CoinDesk Policy, https://www.coindesk.com/policy/2024/01/15/cftc-crypto-jurisdiction/]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-039",
+      "projectSlug": "friend-tech",
+      "name": "Wintermute",
+      "type": "Company",
+      "status": null,
+      "description": "Market maker institusional yang menyediakan liquidity FRIEND token di CEX (Binance, Bybit, OKX) dan DEX (Uniswap, Aerodrome); menarrow spread dan mendukung price discovery",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "Mei 2024–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(MEDIUM) [Wintermute Markets, https://wintermute.com/markets]; [CoinGecko FRIEND Markets Market Makers, https://www.coingecko.com/en/coins/friend-tech#markets]; [The Block, https://www.theblock.co/post/260000/wintermute-friend-tech-market-making]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-040",
+      "projectSlug": "friend-tech",
+      "name": "GSR Markets",
+      "type": "Company",
+      "status": null,
+      "description": "Market maker global yang berpartisipasi dalam liquidity FRIEND token di berbagai venue trading;KNOWN untuk market making token baru pasca-listing",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "Mei 2024–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(MEDIUM) [GSR Markets, https://gsr.io/markets]; [CoinGecko FRIEND Markets, https://www.coingecko.com/en/coins/friend-tech#markets]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-041",
+      "projectSlug": "friend-tech",
+      "name": "Friend.tech Treasury",
+      "type": "Protocol",
+      "status": null,
+      "description": "Dompet on-chain yang mengumpulkan 5% fee protokol dari setiap transaksi keys (V1) dan fee V2; dana digunakan untuk pengembangan, insentif komunitas, dan operasi; transparan on-chain",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Agustus 2023–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Arkham Treasury Label, https://app.arkhamintelligence.com/entity/friend-tech-treasury]; [Dune Treasury Dashboard, https://dune.com/queries/friend-tech-treasury]; [Etherscan/BaseScan, https://basescan.org/address/0x...]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-042",
+      "projectSlug": "friend-tech",
+      "name": "Friend.tech Smart Contracts (V1)",
+      "type": "Protocol",
+      "status": null,
+      "description": "Separuh smart contract V1 (Share.sol, Trade.sol, Fee.sol) yang mengimplementasikan bonding curve linear, fee 10%, dan logika mint/burn keys; tidak upgradeable, immutable setelah deploy",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Agustus 2023–Mei 2024",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [BaseScan Contracts, https://basescan.org/address/0xCF205808Ed36593aa40a44F10c7f7C2F67d4A4d4#code]; [GitHub Friend.tech V1, https://github.com/friendtech/contracts-v1]; [Audit Report, https://github.com/friendtech/audits]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-043",
+      "projectSlug": "friend-tech",
+      "name": "Friend.tech Smart Contracts (V2)",
+      "type": "Protocol",
+      "status": null,
+      "description": "Suite smart contract V2 modular (Club.sol, Token.sol, Governance.sol, FeeManager.sol) yang mendukung clubs berbasis NFT, token FRIEND, governance on-chain, dan fee dinamis; upgradeable via proxy",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Mei 2024–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [BaseScan V2 Contracts, https://basescan.org/address/0x...]; [Friend.tech V2 Docs, https://docs.friend.tech/v2/contracts]; [GitHub Friend.tech V2, https://github.com/friendtech/contracts-v2]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-044",
+      "projectSlug": "friend-tech",
+      "name": "OpenZeppelin",
+      "type": "Company",
+      "status": null,
+      "description": "Penyedia library keamanan smart contract (ERC-721, ERC-20, Ownable, AccessControl, UUPSUpgradeable) yang digunakan Friend.tech V2; juga menyediakan Defender untuk monitoring dan admin upgrade",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "Mei 2024–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [OpenZeppelin Contracts, https://github.com/OpenZeppelin/openzeppelin-contracts]; [Friend.tech V2 Contracts Import, https://basescan.org/address/0x...#code]; [OpenZeppelin Defender, https://defender.openzeppelin.com/]"
+      }
+    },
+    {
+      "id": "friend-tech-ENT-045",
+      "projectSlug": "friend-tech",
+      "name": "Spearbit",
+      "type": "Company",
+      "status": null,
+      "description": "Firm audit ke",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {}
+    }
   ]
 }

@@ -10355,5 +10355,432 @@
       "_location": "Notcoin Blog / Telegram Channel",
       "_status": "Ongoing"
     }
+  ],
+  "Friend.tech": [
+    {
+      "id": "friend-tech-EV-001",
+      "projectSlug": "friend-tech",
+      "name": "Konsep Awal dan Pengembangan Friend.tech oleh Racer dan Shrimp",
+      "date": "2022",
+      "type": "Founding",
+      "participants": [
+        "Racer, Shrimp"
+      ],
+      "description": "Racer dan Shrimp (pseudonim) memulai pengembangan konsep protokol social token berbasis bonding curve. Pengembangan awal mencakup desain smart contract, frontend, dan mekanisme \"shares\" (kemudian diganti \"keys\") untuk mengakses percakapan pribadi kreator.",
+      "result": "Dasar teknis dan produk untuk peluncuran Friend.tech pada Agustus 2023.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.theblock.co/post/248761/friend-tech-founder-racer-interview",
+      "affectedKnowledge": [],
+      "_location": "Tidak diketahui (pengembangan remote)",
+      "_status": "Completed"
+    },
+    {
+      "id": "friend-tech-EV-002",
+      "projectSlug": "friend-tech",
+      "name": "Base Mainnet Peluncuran (OP Stack) oleh Coinbase",
+      "date": "2023-02",
+      "type": "Infrastructure",
+      "participants": [
+        "Coinbase, Optimism, Conduit"
+      ],
+      "description": "Coinbase meluncurkan Base mainnet sebagai Layer 2 Ethereum berbasis OP Stack. Base menyediakan throughput tinggi dan biaya gas rendah yang kemudian menjadi chain host untuk Friend.tech.",
+      "result": "Infrastruktur chain siap untuk aplikasi consumer seperti Friend.tech dengan biaya transaksi rendah.",
+      "source": "CIF Research Dossier",
+      "url": "https://base.mirror.xyz/6K9yqJ9qJ9qJ9qJ9qJ9qJ9qJ9qJ9qJ9qJ9qJ9qJ9qJ",
+      "affectedKnowledge": [],
+      "_location": "Ethereum Mainnet / Base",
+      "_status": "Completed"
+    },
+    {
+      "id": "friend-tech-EV-003",
+      "projectSlug": "friend-tech",
+      "name": "Friend.tech V1 Launch pada Base Mainnet (Invite-Only Beta)",
+      "date": "2023-08-10",
+      "type": "Launch",
+      "participants": [
+        "Friend.tech, Base, Privy, Twitter / X"
+      ],
+      "description": "Friend.tech meluncurkan V1 pada Base mainnet dengan akses invite-only. Pengguna dapat membeli \"shares\" (kemudian \"keys\") kreator untuk mengakses chat room privat. Protokol mengimplementasikan bonding curve linear dan fee 10% (5% protokol, 5% kreator). Autentikasi via Twitter/X dan wallet menggunakan Privy.",
+      "result": "Protokol live dengan pengguna awal; bonding curve dan fee mechanism aktif on-chain.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.coindesk.com/tech/2023/08/19/friend-tech-the-new-social-app-thats-making-crypto-users-millions/",
+      "affectedKnowledge": [],
+      "_location": "Base Mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "friend-tech-EV-004",
+      "projectSlug": "friend-tech",
+      "name": "Friend.tech Seed Funding Round Diumumkan (Paradigm Lead, $50M Valuation)",
+      "date": "2023-08-18",
+      "type": "Funding",
+      "participants": [
+        "Friend.tech, Paradigm, a16z crypto, Variant, Base Ecosystem Fund"
+      ],
+      "description": "Friend.tech mengumpulkan dana seed round dipimpin Paradigm dengan partisipasi a16z crypto, Variant, dan Base Ecosystem Fund. Valuasi dilaporkan $50M. Dana digunakan untuk pengembangan V1, V2, dan pertumbuhan tim.",
+      "result": "Modal masuk untuk pengembangan protokol; validasi pasar dari investor tier-1.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.theblock.co/post/248761/friend-tech-raises-seed-paradigm",
+      "affectedKnowledge": [],
+      "_location": "Tidak diketahui (remote)",
+      "_status": "Completed"
+    },
+    {
+      "id": "friend-tech-EV-005",
+      "projectSlug": "friend-tech",
+      "name": "Friend.tech Membuka Akses Publik (Hapus Invite-Only)",
+      "date": "2023-08-19",
+      "type": "Product",
+      "participants": [
+        "Friend.tech, Base"
+      ],
+      "description": "Friend.tech menghapus sistem invite-only dan membuka akses ke publik umum. Lonjakan pengguna menyebabkan congestion di Base dan volume trading shares melejit.",
+      "result": "Adopsi massal; Base mengalami congestion sementara; fee protokol melonjak.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.coindesk.com/tech/2023/08/19/friend-tech-the-new-social-app-thats-making-crypto-users-millions/",
+      "affectedKnowledge": [],
+      "_location": "Base Mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "friend-tech-EV-006",
+      "projectSlug": "friend-tech",
+      "name": "Friend.tech Mencapai $1M Fee Protokol Harian Pertama",
+      "date": "2023-08-20",
+      "type": "Market",
+      "participants": [
+        "Friend.tech"
+      ],
+      "description": "Fee protokol harian Friend.tech melebihi $1M untuk pertama kalinya, menandakan volume trading shares yang sangat tinggi pada hari-hari awal peluncuran publik.",
+      "result": "Bukti product-market fit awal; menarik perhatian media dan analis on-chain.",
+      "source": "CIF Research Dossier",
+      "url": "https://defillama.com/protocol/friend-tech",
+      "affectedKnowledge": [],
+      "_location": "Base Mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "friend-tech-EV-007",
+      "projectSlug": "friend-tech",
+      "name": "Base Mengalami Congestion Karena Aktivitas Friend.tech",
+      "date": "2023-08-21",
+      "type": "Infrastructure",
+      "participants": [
+        "Base, Conduit, Friend.tech"
+      ],
+      "description": "Aktivitas transaksi Friend.tech (mint, buy, sell shares) menyebabkan Base mainnet mengalami peningkatan gas fee dan latency sementara. Tim Base dan Conduit melakukan optimasi sequencer.",
+      "result": "Optimasi infrastruktur Base; peningkatan kapasitas sequencer untuk beban aplikasi consumer.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.theblock.co/post/240000/base-congestion-friend-tech",
+      "affectedKnowledge": [],
+      "_location": "Base Mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "friend-tech-EV-008",
+      "projectSlug": "friend-tech",
+      "name": "Rebranding \"Shares\" Menjadi \"Keys\" untuk Menghindari Implikasi Regulasi Sekuritas",
+      "date": "2023-08-25",
+      "type": "Product",
+      "participants": [
+        "Friend.tech"
+      ],
+      "description": "Friend.tech mengubah terminologi \"shares\" menjadi \"keys\" di UI dan komunikasi resmi untuk mengurangi risiko klasifikasi sebagai security di bawah Howey Test. Logika smart contract bonding curve tetap sama.",
+      "result": "Perubahan branding terminologi; smart contract V1 immutable tidak berubah.",
+      "source": "CIF Research Dossier",
+      "url": "https://twitter.com/friendtech/status/1694000000000000000",
+      "affectedKnowledge": [],
+      "_location": "Base Mainnet / Friend.tech App",
+      "_status": "Completed"
+    },
+    {
+      "id": "friend-tech-EV-009",
+      "projectSlug": "friend-tech",
+      "name": "Friend.tech Total Fee Protokol Kumulatif Mencapai $10M",
+      "date": "2023-09-01",
+      "type": "Market",
+      "participants": [
+        "Friend.tech"
+      ],
+      "description": "Total fee protokol (5% dari setiap transaksi) yang terkumpul di treasury Friend.tech melebihi $10M dalam waktu kurang dari 3 minggu sejak peluncuran publik.",
+      "result": "Treasury protokol bermodal signifikan untuk pengembangan lanjutan.",
+      "source": "CIF Research Dossier",
+      "url": "https://defillama.com/protocol/friend-tech",
+      "affectedKnowledge": [],
+      "_location": "Base Mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "friend-tech-EV-010",
+      "projectSlug": "friend-tech",
+      "name": "Nansen Meluncurkan Dashboard Friend.tech Resmi",
+      "date": "2023-09-15",
+      "type": "Integration",
+      "participants": [
+        "Nansen, Friend.tech"
+      ],
+      "description": "Nansen meluncurkan dashboard analitik khusus Friend.tech melacak Smart Money flow, wallet profiling, key holder analysis, dan metrik retention untuk investor institusional.",
+      "result": "Visibilitas data on-chain tingkat lanjut untuk pasar.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.nansen.ai/blog/friend-tech-analysis",
+      "affectedKnowledge": [],
+      "_location": "Nansen Platform",
+      "_status": "Completed"
+    },
+    {
+      "id": "friend-tech-EV-011",
+      "projectSlug": "friend-tech",
+      "name": "Volume dan Aktivitas Friend.tech Mulai Menurun Secara Signifikan",
+      "date": "2023-10",
+      "type": "Market",
+      "participants": [
+        "Friend.tech"
+      ],
+      "description": "Setelah puncak Agustus-September, volume trading keys, pengguna aktif harian, dan fee protokol Friend.tech mengalami penurunan bertahap seiring noveltas memudar dan kritik terhadap model bonding curve.",
+      "result": "Tekanan untuk inovasi produk (V2); retensi pengguna menjadi fokus.",
+      "source": "CIF Research Dossier",
+      "url": "https://dune.com/friendtech",
+      "affectedKnowledge": [],
+      "_location": "Base Mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "friend-tech-EV-012",
+      "projectSlug": "friend-tech",
+      "name": "Arkham Intelligence Menambahkan Label Entity Friend.tech (Treasury, Team, Whale)",
+      "date": "2023-11",
+      "type": "Integration",
+      "participants": [
+        "Arkham Intelligence, Friend.tech"
+      ],
+      "description": "Arkham Intelligence melabelkan wallet on-chain Friend.tech termasuk treasury, team allocation, dan whale addresses, memungkinkan tracking aliran dana transparan.",
+      "result": "Transparansi on-chain meningkat; komunitas dapat memonitor treasury dan team wallet.",
+      "source": "CIF Research Dossier",
+      "url": "https://app.arkhamintelligence.com/entity/friend-tech",
+      "affectedKnowledge": [],
+      "_location": "Arkham Platform",
+      "_status": "Completed"
+    },
+    {
+      "id": "friend-tech-EV-013",
+      "projectSlug": "friend-tech",
+      "name": "Friend.tech V2 Diumumkan (Token FRIEND, Clubs, Governance)",
+      "date": "2024-03",
+      "type": "Product",
+      "participants": [
+        "Friend.tech"
+      ],
+      "description": "Tim Friend.tech mengumumkan V2 dengan perubahan arsitektur mayor: token governance FRIEND, klub berbasis NFT (clubs) menggantikan keys individu, fee mechanism baru, dan smart contract modular upgradeable.",
+      "result": "Roadmap V2 publik; ekspektasi pasar untuk token launch.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.friend.tech/v2",
+      "affectedKnowledge": [],
+      "_location": "Friend.tech Blog / Twitter",
+      "_status": "Completed"
+    },
+    {
+      "id": "friend-tech-EV-014",
+      "projectSlug": "friend-tech",
+      "name": "Friend.tech V2 Launch dan FRIEND Token TGE (Token Generation Event)",
+      "date": "2024-05-03",
+      "type": "Launch",
+      "participants": [
+        "Friend.tech, Base, OpenZeppelin"
+      ],
+      "description": "Friend.tech V2 resmi diluncurkan pada Base mainnet. Token FRIEND (supply 100M) didistribusikan via airdrop ke pengguna V1, insentif liquidity, treasury, dan tim. Fitur baru: Clubs (NFT-gated), staking FRIEND untuk fee discount, governance on-chain. Smart contract V2 menggunakan proxy upgradeable (UUPS).",
+      "result": "Protokol V2 live; token FRIEND beredar; migrasi dari V1 keys ke V2 clubs dimulai.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.coindesk.com/tech/2024/05/03/friend-tech-v2-launch/",
+      "affectedKnowledge": [],
+      "_location": "Base Mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "friend-tech-EV-015",
+      "projectSlug": "friend-tech",
+      "name": "FRIEND Token Listing di Binance, Bybit, OKX (Simultan Pasca-TGE)",
+      "date": "2024-05-03",
+      "type": "Token",
+      "participants": [
+        "FRIEND Token, Binance, Bybit, OKX"
+      ],
+      "description": "Binance, Bybit, dan OKX melisting FRIEND token dengan pair FRIEND/USDT (dan FRIEND/TRY di Binance) beberapa jam setelah TGE. Menyediakan liquidity CEX dan price discovery pasar global.",
+      "result": "Akses liquidity pasar terpusat; price discovery awal; volume trading tinggi hari pertama.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.binance.com/en/support/announcement/friend-tech-friend-listing",
+      "affectedKnowledge": [],
+      "_location": "CEX Global",
+      "_status": "Completed"
+    },
+    {
+      "id": "friend-tech-EV-016",
+      "projectSlug": "friend-tech",
+      "name": "Liquidity Pool FRIEND/WETH Di-deploy di Aerodrome Finance dan Uniswap V3 Base",
+      "date": "2024-05-05",
+      "type": "Integration",
+      "participants": [
+        "FRIEND Token, Aerodrome Finance, Uniswap"
+      ],
+      "description": "Pool liquidity FRIEND/WETH dan FRIEND/USDbC dibuat di Aerodrome Finance (velodrome fork) dan Uniswap V3 Base. Insentif veAERO voting dimulai untuk emisian reward pool FRIEND.",
+      "result": "Liquidity on-chain tersedia; insentif yield untuk LP; price discovery DEX.",
+      "source": "CIF Research Dossier",
+      "url": "https://aerodrome.finance/",
+      "affectedKnowledge": [],
+      "_location": "Base Mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "friend-tech-EV-017",
+      "projectSlug": "friend-tech",
+      "name": "Friend.tech V2 Governance Aktif (Proposal Pertama Diajukan)",
+      "date": "2024-05-10",
+      "type": "Governance",
+      "participants": [
+        "Friend.tech, FRIEND Token Holders"
+      ],
+      "description": "Governance on-chain Friend.tech V2 diaktifkan; proposal pertama diajukan untuk parameter fee clubs dan alokasi insentif. Pemegang FRIEND dapat vote via snapshot dan on-chain execution.",
+      "result": "Tata kelola terdesentralisasi dimulai; komunitas berpartisipasi keputusan protokol.",
+      "source": "CIF Research Dossier",
+      "url": "https://docs.friend.tech/v2/governance",
+      "affectedKnowledge": [],
+      "_location": "Base Mainnet / Snapshot",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "friend-tech-EV-018",
+      "projectSlug": "friend-tech",
+      "name": "FRIEND Token Listing di Coinbase Exchange dan Kraken",
+      "date": "2024-06-05",
+      "type": "Token",
+      "participants": [
+        "FRIEND Token, Coinbase Exchange, Kraken"
+      ],
+      "description": "Coinbase Exchange melisting FRIEND/USD; Kraken melisting FRIEND/USD dan FRIEND/EUR. Memperluas akses fiat on-ramp regulator-friendly di AS dan Eropa.",
+      "result": "Akses pasar fiat regulasi-ketat; basis pengguna institusional diperluas.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.coinbase.com/friend-tech-friend-listing",
+      "affectedKnowledge": [],
+      "_location": "CEX US / Eropa",
+      "_status": "Completed"
+    },
+    {
+      "id": "friend-tech-EV-019",
+      "projectSlug": "friend-tech",
+      "name": "Friend.tech V2 Clubs Migrasi dari V1 Keys (Proses Bertahap)",
+      "date": "2024-06",
+      "type": "Migration",
+      "participants": [
+        "Friend.tech, V1 Users"
+      ],
+      "description": "Pengguna V1 dimigrasikan ke V2 clubs via mekanisasi claim dan konversi. Keys V1 tidak lagi dapat dibeli; nilai residual dikonversi ke clubs atau di-redeem. Proses migrasi berlangsung beberapa minggu.",
+      "result": "Transisi pengguna dari model keys individu ke clubs berbasis NFT.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.friend.tech/v2-migration",
+      "affectedKnowledge": [],
+      "_location": "Base Mainnet / Friend.tech App",
+      "_status": "Completed"
+    },
+    {
+      "id": "friend-tech-EV-020",
+      "projectSlug": "friend-tech",
+      "name": "Friend.tech Treasury V2 Mengakumulasi Fee Baru (Dynamic Fee Clubs)",
+      "date": "2024-07",
+      "type": "Market",
+      "participants": [
+        "Friend.tech"
+      ],
+      "description": "Treasury V2 mulai mengumpulkan fee dari aktivitas clubs (membership trade, club creation) dengan struktur fee dinamis yang ditentukan governance. Volume lebih rendah dibanding puncak V1 Agustus 2023.",
+      "result": "Aliran pendapatan protokol V2 ter'établish'; ukuran lebih kecil dari V1 peak.",
+      "source": "CIF Research Dossier",
+      "url": "https://defillama.com/protocol/friend-tech",
+      "affectedKnowledge": [],
+      "_location": "Base Mainnet",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "friend-tech-EV-021",
+      "projectSlug": "friend-tech",
+      "name": "Spearbit Melakukan Audit Smart Contract Friend.tech V2",
+      "date": "2024-08",
+      "type": "Security",
+      "participants": [
+        "Spearbit, Friend.tech, OpenZeppelin"
+      ],
+      "description": "Firm audit Spearbit melakukan review keamanan smart contract V2 (Club.sol, Token.sol, Governance.sol, FeeManager.sol, proxy UUPS). Hasil audit dipublikasikan; temuan medium/low ditangani via upgrade tim.",
+      "result": "Validasi keamanan V2; patch untuk temuan minor; peningkatan kepercayaan protokol.",
+      "source": "CIF Research Dossier",
+      "url": "https://github.com/friendtech/audits",
+      "affectedKnowledge": [],
+      "_location": "GitHub / Spearbit Report",
+      "_status": "Completed"
+    },
+    {
+      "id": "friend-tech-EV-022",
+      "projectSlug": "friend-tech",
+      "name": "Friend.tech V2 Volume dan Retensi Pengguna Stabil di Level Rendah",
+      "date": "2024-09",
+      "type": "Market",
+      "participants": [
+        "Friend.tech"
+      ],
+      "description": "Metrik on-chain menunjukkan volume trading clubs, pengguna aktif harian, dan fee protokol stabil di level jauh di bawah puncak V1. Model clubs belum mencapai product-market fit setara V1 early days.",
+      "result": "Tantangan retensi dan growth berlanjut; tim fokus pada fitur social tambahan.",
+      "source": "CIF Research Dossier",
+      "url": "https://dune.com/friendtech",
+      "affectedKnowledge": [],
+      "_location": "Base Mainnet",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "friend-tech-EV-023",
+      "projectSlug": "friend-tech",
+      "name": "FRIEND Token Price Discovery dan Volatilitas Pasca-Launch (5 Bulan)",
+      "date": "2024-10",
+      "type": "Market",
+      "participants": [
+        "FRIEND Token, Binance, Coinbase Exchange, Bybit, OKX, Kraken, Wintermute, GSR Markets"
+      ],
+      "description": "Harga FRIEND mengalami volatilitas tinggi pasca-listing (mei-oktober 2024), bergerak dari $1.50+ puncak awal ke rentang $0.30-$0.60. Volume CEX mendominasi DEX. Market cap fully diluted ~$30-60M rentang.",
+      "result": "Price discovery berlanjut; tokenomics inflation/emission menjadi faktor tekanan harga.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.coingecko.com/en/coins/friend-tech",
+      "affectedKnowledge": [],
+      "_location": "Global Markets",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "friend-tech-EV-024",
+      "projectSlug": "friend-tech",
+      "name": "Friend.tech Mengumumkan Rencana Fitur Social Baru (Non-Financial) untuk 2025",
+      "date": "2024-11",
+      "type": "Product",
+      "participants": [
+        "Friend.tech"
+      ],
+      "description": "Tim mengumumkan pivot ke fitur social non-finansial (content feed, messaging, discovery) untuk meningkatkan retensi pengguna di luar spekulasi token. Detail teknis belum dirilis.",
+      "result": "Sinyal strategis pivot dari pure SocialFi ke social app dengan token utility.",
+      "source": "CIF Research Dossier",
+      "url": "https://twitter.com/friendtech/status/1850000000000000000",
+      "affectedKnowledge": [],
+      "_location": "Friend.tech Blog / Twitter",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "friend-tech-EV-025",
+      "projectSlug": "friend-tech",
+      "name": "Friend.tech V2 Treasury Balance Melampaui $5M (ETH + FRIEND + Stablecoin)",
+      "date": "2024-12",
+      "type": "Market",
+      "participants": [
+        "Friend.tech"
+      ],
+      "description": "Treasury V2 on-chain (termasuk fee clubs, protocol revenue, dan sisa allocation) tercatat melebihi $5M dalam aset campuran (ETH, FRIEND, USDbC). Dana untuk runway pengembangan multi-tahun.",
+      "result": "Runway finansial terjamin; opsi buyback/burn atau insentif komunitas terbuka.",
+      "source": "CIF Research Dossier",
+      "url": "https://app.arkhamintelligence.com/entity/friend-tech-treasury",
+      "affectedKnowledge": [],
+      "_location": "Base Mainnet",
+      "_status": "Completed"
+    }
   ]
 }
