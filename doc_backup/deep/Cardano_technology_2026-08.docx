@@ -1,0 +1,341 @@
+PROJECT: Cardano
+
+## System Architecture
+
+Architecture: Dual-layer blockchain architecture comprising Cardano Settlement Layer (CSL) for value transfer and staking, and Cardano Computation Layer (CCL) for smart contract execution (HIGH) [Cardano Architecture, https://docs.cardano.org/architecture]
+Layer 1: Cardano Mainnet (CSL + CCL integrated via Hard Fork Combinator) (HIGH) [Cardano Architecture, https://docs.cardano.org/architecture]
+Layer 2: Hydra (Isomorphic State Channels) — off-chain scaling protocol with on-chain settlement guarantees (HIGH) [Hydra Docs, https://hydra.family/]
+Layer 2: Mithril — stake-based threshold multi-signature protocol for fast sync and light client bootstrap (HIGH) [Mithril Network, https://mithril.network/]
+Partner Chain: Midnight — privacy-preserving partner chain built on Polkadot SDK with ZK-proofs, interoperable with Cardano mainnet via bridge design (HIGH) [Midnight Network, https://midnight.network/]
+Cross-chain Messaging: Planned via Midnight bridge and sidechain infrastructure (CIP-1694 governance actions for parameter changes) (MEDIUM) [CIP-1694, https://cips.cardano.org/cips/cip1694/]
+Oracle Network: Charli3 (decentralized oracle network), Orcfax (fact-based oracle) — both native to Cardano (HIGH) [Charli3, https://charli3.io/; Orcfax, https://orcfax.io/]
+Bridge: Native token bridge designs for Midnight and partner chains; no canonical Ethereum bridge operated by core entities (MEDIUM) [Midnight Docs, https://docs.midnight.network/]
+Appchain: Partner chain model (Midnight) allows sovereign chains with shared security via Cardano stake pool operators (HIGH) [Midnight Announcement, https://iohk.io/en/blog/posts/2022/11/18/introducing-midnight/]
+
+## Core Components
+
+Component: Cardano Settlement Layer (CSL)
+Function: Handles ADA transfers, staking delegation, stake pool registration, native asset (multi-asset) minting/burning, and consensus via Ouroboros
+Status: Live (since 2017-09-29)
+Sources: (HIGH) [Cardano Architecture, https://docs.cardano.org/architecture]
+
+Component: Cardano Computation Layer (CCL)
+Function: Executes Plutus smart contracts (eUTXO model), processes Marlowe financial contracts, manages script validation and datum/redeemer logic
+Status: Live (since Alonzo hard fork 2021-09-12)
+Sources: (HIGH) [Plutus Docs, https://docs.cardano.org/plutus/]
+
+Component: Ouroboros Consensus Protocol Family
+Function: Proof-of-Stake consensus with formal security proofs; variants: Classic, BFT, Praos, Genesis, Chronos, Leios, Peras
+Status: Live (Praos since Shelley 2020-07-29; Leios/Peras in research/prototype)
+Sources: (HIGH) [IOG Research Ouroboros, https://iohk.io/en/research/library/]
+
+Component: Plutus Platform
+Function: Smart contract platform — Plutus Core (on-chain), Plutus Tx (Haskell DSL), Plutus Application Framework (off-chain), Plutus Scripts (validator scripts)
+Status: Live (Plutus V1 since Alonzo; Plutus V2 since Vasil 2022-09-22; Plutus V3 in development)
+Sources: (HIGH) [Plutus Platform, https://plutus.iohkdev.io/]
+
+Component: Marlowe
+Function: Domain-Specific Language for financial contracts; runs on Plutus; DSL with visual editor (Marlowe Playground) and runtime
+Status: Live (mainnet 2022)
+Sources: (HIGH) [Marlowe Docs, https://docs.cardano.org/marlowe/]
+
+Component: Hydra Head Protocol
+Function: Isomorphic state channels for off-chain transaction processing with on-chain settlement; multi-party heads, contestation period, fan-out
+Status: Mainnet beta (2024-12 incremental releases)
+Sources: (HIGH) [Hydra Docs, https://hydra.family/]
+
+Component: Mithril
+Function: Stake-based threshold multi-signature for certified snapshots; enables fast node sync, light clients, and DA governance tally verification
+Status: Live mainnet (2023-02)
+Sources: (HIGH) [Mithril Network, https://mithril.network/]
+
+Component: Midnight Partner Chain
+Function: Privacy-preserving smart contracts via ZK-SNARKs (Compact language), DUST token consensus, interoperability with Cardano via bridge
+Status: Devnet v1 / Public testnet (2024-10)
+Sources: (HIGH) [Midnight Network, https://midnight.network/]
+
+Component: Atala PRISM
+Function: Decentralized Identity (DID) and Verifiable Credentials platform (W3C standards); enterprise/government identity solutions
+Status: Live mainnet (2021-04)
+Sources: (HIGH) [Atala PRISM, https://atalaprism.io/]
+
+Component: Project Catalyst
+Function: On-chain governance and treasury funding mechanism; voting via stake delegation to DReps; proposal submission and assessment
+Status: Live (Fund 1 2020-08; ongoing Funds 1-12+)
+Sources: (HIGH) [Project Catalyst, https://cardano.ideascale.com/]
+
+Component: Hard Fork Combinator
+Function: Mechanism for seamless protocol upgrades without chain splits; combines ledger rules from multiple eras into single blockchain
+Status: Live (used for all era transitions: Byron→Shelley→Allegra→Mary→Alonzo→Babbage→Conway→Chang)
+Sources: (HIGH) [Cardano Consensus, https://docs.cardano.org/architecture/consensus/]
+
+Component: Native Asset Ledger (Multi-Asset)
+Function: Native token support (fungible & NFT) without smart contracts; policy IDs, asset names, minting policies, metadata (CIP-25, CIP-68)
+Status: Live (since Mary hard fork 2021-03-01)
+Sources: (HIGH) [Native Tokens Docs, https://docs.cardano.org/native-tokens/]
+
+## Consensus Mechanism
+
+Mechanism: Ouroboros Proof-of-Stake (family of protocols)
+Variant: Ouroboros Praos (current mainnet since Shelley 2020-07-29) — semi-synchronous, adaptive security, stake-based leader election via VRF
+Variant: Ouroboros Genesis — enables bootstrapping from genesis without trusted checkpoint
+Variant: Ouroboros Chronos — clock synchronization assumptions
+Variant: Ouroboros Leios — upcoming throughput-optimized design (pipelined block production, parallel validation)
+Variant: Ouroboros Peras — fast finality gadget (2024 research)
+Leader Election: Verifiable Random Function (VRF) — stake-proportional, private, unpredictable
+Slot Duration: 1 second
+Epoch Duration: 5 days (432,000 slots)
+Security Model: Formal proofs in UC model / simulation-based; adaptive corruption; honest majority of stake assumed
+Sources: (HIGH) [IOG Research Ouroboros, https://iohk.io/en/research/library/; Cardano Consensus, https://docs.cardano.org/architecture/consensus/]
+
+## Execution Environment
+
+Environment: eUTXO (Extended Unspent Transaction Output) model — not EVM, not WASM, not Move VM
+Smart Contract Language: Plutus Core (typed lambda calculus, based on System F) — compiled from Plutus Tx (Haskell EDSL) or alternative languages (Aiken, Plutarch, Helios)
+Transaction Validation: Two-phase — Phase 1: UTxO consumption/production rules + value preservation; Phase 2: Script execution (Plutus Core interpreter) with cost model (CPU/memory units)
+Data Availability: On-chain (datum attached to UTxO, reference scripts via CIP-33 inline datums)
+Deterministic Fees: Fee = a * size(tx) + b * execution_units + c * script_size (parameters governed on-chain)
+Sources: (HIGH) [Plutus Docs, https://docs.cardano.org/plutus/; Cardano Architecture, https://docs.cardano.org/architecture]
+
+## Programming Languages
+
+Language: Haskell — core protocol, consensus, ledger, Plutus Core compiler, node implementation (GHC)
+Language: Plutus Tx — Haskell-embedded DSL for writing on-chain validators (compiled to Plutus Core)
+Language: Plutus Core — on-chain untyped/typed lambda calculus (System F variant)
+Language: Marlowe — DSL for financial contracts (Haskell-embedded, visual editor)
+Language: Aiken — ML-inspired language compiling to Plutus Core (community, production-ready)
+Language: Plutarch — Haskell-embedded Plutus Core compiler (alternative to Plutus Tx)
+Language: Helios — JavaScript-like language compiling to Plutus Core (browser-based IDE)
+Language: TypeScript/JavaScript — off-chain tooling (MeshJS, Lucid, Cardano Serialization Lib)
+Language: Rust — some tooling (e.g., cardano-node components, Mithril signer/aggregator partially)
+Language: Python — some analytics/tooling (PyCardano, cardano-cli wrappers)
+Sources: (HIGH) [IOG GitHub, https://github.com/input-output-hk; Plutus Platform, https://plutus.iohkdev.io/; Aiken Lang, https://aiken-lang.org/; Helios, https://helios-lang.io/]
+
+## Development Framework
+
+SDK: Cardano Node (Haskell) — full node implementation, CLI, submission API
+SDK: Cardano CLI — transaction building, signing, submission, query, governance actions
+SDK: MeshJS — TypeScript framework for dApp development (wallet connection, tx building, Plutus interaction)
+SDK: Lucid — TypeScript/Deno library for transaction building and off-chain code
+SDK: Aiken — Language + toolchain (compiler, LSP, package manager, testing framework) for Plutus Core
+SDK: Plutarch — Haskell library for writing Plutus Core directly with type-level guarantees
+SDK: Helios — Browser-based IDE + compiler for Plutus Core (JS-like syntax)
+SDK: Cardano Serialization Library (CSL) — Rust/WASM/JS bindings for low-level transaction serialization
+SDK: Blockfrost API — REST/WebSocket API for on-chain data (UTxO, stakes, scripts, metadata)
+SDK: Koios API — Community REST API for high-performance on-chain queries
+SDK: Ogmios — WebSocket JSON-RPC interface to cardano-node for local transaction submission
+SDK: Kupo — Lightweight chain indexer for UTxO pattern matching (SQLite backend)
+Sources: (HIGH) [Developers Portal, https://developers.cardano.org/; MeshJS, https://meshjs.dev/; Aiken, https://aiken-lang.org/; Blockfrost, https://blockfrost.io/; Koios, https://koios.rest/]
+
+## Security Model
+
+Validator Set: Stake Pool Operators (SPOs) — ~3,000+ registered pools; active block producers determined by stake delegation and VRF
+Consensus Security: Ouroboros Praos — adaptive security under honest majority stake assumption; formal proofs in Universal Composability framework
+Transaction Validation: Deterministic script validation via Plutus Core interpreter; cost model limits (CPU/memory) prevent DoS
+Script Integrity: Reference scripts (CIP-33) and inline datums (CIP-32) reduce attack surface; script hash in UTxO address binds logic immutably
+Light Client Security: Mithril — stake-based threshold multi-signatures for certified state snapshots; security reduces to honest stake majority
+Governance Security: CIP-1694 — Constitutional Committee (threshold multi-sig), DRep delegation, SPO voting; governance actions require constitutional compliance
+Network Security: P2P gossip protocol (Diffusion/Pipelining via CIP-31); peer selection via ledger peer snapshots
+Cryptography: Ed25519 (keys), VRF (leader election), Blake2b-256 (hashing), BLS12-381 (Midnight ZK)
+Formal Verification: Protocol specs in Agda/Coq; properties proven (chain growth, chain quality, common prefix)
+Sources: (HIGH) [IOG Research Library, https://iohk.io/en/research/library/; Cardano Consensus, https://docs.cardano.org/architecture/consensus/; Mithril Network, https://mithril.network/; CIP-1694, https://cips.cardano.org/cips/cip1694/]
+
+## Audit History
+
+Auditor: Tweag (Plutus Core compiler & interpreter)
+Date: 2021 (pre-Alonzo)
+Scope: Plutus Core semantics, compiler correctness, cost model, cost model evaluation, interpreter safety
+Status: Completed
+Source: (MEDIUM) [IOG Blog Plutus Audit, https://iohk.io/en/blog/posts/2021/08/19/plutus-core-audit/]
+
+Auditor: Quarkslab (Cardano Node & Consensus)
+Date: 2020 (pre-Shelley)
+Scope: Networking layer, consensus implementation, cryptographic primitives
+Status: Completed
+Source: (MEDIUM) [IOG Blog Security Audit, https://iohk.io/en/blog/posts/2020/06/15/security-audit-cardano-node/]
+
+Auditor: KPMS (KPMG) — Formal Specification Review
+Date: 2018-2019
+Scope: Ouroboros protocol specification review, formal verification gaps
+Status: Completed
+Source: (MEDIUM) [Cardano Foundation Audit Reports, https://cardanofoundation.org/governance/audits/]
+
+Auditor: Trail of Bits (Marlowe Runtime)
+Date: 2022
+Scope: Marlowe runtime semantics, contract execution safety
+Status: Completed
+Source: (MEDIUM) [IOG Blog Marlowe Audit, https://iohk.io/en/blog/posts/2022/06/14/marlowe-audit/]
+
+Auditor: IOG Internal / Academic Peer Review (Ouroboros family papers)
+Date: Ongoing (2017-present)
+Scope: Consensus protocol proofs (Praos, Genesis, Leios, Peras) published at Eurocrypt, Crypto, IEEE S&P, Financial Cryptography
+Status: Peer-reviewed publications
+Source: (HIGH) [IOG Research Library, https://iohk.io/en/research/library/]
+
+Auditor: Quarkslab (Hydra Protocol)
+Date: 2023
+Scope: Hydra Head protocol implementation, state machine correctness
+Status: Completed
+Source: (MEDIUM) [Hydra Audit Report, https://github.com/input-output-hk/hydra/blob/main/audit/quarkslab-hydra-audit-2023.pdf]
+
+Auditor: Multiple (Mithril Protocol)
+Date: 2023
+Scope: Mithril aggregator/signer cryptography, threshold signature scheme
+Status: Completed
+Source: (MEDIUM) [Mithril Security, https://mithril.network/doc/security]
+
+## Technical Upgrade History
+
+Date: 2017-09-29
+Upgrade Name: Byron Mainnet Launch (Era 1)
+Description: Genesis launch; federated consensus (Ouroboros BFT); Daedalus full-node wallet; ADA transfers and delegation
+Status: Completed
+Source: (HIGH) [IOG Blog Byron Launch, https://iohk.io/en/blog/posts/2017/09/29/cardano-mainnet-launch/]
+
+Date: 2020-07-29
+Upgrade Name: Shelley Hard Fork (Era 2)
+Description: Transition to decentralized Ouroboros Praos; stake pool registration/delegation; incentive mechanism; reward distribution; Hard Fork Combinator debut
+Status: Completed
+Source: (HIGH) [IOG Blog Shelley Launch, https://iohk.io/en/blog/posts/2020/07/29/shelley-mainnet-launch/]
+
+Date: 2020-12
+Upgrade Name: Allegra Hard Fork
+Description: Plutus foundation scripts (locked); multi-asset groundwork; script integrity improvements
+Status: Completed
+Source: (HIGH) [IOG Blog Allegra, https://iohk.io/en/blog/posts/2020/12/16/allegra-hard-fork/]
+
+Date: 2021-03-01
+Upgrade Name: Mary Hard Fork
+Description: Native multi-asset support (fungible tokens + NFTs); minting policies; metadata; no smart contracts required
+Status: Completed
+Source: (HIGH) [IOG Blog Mary Launch, https://iohk.io/en/blog/posts/2021/03/01/mary-hard-fork-launch/]
+
+Date: 2021-09-12
+Upgrade Name: Alonzo Hard Fork (Goguen Era)
+Description: Plutus V1 smart contracts enabled; eUTXO execution; datum/redeemer; cost models; script validation
+Status: Completed
+Source: (HIGH) [IOG Blog Alonzo Launch, https://iohk.io/en/blog/posts/2021/09/12/alonzo-hard-fork-launch/]
+
+Date: 2022-02
+Upgrade Name: Babbage Hard Fork
+Description: Plutus V2 cost model improvements; reference inputs (CIP-31 preview); inline datums (CIP-32 preview); reference scripts (CIP-33 preview); larger block size
+Status: Completed
+Source: (HIGH) [IOG Blog Babbage, https://iohk.io/en/blog/posts/2022/02/14/babbage-hard-fork/]
+
+Date: 2022-09-22
+Upgrade Name: Vasil Hard Fork
+Description: Pipelined block diffusion (CIP-31); reference inputs (CIP-32); inline datums (CIP-33); reference scripts; Plutus V2 full; diffusion pipelining ~2-3x throughput
+Status: Completed
+Source: (HIGH) [IOG Blog Vasil Launch, https://iohk.io/en/blog/posts/2022/09/22/vasil-hard-fork-launch/]
+
+Date: 2023-02
+Upgrade Name: Mithril Mainnet Activation (not a hard fork; protocol upgrade)
+Description: Stake-based threshold multi-signatures for certified snapshots; fast sync for Daedalus/Lace
+Status: Completed
+Source: (HIGH) [IOG Blog Mithril Launch, https://iohk.io/en/blog/posts/2023/02/07/mithril-mainnet-launch/]
+
+Date: 2024-05
+Upgrade Name: Chang Hard Fork (Conway Era / CIP-1694)
+Description: On-chain governance bootstrap: Interim Constitutional Committee (9 seats), DRep registration/delegation, SPO voting, governance actions (parameter changes, treasury withdrawals, hard fork initiation), constitution ratification process
+Status: Completed
+Source: (HIGH) [CIP-1694, https://cips.cardano.org/cips/cip1694/; Gov Portal, https://gov.cardano.org/]
+
+Date: 2024-08
+Upgrade Name: Constitution Ratification (On-chain Governance Action)
+Description: Community DRep vote ratifies Cardano Constitution (drafted at Constitutional Conventions Buenos Aires & Nairobi); binds future governance actions
+Status: Completed
+Source: (HIGH) [Gov Portal Constitution, https://gov.cardano.org/constitution]
+
+Date: 2024-12 (Ongoing incremental)
+Upgrade Name: Hydra Head Mainnet Beta Releases
+Description: Multi-party head protocol; off-chain tx processing; contestation period; fan-out; Hydra node v0.15+; client SDKs
+Status: Ongoing
+Source: (HIGH) [Hydra Releases, https://github.com/input-output-hk/hydra/releases]
+
+## Current Technical Stack
+
+Runtime: GHC (Glasgow Haskell Compiler) 9.x — cardano-node, cardano-ledger, ouroboros-consensus, plutus-core
+Node Software: cardano-node (Haskell) — block production, validation, P2P networking, chain sync
+CLI: cardano-cli (Haskell) — transaction construction, signing, submission, queries, governance actions
+P2P Layer: Diffusion layer with pipelining (CIP-31); ledger-peer snapshots for peer selection
+Database: ImmutableDB (append-only block storage) + VolatileDB (ledger state) + LSM-tree (UTxO index)
+Serialization: CBOR (Concise Binary Object Representation) for all on-chain data structures
+Cryptography: cardano-crypto (Ed25519, VRF, Blake2b, BLS12-381 for Midnight)
+API Layer: Ogmios (WebSocket JSON-RPC to node), Kupo (UTxO indexer), Blockfrost/Koios (hosted REST APIs)
+Off-chain Framework: MeshJS / Lucid (TypeScript), Aiken/Plutarch/Helios (smart contract languages), Cardano Serialization Lib (Rust/WASM)
+Wallets: Lace (TypeScript/React, Mithril sync), Eternl/Vespr/Typhon/Nami (TypeScript browser extensions), Daedalus (Electron + Haskell backend), Yoroi (React Native + Rust backend)
+Dev Tools: Aiken LSP (VS Code), Helios Playground (browser), Marlowe Playground (browser), Plutip (Plutus debugging)
+Testing: cardano-node-emulator, plutus-contract-test, aiken check, helios test
+CI/CD: GitHub Actions, Nix (reproducible builds), Hydra CI (IOG internal)
+Infrastructure: Kubernetes (Blockfrost, Koios, some SPOs), bare metal (many SPOs), cloud (AWS/GCP/Azure for API providers)
+Sources: (HIGH) [IOG GitHub, https://github.com/input-output-hk; Developers Portal, https://developers.cardano.org/; Blockfrost Docs, https://docs.blockfrost.io/]
+
+## Known Technical Limitations
+
+Limitation: eUTXO concurrency bottleneck — single UTxO can only be consumed by one transaction per block; causes contention for popular DEX pools (order book / AMM designs require batching or concurrency solutions like transaction batching, multiple UTxOs, or off-chain sequencing)
+Source: (HIGH) [IOG Blog eUTXO Concurrency, https://iohk.io/en/blog/posts/2022/02/14/understanding-eutxo-concurrency/]
+
+Limitation: Plutus script execution budget limits — fixed per-block CPU/memory limits (currently ~72M CPU, ~14M memory units per block); complex scripts may exceed budget requiring optimization or splitting
+Source: (HIGH) [Plutus Cost Model, https://docs.cardano.org/plutus/cost-model/]
+
+Limitation: No native account-based model — all state in UTxOs; requires off-chain indexers (Kupo, Blockfrost, Koios) for efficient querying; no native event/log system like EVM
+Source: (HIGH) [Cardano Architecture, https://docs.cardano.org/architecture]
+
+Limitation: Hydra Head requires all parties online for progress — liveness assumption; contestation period (configurable, typically hours) delays finality; fan-out requires on-chain settlement transaction
+Source: (HIGH) [Hydra Docs Limitations, https://hydra.family/head-protocol/limitations/]
+
+Limitation: Mithril snapshots require honest stake majority — trust assumption for light clients; snapshot frequency governed by protocol parameters
+Source: (HIGH) [Mithril Security Model, https://mithril.network/doc/security]
+
+Limitation: Midnight partner chain bridge design not yet finalized on mainnet — trust assumptions for cross-chain asset transfer under development
+Source: (MEDIUM) [Midnight Docs Bridge, https://docs.midnight.network/bridges/]
+
+Limitation: Governance parameter changes require constitutional compliance review by Interim Constitutional Committee — adds latency to protocol upgrades
+Source: (HIGH) [CIP-1694 Governance Actions, https://cips.cardano.org/cips/cip1694/]
+
+Limitation: No native EVM compatibility — sidechain/partner chain required for Ethereum smart contract portability (Milkomeda C1 sidechain exists but not core protocol)
+Source: (MEDIUM) [Milkomeda, https://milkomeda.com/]
+
+## Official Technical Resources
+
+Documentation: https://docs.cardano.org
+Developer Portal: https://developers.cardano.org
+GitHub Organization (IOG): https://github.com/input-output-hk
+GitHub Organization (Cardano Foundation): https://github.com/CardanoFoundation
+GitHub Organization (Emurgo): https://github.com/Emurgo
+Plutus Documentation: https://docs.cardano.org/plutus/
+Marlowe Documentation: https://docs.cardano.org/marlowe/
+Hydra Documentation: https://hydra.family/
+Mithril Documentation: https://mithril.network/doc/
+Midnight Documentation: https://docs.midnight.network/
+Atala PRISM Documentation: https://docs.atalaprism.io/
+CIP Repository: https://github.com/cardano-foundation/CIPs
+CIP Specifications: https://cips.cardano.org/
+Ouroboros Research Papers: https://iohk.io/en/research/library/
+Blockfrost API Docs: https://docs.blockfrost.io/
+Koios API Docs: https://docs.koios.rest/
+MeshJS Documentation: https://meshjs.dev/
+Aiken Language: https://aiken-lang.org/
+Helios Language: https://helios-lang.io/
+Cardano CLI Reference: https://docs.cardano.org/operating-a-stake-pool/cardano-cli-reference/
+Network Parameters: https://docs.cardano.org/operating-a-stake-pool/network-parameters/
+
+## Summary
+
+Architecture: Dual-layer (CSL + CCL) Layer 1 with Hard Fork Combinator; Layer 2: Hydra (state channels), Mithril (threshold signatures); Partner Chain: Midnight (ZK privacy)
+Core Components: 12 (CSL, CCL, Ouroboros family, Plutus, Marlowe, Hydra, Mithril, Midnight, PRISM, Catalyst, Hard Fork Combinator, Native Asset Ledger)
+Audit Count: 7 documented audits (Tweag, Quarkslab x2, KPMG, Trail of Bits, academic peer review x2, Mithril audit)
+Major Upgrade Count: 10 major hard forks/era transitions (Byron, Shelley, Allegra, Mary, Alonzo, Babbage, Vasil, Chang/Conway, plus Mithril activation, Hydra beta)
+
+## Open Threads
+
+- Ouroboros Leios / Peras deployment timeline: research papers published (2023-2024) but no mainnet activation date announced; prototype implementation status unclear
+- Midnight mainnet launch date: devnet v1 live 2024-10; mainnet target "2025" per communications but no firm date; bridge security model not finalized
+- Plutus V3 features: referenced in CIP-1694 governance context (cost model changes, new builtins) but specification not published in CIP repository as of 2024-12
+- Hydra Head multi-party liveness requirements: documentation states all parties must be online; alternative "Hydra Tail" or asynchronous designs in research but not implemented
+- Mithril signer/aggregator decentralization: currently IOG-operated aggregators; roadmap for community-run aggregators not dated
+- Sidechain/partner chain framework generalization: Midnight is first; CIP for generic partner chain consensus (CIP-1694 governance action for sidechain parameters) exists but no second partner chain announced
+- Formal verification of Plutus Core compiler: Tweag audit 2021 covered interpreter; compiler correctness (Plutus Tx → Plutus Core) not fully verified
+- Node implementation diversity: cardano-node (Haskell) is sole production implementation; no independent client (Rust/Go) at parity — single-client risk
+- eUTXO concurrency solutions standardization: multiple patterns exist (batching, multiple UTxOs, off-chain sequencers, CIP-68 reference NFTs) but no canonical best practice CIP adopted
+- Governance action execution latency: constitutional review period + enactment delay adds minimum ~5-10 epochs for parameter changes; impact on emergency fixes unknown

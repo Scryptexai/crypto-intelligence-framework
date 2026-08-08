@@ -5695,5 +5695,1312 @@
       "relatedKnowledge": [],
       "dependencies": []
     }
+  ],
+  "Cardano": [
+    {
+      "id": "cardano-K-001",
+      "projectSlug": "cardano",
+      "name": "Penelitian akademis formal verification-first menciptakan keamanan protokol terbukti matematis namun memperlambat time-to-market dibandingkan pendekatan \"move fast and break things\"",
+      "category": "Core Insight",
+      "description": "Cardano mempublikasikan 100+ paper peer-reviewed di venue top-tier (Eurocrypt, Crypto, IEEE S&P, Financial Cryptography) sebelum implementasi produksi; Ouroboros family memiliki bukti keamanan formal dalam model Universal Composability; setiap major component (Hydra, Mithril, Plutus Core, Midnight ZK) melalui siklus research → formal spec → peer review → prototype → testnet → mainnet via HFC",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "100+ paper akademis peer-reviewed dipublikasikan【Phase 4 — Official Technical Resources】; Ouroboros formal proofs UC model【Phase 4 — Security Model】; Academic peer review ongoing audit history【Phase 4 — Audit History】; Penelitian Ouroboros dimulai 2015 sebelum mainnet 2017【Phase 3 — EV-001】【Phase 3 — EV-004】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-001",
+        "EV-004"
+      ]
+    },
+    {
+      "id": "cardano-K-002",
+      "projectSlug": "cardano",
+      "name": "Hard Fork Combinator memungkinkan 10 major era transitions (Byron→Shelley→Allegra→Mary→Alonzo→Babbage→Vasil→Chang/Conway) tanpa chain split sama sekali dalam 7 tahun",
+      "category": "Core Insight",
+      "description": "Hard Fork Combinator menggabungkan ledger rules multiple eras ke single blockchain; semua upgrade seamless, no contentious hard forks, no chain splits; arsitektur ini dirancang dari awal (Byron era) dan terbukti scalable untuk menambah fungsionalitas layer demi layer (consensus → native assets → smart contracts → governance)",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "10 major hard forks via HFC【Phase 4 — Technical Upgrade History】【Phase 4 — Core Components】; No chain splits dalam sejarah Cardano【Phase 9 — Evolution Pattern 2】; Byron launch dengan HFC architecture ready【Phase 3 — EV-007】【Phase 3 — EV-011】【Phase 3 — EV-022】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-007",
+        "EV-011",
+        "EV-022"
+      ]
+    },
+    {
+      "id": "cardano-K-003",
+      "projectSlug": "cardano",
+      "name": "Model eUTXO (Extended UTxO) memberikan deterministic fees, local validation, native assets tanpa smart contract, tapi menciptakan concurrency bottleneck fundamental untuk DeFi kompleks",
+      "category": "Core Insight",
+      "description": "eUTXO dipilih bukan account-based; deterministic transaction fees (no gas wars); local transaction validation enables parallelizability research; native multi-asset support since Mary (2021) tanpa Plutus; trade-off: single UTxO hanya bisa dikonsumsi satu tx per block → contention pada DEX populer; butuh off-chain indexers; no native event/log system",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "eUTXO model documentation【Phase 4 — Execution Environment】; Known limitations: concurrency bottleneck, no account model, no event system【Phase 4 — Known Technical Limitations】; Mary native assets 2021【Phase 3 — EV-013】; Vasil improvements untuk composability【Phase 3 — EV-017】; IOG blog eUTXO concurrency【Phase 4 — Known Technical Limitations】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-013",
+        "EV-017"
+      ]
+    },
+    {
+      "id": "cardano-K-004",
+      "projectSlug": "cardano",
+      "name": "Struktur tri-entitas (IOG R&D, Cardano Foundation governance/standards, Emurgo commercial adoption) menciptakan pemisahan tanggung jawab jelas tapi kompleksitas koordinasi dan transparansi keuangan terfragmentasi",
+      "category": "Core Insight",
+      "description": "IOG fokus research/engineering, CF netral governance steward, Emurgo business development; masing-masing menerima genesis allocation besar (IOG 2.46B, CF 648M, Emurgo 2.07B ADA) tanpa vesting protokol; tidak ada laporan keuangan konsolidasi teraudit; penjualan operasional discretionary menciptakan sell pressure berkelanjutan",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "Three entities founded 2015-2017【Phase 3 — EV-001】【Phase 3 — EV-003】【Phase 3 — EV-005】; Genesis allocations【Phase 5 — Funding History】【Phase 6 — Distribution】; No protocol vesting, discretionary sales【Phase 6 — Vesting Schedule】; Financial risk: genesis entity sell pressure【Phase 5 — Financial Risk】; No audited consolidated financials【Phase 5 — Financial Risk】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-001",
+        "EV-003",
+        "EV-005"
+      ]
+    },
+    {
+      "id": "cardano-K-005",
+      "projectSlug": "cardano",
+      "name": "On-chain treasury governance evolution: fee + monetary expansion accumulation → experimental Catalyst DAO funding (>100M ADA) → constitutional governance CIP-1694 (CC, DRep, SPO ternary)",
+      "category": "Core Insight",
+      "description": "Treasury accumulates dari Shelley 2020; Catalyst Fund 1 2020 eksperimen; Fund 1-12+ >100M ADA kumulatif (Fund 10 milestone 2023); Chang hard fork 2024 implementasi CIP-1694: Interim CC (9 seats), DRep registration/delegation, SPO voting, governance actions; Constitution ratified Aug 2024; first L1 dengan constitutional governance on-chain ternary",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "Treasury accumulation since Shelley【Phase 5 — Treasury】【Phase 6 — Inflation/Deflation】; Catalyst Fund 1 2020【Phase 3 — EV-012】; Fund 10 >100M ADA【Phase 3 — EV-021】; CIP-1694 Chang hard fork 2024-05【Phase 3 — EV-022】; Constitution ratified 2024-08【Phase 3 — EV-023】; ICC formed 2024-06【Phase 3 — EV-034】; Governance model ternary【Phase 6 — Governance】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-012",
+        "EV-021",
+        "EV-022",
+        "EV-023",
+        "EV-034"
+      ]
+    },
+    {
+      "id": "cardano-K-006",
+      "projectSlug": "cardano",
+      "name": "Public voucher sale only (no VC/private sale) menciptakan distribusi token relatif merata ke retail (>50% supply estimated) tapi genesis entities memegang ~11.5% tanpa vesting protokol",
+      "category": "Core Insight",
+      "description": "Satu-satunya fundraising eksternal: public voucher sale 16 bulan 2015-2017 via Swiss entity Attain Alternative Strategies Ltd ke pasar Asia (~$62M, ~25.9B ADA); tidak ada Series A/B, SAFT, launchpad; voucher holders fully unlocked at mainnet 2017-09-29; genesis entities (IOG, Emurgo, CF) 5.18B ADA combined no protocol vesting",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "ADA Voucher Sale 2015-2017【Phase 5 — Funding History】【Phase 5 — Fundraising Mechanism】【Phase 6 — Token Sale】【Phase 3 — EV-002】; No private sale/VC【Phase 5 — Fundraising Mechanism】; Distribution: community 57.6%, entities 11.5%【Phase 6 — Distribution】; Vesting: no protocol vesting for entities【Phase 6 — Vesting Schedule】; Holder distribution: >50% retail estimated【Phase 6 — Holder Distribution】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-002"
+      ]
+    },
+    {
+      "id": "cardano-K-007",
+      "projectSlug": "cardano",
+      "name": "Layer 2 scaling via isomorphic state channels (Hydra) + threshold signatures (Mithril) dipilih bukan rollup; Midnight partner chain untuk ZK privacy bukan L2",
+      "category": "Core Insight",
+      "description": "Hydra Head protocol: isomorphic state channels, on-chain settlement, all-parties-online liveness requirement, contestation period; Mithril: stake-based threshold multisig untuk certified snapshots (fast sync, light clients, governance tally); Midnight: partner chain di Polkadot SDK, ZK-SNARKs (Compact), DUST token, shared security via Cardano SPO, bridge design in progress",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "Hydra architecture【Phase 4 — System Architecture】【Phase 4 — Core Components】; Hydra limitations: liveness requirement, contestation period【Phase 4 — Known Technical Limitations】; Mithril mainnet 2023-02【Phase 3 — EV-019】; Midnight announcement 2022-11-18【Phase 3 — EV-018】; Midnight devnet/testnet 2024-10【Phase 3 — EV-024】; Partner chain model【Phase 4 — System Architecture】【Phase 9 — Evolution Pattern 5】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-018",
+        "EV-019",
+        "EV-024"
+      ]
+    },
+    {
+      "id": "cardano-K-008",
+      "projectSlug": "cardano",
+      "name": "Developer experience maturation dari Haskell-only ke full stack (Aiken, MeshJS, Lucid, Helios, Blockfrost, Koios, Ogmios, Kupo) mencapai parity dengan ekosistem EVM",
+      "category": "Core Insight",
+      "description": "2017-2020: cardano-cli/Haskell only; 2021: Plutus Tx/Haskell; 2022: MeshJS/Lucid TS SDKs; 2022-2023: Aiken/Helios alternative languages; 2021-2024: Blockfrost/Koios hosted APIs + Ogmios/Kupo local stack; 2024: DX comparable to EVM; ~250-350 monthly active developers (rank #8-12 among L1s)",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "Infrastructure maturation timeline【Phase 3 — EV-030】; Development framework SDKs【Phase 4 — Development Framework】; Infrastructure providers【Phase 7 — Infrastructure Providers】; Developer ecosystem SDKs【Phase 7 — Developer Ecosystem】; Adoption metrics: developer count rank【Phase 8 — Adoption Metrics】【Phase 8 — Market Share】; Electric Capital report 2024【Phase 8 — Market Share】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-030"
+      ]
+    },
+    {
+      "id": "cardano-K-009",
+      "projectSlug": "cardano",
+      "name": "Atala PRISM national-scale DID deployments (Ethiopia 5M students, Georgia, Tanzania) membuktikan enterprise/government adoption viable tapi revenue tidak transparan",
+      "category": "Core Insight",
+      "description": "Atala PRISM mainnet 2021-04; national pilots: Ethiopia education credentials (5M students), Georgia document verification, Tanzania digital identity; W3C DID/VC standards; Midnight extends ke privacy-preserving identity; IOG commercial revenue dari enterprise contracts tapi tidak diungkapkan nilai kontrak",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "Atala PRISM launch 2021-04【Phase 3 — EV-027】; National deployments case studies【Phase 7 — Major Integrations】【Phase 8 — Narrative Position】; Cardano Summit 2022 nation-state partnerships【Phase 3 — EV-031】; IOG commercial revenue not disclosed【Phase 5 — Revenue Model】【Phase 5 — Financial Dependencies】; Financial risk: no audited financials【Phase 5 — Financial Risk】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-027",
+        "EV-031"
+      ]
+    },
+    {
+      "id": "cardano-K-010",
+      "projectSlug": "cardano",
+      "name": "Staking participation stabil ~62-65% circulating supply sejak Shelley 2020 membuktikan incentive alignment Ouroboros Praos + monetary expansion schedule yang hardcoded",
+      "category": "Core Insight",
+      "description": "Shelley 2020-07-29 aktifkan Ouroboros Praos + monetary expansion; staking participation naik cepat ke >70% lalu stabil ~62-65% (22B ADA staked dari 35.6B circulating); monetary expansion diminishes monotonically hingga ~2140; reward sharing mechanism terbukti sustainable; rank #2-3 by staked value globally",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "Shelley hard fork 2020-07-29【Phase 3 — EV-011】; Staking participation metrics【Phase 8 — Adoption Metrics】; Monetary policy hardcoded diminishing【Phase 6 — Inflation/Deflation】【Phase 4 — Consensus Mechanism】; Staking market cap rank【Phase 8 — Market Share】; Staking rewards live since Shelley【Phase 6 — Utility】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-011"
+      ]
+    },
+    {
+      "id": "cardano-K-011",
+      "projectSlug": "cardano",
+      "name": "Academic Research First — protokol tidak diimplementasikan sebelum formal specification & peer-reviewed proofs selesai",
+      "category": "Strategic Principle",
+      "description": "Setiap major protocol component (Ouroboros family, Hydra, Mithril, Plutus Core, Midnight ZK) melalui siklus: research paper → formal spec (Agda/Coq) → peer review (Eurocrypt/Crypto/IEEE S&P) → prototype → testnet → mainnet via HFC; keamanan protokol terbukti matematis sebelum production",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "100+ papers published top-tier venues【Phase 4 — Official Technical Resources】【Phase 3 — EV-035】; Formal proofs UC model【Phase 4 — Security Model】; Academic peer review audit history【Phase 4 — Audit History】; Phase 9 Pola 1【Phase 9 — Pola 1】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-035"
+      ]
+    },
+    {
+      "id": "cardano-K-012",
+      "projectSlug": "cardano",
+      "name": "Seamless Upgrades via Hard Fork Combinator — semua era transition menggunakan HFC untuk menggabungkan ledger rules multiple eras tanpa chain split",
+      "category": "Strategic Principle",
+      "description": "HFC dirancang dari Byron era; 10 major hard forks (Byron→Shelley→Allegra→Mary→Alonzo→Babbage→Vasil→Chang/Conway) semua seamless; no contentious hard forks, no chain splits dalam sejarah; memungkinkan penambahan fungsionalitas layer demi layer",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "HFC core component【Phase 4 — Core Components】; Technical upgrade history 10 major forks【Phase 4 — Technical Upgrade History】; Phase 9 Evolution Pattern 2【Phase 9 — Evolution Pattern 2】; No chain splits【Phase 9 — Pola 2】",
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "cardano-K-013",
+      "projectSlug": "cardano",
+      "name": "eUTXO Model as Fundamental Design Choice — extended UTxO dipilih untuk deterministic fees, local validation, parallelizability, native assets tanpa smart contract",
+      "category": "Strategic Principle",
+      "description": "Bukan account-based, bukan EVM-compatible; trade-off diterima: concurrency bottleneck untuk DeFi, butuh off-chain indexers, no native event/log system; Vasil improvements (reference inputs, inline datums, Plutus V2) mitigate tapi tidak solve fundamental",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "eUTXO execution environment【Phase 4 — Execution Environment】; Known limitations documented【Phase 4 — Known Technical Limitations】; Phase 9 Pola 3【Phase 9 — Pola 3】; Mary native assets 2021【Phase 3 — EV-013】; Vasil composability improvements【Phase 3 — EV-017】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-013",
+        "EV-017"
+      ]
+    },
+    {
+      "id": "cardano-K-014",
+      "projectSlug": "cardano",
+      "name": "Layer 2 Scaling via Isomorphic State Channels + Threshold Signatures — bukan rollup; Hydra (state channels) + Mithril (threshold sigs) untuk scaling; Midnight partner chain untuk ZK privacy specialized use case",
+      "category": "Strategic Principle",
+      "description": "Hydra Head: isomorphic state channels, on-chain settlement, all-parties-online liveness; Mithril: stake-based threshold multisig certified snapshots; Midnight: partner chain Polkadot SDK, ZK-SNARKs, shared security via SPO; generic partner chain framework planned via CIP-1694 governance actions",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "System architecture Layer 2 & Partner Chain【Phase 4 — System Architecture】; Hydra limitations【Phase 4 — Known Technical Limitations】; Mithril security model【Phase 4 — Core Components】; Midnight design【Phase 4 — Core Components】; Phase 9 Pola 5, Pola 6【Phase 9 — Pola 5】【Phase 9 — Pola 6】",
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "cardano-K-015",
+      "projectSlug": "cardano",
+      "name": "On-Chain Constitutional Governance Ternary (CC, DRep, SPO) — CIP-1694 implementasi governance actions memerlukan constitutional compliance review oleh Constitutional Committee",
+      "category": "Strategic Principle",
+      "description": "Three-body system: Constitutional Committee (threshold multi-sig), Delegated Representatives (DRep stake-weighted), Stake Pool Operators (SPO voting); governance actions: parameter changes, treasury withdrawals, hard fork initiation, constitution ratification, CC member changes; Constitution ratified by DRep vote Aug 2024; parameter changes now require constitutional compliance review adding latency",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "CIP-1694 specification【Phase 4 — Core Components】【Phase 6 — Governance】; Chang hard fork 2024-05【Phase 3 — EV-022】; Constitution ratified 2024-08【Phase 3 — EV-023】; ICC formed 2024-06【Phase 3 — EV-034】; Governance action execution latency【Phase 4 — Known Technical Limitations】; Phase 9 Pola 4【Phase 9 — Evolution Pattern 4】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-022",
+        "EV-023",
+        "EV-034"
+      ]
+    },
+    {
+      "id": "cardano-K-016",
+      "projectSlug": "cardano",
+      "name": "Public Sale Only — No VC/Private Allocation — satu-satunya fundraising eksternal public voucher sale 16 bulan; genesis entities operational funding via genesis allocation tanpa vesting protokol",
+      "category": "Strategic Principle",
+      "description": "Voucher sale 2015-2017 via Swiss entity Attain Alternative Strategies Ltd ke pasar Asia (~$62M, 25.9B ADA); no Series A/B, SAFT, launchpad; community fully unlocked at TGE; entities hold 11.5% initial supply no protocol vesting; sell pressure dari operational sales discretionary",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "Funding history voucher sale only【Phase 5 — Funding History】【Phase 5 — Fundraising Mechanism】; Token sale details【Phase 6 — Token Sale】; Distribution breakdown【Phase 6 — Distribution】; Vesting schedule no protocol vesting【Phase 6 — Vesting Schedule】; Financial risk genesis entity sell pressure【Phase 5 — Financial Risk】; Phase 9 Pola 1, Pola 2【Phase 9 — Pola 1】【Phase 9 — Pola 2】",
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "cardano-K-017",
+      "projectSlug": "cardano",
+      "name": "Treasury Sustainability via Monetary Expansion + Fees → Community Governance — treasury accumulates dari fee + monetary expansion (Shelley 2020); Catalyst DAO funding experimental 2020; CIP-1694 integrates treasury withdrawals ke constitutional governance",
+      "category": "Strategic Principle",
+      "description": "Monetary expansion hardcoded diminishing schedule hingga ~2140; fee collection per epoch; treasury ~1.3B ADA estimated 2024-12; Catalyst Fund 1-12+ >100M ADA distributed; CIP-1694 governance actions untuk treasury withdrawals validated by CC; no protocol-level burn mechanism, no buyback",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "Monetary policy【Phase 6 — Inflation/Deflation】【Phase 5 — Revenue Model】; Treasury status【Phase 5 — Treasury】; Catalyst funding history【Phase 3 — EV-012】【Phase 3 — EV-021】; CIP-1694 treasury governance【Phase 6 — Governance】; Phase 9 Pola 3, Pola 4【Phase 9 — Pola 3】【Phase 9 — Evolution Pattern 4】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-012",
+        "EV-021"
+      ]
+    },
+    {
+      "id": "cardano-K-018",
+      "projectSlug": "cardano",
+      "name": "Formal verification & academic rigor menciptakan keamanan protokol tertinggi di industri — zero major consensus failure sejak 2017",
+      "category": "Success Factor",
+      "description": "Ouroboros family formal proofs UC model; 100+ peer-reviewed papers; multiple audits (Tweag, Quarkslab, KPMG, Trail of Bits); no major consensus failure atau chain split dalam 7 tahun; security model adaptive corruption honest majority stake assumption",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "Security model formal proofs【Phase 4 — Security Model】; Audit history 7 documented audits【Phase 4 — Audit History】; Academic peer review ongoing【Phase 4 — Audit History】; No consensus failure history【Phase 3 — History timeline】; Phase 9 Pola 1【Phase 9 — Pola 1】",
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "cardano-K-019",
+      "projectSlug": "cardano",
+      "name": "Hard Fork Combinator architecture memungkinkan 10 seamless major upgrades tanpa community fragmentation",
+      "category": "Success Factor",
+      "description": "HFC dirancah dari genesis; setiap era transition (consensus, native assets, smart contracts, governance) via HFC; no chain splits, no contentious forks; developer & user experience seamless; governance actions sekarang via CIP-1694 on-chain",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "HFC core component【Phase 4 — Core Components】; 10 major hard forks timeline【Phase 4 — Technical Upgrade History】; Phase 9 Evolution Pattern 2, Pola 2【Phase 9 — Evolution Pattern 2】【Phase 9 — Pola 2】",
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "cardano-K-020",
+      "projectSlug": "cardano",
+      "name": "High staking participation (~62-65% circulating) membuktikan incentive alignment Ouroboros Praos + monetary expansion sustainable",
+      "category": "Success Factor",
+      "description": "Shelley 2020 launch staking rewards; participation naik cepat stabil >60% selama 4+ tahun; monetary expansion diminishing schedule hardcoded; reward sharing mechanism proven; rank #2-3 globally by staked value; delegator retention tinggi",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "Staking metrics【Phase 8 — Adoption Metrics】; Monetary policy【Phase 6 — Inflation/Deflation】; Shelley launch【Phase 3 — EV-011】; Staking market cap rank【Phase 8 — Market Share】; Phase 9 Evolution Pattern 1【Phase 9 — Evolution Pattern 1】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-011"
+      ]
+    },
+    {
+      "id": "cardano-K-021",
+      "projectSlug": "cardano",
+      "name": "Native multi-asset support (Mary 2021) sebelum smart contracts menciptakan NFT/token boom early tanpa composability risk Plutus",
+      "category": "Success Factor",
+      "description": "Mary hard fork 2021-03-01 native assets di settlement layer; >100k policy IDs created; NFT marketplace JPG Store dominant; blue-chip collections (Ape Society, Clay Mates); ADA demand struktural dari minimum UTxO deposit (~1-2 ADA per asset); DeFi smart contracts datang later (Alonzo 2021-09)",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "Mary hard fork【Phase 3 — EV-013】; Native asset metrics【Phase 8 — Adoption Metrics】; NFT volume peak $50M+【Phase 3 — EV-029】; Utility native asset minting fee【Phase 6 — Utility】; Phase 9 Evolution Pattern 2【Phase 9 — Evolution Pattern 2】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-013",
+        "EV-029"
+      ]
+    },
+    {
+      "id": "cardano-K-022",
+      "projectSlug": "cardano",
+      "name": "Project Catalyst >100M ADA distributed membuktikan on-chain DAO funding scalable & sustainable",
+      "category": "Success Factor",
+      "description": "Fund 1 2020-08 $250k ADA experimental; Fund 1-12+ kumulatif >100M ADA (Fund 10 milestone June 2023); community proposal/voting stake-weighted; largest on-chain treasury DAO by cumulative funds; CIP-1694 integrates treasury withdrawals ke constitutional governance",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "Catalyst Fund 1【Phase 3 — EV-012】; Fund 10 milestone【Phase 3 — EV-021】; Cumulative >100M ADA【Phase 5 — Funding History】; Treasury governance CIP-1694【Phase 6 — Governance】; Phase 9 Evolution Pattern 4【Phase 9 — Evolution Pattern 4】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-012",
+        "EV-021"
+      ]
+    },
+    {
+      "id": "cardano-K-023",
+      "projectSlug": "cardano",
+      "name": "Developer experience maturation ke full stack (Aiken, MeshJS, Lucid, Helios, Blockfrost, Koios, Ogmios, Kupo) mencapai parity EVM",
+      "category": "Success Factor",
+      "description": "2017-2020 Haskell only → 2021 Plutus Tx → 2022 MeshJS/Lucid TS → 2022-2023 Aiken/Helios alt languages → 2021-2024 Blockfrost/Koios hosted + Ogmios/Kupo local → 2024 DX comparable EVM; ~250-350 monthly active devs rank #8-12 L1s; Electric Capital 2024 report",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "Infrastructure maturation timeline【Phase 3 — EV-030】; Development framework SDKs【Phase 4 — Development Framework】; Infrastructure providers【Phase 7 — Infrastructure Providers】; Developer ecosystem【Phase 7 — Developer Ecosystem】; Adoption metrics dev count【Phase 8 — Adoption Metrics】; Market share dev rank【Phase 8 — Market Share】; Phase 9 Evolution Pattern 6【Phase 9 — Evolution Pattern 6】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-030"
+      ]
+    },
+    {
+      "id": "cardano-K-024",
+      "projectSlug": "cardano",
+      "name": "Atala PRISM national-scale deployments (Ethiopia 5M students, Georgia, Tanzania) membuktikan enterprise/government blockchain adoption viable",
+      "category": "Success Factor",
+      "description": "Atala PRISM mainnet 2021-04; W3C DID/VC standards; national pilots production-scale; Midnight extends privacy-preserving identity; real-world use case beyond speculation; revenue tidak transparan tapi case studies documented",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "Atala PRISM launch【Phase 3 — EV-027】; National case studies【Phase 7 — Major Integrations】【Phase 8 — Narrative Position】; Cardano Summit 2022 partnerships【Phase 3 — EV-031】; IOG commercial revenue not disclosed【Phase 5 — Revenue Model】; Phase 9 Evolution Pattern 3【Phase 9 — Evolution Pattern 3】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-027",
+        "EV-031"
+      ]
+    },
+    {
+      "id": "cardano-K-025",
+      "projectSlug": "cardano",
+      "name": "Wallet ecosystem standardization CIP-30 (dApp connector) + CIP-1852 (HD derivation) memungkinkan interoperabilitas 10+ wallets",
+      "category": "Success Factor",
+      "description": "Daedalus (2017) → Yoroi (2018) → Nami/Eternl/Vespr/Typhon/Flint/GeroWallet (2021-2023) → Lace official (2023); semua support CIP-30 dApp connector & CIP-1852 HD derivation; hardware wallet Ledger/Trezor support universal; user choice tanpa vendor lock-in",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "Wallet ecosystem 10+ wallets【Phase 7 — Wallet Ecosystem】; CIP-30 CIP-1852 standards【Phase 7 — Wallet Ecosystem】; Wallet launch timeline【Phase 3 — EV-009】【Phase 3 — EV-010】【Phase 3 — EV-020】; Phase 9 Evolution Pattern 3【Phase 9 — Evolution Pattern 3】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-009",
+        "EV-010",
+        "EV-020"
+      ]
+    },
+    {
+      "id": "cardano-K-026",
+      "projectSlug": "cardano",
+      "name": "Partner chain model (Midnight) memperluas addressable market ke regulated finance/healthcare/identity dengan ZK privacy",
+      "category": "Success Factor",
+      "description": "Midnight announced 2022-11-18; devnet v1 + public testnet 2024-10; Polkadot SDK base; ZK-SNARKs Compact language; DUST token; shared security via Cardano SPO; bridge design in progress; not general L2 but purpose-built privacy chain; extends beyond public ledger limitations",
+      "confidence": 60,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "Midnight announcement【Phase 3 — EV-018】; Midnight devnet/testnet【Phase 3 — EV-024】; Partner chain architecture【Phase 4 — System Architecture】; Midnight core component【Phase 4 — Core Components】; Phase 9 Evolution Pattern 5, Pola 6【Phase 9 — Evolution Pattern 5】【Phase 9 — Pola 6】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-018",
+        "EV-024"
+      ]
+    },
+    {
+      "id": "cardano-K-027",
+      "projectSlug": "cardano",
+      "name": "Public voucher sale only (no VC) menciptakan distribusi token merata retail >50% supply estimated, aligned community incentives",
+      "category": "Success Factor",
+      "description": "Voucher sale 2015-2017 16 bulan ~$62M 25.9B ADA ke pasar Asia; no private sale/VC allocation; community fully unlocked at TGE 2017-09-29; no cliff unlock sell pressure; genesis entities 11.5% no protocol vesting tapi operational sales tracked on-chain",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "Token sale structure【Phase 5 — Fundraising Mechanism】【Phase 6 — Token Sale】; Distribution breakdown【Phase 6 — Distribution】; Vesting schedule【Phase 6 — Vesting Schedule】; Holder distribution retail >50%【Phase 6 — Holder Distribution】; Phase 9 Pola 1, Pola 2【Phase 9 — Pola 1】【Phase 9 — Pola 2】",
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "cardano-K-028",
+      "projectSlug": "cardano",
+      "name": "eUTXO concurrency bottleneck fundamental membatasi DeFi throughput — single UTxO consumed by one tx per block causes contention pada popular DEX pools",
+      "category": "Failure Factor",
+      "description": "Fundamental eUTXO design: one UTxO one consumer per block; DEX AMM designs require batching, multiple UTxOs, or off-chain sequencing; concurrency patterns maturing (batching, reference NFTs CIP-68, off-chain sequencers) but no canonical best practice CIP adopted; Vasil improvements (reference inputs, inline datums) mitigate tapi tidak solve root cause",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "Known limitations eUTXO concurrency【Phase 4 — Known Technical Limitations】; IOG blog eUTXO concurrency【Phase 4 — Known Technical Limitations】; Vasil improvements【Phase 3 — EV-017】; DeFi TVL peak $450M but lower than EVM L1s【Phase 8 — Adoption Metrics】; Phase 9 Pola 3【Phase 9 — Pola 3】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-017"
+      ]
+    },
+    {
+      "id": "cardano-K-029",
+      "projectSlug": "cardano",
+      "name": "Single production client (cardano-node Haskell/GHC) — no alternative client diversity; single-client risk",
+      "category": "Failure Factor",
+      "description": "cardano-node (Haskell) sole production consensus implementation; alternative clients (TxPipe/Pallas Rust) experimental only; Nix reproducible builds; formal spec Agda/Coq but implementation single-language; no independent client (Rust/Go) at parity",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "Current technical stack runtime【Phase 4 — Current Technical Stack】; Known limitations single-client risk【Phase 4 — Known Technical Limitations】; Official technical resources GitHub IOG cardano-node【Phase 4 — Official Technical Resources】; Phase 9 Pola 4【Phase 9 — Pola 4】",
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "cardano-K-030",
+      "projectSlug": "cardano",
+      "name": "Genesis entities (IOG, Emurgo, CF) hold ~11.5% initial supply no protocol vesting — discretionary operational sales create persistent sell pressure",
+      "category": "Failure Factor",
+      "description": "Genesis allocation: IOG 2.46B, Emurgo 2.07B, CF 648M ADA; no protocol vesting schedule; operational sales discretionary tracked on-chain (AdaStat genesis wallets); transparency limited to annual report narratives; no commitment schedule; sell pressure known to market",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "Genesis allocations【Phase 5 — Funding History】【Phase 6 — Distribution】; Vesting schedule no protocol vesting【Phase 6 — Vesting Schedule】; Financial risk genesis entity sell pressure【Phase 5 — Financial Risk】; AdaStat genesis wallet tracking【Phase 5 — Financial Risk】; Phase 9 Pola 2【Phase 9 — Pola 2】",
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "cardano-K-031",
+      "projectSlug": "cardano",
+      "name": "Treasury 100% ADA concentration — no stablecoin diversification; price volatility directly impacts treasury purchasing power for development funding",
+      "category": "Failure Factor",
+      "description": "On-chain treasury ~1.3B ADA estimated 2024-12; 100% ADA no stablecoins; acknowledged in Cardano Foundation annual report and governance discussions; monetary expansion schedule fixed diminishing cannot adjust to treasury needs; CIP-1694 parameter change process slow for emergency",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "Treasury composition 100% ADA【Phase 5 — Treasury】; Financial risk treasury concentration【Phase 5 — Financial Risk】; Monetary expansion fixed schedule【Phase 6 — Inflation/Deflation】; Governance parameter change latency【Phase 4 — Known Technical Limitations】; Phase 9 Pola 3【Phase 9 — Pola 3】",
+      "relatedKnowledge": [],
+      "dependencies": []
+    }
+  ],
+  "Grass": [
+    {
+      "id": "grass-K-001",
+      "projectSlug": "grass",
+      "name": "Arsitektur DePIN dengan Dual Settlement-Execution Layer Memisahkan Keamanan Ekonomi dari Throughput Data",
+      "category": "Core Insight",
+      "description": "Grass menggunakan Solana sebagai settlement layer final (token, staking, governance, anchoring) membangun Sovereign Data Rollup kustom (non-SVM) untuk eksekusi scraping/validasi data intensif komputasi — memisahkan security assumptions (Solana validator set) dari execution throughput (Rollup ZK/TEE)",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(HIGH) 【Phase 4 — System Architecture Settlement vs Execution Layer】【Phase 3 — EV-011 Sovereign Rollup Announcement】【Phase 8 — Narrative Modular Rollup】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-011"
+      ]
+    },
+    {
+      "id": "grass-K-002",
+      "projectSlug": "grass",
+      "name": "Ekspansi Platform Node Bertahap Menurunkan Barrier to Entry Secara Sistematis",
+      "category": "Core Insight",
+      "description": "Grass merilis klien node bertahap: Desktop App (full control) → Browser Extension (ringan) → Mobile App iOS/Android (mass market) → Lite Node WASM (zero-install, lingkungan terbatasi) — setiap lapisan menambah segmen pengguna baru tanpa cannibalization",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(HIGH) 【Phase 3 — EV-003 Beta Desktop/Ext】【Phase 3 — EV-006 Mainnet Clients】【Phase 3 — EV-007 Mobile】【Phase 3 — EV-008 Lite】【Phase 4 — Core Components 4 Client Types】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-003",
+        "EV-006",
+        "EV-007",
+        "EV-008"
+      ]
+    },
+    {
+      "id": "grass-K-003",
+      "projectSlug": "grass",
+      "name": "Coordinator Terpusat sebagai Trusted Bridge Sementara dengan Roadmap Desentralisasi Eksplisit via ZK/TEE",
+      "category": "Core Insight",
+      "description": "Proyek menerima trust assumption Coordinator (Wynd Labs) untuk penugasan tugas & reward calculation saat ini, sambil investasi berat R&D ZK Prover (RISC Zero/SP1) & TEE (Intel TDX/AMD SEV) untuk verifikasi trustless di Rollup — bukan patch incremental",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(HIGH) 【Phase 4 — Architecture Coordinator】【Phase 4 — Known Limitations #1 #7】【Phase 3 — EV-011 Rollup ZK/TEE】【Phase 4 — Security Model Layer 3 & 5】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-011"
+      ]
+    },
+    {
+      "id": "grass-K-004",
+      "projectSlug": "grass",
+      "name": "Fundraising Modest (Seed $3.5M + Strategic) → TGE sebagai Liquidity Event Utama",
+      "category": "Core Insight",
+      "description": "Grass mengumpulkan dana equity/SAFT modest dari VC tier-1 (Polychain, Hack VC, Delphi) dan strategic (Brevan Howard) tanpa Series A besar publik, mengandalkan TGE + Launchpool + Multi-CEX listing untuk likuiditas besar dan treasury token",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(HIGH) 【Phase 3 — EV-002 Seed Funding】【Phase 3 — EV-005 Strategic】【Phase 5 — Funding History $3.5M Only Disclosed】【Phase 5 — Fundraising Mechanism VC + Launchpool】【Phase 6 — Token Sale Launchpool 3%】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-002",
+        "EV-005"
+      ]
+    },
+    {
+      "id": "grass-K-005",
+      "projectSlug": "grass",
+      "name": "Treasury Dominan Native Token (GRASS) di Multi-sig Foundation Belum Diversifikasi",
+      "category": "Core Insight",
+      "description": "Grass Foundation treasury hampir seluruhnya token GRASS (alokasi Ecosystem/Foundation/Community per tokenomics) tanpa laporan diversifikasi ke USDC/SOL/yield-bearing asset secara publik — menciptakan concentration risk tinggi",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(HIGH) 【Phase 5 — Treasury Composition Native Token Only】【Phase 2 — Entity Grass Foundation】【Phase 6 — Token Distribution】【Phase 5 — Financial Risk Concentration Risk】",
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "grass-K-006",
+      "projectSlug": "grass",
+      "name": "Listing Simultaneous Multi-CEX Tier-1 + DeFi Native Integration Instan Pasca-TGE",
+      "category": "Core Insight",
+      "description": "TGE 28 Okt 2024 listing bersamaan di 6 CEX utama (Binance, Bybit, Coinbase, Gate.io, KuCoin, OKX) didukung Binance Launchpool, diikuti integrasi DeFi lengkap dalam 2 minggu (Raydium, Orca, Kamino, Drift, Jupiter, Phantom, Solflare, Backpack) — menanam GRASS ke ekosistem Solana DeFi secepatnya",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(HIGH) 【Phase 3 — EV-012 TGE Multi-CEX】【Phase 7 — Exchange Ecosystem 6 CEX】【Phase 3 — EV-013 Staking】【Phase 3 — EV-014 DeFi Integrations】【Phase 8 — Trading Markets 6 CEX + DEX】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-012",
+        "EV-013",
+        "EV-014"
+      ]
+    },
+    {
+      "id": "grass-K-007",
+      "projectSlug": "grass",
+      "name": "Pemisahan Entitas Pengembang (Wynd Labs) dan Governance/Treasury (Grass Foundation) Sebelum TGE",
+      "category": "Core Insight",
+      "description": "Mendirikan Foundation terpisah (BVI/Cayman) 1 bulan sebelum TGE untuk memisahkan tanggung jawab hukum: Wynd Labs = core dev (for-profit), Foundation = treasury, governance, ecosystem grants (non-profit) — legal wrapper offshore untuk token issuance",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(HIGH) 【Phase 3 — EV-010 Foundation Formation】【Phase 2 — Entity Wynd Labs vs Grass Foundation】【Phase 5 — Treasury Custodian Multi-sig】【Phase 6 — Governance】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-010"
+      ]
+    },
+    {
+      "id": "grass-K-008",
+      "projectSlug": "grass",
+      "name": "Governance Off-Chain (Foundation Multi-sig) Saat Ini, Transisi On-Chain Direncanakan",
+      "category": "Core Insight",
+      "description": "Keputusan protokol saat ini dikendalikan multi-sig Foundation (Squads/Safe) dengan threshold signing; smart contract Governance Program sudah dideploy tapi belum aktif penuh untuk DAO voting — Foundation bertindak sebagai steward sementara",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(HIGH) 【Phase 2 — Entity Grass Foundation】【Phase 4 — Core Components Governance Program】【Phase 5 — Treasury Custodian Multi-sig】【Phase 6 — Governance】【Phase 2 — Entity DAO: tidak ada】",
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "grass-K-009",
+      "projectSlug": "grass",
+      "name": "Revenue Model Enterprise Data Sales (B2B AI Labs) Jangka Panjang, Token Incentives sebagai Bridge Jangka Pendek",
+      "category": "Core Insight",
+      "description": "Mengakui revenue protocol (penjualan data scraping) masih early stage/not disclosed, menggunakan token emissions (Epoch points, staking rewards, ecosystem incentives) untuk subsidize node operator growth hingga product-market fit data sales terbukti",
+      "confidence": 60,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(MEDIUM) 【Phase 5 — Revenue Model Enterprise Data Sales Live but Early】【Phase 5 — Financial Risk Revenue Uncertainty】【Phase 3 — EV-015 Ecosystem Incentives】【Phase 8 — Narrative AI Data Layer】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-015"
+      ]
+    },
+    {
+      "id": "grass-K-010",
+      "projectSlug": "grass",
+      "name": "Audit Bertahap: Smart Contract Dulu (Halborn), Infrastructure Lanjut (Kudelski), Rollup/ZK Terakhir",
+      "category": "Core Insight",
+      "description": "Memrioritaskan audit komponen on-chain (token, staking, governance) untuk TGE/CEX listing, diikuti audit infrastruktur off-chain, dan menunda audit ZK/TEE hingga rollup devnet ready — audit Halborn published Agustus 2024 (2 Critical, 3 High remediated)",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(HIGH) 【Phase 3 — EV-009 Halborn Audit】【Phase 4 — Audit History Halborn/Kudelski/Planned ZK】【Phase 7 — Major Integrations Halborn/Kudelski】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-009"
+      ]
+    },
+    {
+      "id": "grass-K-011",
+      "projectSlug": "grass",
+      "name": "Modular Architecture First — Pisahkan Settlement (Solana) dari Execution (Custom Rollup) untuk Optimasi Khusus",
+      "category": "Strategic Principle",
+      "description": "Memilih Solana sebagai L1 settlement final (token, staking, governance, anchoring) sambil membangun rollup eksekusi kustom (non-SVM) untuk tugas scraping/validasi data yang intensif komputasi — tidak terikat pada SVM constraints",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(HIGH) 【Phase 4 — System Architecture Settlement vs Execution】【Phase 3 — EV-011 Sovereign Rollup】【Phase 8 — Narrative Modular Rollup】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-011"
+      ]
+    },
+    {
+      "id": "grass-K-012",
+      "projectSlug": "grass",
+      "name": "Progressive Decentralization dengan Roadmap Teknis Eksplisit — Coordinator Terpusat → ZK/TEE Verified Rollup",
+      "category": "Strategic Principle",
+      "description": "Menerima trust assumption Coordinator (Wynd Labs) untuk penugasan tugas & reward calculation saat ini, sambil investasi berat R&D ZK Prover (RISC Zero/SP1) & TEE (Intel TDX/AMD SEV) untuk verifikasi trustless di Rollup — bukan patch incremental",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(HIGH) 【Phase 4 — Architecture Coordinator】【Phase 4 — Known Limitations #1 #7】【Phase 3 — EV-011 Rollup ZK/TEE】【Phase 4 — Security Model Layer 3 & 5】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-011"
+      ]
+    },
+    {
+      "id": "grass-K-013",
+      "projectSlug": "grass",
+      "name": "Ecosystem First — Integrasi DeFi & Wallet Lengkap dalam Mingguan Pasca-TGE",
+      "category": "Strategic Principle",
+      "description": "Pasca-TGE segera mengaktifkan full DeFi stack: Raydium/Orca (liquidity), Kamino (lending/leverage), Drift (perp), Jupiter (routing), Phantom/Solflare/Backpack (wallet) — menanam token ke ekosistem Solana DeFi untuk utility & retention",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(HIGH) 【Phase 3 — EV-013 Staking】【Phase 3 — EV-014 DeFi Integrations】【Phase 7 — Major Integrations DeFi & Wallet】【Phase 8 — Trading Markets DEX/Perp】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-013",
+        "EV-014"
+      ]
+    },
+    {
+      "id": "grass-K-014",
+      "projectSlug": "grass",
+      "name": "Community Incentive Alignment via Epoch Points → Token Conversion",
+      "category": "Strategic Principle",
+      "description": "Sistem Epoch berjenjang (mulai Juni 2023) mengukur uptime & bandwidth terverifikasi, poin dikonversi ke token GRASS pada TGE — menciptakan alignment early adopters & node operators dengan token holders",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(HIGH) 【Phase 3 — EV-004 Epoch System Launch】【Phase 3 — EV-012 TGE Airdrop Claim】【Phase 8 — Adoption Metrics 2.5M+ Nodes】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-004",
+        "EV-012"
+      ]
+    },
+    {
+      "id": "grass-K-015",
+      "projectSlug": "grass",
+      "name": "Security Before Growth — Audit Tier-1 (Halborn) Prasyarat Listing CEX & Trust",
+      "category": "Strategic Principle",
+      "description": "Memilih auditor brand-name (Halborn) untuk smart contract audit publik, serta auditor infrastruktur (Kudelski) untuk backend/cloud/node client, remediate semua critical/high findings sebelum TGE — sinyal keamanan enterprise-grade",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(HIGH) 【Phase 3 — EV-009 Halborn Audit】【Phase 4 — Audit History Halborn/Kudelski】【Phase 7 — Major Integrations Halborn/Kudelski】【Phase 4 — Security Model Layer 2】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-009"
+      ]
+    },
+    {
+      "id": "grass-K-016",
+      "projectSlug": "grass",
+      "name": "Legal Wrapper Offshore (Foundation) untuk Token Issuance & Regulatory Risk Mitigation",
+      "category": "Strategic Principle",
+      "description": "Membentuk Foundation nirlaba offshore (BVI/Cayman) 1 bulan sebelum TGE untuk token issuance; menggunakan Binance Launchpool (farming gratis, bukan public sale) untuk distribusi retail; menghindari ICO — memisahkan dev entity (Wynd Labs, for-profit) dari protocol stewardship (Foundation, non-profit)",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(HIGH) 【Phase 2 — Entity Grass Foundation】【Phase 3 — EV-010 Foundation Formation】【Phase 3 — EV-012 Launchpool】【Phase 5 — Financial Risk Regulatory】【Phase 6 — Token Sale Launchpool】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-010",
+        "EV-012"
+      ]
+    },
+    {
+      "id": "grass-K-017",
+      "projectSlug": "grass",
+      "name": "Multi-Platform Node Distribution — Desktop → Extension → Mobile → WASM untuk Maksimalkan Jangkauan Non-Teknis",
+      "category": "Strategic Principle",
+      "description": "Merilis klien node secara bertahap menurunkan barrier to entry: Desktop app (full control) → Browser Extension (ringan) → Mobile App (mass market) → Lite Node WASM (zero-install, lingkungan terbatasi korporat/sekolah)",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(HIGH) 【Phase 3 — EV-003 Beta Desktop/Ext】【Phase 3 — EV-006 Mainnet Clients】【Phase 3 — EV-007 Mobile】【Phase 3 — EV-008 Lite】【Phase 4 — Core Components 4 Client Types】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-003",
+        "EV-006",
+        "EV-007",
+        "EV-008"
+      ]
+    },
+    {
+      "id": "grass-K-018",
+      "projectSlug": "grass",
+      "name": "Infrastructure Grade Enterprise — Cloud Native (K8s, Kafka, ClickHouse, Multi-RPC Helius/Triton) Sejak Awal",
+      "category": "Strategic Principle",
+      "description": "Mengadopsi stack enterprise-grade (AWS/GCP, Kubernetes, Kafka, ClickHouse, Helius/Triton RPC) sejak awal untuk handle throughput tugas scraping & point calculation skala jutaan node — bukan public RPC biasa",
+      "confidence": 60,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(MEDIUM) 【Phase 4 — Current Technical Stack Infrastructure RPC Providers Message Queue Storage】【Phase 7 — Infrastructure Providers Helius/Triton】【Phase 3 — EV-011 Rollup RPC Needs】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-011"
+      ]
+    },
+    {
+      "id": "grass-K-019",
+      "projectSlug": "grass",
+      "name": "Timing TGE dengan Multi-CEX Tier-1 Simultaneous Listing + Launchpool Menciptakan Likuiditas Instan & Distribusi Global",
+      "category": "Success Factor",
+      "description": "Koordinasi listing 6 CEX utama (Binance, Bybit, Coinbase, Gate.io, KuCoin, OKX) bersamaan hari TGE 28 Okt 2024 didukung Binance Launchpool farming 3% supply — capture retail global & institutional US sekaligus, volume hari pertama $150-300M",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(HIGH) 【Phase 3 — EV-012 TGE Multi-CEX】【Phase 7 — Exchange Ecosystem 6 CEX】【Phase 8 — Trading Markets 6 CEX Live Same Day】【Phase 8 — Liquidity Sources Major CEX】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-012"
+      ]
+    },
+    {
+      "id": "grass-K-020",
+      "projectSlug": "grass",
+      "name": "Sistem Epoch Points (Mulai Juni 2023) Membangun Komunitas & Metrik Partisipasi Terukur Sebelum Token Ada",
+      "category": "Success Factor",
+      "description": "Epoch system mengukur uptime & bandwidth terverifikasi, leaderboard komunitas, snapshot untuk airdrop TGE — menciptakan budaya \"farming\" poin yang mendorong retensi node & sybil resistance awal",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(HIGH) 【Phase 3 — EV-004 Epoch System Launch】【Phase 3 — EV-012 TGE Airdrop Epoch 1-7】【Phase 8 — Adoption Metrics 2.5M+ Nodes Claimed】【Phase 4 — Coordinator Proof of Bandwidth】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-004",
+        "EV-012"
+      ]
+    },
+    {
+      "id": "grass-K-021",
+      "projectSlug": "grass",
+      "name": "Ekspansi Platform Node Bertahap (4 Klien) Mencapai 2.5M+ Registered Nodes",
+      "category": "Success Factor",
+      "description": "Desktop → Extension → Mobile (iOS/Android) → Lite WASM — setiap lapisan menambah segmen baru: non-teknis, mobile-only, lingkungan terbatasi (korporat/sekolah) — diversifikasi ISP/geografi",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(HIGH) 【Phase 3 — EV-003/006/007/008 Client Releases】【Phase 4 — Core Components 4 Types】【Phase 8 — Adoption Metrics 2.5M+ Nodes】【Phase 8 — Narrative Token Incentivized Infrastructure】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-003"
+      ]
+    },
+    {
+      "id": "grass-K-022",
+      "projectSlug": "grass",
+      "name": "Investor Tier-1 (Polychain, Hack VC, Delphi, Brevan Howard) Memberikan Credibility & Network Effects",
+      "category": "Success Factor",
+      "description": "Seed $3.5M dari VC crypto terkemuka fokus DePIN/AI + strategic Brevan Howard — sinyal kualitas untuk talenta, exchange, partner, dan komunitas",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(HIGH) 【Phase 3 — EV-002 Seed Funding】【Phase 3 — EV-005 Strategic】【Phase 5 — Funding History】【Phase 5 — Financial Dependencies VC Investors】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-002",
+        "EV-005"
+      ]
+    },
+    {
+      "id": "grass-K-023",
+      "projectSlug": "grass",
+      "name": "DeFi Integration Instan Pasca-TGE Menanam Utility Token di Ekosistem Solana",
+      "category": "Success Factor",
+      "description": "Staking live hari TGE, Raydium/Orca/Kamino/Drift/Jupiter dalam 2 minggu — GRASS jadi aset DeFi native Solana dengan TVL agregat $10M+, yield strategies, hedging perp",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(HIGH) 【Phase 3 — EV-013 Staking】【Phase 3 — EV-014 DeFi Integrations】【Phase 7 — Major Integrations DeFi】【Phase 8 — Trading Markets DEX/Perp】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-013",
+        "EV-014"
+      ]
+    },
+    {
+      "id": "grass-K-024",
+      "projectSlug": "grass",
+      "name": "Audit Halborn Published Pre-TGE (Agustus 2024) Memenuhi Prasyarat CEX & Membangun Trust",
+      "category": "Success Factor",
+      "description": "Audit komprehensif (Token, Staking, Governance, Verifier, Rust client) 2 Critical 3 High findings remediated — persyaratan Binance/Coinbase terpenuhi, zero exploit pasca-TGE",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(HIGH) 【Phase 3 — EV-009 Halborn Audit】【Phase 4 — Audit History Halborn】【Phase 4 — Security Model Layer 2】【Phase 7 — Major Integrations Halborn】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-009"
+      ]
+    },
+    {
+      "id": "grass-K-025",
+      "projectSlug": "grass",
+      "name": "Naratif Dual DePIN + AI Data Layer Menarik Kapital & Perhatian Dua Sektor Panas",
+      "category": "Success Factor",
+      "description": "Diklasifikasikan DePIN Bandwidth (Messari, CoinGecko) & AI Data Layer (Sovereign Rollup untuk structured AI training data) — positioning di intersection dua naratif terbesar 2024",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(HIGH) 【Phase 1 — Category DePIN AI Data Layer】【Phase 8 — Narrative Position DePIN & AI Data Layer Main】【Phase 3 — EV-011 Sovereign Rollup】【Phase 7 — External Dependencies IPFS/Arweave/RISC Zero】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-011"
+      ]
+    },
+    {
+      "id": "grass-K-026",
+      "projectSlug": "grass",
+      "name": "Pemisahan Wynd Labs (Dev) & Grass Foundation (Governance/Treasury) Memberikan Legal Clarity",
+      "category": "Success Factor",
+      "description": "Foundation non-profit offshore (BVI/Cayman) mengelola treasury token & ecosystem grants; Wynd Labs fokus core dev — legal wrapper untuk token issuance, regulatory risk mitigation",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(HIGH) 【Phase 2 — Entity Wynd Labs vs Grass Foundation】【Phase 3 — EV-010 Foundation Formation】【Phase 5 — Treasury Custodian Multi-sig】【Phase 6 — Governance】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-010"
+      ]
+    },
+    {
+      "id": "grass-K-027",
+      "projectSlug": "grass",
+      "name": "Coordinator Terpusat Menjadi Single Point of Failure & Trust Assumption Hingga Rollup Live",
+      "category": "Failure Factor",
+      "description": "Penugasan tugas scraping, verifikasi bandwidth, perhitungan reward sepenuhnya dikelola server Wynd Labs — risiko downtime, sensor, manipulasi poin ada hingga Rollup ZK/TEE live (target 2025)",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(HIGH) 【Phase 4 — Architecture Coordinator】【Phase 4 — Known Limitations #1 Centralized Coordinator】【Phase 4 — Security Model Layer 3】【Phase 3 — EV-011 Rollup Decentralization Roadmap】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-011"
+      ]
+    },
+    {
+      "id": "grass-K-028",
+      "projectSlug": "grass",
+      "name": "Treasury Concentration Risk — Hampir 100% Native Token (GRASS) Tanpa Diversifikasi Publik",
+      "category": "Failure Factor",
+      "description": "Foundation treasury dominan GRASS (alokasi Ecosystem/Foundation/Community) tanpa laporan diversifikasi ke stablecoin/yield-bearing asset — nilai treasury fluktuasi drastis mengikuti harga token",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(HIGH) 【Phase 5 — Treasury Composition Native Token Only】【Phase 5 — Financial Risk Concentration Risk】【Phase 2 — Entity Grass Foundation】【Phase 6 — Token Distribution】",
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "grass-K-029",
+      "projectSlug": "grass",
+      "name": "Revenue Uncertainty — Model Penjualan Data ke AI Labs Masih Early Stage/Tidak Terverifikasi Publik",
+      "category": "Failure Factor",
+      "description": "Tidak ada laporan pendapatan historis diverifikasi; enterprise data sales baru mulai komersialisasi; operasional bergantung treasury token & dana VC tersisa — runway dependency",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(HIGH) 【Phase 5 — Revenue Model Enterprise Data Sales Live but Early】【Phase 5 — Financial Risk Revenue Uncertainty】【Phase 5 — Financial Dependencies Enterprise Data Buyers】【Phase 3 — EV-015 Ecosystem Incentives as Bridge】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-015"
+      ]
+    },
+    {
+      "id": "grass-K-030",
+      "projectSlug": "grass",
+      "name": "Keterbatasan Lite Node (WASM) — Performa Terbatas Sandbox Browser",
+      "category": "Failure Factor",
+      "description": "CPU single-thread Web Worker, memory limit ~2-4GB, tidak bisa raw socket/TCP/UDP hanya WebSocket/WebRTC — tidak cocok tugas scraping berat/parser kompleks",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(HIGH) 【Phase 4 — Core Components Lite Node】【Phase 4 — Known Limitations #3 Lite Node WASM】【Phase 4 — Documentation Lite Node】",
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "grass-K-031",
+      "projectSlug": "grass",
+      "name": "Mobile OS Restrictions Mengurangi Uptime Efektif Node Mobile vs Desktop",
+      "category": "Failure Factor",
+      "description": "iOS Network Extension/VPN API batasan throughput, background execution time; Android foreground service notification wajib — mengurangi uptime efektif node mobile",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(HIGH) 【Phase 4 — Core Components Mobile App】【Phase 4 — Known Limitations #4 Mobile OS Restrictions】【Phase 3 — EV-007 Mobile Launch】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-007"
+      ]
+    },
+    {
+      "id": "grass-K-032",
+      "projectSlug": "grass",
+      "name": "Ketergantungan RPC Eksternal (Helius/Triton) — Single Point of Failure Jika Provider Utama Down",
+      "category": "Failure Factor",
+      "description": "Ketersediaan & latency RPC memengaruhi Dashboard, Indexer, Sequencer Rollup; mitigasi: multi-provider fallback tapi belum diverifikasi otomatis",
+      "confidence": 60,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(MEDIUM) 【Phase 4 — Current Technical Stack RPC Providers】【Phase 7 — Infrastructure Providers Helius/Triton】【Phase 4 — Known Limitations #6 RPC Dependency】",
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "grass-K-033",
+      "projectSlug": "grass",
+      "name": "Belum Ada Bukti Formal (ZK/TEE) di Mainnet — Verifikasi Integritas Masih \"Trusted Coordinator\"",
+      "category": "Failure Factor",
+      "description": "ZK Prover (RISC Zero/SP1) & TEE Attestation masih tahap R&D/Devnet; belum terbukti biaya komputasi (proving time/cost) untuk volume data skala internet",
+      "confidence": 60,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(MEDIUM) 【Phase 4 — Architecture ZK/TEE Module】【Phase 4 — Known Limitations #7 No Formal Proof Mainnet】【Phase 3 — EV-011 Rollup Announcement】【Phase 8 — Narrative Modular Rollup Future】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-011"
+      ]
+    },
+    {
+      "id": "grass-K-034",
+      "projectSlug": "grass",
+      "name": "Tidak Ada DAO/Token Voting Aktif pada Fase Awal — Foundation Multisig Sementara",
+      "category": "Failure Factor",
+      "description": "Berbeda banyak proyek launch DAO day-1, Grass menunda token voting on-chain; Governance Program dideploy tapi tidak aktif — keputusan kritis (grant, parameter, upgrade) via Foundation multisig",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(HIGH) 【Phase 2 — Entity DAO: tidak ada】【Phase 4 — Core Components Governance Program】【Phase 5 — Treasury Custodian Multi-sig】【Phase 6 — Governance】",
+      "relatedKnowledge": [],
+      "dependencies": []
+    },
+    {
+      "id": "grass-K-035",
+      "projectSlug": "grass",
+      "name": "Observe — Validasi Arsitektur & Product-Market Fit via Private Beta (Mar 2023)",
+      "category": "Decision Framework",
+      "description": "Private beta invite-only untuk ekstensi browser & desktop app — validasi Proof of Bandwidth & sistem poin internal sebelum buka publik",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(HIGH) 【Phase 3 — EV-003 Private Beta Launch】【Phase 9 — Behavioral Decision Private Beta】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-003"
+      ]
+    },
+    {
+      "id": "grass-K-036",
+      "projectSlug": "grass",
+      "name": "Evaluate — Publik Testnet & Epoch System (Jun 2023) untuk Metrik Kuantitatif & Komunitas",
+      "category": "Decision Framework",
+      "description": "Buka testnet publik dengan sistem Epoch berjenjang (uptime, bandwidth terverifikasi) — etablisasi metrik untuk alokasi token masa depan & insentif early adopters",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(HIGH) 【Phase 3 — EV-004 Public Testnet Epoch System】【Phase 9 — Behavioral Decision Epoch System】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-004"
+      ]
+    },
+    {
+      "id": "grass-K-037",
+      "projectSlug": "grass",
+      "name": "Fund — Seed $3.5M dari VC Tier-1 (Jul 2023) untuk Ekspansi Tim & Infra",
+      "category": "Decision Framework",
+      "description": "Polychain, Hack VC, Delphi Ventures lead — dana untuk rekrutmen senior, infrastruktur cloud, audit keamanan, persiapan mainnet skala besar",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(HIGH) 【Phase 3 — EV-002 Seed Funding】【Phase 9 — Behavioral Decision Seed Funding】【Phase 5 — Funding History】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-002"
+      ]
+    },
+    {
+      "id": "grass-K-038",
+      "projectSlug": "grass",
+      "name": "Develop — Mainnet Launch (Mar 2024) Transisi Produksi + Smart Contract Token",
+      "category": "Decision Framework",
+      "description": "Keluar beta, jaringan produksi live di Solana, smart contract token deploy (non-transferable pre-TGE), Coordinator stabil, node clients versi mainnet",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(HIGH) 【Phase 3 — EV-006 Mainnet Launch】【Phase 9 — Behavioral Decision Mainnet Launch】【Phase 4 — Architecture Settlement Layer】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-006"
+      ]
+    },
+    {
+      "id": "grass-K-039",
+      "projectSlug": "grass",
+      "name": "Expand — Mobile App & Lite Node (Jun-Jul 2024) untuk Skala Jutaan Node",
+      "category": "Decision Framework",
+      "description": "iOS TestFlight/Android APK + Lite Node WASM — ekspansi ke non-teknis, mobile-only, lingkungan terbatasi; diversifikasi ISP/geografi",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(HIGH) 【Phase 3 — EV-007 Mobile】【Phase 3 — EV-008 Lite Node】【Phase 9 — Behavioral Decision Mobile/Lite】【Phase 4 — Core Components Mobile/Lite】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-007",
+        "EV-008"
+      ]
+    },
+    {
+      "id": "grass-K-040",
+      "projectSlug": "grass",
+      "name": "Secure — Audit Halborn Published (Agus 2024) Prasyarat TGE/CEX Listing",
+      "category": "Decision Framework",
+      "description": "Audit komprehensif smart contract & Rust client, remediate critical/high findings — persyaratan Binance/Coinbase terpenuhi, trust komunitas",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(HIGH) 【Phase 3 — EV-009 Halborn Audit】【Phase 9 — Behavioral Decision Halborn Audit】【Phase 4 — Audit History】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-009"
+      ]
+    },
+    {
+      "id": "grass-K-041",
+      "projectSlug": "grass",
+      "name": "Govern — Grass Foundation Formation (Sep 2024) Legal Wrapper Offshore",
+      "category": "Decision Framework",
+      "description": "Foundation non-profit BVI/Cayman 1 bulan pre-TGE untuk treasury token, governance, ecosystem grants — pisah dari Wynd Labs (dev entity)",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(HIGH) 【Phase 3 — EV-010 Foundation Formation】【Phase 9 — Behavioral Decision Foundation Formation】【Phase 2 — Entity Grass Foundation】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-010"
+      ]
+    },
+    {
+      "id": "grass-K-042",
+      "projectSlug": "grass",
+      "name": "Architect — Sovereign Data Rollup Announcement (Sep 2024) Roadmap Desentralisasi",
+      "category": "Decision Framework",
+      "description": "Rollup kustom (non-SVM) dengan ZK Prover/TEE untuk verifikasi trustless scraping — menghilangkan Coordinator trust assumption, diferensiasi teknis",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(HIGH) 【Phase 3 — EV-011 Sovereign Rollup】【Phase 9 — Behavioral Decision Rollup Announcement】【Phase 4 — Architecture Rollup】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-011"
+      ]
+    },
+    {
+      "id": "grass-K-043",
+      "projectSlug": "grass",
+      "name": "Launch — TGE + Multi-CEX Simultaneous + Launchpool (28 Okt 2024) Liquidity Event",
+      "category": "Decision Framework",
+      "description": "1B supply, ~24% circulating, Launchpool 3%, listing 6 CEX tier-1 bersamaan — distribusi global instan, price discovery, airdrop claim 120k+ holders",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(HIGH) 【Phase 3 — EV-012 TGE】【Phase 9 — Behavioral Decision TGE Multi-CEX】【Phase 6 — Token Sale Launchpool】【Phase 8 — Trading Markets】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-012"
+      ]
+    },
+    {
+      "id": "grass-K-044",
+      "projectSlug": "grass",
+      "name": "Utility — Staking Native + DeFi Integration Instan (Okt-Nov 2024) Token Utility",
+      "category": "Decision Framework",
+      "description": "Staking live hari TGE (mengurangi circulating efektif), DeFi stack lengkap 2 minggu (Raydium, Orca, Kamino, Drift, Jupiter, wallets) — utility beyond spekulasi",
+      "confidence": 90,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(HIGH) 【Phase 3 — EV-013 Staking】【Phase 3 — EV-014 DeFi】【Phase 9 — Behavioral Decision Staking/DeFi】【Phase 7 — Major Integrations DeFi/Wallet】",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-013",
+        "EV-014"
+      ]
+    },
+    {
+      "id": "grass-K-045",
+      "projectSlug": "grass",
+      "name": "Ecosystem — Incentives Program & NFT Reputation (Nov-Des 2024) Flywheel Builder",
+      "category": "Decision Framework",
+      "description": "Grass Foundation grants untuk builder SDK/Rollup; NFT Soulbound Badge (Tensor/Magic Eden) untuk reputasi on-chain & sybil resistance",
+      "confidence": null,
+      "status": null,
+      "updatedAt": null,
+      "author": "CIF",
+      "evidence": [],
+      "evidenceText": "(MEDIUM) 【Phase 3 — EV-015 Ecosystem Incentives】【Phase 3 — EV-016 NFT",
+      "relatedKnowledge": [],
+      "dependencies": [
+        "EV-015",
+        "EV-016"
+      ]
+    }
   ]
 }

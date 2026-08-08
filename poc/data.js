@@ -2,9 +2,9 @@
 window.CIF = {
   "meta": {
     "schema": "cif-export/1",
-    "generated": "2026-08-07 21:36 UTC",
-    "projects": 10,
-    "deep": 10,
+    "generated": "2026-08-08 05:21 UTC",
+    "projects": 12,
+    "deep": 12,
     "summary": 0,
     "sentiment": 0,
     "patterns": 16,
@@ -104,6 +104,24 @@ window.CIF = {
         "points",
         "l2"
       ]
+    },
+    {
+      "n": "Cardano",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Cardano.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "l1"
+      ]
+    },
+    {
+      "n": "Grass",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Grass.md",
+      "cat": "",
+      "era": "",
+      "tags": []
     },
     {
       "n": "Irys",

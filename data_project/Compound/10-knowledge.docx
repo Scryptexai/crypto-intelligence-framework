@@ -1,6 +1,6 @@
 PROJECT: Compound Finance
 
-## Core Insights
+Core Insights
 
 Insight 1: Progressive Decentralization dari Perusahaan ke DAO yang Berfungsi
 · Explanation: Compound memulai sebagai perusahaan terpusat (Compound Labs, Inc. 2017) yang membangun v1 dan v2, lalu bertransisi ke DAO on-chain melalui COMP token launch (2020) dengan Governor Bravo + Timelock, dan kini DAO mengelola parameter, treasury, deployment, dan upgrade melalui 100+ proposal tanpa intervensi sentral【Phase 3 — EV-001】【Phase 3 — EV-005】【Phase 3 — EV-007】【Phase 3 — EV-008】【Phase 3 — EV-013】【Phase 3 — EV-019】【Phase 3 — EV-020】【Phase 9 — Pola 1】
@@ -62,7 +62,7 @@ Insight 10: Major Architecture Rewrite Setiap ~4 Tahun Menunjukkan Siklus Inovas
 · Supporting Dataset: Phase 3 Events, Phase 4 Technology, Phase 9 Evolution Patterns
 · Confidence: HIGH
 
-## Strategic Principles
+Strategic Principles
 
 Principle 1: Security Before Growth — Formal Verification & Multi-Audit untuk Kontrak Immutable
 · Explanation: Compound memprioritaskan jaminan keamanan matematis (Certora formal verification) dan dual audit top-tier (OpenZeppelin + Trail of Bits) untuk SETIAP major release, terutama Comet v3 dengan immutable core — growth (TVL, chain expansion) hanya terjadi setelah assurance tinggi【Phase 4 — Security Model】【Phase 4 — Audit History】【Phase 3 — EV-014】【Phase 9 — Pola 3 & 4】
@@ -112,7 +112,7 @@ Principle 8: Sustainable Treasury via Protocol-Owned Liquidity & Yield Generatio
 · Supporting Dataset: Phase 3 Events, Phase 5 Financial, Phase 8 Narrative, Phase 9 Financial Patterns
 · Confidence: HIGH
 
-## Success Factors
+Success Factors
 
 Factor 1: Early Mover Advantage sebagai DeFi Lending Pioneer (2018)
 · Explanation: Compound v1 (Sept 2018) pertama algorithmic money market on-chain — menetapkan standar arsitektur (cToken, jump rate model, Comptroller) yang difork banyak protokol (Venus, Cream, dll)【Phase 3 — EV-002】【Phase 3 — EV-005】【Phase 4 — Technical Upgrade History】【Phase 8 — Market Position】【Phase 9 — Insight 1】

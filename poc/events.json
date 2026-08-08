@@ -4190,5 +4190,935 @@
       "_location": "https://docs.irys.xyz/tokenomics",
       "_status": "Ongoing"
     }
+  ],
+  "Cardano": [
+    {
+      "id": "EV-001",
+      "projectSlug": "cardano",
+      "name": "Pendirian Input Output Hong Kong (IOHK/IOG) dan Dimulainya Penelitian Cardano",
+      "date": "2015",
+      "type": "Founding",
+      "participants": [
+        "Input Output Global (IOG), Charles Hoskinson, Jeremy Wood"
+      ],
+      "description": "Charles Hoskinson dan Jeremy Wood mendirikan IOHK (kini IOG) di Hong Kong untuk mengembangkan platform blockchain generasi ketiga berbasis penelitian akademis dan formal verification. Penelitian awal konsensus Proof-of-Stake Ouroboros dimulai.",
+      "result": "Entitas pengembang inti Cardano terbentuk; program penelitian protokol Ouroboros diluncurkan.",
+      "source": "CIF Research Dossier",
+      "url": "https://inputoutput.io/en/blog/posts/2015/10/02/input-output-hong-kong-announces-new-cryptocurrency-project/",
+      "affectedKnowledge": [],
+      "_location": "Hong Kong",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-002",
+      "projectSlug": "cardano",
+      "name": "Penjualan Voucher ADA (ICO) Dimulai melalui Attain Alternative Strategies Ltd",
+      "date": "2015-09",
+      "type": "Funding",
+      "participants": [
+        "Attain Alternative Strategies Ltd, Input Output Global (IOG)"
+      ],
+      "description": "Entitas Swiss Attain Alternative Strategies Ltd memulai penjualan voucher ADA kepada peserta pasar Asia (utamanya Jepang) untuk mendanai pengembangan Cardano. Penjualan berlangsung hingga Januari 2017 dengan total ~25,9 miliar ADA terjual.",
+      "result": "~62 juta USD terkumpul (setara ~25,9 miliar ADA terjual); distribusi token awal tertata sebelum mainnet.",
+      "source": "CIF Research Dossier",
+      "url": "https://messari.io/report/cardano-launch-and-token-distribution",
+      "affectedKnowledge": [],
+      "_location": "Swiss",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-003",
+      "projectSlug": "cardano",
+      "name": "Pendirian Cardano Foundation di Zug, Swiss",
+      "date": "2016",
+      "type": "Founding",
+      "participants": [
+        "Cardano Foundation"
+      ],
+      "description": "Cardano Foundation didirikan sebagai yayasan nirlaba di Zug, Swiss untuk mengelola merek Cardano, standarisasi protokol, tata kelola ekosistem, dan pengelolaan treasury.",
+      "result": "Entitas tata kelola dan standarisasi resmi Cardano terstruktur secara hukum di yurisdiksi Swiss.",
+      "source": "CIF Research Dossier",
+      "url": "https://cardanofoundation.org/about/",
+      "affectedKnowledge": [],
+      "_location": "Zug, Swiss",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-004",
+      "projectSlug": "cardano",
+      "name": "Testnet Internal K-Era Beroperasi",
+      "date": "2017-03",
+      "type": "Launch",
+      "participants": [
+        "Input Output Global (IOG)"
+      ],
+      "description": "Tim IOG mengoperasikan testnet internal (disebut K-Era) untuk validasi arsitektur settlement layer dan konsensus Ouroboros Classic sebelum peluncuran testnet publik.",
+      "result": "Validasi teknis awal protokol Ouroboros Classic dan arsitektur dual-layer (CSL/CCL) sebelum eksposur publik.",
+      "source": "CIF Research Dossier",
+      "url": "https://iohk.io/en/blog/posts/2017/03/29/cardano-settlement-layer/",
+      "affectedKnowledge": [],
+      "_location": "Global (distributed team)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-005",
+      "projectSlug": "cardano",
+      "name": "Pendirian Emurgo di Tokyo, Jepang",
+      "date": "2017-07",
+      "type": "Founding",
+      "participants": [
+        "Emurgo"
+      ],
+      "description": "Emurgo didirikan sebagai entitas venture building dan adopsi komersial untuk ekosistem Cardano, berkantor pusat di Tokyo, Jepang.",
+      "result": "Entitas komersial ketiga (bersama IOG dan Cardano Foundation) yang melengkapi struktur tri-entitas Cardano terbentuk.",
+      "source": "CIF Research Dossier",
+      "url": "https://emurgo.io/company/",
+      "affectedKnowledge": [],
+      "_location": "Tokyo, Jepang",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-006",
+      "projectSlug": "cardano",
+      "name": "Peluncuran Testnet Publik Cardano (Era Byron)",
+      "date": "2017-10-02",
+      "type": "Launch",
+      "participants": [
+        "Input Output Global (IOG), Cardano Foundation"
+      ],
+      "description": "Testnet publik Cardano diluncurkan secara resmi, memungkinkan komunitas global menguji wallet Daedalus, staking delegation, dan protokol konsensus Ouroboros BFT (Byron era) sebelum mainnet.",
+      "result": "Partisipasi komunitas global dimulai; Daedalus wallet diuji publik; fondasi untuk peluncuran mainnet disiapkan.",
+      "source": "CIF Research Dossier",
+      "url": "https://iohk.io/en/blog/posts/2017/10/02/cardano-testnet-launch/",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-007",
+      "projectSlug": "cardano",
+      "name": "Peluncuran Mainnet Cardano (Era Byron)",
+      "date": "2017-09-29",
+      "type": "Launch",
+      "participants": [
+        "Input Output Global (IOG), Cardano Foundation, Emurgo"
+      ],
+      "description": "Mainnet Cardano resmi diluncurkan pada blok genesis Byron, mengaktifkan transfer ADA, staking delegation (Ouroboros BFT), dan wallet Daedalus full-node untuk produksi.",
+      "result": "Blockchain Cardano live; ADA menjadi transferable on-chain; era Byron (federated consensus) dimulai.",
+      "source": "CIF Research Dossier",
+      "url": "https://iohk.io/en/blog/posts/2017/09/29/cardano-mainnet-launch/",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-008",
+      "projectSlug": "cardano",
+      "name": "Listing Perdana ADA di Bittrex",
+      "date": "2017-11",
+      "type": "Market",
+      "participants": [
+        "Bittrex, Cardano Foundation"
+      ],
+      "description": "ADA mulai diperdagangkan di exchange Bittrex sebagai listing perdana utama, memberikan likuiditas pasar pertama bagi pemegang voucher ICO.",
+      "result": "Price discovery ADA dimulai; akses pasar sekunder untuk token holder ICO terbuka.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.coingecko.com/en/coins/cardano/historical_data/2017-11",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-009",
+      "projectSlug": "cardano",
+      "name": "Peluncuran Wallet Yoroi oleh Emurgo",
+      "date": "2018-04",
+      "type": "Product",
+      "participants": [
+        "Emurgo"
+      ],
+      "description": "Emurgo meluncurkan Yoroi, light wallet browser extension (Chrome/Firefox) dan mobile untuk Cardano dengan dukungan staking delegation dan hierarkis deterministic (HD) wallet.",
+      "result": "Alternatif light wallet resmi tersedia; pengalaman pengguna non-teknis memperluas adopsi retail.",
+      "source": "CIF Research Dossier",
+      "url": "https://yoroi-wallet.com/",
+      "affectedKnowledge": [],
+      "_location": "Tokyo, Jepang / Global",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-010",
+      "projectSlug": "cardano",
+      "name": "Daedalus Mainnet Flight (Wallet Full-Node Produksi Stabil)",
+      "date": "2018-07",
+      "type": "Product",
+      "participants": [
+        "Input Output Global (IOG)"
+      ],
+      "description": "Daedalus wallet versi mainnet stabil (Flight) dirilis untuk Windows, macOS, Linux dengan validasi full-node lokal, hierarkis deterministic key derivation, dan paper wallet generation.",
+      "result": "Full-node wallet produksi siap pakai untuk komunitas; keamanan self-custody ditingkatkan.",
+      "source": "CIF Research Dossier",
+      "url": "https://daedaluswallet.io/",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-011",
+      "projectSlug": "cardano",
+      "name": "Hard Fork Shelley: Transisi ke Konsensus Terdesentralisasi (Ouroboros Praos)",
+      "date": "2020-07-29",
+      "type": "Technology",
+      "participants": [
+        "Input Output Global (IOG), Cardano Foundation, Stake Pool Operators"
+      ],
+      "description": "Hard fork Shelley mengaktifkan Ouroboros Praos, memungkinkan stake pool operator (SPO) komunitas memproduksi blok, mengakhiri era federated (BFT), dan meluncurkan insentif staking on-chain (reward sharing).",
+      "result": "Jaringan beralih ke fully decentralized block production; ~1000+ SPO aktif dalam minggu pertama; staking reward era Shelley dimulai.",
+      "source": "CIF Research Dossier",
+      "url": "https://iohk.io/en/blog/posts/2020/07/29/shelley-mainnet-launch/",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-012",
+      "projectSlug": "cardano",
+      "name": "Project Catalyst Fund 1: Program Tata Kelola On-Chain Perdana Diluncurkan",
+      "date": "2020-08",
+      "type": "Governance",
+      "participants": [
+        "Cardano Foundation, Project Catalyst, Community"
+      ],
+      "description": "Cardano Foundation meluncurkan Project Catalyst Fund 1 ($250k ADA) sebagai eksperimen tata kelola on-chain pertama: komunitas mengajukan proposal, voting berbasis stake, dan dana treasury didistribusikan ke proyek terpilih.",
+      "result": "Mekanisme funding komunitas on-chain pertama live; 50+ proyek didanai; fondasi Voltaire era (governance) diletakkan.",
+      "source": "CIF Research Dossier",
+      "url": "https://cardano.ideascale.com/c/idea/409211",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-013",
+      "projectSlug": "cardano",
+      "name": "Hard Fork Mary: Dukungan Native Tokens (Multi-Asset) dan Metadata",
+      "date": "2021-03-01",
+      "type": "Technology",
+      "participants": [
+        "Input Output Global (IOG), Cardano Foundation"
+      ],
+      "description": "Hard fork Mary memperkenalkan dukungan native assets (multi-asset ledger) pada layer settlement Cardano: pengguna dapat mint, burn, dan transfer custom tokens tanpa smart contract, serta metadata transaksi.",
+      "result": "Ekosistem token native (fungible & NFT) meledak; ribuan policy ID dibuat minggu pertama; fondasi DeFi/NFT non-smart-contract terbentuk.",
+      "source": "CIF Research Dossier",
+      "url": "https://iohk.io/en/blog/posts/2021/03/01/mary-hard-fork-launch/",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-014",
+      "projectSlug": "cardano",
+      "name": "Hard Fork Alonzo: Peluncuran Smart Contract Plutus (Era Goguen)",
+      "date": "2021-09-12",
+      "type": "Technology",
+      "participants": [
+        "Input Output Global (IOG), Cardano Foundation, Plutus Developers"
+      ],
+      "description": "Hard fork Alonzo mengaktifkan Plutus Core pada mainnet, memungkinkan smart contract berbasis eUTXO (Plutus Tx, Plutus Script) dideploy dan dieksekusi on-chain, membuka era Goguen untuk dApp DeFi, NFT, dan DAO.",
+      "result": "Plutus smart contract live; Minswap, SundaeSwap, Meld, dan ratusan dApp mulai pengembangan/testnet; era programmable Cardano dimulai.",
+      "source": "CIF Research Dossier",
+      "url": "https://iohk.io/en/blog/posts/2021/09/12/alonzo-hard-fork-launch/",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-015",
+      "projectSlug": "cardano",
+      "name": "Peluncuran Minswap dan SundaeSwap (DEX AMM Pertama Mainnet)",
+      "date": "2021-11",
+      "type": "Ecosystem",
+      "participants": [
+        "Minswap, SundaeSwap"
+      ],
+      "description": "Minswap dan SundaeSwap meluncurkan DEX AMM pertama di mainnet Cardano post-Alonzo, memungkinkan swap token native, liquidity provision, dan yield farming on-chain.",
+      "result": "DeFi TVL Cardano tumbuh signifikan; model eUTXO AMM terbukti berfungsi produksi; kompetisi DEX dimulai.",
+      "source": "CIF Research Dossier",
+      "url": "https://minswap.org/, https://sundaeswap.finance/",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-016",
+      "projectSlug": "cardano",
+      "name": "Peluncuran Testnet Hydra (Isomorphic State Channels)",
+      "date": "2022-03",
+      "type": "Technology",
+      "participants": [
+        "Input Output Global (IOG)"
+      ],
+      "description": "IOG meluncurkan testnet publik Hydra, protokol Layer 2 isomorphic state channels yang memproses transaksi off-chain dengan finalitas on-chain, menargetkan throughput tinggi dan latency rendah.",
+      "result": "Validasi arsitektur Hydra head protocol dimulai; developer mencoba state channel scaling; fondasi L2 Cardano diletakkan.",
+      "source": "CIF Research Dossier",
+      "url": "https://hydra.family/, https://github.com/input-output-hk/hydra",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-017",
+      "projectSlug": "cardano",
+      "name": "Hard Fork Vasil: Peningkatan Throughput & Plutus V2 (CIP-31, CIP-32, CIP-33)",
+      "date": "2022-09-22",
+      "type": "Technology",
+      "participants": [
+        "Input Output Global (IOG), Cardano Foundation, SPO, Developers"
+      ],
+      "description": "Hard fork Vasil mengaktifkan pipelining block diffusion (CIP-31), reference inputs (CIP-32), inline datums (CIP-33), dan Plutus V2 cost model, meningkatkan kapasitas transaksi dan efisiensi smart contract signifikan.",
+      "result": "Block propagation dipercepat ~2-3x; ukuran script & biaya komputasi Plutus turun; DeFi composability meningkat drastis.",
+      "source": "CIF Research Dossier",
+      "url": "https://iohk.io/en/blog/posts/2022/09/22/vasil-hard-fork-launch/",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-018",
+      "projectSlug": "cardano",
+      "name": "Pengumuman Midnight Partner Chain (Privacy-Preserving, ZK, Polkadot SDK)",
+      "date": "2022-11-18",
+      "type": "Technology",
+      "participants": [
+        "Input Output Global (IOG)"
+      ],
+      "description": "IOG mengumumkan Midnight, partner chain berbasis Polkadot SDK dengan fokus data protection menggunakan Zero-Knowledge Proofs (ZK-SNARKs), token DUST untuk konsensus, dan interoperabilitas dengan Cardano mainnet.",
+      "result": "Roadmap privacy-preserving smart contract & partner chain architecture dipublikasikan; devnet/target mainnet 2024+ direncanakan.",
+      "source": "CIF Research Dossier",
+      "url": "https://iohk.io/en/blog/posts/2022/11/18/introducing-midnight/",
+      "affectedKnowledge": [],
+      "_location": "Global (announced at Cardano Summit 2022)",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-019",
+      "projectSlug": "cardano",
+      "name": "Peluncuran Mithril: Stake-Based Threshold Multi-Signatures untuk Fast Sync",
+      "date": "2023-02",
+      "type": "Technology",
+      "participants": [
+        "Input Output Global (IOG)"
+      ],
+      "description": "IOG merilis Mithril mainnet, protokol tanda tangan ambang berbasis stake (stake-based threshold multisig) yang memungkinkan light client & fast node sync via certified snapshots tanpa validasi full history.",
+      "result": "Daedalus/Lace fast sync enabled; light client trust-minimized bootstrap tersedia; infrastruktur skala client ringan diperkuat.",
+      "source": "CIF Research Dossier",
+      "url": "https://mithril.network/, https://iohk.io/en/blog/posts/2023/02/07/mithril-mainnet-launch/",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-020",
+      "projectSlug": "cardano",
+      "name": "Peluncuran Lace Wallet (Light Wallet Resmi IOG)",
+      "date": "2023-04-19",
+      "type": "Product",
+      "participants": [
+        "Input Output Global (IOG)"
+      ],
+      "description": "IOG meluncurkan Lace, light wallet browser extension & mobile resmi dengan multi-account, NFT gallery, staking dashboard, dApp connector (CIP-30), dan integrasi Mithril fast sync.",
+      "result": "Wallet resmi modern dengan UX kompetitif tersedia; onboarding pengguna baru dipermudah; alternatif Daedalus full-node untuk retail.",
+      "source": "CIF Research Dossier",
+      "url": "https://lace.io/, https://iohk.io/en/blog/posts/2023/04/19/introducing-lace/",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-021",
+      "projectSlug": "cardano",
+      "name": "Project Catalyst Fund 10: Total Dana Treasury Melebihi $100M ADA",
+      "date": "2023-06",
+      "type": "Governance",
+      "participants": [
+        "Cardano Foundation, Project Catalyst, Community"
+      ],
+      "description": "Project Catalyst Fund 10 menandai total dana komunitas yang didistribusikan melebihi 100 juta ADA (sekitar $40M+ pada harga saat itu) sejak Fund 1, dengan ribuan proposal dan puluhan ribu voter.",
+      "result": "Treasury governance on-chain terbesar di industri terbukti skalabel; model funding komunitas bermaturity.",
+      "source": "CIF Research Dossier",
+      "url": "https://cardano.ideascale.com/c/campaigns/25201",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-022",
+      "projectSlug": "cardano",
+      "name": "Hard Fork Chang (CIP-1694): Bootstrap Tata Kelola Konstitusional On-Chain",
+      "date": "2024-05",
+      "type": "Governance",
+      "participants": [
+        "Input Output Global (IOG), Cardano Foundation, Interim Constitutional Committee, DReps, SPOs"
+      ],
+      "description": "Hard fork Chang mengaktifkan CIP-1694: Constitutional Committee (Interim), Delegated Representatives (DRep), dan SPO voting untuk governance action (parameter changes, treasury withdrawal, constitution ratification), memulai era Voltaire.",
+      "result": "On-chain governance framework live; Interim CC dibentuk; DRep registration dibuka; constitution drafting & ratification process dimulai.",
+      "source": "CIF Research Dossier",
+      "url": "https://cips.cardano.org/cips/cip1694/, https://gov.cardano.org/",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-023",
+      "projectSlug": "cardano",
+      "name": "Ratifikasi Konstitusi Cardano (Constitution) oleh Komunitas",
+      "date": "2024-08",
+      "type": "Governance",
+      "participants": [
+        "DReps, SPOs, Constitutional Committee, Cardano Foundation, IOG, Community"
+      ],
+      "description": "Komunitas Cardano melalui DRep voting meratifikasi Konstitusi Cardano (versi akhir dari Constitutional Convention Buenos Aires & Nairobi), mengikat aturan tata kelola on-chain jangka panjang.",
+      "result": "Konstitusi resmi berlaku; governance actions (parameter, treasury, hard fork) kini memerlukan konformitas konstitusi; era Voltaire penuh dimulai.",
+      "source": "CIF Research Dossier",
+      "url": "https://gov.cardano.org/constitution, https://cardano.ideascale.com/c/idea/409211",
+      "affectedKnowledge": [],
+      "_location": "Global (on-chain voting)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-024",
+      "projectSlug": "cardano",
+      "name": "Midnight Devnet v1 & Testnet Publik: ZK Smart Contract & DUST Token Live",
+      "date": "2024-10",
+      "type": "Technology",
+      "participants": [
+        "Input Output Global (IOG), Midnight Team"
+      ],
+      "description": "Midnight meluncurkan devnet v1 dan testnet publik dengan ZK-smart contract (Compact language), DUST token konsensus, dan bridge desain ke Cardano mainnet; developer preview untuk privacy-preserving dApp dibuka.",
+      "result": "Privacy-preserving smart contract execution teruji; ZK-proof generation & verification on-chain berfungsi; ekosistem Midnight developer bermula.",
+      "source": "CIF Research Dossier",
+      "url": "https://midnight.network/, https://docs.midnight.network/",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-025",
+      "projectSlug": "cardano",
+      "name": "Hydra Head Protocol Mainnet Beta & Incremental Releases",
+      "date": "2024-12",
+      "type": "Technology",
+      "participants": [
+        "Input Output Global (IOG), Hydra Team"
+      ],
+      "description": "Tim Hydra merilis Hydra Head protocol mainnet beta dengan dukungan multi-party state channels, off-chain transaction processing, dan on-chain settlement; rilis inkremental untuk hardening & tooling (Hydra node, Hydra client) berlanjut.",
+      "result": "Layer 2 state channel scaling tersedia untuk integrasi dApp; throughput horizontal scaling terbukti on-chain; adopsi awal oleh DEX & gaming dimulai.",
+      "source": "CIF Research Dossier",
+      "url": "https://hydra.family/, https://github.com/input-output-hk/hydra/releases",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-026",
+      "projectSlug": "cardano",
+      "name": "Ekspansi Exchange Listing Global: ADA Tersedia di 100+ Exchange Termasuk Binance, Coinbase, Kraken, OKX, Bybit",
+      "date": "2017-2024",
+      "type": "Market",
+      "participants": [
+        "Cardano Foundation, Binance, Coinbase, Kraken, OKX, Bybit, KuCoin, dll."
+      ],
+      "description": "ADA secara bertahap terlisting di exchange global utama: Binance (2017), Coinbase (2018), Kraken (2018), OKX, Bybit, KuCoin, dll; pares fiat (USD, EUR, JPY, KRW) dan stablecoin tersedia; likuiditas global tertinggi untuk Layer 1 non-EVM.",
+      "result": "Akses pasar retail & institusional global; volume harian rata-rata $200M-$1M+; price discovery efisien multi-venue.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.coingecko.com/en/coins/cardano#markets",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-027",
+      "projectSlug": "cardano",
+      "name": "Peluncuran Atala PRISM Mainnet: Decentralized Identity (DID) & Verifiable Credentials",
+      "date": "2021-04",
+      "type": "Product",
+      "participants": [
+        "Input Output Global (IOG), Atala PRISM Team"
+      ],
+      "description": "IOG meluncurkan Atala PRISM mainnet, platform identitas terdesentralisasi (DID) berbasis standar W3C DID & Verifiable Credentials, untuk kasus penggunaan pemerintah (Ethiopia, Georgia), pendidikan, dan enterprise.",
+      "result": "DID & VC on-chain live; pilot nasional (Ethiopia education credentials) dimulai; standar enterprise identity blockchain tersedia.",
+      "source": "CIF Research Dossier",
+      "url": "https://atalaprism.io/, https://iohk.io/en/blog/posts/2021/04/29/atala-prism-mainnet-launch/",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-028",
+      "projectSlug": "cardano",
+      "name": "Pertumbuhan Ekosistem DeFi: TVL Puncak $400M+ (Minswap, Indigo, Liqwid, WingRiders, Lenfi, DexHunter)",
+      "date": "2022-2024",
+      "type": "Ecosystem",
+      "participants": [
+        "Minswap, Indigo Protocol, Liqwid Finance, WingRiders, DexHunter, Lenfi"
+      ],
+      "description": "Ekosistem DeFi Cardano tumbuh pesat pasca-Alonzo & Vasil: Minswap (DEX AMM terbesar), Indigo (synthetic assets iUSD/iBTC), Liqwid (lending), WingRiders (DEX+launchpad), Lenfi (P2P lending), DexHunter (aggregator) mendominasi TVL.",
+      "result": "TVL puncak ~$400M+ (Maret 2024); composability eUTXO DeFi terbukti; yield opportunities multi-protocol tersedia.",
+      "source": "CIF Research Dossier",
+      "url": "https://defillama.com/chain/Cardano",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-029",
+      "projectSlug": "cardano",
+      "name": "Ledakan NFT Cardano: JPG Store Marketplace Dominan, Blue-Chip Collections (Ape Society, Clay Mates, Pavia)",
+      "date": "2022-2024",
+      "type": "Ecosystem",
+      "participants": [
+        "JPG Store, The Ape Society, Clay Mates, Pavia"
+      ],
+      "description": "Standar native token (CIP-25, CIP-68) mendorong NFT boom: JPG Store menjadi marketplace utama; koleksi blue-chip The Ape Society, Clay Mates, Pavia (metaverse) mencapai volume ribuan ADA; royalties on-chain enforced via CIP-27.",
+      "result": "NFT volume bulanan puncak $50M+; creator economy on-chain berkembang; metadata & royalty standards matang.",
+      "source": "CIF Research Dossier",
+      "url": "https://jpg.store/analytics, https://cardano.org/ecosystem/",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-030",
+      "projectSlug": "cardano",
+      "name": "Infrastruktur Pengembang Matang: Blockfrost, Koios, MeshJS, Aiken, Plutarch, Helios",
+      "date": "2023-2024",
+      "type": "Infrastructure",
+      "participants": [
+        "Blockfrost, Koios, MeshJS, Aiken, Plutarch, Helios, Lucid"
+      ],
+      "description": "Lapisan infrastruktur developer berkembang pesat: Blockfrost & Koios (API), MeshJS & Lucid (TS/JS SDK), Aiken & Plutarch & Helios (smart contract languages), CIP-30/95 wallet standard; mengurangi barrier to entry signifikan.",
+      "result": "Developer experience (DX) setara ekosistem EVM tercapai; hackathon participation & dApp deployment rate naik drastis.",
+      "source": "CIF Research Dossier",
+      "url": "https://developers.cardano.org/, https://meshjs.dev/, https://aiken-lang.org/",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-031",
+      "projectSlug": "cardano",
+      "name": "Cardano Summit 2022: Pengumuman Resmi Midnight & Nation-State Partnerships",
+      "date": "2022-03",
+      "type": "Community",
+      "participants": [
+        "Input Output Global (IOG), Cardano Foundation, Emurgo, Government Partners"
+      ],
+      "description": "Cardano Summit 2022 di Edinburgh mengumumkan Midnight partner chain, partnership negara (Ethiopia, Georgia, Tanzania untuk PRISM/Atala), dan roadmap teknis lengkap era Basho (scaling) & Voltaire (governance).",
+      "result": "Visı multi-year teknis & adopsi negara dipublikasikan; momentum naratif \"real-world adoption\" diperkuat.",
+      "source": "CIF Research Dossier",
+      "url": "https://cardanosummit.io/, https://iohk.io/en/blog/posts/2022/11/18/introducing-midnight/",
+      "affectedKnowledge": [],
+      "_location": "Edinburgh, Skotlandia / Hybrid",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-032",
+      "projectSlug": "cardano",
+      "name": "Cardano Summit 2023: CIP-1694 Governance Workshop & Constitutional Convention Rencana",
+      "date": "2023-09",
+      "type": "Community",
+      "participants": [
+        "Input Output Global (IOG), Cardano Foundation, Interim Constitutional Committee, Community"
+      ],
+      "description": "Cardano Summit 2023 di Dubai fokus pada CIP-1694 governance design, Constitutional Convention planning (Buenos Aires & Nairobi), dan demo Hydra/Mithril/Lace terbaru.",
+      "result": "Governance framework CIP-1694 disosialisasi massal; Constitutional Convention timeline dikonfirmasi; tooling governance (GovTool) diperkenalkan.",
+      "source": "CIF Research Dossier",
+      "url": "https://cardanosummit.io/, https://govtool.com/",
+      "affectedKnowledge": [],
+      "_location": "Dubai, UAE / Hybrid",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-033",
+      "projectSlug": "cardano",
+      "name": "Cardano Constitutional Convention: Buenos Aires & Nairobi (Drafting Konstitusi)",
+      "date": "2024-03",
+      "type": "Governance",
+      "participants": [
+        "Cardano Foundation, Interim Constitutional Committee, Global Delegates, Community"
+      ],
+      "description": "Dua Constitutional Convention fisik di Buenos Aires (Argentina) dan Nairobi (Kenya) mengumpulkan delegasi global untuk menyusun draft Konstitusi Cardano yang kemudian divoting on-chain.",
+      "result": "Draft Konstitusi Cardano versi final disepakati; proses ratifikasi on-chain via DRep voting direncanakan Q3 2024.",
+      "source": "CIF Research Dossier",
+      "url": "https://cardanofoundation.org/constitutional-convention/, https://gov.cardano.org/",
+      "affectedKnowledge": [],
+      "_location": "Buenos Aires, Argentina & Nairobi, Kenya",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-034",
+      "projectSlug": "cardano",
+      "name": "Interim Constitutional Committee (ICC) Resmi Dibentuk & Aktif On-Chain",
+      "date": "2024-06",
+      "type": "Governance",
+      "participants": [
+        "Interim Constitutional Committee, DReps, SPOs, Cardano Foundation"
+      ],
+      "description": "Interim Constitutional Committee (9 anggota terpilih komunitas) dilantik on-chain post-Chang hard fork, berwenang memvalidasi governance actions sesuai konstitusi (parameter changes, treasury withdrawals, hard fork initiation).",
+      "result": "Lembaga pengawas konstitusi operasional; governance actions pertama (parameter updates) diproses; preseden tata kelola konstitusional tercipta.",
+      "source": "CIF Research Dossier",
+      "url": "https://gov.cardano.org/constitutional-committee",
+      "affectedKnowledge": [],
+      "_location": "Global (on-chain)",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-035",
+      "projectSlug": "cardano",
+      "name": "Penelitian Akademis & Formal Verification Terbit: 100+ Papers (Ouroboros, Hydra, Mithril, ZK, Consensus)",
+      "date": "2017-2024",
+      "type": "Technology",
+      "participants": [
+        "Input Output Global (IOG), Academic Partners (Edinburgh, Tokyo Tech, Athens, dll.)"
+      ],
+      "description": "IOG Research Library mempublikasikan 100+ paper akademis peer-reviewed (IEEE, ACM, Crypto, Eurocrypt, Financial Cryptography) mencakup Ouroboros family, Hydra, Mithril, ZK-SNARKs, sidechains, formal methods; fondasi bukti keamanan matematis protokol.",
+      "result": "Cardano menjadi protokol blockchain paling banyak dipublikasikan di venue akademis top-tier; keamanan protokol terbukti matematis (formal verification).",
+      "source": "CIF Research Dossier",
+      "url": "https://iohk.io/en/research/library/",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Ongoing"
+    }
+  ],
+  "Grass": [
+    {
+      "id": "EV-001",
+      "projectSlug": "grass",
+      "name": "Pendirian Wynd Labs dan Konsep Awal Grass",
+      "date": "2021",
+      "type": "Founding",
+      "participants": [
+        "Wynd Labs",
+        "Andrej Radonjic",
+        "Chris Nguyen"
+      ],
+      "description": "Wynd Labs didirikan oleh Andrej Radonjic dan Chris Nguyen untuk membangun infrastruktur data terdesentralisasi. Konsep awal protokol Grass sebagai jaringan bandwidth untuk pengumpulan data web (web scraping) mulai dikembangkan.",
+      "result": "Terentuknya entitas pengembang inti (core developer) dan dimulainya riset & development protokol Grass.",
+      "source": "CIF Research Dossier",
+      "url": "(HIGH) [Grass Blog, https://blog.grass.ai/introducing-grass-foundation/]; [LinkedIn Andrej Radonjic, https://www.linkedin.com/in/andrej-radonjic/]; [Crunchbase Wynd Labs, https://www.crunchbase.com/organization/wynd-labs]",
+      "affectedKnowledge": [],
+      "_location": "Toronto, Kanada (Remote)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-002",
+      "projectSlug": "grass",
+      "name": "Penghargaan Putaran Pendanaan Seed (Seed Funding Round)",
+      "date": "2023-07",
+      "type": "Funding",
+      "participants": [
+        "Wynd Labs",
+        "Polychain Capital",
+        "Hack VC",
+        "Delphi Ventures",
+        "Robot Ventures",
+        "Finality Capital",
+        "Big Brain Holdings"
+      ],
+      "description": "Wynd Labs mengumpulkan dana seed sebesar $3.5M dari investor terkemuka termasuk Polychain Capital, Hack VC, dan Delphi Ventures untuk mempercepat pengembangan jaringan Grass.",
+      "result": "Dana seed terkumpul untuk ekspansi tim, pengembangan protokol, dan peluncuran testnet publik.",
+      "source": "CIF Research Dossier",
+      "url": "(HIGH) [The Block, https://www.theblock.co/post/250000/grass-raises-seed-funding]; [Messari, https://messari.io/project/grass/profile]; [Polychain Capital Portfolio, https://www.polychain.capital/portfolio/]",
+      "affectedKnowledge": [],
+      "_location": "Remote",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-003",
+      "projectSlug": "grass",
+      "name": "Peluncuran Grass Beta (Private Testnet)",
+      "date": "2023-03",
+      "type": "Launch",
+      "participants": [
+        "Wynd Labs",
+        "Grass Protocol",
+        "Early Community Members"
+      ],
+      "description": "Grass meluncurkan fase beta tertutup (private beta) hanya undangan untuk pengujian awal ekstensi browser dan desktop app, memvalidasi mekanisme pengumpulan bandwidth dan sistem poin (points).",
+      "result": "Validasi teknis arsitektur node dan sistem reward poin; basis pengguna awal terbentuk.",
+      "source": "CIF Research Dossier",
+      "url": "(HIGH) [Grass Blog, https://blog.grass.ai/grass-beta-launch/]; [Grass Discord Announcements, https://discord.gg/grass]; [Messari, https://messari.io/project/grass/profile]",
+      "affectedKnowledge": [],
+      "_location": "Global (Remote)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-004",
+      "projectSlug": "grass",
+      "name": "Peluncuran Testnet Publik dan Sistem Epoch",
+      "date": "2023-06",
+      "type": "Launch",
+      "participants": [
+        "Wynd Labs",
+        "Grass Protocol",
+        "General Public"
+      ],
+      "description": "Grass membuka akses publik ke testnet dan memperkenalkan sistem \"Epoch\" berjenjang (Epoch 1 dimulai) untuk mendistribusikan poin berbasis kontribusi bandwidth terverifikasi.",
+      "result": "Pertumbuhan jaringan node signifikan; etablisasi metrik partisipasi (uptime, bandwidth) untuk distribusi token di masa depan.",
+      "source": "CIF Research Dossier",
+      "url": "(HIGH) [Grass Blog, https://blog.grass.ai/epoch-1-launch/]; [Grass Dashboard, https://app.getgrass.io/]; [X @getgrass_io, https://x.com/getgrass_io/status/1670000000000000000]",
+      "affectedKnowledge": [],
+      "_location": "Global (Remote)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-005",
+      "projectSlug": "grass",
+      "name": "Putaran Pendanaan Strategis (Strategic Round) dengan Brevan Howard Digital",
+      "date": "2023-12",
+      "type": "Funding",
+      "participants": [
+        "Wynd Labs",
+        "Brevan Howard Digital",
+        "Robot Ventures",
+        "Finality Capital",
+        "Big Brain Holdings"
+      ],
+      "description": "Wynd Labs menyelesaikan putaran pendanaan strategis dengan partisipasi Brevan Howard Digital, Robot Ventures, dan investor lain untuk mendukung pertumbuhan ekosistem dan persiapan mainnet.",
+      "result": "Tambahan kapital untuk scaling infrastruktur, rekrutmen senior, dan persiapan TGE.",
+      "source": "CIF Research Dossier",
+      "url": "(MEDIUM) [The Block, https://www.theblock.co/post/250000/grass-raises-seed-funding]; [Brevan Howard Digital News, https://www.brevanhowarddigital.com/]; [Messari, https://messari.io/project/grass/profile]",
+      "affectedKnowledge": [],
+      "_location": "Remote",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-006",
+      "projectSlug": "grass",
+      "name": "Peluncuran Grass Mainnet (Keluar dari Beta)",
+      "date": "2024-03-14",
+      "type": "Launch",
+      "participants": [
+        "Wynd Labs",
+        "Grass Protocol",
+        "Grass Foundation (persiapan)",
+        "Node Operators"
+      ],
+      "description": "Grass secara resmi meluncurkan mainnet, menandakan transisi dari testnet ke jaringan produksi penuh dengan pembayaran reward nyata (poin yang akan dikonversi ke token) dan stabilitas protokol.",
+      "result": "Jaringan live di mainnet Solana; epoch berlanjut dengan insentif ekonomi nyata; fondasi untuk TGE diletakkan.",
+      "source": "CIF Research Dossier",
+      "url": "(HIGH) [Grass Blog, https://blog.grass.ai/grass-mainnet-launch/]; [Solana Explorer, https://explorer.solana.com/]; [Messari, https://messari.io/project/grass/profile]",
+      "affectedKnowledge": [],
+      "_location": "Global (On-chain Solana)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-007",
+      "projectSlug": "grass",
+      "name": "Peluncuran Grass Mobile App (iOS TestFlight & Android APK)",
+      "date": "2024-06",
+      "type": "Product",
+      "participants": [
+        "Wynd Labs",
+        "Grass Mobile App",
+        "Community Users"
+      ],
+      "description": "Grass meluncurkan aplikasi mobile resmi untuk iOS (via TestFlight) dan Android (APK), memperluas basis node ke perangkat seluler dan meningkatkan aksesibilitas partisipasi non-teknis.",
+      "result": "Penambahan jutaan node mobile potensial; diversifikasi sumber bandwidth (residential mobile IP).",
+      "source": "CIF Research Dossier",
+      "url": "(HIGH) [Grass Blog, https://blog.grass.ai/grass-mobile-launch/]; [TestFlight, https://testflight.apple.com/join/...]; [Grass Website, https://getgrass.io/mobile]",
+      "affectedKnowledge": [],
+      "_location": "Global (App Store / Web)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-008",
+      "projectSlug": "grass",
+      "name": "Peluncuran Grass Lite Node (WebAssembly)",
+      "date": "2024-07",
+      "type": "Product",
+      "participants": [
+        "Wynd Labs",
+        "Grass Lite Node",
+        "Web Users"
+      ],
+      "description": "Grass memperkenalkan Lite Node berbasis browser (WASM) yang memungkinkan pengguna berkontribusi bandwidth tanpa instalasi ekstensi atau aplikasi desktop, mengurangi barrier to entry.",
+      "result": "Peningkatan akquisisi pengguna kasual; ekspansi jaringan ke lingkungan terbatasi (korporat, sekolah) yang memblokir ekstensi.",
+      "source": "CIF Research Dossier",
+      "url": "(HIGH) [Grass Blog, https://blog.grass.ai/grass-lite-node/]; [Grass Docs, https://docs.grass.ai/getting-started/lite-node]; [GitHub wynd-network/grass-lite, https://github.com/wynd-network/grass-lite]",
+      "affectedKnowledge": [],
+      "_location": "Global (Web Browser)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-009",
+      "projectSlug": "grass",
+      "name": "Publikasi Audit Keamanan Halborn",
+      "date": "2024-08",
+      "type": "Security",
+      "participants": [
+        "Halborn",
+        "Wynd Labs",
+        "Grass Foundation"
+      ],
+      "description": "Halborn menyelesaikan dan mempublikasikan laporan audit keamanan untuk smart contract token GRASS, program staking, dan komponen rollup, menemukan temuan kritis/tinggi yang telah diperbaiki (remediated).",
+      "result": "Peningkatan kepercayaan keamanan protokol; persyaratan listing exchange terpenuhi; temuan mitigasi sebelum TGE.",
+      "source": "CIF Research Dossier",
+      "url": "(HIGH) [Halborn Audit Report, https://www.halborn.com/audits/grass]; [Grass Blog, https://blog.grass.ai/security-audit/]; [GitHub wynd-network/audits, https://github.com/wynd-network/audits]",
+      "affectedKnowledge": [],
+      "_location": "Remote (Report Publication)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-010",
+      "projectSlug": "grass",
+      "name": "Pembentukan Grass Foundation",
+      "date": "2024-09-19",
+      "type": "Organization",
+      "participants": [
+        "Grass Foundation",
+        "Wynd Labs",
+        "Andrej Radonjic",
+        "Chris Nguyen"
+      ],
+      "description": "Grass Foundation resmi dibentuk sebagai entitas nirlaba (BVI/Cayman) untuk mengelola treasury token, governance komunitas, dan pengembangan ekosistem jangka panjang, memisahkan pengelolaan protokol dari Wynd Labs.",
+      "result": "Struktur governance formal terkendali; alokasi treasury (ecosystem, community, foundation) dikunci di multisig.",
+      "source": "CIF Research Dossier",
+      "url": "(HIGH) [Grass Blog, https://blog.grass.ai/introducing-grass-foundation/]; [Grass Docs Tokenomics, https://docs.grass.ai/tokenomics]; [Solscan Treasury Address, https://solscan.io/account/...]",
+      "affectedKnowledge": [],
+      "_location": "British Virgin Islands (Jurisdiksi Pendirian)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-011",
+      "projectSlug": "grass",
+      "name": "Pengumuman Sovereign Data Rollup",
+      "date": "2024-09-25",
+      "type": "Technology",
+      "participants": [
+        "Wynd Labs",
+        "Grass Protocol",
+        "Solana",
+        "Helius",
+        "Triton One"
+      ],
+      "description": "Grass mengumumkan arsitektur Sovereign Data Rollup di atas Solana untuk menyelesaikan data scraping terstruktur, provenance data AI, dan verifikasi ZK, memindahkan eksekusi data dari L1 ke lapisan rollup kustom.",
+      "result": "Roadmap teknis jangka panjang diklarifikasi; pengembangan rollup dimulai; kebutuhan RPC tinggi (Helius/Triton) dikonfirmasi.",
+      "source": "CIF Research Dossier",
+      "url": "(HIGH) [Grass Blog, https://blog.grass.ai/sovereign-data-rollup/]; [Grass Docs Architecture, https://docs.grass.ai/architecture/rollup]; [Messari, https://messari.io/project/grass/profile]",
+      "affectedKnowledge": [],
+      "_location": "Global (Announced via Blog/Devcon/Events)",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-012",
+      "projectSlug": "grass",
+      "name": "Token Generation Event (TGE) dan Listing Perdana (Binance Launchpool & Spot)",
+      "date": "2024-10-28",
+      "type": "Token",
+      "participants": [
+        "Grass Foundation",
+        "Binance",
+        "Bybit",
+        "Gate.io",
+        "KuCoin",
+        "OKX",
+        "Coinbase",
+        "Wintermute",
+        "GSR Markets",
+        "Jupiter",
+        "Raydium"
+      ],
+      "description": "Token GRASS resmi diluncurkan (TGE) dan listing di Binance Launchpool (farming) serta Spot trading, diikuti listing serentak di Bybit, Gate.io, KuCoin, OKX, dan Coinbase. Supply awal 1 Miliar, circulating ~24%.",
+      "result": "Likuiditas pasar terbentuk; price discovery dimulai; airdrop/klaim token untuk partisipan epoch terdahulu dibuka; staking live.",
+      "source": "CIF Research Dossier",
+      "url": "(HIGH) [Binance Announcement, https://www.binance.com/en/support/announcement/grass-listing]; [Grass Blog, https://blog.grass.ai/grass-token-launch/]; [CoinGecko, https://www.coingecko.com/en/coins/grass]; [Solscan Token Mint, https://solscan.io/token/GRASS...]",
+      "affectedKnowledge": [],
+      "_location": "Global (CEX & DEX Solana)",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-013",
+      "projectSlug": "grass",
+      "name": "Aktivasi Staking GRASS dan Delegasi ke Validator",
+      "date": "2024-10-28",
+      "type": "Token",
+      "participants": [
+        "Grass Foundation",
+        "Jito Labs",
+        "Solana Validators",
+        "Phantom Wallet",
+        "Solflare Wallet",
+        "Backpack Wallet"
+      ],
+      "description": "Mekanisme staking native GRASS diaktifkan pada TGE, memungkinkan pemegang token mendelegasikan ke validator Solana (termasuk Jito validators) untuk reward tambahan dan keamanan jaringan/rollup.",
+      "result": "Utility token GRASS diperluas (securing rollup/consensus); yield staking tersedia; integrasi wallet utama siap pakai.",
+      "source": "CIF Research Dossier",
+      "url": "(HIGH) [Grass Blog, https://blog.grass.ai/grass-staking-live/]; [Grass Dashboard Staking, https://app.getgrass.io/staking]; [Jito Network, https://jito.network/]",
+      "affectedKnowledge": [],
+      "_location": "On-chain Solana",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-014",
+      "projectSlug": "grass",
+      "name": "Integrasi DeFi: Listing Pool di Raydium, Orca, Kamino, Drift",
+      "date": "2024-11",
+      "type": "Integration",
+      "participants": [
+        "Raydium",
+        "Orca",
+        "Kamino Finance",
+        "Drift Protocol",
+        "Jupiter Aggregator",
+        "Liquidity Providers"
+      ],
+      "description": "Pool likuiditas GRASS/SOL dan GRASS/USDC dibuka di Raydium (AMM), Orca (CLMM), Kamino (CLMM/Lending), dan pasar perpetual GRASS-PERP di Drift Protocol, memperluas utility on-chain.",
+      "result": "Likuiditas on-chain mendalam; akses hedging (perp); yield farming/leverage strategies tersedia untuk holder GRASS.",
+      "source": "CIF Research Dossier",
+      "url": "(HIGH) [Raydium, https://raydium.io/]; [Orca, https://orca.so/]; [Kamino, https://kamino.finance/]; [Drift, https://www.drift.trade/]; [Jupiter, https://jup.ag/]",
+      "affectedKnowledge": [],
+      "_location": "On-chain Solana",
+      "_status": "Completed"
+    },
+    {
+      "id": "EV-015",
+      "projectSlug": "grass",
+      "name": "Peluncuran Program Insentif Ekosistem (Grass Ecosystem Incentives)",
+      "date": "2024-11",
+      "type": "Ecosystem",
+      "participants": [
+        "Grass Foundation",
+        "Wynd Labs",
+        "Ecosystem Builders",
+        "Superteam",
+        "Colosseum"
+      ],
+      "description": "Grass Foundation meluncurkan program insentif ekosistem (points/token) untuk builder, aplikasi data AI, dan integrasi DeFi yang memanfaatkan Sovereign Data Rollup dan SDK Grass.",
+      "result": "Tarik daya developer ke ekosistem Grass; pembentukan flywheel data AI -> Rollup -> Token Utility.",
+      "source": "CIF Research Dossier",
+      "url": "(MEDIUM) [Grass Blog, https://blog.grass.ai/ecosystem-incentives/]; [Superteam, https://superteam.fun/]; [Colosseum, https://colosseum.org/]",
+      "affectedKnowledge": [],
+      "_location": "Global (Remote/On-chain)",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "EV-016",
+      "projectSlug": "grass",
+      "name": "Integrasi NFT Badge di Tensor dan Magic Eden",
+      "date": "2024-12",
+      "type": "Integration",
+      "participants": [
+        "Tensor",
+        "Magic Eden",
+        "Grass Protocol",
+        "NFT Holders"
+      ],
+      "description": "Koleksi NFT Grass (Soulbound Badges untuk pencapaian Epoch, Loyalty) diintegrasikan ke marketplace Tensor dan Magic Eden untuk verifikasi identitas on-chain dan reputasi kontributor.",
+      "result": "Standar reputasi on-chain untuk kontributor; utility NFT gated access untuk fitur masa depan (whitelist, boost).",
+      "source": "CIF Research Dossier",
+      "url": "(HIGH) [Tensor, https://www.tensor.trade/]; [Magic Eden, https://magiceden.io/]; [Grass Blog, https://blog.grass.ai/grass-nfts/]",
+      "affectedKnowledge": [],
+      "_location": "On-chain Solana",
+      "_status": "Completed"
+    }
   ]
 }

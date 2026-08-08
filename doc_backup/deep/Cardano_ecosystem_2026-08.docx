@@ -1,0 +1,486 @@
+PROJECT: Cardano
+
+## Ecosystem Position
+
+Primary Sector: Layer 1 Blockchain / Smart Contract Platform
+Secondary Sector: Proof-of-Stake Infrastructure / Decentralized Governance / DeFi & NFT Platform / Enterprise Identity (Atala PRISM)
+Primary Chain: Cardano Mainnet
+Supported Chains: Cardano Mainnet; Testnet Preprod; Testnet Preview; Midnight Partner Chain (Polkadot SDK, ZK privacy); Milkomeda C1 (EVM sidechain, community-operated); Ergo (cross-chain research collaborations)
+Sources: (HIGH) [Cardano Architecture, https://docs.cardano.org/architecture]; (HIGH) [Midnight Network, https://midnight.network/]; (HIGH) [Milkomeda, https://milkomeda.com/]; (MEDIUM) [Cardano Ecosystem Map, https://cardano.org/ecosystem/]
+
+## External Dependencies
+
+Dependency Name: Ouroboros Consensus Research (Academic Partners)
+Dependency Type: Protocol
+Purpose: Formal verification, security proofs, protocol evolution (Praos, Genesis, Leios, Peras) via university partnerships (University of Edinburgh, Tokyo Institute of Technology, University of Athens, others)
+Criticality: Critical
+Status: Live
+Related Entity: Input Output Global (IOG)
+Related Technology Component: Ouroboros Consensus Protocol Family
+Sources: (HIGH) [IOG Research Library, https://iohk.io/en/research/library/]; (HIGH) [IOG Academic Partners, https://inputoutput.io/academic-partners/]
+
+Dependency Name: Haskell Compiler (GHC) & Toolchain
+Dependency Type: SDK
+Purpose: Core protocol implementation (cardano-node, cardano-ledger, ouroboros-consensus, plutus-core) compiled with GHC; runtime dependency
+Criticality: Critical
+Status: Live
+Related Entity: Input Output Global (IOG)
+Related Technology Component: Current Technical Stack (Runtime)
+Sources: (HIGH) [IOG GitHub cardano-node, https://github.com/input-output-hk/cardano-node]; (HIGH) [GHC Official, https://www.haskell.org/ghc/]
+
+Dependency Name: Nix Package Manager (Reproducible Builds)
+Dependency Type: Infrastructure
+Purpose: Reproducible builds for cardano-node, tooling, and CI/CD pipelines across IOG and community operators
+Criticality: High
+Status: Live
+Related Entity: Input Output Global (IOG)
+Related Technology Component: Current Technical Stack (CI/CD)
+Sources: (HIGH) [IOG GitHub Nix Config, https://github.com/input-output-hk/iohk-nix]; (MEDIUM) [NixOS, https://nixos.org/]
+
+Dependency Name: Cloud Providers (AWS, GCP, Azure, DigitalOcean, Hetzner, OVH)
+Dependency Type: Cloud
+Purpose: Hosting for Blockfrost API, Koios API, Ogmios/Kupo indexers, many SPO block producers, relay nodes, and developer infrastructure
+Criticality: High
+Status: Live
+Related Entity: Blockfrost; Koios; Stake Pool Operators (various)
+Related Technology Component: API Layer; P2P Layer
+Sources: (MEDIUM) [Blockfrost Infrastructure, https://blockfrost.io/]; (MEDIUM) [Koios Deployment, https://github.com/cardano-community/koios-artifacts]; (MEDIUM) [SPO Cloud Survey 2023, https://cardano-community.github.io/guild-operators/]
+
+Dependency Name: Verifiable Random Function (VRF) Cryptography (libsodium / cardano-crypto)
+Dependency Type: Security
+Purpose: Leader election in Ouroboros Praos; stake-proportional, private, unpredictable slot leadership
+Criticality: Critical
+Status: Live
+Related Entity: Input Output Global (IOG)
+Related Technology Component: Consensus Mechanism (Leader Election)
+Sources: (HIGH) [IOG Research Ouroboros VRF, https://iohk.io/en/research/library/]; (HIGH) [cardano-crypto GitHub, https://github.com/input-output-hk/cardano-crypto]
+
+Dependency Name: BLS12-381 Curve Libraries (for Midnight ZK)
+Dependency Type: Protocol
+Purpose: Zero-knowledge proof system (ZK-SNARKs) for Midnight partner chain; pairing-based cryptography
+Criticality: High (for Midnight)
+Status: Live (Midnight devnet/testnet)
+Related Entity: Input Output Global (IOG) / Midnight Team
+Related Technology Component: Midnight Partner Chain
+Sources: (HIGH) [Midnight Docs Cryptography, https://docs.midnight.network/]; (MEDIUM) [blst Library, https://github.com/supranational/blst]
+
+Dependency Name: Polkadot SDK (Substrate Framework)
+Dependency Type: Protocol
+Purpose: Midnight partner chain built on Polkadot SDK for sovereign chain with shared security model
+Criticality: High (for Midnight)
+Status: Live (Midnight devnet/testnet)
+Related Entity: Input Output Global (IOG) / Midnight Team
+Related Technology Component: Midnight Partner Chain
+Sources: (HIGH) [Midnight Announcement Polkadot SDK, https://iohk.io/en/blog/posts/2022/11/18/introducing-midnight/]; (HIGH) [Polkadot SDK, https://github.com/paritytech/polkadot-sdk]
+
+Dependency Name: CBOR (Concise Binary Object Representation) Libraries
+Dependency Type: Protocol
+Purpose: Serialization format for all on-chain data structures (blocks, transactions, scripts, certificates)
+Criticality: Critical
+Status: Live
+Related Entity: Input Output Global (IOG)
+Related Technology Component: Current Technical Stack (Serialization)
+Sources: (HIGH) [Cardano Spec CBOR, https://github.com/input-output-hk/cardano-ledger/blob/master/eras/shelley/impl/src/Cardano/Ledger/Binary/Cbor.hs]; (HIGH) [RFC 8949 CBOR, https://www.rfc-editor.org/rfc/rfc8949]
+
+Dependency Name: Ed25519 / Blake2b-256 Cryptographic Primitives
+Dependency Type: Security
+Purpose: Key generation, signing, hashing for all on-chain operations (UTxO, staking, governance)
+Criticality: Critical
+Status: Live
+Related Entity: Input Output Global (IOG)
+Related Technology Component: Security Model (Cryptography)
+Sources: (HIGH) [cardano-crypto GitHub, https://github.com/input-output-hk/cardano-crypto]; (HIGH) [RFC 8032 Ed25519, https://www.rfc-editor.org/rfc/rfc8032]
+
+Dependency Name: Diffie-Hellman Key Exchange / TLS (P2P Networking)
+Dependency Type: Protocol
+Purpose: Secure peer-to-peer communication between cardano-nodes (Diffusion layer with pipelining)
+Criticality: High
+Status: Live
+Related Entity: Input Output Global (IOG)
+Related Technology Component: P2P Layer
+Sources: (HIGH) [Ouroboros Network Framework, https://github.com/input-output-hk/ouroboros-network]
+
+Dependency Name: LLVM / WASM Toolchains (for Aiken, Helios, Cardano Serialization Lib)
+Dependency Type: SDK
+Purpose: Compilation targets for alternative smart contract languages (Aiken → Plutus Core via WASM/LLVM; Helios browser compilation; CSL Rust/WASM bindings)
+Criticality: Medium
+Status: Live
+Related Entity: Aiken Team; Helios Team; MeshJS/CSL Maintainers
+Related Technology Component: Development Framework (SDK)
+Sources: (HIGH) [Aiken Compiler Architecture, https://aiken-lang.org/]; (HIGH) [Helios Compiler, https://helios-lang.io/]; (HIGH) [Cardano Serialization Lib, https://github.com/Emurgo/cardano-serialization-lib]
+
+Dependency Name: GitHub Actions / GitLab CI (CI/CD Platforms)
+Dependency Type: Infrastructure
+Purpose: Automated testing, building, and deployment for core repositories (IOG, Cardano Foundation, Emurgo, community projects)
+Criticality: Medium
+Status: Live
+Related Entity: Input Output Global (IOG); Cardano Foundation; Emurgo; Community Projects
+Related Technology Component: Current Technical Stack (CI/CD)
+Sources: (MEDIUM) [IOG GitHub Actions Workflows, https://github.com/input-output-hk/cardano-node/tree/master/.github/workflows]; (MEDIUM) [Cardano Foundation CI, https://github.com/CardanoFoundation/CIPs/tree/master/.github/workflows]
+
+Dependency Name: Discourse / IdeaScale (Governance Platforms)
+Dependency Type: Service
+Purpose: Project Catalyst proposal submission, discussion, and voting (IdeaScale); CIP discussion (Discourse/GitHub)
+Criticality: High (for governance operations)
+Status: Live
+Related Entity: Cardano Foundation; Project Catalyst
+Related Technology Component: Project Catalyst; CIP Process
+Sources: (HIGH) [Project Catalyst IdeaScale, https://cardano.ideascale.com/]; (HIGH) [CIP Discourse, https://github.com/cardano-foundation/CIPs/discussions]
+
+Dependency Name: Docker / Container Orchestration (Kubernetes, k3s)
+Dependency Type: Infrastructure
+Purpose: Containerized deployment for cardano-node, Ogmios, Kupo, Blockfrost, Koios, and SPO infrastructure
+Criticality: High
+Status: Live
+Related Entity: Blockfrost; Koios; SPO Community; IOG
+Related Technology Component: API Layer; P2P Layer
+Sources: (MEDIUM) [Blockfrost Docker, https://docs.blockfrost.io/#section/Running-locally/Docker]; (MEDIUM) [Koios Docker, https://github.com/cardano-community/koios-artifacts/tree/main/docker]; (MEDIUM) [Guild Operators Docker, https://github.com/cardano-community/guild-operators/tree/master/scripts/cnode-helper-scripts]
+
+## Major Integrations
+
+Integration Name: Milkomeda C1 (EVM Sidechain)
+Integrated With: Milkomeda Protocol (dcSpark)
+Purpose: EVM compatibility for Cardano; allows Solidity smart contracts to settle on Cardano via wrapped ADA (milkADA) and bridged assets
+Status: Live
+Related Historical Event ID: EV-028 (Pertumbuhan Ekosistem DeFi - cross-chain composability)
+Sources: (HIGH) [Milkomeda Documentation, https://milkomeda.com/]; (MEDIUM) [Milkomeda Bridge, https://milkomeda.com/bridge]
+
+Integration Name: Wanchain Bridge (Cross-chain to Ethereum, BSC, Polygon, etc.)
+Integrated With: Wanchain
+Purpose: Decentralized cross-chain bridge for ADA and native assets to/from EVM chains via secure multiparty computation (sMPC)
+Status: Live
+Related Historical Event ID: EV-028 (Pertumbuhan Ekosistem DeFi - cross-chain liquidity)
+Sources: (HIGH) [Wanchain Cardano Bridge, https://www.wanchain.org/cardano/]; (MEDIUM) [Wanchain Docs, https://docs.wanchain.org/]
+
+Integration Name: cBridge (Celer Network)
+Integrated With: Celer Network
+Purpose: Fast cross-chain transfers for native assets and stablecoins between Cardano and 30+ EVM chains
+Status: Live
+Related Historical Event ID: EV-028 (Pertumbuhan Ekosistem DeFi)
+Sources: (HIGH) [Celer cBridge Cardano, https://cbridge.celer.network/]; (MEDIUM) [Celer Network Blog, https://blog.celer.network/]
+
+Integration Name: Chainlink Price Feeds (via Charli3/Orcfax Oracle Integration)
+Integrated With: Chainlink (data source) / Charli3 / Orcfax (native oracle networks)
+Purpose: Chainlink data aggregated by Charli3 and Orcfax for on-chain DeFi consumption; not direct Chainlink VRF/CCIP on Cardano mainnet
+Status: Live (via native oracle networks)
+Related Historical Event ID: EV-028 (Pertumbuhan Ekosistem DeFi - oracle infrastructure)
+Sources: (HIGH) [Charli3 Chainlink Integration, https://charli3.io/]; (HIGH) [Orcfax Data Sources, https://orcfax.io/]; (MEDIUM) [Chainlink Blog Cardano, https://blog.chain.link/]
+
+Integration Name: Atala PRISM + Government Identity Systems (Ethiopia, Georgia, Tanzania)
+Integrated With: Ministry of Education Ethiopia; Ministry of Justice Georgia; Tanzania Government
+Purpose: National-scale DID and verifiable credentials deployment for student credentials, document verification, and digital identity
+Status: Live (pilot/production phases)
+Related Historical Event ID: EV-027 (Peluncuran Atala PRISM Mainnet); EV-031 (Cardano Summit 2022 Nation-State Partnerships)
+Sources: (HIGH) [Atala PRISM Ethiopia Case Study, https://atalaprism.io/case-studies/ethiopia/]; (HIGH) [Atala PRISM Georgia Case Study, https://atalaprism.io/case-studies/georgia/]; (MEDIUM) [IOG Blog Ethiopia, https://iohk.io/en/blog/posts/2021/04/29/atala-prism-mainnet-launch/]
+
+Integration Name: Firefly Wallet + Ledger / Trezor Hardware Wallets
+Integrated With: Ledger; Trezor
+Purpose: Hardware wallet support for ADA and native assets via Firefly (IOG) / native support in Daedalus, Yoroi, Lace, Eternl, Vespr, Typhon
+Status: Live
+Related Historical Event ID: EV-009 (Yoroi Launch); EV-010 (Daedalus Flight); EV-020 (Lace Launch)
+Sources: (HIGH) [Ledger Cardano Support, https://support.ledger.com/hc/en-us/articles/4404379573905-Cardano-ADA]; (HIGH) [Trezor Cardano Support, https://wiki.trezor.io/Cryptocurrencies#Cardano]; (HIGH) [Lace Hardware Wallet, https://lace.io/]
+
+Integration Name: WalletConnect v2 (Multi-wallet dApp Connection Standard)
+Integrated With: WalletConnect Foundation
+Purpose: Universal wallet connection protocol for Cardano dApps (CIP-30 + WalletConnect v2 support in Lace, Eternl, Vespr, Typhon, Nami, Yoroi)
+Status: Live
+Related Historical Event ID: EV-030 (Infrastruktur Developer Matang)
+Sources: (HIGH) [WalletConnect Cardano, https://walletconnect.com/]; (MEDIUM) [CIP-30 Spec, https://cips.cardano.org/cips/cip30/]
+
+Integration Name: Bitcoin Bridge Research (Trust-minimized BTC-ADA Bridge)
+Integrated With: Bitcoin Network (via research collaboration)
+Purpose: Research on trust-minimized bridge between Bitcoin and Cardano using cryptographic commitments (IOG research paper "Non-Interactive Proof-of-Work" and follow-ups)
+Status: Planned / Research
+Related Historical Event ID: EV-035 (Penelitian Akademis 100+ Papers - cross-chain research)
+Sources: (HIGH) [IOG Research Bitcoin Bridge, https://iohk.io/en/research/library/]; (MEDIUM) [IOG Blog Bitcoin Sidechain, https://iohk.io/en/blog/posts/2022/06/14/bitcoin-sidechains/]
+
+Integration Name: Ergo (Sigma Protocols & Cross-chain DeFi Research)
+Integrated With: Ergo Platform
+Purpose: Shared research on sigma protocols, non-interactive zero-knowledge proofs, and cross-chain DeFi primitives (IOG researchers collaborate with Ergo core team)
+Status: Live (research collaboration)
+Related Historical Event ID: EV-035 (Penelitian Akademis - cross-chain cryptography)
+Sources: (HIGH) [Ergo-Cardano Research, https://ergoplatform.org/en/blog/]; (MEDIUM) [IOG Blog Ergo, https://iohk.io/en/blog/posts/2021/06/14/ergo-cardano/]
+
+Integration Name: World Mobile Token (WMT) / EarthNodes on Cardano
+Integrated With: World Mobile Chain (partner chain initiative)
+Purpose: Telecom infrastructure token using Cardano for settlement and staking; EarthNodes operate on Cardano-adjacent infrastructure
+Status: Live
+Related Historical Event ID: EV-028 (Pertumbuhan Ekosistem - Real World Assets)
+Sources: (HIGH) [World Mobile Token, https://worldmobiletoken.com/]; (MEDIUM) [Cardano Summit WMT, https://cardanosummit.io/]
+
+## Infrastructure Providers
+
+Provider: Blockfrost
+Service: REST API, WebSocket, IPFS Gateway, dedicated nodes, webhook, analytics for Cardano mainnet/preprod/preview
+Criticality: Critical (primary hosted API provider for majority of dApps)
+Status: Live
+Sources: (HIGH) [Blockfrost Website, https://blockfrost.io/]; (HIGH) [Blockfrost Docs, https://docs.blockfrost.io/]
+
+Provider: Koios
+Service: High-performance REST API, SQL access, historical data, light-weight indexer for Cardano (community-operated, open-source)
+Criticality: High (major alternative to Blockfrost; used by many analytics tools)
+Status: Live
+Sources: (HIGH) [Koios Website, https://koios.rest/]; (HIGH) [Koios GitHub, https://github.com/cardano-community/koios-artifacts]
+
+Provider: Ogmios
+Service: WebSocket JSON-RPC interface to local cardano-node for transaction submission and chain sync (self-hosted)
+Criticality: High (standard local node interface for dApp backends)
+Status: Live
+Sources: (HIGH) [Ogmios Website, https://ogmios.dev/]; (HIGH) [Ogmios GitHub, https://github.com/CardanoSolutions/ogmios]
+
+Provider: Kupo
+Service: Lightweight chain indexer with pattern-matching UTxO queries (SQLite backend) for dApp state synchronization
+Criticality: High (widely used with Ogmios for local indexing)
+Status: Live
+Sources: (HIGH) [Kupo GitHub, https://github.com/CardanoSolutions/kupo]; (HIGH) [Kupo Docs, https://kupo.cardanosolutions.io/]
+
+Provider: MeshJS
+Service: TypeScript/JavaScript SDK for dApp development (wallet connection, transaction building, Plutus interaction, off-chain code)
+Criticality: High (most adopted TS SDK)
+Status: Live
+Sources: (HIGH) [MeshJS Website, https://meshjs.dev/]; (HIGH) [MeshJS GitHub, https://github.com/MeshJS/mesh]
+
+Provider: Lucid
+Service: TypeScript/Deno library for transaction building, off-chain code, and Plutus script interaction (alternative to MeshJS)
+Criticality: High (popular alternative SDK)
+Status: Live
+Sources: (HIGH) [Lucid GitHub, https://github.com/spacebudz/lucid]; (HIGH) [Lucid Docs, https://lucid.spacebudz.io/]
+
+Provider: Aiken
+Service: ML-inspired smart contract language, compiler, LSP, package manager, testing framework for Plutus Core
+Criticality: High (leading alternative to Plutus Tx/Haskell)
+Status: Live
+Sources: (HIGH) [Aiken Website, https://aiken-lang.org/]; (HIGH) [Aiken GitHub, https://github.com/aiken-lang/aiken]
+
+Provider: Helios
+Service: JavaScript-like language for Plutus Core, browser-based IDE, compiler, testing framework
+Criticality: Medium (growing adoption for web-native developers)
+Status: Live
+Sources: (HIGH) [Helios Website, https://helios-lang.io/]; (HIGH) [Helios GitHub, https://github.com/Hyperion-BT/helios]
+
+Provider: Cardano Serialization Library (CSL)
+Service: Rust/WASM/JS bindings for low-level transaction serialization, signing, and cryptographic operations
+Criticality: Critical (foundational library used by almost all wallets and SDKs)
+Status: Live
+Sources: (HIGH) [CSL GitHub, https://github.com/Emurgo/cardano-serialization-lib]; (HIGH) [CSL Docs, https://emurgo.github.io/cardano-serialization-lib/]
+
+Provider: Dandelion / cardano-node (P2P Network)
+Service: Reference implementation of cardano-node (Haskell) running Diffusion/Pipelining P2P layer (CIP-31)
+Criticality: Critical (sole production consensus client)
+Status: Live
+Sources: (HIGH) [cardano-node GitHub, https://github.com/input-output-hk/cardano-node]; (HIGH) [CIP-31 Pipelining, https://cips.cardano.org/cips/cip31/]
+
+Provider: Mithril Network (Aggregators & Signers)
+Service: Stake-based threshold multi-signature aggregators for certified snapshots (fast sync, light clients, governance tally)
+Criticality: High (enables light clients and fast bootstrap)
+Status: Live (IOG-operated aggregators; community signer network)
+Sources: (HIGH) [Mithril Network, https://mithril.network/]; (HIGH) [Mithril Docs, https://mithril.network/doc/]
+
+Provider: Charli3 Oracle Network
+Service: Decentralized oracle network providing price feeds and external data to Cardano DeFi via incentivized node operators
+Criticality: High (primary native oracle for DeFi)
+Status: Live
+Sources: (HIGH) [Charli3 Website, https://charli3.io/]; (HIGH) [Charli3 Docs, https://docs.charli3.io/]
+
+Provider: Orcfax Oracle Network
+Service: Fact-based oracle network with auditability and data integrity focus for Cardano DeFi
+Criticality: High (second major native oracle)
+Status: Live
+Sources: (HIGH) [Orcfax Website, https://orcfax.io/]; (HIGH) [Orcfax Docs, https://docs.orcfax.io/]
+
+Provider: TxPipe / Pallas (Rust Implementation)
+Service: Rust implementation of Cardano protocols (node components, ledger, networking) — alternative client development
+Criticality: Medium (experimental alternative client)
+Status: Live (development)
+Sources: (HIGH) [TxPipe GitHub, https://github.com/txpipe]; (HIGH) [Pallas GitHub, https://github.com/txpipe/pallas]
+
+## Exchange Ecosystem
+
+Exchange: Binance
+Listing Status: Listed
+Spot: Yes (ADA/USDT, ADA/BTC, ADA/BUSD, ADA/TRY, ADA/EUR, ADA/BRL, ADA/AUD, ADA/USDC)
+Perpetual: Yes (ADA/USDT Perpetual, ADA/USDC Perpetual)
+OTC: Yes (Binance OTC Portal)
+Launchpool: Yes (historical: ADA Launchpool events)
+Status: Active
+Sources: (HIGH) [Binance ADA Markets, https://www.binance.com/en/trade/ADA_USDT]; (HIGH) [Binance Futures ADA, https://www.binance.com/en/futures/ADAUSDT]
+
+Exchange: Coinbase
+Listing Status: Listed
+Spot: Yes (ADA/USD, ADA/EUR, ADA/USDC, ADA/GBP)
+Perpetual: No (Coinbase does not offer perpetual futures)
+OTC: Yes (Coinbase Prime OTC)
+Launchpool: No
+Status: Active
+Sources: (HIGH) [Coinbase ADA, https://www.coinbase.com/price/cardano]; (HIGH) [Coinbase Pro ADA, https://pro.coinbase.com/trade/ADA-USD]
+
+Exchange: Kraken
+Listing Status: Listed
+Spot: Yes (ADA/USD, ADA/EUR, ADA/GBP, ADA/CAD, ADA/USDT, ADA/XBT)
+Perpetual: Yes (ADA/USD Perpetual, ADA/EUR Perpetual)
+OTC: Yes (Kraken OTC Desk)
+Launchpool: No (Kraken Staking offers ADA staking rewards)
+Status: Active
+Sources: (HIGH) [Kraken ADA Markets, https://trade.kraken.com/markets/kraken/ada/usd]; (HIGH) [Kraken Futures ADA, https://futures.kraken.com/]
+
+Exchange: OKX
+Listing Status: Listed
+Spot: Yes (ADA/USDT, ADA/USDC, ADA/BTC, ADA/ETH)
+Perpetual: Yes (ADA/USDT Perpetual, ADA/USDC Perpetual)
+OTC: Yes (OKX OTC)
+Launchpool: Yes (historical ADA Launchpool)
+Status: Active
+Sources: (HIGH) [OKX ADA Spot, https://www.okx.com/trade/ADA-USDT]; (HIGH) [OKX ADA Perpetual, https://www.okx.com/trade-swap/ADA-USDT-SWAP]
+
+Exchange: Bybit
+Listing Status: Listed
+Spot: Yes (ADA/USDT, ADA/USDC)
+Perpetual: Yes (ADA/USDT Perpetual, ADA/USDC Perpetual)
+OTC: Yes (Bybit OTC)
+Launchpool: Yes (Bybit Launchpool ADA events)
+Status: Active
+Sources: (HIGH) [Bybit ADA Spot, https://www.bybit.com/trade/spot/ADA/USDT]; (HIGH) [Bybit ADA Perpetual, https://www.bybit.com/trade/derivatives/ADAUSDT]
+
+Exchange: KuCoin
+Listing Status: Listed
+Spot: Yes (ADA/USDT, ADA/BTC, ADA/ETH)
+Perpetual: Yes (ADA/USDT Perpetual)
+OTC: Yes (KuCoin OTC)
+Launchpool: Yes (KuCoin Spotlight/Launchpool historical)
+Status: Active
+Sources: (HIGH) [KuCoin ADA, https://www.kucoin.com/trade/ADA-USDT]; (HIGH) [KuCoin Futures ADA, https://www.kucoin.com/futures/ADAUSDTM]
+
+Exchange: Coinbase International (formerly Coinbase Pro International)
+Listing Status: Listed
+Spot: Yes (ADA/USDC)
+Perpetual: Yes (ADA-PERP on Coinbase International Exchange)
+OTC: No
+Launchpool: No
+Status: Active
+Sources: (HIGH) [Coinbase International ADA, https://international.coinbase.com/]
+
+Exchange: Bitfinex
+Listing Status: Listed
+Spot: Yes (ADA/USD, ADA/USDT, ADA/BTC)
+Perpetual: No
+OTC: Yes (Bitfinex OTC)
+Launchpool: No
+Status: Active
+Sources: (HIGH) [Bitfinex ADA, https://trading.bitfinex.com/t/ADA:USD]
+
+Exchange: Huobi / HTX
+Listing Status: Listed
+Spot: Yes (ADA/USDT, ADA/BTC, ADA/HT)
+Perpetual: Yes (ADA/USDT Perpetual)
+OTC: Yes
+Launchpool: Yes (historical)
+Status: Active
+Sources: (HIGH) [HTX ADA, https://www.htx.com/trade/ada_usdt]
+
+Exchange: Gate.io
+Listing Status: Listed
+Spot: Yes (ADA/USDT, ADA/BTC, ADA/ETH)
+Perpetual: Yes (ADA/USDT Perpetual)
+OTC: Yes
+Launchpool: Yes (Gate.io Startup/Launchpool)
+Status: Active
+Sources: (HIGH) [Gate.io ADA, https://www.gate.io/trade/ADA_USDT]
+
+Exchange: Crypto.com
+Listing Status: Listed
+Spot: Yes (ADA/USDT, ADA/USDC, ADA/BTC, ADA/CRO)
+Perpetual: Yes (ADA/USDT Perpetual on Crypto.com Exchange)
+OTC: Yes
+Launchpool: Yes (Crypto.com Supercharger/Launchpool)
+Status: Active
+Sources: (HIGH) [Crypto.com ADA, https://crypto.com/price/cardano]
+
+## Wallet Ecosystem
+
+Wallet: Lace Wallet
+Support Type: Official Light Wallet (IOG-developed); Browser Extension (Chrome, Brave, Edge, Firefox); Mobile (iOS, Android); Multi-account; NFT Gallery; Staking Dashboard; dApp Connector (CIP-30); Mithril Fast Sync; Hardware Wallet (Ledger, Trezor)
+Status: Live
+Sources: (HIGH) [Lace Website, https://lace.io/]; (HIGH) [Lace GitHub, https://github.com/input-output-hk/lace]
+
+Wallet: Daedalus Wallet
+Support Type: Official Full-Node Wallet (IOG-developed); Desktop (Windows, macOS, Linux); Full Node Validation; Hardware Wallet (Ledger, Trezor); Paper Wallet Generation; Catalyst Voting Integration; Multi-account
+Status: Live
+Sources: (HIGH) [Daedalus Website, https://daedaluswallet.io/]; (HIGH) [Daedalus GitHub, https://github.com/input-output-hk/daedalus]
+
+Wallet: Yoroi Wallet
+Support Type: Official Light Wallet (Emurgo-developed); Browser Extension (Chrome, Firefox, Edge); Mobile (iOS, Android); Staking Delegation; NFT Support; dApp Connector (CIP-30); Hardware Wallet (Ledger, Trezor); Multi-language
+Status: Live
+Sources: (HIGH) [Yoroi Website, https://yoroi-wallet.com/]; (HIGH) [Yoroi GitHub, https://github.com/Emurgo/yoroi-frontend]
+
+Wallet: Eternl Wallet
+Support Type: Community Light Wallet; Browser Extension (Chrome, Brave, Edge, Firefox); Mobile (iOS, Android); Multi-account; Hardware Wallet (Ledger, Trezor); Token/NFT Management; dApp Connector (CIP-30); Multi-signature Support; Collateral Management
+Status: Live
+Sources: (HIGH) [Eternl Website, https://eternl.io/]; (HIGH) [Eternl GitHub, https://github.com/eternl-tech/eternl-extension]
+
+Wallet: Vespr Wallet
+Support Type: Community Light Wallet; Browser Extension (Chrome, Brave, Edge); Mobile (iOS, Android); Multi-signature; Hardware Wallet (Ledger, Trezor); DeFi/NFT Native Integration; dApp Connector (CIP-30); Portfolio Tracking
+Status: Live
+Sources: (HIGH) [Vespr Website, https://vespr.fi/]; (HIGH) [Vespr GitHub, https://github.com/vesprwallet]
+
+Wallet: Typhon Wallet
+Support Type: Community Wallet; Desktop (Windows, macOS, Linux); Browser Extension (Chrome, Brave, Edge); Open Source; Multi-account; Hardware Wallet (Ledger, Trezor); dApp Connector (CIP-30); Collateral Management
+Status: Live
+Sources: (HIGH) [Typhon Website, https://typhonwallet.io/]; (HIGH) [Typhon GitHub, https://github.com/typhonwallet]
+
+Wallet: Nami Wallet
+Support Type: Community Light Wallet; Browser Extension (Chrome, Brave, Edge); Mobile (iOS, Android); Early CIP-30 Adopter; Staking Delegation; NFT Support; dApp Connector; Simple UX for Retail
+Status: Live
+Sources: (HIGH) [Nami Website, https://namiwallet.io/]; (HIGH) [Nami GitHub, https://github.com/Berry-Pool/nami-wallet]
+
+Wallet: Flint Wallet
+Support Type: Community Light Wallet; Browser Extension; Mobile; Hardware Wallet Support; Multi-account; dApp Connector (CIP-30)
+Status: Live
+Sources: (HIGH) [Flint Website, https://flint-wallet.com/]; (MEDIUM) [Flint GitHub, https://github.com/Flint-Wallet]
+
+Wallet: GeroWallet
+Support Type: Community Wallet; Browser Extension; Mobile; dApp Connector (CIP-30); NFT/DeFi Focus
+Status: Live
+Sources: (HIGH) [GeroWallet Website, https://gerowallet.io/]; (MEDIUM) [GeroWallet GitHub, https://github.com/gerowallet]
+
+Wallet: Lace / Daedalus / Yoroi / Eternl / Vespr / Typhon / Nami / Flint / GeroWallet — all support CIP-30 (dApp Connector Standard) and CIP-1852 (HD Wallet Derivation Path)
+Status: Live
+Sources: (HIGH) [CIP-30 Spec, https://cips.cardano.org/cips/cip30/]; (HIGH) [CIP-1852 Spec, https://cips.cardano.org/cips/cip1852/]
+
+## Developer Ecosystem
+
+SDK: MeshJS
+Description: TypeScript/JavaScript framework for dApp development — wallet connection (CIP-30, WalletConnect), transaction building, Plutus script interaction, off-chain code, React hooks
+Repository: https://github.com/MeshJS/mesh
+Sources: (HIGH) [MeshJS Website, https://meshjs.dev/]; (HIGH) [MeshJS Docs, https://meshjs.dev/docs/]
+
+SDK: Lucid
+Description: TypeScript/Deno library for transaction building, Plutus script interaction, wallet connection, and off-chain logic — functional programming style
+Repository: https://github.com/spacebudz/lucid
+Sources: (HIGH) [Lucid GitHub, https://github.com/spacebudz/lucid]; (HIGH) [Lucid Docs, https://lucid.spacebudz.io/]
+
+SDK: Cardano Serialization Library (CSL)
+Description: Rust/WASM/JS bindings for low-level transaction serialization, cryptographic operations, address/key derivation — foundation for all wallets and SDKs
+Repository: https://github.com/Emurgo/cardano-serialization-lib
+Sources: (HIGH) [CSL GitHub, https://github.com/Emurgo/cardano-serialization-lib]; (HIGH) [CSL Docs, https://emurgo.github.io/cardano-serialization-lib/]
+
+SDK: Aiken
+Description: ML-inspired smart contract language + toolchain (compiler, LSP, package manager, testing, formatting) targeting Plutus Core
+Repository: https://github.com/aiken-lang/aiken
+Sources: (HIGH) [Aiken Website, https://aiken-lang.org/]; (HIGH) [Aiken GitHub, https://github.com/aiken-lang/aiken]
+
+SDK: Plutarch
+Description: Haskell-embedded Plutus Core compiler with type-level guarantees for on-chain validation scripts
+Repository: https://github.com/Plutarch/Plutarch
+Sources: (HIGH) [Plutarch GitHub, https://github.com/Plutarch/Plutarch]; (MEDIUM) [Plutarch Docs, https://plutarch.dev/]
+
+SDK: Helios
+Description: JavaScript-like language for Plutus Core, browser-based IDE, compiler, testing framework — zero-setup web development
+Repository: https://github.com/Hyperion-BT/helios
+Sources: (HIGH) [Helios Website, https://helios-lang.io/]; (HIGH) [Helios GitHub, https://github.com/Hyperion-BT/helios]
+
+API: Blockfrost API
+Description: REST API, WebSocket, IPFS Gateway for Cardano mainnet/preprod/preview — UTxO, addresses, stakes, scripts, metadata, governance, treasury endpoints
+Documentation: https://docs.blockfrost.io/
+Sources: (HIGH) [Blockfrost Docs, https://docs.blockfrost.io/]
+
+API: Koios API

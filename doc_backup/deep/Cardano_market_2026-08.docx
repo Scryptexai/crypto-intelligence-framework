@@ -1,0 +1,348 @@
+PROJECT: Cardano
+
+## Market Category
+
+Primary Category: Layer 1 Blockchain
+Secondary Category: Smart Contract Platform
+Sector: Blockchain Infrastructure
+Sub-sector: Proof-of-Stake / eUTXO / Academic-Research-Driven / On-Chain Governance
+Sources: (HIGH) [Cardano Foundation, https://cardano.org]; (HIGH) [Messari, https://messari.io/asset/cardano]; (HIGH) [DefiLlama, https://defillama.com/chain/Cardano]; (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/cardano]
+
+## Market Position
+
+Project Stage: Mature
+Primary Competitors: Ethereum, Solana, Avalanche, Polkadot, BNB Chain, Tron, Near, Algorand, Tezos, Cosmos Hub
+Market Segment: General-purpose programmable Layer 1 with focus on formal verification, academic research, on-chain governance, and enterprise identity (Atala PRISM)
+Geographic Focus: Global (strong historical retail base in Japan from voucher sale; growing enterprise/government partnerships in Africa/Europe via Atala PRISM; developer hubs in US, Europe, Kenya, Argentina)
+Sources: (HIGH) [Messari Cardano Profile, https://messari.io/asset/cardano]; (HIGH) [CoinGecko Cardano, https://www.coingecko.com/en/coins/cardano]; (HIGH) [DefiLlama Chains, https://defillama.com/chains]; (HIGH) [Atala PRISM Case Studies, https://atalaprism.io/case-studies/]; (HIGH) [Cardano Summit 2022 Nation-State Partnerships, https://cardanosummit.io/]
+
+## Trading Markets
+
+Exchange: Binance
+Spot: Yes (ADA/USDT, ADA/BTC, ADA/BUSD, ADA/TRY, ADA/EUR, ADA/BRL, ADA/AUD, ADA/USDC)
+Perpetual: Yes (ADA/USDT Perpetual, ADA/USDC Perpetual)
+Futures: Yes (Quarterly futures ADA/USDT)
+Options: Yes (Binance Options ADA/USDT)
+OTC: Yes (Binance OTC Portal)
+Status: Active
+Sources: (HIGH) [Binance ADA Markets, https://www.binance.com/en/trade/ADA_USDT]; (HIGH) [Binance Futures ADA, https://www.binance.com/en/futures/ADAUSDT]; (HIGH) [Binance Options, https://www.binance.com/en/options]; (HIGH) [Binance OTC, https://www.binance.com/en/otc]
+
+Exchange: Coinbase
+Spot: Yes (ADA/USD, ADA/EUR, ADA/USDC, ADA/GBP)
+Perpetual: No
+Futures: No
+Options: No
+OTC: Yes (Coinbase Prime OTC)
+Status: Active
+Sources: (HIGH) [Coinbase ADA, https://www.coinbase.com/price/cardano]; (HIGH) [Coinbase Pro ADA, https://pro.coinbase.com/trade/ADA-USD]; (HIGH) [Coinbase Prime, https://prime.coinbase.com/]
+
+Exchange: Kraken
+Spot: Yes (ADA/USD, ADA/EUR, ADA/GBP, ADA/CAD, ADA/USDT, ADA/XBT)
+Perpetual: Yes (ADA/USD Perpetual, ADA/EUR Perpetual)
+Futures: Yes (Kraken Futures ADA/USD)
+Options: No
+OTC: Yes (Kraken OTC Desk)
+Status: Active
+Sources: (HIGH) [Kraken ADA Markets, https://trade.kraken.com/markets/kraken/ada/usd]; (HIGH) [Kraken Futures ADA, https://futures.kraken.com/]; (HIGH) [Kraken OTC, https://www.kraken.com/otc]
+
+Exchange: OKX
+Spot: Yes (ADA/USDT, ADA/USDC, ADA/BTC, ADA/ETH)
+Perpetual: Yes (ADA/USDT Perpetual, ADA/USDC Perpetual)
+Futures: Yes (OKX Futures ADA/USDT)
+Options: Yes (OKX Options ADA/USDT)
+OTC: Yes (OKX OTC)
+Status: Active
+Sources: (HIGH) [OKX ADA Spot, https://www.okx.com/trade/ADA-USDT]; (HIGH) [OKX ADA Perpetual, https://www.okx.com/trade-swap/ADA-USDT-SWAP]; (HIGH) [OKX Options, https://www.okx.com/options]; (HIGH) [OKX OTC, https://www.okx.com/otc]
+
+Exchange: Bybit
+Spot: Yes (ADA/USDT, ADA/USDC)
+Perpetual: Yes (ADA/USDT Perpetual, ADA/USDC Perpetual)
+Futures: Yes (Bybit Futures ADA/USDT)
+Options: Yes (Bybit Options ADA/USDT)
+OTC: Yes (Bybit OTC)
+Status: Active
+Sources: (HIGH) [Bybit ADA Spot, https://www.bybit.com/trade/spot/ADA/USDT]; (HIGH) [Bybit ADA Perpetual, https://www.bybit.com/trade/derivatives/ADAUSDT]; (HIGH) [Bybit Options, https://www.bybit.com/trade/options/ADA-USDT]; (HIGH) [Bybit OTC, https://www.bybit.com/otc]
+
+Exchange: KuCoin
+Spot: Yes (ADA/USDT, ADA/BTC, ADA/ETH)
+Perpetual: Yes (ADA/USDT Perpetual)
+Futures: Yes (KuCoin Futures ADA/USDT)
+Options: No
+OTC: Yes (KuCoin OTC)
+Status: Active
+Sources: (HIGH) [KuCoin ADA, https://www.kucoin.com/trade/ADA-USDT]; (HIGH) [KuCoin Futures ADA, https://www.kucoin.com/futures/ADAUSDTM]; (HIGH) [KuCoin OTC, https://www.kucoin.com/otc]
+
+Exchange: Coinbase International Exchange
+Spot: Yes (ADA/USDC)
+Perpetual: Yes (ADA-PERP)
+Futures: No
+Options: No
+OTC: No
+Status: Active
+Sources: (HIGH) [Coinbase International ADA, https://international.coinbase.com/]
+
+Exchange: Bitfinex
+Spot: Yes (ADA/USD, ADA/USDT, ADA/BTC)
+Perpetual: No
+Futures: No
+Options: No
+OTC: Yes (Bitfinex OTC)
+Status: Active
+Sources: (HIGH) [Bitfinex ADA, https://trading.bitfinex.com/t/ADA:USD]; (HIGH) [Bitfinex OTC, https://www.bitfinex.com/otc]
+
+Exchange: HTX (Huobi)
+Spot: Yes (ADA/USDT, ADA/BTC, ADA/HT)
+Perpetual: Yes (ADA/USDT Perpetual)
+Futures: Yes (HTX Futures ADA/USDT)
+Options: No
+OTC: Yes
+Status: Active
+Sources: (HIGH) [HTX ADA, https://www.htx.com/trade/ada_usdt]; (HIGH) [HTX Futures, https://www.htx.com/futures/ada_usdt]
+
+Exchange: Gate.io
+Spot: Yes (ADA/USDT, ADA/BTC, ADA/ETH)
+Perpetual: Yes (ADA/USDT Perpetual)
+Futures: Yes (Gate.io Futures ADA/USDT)
+Options: No
+OTC: Yes
+Status: Active
+Sources: (HIGH) [Gate.io ADA, https://www.gate.io/trade/ADA_USDT]; (HIGH) [Gate.io Futures, https://www.gate.io/futures_trade/ADA_USDT]
+
+Exchange: Crypto.com Exchange
+Spot: Yes (ADA/USDT, ADA/USDC, ADA/BTC, ADA/CRO)
+Perpetual: Yes (ADA/USDT Perpetual)
+Futures: No
+Options: No
+OTC: Yes
+Status: Active
+Sources: (HIGH) [Crypto.com ADA, https://crypto.com/price/cardano]; (HIGH) [Crypto.com Exchange ADA, https://exchange.crypto.com/trade/ADA_USDT]
+
+Exchange: Minswap (DEX)
+Spot: Yes (ADA/minUSD, ADA/iUSD, ADA/WMT, ADA/SNEK, ADA/INDY, ADA/ADA pools via stablecoins/wrapped)
+Perpetual: No
+Futures: No
+Options: No
+OTC: No
+Status: Active
+Sources: (HIGH) [Minswap App, https://app.minswap.org/]; (HIGH) [DefiLlama Minswap, https://defillama.com/protocol/minswap]
+
+Exchange: WingRiders (DEX)
+Spot: Yes (ADA/minUSD, ADA/iUSD, ADA/WMT, ADA/CLAY, ADA/SNEK, ADA/ADA pools)
+Perpetual: No
+Futures: No
+Options: No
+OTC: No
+Status: Active
+Sources: (HIGH) [WingRiders App, https://app.wingriders.com/]; (HIGH) [DefiLlama WingRiders, https://defillama.com/protocol/wingriders]
+
+Exchange: DexHunter (DEX Aggregator)
+Spot: Yes (aggregates Minswap, WingRiders, SundaeSwap, VyFi, Spectrum, etc.)
+Perpetual: No
+Futures: No
+Options: No
+OTC: No
+Status: Active
+Sources: (HIGH) [DexHunter App, https://app.dexhunter.io/]; (HIGH) [DefiLlama DexHunter, https://defillama.com/protocol/dexhunter]
+
+## Liquidity
+
+Liquidity Source: Centralized Exchanges (CEX)
+Major Liquidity Venue: Binance (highest spot and perpetual volume), Coinbase (highest USD fiat volume), Kraken (high EUR volume), OKX, Bybit
+DEX: Minswap (largest DEX by TVL and volume on Cardano), WingRiders, SundaeSwap, VyFi, Spectrum, DexHunter (aggregator)
+Bridge Liquidity: Wanchain Bridge (ADA ↔ ETH/BSC/Polygon), cBridge/Celer (ADA ↔ 30+ EVM chains), Milkomeda C1 Bridge (ADA ↔ milkADA on EVM sidechain)
+Status: High liquidity on major CEXs (top 10 asset by volume typically); DEX liquidity concentrated in top 3-4 protocols; bridge liquidity growing but fragmented across multiple bridges
+Sources: (HIGH) [CoinGecko Markets ADA, https://www.coingecko.com/en/coins/cardano#markets]; (HIGH) [DefiLlama Cardano DEXs, https://defillama.com/chain/Cardano]; (HIGH) [Wanchain Bridge, https://www.wanchain.org/cardano/]; (HIGH) [Celer cBridge Cardano, https://cbridge.celer.network/]; (HIGH) [Milkomeda Bridge, https://milkomeda.com/bridge]
+
+## Adoption Metrics
+
+Metric Name: Total Value Locked (TVL)
+Value: ~$420,000,000 USD (peak ~$450M March 2024; ~$250M December 2024)
+Date: 2024-12
+Sources: (HIGH) [DefiLlama Cardano TVL, https://defillama.com/chain/Cardano]; (HIGH) [Token Terminal Cardano, https://tokenterminal.com/terminal/projects/cardano]
+
+Metric Name: Daily Active Addresses
+Value: ~50,000–80,000 (7-day moving average)
+Date: 2024-12
+Sources: (HIGH) [Token Terminal Cardano Active Addresses, https://tokenterminal.com/terminal/projects/cardano]; (MEDIUM) [Blockfrost Analytics, https://blockfrost.io/]; (MEDIUM) [AdaStat Network Stats, https://adastat.net/]
+
+Metric Name: Daily Transactions
+Value: ~60,000–100,000 transactions/day (including simple transfers, staking transactions, and smart contract interactions)
+Date: 2024-12
+Sources: (HIGH) [Token Terminal Cardano Transactions, https://tokenterminal.com/terminal/projects/cardano]; (HIGH) [Cardano Explorer Stats, https://explorer.cardano.org/]; (MEDIUM) [AdaStat Transactions, https://adastat.net/]
+
+Metric Name: Staking Participation Rate
+Value: ~62–65% of circulating supply staked (~22B ADA staked of ~35.6B circulating)
+Date: 2024-12
+Sources: (HIGH) [Cardano Explorer Staking, https://explorer.cardano.org/]; (HIGH) [AdaStat Staking Stats, https://adastat.net/]; (HIGH) [Token Terminal Staked Supply, https://tokenterminal.com/terminal/projects/cardano]
+
+Metric Name: Active Stake Pools
+Value: ~1,100–1,200 active pools (producing blocks) out of ~3,200 registered pools
+Date: 2024-12
+Sources: (HIGH) [Cardano Explorer Pools, https://explorer.cardano.org/]; (HIGH) [AdaStat Pool Stats, https://adastat.net/]; (HIGH) [PoolTool, https://pooltool.io/]
+
+Metric Name: Developer Count (Monthly Active Developers)
+Value: ~250–350 monthly active developers (core + ecosystem) per Electric Capital / Token Terminal estimates
+Date: 2024-12
+Sources: (HIGH) [Token Terminal Developer Activity, https://tokenterminal.com/terminal/projects/cardano]; (MEDIUM) [Electric Capital Developer Report 2024, https://www.electriccapital.com/developer-report]; (HIGH) [Cardano Developer Portal, https://developers.cardano.org/]
+
+Metric Name: GitHub Commits (30-day, core repos)
+Value: ~800–1,200 commits/month across input-output-hk, CardanoFoundation, Emurgo orgs
+Date: 2024-12
+Sources: (HIGH) [GitHub Insights IOG, https://github.com/input-output-hk]; (HIGH) [GitHub Insights CardanoFoundation, https://github.com/CardanoFoundation]; (HIGH) [GitHub Insights Emurgo, https://github.com/Emurgo]
+
+Metric Name: Project Catalyst Funds Deployed
+Value: >100,000,000 ADA cumulative across Funds 1–12+ (Fund 10 milestone June 2023)
+Date: 2024-06 (Fund 10); ongoing Funds 11–13
+Sources: (HIGH) [Project Catalyst Fund 10, https://cardano.ideascale.com/c/campaigns/25201]; (HIGH) [Project Catalyst, https://cardano.ideascale.com/]
+
+Metric Name: Native Assets (Policy IDs) Created
+Value: >100,000 unique policy IDs (fungible tokens + NFT collections)
+Date: 2024-12
+Sources: (HIGH) [AdaStat Native Tokens, https://adastat.net/]; (HIGH) [Cardano Explorer Asset Stats, https://explorer.cardano.org/]; (MEDIUM) [JPG Store Analytics, https://jpg.store/analytics]
+
+Metric Name: NFT Marketplace Volume (Monthly, JPG Store)
+Value: ~$2M–$8M USD/month (varies by market cycle; peak ~$50M+ March 2024)
+Date: 2024-12
+Sources: (HIGH) [JPG Store Analytics, https://jpg.store/analytics]; (MEDIUM) [DefiLlama NFT Volume Cardano, https://defillama.com/chain/Cardano]
+
+Metric Name: Bridge Volume (Monthly, aggregate Wanchain + cBridge + Milkomeda)
+Value: ~$50M–$150M USD/month (estimated from bridge analytics; highly variable)
+Date: 2024-12
+Sources: (MEDIUM) [Wanchain Bridge Analytics, https://www.wanchain.org/cardano/]; (MEDIUM) [Celer cBridge Analytics, https://cbridge.celer.network/]; (MEDIUM) [Milkomeda Bridge, https://milkomeda.com/bridge]; (LOW) [DeFiLlama Bridges, https://defillama.com/bridges]
+
+## Market Share
+
+Metric: Layer 1 TVL Rank
+Value: Rank #12–#15 among all chains (varies by month; behind Ethereum, Tron, BSC, Solana, Arbitrum, Base, Avalanche, Polygon, Optimism, etc.)
+Date: 2024-12
+Sources: (HIGH) [DefiLlama Chains Ranking, https://defillama.com/chains]
+
+Metric: Layer 1 Market Cap Rank
+Value: Rank #8–#11 by market capitalization (typically ~$15B–$25B range in 2024)
+Date: 2024-12
+Sources: (HIGH) [CoinGecko Market Cap Ranking, https://www.coingecko.com/en/coins/cardano]; (HIGH) [CoinMarketCap Cardano, https://coinmarketcap.com/currencies/cardano/]
+
+Metric: Staking Market Cap Rank
+Value: Rank #2–#3 by staked value (behind Ethereum; competes with Solana)
+Date: 2024-12
+Sources: (HIGH) [Staking Rewards Cardano, https://www.stakingrewards.com/earn/cardano/]; (HIGH) [Token Terminal Staking, https://tokenterminal.com/terminal/projects/cardano]
+
+Metric: Daily Active Addresses Rank
+Value: Rank #10–#15 among Layer 1s
+Date: 2024-12
+Sources: (HIGH) [Token Terminal Active Addresses, https://tokenterminal.com/terminal/projects/cardano]; (MEDIUM) [Artemis Terminal, https://artemis.xyz/]
+
+Metric: Developer Count Rank
+Value: Rank #8–#12 among Layer 1s (Electric Capital 2024 report)
+Date: 2024
+Sources: (HIGH) [Electric Capital Developer Report 2024, https://www.electriccapital.com/developer-report]; (MEDIUM) [Token Terminal Developers, https://tokenterminal.com/terminal/projects/cardano]
+
+Metric: NFT Sales Volume Rank
+Value: Rank #5–#8 among all chains (behind Ethereum, Solana, Bitcoin Ordinals, Polygon, ImmutableX, Mythos)
+Date: 2024-12
+Sources: (HIGH) [CryptoSlam Cardano, https://cryptoslam.io/cardano]; (MEDIUM) [DefiLlama NFT, https://defillama.com/nft]
+
+## Competitor Landscape
+
+Competitor: Ethereum
+Category: Layer 1 Smart Contract Platform (EVM, Account-based)
+Difference: Account model vs eUTXO; EVM vs Plutus Core; proof-of-stake since 2022 (Cardano since 2020); larger TVL, developer ecosystem, institutional adoption; rollup-centric scaling roadmap vs Hydra/Midnight partner chains; no on-chain constitutional governance (off-chain social governance)
+Market Segment: General-purpose programmable Layer 1 (dominant)
+Sources: (HIGH) [Ethereum.org, https://ethereum.org/]; (HIGH) [DefiLlama Ethereum, https://defillama.com/chain/Ethereum]; (HIGH) [Messari Ethereum, https://messari.io/asset/ethereum]
+
+Competitor: Solana
+Category: Layer 1 Smart Contract Platform (SVM, Account-based, High Throughput)
+Difference: Monolithic high-throughput architecture vs dual-layer; SVM/Rust vs Plutus/Haskell; lower decentralization (validator hardware requirements); frequent outages historically; no formal verification of consensus; no on-chain treasury/governance; meme/retail-focused narrative
+Market Segment: High-throughput retail/DeFi/NFT Layer 1
+Sources: (HIGH) [Solana.com, https://solana.com/]; (HIGH) [DefiLlama Solana, https://defillama.com/chain/Solana]; (HIGH) [Messari Solana, https://messari.io/asset/solana]
+
+Competitor: Avalanche
+Category: Layer 1 Smart Contract Platform (EVM-compatible, Subnets)
+Difference: EVM-compatible (Avalanche C-Chain) vs non-EVM; Subnet architecture for app-specific chains vs partner chain model; faster finality (~1-2s); smaller staking participation; no formal verification of core consensus; different governance model
+Market Segment: EVM-compatible / App-chain Layer 1
+Sources: (HIGH) [Ava Labs, https://www.avalabs.org/]; (HIGH) [DefiLlama Avalanche, https://defillama.com/chain/Avalanche]; (HIGH) [Messari Avalanche, https://messari.io/asset/avalanche-2]
+
+Competitor: Polkadot
+Category: Layer 0 / Relay Chain (Parachains, Nominated PoS)
+Difference: Heterogeneous multi-chain (parachains) vs single Layer 1 + partner chains; shared security model; no native smart contracts on relay chain; governance via OpenGov (referenda); Kusama canary network; different developer stack (Substrate/Rust/ink!)
+Market Segment: Multi-chain interoperability / App-chain platform
+Sources: (HIGH) [Polkadot.network, https://polkadot.network/]; (HIGH) [DefiLlama Polkadot, https://defillama.com/chain/Polkadot]; (HIGH) [Messari Polkadot, https://messari.io/asset/polkadot]
+
+Competitor: BNB Chain
+Category: Layer 1 Smart Contract Platform (EVM-compatible, Centralized)
+Difference: EVM-compatible; centralized validator set (21 active validators selected by BNB stake); Binance ecosystem integration; high throughput low fees; no formal verification; no on-chain constitutional governance
+Market Segment: Binance-ecosystem / High-throughput EVM Layer 1
+Sources: (HIGH) [BNB Chain, https://www.bnbchain.org/]; (HIGH) [DefiLlama BNB Chain, https://defillama.com/chain/BSC]; (HIGH) [Messari BNB Chain, https://messari.io/asset/bnb-chain]
+
+Competitor: Tron
+Category: Layer 1 Smart Contract Platform (EVM-compatible, DPoS)
+Difference: Delegated Proof-of-Stake (27 Super Representatives); EVM-compatible; USDT-dominant stablecoin volume; centralized governance; no formal verification; entertainment/content focus
+Market Segment: Stablecoin/Entertainment Layer 1
+Sources: (HIGH) [Tron.network, https://tron.network/]; (HIGH) [DefiLlama Tron, https://defillama.com/chain/Tron]; (HIGH) [Messari Tron, https://messari.io/asset/tron]
+
+Competitor: Near
+Category: Layer 1 Smart Contract Platform (WASM, Nightshade Sharding)
+Difference: WASM runtime (Rust/AssemblyScript) vs Plutus/Haskell; sharding (Nightshade) vs Hydra state channels; account-based vs eUTXO; progressive decentralization; no formal verification of consensus; different governance
+Market Segment: User-friendly / WASM / Sharded Layer 1
+Sources: (HIGH) [Near.org, https://near.org/]; (HIGH) [DefiLlama Near, https://defillama.com/chain/Near]; (HIGH) [Messari Near, https://messari.io/asset/near]
+
+Competitor: Algorand
+Category: Layer 1 Smart Contract Platform (Pure PoS, TEAL/Python)
+Difference: Pure PoS (no delegation); TEAL/Python smart contracts; fast finality (~3-4s); lower TVL/DeFi activity; enterprise/government focus (similar to Atala PRISM); different consensus (VRF-based but different); no on-chain constitutional governance
+Market Segment: Enterprise / Institutional / Pure PoS Layer 1
+Sources: (HIGH) [Algorand Foundation, https://algorand.foundation/]; (HIGH) [DefiLlama Algorand, https://defillama.com/chain/Algorand]; (HIGH) [Messari Algorand, https://messari.io/asset/algorand]
+
+Competitor: Tezos
+Category: Layer 1 Smart Contract Platform (LPoS, Michelson, On-chain Governance)
+Difference: Liquid Proof-of-Stake; Michelson smart contract language; on-chain governance (amendment process) since 2018 (Cardano CIP-1694 2024); formal verification focus (similar academic approach); smaller ecosystem; account-based
+Market Segment: Formal Verification / On-Chain Governance / Tezos Ecosystem
+Sources: (HIGH) [Tezos.com, https://tezos.com/]; (HIGH) [DefiLlama Tezos, https://defillama.com/chain/Tezos]; (HIGH) [Messari Tezos, https://messari.io/asset/tezos]
+
+Competitor: Cosmos Hub
+Category: Layer 0 / Hub (IBC, CometBFT, App-chains)
+Difference: Inter-chain communication (IBC) native; app-chain sovereignty; CometBFT consensus; ATOM token economics (interchain security); no native smart contracts on Hub; different scaling paradigm (horizontal app-chains vs Hydra/Midnight)
+Market Segment: Interoperability / App-chain / IBC Ecosystem
+Sources: (HIGH) [Cosmos.network, https://cosmos.network/]; (HIGH) [DefiLlama Cosmos, https://defillama.com/chain/Cosmos]; (HIGH) [Messari Cosmos, https://messari.io/asset/cosmos]
+
+## Narrative Position
+
+Narrative: Academic Research / Formal Verification
+Status: Main Narrative
+Evidence: 100+ peer-reviewed papers published at top venues (Eurocrypt, Crypto, IEEE S&P, Financial Cryptography); Ouroboros family with formal security proofs in UC model; Plutus Core formal semantics; Mithril threshold signatures proven; IOG Research Library public
+Sources: (HIGH) [IOG Research Library, https://iohk.io/en/research/library/]; (HIGH) [Cardano Academic Papers, https://docs.cardano.org/academic-papers/]; (HIGH) [Messari Cardano Research Profile, https://messari.io/asset/cardano]
+
+Narrative: On-Chain Constitutional Governance (Voltaire Era)
+Status: Main Narrative
+Evidence: CIP-1694 implemented via Chang hard fork (May 2024); Interim Constitutional Committee (9 seats) active; DRep registration/delegation live; Constitution ratified by DRep vote (August 2024); governance actions (parameter changes, treasury withdrawals) processed on-chain
+Sources: (HIGH) [CIP-1694, https://cips.cardano.org/cips/cip1694/]; (HIGH) [Cardano Governance Portal, https://gov.cardano.org/]; (HIGH) [GovTool, https://govtool.com/]; (HIGH) [Cardano Constitution, https://gov.cardano.org/constitution]
+
+Narrative: eUTXO Model / Deterministic Fees / Parallelizability
+Status: Main Narrative
+Evidence: Extended UTxO model (not account-based); deterministic transaction fees (no gas wars); local transaction validation enables parallelization research; native assets without smart contracts (Mary hard fork 2021); reference inputs/inline datums (Vasil 2022) improve composability
+Sources: (HIGH) [Cardano Architecture eUTXO, https://docs.cardano.org/architecture]; (HIGH) [IOG Blog eUTXO Concurrency, https://iohk.io/en/blog/posts/2022/02/14/understanding-eutxo-concurrency/]; (HIGH) [Plutus Docs, https://docs.cardano.org/plutus/]
+
+Narrative: Enterprise / Government Identity (Atala PRISM / DID)
+Status: Secondary Narrative
+Evidence: National-scale deployments: Ethiopia (5M student credentials), Georgia (document verification), Tanzania (digital identity); W3C DID/VC standards; Atala PRISM mainnet live 2021; Midnight partner chain extends privacy-preserving identity
+Sources: (HIGH) [Atala PRISM Case Studies, https://atalaprism.io/case-studies/]; (HIGH) [IOG Blog Atala PRISM Launch, https://iohk.io/en/blog/posts/2021/04/29/atala-prism-mainnet-launch/]; (HIGH) [Cardano Summit 2022, https://cardanosummit.io/]
+
+Narrative: Layer 2 Scaling (Hydra / Mithril)
+Status: Secondary Narrative
+Evidence: Hydra Head protocol mainnet beta (2024 incremental releases); isomorphic state channels with on-chain settlement; Mithril stake-based threshold signatures for fast sync/light clients (mainnet 2023); Leios/Peras research for base-layer throughput
+Sources: (HIGH) [Hydra Docs, https://hydra.family/]; (HIGH) [Hydra GitHub Releases, https://github.com/input-output-hk/hydra/releases]; (HIGH) [Mithril Network, https://mithril.network/]; (HIGH) [IOG Research Leios Peras, https://iohk.io/en/research/library/]
+
+Narrative: Partner Chain / Interoperability (Midnight)
+Status: Emerging Narrative
+Evidence: Midnight partner chain announced 2022; devnet v1 + public testnet 2024; ZK-SNARKs (Compact language); Polkadot SDK base; DUST token; bridge design to Cardano mainnet in progress; privacy-preserving smart contracts
+Sources: (HIGH) [Midnight Network, https://midnight.network/]; (HIGH) [Midnight Docs, https://docs.midnight.network/]; (HIGH) [IOG Blog Midnight Announcement, https://iohk.io/en/blog/posts/2022/11/18/introducing-midnight/]
+
+Narrative: Treasury / DAO Funding (Project Catalyst)
+Status: Secondary Narrative
+Evidence: Largest on-chain treasury DAO by cumulative funds deployed (>100M ADA since 2020); Fund 1–13+; community proposal/voting; CIP-1694 integrates treasury withdrawals into constitutional governance
+Sources: (HIGH) [Project Catalyst, https://cardano.ideascale.com/]; (HIGH) [CIP-1694 Treasury, https://cips.cardano.org/cips/cip1694/]; (HIGH) [Token Terminal Catalyst, https://tokenterminal.com/terminal/projects/cardano]
+
+Narrative: DeFi Composability on eUTXO
+Status: Secondary Narrative
+Evidence: Minswap, Indigo, Liqwid, WingRiders, Lenfi, DexHunter live; TVL peak ~$450M; Vasil hard fork (reference inputs, inline datums, Plutus V2) enabled complex DeFi; eUTXO concurrency patterns (batching, multiple UTxOs, off-chain sequencers) maturing
+Sources: (HIGH) [DefiLlama Cardano DeFi, https://defillama.com/chain/Cardano]; (HIGH) [Minswap, https://minswap.org/]; (HIGH) [Indigo Protocol, https://indigoprotocol.io/]; (HIGH) [Liqwid Finance, https://liqwid.finance/]
+

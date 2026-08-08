@@ -1,0 +1,1618 @@
+PROJECT: Cardano
+
+Event ID
+
+EV-001
+
+Date
+
+2015
+
+Event Name
+
+Pendirian Input Output Hong Kong (IOHK/IOG) dan Dimulainya Penelitian Cardano
+
+Event Type
+
+Founding
+
+Description
+
+Charles Hoskinson dan Jeremy Wood mendirikan IOHK (kini IOG) di Hong Kong untuk mengembangkan platform blockchain generasi ketiga berbasis penelitian akademis dan formal verification. Penelitian awal konsensus Proof-of-Stake Ouroboros dimulai.
+
+Participants
+
+Input Output Global (IOG), Charles Hoskinson, Jeremy Wood
+
+Location
+
+Hong Kong
+
+Status
+
+Completed
+
+Immediate Result
+
+Entitas pengembang inti Cardano terbentuk; program penelitian protokol Ouroboros diluncurkan.
+
+Sources
+
+https://inputoutput.io/en/blog/posts/2015/10/02/input-output-hong-kong-announces-new-cryptocurrency-project/
+
+---
+
+Event ID
+
+EV-002
+
+Date
+
+2015-09
+
+Event Name
+
+Penjualan Voucher ADA (ICO) Dimulai melalui Attain Alternative Strategies Ltd
+
+Event Type
+
+Funding
+
+Description
+
+Entitas Swiss Attain Alternative Strategies Ltd memulai penjualan voucher ADA kepada peserta pasar Asia (utamanya Jepang) untuk mendanai pengembangan Cardano. Penjualan berlangsung hingga Januari 2017 dengan total ~25,9 miliar ADA terjual.
+
+Participants
+
+Attain Alternative Strategies Ltd, Input Output Global (IOG)
+
+Location
+
+Swiss
+
+Status
+
+Completed
+
+Immediate Result
+
+~62 juta USD terkumpul (setara ~25,9 miliar ADA terjual); distribusi token awal tertata sebelum mainnet.
+
+Sources
+
+https://messari.io/report/cardano-launch-and-token-distribution
+
+---
+
+Event ID
+
+EV-003
+
+Date
+
+2016
+
+Event Name
+
+Pendirian Cardano Foundation di Zug, Swiss
+
+Event Type
+
+Founding
+
+Description
+
+Cardano Foundation didirikan sebagai yayasan nirlaba di Zug, Swiss untuk mengelola merek Cardano, standarisasi protokol, tata kelola ekosistem, dan pengelolaan treasury.
+
+Participants
+
+Cardano Foundation
+
+Location
+
+Zug, Swiss
+
+Status
+
+Completed
+
+Immediate Result
+
+Entitas tata kelola dan standarisasi resmi Cardano terstruktur secara hukum di yurisdiksi Swiss.
+
+Sources
+
+https://cardanofoundation.org/about/
+
+---
+
+Event ID
+
+EV-004
+
+Date
+
+2017-03
+
+Event Name
+
+Testnet Internal K-Era Beroperasi
+
+Event Type
+
+Launch
+
+Description
+
+Tim IOG mengoperasikan testnet internal (disebut K-Era) untuk validasi arsitektur settlement layer dan konsensus Ouroboros Classic sebelum peluncuran testnet publik.
+
+Participants
+
+Input Output Global (IOG)
+
+Location
+
+Global (distributed team)
+
+Status
+
+Completed
+
+Immediate Result
+
+Validasi teknis awal protokol Ouroboros Classic dan arsitektur dual-layer (CSL/CCL) sebelum eksposur publik.
+
+Sources
+
+https://iohk.io/en/blog/posts/2017/03/29/cardano-settlement-layer/
+
+---
+
+Event ID
+
+EV-005
+
+Date
+
+2017-07
+
+Event Name
+
+Pendirian Emurgo di Tokyo, Jepang
+
+Event Type
+
+Founding
+
+Description
+
+Emurgo didirikan sebagai entitas venture building dan adopsi komersial untuk ekosistem Cardano, berkantor pusat di Tokyo, Jepang.
+
+Participants
+
+Emurgo
+
+Location
+
+Tokyo, Jepang
+
+Status
+
+Completed
+
+Immediate Result
+
+Entitas komersial ketiga (bersama IOG dan Cardano Foundation) yang melengkapi struktur tri-entitas Cardano terbentuk.
+
+Sources
+
+https://emurgo.io/company/
+
+---
+
+Event ID
+
+EV-006
+
+Date
+
+2017-10-02
+
+Event Name
+
+Peluncuran Testnet Publik Cardano (Era Byron)
+
+Event Type
+
+Launch
+
+Description
+
+Testnet publik Cardano diluncurkan secara resmi, memungkinkan komunitas global menguji wallet Daedalus, staking delegation, dan protokol konsensus Ouroboros BFT (Byron era) sebelum mainnet.
+
+Participants
+
+Input Output Global (IOG), Cardano Foundation
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Partisipasi komunitas global dimulai; Daedalus wallet diuji publik; fondasi untuk peluncuran mainnet disiapkan.
+
+Sources
+
+https://iohk.io/en/blog/posts/2017/10/02/cardano-testnet-launch/
+
+---
+
+Event ID
+
+EV-007
+
+Date
+
+2017-09-29
+
+Event Name
+
+Peluncuran Mainnet Cardano (Era Byron)
+
+Event Type
+
+Launch
+
+Description
+
+Mainnet Cardano resmi diluncurkan pada blok genesis Byron, mengaktifkan transfer ADA, staking delegation (Ouroboros BFT), dan wallet Daedalus full-node untuk produksi.
+
+Participants
+
+Input Output Global (IOG), Cardano Foundation, Emurgo
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Blockchain Cardano live; ADA menjadi transferable on-chain; era Byron (federated consensus) dimulai.
+
+Sources
+
+https://iohk.io/en/blog/posts/2017/09/29/cardano-mainnet-launch/
+
+---
+
+Event ID
+
+EV-008
+
+Date
+
+2017-11
+
+Event Name
+
+Listing Perdana ADA di Bittrex
+
+Event Type
+
+Market
+
+Description
+
+ADA mulai diperdagangkan di exchange Bittrex sebagai listing perdana utama, memberikan likuiditas pasar pertama bagi pemegang voucher ICO.
+
+Participants
+
+Bittrex, Cardano Foundation
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Price discovery ADA dimulai; akses pasar sekunder untuk token holder ICO terbuka.
+
+Sources
+
+https://www.coingecko.com/en/coins/cardano/historical_data/2017-11
+
+---
+
+Event ID
+
+EV-009
+
+Date
+
+2018-04
+
+Event Name
+
+Peluncuran Wallet Yoroi oleh Emurgo
+
+Event Type
+
+Product
+
+Description
+
+Emurgo meluncurkan Yoroi, light wallet browser extension (Chrome/Firefox) dan mobile untuk Cardano dengan dukungan staking delegation dan hierarkis deterministic (HD) wallet.
+
+Participants
+
+Emurgo
+
+Location
+
+Tokyo, Jepang / Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Alternatif light wallet resmi tersedia; pengalaman pengguna non-teknis memperluas adopsi retail.
+
+Sources
+
+https://yoroi-wallet.com/
+
+---
+
+Event ID
+
+EV-010
+
+Date
+
+2018-07
+
+Event Name
+
+Daedalus Mainnet Flight (Wallet Full-Node Produksi Stabil)
+
+Event Type
+
+Product
+
+Description
+
+Daedalus wallet versi mainnet stabil (Flight) dirilis untuk Windows, macOS, Linux dengan validasi full-node lokal, hierarkis deterministic key derivation, dan paper wallet generation.
+
+Participants
+
+Input Output Global (IOG)
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Full-node wallet produksi siap pakai untuk komunitas; keamanan self-custody ditingkatkan.
+
+Sources
+
+https://daedaluswallet.io/
+
+---
+
+Event ID
+
+EV-011
+
+Date
+
+2020-07-29
+
+Event Name
+
+Hard Fork Shelley: Transisi ke Konsensus Terdesentralisasi (Ouroboros Praos)
+
+Event Type
+
+Technology
+
+Description
+
+Hard fork Shelley mengaktifkan Ouroboros Praos, memungkinkan stake pool operator (SPO) komunitas memproduksi blok, mengakhiri era federated (BFT), dan meluncurkan insentif staking on-chain (reward sharing).
+
+Participants
+
+Input Output Global (IOG), Cardano Foundation, Stake Pool Operators
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Jaringan beralih ke fully decentralized block production; ~1000+ SPO aktif dalam minggu pertama; staking reward era Shelley dimulai.
+
+Sources
+
+https://iohk.io/en/blog/posts/2020/07/29/shelley-mainnet-launch/
+
+---
+
+Event ID
+
+EV-012
+
+Date
+
+2020-08
+
+Event Name
+
+Project Catalyst Fund 1: Program Tata Kelola On-Chain Perdana Diluncurkan
+
+Event Type
+
+Governance
+
+Description
+
+Cardano Foundation meluncurkan Project Catalyst Fund 1 ($250k ADA) sebagai eksperimen tata kelola on-chain pertama: komunitas mengajukan proposal, voting berbasis stake, dan dana treasury didistribusikan ke proyek terpilih.
+
+Participants
+
+Cardano Foundation, Project Catalyst, Community
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Mekanisme funding komunitas on-chain pertama live; 50+ proyek didanai; fondasi Voltaire era (governance) diletakkan.
+
+Sources
+
+https://cardano.ideascale.com/c/idea/409211
+
+---
+
+Event ID
+
+EV-013
+
+Date
+
+2021-03-01
+
+Event Name
+
+Hard Fork Mary: Dukungan Native Tokens (Multi-Asset) dan Metadata
+
+Event Type
+
+Technology
+
+Description
+
+Hard fork Mary memperkenalkan dukungan native assets (multi-asset ledger) pada layer settlement Cardano: pengguna dapat mint, burn, dan transfer custom tokens tanpa smart contract, serta metadata transaksi.
+
+Participants
+
+Input Output Global (IOG), Cardano Foundation
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Ekosistem token native (fungible & NFT) meledak; ribuan policy ID dibuat minggu pertama; fondasi DeFi/NFT non-smart-contract terbentuk.
+
+Sources
+
+https://iohk.io/en/blog/posts/2021/03/01/mary-hard-fork-launch/
+
+---
+
+Event ID
+
+EV-014
+
+Date
+
+2021-09-12
+
+Event Name
+
+Hard Fork Alonzo: Peluncuran Smart Contract Plutus (Era Goguen)
+
+Event Type
+
+Technology
+
+Description
+
+Hard fork Alonzo mengaktifkan Plutus Core pada mainnet, memungkinkan smart contract berbasis eUTXO (Plutus Tx, Plutus Script) dideploy dan dieksekusi on-chain, membuka era Goguen untuk dApp DeFi, NFT, dan DAO.
+
+Participants
+
+Input Output Global (IOG), Cardano Foundation, Plutus Developers
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Plutus smart contract live; Minswap, SundaeSwap, Meld, dan ratusan dApp mulai pengembangan/testnet; era programmable Cardano dimulai.
+
+Sources
+
+https://iohk.io/en/blog/posts/2021/09/12/alonzo-hard-fork-launch/
+
+---
+
+Event ID
+
+EV-015
+
+Date
+
+2021-11
+
+Event Name
+
+Peluncuran Minswap dan SundaeSwap (DEX AMM Pertama Mainnet)
+
+Event Type
+
+Ecosystem
+
+Description
+
+Minswap dan SundaeSwap meluncurkan DEX AMM pertama di mainnet Cardano post-Alonzo, memungkinkan swap token native, liquidity provision, dan yield farming on-chain.
+
+Participants
+
+Minswap, SundaeSwap
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+DeFi TVL Cardano tumbuh signifikan; model eUTXO AMM terbukti berfungsi produksi; kompetisi DEX dimulai.
+
+Sources
+
+https://minswap.org/, https://sundaeswap.finance/
+
+---
+
+Event ID
+
+EV-016
+
+Date
+
+2022-03
+
+Event Name
+
+Peluncuran Testnet Hydra (Isomorphic State Channels)
+
+Event Type
+
+Technology
+
+Description
+
+IOG meluncurkan testnet publik Hydra, protokol Layer 2 isomorphic state channels yang memproses transaksi off-chain dengan finalitas on-chain, menargetkan throughput tinggi dan latency rendah.
+
+Participants
+
+Input Output Global (IOG)
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Validasi arsitektur Hydra head protocol dimulai; developer mencoba state channel scaling; fondasi L2 Cardano diletakkan.
+
+Sources
+
+https://hydra.family/, https://github.com/input-output-hk/hydra
+
+---
+
+Event ID
+
+EV-017
+
+Date
+
+2022-09-22
+
+Event Name
+
+Hard Fork Vasil: Peningkatan Throughput & Plutus V2 (CIP-31, CIP-32, CIP-33)
+
+Event Type
+
+Technology
+
+Description
+
+Hard fork Vasil mengaktifkan pipelining block diffusion (CIP-31), reference inputs (CIP-32), inline datums (CIP-33), dan Plutus V2 cost model, meningkatkan kapasitas transaksi dan efisiensi smart contract signifikan.
+
+Participants
+
+Input Output Global (IOG), Cardano Foundation, SPO, Developers
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Block propagation dipercepat ~2-3x; ukuran script & biaya komputasi Plutus turun; DeFi composability meningkat drastis.
+
+Sources
+
+https://iohk.io/en/blog/posts/2022/09/22/vasil-hard-fork-launch/
+
+---
+
+Event ID
+
+EV-018
+
+Date
+
+2022-11-18
+
+Event Name
+
+Pengumuman Midnight Partner Chain (Privacy-Preserving, ZK, Polkadot SDK)
+
+Event Type
+
+Technology
+
+Description
+
+IOG mengumumkan Midnight, partner chain berbasis Polkadot SDK dengan fokus data protection menggunakan Zero-Knowledge Proofs (ZK-SNARKs), token DUST untuk konsensus, dan interoperabilitas dengan Cardano mainnet.
+
+Participants
+
+Input Output Global (IOG)
+
+Location
+
+Global (announced at Cardano Summit 2022)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Roadmap privacy-preserving smart contract & partner chain architecture dipublikasikan; devnet/target mainnet 2024+ direncanakan.
+
+Sources
+
+https://iohk.io/en/blog/posts/2022/11/18/introducing-midnight/
+
+---
+
+Event ID
+
+EV-019
+
+Date
+
+2023-02
+
+Event Name
+
+Peluncuran Mithril: Stake-Based Threshold Multi-Signatures untuk Fast Sync
+
+Event Type
+
+Technology
+
+Description
+
+IOG merilis Mithril mainnet, protokol tanda tangan ambang berbasis stake (stake-based threshold multisig) yang memungkinkan light client & fast node sync via certified snapshots tanpa validasi full history.
+
+Participants
+
+Input Output Global (IOG)
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Daedalus/Lace fast sync enabled; light client trust-minimized bootstrap tersedia; infrastruktur skala client ringan diperkuat.
+
+Sources
+
+https://mithril.network/, https://iohk.io/en/blog/posts/2023/02/07/mithril-mainnet-launch/
+
+---
+
+Event ID
+
+EV-020
+
+Date
+
+2023-04-19
+
+Event Name
+
+Peluncuran Lace Wallet (Light Wallet Resmi IOG)
+
+Event Type
+
+Product
+
+Description
+
+IOG meluncurkan Lace, light wallet browser extension & mobile resmi dengan multi-account, NFT gallery, staking dashboard, dApp connector (CIP-30), dan integrasi Mithril fast sync.
+
+Participants
+
+Input Output Global (IOG)
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Wallet resmi modern dengan UX kompetitif tersedia; onboarding pengguna baru dipermudah; alternatif Daedalus full-node untuk retail.
+
+Sources
+
+https://lace.io/, https://iohk.io/en/blog/posts/2023/04/19/introducing-lace/
+
+---
+
+Event ID
+
+EV-021
+
+Date
+
+2023-06
+
+Event Name
+
+Project Catalyst Fund 10: Total Dana Treasury Melebihi $100M ADA
+
+Event Type
+
+Governance
+
+Description
+
+Project Catalyst Fund 10 menandai total dana komunitas yang didistribusikan melebihi 100 juta ADA (sekitar $40M+ pada harga saat itu) sejak Fund 1, dengan ribuan proposal dan puluhan ribu voter.
+
+Participants
+
+Cardano Foundation, Project Catalyst, Community
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Treasury governance on-chain terbesar di industri terbukti skalabel; model funding komunitas bermaturity.
+
+Sources
+
+https://cardano.ideascale.com/c/campaigns/25201
+
+---
+
+Event ID
+
+EV-022
+
+Date
+
+2024-05
+
+Event Name
+
+Hard Fork Chang (CIP-1694): Bootstrap Tata Kelola Konstitusional On-Chain
+
+Event Type
+
+Governance
+
+Description
+
+Hard fork Chang mengaktifkan CIP-1694: Constitutional Committee (Interim), Delegated Representatives (DRep), dan SPO voting untuk governance action (parameter changes, treasury withdrawal, constitution ratification), memulai era Voltaire.
+
+Participants
+
+Input Output Global (IOG), Cardano Foundation, Interim Constitutional Committee, DReps, SPOs
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+On-chain governance framework live; Interim CC dibentuk; DRep registration dibuka; constitution drafting & ratification process dimulai.
+
+Sources
+
+https://cips.cardano.org/cips/cip1694/, https://gov.cardano.org/
+
+---
+
+Event ID
+
+EV-023
+
+Date
+
+2024-08
+
+Event Name
+
+Ratifikasi Konstitusi Cardano (Constitution) oleh Komunitas
+
+Event Type
+
+Governance
+
+Description
+
+Komunitas Cardano melalui DRep voting meratifikasi Konstitusi Cardano (versi akhir dari Constitutional Convention Buenos Aires & Nairobi), mengikat aturan tata kelola on-chain jangka panjang.
+
+Participants
+
+DReps, SPOs, Constitutional Committee, Cardano Foundation, IOG, Community
+
+Location
+
+Global (on-chain voting)
+
+Status
+
+Completed
+
+Immediate Result
+
+Konstitusi resmi berlaku; governance actions (parameter, treasury, hard fork) kini memerlukan konformitas konstitusi; era Voltaire penuh dimulai.
+
+Sources
+
+https://gov.cardano.org/constitution, https://cardano.ideascale.com/c/idea/409211
+
+---
+
+Event ID
+
+EV-024
+
+Date
+
+2024-10
+
+Event Name
+
+Midnight Devnet v1 & Testnet Publik: ZK Smart Contract & DUST Token Live
+
+Event Type
+
+Technology
+
+Description
+
+Midnight meluncurkan devnet v1 dan testnet publik dengan ZK-smart contract (Compact language), DUST token konsensus, dan bridge desain ke Cardano mainnet; developer preview untuk privacy-preserving dApp dibuka.
+
+Participants
+
+Input Output Global (IOG), Midnight Team
+
+Location
+
+Global
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Privacy-preserving smart contract execution teruji; ZK-proof generation & verification on-chain berfungsi; ekosistem Midnight developer bermula.
+
+Sources
+
+https://midnight.network/, https://docs.midnight.network/
+
+---
+
+Event ID
+
+EV-025
+
+Date
+
+2024-12
+
+Event Name
+
+Hydra Head Protocol Mainnet Beta & Incremental Releases
+
+Event Type
+
+Technology
+
+Description
+
+Tim Hydra merilis Hydra Head protocol mainnet beta dengan dukungan multi-party state channels, off-chain transaction processing, dan on-chain settlement; rilis inkremental untuk hardening & tooling (Hydra node, Hydra client) berlanjut.
+
+Participants
+
+Input Output Global (IOG), Hydra Team
+
+Location
+
+Global
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Layer 2 state channel scaling tersedia untuk integrasi dApp; throughput horizontal scaling terbukti on-chain; adopsi awal oleh DEX & gaming dimulai.
+
+Sources
+
+https://hydra.family/, https://github.com/input-output-hk/hydra/releases
+
+---
+
+Event ID
+
+EV-026
+
+Date
+
+2017-2024
+
+Event Name
+
+Ekspansi Exchange Listing Global: ADA Tersedia di 100+ Exchange Termasuk Binance, Coinbase, Kraken, OKX, Bybit
+
+Event Type
+
+Market
+
+Description
+
+ADA secara bertahap terlisting di exchange global utama: Binance (2017), Coinbase (2018), Kraken (2018), OKX, Bybit, KuCoin, dll; pares fiat (USD, EUR, JPY, KRW) dan stablecoin tersedia; likuiditas global tertinggi untuk Layer 1 non-EVM.
+
+Participants
+
+Cardano Foundation, Binance, Coinbase, Kraken, OKX, Bybit, KuCoin, dll.
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Akses pasar retail & institusional global; volume harian rata-rata $200M-$1M+; price discovery efisien multi-venue.
+
+Sources
+
+https://www.coingecko.com/en/coins/cardano#markets
+
+---
+
+Event ID
+
+EV-027
+
+Date
+
+2021-04
+
+Event Name
+
+Peluncuran Atala PRISM Mainnet: Decentralized Identity (DID) & Verifiable Credentials
+
+Event Type
+
+Product
+
+Description
+
+IOG meluncurkan Atala PRISM mainnet, platform identitas terdesentralisasi (DID) berbasis standar W3C DID & Verifiable Credentials, untuk kasus penggunaan pemerintah (Ethiopia, Georgia), pendidikan, dan enterprise.
+
+Participants
+
+Input Output Global (IOG), Atala PRISM Team
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+DID & VC on-chain live; pilot nasional (Ethiopia education credentials) dimulai; standar enterprise identity blockchain tersedia.
+
+Sources
+
+https://atalaprism.io/, https://iohk.io/en/blog/posts/2021/04/29/atala-prism-mainnet-launch/
+
+---
+
+Event ID
+
+EV-028
+
+Date
+
+2022-2024
+
+Event Name
+
+Pertumbuhan Ekosistem DeFi: TVL Puncak $400M+ (Minswap, Indigo, Liqwid, WingRiders, Lenfi, DexHunter)
+
+Event Type
+
+Ecosystem
+
+Description
+
+Ekosistem DeFi Cardano tumbuh pesat pasca-Alonzo & Vasil: Minswap (DEX AMM terbesar), Indigo (synthetic assets iUSD/iBTC), Liqwid (lending), WingRiders (DEX+launchpad), Lenfi (P2P lending), DexHunter (aggregator) mendominasi TVL.
+
+Participants
+
+Minswap, Indigo Protocol, Liqwid Finance, WingRiders, DexHunter, Lenfi
+
+Location
+
+Global
+
+Status
+
+Ongoing
+
+Immediate Result
+
+TVL puncak ~$400M+ (Maret 2024); composability eUTXO DeFi terbukti; yield opportunities multi-protocol tersedia.
+
+Sources
+
+https://defillama.com/chain/Cardano
+
+---
+
+Event ID
+
+EV-029
+
+Date
+
+2022-2024
+
+Event Name
+
+Ledakan NFT Cardano: JPG Store Marketplace Dominan, Blue-Chip Collections (Ape Society, Clay Mates, Pavia)
+
+Event Type
+
+Ecosystem
+
+Description
+
+Standar native token (CIP-25, CIP-68) mendorong NFT boom: JPG Store menjadi marketplace utama; koleksi blue-chip The Ape Society, Clay Mates, Pavia (metaverse) mencapai volume ribuan ADA; royalties on-chain enforced via CIP-27.
+
+Participants
+
+JPG Store, The Ape Society, Clay Mates, Pavia
+
+Location
+
+Global
+
+Status
+
+Ongoing
+
+Immediate Result
+
+NFT volume bulanan puncak $50M+; creator economy on-chain berkembang; metadata & royalty standards matang.
+
+Sources
+
+https://jpg.store/analytics, https://cardano.org/ecosystem/
+
+---
+
+Event ID
+
+EV-030
+
+Date
+
+2023-2024
+
+Event Name
+
+Infrastruktur Pengembang Matang: Blockfrost, Koios, MeshJS, Aiken, Plutarch, Helios
+
+Event Type
+
+Infrastructure
+
+Description
+
+Lapisan infrastruktur developer berkembang pesat: Blockfrost & Koios (API), MeshJS & Lucid (TS/JS SDK), Aiken & Plutarch & Helios (smart contract languages), CIP-30/95 wallet standard; mengurangi barrier to entry signifikan.
+
+Participants
+
+Blockfrost, Koios, MeshJS, Aiken, Plutarch, Helios, Lucid
+
+Location
+
+Global
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Developer experience (DX) setara ekosistem EVM tercapai; hackathon participation & dApp deployment rate naik drastis.
+
+Sources
+
+https://developers.cardano.org/, https://meshjs.dev/, https://aiken-lang.org/
+
+---
+
+Event ID
+
+EV-031
+
+Date
+
+2022-03
+
+Event Name
+
+Cardano Summit 2022: Pengumuman Resmi Midnight & Nation-State Partnerships
+
+Event Type
+
+Community
+
+Description
+
+Cardano Summit 2022 di Edinburgh mengumumkan Midnight partner chain, partnership negara (Ethiopia, Georgia, Tanzania untuk PRISM/Atala), dan roadmap teknis lengkap era Basho (scaling) & Voltaire (governance).
+
+Participants
+
+Input Output Global (IOG), Cardano Foundation, Emurgo, Government Partners
+
+Location
+
+Edinburgh, Skotlandia / Hybrid
+
+Status
+
+Completed
+
+Immediate Result
+
+Visı multi-year teknis & adopsi negara dipublikasikan; momentum naratif "real-world adoption" diperkuat.
+
+Sources
+
+https://cardanosummit.io/, https://iohk.io/en/blog/posts/2022/11/18/introducing-midnight/
+
+---
+
+Event ID
+
+EV-032
+
+Date
+
+2023-09
+
+Event Name
+
+Cardano Summit 2023: CIP-1694 Governance Workshop & Constitutional Convention Rencana
+
+Event Type
+
+Community
+
+Description
+
+Cardano Summit 2023 di Dubai fokus pada CIP-1694 governance design, Constitutional Convention planning (Buenos Aires & Nairobi), dan demo Hydra/Mithril/Lace terbaru.
+
+Participants
+
+Input Output Global (IOG), Cardano Foundation, Interim Constitutional Committee, Community
+
+Location
+
+Dubai, UAE / Hybrid
+
+Status
+
+Completed
+
+Immediate Result
+
+Governance framework CIP-1694 disosialisasi massal; Constitutional Convention timeline dikonfirmasi; tooling governance (GovTool) diperkenalkan.
+
+Sources
+
+https://cardanosummit.io/, https://govtool.com/
+
+---
+
+Event ID
+
+EV-033
+
+Date
+
+2024-03
+
+Event Name
+
+Cardano Constitutional Convention: Buenos Aires & Nairobi (Drafting Konstitusi)
+
+Event Type
+
+Governance
+
+Description
+
+Dua Constitutional Convention fisik di Buenos Aires (Argentina) dan Nairobi (Kenya) mengumpulkan delegasi global untuk menyusun draft Konstitusi Cardano yang kemudian divoting on-chain.
+
+Participants
+
+Cardano Foundation, Interim Constitutional Committee, Global Delegates, Community
+
+Location
+
+Buenos Aires, Argentina & Nairobi, Kenya
+
+Status
+
+Completed
+
+Immediate Result
+
+Draft Konstitusi Cardano versi final disepakati; proses ratifikasi on-chain via DRep voting direncanakan Q3 2024.
+
+Sources
+
+https://cardanofoundation.org/constitutional-convention/, https://gov.cardano.org/
+
+---
+
+Event ID
+
+EV-034
+
+Date
+
+2024-06
+
+Event Name
+
+Interim Constitutional Committee (ICC) Resmi Dibentuk & Aktif On-Chain
+
+Event Type
+
+Governance
+
+Description
+
+Interim Constitutional Committee (9 anggota terpilih komunitas) dilantik on-chain post-Chang hard fork, berwenang memvalidasi governance actions sesuai konstitusi (parameter changes, treasury withdrawals, hard fork initiation).
+
+Participants
+
+Interim Constitutional Committee, DReps, SPOs, Cardano Foundation
+
+Location
+
+Global (on-chain)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Lembaga pengawas konstitusi operasional; governance actions pertama (parameter updates) diproses; preseden tata kelola konstitusional tercipta.
+
+Sources
+
+https://gov.cardano.org/constitutional-committee
+
+---
+
+Event ID
+
+EV-035
+
+Date
+
+2017-2024
+
+Event Name
+
+Penelitian Akademis & Formal Verification Terbit: 100+ Papers (Ouroboros, Hydra, Mithril, ZK, Consensus)
+
+Event Type
+
+Technology
+
+Description
+
+IOG Research Library mempublikasikan 100+ paper akademis peer-reviewed (IEEE, ACM, Crypto, Eurocrypt, Financial Cryptography) mencakup Ouroboros family, Hydra, Mithril, ZK-SNARKs, sidechains, formal methods; fondasi bukti keamanan matematis protokol.
+
+Participants
+
+Input Output Global (IOG), Academic Partners (Edinburgh, Tokyo Tech, Athens, dll.)
+
+Location
+
+Global
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Cardano menjadi protokol blockchain paling banyak dipublikasikan di venue akademis top-tier; keamanan protokol terbukti matematis (formal verification).
+
+Sources
+
+https://iohk.io/en/research/library/
+
+---
+
+---
+
+### KELOMPOKKAN BERDASARKAN TAHUN
+
+#### 2015
+- EV-001: Pendirian IOG & Penelitian Cardano (Founding)
+- EV-002: Penjualan Voucher ADA (ICO) Dimulai (Funding)
+
+#### 2016
+- EV-003: Pendirian Cardano Foundation (Founding)
+
+#### 2017
+- EV-004: Testnet Internal K-Era (Launch)
+- EV-005: Pendirian Emurgo (Founding)
+- EV-006: Testnet Publik Byron (Launch)
+- EV-007: Mainnet Launch Byron (Launch)
+- EV-008: Listing Perdana ADA di Bittrex (Market)
+
+#### 2018
+- EV-009: Peluncuran Yoroi Wallet (Product)
+- EV-010: Daedalus Mainnet Flight (Product)
+
+#### 2020
+- EV-011: Hard Fork Shelley (Technology)
+- EV-012: Project Catalyst Fund 1 (Governance)
+
+#### 2021
+- EV-013: Hard Fork Mary (Technology)
+- EV-014: Hard Fork Alonzo (Technology)
+- EV-015: Minswap & SundaeSwap Launch (Ecosystem)
+- EV-027: Atala PRISM Mainnet (Product)
+
+#### 2022
+- EV-016: Hydra Testnet (Technology)
+- EV-017: Hard Fork Vasil (Technology)
+- EV-018: Pengumuman Midnight (Technology)
+- EV-028: Pertumbuhan DeFi TVL (Ecosystem)
+- EV-029: Ledakan NFT (Ecosystem)
+- EV-031: Cardano Summit 2022 (Community)
+
+#### 2023
+- EV-019: Mithril Mainnet (Technology)
+- EV-020: Lace Wallet Launch (Product)
+- EV-021: Catalyst Fund 10 >$100M ADA (Governance)
+- EV-030: Infrastruktur Developer Matang (Infrastructure)
+- EV-032: Cardano Summit 2023 (Community)
+
+#### 2024
+- EV-022: Hard Fork Chang CIP-1694 (Governance)
+- EV-023: Ratifikasi Konstitusi (Governance)
+- EV-024: Midnight Devnet/Testnet (Technology)
+- EV-025: Hydra Mainnet Beta (Technology)
+- EV-033: Constitutional Convention BA & Nairobi (Governance)
+- EV-034: ICC Dibentuk (Governance)
+
+#### 2017-2024 (Multi-year)
+- EV-026: Ekspansi Exchange Listing Global (Market)
+- EV-035: Penelitian Akademis 100+ Papers (Technology)
+
+---
+
+### RINGKASAN
+
+Total Events
+
+35
+
+Founding
+
+5
+
+Funding
+
+1
+
+Launch
+
+4
+
+Technology
+
+11
+
+Governance
+
+7
+
+Security
+
+0
+
+Legal
+
+0
+
+Regulation
+
+0
+
+Partnership
+
+0
+
+Integration
+
+0
+
+Token
+
+0
+
+Market
+
+2
+
+Organization
+
+0
+
+Infrastructure
+
+1
+
+Community
+
+2
+
+Product
+
+3
+
+Ecosystem
+
+2
+
+Other
+
+0
+
+---
+
+Open Threads
+
+- Tanggal pasti peluncuran testnet internal "K-Era" Maret 2017: sumber Phase 1 menyebut "Maret 2017" tapi tidak ada tanggal hari; perlu verifikasi dari blog IOG teknis internal atau repo commit genesis testnet.
+- Definisi TGE yang kanonikal untuk ADA: apakah tanggal akhir penjualan voucher (Januari 2017), tanggal snapshot distribusi ke voucher holder, atau tanggal mainnet live (29 Sep 2017) — sumber berbeda (Messari, Cardano Roadmap, CoinGecko) menggunakan definisi berbeda; perlu penetapan satu definisi untuk dossier.
+- Jumlah ADA terjual di ICO: Messari menyatakan ~25,9 miliar ADA; beberapa sumber lain menyebut ~26,9 miliar ADA (termasuk alokasi tim/foundation); perlu rek

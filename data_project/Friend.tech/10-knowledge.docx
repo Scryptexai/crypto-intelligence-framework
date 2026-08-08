@@ -1,6 +1,6 @@
 PROJECT: Friend.tech
 
-## Core Insights
+Core Insights
 
 Insight 1: Single-Chain Maximalism sebagai Strategi Go-to-Market Efektif untuk Consumer Crypto
 Explanation: Friend.tech memilih eksklusif deploy di Base mainnet sejak V1 (EV-003) tanpa multi-chain deployment, memanfaatkan deep integration dengan ekosistem Base/Coinbase (Base Ecosystem Fund investor, Coinbase Wallet default onboarding, Conduit sequencer, Aerodrome DEX)【Phase 3 — EV-003】【Phase 2 — Base, Coinbase, Base Ecosystem Fund, Conduit, Coinbase Wallet】. Strategi ini mengurangi kompleksitas teknis dan operational overhead, serta memanfaatkan network effect Base sebagai "flagship app"【Phase 8 — Narrative Position】.
@@ -62,7 +62,7 @@ Evidence: Entities: Dune, Nansen, Arkham, DeFi Llama, Token Terminal, Messari (M
 Supporting Dataset: Phase 2 Entities; Phase 3 EV-010, EV-012; Phase 7 External Dependencies, Major Integrations; Phase 8 Official Market Resources.
 Confidence: HIGH
 
-## Strategic Principles
+Strategic Principles
 
 Principle 1: Single-Chain Deep Integration Over Multi-Chain Breadth
 Explanation: Fokus eksklusif pada Base mainnet memanfaatkan full stack Base/Coinbase (chain, wallet, fund, sequencer, DEX) untuk speed to market dan user experience terintegrasi, bukan fragmentasi liquidity dan developer attention across chains.
@@ -100,7 +100,7 @@ Evidence: EV-010 Nansen dashboard, EV-012 Arkham labels【Phase 3 — EV-010, EV
 Supporting Dataset: Phase 2 Entities; Phase 3 EV-010, EV-012; Phase 7 Major Integrations; Phase 8 Official Market Resources.
 Confidence: HIGH
 
-## Success Factors
+Success Factors
 
 Factor 1: Base Launch Timing & Flagship Status — First Mover Advantage pada L2 Baru
 Explanation: Friend.tech launch V1 (Agustus 2023) bertepatan dengan Base mainnet maturity (Februari 2023 launch, EV-002), menjadi aplikasi consumer pertama yang memanfaatkan Base throughput tinggi + biaya rendah. Base Ecosystem Fund investor, Coinbase Wallet default integration, Conduit infrastructure — menciptakan flywheel adoption.
@@ -132,7 +132,7 @@ Evidence: $10M+ Cumulative Fees (EV-009)【Phase 3 — EV-009】; Treasury >$5M 
 Supporting Dataset: Phase 3 EV-009, EV-025; Phase 5 Revenue History, Treasury, Financial Risk.
 Confidence: HIGH
 
-## Failure Factors
+Failure Factors
 
 Factor 1: V1 Immutable Contracts Mencegah Iterasi Produk Saat Retensi Menurun
 Explanation: V1 contracts immutable (Share.sol, Trade.sol, Fee.sol frozen)【Phase 4 — Core Components】 berarti tim tidak bisa adjust bonding curve parameters, fee structure, atau tambah fitur retention saat volume menurun drastis post-peak (EV-011). Harus deploy V2 baru penuh — migration friction tinggi.
@@ -170,7 +170,7 @@ Evidence: Security Model: V2 Upgrade Authority Centralized【Phase 4 — Securit
 Supporting Dataset: Phase 4 Security Model, Technical Upgrade History; Phase 6 Governance, Open Threads.
 Confidence: MEDIUM
 
-## Decision Framework
+Decision Framework
 
 Observe → Evaluate → Fund → Develop → Launch → Govern
 Explanation: Rekonstruksi framework keputusan Friend.tech berdasarkan pola historis (EV-001 to EV-025) dan behavioral patterns (Phase 9).

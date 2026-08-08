@@ -1,0 +1,265 @@
+PROJECT: Cardano
+
+## Token Information
+
+Official Token Name: ADA
+Symbol: ADA
+Token Standard: Native Asset (Cardano Multi-Asset Ledger, CIP-14 Asset Fingerprint) — not ERC-20, not SPL, not BEP-20
+Blockchain: Cardano Mainnet
+Contract Address: tidak berlaku (native protocol token; Policy ID: native, Asset Name: ada)
+Decimals: 6 (1 ADA = 1,000,000 lovelace)
+Status: Live
+Sources: (HIGH) [Cardano Native Tokens Docs, https://docs.cardano.org/native-tokens/]; (HIGH) [CIP-14 User-Facing Asset Fingerprint, https://cips.cardano.org/cips/cip14/]; (HIGH) [Cardano Architecture, https://docs.cardano.org/architecture]
+
+## Supply
+
+Maximum Supply: 45,000,000,000 ADA (hard cap per monetary policy)
+Total Supply: ~36,800,000,000 ADA (estimated as of 2024-12; includes circulating + staking rewards reserve + treasury)
+Circulating Supply: ~35,600,000,000 ADA (estimated as of 2024-12; excludes treasury reserve and unclaimed rewards)
+Initial Supply: ~31,112,484,646 ADA (genesis distribution: voucher holders ~25.9B + founding entities ~5.185B)
+Supply Type: Inflationary (monetary expansion for staking rewards and treasury; diminishing emission schedule)
+Sources: (HIGH) [Cardano Monetary Policy, https://docs.cardano.org/cardano-components/cardano-token/monetary-policy/]; (HIGH) [Messari Cardano Launch and Token Distribution, https://messari.io/report/cardano-launch-and-token-distribution]; (MEDIUM) [AdaStat Supply Analytics, https://adastat.net/]; (MEDIUM) [Blockfrost Supply API, https://docs.blockfrost.io/#tag/Supply]
+
+## Distribution
+
+Community (Voucher Sale Participants): ~25,900,000,000 ADA (57.6% of initial supply) — sold via Attain Alternative Strategies Ltd 2015-2017
+Team (Input Output Global / IOG): ~2,463,071,701 ADA (5.5% of initial supply) — genesis allocation
+Investors: tidak ada investor VC/private sale terpisah; distribusi melalui voucher sale publik dan genesis allocation ke entitas pendiri
+Foundation (Cardano Foundation): ~648,176,760 ADA (1.4% of initial supply) — genesis allocation
+Treasury (On-Chain Protocol Treasury): ~1,300,000,000 ADA (estimated 2024-12; accumulates from fees + monetary expansion) — governed by CIP-1694
+Ecosystem (Emurgo): ~2,074,165,623 ADA (4.6% of initial supply) — genesis allocation
+Advisors: tidak ada alokasi advisor terpisah terdokumentasi
+Other (Staking Rewards Reserve / Monetary Expansion): ~8,887,515,354 ADA (19.8% of initial supply) — reserved for future epoch rewards per monetary policy
+Sources: (HIGH) [Messari Cardano Launch and Token Distribution, https://messari.io/report/cardano-launch-and-token-distribution]; (HIGH) [Cardano Monetary Policy, https://docs.cardano.org/cardano-components/cardano-token/monetary-policy/]; (HIGH) [Cardano Foundation Annual Report 2018 Genesis Allocation, https://cardanofoundation.org/annual-report-2018/]; (MEDIUM) [AdaStat Genesis Wallets, https://adastat.net/]
+
+## Vesting Schedule
+
+Category: Community (Voucher Sale)
+Cliff: tidak ada (voucher redeemable at mainnet launch 2017-09-29)
+Vesting: tidak ada (fully unlocked at TGE/mainnet)
+Unlock Frequency: N/A
+Current Status: Fully Unlocked (since 2017-09-29)
+Sources: (HIGH) [Messari Cardano Launch and Token Distribution, https://messari.io/report/cardano-launch-and-token-distribution]; (HIGH) [Cardano Roadmap Byron, https://roadmap.cardano.org/en/byron/]
+
+Category: Team (IOG)
+Cliff: tidak ada (genesis allocation unlocked at mainnet)
+Vesting: tidak ada protokol-level vesting; IOG internal operational sales discretionary
+Unlock Frequency: N/A (on-chain genesis wallet outflows tracked via analytics)
+Current Status: Partially Spent (on-chain outflows observed from genesis wallets since 2017)
+Sources: (HIGH) [Messari Cardano Launch and Token Distribution, https://messari.io/report/cardano-launch-and-token-distribution]; (MEDIUM) [AdaStat IOG Genesis Wallet Tracking, https://adastat.net/]
+
+Category: Foundation (Cardano Foundation)
+Cliff: tidak ada
+Vesting: tidak ada protokol-level vesting; operational sales disclosed in annual reports
+Unlock Frequency: N/A
+Current Status: Partially Spent (operational funding, grants; transparency reports published)
+Sources: (HIGH) [Cardano Foundation Annual Report 2023 Transparency, https://cardanofoundation.org/annual-report-2023/]; (MEDIUM) [AdaStat CF Genesis Wallet, https://adastat.net/]
+
+Category: Ecosystem (Emurgo)
+Cliff: tidak ada
+Vesting: tidak ada protokol-level vesting; venture investments and operational sales discretionary
+Unlock Frequency: N/A
+Current Status: Partially Spent (venture deployments, Yoroi operations)
+Sources: (HIGH) [Emurgo Annual Report 2023, https://emurgo.io/annual-report-2023/]; (MEDIUM) [AdaStat Emurgo Genesis Wallet, https://adastat.net/]
+
+Category: Treasury (On-Chain Protocol Treasury)
+Cliff: tidak ada (accumulates continuously from fees + monetary expansion)
+Vesting: tidak ada (governed by CIP-1694 governance actions; withdrawal requires Constitutional Committee + DRep + SPO approval)
+Unlock Frequency: Per governance action (epoch boundary enactment)
+Current Status: Active (accumulating; withdrawals via CIP-1694 governance actions since Chang hard fork 2024-05)
+Sources: (HIGH) [CIP-1694 Treasury Governance, https://cips.cardano.org/cips/cip1694/]; (HIGH) [Cardano Governance Portal Treasury, https://gov.cardano.org/]
+
+Category: Staking Rewards Reserve (Monetary Expansion)
+Cliff: tidak ada (fixed emission schedule per epoch)
+Vesting: tidak ada (distributed automatically per epoch to stake pools and delegators)
+Unlock Frequency: Per epoch (5 days)
+Current Status: Active (diminishing emissions until ~2140)
+Sources: (HIGH) [Cardano Monetary Policy, https://docs.cardano.org/cardano-components/cardano-token/monetary-policy/]; (HIGH) [IOG Research Monetary Policy, https://iohk.io/en/research/library/]
+
+## TGE
+
+TGE Date: 2017-09-29 (Mainnet Launch / Byron Era Genesis) — token becomes transferable on-chain
+Initial Unlock: 100% of genesis allocation (voucher holders + founding entities) unlocked at genesis
+Unlocked Categories: Community (Voucher Sale), Team (IOG), Foundation (Cardano Foundation), Ecosystem (Emurgo), Staking Rewards Reserve
+Launch Platform: Cardano Mainnet (native); first exchange listing Bittrex 2017-11 (EV-008)
+Status: Completed
+Sources: (HIGH) [IOG Blog Mainnet Launch, https://iohk.io/en/blog/posts/2017/09/29/cardano-mainnet-launch/]; (HIGH) [Messari Cardano Launch and Token Distribution, https://messari.io/report/cardano-launch-and-token-distribution]; (HIGH) [CoinGecko History, https://www.coingecko.com/en/coins/cardano/historical_data/2017-11]
+
+## Utility
+
+Utility: Gas / Transaction Fees
+Deskripsi: ADA digunakan untuk membayar fee transaksi (minimal fee = a * size + b * execution units); fee dikumpulkan per epoch dan didistribusikan ke stake pool rewards dan treasury
+Status: Live
+Sources: (HIGH) [Cardano Network Parameters Fees, https://docs.cardano.org/operating-a-stake-pool/network-parameters/]; (HIGH) [Cardano Architecture, https://docs.cardano.org/architecture]
+
+Utility: Staking / Delegation
+Deskripsi: ADA holder mendelegasikan stake ke Stake Pool Operator (SPO) untuk berpartisipasi konsensus Ouroboros Praos; mendapat reward per epoch dari fee + monetary expansion
+Status: Live
+Sources: (HIGH) [Cardano Staking Docs, https://docs.cardano.org/staking/]; (HIGH) [IOG Blog Shelley Incentives, https://iohk.io/en/blog/posts/2020/07/29/shelley-incentives/]
+
+Utility: Governance (CIP-1694)
+Deskripsi: ADA stake menentukan voting power untuk DRep (Delegated Representatives) dan SPO voting pada governance actions (parameter changes, treasury withdrawals, hard fork initiation, constitution ratification)
+Status: Live (since Chang hard fork 2024-05)
+Sources: (HIGH) [CIP-1694, https://cips.cardano.org/cips/cip1694/]; (HIGH) [Cardano Governance Portal, https://gov.cardano.org/]
+
+Utility: Collateral (DeFi)
+Deskripsi: ADA digunakan sebagai collateral dalam protokol lending (Liqwid, Lenfi, Indigo) dan minting synthetic assets (iUSD, iBTC via Indigo Protocol)
+Status: Live
+Sources: (HIGH) [Liqwid Finance, https://liqwid.finance/]; (HIGH) [Indigo Protocol, https://indigoprotocol.io/]; (HIGH) [Lenfi, https://lenfi.io/]
+
+Utility: Liquidity Provision (DeFi)
+Deskripsi: ADA dipasangkan dalam liquidity pools DEX AMM (Minswap, WingRiders, DexHunter) untuk swap token native dan yield farming
+Status: Live
+Sources: (HIGH) [Minswap, https://minswap.org/]; (HIGH) [WingRiders, https://wingriders.com/]; (HIGH) [DexHunter, https://dexhunter.io/]
+
+Utility: Security (Consensus)
+Deskripsi: ADA stake menentukan probabilitas SPO dipilih sebagai slot leader via VRF (Verifiable Random Function) di Ouroboros Praos; honest majority stake assumption
+Status: Live
+Sources: (HIGH) [IOG Research Ouroboros, https://iohk.io/en/research/library/]; (HIGH) [Cardano Consensus, https://docs.cardano.org/architecture/consensus/]
+
+Utility: Treasury Funding (Project Catalyst)
+Deskripsi: ADA dari treasury on-chain didistribusikan ke proyek ekosistem via Project Catalyst voting (stake-weighted voting); >100M ADA distributed cumulatif Fund 1-12+
+Status: Live
+Sources: (HIGH) [Project Catalyst, https://cardano.ideascale.com/]; (HIGH) [CIP-1694 Treasury, https://cips.cardano.org/cips/cip1694/]
+
+Utility: Native Asset Minting Fee
+Deskripsi: Membutuhkan deposit ADA (min ~1-2 ADA) untuk mint custom native tokens (fungible/NFT) sebagai UTxO minimum lovelace requirement
+Status: Live
+Sources: (HIGH) [Native Tokens Docs Minimum UTxO, https://docs.cardano.org/native-tokens/]; (HIGH) [CIP-25 Metadata Standard, https://cips.cardano.org/cips/cip25/]
+
+## Governance
+
+Governance Model: On-chain Constitutional Governance (CIP-1694 / Voltaire Era) — three-body system: Constitutional Committee (CC), Delegated Representatives (DReps), Stake Pool Operators (SPOs)
+Voting System: Stake-weighted voting (1 ADA = 1 vote weight) via delegation to DRep or direct SPO voting; governance actions require threshold approvals
+Voting Power: Derived from active stake delegation (live stake snapshot at governance action submission epoch)
+Delegation: ADA holders delegate voting power to DRep (CIP-1694) or auto-delegate to SPO; DRep registration on-chain; delegation changeable any epoch
+Proposal System: Governance Actions submitted on-chain (parameter changes, treasury withdrawals, hard fork initiation, new constitution, CC member changes); require deposit (refundable if ratified)
+Treasury Governance: On-chain treasury withdrawals via Governance Action; validated by Constitutional Committee (threshold multi-sig); enacted after voting period + enactment delay
+Status: Live (Interim Constitutional Committee active 2024-06; Constitution ratified 2024-08; DRep registration open; first governance actions processed)
+Sources: (HIGH) [CIP-1694, https://cips.cardano.org/cips/cip1694/]; (HIGH) [Cardano Governance Portal, https://gov.cardano.org/]; (HIGH) [GovTool, https://govtool.com/]; (HIGH) [Cardano Constitution, https://gov.cardano.org/constitution]
+
+## Inflation / Deflation
+
+Inflation Mechanism: Monetary Expansion (protocol-level minting) — fixed diminishing schedule per epoch; ~0.3% per epoch initially, decreasing monotonically; funds staking rewards (majority) and treasury (minority)
+Emission Schedule: Hardcoded in protocol parameters; total reserve ~8.887B ADA at genesis; distributed over ~20+ years until ~2140 tail emission; formula: reserve * decay_rate per epoch
+Burn Mechanism: tidak ada burn mechanism native protokol (tidak ada fee burn, tidak ada EIP-1555 equivalent); fee transaksi masuk ke reward pool + treasury, tidak dibakar
+Buyback: tidak ada program buyback protokol; entitas komersial (IOG, Emurgo) mungkin melakukan pembelian pasar untuk treasury korporat terpisah tetapi tidak透明
+Supply Reduction: tidak ada supply reduction mechanism; supply monotonically increasing hingga max supply 45B ADA tercapai (~2140)
+Status: Live (monetary expansion active since Shelley 2020-07-29; no burn, no buyback)
+Sources: (HIGH) [Cardano Monetary Policy, https://docs.cardano.org/cardano-components/cardano-token/monetary-policy/]; (HIGH) [IOG Research Monetary Policy, https://iohk.io/en/research/library/]; (HIGH) [CIP-1694 Parameter Change Governance, https://cips.cardano.org/cips/cip1694/]
+
+## Holder Distribution
+
+Top Holder Concentration: Top 10 addresses (genesis wallets + exchange cold wallets) memegang ~35-40% total supply (estimated); genesis entity wallets (IOG, Emurgo, CF) + exchange wallets (Binance, Coinbase, Kraken) dominan
+Foundation Holding: Cardano Foundation genesis wallet ~648M ADA (1.4% initial); current balance lower due to operational sales (transparency reports disclose amounts)
+Investor Holding: tidak ada investor VC/private sale; voucher sale participants (retail, primarily Japan) hold significant portion; estimated >50% supply held by retail/non-exchange addresses
+Treasury Holding: On-chain protocol treasury ~1.3B ADA (estimated 2024-12); Constitutional Committee controlled
+Community Holding: Estimated >50% circulating supply held by individual delegators (staking participation rate >70% historically)
+Whale Concentration: Gini coefficient tinggi (estimated >0.8) akibat genesis allocation besar ke 3 entitas + early voucher sale; exchange wallets memperbesar konsentrasi
+Sources: (MEDIUM) [AdaStat Holder Distribution, https://adastat.net/]; (MEDIUM) [Blockfrost Rich List, https://docs.blockfrost.io/#tag/Addresses]; (MEDIUM) [Cardano Foundation Transparency Reports, https://cardanofoundation.org/transparency/]; (HIGH) [Messari Cardano Token Distribution, https://messari.io/report/cardano-launch-and-token-distribution]
+
+## Major Token Events
+
+Date: 2015-09 to 2017-01
+Event: ADA Voucher Sale (Public Funding)
+Description: Penjualan voucher ADA melalui Attain Alternative Strategies Ltd; ~$62M terkumpul; ~25.9B ADA dialokasikan ke peserta
+Status: Completed
+Related Historical Event ID: EV-002
+Sources: (HIGH) [Messari Cardano Launch and Token Distribution, https://messari.io/report/cardano-launch-and-token-distribution]
+
+Date: 2017-09-29
+Event: Mainnet Genesis / TGE
+Description: Genesis block Byron; 31.112B ADA initial supply minted dan terdistribusi ke voucher holder + 3 entitas pendiri; ADA transferable on-chain
+Status: Completed
+Related Historical Event ID: EV-007
+Sources: (HIGH) [IOG Blog Mainnet Launch, https://iohk.io/en/blog/posts/2017/09/29/cardano-mainnet-launch/]
+
+Date: 2017-11
+Event: First Exchange Listing (Bittrex)
+Description: ADA mulai diperdagangkan di Bittrex; price discovery dimulai
+Status: Completed
+Related Historical Event ID: EV-008
+Sources: (HIGH) [CoinGecko Historical Data, https://www.coingecko.com/en/coins/cardano/historical_data/2017-11]
+
+Date: 2020-07-29
+Event: Shelley Hard Fork — Staking Rewards Live
+Description: Ouroboros Praos aktif; monetary expansion dimulai; staking rewards (fee + inflation) didistribusikan per epoch ke delegator dan SPO
+Status: Completed
+Related Historical Event ID: EV-011
+Sources: (HIGH) [IOG Blog Shelley Launch, https://iohk.io/en/blog/posts/2020/07/29/shelley-mainnet-launch/]
+
+Date: 2020-08
+Event: Project Catalyst Fund 1 — Treasury Spending Begins
+Description: Treasury on-chain mulai didistribusikan ke proyek komunitas via stake-weighted voting; >100M ADA cumulative Fund 1-12+
+Status: Ongoing
+Related Historical Event ID: EV-012
+Sources: (HIGH) [Project Catalyst Fund 1, https://cardano.ideascale.com/c/idea/409211]
+
+Date: 2021-03-01
+Event: Mary Hard Fork — Native Multi-Asset Support
+Description: ADA diperlukan sebagai minimum UTxO deposit untuk mint custom native tokens (fungible/NFT); menciptakan demand struktural ADA
+Status: Completed
+Related Historical Event ID: EV-013
+Sources: (HIGH) [IOG Blog Mary Launch, https://iohk.io/en/blog/posts/2021/03/01/mary-hard-fork-launch/]
+
+Date: 2021-09-12
+Event: Alonzo Hard Fork — Smart Contracts (Plutus) Live
+Description: Plutus V1 aktif; ADA digunakan sebagai collateral, gas, dan liquidity untuk DeFi dApp (Minswap, Liqwid, Indigo, dll)
+Status: Completed
+Related Historical Event ID: EV-014
+Sources: (HIGH) [IOG Blog Alonzo Launch, https://iohk.io/en/blog/posts/2021/09/12/alonzo-hard-fork-launch/]
+
+Date: 2022-09-22
+Event: Vasil Hard Fork — Scaling & Plutus V2
+Description: Pipelining, reference inputs, inline datums meningkatkan throughput; biaya komputasi Plutus turun; efisiensi fee ADA meningkat
+Status: Completed
+Related Historical Event ID: EV-017
+Sources: (HIGH) [IOG Blog Vasil Launch, https://iohk.io/en/blog/posts/2022/09/22/vasil-hard-fork-launch/]
+
+Date: 2024-05
+Event: Chang Hard Fork (CIP-1694) — On-Chain Governance Bootstrap
+Description: ADA stake menjadi voting power untuk DRep/SPO; Constitutional Committee formed; treasury withdrawals via governance actions
+Status: Completed
+Related Historical Event ID: EV-022
+Sources: (HIGH) [CIP-1694, https://cips.cardano.org/cips/cip1694/]; (HIGH) [Gov Portal, https://gov.cardano.org/]
+
+Date: 2024-08
+Event: Constitution Ratification
+Description: Komunitas via DRep voting meratifikasi Konstitusi Cardano; mengikat aturan governance treasury & parameter changes
+Status: Completed
+Related Historical Event ID: EV-023
+Sources: (HIGH) [Gov Portal Constitution, https://gov.cardano.org/constitution]
+
+## Official Token Resources
+
+Official Documentation: https://docs.cardano.org/cardano-components/cardano-token/
+Whitepaper: https://cardano.org/whitepaper/ (koleksi academic papers "Why Cardano")
+Governance: https://gov.cardano.org/
+Explorer: https://explorer.cardano.org/
+Contract: tidak berlaku (native token)
+GitHub: https://github.com/cardano-foundation/CIPs (CIP repository); https://github.com/input-output-hk/cardano-node (protocol)
+Dashboard: https://gov.cardano.org/treasury (CIP-1694 governance portal); https://adastat.net/ (analytics); https://cardanoscan.io/ (explorer + token stats)
+
+## Summary
+
+Status: Live
+Supply Type: Inflationary (monetary expansion diminishing to max supply 45B ADA)
+Total Supply: ~36.8B ADA (2024-12 estimate)
+Distribution Categories: Community/Voucher Sale (57.6%), IOG (5.5%), Cardano Foundation (1.4%), Emurgo (4.6%), Staking Rewards Reserve (19.8%), On-Chain Treasury (growing)
+Utility Count: 8 (Gas, Staking, Governance, Collateral, Liquidity, Security, Treasury Funding, Native Asset Minting Fee)
+Governance: On-chain Constitutional (CIP-1694) — DRep, CC, SPO three-body system
+Major Token Events: 10 (Voucher Sale, Genesis/TGE, First Listing, Shelley Staking, Catalyst Treasury, Native Assets, Smart Contracts, Vasil Scaling, Chang Governance, Constitution Ratification)
+
+## Open Threads
+
+- Circulating supply real-time: angka ~35.6B ADA (2024-12) adalah estimasi komunitas (AdaStat, Blockfrost); tidak ada dashboard resmi real-time dari Cardano Foundation yang mempublikasikan circulating supply harian
+- Treasury on-chain balance real-time: estimasi ~1.3B ADA (2024-12) dari analytics komunitas; tidak ada sumber resmi yang mempublikasikan angka pasti hari ini
+- Distribusi holder detail per kategori (retail vs exchange vs genesis entity vs treasury): data on-chain tersedia tapi klasifikasi address (labeling exchange, genesis wallet, dll) bergantung pada heuristik analytics pihak ketiga; tidak ada klasifikasi resmi
+- Vesting schedule entitas genesis: tidak ada vesting protokol; penjualan operasional IOG/Emurgo/CF bersifat discretionary — tidak ada jadwal unlock terkomitmen; transparansi terbatas pada annual report narrative
+- Inflation schedule parameter exact: monetary policy hardcoded tetapi parameter decay rate dan reserve fraction tidak dipublikasikan dalam format mudah akses non-teknis; perlu query ledger state langsung
+- Burn mechanism proposal: tidak ada CIP aktif untuk fee burn (EIP-1555 style); diskusi komunitas ada tetapi belum proposal formal
+- Buyback program: tidak ada program protokol; apakah IOG/Emurgo melakukan market buy untuk treasury korporat tidak diungkapkan
+- Max supply 45B ADA erreicht timestamp: estimasi ~2140 berdasarkan monetary policy paper; tidak ada hitungan resmi countdown
+- Governance voting power concentration: DRep delegation data baru tersedia pasca-Chang (2024-05); analisis konsentrasi voting power DRep vs SPO vs CC belum dipublikasikan resmi
+- Tax implications treasury withdrawal: CIP-1694 governance actions untuk treasury spending belum memiliki framework pajak jelas untuk penerima dana (proyek/community) di yurisdiksi manapun
+- ADA sebagai gas untuk partner chain (Midnight): desain bridge & fee market Midnight belum final; apakah ADA digunakan untuk gas Midnight atau token DUST eksklusif belum dipastikan

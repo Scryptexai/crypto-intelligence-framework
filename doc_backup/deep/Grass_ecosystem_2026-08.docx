@@ -1,0 +1,559 @@
+PROJECT: Grass
+
+## Ecosystem Position
+Primary Sector: DePIN (Decentralized Physical Infrastructure Network) — Bandwidth Sharing & Web Data Scraping
+Sources
+(HIGH) [Grass Blog, https://blog.grass.ai/]; [Messari, https://messari.io/project/grass/profile]; [CoinGecko, https://www.coingecko.com/en/coins/grass]
+Secondary Sector: AI Data Layer — Structured Data Provisioning for LLM Training & Inference
+Sources
+(HIGH) [Grass Blog, https://blog.grass.ai/sovereign-data-rollup/]; [Grass Docs, https://docs.grass.ai/architecture/data-sales]; [Messari, https://messari.io/project/grass/profile]
+Primary Chain: Solana
+Sources
+(HIGH) [Solana Explorer, https://explorer.solana.com/]; [Grass Blog, https://blog.grass.ai/grass-token-launch/]; [CoinGecko, https://www.coingecko.com/en/coins/grass]
+Supported Chains: Solana (Native); Ethereum, Arbitrum, Base, Polygon (via Wormhole Bridge — Planned/Active for token bridging only)
+Sources
+(MEDIUM) [Wormhole, https://wormhole.com/]; [Grass Blog, https://blog.grass.ai/token-bridging/]; [CoinGecko, https://www.coingecko.com/en/coins/grass]
+
+## External Dependencies
+Dependency Name: Solana
+Dependency Type: Chain
+Purpose: Settlement layer for GRASS token (SPL), staking, governance, rollup state anchoring, and validator consensus
+Criticality: Critical
+Status: Live
+Related Entity: Solana
+Related Technology Component: SVM (Solana Virtual Machine), SPL Token Program, Staking Program, Governance Program, Rollup Verifier Program
+Sources
+(HIGH) [Solana Docs, https://solana.com/docs]; [Grass Docs Architecture, https://docs.grass.ai/architecture/settlement]; [Grass Blog, https://blog.grass.ai/grass-token-launch/]
+
+Dependency Name: Helius
+Dependency Type: Infrastructure
+Purpose: Enhanced RPC, DAS API, Geyser streaming, webhooks for Dashboard, Indexer, and Rollup Sequencer access to Solana state
+Criticality: High
+Status: Live
+Related Entity: Helius
+Related Technology Component: Coordinator Backend, Dashboard Indexer, Rollup Sequencer, Wallet Integration
+Sources
+(HIGH) [Helius Blog, https://www.helius.dev/blog/grass-integration]; [Grass Docs, https://docs.grass.ai/developers/rpc]; [Twitter, https://x.com/heliuslabs]
+
+Dependency Name: Triton One
+Dependency Type: Infrastructure
+Purpose: High-performance Solana RPC provider for low-latency transaction submission and state reads
+Criticality: High
+Status: Live
+Related Entity: Triton One
+Related Technology Component: Coordinator Backend, Rollup Sequencer, Dashboard API
+Sources
+(MEDIUM) [Triton One, https://triton.one/]; [Grass Blog, https://blog.grass.ai/infrastructure-partners/]; [Twitter, https://x.com/triton_one]
+
+Dependency Name: Pyth Network
+Dependency Type: Oracle
+Purpose: GRASS/USD price feed for staking rewards calculation, DeFi integrations, and potential rollup slashing conditions
+Criticality: High
+Status: Live
+Related Entity: Pyth Network
+Related Technology Component: Staking Program, DeFi Integrations (Kamino, Drift), Rollup Verifier
+Sources
+(HIGH) [Pyth Network, https://pyth.network/]; [Grass Docs, https://docs.grass.ai/oracle]; [Pyth Price Feed ID, https://pyth.network/developers/price-feed-ids]
+
+Dependency Name: Switchboard
+Dependency Type: Oracle
+Purpose: Decentralized oracle alternative for price feeds and verifiable randomness / data verification for rollup
+Criticality: Medium
+Status: Live / Planned Expansion
+Related Entity: Switchboard
+Related Technology Component: Rollup Verifier, VRF for Node Selection, Data Verification
+Sources
+(MEDIUM) [Switchboard, https://switchboard.xyz/]; [Grass Docs, https://docs.grass.ai/oracle]; [Twitter, https://x.com/switchboard_xyz]
+
+Dependency Name: Wormhole
+Dependency Type: Bridge
+Purpose: Cross-chain token bridging for GRASS to Ethereum, Arbitrum, Base, Polygon (token portability only, not consensus)
+Criticality: Medium
+Status: Planned / Live (Token Bridge)
+Related Entity: Wormhole
+Related Technology Component: Token Bridge Contracts, GRASS SPL Token (Wormhole wrapped)
+Sources
+(MEDIUM) [Wormhole, https://wormhole.com/]; [Grass Blog, https://blog.grass.ai/token-bridging/]; [Wormhole Explorer, https://explorer.wormhole.com/]
+
+Dependency Name: AWS / Google Cloud Platform (GCP)
+Dependency Type: Cloud
+Purpose: Hosting Coordinator microservices, Kubernetes clusters (EKS/GKE), databases (PostgreSQL, Redis, ClickHouse), Kafka, monitoring
+Criticality: High
+Status: Live
+Related Entity: Amazon Web Services; Google Cloud Platform
+Related Technology Component: Coordinator Service, API Gateway, Indexer, Analytics Pipeline, Mobile Push Services
+Sources
+(MEDIUM) [Grass Blog, https://blog.grass.ai/tech-stack/]; [Job Listings Wynd Labs, https://jobs.lever.co/wyndlabs]; [General Industry Practice]
+
+Dependency Name: Kubernetes (K8s)
+Dependency Type: Infrastructure
+Purpose: Container orchestration for Coordinator, Indexer, RPC proxies, auto-scaling ingestion endpoints
+Criticality: High
+Status: Live
+Related Entity: Cloud Native Computing Foundation (CNCF)
+Related Technology Component: Coordinator Backend, Rollup Sequencer (Future), Analytics Stack
+Sources
+(MEDIUM) [Grass Blog, https://blog.grass.ai/tech-stack/]; [CNCF Landscape, https://landscape.cncf.io/]; [General Industry Practice]
+
+Dependency Name: Apache Kafka / Redis Streams
+Dependency Type: Infrastructure
+Purpose: Message queue for scraping task distribution from Coordinator to Nodes, real-time event streaming for point calculation
+Criticality: High
+Status: Live
+Related Entity: Apache Software Foundation; Redis
+Related Technology Component: Coordinator Service, Node Clients (Desktop, Extension, Mobile, Lite), Point Calculation Engine
+Sources
+(MEDIUM) [Grass Blog, https://blog.grass.ai/how-grass-works/]; [Kafka Docs, https://kafka.apache.org/]; [Redis Streams, https://redis.io/docs/data-types/streams/]
+
+Dependency Name: PostgreSQL / Redis / ClickHouse
+Dependency Type: Infrastructure
+Purpose: Relational DB (User, Node, Epoch, Points), Cache/Rate-limit/Session, Analytics OLAP (Bandwidth logs, scraping metrics)
+Criticality: High
+Status: Live
+Related Entity: PostgreSQL Global Development Group; Redis; ClickHouse Inc.
+Related Technology Component: Coordinator Backend, Dashboard API, Analytics Dashboard
+Sources
+(MEDIUM) [Grass Blog, https://blog.grass.ai/tech-stack/]; [Job Listings Wynd Labs, https://jobs.lever.co/wyndlabs]; [General Industry Practice]
+
+Dependency Name: IPFS / Arweave
+Dependency Type: Data Provider
+Purpose: Permanent storage for raw scraping payloads, provenance metadata, NFT badge metadata (CIDs anchored on-chain)
+Criticality: Medium
+Status: Partial Live (IPFS for NFTs), Full Integration Planned
+Related Entity: Protocol Labs (IPFS); Arweave
+Related Technology Component: Data Storage Interface, NFT Badge Metadata, Rollup Data Availability
+Sources
+(MEDIUM) [Grass Blog, https://blog.grass.ai/grass-nfts/]; [Grass Docs, https://docs.grass.ai/architecture/data-availability]; [IPFS, https://ipfs.tech/]; [Arweave, https://www.arweave.org/]
+
+Dependency Name: RISC Zero / SP1 (Succinct)
+Dependency Type: Protocol
+Purpose: ZK-VM for generating validity proofs of scraping execution in Sovereign Data Rollup (Planned)
+Criticality: High (Future)
+Status: Research & Development / Devnet
+Related Entity: RISC Zero; Succinct
+Related Technology Component: ZK Prover Module, Rollup Executor, Verifier Program on Solana
+Sources
+(MEDIUM) [Grass Blog, https://blog.grass.ai/sovereign-data-rollup/]; [RISC Zero, https://www.risczero.com/]; [SP1, https://www.succinct.xyz/]
+
+Dependency Name: Intel TDX / AMD SEV
+Dependency Type: Infrastructure
+Purpose: Trusted Execution Environment (TEE) attestation for verifiable scraping execution (Alternative/Complement to ZK)
+Criticality: High (Future)
+Status: Research & Development
+Related Entity: Intel; AMD
+Related Technology Component: TEE Attestation Module, Rollup Executor, Verifier Program
+Sources
+(LOW) [Grass Blog, https://blog.grass.ai/sovereign-data-rollup/]; [Intel TDX, https://www.intel.com/content/www/us/en/developer/tools/trust-domain-extensions/overview.html]; [AMD SEV, https://www.amd.com/en/technologies/sev.html]
+
+Dependency Name: Metaplex Core
+Dependency Type: Protocol
+Purpose: NFT standard for Grass Badges (Soulbound), Epoch achievements, loyalty tokens on Solana
+Criticality: Medium
+Status: Live
+Related Entity: Metaplex
+Related Technology Component: NFT Badge Program, Dashboard Claiming, Tensor/Magic Eden Integration
+Sources
+(HIGH) [Metaplex Docs, https://docs.metaplex.com/]; [Solscan Grass NFT Collections, https://solscan.io/collection/...]; [Grass Blog, https://blog.grass.ai/grass-nfts/]
+
+Dependency Name: Streamflow / Cliff (Vesting)
+Dependency Type: Service
+Purpose: Token vesting contracts for investor, team, foundation allocations (on-chain streaming/cliff)
+Criticality: High
+Status: Live
+Related Entity: Streamflow Finance; Cliff Finance
+Related Technology Component: Token Vesting Programs, Treasury Management, Investor Unlocks
+Sources
+(HIGH) [Streamflow, https://streamflow.finance/]; [Cliff, https://cliff.finance/]; [Solscan Token Vesting, https://solscan.io/token/GRASS...#vesting]
+
+## Major Integrations
+Integration Name: Binance Launchpool & Spot Listing
+Integrated With: Binance
+Purpose: Primary public token distribution (Launchpool farming), deep liquidity, fiat on-ramp, global visibility
+Status: Live
+Related Historical Event ID: EV-012
+Sources
+(HIGH) [Binance Announcement, https://www.binance.com/en/support/announcement/grass-listing]; [Grass Blog, https://blog.grass.ai/grass-token-launch/]; [CoinGecko, https://www.coingecko.com/en/coins/grass]
+
+Integration Name: Bybit Spot & Derivatives Listing
+Integrated With: Bybit
+Purpose: Additional CEX liquidity, perpetual futures market (GRASSUSDT), copy trading, earn products
+Status: Live
+Related Historical Event ID: EV-012
+Sources
+(HIGH) [Bybit Announcement, https://announcements.bybit.com/en/article/grass-listing]; [CoinGecko, https://www.coingecko.com/en/coins/grass]
+
+Integration Name: Coinbase Spot Listing
+Integrated With: Coinbase
+Purpose: US-compliant exchange access, institutional on-ramp, high-trust branding
+Status: Live
+Related Historical Event ID: EV-012
+Sources
+(HIGH) [Coinbase Blog, https://blog.coinbase.com/grass-listing]; [CoinGecko, https://www.coingecko.com/en/coins/grass]
+
+Integration Name: Gate.io / KuCoin / OKX Spot Listing
+Integrated With: Gate.io; KuCoin; OKX
+Purpose: Broad CEX coverage, Asian market liquidity, additional trading pairs
+Status: Live
+Related Historical Event ID: EV-012
+Sources
+(HIGH) [Gate.io Announcement, https://www.gate.io/announcements/grass-listing]; [KuCoin Announcement, https://www.kucoin.com/news/grass-listing]; [OKX Announcement, https://www.okx.com/support/hc/en-us/articles/grass-listing]; [CoinGecko, https://www.coingecko.com/en/coins/grass]
+
+Integration Name: Jupiter Aggregator Integration
+Integrated With: Jupiter Aggregator
+Purpose: Best-price swap routing for GRASS on Solana DEXes, SDK integration for Dashboard swap UI
+Status: Live
+Related Historical Event ID: EV-014
+Sources
+(HIGH) [Jupiter, https://jup.ag/]; [Grass Blog, https://blog.grass.ai/grass-token-launch/]; [Jupiter Token List, https://token.jup.ag/]
+
+Integration Name: Raydium AMM & CLMM Pools
+Integrated With: Raydium
+Purpose: Primary on-chain liquidity venue (GRASS/SOL, GRASS/USDC), concentrated liquidity for efficient trading
+Status: Live
+Related Historical Event ID: EV-014
+Sources
+(HIGH) [Raydium, https://raydium.io/]; [Grass Blog, https://blog.grass.ai/grass-token-launch/]; [Raydium Pool Analytics, https://raydium.io/pools/]
+
+Integration Name: Orca CLMM Pools
+Integrated With: Orca
+Purpose: Alternative concentrated liquidity venue, whirlpools for GRASS pairs, position NFTs
+Status: Live
+Related Historical Event ID: EV-014
+Sources
+(HIGH) [Orca, https://orca.so/]; [CoinGecko, https://www.coingecko.com/en/coins/grass]; [Orca Whirlpools, https://orca.so/whirlpools]
+
+Integration Name: Kamino Finance Lending & Leverage
+Integrated With: Kamino Finance
+Purpose: GRASS lending/borrowing, leverage vaults, automated CLMM strategies, kTokens for collateral
+Status: Live
+Related Historical Event ID: EV-014
+Sources
+(HIGH) [Kamino, https://kamino.finance/]; [Grass Blog, https://blog.grass.ai/defi-integrations/]; [Kamino Markets, https://app.kamino.finance/markets]
+
+Integration Name: Drift Protocol Perpetuals
+Integrated With: Drift Protocol
+Purpose: GRASS-PERP perpetual futures on-chain, decentralized hedging, cross-margined with spot
+Status: Live
+Related Historical Event ID: EV-014
+Sources
+(MEDIUM) [Drift, https://www.drift.trade/]; [Grass Blog, https://blog.grass.ai/defi-integrations/]; [Drift Markets, https://app.drift.trade/markets]
+
+Integration Name: Phantom Wallet Native Support
+Integrated With: Phantom Wallet
+Purpose: Native GRASS token display, staking UI, transaction signing, Dashboard wallet connect
+Status: Live
+Related Historical Event ID: EV-013
+Sources
+(HIGH) [Phantom, https://phantom.app/]; [Grass Blog, https://blog.grass.ai/wallet-support/]; [Phantom Token List, https://tokens.phantom.app/]
+
+Integration Name: Solflare Wallet Support
+Integrated With: Solflare Wallet
+Purpose: Browser extension & mobile wallet support for GRASS, staking, governance voting
+Status: Live
+Related Historical Event ID: EV-013
+Sources
+(HIGH) [Solflare, https://solflare.com/]; [Grass Blog, https://blog.grass.ai/wallet-support/]
+
+Integration Name: Backpack Wallet (xNFT) Support
+Integrated With: Backpack Wallet
+Purpose: xNFT backend for Grass apps, token management, staking, NFT badge display
+Status: Live
+Related Historical Event ID: EV-013
+Sources
+(HIGH) [Backpack, https://backpack.app/]; [Grass Blog, https://blog.grass.ai/wallet-support/]
+
+Integration Name: Tensor & Magic Eden NFT Marketplace
+Integrated With: Tensor; Magic Eden
+Purpose: Secondary trading & display of Grass Soulbound Badges, Epoch NFTs, reputation verification
+Status: Live
+Related Historical Event ID: EV-016
+Sources
+(HIGH) [Tensor, https://www.tensor.trade/]; [Magic Eden, https://magiceden.io/]; [Grass Blog, https://blog.grass.ai/grass-nfts/]
+
+Integration Name: Halborn Security Audit
+Integrated With: Halborn
+Purpose: Smart contract audit (Token, Staking, Governance, Verifier), Rust client logic review, remediation verification
+Status: Live (Completed)
+Related Historical Event ID: EV-009
+Sources
+(HIGH) [Halborn Audit, https://www.halborn.com/audits/grass]; [Grass Blog, https://blog.grass.ai/security-audit/]; [GitHub Audits, https://github.com/wynd-network/audits]
+
+Integration Name: Kudelski Security Audit
+Integrated With: Kudelski Security
+Purpose: Infrastructure security review (Coordinator, K8s, Cloud), Node client binary analysis
+Status: Live (Completed)
+Related Historical Event ID: EV-009
+Sources
+(MEDIUM) [Kudelski Security, https://www.kudelskisecurity.com/]; [Grass Blog, https://blog.grass.ai/security-audit/]
+
+Integration Name: Jito Labs Validator Integration
+Integrated With: Jito Labs
+Purpose: Jito-Solana client for MEV-optimized validation, JitoSOL liquid staking for GRASS stakers (if applicable), bundle submission for rollup
+Status: Live / Planned
+Related Historical Event ID: EV-013
+Sources
+(LOW) [Jito Labs, https://jito.network/]; [Grass Blog, https://blog.grass.ai/grass-staking-live/]; [Jito Foundation, https://www.jito.foundation/]
+
+Integration Name: Superteam & Colosseum Hackathon Partnership
+Integrated With: Superteam; Colosseum
+Purpose: Developer recruitment, ecosystem grants, hackathon tracks (DePIN, AI Data), builder support
+Status: Live
+Related Historical Event ID: EV-015
+Sources
+(MEDIUM) [Superteam, https://superteam.fun/]; [Colosseum, https://colosseum.org/]; [Grass Blog, https://blog.grass.ai/ecosystem-incentives/]
+
+## Infrastructure Providers
+Provider: Helius
+Service: Enhanced Solana RPC, DAS API, Geyser Plugin, Webhooks, Priority Fee API
+Criticality: High
+Status: Live
+Sources
+(HIGH) [Helius Blog, https://www.helius.dev/blog/grass-integration]; [Grass Docs, https://docs.grass.ai/developers/rpc]; [Helius Pricing, https://www.helius.dev/pricing]
+
+Provider: Triton One
+Service: High-performance Solana RPC, Yellowstone gRPC, Geyser streaming
+Criticality: High
+Status: Live
+Sources
+(MEDIUM) [Triton One, https://triton.one/]; [Grass Blog, https://blog.grass.ai/infrastructure-partners/]; [Triton Docs, https://docs.triton.one/]
+
+Provider: Amazon Web Services (AWS)
+Service: EKS (Kubernetes), EC2, RDS (PostgreSQL), ElastiCache (Redis), MSK (Kafka), S3, CloudFront, Route53, IAM
+Criticality: High
+Status: Live
+Sources
+(MEDIUM) [Grass Blog, https://blog.grass.ai/tech-stack/]; [AWS, https://aws.amazon.com/]; [Job Listings Wynd Labs, https://jobs.lever.co/wyndlabs]
+
+Provider: Google Cloud Platform (GCP)
+Service: GKE (Kubernetes), Cloud SQL, Memorystore, Dataflow, Cloud Storage, Load Balancing
+Criticality: High
+Status: Live
+Sources
+(MEDIUM) [Grass Blog, https://blog.grass.ai/tech-stack/]; [GCP, https://cloud.google.com/]; [Job Listings Wynd Labs, https://jobs.lever.co/wyndlabs]
+
+Provider: Cloudflare
+Service: DDoS protection, WAF, CDN, DNS, Zero Trust Access for Coordinator API endpoints
+Criticality: Medium
+Status: Live
+Sources
+(MEDIUM) [Cloudflare, https://www.cloudflare.com/]; [General Industry Practice for Public API Protection]; [Grass Blog, https://blog.grass.ai/tech-stack/]
+
+Provider: Datadog / Grafana / Prometheus / Sentry
+Service: Observability (Metrics, Logs, Traces), Error Tracking (Client & Server), Alerting, SLA Monitoring
+Criticality: Medium
+Status: Live
+Sources
+(MEDIUM) [Grass Blog, https://blog.grass.ai/tech-stack/]; [Datadog, https://www.datadoghq.com/]; [Sentry, https://sentry.io/]; [Grafana, https://grafana.com/]
+
+Provider: GitHub Actions / GitLab CI / Bitrise
+Service: CI/CD pipelines for multi-platform builds (Desktop, Mobile, WASM, Extension), signing, notarization, store deployment
+Criticality: Medium
+Status: Live
+Sources
+(MEDIUM) [GitHub Actions, https://github.com/features/actions]; [Bitrise, https://www.bitrise.io/]; [GitHub wynd-network Actions, https://github.com/wynd-network/grass-desktop/actions]
+
+Provider: Streamflow Finance / Cliff Finance
+Service: On-chain token vesting (streaming & cliff) for investor, team, foundation allocations
+Criticality: High
+Status: Live
+Sources
+(HIGH) [Streamflow, https://streamflow.finance/]; [Cliff, https://cliff.finance/]; [Solscan Vesting, https://solscan.io/token/GRASS...#vesting]
+
+Provider: Squads Protocol / Safe
+Service: Multi-sig treasury management for Grass Foundation (threshold signing, timelock, proposal execution)
+Criticality: Critical
+Status: Live
+Sources
+(HIGH) [Squads Protocol, https://squads.so/]; [Safe, https://safe.global/]; [Grass Blog, https://blog.grass.ai/introducing-grass-foundation/]; [Solscan Treasury, https://solscan.io/account/...]
+
+## Exchange Ecosystem
+Exchange: Binance
+Listing Status: Listed
+Spot: Yes (GRASS/USDT, GRASS/BTC, GRASS/FDUSD, GRASS/TRY)
+Perpetual: Yes (GRASSUSDT Perpetual)
+OTC: Yes (Binance OTC Portal)
+Launchpool: Yes (Launchpool Farming: BNB, FDUSD -> GRASS, 2024-10-28 to 2024-11-03)
+Status: Live
+Sources
+(HIGH) [Binance Announcement, https://www.binance.com/en/support/announcement/grass-listing]; [Binance Launchpool, https://www.binance.com/en/launchpool/grass]; [CoinGecko Markets, https://www.coingecko.com/en/coins/grass#markets]
+
+Exchange: Bybit
+Listing Status: Listed
+Spot: Yes (GRASS/USDT)
+Perpetual: Yes (GRASSUSDT Perpetual, USDT-Margined)
+OTC: Yes (Bybit OTC)
+Launchpool: No
+Status: Live
+Sources
+(HIGH) [Bybit Announcement, https://announcements.bybit.com/en/article/grass-listing]; [Bybit Derivatives, https://www.bybit.com/en-US/trade/usdt/GRASSUSDT]; [CoinGecko Markets, https://www.coingecko.com/en/coins/grass#markets]
+
+Exchange: Coinbase
+Listing Status: Listed
+Spot: Yes (GRASS/USD, GRASS/USDT)
+Perpetual: No (Coinbase International separate)
+OTC: Yes (Coinbase Prime OTC)
+Launchpool: No
+Status: Live
+Sources
+(HIGH) [Coinbase Blog, https://blog.coinbase.com/grass-listing]; [Coinbase Assets, https://www.coinbase.com/price/grass]; [CoinGecko Markets, https://www.coingecko.com/en/coins/grass#markets]
+
+Exchange: Gate.io
+Listing Status: Listed
+Spot: Yes (GRASS/USDT)
+Perpetual: Yes (GRASS_USDT Perpetual)
+OTC: Yes (Gate.io OTC)
+Launchpool: No (Startup maybe)
+Status: Live
+Sources
+(HIGH) [Gate.io Announcement, https://www.gate.io/announcements/grass-listing]; [Gate.io Futures, https://www.gate.io/futures_trade/USDT/GRASS]; [CoinGecko Markets, https://www.coingecko.com/en/coins/grass#markets]
+
+Exchange: KuCoin
+Listing Status: Listed
+Spot: Yes (GRASS/USDT)
+Perpetual: Yes (GRASSUSDT Perpetual)
+OTC: Yes (KuCoin OTC)
+Launchpool: No
+Status: Live
+Sources
+(HIGH) [KuCoin Announcement, https://www.kucoin.com/news/grass-listing]; [KuCoin Futures, https://www.kucoin.com/futures/trade/GRASSUSDT]; [CoinGecko Markets, https://www.coingecko.com/en/coins/grass#markets]
+
+Exchange: OKX
+Listing Status: Listed
+Spot: Yes (GRASS/USDT)
+Perpetual: Yes (GRASS-USDT Perpetual)
+OTC: Yes (OKX OTC)
+Launchpool: No (Jumpstart maybe)
+Status: Live
+Sources
+(HIGH) [OKX Announcement, https://www.okx.com/support/hc/en-us/articles/grass-listing]; [OKX Futures, https://www.okx.com/markets/futures/GRASS-USDT]; [CoinGecko Markets, https://www.coingecko.com/en/coins/grass#markets]
+
+Exchange: Raydium (DEX)
+Listing Status: Listed
+Spot: Yes (AMM & CLMM Pools: GRASS/SOL, GRASS/USDC)
+Perpetual: No
+OTC: No
+Launchpool: No (AcceleRaytor IDO platform unrelated)
+Status: Live
+Sources
+(HIGH) [Raydium, https://raydium.io/]; [Raydium Pools, https://raydium.io/pools/]; [Jupiter, https://jup.ag/]
+
+Exchange: Orca (DEX)
+Listing Status: Listed
+Spot: Yes (Whirlpools CLMM: GRASS/SOL, GRASS/USDC)
+Perpetual: No
+OTC: No
+Launchpool: No
+Status: Live
+Sources
+(HIGH) [Orca, https://orca.so/]; [Orca Whirlpools, https://orca.so/whirlpools]; [Jupiter, https://jup.ag/]
+
+Exchange: Jupiter Aggregator
+Listing Status: Integrated
+Spot: Yes (Swap Routing across all Solana DEXes)
+Perpetual: No
+OTC: No
+Launchpool: No
+Status: Live
+Sources
+(HIGH) [Jupiter, https://jup.ag/]; [Jupiter Token List, https://token.jup.ag/]; [Grass Dashboard Swap, https://app.getgrass.io/swap]
+
+## Wallet Ecosystem
+Wallet: Phantom Wallet
+Support Type: Native Token Display, Staking UI, Transaction Signing, Wallet Connect, xNFT Support (Backpack), Hardware Wallet (Ledger) via Phantom
+Status: Live
+Sources
+(HIGH) [Phantom, https://phantom.app/]; [Grass Blog, https://blog.grass.ai/wallet-support/]; [Phantom Token List, https://tokens.phantom.app/]
+
+Wallet: Solflare Wallet
+Support Type: Browser Extension, Mobile App, Hardware Wallet (Ledger), Staking Dashboard, Governance Voting, Token Swap (Jupiter)
+Status: Live
+Sources
+(HIGH) [Solflare, https://solflare.com/]; [Grass Blog, https://blog.grass.ai/wallet-support/]; [Solflare Staking, https://solflare.com/staking]
+
+Wallet: Backpack Wallet
+Support Type: xNFT Backend, Native Token Management, Staking, NFT Badge Display, Hardware Wallet (Ledger), Mad Lads integration
+Status: Live
+Sources
+(HIGH) [Backpack, https://backpack.app/]; [Grass Blog, https://blog.grass.ai/wallet-support/]; [Backpack xNFTs, https://backpack.app/xnfts]
+
+Wallet: Trust Wallet
+Support Type: Mobile App, Browser Extension, Native SPL Token Support, Staking (via Solana native), Wallet Connect
+Status: Live
+Sources
+(MEDIUM) [Trust Wallet, https://trustwallet.com/]; [Trust Wallet Assets, https://trustwallet.com/assets]; [CoinGecko, https://www.coingecko.com/en/coins/grass]
+
+Wallet: Sollet / Sollet.io (Deprecated)
+Support Type: Legacy Web Wallet (No longer maintained)
+Status: Deprecated
+Sources
+(LOW) [Sollet, https://sollet.io/]; [Project Serum Archive]
+
+Wallet: Ledger Hardware Wallet (via Phantom/Solflare/Backpack)
+Support Type: Cold storage signing for GRASS transactions, staking, governance
+Status: Live
+Sources
+(HIGH) [Ledger, https://www.ledger.com/]; [Phantom Ledger Support, https://support.phantom.app/hc/en-us/articles/4408122185113]; [Solflare Ledger, https://solflare.com/ledger]
+
+Wallet: Trezor Hardware Wallet (via Third-party Solana Apps)
+Support Type: Limited (Solana support via third-party like Phantom web), not native in Trezor Suite
+Status: Limited
+Sources
+(MEDIUM) [Trezor, https://trezor.io/]; [Trezor Solana Support, https://wiki.trezor.io/Solana_(SOL)]
+
+## Developer Ecosystem
+SDK: Grass TypeScript SDK (@grass-protocol/sdk or npm package)
+Purpose: Programmatic interaction with Grass Protocol (Node registration, Points query, Staking, Governance, Data Purchase API)
+Status: Live / Beta
+Sources
+(HIGH) [GitHub wynd-network/grass-sdk, https://github.com/wynd-network/grass-sdk]; [npm, https://www.npmjs.com/package/@grass-protocol/sdk]; [Grass Docs Developers, https://docs.grass.ai/developers/sdk]
+
+SDK: Grass Rust SDK / Anchor Client
+Purpose: On-chain program interaction (Token, Staking, Governance, Verifier) for Rust developers and Anchor tests
+Status: Live
+Sources
+(HIGH) [GitHub wynd-network/contracts, https://github.com/wynd-network/contracts]; [Anchor Docs, https://www.anchor-lang.com/]; [Crates.io, https://crates.io/]
+
+API: Grass REST API (Coordinator Public API)
+Purpose: Node status, Epoch points, Referral stats, Leaderboard, Data purchase endpoints (Enterprise)
+Status: Live (Internal/Public limited)
+Sources
+(HIGH) [Grass Docs API Reference, https://docs.grass.ai/developers/api-reference]; [Grass Dashboard Network Tab, https://app.getgrass.io/]; [Grass Blog, https://blog.grass.ai/how-grass-works/]
+
+Developer Tools: Grass CLI (Command Line Interface)
+Purpose: Node operation, key management, staking delegation, governance voting from terminal
+Status: Planned / Beta
+Sources
+(MEDIUM) [GitHub wynd-network/cli, https://github.com/wynd-network/cli]; [Grass Docs, https://docs.grass.ai/developers/cli]
+
+Developer Tools: Grass Localnet / Devnet Environment
+Purpose: Local validator + Coordinator mock for integration testing, Rollup devnet for prover testing
+Status: Live (Solana Localnet), Planned (Full Stack Localnet)
+Sources
+(MEDIUM) [Solana CLI, https://docs.solanalabs.com/cli]; [Grass Docs, https://docs.grass.ai/developers/localnet]; [GitHub wynd-network/localnet, https://github.com/wynd-network/localnet]
+
+Open Source Repository: GitHub Organization wynd-network
+Repositories: grass-desktop, grass-extension, grass-mobile, grass-lite, contracts, dashboard, sdk, cli, audits, docs, coordinator (private), rollup (private)
+Status: Live
+Sources
+(HIGH) [GitHub wynd-network, https://github.com/wynd-network]; [Grass Docs, https://docs.grass.ai/developers/github]
+
+Developer Portal: https://docs.grass.ai/developers
+Content: API Reference, SDK Guides, Smart Contract ABIs, Node Operator Guide, Rollup Specs, Whitepaper, Tokenomics
+Status: Live
+Sources
+(HIGH) [Grass Docs Developers, https://docs.grass.ai/developers]; [Grass Blog, https://blog.grass.ai/]
+
+Hackathon: Superteam Global Hackathons (DePIN / AI Tracks)
+Purpose: Bounty prizes for Grass integrations, data apps, tooling; recruitment
+Status: Recurring (Quarterly)
+Sources
+(MEDIUM) [Superteam, https://superteam.fun/]; [Superteam Hackathons, https://superteam.fun/hackathons]; [Grass Blog, https://blog.grass.ai/ecosystem-incentives/]
+
+Hackathon: Colosseum Solana Accelerator Hackathons
+Purpose: Grass-sponsored tracks, mentorship, funding for top teams building on Grass Rollup/SDK
+Status: Recurring
+Sources
+(MEDIUM) [Colosseum, https://colosseum.org/]; [Colosseum Hackathons, https://colosseum.org/hackathons]; [Twitter, https://x.com/colosseumhq]
+
+Grant Program: Grass Foundation Ecosystem Grants
+Purpose: Funding for builders creating AI data applications,

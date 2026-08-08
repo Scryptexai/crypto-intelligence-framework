@@ -1,0 +1,236 @@
+PROJECT: Cardano
+
+## Funding History
+
+Funding Round: ADA Voucher Sale (Public Sale)
+Date: 2015-09 to 2017-01
+Amount: ~$62,000,000
+Currency: USD (collected in BTC and JPY)
+Lead Investor: Public participants (primarily Japanese market)
+Participating Investors: Retail participants via voucher sale; no institutional lead investor disclosed
+Valuation: tidak diungkap (pre-launch, no equity valuation)
+Funding Type: Public Sale
+Status: Completed
+Sources: (HIGH) [Messari Cardano Launch and Token Distribution, https://messari.io/report/cardano-launch-and-token-distribution]; (HIGH) [Cardano Roadmap Byron, https://roadmap.cardano.org/en/byron/]
+
+Funding Round: Genesis Allocation to Founding Entities
+Date: 2017-09-29 (Mainnet Launch)
+Amount: ~5,185,414,084 ADA (combined allocation to IOG, Emurgo, Cardano Foundation)
+Currency: ADA
+Lead Investor: Protokol (genesis mint)
+Participating Entities: Input Output Global (IOG), Emurgo, Cardano Foundation
+Valuation: tidak diungkap (genesis allocation, not a funding round)
+Funding Type: Genesis Allocation / Protocol Treasury Bootstrap
+Status: Completed
+Sources: (HIGH) [Messari Cardano Launch and Token Distribution, https://messari.io/report/cardano-launch-and-token-distribution]; (MEDIUM) [Cardano Foundation Annual Report 2018, https://cardanofoundation.org/annual-report-2018/]
+
+Funding Round: Cardano Foundation Operational Funding (Genesis)
+Date: 2017-09-29
+Amount: ~648,176,760 ADA
+Currency: ADA
+Lead Investor: Protokol (genesis mint)
+Participating Entities: Cardano Foundation
+Valuation: tidak diungkap
+Funding Type: Genesis Allocation
+Status: Completed
+Sources: (HIGH) [Messari Cardano Launch and Token Distribution, https://messari.io/report/cardano-launch-and-token-distribution]
+
+Funding Round: IOG Development Funding (Genesis)
+Date: 2017-09-29
+Amount: ~2,463,071,701 ADA
+Currency: ADA
+Lead Investor: Protokol (genesis mint)
+Participating Entities: Input Output Global (IOG)
+Valuation: tidak diungkap
+Funding Type: Genesis Allocation
+Status: Completed
+Sources: (HIGH) [Messari Cardano Launch and Token Distribution, https://messari.io/report/cardano-launch-and-token-distribution]
+
+Funding Round: Emurgo Ecosystem Funding (Genesis)
+Date: 2017-09-29
+Amount: ~2,074,165,623 ADA
+Currency: ADA
+Lead Investor: Protokol (genesis mint)
+Participating Entities: Emurgo
+Valuation: tidak diungkap
+Funding Type: Genesis Allocation
+Status: Completed
+Sources: (HIGH) [Messari Cardano Launch and Token Distribution, https://messari.io/report/cardano-launch-and-token-distribution]
+
+Funding Round: Project Catalyst Treasury Funding (Ongoing)
+Date: 2020-08 to present (Fund 1 onward)
+Amount: >100,000,000 ADA distributed cumulatively across Funds 1–12+
+Currency: ADA
+Lead Investor: Protocol Treasury (on-chain)
+Participating Entities: Community proposers, voters (DReps), Cardano Foundation administration
+Valuation: tidak diungkap (treasury spending, not equity funding)
+Funding Type: DAO Treasury / On-chain Governance Funding
+Status: Ongoing
+Sources: (HIGH) [Project Catalyst Fund 10 Announcement, https://cardano.ideascale.com/c/campaigns/25201]; (HIGH) [CIP-1694 Treasury Withdrawals, https://cips.cardano.org/cips/cip1694/]
+
+## Treasury
+
+Current Treasury Size: ~1,300,000,000 ADA (estimated on-chain treasury balance as of 2024-12; fluctuates with each epoch)
+Treasury Composition: 100% ADA (native protocol token); no stablecoins, no external assets held on-chain
+Stablecoin Holdings: 0
+Native Token Holdings: ADA only
+Other Assets: Tidak ada aset non-ADA di treasury on-chain; Cardano Foundation, IOG, Emurgo masing-masing mengelola treasury korporat terpisah (fiat, ADA, dll) yang tidak transparan on-chain
+Treasury Custodian: On-chain treasury dikendalikan oleh protokol melalui CIP-1694 governance actions; Constitutional Committee (Interim CC) memvalidasi withdrawal; DReps dan SPO voting menentukan alokasi
+Sources: (HIGH) [CIP-1694 Treasury Governance, https://cips.cardano.org/cips/cip1694/]; (HIGH) [Cardano Governance Portal Treasury, https://gov.cardano.org/]; (MEDIUM) [Cardano Foundation Annual Report 2023 Treasury Disclosure, https://cardanofoundation.org/annual-report-2023/]
+
+## Revenue Model
+
+Revenue Stream: Transaction Fees (Protocol Level)
+Status: Live
+Description: Setiap transaksi memerlukan fee minimal (a * size + b * execution units); fee dikumpulkan per epoch dan dibagi: sebagian ke stake pool operators (reward), sebagian masuk ke protocol treasury
+Sources: (HIGH) [Cardano Network Parameters Fees, https://docs.cardano.org/operating-a-stake-pool/network-parameters/]; (HIGH) [IOG Blog Shelley Incentives, https://iohk.io/en/blog/posts/2020/07/29/shelley-incentives/]
+
+Revenue Stream: Monetary Expansion (Inflationary Rewards)
+Status: Live
+Description: Protokol mencetak ADA baru setiap epoch sesuai jadwal monoton menurun (ekspansi ~0.3% per epoch awal, menurun seiring waktu); dana ini mendanai staking rewards bersama fee transaksi
+Sources: (HIGH) [Cardano Monetary Policy, https://docs.cardano.org/cardano-components/cardano-token/monetary-policy/]; (HIGH) [IOG Research Monetary Policy, https://iohk.io/en/research/library/]
+
+Revenue Stream: IOG Commercial Revenue (Enterprise Contracts, Atala PRISM, Consulting)
+Status: Live
+Description: IOG (perusahaan untuk-laba) menghasilkan pendapatan dari kontrak enterprise (Atala PRISM deployments untuk pemerintah), konsultansi blockchain, dan pengembangan custom solution; tidak berasal dari protokol Cardano langsung
+Sources: (MEDIUM) [IOG About Services, https://inputoutput.io/services/]; (MEDIUM) [Atala PRISM Case Studies, https://atalaprism.io/case-studies/]
+
+Revenue Stream: Emurgo Venture Revenue (Investments, Yoroi Wallet Partnerships, Accelerator)
+Status: Live
+Description: Emurgo mengelola venture fund, investasi ekosistem, dan monetisasi Yoroi wallet (partnership, affiliate); pendapatan komersial terpisah dari protokol
+Sources: (MEDIUM) [Emurgo Ventures, https://emurgo.io/ventures/]; (MEDIUM) [Emurgo Annual Report 2023, https://emurgo.io/annual-report-2023/]
+
+Revenue Stream: Cardano Foundation Operational Grants & Donations
+Status: Live
+Description: Yayasan nirlaba menerima grant, donasi, dan sponsorship untuk operasional standarisasi, edukasi, dan pertumbuhan ekosistem; tidak ada fee protokol yang mengalir ke Foundation
+Sources: (MEDIUM) [Cardano Foundation Annual Report 2023 Funding, https://cardanofoundation.org/annual-report-2023/]
+
+Revenue Stream: Project Catalyst Treasury Returns (Recycling)
+Status: Live
+Description: Beberapa proyek yang didanai Catalyst mengembalikan keuntungan/token ke treasury melalui proposal "treasury return" atau buyback; bukan revenue stream terjamin
+Sources: (MEDIUM) [Project Catalyst Treasury Return Proposals, https://cardano.ideascale.com/c/idea/409211]
+
+## Revenue History
+
+Tidak diungkap.
+Sources: (HIGH) [Cardano Foundation Annual Reports (no protocol revenue breakdown), https://cardanofoundation.org/annual-reports/]; (HIGH) [IOG Financials (private company, not disclosed), https://inputoutput.io/]; (HIGH) [Emurgo Financials (private company, not disclosed), https://emurgo.io/]
+
+Catatan: Protokol Cardano tidak memiliki "revenue" tradisional; fee transaksi dan ekspansi monetary mengalir ke stake pool rewards dan treasury on-chain, bukan ke entitas sentral. Entitas terpisah (IOG, Emurgo, CF) tidak mempublikasikan laporan keuangan teraudit.
+
+## Fundraising Mechanism
+
+Mechanism: Public Voucher Sale (2015-2017)
+Description: Penjualan voucher ADA melalui Attain Alternative Strategies Ltd (entitas Swiss) ke peserta pasar Asia (utamanya Jepang) selama ~16 bulan; dana dikumpulkan dalam BTC dan JPY
+Sources: (HIGH) [Messari Cardano Launch and Token Distribution, https://messari.io/report/cardano-launch-and-token-distribution]
+
+Mechanism: Genesis Allocation (Protocol Bootstrap)
+Description: Pada mainnet launch, supply genesis dialokasikan ke tiga entitas pendiri (IOG, Emurgo, Cardano Foundation) dan voucher holder; tidak ada VC/private sale terpisah
+Sources: (HIGH) [Messari Cardano Launch and Token Distribution, https://messari.io/report/cardano-launch-and-token-distribution]
+
+Mechanism: On-Chain Treasury (Protocol-Native Funding)
+Description: Mulai era Shelley (2020), protokol mengumpulkan fee + monetary expansion ke treasury on-chain; didistribusikan via Project Catalyst (community voting) dan CIP-1694 governance actions
+Sources: (HIGH) [CIP-1694 Treasury, https://cips.cardano.org/cips/cip1694/]; (HIGH) [Project Catalyst, https://cardano.ideascale.com/]
+
+Mechanism: Enterprise Revenue (IOG/Emurgo Commercial Arms)
+Description: IOG dan Emurgo sebagai perusahaan komersial mengumpulkan pendapatan dari kontrak enterprise, venture investment, dan layanan profesional; independen dari mekanisme protokol
+Sources: (MEDIUM) [IOG Services, https://inputoutput.io/services/]; (MEDIUM) [Emurgo Ventures, https://emurgo.io/ventures/]
+
+## Token Sale
+
+Sale Name: ADA Voucher Sale
+Date: 2015-09 to 2017-01
+Status: Completed
+Type: Public Sale (voucher-based, conducted by Swiss entity Attain Alternative Strategies Ltd)
+Amount Raised: ~$62,000,000 USD equivalent
+Tokens Sold: ~25,900,000,000 ADA
+Price: ~$0.0024 per ADA (varied by tranche and currency BTC/JPY)
+Jurisdiction: Swiss (entity), Japan (primary marketing)
+Regulatory Framework: Swiss financial regulations (voucher model, not token sale at time of purchase)
+Sources: (HIGH) [Messari Cardano Launch and Token Distribution, https://messari.io/report/cardano-launch-and-token-distribution]; (HIGH) [Cardano Roadmap Byron, https://roadmap.cardano.org/en/byron/]
+
+Catatan: Tidak ada private sale, strategic sale, Series A/B, launchpad, auction, atau community sale terpisah selain voucher sale di atas. Distribusi token ke tim/foundation via genesis allocation, bukan token sale.
+
+## Financial Dependencies
+
+Dependency: Genesis Allocation to Founding Entities (IOG, Emurgo, Cardano Foundation)
+Description: Tiga entitas utama menerima alokasi ADA besar pada genesis (total ~5.18B ADA) sebagai dana operasional jangka panjang; IOG dan Emurgo menjual sebagian untuk operasional
+Sources: (HIGH) [Messari Cardano Launch and Token Distribution, https://messari.io/report/cardano-launch-and-token-distribution]
+
+Dependency: On-Chain Protocol Treasury
+Description: Treasury on-chain (dana protokol dari fee + ekspansi monetary) mendanai pengembangan ekosistem via Project Catalyst dan governance actions CIP-1694; menjadi sumber dana utama untuk public goods
+Sources: (HIGH) [CIP-1694 Treasury Governance, https://cips.cardano.org/cips/cip1694/]; (HIGH) [Project Catalyst, https://cardano.ideascale.com/]
+
+Dependency: IOG Commercial Contracts (Enterprise/Government)
+Description: IOG bergantung pada kontrak enterprise (Atala PRISM, national ID projects) untuk pendapatan komersial terpisah dari treasury protokol
+Sources: (MEDIUM) [IOG Services, https://inputoutput.io/services/]; (MEDIUM) [Atala PRISM Ethiopia Case Study, https://atalaprism.io/case-studies/ethiopia/]
+
+Dependency: Emurgo Venture Portfolio Returns
+Description: Emurgo bergantung pada exit/return dari investasi venture fund dan revenue Yoroi wallet untuk operasional komersial
+Sources: (MEDIUM) [Emurgo Ventures Portfolio, https://emurgo.io/ventures/]; (MEDIUM) [Emurgo Annual Report 2023, https://emurgo.io/annual-report-2023/]
+
+Dependency: Cardano Foundation Grants & Sponsorships
+Description: Foundation sebagai yayasan nirlaba bergantung pada grant, donasi, sponsorship untuk operasional standarisasi dan edukasi
+Sources: (MEDIUM) [Cardano Foundation Annual Report 2023 Funding Sources, https://cardanofoundation.org/annual-report-2023/]
+
+## Financial Risk
+
+Risk: Treasury Concentration in ADA (Single Asset Exposure)
+Description: Treasury on-chain 100% ADA; volatilitas harga ADA langsung mempengaruhi daya beli treasury untuk mendanai pengembangan (diakui dalam laporan Cardano Foundation dan diskusi governance)
+Sources: (HIGH) [Cardano Foundation Annual Report 2023 Risk Disclosure, https://cardanofoundation.org/annual-report-2023/]; (HIGH) [CIP-1694 Governance Discussions Treasury Diversification, https://cardano.ideascale.com/c/idea/409211]
+
+Risk: Genesis Entity Sell Pressure (IOG/Emurgo/CF Operational Sales)
+Description: Entitas pendiri secara berkala menjual ADA dari alokasi genesis untuk operasional; menciptakan tekanan jual berkelanjutan yang diketahui pasar (on-chain analytics tracking genesis wallet outflows)
+Sources: (HIGH) [AdaStat Genesis Wallet Tracking, https://adastat.net/]; (MEDIUM) [Cardano Foundation Transparency Report Sales Disclosure, https://cardanofoundation.org/transparency/]
+
+Risk: Protocol Revenue Dependency on Transaction Volume
+Description: Fee transaksi (bagian masuk treasury) bergantung pada aktivitas on-chain; bear market menurunkan volume → menurunkan fee → memperlambat pertumbuhan treasury
+Sources: (HIGH) [Cardano Network Parameters Fee Mechanism, https://docs.cardano.org/operating-a-stake-pool/network-parameters/]; (MEDIUM) [DefiLlama Cardano Fees Historical, https://defillama.com/chain/Cardano]
+
+Risk: Monetary Expansion Schedule Fixed (Cannot Adjust to Treasury Needs)
+Description: Jadwal ekspansi monetary (inflation) hardcoded dan menurun monotonic; tidak dapat dipercepat untuk mendanai treasury tanpa hard fork governance (CIP-1694 process)
+Sources: (HIGH) [Cardano Monetary Policy, https://docs.cardano.org/cardano-components/cardano-token/monetary-policy/]; (HIGH) [CIP-1694 Parameter Change Governance Action, https://cips.cardano.org/cips/cip1694/]
+
+Risk: No Audited Consolidated Financial Statements for Core Entities
+Description: IOG, Emurgo, Cardano Foundation tidak mempublikasikan laporan keuangan teraudit konsolidasi; transparansi keuangan terbatas pada annual report narrative dan on-chain treasury data
+Sources: (HIGH) [Cardano Foundation Annual Report 2023 (narrative only), https://cardanofoundation.org/annual-report-2023/]; (MEDIUM) [IOG No Public Financial Statements, https://inputoutput.io/]; (MEDIUM) [Emurgo No Public Financial Statements, https://emurgo.io/]
+
+Risk: Regulatory Uncertainty on Treasury Governance (CIP-1694)
+Description: Tata kelola treasury on-chain via DRep/CC/SPO voting belum diuji hukum di yurisdiksi manapun; risiko regulasi future pada DAO treasury management
+Sources: (MEDIUM) [CIP-1694 Governance Framework, https://cips.cardano.org/cips/cip1694/]; (LOW) [Cardano Foundation Legal Disclaimer, https://cardanofoundation.org/legal/]
+
+## Official Financial Resources
+
+Official Blog: https://blog.cardano.org/
+Transparency Report: https://cardanofoundation.org/transparency/
+Treasury Dashboard: https://gov.cardano.org/treasury (CIP-1694 governance portal)
+Governance: https://gov.cardano.org/
+Messari: https://messari.io/asset/cardano
+Token Terminal: https://tokenterminal.com/terminal/projects/cardano
+DefiLlama: https://defillama.com/chain/Cardano
+CryptoRank: https://cryptorank.io/price/cardano
+Whitepaper: https://cardano.org/whitepaper/ (Why Cardano / Academic Papers collection)
+Cardano Foundation Annual Reports: https://cardanofoundation.org/annual-reports/
+Project Catalyst Funding Tracker: https://cardano.ideascale.com/
+AdaStat Treasury Analytics: https://adastat.net/treasury/
+Blockfrost Treasury API: https://docs.blockfrost.io/#tag/Treasury
+
+## Summary
+
+Total Funding Raised: ~$62,000,000 USD (via ADA Voucher Sale 2015-2017) + ~5,185,414,084 ADA Genesis Allocation to founding entities (value at launch ~$0.02/ADA = ~$103M notional; current value varies)
+Funding Rounds: 1 Public Voucher Sale + 1 Genesis Allocation (3 entities) + Ongoing On-Chain Treasury Funding (Project Catalyst >100M ADA distributed)
+Treasury Status: On-chain treasury ~1.3B ADA (2024-12 estimate), 100% ADA, governed by CIP-1694 (Constitutional Committee, DReps, SPOs); Corporate treasuries of IOG/Emurgo/CF separate, opaque
+Revenue Sources: Protocol: Transaction fees + Monetary expansion (to treasury + stake rewards); Commercial: IOG enterprise contracts, Emurgo venture returns, Foundation grants
+Revenue Availability: Protocol revenue data on-chain (fees, treasury balance); Commercial entity revenue not disclosed (private companies)
+
+## Open Threads
+
+- Nilai treasury on-chain real-time: angka ~1.3B ADA adalah estimasi komunitas (AdaStat, Blockfrost) per 2024-12; tidak ada dashboard resmi real-time dari Cardano Foundation yang mempublikasikan angka pasti hari ini
+- Penjualan ADA oleh entitas genesis (IOG, Emurgo, CF): ada pelacakan on-chain (AdaStat genesis wallets) tetapi tidak ada jadwal atau komitmen transparansi resmi mengenai volume penjualan bulanan/tahunan
+- Laporan keuangan teraudit IOG/Emurgo: tidak tersedia publik; Cardano Foundation annual report bersifat narrative tanpa financial statements teraudit standar (IFRS/GAAP)
+- Diversifikasi treasury: diskusi governance (Catalyst, CIP-1694) membahas kebutuhan diversifikasi ke stablecoin/asset lain tetapi belum ada proposal konkret yang lolos voting
+- Pendapatan IOG dari kontrak negara (Ethiopia, Georgia, Tanzania via Atala PRISM): tidak diungkapkan nilai kontrak; hanya case study qualitative
+- Emurgo venture fund size, deployment, dan returns: tidak diungkapkan detail finansial; hanya daftar portfolio di website
+- Apakah ada hutang/utang (debt) pada entitas manapun: tidak diungkapkan; tidak ada disclosure pinjaman atau bond
+- Tax jurisdiction implications untuk treasury withdrawal: CIP-1694 governance actions untuk treasury spending belum memiliki framework pajak jelas untuk entitas penerima dana
+- Monetary expansion tail emission: jadwal hardcoded sampai ~2140; tidak ada mekanisme governance untuk mengubah kurva supply (kecuali hard fork parameter change via CIP-1694 yang sulit)
+- Real-time protocol fee revenue: tersedia via Blockfrost/Koios API per epoch tetapi tidak diagregasikan ke dashboard resmi yang mudah diakses non-teknis

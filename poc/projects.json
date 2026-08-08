@@ -94,6 +94,24 @@
     ]
   },
   {
+    "n": "Cardano",
+    "tier": "Deep",
+    "file": "examples/CaseStudies/Cardano.md",
+    "cat": "",
+    "era": "",
+    "tags": [
+      "l1"
+    ]
+  },
+  {
+    "n": "Grass",
+    "tier": "Deep",
+    "file": "examples/CaseStudies/Grass.md",
+    "cat": "",
+    "era": "",
+    "tags": []
+  },
+  {
     "n": "Irys",
     "tier": "Deep",
     "file": "examples/CaseStudies/Irys.md",
