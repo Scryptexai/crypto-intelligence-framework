@@ -96,6 +96,18 @@ def project_rows():
     }
     knowledge_counts = {slugify(k): len(v) for k, v in load_optional("knowledge.json").items()}
     qa_by_slug = {slugify(k): v for k, v in load_optional("qa.json").items()}
+    # Deterministic sources that DO exist now (were previously omitted as "no source yet"):
+    conflict_counts = {slugify(k): len(v) for k, v in load_optional("conflicts.json").items()}
+    event_counts = {slugify(k): len(v) for k, v in load_optional("events.json").items()}
+    # events also live inside decision_events.json for Track C; fall back to that count.
+    de_counts = {slugify(k): len(v) for k, v in load_optional("decision_events.json").items()}
+
+    def _coverage(slug):
+        qa = qa_by_slug.get(slug) or {}
+        for d in qa.get("dimensions", []):
+            if d.get("key") == "coverage" and d.get("score") is not None:
+                return int(round(d["score"]))
+        return 0
 
     rows = []
     for p in load("projects.json"):
@@ -109,9 +121,14 @@ def project_rows():
             "tags": p.get("tags", []),
             "entity_count": entity_counts.get(slug, 0),
             "knowledge_count": knowledge_counts.get(slug, 0),
+            "conflict_count": conflict_counts.get(slug, 0),
+            "event_count": event_counts.get(slug) or de_counts.get(slug, 0),
+            "coverage": _coverage(slug),
         }
         if slug in qa_by_slug and qa_by_slug[slug].get("total") is not None:
             row["cif_score"] = qa_by_slug[slug]["total"]
+            # confidence = rounded overall CIF score (aggregate quality confidence proxy)
+            row["confidence"] = int(round(qa_by_slug[slug]["total"]))
         rows.append(row)
     return rows
 
