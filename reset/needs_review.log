@@ -10,3 +10,15 @@
 2026-08-07T14:26:04.976296+00:00	EigenLayer	verify_10_phases failed	{'entities': 0, 'events': 0, 'decisions': 0, 'knowledge': 0}
 2026-08-07T17:44:42.784775+00:00	Friend.tech	verify_10_phases failed	{'entities': 45, 'events': 25, 'decisions': 7, 'knowledge': 0}
 2026-08-07T19:07:56.525837+00:00	Grass	verify_10_phases failed	{'entities': 60, 'events': 0, 'decisions': 12, 'knowledge': 45}
+2026-08-07T23:57:41.504228+00:00	Berachain	verify_10_phases failed	{'entities': 0, 'events': 0, 'decisions': 0, 'knowledge': 0}
+2026-08-08T00:12:42.736477+00:00	Cardano	verify_10_phases failed	{'entities': 50, 'events': 35, 'decisions': 14, 'knowledge': 0}
+2026-08-08T00:36:06.454540+00:00	Compound	verify_10_phases failed	{'entities': 63, 'events': 30, 'decisions': 13, 'knowledge': 0}
+2026-08-08T00:41:06.544473+00:00	Cosmos	verify_10_phases failed	{'entities': 0, 'events': 0, 'decisions': 7, 'knowledge': 0}
+2026-08-08T01:00:27.581331+00:00	EOS	verify_10_phases failed	{'entities': 36, 'events': 29, 'decisions': 8, 'knowledge': 0}
+2026-08-08T01:06:57.015662+00:00	EigenLayer	verify_10_phases failed	{'entities': 0, 'events': 0, 'decisions': 0, 'knowledge': 0}
+2026-08-08T01:38:40.219579+00:00	Ethena	verify_10_phases failed	{'entities': 51, 'events': 33, 'decisions': 14, 'knowledge': 0}
+2026-08-08T02:11:06.939080+00:00	Friend.tech	verify_10_phases failed	{'entities': 45, 'events': 25, 'decisions': 7, 'knowledge': 0}
+2026-08-08T02:16:07.055087+00:00	Grass	verify_10_phases failed	{'entities': 60, 'events': 0, 'decisions': 12, 'knowledge': 45}
+2026-08-08T03:43:06.528177+00:00	Jito	verify_10_phases failed	{'entities': 29, 'events': 15, 'decisions': 5, 'knowledge': 0}
+2026-08-08T06:54:33.092325+00:00	MegaETH	verify_10_phases failed	{'entities': 18, 'events': 11, 'decisions': 7, 'knowledge': 0}
+2026-08-08T08:46:51.477982+00:00	Movement Labs	verify_10_phases failed	{'entities': 25, 'events': 10, 'decisions': 9, 'knowledge': 0}

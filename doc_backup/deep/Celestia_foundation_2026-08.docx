@@ -1,0 +1,30 @@
+PROJECT: Celestia
+Official Name: Celestia (HIGH) [Celestia.org, https://celestia.org]
+Symbol: TIA (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/celestia]
+Category: Modular Data Availability (DA) Layer / Modular Blockchain (HIGH) [Celestia Blog "What is Celestia?", https://blog.celestia.org/what-is-celestia/]
+Founding Entity: Celestia Labs Inc. (Delaware, USA); Celestia Foundation (Zug, Switzerland) (HIGH) [Celestia Blog "Celestia Labs raises $55M", https://blog.celestia.org/celestia-labs-raises-55m/; Crunchbase, https://www.crunchbase.com/organization/celestia-labs]
+Founders: Mustafa Al-Bassam (CEO/Co-founder); Ismail Khoffi (CTO/Co-founder); John Adler (Core Contributor/Co-founder); Nick White (COO/Co-founder) (HIGH) [Celestia Blog "Celestia Labs raises $55M", https://blog.celestia.org/celestia-labs-raises-55m/; Team page, https://celestia.org/team/]
+Core Team: ~40+ engineers/researchers at Celestia Labs (tidak diungkap lengkap); core protocol contributors publik: Mustafa Al-Bassam, Ismail Khoffi, John Adler, Nick White, Josh Weintraub, David Egas (MEDIUM) [Celestia Labs careers/about; GitHub contributors https://github.com/celestiaorg]
+Country: USA (Celestia Labs); Switzerland (Celestia Foundation) (HIGH) [Crunchbase Celestia Labs; Celestia Foundation registration Zug]
+Launch Date - Testnet: Arabica (incentivized testnet) 24 Januari 2022; Mocha (incentivized testnet) 28 Maret 2023; Lemon (pre-mainnet testnet) 19 September 2023 (HIGH) [Celestia Blog "Arabica Testnet", https://blog.celestia.org/arabica-testnet/; "Mocha Testnet", https://blog.celestia.org/mocha-testnet/; "Lemon Testnet", https://blog.celestia.org/lemon-testnet/]
+Launch Date - Mainnet: 31 Oktober 2023 (block height 0) (HIGH) [Celestia Blog "Celestia Mainnet Launch", https://blog.celestia.org/celestia-mainnet-launch/]
+Launch Date - TGE: 31 Oktober 2023 (genesis drop + liquid TIA pada mainnet launch) (HIGH) [Celestia Blog "TIA Genesis Drop", https://blog.celestia.org/tia-genesis-drop/; CoinGecko historical data]
+Main Products: Celestia Data Availability Layer (core chain); Blobstream (DA verification bridge ke Ethereum & EVM); Celestia Node (light client, full node, bridge node); Quantum Gravity Bridge (WIP, trust-minimized bridging); Celestia App (Cosmos SDK application) (HIGH) [Celestia Docs "Architecture", https://docs.celestia.org/learn/architecture; GitHub repos https://github.com/celestiaorg]
+Official Website: https://celestia.org (HIGH)
+Repository: https://github.com/celestiaorg (HIGH)
+Documentation: https://docs.celestia.org (HIGH)
+Social - X/Twitter: @CelestiaOrg (HIGH)
+Social - Discord: https://discord.gg/celestia (HIGH)
+Social - Telegram: @celestiaofficial (MEDIUM) [Link dari website footer]
+Block Explorer: https://celestia.mintscan.io (Cosmostation); https://explorer.celestia.org (official); https://www.mintscan.io/celestia (HIGH)
+Token Contract: Native token pada chain Celestia (denom `utia`); tidak ada ERC-20 native saat TGE — wrapped TIA (wTIA) kemudian dideploy oleh pihak ketiga di Ethereum/Arbitrum (HIGH) [Celestia Docs "TIA Token", https://docs.celestia.org/learn/tia-token; Celestia Blog "TIA Genesis Drop"]
+Chain(s): Celestia (Cosmos SDK, CometBFT consensus); Ethereum (Blobstream contracts untuk DA verification); Rollup ecosystems menggunakan Celestia DA: Arbitrum Orbit, Starknet, Polygon CDK, Sovereign SDK rollups (HIGH) [Celestia Blog "Ecosystem", https://blog.celestia.org/category/ecosystem/; Blobstream repo https://github.com/celestiaorg/blobstream-contracts]
+Ecosystem: Modular blockchain stack — Data Availability layer untuk sovereign rollups, optimistic rollups (Arbitrum Orbit), ZK rollups (Starknet, Polygon CDK), Celestia light clients, Blobstream relayers, Rollkit (sovereign rollup framework), Sovereign SDK (HIGH) [Celestia Blog "Modular Ecosystem", https://blog.celestia.org/modular-ecosystem/; Rollkit repo https://github.com/rollkit/rollkit]
+
+Open Threads
+- Distribusi token TGE detail (persentase community/airdrop vs investor/team) — butuh cross-check ke on-chain data dan blog tokenomics resmi
+- Status fee switch / value accrual mechanism TIA (blobspace fees, staking yield) — butuh verifikasi dari governance proposals dan spec
+- Ukuran treasury Celestia Labs vs Celestia Foundation (on-chain address labels) — butuh analisis on-chain
+- Daftar lengkap investor ronda Series A/B ($55M Oct 2022) — Crunchbase menyebut Bain Capital Crypto, Polychain, dll tapi butuh konfirmasi resmi
+- Rincian legal structure hubungan Celestia Labs (for-profit) dan Celestia Foundation (non-profit) — butuh dokumen governance/resmi
+- Tanggal pasti deploy wrapped TIA (wTIA) di Ethereum/Arbitrum dan oleh siapa (resmi vs community)

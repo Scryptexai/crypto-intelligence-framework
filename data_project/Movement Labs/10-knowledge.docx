@@ -1,0 +1,230 @@
+PROJECT: Movement Labs
+
+## Core Insights
+
+Insight 1: Modular Architecture Memisahkan Execution, Settlement, DA, dan Sequencing Menjadi Layer Terpisah yang Pluggable
+Explanation: Movement Labs membangun stack modular di mana MoveVM/MEVM menangani execution, Ethereum L1 menyediakan settlement dan finality, DA layer (Celestia, Avail, EigenDA) bersifat pluggable via adapter, dan sequencer terpusat di testnet dengan rencana decentralized set untuk mainnet. Arsitektur ini memungkinkan fleksibilitas upgrade komponen tanpa mengganggu layer lain.
+Evidence: System architecture modular dengan pemisahan layer eksplisit【Phase 4 — System Architecture】; DA Layer Adapters sebagai komponen terpisah di Movement SDK【Phase 4 — Core Components】; External dependencies menunjukkan 3 DA layer planned sebagai high priority【Phase 7 — External Dependencies】; Narrative position "Modular Blockchain" sebagai main narrative【Phase 8 — Narrative Position】.
+Supporting Dataset: Phase 4 (Technology), Phase 7 (Ecosystem), Phase 8 (Market)
+Confidence: HIGH
+
+Insight 2: MEVM Menggunakan Transpiler EVM Bytecode ke Move Bytecode Bukan EVM-Equivalent Execution
+Explanation: MEVM tidak mengeksekusi EVM bytecode secara native; ia mentranslasikan bytecode EVM ke Move bytecode untuk dijalankan di MoveVM. Pendekatan ini mendukung Hardhat/Foundry tooling tetapi bukan bytecode-compatible sepenuhnya, menciptakan kompatibilitas dengan gap teknis (precompiles, opcode, gas semantics).
+Evidence: Execution environment MEVM transpiler【Phase 4 — Execution Environment】; Development framework Hardhat/Foundry support via MEVM【Phase 4 — Development Framework】; Major integration MEVM ↔ Hardhat/Foundry live di testnet【Phase 7 — Major Integrations】; Narrative position "EVM Compatibility" secondary bukan equivalence【Phase 8 — Narrative Position】; Known technical limitation MEVM tidak 100% kompatibel EVM【Phase 4 — Known Technical Limitations】.
+Supporting Dataset: Phase 4 (Technology), Phase 7 (Ecosystem), Phase 8 (Market)
+Confidence: HIGH
+
+Insight 3: Single Series A $38M Sebagai Satu-Satunya Funding Terverifikasi dengan Token Allocation Implied Tapi Unconfirmed
+Explanation: Movement Labs hanya memiliki satu ronde funding publik terverifikasi (Series A $38M, 2024). Seed/pre-seed tidak tercatat di Crunchbase. Investor identity undisclosed. Token allocation untuk investor implied via SAFT/token warrant standar industri crypto VC tetapi tidak dikonfirmasi resmi.
+Evidence: Funding history hanya Series A $38M terverifikasi【Phase 5 — Funding History】; Series A Investors undisclosed entity【Phase 2 — Entity】; Fundraising mechanism private sale assumed LOW confidence【Phase 5 — Fundraising Mechanism】; Distribution investors planned MEDIUM confidence【Phase 6 — Distribution】; Vesting investors assumed standar VC【Phase 6 — Vesting Schedule】.
+Supporting Dataset: Phase 2 (Entity), Phase 5 (Financial), Phase 6 (Token)
+Confidence: MEDIUM
+
+Insight 4: Pre-TGE Governance Vacuum — Semua Kendali Protocol Upgrade di Movement Labs Inc. Tanpa On-Chain Governance
+Explanation: Tidak ada Foundation, DAO, Council, Committee, atau Validator Group. Token MOVE belum exist. Semua upgrade (MoveVM, MEVM, Movement SDK, M1 contracts) dikendalikan Movement Labs Inc. secara terpusat. Governance model "Planned" tapi semua parameter unknown. Foundation formation unconfirmed.
+Evidence: Entity tidak ada Foundation/DAO【Phase 2 — Entity】; Fundraising mechanism Foundation tidak ada, DAO Treasury tidak ada【Phase 5 — Fundraising Mechanism】; Governance semua Unknown/Planned【Phase 6 — Governance】; Governance ecosystem semua tidak ada【Phase 7 — Governance Ecosystem】; Security model upgradeability controlled by Movement Labs Inc.【Phase 4 — Security Model】.
+Supporting Dataset: Phase 2 (Entity), Phase 5 (Financial), Phase 6 (Token), Phase 7 (Ecosystem), Phase 4 (Technology)
+Confidence: HIGH
+
+Insight 5: Testnet-First Development dengan Centralized Components Sebelum Mainnet Readiness Complete
+Explanation: Parthenon testnet live 2024-07-30 dengan centralized sequencer (Movement Labs operated), Ethereum testnet settlement, MEVM RPC, tanpa audit publik, tanpa DA adapters live, tanpa decentralized sequencing. Mainnet requirements (audit, DA adapters, decentralized sequencer) masih in progress.
+Evidence: Parthenon testnet launch EV-009【Phase 3 — EV-009】; Consensus mechanism centralized testnet planned decentralized【Phase 4 — Consensus Mechanism】; Audit history tidak ditemukan audit publik【Phase 4 — Audit History】; DA layer integrations planned not live【Phase 7 — Major Integrations】; Ecosystem risk centralized sequencer testnet【Phase 7 — Ecosystem Risks】.
+Supporting Dataset: Phase 3 (History), Phase 4 (Technology), Phase 7 (Ecosystem)
+Confidence: HIGH
+
+Insight 6: Ethereum Settlement Dependency sebagai Strategic Anchor Tidak Ada Alternative Settlement Layer
+Explanation: Seluruh arsitektur dan go-to-market dibangun di atas Ethereum L1 settlement. M1 = MoveVM L2 on Ethereum. Testnet Parthenon menggunakan Ethereum Sepolia/Holesky. Bridge design ke Ethereum. Competitor positioning vs Arbitrum/Optimism/Base. Tidak ada fallback settlement layer.
+Evidence: Chain Ethereum L1 settlement【Phase 1 — Chain】; Parthenon↔Ethereum live integration EV-009【Phase 3 — EV-009】; System architecture Ethereum settlement【Phase 4 — System Architecture】; External dependency Ethereum Critical【Phase 7 — External Dependencies】; Market position primary chain Ethereum【Phase 8 — Market Position】; Competitor landscape Ethereum L2s【Phase 8 — Competitor Landscape】.
+Supporting Dataset: Phase 1 (Foundation), Phase 3 (History), Phase 4 (Technology), Phase 7 (Ecosystem), Phase 8 (Market)
+Confidence: HIGH
+
+Insight 7: MoveVM Parallel Execution dan Formal Verification sebagai Technical Differentiator vs EVM Sequential
+Explanation: MoveVM design menekankan parallel execution berbasis dependency graph (mirip Block-STM) dan formal verification via Move Prover sebagai core features. Ini membedakan dari EVM sequential execution dan menjadi selling point teknis utama.
+Evidence: Execution environment MoveVM parallel execution【Phase 4 — Execution Environment】; Move Prover integration【Phase 4 — Development Framework】; Narrative position Parallel Execution secondary【Phase 8 — Narrative Position】; Narrative position Formal Verification secondary【Phase 8 — Narrative Position】; Ecosystem position Move-based modular stack【Phase 7 — Ecosystem Position】.
+Supporting Dataset: Phase 4 (Technology), Phase 7 (Ecosystem), Phase 8 (Market)
+Confidence: HIGH
+
+Insight 8: Financial Runway Transparency Absence — Tidak Ada Burn Rate, Runway, Treasury Composition Disclosure
+Explanation: Standard startup opacity pada financials. Series A $38M amount known tapi usage timeline unknown. Tidak ada transparency report. Community tidak bisa assess runway risk. Treasury composition tidak diungkap (asumsi USD/stablecoin dari Series A proceeds).
+Evidence: Treasury tidak diungkap【Phase 5 — Treasury】; Financial risk funding dependency dan treasury concentration【Phase 5 — Financial Risk】; Open threads burn rate, runway, financial audit unknown【Phase 8 — Open Threads】; Revenue history tidak diungkap【Phase 5 — Revenue History】.
+Supporting Dataset: Phase 5 (Financial), Phase 8 (Market)
+Confidence: HIGH
+
+Insight 9: Developer Tooling Compatibility First — Prioritaskan Hardhat/Foundry Support via MEVM Sebelum Move-Native Tooling Maturity
+Explanation: MEVM live dengan Hardhat/Foundry plugins di testnet Parthenon; Movement CLI/TypeScript SDK parallel; Move Prover integration documented tapi tidak highlighted sebagai primary developer entry point. Strategi menarik Ethereum developers existing.
+Evidence: Development framework Hardhat/Foundry support【Phase 4 — Development Framework】; Major integration MEVM ↔ Hardhat/Foundry live【Phase 7 — Major Integrations】; Developer ecosystem SDK, API, tools【Phase 7 — Developer Ecosystem】; Narrative position EVM compatibility secondary【Phase 8 — Narrative Position】.
+Supporting Dataset: Phase 4 (Technology), Phase 7 (Ecosystem), Phase 8 (Market)
+Confidence: HIGH
+
+Insight 10: Regulatory Caution untuk Token Issuance — Delaware C-Corp, US Jurisdiction; Tokenomics Delayed; No Public Sale Announcement
+Explanation: Tidak mempublikasikan tokenomics detail; tidak announce community sale/private sale/launchpad; "pre-TGE" status maintained tanpa timeline; legal compliance prioritized over community expectations. Token contract belum di-deploy.
+Evidence: Token contract belum deploy【Phase 1 — Token Contract】; Entity Movement Labs Inc. Delaware C-Corp【Phase 2 — Entity】; Financial risk legal financial risk【Phase 5 — Financial Risk】; Token semua Unknown/Planned【Phase 6 — Token Information】; Trading markets pre-TGE【Phase 8 — Trading Markets】; Open threads regulatory compliance unknown【Phase 8 — Open Threads】.
+Supporting Dataset: Phase 1 (Foundation), Phase 2 (Entity), Phase 5 (Financial), Phase 6 (Token), Phase 8 (Market)
+Confidence: HIGH
+
+## Strategic Principles
+
+Principle 1: Modular First — Memisahkan Setiap Komponen Arsitektur Menjadi Modul Independen yang Pluggable
+Explanation: Setiap layer (execution, settlement, DA, sequencing) dikembangkan sebagai modul terpisah dalam Movement SDK. Tidak ada monolithic chain design. DA adapters, sequencer, VM, settlement contracts semuanya modular.
+Evidence: System architecture modular stack【Phase 4 — System Architecture】; DA Layer Adapters sebagai komponen terpisah【Phase 4 — Core Components】; External dependencies 3 DA layers pluggable【Phase 7 — External Dependencies】; Narrative position Modular Blockchain main narrative【Phase 8 — Narrative Position】.
+Supporting Dataset: Phase 4 (Technology), Phase 7 (Ecosystem), Phase 8 (Market)
+Confidence: HIGH
+
+Principle 2: EVM Compatibility via Translation Layer — Membangun MEVM Sebagai Transpiler Bukan EVM-Equivalent
+Explanation: MEVM mentranslasikan EVM bytecode ke Move bytecode untuk dijalankan di MoveVM. Mendukung Hardhat/Foundry tooling tapi bukan bytecode-compatible. Pendekatan ini memungkinkan leverage MoveVM features (parallel execution, formal verification) sambil menarik Ethereum developers.
+Evidence: Execution environment MEVM transpiler【Phase 4 — Execution Environment】; Development framework Hardhat/Foundry support【Phase 4 — Development Framework】; Major integration MEVM ↔ Hardhat/Foundry live【Phase 7 — Major Integrations】; Narrative position EVM compatibility secondary【Phase 8 — Narrative Position】.
+Supporting Dataset: Phase 4 (Technology), Phase 7 (Ecosystem), Phase 8 (Market)
+Confidence: HIGH
+
+Principle 3: Ethereum Settlement Anchor — Semua Arsitektur Dibangun Di Atas Ethereum L1 Sebagai Settlement Layer Utama
+Explanation: M1 dirancang sebagai L2 pada Ethereum. Testnet menggunakan Ethereum testnet. Bridge ke Ethereum. Tidak ada alternative settlement layer. Positioning sebagai Ethereum L2 bukan L1 kompetitor.
+Evidence: Chain Ethereum L1 settlement【Phase 1 — Chain】; System architecture Ethereum settlement【Phase 4 — System Architecture】; External dependency Ethereum Critical【Phase 7 — External Dependencies】; Market position primary chain Ethereum【Phase 8 — Market Position】; Competitor landscape Ethereum L2s【Phase 8 — Competitor Landscape】.
+Supporting Dataset: Phase 1 (Foundation), Phase 4 (Technology), Phase 7 (Ecosystem), Phase 8 (Market)
+Confidence: HIGH
+
+Principle 4: Testnet-First Development — Shipping Testnet Early untuk Developer Feedback dan Narrative Momentum
+Explanation: Parthenon testnet live 2024-07-30 dengan centralized sequencer, tanpa audit, tanpa DA adapters live, tanpa decentralized sequencing. Technical completeness (audit, DA, decentralized sequencer) dikejar setelah testnet live.
+Evidence: Parthenon testnet launch EV-009【Phase 3 — EV-009】; Consensus mechanism centralized testnet planned decentralized【Phase 4 — Consensus Mechanism】; Audit history tidak ditemukan audit publik【Phase 4 — Audit History】; DA layer integrations planned not live【Phase 7 — Major Integrations】.
+Supporting Dataset: Phase 3 (History), Phase 4 (Technology), Phase 7 (Ecosystem)
+Confidence: HIGH
+
+Principle 5: Move Ecosystem Leverage — Building on Upstream Move Toolchain Dari Aptos/Sui/0L Bukan Fork Language
+Explanation: MovementVM/MEVM/SDK menggunakan Move language toolchain existing (compiler, prover, VM). Differentiator adalah MEVM compatibility layer dan modular stack, bukan Move language itself. Kontribusi upstream implied.
+Evidence: Programming languages Move【Phase 4 — Programming Languages】; External dependency Move Language Toolchain Critical【Phase 7 — External Dependencies】; Competitor landscape Aptos/Sui/0L as Move ecosystem peers【Phase 8 — Competitor Landscape】.
+Supporting Dataset: Phase 4 (Technology), Phase 7 (Ecosystem), Phase 8 (Market)
+Confidence: HIGH
+
+Principle 6: Developer Tooling Compatibility First — Prioritaskan Hardhat/Foundry Support via MEVM
+Explanation: MEVM live dengan Hardhat/Foundry plugins di testnet Parthenon; Movement CLI/TypeScript SDK parallel; Move Prover integration documented tapi tidak highlighted sebagai primary developer entry point. Strategi menarik Ethereum developers existing.
+Evidence: Development framework Hardhat/Foundry support【Phase 4 — Development Framework】; Major integration MEVM ↔ Hardhat/Foundry live【Phase 7 — Major Integrations】; Developer ecosystem SDK, API, tools【Phase 7 — Developer Ecosystem】.
+Supporting Dataset: Phase 4 (Technology), Phase 7 (Ecosystem), Phase 8 (Market)
+Confidence: HIGH
+
+Principle 7: Rust Implementation untuk Core Infrastructure — Performance dan Safety First
+Explanation: Semua core protocol components (MoveVM, MEVM, Movement SDK, node software) implemented in Rust. Move untuk smart contracts. TypeScript/JavaScript untuk client tooling.
+Evidence: Programming languages Rust core【Phase 4 — Programming Languages】; Current technical stack Rust core【Phase 4 — Current Technical Stack】; Developer ecosystem SDK, CLI in Rust/TypeScript【Phase 7 — Developer Ecosystem】.
+Supporting Dataset: Phase 4 (Technology), Phase 7 (Ecosystem)
+Confidence: HIGH
+
+Principle 8: Proactive Risk Acknowledgment — Transparan Tentang Centralized Sequencer, MEVM Gaps, Audit Status
+Explanation: Blog post dan docs eksplisit menyatakan centralized sequencer testnet, MEVM tidak 100% kompatibel EVM, parallel execution limitations, fraud proof unspecified, DA adapters not live, Movement Network unspecified. Tidak claim "decentralized" atau "audited" prematur.
+Evidence: Consensus mechanism centralized testnet acknowledged【Phase 4 — Consensus Mechanism】; Known technical limitations 7 items documented【Phase 4 — Known Technical Limitations】; Ecosystem risks centralized sequencer, MEVM gaps, no audit【Phase 7 — Ecosystem Risks】; Open threads MEVM compatibility test suite results unknown【Phase 8 — Open Threads】.
+Supporting Dataset: Phase 4 (Technology), Phase 7 (Ecosystem), Phase 8 (Market)
+Confidence: HIGH
+
+## Success Factors
+
+Factor 1: Strong Technical Differentiation via MoveVM Parallel Execution dan Formal Verification
+Explanation: MoveVM menawarkan parallel execution berbasis dependency graph dan formal verification via Move Prover — fitur yang tidak ada di EVM standard. Ini menciptakan technical moat vs Ethereum L2 competitors (Arbitrum, Optimism, Base) yang menggunakan EVM-equivalent execution.
+Evidence: Execution environment MoveVM parallel execution【Phase 4 — Execution Environment】; Move Prover integration【Phase 4 — Development Framework】; Narrative position Parallel Execution dan Formal Verification secondary【Phase 8 — Narrative Position】; Competitor landscape vs Arbitrum/Optimism/Base EVM-equivalent【Phase 8 — Competitor Landscape】.
+Supporting Dataset: Phase 4 (Technology), Phase 8 (Market)
+Confidence: HIGH
+
+Factor 2: MEVM EVM Compatibility Layer Memperluas Addressable Market ke Seluruh Ethereum Developer Ecosystem
+Explanation: MEVM memungkinkan developer Ethereum existing deploy Solidity contracts tanpa modifikasi via Hardhat/Foundry. Addressable market bukan hanya Move-native developers (kecil) tapi seluruh Ethereum developer base (besar). Diferensiasi vs Aptos/Sui yang tidak punya EVM compatibility native.
+Evidence: MEVM transpiler EVM bytecode ke Move bytecode【Phase 4 — Execution Environment】; Hardhat/Foundry support live di testnet【Phase 4 — Development Framework】; Major integration MEVM ↔ Hardhat/Foundry live【Phase 7 — Major Integrations】; Narrative position EVM compatibility secondary【Phase 8 — Narrative Position】; Competitor landscape Aptos/Sui no native EVM compatibility【Phase 8 — Competitor Landscape】.
+Supporting Dataset: Phase 4 (Technology), Phase 7 (Ecosystem), Phase 8 (Market)
+Confidence: HIGH
+
+Factor 3: Series A $38M Funding Memberikan Runway Substansial untuk Pre-Mainnet Development
+Explanation: Single large VC round $38M (2024) memungkinkan team expansion (30+ orang), infrastructure, audit preparation, mainnet launch preparation. Post-funding hiring 3 leadership roles (Head of Growth, Ecosystem, Operations) dalam waktu dekat.
+Evidence: Series A funding $38M EV-006【Phase 3 — EV-006】; Funding history Series A $38M【Phase 5 — Funding History】; Hiring 3 leadership roles EV-008【Phase 3 — EV-008】; Entity Sami Kassab, Arjun Krishan, Tanya Kumar 2024-sekarang【Phase 2 — Entity】; Financial dependencies Series A primary【Phase 5 — Financial Dependencies】.
+Supporting Dataset: Phase 3 (History), Phase 5 (Financial), Phase 2 (Entity)
+Confidence: HIGH
+
+Factor 4: Modular Architecture Memungkinkan Pluggable DA Layer Options (Celestia, Avail, EigenDA)
+Explanation: Tidak commit ke single DA layer. Announce 3 DA integrations untuk narrative completeness dan ecosystem breadth. DA adapters sebagai SDK modules. Menarik ekosistem masing-masing DA layer. Flexibility untuk mainnet launch dengan ≥1 DA adapter ready.
+Evidence: Ecosystem Celestia, Avail, EigenDA planned【Phase 1 — Ecosystem】; DA Layer Adapters core component【Phase 4 — Core Components】; External dependencies 3 High Planned DA【Phase 7 — External Dependencies】; Major integrations 3 Planned DA Adapters【Phase 7 — Major Integrations】; Competitor landscape complementary relationship【Phase 8 — Competitor Landscape】.
+Supporting Dataset: Phase 1 (Foundation), Phase 4 (Technology), Phase 7 (Ecosystem), Phase 8 (Market)
+Confidence: HIGH
+
+Factor 5: Experienced Founders dengan Clear Vision dan Execution Track Record
+Explanation: Rushi Manche (CEO) dan Cooper Scanlon (CTO) mendirikan 2022, inkorporasi Delaware C-Corp, bangun tim 30+, raise Series A $38M, launch testnet Parthenon 2024-07-30. Clear vision: "Move-based modular blockchain stack" konsisten dari blog announcement EV-007 hingga testnet launch.
+Evidence: Founders Rushi Manche, Cooper Scanlon【Phase 1 — Founders】; Founding EV-001, Incorporation EV-002【Phase 3 — EV-001, EV-002】; Public announcement EV-007【Phase 3 — EV-007】; Team expansion EV-008【Phase 3 — EV-008】; Parthenon testnet launch EV-009【Phase 3 — EV-009】.
+Supporting Dataset: Phase 1 (Foundation), Phase 3 (History), Phase 2 (Entity)
+Confidence: HIGH
+
+## Failure Factors
+
+Factor 1: Single Point of Failure — Centralized Sequencer di Testnet Tanpa Censorship Resistance
+Explanation: Parthenon testnet menggunakan single sequencer dioperasikan Movement Labs. Single point of failure untuk transaction ordering. Tidak ada censorship resistance pada testnet. Mainnet launch gated oleh decentralized sequencer readiness yang spec-nya masih TBD.
+Evidence: Consensus mechanism centralized testnet【Phase 4 — Consensus Mechanism】; Parthenon testnet launch EV-009 centralized sequencer【Phase 3 — EV-009】; Ecosystem risk centralized sequencer testnet【Phase 7 — Ecosystem Risks】; Open threads decentralized sequencer spec unknown【Phase 8 — Open Threads】.
+Supporting Dataset: Phase 3 (History), Phase 4 (Technology), Phase 7 (Ecosystem), Phase 8 (Market)
+Confidence: HIGH
+
+Factor 2: No Security Audit Completed untuk MoveVM, MEVM, Movement SDK, M1 Settlement Contracts
+Explanation: Testnet live tanpa audit publik. Audit timeline dan auditor tidak diumumkan. Mainnet launch gated oleh audit completion implied. Risk tinggi untuk mainnet launch tanpa audit.
+Evidence: Audit history tidak ditemukan audit publik【Phase 4 — Audit History】; Audit status belum diumumkan【Phase 4 — Audit History】; Ecosystem risk no security audit completed【Phase 7 — Ecosystem Risks】; Open threads audit status unknown【Phase 8 — Open Threads】.
+Supporting Dataset: Phase 4 (Technology), Phase 7 (Ecosystem), Phase 8 (Market)
+Confidence: HIGH
+
+Factor 3: Financial Dependency pada Series A Proceeds Saja — Tidak Ada Revenue, Tidak Ada Token Treasury, Tidak Ada Diversifikasi
+Explanation: Single known funding round $38M. Pre-revenue, pre-mainnet, pre-TGE. Treasury composition tidak diungkap. Runway bergantung sepenuhnya pada treasury management dari Series A proceeds. Tidak ada protocol revenue, grant funding, atau token sale sebagai buffer.
+Evidence: Funding history hanya Series A $38M terverifikasi【Phase 5 — Funding History】; Revenue history tidak diungkap【Phase 5 — Revenue History】; Treasury tidak diungkap【Phase 5 — Treasury】; Financial risk funding dependency【Phase 5 — Financial Risk】; Financial dependencies Series A investors primary【Phase 5 — Financial Dependencies】.
+Supporting Dataset: Phase 5 (Financial), Phase 8 (Market)
+Confidence: HIGH
+
+Factor 4: Tokenomics Uncertainty — Semua Parameter Unknown Hingga Mainnet Readiness
+Explanation: Total supply, allocation, vesting, utility, governance, inflation/deflation semua "belum dipublikasikan/resmi". TGE date tidak diumumkan. No community sale, public sale, launchpad announcement. Investor token allocation terms unknown. Community tidak bisa assess token economics.
+Evidence: Token contract belum deploy【Phase 1 — Token Contract】; Token information semua Unknown/Planned【Phase 6 — Token Information】; Supply semua tidak diketahui【Phase 6 — Supply】; Distribution semua planned persentase unknown【Phase 6 — Distribution】; Vesting semua tidak diketahui【Phase 6 — Vesting Schedule】; TGE tidak diumumkan【Phase 6 — TGE】; Governance semua unknown【Phase 6 — Governance】.
+Supporting Dataset: Phase 1 (Foundation), Phase 6 (Token), Phase 8 (Market)
+Confidence: HIGH
+
+Factor 5: Planned DA Layer Dependencies Not Live — Mainnet Launch Bergantung pada Minimal 1 DA Adapter Ready
+Explanation: Celestia, Avail, EigenDA integrations diumumkan tapi belum live di testnet Parthenon. Mainnet launch bergantung pada minimal satu DA adapter berfungsi. Technical complexity meningkat. DA layer selection menjadi governance decision post-TGE yang belum didefinisikan.
+Evidence: DA layer integration announcement EV-010【Phase 3 — EV-010】; DA layer adapters core component planned【Phase 4 — Core Components】; External dependencies 3 High Planned DA【Phase 7 — External Dependencies】; Major integrations 3 Planned DA Adapters【Phase 7 — Major Integrations】; Ecosystem risk planned DA layer dependencies not live【Phase 7 — Ecosystem Risks】.
+Supporting Dataset: Phase 3 (History), Phase 4 (Technology), Phase 7 (Ecosystem)
+Confidence: HIGH
+
+Factor 6: MEVM Compatibility Gaps — Tidak 100% Kompatibel EVM, Aplikasi Existing Mungkin Butuh Modifikasi
+Explanation: MEVM tidak 100% kompatibel EVM (precompiles tertentu, opcode spesifik, gas semantics mungkin berbeda). Aplikasi Ethereum existing mungkin butuh modifikasi untuk deploy di M1. Mengurangi value proposition "deploy tanpa modifikasi".
+Evidence: Known technical limitation MEVM kompatibilitas tidak 100%【Phase 4 — Known Technical Limitations】; Ecosystem risk MEVM compatibility gaps【Phase 7 — Ecosystem Risks】; Open threads MEVM compatibility test suite results unknown【Phase 8 — Open Threads】.
+Supporting Dataset: Phase 4 (Technology), Phase 7 (Ecosystem), Phase 8 (Market)
+Confidence: HIGH
+
+Factor 7: Governance Vacuum Pre-TGE — Upgrade Control di Movement Labs Inc., Tidak Ada On-Chain Governance
+Explanation: Semua protocol upgrades dikendalikan Movement Labs Inc. centralized. Tidak ada Foundation, DAO, Council. Governance model "Planned" tapi semua parameters unknown. Foundation formation unconfirmed. Transition ke on-chain governance post-TGE unplanned/unannounced.
+Evidence: Entity tidak ada Foundation/DAO【Phase 2 — Entity】; Governance semua Unknown/Planned【Phase 6 — Governance】; Governance ecosystem semua tidak ada【Phase 7 — Governance Ecosystem】; Security model upgradeability controlled by Movement Labs Inc.【Phase 4 — Security Model】; Open threads upgrade governance mechanism undefined【Phase 8 — Open Threads】.
+Supporting Dataset: Phase 2 (Entity), Phase 4 (Technology), Phase 6 (Token), Phase 7 (Ecosystem), Phase 8 (Market)
+Confidence: HIGH
+
+Factor 8: Regulatory Risk untuk Token Issuance — Delaware C-Corp, US Jurisdiction, Howey Test Uncertainty
+Explanation: Movement Labs Inc. Delaware C-Corp issuing token MOVE. US securities law (Howey test) applicability ke MOVE token belum diklarifikasi. Bisa mempengaruhi TGE dan operasi. Tokenomics delayed, no public sale announcement mungkin reflective of regulatory caution.
+Evidence: Entity Movement Labs Inc. Delaware C-Corp【Phase 2 — Entity】; Financial risk legal financial risk【Phase 5 — Financial Risk】; Token pre-TGE status maintained【Phase 6 — TGE】; Open threads regulatory compliance unknown【Phase 8 — Open Threads】.
+Supporting Dataset: Phase 2 (Entity), Phase 5 (Financial), Phase 6 (Token), Phase 8 (Market)
+Confidence: HIGH
+
+## Decision Framework
+
+Step 1: Observe — Identifikasi Peluang Teknis dan Market Gap
+Explanation: Founders mengidentifikasi peluang membawa Move language ke Ethereum melalui modular stack dengan EVM compatibility. MoveVM parallel execution + formal verification sebagai differentiator vs EVM. Ethereum L2 market growing tapi EVM-equivalent saturated.
+Evidence: Founding EV-001 2022【Phase 3 — EV-001】; Vision blog post EV-007 "Move-based modular blockchain stack"【Phase 3 — EV-007】; Narrative position Modular Blockchain, MoveVM, Ethereum L2 main narratives【Phase 8 — Narrative Position】.
+Supporting Dataset: Phase 3 (History), Phase 8 (Market)
+
+Step 2: Evaluate — Validasi Arsitektur Modular dengan Ethereum Settlement Anchor
+Explanation: Keputusan arsitektur: MoveVM execution layer, Ethereum settlement layer, pluggable DA layer, sequencer layer. Pilih Ethereum sebagai settlement anchor (bukan L1 kompetitor). Pilih MEVM transpiler approach (bukan EVM-equivalent). Pilih Rust untuk core implementation.
+Evidence: System architecture modular stack【Phase 4 — System Architecture】; Chain Ethereum L1 settlement【Phase 1 — Chain】; MEVM transpiler approach【Phase 4 — Execution Environment】; Programming languages Rust core【Phase 4 — Programming Languages】.
+Supporting Dataset: Phase 1 (Foundation), Phase 4 (Technology)
+
+Step 3: Fund — Series A $38M VC Funding untuk Capital Intensive Development
+Explanation: Raise $38M Series A 2024 dari undisclosed investors. Capital deployment ke team expansion (30+ orang), infrastructure, audit preparation, mainnet launch preparation. Post-funding immediate hiring 3 leadership roles.
+Evidence: Series A funding EV-006 2024【Phase 3 — EV-006】; Funding history Series A $38M【Phase 5 — Funding History】; Hiring EV-008 3 leadership roles【Phase 3 — EV-008】; Entity Sami Kassab, Arjun Krishan, Tanya Kumar【Phase 2 — Entity】.
+Supporting Dataset: Phase 3 (History), Phase 5 (Financial), Phase 2 (Entity)
+
+Step 4: Develop — Build Infrastructure, SDK, VM, MEVM, Testnet Secara Paralel
+Explanation: GitHub organization 2023, docs site 2024, Discord community 2023. Development: Movement SDK, MoveVM, MEVM, Movement CLI, TypeScript SDK. Testnet Parthenon launch 2024-07-30 dengan centralized sequencer, Ethereum testnet settlement, MEVM RPC.
+Evidence: GitHub EV-003, Docs EV-004, Discord EV-005【Phase 3 — EV-003, EV-004, EV-005】; Core components MoveVM, MEVM, Movement SDK【Phase 4 — Core Components】; Parthenon testnet launch EV-009【Phase 3 — EV-009】; Technical upgrade history Parthenon launch【Phase 4 — Technical Upgrade History】.
+Supporting Dataset: Phase 3 (History), Phase 4 (Technology)
+
+Step 5: Launch — Testnet-First Public Launch Sebelum Mainnet Readiness Complete
+Explanation: Parthenon testnet live 2024-07-30 dengan known limitations (centralized sequencer, no audit, no DA adapters live, no decentralized sequencing). Developer feedback collection, narrative momentum, infrastructure validation. Mainnet launch target belum diumumkan.
+Evidence: Parthenon testnet launch EV-009【Phase 3 — EV-009】; Consensus mechanism centralized testnet planned decentralized【Phase 4 — Consensus Mechanism】; Audit history no public audit【Phase 4 — Audit History】; DA adapters planned not live【Phase 7 — Major Integrations】; Market timeline mainnet launch unscheduled【Phase 8 — Market Timeline】.
+Supporting Dataset: Phase 3 (History), Phase 4 (Technology), Phase 7 (Ecosystem), Phase 8 (Market)
+
+Step 6: Partner — Announce Pluggable DA Layer Integrations (Celestia, Avail, EigenDA)
+Explanation: Announce 3 DA layer integrations sebagai planned roadmap. DA adapters sebagai SDK modules. Tidak commit ke single DA. Narrative completeness, ecosystem breadth. Technical implementation in progress.
+Evidence: DA layer integration announcement EV-010【Phase 3 — EV-010】; DA Layer Adapters core component【Phase 4 — Core Components】; External dependencies 3 High Planned DA【Phase 7 — External Dependencies】; Major integrations 3 Planned DA Adapters【Phase 7 — Major Integrations】.
+Supporting Dataset: Phase 3 (History), Phase 4 (Technology), Phase 7 (Ecosystem)
+
+Step 7: Govern — Delay Tokenomics dan Governance Hingga Post-Mainnet Readiness
+Explanation: Token MOVE pre-TGE, semua tokenomics unknown. No Foundation, no DAO, no on-chain governance. Upgrade control di Movement Labs Inc. Regulatory caution untuk Delaware C-Corp. Foundation formation unconfirmed.

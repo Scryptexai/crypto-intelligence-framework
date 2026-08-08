@@ -1,0 +1,209 @@
+PROJECT: Ethena
+
+## Core Insights
+
+Insight 1: Delta-neutral Synthetic Dollar Bisa Mencapai Product-Market Fit Cepat dengan Pendekatan "Mainnet-First" dan Composability-First
+Explanation: Ethena meluncurkan USDe + sUSDe bersamaan di mainnet Ethereum (19 Feb 2024) setelah private beta 1 bulan, langsung mencapai TVL $3.4B puncak dalam 6 bulan. Kunci: sUSDe dirancang sebagai ERC-4626 yield primitive dari hari pertama, memungkinkan integrasi batch ke 7 protokol DeFi mayor (Pendle, Morpho, Aave, Curve, Equilibria, Ethereal, Spectra) dalam 2 bulan【Phase 3 — EV-005】【Phase 3 — EV-006】【Phase 3 — EV-016 to EV-023】【Phase 7 — Major Integrations】.
+Evidence: TVL peak $3.4B Agustus 2024【Phase 3 — EV-029】; 70-75% USDe supply di-stake ke sUSDe【Phase 8 — Adoption Metrics】; integrasi lending, yield tokenization, stableswap, margin trading live Q2 2024【Phase 3 — EV-016 to EV-023】.
+Supporting Dataset: Phase 3 History, Phase 7 Ecosystem, Phase 8 Market.
+Confidence: HIGH
+
+Insight 2: Strategic Investor Selection sebagai Operational Partner Mengurangi Fundraising Rounds dan Mempercepat Go-to-Market
+Explanation: Hanya 1 ronde Series A $14M (2023) dengan 7 investor yang masing-masing menyediakan infrastructure kritis: Deribit/Bybit/OKX/Binance (hedging venue liquidity), Wintermute/GSR (market making), Copper/Fireblocks (custody), Dragonfly (strategic), Arthur Hayes (advisor). Tidak ada ronde tambahan diperlukan hingga TGE【Phase 2 — Entity (Investors)】【Phase 3 — EV-002】【Phase 5 — Funding History】【Phase 5 — Financial Dependencies】.
+Evidence: The Block report investor list + subsequent integration announcements【Phase 2 — Entity】; hedging engine docs menyebut CEX partners【Phase 4 — Core Components (Hedging Engine)】; custody integrations EV-027, EV-028【Phase 3 — EV-027】【Phase 3 — EV-028】.
+Supporting Dataset: Phase 2 Entity, Phase 3 History, Phase 5 Financial, Phase 7 Ecosystem.
+Confidence: HIGH
+
+Insight 3: Governance-First Token Launch (DAO Active at TGE) Menciptakan Legitimasi Cepat tapi Membutuhkan Treasury Transparency
+Explanation: ENA TGE (2 Apr 2024) bersamaan peluncuran Ethena DAO di Snapshot + timelock 48h. Parameter update pertama (insurance fund, funding rate cap) dieksekusi Agustus 2024 via governance【Phase 3 — EV-011】【Phase 3 — EV-012】【Phase 3 — EV-030】. Namun treasury composition, burn rate, insurance fund size real-time tidak dipublikasikan【Phase 5 — Treasury】【Phase 5 — Official Financial Resources】.
+Evidence: Snapshot space ethena.eth live TGE day【Phase 3 — EV-012】; proposal executed Aug 2024【Phase 3 — EV-030】; no transparency report/treasury dashboard【Phase 5 — Treasury】.
+Supporting Dataset: Phase 3 History, Phase 5 Financial, Phase 6 Token.
+Confidence: HIGH
+
+Insight 4: Hybrid Off-chain Hedging + On-chain Settlement Menciptakan Scalability tapi Menyisakan Centralized Execution Risk
+Explanation: Hedging engine (short perp futures) dijalankan off-chain oleh tim/market maker (Wintermute, GSR) via API CEX (Deribit, Bybit, OKX, Binance); mint/redeem/settlement on-chain via smart contract【Phase 4 — Core Components (Hedging Engine)】【Phase 4 — Known Technical Limitations】. Memungkinkan skalabilitas & kecepatan tapi dependency pada CEX API, counterparty risk, dan trust pada executor【Phase 4 — Known Technical Limitations】【Phase 2 — Entity (Deribit, Bybit, Wintermute, GSR)】.
+Evidence: Architecture docs hedging engine off-chain【Phase 4 — Core Components】; CEX partners as investors + hedging venues【Phase 2 — Entity】; risk docs mention centralized execution dependency【Phase 4 — Known Technical Limitations】.
+Supporting Dataset: Phase 4 Technology, Phase 2 Entity, Phase 5 Financial Dependencies.
+Confidence: HIGH
+
+Insight 5: LayerZero OFT untuk EVM + Wormhole untuk Non-EVM Menjadi Pattern Cross-chain Dominan untuk Token Utility
+Explanation: Deploy native cross-chain via LayerZero OFT ke 6 EVM chain (Arbitrum, Optimism, Base, Mantle, BNB Chain) simultan Maret 2024; wrapped token via Wormhole ke Solana Mei 2024【Phase 3 — EV-007】【Phase 3 — EV-008】【Phase 3 — EV-009】【Phase 3 — EV-021】. Pattern ini diadopsi banyak protokol pasca-Ethena (seperti LayerZero showcase)【Phase 4 — Cross-chain Messaging】【Phase 7 — Infrastructure Providers】.
+Evidence: Blog LayerZero integration【Phase 3 — EV-007】; deployment 6 EVM chain March 2024【Phase 3 — EV-008】【Phase 3 — EV-009】; Wormhole scan Solana deployment【Phase 3 — EV-021】.
+Supporting Dataset: Phase 3 History, Phase 4 Technology, Phase 7 Ecosystem.
+Confidence: HIGH
+
+Insight 6: Triple Audit Strategy (Core, Cross-chain, Governance) Menjadi Security Standard Baru untuk Protokol Multi-chain Kompleks
+Explanation: OpenZeppelin (core contracts), Zellic (cross-chain LayerZero/Wormhole), Spearbit (governance/upgrades) — ketiga audit dipublikasikan Juni 2024【Phase 3 — EV-024】【Phase 3 — EV-025】【Phase 3 — EV-026】【Phase 4 — Audit History】. Scope specialization memperbaiki coverage gaps yang sering terlewat single auditor.
+Evidence: Three audit reports published June 2024 with distinct scopes【Phase 3 — EV-024】【Phase 3 — EV-025】【Phase 3 — EV-026】; GitHub audits repo【Phase 4 — Audit History】.
+Supporting Dataset: Phase 3 History, Phase 4 Technology.
+Confidence: HIGH
+
+Insight 7: Seasonal Incentive Campaigns (Season 1 Airdrop → Season 2 "Sats") Menjadi Flywheel Adoption Post-TGE
+Explanation: Season 1 (5% supply airdrop pre-TGE) mendorong early adoption; Season 2 "Sats" (Oct 2024) multi-chain incentives dengan ENA rewards untuk LP/user partner protokol【Phase 3 — EV-011】【Phase 3 — EV-031】【Phase 6 — Vesting Schedule (Community)】. Pattern ini maintain supply stability pasca-peak ($2.5-3B range)【Phase 3 — EV-032】【Phase 8 — Adoption Metrics】.
+Evidence: Tokenomics blog Season 1 5% unlocked TGE【Phase 3 — EV-011】; Season 2 launch Oct 2024【Phase 3 — EV-031】; supply stable post-peak【Phase 3 — EV-032】.
+Supporting Dataset: Phase 3 History, Phase 6 Token, Phase 8 Market.
+Confidence: HIGH
+
+Insight 8: sUSDe sebagai ERC-4626 Non-rebasing Vault Menjadi Yield Primitive yang Kompatibel Seluruh DeFi Stack
+Explanation: Desain sUSDe sebagai ERC-4626 vault non-rebasing (share price naik) memungkinkan integrasi native ke lending (Aave, Morpho), yield tokenization (Pendle, Spectra, Equilibria), margin trading (Ethereal) tanpa wrapper tambahan【Phase 4 — Core Components (sUSDe Staking Contract)】【Phase 3 — EV-006】【Phase 7 — Major Integrations】. Menjadi "Internet Bond" yang composable.
+Evidence: Docs sUSDe ERC-4626【Phase 4 — Core Components】; 7 integrations live Q2 2024【Phase 3 — EV-016 to EV-023】; ecosystem page shows composability【Phase 7 — Applications】.
+Supporting Dataset: Phase 4 Technology, Phase 3 History, Phase 7 Ecosystem.
+Confidence: HIGH
+
+Insight 9: Fixed Supply Token (100M ENA) dengan No Inflation + Protocol Revenue Model Menciptakan Alignment Jangka Panjang tapi Membutuhkan Fee Switch untuk Value Accrual
+Explanation: ENA fixed supply 100M, full mint TGE, no emission/burn【Phase 6 — Inflation/Deflation】. Revenue dari funding rate yield + mint/redeem fees dialokasikan ke sUSDe staker + insurance fund + DAO treasury【Phase 5 — Revenue Model】. Fee switch proposal (EV-033 Dec 2024) untuk channel revenue ke ENA staker masih diskusi【Phase 3 — EV-033】【Phase 6 — Utility】.
+Evidence: Tokenomics blog fixed supply【Phase 6 — Inflation/Deflation】; revenue model docs【Phase 5 — Revenue Model】; fee switch proposal discussion【Phase 3 — EV-033】.
+Supporting Dataset: Phase 5 Financial, Phase 6 Token, Phase 3 History.
+Confidence: HIGH
+
+Insight 10: Parallel Execution Across All Tracks (Tech, BD, Legal, Marketing) Menjadi Kecepatan Eksekusi Unik Ethena
+Explanation: Setiap milestone major diikuti simultaneous execution: mainnet launch + sUSDe + blog + docs (Feb); TGE + DAO + CEX listings + Launchpool (Apr); 7 DeFi integrations batch (Apr-May); triple audit (Jun); custody dual (Jul)【Phase 3 — all events】【Phase 8 — Market Timeline】. Clustering events dalam minggu/bulan yang sama menunjukkan organizational capacity tinggi.
+Evidence: Timeline Phase 3 shows event clustering【Phase 3 — all EV-004 to EV-033】; Market Timeline Phase 8 confirms parallel milestones【Phase 8 — Market Timeline】.
+Supporting Dataset: Phase 3 History, Phase 8 Market.
+Confidence: HIGH
+
+## Strategic Principles
+
+Principle 1: Composability-First Product Design
+Explanation: sUSDe dirancang dari awal sebagai ERC-4626 yield primitive yang compatible dengan seluruh DeFi stack (lending, yield tokenization, stableswap, margin). Tidak membangun walled garden tapi menjadikan produk sebagai building block【Phase 4 — Core Components (sUSDe Staking Contract)】【Phase 7 — Major Integrations】.
+Evidence: 7 integrations live dalam 2 bulan post-mainnet【Phase 3 — EV-016 to EV-023】; ecosystem page terpusat【Phase 7 — Ecosystem】.
+Supporting Dataset: Phase 4 Technology, Phase 7 Ecosystem, Phase 3 History.
+Confidence: HIGH
+
+Principle 2: Strategic Investor = Operational Partner
+Explanation: Memilih investor yang menyediakan infrastructure kritis, bukan hanya capital. Deribit/Bybit/OKX = hedging venue; Wintermute/GSR = market making; Copper/Fireblocks = custody; Dragonfly = strategic; Arthur Hayes = advisor【Phase 2 — Entity (Investors)】【Phase 5 — Financial Dependencies】【Phase 7 — Infrastructure Providers】.
+Evidence: Investor list matches subsequent integration announcements【Phase 2 — Entity】【Phase 3 — EV-002】; hedging engine docs cite CEX partners【Phase 4 — Core Components】.
+Supporting Dataset: Phase 2 Entity, Phase 5 Financial, Phase 7 Ecosystem.
+Confidence: HIGH
+
+Principle 3: Progressive Decentralization dengan Governance Active at TGE
+Explanation: DAO + timelock + Snapshot live hari TGE yang sama (2 Apr 2024), bukan delay 6-12 bulan seperti banyak protokol. Parameter risk (insurance fund, funding rate cap) pertama dieksekusi via governance Agustus 2024【Phase 3 — EV-011】【Phase 3 — EV-012】【Phase 3 — EV-030】【Phase 6 — Governance】.
+Evidence: Snapshot space created TGE day【Phase 3 — EV-012】; first parameter proposal executed Aug 2024【Phase 3 — EV-030】.
+Supporting Dataset: Phase 3 History, Phase 6 Token.
+Confidence: HIGH
+
+Principle 4: Multi-chain Native via LayerZero OFT (EVM) + Wormhole (Non-EVM)
+Explanation: Tidak menggunakan wrapped token di EVM chains; adopsi LayerZero OFT standard untuk native cross-chain transfer. Non-EVM (Solana) via Wormhole wrapped sebagai interim【Phase 3 — EV-007】【Phase 3 — EV-008】【Phase 3 — EV-021】【Phase 4 — Cross-chain Messaging】.
+Evidence: Blog LayerZero integration【Phase 3 — EV-007】; 6 EVM chain deployment March 2024【Phase 3 — EV-008】【Phase 3 — EV-009】; Wormhole Solana May 2024【Phase 3 — EV-021】.
+Supporting Dataset: Phase 3 History, Phase 4 Technology, Phase 7 Ecosystem.
+Confidence: HIGH
+
+Principle 5: Security via Specialized Multi-audit + Upgradeability Controls
+Explanation: Triple audit dengan scope specialization (core, cross-chain, governance). UUPS upgradeable contracts dengan timelock 48h + governance approval. Emergency pause via multisig【Phase 3 — EV-024 to EV-026】【Phase 4 — Security Model】【Phase 4 — Audit History】.
+Evidence: Three audit reports June 2024 distinct scopes【Phase 3 — EV-024】【Phase 3 — EV-025】【Phase 3 — EV-026】; UUPS + timelock documented【Phase 4 — Security Model】.
+Supporting Dataset: Phase 3 History, Phase 4 Technology.
+Confidence: HIGH
+
+Principle 6: Crypto-native Yield (Funding Rate) sebagai Differentiator vs RWA/TradFi Yield
+Explanation: Explisit positioning "crypto-native", "delta-neutral", no Treasury/RWA collateral. Yield dari funding rate perpetual futures, permissionless, censorship-resistant【Phase 1 — Foundation】【Phase 4 — Core Components (Hedging Engine)】【Phase 8 — Narrative Position (RWA: Not Applicable)】.
+Evidence: Blog introducing Ethena vision【Phase 1 — Foundation】; hedging engine architecture【Phase 4 — Core Components】; narrative analysis no RWA exposure【Phase 8 — Narrative Position】.
+Supporting Dataset: Phase 1 Foundation, Phase 4 Technology, Phase 8 Market.
+Confidence: HIGH
+
+Principle 7: Institutional Onboarding via Custody Integration Sebelum Volume Besar
+Explanation: Integrasi Copper ClearLoop dan Fireblocks (Jul 2024) sebelum institutional volume peak, mempersiapkan compliance & workflow grade institutional【Phase 3 — EV-027】【Phase 3 — EV-028】【Phase 7 — Infrastructure Providers】.
+Evidence: Blog institutional onboarding July 2024【Phase 3 — EV-027】【Phase 3 — EV-028】; custody providers listed【Phase 7 — Infrastructure Providers】.
+Supporting Dataset: Phase 3 History, Phase 7 Ecosystem.
+Confidence: HIGH
+
+Principle 8: Seasonal Incentive Flywheel untuk Sustainable Adoption
+Explanation: Season 1 airdrop (pre-TGE) → Season 2 "Sats" (post-peak multi-chain) → planned Season 3. ENA rewards via DAO proposals, tidak hardcoded emission【Phase 3 — EV-011】【Phase 3 — EV-031】【Phase 6 — Vesting Schedule (Community)】【Phase 6 — Utility】.
+Evidence: Tokenomics Season 1 5% unlocked TGE【Phase 3 — EV-011】; Season 2 launch Oct 2024【Phase 3 — EV-031】; governance proposals for allocation【Phase 6 — Governance】.
+Supporting Dataset: Phase 3 History, Phase 6 Token.
+Confidence: HIGH
+
+## Success Factors
+
+Factor 1: Timing Launch di Early Bull Market (Q1 2024) dengan Funding Rate Positif Tinggi
+Explanation: Mainnet launch Feb 2024 menangkap bull market cycle; funding rate ETH positif tinggi → sUSDe APR 15-30%+ awal → menarik capital cepat. TVL naik dari $0 ke $3.4B dalam 6 bulan【Phase 3 — EV-005】【Phase 3 — EV-029】【Phase 8 — Adoption Metrics (sUSDe Yield)】.
+Evidence: Launch date Feb 19 2024【Phase 3 — EV-005】; TVL peak Aug 2024 $3.4B【Phase 3 — EV-029】; sUSDe APR peaked ~30%+ bull market【Phase 8 — Adoption Metrics】.
+Supporting Dataset: Phase 3 History, Phase 8 Market.
+Confidence: HIGH
+
+Factor 2: Deep DeFi Composability dari Hari Pertama (sUSDe sebagai Primitive)
+Explanation: sUSDe ERC-4626 design memungkinkan integrasi native ke Aave, Morpho, Pendle, Curve, Equilibria, Ethereal, Spectra tanpa friction. Menjadi collateral/yield standard di DeFi → protocol stickiness tinggi【Phase 3 — EV-016 to EV-023】【Phase 7 — Major Integrations】【Phase 4 — Core Components (sUSDe Staking Contract)】.
+Evidence: 7 major integrations live Q2 2024【Phase 3 — EV-016 to EV-023】; ecosystem page shows deep stack integration【Phase 7 — Applications】.
+Supporting Dataset: Phase 3 History, Phase 7 Ecosystem, Phase 4 Technology.
+Confidence: HIGH
+
+Factor 3: Strategic Investor Syndicate Menyediakan Infrastructure Kritis Day-1
+Explanation: Series A investors = hedging venues (Deribit, Bybit, OKX), market makers (Wintermute, GSR), custody (Copper, Fireblocks). Mengeliminasi bootstrap liquidity & infrastructure problems yang menghambat protokol lain【Phase 2 — Entity (Investors)】【Phase 5 — Financial Dependencies】【Phase 7 — Infrastructure Providers】.
+Evidence: Investor list + subsequent integrations match perfectly【Phase 2 — Entity】【Phase 3 — EV-002】; hedging engine operational at launch【Phase 4 — Core Components】.
+Supporting Dataset: Phase 2 Entity, Phase 3 History, Phase 5 Financial, Phase 7 Ecosystem.
+Confidence: HIGH
+
+Factor 4: Aggressive Multi-chain Deployment (7 Chains in 3 Months) Menjauhkan Kompetitor
+Explanation: Deploy full protocol (USDe, sUSDe, ENA) ke 6 EVM + Solana Mar-Mei 2024. LayerZero OFT native di EVM, Wormhole wrapped di Solana. First-mover advantage multi-chain synthetic dollar【Phase 3 — EV-008】【Phase 3 — EV-009】【Phase 3 — EV-021】【Phase 7 — Infrastructure Providers】.
+Evidence: 6 EVM chain deployment March 2024【Phase 3 — EV-008】【Phase 3 — EV-009】; Solana May 2024【Phase 3 — EV-021】; competitor analysis shows Ethena largest delta-neutral stablecoin【Phase 8 — Market Share】.
+Supporting Dataset: Phase 3 History, Phase 7 Ecosystem, Phase 8 Market.
+Confidence: HIGH
+
+Factor 5: Governance-First Launch Menciptakan Legitimasi & Community Ownership Cepat
+Explanation: DAO active at TGE (Apr 2), first parameter proposal executed Aug 2024. Community 30% allocation + seasonal incentives → aligned incentives. Fee switch proposal (Dec 2024) shows governance maturity【Phase 3 — EV-011】【Phase 3 — EV-012】【Phase 3 — EV-030】【Phase 3 — EV-033】【Phase 6 — Governance】.
+Evidence: Snapshot live TGE day【Phase 3 — EV-012】; parameter update executed【Phase 3 — EV-030】; fee switch discussion【Phase 3 — EV-033】.
+Supporting Dataset: Phase 3 History, Phase 6 Token.
+Confidence: HIGH
+
+Factor 6: Triple Audit Specialization Memberikan Confidence Tinggi untuk TVL Besar
+Explanation: OpenZeppelin (core), Zellic (cross-chain), Spearbit (governance) — scope specialization covers semua attack surface. Audit reports published Jun 2024 sebelum TVL peak Aug 2024【Phase 3 — EV-024 to EV-026】【Phase 4 — Audit History】.
+Evidence: Three distinct audit reports June 2024【Phase 3 — EV-024】【Phase 3 — EV-025】【Phase 3 — EV-026】; TVL peak after audits【Phase 3 — EV-029】.
+Supporting Dataset: Phase 3 History, Phase 4 Technology.
+Confidence: HIGH
+
+Factor 7: CEX Listings Batch (Binance, Coinbase, Kraken) dalam Minggu TGE Memberikan Liquidity Immediate
+Explanation: Coordinated listings top 3 global exchanges + Binance Launchpool farming same week as TGE. Deep liquidity immediate, price discovery efficient, retail access global + US regulated【Phase 3 — EV-013】【Phase 3 — EV-014】【Phase 3 — EV-015】【Phase 8 — Trading Markets】.
+Evidence: Binance Launchpool + spot same day TGE【Phase 3 — EV-013】; Coinbase/Kraken announcements April 2024【Phase 3 — EV-014】【Phase 3 — EV-015】.
+Supporting Dataset: Phase 3 History, Phase 8 Market.
+Confidence: HIGH
+
+Factor 8: Narrative Clarity: "Internet Bond" / Synthetic Dollar / Crypto-native Yield
+Explanation: Consistent positioning sejak blog pertama (2023) melalui semua marketing: delta-neutral, censorship-resistant, crypto-native yield. Tidak pivot narrative, tidak chase RWA/AI/DePIN trends【Phase 1 — Foundation】【Phase 8 — Narrative Position】【Phase 3 — EV-003】.
+Evidence: Blog introducing Ethena vision【Phase 1 — Foundation】; narrative analysis shows consistent main narratives【Phase 8 — Narrative Position】.
+Supporting Dataset: Phase 1 Foundation, Phase 8 Market, Phase 3 History.
+Confidence: HIGH
+
+## Failure Factors
+
+Factor 1: Treasury Opacity — Tidak Ada Transparency Report, Burn Rate, Runway, Insurance Fund Size Real-time
+Explanation: Tidak mempublikasikan treasury composition, burn rate bulanan, runway berbasis $14M Series A, insurance fund size real-time. Membuat stakeholder tidak bisa assess financial health & sustainability【Phase 5 — Treasury】【Phase 5 — Official Financial Resources】【Phase 5 — Financial Risk (Treasury Concentration Risk)】.
+Evidence: No transparency report/treasury dashboard found【Phase 5 — Treasury】; financial resources list no treasury dashboard【Phase 5 — Official Financial Resources】; risk identified【Phase 5 — Financial Risk】.
+Supporting Dataset: Phase 5 Financial.
+Confidence: HIGH
+
+Factor 2: Centralized Hedging Execution Dependency (Off-chain Engine, CEX API, Market Maker Trust)
+Explanation: Hedging engine off-chain dioperasikan tim/market maker via CEX API. Jika CEX freeze account, API down, regulatory action → hedging gagal → protocol risk. Tidak fully on-chain automated【Phase 4 — Core Components (Hedging Engine)】【Phase 4 — Known Technical Limitations】【Phase 5 — Financial Risk (CEX Counterparty Risk)】.
+Evidence: Architecture docs hedging engine off-chain【Phase 4 — Core Components】; risk docs confirm centralized execution dependency【Phase 4 — Known Technical Limitations】; financial risk cites CEX counterparty【Phase 5 — Financial Risk】.
+Supporting Dataset: Phase 4 Technology, Phase 5 Financial.
+Confidence: HIGH
+
+Factor 3: Cross-chain Bridge Risk (LayerZero DVN Config + Wormhole Guardian Set) Menambah Trust Assumptions
+Explanation: LayerZero OFT menggunakan DVN custom config; Wormhole Solana menggunakan Guardian Set 19 guardian. Bridge exploit bisa menciptakan unbacked USDe/ENA di chain tujuan. Audit Zellic cover cross-chain tapi runtime risk remains【Phase 4 — Cross-chain Messaging】【Phase 4 — Known Technical Limitations】【Phase 3 — EV-025】.
+Evidence: Cross-chain messaging docs【Phase 4 — Cross-chain Messaging】; known limitations list bridge exploit risk【Phase 4 — Known Technical Limitations】; Zellic audit scope cross-chain【Phase 3 — EV-025】.
+Supporting Dataset: Phase 4 Technology, Phase 3 History.
+Confidence: HIGH
+
+Factor 4: Negative Funding Rate Risk Tanpa Hedge Perfect — Insurance Fund Size Tidak Transparan
+Explanation: Protocol yield bergantung funding rate positif. Bear market → funding rate negatif berkelanjutan → yield sUSDe turun, insurance fund terserang. Insurance fund size real-time tidak di-surfacing di dashboard【Phase 5 — Revenue Model】【Phase 5 — Financial Risk (Revenue Decline, Insurance Fund Insufficiency)】【Phase 4 — Core Components (Insurance Fund Contract)】.
+Evidence: Revenue model docs【Phase 5 — Revenue Model】; financial risk identifies revenue decline + insurance fund insufficiency【Phase 5 — Financial Risk】; insurance fund contract exists but not surfaced【Phase 4 — Core Components】.
+Supporting Dataset: Phase 5 Financial, Phase 4 Technology.
+Confidence: HIGH
+
+Factor 5: stETH Depeg Risk pada Collateral — Tidak Ada Hedge Terpisah untuk stETH/ETH Basis Risk
+Explanation: Collateral utama stETH memiliki risiko depeg dari ETH (seperti Juni 2022). Mempengaruhi delta-neutrality dan collateral value. Docs mention risk tapi tidak ada mitigation khusus【Phase 4 — Known Technical Limitations】【Phase 4 — Core Components (Collateral Vaults)】.
+Evidence: Known limitations list stETH depeg risk【Phase 4 — Known Technical Limitations】; collateral vaults multi-asset include stETH【Phase 4 — Core Components】.
+Supporting Dataset: Phase 4 Technology.
+Confidence: HIGH
+
+Factor 6: Upgradeability Risk — UUPS + Timelock + Governance Bisa Dikompromikan
+Explanation: Semua core contracts upgradeable via UUPS proxy. Jika governance terkompromi atau timelock dibypass (social engineering, key compromise), contracts bisa di-upgrade ke versi malicious【Phase 4 — Security Model】【Phase 4 — Known Technical Limitations】.
+Evidence: Security model UUPS + timelock【Phase 4 — Security Model】; known limitations upgradeability risk【Phase 4 — Known Technical Limitations】.
+Supporting Dataset: Phase 4 Technology.
+Confidence: HIGH
+
+Factor 7: Solana Deployment via Wrapped Token (Wormhole) — Tidak Native, Tidak Ada Hedging Engine Lokal
+Explanation: USDe/ENA di Solana adalah wrapped token via Wormhole bridge. Menambah bridge risk, tidak memiliki hedging engine native di Solana, tidak bisa mint/redeem native di Solana【Phase 3 — EV-021】【Phase 4 — Cross-chain Messaging】【Phase 4 — Known Technical Limitations】.
+Evidence: Wormhole wrapped deployment May 2024【Phase 3 — EV-021】; cross-chain messaging docs【Phase 4 — Cross-chain Messaging】; known limitations Solana wrapped risk【Phase 4 — Known Technical Limitations】.
+Supporting Dataset: Phase 3 History, Phase 4 Technology.
+Confidence: HIGH
+
+Factor

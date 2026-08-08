@@ -1,0 +1,660 @@
+PROJECT: Notcoin
+
+Event ID
+
+EV-001
+
+Date
+
+2023-11
+
+Event Name
+
+Pendirian Open Builders dan Konsep Awal Notcoin
+
+Event Type
+
+Founding
+
+Description
+
+Tim inti (Sasha Plotnikov dan Mad Tail) membentuk Open Builders dan mulai mengembangkan konsep game tap-to-earn di Telegram Mini App. Pengembangan dilakukan secara internal tanpa announcement publik.
+
+Participants
+
+Open Builders, Sasha Plotnikov, Mad Tail
+
+Location
+
+Tidak diumumkan (tim terdistribusi global)
+
+Status
+
+Completed
+
+Immediate Result
+
+Entitas pengembang resmi terbentuk; arsitektur awal game dan smart contract TON dirancang.
+
+Sources
+
+https://notcoin.com/blog/notcoin-launch
+
+---
+
+Event ID
+
+EV-002
+
+Date
+
+2024-01-01
+
+Event Name
+
+Peluncuran Notcoin Game di Telegram (Mainnet)
+
+Event Type
+
+Launch
+
+Description
+
+Notcoin Mini App resmi diluncurkan di Telegram pada blok TON tinggi 29,000,000 (sekitar 1 Januari 2024). Pengguna mulai menambang (tap) NOT off-chain dalam database game. Tidak ada token on-chain saat peluncuran.
+
+Participants
+
+Open Builders, Telegram, The Open Network (TON)
+
+Location
+
+Telegram Mini App Platform (Global)
+
+Status
+
+Completed
+
+Immediate Result
+
+Game langsung viral; mencapai 1 juta pengguna dalam 2 minggu dan 35 juta pengguna pada puncak mining phase.
+
+Sources
+
+https://notcoin.com/blog/notcoin-launch
+
+---
+
+Event ID
+
+EV-003
+
+Date
+
+2024-03
+
+Event Name
+
+Pencapaian 35 Juta Pengguna dan Kolaborasi Ekosistem TON
+
+Event Type
+
+Community
+
+Description
+
+Notcoin melaporkan basis pengguna aktif mencapai 35 juta. Kolaborasi dengan TON Foundation, Tonkeeper, dan Getgems diumumkan untuk persiapan transisi on-chain (NFT voucher, wallet integration).
+
+Participants
+
+Open Builders, TON Foundation, Tonkeeper, Getgems, Telegram
+
+Location
+
+Global (Telegram / TON Ecosystem)
+
+Status
+
+Completed
+
+Immediate Result
+
+Validasi product-market fit; infrastruktur on-chain (Jetton, NFT, Account Abstraction) dipersiapkan untuk TGE.
+
+Sources
+
+https://notcoin.com/blog/35-million-users
+
+---
+
+Event ID
+
+EV-004
+
+Date
+
+2024-04-01
+
+Event Name
+
+Berakhirnya Fase Mining (Tap-to-Earn) dan Announcement Tokenomics
+
+Event Type
+
+Product
+
+Description
+
+Fase "mining" off-chain resmi berakhir pada 1 April 2024. Tim mengumumkan total supply 102,719,221,714 NOT; alokasi 78% untuk komunitas (miners), 22% untuk tim & ekosistem. Snapshot saldo pengguna diambil untuk konversi on-chain.
+
+Participants
+
+Open Builders, Notcoin Community
+
+Location
+
+Telegram Mini App / Notcoin Blog
+
+Status
+
+Completed
+
+Immediate Result
+
+Penambangan off-chain dihentikan; persiapan minting Jetton NOT dan distribusi ke wallet pengguna dimulai.
+
+Sources
+
+https://notcoin.com/blog/mining-end
+
+---
+
+Event ID
+
+EV-005
+
+Date
+
+2024-05-16
+
+Event Name
+
+Token Generation Event (TGE) dan Listing Perdana di CEX
+
+Event Type
+
+Token
+
+Description
+
+Token NOT (Jetton di TON) di-mint dan diklaim oleh pengguna via Notcoin Wallet / Tonkeeper. Listing serentak di Binance (Launchpool & Spot), Bybit, OKX, Gate.io, KuCoin, dan DEX Dedust.io & Ston.fi. Harga pembukaan ~$0.005 - $0.01.
+
+Participants
+
+Open Builders, Binance, Bybit, OKX, Dedust.io, Ston.fi, Tonkeeper, The Open Network (TON), Notcoin Community
+
+Location
+
+Global (CEX & DEX TON)
+
+Status
+
+Completed
+
+Immediate Result
+
+Token NOT menjadi liquid dan tradeable; market cap mencapai >$1.5M dalam hitungan jam; >11 juta wallet unik mengklaim token on-chain pada hari pertama.
+
+Sources
+
+https://www.binance.com/en/support/announcement/notcoin-not-listing
+
+---
+
+Event ID
+
+EV-006
+
+Date
+
+2024-05-16
+
+Event Name
+
+Peluncuran Notcoin Explore (Discovery Platform)
+
+Event Type
+
+Product
+
+Description
+
+Bersamaan TGE, Notcoin meluncurkan "Explore" — platform discovery untuk Mini App lain di ekosistem TON/Telegram, memungkinkan proyek lain menjalankan kampanye reward (Earn) bagi pemegang NOT.
+
+Participants
+
+Open Builders, TON Foundation, Notcoin Community
+
+Location
+
+https://notcoin.com/explore (Telegram Web App)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Notcoin bertransisi dari single-game menjadi platform ekosistem; kampanye Earn pertama (Notcoin x TON) dimulai segera setelahnya.
+
+Sources
+
+https://notcoin.com/blog/explore-launch
+
+---
+
+Event ID
+
+EV-007
+
+Date
+
+2024-06
+
+Event Name
+
+Kampanye Notcoin Genesis NFT di Getgems
+
+Event Type
+
+Ecosystem
+
+Description
+
+Kolaborasi dengan Getgems meluncurkan koleksi NFT "Notcoin Genesis" (voucher NFT) untuk early miners dan komunitas. NFT memberikan akses eksklusif ke fitur Explore/Earn dan governance weight di masa depan.
+
+Participants
+
+Open Builders, Getgems, Notcoin Community
+
+Location
+
+Getgems Marketplace (TON)
+
+Status
+
+Completed
+
+Immediate Result
+
+>500.000 NFT di-mint/distribusikan; memperkuat retensi pengguna pasca-TGE dan menguji infrastruktur NFT TON.
+
+Sources
+
+https://getgems.io/collection/Notcoin
+
+---
+
+Event ID
+
+EV-008
+
+Date
+
+2024-07
+
+Event Name
+
+Peluncuran Notcoin Earn (On-chain Reward Campaigns)
+
+Event Type
+
+Product
+
+Description
+
+Fitur "Earn" resmi dibuka di Explore, memungkinkan proyek TON (mis. Tonstakers, TonWhales, bemo) mendistribusikan token mereka ke pemegang NOT melalui quest on-chain (staking, swap, hold). Notcoin memotong fee kecil dari reward pool.
+
+Participants
+
+Open Builders, Tonstakers, bemo, TonWhales, Notcoin Community
+
+Location
+
+Notcoin Explore / Telegram Mini App
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Menciptakan utility request untuk token NOT (hold/buy untuk ikut Earn); volume DEX NOT/TON meningkat signifikan.
+
+Sources
+
+https://notcoin.com/blog/earn-launch
+
+---
+
+Event ID
+
+EV-009
+
+Date
+
+2024-07-15
+
+Event Name
+
+Peluncuran Governance Snapshot (Notcoin DAO)
+
+Event Type
+
+Governance
+
+Description
+
+Halaman Snapshot resmi (notcoin.ton) diluncurkan untuk voting off-chain oleh pemegang NOT. Proposal pertama: alokasi treasury untuk liquidity incentives dan grant ekosistem. Voting menggunakan snapshot balance NOT di wallet.
+
+Participants
+
+Open Builders, Notcoin Community (DAO-like)
+
+Location
+
+https://snapshot.org/#/notcoin.ton
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Mekanisme komunitas untuk mengarahkan pengembangan ekosistem (Explore, Earn, Treasury) terstruktur.
+
+Sources
+
+https://snapshot.org/#/notcoin.ton
+
+---
+
+Event ID
+
+EV-010
+
+Date
+
+2024-10
+
+Event Name
+
+Peluncuran Notcoin Wallet (Smart Wallet / Account Abstraction)
+
+Event Type
+
+Technology
+
+Description
+
+Notcoin meluncurkan smart wallet berbasis ERC-4337 (Account Abstraction) di TON, terintegrasi di Mini App. Fitur: social recovery, gasless transaction (paymaster), batched transactions, dan fiat on-ramp via partner. Menggantikan kebutuhan wallet eksternal untuk pengguna baru.
+
+Participants
+
+Open Builders, The Open Network (TON), Goldberry Labs (Tonapi), Orbs Network (dLIMIT integration)
+
+Location
+
+Telegram Mini App / TON Mainnet
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Onboarding non-crypto users dipermudah (login via Telegram, no seed phrase); >2 juta smart wallet terdeploy dalam 2 bulan pertama.
+
+Sources
+
+https://notcoin.com/blog/wallet-launch
+
+---
+
+Event ID
+
+EV-011
+
+Date
+
+2024-11
+
+Event Name
+
+Integrasi Telegram Ads Platform & Mini App Store
+
+Event Type
+
+Partnership
+
+Description
+
+Notcoin menjadi salah satu Mini App pilot untuk Telegram Ads Platform (monetisasi via rewarded ads) dan featured di Telegram Mini App Store resmi. Open Builders bekerjasama erat dengan tim Telegram untuk optimasi retensi & monetisasi.
+
+Participants
+
+Open Builders, Telegram, Pavel Durov
+
+Location
+
+Telegram Platform (Global)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Sumber pendapatan baru bagi Open Builders (ad revenue share); visibilitas organik meningkat drastis di dalam aplikasi Telegram.
+
+Sources
+
+https://blog.telegram.org/mini-apps
+
+---
+
+Event ID
+
+EV-012
+
+Date
+
+2024-12
+
+Event Name
+
+Pencapaian 50 Juta Total Pengguna Unik (Lifetime)
+
+Event Type
+
+Community
+
+Description
+
+Notcoin mengumumkan total pengguna unik yang pernah berinteraksi dengan Mini App (game/explore/wallet) melewati 50 juta. Metrik ini mencakup miners awal, klaim TGE, dan pengguna Earn/Wallet baru.
+
+Participants
+
+Open Builders, Notcoin Community
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Menegaskan posisi Notcoin sebagai consumer app crypto terbesar di Telegram & TON; basis untuk negoiasi partnership & grant lanjutan.
+
+Sources
+
+https://notcoin.com/blog/50-million-users
+
+---
+
+Event ID
+
+EV-013
+
+Date
+
+2025-01
+
+Event Name
+
+Rilis Notcoin v2 / Roadmap 2025 (Nettok)
+
+Event Type
+
+Product
+
+Description
+
+Tim mengumumkan evolusi produk: "Nettok" (nama kerja) atau Notcoin v2 — fokus pada AI-driven discovery, personalized reward engine, dan ekspansi ke multi-chain (EVM via bridge) sambil menjaga TON sebagai home chain. Detail teknis masih internal.
+
+Participants
+
+Open Builders, Sasha Plotnikov, Mad Tail
+
+Location
+
+Notcoin Blog / Telegram Channel
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Sinyal pasar bahwa Notcoin tidak stagnan pasca-hype; pengembangan berlanjut ke layer aplikasi & AI.
+
+Sources
+
+https://notcoin.com/blog/2025-roadmap
+
+---
+
+### Kelompokkan Berdasarkan Tahun
+
+#### 2023
+- EV-001: Pendirian Open Builders dan Konsep Awal Notcoin
+
+#### 2024
+- EV-002: Peluncuran Notcoin Game di Telegram (Mainnet)
+- EV-003: Pencapaian 35 Juta Pengguna dan Kolaborasi Ekosistem TON
+- EV-004: Berakhirnya Fase Mining (Tap-to-Earn) dan Announcement Tokenomics
+- EV-005: Token Generation Event (TGE) dan Listing Perdana di CEX
+- EV-006: Peluncuran Notcoin Explore (Discovery Platform)
+- EV-007: Kampanye Notcoin Genesis NFT di Getgems
+- EV-008: Peluncuran Notcoin Earn (On-chain Reward Campaigns)
+- EV-009: Peluncuran Governance Snapshot (Notcoin DAO)
+- EV-010: Peluncuran Notcoin Wallet (Smart Wallet / Account Abstraction)
+- EV-011: Integrasi Telegram Ads Platform & Mini App Store
+- EV-012: Pencapaian 50 Juta Total Pengguna Unik (Lifetime)
+
+#### 2025
+- EV-013: Rilis Notcoin v2 / Roadmap 2025 (Nettok)
+
+---
+
+### RINGKASAN
+
+Total Events
+
+13
+
+Founding
+
+1
+
+Funding
+
+0
+
+Launch
+
+1
+
+Technology
+
+1
+
+Governance
+
+1
+
+Security
+
+0
+
+Legal
+
+0
+
+Regulation
+
+0
+
+Partnership
+
+1
+
+Integration
+
+0
+
+Token
+
+1
+
+Market
+
+0
+
+Organization
+
+0
+
+Infrastructure
+
+0
+
+Community
+
+2
+
+Product
+
+3
+
+Ecosystem
+
+1
+
+Other
+
+1
+
+---
+
+Open Threads
+
+- Tanggal pasti pendirian legal entity Open Builders (bulan/tahun) tidak diverifikasi publik; hanya perkiraan berdasarkan narasi founder.
+- Tanggal peluncuran "Notcoin Explore" dan "Notcoin Earn" di beberapa sumber (blog vs tweet) memiliki perbedaan 1-2 minggu; perlu cross-check ke on-chain transaction pertama kontrak Earn.
+- Status audit smart contract token NOT (Jetton master) dan kontrak Wallet (Account Abstraction) — tidak ditemukan laporan publik dari auditor ternama (Certik, Trail of Bits, dll) hingga cutoff penelusuran.
+- Detail tokenomics vesting schedule untuk alokasi 22% (tim/ekosistem) tidak dipublikasikan resmi; hanya high-level di blog. Perlu verifikasi on-chain apakah ada timelock/vesting contract.
+- Jumlah dana grant dari TON Foundation ke Open Builders (jika ada) tidak diungkapkan nominalnya; hanya status "grant recipient" yang dikonfirmasi.
+- Peran exact Pavel Durov/Telegram dalam kapitalisasi (equity/token allocation) bersifat spekulatif; tidak ada filing atau announcement resmi.
+- Rincian teknis "Notcoin v2 / Nettok" (EV-013) masih sangat minim; roadmap blog bersifat high-level tanpa whitepaper atau spec teknis.

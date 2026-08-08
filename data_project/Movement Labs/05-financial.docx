@@ -1,0 +1,186 @@
+PROJECT: Movement Labs
+
+## Funding History
+
+Funding Round: Series A
+Date: 2024
+Amount: $38M
+Currency: USD
+Lead Investor: tidak diungkap
+Participating Investors: tidak diungkap
+Valuation: tidak diungkap
+Funding Type: Series A
+Status: Completed
+Sources: https://www.crunchbase.com/organization/movement-labs (MEDIUM)
+
+Funding Round: Seed / Pre-Seed
+Date: tidak diungkap
+Amount: tidak diungkap
+Currency: USD
+Lead Investor: tidak diungkap
+Participating Investors: tidak diungkap
+Valuation: tidak diungkap
+Funding Type: Seed
+Status: tidak diungkap
+Sources: https://www.crunchbase.com/organization/movement-labs (LOW) — Crunchbase hanya mencatat Series A $38M; ronde sebelumnya tidak terdaftar secara publik
+
+---
+
+## Treasury
+
+Current Treasury Size: tidak diungkap
+Treasury Composition: tidak diungkap
+Stablecoin Holdings: tidak diungkap
+Native Token Holdings: tidak diungkap (token MOVE belum TGE)
+Other Assets: tidak diungkap
+Treasury Custodian: tidak diungkap
+Sources: https://movementlabs.xyz/ (HIGH) — website resmi tidak mempublikasikan informasi treasury; https://blog.movementlabs.xyz/ (HIGH) — blog resmi tidak memiliki transparency report; https://docs.movementlabs.xyz/ (HIGH) — dokumentasi teknis tidak membahas treasury
+
+---
+
+## Revenue Model
+
+Revenue Stream: Protocol Fees (M1 L2 transaction fees)
+Status: Planned
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/ (MEDIUM) — blog visi menyeangkan M1 sebagai L2 yang akan menghasilkan fees; mainnet belum live sehingga belum ada revenue aktual
+
+Revenue Stream: Sequencer Revenue (MEV / priority fees)
+Status: Planned
+Sources: https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/ (MEDIUM) — testnet menggunakan centralized sequencer; model revenue sequencer untuk mainnet belum dipublikasikan detailnya
+
+Revenue Stream: DA Layer Service Fees (jika Movement Network mengoperasikan DA adapter sebagai layanan)
+Status: Planned
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/ (LOW) — arsitektur modular DA direncanakan; tidak ada konfirmasi model fee untuk DA adapter
+
+Revenue Stream: Enterprise / Licensing (Movement SDK commercial licensing)
+Status: Planned
+Sources: https://movementlabs.xyz/products (MEDIUM) — Movement SDK diposisikan sebagai framework modular; model komersial (open-source vs enterprise license) belum diumumkan resmi
+
+Revenue Stream: Grant / Ecosystem Fund
+Status: Planned
+Sources: https://movementlabs.xyz/team (MEDIUM) — peran Head of Ecosystem (Arjun Krishan) mengimplikasikan program grant; tidak ada announcement resmi dana ekosistem
+
+---
+
+## Revenue History
+
+Tidak diungkap.
+Sources: https://blog.movementlabs.xyz/ (HIGH) — tidak ada laporan revenue bulanan/tahunan; https://movementlabs.xyz/ (HIGH) — website tidak mempublikasikan financial report; mainnet belum launch sehingga tidak ada protocol revenue
+
+---
+
+## Fundraising Mechanism
+
+Mechanism: VC Funding (Series A)
+Sources: https://www.crunchbase.com/organization/movement-labs (MEDIUM) — Crunchbase mencatat Series A $38M dari investor venture capital
+
+Mechanism: Private Sale (token allocation untuk investor Series A — asumsi standar VC crypto, belum dikonfirmasi resmi)
+Sources: tidak ada sumber resmi yang mengonfirmasi token allocation untuk investor; ini inferensi dari praktik industri (LOW)
+
+Mechanism: Grant (tidak ada program grant resmi yang diumumkan untuk pengembangan protokol inti)
+Sources: https://blog.movementlabs.xyz/ (HIGH) — tidak ada announcement grant dari foundation atau DAO
+
+Mechanism: Foundation (belum dibentuk Movement Foundation)
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/ (HIGH) — blog visi tidak menyebutkan entity foundation terpisah
+
+Mechanism: DAO Treasury (belum ada DAO)
+Sources: https://blog.movementlabs.xyz/ (HIGH) — tidak ada governance token atau DAO yang diumumkan
+
+Mechanism: Protocol Revenue (belum ada revenue)
+Sources: https://blog.movementlabs.xyz/ (HIGH) — pre-mainnet
+
+Mechanism: Bootstrapping (early development sebelum Series A)
+Sources: https://www.crunchbase.com/organization/movement-labs (LOW) — Crunchbase hanya mencatat Series A; pembiayaan awal (2022-2023) tidak terdokumen publik
+
+---
+
+## Token Sale
+
+Private Sale: tidak diumumkan resmi
+Public Sale: tidak diumumkan resmi
+Launchpad: tidak diumumkan resmi
+Auction: tidak diumumkan resmi
+Community Sale: tidak diumumkan resmi
+Tanggal: tidak diumumkan resmi
+Status: Pre-TGE (belum ada token sale)
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/ (HIGH) — blog visi tidak menyebutkan token sale; https://discord.gg/movementlabs (HIGH) — Discord FAQ menyatakan pre-TGE, jadwal belum diumumkan
+
+---
+
+## Financial Dependencies
+
+Dependency: Series A Investors (undisclosed) — primary capital source $38M
+Sources: https://www.crunchbase.com/organization/movement-labs (MEDIUM)
+
+Dependency: Movement Labs Inc. operational revenue (tidak ada saat ini) — future dependency
+Sources: https://blog.movementlabs.xyz/ (HIGH) — pre-revenue
+
+Dependency: Future Token Treasury (MOVE token allocation) — planned dependency post-TGE
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/ (LOW) — inferensi dari model standar L1/L2; tidak dikonfirmasi resmi
+
+Dependency: Ecosystem Grants (planned) — future dependency
+Sources: https://movementlabs.xyz/team (MEDIUM) — Head of Ecosystem role implies grant program; belum diumumkan dana
+
+---
+
+## Financial Risk
+
+Risk: Funding Dependency — single known funding round (Series A $38M) dengan tidak adanya revenue saat ini; runway bergantung pada treasury management dari Series A proceeds
+Sources: https://www.crunchbase.com/organization/movement-labs (MEDIUM) — hanya satu ronde funding tercatat; https://blog.movementlabs.xyz/ (HIGH) — pre-mainnet, pre-revenue
+
+Risk: Treasury Concentration — treasury composition tidak diungkap; kemungkinan besar denominated dalam USD/stablecoin dari Series A proceeds dengan exposure minimal ke crypto assets (pre-TGE)
+Sources: https://movementlabs.xyz/ (HIGH) — tidak ada transparency report
+
+Risk: Legal Financial Risk — Delaware C-Corp structure dengan token issuance planned; regulatory uncertainty di US mengenai token classification (security vs utility) dapat mempengaruhi TGE dan penggunaan dana
+Sources: https://www.crunchbase.com/organization/movement-labs (HIGH) — Delaware C-Corp; https://blog.movementlabs.xyz/ (HIGH) — token MOVE planned
+
+Risk: Revenue Decline Risk (Future) — dependency pada M1 L2 adoption dan transaction volume untuk protocol fees; kompetisi L2 Ethereum yang intens (Arbitrum, Optimism, Base, dll)
+Sources: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/ (MEDIUM) — positioning sebagai Move-based L2 di kompetisi L2 yang padat
+
+Risk: Debt — tidak diketahui adanya utang; tidak diungkap
+Sources: https://www.crunchbase.com/organization/movement-labs (LOW) — Crunchbase tidak mencatat debt financing
+
+---
+
+## Official Financial Resources
+
+Official Blog: https://blog.movementlabs.xyz/
+Transparency Report: tidak tersedia
+Treasury Dashboard: tidak tersedia
+Governance: tidak tersedia (belum ada DAO/governance token)
+Messari: tidak tersedia (belum listed)
+Token Terminal: tidak tersedia (belum listed)
+DefiLlama: tidak tersedia (belum listed)
+CryptoRank: tidak tersedia (belum listed)
+Whitepaper: tidak tersedia (vision di blog post: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/)
+Crunchbase: https://www.crunchbase.com/organization/movement-labs
+
+---
+
+## Summary
+
+Total Funding Raised: $38M (Series A, 2024) — hanya ronde yang terverifikasi publik
+Funding Rounds: 1 (Series A terverifikasi; seed/pre-seed tidak terverifikasi publik)
+Treasury Status: Tidak diungkap (pre-mainnet, pre-TGE, tidak ada transparency dashboard)
+Revenue Sources: 0 live (semua planned: protocol fees, sequencer revenue, DA service fees, enterprise licensing, ecosystem grants)
+Revenue Availability: Tidak tersedia (mainnet belum launch)
+
+---
+
+## Open Threads
+
+- Nama investor Series A individu dan alokasi masing-masing — Crunchbase hanya menyebut total $38M tanpa detail investor (perlu verifikasi filing SEC Form D jika applicable)
+- Tanggal pasti Series A closing — Crunchbase hanya menunjukkan tahun 2024
+- Apakah ada ronde Seed/Pre-Seed sebelum Series A — tidak tercatat di Crunchbase atau sumber publik lain
+- Token allocation untuk investor Series A (biasanya SAFT/token warrant) — tidak dikonfirmasi resmi
+- Rincian tokenomics MOVE (total supply, alokasi team/investor/ekosistem/treasury, vesting schedule) — belum dipublikasikan
+- Tanggal TGE dan mekanisme token sale (jika ada public sale) — belum diumumkan
+- Treasury composition saat ini (stablecoin vs crypto vs fiat) — tidak diungkap
+- Burn rate bulanan Movement Labs Inc. — tidak diungkap
+- Runway berdasarkan Series A proceeds — tidak dapat dihitung tanpa burn rate dan treasury size
+- Apakah akan dibentuk Movement Foundation terpisah dengan treasury sendiri — belum dikonfirmasi
+- Status aplikasi/registrasi regulasi untuk token issuance (US securities law compliance) — tidak diungkap
+- Audit keuangan (financial audit) apakah dilakukan oleh auditor independen — tidak diungkap
+- Program grant ekosistem: ukuran dana, sumber dana (token allocation vs Series A proceeds), kriteria — belum diumumkan
+- Revenue sharing model dengan sequencer operators (jika decentralized sequencer) — belum dirancang/diumumkan
+- DA layer integration cost model (apakah Movement Labs membayar DA fees atau user) — belum detail

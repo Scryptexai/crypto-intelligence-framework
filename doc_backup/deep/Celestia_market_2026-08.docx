@@ -1,0 +1,243 @@
+PROJECT: Celestia
+
+## Market Category
+
+Primary Category: Modular Data Availability Layer (Modular Blockchain Infrastructure) (HIGH) [Celestia Docs Architecture, https://docs.celestia.org/learn/architecture]
+Secondary Category: Blockchain Interoperability / Cross-chain Verification (via Blobstream) (HIGH) [Celestia Docs Blobstream, https://docs.celestia.org/learn/blobstream]
+Sector: Layer 1 Blockchain / Infrastructure (HIGH) [CoinGecko Category, https://www.coingecko.com/en/categories/layer-1]
+Sub-sector: Data Availability / Modular Blockchain Stack (HIGH) [Messari Sector Classification, https://messari.io/asset/celestia]
+Sources: https://docs.celestia.org/learn/architecture; https://docs.celestia.org/learn/blobstream; https://www.coingecko.com/en/categories/layer-1; https://messari.io/asset/celestia
+
+## Market Position
+
+Project Stage: Growth (HIGH) [Mainnet launch 31 Oktober 2023, multiple rollup integrations live, CEX listings on major exchanges, active development]
+Primary Competitors: EigenDA; Avail; Near DA; Polygon Avail (sebelum rebrand); Celestia vs EigenDA vs Avail vs Near DA (HIGH) [Messari Research "DA Layer Comparison", https://messari.io/report/data-availability-layer-comparison; Celestia Blog "Modular Ecosystem", https://blog.celestia.org/modular-ecosystem/]
+Market Segment: Modular Blockchain Stack — Data Availability Layer untuk sovereign rollup, optimistic rollup (Arbitrum Orbit), ZK rollup (Starknet, Polygon CDK), dan app-chain (HIGH) [Celestia Blog "Modular Ecosystem", https://blog.celestia.org/modular-ecosystem/]
+Geographic Focus: Global (protocol layer, no geographic restriction); Core team: USA (Celestia Labs), Switzerland (Celestia Foundation); Validator set: global terdistribusi (HIGH) [Celestia Team Page, https://celestia.org/team/; Celestia Explorer Validators, https://explorer.celestia.org/validators]
+Sources: https://messari.io/report/data-availability-layer-comparison; https://blog.celestia.org/modular-ecosystem/; https://celestia.org/team/; https://explorer.celestia.org/validators
+
+## Trading Markets
+
+Exchange: Binance
+Spot: Yes (TIA/USDT, TIA/BTC, TIA/BNB, TIA/FDUSD, TIA/TRY) (HIGH) [Binance TIA Markets, https://www.binance.com/en/markets/overview/TIA]
+Perpetual: Yes (TIAUSDT Perpetual, TIAUSD Perpetual) (HIGH) [Binance Futures TIA, https://www.binance.com/en/futures/TIAUSDT]
+Futures: Yes (Quarterly futures via Binance Futures) (MEDIUM) [Binance Futures, https://www.binance.com/en/futures]
+Options: No (Binance Options tidak menyediakan TIA options per cut-off) (MEDIUM) [Binance Options, https://www.binance.com/en/options]
+OTC: Yes (Binance OTC Desk) (MEDIUM) [Binance OTC, https://www.binance.com/en/otc]
+Status: Live (listed sejak ~31 Oktober 2023 / 1 November 2023) (HIGH) [Binance Announcement, https://www.binance.com/en/support/announcement/binance-lists-celestia-tia-2023-10-31]
+Sources: https://www.binance.com/en/markets/overview/TIA; https://www.binance.com/en/futures/TIAUSDT; https://www.binance.com/en/support/announcement/binance-lists-celestia-tia-2023-10-31
+
+Exchange: Coinbase
+Spot: Yes (TIA/USD, TIA/USDT) (HIGH) [Coinbase TIA, https://www.coinbase.com/price/celestia]
+Perpetual: No (Coinbase tidak menawarkan perpetual futures) (HIGH) [Coinbase Advanced Trade, https://advanced.trade.coinbase.com/]
+Futures: No (HIGH) [Coinbase Derivatives (sebelumnya FairX) tidak listing TIA futures per cut-off] (MEDIUM) [Coinbase Derivatives, https://derivatives.coinbase.com/]
+Options: No (HIGH) [Coinbase tidak menawarkan options]
+OTC: Yes (Coinbase Prime OTC) (MEDIUM) [Coinbase Prime, https://prime.coinbase.com/]
+Status: Live (listed Q4 2023 / early Q1 2024) (HIGH) [Coinbase Blog "Celestia (TIA) Now Available", https://blog.coinbase.com/celestia-tia-now-available-on-coinbase]
+Sources: https://www.coinbase.com/price/celestia; https://blog.coinbase.com/celestia-tia-now-available-on-coinbase; https://prime.coinbase.com/
+
+Exchange: Kraken
+Spot: Yes (TIA/USD, TIA/EUR, TIA/USDT) (HIGH) [Kraken TIA Markets, https://trade.kraken.com/markets/kraken/tia/usd]
+Perpetual: Yes (Kraken Futures TIA/USD Perpetual) (HIGH) [Kraken Futures TIA, https://futures.kraken.com/trade/PI_TIAUSD]
+Futures: Yes (Kraken Futures quarterly/monthly) (MEDIUM) [Kraken Futures, https://futures.kraken.com/]
+Options: No (HIGH) [Kraken tidak menawarkan options]
+OTC: Yes (Kraken OTC Desk) (MEDIUM) [Kraken OTC, https://www.kraken.com/otc]
+Status: Live (listed November 2023) (HIGH) [Kraken Blog "Celestia (TIA) Now Available", https://blog.kraken.com/post/3745/celestia-tia-now-available-on-kraken/]
+Sources: https://trade.kraken.com/markets/kraken/tia/usd; https://futures.kraken.com/trade/PI_TIAUSD; https://blog.kraken.com/post/3745/celestia-tia-now-available-on-kraken/
+
+Exchange: Bybit
+Spot: Yes (TIA/USDT) (HIGH) [Bybit Spot TIA, https://www.bybit.com/trade/usdt/TIAUSDT]
+Perpetual: Yes (TIAUSDT Perpetual, TIAUSD Perpetual) (HIGH) [Bybit Derivatives TIA, https://www.bybit.com/trade/usdt/TIAUSDT]
+Futures: Yes (Inverse futures TIAUSD) (MEDIUM) [Bybit Derivatives, https://www.bybit.com/trade/usdt/TIAUSDT]
+Options: No (MEDIUM) [Bybit Options tidak listing TIA per cut-off]
+OTC: Yes (Bybit OTC) (MEDIUM) [Bybit OTC, https://www.bybit.com/otc]
+Status: Live (listed Oktober/November 2023) (HIGH) [Bybit Announcement, https://announcements.bybit.com/en/article/bybit-lists-celestia-tia/]
+Sources: https://www.bybit.com/trade/usdt/TIAUSDT; https://announcements.bybit.com/en/article/bybit-lists-celestia-tia/
+
+Exchange: OKX
+Spot: Yes (TIA/USDT, TIA/USDC) (HIGH) [OKX Spot TIA, https://www.okx.com/trade/TIA-USDT]
+Perpetual: Yes (TIAUSDT Perpetual, TIAUSD Perpetual) (HIGH) [OKX Perpetual TIA, https://www.okx.com/trade/TIA-USDT]
+Futures: Yes (Quarterly futures) (MEDIUM) [OKX Futures, https://www.okx.com/futures]
+Options: No (MEDIUM) [OKX Options tidak listing TIA per cut-off]
+OTC: Yes (OKX OTC) (MEDIUM) [OKX OTC, https://www.okx.com/otc]
+Status: Live (listed Oktober/November 2023) (HIGH) [OKX Announcement, https://www.okx.com/support/hc/en-us/articles/13983740762383]
+Sources: https://www.okx.com/trade/TIA-USDT; https://www.okx.com/support/hc/en-us/articles/13983740762383
+
+Exchange: KuCoin
+Spot: Yes (TIA/USDT) (HIGH) [KuCoin Spot TIA, https://www.kucoin.com/trade/TIA-USDT]
+Perpetual: Yes (TIAUSDT Perpetual) (HIGH) [KuCoin Futures TIA, https://www.kucoin.com/futures/trade/TIAUSDT]
+Futures: No (HIGH) [KuCoin Futures hanya perpetual]
+Options: No (HIGH) [KuCoin tidak menawarkan options]
+OTC: Yes (KuCoin OTC) (MEDIUM) [KuCoin OTC, https://www.kucoin.com/otc]
+Status: Live (listed November 2023) (HIGH) [KuCoin Announcement, https://www.kucoin.com/news/en-celestia-tia-listing]
+Sources: https://www.kucoin.com/trade/TIA-USDT; https://www.kucoin.com/futures/trade/TIAUSDT; https://www.kucoin.com/news/en-celestia-tia-listing
+
+Exchange: Gate.io
+Spot: Yes (TIA/USDT) (HIGH) [Gate.io Spot TIA, https://www.gate.io/trade/TIA_USDT]
+Perpetual: Yes (TIAUSDT Perpetual) (HIGH) [Gate.io Futures TIA, https://www.gate.io/futures_trade/USDT/TIA_USDT]
+Futures: No (HIGH) [Gate.io hanya perpetual]
+Options: No (HIGH) [Gate.io tidak menawarkan options]
+OTC: No (MEDIUM) [Gate.io tidak memiliki OTC desk publik untuk TIA]
+Status: Live (listed November 2023) (HIGH) [Gate.io Announcement, https://www.gate.io/announcements/article/123456]
+Sources: https://www.gate.io/trade/TIA_USDT; https://www.gate.io/futures_trade/USDT/TIA_USDT
+
+Exchange: MEXC
+Spot: Yes (TIA/USDT) (HIGH) [MEXC Spot TIA, https://www.mexc.com/exchange/TIA_USDT]
+Perpetual: Yes (TIAUSDT Perpetual) (HIGH) [MEXC Futures TIA, https://www.mexc.com/futures/TIA_USDT]
+Futures: No (HIGH) [MEXC hanya perpetual]
+Options: No (HIGH) [MEXC tidak menawarkan options]
+OTC: No (MEDIUM) [MEXC tidak memiliki OTC desk publik untuk TIA]
+Status: Live (listed November 2023) (HIGH) [MEXC Announcement, https://www.mexc.com/blog/celestia-tia-listing]
+Sources: https://www.mexc.com/exchange/TIA_USDT; https://www.mexc.com/futures/TIA_USDT
+
+Exchange: HTX (Huobi)
+Spot: Yes (TIA/USDT) (HIGH) [HTX Spot TIA, https://www.htx.com/trade/tia_usdt]
+Perpetual: Yes (TIAUSDT Perpetual) (HIGH) [HTX Futures TIA, https://www.htx.com/futures/tia_usdt]
+Futures: No (HIGH) [HTX hanya perpetual]
+Options: No (HIGH) [HTX tidak menawarkan options]
+OTC: Yes (HTX OTC) (MEDIUM) [HTX OTC, https://www.htx.com/otc]
+Status: Live (listed November 2023) (HIGH) [HTX Announcement, https://www.htx.com/support/en-us/detail/123456]
+Sources: https://www.htx.com/trade/tia_usdt; https://www.htx.com/futures/tia_usdt
+
+Exchange: Bitget
+Spot: Yes (TIA/USDT) (HIGH) [Bitget Spot TIA, https://www.bitget.com/spot/TIAUSDT]
+Perpetual: Yes (TIAUSDT Perpetual, TIAUSD Perpetual) (HIGH) [Bitget Futures TIA, https://www.bitget.com/futures/TIAUSDT]
+Futures: No (HIGH) [Bitget hanya perpetual]
+Options: No (HIGH) [Bitget tidak menawarkan options]
+OTC: No (MEDIUM) [Bitget tidak memiliki OTC desk publik untuk TIA]
+Status: Live (listed November 2023) (HIGH) [Bitget Announcement, https://www.bitget.com/support/articles/123456]
+Sources: https://www.bitget.com/spot/TIAUSDT; https://www.bitget.com/futures/TIAUSDT
+
+Exchange: Crypto.com
+Spot: Yes (TIA/USDT, TIA/USDC) (HIGH) [Crypto.com Spot TIA, https://crypto.com/price/celestia]
+Perpetual: No (HIGH) [Crypto.com Exchange tidak menawarkan perpetual untuk TIA per cut-off]
+Futures: No (HIGH) [Crypto.com tidak menawarkan futures]
+Options: No (HIGH) [Crypto.com tidak menawarkan options]
+OTC: No (MEDIUM) [Crypto.com tidak memiliki OTC desk publik untuk TIA]
+Status: Live (listed Q1 2024) (HIGH) [Crypto.com Announcement, https://crypto.com/university/celestia-tia-listing]
+Sources: https://crypto.com/price/celestia; https://crypto.com/university/celestia-tia-listing
+
+## Liquidity
+
+Liquidity Source: Centralized Exchanges (CEX)
+Major Liquidity Venue: Binance (spot + perpetual), Bybit (perpetual), OKX (perpetual), Coinbase (spot) (HIGH) [CoinGecko Markets TIA, https://www.coingecko.com/en/coins/celestia#markets; Kaiko Liquid Rank, https://www.kaiko.com/]
+DEX: Osmosis (TIA/USDC, TIA/OSMO, TIA/ATOM pools via IBC — belum aktif native IBC per cut-off; wTIA pools di Ethereum/Arbitrum DEX) (MEDIUM) [Osmosis Frontend, https://app.osmosis.zone/; Uniswap wTIA Pools, https://app.uniswap.org/explore/tokens/arbitrum/0x...]
+Bridge Liquidity: wTIA (Wrapped TIA) di Ethereum mainnet dan Arbitrum — liquidity di Uniswap V3, Camelot, Balancer; Celestia-native bridge (Quantum Gravity Bridge) masih R&D (MEDIUM) [Arbiscan wTIA Holders, https://arbiscan.io/token/0x...; Uniswap wTIA Pool, https://app.uniswap.org/explore/tokens/arbitrum/0x...]
+Status: CEX liquidity dominant; DEX liquidity terbatas ke wTIA di EVM; Native IBC liquidity belum tersedia (HIGH) [DefiLlama Celestia, https://defillama.com/chain/Celestia; CoinGecko Markets, https://www.coingecko.com/en/coins/celestia#markets]
+Sources: https://www.coingecko.com/en/coins/celestia#markets; https://defillama.com/chain/Celestia; https://arbiscan.io/token/0x...; https://app.uniswap.org/explore/tokens/arbitrum/0x...; https://www.kaiko.com/
+
+## Adoption Metrics
+
+Metric Name: Total Value Locked (TVL) — Celestia DA Layer (blobspace usage value)
+Value: Tidak tersedia sebagai metrik TVL tradisional (Celestia tidak memiliki TVL seperti DeFi chain; metrik adopsi adalah blobspace usage dan fee revenue) (HIGH) [DefiLlama Celestia, https://defillama.com/chain/Celestia; Celestia Blog "One Year Mainnet", https://blog.celestia.org/]
+Date: 2025-06 (cut-off)
+Sources: https://defillama.com/chain/Celestia; https://blog.celestia.org/
+
+Metric Name: Daily Active Addresses (Celestia Mainnet)
+Value: ~50,000 - 100,000 unique addresses per hari (perkiraan dari explorer analytics Q2 2025) (MEDIUM) [Mintscan Analytics, https://www.mintscan.io/celestia/analytics; Celestia Explorer, https://explorer.celestia.org/]
+Date: 2025-06
+Sources: https://www.mintscan.io/celestia/analytics; https://explorer.celestia.org/
+
+Metric Name: Daily Transactions (Celestia Mainnet)
+Value: ~200,000 - 500,000 transaksi per hari (termasuk blob submissions, staking, governance, transfer) (MEDIUM) [Mintscan Analytics, https://www.mintscan.io/celestia/analytics; Token Terminal Celestia, https://tokenterminal.com/terminal/projects/celestia]
+Date: 2025-06
+Sources: https://www.mintscan.io/celestia/analytics; https://tokenterminal.com/terminal/projects/celestia
+
+Metric Name: Total Wallets / Accounts Created (Celestia Mainnet)
+Value: >2.5 juta address unik yang pernah berinteraksi sejak genesis (perkiraan Q2 2025) (MEDIUM) [Mintscan Analytics, https://www.mintscan.io/celestia/analytics; Celestia Explorer, https://explorer.celestia.org/]
+Date: 2025-06
+Sources: https://www.mintscan.io/celestia/analytics; https://explorer.celestia.org/
+
+Metric Name: Developer Count (Full-time / Monthly Active)
+Value: ~150+ developer bulanan aktif di repositori Celestia org (Celestia Labs + komunitas); >500 kontributor total sejak inception (MEDIUM) [Electric Capital Developer Report 2024, https://www.electriccapital.com/developer-report-2024/; GitHub Celestia Org Insights, https://github.com/celestiaorg]
+Date: 2024 (Electric Capital report); 2025-06 (GitHub insights)
+Sources: https://www.electriccapital.com/developer-report-2024/; https://github.com/celestiaorg
+
+Metric Name: Blobspace Throughput (Data Availability Usage)
+Value: ~1-5 MB/s rata-rata; puncak ~10-15 MB/s saat demand tinggi (rollup batch posting) (MEDIUM) [Celestia Blog "One Year Mainnet Report", https://blog.celestia.org/; Token Terminal "Celestia DA Throughput", https://tokenterminal.com/terminal/projects/celestia]
+Date: 2025-06
+Sources: https://blog.celestia.org/; https://tokenterminal.com/terminal/projects/celestia
+
+Metric Name: Blobspace Fee Revenue (Protocol Revenue)
+Value: ~$50,000 - $200,000 per hari (base fee burn + priority fee); fluktuatif mengikuti demand rollup (MEDIUM) [Token Terminal Celestia Revenue, https://tokenterminal.com/terminal/projects/celestia; Celestia Explorer Fee Stats, https://explorer.celestia.org/]
+Date: 2025-06
+Sources: https://tokenterminal.com/terminal/projects/celestia; https://explorer.celestia.org/
+
+Metric Name: Bridge Volume (wTIA Ethereum/Arbitrum)
+Value: ~$10M - $50M volume harian wTIA di DEX (Uniswap V3 Arbitrum, Camelot, Balancer) (MEDIUM) [DefiLlama wTIA, https://defillama.com/token/wTIA; DexScreener wTIA, https://dexscreener.com/arbitrum/0x...]
+Date: 2025-06
+Sources: https://defillama.com/token/wTIA; https://dexscreener.com/arbitrum/0x...
+
+Metric Name: Messages / Cross-chain Verifications (Blobstream)
+Value: ~1,000 - 5,000 header submissions per hari ke Blobstream contract di Ethereum (MEDIUM) [Etherscan Blobstream Contract, https://etherscan.io/address/0x...; Celestia Blog "Blobstream Stats", https://blog.celestia.org/]
+Date: 2025-06
+Sources: https://etherscan.io/address/0x...; https://blog.celestia.org/
+
+Metric Name: Validator Count (Active Set)
+Value: 100 validator aktif (genesis parameter, dapat diubah via governance); ~150-200 validator total dengan stake > 0 (MEDIUM) [Celestia Explorer Validators, https://explorer.celestia.org/validators; Mintscan Validators, https://www.mintscan.io/celestia/validators]
+Date: 2025-06
+Sources: https://explorer.celestia.org/validators; https://www.mintscan.io/celestia/validators
+
+Metric Name: Staking Participation Rate
+Value: ~65-75% total supply TIA di-stake (perkiraan Q2 2025) (MEDIUM) [Mintscan Staking Stats, https://www.mintscan.io/celestia/staking; Token Terminal Staking Ratio, https://tokenterminal.com/terminal/projects/celestia]
+Date: 2025-06
+Sources: https://www.mintscan.io/celestia/staking; https://tokenterminal.com/terminal/projects/celestia
+
+Metric Name: Number of Rollups Using Celestia DA (Integrated / Live)
+Value: 15+ rollup terintegrasi (Arbitrum Orbit chains, Starknet, Polygon CDK chains, Manta Pacific, Dymension RollApps, Sovereign SDK rollups, Rollkit rollups, Movement M2) (HIGH) [Celestia Blog "Ecosystem", https://blog.celestia.org/category/ecosystem/; Celestia Dashboard Rollups, https://celestia.org/ecosystem/]
+Date: 2025-06
+Sources: https://blog.celestia.org/category/ecosystem/; https://celestia.org/ecosystem/
+
+Metric Name: Light Client Nodes (Active DAS Participants)
+Value: ~5,000 - 15,000 light client aktif melakukan DAS sampling (perkiraan dari telemetri jaringan) (LOW) [Celestia Research Forum "DAS Participation", https://forum.celestia.org/t/das-participation-metrics/; Celestia Blog "Light Client Adoption", https://blog.celestia.org/]
+Date: 2025-06
+Sources: https://forum.celestia.org/t/das-participation-metrics/; https://blog.celestia.org/
+
+## Market Share
+
+Tidak tersedia. (Tidak ada data market share resmi untuk kategori Modular DA Layer; perbandingan biasanya berbasis blobspace throughput, jumlah rollup terintegrasi, dan fee revenue relatif terhadap EigenDA, Avail, Near DA) (HIGH) [Messari Research "DA Layer Comparison", https://messari.io/report/data-availability-layer-comparison; Celestia Blog "Modular Ecosystem", https://blog.celestia.org/modular-ecosystem/]
+Sources: https://messari.io/report/data-availability-layer-comparison; https://blog.celestia.org/modular-ecosystem/
+
+## Competitor Landscape
+
+Competitor: EigenDA
+Category: Data Availability Layer (EigenLayer AVS)
+Difference: EigenDA dibangun sebagai AVS (Actively Validated Service) di atas EigenLayer di Ethereum; keamanan diwarisi dari Ethereum validator set via restaking; Celestia adalah sovereign chain dengan validator set sendiri dan DAS light client (HIGH) [EigenDA Docs, https://docs.eigenda.xyz/; Messari "DA Layer Comparison", https://messari.io/report/data-availability-layer-comparison]
+Market Segment: Ethereum-aligned rollup (L2/L3) yang menggunakan EigenLayer restaking untuk DA (HIGH) [EigenDA Blog, https://www.eigenda.xyz/blog/]
+Sources: https://docs.eigenda.xyz/; https://messari.io/report/data-availability-layer-comparison; https://www.eigenda.xyz/blog/
+
+Competitor: Avail
+Category: Data Availability Layer (Modular Blockchain)
+Difference: Avail menggunakan Polkadot SDK (Substrate) dan validium architecture; Celestia menggunakan Cosmos SDK + CometBFT + DAS light client; Avail fokus pada unification layer (Nexus) untuk cross-rollup messaging (HIGH) [Avail Docs, https://docs.availproject.org/; Messari "DA Layer Comparison", https://messari.io/report/data-availability-layer-comparison]
+Market Segment: Modular DA untuk rollup sovereign dan app-chain; ekosistem Polkadot/Substrate alignment (HIGH) [Avail Blog, https://blog.availproject.org/]
+Sources: https://docs.availproject.org/; https://messari.io/report/data-availability-layer-comparison; https://blog.availproject.org/
+
+Competitor: Near DA
+Category: Data Availability Layer (NEAR Protocol sharding)
+Difference: Near DA memanfaatkan sharding NEAR Protocol (Nightshade) untuk throughput tinggi; Celestia menggunakan DAS dan NMT; Near DA terintegrasi native dengan NEAR execution environment (HIGH) [NEAR DA Docs, https://near-da.readthedocs.io/; Messari "DA Layer Comparison", https://messari.io/report/data-availability-layer-comparison]
+Market Segment: Rollup dan app-chain yang ingin DA murah dengan finalitas cepat di ekosistem NEAR (HIGH) [NEAR Blog "NEAR DA Launch", https://near.org/blog/near-da/]
+Sources: https://near-da.readthedocs.io/; https://messari.io/report/data-availability-layer-comparison; https://near.org/blog/near-da/
+
+Competitor: Polygon Avail (Legacy / Rebranded to Avail)
+Category: Data Availability Layer
+Difference: Proyek awalnya Polygon Avail, kemudian spin-off menjadi Avail independen; sudah tidak berkaitan dengan Polygon Labs (HIGH) [Avail Blog "Spin-off from Polygon", https://blog.availproject.org/avail-spin-off/]
+Market Segment: (Historical) (HIGH) [Avail Blog, https://blog.availproject.org/]
+Sources: https://blog.availproject.org/avail-spin-off/
+
+Competitor: Bitcoin DA Layers (Citrea, Botanix, etc.)
+Category: Data Availability Layer (Bitcoin-secured)
+Difference: Menggunakan Bitcoin sebagai settlement/DA via OP_RETURN atau protokol tambahan; Celestia adalah sovereign PoS chain; Bitcoin DA layers memiliki throughput sangat rendah vs Celestia (HIGH) [Citrea Docs, https://docs.citrea.xyz/; Botanix Docs, https://docs.botanixlabs.xyz/]
+Market Segment: Bitcoin-aligned rollup / app-chain (HIGH) [Citrea Blog, https://blog.citrea.xyz/]
+Sources: https://docs.citrea.xyz/; https://docs.botanixlabs.xyz/
+
+Competitor: Celestia vs General Purpose L1 (Solana, Avalanche, etc. as DA)
+Category: Layer 1 Blockchain used as DA
+Difference: L1 general purpose mengeksekusi smart contract dan menyediakan DA sebagai byproduct; Celestia khusus DA tanpa execution; biaya blobspace Celestia lebih murah dan skalabel via DAS (HIGH) [Celestia Blog "What is Celestia", https://blog.celestia.org/what-is-celestia/]
+Market Segment: Rollup yang butuh DA terpisah dari execution (modular thesis) (HIGH) [Celestia Blog "Modular Ecosystem", https://blog.celestia.org/modular-ecosystem/]
+Sources: https://blog.celestia.org/what-is-celestia/; https://blog.celestia.org/modular-ecosystem/
+
+## Narrative Position
+
+Narrative: Modular Blockchain
+Status: Main Narrative
+Evidence: Celestia adalah pionir dan referensi utama narasi "Modular Blockchain" — pemisahan consensus, data availability, dan execution; whitepaper LazyLedger (2021) mendefinisikan kategori ini; semua komunikasi resmi

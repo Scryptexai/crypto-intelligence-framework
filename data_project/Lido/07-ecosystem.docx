@@ -1,0 +1,627 @@
+PROJECT: Lido
+
+## Ecosystem Position
+
+Primary Sector: liquid staking / staking infrastructure (HIGH) [Lido Docs, https://docs.lido.fi/]
+Secondary Sector: DeFi infrastructure (liquid staking tokens as DeFi primitives) (HIGH) [Lido Blog, https://blog.lido.fi/steth-ecosystem/]
+Primary Chain: Ethereum (HIGH) [Lido Docs, https://docs.lido.fi/networks/ethereum/]
+Supported Chains: Ethereum (mainnet); Polygon; Optimism; Arbitrum One; Base; zkSync Era; Solana (deprecated 2023); Polkadot (deprecated 2023); Kusama (deprecated 2023) (HIGH) [Lido Docs, https://docs.lido.fi/networks/]
+
+Sources
+- https://docs.lido.fi/
+- https://blog.lido.fi/steth-ecosystem/
+- https://docs.lido.fi/networks/ethereum/
+- https://docs.lido.fi/networks/
+
+## External Dependencies
+
+Dependency Name: Ethereum Beacon Chain
+Dependency Type: Chain
+Purpose: Validator consensus layer providing staking rewards and finality for staked ETH; Lido node operators run validators on Beacon Chain (HIGH) [Lido Docs, https://docs.lido.fi/architecture/overview/]
+Criticality: Critical
+Status: Live
+Related Entity: Ethereum
+Related Technology Component: Deposit Contract, Staking Router, Oracle, Withdrawal Queue
+Sources
+- https://docs.lido.fi/architecture/overview/
+
+Dependency Name: Ethereum Execution Layer
+Dependency Type: Chain
+Purpose: Hosts all Lido core smart contracts (Deposit, Staking Router, Node Operator Registry, Oracle, Withdrawal Queue, stETH, wstETH, LDO); processes withdrawals via EIP-4895 (HIGH) [Lido Docs, https://docs.lido.fi/architecture/overview/]
+Criticality: Critical
+Status: Live
+Related Entity: Ethereum
+Related Technology Component: All core contracts
+Sources
+- https://docs.lido.fi/architecture/overview/
+
+Dependency Name: EigenLayer
+Dependency Type: Protocol
+Purpose: Restaking protocol accepting wstETH as Liquid Restaking Token (LRT); Lido is largest liquid staking provider for EigenLayer (>50% TVL restaking awal) (HIGH) [Lido Blog, https://blog.lido.fi/lido-eigenlayer-integration/]
+Criticality: High
+Status: Live
+Related Entity: EigenLayer
+Related Technology Component: wstETH
+Sources
+- https://blog.lido.fi/lido-eigenlayer-integration/
+
+Dependency Name: Canonical Bridge — Optimism
+Dependency Type: Bridge
+Purpose: Bridges wstETH from Ethereum mainnet to Optimism; enables wstETH deployment on Optimism for DeFi composability (HIGH) [Lido Blog, https://blog.lido.fi/wsteth-on-optimism/]
+Criticality: High
+Status: Live
+Related Entity: Optimism
+Related Technology Component: wstETH (Optimism deployment)
+Sources
+- https://blog.lido.fi/wsteth-on-optimism/
+
+Dependency Name: Canonical Bridge — Arbitrum
+Dependency Type: Bridge
+Purpose: Bridges wstETH from Ethereum mainnet to Arbitrum One; enables wstETH deployment on Arbitrum for DeFi composability (HIGH) [Lido Blog, https://blog.lido.fi/wsteth-on-arbitrum/]
+Criticality: High
+Status: Live
+Related Entity: Arbitrum
+Related Technology Component: wstETH (Arbitrum deployment)
+Sources
+- https://blog.lido.fi/wsteth-on-arbitrum/
+
+Dependency Name: Canonical Bridge — Base
+Dependency Type: Bridge
+Purpose: Bridges wstETH from Ethereum mainnet to Base; enables wstETH deployment on Base for DeFi composability (HIGH) [Lido Blog, https://blog.lido.fi/wsteth-on-base/]
+Criticality: High
+Status: Live
+Related Entity: Base
+Related Technology Component: wstETH (Base deployment)
+Sources
+- https://blog.lido.fi/wsteth-on-base/
+
+Dependency Name: Canonical Bridge — zkSync Era
+Dependency Type: Bridge
+Purpose: Bridges wstETH from Ethereum mainnet to zkSync Era; enables wstETH deployment on zkSync for DeFi composability (HIGH) [Lido Blog, https://blog.lido.fi/wsteth-on-zksync/]
+Criticality: High
+Status: Live
+Related Entity: zkSync Era
+Related Technology Component: wstETH (zkSync Era deployment)
+Sources
+- https://blog.lido.fi/wsteth-on-zksync/
+
+Dependency Name: Polygon Bridge / Native Deployment
+Dependency Type: Bridge / Chain
+Purpose: Lido on Polygon deployed natively (not bridged stETH); stMATIC contracts on Polygon mainnet with own node operator set (HIGH) [Lido Blog, https://blog.lido.fi/lido-on-polygon/]
+Criticality: Medium
+Status: Live
+Related Entity: Polygon
+Related Technology Component: stMATIC contracts
+Sources
+- https://blog.lido.fi/lido-on-polygon/
+
+Dependency Name: Oracle Committee (5-of-9 Multi-sig)
+Dependency Type: Oracle
+Purpose: Off-chain committee reporting beacon chain state (validator balances, exits, rewards) to Oracle contract; critical for stETH rebase and withdrawal queue updates (HIGH) [Lido Docs, https://docs.lido.fi/oracle/]
+Criticality: Critical
+Status: Live
+Related Entity: Oracle Committee
+Related Technology Component: Oracle Contract, stETH rebase, Withdrawal Queue
+Sources
+- https://docs.lido.fi/oracle/
+
+Dependency Name: Node Operators (30+ Professional Entities)
+Dependency Type: Infrastructure
+Purpose: Run Ethereum validators with withdrawal credentials 0x01 pointing to Lido withdrawal vault; generate staking rewards (HIGH) [Lido Docs, https://docs.lido.fi/node-operators/]
+Criticality: Critical
+Status: Live
+Related Entity: Node Operators (Lido Node Operator Set)
+Related Technology Component: Staking Router, Node Operator Registry, Deposit Contract
+Sources
+- https://docs.lido.fi/node-operators/
+
+Dependency Name: Chainlink Price Feeds
+Dependency Type: Data Provider
+Purpose: Provides ETH/USD and stETH/ETH price feeds for DeFi integrations (Aave, Maker, etc.); not used by core Lido protocol (HIGH) [Chainlink, https://docs.chain.link/data-feeds/price-feeds/addresses]
+Criticality: Medium (for DeFi integrations, not core protocol)
+Status: Live
+Related Entity: Chainlink
+Related Technology Component: DeFi integrations (Aave, Maker, Curve)
+Sources
+- https://docs.chain.link/data-feeds/price-feeds/addresses
+
+Dependency Name: GitHub Actions / GitHub Infrastructure
+Dependency Type: Cloud / Infrastructure
+Purpose: CI/CD pipeline for smart contract testing, deployment, and frontend builds (HIGH) [GitHub, https://github.com/lidofinance/lido-dao/tree/master/.github/workflows]
+Criticality: Medium
+Status: Live
+Related Entity: GitHub
+Related Technology Component: CI/CD, Testing, Deployment
+Sources
+- https://github.com/lidofinance/lido-dao/tree/master/.github/workflows
+
+Dependency Name: Docker / Kubernetes (Oracle Infrastructure)
+Dependency Type: Cloud / Infrastructure
+Purpose: Containerization and orchestration for Oracle Committee daemon infrastructure and monitoring (MEDIUM) [Lido Blog, https://blog.lido.fi/infrastructure-update/]
+Criticality: Medium
+Status: Live
+Related Entity: Oracle Committee
+Related Technology Component: Oracle daemon, Monitoring
+Sources
+- https://blog.lido.fi/infrastructure-update/
+
+Dependency Name: IPFS / Arweave
+Dependency Type: Infrastructure / Storage
+Purpose: Frontend assets on IPFS; audit reports and governance archives on Arweave (MEDIUM) [GitHub, https://github.com/lidofinance/lido-dao]
+Criticality: Low
+Status: Live
+Related Entity: IPFS, Arweave
+Related Technology Component: Frontend, Governance archives
+Sources
+- https://github.com/lidofinance/lido-dao
+
+Dependency Name: Immunefi
+Dependency Type: Security / Service
+Purpose: Bug bounty platform hosting Lido bug bounty program (max reward $1M) (HIGH) [Immunefi, https://immunefi.com/bounty/lido/]
+Criticality: Medium
+Status: Live
+Related Entity: Immunefi
+Related Technology Component: Bug bounty program
+Sources
+- https://immunefi.com/bounty/lido/
+
+## Major Integrations
+
+Integration Name: Curve Finance — stETH/ETH Pool
+Integrated With: Curve Finance
+Purpose: Primary liquidity venue for stETH/ETH trading; >50% historical stETH volume; deep liquidity enables stETH peg stability (HIGH) [Curve, https://curve.fi/#/ethereum/pools/factory-steth-eth]
+Status: Live
+Related Historical Event ID: EV-018
+Sources
+- https://curve.fi/#/ethereum/pools/factory-steth-eth
+
+Integration Name: Aave V2/V3 — stETH/wstETH Markets
+Integrated With: Aave
+Purpose: Money market for supply/borrow stETH and wstETH; collateral factor 82.5% on Ethereum and L2s; major utility driver for wstETH (HIGH) [Aave, https://app.aave.com/reserve-overview/?underlyingAsset=0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84]
+Status: Live
+Related Historical Event ID: EV-018
+Sources
+- https://app.aave.com/reserve-overview/?underlyingAsset=0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84
+
+Integration Name: MakerDAO — wstETH Vault & PSM
+Integrated With: MakerDAO
+Purpose: wstETH accepted as collateral for DAI minting (vault type) and PSM; peak exposure >$1B; major DeFi primitive integration (HIGH) [MakerDAO, https://makerdao.com/en/whitepaper/]
+Status: Live
+Related Historical Event ID: EV-018
+Sources
+- https://makerdao.com/en/whitepaper/
+
+Integration Name: Yearn Finance — stETH/wstETH Vaults
+Integrated With: Yearn Finance
+Purpose: Yield aggregator strategies for stETH/wstETH (leveraged staking, loop strategies); enhances yield for stETH holders (HIGH) [Yearn, https://yearn.fi/#/vaults]
+Status: Live
+Related Historical Event ID: EV-018
+Sources
+- https://yearn.fi/#/vaults
+
+Integration Name: EigenLayer — wstETH Restaking
+Integrated With: EigenLayer
+Purpose: wstETH as primary Liquid Restaking Token (LRT) for EigenLayer restaking; Lido provides >50% of restaking TVL awal; enables restaking rewards on top of staking rewards (HIGH) [EigenLayer, https://www.eigenlayer.xyz/]
+Status: Live
+Related Historical Event ID: EV-016
+Sources
+- https://www.eigenlayer.xyz/
+
+Integration Name: Lido on Polygon — stMATIC
+Integrated With: Polygon
+Purpose: Native liquid staking for MATIC on Polygon; stMATIC deployed on Polygon mainnet with own node operator set; integrated with Polygon DeFi (Aave Polygon, QuickSwap, Curve Polygon) (HIGH) [Lido Blog, https://blog.lido.fi/lido-on-polygon/]
+Status: Live
+Related Historical Event ID: EV-006
+Sources
+- https://blog.lido.fi/lido-on-polygon/
+
+Integration Name: wstETH on Optimism
+Integrated With: Optimism
+Purpose: wstETH deployed via Optimism canonical bridge; collateral on Aave V3 Optimism, Velodrome, GMX, Radiant (HIGH) [Lido Blog, https://blog.lido.fi/wsteth-on-optimism/]
+Status: Live
+Related Historical Event ID: EV-010
+Sources
+- https://blog.lido.fi/wsteth-on-optimism/
+
+Integration Name: wstETH on Arbitrum
+Integrated With: Arbitrum
+Purpose: wstETH deployed via Arbitrum canonical bridge; collateral on Aave V3 Arbitrum, GMX, Radiant, Pendle (HIGH) [Lido Blog, https://blog.lido.fi/wsteth-on-arbitrum/]
+Status: Live
+Related Historical Event ID: EV-010
+Sources
+- https://blog.lido.fi/wsteth-on-arbitrum/
+
+Integration Name: wstETH on Base
+Integrated With: Base
+Purpose: wstETH deployed via Base canonical bridge; integrated with Aerodrome, Moonwell, Morpho (HIGH) [Lido Blog, https://blog.lido.fi/wsteth-on-base/]
+Status: Live
+Related Historical Event ID: EV-012
+Sources
+- https://blog.lido.fi/wsteth-on-base/
+
+Integration Name: wstETH on zkSync Era
+Integrated With: zkSync Era
+Purpose: wstETH deployed via zkSync Era canonical bridge; integrated with SyncSwap, Mute, EraLend (HIGH) [Lido Blog, https://blog.lido.fi/wsteth-on-zksync/]
+Status: Live
+Related Historical Event ID: EV-012
+Sources
+- https://blog.lido.fi/wsteth-on-zksync/
+
+Integration Name: Lido on Solana — stSOL (Deprecated)
+Integrated With: Solana
+Purpose: Liquid staking SOL via stake pool program; integrated with Marinade, Orca, Saber, Jupiter; deprecated June 2023, redemption completed Q4 2023 (HIGH) [Lido Blog, https://blog.lido.fi/lido-on-solana-sunset/]
+Status: Deprecated
+Related Historical Event ID: EV-008, EV-014
+Sources
+- https://blog.lido.fi/lido-on-solana-sunset/
+
+Integration Name: Lido on Polkadot — stDOT (Deprecated)
+Integrated With: Polkadot
+Purpose: Liquid staking DOT via parachain integration; integrated with Acala, Parallel, Karura; deprecated September 2023, redemption completed Q4 2023 (HIGH) [Lido Blog, https://blog.lido.fi/lido-on-polkadot-sunset/]
+Status: Deprecated
+Related Historical Event ID: EV-009, EV-015
+Sources
+- https://blog.lido.fi/lido-on-polkadot-sunset/
+
+Integration Name: Lido on Kusama — stKSM (Deprecated)
+Integrated With: Kusama
+Purpose: Liquid staking KSM via parachain integration; deprecated September 2023 alongside Polkadot (HIGH) [Lido Blog, https://blog.lido.fi/lido-on-kusama-sunset/]
+Status: Deprecated
+Related Historical Event ID: EV-009, EV-015
+Sources
+- https://blog.lido.fi/lido-on-kusama-sunset/
+
+## Infrastructure Providers
+
+Provider: P2P.org
+Service: Node operator (genesis operator); validator infrastructure for Ethereum Beacon Chain; core contributor to protocol development (HIGH) [P2P.org, https://p2p.org/lido/]
+Criticality: Critical
+Status: Live
+Sources
+- https://p2p.org/lido/
+
+Provider: Figment
+Service: Node operator (genesis operator); validator infrastructure; oracle committee member (HIGH) [Lido Docs, https://docs.lido.fi/node-operators/]
+Criticality: Critical
+Status: Live
+Sources
+- https://docs.lido.fi/node-operators/
+
+Provider: Chorus One
+Service: Node operator (genesis operator); validator infrastructure; oracle committee member (HIGH) [Lido Docs, https://docs.lido.fi/node-operators/]
+Criticality: Critical
+Status: Live
+Sources
+- https://docs.lido.fi/node-operators/
+
+Provider: StakeFish
+Service: Node operator (genesis operator); validator infrastructure (HIGH) [Lido Docs, https://docs.lido.fi/node-operators/]
+Criticality: Critical
+Status: Live
+Sources
+- https://docs.lido.fi/node-operators/
+
+Provider: Sigma Prime
+Service: Security auditor (smart contracts: deposit, withdrawal, oracle, V2); multiple audit reports (HIGH) [Sigma Prime, https://sigmaPrime.io/lido.html]
+Criticality: High
+Status: Live (ongoing audit relationship)
+Sources
+- https://sigmaPrime.io/lido.html
+
+Provider: MixBytes
+Service: Security auditor (stETH, wstETH, Node Operator Registry, V2 modules) (HIGH) [MixBytes, https://mixbytes.io/audits/lido]
+Criticality: High
+Status: Live (ongoing audit relationship)
+Sources
+- https://mixbytes.io/audits/lido
+
+Provider: Quantstamp
+Service: Security auditor (Lido V2 staking router, withdrawal credentials) (HIGH) [Quantstamp, https://quantstamp.com/audits/lido-v2]
+Criticality: High
+Status: Live (ongoing audit relationship)
+Sources
+- https://quantstamp.com/audits/lido-v2
+
+Provider: Obol Network
+Service: DVT (Distributed Validator Technology) module for Staking Router; enables permissionless operator onboarding via Obol module (HIGH) [Lido Blog, https://blog.lido.fi/node-operator-expansion-2024/]
+Criticality: Medium
+Status: Live
+Sources
+- https://blog.lido.fi/node-operator-expansion-2024/
+
+Provider: SSV Network
+Service: DVT module for Staking Router; enables permissionless operator onboarding via SSV module (HIGH) [Lido Blog, https://blog.lido.fi/node-operator-expansion-2024/]
+Criticality: Medium
+Status: Live
+Sources
+- https://blog.lido.fi/node-operator-expansion-2024/
+
+Provider: Simple DVT
+Service: DVT module for Staking Router; simplified DVT onboarding module (HIGH) [Lido Blog, https://blog.lido.fi/node-operator-expansion-2024/]
+Criticality: Medium
+Status: Live
+Sources
+- https://blog.lido.fi/node-operator-expansion-2024/
+
+Provider: GitHub
+Service: Source control, CI/CD (GitHub Actions), issue tracking, project management (HIGH) [GitHub, https://github.com/lidofinance/lido-dao]
+Criticality: Medium
+Status: Live
+Sources
+- https://github.com/lidofinance/lido-dao
+
+Provider: Immunefi
+Service: Bug bounty platform (max reward $1M) (HIGH) [Immunefi, https://immunefi.com/bounty/lido/]
+Criticality: Medium
+Status: Live
+Sources
+- https://immunefi.com/bounty/lido/
+
+## Exchange Ecosystem
+
+Exchange: Binance
+Listing Status: Listed
+Spot: Yes (LDO/USDT, LDO/BTC, LDO/BUSD, stETH/ETH)
+Perpetual: Yes (LDOUSDT perpetual)
+OTC: Yes (via Binance OTC desk)
+Launchpool: No
+Status: Active
+Sources: https://www.binance.com/en/trade/LDO_USDT ; https://www.binance.com/en/futures/LDOUSDT
+
+Exchange: Coinbase
+Listing Status: Listed
+Spot: Yes (LDO/USD, LDO/USDC)
+Perpetual: No
+OTC: Yes (via Coinbase Prime OTC)
+Launchpool: No
+Status: Active
+Sources: https://www.coinbase.com/price/lido-dao ; https://pro.coinbase.com/trade/LDO-USD
+
+Exchange: Kraken
+Listing Status: Listed
+Spot: Yes (LDO/USD, LDO/EUR, LDO/USDT)
+Perpetual: Yes (LDO/USD perpetual via Kraken Futures)
+OTC: Yes (via Kraken OTC desk)
+Launchpool: No
+Status: Active
+Sources: https://trade.kraken.com/markets/kraken/ldo/usd ; https://futures.kraken.com/
+
+Exchange: Bybit
+Listing Status: Listed
+Spot: Yes (LDO/USDT)
+Perpetual: Yes (LDOUSDT perpetual)
+OTC: Yes (via Bybit OTC)
+Launchpool: No
+Status: Active
+Sources: https://www.bybit.com/trade/usdt/LDOUSDT ; https://www.bybit.com/trade/usdt/LDOUSDT
+
+Exchange: OKX
+Listing Status: Listed
+Spot: Yes (LDO/USDT)
+Perpetual: Yes (LDOUSDT perpetual)
+OTC: Yes (via OKX OTC)
+Launchpool: No
+Status: Active
+Sources: https://www.okx.com/trade/LDO-USDT ; https://www.okx.com/trade/LDO-USDT
+
+Exchange: Uniswap (DEX)
+Listing Status: Listed (permissionless)
+Spot: Yes (LDO/ETH, LDO/USDC, stETH/ETH, wstETH/ETH pools)
+Perpetual: No
+OTC: No
+Launchpool: No
+Status: Active
+Sources: https://app.uniswap.org/explore/tokens/ethereum/0x5A98FcBEA516Cf06857215779fD812CA3beF1B32
+
+Exchange: Curve Finance (DEX)
+Listing Status: Listed (permissionless)
+Spot: Yes (stETH/ETH pool, stETH/ETH metapool, LDO/ETH pool)
+Perpetual: No
+OTC: No
+Launchpool: No
+Status: Active
+Sources: https://curve.fi/#/ethereum/pools/factory-steth-eth
+
+Exchange: Balancer (DEX)
+Listing Status: Listed (permissionless)
+Spot: Yes (wstETH/ETH pools, LDO pools)
+Perpetual: No
+OTC: No
+Launchpool: No
+Status: Active
+Sources: https://app.balancer.fi/#/ethereum/pools
+
+## Wallet Ecosystem
+
+Wallet: MetaMask
+Support Type: Native support (stETH, wstETH, LDO as ERC-20); Lido widget integrated for staking directly in wallet (HIGH) [MetaMask, https://metamask.io/; Lido Blog, https://blog.lido.fi/metamask-integration/]
+Status: Live
+Sources
+- https://metamask.io/
+- https://blog.lido.fi/metamask-integration/
+
+Wallet: Ledger
+Support Type: Hardware wallet support for stETH, wstETH, LDO via Ledger Live and third-party apps (HIGH) [Ledger, https://www.ledger.com/supported-crypto-assets]
+Status: Live
+Sources
+- https://www.ledger.com/supported-crypto-assets
+
+Wallet: Trezor
+Support Type: Hardware wallet support for stETH, wstETH, LDO via Trezor Suite and third-party apps (HIGH) [Trezor, https://trezor.io/coins/]
+Status: Live
+Sources
+- https://trezor.io/coins/
+
+Wallet: Rainbow Wallet
+Support Type: Native stETH/wstETH display with rebasing balance; integrated Lido staking widget (HIGH) [Rainbow, https://rainbow.me/]
+Status: Live
+Sources
+- https://rainbow.me/
+
+Wallet: Coinbase Wallet
+Support Type: Native support for stETH, wstETH, LDO; integrated Lido staking (HIGH) [Coinbase Wallet, https://www.coinbase.com/wallet]
+Status: Live
+Sources
+- https://www.coinbase.com/wallet
+
+Wallet: Trust Wallet
+Support Type: Native support for stETH, wstETH, LDO as ERC-20 tokens (HIGH) [Trust Wallet, https://trustwallet.com/assets]
+Status: Live
+Sources
+- https://trustwallet.com/assets
+
+Wallet: Argent
+Support Type: Native stETH/wstETH support with rebasing display; integrated Lido staking (HIGH) [Argent, https://www.argent.xyz/]
+Status: Live
+Sources
+- https://www.argent.xyz/
+
+Wallet: Gnosis Safe / Safe
+Support Type: Multi-sig wallet supporting stETH, wstETH, LDO; used by DAO treasury and Oracle Committee (HIGH) [Safe, https://safe.global/]
+Status: Live
+Sources
+- https://safe.global/
+
+Wallet: Frame
+Support Type: Hardware-focused wallet with native stETH/wstETH support (MEDIUM) [Frame, https://frame.sh/]
+Status: Live
+Sources
+- https://frame.sh/
+
+Wallet: Rabby
+Support Type: Multi-chain wallet with native stETH/wstETH display and L2 support (Optimism, Arbitrum, Base, zkSync) (MEDIUM) [Rabby, https://rabby.io/]
+Status: Live
+Sources
+- https://rabby.io/
+
+## Developer Ecosystem
+
+SDK: Lido SDK (TypeScript/JavaScript)
+Description: Official TypeScript SDK for interacting with Lido contracts (stETH, wstETH, deposit, withdrawal, oracle); supports Ethereum and L2s (HIGH) [GitHub, https://github.com/lidofinance/lido-dao/tree/master/libs/sdk]
+Sources
+- https://github.com/lidofinance/lido-dao/tree/master/libs/sdk
+
+API: Lido REST API / GraphQL
+Description: Public API for stETH/wstETH balances, rewards, validator data, oracle reports; used by frontend and integrators (HIGH) [Lido Docs, https://docs.lido.fi/developers/api/]
+Sources
+- https://docs.lido.fi/developers/api/
+
+Developer Tools: Lido CLI
+Description: Command-line interface for staking, withdrawing, and querying protocol state (HIGH) [GitHub, https://github.com/lidofinance/lido-dao/tree/master/libs/cli]
+Sources
+- https://github.com/lidofinance/lido-dao/tree/master/libs/cli
+
+Developer Tools: Hardhat / Foundry Testing Framework
+Description: Smart contract development framework with Hardhat (primary) and Foundry (migration in progress); Mocha/Chai and Forge testing (HIGH) [GitHub, https://github.com/lidofinance/lido-dao/blob/master/hardhat.config.ts]
+Sources
+- https://github.com/lidofinance/lido-dao/blob/master/hardhat.config.ts
+
+Open Source Repository: lidofinance/lido-dao
+Description: Main monorepo containing all smart contracts (Solidity), frontend (React/Next.js), SDK, CLI, oracle daemon (Rust), deployment scripts (HIGH) [GitHub, https://github.com/lidofinance/lido-dao]
+Sources
+- https://github.com/lidofinance/lido-dao
+
+Open Source Repository: lidofinance/lido-oracle
+Description: Oracle Committee daemon (Rust) for beacon chain reporting (HIGH) [GitHub, https://github.com/lidofinance/lido-oracle]
+Sources
+- https://github.com/lidofinance/lido-oracle
+
+Open Source Repository: lidofinance/audits
+Description: All security audit reports publicly available (HIGH) [GitHub, https://github.com/lidofinance/audits]
+Sources
+- https://github.com/lidofinance/audits
+
+Developer Portal: https://docs.lido.fi/developers/
+Description: Official developer documentation with guides, API reference, SDK reference, contract addresses, integration examples (HIGH) [Lido Docs, https://docs.lido.fi/developers/]
+Sources
+- https://docs.lido.fi/developers/
+
+Hackathon: ETHGlobal / ETHDenver / ETHTokyo / Devcon participation
+Description: Lido sponsors and participates in major Ethereum hackathons; provides bounties for stETH/wstETH integrations (HIGH) [Lido Blog, https://blog.lido.fi/hackathon-bounties/]
+Sources
+- https://blog.lido.fi/hackathon-bounties/
+
+Grant Program: Lido DAO Grants Program
+Description: DAO-funded grants for core protocol development, tooling, research, security, ecosystem growth; paid in LDO/DAI; managed via governance proposals (HIGH) [Lido DAO Forum, https://research.lido.fi/t/grants-program/]
+Sources
+- https://research.lido.fi/t/grants-program/
+
+Grant Program: Lido Core Contributor Budget
+Description: Quarterly budget for core contributor teams (Protocol Engineering, Frontend/SDK, Node Operator Tooling, Oracle, DevOps, Security, Governance Ops); >20 active contributors (HIGH) [Lido DAO Forum, https://research.lido.fi/t/core-contributors/]
+Sources
+- https://research.lido.fi/t/core-contributors/
+
+## Applications
+
+Application: stETH
+Category: Liquid Staking Token (Rebasing ERC-20)
+Relationship: Core product — represents staked ETH + rewards; rebases daily; primary asset of Lido protocol (HIGH) [Lido Docs, https://docs.lido.fi/products/steth/]
+Status: Live
+Sources
+- https://docs.lido.fi/products/steth/
+
+Application: wstETH
+Category: Liquid Staking Token (Wrapped Non-rebasing ERC-20)
+Relationship: Core product — 1:1 wrapper for stETH; enables DeFi composability (Aave, Maker, bridges, L2s) (HIGH) [Lido Docs, https://docs.lido.fi/products/wsteth/]
+Status: Live
+Sources
+- https://docs.lido.fi/products/wsteth/
+
+Application: stMATIC
+Category: Liquid Staking Token (Polygon)
+Relationship: Core product on Polygon — rebasing token for staked MATIC; native Polygon deployment (HIGH) [Lido Docs, https://docs.lido.fi/networks/polygon/]
+Status: Live
+Sources
+- https://docs.lido.fi/networks/polygon/
+
+Application: Lido UI (stake.lido.fi)
+Category: Frontend / Web App
+Relationship: Official frontend for staking ETH → stETH, wrapping/unwrapping wstETH, withdrawing, viewing rewards; multi-chain support (HIGH) [Lido UI, https://stake.lido.fi/]
+Status: Live
+Sources
+- https://stake.lido.fi/
+
+Application: Lido on EigenLayer (via wstETH)
+Category: Restaking Integration
+Relationship: wstETH deposited into EigenLayer contracts for restaking rewards; Lido does not operate separate contracts (HIGH) [EigenLayer, https://www.eigenlayer.xyz/]
+Status: Live
+Sources
+- https://www.eigenlayer.xyz/
+
+Application: Curve stETH/ETH Pool
+Category: DeFi / AMM Pool
+Relationship: Primary liquidity venue; stETH/ETH pool with deep liquidity; Lido incentives via CRV/CVX gauge votes (HIGH) [Curve, https://curve.fi/#/ethereum/pools/factory-steth-eth]
+Status: Live
+Sources
+- https://curve.fi/#/ethereum/pools/factory-steth-eth
+
+Application: Aave stETH/wstETH Markets
+Category: DeFi / Money Market
+Relationship: Supply/borrow markets for stETH and wstETH on Ethereum, Optimism, Arbitrum, Base, Polygon; collateral factor 82.5% (HIGH) [Aave, https://app.aave.com/reserve-overview/?underlyingAsset=0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84]
+Status: Live
+Sources
+- https://app.aave.com/reserve-overview/?underlyingAsset=0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84
+
+Application: MakerDAO wstETH Vault
+Category: DeFi / CDP
+Relationship: wstETH collateral for DAI minting; PSM integration; governance-determined risk parameters (HIGH) [MakerDAO, https://makerdao.com/en/whitepaper/]
+Status: Live
+Sources
+- https://makerdao.com/en/whitepaper/
+
+Application: Yearn stETH/wstETH Vaults
+Category: DeFi / Yield Aggregator
+Relationship: Automated yield strategies for stETH/wstETH (leveraged staking, looping); vault management by Yearn strategists (HIGH) [Yearn, https://yearn.fi/#/vaults]
+Status: Live
+Sources
+- https://yearn.fi/#/vaults
+
+Application: Pendle wstETH Yield Trading
+Category: DeFi / Yield Derivatives
+Relationship: wstETH yield tokenization (PT/YT) on Ethereum, Arbitrum, Optimism; enables fixed yield speculation (MEDIUM) [Pendle, https://app.pendle.finance/trade]
+Status: Live
+Sources
+- https://app.pendle.finance/trade
+
+Application: Morpho wstETH Markets
+Category: DeFi /

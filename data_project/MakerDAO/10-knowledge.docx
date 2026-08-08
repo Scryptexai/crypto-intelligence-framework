@@ -1,0 +1,143 @@
+PROJECT: MakerDAO
+
+Core Insights
+
+Insight 1: Protokol CDP overcollateralized dapat bertahan >7 tahun dan menjadi stablecoin terdesentralisasi terbesar tanpa fundraising tradisional pasca-launch
+Explanation: MakerDAO hanya mengumpulkan $1M private sale 2017-Q1【Phase 5 — Funding History】, kemudian sepenuhnya mendanai operasional (Core Unit budget, DSR, MKR burn) dari protocol revenue on-chain: Stability Fees, PSM Fees, Liquidation Penalties, RWA Yield, Spark Fee Flow【Phase 5 — Fundraising Mechanism】. Model self-sustaining ini membuktikan CDP protocol bisa financially independent tanpa VC dependency.
+Evidence: Private sale $1M 2017-Q1【Phase 5 — Funding History】; Zero Series A/public sale【Phase 5 — Token Sale】; Protocol revenue retention seit 2019【Phase 5 — Fundraising Mechanism】; TVL ~$7.2B & DAI supply ~5.3B 2024-08【Phase 8 — Adoption Metrics】
+Supporting Dataset: Phase 3 EV-004, EV-005, EV-007; Phase 5 Funding History, Fundraising Mechanism, Revenue Model; Phase 8 Adoption Metrics
+Confidence: HIGH
+
+Insight 2: Transisi dari Foundation-centric ke DAO-native dengan legal wrapper (Cayman Foundation) memungkinkan skalasi RWA >$1B sambil melindungi kontributor
+Explanation: Maker Foundation dibubarkan 2021-07-31【Phase 3 — EV-011】, aset dialihkan ke DAO. Cayman Foundation didirikan 2022-03【Phase 3 — EV-013】 sebagai legal wrapper untuk menandatangani kontrak RWA dengan BlockTower/Monetalis/Coinbase Prime【Phase 7 — Major Integrations BlockTower Andromeda, Monetalis Clydesdale】. Struktur ini memisahkan governance protocol (on-chain) dari legal liability (off-chain).
+Evidence: Foundation dissolution 2021-07-31【Phase 3 — EV-011】; Cayman Foundation 2022-03【Phase 3 — EV-013】; RWA Vaults launch 2022-07【Phase 3 — EV-014】; RWA AUM >$1B 2024【Phase 3 — EV-022】; Phase 2 Entity MakerDAO Cayman Foundation【Phase 2 — Entity MakerDAO Cayman Foundation】
+Supporting Dataset: Phase 3 EV-011, EV-013, EV-014, EV-022; Phase 2 Entity Maker Foundation, MakerDAO Cayman Foundation, MakerDAO DAO; Phase 7 Major Integrations, External Dependencies
+Confidence: HIGH
+
+Insight 3: PSM (Peg Stability Module) mengubah dynamic peg defense dari market-based (auction) ke arbitrase 1:1 efisien, tapi menciptakan ketergantungan >60% supply pada stablecoin terpusat (USDC/USDT/GUSD)
+Explanation: PSM launch 2020-07【Phase 3 — EV-010】 memungkinkan swap DAI↔USDC fee 0.1% LR 101%. Hasilnya peg DAI sangat stabil【Phase 8 — Narrative Position Decentralized Stablecoin】, tapi >60% DAI supply backed by PSM stablecoins【Phase 5 — Financial Risk Treasury Concentration】. Trade-off: stabilitas peg vs centralization risk (censorship/blacklist oleh emisyen USDC/USDT).
+Evidence: PSM launch 2020-07【Phase 3 — EV-010】; PSM dominance >60% supply 2024【Phase 3 — EV-021】; Financial Risk centralization【Phase 5 — Financial Risk PSM Concentration】; Revenue Model PSM Fees【Phase 5 — Revenue Model】
+Supporting Dataset: Phase 3 EV-010, EV-021; Phase 4 Core Components PSM; Phase 5 Revenue Model, Financial Risk; Phase 8 Narrative Position
+Confidence: HIGH
+
+Insight 4: Endgame Plan (MKR→SKY migration, SubDAO federation, fee switch) menjawab fundamental governance token value accrual problem: MKR hanya punya recapitalization utility, tidak ada yield native
+Explanation: MKR utility terbatas pada governance voting, recapitalization (Flop mint saat deficit), dan buyback (Flap burn saat surplus)【Phase 6 — Utility MKR】. Endgame 2023-09【Phase 3 — EV-017】 mengusulkan SKY dengan fee switch (protocol surplus → SKY stakers)【Phase 6 — Utility SKY Fee Switch】, SubDAO mandiri【Phase 2 — Entity Spark Protocol, Sky.money】, dan migrasi 1:24.000【Phase 6 — Token Information SKY】. Migration Phase 1 mulai 2024-08【Phase 3 — EV-020】.
+Evidence: Endgame announcement 2023-09【Phase 3 — EV-017】; MKR utility no native yield【Phase 6 — Utility MKR】; SKY fee switch planned【Phase 6 — Utility SKY Fee Switch】; Migration ratio 1:24.000【Phase 6 — Token Information SKY】; Sky.money launch 2024-07【Phase 3 — EV-019】
+Supporting Dataset: Phase 3 EV-017, EV-019, EV-020; Phase 6 Token Information SKY, Utility, Inflation/Deflation; Phase 2 Entity Spark Protocol, Sky.money; Phase 8 Competitor Landscape
+Confidence: HIGH
+
+Insight 5: Canonical Bridge mint/burn model (Teleporter) memungkinkan multi-chain expansion tanpa trusted intermediary, menjaga supply consistency lintas 7 chain
+Explanation: Alih-alih third-party bridge (Wormhole, Multichain), Maker membangun Teleporter sendiri: mint/burn DAI/MKR di L1↔L2 menggunakan official message passing (Arbitrum L1Gateway, Optimism L1CrossDomainMessenger, Polygon FxPortal, Gnosis AMB, Base/Starknet custom)【Phase 4 — Cross-chain Messaging】. Deployments ke Arbitrum, Optimism, Polygon, Gnosis 2022-2023【Phase 3 — EV-015】, Base & Starknet 2023-2024【Phase 3 — EV-018】. Supply total konsisten lintas chain.
+Evidence: Canonical Bridge architecture【Phase 4 — Cross-chain Messaging】; Multi-chain deployments EV-015, EV-018【Phase 3 — EV-015, EV-018】; Bridge UI live【Phase 7 — Infrastructure Providers】; Bridge liquidity mint/burn model【Phase 8 — Trading Markets Bridge Liquidity】
+Supporting Dataset: Phase 3 EV-015, EV-018; Phase 4 System Architecture, Core Components Canonical Bridge; Phase 7 External Dependencies Chains, Infrastructure Providers; Phase 8 Trading Markets
+Confidence: HIGH
+
+Insight 6: RWA Vault yield (US Treasury bills ~5%) menjadi revenue driver utama melebihi crypto Stability Fees, mengubah profil risiko protokol dari crypto volatility ke tradfi counterparty risk
+Explanation: Vault RWA BlockTower Andromeda & Monetalis Clydesdale AUM >$1B 2024【Phase 3 — EV-022】. RWA yield mendorong DSR yield dan protocol surplus【Phase 5 — Revenue Model RWA Vault Yield】, mendanai Core Unit budget dan MKR burn【Phase 5 — Fundraising Mechanism DAO Treasury Allocation】. Ketergantungan pada BlockTower, Monetalis, Coinbase Prime sebagai counterparties tradfi【Phase 5 — Financial Dependencies RWA Asset Managers】.
+Evidence: RWA Vaults launch 2022-07【Phase 3 — EV-014】; RWA AUM >$1B 2024【Phase 3 — EV-022】; Revenue Model RWA Yield【Phase 5 — Revenue Model】; Financial Dependencies RWA【Phase 5 — Financial Dependencies】; Narrative Position RWA【Phase 8 — Narrative Position】
+Supporting Dataset: Phase 3 EV-014, EV-022; Phase 5 Revenue Model, Revenue History, Financial Dependencies; Phase 7 Major Integrations BlockTower, Monetalis; Phase 8 Narrative Position, Adoption Metrics
+Confidence: HIGH
+
+Insight 7: Modular smart contract architecture (Vat, Jug, Pot, Vow, PSM, Oracle, Bridge, SubDAO) dengan upgrade via Executive Spell + GSM 24-48hr delay memungkinkan evolusi sistemik tanpa breaking changes
+Explanation: Setiap major upgrade (MCD, PSM, Liquidation 2.0, PIVOT, RWA, Bridge, Sky) dieksekusi sebagai governance spell【Phase 4 — Technical Upgrade History】. Modul terpisah di-upgrade independen: Vat (accounting), Jug (fees), Pot (DSR), Vow (surplus/deficit), PSM (peg), Oracle/PIVOT (price feeds), Bridge (cross-chain), SubDAO contracts【Phase 4 — Core Components】. GSM delay melindungi dari malicious spell execution【Phase 4 — Security Model Governance Control】.
+Evidence: 13 major upgrades 2019-2024【Phase 4 — Technical Upgrade History】; 10+ core modules【Phase 4 — Core Components】; GSM 24-48hr delay【Phase 4 — Security Model】; Modular design【Phase 4 — System Architecture】
+Supporting Dataset: Phase 3 EV-007, EV-010, EV-008, EV-017, EV-014, EV-015, EV-019; Phase 4 Core Components, Technical Upgrade History, System Architecture, Security Model
+Confidence: HIGH
+
+Insight 8: Formal verification (Certora/K Framework) pada modul kritis (Vat, Jug, Pot, NewToken SKY) + 11+ major audits (Trail of Bits x3, OpenZeppelin x2, Sigma Prime x2, PeckShield x2) menciptakan security posture tinggi untuk protocol mengelola $7B+ TVL
+Explanation: Audit history mencakup MCD pre-launch 2019【Phase 4 — Audit History Trail of Bits, OpenZeppelin】, post-Black Thursday 2020【Phase 4 — Audit History Sigma Prime】, PSM 2020【Phase 4 — Audit History PeckShield】, Bridge 2022【Phase 4 — Audit History Trail of Bits】, RWA 2022【Phase 4 — Audit History OpenZeppelin】, Spark 2023【Phase 4 — Audit History Sigma Prime】, PIVOT 2023【Phase 4 — Audit History PeckShield】, Sky 2024【Phase 4 — Audit History Trail of Bits】. Formal verification Vat/Jug/Pot 2021 & SKY 2024【Phase 4 — Audit History Certora】.
+Evidence: 11+ major audits【Phase 4 — Audit History】; Formal verification Vat/Jug/Pot 2021 & SKY 2024【Phase 4 — Audit History Certora】; Security Model Formal Verification【Phase 4 — Security Model】; TVL ~$7.2B 2024【Phase 8 — Adoption Metrics】
+Supporting Dataset: Phase 3 EV-007, EV-009, EV-010, EV-014, EV-015, EV-016, EV-017, EV-019; Phase 4 Audit History, Security Model; Phase 8 Adoption Metrics
+Confidence: HIGH
+
+Insight 9: SubDAO model (Spark Protocol, Sky.money) dengan fee sharing ke Maker Treasury memungkinkan spesialisasi produk (lending, frontend, savings) sambil mempertahankan value accrual ke protocol utama
+Explanation: Spark Protocol launch 2023-05【Phase 3 — EV-016】: SparkLend, sDAI (ERC-4626 DSR wrapper), liquidity facilities; fee flow ke Maker Treasury【Phase 5 — Revenue Model Spark Protocol Fee Flow】. Sky.money 2024-07【Phase 3 — EV-019】: SSR, SKY rewards, migration UI. Endgame memperluas ke SubDAO RWA-specific, Governance AI【Phase 3 — EV-017】. Internal competition untuk user flow (Spark vs Aave, Sky vs Oasis)【Phase 8 — Competitor Landscape Internal SubDAO】.
+Evidence: Spark launch EV-016【Phase 3 — EV-016】; Sky.money launch EV-019【Phase 3 — EV-019】; Fee sharing revenue【Phase 5 — Revenue Model】; SubDAO contracts architecture【Phase 4 — Core Components SubDAO Contracts】; Competitor Landscape Internal【Phase 8 — Competitor Landscape】
+Supporting Dataset: Phase 3 EV-016, EV-017, EV-019; Phase 4 Core Components SubDAO Contracts; Phase 5 Revenue Model; Phase 7 Major Integrations Spark Protocol, Sky.money; Phase 8 Competitor Landscape
+Confidence: HIGH
+
+Insight 10: Black Thursday 2020-03-12 (defisit ~$5.3M, MKR mint ~50K via Flop) memvalidasi MKR sebagai backstop recapitalization terakhir dan memicu sistemik upgrades: Liquidation 2.0 (Dutch auction kicker), OSM hardening, PSM launch
+Explanation: ETH crash >50% dalam jam, oracle latency & 0-bid auctions menyebabkan bad debt【Phase 3 — EV-009】. Emergency spell mint MKR via Flop auction cover deficit【Phase 6 — Inflation/Deflation MKR Flop Auction】. Upgrade pasca-krisis: Liquidation 2.0 2020-08【Phase 4 — Technical Upgrade History Liquidation 2.0】, PSM 2020-07【Phase 3 — EV-010】, OSM delay diperpanjang. Mekanisme Flop/Flap terbukti kerja sebagai designed.
+Evidence: Black Thursday EV-009【Phase 3 — EV-009】; MKR mint ~50K Flop【Phase 6 — Inflation/Deflation MKR】; Liquidation 2.0 upgrade【Phase 4 — Technical Upgrade History】; PSM launch EV-010【Phase 3 — EV-010】; OSM hardening【Phase 4 — Oracle Network】
+Supporting Dataset: Phase 3 EV-009, EV-010; Phase 4 Technical Upgrade History, Oracle Network; Phase 6 Inflation/Deflation MKR, Major Token Events Black Thursday
+Confidence: HIGH
+
+Strategic Principles
+
+Principle 1: Modular First — Bangun protokol sebagai modul terpisah yang di-upgrade independen via governance spell
+Explanation: Arsitektur modular (Vat, Jug, Pot, Vow, PSM, Oracle, Bridge, SubDAO) memungkinkan 13 major upgrades 2019-2024 tanpa breaking changes【Phase 4 — Core Components, Technical Upgrade History】. Setiap modul punya responsibility tunggal: Vat (accounting), Jug (fee accumulation), Pot (DSR), Vow (surplus/deficit), PSM (peg), Oracle/PIVOT (price feeds), Bridge (cross-chain), SubDAO contracts【Phase 4 — Core Components】.
+Evidence: 10+ core modules【Phase 4 — Core Components】; 13 major upgrades via Executive Spell【Phase 4 — Technical Upgrade History】; GSM delay 24-48hr protects upgrades【Phase 4 — Security Model Governance Control】; System Architecture Modular Design【Phase 4 — System Architecture】
+Supporting Dataset: Phase 3 EV-007, EV-010, EV-008, EV-017, EV-014, EV-015, EV-019; Phase 4 Core Components, Technical Upgrade History, System Architecture, Security Model
+Confidence: HIGH
+
+Principle 2: Security Before Growth — Formal verification + multiple audits + Emergency Shutdown Module (ESM) sebagai nuclear option sebelum scaling
+Explanation: Formal verification Vat/Jug/Pot (Certora 2021) & SKY (Certora 2024)【Phase 4 — Audit History Certora】. 11+ major audits dari 5 firm berbeda【Phase 4 — Audit History】. ESM live sejak MCD 2019 — MKR holders bisa trigger global shutdown, sistem berhenti total, DAI holders klaim collateral pro-rata【Phase 4 — Security Model Emergency Shutdown】. Belum pernah dieksekusi tapi eksistensinya mencegah governance attack ekstrem.
+Evidence: Formal verification 2 engagements【Phase 4 — Audit History Certora】; 11+ audits Trail of Bits, OpenZeppelin, Sigma Prime, PeckShield【Phase 4 — Audit History】; ESM live seit 2019-11-18【Phase 4 — Security Model】; TVL $7.2B secured【Phase 8 — Adoption Metrics】
+Supporting Dataset: Phase 3 EV-007, EV-014, EV-016, EV-019; Phase 4 Audit History, Security Model; Phase 8 Adoption Metrics
+Confidence: HIGH
+
+Principle 3: Protocol Revenue Retention Over External Fundraising — Zero traditional fundraising post-2017; semua ops funding dari on-chain revenue
+Explanation: Hanya $1M private sale 2017-Q1【Phase 5 — Funding History】. Tidak ada Series A, public sale, VC round, grant ke DAO treasury【Phase 5 — Fundraising Mechanism】. Semua funding: Stability Fees, PSM Fees, Liquidation Penalties, RWA Yield, Spark Fee Flow, DSR Spread, Flap MKR Burn【Phase 5 — Revenue Model】. Core Unit budget on-chain via MIP dari surplus DAI【Phase 5 — Fundraising Mechanism DAO Treasury Allocation】.
+Evidence: Private sale $1M only【Phase 5 — Funding History】; Zero public sale/VC【Phase 5 — Token Sale, Fundraising Mechanism】; 7 live revenue streams【Phase 5 — Revenue Model】; Core Unit budget via MIP【Phase 5 — Fundraising Mechanism】; Phase 6 Token Sale no TGE【Phase 6 — Token Sale】
+Supporting Dataset: Phase 3 EV-004; Phase 5 Funding History, Fundraising Mechanism, Revenue Model; Phase 6 Token Sale
+Confidence: HIGH
+
+Principle 4: Canonical Infrastructure Over Third-Party Dependencies — Bangun bridge, oracle, indexing sendiri bukan rely pada external protocols
+Explanation: Canonical Bridge Teleporter mint/burn model sendiri【Phase 4 — Cross-chain Messaging】, bukan Wormhole/Multichain. Oracle Module OSM+PIVOT aggregator sendiri【Phase 4 — Oracle Network】, multi-provider (Chainlink, API3, Chronicle, RedStone)【Phase 7 — External Dependencies Oracle Providers】. The Graph Subgraph sendiri untuk indexing【Phase 7 — Infrastructure Providers The Graph】. Keeper automation via Gelato/Chainlink Automation tapi logic on-chain【Phase 4 — Current Technical Stack】.
+Evidence: Canonical Bridge mint/burn【Phase 4 — Cross-chain Messaging】; Oracle Module OSM+PIVOT【Phase 4 — Oracle Network】; Multi-oracle providers【Phase 7 — External Dependencies】; Subgraph indexing【Phase 7 — Infrastructure Providers】; Bridge deployments 7 chains【Phase 3 — EV-015, EV-018】
+Supporting Dataset: Phase 3 EV-015, EV-018; Phase 4 System Architecture, Core Components, Oracle Network, Current Technical Stack; Phase 7 External Dependencies, Infrastructure Providers
+Confidence: HIGH
+
+Principle 5: Progressive Decentralization Via Legal Wrapper — Foundation → DAO → Cayman Foundation wrapper → SubDAO federation
+Explanation: Maker Foundation 2015-2021【Phase 2 — Entity Maker Foundation】→ Dissolution 2021-07-31【Phase 3 — EV-011】→ DAO-native governance via Core Units 2021-07【Phase 3 — EV-012】→ Cayman Foundation 2022-03 legal wrapper【Phase 3 — EV-013】→ SubDAO (Spark, Sky) semi-autonomous 2023-2024【Phase 3 — EV-016, EV-019】→ Endgame SubDAO federation【Phase 3 — EV-017】. Setiap tahap menambah autonomy sambil manage legal liability.
+Evidence: Foundation dissolution EV-011【Phase 3 — EV-011】; Core Units EV-012【Phase 3 — EV-012】; Cayman Foundation EV-013【Phase 3 — EV-013】; Spark EV-016, Sky EV-019【Phase 3 — EV-016, EV-019】; Endgame EV-017【Phase 3 — EV-017】; Phase 2 Entity progression
+Supporting Dataset: Phase 2 Entity Maker Foundation, MakerDAO DAO, Core Units, MakerDAO Cayman Foundation, Spark Protocol, Sky.money; Phase 3 EV-011, EV-012, EV-013, EV-016, EV-017, EV-019
+Confidence: HIGH
+
+Principle 6: RWA Integration Via Institutional-Grade Counterparties — Pilih partner tradfi dengan kredibilitas tinggi (BlockTower, Monetalis, Coinbase Prime) bukan DeFi-native
+Explanation: BlockTower ($10B+ AUM asset manager)【Phase 2 — Entity BlockTower】, Monetalis (structured credit specialist)【Phase 2 — Entity Monetalis】, Coinbase Prime (regulated institutional custodian)【Phase 2 — Entity Coinbase Prime】. Vault RWA-001 & RWA-002 deploy 2022-07【Phase 3 — EV-014】. AUM >$1B 2024【Phase 3 — EV-022】. Bridge ke tradfi infrastructure, bukan DeFi yield farming.
+Evidence: BlockTower Andromeda, Monetalis Clydesdale Vaults【Phase 3 — EV-014】; RWA AUM >$1B EV-022【Phase 3 — EV-022】; Counterparty quality【Phase 2 — Entity BlockTower, Monetalis, Coinbase Prime】; Financial Dependencies RWA【Phase 5 — Financial Dependencies】
+Supporting Dataset: Phase 2 Entity BlockTower, Monetalis, Coinbase Prime; Phase 3 EV-014, EV-022; Phase 5 Financial Dependencies; Phase 7 Major Integrations, External Dependencies; Phase 8 Narrative Position RWA
+Confidence: HIGH
+
+Principle 7: Token Migration As Governance Evolution — MKR→SKY 1:24.000 memisahkan recapitalization function (MKR legacy) dari governance+yield function (SKY)
+Explanation: MKR utility: governance + recapitalization (Flop mint) + buyback (Flap burn)【Phase 6 — Utility MKR】. SKY utility: governance + fee switch yield (protocol surplus → stakers) + SubDAO rewards【Phase 6 — Utility SKY】. Migration 1 MKR = 24.000 SKY【Phase 6 — Token Information SKY】. MKR supply net deflationary 1M→~977K【Phase 6 — Inflation/Deflation MKR】. SKY supply baru ~23.46M estimasi【Phase 6 — Supply SKY】.
+Evidence: MKR utility no yield【Phase 6 — Utility MKR】; SKY fee switch planned【Phase 6 — Utility SKY Fee Switch】; Migration ratio 1:24.000【Phase 6 — Token Information SKY】; MKR net deflationary【Phase 6 — Inflation/Deflation MKR】; Endgame announcement EV-017【Phase 3 — EV-017】
+Supporting Dataset: Phase 3 EV-017, EV-019, EV-020; Phase 6 Token Information SKY, Utility, Inflation/Deflation, Supply; Phase 8 Narrative Position, Competitor Landscape
+Confidence: HIGH
+
+Principle 8: Oracle Security Module (OSM) 1-Hour Delay As Non-Negotiable Manipulation Protection — Semua price feed wajib lewat OSM delay 1 jam sebelum update on-chain
+Explanation: OSM delay 1 jam mencegah flash loan attack & manipulasi harga instan【Phase 4 — Oracle Network】. Black Thursday 2020-03-12 oracle latency menyebabkan 0-bid liquidations【Phase 3 — EV-009】. PIVOT upgrade 2023-09 mengganti Medianizer untuk gas efficiency & flexibility feed aggregation【Phase 4 — Technical Upgrade History PIVOT】. Multi-provider: Chainlink, API3, Chronicle, RedStone【Phase 7 — External Dependencies Oracle Providers】.
+Evidence: OSM 1hr delay【Phase 4 — Oracle Network】; Black Thursday trigger EV-009【Phase 3 — EV-009】; PIVOT upgrade 2023-09【Phase 4 — Technical Upgrade History】; Multi-provider oracle【Phase 7 — External Dependencies】
+Supporting Dataset: Phase 3 EV-009, EV-017; Phase 4 Oracle Network, Technical Upgrade History, Security Model; Phase 7 External Dependencies
+Confidence: HIGH
+
+Success Factors
+
+Factor 1: Self-Sustaining Revenue Model — Protocol revenue retention (Stability Fees, PSM Fees, Liquidation Penalties, RWA Yield, Spark Fee Flow) mendanai 100% operasional sejak 2021 tanpa external capital
+Explanation: Zero fundraising post-2017【Phase 5 — Fundraising Mechanism】. 7 live revenue streams【Phase 5 — Revenue Model】. Surplus management otomatis via Flap/Flop auctions【Phase 5 — Revenue Model Flap】. Core Unit budget transparan on-chain via MIP【Phase 5 — Fundraising Mechanism DAO Treasury Allocation】. Financial independence memungkinkan long-term planning tanpa investor pressure.
+Evidence: Private sale $1M only 2017【Phase 5 — Funding History】; 7 revenue streams live【Phase 5 — Revenue Model】; Flap/Flop automated surplus management【Phase 4 — Core Components Vow】; Core Unit budget MIP【Phase 5 — Fundraising Mechanism】; TVL $7.2B sustained【Phase 8 — Adoption Metrics】
+Supporting Dataset: Phase 3 EV-004, EV-011, EV-012; Phase 4 Core Components; Phase 5 Funding History, Fundraising Mechanism, Revenue Model; Phase 8 Adoption Metrics
+Confidence: HIGH
+
+Factor 2: Modular Architecture Enabling Systematic Upgrades — 13 major upgrades 2019-2024 via Executive Spell + GSM delay tanpa breaking changes
+Explanation: Modular design (Vat, Jug, Pot, Vow, PSM, Oracle, Bridge, SubDAO)【Phase 4 — Core Components】. Setiap upgrade dieksekusi sebagai governance spell: MCD 2019-11-18【Phase 3 — EV-007】, PSM 2020-07【Phase 3 — EV-010】, Liquidation 2.0 2020-08【Phase 4 — Technical Upgrade History】, PIVOT 2023-09【Phase 4 — Technical Upgrade History】, RWA 2022-07【Phase 3 — EV-014】, Bridge multi-chain 2022-2024【Phase 3 — EV-015, EV-018】, Sky 2024-07【Phase 3 — EV-019】. GSM 24-48hr delay melindungi【Phase 4 — Security Model】.
+Evidence: 13 major upgrades【Phase 4 — Technical Upgrade History】; Modular architecture【Phase 4 — System Architecture】; GSM delay【Phase 4 — Security Model Governance Control】; Executive Spell process【Phase 6 — Governance Proposal System】
+Supporting Dataset: Phase 3 EV-007, EV-010, EV-014, EV-015, EV-017, EV-018, EV-019; Phase 4 Core Components, System Architecture, Technical Upgrade History, Security Model; Phase 6 Governance
+Confidence: HIGH
+
+Factor 3: RWA Pivot Unlocking TradFi Yield At Scale — Vault RWA >$1B AUM (BlockTower, Monetalis, Coinbase Prime) menjadi revenue driver utama 2024
+Explanation: RWA Vaults launch 2022-07【Phase 3 — EV-014】. Institutional-grade counterparties【Phase 2 — Entity BlockTower, Monetalis, Coinbase Prime】. Yield tradfi (T-bills ~5%) melebihi crypto Stability Fees【Phase 5 — Revenue Model RWA Vault Yield】. RWA yield mendorong DSR yield competitive【Phase 8 — Adoption Metrics】. Maker menjadi largest DeFi RWA protocol【Phase 8 — Narrative Position RWA】.
+Evidence: RWA Vaults EV-014【Phase 3 — EV-014】; RWA AUM >$1B EV-022【Phase 3 — EV-022】; Revenue driver utama 2024【Phase 5 — Revenue History】; Largest DeFi RWA protocol【Phase 8 — Narrative Position】; Market Share RWA 80%+【Phase 8 — Market Share】
+Supporting Dataset: Phase 3 EV-014, EV-022; Phase 2 Entity BlockTower, Monetalis, Coinbase Prime; Phase 5 Revenue Model, Revenue History; Phase 7 Major Integrations; Phase 8 Narrative Position, Market Share, Adoption Metrics
+Confidence: HIGH
+
+Factor 4: Canonical Multi-Chain Deployment Via Mint/Burn Bridge — DAI/MKR native di 7 chain (Ethereum, Arbitrum, Optimism, Polygon, Gnosis, Base, Starknet) supply konsisten tanpa trusted intermediary
+Explanation: Teleporter canonical bridge mint/burn model【Phase 4 — Cross-chain Messaging】. Deployments via governance spell per chain: 4 chain 2022-2023【Phase 3 — EV-015】, Base & Starknet 2023-2024【Phase 3 — EV-018】. Bridge UI bridge.makerdao.com【Phase 7 — Infrastructure Providers】. Supply consistency terjaga lintas chain【Phase 8 — Trading Markets Bridge Liquidity】.
+Evidence: Canonical Bridge architecture【Phase 4 — Cross-chain Messaging】; 7 chain deployments EV-015, EV-018【Phase 3 — EV-015, EV-018】; Bridge UI live【Phase 7 — Infrastructure Providers】; Mint/burn model supply consistency【Phase 8 — Trading Markets】
+Supporting Dataset: Phase 3 EV-015, EV-018; Phase 4 System Architecture, Core Components Canonical Bridge; Phase 7 External Dependencies Chains, Infrastructure Providers; Phase 8 Trading Markets
+Confidence: HIGH
+
+Factor 5: SubDAO Federation Model — Spark Protocol (lending/liquidity) & Sky.money (frontend/savings) sebagai SubDAO semi-autonomous dengan fee sharing ke Maker Treasury
+Explanation: Spark launch 2023-05【Phase 3 — EV-016】: SparkLend, sDAI, fee flow ke Treasury【Phase 5 — Revenue Model Spark Protocol Fee Flow】. Sky.money 2024-07【Phase 3 — EV-019】: SSR, SKY rewards, migration UI. Endgame memperluas ke SubDAO RWA-specific, Governance AI【Phase 3 — EV-017】. Internal competition drives innovation (Spark vs Aave, Sky vs Oasis)【Phase 8 — Competitor Landscape Internal SubDAO】.
+Evidence: Spark EV-016, Sky EV-019【Phase 3 — EV-016, EV-019】

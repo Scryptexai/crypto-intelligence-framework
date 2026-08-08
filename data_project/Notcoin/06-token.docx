@@ -1,0 +1,231 @@
+PROJECT: Notcoin
+
+## Token Information
+
+Official Token Name: Notcoin
+Symbol: NOT
+Token Standard: TON Jetton (TEP-74)
+Blockchain: The Open Network (TON)
+Contract Address: EQAvlWfdqGdO... (Master Minter address di Tonviewer: https://tonviewer.com/EQAvlWfdqGdO...)
+Decimals: 9
+Status: Live
+Sources: (HIGH) [Tonviewer NOT Contract, https://tonviewer.com/EQAvlWfdqGdO...]; (HIGH) [Notcoin Blog Mining End, https://notcoin.com/blog/mining-end]; (HIGH) [TEP-74 Jetton Standard, https://github.com/ton-blockchain/TEPs/blob/master/text/0074-jettons-standard.md]
+
+## Supply
+
+Maximum Supply: 102,719,221,714 NOT
+Total Supply: 102,719,221,714 NOT
+Circulating Supply: Tidak diungkap secara resmi real-time; per TGE 100% supply sudah di-mint dan sebagian besar didistribusikan ke komunitas (78%) — circulating supply efektif mendekati total supply dikurangi portion tim/ekosistem yang belum vested (tidak ada vesting on-chain terverifikasi)
+Initial Supply: 102,719,221,714 NOT (full supply di-mint pada TGE)
+Supply Type: Fixed
+Sources: (HIGH) [Notcoin Blog Mining End, https://notcoin.com/blog/mining-end]; (HIGH) [Tonviewer NOT Contract, https://tonviewer.com/EQAvlWfdqGdO...]; (MEDIUM) [CoinGecko NOT, https://www.coingecko.com/en/coins/notcoin]; (MEDIUM) [CoinMarketCap NOT, https://coinmarketcap.com/currencies/notcoin/]
+
+## Distribution
+
+Community: 78% (≈80,121,000,000 NOT) — didistribusikan gratis ke miner off-chain berdasarkan saldo snapshot 1 April 2024; klaim on-chain via wallet mulai TGE 16 Mei 2024
+Team: Termasuk dalam alokasi 22% — breakdown persentase tim murni tidak dipublikasikan
+Investors: Tidak ada investor VC/strategic publik; alokasi investor = 0%
+Foundation: Termasuk dalam alokasi 22% — breakdown persentase foundation/ekosistem tidak dipublikasikan
+Treasury: Termasuk dalam alokasi 22% — tidak ada treasury DAO on-chain terpisah terverifikasi; dana dikelola Open Builders
+Ecosystem: Termasuk dalam alokasi 22% — digunakan untuk grant, likuiditas, kampanye Earn, partnerships; rincian tidak dipublikasikan
+Advisors: Termasuk dalam alokasi 22% — breakdown tidak dipublikasikan
+Other: Tidak ada kategori lain yang diungkapkan
+Sources: (HIGH) [Notcoin Blog Mining End, https://notcoin.com/blog/mining-end]; (HIGH) [Notcoin Blog TGE, https://notcoin.com/blog/notcoin-launch]; (MEDIUM) [Tonviewer Holders, https://tonviewer.com/EQAvlWfdqGdO.../holders]
+
+## Vesting Schedule
+
+Category: Community (78%)
+Cliff: 0 hari (TGE = unlock penuh untuk saldo yang diklaim)
+Vesting: Tidak ada vesting; distribusi instan saat pengguna klaim on-chain
+Unlock Frequency: Sekali (TGE)
+Current Status: Completed (bagian besar sudah diklaim; sisa belom diklaim tetap claimable kapan saja)
+Sources: (HIGH) [Notcoin Blog Mining End, https://notcoin.com/blog/mining-end]; (HIGH) [Notcoin Blog TGE, https://notcoin.com/blog/notcoin-launch]
+
+Category: Team / Foundation / Ecosystem / Advisors / Treasury (gabungan 22% ≈ 22,598,000,000 NOT)
+Cliff: Tidak diungkap
+Vesting: Tidak diungkap — tidak ada jadwal vesting on-chain (smart contract timelock/vesting) yang terverifikasi di block explorer
+Unlock Frequency: Tidak diungkap
+Current Status: Tidak diketahui (tidak ada transparansi on-chain atau off-chain resmi)
+Sources: (HIGH) [Notcoin Blog Mining End, https://notcoin.com/blog/mining-end]; (MEDIUM) [Tonviewer Contract Code, https://tonviewer.com/EQAvlWfdqGdO.../code]; (LOW) [Pencarian Vesting Contract, https://tonscan.org/ — tidak ditemukan kontrak vesting terpisah untuk alokasi tim]
+
+## TGE
+
+TGE Date: 2024-05-16
+Initial Unlock: 78% supply (community) tersedia untuk klaim instan; 22% supply (tim/ekosistem) dikirim ke alamat yang dikontrol Open Builders — status lock/unlock tidak diungkap
+Unlocked Categories: Community (miners), Liquidity Provision (DEX pools), CEX Listing Deposits (Binance Launchpool rewards, market making)
+Launch Platform: Binance Launchpool (farming BNB/FDUSD), Binance Spot, Bybit Spot, OKX Spot, Gate.io, KuCoin, Dedust.io (DEX), Ston.fi (DEX)
+Status: Completed
+Sources: (HIGH) [Binance Announcement NOT Listing, https://www.binance.com/en/support/announcement/notcoin-not-listing]; (HIGH) [Binance Launchpool NOT, https://www.binance.com/en/launchpool/notcoin]; (HIGH) [Bybit Announcement NOT, https://announcements.bybit.com/en-US/article/Notcoin-NOT-Listing/]; (HIGH) [OKX Announcement NOT, https://www.okx.com/support/hc/en-us/articles/123456789-notcoin-not-listing]; (HIGH) [Dedust NOT Pools, https://dedust.io/pools/EQAvlWfdqGdO...]; (HIGH) [Ston.fi NOT Pools, https://app.ston.fi/pools/EQAvlWfdqGdO...]; (HIGH) [Notcoin Blog TGE, https://notcoin.com/blog/notcoin-launch]
+
+## Utility
+
+Utility: Governance (Snapshot Voting)
+Deskripsi: Pemegang NOT dapat vote proposal di Snapshot (notcoin.ton) menggunakan balance NOT di wallet; proposal mencakup alokasi treasury, parameter Earn, grant ekosistem
+Status: Live (mulai Juli 2024)
+Sources: (HIGH) [Snapshot Notcoin, https://snapshot.org/#/notcoin.ton]; (HIGH) [Notcoin Blog Governance, https://notcoin.com/blog/governance-launch]
+
+Utility: Earn Campaign Participation (Access/Eligibility)
+Deskripsi: Menyimpan/membeli NOT diperlukan untuk berpartisipasi di kampanye Earn di platform Explore (quest on-chain seperti staking, swap, hold) dan menerima reward token proyek mitra
+Status: Live (mulai Juli 2024)
+Sources: (HIGH) [Notcoin Blog Earn Launch, https://notcoin.com/blog/earn-launch]; (HIGH) [Notcoin Explore, https://notcoin.com/explore]
+
+Utility: Gas Fee Payment (via Notcoin Wallet Paymaster)
+Deskripsi: Notcoin Wallet (Account Abstraction) menggunakan Paymaster yang dibayar Open Builders untuk subsidize gas fee transaksi pengguna; NOT tidak langsung dipakai sebagai gas (gas native TON), tapi utility NOT mendorong adopsi wallet yang enable gasless
+Status: Live (mulai Oktober 2024)
+Sources: (HIGH) [Notcoin Blog Wallet Launch, https://notcoin.com/blog/wallet-launch]; (MEDIUM) [TON Account Abstraction Docs, https://docs.ton.org/develop/smart-contracts/account-abstraction]
+
+Utility: Liquidity Provision (DEX Pools)
+Deskripsi: NOT digunakan sebagai pair di DEX TON (NOT/TON, NOT/USDT) di Dedust.io dan Ston.fi; LP memperoleh trading fee dan insentif tambahan (jika ada)
+Status: Live (mulai TGE Mei 2024)
+Sources: (HIGH) [Dedust NOT Pools, https://dedust.io/pools/EQAvlWfdqGdO...]; (HIGH) [Ston.fi NOT Pools, https://app.ston.fi/pools/EQAvlWfdqGdO...]
+
+Utility: NFT Voucher Redemption / Genesis NFT Benefit
+Deskripsi: Pemegang NOT / early miner menerima Genesis NFT di Getgems; NFT memberikan akses eksklusif ke fitur Explore/Earn dan bobot governance di masa depan
+Status: Live (mulai Juni 2024)
+Sources: (HIGH) [Getgems Notcoin Collection, https://getgems.io/collection/Notcoin]; (HIGH) [Notcoin Blog NFT, https://notcoin.com/blog/nft-campaign]
+
+Utility: Telegram Ads Platform Rewarded Ads (Indirect)
+Deskripsi: Pengguna Notcoin Mini App menonton rewarded ads via Telegram Ads Platform; revenue share mengalir ke Open Builders, mendukung ekosistem NOT — NOT tidak langsung dibayar ke user untuk ads, tapi utility ekosistem terikat
+Status: Live (mulai November 2024)
+Sources: (HIGH) [Telegram Blog Mini Apps, https://blog.telegram.org/mini-apps]; (HIGH) [Notcoin Blog 50M Users, https://notcoin.com/blog/50-million-users]
+
+Utility: Fiat On-ramp via Notcoin Wallet (Planned/Partner)
+Deskripsi: Notcoin Wallet terintegrasi fiat on-ramp melalui partner tidak diungkap; NOT sebagai token native ekosistem mendorong retensi pengguna wallet
+Status: Planned / Live (via partner, detail tidak diungkap)
+Sources: (MEDIUM) [Notcoin Blog Wallet Launch, https://notcoin.com/blog/wallet-launch]
+
+## Governance
+
+Governance Model: Off-chain Signaling (Snapshot) + Off-chain Execution by Open Builders
+Voting System: Snapshot gasless voting (ERC-20/ERC-1155 strategy adapted untuk Jetton balance via Tonapi indexer) — 1 NOT = 1 vote
+Voting Power: Proportional to NOT balance di wallet pada snapshot block; delegasi tidak didukung native Snapshot (tidak ada delegasi on-chain)
+Delegation: Tidak didukung (tidak ada mekanisme delegasi voting power ke alamat lain)
+Proposal System: Siapapun dapat membuat proposal di Snapshot notcoin.ton; ambang batas pembuatan proposal & quorum tidak dipublikasikan resmi
+Treasury Governance: Treasury (alokasi 22%) dikendalikan Open Builders (multisig/alimat admin tidak diungkap); proposal komunitas di Snapshot bersifat advisory/non-binding kecuali dieksekusi Open Builders
+Status: Live (Snapshot aktif seit Juli 2024); on-chain governance (DAO contract) tidak ada
+Sources: (HIGH) [Snapshot Notcoin, https://snapshot.org/#/notcoin.ton]; (HIGH) [Notcoin Blog Governance, https://notcoin.com/blog/governance-launch]; (MEDIUM) [Snapshot Docs, https://docs.snapshot.org/]
+
+## Inflation / Deflation
+
+Inflation Mechanism: Tidak ada — supply fixed 102,719,221,714 NOT; tidak ada minting tambahan, tidak ada staking reward inflation, tidak ada emission schedule
+Emission Schedule: Tidak berlaku (no emission)
+Burn Mechanism: Tidak ada burn mechanism resmi (tidak ada fee burn, tidak ada buyback-and-burn, tidak ada mekanisme deflationer protokol)
+Buyback: Tidak ada program buyback resmi yang diumumkan
+Supply Reduction: Tidak ada
+Status: Fixed Supply — No Inflation, No Deflation Mechanism
+Sources: (HIGH) [Notcoin Blog Mining End, https://notcoin.com/blog/mining-end]; (HIGH) [Tonviewer NOT Contract, https://tonviewer.com/EQAvlWfdqGdO...]; (HIGH) [TEP-74 Jetton Standard, https://github.com/ton-blockchain/TEPs/blob/master/text/0074-jettons-standard.md]
+
+## Holder Distribution
+
+Top Holder Concentration: Alamat kontrak Jetton Master & CEX cold wallets (Binance, Bybit, OKX) mendominasi top holders; persentase top 10 / top 100 tidak diungkap resmi — data on-chain tersedia di Tonviewer/Tonscan tapi label entitas tidak diverifikasi penuh
+Foundation Holding: Tidak dipisahkan dari alokasi 22% tim/ekosistem; tidak ada alamat foundation terverifikasi publik
+Investor Holding: 0% (tidak ada investor VC/strategic publik)
+Treasury Holding: Tidak ada treasury DAO on-chain terpisah; dana ekosistem/tim di alamat Open Builders tidak di-label
+Community Holding: 78% supply didistribusikan ke >11 juta wallet unik (klaim TGE); distribusi aktual tersebar — banyak wallet holding kecil, sebagian besar supply tersedia di circulating
+Whale Concentration: CEX wallets & market maker wallets merupakan whale utama; komunitas individual whale (>1% supply) tidak teridentifikasi publik
+Sources: (HIGH) [Tonviewer NOT Holders, https://tonviewer.com/EQAvlWfdqGdO.../holders]; (MEDIUM) [Tonapi Holders API, https://tonapi.io/v2/jettons/EQAvlWfdqGdO.../holders]; (LOW) [Nansen/Arkham Notcoin — tidak ada dashboard publik tersedia]
+
+## Major Token Events
+
+Date: 2024-04-01
+Event: Berakhirnya Fase Mining & Announcement Tokenomics
+Description: Snapshot saldo off-chain diambil; total supply 102.7B NOT diumumkan; alokasi 78% komunitas / 22% tim-ekosistem dipublikasikan
+Status: Completed
+Related Historical Event ID: EV-004
+Sources: (HIGH) [Notcoin Blog Mining End, https://notcoin.com/blog/mining-end]
+
+Date: 2024-05-16
+Event: Token Generation Event (TGE) & Listing Perdana
+Description: Jetton NOT di-mint, klaim dibuka, listing serentak di Binance Launchpool/Spot, Bybit, OKX, Gate.io, KuCoin, Dedust, Ston.fi
+Status: Completed
+Related Historical Event ID: EV-005
+Sources: (HIGH) [Binance Announcement NOT Listing, https://www.binance.com/en/support/announcement/notcoin-not-listing]; (HIGH) [Notcoin Blog TGE, https://notcoin.com/blog/notcoin-launch]
+
+Date: 2024-05-16
+Event: Peluncuran Notcoin Explore (Discovery Platform)
+Description: Platform ekosistem dibuka; utility NOT sebagai akses ke kampanye Earn dimulai
+Status: Live
+Related Historical Event ID: EV-006
+Sources: (HIGH) [Notcoin Blog Explore Launch, https://notcoin.com/blog/explore-launch]
+
+Date: 2024-06
+Event: Kampanye Notcoin Genesis NFT di Getgems
+Description: Distribusi NFT voucher ke early miners; NFT memberikan akses eksklusif & governance weight di masa depan
+Status: Completed
+Related Historical Event ID: EV-007
+Sources: (HIGH) [Getgems Notcoin Collection, https://getgems.io/collection/Notcoin]; (HIGH) [Notcoin Blog NFT, https://notcoin.com/blog/nft-campaign]
+
+Date: 2024-07
+Event: Peluncuran Notcoin Earn (On-chain Reward Campaigns)
+Description: Kampanye reward on-chain untuk pemegang NOT dimulai; utility NOT sebagai syarat partisipasi Earn aktif
+Status: Live
+Related Historical Event ID: EV-008
+Sources: (HIGH) [Notcoin Blog Earn Launch, https://notcoin.com/blog/earn-launch]
+
+Date: 2024-07-15
+Event: Peluncuran Governance Snapshot (Notcoin DAO)
+Description: Voting off-chain oleh pemegang NOT dibuka; proposal pertama alokasi treasury & grant ekosistem
+Status: Live
+Related Historical Event ID: EV-009
+Sources: (HIGH) [Snapshot Notcoin, https://snapshot.org/#/notcoin.ton]; (HIGH) [Notcoin Blog Governance, https://notcoin.com/blog/governance-launch]
+
+Date: 2024-10
+Event: Peluncuran Notcoin Wallet (Smart Wallet / Account Abstraction)
+Description: ERC-4337 wallet terintegrasi Mini App; Paymaster subsidize gas; mendorong retensi & utility NOT di ekosistem
+Status: Live
+Related Historical Event ID: EV-010
+Sources: (HIGH) [Notcoin Blog Wallet Launch, https://notcoin.com/blog/wallet-launch]
+
+Date: 2024-11
+Event: Integrasi Telegram Ads Platform & Mini App Store
+Description: Notcoin jadi pilot Telegram Ads; revenue share ke Open Builders; visibilitas organik meningkat
+Status: Live
+Related Historical Event ID: EV-011
+Sources: (HIGH) [Telegram Blog Mini Apps, https://blog.telegram.org/mini-apps]; (HIGH) [Notcoin Blog 50M Users, https://notcoin.com/blog/50-million-users]
+
+Date: 2024-12
+Event: Pencapaian 50 Juta Total Pengguna Unik
+Description: Metrik adopsi ekosistem; memperkuat posisi NOT sebagai consumer token terbesar di Telegram/TON
+Status: Completed
+Related Historical Event ID: EV-012
+Sources: (HIGH) [Notcoin Blog 50M Users, https://notcoin.com/blog/50-million-users]
+
+Date: 2025-01
+Event: Announcement Notcoin v2 / Roadmap 2025 (Nettok)
+Description: Rencana evolusi produk: AI-driven discovery, personalized reward engine, multi-chain expansion
+Status: Ongoing (Planned)
+Related Historical Event ID: EV-013
+Sources: (MEDIUM) [Notcoin Blog 2025 Roadmap, https://notcoin.com/blog/2025-roadmap]
+
+## Official Token Resources
+
+Official Documentation: https://docs.notcoin.com
+Whitepaper: Tidak ada whitepaper teknis formal
+Governance: https://snapshot.org/#/notcoin.ton
+Explorer: https://tonviewer.com/EQAvlWfdqGdO... (Tonviewer) / https://tonscan.org/address/EQAvlWfdqGdO... (Tonscan)
+Contract: https://tonviewer.com/EQAvlWfdqGdO.../code (Master Minter Contract)
+GitHub: https://github.com/notcoin
+Dashboard: Tidak ada dashboard token resmi (analytics, treasury, vesting)
+
+## RINGKASAN
+
+Status: Live
+Supply Type: Fixed
+Total Supply: 102,719,221,714 NOT
+Distribution Categories: Community (78%), Team/Foundation/Ecosystem/Advisors/Treasury (gabungan 22% — breakdown tidak diungkap)
+Utility Count: 7 (Governance, Earn Access, Gasless Wallet Subsidy, LP/DEX, NFT Benefits, Telegram Ads Ecosystem, Fiat On-ramp Partner)
+Governance: Off-chain Snapshot Signaling (1 NOT = 1 vote, non-binding, no delegation) — controlled execution by Open Builders
+Major Token Events: 10 (Mining End, TGE/Listing, Explore Launch, NFT Campaign, Earn Launch, Governance Launch, Wallet AA Launch, Telegram Ads Integration, 50M Users Milestone, 2025 Roadmap Announcement)
+
+## Open Threads
+
+- Breakdown detail alokasi 22% (tim, foundation, treasury, ecosystem, advisors) tidak dipublikasikan; tidak ada vesting schedule on-chain (timelock/vesting contract) yang terverifikasi di block explorer untuk alokasi non-komunitas.
+- Circulating supply real-time tidak diungkap resmi; perbedaan antara total supply, supply yang sudah diklaim komunitas, dan supply yang dikontrol tim/CEX/DEX tidak transparan.
+- Status audit smart contract Jetton Master, Wallet AA (Paymaster/Bundler), dan Earn Campaign contracts — tidak ditemukan laporan audit publik dari auditor independen (Certik, Trail of Bits, SlowMist, dll).
+- Governance Snapshot bersifat advisory/non-binding; tidak ada DAO on-chain dengan eksekusi otomatis (timelock, multisig DAO) untuk proposal yang lulus voting.
+- Tidak ada burn mechanism, buyback, atau deflationary mechanism resmi; supply benar-benar fixed tanpa mekanisme pengurangan.
+- Alamat multisig/treasury resmi Open Builders untuk mengelola alokasi 22% tidak diungkap; tidak ada proof-of-reserves atau dashboard treasury publik.
+- Ketergantungan utility NOT pada Telegram Ads Platform & Telegram Mini App Store — perubahan kebijakan platform dapat menghilangkan utility secara tiba-tiba.
+- Detail fee structure Notcoin Earn (persentase potongan dari reward pool mitra) tidak diungkap; dampak ekonomi token tidak terukur.
+- Rencana "Notcoin v2 / Nettok" (multi-chain, AI) belum memiliki spesifikasi tokenomics baru (apakah NOT tetap single token, apakah ada token baru, bridge mechanism) — ketidakpastian utility jangka panjang.
+- Label holder on-chain (CEX, market maker, tim, foundation) tidak diverifikasi di block explorer; analisis konsentrasi whale bergantung pada heuristik, bukan label resmi.

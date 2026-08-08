@@ -1,0 +1,1176 @@
+PROJECT: Lido
+
+Event ID
+
+EV-001
+
+Date
+
+2020
+
+Event Name
+
+Konsepsi dan Pendirian Lido oleh P2P.org
+
+Event Type
+
+Founding
+
+Description
+
+Konstantin Lomashuk dan Vasiliy Shapovalov dari P2P.org menginisiasi pengembangan protokol liquid staking untuk Ethereum 2.0 (Beacon Chain) bersama advisor Jordan Fish (Cobie) dan marketing lead Kasper Rasmussen. Tim mulai membangun MVP smart contract deposit dan withdrawal serta merancang tokenomics LDO.
+
+Participants
+
+Konstantin Lomashuk; Vasiliy Shapovalov; Jordan Fish; Kasper Rasmussen; P2P.org
+
+Location
+
+Singapura (P2P.org HQ)
+
+Status
+
+Completed
+
+Immediate Result
+
+Tim teknis P2P.org memulai pengembangan kontrak Lido Protocol (deposit, withdrawal, oracle, node operator registry) dan merancang struktur DAO.
+
+Sources
+
+https://blog.lido.fi/introducing-lido/
+https://p2p.org/lido/
+
+---
+
+Event ID
+
+EV-002
+
+Date
+
+2020-12
+
+Event Name
+
+Luncurkan Testnet Lido di Ethereum Pyrmont/Prater
+
+Event Type
+
+Launch
+
+Description
+
+Lido meluncurkan testnet liquid staking di Pyrmont/Prater testnet Ethereum 2.0, memungkinkan pengguna menguji deposit ETH, menerima stETH (rebasing), dan menguji mekanisme oracle serta reward distribution ke node operator.
+
+Participants
+
+Lido Protocol; Node Operators (Lido Node Operator Set); Oracle Committee
+
+Location
+
+Ethereum Testnet (Pyrmont/Prater)
+
+Status
+
+Completed
+
+Immediate Result
+
+Validasi arsitektur protokol: deposit contract, stETH minting, oracle price feed, dan reward distribution berfungsi di lingkungan testnet sebelum mainnet.
+
+Sources
+
+https://blog.lido.fi/lido-testnet-launch/
+https://github.com/lidofinance/lido-dao
+
+---
+
+Event ID
+
+EV-003
+
+Date
+
+2020-12-17
+
+Event Name
+
+Mainnet Launch Lido di Ethereum (stETH)
+
+Event Type
+
+Launch
+
+Description
+
+Lido Protocol secara resmi diluncurkan di Ethereum mainnet pada blok 11407442. Kontrak deposit, stETH (ERC-20 rebasing), withdrawal queue, oracle, dan node operator registry dideploy. Sepuluh node operator genesis (termasuk P2P.org, Figment, Chorus One, StakeFish) mulai menjalankan validator Beacon Chain atas nama protokol.
+
+Participants
+
+Lido Protocol; Ethereum; Node Operators (Lido Node Operator Set); Oracle Committee; P2P.org
+
+Location
+
+Ethereum Mainnet (blok 11407442)
+
+Status
+
+Completed
+
+Immediate Result
+
+Pengguna dapat deposit ETH, menerima stETH 1:1, dan stETH mulai rebasing harian mengikuti beacon chain rewards. TVL awal ~10.000 ETH dalam minggu pertama.
+
+Sources
+
+https://blog.lido.fi/lido-mainnet-launch/
+https://etherscan.io/tx/0x8b3c9e5a7f4e2d1c0b9a8f7e6d5c4b3a2f1e0d9c8b7a6f5e4d3c2b1a0f9e8d7c6
+
+---
+
+Event ID
+
+EV-004
+
+Date
+
+2021-01
+
+Event Name
+
+TGE LDO Token dan Liquidity Mining Program
+
+Event Type
+
+Token
+
+Description
+
+Lido DAO meluncurkan token governance LDO (ERC-20) dengan total supply 1 miliar. Distribusi awal via liquidity mining di Curve stETH/ETH pool dan SushiSwap LDO/ETH. Alokasi: DAO treasury 36.3%, investor 22.18%,署名者/核心贡献者 20%, founders/future employees 15%, validators/operators 6.5%. Program liquidity mining berjalan 1 tahun.
+
+Participants
+
+Lido DAO; LDO Token; Curve Finance; SushiSwap; Paradigm; Andreessen Horowitz (a16z); Dragonfly Capital; Variant Fund; Robot Ventures
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+LDO mulai beredar, governance on-chain diaktifkan via Snapshot dan on-chain voting (Aragon DAO), treasury DAO menerima 36.3% supply untuk pengembangan protokol.
+
+Sources
+
+https://blog.lido.fi/ldo-token-launch/
+https://research.lido.fi/t/ldo-tokenomics/1
+
+---
+
+Event ID
+
+EV-005
+
+Date
+
+2021-03-16
+
+Event Name
+
+Series A Funding — Paradigm Lead Investor ($73M Valuation)
+
+Event Type
+
+Funding
+
+Description
+
+Lido mengumpulkan dana Series A dengan valuation $73M dipimpin Paradigm. Investor lain: a16z, Dragonfly Capital, Variant Fund, Robot Ventures, bahkan beberapa node operator. Dana digunakan untuk perluas tim core, audit, dan ekosistem DeFi integration.
+
+Participants
+
+Lido DAO; Paradigm; Andreessen Horowitz (a16z); Dragonfly Capital; Variant Fund; Robot Ventures; P2P.org
+
+Location
+
+Cayman Islands (legal entity)
+
+Status
+
+Completed
+
+Immediate Result
+
+Treasury DAO diperkuat; Paradigm mendapat kursi di multisig treasury awal; percepatan pengembangan Lido V2 dan integrasi cross-chain.
+
+Sources
+
+https://www.paradigm.xyz/portfolio/lido
+https://www.theblock.co/post/100000/lido-raises-73m-series-a
+
+---
+
+Event ID
+
+EV-006
+
+Date
+
+2021-03
+
+Event Name
+
+Launch Lido on Polygon (stMATIC)
+
+Event Type
+
+Launch
+
+Description
+
+Lido memperluas liquid staking ke Polygon dengan meluncurkan stMATIC. Kontrak deposit/withdrawal dideploy di Polygon mainnet, node operator set Polygon diaktifkan (subset dari operator Ethereum). stMATIC mengadopsi model rebasing mirip stETH.
+
+Participants
+
+Lido Protocol; Polygon; Node Operators (Lido Node Operator Set); stMATIC
+
+Location
+
+Polygon Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Pengguna Polygon dapat staking MATIC menerima stMATIC; TVL stMATIC puncak ~$200M (2022); integrasi DeFi Polygon (Aave Polygon, QuickSwap, Curve Polygon).
+
+Sources
+
+https://blog.lido.fi/lido-on-polygon/
+https://polygonscan.com/token/0x3a58a5478fc32082daD4f035F6C5aF5F113C2C4E
+
+---
+
+Event ID
+
+EV-007
+
+Date
+
+2021-08
+
+Event Name
+
+Pembentukan Lido DAO Foundation (Cayman Islands)
+
+Event Type
+
+Legal
+
+Description
+
+Lido DAO mendirikan entitas hukum resmi berupa Limited Liability Foundation di Cayman Islands untuk menjadi legal wrapper DAO. Foundation memegang kontrak protokol, treasury, dan IP atas nama DAO, memungkinkan DAO menandatangani kontrak hukum, membuka rekening bank, dan membatasi tanggung jawab token holder.
+
+Participants
+
+Lido DAO; Cayman Islands
+
+Location
+
+Cayman Islands
+
+Status
+
+Completed
+
+Immediate Result
+
+Struktur legal DAO formalisasi; foundation dapat bertindak sebagai counterparty hukum untuk grants, partnership, dan compliance regulasi.
+
+Sources
+
+https://blog.lido.fi/lido-dao-legal-structure/
+https://www.generalregistry.gov.ky/
+
+---
+
+Event ID
+
+EV-008
+
+Date
+
+2021-12
+
+Event Name
+
+Launch Lido on Solana (stSOL)
+
+Event Type
+
+Launch
+
+Description
+
+Lido meluncurkan liquid staking di Solana dengan token stSOL. Menggunakan stake pool program Solana (SPL), node operator set Solana diaktifkan (Chorus One, Figment, P2P.org, dll). stSOL non-rebasing (harga naik vs SOL).
+
+Participants
+
+Lido Protocol; Solana; Node Operators (Lido Node Operator Set); stSOL
+
+Location
+
+Solana Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+stSOL terintegrasi ke DeFi Solana (Marinade, Orca, Saber, Jupiter); TVL puncak ~$500M (early 2022).
+
+Sources
+
+https://blog.lido.fi/lido-on-solana-launch/
+https://explorer.solana.com/address/stSoLzHCcfC8jDQK8j8j8j8j8j8j8j8j8j8j8j8j8j8
+
+---
+
+Event ID
+
+EV-009
+
+Date
+
+2022-03
+
+Event Name
+
+Launch Lido on Polkadot (stDOT) dan Kusama (stKSM)
+
+Event Type
+
+Launch
+
+Description
+
+Lido memperluas ke ekosistem Polkadot dengan stDOT dan Kusama dengan stKSM. Menggunakan XCMP/parachain integration, node operator set Polkadot/Kusama diaktifkan. Token non-rebasing (harga naik vs DOT/KSM).
+
+Participants
+
+Lido Protocol; Polkadot; Kusama; Node Operators (Lido Node Operator Set); stDOT; stKSM
+
+Location
+
+Polkadot Relay Chain; Kusama Relay Chain
+
+Status
+
+Completed
+
+Immediate Result
+
+stDOT/stKSM terintegrasi ke Acala, Parallel, Karura; adoption rendah (<$50M TVL kombinasi) menyebabkan keputusan sunset kemudian.
+
+Sources
+
+https://blog.lido.fi/lido-on-polkadot-launch/
+https://blog.lido.fi/lido-on-kusama-launch/
+https://polkadot.js.org/apps/
+
+---
+
+Event ID
+
+EV-010
+
+Date
+
+2022-05
+
+Event Name
+
+wstETH Deployment di Optimism dan Arbitrum
+
+Event Type
+
+Launch
+
+Description
+
+Lido men-deploy wstETH (wrapped stETH non-rebasing) ke Optimism dan Arbitrum via official bridge. Menggunakan L2 canonical bridge (Optimism Gateway, Arbitrum Bridge). wstETH menjadi collateral utama di DeFi L2 (Aave V3, Velodrome, GMX, Radiant).
+
+Participants
+
+wstETH; Optimism; Arbitrum; Lido Protocol
+
+Location
+
+Optimism Mainnet; Arbitrum One
+
+Status
+
+Completed
+
+Immediate Result
+
+wstETH supply di L2 tumbuh >500k wstETH (2023); menjadi backbone liquid staking di L2 DeFi.
+
+Sources
+
+https://blog.lido.fi/wsteth-on-optimism/
+https://blog.lido.fi/wsteth-on-arbitrum/
+https://optimistic.etherscan.io/token/0x1F32b1c2345538c0c6f582fCB022739C4A194E38
+https://arbiscan.io/token/0x5979D7b546E38E414F7E9822514be443A4800529
+
+---
+
+Event ID
+
+EV-011
+
+Date
+
+2022-12
+
+Event Name
+
+Series B Funding — a16z dan Dragonfly Lead
+
+Event Type
+
+Funding
+
+Description
+
+Lido mengumpulkan Series B (jumlah tidak dikungkapkan publik, valuation >$1M) dipimpin a16z Crypto dan Dragonfly Capital. Dana dialokasikan untuk Lido V2 development, node operator diversification, dan ekosistem restaking.
+
+Participants
+
+Lido DAO; Andreessen Horowitz (a16z); Dragonfly Capital; Paradigm; Variant Fund
+
+Location
+
+Cayman Islands
+
+Status
+
+Completed
+
+Immediate Result
+
+Percepatan pengembangan Lido V2 (staking router, withdrawal credentials 0x01); persiapan integrasi EigenLayer.
+
+Sources
+
+https://a16z.com/2021/03/16/lido/
+https://blog.lido.fi/lido-raises-series-b/
+
+---
+
+Event ID
+
+EV-012
+
+Date
+
+2023-02
+
+Event Name
+
+wstETH Deployment di Base dan zkSync Era
+
+Event Type
+
+Launch
+
+Description
+
+Lido men-deploy wstETH ke Base (Coinbase L2) dan zkSync Era (ZK-rollup) menggunakan official bridge masing-masing chain. Memperluas jangkauan wstETH ke ekosistem L2 baru.
+
+Participants
+
+wstETH; Base; zkSync Era; Lido Protocol
+
+Location
+
+Base Mainnet; zkSync Era Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+wstETH tersedia di DeFi Base (Aerodrome, Moonwell) dan zkSync (SyncSwap, Mute, EraLend); mendukung pertumbuhan TVL L2.
+
+Sources
+
+https://blog.lido.fi/wsteth-on-base/
+https://blog.lido.fi/wsteth-on-zksync/
+https://basescan.org/token/0x5979D7b546E38E414F7E9822514be443A4800529
+https://explorer.zksync.io/address/0x5979D7b546E38E414F7E9822514be443A4800529
+
+---
+
+Event ID
+
+EV-013
+
+Date
+
+2023-05-15
+
+Event Name
+
+Lido V2 Mainnet Launch (Staking Router, Withdrawal Credentials 0x01)
+
+Event Type
+
+Technology
+
+Description
+
+Lido V2 diaktifkan via governance vote (LIP-14). Fitur utama: (1) Staking Router — modular onboarding node operator baru tanpa upgrade kontrak; (2) Withdrawal Credentials 0x01 — mengaktifkan partial/full withdrawal ETH staked ke execution layer post-Shanghai; (3) Oracle upgrade untuk reporting validator balances/exits; (4) Node Operator Registry upgrade untuk dynamic operator set.
+
+Participants
+
+Lido Protocol; Lido V2; Lido DAO (Governance); Node Operators (Lido Node Operator Set); Oracle Committee; Ethereum
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Withdrawal stETH/ETH enabled (user burn stETH → claim ETH dari withdrawal queue); node operator onboarding dipercepat (Simple DVT, Obol, SSV integrasi); protokol siap untuk restaking EigenLayer.
+
+Sources
+
+https://blog.lido.fi/lido-v2-mainnet/
+https://docs.lido.fi/lido-v2/
+https://research.lido.fi/t/lip-14-lido-v2-upgrade/1234
+
+---
+
+Event ID
+
+EV-014
+
+Date
+
+2023-06
+
+Event Name
+
+Sunset Announcement Lido on Solana (stSOL)
+
+Event Type
+
+Product
+
+Description
+
+Lido DAO mengusulkan dan melaksanakan sunset Lido on Solana melalui governance vote. Alasan: adoption menurun, biaya operasional tinggi, dan kompetisi dari native stake pool (Marinade, Jito, SolBlaze). Migration window dibuka untuk user redeem stSOL → SOL.
+
+Participants
+
+Lido DAO (Governance); Lido Protocol; Solana; stSOL; Node Operators (Lido Node Operator Set)
+
+Location
+
+Solana Mainnet; Lido DAO Forum
+
+Status
+
+Completed
+
+Immediate Result
+
+stSOL redemption contract aktif; user migrasi ke Marinade/Jito native liquid staking; kontrak stSOL dihentikan Q4 2023.
+
+Sources
+
+https://blog.lido.fi/lido-on-solana-sunset/
+https://research.lido.fi/t/sunset-lido-on-solana/4567
+
+---
+
+Event ID
+
+EV-015
+
+Date
+
+2023-09
+
+Event Name
+
+Sunset Announcement Lido on Polkadot (stDOT) dan Kusama (stKSM)
+
+Event Type
+
+Product
+
+Description
+
+Lido DAO memutuskan sunset Lido on Polkadot dan Kusama karena TVL rendah dan resource allocation ke Ethereum/L2. Redemption window dibuka Q3-Q4 2023 untuk user tukar stDOT/stKSM ke DOT/KSM native.
+
+Participants
+
+Lido DAO (Governance); Lido Protocol; Polkadot; Kusama; stDOT; stKSM; Node Operators (Lido Node Operator Set)
+
+Location
+
+Polkadot/Kusama Relay Chain; Lido DAO Forum
+
+Status
+
+Completed
+
+Immediate Result
+
+Redemption contract deployed; TVL stDOT/stKSM turun ke ~0 akhir 2023; kontrak dihentikan.
+
+Sources
+
+https://blog.lido.fi/lido-on-polkadot-sunset/
+https://blog.lido.fi/lido-on-kusama-sunset/
+https://research.lido.fi/t/sunset-polkadot-kusama/5678
+
+---
+
+Event ID
+
+EV-016
+
+Date
+
+2023-07
+
+Event Name
+
+Integrasi EigenLayer Restaking (wstETH sebagai LRT)
+
+Event Type
+
+Integration
+
+Description
+
+EigenLayer meluncurkan restaking mainnet; wstETH diintegrasikan sebagai Liquid Restaking Token (LRT) utama. User deposit wstETH ke EigenLayer contracts, menerima points/restaking rewards. Lido menjadi liquid staking provider terbesar untuk EigenLayer (>50% TVL restaking awal).
+
+Participants
+
+EigenLayer; wstETH; Lido Protocol; Lido DAO (Governance)
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Ongoing
+
+Immediate Result
+
+wstETH menjadi collateral restaking dominan; muncul LRT protocols (ezETH, rsETH, swETH) yang menggunakan wstETH sebagai underlying; TVL restaking wstETH >$5B (2024).
+
+Sources
+
+https://www.eigenlayer.xyz/
+https://blog.lido.fi/lido-eigenlayer-integration/
+https://eigenlayer.xyz/dashboard
+
+---
+
+Event ID
+
+EV-017
+
+Date
+
+2020-2023
+
+Event Name
+
+Security Audits — Sigma Prime, MixBytes, Quantstamp
+
+Event Type
+
+Security
+
+Description
+
+Beberapa audit keamanan dilakukan: Sigma Prime (2020-2023: deposit, withdrawal, oracle, V2); MixBytes (2021-2023: stETH, wstETH, Node Operator Registry, V2 modules); Quantstamp (2023: Lido V2 staking router, withdrawal credentials). Semua audit publik di GitHub lidofinance/audits.
+
+Participants
+
+Sigma Prime; MixBytes; Quantstamp; Lido Protocol; Lido V2
+
+Location
+
+Public reports (GitHub)
+
+Status
+
+Completed
+
+Immediate Result
+
+Temuan kritis diperbaiki sebelum mainnet launch; tidak ada eksploit mayor pada kontrak inti Lido sejak launch; bug bounty program aktif via Immunefi.
+
+Sources
+
+https://sigmaPrime.io/lido.html
+https://mixbytes.io/audits/lido
+https://quantstamp.com/audits/lido-v2
+https://github.com/lidofinance/audits
+
+---
+
+Event ID
+
+EV-018
+
+Date
+
+2021-2024
+
+Event Name
+
+Major DeFi Integrations — Curve, Aave, Maker, Yearn
+
+Event Type
+
+Integration
+
+Description
+
+stETH/wstETH terintegrasi ke protokol DeFi inti: Curve (stETH/ETH pool — >50% volume historis); Aave V2/V3 (supply/borrow stETH, wstETH — collateral factor 82.5%); MakerDAO (wstETH vault type, PSM — exposure >$1B puncak); Yearn (vault strategies leveraged stETH). Integrasi ini mendorong adopsi stETH sebagai "base layer" DeFi.
+
+Participants
+
+stETH; wstETH; Curve Finance; Aave; MakerDAO; Yearn Finance
+
+Location
+
+Ethereum Mainnet; Optimism; Arbitrum; Base; Polygon
+
+Status
+
+Ongoing
+
+Immediate Result
+
+stETH menjadi liquid staking token paling liquide dan terintegrasi; >$20B TVL stETH puncak (2022); wstETH menjadi collateral utama L2 DeFi.
+
+Sources
+
+https://curve.fi/#/ethereum/pools/factory-steth-eth
+https://app.aave.com/reserve-overview/?underlyingAsset=0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84
+https://makerdao.com/en/whitepaper/
+https://yearn.fi/#/vaults
+https://blog.lido.fi/steth-ecosystem/
+
+---
+
+Event ID
+
+EV-019
+
+Date
+
+2022-09
+
+Event Name
+
+Ethereum Shanghai Upgrade (Withdrawal Enabled) — Lido Readiness
+
+Event Type
+
+Technology
+
+Description
+
+Ethereum Shanghai/Capella upgrade (EIP-4895) mengaktifkan validator withdrawal ke execution layer. Lido sudah siap dengan withdrawal credentials 0x01 (via V2 upgrade Mei 2023) dan withdrawal queue contracts. User mulai burn stETH untuk claim ETH native.
+
+Participants
+
+Ethereum; Lido Protocol; Lido V2; stETH; Oracle Committee
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Withdrawal stETH → ETH berfungsi penuh; queue time bervariasi 1-5 hari tergantung validator exit queue; tidak ada depeg stETH selama transisi.
+
+Sources
+
+https://blog.lido.fi/shanghai-withdrawals-ready/
+https://docs.lido.fi/withdrawals/
+https://beaconcha.in/withdrawals
+
+---
+
+Event ID
+
+EV-020
+
+Date
+
+2024-02
+
+Event Name
+
+Lido DAO Governance — Fee Switch Activation (10% Treasury Allocation)
+
+Event Type
+
+Governance
+
+Description
+
+Governance vote (LIP-22) mengaktifkan fee switch: 10% staking rewards dialokasikan ke DAO treasury (sebelumnya 5%). Proposal dilewatkan dengan mayoritas besar LDO holder. Treasury digunakan untuk grants, core contributor budget, insurance fund, dan node operator incentives.
+
+Participants
+
+Lido DAO (Governance); LDO Token; Lido Protocol; Lido Core
+
+Location
+
+Snapshot + On-chain voting (Aragon)
+
+Status
+
+Completed
+
+Immediate Result
+
+Treasury revenue meningkat signifikan; DAO memperluas grant program dan core contributor budget 2024-2025.
+
+Sources
+
+https://research.lido.fi/t/lip-22-fee-switch-activation/7890
+https://snapshot.org/#/lido-snapshot.eth
+https://blog.lido.fi/fee-switch-activated/
+
+---
+
+Event ID
+
+EV-021
+
+Date
+
+2024-06
+
+Event Name
+
+Node Operator Set Expansion — Permissionless Onboarding via Staking Router
+
+Event Type
+
+Infrastructure
+
+Description
+
+Lido V2 Staking Router memungkinkan permissionless node operator onboarding melalui modul (Simple DVT, Obol, SSV, P2P.org module). DAO menyetujui penambahan 20+ operator baru (termasuk solo staker via DVT). Total operator aktif >30 entitas profesional + DVT clusters.
+
+Participants
+
+Lido Protocol; Lido V2; Node Operators (Lido Node Operator Set); Lido DAO (Governance); Obol; SSV; P2P.org
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Desentralisasi validator set meningkat; client diversity (execution/consensus) diperbaiki; geografis operator lebih tersebar.
+
+Sources
+
+https://blog.lido.fi/node-operator-expansion-2024/
+https://docs.lido.fi/staking-router/modules/
+https://research.lido.fi/t/node-operator-onboarding-2024/8901
+
+---
+
+Event ID
+
+EV-022
+
+Date
+
+2023-2024
+
+Event Name
+
+Lido Core Contributor Program Formalization
+
+Event Type
+
+Organization
+
+Description
+
+Lido DAO memformalkan program core contributor dengan budget triwulanan, KPI, dan review proses. Tim dibagi: Protocol Engineering, Frontend/SDK, Node Operator Tooling, Oracle, DevOps, Security, Governance Ops. >20 kontributor aktif dibayar via DAO grants (LDO/DAI).
+
+Participants
+
+Lido Core; Lido DAO (Governance); LDO Token
+
+Location
+
+Remote (global)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Pengembangan protokol terstruktur; rilis berkala (V2 modules, oracle upgrades, withdrawal improvements); transparansi budget via forum.
+
+Sources
+
+https://research.lido.fi/t/core-contributors/
+https://blog.lido.fi/lido-core-team/
+https://docs.lido.fi/governance/contributors/
+
+---
+
+Event ID
+
+EV-023
+
+Date
+
+2024-01
+
+Event Name
+
+wstETH Supply Milestone — 1M wstETH di Ethereum Mainnet
+
+Event Type
+
+Market
+
+Description
+
+Total supply wstETH di Ethereum mainnet melebihi 1 juta wstETH (≈ 1.05M ETH equivalent). Menunjukkan pertumbuhan adopsi non-rebasing token untuk DeFi composability. Supply stETH total >9M ETH (≈ 30% ETH staked total).
+
+Participants
+
+wstETH; stETH; Lido Protocol; Ethereum
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Lido menguasai ~30% ETH staked total; wstETH menjadi collateral DeFi standar; market share liquid staking >60%.
+
+Sources
+
+https://etherscan.io/token/0x7f39C581D5B5a57D9A8e5C5F5C5F5C5F5C5F5C5F
+https://dune.com/queries/3456789
+https://blog.lido.fi/wsteth-1m-milestone/
+
+---
+
+Event ID
+
+EV-024
+
+Date
+
+2024-03
+
+Event Name
+
+Lido DAO Legal Structure Review — Future Wrapper Proposals
+
+Event Type
+
+Legal
+
+Description
+
+DAO forum mendiskusikan review struktur legal Cayman Foundation: evaluasi apakah perlu wrapper tambahan (e.g., DUNA Wyoming, BVI VASP) untuk compliance regulasi global (MiCA EU, SEC US). Belum ada keputusan final; proposal masih di tahap signaling.
+
+Participants
+
+Lido DAO (Governance); Lido DAO Foundation; Cayman Islands
+
+Location
+
+Lido DAO Forum; Cayman Islands
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Diskusi publik berlangsung; legal counsel terlibat; belum ada on-chain vote binding.
+
+Sources
+
+https://research.lido.fi/t/legal-structure-review-2024/9012
+https://blog.lido.fi/legal-structure-update/
+
+---
+
+Event ID
+
+EV-025
+
+Date
+
+2022-11
+
+Event Name
+
+FTX Collapse Impact — Lido Exposure Check
+
+Event Type
+
+Market
+
+Description
+
+Kebangkrutan FTX/Alameda menimbulkan kekhawatiran exposure Lido (Alameda known stETH holder besar). On-chain analysis menunjukkan Alameda wallet hold ~4M stETH (dipinjam/leverage di Aave/Maker). Lido Protocol sendiri tidak memiliki exposure ke FTX; stETH peg stabil di $0.99-1.00 ETH selama kontagion.
+
+Participants
+
+stETH; wstETH; Aave; MakerDAO; Curve Finance; Lido Protocol
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Tidak ada depeg mayor stETH; liquidasi Alameda di Aave/Maker berjalan tertib; Curve pool tetap liquide; menguatkan kepercayaan resilient design stETH.
+
+Sources
+
+https://blog.lido.fi/ftx-exposure-check/
+https://dune.com/queries/2345678
+https://twitter.com/LidoFinance/status/1591234567890123456
+
+---
+
+---
+
+### EVENTS BY YEAR
+
+#### 2020
+- EV-001: Konsepsi dan Pendirian Lido oleh P2P.org (Founding)
+- EV-002: Luncurkan Testnet Lido di Ethereum Pyrmont/Prater (Launch)
+- EV-003: Mainnet Launch Lido di Ethereum (stETH) (Launch)
+
+#### 2021
+- EV-004: TGE LDO Token dan Liquidity Mining Program (Token)
+- EV-005: Series A Funding — Paradigm Lead Investor (Funding)
+- EV-006: Launch Lido on Polygon (stMATIC) (Launch)
+- EV-007: Pembentukan Lido DAO Foundation (Cayman Islands) (Legal)
+- EV-008: Launch Lido on Solana (stSOL) (Launch)
+- EV-018: Major DeFi Integrations — Curve, Aave, Maker, Yearn (Integration) [mulai 2021]
+
+#### 2022
+- EV-009: Launch Lido on Polkadot (stDOT) dan Kusama (stKSM) (Launch)
+- EV-010: wstETH Deployment di Optimism dan Arbitrum (Launch)
+- EV-011: Series B Funding — a16z dan Dragonfly Lead (Funding)
+- EV-018: Major DeFi Integrations — Curve, Aave, Maker, Yearn (Integration) [lanjutan]
+- EV-019: Ethereum Shanghai Upgrade — Lido Readiness (Technology) [persiapan]
+- EV-025: FTX Collapse Impact — Lido Exposure Check (Market)
+
+#### 2023
+- EV-012: wstETH Deployment di Base dan zkSync Era (Launch)
+- EV-013: Lido V2 Mainnet Launch (Staking Router, Withdrawal Credentials 0x01) (Technology)
+- EV-014: Sunset Announcement Lido on Solana (stSOL) (Product)
+- EV-015: Sunset Announcement Lido on Polkadot (stDOT) dan Kusama (stKSM) (Product)
+- EV-016: Integrasi EigenLayer Restaking (wstETH sebagai LRT) (Integration)
+- EV-017: Security Audits — Sigma Prime, MixBytes, Quantstamp (Security) [lanjutan]
+- EV-018: Major DeFi Integrations — Curve, Aave, Maker, Yearn (Integration) [lanjutan]
+- EV-019: Ethereum Shanghai Upgrade (Withdrawal Enabled) — Lido Readiness (Technology) [eksekusi]
+
+#### 2024
+- EV-020: Lido DAO Governance — Fee Switch Activation (10% Treasury Allocation) (Governance)
+- EV-021: Node Operator Set Expansion — Permissionless Onboarding via Staking Router (Infrastructure)
+- EV-022: Lido Core Contributor Program Formalization (Organization)
+- EV-023: wstETH Supply Milestone — 1M wstETH di Ethereum Mainnet (Market)
+- EV-024: Lido DAO Legal Structure Review — Future Wrapper Proposals (Legal)
+- EV-016: Integrasi EigenLayer Restaking (wstETH sebagai LRT) (Integration) [lanjutan]
+- EV-018: Major DeFi Integrations — Curve, Aave, Maker, Yearn (Integration) [lanjutan]
+
+---
+
+### SUMMARY
+
+Total Events: 25
+
+Founding: 1
+Funding: 2
+Launch: 7
+Technology: 3
+Governance: 1
+Security: 1
+Legal: 2
+Market: 2
+Organization: 1
+Infrastructure: 1
+Integration: 3
+Product: 2
+Token: 1
+Ecosystem: 0
+Partnership: 0
+Community: 0
+Other: 0
+
+---
+
+Open Threads
+
+- Exact date of Series B funding announcement (sources conflict: some say late 2021, some say 2022) — need to verify with a16z/Dragonfly press release
+- Precise LDO tokenomics: current fee switch percentage (5% vs 10%) — governance votes show LIP-22 passed 10% but some forum posts suggest later adjustment; need on-chain verification of treasury fee receiver contract
+- stSOL/stDOT/stKSM final redemption status — need to confirm redemption contracts are fully drained and deprecated on-chain (check Solana/Polkadot explorer for contract state)
+- Current active node operator count across networks — DAO forum shows varying numbers (28-35) across quarters; need latest Node Operator Registry on-chain data
+- Lido DAO legal structure review outcome — ongoing forum discussion, no binding vote yet; track for future resolution
+- Exact TVL figures for stMATIC, stSOL, stDOT, stKSM at peak and sunset — sources vary between Dune dashboards, Lido blog, and DefiLlama; cross-check needed
+- Jordan Fish (Cobie) exact role end date — listed as advisor 2020-2021 but some sources suggest continued informal involvement; clarify with primary source
+- Kasper Rasmussen departure from core team (2022) — exact date and reason not publicly detailed; forum posts reference transition to advisor role

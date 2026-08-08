@@ -94,22 +94,14 @@
     ]
   },
   {
-    "n": "Cardano",
+    "n": "Celestia",
     "tier": "Deep",
-    "file": "examples/CaseStudies/Cardano.md",
+    "file": "examples/CaseStudies/Celestia.md",
     "cat": "",
     "era": "",
     "tags": [
-      "l1"
+      "modular"
     ]
-  },
-  {
-    "n": "Grass",
-    "tier": "Deep",
-    "file": "examples/CaseStudies/Grass.md",
-    "cat": "",
-    "era": "",
-    "tags": []
   },
   {
     "n": "Irys",
@@ -119,6 +111,16 @@
     "era": "",
     "tags": [
       "testnet-incentive",
+      "l1"
+    ]
+  },
+  {
+    "n": "Monad",
+    "tier": "Deep",
+    "file": "examples/CaseStudies/Monad.md",
+    "cat": "",
+    "era": "",
+    "tags": [
       "l1"
     ]
   }

@@ -1,0 +1,125 @@
+PROJECT: Movement Labs
+
+## System Architecture
+
+- Arsitektur modular blockchain stack berbasis MoveVM dengan lapisan eksekusi (MoveVM/MEVM), lapisan settlement (Ethereum L1), dan lapisan data availability modular (Celestia, Avail, EigenDA direncanakan) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+- M1 merupakan Layer 2 rollup pada Ethereum yang menggunakan MoveVM untuk eksekusi transaksi dan Ethereum untuk finality serta data availability (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+- Movement Network dirancang sebagai jaringan interconnected Move chains untuk interoperabilitas antar rollup dan app-chain berbasis Movement SDK (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+- MEVM (Move-EVM compatibility layer) memungkinkan kontrak Solidity berjalan di MoveVM tanpa modifikasi melalui transpilasi bytecode EVM ke Move bytecode (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/]
+- Arsitektur mengadopsi pendekatan modular: execution layer (MoveVM), settlement layer (Ethereum), DA layer (pluggable: Celestia/Avail/EigenDA), dan consensus layer (sequencer-based dengan opsi decentralized sequencing) (MEDIUM) [Movement Labs Docs, https://docs.movementlabs.xyz/]
+
+## Core Components
+
+- MoveVM: Virtual machine eksekusi berbasis Move language dengan dukungan parallel execution dan formal verification; komponen inti untuk eksekusi transaksi di M1 dan Movement Network (HIGH) [Movement Labs Website Products, https://movementlabs.xyz/products]
+- MEVM: Kompatibilitas layer Move-EVM yang menerjemahkan bytecode EVM ke Move bytecode, memungkinkan deployment kontrak Solidity tanpa perubahan (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/]
+- Movement SDK: Framework modular untuk membangun Move-based rollup dan app-chain; menyediakan tooling, VM integration, dan infrastruktur rollup (HIGH) [Movement Labs Website Products, https://movementlabs.xyz/products]
+- M1 Sequencer: Entitas yang mengurutkan transaksi untuk M1 L2; saat testnet Parthenon dioperasikan oleh Movement Labs (centralized sequencer) (MEDIUM) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/]
+- Ethereum Settlement Contracts: Kontrak pintar di Ethereum L1 untuk verifikasi state root, dispute resolution (jika menggunakan fraud proof), dan finality (MEDIUM) [Movement Labs Docs, https://docs.movementlabs.xyz/]
+- DA Layer Adapters: Modul integrasi untuk Celestia, Avail, dan EigenDA guna mempublikasikan data transaksi ke lapisan DA terpisah (MEDIUM) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+- Movement Network Coordinator: Komponen yang direncanakan untuk koordinasi cross-chain messaging dan interoperabilitas antar Move chains (MEDIUM) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+- Parthenon Testnet Explorer: Block explorer untuk visualisasi blok, transaksi, dan state MEVM testnet di explorer.testnet.movementlabs.xyz (HIGH) [Testnet Explorer, https://explorer.testnet.movementlabs.xyz/]
+- Movement SDK CLI/Tooling: Developer toolchain untuk kompilasi Move, deployment, testing, dan debugging (HIGH) [Movement Labs GitHub, https://github.com/movementlabsxyz]
+
+## Consensus Mechanism
+
+- M1 menggunakan centralized sequencer pada tahap testnet (Parthenon) dengan rencana transisi ke decentralized sequencer set (MEDIUM) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/]
+- Finality dan keamanan ekonomis diwarisi dari Ethereum L1 melalui settlement contracts (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+- Tidak ada consensus mechanism native (seperti PoS/PoA) untuk Movement Network secara mandiri; bergantung pada L1 settlement dan DA layer yang dipilih (MEDIUM) [Movement Labs Docs, https://docs.movementlabs.xyz/]
+- Rincian mekanisme fraud proof atau validity proof untuk state transition belum dipublikasikan secara detail di dokumentasi resmi (LOW) [Movement Labs Docs, https://docs.movementlabs.xyz/]
+
+## Execution Environment
+
+- MoveVM: Custom Move virtual machine dengan dukungan parallel execution berbasis dependency graph (seperti Block-STM) dan formal verification via Move Prover (HIGH) [Movement Labs Website Products, https://movementlabs.xyz/products]
+- MEVM: EVM compatibility layer yang mengeksekusi bytecode EVM dengan mentranslasikannya ke Move bytecode; mendukung precompiles dan Solidity tooling standard (Hardhat, Foundry) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/]
+- Lingkungan eksekusi mendukung dua mode: native Move smart contracts (Move bytecode) dan Solidity contracts via MEVM (HIGH) [Movement Labs Docs, https://docs.movementlabs.xyz/]
+
+## Programming Languages
+
+- Move: Bahasa utama untuk smart contract native di MoveVM (HIGH) [Movement Labs Website Products, https://movementlabs.xyz/products]
+- Rust: Bahasa implementasi MoveVM, MEVM, Movement SDK, dan infrastruktur node (HIGH) [Movement Labs GitHub, https://github.com/movementlabsxyz]
+- Solidity: Bahasa untuk kontrak yang di-deploy via MEVM (kompatibilitas EVM) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/]
+- TypeScript/JavaScript: SDK client-side, tooling CLI, dan testing framework (MEDIUM) [Movement Labs GitHub, https://github.com/movementlabsxyz]
+
+## Development Framework
+
+- Movement SDK: Framework modular untuk membangun rollup/app-chain; menyediakan abstraksi untuk VM, DA, settlement, dan sequencing (HIGH) [Movement Labs Website Products, https://movementlabs.xyz/products]
+- Move Prover: Formal verification tool untuk Move smart contracts (terintegrasi dari Move language toolchain) (HIGH) [Movement Labs Docs, https://docs.movementlabs.xyz/]
+- MEVM Compiler/Transpiler: Toolchain untuk kompilasi Solidity -> EVM bytecode -> Move bytecode (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/]
+- Hardhat/Foundry Support: Kompatibilitas dengan framework pengembangan Ethereum standar via MEVM (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/]
+- Movement CLI: Command-line interface untuk project scaffolding, deployment, dan interaksi dengan testnet/mainnet (MEDIUM) [Movement Labs GitHub, https://github.com/movementlabsxyz]
+
+## Security Model
+
+- Keamanan eksekusi: MoveVM menyediakan resource-oriented programming, formal verification (Move Prover), dan parallel execution yang aman secara deterministik (HIGH) [Movement Labs Website Products, https://movementlabs.xyz/products]
+- Keamanan settlement: Bergantung pada Ethereum L1 validator set untuk finality dan ketersediaan data (jika menggunakan Ethereum DA) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+- Keamanan DA: Pluggable DA layer (Celestia/Avail/EigenDA) dengan security model masing-masing (DAS, sampling, eigenlayer restaking) (MEDIUM) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+- Sequencer trust assumption: Pada testnet Parthenon, sequencer terpusat dioperasikan Movement Labs; rencana decentralized sequencer set untuk mainnet (MEDIUM) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/]
+- Fraud proof / Validity proof: Detail mekanisme bukti (fraud proof optimistic rollup atau validity proof ZK) belum dipublikasikan resmi (LOW) [Movement Labs Docs, https://docs.movementlabs.xyz/]
+- Upgradeability: Kontrol upgrade protokol (Movement SDK, MoveVM, MEVM) saat ini di tangan Movement Labs Inc.; rencana governance on-chain belum diumumkan (MEDIUM) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+
+## Audit History
+
+- Tidak ditemukan laporan audit keamanan publik untuk MoveVM, MEVM, Movement SDK, atau M1 settlement contracts per cut-off knowledge (LOW) [Movement Labs Blog, https://blog.movementlabs.xyz/; Movement Labs GitHub, https://github.com/movementlabsxyz; Movement Labs Docs, https://docs.movementlabs.xyz/]
+- Status audit: belum diumumkan resmi (LOW) [Movement Labs Discord FAQ, https://discord.gg/movementlabs]
+
+## Technical Upgrade History
+
+- 2024-07-30: Peluncuran Parthenon Testnet (MEVM Testnet v1) — testnet publik pertama untuk MoveVM, MEVM, dan Movement SDK tooling (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/]
+- 2024 (tanggal tidak spesifik): Rilis Movement SDK v0.x (pre-release) di GitHub untuk developer early access (MEDIUM) [Movement Labs GitHub, https://github.com/movementlabsxyz]
+- Tidak ada upgrade mainnet karena mainnet belum diluncurkan (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/]
+
+## Current Technical Stack
+
+- Rust: Implementasi core MoveVM, MEVM, Movement SDK, node software (HIGH) [Movement Labs GitHub, https://github.com/movementlabsxyz]
+- Move: Smart contract language dan bytecode format (HIGH) [Movement Labs Website Products, https://movementlabs.xyz/products]
+- Solidity: Bahasa kontrak untuk kompatibilitas EVM via MEVM (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/]
+- Docker: Containerization untuk node deployment dan testnet infrastructure (MEDIUM) [Movement Labs GitHub, https://github.com/movementlabsxyz]
+- Kubernetes: Orkestrasi infrastructure testnet (Parthenon) dan developer tooling (MEDIUM) [Movement Labs GitHub, https://github.com/movementlabsxyz]
+- Ethereum (Geth/Erigon): L1 settlement layer interaction (MEDIUM) [Movement Labs Docs, https://docs.movementlabs.xyz/]
+- Celestia / Avail / EigenDA: Planned DA layer integrations (SDK adapters in development) (MEDIUM) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+- TypeScript/JavaScript: SDK client, CLI, testing frameworks (Hardhat/Foundry plugins) (MEDIUM) [Movement Labs GitHub, https://github.com/movementlabsxyz]
+- GitHub Actions: CI/CD pipeline untuk testing dan release (MEDIUM) [Movement Labs GitHub, https://github.com/movementlabsxyz]
+
+## Known Technical Limitations
+
+- Centralized sequencer pada testnet Parthenon (single point of failure untuk urutan transaksi) (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/]
+- MEVM kompatibilitas EVM belum 100%: precompiles tertentu, opcode spesifik, dan gas semantics mungkin berbeda dari Ethereum mainnet (MEDIUM) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/]
+- Parallel execution MoveVM bergantung pada analisis dependensi transaksi; kontensi tinggi pada state yang sama mengurangi throughput paralel (MEDIUM) [Movement Labs Docs, https://docs.movementlabs.xyz/]
+- Tidak ada fraud proof / validity proof system yang live atau terdokumentasi detail untuk M1 (LOW) [Movement Labs Docs, https://docs.movementlabs.xyz/]
+- DA layer integrations (Celestia, Avail, EigenDA) masih di tahap planned/roadmap; belum live di testnet Parthenon (MEDIUM) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+- Movement Network cross-chain messaging protocol belum diimplementasikan atau terdokumentasi secara teknis (LOW) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+- Upgradeability dan governance mechanism untuk protokol inti belum didefinisikan secara on-chain (MEDIUM) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+
+## Official Technical Resources
+
+- Documentation: https://docs.movementlabs.xyz/
+- GitHub Organization: https://github.com/movementlabsxyz
+- Developer Docs (Movement SDK): https://docs.movementlabs.xyz/sdk
+- API Reference (JSON-RPC MEVM): https://docs.movementlabs.xyz/api
+- Movement SDK Repository: https://github.com/movementlabsxyz/movement-sdk
+- MoveVM Repository: https://github.com/movementlabsxyz/movevm
+- MEVM Repository: https://github.com/movementlabsxyz/mevm
+- Parthenon Testnet Explorer: https://explorer.testnet.movementlabs.xyz/
+- Parthenon Testnet RPC: https://mevm.testnet.movementlabs.xyz/ (MEDIUM) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/]
+- Whitepaper/Technical Vision: https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/
+- Research Papers: tidak dipublikasikan secara terpisah (vision di blog post resmi) (LOW) [Movement Labs Blog, https://blog.movementlabs.xyz/]
+
+## Summary
+
+Architecture: Modular Move-based blockchain stack (Execution: MoveVM/MEVM, Settlement: Ethereum L1, DA: Pluggable Celestia/Avail/EigenDA, Sequencing: Centralized testnet -> Planned decentralized)
+Core Components: MoveVM, MEVM, Movement SDK, M1 Sequencer, Ethereum Settlement Contracts, DA Layer Adapters, Movement Network Coordinator, Testnet Explorer, SDK Tooling
+Audit Count: 0 (tidak ada audit publik yang diverifikasi)
+Major Upgrade Count: 1 (Parthenon Testnet launch 2024-07-30)
+
+## Open Threads
+
+- Detail teknis fraud proof vs validity proof untuk M1 state transitions — belum terdokumentasi di docs resmi
+- Spesifikasi decentralized sequencer set: consensus algorithm, validator requirements, slashing conditions — belum diumumkan
+- Status implementasi DA layer adapters (Celestia, Avail, EigenDA) — apakah sudah ada kode di repositori atau masih desain
+- Rincian MEVM gas model dan perbedaan opcode vs Ethereum mainnet — belum ada dokumen kompatibilitas lengkap
+- Movement Network cross-chain messaging protocol spec (IBC? Hyperlane? Custom?) — belum dipublikasikan
+- MoveVM parallel execution engine detail (Block-STM variant? dependency tracking mechanism?) — belum terdokumentasi teknis
+- Formal verification integration (Move Prover) dalam SDK workflow — belum ada panduan developer lengkap
+- Upgrade governance mechanism untuk MoveVM/MEVM/M1 contracts — apakah tim multisig, timelock, atau on-chain DAO
+- Smart contract audit timeline dan auditor yang dipilih — belum diumumkan
+- Mainnet launch technical prerequisites (audit complete, DA integration live, decentralized sequencer) — belum didefinisikan publik

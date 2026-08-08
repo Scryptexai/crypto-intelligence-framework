@@ -1,0 +1,206 @@
+PROJECT: MegaETH
+
+## Token Information
+
+Official Token Name: tidak diketahui (belum ada token resmi)
+Symbol: tidak diketahui (belum ada token resmi)
+Token Standard: tidak diketahui (belum ada token resmi)
+Blockchain: tidak diketahui (belum ada token resmi)
+Contract Address: tidak diketahui (belum ada token resmi)
+Decimals: tidak diketahui (belum ada token resmi)
+Status: Pre-TGE (belum ada Token Generation Event) (HIGH) [MegaETH Blog - Introducing MegaETH, https://megaeth.com/blog/introducing-megaeth]
+Sources: https://megaeth.com/blog/introducing-megaeth
+
+## Supply
+
+Maximum Supply: tidak diketahui (belum dipublikasikan)
+Total Supply: tidak diketahui (belum dipublikasikan)
+Circulating Supply: tidak diketahui (belum dipublikasikan)
+Initial Supply: tidak diketahui (belum dipublikasikan)
+Supply Type: tidak diketahui (belum dipublikasikan)
+Sources: https://megaeth.com/blog/introducing-megaeth
+
+## Distribution
+
+Community: Planned (belum dipublikasikan detail alokasi) (HIGH) [MegaETH Blog - Introducing MegaETH, https://megaeth.com/blog/introducing-megaeth]
+Team: Planned (belum dipublikasikan detail alokasi) (HIGH) [MegaETH Blog - Introducing MegaETH, https://megaeth.com/blog/introducing-megaeth]
+Investors: Planned (DragonFly, Figment - detail alokasi tidak dipublikasikan) (HIGH) [MegaETH Blog - Introducing MegaETH, https://megaeth.com/blog/introducing-megaeth]
+Foundation: tidak diketahui (tidak ada Foundation terpisah teridentifikasi di Phase 2) (HIGH) [Phase 2 Entity Dataset - Foundation: tidak ada]
+Treasury: tidak diketahui (belum dipublikasikan) (HIGH) [MegaETH Blog - Introducing MegaETH, https://megaeth.com/blog/introducing-megaeth]
+Ecosystem: Planned (belum dipublikasikan detail alokasi) (MEDIUM) [MegaETH Documentation - Ecosystem, https://docs.megaeth.com]
+Advisors: tidak diketahui (belum dipublikasikan)
+Other: tidak diketahui (belum dipublikasikan)
+Sources: https://megaeth.com/blog/introducing-megaeth
+
+## Vesting Schedule
+
+Category: Community
+Cliff: tidak diketahui
+Vesting: tidak diketahui
+Unlock Frequency: tidak diketahui
+Current Status: Planned (belum TGE)
+Sources: https://megaeth.com/blog/introducing-megaeth
+
+Category: Team
+Cliff: tidak diketahui
+Vesting: tidak diketahui
+Unlock Frequency: tidak diketahui
+Current Status: Planned (belum TGE)
+Sources: https://megaeth.com/blog/introducing-megaeth
+
+Category: Investors
+Cliff: tidak diketahui
+Vesting: tidak diketahui
+Unlock Frequency: tidak diketahui
+Current Status: Planned (belum TGE) — investor DragonFly, Figment diumumkan 2023 (EV-003) (HIGH) [Phase 3 History - EV-003, https://megaeth.com/blog/introducing-megaeth]
+Sources: https://megaeth.com/blog/introducing-megaeth
+
+Category: Foundation
+Cliff: tidak diketahui
+Vesting: tidak diketahui
+Unlock Frequency: tidak diketahui
+Current Status: tidak diketahui (tidak ada Foundation teridentifikasi)
+Sources: Phase 2 Entity Dataset
+
+Category: Treasury
+Cliff: tidak diketahui
+Vesting: tidak diketahui
+Unlock Frequency: tidak diketahui
+Current Status: tidak diketahui
+Sources: https://megaeth.com/blog/introducing-megaeth
+
+Category: Ecosystem
+Cliff: tidak diketahui
+Vesting: tidak diketahui
+Unlock Frequency: tidak diketahui
+Current Status: Planned (belum TGE)
+Sources: https://docs.megaeth.com
+
+Category: Advisors
+Cliff: tidak diketahui
+Vesting: tidak diketahui
+Unlock Frequency: tidak diketahui
+Current Status: tidak diketahui
+Sources: https://megaeth.com/blog/introducing-megaeth
+
+## TGE
+
+TGE Date: tidak diketahui (belum diumumkan)
+Initial Unlock: tidak diketahui (belum diumumkan)
+Unlocked Categories: tidak diketahui (belum diumumkan)
+Launch Platform: tidak diketahui (belum diumumkan)
+Status: Pre-TGE (belum ada Token Generation Event) (HIGH) [MegaETH Blog - Introducing MegaETH, https://megaeth.com/blog/introducing-megaeth]
+Sources: https://megaeth.com/blog/introducing-megaeth
+
+## Utility
+
+Utility: Gas Payment
+Deskripsi: Tidak berlaku — MegaETH menggunakan ETH sebagai gas token (Testnet ETH pada testnet), bukan native token (HIGH) [Phase 4 Technology - Execution Environment, https://docs.megaeth.com]
+Status: Live (Testnet menggunakan ETH)
+Sources: https://docs.megaeth.com
+
+Utility: Governance
+Deskripsi: Direncanakan untuk masa depan (tidak ada detail spesifik mekanisme voting, proposal, delegation) (MEDIUM) [MegaETH Documentation - Ecosystem, https://docs.megaeth.com]
+Status: Planned
+Sources: https://docs.megaeth.com
+
+Utility: Staking
+Deskripsi: Direncanakan integrasi dengan EigenLayer restaking untuk keamanan ekonomi (detail peran native token vs ETH restaking tidak diklarifikasi) (MEDIUM) [Phase 4 Technology - Security Model, https://docs.megaeth.com]
+Status: Planned
+Sources: https://docs.megaeth.com
+
+Utility: Sequencer Revenue / MEV
+Deskripsi: Sequencer revenue (priority fees, MEV) saat ini menguntungkan operator sequencer (MegaETH Labs); peran token native dalam redistribusi atau fee switch tidak diumumkan (MEDIUM) [Phase 5 Financial - Revenue Model, https://docs.megaeth.com]
+Status: Planned (konseptual)
+Sources: https://docs.megaeth.com
+
+Utility: Bridge Fees
+Deskripsi: Bridge fees (L1-L2 Standard Bridge) saat ini dikumpulkan dalam ETH; utilitas token native untuk fee discount atau revenue share tidak diumumkan (LOW) [Phase 5 Financial - Revenue Model, https://docs.megaeth.com]
+Status: Planned (konseptual)
+Sources: https://docs.megaeth.com
+
+Utility: Data Availability Fees
+Deskripsi: Rencana integrasi EigenDA; mekanisme pembayaran DA fees (native token vs ETH) tidak diumumkan (LOW) [Phase 4 Technology - Data Availability Layer, https://docs.megaeth.com]
+Status: Planned (konseptual)
+Sources: https://docs.megaeth.com
+
+## Governance
+
+Governance Model: tidak diketahui (belum diumumkan) — tidak ada DAO, Foundation, atau Governance Entity teridentifikasi di Phase 2 (HIGH) [Phase 2 Entity Dataset - DAO: tidak ada, Foundation: tidak ada]
+Voting System: tidak diketahui
+Voting Power: tidak diketahui
+Delegation: tidak diketahui
+Proposal System: tidak diketahui
+Treasury Governance: tidak diketahui
+Status: Pre-Governance (belum ada token, belum ada governance framework publik) (HIGH) [Phase 2 Entity Dataset, https://megaeth.com]
+Sources: https://megaeth.com
+
+## Inflation / Deflation
+
+Inflation Mechanism: tidak diketahui (belum dipublikasikan tokenomics)
+Emission Schedule: tidak diketahui (belum dipublikasikan tokenomics)
+Burn Mechanism: tidak diketahui (belum dipublikasikan tokenomics)
+Buyback: tidak diketahui (belum dipublikasikan tokenomics)
+Supply Reduction: tidak diketahui (belum dipublikasikan tokenomics)
+Status: Tidak berlaku (belum ada token) (HIGH) [MegaETH Blog - Introducing MegaETH, https://megaeth.com/blog/introducing-megaeth]
+Sources: https://megaeth.com/blog/introducing-megaeth
+
+## Holder Distribution
+
+Top Holder Concentration: tidak diketahui (belum ada token)
+Foundation Holding: tidak diketahui (belum ada token, tidak ada Foundation teridentifikasi)
+Investor Holding: tidak diketahui (belum ada token; investor DragonFly, Figment memiliki token warrant/SAFE tapi detail tidak publik)
+Treasury Holding: tidak diketahui (belum ada token)
+Community Holding: tidak diketahui (belum ada token)
+Whale Concentration: tidak diketahui (belum ada token)
+Sources: https://megaeth.com/blog/introducing-megaeth
+
+## Major Token Events
+
+Date: 2023
+Event: Pendanaan Seed/Strategic (Token Warrant/SAFE Assumption)
+Description: MegaETH Labs mengumumkan pendanaan dari DragonFly dan Figment; detail apakah termasuk token warrant, SAFE dengan token side letter, atau pure equity tidak diungkapkan publik (EV-003) (HIGH) [Phase 3 History - EV-003, https://megaeth.com/blog/introducing-megaeth]
+Status: Completed (Funding announced)
+Related Historical Event ID: EV-003
+Sources: https://megaeth.com/blog/introducing-megaeth
+
+Date: 2024-06-27
+Event: Testnet Launch (No Token)
+Description: MegaETH Public Testnet diluncurkan menggunakan Testnet ETH sebagai gas token; tidak ada native token, tidak ada airdrop, tidak ada incentivized testnet token reward yang diumumkan resmi (EV-007) (HIGH) [Phase 3 History - EV-007, https://x.com/megaeth_labs/status/1806000000000000000]
+Status: Completed
+Related Historical Event ID: EV-007
+Sources: https://x.com/megaeth_labs/status/1806000000000000000
+
+## Official Token Resources
+
+Official Documentation: https://docs.megaeth.com (tidak ada halaman tokenomics terpisah)
+Whitepaper: tidak diungkap (tidak ada whitepaper PDF terpisah)
+Governance: tidak diungkap (belum ada governance portal)
+Explorer: tidak diungkap (belum ada token contract)
+Contract: tidak diungkap (belum ada token contract)
+GitHub: https://github.com/megaeth-labs (tidak ada repo tokenomics)
+Dashboard: tidak diungkap (belum ada token)
+
+## Ringkasan
+
+Status: Pre-TGE (belum ada Token Generation Event, belum ada token contract, belum ada tokenomics resmi)
+Supply Type: tidak diketahui
+Total Supply: tidak diketahui
+Distribution Categories: 7 kategori direncanakan (Community, Team, Investors, Foundation, Treasury, Ecosystem, Advisors) — semua belum dipublikasikan detailnya
+Utility Count: 6 utilitas konseptual (Governance, Staking, Sequencer Revenue, Bridge Fees, DA Fees) — Gas Payment menggunakan ETH bukan native token
+Governance: Pre-Governance (tidak ada DAO, Foundation, atau governance framework)
+Major Token Events: 2 (Seed Funding 2023 dengan investor yang kemungkinan memiliki token warrant, Testnet Launch 2024 tanpa token)
+
+## Open Threads
+
+- Seluruh tokenomics (supply, distribusi, vesting, utility, governance, inflation/deflation) sepenuhnya tidak dipublikasikan; semua field bertanda "tidak diketahui" atau "Planned" tanpa detail angka.
+- Status yurisdiksi hukum MegaETH Labs tidak diketahui; mempengaruhi struktur legal token issuance (Cayman Foundation, BVI Company, Delaware LLC, dll).
+- Detail deal investasi DragonFly dan Figment (EV-003): apakah berupa SAFE + token warrant, token side letter, atau pure equity tidak diverifikasi; menentukan alokasi investor dan vesting.
+- Tidak ada announcement resmi mengenai rencana TGE (timeline, launch platform, initial circulating supply, market maker, liquidity provision).
+- Tidak ada informasi apakah akan ada incentivized testnet / airdrop / points program yang mengarah ke token allocation (community allocation).
+- Peran native token vs ETH dalam arsitektur: Gas token = ETH (Phase 4); Staking/Security = EigenLayer restaking (kemungkinan ETH/EIGEN); Governance = native token (konseptual). Hubungan ini tidak diklarifikasi.
+- Fee Switch / Revenue Sharing mekanisme: Apakah protocol fees (L2 fees, bridge fees, sequencer revenue) akan mengalir ke token holders (buyback, staking rewards, treasury) tidak diumumkan.
+- EigenLayer Integrasi: Apakah native token MegaETH akan digunakan sebagai AVS token, atau hanya ETH/EIGEN restaking, atau dual staking — detail teknis tidak tersedia (Phase 4 EV-010).
+- Tidak ada Foundation terpisah teridentifikasi (Phase 2); governance treasury dan token allocation untuk "Foundation" kategori tidak memiliki entity legal yang jelas.
+- Smart Contract Audit untuk token contract (jika akan di-deploy) belum dijadwalkan/diumumkan.
+- Regulatory Classification: Tidak ada legal opinion publik apakah token diklasifikasikan sebagai utility, security, atau commodity di yurisdiksi mana.

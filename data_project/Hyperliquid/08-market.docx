@@ -1,0 +1,290 @@
+PROJECT: Hyperliquid
+
+## Market Category
+
+Primary Category: Layer 1 Blockchain (HIGH) [Phase 1 Foundation, https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview]
+Secondary Category: Decentralized Exchange (Perpetual Futures & Spot) (HIGH) [Phase 1 Foundation, https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview]
+Sector: DeFi (Decentralized Finance) (HIGH) [Phase 1 Foundation, https://hyperliquid.xyz]
+Sub-sector: On-chain Order Book (CLOB) / Appchain / EVM-compatible Execution Layer (HIGH) [Phase 4 Technology, https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview; Phase 1 Foundation, https://hyperliquid.xyz/blog/hyperevm]
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview; https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview; https://hyperliquid.xyz; https://hyperliquid.xyz/blog/hyperevm
+
+## Market Position
+
+Project Stage: Growth (Mainnet live since 2023-05-14, TGE completed 2024-11-29, HyperEVM testnet live) (HIGH) [Phase 3 History EV-005, EV-008, EV-007; https://hyperliquid.xyz/blog/mainnet-launch; https://hyperliquid.xyz/blog/hype-genesis; https://hyperliquid.xyz/blog/hyperevm]
+Primary Competitors: dYdX (v4 Chain), GMX, Vertex Protocol, Aevo, Hyperliquid Perpetual DEX (self-competition with CEX perpetual markets), Solana (high-throughput L1 for perp DEXs), Arbitrum (L2 hosting perp DEXs) (HIGH) [Phase 2 Entity Competitor references; Phase 7 Ecosystem Position; Messari Report, https://messari.io/report/hyperliquid-deep-dive]
+Market Segment: Professional/Institutional on-chain perpetual futures trading; Retail spot & perp trading via CLOB; Developer ecosystem for HyperEVM dApps (HIGH) [Phase 1 Foundation, https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview; Phase 7 Ecosystem, https://hyperliquid.xyz/blog/ecosystem-fund]
+Geographic Focus: Global (geo-blocking status tidak diumumkan resmi) (MEDIUM) [Phase 1 Foundation, https://hyperliquid.xyz; Phase 7 Ecosystem Risks, https://messari.io/report/hyperliquid-deep-dive]
+Sources: https://hyperliquid.xyz/blog/mainnet-launch; https://hyperliquid.xyz/blog/hype-genesis; https://hyperliquid.xyz/blog/hyperevm; https://messari.io/report/hyperliquid-deep-dive; https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview; https://hyperliquid.xyz/blog/ecosystem-fund
+
+## Trading Markets
+
+Exchange: Hyperliquid Perpetual DEX (Native Protocol)
+Spot: No
+Perpetual: Yes (native perpetual futures, leverage hingga 50x)
+Futures: No (perpetual only)
+Options: No
+OTC: No
+Status: Live (since 2023-05-14) (HIGH)
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview; https://hyperliquid.xyz/blog/mainnet-launch
+
+Exchange: Hyperliquid Spot DEX (Native Protocol)
+Spot: Yes (native spot markets, CLOB on-chain)
+Perpetual: No
+Futures: No
+Options: No
+OTC: No
+Status: Live (since 2023-10) (HIGH)
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview; https://hyperliquid.xyz/blog/spot-launch
+
+Exchange: CoinGecko (Price Tracking / Aggregator)
+Spot: Yes (HYPE price tracking)
+Perpetual: No
+Futures: No
+Options: No
+OTC: No
+Status: Live (HIGH)
+Sources: https://www.coingecko.com/en/coins/hyperliquid
+
+Exchange: Centralized Exchanges (CEXs) for HYPE spot trading
+Spot: tidak diketahui (tidak diumumkan resmi di blog/docs Phase 1-7; CoinGecko markets tab tidak diverifikasi dalam riset ini)
+Perpetual: tidak diketahui
+Futures: tidak diketahui
+Options: tidak diketahui
+OTC: tidak diketahui
+Status: Unknown (LOW)
+Sources: https://www.coingecko.com/en/coins/hyperliquid (markets tab not verified in Phase 1-7 research)
+
+## Liquidity
+
+Liquidity Source: Hyperliquid Perpetual DEX Order Book (CLOB on-chain)
+Major Liquidity Venue: Hyperliquid L1 (native)
+DEX: Hyperliquid Perpetual DEX, Hyperliquid Spot DEX (HIGH)
+CEX: tidak diketahui (tidak ada data CEX liquidity untuk HYPE atau perp markets resmi) (LOW)
+Bridge Liquidity: Hyperliquid Native Bridge (Arbitrum ↔ Hyperliquid L1, Ethereum ↔ Hyperliquid L1) (MEDIUM)
+Status: Live (HIGH)
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview; https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview; https://hyperliquid.xyz/blog/hype-genesis
+
+Liquidity Source: Institutional Market Makers (SIG, GSR)
+Major Liquidity Venue: Hyperliquid Perpetual DEX (HIGH)
+DEX: Hyperliquid Perpetual DEX (HIGH)
+CEX: N/A (market makers operate on-chain) (HIGH)
+Bridge Liquidity: N/A (HIGH)
+Status: Live (HIGH)
+Sources: https://www.theblock.co/post/298123/hyperliquid-labs-raises-funding; https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview
+
+Liquidity Source: USDC Collateral Deposits (Users)
+Major Liquidity Venue: Hyperliquid L1 (smart contract / protocol vault) (HIGH)
+DEX: Hyperliquid Perpetual DEX, Hyperliquid Spot DEX (HIGH)
+CEX: N/A (HIGH)
+Bridge Liquidity: Hyperliquid Native Bridge (inflow/outflow USDC) (MEDIUM)
+Status: Live (HIGH)
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview
+
+## Adoption Metrics
+
+Metric Name: TVL (Total Value Locked)
+Value: tidak diketahui (angka spesifik tidak dipublikasikan di Phase 1-7 sources; DefiLlama menampilkan TVL chain tapi tidak diekstrak sebagai angka pasti di sini)
+Date: tidak diketahui
+Sources: https://defillama.com/chain/Hyperliquid (MEDIUM) [DefiLlama Chain Page - TVL data available but specific value not captured in Phase 1-7]
+
+Metric Name: Daily Active Users
+Value: tidak diketahui (tidak ada dashboard resmi atau metrik on-chain yang diekstrak di Phase 1-7)
+Date: tidak diketahui
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs (LOW) [Documentation - no metrics dashboard]
+
+Metric Name: Transactions (Daily/Total)
+Value: tidak diketahui (tidak dipublikasikan metrik transaksi harian/total di Phase 1-7)
+Date: tidak diketahui
+Sources: https://hypurrscan.io (LOW) [Hypurrscan Explorer - data on-chain but not aggregated in Phase 1-7]
+
+Metric Name: Wallets (Unique Addresses Interacted)
+Value: tidak diketahui (tidak dipublikasikan di Phase 1-7)
+Date: tidak diketahui
+Sources: https://hypurrscan.io (LOW) [Hypurrscan Explorer]
+
+Metric Name: Developer Count
+Value: tidak diketahui (tidak ada developer count resmi; HyperEVM testnet baru, ecosystem fund baru diannounce) (LOW)
+Date: tidak diketahui
+Sources: https://hyperliquid.xyz/blog/ecosystem-fund (LOW) [Official Blog Ecosystem Fund]; https://hyperliquid.xyz/blog/hyperevm (LOW) [Official Blog HyperEVM]
+
+Metric Name: Volume (Daily/Monthly Perpetual & Spot)
+Value: tidak diketahui (angka spesifik volume tidak diekstrak di Phase 1-7; DefiLlama menampilkan volume chain tapi nilai pasti tidak tercatat di sini)
+Date: tidak diketahui
+Sources: https://defillama.com/chain/Hyperliquid (MEDIUM) [DefiLlama Chain Page - volume data available but specific value not captured]
+
+Metric Name: Bridge Volume (Hyperliquid Native Bridge)
+Value: tidak diketahui (tidak dipublikasikan metrik bridge volume di Phase 1-7)
+Date: tidak diketahui
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview (LOW) [Documentation Products - bridge exists but no volume metrics]
+
+Metric Name: Messages (Cross-chain / HyperEVM)
+Value: tidak diketahui (HyperEVM testnet, tidak ada metrik messages) (LOW)
+Date: tidak diketahui
+Sources: https://hyperliquid.xyz/blog/hyperevm (LOW) [Official Blog HyperEVM]
+
+Metric Name: Validator Count
+Value: tidak diketahui (komposisi dan jumlah validator set tidak diungkap resmi di Phase 1-7) (LOW)
+Date: tidak diketahui
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview (LOW) [Documentation Architecture - validator set exists but count not disclosed]
+
+## Market Share
+
+Tidak tersedia. (Tidak ada data market share perp DEX / L1 / CLOB yang diverifikasi di Phase 1-7 sources)
+Sources: https://messari.io/report/hyperliquid-deep-dive (LOW) [Messari Report - no market share data in Phase 1-7 extraction]; https://defillama.com/chain/Hyperliquid (LOW) [DefiLlama - chain ranking but not explicit market share]
+
+## Competitor Landscape
+
+Competitor: dYdX (v4 Chain)
+Category: Layer 1 Appchain / Perpetual DEX (CLOB)
+Difference: dYdX v4 adalah Cosmos-based appchain; Hyperliquid adalah custom L1 dengan HyperBFT consensus dan HyperEVM EVM layer (HIGH)
+Market Segment: On-chain perpetual futures trading (HIGH)
+Sources: https://messari.io/report/hyperliquid-deep-dive (MEDIUM) [Messari Report - competitor context]; https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview (HIGH) [Documentation Architecture - Hyperliquid differentiation]
+
+Competitor: GMX
+Category: Decentralized Perpetual Exchange (GLP/GM pools, not CLOB)
+Difference: GMX menggunakan model AMM/pool-based (GLP); Hyperliquid menggunakan CLOB on-chain native (HIGH)
+Market Segment: On-chain perpetual trading (HIGH)
+Sources: https://messari.io/report/hyperliquid-deep-dive (MEDIUM) [Messari Report]; https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview (HIGH) [Documentation Products - CLOB vs AMM]
+
+Competitor: Vertex Protocol
+Category: Decentralized Perpetual Exchange (Hybrid CLOB/AMM on Arbitrum)
+Difference: Vertex beroperasi di Arbitrum L2; Hyperliquid adalah sovereign L1 dengan consensus sendiri (HIGH)
+Market Segment: On-chain perpetual trading (HIGH)
+Sources: https://messari.io/report/hyperliquid-deep-dive (MEDIUM) [Messari Report]; https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview (HIGH) [Documentation Architecture - sovereign L1]
+
+Competitor: Aevo
+Category: Decentralized Perpetual/Options Exchange (Custom L2 / Off-chain matching)
+Difference: Aevo menggunakan off-chain matching engine dengan on-chain settlement; Hyperliquid fully on-chain CLOB dalam konsensus (HIGH)
+Market Segment: On-chain derivatives trading (HIGH)
+Sources: https://messari.io/report/hyperliquid-deep-dive (MEDIUM) [Messari Report]; https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview (HIGH) [Documentation Architecture - fully on-chain]
+
+Competitor: Solana
+Category: High-throughput Layer 1 (hosting perp DEXs like Drift, Phoenix)
+Difference: Solana general-purpose L1; Hyperliquid appchain khusus trading dengan CLOB terintegrasi konsensus (HIGH)
+Market Segment: High-performance on-chain trading infrastructure (HIGH)
+Sources: https://messari.io/report/hyperliquid-deep-dive (MEDIUM) [Messari Report]; https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview (HIGH) [Documentation Architecture - appchain vs general purpose]
+
+Competitor: Arbitrum
+Category: Layer 2 (hosting perp DEXs like GMX, Vertex)
+Difference: Arbitrum L2 pada Ethereum; Hyperliquid sovereign L1 dengan bridge native ke Arbitrum (HIGH)
+Market Segment: On-chain trading execution environment (HIGH)
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview (HIGH) [Documentation Products - bridge to Arbitrum]; https://messari.io/report/hyperliquid-deep-dive (MEDIUM) [Messari Report]
+
+## Narrative Position
+
+Narrative: Appchain / Application-Specific Blockchain
+Status: Main Narrative (HIGH)
+Evidence: Hyperliquid L1 dibangun khusus untuk trading (perp/spot CLOB) dengan konsensus HyperBFT custom, bukan general-purpose L1 (HIGH)
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview; https://hyperliquid.xyz/blog/introducing-hyperliquid; https://messari.io/report/hyperliquid-deep-dive
+
+Narrative: On-chain CLOB (Central Limit Order Book)
+Status: Main Narrative (HIGH)
+Evidence: Perpetual DEX dan Spot DEX menggunakan CLOB on-chain penuh di dalam konsensus, bukan AMM atau off-chain matching (HIGH)
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview; https://hyperliquid.xyz/blog/mainnet-launch; https://hyperliquid.xyz/blog/spot-launch
+
+Narrative: Modular Execution (HyperEVM)
+Status: Secondary Narrative (HIGH)
+Evidence: HyperEVM menambahkan EVM-compatible execution layer di atas Hyperliquid L1 untuk general-purpose dApps dengan akses ke CLOB native (HIGH)
+Sources: https://hyperliquid.xyz/blog/hyperevm; https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview
+
+Narrative: Interoperability (Native Bridge)
+Status: Secondary Narrative (MEDIUM)
+Evidence: Native bridge ke Arbitrum dan Ethereum untuk onboarding likuiditas cross-chain (MEDIUM)
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview; https://hyperliquid.xyz/blog/hype-genesis
+
+Narrative: Token Launch / Community Ownership (HYPE TGE)
+Status: Secondary Narrative (HIGH)
+Evidence: TGE 2024-11-29 dengan distribusi komunitas (airdrop/points), staking untuk keamanan jaringan, governance planned (HIGH)
+Sources: https://hyperliquid.xyz/blog/hype-genesis; https://www.coingecko.com/en/coins/hyperliquid
+
+Narrative: Institutional Grade DeFi (SIG, GSR Market Makers)
+Status: Secondary Narrative (HIGH)
+Evidence: Partisipasi market maker institusional tier-1 (Susquehanna, GSR) sebagai investor dan penyedia likuiditas (HIGH)
+Sources: https://www.theblock.co/post/298123/hyperliquid-labs-raises-funding; https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview
+
+Narrative: EVM-compatible / Chain Abstraction (via HyperEVM)
+Status: Emerging Narrative (MEDIUM)
+Evidence: HyperEVM memungkinkan developer Ethereum deploy ke Hyperliquid dengan akses CLOB via precompile (MEDIUM)
+Sources: https://hyperliquid.xyz/blog/hyperevm; https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview
+
+## Market Timeline
+
+Date: 2023-05-14
+Milestone: Mainnet Launch Hyperliquid Perpetual DEX
+Description: Peluncuran Hyperliquid L1 mainnet dengan HyperBFT consensus dan Perpetual DEX CLOB on-chain
+Related Historical Event ID: EV-005
+Sources: https://hyperliquid.xyz/blog/mainnet-launch
+
+Date: 2023-10
+Milestone: Launch Hyperliquid Spot DEX
+Description: Penambahan Spot DEX CLOB on-chain ke mainnet yang sudah ada
+Related Historical Event ID: EV-006
+Sources: https://hyperliquid.xyz/blog/spot-launch
+
+Date: 2024-11
+Milestone: HyperEVM Testnet Launch
+Description: Peluncuran testnet HyperEVM (EVM execution layer) di atas Hyperliquid L1
+Related Historical Event ID: EV-007
+Sources: https://hyperliquid.xyz/blog/hyperevm
+
+Date: 2024-11-29
+Milestone: Token Generation Event (TGE) HYPE
+Description: Peluncuran token HYPE native di Hyperliquid L1, distribusi komunitas via airdrop/points claim, aktivasi staking dan validator economics
+Related Historical Event ID: EV-008
+Sources: https://hyperliquid.xyz/blog/hype-genesis; https://www.coingecko.com/en/coins/hyperliquid
+
+Date: 2024
+Milestone: Peluncuran Hyperliquid Bridge (Native Bridge ke Arbitrum/Ethereum)
+Description: Hyperliquid Bridge native diluncurkan memungkinkan transfer aset antara Hyperliquid L1 dan Arbitrum/Ethereum mainnet
+Related Historical Event ID: EV-009
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview
+
+Date: 2024
+Milestone: Pengumuman Hyperliquid Ecosystem Fund / Builder Grants
+Description: Hyperliquid mengumumkan Ecosystem Fund dan program Builder Grants untuk mendukung pengembang membangun di HyperEVM dan Hyperliquid L1
+Related Historical Event ID: EV-010
+Sources: https://hyperliquid.xyz/blog/ecosystem-fund
+
+Date: 2024
+Milestone: Indikasi Pembentukan Hyperliquid Foundation
+Description: Terbentuknya entitas foundation untuk mengelola treasury, governance, tokenomics (belum diverifikasi resmi lengkap)
+Related Historical Event ID: EV-011
+Sources: https://hyperliquid.xyz/blog/hype-genesis; https://messari.io/report/hyperliquid-deep-dive
+
+## Official Market Resources
+
+Official Dashboard: tidak tersedia (tidak ada dashboard market resmi publik) (LOW)
+DefiLlama: https://defillama.com/chain/Hyperliquid (HIGH)
+CoinGecko: https://www.coingecko.com/en/coins/hyperliquid (HIGH)
+CoinMarketCap: tidak diverifikasi di Phase 1-7 (LOW)
+Token Terminal: tidak tersedia (protokel belum terintegrasi) (LOW)
+Messari: https://messari.io/report/hyperliquid-deep-dive (HIGH)
+Explorer: https://hypurrscan.io (utama); https://explorer.hyperliquid.xyz (resmi) (HIGH)
+
+## Summary
+
+Market Stage: Growth
+Primary Category: Layer 1 Blockchain / Decentralized Exchange (Perpetual Futures & Spot)
+Competitor Count: 6 (dYdX, GMX, Vertex Protocol, Aevo, Solana, Arbitrum)
+Major Narrative: Appchain / On-chain CLOB / Modular Execution (HyperEVM)
+Trading Availability: Native Perpetual DEX (Live), Native Spot DEX (Live), CoinGecko Tracking (Live), CEX Listing (Unknown)
+Adoption Metrics Available: Tidak ada metrik adopsi yang diverifikasi dengan angka pasti di Phase 1-7 (TVL, Volume, Users, Transactions, Developers, Validator Count semuanya "tidak diketahui" angka spesifiknya)
+
+## Open Threads
+
+- Data TVL, Volume, Daily Active Users, Transactions, Wallets, Developer Count, Bridge Volume, Validator Count yang spesifik dan terverifikasi — tidak diekstrak di Phase 1-7; perlu query DefiLlama API, Hypurrscan, atau dashboard resmi jika ada.
+- Daftar CEX yang melisting HYPE spot/perpetual (CoinGecko markets tab belum diverifikasi sebagai sumber resmi) — perlu cek CoinGecko "Markets" atau pengumuman resmi.
+- Market share Hyperliquid di sektor perp DEX on-chain vs dYdX, GMX, Vertex, Aevo — tidak ada data komparatif di Phase 1-7.
+- Status geo-blocking / jurisdictional compliance untuk perp DEX — tidak diumumkan, mempengaruhi TAM (Total Addressable Market).
+- Detail tokenomics HYPE (alokasi, vesting, emission, fee switch) — whitepaper belum terbit, mempengaruhi valuasi model.
+- Audit keamanan formal untuk HyperBFT, CLOB engine, bridge contracts — tidak ditemukan laporan publik, risiko kepercayaan institusional.
+- Desentralisasi validator set (jumlah, geografis, entity, permissioned vs permissionless) — tidak dipublikasikan, mempengaruhi risk assessment.
+- Timeline HyperEVM mainnet launch dan audit pre-launch — tidak diumumkan, mempengaruhi narrative modular execution.
+- Hubungan hukum Hyperliquid Labs (BVI) dan Hyperliquid Foundation (governance) — belum diverifikasi dokumen incorporasi foundation.
+- Rincian HyperEVM precompile untuk akses CLOB — spec teknis belum terdokumentasi lengkap, mempengaruhi developer adoption.
+- Program hackathon / developer onboarding resmi selain Ecosystem Fund — tidak diumumkan.
+- Dukungan IBC / cross-chain messaging generik di luar native bridge — tidak disebut di docs.
+- Metrik desentralisasi staking (validator count, nakamoto coefficient, stake distribution) — tidak tersedia dashboard.
+- Alokasi Ecosystem Fund dalam HYPE vs stablecoin vs equity — tidak diungkap.
+- Regulatory classification token HYPE (security vs utility vs commodity) di yurisdiksi utama (US, EU, SG, BVI) — tidak ada legal opinion publik.
+- Status fee switch / revenue sharing ke staker HYPE — belum diaktifkan/diumumkan detailnya, mempengaruhi token value accrual narrative.

@@ -1,0 +1,175 @@
+PROJECT: Hyperliquid
+
+## System Architecture
+
+- Arsitektur: Layer 1 blockchain sovereign custom (Hyperliquid L1) dengan konsensus HyperBFT, lapisan eksekusi terintegrasi (CLOB on-chain untuk perpetual dan spot), dan lingkungan eksekusi EVM-compatible (HyperEVM) di atas L1 (HIGH) [Documentation Architecture, https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview]
+- Arsitektur: Modular dengan pemisahan konsensus (HyperBFT), eksekusi trading (matching engine CLOB), dan eksekusi smart contract (HyperEVM) (HIGH) [Documentation Architecture, https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview]
+- Cross-chain Messaging: Native bridge ke Arbitrum dan Ethereum mainnet untuk transfer aset (MEDIUM) [Documentation Products, https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview]
+- Bridge: Hyperliquid Bridge (native, bukan generic message passing) (MEDIUM) [Documentation Products, https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview]
+- Appchain: Hyperliquid L1 adalah appchain khusus untuk trading (perp/spot) dengan HyperEVM sebagai general-purpose execution layer (HIGH) [Official Blog HyperEVM, https://hyperliquid.xyz/blog/hyperevm]
+
+## Core Components
+
+- Nama: HyperBFT Consensus
+  Fungsi: Algoritma konsensus BFT custom untuk finalitas sub-sekon dan throughput tinggi, dirancang untuk matching engine CLOB on-chain (HIGH)
+  Status: Live di mainnet sejak Mei 2023 (HIGH)
+  Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview (HIGH) [Documentation Architecture]; https://hyperliquid.xyz/blog/mainnet-launch (HIGH) [Official Blog Mainnet Launch]
+
+- Nama: Hyperliquid Perpetual DEX (CLOB Engine)
+  Fungsi: Central Limit Order Book on-chain penuh untuk perpetual futures, matching order di dalam konsensus, mendukung leverage hingga 50x (HIGH)
+  Status: Live di mainnet sejak 14 Mei 2023 (HIGH)
+  Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview (HIGH) [Documentation Products]; https://hyperliquid.xyz/blog/mainnet-launch (HIGH) [Official Blog Mainnet Launch]
+
+- Nama: Hyperliquid Spot DEX (CLOB Engine)
+  Fungsi: Central Limit Order Book on-chain untuk pasar spot, terintegrasi dengan perp CLOB di L1 yang sama (HIGH)
+  Status: Live di mainnet sejak Oktober 2023 (HIGH)
+  Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview (HIGH) [Documentation Products]; https://hyperliquid.xyz/blog/spot-launch (HIGH) [Official Blog Spot Launch]
+
+- Nama: HyperEVM
+  Fungsi: Lingkungan eksekusi EVM-compatible di atas Hyperliquid L1, memungkinkan deployment smart contract Solidity/Vyper dengan akses ke CLOB native dan finalitas HyperBFT (HIGH)
+  Status: Testnet live November 2024; mainnet belum (HIGH)
+  Sources: https://hyperliquid.xyz/blog/hyperevm (HIGH) [Official Blog HyperEVM]; https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview (HIGH) [Documentation Architecture]
+
+- Nama: Hyperliquid Bridge
+  Fungsi: Native bridge untuk transfer aset (USDC, dll) antara Hyperliquid L1 dan Arbitrum/Ethereum mainnet (MEDIUM)
+  Status: Live 2024 (MEDIUM)
+  Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview (MEDIUM) [Documentation Products]
+
+- Nama: Hypurrscan / Official Explorer
+  Fungsi: Block explorer untuk Hyperliquid L1 (HIGH)
+  Status: Live (HIGH)
+  Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/ecosystem/explorers (HIGH) [Documentation Explorers]
+
+- Nama: Validator Set
+  Fungsi: Kumpulan validator yang menjalankan HyperBFT, memvalidasi blok dan transaksi (HIGH)
+  Status: Live (HIGH)
+  Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview (HIGH) [Documentation Architecture]
+
+## Consensus Mechanism
+
+- Nama: HyperBFT
+- Tipe: Custom Byzantine Fault Tolerance (BFT) consensus
+- Deskripsi: Konsensus BFT custom dirancang untuk finalitas sub-sekon, throughput tinggi, dan integrasi ketat dengan matching engine CLOB on-chain; tidak menggunakan Tendermint/CometBFT standar (HIGH)
+- Status: Live di mainnet sejak Mei 2023 (HIGH)
+- Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview (HIGH) [Documentation Architecture]; https://hyperliquid.xyz/blog/mainnet-launch (HIGH) [Official Blog Mainnet Launch]; https://messari.io/report/hyperliquid-deep-dive (HIGH) [Messari Report]
+
+## Execution Environment
+
+- Native Execution: Custom execution environment untuk CLOB matching engine (order placement, cancellation, matching, settlement) di dalam konsensus HyperBFT (HIGH)
+- EVM Execution: HyperEVM — EVM-compatible execution layer (Solidity/Vyper) di atas Hyperliquid L1, menggunakan precompile untuk akses CLOB (HIGH)
+- Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview (HIGH) [Documentation Architecture]; https://hyperliquid.xyz/blog/hyperevm (HIGH) [Official Blog HyperEVM]
+
+## Programming Languages
+
+- Rust: Bahasa utama untuk Hyperliquid L1 node, HyperBFT consensus, dan CLOB matching engine (HIGH)
+- Solidity / Vyper: Bahasa untuk smart contract di HyperEVM (HIGH)
+- TypeScript / JavaScript: SDK klien, frontend, dan tooling (MEDIUM)
+- Sources: https://github.com/hyperliquid-dex (HIGH) [GitHub Org - repositori Rust]; https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview (HIGH) [Documentation Architecture]; https://hyperliquid.xyz/blog/hyperevm (HIGH) [Official Blog HyperEVM]
+
+## Development Framework
+
+- SDK: Hyperliquid SDK (TypeScript/Python) untuk interaksi API REST/WebSocket (MEDIUM)
+- Framework: Custom Rust framework untuk node dan konsensus (tidak menggunakan Cosmos SDK, Substrate, atau OP Stack) (HIGH)
+- Toolchain: Cargo (Rust), Foundry/Hardhat (untuk HyperEVM smart contract development) (MEDIUM)
+- Sources: https://github.com/hyperliquid-dex (HIGH) [GitHub Org]; https://hyperliquid.gitbook.io/hyperliquid-docs/ (MEDIUM) [Documentation - developer guides]; https://hyperliquid.xyz/blog/hyperevm (MEDIUM) [Official Blog HyperEVM - mention EVM tooling]
+
+## Security Model
+
+- Validator Security: Proof-of-Stake dengan HYPE staking (post-TGE) untuk sybil resistance dan ekonomi keamanan validator (HIGH)
+- Consensus Safety: HyperBFT memberikan safety dan liveness di bawah asumsi BFT standar (<1/3 byzantine) (HIGH)
+- Execution Isolation: CLOB matching engine berjalan di dalam konsensus (bukan smart contract), mengurangi surface area attack (HIGH)
+- Bridge Security: Native bridge dengan validator set Hyperliquid sebagai custodian (trusted bridge model) (MEDIUM)
+- Smart Contract Security: HyperEVM mewarisi keamanan EVM; auditor kontrak di HyperEVM adalah tanggung jawab developer (MEDIUM)
+- Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview (HIGH) [Documentation Architecture]; https://hyperliquid.xyz/blog/hype-genesis (HIGH) [Official Blog HYPE Genesis - staking]; https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview (MEDIUM) [Documentation Products - bridge]
+
+## Audit History
+
+- Auditor: Tidak diketahui audit keamanan formal yang dipublikasikan untuk Hyperliquid L1 core, HyperBFT, atau CLOB engine saat cut-off pengetahuan (LOW)
+- Tanggal: N/A
+- Scope: N/A
+- Status: N/A
+- Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/ (LOW) [Documentation - no audit reports listed]; https://github.com/hyperliquid-dex (LOW) [GitHub Org - no audit reports in repos]; https://messari.io/report/hyperliquid-deep-dive (LOW) [Messari Report - no audit mention]
+
+## Technical Upgrade History
+
+- Tanggal: 2023-05-14
+  Nama Upgrade: Mainnet Launch (Perpetual DEX)
+  Deskripsi Singkat: Peluncuran Hyperliquid L1 mainnet dengan HyperBFT consensus dan Perpetual DEX CLOB on-chain
+  Status: Completed
+  Sources: https://hyperliquid.xyz/blog/mainnet-launch (HIGH) [Official Blog Mainnet Launch]
+
+- Tanggal: 2023-10
+  Nama Upgrade: Spot DEX Launch
+  Deskripsi Singkat: Penambahan Spot DEX CLOB on-chain ke mainnet yang sudah ada
+  Status: Completed
+  Sources: https://hyperliquid.xyz/blog/spot-launch (HIGH) [Official Blog Spot Launch]
+
+- Tanggal: 2024-11
+  Nama Upgrade: HyperEVM Testnet Launch
+  Deskripsi Singkat: Peluncuran testnet HyperEVM (EVM execution layer) di atas Hyperliquid L1
+  Status: Completed (testnet)
+  Sources: https://hyperliquid.xyz/blog/hyperevm (HIGH) [Official Blog HyperEVM]
+
+- Tanggal: 2024-11-29
+  Nama Upgrade: HYPE TGE & Staking Activation
+  Deskripsi Singkat: Token Generation Event HYPE native token, aktivasi staking untuk keamanan jaringan
+  Status: Completed
+  Sources: https://hyperliquid.xyz/blog/hype-genesis (HIGH) [Official Blog HYPE Genesis]
+
+- Tanggal: 2024
+  Nama Upgrade: Native Bridge Launch
+  Deskripsi Singkat: Peluncuran Hyperliquid Bridge native ke Arbitrum/Ethereum
+  Status: Completed
+  Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview (MEDIUM) [Documentation Products]
+
+## Current Technical Stack
+
+- Rust: Core blockchain node, consensus, matching engine (HIGH)
+- Solidity / Vyper: HyperEVM smart contracts (HIGH)
+- TypeScript / JavaScript: Client SDK, frontend, indexing (MEDIUM)
+- RocksDB / LevelDB: State storage (inferred from typical Rust blockchain stack) (LOW)
+- gRPC / Protobuf: Internal communication (inferred) (LOW)
+- REST / WebSocket: API eksternal untuk trading dan data (HIGH)
+- Docker / Kubernetes: Deployment infrastructure (inferred, not explicitly documented) (LOW)
+- Foundry / Hardhat: HyperEVM development tooling (MEDIUM)
+- Sources: https://github.com/hyperliquid-dex (HIGH) [GitHub Org - Rust repos]; https://hyperliquid.gitbook.io/hyperliquid-docs/ (MEDIUM) [Documentation - API references]; https://hyperliquid.xyz/blog/hyperevm (MEDIUM) [Official Blog HyperEVM - tooling mention]
+
+## Known Technical Limitations
+
+- Throughput CLOB terbatas oleh kapasitas single-threaded matching engine di dalam konsensus (tidak di-shard) (MEDIUM)
+- HyperEVM masih testnet; mainnet belum live, kompatibilitas EVM penuh (precompile, gas model) belum diverifikasi produksi (HIGH)
+- Native bridge menggunakan model trusted validator set (bukan trust-minimized light client / ZK bridge) (MEDIUM)
+- Tidak ada formal verification untuk HyperBFT atau matching engine logic (LOW)
+- Staking HYPE baru aktif pasca-TGE November 2024; ekonomi keamanan masih awal (HIGH)
+- Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview (MEDIUM) [Documentation Architecture - implied single-threaded CLOB]; https://hyperliquid.xyz/blog/hyperevm (HIGH) [Official Blog HyperEVM - testnet status]; https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview (MEDIUM) [Documentation Products - bridge model]; https://hyperliquid.xyz/blog/hype-genesis (HIGH) [Official Blog HYPE Genesis - staking launch]
+
+## Official Technical Resources
+
+- Documentation: https://hyperliquid.gitbook.io/hyperliquid-docs
+- GitHub: https://github.com/hyperliquid-dex
+- Developer Docs (API): https://hyperliquid.gitbook.io/hyperliquid-docs/api
+- SDK (TypeScript): https://github.com/hyperliquid-dex/hyperliquid-typescript-sdk (jika ada, otherwise main org)
+- API Reference: https://hyperliquid.gitbook.io/hyperliquid-docs/api
+- Whitepaper: Tidak ada whitepaper teknis terpisah; arsitektur terdokumentasi di GitBook (LOW)
+- Research Paper: Tidak ada (LOW)
+- Sources: https://hyperliquid.gitbook.io/hyperliquid-docs (HIGH) [Documentation]; https://github.com/hyperliquid-dex (HIGH) [GitHub Org]
+
+## Summary
+
+- Architecture: Layer 1 sovereign custom (Hyperliquid L1) dengan HyperBFT consensus, CLOB on-chain terintegrasi, dan HyperEVM sebagai EVM execution layer; native bridge ke Arbitrum/Ethereum
+- Core Components: HyperBFT Consensus, Perpetual DEX CLOB Engine, Spot DEX CLOB Engine, HyperEVM, Hyperliquid Bridge, Validator Set, Block Explorer (Hypurrscan)
+- Audit Count: 0 (tidak ditemukan audit publik formal untuk core protocol)
+- Major Upgrade Count: 5 (Mainnet Perp Launch, Spot Launch, HyperEVM Testnet, HYPE TGE/Staking, Native Bridge)
+
+## Open Threads
+
+- Detail teknis HyperBFT (paper/spec formal) — tidak dipublikasikan; hanya deskripsi high-level di docs
+- Spesifikasi precompile HyperEVM untuk akses CLOB — belum terdokumentasi lengkap di docs publik
+- Modelo keamanan bridge detail (threshold signature, validator set rotation, slashing) — tidak transparan
+- Rencana sharding / parallelization matching engine — tidak diroadmap teknis publik
+- Status formal verification untuk kritikal consensus/matching logic — tidak ada informasi
+- Detail upgradeability protokol (governance upgrade vs hard fork) — tidak terdokumentasi
+- Kompatibilitas HyperEVM dengan EIP terbaru (Shanghai, Cancun, dll) — belum diverifikasi testnet
+- Metrik performa konsensus (TPS, latency, finality time) under load produksi — tidak dipublikasikan benchmark independen
+- Rencana decentralisasi validator set (permissioned vs permissionless) — tidak diumumkan jelas
+- Detail storage architecture (state growth, pruning, archival) — tidak terdokumentasi

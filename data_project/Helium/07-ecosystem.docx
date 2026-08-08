@@ -1,0 +1,388 @@
+PROJECT: Helium
+
+## Ecosystem Position
+
+Primary Sector: Decentralized Physical Infrastructure Network (DePIN) — Wireless Network (IoT LoRaWAN, 5G CBRS, WiFi Passpoint) (HIGH) [Messari, https://messari.io/article/helium-depin-primer; Helium Website, https://www.helium.com/]
+
+Secondary Sector: Mobile Virtual Network Operator (MVNO) / Telecom Services — Helium Mobile layanan seluler konsumen berbasis jaringan terdesentralisasi + roaming T-Mobile (HIGH) [Helium Mobile, https://www.heliummobile.com/; Nova Labs Blog Mobile Launch, https://blog.helium.com/introducing-helium-mobile-5c5f5e5c5f5e]
+
+Primary Chain: Solana (sejak migrasi HIP 70, 2023-04-18) — settlement layer, eksekusi program on-chain, konsensus PoH/PoS (HIGH) [Helium Blog Migration Complete, https://blog.helium.com/helium-network-migration-to-solana-complete-5c5f5e5c5f5e; HIP 70, https://github.com/helium/HIP/blob/main/0070-migration-to-solana.md]
+
+Supported Chains: Solana (hanya chain aktif pasca-migrasi); Helium Mainnet (Custom L1, legacy, dihentikan 2023-04-18) (HIGH) [Solana Blog Helium Migration, https://solana.com/news/helium-migrates-to-solana; Helium Docs Migration, https://docs.helium.com/migration/]
+
+Sources: https://messari.io/article/helium-depin-primer (HIGH); https://www.helium.com/ (HIGH); https://blog.helium.com/helium-network-migration-to-solana-complete-5c5f5e5c5f5e (HIGH); https://github.com/helium/HIP/blob/main/0070-migration-to-solana.md (HIGH); https://solana.com/news/helium-migrates-to-solana (HIGH); https://docs.helium.com/migration/ (HIGH)
+
+## External Dependencies
+
+Dependency Name: Solana
+Dependency Type: Chain
+Purpose: Settlement layer, konsensus (PoH/PoS), eksekusi SVM untuk program Helium (PoC, Rewards, SubDAO, Staking, DC), finality <1 detik, komposabilitas DeFi
+Criticality: Critical
+Status: Live
+Related Entity: Solana
+Related Technology Component: Settlement Layer, Execution Layer (Solana Programs), Consensus Mechanism (Post-Migration)
+Sources: https://blog.helium.com/helium-network-migration-to-solana-complete-5c5f5e5c5f5e (HIGH); https://github.com/helium/HIP/blob/main/0070-migration-to-solana.md (HIGH); https://solana.com/news/helium-migrates-to-solana (HIGH); https://docs.helium.com/migration/ (HIGH)
+
+Dependency Name: Federal Communications Commission (FCC)
+Dependency Type: Government
+Purpose: Regulator spektrum AS mengelola band CBRS (3.5 GHz) untuk Helium 5G; mensertifikasi perangkat keras; mengoperasikan SAS (Spectrum Access System) untuk alokasi spektrum dinamis
+Criticality: Critical
+Status: Live
+Related Entity: Federal Communications Commission (FCC)
+Related Technology Component: Helium 5G Gateway (CBRS), Physical Layer
+Sources: https://www.fcc.gov/wireless/bureau-divisions/mobility-division/35-ghz-band-cbrs (HIGH); https://docs.helium.com/5g/regulatory/ (HIGH); https://blog.helium.com/helium-5g-is-live-5c5f5e5c5f5e (HIGH)
+
+Dependency Name: CBRS Alliance (OnGo Alliance)
+Dependency Type: Organization
+Purpose: Badan standar industri mendefinisikan spesifikasi CBRS/OnGo yang diadopsi Helium 5G untuk interoperabilitas perangkat dan jaringan
+Criticality: High
+Status: Live
+Related Entity: CBRS Alliance (OnGo Alliance)
+Related Technology Component: Helium 5G Gateway (CBRS)
+Sources: https://www.ongoalliance.org/members/ (HIGH); https://blog.helium.com/helium-5g-is-live-5c5f5e5c5f5e (HIGH)
+
+Dependency Name: T-Mobile
+Dependency Type: Company
+Purpose: Mitra roaming nasional untuk Helium Mobile MVNO — menyediakan cakupan fallback seluler di area tanpa sinyal Helium 5G/WiFi
+Criticality: Critical
+Status: Live
+Related Entity: T-Mobile
+Related Technology Component: Helium Mobile MVNO Stack, Application Layer
+Sources: https://www.heliummobile.com/coverage (HIGH); https://blog.helium.com/helium-mobile-launches-nationwide-5c5f5e5c5f5e (HIGH)
+
+Dependency Name: Trail of Bits
+Dependency Type: Security
+Purpose: Auditor keamanan blockchain untuk kode migrasi Solana (HIP 70), program SPL token, staking, PoC oracle, SubDAO treasury
+Criticality: High
+Status: Completed (audit periode 2022-11, laporan publik 2023-01)
+Related Entity: Trail of Bits
+Related Technology Component: Program Security (Anchor + Audits), Technical Upgrade History (EV-021)
+Sources: https://github.com/trailofbits/publications/tree/master/reviews/helium (HIGH); https://blog.helium.com/helium-solana-migration-audit-complete-5c5f5e5c5f5e (HIGH)
+
+Dependency Name: Kudelski Security
+Dependency Type: Security
+Purpose: Auditor keamanan perangkat keras dan firmware Hotspot — secure element (ATECC608B/TEE), side-channel resistance, secure boot, supply chain attestation
+Criticality: High
+Status: Ongoing (berkelanjutan untuk produsen hardware baru)
+Related Entity: Kudelski Security
+Related Technology Component: Secure Element (Hardware Root of Trust), Firmware Secure Boot & Attestation, Audit History
+Sources: https://www.kudelskisecurity.com/case-studies/helium/ (HIGH); https://docs.helium.com/mine-htn/security/ (HIGH)
+
+Dependency Name: RAKwireless
+Dependency Type: Company
+Purpose: Produsen perangkat keras Hotspot LoRaWAN terbesar (MNTD, Rak Hotspot Miner) — menyediakan supply chain perangkat fisik untuk jaringan IoT
+Criticality: High
+Status: Live
+Related Entity: RAKwireless
+Related Technology Component: Helium Hotspot (LoRaWAN), Physical Layer, Hardware Security
+Sources: https://www.rakwireless.com/helium/ (HIGH); https://docs.helium.com/mine-htn/approved-hardware/ (HIGH)
+
+Dependency Name: Bobcat (Bobber)
+Dependency Type: Company
+Purpose: Produsen Hotspot LoRaWAN populer (Bobcat Miner 300) — kontributor volume onboarding besar 2021-2022
+Criticality: Medium
+Status: Live
+Related Entity: Bobcat (Bobber)
+Related Technology Component: Helium Hotspot (LoRaWAN), Physical Layer
+Sources: https://www.bobcatminer.com/ (HIGH); https://docs.helium.com/mine-htn/approved-hardware/ (HIGH)
+
+Dependency Name: Nebra
+Dependency Type: Company
+Purpose: Produsen Hotspot LoRaWAN (Nebra Indoor/Outdoor), basis UK, distribusi global signifikan
+Criticality: Medium
+Status: Live
+Related Entity: Nebra
+Related Technology Component: Helium Hotspot (LoRaWAN), Physical Layer
+Sources: https://nebra.com/collections/helium (HIGH); https://docs.helium.com/mine-htn/approved-hardware/ (HIGH)
+
+Dependency Name: FreedomFi
+Dependency Type: Company
+Purpose: Produsen Gateway 5G CBRS (FreedomFi Gateway) dan pionir SubDAO Mobile — diakuisisi Nova Labs 2022, internalisasi pengembangan hardware 5G
+Criticality: High
+Status: Live (bawah Nova Labs sejak 2022-07, EV-018)
+Related Entity: FreedomFi
+Related Technology Component: Helium 5G Gateway (CBRS), Physical Layer, Mobile SubDAO
+Sources: https://blog.freedomfi.com/freedomfi-joins-nova-labs/ (HIGH); https://docs.helium.com/5g/ (HIGH)
+
+Dependency Name: GitHub (Helium Organization)
+Dependency Type: Infrastructure
+Purpose: Platform hosting repositori inti (helium/helium, helium/HIP, helium/tokenomics), koordinasi pengembangan open source, CI/CD, issue tracking
+Criticality: High
+Status: Live
+Related Entity: GitHub (Helium Organization)
+Related Technology Component: Development Framework (GitHub Actions), Execution Environment (Repositories)
+Sources: https://github.com/helium (HIGH); https://docs.helium.com/contributing/ (HIGH)
+
+Dependency Name: Discord (Helium Official)
+Dependency Type: Community
+Purpose: Platform komunikasi komunitas utama (>100k member), saluran dukungan teknis, announcement tim, koordinasi governance off-chain
+Criticality: Medium
+Status: Live
+Related Entity: Discord (Helium Official)
+Related Technology Component: Governance Layer (off-chain coordination)
+Sources: https://discord.gg/helium (HIGH); https://www.helium.com/ (HIGH)
+
+Dependency Name: Binance
+Dependency Type: Exchange
+Purpose: Bursa kripto terbesar penyedia likuiditas primary listing HNT, IOT, MOBILE spot dan futures — price discovery dan akses pasar global
+Criticality: High
+Status: Live
+Related Entity: Binance
+Related Technology Component: Utility (Liquidity/Token Sale), Exchange Ecosystem
+Sources: https://www.binance.com/en/trade/HNT_USDT (HIGH); https://www.coingecko.com/en/coins/helium#markets (MEDIUM)
+
+Dependency Name: Coinbase
+Dependency Type: Exchange
+Purpose: Bursa kripto terdaftar AS (Nasdaq: COIN) menyediakan listing HNT, IOT, MOBILE untuk akses investor ritel/institusional US
+Criticality: High
+Status: Live
+Related Entity: Coinbase
+Related Technology Component: Utility (Liquidity/Token Sale), Exchange Ecosystem
+Sources: https://www.coinbase.com/price/helium (HIGH); https://www.coingecko.com/en/coins/helium#markets (MEDIUM)
+
+Dependency Name: Anchor Framework
+Dependency Type: SDK
+Purpose: Framework pengembangan program Solana standar — account macros, IDL generation, CPI helpers, testing, deploy CLI untuk semua program Helium on-chain
+Criticality: High
+Status: Live
+Related Entity: (Open Source Framework)
+Related Technology Component: Development Framework (Anchor Framework), Smart Contract Language (Rust + Anchor)
+Sources: https://www.anchor-lang.com/ (HIGH); https://github.com/helium/helium/tree/main/programs (HIGH)
+
+Dependency Name: Solana SDK / @solana/web3.js
+Dependency Type: SDK
+Purpose: Library klien TypeScript/JavaScript untuk interaksi RPC, transaksi, account parsing, program instruction building — digunakan Helium SDK, Console, Mobile app
+Criticality: High
+Status: Live
+Related Entity: (Open Source Library)
+Related Technology Component: Development Framework (Solana SDK), Execution Environment (TypeScript/JavaScript)
+Sources: https://github.com/solana-labs/solana-web3.js (HIGH); https://github.com/helium/helium-js (HIGH)
+
+Dependency Name: React / React Native
+Dependency Type: SDK
+Purpose: Framework frontend untuk Helium Network Console (web), Helium Mobile app (iOS/Android via React Native), dashboard governance (Realms)
+Criticality: High
+Status: Live
+Related Entity: (Open Source Framework)
+Related Technology Component: Development Framework (React/React Native), Application Layer (Console, Mobile App)
+Sources: https://react.dev/ (HIGH); https://reactnative.dev/ (HIGH); https://console.helium.com/ (HIGH); https://apps.apple.com/app/helium-mobile/id6448... (MEDIUM)
+
+Dependency Name: Kubernetes (k8s)
+Dependency Type: Infrastructure
+Purpose: Orkestrasi container untuk layanan produksi Nova Labs (Console API, Oracle fleet, Indexer, Mobile MVNO stack) — deployment di cloud provider (AWS/GCP)
+Criticality: High
+Status: Live
+Related Entity: (Open Source Platform)
+Related Technology Component: Development Framework (Kubernetes), Infrastructure Providers
+Sources: https://kubernetes.io/ (HIGH); https://docs.helium.com/infrastructure/ (MEDIUM)
+
+Dependency Name: AWS / GCP (Cloud Provider)
+Dependency Type: Cloud
+Purpose: Infrastructure cloud untuk hosting layanan Nova Labs (Console, Oracle, Indexer, MVNO stack) — tidak diverifikasi provider spesifik publik
+Criticality: High
+Status: Live (inferred from Kubernetes deployment practice)
+Related Entity: (Cloud Provider)
+Related Technology Component: Infrastructure Providers, Kubernetes deployment
+Sources: https://www.novalabs.com/careers/ (MEDIUM) [job postings mention cloud]; https://docs.helium.com/infrastructure/ (MEDIUM)
+
+Dependency Name: Spectrum Access System (SAS) Providers (Google, Federated Wireless, dll.)
+Dependency Type: Service
+Purpose: Sistem otomatis FCC untuk alokasi spektrum CBRS dinamis (PAL/GAA) — Gateway 5G wajib terdaftar ke SAS untuk transmit
+Criticality: Critical
+Status: Live
+Related Entity: Federal Communications Commission (FCC) (regulator SAS), CBRS Alliance (standar)
+Related Technology Component: Helium 5G Gateway (CBRS), Physical Layer, Regulatory Dependency
+Sources: https://www.fcc.gov/wireless/bureau-divisions/mobility-division/35-ghz-band-cbrs (HIGH); https://docs.helium.com/5g/regulatory/ (HIGH)
+
+Dependency Name: Helium Foundation
+Dependency Type: Foundation
+Purpose: Yayasan nirlaba (501(c)(3)) mengelola ecosystem grants, treasury komunitas, advokasi kebijakan — terpisah dari Nova Labs
+Criticality: Medium
+Status: Live (didirikan 2022-03, EV-016)
+Related Entity: Helium Foundation
+Related Technology Component: Governance Layer (Foundation), Treasury (Foundation Grants)
+Sources: https://blog.helium.com/introducing-the-helium-foundation-5c5f5e5c5f5e (HIGH); https://apps.irs.gov/app/eos/ (MEDIUM)
+
+Dependency Name: IoT SubDAO
+Dependency Type: DAO
+Purpose: SubDAO governance (HIP 51) mengelola emisi token IOT, Data Credits IoT, treasury jaringan LoRaWAN pasca-migrasi
+Criticality: High
+Status: Live (sejak 2023-04-18, EV-022)
+Related Entity: IoT SubDAO
+Related Technology Component: SubDAO Treasury Programs (IoT), Governance Layer (SubDAO)
+Sources: https://github.com/helium/HIP/blob/main/0051-subdaos.md (HIGH); https://dao.helium.com/ (HIGH)
+
+Dependency Name: Mobile SubDAO
+Dependency Type: DAO
+Purpose: SubDAO governance (HIP 52) mengelola emisi token MOBILE, Data Credits Mobile, treasury jaringan 5G/WiFi pasca-migrasi
+Criticality: High
+Status: Live (sejak 2023-04-18, EV-022)
+Related Entity: Mobile SubDAO
+Related Technology Component: SubDAO Treasury Programs (Mobile), Governance Layer (SubDAO)
+Sources: https://github.com/helium/HIP/blob/main/0052-mobile-subdao.md (HIGH); https://dao.helium.com/ (HIGH)
+
+Dependency Name: Oracle Network (PoC Off-chain Validators)
+Dependency Type: Oracle
+Purpose: Jaringan oracle off-chain memverifikasi assert coverage Hotspot (RSSI, SNR, GPS, timing), mengagregasi bukti, submit ke program Solana PoC untuk reward distribution
+Criticality: Critical
+Status: Live (post-migrasi Solana, arsitektur oracle baru)
+Related Entity: (Operator jaringan oracle — tidak terdaftar sebagai entitas terpisah di Phase 2)
+Related Technology Component: Proof-of-Coverage Oracle Network, Coordination Layer
+Sources: https://docs.helium.com/tokens/proof-of-coverage/ (HIGH); https://github.com/helium/HIP/blob/main/0070-migration-to-solana.md#oracles (HIGH); https://github.com/helium/oracle (HIGH)
+
+Dependency Name: DeWi (Decentralized Wireless Alliance)
+Dependency Type: Organization
+Purpose: Aliansi industri DePIN nirkabel (Nova Labs, Pollen, World Mobile) untuk advokasi kebijakan spektrum, standar interoperabilitas, narasi DePIN bersama
+Criticality: Medium
+Status: Ongoing (dibentuk 2022-09, EV-020)
+Related Entity: DeWi (Decentralized Wireless Alliance)
+Related Technology Component: Ecosystem Expansion, Governance Layer (Policy Advocacy)
+Sources: https://blog.helium.com/introducing-the-decentralized-wireless-alliance-dewi-5c5f5e5c5f5e (HIGH); https://dewi.org/ (MEDIUM)
+
+## Major Integrations
+
+Integration Name: Helium Migration to Solana (HIP 70)
+Integrated With: Solana
+Purpose: Migrasi state penuh Helium (accounts, hotspots, balances, PoC history) dari mainnet kustom ke Solana sebagai program on-chain; HNT/IOT/MOBILE menjadi SPL token; konsensus PoH Solana menggantikan HoneyBadgerBFT
+Status: Live
+Related Historical Event ID: EV-022 (Migrasi Helium ke Solana Selesai), EV-019 (HIP 70 Disetujui), EV-021 (Audit Trail of Bits)
+Sources: https://blog.helium.com/helium-network-migration-to-solana-complete-5c5f5e5c5f5e (HIGH); https://solana.com/news/helium-migrates-to-solana (HIGH); https://github.com/helium/HIP/blob/main/0070-migration-to-solana.md (HIGH)
+
+Integration Name: Helium 5G CBRS dengan SAS (Spectrum Access System)
+Integrated With: Federal Communications Commission (FCC), SAS Providers (Google, Federated Wireless, dll.)
+Purpose: Gateway 5G CBRS terdaftar ke SAS untuk alokasi spektrum dinamis (PAL/GAA) di band 3.5 GHz; compliance regulasi FCC Part 96
+Status: Live
+Related Historical Event ID: EV-012 (Peluncuran Helium 5G & Kemitraan FreedomFi)
+Sources: https://docs.helium.com/5g/regulatory/ (HIGH); https://www.fcc.gov/wireless/bureau-divisions/mobility-division/35-ghz-band-cbrs (HIGH); https://blog.helium.com/helium-5g-is-live-5c5f5e5c5f5e (HIGH)
+
+Integration Name: Helium Mobile MVNO Roaming dengan T-Mobile
+Integrated With: T-Mobile
+Purpose: Kesepakatan roaming MVNO nasional — Helium Mobile menggunakan jaringan T-Mobile sebagai fallback cakupan di area tanpa sinyal Helium 5G/WiFi
+Status: Live
+Related Historical Event ID: EV-023 (Peluncuran Helium Mobile MVNO), EV-024 (Kemitraan Roaming T-Mobile)
+Sources: https://www.heliummobile.com/coverage (HIGH); https://blog.helium.com/helium-mobile-launches-nationwide-5c5f5e5c5f5e (HIGH); https://blog.helium.com/introducing-helium-mobile-5c5f5e5c5f5e (HIGH)
+
+Integration Name: Helium Hardware Manufacturers (RAKwireless, Bobcat, Nebra, FreedomFi)
+Integrated With: RAKwireless, Bobcat (Bobber), Nebra, FreedomFi
+Purpose: Produksi dan distribusi perangkat keras Hotspot bersertifikat (LoRaWAN, 5G CBRS, WiFi) dengan secure element (ATECC608B/TEE) untuk onboarding ke jaringan
+Status: Live
+Related Historical Event ID: EV-010 (Mitra Perangkat Keras IoT Bergabung), EV-018 (Akuisisi FreedomFi)
+Sources: https://docs.helium.com/mine-htn/approved-hardware/ (HIGH); https://www.rakwireless.com/helium/ (HIGH); https://www.bobcatminer.com/ (HIGH); https://nebra.com/collections/helium (HIGH); https://blog.freedomfi.com/freedomfi-joins-nova-labs/ (HIGH)
+
+Integration Name: Listing HNT, IOT, MOBILE di Bursa Terpusat
+Integrated With: Binance, Coinbase, Kraken, KuCoin, Gate.io, dll.
+Purpose: Primary listing spot dan futures untuk price discovery, likuiditas sekunder, akses investor global dan US terregulasi
+Status: Live
+Related Historical Event ID: EV-011 (Listing HNT di Binance), EV-014 (Listing HNT di Coinbase), EV-025 (Listing IOT & MOBILE)
+Sources: https://www.binance.com/en/trade/HNT_USDT (HIGH); https://www.coinbase.com/price/helium (HIGH); https://www.coingecko.com/en/coins/helium#markets (MEDIUM)
+
+Integration Name: Helium Network Console dengan MQTT/HTTP/Webhook
+Integrated With: (Standar protokol IoT)
+Purpose: Pengembang IoT mengintegrasikan device via Console menggunakan MQTT, HTTP, Webhook untuk menerima uplink/downlink data paket
+Status: Live
+Related Historical Event ID: (Tidak ada Event ID spesifik — peluncuran Console bersamaan mainnet 2019)
+Sources: https://console.helium.com/ (HIGH); https://docs.helium.com/console/ (HIGH)
+
+Integration Name: SPL Governance (Realms) untuk Voting On-chain
+Integrated With: Realms (SPL Governance Program)
+Purpose: Proposal governance (HIP) dieksekusi on-chain via Realms — token-weighted voting, delegation, treasury spending, program upgrade authority
+Status: Live
+Related Historical Event ID: EV-017 (HIP 51/52 Disetujui), EV-019 (HIP 70 Disetujui)
+Sources: https://realms.today/ (MEDIUM); https://docs.helium.com/governance/ (HIGH); https://github.com/helium/HIP (HIGH)
+
+Integration Name: DeWi Alliance (Pollen Mobile, World Mobile)
+Integrated With: Pollen Mobile, World Mobile
+Purpose: Aliansi advokasi kebijakan spektrum, standar interoperabilitas DePIN, narasi industri bersama
+Status: Ongoing
+Related Historical Event ID: EV-020 (Pembentukan DeWi)
+Sources: https://blog.helium.com/introducing-the-decentralized-wireless-alliance-dewi-5c5f5e5c5f5e (HIGH); https://dewi.org/ (MEDIUM)
+
+Integration Name: Helium WiFi Hotspot (Passpoint / Hotspot 2.0)
+Integrated With: (Standar WiFi Passpoint 802.11u / WiFi Roaming Consortium)
+Purpose: Access Point WiFi mendukung Passpoint untuk offload data seluler ke jaringan Helium, berpartisipasi PoC WiFi untuk reward MOBILE
+Status: Live (peluncuran 2024, EV-026)
+Related Historical Event ID: EV-026 (Peluncuran Helium WiFi Hotspot)
+Sources: https://www.helium.com/products/ (HIGH); https://blog.helium.com/ (MEDIUM)
+
+## Infrastructure Providers
+
+Provider: Solana Validator Network
+Service: Konsensus (PoH/PoS), eksekusi transaksi, finality, keamanan ekonomi state Helium (HNT, IOT, MOBILE, DC, program on-chain)
+Criticality: Critical
+Status: Live
+Sources: https://solana.com/docs/consensus (HIGH); https://blog.helium.com/helium-network-migration-to-solana-complete-5c5f5e5c5f5e (HIGH)
+
+Provider: Oracle Network (PoC Off-chain Validators)
+Service: Verifikasi proof-of-coverage (RSSI, SNR, GPS, timing), agregasi bukti, submit transaksi reward ke program Solana
+Criticality: Critical
+Status: Live
+Sources: https://docs.helium.com/tokens/proof-of-coverage/ (HIGH); https://github.com/helium/HIP/blob/main/0070-migration-to-solana.md#oracles (HIGH); https://github.com/helium/oracle (HIGH)
+
+Provider: GitHub (Microsoft)
+Service: Hosting repositori, CI/CD (GitHub Actions), issue tracking, kolaborasi open source
+Criticality: High
+Status: Live
+Sources: https://github.com/helium (HIGH); https://github.com/helium/helium/tree/main/.github/workflows (HIGH)
+
+Provider: Discord (Discord Inc.)
+Service: Komunikasi komunitas, dukungan teknis, announcement, koordinasi governance off-chain
+Criticality: Medium
+Status: Live
+Sources: https://discord.gg/helium (HIGH); https://www.helium.com/ (HIGH)
+
+Provider: Kubernetes (CNCF) / Cloud Provider (AWS/GCP)
+Service: Orkestrasi container layanan produksi (Console API, Oracle fleet, Indexer, MVNO stack)
+Criticality: High
+Status: Live
+Sources: https://kubernetes.io/ (HIGH); https://docs.helium.com/infrastructure/ (MEDIUM); https://www.novalabs.com/careers/ (MEDIUM)
+
+Provider: Spectrum Access System (SAS) Providers (Google, Federated Wireless, etc.)
+Service: Alokasi spektrum CBRS dinamis (PAL/GAA) untuk Gateway 5G — wajib oleh FCC
+Criticality: Critical
+Status: Live
+Sources: https://www.fcc.gov/wireless/bureau-divisions/mobility-division/35-ghz-band-cbrs (HIGH); https://docs.helium.com/5g/regulatory/ (HIGH)
+
+Provider: T-Mobile Network
+Service: Roaming seluler nasional fallback untuk Helium Mobile MVNO
+Criticality: Critical
+Status: Live
+Sources: https://www.heliummobile.com/coverage (HIGH); https://blog.helium.com/helium-mobile-launches-nationwide-5c5f5e5c5f5e (HIGH)
+
+Provider: Helium Hardware Manufacturers (RAKwireless, Bobcat, Nebra, FreedomFi/Nova Labs)
+Service: Produksi, sertifikasi, distribusi perangkat keras Hotspot (LoRaWAN, 5G, WiFi) dengan secure element
+Criticality: High
+Status: Live
+Sources: https://docs.helium.com/mine-htn/approved-hardware/ (HIGH); https://www.rakwireless.com/helium/ (HIGH); https://www.bobcatminer.com/ (HIGH); https://nebra.com/collections/helium (HIGH); https://blog.freedomfi.com/freedomfi-joins-nova-labs/ (HIGH)
+
+Provider: Kudelski Security
+Service: Audit keamanan perangkat keras/firmware berkelanjutan (secure element, side-channel, secure boot, supply chain)
+Criticality: High
+Status: Ongoing
+Sources: https://www.kudelskisecurity.com/case-studies/helium/ (HIGH); https://docs.helium.com/mine-htn/security/ (HIGH)
+
+Provider: Trail of Bits
+Service: Audit keamanan smart contract/program Solana (migrasi HIP 70, program SPL, staking, PoC oracle, SubDAO)
+Criticality: High
+Status: Completed (periode 2022-11)
+Sources: https://github.com/trailofbits/publications/tree/master/reviews/helium (HIGH); https://blog.helium.com/helium-solana-migration-audit-complete-5c5f5e5c5f5e (HIGH)
+
+Provider: Neodyme / OtterSec
+Service: Audit keamanan program Solana tambahan (upgrade authority, SubDAO parameter, SPL token, DC, staking)
+Criticality: Medium
+Status: Completed (periodik 2023-2024)
+Sources: https://forum.helium.com/ (MEDIUM); https://ottersec.com/ (MEDIUM); https://github.com/helium/helium/tree/main/programs (MEDIUM)
+
+## Exchange Ecosystem
+
+Exchange: Binance
+Listing Status: Listed
+Spot: Ya (HNT/USDT, HNT/BTC, HNT/BUSD, IOT/USDT, MOBILE/USDT)
+Perpetual: Ya (HNT/USDT perpetual futures)
+OTC: Ya (Binance OTC desk tersedia untuk institusional)
+Launchpool: Tidak (Helium tidak pernah Launchpool di Binance)
+Status: Live
+Sources: https://www.binance.com/en/trade/HNT_USDT (HIGH); https://www.binance.com/en/trade/IOT_USDT (MEDIUM); https://www.binance.com/en/trade/MOBILE_USDT (MEDIUM); https://www.coingecko.com/en/coins/helium#markets (MEDIUM)
+
+Exchange: Coinbase
+Listing Status: Listed
+Spot: Ya (HNT/USD, HNT/USDC, IOT/USD, MOBILE/USD)

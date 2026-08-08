@@ -1,0 +1,245 @@
+PROJECT: Hyperliquid
+
+## Token Information
+
+Official Token Name: Hyperliquid (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/hyperliquid]
+Symbol: HYPE (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/hyperliquid]
+Token Standard: Native token Hyperliquid L1 (bukan ERC-20, bukan standar token lain yang dipublikasikan) (HIGH) [Official Blog HYPE Genesis, https://hyperliquid.xyz/blog/hype-genesis]
+Blockchain: Hyperliquid L1 (Layer 1 sovereign) (HIGH) [Official Blog HYPE Genesis, https://hyperliquid.xyz/blog/hype-genesis]
+Contract Address: Native HYPE tidak memiliki alamat kontrak ERC-20; Wrapped HYPE (WHYPE) di Arbitrum: 0xC5b... (tidak diverifikasi resmi di dokumentasi teknis saat TGE) (MEDIUM) [Hypurrscan Native Token Page; Official Bridge UI]
+Decimals: tidak diketahui (tidak dipublikasikan di docs resmi) (LOW) [Documentation, https://hyperliquid.gitbook.io/hyperliquid-docs]
+Status: Live (sejak TGE 2024-11-29) (HIGH) [Official Blog HYPE Genesis, https://hyperliquid.xyz/blog/hype-genesis; CoinGecko Listing Date, https://www.coingecko.com/en/coins/hyperliquid]
+Sources: https://hyperliquid.xyz/blog/hype-genesis; https://www.coingecko.com/en/coins/hyperliquid; https://hyperliquid.gitbook.io/hyperliquid-docs
+
+## Supply
+
+Maximum Supply: tidak diketahui (whitepaper tokenomics belum terbit) (LOW) [Official Blog HYPE Genesis, https://hyperliquid.xyz/blog/hype-genesis; Documentation, https://hyperliquid.gitbook.io/hyperliquid-docs]
+Total Supply: tidak diketahui (tidak dipublikasikan on-chain dashboard resmi) (LOW) [Hypurrscan, https://hypurrscan.io; Official Blog HYPE Genesis, https://hyperliquid.xyz/blog/hype-genesis]
+Circulating Supply: tidak diketahui (tidak ada transparency report atau dashboard resmi) (LOW) [CoinGecko, https://www.coingecko.com/en/coins/hyperliquid; Hypurrscan, https://hypurrscan.io]
+Initial Supply: tidak diketahui (detail genesis allocation tidak diungkap) (LOW) [Official Blog HYPE Genesis, https://hyperliquid.xyz/blog/hype-genesis]
+Supply Type: Inflationary (staking rewards / validator emissions aktif pasca-TGE) (HIGH) [Official Blog HYPE Genesis, https://hyperliquid.xyz/blog/hype-genesis; Documentation Architecture, https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview]
+Sources: https://hyperliquid.xyz/blog/hype-genesis; https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview; https://www.coingecko.com/en/coins/hyperliquid; https://hypurrscan.io
+
+## Distribution
+
+Community: Planned (distribusi via airdrop/points untuk pengguna testnet/mainnet, persentase tidak diungkap) (HIGH) [Official Blog HYPE Genesis, https://hyperliquid.xyz/blog/hype-genesis]
+Team: Planned (alokasi tim tidak diungkap persentase, cliff, vesting) (LOW) [Official Blog HYPE Genesis, https://hyperliquid.xyz/blog/hype-genesis; Messari Report, https://messari.io/report/hyperliquid-deep-dive]
+Investors: Planned (alokasi investor VC Variant Fund, Delphi Digital, Hack VC, SIG, GSR tidak diungkap persentase) (LOW) [The Block Article Funding, https://www.theblock.co/post/298123/hyperliquid-labs-raises-funding; Official Blog HYPE Genesis, https://hyperliquid.xyz/blog/hype-genesis]
+Foundation: Planned (indikasi Hyperliquid Foundation mengelola treasury/ekosistem, persentase tidak diungkap) (MEDIUM) [Official Blog HYPE Genesis, https://hyperliquid.xyz/blog/hype-genesis; Official Blog Ecosystem Fund, https://hyperliquid.xyz/blog/ecosystem-fund]
+Treasury: Planned (ukuran dan alokasi treasury tidak transparan) (LOW) [Official Blog HYPE Genesis, https://hyperliquid.xyz/blog/hype-genesis; Documentation, https://hyperliquid.gitbook.io/hyperliquid-docs]
+Ecosystem: Planned (Ecosystem Fund / Builder Grants diannounce, persentase token tidak diungkap) (HIGH) [Official Blog Ecosystem Fund, https://hyperliquid.xyz/blog/ecosystem-fund]
+Advisors: tidak diketahui (tidak ada informasi publik alokasi advisor) (LOW) [Documentation, https://hyperliquid.gitbook.io/hyperliquid-docs; Messari Report, https://messari.io/report/hyperliquid-deep-dive]
+Other: tidak diketahui (kategori lain seperti liquidity incentives, market maker incentives tidak diungkap) (LOW) [Documentation, https://hyperliquid.gitbook.io/hyperliquid-docs]
+Sources: https://hyperliquid.xyz/blog/hype-genesis; https://hyperliquid.xyz/blog/ecosystem-fund; https://www.theblock.co/post/298123/hyperliquid-labs-raises-funding; https://messari.io/report/hyperliquid-deep-dive; https://hyperliquid.gitbook.io/hyperliquid-docs
+
+## Vesting Schedule
+
+Category: Community
+Cliff: tidak diketahui
+Vesting: tidak diketahui
+Unlock Frequency: tidak diketahui
+Current Status: Planned / Belum dipublikasikan detailnya
+Sources: https://hyperliquid.xyz/blog/hype-genesis (LOW) [Official Blog HYPE Genesis]
+
+Category: Team
+Cliff: tidak diketahui
+Vesting: tidak diketahui
+Unlock Frequency: tidak diketahui
+Current Status: Planned / Belum dipublikasikan detailnya
+Sources: https://hyperliquid.xyz/blog/hype-genesis (LOW) [Official Blog HYPE Genesis]
+
+Category: Investors
+Cliff: tidak diketahui
+Vesting: tidak diketahui
+Unlock Frequency: tidak diketahui
+Current Status: Planned / Belum dipublikasikan detailnya
+Sources: https://www.theblock.co/post/298123/hyperliquid-labs-raises-funding (LOW) [The Block Article Funding]
+
+Category: Foundation
+Cliff: tidak diketahui
+Vesting: tidak diketahui
+Unlock Frequency: tidak diketahui
+Current Status: Planned / Belum dipublikasikan detailnya
+Sources: https://hyperliquid.xyz/blog/hype-genesis (LOW) [Official Blog HYPE Genesis]
+
+Category: Treasury
+Cliff: tidak diketahui
+Vesting: tidak diketahui
+Unlock Frequency: tidak diketahui
+Current Status: Planned / Belum dipublikasikan detailnya
+Sources: https://hyperliquid.xyz/blog/hype-genesis (LOW) [Official Blog HYPE Genesis]
+
+Category: Ecosystem
+Cliff: tidak diketahui
+Vesting: tidak diketahui
+Unlock Frequency: tidak diketahui
+Current Status: Planned / Belum dipublikasikan detailnya
+Sources: https://hyperliquid.xyz/blog/ecosystem-fund (LOW) [Official Blog Ecosystem Fund]
+
+Category: Advisors
+Cliff: tidak diketahui
+Vesting: tidak diketahui
+Unlock Frequency: tidak diketahui
+Current Status: tidak diketahui
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs (LOW) [Documentation]
+
+Category: Other
+Cliff: tidak diketahui
+Vesting: tidak diketahui
+Unlock Frequency: tidak diketahui
+Current Status: tidak diketahui
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs (LOW) [Documentation]
+
+## TGE
+
+TGE Date: 2024-11-29 (HIGH) [Official Blog HYPE Genesis, https://hyperliquid.xyz/blog/hype-genesis; CoinGecko Listing, https://www.coingecko.com/en/coins/hyperliquid]
+Initial Unlock: tidak diketahui (persentase unlocked at TGE per kategori tidak diungkap) (LOW) [Official Blog HYPE Genesis, https://hyperliquid.xyz/blog/hype-genesis]
+Unlocked Categories: Community (airdrop/points claim), Staking/Validator rewards (emission mulai), mungkin sebagian Treasury/Ecosystem (detail tidak transparan) (MEDIUM) [Official Blog HYPE Genesis, https://hyperliquid.xyz/blog/hype-genesis]
+Launch Platform: Native Hyperliquid L1 (bukan launchpad, bukan DEX listing awal) (HIGH) [Official Blog HYPE Genesis, https://hyperliquid.xyz/blog/hype-genesis]
+Status: Completed (HIGH) [Official Blog HYPE Genesis, https://hyperliquid.xyz/blog/hype-genesis]
+Sources: https://hyperliquid.xyz/blog/hype-genesis; https://www.coingecko.com/en/coins/hyperliquid
+
+## Utility
+
+Utility: Staking
+Deskripsi: HYPE distaking untuk menjalankan validator / mendelegasikan ke validator dalam konsensus HyperBFT Proof-of-Stake, mendapatkan staking rewards (emission) (HIGH)
+Status: Live (sejak TGE 2024-11-29) (HIGH)
+Sources: https://hyperliquid.xyz/blog/hype-genesis (HIGH) [Official Blog HYPE Genesis]; https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview (HIGH) [Documentation Architecture]
+
+Utility: Governance
+Deskripsi: HYPE digunakan untuk governance protokol (voting proposal, parameter changes), detail mekanisme voting belum dipublikasikan lengkap (MEDIUM)
+Status: Planned / Live (staking aktif, governance framework belum terdokumentasi penuh) (MEDIUM)
+Sources: https://hyperliquid.xyz/blog/hype-genesis (MEDIUM) [Official Blog HYPE Genesis]; https://hyperliquid.gitbook.io/hyperliquid-docs (LOW) [Documentation - no governance docs yet]
+
+Utility: Fee Payment
+Deskripsi: HYPE digunakan untuk membayar gas/fee transaksi di Hyperliquid L1 (native gas token) (HIGH)
+Status: Live (HIGH)
+Sources: https://hyperliquid.xyz/blog/hype-genesis (HIGH) [Official Blog HYPE Genesis]; https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview (HIGH) [Documentation Architecture]
+
+Utility: Security
+Deskripsi: Staking HYPE menyediakan sybil resistance dan ekonomis keamanan untuk validator set HyperBFT (HIGH)
+Status: Live (HIGH)
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview (HIGH) [Documentation Architecture]; https://hyperliquid.xyz/blog/hype-genesis (HIGH) [Official Blog HYPE Genesis]
+
+Utility: Validator
+Deskripsi: Menjalankan validator node memerlukan stake HYPE (minimum stake amount tidak dipublikasikan) (HIGH)
+Status: Live (HIGH)
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview (HIGH) [Documentation Architecture]; https://hyperliquid.xyz/blog/hype-genesis (HIGH) [Official Blog HYPE Genesis]
+
+Utility: Incentive
+Deskripsi: Token digunakan untuk incentive program (Builder Grants, Ecosystem Fund, liquidity incentives), detail alokasi tidak transparan (MEDIUM)
+Status: Planned / Ongoing (Ecosystem Fund announced) (MEDIUM)
+Sources: https://hyperliquid.xyz/blog/ecosystem-fund (MEDIUM) [Official Blog Ecosystem Fund]; https://hyperliquid.gitbook.io/hyperliquid-docs/ecosystem (MEDIUM) [Documentation Ecosystem]
+
+Utility: Collateral
+Deskripsi: Belum dikonfirmasi apakah HYPE digunakan sebagai collateral di perp/spot DEX native (saat ini USDC digunakan sebagai margin) (LOW)
+Status: Planned / Tidak diketahui
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview (LOW) [Documentation Products]
+
+Utility: Liquidity
+Deskripsi: Belum dikonfirmasi program liquidity mining HYPE untuk market making / LP (LOW)
+Status: Tidak diketahui
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview (LOW) [Documentation Products]
+
+Utility: Reward
+Deskripsi: Staking rewards (emission) diberikan ke staker/validator; community rewards via airdrop/points sudah terekseskusi di TGE (HIGH)
+Status: Live (HIGH)
+Sources: https://hyperliquid.xyz/blog/hype-genesis (HIGH) [Official Blog HYPE Genesis]; https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview (HIGH) [Documentation Architecture]
+
+## Governance
+
+Governance Model: Token-based governance (HYPE holders vote via staking/delegation), detail proposal threshold, quorum, execution mechanism belum dipublikasikan (MEDIUM)
+Voting System: tidak diketahui (on-chain voting via Hyperliquid L1 / HyperEVM precompile? belum terdokumentasi) (LOW)
+Voting Power: Proportional dengan HYPE staked/delegated (inferred from PoS) (MEDIUM)
+Delegation: Didukung (staker dapat mendelegasikan ke validator) (HIGH) [Official Blog HYPE Genesis, https://hyperliquid.xyz/blog/hype-genesis]
+Proposal System: tidak diketahui (belum ada governance forum / proposal platform resmi publik) (LOW)
+Treasury Governance: Dikelola oleh Hyperliquid Foundation (indikasi), detail multisig / timelock / DAO framework tidak transparan (LOW) [Official Blog HYPE Genesis, https://hyperliquid.xyz/blog/hype-genesis; Official Blog Ecosystem Fund, https://hyperliquid.xyz/blog/ecosystem-fund]
+Status: Planned / Early stage (staking live, governance infrastructure belum lengkap) (MEDIUM)
+Sources: https://hyperliquid.xyz/blog/hype-genesis; https://hyperliquid.xyz/blog/ecosystem-fund; https://hyperliquid.gitbook.io/hyperliquid-docs; https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview
+
+## Inflation / Deflation
+
+Inflation Mechanism: Staking rewards / validator emission (Proof-of-Stake inflation), rate tidak dipublikasikan (HIGH)
+Emission Schedule: tidak diketahui (tidak ada emission schedule resmi yang dipublikasikan) (LOW)
+Burn Mechanism: Tidak ada burn mechanism yang diumumkan (fee switch / revenue buyback & burn belum diaktifkan) (MEDIUM) [Official Blog HYPE Genesis, https://hyperliquid.xyz/blog/hype-genesis; Documentation, https://hyperliquid.gitbook.io/hyperliquid-docs]
+Buyback: Tidak diumumkan (fee switch ke staker diperdebatkan, buyback tidak disebut) (LOW)
+Supply Reduction: Tidak ada mekanisme deflationary resmi (LOW)
+Status: Inflationary (staking emission aktif), burn/buyback tidak ada (MEDIUM)
+Sources: https://hyperliquid.xyz/blog/hype-genesis; https://hyperliquid.gitbook.io/hyperliquid-docs; https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview
+
+## Holder Distribution
+
+Top Holder Concentration: tidak diketahui (tidak ada holder distribution dashboard resmi, Hypurrscan tidak menampilkan rich list lengkap dengan label entitas) (LOW)
+Foundation Holding: tidak diketahui (alokasi foundation tidak diungkap, alamat foundation tidak diverifikasi publik) (LOW)
+Investor Holding: tidak diketahui (alokasi investor VC tidak diungkap, alamat vesting investor tidak dipublikasikan) (LOW)
+Treasury Holding: tidak diketahui (alamat treasury tidak diverifikasi, ukuran tidak transparan) (LOW)
+Community Holding: tidak diketahui (persentase airdrop/points claim vs total supply tidak diketahui) (LOW)
+Whale Concentration: tidak diketahui (tidak ada analisis on-chain resmi) (LOW)
+Sources: https://hypurrscan.io (LOW) [Hypurrscan Explorer]; https://hyperliquid.xyz/blog/hype-genesis (LOW) [Official Blog HYPE Genesis]; https://hyperliquid.gitbook.io/hyperliquid-docs (LOW) [Documentation]
+
+## Major Token Events
+
+Date: 2024-11-29
+Event: Token Generation Event (TGE) HYPE
+Description: Peluncuran token HYPE native di Hyperliquid L1, distribusi komunitas via airdrop/points claim, aktivasi staking dan validator economics
+Status: Completed
+Related Historical Event ID: EV-008
+Sources: https://hyperliquid.xyz/blog/hype-genesis (HIGH) [Official Blog HYPE Genesis]; https://www.coingecko.com/en/coins/hyperliquid (HIGH) [CoinGecko Listing]
+
+Date: 2024-11
+Event: HyperEVM Testnet Launch (implikasi utilitas HYPE untuk gas di HyperEVM)
+Description: HyperEVM testnet live, HYPE digunakan sebagai gas token untuk eksekusi EVM di atas Hyperliquid L1
+Status: Completed (testnet)
+Related Historical Event ID: EV-007
+Sources: https://hyperliquid.xyz/blog/hyperevm (HIGH) [Official Blog HyperEVM]; https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview (HIGH) [Documentation Architecture]
+
+Date: 2024
+Event: Hyperliquid Ecosystem Fund / Builder Grants Announcement
+Description: Pengumuman dana ekosistem dan grant untuk pengembang, mengimplikasikan alokasi token HYPE untuk incentive ekosistem
+Status: Ongoing
+Related Historical Event ID: EV-010
+Sources: https://hyperliquid.xyz/blog/ecosystem-fund (HIGH) [Official Blog Ecosystem Fund]; https://hyperliquid.gitbook.io/hyperliquid-docs/ecosystem (MEDIUM) [Documentation Ecosystem]
+
+Date: 2024
+Event: Indikasi Pembentukan Hyperliquid Foundation
+Description: Terbentuknya entitas foundation untuk mengelola treasury, governance, tokenomics (belum diverifikasi resmi lengkap)
+Status: Unknown / Planned
+Related Historical Event ID: EV-011
+Sources: https://hyperliquid.xyz/blog/hype-genesis (LOW) [Official Blog HYPE Genesis]; https://messari.io/report/hyperliquid-deep-dive (LOW) [Messari Report]
+
+## Official Token Resources
+
+Official Documentation: https://hyperliquid.gitbook.io/hyperliquid-docs
+Whitepaper: tidak tersedia (tidak ada whitepaper tokenomics/teknis terpisah yang dipublikasikan) (LOW)
+Governance: tidak tersedia (belum ada governance forum / snapshot / proposal platform resmi) (LOW)
+Explorer: https://hypurrscan.io (utama); https://explorer.hyperliquid.xyz (resmi) (HIGH)
+Contract: Native HYPE (tidak ada contract address ERC-20); Wrapped HYPE (WHYPE) Arbitrum: 0xC5b... (tidak diverifikasi resmi) (MEDIUM)
+GitHub: https://github.com/hyperliquid-dex
+Dashboard: tidak tersedia (tidak ada tokenomics dashboard / staking dashboard resmi publik) (LOW)
+
+## Summary
+
+Status: Live (sejak TGE 2024-11-29)
+Supply Type: Inflationary (staking emission)
+Total Supply: tidak diketahui
+Distribution Categories: Community, Team, Investors, Foundation, Treasury, Ecosystem, Advisors, Other (semua Planned, persentase tidak diungkap)
+Utility Count: 7 (Staking, Governance, Fee Payment, Security, Validator, Incentive, Reward) — 5 Live, 2 Planned/Unknown
+Governance: Token-based (early stage, infrastructure belum lengkap)
+Major Token Events: 4 (TGE, HyperEVM Testnet, Ecosystem Fund, Foundation Formation)
+
+## Open Threads
+
+- Whitepaper tokenomics resmi (alokasi persentase per kategori, supply max, emission schedule, vesting detail cliff/linear/unlock) — belum terbit sama sekali.
+- Detail TGE unlock: persentase circulating supply at TGE per kategori (community, team, investor, foundation, treasury, ecosystem) — tidak diungkap.
+- Alamat kontrak/akun resmi untuk: Treasury, Foundation, Team, Investor vesting, Ecosystem Fund — tidak dipublikasikan on-chain dengan label terverifikasi.
+- Mekanisme governance formal: proposal threshold, quorum, voting period, execution delay, timelock/multisig treasury — belum terdokumentasi.
+- Fee switch / revenue sharing ke staker HYPE: apakah akan diaktifkan, persentase fee yang dialokasikan, mekanisme distribusi — blog HYPE Genesis hanya menyebut staking untuk keamanan jaringan.
+- Inflation rate staking: APY target, emission curve, halving schedule, terminal supply — tidak ada data.
+- Burn mechanism / buyback: apakah direncanakan, kondisi trigger, sumber dana — tidak diumumkan.
+- Hubungan hukum dan kontrol antara Hyperliquid Labs (BVI company) dan Hyperliquid Foundation (entity governance) — belum diverifikasi dokumen incorporasi foundation.
+- Status Wrapped HYPE (WHYPE) di Arbitrum/Ethereum: kontrak resmi, auditor, bridge mechanism, mint/burn authority — tidak diverifikasi di docs teknis.
+- Holder distribution analysis: whale concentration, Gini coefficient, entity labeling (CEX, market maker, foundation, team) — tidak ada dashboard resmi.
+- Audit keamanan token contract (native HYPE logic di Hyperliquid L1) dan bridge contract (WHYPE) — tidak ditemukan laporan audit publik.
+- Regulatory classification token HYPE (security vs utility vs commodity) di yurisdiksi utama (US, EU, SG, BVI) — tidak ada legal opinion publik.
+- Rencana listing CEX/DEX resmi dan market making program untuk HYPE — tidak diumumkan.
+- Detail minimum stake untuk menjalankan validator, commission rate validator, slashing conditions — tidak terdokumentasi di docs publik.

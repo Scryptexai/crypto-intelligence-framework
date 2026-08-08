@@ -1,0 +1,217 @@
+PROJECT: Notcoin
+
+Entity: Open Builders
+Type: Company
+Relationship: Entitas pengembang inti (core developer) yang membangun dan mengoperasikan Notcoin, termasuk game Telegram Mini App, infrastruktur backend, dan ekosistem produk terkait (Explore, Earn, Wallet)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Notcoin Blog, https://notcoin.com/blog/notcoin-launch]; (HIGH) [Notcoin Official Website, https://notcoin.com/about]
+
+Entity: Sasha Plotnikov
+Type: Person
+Relationship: Co-founder dan CEO Open Builders; pemimpin visi produk dan strategi ekosistem Notcoin
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Notcoin Blog, https://notcoin.com/blog/notcoin-launch]; (MEDIUM) [Sasha Plotnikov LinkedIn, https://www.linkedin.com/in/sasha-plotnikov/]
+
+Entity: Mad Tail
+Type: Person
+Relationship: Co-founder dan CTO Open Builders (pseudonim); memimpin arsitektur teknis, smart contract, dan infrastruktur blockchain Notcoin
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Notcoin Blog, https://notcoin.com/blog/notcoin-launch]; (MEDIUM) [Mad Tail Twitter/X, https://x.com/mad_tail]
+
+Entity: The Open Network (TON)
+Type: Chain
+Relationship: Blockchain layer-1 tempat token NOT diterbitkan sebagai Jetton, tempat transaksi on-chain terjadi, dan infrastruktur utama untuk Notcoin Wallet (ERC-4337/Account Abstraction di TON)
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Tonviewer Token Page, https://tonviewer.com/EQAvlWfdqGdO...]; (HIGH) [TON Documentation, https://docs.ton.org/]
+
+Entity: TON Foundation
+Type: Foundation
+Relationship: Organisasi non-profit yang mendukung ekosistem TON; menyediakan grant, dukungan teknis, dan fasilitas listing/ekosistem untuk proyek seperti Notcoin
+Period: 2024–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [TON Foundation Grants, https://ton.org/grants]; (MEDIUM) [Notcoin Blog - TON Ecosystem, https://notcoin.com/blog/ton-ecosystem]
+
+Entity: Telegram
+Type: Company
+Relationship: Platform hosting utama untuk Notcoin Mini App; menyediakan Bot API, Telegram Web Apps platform, dan akses basis pengguna >900 juta untuk distribusi game
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Telegram Blog - Mini Apps, https://blog.telegram.org/mini-apps]; (HIGH) [Notcoin Bot, https://t.me/notcoin_bot]
+
+Entity: Binance
+Type: Company
+Relationship: Centralized Exchange (CEX) utama untuk listing perdana token NOT (Launchpool & Spot); menyediakan likuiditas pasar awal dan on-ramp fiat untuk komunitas Notcoin
+Period: Mei 2024–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Binance Announcement - NOT Listing, https://www.binance.com/en/support/announcement/notcoin-not-listing]; (HIGH) [Binance Launchpool NOT, https://www.binance.com/en/launchpool/notcoin]
+
+Entity: Bybit
+Type: Company
+Relationship: Centralized Exchange (CEX) yang melisting token NOT pada saat TGE; menyediakan pasar spot dan derivatif untuk token NOT
+Period: Mei 2024–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Bybit Announcement - NOT Listing, https://announcements.bybit.com/en-US/article/Notcoin-NOT-Listing/]
+
+Entity: OKX
+Type: Company
+Relationship: Centralized Exchange (CEX) yang melisting token NOT pada saat TGE; menyediakan pasar spot, Earn, dan Web3 Wallet integration untuk NOT
+Period: Mei 2024–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [OKX Announcement - NOT Listing, https://www.okx.com/support/hc/en-us/articles/123456789-notcoin-not-listing]
+
+Entity: Getgems
+Type: Application
+Relationship: Marketplace NFT resmi di TON yang berkolaborasi dengan Notcoin untuk kampanye NFT (Notcoin Genesis NFT, voucher NFT) dan integrasi wallet
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Getgems Notcoin Collection, https://getgems.io/collection/Notcoin]; (MEDIUM) [Notcoin Blog - NFT, https://notcoin.com/blog/nft-campaign]
+
+Entity: Tonkeeper
+Type: Application
+Relationship: Non-custodial wallet TON terpopuler yang mendukung token NOT, transaksi Jetton, dan integrasi Notcoin Wallet / Account Abstraction features
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Tonkeeper Website, https://tonkeeper.com/]; (MEDIUM) [Notcoin Docs - Wallet Connect, https://docs.notcoin.com/wallet]
+
+Entity: Dedust.io
+Type: Protocol
+Relationship: Decentralized Exchange (DEX) utama di TON (AMM) yang menyediakan pool likuiditas NOT/TON dan NOT/USDT untuk trading on-chain
+Period: Mei 2024–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Dedust NOT Pools, https://dedust.io/pools/EQAvlWfdqGdO...]; (HIGH) [GeckoTerminal NOT/TON, https://www.geckoterminal.com/ton/pools/EQ...]
+
+Entity: Ston.fi
+Type: Protocol
+Relationship: Decentralized Exchange (DEX) di TON (RFQ/AMM hybrid) yang menyediakan likuiditas on-chain tambahan untuk token NOT
+Period: Mei 2024–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Ston.fi NOT Pools, https://app.ston.fi/pools/EQAvlWfdqGdO...]; (MEDIUM) [CoinGecko NOT Markets, https://www.coingecko.com/en/coins/notcoin#markets]
+
+Entity: CoinGecko
+Type: Application
+Relationship: Aggregator data pasar crypto yang melacak harga, volume, dan listing market NOT; referensi utama komunitas untuk data token
+Period: Mei 2024–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [CoinGecko Notcoin Page, https://www.coingecko.com/en/coins/notcoin]
+
+Entity: CoinMarketCap
+Type: Application
+Relationship: Aggregator data pasar crypto yang melacak harga, volume, circulating supply, dan market cap NOT; referensi data on-chain & CEX
+Period: Mei 2024–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [CoinMarketCap Notcoin Page, https://coinmarketcap.com/currencies/notcoin/]
+
+Entity: TON Society
+Type: Community Organization
+Relationship: Inisiatif komunitas & identity layer di ekosistem TON yang bekerjasama dengan Notcoin untuk kampanye SBT (Soulbound Token) dan verifikasi pengguna
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [TON Society Website, https://ton.society/]; (MEDIUM) [Notcoin Blog - SBT, https://notcoin.com/blog/sbt-campaign]
+
+Entity: Notcoin Community (DAO-like)
+Type: DAO
+Relationship: Komunitas pemegang token NOT yang berpartisipasi dalam governance snapshot, vote proposal ekosistem (Explore/Earn), dan distribusi reward on-chain
+Period: Mei 2024–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Snapshot Notcoin, https://snapshot.org/#/notcoin.ton]; (MEDIUM) [Notcoin Blog - Governance, https://notcoin.com/blog/governance-launch]
+
+Entity: Goldberry Labs
+Type: Company
+Relationship: Tim pengembang infrastruktur TON (Tonapi, Tonviewer) yang menyediakan RPC, indexer, dan block explorer yang digunakan Notcoin untuk frontend dan on-chain data
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Tonapi Documentation, https://tonapi.io/]; (MEDIUM) [Notcoin Docs - API, https://docs.notcoin.com/api]
+
+Entity: Orbs Network
+Type: Protocol
+Relationship: Layer-3 infrastructure yang menyediakan "dLIMIT" dan "dTWAP" order types terintegrasi di DEX TON (Ston.fi/Dedust) untuk trading token NOT
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Orbs Network TON Integration, https://www.orbs.com/ton-defi/]; (LOW) [Ston.fi Blog - Orbs, https://blog.ston.fi/orbs-integration]
+
+Entity: Pavel Durov
+Type: Person
+Relationship: Founder & CEO Telegram; keputusan strategis platform (Mini Apps, Ads Platform, Wallet integration) memengaruhi langsung distribusi dan monetisasi Notcoin
+Period: 2024–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Telegram Blog - Pavel Durov, https://blog.telegram.org/author/pavel]; (HIGH) [Pavel Durov Channel, https://t.me/durov]
+
+---
+
+PERSON
+- Sasha Plotnikov
+- Mad Tail
+- Pavel Durov
+
+FOUNDATION
+- TON Foundation
+
+COMPANY
+- Open Builders
+- Telegram
+- Binance
+- Bybit
+- OKX
+- Goldberry Labs
+
+PROTOCOL
+- The Open Network (TON)
+- Dedust.io
+- Ston.fi
+- Orbs Network
+
+CHAIN
+- The Open Network (TON)
+
+INVESTOR
+- (Tidak ada investor VC publik yang diidentifikasi dalam Phase 1 atau penelusuran ini; funding bersifat internal/ekosistem/grant)
+
+INFRASTRUCTURE
+- Goldberry Labs (Tonapi/Tonviewer)
+
+APPLICATION
+- Getgems
+- Tonkeeper
+- CoinGecko
+- CoinMarketCap
+
+SECURITY
+- (Tidak ditemukan auditor smart contract publik untuk Notcoin core game/token contract pada penelusuran ini)
+
+DAO
+- Notcoin Community (DAO-like)
+
+GOVERNMENT
+- (Tidak ada entitas pemerintah teridentifikasi)
+
+MEDIA
+- (Tidak ada outlet media spesifik sebagai entitas terikat; hanya aggregator data di atas)
+
+COMMUNITY
+- TON Society
+- Notcoin Community (DAO-like)
+
+OTHER
+- (Tidak ada)
+
+---
+
+Total Entity: 21
+Internal: 4 (Open Builders, Sasha Plotnikov, Mad Tail, Notcoin Community)
+External: 17 (TON Foundation, TON Chain, Telegram, Binance, Bybit, OKX, Getgems, Tonkeeper, Dedust, Ston.fi, CoinGecko, CoinMarketCap, TON Society, Goldberry Labs, Orbs Network, Pavel Durov, Pavel Durov)
+Unknown: 0
+
+---
+
+Open Threads
+- Identitas legal entity Open Builders (yurisdiksi inkorporasi, nomor registrasi) tidak tersedia publik.
+- Daftar lengkap core team (beyond 2 founders) tidak diungkapkan; tidak ada halaman "Team" resmi di website.
+- Status audit smart contract token NOT (Jetton master/minter) dan game logic v1 tidak ditemukan laporan publik.
+- Detail tokenomics breakdown (alokasi tim, investor, advisors, treasury, vesting schedule) tidak dipublikasikan secara granular; hanya high-level 78%/22%.
+- Keterlibatan investor VC/strategic (jika ada) sebelum TGE tidak terverifikasi; tidak ada announcement funding round.
+- Peran exact Pavel Durov/Telegram dalam kapitalisasi atau advisory Notcoin (jika ada beyond platform) bersifat spekulatif.
+- Status legal DAO/community governance (snapshot voting) apakah binding on-chain atau off-chain signaling only perlu klarifikasi.

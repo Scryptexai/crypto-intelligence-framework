@@ -2,7 +2,7 @@
 window.CIF = {
   "meta": {
     "schema": "cif-export/1",
-    "generated": "2026-08-08 05:21 UTC",
+    "generated": "2026-08-08 07:43 UTC",
     "projects": 12,
     "deep": 12,
     "summary": 0,
@@ -106,22 +106,14 @@ window.CIF = {
       ]
     },
     {
-      "n": "Cardano",
+      "n": "Celestia",
       "tier": "Deep",
-      "file": "examples/CaseStudies/Cardano.md",
+      "file": "examples/CaseStudies/Celestia.md",
       "cat": "",
       "era": "",
       "tags": [
-        "l1"
+        "modular"
       ]
-    },
-    {
-      "n": "Grass",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Grass.md",
-      "cat": "",
-      "era": "",
-      "tags": []
     },
     {
       "n": "Irys",
@@ -131,6 +123,16 @@ window.CIF = {
       "era": "",
       "tags": [
         "testnet-incentive",
+        "l1"
+      ]
+    },
+    {
+      "n": "Monad",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Monad.md",
+      "cat": "",
+      "era": "",
+      "tags": [
         "l1"
       ]
     }

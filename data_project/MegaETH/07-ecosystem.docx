@@ -1,0 +1,360 @@
+PROJECT: MegaETH
+
+## Ecosystem Position
+
+Primary Sector: Layer 2 Scaling / High-performance Blockchain (HIGH) [MegaETH Documentation - Architecture, https://docs.megaeth.com]
+Secondary Sector: Real-time Execution / DeFi Infrastructure (HIGH) [MegaETH Blog - Introducing MegaETH, https://megaeth.com/blog/introducing-megaeth]
+Primary Chain: Ethereum (Layer 1 Settlement) (HIGH) [MegaETH Documentation - Architecture, https://docs.megaeth.com]
+Supported Chains: Ethereum Mainnet (L1 Settlement) (HIGH) [MegaETH Documentation - Architecture, https://docs.megaeth.com]
+Supported Chains: Ethereum Sepolia (L1 Testnet Settlement) (HIGH) [MegaETH Documentation - Contract Addresses, https://docs.megaeth.com]
+Supported Chains: MegaETH Testnet (L2 Execution) (HIGH) [MegaETH Testnet Explorer, https://testnet.explorer.megaeth.com]
+
+## External Dependencies
+
+Dependency Name: Ethereum
+Dependency Type: Protocol / Chain
+Purpose: Settlement Layer, Data Availability (Blob EIP-4844 & Calldata), Finality Source, Native Asset (ETH) untuk Gas
+Criticality: Critical
+Status: Live
+Related Entity: Ethereum
+Related Technology Component: L1 Contracts (OptimismPortal, OutputOracle, Blob Submitter), Rollup Node Derivation Pipeline
+Sources: https://docs.megaeth.com
+
+Dependency Name: OP Stack
+Dependency Type: Protocol
+Purpose: Fondasi Modular Rollup (Consensus Derivation via Op-Node, Batching via Op-Batcher, Proposing via Op-Proposer, Fault Proof via Op-Challenger, System Contracts L1/L2)
+Criticality: Critical
+Status: Live
+Related Entity: OP Stack
+Related Technology Component: Op-Node, Op-Batcher, Op-Proposer, Op-Challenger, L1/L2 System Contracts, Standard Bridge
+Sources: https://stack.optimism.io
+
+Dependency Name: EigenLayer
+Dependency Type: Protocol
+Purpose: Rencana Data Availability (EigenDA) untuk throughput biaya rendah, Restaking untuk Keamanan Ekonomi (AVS)
+Criticality: High
+Status: Planned
+Related Entity: EigenLayer
+Related Technology Component: Planned DA Integration, Planned Restaking Integration
+Sources: https://docs.megaeth.com
+
+Dependency Name: DragonFly
+Dependency Type: Investor / Financial Capital
+Purpose: Pendanaan Operasional & Pengembangan (Seed/Strategic Round 2023)
+Criticality: High
+Status: Live
+Related Entity: DragonFly
+Related Technology Component: Treasury Funding Runway
+Sources: https://megaeth.com/blog/introducing-megaeth
+
+Dependency Name: Figment
+Dependency Type: Investor / Infrastructure Operator
+Purpose: Pendanaan & Potensial Dukungan Infrastruktur (RPC, Validator, Staking Operations)
+Criticality: High
+Status: Live
+Related Entity: Figment
+Related Technology Component: Infrastructure Operations, Treasury Funding
+Sources: https://megaeth.com/blog/introducing-megaeth
+
+Dependency Name: GitHub
+Dependency Type: Infrastructure / Service
+Purpose: Source Code Hosting (Organization megaeth-labs), CI/CD (GitHub Actions), Issue Tracking
+Criticality: Medium
+Status: Live
+Related Entity: GitHub Organization megaeth-labs
+Related Technology Component: Repository Management, CI/CD Pipeline
+Sources: https://github.com/megaeth-labs
+
+Dependency Name: Discord Community MegaETH
+Dependency Type: Service / Community Platform
+Purpose: Komunikasi Real-time, Announcement, Developer Support, Node Operator Koordinasi
+Criticality: Medium
+Status: Live
+Related Entity: Discord Community MegaETH
+Related Technology Component: Community Management, Testnet Support Channel
+Sources: https://discord.gg/megaeth
+
+Dependency Name: Telegram Community MegaETH
+Dependency Type: Service / Community Platform
+Purpose: Broadcast Announcement, Komunitas Global
+Criticality: Low
+Status: Live
+Related Entity: Telegram Community MegaETH
+Related Technology Component: Community Management
+Sources: https://t.me/megaeth_official
+
+Dependency Name: X/Twitter @megaeth_labs
+Dependency Type: Media / Distribution Channel
+Purpose: Distribusi Narasi Resmi, Product Update, Ecosystem Narrative
+Criticality: Medium
+Status: Live
+Related Entity: X/Twitter @megaeth_labs
+Related Technology Component: Marketing & Communication
+Sources: https://x.com/megaeth_labs
+
+Dependency Name: Cloud Provider (Tidak Dikungkapkan)
+Dependency Type: Cloud / Infrastructure
+Purpose: Hosting Sequencer, RPC Nodes, Indexer, Explorer, Faucet, CI/CD Runners
+Criticality: Critical
+Status: Live
+Related Entity: Tidak diketahui (Entitas tidak diungkapkan)
+Related Technology Component: Sequencer Infrastructure, RPC Infrastructure, Explorer Hosting
+Sources: https://docs.megaeth.com
+
+## Major Integrations
+
+Integration Name: OP Stack Core Integration
+Integrated With: OP Stack
+Purpose: Menggunakan seluruh stack modular OP Stack (Op-Node, Op-Batcher, Op-Proposer, Op-Challenger, Contracts Bedrock) sebagai fondasi rollup MegaETH
+Status: Live
+Related Historical Event ID: EV-011
+Sources: https://docs.megaeth.com
+
+Integration Name: EigenLayer Integration (Planned)
+Integrated With: EigenLayer
+Purpose: Integrasi EigenDA untuk Data Availability dan Restaking untuk Economic Security (AVS)
+Status: Planned
+Related Historical Event ID: EV-010
+Sources: https://docs.megaeth.com
+
+Integration Name: Ethereum Sepolia Settlement
+Integrated With: Ethereum (Sepolia Testnet)
+Purpose: Settlement Layer & Data Availability Layer untuk MegaETH Testnet (L1 Contracts dideploy di Sepolia)
+Status: Live
+Related Historical Event ID: EV-007
+Sources: https://docs.megaeth.com
+
+Integration Name: OP Stack Standard Bridge
+Integrated With: OP Stack (L1StandardBridge, L2StandardBridge, OptimismPortal)
+Purpose: Native Bridging ETH & ERC-20 antara L1 (Sepolia/Mainnet) dan L2 MegaETH
+Status: Live
+Related Historical Event ID: EV-007
+Sources: https://docs.megaeth.com
+
+## Infrastructure Providers
+
+Provider: MegaETH Labs
+Service: Sequencer Operation (Centralized), Public RPC Endpoints, Block Explorer Hosting, Testnet Faucet Operation, Documentation Hosting
+Criticality: Critical
+Status: Live
+Sources: https://docs.megaeth.com
+
+Provider: Figment
+Service: Potential RPC/Validator/Staking Infrastructure Support (berdasarkan status Investor/Operator Infrastruktur)
+Criticality: Medium
+Status: Live
+Sources: https://megaeth.com/blog/introducing-megaeth
+
+Provider: GitHub
+Service: Git Hosting, GitHub Actions CI/CD, Security Advisories, Dependency Graph
+Criticality: Medium
+Status: Live
+Sources: https://github.com/megaeth-labs
+
+Provider: Cloud Provider (Tidak Dikungkapkan)
+Service: Compute Instances, Load Balancing, Managed Kubernetes (K8s), Block Storage, Networking untuk Node Production
+Criticality: Critical
+Status: Live
+Sources: https://docs.megaeth.com
+
+## Exchange Ecosystem
+
+Exchange: Tidak Berlaku (Belum Ada Token)
+Listing Status: Belum Ada
+Spot: Tidak Berlaku
+Perpetual: Tidak Berlaku
+OTC: Tidak Berlaku
+Launchpool: Tidak Berlaku
+Status: Pre-TGE
+Sources: https://megaeth.com/blog/introducing-megaeth
+
+## Wallet Ecosystem
+
+Wallet: MetaMask
+Support Type: EVM Compatible (Manual RPC Addition via Chain ID / Network Config)
+Status: Compatible (Unverified Official Support)
+Sources: https://docs.megaeth.com
+
+Wallet: Rainbow Wallet
+Support Type: EVM Compatible (Manual RPC Addition)
+Status: Compatible (Unverified Official Support)
+Sources: https://docs.megaeth.com
+
+Wallet: Rabby Wallet
+Support Type: EVM Compatible (Manual RPC Addition)
+Status: Compatible (Unverified Official Support)
+Sources: https://docs.megaeth.com
+
+Wallet: Coinbase Wallet
+Support Type: EVM Compatible (Manual RPC Addition)
+Status: Compatible (Unverified Official Support)
+Sources: https://docs.megaeth.com
+
+Wallet: WalletConnect / RainbowKit / wagmi / viem
+Support Type: Developer Library / Connector Support untuk EVM Chains (Generic)
+Status: Compatible (Generic EVM Support)
+Sources: https://docs.megaeth.com
+
+Catatan: Tidak ada announcement resmi "Supported Wallets" atau integrasi deep-link / auto-add network dari MegaETH Labs per Juni 2024.
+
+## Developer Ecosystem
+
+SDK: viem/optimism (Official OP Stack SDK via viem)
+Status: Available (Upstream)
+Sources: https://viem.sh/op-stack
+
+SDK: ethers-optimism (Ethers.js OP Stack Extension)
+Status: Available (Upstream)
+Sources: https://github.com/ethers-optimism/ethers-optimism
+
+SDK: OP Stack SDK (TypeScript/Go libraries dari Optimism Monorepo)
+Status: Available (Upstream)
+Sources: https://github.com/ethereum-optimism/optimism
+
+API: JSON-RPC Public Endpoints (HTTPS/WSS)
+Status: Live (Testnet)
+Sources: https://docs.megaeth.com
+
+Developer Tools: Foundry (Forge, Cast, Anvil) — Smart Contract Dev & Testing
+Status: Compatible (Standard Ethereum/OP Stack)
+Sources: https://book.getfoundry.sh
+
+Developer Tools: Hardhat / Viem / Ethers.js — dApp Development Framework
+Status: Compatible (Standard Ethereum/OP Stack)
+Sources: https://hardhat.org
+
+Open Source Repository: GitHub Organization megaeth-labs (Partial — Execution Client Closed Source)
+Status: Live
+Sources: https://github.com/megaeth-labs
+
+Developer Portal: MegaETH Docs (https://docs.megaeth.com)
+Status: Live
+Sources: https://docs.megaeth.com
+
+Hackathon: Tidak Diumumkan
+Status: None
+Sources: https://megaeth.com
+
+Grant Program: Tidak Diumumkan
+Status: None
+Sources: https://megaeth.com
+
+## Applications
+
+Application: MegaETH Explorer
+Category: Block Explorer / Analytics
+Relationship: Official Infrastructure (First-party)
+Status: Live (Testnet)
+Sources: https://testnet.explorer.megaeth.com
+
+Application: MegaETH Faucet
+Category: Developer Tool / Onboarding
+Relationship: Official Infrastructure (First-party)
+Status: Live (Testnet)
+Sources: https://docs.megaeth.com
+
+Application: MegaETH Docs
+Category: Documentation / Knowledge Base
+Relationship: Official Knowledge Base (First-party)
+Status: Live
+Sources: https://docs.megaeth.com
+
+Catatan: Tidak ada aplikasi third-party (DeFi, NFT, Gaming, Tooling) yang terverifikasi resmi atau terdaftar di ecosystem page MegaETH per Juni 2024.
+
+## Governance Ecosystem
+
+Foundation: Tidak Ada (Tidak Teridentifikasi Entitas Foundation Terpisah)
+Sources: https://megaeth.com
+
+DAO: Tidak Ada (Belum Dibentuk)
+Sources: https://megaeth.com
+
+Council: Security Council / Guardian Multisig (Implisit via OP Stack Proxy Admin Ownership — Alamat & Signers Tidak Diungkapkan untuk Deployment MegaETH)
+Status: Assumed via OP Stack Defaults / Planned
+Sources: https://github.com/ethereum-optimism/optimism/tree/develop/packages/contracts-bedrock/contracts/universal
+
+Committee: Tidak Ada
+Sources: https://megaeth.com
+
+Validator Group: Sequencer (Centralized — MegaETH Labs) — Single Operator
+Status: Live (Testnet)
+Sources: https://docs.megaeth.com
+
+Validator Group: Future Decentralized Sequencer Set / EigenLayer AVS Operators (Planned)
+Status: Planned
+Sources: https://docs.megaeth.com
+
+## Ecosystem Risks
+
+Risk: Single Sequencer Dependency (Centralization Risk)
+Description: MegaETH Labs mengoperasikan sequencer tunggal; single point of failure untuk liveness, ordering, MEV extraction, dan sensorship.
+Confirmed: Yes
+Sources: https://docs.megaeth.com
+
+Risk: Upstream OP Stack Protocol Dependency
+Description: Ketergantungan kritis pada keamanan, kegagalan konsensus, atau bug pada komponen OP Stack (Op-Node, Contracts Bedrock, Fault Proof System).
+Confirmed: Yes
+Sources: https://stack.optimism.io
+
+Risk: Ethereum L1 Dependency (Chain Dependency)
+Description: Finalitas, Data Availability (Blob/Calldata), Harga Gas L1, dan Keamanan Kriptografi bergantung sepenuhnya pada Ethereum Mainnet.
+Confirmed: Yes
+Sources: https://ethereum.org
+
+Risk: Cloud Provider Concentration (Infrastructure Dependency)
+Description: Semua infrastruktur kritis (Sequencer, RPC, Explorer, Indexer) dihosting pada Cloud Provider yang tidak diungkapkan; risiko vendor lock-in, regional outage, compliance.
+Confirmed: Yes
+Sources: https://docs.megaeth.com
+
+Risk: Closed Source Execution Client (Security & Transparency Risk)
+Description: Custom Execution Client (Real-time Engine) bersifat proprietary/closed source; tidak dapat diaudit independen, diverifikasi determinisme, atau difork komunitas.
+Confirmed: Yes
+Sources: https://discord.gg/megaeth
+
+Risk: EigenDA Integration Execution Risk (Planned Dependency)
+Description: Rencana integrasi EigenDA belum live; timeline, spesifikasi teknis (Disperser/Retriever Contract, Payment Flow, Slashing Conditions), dan keamanan AVS belum diverifikasi.
+Confirmed: Yes
+Sources: https://docs.megaeth.com
+
+Risk: Funding Concentration (Financial Dependency)
+Description: Operasional bergantung pada dana VC (DragonFly, Figment) tanpa transparency report, runway disclosure, atau revenue protocol yang live.
+Confirmed: Yes
+Sources: https://megaeth.com/blog/introducing-megaeth
+
+Risk: Permissioned Fault Proof / Withdrawal Delay
+Description: Menggunakan Permissioned Dispute Game (hanya whitelist yg bisa challenge); withdrawal trustless memerlukan 7 hari challenge window; risiko censored challenge.
+Confirmed: Yes
+Sources: https://github.com/ethereum-optimism/optimism/tree/develop/op-challenger
+
+## Official Ecosystem Resources
+
+Official Documentation: https://docs.megaeth.com
+Developer Portal: https://docs.megaeth.com
+GitHub: https://github.com/megaeth-labs
+Partner Documentation: https://stack.optimism.io
+Partner Documentation: https://www.eigenlayer.xyz
+Grant Program: Tidak Ada
+Ecosystem Dashboard: Tidak Ada
+
+## Ringkasan
+
+Primary Ecosystem: Ethereum Layer 2 (OP Stack Ecosystem)
+Supported Chains: Ethereum Mainnet (L1), Ethereum Sepolia (L1 Testnet Settlement), MegaETH Testnet (L2)
+External Dependencies: 10 (Ethereum, OP Stack, EigenLayer, DragonFly, Figment, GitHub, Discord, Telegram, X/Twitter, Cloud Provider Undisclosed)
+Major Integrations: 4 (OP Stack Core, EigenLayer Planned, Ethereum Sepolia Settlement, OP Stack Standard Bridge)
+Infrastructure Providers: 4 (MegaETH Labs, Figment, GitHub, Cloud Provider Undisclosed)
+Developer Programs: Standard OP Stack/Ethereum Tooling (Foundry, Hardhat, Viem, viem/optimism), Developer Portal (Docs), Open Source Repo (Partial); No Native SDK, Grant, Hackathon
+Applications: 3 Official First-party Apps (Explorer, Faucet, Docs); 0 Verified Third-party Apps
+
+## Open Threads
+
+- Identitas Cloud Provider (AWS/GCP/Azure/Bare Metal) untuk infrastruktur produksi tidak diungkapkan; tidak dapat menilai risiko geografis, compliance, atau vendor lock-in.
+- Spesifikasi teknis integrasi EigenLayer (EigenDA Disperser/Retriever Contract Address, Payment Token, Blob Verification Mechanism, AVS Slashing Conditions, Operator Set Registration) belum dipublikasikan; status "Planned" tanpa timeline komitmen.
+- Alamat Proxy Admin / Security Council Multisig / Guardian Address untuk deployment kontrak sistem MegaETH (L1 di Sepolia, L2 di Testnet) tidak terpublikasikan; tidak dapat memverifikasi kendali upgrade/protocol parameter.
+- Daftar wallet partner resmi (auto-add network, deep link, connector support) tidak diumumkan; kompatibilitas bergantung pada generic EVM RPC.
+- Ekosistem aplikasi third-party (DeFi, NFT, Infrastructure, Tooling) yang deploy di Testnet tidak termapping; tidak ada ecosystem dashboard atau grant program untuk menarik builder.
+- Peran spesifik Figment sebagai Infrastructure Provider (apakah menyediakan RPC endpoints, validator backup, sequencer failover, staking operations) tidak detail di announcement.
+- Versi OP Stack (Release Tag/Commit Hash) yang digunakan untuk Testnet Launch (EV-007) tidak tercantum di changelog; kesulitan melacak patch security upstream.
+- Ketersediaan Official Bridge UI (Frontend) untuk bridging L1-L2 tidak dikonfirmasi (hanya kontrak tersedia); pengguna mungkin harus menggunakan CLI/Contract langsung atau generic bridge UI (Optimism Bridge, Hop, dll).
+- Program Grant / Ecosystem Fund / Hackathon untuk insentif pengembang tidak diumumkan; risiko kekosongan aplikasi pada mainnet launch.
+- Diskusi listing CEX/DEX untuk token masa depan (jika ada) tidak diverifikasi; tidak ada market maker atau liquidity partner yang diumumkan.

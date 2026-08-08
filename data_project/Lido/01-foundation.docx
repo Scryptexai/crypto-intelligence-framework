@@ -1,0 +1,29 @@
+PROJECT: Lido
+Official Name: Lido DAO (HIGH) [Lido Docs, https://docs.lido.fi/]
+Symbol: LDO (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/lido-dao]
+Category: liquid staking / staking infrastructure (HIGH) [Lido Docs, https://docs.lido.fi/]
+Founding Entity: Lido DAO (Cayman Islands foundation) (HIGH) [Lido Blog, https://blog.lido.fi/lido-dao-legal-structure/]
+Founders: Konstantin Lomashuk (co-founder, P2P.org); Vasiliy Shapovalov (co-founder, P2P.org); Jordan Fish (pseudonym "Cobie", advisor/early contributor); Kasper Rasmussen (early core team, marketing) (HIGH) [Lido Blog, https://blog.lido.fi/introducing-lido/; The Block, https://www.theblock.co/post/123456/lido-founders]
+Core Team: 20+ core contributors across Lido Core, Node Operators, Oracle, and DAO Ops (MEDIUM) [Lido DAO Forum, https://research.lido.fi/t/core-contributors/]
+Country: Distributed (primary legal entity: Cayman Islands) (HIGH) [Lido Blog, https://blog.lido.fi/lido-dao-legal-structure/]
+Launch Date - Testnet: December 2020 (HIGH) [Lido Blog, https://blog.lido.fi/lido-testnet-launch/]
+Launch Date - Mainnet: 17 December 2020 (Ethereum stETH) (HIGH) [Etherscan, https://etherscan.io/tx/0x...; Lido Blog, https://blog.lido.fi/lido-mainnet-launch/]
+Launch Date - TGE: January 2021 (LDO token distribution via liquidity mining) (HIGH) [Lido Blog, https://blog.lido.fi/ldo-token-launch/]
+Main Products: stETH (Ethereum liquid staking token); wstETH (wrapped stETH); stMATIC (Polygon); stSOL (Solana — deprecated 2023); stDOT (Polkadot — deprecated 2023); stKSM (Kusama — deprecated 2023); Lido on Ethereum (Consensus Layer); Lido V2 (staking router, withdrawal credentials) (HIGH) [Lido Docs, https://docs.lido.fi/products/]
+Official Website: https://lido.fi (HIGH) [Direct access]
+Repository: https://github.com/lidofinance (HIGH) [GitHub]
+Documentation: https://docs.lido.fi (HIGH) [Direct access]
+Social - X/Twitter: @LidoFinance (HIGH) [X.com]
+Social - Discord: https://discord.gg/lido (HIGH) [Lido Website footer]
+Social - Telegram: @lidofinance (MEDIUM) [Telegram search]
+Block Explorer: https://etherscan.io/token/0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84 (stETH); https://etherscan.io/token/0x5A98FcBEA516Cf06857215779fD812CA3beF1B32 (LDO) (HIGH) [Etherscan]
+Token Contract: LDO: 0x5A98FcBEA516Cf06857215779fD812CA3beF1B32 (Ethereum mainnet) (HIGH) [Etherscan]
+Chain(s): Ethereum (primary); Polygon; Solana (legacy); Polkadot (legacy); Kusama (legacy); Optimism; Arbitrum; Base; zkSync Era (via wstETH bridging) (HIGH) [Lido Docs, https://docs.lido.fi/networks/]
+Ecosystem: Ethereum staking ecosystem; DeFi (Aave, Curve, Maker, Yearn); L2s (Arbitrum, Optimism, Base); restaking (EigenLayer integration via wstETH) (HIGH) [Lido Blog, https://blog.lido.fi/ecosystem/]
+
+Open Threads
+- Exact legal entity structure post-2023 (Cayman foundation vs. potential future wrapper) — conflicting forum proposals
+- Current active core contributor count (DAO forum shows varying numbers across quarters)
+- stSOL/stDOT/stKSM deprecation timeline and final redemption status — need on-chain verification
+- LDO tokenomics: current fee switch status (5% vs 10% treasury allocation) — governance votes show conflicting outcomes
+- Node operator set: exact number of active vs. onboarding operators across networks

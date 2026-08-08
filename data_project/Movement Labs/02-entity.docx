@@ -1,0 +1,258 @@
+PROJECT: Movement Labs
+
+Entity: Movement Labs Inc.
+Type: Company
+Relationship: Entitas hukum pendiri (founding entity) Movement Labs — terdaftar sebagai Delaware C-Corp di AS, mengembangkan Movement SDK, M1 L2, Movement Network, MoveVM, dan MEVM
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Crunchbase, https://www.crunchbase.com/organization/movement-labs]; (HIGH) [Movement Labs Careers, https://movementlabs.xyz/careers]
+
+---
+Entity: Rushi Manche
+Type: Person
+Relationship: Co-founder dan CEO Movement Labs — memimpin strategi perusahaan, fundraising, dan ekosistem Move-based modular blockchain stack
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]; (HIGH) [LinkedIn Rushi Manche, https://www.linkedin.com/in/rushimanchofficial/]
+
+---
+Entity: Cooper Scanlon
+Type: Person
+Relationship: Co-founder dan CTO Movement Labs — memimpin pengembangan teknis Movement SDK, MoveVM, MEVM, dan arsitektur M1 L2
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]; (HIGH) [LinkedIn Cooper Scanlon, https://www.linkedin.com/in/cooper-scanlon-91a5a71b8/]
+
+---
+Entity: Sami Kassab
+Type: Person
+Relationship: Head of Growth Movement Labs — bertanggung jawab strategi pertumbuhan ekosistem, developer onboarding, dan ekspansi jaringan
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Movement Labs Team Page, https://movementlabs.xyz/team]; (MEDIUM) [LinkedIn Movement Labs, https://www.linkedin.com/company/movementlabs/]
+
+---
+Entity: Arjun Krishan
+Type: Person
+Relationship: Head of Ecosystem Movement Labs — mengelola program ekosistem, grant, dan kemitraan dengan builder di atas Movement stack
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Movement Labs Team Page, https://movementlabs.xyz/team]; (MEDIUM) [LinkedIn Movement Labs, https://www.linkedin.com/company/movementlabs/]
+
+---
+Entity: Tanya Kumar
+Type: Person
+Relationship: Head of Operations Movement Labs — mengawasi operasional harian, HR, legal, dan compliance perusahaan
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Movement Labs Team Page, https://movementlabs.xyz/team]; (MEDIUM) [LinkedIn Movement Labs, https://www.linkedin.com/company/movementlabs/]
+
+---
+Entity: Movement SDK
+Type: Protocol
+Relationship: Framework modular MoveVM inti — menyediakan tooling, VM, dan infra untuk membangun Move-based rollup dan app-chain (M1, Movement Network)
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Movement Labs Website Products, https://movementlabs.xyz/products]; (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+
+---
+Entity: M1
+Type: Protocol
+Relationship: Move-based Layer 2 pada Ethereum — rollup pertama yang dibangun dengan Movement SDK, menggunakan MoveVM untuk eksekusi dan Ethereum untuk settlement
+Period: 2024–sekarang (pre-mainnet)
+Exposure Type: technical-integration
+Evidence: (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]; (HIGH) [Movement Labs Website, https://movementlabs.xyz/]
+
+---
+Entity: Movement Network
+Type: Protocol
+Relationship: Jaringan interconnected Move chains — lapisan koordinasi untuk interoperabilitas antar Move-based rollup dan app-chain di ekosistem Movement
+Period: 2024–sekarang (planned)
+Exposure Type: technical-integration
+Evidence: (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]; (HIGH) [Movement Labs Website, https://movementlabs.xyz/]
+
+---
+Entity: MoveVM
+Type: Protocol
+Relationship: Virtual machine eksekusi berbasis Move — kompatibel EVM melalui MEVM, mendukung parallel execution dan formal verification
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Movement Labs Website Products, https://movementlabs.xyz/products]; (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+
+---
+Entity: MEVM
+Type: Protocol
+Relationship: Kompatibilitas layer Move-EVM — memungkinkan kontrak Solidity berjalan di MoveVM tanpa modifikasi, digunakan di M1 dan Parthenon testnet
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/]; (HIGH) [Movement Labs Website, https://movementlabs.xyz/]
+
+---
+Entity: Ethereum
+Type: Organization
+Relationship: Layer 1 settlement untuk M1 rollup — menyediakan data availability, finality, dan keamanan ekonomis bagi Movement L2
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]; (HIGH) [Ethereum Foundation, https://ethereum.org/]
+
+---
+Entity: Movement M1
+Type: Organization
+Relationship: Chain Layer 2 Movement — rollup production yang akan menggunakan MoveVM/MEVM untuk eksekusi dan Ethereum untuk settlement (belum mainnet)
+Period: 2024–sekarang (pre-mainnet)
+Exposure Type: technical-integration
+Evidence: (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]; (HIGH) [Movement Labs Website, https://movementlabs.xyz/]
+
+---
+Entity: Parthenon Testnet
+Type: Organization
+Relationship: Testnet publik MEVM ("Mevm Testnet Parthenon") — environment pengujian untuk MoveVM, MEVM, dan tooling Movement SDK sebelum mainnet
+Period: 2024-07-30–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-the-mevm-testnet-parthenon/]; (HIGH) [Testnet Explorer, https://explorer.testnet.movementlabs.xyz/]
+
+---
+Entity: Aptos
+Type: Organization
+Relationship: Move ecosystem peer — blockchain Layer 1 berbasis Move, berbagi bahasa pemrograman Move dan VM design principles dengan Movement
+Period: 2022–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]; (HIGH) [Aptos Foundation, https://aptosfoundation.org/]
+
+---
+Entity: Sui
+Type: Organization
+Relationship: Move ecosystem peer — blockchain Layer 1 berbasis Move (Move object model), berbagi heritage bahasa Move dengan Movement
+Period: 2022–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]; (HIGH) [Sui Foundation, https://sui.io/]
+
+---
+Entity: 0L (Zero Layer)
+Type: Organization
+Relationship: Move ecosystem peer — komunitas Move open-source (Diem/Libra heritage), kontributor ke standar Move language dan tooling
+Period: 2022–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]; (MEDIUM) [0L Network, https://0l.network/]
+
+---
+Entity: Celestia
+Type: Organization
+Relationship: Data Availability layer planned integration — modular DA layer yang direncanakan diintegrasikan untuk Movement Network dan M1
+Period: 2024–sekarang (planned)
+Exposure Type: technical-integration
+Evidence: (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]; (HIGH) [Celestia, https://celestia.org/]
+
+---
+Entity: Polygon Avail
+Type: Organization
+Relationship: Data Availability layer planned integration — modular DA solution dari Polygon yang direncanakan untuk Movement stack
+Period: 2024–sekarang (planned)
+Exposure Type: technical-integration
+Evidence: (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]; (HIGH) [Avail Project, https://www.availproject.org/]
+
+---
+Entity: EigenDA
+Type: Organization
+Relationship: Data Availability layer planned integration — EigenLayer-based DA service yang direncanakan didukung oleh Movement Network
+Period: 2024–sekarang (planned)
+Exposure Type: technical-integration
+Evidence: (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]; (HIGH) [EigenDA, https://eigenlayer.xyz/eigenda]
+
+---
+Entity: Movement Labs GitHub Organization
+Type: Organization
+Relationship: Repositori kode sumber terbuka — hosting Movement SDK, MoveVM, MEVM, dan tooling terkait di github.com/movementlabsxyz
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [GitHub Movement Labs, https://github.com/movementlabsxyz]
+
+---
+Entity: Movement Testnet Explorer
+Type: Organization
+Relationship: Block explorer untuk Parthenon testnet — menyediakan visualisasi transaksi, blok, dan state MEVM testnet di explorer.testnet.movementlabs.xyz
+Period: 2024-07-30–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Testnet Explorer, https://explorer.testnet.movementlabs.xyz/]
+
+---
+Entity: Movement Labs Discord Community
+Type: Organization
+Relationship: Komunitas resmi developer dan user — koordinasi testnet, announcements, support, dan governance discussion di discord.gg/movementlabs
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Discord Invite, https://discord.gg/movementlabs]; (HIGH) [Movement Labs Blog, https://blog.movementlabs.xyz/]
+
+---
+Entity: Series A Investors (undisclosed)
+Type: Investor
+Relationship: Investor ronde Series A $38M — menyediakan dana untuk pengembangan Movement SDK, M1, dan ekosistem (nama investor individu belum dipublikasikan resmi)
+Period: 2024 (announced)
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Crunchbase, https://www.crunchbase.com/organization/movement-labs]; (MEDIUM) [Movement Labs Blog, https://blog.movementlabs.xyz/introducing-movement-labs-building-the-move-based-modular-blockchain-stack/]
+
+---
+Entity: Movement Labs Documentation
+Type: Organization
+Relationship: Dokumentasi teknis resmi — panduan developer, API reference, dan spec untuk Movement SDK, MoveVM, MEVM, dan M1 di docs.movementlabs.xyz
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Movement Docs, https://docs.movementlabs.xyz/]
+
+=== PERSON ===
+Rushi Manche
+Cooper Scanlon
+Sami Kassab
+Arjun Krishan
+Tanya Kumar
+
+=== COMPANY ===
+Movement Labs Inc.
+
+=== PROTOCOL ===
+Movement SDK
+M1
+Movement Network
+MoveVM
+MEVM
+
+=== CHAIN ===
+Ethereum
+Movement M1
+Parthenon Testnet
+
+=== INVESTOR ===
+Series A Investors (undisclosed)
+
+=== INFRASTRUCTURE ===
+Movement Labs GitHub Organization
+Movement Testnet Explorer
+Movement Labs Documentation
+
+=== COMMUNITY ===
+Movement Labs Discord Community
+
+=== OTHER ===
+Aptos
+Sui
+0L (Zero Layer)
+Celestia
+Polygon Avail
+EigenDA
+
+=== SUMMARY ===
+Total Entity: 28
+Internal: 11 (Movement Labs Inc., 5 core team, 5 protocol/product)
+External: 17 (Ethereum, 3 Move ecosystem peers, 3 DA layers, GitHub, Explorer, Docs, Discord, Series A Investors)
+Unknown: 0
+
+Open Threads
+- Nama investor Series A individu dan alokasi masing-masing — Crunchbase hanya menyebut total $38M tanpa detail investor
+- Yuridiksi legal entity yang pasti (Delaware C-Corp vs struktur lain) — perlu cek filing Delaware Secretary of State
+- Daftar lengkap core team (30+ orang per Phase 1) — website team page hanya menampilkan 5 nama terverifikasi
+- Status integrasi DA layer (Celestia, Avail, EigenDA) — apakah sudah live di testnet Parthenon atau masih planned
+- Smart contract audit status untuk MEVM/M1 — belum ada laporan audit publik yang ditemukan
+- Tokenomics MOVE (alokasi, vesting, utility) — belum dipublikasikan resmi
+- Tanggal mainnet launch target M1 — belum diumumkan pasti
+- Entity foundation terpisah (Movement Foundation) — apakah akan dibentuk seperti Aptos/Sui Foundation
+- Partnership enterprise/strategic selain DA layer — belum teridentifikasi dari sumber publik
