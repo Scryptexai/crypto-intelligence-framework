@@ -148,6 +148,60 @@ Gunakan fakta yang sudah ada untuk menjelaskan hubungan sebab-akibat.
 
 ========================================================
 
+STRUKTUR OUTPUT — BACA INI DULU SEBELUM MENULIS APA PUN
+
+Nama-nama section di bawah ini BUKAN sekadar judul instruksi untuk Anda baca — setiap nama
+section WAJIB Anda TULIS ULANG PERSIS di dalam output Anda, sebagai TEKS BIASA di barisnya
+sendiri, tepat sebelum item-item section tersebut.
+
+Output Anda WAJIB memuat 11 baris header ini, PERSIS seperti ini (huruf besar-kecil sama
+persis), berurutan, masing-masing di baris sendiri:
+
+Strategic Objectives
+Decision Timeline
+Evolution Pattern
+Technical Decision Pattern
+Financial Decision Pattern
+Ecosystem Decision Pattern
+Governance Decision Pattern
+Risk Response Pattern
+Recurring Behavioral Pattern
+Strategic Trade-offs
+Behavioral Summary
+
+ATURAN KERAS soal header:
+- TANPA "## ", TANPA "### ", TANPA bold "**...**", TANPA nomor, TANPA tanda titik dua.
+  Tulis apa adanya: baris berisi persis "Technical Decision Pattern" dan tidak lain.
+- JANGAN mengganti baris header dengan garis pemisah "---" atau "======". Garis pemisah
+  BUKAN pengganti nama section. Kesalahan paling sering terjadi: model menulis item
+  "Pola 1: ..." dengan benar tapi MENGHILANGKAN baris nama section di atasnya — akibatnya
+  seluruh section itu tidak terbaca dan hilang total dari database, walau isinya sempurna.
+- Penomoran item ("Pola 1:", "Pola 2:", ...) dimulai ulang dari 1 di SETIAP section. Itu
+  sebabnya baris nama section wajib ada — tanpanya enam blok "Pola 1..N" yang berurutan
+  tidak bisa dibedakan satu sama lain.
+
+Contoh potongan output yang BENAR:
+
+```
+Technical Decision Pattern
+
+Pola 1: Ethereum Alignment First
+· Decision Pattern: ...
+· Evidence: ...
+
+Pola 2: Upgrade Bertahap dengan Pengujian Ekstensif
+· Decision Pattern: ...
+· Evidence: ...
+
+Financial Decision Pattern
+
+Pola 1: Pendanaan Bertahap dengan Valuasi Meningkat
+· Decision Pattern: ...
+· Evidence: ...
+```
+
+========================================================
+
 Strategic Objectives
 
 Apa tujuan strategis utama proyek.

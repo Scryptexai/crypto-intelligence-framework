@@ -225,8 +225,14 @@ _DECISION_HINT = (
     "· Supporting Dataset: <Phase 3 EV-001, dll>"
 )
 _BEHAVIOR_HINT = (
-    "Section-section Behavioral tidak terparsing. Nama section ditulis SEBAGAI TEKS BIASA di "
-    "barisnya sendiri (TANPA \"## \", TANPA bold), dan itemnya WAJIB pakai label bernomor:\n"
+    "Section-section Behavioral tidak terparsing. Penyebab paling sering (dan yang kemungkinan "
+    "besar terjadi di jawaban sebelumnya): item \"Pola 1: ...\" sudah ditulis dengan benar, "
+    "TAPI BARIS NAMA SECTION di atasnya HILANG — diganti garis pemisah \"---\" atau tidak "
+    "ditulis sama sekali. Penomoran \"Pola\" dimulai ulang dari 1 di tiap section, jadi tanpa "
+    "baris nama section, enam blok \"Pola 1..N\" yang berurutan tidak bisa dibedakan dan "
+    "SEMUANYA hilang dari database walau isinya sempurna.\n\n"
+    "Tulis nama section SEBAGAI TEKS BIASA di barisnya sendiri (TANPA \"## \", TANPA bold, "
+    "TANPA titik dua), tepat sebelum item-itemnya. Garis \"---\" BUKAN pengganti nama section:\n"
     "- \"Strategic Objectives\"        -> item bernomor: \"1. <judul>\", \"2. <judul>\"\n"
     "- \"Technical Decision Pattern\"  -> \"Pola 1: <judul>\"\n"
     "- \"Financial Decision Pattern\"  -> \"Pola 1: <judul>\"\n"
