@@ -123,16 +123,33 @@ def _audit_json(projects: list, output_root: Path) -> int:
     phase11_todo encodes the maintainer's rule directly: Phase 11 is only for projects already
     clear on phases 1-10. A project that is broken, or never started, is not in it -- running
     an audit of phases that don't exist yet would produce a confident QA report about nothing.
+
+    "Done" means the audit PARSES, not that a file exists. Until 2026-08-09 this only checked
+    length, so a Phase 11 that failed its spec checks and was saved anyway counted as finished:
+    the driver skipped it on every later run, and the project could never recover even after
+    the underlying bug was fixed. Aave, Aptos and Avalanche all landed in that state. They come
+    back as phase11_bad, which the driver regenerates with --redo-phases 11 -- and if a fix
+    elsewhere made the existing file parseable after all, they simply move to phase11_done and
+    cost nothing.
     """
     clean, broken, not_started, dirs = _classify(projects, output_root)
 
-    phase11_done, phase11_todo = [], []
+    from . import specs  # local: pulls tools/extract_*.py in, and only --audit-json needs it
+
+    phase11_done, phase11_todo, phase11_bad = [], [], []
     for name in clean:
         path = dirs[name] / "11-conflict.docx"
-        done = (path.exists()
-                and len(path.read_text(encoding="utf-8", errors="replace").strip())
-                >= config.MIN_PHASE_CHARS)
-        (phase11_done if done else phase11_todo).append(name)
+        text = path.read_text(encoding="utf-8", errors="replace") if path.exists() else ""
+        if len(text.strip()) < config.MIN_PHASE_CHARS:
+            phase11_todo.append(name)
+            continue
+        failed = specs.run_checks(11, "conflict", name, text)
+        if failed:
+            phase11_bad.append({"project": name,
+                                "checks": [c.name for c, _ in failed],
+                                "detail": failed[0][1][:200]})
+        else:
+            phase11_done.append(name)
 
     print(json.dumps({
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
@@ -143,6 +160,7 @@ def _audit_json(projects: list, output_root: Path) -> int:
         "not_started": sorted(not_started),
         "phase11_done": sorted(phase11_done),
         "phase11_todo": sorted(phase11_todo),
+        "phase11_bad": sorted(phase11_bad, key=lambda e: e["project"]),
     }, indent=2))
     return 0
 

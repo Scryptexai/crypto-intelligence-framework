@@ -228,14 +228,27 @@ stage_publish() {
 # poc/qa.json would stay at one project no matter how many audits were generated.
 # ---------------------------------------------------------------------------------------
 stage_phase11() {
-  local todo count=0
+  local todo bad work count=0
   todo="$(audit_field phase11_todo)"
-  if [ -z "$todo" ]; then
-    say "stage phase11: no project is both clear on phases 1-10 and missing its audit -- skipping."
+  # Projects whose 11-conflict.docx exists but does NOT pass its spec checks. Without this
+  # they were finished forever: the resume logic sees a long-enough file and skips it, so a
+  # project that saved an unparseable audit could never recover, not even after the bug that
+  # caused it was fixed. --redo-phases 11 sets the old file aside (as .bak) and regenerates;
+  # phases.run_phase keeps whichever version scores better, so a worse retry cannot lose the
+  # report that is already there.
+  bad="$(audit_json | "$PY" -c '
+import json, sys
+for e in json.load(sys.stdin).get("phase11_bad") or []:
+    print(e["project"], ",".join(e["checks"]), sep="\t")')"
+
+  if [ -z "$todo" ] && [ -z "$bad" ]; then
+    say "stage phase11: every project clear on phases 1-10 has a parseable audit -- skipping."
     return 0
   fi
 
-  say "stage phase11: $(printf '%s\n' "$todo" | wc -l) project(s) ready for Validation & QA."
+  [ -n "$todo" ] && say "stage phase11: $(printf '%s\n' "$todo" | wc -l) project(s) need a first audit."
+  [ -n "$bad" ] && say "stage phase11: $(printf '%s\n' "$bad" | wc -l) project(s) have an audit that fails its checks -- regenerating."
+
   while IFS= read -r project; do
     [ -n "$project" ] || continue
     say "  phase 11 for $project"
@@ -246,6 +259,24 @@ stage_phase11() {
     "$PY" reset/run_deepseek_reset.py --commit --auto-sync --project "$project"
     count=$((count + 1))
   done <<< "$todo"
+
+  while IFS=$'\t' read -r project checks; do
+    [ -n "$project" ] || continue
+    local tries
+    tries="$(attempts_for "$project")"
+    if [ "$tries" -ge "$MAX_ATTEMPTS" ]; then
+      say "  SKIP $project (phase 11: $checks) -- already attempted $tries times. Fix the prompt or the check, then clear its lines from $(basename "$ATTEMPTS_LOG")."
+      continue
+    fi
+    say "  phase 11 REDO for $project (failing: $checks, attempt $((tries + 1))/$MAX_ATTEMPTS)"
+    if [ "$DRY_RUN" = 1 ]; then
+      say "    [dry-run] would run: --commit --auto-sync --project '$project' --redo-phases 11"
+      continue
+    fi
+    record_attempt "$project" "phase11:$checks"
+    "$PY" reset/run_deepseek_reset.py --commit --auto-sync --project "$project" --redo-phases 11
+    count=$((count + 1))
+  done <<< "$bad"
 
   say "stage phase11: done -- $count project(s) attempted."
 }
