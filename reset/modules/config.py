@@ -87,7 +87,17 @@ MAX_TOKENS = int(os.environ.get("RESET_MAX_TOKENS", "14000"))
 # Arbitrum Phase 11 section is ~38.9k chars, ~9.7k tokens estimated -- already over the old
 # 8192 default). Its own constant so phases 1-10 aren't forced to allow bigger (and
 # slower/costlier) completions than they need.
-PHASE11_MAX_TOKENS = int(os.environ.get("RESET_PHASE11_MAX_TOKENS", "16000"))
+# 24000, raised from 16000 on 2026-08-09 after Aptos hit the old ceiling exactly. Measured
+# Phase 11 sizes: Arbitrum 38,900 chars (~11,800 tok), Aave 30,707 (~9,300), Aptos 53,164
+# (~16,100 at ~3.3 chars/token) -- the last one over the limit, and its report duly stopped
+# mid-field at "Evidence Count: 8", before CIF SCORE CALCULATION, which the prompt places at
+# the very end. Reports vary almost 2x in length between projects, so the headroom needs to
+# cover the long tail rather than the average.
+#
+# If the gateway rejects this with HTTP 400 the model's own output ceiling is lower; that
+# fails fast and visibly at the start of a call rather than after eight minutes, and
+# RESET_PHASE11_MAX_TOKENS overrides it back down.
+PHASE11_MAX_TOKENS = int(os.environ.get("RESET_PHASE11_MAX_TOKENS", "24000"))
 REQUEST_TIMEOUT_SECONDS = int(os.environ.get("RESET_REQUEST_TIMEOUT_SECS", "900"))
 PHASE_SLEEP_SECONDS = int(os.environ.get("RESET_PHASE_SLEEP_SECS", "60"))
 PROJECT_SLEEP_SECONDS = int(os.environ.get("RESET_PROJECT_SLEEP_SECS", "300"))

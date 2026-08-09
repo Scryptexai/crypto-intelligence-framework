@@ -250,7 +250,12 @@ _QA_HINT = (
     "2. JANGAN pernah memakai heading markdown (`##`, `###`) di mana pun dalam laporan. "
     "Gunakan baris teks huruf besar biasa sebagai judul bagian, seperti `COVERAGE REPORT` dan "
     "`CONFLICT REGISTER`. Satu baris `## ` saja akan memotong laporan ini di tengah dan "
-    "membuang semua isi setelahnya."
+    "membuang semua isi setelahnya.\n"
+    "3. Jika jawaban sebelumnya terputus di tengah kalimat, itu berarti laporannya terlalu "
+    "panjang untuk satu jawaban. RINGKAS bagian-bagian detail di depan (Dataset Integrity, "
+    "Inventory, Data Lineage, Evidence Audit) — cukup poin-poin padat, bukan paragraf — supaya "
+    "bagian CIF SCORE CALCULATION di akhir PASTI tertulis lengkap. Bagian skor itu wajib ada; "
+    "bagian detail boleh lebih ringkas."
 )
 
 

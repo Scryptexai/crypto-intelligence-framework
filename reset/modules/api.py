@@ -80,6 +80,7 @@ def _read_sse_stream(resp) -> str:
     """
     parts = []
     finish_reason = None
+    saw_done = False
     for raw_line in resp:
         line = raw_line.decode("utf-8", errors="replace").strip()
         if not line or line.startswith(":"):
@@ -88,6 +89,7 @@ def _read_sse_stream(resp) -> str:
             continue
         payload = line[5:].strip()
         if payload == "[DONE]":
+            saw_done = True
             break
         try:
             chunk = json.loads(payload)
@@ -104,6 +106,19 @@ def _read_sse_stream(resp) -> str:
     text = "".join(parts)
     if not text.strip():
         raise RuntimeError("stream ended with no content (no data: chunks carried text)")
+    # A well-behaved SSE completion ends with `data: [DONE]`. Reaching the end of the response
+    # body without it means the connection died mid-generation, and the caller would otherwise
+    # receive a partial answer with no indication anything was missing.
+    #
+    # Measured on Aave, 2026-08-09: a 30,707-char Phase 11 that stops at "Knowledge K-024 —",
+    # mid-item. That is only ~9,300 tokens against a 16,000 cap, so it was not the budget; the
+    # stream was cut. finish_reason did not catch it because this gateway never sends the
+    # field -- which is also why the guard added the day before stayed silent.
+    if not saw_done and finish_reason is None:
+        raise RuntimeError(
+            f"stream ended without a terminating [DONE] and without finish_reason after "
+            f"{len(text)} chars -- the connection dropped mid-generation, so this answer is "
+            f"incomplete. Retrying.")
     _reject_truncated(finish_reason, text)
     return text
 
