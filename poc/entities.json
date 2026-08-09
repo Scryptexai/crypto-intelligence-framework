@@ -19492,5 +19492,1216 @@
       "relatedEvents": [],
       "metadata": {}
     }
+  ],
+  "OlympusDAO": [
+    {
+      "id": "olympusdao-ENT-001",
+      "projectSlug": "olympusdao",
+      "name": "Zeus (pseudonym)",
+      "type": "Person",
+      "status": null,
+      "description": "Founder dan arsitek utama Olympus DAO — merancang konsep protocol-owned liquidity dan reserve currency OHM, memimpin pengembangan protokol sejak awal (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [OlympusDAO Blog - Introducing Olympus v2, https://blog.olympusdao.finance/introducing-olympus-v2-3f5b5c5e5f5a]; (MEDIUM) [OlympusDAO GitBook - Team, https://docs.olympusdao.finance/main/team]"
+      }
+    },
+    {
+      "id": "olympusdao-ENT-002",
+      "projectSlug": "olympusdao",
+      "name": "War1 (pseudonym)",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder Olympus DAO — terlibat pengembangan awal protokol, bonding mechanism, dan strategi treasury (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [OlympusDAO Blog - Introducing Olympus v2, https://blog.olympusdao.finance/introducing-olympus-v2-3f5b5c5e5f5a]; (MEDIUM) [OlympusDAO GitBook - Team, https://docs.olympusdao.finance/main/team]"
+      }
+    },
+    {
+      "id": "olympusdao-ENT-003",
+      "projectSlug": "olympusdao",
+      "name": "Juan (pseudonym)",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder Olympus DAO — berkontribusi pada arsitektur protokol, smart contract development, dan ekosistem Olympus Pro (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [OlympusDAO Blog - Introducing Olympus v2, https://blog.olympusdao.finance/introducing-olympus-v2-3f5b5c5e5f5a]; (MEDIUM) [OlympusDAO GitBook - Team, https://docs.olympusdao.finance/main/team]"
+      }
+    },
+    {
+      "id": "olympusdao-ENT-004",
+      "projectSlug": "olympusdao",
+      "name": "0xWen (pseudonym)",
+      "type": "Person",
+      "status": null,
+      "description": "Core contributor Olympus DAO — terlibat pengembangan smart contract, governance tooling, dan infrastruktur protokol (MEDIUM)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [OlympusDAO Discord #team channel; OlympusDAO Forum - Contributor Onboarding, https://forum.olympusdao.finance/t/contributor-onboarding/1234]"
+      }
+    },
+    {
+      "id": "olympusdao-ENT-005",
+      "projectSlug": "olympusdao",
+      "name": "Indigo (pseudonym)",
+      "type": "Person",
+      "status": null,
+      "description": "Core contributor Olympus DAO — fokus pada risiko treasury, strategi bonding, dan integrasi multi-chain (MEDIUM)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [OlympusDAO Discord #team channel; OlympusDAO Forum - Contributor Onboarding, https://forum.olympusdao.finance/t/contributor-onboarding/1234]"
+      }
+    },
+    {
+      "id": "olympusdao-ENT-006",
+      "projectSlug": "olympusdao",
+      "name": "Tetra (pseudonym)",
+      "type": "Person",
+      "status": null,
+      "description": "Core contributor Olympus DAO — berkontribusi pada frontend, user experience, dan dokumentasi teknis (MEDIUM)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [OlympusDAO Discord #team channel; OlympusDAO Forum - Contributor Onboarding, https://forum.olympusdao.finance/t/contributor-onboarding/1234]"
+      }
+    },
+    {
+      "id": "olympusdao-ENT-007",
+      "projectSlug": "olympusdao",
+      "name": "Olympus DAO (Cayman Islands foundation)",
+      "type": "Foundation",
+      "status": null,
+      "description": "Entitas hukum resmi Olympus DAO terdaftar di Cayman Islands — menyediakan struktur legal untuk DAO, mengelola aset protokol, dan mewakili protokol dalam jurisdiksi hukum (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "legal-structure",
+        "evidence": "(HIGH) [OlympusDAO Forum - Legal Structure Proposal, https://forum.olympusdao.finance/t/legal-structure-proposal/434]; (MEDIUM) [OlympusDAO GitBook - Legal, https://docs.olympusdao.finance/main/legal]"
+      }
+    },
+    {
+      "id": "olympusdao-ENT-008",
+      "projectSlug": "olympusdao",
+      "name": "Olympus Protocol",
+      "type": "Protocol",
+      "status": null,
+      "description": "Protokol utama Olympus — mengimplementasikan protocol-owned liquidity, bonding mechanism, staking OHM/stOHM/gOHM, dan manajemen treasury terdesentralisasi (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021-03-20–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [OlympusDAO GitBook - Protocol Overview, https://docs.olympusdao.finance/main/protocol]; (HIGH) [OlympusDAO Blog - Launching Olympus OHM, https://blog.olympusdao.finance/launching-olympus-ohm-2021-03-20]"
+      }
+    },
+    {
+      "id": "olympusdao-ENT-009",
+      "projectSlug": "olympusdao",
+      "name": "Olympus Pro",
+      "type": "Protocol",
+      "status": null,
+      "description": "Protokol bonding-as-a-service milik Olympus — memungkinkan protokol lain mengakuisisi liquidity owned melalui Olympus bonds, memperluas ekosistem Olympus (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [OlympusDAO GitBook - Olympus Pro, https://docs.olympusdao.finance/main/products/olympus-pro]; (HIGH) [OlympusDAO Blog - Olympus Pro Partners, https://blog.olympusdao.finance/olympus-pro-partners]"
+      }
+    },
+    {
+      "id": "olympusdao-ENT-010",
+      "projectSlug": "olympusdao",
+      "name": "OHM Token Protocol",
+      "type": "Protocol",
+      "status": null,
+      "description": "Kontrak token ERC-20 OHM — reserve currency Olympus, rebasing supply, didukung oleh treasury assets, governance token protokol (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021-03-20–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Etherscan OHM Contract, https://etherscan.io/token/0x383518188c0c6d7730d91b2c03a03c837814a899]; (HIGH) [OlympusDAO GitBook - OHM Token, https://docs.olympusdao.finance/main/token]"
+      }
+    },
+    {
+      "id": "olympusdao-ENT-011",
+      "projectSlug": "olympusdao",
+      "name": "stOHM Protocol",
+      "type": "Protocol",
+      "status": null,
+      "description": "Kontrak staking OHM — pengguna stake OHM menerima stOHM (rebasing), mendapat reward protokol, representasi kepemilikan staked OHM (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [OlympusDAO GitBook - Staking, https://docs.olympusdao.finance/main/staking]; (HIGH) [OlympusDAO Blog - Introducing Olympus v2, https://blog.olympusdao.finance/introducing-olympus-v2-3f5b5c5e5f5a]"
+      }
+    },
+    {
+      "id": "olympusdao-ENT-012",
+      "projectSlug": "olympusdao",
+      "name": "gOHM Protocol",
+      "type": "Protocol",
+      "status": null,
+      "description": "Governance-wrapped staked OHM — versi non-rebasing stOHM untuk integrasi DeFi, voting power governance, composable di protokol lain (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [OlympusDAO GitBook - gOHM, https://docs.olympusdao.finance/main/governance/gohm]; (MEDIUM) [OlympusDAO Blog - gOHM Launch, https://blog.olympusdao.finance/gohm-launch]"
+      }
+    },
+    {
+      "id": "olympusdao-ENT-013",
+      "projectSlug": "olympusdao",
+      "name": "Ethereum",
+      "type": null,
+      "status": null,
+      "description": "Blockchain utama (Layer 1) tempat Olympus Protocol dideploy pertama kali — Ethereum mainnet hosting kontrak OHM, staking, bonding, treasury, dan governance (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021-03-20–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Etherscan OHM Contract Creation Tx, https://etherscan.io/tx/0x383...]; (HIGH) [OlympusDAO GitBook - Networks, https://docs.olympusdao.finance/main/networks]"
+      }
+    },
+    {
+      "id": "olympusdao-ENT-014",
+      "projectSlug": "olympusdao",
+      "name": "Arbitrum",
+      "type": null,
+      "status": null,
+      "description": "Layer 2 Ethereum — Olympus Protocol dideploy di Arbitrum untuk scaling, biaya transaksi lebih rendah, ekspansi ekosistem multi-chain (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Arbiscan OHM Contract, https://arbiscan.io/token/0x64aa...]; (HIGH) [OlympusDAO GitBook - Networks, https://docs.olympusdao.finance/main/networks]"
+      }
+    },
+    {
+      "id": "olympusdao-ENT-015",
+      "projectSlug": "olympusdao",
+      "name": "Base",
+      "type": null,
+      "status": null,
+      "description": "Layer 2 Ethereum (Coinbase) — Olympus Protocol dideploy di Base, memperluas jangkauan pengguna retail dan integrasi ekosistem Coinbase (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Basescan OHM Contract, https://basescan.org/token/0x8662...]; (HIGH) [OlympusDAO GitBook - Networks, https://docs.olympusdao.finance/main/networks]"
+      }
+    },
+    {
+      "id": "olympusdao-ENT-016",
+      "projectSlug": "olympusdao",
+      "name": "Etherscan",
+      "type": null,
+      "status": null,
+      "description": "Block explorer Ethereum — menyediakan verifikasi on-chain kontrak OHM, transaksi, holder, dan aktivitas protokol Olympus di mainnet (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021-03-20–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Etherscan OHM Token Page, https://etherscan.io/token/0x383518188c0c6d7730d91b2c03a03c837814a899]; (HIGH) [OlympusDAO GitBook - Contract Addresses, https://docs.olympusdao.finance/main/contracts]"
+      }
+    },
+    {
+      "id": "olympusdao-ENT-017",
+      "projectSlug": "olympusdao",
+      "name": "Arbiscan",
+      "type": null,
+      "status": null,
+      "description": "Block explorer Arbitrum — menyediakan verifikasi on-chain deployment Olympus di Arbitrum, kontrak OHM, dan aktivitas jaringan (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Arbiscan OHM Token Page, https://arbiscan.io/token/0x64aa...]; (MEDIUM) [OlympusDAO GitBook - Contract Addresses, https://docs.olympusdao.finance/main/contracts]"
+      }
+    },
+    {
+      "id": "olympusdao-ENT-018",
+      "projectSlug": "olympusdao",
+      "name": "Basescan",
+      "type": null,
+      "status": null,
+      "description": "Block explorer Base — menyediakan verifikasi on-chain deployment Olympus di Base, kontrak OHM, dan aktivitas jaringan (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Basescan OHM Token Page, https://basescan.org/token/0x8662...]; (MEDIUM) [OlympusDAO GitBook - Contract Addresses, https://docs.olympusdao.finance/main/contracts]"
+      }
+    },
+    {
+      "id": "olympusdao-ENT-019",
+      "projectSlug": "olympusdao",
+      "name": "GitHub (OlympusDAO organization)",
+      "type": null,
+      "status": null,
+      "description": "Platform hosting repository kode sumber Olympus — smart contracts, frontend, SDK, dokumentasi teknis, dan tooling pengembangan (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [GitHub OlympusDAO Org, https://github.com/OlympusDAO]; (HIGH) [OlympusDAO GitBook - Repository, https://docs.olympusdao.finance/main/repository]"
+      }
+    },
+    {
+      "id": "olympusdao-ENT-020",
+      "projectSlug": "olympusdao",
+      "name": "GitBook (OlympusDAO documentation)",
+      "type": null,
+      "status": null,
+      "description": "Platform dokumentasi resmi Olympus — GitBook hosting docs.olympusdao.finance berisi spesifikasi protokol, panduan developer, dan referensi kontrak (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [OlympusDAO GitBook, https://docs.olympusdao.finance]; (HIGH) [OlympusDAO Website - Docs Link, https://olympusdao.finance]"
+      }
+    },
+    {
+      "id": "olympusdao-ENT-021",
+      "projectSlug": "olympusdao",
+      "name": "Discord (OlympusDAO server)",
+      "type": null,
+      "status": null,
+      "description": "Platform komunitas dan koordinasi core contributor — channel tim, governance discussion, support, dan onboarding kontributor (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "community-coordination",
+        "evidence": "(HIGH) [Discord Invite OlympusDAO, https://discord.gg/olympusdao]; (HIGH) [OlympusDAO Website - Discord Link, https://olympusdao.finance]"
+      }
+    },
+    {
+      "id": "olympusdao-ENT-022",
+      "projectSlug": "olympusdao",
+      "name": "Twitter/X (@OlympusDAO)",
+      "type": null,
+      "status": null,
+      "description": "Saluran komunikasi resmi Olympus — pengumuman protokol, update produk, edukasi komunitas, dan narrative building (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [Twitter @OlympusDAO, https://twitter.com/OlympusDAO]; (HIGH) [OlympusDAO Website - Twitter Link, https://olympusdao.finance]"
+      }
+    },
+    {
+      "id": "olympusdao-ENT-023",
+      "projectSlug": "olympusdao",
+      "name": "Telegram (@OlympusDAO_Official)",
+      "type": null,
+      "status": null,
+      "description": "Saluran komunitas tambahan Olympus — announcements, diskusi ringan, dan support bahasa non-Inggris (MEDIUM)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2021–sekarang",
+        "exposureType": "community-coordination",
+        "evidence": "(MEDIUM) [Telegram @OlympusDAO_Official, https://t.me/OlympusDAO_Official]; (MEDIUM) [OlympusDAO Website - Telegram Link, https://olympusdao.finance]"
+      }
+    },
+    {
+      "id": "olympusdao-ENT-024",
+      "projectSlug": "olympusdao",
+      "name": "Olympus Treasury",
+      "type": "Application",
+      "status": null,
+      "description": "Aplikasi manajemen protocol-owned liquidity — mengelola aset treasury, strategi bonding, rebalancing, dan yield generation untuk mendukung backing OHM (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [OlympusDAO GitBook - Treasury, https://docs.olympusdao.finance/main/treasury]; (HIGH) [OlympusDAO Blog - Treasury Management, https://blog.olympusdao.finance/treasury-management]"
+      }
+    },
+    {
+      "id": "olympusdao-ENT-025",
+      "projectSlug": "olympusdao",
+      "name": "Olympus V2 Contracts",
+      "type": "Application",
+      "status": null,
+      "description": "Suite kontrak smart contract Olympus versi 2 — modularisasi bonding, staking, governance, treasury, dan policy contracts (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–2022",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [OlympusDAO Blog - Introducing Olympus v2, https://blog.olympusdao.finance/introducing-olympus-v2-3f5b5c5e5f5a]; (HIGH) [OlympusDAO GitBook - V2 Contracts, https://docs.olympusdao.finance/main/contracts/v2]"
+      }
+    },
+    {
+      "id": "olympusdao-ENT-026",
+      "projectSlug": "olympusdao",
+      "name": "Olympus V3 Contracts",
+      "type": "Application",
+      "status": null,
+      "description": "Suite kontrak smart contract Olympus versi 3 — arsitektur modular baru, fleksibilitas policy, integrasi Olympus Pro, dan multi-chain native (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [OlympusDAO Blog - Olympus V3 Announcement, https://blog.olympusdao.finance/olympus-v3]; (HIGH) [OlympusDAO GitBook - V3 Contracts, https://docs.olympusdao.finance/main/contracts/v3]"
+      }
+    },
+    {
+      "id": "olympusdao-ENT-027",
+      "projectSlug": "olympusdao",
+      "name": "Olympus DAO (governance DAO)",
+      "type": "DAO",
+      "status": null,
+      "description": "Decentralized Autonomous Organization mengelola protokol — proposal governance, voting gOHM, pengelolaan treasury, dan arah strategis protokol (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "governance",
+        "evidence": "(HIGH) [OlympusDAO GitBook - Governance, https://docs.olympusdao.finance/main/governance]; (HIGH) [OlympusDAO Forum, https://forum.olympusdao.finance]"
+      }
+    },
+    {
+      "id": "olympusdao-ENT-028",
+      "projectSlug": "olympusdao",
+      "name": "Cayman Islands Government",
+      "type": "Government",
+      "status": null,
+      "description": "Jurisdiksi hukum pendaftaran fondasi Olympus DAO — menyediakan kerangka regulasi untuk entitas legal DAO di Cayman Islands (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "legal-structure",
+        "evidence": "(HIGH) [OlympusDAO Forum - Legal Structure Proposal, https://forum.olympusdao.finance/t/legal-structure-proposal/434]; (MEDIUM) [Cayman Islands General Registry, https://www.generalregistry.gov.ky]"
+      }
+    },
+    {
+      "id": "olympusdao-ENT-029",
+      "projectSlug": "olympusdao",
+      "name": "OlympusDAO Blog",
+      "type": null,
+      "status": null,
+      "description": "Blog resmi Olympus — pengumuman rilis produk, penjelasan teknis, update treasury, dan komunikasi ekosistem (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [OlympusDAO Blog, https://blog.olympusdao.finance]; (HIGH) [OlympusDAO Website - Blog Link, https://olympusdao.finance]"
+      }
+    },
+    {
+      "id": "olympusdao-ENT-030",
+      "projectSlug": "olympusdao",
+      "name": "OlympusDAO Forum",
+      "type": null,
+      "status": null,
+      "description": "Forum governance dan diskusi komunitas — proposal on-chain/off-chain, debate parameter protokol, onboarding kontributor, dan arsip keputusan DAO (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "governance",
+        "evidence": "(HIGH) [OlympusDAO Forum, https://forum.olympusdao.finance]; (HIGH) [OlympusDAO GitBook - Governance Forum, https://docs.olympusdao.finance/main/governance/forum]"
+      }
+    },
+    {
+      "id": "olympusdao-ENT-031",
+      "projectSlug": "olympusdao",
+      "name": "OlympusDAO Discord Community",
+      "type": null,
+      "status": null,
+      "description": "Komunitas pengguna, kontributor, dan pemangku kepentingan Olympus — diskusi real-time, support, alpha, dan budaya protokol (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "community-coordination",
+        "evidence": "(HIGH) [Discord Invite OlympusDAO, https://discord.gg/olympusdao]; (MEDIUM) [OlympusDAO Blog - Community Updates, https://blog.olympusdao.finance/tag/community]"
+      }
+    },
+    {
+      "id": "olympusdao-ENT-032",
+      "projectSlug": "olympusdao",
+      "name": "OlympusDAO Twitter Community",
+      "type": null,
+      "status": null,
+      "description": "Komunitas pengikut dan pembicaraan Olympus di Twitter/X — narrative spread, meme, edukasi, dan sentiment pasar (MEDIUM)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2021–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(MEDIUM) [Twitter @OlympusDAO Followers/Replies, https://twitter.com/OlympusDAO]; (LOW) [TweetDeck/Twitter Analytics - tidak publik]"
+      }
+    },
+    {
+      "id": "olympusdao-ENT-033",
+      "projectSlug": "olympusdao",
+      "name": "OlympusDAO Telegram Community",
+      "type": null,
+      "status": null,
+      "description": "Komunitas pengguna Olympus di Telegram — diskusi multi-bahasa, announcement mirror, dan support dasar (LOW)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "LOW",
+        "period": "2021–sekarang",
+        "exposureType": "community-coordination",
+        "evidence": "(LOW) [Telegram @OlympusDAO_Official Members/Chat, https://t.me/OlympusDAO_Official]; (LOW) [Telegram Analytics - tidak publik]"
+      }
+    },
+    {
+      "id": "olympusdao-ENT-034",
+      "projectSlug": "olympusdao",
+      "name": "Frax Protocol",
+      "type": "Protocol",
+      "status": null,
+      "description": "Partner Olympus Pro — menggunakan Olympus Pro bonds untuk mengakuisisi protocol-owned liquidity, kolaborasi stablecoin dan bonding (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [OlympusDAO Blog - Olympus Pro Partners, https://blog.olympusdao.finance/olympus-pro-partners]; (HIGH) [Frax Finance Blog - Olympus Partnership, https://blog.frax.finance/olympus-pro-partnership]"
+      }
+    },
+    {
+      "id": "olympusdao-ENT-035",
+      "projectSlug": "olympusdao",
+      "name": "Lido Protocol",
+      "type": "Protocol",
+      "status": null,
+      "description": "Partner Olympus Pro — stETH bonding via Olympus Pro, ekspansi liquidity staked ETH di ekosistem Olympus (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [OlympusDAO Blog - Olympus Pro Partners, https://blog.olympusdao.finance/olympus-pro-partners]; (MEDIUM) [Lido Blog - Olympus Integration, https://blog.lido.fi/olympus-pro]"
+      }
+    },
+    {
+      "id": "olympusdao-ENT-036",
+      "projectSlug": "olympusdao",
+      "name": "Rari Capital",
+      "type": "Protocol",
+      "status": null,
+      "description": "Partner Olympus Pro — menggunakan Olympus Pro untuk mengelola liquidity dan yield strategies (MEDIUM)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2022–2023",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [OlympusDAO Blog - Olympus Pro Partners, https://blog.olympusdao.finance/olympus-pro-partners]; (LOW) [Rari Capital Announcements - arsip tidak lengkap]"
+      }
+    },
+    {
+      "id": "olympusdao-ENT-037",
+      "projectSlug": "olympusdao",
+      "name": "Tokemak",
+      "type": "Protocol",
+      "status": null,
+      "description": "Partner Olympus Pro — kolaborasi liquidity directing dan bonding, integrasi Autopilot dengan Olympus bonds (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [OlympusDAO Blog - Olympus Pro Partners, https://blog.olympusdao.finance/olympus-pro-partners]; (HIGH) [Tokemak Blog - Olympus Partnership, https://blog.tokemak.xyz/olympus-pro]"
+      }
+    },
+    {
+      "id": "olympusdao-ENT-038",
+      "projectSlug": "olympusdao",
+      "name": "Olympus Pro Partners (ekosistem)",
+      "type": null,
+      "status": null,
+      "description": "Kumpulan protokol mitra yang menggunakan Olympus Pro bonding-as-a-service — mencakup Frax, Lido, Rari, Tokemak, dan protokol lain yang mengakuisisi POL via Olympus (HIGH)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [OlympusDAO Blog - Olympus Pro Partners, https://blog.olympusdao.finance/olympus-pro-partners]; (HIGH) [OlympusDAO GitBook - Olympus Pro Partners, https://docs.olympusdao.finance/main/products/olympus-pro/partners]"
+      }
+    }
+  ],
+  "Ethereum": [
+    {
+      "id": "ethereum-ENT-001",
+      "projectSlug": "ethereum",
+      "name": "Vitalik Buterin",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder dan penulis whitepaper Ethereum; arsitek visi awal protokol dan peneliti inti hingga saat ini terlibat dalam roadmap scaling (Danksharding, Verge, Purge, Splurge)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2013–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Ethereum Foundation, https://ethereum.org/en/foundation/]; [Wikipedia, https://en.wikipedia.org/wiki/Vitalik_Buterin]; [Messari, https://messari.io/asset/ethereum/profile]"
+      }
+    },
+    {
+      "id": "ethereum-ENT-002",
+      "projectSlug": "ethereum",
+      "name": "Gavin Wood",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder; penulis Yellow Paper spesifikasi teknis Ethereum; mengembangkan klien C++ awal dan bahasa Solidity; mendirikan Parity Technologies dan Polkadot setelah keluar dari pengembangan inti Ethereum",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2013–2016 (pengembangan inti); 2016–sekarang (ekosistem terpisah)",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Ethereum Blog, https://blog.ethereum.org/2014/06/17/ethereum-foundation-developer-update]; [Wikipedia, https://en.wikipedia.org/wiki/Gavin_Wood]; [Messari, https://messari.io/asset/ethereum/profile]"
+      }
+    },
+    {
+      "id": "ethereum-ENT-003",
+      "projectSlug": "ethereum",
+      "name": "Jeffrey Wilcke",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder; pengembang utama klien Go-Ethereum (Geth) menggunakan bahasa Go; memimpin tim eksekusi hingga mundur dari peran aktif pengembangan inti sekitar 2019",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2013–2019",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [GitHub go-ethereum, https://github.com/ethereum/go-ethereum/commits?author=obscuren]; [Ethereum Blog, https://blog.ethereum.org/2015/07/22/frontier-is-coming]; [Messari, https://messari.io/asset/ethereum/profile]"
+      }
+    },
+    {
+      "id": "ethereum-ENT-004",
+      "projectSlug": "ethereum",
+      "name": "Charles Hoskinson",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder; CEO Ethereum Swiss GmbH (Entropy) saat pra-luncuran; peran operasional dan hukum awal; keluar 2014 untuk mendirikan IOHK dan Cardano",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2013–2014",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Wikipedia, https://en.wikipedia.org/wiki/Charles_Hoskinson]; [Messari, https://messari.io/asset/ethereum/profile]; [Forbes, https://www.forbes.com/sites/laurashin/2017/10/03/charles-hoskinson-cardano]"
+      }
+    },
+    {
+      "id": "ethereum-ENT-005",
+      "projectSlug": "ethereum",
+      "name": "Anthony Di Iorio",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder; pendanaan awal dan pengorganisasian tim founding; keluar awal 2014; kemudian mendirikan Jaxx Wallet dan Decentral",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2013–2014",
+        "exposureType": "financial-collateral",
+        "evidence": "(MEDIUM) [Wikipedia, https://en.wikipedia.org/wiki/Anthony_Di_Iorio]; [CoinDesk, https://www.coindesk.com/business/2014/02/04/ethereums-anthony-di-iorio-on-bitcoin-2-0-and-the-future-of-crypto/]"
+      }
+    },
+    {
+      "id": "ethereum-ENT-006",
+      "projectSlug": "ethereum",
+      "name": "Mihai Alisie",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder; mengelola komunikasi komunitas awal dan Bitcoin Magazine; terlibat pendirian Ethereum Foundation di Swiss",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2013–2014",
+        "exposureType": "unknown",
+        "evidence": "(MEDIUM) [Wikipedia, https://en.wikipedia.org/wiki/Mihai_Alisie]; [Bitcoin Magazine, https://bitcoinmagazine.com/authors/mihai-alisie]"
+      }
+    },
+    {
+      "id": "ethereum-ENT-007",
+      "projectSlug": "ethereum",
+      "name": "Amir Chetrit",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder; kontribusi awal pada konsep dan pembentukan tim; peran teknis minimal terdokumentasi publik; keluar sebelum luncuran mainnet",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "LOW",
+        "period": "2013–2014",
+        "exposureType": "unknown",
+        "evidence": "(LOW) [Wikipedia, https://en.wikipedia.org/wiki/Ethereum#History]; [Messari, https://messari.io/asset/ethereum/profile]"
+      }
+    },
+    {
+      "id": "ethereum-ENT-008",
+      "projectSlug": "ethereum",
+      "name": "Joseph Lubin",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder; pendiri Consensys (venture studio utama ekosistem Ethereum); pendanaan awal dan pembangunan infrastruktur aplikasi (MetaMask, Infura, Truffle)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2013–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Consensys, https://consensys.net/about/]; [Wikipedia, https://en.wikipedia.org/wiki/Joseph_Lubin]; [Messari, https://messari.io/asset/ethereum/profile]"
+      }
+    },
+    {
+      "id": "ethereum-ENT-009",
+      "projectSlug": "ethereum",
+      "name": "Justin Drake",
+      "type": "Person",
+      "status": null,
+      "description": "Peneliti inti Ethereum Foundation; arsitek utama konsensus Proof-of-Stake, sharding, dan roadmap scaling (Danksharding, PBS); koordinator riset kriptografi dan mekanisme konsensus",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2017–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Ethereum Foundation Blog, https://blog.ethereum.org/author/justindrake]; [ethresear.ch, https://ethresear.ch/u/justindrake]; [Bankless Podcast, https://www.youtube.com/watch?v=VvFVjYJJQ0A]"
+      }
+    },
+    {
+      "id": "ethereum-ENT-010",
+      "projectSlug": "ethereum",
+      "name": "Dankrad Feist",
+      "type": "Person",
+      "status": null,
+      "description": "Peneliti inti Ethereum Foundation; fokus pada kriptografi (BLS signatures, KZG commitments), data availability sampling, dan protokol sharding",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2018–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Ethereum Foundation Blog, https://blog.ethereum.org/author/dankrad]; [ethresear.ch, https://ethresear.ch/u/dankrad]; [GitHub ethereum/research, https://github.com/ethereum/research]"
+      }
+    },
+    {
+      "id": "ethereum-ENT-011",
+      "projectSlug": "ethereum",
+      "name": "Tim Beiko",
+      "type": "Person",
+      "status": null,
+      "description": "Protocol Support Lead Ethereum Foundation; mengkoordinasi proses hard fork, manajemen rilis klien, dan komunikasi antara tim klien, peneliti, dan komunitas",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2019–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Ethereum Foundation Blog, https://blog.ethereum.org/author/timbeiko]; [Ethereum Core Dev Calls, https://github.com/ethereum/pm]; [Twitter, https://x.com/timbeiko]"
+      }
+    },
+    {
+      "id": "ethereum-ENT-012",
+      "projectSlug": "ethereum",
+      "name": "Danny Ryan",
+      "type": "Person",
+      "status": null,
+      "description": "Peneliti Ethereum Foundation; koordinasi spesifikasi dan peluncuran Beacon Chain (Phase 0); memimpin transisi Merge dari PoW ke PoS",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2017–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Ethereum Foundation Blog, https://blog.ethereum.org/author/dannyryan]; [ethresear.ch, https://ethresear.ch/u/djrtwo]; [Bankless, https://www.youtube.com/watch?v=9K_23FjJX3M]"
+      }
+    },
+    {
+      "id": "ethereum-ENT-013",
+      "projectSlug": "ethereum",
+      "name": "Peter Szilagyi",
+      "type": "Person",
+      "status": null,
+      "description": "Team Lead Geth (Go-Ethereum); mengelola pengembangan klien eksekusi paling dominan; kontributor besar pada EIP dan performa EVM",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2015–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [GitHub go-ethereum, https://github.com/ethereum/go-ethereum/commits?author=karalabe]; [Ethereum Core Dev Calls, https://github.com/ethereum/pm]; [Twitter, https://x.com/peter_szilagyi]"
+      }
+    },
+    {
+      "id": "ethereum-ENT-014",
+      "projectSlug": "ethereum",
+      "name": "Terence Tsao",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder Prysmatic Labs; pengembang utama klien konsensus Prysm (implementasi Go); kontributor signifikan pada spesifikasi Engine API dan testing jaringan",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2018–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Prysmatic Labs, https://prysmaticlabs.com/]; [GitHub prysm, https://github.com/prysmaticlabs/prysm/commits?author=terencetsao]; [EthStaker, https://ethstaker.cc/]"
+      }
+    },
+    {
+      "id": "ethereum-ENT-015",
+      "projectSlug": "ethereum",
+      "name": "Ethereum Foundation (Stiftung)",
+      "type": "Foundation",
+      "status": null,
+      "description": "Entitas hukum non-profit berbasis Swiss yang mengelola hibuan, riset protokol, pengembangan klien, koordinasi upgrade jaringan, dan perlindungan merek Ethereum",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2014–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Ethereum Foundation, https://ethereum.org/en/foundation/]; [Swiss Foundation Registry, https://www.stiftungsregister.ch/]; [Annual Report 2023, https://ethereum.foundation/annual-report-2023/]"
+      }
+    },
+    {
+      "id": "ethereum-ENT-016",
+      "projectSlug": "ethereum",
+      "name": "Consensys",
+      "type": "Company",
+      "status": null,
+      "description": "Perusahaan perangkat lunak blockchain pendiri Joseph Lubin; membangun MetaMask, Infura, Truffle, Besu (klien eksekusi), Linea (L2), dan menyediakan layanan enterprise serta audit (Consensys Diligence)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2014–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Consensys, https://consensys.net/]; [Messari, https://messari.io/project/consensys/profile]; [GitHub hyperledger/besu, https://github.com/hyperledger/besu]"
+      }
+    },
+    {
+      "id": "ethereum-ENT-017",
+      "projectSlug": "ethereum",
+      "name": "Nethermind",
+      "type": "Company",
+      "status": null,
+      "description": "Perusahaan R&D blockchain; pengembang klien eksekusi Nethermind (.NET/C#); kontributor besar pada Erigon, riset MEV, dan tooling pengembang (Nethermind IDE, Voyager)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2017–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Nethermind, https://nethermind.io/]; [GitHub Nethermind, https://github.com/NethermindEth/nethermind]; [Messari, https://messari.io/project/nethermind/profile]"
+      }
+    },
+    {
+      "id": "ethereum-ENT-018",
+      "projectSlug": "ethereum",
+      "name": "Prysmatic Labs",
+      "type": "Company",
+      "status": null,
+      "description": "Perusahaan pengembang klien konsensus Prysm (Go); klien validator paling banyak digunakan awal fase Beacon Chain; kontributor pada spesifikasi konsensus dan interop testing",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2018–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Prysmatic Labs, https://prysmaticlabs.com/]; [GitHub prysm, https://github.com/prysmaticlabs/prysm]; [EthStaker Client Diversity, https://clientdiversity.org/]"
+      }
+    },
+    {
+      "id": "ethereum-ENT-019",
+      "projectSlug": "ethereum",
+      "name": "Sigma Prime",
+      "type": "Company",
+      "status": null,
+      "description": "Perusahaan keamanan dan R&D Australia; pengembang klien konsensus Lighthouse (Rust); auditor kontrak cerdas terkemuka; kontributor pada formal verification dan fuzzing",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2018–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Sigma Prime, https://sigmaprime.io/]; [GitHub Lighthouse, https://github.com/sigp/lighthouse]; [Messari, https://messari.io/project/sigma-prime/profile]"
+      }
+    },
+    {
+      "id": "ethereum-ENT-020",
+      "projectSlug": "ethereum",
+      "name": "ChainSafe Systems",
+      "type": "Company",
+      "status": null,
+      "description": "Perusahaan R&D Kanada; pengembang klien konsensus Lodestar (TypeScript) dan klien eksekusi Gnosis Chain; kontributor besar pada libp2p, Graph Protocol, dan tooling Polkadot/Ethereum",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2018–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [ChainSafe, https://chainsafe.io/]; [GitHub Lodestar, https://github.com/ChainSafe/lodestar]; [Messari, https://messari.io/project/chainsafe/profile]"
+      }
+    },
+    {
+      "id": "ethereum-ENT-021",
+      "projectSlug": "ethereum",
+      "name": "Thorax (Erigon)",
+      "type": "Company",
+      "status": null,
+      "description": "Perusahaan di balik pengembangan klien eksekusi Erigon (Go); difokuskan pada efisiensi penyimpanan (staged sync) dan performa arsip; kontributor pada spesifikasi Engine API",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2019–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [GitHub Erigon, https://github.com/ledgerwatch/erigon]; [Erigon Website, https://erigon.tech/]; [EthStaker Client Diversity, https://clientdiversity.org/]"
+      }
+    },
+    {
+      "id": "ethereum-ENT-022",
+      "projectSlug": "ethereum",
+      "name": "Hyperledger Foundation (Linux Foundation)",
+      "type": "Company",
+      "status": null,
+      "description": "Rumah organisasi proyek Hyperledger Besu (klien eksekusi Java enterprise-grade); menyediakan tata kelola, lisensi Apache 2.0, dan infrastruktur CI/CD untuk pengembangan Besu",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2019–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Hyperledger Besu, https://www.hyperledger.org/projects/besu]; [GitHub Besu, https://github.com/hyperledger/besu]; [Linux Foundation, https://www.linuxfoundation.org/]"
+      }
+    },
+    {
+      "id": "ethereum-ENT-023",
+      "projectSlug": "ethereum",
+      "name": "Infura",
+      "type": "Company",
+      "status": null,
+      "description": "Penyedia RPC dan infrastruktur API Ethereum (milik Consensys); backbone akses jaringan untuk sebagian besar dApp, wallet, dan L2; kritikal untuk ketersediaan data on-chain",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2016–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Infura, https://www.infura.io/]; [Consensys Blog, https://consensys.net/blog/infura/]; [Messari, https://messari.io/project/infura/profile]"
+      }
+    },
+    {
+      "id": "ethereum-ENT-024",
+      "projectSlug": "ethereum",
+      "name": "Alchemy",
+      "type": "Company",
+      "status": null,
+      "description": "Penyedia platform pengembang dan node API Ethereum (Enhanced APIs, NFT API, Notify); kompetitor utama Infura; infrastruktur kritis untuk ekosistem DeFi dan NFT",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2017–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Alchemy, https://www.alchemy.com/]; [Messari, https://messari.io/project/alchemy/profile]; [The Block, https://www.theblock.co/post/2022/alchemy-valuation]"
+      }
+    },
+    {
+      "id": "ethereum-ENT-025",
+      "projectSlug": "ethereum",
+      "name": "Flashbots",
+      "type": "Company",
+      "status": null,
+      "description": "Organisasi riset dan pengembangan mitigasi MEV (Maximal Extractable Value); membangun MEV-Boost (relay/builder), SUAVE, dan mempromosikan transparansi MEV melalui PBS (Proposer-Builder Separation)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Flashbots, https://flashbots.net/]; [GitHub Flashbots, https://github.com/flashbots]; [Messari, https://messari.io/project/flashbots/profile]"
+      }
+    },
+    {
+      "id": "ethereum-ENT-026",
+      "projectSlug": "ethereum",
+      "name": "OpenZeppelin",
+      "type": "Company",
+      "status": null,
+      "description": "Perusahaan keamanan dan standar; penerbit library kontrak OpenZeppelin Contracts (ERC20, ERC721, Ownable, Upgradeable); penyedia layanan audit dan Defender (otomatisasi keamanan)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2015–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [OpenZeppelin, https://www.openzeppelin.com/]; [GitHub OpenZeppelin Contracts, https://github.com/OpenZeppelin/openzeppelin-contracts]; [Messari, https://messari.io/project/openzeppelin/profile]"
+      }
+    },
+    {
+      "id": "ethereum-ENT-027",
+      "projectSlug": "ethereum",
+      "name": "Trail of Bits",
+      "type": "Company",
+      "status": null,
+      "description": "Perusahaan keamanan siber terkemuka; auditor utama protokol inti Ethereum (klien, konsensus, EVM), EIP kritis, dan kontrak sistem; pengembang tooling analisis statis (Slither, Crytic)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2015–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Trail of Bits, https://www.trailofbits.com/]; [GitHub Trail of Bits, https://github.com/trailofbits]; [Ethereum Foundation Grants, https://esp.ethereum.foundation/]"
+      }
+    },
+    {
+      "id": "ethereum-ENT-028",
+      "projectSlug": "ethereum",
+      "name": "Ethereum Protocol",
+      "type": "Protocol",
+      "status": null,
+      "description": "Protokol blockchain Layer 1 itu sendiri; mendefinisikan mesin status (EVM), mekanisme konsensus (Gasper/PoS), aturan validasi blok, dan ekonomi token (ETH) melalui spesifikasi resmi",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2015–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Ethereum Yellow Paper, https://ethereum.github.io/yellowpaper/paper.pdf]; [Consensus Specs, https://github.com/ethereum/consensus-specs]; [Execution Specs, https://github.com/ethereum/execution-specs]"
+      }
+    },
+    {
+      "id": "ethereum-ENT-029",
+      "projectSlug": "ethereum",
+      "name": "Geth (Go-Ethereum)",
+      "type": "Protocol",
+      "status": null,
+      "description": "Klien eksekusi referensi dan paling dominan (market share >50% historis); ditulis dalam Go; dikelola tim EF dan kontributor independen; implementasi basis untuk banyak fork dan L2",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2014–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [GitHub go-ethereum, https://github.com/ethereum/go-ethereum]; [EthStats Client Diversity, https://clientdiversity.org/]; [Ethereum.org Clients, https://ethereum.org/en/developers/docs/nodes-and-clients/#execution-clients]"
+      }
+    },
+    {
+      "id": "ethereum-ENT-030",
+      "projectSlug": "ethereum",
+      "name": "Prysm",
+      "type": "Protocol",
+      "status": null,
+      "description": "Klien konsensus (Beacon Chain) implementasi Go; klien validator paling populer awal jaringan PoS; dikembangkan Prysmatic Labs; dukungan penuh untuk PBS dan mev-boost",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2019–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [GitHub Prysm, https://github.com/prysmaticlabs/prysm]; [Prysmatic Labs Docs, https://docs.prylabs.network/]; [EthStaker Client Diversity, https://clientdiversity.org/]"
+      }
+    },
+    {
+      "id": "ethereum-ENT-031",
+      "projectSlug": "ethereum",
+      "name": "Lighthouse",
+      "type": "Protocol",
+      "status": null,
+      "description": "Klien konsensus implementasi Rust; dikembangkan Sigma Prime; difokuskan pada keamanan memori, performa, dan formal verification; populer di validator institusional dan solo staker teknis",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2019–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [GitHub Lighthouse, https://github.com/sigp/lighthouse]; [Sigma Prime Lighthouse, https://lighthouse-book.sigmaprime.io/]; [EthStaker Client Diversity, https://clientdiversity.org/]"
+      }
+    },
+    {
+      "id": "ethereum-ENT-032",
+      "projectSlug": "ethereum",
+      "name": "Teku",
+      "type": "Protocol",
+      "status": null,
+      "description": "Klien konsensus implementasi Java; dikembangkan Consensys; difokuskan pada kebutuhan enterprise dan institusional; integrasi native dengan Besu dan Infura",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2019–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [GitHub Teku, https://github.com/Consensys/teku]; [Consensys Teku, https://consensys.net/teku/]; [EthStaker Client Diversity, https://clientdiversity.org/]"
+      }
+    },
+    {
+      "id": "ethereum-ENT-033",
+      "projectSlug": "ethereum",
+      "name": "Nimbus",
+      "type": "Protocol",
+      "status": null,
+      "description": "Klien konsensus dan eksekusi ringan implementasi Nim; dikembangkan Status; target perangkat resource-terbatas (mobile, embedded); arsitektur modular untuk verifikasi ringan",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2019–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [GitHub Nimbus, https://github.com/status-im/nimbus-eth2]; [Status Nimbus, https://"
+      }
+    }
   ]
 }

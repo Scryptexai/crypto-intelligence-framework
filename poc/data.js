@@ -2,9 +2,9 @@
 window.CIF = {
   "meta": {
     "schema": "cif-export/1",
-    "generated": "2026-08-08 22:38 UTC",
-    "projects": 27,
-    "deep": 27,
+    "generated": "2026-08-09 06:14 UTC",
+    "projects": 29,
+    "deep": 29,
     "summary": 0,
     "sentiment": 0,
     "patterns": 16,
@@ -132,7 +132,8 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
-        "governance"
+        "governance",
+        "mining"
       ]
     },
     {
@@ -154,6 +155,16 @@ window.CIF = {
       "tags": [
         "stablecoin",
         "synthetic"
+      ]
+    },
+    {
+      "n": "Ethereum",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Ethereum.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "l1"
       ]
     },
     {
@@ -287,6 +298,16 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": []
+    },
+    {
+      "n": "OlympusDAO",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/OlympusDAO.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "governance"
+      ]
     }
   ],
   "patterns": [

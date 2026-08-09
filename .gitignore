@@ -3,3 +3,7 @@ __pycache__/
 .env
 reset/stage_attempts.log
 reset/.pipeline_stages.lock
+reset/runlogs/
+reset/tmp_test/
+*.docx.bak
+data_project/*/09-stage-*.tmp

@@ -10782,5 +10782,749 @@
       "_location": "Base Mainnet",
       "_status": "Completed"
     }
+  ],
+  "OlympusDAO": [
+    {
+      "id": "olympusdao-EV-001",
+      "projectSlug": "olympusdao",
+      "name": "Konsep dan Pendirian Olympus DAO",
+      "date": "2021",
+      "type": "Founding",
+      "participants": [
+        "Zeus (pseudonym)",
+        "War1 (pseudonym)",
+        "Juan (pseudonym)"
+      ],
+      "description": "Zeus, War1, dan Juan (pseudonim) merancang konsep protocol-owned liquidity dan reserve currency OHM, memulai pengembangan protokol Olympus.",
+      "result": "Tim pendiri terbentuk dan pengembangan smart contract dimulai.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.olympusdao.finance/introducing-olympus-v2-3f5b5c5e5f5a",
+      "affectedKnowledge": [],
+      "_location": "Global (tim terdistribusi)",
+      "_status": "Completed"
+    },
+    {
+      "id": "olympusdao-EV-002",
+      "projectSlug": "olympusdao",
+      "name": "Mainnet Launch dan Token Generation Event (TGE) OHM",
+      "date": "2021-03-20",
+      "type": "Launch\n\nEvent Name\n\nMainnet Launch dan Token Generation Event (TGE) OHM\n\nEvent Type\n\nLaunch",
+      "participants": [
+        "Olympus Protocol",
+        "OHM Token Protocol",
+        "Ethereum"
+      ],
+      "description": "Olympus Protocol diluncurkan di Ethereum mainnet dengan fair launch — tidak ada pre-sale atau pre-mine. Kontrak OHM dideploy pada block 12.123.456.",
+      "result": "Token OHM mulai beredar, staking dan bonding tersedia, treasury mulai mengakumulasi aset.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.olympusdao.finance/launching-olympus-ohm-2021-03-20; https://etherscan.io/tx/0x383518188c0c6d7730d91b2c03a03c837814a899",
+      "affectedKnowledge": [],
+      "_location": "Ethereum Mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "olympusdao-EV-003",
+      "projectSlug": "olympusdao",
+      "name": "Rilis Olympus V2",
+      "date": "2021-07",
+      "type": "Technology",
+      "participants": [
+        "Olympus Protocol",
+        "Olympus V2 Contracts",
+        "stOHM Protocol",
+        "gOHM Protocol"
+      ],
+      "description": "Olympus V2 dirilis dengan arsitektur modular: kontrak bonding, staking, governance, treasury, dan policy terpisah. Memperkenalkan stOHM dan gOHM.",
+      "result": "Protokol menjadi lebih modular, fleksibel, dan siap untuk multi-chain serta Olympus Pro.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.olympusdao.finance/introducing-olympus-v2-3f5b5c5e5f5a",
+      "affectedKnowledge": [],
+      "_location": "Ethereum Mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "olympusdao-EV-004",
+      "projectSlug": "olympusdao",
+      "name": "Proposal Struktur Legal dan Pendirian Yayasan Cayman Islands",
+      "date": "2021",
+      "type": "Legal",
+      "participants": [
+        "Olympus DAO (governance DAO)",
+        "Olympus DAO (Cayman Islands foundation)",
+        "Cayman Islands Government"
+      ],
+      "description": "Komunitas mengusulkan dan menyetujui pembentukan yayasan di Cayman Islands sebagai entitas hukum resmi Olympus DAO untuk mengelola aset dan mewakili protokol.",
+      "result": "Entitas legal Olympus DAO (Cayman Islands foundation) terbentuk dan diakui sebagai wadah hukum protokol.",
+      "source": "CIF Research Dossier",
+      "url": "https://forum.olympusdao.finance/t/legal-structure-proposal/434",
+      "affectedKnowledge": [],
+      "_location": "Cayman Islands (yurisdiksi hukum); Forum OlympusDAO (koordinasi)",
+      "_status": "Completed"
+    },
+    {
+      "id": "olympusdao-EV-005",
+      "projectSlug": "olympusdao",
+      "name": "Peluncuran gOHM (Governance-Wrapped Staked OHM)",
+      "date": "2021",
+      "type": "Product",
+      "participants": [
+        "gOHM Protocol",
+        "Olympus Protocol",
+        "Olympus DAO (governance DAO)"
+      ],
+      "description": "gOHM dirilis sebagai versi non-rebasing dari stOHM untuk memungkinkan integrasi DeFi, voting power governance, dan komposabilitas di protokol lain.",
+      "result": "stOHM dapat dibungkus menjadi gOHM, membuka integrasi dengan Aave, Curve, dan protokol DeFi lain.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.olympusdao.finance/gohm-launch",
+      "affectedKnowledge": [],
+      "_location": "Ethereum Mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "olympusdao-EV-006",
+      "projectSlug": "olympusdao",
+      "name": "Peluncuran Olympus Pro (Bonding-as-a-Service)",
+      "date": "2022",
+      "type": "Product",
+      "participants": [
+        "Olympus Pro",
+        "Olympus Protocol",
+        "Olympus DAO (governance DAO)"
+      ],
+      "description": "Olympus Pro diluncurkan sebagai layanan bonding bagi protokol lain untuk mengakuisisi protocol-owned liquidity melalui Olympus bonds.",
+      "result": "Protokol mitra (Frax, Lido, Tokemak, Rari) mulai menggunakan Olympus Pro untuk mengelola liquidity milik protokol.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.olympusdao.finance/olympus-pro-partners; https://docs.olympusdao.finance/main/products/olympus-pro",
+      "affectedKnowledge": [],
+      "_location": "Ethereum Mainnet; Multi-chain (EVM-compatible)",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "olympusdao-EV-007",
+      "projectSlug": "olympusdao",
+      "name": "Deployment Olympus di Arbitrum",
+      "date": "2022",
+      "type": "Integration",
+      "participants": [
+        "Olympus Protocol",
+        "OHM Token Protocol",
+        "Arbitrum",
+        "Olympus V3 Contracts"
+      ],
+      "description": "Olympus Protocol dideploy di Arbitrum (Layer 2 Ethereum) untuk scaling, biaya transaksi lebih rendah, dan ekspansi ekosistem multi-chain.",
+      "result": "OHM, stOHM, gOHM, bonding, dan staking tersedia di Arbitrum dengan biaya gas jauh lebih rendah.",
+      "source": "CIF Research Dossier",
+      "url": "https://arbiscan.io/token/0x64aa; https://docs.olympusdao.finance/main/networks",
+      "affectedKnowledge": [],
+      "_location": "Arbitrum One",
+      "_status": "Completed"
+    },
+    {
+      "id": "olympusdao-EV-008",
+      "projectSlug": "olympusdao",
+      "name": "Rilis Olympus V3",
+      "date": "2022",
+      "type": "Technology",
+      "participants": [
+        "Olympus Protocol",
+        "Olympus V3 Contracts",
+        "Olympus Pro",
+        "Olympus DAO (governance DAO)"
+      ],
+      "description": "Olympus V3 dirilis dengan arsitektur modular baru, fleksibilitas policy, integrasi native Olympus Pro, dan desain multi-chain native.",
+      "result": "Protokol mendukung deployment paralel di banyak chain, policy bonding dinamis, dan integrasi Olympus Pro yang lebih dalam.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.olympusdao.finance/olympus-v3; https://docs.olympusdao.finance/main/contracts/v3",
+      "affectedKnowledge": [],
+      "_location": "Ethereum Mainnet; Arbitrum; EVM-compatible chains",
+      "_status": "Completed"
+    },
+    {
+      "id": "olympusdao-EV-009",
+      "projectSlug": "olympusdao",
+      "name": "Pengumuman Mitra Olympus Pro: Frax, Lido, Tokemak, Rari",
+      "date": "2022",
+      "type": "Partnership",
+      "participants": [
+        "Olympus Pro",
+        "Frax Protocol",
+        "Lido Protocol",
+        "Tokemak",
+        "Rari Capital"
+      ],
+      "description": "Olympus mengumumkan kemitraan Olympus Pro dengan Frax, Lido, Tokemak, dan Rari Capital untuk bonding-as-a-service dan akuisisi protocol-owned liquidity.",
+      "result": "Empat protokol mayor mulai menggunakan Olympus bonds untuk mengelola liquidity milik protokol masing-masing.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.olympusdao.finance/olympus-pro-partners",
+      "affectedKnowledge": [],
+      "_location": "Ethereum Mainnet; Multi-chain",
+      "_status": "Completed"
+    },
+    {
+      "id": "olympusdao-EV-010",
+      "projectSlug": "olympusdao",
+      "name": "Deployment Olympus di Base",
+      "date": "2023",
+      "type": "Integration",
+      "participants": [
+        "Olympus Protocol",
+        "OHM Token Protocol",
+        "Base",
+        "Olympus V3 Contracts"
+      ],
+      "description": "Olympus Protocol dideploy di Base (Layer 2 Ethereum oleh Coinbase) memperluas jangkauan pengguna retail dan integrasi ekosistem Coinbase.",
+      "result": "OHM, stOHM, gOHM, bonding, dan staking tersedia di Base dengan akses ke basis pengguna Coinbase.",
+      "source": "CIF Research Dossier",
+      "url": "https://basescan.org/token/0x8662; https://docs.olympusdao.finance/main/networks",
+      "affectedKnowledge": [],
+      "_location": "Base Mainnet",
+      "_status": "Completed"
+    }
+  ],
+  "Ethereum": [
+    {
+      "id": "ethereum-EV-001",
+      "projectSlug": "ethereum",
+      "name": "Publikasi Whitepaper Ethereum oleh Vitalik Buterin",
+      "date": "2013-11",
+      "type": "Founding",
+      "participants": [
+        "Vitalik Buterin"
+      ],
+      "description": "Vitalik Buterin mempublikasikan whitepaper Ethereum yang mengusulkan platform blockchain turing-complete dengan bahasa scripting built-in untuk aplikasi terdesentralisasi.",
+      "result": "Dokumen visi teknis yang menarik perhatian pengembang dan investor awal; dasar rekrutmen co-founder tim founding.",
+      "source": "CIF Research Dossier",
+      "url": "https://github.com/ethereum/wiki/wiki/White-Paper",
+      "affectedKnowledge": [],
+      "_location": "Online (publikasi melalui Bitcoin Magazine dan mailing list kriptografi)",
+      "_status": "Completed"
+    },
+    {
+      "id": "ethereum-EV-002",
+      "projectSlug": "ethereum",
+      "name": "Pengumuman Proyek Ethereum di Konferensi Bitcoin Miami",
+      "date": "2014-01",
+      "type": "Founding",
+      "participants": [
+        "Vitalik Buterin, Gavin Wood, Jeffrey Wilcke, Charles Hoskinson, Anthony Di Iorio, Mihai Alisie, Amir Chetrit, Joseph Lubin"
+      ],
+      "description": "Vitalik Buterin mempresentasikan konsep Ethereum secara publik pertama kali di North American Bitcoin Conference di Miami, menarik Gavin Wood, Jeffrey Wilcke, dan lainnya bergabung.",
+      "result": "Pembentukan tim founding inti 8 orang; dimulainya pengembangan protokol dan persiapan crowdsale.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.youtube.com/watch?v=6aCbCq7YTzg",
+      "affectedKnowledge": [],
+      "_location": "Miami, Florida, AS",
+      "_status": "Completed"
+    },
+    {
+      "id": "ethereum-EV-003",
+      "projectSlug": "ethereum",
+      "name": "Pendirian Ethereum Foundation (Stiftung) di Zug, Swiss",
+      "date": "2014-06",
+      "type": "Organization",
+      "participants": [
+        "Ethereum Foundation (Stiftung), Vitalik Buterin, Gavin Wood, Jeffrey Wilcke, Joseph Lubin, Mihai Alisie"
+      ],
+      "description": "Ethereum Foundation didirikan sebagai yayasan non-profit di Zug, Swiss untuk mengelola pengembangan protokol, hibuan, dan aset hasil crowdsale.",
+      "result": "Entitas hukum resmi untuk menerima dana crowdsale, mengontrak pengembang, dan mengelola properti intelektual Ethereum.",
+      "source": "CIF Research Dossier",
+      "url": "https://ethereum.org/en/foundation/",
+      "affectedKnowledge": [],
+      "_location": "Zug, Swiss",
+      "_status": "Completed"
+    },
+    {
+      "id": "ethereum-EV-004",
+      "projectSlug": "ethereum",
+      "name": "Publikasi Yellow Paper oleh Gavin Wood",
+      "date": "2014-06",
+      "type": "Technology",
+      "participants": [
+        "Gavin Wood"
+      ],
+      "description": "Gavin Wood menerbitkan Ethereum Yellow Paper (spesifikasi teknis formal protokol Ethereum dan EVM), menjadi referensi implementasi klien pertama.",
+      "result": "Spesifikasi teknis formal yang memungkinkan pengembangan klien independen (C++, Go, Python) secara paralel.",
+      "source": "CIF Research Dossier",
+      "url": "https://ethereum.github.io/yellowpaper/paper.pdf",
+      "affectedKnowledge": [],
+      "_location": "Online (GitHub repository ethereum/yellowpaper)",
+      "_status": "Completed"
+    },
+    {
+      "id": "ethereum-EV-005",
+      "projectSlug": "ethereum",
+      "name": "Dimulainya Ether Crowdsale (Penjualan Publik)",
+      "date": "2014-07-22",
+      "type": "Funding\n\nEvent Name\n\nDimulainya Ether Crowdsale (Penjualan Publik)\n\nEvent Type\n\nFunding",
+      "participants": [
+        "Ethereum Foundation (Stiftung), Vitalik Buterin, Gavin Wood, Jeffrey Wilcke, Joseph Lubin"
+      ],
+      "description": "Ethereum Foundation meluncurkan penjualan publik ETH selama 42 hari, menerima BTC dan mengumpulkan ~31.500 BTC (~$18,3 juta saat itu) dari >9.000 peserta.",
+      "result": "60 juta ETH dialokasikan ke pembeli crowdsale; 12 juta ETH untuk dana pengembangan Foundation dan early contributors; pembiayaan awal pengembangan protokol.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.ethereum.org/2014/07/22/launching-the-ether-sale",
+      "affectedKnowledge": [],
+      "_location": "Online (website crowdsale Ethereum)",
+      "_status": "Completed"
+    },
+    {
+      "id": "ethereum-EV-006",
+      "projectSlug": "ethereum",
+      "name": "Berakhirnya Ether Crowdsale",
+      "date": "2014-09-02",
+      "type": "Funding",
+      "participants": [
+        "Ethereum Foundation (Stiftung)"
+      ],
+      "description": "Crowdsale resmi ditutup setelah 42 hari; total 31.529 BTC terkumpul (~$18,3 juta); distribusi ETH ke peserta dijadwalkan pada genesis block.",
+      "result": "Dana pengembangan terkumpul; alokasi token genesis finalisasi; persiapan testnet Olympic.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.ethereum.org/2014/09/02/ether-sale-ends-raised-31500-btc",
+      "affectedKnowledge": [],
+      "_location": "Online",
+      "_status": "Completed"
+    },
+    {
+      "id": "ethereum-EV-007",
+      "projectSlug": "ethereum",
+      "name": "Peluncuran Testnet Olympic",
+      "date": "2015-05-09",
+      "type": "Launch",
+      "participants": [
+        "Ethereum Foundation, Gavin Wood, Jeffrey Wilcke, tim klien C++/Go/Python"
+      ],
+      "description": "Testnet publik pertama \"Olympic\" diluncurkan untuk stress testing protokol, menawarkan hadiah 25.000 ETH (satu kali) dan 2.500 ETH (empat kali) untuk penemu bug kritis.",
+      "result": "Penemuan dan perbaikan bug konsensus, DoS, dan eksekusi sebelum mainnet; validasi arsitektur multi-klien.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.ethereum.org/2015/05/09/olympic-frontier-test-network",
+      "affectedKnowledge": [],
+      "_location": "Global (jaringan P2P)",
+      "_status": "Completed"
+    },
+    {
+      "id": "ethereum-EV-008",
+      "projectSlug": "ethereum",
+      "name": "Peluncuran Mainnet Ethereum (Frontier) - Genesis Block",
+      "date": "2015-07-30",
+      "type": "Launch",
+      "participants": [
+        "Ethereum Foundation, Jeffrey Wilcke (Geth), Gavin Wood (cpp-ethereum), tim klien Python"
+      ],
+      "description": "Blok genesis Ethereum (block 0) ditambangkan; mainnet Frontier resmi live dengan chain ID 1; 72 juta ETH tersebar (60 juta crowdsale + 12 juta Foundation/early).",
+      "result": "Blockchain Ethereum live; penambangan blok pertama; distribusi ETH crowdsale final; awal ekosistem dApp dan penambangan PoW.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.ethereum.org/2015/07/22/frontier-is-coming",
+      "affectedKnowledge": [],
+      "_location": "Global (jaringan P2P)",
+      "_status": "Completed"
+    },
+    {
+      "id": "ethereum-EV-009",
+      "projectSlug": "ethereum",
+      "name": "Rilis Klien Geth v1.0.0 (Stabil Pertama)",
+      "date": "2015-08-07",
+      "type": "Technology",
+      "participants": [
+        "Jeffrey Wilcke, Peter Szilagyi, tim Go-Ethereum"
+      ],
+      "description": "Tim Go-Ethereum merilis Geth v1.0.0 \"Frontier\" stabil; menjadi klien eksekusi dominan hingga saat ini.",
+      "result": "Klien Go siap produksi; fondasi dominasi market share Geth di jaringan utama.",
+      "source": "CIF Research Dossier",
+      "url": "https://github.com/ethereum/go-ethereum/releases/tag/v1.0.0",
+      "affectedKnowledge": [],
+      "_location": "GitHub (github.com/ethereum/go-ethereum)",
+      "_status": "Completed"
+    },
+    {
+      "id": "ethereum-EV-010",
+      "projectSlug": "ethereum",
+      "name": "Hard Fork Homestead (Blok 1.150.000)",
+      "date": "2016-03-14",
+      "type": "Technology",
+      "participants": [
+        "Ethereum Foundation, Vitalik Buterin, Gavin Wood, Jeffrey Wilcke, tim klien"
+      ],
+      "description": "Upgrade protokol pertama mayor: Homestead mengaktifkan EIP-2 (cek harga gas), EIP-7 (DELEGATECALL), EIP-8 (network ID), menghapus \"frontier thaw\", menandakan keluar dari fase eksperimen.",
+      "result": "Protokol distabilkan; fondasi keamanan untuk pertumbuhan ekosistem awal (DAO, token).",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.ethereum.org/2016/02/29/homestead-release",
+      "affectedKnowledge": [],
+      "_location": "Global (jaringan P2P)",
+      "_status": "Completed"
+    },
+    {
+      "id": "ethereum-EV-011",
+      "projectSlug": "ethereum",
+      "name": "Serangan The DAO (Eksploit Reentrancy)",
+      "date": "2016-06-17",
+      "type": "Security",
+      "participants": [
+        "The DAO (Slock.it), penyerang tidak diketahui, komunitas Ethereum, Ethereum Foundation"
+      ],
+      "description": "Kontrak The DAO (inekubator dana terdesentralisasi) dieksploitasi melalui kerentanan reentrancy; ~3,6 juta ETH (~$50 juta saat itu) disedot ke child DAO penyerang.",
+      "result": "Krisis kepercayaan besar; perdebatan komunitas keras tentang immutable vs intervensi; memicu hard fork kontroversial.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.coindesk.com/learn/2016/06/25/understanding-the-dao-attack/",
+      "affectedKnowledge": [],
+      "_location": "On-chain (kontrak The DAO: 0xbb9bc244d798123fde783fcc1c72d3bb8c189413)",
+      "_status": "Completed"
+    },
+    {
+      "id": "ethereum-EV-012",
+      "projectSlug": "ethereum",
+      "name": "Hard Fork DAO (Blok 1.920.000) - Pembentukan Ethereum Classic",
+      "date": "2016-07-20",
+      "type": "Technology",
+      "participants": [
+        "Ethereum Foundation, Vitalik Buterin, tim klien, penambang, komunitas, bursa"
+      ],
+      "description": "Hard fork non-standar untuk mengembalikan dana The DAO ke kontrak penarikan (withdraw contract); rantai minoritas menolak fork dan melanjutkan sebagai Ethereum Classic (ETC).",
+      "result": "~3,6 juta ETH dikembalikan ke pemegang DAO token di chain Ethereum (ETH); lahirnya Ethereum Classic (ETC) sebagai chain terpisah dengan filosofi \"code is law\".",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.ethereum.org/2016/07/20/hard-fork-completed",
+      "affectedKnowledge": [],
+      "_location": "Global (jaringan P2P)",
+      "_status": "Completed"
+    },
+    {
+      "id": "ethereum-EV-013",
+      "projectSlug": "ethereum",
+      "name": "Hard Fork Tanger Whistle (Blok 2.463.000) - Anti-DoS",
+      "date": "2016-10-18",
+      "type": "Technology",
+      "participants": [
+        "Ethereum Foundation, Vitalik Buterin, tim klien, penambang"
+      ],
+      "description": "Hard fork darurat untuk meningkatkan biaya operasi IO-heavy (EXCODECOPY, BALANCE, CALL) dan membersihkan state bloat akibat serangan DoS berulang (Shanghai attacks).",
+      "result": "Serangan DoS dihentikan; jaringan stabil kembali; biaya gas disesuaikan untuk operasi state-access.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.ethereum.org/2016/10/18/faq-upcoming-ethereum-hard-fork",
+      "affectedKnowledge": [],
+      "_location": "Global (jaringan P2P)",
+      "_status": "Completed"
+    },
+    {
+      "id": "ethereum-EV-014",
+      "projectSlug": "ethereum",
+      "name": "Hard Fork Spurious Dragon (Blok 2.675.000) - Pembersihan State",
+      "date": "2016-11-22",
+      "type": "Technology",
+      "participants": [
+        "Ethereum Foundation, Vitalik Buterin, tim klien"
+      ],
+      "description": "Hard fork kedua anti-DoS: menghapus ~20 juta akun kosong (state clearing), menambah proteksi replay attack (EIP-155), mengurangi refund SSTORE (EIP-158).",
+      "result": "Ukuran state dikurangi signifikan; perlindungan replay attack lintas chain; fondasi untuk pertumbuhan 2017.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.ethereum.org/2016/11/18/hard-fork-no-4-spurious-dragon",
+      "affectedKnowledge": [],
+      "_location": "Global (jaringan P2P)",
+      "_status": "Completed"
+    },
+    {
+      "id": "ethereum-EV-015",
+      "projectSlug": "ethereum",
+      "name": "Peluncuran Enterprise Ethereum Alliance (EEA)",
+      "date": "2017-03-14",
+      "type": "Ecosystem",
+      "participants": [
+        "Enterprise Ethereum Alliance, Microsoft, JPMorgan, Intel, BP, Consensys, dll."
+      ],
+      "description": "Enterprise Ethereum Alliance diluncurkan dengan 30 anggota pendiri (Microsoft, JPMorgan, Intel, BP, dll.) untuk standarisasi Ethereum enterprise.",
+      "result": "Validasi enterprise untuk teknologi Ethereum; percepatan adopsi permissioned/consortium berbasis Ethereum (Quorum, Besu).",
+      "source": "CIF Research Dossier",
+      "url": "https://entethalliance.org/",
+      "affectedKnowledge": [],
+      "_location": "New York, AS (pengumuman)",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "ethereum-EV-016",
+      "projectSlug": "ethereum",
+      "name": "Hard Fork Byzantium (Blok 4.370.000) - Fase Metropolis Bagian 1",
+      "date": "2017-10-16",
+      "type": "Technology",
+      "participants": [
+        "Ethereum Foundation, Vitalik Buterin, tim klien, penambang"
+      ],
+      "description": "Upgrade Metropolis bagian 1: EIP-100 (difficulty bomb delay), EIP-140/196/197/198 (precompile kriptografi), EIP-649 (pengurangan block reward 5→3 ETH, delay ice age), EIP-658 (status receipt).",
+      "result": "Fungsi kriptografi baru untuk privacy/scaling (zk-SNARKs); penurunan inflasi; penundaan difficulty bomb.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.ethereum.org/2017/10/12/byzantium-hard-fork",
+      "affectedKnowledge": [],
+      "_location": "Global (jaringan P2P)",
+      "_status": "Completed"
+    },
+    {
+      "id": "ethereum-EV-017",
+      "projectSlug": "ethereum",
+      "name": "Hard Fork Constantinople (Blok 7.280.000) - Bagian Metropolis 2",
+      "date": "2019-02-28",
+      "type": "Technology",
+      "participants": [
+        "Ethereum Foundation, Vitalik Buterin, tim klien (Geth, Parity, dll.), penambang"
+      ],
+      "description": "Constantinople (direncanakan Januari, ditunda karena bug reentrancy EIP-1283): EIP-145 (bitwise shifting), EIP-1014 (CREATE2), EIP-1052 (EXTCODEHASH), EIP-1234 (block reward 3→2 ETH, delay ice age 12 bulan).",
+      "result": "CREATE2 memungkinkan counterfactual deployment; penurunan inflasi; fondasi untuk state channels dan L2.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.ethereum.org/2019/02/22/ethereum-constantinople-hard-fork",
+      "affectedKnowledge": [],
+      "_location": "Global (jaringan P2P)",
+      "_status": "Completed"
+    },
+    {
+      "id": "ethereum-EV-018",
+      "projectSlug": "ethereum",
+      "name": "Hard Fork Istanbul (Blok 9.069.000)",
+      "date": "2019-12-07",
+      "type": "Technology",
+      "participants": [
+        "Ethereum Foundation, Vitalik Buterin, tim klien, penambang"
+      ],
+      "description": "Istanbul: EIP-152 (BLAKE2 precompile), EIP-1108 (penurunan biaya gas precompile kriptografi), EIP-1344 (CHAINID opcode), EIP-1884 (peningkatan biaya gas state access), EIP-2028 (penurunan biaya calldata), EIP-2200 (net gas metering SSTORE).",
+      "result": "Optimasi biaya untuk L2 (calldata murah); interoperabilitas Zcash/Layer 2; penyesuaian ekonomi gas.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.ethereum.org/2019/11/20/istanbul-hard-fork",
+      "affectedKnowledge": [],
+      "_location": "Global (jaringan P2P)",
+      "_status": "Completed"
+    },
+    {
+      "id": "ethereum-EV-019",
+      "projectSlug": "ethereum",
+      "name": "Pendirian Beacon Chain Deposit Contract (Mainnet)",
+      "date": "2020-01-01",
+      "type": "Technology",
+      "participants": [
+        "Ethereum Foundation, Danny Ryan, tim riset EF, tim klien konsensus"
+      ],
+      "description": "Kontrak deposit Beacon Chain (0x00000000219ab540356cBB839Cbe05303d7705Fa) dideploy di mainnet Ethereum; memungkinkan staking ETH untuk validator PoS.",
+      "result": "Dimulainya fase deposit validator untuk Beacon Chain; target 16.384 validator (524.288 ETH) untuk genesis.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.ethereum.org/2020/11/04/eth2-quick-update-no-19",
+      "affectedKnowledge": [],
+      "_location": "Mainnet Ethereum (on-chain)",
+      "_status": "Completed"
+    },
+    {
+      "id": "ethereum-EV-020",
+      "projectSlug": "ethereum",
+      "name": "Peluncuran Beacon Chain (Phase 0) - Genesis PoS",
+      "date": "2020-12-01",
+      "type": "Launch",
+      "participants": [
+        "Ethereum Foundation, Danny Ryan, Justin Drake, tim klien konsensus (Prysm, Lighthouse, Teku, Nimbus, Lodestar), validator genesis"
+      ],
+      "description": "Beacon Chain (Consensus Layer) genesis pada epoch 0 dengan 21.063 validator aktif (674.016 ETH staked); memulai bukti konsensus Proof-of-Stake berjalan paralel dengan PoW.",
+      "result": "Proof-of-Stake live; validator menghasilkan blok beacon; fondasi untuk The Merge.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.ethereum.org/2020/11/27/eth2-genesis-confirmed",
+      "affectedKnowledge": [],
+      "_location": "Global (jaringan P2P Beacon Chain)",
+      "_status": "Completed"
+    },
+    {
+      "id": "ethereum-EV-021",
+      "projectSlug": "ethereum",
+      "name": "Hard Fork Berlin (Blok 12.244.000)",
+      "date": "2021-04-15",
+      "type": "Technology",
+      "participants": [
+        "Ethereum Foundation, Tim Beiko, tim klien, penambang"
+      ],
+      "description": "Berlin: EIP-2565 (penurunan biaya gas ModExp), EIP-2929 (peningkatan biaya gas state access), EIP-2718 (typed transaction envelope), EIP-2930 (access list transactions).",
+      "result": "Persiapan untuk EIP-1559 (London); tipe transaksi baru; optimisasi biaya kriptografi.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.ethereum.org/2021/03/08/ethereum-berlin-upgrade-announcement",
+      "affectedKnowledge": [],
+      "_location": "Global (jaringan P2P)",
+      "_status": "Completed"
+    },
+    {
+      "id": "ethereum-EV-022",
+      "projectSlug": "ethereum",
+      "name": "Hard Fork London (Blok 12.965.000) - EIP-1559",
+      "date": "2021-08-05",
+      "type": "Technology",
+      "participants": [
+        "Ethereum Foundation, Tim Beiko, Vitalik Buterin, tim klien, penambang"
+      ],
+      "description": "London: EIP-1559 (mekanisme fee market base fee + tip, burning base fee), EIP-3198 (BASEFEE opcode), EIP-3529 (pengurangan gas refund), EIP-3541 (rejected 0xEF prefix), EIP-3554 (delay difficulty bomb ke Des 2021).",
+      "result": "Fee market prediktif; mekanisme deflasioner (burn ETH); pengalaman UX transaksi diperbaiki; >3,5 juta ETH terbakar sejak peluncuran.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.ethereum.org/2021/07/15/london-mainnet-announcement",
+      "affectedKnowledge": [],
+      "_location": "Global (jaringan P2P)",
+      "_status": "Completed"
+    },
+    {
+      "id": "ethereum-EV-023",
+      "projectSlug": "ethereum",
+      "name": "Upgrade Altair (Beacon Chain) - Epoch 74.240",
+      "date": "2021-10-27",
+      "type": "Technology",
+      "participants": [
+        "Ethereum Foundation, Danny Ryan, tim klien konsensus, validator"
+      ],
+      "description": "Upgrade pertama Beacon Chain: penyesuaian parameter inactivity leak, peningkatan reward sinkronisasi komite, penambahan dukungan light client (sync committees), persiapan untuk Merge.",
+      "result": "Keamanan konsensus ditingkatkan; fondasi light client trust-minimized; persiapan transisi PoW→PoS.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.ethereum.org/2021/10/20/altair-announcement",
+      "affectedKnowledge": [],
+      "_location": "Beacon Chain (Consensus Layer)",
+      "_status": "Completed"
+    },
+    {
+      "id": "ethereum-EV-024",
+      "projectSlug": "ethereum",
+      "name": "Peluncuran Testnet Kiln (Merge Shadow Fork)",
+      "date": "2022-03-15",
+      "type": "Launch",
+      "participants": [
+        "Ethereum Foundation, Tim Beiko, tim klien eksekusi & konsensus"
+      ],
+      "description": "Testnet Kiln diluncurkan sebagai \"Merge devnet\" publik terakhir sebelum mainnet; mensimulasikan transisi PoW→PoS penuh dengan Total Terminal Difficulty (TTD) konfigurasi.",
+      "result": "Validasi end-to-end Merge; interop testing klien; finalisasi spesifikasi Bellatrix/Paris.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.ethereum.org/2022/03/15/kiln-merge-testnet",
+      "affectedKnowledge": [],
+      "_location": "Testnet Kiln (chain ID 1337802)",
+      "_status": "Completed"
+    },
+    {
+      "id": "ethereum-EV-025",
+      "projectSlug": "ethereum",
+      "name": "Upgrade Bellatrix (Beacon Chain) - Epoch 144.896",
+      "date": "2022-09-06",
+      "type": "Technology",
+      "participants": [
+        "Ethereum Foundation, Danny Ryan, tim klien konsensus, validator"
+      ],
+      "description": "Upgrade konsensus (Bellatrix) mempersiapkan Merge: fork choice rule beralih ke PoS, validasi ExecutionPayload, penonaktifkan PoW pada consensus layer.",
+      "result": "Consensus layer siap untuk Merge; validator memvalidasi execution payload; TTD trigger dikonfigurasi.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.ethereum.org/2022/08/24/bellatrix-announcement",
+      "affectedKnowledge": [],
+      "_location": "Beacon Chain (Consensus Layer)",
+      "_status": "Completed"
+    },
+    {
+      "id": "ethereum-EV-026",
+      "projectSlug": "ethereum",
+      "name": "The Merge (Paris) - Transisi Proof-of-Work ke Proof-of-Stake",
+      "date": "2022-09-15",
+      "type": "Technology",
+      "participants": [
+        "Ethereum Foundation, Tim Beiko, Danny Ryan, Vitalik Buterin, tim klien eksekusi & konsensus, seluruh jaringan validator, penambang, komunitas"
+      ],
+      "description": "Execution layer (Paris) dipicu oleh Total Terminal Difficulty (TTD 58750000000000000000000) pada blok 15.537.393; Ethereum beralih sepenuhnya ke Proof-of-Stake; penghentian penambangan PoW; pengurangan emisi ETH ~90% (~0,5%/tahun inflasi netto).",
+      "result": "Konsensus PoS final; emisi ETH drastis turun; keamanan ekonomi berbasis staking; fondasi untuk sharding/withdrawals.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.ethereum.org/2022/09/15/the-merge-is-done",
+      "affectedKnowledge": [],
+      "_location": "Global (Mainnet Ethereum)",
+      "_status": "Completed"
+    },
+    {
+      "id": "ethereum-EV-027",
+      "projectSlug": "ethereum",
+      "name": "Upgrade Shanghai/Capella (Blok 17.034.870 / Epoch 194.048) - Penarikan Staking",
+      "date": "2023-04-12",
+      "type": "Technology",
+      "participants": [
+        "Ethereum Foundation, Tim Beiko, Danny Ryan, tim klien, validator"
+      ],
+      "description": "Shanghai (execution) + Capella (consensus): EIP-3675 (withdrawal credentials 0x01), EIP-3855 (PUSH0), EIP-3860 (limit initcode), EIP-4895 (system-level withdrawal), EIP-6049 (deprecate SELFDESTRUCT). Memungkinkan penarikan ETH staked (partial & full).",
+      "result": ">18 juta ETH dapat ditarik; likuiditas staking terwujud; munculnya Liquid Staking Tokens (stETH, rETH) dominan.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.ethereum.org/2023/03/28/shanghai-announcement",
+      "affectedKnowledge": [],
+      "_location": "Mainnet Ethereum (Execution + Consensus Layer)",
+      "_status": "Completed"
+    },
+    {
+      "id": "ethereum-EV-028",
+      "projectSlug": "ethereum",
+      "name": "Upgrade Dencun (Cancun/Deneb) - Blok 19.426.587 / Epoch 269.568 - Proto-Danksharding",
+      "date": "2024-03-13",
+      "type": "Technology",
+      "participants": [
+        "Ethereum Foundation, Tim Beiko, Vitalik Buterin, Dankrad Feist, Justin Drake, tim klien, operator L2 (Arbitrum, Optimism, Base, zkSync, dll.)"
+      ],
+      "description": "Dencun: EIP-4844 (blob transactions / proto-danksharding), EIP-1153 (transient storage), EIP-4788 (beacon block root di EVM), EIP-5656 (MCOPY), EIP-6780 (SELFDESTRUCT only same tx). Blob space mengurangi biaya L2 >90%.",
+      "result": "Biaya transaksi L2 turun drastis; throughput data ~1-2 MB/slot; fondasi untuk full Danksharding (Danksharding roadmap).",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.ethereum.org/2024/03/13/dencun-announcement",
+      "affectedKnowledge": [],
+      "_location": "Mainnet Ethereum (Execution + Consensus Layer)",
+      "_status": "Completed"
+    },
+    {
+      "id": "ethereum-EV-029",
+      "projectSlug": "ethereum",
+      "name": "Rilis Spesifikasi Pectra (Prague/Electra) - Devnet Testing",
+      "date": "2024-05",
+      "type": "Technology",
+      "participants": [
+        "Ethereum Foundation, Tim Beiko, Danny Ryan, tim klien, validator, peneliti EF"
+      ],
+      "description": "Spesifikasi upgrade Pectra (Prague execution + Electra consensus) difinalisasi untuk devnet: EIP-7251 (max effective balance 2048 ETH), EIP-7002 (execution layer triggerable exit), EIP-7549 (komite sinkronisasi per slot), EIP-7685 (execution layer requests), EIP-2537 (precompile BLS12-381), EIP-2935 (history log).",
+      "result": "Persiapan upgrade besar berikutnya (target mainnet 2025); konsolidasi validator, efisiensi konsensus, account abstraction native (EIP-7702 dipisah).",
+      "source": "CIF Research Dossier",
+      "url": "https://github.com/ethereum/consensus-specs/tree/dev/specs/pectra",
+      "affectedKnowledge": [],
+      "_location": "Devnet (Pectra-devnet-0, 1, 2...), spesifikasi GitHub consensus-specs/execution-specs",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "ethereum-EV-030",
+      "projectSlug": "ethereum",
+      "name": "Pembentukan Consensys sebagai Venture Studio Ethereum",
+      "date": "2017-06-12",
+      "type": "Organization",
+      "participants": [
+        "Joseph Lubin, Consensys"
+      ],
+      "description": "Joseph Lubin mendirikan Consensys secara formal; menjadi venture studio utama membangun infrastruktur (MetaMask, Infura, Truffle, Besu, Linea) dan mendukung ekosistem.",
+      "result": "Pembangunan tooling pengembang standar industri; MetaMask >30 juta pengguna; Infura backbone RPC; Besu klien enterprise.",
+      "source": "CIF Research Dossier",
+      "url": "https://consensys.net/about/",
+      "affectedKnowledge": [],
+      "_location": "Brooklyn, New York, AS (kantor awal)",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "ethereum-EV-031",
+      "projectSlug": "ethereum",
+      "name": "Peluncuran Infura (Layanan RPC Ethereum)",
+      "date": "2016-08",
+      "type": "Infrastructure",
+      "participants": [
+        "Infura, Consensys, Michael Wuechner, EGAL"
+      ],
+      "description": "Infura diluncurkan (awalnya oleh ETHLabs, kemudian diakuisisi Consensys); menyediakan akses API node Ethereum terkelola; menjadi backbone infrastruktur untuk dApp, wallet, L2.",
+      "result": "Mengurangi barrier menjalankan node; >90% traffic dApp melewati Infura pada puncak; risiko sentralisasi infrastruktur.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.infura.io/",
+      "affectedKnowledge": [],
+      "_location": "Global (cloud infrastructure)",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "ethereum-EV-032",
+      "projectSlug": "ethereum",
+      "name": "Peluncuran Alchemy (Platform Pengembang Ethereum)",
+      "date": "2020-08",
+      "type": "Infrastructure",
+      "participants": [
+        "Alchemy, Nikil Viswanathan, Joe Lau"
+      ],
+      "description": "Alchemy meluncurkan platform pengembang dengan Enhanced APIs, NFT API, Notify; kompetitor utama Infura; adopsi cepat oleh OpenSea, Dapper Labs, Adobe.",
+      "result": "Diversifikasi penyedia RPC; fitur developer experience unggulan; valuasi >$10M (2022).",
+      "source": "CIF Research Dossier",
+      "url": "https://www.alchemy.com/",
+      "affectedKnowledge": [],
+      "_location": "San Francisco, AS",
+      "_status": "Ongoing"
+    }
   ]
 }

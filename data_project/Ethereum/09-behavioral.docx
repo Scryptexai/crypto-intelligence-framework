@@ -1,0 +1,387 @@
+PROJECT: Ethereum
+
+Strategic Objectives
+
+1. Menjadi settlement layer terdesentralisasi dan neutral untuk ekonomi global terprogram
+
+· Evidence: Whitepaper 2013 mengusulkan "platform blockchain turing-complete" untuk aplikasi terdesentralisasi (Phase 3 EV-001); Roadmap resmi mengutamakan "credible neutrality" dan "minimal extraction" (Ethereum.org Roadmap, https://ethereum.org/en/roadmap/); Vitalik Buterin secara konsisten menegaskan peran Ethereum sebagai "world computer" dan settlement layer (Vitalik Blog, https://vitalik.eth.limo/)
+· Supporting Dataset: Phase 1 Foundation, Phase 3 EV-001, Phase 4 Architecture
+
+2. Mencapai skalabilitas melalui arsitektur modular rollup-centric tanpa mengorbankan desentralisasi L1
+
+· Evidence: Vitalik "Rollup-Centric Roadmap" 2020 (https://vitalik.eth.limo/general/2020/10/17/rollup.html); Dencun upgrade (EV-028) mengaktifkan EIP-4844 blob space untuk L2; L2Beat melacak 50+ L2 yang settle ke Ethereum (Phase 7 Major Integrations); EF research fokus pada Danksharding, PeerDAS, statelessness (Phase 4 Known Limitations)
+· Supporting Dataset: Phase 3 EV-028, EV-029, Phase 4 Roadmap, Phase 7 L2 Integrations
+
+3. Mempertahankan keamanan ekonomi melalui Proof-of-Stake dengan validator set yang besar dan tersebar
+
+· Evidence: Beacon Chain genesis 2020 (EV-020) dengan 21.063 validator; sekarang >1.050.000 validator (33.6M ETH staked) (Phase 8 Adoption Metrics); Slashing conditions, inactivity leak, correlation penalty dirancang untuk accountable safety (Phase 4 Consensus Mechanism); EF grants untuk DVT (Obol, SSV) dan client diversity (Phase 5 Financial Dependencies)
+· Supporting Dataset: Phase 3 EV-020, EV-026, Phase 4 Consensus, Phase 8 Staking Metrics
+
+4. Membangun ekosistem pengembang terbesar dan paling berkelanjutan melalui open-source, grants, dan tooling standar
+
+· Evidence: Electric Capital 2024: 6.200+ full-time dev (#1 crypto) (Phase 8 Adoption); EF ESP >$100M grants (Phase 5 Funding); Hardhat, Foundry, OpenZeppelin, Solmate, Slither, Echidna sebagai tooling standar (Phase 7 Developer Ecosystem); Protocol Guild funding kontributor protokol inti (Phase 7 Grant Programs)
+· Supporting Dataset: Phase 5 Grants, Phase 7 Developer Ecosystem, Phase 8 Developer Count
+
+5. Mengelola transisi ke post-quantum, stateless, dan single-slot finality tanpa memecah kompatibilitas mundur
+
+· Evidence: Roadmap "The Verge" (Verkle trees, statelessness), "The Splurge" (account abstraction EOF, EIP-7702), "Quantum Resistance" research (Phase 4 Known Limitations, Open Threads); Pectra devnet testing EIP-7251, EIP-7002, EIP-7702, EIP-2537 (EV-029); EOF spec finalized tapi activation pending (Phase 4 Technical Upgrade History)
+· Supporting Dataset: Phase 3 EV-029, Phase 4 Upgrade History, Known Limitations, Open Threads
+
+Decision Timeline
+
+Keputusan: Publikasi Whitepaper Ethereum dan rekrutmen founding team (2013-11)
+· Trigger: Vitalik Buterin mengusulkan platform turing-complete setelah kekurangan Bitcoin scripting
+· Evidence: Whitepaper dipublikasikan via Bitcoin Magazine; 8 co-founder bergabung setelah presentasi Miami Jan 2014 (Phase 3 EV-001, EV-002)
+· Decision: Menulis whitepaper, merekrut Gavin Wood (Yellow Paper), Jeffrey Wilcke (Geth), dan 5 co-founder lain untuk pendanaan/operasional
+· Immediate Result: Tim founding 8 orang terbentuk; spesifikasi teknis (Yellow Paper EV-004) dan persiapan crowdsale dimulai
+· Long-term Impact: Arsitektur EVM, multi-client development, dan model pendanaan publik menjadi fondasi seluruh ekosistem
+· Supporting Dataset: Phase 3 EV-001, EV-002, EV-004, Phase 2 Entities (Buterin, Wood, Wilcke, Hoskinson, Di Iorio, Alisie, Chetrit, Lubin)
+
+Keputusan: Crowdsale publik ETH 42 hari tanpa VC/private sale (2014-07-22 s.d. 2014-09-02)
+· Trigger: Butuh dana pengembangan; pilihan desain untuk distribusi fair dan hindari security law risk
+· Evidence: 31.529 BTC terkumpul (~$18.3M); 60M ETH ke publik, 12M EH ke Foundation/early contributors (Phase 3 EV-005, EV-006; Phase 5 Token Sale)
+· Decision: Penjualan terbuka harga 2000 ETH/BTC decay ke 1337 ETH/BTC; tanpa whitelist, tanpa lockup investor
+· Immediate Result: Dana pengembangan terkumpul; distribusi genesis 72M ETH wide; tidak ada investor tradisional dengan hak preferensial
+· Long-term Impact: Distribusi token paling merata di antara L1 besar; EF treasury menjadi dana utama protokol; tidak ada tekanan unlock VC
+· Supporting Dataset: Phase 3 EV-005, EV-006, Phase 5 Funding History, Token Sale, Phase 6 Distribution
+
+Keputusan: Hard fork DAO untuk mengembalikan dana tercurig (2016-07-20)
+· Trigger: The DAO exploit 3.6M ETH (EV-011); komunitas terpecah antara "code is law" vs intervensi sosial
+· Evidence: Fork non-standar di blok 1.920.000; chain minoritas jadi Ethereum Classic (ETC) (Phase 3 EV-012)
+· Decision: EF dan mayoritas client teams menerapkan irregular state change via hard fork
+· Immediate Result: ~3.6M ETH dikembalikan ke withdrawal contract; lahirnya ETC sebagai chain terpisah
+· Long-term Impact: Preseden governance off-chain social consensus; memvalidasi model EIP process + client adoption signaling; membedakan Ethereum dari "immutable at all costs"
+· Supporting Dataset: Phase 3 EV-011, EV-012, Phase 4 Governance Model, Phase 6 Governance
+
+Keputusan: Transisi ke Proof-of-Stake via Beacon Chain parallel lalu Merge (2020-12-01 genesis, 2022-09-15 Merge)
+· Trigger: Rencana sejak whitepaper; butuh desain aman untuk migrasi dari PoW tanpa downtime
+· Evidence: Beacon Chain Phase 0 live 2020 (EV-020); Merge via TTD trigger di blok 15.537.393 (EV-026); emisi turun ~90%
+· Decision: Arsitektur dual-layer (execution + consensus) terpisah dengan Engine API; validator deposit contract di mainnet; parallel run 1.5 tahun
+· Immediate Result: PoS finalized; penambangan PoW berhenti; validator economics live; withdrawal enabled Shanghai 2023 (EV-027)
+· Long-term Impact: Energy reduction >99%; deflationary mechanics via EIP-1559 burn + low issuance; staking yield as native DeFi primitive; institutional confidence (ETF approval 2024)
+· Supporting Dataset: Phase 3 EV-019, EV-020, EV-025, EV-026, EV-027, Phase 4 Consensus, Phase 6 Inflation/Deflation
+
+Keputusan: Rollup-centric scaling roadmap dengan EIP-4844 proto-danksharding (2024-03-13 Dencun)
+· Trigger: L1 throughput ~15 TPS tidak cukup; L2 (Arbitrum, Optimism) sudah live tapi biaya data calldata tinggi
+· Evidence: Vitalik 2020 blog "Rollup-Centric Roadmap"; Dencun aktivasi blob transactions (EV-028); L2 fees turun >90%; blob utilization ~8-17% (Phase 8 Adoption)
+· Decision: Menambah blob gas market terpisah dari execution gas; KZG trusted setup ceremony 2023; 6 blob per slot target
+· Immediate Result: L2 batch posting jauh lebih murah; Base, Arbitrum, Optimism throughput naik; data availability scaling dimulai
+· Long-term Impact: Fondasi full Danksharding (PeerDAS, 16MB+/slot); modular data availability layer; L2 sebagai execution layer dominan
+· Supporting Dataset: Phase 3 EV-028, Phase 4 Architecture, Phase 7 L2 Integrations, Phase 8 Narrative Position
+
+Keputusan: Account abstraction native via EIP-7702 (Pectra) bersamaan ERC-4337 smart contract wallet
+· Trigger: ERC-4337 live 2023 tapi butuh EntryPoint contract, bundler, paymaker — kompleksitas tinggi untuk EOA migration
+· Evidence: EIP-7702 spec finalized di Pectra devnet (EV-029); AUTH/AUTHCALL opcode memungkinkan EOA delegate code sementara
+· Decision: Dual path — ERC-4337 untuk smart contract wallet existing, EIP-7702 untuk upgrade EOA tanpa migrasi kontrak
+· Immediate Result: Wallet (MetaMask, Coinbase, Safe) bisa implementasi AA native tanpa user deploy kontrak baru
+· Long-term Impact: Menghilangkan perbedaan UX antara EOA dan smart account; gas sponsorship, session keys, social recovery jadi native
+· Supporting Dataset: Phase 3 EV-029, Phase 4 Execution Environment, Phase 7 Wallet Ecosystem
+
+Keputusan: Spot ETH ETF approval US SEC dan trading (2024-05-23 approval, 2024-07-23 launch)
+· Trigger: Tahun ber lobbying, litigasi Grayscale vs SEC untuk Bitcoin ETF preseden; Ethereum PoS + futures market matang
+· Evidence: SEC approve 19b-4 untuk 9 issuer (BlackRock, Fidelity, Grayscale, Bitwise, VanEck, Ark, Invesco, Franklin, 21Shares); $1B+ day 1 volume (Phase 8 Market Timeline)
+· Decision: EF dan industri tidak langsung mengontrol tapi menyediakan data transparansi (ultrasound.money, beaconcha.in); Coinbase Prime jadi custodian utama
+· Immediate Result: Akses institusional regulasi ke ETH; AUM ETF tumbuh; staking yield tidak termasuk di ETF awal (hanya spot)
+· Long-term Impact: Legitimasi aset kelas komoditas; aliran dana pensiun/endowment; tekanan regulasi staking-as-service (SEC vs Lido/Coinbase)
+· Supporting Dataset: Phase 8 Market Timeline, Phase 5 Financial Risk, Phase 7 Infrastructure Providers
+
+Evolution Pattern
+
+Perubahan Strategi: Dari "World Computer" monolitik ke "Settlement Layer" modular untuk L2
+· Evidence: Whitepaper 2013 mengusulkan aplikasi langsung di L1 (Phase 3 EV-001); 2020 Vitalik mengusulkan rollup-centric roadmap (https://vitalik.eth.limo/general/2020/10/17/rollup.html); Dencun 2024 mengaktifkan blob DA khusus L2 (EV-028); roadmap "The Surge" fokus scaling via L2 bukan L1 gas limit increase
+· Supporting Dataset: Phase 1 Foundation, Phase 3 EV-001, EV-028, Phase 4 Architecture, Phase 8 Narrative
+
+Perubahan Teknologi: Dari single client (Geth dominan) ke multi-client architecture dengan Engine API standardization
+· Evidence: Frontier 2015 hanya Geth + cpp-ethereum + Python client (EV-008, EV-009); Post-Merge arsitektur memisahkan execution (Geth, Besu, Nethermind, Erigon) dan consensus (Prysm, Lighthouse, Teku, Nimbus, Lodestar) via Engine API (Phase 4 Core Components); Client diversity dashboard tracking market share (https://clientdiversity.org/)
+· Supporting Dataset: Phase 3 EV-008, EV-009, EV-026, Phase 4 Core Components, Phase 8 Adoption
+
+Perubahan Tokenomics: Dari inflationary PoW (5→3→2 ETH/block) ke deflationary PoS dengan burn mechanism
+· Evidence: PoW block reward berkurang via Byzantium (5→3), Constantinople (3→2) (EV-016, EV-017); EIP-1559 London burn base fee (EV-022); Merge menghentikan PoW issuance ~5.4M ETH/thn (EV-026); net issuance sekarang ~0.5-0.8%/thn minus burn (Phase 6 Inflation/Deflation; Ultrasound.money)
+· Supporting Dataset: Phase 3 EV-016, EV-017, EV-022, EV-026, Phase 6 Inflation/Deflation, Phase 8 Market
+
+Perubahan Governance: Dari informal founder-led ke structured EIP process + All Core Devs calls + client signaling
+· Evidence: Awal 2014-2015 keputusan oleh Vitalik/Gavin/Jeffrey (EV-001-009); EIP process formalisasi EIP-1 (https://eips.ethereum.org/EIPS/eip-1); All Core Devs calls rutin sejak 2016 (https://github.com/ethereum/pm); DAO fork menunjukkan social consensus (EV-012); tidak ada on-chain token voting
+· Supporting Dataset: Phase 3 EV-012, Phase 4 Governance, Phase 6 Governance, Phase 8 Market
+
+Perubahan Ekosistem: Dari aplikasi langsung di L1 ke L2 sebagai execution layer utama, L1 sebagai settlement/DA
+· Evidence: 2017-2020 DeFi/NFT langsung di mainnet (Uniswap v2 2020, OpenSea 2020); 2021 L2 Arbitrum/Optimism mainnet; 2024 Dencun blob space untuk L2 (EV-028); L2Beat: L2 TVL $42.8B vs L1 $55.2B (Phase 8 Adoption); L2 transaksi harian 12-15M vs L1 1-1.3M
+· Supporting Dataset: Phase 3 EV-028, Phase 7 Major Integrations, Phase 8 Adoption Metrics
+
+Technical Decision Pattern
+
+Pola 1: Modular architecture dengan pemisahan execution dan consensus layer
+· Decision Pattern: Memisahkan eksekusi transaksi (EVM, state) dari konsensus (PoS, validator) via Engine API standar
+· Evidence: Beacon Chain dirancang terpisah dari execution layer sejak Phase 0 spec (https://github.com/ethereum/consensus-specs); Engine API (engine_forkchoiceUpdated, engine_newPayload) jadi kontrak antar klien (Phase 4 System Architecture); memungkinkan 4 execution client + 5 consensus client interoperable
+· Supporting Dataset: Phase 3 EV-019, EV-020, EV-025, EV-026, Phase 4 Core Components, System Architecture
+
+Pola 2: Upgrade bertahap dengan testnet ekstensif (devnet → testnet → shadow fork → mainnet)
+· Decision Pattern: Setiap upgrade mayor melalui rangkaian testnet: devnet (internal) → public testnet (Sepolia/Holesky) → shadow fork (mainnet state) → mainnet
+· Evidence: Merge: Kiln testnet (EV-024) → shadow forks → Bellatrix (EV-025) → Paris (EV-026); Dencun: devnet → Sepolia → Holesky → mainnet (EV-028); Pectra: devnet-0,1,2 testing (EV-029); Kurtosis digunakan untuk multi-container integration testing (Phase 4 Dev Tools)
+· Supporting Dataset: Phase 3 EV-024, EV-025, EV-026, EV-028, EV-029, Phase 4 Dev Tools, Technical Upgrade History
+
+Pola 3: Backward compatibility ketat — tidak ada breaking change tanpa migration path
+· Decision Pattern: EVM opcode changes via EIP dengan deprecation period (SELFDESTRUCT EIP-6049, EIP-6780); CREATE2 (EV-017) tambahan bukan pengganti CREATE; EOF (EIP-3540) versioned bytecode container untuk validasi tanpa breaking existing bytecode
+· Evidence: Constantinople menunda EIP-1283 karena reentrancy risk; Shanghai menambahkan PUSH0 (EIP-3855) baru; Dencun menambahkan MCOPY (EIP-5656), transient storage (EIP-1153) — semua additive; EOF activation pending Pectra tapi legacy bytecode tetap didukung
+· Supporting Dataset: Phase 3 EV-017, EV-027, EV-028, EV-029, Phase 4 Execution Environment, Technical Upgrade History
+
+Pola 4: Client diversity sebagai keamanan protokol — target tidak ada client >1/3 market share
+· Decision Pattern: Mendukung 4+ execution client dan 5+ consensus client production-ready; EF grants ke tim client independen (Nethermind, Erigon, Prysmatic, Sigma Prime, ChainSafe, Lodestar)
+· Evidence: Client diversity dashboard (https://clientdiversity.org/); Geth market share turun dari >80% ke ~50%; Prysm consensus share turun dari >60% ke ~35%; EF blog "Client Diversity" 2022 (https://blog.ethereum.org/2022/03/08/client-diversity); Protocol Guild funding kontributor client (Phase 7 Grant Programs)
+· Supporting Dataset: Phase 3 EV-008, EV-009, Phase 4 Core Components, Security Model, Phase 7 Grants, Phase 8 Adoption
+
+Pola 5: Cryptographic trusted setup ceremonial untuk fitur kritis (KZG untuk EIP-4844)
+· Decision Pattern: Melakukan trusted setup ceremony terbuka ribuan partisipan untuk Structured Reference String (SRS) KZG commitments
+· Evidence: KZG Ceremony 2023 (https://ceremony.ethereum.org/); >140.000 kontributor; multi-party computation (MPC) dengan entropy dari browser; hasil diverifikasi on-chain via contract 0x... (EIP-4844 spec); ceremony transcript publik
+· Supporting Dataset: Phase 3 EV-028, Phase 4 Consensus, Phase 7 External Dependencies (KZG Trusted Setup)
+
+Financial Decision Pattern
+
+Pola 1: Single public sale (crowdsale 2014) tanpa VC round — treasury EF sebagai dana utama protokol
+· Decision Pattern: 60M ETH ke publik, 12M ETH ke Foundation/early contributors; tidak ada Series A/B/C, tidak ada token allocation untuk investor institusional
+· Evidence: Crowdsale 31.529 BTC (EV-005, EV-006); Phase 5 Funding History hanya menunjukkan crowdsale + grants; EF annual report 2023 aset ~$1.6M (Swiss foundation filing) tapi holding on-chain tidak diungkap; tidak ada unlock schedule investor
+· Supporting Dataset: Phase 3 EV-005, EV-006, Phase 5 Funding History, Treasury, Phase 6 Token Sale, Distribution
+
+Pola 2: Grant-based funding untuk pengembangan protokol dan ekosistem (ESP, Academic Grants, Next Billion)
+· Decision Pattern: EF mendistribusikan dana dari treasury ke pengembang, peneliti, komunitas via program hibah berkelanjutan
+· Evidence: ESP >$100M kumulatif (Phase 5 Funding History); Academic Grants untuk kriptografi/formal verification (https://esp.ethereum.foundation/academic-grants/); Next Billion Fellowship untuk Global South (https://esp.ethereum.foundation/next-billion/); Protocol Guild weight-based allocation dari donor ekosistem (Lido, Uniswap, Optimism, Arbitrum)
+· Supporting Dataset: Phase 5 Funding History, Financial Dependencies, Phase 7 Grant Programs
+
+Pola 3: Protocol revenue (burn, issuance, MEV) mengalir ke validator/staker, bukan ke treasury EF
+· Decision Pattern: EIP-1559 base fee burn (EV-022); PoS issuance ke validator (EV-020); priority tips + MEV-Boost ke proposer; blob fees burn (EV-028) — semua on-chain, transparent, tidak melalui EF
+· Evidence: Ultrasound.money tracking burn >4.3M ETH; beaconcha.in validator rewards; MEV-Boost >90% blocks (https://mevboost.pics/); EF tidak menerima protocol revenue (Phase 5 Revenue Model)
+· Supporting Dataset: Phase 3 EV-020, EV-022, EV-026, EV-028, Phase 5 Revenue Model, Phase 6 Inflation/Deflation
+
+Pola 4: Corporate contributors (Consensys, Nethermind, Prysmatic, Sigma Prime, ChainSafe, Erigon) self-funded via VC/revenue, tidak bergantung EF grants penuh
+· Decision Pattern: Client teams membangun bisnis di atas protokol (Infura, Alchemy, Besu enterprise, Teku enterprise, audit services) untuk mendanai pengembangan client
+· Evidence: Consensys valuation >$7B (2022), Infura/Alchemy revenue RPC; Nethermind/Prysmatic/Sigma Prime/ChainSafe VC-backed; Erigon/Thorax commercial support; EF grants hanya sebagian (Phase 5 Financial Dependencies; Phase 2 Entities)
+· Supporting Dataset: Phase 2 Entities (Consensys, Nethermind, Prysmatic Labs, Sigma Prime, ChainSafe, Thorax), Phase 5 Financial Dependencies, Phase 7 Infrastructure Providers
+
+Pola 5: Staking capital (33.6M+ ETH) sebagai security budget protokol — tidak dari treasury tapi dari validator eksternal
+· Decision Pattern: Minimum 32 ETH per validator; liquid staking (Lido, Coinbase, Rocket Pool) memungkinkan participation <32 ETH; DVT (Obol, SSV) untuk distributed validation
+· Evidence: Beaconcha.in: 1.05M+ validator, 33.6M ETH staked (Phase 8 Adoption); Lido stETH >25% staked ETH (Phase 7 Major Integrations); Rated Network operator metrics (https://www.rated.network/); EF tidak menjalankan validator massal
+· Supporting Dataset: Phase 3 EV-019, EV-020, EV-027, Phase 4 Consensus, Phase 7 Lido Integration, Phase 8 Staking Metrics
+
+Ecosystem Decision Pattern
+
+Pola 1: L2 sebagai execution layer utama — Ethereum L1 menyediakan settlement + data availability (blob)
+· Decision Pattern: Mendukung dan mengintegrasikan L2 (Arbitrum, Optimism, Base, Linea, Scroll, zkSync, Starknet, Mantle, Blast) via EIP-4844 blob space, canonical bridges, shared security
+· Evidence: Dencun upgrade (EV-028) mengaktifkan blob gas market untuk L2; L2Beat tracking 50+ L2; L2 TVL $42.8B combined (Phase 8 Adoption); Vitalik rollup-centric roadmap 2020; canonical bridge contracts untuk deposit/withdrawal
+· Supporting Dataset: Phase 3 EV-028, Phase 7 Major Integrations (10+ L2), Phase 8 Adoption Metrics, Narrative Position
+
+Pola 2: Infrastructure provider redundancy — minimal 2 major RPC providers (Infura, Alchemy) + QuickNode, Chainstack, dll.
+· Decision Pattern: Tidak bergantung single RPC provider; EF tidak menjalankan RPC publik; komunitas mendorong client diversity di infra layer juga
+· Evidence: Infura (Consensys) dan Alchemy sebagai dua provider dominan (Phase 7 Infrastructure Providers); QuickNode, Chainstack, Blockdaemon, Figment, Kiln, P2P.org, Allnodes, StakeFish sebagai alternatif; Cloud providers (AWS, GCP, Azure) managed nodes; RPC diversity dashboard komunitas
+· Supporting Dataset: Phase 2 Entities (Infura, Alchemy), Phase 7 Infrastructure Providers, Phase 4 Known Limitations (Client Diversity Risk)
+
+Pola 3: Standardisasi tooling via open-source community-driven (Hardhat, Foundry, OpenZeppelin, Slither, Echidna)
+· Decision Pattern: EF tidak membangun tooling resmi; mendanai via grants; komunitas mengadopsi standar de facto
+· Evidence: Hardhat (NomicFoundation) dan Foundry (Paradigm) sebagai dua framework dominan (Phase 7 Developer Ecosystem); OpenZeppelin Contracts library standar ERC; Slither/Echidna (Trail of Bits) untuk security; EF grants ke tooling projects (ESP)
+· Supporting Dataset: Phase 5 Grants, Phase 7 Developer Ecosystem (SDK, Tools), Phase 8 Developer Count
+
+Pola 4: Wallet ecosystem pluralism — mendukung EOA, smart contract wallet (Safe, Argent), AA (ERC-4337, EIP-7702), hardware (Ledger, Trezor)
+· Decision Pattern: Tidak memaksa single wallet standard; protokol menyediakan primitives (account abstraction opcodes, entry point) dan biarkan pasar tentukan UX
+· Evidence: MetaMask >30M users (EOA + Snaps); Rainbow, Coinbase Wallet, Rabby, Frame sebagai alternatif; Safe multi-sig standar DAO/treasury; ERC-4337 live 2023; EIP-7702 Pectra untuk native EOA delegation (Phase 7 Wallet Ecosystem; Phase 4 Execution Environment)
+· Supporting Dataset: Phase 3 EV-029, Phase 4 Execution Environment, Phase 7 Wallet Ecosystem
+
+Pola 5: Bridge ke ekosistem non-EVM via canonical bridges dan interop protocols (CCIP, LayerZero, Wormhole, Hyperlane)
+· Decision Pattern: Ethereum sebagai hub settlement; bridge ke Solana, Cosmos, Polkadot, Bitcoin via third-party protocols; tidak membangun native cross-chain consensus
+· Evidence: Chainlink CCIP, LayerZero, Wormhole, Hyperlane terdeploy di Ethereum + L2; Polygon zkEVM, Starknet, zkSync memiliki bridge canonical; Bitcoin-Ethereum bridge (tBTC, WBTC) via custodian/threshold sig (Phase 7 Major Integrations, External Dependencies)
+· Supporting Dataset: Phase 2 Entities (Chainlink), Phase 7 Major Integrations (L2 bridges), External Dependencies (Oracle Providers)
+
+Governance Decision Pattern
+
+Pola 1: Off-chain social consensus via EIP process + All Core Devs calls + client adoption signaling
+· Decision Pattern: Tidak ada on-chain token voting; keputusan upgrade melalui rough consensus pada EIP discussions, core dev calls, dan client team implementation choice
+· Evidence: EIP process (https://eips.ethereum.org/EIPS/eip-1); All Core Devs calls rutin (https://github.com/ethereum/pm); DAO fork (EV-012) menunjukkan social consensus > code immutability; client teams men Signaling support via version upgrade; Vitalik "Governance" blog 2017 (https://vitalik.eth.limo/general/2017/12/17/voting.html)
+· Supporting Dataset: Phase 3 EV-012, Phase 4 Governance, Phase 6 Governance, Phase 8 Market
+
+Pola 2: Ethereum Foundation sebagai steward bukan ruler — mengelola treasury, grants, trademark, tapi tidak mengontrol protocol upgrade
+· Decision Pattern: EF menyediakan funding, koordinasi, legal entity; keputusan teknis di tangan client teams dan komunitas via EIP
+· Evidence: EF annual report 2023 (https://ethereum.foundation/annual-report-2023/); EF blog "Client Diversity" 2022 mengakui tidak bisa memaksa client; Tim Beiko (Protocol Support Lead) mengkoordinasi bukan memutuskan (Phase 2 Entity); Swiss foundation legal structure
+· Supporting Dataset: Phase 2 Entity (EF, Tim Beiko), Phase 5 Treasury, Phase 6 Governance, Phase 3 EV-024, EV-025, EV-026 coordination
+
+Pola 3: Credible neutrality sebagai prinsip governance — tidak memihak aplikasi, tidak menyensor transaksi di protokol level
+· Decision Pattern: Protokol tidak memiliki blacklist, tidak bisa menghentikan kontrak tertentu; sensur hanya di builder/relay layer (MEV-Boost) via OFAC compliance freiwillig
+· Evidence: OFAC Tornado Cash sanctions 2022 (EV-034) — protokol tidak fork untuk censor; ~20-30% builder censored tapi transaksi tetap bisa masuk via non-censoring builder; PBS/MEV-Boost design memisahkan proposer (validator) dari builder; inclusion lists (EIP-7547) proposal untuk censorship resistance
+· Supporting Dataset: Phase 3 EV-034, Phase 4 Security Model (PBS, MEV-Boost), Phase 7 Flashbots Integration, Phase 8 Narrative
+
+Pola 4: Multi-stakeholder governance untuk infra kritis — client teams, validator, staker, app developer, user semua punya suara informal
+· Decision Pattern: Upgrade activation memerlukan supermajority client implementation (>2/3 client teams) + validator adoption (>2/3 stake) + app compatibility
+· Evidence: Merge activation butuh semua 4 execution client + 5 consensus client release + validator upgrade (EV-025, EV-026); Shanghai withdrawal butuh client support EIP-4895 (EV-027); Dencun butuh blob support di semua client (EV-028); tidak ada single entity bisa memaksa upgrade
+· Supporting Dataset: Phase 3 EV-025, EV-026, EV-027, EV-028, Phase 4 Core Components, Security Model
+
+Pola 5: Research-driven governance — EF research team (Justin Drake, Dankrad Feist, Danny Ryan) memproduksi spec, lalu komunitas review via ethresear.ch, EIPs, Magicians
+· Decision Pattern: Riset kriptografi/konsensus (sharding, PBS, verkle trees, quantum resistance) dipublikasikan sebagai spec draft → community review → EIP → client implementation
+· Evidence: ethresear.ch forum (https://ethresear.ch/); EF research repo (https://github.com/ethereum/research); Danksharding spec (Dankrad Feist); PBS spec (Flashbots + EF); Single-slot finality research (Justin Drake); semua transparan sebelum implementasi
+· Supporting Dataset: Phase 2 Entities (Drake, Feist, Ryan), Phase 3 EV-029, Phase 4 Known Limitations, Open Threads, Phase 8 Narrative
+
+Risk Response Pattern
+
+Pola 1: Emergency hard fork untuk kritikal DoS/state bloat (Tangerine Whistle, Spurious Dragon 2016)
+· Decision Pattern: Serangan DoS berulang (Shanghai attacks) → emergency hard fork dalam minggu untuk naikkan gas cost operasi IO-heavy + clear state bloat
+· Evidence: EV-013 (Tangerine Whistle blok 2.463.000) naikkan gas EXCODECOPY, BALANCE, CALL; EV-014 (Spurious Dragon blok 2.675.000) hapus ~20M akun kosong, EIP-155 replay protection; dua fork dalam 1 bulan
+· Trigger: Serangan DoS memanfaatkan underpriced opcode menyebabkan node crash dan state bloat
+· Response: Gas cost adjustment via EIP-150 (Tangerine), state clearing + replay protection (Spurious Dragon); client teams release patch dalam hari
+· Result: Jaringan stabil kembali; fondasi gas cost model untuk operasi state-access; tidak ada kerugian dana user
+· Supporting Dataset: Phase 3 EV-013, EV-014, Phase 4 Technical Upgrade History
+
+Pola 2: Social consensus intervention untuk recovery dana besar (DAO Fork 2016)
+· Decision Pattern: Eksploit kontrak besar (The DAO 3.6M ETH) → komunitas debate → hard fork irregular state change untuk recovery
+· Evidence: EV-011 exploit; EV-012 DAO fork blok 1.920.000; chain split menciptakan ETC; keputusan via carbonvote (coin vote) + client team signaling + miner signaling + exchange support
+· Trigger: The DAO reentrancy exploit mencuri 3.6M ETH (~15% supply saat itu); ancaman kepercayaan sistem
+· Response: Hard fork non-standar memindahkan ETH ke withdrawal contract; minority chain lanjut sebagai ETC
+· Result: Dana dikembalikan; preseden governance off-chain; ETC tetap eksis sebagai chain "code is law"; EF dan komunitas belajar menghindari intervensi serupa (tidak ada fork recovery lagi sejak 2016)
+· Supporting Dataset: Phase 3 EV-011, EV-012, Phase 6 Governance, Phase 8 Market
+
+Pola 3: Proactive upgrade untuk mitigasi risiko sistemik (EIP-1559 fee market, Merge PoS, Withdrawals)
+· Decision Pattern: Mengidentifikasi risiko jangka panjang (fee unpredictability, PoW energy, staking illiquidity) → research bertahun-tahun → upgrade terencana
+· Evidence: EIP-1559 research 2018-2021 → London EV-022; PoS research 2014-2020 → Beacon Chain EV-020 → Merge EV-026; Withdrawals research 2020-2023 → Shanghai EV-027; semua upgrade terencana bertahun-tahun dengan testnet ekstensif
+· Trigger: Fee market UX buruk (first-price auction); PoW energy criticism; staked ETH illiquid 2+ tahun
+· Response: Base fee burn mechanism; Proof-of-Stake Gasper consensus; withdrawal credentials 0x01 + systematic exit queue
+· Result: Fee predictability improved; energy >99% reduction; staking liquid; institutional confidence (ETF approval)
+· Supporting Dataset: Phase 3 EV-020, EV-022, EV-026, EV-027, Phase 4 Consensus, Phase 8 Market Timeline
+
+Pola 4: MEV mitigation via transparency dan PBS — tidak eliminasi tapi strukturisasi
+· Decision Pattern: MEV unavoidable → build MEV-Boost (Flashbots) untuk transparent auction → proposer-builder separation (PBS) in-protocol → inclusion lists untuk censorship resistance
+· Evidence: Flashbots formed 2020 (EV-033); MEV-Boost live >90% blocks (https://mevboost.pics/); PBS roadmap (https://ethereum.org/en/roadmap/pbs/); EIP-7547 inclusion lists proposal; OFAC censorship ~20-30% blocks via builder compliance
+· Trigger: MEV extraction merugikan user (front-running, sandwich); centralisasi builder/relay risk
+· Response: MEV-Boost open-source relay/builder network; PBS in-protocol design; inclusion lists (EIP-7547) untuk memaksa proposer include transaksi censored
+· Result: MEV revenue transparan ke validator; searcher/builder competition; censorship resistance work in progress
+· Supporting Dataset: Phase 3 EV-033, Phase 4 Consensus (PBS), Phase 7 Flashbots, Phase 8 Narrative (Restaking)
+
+Pola 5: Regulatory engagement tanpa kompromi protokol — transparency, compliance di layer aplikasi/infra
+· Decision Pattern: Regulator (SEC, OFAC, MiCA) menargetkan aplikasi/validator/infra → protokol tetap neutral; EF engage via legal counsel, transparency reports; infrastructure provider (Coinbase, Infura) handle compliance
+· Evidence: OFAC Tornado Cash (EV-034) — protokol tidak fork; SEC ETH security investigation 2023-2024 → spot ETF approved 2024 (Market Timeline); MiCA EU → EF/Compliance; validator compliance via MEV-Boost builder policy (voluntary)
+· Trigger: Regulatory actions terhadap aplikasi (Tornado), staking services (Coinbase Wells notice), token classification
+· Response: EF legal engagement; transparent on-chain data (ultrasound.money, beaconcha.in); infrastructure provider KYC/AML; tidak ada protocol-level censorship atau blacklist
+· Result: Spot ETF approval menandakan commodity classification; protokol tetap credibly neutral; compliance di layer atas
+· Supporting Dataset: Phase 3 EV-034, Phase 5 Financial Risk, Phase 8 Market Timeline (ETF), Narrative Position
+
+Recurring Behavioral Pattern
+
+Pola 1: Selalu mengadopsi multi-client architecture untuk critical infrastructure
+· Decision Pattern: Setiap layer kritis (execution, consensus, networking, cryptography) memiliki multiple independent implementations
+· Evidence: 4 execution client (Geth, Besu, Nethermind, Erigon); 5 consensus client (Prysm, Lighthouse, Teku, Nimbus, Lodestar); 2 networking stack (devp2p, libp2p); multiple cryptography lib (blst, arkworks, noble); EF grants ke semua tim client (Phase 4 Core Components; Phase 5 Grants; Phase 7 Grants)
+· Supporting Dataset: Phase 2 Entities (Client teams), Phase 4 Core Components, Security Model, Phase 5 Financial Dependencies, Phase 7 Grant Programs
+
+Pola 2: Selalu melakukan ceremony/transparent setup untuk cryptographic trusted setup
+· Decision Pattern: KZG ceremony untuk EIP-4844 (EV-028) dengan >140k partisipan; sebelumnya tidak ada trusted setup di Ethereum (PoW tidak butuh); ke depan quantum-resistant setup akan butuh ceremony serupa
+· Evidence: KZG Ceremony 2023 (https://ceremony.ethereum.org/); MPC dengan entropy browser; transcript publik; verification on-chain; tidak ada single party bisa reconstruct toxic waste
+· Supporting Dataset: Phase 3 EV-028, Phase 4 Consensus, Phase 7 External Dependencies (KZG Trusted Setup)
+
+Pola 3: Selalu menunda upgrade hingga client diversity siap — tidak memaksa activation tanpa supermajority client ready
+· Decision Pattern: Merge menunggu 4 execution + 5 consensus client release (EV-025, EV-026); Dencun menunggu blob support di semua client (EV-028); Pectra devnet testing berulang (EV-029)
+· Evidence: Tim Beiko koordinasi client release timeline (Phase 2 Entity); All Core Devs calls tracking client readiness; tidak ada "flag day" activation tanpa client support
+· Supporting Dataset: Phase 3 EV-025, EV-026, EV-028, EV-029, Phase 2 Entity (Tim Beiko), Phase 4 Core Components
+
+Pola 4: Selalu mengintegrasikan L2 sebagai scaling solution bukan kompetitor — L2 settle ke L1, bayar blob fees, gunakan security Ethereum
+· Decision Pattern: Arbitrum, Optimism, Base, Linea, Scroll, zkSync, Starknet, Mantle, Blast semuanya settle ke Ethereum L1 via canonical bridge; Dencun blob space dirancang untuk L2 (EV-028); EF grants ke L2 research (Arbitrum Nitro, OP Stack, zkEVM)
+· Evidence: L2Beat tracking 50+ L2; L2 TVL $42.8B (Phase 8 Adoption); Vitalik rollup-centric roadmap; canonical bridge contracts; shared security model
+· Supporting Dataset: Phase 3 EV-028, Phase 7 Major Integrations (10 L2), Phase 8 Adoption Metrics, Narrative Position
+
+Pola 5: Selalu mempertahankan backward compatibility — tidak ada breaking change tanpa migration path multi-tahun
+· Decision Pattern: SELFDESTRUCT deprecation EIP-6049 (Shanghai EV-027) tapi EIP-6780 (Dencun EV-028) hanya allow same-tx; EOF activation pending bertahun-tahun; CREATE2 additive; precompile tambahan tidak menghapus lama
+· Evidence: Technical Upgrade History menunjukkan semua upgrade additive; deprecation warnings bertahun-tahun sebelum enforcement; legacy bytecode support tetap di EOF spec
+· Supporting Dataset: Phase 3 EV-016, EV-017, EV-027, EV-028, EV-029, Phase 4 Execution Environment, Technical Upgrade History
+
+Strategic Trade-offs
+
+Trade-off 1: Desentralisasi validator vs Efisiensi konsensus (Single-slot finality vs 2-epoch finality)
+· Decision: Mempertahankan 2-epoch finality (~12.8 menit) via Casper FFG Gasper alih-alih single-slot finality (Orbit SSF)
+· Trade-off: Keamanan accountable safety dan liveness plausibility diprioritaskan di atas latency finality; single-slot finality butuh committee size besar atau signature aggregation kompleks (BLS threshold)
+· Evidence: Consensus specs finality gadget (Phase 4 Consensus); Justin Drake research single-slot finality (ethresear.ch); trade-off terdokumentasi di roadmap "The Verge" dan "The Splurge"; validator set 1M+ membuat single-slot finality bandwidth challenge
+· Supporting Dataset: Phase 3 EV-020, EV-026, Phase 4 Consensus Mechanism, Known Limitations, Phase 8 Open Threads
+
+Trade-off 2: L1 throughput vs L1 node requirements (Statelessness vs State Growth)
+· Decision: Tidak naikkan gas limit L1 signifikan (30M target); scaling via L2 blob data (EIP-4844); statelessness (Verkle trees) research tapi belum implementasi
+· Trade-off: Menjaga full node bisa dijalankan hardware commodity (4-8TB SSD, 32GB RAM) untuk desentralisasi; state growth ~200GB+ archive; history expiry (EIP-4444) belum live; L2 absorb execution throughput
+· Evidence: Phase 4 Known Limitations (State Growth, Gas Limit Constraints); EIP-4444 spec draft; Verkle trees research (Vitalik, Dankrad); Dencun blob space untuk L2 (EV-028); client diversity butuh hardware accessible
+· Supporting Dataset: Phase 3 EV-028, Phase 4 Known Limitations, Phase 8 Adoption Metrics (L2 tx volume)
+
+Trade-off 3: MEV transparency vs Censorship resistance (PBS/MEV-Boost vs Inclusion Lists)
+· Decision: Mengizinkan MEV-Boost (>90% blocks) untuk transparansi MEV revenue ke validator; inclusion lists (EIP-7547) proposal untuk memaksa proposer include transaksi tapi belum live
+· Trade-off: Builder centralization (beaverbuild, rsync, Titan) dan OFAC compliance ~20-30% blocks censored; proposer (validator) tidak bisa filter builder tanpa inclusion lists; MEV revenue ke validator menciptakan incentive alignment tapi juga centralization pressure
+· Evidence: Phase 4 Consensus (PBS, MEV-Boost); Phase 7 Flashbots Integration; Phase 8 Known Limitations (MEV/Censorship); mevboost.pics builder market share; EIP-7547 spec draft
+· Supporting Dataset: Phase 3 EV-033, Phase 4 Security Model, Phase 7 Flashbots, Phase 8 Known Limitations
+
+Trade-off 4: Liquid staking convenience vs Validator decentralization (Lido stETH >25% vs solo staking)
+· Decision: Tidak membatasi LST market share di protokol; DVT (Obol, SSV) dan solo staking grants sebagai mitigasi
+· Trade-off: Lido stETH ~28% staked ETH menciptakan operator concentration (Node Operators ~30 entitas); solo staking barrier 32 ETH + hardware + uptime; DVT adoption lambat; protocol tidak punya mechanism enforce diversity
+· Evidence: Phase 7 Lido Integration (stETH >25%); Phase 8 Adoption (LST Market Share); Rated Network operator metrics; Phase 4 Security Model (Validator Centralization); Phase 5 Financial Dependencies (Staking Capital)
+· Supporting Dataset: Phase 3 EV-027, Phase 4 Known Limitations, Phase 7 Lido, Phase 8 Adoption Metrics
+
+Trade-off 5: Research-driven roadmap timeline vs Market pressure untuk delivery (Danksharding, Verkle, Quantum Resistance)
+· Decision: Roadmap phases (Merge, Surge, Verge, Purge, Splurge) multi-tahun; market menuntut scaling sekarang (L2 live), quantum resistance research early
+· Trade-off: Full Danksharding (PeerDAS, 16MB+/slot) target tidak pasti; Verkle trees/statelessness research mature tapi client implementation belum mulai; Quantum resistance BLS12-381 vulnerable tapi migration path belum ada EIP; L2 sudah capture value execution
+· Evidence: Phase 4 Known Limitations (State Growth, Quantum Vulnerability, History Expiry); Phase 8 Open Threads (PeerDAS, Single-slot finality, Quantum, Verkle); Phase 3 EV-029 (Pectra devnet); Vitalik roadmap blog posts
+· Supporting Dataset: Phase 3 EV-028, EV-029, Phase 4 Known Limitations, Open Threads, Phase 8 Open Threads
+
+Behavioral Summary
+
+Prioritas utama proyek:
+1. Credible neutrality dan desentralisasi protokol (tidak memihak aplikasi, tidak sensor di base layer)
+2. Skalabilitas via modular architecture (L2 execution + L1 settlement/DA) tanpa mengorbankan node accessibility
+3. Keamanan ekonomi via Proof-of-Stake dengan validator set besar dan tersebar
+4. Ekosistem pengembang terbuka dan berkelanjutan (tooling, grants, standards)
+5. Evolusi protokol research-driven dengan backward compatibility ketat
+
+Cara mengambil keputusan:
+- Off-chain social consensus: EIP process → All Core Devs calls → Client team implementation → Validator signaling → Activation
+- Research-first: EF research team produksi spec → Community review (ethresear.ch, Magicians) → EIP → Testnet → Mainnet
+- Multi-stakeholder coordination: Tim Beiko (Protocol Support Lead) fasilitasi timeline client teams; tidak ada single decision maker
+- Emergency response: Critical bug/exploit → Client teams patch dalam hari → Emergency hard fork jika perlu (2016 DoS, DAO)
+
+Faktor paling memengaruhi keputusan:
+1. Technical security dan correctness (formal verification, fuzzing, audit programs)
+2. Client diversity readiness (tidak upgrade tanpa supermajority client ready)
+3. Backward compatibility (tidak breaking existing contracts/users)
+4. Credible neutrality principle (tidak sensor, tidak memihak)
+5. Research maturity (spec finalized, tested, audited sebelum activation)
+
+Pola evolusi:
+- 2014-2015: Founding, crowdsale, Frontier launch, multi-client awal
+- 2016: DAO crisis → governance precedent, DoS hardening
+- 2017-2019: Metropolis upgrades, EVM precompiles, CREATE2, DeFi/NFT emergence
+- 2020-2022: Beacon Chain → Merge (PoS transition), EIP-1559 fee market
+- 2023-2024: Shanghai withdrawals, Dencun proto-danksharding, L2 dominance
+- 2025+: Pectra (account abstraction, validator consolidation), Verge (verkle/stateless), Surge continued (PeerDAS)
+
+Kekuatan utama:
+- Distribusi token paling merata di L1 besar (no VC unlock overhang)
+- Developer ecosystem terbesar dan paling matang (6200+ full-time)
+- Multi-client architecture production-proven (9+ client production)
+- L2 ecosystem terbesar dengan shared security ($42.8B TVL)
+- Institutional legitimacy (Spot ETF, CME derivatives, TradFi custody)
+- Credible neutrality track record (no protocol censorship despite pressure)
+- Transparent on-chain economics (burn, issuance, MEV visible)
+
+Kelemahan utama:
+- L1 throughput terbatas (~15 TPS) bergantung L2 untuk scaling
+- Finality latency 12.8 menit tidak cocok real-time apps
+- State growth unbounded — history expiry, statelessness belum delivered
+- Client diversity risk: Geth ~50% execution, Prysm/Lighthouse/Teku consensus concentration
+- Validator centralization via LST (Lido >25%) tanpa protocol enforcement
+- MEV/builder censorship ~20-30% blocks, inclusion lists belum live
+- Quantum vulnerability BLS12-381 tanpa migration timeline
+- EF treasury transparency rendah (no real-time dashboard)
+- Solo staking barrier tinggi (32 ETH, technical complexity)
+- Governance informal — slow untuk kontroversi besar, no binding mechanism
+
+Open Threads
+
+- EF treasury holding ETH pasti (jumlah, proporsi staked vs liquid, yield revenue) — tidak dipublikasikan real-time; hanya Swiss annual report ringkas; perlu verifikasi on-chain independen
+- Alokasi 12M ETH genesis "Foundation/early contributors" per penerima — tidak pernah transparan; apakah ada vesting internal? (Phase 6 Distribution Open Threads)
+- Client diversity enforcement mechanism — social coordination saja; apakah butuh protokol-level incentive/penalty? (Phase 4 Known Limitations, Phase 8 Open Threads)
+- Single-slot finality (Orbit SSF) vs 2-epoch finality trade-off finalisasi — research aktif Justin Drake tapi belum ada consensus timeline (Phase 4 Known Limitations, Phase 8 Open Threads)
+- Quantum resistance migration path untuk BLS12-381 validator signatures — STARK-based vs lattice-based; tidak ada EIP konkrit; timeline tidak pasti (Phase 4 Known Limitations, Phase 8 Open Threads)
+- PeerDAS / full Danksharding timeline vs L2 value capture — L2 sudah live dan capture execution value; full Danksharding target tidak pasti (Phase 4 Known Limitations, Phase 8 Open Threads)
+- EIP-7702 (Pectra) vs ERC-4337 coexistence impact wallet ecosystem — dual path AA; migration path dan tooling support belum jelas (Phase 3 EV-029, Phase 4 Execution Environment, Phase 7 Wallet Ecosystem)
+- Protocol Guild funding sustainability — donor-dependent (Lido, Uniswap, Optimism, Arbitrum, Base); tidak ada protokol-level mechanism (Phase 7 Grant Programs, Phase 8 Open Threads)
+- Regulatory endgame: SEC staking-as-service enforcement vs Lido/Coinbase; MiCA EU compliance; OFAC builder censorship — perkembangan berkelanjutan (Phase 5 Financial Risk, Phase 8 Market Timeline)
+- Restaking (EigenLayer) TVL methodology double-count risk vs Lido TVL — DefiLlama menghindari double-count tapi metodologi perlu verifikasi (Phase 7 EigenLayer, Phase 8 Open Threads)
+- Account Abstraction adoption metrics resmi — UserOperation count, bundler count, paymaster usage, smart account deployments — tidak ada dashboard terpusat (Phase 4 Execution Environment, Phase 7 Wallet Ecosystem, Phase 8 Open Threads)
+- Based sequencing / preconfirmations adoption by L2 sequencers — research phase, market impact belum terealisasi (Phase 8 Open Threads)
+- Cross-domain MEV (L1-L2, cross-L2) measurement — Flashbots SUAVE research tapi tidak ada production metrics (Phase 8 Open Threads)
+- Validator economics post-Pectra (EIP-7251 max effective balance 2048 ETH) — konsolidasi validator besar, impact pada DVT dan solo staking (Phase 3 EV-029, Phase 8 Open Threads)
+- History expiry (EIP-4444) dan Portal Network implementation timeline — client teams belum mulai production implementation (Phase 4 Known Limitations, Phase 7 External Dependencies)
+- Gas limit governance: validator-set dynamic (EIP-7861 proposal) vs hard-coded — dynamic adjustment mechanism diperdebatkan (Phase 4 Known Limitations, Phase 8 Open Threads)

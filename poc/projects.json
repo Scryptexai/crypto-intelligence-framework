@@ -120,7 +120,8 @@
     "cat": "",
     "era": "",
     "tags": [
-      "governance"
+      "governance",
+      "mining"
     ]
   },
   {
@@ -142,6 +143,16 @@
     "tags": [
       "stablecoin",
       "synthetic"
+    ]
+  },
+  {
+    "n": "Ethereum",
+    "tier": "Deep",
+    "file": "examples/CaseStudies/Ethereum.md",
+    "cat": "",
+    "era": "",
+    "tags": [
+      "l1"
     ]
   },
   {
@@ -275,5 +286,15 @@
     "cat": "",
     "era": "",
     "tags": []
+  },
+  {
+    "n": "OlympusDAO",
+    "tier": "Deep",
+    "file": "examples/CaseStudies/OlympusDAO.md",
+    "cat": "",
+    "era": "",
+    "tags": [
+      "governance"
+    ]
   }
 ]

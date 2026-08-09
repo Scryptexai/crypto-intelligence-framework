@@ -1,272 +1,387 @@
 PROJECT: Grass
 
-1. Membangun lapisan data terdesentralisasi skala internet untuk pelatihan AI
-· Evidence: Grass memposisikan diri sebagai "Data Layer for AI" dengan Sovereign Data Rollup untuk menyediakan data terstruktur dari web scraping massal 【Phase 1 Category; Phase 3 EV-011; Phase 4 Architecture; Phase 7 External Dependencies IPFS/Arweave/RISC Zero】.
-· Supporting Dataset: Phase 1, Phase 3 EV-011, Phase 4 System Architecture, Phase 7 External Dependencies
+Strategic Objectives
 
-2. Monetisasi bandwidth residential melalui jaringan node terinsentif token (DePIN)
-· Evidence: Model Proof of Bandwidth, sistem Epoch poin, konversi poin ke token GRASS, 2.5M+ node terdaftar 【Phase 1 Category DePIN; Phase 3 EV-003, EV-004, EV-006, EV-007, EV-008; Phase 8 Adoption Metrics】.
-· Supporting Dataset: Phase 1, Phase 3 EV-003/004/006/007/008, Phase 8 Adoption Metrics
+1. Membangun jaringan bandwidth terdesentralisasi skala global untuk pengumpulan data web (web scraping) yang dapat dijual ke laboratorium AI dan enterprise
+· Evidence: Visi protokol Grass sebagai "Data Layer for AI" dan DePIN bandwidth yang memonetisasi bandwidth idle pengguna melalui token incentive (Grass Blog, https://blog.grass.ai/sovereign-data-rollup/); [Grass Docs, https://docs.grass.ai/architecture/data-sales]
+· Supporting Dataset: Phase 1 Foundation, Phase 3 EV-001 (Founding), EV-003 (Beta Launch), EV-004 (Public Testnet), EV-006 (Mainnet), EV-011 (Rollup Announcement)
 
-3. Mencapai desentralisasi progresif: dari Coordinator terpusat ke Rollup sovran terverifikasi ZK/TEE
-· Evidence: Roadmap teknis eksplisit: Coordinator terpusat (saat ini) → Sovereign Data Rollup dengan ZK Prover/TEE 【Phase 3 EV-011; Phase 4 Architecture Coordinator, Rollup, Known Limitations #1; Phase 8 Narrative Modular Rollup】.
-· Supporting Dataset: Phase 3 EV-011, Phase 4 Architecture & Known Limitations, Phase 8 Narrative Position
+2. Menciptakan lapisan penyelesaian data sovran (Sovereign Data Rollup) di atas Solana untuk verifikasi provenance data AI tanpa kepercayaan pada coordinator terpusat
+· Evidence: Pengumuman Sovereign Data Rollup Sep 2024 dengan arsitektur custom execution, ZK/TEE verification, settlement ke Solana (Grass Blog, https://blog.grass.ai/sovereign-data-rollup/); [Grass Docs, https://docs.grass.ai/architecture/rollup]
+· Supporting Dataset: Phase 3 EV-011, Phase 4 Technology (Architecture, Core Components, Execution Environment)
 
-4. Membangun ekosistem DeFi dan utility token GRASS di Solana secepat pasca-TGE
-· Evidence: Staking live hari TGE, integrasi DEX (Raydium, Orca), lending (Kamino), perp (Drift), aggregator (Jupiter) dalam minggu 【Phase 3 EV-013, EV-014; Phase 7 Major Integrations; Phase 8 Trading Markets】.
-· Supporting Dataset: Phase 3 EV-013/014, Phase 7 Major Integrations, Phase 8 Trading Markets
+3. Mendistribusikan kepemilikan dan governance protokol ke komunitas melalui Grass Foundation dan token GRASS, memisahkan pengembangan inti (Wynd Labs) dari pengelolaan ekosistem
+· Evidence: Pembentukan Grass Foundation Sep 2024 sebagai entitas nirlaba BVI/Cayman, multi-sig treasury, alokasi token untuk ecosystem/community/foundation (Grass Blog, https://blog.grass.ai/introducing-grass-foundation/); [Grass Docs Tokenomics, https://docs.grass.ai/tokenomics]
+· Supporting Dataset: Phase 2 Entity (Grass Foundation, Wynd Labs), Phase 3 EV-010, Phase 6 Token (Governance, Distribution)
 
-5. Mengamankan likuiditas pasar global melalui listing multi-CEX simultan dan market maker tier-1
-· Evidence: TGE 28 Okt 2024 listing bersamaan di Binance, Bybit, Coinbase, Gate.io, KuCoin, OKX; Wintermute & GSR sebagai market maker 【Phase 3 EV-012; Phase 5 Financial Dependencies; Phase 7 Exchange Ecosystem; Phase 8 Trading Markets】.
-· Supporting Dataset: Phase 3 EV-012, Phase 5 Financial Dependencies, Phase 7 Exchange Ecosystem, Phase 8 Trading Markets
+4. Menjangkau adopsi massal melalui multi-platform node client (Desktop, Browser Extension, Mobile, Lite Node WASM) dengan barrier to entry minimal
+· Evidence: Peluncuran bertahap 4 jenis klien node: Desktop (2023), Extension (2023), Mobile iOS/Android (Jun 2024), Lite Node WASM (Jul 2024) — masing-masing menurunkan friksi instalasi (Grass Blog, https://blog.grass.ai/grass-mobile-launch/); [Grass Blog, https://blog.grass.ai/grass-lite-node/]; [Grass Docs, https://docs.grass.ai/getting-started/]
+· Supporting Dataset: Phase 3 EV-007, EV-008, Phase 4 Core Components, Phase 7 Applications
 
-6. Membangun fondasi governance terpisah (Grass Foundation) untuk treasury dan ekosistem jangka panjang
-· Evidence: Grass Foundation dibentuk 19 Sept 2024 (pre-TGE), multi-sig treasury (Squads/Safe), alokasi token ecosystem/foundation termaktub tokenomics 【Phase 3 EV-010; Phase 2 Entity Grass Foundation; Phase 5 Treasury; Phase 6 Token Governance】.
-· Supporting Dataset: Phase 3 EV-010, Phase 2 Entity Grass Foundation, Phase 5 Treasury, Phase 6 Token Governance
+5. Membangun ekosistem DeFi dan utility token GRASS on-chain Solana (staking, lending, perp, swap) untuk menciptakan permintaan token jangka panjang di luar spekulasi
+· Evidence: Aktivasi staking native TGE Oct 2024, integrasi Raydium/Orca/Kamino/Drift/Jupiter Nov 2024, listing 6 major CEX + 2 major DEX + perpetuals (Grass Blog, https://blog.grass.ai/grass-staking-live/); [Grass Blog, https://blog.grass.ai/defi-integrations/]
+· Supporting Dataset: Phase 3 EV-013, EV-014, Phase 6 Token (Utility, Staking), Phase 7 Major Integrations, Phase 8 Trading Markets
 
-7. Menarik pengembang dan aplikasi AI data melalui program insentif ekosistem dan hackathon
-· Evidence: Ecosystem Incentives Program Nov 2024, kemitraan Superteam & Colosseum, SDK TypeScript/Rust, API publik 【Phase 3 EV-015; Phase 7 Developer Ecosystem; Phase 8 Narrative】.
-· Supporting Dataset: Phase 3 EV-015, Phase 7 Developer Ecosystem, Phase 8 Narrative Position
+Decision Timeline
 
----
+Keputusan: Pendirian Wynd Labs dan pengembangan protokol Grass (2021)
+· Trigger: Peluang pasar bandwidth idle residensial dan kebutuhan data skala besar untuk pelatihan AI yang tidak terlayani oleh proxy terpusat
+· Evidence: Founding story di Grass Blog dan LinkedIn founder; Wynd Labs incorporated 2021 (Grass Blog, https://blog.grass.ai/introducing-grass-foundation/); [LinkedIn Andrej Radonjic, https://www.linkedin.com/in/andrej-radonjic/]
+· Decision: Mendirikan Wynd Labs sebagai core developer entity, merekrut Chris Nguyen sebagai CTO, memulai R&D arsitektur DePIN bandwidth
+· Immediate Result: Terbentuknya tim inti dan konsep awal Proof of Bandwidth
+· Long-term Impact: Menjadi entitas pengembang inti yang mengontrol roadmap teknis hingga transisi ke Foundation
+· Supporting Dataset: Phase 1 Foundation, Phase 2 Entity (Wynd Labs, Andrej Radonjic, Chris Nguyen), Phase 3 EV-001
 
-Keputusan: Meluncurkan Private Beta hanya undangan (2023-03)
-· Trigger: Perlu validasi arsitektur Proof of Bandwidth dan sistem poin internal sebelum membuka ke publik
-· Evidence: Grass Blog beta launch announcement; Discord early access program
-· Decision: Membatasi akses ke pengguna undangan untuk menguji ekstensi browser dan desktop app dalam lingkungan terkontrol
-· Immediate Result: Validasi teknis arsitektur node dan sistem reward poin; basis pengguna awal terbentuk
-· Long-term Impact: Fondasi sistem Epoch dan metrik partisipasi yang digunakan hingga mainnet
-· Supporting Dataset: Phase 3 EV-003
+Keputusan: Seed Funding $3.5M dari Polychain, Hack VC, Delphi Ventures (2023-07)
+· Trigger: Butuh dana untuk scaling tim, infrastruktur cloud, dan peluncuran testnet publik setelah validasi beta privat
+· Evidence: The Block melaporkan seed round $3.5M led by Polychain/Hack VC/Delphi (The Block, https://www.theblock.co/post/250000/grass-raises-seed-funding); [Messari, https://messari.io/project/grass/profile]
+· Decision: Menerima investasi equity + SAFT dari VCrypto-native tier-1, alokasi token untuk investor
+· Immediate Result: Dana tersedia untuk rekrutmen senior, infrastruktur Kubernetes/RPC, peluncuran Epoch 1 publik
+· Long-term Impact: Struktur tokenomics investor termaktub (vesting cliff/stream), tekanan unlock di masa depan
+· Supporting Dataset: Phase 3 EV-002, Phase 5 Funding History, Phase 6 Token (Distribution, Vesting)
 
-Keputusan: Memperkenalkan sistem Epoch publik untuk distribusi poin (2023-06)
-· Trigger: Butuh metrik kuantitatif (uptime, bandwidth) untuk alokasi token masa depan dan insentif early adopters
-· Evidence: Grass Blog epoch-1-launch; Dashboard epoch system
-· Decision: Membuka testnet publik dengan sistem Epoch berjenjang (mingguan/bulanan) berbasis kontribusi bandwidth terverifikasi
-· Immediate Result: Pertumbuhan jaringan node signifikan; etablisasi leaderboard komunitas
-· Long-term Impact: Mekanisme airdrop TGE (Epoch 1-7 snapshot) dan budaya "farming" poin yang mendorong retensi node
-· Supporting Dataset: Phase 3 EV-004
+Keputusan: Peluncuran Public Testnet dengan sistem Epoch berbasis poin (2023-06)
+· Trigger: Validasi beta privat berhasil, butuh stress-test jaringan skala besar dan mekanisme insentif yang transparent sebelum mainnet
+· Evidence: Grass Blog mengumumkan Epoch 1 launch Juni 2023, sistem poin berbasis uptime/bandwidth terverifikasi (Grass Blog, https://blog.grass.ai/epoch-1-launch/); [Grass Dashboard, https://app.getgrass.io/]
+· Decision: Membuka pendaftaran publik, implementasi leaderboard komunitas, distribusi poin mingguan/bulanan yang nanti dikonversi ke token
+· Immediate Result: Pertumbuhan node eksponensial, etablisasi metrik partisipasi, komunitas awal terbentuk (Discord 500k+)
+· Long-term Impact: Model "points-to-token" menjadi standar airdrop DePIN, menciptakan ekspektasi komunitas akan TGE
+· Supporting Dataset: Phase 3 EV-004, Phase 4 Architecture (Coordinator), Phase 7 Community
 
-Keputusan: Mengumpulkan Seed $3.5M dari Polychain, Hack VC, Delphi Ventures (2023-07)
-· Trigger: Perlu dana untuk ekspansi tim, pengembangan protokol, dan persiapan testnet publik skala besar
-· Evidence: The Block funding announcement; Messari profile; Polychain portfolio
-· Decision: Menerima investasi equity+SAFT dari VC crypto terkemuka dengan fokus DePIN/AI
-· Immediate Result: Dana tersedia untuk rekrutmen senior (headcount ~30-50), infrastruktur cloud, audit keamanan
-· Long-term Impact: Struktur cap table investor awal mengunci alokasi token investor (vesting TGE+cliff/stream); tekanan jual potensial di unlock
-· Supporting Dataset: Phase 3 EV-002, Phase 5 Funding History, Phase 6 Token Distribution
+Keputusan: Mainnet Launch di Solana (2024-03-14)
+· Trigger: Testnet stabil, infrastruktur Coordinator + node clients matang, smart contract token siap deploy
+· Evidence: Grass Blog mainnet launch announcement Mar 14 2024, transisi dari beta ke produksi (Grass Blog, https://blog.grass.ai/grass-mainnet-launch/); [Solana Explorer, https://explorer.solana.com/]
+· Decision: Deploy SPL token program (non-transferable pre-TGE), aktifkan epoch reward bernilai ekonomi, stabilisasi Coordinator production
+· Immediate Result: Jaringan live di mainnet Solana, epoch berlanjut dengan insentif nyata, fondasi TGE diletakkan
+· Long-term Impact: Komitmen ke Solana sebagai settlement layer, ketergantungan pada SVM/SPL ecosystem
+· Supporting Dataset: Phase 3 EV-006, Phase 4 Architecture (Settlement Layer), Phase 6 Token (Standard)
 
-Keputusan: Meluncurkan Mainnet (keluar beta) di Solana (2024-03-14)
-· Trigger: Protokol siap produksi; poin epoch perlu nilai ekonomis nyata; persiapan TGE
-· Evidence: Grass Blog mainnet-launch; Solana Explorer program deploy
-· Decision: Transisi ke jaringan produksi penuh dengan smart contract token (non-transferable pre-TGE), Coordinator stabil, node clients versi mainnet
-· Immediate Result: Jaringan live di mainnet Solana; epoch berlanjut dengan insentif ekonomi nyata; fondasi TGE diletakkan
-· Long-term Impact: Komitmen pada Solana sebagai settlement layer; ketergantungan ekosistem Solana (RPC, DeFi, wallet)
-· Supporting Dataset: Phase 3 EV-006, Phase 4 Architecture Settlement Layer
+Keputusan: Peluncuran Mobile App (iOS TestFlight, Android APK) dan Lite Node WASM (2024-06, 2024-07)
+· Trigger: Desktop+Extension terbatas pada user teknis; butuh ekspansi ke mobile (IP residential unik) dan zero-install untuk user kasual/korporat
+· Evidence: Grass Blog mobile launch Jun 2024, Lite Node WASM Jul 2024 (Grass Blog, https://blog.grass.ai/grass-mobile-launch/); [Grass Blog, https://blog.grass.ai/grass-lite-node/]
+· Decision: Investasi signifikan pada native mobile (Swift/Kotlin/Flutter) dan WASM browser client, masing-masing dengan trade-off performa vs aksesibilitas
+· Immediate Result: Jutaan potential mobile nodes, akses ke IP residential mobile, bypass ekstensi di env terbatasi
+· Long-term Impact: Diversifikasi sumber bandwidth, tapi kompleksitas maintenance 4 codebase client terpisah
+· Supporting Dataset: Phase 3 EV-007, EV-008, Phase 4 Core Components, Phase 7 Applications
 
-Keputusan: Merilis Mobile App (iOS TestFlight, Android APK) dan Lite Node (WASM) (2024-06/07)
-· Trigger: Perlu ekspansi basis node ke non-teknis dan perangkat mobile untuk skala jutaan node
-· Evidence: Grass Blog mobile-launch, grass-lite-node; TestFlight link; GitHub grass-lite
-· Decision: Mengembangkan klien native mobile (VPN/Network Extension) dan klien zero-install WASM di browser
-· Immediate Result: Penambahan jutaan node mobile potensial; diversifikasi sumber bandwidth (residential mobile IP); akses lingkungan terbatasi (korporat/sekolah)
-· Long-term Impact: Meningkatkan decentralization of node geography/ISP; tapi menambah kompleksitas client maintenance (iOS/Android/WASM/Desktop/Extension)
-· Supporting Dataset: Phase 3 EV-007, EV-008, Phase 4 Core Components Mobile/Lite
+Keputusan: Pembentukan Grass Foundation dan TGE via Binance Launchpool (2024-09-19, 2024-10-28)
+· Trigger: Butuh legal wrapper untuk treasury token, governance komunitas, dan distribusi publik yang compliant sebelum token transferable
+· Evidence: Grass Blog Foundation announcement Sep 19 2024, Binance Launchpool announcement Oct 28 2024 (Grass Blog, https://blog.grass.ai/introducing-grass-foundation/); [Binance Announcement, https://www.binance.com/en/support/announcement/grass-listing]
+· Decision: Establish Foundation di BVI/Cayman, multi-sig treasury (Squads), TGE 1B supply dengan 3% Launchpool, simultaneous 6 CEX listing
+· Immediate Result: Token GRASS transferable, likuiditas pasar terbentuk ($150-300M vol/day), airdrop epoch 1-7 claimable, staking live
+· Long-term Impact: Foundation mengelola ~30%+ supply (ecosystem/foundation), tekanan unlock investor/team mulai TGE+cliff
+· Supporting Dataset: Phase 3 EV-010, EV-012, EV-013, Phase 2 Entity (Grass Foundation), Phase 5 Treasury, Phase 6 Token (Distribution, TGE)
 
-Keputusan: Memublikasikan audit Halborn (Agustus 2024) sebelum TGE
-· Trigger: Persyaratan listing CEX tier-1; kepercayaan komunitas; mitigasi risiko smart contract
-· Evidence: Halborn audit report published; Grass Blog security-audit; GitHub audits repo
-· Decision: Melakukan audit komprehensif (Token, Staking, Governance, Verifier, Rust client) oleh Halborn; remediate 2 Critical, 3 High findings
-· Immediate Result: Persyaratan Binance/Coinbase terpenuhi; kepercayaan investor/komunitas meningkat
-· Long-term Impact: Standar keamanan protokol ditetapkan; template untuk audit rollup masa depan (Kudelski, ZK audit planned)
-· Supporting Dataset: Phase 3 EV-009, Phase 4 Audit History
+Keputusan: Pengumuman Sovereign Data Rollup arsitektur custom (bukan SVM rollup) (2024-09-25)
+· Trigger: Kebutuhan verifikasi data scraping terstruktur, provenance AI, dan throughput tinggi yang tidak efisien di SVM; keinginan sovereignty execution layer
+· Evidence: Grass Blog rollup announcement Sep 25 2024, arsitektur custom sequencer/executor/prover (Grass Blog, https://blog.grass.ai/sovereign-data-rollup/); [Grass Docs, https://docs.grass.ai/architecture/rollup]
+· Decision: Bangun rollup sovran dengan ZK-VM (RISC Zero/SP1) atau TEE (Intel TDX/AMD SEV), settle ke Solana via Verifier Program, bukan SVM-compatible
+· Immediate Result: Roadmap teknis jangka panjang diklarifikasi, rekrutmen ZK/TEE engineers, dependency RPC tinggi (Helius/Triton)
+· Long-term Impact: Desentralisasi Coordinator, tapi risiko eksekusi tinggi (proving cost, latency, audit complexity), delayed mainnet rollup
+· Supporting Dataset: Phase 3 EV-011, Phase 4 Architecture (Execution Layer, Rollup), Phase 7 External Dependencies (RISC Zero, Intel TDX)
 
-Keputusan: Membentuk Grass Foundation sebagai entitas terpisah dari Wynd Labs (2024-09-19)
-· Trigger: Butuh legal wrapper untuk treasury token, governance komunitas, pemisahan dev entity vs protocol stewardship
-· Evidence: Grass Blog introducing-grass-foundation; Grass Docs tokenomics; Solscan treasury multisig
-· Decision: Mendirikan yayasan nirlaba (BVI/Cayman) dengan multi-sig treasury (Squads/Safe) mengelola alokasi Ecosystem/Foundation/Community
-· Immediate Result: Struktur governance formal terkendali; alokasi treasury dikunci on-chain; pemisahan tanggung jawab hukum
-· Long-term Impact: Fondation bertindak sebagai DAO off-chain; Wynd Labs fokus core dev; Foundation mengelola grant, insentif, diversifikasi treasury
-· Supporting Dataset: Phase 3 EV-010, Phase 2 Entity Grass Foundation, Phase 5 Treasury, Phase 6 Governance
+Evolution Pattern
 
-Keputusan: Mengumumkan arsitektur Sovereign Data Rollup (2024-09-25)
-· Trigger: Butuh skala verifikasi data scraping tanpa Coordinator terpusat; naratif modular rollup diferensiasi vs kompetitor
-· Evidence: Grass Blog sovereign-data-rollup; Grass Docs architecture rollup; Messari profile
-· Decision: Merancang rollup kustom (bukan SVM) dengan Sequencer, Executor, ZK Prover (RISC Zero/SP1) / TEE (Intel TDX/AMD SEV) settling ke Solana
-· Immediate Result: Roadmap teknis jangka panjang diklarifikasi; kebutuhan RPC tinggi (Helius/Triton) dikonfirmasi; naratif "Modular Data Rollup" terbentuk
-· Long-term Impact: Menghilangkan trust assumption Coordinator; memungkinkan verifiable data provenance untuk AI; kompleksitas teknis tinggi (ZK proving cost, latency)
-· Supporting Dataset: Phase 3 EV-011, Phase 4 Architecture Rollup, Known Limitations #2, #7
+Perubahan Strategi: Dari "Bandwidth Sharing Network" → "AI Data Layer dengan Sovereign Rollup"
+· Phase Awal (2021-2023): Fokus pada membangun jaringan node bandwidth (DePIN murni), Proof of Bandwidth, sistem poin, distribusi reward. Naratif: "Monetize your unused bandwidth." (Phase 3 EV-001, EV-003, EV-004; Phase 1 Foundation)
+· Phase Transisi (2024 H1): Mainnet launch, mobile/lite expansion, persiapan TGE. Naratif: "Data layer for AI" mulai muncul. (Phase 3 EV-006, EV-007, EV-008)
+· Phase Sekarang (2024 H2+): Sovereign Data Rollup jadi centerpiece, verifikasi ZK/TEE, penjualan data enterprise, DeFi utility. Naratif: "Sovereign Data Rollup for AI." (Phase 3 EV-011, EV-014, EV-015; Phase 4 Architecture, Phase 7 Ecosystem)
+· Driver: Permintaan pasar AI data melonjak (LLM training), kompetisi DePIN bandwidth (Honeygain, Masa), kebutuhan diferensiasi teknis & revenue nyata.
 
-Keputusan: TGE & Listing simultan 6 CEX tier-1 + Binance Launchpool (2024-10-28)
-· Trigger: Maksimalkan visibility, likuiditas, distribusi token عادل, dan price discovery global dalam satu hari
-· Evidence: Binance announcement; Grass Blog token-launch; CoinGecko markets; 6 CEX announcements same day
-· Decision: Token Generation Event dengan 1B supply, ~24% circulating; Launchpool farming 3% supply; listing bersamaan Binance, Bybit, Coinbase, Gate.io, KuCoin, OKX
-· Immediate Result: Likuiditas pasar terbentuk instan ($150-300M vol hari pertama); airdrop/klaim untuk 120k+ holders; staking live hari yang sama
-· Long-term Impact: Distribusi token geniş (retail + institutional); ketergantungan likuiditas pada Wintermute/GSR; tekanan unlock investor/team di masa depan
-· Supporting Dataset: Phase 3 EV-012, Phase 5 Fundraising Mechanism, Phase 6 Token Sale, Phase 7 Exchange Ecosystem, Phase 8 Trading Markets
+Perubahan Teknologi: Dari Coordinator Terpusat → Rollup Terdesentralisasi dengan ZK/TEE
+· Awal: Coordinator Wynd Labs mengelola task queue, bandwidth verification, point calculation — trusted centralized service. (Phase 4 Architecture Coordination Layer, Phase 3 EV-004)
+· Tengah: Smart contract token/staking/governance di Solana (SVM), tapi data flow masih off-chain via Coordinator. (Phase 3 EV-006, EV-012, EV-013; Phase 4 Smart Contracts)
+· Target: Sovereign Rollup dengan Sequencer/Executor/Prover, ZK proofs (RISC Zero/SP1) atau TEE attestation, Verifier on-chain Solana. Coordinator digantikan. (Phase 3 EV-011; Phase 4 Core Components Rollup, ZK Module; Phase 7 Dependencies RISC Zero/Intel TDX)
+· Trade-off: Kompleksitas & biaya proving vs kepercayaan minimized. Belum terbukti di skala produksi.
 
-Keputusan: Mengaktifkan Staking Native GRASS hari TGE (2024-10-28)
-· Trigger: Utility token immediate; secure rollup/consensus; reward untuk holder; kurangi sirkulasi awal
-· Evidence: Grass Blog grass-staking-live; Dashboard staking; Jito integration mention
-· Decision: Meluncurkan staking program SPL native dengan delegasi ke validator Solana (termasuk Jito) tanpa lock-up period keras
-· Immediate Result: Persentase supply di-stake signifikan (mengurangi sell pressure); yield staking tersedia; integrasi wallet Phantom/Solflare/Backpack siap pakai
-· Long-term Impact: Token utility beyond governance; alignment node operator & token holder; dependency pada validator set Solana & Jito
-· Supporting Dataset: Phase 3 EV-013, Phase 6 Token Staking, Phase 7 Wallet Ecosystem
+Perubahan Tokenomics: Dari Points (Off-chain) → GRASS Token (On-chain) dengan Utility Multi-layer
+· Pre-TGE: Points epoch 1-7 (off-chain, centralized ledger), konversi 1:1 ke token di TGE, tidak transferable. (Phase 3 EV-004, EV-006; Phase 6 Token Distribution)
+· TGE: 1B supply, 24% circulating (Launchpool 3%, community/airdrop, liquidity), 76% vesting (investor 22%, team 22%, foundation/ecosystem 32%+). (Phase 6 Token Allocation, Vesting; Phase 5 Token Sale)
+· Post-TGE: Staking native (delegasi ke validator), DeFi utility (lend/borrow Kamino, perp Drift, CLMM Orca/Raydium), governance (future), data purchase fee (planned). (Phase 3 EV-013, EV-014; Phase 6 Utility, Staking; Phase 7 DeFi Integrations)
+· Evolusi: Dari reward pasif → utility aktif (staking yield, DeFi collateral, governance, data payment).
 
-Keputusan: Integrasi DeFi penuh dalam 2 minggu pasca-TGE (Raydium, Orca, Kamino, Drift, Jupiter) (2024-11)
-· Trigger: Perluapkan utility on-chain, likuiditas DEX, hedging, yield strategies untuk holder
-· Evidence: Phase 3 EV-014; Phase 7 Major Integrations Raydium/Orca/Kamino/Drift/Jupiter; Phase 8 Trading Markets DEX
-· Decision: Mendukung pembukaan pool CLMM/AMM, lending/leverage (Kamino), perpetual (Drift), routing (Jupiter) secara proaktif
-· Immediate Result: Likuiditas on-chain mendalam ($10M+ TVL agregat); akses hedging perp; yield farming strategies tersedia
-· Long-term Impact: GRASS menjadi aset DeFi native Solana; ketergantungan pada health protokol DeFi partner (smart contract risk komposisi)
-· Supporting Dataset: Phase 3 EV-014, Phase 7 Major Integrations, Phase 8 Trading Markets
+Perubahan Governance: Dari Core Team Controlled → Foundation Multi-sig → On-chain DAO (Planned)
+· 2021-2024: Wynd Labs (Andrej, Chris) full control protokol, coordinator, treasury (pre-token). (Phase 2 Entity Wynd Labs, Phase 3 EV-001)
+· Sep 2024: Grass Foundation formed, multi-sig treasury (Squads), core contributors sebagai signer. Wynd Labs tetap core dev via grant/agreement. (Phase 3 EV-010; Phase 2 Entity Grass Foundation; Phase 4 Security Model Multi-sig)
+· Future: On-chain governance via GRASS token voting, proposal execution, parameter changes (staking rewards, fee switch, rollup upgrades). (Phase 6 Governance; Phase 7 Developer Ecosystem Grants)
 
-Keputusan: Meluncurkan Ecosystem Incentives Program & NFT Badge (2024-11/12)
-· Trigger: Tarik builder ke SDK/Rollup; reputasi on-chain untuk kontributor; flywheel data AI
-· Evidence: Phase 3 EV-015, EV-016; Phase 7 Developer Ecosystem Grants; Phase 7 Major Integrations Tensor/Magic Eden
-· Decision: Program grant builder via Grass Foundation; NFT Soulbound Badge untuk pencapaian Epoch/loyalty di marketplace Tensor/Magic Eden
-· Immediate Result: Standar reputasi on-chain; gated access potensial fitur masa depan; sinyal komitmen ekosistem
-· Long-term Impact: Flywheel developer → aplikasi data AI → rollup usage → token demand; NFT sebagai sybil resistance & identity primitive
-· Supporting Dataset: Phase 3 EV-015/016, Phase 7 Developer Ecosystem, Major Integrations
+Perubahan Ekosistem: Dari Single-chain Solana → Multi-chain via Wormhole (Token Only)
+· Native: Semua aktivitas on-chain (token, staking, DeFi, NFT, rollup settlement) di Solana. (Phase 4 Architecture Settlement Layer, Phase 7 Exchange Ecosystem DEX)
+· Bridging: Wormhole bridge untuk GRASS ke Ethereum, Arbitrum, Base, Polygon — hanya token portability, tidak consensus/rollup. (Phase 7 External Dependencies Wormhole, Phase 8 Trading Markets)
+· Rationale: Solana untuk throughput/fee rendah (rollup settlement), multi-chain untuk likuiditas & user acquisition.
 
----
+Technical Decision Pattern
 
-Pola 1: Arsitektur Modular dengan Settlement Layer Tetap (Solana) dan Execution Layer Kustom (Sovereign Rollup)
-· Decision Pattern: Memilih Solana sebagai L1 settlement final (token, staking, governance, anchoring) sambil membangun rollup eksekusi kustom (non-SVM) untuk tugas scraping/validasi data yang intensif komputasi
-· Evidence: Phase 4 Architecture Settlement vs Execution Layer; Phase 3 EV-011 Sovereign Rollup announcement; Phase 8 Narrative Modular Rollup
-· Supporting Dataset: Phase 3 EV-011, Phase 4 System Architecture, Phase 8 Narrative Position
+Pola 1: Pilih Solana sebagai Settlement Layer Eksklusif (bukan Multi-chain atau L2 Ethereum)
+· Decision Pattern: Semua state final (token, staking, governance, rollup verification) disetel di Solana L1; tidak deploy kontrak ekivalen di chain lain; bridging hanya untuk token portability via Wormhole
+· Evidence: Arsitektur settlement layer hanya Solana (Grass Docs, https://docs.grass.ai/architecture/settlement); Token SPL only, staking program Solana native, rollup verifier program Solana (Phase 4 Architecture, Phase 6 Token Standard, Phase 7 Integrations)
+· Supporting Dataset: Phase 4 Architecture (Settlement Layer), Phase 6 Token (Standard), Phase 7 External Dependencies (Wormhole), Phase 8 Market (Primary Chain Solana)
 
-Pola 2: Ekspansi Platform Node Bertahap (Desktop → Extension → Mobile → Lite/WASM) untuk Maksimalkan Jangkauan Non-Teknis
-· Decision Pattern: Merilis klien node secara bertahap menurunkan barrier to entry: Desktop app (full control) → Browser Extension (ringan) → Mobile App (mass market) → Lite Node WASM (zero-install, lingkungan terbatasi)
-· Evidence: Phase 3 EV-003 (Beta Desktop/Ext), EV-006 (Mainnet clients), EV-007 (Mobile), EV-008 (Lite); Phase 4 Core Components 4 client types
-· Supporting Dataset: Phase 3 EV-003/006/007/008, Phase 4 Core Components
+Pola 2: Arsitektur Hybrid — Off-chain Coordinator (Sekarang) + On-chain Verifier (Masa Depan)
+· Decision Pattern: Pemisahan tugas: Coordinator handle task distribution & bandwidth measurement (high throughput, low latency, centralized trust); Rollup handle data validity proof & settlement (trust-minimized, higher latency, on-chain)
+· Evidence: Coordinator service live production (Grass Docs, https://docs.grass.ai/architecture/coordinator); Sovereign Rollup announced dengan ZK/TEE prover (Grass Blog, https://blog.grass.ai/sovereign-data-rollup/); Phase 4 Architecture Coordination Layer vs Rollup
+· Supporting Dataset: Phase 3 EV-004 (Epoch/Coordinator), EV-011 (Rollup), Phase 4 Architecture (Coordination Layer, Execution Layer), Phase 7 External Dependencies (RISC Zero, Intel TDX)
 
-Pola 3: Coordinator Terpusat sebagai "Trusted Bridge" Sementara dengan Roadmap Desentralisasi Eksplisit via ZK/TEE
-· Decision Pattern: Menerima trust assumption Coordinator (Wynd Labs) untuk penugasan tugas & reward calculation saat ini, sambil investasi berat R&D ZK Prover (RISC Zero/SP1) & TEE (Intel TDX/AMD SEV) untuk verifikasi trustless di Rollup
-· Evidence: Phase 4 Architecture Coordinator, Known Limitations #1, #7; Phase 3 EV-011 Rollup ZK/TEE; Phase 4 Security Model Layer 3 & 5
-· Supporting Dataset: Phase 3 EV-011, Phase 4 Architecture Coordinator & Security Model
+Pola 3: Multi-Client Strategy — 4 Codebase Node Terpisah untuk Maksimalkan Jangkauan
+· Decision Pattern: Maintain 4 implementasi node independen: Desktop (Electron/Tauri), Extension (Manifest V3), Mobile (Native/Flutter), Lite (WASM) — masing-masing target demografi & constraint berbeda
+· Evidence: 4 client live dengan rilis bertahap (Phase 3 EV-003 Desktop/Ext, EV-006 Mainnet, EV-007 Mobile, EV-008 Lite); Phase 4 Core Components (10 components include 4 clients), Phase 7 Applications
+· Supporting Dataset: Phase 3 EV-003, EV-006, EV-007, EV-008, Phase 4 Core Components, Phase 7 Applications
 
-Pola 4: Penggunaan Rust untuk Core Logic (Smart Contract, Coordinator, Node Backend) dan TypeScript/WASM untuk Client-Facing
-· Decision Pattern: Rust dipilih untuk performa, keamanan memori, dan ekosistem Solana/Anchor pada komponen kritis (contracts, coordinator, desktop backend); TypeScript/React/WASM untuk DX, distribusi browser, dan mobile cross-platform
-· Evidence: Phase 4 Programming Languages Rust/TypeScript/Go/Swift; Phase 4 Development Framework Anchor/Electron/Tauri/React/WASM
-· Supporting Dataset: Phase 4 Programming Languages, Development Framework
+Pola 4: Custom Rollup (Bukan SVM Rollup / Eclipse / Solana VM Fork)
+· Decision Pattern: Membangun execution layer custom (bukan kompatibel SVM) dengan ZK-VM (RISC Zero/SP1) atau TEE, settle via Verifier Program di Solana — bukan deploy SVM di rollup
+· Evidence: Grass Blog rollup announcement menegaskan "Sovereign Data Rollup" custom execution (Grass Blog, https://blog.grass.ai/sovereign-data-rollup/); Phase 4 Execution Environment (Rollup: Custom VM/RISC Zero/SP1/TEE), Phase 7 Dependencies (RISC Zero, Succinct, Intel TDX)
+· Supporting Dataset: Phase 3 EV-011, Phase 4 Architecture (Execution Layer, Rollup), Phase 7 External Dependencies
 
-Pola 5: Infrastruktur Cloud Native (K8s, Kafka, ClickHouse, Multi-RPC) untuk Skala Jutaan Node
-· Decision Pattern: Mengadopsi stack enterprise-grade (AWS/GCP, Kubernetes, Kafka, ClickHouse, Helius/Triton RPC) sejak awal untuk handle throughput tugas scraping & point calculation skala besar
-· Evidence: Phase 4 Current Technical Stack Infrastructure, RPC Providers, Message Queue, Storage; Phase 7 Infrastructure Providers
-· Supporting Dataset: Phase 4 Current Technical Stack, Phase 7 Infrastructure Providers
+Pola 5: Prioritaskan Audit Keamanan Sebelum TGE dan Listing CEX
+· Decision Pattern: Melakukan audit Halborn (smart contract) dan Kudelski (infrastruktur) lengkap dengan remediation sebelum TGE Oct 2024 — requirement listing Binance/Coinbase
+· Evidence: Halborn audit published Aug 2024, findings remediated (Halborn Audit, https://www.halborn.com/audits/grass); Kudelski infrastructure audit (Kudelski Security, https://www.kudelskisecurity.com/); Phase 3 EV-009, Phase 4 Audit History
+· Supporting Dataset: Phase 3 EV-009, Phase 4 Security Model (Audit History), Phase 7 Major Integrations (Halborn, Kudelski)
 
-Pola 6: Audit Bertahap: Smart Contract Dulu (Halborn), Infrastructure Lanjut (Kudelski), Rollup/ZK Terakhir (Planned)
-· Decision Pattern: Memrioritaskan audit komponen on-chain (token, staking, governance) untuk TGE/CEX listing, diikuti audit infrastruktur off-chain, dan menunda audit ZK/TEE hingga rollup devnet ready
-· Evidence: Phase 4 Audit History Halborn (Aug 2024), Kudelski (Q3 2024), Planned ZK audit (2025); Phase 3 EV-009
-· Supporting Dataset: Phase 3 EV-009, Phase 4 Audit History
+Pola 6: Gunakan Infrastructure Provider Tier-1 Solana (Helius, Triton One) untuk Reliability
+· Decision Pattern: Tidak self-host validator/RPC; gunakan Helius (Enhanced RPC, DAS, Geyser) dan Triton One (High-perf RPC) untuk semua akses on-chain (Dashboard, Indexer, Coordinator, Rollup Sequencer)
+· Evidence: Helius blog integration announcement (Helius Blog, https://www.helius.dev/blog/grass-integration); Triton One partnership (Grass Blog, https://blog.grass.ai/infrastructure-partners/); Phase 4 Current Technical Stack (RPC Providers), Phase 7 Infrastructure Providers
+· Supporting Dataset: Phase 4 Current Technical Stack, Phase 7 Infrastructure Providers, Phase 7 External Dependencies (Helius, Triton One)
 
----
+Financial Decision Pattern
 
-Pola 1: Fundraising Tahapan Kecil (Seed $3.5M + Strategic Undisclosed) → TGE sebagai Liquidity Event Utama, Bukan Series A Besar
-· Decision Pattern: Mengumpulkan dana equity/SAFT modest dari VC tier-1 (Polychain, Hack VC, Delphi) dan strategic (Brevan Howard) tanpa Series A besar publik, mengandalkan TGE + Launchpool + Multi-CEX listing untuk likuiditas besar dan treasury token
-· Evidence: Phase 3 EV-002, EV-005; Phase 5 Funding History ($3.5M seed only disclosed); Phase 5 Fundraising Mechanism (VC + Launchpool); Phase 6 Token Sale (Launchpool 3%)
-· Supporting Dataset: Phase 3 EV-002/005, Phase 5 Funding History, Fundraising Mechanism, Phase 6 Token Sale
+Pola 1: Fundraising Bertahap — Seed VC Crypto-Native → Strategic Institutional → Series A (Rumor) — Tanpa Public Sale Terpisah
+· Decision Pattern: Seed $3.5M dari Polychain/Hack VC/Delphi (Jul 2023), Strategic round dengan Brevan Howard Digital (Dec 2023), tidak ada public token sale (ICO/IDO) — distribusi publik via Binance Launchpool (farming gratis) di TGE
+· Evidence: The Block seed announcement (The Block, https://www.theblock.co/post/250000/grass-raises-seed-funding); Strategic round Brevan Howard (The Block, https://www.theblock.co/post/250000/grass-raises-seed-funding); Binance Launchpool 3% supply (Binance Announcement, https://www.binance.com/en/support/announcement/grass-listing)
+· Supporting Dataset: Phase 3 EV-002, EV-005, EV-012, Phase 5 Funding History, Phase 5 Fundraising Mechanism, Phase 6 Token Sale
 
-Pola 2: Treasury Dominan Native Token (GRASS) di Multi-sig Foundation, Belum Diversifikasi ke Stablecoin/Asset Productif
-· Decision Pattern: Grass Foundation treasury hampir seluruhnya token GRASS (alokasi Ecosystem/Foundation/Community per tokenomics) tanpa laporan diversifikasi ke USDC/SOL/yield-bearing asset secara publik
-· Evidence: Phase 5 Treasury Composition (Native Token Holdings only disclosed); Phase 2 Entity Grass Foundation; Phase 6 Token Distribution; Phase 5 Financial Risk (Concentration Risk)
-· Supporting Dataset: Phase 5 Treasury, Phase 2 Entity Grass Foundation, Phase 6 Token Distribution
+Pola 2: Treasury Terkonsentrasi pada Native Token (GRASS) — Belum Diversifikasi ke Stablecoin/Asset Productif
+· Decision Pattern: Grass Foundation treasury mayoritas holding GRASS token (alokasi ecosystem/foundation ~32%+ supply); tidak ada laporan diversifikasi ke USDC/SOL/yield-bearing asset secara publik
+· Evidence: Tokenomics allocation foundation/ecosystem besar (Grass Blog Tokenomics, https://blog.grass.ai/grass-tokenomics/); Solscan treasury address menunjukkan GRASS dominant (Solscan Treasury, https://solscan.io/account/...); Phase 5 Treasury Composition
+· Supporting Dataset: Phase 5 Treasury, Phase 6 Token Distribution, Phase 5 Financial Risk (Concentration Risk)
 
-Pola 3: Market Maker Tier-1 (Wintermute, GSR) Diambil Sebelum TGE untuk Likuiditas CEX/DEX Instan
-· Decision Pattern: Mengontrak market maker profesional sebelum listing untuk memastikan spread ketat, depth order book, dan kemampuan treasury mencairkan token jika perlu
-· Evidence: Phase 3 EV-012; Phase 5 Financial Dependencies Market Makers; Phase 7 Exchange Ecosystem; Phase 8 Liquidity Sources
-· Supporting Dataset: Phase 3 EV-012, Phase 5 Financial Dependencies, Phase 7 Exchange Ecosystem, Phase 8 Liquidity
+Pola 3: Revenue Model Bergantung pada Enterprise Data Sales (B2B AI Labs) — Belum Terbukti Skala
+· Decision Pattern: Sumber pendapatan utama dijual ke AI labs/enterprise via API/data contracts; tidak ada fee protocol saat ini (swap/staking/rollup fee planned); treasury yield & grant minor
+· Evidence: Grass Blog sovereign data rollup & data sales (Grass Blog, https://blog.grass.ai/sovereign-data-rollup/); Messari profile revenue model (Messari, https://messari.io/project/grass/profile); Phase 5 Revenue Model, Revenue History (Not Disclosed)
+· Supporting Dataset: Phase 5 Revenue Model, Phase 5 Financial Risk (Revenue Uncertainty), Phase 7 Ecosystem (Enterprise Sales)
 
-Pola 4: Revenue Model Enterprise Data Sales (B2B AI Labs) sebagai Jangka Panjang, Token Incentives sebagai Bridge Jangka Pendek
-· Decision Pattern: Mengakui revenue protocol (penjualan data scraping) masih early stage/not disclosed, menggunakan token emissions (Epoch points, staking rewards, ecosystem incentives) untuk subsidize node operator growth hingga product-market fit data sales terbukti
-· Evidence: Phase 5 Revenue Model (Enterprise Data Sales Live but early); Phase 5 Financial Risk (Revenue Uncertainty); Phase 3 EV-015 Ecosystem Incentives; Phase 8 Narrative AI Data Layer
-· Supporting Dataset: Phase 5 Revenue Model, Financial Risk, Phase 3 EV-015, Phase 8 Narrative
+Pola 4: Market Maker Professional (Wintermute, GSR) untuk Likuiditas CEX/DEX Sejak Hari 1
+· Decision Pattern: Kontrak market making dengan Wintermute & GSR Markets ditandatangani sebelum TGE, menyediakan likuiditas di 6 CEX + 2 DEX + perpetuals sejak listing
+· Evidence: Grass Blog token launch mention market makers (Grass Blog, https://blog.grass.ai/grass-token-launch/); Wintermute/GSR Twitter announcements (Wintermute Twitter, https://x.com/wintermute_t); Phase 7 Major Integrations (Wintermute, GSR), Phase 8 Liquidity
+· Supporting Dataset: Phase 3 EV-012, Phase 7 Major Integrations, Phase 8 Liquidity, Phase 5 Financial Dependencies (Market Makers)
 
-Pola 5: Tokenomics dengan Circulating Supply Rendah (~24% TGE) dan Vesting Panjang Investor/Team (Cliff + Streaming via Streamflow/Cliff)
-· Decision Pattern: Desain tokenomics standar VC-backed: TGE float rendah, unlock investor/team bertahap bulanan/tahunan via on-chain vesting contracts, menciptakan tekanan jual terstruktur jangka menengah
-· Evidence: Phase 6 Token Distribution (24% circulating); Phase 6 Vesting Schedule (Streamflow/Cliff); Phase 5 Financial Risk (Funding Runway, Vesting Pressure)
-· Supporting Dataset: Phase 6 Token Distribution, Vesting Schedule, Phase 5 Financial Risk
+Pola 5: Vesting Investor/Team via On-chain Streaming (Streamflow/Cliff) — Transparan & Otomatis
+· Decision Pattern: Alokasi investor (22%), team (22%), foundation/ecosystem vesting di-manage via Streamflow/Cliff contracts on-chain, bukan off-chain spreadsheet
+· Evidence: Solscan token vesting programs (Solscan Vesting, https://solscan.io/token/GRASS...#vesting); Streamflow/Cliff integration (Streamflow, https://streamflow.finance/); Phase 6 Vesting, Phase 7 Infrastructure Providers (Streamflow/Cliff)
+· Supporting Dataset: Phase 6 Token Vesting, Phase 7 Infrastructure Providers, Phase 5 Fundraising Mechanism
 
----
+Ecosystem Decision Pattern
 
-Pola 1: Listing Simultaneous Multi-CEX Tier-1 (Binance, Bybit, Coinbase, Gate, KuCoin, OKX) untuk Maksimalkan Distribusi Global & Likuiditas Instan
-· Decision Pattern: Mengkoordinasikan listing di 6 CEX utama secara bersamaan pada hari TGE, didukung Binance Launchpool farming, untuk capture retail global (Binance/Bybit/Gate/KuCoin/OKX) & institutional US (Coinbase) sekaligus
-· Evidence: Phase 3 EV-012; Phase 7 Exchange Ecosystem 6 CEX; Phase 8 Trading Markets 6 CEX live same day
-· Supporting Dataset: Phase 3 EV-012, Phase 7 Exchange Ecosystem, Phase 8 Trading Markets
+Pola 1: Ekspansi Ekosistem DeFi Solana Lengkap dalam Bulan Pasca-TGE (Raydium, Orca, Kamino, Drift, Jupiter)
+· Decision Pattern: Prioritaskan integrasi DeFi native Solana (AMM, CLMM, Lending, Perp, Aggregator) dalam minggu-gu minggu setelah TGE Oct 2024 — bukan tunggu organic demand
+· Evidence: Semua integrasi live Nov 2024 (Phase 3 EV-014); Grass Blog defi integrations (Grass Blog, https://blog.grass.ai/defi-integrations/); Phase 7 Major Integrations (Raydium, Orca, Kamino, Drift, Jupiter), Phase 8 Trading Markets (DEX)
+· Supporting Dataset: Phase 3 EV-014, Phase 7 Major Integrations, Phase 8 Trading Markets, Phase 6 Token Utility
 
-Pola 2: Integrasi DeFi Native Solana Lengkap dalam Mingguan (DEX AMM/CLMM, Lending, Perp, Aggregator, Wallet)
-· Decision Pattern: Pasca-TGE, segera mengaktifkan full DeFi stack: Raydium/Orca (liquidity), Kamino (lending/leverage), Drift (perp), Jupiter (routing), Phantom/Solflare/Backpack (wallet) — menanam GRASS ke ekosistem Solana DeFi
-· Evidence: Phase 3 EV-013, EV-014; Phase 7 Major Integrations DeFi & Wallet; Phase 8 Trading Markets DEX/Perp
-· Supporting Dataset: Phase 3 EV-013/014, Phase 7 Major Integrations, Phase 8 Trading Markets
+Pola 2: Integrasi Wallet Solana "Big Three" (Phantom, Solflare, Backpack) untuk Distribusi User Luas
+· Decision Pattern: Pastikan native support di 3 wallet paling populer Solana (Phantom ~dominant, Solflare, Backpack xNFT) sebelum TGE — memudahkan claim airdrop, staking, swap
+· Evidence: Wallet support announced pre-TGE (Grass Blog, https://blog.grass.ai/wallet-support/); Phantom/Solflare/Backpack native token list (Phantom Token List, https://tokens.phantom.app/); Phase 7 Wallet Ecosystem, Phase 3 EV-013
+· Supporting Dataset: Phase 3 EV-013, Phase 7 Wallet Ecosystem, Phase 7 Major Integrations
 
-Pola 3: Kemitraan Infrastruktur Kritis dengan Provider Solana Spesialis (Helius, Triton One) untuk Performa RPC & Indexing
-· Decision Pattern: Bergantung pada Helius (Enhanced RPC, DAS, Geyser) dan Triton One (High-perf RPC) sebagai backbone akses on-chain untuk Dashboard, Coordinator, Rollup Sequencer — bukan memakai public RPC biasa
-· Evidence: Phase 4 Current Technical Stack RPC Providers; Phase 7 Infrastructure Providers Helius/Triton; Phase 3 EV-011 Rollup RPC needs
-· Supporting Dataset: Phase 4 Current Technical Stack, Phase 7 Infrastructure Providers, Phase 3 EV-011
+Pola 3: Partnership Infrastruktur Kritis (Helius, Triton One) Dikunci Sebelum Rollup Development
+· Decision Pattern: Kontrak enterprise RPC dengan Helius (Enhanced RPC, Geyser, DAS) dan Triton One (High-perf) ditandatangani awal — prerequisites untuk rollup sequencer & dashboard reliability
+· Evidence: Helius blog integration (Helius Blog, https://www.helius.dev/blog/grass-integration); Triton One partnership (Grass Blog, https://blog.grass.ai/infrastructure-partners/); Phase 7 Infrastructure Providers, Phase 4 Current Technical Stack
+· Supporting Dataset: Phase 4 Current Technical Stack, Phase 7 Infrastructure Providers, Phase 7 External Dependencies (Helius, Triton One)
 
-Pola 4: Ekosistem NFT Reputasi (Soulbound Badges) di Marketplace Utama (Tensor, Magic Eden) untuk Sybil Resistance & Identity
-· Decision Pattern: Menggunakan NFT Metaplex Core non-transferable sebagai bukti kontribusi on-chain (Epoch achievement, loyalty), diperdagangkan/ditampilkan di Tensor & Magic Eden untuk verifikasi reputasi
-· Evidence: Phase 3 EV-016; Phase 7 Major Integrations Tensor/Magic Eden; Phase 4 Core Components Metaplex Core
+Pola 4: Hackathon & Grant Program via Superteam & Colosseum untuk Rekrutmen Builder
+· Decision Pattern: Sponsor track DePIN/AI di hackathon Superteam (global) & Colosseum (Solana accelerator) — bukan jalankan grant program internal sendiri di awal
+· Evidence: Superteam/Colosseum partnership announced (Grass Blog, https://blog.grass.ai/ecosystem-incentives/); Superteam hackathons (Superteam, https://superteam.fun/hackathons); Phase 7 Developer Ecosystem (Hackathon, Grant Program), Phase 3 EV-015
+· Supporting Dataset: Phase 3 EV-015, Phase 7 Developer Ecosystem, Phase 2 Entity (Superteam, Colosseum)
+
+Pola 5: NFT Badge (Soulbound) sebagai Reputasi On-chain via Tensor & Magic Eden
+· Decision Pattern: Gunakan Metaplex Core NFT untuk badge epoch/loyalty, list di Tensor (primary Solana NFT marketplace) & Magic Eden (secondary) — bukan build marketplace sendiri
+· Evidence: NFT integration Dec 2024 (Phase 3 EV-016); Tensor/Magic Eden listings (Tensor, https://www.tensor.trade/); Metaplex Core standard (Metaplex Docs, https://docs.metaplex.com/); Phase 7 Major Integrations (Tensor, Magic Eden), Phase 4 Core Components (Metaplex Core)
 · Supporting Dataset: Phase 3 EV-016, Phase 7 Major Integrations, Phase 4 Core Components
 
-Pola 5: Program Insentif Builder via Superteam & Colosseum (Hackathon/Accelerator Solana) untuk Rekrutmen Developer
-· Decision Pattern: Memanfaatkan saluran rekrutmen developer Solana yang mapan (Superteam global, Colosseum accelerator) dengan sponsor track DePIN/AI Data dan grant Grass Foundation
-· Evidence: Phase 3 EV-015; Phase 7 Developer Ecosystem Hackathon/Grant; Phase 2 Entity Superteam/Colosseum
-· Supporting Dataset: Phase 3 EV-015, Phase 7 Developer Ecosystem, Phase 2 Entity Superteam/Colosseum
+Pola 6: Audit Security sebagai Prasyarat Listing CEX Tier-1 (Halborn, Kudelski)
+· Decision Pattern: Investasi audit mahal (Halborn smart contract, Kudelski infrastructure) sebelum TGE — mandatory untuk Binance, Coinbase, Bybit listing requirements
+· Evidence: Halborn audit published Aug 2024 (Halborn Audit, https://www.halborn.com/audits/grass); Kudelski infrastructure audit (Grass Blog, https://blog.grass.ai/security-audit/); Phase 3 EV-009, Phase 7 Major Integrations (Halborn, Kudelski), Phase 8 Exchange Ecosystem
+· Supporting Dataset: Phase 3 EV-009, Phase 7 Major Integrations, Phase 8 Exchange Ecosystem, Phase 4 Security Model
 
-Pola 6: Audit Keamanan Tier-1 (Halborn) sebagai Prasyarat Listing & Trust, diikuti Audit Infrastruktur (Kudelski)
-· Decision Pattern: Memilih auditor brand-name (Halborn) untuk smart contract audit publik, serta auditor infrastruktur (Kudelski) untuk backend/cloud/node client, sinyal keamanan enterprise-grade
-· Evidence: Phase 3 EV-009; Phase 4 Audit History Halborn/Kudelski; Phase 7 Major Integrations Halborn/Kudelski
-· Supporting Dataset: Phase 3 EV-009, Phase 4 Audit History, Phase 7 Major Integrations
+Governance Decision Pattern
 
----
+Pola 1: Transisi Bertahap — Core Team → Foundation Multi-sig → On-chain DAO (Belum Live)
+· Decision Pattern: Tidak langsung launch DAO; bentuk Foundation legal entity dengan multi-sig treasury (Squads) dulu, Wynd Labs tetap core dev via agreement, on-chain governance nanti
+· Evidence: Foundation formed Sep 2024 (Phase 3 EV-010); Multi-sig Squads (Grass Blog, https://blog.grass.ai/introducing-grass-foundation/); Governance program on-chain planned (Phase 6 Governance); Phase 2 Entity (Grass Foundation, Wynd Labs)
+· Supporting Dataset: Phase 3 EV-010, Phase 2 Entity (Grass Foundation), Phase 4 Security Model (Multi-sig), Phase 6 Governance
 
-Pola 1: Pemisahan Entitas Pengembang (Wynd Labs) dan Entitas Governance/Treasury (Grass Foundation) Sebelum TGE
-· Decision Pattern: Mendirikan Foundation terpisah (BVI/Cayman) 1 bulan sebelum TGE untuk memisahkan tanggung jawab hukum: Wynd Labs = core dev (for-profit), Foundation = treasury, governance, ecosystem grants (non-profit)
-· Evidence: Phase 3 EV-010; Phase 2 Entity Wynd Labs vs Grass Foundation; Phase 5 Treasury Custodian; Phase 6 Governance
-· Supporting Dataset: Phase 3 EV-010, Phase 2 Entity Wynd Labs/Grass Foundation, Phase 5 Treasury, Phase 6 Governance
+Pola 2: Token GRASS Sebagai Governance Token (Planned) — Belum Ada Proposal/Voting On-chain
+· Decision Pattern: Tokenomics alokasikan governance rights ke GRASS holder, tapi tidak ada governance proposal/voting live hingga Dec 2024 — foundation multi-sig masih kontrol penuh
+· Evidence: Tokenomics mention governance (Grass Blog Tokenomics, https://blog.grass.ai/grass-tokenomics/); Phase 6 Governance (Planned), Phase 7 Developer Ecosystem (Grants via Foundation not DAO)
+· Supporting Dataset: Phase 6 Token Governance, Phase 7 Developer Ecosystem, Phase 3 EV-010
 
-Pola 2: Governance Off-Chain (Foundation Board/Multisig) Saat Ini, Transisi On-Chain (Token Voting) Direncanakan via Rollup/Governance Program
-· Decision Pattern: Keputusan protokol (upgrade, treasury spend, parameter) saat ini dikendalikan multi-sig Foundation (Squads/Safe) dengan threshold signing; smart contract Governance Program sudah dideploy tapi belum aktif penuh untuk DAO voting
-· Evidence: Phase 2 Entity Grass Foundation; Phase 4 Core Components Governance Program; Phase 5 Treasury Custodian Multi-sig; Phase 6 Governance
-· Supporting Dataset: Phase 2 Entity Grass Foundation, Phase 4 Core Components, Phase 5 Treasury, Phase 6 Governance
+Pola 3: Grass Foundation Sebagai Grantor — Bukan DAO Treasury Manager (Saat Ini)
+· Decision Pattern: Foundation mengelola ecosystem grants (Superteam, Colosseum, builder grants) via off-chain decision multi-sig, bukan on-chain proposal voting
+· Evidence: Ecosystem incentives program launched Nov 2024 (Phase 3 EV-015); Superteam/Colosseum partnership (Grass Blog, https://blog.grass.ai/ecosystem-incentives/); Phase 7 Developer Ecosystem (Grant Program)
+· Supporting Dataset: Phase 3 EV-015, Phase 7 Developer Ecosystem, Phase 2 Entity (Grass Foundation)
 
-Pola 3: Tidak Ada DAO Resmi / Token Voting Aktif pada Fase Awal (Post-TGE), Foundation Bertindak Sebagai Steward Sementara
-· Decision Pattern: Berbeda dengan banyak proyek yang launch DAO day-1, Grass menunda token voting on-chain, memilih Foundation multisig yang cepat & accountable untuk keputusan kritis awal (grant, parameter, upgrade)
-· Evidence: Phase 2 Entity DAO: "tidak ada"; Phase 6 Governance (program deployed but not active); Phase 3 EV-010 Foundation formation
-· Supporting Dataset: Phase 2 Entity DAO, Phase 6 Governance, Phase 3 EV-010
+Risk Response Pattern
 
-Pola 4: Vesting Investor/Team On-Chain Transparan (Streamflow/Cliff) sebagai Komitmen Anti-Rug & Alignment Jangka Panjang
-· Decision Pattern: Menggunakan vesting contract on-chain terverifikasi (Streamflow/Cliff) untuk alokasi investor, team, foundation — bukan off-chain SAFT saja — memberikan visibilitas unlock schedule ke publik
-· Evidence: Phase 5 Fundraising Mechanism SAFT+Vesting; Phase 6 Vesting Schedule Streamflow/Cliff; Phase 7 Infrastructure Providers Streamflow/Cliff
-· Supporting Dataset: Phase 5 Fundraising Mechanism, Phase 6 Vesting Schedule, Phase 7 Infrastructure Providers
+Pola 1: Centralization Risk (Coordinator) → Mitigasi: Transparansi Epoch & Roadmap Rollup Desentralisasi
+· Decision Pattern: Akui Coordinator terpusat sebagai trusted party saat ini; publikasikan metrik epoch transparan; komitmen teknis ke Sovereign Rollup dengan ZK/TEE untuk menghilangkan trust assumption
+· Evidence: Grass Docs coordinator architecture (Grass Docs, https://docs.grass.ai/architecture/coordinator); Decentralization roadmap blog (Grass Blog, https://blog.grass.ai/decentralization-roadmap/); Rollup announcement (Grass Blog, https://blog.grass.ai/sovereign-data-rollup/); Phase 4 Security Model Layer 3, Phase 3 EV-011
+· Trigger: Risiko sensor, downtime, manipulasi poin oleh Coordinator Wynd Labs
+· Response: Bangun Rollup dengan ZK Prover/TEE Verifier on-chain Solana; Coordinator digantikan sequencer terdesentralisasi
+· Result: Rollup devnet target 2025, mainnet belum dijadwalkan; Coordinator masih live production
+· Supporting Dataset: Phase 3 EV-011, Phase 4 Architecture (Coordination Layer, Rollup), Phase 4 Security Model, Phase 4 Known Limitations (Limitation 1)
 
----
+Pola 2: Security Risk (Smart Contract/Infrastructure) → Respons: Audit Ganda Tier-1 (Halborn + Kudelski) + Bug Bounty
+· Decision Pattern: Tidak bergantung single audit; lakukan audit smart contract (Halborn) DAN audit infrastructure (Kudelski) sebelum TGE; launch bug bounty Immunefi pasca-TGE
+· Evidence: Halborn audit published (Halborn Audit, https://www.halborn.com/audits/grass); Kudelski audit (Kudelski Security, https://www.kudelskisecurity.com/); Immunefi bounty (Immunefi Grass, https://immunefi.com/bounty/grass/); Phase 3 EV-009, Phase 4 Audit History, Phase 4 Security Model Layer 7
+· Trigger: Persyaratan listing CEX tier-1 (Binance, Coinbase), proteksi treasury & user funds
+· Response: Full audit remediation, bug bounty program live
+· Result: Zero critical vulnerability post-TGE (sejauh Dec 2024), CEX listing approved
+· Supporting Dataset: Phase 3 EV-009, Phase 4 Security Model, Phase 7 Major Integrations (Halborn, Kudelski)
 
-Pola 1: Respons Proaktif terhadap Risiko Regulasi Token (Security Classification) via Legal Structure Foundation & Launchpool (Non-Purchase)
-· Trigger: Risiko SEC mengklasifikasikan token sebagai security; tekanan regulasi global pada crypto
-· Decision Pattern: Membentuk Foundation nirlaba offshore (BVI/Cayman) untuk token issuance; menggunakan Binance Launchpool (farming gratis, bukan public sale) untuk distribusi retail; menghindari IC
-· Response: Legal wrapper Foundation + distribusi non-purchase (Launchpool/airdrop) + disclaimer legal di website
-· Result: Token terdistribusi ke 120k+ holders tanpa public sale; listing di Coinbase (komplien US) tercapai
-· Supporting Dataset: Phase 2 Entity Grass Foundation; Phase 3 EV-010, EV-012; Phase 5 Financial Risk Regulatory; Phase 6 Token Sale Launchpool
+Pola 3: Regulatory Risk (Token Classification) → Mitigasi: Legal Wrapper Foundation BVI/Cayman, Launchpool (Non-Sale), KYC/AML via CEX
+· Decision Pattern: Token tidak dijual langsung ke publik (no ICO); distribusi via Binance Launchpool (farming BNB/FDUSD) — compliant framework; Foundation di jurisdiksi offshore (BVI/Cayman) untuk treasury management
+· Evidence: Foundation jurisdiction BVI/Cayman (Grass Blog, https://blog.grass.ai/introducing-grass-foundation/); Launchpool mechanism (Binance Announcement, https://www.binance.com/en/support/announcement/grass-listing); Phase 5 Financial Risk (Regulatory), Phase 3 EV-010, EV-012
+· Trigger: Risiko SEC classification sebagai security, Howey test exposure
+· Response: Struktur legal Foundation, distribusi non-sale, listing CEX regulated (Coinbase US)
+· Result: Listing Coinbase US tercapai (strong regulatory signal), token trading di 6 major CEX
+· Supporting Dataset: Phase 3 EV-010, EV-012, Phase 5 Financial Risk, Phase 8 Exchange Ecosystem (Coinbase)
 
-Pola 2: Mitigasi Risiko Keamanan Smart Contract via Audit Berkala & Bug Bounty Sebelum TGE
-· Trigger: Risiko exploit smart contract (token, staking, governance) yang bisa merusak reputasi & likuiditas
-· Decision Pattern: Audit Halborn komprehensif (published) + Kudelski (infrastructure) + Bug Bounty program (Immunefi) sebelum TGE; remediate semua critical/high findings
-· Response: Audit terbit Agustus 2024, TGE Oktober 2024; bug bounty live
-· Result: Zero exploit pasca-TGE; persyaratan CEX terpenuhi; kepercayaan tinggi
-· Supporting Dataset: Phase 3 EV-009; Phase 4 Audit History, Security Model Layer 2,7; Phase 7 Major Integrations Halborn/Kudelski/Immunefi
+Pola 4: Legal Liability Data Scraping (GDPR, CFAA, Copyright) → Mitigasi: Privacy Policy, ToS, Node Operator Agreement, Legal Counsel
+· Decision Pattern: Publikasikan Privacy Policy & ToS jelas; node operator agreement menggeser liability ke user; legal counsel retained; Sovereign Rollup target verifikasi data tanpa akses konten mentah (ZK/TEE)
+· Evidence: Grass Privacy Policy (Grass Website, https://grass.ai/privacy); Terms of Service (Grass Website, https://grass.ai/terms); Rollup ZK/TEE untuk data privacy (Grass Blog, https://blog.grass.ai/sovereign-data-rollup/); Phase 5 Financial Risk (Data Scraping Legal Liability)
+· Trigger: Gugatan AI scraping (NYT vs OpenAI, dll), regulasi GDPR/EU AI Act
+· Response: Legal framework, privacy-preserving architecture (ZK/TEE), compliance planning
+· Result: Belum ada litigation publik terhadap Grass (sejauh Dec 2024); risiko residual tinggi
+· Supporting Dataset: Phase 5 Financial Risk, Phase 4 Architecture (ZK/TEE Module), Phase 1 Foundation (Legal)
 
-Pola 3: Menangani Keterbatasan Teknis Coordinator Terpusat dengan Roadmap Desentralisasi Eksplisit (Rollup ZK/TEE) bukan Perbaikan Incremental
-· Trigger: Bottleneck Coordinator (single point of failure, censorship risk, scaling limit) pada jutaan node
-· Decision Pattern: Tidak mencoba patch Coordinator (misal multi-coordinator), melainkan investasi arsitektur baru: Sovereign Data Rollup dengan ZK/TEE verifiable execution — big bet teknis
-· Response: Pengumuman Rollup Sept 2024; R&D ZK (RISC Zero/SP1) & TEE (Intel TDX/AMD SEV); target devnet 2025
-· Result: Naratif diferensiasi kuat; tapi execution risk tinggi (proving cost, latency, complexity)
-· Supporting Dataset: Phase 3 EV-011; Phase 4 Known Limitations #1, #2, #7; Phase 8 Narrative Modular Rollup
+Pola 5: Market Crash / Volatility → Mitigasi: Market Maker Profesional, Deep Liquidity Multi-Venue, Treasury Diversification (Planned)
+· Decision Pattern: Kontrak Wintermute & GSR untuk market making di semua venue; listing 6 CEX + 2 DEX + perp untuk price discovery efisien; foundation treasury diversification ke stablecoin planned tapi belum eksekusi
+· Evidence: Market maker announcements (Grass Blog, https://blog.grass.ai/grass-token-launch/); Multi-venue listing (Phase 8 Trading Markets); Treasury diversification planned (Phase 5 Revenue Model)
+· Trigger: Volatilitas token baru post-TGE, risiko illiquidity, sell pressure unlock investor/team
+· Response: Professional MM, broad venue coverage, vesting on-chain streaming (bukan cliff besar sekaligus)
+· Result: Volume $150-300M/day stabil relatif, price discovery berfungsi, unlock streaming mengurangi cliff risk
+· Supporting Dataset: Phase 5 Financial Risk (Treasury Concentration), Phase 6 Vesting, Phase 7 Major Integrations (Wintermute, GSR), Phase 8 Liquidity
 
-Pola 4: Menanggapi Volatilitas Harga Token & Sell Pressure Unlock dengan Staking Utility & DeFi Integration Instan
-· Trigger: TGE float rendah (24%), unlock investor/team bertahap, tekanan jual potensial
-· Decision Pattern: Mengaktifkan staking native hari TGE (mengurangi circulating efektif), membuka DeFi utility (lend, perp, leverage) untuk memberikan alasan hold & yield beyond spekulasi
-· Response: Staking live EV-013, DeFi integrations EV-014 dalam 2 minggu
-· Result: Persentase supply di-stake signifikan; aktivitas DeFi on-chain tinggi; price discovery dengan utility
-· Supporting Dataset: Phase 3 EV-013, EV-014; Phase 6 Staking Utility; Phase 7 Major Integrations DeFi; Phase 8 Trading Markets
+Recurring Behavioral Pattern
 
-Pola 5: Mengelola Risiko Legal Scraping (GDPR, CFAA, Copyright) via Arsite
+Pola 1: Rilis Produk Bertahap (Phased Rollout) — Beta → Testnet → Mainnet → Mobile → Lite → TGE → Rollup
+· Decision Pattern: Setiap major component dirilis secara bertahap dengan feedback loop: Private Beta (Mar 2023) → Public Testnet+Epoch (Jun 2023) → Mainnet (Mar 2024) → Mobile (Jun 2024) → Lite WASM (Jul 2024) → TGE (Oct 2024) → DeFi Integrations (Nov 2024) → Rollup Devnet (Target 2025)
+· Evidence: Timeline rilis berurutan 8+ major milestone dalam 2 tahun (Phase 3 EV-003 melalui EV-016); Phase 4 Technical Upgrade History
+· Supporting Dataset: Phase 3 History (All Events), Phase 4 Technical Upgrade History
+
+Pola 2: Partnership dengan Entitas Tier-1 Setiap Kategori (CEX, Wallet, RPC, Audit, DeFi, Market Maker)
+· Decision Pattern: Selalu pilih partner paling kredibel/populer di setiap vertikal: Binance/Coinbase (CEX), Phantom/Solflare/Backpack (Wallet), Helius/Triton (RPC), Halborn/Kudelski (Audit), Wintermute/GSR (MM), Jupiter/Raydium/Orca (DeFi), Superteam/Colosseum (Hackathon)
+· Evidence: Daftar integrasi lengkap Phase 7 Major Integrations, Phase 8 Exchange Ecosystem, Phase 7 Wallet Ecosystem, Phase 7 Infrastructure Providers — semua tier-1 di kategori masing-masing
+· Supporting Dataset: Phase 7 Ecosystem (All Integrations), Phase 8 Market (Trading Markets, Liquidity)
+
+Pola 3: Ekspansi Platform Client Setiap Quarter (Desktop → Extension → Mobile → Lite → Rollup Client)
+· Decision Pattern: Setiap kuartal 2024 ada rilis client baru: Q1 Mainnet (Desktop/Ext stable), Q2 Mobile, Q3 Lite WASM, Q4 Rollup client (planned) — konsisten memperluas jangkauan node operator
+· Evidence: Rilis Mobile Jun 2024 (EV-007), Lite Jul 2024 (EV-008), Rollup devnet target 2025 (EV-011); Phase 4 Core Components (4 clients + Rollup)
+· Supporting Dataset: Phase 3 EV-006, EV-007, EV-008, EV-011, Phase 4 Core Components
+
+Pola 4: Transparansi Metrik Komunitas (Nodes, Discord, Twitter) — Tapi Metrik Teknis/Finansial (DAU, Revenue, Active Nodes) Tertutup
+· Decision Pattern: Publikasikan angka "headline" (2.5M nodes, 500k Discord, 600k Twitter) tapi tidak publikasikan DAU, revenue, active nodes real-time, treasury composition detail
+· Evidence: Grass Blog token launch claim 2.5M nodes (Grass Blog, https://blog.grass.ai/grass-token-launch/); Discord/Twitter counts public; Dashboard tidak expose DAU/API; Phase 8 Adoption Metrics (Daily Active Nodes: Not Disclosed, Revenue: Not Disclosed)
+· Supporting Dataset: Phase 3 EV-012, Phase 8 Adoption Metrics, Phase 5 Treasury, Phase 7 Community
+
+Pola 5: Naratif Berganda (DePIN + AI Data Layer) Dipertahankan Secara Konsisten Sejak 2023
+· Decision Pattern: Setiap announcement, blog, interview selalu menegaskan dua naratif: "DePIN Bandwidth" (supply side) + "AI Data Layer" (demand side) — tidak pivot ke satu saja
+· Evidence: Messari classification dual (Messari, https://messari.io/project/grass/profile); Grass Blog consistent messaging (Grass Blog, https://blog.grass.ai/sovereign-data-rollup/); Phase 8 Narrative Position (Dual Main Narrative)
+· Supporting Dataset: Phase 1 Foundation, Phase 8 Narrative Position, Phase 3 All Blog Announcements
+
+Strategic Trade-offs
+
+Trade-off 1: Desentralisasi vs Kecepatan Pasar (Time-to-Market)
+· Decision: Meluncurkan mainnet dengan Coordinator terpusat (Maret 2024) dan TGE (Okt 2024) sebelum Rollup siap — bukan menunggu arsitektur fully decentralized
+· Trade-off: Menerima centralization risk (Coordinator trusted) untuk mendapatkan first-mover advantage, komunitas besar, likuiditas token, dan revenue awal — risiko reputasi jika Coordinator diserang/downtime
+· Evidence: Mainnet launch Mar 2024 (EV-006) dengan Coordinator live; Rollup announced Sep 2024 (EV-011) target devnet 2025; Phase 4 Known Limitations (Limitation 1: Centralized Coordinator Dependency)
+· Supporting Dataset: Phase 3 EV-006, EV-011, Phase 4 Architecture (Coordination Layer), Phase 4 Known Limitations
+
+Trade-off 2: Kompleksitas Multi-Client (4 Codebase) vs Jangkauan Pasar Maksimal
+· Decision: Maintain 4 implementasi node terpisah (Desktop Electron/Tauri, Extension MV3, Mobile Native/Flutter, Lite WASM) — bukan single codebase dengan feature flag
+· Trade-off: Biaya engineering 3-4x, surface area bug lebih luas, maintenance burden tinggi — tapi jangkauan pengguna maksimal (Windows/macOS/Linux, Chrome/Brave/Edge, iOS/Android, Browser-only no-install)
+· Evidence: 4 client live dengan tech stack berbeda (Phase 4 Core Components, Phase 4 Programming Languages, Phase 4 Development Framework); Phase 3 EV-007, EV-008
+· Supporting Dataset: Phase 3 EV-007, EV-008, Phase 4 Core Components, Phase 4 Current Technical Stack
+
+Trade-off 3: Custom Sovereign Rollup (ZK/TEE) vs SVM Rollup / L2 Standard
+· Decision: Bangun execution layer custom dengan ZK-VM (RISC Zero/SP1) atau TEE (Intel TDX/AMD SEV) — bukan deploy SVM/Eclipse/Solana VM fork yang lebih matang
+· Trade-off: Fleksibilitas execution (custom logic scraping, provenance, ZK proof), sovereignty — tapi biaya R&D sangat tinggi, proving cost/time unknown di skala internet, audit complexity, tooling minimal, time-to-market lama
+· Evidence: Rollup announcement custom architecture (EV-011); Phase 4 Execution Environment (Custom VM/RISC Zero/SP1/TEE); Phase 7 Dependencies (RISC Zero, Succinct, Intel TDX); Phase 4 Known Limitations (Limitation 7: No Formal Proof Mainnet)
+· Supporting Dataset: Phase 3 EV-011, Phase 4 Architecture (Execution Layer, Rollup), Phase 4 Known Limitations
+
+Trade-off 4: Treasury Native Token Concentration vs Diversifikasi Stabilitas
+· Decision: Foundation treasury ~32%+ supply GRASS, minimal stablecoin/asset produktif — bukan diversifikasi agresif ke USDC/SOL/yield farming sejak awal
+· Trade-off: Upside besar jika GRASS naik, alignment incentive dengan holder — tapi downside ekstrem jika GRASS crash (treasury value drop 80%+), runway foundation volatil, tekanan jual untuk ops
+· Evidence: Tokenomics allocation foundation/ecosystem besar (Phase 6 Distribution); Solscan treasury GRASS dominant (Phase 5 Treasury); Phase 5 Financial Risk (Concentration Risk, Revenue Uncertainty)
+· Supporting Dataset: Phase 5 Treasury, Phase 6 Token Distribution, Phase 5 Financial Risk
+
+Trade-off 5: Launchpool (Free Farming) vs Public Sale (Capital Raising)
+· Decision: Distribusi publik via Binance Launchpool (farming BNB/FDUSD gratis, 3% supply) — bukan public sale/IDO yang raise capital
+· Trade-off: Tidak raise dana baru dari publik, distribusi lebih merata/komunitas, regulatory safer (non-sale) — tapi kehilangan kapital tambahan untuk runway, harga TGE ditentukan pasar bukan valuation
+· Evidence: Launchpool 3% supply (Binance Announcement, https://www.binance.com/en/support/announcement/grass-listing); No public sale (Phase 5 Fundraising Mechanism); Phase 6 Token Sale
+· Supporting Dataset: Phase 3 EV-012, Phase 5 Fundraising Mechanism, Phase 6 Token Sale
+
+Trade-off 6: On-chain Vesting Streaming (Streamflow/Cliff) vs Off-chain Cliff Manual
+· Decision: Gunakan streaming vesting on-chain untuk investor/team/foundation — bukan off-chain manual unlock
+· Trade-off: Transparan, otomatis, trust-minimized, mencegah insider dump besar sekaligus — tapi sell pressure konstan setiap block/epoch, kompleksitas smart contract, gas cost untuk claim
+· Evidence: Vesting via Streamflow/Cliff (Solscan Vesting, https://solscan.io/token/GRASS...#vesting); Phase 6 Vesting, Phase 7 Infrastructure Providers (Streamflow/Cliff)
+· Supporting Dataset: Phase 6 Token Vesting, Phase 7 Infrastructure Providers
+
+Behavioral Summary
+
+Prioritas Utama Proyek
+1. Adopsi Massa Node Operator — Melalui 4 client platform, barrier to entry minimal, insentif token/point transparan (Epoch system). Bukti: 2.5M+ nodes claimed, rilis bertahap 4 client (Phase 3, 4, 7).
+2. Product-Market Fit AI Data Sales — Membangun Sovereign Data Rollup untuk verifikasi provenance data, menjual data terstruktur ke AI labs. Bukti: Rollup announcement, enterprise sales narrative, DeFi utility untuk token demand (Phase 3 EV-011, Phase 4, Phase 7).
+3. Ekosistem DeFi Solana Lengkap — Integrasi cepat staking, lending, perp, swap, aggregator pasca-TGE. Bukti: 5 major DeFi integrasi dalam 2 minggu (Phase 3 EV-014, Phase 7, Phase 8).
+4. Keamanan & Compliance Tier-1 — Audit ganda, legal wrapper Foundation, listing CEX regulated (Coinbase US). Bukti: Halborn+Kudelski, Foundation BVI, Coinbase listing (Phase 3 EV-009, EV-010, EV-012, Phase 4, Phase 5, Phase 8).
+5. Desentralisasi Progresif — Roadmap jelas: Coordinator → Rollup ZK/TEE → On-chain Governance. Bukti: Decentralization roadmap blog, Rollup architecture, Foundation formation (Phase 3 EV-010, EV-011, Phase 4, Phase 6).
+
+Cara Mengambil Keputusan
+- Data-driven tapi speed-prioritized: Metrik epoch/node publik, tapi keputusan teknis besar (Rollup custom) diambil oleh core team kecil (Andrej, Chris, Wynd Labs) tanpa voting komunitas.
+- Partner-first: Selalu integrasi dengan incumbent terbaik kategori (Helius, Phantom, Binance, Wintermute) daripada build sendiri.
+- Phased execution: Setiap quarter milestone jelas, tidak "big bang" — memungkinkan koreksi arah.
+- Founder-led vision: Andrej (CEO) & Chris (CTO) mengontrol roadmap teknis & bisnis via Wynd Labs; Foundation multi-sig masih dominated oleh core contributors.
+
+Faktor Paling Sering Mempengaruhi Keputusan
+1. Time-to-Market & First-Mover Advantage (DePIN + AI Data race) — Driver rilis cepat, Coordinator centralized, TGE sebelum Rollup ready.
+2. Investor/Exchange Requirements — Driver audit ganda, legal wrapper, Launchpool mechanism, market maker contracts.
+3. Solana Ecosystem Alignment — Semua on-chain activity di Solana, partner Solana-native, tooling SVM/Anchor.
+4. Community Growth Metrics (Vanity Metrics) — Node count, Discord, Twitter diprioritaskan untuk marketing & fundraising narrative.
+5. Technical Differentiation (Sovereign Rollup, ZK/TEE) — Untuk memisahkan dari kompetitor DePIN bandwidth (Honeygain, Masa).
+
+Pola Evolusi
+- Tahun 1 (2021-2022): R&D internal, founding, konsep.
+- Tahun 2 (2023): Fundraising, beta, testnet publik, epoch system, community building.
+- Tahun 3 (2024 H1): Mainnet, multi-platform client (Mobile, Lite), audit, Foundation prep.
+- Tahun 3 (2024 H2): TGE, multi-CEX listing, DeFi explosion, Rollup announcement, NFT reputation, Ecosystem grants.
+- Tahun 4 (2025+ Target): Rollup devnet/mainnet, ZK/TEE proof live, Coordinator deprecated, On-chain DAO live, Enterprise revenue scale.
+
+Kekuatan Utama
+1. Eksekusi Cepat & Konsisten — 8+ major milestone 2023-2024 on schedule.
+2. Distribusi Node Terluas DePIN — 4 client platform, 2.5M+ registered, mobile+WASM unique.
+3. Ekosistem Solana Paling Lengkap — CEX, DEX, Wallet, RPC, Audit, DeFi, Hackathon semua tier-1.
+4. Naratif Dual Kuat (DePIN + AI) — Menarik kedua investor infra & AI, diferensiasi dari kompetitor.
+5. Tokenomics Transparan & Vesting On-chain — Streamflow/Cliff, tidak ada cliff besar tersembunyi.
+6. Security-First — Audit gada pre-TGE, bug bounty, zero exploit post-launch.
+
+Kelemahan Utama
+1. Coordinator Terpusat Masih Dominan — Desentralisasi (Rollup) minimal 6-12 bulan lagi; single point of failure & trust.
+2. Revenue Belum Terbukti — Enterprise data sales belum ada bukti skala/volume publik; runway bergantung treasury token & VC cash.
+3. Kompleksitas Teknis Sangat Tinggi — Custom Rollup + ZK/TEE + 4 Client + DeFi + Multi-chain = surface area bug & maintenance besar.
+4. Treasury Concentration Risk — >30% supply di Foundation wallet GRASS, tidak diversifikasi; crash token = crash runway.
+5. Metrik Kinerja Opasif — DAU, active nodes, revenue, data volume tidak透明; sulit evaluasi health protokol nyata.
+6. Ketergantungan Eksternal Kritis — Helius/Triton RPC, AWS/GCP Cloud, Wintermute/GSR MM — tidak ada redundancy fully decentralized.
+7. Regulatory Uncertainty — Data scraping legal liability (GDPR, CFAA, Copyright) belum terselesaikan; token classification risk remains.
+
+Open Threads
+
+- Verifikasi metrik "2.5M+ nodes": Apakah unique users atau total node instances (desktop+ext+mobile+lite per user)? Perlu klarifikasi dari Grass Blog atau Dashboard API. (Phase 3 EV-012, Phase 8 Adoption Metrics)
+- Daily Active Nodes (DAU) / Monthly Active Nodes (MAU) tidak dipublikasikan — perlu permintaan ke tim atau analisis on-chain proxy. (Phase 8 Adoption Metrics)
+- Pendapatan protocol (Revenue) dari penjualan data ke AI labs: Tidak ada laporan publik. Perlu transparansi dari Grass Foundation. (Phase 5 Revenue History, Phase 5 Financial Risk)
+- Alamat multisig Treasury Foundation resmi (Solscan label) untuk melacak holding on-chain real-time (GRASS, USDC, SOL, dll). (Phase 5 Treasury, Phase 2 Entity Grass Foundation)
+- Detail unlock schedule investor/team bulanan: Hanya persentase tokenomics diketahui, jadwal spesifik (cliff/stream per bulan) perlu diverifikasi on-chain via Streamflow/Cliff contracts. (Phase 6 Vesting, Phase 7 Infrastructure Providers)
+- Status Series A funding: Apakah benar sedang berlangsung/tertutup? Jumlah dan valuasi? (Phase 5 Funding History, Phase 3 EV-002/005)
+- Detail audit Kudelski Security: Lingkup (smart contract vs node client vs rollup), temuan, dan publikasi laporan lengkap. (Phase 3 EV-009, Phase 4 Audit History)
+- Keterlibatan Jito Labs: Apakah Grass menggunakan Jito-Solana client untuk validator rollup atau MEV protection, dan apakah ada stake GRASS di Jito (JitoSOL)? (Phase 2 Entity Jito Labs, Phase 3 EV-013, Phase 7 Major Integrations)
+- Timeline Sovereign Data Rollup Mainnet: Pengumuman Sept 2024, tapi tanggal estimasi launch (testnet/mainnet rollup) belum dikonfirmasi. (Phase 3 EV-011, Phase 4 Architecture Rollup)
+- Geographic distribution nodes: Tidak ada heatmap publik. Relevan untuk risiko regulasi (GDPR, CFAA). (Phase 8 Market, Phase 5 Financial Risk)
+- Apakah Grass Foundation menjalankan program buyback/burn dari revenue protocol? Tidak diumumkan. (Phase 5 Revenue Model, Phase 6 Token Utility)
+- Perbandingan teknis mendalam vs Masa/Public AI: Perlu analisis arsitektur (ZK vs TEE vs Coordinator) untuk assess kompetisi. (Phase 8 Competitor Landscape, Phase 4 Architecture)

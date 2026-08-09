@@ -3370,209 +3370,380 @@ _ref: `docs/Ontology/Hidden.md` — enriches DecisionEvent Alternatives/Reason/R
 
 PROJECT: Axie Infinity
 
-1. Membangun Appchain Gaming Mandiri (Ronin) untuk Mengatasi Keterbatasan Ethereum & Loom
-· Evidence: Migrasi dari Loom Network (Plasma) ke Ronin sidechain EVM custom pada 2021 (EV-008) setelah Loom tidak lagi fokus gaming; Ronin dirancang gas-free, throughput tinggi, konsensus PoA lalu DPoS (Phase 3 EV-008, EV-022; Phase 4 Architecture, Consensus)
-· Supporting Dataset: Phase 3 EV-008, EV-022, EV-030; Phase 4 System Architecture, Consensus Mechanism, Technical Upgrade History
+Strategic Objectives
 
-2. Menciptakan Ekonomi Dual-Token (AXS Governance + SLP Utility) dengan Play-to-Earn sebagai Loop Utama
-· Evidence: Whitepaper v1.1 mendefinisikan AXS untuk governance/staking/breeding fee, SLP untuk breeding material via gameplay reward fair launch tanpa alokasi tim (Phase 1 Token; Phase 3 EV-004, EV-005; Phase 6 Token Information, Supply, Distribution, Utility)
-· Supporting Dataset: Phase 1 Token; Phase 3 EV-004, EV-005; Phase 6 Token Information, Supply, Distribution, Utility, Inflation/Deflation
+1. Membangun ekosistem gaming blockchain mandiri dengan infrastruktur sendiri (Ronin Network)
 
-3. Mengembangkan Ekosistem Ronin Menjadi Platform Multi-Game (Appchain Ecosystem) Bukan Hanya Single Game
-· Evidence: Migrasi game third-party (Pixels, Kuroro, Zoids, The Machines Arena) ke Ronin 2023-2024; Mavis Market, Katana DEX, RNS, Ronin Wallet sebagai infrastructure shared (Phase 3 EV-025; Phase 7 Major Integrations, Ecosystem Position; Phase 8 Competitor Landscape)
-· Supporting Dataset: Phase 3 EV-025; Phase 7 Major Integrations, Ecosystem Position; Phase 8 Market Position, Competitor Landscape
+· Evidence: Migrasi dari Loom Network (Layer 2 plasma) ke Ronin Network (sidechain EVM purpose-built) pada 2021 untuk kontrol penuh konsensus, gas fee near-zero, dan throughput tinggi [Phase 3 EV-008, EV-030]; Whitepaper v1.1 menargetkan "Lunacia" metaverse dengan infrastruktur sendiri [Phase 1 Whitepaper v1.1, https://whitepaper.axieinfinity.com/]
+· Supporting Dataset: Phase 3 EV-008, EV-030; Phase 1 Whitepaper; Phase 4 System Architecture
 
-4. Desentralisasi Progresif: Dari PoA Permissioned ke DPoS Komunitas + DAO Governance AXS
-· Evidence: Validator set awal 9 entitas institusional (EV-008) → upgrade DPoS 22 validator aktif + standby (EV-022); Community Treasury dikendalikan veAXS holder via Snapshot (EV-029); RON governance direncanakan (Phase 3 EV-008, EV-022, EV-029; Phase 4 Consensus; Phase 6 Governance)
-· Supporting Dataset: Phase 3 EV-008, EV-022, EV-029; Phase 4 Consensus Mechanism; Phase 6 Governance
+2. Menciptakan ekonomi play-to-earn yang berkelanjutan melalui dual-token model (AXS governance + SLP utility)
 
-5. Menjadi Gerbang Onboarding Massal Non-Crypto Native ke Web3 Gaming
-· Evidence: Ronin Wallet non-custodial UX sederhana (EV-012); Free-to-play Origins starter Axie non-NFT (EV-019); Scholarship model via YGG guild (EV-026); 12M+ wallet created (Phase 8 Adoption Metrics)
-· Supporting Dataset: Phase 3 EV-012, EV-019, EV-026; Phase 7 Wallet Ecosystem; Phase 8 Adoption Metrics
+· Evidence: SLP fair launch Juli 2020 tanpa alokasi tim [Phase 3 EV-004]; AXS TGE Nov 2020 via Binance Launchpad [Phase 3 EV-005]; Breeding memerlukan SLP burn + AXS fee [Phase 6 Utility]; Whitepaper v1.1 mendesain tokenomics dual-token [Phase 1 Whitepaper v1.1]
+· Supporting Dataset: Phase 3 EV-004, EV-005; Phase 6 Token Information, Utility, Distribution; Phase 1 Whitepaper
 
-Keputusan: Migrasi dari Loom Network ke Ronin Sidechain Custom (2021-02-09)
-· Trigger: Loom Network mengubah fokus dari gaming ke enterprise; keterbatasan UX (gas fee, throughput) dan kebergantungan pada infra pihak ketiga
-· Evidence: Axie Blog Ronin Mainnet Launch; Ronin Docs Architecture; Whitepaper v1.1
-· Decision: Meluncurkan Ronin Mainnet (EVM sidechain purpose-built gaming) dengan validator set PoA 9 entitas, bridge ke Ethereum, migrasi aset NFT/token dari Loom
-· Immediate Result: Gas fee near-zero, block time ~3 detik, kontrol penuh konsensus, onboarding massal pengguna non-crypto via Ronin Wallet
-· Long-term Impact: Menjadi appchain gaming terbesar; memungkinkan ekspansi ekosistem multi-game (Pixels, Kuroro); fundasi revenue protocol fee (marketplace, DEX, bridge)
-· Supporting Dataset: Phase 3 EV-008, EV-030; Phase 4 System Architecture, Technical Upgrade History; Phase 7 External Dependencies (Ethereum, Ronin Bridge)
+3. Desentralisasi progresif: dari PoA permissioned (9 validator institusional) ke DPoS komunitas (22 validator aktif)
 
-Keputusan: Fair Launch SLP Tanpa Alokasi Tim/Investor (2020-07)
-· Trigger: Ingin menciptakan distribusi token yang adil dan mendorong partisipasi gameplay organik tanpa tekanan jual awal dari insider
-· Evidence: Whitepaper v1.1; CoinGecko SLP History; Etherscan SLP Contract (no mint function untuk tim)
-· Decision: SLP hanya di-mint melalui reward gameplay (PvE/PvP), supply unbounded, burn saat breeding; tidak ada ICO, pre-mine, atau allocation tim
-· Immediate Result: SLP menjadi token reward play-to-earn pertama skala besar; distribusi luas ke pemain global (terutama SEA); menciptakan narasi "Play-to-Earn"
-· Long-term Impact: Tekanan inflasi SLP berkelanjutan (mint > burn pada bear market); harga SLP volatil tinggi; model tidak berkelanjutan tanpa sink token baru → pivot ke AXS reward seasonal & SLP burn mechanism tambahan (crafting, cosmetics)
-· Supporting Dataset: Phase 3 EV-004; Phase 6 Token Information (SLP), Supply, Distribution, Inflation/Deflation; Phase 8 Market Position
+· Evidence: Ronin Mainnet 2021 PoA dengan 9 validator (Sky Mavis, Binance, Google Cloud, Animoca, Hashed, Delphi, Mechanism, DeFiance, Axie DAO) [Phase 3 EV-008]; Upgrade DPoS Jan 2023 dengan RON token, validator set diperluas ke komunitas [Phase 3 EV-022, EV-023]; RON staking untuk validator/delegator [Phase 4 Consensus Mechanism]
+· Supporting Dataset: Phase 3 EV-008, EV-022, EV-023; Phase 4 Consensus Mechanism; Phase 6 RON Tokenomics
 
-Keputusan: AXS Token Generation Event via Binance Launchpad (2020-11)
-· Trigger: Butuh pendanaan untuk pengembangan Ronin, likuiditas awal AXS, dan distribusi ke komunitas global melalui platform terpercaya
-· Evidence: Binance Launchpad Announcement; Whitepaper v1.1 (11% supply Launchpad); Etherscan AXS Contract
-· Decision: Public sale 29.7M AXS (11% total supply) @ $0.10 via Binance Launchpad; raising $2.97M; trading langsung di Binance
-· Immediate Result: AXS tersebar ke ribuan holder retail; likuiditas CEX instan; brand awareness global; dana untuk dev Ronin
-· Long-term Impact: Binance menjadi stakeholder besar (validator, exchange utama, funder bridge restitusi); ketergantungan likuiditas pada Binance; distribusi awal relatif merata dibanding VC-only sale
-· Supporting Dataset: Phase 3 EV-005; Phase 5 Funding History, Token Sale; Phase 6 TGE, Distribution; Phase 7 Exchange Ecosystem (Binance)
+4. Ekspansi Ronin dari appchain single-game (Axie) ke gaming ecosystem multi-game (Pixels, Kuroro, Zoids, dll.)
 
-Keputusan: Series B Funding $152M Led by a16z Crypto (2021-10)
-· Trigger: Ekspansi agresif pasca-Ronin Mainnet & play-to-earn boom; butuh dana untuk hiring massal, ekosistem fund, Mavis Hub, marketing global
-· Evidence: a16z Blog Series B; Axie Blog Series B; Crunchbase Funding Rounds; Valuasi $3B
-· Decision: Mengumpulkan $152M dari a16z, Accel, Paradigm, Animoca, Galaxy Digital, dan investor existing; valuasi $3B unicorn
-· Immediate Result: Treasury besar untuk runway multi-tahun; hiring >200 karyawan; launch Ronin Ecosystem Fund untuk builder third-party
-· Long-term Impact: Tekanan pertumbuhan tinggi → layoffs 21% (EV-018) saat bear market & revenue turun; investor besar (a16z, Accel) memiliki influence strategis; dana Series B mendanai restitusi Ronin Bridge $150M (EV-015)
-· Supporting Dataset: Phase 3 EV-011, EV-018; Phase 5 Funding History, Financial Dependencies; Phase 7 Entity (Investors)
+· Evidence: Pixels migrasi ke Ronin 2023 [Phase 3 EV-025]; Kuroro Beasts, Zoids Wild Arena, The Machines Arena launch di Ronin [Phase 7 Major Integrations]; Ronin Ecosystem Fund dari Series B untuk grant builder third-party [Phase 5 Financial Dependencies]
+· Supporting Dataset: Phase 3 EV-025; Phase 7 Major Integrations; Phase 5 Financial Dependencies
 
-Keputusan: Ronin Bridge Emergency Halt & Restitusi User $300M (2022-03-23 → 2022-06)
-· Trigger: Eksploit 5/9 validator key → kerugian 173.600 ETH + 25.5M USDC (~$625M); kehilangan kepercayaan komunitas & regulator
-· Evidence: Blog Ronin Post-Mortem; CertiK Alert; CoinDesk Hack Coverage; Blog Ronin Bridge Reopening; Axie Blog Reimbursement
-· Decision: Menghentikan bridge & chain sementara; Sky Mavis + Binance menyiapkan $300M ($150M masing-masing) untuk refund user 1:1; reopening bridge dengan timelag 24 jam, validator set baru, emergency pause multisig
-· Immediate Result: User di-refund; bridge beroperasi kembali; harga AXS/SLP recovery bertahap; investigasi FBI/Chainalysis dimulai
-· Long-term Impact: Arsitektur bridge diperkuat (DPoS validator set, timelag, monitoring); reputasi Sky Mavis terujui tanggung jawab; biaya oportunitas besar ($300M + sisa $325M ditanggung DAO); menjadi case study keamanan bridge
-· Supporting Dataset: Phase 3 EV-014, EV-015; Phase 4 Security Model, Audit History, Technical Upgrade History; Phase 5 Financial Risk (Bridge Exploit Legacy Cost)
+5. Membangun DAO governance yang mengendalikan Community Treasury on-chain via AXS staking
 
-Keputusan: Upgrade Konsensus PoA ke DPoS dengan RON Token Launch (2023-01)
-· Trigger: Tekanan desentralisasi (kritis pasca-hack), butuh native gas/staking token Ronin, insentiv validator komunitas
-· Evidence: Blog Ronin PoS Launch; Ronin Docs Consensus; Blog Ronin Token Launch; Ronin Explorer Staking
-· Decision: Migrasi ke Delegated Proof-of-Stake; RON TGE (1B supply, alokasi: 30% Sky Mavis vesting, 25% Ecosystem Fund, 25% Community Rewards, 20% Validator Rewards); gas fee burn EIP-1559 style; 22 validator aktif top stake
-· Immediate Result: RON transferable & bernilai ekonomis; validator set diperluas ke komunitas; staking reward live; desentralisasi konsensus dimulai
-· Long-term Impact: Keamanan jaringan tidak lagi bergantung sepenuhnya Sky Mavis; RON menjadi asset treasury & fee token; validator institusional awal (Binance, Google Cloud, Hashed, dll.) tetap dominan top 22 → risiko sentralisasi de facto
-· Supporting Dataset: Phase 3 EV-022, EV-023; Phase 4 Consensus Mechanism, Technical Upgrade History; Phase 6 Token Information (RON), Distribution, Vesting, Utility
+· Evidence: Community Treasury terbentuk 2021 [Phase 3 EV-029]; Governance via Snapshot (veAXS weight) → Timelock execution [Phase 6 Governance]; Protocol fee (Marketplace 4.25%, DEX 0.3%, Breeding AXS) mengalir ke Treasury [Phase 5 Revenue Model]
+· Supporting Dataset: Phase 3 EV-029; Phase 6 Governance; Phase 5 Revenue Model
 
-Keputusan: Peluncuran Axie Infinity: Origins Free-to-Play (2022-10)
-· Trigger: Barrier to entry tinggi (harus beli 3 Axie NFT ~$300+ peak); user growth stagnan; kompetitor free-to-play (Pixels, Gods Unchained)
-· Evidence: Axie Blog Origins Launch; Origins Website; Axie Docs Game Mechanics
-· Decision: Rilis client Unity v3 (Origins) gratis mainkan dengan starter Axie non-NFT; SLP reward hanya untuk Axie NFT; seasonal leaderboard & esports
-· Immediate Result: Penurunan barrier entry; migrasi teknis dari Flash/Web ke Unity; fondasi land gameplay (Homeland)
-· Long-term Impact: Retensi user meningkat modest; revenue breeding/marketplace tetap bergantung whale/NFT holder; esports ecosystem nascence; pivot narasi dari "Play-to-Earn" ke "Play-and-Earn / Fun First"
-· Supporting Dataset: Phase 3 EV-019; Phase 4 Core Components (Game Client); Phase 8 Market Position, Competitor Landscape (Pixels free-to-play)
+Decision Timeline
 
-Keputusan: Ekspansi Ekosistem Ronin — Onboarding Game Third-Party (2023-2024)
-· Trigger: Kebergantungan revenue pada single game (Axie) berisiko; Ronin infra (Wallet, Marketplace, DEX, Bridge) sudah matang & underutilized; Pixels mencari chain baru
-· Evidence: Ronin Ecosystem Page; Axie Blog Welcome Pixels; Pixels Website; Ronin Ecosystem games (Kuroro, Zoids, TMA)
-· Decision: Mendorong migrasi game web3 ke Ronin (Pixels, Kuroro Beasts, Zoids Wild Arena, The Machines Arena, Nifty Island); menyediakan Ronin SDK, Mavis Market, Katana DEX, Ronin Wallet, grant dari Ecosystem Fund
-· Immediate Result: Diversifikasi volume transaksi Ronin; MAU Ronin naik dari game baru; Ronin menjadi appchain gaming terbesar by active users
-· Long-term Impact: Nilai jaringan Ronin tidak tergantung hanya Axie; revenue protocol fee (marketplace, DEX, bridge) dari multi-game; kompetitor infrastruktur (Immutable X, GalaChain, Oasys) mengejar model serupa
-· Supporting Dataset: Phase 3 EV-025; Phase 7 Major Integrations (Pixels, Kuroro, Zoids, TMA), Ecosystem Position; Phase 8 Competitor Landscape (Immutable X, Gala Games)
+Keputusan: Mendirikan Sky Mavis dan mengembangkan Axie Infinity pada Loom Network (2018)
+· Trigger: Visi founder untuk game blockchain NFT-based dengan ekonomi play-to-earn; Ethereum mainnet terlalu mahal untuk game high-frequency
+· Evidence: Pendirian Sky Mavis 2018 [Phase 3 EV-001]; Mainnet Loom Mei 2018 [Phase 3 EV-002]; Whitepaper v1.0 2018-2019 [Phase 3 EV-003]
+· Decision: Build pada Loom Plasma/Basechain sebagai Layer 2 Ethereum; NFT Axie ERC-721; ekonomi awal pakai ETH
+· Immediate Result: Game playable publik 2018; fondasi komunitas awal; validasi konsep breeding/battle
+· Long-term Impact: Membuktikan product-market fit; menarik investor Series A; tapi keterbatasan Loom (throughput, UX) memicu kebutuhan chain sendiri
+· Supporting Dataset: Phase 3 EV-001, EV-002, EV-003; Phase 1 Founding Entity
 
-Evolution Pattern:
-- 2018-2020: Fondasi & Eksperimen — Bangun game di Loom Plasma; fair launch SLP; konsep play-to-earn terbentuk (EV-001, EV-002, EV-004)
-- 2020-2021: Skala & Infrastruktur — AXS Launchpad; Series A; Ronin Mainnet (PoA); Katana DEX; Ronin Wallet; validator institusional (EV-005, EV-006, EV-007, EV-008, EV-010, EV-011, EV-012, EV-013)
-- 2021-2022: Peak & Krisis — Play-to-earn boom (2.7M DAU); Series B $152M; Mavis Market; Ronin Bridge Hack $625M → Restitusi $300M; Philippines SEC Advisory; Layoffs 21% (EV-014, EV-015, EV-016, EV-017, EV-018)
-- 2022-2023: Stabilisasi & Pivot Teknis — Origins Free-to-Play; Homeland Land Alpha; RNS; DPoS Upgrade & RON TGE; Desentralisasi validator (EV-019, EV-020, EV-021, EV-022, EV-023)
-- 2023-2024: Ekspansi Ekosistem Multi-Game — Game third-party migrasi ke Ronin (Pixels, Kuroro, dll.); US SEC Wells Notice; Revenue diversifikasi; Narasi "Fun First" (EV-024, EV-025)
-- Pola evolusi: Build infra sendiri → Scale cepat dengan VC → Hadapi krisis keamanan/regulasi → Desentralisasi & diversifikasi → Platformisasi ekosistem
+Keputusan: Fair launch SLP tanpa ICO/pre-mine (2020-07)
+· Trigger: Ingin distribusi token merata ke pemain; menghindari regulasi securities; menciptakan supply/demand organic via gameplay
+· Evidence: SLP launch Juli 2020 fair launch [Phase 3 EV-004]; Whitepaper v1.1: "no team allocation, no pre-mine" [Phase 6 Distribution SLP]; CoinGecko SLP history [Phase 1 SLP]
+· Decision: SLP hanya di-mint melalui reward gameplay (PvE/PvP); tidak ada penjualan token; tidak ada alokasi tim/investor
+· Immediate Result: Pemain mulai earning SLP; volume breeding naik; komunitas tumbuh organik Philippines/Indonesia/Venezuela
+· Long-term Impact: Menjadi model "fair launch" terdepan; SLP inflasi unbounded tanpa burn mechanism awal → tekanan jual konstan; SEC Philippines advisory 2022 mengkutik SLP sebagai securities [Phase 3 EV-017]
+· Supporting Dataset: Phase 3 EV-004, EV-017; Phase 6 Distribution SLP, Inflation/Deflation; Phase 5 Financial Risk
 
-Pola 1: Membangun Infrastruktur Sendiri (Appchain) Alih-alih Bergantung L2/L1 Lain
-· Decision Pattern: Setiap kali keterbatasan chain yang dipakai terasa (Loom pivot, Ethereum gas fee tinggi), Sky Mavis memilih build chain sendiri (Ronin) dengan kontrol penuh konsensus, gas token, bridge, dan tooling
-· Evidence: Migrasi Loom → Ronin (EV-008, EV-030); Ronin design purpose-built gaming (Phase 4 Architecture); Tidak menggunakan Polygon/Immutable X/Arbitrum meski available
-· Supporting Dataset: Phase 3 EV-008, EV-030; Phase 4 System Architecture, Consensus Mechanism; Phase 7 External Dependencies (Ethereum only as settlement)
+Keputusan: AXS TGE via Binance Launchpad (2020-11)
+· Trigger: Butuh dana untuk bangun Ronin; Binance sebagai strategic partner (investor, exchange, validator); Launchpad memberikan distribusi global instan
+· Evidence: Binance Launchpad Nov 2020, 29.7M AXS @ $0.10 = $2.97M [Phase 3 EV-005]; Series A Binance Labs 2020 [Phase 3 EV-006]; Binance jadi validator Ronin [Phase 3 EV-008]
+· Decision: Public sale 11% supply via Binance Launchpad; sisa alokasi: Team 20%, Investor 15%, Foundation 14%, Ecosystem 15%, Staking 21%, Community 20%, Launchpad 11%
+· Immediate Result: $2.97M terkumpul; AXS tersebar ke ribuan holder global; liquidity di Binance day-1
+· Long-term Impact: Binance menjadi stakeholder kritis (investor, validator, exchange, bridge funder pasca-hack); token distribution terkonsentrasi pada investor/team vesting → unlock pressure 2021-2024
+· Supporting Dataset: Phase 3 EV-005, EV-006, EV-008; Phase 6 Distribution AXS, Vesting Schedule; Phase 5 Funding History
 
-Pola 2: Upgrade Konsensus Bertahap: PoA (Permissioned) → DPoS (Permissionless) → Governance On-Chain (Planned)
-· Decision Pattern: Memulai dengan validator set terpercaya institusional (PoA) untuk keamanan & performance awal, lalu membuka ke komunitas via DPoS + RON staking, target akhir governance on-chain penuh
-· Evidence: Ronin Mainnet PoA 9 validator (EV-008); DPoS Upgrade 22 validator + RON staking (EV-022, EV-023); RON Governance direncanakan (Phase 4 Consensus; Phase 6 Governance)
-· Supporting Dataset: Phase 3 EV-008, EV-022, EV-023; Phase 4 Consensus Mechanism, Technical Upgrade History; Phase 6 Governance (RON)
+Keputusan: Bangun Ronin Network (sidechain EVM sendiri) dan migrasi dari Loom (2020-2021)
+· Trigger: Loom Network pivot dari gaming; keterbatasan throughput & UX Loom; kebutuhan kontrol penuh gas fee, konsensus, bridge
+· Evidence: Ronin Testnet Des 2020 [Phase 3 EV-007]; Ronin Mainnet Feb 2021 [Phase 3 EV-008]; Migrasi massal aset dari Loom/Ethereum [Phase 3 EV-030]
+· Decision: Custom EVM sidechain (bukan L2 rollup) dengan PoA 9 validator institusional; gas fee near-zero; Canonical Bridge lock/mint ke Ethereum
+· Immediate Result: UX gas-free untuk pemain; throughput tinggi (~3s block); kontrol penuh infrastruktur; bridge TVL >$5B peak 2022
+· Long-term Impact: Kemandirian teknis; tapi PoA permissioned menciptakan single point of failure (5/9 validator key dikompromi Maret 2022) → exploit $625M [Phase 3 EV-014]; mendorong upgrade DPoS 2023
+· Supporting Dataset: Phase 3 EV-007, EV-008, EV-014, EV-022, EV-030; Phase 4 System Architecture, Consensus Mechanism, Security Model
 
-Pola 3: Security-First Post-Exploit: Timelag Withdraw, Emergency Pause, Multi-sig Guardian, Monitoring Real-time
-· Decision Pattern: Pasca-hack Ronin Bridge, setiap upgrade bridge & konsensus menambahkan layer keamanan: timelag 24 jam, emergency pause multisig (Sky Mavis + Community), validator set diperluas & diverifikasi, on-chain monitoring otomatis
-· Evidence: Bridge Reopening dengan timelag & multisig (EV-015); DPoS slashing logic deploy (EV-022); CertiK/Verichains/PeckShield/Trail of Bits audit berkala (Phase 4 Audit History); Immunefi bug bounty $500k (Phase 7 Infrastructure Providers)
-· Supporting Dataset: Phase 3 EV-015, EV-022; Phase 4 Security Model, Audit History; Phase 7 Infrastructure Providers (CertiK, Verichains, PeckShield, Immunefi)
+Keputusan: Peluncuran Katana DEX native Ronin (2021-08)
+· Trigger: Butuh on-chain liquidity & price discovery untuk AXS/SLP di Ronin; Uniswap di Ethereum terlalu mahal gas; menginginkan protocol fee revenue
+· Evidence: Katana launch Agustus 2021 [Phase 3 EV-010]; AMM Uniswap v2 style; liquidity mining RON reward [Phase 4 Core Components Katana]; Protocol fee 0.3% [Phase 5 Revenue Model]
+· Decision: Deploy AMM contracts di Ronin; incentivize LP dengan RON (pre-transferable); integrasi Chainlink Price Feeds
+· Immediate Result: On-chain swap AXS/SLP/WETH/USDC di Ronin; volume DEX naik; RON distribution ke LP awal
+· Long-term Impact: Menjadi primary liquidity venue on-chain Ronin; tapi TVL turun drastis pasca-bear market 2022-2024 (~$10-30M vs peak $1B+) [Phase 8 Liquidity]
+· Supporting Dataset: Phase 3 EV-010; Phase 4 Core Components Katana; Phase 5 Revenue Model; Phase 8 Liquidity
 
-Pola 4: Client Game Migration ke Unity untuk Cross-Platform & Extensibility
-· Decision Pattern: Migrasi dari Flash/Web client ke Unity (C#) untuk mendukung desktop, mobile, Epic Games Store, dan land gameplay (Homeland) yang butuh 3D/simulation kompleks
-· Evidence: Origins launch Unity client (EV-019); Homeland Alpha Unity (EV-020); GitHub Unity SDK (Phase 4 Programming Languages, Development Framework); App Store/Epic Games listing (Phase 3 EV-019)
-· Supporting Dataset: Phase 3 EV-019, EV-020; Phase 4 Programming Languages (C#), Development Framework (Unity), Core Components (Game Client)
+Keputusan: Series B $152M led by a16z Crypto (2021-10)
+· Trigger: Ekspansi agresif pasca-Ronin Mainnet; butuh dana untuk hiring, ecosystem fund, Mavis Hub, marketing global
+· Evidence: Series B Oct 2021 $152M valuasi $3B [Phase 3 EV-011]; Investor: a16z, Accel, Paradigm, Animoca, Galaxy, dll. [Phase 5 Funding History]
+· Decision: Equity round besar; dana dialokasikan ke Ronin Ecosystem Fund, team expansion, infrastructure
+· Immediate Result: Treasury besar; hiring massal (ke ~200+ karyawan 2022); grant builder third-party dimulai
+· Long-term Impact: Over-hiring → layoffs 21% Sept 2022 [Phase 3 EV-018]; bear market + revenue drop → bergantung sisa Series B runway; tidak ada funding baru 2023-2024
+· Supporting Dataset: Phase 3 EV-011, EV-018; Phase 5 Funding History, Financial Dependencies, Financial Risk
 
-Pola 5: Off-Chain Game Logic (Authoritative Server) + On-Chain State Settlement
-· Decision Pattern: Battle simulation, matchmaking, anti-cheat di server authoritative Sky Mavis (off-chain); hanya state transition akhir (result, reward, NFT mint/burn) di-commit on-chain via smart contract
-· Evidence: Axie Docs Game Mechanics (server-authoritative); Anti-cheat behavioral analysis (Phase 4 Security Model); Known Limitations (game server SPOF)
-· Supporting Dataset: Phase 4 Core Components (Game Client), Security Model (Game Security), Known Technical Limitations; Phase 3 EV-019 (Origins)
+Keputusan: Respons darurat Ronin Bridge Exploit $625M (2022-03-23)
+· Trigger: Penyerang kompromi 5/9 validator key (4 Sky Mavis + 1 Axie DAO) via backdoor RPC node; 173,600 ETH + 25.5M USDC dicuri
+· Evidence: Exploit Maret 2022 [Phase 3 EV-014]; Post-mortem: validator key compromise, tidak ada smart contract bug [Phase 4 Security Model, Audit History]; CertiK/Verichains/PeckShield audit [Phase 4 Audit History]
+· Decision: Hentikan bridge & jaringan sementara; investigasi forensik (FBI, Chainalysis); komitmen restitusi user; rekrut auditor tambahan (PeckShield, Trail of Bits)
+· Immediate Result: Bridge pause 3 bulan; AXS/SLP crash 30-50%; user panic; trust terpecah
+· Long-term Impact: Restitusi $300M (Sky Mavis $150M + Binance $150M) [Phase 3 EV-015]; Bridge reopening dengan timelag 24 jam, validator set baru, emergency pause multisig [Phase 4 Technical Upgrade History]; Upgrade ke DPoS 2023 mempercepat desentralisasi validator; reputational damage signifikan
+· Supporting Dataset: Phase 3 EV-014, EV-015; Phase 4 Security Model, Audit History, Technical Upgrade History; Phase 5 Financial Risk
 
-Pola 1: Fundraising Berjenjang: Series A (Strategic Investors/Validators) → Public Sale Launchpad (Retail Distribution) → Series B (Top-tier VC untuk Scale) → Protocol Revenue & DAO Treasury (Sustainable)
-· Decision Pattern: Tahap awal mengumpulkan validator & partner strategis via equity (Binance, Animoca, Hashed, Delphi, Mechanism, DeFiance); lalu distribusi retail via Binance Launchpad (AXS); lalu Series B besar untuk hiring/ekosistem; target jangka panjang revenue protocol fee + DAO treasury
-· Evidence: Series A 2020 (EV-006); AXS Launchpad 2020 (EV-005); Series B $152M 2021 (EV-011); Revenue streams: Marketplace 4.25%, DEX 0.3%, Bridge fee, Breeding fee, RNS fee (Phase 5 Revenue Model); Community Treasury on-chain (EV-029)
-· Supporting Dataset: Phase 3 EV-005, EV-006, EV-011; Phase 5 Funding History, Revenue Model, Fundraising Mechanism; Phase 6 Distribution (AXS Investors, Team, Foundation, Ecosystem)
+Keputusan: Upgrade konsensus PoA → DPoS dengan RON token (2023-01)
+· Trigger: Pasca-exploit, kebutuhan desentralisasi validator nyata; RON sebagai native gas & staking token; menjawab kritik sentralisasi
+· Evidence: DPoS upgrade Jan 2023 [Phase 3 EV-022]; RON TGE Jan 2023 [Phase 3 EV-023]; 22 validator aktif by stake [Phase 4 Consensus Mechanism]; Slashing logic deployed [Phase 4 Security Model]
+· Decision: Migrasi ke Delegated Proof-of-Stake; RON tokenomics: Community 25%, Sky Mavis 30%, Ecosystem 25%, Validator 20%; Gas fee burn (EIP-1559 style)
+· Immediate Result: Validator set terbuka komunitas; RON transferable & tradable; staking live; gas fee burn mulai mengurangi supply
+· Long-term Impact: Desentralisasi nyata tapi top validator masih didominasi entitas awal (Binance, Google Cloud, Animoca, Hashed, Delphi, Mechanism, DeFiance) [Phase 7 Major Integrations Validators]; Slashing enforcement status tidak transparan [Phase 4 Known Limitations]
+· Supporting Dataset: Phase 3 EV-022, EV-023; Phase 4 Consensus Mechanism, Security Model, Known Limitations; Phase 6 RON Distribution, Vesting
 
-Pola 2: Alokasi Token ke Komunitas/Ekosistem > Tim/Investor (AXS 67%, RON 45%, SLP 100% Komunitas)
-· Decision Pattern: Tokenomics didesain dengan alokasi mayoritas untuk community rewards, staking, ecosystem fund, validator rewards; team & investor vesting panjang (1-3 tahun cliff + linear); SLP fair launch murni
-· Evidence: AXS Distribution: 67% komunitas/ekosistem (Phase 6 Distribution); RON: 45% komunitas/validator (Phase 6 Distribution); SLP: 100% gameplay (Phase 6 Distribution); Vesting: Team 12m cliff + 36m linear, Investor 12m cliff + 24m linear (Phase 6 Vesting Schedule)
-· Supporting Dataset: Phase 6 Token Information (AXS, RON, SLP), Distribution, Vesting Schedule; Phase 3 EV-004 (SLP Fair Launch), EV-005 (AXS Launchpad), EV-023 (RON Launch)
+Keputusan: Peluncuran Axie Origins (v3) free-to-play Unity client (2022-10)
+· Trigger: Barrier to entry tinggi (perlu 3 Axie NFT ~$300+ peak 2021); Flash client deprecated; butuh user growth berkelanjutan
+· Evidence: Origins launch Oct 2022 [Phase 3 EV-019]; Unity client, starter Axie non-NFT gratis; SLP reward hanya Axie NFT [Phase 4 Core Components Game Client]
+· Decision: Rewrite client ke Unity (C#); free-to-play model; seasonal leaderboard; rune/charm system baru; NFT Axie tetap premium
+· Immediate Result: Onboarding mudah; DAU stabil ~20-50k 2024 (vs peak 2.7M Nov 2021) [Phase 8 Adoption Metrics]; Revenue shift ke cosmetic/premium NFT
+· Long-term Impact: Fondasi teknis untuk esports & land gameplay (Homeland); tapi tokenomics SLP masih bergantung NFT holder → scholar model berkurang relevan
+· Supporting Dataset: Phase 3 EV-019; Phase 4 Core Components Game Client; Phase 8 Adoption Metrics
 
-Pola 3: Restitusi Keuangan Proaktif Pasca-Krisis (Ronin Bridge Hack → $300M Refund dari Sky Mavis + Binance)
-· Decision Pattern: Di hadapi kerugian user besar akibat exploit infrastruktur, Sky Mavis menggunakan treasury sendiri + bantuan investor strategis (Binance) untuk refund 1:1, bukan mengabaikan atau meminta user bear loss
-· Evidence: Bridge Reopening & Reimbursement (EV-015); Sky Mavis $150M + Binance $150M; Sisa ~$325M ditanggung DAO/Treasury (Phase 5 Financial Risk - Bridge Exploit Legacy Cost)
-· Supporting Dataset: Phase 3 EV-014, EV-015; Phase 5 Financial Risk, Treasury; Phase 7 Entity (Binance as investor & validator)
+Keputusan: Ekspansi Ronin ke third-party games (Pixels, Kuroro, dll.) (2023-2024)
+· Trigger: Ronin infra matang tapi underutilized (hanya Axie); butuh diversifikasi revenue & TVL; network effect dari wallet/marketplace/DEX existing
+· Evidence: Pixels migrasi 2023 [Phase 3 EV-025]; Kuroro, Zoids, Machines Arena launch Ronin [Phase 7 Major Integrations]; Ronin Ecosystem Fund grant [Phase 5 Financial Dependencies]
+· Decision: Welcome external game devs; provide Ronin SDK, Wallet, Mavis Market, Katana, RNS; revenue share dari protocol fee
+· Immediate Result: Daily tx Ronin naik (1-3M/day 2024) [Phase 8 Adoption Metrics]; TVL diversifikasi; wallet addresses >12M kumulatif [Phase 8 Adoption Metrics]
+· Long-term Impact: Ronin jadi gaming appchain ecosystem; tapi Axie revenue share mengecil; competition untuk blockspace & user attention
+· Supporting Dataset: Phase 3 EV-025; Phase 7 Major Integrations; Phase 5 Financial Dependencies; Phase 8 Adoption Metrics
 
-Pola 4: Revenue Diversification dari Single Game ke Protocol Fee Multi-Source
-· Decision Pattern: Awal hanya breeding fee & marketplace fee; lalu menambah DEX fee (Katana), Bridge fee, RNS fee, Staking protocol share, Land royalties; tujuan: tidak bergantung pada volume SLP/breeding saja
-· Evidence: Revenue Streams: Mavis Market 4.25%, Katana 0.3%, Bridge withdraw fee, Breeding AXS+SLP, Land royalties, RNS fee, Staking share (Phase 5 Revenue Model); Mavis Market launch (EV-016), Katana launch (EV-010), RNS launch (EV-021)
-· Supporting Dataset: Phase 3 EV-010, EV-016, EV-021; Phase 5 Revenue Model, Revenue History
+Evolution Pattern
 
-Pola 5: Treasury Management: DAO Treasury On-Chain Transparan + Operational Treasury Sky Mavis (Opak)
-· Decision Pattern: Community Treasury (0xF40...) dikendalikan veAXS holder via governance transparan on-chain; Sky Mavis operational treasury (gaji, server, legal) tidak dipublikasikan detailnya; kedua treasury terpisah
-· Evidence: Community Treasury address & governance (EV-029, Phase 6 Governance); Sky Mavis operational treasury tidak diungkap (Phase 5 Treasury - Current Treasury Size, Composition)
-· Supporting Dataset: Phase 3 EV-029; Phase 5 Treasury, Financial Risk (Treasury Concentration Risk); Phase 6 Governance
+Perubahan Strategi: Dari Single Game + Sidechain → Gaming Ecosystem + Appchain Platform
+· Early (2018-2021): Fokus membangun Axie Infinity game & Ronin sebagai infra pendukungnya; single product, single chain
+· Mid (2021-2022): Ekspansi produk internal (Katana, Mavis Market, RNS, Origins, Homeland) — vertical integration
+· Late (2023-sekarang): Pivot ke platform — Ronin membuka untuk third-party games (Pixels, Kuroro, dll.); Axie jadi "flagship" bukan satu-satunya; revenue diversifikasi via protocol fee cross-game
+· Evidence: Phase 3 EV-025 (ekosistem expansion); Phase 7 Major Integrations (Pixels, Kuroro, Zoids); Phase 8 Market Position (Ronin sebagai gaming appchain); Phase 5 Revenue Model (fee dari multiple sources)
+· Supporting Dataset: Phase 3 EV-025; Phase 7 Major Integrations; Phase 8 Market Position; Phase 5 Revenue Model
 
-Pola 1: Validator Set = Strategic Investors + Infrastructure Providers (Binance, Google Cloud, Animoca, Hashed, Delphi, Mechanism, DeFiance)
-· Decision Pattern: Validator awal dipilih dari investor Series A/B + partner infrastruktur kunci; menciptakan alignment ekonomi & komitmen jangka panjang; DPoS membuka tapi top 22 masih didominasi entitas awal
-· Evidence: Ronin Mainnet Validator Set (EV-008): Sky Mavis, Binance, Animoca, Google Cloud, Hashed, Delphi, Mechanism, DeFiance, Axie DAO; DPoS 2023 validator aktif masih didominasi entitas serupa (Phase 7 Major Integrations - Validator Set; Phase 4 Consensus)
-· Supporting Dataset: Phase 3 EV-008; Phase 4 Consensus Mechanism; Phase 7 Major Integrations (Validator Set), External Dependencies (Google Cloud, Binance, Animoca, Hashed, Delphi, Mechanism, DeFiance)
+Perubahan Teknologi: Loom Plasma → Ronin PoA → Ronin DPoS → (Future: ZK/Parallel EVM?)
+· 2018-2020: Loom Network (Plasma/Basechain) — Layer 2 Ethereum, throughput terbatas, UX kompleks
+· 2021-2022: Ronin PoA — 9 validator permissioned, gas-free, high throughput, tapi sentralisasi kritis
+· 2023-sekarang: Ronin DPoS — 22 validator by stake, RON gas/staking, slashing, gas burn; desentralisasi nyata tapi validator set masih terpusat pada early backers
+· Future (Open Thread): Tidak ada roadmap parallel execution/ZK; EVM single-threaded bottleneck ~100-200 TPS [Phase 4 Known Limitations]
+· Evidence: Phase 3 EV-002, EV-008, EV-022, EV-030; Phase 4 System Architecture, Consensus Mechanism, Known Limitations
+· Supporting Dataset: Phase 3 EV-002, EV-008, EV-022, EV-030; Phase 4 System Architecture, Consensus Mechanism, Known Limitations
 
-Pola 2: Ekspansi Ekosistem Via Migration Game Third-Party ke Ronin (Pixels, Kuroro, Zoids, TMA, Nifty Island)
-· Decision Pattern: Setelah infra matang (Wallet, Marketplace, DEX, Bridge, SDK), aktif merekrut game lain migrasi ke Ronin dengan insentif grant, co-marketing, shared liquidity; Pixels sebagai anchor tenant pertama besar
-· Evidence: EV-025 (Ekspansi Ekosistem); Ronin Ecosystem Page; Axie Blog Welcome Pixels; Major Integrations (Pixels, Kuroro, Zoids, TMA); Phase 8 Competitor Landscape (Immutable X, GalaChain juga mengejar game)
-· Supporting Dataset: Phase 3 EV-025; Phase 7 Major Integrations, Ecosystem Position; Phase 8 Competitor Landscape
+Perubahan Tokenomics: Dual Token (AXS+SLP) → Triple Token (AXS+SLP+RON)
+· 2020: SLP fair launch (utility/gameplay reward); AXS Launchpad (governance/staking)
+· 2021: AXS staking live; SLP inflation unbounded, burn hanya breeding
+· 2023: RON launch — native gas, staking, validator reward, bridge security; triple token model dengan utility berbeda-beda
+· Tantangan: Tiga token menciptakan fragmentation liquidity & user confusion; SLP masih inflasi tanpa hard cap; AXS tidak ada burn mechanism; RON gas burn baru mulai efektif
+· Evidence: Phase 3 EV-004, EV-005, EV-023; Phase 6 Token Information (3 tokens), Supply, Inflation/Deflation, Utility
+· Supporting Dataset: Phase 3 EV-004, EV-005, EV-023; Phase 6 Token Information, Supply, Inflation/Deflation, Utility
 
-Pola 3: Partnership Infrastructure Kritis: Chainlink (Oracle), Google Cloud (Validator/Infra), The Graph (Indexing), CertiK/Verichains/PeckShield (Audit), Immunefi (Bug Bounty)
-· Decision Pattern: Mengandalkan provider best-in-class untuk setiap layer kritis: oracle harga (Chainlink), cloud infra (GCP), indexing (The Graph), security audit (multi-firm), bug bounty (Immunefi); tidak build sendiri komponen non-core
-· Evidence: Chainlink Price Feeds & VRF integration (Phase 7 Major Integrations, External Dependencies); Google Cloud validator & infra (EV-013); The Graph subgraph Ronin (Phase 7 External Dependencies); Audit firms & Immunefi (Phase 4 Audit History, Phase 7 Infrastructure Providers)
-· Supporting Dataset: Phase 4 Oracle Network, Infrastructure; Phase 7 External Dependencies, Infrastructure Providers, Major Integrations; Phase 3 EV-013
+Perubahan Governance: Team-controlled → DAO Treasury (AXS) + On-chain Governance (RON planned)
+· 2018-2020: Sky Mavis kontrol penuh keputusan produk, tokenomics, treasury
+· 2021: Community Treasury terbentuk [EV-029]; AXS staking governance via Snapshot → Timelock multisig
+· 2023: RON governance direncanakan (on-chain voting via staking) tapi belum full live 2024 [Phase 6 Governance RON]
+· Realitas: Sky Mavis tetap dominan eksekusi produk; DAO mengendalikan treasury allocation tapi tidak product roadmap
+· Evidence: Phase 3 EV-029; Phase 6 Governance (AXS live, RON planned); Phase 2 Entity (Sky Mavis core developer)
+· Supporting Dataset: Phase 3 EV-029; Phase 6 Governance; Phase 2 Entity
 
-Pola 4: Wallet & UX Sebagai Gateway Onboarding: Ronin Wallet Native (Non-custodial, RNS, Multi-chain) + MetaMask/Trust Wallet/Coinbase Wallet Support
-· Decision Pattern: Bangun wallet first-party (Ronin Wallet) untuk kontrol UX penuh (gasless, RNS, onboarding non-crypto), sambil support wallet populer via custom RPC/native integration untuk reach maksimal
-· Evidence: Ronin Wallet launch (EV-012); RNS integration (EV-021); MetaMask custom RPC legacy; Trust Wallet & Coinbase Wallet native Ronin support 2023+ (Phase 7 Wallet Ecosystem); 12M+ wallet created (Phase 8 Adoption Metrics)
-· Supporting Dataset: Phase 3 EV-012, EV-021; Phase 7 Wallet Ecosystem; Phase 8 Adoption Metrics
+Technical Decision Pattern
 
-Pola 5: Guild & Scholarship Model Sebagai Distribusi Massal (YGG sebagai Partner Utama)
-· Decision Pattern: Mengakui guild (YGG) sebagai partner distribusi utama untuk onboarding pemain non-crypto (scholar) di negara berkembang; YGG menyediakan Axie NFT, profit-sharing SLP, governance participation
-· Evidence: YGG partnership (EV-026); YGG Website; CoinDesk YGG Axie; Philippines user base besar (Phase 8 Geographic Focus); Phase 7 Entity (YGG)
-· Supporting Dataset: Phase 3 EV-026; Phase 7 Entity (Yield Guild Games); Phase 8 Market Position (Geographic Focus)
+Pola 1: Ethereum Alignment First — Build EVM-compatible, settle to Ethereum, bridge canonical
+· Decision Pattern: Selalu memilih arsitektur yang compatible dengan Ethereum (EVM, Solidity, ERC standards) dan menggunakan Ethereum sebagai settlement layer via canonical bridge, bukan kompetisi atau L2 lain
+· Evidence: Ronin EVM sidechain (bukan L2 rollup tapi EVM-compatible) [Phase 4 System Architecture]; Canonical Bridge lock/mint ke Ethereum [Phase 4 Core Components Bridge]; AXS/SLP ERC-20 di Ethereum mainnet [Phase 6 Token Information]; Chainlink Price Feeds dari Ethereum mainnet [Phase 7 External Dependencies]
+· Supporting Dataset: Phase 4 System Architecture, Core Components; Phase 6 Token Information; Phase 7 External Dependencies
 
-Pola 1: Governance Dual-Layer: AXS untuk Protokol Game & Treasury; RON untuk Jaringan Ronin (Planned)
-· Decision Pattern: Memisahkan governance token game (AXS) dari governance chain (RON); AXS governance live via Snapshot + Timelock multisig; RON governance on-chain direncanakan tapi belum sepenuhnya aktif 2024
-· Evidence: AXS Governance: Forum → Snapshot → Timelock (Phase 6 Governance); RON Governance: On-chain voting planned (Phase 6 Governance - RON; Phase 4 Consensus); Community Treasury controlled by AXS stakers (EV-029)
-· Supporting Dataset: Phase 3 EV-029; Phase 4 Consensus Mechanism; Phase 6 Governance (AXS, RON), Utility (Governance)
+Pola 2: Upgrade Bertahap dengan Pengujian Ekstensif & Audit Berlapis
+· Decision Pattern: Setiap major upgrade (Mainnet, Katana, Mavis Market, DPoS) melalui: Testnet publik → Audit multi-firm (CertiK, Verichains, PeckShield, Trail of Bits) → Mainnet phased rollout → Bug bounty Immunefi
+· Evidence: Ronin Testnet Des 2020 sebelum Mainnet Feb 2021 [Phase 3 EV-007, EV-008]; Audit CertiK/Verichains pre-Katana 2021 [Phase 4 Audit History]; Audit Trail of Bits DPoS 2023 [Phase 4 Audit History]; Bug bounty $500k Immunefi [Phase 7 External Dependencies]
+· Supporting Dataset: Phase 3 EV-007, EV-008; Phase 4 Audit History, Security Model; Phase 7 External Dependencies
 
-Pola 2: Off-Chain Signaling (Snapshot) → On-Chain Execution (Timelock Multisig) untuk AXS
-· Decision Pattern: Gasless voting via Snapshot dengan weight veAXS/staked AXS; proposal lolos dieksekusi via timelock multisig oleh Guardian/DAO; quorum 4M AXS, passing >50%
-· Evidence: Snapshot Axie DAO (Phase 6 Governance); Axie Gov Forum (Phase 6 Governance); Whitepaper v1.1; Phase 3 EV-029 (Treasury Governance)
-· Supporting Dataset: Phase 3 EV-029; Phase 6 Governance, Utility (Governance)
+Pola 3: Off-chain Game Logic dengan On-chain State Settlement (Hybrid)
+· Decision Pattern: Game logic kompleks (battle simulation, matchmaking, anti-cheat) dijalankan off-chain di server authoritative Sky Mavis; hanya state transition akhir (reward, breeding result, NFT transfer) yang di-settle on-chain via smart contract
+· Evidence: Unity client + server authoritative battle [Phase 4 Core Components Game Client]; Anti-cheat server-side [Phase 4 Security Model]; Breeding/battle logging on-chain [Phase 4 Core Components Game Protocol]; Known limitation: "Game client bergantung server authoritative Sky Mavis" [Phase 4 Known Limitations]
+· Supporting Dataset: Phase 4 Core Components, Security Model, Known Limitations
 
-Pola 3: Delegasi Voting Power ke Delegate (AXS) & ke Validator via Staking (RON)
-· Decision Pattern: Pemegang token bisa mendelegasikan voting power: AXS via Snapshot delegation ke delegate komunitas; RON secara implisit via staking ke validator (validator = delegate konsensus)
-· Evidence: AXS Snapshot delegation (Phase 6 Governance); RON staking delegation ke validator (Phase 4 Consensus, Phase 6 Utility - Validator Staking)
-· Supporting Dataset: Phase 4 Consensus Mechanism; Phase 6 Governance, Utility (Governance, Validator Staking)
+Pola 4: Custom Infrastructure over General-purpose — Bangun sendiri bridge, DEX, marketplace, wallet, naming service
+· Decision Pattern: Daripada integrasi general-purpose (LayerZero, Uniswap, OpenSea, MetaMask, ENS), Sky Mavis membangun versi sendiri yang dioptimalkan untuk Ronin: Ronin Bridge, Katana DEX, Mavis Market, Ronin Wallet, RNS
+· Evidence: Ronin Bridge canonical (bukan LayerZero/Wormhole) [Phase 4 Core Components Bridge]; Katana DEX native (bukan Uniswap deploy) [Phase 4 Core Components Katana]; Mavis Market Seaport-fork (bukan OpenSea) [Phase 4 Core Components Mavis Market]; Ronin Wallet first-party (bukan MetaMask only) [Phase 4 Core Components Wallet]; RNS (bukan ENS) [Phase 4 Core Components RNS]
+· Supporting Dataset: Phase 4 Core Components; Phase 7 Major Integrations
 
-Pola 4: Proposal System: Forum Discussion → Snapshot Vote → Timelock Execution (48 jam)
-· Decision Pattern: Proses standar: diskusi di gov.axieinfinity.com → vote di Snapshot (quorum 4M AXS) → eksekusi via timelock 48 jam oleh multisig; transparan & auditable
-· Evidence: Axie Gov Forum & Snapshot (Phase 6 Governance); Whitepaper v1.1; Phase 3 EV-029 (Treasury proposals)
-· Supporting Dataset: Phase 3 EV-029; Phase 6 Governance
+Pola 5: Validator Set Institutional-First lalu Progressive Decentralization
+· Decision Pattern: Mulai dengan validator institusional terpercaya (Binance, Google Cloud, Animoca, Hashed, Delphi, Mechanism, DeFiance) untuk keamanan & credibilitas awal; lalu buka ke komunitas via DPoS staking setelah infra matang & exploit memaksa desentralisasi
+· Evidence: PoA 9 validator institutsiional 2021 [Phase 3 EV-008]; DPoS 2023 buka untuk komunitas [Phase 3 EV-022]; Validator set 2024 masih didominasi early backers [Phase 7 Major Integrations Validators]; Phase 4 Known Limitations "validator set permissioned historis"
+· Supporting Dataset: Phase 3 EV-008, EV-022; Phase 4 Consensus Mechanism, Known Limitations; Phase 7 Major Integrations
 
-Pola 5: Treasury Governance Fully On-Chain Controlled by AXS Stakers (Community Treasury)
-· Decision Pattern: Community Treasury (0xF40...) 100% dikendalikan proposal AXS staker; Sky Mavis operational treasury terpisah tidak bisa disentuh DAO; proposal untuk grant, bounty, dev, darurat
-· Evidence: Community Treasury address & control (EV-029, Phase 6 Governance); Axie Gov Forum Treasury category (Phase 6 Governance); Sky Mavis operational treasury opaque (Phase 5 Treasury)
-· Supporting Dataset: Phase 3 EV-029; Phase 5 Treasury; Phase 6 Governance, Utility (Treasury Asset)
+Financial Decision Pattern
 
-Pola 1: Exploit Response: Immediate Halt → Forensic Investigation → User Restitusi (Self-funded + Investor) → Security Upgrade → Transparent Post-Mortem
-· Decision Pattern: Saat hack besar (Ronin Bridge $625M), urutan respons: pause chain & bridge → investigasi root cause (5/9 validator key compromise via gas-free RPC backdoor) → refund user 1:1 dari treasury Sky Mavis + Binance ($300M) → reopening dengan timelag, validator baru, multisig pause → publish post-mortem detail
-· Evidence: EV-014 (Exploit), EV-015 (Restitusi & Reopening); Blog Ronin Post-Mortem; CertiK Alert; FBI/Chainalysis involvement (Phase 3 EV-014, EV-015; Phase 4 Security Model, Audit History)
-· Trigger: Ronin Bridge Exploit 2022-03-23 (173.6k ETH + 25.5M USDC dicuri)
-· Response: Halt bridge & chain; forensic; $300M refund; reopening dengan enhanced security; post-mortem publik
-· Result: User refunded; trust partial recovery; security architecture strengthened; $325M loss absorbed by DAO; regulatory scrutiny increased
-· Supporting Dataset: Phase 3 EV-014, EV-015; Phase 4 Security Model, Audit History, Technical Upgrade History; Phase 5 Financial Risk (Bridge Exploit Legacy Cost)
+Pola 1: Pendanaan Bertahap dengan Valuasi Meningkat — Series A (strategic) → Launchpad (retail) → Series B (mega-round)
+· Decision Pattern: Series A 2020 dari investor strategic (Binance Labs, Animoca, Hashed, Delphi, Mechanism, DeFiance) yang jadi validator & partner; AXS Launchpad Nov 2020 untuk distribusi retail & likuiditas; Series B Oct 2021 $152M valuasi $3B dari top-tier VC (a16z, Accel, Paradigm) untuk ekspansi agresif
+· Evidence: Phase 3 EV-006 (Series A), EV-005 (Launchpad), EV-011 (Series B); Phase 5 Funding History; Phase 2 Entity (Investor list)
+· Supporting Dataset: Phase 3 EV-005, EV-006, EV-011; Phase 5 Funding History; Phase 2 Entity
 
-Pola 2: Market Crash & Bear Market Response: Layoffs (21%), Focus pada Core Product, Pivot Narrative "Fun First", Free-to-Play
-· Decision Pattern: Pasca-peak 2021, revenue turun drastis (marketplace, DEX, breeding fee); Sky Mavis memangkas biaya (layoffs 21% ~50-60 orang), menghentikan proyek non-core, fokus ke Origins, Homeland, Ronin infra; mengubah narasi dari "Play-to-Earn" ke "Play-and-Earn / Fun First"
-· Evidence: EV-018 (Layoffs 2022-09); EV-019 (Origins Free-to-Play); Axie Blog seasonal updates; The Block Layoffs article; Phase 5 Financial Risk (Revenue Decline, Funding Dependency); Phase 8 Market Position (Narrative)
+Pola 2: Protocol Revenue Diversification — Dari single game revenue ke multi-stream protocol fee
+· Decision Pattern: Awal hanya breeding fee & marketplace fee; lalu tambah DEX fee (Katana 2021), Bridge fee, RNS fee, Staking protocol share; target: revenue tidak tergantung Axie volume saja tapi total Ronin activity
+· Evidence: Phase 5 Revenue Model (Marketplace 4.25%, DEX 0.3%, Bridge fee, Breeding AXS+SLP, RNS fee, Staking share); Phase 3 EV-010 (Katana), EV-016 (Mavis Market), EV-021 (RNS); Phase 4 Core Components
+· Supporting Dataset: Phase 5 Revenue Model; Phase 3 EV-010, EV-016, EV-021; Phase 4 Core Components
+
+Pola 3: Treasury Management — DAO Treasury on-chain transparan + Operational Treasury off-chain (Sky Mavis)
+· Decision Pattern: Community Treasury on-chain (alamat 0xF40...) dikendalikan AXS staker via governance; Sky Mavis operational treasury terpisah tidak publik; Series B dana untuk runway & ecosystem fund; restitusi hack $300M dari Sky Mavis + Binance (bukan DAO treasury)
+· Evidence: Phase 3 EV-015 (restitusi Sky Mavis+Binance), EV-029 (Community Treasury); Phase 5 Treasury (DAO on-chain, Sky Mavis off-chain); Phase 5 Financial Dependencies (Series B treasury dependency)
+· Supporting Dataset: Phase 3 EV-015, EV-029; Phase 5 Treasury, Financial Dependencies
+
+Pola 4: Fair Launch untuk Utility Token (SLP, RON community) — No ICO, No Team Allocation
+· Decision Pattern: SLP 2020 fair launch via gameplay; RON 2023 community claim + validator rewards + ecosystem fund — tidak ada public sale untuk keduanya; hanya AXS yang ada Launchpad sale
+· Evidence: Phase 3 EV-004 (SLP fair launch), EV-023 (RON distribution); Phase 6 Distribution SLP (100% community), RON (45% community/validator, 0% investor); Phase 6 Token Sale (AXS only Launchpad)
+· Supporting Dataset: Phase 3 EV-004, EV-023; Phase 6 Distribution, Token Sale
+
+Pola 5: Investor sebagai Strategic Partner, bukan hanya Capital — Validator, Market Maker, Ecosystem Builder
+· Decision Pattern: Investor Series A/B (Binance, Animoca, Hashed, Delphi, Mechanism, DeFiance, Galaxy, a16z, Accel, Paradigm) diundang jadi validator Ronin, market maker AXS/SLP, grant committee, builder di Ronin
+· Evidence: Phase 2 Entity (Investor list semua validator); Phase 3 EV-008 (validator set awal = investor); Phase 7 Major Integrations (Binance, Animoca, Hashed, Delphi, Mechanism, DeFiance validator); Phase 5 Financial Dependencies
+· Supporting Dataset: Phase 2 Entity; Phase 3 EV-008; Phase 7 Major Integrations; Phase 5 Financial Dependencies
+
+Ecosystem Decision Pattern
+
+Pola 1: Vertical Integration First, Horizontal Expansion Later — Bangun full stack sendiri (chain, bridge, DEX, marketplace, wallet, naming, game client) lalu buka untuk third-party
+· Decision Pattern: 2018-2022: Sky Mavis bangun semua komponen kritis internal; 2023-sekarang: Ronin SDK, Mavis Market, Katana, Wallet, RNS dibuka untuk game third-party (Pixels, Kuroro, Zoids, Machines Arena)
+· Evidence: Phase 4 Core Components (semua first-party); Phase 3 EV-025 (ekosistem expansion 2023); Phase 7 Major Integrations (Pixels, Kuroro, Zoids, Machines Arena); Phase 7 Infrastructure Providers (Unity, Ledger, Cloudflare, HashiCorp — third-party infra only)
+· Supporting Dataset: Phase 4 Core Components; Phase 3 EV-025; Phase 7 Major Integrations, Infrastructure Providers
+
+Pola 2: Strategic Partnership dengan Entitas yang Menjadi Validator — Investor, Cloud Provider, Market Maker = Validator Set
+· Decision Pattern: Validator set Ronin (PoA awal, DPoS sekarang) terdiri dari: Binance (investor+exchange), Google Cloud (infra), Animoca (investor+metaverse), Hashed/Delphi/Mechanism/DeFiance (investor+advisor), Axie DAO (community) — alignment incentif via staking reward & network success
+· Evidence: Phase 3 EV-008 (validator awal); Phase 3 EV-013 (Google Cloud join); Phase 7 Major Integrations (semua validator); Phase 2 Entity (Investor = Validator)
+· Supporting Dataset: Phase 3 EV-008, EV-013; Phase 7 Major Integrations; Phase 2 Entity
+
+Pola 3: Guild Partnership untuk User Acquisition di Emerging Markets — YGG sebagai scholarship manager terbesar
+· Decision Pattern: Partnership dengan YGG (dan guild lain) untuk onboarding massal non-crypto users di Philippines, Indonesia, Venezuela via scholarship model (Axie NFT pinjaman, profit-sharing SLP); guild jadi liquidity provider NFT & distributor token
+· Evidence: Phase 3 EV-026 (YGG scholarship terbesar); Phase 2 Entity (YGG Organization); Phase 7 Major Integrations (YGG); Phase 8 Market Position (Geographic focus Southeast Asia & LatAm)
+· Supporting Dataset: Phase 3 EV-026; Phase 2 Entity; Phase 7 Major Integrations; Phase 8 Market Position
+
+Pola 4: Migration-Friendly Ecosystem untuk Game Third-Party — SDK, Wallet, Marketplace, DEX, Bridge siap pakai
+· Decision Pattern: Ronin menawarkan full-stack infra (Ronin SDK, Ronin Wallet, Mavis Market, Katana DEX, Ronin Bridge, RNS) sehingga game dev tinggal build game logic tanpa bangin infra; revenue share dari protocol fee
+· Evidence: Phase 3 EV-025 (Pixels, Kuroro migrasi); Phase 7 Major Integrations (Pixels, Kuroro, Zoids, Machines Arena); Phase 4 Core Components (SDK, Wallet, Market, DEX, Bridge, RNS); Phase 5 Financial Dependencies (Ecosystem Fund grant)
+· Supporting Dataset: Phase 3 EV-025; Phase 7 Major Integrations; Phase 4 Core Components; Phase 5 Financial Dependencies
+
+Pola 5: Infrastructure Dependency pada Google Cloud & HashiCorp — Enterprise-grade ops untuk validator & secrets
+· Decision Pattern: Validator node & kritikal infra di-host di Google Cloud GKE; Secrets management via HashiCorp Vault; Cloudflare CDN/DDoS; Datadog/Prometheus monitoring — enterprise stack untuk reliability
+· Evidence: Phase 3 EV-013 (Google Cloud validator); Phase 4 Current Technical Stack (GCP, HashiCorp, Cloudflare, Datadog); Phase 7 Infrastructure Providers (GCP, HashiCorp, Cloudflare, Datadog)
+· Supporting Dataset: Phase 3 EV-013; Phase 4 Current Technical Stack; Phase 7 Infrastructure Providers
+
+Governance Decision Pattern
+
+Pola 1: Dual-Layer Governance — AXS untuk Game/Protocol Treasury, RON untuk Network Parameters (planned)
+· Decision Pattern: AXS governance live via Snapshot (off-chain vote, veAXS weight) → Timelock multisig execution; mengendalikan Community Treasury, protocol fee parameters, game parameters; RON governance direncanakan on-chain via staking voting tapi belum full live 2024
+· Evidence: Phase 6 Governance (AXS live, RON planned/partial); Phase 3 EV-029 (Community Treasury); Phase 4 System Architecture (Ronin consensus separate dari Axie protocol)
+· Supporting Dataset: Phase 6 Governance; Phase 3 EV-029; Phase 4 System Architecture
+
+Pola 2: Snapshot Gasless Voting dengan Delegation — Partisipasi rendah diatasi dengan delegation
+· Decision Pattern: Voting off-chain di Snapshot (gasless) dengan weight = staked AXS; delegation ke delegate lain untuk partisipasi pasif; quorum 4M AXS, passing >50%; execution via Timelock 48 jam oleh Guardian/DAO multisig
+· Evidence: Phase 6 Governance (Voting System, Voting Power, Delegation, Proposal System); Phase 3 EV-029 (Treasury governance); Snapshot AXS [Phase 6 Governance Sources]
+· Supporting Dataset: Phase 6 Governance; Phase 3 EV-029
+
+Pola 3: Treasury-First DAO — DAO mengendalikan dana, bukan product roadmap
+· Decision Pattern: Community Treasury on-chain transparan [EV-029]; proposal untuk grant, bounty, pengembangan, darurat; Sky Mavis tetap kontrol product roadmap & hiring; DAO tidak punya formal veto atas keputusan teknis Sky Mavis
+· Evidence: Phase 6 Governance (Treasury Governance); Phase 3 EV-029; Phase 5 Treasury (DAO vs Sky Mavis operational treasury terpisah)
+· Supporting Dataset: Phase 6 Governance; Phase 3 EV-029; Phase 5 Treasury
+
+Pola 4: Emergency Multisig untuk Crisis Response — Guardian/DAO multisig bisa pause bridge, upgrade kontrak darurat
+· Decision Pattern: Bridge emergency pause multisig (Sky Mavis + community) [Phase 4 Core Components Bridge]; Timelock 48 jam untuk proposal execution; post-exploit 2022: multisig digunakan untuk halt bridge & coordinate response
+· Evidence: Phase 4 Core Components Bridge (emergency pause multisig); Phase 3 EV-014 (exploit response halt bridge); Phase 4 Technical Upgrade History (Bridge reopening dengan emergency pause)
+· Supporting Dataset: Phase 4 Core Components Bridge; Phase 3 EV-014; Phase 4 Technical Upgrade History
+
+Risk Response Pattern
+
+Pola 1: Exploit Response — Immediate Halt, Forensic Investigation, Full Restitusi, Architecture Overhaul
+· Trigger: Ronin Bridge Exploit Maret 2022 ($625M, 5/9 validator key compromised) [EV-014]
+· Response: Pause bridge & chain sementara; FBI/Chainalysis investigation; Sky Mavis $150M + Binance $150M restitusi user 1:1 ETH [EV-015]; Bridge reopening dengan validator set baru, timelag 24 jam, emergency pause multisig [Phase 4 Technical Upgrade History]; Accelerate DPoS migration untuk desentralisasi validator [EV-022]; Tambah auditor PeckShield, Trail of Bits [Phase 4 Audit History]
+· Result: User di-refund penuh; bridge live kembali; trust recovery bertahap; DPoS live 2023; reputational damage signifikan tapi survivable
+· Supporting Dataset: Phase 3 EV-014, EV-015, EV-022; Phase 4 Security Model, Audit History, Technical Upgrade History; Phase 5 Financial Risk
+
+Pola 2: Market Crash / Bear Market — Cost Cutting (Layoffs), Focus Core Product, Extend Runway
+· Trigger: Bear market 2022, revenue drop (volume marketplace/DEX/breeding turun >90% dari peak), AXS/SLP price crash
+· Response: Layoffs ~21% karyawan Sept 2022 [EV-018]; Fokus ke core product (Origins, Homeland, Ronin infra); Hentikan hiring non-kritis; Bergantung sisa Series B treasury ($152M) untuk runway
+· Result: Operasional survive 2023-2024 tanpa funding baru; Origins & Homeland launch; tapi team size & velocity berkurang; tidak ada funding round baru tercatat 2023-2024
+· Supporting Dataset: Phase 3 EV-018; Phase 5 Financial Risk (Revenue Decline, Funding Dependency), Financial Dependencies
+
+Pola 3: Regulatory Pressure — No Direct Confrontation, Geographic Diversification, Legal Defense Fund
+· Trigger: Philippines SEC Advisory 2022 (SLP securities tidak terdaftar) [EV-017]; US SEC Wells Notice 2024 (AXS securities, Katana/Ronin Bridge exchange tidak terdaftar) [EV-024]
+· Response: Philippines: Tidak ada respons hukum publik resmi; terus operasi global; US: Menyiapkan respons hukum (Wells response); Tidak ada geo-blocking resmi; Legal reserve kemungkinan dari treasury (tidak dikonfirmasi)
+· Result: Philippines advisory belum enforceable di luar yurisdiksi; US Wells Notice masih pra-litigasi (Maret 2024); Ketidakpastian hukum AXS di AS berlanjut
+· Supporting Dataset: Phase 3 EV-017, EV-024; Phase 5 Financial Risk (Legal Financial Risk); Phase 2 Entity (Government entities)
+
+Pola 4: Validator Compromise / Centralization Risk — Accelerate Decentralization, Add Slashing, Diversify Validator Set
+· Trigger: Exploit 2022 akar masalah: 5/9 validator key dikompromi (4 Sky Mavis + 1 Axie DAO) — sentralisasi PoA [EV-014]; Kritik komunitas sentralisasi
+· Response: DPoS upgrade Jan 2023 [EV-022] — validator set 22 by stake, slashing logic, RON staking; Buka validator untuk komunitas; Tambah independent validator (bukan investor awal)
+· Result: Desentralisasi nyata tapi top validator masih didominasi early backers (Binance, Google Cloud, Animoca, Hashed, Delphi, Mechanism, DeFiance) [Phase 7 Major Integrations]; Slashing enforcement status unclear [Phase 4 Known Limitations]
+· Supporting Dataset: Phase 3 EV-014, EV-022; Phase 4 Consensus Mechanism, Known Limitations; Phase 7 Major Integrations
+
+Pola 5: Token Inflation / Sell Pressure — Introduce Burn Mechanism, Shift Reward to Staking, New Utility
+· Trigger: SLP inflasi unbounded (mint gameplay, burn hanya breeding) → chronic sell pressure; AXS unlock vesting 2021-2024 → supply overhang
+· Response: SLP: Seasonal reward adjustment (kurangi emission), Axie Origins: SLP reward hanya NFT holder (bukan starter) [EV-019]; AXS: Staking reward share protocol fee (align holder); RON: Gas fee burn (EIP-1559) sejak DPoS 2023 [Phase 4 Consensus Mechanism]; Breeding fee AXS masuk Treasury (tidak burn)
+· Result: SLP price stabilisasi di level rendah 2023-2024; AXS staking participation tinggi (~35-55% circ supply) [Phase 8 Adoption Metrics]; RON burn mulai efektif tapi supply besar (1B)
+· Supporting Dataset: Phase 3 EV-019; Phase 6 Inflation/Deflation (SLP burn only breeding, RON gas burn, AXS no burn); Phase 8 Adoption Metrics (Staked AXS)
+
+Recurring Behavioral Pattern
+
+Pola 1: Selalu Membangun Infra Sendiri (Not Invented Here) — Bridge, DEX, Marketplace, Wallet, Naming Service semua custom-built
+· Evidence: Ronin Bridge (bukan LayerZero/Wormhole) [Phase 4 Core Components]; Katana DEX (bukan Uniswap deploy) [Phase 4 Core Components]; Mavis Market (Seaport fork, bukan OpenSea) [Phase 4 Core Components]; Ronin Wallet (first-party, bukan MetaMask only) [Phase 4 Core Components]; RNS (bukan ENS) [Phase 4 Core Components]
+· Supporting Dataset: Phase 4 Core Components; Phase 7 Major Integrations
+
+Pola 2: Investor = Validator = Partner — Setiap investor besar diundah jadi validator Ronin, align incentif via staking reward
+· Evidence: Binance, Animoca, Hashed, Delphi, Mechanism, DeFiance, Google Cloud — semua investor/partner jadi validator PoA 2021 & DPoS 2023 [Phase 3 EV-008, EV-013, EV-022; Phase 7 Major Integrations Validators]; Phase 2 Entity (Investor list = Validator list)
+· Supporting Dataset: Phase 3 EV-008, EV-013, EV-022; Phase 7 Major Integrations; Phase 2 Entity
+
+Pola 3: Major Upgrade Pasca-Krisis — Exploit 2022 → DPoS 2023; Bear market 2022 → Origins free-to-play 2022; Loom limitation → Ronin 2021
+· Evidence: Phase 3 EV-014 (exploit) → EV-022 (DPoS); EV-018 (layoffs/bear) → EV-019 (Origins); EV-002 (Loom) → EV-008 (Ronin)
+· Supporting Dataset: Phase 3 EV-014, EV-018, EV-002, EV-022, EV-019, EV-008
+
+Pola 4: Token Utility Expansion via New Product Launch — Setiap produk baru nambah utility token existing (AXS fee breeding, RON gas Katana, RON fee RNS, AXS fee marketplace)
+· Evidence: Breeding fee AXS [Phase 6 Utility]; Katana liquidity mining RON [Phase 3 EV-010]; RNS registration fee RON [Phase 3 EV-021]; Marketplace fee split AXS staker [Phase 5 Revenue Model]; Bridge security RON stake [Phase 6 Utility]
+· Supporting Dataset: Phase 6 Utility; Phase 3 EV-010, EV-021; Phase 5 Revenue Model
+
+Pola 5: Geographic Focus pada Emerging Markets via Guild Model — Philippines, Indonesia, Venezuela, LatAm onboarding massal via scholarship/guild
+· Evidence: YGG partnership 2020-2021 [Phase 3 EV-026]; Philippines SEC advisory 2022 (passing mention passing mention) [Phase 3 EV-017]; MAU/DAU driven by SEA/LatAm [Phase 8 Market Position Geographic Focus]; SLP earning sebagai income source [Phase 6 Utility SLP]
+· Supporting Dataset: Phase 3 EV-026, EV-017; Phase 8 Market Position; Phase 6 Utility
+
+Strategic Trade-offs
+
+Trade-off 1: Desentralisasi vs Keamanan & Speed to Market (PoA 2021-2022)
+· Decision: Launch Ronin Mainnet dengan PoA 9 validator permissioned (Sky Mavis, Binance, Google Cloud, Animoca, Hashed, Delphi, Mechanism, DeFiance, Axie DAO) bukan DPoS dari awal
+· Trade-off: Kecepatan launch & keamanan awal (validator terpercaya, infra enterprise) dikorbankan untuk desentralisasi; hasilnya: single point of failure 5/9 key compromise → exploit $625M Maret 2022
+· Evidence: Phase 3 EV-008 (PoA launch), EV-014 (exploit root cause: validator key compromise), EV-022 (DPoS upgrade pasca-exploit); Phase 4 Consensus Mechanism, Security Model
+· Supporting Dataset: Phase 3 EV-008, EV-014, EV-022; Phase 4 Consensus Mechanism, Security Model
+
+Trade-off 2: Scalability (Throughput) vs Desentralisasi & Verifiability — EVM Single-threaded Sidechain vs L2 Rollup/Parallel EVM
+· Decision: Ronin sebagai EVM sidechain (bukan ZK/optimistic rollup, bukan parallel execution chain); throughput ~100-200 TPS praktis, finality probabilistik ~1 menit
+· Trade-off: Kemudahan dev (EVM compatible, tooling Ethereum) & kontrol penuh dikorbankan untuk throughput maksimal & trust-minimized bridge; bridge finality tergantung Ethereum L1 (deposit 3 menit, withdraw 24 jam timelag)
+· Evidence: Phase 4 System Architecture (Appchain EVM sidechain), Known Limitations (Throughput terbatas, Bridge finality, No parallel execution); Phase 4 Consensus Mechanism
+· Supporting Dataset: Phase 4 System Architecture, Known Limitations, Consensus Mechanism
+
+Trade-off 3: User Experience (Gas-free, Simple) vs Trust Minimization — Ronin Wallet First-party vs MetaMask/Account Abstraction
+· Decision: Bangun Ronin Wallet first-party (browser extension + mobile) dengan UX simpel, gas-free (Ronin subsidize), RNS native; Account Abstraction (ERC-4337) belum native di Ronin 2024
+· Trade-off: Onboarding massal non-crypto users (12M+ wallet) dikorbankan untuk trust-minimized self-custody (EOA only, no social recovery native); relayer third-party (Biconomy/Gelato) parsial
+· Evidence: Phase 4 Core Components Wallet (Ronin Wallet first-party); Phase 4 Known Limitations (No native AA); Phase 7 External Dependencies (Biconomy/Gelato partial); Phase 8 Wallet Ecosystem
+· Supporting Dataset: Phase 4 Core Components, Known Limitations; Phase 7 External Dependencies; Phase 8 Wallet Ecosystem
+
+Trade-off 4: Tokenomics Sustainability vs Growth Incentives — SLP Unbounded Inflation vs Fair Launch Principles
+· Decision: SLP fair launch tanpa cap, mint via gameplay, burn hanya breeding; tidak ada hard cap atau halving schedule; seasonal adjustment ad-hoc
+· Trade-off: Distribusi merata & "fair" di awal dikorbankan untuk supply control; hasilnya: chronic sell pressure dari scholar/guild, price crash 2021→2022, tokenomics tidak sustainable tanpa demand baru konstan
+· Evidence: Phase 3 EV-004 (SLP fair launch), EV-019 (Origins SLP hanya NFT holder); Phase 6 Supply (SLP no max supply), Inflation/Deflation (SLP inflation unbounded, burn only breeding); Phase 8 Adoption Metrics (SLP volume drop)
+· Supporting Dataset: Phase 3 EV-004, EV-019; Phase 6 Supply, Inflation/Deflation; Phase 8 Adoption Metrics
+
+Trade-off 5: Vertical Integration Control vs Ecosystem Openness — Full Stack First-party vs Third-party Composability
+· Decision: Bangun semua infra sendiri (Bridge, DEX, Market, Wallet, RNS) 2018-2022; baru buka untuk third-party game 2023+
+· Trade-off: Kontrol penuh UX, security, revenue, data dikorbankan untuk composability & innovation speed; third-party game harus adapt ke Ronin-specific stack (Ronin SDK, Katana, Mavis Market) bukan standard Ethereum
+· Evidence: Phase 4 Core Components (all first-party); Phase 3 EV-025 (third-party opening 2023); Phase 7 Major Integrations (Pixels, Kuroro migrate to Ronin stack); Phase 4 Known Limitations (No general message passing beyond bridge)
+· Supporting Dataset: Phase 4 Core Components, Known Limitations; Phase 3 EV-025; Phase 7 Major Integrations
+
+Behavioral Summary
+
+Prioritas Utama Proyek:
+1. User Growth & Retention via Low-friction UX (gas-free, free-to-play, simple wallet) — buktikan mass adoption blockchain gaming
+2. Infrastructure Sovereignty — kontrol penuh chain, bridge, DEX, marketplace, wallet untuk tidak bergantung third-party & capture full value
+3. Ecosystem Diversification — pindah dari single-game dependency ke multi-game appchain platform untuk revenue resilience
+4. Progressive Decentralization — dari PoA → DPoS → DAO governance, tapi paced oleh technical readiness & crisis response
+
+Cara Mengambil Keputusan:
+- Crisis-driven acceleration: Exploit → DPoS dalam 10 bulan; Bear market → Layoffs + Focus core product dalam 6 bulan
+- Founder/Team-led dengan Strategic Investor Alignment: Sky Mavis eksekutif keputusan produk; investor besar (Binance, a16z, Animoca) jadi validator & partner strategis
+- Data-driven tapi opaque: On-chain metrics publik (TVL, DAU, volume) tapi financials, treasury composition, roadmap internal tidak transparan
+- Vertical integration default: Bangun sendiri dulu, standarisasi nanti (jika pernah)
+
+Faktor Paling Sering Mempengaruhi Keputusan:
+1. Security Incident (Exploit 2022 → DPoS, Bridge redesign, Audit expansion)
+2. Market Cycle (Bull 2021 → Series B, Hiring, Expansion; Bear 2022 → Layoffs, Cost cut, Focus)
+3. Regulatory Pressure (Philippines SEC 2022, US SEC Wells 2024 → Legal defense, Geographic diversification)
+4. User Adoption Metrics (DAU drop → Origins free-to-play; Scholar model fade → NFT holder premium focus)
+5. Investor/Validator Alignment (Investor = Validator = Partner → decisions favor validator set stability)
+
+Pola Evolusi:
+- Phase 1 (2018-2020): Product-Market Fit di Loom — Game + NFT + Fair launch SLP
+- Phase 2 (2021): Infrastructure Independence — Ronin Mainnet, Vertical Stack, Series B, Peak Adoption
+- Phase 3 (2022): Crisis & Correction — Exploit, Bear Market, Layoffs, Restitution, Origins Pivot
+- Phase 4 (2023-sekarang): Platform Maturity — DPoS, RON, Third-party Games, Ecosystem Fund, Regulatory Navigation
+
+Kekuatan Utama:
+- Full-stack gaming infrastructure terlengkap di crypto (Chain, Bridge, DEX, Market, Wallet, Naming, Game Client, SDK)
+- Brand & community loyalty tinggi (12M+ wallet, 300-600k MAU, 20-50k DAU game)
+- Strategic investor/validator network terkuat di crypto gaming (Binance, Google Cloud, a16z, Animoca, dll.)
+- Treasury & runway dari Series B + protocol revenue diversifikasi
+- Technical team ber pengalaman (Unity, Rust, Go, Solidity, K8s, GCP)
+
+Kelemahan Utama:
+- Tokenomics triple-token (AXS/SLP/RON) fragmentasi liquidity & user confusion; SLP inflasi unbounded, AXS no burn, RON baru mulai burn
+- Validator set masih terpusat pada early backers meski DPoS; slashing enforcement opaque
+- Game logic off-chain centralized (server authoritative) — single point of failure untuk matchmaking/anti-cheat
+- Bridge architecture trust-minimized belum (24 jam timelag, multisig emergency pause, canonical lock/mint only)
+- No native Account Abstraction, No parallel execution, No ZK — scaling ceiling EVM single-threaded
+- Regulatory overhang: US SEC Wells Notice (AXS securities, Katana/Ronin Bridge exchange), Philippines SEC Advisory
+- Financial transparency rendah: Operational treasury tidak publik, revenue tidak periodik, legal reserve tidak dikonfirmasi
+- Dependency pada Sky Mavis sebagai sole core developer — bus factor tinggi
 
 ## Knowledge Extraction
 _ref: `docs/Patterns/*`, `docs/Reasoning/*` (rule candidates)_
@@ -3812,3 +3983,13 @@ Explanation: Community Treasury 2021【Phase 3 — EV-029】; AXS Snapshot gover
 - [financial] Rincian alokasi Ronin Ecosystem Fund ($ dari Series B) — berapa sudah dicairkan ke builder third-party (Pixels, Kuroro, dll.)
 - [financial] Apakah ada utang (debt) atau convertible note — tidak tercatat di Crunchbase/announcement resmi
 - [financial] Revenue sharing ke staked AXS (veAXS) — persentase exact dari protocol fee yang dialokasikan ke staker vs treasury tidak diungkap rinci di docs terbaru
+- [behavioral] Ukuran exact Sky Mavis operational treasury & runway pasca-Series B — tidak dipublikasikan; kritis untuk assess survival 2024-2025 tanpa funding baru
+- [behavioral] Status enforcemen slashing DPoS — "slashing logic deployed" tapi apakah sudah aktif slash validator dowtime/double sign di mainnet? Tidak ada bukti on-chain slash event publik
+- [behavioral] Rincian komposisi Community Treasury (0xF40...) real-time — explorer menunjukkan saldo tapi tidak ada breakdown resmi periodik (stablecoin vs native vs NFT)
+- [behavioral] Dampak finansial & operasional US SEC Wells Notice — apakah sudah menyisihkan legal reserve? Apakah geo-blocking US direncanakan? Tidak ada disklosur resmi
+- [behavioral] Ronin Account Abstraction (ERC-4337) timeline — docs "Coming Soon" tanpa timeline; EntryPoint version, bundler, paymaster design unknown
+- [behavioral] Cross-chain messaging beyond asset bridge — apakah rencana LayerZero/Wormhole/Axelar integration untuk arbitrary messaging? Saat ini hanya Ronin Bridge asset transfer
+- [behavioral] Parallel EVM / Scaling roadmap — tidak ada mention di Ronin roadmap publik; apakah evaluasi Reth/Revm/Parallel EVM untuk throughput >200 TPS?
+- [behavioral] Formal verification status kontrak kritis (Bridge, Staking, RON Token) — CertiK/Verichains audit mencakup formal verification sebagian; kontrak mana diverifikasi formal (Coq/Isabelle/K) vs manual audit?
+- [behavioral] SLP long-term tokenomics — apakah akan ada hard cap, halving, atau burn mechanism baru? Whitepaper v1.1 tidak revisi; seasonal adjustment ad-hoc saja
+- [behavioral] Axie DAO / Community Treasury governance effectiveness — participation rate Snapshot proposal rendah (<5% staked AXS vote typical); apakah delegation mechanism cukup?
