@@ -281,5 +281,9 @@ def main(argv=None) -> None:
         f"-- mode: {mode} -- {repair_note}"
         + (f" -- parallel={args.parallel}" if args.parallel > 1 else ""))
 
-    runner.run_queue(projects, providers, args.dry_run, args.phases_limit,
-                     output_root, args.auto_sync, args.parallel)
+    failed = runner.run_queue(projects, providers, args.dry_run, args.phases_limit,
+                              output_root, args.auto_sync, args.parallel)
+    # Non-zero when any project failed, so a caller can react. Everything already written to
+    # disk stays written -- this reports the outcome, it does not undo anything.
+    if failed:
+        sys.exit(1)

@@ -159,7 +159,16 @@ def _finalise(name: str, proj_dir: Path, output_root: Path, auto_sync: bool, plo
 
 
 def run_queue(projects: list, providers, dry_run: bool,
-              phases_limit: int, output_root: Path, auto_sync: bool, parallel: int) -> None:
+              phases_limit: int, output_root: Path, auto_sync: bool, parallel: int) -> int:
+    """Returns how many projects failed, so the caller can exit non-zero.
+
+    It used to return nothing and the process exited 0 whatever happened, which meant a
+    driver script could not tell a completed project from a failed one. That matters when the
+    gateway is having a bad hour: reset/run_pipeline_stages.sh uses the exit status to stop
+    after a few consecutive failures instead of grinding through 25 projects that are all
+    going to fail the same way.
+    """
+    failed = 0
     if parallel > 1:
         with ThreadPoolExecutor(max_workers=parallel) as pool:
             futures = {}
@@ -172,14 +181,19 @@ def run_queue(projects: list, providers, dry_run: bool,
             for fut in as_completed(futures):
                 name = futures[fut]
                 try:
-                    fut.result()
+                    if not fut.result():
+                        failed += 1
                 except Exception as e:  # noqa: BLE001 -- one thread crashing must not kill others
                     log(f"[{name}] ✗✗ unexpected exception, this project's thread crashed: {e}")
+                    failed += 1
     else:
         for i, name in enumerate(projects):
-            run_project(name, providers, dry_run, phases_limit, output_root, auto_sync)
+            if not run_project(name, providers, dry_run, phases_limit, output_root, auto_sync):
+                failed += 1
             if i < len(projects) - 1:
                 log(f"sleeping {config.PROJECT_SLEEP_SECONDS}s before next project...")
                 time.sleep(config.PROJECT_SLEEP_SECONDS)
 
-    log("All projects processed. Check reset/failures.log for anything that needs a manual re-run.")
+    log(f"All projects processed ({failed} failed). Check reset/failures.log for anything "
+        f"that needs a manual re-run.")
+    return failed

@@ -49,6 +49,16 @@ LOCK_FILE="$RESET/.pipeline_stages.lock"
 # retrying it forever is a standing token bill for a known-broken prompt.
 MAX_ATTEMPTS="${PIPELINE_MAX_ATTEMPTS:-3}"
 
+# Stop a stage after this many projects fail BACK TO BACK. One failure is a project problem;
+# several in a row is the gateway, and every further project will fail the same way after
+# burning its full retry budget first.
+#
+# Measured 2026-08-09, the day this was added: a one-word completion took 26s, 62s, 15s and
+# 56s on four consecutive probes -- the backend was queueing, not generating, and Phase 11
+# calls were dying with "Software caused connection abort" after five minutes. Left alone,
+# the stage would have spent four hours proving that 25 times.
+MAX_CONSECUTIVE_FAILURES="${PIPELINE_MAX_CONSECUTIVE_FAILURES:-3}"
+
 DRY_RUN=0
 STAGES="repair,publish,phase11,publish"
 GIT_BRANCH="${PIPELINE_GIT_BRANCH:-claude/crypto-intelligence-framework-jegycz}"
@@ -124,6 +134,28 @@ record_attempt() {
   printf '%s\t%s\t%s\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)" "$1" "$2" >> "$ATTEMPTS_LOG"
 }
 
+consecutive_failures=0
+
+# Runs one project and updates the consecutive-failure counter. Returns 1 when the caller
+# should stop the whole stage because the backend is evidently unavailable.
+run_one_project() {
+  local label="$1"; shift
+  if "$PY" reset/run_deepseek_reset.py "$@"; then
+    consecutive_failures=0
+    return 0
+  fi
+  consecutive_failures=$((consecutive_failures + 1))
+  say "  ✗ $label failed ($consecutive_failures in a row)"
+  if [ "$consecutive_failures" -ge "$MAX_CONSECUTIVE_FAILURES" ]; then
+    say "  ⚠ $consecutive_failures failures back to back -- treating the gateway as unavailable"
+    say "    and stopping this stage. Nothing is lost: every finished project stays on disk and"
+    say "    the next run recomputes what is left. Try again when the gateway recovers; a quick"
+    say "    check is whether a one-word completion comes back in a couple of seconds."
+    return 1
+  fi
+  return 0
+}
+
 # ---------------------------------------------------------------------------------------
 # Stage 1 — repair
 #
@@ -159,8 +191,8 @@ stage_repair() {
       continue
     fi
     record_attempt "$project" "$phases"
-    "$PY" reset/run_deepseek_reset.py --commit --phases-limit 10 --auto-sync \
-      --project "$project" --redo-phases "$phases"
+    run_one_project "$project" --commit --phases-limit 10 --auto-sync \
+      --project "$project" --redo-phases "$phases" || break
     count=$((count + 1))
   done <<< "$todo"
 
@@ -256,7 +288,7 @@ for e in json.load(sys.stdin).get("phase11_bad") or []:
       say "    [dry-run] would run: --commit --auto-sync --project '$project'"
       continue
     fi
-    "$PY" reset/run_deepseek_reset.py --commit --auto-sync --project "$project"
+    run_one_project "$project" --commit --auto-sync --project "$project" || break
     count=$((count + 1))
   done <<< "$todo"
 
@@ -274,7 +306,7 @@ for e in json.load(sys.stdin).get("phase11_bad") or []:
       continue
     fi
     record_attempt "$project" "phase11:$checks"
-    "$PY" reset/run_deepseek_reset.py --commit --auto-sync --project "$project" --redo-phases 11
+    run_one_project "$project" --commit --auto-sync --project "$project" --redo-phases 11 || break
     count=$((count + 1))
   done <<< "$bad"
 
