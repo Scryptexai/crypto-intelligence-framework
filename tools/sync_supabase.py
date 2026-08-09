@@ -29,18 +29,28 @@ prompts, see docs/Protocol/Deep-Research-Brief.md's policy note):
 Usage:
     export SUPABASE_URL="https://<ref>.supabase.co"
     export SUPABASE_SERVICE_ROLE_KEY="..."
-    python3 tools/sync_supabase.py             # upsert every table below
+    python3 tools/sync_supabase.py             # upsert every table in TABLES below
     python3 tools/sync_supabase.py --dry-run   # print the rows that would be sent, no network call
-    python3 tools/sync_supabase.py --only projects,cif_patterns
+    python3 tools/sync_supabase.py --only projects,entities
 """
 import argparse, json, os, re, sys, urllib.error, urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 POC = ROOT / "poc"
+# Synced by default: the tables that exist in the CIF Supabase project. Verified against the
+# live schema 2026-08-09 -- it has 13 tables, and these 9 are the ones this script writes
+# (relationships is empty by design, users/saved_views/notes belong to the frontend).
 TABLES = ("projects", "knowledge_items", "evidence_items", "entities", "events", "conflicts",
-          "qa_dimensions", "qa_phases", "behavior_profiles", "cif_patterns", "cif_backtests",
-          "cif_decision_events")
+          "qa_dimensions", "qa_phases", "behavior_profiles")
+
+# Buildable but NOT synced by default: the older AirdropOS-style schema, which lives in a
+# different Supabase project. Requesting them against the CIF project returns PGRST205
+# ("Could not find the table 'public.cif_patterns' in the schema cache") -- and because that
+# is a hard failure, `./run.sh sync` exited non-zero on every single run and closed with an
+# alarming 404 right after nine successful upserts. Reachable deliberately when pointed at the
+# project that does have them:  --only cif_patterns,cif_backtests,cif_decision_events
+LEGACY_TABLES = ("cif_patterns", "cif_backtests", "cif_decision_events")
 
 
 def slugify(name: str) -> str:
@@ -440,13 +450,16 @@ def upsert(base_url: str, key: str, table: str, rows: list):
 def main():
     ap = argparse.ArgumentParser(description="Sync poc/*.json to Intelligence Workspace's Supabase tables.")
     ap.add_argument("--dry-run", action="store_true", help="print rows, make no network calls")
-    ap.add_argument("--only", help="comma-separated subset of: " + ",".join(TABLES))
+    ap.add_argument("--only", help="comma-separated subset of: " + ",".join(TABLES)
+                                   + " (or, for the other Supabase project, "
+                                   + ",".join(LEGACY_TABLES) + ")")
     args = ap.parse_args()
 
+    selectable = TABLES + LEGACY_TABLES
     targets = args.only.split(",") if args.only else list(TABLES)
-    unknown = [t for t in targets if t not in TABLES]
+    unknown = [t for t in targets if t not in selectable]
     if unknown:
-        sys.exit(f"unknown table(s): {', '.join(unknown)} — valid: {', '.join(TABLES)}")
+        sys.exit(f"unknown table(s): {', '.join(unknown)} — valid: {', '.join(selectable)}")
 
     rows_by_table = {t: BUILDERS[t]() for t in targets}
 
