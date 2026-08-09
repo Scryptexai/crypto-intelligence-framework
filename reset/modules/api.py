@@ -212,6 +212,19 @@ def is_capacity_failure(err: Exception) -> bool:
     return bool(_CAPACITY_FAILURE_RE.search(str(err)))
 
 
+_TRUNCATION_RE = re.compile(r"truncated by the output-token limit", re.I)
+
+
+def is_output_truncation(err: Exception) -> bool:
+    """The model ran out of output budget -- fixable by asking for a bigger one.
+
+    Distinct from is_capacity_failure, which means the request itself is too big for the
+    endpoint and no retry will help. This is the opposite: the request was fine and the
+    ANSWER did not fit, so the same request with a larger budget is exactly the right retry.
+    """
+    return bool(_TRUNCATION_RE.search(str(err)))
+
+
 # Providers that have already proven, in THIS run, that they cannot carry a heavy phase.
 # "Maximise the free gateway first" means proving its limit -- not re-proving it 21 times.
 # Once a heavy call rotates away from a provider on a capacity failure, later heavy calls skip
@@ -251,16 +264,31 @@ def call_with_retries(messages: list, providers, phase_label: str,
 
     last_err = None
 
+    # Escalates on truncation, so it is per-call state rather than the caller's fixed value.
+    budget = max_tokens or config.MAX_TOKENS
+
     for idx, prov in enumerate(providers):
         is_last_provider = idx == len(providers) - 1
         for attempt in range(1, config.MAX_PHASE_RETRIES + 1):
             try:
                 return call_model(messages, prov.base_url, prov.token, prov.model,
-                                  max_tokens=max_tokens)
+                                  max_tokens=budget)
             except Exception as e:  # noqa: BLE001 -- any failure is retryable or rotatable
                 last_err = e
                 log(f"  ✗ {phase_label} [{prov.name}] attempt "
                     f"{attempt}/{config.MAX_PHASE_RETRIES} failed: {e}")
+
+                # A truncated answer retried at the SAME budget produces the same truncation.
+                # Observed on Blur, 2026-08-09: three attempts, ~26 minutes, cut at 70,499 and
+                # then 43,161 chars, and the project was given up on -- having twice proven a
+                # fact the first attempt already established. Raise the budget instead, and
+                # skip the congestion backoff: nothing here is overloaded, the answer simply
+                # needs more room.
+                if is_output_truncation(e) and budget < config.MAX_TOKENS_CEILING:
+                    budget = min(int(budget * 1.5), config.MAX_TOKENS_CEILING)
+                    log(f"  ↑ {phase_label}: answer didn't fit -- retrying immediately with "
+                        f"max_tokens={budget}")
+                    continue
 
                 if is_capacity_failure(e) and not is_last_provider:
                     nxt = providers[idx + 1]

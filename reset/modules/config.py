@@ -105,6 +105,13 @@ MAX_TOKENS = int(os.environ.get("RESET_MAX_TOKENS", "14000"))
 # budget runs out. 32000 was verified accepted by this gateway (probed alongside 8000/16000/
 # 24000, all four fine), so the higher value is free headroom rather than a guess.
 PHASE11_MAX_TOKENS = int(os.environ.get("RESET_PHASE11_MAX_TOKENS", "32000"))
+# Hard stop for api.call_with_retries' truncation escalation: a cut-off answer is retried
+# with 1.5x the budget rather than the same one, but never past this. 48000 is one escalation
+# step above the Phase 11 default of 32000 and 1.5x the largest value the gateway was probed
+# with successfully (8000/16000/24000/32000 all accepted, 2026-08-09) -- far enough to rescue
+# a long report, close enough that an endpoint which silently caps lower still gets a value
+# it recognises.
+MAX_TOKENS_CEILING = int(os.environ.get("RESET_MAX_TOKENS_CEILING", "48000"))
 REQUEST_TIMEOUT_SECONDS = int(os.environ.get("RESET_REQUEST_TIMEOUT_SECS", "900"))
 PHASE_SLEEP_SECONDS = int(os.environ.get("RESET_PHASE_SLEEP_SECS", "60"))
 PROJECT_SLEEP_SECONDS = int(os.environ.get("RESET_PROJECT_SLEEP_SECS", "300"))
