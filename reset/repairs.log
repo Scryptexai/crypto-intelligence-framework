@@ -3,3 +3,8 @@
 2026-08-08T16:21:04.423253+00:00	Aave	phase 09-behavioral	attempt 1	failed=ingest_contract,decisions_parse,behavior_sections	no_improvement
 2026-08-08T23:44:04.314055+00:00	Helium	phase 09-behavioral	attempt 1	failed=behavior_sections	repaired
 2026-08-09T00:10:01.374862+00:00	Compound	phase 09-behavioral	attempt 1	failed=behavior_sections	repaired
+2026-08-09T07:37:36.150431+00:00	Aave	phase 11-conflict	attempt 1	failed=qa_parse,no_md_headers	partially_repaired
+2026-08-09T07:45:56.007357+00:00	Aave	phase 11-conflict	attempt 2	failed=qa_parse	no_improvement
+2026-08-09T08:03:10.405303+00:00	Aptos	phase 11-conflict	attempt 1	failed=qa_parse,no_md_headers	partially_repaired
+2026-08-09T08:14:23.742696+00:00	Aptos	phase 11-conflict	attempt 2	failed=qa_parse	no_improvement
+2026-08-09T08:32:55.333249+00:00	Avalanche	phase 11-conflict	attempt 1	failed=qa_parse,no_md_headers	partially_repaired
