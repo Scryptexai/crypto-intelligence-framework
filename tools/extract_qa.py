@@ -46,9 +46,25 @@ DIMENSION_KEYS = {
 }
 _dim_alt = "|".join(re.escape(d) for d in DIMENSION_KEYS)
 
+# Accepts BOTH shapes the dimension heading comes back in:
+#
+#   Research Quality (25%)     <- what Arbitrum's run produced, and all this used to accept
+#   Research Quality:          <- what reset/phase_11_conflict.txt's template literally asks for
+#
+# Those two disagreeing is a real contract split, not model sloppiness: the prompt lists the
+# weights once in a "Dimensi dan Bobot" block and then writes each dimension heading as a bare
+# "Research Quality:", while this regex was written against Arbitrum's output, where the model
+# had merged the weight into the heading. A model that follows the template exactly therefore
+# parsed to zero dimensions and its whole CIF Score vanished with no error -- Aave, 2026-08-09,
+# a complete 30,707-char audit that reached neither poc/qa.json nor Supabase.
+#
+# The weight is recovered from the Kontribusi multiplier when the heading omits it, so both
+# shapes yield identical rows. Anchored to a whole line and capped at 600 chars of detail so a
+# passing mention of "Coverage" in prose cannot open a block and swallow the next dimension.
 DIM_BLOCK_RE = re.compile(
-    rf"(?:^|\n)({_dim_alt})\s*\((\d+)%\)\s*\n(.*?)Kontribusi:\s*[\d.]+\s*[×x]\s*[\d.]+\s*=\s*([\d.]+)",
-    re.S,
+    rf"^({_dim_alt})[ \t]*(?:\((\d+)%\))?[ \t]*:?[ \t]*$\n"
+    rf"(.{{0,600}}?)Kontribusi:\s*([\d.]+)\s*[×x]\s*([\d.]+)\s*=\s*([\d.]+)",
+    re.S | re.M,
 )
 
 
@@ -81,15 +97,16 @@ def parse_qa(text, project_name):
 
     dimensions = []
     for dim_m in DIM_BLOCK_RE.finditer(body):
-        label, weight, detail, contribution = dim_m.groups()
-        # score is contribution / weight-fraction, recovered from "Kontribusi: score × weight = contribution"
-        score_m = re.search(r"Kontribusi:\s*([\d.]+)\s*[×x]", dim_m.group(0))
-        score = float(score_m.group(1)) if score_m else None
+        label, weight_pct, detail, score, weight_frac, _contribution = dim_m.groups()
+        # "Kontribusi: <score> × <weight fraction> = <contribution>" carries both numbers, so
+        # the weight is available even when the heading is the bare "Research Quality:" form
+        # that omits "(25%)". Rounded because the prompt writes 0.25/0.20/0.15/0.10.
+        weight = int(weight_pct) if weight_pct else round(float(weight_frac) * 100)
         dimensions.append({
             "key": DIMENSION_KEYS[label],
             "label": label,
-            "score": score,
-            "weight": int(weight),
+            "score": float(score),
+            "weight": weight,
             "description": re.sub(r"\s+", " ", detail).strip(" ·\n"),
         })
     if not dimensions:

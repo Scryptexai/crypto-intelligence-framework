@@ -527,32 +527,35 @@ Dimensi dan Bobot:
 
 Perhitungan:
 
-Research Quality:
+(Tulis judul tiap dimensi PERSIS seperti di bawah — nama dimensi diikuti bobotnya dalam
+kurung, pada barisnya sendiri, tanpa tanda titik dua. Parser CIF membaca bentuk ini.)
+
+Research Quality (25%)
 
 · (Complete Phases / 10) × 100 = <score>
 · Kontribusi: <score> × 0.25 = <value>
 
-Consistency:
+Consistency (20%)
 
 · (Passed Checks / Total Checks) × 100 = <score>
 · Kontribusi: <score> × 0.20 = <value>
 
-Evidence:
+Evidence (15%)
 
 · Average Evidence Weight (0-100) = <score>
 · Kontribusi: <score> × 0.15 = <value>
 
-Coverage:
+Coverage (15%)
 
 · Overall Coverage (%) = <score>
 · Kontribusi: <score> × 0.15 = <value>
 
-Conflict:
+Conflict (15%)
 
 · Conflict Score (%) = <score>
 · Kontribusi: <score> × 0.15 = <value>
 
-Knowledge:
+Knowledge (10%)
 
 · Average Confidence Score = <score>
 · Kontribusi: <score> × 0.10 = <value>
