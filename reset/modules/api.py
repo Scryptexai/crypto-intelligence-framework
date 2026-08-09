@@ -19,6 +19,28 @@ from . import config
 from .logs import log
 
 
+def _reject_truncated(finish_reason, text: str) -> None:
+    """Raise when the model stopped because it ran out of output budget, not because it was
+    done.
+
+    Nothing used to look at finish_reason at all, which made a max_tokens cut completely
+    invisible: the client received a shorter string and treated it as a finished answer.
+    Phase 11 is where that hurt most -- its prompt puts CIF SCORE CALCULATION at the very END
+    of the report, so the budget runs out precisely on the one section extract_qa.py needs,
+    and the failure surfaces as "no CIF Score Calculation block" rather than "the answer was
+    cut off". Two self-repair attempts then regenerate a report that gets cut in the same
+    place, at ~8 minutes each.
+
+    Raising here routes it into call_with_retries' normal handling and puts the real cause in
+    the log, where raising RESET_PHASE11_MAX_TOKENS is an obvious next step.
+    """
+    if finish_reason in ("length", "max_tokens"):
+        raise RuntimeError(
+            f"response truncated by the output-token limit (finish_reason={finish_reason!r}, "
+            f"got {len(text)} chars). The answer is incomplete, not wrong -- raise "
+            f"RESET_MAX_TOKENS (or RESET_PHASE11_MAX_TOKENS for phase 11) and retry.")
+
+
 def extract_text(body: dict) -> str:
     """Parses the response permissively. Confirmed live, 2026-08-05: this proxy
     (api.hcnsec.cn, a "New API" gateway instance) does NOT implement the Anthropic Messages
@@ -43,6 +65,7 @@ def extract_text(body: dict) -> str:
         msg = choices[0].get("message", {}) if isinstance(choices[0], dict) else {}
         text = msg.get("content", "")
         if isinstance(text, str) and text.strip():
+            _reject_truncated(choices[0].get("finish_reason"), text)
             return text
     raise ValueError(f"unrecognized response shape, no text found: {json.dumps(body)[:800]}")
 
@@ -56,6 +79,7 @@ def _read_sse_stream(resp) -> str:
     the final chunk instead, so both are accepted.
     """
     parts = []
+    finish_reason = None
     for raw_line in resp:
         line = raw_line.decode("utf-8", errors="replace").strip()
         if not line or line.startswith(":"):
@@ -75,9 +99,12 @@ def _read_sse_stream(resp) -> str:
                 piece = (choice.get("message") or {}).get("content")
             if piece:
                 parts.append(piece)
+            if choice.get("finish_reason"):
+                finish_reason = choice["finish_reason"]
     text = "".join(parts)
     if not text.strip():
         raise RuntimeError("stream ended with no content (no data: chunks carried text)")
+    _reject_truncated(finish_reason, text)
     return text
 
 

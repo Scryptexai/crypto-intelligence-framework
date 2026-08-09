@@ -198,14 +198,30 @@ def _check_knowledge(text: str, project_name: str) -> tuple:
 
 
 def _check_qa_parse(text: str, project_name: str) -> tuple:
+    """extract_qa.parse_qa returns None for two very different reasons, so say which.
+
+    The first version reported both as "no CIF Score Calculation block", which sent the
+    diagnosis in the wrong direction on Aave: the block was missing because the report was cut
+    off, not because the model formatted it wrong. The detail line now reports what IS in the
+    text -- how many 'Kontribusi:' lines, which dimension labels appear, whether the text ends
+    mid-sentence -- so the next failure is readable without opening the file.
+    """
     wrapped = wrap_for_extractor(text, "conflict")
     res = _extract_qa.parse_qa(wrapped, project_name)
-    if res is None:
-        return False, "extract_qa found no CIF Score Calculation block"
-    if not res.get("dimensions"):
-        return False, "CIF Score Calculation found but 0 dimensions parsed"
-    return True, (f"total={res['total']} {len(res['dimensions'])} dimensions "
-                  f"{len(res.get('phases') or [])} phases")
+    if res is not None and res.get("dimensions"):
+        return True, (f"total={res['total']} {len(res['dimensions'])} dimensions "
+                      f"{len(res.get('phases') or [])} phases")
+
+    kontribusi = len(re.findall(r"(?im)^\s*Kontribusi:", text))
+    labels = [d for d in _extract_qa.DIMENSION_KEYS if re.search(rf"(?m)^\s*{re.escape(d)}\s*\(",
+                                                                 text)]
+    tail = text.rstrip()[-60:].replace("\n", " ")
+    looks_cut = not text.rstrip().endswith((".", "!", "?", "|", "-", ")", "]"))
+    return False, (
+        f"extract_qa parsed 0 dimensions -- 'Kontribusi:' lines={kontribusi}, "
+        f"dimension headings found={labels or 'none'}, "
+        f"{'text ends mid-sentence (likely truncated): ' if looks_cut else 'ends at: '}"
+        f"...{tail!r}")
 
 
 def _check_no_md_headers(text: str, project_name: str) -> tuple:
