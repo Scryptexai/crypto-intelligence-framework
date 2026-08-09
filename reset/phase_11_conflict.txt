@@ -684,3 +684,10 @@ ATURAN UMUM
     angka-angkanya persis dari hasil kalkulasi tersebut — JANGAN mengisi angka di Manifest lebih dulu lalu
     menghitung ulang secara terpisah di bagian CIF Score Calculation. Kedua bagian WAJIB melaporkan angka
     yang sama persis.
+17. JANGAN memakai heading markdown (`##`, `###`, `####`) di mana pun dalam laporan ini, termasuk untuk
+    menandai bagian per-phase seperti "## Phase 1 — Foundation". Tulis judul bagian sebagai baris teks
+    biasa dengan HURUF BESAR, persis seperti contoh di OUTPUT STRUCTURE di atas (misalnya DATASET
+    INTEGRITY & COVERAGE, CONFLICT REGISTER, CIF SCORE CALCULATION — v3.0). Alasannya bukan gaya
+    penulisan: dossier CIF menyusun tiap phase di bawah satu heading `## <judul phase>`, sehingga satu
+    baris `##` di dalam laporan ini memotong laporan tepat di titik itu dan membuang seluruh isi
+    setelahnya — Conflict Register, Evidence Audit, dan CIF Score sekalipun — tanpa pesan error apa pun.
