@@ -87,17 +87,24 @@ MAX_TOKENS = int(os.environ.get("RESET_MAX_TOKENS", "14000"))
 # Arbitrum Phase 11 section is ~38.9k chars, ~9.7k tokens estimated -- already over the old
 # 8192 default). Its own constant so phases 1-10 aren't forced to allow bigger (and
 # slower/costlier) completions than they need.
-# 24000, raised from 16000 on 2026-08-09 after Aptos hit the old ceiling exactly. Measured
-# Phase 11 sizes: Arbitrum 38,900 chars (~11,800 tok), Aave 30,707 (~9,300), Aptos 53,164
-# (~16,100 at ~3.3 chars/token) -- the last one over the limit, and its report duly stopped
-# mid-field at "Evidence Count: 8", before CIF SCORE CALCULATION, which the prompt places at
-# the very end. Reports vary almost 2x in length between projects, so the headroom needs to
-# cover the long tail rather than the average.
+# 32000, arrived at in two steps on 2026-08-09 as real sizes came in. Measured Phase 11
+# output, at ~3.3 chars/token:
 #
-# If the gateway rejects this with HTTP 400 the model's own output ceiling is lower; that
-# fails fast and visibly at the start of a call rather than after eight minutes, and
-# RESET_PHASE11_MAX_TOKENS overrides it back down.
-PHASE11_MAX_TOKENS = int(os.environ.get("RESET_PHASE11_MAX_TOKENS", "24000"))
+#   Aave           30,707 chars   ~9,300 tok    39% of 24000
+#   Arbitrum       38,900 chars  ~11,800 tok    49%
+#   Aptos          53,164 chars  ~16,100 tok    67%   -- truncated under the original 16000
+#   Axie Infinity  72,441 chars  ~22,000 tok    92%   -- first clean pass, but only just
+#
+# 16000 was the original and Aptos ran straight past it, stopping mid-field at "Evidence
+# Count: 8" before CIF SCORE CALCULATION, which the prompt places at the very end. 24000 then
+# let Axie Infinity through -- while consuming 92% of the budget. Reports vary 2.4x in length
+# across four projects with no relationship to project size, so betting the next one stays
+# under 24000 is a bet with 23 more chances to lose.
+#
+# A ceiling costs nothing when unused: generation stops when the model is done, not when the
+# budget runs out. 32000 was verified accepted by this gateway (probed alongside 8000/16000/
+# 24000, all four fine), so the higher value is free headroom rather than a guess.
+PHASE11_MAX_TOKENS = int(os.environ.get("RESET_PHASE11_MAX_TOKENS", "32000"))
 REQUEST_TIMEOUT_SECONDS = int(os.environ.get("RESET_REQUEST_TIMEOUT_SECS", "900"))
 PHASE_SLEEP_SECONDS = int(os.environ.get("RESET_PHASE_SLEEP_SECS", "60"))
 PROJECT_SLEEP_SECONDS = int(os.environ.get("RESET_PROJECT_SLEEP_SECS", "300"))
