@@ -43,10 +43,33 @@ def run_project(name: str, providers, dry_run: bool,
                              "content": out_path.read_text(encoding="utf-8")})
             continue
 
-        if num == 11:
+        # Phase 11 as FOUR sequential stages -- last resort only, same gate as Phase 9's split
+        # (phases.run_phase). Reached when streaming has been turned off and no heavy-capable
+        # provider is configured, i.e. the request would go out in the exact shape that hits
+        # the gateway's ~300s non-streaming ceiling.
+        #
+        # Off by default since 2026-08-09. The split's justification was a measured 504 on
+        # stage 11a, but that measurement predates the streaming fix -- the ceiling was an
+        # artifact of sending a non-streaming request that returns no bytes until generation
+        # finishes, not of Phase 11 being too large.
+        #
+        # Splitting is also unsound for this phase specifically, for a reason beyond timing:
+        # 11d's own prompt instructs the model to "GABUNGKAN dengan seluruh temuan sebelumnya"
+        # -- merge everything the earlier stages found. A model asked to restate prior findings
+        # re-emits them in slightly different words, and a validation report is exactly where a
+        # near-duplicate finding is indistinguishable from a second real one. An audit that
+        # invents or double-counts its own findings is worse than no audit, because it reads
+        # authoritative. The single-prompt path has no seam for that to happen at.
+        #
+        # And it is the empirically proven path: reset/phase_11_conflict.txt is the prompt that
+        # produced data_project/Arbitrum/11-conflict.docx -- the only Phase 11 extract_qa.py has
+        # ever parsed (total=81.6, 6 dimensions, 7 phases), with zero '## ' sub-headers to trip
+        # that parser's section boundary. The staged path has never produced a parseable one.
+        if num == 11 and not config.STREAM_RESPONSES and not phases_mod.has_heavy_provider(providers):
             stage_names = ", ".join(s[0] for s in config.PHASE11_STAGES)
-            plog(f"phase 11-conflict: sending as {len(config.PHASE11_STAGES)} smaller sequential "
-                 f"stages ({stage_names}) -- see run_phase_11()'s docstring for why...")
+            plog(f"phase 11-conflict: streaming off and no heavy provider -- falling back to "
+                 f"{len(config.PHASE11_STAGES)} sequential stages ({stage_names}), which risks "
+                 f"duplicated findings; prefer leaving streaming on...")
             if dry_run:
                 out_path.write_text(
                     f"PROJECT: {name}\n\n[DRY RUN -- Phase 11 placeholder, "

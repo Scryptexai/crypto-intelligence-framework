@@ -20,7 +20,7 @@ responsibility, each importing only from the ones above it:
 | `specs.py` | **what "correct output" means per phase, and how to ask for it again** |
 | `validate.py` | project-level quality gate (`verify_10_phases`, `diagnose_project`) |
 | `repair.py` | **the self-healing loop: spec check → corrective retry** |
-| `phases.py` | generating one phase, and the four-stage Phase 11 |
+| `phases.py` | generating one phase (all 11 as a single prompt; staged fallbacks for 9 and 11) |
 | `pipeline.py` | promote → ingest → build → extract → optional Supabase sync |
 | `runner.py` | per-project orchestration + sequential/parallel queue |
 | `cli.py` | argparse and entrypoint wiring |
@@ -55,7 +55,8 @@ Checks currently enforced: `no_junk` (leaked `<tool_call>` syntax, "I'll search 
 narration with no findings, meta-commentary, decorative banners — the failure mode that
 produced Berachain/EigenLayer/Cosmos), `min_length`, `ingest_contract` (PROJECT header +
 citation density), plus per-phase `entities_parse` / `events_parse` / `decisions_parse` /
-`behavior_sections` / `knowledge_parse`.
+`behavior_sections` / `knowledge_parse`, and for Phase 11 `qa_parse` (extract_qa finds a CIF Score
+with dimensions) + `no_md_headers` (a `## ` line inside the report silently truncates it).
 
 Set `RESET_DISABLE_REPAIR=1` to turn the loop off.
 
@@ -110,25 +111,23 @@ kills the run after 90 seconds).
   to look up the project's basic info/description before filling the template — everything else is unchanged).
   These are the *only* prompt set kept in that doc now; Track A (generic, context-window-limited) and Track B
   (condensed) were removed as superseded — see that doc's "How to use these" note, 2026-08-03.
-- `phase_11a_audit.txt` / `phase_11b_audit.txt` / `phase_11c_audit.txt` / `phase_11d_scoring.txt` — Phase 11
-  (Validation & QA), split into four smaller, sequential API calls instead of one (see `run_phase_11()` in
-  `run_deepseek_reset.py` for the full history of why -- it went through 3 different diagnoses before landing
-  here: a corrupted `ANTHROPIC_BASE_URL` env var, a wrong endpoint path, and finally the real remaining cause,
-  HTTP 504 gateway timeouts from a slow shared backend that can't finish generating a big multi-phase audit
-  fast enough). Each stage covers 2-3 phases and asks for roughly one ordinary phase's worth of output --
-  11a: phases 1-3 (Dataset Integrity + Inventory); 11b: phases 4-5 + 11a's findings (+ Cross-phase Consistency
-  and Candidate Conflicts for all of 1-5); 11c: phases 6-8 + 11b's findings (Consistency/Conflicts continued);
-  11d: phases 9-10 + 11c's findings (Coverage Report, Data Lineage, Dependency Graph, the final merged
-  Conflict Register, Evidence Audit, Confidence Assessment, CIF Score, Manifest, everything else). Each stage
-  reads its own phase files fresh from disk (not the growing 10-phase conversation) plus only the
-  immediately-preceding stage's response (not that stage's prompt, and not any earlier stage's raw text) --
-  no fact from any phase is dropped, all four responses are concatenated (Manifest moved to the top) into a
-  single `11-conflict.docx`, same contract as every other phase. This also fixed a real, separate bug found
-  while first building this: the original `phase_11_conflict.txt` (long since removed) only captured about
-  15% of the real Phase 11 prompt -- the extraction that produced it stopped partway through, silently
-  dropping Coverage Report, Cross-phase Consistency, Data Lineage, Dependency Graph, Conflict Register,
-  Evidence Audit, Confidence Assessment, and CIF Score Calculation. These four files carry the complete
-  prompt, restored from the source doc and redistributed across the four stages.
+- `phase_11_conflict.txt` — Phase 11 (Validation & QA), the **default** and only sanctioned path: one prompt,
+  sent like every other phase. Extracted verbatim from `docs/Protocol/Phased-Research-Prompts.md` (the
+  section's 683 lines) — and it is the prompt that actually produced `data_project/Arbitrum/11-conflict.docx`,
+  the only Phase 11 `tools/extract_qa.py` has ever parsed (total=81.6, 6 dimensions, 7 phases). Verified on
+  restoration that every section marker across the four stage files below also appears here.
+- `phase_11a_audit.txt` / `phase_11b_audit.txt` / `phase_11c_audit.txt` / `phase_11d_scoring.txt` — the same
+  Phase 11 split into four sequential calls. **Fallback only since 2026-08-09**, reached when streaming is off
+  *and* no heavy-capable provider is configured (same gate as Phase 9's split). It was built for gateway 504s
+  that turned out to be an artifact of non-streaming requests, and it carries a cost timing never accounted
+  for: stage 11d is instructed to merge every earlier stage's findings, and a model restating prior findings
+  rewords them — in a validation report a reworded finding is indistinguishable from a second real one, which
+  is the one place an invented or double-counted item does the most damage, because the output reads
+  authoritative. The four files also fixed a real, separate bug found while first building them: the original
+  single `phase_11_conflict.txt` captured only ~15% of the real prompt (its extraction stopped partway,
+  silently dropping Coverage Report, Cross-phase Consistency, Data Lineage, Dependency Graph, Conflict
+  Register, Evidence Audit, Confidence Assessment, and CIF Score Calculation). The restored single file above
+  is complete — that truncation is what made it look, for a while, as though splitting were the only option.
 - `shared_format_rules.txt` — the doc's mandatory "ATURAN FORMAT" block (citations on every fact, Evidence
   Level tags, no fabrication, template-exactness, etc.) — the doc's own instructions say this gets appended
   to **every** phase prompt before sending, not just used once. `load_phase_prompt()` does this

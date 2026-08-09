@@ -1,8 +1,11 @@
 """
-phases.py — generating a single phase, and the four-stage Phase 11.
+phases.py — generating a single phase.
 
-Phases 1-10 go through repair.generate_phase (spec-checked, self-correcting). Phase 11 has
-no extractor contract to check against and keeps its own staged flow.
+All 11 phases go through repair.generate_phase (spec-checked, self-correcting) as ONE prompt
+each. Phases 9 and 11 additionally keep a staged fallback (_run_staged_phase_9,
+run_phase_11), reachable only when streaming is off and no heavy-capable provider is
+configured -- see the comments at each gate for why splitting is a last resort and not the
+fix it once looked like.
 """
 import re
 import time
@@ -17,7 +20,7 @@ def existing_phase_ok(path: Path) -> bool:
     return path.exists() and len(path.read_text(encoding="utf-8").strip()) >= config.MIN_PHASE_CHARS
 
 
-def _has_heavy_provider(providers) -> bool:
+def has_heavy_provider(providers) -> bool:
     """True when some provider in the chain can take a heavy phase as a single call.
 
     When one exists, Phase 9 and Phase 11 go back to their original single-prompt design and
@@ -92,7 +95,7 @@ def run_phase(name: str, num: int, key: str, messages: list, proj_dir: Path, pro
     """
     out_path = proj_dir / f"{num:02d}-{key}.docx"
 
-    if num == 9 and not config.STREAM_RESPONSES and not _has_heavy_provider(providers):
+    if num == 9 and not config.STREAM_RESPONSES and not has_heavy_provider(providers):
         # LAST RESORT ONLY -- reached when streaming has been disabled (RESET_NO_STREAM=1) and
         # no heavy-capable provider is configured, i.e. the request is going out in the exact
         # shape that hits the gateway's ~300s non-streaming ceiling.
@@ -126,7 +129,12 @@ def run_phase(name: str, num: int, key: str, messages: list, proj_dir: Path, pro
     plog(f"phase {num:02d}-{key}: sending...")
     messages.append({"role": "user", "content": prompt})
 
-    text, failures = repair.generate_phase(messages, num, key, name, providers, plog)
+    # Phase 11 asks for a whole validation report (Arbitrum's real one is ~38.9k chars,
+    # ~9.7k tokens) -- over the 14k default is unlikely but the margin costs nothing here,
+    # and a truncated audit is the one output where the damage is invisible.
+    max_tokens = config.PHASE11_MAX_TOKENS if num == 11 else None
+    text, failures = repair.generate_phase(messages, num, key, name, providers, plog,
+                                           max_tokens=max_tokens)
     text, failures = _keep_better(out_path, text, failures, num, key, name, plog)
 
     out_path.write_text(text, encoding="utf-8")

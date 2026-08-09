@@ -26,6 +26,7 @@ import extract_events as _extract_events
 import extract_decision_events as _extract_decision_events
 import extract_knowledge as _extract_knowledge
 import extract_behavior as _extract_behavior
+import extract_qa as _extract_qa
 
 # The `## <Title>` heading tools/ingest.py writes above each phase in the assembled dossier.
 # The extractors slice on these, so a single phase checked in isolation has to be wrapped in
@@ -196,6 +197,47 @@ def _check_knowledge(text: str, project_name: str) -> tuple:
     return True, f"{len(rows)} knowledge items"
 
 
+def _check_qa_parse(text: str, project_name: str) -> tuple:
+    wrapped = wrap_for_extractor(text, "conflict")
+    res = _extract_qa.parse_qa(wrapped, project_name)
+    if res is None:
+        return False, "extract_qa found no CIF Score Calculation block"
+    if not res.get("dimensions"):
+        return False, "CIF Score Calculation found but 0 dimensions parsed"
+    return True, (f"total={res['total']} {len(res['dimensions'])} dimensions "
+                  f"{len(res.get('phases') or [])} phases")
+
+
+def _check_no_md_headers(text: str, project_name: str) -> tuple:
+    """`## ` anywhere in Phase 11's body silently truncates it.
+
+    tools/ingest.py assembles each phase under its own `## <title>` heading, and
+    extract_qa.py bounds the section with `(?=\\n## |\\Z)`. A `## ` the model adds inside the
+    report therefore ends the section early: everything after it -- Conflict Register,
+    Evidence Audit, sometimes the score itself -- is dropped with no error anywhere. Same
+    failure that cost Phase 9 its Decision Timeline. Arbitrum's real Phase 11 has zero.
+    """
+    bad = re.findall(r"(?m)^(#{2,6}\s+\S.*)$", text)
+    if bad:
+        return False, f"{len(bad)} markdown header line(s), first: {bad[0][:60]!r}"
+    return True, "no markdown headers"
+
+
+_QA_HINT = (
+    "Laporan Phase 11 tidak terbaca oleh parser CIF Score. Perbaiki DUA hal:\n"
+    "1. WAJIB ada bagian berjudul persis `CIF SCORE CALCULATION` (huruf besar semua), dan di "
+    "dalamnya setiap dimensi ditulis sebagai `<Nama Dimensi> (<bobot>%)` pada barisnya sendiri, "
+    "diakhiri baris `Kontribusi: <skor> × <bobot> = <hasil>`. Contoh persis:\n"
+    "Research Quality (25%)\n"
+    "- <detail penilaian>\n"
+    "Kontribusi: 8.5 × 0.25 = 2.13\n"
+    "2. JANGAN pernah memakai heading markdown (`##`, `###`) di mana pun dalam laporan. "
+    "Gunakan baris teks huruf besar biasa sebagai judul bagian, seperti `COVERAGE REPORT` dan "
+    "`CONFLICT REGISTER`. Satu baris `## ` saja akan memotong laporan ini di tengah dan "
+    "membuang semua isi setelahnya."
+)
+
+
 _ENTITY_HINT = (
     "Format blok ENTITY salah sehingga tidak terparsing. Tulis SETIAP entity sebagai blok "
     "flat text, label BAHASA INGGRIS persis ini, satu field per baris, dipisah \"---\" "
@@ -270,15 +312,27 @@ PHASE_CHECKS = {
     ],
     "knowledge": [Check("knowledge_parse", "knowledge items parse", _check_knowledge,
                         _KNOWLEDGE_HINT)],
+    "conflict": [
+        Check("qa_parse", "CIF Score Calculation parses", _check_qa_parse, _QA_HINT),
+        Check("no_md_headers", "no markdown headers to truncate the report",
+              _check_no_md_headers, _QA_HINT),
+    ],
 }
 
 
 def checks_for(num: int, key: str) -> list:
-    """Universal checks + this phase's format checks. Phase 11 is excluded: it is assembled
-    from four stages with its own separate contract (a CIF Validation Report, not a dataset
-    of parseable rows) and has no extractor to test against."""
-    if num == 11:
-        return []
+    """Universal checks + this phase's format checks.
+
+    Phase 11 used to be excluded, on the grounds that it was assembled from four stages and
+    had no extractor to test against. Both halves stopped being true on 2026-08-09: it now
+    goes out as one prompt like every other phase, and extract_qa.py is exactly the extractor
+    that reads it. Leaving it unchecked meant an unparseable audit was written to disk, the
+    project reported success, and poc/qa.json silently gained nothing.
+
+    All three universal checks were verified against the one known-good Phase 11
+    (data_project/Arbitrum/11-conflict.docx) before being switched on here, so they cannot
+    trigger a repair loop on correct output.
+    """
     return _UNIVERSAL + PHASE_CHECKS.get(key, [])
 
 

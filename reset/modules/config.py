@@ -33,11 +33,15 @@ PHASES = [
     (9, "behavioral"), (10, "knowledge"), (11, "conflict"),
 ]
 
-# Phase 11 (Validation & QA) is handled as four smaller, sequential API calls instead of
-# appending to the full 10-phase running conversation -- see phases.run_phase_11()'s
-# docstring for the full rationale (started as 2 calls, but even the smaller of those two
-# still hit gateway-side 504 timeouts -- the bottleneck is generation TIME on a slow
-# backend, not request size, so each stage's ASK needed to shrink too, not just its input).
+# FALLBACK ONLY since 2026-08-09. Phase 11 normally goes out as ONE prompt
+# (reset/phase_11_conflict.txt) like every other phase; these four stages are reached only
+# when streaming is off and no heavy-capable provider is configured -- see the gate comment
+# in runner.run_project.
+#
+# The split was built for gateway 504s that turned out to be an artifact of non-streaming
+# requests, and it carries a cost the timing argument never accounted for: stage 11d is told
+# to merge every earlier stage's findings, and a model restating prior findings rewords them.
+# In a validation report a reworded finding is indistinguishable from a second real one.
 PHASE11_STAGES = [
     ("11a", "phase_11a_audit.txt", [(1, "foundation"), (2, "entity"), (3, "history")]),
     ("11b", "phase_11b_audit.txt", [(4, "technology"), (5, "financial")]),
