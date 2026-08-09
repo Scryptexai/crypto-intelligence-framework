@@ -90,5 +90,250 @@
         "owner": "CIF"
       }
     ]
+  },
+  "Axie Infinity": {
+    "projectSlug": "axie-infinity",
+    "total": 86.0,
+    "dimensions": [
+      {
+        "key": "research",
+        "label": "Research Quality",
+        "score": 90.0,
+        "weight": 25,
+        "description": "(Complete Phases / 10) × 100 = (9/10) × 100 = 90 Phase 5 dan Phase 8 incomplete → 9 complete phases"
+      },
+      {
+        "key": "consistency",
+        "label": "Consistency",
+        "score": 87.5,
+        "weight": 20,
+        "description": "(Passed Checks / Total Checks) × 100 = (7/8) × 100 = 87.5 8 consistency checks: Entity, Timeline, Technology, Funding, Token, Governance, Dependency, Overall → 7 passed (Overall 96%)"
+      },
+      {
+        "key": "evidence",
+        "label": "Evidence",
+        "score": 91.5,
+        "weight": 15,
+        "description": "Average Evidence Weight (0-100) = 91.5 (average of 10 knowledge evidence weights 9.15/10 × 10)"
+      },
+      {
+        "key": "coverage",
+        "label": "Coverage",
+        "score": 89.0,
+        "weight": 15,
+        "description": "Overall Coverage (%) = 89%"
+      },
+      {
+        "key": "conflict",
+        "label": "Conflict",
+        "score": 90.8,
+        "weight": 15,
+        "description": "Conflict Score (%) = 90.8%"
+      },
+      {
+        "key": "knowledge",
+        "label": "Knowledge",
+        "score": 94.5,
+        "weight": 10,
+        "description": "Average Confidence Score = 94.5"
+      }
+    ],
+    "phases": []
+  },
+  "Bancor": {
+    "projectSlug": "bancor",
+    "total": 85.0,
+    "dimensions": [
+      {
+        "key": "research",
+        "label": "Research Quality",
+        "score": 90.0,
+        "weight": 25,
+        "description": "(Complete Phases / 10) × 100 = (9/10) × 100 = 90 (Phase 5 incomplete due to treasury/revenue gaps)"
+      },
+      {
+        "key": "consistency",
+        "label": "Consistency",
+        "score": 100.0,
+        "weight": 20,
+        "description": "(Passed Checks / Total Checks) × 100 = (7/7) × 100 = 100 (Entity, Timeline, Technology, Funding, Token, Governance, Dependency all consistent) Note: 94% overall but all 7 checks passed"
+      },
+      {
+        "key": "evidence",
+        "label": "Evidence",
+        "score": 85.0,
+        "weight": 15,
+        "description": "Average Evidence Weight (0-100) = 85 (Strong evidence for technical/governance; moderate for market; weak for treasury)"
+      },
+      {
+        "key": "coverage",
+        "label": "Coverage",
+        "score": 90.0,
+        "weight": 15,
+        "description": "Overall Coverage (%) = 90"
+      },
+      {
+        "key": "conflict",
+        "label": "Conflict",
+        "score": 81.7,
+        "weight": 15,
+        "description": "Conflict Score (%) = 81.7"
+      },
+      {
+        "key": "knowledge",
+        "label": "Knowledge",
+        "score": 89.0,
+        "weight": 10,
+        "description": "Average Confidence Score = 89"
+      }
+    ],
+    "phases": []
+  },
+  "Blast": {
+    "projectSlug": "blast",
+    "total": 82.0,
+    "dimensions": [
+      {
+        "key": "research",
+        "label": "Research Quality",
+        "score": 95.0,
+        "weight": 25,
+        "description": "(Complete Phases / 10) × 100 = (9.5 / 10) × 100 = 95 Phase 5 incomplete (treasury, vesting, revenue undisclosed), Phase 10 anti-patterns truncated"
+      },
+      {
+        "key": "consistency",
+        "label": "Consistency",
+        "score": 87.5,
+        "weight": 20,
+        "description": "(Passed Checks / Total Checks) × 100 = (7 / 8) × 100 = 87.5 8 consistency checks: Entity, Timeline, Technology, Funding, Token, Governance, Dependency, Overall — 7 passed, 1 minor (EV-015 vs EV-018 duplicate)"
+      },
+      {
+        "key": "evidence",
+        "label": "Evidence",
+        "score": 86.0,
+        "weight": 15,
+        "description": "Average Evidence Weight (0-100) = 86 (average of 45 knowledge objects evidence weights scaled to 100) Average evidence weight ~8.6/10 → 86/100"
+      },
+      {
+        "key": "coverage",
+        "label": "Coverage",
+        "score": 85.0,
+        "weight": 15,
+        "description": "Overall Coverage (%) = 85"
+      },
+      {
+        "key": "conflict",
+        "label": "Conflict",
+        "score": 99.2,
+        "weight": 15,
+        "description": "Conflict Score (%) = 99.2"
+      },
+      {
+        "key": "knowledge",
+        "label": "Knowledge",
+        "score": 86.0,
+        "weight": 10,
+        "description": "Average Confidence Score = 86"
+      }
+    ],
+    "phases": []
+  },
+  "Ethena": {
+    "projectSlug": "ethena",
+    "total": 83.0,
+    "dimensions": [
+      {
+        "key": "research",
+        "label": "Research Quality",
+        "score": 70.0,
+        "weight": 25,
+        "description": "Complete Phases: 8 dari 10 (Phase 5 Incomplete, Phase 8 Incomplete, Phase 10 Incomplete — wait, that's 3 incomplete, so 7 complete? Let me recount: Phase 1 Complete, Phase 2 Complete, Phase 3 Complete, Phase 4 Complete, Phase 5 Incomplete, Phase 6 Complete, Phase 7 Complete, Phase 8 Incomplete, Phase 9 Complete, Phase 10 Incomplete = 7 complete, 3 incomplete) Actually Phase 5, 8, 10 are incomplete. So 7/10 complete. (7 / 10) × 100 = 70"
+      },
+      {
+        "key": "consistency",
+        "label": "Consistency",
+        "score": 92.9,
+        "weight": 20,
+        "description": "Cross-phase checks: Entity, Timeline, Technology, Funding, Token, Governance, Dependency = 7 checks Passed: 6 (Entity, Timeline, Technology, Funding, Token, Governance all Konsisten) Dependency: 92% consistent — count as passed? Let's say 6.5/7 passed (6.5 / 7) × 100 = 92.9"
+      },
+      {
+        "key": "evidence",
+        "label": "Evidence",
+        "score": 89.0,
+        "weight": 15,
+        "description": "Average Evidence Weight across 33 Knowledge: ~8.9/10 = 89"
+      },
+      {
+        "key": "coverage",
+        "label": "Coverage",
+        "score": 82.0,
+        "weight": 15,
+        "description": "Overall Coverage: 82%"
+      },
+      {
+        "key": "conflict",
+        "label": "Conflict",
+        "score": 82.5,
+        "weight": 15,
+        "description": "Conflict Score: 82.5% (from earlier calculation)"
+      },
+      {
+        "key": "knowledge",
+        "label": "Knowledge",
+        "score": 91.0,
+        "weight": 10,
+        "description": "Average Confidence Score: 91"
+      }
+    ],
+    "phases": []
+  },
+  "Grass": {
+    "projectSlug": "grass",
+    "total": 82.0,
+    "dimensions": [
+      {
+        "key": "research",
+        "label": "Research Quality",
+        "score": 90.0,
+        "weight": 25,
+        "description": "(Complete Phases / 10) × 100 = (9/10) × 100 = 90 · Phase 5 incomplete, others complete"
+      },
+      {
+        "key": "consistency",
+        "label": "Consistency",
+        "score": 93.0,
+        "weight": 20,
+        "description": "Passed Checks: 7 (Entity, Timeline, Technology, Funding, Token, Governance, Dependency) · Total Checks: 7 · (7/7) × 100 = 100 · Wait, Token Consistency was \"Sebagian Konsisten\" due to mint address. So 6/7 = 85.7% · Actually: Entity(K), Timeline(K), Technology(K), Funding(K), Token(Partial), Governance(K), Dependency(K) = 6.5/7 = 93% · Let's use 93"
+      },
+      {
+        "key": "evidence",
+        "label": "Evidence",
+        "score": 78.0,
+        "weight": 15,
+        "description": "Average Evidence Weight: (9+9+8+8+6+9+8+8+5+8)/10 = 78/10 = 7.8 · Scale to 0-100: 7.8 × 10 = 78"
+      },
+      {
+        "key": "coverage",
+        "label": "Coverage",
+        "score": 66.0,
+        "weight": 15,
+        "description": "Overall Coverage: 66%"
+      },
+      {
+        "key": "conflict",
+        "label": "Conflict",
+        "score": 71.7,
+        "weight": 15,
+        "description": "Conflict Score: 71.7% (calculated above)"
+      },
+      {
+        "key": "knowledge",
+        "label": "Knowledge",
+        "score": 88.2,
+        "weight": 10,
+        "description": "Average Confidence Score: 88.2"
+      }
+    ],
+    "phases": []
   }
 }

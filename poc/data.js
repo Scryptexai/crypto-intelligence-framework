@@ -2,7 +2,7 @@
 window.CIF = {
   "meta": {
     "schema": "cif-export/1",
-    "generated": "2026-08-09 07:53 UTC",
+    "generated": "2026-08-09 16:59 UTC",
     "projects": 29,
     "deep": 29,
     "summary": 0,
@@ -101,7 +101,6 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
-        "points",
         "l2"
       ]
     },
