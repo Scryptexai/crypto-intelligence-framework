@@ -1,0 +1,166 @@
+PROJECT: Hyperliquid
+
+STATUS AIRDROP
+
+Sudah dilakukan
+- Hyperliquid melakukan Token Generation Event (TGE) pada 2024-11-29 dengan distribusi token HYPE ke komunitas melalui mekanisme airdrop/points claim bagi pengguna testnet dan mainnet, tanpa penjualan token publik atau privat【Phase 3 — EV-008】【Phase 6 — TGE】【Phase 6 — Token Sale】【Phase 9 — Financial Pattern 3】
+
+AIRDROP EVENTS
+
+AD-001: HYPE Genesis Airdrop / Points Claim (TGE Distribution)
+Tanggal: 2024-11-29
+Tipe: Retroactive / Points-based
+Alokasi: Tidak ditemukan (persentase dari total supply dan jumlah token HYPE yang dialokasikan untuk airdrop komunitas tidak diungkapkan secara resmi)
+Penerima: Tidak ditemukan (jumlah alamat/wallet yang eligible dan yang berhasil claim tidak dipublikasikan)
+Nilai saat klaim: Tidak ditemukan (harga HYPE pada saat klaim dan estimasi USD per penerima tidak tersedia di sumber resmi; CoinGecko listing date 2024-11-29 tapi data harga awal tidak diekstrak di Phase 1-11)
+Kriteria: Pengguna yang berpartisipasi di testnet publik berincentiv (Maret 2023 onwards) dan/atau mainnet (Perpetual DEX sejak Mei 2023, Spot DEX sejak Oktober 2023) dengan akumulasi poin berdasarkan aktivitas trading/volume — detail formula poin (volume, frequency, recency, dll) tidak diungkapkan【Phase 3 — EV-003】【Phase 3 — EV-005】【Phase 3 — EV-006】【Phase 6 — Distribution】
+Anti-sybil: Tidak ditemukan (mekanisme penyaringan sybil, minimal activity threshold, atau kualifikasi tambahan seperti KYC/geo-blocking tidak terdokumentasi di blog resmi atau dokumentasi)
+Terkait EV: EV-008 (TGE HYPE), EV-003 (Testnet Publik Berincentiv), EV-005 (Mainnet Perp), EV-006 (Spot DEX)
+Sitasi: https://hyperliquid.xyz/blog/hype-genesis (HIGH) [Official Blog HYPE Genesis]; https://hyperliquid.xyz/blog/testnet-launch (HIGH) [Official Blog Testnet Launch]; https://hyperliquid.xyz/blog/mainnet-launch (HIGH) [Official Blog Mainnet Launch]; https://hyperliquid.xyz/blog/spot-launch (HIGH) [Official Blog Spot Launch]; https://hyperliquid.gitbook.io/hyperliquid-docs (MEDIUM) [Documentation]; https://www.coingecko.com/en/coins/hyperliquid (HIGH) [CoinGecko Listing Date]
+
+CONTEXT SAAT KEPUTUSAN
+
+- Tahap funding: Hanya satu ronde strategic funding pada 2023 (Variant Fund, Delphi Digital, Hack VC, SIG, GSR) — tidak ada follow-on round tercatat sebelum TGE; amount dan valuasi undisclosed【Phase 3 — EV-004】【Phase 5 — Funding History】
+- Ukuran komunitas: Testnet publik berincentiv diluncurkan Maret 2023, mainnet Perp Mei 2023, Spot Oktober 2023 — jumlah pengguna aktif, wallet unik, dan total poin terakumulasi tidak dipublikasikan【Phase 3 — EV-003, EV-005, EV-006】【Phase 8 — Adoption Metrics】
+- Kondisi pasar: TGE terjadi Nov 2024 (post-US election cycle, bull market early phase, BTC ~$90k+) — narasi "fair launch" dan "appchain dengan CLOB on-chain" sedang kuat; kompetitor dYdX v4, GMX, Vertex, Aevo sudah memiliki token【Phase 8 — Market Timeline】【Phase 8 — Narrative Position】【Phase 8 — Competitor Landscape】
+- Produk live: Perp DEX (1.5 tahun), Spot DEX (1 tahun), Native Bridge (2024), HyperEVM testnet (Nov 2024) — core infrastructure sudah battle-tested tanpa exploit publik【Phase 3 — History】【Phase 4 — Core Components】
+
+TRIGGER DAN ALTERNATIF
+
+Trigger: Transisi ke Proof-of-Stake security (butuh HYPE untuk staking validator), community ownership sebagai langkah desentralisasi, dan momentum narasi TGE 2024 untuk appchain L1【Phase 3 — EV-008】【Phase 6 — Utility: Staking, Security, Validator】【Phase 9 — Decision: TGE via airdrop】
+Alternatif yang tidak diambil:
+- Public sale / IDO / Launchpad: Tidak dilakukan (dinyatakan eksplisit "no public/private sale")【Phase 5 — Token Sale】【Phase 6 — Token Sale】
+- Private sale ke investor: Tidak dilakukan untuk token (investor 2023 mendapat equity/SAFT, bukan token allocation publik)【Phase 5 — Fundraising Mechanism】【Phase 9 — Financial Pattern 1】
+- Staged distribution (vesting bertahap untuk komunitas): Tidak diumumkan; TGE claim tampak langsung (instant unlock) tapi detail vesting/claim schedule tidak transparan【Phase 6 — Vesting Schedule】【Phase 6 — TGE】
+- Tidak mendistribusikan token sama sekali: Tidak dipilih karena butuh token untuk PoS security dan governance【Phase 6 — Utility】【Phase 9 — Principle 4】
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi:
+- "HYPE Genesis: Token HYPE diluncurkan sebagai native token Hyperliquid L1 untuk staking, governance, fee payment, dan community ownership via airdrop/points claim"【Phase 3 — EV-008】【Phase 6 — TGE】 (HIGH)
+- "Distribusi komunitas via airdrop/points, bukan penjualan token"【Phase 5 — Token Sale】【Phase 6 — Distribution】 (HIGH)
+- "Staking live immediately at TGE untuk network security"【Phase 3 — EV-008】【Phase 6 — Utility: Staking】 (HIGH)
+
+Alasan yang tidak diumumkan (HIPOTESIS):
+- Menghindari klasifikasi sekuritas (Howey Test) di AS: Fair launch via airdrop tanpa investor token sale mengurangi argumen "investment of money in common enterprise with expectation of profit from efforts of others" — konsisten dengan BVI entity dan global permissionless access【Phase 1 — Foundation: Country BVI】【Phase 10 — K-010: Regulatory Exposure】 (MEDIUM)
+- Memenuhi syarat listing CEX tanpa "token sale" history yang komplikasi compliance: Beberapa CEX menolak token dengan private sale besar tanpa disclosure; community-only distribution lebih bersih untuk listing【Phase 8 — Market: CEX Listing Unknown】【Phase 10 — K-004: Community-First Distribution】 (MEDIUM)
+- Memberi exit liquidity untuk early investor/team via market maker (SIG, GSR) yang sudah jadi investor+MM: Tokenomics opacity (alokasi team/investor undisclosed) memungkinkan insider sell ke retail yang claim airdrop【Phase 2 — Entity: SIG, GSR】【Phase 5 — Financial Dependencies】【Phase 10 — K-005: Tokenomics Opacity】 (MEDIUM)
+- Mengunci likuiditas via staking segera saat TGE: Staking live at claim mencegah sell pressure instan dan mem-bootstrapping PoS security tanpa harus beli di pasar【Phase 3 — EV-008】【Phase 6 — Utility: Staking】【Phase 9 — Decision: Staking activated at TGE】 (MEDIUM)
+- Menjaga kontrol founder/team atas supply: Dengan tidak mempublikasikan alokasi dan vesting, team mempertahankan fleksibilitas mengubah parameter tokenomics tanpa komitmen publik【Phase 10 — K-005: Tokenomics Opacity】【Phase 9 — Financial Pattern 4】 (MEDIUM)
+
+OUTCOME PER POV
+
+POV Founder: Tidak diketahui
+- Jangka pendek: Token live, staking aktif, community ownership tercapai, tanpa tekanan regulasi token sale
+- Jangka panjang: Kontrol supply tetap di tangan team (opacity), fee switch belum diaktifkan, governance infrastructure belum lengkap
+- Dasar: Tidak ada pernyataan publik founder pasca-TGE tentang outcome airdrop; Phase 9 Behavioral menunjukkan pattern founder-driven control retention (MEDIUM) [Phase 9 — Governance Pattern 1, Financial Pattern 4]
+
+POV VC: Tidak diketahui
+- Jangka pendek: Investor 2023 (Variant, Delphi, Hack VC, SIG, GSR) mendapat equity/SAFT, bukan token allocation publik — tidak ada unlock token yang tekan harga
+- Jangka panjang: Jika alokasi investor ada di tokenomics tersembunyi, vesting schedule unknown menciptakan overhang risk
+- Dasar: Funding round 2023 Struktur undisclosed; tidak ada disclosure token allocation untuk investor (MEDIUM) [Phase 3 — EV-004] [Phase 5 — Funding History] [Phase 6 — Distribution: Investors Planned percentages unknown]
+
+POV Retail: Tidak diketahui
+- Jangka pendek: Pengguna testnet/mainnet menerima HYPE gratis, bisa stake untuk yield atau sell — claim process, gas cost (HYPE), dan harga awal menentukan PnL
+- Jangka panjang: Retensi bergantung pada fee switch activation, HyperEVM mainnet success, dan price action — tanpa transparency, retail bearish risk tinggi
+- Dasar: Tidak ada data on-chain publik tentang claim rate, sell rate, hold rate pasca-TGE (LOW) [Phase 6 — TGE] [Phase 8 — Adoption Metrics: all unknown] [Phase 10 — K-005: Tokenomics Opacity]
+
+POV Community: Tidak diketahui
+- Jangka pendek: Airdrop membangun goodwill dan legitimasi "fair launch" — community merasa dihargai dibanding VC-heavy launch
+- Jangka panjang: Tanpa governance infrastructure (forum, proposal, voting), community ownership bersifat simbolik; validator set (opaque) de facto mengontrol protokol
+- Dasar: Phase 9 Governance Pattern 1 & 4; Phase 10 K-007 Governance Infrastructure Tertinggal (MEDIUM) [Phase 6 — Governance] [Phase 9 — Governance Pattern 1] [Phase 10 — K-007]
+
+POV Developer: Tidak diketahui
+- Jangka pendek: HyperEVM testnet + Ecosystem Fund grants menarik developer; HYPE sebagai gas token HyperEVM memberi utility tambahan
+- Jangka panjang: Sukses bergantung pada HyperEVM mainnet launch, precompile CLOB access quality, dan dokumentasi — airdrop tidak langsung relevan
+- Dasar: Phase 3 EV-007, EV-010; Phase 10 K-009 HyperEVM Developer Onboarding (MEDIUM) [Phase 3 — EV-007] [Phase 3 — EV-010] [Phase 10 — K-009]
+
+POV Institution: Tidak diketahui
+- Jangka pendek: Tidak ada token sale = tidak ada KYC/AML compliance burden untuk institusi yang ingin beli HYPE di secondary market
+- Jangka panjang: Tokenomics opacity, no audits, regulatory exposure (BVI perp DEX), single bridge/USDC risk membuat institusi sulit melakukan due diligence — participation terbatas
+- Dasar: Phase 5 Financial Risk; Phase 7 Ecosystem Risks; Phase 10 K-005, K-006, K-008, K-010 (HIGH) [Phase 5 — Financial Risk] [Phase 7 — Ecosystem Risks] [Phase 10 — K-005, K-006, K-008, K-010]
+
+POV Validator: Tidak diketahui
+- Jangka pendek: Staking live at TGE memungkinkan validator menjalankan node dengan HYPE stake — minimum stake amount undisclosed
+- Jangka panjang: Validator set composition opaque; commission rate, slashing conditions unknown; validator economics bergantung pada fee switch (belum live) dan emission rate (unknown)
+- Dasar: Phase 4 Technology Validator Security; Phase 7 Ecosystem Risks Centralized Validator Set; Phase 10 K-007 (MEDIUM) [Phase 4 — Security Model] [Phase 7 — Ecosystem Risks] [Phase 10 — K-007]
+
+POV Builder: Tidak diketahui
+- Jangka pendek: Ecosystem Fund grants (2024) + HyperEVM testnet memberi insentif build — HYPE allocation untuk grants unknown
+- Jangka panjang: Builder retention butuh HyperEVM mainnet, CLOB precompile stability, dan sustainable token incentives — airdrop bukan driver utama
+- Dasar: Phase 3 EV-010; Phase 7 Developer Ecosystem; Phase 10 K-009 (MEDIUM) [Phase 3 — EV-010] [Phase 7 — Developer Ecosystem] [Phase 10 — K-009]
+
+METRIK RETENSI
+
+- Persentase penerima yang menjual dalam 7 hari: Tidak ditemukan
+- Persentase penerima yang masih memegang setelah 90 hari: Tidak ditemukan
+- Perubahan alamat aktif sebelum vs sesudah snapshot: Tidak ditemukan (snapshot date tidak diumumkan; active address metrics tidak dipublikasikan)
+- Perubahan TVL atau volume sebelum vs sesudah: Tidak ditemukan (TVL/volume spesifik tidak diekstrak di Phase 8; DefiLlama data available tapi tidak di-query)
+- Harga token pada klaim (2024-11-29): Tidak ditemukan
+- Harga token +30 hari (2024-12-29): Tidak ditemukan
+- Harga token +90 hari (2025-02-27): Tidak ditemukan
+- Sitasi: Semua metrik di atas tidak tersedia di Phase 1-11 sources; tidak ada dashboard resmi, Dune dashboard, atau on-chain analysis report yang direferensikan【Phase 6 — Token】【Phase 8 — Adoption Metrics】【Phase 10 — Missing Knowledge Classification】
+
+FARMING DAN SYBIL
+
+- Apakah kriteria bisa ditebak sebelum snapshot: Ya (HIPOTESIS) — testnet publik berincentiv Maret 2023 dan mainnet live Mei 2023 memberikan window >1.5 tahun untuk farming volume/activity; kriteria "volume/trading activity" adalah standar industri dan mudah ditebak【Phase 3 — EV-003, EV-005, EV-006】【Phase 9 — Risk Response Pattern 2: Incremental Launches】 (MEDIUM)
+- Apakah muncul perilaku farming massal: Tidak ditemukan (tidak ada laporan publik tentang sybil attack, multi-wallet farming, atau disqualification massal)
+- Berapa banyak alamat yang didiskualifikasi: Tidak ditemukan (tidak ada announcement disqualification)
+- Apakah tim mengubah kriteria setelah melihat perilaku: Tidak ditemukan (kriteria detail tidak diungkapkan, jadi tidak bisa verifikasi perubahan)
+- Populasi hunter era 2023-2024: Matang (post-Arbitrum, Optimism, Celestia airdrops) — insentif farming tinggi【Phase 8 — Market: Project Stage Growth】【Phase 10 — K-002: Phased Rollout】 (HIGH)
+- Sitasi: Tidak ada data on-chain atau announcement resmi tentang sybil filtering; Phase 6 Anti-sybil "tidak ditemukan"; Phase 10 K-005 opacity memperkuat ketidaktahuan ini【Phase 6 — Distribution】【Phase 10 — K-005】
+
+PROSPEK
+
+Prasyarat yang sudah terpenuhi:
+- Token live (HYPE TGE 2024-11-29)【Phase 3 — EV-008】
+- Staking live untuk PoS security【Phase 3 — EV-008】【Phase 6 — Utility: Staking】
+- Core products battle-tested (Perp 1.5yr, Spot 1yr)【Phase 3 — EV-005, EV-006】
+- HyperEVM testnet live untuk developer onboarding【Phase 3 — EV-007】
+- Ecosystem Fund announced untuk builder grants【Phase 3 — EV-010】
+
+Prasyarat yang belum terpenuhi:
+- Whitepaper tokenomics (supply, allocation, vesting, emission, fee switch)【Phase 1 — Open Threads】【Phase 6 — Supply, Distribution, Vesting, Inflation】
+- Governance infrastructure (forum, proposal system, voting, treasury controls)【Phase 6 — Governance】【Phase 10 — K-007】
+- Formal security audits untuk HyperBFT, CLOB, bridge【Phase 4 — Audit History】【Phase 10 — K-008】
+- Validator set transparency (count, geo, entity, permissioning, min stake)【Phase 7 — Ecosystem Risks】【Phase 10 — K-007】
+- Treasury transparency (size, composition, custodian, labeled addresses)【Phase 5 — Treasury】【Phase 10 — K-005】
+- Fee switch / revenue sharing ke staker activation【Phase 6 — Utility: Governance】【Phase 10 — K-005】
+- HyperEVM mainnet launch【Phase 3 — EV-007】【Phase 10 — K-009】
+- Bridge trust-minimization roadmap【Phase 7 — Ecosystem Risks】【Phase 10 — K-006】
+
+Sinyal yang biasanya mendahului gelombang berikutnya (jika ada Season 2 / community allocation tambahan):
+- Perubahan dokumentasi: Tambahan halaman "Tokenomics" atau "Governance" di GitBook dengan parameter spesifik
+- Kontrak distribusi: Deploy kontrak vesting/merkle distributor baru di Hyperliquid L1 (detectable via Hypurrscan)
+- Pengumuman snapshot: Blog post atau X/Twitter @HyperliquidX mengumumkan snapshot date untuk allocation tambahan (misal: HyperEVM mainnet users, builder grant recipients)
+- Perekrutan: Hiring governance lead, community manager, atau tokenomics analyst
+- On-chain activity: Besarnya HYPE movement ke kontrak baru (vesting, staking rewards distributor, governance timelock)
+
+Penilaian: Hyperliquid sudah menyelesaikan TGE utama (Season 1) dengan model community-only fair launch. Gelombang distribusi tambahan (Season 2, builder rewards, HyperEVM mainnet incentives) kemungkinan besar akan terjadi karena: (1) Ecosystem Fund announced tapi alokasi HYPE-nya belum jelas, (2) HyperEVM mainnet butuh user incentives, (3) Governance butuh token untuk voting power distribution. Namun, opacity tokenomics saat ini membuat tidak mungkin memprediksi ukuran, timing, atau kriteria gelombang berikutnya. Tingkat keyakinan: MEDIUM untuk "akan ada distribusi tambahan", LOW untuk parameter spesifiknya. Faktor yang akan mengubah penilaian ini: rilis whitepaper tokenomics, deploy kontrak distribusi on-chain, atau announcement resmi governance/ecosystem allocation.
+
+PELAJARAN LINTAS PROJECT
+
+- Ketika project meluncurkan mainnet produk kompleks (perp DEX dengan CLOB on-chain) >1 tahun sebelum TGE dan mendistribusikan token hanya via airdrop/points tanpa sale (era 2023-2024, fair launch narrative kuat), retail community reward terasa "earned" bukan "given" — tapi tanpa transparency alokasi team/investor, trust 長期 bergantung pada post-TGE execution (fee switch, governance, audits), bukan airdrop itself.
+- Ketika kriteria airdrop berbasis volume/trading activity pada perp DEX dengan leverage (era 2023-2024, hunter population matang), wash trading dan volume farming muncul secara alami — anti-sybil mechanism harus di-desain sejak testnet (bukan post-hoc) dan transparan untuk mencegah sybil capture allocation.
+- Ketika token launch bersamaan dengan staking activation (TGE = stake live), sell pressure instan teredam karena recipient harus claim lalu stake untuk yield — tapi tanpa fee switch timeline, staking yield bersumber dari emission (inflationary) yang menciptakan sell pressure berkelanjutan dari validator/staker.
+- Ketika project memilih opacity tokenomics (tidak publish supply, allocation, vesting) sambil claiming "community-first" (era 2024, post-FTX regulatory scrutiny), institutional capital stay away dan retail menjadi exit liquidity default — transparency adalah prasyarat untuk upgrade dari retail-driven ke institutional-grade.
+- Ketika single trusted bridge + single collateral (USDC) mengamankan seluruh value flow ke L1 baru (era 2024, bridge security model belum matang), airdrop recipient yang bridge USDC ke chain membawa systemic risk yang tidak terkait dengan token distribution tapi fundamental ke protokol — airdrop success metrics harus include bridge/USDC risk disclosure.
+
+OPEN THREADS
+
+- Alokasi persentase HYPE untuk airdrop komunitas (community allocation % dari total supply) — tidak diungkapkan di blog HYPE Genesis, GitBook, atau on-chain labeled addresses
+- Jumlah wallet eligible dan jumlah yang berhasil claim — tidak ada dashboard claim resmi atau Dune query yang dipublikasikan
+- Formula poin testnet/mainnet (volume weight, frequency, recency, multiplier) — tidak diungkapkan; hanya "points" yang disebut
+- Anti-sybil mechanism detail (minimal trade count, unique contract interaction, KYC, geo-filter) — tidak terdokumentasi
+- Harga HYPE pada saat klaim (2024-11-29), +7 hari, +30 hari, +90 hari — CoinGecko data tersedia tapi tidak diekstrak di Phase 1-11
+- Persentase claimer yang sell vs stake vs hold dalam 7/30/90 hari — tidak ada on-chain analysis publik
+- Apakah ada vesting/lockup untuk airdrop claim (instant unlock vs linear vesting) — TGE blog tidak menyebut vesting untuk community allocation
+- Alokasi team/investor/foundation/treasury/ecosystem dalam tokenomics — whitepaper belum terbit
+- Fee switch activation timeline dan mekanisme revenue sharing ke staker — blog HYPE Genesis hanya menyebut staking untuk security
+- Governance infrastructure launch timeline (forum, snapshot, proposal system) — tidak diumumkan
+- Formal audit status untuk HyperBFT, CLOB engine, bridge contracts — tidak ada laporan publik
+- Validator set composition (count, entity, geo, min stake HYPE) — tidak dipublikasikan
+- Treasury size, composition, custodian (Labs vs Foundation), labeled addresses — tidak transparan
+- HyperEVM mainnet launch date dan precompile CLOB access spec — testnet Nov 2024, mainnet timeline unknown
+- Wrapped HYPE (WHYPE) contract address di Arbitrum verified dan audited — tidak diverifikasi di docs resmi
+- Regulatory classification legal opinion untuk HYPE (security/utility/commodity) di US/EU/SG/BVI — tidak ada disclosure

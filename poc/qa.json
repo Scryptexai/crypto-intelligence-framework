@@ -335,5 +335,905 @@
       }
     ],
     "phases": []
+  },
+  "Avalanche": {
+    "projectSlug": "avalanche",
+    "total": 86.0,
+    "dimensions": [
+      {
+        "key": "research",
+        "label": "Research Quality",
+        "score": 100.0,
+        "weight": 25,
+        "description": "(Complete Phases / 10) × 100 = (10/10) × 100 = 100"
+      },
+      {
+        "key": "consistency",
+        "label": "Consistency",
+        "score": 87.5,
+        "weight": 20,
+        "description": "(Passed Checks / Total Checks) × 100 = (14/16) × 100 = 87.5"
+      },
+      {
+        "key": "evidence",
+        "label": "Evidence",
+        "score": 84.0,
+        "weight": 15,
+        "description": "Average Evidence Weight (0-100) = 84"
+      },
+      {
+        "key": "coverage",
+        "label": "Coverage",
+        "score": 91.0,
+        "weight": 15,
+        "description": "Overall Coverage (%) = 91"
+      },
+      {
+        "key": "conflict",
+        "label": "Conflict",
+        "score": 78.0,
+        "weight": 15,
+        "description": "Conflict Score (%) = 78"
+      },
+      {
+        "key": "knowledge",
+        "label": "Knowledge",
+        "score": 84.0,
+        "weight": 10,
+        "description": "Average Confidence Score = 84"
+      }
+    ],
+    "phases": [
+      {
+        "name": "Phase 2 — Entity",
+        "status": "Passed",
+        "score": 90,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 3 — Event",
+        "status": "Passed",
+        "score": 92,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 4 — Technology",
+        "status": "Passed",
+        "score": 92,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 5 — Financial",
+        "status": "Passed",
+        "score": 89,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 6 — Token",
+        "status": "Passed",
+        "score": 91,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 7 — Ecosystem",
+        "status": "Passed",
+        "score": 93,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 8 — Market",
+        "status": "Passed",
+        "score": 87,
+        "owner": "CIF"
+      }
+    ]
+  },
+  "Blur": {
+    "projectSlug": "blur",
+    "total": 87.0,
+    "dimensions": [
+      {
+        "key": "research",
+        "label": "Research Quality",
+        "score": 100.0,
+        "weight": 25,
+        "description": "- (Complete Phases: 10 / 10) × 100 = 100 -"
+      },
+      {
+        "key": "consistency",
+        "label": "Consistency",
+        "score": 85.7,
+        "weight": 20,
+        "description": "- (Passed Checks: 6 / 7) × 100 = 85.7 (satu check tentang Token supply minor conflict) -"
+      },
+      {
+        "key": "evidence",
+        "label": "Evidence",
+        "score": 70.2,
+        "weight": 15,
+        "description": "- Average Evidence Weight = 70.2 (dari (7.02/10) × 100) -"
+      },
+      {
+        "key": "coverage",
+        "label": "Coverage",
+        "score": 92.3,
+        "weight": 15,
+        "description": "- Overall Coverage = 92.3% -"
+      },
+      {
+        "key": "conflict",
+        "label": "Conflict",
+        "score": 60.8,
+        "weight": 15,
+        "description": "- Conflict Score = 60.8% -"
+      },
+      {
+        "key": "knowledge",
+        "label": "Knowledge",
+        "score": 86.95,
+        "weight": 10,
+        "description": "- Average Confidence Score = 86.95 -"
+      }
+    ],
+    "phases": []
+  },
+  "Cardano": {
+    "projectSlug": "cardano",
+    "total": 84.0,
+    "dimensions": [
+      {
+        "key": "research",
+        "label": "Research Quality",
+        "score": 90.0,
+        "weight": 25,
+        "description": "- (Complete Phases / 10) × 100 = (9/10) × 100 = 90 -"
+      },
+      {
+        "key": "consistency",
+        "label": "Consistency",
+        "score": 92.3,
+        "weight": 20,
+        "description": "- (Passed Checks / Total Checks) × 100 = (12/13) × 100 = 92.3 (12 checks passed: Entity, Timeline, Technology, Funding, Token, Governance, Dependency, Conflicts resolved; 1 check: Midnight bridge unresolved) -"
+      },
+      {
+        "key": "evidence",
+        "label": "Evidence",
+        "score": 82.0,
+        "weight": 15,
+        "description": "- Average Evidence Weight (0-100) = 82 (rata-rata dari 20 knowledge objects, weight 8.2 → diubah ke skala 100) -"
+      },
+      {
+        "key": "coverage",
+        "label": "Coverage",
+        "score": 98.6,
+        "weight": 15,
+        "description": "- Overall Coverage (%) = 98.6 -"
+      },
+      {
+        "key": "conflict",
+        "label": "Conflict",
+        "score": 91.25,
+        "weight": 15,
+        "description": "- Conflict Score (%) = 91.25 -"
+      },
+      {
+        "key": "knowledge",
+        "label": "Knowledge",
+        "score": 85.0,
+        "weight": 10,
+        "description": "- Average Confidence Score = 85 -"
+      }
+    ],
+    "phases": [
+      {
+        "name": "Phase 2 — Entity",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 3 — Event",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 4 — Technology",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 5 — Financial",
+        "status": "Passed",
+        "score": 92,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 6 — Token",
+        "status": "Passed",
+        "score": 95,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 7 — Ecosystem",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 8 — Market",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      }
+    ]
+  },
+  "Celestia": {
+    "projectSlug": "celestia",
+    "total": 86.0,
+    "dimensions": [
+      {
+        "key": "research",
+        "label": "Research Quality",
+        "score": 85.0,
+        "weight": 25,
+        "description": "- Complete Phases: 10 dari 10 - Score: (10 / 10) × 100 = 100 - Penyesuaian: Tidak ada fase yang incomplete secara fundamental, namun phase 5 dan 6 memiliki data missing signifikan yang menurunkan kualitas \"kedalaman\". - Adjusted Score: 85 (penyesuaian untuk missing data treasury dan tokenomics K-009, K-003) -"
+      },
+      {
+        "key": "consistency",
+        "label": "Consistency",
+        "score": 90.0,
+        "weight": 20,
+        "description": "- Total Checks: 7 kategori (Entity, Timeline, Technology, Funding, Token, Governance, Dependency) - Passed Checks: 7 - Score: (7 / 7) × 100 = 100 - Penyesuaian: C-001 unresolved (daftar investor) menurunkan skor sedikit. - Adjusted Score: 90 -"
+      },
+      {
+        "key": "evidence",
+        "label": "Evidence",
+        "score": 80.0,
+        "weight": 15,
+        "description": "- Average Evidence Weight: 8.0 (rata-rata bobot dari 10 knowledge objects) - Score: (8.0 / 10) × 100 = 80 -"
+      },
+      {
+        "key": "coverage",
+        "label": "Coverage",
+        "score": 72.0,
+        "weight": 15,
+        "description": "- Overall Coverage: 72% (setelah penyesuaian untuk 61.4% coverage dasar, ditambah beberapa item yang dianggap referenced secara tidak langsung) - Score: 72% -"
+      },
+      {
+        "key": "conflict",
+        "label": "Conflict",
+        "score": 86.0,
+        "weight": 15,
+        "description": "- Conflict Score: 86% (setelah mempertimbangkan 4 konflik, 3 resolved, 1 unresolved high severity) -"
+      },
+      {
+        "key": "knowledge",
+        "label": "Knowledge",
+        "score": 88.0,
+        "weight": 10,
+        "description": "- Average Confidence Score: 88/100 (rata-rata dari 10 knowledge objects) -"
+      }
+    ],
+    "phases": []
+  },
+  "Compound": {
+    "projectSlug": "compound",
+    "total": 91.0,
+    "dimensions": [
+      {
+        "key": "research",
+        "label": "Research Quality",
+        "score": 100.0,
+        "weight": 25,
+        "description": "- (Complete Phases / 10) × 100 = 10/10 × 100 = 100 -"
+      },
+      {
+        "key": "consistency",
+        "label": "Consistency",
+        "score": 92.0,
+        "weight": 20,
+        "description": "- (Passed Checks / Total Checks) × 100 = (11 fase cek lintas / 12 cek total) × 100 = 92 -"
+      },
+      {
+        "key": "evidence",
+        "label": "Evidence",
+        "score": 87.2,
+        "weight": 15,
+        "description": "- Average Evidence Weight (0-100) = (8.5 + 9.0 + 8.8 + 9.2 + 7.0 + 8.5 + 9.0 + 9.5 + 8.0 + 8.7) / 10 = 87.2/10 = 8.72 → 87.2/100 -"
+      },
+      {
+        "key": "coverage",
+        "label": "Coverage",
+        "score": 86.0,
+        "weight": 15,
+        "description": "- Overall Coverage (%) = 86% -"
+      },
+      {
+        "key": "conflict",
+        "label": "Conflict",
+        "score": 80.0,
+        "weight": 15,
+        "description": "- Conflict Score (%) = 80% -"
+      },
+      {
+        "key": "knowledge",
+        "label": "Knowledge",
+        "score": 87.3,
+        "weight": 10,
+        "description": "- Average Confidence Score = 87.3/100 -"
+      }
+    ],
+    "phases": [
+      {
+        "name": "Phase 2 — Entity",
+        "status": "Passed",
+        "score": 87,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 3 — Event",
+        "status": "Passed",
+        "score": 93,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 4 — Technology",
+        "status": "Passed",
+        "score": 96,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 5 — Financial",
+        "status": "Passed",
+        "score": 67,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 6 — Token",
+        "status": "Passed",
+        "score": 87,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 7 — Ecosystem",
+        "status": "Passed",
+        "score": 77,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 8 — Market",
+        "status": "Passed",
+        "score": 88,
+        "owner": "CIF"
+      }
+    ]
+  },
+  "EOS": {
+    "projectSlug": "eos",
+    "total": 87.0,
+    "dimensions": [
+      {
+        "key": "research",
+        "label": "Research Quality",
+        "score": 100.0,
+        "weight": 25,
+        "description": "- (Complete Phases / 10) × 100 = (10/10) × 100 = 100 -"
+      },
+      {
+        "key": "consistency",
+        "label": "Consistency",
+        "score": 100.0,
+        "weight": 20,
+        "description": "- (Passed Checks / Total Checks) × 100 = (7/7) × 100 = 100 -"
+      },
+      {
+        "key": "evidence",
+        "label": "Evidence",
+        "score": 82.0,
+        "weight": 15,
+        "description": "- Average Evidence Weight (dikonversi ke skala 0-100) = (82/100) × 100 = 82 -"
+      },
+      {
+        "key": "coverage",
+        "label": "Coverage",
+        "score": 84.2,
+        "weight": 15,
+        "description": "- Overall Coverage (%) = 84.2 -"
+      },
+      {
+        "key": "conflict",
+        "label": "Conflict",
+        "score": 87.0,
+        "weight": 15,
+        "description": "- Conflict Score (%) = 87% -"
+      },
+      {
+        "key": "knowledge",
+        "label": "Knowledge",
+        "score": 82.0,
+        "weight": 10,
+        "description": "- Average Confidence Score = 82/100 -"
+      },
+      {
+        "key": "research",
+        "label": "Research Quality",
+        "score": 100.0,
+        "weight": 25,
+        "description": "- (Complete Phases / 10) × 100 = 100 -"
+      },
+      {
+        "key": "consistency",
+        "label": "Consistency",
+        "score": 100.0,
+        "weight": 20,
+        "description": "- (Passed Checks / Total Checks) × 100 = 100 -"
+      },
+      {
+        "key": "evidence",
+        "label": "Evidence",
+        "score": 82.0,
+        "weight": 15,
+        "description": "- Average Evidence Weight (dikonversi ke skala 0-100) = 82 -"
+      },
+      {
+        "key": "coverage",
+        "label": "Coverage",
+        "score": 84.2,
+        "weight": 15,
+        "description": "- Overall Coverage (%) = 84.2 -"
+      },
+      {
+        "key": "conflict",
+        "label": "Conflict",
+        "score": 87.0,
+        "weight": 15,
+        "description": "- Conflict Score (%) = 87 -"
+      },
+      {
+        "key": "knowledge",
+        "label": "Knowledge",
+        "score": 82.0,
+        "weight": 10,
+        "description": "- Average Confidence Score = 82 -"
+      }
+    ],
+    "phases": []
+  },
+  "Ethereum": {
+    "projectSlug": "ethereum",
+    "total": 91.0,
+    "dimensions": [
+      {
+        "key": "research",
+        "label": "Research Quality",
+        "score": 100.0,
+        "weight": 25,
+        "description": "- (Complete Phases / 10) × 100 = (10/10) × 100 = 100 -"
+      },
+      {
+        "key": "consistency",
+        "label": "Consistency",
+        "score": 95.0,
+        "weight": 20,
+        "description": "- (Passed Checks / Total Checks) × 100 = (19/20) × 100 = 95 -"
+      },
+      {
+        "key": "evidence",
+        "label": "Evidence",
+        "score": 82.0,
+        "weight": 15,
+        "description": "- Average Evidence Weight (0-100) = 8.2 × 10 = 82 (dari rata-rata weight numeric 8.2 dari 10 skala) -"
+      },
+      {
+        "key": "coverage",
+        "label": "Coverage",
+        "score": 89.0,
+        "weight": 15,
+        "description": "- Overall Coverage (%) = 89 -"
+      },
+      {
+        "key": "conflict",
+        "label": "Conflict",
+        "score": 71.0,
+        "weight": 15,
+        "description": "- Conflict Score (%) = 71 -"
+      },
+      {
+        "key": "knowledge",
+        "label": "Knowledge",
+        "score": 90.0,
+        "weight": 10,
+        "description": "- Average Confidence Score = 90 -"
+      }
+    ],
+    "phases": []
+  },
+  "Friend.tech": {
+    "projectSlug": "friend-tech",
+    "total": 88.7,
+    "dimensions": [
+      {
+        "key": "research",
+        "label": "Research Quality",
+        "score": 100.0,
+        "weight": 25,
+        "description": "- (Complete Phases / 10) × 100 = (10/10) × 100 = 100 -"
+      },
+      {
+        "key": "consistency",
+        "label": "Consistency",
+        "score": 90.0,
+        "weight": 20,
+        "description": "- (Passed Checks / Total Checks) × 100 = (9/10) × 100 = 90 -"
+      },
+      {
+        "key": "evidence",
+        "label": "Evidence",
+        "score": 84.0,
+        "weight": 15,
+        "description": "- Average Evidence Weight (0-100) = 84 -"
+      },
+      {
+        "key": "coverage",
+        "label": "Coverage",
+        "score": 88.0,
+        "weight": 15,
+        "description": "- Overall Coverage (%) = 88 -"
+      },
+      {
+        "key": "conflict",
+        "label": "Conflict",
+        "score": 78.0,
+        "weight": 15,
+        "description": "- Conflict Score (%) = 78 -"
+      },
+      {
+        "key": "knowledge",
+        "label": "Knowledge",
+        "score": 82.0,
+        "weight": 10,
+        "description": "- Average Confidence Score = 82 -"
+      }
+    ],
+    "phases": [
+      {
+        "name": "Phase 2 — Entity",
+        "status": "Passed",
+        "score": 91,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 3 — Event",
+        "status": "Passed",
+        "score": 92,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 4 — Technology",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 5 — Financial",
+        "status": "Passed",
+        "score": 83,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 6 — Token",
+        "status": "Passed",
+        "score": 92,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 7 — Ecosystem",
+        "status": "Passed",
+        "score": 93,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 8 — Market",
+        "status": "Passed",
+        "score": 90,
+        "owner": "CIF"
+      }
+    ]
+  },
+  "Helium": {
+    "projectSlug": "helium",
+    "total": 88.2,
+    "dimensions": [
+      {
+        "key": "research",
+        "label": "Research Quality",
+        "score": 92.0,
+        "weight": 25,
+        "description": "(Complete Phases / 10) × 100 = (10/10) × 100 = 92/100"
+      },
+      {
+        "key": "consistency",
+        "label": "Consistency",
+        "score": 94.0,
+        "weight": 20,
+        "description": "(Passed Checks / Total Checks) × 100 = (8.5/9) × 100 = 94/100"
+      },
+      {
+        "key": "evidence",
+        "label": "Evidence",
+        "score": 85.0,
+        "weight": 15,
+        "description": "Average Evidence Weight (0-100) = 85/100"
+      },
+      {
+        "key": "coverage",
+        "label": "Coverage",
+        "score": 88.0,
+        "weight": 15,
+        "description": "Overall Coverage (%) = 88/100"
+      },
+      {
+        "key": "conflict",
+        "label": "Conflict",
+        "score": 82.0,
+        "weight": 15,
+        "description": "Conflict Score (%) = 82/100"
+      },
+      {
+        "key": "knowledge",
+        "label": "Knowledge",
+        "score": 86.0,
+        "weight": 10,
+        "description": "Average Confidence Score = 86/100"
+      }
+    ],
+    "phases": []
+  },
+  "Hyperliquid": {
+    "projectSlug": "hyperliquid",
+    "total": 84.6,
+    "dimensions": [
+      {
+        "key": "research",
+        "label": "Research Quality",
+        "score": 90.0,
+        "weight": 25,
+        "description": "(Complete Phases / 10) × 100 = 0.9 × 100 = 90"
+      },
+      {
+        "key": "consistency",
+        "label": "Consistency",
+        "score": 85.7,
+        "weight": 20,
+        "description": "(Passed Checks / Total Checks) × 100 = (6 / 7) × 100 = 85.7"
+      },
+      {
+        "key": "evidence",
+        "label": "Evidence",
+        "score": 78.0,
+        "weight": 15,
+        "description": "Average Evidence Score (0-100) = 78 (rata-rata evidence weight × 10)"
+      },
+      {
+        "key": "coverage",
+        "label": "Coverage",
+        "score": 78.0,
+        "weight": 15,
+        "description": "Overall Coverage (%) = 78"
+      },
+      {
+        "key": "conflict",
+        "label": "Conflict",
+        "score": 82.5,
+        "weight": 15,
+        "description": "Conflict Score (%) = 82.5"
+      },
+      {
+        "key": "knowledge",
+        "label": "Knowledge",
+        "score": 89.1,
+        "weight": 10,
+        "description": "Average Confidence Score = 89.1"
+      }
+    ],
+    "phases": []
+  },
+  "Irys": {
+    "projectSlug": "irys",
+    "total": 78.0,
+    "dimensions": [
+      {
+        "key": "research",
+        "label": "Research Quality",
+        "score": 80.0,
+        "weight": 25,
+        "description": "- (Complete Phases / 10) × 100 = (8/10) × 100 = 80 (Phase 1, 2, 3, 9, 10 lengkap; Phase 4, 5, 6, 7, 8 incomplete karena missing data yang fundamental) -"
+      },
+      {
+        "key": "consistency",
+        "label": "Consistency",
+        "score": 100.0,
+        "weight": 20,
+        "description": "- (Passed Checks / Total Checks) × 100 Total checks: 7 (Entity, Timeline, Technology, Funding, Token, Governance, Dependency) Passed: 7 (semua konsisten, hanya ada konflik low-medium, bukan inkonsistensi fundamental) = (7/7) × 100 = 100 -"
+      },
+      {
+        "key": "evidence",
+        "label": "Evidence",
+        "score": 80.6,
+        "weight": 15,
+        "description": "- Average Evidence Weight (dari 8 knowledge) = 8.06 (8.5 + 8.8 + 7.0 + 8.7 + 8.6 + 6.8 + 7.2 + 8.9) / 8 = 64.5 / 8 = 8.06 Skala 0-10 → konversi ke 0-100 = 80.6 -"
+      },
+      {
+        "key": "coverage",
+        "label": "Coverage",
+        "score": 59.0,
+        "weight": 15,
+        "description": "- Overall Coverage (%) = 59% -"
+      },
+      {
+        "key": "conflict",
+        "label": "Conflict",
+        "score": 85.7,
+        "weight": 15,
+        "description": "- Conflict Score (%) = 85.7% -"
+      },
+      {
+        "key": "knowledge",
+        "label": "Knowledge",
+        "score": 89.0,
+        "weight": 10,
+        "description": "- Average Confidence Score = 89/100 -"
+      }
+    ],
+    "phases": []
+  },
+  "Jito": {
+    "projectSlug": "jito",
+    "total": 85.0,
+    "dimensions": [
+      {
+        "key": "research",
+        "label": "Research Quality",
+        "score": 90.0,
+        "weight": 25,
+        "description": "- Complete phases: 9 dari 10 (Phase 5 partial karena data treasury tidak tersedia, tapi struktur fase lengkap) - Skor: (9/10) × 100 = 90"
+      },
+      {
+        "key": "consistency",
+        "label": "Consistency",
+        "score": 92.0,
+        "weight": 20,
+        "description": "- Total checks: 7 (Entity, Timeline, Technology, Funding, Token, Governance, Dependency) - Passed checks: 6.5 (6 konsisten penuh, 1 konsisten dengan catatan token address) - Skor: (6.5/7) × 100 = 92.8 → dibulatkan 92"
+      },
+      {
+        "key": "evidence",
+        "label": "Evidence",
+        "score": 75.0,
+        "weight": 15,
+        "description": "- Average evidence weight dari 10 knowledge = 8.15 - Potongan dari C-002 critical unresolved = 8% → 8.15 × 0.92 = 7.5 - Skor: (7.5/10) × 100 = 75"
+      },
+      {
+        "key": "coverage",
+        "label": "Coverage",
+        "score": 91.0,
+        "weight": 15,
+        "description": "- Data tersedia yang tercakup = 100% (124/124) - Data yang tidak tersedia (Not Public) = 12 item - Coverage aktual = 124/(124+12) = 91.2% → 91"
+      },
+      {
+        "key": "conflict",
+        "label": "Conflict",
+        "score": 72.0,
+        "weight": 15,
+        "description": "- Conflict Score = 72%"
+      },
+      {
+        "key": "knowledge",
+        "label": "Knowledge",
+        "score": 82.0,
+        "weight": 10,
+        "description": "- Average Confidence Score = 82.0"
+      }
+    ],
+    "phases": []
+  },
+  "Kamino": {
+    "projectSlug": "kamino",
+    "total": 87.21,
+    "dimensions": [
+      {
+        "key": "research",
+        "label": "Research Quality",
+        "score": 80.0,
+        "weight": 25,
+        "description": "- Complete phases: 8 dari 10 - Score: 8/10 × 100 = 80"
+      },
+      {
+        "key": "consistency",
+        "label": "Consistency",
+        "score": 100.0,
+        "weight": 20,
+        "description": "- Passed checks: 7 dari 7 - Score: 7/7 × 100 = 100"
+      },
+      {
+        "key": "evidence",
+        "label": "Evidence",
+        "score": 75.0,
+        "weight": 15,
+        "description": "- Average Evidence Weight: 7.5/10 - Score: 7.5/10 × 100 = 75"
+      },
+      {
+        "key": "coverage",
+        "label": "Coverage",
+        "score": 94.6,
+        "weight": 15,
+        "description": "- Overall Coverage: 94.6% - Score: 94.6"
+      },
+      {
+        "key": "conflict",
+        "label": "Conflict",
+        "score": 86.25,
+        "weight": 15,
+        "description": "- Conflict Score: 86.25% - Score: 86.25"
+      },
+      {
+        "key": "knowledge",
+        "label": "Knowledge",
+        "score": 88.3,
+        "weight": 10,
+        "description": "- Average Confidence Score: 88.3/100 - Score: 88.3"
+      }
+    ],
+    "phases": []
+  },
+  "MakerDAO": {
+    "projectSlug": "makerdao",
+    "total": 93.0,
+    "dimensions": [
+      {
+        "key": "research",
+        "label": "Research Quality",
+        "score": 100.0,
+        "weight": 25,
+        "description": "- (Complete Phases / 10) × 100 = (10 / 10) × 100 = 100 -"
+      },
+      {
+        "key": "consistency",
+        "label": "Consistency",
+        "score": 100.0,
+        "weight": 20,
+        "description": "- (Passed Checks / Total Checks) × 100 = (10 / 10) × 100 = 100 -"
+      },
+      {
+        "key": "evidence",
+        "label": "Evidence",
+        "score": 91.0,
+        "weight": 15,
+        "description": "- Average Evidence Weight (0-100) = 91 -"
+      },
+      {
+        "key": "coverage",
+        "label": "Coverage",
+        "score": 89.0,
+        "weight": 15,
+        "description": "- Overall Coverage (%) = 89 -"
+      },
+      {
+        "key": "conflict",
+        "label": "Conflict",
+        "score": 88.0,
+        "weight": 15,
+        "description": "- Conflict Score (%) = 88 -"
+      },
+      {
+        "key": "knowledge",
+        "label": "Knowledge",
+        "score": 94.0,
+        "weight": 10,
+        "description": "- Average Confidence Score = 94 -"
+      }
+    ],
+    "phases": []
   }
 }

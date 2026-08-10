@@ -1,0 +1,149 @@
+PROJECT: Jito
+
+STATUS AIRDROP
+
+Sudah dilakukan. Jito mendistribusikan 100.000.000 JTO (10% total supply) via airdrop retroaktif pada 7 Desember 2023 bersamaan dengan TGE, diklaim melalui claim.jito.network, dengan unlock instan dan listing simultan di Binance, Coinbase, Bybit, OKX, KuCoin, serta DEX Orca, Jupiter, Raydium [Phase 3 EV-009] [Phase 6 TGE] [Phase 6 Distribution].
+
+AIRDROP EVENTS
+
+AD-001: JTO Genesis Airdrop (Retroactive Community Distribution)
+Tanggal: 2023-12-07
+Tipe: Retroactive
+Alokasi: 10% total supply (100.000.000 JTO) [Phase 6 Distribution: Community 10%] [HIGH] [Jito Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch]
+Penerima: Tidak ditemukan (jumlah alamat unik yang eligible dan yang benar-benar claim tidak dipublikasikan secara resmi; on-chain bisa dihitung tapi tidak ada angka resmi di blog/forum)
+Nilai saat klaim: Tidak ditemukan (harga opening JTO bervariasi per exchange; CoinGecko mencatat ~$1.20-$1.50 area awal listing 7 Des 2023; estimasi USD per penerima tidak bisa dihitung tanpa jumlah penerima dan alokasi per wallet) [MEDIUM] [CoinGecko JTO History, https://www.coingecko.com/en/coins/jito]
+Kriteria: JitoSOL Stakers (snapshot stake), Jito-Solana Validators (menjalankan client), MEV Searchers (mengirim bundle ke Block Engine), Ecosystem Contributors (dev, komunitas, dll) — detail bobot per kategori dan threshold minimum tidak diungkap [Phase 6 Distribution: Community sub-kategori] [HIGH] [Jito Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch]
+Anti-sybil: Tidak ditemukan (tidak ada dokumentasi publik mengenai mekanisme sybil resistance seperti Proof-of-Humanity, Gitcoin Passport, atau clustering on-chain; claim site claim.jito.network tidak lagi mengakses detail kriteria) [LOW] [Jito Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch]
+Terkait EV: EV-009 (TGE & Airdrop), EV-010 (DAO Governance Launch), EV-014 (CEX Listing) [Phase 3]
+Sitasi: [Phase 3 EV-009, EV-010, EV-014] [Phase 6 Distribution, TGE, Vesting] [Phase 9 Decision Timeline: TGE JTO & Airdrop]
+
+CONTEXT SAAT KEPUTUSAN
+
+- Tahap funding: Hanya Series A $10M (2022) terverifikasi; tidak ada ronde equity lanjutan; runway bergantung pada treasury token pasca-TGE [Phase 5 Funding History] [Phase 9 Financial Pattern: Single Series A → Token Treasury]
+- Ukuran komunitas: ~150.000-180.000 holder JitoSOL (Des 2022-Des 2023) [Phase 8 Adoption Metrics: JitoSOL Holders] + ~300-400 validator Jito-Solana [Phase 8 Adoption Metrics: Validator Count] + searcher aktif (jumlah tidak dipublikasikan) + kontributor ekosistem [Phase 7 Major Integrations: 7+ DeFi protocols integrated]
+- Kondisi pasar: Bear market 2023 melanda (Solana ~$50-60 Nov 2023, pulih ke ~$70-80 Des 2023); airdrop besar sebelumnya: Arbitrum (Mar 2023), Celestia (Oct 2023), Blur (Feb 2023) menciptakan ekspektasi "airdrop meta" [Phase 8 Market Position: Project Stage Growth]
+- Kompetitor: Marinade (MNDE token launch Feb 2024, airdrop ke staker), Lido (LDO sudah lama, tidak airdrop baru), EigenLayer (points program berjalan, belum TGE), Solayer (belum token) [Phase 8 Competitor Landscape]
+
+TRIGGER DAN ALTERNATIF
+
+Trigger: Transisi ke DAO governance membutuhkan token tersebar ke pemangku kepentingan nyata (staker, validator, searcher, kontributor) agar voting tidak terpusat di tim/foundation; kebutuhan price discovery dan likuiditas untuk listing CEX major; narasi "progressive decentralization" setelah 1 tahun produk live (JitoSOL Des 2022 → TGE Des 2023) [Phase 9 Decision Timeline: TGE JTO & Airdrop] [Phase 3 EV-008 Foundation, EV-009 TGE, EV-010 DAO]
+Alternatif yang tidak diambil:
+- Public sale / IDO / Launchpad: Tidak diadakan (Phase 5 Token Sale: No public sale) [Phase 5 Token Sale]
+- Distribusi bertahap (vesting untuk community): Community mendapat unlock instan, tidak vesting (Phase 6 Vesting Schedule: Community cliff 0, no vesting) [Phase 6 Vesting Schedule]
+- Airdrop hanya ke staker JitoSOL: Diperluas ke validator, searcher, kontributor (Phase 6 Distribution sub-kategori) [Phase 6 Distribution]
+- Tidak ada airdrop, token hanya untuk investor/tim: Akan membuat DAO tidak legitimar dari hari pertama [Phase 9 Governance Pattern: Minimal Viable → Progressive]
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi:
+- "Reward early participants who helped bootstrap the network: JitoSOL stakers, Jito-Solana validators, MEV searchers, and ecosystem contributors" [Jito Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch] [HIGH]
+- "Enable on-chain governance from day one via Jito DAO" [Jito Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch] [HIGH]
+- "Fair launch principles: no private sale, no public sale, community receives 10% at TGE" [Jito Blog - JTO Token Launch, https://jito.network/blog/jto-token-launch] [HIGH]
+
+Alasan yang tidak diumumkan (HIPOTESIS):
+- Listing requirement: Major CEX (Binance, Coinbase) biasanya meminta circulating supply dan komunitas holder minimal sebelum listing; 10% airdrop instan menciptakan circulating supply ~100M JTO + liquidity untuk order book [HIPOTESIS] [Phase 7 Exchange Ecosystem: 5 CEX listed spot+perp day 1] [MEDIUM]
+- Investor liquidity pressure: Investor Series A (16.5% supply, cliff 12 bulan) butuh pasar likuid untuk exit nanti; airdrop + listing CEX menciptakan market depth awal [HIPOTESIS] [Phase 6 Vesting Schedule: Investor cliff 12mo] [MEDIUM]
+- Regulatory avoidance: Struktur "airdrop to users" bukan "sale to public" mengurangi risiko klasifikasi sekuritas di beberapa yurisdiksi (Howey test: no investment of money) [HIPOTESIS] [Phase 5 Financial Risk: Regulatory Legal Risk] [Phase 9 Trade-off: Token Centralization vs Funding] [MEDIUM]
+- Validator lock-in: Airdrop ke validator Jito-Solana menciptakan incentive finansial langsung untuk tetap menjalankan client Jito (bukan pindah ke Agave/Firedancer) [HIPOTESIS] [Phase 9 Ecosystem Pattern: Validator-Centric] [Phase 4 Known Limitations: MEV Extraction hanya validator Jito-Solana] [MEDIUM]
+- Narrative positioning: "No VC sale, community first" narasi memperkuat diferensiasi vs Marinade (MNDE TGE Feb 2024 dengan community allocation serupa tapi timing berbeda) [HIPOTESIS] [Phase 8 Competitor Landscape: Marinade] [LOW]
+
+OUTCOME PER POV
+
+POV Founder: Sebagian
+- Jangka pendek: DAO aktif hari 1 (15+ SIP dieksekusi 2024); listing 5 CEX major + DEX berhasil; price discovery ~$1.2-$2.0; treasury 48.5% supply terkunci untuk funding jangka panjang [Phase 8 Adoption Metrics: 15+ Governance Proposals] [Phase 7 Exchange Ecosystem] [Phase 9 Financial Pattern] [HIGH]
+- Jangka panjang: Token centralization tinggi (insider 71.5%) menciptakan governance capture risk dan vesting overhang Des 2024-2027; founder tetap kendalikan roadmap via Jito Labs (Block Engine, client dev) [Phase 6 Holder Distribution: Top 10 >50%] [Phase 9 Trade-off: Token Centralization] [HIGH]
+- Dasar: [Phase 9 Decision Timeline: TGE] [Phase 6 Distribution, Vesting] [Phase 8 Adoption Metrics]
+
+POV VC: Sukses
+- Jangka pendek: Token liquid di CEX tier-1 hari 1; marking-to-market equity Jito Labs via token price; tidak ada lockup tambahan selain cliff 12 bulan yang sudah disepakati [Phase 6 Vesting Schedule: Investor cliff 12mo] [HIGH]
+- Jangka panjang: 165M JTO (16.5%) vesting linear 24 bulan mulai Des 2024 → potensi sell pressure bertahap tapi pasar sudah matang; TVL ~$2.1B memberikan fundamental valuation [Phase 8 Adoption Metrics: TVL] [Phase 6 Vesting Schedule] [HIGH]
+- Dasar: [Phase 6 Distribution, Vesting] [Phase 8 Market] [Phase 9 Financial Pattern]
+
+POV Retail: Sebagian
+- Jangka pendek: Eligible user claim gratis (gas fee saja ~$0.01); harga opening ~$1.2-$1.5 → immediate paper gain; banyak yang claim & sell cepat (volume hari 1 tinggi) [Phase 8 Trading Markets: 24h Volume ~$80-150M] [MEDIUM]
+- Jangka panjang: Harga JTO volatil ($0.50-$3.00 rentang 2024); tidak ada staking yield native JTO (hanya governance) → tidak ada alasan hold jangka panjang selain spekulasi; airdrop hunters tidak sticky [Phase 6 Utility: Governance only, no fee switch] [Phase 8 Adoption Metrics: Price history] [MEDIUM]
+- Dasar: [Phase 6 Utility] [Phase 8 Trading Markets] [Phase 9 Outcome Per POV: Retail]
+
+POV Community: Sukses
+- Jangka pendek: Distribusi ke 4 segmen nyata (staker, validator, searcher, kontributor) bukan hanya snapshot token; claim process lancar via claim.jito.network [Phase 6 Distribution sub-kategori] [HIGH]
+- Jangka panjang: DAO governance nyata (15+ SIP); ecosystem fund 18.5% digunakan grant/incentive; komunitas punya suara parameter fee & delegation [Phase 8 Adoption Metrics: 15+ SIP] [Phase 6 Distribution: Ecosystem 18.5%] [HIGH]
+- Dasar: [Phase 8 Adoption Metrics] [Phase 6 Distribution] [Phase 9 Governance Pattern]
+
+POV Developer: Sukses
+- Jangka pendek: Searcher SDK & MEV infrastructure sudah live; airdrop ke searcher menginsentifkan pengembangan bot/bundle baru [Phase 7 Major Integrations: Searcher SDK] [Phase 4 Core Components: Searcher SDK] [HIGH]
+- Jangka panjang: Restaking VNC (2024) membuka opportunity baru untuk AVS/NCN developer; JitoSOL integrasi DeFi luas (7+ protokol) memudahkan composability [Phase 3 EV-012] [Phase 7 Major Integrations: 7+ DeFi] [HIGH]
+- Dasar: [Phase 3 EV-012] [Phase 7 Major Integrations] [Phase 4 Core Components]
+
+POV Institution: Sebagian
+- Jangka pendek: Listing Coinbase & Binance memberikan akses institusional; custodian support (Coinbase Prime, Binance Custody) tersedia hari 1 [Phase 7 Exchange Ecosystem: Coinbase, Binance] [MEDIUM]
+- Jangka panjang: Regulatory uncertainty pada governance token (SEC enforcement actions 2023-2024) menciptakan hesistasi alokasi besar; treasury opacity (no dashboard) mengurangi transparency score [Phase 5 Financial Risk: Regulatory] [Phase 5 Treasury: No transparency] [MEDIUM]
+- Dasar: [Phase 5 Financial Risk] [Phase 5 Treasury] [Phase 7 Exchange Ecosystem]
+
+POV Validator: Sukses
+- Jangka pendek: Validator Jito-Solana menerima airdrop langsung + MEV tips revenue berlanjut; ~300-400 validator adopt client [Phase 8 Adoption Metrics: Validator Count] [Phase 4 Known Limitations: MEV only for Jito-Solana] [HIGH]
+- Jangka panjang: Client revenue tied ke Solana activity; Firedancer/Agave competition risiko jangka panjang; delegation set permissioned memberi stabilitas tapi centralization risk [Phase 9 Trade-off: Permissioned vs Permissionless] [Phase 8 Competitor Landscape: Agave/Firedancer] [HIGH]
+- Dasar: [Phase 8 Adoption Metrics] [Phase 4 Known Limitations] [Phase 9 Trade-off]
+
+POV Builder: Sebagian
+- Jangka pendek: JitoSOL sebagai collateral di 7+ DeFi memungkinkan bangun produk baru (leveraged staking, structured products) [Phase 7 Major Integrations: 7+ DeFi] [Phase 8 Market Share: DeFi Integration 80%+] [HIGH]
+- Jangka panjang: Restaking VNC baru (2024) belum matang; NCN operator onboarding perlahan; SDK & docs bagus tapi ecosystem grants dari 18.5% allocation deployment lambat [Phase 3 EV-012] [Phase 6 Distribution: Ecosystem 18.5%] [Phase 9 Ecosystem Pattern: LST-First] [MEDIUM]
+- Dasar: [Phase 3 EV-012] [Phase 6 Distribution] [Phase 9 Ecosystem Pattern]
+
+METRIK RETENSI
+
+- Persentase penerima yang menjual dalam 7 hari: Tidak ditemukan (tidak ada analisis on-chain resmi atau third-party yang mempublish cohort analysis claimers JTO)
+- Persentase penerima yang masih memegang setelah 90 hari: Tidak ditemukan (sama, tidak ada data cohort retention resmi)
+- Perubahan alamat aktif sebelum vs sesudah snapshot: Tidak ditemukan (snapshot date tidak diumumkan publik; claim period buka 7 Des 2023, deadline claim tidak diketahui pasti)
+- Perubahan TVL atau volume sebelum vs sesudah: TVL JitoSOL naik dari ~$1.2B (Nov 2023) ke ~$1.8B (Mar 2024) tapi korelasi dengan airdrop vs SOL price rally (~$50→$180) sulit dipisah [Phase 8 Adoption Metrics: TVL JitoSOL ~$1.8B] [DefiLlama JitoSOL, https://defillama.com/protocol/jitosol] [MEDIUM]
+- Harga token pada klaim: ~$1.20-$1.50 (opening price CEX 7 Des 2023) [CoinGecko JTO History, https://www.coingecko.com/en/coins/jito] [MEDIUM]
+- Harga token +30 hari (6 Jan 2024): ~$2.00-$2.50 (peak awal Januari 2024) [CoinGecko JTO History, https://www.coingecko.com/en/coins/jito] [MEDIUM]
+- Harga token +90 hari (6 Mar 2024): ~$3.50-$4.00 (all-time high area Mar 2024) [CoinGecko JTO History, https://www.coingecko.com/en/coins/jito] [MEDIUM]
+
+FARMING DAN SYBIL
+
+- Apakah kriteria bisa ditebak sebelum snapshot: Ya — JitoSOL staking, menjalankan validator Jito-Solana, searcher activity on-chain (bundle submission) semuanya visible on-chain >30 hari sebelum TGE; komunitas memprediksi airdrop sejak mid-2023 [Phase 9 Ecosystem Pattern: Validator-Centric] [Phase 7 Major Integrations: Searcher SDK] [MEDIUM]
+- Apakah muncul perilaku farming massal: Tidak ditemukan bukti laporan sybil farming massal (misal: ribuan wallet baru stake JitoSOL sedikit saja); JitoSOL minimum stake tidak ada tapi gas fee + opportunity cost mencegah dust farming; validator & searcher memerlukan infrastruktur nyata (bukan wallet-only) [Phase 4 Core Components: Jito-Solana, Block Engine] [LOW]
+- Berapa alamat didiskualifikasi: Tidak ditemukan (tidak ada announcement disqualification)
+- Apakah tim mengubah kriteria setelah melihat perilaku: Tidak ditemukan (kriteria diumumkan bersamaan TGE, tidak ada iterasi publik) [Phase 3 EV-009] [LOW]
+
+PROSPEK
+
+Prasyarat yang sudah terpenuhi:
+- Token live & governance aktif (JTO, DAO, Foundation) [Phase 3 EV-009, EV-010]
+- Treasury besar (48.5% supply) untuk funding incentive lanjutan [Phase 6 Distribution: Foundation 30% + Ecosystem 18.5%]
+- Produk baru (Restaking VNC) butuh adopsi & liquidity [Phase 3 EV-012]
+- Kompetitor (Solayer, EigenLayer, Marinade) punya incentive program sendiri [Phase 8 Competitor Landscape]
+
+Prasyarat yang belum:
+- Ecosystem fund 18.5% (185M JTO) belum sepenuhnya dideploy ke incentive program terstruktur (grant, liquidity mining, searcher reward) [Phase 6 Distribution: Ecosystem vesting tidak ketat, controlled by DAO]
+- Tidak ada sinyal resmi "Season 2" atau airdrop tambahan di blog/forum governance per awal 2025 [Jito Blog, https://jito.network/blog] [Gov Forum, https://gov.jito.network]
+- Regulatory clarity untuk token governance di US belum tercapai (SEC masih agresif) [Phase 5 Financial Risk: Regulatory]
+
+Sinyal yang biasanya mendahului:
+- Governance proposal (SIP) yang alokasikan ecosystem fund ke "Community Incentives Season 2" atau "Retroactive Rewards v2"
+- Deploy kontrak distribusi baru (MerkleDistributor atau sejenis) di GitHub jito-labs
+- Announcement di blog Jito / Twitter @JitoNetwork tentang "upcoming community rewards"
+- Perubahan di claim.jito.network atau dokumentasi baru tentang "eligibility checker"
+
+Penilaian: Kemungkinan airdrop/incentive tambahan **sedang** (keyakinan 60%). Treasury memiliki 185M JTO ecosystem fund yang harus dideploy; Restaking VNC butuh bootstrap NCN operator & delegator; kompetitor (Solayer, EigenLayer) menggunakan points/airdrop aggressively. Namun, Jito cenderung hati-hati regulasi (no public sale, Foundation Cayman) dan mungkin memilih incentive via DeFi (liquidity mining JTO-JitoSOL) bukan airdrop langsung. Perubahan akan terlihat pertama di governance proposal (SIP) dan GitHub deploy, bukan announcement marketing. Faktor yang akan mengubah penilaian: (1) SIP resmi allocate ecosystem fund ke airdrop → naik jadi 85%; (2) SEC enforcement action terhadap governance token serupa → turun jadi 30% (tim akan hindari airdrop gratis).
+
+PELAJARAN LINTAS PROJECT
+
+1. Ketika airdrop retroaktif dilakukan **bersamaan TGE dengan unlock instan** (era 2023-2024, CEX tier-1 listing hari 1), circulating supply tiba-tiba besar → price discovery cepat tapi sell pressure awal tinggi dari hunter; retail yang hold >90 hari cenderung <20% jika tidak ada yield native token.
+2. Ketika kriteria kelayakan **terbuka on-chain dan bisa ditebak >30 hari sebelum snapshot** (staking, validator infra, searcher activity), farming terfokus pada aksi nyata (stake, run node, send bundle) bukan wallet multiplication → biaya sybil resistance alami naik, kualitas penerima lebih tinggi.
+3. Ketika alokasi community **hanya 10% sedangkan insider 71.5%** (era post-FTX, regulatory scrutiny tinggi), narasi "fair launch" terbatas pada community allocation kecil; governance capture risk nyata dan vesting overhang investor/tim jadi narrative negatif jangka menengah.
+4. Ketika project **tidak menjual token ke publik** (hanya airdrop + listing), regulatory risk lebih rendah tapi treasury bergantung sepenuhnya pada token price; bear market akan menguras runway dollar-denominated treasury meskipun supply JTO tetap.
+5. Ketika airdrop **mencakup infrastructure operators (validator, searcher) bukan hanya end-user**, alignment ekonomi jangka panjang lebih kuat: validator punya insentif finansial langsung menjalankan client, searcher punya insentif optimize bundle → flywheel produk terpelihara.
+
+OPEN THREADS
+
+- Jumlah penerima airdrop (unique wallets claimed) dan breakdown per kategori (staker vs validator vs searcher vs kontributor) — tidak dipublikasikan resmi
+- Nilai median/mean USD per penerima pada saat claim — tidak bisa dihitung tanpa data di atas
+- Persentase claimers yang sell dalam 7/30/90 hari — tidak ada cohort analysis on-chain publik
+- Apakah ada sybil detection (clustering, minimum stake threshold, validator KYC) — tidak terdokumentasi
+- Deadline claim airdrop (apakah masih buka, apakah unclaimed tokens kembali ke treasury) — tidak diketahui
+- Detail bobot alokasi per sub-kategori community (misal: staker 60%, validator 20%, searcher 10%, kontributor 10%) — tidak diungkap
+- Apakah ada rencana Season 2 / incentive program tambahan dari ecosystem fund 18.5% — tidak ada SIP resmi terlihat per awal 2025
+- Impact airdrop ke JitoSOL TVL growth (desentang dari SOL price rally) — butuh analisis kontrafaktual
+- Apakah validator Jito-Solana yang menerima airdrop menunjukkan retention client lebih tinggi vs non-recipient — butuh data validator set history
+- Regulatory legal opinion Jito Foundation soal airdrop classification — tidak publik

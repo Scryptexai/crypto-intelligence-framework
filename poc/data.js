@@ -2,7 +2,7 @@
 window.CIF = {
   "meta": {
     "schema": "cif-export/1",
-    "generated": "2026-08-09 16:59 UTC",
+    "generated": "2026-08-10 07:56 UTC",
     "projects": 29,
     "deep": 29,
     "summary": 0,
@@ -48,6 +48,7 @@ window.CIF = {
       "cat": "Layer-1 (heterogeneous multi-chain/Subnet)",
       "era": "2020–",
       "tags": [
+        "airdrop",
         "l1"
       ]
     },
@@ -69,6 +70,7 @@ window.CIF = {
       "cat": "NFT marketplace + lending (Blend)",
       "era": "2022–",
       "tags": [
+        "airdrop",
         "nft-community"
       ]
     },
@@ -111,6 +113,7 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "l1"
       ]
     },
@@ -121,6 +124,7 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "modular"
       ]
     },
@@ -131,7 +135,7 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
-        "governance",
+        "airdrop",
         "mining"
       ]
     },
@@ -142,6 +146,7 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "l1"
       ]
     },
@@ -163,6 +168,7 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "l1"
       ]
     },
@@ -172,7 +178,9 @@ window.CIF = {
       "file": "examples/CaseStudies/Friend.tech.md",
       "cat": "",
       "era": "",
-      "tags": []
+      "tags": [
+        "airdrop"
+      ]
     },
     {
       "n": "Grass",
@@ -189,6 +197,7 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "depin"
       ]
     },
@@ -199,6 +208,7 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "perps",
         "l1"
       ]
@@ -210,6 +220,7 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "testnet-incentive",
         "l1"
       ]
@@ -233,6 +244,7 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "points"
       ]
     },
@@ -255,6 +267,7 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "stablecoin",
         "governance"
       ]

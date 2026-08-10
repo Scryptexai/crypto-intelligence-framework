@@ -1,7 +1,7 @@
 {
   "meta": {
     "schema": "cif-export/1",
-    "generated": "2026-08-09 16:59 UTC",
+    "generated": "2026-08-10 07:56 UTC",
     "projects": 29,
     "deep": 29,
     "summary": 0,
@@ -47,6 +47,7 @@
       "cat": "Layer-1 (heterogeneous multi-chain/Subnet)",
       "era": "2020–",
       "tags": [
+        "airdrop",
         "l1"
       ]
     },
@@ -68,6 +69,7 @@
       "cat": "NFT marketplace + lending (Blend)",
       "era": "2022–",
       "tags": [
+        "airdrop",
         "nft-community"
       ]
     },
@@ -110,6 +112,7 @@
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "l1"
       ]
     },
@@ -120,6 +123,7 @@
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "modular"
       ]
     },
@@ -130,7 +134,7 @@
       "cat": "",
       "era": "",
       "tags": [
-        "governance",
+        "airdrop",
         "mining"
       ]
     },
@@ -141,6 +145,7 @@
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "l1"
       ]
     },
@@ -162,6 +167,7 @@
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "l1"
       ]
     },
@@ -171,7 +177,9 @@
       "file": "examples/CaseStudies/Friend.tech.md",
       "cat": "",
       "era": "",
-      "tags": []
+      "tags": [
+        "airdrop"
+      ]
     },
     {
       "n": "Grass",
@@ -188,6 +196,7 @@
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "depin"
       ]
     },
@@ -198,6 +207,7 @@
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "perps",
         "l1"
       ]
@@ -209,6 +219,7 @@
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "testnet-incentive",
         "l1"
       ]
@@ -232,6 +243,7 @@
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "points"
       ]
     },
@@ -254,6 +266,7 @@
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "stablecoin",
         "governance"
       ]

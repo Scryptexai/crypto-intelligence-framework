@@ -1,0 +1,151 @@
+PROJECT: Celestia
+
+STATUS AIRDROP
+Sudah dilakukan
+Genesis Drop (airdrop retroaktif) dieksekusi pada 2023-10-31 bersamaan dengan mainnet launch dan TGE; 60.000.000 TIA (6% total supply 1B TIA) didistribusikan ke alamat eligible (Cosmos stakers, developer, kontributor testnet Arabica/Mocha/Lemon) tanpa public sale; claimable langsung tanpa vesting【Phase 1 Foundation】【Phase 3 EV-010】【Phase 6 TGE, Distribution】【Phase 9 Decision Timeline Mainnet Launch】【Phase 10 K-003】.
+
+AIRDROP EVENTS
+
+AD-001: Genesis Drop (TGE Airdrop)
+Tanggal: 2023-10-31
+Tipe: Retroactive / Snapshot
+Alokasi: 6% total supply (60.000.000 TIA dari 1.000.000.000 TIA) (HIGH) [Phase 6 Distribution; Phase 3 EV-010; Phase 10 K-003]
+Penerima: Tidak ditemukan (jumlah alamat unik yang eligible dan/atau yang claim tidak diumumkan resmi; blog Genesis Drop menyebut "eligible addresses" tanpa angka total) (MEDIUM) [Phase 3 EV-010; https://blog.celestia.org/tia-genesis-drop/]
+Nilai saat klaim: Tidak ditemukan (harga TIA pada saat klaim 2023-10-31 tidak tercantum di Phase 1-11; CoinGecko historical data menunjukkan rentang ~$2.00-$2.50 awal November 2023 tapi harga exact saat genesis block tidak tercatat dalam fase-fase sebelumnya) (LOW) [Phase 8 Exchange Ecosystem; CoinGecko historical]
+Kriteria: Alamat yang memenuhi syarat: (1) Staker Cosmos Hub (ATOM) dan chain Cosmos lainnya pada snapshot tertentu; (2) Developer ekosistem Cosmos/Celestia (kontributor kode, dokumentasi); (3) Kontributor testnet Celestia (Arabica, Mocha, Lemon) — operator node, relayer, validator testnet; detail snapshot block/height dan daftar chain spesifik tidak diumumkan dalam blog resmi (HIGH) [Phase 3 EV-010; Phase 6 Distribution; Phase 9 Decision Timeline]
+Anti-sybil: Tidak ditemukan (mekanisme penyaringan sybil tidak dijelaskan dalam blog Genesis Drop atau docs; tidak ada laporan jumlah alamat yang didiskualifikasi) (MEDIUM) [Phase 3 EV-010; Phase 6 Distribution]
+Terkait EV: EV-009 (Mainnet Launch), EV-010 (TGE & Genesis Drop)
+Sitasi: Phase 3 EV-010 (HIGH) [https://blog.celestia.org/tia-genesis-drop/]; Phase 6 Distribution (HIGH) [https://docs.celestia.org/learn/tia-token]; Phase 9 Decision Timeline (HIGH) [Phase 9]; Phase 10 K-003 (HIGH) [Phase 10]
+
+CONTEXT SAAT KEPUTUSAN
+
+Tahap funding: Series A/B $55M (Oktober 2022) sudah selesai; Celestia Labs Inc. memiliki runway ~3-5 tahun; tidak ada kebutuhan immediate cash dari token sale【Phase 3 EV-005】【Phase 5 Funding History】【Phase 9 Decision Timeline Funding】.
+Ukuran komunitas: 3 incentivized testnet (Arabica Jan 2022, Mocha Mar 2023, Lemon Sep 2023) dengan ratusan operator node; ekosistem Cosmos stakers puluhan ribu alamat; developer ekosistem modular berkumpul di Discord/forum【Phase 3 EV-004, EV-007, EV-008】【Phase 7 Infrastructure Providers】【Phase 9 Decision Timeline Testnets】.
+Kondisi pasar: Q4 2023 — bear market residual, regulatory scrutiny meningkat (SEC vs Binance/Coinbase juni 2023); banyak project menghindari public sale/ICO; fair launch via airdrop menjadi narasi yang disukai komunitas dan investor【Phase 8 Market Position】【Phase 9 Decision Timeline Mainnet Launch】.
+Kompetitor terdekat: EigenDA (belum mainnet, AVS di EigenLayer), Avail (testnet, Substrate-based), Near DA (live tapi terikat NEAR execution); Celestia first-mover modular DA layer dengan mainnet production-ready【Phase 8 Competitor Landscape】【Phase 9 Strategic Objective 1】.
+
+TRIGGER DAN ALTERNATIF
+
+Trigger: Mainnet launch memerlukan (1) distribusi token untuk keamanan staking (validator set genesis), (2) partisipasi governance on-chain sejak day-1, (3) narasi fair launch untuk diferensiasi dari kompetitor yang melakukan private sale/public sale, (4) memenuhi syarat listing CEX yang butuh circulating supply dan komunitas terdistribusi【Phase 3 EV-009, EV-010】【Phase 6 TGE】【Phase 9 Decision Timeline Mainnet Launch, TGE】.
+Alternatif yang tidak diambil:
+- Public sale / launchpad / auction: ditolak eksplisit ("NO public sale") — alasan resmi: fair launch, regulatory clarity【Phase 6 TGE】【Phase 9 Decision Timeline】.
+- Penjualan privat tambahan (SAFT) di atas Series A/B: tidak dilakukan; investor sudah mendapat alokasi via equity round SAFT【Phase 5 Funding History】【Phase 6 Vesting Schedule Investors】.
+- Distribusi bertahap (claim over time / vesting untuk community): tidak diambil; Genesis Drop fully unlocked at claim — trade-off: immediate liquidity vs sell pressure【Phase 6 Vesting Schedule Community】【Phase 9 Decision Timeline】.
+- Tidak mendistribusikan sama sekali (hanya staking reward/inflation): tidak diambil; butuh circulating supply untuk governance, staking security, dan CEX listing【Phase 6 Utility Staking, Governance】【Phase 8 Exchange Ecosystem】.
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi:
+- "Fair launch via airdrop ke Cosmos stakers, developers, testnet contributors" — tidak ada public sale, immediate liquidity【Phase 9 Decision Timeline Mainnet Launch】 (HIGH) [Phase 9].
+- Membangun validator set genesis yang terdesentralisasi melalui staking airdrop recipients【Phase 9 Decision Timeline Mainnet Launch】 (HIGH) [Phase 9].
+- Memenuhi ekspektasi komunitas modular blockchain yang menentang VC-dominated tokenomics【Phase 8 Narrative Position】 (MEDIUM) [Phase 8].
+- Regulatory clarity: no public sale mengurangi risiko klasifikasi sekuritas【Phase 9 Decision Timeline】 (MEDIUM) [Phase 9].
+
+Alasan yang tidak diumumkan (HIPOTESIS):
+- Tekanan investor (Series A/B $55M) untuk likuiditas early agar SAFT token bisa dibuka (unlock) dengan harga pasar yang terbentuk; circulating supply 6% memungkinkan price discovery tanpa membanjiri pasar — HIPOTESIS (MEDIUM) [Phase 5 Funding History; Phase 6 Vesting Schedule Investors; Phase 9 Open Threads Vesting].
+- Kebutuhan CEX listing: Binance, Coinbase, Kraken dll butuh circulating supply minimum dan komunitas holder terdistribusi untuk listing; airdrop 6% memenuhi syarat praktis listing tanpa market making agreement besar — HIPOTESIS (MEDIUM) [Phase 8 Exchange Ecosystem 11 CEX listing Q4 2023; Phase 9 Decision Timeline CEX Listings].
+- Menghindari klasifikasi "investment contract" (Howey test) di US: airdrop tanpa purchase expectation (no payment) argumen regulasi yang lebih kuat vs public sale — HIPOTESIS (LOW) [Phase 5 Financial Risk Regulatory; Phase 9 Decision Timeline].
+- Membangun narasi "community-owned" untuk menarik developer rollup (Arbitrum, Starknet, Polygon CDK) yang butuh DA layer netral, bukan VC-controlled — HIPOTESIS (MEDIUM) [Phase 3 EV-013, EV-014, EV-015; Phase 9 Strategic Objective 2,3].
+
+OUTCOME PER POV
+
+POV Founder: Sebagian
+- Jangka pendek: Mainnet launch lancar, validator set genesis terbentuk dari airdrop stakers, 11 CEX listing dalam 6 minggu, narasi fair launch tercapai, zero regulatory action terkait TGE【Phase 3 EV-009, EV-010, EV-024】【Phase 9 Decision Timeline】 (HIGH) [Phase 3, Phase 9].
+- Jangka panjang: Token allocation opacity (team/investor/foundation % tidak diungkap) menciptakan tekanan transparansi berkelanjutan; fee switch belum aktif (Nov 2024) menunda value accrual narrative; treasury opacity tetap kritik — HIPOTESIS (MEDIUM) [Phase 6 Distribution; Phase 5 Treasury; Phase 3 EV-027; Phase 9 Failure Factor 1,2].
+- Dasar: Phase 3 EV-009, EV-010, EV-024; Phase 6 Distribution; Phase 9 Decision Timeline, Failure Factors (HIGH/MEDIUM).
+
+POV VC: Sukses
+- Jangka pendek: Equity investment $55M (Series A/B) mendapat token allocation via SAFT dengan vesting (cliff/linear tidak diungkap); immediate CEX liquidity memungkinkan partial exit early jika diinginkan; tidak ada public sale yang melonggarkan cap table【Phase 5 Funding History】【Phase 6 Vesting Schedule Investors】 (HIGH) [Phase 5, Phase 6].
+- Jangka panjang: Token price discovery dari ~$2 (awal) ke ATH ~$20 (Februari 2024) lalu koreksi; VC vesting schedule (cliff 12 bulan typical) berarti unlock besar dimulai Q4 2024 — tekanan jual potensial; fee switch activation akan menentukan apakah TIA menjadi productive asset — HIPOTESIS (MEDIUM) [Phase 8 Market; Phase 3 EV-027; Phase 9 Open Threads Vesting].
+- Dasar: Phase 5 Funding History; Phase 6 Vesting; Phase 8 Market; Phase 9 Open Threads (HIGH/MEDIUM).
+
+POV Retail: Sebagian
+- Jangka pendek: Eligible Cosmos stakers/dev/testnet contributors mendapat free TIA (claimable day-1); harga naik ~10x dalam 3 bulan (Nov 2023 - Feb 2024) memberi keuntungan besar bagi yang hold; non-eligible retail harus beli di CEX【Phase 3 EV-010, EV-024】【Phase 8 Exchange Ecosystem】 (HIGH) [Phase 3, Phase 8].
+- Jangka panjang: Airdrop hunter yang tidak eligible merasa terkecualai (criteria opaque); sell pressure dari airdrop recipients early menciptakan volatilitas; tidak ada program follow-up airdrop (Season 2) hingga cut-off — HIPOTESIS (MEDIUM) [Phase 6 Distribution; Phase 8 Market; Phase 9 Open Threads].
+- Dasar: Phase 3 EV-010, EV-024; Phase 8 Exchange Ecosystem; Phase 9 (HIGH/MEDIUM).
+
+POV Community: Sukses
+- Jangka pendek: Genesis Drop 6% ke community (bukan hanya insider) — narasi "community-first" tervalidasi; governance on-chain aktif day-1 dengan proposal pertama Jan 2024; Discord/forum aktif diskusi fee switch, grants【Phase 3 EV-018, EV-027】【Phase 6 Governance】 (HIGH) [Phase 3, Phase 6].
+- Jangka panjang: Community pool spend via proposal (Sputnik grants 2024) menunjukkan treasury deployment; namun treasury size/composition opacity tetap mengganggu kepercayaan jangka panjang — HIPOTESIS (MEDIUM) [Phase 3 EV-026; Phase 5 Treasury; Phase 9 Failure Factor 2].
+- Dasar: Phase 3 EV-018, EV-026, EV-027; Phase 6 Governance; Phase 5 Treasury; Phase 9 Failure Factor 2 (HIGH/MEDIUM).
+
+POV Developer: Sukses
+- Jangka pendek: Developer Cosmos/Celestia eligible mendapat TIA untuk staking/securing rollup mereka; Rollkit (2022) dan Sovereign SDK (2024) sudah tersedia pre/post-mainnet; blobspace fees murah awal memudahkan eksperimen【Phase 3 EV-006, EV-019】【Phase 7 SDK Rollkit, Sovereign SDK】 (HIGH) [Phase 3, Phase 7].
+- Jangka panjang: 15+ rollup terintegrasi Q2 2025 (Arbitrum Orbit, Starknet, Polygon CDK, Manta, Dymension, dll) — blobspace demand real; light client WASM (Jan 2025) memperluas verifikasi trust-minimized ke browser/mobile — HIPOTESIS (HIGH) [Phase 3 EV-013, EV-014, EV-015, EV-022, EV-028; Phase 7 Major Integrations; Phase 8 Adoption Metrics].
+- Dasar: Phase 3 EV-006, EV-013, EV-014, EV-015, EV-019, EV-022, EV-028; Phase 7; Phase 8 (HIGH).
+
+POV Institution: Sebagian
+- Jangka pendek: 11 major CEX listing (Binance, Coinbase, Kraken, Bybit, OKX, dll) memberikan akses institusional; perpetual futures tersedia di sebagian besar; OTC desk tersedia di Binance, Coinbase Prime, Kraken OTC【Phase 8 Exchange Ecosystem】 (HIGH) [Phase 8].
+- Jangka panjang: Tokenomics opacity (alokasi team/investor/foundation tidak diungkap, vesting tidak transparan) dan treasury opacity menghalangi alokasi besar institusional yang butuh compliance & risk management ketat; fee switch uncertainty menambah variabel — HIPOTESIS (MEDIUM) [Phase 5 Treasury; Phase 6 Distribution, Vesting; Phase 3 EV-027; Phase 9 Failure Factor 1,3].
+- Dasar: Phase 5, Phase 6, Phase 8, Phase 9 (HIGH/MEDIUM).
+
+POV Validator: Sukses
+- Jangka pendek: Genesis validator set 100 aktif terbentuk dari testnet performers + airdrop stakers; staking participation ~65-75% supply Q2 2025; inflation ~7-8%/tahun memberi yield staker; priority fee blobspace ke proposer【Phase 3 EV-009】【Phase 4 Consensus Mechanism】【Phase 8 Adoption Metrics Staking Participation】 (HIGH) [Phase 3, Phase 4, Phase 8].
+- Jangka panjang: Fee switch activation (jika lolos governance) akan menambah revenue stream ke staker (base fee/priority fee portion); upgrade v2.0/v3.0 via governance menunjukkan koordinasi validator berfungsi; slashing risk tetap ada (double sign, downtime) — HIPOTESIS (HIGH) [Phase 3 EV-021, EV-029; Phase 4 Security Model; Phase 6 Inflation/Deflation; Phase 9 Decision Timeline Upgrades].
+- Dasar: Phase 3 EV-009, EV-021, EV-029; Phase 4 Consensus, Security Model; Phase 6 Inflation; Phase 9 (HIGH).
+
+POV Builder: Sukses
+- Jangka pendek: Grant program Sputnik Wave 1 (2024) mendanai tooling, rollup templates, light client infra, explorer; builder mendapatkan TIA untuk operasi dan stake【Phase 3 EV-026】【Phase 7 Ecosystem】 (HIGH) [Phase 3, Phase 7].
+- Jangka panjang: Ecosystem flywheel: grants → builder → tooling/rollup → blobspace fees → treasury → more grants; 15+ rollup live membuktikan product-market fit DA layer; multi-VM support (EVM, ZK, SVM, Move, WASM, Custom) menarik builder beragam — HIPOTESIS (HIGH) [Phase 3 EV-026; Phase 7 Major Integrations; Phase 8 Adoption Metrics; Phase 9 Success Factor 4,5].
+- Dasar: Phase 3 EV-026; Phase 7; Phase 8; Phase 9 Success Factors (HIGH).
+
+METRIK RETENSI
+
+Persentase penerima yang menjual dalam 7 hari: Tidak ditemukan (tidak ada analisis on-chain resmi atau third-party yang dipublikasikan di Phase 1-11; memerlukan query snapshot Genesis Drop claimers vs transfer events dalam 7 hari) (LOW).
+Persentase penerima yang masih memegang setelah 90 hari: Tidak ditemukan (sama seperti di atas; tidak ada data retensi holder airdrop recipients yang diagregasikan) (LOW).
+Perubahan alamat aktif sebelum vs sesudah snapshot: Tidak ditemukan (snapshot date tidak diumumkan exact; "eligible addresses" criteria tidak mencakup tanggal cutoff yang memungkinkan perbandingan pre/post) (LOW).
+Perubahan TVL atau volume sebelum vs sesudah: Tidak ditemukan (Celestia tidak punya TVL tradisional; blobspace throughput dan fee revenue metrics dari Token Terminal tersedia tapi tidak dibandingkan pre/post airdrop secara eksplisit) (MEDIUM) [Phase 8 Adoption Metrics Blobspace Throughput, Fee Revenue; Phase 9 Open Threads Revenue Metrics].
+Harga token pada klaim, +30 hari, +90 hari: Tidak ditemukan (harga exact pada genesis block 2023-10-31 tidak tercatat; CoinGecko historical menunjukkan ~$2.00-$2.50 awal November 2023, ~$10+ pada +90 hari (Februari 2024 ATH ~$20) tapi data point exact tidak ada di fase-fase sebelumnya) (LOW) [Phase 8 Exchange Ecosystem; CoinGecko historical].
+
+FARMING DAN SYBIL
+
+Kriteria bisa ditebak sebelum snapshot: Tidak ditemukan (snapshot block/height tidak diumumkan; criteria "Cosmos stakers, developers, testnet contributors" cukup umum sehingga hunter bisa mempersiapkan: stake ATOM, kontribusi kode minor, jalankan testnet node — tapi tidak ada bukti mass farming terdokumentasi) (MEDIUM) [Phase 3 EV-010; Phase 6 Distribution].
+Perilaku farming massal: Tidak ditemukan (tidak ada laporan spike aktivitas testnet Lemon (Sep 2023) mendekati mainnet yang mencurigakan; testnet Lemon dirancang sebagai pre-mainnet rehearsal bukan farming ground) (MEDIUM) [Phase 3 EV-008; Phase 7 Infrastructure Providers].
+Jumlah alamat didiskualifikasi: Tidak ditemukan (tidak ada mekanisme anti-sybil atau diskualifikasi yang diumumkan; blog Genesis Drop tidak menyebutkan rejection) (LOW).
+Tim mengubah kriteria setelah melihat perilaku: Tidak ditemukan (kriteria diumumkan bersamaan dengan TGE; tidak ada iterasi kriteria pasca-snapshot) (LOW).
+
+PROSPEK
+
+Prasyarat yang sudah terpenuhi:
+- Mainnet live dengan DA layer berfungsi (DAS, NMT, Blobstream)【Phase 3 EV-009】【Phase 4 Core Components】 (HIGH).
+- Token TIA liquide, listed 11 CEX, digunakan staking/governance/fee payment【Phase 3 EV-010, EV-024】【Phase 6 Utility】【Phase 8 Exchange Ecosystem】 (HIGH).
+- Ecosystem rollup 15+ terintegrasi, blobspace demand real【Phase 3 EV-022】【Phase 8 Adoption Metrics Rollups】 (HIGH).
+- Governance on-chain aktif, upgrade v2.0/v3.0 via proposal【Phase 3 EV-018, EV-021, EV-029】【Phase 6 Governance】 (HIGH).
+- Foundation formed, grant program Sputnik running【Phase 3 EV-011, EV-026】【Phase 2 Foundation】【Phase 7 Ecosystem】 (HIGH).
+
+Prasyarat yang belum:
+- Fee switch activation (value accrual ke staker) — masih diskusi governance Nov 2024, belum proposal formal lolos【Phase 3 EV-027】【Phase 6 Utility Fee Accrual】【Phase 9 Decision Timeline Fee Switch】 (HIGH).
+- Treasury transparency dashboard / on-chain address label Foundation/Labs — tidak ada【Phase 5 Treasury】【Phase 9 Failure Factor 2】 (HIGH).
+- Tokenomics detail (alokasi team/investor/foundation %, vesting schedule) — tidak diungkap【Phase 6 Distribution, Vesting】【Phase 9 Open Threads Distribution, Vesting】 (HIGH).
+- Native IBC aktif untuk transfer TIA lintas Cosmos ecosystem — masih planned【Phase 7 Integration IBC】【Phase 8 Liquidity】【Phase 9 Failure Factor 5】 (MEDIUM).
+- Quantum Gravity Bridge testnet/mainnet — masih R&D, belum live【Phase 3 EV-030】【Phase 4 QGB】【Phase 9 Open Threads QGB】 (MEDIUM).
+- Light client DAS participation rate telemetri publik — tidak ada【Phase 8 Adoption Metrics Light Client】【Phase 9 Open Threads DAS Participation】 (HIGH).
+
+Sinyal yang biasanya mendahului:
+- Perubahan dokumentasi: halaman tokenomics blog/docs di-update dengan breakdown alokasi dan vesting schedule.
+- Kontrak distribusi: deploy vesting contract baru atau update Genesis Drop contract untuk Season 2.
+- Pengumuman snapshot: snapshot block/height diumumkan minimal 30 hari sebelumnya (best practice era 2024).
+- Perekrutan: hiring community/airdrop program manager di Celestia Labs/Foundation.
+- Forum governance: proposal formal untuk community allocation tambahan (Season 2) atau incentive program baru.
+
+Penilaian: Kemungkinan airdrop Season 2 / follow-up incentive program MODERATE (50-60%) dalam 12-18 bulan ke depan. Prasyarat utama: fee switch activation (membutuhkan value accrual narrative baru), treasury transparency improvement (mengurangi kritik), dan IBC native activation (memperluas eligible population ke Cosmos ecosystem luas). Sinyal paling kuat akan muncul dari forum governance proposal formal untuk "Community Incentive Program Season 2" atau "Ecosystem Growth Allocation" — jika proposal tersebut muncul dan lolos, airdrop/incentive follow-up hampir pasti. Blocker utama: token allocation opacity — tanpa breakdown resmi, sulit membenarkan alokasi tambahan ke community tanpa menimbulkan spekulasi insider allocation. Keyakinan: MEDIUM (bergantung pada keputusan governance fee switch dan transparency roadmap 2025).
+
+PELAJARAN LINTAS PROJECT
+
+Ketika airdrop dieksekusi bersamaan mainnet launch + TGE tanpa public sale (era 2023-2024, regulatory scrutiny tinggi), fair launch narrative tercapai dan CEX listing cepat (11 major CEX dalam 6 minggu) — akibatnya immediate liquidity dan price discovery tanpa sell pressure dari public sale unlock, tapi token allocation opacity (team/investor/foundation % tidak diungkap) menciptakan tekanan transparansi jangka panjang yang menghalangi adopsi institusional.
+Ketika kriteria airdrop retroaktif mencakup "testnet contributors" tanpa snapshot date spesifik yang diumumkan jauh-jauh hari (era 2023, testnet incentivized sudah matang), hunter population sudah siap memenuhi syarat (stake ATOM, jalankan node testnet) — akibatnya eligible set mencerminkan genuine early contributors namun tidak bisa dibedakan dari hunter yang persis menargetkan criteria; anti-sybil mechanism tidak diumumkan membuat retensi post-airdrop tidak terukur.
+Ketika airdrop allocation hanya 6% total supply (relatif kecil vs project lain 10-20%) dan fully unlocked at claim (era 2023-2024, hunter population matang), sell pressure awal termitigasi oleh ukuran kecil dan distribusi ke stakers yang cenderung hold untuk staking — akibatnya price appreciation 10x dalam 3 bulan tanpa crash besar, tapi tidak ada program follow-up menciptakan "one-time event" perception bukan ongoing incentive.
+Ketika dual-entity structure (Labs for-profit + Foundation non-profit) dipakai untuk airdrop distribution (Foundation mengelola Genesis Drop), governance legitimacy meningkat karena treasury stewarded by non-profit — akibatnya community trust lebih tinggi vs single-entity project, tapi Foundation treasury opacity (tidak ada dashboard) mengurangi keuntungan struktur tersebut.
+Ketika fee switch (value accrual mechanism) dijanjikan tapi tidak diaktifkan hingga 12+ bulan pasca-TGE (era 2024, governance on-chain matang), token holders mengalami "value accrual uncertainty" yang menekan naratif investasi — akibatnya TIA diperlakukan sebagai gas/governance token saja, bukan productive asset, sampai proposal formal lolos governance.
+
+OPEN THREADS
+- Jumlah penerima Genesis Drop (unique addresses eligible + claimed) tidak diumumkan resmi — butuh analisis on-chain claim events atau data dari Foundation
+- Harga TIA exact pada genesis block 2023-10-31 (bukan awal November) — butuh query historical price dari CEX listing pertama atau on-chain DEX pool jika ada
+- Persentase airdrop recipients yang menjual dalam 7/30/90 hari — butuh on-chain analysis claimers vs transfer events
+- Mekanisme anti-sybil Genesis Drop (jika ada) dan jumlah alamat yang didiskualifikasi — tidak terdokumentasi
+- Snapshot block/height exact untuk eligibility Cosmos stakers / testnet contributors — tidak diumumkan
+- Apakah ada alokasi community tambahan (Season 2) di treasury Foundation yang belum di-deploy — butuh treasury transparency
+- Fee switch activation timeline dan percentage allocation ke staker — masih diskusi forum, butuh proposal formal
+- Vesting schedule investor/team exact (cliff, durasi, unlock frequency) — tidak diungkap, butuh vesting contract on-chain
+- Native IBC activation roadmap — forum discussion only, tidak ada timeline resmi
+- Quantum Gravity Bridge testnet status (sudah launch Juni 2025 atau belum) — EV-030 target tapi tidak ada konfirmasi blog terbaru

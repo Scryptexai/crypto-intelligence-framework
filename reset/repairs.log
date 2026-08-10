@@ -8,3 +8,8 @@
 2026-08-09T08:03:10.405303+00:00	Aptos	phase 11-conflict	attempt 1	failed=qa_parse,no_md_headers	partially_repaired
 2026-08-09T08:14:23.742696+00:00	Aptos	phase 11-conflict	attempt 2	failed=qa_parse	no_improvement
 2026-08-09T08:32:55.333249+00:00	Avalanche	phase 11-conflict	attempt 1	failed=qa_parse,no_md_headers	partially_repaired
+2026-08-10T05:33:50.452916+00:00	Blur	phase 12-airdrop	attempt 1	failed=airdrop_parse	no_improvement
+2026-08-10T06:12:28.623009+00:00	Friend.tech	phase 11-conflict	attempt 1	failed=qa_parse,no_md_headers	repaired
+2026-08-10T06:45:47.386862+00:00	Jito	phase 11-conflict	attempt 1	failed=qa_parse	repaired
+2026-08-10T06:54:21.947694+00:00	Kamino	phase 11-conflict	attempt 1	failed=qa_parse,no_md_headers	repaired
+2026-08-10T07:59:26.913825+00:00	MegaETH	phase 11-conflict	attempt 1	failed=qa_parse	repaired
