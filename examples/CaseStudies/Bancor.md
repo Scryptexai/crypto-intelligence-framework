@@ -1,8 +1,8 @@
 # Bancor — Deep Case Study (Phased)
 
 **CIF Dataset — Deep Dossier · Tier: Deep (anchor project)**
-**Source:** Deep Research (DeepSeek), Format v3 Dependency Pipeline (11/11 phases: foundation, entity, history, technology, financial, token, ecosystem, market, behavioral, knowledge, conflict). **Auto-assembled** by `tools/ingest.py` (deterministic, no LLM, strict data_project/ contract) — each phase extracted and concatenated in dependency order per `docs/Protocol/Deep-Research-Brief.md`; the reasoning is the source reports'.
-**Raw sources archived:** doc_backup/deep/Bancor_foundation_2026-08.docx, doc_backup/deep/Bancor_entity_2026-08.docx, doc_backup/deep/Bancor_history_2026-08.docx, doc_backup/deep/Bancor_technology_2026-08.docx, doc_backup/deep/Bancor_financial_2026-08.docx, doc_backup/deep/Bancor_token_2026-08.docx, doc_backup/deep/Bancor_ecosystem_2026-08.docx, doc_backup/deep/Bancor_market_2026-08.docx, doc_backup/deep/Bancor_behavioral_2026-08.docx, doc_backup/deep/Bancor_knowledge_2026-08.docx, doc_backup/deep/Bancor_conflict_2026-08.docx.
+**Source:** Deep Research (DeepSeek), Format v3 Dependency Pipeline (12/11 phases: foundation, entity, history, technology, financial, token, ecosystem, market, behavioral, knowledge, conflict, airdrop). **Auto-assembled** by `tools/ingest.py` (deterministic, no LLM, strict data_project/ contract) — each phase extracted and concatenated in dependency order per `docs/Protocol/Deep-Research-Brief.md`; the reasoning is the source reports'.
+**Raw sources archived:** doc_backup/deep/Bancor_foundation_2026-08.docx, doc_backup/deep/Bancor_entity_2026-08.docx, doc_backup/deep/Bancor_history_2026-08.docx, doc_backup/deep/Bancor_technology_2026-08.docx, doc_backup/deep/Bancor_financial_2026-08.docx, doc_backup/deep/Bancor_token_2026-08.docx, doc_backup/deep/Bancor_ecosystem_2026-08.docx, doc_backup/deep/Bancor_market_2026-08.docx, doc_backup/deep/Bancor_behavioral_2026-08.docx, doc_backup/deep/Bancor_knowledge_2026-08.docx, doc_backup/deep/Bancor_conflict_2026-08.docx, doc_backup/deep/Bancor_airdrop_2026-08.docx.
 **Phases not run:** none.
 
 > Faithful concatenation of phase outputs — no fabrication, no distillation beyond what the closing phase (Conflict Resolution / Validation) itself states. Consider a periodic QC pass.
@@ -4905,6 +4905,162 @@ Recommended Re-run:
 QA Status: PASSED
 Confidence Level: HIGH
 
+## Airdrop Intelligence
+_ref: `docs/Ontology/DecisionEvent.md`, `docs/Ontology/Context.md` — an airdrop is a Decision Event with an eight-POV outcome_
+
+PROJECT: Bancor
+
+STATUS AIRDROP
+
+Belum ada. Bancor tidak pernah melakukan airdrop, program poin retroaktif, snapshot reward, lockdrop, atau distribusi token gratis sejenis sejak TGE Juni 2017 hingga November 2024. Seluruh alokasi token BNT berasal dari: (1) ICO/public sale 50% (unlocked at TGE), (2) private sale termasak dalam distribusi awal, (3) team 20% (vesting 2 tahun, cliff 1 tahun), (4) foundation 20% (tanpa vesting on-chain publik), (5) reserve/ecosystem 10%, (6) emisi inflasi V2/V2.1 untuk co-incentive LP reward (bukan airdrop), (7) fee sharing V3 ke stBNT holders via Infinity Staking (bukan airdrop). Tidak ada event AD-### di Phase 3 Historical Events yang berkaitan dengan airdrop【Phase 1 — Token Distribution】【Phase 3 — EV-002, EV-005, EV-007, EV-010】【Phase 6 — Distribution, Inflation/Deflation, Major Token Events】 (HIGH)
+
+AIRDROP EVENTS
+
+Tidak ada event airdrop untuk dilaporkan. Lanjut ke CONTEXT SAAT KEPUTUSAN.
+
+CONTEXT SAAT KEPUTUSAN
+
+Tidak ada keputusan airdrop yang diambil. Namun, konteks periodik saat airdrop *bisa* dipertimbangkan (dan tidak diambil) meliputi:
+
+- Era V2 Launch (2020-04): Funding stage: post-ICO treasury ($153M ICO 2017, ~3 tahun berjalan); community size: ~10k+ TGE holders + early LPs; market condition: DeFi Summer 2020 dimulai, Uniswap V2.launch Mei 2020, SushiSwap vampire attack Sep 2020; competitor action: Uniswap tidak airdrop UNI sampai Sep 2020 (retroaktif ke user pre-Sep 2020), SushiSwap airdrop SUSHI ke Uniswap LP. Bancor memilih *co-incentive inflationary emissions* ke LP baru bukan retroactive airdrop ke user V1【Phase 3 — EV-005】【Phase 5 — Funding History】【Phase 8 — Market Timeline: 2020】 (HIGH)
+
+- Era V2.1 Launch (2020-10): Funding stage: treasury masih dari ICO; community size: V2 LPs + pengguna Polygon (deploy Nov 2020); market condition: DeFi Summer puncak, banyak protokol meluncurkan token governance + airdrop retroaktif (1inch Dec 2020, dYdX Aug 2021); competitor action: 1inch airdrop retroaktif ke user DEX aggregator. Bancor memilih *single-sided staking + IL protection* sebagai diferensiasi produk, bukan airdrop【Phase 3 — EV-007, EV-008】【Phase 8 — Market Timeline: 2020】 (HIGH)
+
+- Era V3 Launch (2021-10): Funding stage: treasury ICO 4+ tahun; community size: V2 LPs, staker, DAO voters; market condition: post-DeFi Summer, L2 narrative naik (Arbitrum mainnet Aug 2021), banyak protokol L2 airdrop (Optimism OP May 2022, Arbitrum ARB Mar 2023); competitor action: Uniswap V3 May 2021 tanpa airdrop, Curve CRV sudah live 2020. Bancor memilih *Vortex deflationary + Infinity Staking (stBNT)* sebagai tokenomics baru, tidak ada airdrop ke user V2/V1【Phase 3 — EV-010】【Phase 8 — Market Timeline: 2021】 (HIGH)
+
+- Era V2→V3 Migration (2022 Q1-Q2): Funding stage: treasury ICO 5 tahun; community size: V2 LPs yg harus migrasi; market condition: bear market 2022 (Terra/Luna May 2022, FTX Nov 2022); competitor action: tidak ada airdrop migrasi mayor. Bancor melakukan *migrasi likuiditas via DAO proposal* tanpa insentif token tambahan【Phase 3 — EV-017】【Phase 8 — Market Timeline: 2022】 (HIGH)
+
+- Era LST Integration (2024): Funding stage: treasury ICO 7 tahun; community size: stBNT holders, DAO voters, LST holders; market condition: restaking narrative (EigenLayer, LRT), bull market early 2024; competitor action: banyak protokol restaking airdrop points (EigenLayer, Kelp, Ether.fi, Renzo). Bancor memilih *whitelist wstETH/rETH via governance* tanpa airdrop/points program【Phase 3 — EV-019】【Phase 8 — Narrative Position: LST/Restaking Secondary】 (HIGH)
+
+TRIGGER DAN ALTERNATIF
+
+Karena tidak ada airdrop, tidak ada trigger spesifik. Alternatif yang *tersedia tapi tidak diambil* pada setiap momen kunci:
+
+- 2020 (V2 launch): Bisa meluncurkan token governance baru (misal "BANCOR2") dengan airdrop ke V1 user — *tidak diambil, memilih upgrade in-place BNT既有*
+- 2020 (DeFi Summer): Bisa airdrop retroaktif ke early LP V1 sebagai "loyalty reward" — *tidak diambil, memilih co-incentive emissions ke LP baru*
+- 2021 (V3 launch + Arbitrum): Bisa airdrop ke V2 LP/staker sebagai migrasi incentive — *tidak diambil, memilih migrasi likuiditas via DAO tanpa token bonus*
+- 2022 (Migration): Bisa memberikan "migration bonus" BNT ke LP yg pindah ke V3 — *tidak diambil, DAO proposal hanya migrasi likuiditas*
+- 2023-2024 (Restaking wave): Bisa meluncurkan points program untuk stBNT/LST depositor — *tidak diambil, belum ada pengumuman/resmi*
+
+Alasan tidak diambil tidak terdokumentasi di blog resmi, governance proposal, atau wawancara founder. Tidak ada sumber primer yang menjelaskan keputusan *tidak* airdrop. (LOW — inferensi dari absensi event)
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi:
+- Tidak ada pernyataan resmi dari tim/foundation/DAO yang menjelaskan *mengapa tidak melakukan airdrop*. Semua komunikasi fokus pada: produk (single-sided, IL protection), tokenomics (Vortex, stBNT), governance (DAO), security (multi-audit). Airdrop tidak pernah dibahas sebagai topik. (HIGH — absensi total di blog.bancor.network, docs.bancor.network, forum.bancor.network, snapshot.org/#/bancor.eth)
+
+Alasan yang tidak diumumkan (HIPOTESIS dengan evidence pendukung):
+- Tokenomics deflationary V3 (Vortex burn) tidak kompatibel dengan airdrop inflasi — airdrop menambah supply, Vortex mengurangi supply; sinyal pasar campuran【Phase 6 — Inflation/Deflation】【Phase 4 — Core Components: Vortex】 (MEDIUM)
+- Foundation treasury opacity (tidak transparan) membuat alokasi airdrop sulit di-justify ke komunitas tanpa audit publik【Phase 5 — Treasury】【Phase 7 — Ecosystem Risks: Treasury Opacity】 (MEDIUM)
+- Regulatory risk Swiss (FINMA oversight): airdrop gratis bisa memperkuat argumen BNT sebagai security/sekuritas di yurisdiksi ketat【Phase 2 — Entity: Bprotocol Foundation, FINMA】【Phase 5 — Financial Risk: Regulatory/Legal】 (MEDIUM)
+- User base sudah termonetisasi via fee revenue: V3 revenue model bergantung swap fees → Vortex + stBNT yield; airdrop tidak menambah revenue, hanya dilusi【Phase 5 — Revenue Model】【Phase 4 — Core Components: Vortex, Infinity Staking】 (MEDIUM)
+- Competitor differentiation: Uniswap (UNI airdrop 2020), 1inch, dYdX, Optimism, Arbitrum semua pakai airdrop; Bancor memilih *produk unik (IL protection)* sebagai moat, bukan token incentive【Phase 8 — Competitor Landscape】【Phase 8 — Narrative Position: Impermanent Loss Protection】 (MEDIUM)
+- Team/VC allocation sudah vested penuh 2019: tidak ada tekanan investor untuk likuiditas exit via airdrop claim【Phase 6 — Vesting Schedule: Team fully vested Juni 2019】 (LOW)
+
+OUTCOME PER POV
+
+POV Founder (Eyal Hertzog, Guy Benartzi, Galia Benartzi, Bprotocol Foundation): Tidak diketahui
+- Jangka pendek: N/A (tidak ada airdrop)
+- Jangka panjang: N/A (tidak ada airdrop)
+- Dasar: Tidak ada pernyataan founder tentang airdrop; fokus komunikasi pada produk & tokenomics V3【Phase 3 — EV-010】【Phase 1 — Founders】 (LOW)
+
+POV VC (Tim Draper/Draper Associates, Blockchain Capital, Fenbushi Capital, Kenetic Capital): Tidak relevan
+- Jangka pendek: N/A
+- Jangka panjang: N/A
+- Dasar: Investor ICO 2017 sudah exit/hold via secondary market; tidak ada ronde equity baru; airdrop tidak mempengaruhi equity value【Phase 2 — Investors】【Phase 5 — Fundraising Mechanism】 (HIGH)
+
+POV Retail (pembeli BNT di CEX/DEX, non-LP): Sebagian (positif net)
+- Jangka pendek: Tidak ada tekanan jual airdrop claim (tidak ada airdrop = tidak ada sell pressure dari claimer)
+- Jangka panjang: Tokenomics deflationary Vortex menguntungkan holder BNT jangka panjang (supply reduction via burn)
+- Dasar: Harga BNT tidak mengalami dump airdrop-typical; Vortex burn aktif sejak Oct 2021【Phase 6 — Inflation/Deflation】【Phase 8 — Trading Markets】 (MEDIUM)
+
+POV Community (Discord/Telegram/DAO voters, stBNT holders): Sebagian (positif net)
+- Jangka pendek: Tidak ada farming/claim friction; fokus pada staking yield (stBNT APR) dan governance
+- Jangka panjang: DAO governance maturation tanpa noise airdrop hunter; proposals berkualitas (V2→V3 migration, LST whitelist)
+- Dasar: Snapshot proposals history menunjukkan partisipasi voter konsisten, bukan spike airdrop【Phase 3 — EV-017, EV-018, EV-019】【Phase 7 — Governance Ecosystem】 (MEDIUM)
+
+POV Developer (SDK users, subgraph queryers, integrator): Tidak relevan
+- Jangka pendek: N/A
+- Jangka panjang: N/A
+- Dasar: Developer ecosystem Bancor minimal sampai SDK 2024; airdrop bukan driver integrasi【Phase 3 — EV-020】【Phase 7 — Developer Ecosystem】 (HIGH)
+
+POV Institution (Binance, Coinbase, Market Maker, Fund): Tidak relevan
+- Jangka pendek: N/A
+- Jangka panjang: N/A
+- Dasar: Listing CEX 2018 sudah terjadi; airdrop tidak mempengaruhi market making BNT【Phase 7 — Exchange Ecosystem】【Phase 8 — Trading Markets】 (HIGH)
+
+POV Validator: Tidak relevan
+- Jangka pendek: N/A
+- Jangka panjang: N/A
+- Dasar: Bancor bukan chain/validator-based protocol; berjalan di Ethereum & Arbitrum validators【Phase 7 — Governance Ecosystem: Validator Group】【Phase 8 — Adoption Metrics: Validator Count】 (HIGH)
+
+POV Builder (dApp builder di atas Bancor, SDK integrator): Tidak diketahui
+- Jangka pendek: N/A
+- Jangka panjang: N/A
+- Dasar: SDK baru 2024; builder count rendah; tidak ada data apakah airdrop akan menarik builder【Phase 3 — EV-020】【Phase 7 — Developer Ecosystem】 (LOW)
+
+METRIK RETENSI
+
+Tidak ada metrik retensi airdrop karena tidak ada airdrop. Metrik yang *tersedia* untuk baseline perilaku holder:
+
+- Persentase penerima yang menjual dalam 7 hari: Tidak ditemukan (tidak ada airdrop)
+- Persentase penerima yang masih memegang setelah 90 hari: Tidak ditemukan (tidak ada airdrop)
+- Perubahan alamat aktif sebelum vs sesudah snapshot: Tidak ditemukan (tidak ada snapshot airdrop)
+- Perubahan TVL atau volume sebelum vs sesudah: Tidak ditemukan (tidak ada airdrop)
+- Harga token pada klaim, +30 hari, +90 hari: Tidak ditemukan (tidak ada klaim)
+
+Baseline holder behavior (non-airdrop):
+- BNT holders unique addresses (Ethereum): ~145,000 (Nov 2024)【Phase 8 — Adoption Metrics】
+- Daily active addresses (V3 contracts): ~500-1,500 (Nov 2024)【Phase 8 — Adoption Metrics】
+- stBNT holders: tidak dipublikasikan terpisah【Phase 6 — Holder Distribution】
+- Top 10 holders: ~40-50% supply (termasuk kontrak protokol & CEX)【Phase 6 — Holder Distribution】
+
+FARMING DAN SYBIL
+
+Tidak ada farming/sybil airdrop karena tidak ada airdrop. Perilaku farming yang *terjadi* pada program insentif *lain*:
+
+- V2 Co-incentive emissions (2020-2021): LP farming BNT emissions dengan menyediakan likuiditas ke pool V2; tidak ada sybil resistance khusus (permissionless pool); emissions berlanjut sampai V2 deprecation 2022【Phase 3 — EV-005】【Phase 6 — Inflation/Deflation: V2 era】
+- V2.1 IL Protection (2020-2022): LP deposit single-sided, farming IL protection (vesting 100 hari) + BNT emissions; tidak ada sybil check — capital-based eligibility【Phase 3 — EV-007】【Phase 4 — Core Components: Impermanent Loss Protection Module】
+- V3 Infinity Staking (2021-sekarang): stBNT staking farming fee share (real yield); capital-based, tidak ada task/sybil vector【Phase 3 — EV-010】【Phase 4 — Core Components: Infinity Staking】
+- LST Integration 2024: wstETH/rETH deposit farming IL protection + native ETH yield + fee share; capital-based【Phase 3 — EV-019】【Phase 7 — Major Integrations: wstETH/LST】
+
+Tidak ada kriteria berbasis aktivitas on-chain (tx count, volume, contract interaction) yang bisa di-farm untuk token gratis.
+
+PROSPEK
+
+Prasyarat yang sudah terpenuhi:
+- Token live & transferable: BNT ERC-20 live sejak 2017, listed di Binance, Coinbase, Uniswap, dll【Phase 6 — Token Information】【Phase 8 — Trading Markets】
+- Community ada: ~145k holders, DAO voters aktif, Discord/Telegram aktif【Phase 7 — Community】【Phase 8 — Adoption Metrics】
+- Protocol revenue ada: Swap fees V3 → Vortex + stBNT fee share【Phase 5 — Revenue Model】【Phase 4 — Core Components: Vortex, Infinity Staking】
+- Treasury ada (meski opaque): ICO proceeds $153M, foundation mengelola【Phase 5 — Treasury】【Phase 5 — Financial Dependencies】
+- Governance framework siap: BancorDAO + Snapshot + Timelock + on-chain execution【Phase 3 — EV-009】【Phase 6 — Governance】【Phase 7 — Governance Ecosystem】
+- Narrative momentum: LST/Restaking integration 2024 (wstETH, rETH)【Phase 3 — EV-019】【Phase 8 — Narrative Position: LST/Restaking Secondary】
+
+Prasyarat yang belum:
+- Alokasi token untuk airdrop: Tidak ada alokasi "community/airdrop" di tokenomics (sudah TGE 100% allocated: 50% public, 20% team, 20% foundation, 10% reserve). Perlu DAO proposal mint baru atau realokasi foundation/reserve — kontroversial【Phase 6 — Distribution】【Phase 6 — Inflation/Deflation】
+- Regulatory clarity Swiss: FINMA guidance pada airdrop/token gratis belum jelas; foundation Swiss risk-averse【Phase 2 — Entity: FINMA】【Phase 5 — Financial Risk: Regulatory】
+- Competitive pressure: Saat ini tidak ada kompetitor langsung (single-sided + IL protection) yang meluncurkan airdrop besar; Uniswap V4, Curve, Balancer tidak airdrop baru 2024【Phase 8 — Competitor Landscape】
+- Developer ecosystem maturity: SDK baru 2024, integrator minimal; airdrop tidak akan menarik builder signifikan【Phase 3 — EV-020】【Phase 7 — Developer Ecosystem】
+- Treasury transparency: Tanpa dashboard treasury, komunitas tidak bisa verify apakah airdrop affordable/sustainable【Phase 5 — Treasury】【Phase 7 — Ecosystem Risks: Treasury Opacity】
+
+Sinyal yang biasanya mendahului (jika airdrop akan terjadi):
+- DAO proposal resmi: "BIP-XXX: Community Airdrop Allocation" di snapshot.org/#/bancor.eth atau forum.bancor.network
+- Smart contract deployment: Kontrak distribusi (MerkleDistributor, ClaimContract, PointsContract) di GitHub bancorprotocol/contracts-v3 atau repo baru
+- Snapshot announcement: Tanggal snapshot block height di-pengumuman resmi (blog, Twitter @Bancor, Discord announcement)
+- Criteria publication: Kriteria kelayakan (misal: stBNT holders pre-date, V2 LP migrators, wstETH depositors, DAO voters) dipublikasikan minimal 2-4 minggu sebelum snapshot
+- Audit/security review: Audit kontrak distribusi oleh Trail of Bits/PeckShield/OpenZeppelin (standar Bancor)
+- Marketing push: Kampanye "Season 1" / "Retroactive Rewards" di media sosial & KOL
+
+Penilaian: Airdrop Bancor **tidak mungkin dalam 12-18 bulan ke depan** (keyakinan: TINGGI). Alasan utama: (1) Tokenomics V3 deflationary (Vortex burn) kontradiktif dengan airdrop inflasi — memerlukan governance proposal yang akan menimbulkan debat panjang soal value capture vs distribution; (2) Tidak ada alokasi token tersisa untuk airdrop tanpa mint baru/realokasi foundation — foundation 20% opaque, reserve 10% unclear; (3) Tidak ada tekanan kompetitif: moat produk (IL protection) sudah cukup diferensiasi tanpa token incentive; (4) Regulatory risk Swiss (FINMA) mendorong foundation hindari airdrop gratis yang bisa diklasifikasikan securities distribution; (5) DAO governance maturity berarti proposal airdrop butuh quorum & timelock — proses lama & transparent, memungkinkan komunitas menolak jika dilusi. **Yang akan mengubah penilaian**: (a) Bear market mendalam + TVL drop >50% + revenue crash → DAO memaksa airdrop untuk retensi; (b) Competitor langsung (misal: protokol IL protection baru) meluncurkan airdrop agresif; (c) Regulatory clarity Swiss mengizinkan airdrop aman; (d) Foundation memutuskan transparansi treasury + alokasi 5-10% supply untuk community programs. (HIGH confidence on "unlikely", MEDIUM on trigger conditions)
+
+PELAJARAN LINTAS PROJECT
+
+- Ketika protokol sudah memiliki tokenomics deflationary yang berfungsi (fee → burn + real yield to stakers) dan moat produk teknis yang kuat (IL protection), airdrop justru merusak value proposition — Bancor V3 memilih *tidak* airdrop dan mempertahankan deflationary pressure sejak Oct 2021 (era 2021-sekarang, DeFi mature).
+- Ketika treasury opaque dan tidak ada alokasi community terdefinisi di tokenomics awal (ICO 2017: 50% public, 20% team, 20% foundation, 10% reserve), airdrop memerlukan *mint baru* atau *realokasi foundation* — keduanya butuh governance proposal kontroversial dan menghadapi tekanan regulasi (era 2017-2024, Swiss foundation).
+- Ketika user base sudah termonetisasi via capital-efficient yield (stBNT fee share, IL protection funded by protocol-owned liquidity), airdrop gratis tidak menambah retention — user datang untuk yield & protection, bukan token gratis (era 2020-2024, DeFi yield-native users).
+- Ketika protokol memilih progressive decentralization via DAO dengan timelock (2020-sekarang), keputusan airdrop tidak bisa unilateral foundation — butuh proposal, quorum, timelock 48h, execution; proses ini itself menjadi filter yang mencegah airdrop impulsif (era 2020-sekarang, DAO-governed DeFi).
+- Ketika kompetitor semua melakukan airdrop (Uniswap 2020, 1inch 2020, dYdX 2021, Optimism 2022, Arbitrum 2023), *tidak* melakukan airdrop bisa menjadi sinyal kepercayaan diri produk — tapi hanya berfungsi jika produk benar-benar unggul (IL protection) dan tokenomics sustainable (Vortex) (era 2020-2024, airdrop-saturated market).
+
 ## Open Questions
 - [foundation] Status deploy V3 di Polygon: Beberapa sumber menyebut V3 hanya di Ethereum & Arbitrum, tapi dokumentasi lama menyebut dukungan Polygon untuk V2. Perlu verifikasi on-chain apakah contract V3 ada di Polygon.
 - [foundation] Ukuran Core Team saat ini: Tidak ada halaman "Team" resmi publik terbaru (halaman team dihapus/diarsipkan). Estimasi berdasarkan kontributor GitHub & Discord roles perlu validasi internal.
@@ -4972,3 +5128,9 @@ Confidence Level: HIGH
 - [conflict] Open Thread ID: OT-08 · Description: Frontend hosting provider untuk app.bancor.network — tidak dikonfirmasi resmi (Vercel/Netlify/AWS assumed). Risiko DNS hijack/hosting compromise ada tapi mitigation (IPFS/Fleet/ENS) tidak mentioned di roadmap. · Affected Phase: Phase 4, Phase 7, Phase 10 · Evidence: Phase 4 Architecture; Phase 7 Infrastructure Providers assumed; Phase 7 Ecosystem Risks Centralized Frontend Hosting; Phase 10 Anti-pattern · Alternative Interpretations: Team mungkin menggunakan managed hosting enterprise (Cloudflare Pages, AWS Amplify) dengan security features; atau planned decentralization post-V3 stabilization · Status: Open
 - [conflict] Open Thread ID: OT-09 · Description: Revenue history absolut — DefiLlama/Token Terminal estimasi tapi tidak cross-verified dengan laporan resmi. Protocol fees, Vortex burns, staker distributions per epoch tidak diagregasikan publik. · Affected Phase: Phase 5, Phase 8, Phase 10 · Evidence: Phase 5 Revenue History "Tidak diungkap"; Phase 8 Adoption Metrics cites estimators; Phase 10 K-002, K-010 · Alternative Interpretations: DAO mungkin memutuskan tidak publish untuk competitive reasons; atau tooling analytics (Dune dashboards) considered sufficient transparency · Status: Open
 - [conflict] Open Thread ID: OT-10 · Description: Fast bridge integration roadmap — 3+ tahun post-V3 launch (Oct 2021) tidak ada integrasi Hop/Across/Synapse untuk L2→L1 fast withdrawal. Canonical bridge 7-day withdrawal tetap satu-satunya opsi native. · Affected Phase: Phase 3, Phase 4, Phase 7, Phase 9, Phase 10 · Evidence: Phase 3 EV-014; Phase 4 Architecture Cross-chain; Phase 7 Ecosystem Risks Bridge Dependency; Phase 9 Ecosystem Decision Pattern; Phase 10 K-007 · Alternative Interpretations: Security-first philosophy (canonical bridge only); atau resource constraints; atau waiting for ERC-7683/chain abstraction standards · Status: Open
+- [airdrop] Apakah ada diskusi internal DAO/bancorprotocol tentang airdrop yang tidak terekspos di forum/snapshot publik? (Tidak ditemukan di snapshot.org/#/bancor.eth, forum.bancor.network, GitHub discussions)
+- [airdrop] Apakah foundation 20% allocation memiliki wallet address yang teridentifikasi on-chain untuk memungkinkan analisis apakah sebagian sudah dialokasikan untuk community programs masa depan? (Tidak dipublikasikan)
+- [airdrop] Apakah reserve/ecosystem 10% (7.9M BNT initial) masih utuh atau sudah digunakan? Tidak ada laporan penggunaan reserve. (Tidak ditemukan)
+- [airdrop] Apakah ada rencana "Bancor Season 1" atau points program di roadmap internal yang belum diumumkan? (Tidak ada di blog.bancor.network, docs.bancor.network, Twitter @Bancor)
+- [airdrop] Bagaimana FINMA (Swiss regulator) melihat airdrop token oleh Swiss foundation? Tidak ada guidance publik spesifik untuk Bancor. (Tidak ditemukan)
+- [airdrop] Jika DAO memutuskan airdrop via mint baru (inflationary), apakah Vortex parameter akan disesuaikan (burn rate increase) untuk netralkan supply impact? (Tidak ada preceden, parameter Vortex governance-controlled tapi tidak pernah diuji skenario ini)

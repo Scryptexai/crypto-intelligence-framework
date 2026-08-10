@@ -1,7 +1,7 @@
 {
   "meta": {
     "schema": "cif-export/1",
-    "generated": "2026-08-10 09:32 UTC",
+    "generated": "2026-08-10 11:56 UTC",
     "projects": 29,
     "deep": 29,
     "summary": 0,
@@ -37,7 +37,8 @@
       "cat": "DeFi lending (money market)",
       "era": "2017–",
       "tags": [
-        "defi"
+        "defi",
+        "airdrop"
       ]
     },
     {
@@ -59,6 +60,7 @@
       "era": "2017–",
       "tags": [
         "defi",
+        "airdrop",
         "amm"
       ]
     },
@@ -80,6 +82,7 @@
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "testnet-incentive",
         "l1"
       ]
@@ -91,6 +94,7 @@
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "nft-community",
         "governance"
       ]
@@ -102,6 +106,7 @@
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "l2"
       ]
     },
@@ -156,6 +161,7 @@
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "stablecoin",
         "synthetic"
       ]
@@ -187,7 +193,9 @@
       "file": "examples/CaseStudies/Grass.md",
       "cat": "",
       "era": "",
-      "tags": []
+      "tags": [
+        "airdrop"
+      ]
     },
     {
       "n": "Helium",
@@ -254,6 +262,7 @@
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "liquid-staking",
         "oracle",
         "governance"
@@ -278,6 +287,7 @@
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "l2"
       ]
     },
@@ -288,6 +298,7 @@
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "l1"
       ]
     },
@@ -298,6 +309,7 @@
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "modular",
         "l2"
       ]
@@ -308,7 +320,9 @@
       "file": "examples/CaseStudies/Notcoin.md",
       "cat": "",
       "era": "",
-      "tags": []
+      "tags": [
+        "airdrop"
+      ]
     },
     {
       "n": "OlympusDAO",
@@ -317,6 +331,7 @@
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "governance"
       ]
     }

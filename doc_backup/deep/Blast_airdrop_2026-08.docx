@@ -1,0 +1,179 @@
+PROJECT: Blast
+
+STATUS AIRDROP
+
+Sudah dilakukan
+Blast mendistribusikan token BLAST melalui dua season program Blast Points (Season 1 pre-mainnet dan Season 2 post-mainnet) yang dikonversi ke token pada TGE 26 Juni 2024, serta program Blast Gold berkelanjutan untuk builder/protocol. Alokasi komunitas 25,5% total supply (25,5 miliar BLAST) dialokasikan untuk Points, airdrop, dan insentif【Phase 6 — Distribution】【Phase 3 — EV-002, EV-014, EV-019】.
+
+AIRDROP EVENTS
+
+AD-001: Blast Points Season 1 (Pre-mainnet Testnet Deposits + Blur Integration)
+Tanggal: 2023-11-21 hingga 2024-02-29 (mainnet launch)
+Tipe: Points-based / Retroactive
+Alokasi: 25,5% total supply (25,5 miliar BLAST) untuk Community (termasuk Season 1, Season 2, dan future community allocations)【Phase 6 — Distribution】; persentase spesifik Season 1 tidak diungkap terpisah dari total Community allocation
+Penerima: >500.000 alamat unik yang mendeposit ke bridge pre-mainnet【Phase 8 — Adoption Metrics Blast Points Participants】
+Nilai saat klaim: Tidak ditemukan (harga TGE bervariasi; BLAST dibuka ~$0,02–$0,03 di CEX; estimasi rata-rata claim per address tidak dipublikasikan)
+Kriteria: Deposit ETH/stablecoin ke Blast Bridge selama testnet (early access Nov 2023 – Feb 2024); Blur Season 3 participants mendapat Points tambahan via integrasi Blur【Phase 3 — EV-002, EV-004, EV-005】
+Anti-sybil: Tidak ditemukan (tidak ada disclosure mekanisme sybil filtering spesifik untuk Season 1; Blur integration mungkin memanfaatkan Blur's existing trader reputation)
+Terkait EV: EV-002, EV-004, EV-005
+Sitasi: 【Phase 3 — EV-002, EV-004, EV-005】 (HIGH) 【Phase 6 — Distribution】 (HIGH) 【Phase 8 — Adoption Metrics】 (MEDIUM)
+
+AD-002: Blast Points Season 2 (Post-mainnet On-chain Activity)
+Tanggal: 2024-07 hingga 2024-12 (snapshot Dec 2024)
+Tipe: Points-based / Task-based / Activity-based
+Alokasi: Bagian dari 25,5% Community allocation; persentase Season 2 tidak diungkap terpisah【Phase 6 — Vesting Schedule Community】【Phase 3 — EV-014, EV-019】
+Penerima: Tidak ditemukan (jumlah address yang memenuhi syarat Season 2 tidak dipublikasikan resmi)
+Nilai saat klaim: Tidak ditemukan (Season 2 claim belum terjadi per knowledge cutoff; token price Dec 2024 ~$0,015–$0,02)
+Kriteria: On-chain activity di Blast Mainnet di luar deposit (trading, lending, providing liquidity, menggunakan dApp ekosistem) — mechanics expanded dari Season 1 yang hanya deposit【Phase 3 — EV-014】【Phase 9 — Evolution Pattern】
+Anti-sybil: Tidak ditemukan (tidak ada disclosure filter sybil Season 2; kemungkinan menggunakan on-chain activity scoring)
+Terkait EV: EV-014, EV-019
+Sitasi: 【Phase 3 — EV-014, EV-019】 (HIGH) 【Phase 6 — Vesting Schedule】 (HIGH) 【Phase 9 — Evolution Pattern】 (HIGH)
+
+AD-003: Blast Gold Program (Builder/Protocol Incentives — Ongoing)
+Tanggal: 2024-03 hingga sekarang (ongoing epochs)
+Tipe: KPI-based / Builder incentives (bukan user airdrop langsung; token didistribusikan ke protokol untuk didistribusikan ke user mereka)
+Alokasi: 28% total supply (28 miliar BLAST) untuk Ecosystem【Phase 6 — Distribution】
+Penerima: Protokol anchor (Thruster, Ring Protocol, Wasabi, Kaito, Juice, Particle, Symmio, dll) yang menerima Gold allocation berbasis KPI【Phase 7 — Grant Program】【Phase 7 — Applications】
+Nilai saat klaim: Tidak ditemukan (tergantung protokol masing-masing dan harga BLAST saat distribusi)
+Kriteria: Protocol-level KPI: TVL, volume, user growth, native yield integration; Gold epochs berjalan berkala【Phase 7 — Grant Program】【Phase 9 — Ecosystem Decision Pattern】
+Anti-sybil: Tidak relevan (distribusi ke protokol, bukan individu; protokol bertanggung jawab distribusi ke user)
+Terkait EV: EV-008, EV-009, EV-010, EV-011
+Sitasi: 【Phase 3 — EV-008, EV-009, EV-010, EV-011】 (HIGH) 【Phase 6 — Distribution】 (HIGH) 【Phase 7 — Grant Program】 (HIGH) 【Phase 9 — Ecosystem Decision Pattern】 (HIGH)
+
+CONTEXT SAAT KEPUTUSAN
+
+- Tahap funding: Strategic round Paradigm + Standard Crypto Nov 2023 (~$20M–$30M media reports)【Phase 5 — Funding History】; Foundation treasury opacity, no revenue data【Phase 5 — Treasury, Revenue History】
+- Ukuran komunitas: >500k address pre-mainnet (Season 1 bridge depositors)【Phase 8 — Adoption Metrics】; Blur user base ~hundreds of thousands traders【Phase 7 — Major Integrations Blur】
+- Kondisi pasar: L2 wars 2023-2024 (Arbitrum, Optimism, Base, zkSync, Linea, Mantle)【Phase 8 — Competitor Landscape】; Points meta trend (LayerZero, zkSync, Linea, Scroll, EigenLayer points programs 2023-2024)【Phase 8 — Narrative Position】; Bear market tail 2023 → early bull 2024
+- Kompetitor terdekat: Arbitrum (ARB airdrop Mar 2023, 12,75% supply), Optimism (OP airdrop May 2022, 19% supply first round), zkSync (ZK airdrop Jun 2024, 17,5% supply) — Blast menggunakan points-based bukan retroactive snapshot murni【Phase 8 — Competitor Landscape】
+
+TRIGGER DAN ALTERNATIF
+
+Trigger: Perlu bootstrap liquidity dan user base pre-mainnet tanpa public token sale; native yield feature butuh TVL untuk meaningful yield distribution; Blur integration memberikan saluran akuisisi user siap pakai【Phase 9 — Decision Timeline EV-002, EV-005】【Phase 9 — Strategic Objectives】
+Alternatif yang tidak diambil:
+- Public token sale / IDO / IEO: Tidak dilakukan; TGE langsung ke CEX + Points claim【Phase 6 — Token Sale】【Phase 3 — EV-012, EV-013】
+- Retroactive snapshot murni (seperti ARB/OP): Tidak dipakai; Blast memilih points-based dengan deposit requirement pre-mainnet【Phase 8 — Competitor Landscape】
+- Fair launch / no token: Tidak dipilih; token diperlukan untuk governance, staking, fee payment, dan incentive alignment【Phase 6 — Utility】【Phase 9 — Strategic Objectives】
+- Community sale / LBP: Tidak dilakukan; distribusi via Points + CEX listings【Phase 6 — Token Sale】
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi:
+- "Native yield memerlukan TVL untuk bermakna; Points program mendorong early deposits dan bridge usage"【Phase 1 — Foundation】【Phase 3 — EV-002】
+- "Blur integration membawa NFT traders ke Blast ekosistem"【Phase 3 — EV-005】【Phase 7 — Major Integrations Blur】
+- "Token untuk governance, staking, fee payment, dan ecosystem incentives"【Phase 6 — Utility】【Phase 3 — EV-012】
+- "Gold program menarik builder dengan KPI-based emissions"【Phase 7 — Grant Program】【Phase 9 — Ecosystem Decision Pattern】
+
+Alasan yang tidak diumumkan (HIPOTESIS):
+- Memenuhi syarat listing CEX besar (Binance, Bybit, OKX) yang memerlukan community distribution dan liquidity — Points program menciptakan 500k+ holders pre-TGE【Phase 8 — Trading Markets】【Phase 5 — Funding History Paradigm network】 (HIPOTESIS, MEDIUM) [Phase 8 Exchange Listings, Phase 5 Paradigm]
+- Menghindari klasifikasi sekuritas dengan tidak melakukan public sale — Points "earned" via activity bukan pembelian【Phase 6 — Token Sale】【Phase 3 — EV-012 TGE terms geographic restrictions】 (HIPOTESIS, MEDIUM) [Phase 6, Phase 3 EV-012]
+- Investor (Paradigm, Standard Crypto) memerlukan token liquidity untuk exit/portfolio marking — 16,5% investor allocation butuh trading market【Phase 6 — Distribution】【Phase 5 — Funding History】 (HIPOTESIS, LOW) [Phase 6, Phase 5]
+- Foundation control treasury dan upgrade keys; token distribution ke community menciptakan legitimacy narrative untuk centralized governance【Phase 4 — Security Model】【Phase 6 — Governance】【Phase 9 — Governance Decision Pattern】 (HIPOTESIS, MEDIUM) [Phase 4, Phase 6, Phase 9]
+
+OUTCOME PER POV
+
+POV Founder (Tieshun Roquerre, Robert): Sukses
+- Jangka pendek: Mainnet launch dengan $2B+ TVL day-1; 500k+ users onboarded; Blur integration delivered; CEX listings secured; narrative "native yield L2" established【Phase 3 — EV-006】【Phase 8 — Adoption Metrics TVL】 (HIGH)
+- Jangka panjang: TVL decline 73% post-Season 1 ($1.48B → $400M) menunjukkan mercenary capital; Gold program sustain protocol-level TVL tapi user retention butuh Season 3; centralized control retained (sequencer, upgrade keys)【Phase 8 — Adoption Metrics TVL】【Phase 9 — Failure Factors TVL Crash】【Phase 9 — Recurring Behavioral Pattern】 (HIGH)
+- Dasar: Phase 3 EV-006, Phase 8 TVL, Phase 9 Failure Factors, Phase 9 Recurring Behavioral Pattern
+
+POV VC (Paradigm, Standard Crypto): Sebagian
+- Jangka pendek: Token liquid di 4 major CEX; price discovery achieved; significant paper returns pada TGE price vs private round (assumed)【Phase 8 — Trading Markets】【Phase 5 — Funding History】 (HIGH)
+- Jangka panjang: 16,5% allocation vesting schedule undisclosed → unlock overhang uncertainty; no buyback/burn mechanism; TVL decline reduces fundamental valuation anchor【Phase 6 — Vesting Schedule Investors】【Phase 6 — Inflation/Deflation】【Phase 8 — Adoption Metrics TVL】 (HIGH)
+- Dasar: Phase 8 Trading Markets, Phase 5 Funding History, Phase 6 Vesting Schedule, Phase 6 Inflation/Deflation, Phase 8 TVL
+
+POV Retail (penerima Season 1): Sebagian
+- Jangka pendek: Season 1 claim 100% unlocked at TGE Jun 2024; immediate sell pressure → price drop dari ~$0,03 ke ~$0,02 dalam minggu pertama【Phase 6 — Vesting Schedule Community】【Phase 8 — Market Timeline TGE】 (HIGH)
+- Jangka panjang: Holder count >300k tapi TVL crash menunjukkan banyak exit; Season 2 mechanics expanded tapi reward value diluted by token price decline; no staking yield clarity【Phase 8 — Adoption Metrics Holders】【Phase 8 — Adoption Metrics TVL】【Phase 6 — Utility Staking】 (MEDIUM)
+- Dasar: Phase 6 Vesting Schedule, Phase 8 Market Timeline, Phase 8 Adoption Metrics, Phase 6 Utility Staking
+
+POV Community (active participants, Discord/Telegram): Sebagian
+- Jangka pendek: High engagement durante Points Season 1/2; Gold program creates builder activity; community sentiment positive during incentives【Phase 2 — Entity Blast Community】【Phase 3 — EV-002, EV-014】 (MEDIUM)
+- Jangka panjang: Governance power minimal (Foundation executes); no treasury transparency; Season 3 uncertainty; centralized control persists【Phase 6 — Governance】【Phase 7 — Governance Ecosystem】【Phase 9 — Governance Decision Pattern】 (HIGH)
+- Dasar: Phase 2 Blast Community, Phase 3 EV-002 EV-014, Phase 6 Governance, Phase 7 Governance Ecosystem, Phase 9 Governance Decision Pattern
+
+POV Developer (builders on Blast): Sukses
+- Jangka pendek: Day-1 DeFi stack (Thruster, Ring, Wasabi); Gold incentives untuk protocols; EVM equivalence + SDK + Foundry/Hardhat support; low friction onboarding【Phase 3 — EV-008, EV-009, EV-010】【Phase 7 — Developer Ecosystem】【Phase 9 — Success Factors EVM Equivalence】 (HIGH)
+- Jangka panjang: Gold emissions sustain protocol revenue; native yield as primitive untuk DeFi composability; tapi closed-source execution client limits customization【Phase 7 — Grant Program】【Phase 4 — Native Yield Distributor】【Phase 4 — Known Technical Limitations blast-geth】 (HIGH)
+- Dasar: Phase 3 EV-008 EV-009 EV-010, Phase 7 Developer Ecosystem, Phase 9 Success Factors, Phase 7 Grant Program, Phase 4 Native Yield, Phase 4 Known Limitations
+
+POV Institution (custodians, market makers, funds): Gagal / Tidak relevan
+- Jangka pendek: Single sequencer, permissioned proposer/challenger, no forced inclusion → custody integration blocked; no Fireblocks/Copper/Coinbase Custody support confirmed【Phase 7 — Ecosystem Risks Single Sequencer】【Phase 8 — Open Threads Institutional Custody】 (HIGH)
+- Jangka panjang: Regulatory opacity (Cayman + US persons), audit reports not public, treasury opaque → institutional allocation unlikely tanpa compliance clarity【Phase 5 — Financial Risk Regulatory Exposure】【Phase 4 — Audit History】【Phase 5 — Treasury】 (HIGH)
+- Dasar: Phase 7 Ecosystem Risks, Phase 8 Open Threads, Phase 5 Financial Risk, Phase 4 Audit History, Phase 5 Treasury
+
+POV Validator: Tidak relevan
+- Blast adalah Optimistic Rollup dengan single sequencer (Foundation-operated), tidak ada validator set L2; security bergantung pada Ethereum L1 validators【Phase 4 — Consensus Mechanism】【Phase 7 — Governance Ecosystem Validator Group】 (HIGH)
+
+POV Builder (protokol DeFi ekosistem: Thruster, Ring, Wasabi, Kaito, dll): Sukses
+- Jangka pendek: Gold program memberikan token emissions berbasis KPI; TVL dan volume bootstrap cepat; native yield integration sebagai differentiator produk【Phase 7 — Grant Program】【Phase 7 — Applications】【Phase 3 — EV-008, EV-009, EV-010, EV-011】 (HIGH)
+- Jangka panjang: Dependency pada Gold emissions untuk user retention; token price decline mengurangi incentive value; protocol revenue butuh organic growth beyond Gold【Phase 9 — Financial Decision Pattern Gold Program】【Phase 8 — Adoption Metrics DEX Volume】【Phase 9 — Failure Factors TVL Crash】 (HIGH)
+- Dasar: Phase 7 Grant Program, Phase 7 Applications, Phase 3 EV-008 EV-009 EV-010 EV-011, Phase 9 Financial Decision Pattern, Phase 8 Adoption Metrics, Phase 9 Failure Factors
+
+METRIK RETENSI
+
+Persentase penerima yang menjual dalam 7 hari: Tidak ditemukan (no on-chain analysis published; CEX deposit data not public)
+Persentase penerima yang masih memegang setelah 90 hari: Tidak ditemukan (no holder cohort analysis published)
+Perubahan alamat aktif sebelum vs sesudah snapshot: Pre-mainnet >500k depositors → Post-TGE active addresses ~50k–100k/day (Dec 2024)【Phase 8 — Adoption Metrics Daily Active Addresses】 (MEDIUM) [Blastscan]
+Perubahan TVL sebelum vs sesudah: Peak $1.48B (Mar 2024, pre-TGE) → ~$400M (Dec 2024, post-Season 1 claim + market)【Phase 8 — Adoption Metrics TVL】 (HIGH) [DefiLlama]
+Harga token pada klaim (TGE 2024-06-26): ~$0,02–$0,03 (CEX listing price range)【Phase 8 — Trading Markets】 (MEDIUM) [Binance, Bybit, OKX, Gate.io]
+Harga token +30 hari (2024-07-26): Tidak ditemukan (price data not aggregated in sources)
+Harga token +90 hari (2024-09-24): Tidak ditemukan
+Sitasi: 【Phase 8 — Adoption Metrics】 (HIGH/MEDIUM) 【Phase 8 — Trading Markets】 (MEDIUM) 【Phase 3 — EV-012, EV-013】 (HIGH)
+
+FARMING DAN SYBIL
+
+Kriteria Season 1 (deposit ke bridge) dapat ditebak sejak announcement Nov 2023 — 3+ bulan sebelum mainnet launch【Phase 3 — EV-002】; Blur Season 3 integration (Nov 2023) memberikan signal tambahan【Phase 3 — EV-005】
+Muncul perilaku farming massal: Ribuan address deposit minimal amount (0.001 ETH dll) untuk qualify; multi-wallet bridging dari CEX withdrawal patterns teramati di on-chain analytics (community Dune dashboards)【Phase 8 — Adoption Metrics Blast Points Participants】【Phase 9 — Recurring Behavioral Pattern Mercenary Capital】 (LOW - inferred from patterns, no official report)
+Jumlah alamat yang didiskualifikasi: Tidak ditemukan (no sybil disqualification report published)
+Tim mengubah kriteria setelah melihat perilaku: Season 2 mechanics diubah dari "deposit only" ke "on-chain activity" (trading, lending, LP) — respons terhadap farming Season 1【Phase 3 — EV-014】【Phase 9 — Evolution Pattern】 (HIGH) [Phase 3 EV-014, Phase 9 Evolution Pattern]
+
+PROSPEK
+
+Prasyarat yang sudah terpenuhi:
+- Token live dan transferable (TGE Jun 2024)【Phase 3 — EV-012】
+- Community allocation 25,5% terdefinisi【Phase 6 — Distribution】
+- Points Season 1 completed, Season 2 snapshot Dec 2024【Phase 3 — EV-014, EV-019】
+- Gold program ongoing untuk builder retention【Phase 7 — Grant Program】
+- DAO governance framework announced【Phase 3 — EV-012】【Phase 6 — Governance】
+
+Prasyarat yang belum:
+- Season 3 Points mechanics dan timeline belum diumumkan (Season 2 ended Dec 2024)【Phase 3 — EV-019】【Phase 8 — Open Threads Season 3 Mechanics】
+- Vesting schedules untuk team/investor/foundation/ecosystem (74,5% supply) belum dipublikasikan【Phase 6 — Vesting Schedule】【Phase 8 — Open Threads Investor Unlock Timeline】
+- Circulating supply dashboard resmi belum ada【Phase 6 — Holder Distribution】【Phase 8 — Open Threads Circulating Supply】
+- Decentralized sequencer / permissionless challenge roadmap belum ada【Phase 4 — Known Technical Limitations】【Phase 7 — Ecosystem Risks】
+
+Sinyal yang biasanya mendahului:
+- Perubahan dokumentasi Points di docs.blast.io (season structure, eligibility criteria)
+- Deploy kontrak distribusi baru di Blastscan (Gold distributor v2, Points claim contract)
+- Pengumuman snapshot date di blog.blast.io atau Discord/Telegram official
+- Perekrutan community/ops untuk airdrop logistics
+- Governance proposal mengenai community allocation adjustment
+
+Penilaian: Blast kemungkinan besar akan meluncurkan Points Season 3 pada H1 2025 mengingat pola seasonal (Season 1 Nov-Feb, Season 2 Jul-Dec) dan kebutuhan retensi user post-TVL crash. Namun, tanpa Season 3 announcement resmi per cutoff, ini tetap spekulasi. Key trigger akan berakhirnya Gold epoch saat ini dan perlunya narasi baru untuk menarik liquidity kembali. Tingkat keyakinan: MEDIUM. Akan berubah ke HIGH jika blog post Q1 2025 mention "Season 3" atau "next phase of Points".
+
+PELAJARAN LINTAS PROJECT
+
+Ketika kriteria kelayakan (deposit ke bridge) dapat ditebak >90 hari sebelum snapshot dan tidak memerlukan kapital besar (minimal deposit rendah), populasi hunter membuat ribuan wallet → jumlah address membengkak 10x+ vs pengguna nyata, TVL peak driven by mercenary capital, dan post-claim TVL crash >70% dalam 6 bulan (era 2023-2024, L2 points meta).
+Ketika distribusi token ke komunitas (25,5%) dikombinasikan dengan builder incentives terpisah (28% Gold) yang berbasis KPI protocol, ekosistem DeFi day-1 terbangun cepat tapi protocol retention bergantung pada token price — jika token turun 80%, Gold value turun 80% → builder incentives tidak efektif tanpa price floor (era 2024, token-incentivized DeFi).
+Ketika project menggunakan points-based distribution bukan retroactive snapshot murni, tim mendapat kontrol penuh pada criteria dan timeline (bisa ubah Season 2 mechanics), tapi menciptakan ekspektasi "farmable" yang menarik sybil dan mengurangi trust komunitas jangka panjang (era 2023-2024, points meta vs airdrop meta).
+Ketika CEX listings (Binance, Bybit, OKX, Gate.io) terjadi bersamaan TGE tanpa community sale, liquidity disediakan oleh market maker/investor bukan retail → price discovery cepat tapi sell pressure dari Points claimants + investor unlocks (vesting undisclosed) menciptakan overhang struktural (era 2024, CEX-first TGE model).
+Ketika Foundation mempertahankan centralized control (sequencer, proposer, upgrade keys) pasca-TGE sambil mengaktifkan DAO voting, token holders menjadi advisory only → governance participation rate rendah, proposal execution tidak terjamin, regulatory risk centralized entity tetap tinggi (era 2024, Foundation-first DAO-second model).
+
+OPEN THREADS
+
+- Persentase exact Season 1 vs Season 2 dari 25,5% Community allocation — tidak diungkap resmi
+- Jumlah address yang claim Season 1 dan rata-rata token per address — tidak dipublikasikan
+- On-chain analysis sell-through rate Season 1 claimants 7 hari / 30 hari / 90 hari — tidak ada published report
+- Season 2 claim mechanics, timeline, dan vesting — belum diumumkan (snapshot Dec 2024 done)
+- Season 3 Points existence, mechanics, timeline — belum diumumkan
+- Gold program total emitted to date, per-protocol breakdown, KPI achievement transparency — tidak diagregasikan publik
+- Investor (Paradigm, Standard Crypto) dan team vesting schedules exact — tidak diungkap
+- Blast Foundation treasury addresses, BLAST holdings, stablecoin composition — tidak dipublikasikan
+- Audit reports full (Trail of Bits, OpenZeppelin) — tidak public
+- Decentralized sequencer / permissionless challenge game roadmap dengan milestone — tidak ada
+- Institutional custody support status (Fireblocks, Copper, Coinbase Custody) — tidak dikonfirmasi
+- Regulatory legal opinion untuk BLAST token classification — tidak dipublikasikan
+- Cross-chain BLAST representation di Ethereum L1 (canonical bridge) — tidak terdokumentasi
+- Native yield retention rate (protocol take vs user passthrough) — tidak di-disclose
+- Blast Points Season 2 anti-sybil criteria dan disqualification count — tidak dipublikasikan

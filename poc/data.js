@@ -2,7 +2,7 @@
 window.CIF = {
   "meta": {
     "schema": "cif-export/1",
-    "generated": "2026-08-10 09:32 UTC",
+    "generated": "2026-08-10 11:56 UTC",
     "projects": 29,
     "deep": 29,
     "summary": 0,
@@ -38,7 +38,8 @@ window.CIF = {
       "cat": "DeFi lending (money market)",
       "era": "2017–",
       "tags": [
-        "defi"
+        "defi",
+        "airdrop"
       ]
     },
     {
@@ -60,6 +61,7 @@ window.CIF = {
       "era": "2017–",
       "tags": [
         "defi",
+        "airdrop",
         "amm"
       ]
     },
@@ -81,6 +83,7 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "testnet-incentive",
         "l1"
       ]
@@ -92,6 +95,7 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "nft-community",
         "governance"
       ]
@@ -103,6 +107,7 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "l2"
       ]
     },
@@ -157,6 +162,7 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "stablecoin",
         "synthetic"
       ]
@@ -188,7 +194,9 @@ window.CIF = {
       "file": "examples/CaseStudies/Grass.md",
       "cat": "",
       "era": "",
-      "tags": []
+      "tags": [
+        "airdrop"
+      ]
     },
     {
       "n": "Helium",
@@ -255,6 +263,7 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "liquid-staking",
         "oracle",
         "governance"
@@ -279,6 +288,7 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "l2"
       ]
     },
@@ -289,6 +299,7 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "l1"
       ]
     },
@@ -299,6 +310,7 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "modular",
         "l2"
       ]
@@ -309,7 +321,9 @@ window.CIF = {
       "file": "examples/CaseStudies/Notcoin.md",
       "cat": "",
       "era": "",
-      "tags": []
+      "tags": [
+        "airdrop"
+      ]
     },
     {
       "n": "OlympusDAO",
@@ -318,6 +332,7 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "governance"
       ]
     }
