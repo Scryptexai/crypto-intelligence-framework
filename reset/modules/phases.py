@@ -126,7 +126,10 @@ def run_phase(name: str, num: int, key: str, messages: list, proj_dir: Path, pro
     prompt_template = prompts.load_phase_prompt(num, key)
     prompt = prompt_template.replace("<NAMA PROJECT>", name) if num == 1 else prompt_template
 
-    plog(f"phase {num:02d}-{key}: sending...")
+    # Per-phase provider order (config.PAID_PHASES). The other provider stays in the chain as
+    # a fallback either way -- this only decides which one is tried first.
+    providers = config.providers_for_phase(num, providers)
+    plog(f"phase {num:02d}-{key}: sending via {providers[0].name}({providers[0].model})...")
     messages.append({"role": "user", "content": prompt})
 
     # Phase 11 asks for a whole validation report (Arbitrum's real one is ~38.9k chars,

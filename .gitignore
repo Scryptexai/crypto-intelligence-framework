@@ -7,3 +7,4 @@ reset/runlogs/
 reset/tmp_test/
 *.docx.bak
 data_project/*/09-stage-*.tmp
+reset/cost_report.json

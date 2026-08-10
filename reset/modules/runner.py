@@ -9,7 +9,7 @@ import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
-from . import config, phases as phases_mod, pipeline, prompts, validate
+from . import config, costs, phases as phases_mod, pipeline, prompts, validate
 from .logs import log, log_failure, log_needs_review, project_logger
 
 
@@ -196,4 +196,6 @@ def run_queue(projects: list, providers, dry_run: bool,
 
     log(f"All projects processed ({failed} failed). Check reset/failures.log for anything "
         f"that needs a manual re-run.")
+    if not dry_run:
+        log(costs.format_summary(costs.write_report()))
     return failed

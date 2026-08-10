@@ -201,6 +201,44 @@ def load_providers() -> list:
     return providers
 
 
+# Which provider leads for a given phase. The shared gateway is free but slow and unstable
+# (measured 2026-08-09: 62s for a one-word completion, connection aborts mid-generation), so
+# the paid endpoint earns its place on the phases where a dropped connection is most
+# expensive -- Phase 11 costs 6-17 minutes of generation to lose.
+#
+#   RESET_PAID_PHASES=11        (default) paid provider leads on Phase 11 only
+#   RESET_PAID_PHASES=all       every phase -- what a cost-measurement run wants
+#   RESET_PAID_PHASES=none      never; paid stays a capacity-failure fallback as before
+#
+# Only takes effect when DEEPSEEK_API_KEY is set. The other provider always remains in the
+# chain as a fallback, so a lead provider failing still rotates rather than ending the phase.
+PAID_PHASES = os.environ.get("RESET_PAID_PHASES", "11").strip().lower()
+
+
+def providers_for_phase(num: int, providers: list) -> list:
+    """The provider chain for one phase, most-preferred first.
+
+    Reorders rather than filters: whichever provider does not lead is still available as a
+    fallback. That matters because the two fail in different ways -- the free gateway drops
+    connections, and a paid endpoint can run out of credit -- and neither should be able to
+    end a phase on its own while the other is reachable.
+    """
+    if len(providers) < 2 or PAID_PHASES == "none":
+        return providers
+    if PAID_PHASES == "all":
+        wanted = True
+    else:
+        try:
+            wanted = num in {int(p) for p in PAID_PHASES.split(",") if p.strip()}
+        except ValueError:
+            wanted = False
+    if not wanted:
+        return providers
+    paid = [p for p in providers if p.name != "gateway"]
+    free = [p for p in providers if p.name == "gateway"]
+    return paid + free if paid else providers
+
+
 def load_projects(path: Path = None) -> list:
     """Project queue, one name per line; blank lines and #-comments ignored."""
     path = path or (RESET_DIR / "projects.txt")

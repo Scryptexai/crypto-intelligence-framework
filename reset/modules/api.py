@@ -16,6 +16,7 @@ import urllib.error
 import urllib.request
 
 from . import config
+from . import costs
 from .logs import log
 
 
@@ -81,6 +82,7 @@ def _read_sse_stream(resp) -> str:
     parts = []
     finish_reason = None
     saw_done = False
+    usage = None
     for raw_line in resp:
         line = raw_line.decode("utf-8", errors="replace").strip()
         if not line or line.startswith(":"):
@@ -95,6 +97,12 @@ def _read_sse_stream(resp) -> str:
             chunk = json.loads(payload)
         except json.JSONDecodeError:
             continue  # a partial/garbled frame must not abort a completed generation
+        # Sent on the final chunk when stream_options.include_usage is honoured. This is the
+        # only way to get exact token counts out of a streamed call, and exact counts are the
+        # whole basis of the cost report -- a length-derived estimate is a fallback, not a
+        # measurement.
+        if chunk.get("usage"):
+            usage = chunk["usage"]
         for choice in chunk.get("choices") or []:
             piece = (choice.get("delta") or {}).get("content")
             if piece is None:
@@ -120,11 +128,11 @@ def _read_sse_stream(resp) -> str:
             f"{len(text)} chars -- the connection dropped mid-generation, so this answer is "
             f"incomplete. Retrying.")
     _reject_truncated(finish_reason, text)
-    return text
+    return text, usage
 
 
 def call_model(messages: list, base_url: str, token: str, model: str,
-               max_tokens: int = None, stream: bool = None) -> str:
+               max_tokens: int = None, stream: bool = None) -> tuple:
     """POST to {base_url}/v1/chat/completions (OpenAI-compatible -- see extract_text's
     docstring for how this was confirmed against the real endpoint, 2026-08-05). Raises on
     any failure (network, timeout, non-200, unparseable body) -- caller handles retry.
@@ -146,6 +154,10 @@ def call_model(messages: list, base_url: str, token: str, model: str,
     url = base_url.rstrip("/") + "/v1/chat/completions"
     payload = {"model": model, "max_tokens": max_tokens or config.MAX_TOKENS,
                "messages": messages, "stream": bool(stream)}
+    if stream:
+        # Ask for the token counts on the final chunk. Providers that don't support it ignore
+        # the field; costs.record() then falls back to a length estimate and says so.
+        payload["stream_options"] = {"include_usage": True}
     data = json.dumps(payload).encode("utf-8")
     # Debug aid, 2026-08-05: a UA-spoofed Python request to this same URL still got the
     # gateway's fallback HTML back while an equivalent curl succeeded -- dumping the EXACT
@@ -192,7 +204,7 @@ def call_model(messages: list, base_url: str, token: str, model: str,
             f"HTTP {status} but response body is not valid JSON ({e}); "
             f"body length={len(raw)} chars, first 500 chars: {snippet!r}"
         ) from e
-    return extract_text(body)
+    return extract_text(body), body.get("usage")
 
 
 # Failures that mean "this endpoint cannot handle a request this big", as opposed to "try
@@ -271,8 +283,10 @@ def call_with_retries(messages: list, providers, phase_label: str,
         is_last_provider = idx == len(providers) - 1
         for attempt in range(1, config.MAX_PHASE_RETRIES + 1):
             try:
-                return call_model(messages, prov.base_url, prov.token, prov.model,
-                                  max_tokens=budget)
+                text, usage = call_model(messages, prov.base_url, prov.token, prov.model,
+                                         max_tokens=budget)
+                costs.record(prov.name, prov.model, phase_label, usage, len(text))
+                return text
             except Exception as e:  # noqa: BLE001 -- any failure is retryable or rotatable
                 last_err = e
                 log(f"  ✗ {phase_label} [{prov.name}] attempt "
