@@ -14,6 +14,7 @@ from pathlib import Path
 
 from . import specs
 
+import ingest as _ingest  # OPTIONAL_PHASE_KEYS -- phases that may legitimately be absent
 import extract_entities as _extract_entities
 import extract_events as _extract_events
 import extract_decision_events as _extract_decision_events
@@ -66,13 +67,28 @@ def diagnose_project(name: str, proj_dir: Path) -> dict:
     from . import config
     for num, key in config.PHASES:
         if num == 11:
-            continue  # deliberately deferred; has no extractor contract to test
+            continue  # audited separately, by cli._audit_json's phase11 buckets
         path = proj_dir / f"{num:02d}-{key}.docx"
         if not path.exists():
+            # An OPTIONAL phase that was never generated is not a defect. Missed when Phase 12
+            # landed, and it broke the whole pipeline within the hour: every one of the 27
+            # projects turned "broken(12)", which emptied phase11_todo, which made
+            # `--stages phase11` report "nothing to do" and skip the entire queue. A phase
+            # added today cannot retroactively invalidate work finished yesterday -- the same
+            # rule ingest.py's OPTIONAL_PHASE_KEYS already encodes, applied here too.
+            if key in _ingest.OPTIONAL_PHASE_KEYS:
+                continue
             out[f"{num:02d}-{key}"] = ["missing"]
             continue
         text = path.read_text(encoding="utf-8", errors="replace")
         if len(text.strip()) < config.MIN_PHASE_CHARS:
+            # Same reasoning as the missing case: an empty scaffold for an optional phase is
+            # the absence of that phase, not a broken one. Covered explicitly because
+            # data_project folders routinely carry 0-byte placeholders (every project has one
+            # for 11-conflict.docx), so the moment anything creates 12-airdrop.docx as a
+            # scaffold the "missing" branch above stops firing and this one takes over.
+            if key in _ingest.OPTIONAL_PHASE_KEYS:
+                continue
             out[f"{num:02d}-{key}"] = ["empty"]
             continue
         failed = specs.run_checks(num, key, name, text)
