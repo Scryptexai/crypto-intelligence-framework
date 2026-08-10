@@ -27,6 +27,7 @@ import extract_decision_events as _extract_decision_events
 import extract_knowledge as _extract_knowledge
 import extract_behavior as _extract_behavior
 import extract_qa as _extract_qa
+import extract_airdrop as _extract_airdrop
 
 # The `## <Title>` heading tools/ingest.py writes above each phase in the assembled dossier.
 # The extractors slice on these, so a single phase checked in isolation has to be wrapped in
@@ -44,6 +45,7 @@ PHASE_TITLES = {
     "behavioral": "Behavioral Intelligence",
     "knowledge": "Knowledge Extraction",
     "conflict": "Validation & Quality Assurance (CIF Score)",
+    "airdrop": "Airdrop Intelligence",
 }
 # What each phase's slice is terminated BY in a real dossier -- the next phase's title.
 _NEXT_TITLE = {
@@ -51,6 +53,7 @@ _NEXT_TITLE = {
     "history": "Technology Intelligence",
     "behavioral": "Knowledge Extraction",
     "knowledge": "Validation & Quality Assurance (CIF Score)",
+    "conflict": "Airdrop Intelligence",
 }
 
 
@@ -259,6 +262,50 @@ _QA_HINT = (
 )
 
 
+def _check_airdrop_parse(text: str, project_name: str) -> tuple:
+    """Phase 12 must yield a status AND the eight-POV outcome block.
+
+    The POV count is the check that matters. A single success/failure verdict is the exact
+    mistake reset/phase_12_airdrop.txt exists to prevent -- an airdrop can succeed for the
+    founder and fail for retail in the same month -- so a report that collapses them is not
+    a formatting slip, it is the wrong analysis.
+    """
+    wrapped = wrap_for_extractor(text, "airdrop")
+    res = _extract_airdrop.parse_airdrop(wrapped, project_name)
+    if res is None:
+        return False, "extract_airdrop found no parseable Phase 12 content"
+    problems = []
+    if not res["status"]:
+        problems.append("STATUS AIRDROP missing or not one of the four literal states")
+    missing_pov = [p for p in _extract_airdrop.POV_NAMES if p.lower() not in res["povOutcomes"]]
+    if missing_pov:
+        problems.append(f"{len(missing_pov)} POV missing: {', '.join(missing_pov)}")
+    # Events are only expected when something was actually distributed; "Belum ada" with zero
+    # events is a correct answer, not an empty one.
+    if res["status"] in ("Sudah dilakukan", "Sedang berjalan") and not res["events"]:
+        problems.append("status says a distribution happened but no AD-NNN block parsed")
+    if problems:
+        return False, "; ".join(problems)
+    return True, (f"status={res['status']!r}, {len(res['events'])} event(s), "
+                  f"{len(res['povOutcomes'])} POV")
+
+
+_AIRDROP_HINT = (
+    "Laporan Phase 12 tidak terbaca parser CIF. Perbaiki hal berikut, pakai label PERSIS:\n"
+    "1. Bagian `STATUS AIRDROP` wajib ada, dan isinya salah satu PERSIS dari: "
+    "`Sudah dilakukan` / `Sedang berjalan` / `Diumumkan belum eksekusi` / `Belum ada`.\n"
+    "2. Bagian `OUTCOME PER POV` wajib memuat KEDELAPAN POV, masing-masing pada barisnya "
+    "sendiri dengan bentuk `POV Founder: Sukses` (lalu `- Jangka pendek:`, `- Jangka panjang:`, "
+    "`- Dasar:`). Kedelapan nama itu: Founder, VC, Retail, Community, Developer, Institution, "
+    "Validator, Builder. Sebuah POV boleh diisi `Tidak diketahui` — itu jawaban yang sah — tapi "
+    "TIDAK BOLEH dihilangkan, dan JANGAN menggantinya dengan satu vonis tunggal untuk semua.\n"
+    "3. Jika status `Sudah dilakukan` atau `Sedang berjalan`, wajib ada minimal satu blok "
+    "`AD-001: <judul>` diikuti baris berlabel `Tanggal:`, `Tipe:`, `Alokasi:`, `Penerima:`, "
+    "`Kriteria:`, `Sitasi:`.\n"
+    "4. JANGAN memakai heading markdown (`##`, `###`) di mana pun."
+)
+
+
 _ENTITY_HINT = (
     "Format blok ENTITY salah sehingga tidak terparsing. Tulis SETIAP entity sebagai blok "
     "flat text, label BAHASA INGGRIS persis ini, satu field per baris, dipisah \"---\" "
@@ -337,6 +384,12 @@ PHASE_CHECKS = {
         Check("qa_parse", "CIF Score Calculation parses", _check_qa_parse, _QA_HINT),
         Check("no_md_headers", "no markdown headers to truncate the report",
               _check_no_md_headers, _QA_HINT),
+    ],
+    "airdrop": [
+        Check("airdrop_parse", "status + all 8 POV outcomes parse", _check_airdrop_parse,
+              _AIRDROP_HINT),
+        Check("no_md_headers", "no markdown headers to truncate the report",
+              _check_no_md_headers, _AIRDROP_HINT),
     ],
 }
 

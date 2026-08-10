@@ -30,8 +30,14 @@ if str(ROOT / "tools") not in sys.path:
 PHASES = [
     (1, "foundation"), (2, "entity"), (3, "history"), (4, "technology"),
     (5, "financial"), (6, "token"), (7, "ecosystem"), (8, "market"),
-    (9, "behavioral"), (10, "knowledge"), (11, "conflict"),
+    (9, "behavioral"), (10, "knowledge"), (11, "conflict"), (12, "airdrop"),
 ]
+
+# Phase 12 runs AFTER the Phase 11 audit, which means the audit does not cover it. That is a
+# real gap, accepted deliberately: renumbering would rename 11-conflict.docx in 29 projects
+# and invalidate every dossier already assembled. Phase 11's coverage report should be
+# extended to reach phase 12 once the airdrop phase has run on enough projects to be worth
+# auditing.
 
 # FALLBACK ONLY since 2026-08-09. Phase 11 normally goes out as ONE prompt
 # (reset/phase_11_conflict.txt) like every other phase; these four stages are reached only

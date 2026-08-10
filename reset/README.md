@@ -1,6 +1,6 @@
 # reset/ — automated Track C (DeepSeek methodology) research pipeline
 
-Automates the 11-phase Track C prompt sequence (`docs/Protocol/Phased-Research-Prompts.md`'s "Fixed vs. the
+Automates the 12-phase Track C prompt sequence (`docs/Protocol/Phased-Research-Prompts.md`'s "Fixed vs. the
 original DeepSeek run" section — the prompt set actually used to research Arbitrum,
 `data_project/Arbitrum/`) against an OpenAI-compatible `/v1/chat/completions` endpoint, one project at a
 time, so a long queue of projects can run unattended instead of being pasted into a chat UI by hand one
@@ -20,7 +20,7 @@ responsibility, each importing only from the ones above it:
 | `specs.py` | **what "correct output" means per phase, and how to ask for it again** |
 | `validate.py` | project-level quality gate (`verify_10_phases`, `diagnose_project`) |
 | `repair.py` | **the self-healing loop: spec check → corrective retry** |
-| `phases.py` | generating one phase (all 11 as a single prompt; staged fallbacks for 9 and 11) |
+| `phases.py` | generating one phase (all 12 as a single prompt; staged fallbacks for 9 and 11) |
 | `pipeline.py` | promote → ingest → build → extract → optional Supabase sync |
 | `runner.py` | per-project orchestration + sequential/parallel queue |
 | `cli.py` | argparse and entrypoint wiring |
@@ -55,10 +55,34 @@ Checks currently enforced: `no_junk` (leaked `<tool_call>` syntax, "I'll search 
 narration with no findings, meta-commentary, decorative banners — the failure mode that
 produced Berachain/EigenLayer/Cosmos), `min_length`, `ingest_contract` (PROJECT header +
 citation density), plus per-phase `entities_parse` / `events_parse` / `decisions_parse` /
-`behavior_sections` / `knowledge_parse`, and for Phase 11 `qa_parse` (extract_qa finds a CIF Score
-with dimensions) + `no_md_headers` (a `## ` line inside the report silently truncates it).
+`behavior_sections` / `knowledge_parse`, for Phase 11 `qa_parse` (extract_qa finds a CIF Score
+with dimensions) + `no_md_headers` (a `## ` line inside the report silently truncates it), and for
+Phase 12 `airdrop_parse` (status + all eight POV outcomes present).
 
 Set `RESET_DISABLE_REPAIR=1` to turn the loop off.
+
+## Choosing a provider per phase, and what a run costs
+
+The free gateway is slow and drops connections; the paid endpoint is neither. `RESET_PAID_PHASES`
+decides which phases lead with the paid provider, and the other stays in the chain as a fallback
+either way:
+
+| value | effect |
+|---|---|
+| `11` (default) | Phase 11 only — the longest generation, where a dropped connection costs most |
+| `all` | every phase — what a cost-measurement run over a fresh project wants |
+| `none` | paid stays purely a capacity-failure fallback, as before |
+
+Only active when `DEEPSEEK_API_KEY` is set.
+
+Every run prints its token use and appends detail to `reset/cost_report.json`. Counts come from
+each response's own `usage` block (requested via `stream_options.include_usage`); providers that
+omit it are length-estimated at the measured 2.95 chars/token and flagged as such in the report.
+
+Money is derived, not measured: set `RESET_PRICE_IN` / `RESET_PRICE_OUT` (USD per 1M tokens, or
+`RESET_PRICE_IN_DEEPSEEK` per provider) to today's published rates. Leave them unset and the report
+still gives exact token counts and omits the dollar column, rather than printing a figure from a
+price list this repo cannot verify.
 
 ## Diagnosing and fixing existing data
 
@@ -128,6 +152,21 @@ kills the run after 90 seconds).
   silently dropping Coverage Report, Cross-phase Consistency, Data Lineage, Dependency Graph, Conflict
   Register, Evidence Audit, Confidence Assessment, and CIF Score Calculation). The restored single file above
   is complete — that truncation is what made it look, for a while, as though splitting were the only option.
+- `phase_12_airdrop.txt` — Phase 12 (Airdrop Intelligence), added 2026-08-09. Identifies whether a project
+  distributed tokens without payment, why, and what it cost each side. Two things shape it. First, an airdrop
+  is treated as a Decision Event, not a marketing event, so it is built on Phases 1-11 already in the
+  conversation rather than on general knowledge -- a distribution cannot be judged without the funding stage,
+  community size and market conditions that surrounded it. Second, the outcome is recorded **per POV**, all
+  eight, because an airdrop routinely succeeds for the founder and fails for retail in the same quarter; a
+  single verdict is the specific mistake this phase exists to prevent, and `airdrop_parse` fails a report
+  that omits any POV. A project that never ran one is still in scope -- status `Belum ada`, and the analysis
+  moves to prerequisites and precursor signals (no predicted dates).
+
+  **Optional in the ingest contract.** 29 dossiers already existed without it, so `tools/ingest.py` keeps it
+  in `OPTIONAL_PHASE_KEYS`: recognised and assembled when present, never counted as missing when absent. A
+  new capability is not a reason to invalidate the corpus. It also runs *after* Phase 11, which means the
+  audit does not yet cover it -- a known gap, recorded in `config.PHASES`, accepted because renumbering would
+  rename `11-conflict.docx` in every project.
 - `shared_format_rules.txt` — the doc's mandatory "ATURAN FORMAT" block (citations on every fact, Evidence
   Level tags, no fabrication, template-exactness, etc.) — the doc's own instructions say this gets appended
   to **every** phase prompt before sending, not just used once. `load_phase_prompt()` does this
