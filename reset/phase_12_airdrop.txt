@@ -113,14 +113,20 @@ OUTCOME PER POV
 
 Satu blok per POV, kedelapan-delapannya wajib ada, memakai format persis:
 
-POV Founder: <Sukses / Sebagian / Gagal / Tidak diketahui>
+POV Founder: <Sukses / Sebagian / Gagal / Tidak diketahui / Tidak relevan>
 - Jangka pendek: <apa yang terjadi dalam 0-3 bulan>
 - Jangka panjang: <apa yang terjadi setelah 6+ bulan>
 - Dasar: <evidence + Evidence Level>
 
 Ulangi persis bentuk itu untuk: POV VC, POV Retail, POV Community, POV Developer, POV Institution,
 POV Validator, POV Builder. Sebuah POV boleh "Tidak diketahui" — itu jawaban jujur dan lebih berguna
-daripada tebakan.
+daripada tebakan — dan boleh "Tidak relevan" jika POV itu memang tidak ada pada project ini (misalnya
+Validator untuk project yang bukan chain). Yang TIDAK boleh adalah menghilangkan salah satu dari
+kedelapan baris itu.
+
+Boleh menambahkan keterangan dalam kurung setelah nama POV untuk menyebut siapa persisnya yang dimaksud
+— `POV VC (Paradigm, Variant Fund): Sukses` atau `POV Retail (penerima Season 1): Sebagian`. Itu justru
+lebih berguna daripada nama POV telanjang. Tanda titik dua tetap setelah kurung penutup.
 
 METRIK RETENSI
 

@@ -123,9 +123,18 @@ def _parse_events(section):
 
 
 def _parse_pov(section):
-    """{"founder": {"verdict", "shortTerm", "longTerm", "basis"}} for whichever POVs appear."""
+    """{"founder": {"verdict", "qualifier", "shortTerm", "longTerm", "basis"}} per POV present.
+
+    The heading may carry a parenthetical naming WHICH holders of that viewpoint are meant --
+    "POV VC (Paradigm, Variant Fund)", "POV Retail (Season 1 claimers)". The first real Phase
+    12 (Blur, 2026-08-10) did this on five of eight, and an earlier version of this regex
+    demanded a colon straight after the name, so those five parsed as absent and the phase
+    was reported broken. The qualifier is better output than the bare name, not worse, so it
+    is captured rather than tolerated.
+    """
     out = {}
-    blocks = list(re.finditer(rf"(?m)^\s*POV\s+({_pov_alt})\s*:\s*(.+?)\s*$", section))
+    blocks = list(re.finditer(
+        rf"(?m)^\s*POV\s+({_pov_alt})\s*(?:\(([^)]*)\))?\s*:\s*(.+?)\s*$", section))
     for i, m in enumerate(blocks):
         start = m.end()
         end = blocks[i + 1].start() if i + 1 < len(blocks) else len(section)
@@ -136,7 +145,8 @@ def _parse_pov(section):
             return b.group(1).strip() if b else None
 
         out[m.group(1).lower()] = {
-            "verdict": m.group(2).strip(),
+            "verdict": m.group(3).strip(),
+            "qualifier": (m.group(2) or "").strip() or None,
             "shortTerm": bullet("Jangka pendek"),
             "longTerm": bullet("Jangka panjang"),
             "basis": bullet("Dasar"),

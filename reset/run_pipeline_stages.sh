@@ -285,10 +285,10 @@ for e in json.load(sys.stdin).get("phase11_bad") or []:
     [ -n "$project" ] || continue
     say "  phase 11 for $project"
     if [ "$DRY_RUN" = 1 ]; then
-      say "    [dry-run] would run: --commit --auto-sync --project '$project'"
+      say "    [dry-run] would run: --commit --phases-limit 11 --auto-sync --project '$project'"
       continue
     fi
-    run_one_project "$project" --commit --auto-sync --project "$project" || break
+    run_one_project "$project" --commit --phases-limit 11 --auto-sync --project "$project" || break
     count=$((count + 1))
   done <<< "$todo"
 
@@ -302,15 +302,76 @@ for e in json.load(sys.stdin).get("phase11_bad") or []:
     fi
     say "  phase 11 REDO for $project (failing: $checks, attempt $((tries + 1))/$MAX_ATTEMPTS)"
     if [ "$DRY_RUN" = 1 ]; then
-      say "    [dry-run] would run: --commit --auto-sync --project '$project' --redo-phases 11"
+      say "    [dry-run] would run: --commit --phases-limit 11 --auto-sync --project '$project' --redo-phases 11"
       continue
     fi
     record_attempt "$project" "phase11:$checks"
-    run_one_project "$project" --commit --auto-sync --project "$project" --redo-phases 11 || break
+    run_one_project "$project" --commit --phases-limit 11 --auto-sync --project "$project" \
+        --redo-phases 11 || break
     count=$((count + 1))
   done <<< "$bad"
 
   say "stage phase11: done -- $count project(s) attempted."
+}
+
+# ---------------------------------------------------------------------------------------
+# Stage 4 — phase 12 (Airdrop Intelligence)
+#
+# Separate from phase11 on purpose. Adding phase 12 to config.PHASES quietly turned
+# `--stages phase11` into "generate 11 AND 12", because a run with no --phases-limit covers
+# every phase -- Blur got an unrequested airdrop report that way on 2026-08-10. The phase11
+# stage now passes --phases-limit 11, and asking for phase 12 is a decision you make here.
+#
+# Candidates are projects whose Phase 11 PARSES, not merely clean ones: the airdrop phase
+# reasons over Phases 1-11 in one conversation, so running it against an audit that is about
+# to be regenerated wastes both generations.
+# ---------------------------------------------------------------------------------------
+stage_phase12() {
+  local todo bad count=0
+  todo="$(audit_field phase12_todo)"
+  bad="$(audit_json | "$PY" -c '
+import json, sys
+for e in json.load(sys.stdin).get("phase12_bad") or []:
+    print(e["project"], ",".join(e["checks"]), sep="\t")')"
+
+  if [ -z "$todo" ] && [ -z "$bad" ]; then
+    say "stage phase12: every project with a parseable audit already has an airdrop report -- skipping."
+    return 0
+  fi
+
+  [ -n "$todo" ] && say "stage phase12: $(printf '%s\n' "$todo" | wc -l) project(s) need a first airdrop report."
+  [ -n "$bad" ] && say "stage phase12: $(printf '%s\n' "$bad" | wc -l) project(s) have one that fails its checks -- regenerating."
+
+  while IFS= read -r project; do
+    [ -n "$project" ] || continue
+    say "  phase 12 for $project"
+    if [ "$DRY_RUN" = 1 ]; then
+      say "    [dry-run] would run: --commit --auto-sync --project '$project'"
+      continue
+    fi
+    run_one_project "$project" --commit --auto-sync --project "$project" || break
+    count=$((count + 1))
+  done <<< "$todo"
+
+  while IFS=$'\t' read -r project checks; do
+    [ -n "$project" ] || continue
+    local tries
+    tries="$(attempts_for "$project")"
+    if [ "$tries" -ge "$MAX_ATTEMPTS" ]; then
+      say "  SKIP $project (phase 12: $checks) -- already attempted $tries times."
+      continue
+    fi
+    say "  phase 12 REDO for $project (failing: $checks, attempt $((tries + 1))/$MAX_ATTEMPTS)"
+    if [ "$DRY_RUN" = 1 ]; then
+      say "    [dry-run] would run: --commit --auto-sync --project '$project' --redo-phases 12"
+      continue
+    fi
+    record_attempt "$project" "phase12:$checks"
+    run_one_project "$project" --commit --auto-sync --project "$project" --redo-phases 12 || break
+    count=$((count + 1))
+  done <<< "$bad"
+
+  say "stage phase12: done -- $count project(s) attempted."
 }
 
 # ---------------------------------------------------------------------------------------
@@ -337,7 +398,8 @@ for stage in "${stage_list[@]}"; do
     repair)  stage_repair ;;
     publish) stage_publish ;;
     phase11) stage_phase11 ;;
-    *) echo "unknown stage: $stage (want repair|publish|phase11)" >&2; exit 2 ;;
+    phase12) stage_phase12 ;;
+    *) echo "unknown stage: $stage (want repair|publish|phase11|phase12)" >&2; exit 2 ;;
   esac
 done
 

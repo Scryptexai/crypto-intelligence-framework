@@ -151,6 +151,24 @@ def _audit_json(projects: list, output_root: Path) -> int:
         else:
             phase11_done.append(name)
 
+    # Phase 12 candidates are the projects whose Phase 11 parses -- not merely "clean".
+    # The airdrop phase is built on Phases 1-11 in one conversation, so a project whose audit
+    # is still broken would be reasoning about a report that is about to be regenerated.
+    phase12_done, phase12_todo, phase12_bad = [], [], []
+    for name in phase11_done:
+        path = dirs[name] / "12-airdrop.docx"
+        text = path.read_text(encoding="utf-8", errors="replace") if path.exists() else ""
+        if len(text.strip()) < config.MIN_PHASE_CHARS:
+            phase12_todo.append(name)
+            continue
+        failed = specs.run_checks(12, "airdrop", name, text)
+        if failed:
+            phase12_bad.append({"project": name,
+                                "checks": [c.name for c, _ in failed],
+                                "detail": failed[0][1][:200]})
+        else:
+            phase12_done.append(name)
+
     print(json.dumps({
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "output_root": str(output_root),
@@ -161,6 +179,9 @@ def _audit_json(projects: list, output_root: Path) -> int:
         "phase11_done": sorted(phase11_done),
         "phase11_todo": sorted(phase11_todo),
         "phase11_bad": sorted(phase11_bad, key=lambda e: e["project"]),
+        "phase12_done": sorted(phase12_done),
+        "phase12_todo": sorted(phase12_todo),
+        "phase12_bad": sorted(phase12_bad, key=lambda e: e["project"]),
     }, indent=2))
     return 0
 
