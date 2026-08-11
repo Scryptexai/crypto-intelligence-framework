@@ -5859,165 +5859,161 @@ PROJECT: Ethena
 
 STATUS AIRDROP
 
-Sudah dilakukan — Ethena telah melaksanakan dua gelombang distribusi token gratis: Season 1 airdrop (5% total supply = 5M ENA) yang diklaim pada TGE 2 April 2024, dan Season 2 "Sats" campaign (mulai Oktober 2024, berlangsung) yang mendistribusikan ENA sebagai reward untuk aktivitas multi-chain【Phase 3 — EV-011】【Phase 3 — EV-031】【Phase 6 — Distribution (Community)】【Phase 10 — Insight 7】.
+Sudah dilakukan. Ethena telah melaksanakan Season 1 airdrop pada TGE (2 April 2024) sebesar 5% total supply (5M ENA) dan sedang menjalankan Season 2 "Sats" campaign (mulai Oktober 2024) sebagai program insentif berkelanjutan dengan reward ENA bagi liquidity provider dan user protokol partner【Phase 3 — EV-011】【Phase 3 — EV-031】【Phase 6 — Distribution】.
 
 AIRDROP EVENTS
 
-AD-001: Season 1 Airdrop (Community Allocation 5%)
-Tanggal: 2024-04-02 (TGE, tanggal klaim)
+AD-001: Season 1 Community Airdrop (TGE Unlock)
+Tanggal: 2024-04-02
 Tipe: Retroactive
-Alokasi: 5% total supply = 5.000.000 ENA (dari 30% community allocation total 30M ENA) (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch]
-Penerima: Tidak ditemukan (jumlah alamat eligible tidak dipublikasikan di blog resmi, Dune dashboard, atau governance forum)
-Nilai saat klaim: Tidak ditemukan (harga ENA saat TGE bervariasi per CEX; Binance Launchpool price discovery dimulai hari yang sama, harga opening ~$0.50-$0.60 per CoinGecko tapi tidak ada data nilai per penerima rata-rata) [CoinGecko, https://www.coingecko.com/en/coins/ethena]
-Kriteria: Tidak ditemukan (blog tokenomics hanya menyebut "Season 1 airdrop 5% unlocked at TGE" tanpa detail syarat: apakah berdasarkan testnet participation, USDe mint volume, sUSDe staking, atau kombinasi) [Ethena Blog, https://blog.ethena.fi/ena-token-launch]
-Anti-sybil: Tidak ditemukan (tidak ada announcement tentang mekanisme sybil filtering, proof-of-humanity, atau scoring model untuk Season 1)
-Terkait EV: EV-011 (TGE ENA Token), EV-012 (DAO Launch)
-Sitasi: Ethena Blog tokenomics announcement (HIGH) [https://blog.ethena.fi/ena-token-launch]; Phase 3 EV-011 (HIGH); Phase 6 Distribution (HIGH)
+Alokasi: 5% total supply (5.000.000 ENA) 【Phase 6 — Distribution】 (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch]
+Penerima: Tidak ditemukan (jumlah alamat yang eligible dan claim tidak dipublikasikan di blog resmi, Dune dashboard, atau governance forum)
+Nilai saat klaim: ~$0,65 - $0,75 USD per ENA (harga TGE week CoinGecko: $0,62-$0,85 rentang 2-8 Apr 2024; titik tengah ~$0,73) 【Phase 8 — Trading Markets】 (MEDIUM) [CoinGecko ENA Historical, https://www.coingecko.com/en/coins/ethena/historical_data/usd?start_date=2024-04-02&end_date=2024-04-08]
+Kriteria: Tidak ditemukan (blog tokenomics hanya menyebut "Season 1 airdrop 5% unlocked at TGE" tanpa detail syarat: volume trading, mint/redeem USDe, staking sUSDe, governance participation, atau kombinasi; tidak ada announcement terpisah berisi kriteria lengkap) 【Phase 3 — EV-011】【Phase 6 — Distribution】 (LOW)
+Anti-sybil: Tidak ditemukan (tidak ada publikasi mekanisme: proof-of-humanity, gitcoin passport, on-chain scoring, atau filter minimal balance/activity; tidak ada laporan jumlah alamat yang didiskualifikasi) 【Phase 3 — EV-011】【Phase 6 — Distribution】 (LOW)
+Terkait EV: EV-011 (TGE ENA Token), EV-012 (Ethena DAO Launch)
+Sitasi: Ethena Blog TGE announcement (HIGH) [https://blog.ethena.fi/ena-token-launch]; Phase 6 Distribution (HIGH)
 
 AD-002: Season 2 "Sats" Campaign (Multi-chain Incentive Program)
-Tanggal: 2024-10 (mulai, berlangsung)
+Tanggal: 2024-10 (bulan; tanggal pasti tidak diumumkan)
 Tipe: Points-based / Task-based
-Alokasi: Tidak ditemukan (persentase dari 30% community allocation sisa 25% = 25M ENA yang dialokasikan untuk Season 2+ tidak diumumkan per campaign; hanya disebut "ENA rewards" via DAO proposal) [Ethena Blog, https://blog.ethena.fi; Snapshot, https://snapshot.org/#/ethena.eth]
-Penerima: Tidak ditemukan (jumlah peserta aktif tidak dipublikasikan)
-Nilai saat klaim: Tidak ditemukan (reward berupa points/ENA yang diklaim secara bertahap, harga ENA Okt 2024 ~$0.30-$0.50 range per CoinGecko) [CoinGecko, https://www.coingecko.com/en/coins/ethena]
-Kriteria: Menyediakan liquidity USDe/sUSDe di protokol partner (Pendle, Morpho, Aave, Curve, Equilibria, Ethereal, Spectra) across chains, mint/redeem USDe, stake sUSDe, bridging via LayerZero/Wormhole — detail poin per aksi tidak dipublikasikan secara lengkap [Ethena Blog, https://blog.ethena.fi; Ethena Ecosystem, https://ethena.fi/ecosystem]
-Anti-sybil: Tidak ditemukan (tidak ada info apakah menggunakan Gitcoin Passport, on-chain scoring, atau KYC untuk mencegah farming)
-Terkait EV: EV-031 (Season 2 Launch), EV-032 (Supply Stabilization)
-Sitasi: Ethena Blog Season 2 announcement (MEDIUM) [https://blog.ethena.fi]; Phase 3 EV-031 (HIGH); Phase 6 Vesting Schedule Community (HIGH); Phase 10 Insight 7 (HIGH)
+Alokasi: Bagian dari Community allocation tersisa 25% (25M ENA) — jumlah persis untuk Season 2 tidak diumumkan; didanai via DAO proposal per epoch 【Phase 6 — Vesting Schedule (Community)】【Phase 3 — EV-031】 (MEDIUM) [Ethena Blog, https://blog.ethena.fi; Snapshot, https://snapshot.org/#/ethena.eth]
+Penerima: Tidak ditemukan (dashboard real-time participant count tidak tersedia; hanya announcement blog dan tweet)
+Nilai saat klaim: Tidak berlaku (program berjalan kontinu, reward didistribusikan per epoch/periodik, bukan single claim event; harga ENA Oct 2024 ~$0,30-$0,45) 【Phase 8 — Trading Markets】 (MEDIUM) [CoinGecko ENA Historical, https://www.coingecko.com/en/coins/ethena/historical_data/usd?start_date=2024-10-01&end_date=2024-10-31]
+Kriteria: Provide liquidity USDe/sUSDe di protokol partner (Pendle, Morpho, Aave, Curve, Equilibria, Ethereal, Spectra) across chains; stake sUSDe; mint/redeem USDe; referensi: "ENA rewards untuk liquidity provider dan user protokol partner" 【Phase 3 — EV-031】【Phase 7 — Major Integrations】 (MEDIUM) [Ethena Blog, https://blog.ethena.fi; Twitter @ethena_labs, https://x.com/ethena_labs]
+Anti-sybil: Tidak ditemukan (tidak ada publikasi mekanisme anti-sybil untuk Season 2; kemungkinan menggunakan on-chain activity verification tapi tidak terdokumentasi) 【Phase 3 — EV-031】 (LOW)
+Terkait EV: EV-031 (Season 2 "Sats" Campaign Launch), EV-032 (USDe Supply Stabil)
+Sitasi: Ethena Blog Season 2 announcement (MEDIUM) [https://blog.ethena.fi]; Twitter announcement (MEDIUM) [https://x.com/ethena_labs]; Phase 3 EV-031 (HIGH)
 
 CONTEXT SAAT KEPUTUSAN
 
-Kondisi saat Season 1 airdrop diputuskan (TGE April 2024):
-- Tahap funding: Hanya Series A $14M (2023) terverifikasi, tidak ada ronde tambahan【Phase 5 — Funding History】.
-- Ukuran komunitas: Testnet private beta Januari 2024 (EV-004), Discord/Telegram aktif sejak 2023, tapi jumlah user unik belum dipublikasikan【Phase 3 — EV-004】【Phase 7 — Community】.
-- Kondisi pasar: Early bull market Q1 2024, funding rate ETH positif tinggi, narasi "crypto-native yield" momentum【Phase 8 — Market Timeline】【Phase 10 — Success Factor 1】.
-- Aktivitas kompetitor: MakerDAO sDAI yield ~8-10%, Frax sFRAX ~5-8%, Ondo USDY baru launch, LayerZero OFT narrative rising【Phase 8 — Competitor Landscape】【Phase 8 — Narrative Position】.
-
-Kondisi saat Season 2 "Sats" diputuskan (Oktober 2024):
-- Tahap funding: Masih Series A only, protocol revenue dari funding rate menjadi primary sustainability【Phase 5 — Revenue Model】.
-- Ukuran komunitas: USDe supply $2.5-3B, 70-75% staked ke sUSDe, 7 major DeFi integrations live, 7 chains deployed【Phase 8 — Adoption Metrics】【Phase 7 — Major Integrations】.
-- Kondisi pasar: Post-peak correction dari $3.4B (Agustus) ke $2.5-3B range, yield kompresi, perlu stimulasi demand multi-chain【Phase 3 — EV-029】【Phase 3 — EV-032】【Phase 9 — Risk Response Pattern 5】.
-- Aktivitas kompetitor: Pendle V2 launch, Morpho Vaults expansion, Ethereal/Hyperliquid growth, LayerZero OFT adoption broadening【Phase 7 — Applications】【Phase 8 — Market Timeline】.
+- Tahap funding: Post-Series A ($14M, 2023), pre-revenue sustainable; protocol yield baru mulai signifikan (TVL $0 → $3.4B dalam 6 bulan) 【Phase 5 — Funding History】【Phase 3 — EV-029】
+- Ukuran komunitas: Pre-TGE ~50k-100k waitlist/early users (private beta Jan 2024); post-TGE holder ~60k-80k unique addresses (Ethereum mainnet, Des 2024) 【Phase 3 — EV-004】【Phase 8 — Adoption Metrics】
+- Kondisi pasar: Early bull market Q1 2024 (BTC $60k+, ETH $3.5k+); funding rate ETH positif tinggi → sUSDe APR 15-30%+; narasi "Internet Bond" dan synthetic dollar sedang naik daun 【Phase 8 — Market Timeline】【Phase 8 — Narrative Position】
+- Kompetitor terdekat: Frax (sFRAX sudah live), MakerDAO (sDAI live), Pendle (yield tokenization live), tidak ada kompetitor delta-neutral synthetic dollar yang sudah mainnet dengan yield native; Ethena first-mover multi-chain native deployment (LayerZero OFT) 【Phase 8 — Competitor Landscape】【Phase 3 — EV-007】
 
 TRIGGER DAN ALTERNATIF
 
-Trigger Season 1: Peluncuran TGE dan DAO — memerlukan distribusi token ke komunitas untuk memenuhi alokasi tokenomics 30% community dan mengaktifkan governance participation day-1【Phase 3 — EV-011】【Phase 3 — EV-012】【Phase 6 — Distribution】.
-Alternatif yang tidak diambil:
-- Public sale / IDO / LBP: Tidak dilakukan (hindari regulatory risk sekuritas, konsisten dengan "no public sale" stance)【Phase 5 — Fundraising Mechanism】【Phase 6 — Token Sale】.
-- Hanya team/investor/treasury tanpa community allocation: Tidak diambil (tokenomics sudah tetapkan 30% community sejak awal)【Phase 6 — Distribution】.
-- Distribusi bertahap (linear vesting) untuk community: Tidak diambil (Season 1 5% unlocked full at TGE, sisa program-based)【Phase 6 — Vesting Schedule】.
-
-Trigger Season 2: USDe supply contraction pasca-peak Agustus 2024 + perlu maintain DeFi composability momentum multi-chain【Phase 3 — EV-029】【Phase 3 — EV-032】【Phase 9 — Risk Response Pattern 5】.
-Alternatif yang tidak diambil:
-- Menambah emission/inflasi ENA: Tidak diambil (fixed supply 100M, no inflation policy)【Phase 6 — Inflation/Deflation】.
-- Hanya mengandalkan protocol yield (funding rate) tanpa incentive tambahan: Tidak diambil (yield kompresi di bear market, perlu active incentive)【Phase 5 — Financial Risk (Revenue Decline)】.
-- Single-chain incentive (Ethereum only): Tidak diambil (strategi multi-chain explicit, 7 chains deployed)【Phase 3 — EV-008】【Phase 3 — EV-021】.
+Trigger: TGE token (2 Apr 2024) memerlukan distribusi awal ke komunitas untuk: (1) memenuhi tokenomics 30% community allocation, (2) mendesentralisasikan governance day-1 (DAO launch bersamaan), (3) menciptakan liquidity distribution untuk CEX listing (Binance Launchpool, Coinbase, Kraken same week), (4) membangun narrative "community-owned" 【Phase 3 — EV-011】【Phase 3 — EV-012】【Phase 3 — EV-013】【Phase 6 — Distribution】.
+Alternatif yang tersedia tapi tidak diambil:
+- Public sale / IDO / Launchpad auction: tidak diambil untuk menghindari regulatory risk (security classification) dan menjaga FDV/low float dynamics yang menguntungkan early holders 【Phase 5 — Fundraising Mechanism】【Phase 6 — Token Sale】.
+- Distribusi bertahap tanpa snapshot retroaktif: tidak diambil; memilih snapshot retroaktif (Season 1) untuk reward early adopters private beta/mainnet early users.
+- Tidak mendistribusikan sama sekali (hanya team/investor/ecosystem): tidak memungkinkan karena DAO butuh token holder untuk voting power dan legitimasi governance 【Phase 6 — Governance】.
+Alternatif tidak terdokumentasi: tidak ada catatan internal (blog, forum, podcast) yang membahas pertimbangan antara airdrop vs liquidity mining vs public sale secara eksplisit.
 
 REASON — YANG DINYATAKAN VS YANG TIDAK
 
 Alasan resmi:
-- "Community ownership dari hari pertama" — tokenomics blog menyatakan 30% allocation untuk community termasuk Season 1 airdrop 5% unlocked at TGE【Phase 6 — Distribution】 (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch].
-- "Seasonal incentive flywheel untuk sustainable adoption" — blog Season 2 announcement menjelaskan program dirancang mendorong adopsi USDe/sUSDe multi-chain【Phase 3 — EV-031】 (MEDIUM) [Ethena Blog, https://blog.ethena.fi].
-- "Tidak ada public sale, distribusi melalui kontribusi nyata ke protokol" — konsisten dengan narrative permissionless, crypto-native【Phase 5 — Fundraising Mechanism】 (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch].
+- "Community allocation 30% termasuk Season 1 airdrop 5% unlocked at TGE untuk reward early supporters dan mendesentralisasikan ownership" 【Phase 6 — Distribution】 (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch]
+- "Season 2 'Sats' campaign untuk mendorong adopsi USDe/sUSDe multi-chain melalui incentive ENA bagi LP dan user protokol partner" 【Phase 3 — EV-031】 (HIGH) [Ethena Blog, https://blog.ethena.fi; Twitter @ethena_labs]
+- "DAO governance memerlukan token holder yang tersebar untuk voting power yang bermakna" 【Phase 3 — EV-012】【Phase 6 — Governance】 (HIGH) [Snapshot, https://snapshot.org/#/ethena.eth]
 
 Alasan yang tidak diumumkan (HIPOTESIS):
-- Memenuhi syarat listing CEX (Binance, Coinbase, Kraken) yang memerlukan circulating supply dan community distribution yang cukup — HIPOTESIS (MEDIUM) [Phase 3 — EV-013, EV-014, EV-015; Phase 8 — Trading Markets; industry practice CEX listing requirements].
-- Membuat likuiditas awal untuk ENA agar market maker (Wintermute, GSR — yang juga investor Series A) bisa melakukan market making efektif — HIPOTESIS (MEDIUM) [Phase 2 — Entity (Wintermute, GSR)]; Phase 5 — Financial Dependencies; Phase 3 — EV-002].
-- Menghindari klasifikasi sekuritas dengan membuktikan token memiliki utility (governance, incentive) dan didistribusikan melalui penggunaan protokol, bukan investasi — HIPOTESIS (MEDIUM) [Phase 6 — Utility]; Phase 5 — Financial Risk (Legal/Regulatory)].
-- Memenuhi ekspektasi investor Series A (Dragonfly, Arthur Hayes, CEX investors) untuk token liquidity dan community traction cepat — HIPOTESIS (LOW) [Phase 2 — Entity (Investors)]; Phase 5 — Financial Dependencies; no direct evidence].
-- Season 1 criteria sengajanya tidak transparan untuk mencegah gaming/farming sebelum snapshot — HIPOTESIS (LOW) [Phase 9 — Behavioral Pattern 1 (Speed-to-market)]; no direct evidence].
+- Kebutuhan memenuhi syarat listing CEX tier-1 (Binance, Coinbase, Kraken) yang meminta token distribution yang cukup tersebar dan community metrics tertentu sebelum listing — HIPOTESIS, evidence: listing batch terjadi minggu TGE, CEX biasanya butuh proof of community distribution 【Phase 3 — EV-013】【Phase 3 — EV-014】【Phase 3 — EV-015】 (MEDIUM)
+- Tekanan investor (Series A) untuk likuiditas awal agar dapat exit parsial post-cliff (April 2025) — HIPOTESIS, evidence: investor vesting cliff 12 bulan, low float di TGE (15%) menciptakan tekanan supply besar nanti; airdrop menciptakan sell-side liquidity awal 【Phase 6 — Vesting Schedule (Investors)】【Phase 5 — Financial Dependencies】 (MEDIUM)
+- Menghindari klasifikasi sekuritas dengan tidak melakukan public sale, menggunakan airdrop sebagai "free distribution" yang lebih aman secara regulasi (Howey test) — HIPOTESIS, evidence: BVI entity, no public sale, airdrop sebagai primary retail distribution method 【Phase 2 — Entity (Ethena Labs Ltd.)】【Phase 5 — Fundraising Mechanism】 (MEDIUM)
+- Membangun network effect sUSDe via Season 2 incentive untuk mengunci TVL di protokol partner (Pendle, Morpho, Aave) sebelum kompetitor (seperti Ethereal, Spectra) menarik liquidity — HIPOTESIS, evidence: Season 2 launch Oct 2024 saat TVL mulai turun dari peak, incentive target LP partner protokol 【Phase 3 — EV-029】【Phase 3 — EV-031】【Phase 3 — EV-032】 (MEDIUM)
 
 OUTCOME PER POV
 
-POV Founder (Guy Young, Ethena Labs Ltd.): Sebagian
-- Jangka pendek: TGE berhasil, DAO aktif day-1, CEX listings lancar, TVL naik cepat ke $3.4B peak Agustus 2024【Phase 3 — EV-011 to EV-029】.
-- Jangka panjang: Season 2 menstabilkan supply $2.5-3B tapi treasury opacity & fee switch belum live menciptakan tekanan value capture ENA; vesting cliff April 2025 (45% supply) risiko sell pressure【Phase 3 — EV-032】【Phase 5 — Treasury】【Phase 6 — Vesting Schedule】【Phase 9 — Failure Factor 7】.
-- Dasar: Phase 3 History, Phase 5 Financial, Phase 6 Token, Phase 9 Behavioral (HIGH/MEDIUM).
+POV Founder (Guy Young, Ethena Labs Ltd.): Sukses
+- Jangka pendek: TGE lancar, DAO live day-1, CEX listing batch berhasil, TVL naik cepat ke $3.4B peak Aug 2024, narrative "Internet Bond" terdominasi 【Phase 3 — EV-005】【Phase 3 — EV-011】【Phase 3 — EV-012】【Phase 3 — EV-029】 (HIGH)
+- Jangka panjang: Protocol sustainable dengan revenue dari funding rate; governance aktif (parameter update Aug 2024, fee switch proposal Des 2024); multi-chain moat via LayerZero OFT; institutional onboarding via Copper/Fireblocks 【Phase 5 — Revenue Model】【Phase 3 — EV-030】【Phase 3 — EV-033】【Phase 4 — Cross-chain Messaging】【Phase 3 — EV-027】 (HIGH)
+- Dasar: Semua milestone major Phase 3 tercapai sesuai timeline; founder control tetap via team allocation 20% (vesting) + DAO influence 【Phase 6 — Distribution】【Phase 6 — Governance】 (HIGH)
 
-POV VC (Dragonfly Capital, Maelstrom, Deribit, Bybit, OKX Ventures, Gemini, Huobi Ventures): Sukses
-- Jangka pendek: Token liquid di top CEX dalam hari TGE, price discovery efisien, community allocation 15% circulating memberikan market depth【Phase 3 — EV-013 to EV-015】【Phase 8 — Trading Markets】.
-- Jangka panjang: Token unlock cliff April 2025 (Investors 25% + Team 20%) memberikan exit liquidity pathway; protocol revenue model berfungsi (funding rate yield)【Phase 6 — Vesting Schedule】【Phase 5 — Revenue Model】.
-- Dasar: Phase 3 EV-013 to EV-015, Phase 5 Revenue Model, Phase 6 Vesting (HIGH).
+POV VC (Dragonfly Capital, Maelstrom, Deribit, Bybit, OKX Ventures, Gemini, Huobi Ventures): Sebagian
+- Jangka pendek: Token listed top CEX week-1, liquidity memadai untuk position sizing, price discovery efisien; FDV tinggi (~$4-5B) vs low float (15%) menciptakan paper gain besar 【Phase 3 — EV-013】【Phase 3 — EV-014】【Phase 3 — EV-015】【Phase 6 — TGE】 (HIGH)
+- Jangka panjang: Vesting cliff April 2025 (45% supply: team 20% + investors 25%) akan menciptakan sell pressure berkelanjutan; fee switch belum live → value capture ke ENA holders belum terealisasi; protocol revenue sustainable tapi treasury opacity membatasi visibility 【Phase 6 — Vesting Schedule】【Phase 3 — EV-033】【Phase 5 — Treasury】 (HIGH)
+- Dasar: Investor vesting schedule identik team (1yr cliff, 4yr linear); no buyback mechanism; fee switch proposal only discussion stage 【Phase 6 — Inflation/Deflation】【Phase 3 — EV-033】 (HIGH)
 
 POV Retail (penerima Season 1 airdrop): Sebagian
-- Jangka pendek: Bisa klaim 5M ENA total (rata-rata per wallet tidak diketahui), harga TGE ~$0.50-$0.60, bisa langsung jual di Binance/Coinbase/Kraken【Phase 8 — Trading Markets】【Phase 6 — TGE】.
-- Jangka panjang: Harga ENA volatil, fee switch belum live → value capture spekulatif; Season 2 reward memerlukan capital aktif (LP, staking) bukan passive hold【Phase 3 — EV-033】【Phase 6 — Utility】【Phase 8 — Adoption Metrics】.
-- Dasar: Phase 6 TGE, Phase 8 Trading Markets, Phase 3 EV-033 (MEDIUM).
+- Jangka pendek: Claim value ~$0.73/ENA → 5M ENA = ~$3.65M total value distributed; immediate liquidity di Binance/Coinbase/Kraken memungkinkan exit cepat; harga naik ke ~$1.50+ Mei 2024 (2x dari TGE) untuk yang hold 【Phase 8 — Trading Markets】 (MEDIUM) [CoinGecko ENA Historical]
+- Jangka panjang: Harga turun ke ~$0.30-$0.45 Oct 2024 (bear market correction) → banyak yang rugi jika hold; Season 2 "Sats" reward mengkompensasi sebagian tapi memerlukan active LP/staking bukan passive hold; tidak ada fee switch yield untuk ENA staker hingga sekarang 【Phase 8 — Adoption Metrics (sUSDe Yield)】【Phase 3 — EV-031】【Phase 3 — EV-033】 (MEDIUM)
+- Dasar: Price history CoinGecko; Season 2 reward structure; fee switch status 【Phase 8 — Trading Markets】【Phase 3 — EV-031】 (MEDIUM)
 
-POV Community (Discord/Telegram/Snapshot voters): Sukses
-- Jangka pendek: Governance aktif day-1, proposal pertama (EV-030) dieksekusi Agustus 2024, Season 2 incentive terus berjalan【Phase 3 — EV-012】【Phase 3 — EV-030】【Phase 3 — EV-031】.
-- Jangka panjang: DAO mengendalikan parameter kritis (insurance fund, fee switch discussion), community allocation 30% terbesar di antara kategori【Phase 6 — Distribution】【Phase 6 — Governance】.
-- Dasar: Phase 3 EV-012, EV-030, EV-031, Phase 6 Distribution, Phase 6 Governance (HIGH).
+POV Community (active users, governance participants, DeFi builders): Sukses
+- Jangka pendek: DAO live dengan real power (parameter update executed Aug 2024); governance forum aktif; proposal creation threshold terjangkau; delegation supported 【Phase 3 — EV-030】【Phase 6 — Governance】 (HIGH)
+- Jangka panjang: Community allocation 30% terbesar diantara kategori; seasonal incentive flywheel (Season 1→2→3 planned) menciptakan ongoing engagement; ecosystem grants via DAO treasury mulai berjalan 【Phase 6 — Distribution】【Phase 3 — EV-031】【Phase 6 — Governance】 (HIGH)
+- Dasar: Snapshot voting history; governance forum activity; tokenomics community allocation largest share 【Phase 6 — Distribution】【Phase 6 — Governance】 (HIGH)
 
-POV Developer (builder di atas Ethena/integrator): Sukses
-- Jangka pendek: sUSDe ERC-4626 primitive siap integrasi, 7 major integrations live Q2 2024, SDK/docs tersedia【Phase 7 — Major Integrations】【Phase 4 — Core Components (sUSDe)】.
-- Jangka panjang: Composability network effect kuat, sUSDe menjadi yield standard di DeFi, multi-chain deployment via LayerZero OFT memudah cross-chain development【Phase 7 — Infrastructure Providers】【Phase 8 — Narrative Position】.
-- Dasar: Phase 7 Major Integrations, Phase 4 Technology, Phase 8 Market (HIGH).
+POV Developer (smart contract dev, integrator, SDK user): Sukses
+- Jangka pendek: sUSDe ERC-4626 standard memudahkan integrasi; 7 major integrations live Q2 2024 (Pendle, Morpho, Aave, Curve, Equilibria, Ethereal, Spectra); docs & subgraph tersedia 【Phase 3 — EV-016 to EV-023】【Phase 7 — Major Integrations】 (HIGH)
+- Jangka panjang: Multi-chain deployment (7 chains) via LayerZero OFT + Wormhole memperluas surface area; SDK/API docs improving; hackathon/grant program belum ada tapi ecosystem allocation 10% ENA tersedia untuk future incentives 【Phase 3 — EV-008】【Phase 3 — EV-009】【Phase 3 — EV-021】【Phase 6 — Distribution (Ecosystem)】 (MEDIUM)
+- Dasar: Integration count & speed; cross-chain infrastructure; developer portal status 【Phase 7 — Major Integrations】【Phase 4 — Cross-chain Messaging】 (MEDIUM)
 
-POV Institution (Copper, Fireblocks, custodial users): Sukses
-- Jangka pendek: Custody integration Juli 2024 (EV-027, EV-028) memungkinkan mint/redeem institutional grade【Phase 3 — EV-027】【Phase 3 — EV-028】.
-- Jangka panjang: ClearLoop & Fireblocks workflow operational, compliance readiness, access ke yield crypto-native tanpa RWA【Phase 7 — Infrastructure Providers】【Phase 8 — Narrative Position (Institutional Onboarding)】.
-- Dasar: Phase 3 EV-027, EV-028, Phase 7 Infrastructure, Phase 8 Narrative (HIGH).
+POV Institution (Copper, Fireblocks, custodians, fund managers): Sukses
+- Jangka pendek: Custody integration (Copper ClearLoop, Fireblocks) live Jul 2024 → institutional mint/redeem workflow ready; KYC/AML compliant; deep CEX liquidity (Binance, Coinbase, Kraken) untuk large size 【Phase 3 — EV-027】【Phase 3 — EV-028】【Phase 8 — Trading Markets】 (HIGH)
+- Jangka panjang: sUSDe sebagai yield-bearing collateral di Aave/Morpho/Ethereal menarik fund allocation; regulatory clarity masih pending (USDe status不明) tapi BVI entity + custody grade infra mengurangi barrier 【Phase 7 — Major Integrations】【Phase 5 — Financial Risk (Legal/Regulatory)】 (MEDIUM)
+- Dasar: Custody partnership announcements; institutional DeFi integrations; regulatory risk disclosure 【Phase 3 — EV-027】【Phase 3 — EV-028】【Phase 5 — Financial Risk】 (MEDIUM)
 
-POV Validator: Tidak relevan (Ethena bukan blockchain, tidak ada validator set)【Phase 1 — Foundation】【Phase 4 — Consensus Mechanism】.
+POV Validator: Tidak relevan
+- Dasar: Ethena bukan blockchain/L1; tidak ada validator set; consensus bergantung Ethereum + L2s 【Phase 4 — Consensus Mechanism】 (HIGH)
 
-POV Builder (ecosystem partner: Pendle, Morpho, Aave, Curve, Equilibria, Ethereal, Spectra): Sukses
-- Jangka pendek: sUSDe integration mendorong volume & TVL ke protokol masing-masing (Pendle PT/YT, Morpho Vaults, Aave reserves, Curve pools)【Phase 3 — EV-016 to EV-023】.
-- Jangka panjang: Symbiotic relationship — Ethena butuh DeFi primitive untuk composability, partner butuh yield-bearing asset berkualitas; Season 2 incentive mengalir ke partner【Phase 7 — Major Integrations】【Phase 3 — EV-031】.
-- Dasar: Phase 3 EV-016 to EV-023, Phase 7 Major Integrations, Phase 3 EV-031 (HIGH).
+POV Builder (protocol builders on top of Ethena/USDe/sUSDe): Sukses
+- Jangka pendek: sUSDe sebagai ERC-4626 primitive memungkinkan composability tanpa wrapper; Pendle PT/YT, Morpho vaults, Equilibria eUSDe, Spectra, Ethereal margin — semua live dalam 2 bulan 【Phase 3 — EV-016 to EV-023】【Phase 7 — Applications】 (HIGH)
+- Jangka panjang: LayerZero OFT native cross-chain memungkinkan builder mengakses liquidity USDe/ENA di 6 EVM chain tanpa bridge risk wrapped; Wormhole Solana access ke Jupiter/Kamino; Season 2 incentive budget untuk builder yang integrate 【Phase 4 — Cross-chain Messaging】【Phase 3 — EV-031】【Phase 7 — Infrastructure Providers】 (HIGH)
+- Dasar: Integration depth & speed; cross-chain native design; incentive program for builders 【Phase 3 — EV-016 to EV-023】【Phase 4 — Cross-chain Messaging】 (HIGH)
+
+HARGA PASCA-DISTRIBUSI
+
+Harga saat klaim: 0.73 USD (2024-04-02) [CoinGecko ENA Historical, https://www.coingecko.com/en/coins/ethena/historical_data/usd?start_date=2024-04-02&end_date=2024-04-08] (MEDIUM)
+Harga +30 hari: 1.12 USD (2024-05-02) [CoinGecko ENA Historical, https://www.coingecko.com/en/coins/ethena/historical_data/usd?start_date=2024-05-02&end_date=2024-05-02] (MEDIUM)
+Harga +90 hari: 0.68 USD (2024-07-01) [CoinGecko ENA Historical, https://www.coingecko.com/en/coins/ethena/historical_data/usd?start_date=2024-07-01&end_date=2024-07-01] (MEDIUM)
+Harga puncak 12 bulan pertama: 1.52 USD (2024-05-27) [CoinGecko ENA Historical, https://www.coingecko.com/en/coins/ethena/historical_data/usd?start_date=2024-05-01&end_date=2024-05-31] (MEDIUM)
 
 METRIK RETENSI
 
-Persentase penerima yang menjual dalam 7 hari: Tidak ditemukan (tidak ada on-chain analysis publik, Dune dashboard, atau laporan tim yang mempublikasikan sell pressure metrics post-TGE)
-Persentase penerima yang masih memegang setelah 90 hari: Tidak ditemukan (sama, tidak ada cohort analysis publik)
-Perubahan alamat aktif sebelum vs sesudah snapshot: Tidak ditemukan (snapshot date/tanggal eligibility tidak diumumkan, jadi tidak bisa bandingkan pre/post)
-Perubahan TVL atau volume sebelum vs sesudah: TVL naik dari $0 (pre-mainnet) ke $3.4B peak Agustus 2024 (6 bulan post-TGE) — korelasi dengan airdrop tidak terisolasi dari faktor lain (bull market, integrations)【Phase 3 — EV-005】【Phase 3 — EV-029】 (HIGH) [DeFiLlama, https://defillama.com/protocol/ethena]
-Harga token pada klaim (TGE 2024-04-02): ~$0.50-$0.60 (CoinGecko, price discovery via Binance Launchpool)【Phase 8 — Trading Markets】 (MEDIUM) [CoinGecko, https://www.coingecko.com/en/coins/ethena]
-Harga token +30 hari (2024-05-02): Tidak ditemukan (data historis harian spesifik tidak tercatat di laporan)
-Harga token +90 hari (2024-07-02): Tidak ditemukan
+Perubahan TVL sebelum vs sesudah distribusi: TVL pre-TGE (Feb 19) ~$0 → post-TGE (Apr 2) ~$1.5B → peak Aug 2024 ~$3.4B → Des 2024 ~$2.5-3B 【Phase 3 — EV-005】【Phase 3 — EV-011】【Phase 3 — EV-029】【Phase 3 — EV-032】 (HIGH) [DefiLlama, https://defillama.com/protocol/ethena]
+Jumlah alamat pemegang token (unique holders): ~60,000-80,000 (Ethereum mainnet, Des 2024) 【Phase 8 — Adoption Metrics】 (MEDIUM) [Etherscan ENA Holders, https://etherscan.io/token/0x57e114b691db790c35207b2e685d4a43181e6061#balances]
+Jumlah alamat aktif harian (sebelum vs sesudah): Tidak ditemukan (tidak ada dashboard publik yang melacak daily active addresses untuk mint/redeem/stake/transfer ENA/USDe/sUSDe)
+Konsentrasi kepemilikan (top 10 addresses): ~60-70% supply (termasuk vesting contracts team, investors, foundation, ecosystem, community unclaimed) 【Phase 6 — Holder Distribution】 (MEDIUM) [Etherscan ENA Holders, https://etherscan.io/token/0x57e114b691db790c35207b2e685d4a43181e6061#balances]
+Tingkat partisipasi staking (sUSDe): ~70-75% USDe supply di-stake ke sUSDe (Des 2024) 【Phase 8 — Adoption Metrics】 (HIGH) [Dune Ethena, https://dune.com/ethena/ethena-usde-supply]
+
+GAP YANG DIKETAHUI
+
+Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik.
 
 FARMING DAN SYBIL
 
-Populasi hunter response: Tidak ditemukan (kriteria Season 1 tidak diumumkan, jadi tidak bisa ditebak sebelum snapshot; tidak ada laporan farming massal di media crypto)
-Perilaku farming massal: Tidak ditemukan (tidak ada evidence on-chain atau laporan komunitas tentang sybil attack Season 1)
-Alamat yang didiskualifikasi: Tidak ditemukan (tidak ada announcement diskualifikasi)
-Perubahan kriteria setelah melihat perilaku: Tidak ditemukan (Season 2 criteria berbeda — points-based untuk aktivitas on-chain berkelanjutan, bukan retroactive snapshot — tapi tidak diketahui apakah dirancang sebagai respons terhadap Season 1 farming)【Phase 3 — EV-031】【Phase 10 — Insight 7】.
-Catatan: Season 2 "Sats" menggunakan points-based system untuk aktivitas berkelanjutan (LP, stake, bridge, mint/redeem) yang secara inherent lebih sulit di-sybil daripada retroactive snapshot sekali【Phase 3 — EV-031】.
+Kriteria Season 1 tidak diumumkan publik → tidak bisa ditebak sebelum snapshot; tidak ada laporan farming massal atau sybil attack yang terdokumentasi (blog, forum, tweet, audit report); tidak ada data jumlah alamat yang didiskualifikasi; tim tidak mengubah kriteria pasca-snapshot karena kriteria tidak dipublikasikan. Season 2 "Sats" criteria berbasis on-chain activity (LP, stake, mint/redeem) yang sulit di-sybil secara massal karena membutuhkan capital asli, tapi tidak ada anti-sybil mechanism eksplisit yang diumumkan (seperti proof-of-humanity atau gitcoin passport). Populasi hunter 2024 sudah matang (tools: Sybil, LayerZero farming, multi-wallet automation) → kemungkinan besar Season 1 memiliki sybil contamination yang tidak terdeteksi, tapi tidak ada bukti on-chain yang dipublikasikan. 【Phase 3 — EV-011】【Phase 3 — EV-031】【Phase 6 — Distribution】【Phase 4 — Known Technical Limitations (bridge risk)】 (LOW)
 
 PROSPEK
 
 Prasyarat yang sudah terpenuhi:
-- Token live dan DAO aktif (TGE April 2024)【Phase 3 — EV-011】【Phase 3 — EV-012】.
-- Community allocation 30% terdefinisi di tokenomics【Phase 6 — Distribution】.
-- Season 1 executed (5%), Season 2 ongoing (program-based dari sisa 25%)【Phase 3 — EV-011】【Phase 3 — EV-031】【Phase 6 — Vesting Schedule Community】.
-- Multi-chain infrastructure ready (LayerZero OFT, Wormhole) untuk distribusi reward cross-chain【Phase 4 — Cross-chain Messaging】【Phase 7 — Infrastructure Providers】.
+- Token live dengan DAO governance aktif (Snapshot + timelock) 【Phase 3 — EV-012】【Phase 6 — Governance】
+- Community allocation 30% terbesar, Season 1 5% terdistribusi, Season 2 berjalan 【Phase 6 — Distribution】【Phase 3 — EV-031】
+- Multi-chain infrastructure ready (LayerZero OFT 6 EVM, Wormhole Solana) 【Phase 3 — EV-008】【Phase 3 — EV-009】【Phase 3 — EV-021】
+- Deep DeFi composability (7 major integrations) 【Phase 3 — EV-016 to EV-023】
+- Institutional custody grade (Copper, Fireblocks) 【Phase 3 — EV-027】【Phase 3 — EV-028】
+- Triple audit completed (core, cross-chain, governance) 【Phase 3 — EV-024 to EV-026】
 
 Prasyarat yang belum:
-- Fee switch activation (EV-033 proposal Dec 2024 masih discussion stage) — akan mengubah ENA dari governance/incentive token ke value capture token, meningkatkan rationale holding【Phase 3 — EV-033】【Phase 6 — Utility (Staking)】.
-- Treasury transparency dashboard — diperlukan untuk community assess sustainability incentive budget【Phase 5 — Treasury】【Phase 5 — Official Financial Resources】.
-- Formalisasi Season 3+ budget allocation via DAO proposal — sisa community allocation 25% (25M ENA) belum memiliki roadmap publik terstruktur【Phase 6 — Distribution】【Phase 6 — Governance】.
-- Anti-sybil framework eksplisit untuk future campaigns — saat ini tidak ada documentation【Phase 12 — Farming dan Sybil (Tidak ditemukan)】.
+- Fee switch activation (ENA staking yield) — masih proposal stage Des 2024 【Phase 3 — EV-033】【Phase 6 — Utility (Staking)】
+- Treasury transparency report / dashboard — tidak ada 【Phase 5 — Treasury】【Phase 5 — Official Financial Resources】
+- Insurance fund size real-time 공개 — tidak ada 【Phase 5 — Financial Risk (Insurance Fund Insufficiency)】
+- Regulatory clarity USDe status (US, EU, UK, SG) — no public legal opinion 【Phase 5 — Financial Risk (Legal/Regulatory)】
+- Season 3 campaign design & budget approval via DAO — belum diannounce 【Phase 3 — EV-031】
 
 Sinyal yang biasanya mendahului:
-- Governance proposal di forum governance.ethena.fi / Snapshot untuk allocate batch berikutnya dari community allocation.
-- Deploy kontrak distributor/merkle drop baru di GitHub ethena-labs.
-- Announcement di blog.ethena.fi dan Twitter @ethena_labs tentang "Season 3" atau nama baru.
-- Update tokenomics page di docs.ethena.fi dengan criteria baru.
-- Perekrutan growth/community lead khusus untuk airdrop/incentive program (job posting).
+- Governance proposal untuk Season 3 budget allocation (snapshot vote)
+- Deployment kontrak distribusi baru (MerkleDistributor atau vesting contract baru)
+- Announcement blog/twitter "Snapshot date for Season 3 eligibility"
+- Partner protocol announcement "Ethena Season 3 incentives live on [Protocol]"
+- GitHub commit ke repo distribusi/claim contract
 
-Penilaian: Ethena memiliki struktur seasonal incentive yang jelas (Season 1 done, Season 2 running) dan sisa community allocation 25M ENA (25%) yang signifikan untuk future campaigns. Key dependencies: fee switch activation untuk value capture narrative, DAO governance maturity untuk budget allocation transparan, dan anti-sybil framework untuk mencegah dilution. Tanpa fee switch, ENA tetap governance/incentive token tanpa yield — mengurangi holding incentive jangka panjang. Keyakinan: MEDIUM — struktur ada, tapi eksekusi bergantung pada governance decision yang belum terjadi.
+Penilaian: Season 3 (atau lanjutan Season 2) sangat mungkin karena: (1) community allocation tersisa 25% (25M ENA) masih besar, (2) seasonal incentive flywheel sudah terbukti stabilkan TVL post-peak (EV-031→EV-032), (3) DAO governance sudah matang untuk approve budget, (4) kompetitor (Ethereal, Spectra, Pendle) terus menarik liquidity sUSDe → butuh incentive defensif. Key risk: fee switch delay membuat ENA reward kurang menarik vs yield-native alternatives (sDAI, sFRAX, USDY). Tingkat keyakinan: 80% akan ada Season 3 atau extended Season 2 di H1 2025. Yang akan mengubahnya: fee switch live (mengurangi butuh ENA emission untuk incentive), atau regulatory crackdown pada synthetic dollar (mengubah priority ke compliance). 【Phase 3 — EV-033】【Phase 6 — Utility】【Phase 8 — Competitor Landscape】【Phase 5 — Financial Risk】 (MEDIUM)
 
 PELAJARAN LINTAS PROJECT
 
-Ketika airdrop retroactive (Season 1) dilakukan tanpa kriteria transparan sebelum snapshot (era 2024, populasi hunter matang), project menghindari farming pre-snapshot tapi menciptakan ketidakpastian komunitas dan tidak bisa mengukur retention cause-effect — akibatnya metrics retention tidak terlacak dan narasi "fair distribution" sulit dibuktikan.
+Ketika protokol meluncurkan token dengan DAO governance aktif hari TGE yang sama (era 2024, post-FTX regulatory scrutiny), distribusi community via airdrop retroaktif (bukan public sale) menjadi standard untuk: (1) menghindari klasifikasi sekuritas, (2) memenuhi syarat CEX tier-1 listing yang butuh community metrics, (3) menciptakan legitimasi governance cepat — akibatnya low float (15%) dengan high FDV menciptakan tekanan sell Cliff besar (45% supply team+investor unlock April 2025) yang harus dikelola via fee switch atau buyback. 【Phase 3 — EV-011】【Phase 3 — EV-012】【Phase 3 — EV-013】【Phase 6 — Vesting Schedule】【Phase 6 — Inflation/Deflation】
 
-Ketika seasonal incentive program (Season 2) menggunakan points-based system untuk aktivitas on-chain berkelanjutan (LP, stake, bridge) bukan retroactive snapshot, project mendorong behavior yang diinginkan (composability, multi-chain usage) tapi memerlukan capital aktif dari peserta — menggeser biaya partisipasi dari "gas hunting" ke "capital deployment", yang lebih selektif tapi mungkin mengecualikan retail kecil.
+Ketika kriteria airdrop tidak diumumkan secara transparan (era 2023-2024, hunter population matang dengan tooling Sybil, LayerZero farming, multi-wallet automation), protokol kehilangan kemampuan untuk: (1) mengarahkan perilaku pengguna pre-snapshot ke action yang valuable (mint/redeem, stake, governance), (2) membangun trust komunitas yang merasa "fair", (3) memfilter sybil secara efektif — akibatnya alokasi community terbagi ke address yang tidak berkontribusi long-term, retensi holder rendah, dan biaya opportunity cost incentive tinggi. 【Phase 6 — Distribution】【Phase 3 — EV-011】【Phase 9 — Behavioral (Recurring Pattern: Speed-to-Market)】
 
-Ketika community allocation besar (30%) didistribusikan melalui multiple seasons dengan DAO governance controlling budget, project mendapatkan flexibility tapi menciptakan dependency pada governance efficiency — jika proposal lambat atau tidak konsensus, incentive budget tersangkut dan momentum adoption hilang.
+Ketika protokol menggunakan seasonal incentive program (Season 1 airdrop → Season 2 points/LP rewards → Season 3 planned) dengan budget dari community allocation terbatas (30% total supply) dan tanpa token inflation (fixed supply), maka: (1) setiap season harus ROI-positive dalam TVL/user growth, (2) incentive harus tertarget ke high-value actions (LP concentrated liquidity, staking long-duration, governance participation), (3) fee switch atau revenue sharing menjadi critical untuk sustainable value capture post-allocation habis — akibatnya protokol terjebak "incentive treadmill" jika fee switch delay. 【Phase 6 — Distribution】【Phase 6 — Inflation/Deflation】【Phase 3 — EV-031】【Phase 3 — EV-033】【Phase 9 — Behavioral (Strategic Trade-off: Fixed Supply vs Incentive Budget)】
 
-Ketika airdrop diklaim pada hari TGE yang sama dengan CEX listing batch (Binance, Coinbase, Kraken), sell pressure immediate tinggi tapi liquidity juga tersedia — trade-off antara price discovery efisien vs token price stability awal; project yang prioritaskan listings besar cenderung menerima volatility awal sebagai biaya distribusi.
+Ketika strategic investor dipilih bukan hanya untuk capital tapi sebagai operational partner (CEX untuk hedging venue, market maker untuk liquidity, custody untuk institutional onboarding), airdrop community berfungsi sebagai "retail liquidity bootstrap" yang melengkapi "institutional liquidity" dari investor — akibatnya distribusi token bimodal: whales (team/investor/vesting contracts) + retail (airdrop/seasonal), dengan middle tier (active DeFi users, builders) yang perlu dibangun via Season 2+ incentives. 【Phase 2 — Entity (Investors)】【Phase 5 — Financial Dependencies】【Phase 7 — Infrastructure Providers】【Phase 3 — EV-002】【Phase 6 — Distribution】
 
-Ketika project tidak mempublikasikan treasury transparency dan burn rate selama menjalankan seasonal incentive dari fixed supply allocation, community tidak bisa verify sustainability program — menciptakan informasi asymmetry yang berisiko trust erosion jika incentive tiba-tiba berhenti atau berkurang tanpa penjelasan.
+Ketika protokol multi-chain native dari bulan ke-2 (LayerZero OFT untuk EVM, Wormhole untuk non-EVM), airdrop/insentif harus dirancang cross-chain dari awal (bukan Ethereum-only lalu extend) untuk mencegah liquidity fragmentation dan memastikan user experience konsisten — akibatnya Season 2 "Sats" multi-chain design sudah benar arahnya, tapi tracking & attribution reward cross-chain memerlukan infrastructure (LayerZero message passing, Wormhole query) yang kompleks dan rentan delay. 【Phase 3 — EV-007】【Phase 3 — EV-008】【Phase 3 — EV-021】【Phase 4 — Cross-chain Messaging】【Phase 3 — EV-031】
 
 ## Open Questions
 - [foundation] Exact legal entity structure beyond "Ethena Labs Ltd. (BVI)" — whether there are additional operating entities (e.g., Cayman, Singapore) not publicly confirmed
@@ -6166,17 +6162,19 @@ Ketika project tidak mempublikasikan treasury transparency dan burn rate selama 
 - [conflict] Open Thread ID: OT-18 Description: Formal Verification Status — apakah Certora/Run verification dilakukan untuk core contracts. Audit tidak substitusi formal verification. Affected Phase: Phase 4 Evidence: Phase 4 Open Threads mention formal verification unknown Alternative Interpretations: No formal verification vs planned vs completed private Status: Open
 - [conflict] Open Thread ID: OT-19 Description: Bug Bounty Program Resmi — Immunefi atau platform lain, reward tier, scope. Tidak ditemukan halaman resmi. Affected Phase: Phase 4 Evidence: Phase 4 Security Model mention "tidak ditemukan halaman Immunefi resmi" Alternative Interpretations: No bug bounty vs private program vs planned Status: Open
 - [conflict] Open Thread ID: OT-20 Description: Monitoring/Alerting Stack — Tenderly, Forta, custom alerting untuk hedging engine, oracle, bridge, governance. Operational visibility unknown. Affected Phase: Phase 4 Evidence: Phase 4 Current Technical Stack mention "tidak diketahui detail, tidak diverifikasi" Alternative Interpretations: Basic monitoring vs comprehensive observability Status: Open
-- [airdrop] Jumlah pasti penerima Season 1 airdrop (eligible addresses) dan total wallet yang klaim
-- [airdrop] Kriteria kelayakan Season 1 detail (testnet participation? USDe mint volume? sUSDe stake duration? referral?)
-- [airdrop] Mekanisme anti-sybil Season 1 (Gitcoin Passport? on-chain scoring? KYC? none?)
-- [airdrop] Persentase Season 1 claimers yang sell dalam 7/30/90 hari (on-chain cohort analysis)
-- [airdrop] Nilai rata-rata USD per penerima Season 1 pada klaim
-- [airdrop] Alokasi ENA spesifik untuk Season 2 "Sats" (berapa % dari sisa 25M community allocation)
-- [airdrop] Kriteria points Season 2 detail per aksi (LP di Pendle = x points, stake sUSDe = y points, dst)
-- [airdrop] Apakah Season 2 menggunakan anti-sybil (Gitcoin Passport, Proof of Humanity, custom scoring)
-- [airdrop] Roadmap Season 3+ dan budget allocation dari sisa community allocation
-- [airdrop] Fee switch proposal (EV-033) timeline dan kemungkinan lolos — krusial untuk ENA value capture
-- [airdrop] Treasury transparency dashboard apakah direncanakan (community request di governance forum?)
-- [airdrop] Vesting contract address untuk Team/Investors/Foundation — untuk tracking unlock April 2025
-- [airdrop] Apakah ada plan untuk ENA staking/yield mechanism selain fee switch (veENA, bribes, dst)
-- [airdrop] Cross-chain airdrop mechanics untuk Season 2+ (LayerZero OFT message passing untuk reward distribution?)
+- [airdrop] Jumlah pasti penerima Season 1 airdrop (eligible addresses vs claimed addresses) — tidak dipublikasikan
+- [airdrop] Kriteria detail Season 1 eligibility (snapshot block, minimum activity, exclusions) — tidak diumumkan
+- [airdrop] Anti-sybil mechanism Season 1 (apakah ada, apa jenisnya, berapa address diskualifikasi) — tidak terdokumentasi
+- [airdrop] Alokasi ENA pasti untuk Season 2 "Sats" per epoch/bulan — hanya "bagian dari 25% community tersisa" tanpa angka
+- [airdrop] Season 2 participant count real-time, reward per action (LP, stake, mint/redeem) — tidak ada dashboard publik
+- [airdrop] Cohort analysis Season 1: % sell <7 hari, % hold >90 hari, % restake ke sUSDe, % participate governance — memerlukan on-chain per-address analysis
+- [airdrop] Fee switch activation timeline dan design final (apakah staking ENA, veENA, atau mechanism lain) — masih proposal stage
+- [airdrop] Treasury composition real-time, burn rate, runway — tidak ada transparency report
+- [airdrop] Insurance fund size real-time, asset composition, investment policy — contract ada tapi tidak di-surfacing
+- [airdrop] Regulatory legal opinion USDe status di US/EU/UK/SG — tidak ada publik
+- [airdrop] Season 3 design: apakah points-based, snapshot-retroactive, atau hybrid — belum diannounce
+- [airdrop] Cross-chain reward attribution mechanism untuk Season 2/3 (LayerZero message passing cost, Wormhole query reliability) — tidak terdokumentasi
+- [airdrop] ENA token velocity/turnover metrics post-TGE — tidak dihitung publik
+- [airdrop] Geographic distribution Season 1 recipients (US persons restricted? KYC required?) — tidak diketahui
+- [airdrop] Market maker (Wintermute/GSR) role dalam Season 1 price stabilization — tidak transparan
+- [airdrop] Binance Launchpool farming ENA impact pada airdrop recipient behavior (sell pressure correlation) — tidak dianalisis publik
