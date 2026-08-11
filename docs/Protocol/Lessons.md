@@ -69,6 +69,19 @@ everything:
   27 completed projects turned `broken(12)`, which emptied `phase11_todo`, which made the
   driver report "nothing to do" and skip the whole queue. **Not** caught before landing.
 
+A third time on 2026-08-11, in the same function, from the opposite direction: adding the
+`price_block` check meant a phase-12 file that *exists and fails* marked its project
+`broken(12)`, which dropped it out of `clean` → out of `phase11_done` → out of `phase12_bad`,
+the one bucket whose whole job is to regenerate it. `--stages phase12` printed "13 broken" and
+"every project already has an airdrop report -- skipping" in the same run. Phase 11 had already
+solved this by being excluded from `diagnose_project` entirely; phase 12 now is too.
+
+**Second rule, from that third time.** A phase graded in two places must have the same
+consequence in both. Here one path produced a targeted `--redo-phases` and the other produced a
+project the driver refuses to touch — so the stricter grader silently disabled the repair. When
+adding a check, run the driver in `--dry-run` and confirm the count it *acts on* changed, not
+just the count it *reports*.
+
 **Rule.** When adding a required element to a contract, first answer: what happens to the
 records that already exist? If the answer is "they become invalid", the element is optional
 (`OPTIONAL_PHASE_KEYS`) — and then grep for *every* place that enumerates the contract, because

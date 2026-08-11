@@ -66,8 +66,20 @@ def diagnose_project(name: str, proj_dir: Path) -> dict:
     out = {}
     from . import config
     for num, key in config.PHASES:
-        if num == 11:
-            continue  # audited separately, by cli._audit_json's phase11 buckets
+        if num in (11, 12):
+            # Audited separately, by cli._audit_json's phase11/phase12 buckets.
+            #
+            # Phase 12 joined phase 11 here on 2026-08-11, when adding the price_block check
+            # reproduced L3 in a new shape: a phase-12 file that FAILS its checks marked the
+            # project broken(12), which dropped it out of `clean`, out of phase11_done, and
+            # therefore out of phase12_bad -- the one bucket that would have regenerated it.
+            # `--stages phase12` printed "13 broken" and "nothing to do" in the same run.
+            #
+            # A phase cannot be graded in two places that disagree about the consequence. The
+            # phase11/phase12 buckets own both because they are what the driver acts on; a
+            # failure there produces a targeted --redo-phases, whereas a failure here produces
+            # a project the driver refuses to touch.
+            continue
         path = proj_dir / f"{num:02d}-{key}.docx"
         if not path.exists():
             # An OPTIONAL phase that was never generated is not a defect. Missed when Phase 12
