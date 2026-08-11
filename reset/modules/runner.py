@@ -25,6 +25,7 @@ def run_project(name: str, providers, dry_run: bool,
     proj_dir.mkdir(parents=True, exist_ok=True)
     messages: list = []  # running chat history -- Track C's "one continuous chat" methodology
     unresolved: dict = {}  # phase label -> failed check names that survived self-repair
+    generated_any = False  # did THIS run actually generate at least one phase?
 
     todo = config.PHASES[:phases_limit] if phases_limit else config.PHASES
 
@@ -84,6 +85,7 @@ def run_project(name: str, providers, dry_run: bool,
                 plog("(re-run this script later and it will resume from here)")
                 return False
             out_path.write_text(text, encoding="utf-8")
+            generated_any = True
             plog(f"phase 11-conflict: done ({len(text)} chars, "
                  f"{len(config.PHASE11_STAGES)}-stage split) -> {out_path}")
             continue
@@ -105,6 +107,7 @@ def run_project(name: str, providers, dry_run: bool,
                 plog(f"(later phases for {name} need this one's output, so skipping the rest "
                      f"of {name} -- re-run this script later and it will resume from here)")
                 return False
+            generated_any = True
             if failures:
                 unresolved[f"{num:02d}-{key}"] = [c.name for c, _ in failures]
 
@@ -128,7 +131,13 @@ def run_project(name: str, providers, dry_run: bool,
     # stopped -- the dossier was never rebuilt, so extract_qa.py kept parsing a dossier with no
     # Phase 11 in it and poc/qa.json stayed at one project no matter how many audits ran.
     if phases_limit in (0, 10, 11) and not dry_run:
-        _finalise(name, proj_dir, output_root, auto_sync, plog)
+        dossier = config.ROOT / "examples" / "CaseStudies" / f"{name}.md"
+        if not generated_any and dossier.exists():
+            plog(f"nothing generated this run (every requested phase resumed from disk) and "
+                 f"{dossier.relative_to(config.ROOT)} is present -- skipping verify/ingest/"
+                 f"extract/sync.")
+        else:
+            _finalise(name, proj_dir, output_root, auto_sync, plog)
     return True
 
 
@@ -168,6 +177,31 @@ def run_queue(projects: list, providers, dry_run: bool,
     after a few consecutive failures instead of grinding through 25 projects that are all
     going to fail the same way.
     """
+    # Pre-skip projects that are already complete on disk (added 2026-08-12). Without this, a
+    # queue continuation resumed every finished project at zero API cost but still paid the
+    # inter-project sleep for each one -- 28 clean projects x 300s ~= 140 minutes before the
+    # run reached the first not-started one, on every restart. A project is skippable when
+    # every requested phase passes existing_phase_ok AND, when the run would finalise, the
+    # dossier already exists (a missing dossier falls through to run_project so the chain
+    # heals it). --redo-phases is unaffected: cli.main sets the named phases aside BEFORE
+    # this point, so they no longer pass existing_phase_ok and the project is processed.
+    # dry_run keeps its full control flow so it stays a faithful test of the loop.
+    if not dry_run:
+        todo = config.PHASES[:phases_limit] if phases_limit else config.PHASES
+        would_finalise = phases_limit in (0, 10, 11)
+        remaining, skipped = [], []
+        for name in projects:
+            proj_dir = output_root / name
+            phases_ok = all(phases_mod.existing_phase_ok(proj_dir / f"{num:02d}-{key}.docx")
+                            for num, key in todo)
+            dossier_ok = (not would_finalise
+                          or (config.ROOT / "examples" / "CaseStudies" / f"{name}.md").exists())
+            (skipped if phases_ok and dossier_ok else remaining).append(name)
+        if skipped:
+            log(f"skipping {len(skipped)} project(s) already complete on disk -- nothing to "
+                f"generate, nothing to rebuild or sync: {', '.join(skipped)}")
+        projects = remaining
+
     failed = 0
     if parallel > 1:
         with ThreadPoolExecutor(max_workers=parallel) as pool:
