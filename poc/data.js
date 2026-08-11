@@ -2,7 +2,11 @@
 window.CIF = {
   "meta": {
     "schema": "cif-export/1",
+<<<<<<< HEAD
     "generated": "2026-08-11 03:08 UTC",
+=======
+    "generated": "2026-08-10 15:08 UTC",
+>>>>>>> 0c92fe6 (Pipeline run 2026-08-10: repaired phases, rebuilt poc/*.json)
     "projects": 29,
     "deep": 29,
     "summary": 0,
