@@ -2,13 +2,9 @@
 window.CIF = {
   "meta": {
     "schema": "cif-export/1",
-<<<<<<< HEAD
-    "generated": "2026-08-11 03:08 UTC",
-=======
-    "generated": "2026-08-10 15:08 UTC",
->>>>>>> 0c92fe6 (Pipeline run 2026-08-10: repaired phases, rebuilt poc/*.json)
-    "projects": 29,
-    "deep": 29,
+    "generated": "2026-08-11 06:08 UTC",
+    "projects": 30,
+    "deep": 30,
     "summary": 0,
     "sentiment": 0,
     "patterns": 16,
@@ -338,6 +334,17 @@ window.CIF = {
       "tags": [
         "airdrop",
         "governance"
+      ]
+    },
+    {
+      "n": "Polymarket",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Polymarket.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "airdrop",
+        "points"
       ]
     }
   ],
