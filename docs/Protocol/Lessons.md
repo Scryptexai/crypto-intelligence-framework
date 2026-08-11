@@ -219,6 +219,15 @@ that is four lines: `set(targets) - set(ORDER)` must be empty or the run dies. A
 a list like this is always a mistake and never a deliberate choice, so it can be fatal rather
 than a warning.
 
+**The same day, the same shape, one file over.** `pipeline.SYNC_TABLES` restated the table list
+as a hardcoded string for `--auto-sync`, and `EXTRACT_SCRIPTS` restated the extractor list
+without `extract_airdrop.py`. Neither was updated when Phase 12 landed, so a 13-project
+regeneration ran to completion printing `✅ synced to Supabase` on every project while sending
+none of the new data — the log even names the tables it sent, and the five missing ones went
+unnoticed anyway. Both lists are now *derived* (`sync_supabase.TABLES` minus a named exclusion),
+because a guard catches drift and a derivation makes it impossible. Prefer the derivation when
+the authoritative list is importable.
+
 ---
 
 ## L12 — Ask sources for what they contain, not for what you wish they contained
