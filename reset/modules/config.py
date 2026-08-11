@@ -88,11 +88,19 @@ PHASE9_STAGES = [
 # client's REQUEST_TIMEOUT_SECONDS. Set RESET_NO_STREAM=1 to reproduce the old behaviour.
 STREAM_RESPONSES = os.environ.get("RESET_NO_STREAM", "") != "1"
 
-MAX_TOKENS = int(os.environ.get("RESET_MAX_TOKENS", "14000"))
+MAX_TOKENS = int(os.environ.get("RESET_MAX_TOKENS", "32000"))
+# 32000 since 2026-08-12 (was 14000). A ceiling costs nothing when unused -- generation stops
+# when the model is done, not when the budget runs out -- and 32000 is verified accepted by
+# this gateway (probed 8000/16000/24000/32000, all fine, 2026-08-09). The old 14000 default
+# made every verbose phase pay the truncation escalation instead: Berachain phase 07
+# (2026-08-11) cut off at 14000, regenerated, cut off again at 21000 (91,761 chars), and only
+# completed at 31500 -- two full throwaway generations (~13 min plus their tokens) for one
+# phase, on a queue where most projects have at least one verbose phase. The escalation in
+# api.call_with_retries stays as the safety net for answers that outrun even 32000.
 # Phase 11b alone carries almost everything the old single-call Phase 11 produced (the real
 # Arbitrum Phase 11 section is ~38.9k chars, ~9.7k tokens estimated -- already over the old
-# 8192 default). Its own constant so phases 1-10 aren't forced to allow bigger (and
-# slower/costlier) completions than they need.
+# 8192 default). Kept as its own constant so Phase 11's budget can move independently of the
+# phases 1-10 default (both are 32000 now; the split predates that convergence).
 # 32000, arrived at in two steps on 2026-08-09 as real sizes came in. Measured Phase 11
 # output, at ~3.3 chars/token:
 #
