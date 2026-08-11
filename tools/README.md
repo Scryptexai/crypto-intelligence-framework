@@ -142,6 +142,24 @@ production database. `relationships`/`events`/`conflicts`/`notes`/`saved_views`/
 no row builder yet — no extractor produces that data (see `extract_entities.py`'s "known gap"
 note on Relationships; Conflicts/Events extractors are not yet built at all).
 
+### Database security posture
+
+One write path, everything else read-only. This script holds the `service_role` key (env only,
+never a tracked file); every client-facing table has RLS on and grants `SELECT` to `anon` and
+`authenticated` and nothing more. `notes`/`saved_views`/`users` belong to the frontend and are
+deliberately RLS-on-with-no-policy, which means closed — the advisor reports those three as INFO
+and that is the intended state, not a backlog item.
+
+Run `get_advisors(type="security")` after any schema change. Cleared so far:
+
+- **2026-08-11** — `rls_auto_enable()`, the event-trigger function that turns RLS on for each new
+  table in `public`, was `SECURITY DEFINER` and reachable by `anon`/`authenticated` through
+  `/rest/v1/rpc/`. `EXECUTE` revoked from `anon`, `authenticated` and `public`. Nothing
+  legitimate called it: Postgres does not check `EXECUTE` when firing a trigger, so the privilege
+  only ever governed direct REST calls. Verified after the revoke by creating a table inside a
+  transaction — RLS was still enabled automatically — and by `has_function_privilege`, which now
+  reads false/false/true for anon/authenticated/service_role.
+
 ## `extract_decision_events.py` — Behavioral Intelligence phase → structured Decision Events
 
 ```
