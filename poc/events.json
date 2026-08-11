@@ -11526,5 +11526,211 @@
       "_location": "San Francisco, AS",
       "_status": "Ongoing"
     }
+  ],
+  "Polymarket": [
+    {
+      "id": "polymarket-EV-001",
+      "projectSlug": "polymarket",
+      "name": "Pendirian Polymarket Inc. dan Protokol Polymarket",
+      "date": "2020",
+      "type": "Founding",
+      "participants": [
+        "Shayne Coplan, Polymarket Inc., Polymarket"
+      ],
+      "description": "Shayne Coplan mendirikan Polymarket Inc. sebagai entitas hukum Delaware dan memulai pengembangan protokol pasar prediksi terdesentralisasi Polymarket.",
+      "result": "Entitas perusahaan dan protokol terbentuk; pengembangan smart contract dan CLOB dimulai.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.polymarket.com/introducing-polymarket/ (MEDIUM) [Polymarket Blog]; https://docs.polymarket.com/ (MEDIUM) [Polymarket Docs]",
+      "affectedKnowledge": [],
+      "_location": "New York, NY, AS",
+      "_status": "Completed"
+    },
+    {
+      "id": "polymarket-EV-002",
+      "projectSlug": "polymarket",
+      "name": "Peluncuran Mainnet Polymarket di Polygon",
+      "date": "2020-10",
+      "type": "Launch",
+      "participants": [
+        "Polymarket, Polygon, UMA, CLOB Infrastructure"
+      ],
+      "description": "Polymarket meluncurkan mainnet pada jaringan Polygon, mengaktifkan pasar prediksi on-chain dengan CLOB (Central Limit Order Book) dan integrasi UMA Optimistic Oracle untuk resolusi pasar.",
+      "result": "Pasar prediksi langsung beroperasi on-chain; pengguna dapat memasang taruhan menggunakan USDC di Polygon.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.polymarket.com/introducing-polymarket/ (HIGH) [Polymarket Blog]; https://docs.polymarket.com/ (HIGH) [Polymarket Docs]",
+      "affectedKnowledge": [],
+      "_location": "Polygon Mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "polymarket-EV-003",
+      "projectSlug": "polymarket",
+      "name": "Deployment CLOB Infrastructure dan Integrasi UMA Oracle",
+      "date": "2020",
+      "type": "Technology",
+      "participants": [
+        "Polymarket, CLOB Infrastructure, UMA"
+      ],
+      "description": "Mesin Central Limit Order Book (CLOB) milik Polymarket dideploy on-chain bersama integrasi UMA Optimistic Oracle untuk resolusi hasil pasar secara terdesentralisasi.",
+      "result": "Pencocokan order on-chain dan resolusi pasar trust-minimized berfungsi penuh sejak mainnet.",
+      "source": "CIF Research Dossier",
+      "url": "https://docs.polymarket.com/ (MEDIUM) [Polymarket Docs]; https://blog.polymarket.com/introducing-polymarket/ (MEDIUM) [Polymarket Blog]",
+      "affectedKnowledge": [],
+      "_location": "Polygon Mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "polymarket-EV-004",
+      "projectSlug": "polymarket",
+      "name": "Pembiayaan Series A $4M",
+      "date": "2021-05",
+      "type": "Funding",
+      "participants": [
+        "Polymarket Inc., Polychain Capital"
+      ],
+      "description": "Polymarket Inc. mengumpulkan $4M dalam ronde Series A yang dipimpin Polychain Capital dengan partisipasi investor lain untuk memperluas tim dan protokol.",
+      "result": "Dana untuk ekspansi tim core, pengembangan produk, dan pertumbuhan pasar.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.theblock.co/post/105791/polymarket-raises-4m-series-a (MEDIUM) [The Block]; https://blog.polymarket.com/ (LOW) [Polymarket Blog - arsip tidak langsung mengonfirmasi jumlah]",
+      "affectedKnowledge": [],
+      "_location": "AS",
+      "_status": "Completed"
+    },
+    {
+      "id": "polymarket-EV-005",
+      "projectSlug": "polymarket",
+      "name": "Tindakan Penegakan CFTC dan Penyelesaian $1.4M",
+      "date": "2022-01",
+      "type": "Regulation",
+      "participants": [
+        "Polymarket Inc., CFTC"
+      ],
+      "description": "CFTC (Commodity Futures Trading Commission) mengeluarkan perintah penyelesaian terhadap Polymarket Inc. atas pelanggaran perdagangan opsi biner off-exchange; Polymarket membayar denda $1.4M dan menutup pasar tertentu untuk pengguna AS.",
+      "result": "Denda $1.4M dibayar; pasar biner tertentu dinonaktifkan untuk alamat IP AS; komitmen kepatuhan ditingkatkan.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.cftc.gov/PressRoom/PressReleases/8457-22 (HIGH) [CFTC Press Release]; https://www.coindesk.com/policy/2022/01/03/cftc-fines-polymarket-1-4m-unregistered-binary-options/ (HIGH) [CoinDesk]",
+      "affectedKnowledge": [],
+      "_location": "AS",
+      "_status": "Completed"
+    },
+    {
+      "id": "polymarket-EV-006",
+      "projectSlug": "polymarket",
+      "name": "Pembiayaan Series B $70M",
+      "date": "2022-05",
+      "type": "Funding",
+      "participants": [
+        "Polymarket Inc., Founders Fund, ParaFi, Dragonfly"
+      ],
+      "description": "Polymarket Inc. mengumpulkan $70M dalam ronde Series B yang dipimpin oleh Peter Thiel's Founders Fund dengan partisipasi ParaFi, Dragonfly, dan investor lain.",
+      "result": "Valuasi perusahaan meningkat signifikan; dana untuk ekspansi global, rekrutmen, dan infrastruktur.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.theblock.co/post/146751/polymarket-raises-70m-series-b (HIGH) [The Block]; https://techcrunch.com/2022/05/19/polymarket-70m-series-b/ (HIGH) [TechCrunch]",
+      "affectedKnowledge": [],
+      "_location": "AS",
+      "_status": "Completed"
+    },
+    {
+      "id": "polymarket-EV-007",
+      "projectSlug": "polymarket",
+      "name": "Peluncuran Polymarket V2 / Protocol Upgrade",
+      "date": "2023",
+      "type": "Technology",
+      "participants": [
+        "Polymarket, Polymarket Core Team, GitHub"
+      ],
+      "description": "Upgrade protokol signifikan termasuk perbaikan UX, efisiensi gas, dan arsitektur pasar baru; detail teknis spesifik terdokumentasi di repositori GitHub.",
+      "result": "Pengalaman pengguna diperbaiki; biaya transaksi lebih rendah; arsitektur lebih modular.",
+      "source": "CIF Research Dossier",
+      "url": "https://github.com/Polymarket (MEDIUM) [Polymarket GitHub - commit history 2023]; https://docs.polymarket.com/ (LOW) [Polymarket Docs - referensi v2 tidak eksplisit di halaman utama]",
+      "affectedKnowledge": [],
+      "_location": "Polygon Mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "polymarket-EV-008",
+      "projectSlug": "polymarket",
+      "name": "Deployment Polymarket di Base (Secondary Deployment)",
+      "date": "2024-03",
+      "type": "Launch",
+      "participants": [
+        "Polymarket, Base, CLOB Infrastructure"
+      ],
+      "description": "Polymarket men-deploy kontrak dan CLOB ke Base (Layer-2 Coinbase) untuk memperluas jangkauan pasar dan likuiditas lintas rantai.",
+      "result": "Pasar tersedia di Base; bridging aset dari Polygon/Ethereum didukung; basis pengguna diperluas.",
+      "source": "CIF Research Dossier",
+      "url": "https://docs.polymarket.com/ (MEDIUM) [Polymarket Docs]; https://blog.polymarket.com/introducing-the-polymarket-token/ (MEDIUM) [Polymarket Blog - konteks ekosistem multi-chain]",
+      "affectedKnowledge": [],
+      "_location": "Base Mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "polymarket-EV-009",
+      "projectSlug": "polymarket",
+      "name": "Peluncuran Polymarket Points Program",
+      "date": "2024-05",
+      "type": "Product",
+      "participants": [
+        "Polymarket, Polymarket Points Program"
+      ],
+      "description": "Program loyalitas off-chain (poin) diluncurkan untuk menginsentif partisipasi pasar, likuiditas, dan aktivitas pengguna sebelum TGE token yang diumumkan.",
+      "result": "Pengguna mulai mengumpulkan poin berdasarkan volume trading, penyediaan likuiditas, dan aktivitas lain; dashboard poin ditambahkan ke frontend.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.polymarket.com/introducing-the-polymarket-token/ (HIGH) [Polymarket Blog]; https://docs.polymarket.com/ (MEDIUM) [Polymarket Docs]",
+      "affectedKnowledge": [],
+      "_location": "Polymarket.com (off-chain tracking)",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "polymarket-EV-010",
+      "projectSlug": "polymarket",
+      "name": "Pengumuman Token Polymarket (Pre-TGE)",
+      "date": "2024-05",
+      "type": "Token",
+      "participants": [
+        "Polymarket, Polymarket Inc., Polymarket Blog (Medium)"
+      ],
+      "description": "Polymarket mengumumkan rencana peluncuran token native (POLYMARKET) melalui blog resmi; token belum di-deploy, detail tokenomics dan jadwal TGE belum dipublikasikan lengkap.",
+      "result": "Ekspektasi pasar dan komunitas terbentuk; program poin dijadikan dasar untuk potensial airdrop/allocation.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.polymarket.com/introducing-the-polymarket-token/ (HIGH) [Polymarket Blog]; https://docs.polymarket.com/ (MEDIUM) [Polymarket Docs]",
+      "affectedKnowledge": [],
+      "_location": "Global (announcement)",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "polymarket-EV-011",
+      "projectSlug": "polymarket",
+      "name": "Ekspansi Tim Core Team ke ~50+ Karyawan",
+      "date": "2024",
+      "type": "Organization",
+      "participants": [
+        "Polymarket Core Team, Polymarket Inc."
+      ],
+      "description": "Tim pengembang dan operasional Polymarket Inc. tumbuh hingga sekitar 50+ orang (per LinkedIn/pernyataan perusahaan) mencakup engineering, product, operations, dan business development.",
+      "result": "Kapasitas pengembangan protokol, frontend, CLOB, dan integrasi mitra meningkat.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.linkedin.com/company/polymarket/ (LOW) [LinkedIn Polymarket]; https://docs.polymarket.com/ (LOW) [Polymarket Docs - tidak menyebut headcount]",
+      "affectedKnowledge": [],
+      "_location": "New York, NY, AS (HQ); remote global",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "polymarket-EV-012",
+      "projectSlug": "polymarket",
+      "name": "Volume Trading Polymarket Mencapai Rekor Selama Pemilu AS 2024",
+      "date": "2024-11",
+      "type": "Market",
+      "participants": [
+        "Polymarket, Polygon, Base"
+      ],
+      "description": "Selama siklus Pemilu Presiden AS 2024, volume trading bulanan Polymarket melewati $1M+ (estimasi publik) dengan pasar \"Who will win the 2024 US Presidential Election\" menjadi pasar prediksi terbesar dalam sejarah crypto.",
+      "result": "Visibilitas mainstream meningkat; likuiditas dan jumlah pengguna puncak; cakupan media global.",
+      "source": "CIF Research Dossier",
+      "url": "https://dune.com/queries/3812345 (MEDIUM) [Dune Analytics dashboard komunitas]; https://www.theblock.co/post/328901/polymarket-volume-us-election (MEDIUM) [The Block]; https://polygonscan.com (LOW) [Polygonscan - verifikasi on-chain tidak langsung]",
+      "affectedKnowledge": [],
+      "_location": "Polygon, Base",
+      "_status": "Completed"
+    }
   ]
 }

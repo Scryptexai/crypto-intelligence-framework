@@ -20703,5 +20703,296 @@
         "evidence": "(HIGH) [GitHub Nimbus, https://github.com/status-im/nimbus-eth2]; [Status Nimbus, https://"
       }
     }
+  ],
+  "Polymarket": [
+    {
+      "id": "polymarket-ENT-001",
+      "projectSlug": "polymarket",
+      "name": "Shayne Coplan",
+      "type": "Person",
+      "status": null,
+      "description": "Pendiri dan CEO Polymarket Inc., mengarahkan visi strategis dan eksekusi protokol prediksi terdesentralisasi Polymarket sejak awal pembentukan.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2020–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [Polymarket Blog, https://blog.polymarket.com/introducing-polymarket/]; (MEDIUM) [Polymarket Docs, https://docs.polymarket.com/]"
+      }
+    },
+    {
+      "id": "polymarket-ENT-002",
+      "projectSlug": "polymarket",
+      "name": "Polymarket Inc.",
+      "type": "Company",
+      "status": null,
+      "description": "Entitas hukum berbasis Delaware, AS yang mengembangkan dan mengoperasikan protokol Polymarket, frontend Polymarket.com, dan mesin CLOB (Central Limit Order Book).",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2020–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [Polymarket Blog, https://blog.polymarket.com/introducing-polymarket/]; (MEDIUM) [Polymarket Docs, https://docs.polymarket.com/]"
+      }
+    },
+    {
+      "id": "polymarket-ENT-003",
+      "projectSlug": "polymarket",
+      "name": "Polymarket",
+      "type": "Protocol",
+      "status": null,
+      "description": "Protokol pasar prediksi terdesentralisasi yang dibangun di atas Polygon dan Base, menggunakan CLOB untuk pencocokan order dan UMA oracle untuk resolusi pasar.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Polymarket Blog, https://blog.polymarket.com/introducing-polymarket/]; (HIGH) [Polymarket Docs, https://docs.polymarket.com/]"
+      }
+    },
+    {
+      "id": "polymarket-ENT-004",
+      "projectSlug": "polymarket",
+      "name": "UMA",
+      "type": "Protocol",
+      "status": null,
+      "description": "Protokol oracle yang menyediakan layanan resolusi pasar (Optimistic Oracle) untuk menentukan hasil pasar prediksi Polymarket secara terpercaya dan terdesentralisasi.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Polymarket Docs, https://docs.polymarket.com/]; (MEDIUM) [Polymarket Blog, https://blog.polymarket.com/introducing-polymarket/]"
+      }
+    },
+    {
+      "id": "polymarket-ENT-005",
+      "projectSlug": "polymarket",
+      "name": "Polygon",
+      "type": "Protocol",
+      "status": null,
+      "description": "Blockchain lapisan-2 Ethereum utama tempat Polymarket meluncurkan mainnet Oktober 2020 dan menjalankan sebagian besar aktivitas pasar serta CLOB-nya.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Polymarket Blog, https://blog.polymarket.com/introducing-polymarket/]; (HIGH) [Polymarket Docs, https://docs.polymarket.com/]"
+      }
+    },
+    {
+      "id": "polymarket-ENT-006",
+      "projectSlug": "polymarket",
+      "name": "Base",
+      "type": "Protocol",
+      "status": null,
+      "description": "Blockchain lapisan-2 Ethereum (dikembangkan Coinbase) tempat Polymarket men-deploy deployment sekunder pada 2024 untuk memperluas jangkauan pasar dan likuiditas.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2024–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [Polymarket Docs, https://docs.polymarket.com/]; (MEDIUM) [Polymarket Blog, https://blog.polymarket.com/introducing-the-polymarket-token/]"
+      }
+    },
+    {
+      "id": "polymarket-ENT-007",
+      "projectSlug": "polymarket",
+      "name": "Ethereum",
+      "type": "Protocol",
+      "status": null,
+      "description": "Blockchain lapisan-1 penyelesaian (settlement) dan bridging bagi aset Polymarket yang beroperasi di Polygon dan Base.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2020–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [Polymarket Docs, https://docs.polymarket.com/]; (MEDIUM) [Polymarket Blog, https://blog.polymarket.com/introducing-polymarket/]"
+      }
+    },
+    {
+      "id": "polymarket-ENT-008",
+      "projectSlug": "polymarket",
+      "name": "GitHub",
+      "type": "Company",
+      "status": null,
+      "description": "Platform hosting repositori kode sumber terbuka Polymarket (smart contracts, frontend, contoh bot) di github.com/Polymarket.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Polymarket GitHub, https://github.com/Polymarket]; (MEDIUM) [Polymarket Docs, https://docs.polymarket.com/]"
+      }
+    },
+    {
+      "id": "polymarket-ENT-009",
+      "projectSlug": "polymarket",
+      "name": "Polygonscan",
+      "type": "Application",
+      "status": null,
+      "description": "Block explorer resmi jaringan Polygon digunakan untuk memverifikasi transaksi, kontrak, dan aktivitas on-chain Polymarket di Polygon.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Polymarket Docs, https://docs.polymarket.com/]; (MEDIUM) [PolygonScan, https://polygonscan.com]"
+      }
+    },
+    {
+      "id": "polymarket-ENT-010",
+      "projectSlug": "polymarket",
+      "name": "Basescan",
+      "type": "Application",
+      "status": null,
+      "description": "Block explorer resmi jaringan Base digunakan untuk memverifikasi transaksi, kontrak, dan aktivitas on-chain Polymarket di Base.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2024–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [Polymarket Docs, https://docs.polymarket.com/]; (MEDIUM) [BaseScan, https://basescan.org]"
+      }
+    },
+    {
+      "id": "polymarket-ENT-011",
+      "projectSlug": "polymarket",
+      "name": "Discord",
+      "type": "Application",
+      "status": null,
+      "description": "Platform komunitas resmi (discord.gg/polymarket) untuk diskusi pengguna, dukungan, dan pengumuman tim Polymarket.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2020–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(MEDIUM) [Polymarket Docs, https://docs.polymarket.com/]; (MEDIUM) [Discord, https://discord.gg/polymarket]"
+      }
+    },
+    {
+      "id": "polymarket-ENT-012",
+      "projectSlug": "polymarket",
+      "name": "Telegram",
+      "type": "Application",
+      "status": null,
+      "description": "Platform komunitas dan pengumuman resmi (@PolymarketOfficial) untuk jangkauan audiens global dan update pasar real-time.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2020–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(MEDIUM) [Polymarket Docs, https://docs.polymarket.com/]; (MEDIUM) [Telegram, https://t.me/PolymarketOfficial]"
+      }
+    },
+    {
+      "id": "polymarket-ENT-013",
+      "projectSlug": "polymarket",
+      "name": "X (Twitter)",
+      "type": null,
+      "status": null,
+      "description": "Salur media sosial resmi (@Polymarket) untuk pengumuman produk, update pasar, dan komunikasi eksternal ke komunitas dan mitra.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2020–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(MEDIUM) [Polymarket Docs, https://docs.polymarket.com/]; (MEDIUM) [X/Twitter, https://x.com/Polymarket]"
+      }
+    },
+    {
+      "id": "polymarket-ENT-014",
+      "projectSlug": "polymarket",
+      "name": "Polymarket Blog (Medium)",
+      "type": null,
+      "status": null,
+      "description": "Blog resmi (blog.polymarket.com) menerbitkan pengumuman peluncuran mainnet, program poin, rencana token, dan update protokol lainnya.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [Polymarket Blog, https://blog.polymarket.com/introducing-polymarket/]; (HIGH) [Polymarket Blog, https://blog.polymarket.com/introducing-the-polymarket-token/]"
+      }
+    },
+    {
+      "id": "polymarket-ENT-015",
+      "projectSlug": "polymarket",
+      "name": "Polymarket Points Program",
+      "type": "Protocol",
+      "status": null,
+      "description": "Program loyalitas off-chain (poin) yang diluncurkan 2024 untuk menginsentif partisipasi pasar sebelum TGE token yang diumumkan namun belum di-deploy.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2024–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Polymarket Blog, https://blog.polymarket.com/introducing-the-polymarket-token/]; (MEDIUM) [Polymarket Docs, https://docs.polymarket.com/]"
+      }
+    },
+    {
+      "id": "polymarket-ENT-016",
+      "projectSlug": "polymarket",
+      "name": "CLOB Infrastructure",
+      "type": "Protocol",
+      "status": null,
+      "description": "Mesin Central Limit Order Book milik Polymarket yang menangani pencocokan order, manajemen buku order, dan eksekusi perdagangan on-chain.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2020–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [Polymarket Docs, https://docs.polymarket.com/]; (MEDIUM) [Polymarket Blog, https://blog.polymarket.com/introducing-polymarket/]"
+      }
+    },
+    {
+      "id": "polymarket-ENT-017",
+      "projectSlug": "polymarket",
+      "name": "Polymarket Core Team",
+      "type": "Company",
+      "status": null,
+      "description": "Tim pengembang dan operasional (~50+ karyawan per LinkedIn/pernyataan perusahaan) yang membangun smart contract, frontend, CLOB, dan infrastruktur oracle.",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "LOW",
+        "period": "2020–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(LOW) [Polymarket Docs, https://docs.polymarket.com/]; (LOW) [LinkedIn Polymarket, https://www.linkedin.com/company/polymarket/] === PERSON === Shayne Coplan === COMPANY === Polymarket Inc. === PROTOCOL === Polymarket UMA Polygon Base Ethereum Polymarket Points Program CLOB Infrastructure === CHAIN === Polygon Base Ethereum === INFRASTRUCTURE === GitHub === APPLICATION === Polygonscan Basescan Discord Telegram === MEDIA === X (Twitter) Polymarket Blog (Medium) === COMMUNITY === Discord Telegram === OTHER === Polymarket Core Team Total Entity: 17 Internal: 6 External: 11 Unknown: 0"
+      }
+    }
   ]
 }

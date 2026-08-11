@@ -323,5 +323,16 @@
       "airdrop",
       "governance"
     ]
+  },
+  {
+    "n": "Polymarket",
+    "tier": "Deep",
+    "file": "examples/CaseStudies/Polymarket.md",
+    "cat": "",
+    "era": "",
+    "tags": [
+      "airdrop",
+      "points"
+    ]
   }
 ]
