@@ -128,19 +128,56 @@ Boleh menambahkan keterangan dalam kurung setelah nama POV untuk menyebut siapa 
 — `POV VC (Paradigm, Variant Fund): Sukses` atau `POV Retail (penerima Season 1): Sebagian`. Itu justru
 lebih berguna daripada nama POV telanjang. Tanda titik dua tetap setelah kurung penutup.
 
+HARGA PASCA-DISTRIBUSI
+
+Bagian TERPENTING dari fase ini setelah OUTCOME PER POV, karena inilah yang menjawab "apa yang
+sebenarnya terjadi pada orang yang menerima" tanpa perlu analisis cohort. Tulis PERSIS empat baris di
+bawah, satu per baris, dengan label persis seperti ini. Isi angkanya dalam USD.
+
+Harga saat klaim: <angka> USD (<YYYY-MM-DD>) [<sumber>] (<HIGH/MEDIUM/LOW>)
+Harga +30 hari: <angka> USD (<YYYY-MM-DD>) [<sumber>] (<HIGH/MEDIUM/LOW>)
+Harga +90 hari: <angka> USD (<YYYY-MM-DD>) [<sumber>] (<HIGH/MEDIUM/LOW>)
+Harga puncak 12 bulan pertama: <angka> USD (<YYYY-MM-DD>) [<sumber>] (<HIGH/MEDIUM/LOW>)
+
+Aturan pengisian:
+
+- Tulis SATU angka per baris, bukan rentang. Kalau sumbernya memberi rentang ($1,20-$1,50), ambil
+  titik tengahnya sebagai angka dan sebutkan rentang aslinya di dalam kurung sumber.
+- CoinGecko dan CoinMarketCap punya data historis harian untuk hampir semua token yang pernah listing;
+  cari di sana lebih dulu. Sertakan URL-nya.
+- Kalau token belum pernah listing atau distribusinya berjalan kontinu tanpa satu tanggal klaim, tulis
+  `Tidak berlaku` dan jelaskan alasannya dalam satu kalimat.
+- Jangan menghitung persentase perubahan sendiri — cukup empat angkanya, biarkan pembaca yang
+  membandingkan.
+
 METRIK RETENSI
 
-Angka yang menunjukkan apa yang terjadi setelah distribusi. Untuk tiap metrik: nilai, tanggal
-pengukuran, sumber, dan Evidence Level. Minimal yang dicari:
+Angka lain yang menunjukkan apa yang terjadi setelah distribusi. Untuk tiap metrik: nilai, tanggal
+pengukuran, sumber, dan Evidence Level. Yang dicari, semuanya bisa ditemukan di sumber publik:
 
-- Persentase penerima yang menjual dalam 7 hari
-- Persentase penerima yang masih memegang setelah 90 hari
-- Perubahan alamat aktif sebelum vs sesudah snapshot
-- Perubahan TVL atau volume sebelum vs sesudah
-- Harga token pada klaim, +30 hari, +90 hari
+- Perubahan TVL atau volume protokol sebelum vs sesudah distribusi
+- Jumlah alamat pemegang token (unique holders), dengan tanggal pengukurannya
+- Jumlah alamat aktif harian, sebelum vs sesudah
+- Konsentrasi kepemilikan: berapa persen supply dipegang 10 alamat teratas
+- Untuk chain/protokol staking: tingkat partisipasi staking atau retensi validator
 
 Jika sebuah metrik tidak ditemukan, tulis "Tidak ditemukan" — jangan menghitungnya sendiri dari angka
 yang tidak sebanding.
+
+GAP YANG DIKETAHUI
+
+Satu baris saja, dan JANGAN menghabiskan usaha mencarinya. Analisis cohort penerima airdrop — berapa
+persen yang menjual dalam 7 hari, berapa persen masih memegang setelah 90 hari — hampir tidak pernah
+dipublikasikan siapa pun. Diminta pada 13 project, ditemukan nol kali. Itu memerlukan pelacakan alamat
+on-chain per-penerima yang tidak ada di artikel, blog, maupun dashboard publik.
+
+Tulis satu baris berikut apa adanya, lalu lanjut:
+
+Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik.
+
+Kalau kebetulan kamu MENEMUKAN analisis semacam itu (misalnya dashboard Dune yang spesifik melacak
+alamat penerima airdrop project ini), tulis angkanya beserta URL dashboard-nya — itu temuan bernilai
+tinggi justru karena langka.
 
 FARMING DAN SYBIL
 

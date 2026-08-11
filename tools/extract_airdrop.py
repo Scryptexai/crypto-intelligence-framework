@@ -2,7 +2,8 @@
 """
 extract_airdrop.py — pull a structured AirdropProfile out of a dossier's Phase 12 section.
 
-    { status, events[], povOutcomes{}, retention[], prospect{}, lessons[] }
+    { status, events[], povOutcomes{}, priceTrajectory{}, retention[], gaps[], prospect{},
+      lessons[] }
 
 Reads only what Phase 12 literally wrote. It does not infer whether an airdrop "worked", does
 not compute a success score, and does not compare projects -- all three are judgements the
@@ -17,7 +18,9 @@ Section layout (fixed by the Phase 12 prompt):
     REASON                   -- stated vs unstated (kept whole; the split matters and is
                                 deliberately not parsed into a claim)
     OUTCOME PER POV          -- "POV <Name>: <verdict>" + short/long term -> povOutcomes
+    HARGA PASCA-DISTRIBUSI   -- four fixed price lines -> priceTrajectory
     METRIK RETENSI           -- labelled metric lines -> retention
+    GAP YANG DIKETAHUI       -- what the sources do not contain -> gaps
     FARMING DAN SYBIL        -- prose
     PROSPEK                  -- labelled lines -> prospect
     PELAJARAN LINTAS PROJECT -> lessons
@@ -37,8 +40,9 @@ OUT = ROOT / "poc" / "airdrop.json"
 
 SECTION_HEADERS = [
     "STATUS AIRDROP", "AIRDROP EVENTS", "CONTEXT SAAT KEPUTUSAN", "TRIGGER DAN ALTERNATIF",
-    "REASON — YANG DINYATAKAN VS YANG TIDAK", "OUTCOME PER POV", "METRIK RETENSI",
-    "FARMING DAN SYBIL", "PROSPEK", "PELAJARAN LINTAS PROJECT",
+    "REASON — YANG DINYATAKAN VS YANG TIDAK", "OUTCOME PER POV", "HARGA PASCA-DISTRIBUSI",
+    "METRIK RETENSI", "GAP YANG DIKETAHUI", "FARMING DAN SYBIL", "PROSPEK",
+    "PELAJARAN LINTAS PROJECT",
 ]
 _header_alt = "|".join(re.escape(h) for h in SECTION_HEADERS)
 
@@ -194,11 +198,114 @@ def _parse_pov(section):
     return out
 
 
+# The four price lines, in the order the prompt asks for them, mapped to the key each becomes.
+# Ordered so a later label cannot shadow an earlier one: "Harga puncak 12 bulan pertama" is
+# matched before the substring-shaped labels it does not share, and each label is anchored to
+# the start of its line anyway.
+PRICE_POINTS = [
+    ("atClaim", "Harga saat klaim"),
+    ("day30", "Harga +30 hari"),
+    ("day90", "Harga +90 hari"),
+    ("peak12m", "Harga puncak 12 bulan pertama"),
+]
+
+_EVIDENCE_RE = re.compile(r"\((HIGH|MEDIUM|LOW)\)", re.I)
+_DATE_RE = re.compile(r"\((\d{4}-\d{2}-\d{2})\)")
+_SOURCE_RE = re.compile(r"\[([^\]]+)\]")
+_NUMBER_RE = re.compile(r"\d[\d.,]*")
+
+
+def _parse_amount(head):
+    """Best-effort USD figure out of the text before the first bracket. None when absent.
+
+    Reports mix conventions in the same file -- the prompt is Indonesian, so `1,20` means one
+    dollar twenty, but sources are quoted verbatim and CoinGecko writes `1.20`. Rather than
+    pick one and silently mis-scale the other by 100, the last separator is classified by what
+    follows it, which is convention-independent: a grouping mark is always followed by exactly
+    three digits, so anything else is a decimal point. Exactly three digits is the one real tie
+    (`1.200` the thousand vs `0.001` the sub-cent) and is read as grouping unless the integer
+    part is a bare zero, which no thousands separator can produce.
+
+    `raw` is always kept, so a figure this heuristic gets wrong is still visible to a reader
+    and recoverable by a later re-parse.
+    """
+    m = _NUMBER_RE.search(head)
+    if not m:
+        return None
+    tok = m.group(0).rstrip(".,")
+    seps = [i for i, ch in enumerate(tok) if ch in ".,"]
+    if not seps:
+        digits, frac = tok, ""
+    else:
+        last = seps[-1]
+        after = len(tok) - last - 1
+        repeated = len(seps) > 1 and tok[seps[-1]] == tok[seps[-2]]
+        int_part = re.sub(r"[.,]", "", tok[:last])
+        is_decimal = not repeated and (after != 3 or int_part == "0")
+        if is_decimal:
+            digits, frac = tok[:last], tok[last + 1:]
+        else:
+            digits, frac = tok, ""
+    digits = re.sub(r"[.,]", "", digits)
+    if not digits:
+        return None
+    try:
+        return float(f"{digits}.{frac}" if frac else digits)
+    except ValueError:
+        return None
+
+
+def _parse_price(section):
+    """{key: {usd, date, source, evidence, raw}} for whichever of the four lines are present.
+
+    This block is the answer to the question the retention section could never answer. Cohort
+    sell-through ("% who sold within 7 days") was asked of 13 projects and found zero times --
+    it needs per-address on-chain work that nobody publishes. Price at claim vs +90 days is in
+    CoinGecko for almost every listed token and says the same thing: a recipient who held
+    either gained or lost, and the number shows which.
+
+    A missing line is absent from the dict rather than present-and-null, so a caller can tell
+    "the model didn't write it" from "the model wrote Tidak berlaku" -- the second is a finding
+    (no listing, or continuous distribution with no claim date) and the first is a defect.
+    """
+    out = {}
+    for key, label in PRICE_POINTS:
+        m = re.search(rf"(?im)^\s*[-·*]?\s*{re.escape(label)}\s*:\s*(.+?)\s*$", section or "")
+        if not m:
+            continue
+        raw = m.group(1).strip()
+        head = re.split(r"[\[(]", raw, 1)[0]
+        ev = _EVIDENCE_RE.search(raw)
+        date = _DATE_RE.search(raw)
+        src = _SOURCE_RE.search(raw)
+        out[key] = {
+            "usd": _parse_amount(head),
+            "date": date.group(1) if date else None,
+            "source": src.group(1).strip() if src else None,
+            "evidence": ev.group(1).upper() if ev else None,
+            "raw": raw,
+        }
+    return out
+
+
 def _parse_lines(section):
     """Bullet or dash lines, cleaned -- used for retention metrics and lessons."""
     return [re.sub(r"\s+", " ", ln).strip(" -·*")
             for ln in re.findall(r"(?m)^\s*[-·*]\s*(.+?)\s*$", section or "")
             if ln.strip()]
+
+
+def _parse_plain_lines(section):
+    """Every non-empty line, bullet or not -- used for GAP YANG DIKETAHUI.
+
+    The prompt asks for that section as one unadorned sentence ("Cohort penerima: ..."), so
+    the bullet-only reader used elsewhere returns nothing for a section that is present and
+    correct. A known gap that parses as absent is worse than useless: it reads as the model
+    having skipped the section.
+    """
+    return [re.sub(r"\s+", " ", ln).strip(" -·*")
+            for ln in (section or "").splitlines()
+            if ln.strip(" -·*\t")]
 
 
 def parse_airdrop(text, project_name):
@@ -231,7 +338,9 @@ def parse_airdrop(text, project_name):
         "status": status,
         "events": events,
         "povOutcomes": pov,
+        "priceTrajectory": _parse_price(sections.get("HARGA PASCA-DISTRIBUSI", "")),
         "retention": _parse_lines(sections.get("METRIK RETENSI", "")),
+        "gaps": _parse_plain_lines(sections.get("GAP YANG DIKETAHUI", "")),
         "prospect": prospect,
         "lessons": _parse_lines(sections.get("PELAJARAN LINTAS PROJECT", "")),
     }
@@ -261,6 +370,7 @@ def main():
         existing[project_name] = profile
         print(f"[extract_airdrop] {project_name}: status={profile['status']!r}, "
               f"{len(profile['events'])} event(s), {len(profile['povOutcomes'])} POV, "
+              f"{len(profile['priceTrajectory'])}/4 price point(s), "
               f"{len(profile['retention'])} retention metric(s)")
     OUT.write_text(json.dumps(existing, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"-> {OUT}")

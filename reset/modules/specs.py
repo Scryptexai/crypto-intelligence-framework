@@ -301,6 +301,57 @@ def _check_airdrop_parse(text: str, project_name: str) -> tuple:
                   f"{len(res['povOutcomes'])} POV")
 
 
+def _check_price_block(text: str, project_name: str) -> tuple:
+    """A completed distribution must carry the four HARGA PASCA-DISTRIBUSI figures.
+
+    This is the check the retention section should always have been. Phase 12 asked 13
+    projects what share of recipients sold within 7 days and got an answer zero times -- that
+    number needs per-address on-chain work nobody publishes -- so 44 of 66 retention rows read
+    "Tidak ditemukan". Price at claim vs +30/+90 answers the same question from CoinGecko's
+    daily history, which exists for nearly every listed token.
+
+    Only enforced when something was actually distributed. "Belum ada" has no claim date and
+    therefore no price line to write; demanding one there would send the repair loop chasing
+    a figure that cannot exist (L4: a loop aimed at the wrong target cannot converge).
+    """
+    wrapped = wrap_for_extractor(text, "airdrop")
+    res = _extract_airdrop.parse_airdrop(wrapped, project_name)
+    if res is None:
+        return False, "extract_airdrop found no parseable Phase 12 content"
+    if res["status"] not in ("Sudah dilakukan", "Sedang berjalan"):
+        return True, f"status={res['status']!r} — no distribution, price block not required"
+    price = res["priceTrajectory"]
+    missing = [label for key, label in _extract_airdrop.PRICE_POINTS if key not in price]
+    if missing:
+        return False, f"{len(missing)} price line(s) missing: {', '.join(missing)}"
+    # A line that is present but says nothing is the same defect as a missing line, except
+    # harder to see. Either a number, or an explicit statement that there isn't one.
+    empty = [label for key, label in _extract_airdrop.PRICE_POINTS
+             if price[key]["usd"] is None
+             and not re.search(r"(?i)tidak (?:berlaku|ditemukan|diketahui)", price[key]["raw"])]
+    if empty:
+        return False, (f"{len(empty)} price line(s) with neither a figure nor an explicit "
+                       f"`Tidak berlaku`: {', '.join(empty)}")
+    return True, f"{len(price)}/4 price points"
+
+
+_PRICE_HINT = (
+    "Bagian `HARGA PASCA-DISTRIBUSI` tidak lengkap. Project ini SUDAH mendistribusikan token, "
+    "jadi keempat baris di bawah WAJIB ada, masing-masing satu baris, label PERSIS seperti ini, "
+    "tanpa bullet dan tanpa heading markdown:\n\n"
+    "Harga saat klaim: 1,20 USD (2024-12-07) [https://coingecko.com/...] (HIGH)\n"
+    "Harga +30 hari: 3,50 USD (2025-01-06) [https://coingecko.com/...] (MEDIUM)\n"
+    "Harga +90 hari: 2,10 USD (2025-03-07) [https://coingecko.com/...] (MEDIUM)\n"
+    "Harga puncak 12 bulan pertama: 4,80 USD (2025-02-14) [https://coingecko.com/...] (LOW)\n\n"
+    "Satu angka per baris (bukan rentang), tanggal ISO dalam kurung, URL sumber dalam kurung "
+    "siku, Evidence Level dalam kurung terakhir. CoinGecko dan CoinMarketCap menyimpan harga "
+    "harian historis untuk hampir semua token yang pernah listing — cari di sana lebih dulu. "
+    "Hanya jika token memang belum pernah listing atau distribusinya kontinu tanpa satu tanggal "
+    "klaim, tulis `Tidak berlaku` beserta alasannya dalam satu kalimat. JANGAN mengosongkan "
+    "barisnya dan JANGAN menghitung persentase perubahan sendiri."
+)
+
+
 _AIRDROP_HINT = (
     "Laporan Phase 12 tidak terbaca parser CIF. Perbaiki hal berikut, pakai label PERSIS:\n"
     "1. Bagian `STATUS AIRDROP` wajib ada, dan isinya salah satu PERSIS dari: "
@@ -403,6 +454,8 @@ PHASE_CHECKS = {
     "airdrop": [
         Check("airdrop_parse", "status + all 8 POV outcomes parse", _check_airdrop_parse,
               _AIRDROP_HINT),
+        Check("price_block", "four post-distribution price points present", _check_price_block,
+              _PRICE_HINT),
         Check("no_md_headers", "no markdown headers to truncate the report",
               _check_no_md_headers, _AIRDROP_HINT),
     ],

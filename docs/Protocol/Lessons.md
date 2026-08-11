@@ -191,6 +191,46 @@ refuses to start. Related: a command that pulls and then acts on the result must
 pasted as one block, because the shell runs line 2 whether or not line 1 succeeded.
 
 
+---
+
+## L11 — A list that filters is not the same as a list that orders
+
+`sync_supabase.ORDER` was written as "insertion sequence, for foreign keys". It is also the
+inclusion filter: the sync loops over `[t for t in ORDER if t in targets]`, so a table present
+in `TABLES` and `BUILDERS` but absent from `ORDER` gets built, counted in `--dry-run`, printed
+as a row count — and never posted. The four `airdrop_*` tables were one edit away from exactly
+that, and `--dry-run` would have shown 339 rows either way.
+
+**Rule.** When one list serves two purposes, the second purpose needs its own assertion. Here
+that is four lines: `set(targets) - set(ORDER)` must be empty or the run dies. An omission from
+a list like this is always a mistake and never a deliberate choice, so it can be fatal rather
+than a warning.
+
+---
+
+## L12 — Ask sources for what they contain, not for what you wish they contained
+
+Phase 12's `METRIK RETENSI` asked every project for the share of recipients who sold within
+7 days and the share still holding at 90 days. Across 13 completed airdrops that produced **44
+of 66 rows reading "Tidak ditemukan"** and exactly 3 rows containing a percentage. The data is
+not missing by accident: it requires per-address on-chain tracking of a specific recipient set,
+which no article, blog or public dashboard publishes.
+
+The fix was not a better prompt for the same question. It was a **different question with the
+same meaning**: price at claim vs +30 / +90 days, which CoinGecko has daily history for on
+nearly every listed token. A recipient who held either gained or lost, and four numbers say
+which — without a cohort analysis existing anywhere.
+
+Worth noting what made this expensive: each unanswerable field still costs a full research pass
+and looks like a research-quality problem, so the natural response is to sharpen the prompt and
+run it again.
+
+**Rule.** Before adding a field to a research prompt, name the source that would contain it and
+check one project by hand. If a field comes back empty on the first three projects, the next
+change is to the *question*, not to the wording — and record the dead end in the prompt itself
+(Phase 12's `GAP YANG DIKETAHUI` tells the model not to spend effort there) so the next session
+does not re-discover it.
+
 ## Related
 
 - `CLAUDE.md` — the session bootstrap; its "Acquisition readiness" section is what these rules
