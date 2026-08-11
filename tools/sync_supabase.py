@@ -38,11 +38,13 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 POC = ROOT / "poc"
-# Synced by default: the tables that exist in the CIF Supabase project. Verified against the
-# live schema 2026-08-09 -- it has 13 tables, and these 9 are the ones this script writes
-# (relationships is empty by design, users/saved_views/notes belong to the frontend).
+# Synced by default: the tables this script writes. Verified against the live schema
+# 2026-08-11 -- 17 tables, of which relationships is empty by design and
+# users/saved_views/notes belong to the frontend. The four airdrop_* tables carry Phase 12
+# (created 2026-08-11, schema agreed with the maintainer before creation per CLAUDE.md).
 TABLES = ("projects", "knowledge_items", "evidence_items", "entities", "events", "conflicts",
-          "qa_dimensions", "qa_phases", "behavior_profiles")
+          "qa_dimensions", "qa_phases", "behavior_profiles",
+          "airdrop_profiles", "airdrop_events", "airdrop_pov_outcomes", "airdrop_retention")
 
 # Buildable but NOT synced by default: the older AirdropOS-style schema, which lives in a
 # different Supabase project. Requesting them against the CIF project returns PGRST205
@@ -374,6 +376,89 @@ def behavior_rows():
     return rows
 
 
+# ---------------------------------------------------------------------------
+# Phase 12 — Airdrop Intelligence. Four tables from one poc/airdrop.json.
+#
+# Everything stays text, matching the schema: reports state ranges and
+# qualifications ("2023-05 hingga 2023-11", "12% dari total supply (360.000.000
+# BLUR)") that parsing into date/numeric would have to guess at, and a guessed
+# value that looks precise is worse than the honest string.
+# ---------------------------------------------------------------------------
+
+def airdrop_profile_rows():
+    """One row per project, PK=project_slug."""
+    rows = []
+    for project, prof in load_optional("airdrop.json").items():
+        prospect = prof.get("prospect") or {}
+        rows.append({
+            "project_slug": slugify(project),
+            "status": prof.get("status") or "Belum ada",
+            "prospect_met": prospect.get("met"),
+            "prospect_unmet": prospect.get("unmet"),
+            "prospect_signals": prospect.get("signals"),
+            "prospect_note": prospect.get("assessment"),
+        })
+    return rows
+
+
+def airdrop_event_rows():
+    """One row per distribution wave. id is slug-prefixed because AD-001 restarts at 1 in
+    every project -- the same collision that put duplicate EV-001 ids into `events` and made
+    a bulk upsert fail with Postgres 21000 (ON CONFLICT cannot affect a row twice)."""
+    rows = []
+    for project, prof in load_optional("airdrop.json").items():
+        slug = slugify(project)
+        for i, ev in enumerate(prof.get("events") or [], start=1):
+            rows.append({
+                "id": f"{slug}-{ev['id']}",
+                "project_slug": slug,
+                "seq": i,
+                "title": ev.get("title"),
+                "event_date": ev.get("date"),
+                "type": ev.get("type"),
+                "allocation": ev.get("allocation"),
+                "recipients": ev.get("recipients"),
+                "value_at_claim": ev.get("valueAtClaim"),
+                "criteria": ev.get("criteria"),
+                "anti_sybil": ev.get("antiSybil"),
+                "related_event": ev.get("relatedEvent"),
+                "citation": ev.get("citation"),
+            })
+    return rows
+
+
+def airdrop_pov_rows():
+    """Eight rows per project. A POV that does not apply is stored as "Tidak relevan" rather
+    than skipped: a missing row and a deliberate not-applicable are different facts, and
+    keeping them apart is the point of the per-POV format."""
+    rows = []
+    for project, prof in load_optional("airdrop.json").items():
+        slug = slugify(project)
+        for pov, out in (prof.get("povOutcomes") or {}).items():
+            rows.append({
+                "id": f"{slug}-{pov}",
+                "project_slug": slug,
+                "pov": pov,
+                "verdict": out.get("verdict"),
+                "verdict_raw": out.get("verdictRaw"),
+                "qualifier": out.get("qualifier"),
+                "short_term": out.get("shortTerm"),
+                "long_term": out.get("longTerm"),
+                "basis": out.get("basis"),
+            })
+    return rows
+
+
+def airdrop_retention_rows():
+    rows = []
+    for project, prof in load_optional("airdrop.json").items():
+        slug = slugify(project)
+        for i, metric in enumerate(prof.get("retention") or [], start=1):
+            rows.append({"id": f"{slug}-r{i}", "project_slug": slug,
+                         "seq": i, "metric": metric})
+    return rows
+
+
 BUILDERS = {
     "projects": project_rows,
     "knowledge_items": knowledge_rows,
@@ -384,22 +469,29 @@ BUILDERS = {
     "qa_dimensions": qa_dimension_rows,
     "qa_phases": qa_phase_rows,
     "behavior_profiles": behavior_rows,
+    "airdrop_profiles": airdrop_profile_rows,
+    "airdrop_events": airdrop_event_rows,
+    "airdrop_pov_outcomes": airdrop_pov_rows,
+    "airdrop_retention": airdrop_retention_rows,
     "cif_patterns": pattern_rows,
     "cif_backtests": backtest_rows,
     "cif_decision_events": decision_event_rows,
 }
 
 ON_CONFLICT = {
-    # behavior_profiles is keyed by project_slug directly, not `id`.
+    # These two are keyed by project_slug directly, not `id`.
     "behavior_profiles": "project_slug",
+    "airdrop_profiles": "project_slug",
 }
 
 # Insertion order matters for FK integrity: projects before anything referencing
 # projects.slug, entities before relationships/evidence_items->knowledge_items chains,
 # knowledge_items before evidence_items.
 ORDER = ["projects", "entities", "knowledge_items", "evidence_items", "events", "conflicts",
-         "qa_dimensions", "qa_phases", "behavior_profiles", "cif_patterns", "cif_backtests",
-         "cif_decision_events"]
+         "qa_dimensions", "qa_phases", "behavior_profiles",
+         # all four airdrop_* tables FK to projects.slug, so they follow projects
+         "airdrop_profiles", "airdrop_events", "airdrop_pov_outcomes", "airdrop_retention",
+         "cif_patterns", "cif_backtests", "cif_decision_events"]
 
 
 CHUNK_SIZE = 500
@@ -474,6 +566,16 @@ def main():
     if not base_url or not key:
         sys.exit("SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY must be set (see this file's docstring). "
                   "Use --dry-run to preview without them.")
+
+    # ORDER decides both sequence and inclusion, so a table missing from it is built and then
+    # silently dropped -- rows counted in --dry-run, never posted, no error. The four
+    # airdrop_* tables were one edit away from exactly that. Fail loudly instead: an omission
+    # here is always a mistake, never a choice.
+    unordered = sorted(set(targets) - set(ORDER))
+    if unordered:
+        sys.exit(f"table(s) {', '.join(unordered)} are in TABLES/--only but missing from ORDER, "
+                 f"so they would be built and never sent. Add them to ORDER, after any table "
+                 f"they reference by foreign key.")
 
     for t in [t for t in ORDER if t in targets]:
         upsert(base_url, key, t, rows_by_table[t])
