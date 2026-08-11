@@ -6,6 +6,7 @@
     "povOutcomes": {
       "founder": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": null,
         "shortTerm": "Tidak ada airdrop, jadi tidak ada dampak langsung",
         "longTerm": "Distribusi via Public Sale + Rush/Multiverse menciptakan komunitas holder + builder yang lebih terpilih",
@@ -13,6 +14,7 @@
       },
       "vc": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": null,
         "shortTerm": "N/A",
         "longTerm": "N/A",
@@ -20,6 +22,7 @@
       },
       "retail": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": null,
         "shortTerm": "N/A",
         "longTerm": "N/A",
@@ -27,6 +30,7 @@
       },
       "community": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": null,
         "shortTerm": "N/A",
         "longTerm": "N/A",
@@ -34,6 +38,7 @@
       },
       "developer": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": null,
         "shortTerm": "N/A",
         "longTerm": "N/A",
@@ -41,6 +46,7 @@
       },
       "institution": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": null,
         "shortTerm": "N/A",
         "longTerm": "N/A",
@@ -48,6 +54,7 @@
       },
       "validator": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": null,
         "shortTerm": "N/A",
         "longTerm": "N/A",
@@ -55,6 +62,7 @@
       },
       "builder": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": null,
         "shortTerm": "N/A",
         "longTerm": "N/A",
@@ -123,6 +131,7 @@
     "povOutcomes": {
       "founder": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": null,
         "shortTerm": "Market share naik ke 60-75% volume Ethereum NFT; >150k holders; Binance/Coinbase listing berhasil; volume $1.5-3B/bulan selama seasons【Phase 8: Market Share, Adoption Metrics (MEDIUM)】.",
         "longTerm": "Dominasi market share pertahankan 2 tahun; fee switch aktif memberikan real yield; tapi treasury opacity & admin key centralization tetap; wash trading estimates >30% mengurangi legitimacy【Phase 8: Market Share, Open Threads】【Phase 10: K-001, K-003, K-010】.",
@@ -130,6 +139,7 @@
       },
       "vc": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": "Paradigm, Variant Fund",
         "shortTerm": "Token liquidity tinggi day-1 (Binance volume >$1B); price discovery efisien; market cap peak >$1B justify valuation【Phase 3: EV-005】【Phase 8: Market Timeline】.",
         "longTerm": "Vesting 1-year cliff + 4-5yr linear melindungi downside; fee switch menciptakan fundamental value accrual; Blend menambah revenue stream; exit optionality terjaga【Phase 6: Vesting Schedule】【Phase 10: K-007, K-009】.",
@@ -137,6 +147,7 @@
       },
       "retail": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": "Season 1 claimers",
         "shortTerm": "Bisa claim 360M BLUR (12% supply) gratis; harga TGE ~$1-5 (variasi CEX/DEX); early sellers untung besar【Phase 6: TGE】【Phase 8: Market Timeline】.",
         "longTerm": "Harga BLUR turun dari peak >$5 ke <$0.5 (2023-2024 bear); holders yang hold mengalami loss tidak terealisasi; fee switch yield 10-20% APR hanya relevan bagi yang tetap hold【Phase 6: Major Token Events】【Phase 8: Adoption Metrics】.",
@@ -144,6 +155,7 @@
       },
       "community": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": "Power users / Season 2-3 participants",
         "shortTerm": "Reward BLUR berkelanjutan untuk aktivitas trading/bidding/Blend; volume & poin meningkat; komunitas aktif di Discord【Phase 3: EV-011, EV-012】【Phase 9: Pola 3】.",
         "longTerm": "Dependency pada incentive — volume drop risiko tinggi jika Season 4 tidak ada; wash trading merusak reputasi; delegation incentive Season 3 menguntungkan whale yang sudah hold besar【Phase 8: Open Threads (Wash trading)】【Phase 10: K-002】.",
@@ -151,6 +163,7 @@
       },
       "developer": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": null,
         "shortTerm": "Tidak ada SDK/grant/hackathon; developer ecosystem minimal; hanya API public【Phase 7: Developer Ecosystem】.",
         "longTerm": "Tidak ada insentif builder; ekosistem app terbatas pada core product Blur Labs【Phase 7: Developer Ecosystem】.",
@@ -158,13 +171,15 @@
       },
       "institution": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": "Market maker, Fund",
         "shortTerm": "Wintermute/GSR dapat order flow & spread profit dari deep liquidity TGE; Binance perpetual memungkinkan hedging【Phase 2: Entity Wintermute, GSR】【Phase 7: Exchange Ecosystem】.",
         "longTerm": "Fee switch yield menarik allocator yield-seeking; Blend lending membuka NFTfi institutional desk【Phase 10: K-007, K-009】.",
         "basis": "【Phase 2: Entity Wintermute, GSR (MEDIUM)】 【Phase 10: K-007, K-009】."
       },
       "validator": {
-        "verdict": "Tidak relevan (Blur bukan chain, tidak ada validator)",
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan (Blur bukan chain, tidak ada validator)",
         "qualifier": null,
         "shortTerm": "N/A",
         "longTerm": "N/A",
@@ -172,6 +187,7 @@
       },
       "builder": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": "NFT project / Collection creator",
         "shortTerm": "Royalty enforcement on-chain (Blur menegakkan ERC-2981); volume tinggi di Blur membantu floor price【Phase 4: Security Model (Royalty)】【Phase 8: Market Position】.",
         "longTerm": "Bid pools (collection/trait bids) menyediakan exit liquidity untuk holder; tapi bidding pools juga tekanan jual ke floor【Phase 4: Core Components (Bidding)】【Phase 8: Competitor Landscape】.",
@@ -208,6 +224,7 @@
     "povOutcomes": {
       "founder": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": null,
         "shortTerm": "Tidak berlaku (tidak ada airdrop)",
         "longTerm": "Distribusi via voucher sale + genesis allocation menciptakan alignment jangka panjang dengan entitas pendiri; no VC unlock cliffs menghindari sell pressure terjadwal【Phase 9 — Pola 1, Pola 2】(HIGH)",
@@ -215,6 +232,7 @@
       },
       "vc": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": null,
         "shortTerm": "Tidak ada investor VC dalam token sale — tidak ada alokasi VC untuk dump atau hold【Phase 5 — Fundraising Mechanism】【Phase 6 — Distribution】(HIGH)",
         "longTerm": "Tidak ada VC token unlock schedule yang menciptakan overhang pasar【Phase 5 — Financial Risk】【Phase 9 — Pola 1】(HIGH)",
@@ -222,6 +240,7 @@
       },
       "retail": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": null,
         "shortTerm": "Voucher sale participants membeli ADA ~$0.0024/ADA (bukan gratis); mainnet launch 2017-09-29 token transferable【Phase 6 — TGE】【Phase 3 — EV-007】(HIGH)",
         "longTerm": "Staking rewards منذ Shelley 2020 memberikan yield ~4-5% APY; minimum UTxO deposit untuk native assets menciptakan demand struktural【Phase 6 — Utility】【Phase 8 — Adoption Metrics】(HIGH)",
@@ -229,6 +248,7 @@
       },
       "community": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": null,
         "shortTerm": "Project Catalyst Fund 1 2020-08 mulai mendistribusikan treasury ke proyek komunitas via voting (bukan airdrop ke individu)【Phase 3 — EV-012】(HIGH)",
         "longTerm": ">100M ADA terdistribusi Fund 1-12+; CIP-1694 governance actions memungkinkan community mengarahkan treasury【Phase 3 — EV-021】【Phase 6 — Governance】(HIGH)",
@@ -236,6 +256,7 @@
       },
       "developer": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": null,
         "shortTerm": "Plutus smart contracts live Alonzo 2021-09-12; developer tooling berkembang (MeshJS, Aiken, Blockfrost) tanpa insentif token gratis【Phase 3 — EV-014】【Phase 7 — Developer Ecosystem】(HIGH)",
         "longTerm": "Catalyst funding untuk developer tools (Aiken, Lucid, Helios dibangun dengan dana Catalyst)【Phase 3 — EV-030】【Phase 7 — Infrastructure Providers】(HIGH)",
@@ -243,6 +264,7 @@
       },
       "institution": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": null,
         "shortTerm": "Atala PRISM enterprise contracts (Ethiopia, Georgia, Tanzania) menggunakan ADA untuk fee/identity ops — institutional demand organik【Phase 3 — EV-027】【Phase 7 — Major Integrations】(HIGH)",
         "longTerm": "Midnight partner chain (ZK privacy) menargetkan regulated finance — ADA sebagai bridge asset potensial【Phase 3 — EV-024】【Phase 4 — System Architecture】(MEDIUM)",
@@ -250,6 +272,7 @@
       },
       "validator": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": null,
         "shortTerm": "SPO rewards dari fee + monetary expansion sejak Shelley 2020; ~1.100-1.200 active pools dari ~3.200 registered【Phase 8 — Adoption Metrics】【Phase 3 — EV-011】(HIGH)",
         "longTerm": "Staking participation stabil ~62-65% circulating supply; no slashing, no lock-up — delegator retention tinggi【Phase 8 — Adoption Metrics】【Phase 10 — K-010】(HIGH)",
@@ -257,6 +280,7 @@
       },
       "builder": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": null,
         "shortTerm": "Native assets (Mary 2021) memungkinkan builder mint token/NFT tanpa smart contract — low barrier entry【Phase 3 — EV-013】【Phase 10 — K-019】(HIGH)",
         "longTerm": "Vasil improvements (reference inputs, inline datums) + Hydra L2 + Midnight ZK — builder tooling mature tanpa butuh airdrop incentive【Phase 3 — EV-017】【Phase 4 — Core Components】(HIGH)",
@@ -297,6 +321,7 @@
     "povOutcomes": {
       "founder": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": null,
         "shortTerm": "Mainnet launch lancar, validator set genesis terbentuk dari airdrop stakers, 11 CEX listing dalam 6 minggu, narasi fair launch tercapai, zero regulatory action terkait TGE【Phase 3 EV-009, EV-010, EV-024】【Phase 9 Decision Timeline】 (HIGH) [Phase 3, Phase 9].",
         "longTerm": "Token allocation opacity (team/investor/foundation % tidak diungkap) menciptakan tekanan transparansi berkelanjutan; fee switch belum aktif (Nov 2024) menunda value accrual narrative; treasury opacity tetap kritik — HIPOTESIS (MEDIUM) [Phase 6 Distribution; Phase 5 Treasury; Phase 3 EV-027; Phase 9 Failure Factor 1,2].",
@@ -304,6 +329,7 @@
       },
       "vc": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": null,
         "shortTerm": "Equity investment $55M (Series A/B) mendapat token allocation via SAFT dengan vesting (cliff/linear tidak diungkap); immediate CEX liquidity memungkinkan partial exit early jika diinginkan; tidak ada public sale yang melonggarkan cap table【Phase 5 Funding History】【Phase 6 Vesting Schedule Investors】 (HIGH) [Phase 5, Phase 6].",
         "longTerm": "Token price discovery dari ~$2 (awal) ke ATH ~$20 (Februari 2024) lalu koreksi; VC vesting schedule (cliff 12 bulan typical) berarti unlock besar dimulai Q4 2024 — tekanan jual potensial; fee switch activation akan menentukan apakah TIA menjadi productive asset — HIPOTESIS (MEDIUM) [Phase 8 Market; Phase 3 EV-027; Phase 9 Open Threads Vesting].",
@@ -311,6 +337,7 @@
       },
       "retail": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": null,
         "shortTerm": "Eligible Cosmos stakers/dev/testnet contributors mendapat free TIA (claimable day-1); harga naik ~10x dalam 3 bulan (Nov 2023 - Feb 2024) memberi keuntungan besar bagi yang hold; non-eligible retail harus beli di CEX【Phase 3 EV-010, EV-024】【Phase 8 Exchange Ecosystem】 (HIGH) [Phase 3, Phase 8].",
         "longTerm": "Airdrop hunter yang tidak eligible merasa terkecualai (criteria opaque); sell pressure dari airdrop recipients early menciptakan volatilitas; tidak ada program follow-up airdrop (Season 2) hingga cut-off — HIPOTESIS (MEDIUM) [Phase 6 Distribution; Phase 8 Market; Phase 9 Open Threads].",
@@ -318,6 +345,7 @@
       },
       "community": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": null,
         "shortTerm": "Genesis Drop 6% ke community (bukan hanya insider) — narasi \"community-first\" tervalidasi; governance on-chain aktif day-1 dengan proposal pertama Jan 2024; Discord/forum aktif diskusi fee switch, grants【Phase 3 EV-018, EV-027】【Phase 6 Governance】 (HIGH) [Phase 3, Phase 6].",
         "longTerm": "Community pool spend via proposal (Sputnik grants 2024) menunjukkan treasury deployment; namun treasury size/composition opacity tetap mengganggu kepercayaan jangka panjang — HIPOTESIS (MEDIUM) [Phase 3 EV-026; Phase 5 Treasury; Phase 9 Failure Factor 2].",
@@ -325,6 +353,7 @@
       },
       "developer": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": null,
         "shortTerm": "Developer Cosmos/Celestia eligible mendapat TIA untuk staking/securing rollup mereka; Rollkit (2022) dan Sovereign SDK (2024) sudah tersedia pre/post-mainnet; blobspace fees murah awal memudahkan eksperimen【Phase 3 EV-006, EV-019】【Phase 7 SDK Rollkit, Sovereign SDK】 (HIGH) [Phase 3, Phase 7].",
         "longTerm": "15+ rollup terintegrasi Q2 2025 (Arbitrum Orbit, Starknet, Polygon CDK, Manta, Dymension, dll) — blobspace demand real; light client WASM (Jan 2025) memperluas verifikasi trust-minimized ke browser/mobile — HIPOTESIS (HIGH) [Phase 3 EV-013, EV-014, EV-015, EV-022, EV-028; Phase 7 Major Integrations; Phase 8 Adoption Metrics].",
@@ -332,6 +361,7 @@
       },
       "institution": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": null,
         "shortTerm": "11 major CEX listing (Binance, Coinbase, Kraken, Bybit, OKX, dll) memberikan akses institusional; perpetual futures tersedia di sebagian besar; OTC desk tersedia di Binance, Coinbase Prime, Kraken OTC【Phase 8 Exchange Ecosystem】 (HIGH) [Phase 8].",
         "longTerm": "Tokenomics opacity (alokasi team/investor/foundation tidak diungkap, vesting tidak transparan) dan treasury opacity menghalangi alokasi besar institusional yang butuh compliance & risk management ketat; fee switch uncertainty menambah variabel — HIPOTESIS (MEDIUM) [Phase 5 Treasury; Phase 6 Distribution, Vesting; Phase 3 EV-027; Phase 9 Failure Factor 1,3].",
@@ -339,6 +369,7 @@
       },
       "validator": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": null,
         "shortTerm": "Genesis validator set 100 aktif terbentuk dari testnet performers + airdrop stakers; staking participation ~65-75% supply Q2 2025; inflation ~7-8%/tahun memberi yield staker; priority fee blobspace ke proposer【Phase 3 EV-009】【Phase 4 Consensus Mechanism】【Phase 8 Adoption Metrics Staking Participation】 (HIGH) [Phase 3, Phase 4, Phase 8].",
         "longTerm": "Fee switch activation (jika lolos governance) akan menambah revenue stream ke staker (base fee/priority fee portion); upgrade v2.0/v3.0 via governance menunjukkan koordinasi validator berfungsi; slashing risk tetap ada (double sign, downtime) — HIPOTESIS (HIGH) [Phase 3 EV-021, EV-029; Phase 4 Security Model; Phase 6 Inflation/Deflation; Phase 9 Decision Timeline Upgrades].",
@@ -346,6 +377,7 @@
       },
       "builder": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": null,
         "shortTerm": "Grant program Sputnik Wave 1 (2024) mendanai tooling, rollup templates, light client infra, explorer; builder mendapatkan TIA untuk operasi dan stake【Phase 3 EV-026】【Phase 7 Ecosystem】 (HIGH) [Phase 3, Phase 7].",
         "longTerm": "Ecosystem flywheel: grants → builder → tooling/rollup → blobspace fees → treasury → more grants; 15+ rollup live membuktikan product-market fit DA layer; multi-VM support (EVM, ZK, SVM, Move, WASM, Custom) menarik builder beragam — HIPOTESIS (HIGH) [Phase 3 EV-026; Phase 7 Major Integrations; Phase 8 Adoption Metrics; Phase 9 Success Factor 4,5].",
@@ -395,6 +427,7 @@
     "povOutcomes": {
       "founder": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": null,
         "shortTerm": "DAO terbentuk, governance live hari TGE, 100+ proposal terekseskusi 4 tahun【Phase 3 — EV-021】【Phase 8 — Adoption Metrics】(HIGH)",
         "longTerm": "Protokol beroperasi sepenuhnya on-chain tanpa intervensi tim; Compound Labs menjadi kontributor bukan pengendali【Phase 9 — Insight 1】(HIGH)",
@@ -402,6 +435,7 @@
       },
       "vc": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": null,
         "shortTerm": "Token TERSEDIA untuk likuiditas pasar (Binance, Coinbase listing dalam bulan) — exit liquidity tersedia【Phase 3 — EV-024, EV-025】(HIGH)",
         "longTerm": "Vesting 4 tahun linear mencegah tekanan jual besar; namun tidak ada fee switch ke token holders, nilai accrual terbatas pada governance premium【Phase 6 — Token Utility】【Phase 9 — Knowledge K-009】(HIGH)",
@@ -409,6 +443,7 @@
       },
       "retail": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": null,
         "shortTerm": "Early users menerima \"free money\" signifikan (beberapa ribu $ per alamat aktif) — narasi \"DeFi Summer\" dimulai【Phase 8 — Market Timeline】(HIGH)",
         "longTerm": "Harga COMP volatil (peak ~$900 Mei 2021, turun >80% bear market); tidak ada yield native ke holder (hanya governance) — retensi bergantung spekulasi【Phase 8 — Market Position】(HIGH)",
@@ -416,6 +451,7 @@
       },
       "community": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": null,
         "shortTerm": "Distribusi merata ke pengguna nyata (bukan insider) menciptakan basis pemegang yang peduli protokol【Phase 9 — Knowledge K-008】(HIGH)",
         "longTerm": "DAO aktif dengan 100+ proposal, delegasi COMP ke delegate terpercaya, komunitas self-sustaining【Phase 8 — Adoption Metrics Governance】(HIGH)",
@@ -423,6 +459,7 @@
       },
       "developer": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": null,
         "shortTerm": "SDK dan dokumentasi diperluas; COMP sebagai incentive menarik builder integrasi【Phase 4 — Technology SDK】(HIGH)",
         "longTerm": "Governance-minimized architecture (Comet v3) memungkinkan developer build tanpa khawatir upgrade tiba-tiba【Phase 9 — Knowledge K-002】(HIGH)",
@@ -430,13 +467,15 @@
       },
       "institution": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": null,
         "shortTerm": "Listing di Coinbase/Binance/Kraken memberikan akses institusional; custodian support COMP【Phase 8 — Trading Markets】(HIGH)",
         "longTerm": "Tidak ada fee capture, tidak ada staking yield, regulatory uncertainty (SEC) tetap overhang — institusi memegang untuk governance influence bukan yield【Phase 5 — Financial Risk Regulatory】【Phase 6 — Token Utility】(MEDIUM)",
         "basis": "(HIGH) [Phase 8 — Trading Markets]; (MEDIUM) [Phase 5 — Financial Risk]"
       },
       "validator": {
-        "verdict": "Tidak diterapkan",
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak diterapkan",
         "qualifier": null,
         "shortTerm": null,
         "longTerm": null,
@@ -444,6 +483,7 @@
       },
       "builder": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": null,
         "shortTerm": "Composable cToken/COMP memungkinkan integrasi DeFi lego (Curve pools, Yearn vaults, Aave flash loan arbitrage)【Phase 7 — Major Integrations Curve, Uniswap】(HIGH)",
         "longTerm": "Comet v3 immutable core + Gateway cross-chain jadi infrastructure layer yang stabil untuk builder【Phase 9 — Knowledge K-002, K-006】(HIGH)",
@@ -465,56 +505,64 @@
     "events": [],
     "povOutcomes": {
       "founder": {
-        "verdict": "Tidak berlaku (tidak ada airdrop)",
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak berlaku (tidak ada airdrop)",
         "qualifier": null,
         "shortTerm": "N/A",
         "longTerm": "N/A",
         "basis": "Tidak ada event airdrop【Phase 3 — History】."
       },
       "vc": {
-        "verdict": "Tidak berlaku (tidak ada airdrop)",
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak berlaku (tidak ada airdrop)",
         "qualifier": null,
         "shortTerm": "N/A",
         "longTerm": "N/A",
         "basis": "Tidak ada VC allocation; ICO permissionless【Phase 6 — Distribution】."
       },
       "retail": {
-        "verdict": "Tidak berlaku (tidak ada airdrop)",
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak berlaku (tidak ada airdrop)",
         "qualifier": null,
         "shortTerm": "N/A",
         "longTerm": "N/A",
         "basis": "Retail partisipasi via ICO berbayar, bukan gratis【Phase 5 — Token Sale】."
       },
       "community": {
-        "verdict": "Tidak berlaku (tidak ada airdrop)",
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak berlaku (tidak ada airdrop)",
         "qualifier": null,
         "shortTerm": "N/A",
         "longTerm": "N/A",
         "basis": "Komunitas terbentuk dari peserta ICO, bukan penerima airdrop【Phase 3 — EV-002】."
       },
       "developer": {
-        "verdict": "Tidak berlaku (tidak ada airdrop)",
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak berlaku (tidak ada airdrop)",
         "qualifier": null,
         "shortTerm": "N/A",
         "longTerm": "N/A",
         "basis": "Developer incentive via grants (ENF) dan inflasi, bukan airdrop【Phase 5 — Revenue Model】."
       },
       "institution": {
-        "verdict": "Tidak berlaku (tidak ada airdrop)",
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak berlaku (tidak ada airdrop)",
         "qualifier": null,
         "shortTerm": "N/A",
         "longTerm": "N/A",
         "basis": "Institusi beli via ICO atau secondary market【Phase 8 — Exchange Ecosystem】."
       },
       "validator": {
-        "verdict": "Tidak berlaku (tidak ada airdrop)",
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak berlaku (tidak ada airdrop)",
         "qualifier": null,
         "shortTerm": "N/A",
         "longTerm": "N/A",
         "basis": "BP reward via inflasi 1%/tahun, bukan airdrop【Phase 6 — Inflation/Deflation】."
       },
       "builder": {
-        "verdict": "Tidak berlaku (tidak ada airdrop)",
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak berlaku (tidak ada airdrop)",
         "qualifier": null,
         "shortTerm": "N/A",
         "longTerm": "N/A",
@@ -543,13 +591,15 @@
     "povOutcomes": {
       "founder": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": null,
         "shortTerm": "31.529 BTC terkumpul; 60M ETH tersebar ke >9.000 alamat; dana cukup untuk 1+ tahun pengembangan hingga mainnet【Phase 3 — EV-006】 (HIGH) [Ethereum Blog, https://blog.ethereum.org/2014/09/02/ether-sale-ends-raised-31500-btc].",
         "longTerm": "Distribusi token paling merata di antara L1 besar (no VC unlock overhang); EF treasury mendanai protocol development 10+ tahun via grants; tidak ada tekanan jual dari investor early【Phase 10 — Knowledge K-001】【Phase 5 — Treasury】 (HIGH) [Messari, https://messari.io/asset/ethereum/profile; EF Annual Report 2023, https://ethereum.foundation/annual-report-2023/].",
         "basis": "Crowdsale data + 10 tahun on-chain history + EF grants track record."
       },
       "vc": {
-        "verdict": "Tidak berkaitan (Tidak ada VC round)",
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak berkaitan (Tidak ada VC round)",
         "qualifier": null,
         "shortTerm": "Tidak ada alokasi VC, tidak ada SAFT, tidak ada lockup — VC tidak berpartisipasi pada distribusi awal【Phase 5 — Token Sale】 (HIGH) [Messari, https://messari.io/asset/ethereum/profile].",
         "longTerm": "VC masuk belakangan via ekosistem (Consensys Series A 2015+, infrastructure providers, L2 teams) — bukan via protokol token【Phase 2 — Entity: Consensys】【Phase 7 — Infrastructure Providers】 (HIGH) [Consensys, https://consensys.net/; Messari, https://messari.io/project/consensys/profile].",
@@ -557,6 +607,7 @@
       },
       "retail": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": null,
         "shortTerm": "Pembeli crowdsale mendapatkan 2000 ETH/BTC (harga ~$0,30/ETH) — ROI ekstrem bagi yang hold hingga hari ini【Phase 6 — Token Sale】 (HIGH) [Ethereum Blog, https://blog.ethereum.org/2014/07/22/launching-the-ether-sale; CoinGecko, https://www.coingecko.com/en/coins/ethereum].",
         "longTerm": "Retail yang tidak beli di crowdsale harus beli di pasar sekunder (CEX/DEX) dengan harga lebih tinggi; tidak ada kesempatan \"free entry\" via airdrop【Phase 6 — TGE】【Phase 8 — Trading Markets】 (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/ethereum#markets].",
@@ -564,6 +615,7 @@
       },
       "community": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": null,
         "shortTerm": "Komunitas awal terbentuk dari pembeli yang termotivasi finansial — \"skin in the game\" menciptakan alignment panjang【Phase 9 — Behavioral Summary】 (MEDIUM) [Inferensi dari distribusi fair launch; tidak ada survei komunitas 2014].",
         "longTerm": "Komunitas Ethereum tumbuh organik via pengembangan, bukan via incentive farming; cultura \"BUIDL\" bukan \"farm\"【Phase 7 — Developer Ecosystem】【Phase 8 — Adoption Metrics (6,200+ full-time dev)】 (HIGH) [Electric Capital, https://www.electriccapital.com/developer-report; Ethereum.org, https://ethereum.org/en/developers/].",
@@ -571,20 +623,23 @@
       },
       "developer": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": null,
         "shortTerm": "Dana crowdsale membayar pengembang inti (Geth, cpp-ethereum, Python client, research) selama masa pra-mainnet【Phase 3 — EV-004】【Phase 3 — EV-008】【Phase 5 — Financial Dependencies】 (HIGH) [Ethereum Blog, https://blog.ethereum.org/2014/06/17/ethereum-foundation-developer-update].",
         "longTerm": "EF grants (> $100M kumulatif) + Protocol Guild + ecosystem grants mendanai open-source development berkelanjutan tanpa inflasi token tambahan【Phase 5 — Funding History】【Phase 7 — Grant Programs】【Phase 10 — Knowledge K-004】 (HIGH) [EF ESP, https://esp.ethereum.foundation/; Protocol Guild, https://protocolguild.org/].",
         "basis": "Grant programs terdokumentasi; developer metrics tertinggi."
       },
       "institution": {
-        "verdict": "Tidak diketahui (pada era 2014)",
+        "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui (pada era 2014)",
         "qualifier": null,
         "shortTerm": "Institusi tidak berpartisipasi di crowdsale 2014 (terlalu dini, regulasi belum jelas, custody belum matang)【Phase 8 — Market Timeline】 (MEDIUM) [Historical context: no institutional crypto custody 2014].",
         "longTerm": "Institusi masuk via Spot ETH ETF (Juli 2024), CME futures (2021), custodian (Coinbase Prime, Fireblocks, Fidelity) — semua beli di pasar sekunder【Phase 8 — Market Timeline (2024-05-23, 2024-07-23)】【Phase 8 — Exchange Ecosystem】 (HIGH) [SEC 19b-4 approvals; CME Group, https://www.cmegroup.com/markets/cryptocurrencies/ether.html].",
         "basis": "ETF approval 2024; CME derivatives history; custodian offerings."
       },
       "validator": {
-        "verdict": "Tidak berkaitan (pada era 2014)",
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak berkaitan (pada era 2014)",
         "qualifier": null,
         "shortTerm": "Validator set tidak ada (PoW mining dimulai 2015-07-30; PoS Beacon Chain 2020-12-01)【Phase 3 — EV-008】【Phase 3 — EV-020】 (HIGH) [Ethereum Blog, https://blog.ethereum.org/2015/07/22/frontier-is-coming; Beaconcha.in, https://beaconcha.in/genesis].",
         "longTerm": "Validator economics sepenuhnya terpisah dari distribusi awal — staking rewards dari issuance + tips + MEV, bukan dari airdrop【Phase 4 — Consensus Mechanism】【Phase 6 — Inflation/Deflation】 (HIGH) [Consensus Specs, https://github.com/ethereum/consensus-specs; Ultrasound.money, https://ultrasound.money/].",
@@ -592,6 +647,7 @@
       },
       "builder": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": null,
         "shortTerm": "Builder early (The DAO, Augur, MakerDAO 2015-2017) membeli ETH di pasar untuk gas dan collateral — tidak ada free allocation【Phase 7 — Applications】 (MEDIUM) [Historical: early dApps launched post-Frontier].",
         "longTerm": "Ekosistem builder terbesar crypto (Uniswap, Aave, Lido, EigenLayer, dll.) dibangun di atas settlement layer yang sudah terdistribusi — tidak ada dependency pada airdrop untuk user acquisition【Phase 7 — Applications】【Phase 8 — Adoption Metrics (800+ DeFi protocols)】 (HIGH) [DefiLlama, https://defillama.com/chain/Ethereum; Electric Capital, https://www.electriccapital.com/developer-report].",
@@ -632,6 +688,7 @@
     "povOutcomes": {
       "founder": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": null,
         "shortTerm": "Airdrop completed, V2 launch sukses technically, governance activated (EV-017), CEX listings secured (EV-015, EV-018), treasury >$5M (EV-025). Token price volatility tinggi tapi liquidity ada. (HIGH) [Phase 3 EV-014, EV-015, EV-017, EV-018, EV-025]",
         "longTerm": "V2 metrics stagnan (EV-022), price turun 80%+ dari puncak (EV-023), pivot non-financial diannounce (EV-024) tapi belum dieksekusi. Airdrop tidak menciptakan sustainable user base. (HIGH) [Phase 3 EV-022, EV-023, EV-024; Phase 8 Adoption Metrics]",
@@ -639,6 +696,7 @@
       },
       "vc": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": null,
         "shortTerm": "Token liquidity terbuka via CEX listings, memungkinkan paper gains / partial exit. Valuasi $50M seed (EV-004) vs FDV $30-60M pasca-launch (EV-023) — downround di secondary market. (HIGH) [Phase 3 EV-004, EV-015, EV-018, EV-023; Phase 8 Liquidity]",
         "longTerm": "Tidak ada unlock schedule transparan (Phase 6 Vesting Schedule unknown) — investor token mungkin unlock tanpa announcement, menciptakan overhang. Governance tidak memberikan kontrol nyata (Phase 9 Governance Hybrid). (MEDIUM) [Phase 6 Vesting Schedule; Phase 9 Insight 9]",
@@ -646,6 +704,7 @@
       },
       "retail": {
         "verdict": "Gagal",
+        "verdictRaw": "Gagal",
         "qualifier": null,
         "shortTerm": "Claim airdrop mungkin profit kecil jika sell early di $1.50+, tapi sebagian besar claim di harga turun. Gas fee Base rendah tapi claim process tidak terdokumentasi smooth. (MEDIUM) [Phase 3 EV-023 price action; Phase 4 Technical Limitations gas costs]",
         "longTerm": "Token value turun drastis ($1.50 → $0.30-0.60), tidak ada utility nyata selain governance voting (participation rendah) dan fee discount (volume V2 rendah). Tidak ada revenue share ke stakers. (HIGH) [Phase 3 EV-023; Phase 6 Utility; Phase 8 Adoption Metrics]",
@@ -653,6 +712,7 @@
       },
       "community": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": null,
         "shortTerm": "Early users merasa \"di-reward\" tapi alokasi opaque menciptakan ketidakpercayaan (Phase 6 Open Threads). Tidak ada transparasi siapa dapat berapa. (MEDIUM) [Phase 6 Distribution undisclosed; Phase 6 Open Threads]",
         "longTerm": "Community governance tidak berdaya (treasury multi-sig team, proposal threshold undisclosed Phase 6 Open Threads). Pivot non-financial (EV-024) tanpa community input formal. (LOW) [Phase 9 Insight 9; Phase 3 EV-024]",
@@ -660,6 +720,7 @@
       },
       "developer": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": null,
         "shortTerm": "Tidak ada SDK, API, atau developer tools dirilis bersamaan airdrop. V2 contracts upgradeable tapi tidak ada developer onboarding program. (MEDIUM) [Phase 7 Ecosystem Position — no developer ecosystem metrics; Phase 8 Competitor Landscape — Farcaster/Lens punya SDK]",
         "longTerm": "Tidak ada third-party apps dibangun di atas Friend.tech protocol. Protocol tidak composable seperti Farcaster/Lens. (LOW) [Phase 7 Missing Information: Developer ecosystem metrics; Phase 8 Narrative Position]",
@@ -667,13 +728,15 @@
       },
       "institution": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": null,
         "shortTerm": "CEX listings (Coinbase, Kraken regulated) memberikan akses institusional, tapi volume CEX dominan >90% (Phase 8 Liquidity) menunjukkan retail-driven, bukan institutional accumulation. (MEDIUM) [Phase 8 Trading Markets, Liquidity]",
         "longTerm": "Tidak ada custodial solution, prime broker integration, atau compliance framework untuk institutional holding. Token opacity (circulating supply unknown C-007) blocker untuk allocation. (LOW) [Phase 8 Liquidity; Phase 11 Conflict C-007]",
         "basis": "Phase 8 Trading Markets, Liquidity; Phase 11 Conflict C-007"
       },
       "validator": {
-        "verdict": "Tidak berlaku",
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak berlaku",
         "qualifier": null,
         "shortTerm": "Friend.tech tidak punya validator set; Base sequencer centralized (Conduit) (Phase 4 Architecture).",
         "longTerm": "Tidak ada staking untuk security; FRIEND staking hanya untuk fee discount (Phase 6 Utility).",
@@ -681,6 +744,7 @@
       },
       "builder": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": null,
         "shortTerm": "Tidak ada hackathon, grants, atau builder program terkait airdrop/V2 launch.",
         "longTerm": "OpenSocial (competitor) positioning sebagai protocol layer untuk builders; Friend.tech tetap consumer app closed. (MEDIUM) [Phase 8 Competitor Landscape OpenSocial; Phase 7 Missing Information developer ecosystem]",
@@ -703,6 +767,7 @@
     "povOutcomes": {
       "founder": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": null,
         "shortTerm": "Distribusi token terjaga adil, tidak ada komplain \"VC dump\" atau \"team unlock\" karena tidak ada alokasi tersebut. Komunitas miner tumbuh organik ke >900k Hotspot puncak 2022【Phase 3 — EV-010】【Phase 8 — Adoption Metrics】 (HIGH)",
         "longTerm": "Prinsip fair launch menjadi brand identity Helium (\"The People's Network\") dan diferensiasi utama vs DePIN lain (Pollen, World Mobile, XNET yang pakai token sale/airdrop)【Phase 8 — Narrative Position】【Phase 10 — K-001, K-022】 (HIGH)",
@@ -710,6 +775,7 @@
       },
       "vc": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": null,
         "shortTerm": "Investor equity Nova Labs tidak terpapar token price volatility; return via equity valuation (Series D $1.1B+ valuation)【Phase 3 — EV-013】【Phase 5 — Funding History】 (HIGH)",
         "longTerm": "Token HNT/IOT/MOBILE liquid di pasar sekunder (Binance, Coinbase, Solana DEX) memberi exit liquidity bagi investor yang beli di pasar terbuka — tidak bergantung unlock schedule【Phase 8 — Exchange Ecosystem】【Phase 7 — Exchange Ecosystem】 (HIGH)",
@@ -717,6 +783,7 @@
       },
       "retail": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": null,
         "shortTerm": "Retail bisa beli HNT di pasar sekunder (Binance 2020, Coinbase 2021) atau mining PoC dengan beli Hotspot — tidak ada \"free airdrop\" tapi ada akses pasar yang adil【Phase 3 — EV-011, EV-014】【Phase 8 — Trading Markets】 (HIGH)",
         "longTerm": "Retail yang mining PoC early (2019-2021) mendapat reward besar (5M HNT/bulan awal, halving 2-tahunan); retail beli Hotspot puncak 2022 ($500-$1000) mengalami ROI negatif saat HNT turun & reward halving【Phase 6 — Inflation/Deflation】【Phase 8 — Adoption Metrics】 (HIGH)",
@@ -724,6 +791,7 @@
       },
       "community": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": null,
         "shortTerm": "Komunitas terbangun di sekitar mining, bukan farming airdrop. Discord >100k member aktif diskusi coverage, hardware, optimization【Phase 2 — Entity Discord】【Phase 7 — Dependencies Discord】 (HIGH)",
         "longTerm": "Governance via HIP + Realms voting power dari staked token (bukan airdrop allocation) — komunitas yang mining/staking punya suara【Phase 6 — Governance】【Phase 9 — Pola 1: HIP Process】 (HIGH)",
@@ -731,6 +799,7 @@
       },
       "developer": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": null,
         "shortTerm": "SDK, Console, API tersedia tanpa perlu token gating — developer bayar Data Credits (burn HNT) untuk paket data【Phase 4 — Core Components Helium Network Console】【Phase 6 — Utility Fee Payment】 (HIGH)",
         "longTerm": "Composability Solana DeFi (Orca, Raydium, Jupiter, Marinade, Jito) memungkinkan developer bangun app di atas HNT/IOT/MOBILE tanpa permit【Phase 7 — Major Integrations Solana Migration】【Phase 8 — Narrative Position Solana Ecosystem】 (HIGH)",
@@ -738,6 +807,7 @@
       },
       "institution": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": null,
         "shortTerm": "Listing Coinbase (US regulated exchange) 2021 memvalidasi kompliance — fair launch tanpa insider allocation mempermudah legal review【Phase 3 — EV-014】【Phase 8 — Exchange Ecosystem Coinbase】 (HIGH)",
         "longTerm": "Institusi bisa accumulate HNT/IOT/MOBILE di pasar terbuka atau provide liquidity di DEX Solana — tidak ada vesting cliff risk【Phase 8 — Liquidity】【Phase 7 — Exchange Ecosystem】 (MEDIUM)",
@@ -745,6 +815,7 @@
       },
       "validator": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": null,
         "shortTerm": "Helium tidak punya validator sendiri pasca-migrasi; konsensus diserahkan ke Solana validator set. PoC oracle network (off-chain) tidak memerlukan staking HNT untuk consensus【Phase 4 — Consensus Mechanism Post-Migration】【Phase 7 — Dependencies Solana Critical】 (HIGH)",
         "longTerm": "Oracle operator reward dari PoC verification fees (bukan block reward) — model berbeda dari validator tradisional【Phase 4 — Core Components PoC Oracle Network】 (MEDIUM)",
@@ -752,6 +823,7 @@
       },
       "builder": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": null,
         "shortTerm": "Hardware OEM program (RAKwireless, Bobcat, Nebra, FreedomFi) memungkinkan builder produksi device bersertifikat tanpa izin Nova Labs — hanya butuh secure element & certification【Phase 3 — EV-010】【Phase 7 — Major Integrations Hardware Manufacturers】 (HIGH)",
         "longTerm": "SubDAO Treasury (IoT, Mobile) on-chain funding untuk ecosystem grants — builder bisa apply hibah via governance proposal【Phase 3 — EV-017】【Phase 5 — Treasury SubDAO】【Phase 6 — Distribution SubDAO Treasury】 (HIGH)",
@@ -788,6 +860,7 @@
     "povOutcomes": {
       "founder": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": null,
         "shortTerm": "Token live, staking aktif, community ownership tercapai, tanpa tekanan regulasi token sale",
         "longTerm": "Kontrol supply tetap di tangan team (opacity), fee switch belum diaktifkan, governance infrastructure belum lengkap",
@@ -795,6 +868,7 @@
       },
       "vc": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": null,
         "shortTerm": "Investor 2023 (Variant, Delphi, Hack VC, SIG, GSR) mendapat equity/SAFT, bukan token allocation publik — tidak ada unlock token yang tekan harga",
         "longTerm": "Jika alokasi investor ada di tokenomics tersembunyi, vesting schedule unknown menciptakan overhang risk",
@@ -802,6 +876,7 @@
       },
       "retail": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": null,
         "shortTerm": "Pengguna testnet/mainnet menerima HYPE gratis, bisa stake untuk yield atau sell — claim process, gas cost (HYPE), dan harga awal menentukan PnL",
         "longTerm": "Retensi bergantung pada fee switch activation, HyperEVM mainnet success, dan price action — tanpa transparency, retail bearish risk tinggi",
@@ -809,6 +884,7 @@
       },
       "community": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": null,
         "shortTerm": "Airdrop membangun goodwill dan legitimasi \"fair launch\" — community merasa dihargai dibanding VC-heavy launch",
         "longTerm": "Tanpa governance infrastructure (forum, proposal, voting), community ownership bersifat simbolik; validator set (opaque) de facto mengontrol protokol",
@@ -816,6 +892,7 @@
       },
       "developer": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": null,
         "shortTerm": "HyperEVM testnet + Ecosystem Fund grants menarik developer; HYPE sebagai gas token HyperEVM memberi utility tambahan",
         "longTerm": "Sukses bergantung pada HyperEVM mainnet launch, precompile CLOB access quality, dan dokumentasi — airdrop tidak langsung relevan",
@@ -823,6 +900,7 @@
       },
       "institution": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": null,
         "shortTerm": "Tidak ada token sale = tidak ada KYC/AML compliance burden untuk institusi yang ingin beli HYPE di secondary market",
         "longTerm": "Tokenomics opacity, no audits, regulatory exposure (BVI perp DEX), single bridge/USDC risk membuat institusi sulit melakukan due diligence — participation terbatas",
@@ -830,6 +908,7 @@
       },
       "validator": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": null,
         "shortTerm": "Staking live at TGE memungkinkan validator menjalankan node dengan HYPE stake — minimum stake amount undisclosed",
         "longTerm": "Validator set composition opaque; commission rate, slashing conditions unknown; validator economics bergantung pada fee switch (belum live) dan emission rate (unknown)",
@@ -837,6 +916,7 @@
       },
       "builder": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": null,
         "shortTerm": "Ecosystem Fund grants (2024) + HyperEVM testnet memberi insentif build — HYPE allocation untuk grants unknown",
         "longTerm": "Builder retention butuh HyperEVM mainnet, CLOB precompile stability, dan sustainable token incentives — airdrop bukan driver utama",
@@ -874,6 +954,7 @@
     "povOutcomes": {
       "founder": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": null,
         "shortTerm": "N/A (belum ada airdrop)",
         "longTerm": "N/A",
@@ -881,6 +962,7 @@
       },
       "vc": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": null,
         "shortTerm": "N/A",
         "longTerm": "N/A",
@@ -888,6 +970,7 @@
       },
       "retail": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": null,
         "shortTerm": "N/A",
         "longTerm": "N/A",
@@ -895,6 +978,7 @@
       },
       "community": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": null,
         "shortTerm": "N/A",
         "longTerm": "N/A",
@@ -902,6 +986,7 @@
       },
       "developer": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": null,
         "shortTerm": "N/A",
         "longTerm": "N/A",
@@ -909,6 +994,7 @@
       },
       "institution": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": null,
         "shortTerm": "N/A",
         "longTerm": "N/A",
@@ -916,6 +1002,7 @@
       },
       "validator": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": null,
         "shortTerm": "N/A",
         "longTerm": "N/A",
@@ -923,6 +1010,7 @@
       },
       "builder": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": null,
         "shortTerm": "N/A",
         "longTerm": "N/A",
@@ -971,6 +1059,7 @@
     "povOutcomes": {
       "founder": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": null,
         "shortTerm": "DAO aktif hari 1 (15+ SIP dieksekusi 2024); listing 5 CEX major + DEX berhasil; price discovery ~$1.2-$2.0; treasury 48.5% supply terkunci untuk funding jangka panjang [Phase 8 Adoption Metrics: 15+ Governance Proposals] [Phase 7 Exchange Ecosystem] [Phase 9 Financial Pattern] [HIGH]",
         "longTerm": "Token centralization tinggi (insider 71.5%) menciptakan governance capture risk dan vesting overhang Des 2024-2027; founder tetap kendalikan roadmap via Jito Labs (Block Engine, client dev) [Phase 6 Holder Distribution: Top 10 >50%] [Phase 9 Trade-off: Token Centralization] [HIGH]",
@@ -978,6 +1067,7 @@
       },
       "vc": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": null,
         "shortTerm": "Token liquid di CEX tier-1 hari 1; marking-to-market equity Jito Labs via token price; tidak ada lockup tambahan selain cliff 12 bulan yang sudah disepakati [Phase 6 Vesting Schedule: Investor cliff 12mo] [HIGH]",
         "longTerm": "165M JTO (16.5%) vesting linear 24 bulan mulai Des 2024 → potensi sell pressure bertahap tapi pasar sudah matang; TVL ~$2.1B memberikan fundamental valuation [Phase 8 Adoption Metrics: TVL] [Phase 6 Vesting Schedule] [HIGH]",
@@ -985,6 +1075,7 @@
       },
       "retail": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": null,
         "shortTerm": "Eligible user claim gratis (gas fee saja ~$0.01); harga opening ~$1.2-$1.5 → immediate paper gain; banyak yang claim & sell cepat (volume hari 1 tinggi) [Phase 8 Trading Markets: 24h Volume ~$80-150M] [MEDIUM]",
         "longTerm": "Harga JTO volatil ($0.50-$3.00 rentang 2024); tidak ada staking yield native JTO (hanya governance) → tidak ada alasan hold jangka panjang selain spekulasi; airdrop hunters tidak sticky [Phase 6 Utility: Governance only, no fee switch] [Phase 8 Adoption Metrics: Price history] [MEDIUM]",
@@ -992,6 +1083,7 @@
       },
       "community": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": null,
         "shortTerm": "Distribusi ke 4 segmen nyata (staker, validator, searcher, kontributor) bukan hanya snapshot token; claim process lancar via claim.jito.network [Phase 6 Distribution sub-kategori] [HIGH]",
         "longTerm": "DAO governance nyata (15+ SIP); ecosystem fund 18.5% digunakan grant/incentive; komunitas punya suara parameter fee & delegation [Phase 8 Adoption Metrics: 15+ SIP] [Phase 6 Distribution: Ecosystem 18.5%] [HIGH]",
@@ -999,6 +1091,7 @@
       },
       "developer": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": null,
         "shortTerm": "Searcher SDK & MEV infrastructure sudah live; airdrop ke searcher menginsentifkan pengembangan bot/bundle baru [Phase 7 Major Integrations: Searcher SDK] [Phase 4 Core Components: Searcher SDK] [HIGH]",
         "longTerm": "Restaking VNC (2024) membuka opportunity baru untuk AVS/NCN developer; JitoSOL integrasi DeFi luas (7+ protokol) memudahkan composability [Phase 3 EV-012] [Phase 7 Major Integrations: 7+ DeFi] [HIGH]",
@@ -1006,6 +1099,7 @@
       },
       "institution": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": null,
         "shortTerm": "Listing Coinbase & Binance memberikan akses institusional; custodian support (Coinbase Prime, Binance Custody) tersedia hari 1 [Phase 7 Exchange Ecosystem: Coinbase, Binance] [MEDIUM]",
         "longTerm": "Regulatory uncertainty pada governance token (SEC enforcement actions 2023-2024) menciptakan hesistasi alokasi besar; treasury opacity (no dashboard) mengurangi transparency score [Phase 5 Financial Risk: Regulatory] [Phase 5 Treasury: No transparency] [MEDIUM]",
@@ -1013,6 +1107,7 @@
       },
       "validator": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": null,
         "shortTerm": "Validator Jito-Solana menerima airdrop langsung + MEV tips revenue berlanjut; ~300-400 validator adopt client [Phase 8 Adoption Metrics: Validator Count] [Phase 4 Known Limitations: MEV only for Jito-Solana] [HIGH]",
         "longTerm": "Client revenue tied ke Solana activity; Firedancer/Agave competition risiko jangka panjang; delegation set permissioned memberi stabilitas tapi centralization risk [Phase 9 Trade-off: Permissioned vs Permissionless] [Phase 8 Competitor Landscape: Agave/Firedancer] [HIGH]",
@@ -1020,6 +1115,7 @@
       },
       "builder": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": null,
         "shortTerm": "JitoSOL sebagai collateral di 7+ DeFi memungkinkan bangun produk baru (leveraged staking, structured products) [Phase 7 Major Integrations: 7+ DeFi] [Phase 8 Market Share: DeFi Integration 80%+] [HIGH]",
         "longTerm": "Restaking VNC baru (2024) belum matang; NCN operator onboarding perlahan; SDK & docs bagus tapi ecosystem grants dari 18.5% allocation deployment lambat [Phase 3 EV-012] [Phase 6 Distribution: Ecosystem 18.5%] [Phase 9 Ecosystem Pattern: LST-First] [MEDIUM]",
@@ -1077,6 +1173,7 @@
     "povOutcomes": {
       "founder": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": null,
         "shortTerm": "TGE sukses dengan deep liquidity 5 CEX same-day; DAO formed; fee switch activated; TVL retention ~$1.2B post-TGE [Phase 3 EV-012-017, Phase 8 Adoption Metrics] (HIGH)",
         "longTerm": "Upgrade authority masih multisig tim (belum fully DAO); treasury opacity & token allocation undisclosed tetap kritik; Season 4 emission ongoing test sustainability [Phase 4 Known Limitations, Phase 10 K-004, K-010] (HIGH)",
@@ -1084,6 +1181,7 @@
       },
       "vc": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": null,
         "shortTerm": "Tidak ditemukan (investor allocation & vesting tidak transparan; tidak ada laporan investor relations publik)",
         "longTerm": "Tidak ditemukan",
@@ -1091,6 +1189,7 @@
       },
       "retail": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": null,
         "shortTerm": "Points farmers menerima KMNO claimable TGE; harga KMNO price discovery volatil (Binance listing $0.10-$0.15 range awal); banyak yang claim & sell immediately per anecdotal [Phase 8 Trading Markets, Liquidity] (MEDIUM)",
         "longTerm": "Tidak ditemukan (retention metrics hold rate 90 hari tidak dipublikasikan; Season 4 emission mungkin menarik kembali tapi data tidak ada) [Phase 8 Open Threads retention metrics] (LOW)",
@@ -1098,6 +1197,7 @@
       },
       "community": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": null,
         "shortTerm": "Komunitas aktif mendapat ownership via KMNO; governance participation mulai (Proposal #1 fee switch passed) [Phase 3 EV-017, Phase 7 Governance Ecosystem] (HIGH)",
         "longTerm": "Tidak ditemukan (persentase komunitas yang tetap aktif governance vs speculator tidak diukur; treasury opacity menimbulkan kepercayaan terbatas) [Phase 5 Treasury, Phase 6 Distribution undisclosed] (MEDIUM)",
@@ -1105,6 +1205,7 @@
       },
       "developer": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": null,
         "shortTerm": "SDK, IDL, docs publik; integrasi wallet/DEX lengkap; indexer data tersedia untuk analytics [Phase 7 Developer Ecosystem] (HIGH)",
         "longTerm": "Core programs open source; composability tinggi via CPI; tidak ada breaking change mayor post-TGE [Phase 4 Technical Upgrade History, Phase 7 Developer Ecosystem] (HIGH)",
@@ -1112,6 +1213,7 @@
       },
       "institution": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": null,
         "shortTerm": "Coinbase listing menandakan compliance tertentu; tapi tim anonim & BVI entity tetap hambatan [Phase 3 EV-014, Phase 2 Entity Kamino Team, Kamino Finance Ltd.] (MEDIUM)",
         "longTerm": "Tidak ditemukan (institutional adoption metrics tidak dipublikasikan)",
@@ -1119,6 +1221,7 @@
       },
       "validator": {
         "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
         "qualifier": null,
         "shortTerm": "Kamino tidak menjalankan validator; tidak ada staking ke validator set [Phase 7 Ecosystem Position, Phase 8 Adoption Metrics Validator Count \"tidak relevan\"] (HIGH)",
         "longTerm": "Tidak relevan",
@@ -1126,6 +1229,7 @@
       },
       "builder": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": null,
         "shortTerm": "Komposabilitas CPI memungkinkan build di atas Vaults/K-Lend/Multiply; points program Season 1 Tensor partnership menciptakan cross-protocol builder loop [Phase 3 EV-009, Phase 4 Core Components, Phase 7 Applications Tensor] (HIGH)",
         "longTerm": "DAO grants proposal (EV-021) sinyal dukungan builder; SDK & docs maintained [Phase 3 EV-021, Phase 7 Developer Ecosystem] (HIGH)",
@@ -1152,56 +1256,64 @@
     "events": [],
     "povOutcomes": {
       "founder": {
-        "verdict": "Tidak diketahui (tidak ada airdrop untuk dinilai)",
+        "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui (tidak ada airdrop untuk dinilai)",
         "qualifier": null,
         "shortTerm": "N/A",
         "longTerm": "N/A",
         "basis": "Tidak ada event airdrop"
       },
       "vc": {
-        "verdict": "Tidak diketahui (tidak ada airdrop untuk dinilai)",
+        "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui (tidak ada airdrop untuk dinilai)",
         "qualifier": null,
         "shortTerm": "N/A",
         "longTerm": "N/A",
         "basis": "Tidak ada event airdrop"
       },
       "retail": {
-        "verdict": "Tidak diketahui (tidak ada airdrop untuk dinilai)",
+        "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui (tidak ada airdrop untuk dinilai)",
         "qualifier": null,
         "shortTerm": "N/A",
         "longTerm": "N/A",
         "basis": "Tidak ada event airdrop"
       },
       "community": {
-        "verdict": "Tidak diketahui (tidak ada airdrop untuk dinilai)",
+        "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui (tidak ada airdrop untuk dinilai)",
         "qualifier": null,
         "shortTerm": "N/A",
         "longTerm": "N/A",
         "basis": "Tidak ada event airdrop"
       },
       "developer": {
-        "verdict": "Tidak diketahui (tidak ada airdrop untuk dinilai)",
+        "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui (tidak ada airdrop untuk dinilai)",
         "qualifier": null,
         "shortTerm": "N/A",
         "longTerm": "N/A",
         "basis": "Tidak ada event airdrop"
       },
       "institution": {
-        "verdict": "Tidak diketahui (tidak ada airdrop untuk dinilai)",
+        "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui (tidak ada airdrop untuk dinilai)",
         "qualifier": null,
         "shortTerm": "N/A",
         "longTerm": "N/A",
         "basis": "Tidak ada event airdrop"
       },
       "validator": {
-        "verdict": "Tidak berlaku (Maker tidak memiliki validator set sendiri; bergantung pada Ethereum/L2 validators)",
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak berlaku (Maker tidak memiliki validator set sendiri; bergantung pada Ethereum/L2 validators)",
         "qualifier": null,
         "shortTerm": "N/A",
         "longTerm": "N/A",
         "basis": "Phase 4 Consensus Mechanism — N/A"
       },
       "builder": {
-        "verdict": "Tidak diketahui (tidak ada airdrop untuk dinilai)",
+        "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui (tidak ada airdrop untuk dinilai)",
         "qualifier": null,
         "shortTerm": "N/A",
         "longTerm": "N/A",
@@ -1230,6 +1342,7 @@
     "povOutcomes": {
       "founder": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": "Stani Kulechov",
         "shortTerm": "Migrasi LEND→AAVE lancar; 81.25% supply terkunci di tangan early believers; Safety Module aktif dengan staking signifikan【Phase 3 EV-009】【Phase 6 Distribution】",
         "longTerm": "Tokenomics fixed supply 16M AAVE terjaga; tidak ada tekanan jual dari airdrop claimers; governance control tetap pada komunitas yang aligned【Phase 6 Supply】【Phase 9 Core Insights Insight 2】",
@@ -1237,6 +1350,7 @@
       },
       "vc": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": "Blockchain Capital, Framework Ventures, ParaFi, Standard Crypto, Blockchain.com Ventures",
         "shortTerm": "Investasi Series B $25M (Oct 2020) tidak dilusi oleh airdrop besar; token price discovery tanpa overhang claimers【Phase 5 Round 3】",
         "longTerm": "Early investors (Framework, 3AC, ParaFi dari private sale $3M+$4.5M Jul 2020) memegang AAVE via migrasi LEND atau pembelian secondary; tidak ada unlock cliff airdrop yang menimbulkan sell pressure tiba-tiba【Phase 5 Rounds 1-2】【Phase 6 Vesting Schedule】",
@@ -1244,6 +1358,7 @@
       },
       "retail": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": "pembeli LEND ICO & early AAVE buyers",
         "shortTerm": "Tidak ada dumper airdrop yang menekan harga; migrasi 100:1 transparan; early buyers LEND mendapat AAVE tanpa konkurensi claimers baru【Phase 3 EV-009】【Phase 6 Distribution】",
         "longTerm": "Supply fixed 16M sejak TGE; tidak ada inflasi dari airdrop; price appreciation didorong protocol growth bukan distribusi gratis【Phase 6 Supply】【Phase 8 Adoption Metrics】",
@@ -1251,6 +1366,7 @@
       },
       "community": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": "pengguna protokol Aave V1/V2 pre-TGE",
         "shortTerm": "Pengguna aktif V1 (launch Jan 2020) tidak mendapat reward retroactive; hanya pemegang LEND yang benefit【Phase 3 EV-005】【Phase 3 EV-009】",
         "longTerm": "Komunitas tumbuh via Safety Module staking, GHO facilitator rewards, dan grants dari Ecosystem Reserve — insentif berkelanjutan bukan one-time drop【Phase 3 EV-008】【Phase 3 EV-024】【Phase 6 Distribution】",
@@ -1258,6 +1374,7 @@
       },
       "developer": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": "builder di atas Aave",
         "shortTerm": "Tidak ada insentif token langsung untuk developer early; fokus pada tooling (SDK, Address Book) dan grants kemudian【Phase 7 Developer Ecosystem】",
         "longTerm": "Developer ecosystem tumbuh via Aave Grants DAO, BGD Labs Address Book, Aave Kit (planned) — sustainable funding bukan airdrop【Phase 2 Entity 42 Entity 82】【Phase 7 Developer Ecosystem】",
@@ -1265,6 +1382,7 @@
       },
       "institution": {
         "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
         "qualifier": "institusi yang menggunakan Aave Arc/Horizon",
         "shortTerm": "Institutional products (Arc Nov 2021, Horizon 2025) muncul setelah TGE; tidak terpengaruh keputusan airdrop 2020【Phase 3 EV-017】【Phase 2 Entity 19】",
         "longTerm": "Institutional adoption didorong permissioned access (KYC/AML), RWA lending, white-label — bukan token incentives【Phase 2 Entity 20 Entity 63】【Phase 7 Major Integrations】",
@@ -1272,6 +1390,7 @@
       },
       "validator": {
         "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
         "qualifier": "tidak ada validator pada Aave — protokol lending bukan chain",
         "shortTerm": "Aave bukan blockchain Layer 1; tidak ada validator set; Safety Module stakers berperan sebagai insurance backstop bukan validator【Phase 6 Utility Staking】",
         "longTerm": "Security model bergantung pada auditors, formal verification, bug bounty — bukan validator economics【Phase 4 Security Model】【Phase 7 Infrastructure Providers】",
@@ -1279,6 +1398,7 @@
       },
       "builder": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": "proyek yang compose/integrate Aave",
         "shortTerm": "Builder early (seperti Instadapp, DeFi Saver, Yearn) tidak mendapat airdrop AAVE; mengandalkan composability V1/V2 tanpa token incentive【Phase 3 EV-005】【Phase 3 EV-011】",
         "longTerm": "Builder benefit dari V3 modular architecture, V4 hub-and-spoke, stablecoin GHO, dan grants — sustainable integration value bukan token drop【Phase 4 Architecture V3 V4】【Phase 2 Entity 18】【Phase 7 Developer Ecosystem】",
@@ -1321,6 +1441,7 @@
     "povOutcomes": {
       "founder": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": "Mo Shaikh, Avery Ching",
         "shortTerm": "Mainnet launch lancar 17 Okt 2022; 100+ validator aktif dari AIT participants; exchange listing 9+ CEX hari berikutnya; narrative \"largest Series A L1\" tervalidasi【Phase 3 — EV-007, EV-008】(HIGH) [Aptos Blog Mainnet, Binance Listing]",
         "longTerm": "Aptos Labs tetap kontrol core dev (Petra Wallet, protocol upgrades); Foundation terpisah mengelola treasury; dual-entity structure berfungsi【Phase 9 — Evolution Pattern Fase 1】(HIGH) [Phase 9 Behavioral]",
@@ -1328,6 +1449,7 @@
       },
       "vc": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": "a16z, Multicoin, Binance Labs, Coinbase Ventures, Tiger Global, Apollo",
         "shortTerm": "Token liquid di pasar sekundER sehari post-mainnet; price discovery tertata; SAFT allocation 13.48% supply terkunci 1 tahun (cliff Okt 2023) melindungi downside【Phase 6 — Vesting Schedule Investors】(HIGH) [Whitepaper, Phase 5 Funding History]",
         "longTerm": "Vesting linear 4 tahun (Okt 2023–2026) memberikan exit liquidity bertahap; portfolio mark-up signifikan dari $2B→$4B valuation Series A→B【Phase 5 — Funding History】(HIGH) [Crunchbase, TechCrunch]",
@@ -1335,6 +1457,7 @@
       },
       "retail": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": "penerima AIT airdrop",
         "shortTerm": "Klaim APT gratis pada harga $6–$10; bisa langsung jual di Binance/Coinbase; early sellers menangkap $8–$12 peak awal Nov 2022【Phase 8 — Trading Markets】(MEDIUM) [CoinGecko APT price history]",
         "longTerm": "Harga turun ke $3–$4 sepanjang 2023 (bear market); hanya holders yang staking/delegate ke validator atau LP di Liquidswap/Thala yang recover via yield【Phase 8 — Market Timeline】(MEDIUM) [DefiLlama TVL, Token Terminal]",
@@ -1342,6 +1465,7 @@
       },
       "community": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": "AIT participants, grant recipients, ambassador",
         "shortTerm": "Merasa dihargai atas kontribusi testnet; airdrop menjadi \"proof of work\" bukan handout; komunitas Discord/Telegram aktif【Phase 2 — Entity: Discord, Telegram】(HIGH) [Aptos Community Links]",
         "longTerm": "Grant DAO (2024) memberi akses dana lanjutan; tapi treasury opacity dan circulating supply methodology conflict menciptakan trust gap【Phase 7 — Governance Ecosystem】【Phase 8 — Open Threads】(MEDIUM) [Foundation Grants, Phase 8 Open Threads]",
@@ -1349,6 +1473,7 @@
       },
       "developer": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": "Move devs, dApp builders",
         "shortTerm": "SDKs, CLI, Move Analyzer, Local Testnet siap saat mainnet; AIT participants sudah familiar tooling【Phase 4 — Development Framework】【Phase 7 — Developer Ecosystem】(HIGH) [Aptos Dev Docs, GitHub]",
         "longTerm": "Electric Capital rank #8–10 monthly active developers 2024; >500 proyek ekosistem; Move 2024 Edition (v1.8) meningkatkan DX【Phase 8 — Adoption Metrics】【Phase 3 — EV-029】(HIGH) [Electric Capital Report, GitHub Releases]",
@@ -1356,6 +1481,7 @@
       },
       "institution": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": "Google Cloud, AWS, NodeReal, Nodit, Fireblocks, Copper",
         "shortTerm": "Validator infrastructure partnerships Des 2022 (EV-014); enterprise RPC/indexer Jun 2024 (EV-028) — timing aligned dengan network maturity post-airdrop【Phase 3 — EV-014, EV-028】(HIGH) [Google Cloud Web3, NodeReal Blog]",
         "longTerm": "108 active validators Des 2024; production-grade RPC terpusat di 2 provider; institutional custody integrations live【Phase 8 — Adoption Metrics】【Phase 7 — Infrastructure Providers】(HIGH) [Explorer Validators, Phase 7 Infra]",
@@ -1363,6 +1489,7 @@
       },
       "validator": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": "AIT-1 participants yang jadi genesis validators",
         "shortTerm": "Mendapat delegasi stake awal dari airdrop recipients & Foundation; reward staking 7% APY inflationary dari epoch 1【Phase 6 — Inflation/Deflation】【Phase 4 — Consensus Mechanism】(HIGH) [Tokenomics, Consensus Docs]",
         "longTerm": "Validator set stabil 100+; tidak ada slashing; hardware requirements tinggi (32C/64GB/2TB) menciptakan barrier tapi cloud partnerships (GCP/AWS) membantu【Phase 7 — Ecosystem Risks】【Phase 4 — Known Technical Limitations】(HIGH) [Explorer Validators, Hardware Requirements]",
@@ -1370,6 +1497,7 @@
       },
       "builder": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": "DeFi/NFT/Infra founders di ekosistem",
         "shortTerm": "Liquidswap (Nov 2022), Thala (Jan 2023), Amnis (Feb 2023) launch cepat dengan liquidity dari airdrop recipients yang staking/LP【Phase 3 — EV-012, EV-015, EV-016】(HIGH) [DefiLlama Launch Dates]",
         "longTerm": "TVL peak $1B+ Mar 2024; >15 major DeFi protocols; Grants DAO mendanai infrastructure/builders 2024【Phase 8 — Adoption Metrics】【Phase 3 — EV-026】(HIGH) [DefiLlama, Foundation Grants]",
@@ -1406,6 +1534,7 @@
     "povOutcomes": {
       "founder": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": "Sky Mavis — Trung Nguyen, Aleksander Larsen, Tu Doan, Andy Ho",
         "shortTerm": "RON tersebar ke ribuan wallet aktif; staking participation tinggi (~60-80% circulating supply staked per 2024)【Phase 8 Adoption Metrics】(HIGH); gas fee burn mulai efektif【Phase 6 Inflation/Deflation RON】(HIGH); DPoS validator set live dengan 22 validator aktif【Phase 4 Consensus Mechanism】(HIGH)",
         "longTerm": "Validator set tetap didominasi early backers (Binance, Google Cloud, Animoca, Hashed, Delphi, Mechanism, DeFiance) — desentralisasi terbatas【Phase 7 Major Integrations Validators】(HIGH); RON price volatil, tidak ada hard cap supply reduction selain gas burn【Phase 6 Inflation/Deflation RON】(HIGH); Community rewards 250M RON sudah mostly claimed/vested, supply overhang dari Sky Mavis 30% (300M) vesting hingga Jan 2027【Phase 6 Vesting Schedule RON】(HIGH)",
@@ -1413,6 +1542,7 @@
       },
       "vc": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": "a16z Crypto, Accel, Paradigm, Animoca Brands, Galaxy Digital, Binance Labs, Hashed, Delphi Digital, Mechanism Capital, DeFiance Capital",
         "shortTerm": "Token native chain (RON) live dengan utility jelas; validator mereka (Binance, Animoca, Hashed, Delphi, Mechanism, DeFiance) mendapat stake & reward dari awal【Phase 7 Major Integrations Validators】(HIGH); tidak ada dilution dari public sale",
         "longTerm": "Validator reward 20% supply (200M RON) mengalir ke validator mereka selama bertahun-tahun【Phase 6 Distribution RON】(HIGH); tapi token price belum recover ke level yang memberikan ROI signifikan vs Series B valuasi $3B【Phase 8 Market Share RON Rank 100-200】(MEDIUM)",
@@ -1420,6 +1550,7 @@
       },
       "retail": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": "penerima Community Rewards claim",
         "shortTerm": "Bisa claim RON gratis via Ronin Wallet; harga RON awal volatil, banyak yang sell segera (estimasi pasar: claimers cenderung sell pressure tinggi) — data exact sell rate tidak ditemukan【Phase 8 Liquidity】(LOW)",
         "longTerm": "Pemegang yang hold & stake mendapat staking reward ~10-15% APY (variabel)【Phase 4 Consensus Mechanism】(MEDIUM); tapi RON price turun dari TGE level, real return negatif bagi early seller; tidak ada airdrop tambahan untuk holder RON sejak itu【Phase 3 Timeline】(HIGH)",
@@ -1427,6 +1558,7 @@
       },
       "community": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": "Axie Infinity DAO / AXS staker / YGG / Guild",
         "shortTerm": "Community Treasury (AXS) tidak terpengaruh langsung; RON distribution terpisah dari AXS governance【Phase 2 Entity: Axie Infinity Community Treasury】(HIGH); YGG & guild mendapat RON untuk scholar wallet mereka (jika eligible) tapi tidak ada data volume【Phase 3 EV-026】(LOW)",
         "longTerm": "DAO governance AXS tetap terpisah dari RON governance (RON on-chain voting belum full live 2024)【Phase 6 Governance RON】(HIGH); Guild harus manage RON untuk gas fee scholar — biaya operasional baru【Phase 6 Utility RON Gas】(HIGH)",
@@ -1434,6 +1566,7 @@
       },
       "developer": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": "Sky Mavis core dev / Third-party game dev di Ronin",
         "shortTerm": "Gas token native (RON) tersedia untuk deploy kontrak & transaksi game; Ronin SDK, Katana, Mavis Market, Wallet semua support RON native【Phase 4 Core Components】(HIGH); Third-party game (Pixels, Kuroro, Zoids, TMA) migrasi ke Ronin 2023-2024 dengan infra siap pakai【Phase 3 EV-025】【Phase 7 Major Integrations】(HIGH)",
         "longTerm": "Revenue protocol fee (Marketplace 4.25%, DEX 0.3%, Bridge fee) denominated RON/AXS — developer third-party ikut capture fee【Phase 5 Revenue Model】(HIGH); tapi scaling ceiling EVM single-threaded ~100-200 TPS membatasi game high-throughput【Phase 4 Known Limitations】(HIGH)",
@@ -1441,6 +1574,7 @@
       },
       "institution": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": "Binance, Coinbase, Google Cloud, Custodian, Market Maker Wintermute/Cumberland",
         "shortTerm": "Binance & Google Cloud jadi validator DPoS dengan stake besar, dapat reward block + gas fee【Phase 7 Major Integrations Validators】(HIGH); CEX listing RON dengan liquidity memadai (market maker Wintermute, Cumberland provide liquidity)【Phase 7 Exchange Ecosystem】(HIGH)",
         "longTerm": "Validator reward 200M RON (20% supply) mengalir ke institution selama bertahun-tahun【Phase 6 Distribution RON】(HIGH); Google Cloud infrastructure revenue dari hosting validator node【Phase 7 Infrastructure Providers】(HIGH); tapi regulatory risk US SEC Wells Notice (Mar 2024) menarget AXS/Katana/Ronin Bridge, tidak spesifik RON — tapi overhang chain-wide【Phase 3 EV-024】(MEDIUM)",
@@ -1448,6 +1582,7 @@
       },
       "validator": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": "22 aktif + standby",
         "shortTerm": "Staking RON live, block reward + gas fee distribuisi per epoch【Phase 4 Consensus Mechanism】(HIGH); Community rewards 250M RON + Validator rewards 200M RON memastikan stake awal tinggi【Phase 6 Distribution RON】(HIGH)",
         "longTerm": "Top validator terus didominasi early backers (Binance, Google Cloud, Animoca, Hashed, Delphi, Mechanism, DeFiance) — barrier to entry validator baru tinggi (min 250k RON self-stake)【Phase 4 Consensus Mechanism】【Phase 7 Major Integrations Validators】(HIGH); Slashing enforcement status unclear — risiko downtime tidak ter-slash【Phase 4 Known Limitations】(MEDIUM)",
@@ -1455,6 +1590,7 @@
       },
       "builder": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": "Third-party game dev, tooling dev, infra provider di Ronin",
         "shortTerm": "Full-stack infra ready (Chain, Bridge, DEX, Marketplace, Wallet, Naming, SDK) — tinggal build game logic【Phase 4 Core Components】(HIGH); Ronin Ecosystem Fund grant tersedia dari Series B treasury【Phase 5 Financial Dependencies】(HIGH)",
         "longTerm": "Pixels, Kuroro, Zoids, TMA berhasil migrasi/launch — proof of concept ecosystem【Phase 3 EV-025】【Phase 7 Major Integrations】(HIGH); tapi revenue share dari protocol fee ke builder tidak transparan【Phase 5 Revenue Model】(MEDIUM); Account Abstraction (ERC-4337) belum native — UX onboarding masih bergantung Ronin Wallet first-party【Phase 4 Known Limitations】(HIGH)",
@@ -1477,6 +1613,7 @@
     "povOutcomes": {
       "founder": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": "Eyal Hertzog, Guy Benartzi, Galia Benartzi, Bprotocol Foundation",
         "shortTerm": "N/A (tidak ada airdrop)",
         "longTerm": "N/A (tidak ada airdrop)",
@@ -1484,20 +1621,23 @@
       },
       "vc": {
         "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
         "qualifier": "Tim Draper/Draper Associates, Blockchain Capital, Fenbushi Capital, Kenetic Capital",
         "shortTerm": "N/A",
         "longTerm": "N/A",
         "basis": "Investor ICO 2017 sudah exit/hold via secondary market; tidak ada ronde equity baru; airdrop tidak mempengaruhi equity value【Phase 2 — Investors】【Phase 5 — Fundraising Mechanism】 (HIGH)"
       },
       "retail": {
-        "verdict": "Sebagian (positif net)",
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian (positif net)",
         "qualifier": "pembeli BNT di CEX/DEX, non-LP",
         "shortTerm": "Tidak ada tekanan jual airdrop claim (tidak ada airdrop = tidak ada sell pressure dari claimer)",
         "longTerm": "Tokenomics deflationary Vortex menguntungkan holder BNT jangka panjang (supply reduction via burn)",
         "basis": "Harga BNT tidak mengalami dump airdrop-typical; Vortex burn aktif sejak Oct 2021【Phase 6 — Inflation/Deflation】【Phase 8 — Trading Markets】 (MEDIUM)"
       },
       "community": {
-        "verdict": "Sebagian (positif net)",
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian (positif net)",
         "qualifier": "Discord/Telegram/DAO voters, stBNT holders",
         "shortTerm": "Tidak ada farming/claim friction; fokus pada staking yield (stBNT APR) dan governance",
         "longTerm": "DAO governance maturation tanpa noise airdrop hunter; proposals berkualitas (V2→V3 migration, LST whitelist)",
@@ -1505,6 +1645,7 @@
       },
       "developer": {
         "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
         "qualifier": "SDK users, subgraph queryers, integrator",
         "shortTerm": "N/A",
         "longTerm": "N/A",
@@ -1512,6 +1653,7 @@
       },
       "institution": {
         "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
         "qualifier": "Binance, Coinbase, Market Maker, Fund",
         "shortTerm": "N/A",
         "longTerm": "N/A",
@@ -1519,6 +1661,7 @@
       },
       "validator": {
         "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
         "qualifier": null,
         "shortTerm": "N/A",
         "longTerm": "N/A",
@@ -1526,6 +1669,7 @@
       },
       "builder": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": "dApp builder di atas Bancor, SDK integrator",
         "shortTerm": "N/A",
         "longTerm": "N/A",
@@ -1604,6 +1748,7 @@
     "povOutcomes": {
       "founder": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": "Tieshun Roquerre, Robert",
         "shortTerm": "Mainnet launch dengan $2B+ TVL day-1; 500k+ users onboarded; Blur integration delivered; CEX listings secured; narrative \"native yield L2\" established【Phase 3 — EV-006】【Phase 8 — Adoption Metrics TVL】 (HIGH)",
         "longTerm": "TVL decline 73% post-Season 1 ($1.48B → $400M) menunjukkan mercenary capital; Gold program sustain protocol-level TVL tapi user retention butuh Season 3; centralized control retained (sequencer, upgrade keys)【Phase 8 — Adoption Metrics TVL】【Phase 9 — Failure Factors TVL Crash】【Phase 9 — Recurring Behavioral Pattern】 (HIGH)",
@@ -1611,6 +1756,7 @@
       },
       "vc": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": "Paradigm, Standard Crypto",
         "shortTerm": "Token liquid di 4 major CEX; price discovery achieved; significant paper returns pada TGE price vs private round (assumed)【Phase 8 — Trading Markets】【Phase 5 — Funding History】 (HIGH)",
         "longTerm": "16,5% allocation vesting schedule undisclosed → unlock overhang uncertainty; no buyback/burn mechanism; TVL decline reduces fundamental valuation anchor【Phase 6 — Vesting Schedule Investors】【Phase 6 — Inflation/Deflation】【Phase 8 — Adoption Metrics TVL】 (HIGH)",
@@ -1618,6 +1764,7 @@
       },
       "retail": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": "penerima Season 1",
         "shortTerm": "Season 1 claim 100% unlocked at TGE Jun 2024; immediate sell pressure → price drop dari ~$0,03 ke ~$0,02 dalam minggu pertama【Phase 6 — Vesting Schedule Community】【Phase 8 — Market Timeline TGE】 (HIGH)",
         "longTerm": "Holder count >300k tapi TVL crash menunjukkan banyak exit; Season 2 mechanics expanded tapi reward value diluted by token price decline; no staking yield clarity【Phase 8 — Adoption Metrics Holders】【Phase 8 — Adoption Metrics TVL】【Phase 6 — Utility Staking】 (MEDIUM)",
@@ -1625,6 +1772,7 @@
       },
       "community": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": "active participants, Discord/Telegram",
         "shortTerm": "High engagement durante Points Season 1/2; Gold program creates builder activity; community sentiment positive during incentives【Phase 2 — Entity Blast Community】【Phase 3 — EV-002, EV-014】 (MEDIUM)",
         "longTerm": "Governance power minimal (Foundation executes); no treasury transparency; Season 3 uncertainty; centralized control persists【Phase 6 — Governance】【Phase 7 — Governance Ecosystem】【Phase 9 — Governance Decision Pattern】 (HIGH)",
@@ -1632,13 +1780,15 @@
       },
       "developer": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": "builders on Blast",
         "shortTerm": "Day-1 DeFi stack (Thruster, Ring, Wasabi); Gold incentives untuk protocols; EVM equivalence + SDK + Foundry/Hardhat support; low friction onboarding【Phase 3 — EV-008, EV-009, EV-010】【Phase 7 — Developer Ecosystem】【Phase 9 — Success Factors EVM Equivalence】 (HIGH)",
         "longTerm": "Gold emissions sustain protocol revenue; native yield as primitive untuk DeFi composability; tapi closed-source execution client limits customization【Phase 7 — Grant Program】【Phase 4 — Native Yield Distributor】【Phase 4 — Known Technical Limitations blast-geth】 (HIGH)",
         "basis": "Phase 3 EV-008 EV-009 EV-010, Phase 7 Developer Ecosystem, Phase 9 Success Factors, Phase 7 Grant Program, Phase 4 Native Yield, Phase 4 Known Limitations"
       },
       "institution": {
-        "verdict": "Gagal / Tidak relevan",
+        "verdict": "Gagal",
+        "verdictRaw": "Gagal / Tidak relevan",
         "qualifier": "custodians, market makers, funds",
         "shortTerm": "Single sequencer, permissioned proposer/challenger, no forced inclusion → custody integration blocked; no Fireblocks/Copper/Coinbase Custody support confirmed【Phase 7 — Ecosystem Risks Single Sequencer】【Phase 8 — Open Threads Institutional Custody】 (HIGH)",
         "longTerm": "Regulatory opacity (Cayman + US persons), audit reports not public, treasury opaque → institutional allocation unlikely tanpa compliance clarity【Phase 5 — Financial Risk Regulatory Exposure】【Phase 4 — Audit History】【Phase 5 — Treasury】 (HIGH)",
@@ -1646,6 +1796,7 @@
       },
       "validator": {
         "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
         "qualifier": null,
         "shortTerm": null,
         "longTerm": null,
@@ -1653,6 +1804,7 @@
       },
       "builder": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": "protokol DeFi ekosistem: Thruster, Ring, Wasabi, Kaito, dll",
         "shortTerm": "Gold program memberikan token emissions berbasis KPI; TVL dan volume bootstrap cepat; native yield integration sebagai differentiator produk【Phase 7 — Grant Program】【Phase 7 — Applications】【Phase 3 — EV-008, EV-009, EV-010, EV-011】 (HIGH)",
         "longTerm": "Dependency pada Gold emissions untuk user retention; token price decline mengurangi incentive value; protocol revenue butuh organic growth beyond Gold【Phase 9 — Financial Decision Pattern Gold Program】【Phase 8 — Adoption Metrics DEX Volume】【Phase 9 — Failure Factors TVL Crash】 (HIGH)",
@@ -1702,6 +1854,7 @@
     "povOutcomes": {
       "founder": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": "Guy Young, Ethena Labs Ltd.",
         "shortTerm": "TGE berhasil, DAO aktif day-1, CEX listings lancar, TVL naik cepat ke $3.4B peak Agustus 2024【Phase 3 — EV-011 to EV-029】.",
         "longTerm": "Season 2 menstabilkan supply $2.5-3B tapi treasury opacity & fee switch belum live menciptakan tekanan value capture ENA; vesting cliff April 2025 (45% supply) risiko sell pressure【Phase 3 — EV-032】【Phase 5 — Treasury】【Phase 6 — Vesting Schedule】【Phase 9 — Failure Factor 7】.",
@@ -1709,6 +1862,7 @@
       },
       "vc": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": "Dragonfly Capital, Maelstrom, Deribit, Bybit, OKX Ventures, Gemini, Huobi Ventures",
         "shortTerm": "Token liquid di top CEX dalam hari TGE, price discovery efisien, community allocation 15% circulating memberikan market depth【Phase 3 — EV-013 to EV-015】【Phase 8 — Trading Markets】.",
         "longTerm": "Token unlock cliff April 2025 (Investors 25% + Team 20%) memberikan exit liquidity pathway; protocol revenue model berfungsi (funding rate yield)【Phase 6 — Vesting Schedule】【Phase 5 — Revenue Model】.",
@@ -1716,6 +1870,7 @@
       },
       "retail": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": "penerima Season 1 airdrop",
         "shortTerm": "Bisa klaim 5M ENA total (rata-rata per wallet tidak diketahui), harga TGE ~$0.50-$0.60, bisa langsung jual di Binance/Coinbase/Kraken【Phase 8 — Trading Markets】【Phase 6 — TGE】.",
         "longTerm": "Harga ENA volatil, fee switch belum live → value capture spekulatif; Season 2 reward memerlukan capital aktif (LP, staking) bukan passive hold【Phase 3 — EV-033】【Phase 6 — Utility】【Phase 8 — Adoption Metrics】.",
@@ -1723,6 +1878,7 @@
       },
       "community": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": "Discord/Telegram/Snapshot voters",
         "shortTerm": "Governance aktif day-1, proposal pertama (EV-030) dieksekusi Agustus 2024, Season 2 incentive terus berjalan【Phase 3 — EV-012】【Phase 3 — EV-030】【Phase 3 — EV-031】.",
         "longTerm": "DAO mengendalikan parameter kritis (insurance fund, fee switch discussion), community allocation 30% terbesar di antara kategori【Phase 6 — Distribution】【Phase 6 — Governance】.",
@@ -1730,6 +1886,7 @@
       },
       "developer": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": "builder di atas Ethena/integrator",
         "shortTerm": "sUSDe ERC-4626 primitive siap integrasi, 7 major integrations live Q2 2024, SDK/docs tersedia【Phase 7 — Major Integrations】【Phase 4 — Core Components (sUSDe)】.",
         "longTerm": "Composability network effect kuat, sUSDe menjadi yield standard di DeFi, multi-chain deployment via LayerZero OFT memudah cross-chain development【Phase 7 — Infrastructure Providers】【Phase 8 — Narrative Position】.",
@@ -1737,13 +1894,15 @@
       },
       "institution": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": "Copper, Fireblocks, custodial users",
         "shortTerm": "Custody integration Juli 2024 (EV-027, EV-028) memungkinkan mint/redeem institutional grade【Phase 3 — EV-027】【Phase 3 — EV-028】.",
         "longTerm": "ClearLoop & Fireblocks workflow operational, compliance readiness, access ke yield crypto-native tanpa RWA【Phase 7 — Infrastructure Providers】【Phase 8 — Narrative Position (Institutional Onboarding)】.",
         "basis": "Phase 3 EV-027, EV-028, Phase 7 Infrastructure, Phase 8 Narrative (HIGH)."
       },
       "validator": {
-        "verdict": "Tidak relevan (Ethena bukan blockchain, tidak ada validator set)【Phase 1 — Foundation】【Phase 4 — Consensus Mechanism】.",
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan (Ethena bukan blockchain, tidak ada validator set)【Phase 1 — Foundation】【Phase 4 — Consensus Mechanism】.",
         "qualifier": null,
         "shortTerm": null,
         "longTerm": null,
@@ -1751,6 +1910,7 @@
       },
       "builder": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": "ecosystem partner: Pendle, Morpho, Aave, Curve, Equilibria, Ethereal, Spectra",
         "shortTerm": "sUSDe integration mendorong volume & TVL ke protokol masing-masing (Pendle PT/YT, Morpho Vaults, Aave reserves, Curve pools)【Phase 3 — EV-016 to EV-023】.",
         "longTerm": "Symbiotic relationship — Ethena butuh DeFi primitive untuk composability, partner butuh yield-bearing asset berkualitas; Season 2 incentive mengalir ke partner【Phase 7 — Major Integrations】【Phase 3 — EV-031】.",
@@ -1800,6 +1960,7 @@
     "povOutcomes": {
       "founder": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": "Andrej Radonjic, Chris Nguyen, Wynd Labs",
         "shortTerm": "TGE lancar, listing 6 CEX tier-1 tercapai, $150-300M vol/hari, zero exploit, komunitas puas claim airdrop; Wynd Labs tetap core dev via Foundation grant (HIGH) 【Phase 3 — EV-012/013/014】【Phase 8 — Trading Markets】【Phase 4 — Security Model Zero Exploit】",
         "longTerm": "Tekanan eksekusi Rollup (Q1-Q2 2025 target devnet) sangat tinggi; treasury GRASS concentrasi risiko besar; revenue data sales belum terbukti; founder reputation terikat pada delivery rollup (MEDIUM) 【Phase 4 — Known Limitations #1 #7】【Phase 5 — Financial Risk Concentration & Revenue】【Phase 9 — Behavioral Trade-offs Rollup vs Time-to-Market】",
@@ -1807,6 +1968,7 @@
       },
       "vc": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": "Polychain, Hack VC, Delphi Ventures, Brevan Howard Digital",
         "shortTerm": "Token liquid di 6 CEX + DeFi, price discovery berfungsi, vesting streaming on-chain (Streamflow/Cliff) berjalan tanpa cliff besar, paper gains signifikan dari seed valuation (HIGH) 【Phase 6 — Vesting Streaming】【Phase 8 — Trading Markets & Liquidity】【Phase 7 — Infrastructure Providers Streamflow】",
         "longTerm": "Unlock bulanan menciptakan sell pressure konstan; ROI bergantung pada apakah Rollup & data sales bisa drive demand token jangka panjang — belum terbukti (MEDIUM) 【Phase 6 — Vesting Schedule】【Phase 5 — Revenue Uncertainty】【Phase 9 — Behavioral Financial Decision Pattern Vesting】",
@@ -1814,6 +1976,7 @@
       },
       "retail": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": "Penerima Airdrop Epoch 1-7",
         "shortTerm": "120k+ wallet claim, banyak yang sell segera (harga turun dari ~$1.20 ke ~$0.80 dalam minggu pertama — estimasi), gas fee Solana rendah memudahkan claim & sell; yang hold mendapat staking yield ~15-25% APR awal (MEDIUM) 【Phase 8 — Trading Markets Price Discovery】【Phase 3 — EV-013 Staking Live】【Phase 8 — Adoption Metrics Holders】",
         "longTerm": "Retensi holder turun drastis (estimasi <20% holder asli tetap setelah 90 hari — pola standar airdrop 2024); nilai portofolio bergantung pada Rollup delivery & AI data revenue (LOW) 【Phase 8 — Adoption Metrics Retention Not Disclosed】【Phase 9 — Behavioral Pattern Vanity Metrics vs Real Metrics】",
@@ -1821,6 +1984,7 @@
       },
       "community": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": "Node Operators, Discord, Referral Builders",
         "shortTerm": "Validasi usaha 16 bulan farming poin; referral bonus termaktub; NFT badge soulbound sebagai reputasi; tapi banyak keluh kesah alokasi \"terlalu kecil\" vs biaya listrik/internet (MEDIUM) 【Phase 3 — EV-016 NFT Badges】【Phase 7 — Major Integrations Tensor/Magic Eden】【Phase 8 — Community Discord Sentiment】",
         "longTerm": "Transisi dari \"point farmer\" ke \"staker/builder\" butuh utility nyata; Ecosystem Incentives Program (Nov 2024) mulai menarik builder tapi masih awal; komunitas besar tapi passive (HIGH) 【Phase 3 — EV-015 Ecosystem Incentives】【Phase 7 — Developer Ecosystem Grants】【Phase 9 — Behavioral Pattern Community Growth Metrics】",
@@ -1828,6 +1992,7 @@
       },
       "developer": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": "Builder di SDK, Rollup, Data Apps",
         "shortTerm": "SDK TypeScript/Rust tersedia, dokumentasi lengkap, hackathon Superteam/Colosseum dengan bounty Grass, Grant Foundation dibuka — low barrier to entry (HIGH) 【Phase 7 — Developer Ecosystem SDK/Hackathon/Grants】【Phase 3 — EV-015 Ecosystem Incentives】",
         "longTerm": "Sovereign Data Rollup devnet (target 2025) akan membuka use case baru (ZK verified data, AI training data marketplace) — high option value bagi builder early (MEDIUM) 【Phase 3 — EV-011 Rollup Announcement】【Phase 4 — Architecture Rollup】【Phase 7 — External Dependencies RISC Zero/Intel TDX】",
@@ -1835,6 +2000,7 @@
       },
       "institution": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": "Market Maker Wintermute/GSR, CEX, Fund",
         "shortTerm": "Likuiditas mendalam multi-venue (6 CEX + 2 DEX + perp), spread ketat, volume tinggi, borrow/lend tersedia (Kamino), hedging perp (Drift) — kondisi ideal untuk MM & fund (HIGH) 【Phase 7 — Major Integrations Wintermute/GSR】【Phase 8 — Liquidity Sources Major CEX/DEX/Perp】【Phase 3 — EV-014 DeFi Integrations】",
         "longTerm": "Bergantung pada organic volume (bukan insentif farming) & fundamental demand token (data sales, rollup fees) — belum ada visibility (MEDIUM) 【Phase 5 — Revenue Model】【Phase 8 — Trading Markets Organic vs Incentivized】",
@@ -1842,6 +2008,7 @@
       },
       "validator": {
         "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
         "qualifier": "Solana Validators, Jito Validators",
         "shortTerm": null,
         "longTerm": null,
@@ -1849,6 +2016,7 @@
       },
       "builder": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": "AI Data Buyers, Enterprise, Protocol Integrators",
         "shortTerm": "Tidak ada publikasi enterprise deal/LOI; Sovereign Data Rollup belum live; data purchase API belum terbuka publik; hanya roadmap & naratif (LOW) 【Phase 5 — Revenue Model Enterprise Data Sales Early】【Phase 3 — EV-011 Rollup Announcement】【Phase 7 — Ecosystem Grants for Data Apps】",
         "longTerm": "Jika Rollup live & ZK/TEE terbukti cost-effective, Grass bisa jadi data layer utama untuk AI training — high upside tapi execution risk sangat tinggi (LOW) 【Phase 4 — Known Limitations #7】【Phase 8 — Narrative AI Data Layer】【Phase 9 — Behavioral Trade-offs Custom Rollup】",
@@ -1871,6 +2039,7 @@
     "povOutcomes": {
       "founder": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": "Konstantin Lomashuk, Vasiliy Shapovalov, P2P.org",
         "shortTerm": "Token tersebar ke ribuan address via LM; likuiditas Curve stETH/ETH menjadi terdalam di DeFi (>50% volume historis)【Phase 7 — Major Integrations】; stETH peg stabil",
         "longTerm": "Distribusi 100M LDO selesai Jan 2022 tanpa sisa token community terkunci; founder/team/investor vesting terpisah tidak terganggu【Phase 6 — Vesting Schedule】",
@@ -1878,6 +2047,7 @@
       },
       "vc": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": "Paradigm, a16z, Dragonfly Capital, Variant Fund, Robot Ventures",
         "shortTerm": "Alokasi investor 22.18% (221.8M LDO) cliff 12 bulan + vesting 24-36 bulan terjaga; tidak ada tekanan jual dari community allocation (LM reward linear 12 bulan)【Phase 6 — Vesting Schedule】",
         "longTerm": "Tokenomics terbukti sustainable; fee switch 10% aktif 2024 menciptakan revenue DAO ~$45-55M/tahun【Phase 3 — EV-020】【Phase 8 — Adoption Metrics】; valuation naik $73M → >$1B Series B【Phase 3 — EV-011】",
@@ -1885,6 +2055,7 @@
       },
       "retail": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": "penerima Liquidity Mining reward",
         "shortTerm": "Pengguna dengan modal besar (whale) memperoleh LDO signifikan via LM APY tinggi awal 2021; pengguna kecil mendapat reward proporsional tapi gas cost Ethereum mainnet 2021 ($50-100/tx) mengurangi net yield",
         "longTerm": "Sebagian besar LM reward dijual segera (tekanan jual konstan 2021); harga LDO turun dari puncak ~$7 (Mei 2021) ke ~$1 (Akhir 2021)【Phase 8 — Market Timeline】; tidak ada data retensi on-chain resmi",
@@ -1892,6 +2063,7 @@
       },
       "community": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": "pengguna stETH, token holder, DAO participants",
         "shortTerm": "stETH/ETH liquidity Curve menjadi paling dalam; memungkinkan swap besar tanpa slippage; DAO treasury menerima 36.3% supply + fee revenue kemudian",
         "longTerm": "Governance aktif (fee switch, V2 upgrade, sunset products, operator expansion) — community benar-benar mengontrol protokol via LDO【Phase 3 — EV-013】【Phase 3 — EV-014】【Phase 3 — EV-020】【Phase 3 — EV-021】",
@@ -1899,6 +2071,7 @@
       },
       "developer": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": "integrator DeFi, builder di atas stETH/wstETH",
         "shortTerm": "Deep liquidity stETH/ETH memungkinkan integrasi Aave, Maker, Yearn dengan collateral factor tinggi【Phase 7 — Major Integrations】",
         "longTerm": "stETH/wstETH menjadi \"base layer\" DeFi; wstETH supply >1M token (Jan 2024)【Phase 3 — EV-023】; SDK, API, dokumentasi matang【Phase 7 — Developer Ecosystem】",
@@ -1906,13 +2079,15 @@
       },
       "institution": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": "fund, market maker, custodian",
         "shortTerm": "LDO listed di Binance, Coinbase, Kraken, Bybit, OKX (spot + perpetual)【Phase 8 — Trading Markets】; liquidity mining menciptakan order book awal",
         "longTerm": "Institutional staking via Lido (stETH/wstETH) menjadi standar; custody support Ledger, Trezor, Fireblocks, Coinbase Prime【Phase 7 — Wallet Ecosystem】; regulatory clarity via Cayman Foundation【Phase 3 — EV-007】",
         "basis": "[Phase 8 — Trading Markets, HIGH] [Phase 7 — Wallet Ecosystem, HIGH] [Phase 3 — EV-007, HIGH]"
       },
       "validator": {
-        "verdict": "Tidak relevan (validator tidak menerima airdrop; mereka menerima fee 5% dari rewards via protokol)【Phase 5 — Revenue Model】",
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan (validator tidak menerima airdrop; mereka menerima fee 5% dari rewards via protokol)【Phase 5 — Revenue Model】",
         "qualifier": "Node Operator Lido",
         "shortTerm": "N/A",
         "longTerm": "N/A",
@@ -1920,6 +2095,7 @@
       },
       "builder": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": "protokol yang build di atas Lido: EigenLayer, Pendle, Morpho, dll",
         "shortTerm": "wstETH (non-rebasing wrapper) tersedia dengan likuiditas mendalam; mudah diintegrasikan",
         "longTerm": "EigenLayer menerima wstETH sebagai LRT dominan (>50% TVL awal)【Phase 7 — Major Integrations】; Pendle, Morpho, Yearn build strategies di atas wstETH【Phase 7 — Applications】",
@@ -1958,6 +2134,7 @@
     "povOutcomes": {
       "founder": {
         "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
         "qualifier": "Li Ming, Lei Yang, Shuyao Kong via MegaETH Labs",
         "shortTerm": "Tidak ada beban distribusi token, legal review, atau claim infrastructure; fokus penuh pada execution engine validation",
         "longTerm": "Fleksibilitas tokenomics terjaga; risiko komunitas tidak terbentuk organik sebelum mainnet",
@@ -1965,6 +2142,7 @@
       },
       "vc": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": "DragonFly, Figment",
         "shortTerm": "Tidak ada tekanan unlock community allocation yang mendorong harga turun; token warrant/SAFE mereka tidak terdilusi prematur",
         "longTerm": "Butuh liquidity event (TGE) untuk return; delay terlalu lama berisiko opportunitas pasar",
@@ -1972,6 +2150,7 @@
       },
       "retail": {
         "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
         "qualifier": "pengguna testnet via faucet",
         "shortTerm": "Mendapat testnet ETH gratis untuk testing; tidak ada ekspektasi reward finansial karena tidak dijanjikan",
         "longTerm": "Jika airdrop datang nanti, early tester bisa qualified; tapi tidak ada jaminan",
@@ -1979,6 +2158,7 @@
       },
       "community": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": "Discord, Telegram, X followers",
         "shortTerm": "Narasi \"Real-time Blockchain\" menarik perhatian tanpa noise airdrop hunter; komunitas murni teknis",
         "longTerm": "Risiko \"vaporware\" narrative jika mainnet delay dan tidak ada token; community retention bergantung pada technical delivery",
@@ -1986,6 +2166,7 @@
       },
       "developer": {
         "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
         "qualifier": "builder di testnet",
         "shortTerm": "EVM compatibility penuh, tooling standar (Foundry, Hardhat, viem) works tanpa insentif token; building untuk technical merit",
         "longTerm": "Tidak ada grant program, hackathon, atau ecosystem fund — risiko builder churn ke L2 lain yang punya incentives",
@@ -1993,6 +2174,7 @@
       },
       "institution": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": "potensial validator, infrastructure provider",
         "shortTerm": "Tidak ada staking token atau validator set untuk dijalankan; hanya RPC/infra support",
         "longTerm": "Figment (investor) sudah sebagai infra partner; institution lain menunggu mainnet + tokenomics clarity",
@@ -2000,6 +2182,7 @@
       },
       "validator": {
         "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
         "qualifier": "sequencer operator",
         "shortTerm": "Hanya MegaETH Labs yang menjalankan sequencer (centralized); tidak ada validator set terdesentralisasi",
         "longTerm": "Desentralisasi sequencer direncanakan tapi tanpa timeline/spesifikasi",
@@ -2007,6 +2190,7 @@
       },
       "builder": {
         "verdict": "Gagal",
+        "verdictRaw": "Gagal",
         "qualifier": "ecosystem app developer",
         "shortTerm": "Tidak ada insentif (grant, points, airdrop allocation) untuk deploy app di testnet; 0 third-party apps terverifikasi",
         "longTerm": "Cold start problem pada mainnet — tidak ada app siap pakai, tidak ada user base terbiasa dengan ecosystem",
@@ -2034,6 +2218,7 @@
     "povOutcomes": {
       "founder": {
         "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
         "qualifier": "Monad Labs Inc., Keone Hon/James Hunsaker/Eunice Giarta",
         "shortTerm": "Tidak ada airdrop = tidak ada biaya distribusi, tidak ada tekanan harga, tidak ada sybil noise di testnet; fokus 100% pada engineering delivery.",
         "longTerm": "Fleksibilitas tokenomics penuh terjaga hingga mainnet; bisa desain airdrop yang aligned dengan validator economics dan governance pasca-launch.",
@@ -2041,6 +2226,7 @@
       },
       "vc": {
         "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
         "qualifier": "Series A Investors — nama tidak diungkapkan",
         "shortTerm": "Tidak ada token = tidak ada mark-to-market volatility, tidak ada unlock schedule pressure; equity value terikat pada technical milestone (mainnet launch).",
         "longTerm": "Jika airdrop dilakukan pasca-mainnet, dilution terhadap equity holder minimal karena investor memegang equity Monad Labs Inc., bukan token allocation (kecuali ada SAFT tersembunyi — tidak terverifikasi).",
@@ -2048,6 +2234,7 @@
       },
       "retail": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": "pengguna testnet, calon penerima airdrop masa depan",
         "shortTerm": "Tidak ada airdrop = tidak ada \"free money\", tidak ada FOMO, tidak ada sybil farming; testnet participation murni untuk technical validation/early access.",
         "longTerm": "Jika airdrop datang, kriteria akan berbasis kontribusi nyata (deploy contract, provide liquidity, run validator) bukan wallet activity farming — karena testnet tidak mengincentivasi volume.",
@@ -2055,13 +2242,15 @@
       },
       "community": {
         "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
         "qualifier": "Discord/Twitter/Telegram members",
         "shortTerm": "Komunitas fokus pada technical discussion, bug reporting, tooling build — bukan \"wen airdrop\" discourse.",
         "longTerm": "Community health lebih bersih tanpa airdrop expectation; tapi risiko disengagement jika mainnet delay dan tidak ada incentive bridge.",
         "basis": "Phase 7 Community (active technical discourse), Phase 9 Pola 3 (MEDIUM) [Discord, https://discord.gg/monad]."
       },
       "developer": {
-        "verdict": "Sebagian (positif)",
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian (positif)",
         "qualifier": "builder di testnet",
         "shortTerm": "Zero switching cost (EVM compatible), tidak perlu optimize untuk points/airdrop criteria — bangun produk yang butuh parallel execution.",
         "longTerm": "Jika airdrop berbasis technical contribution (contract deployment, TVL, volume), developer early adopter mendapat reward alami; jika berbasis social/farming, misalignment.",
@@ -2069,6 +2258,7 @@
       },
       "institution": {
         "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
         "qualifier": "exchange, market maker, custodian",
         "shortTerm": "Tidak ada token = tidak ada listing discussion, tidak ada market making agreement, tidak ada custody need.",
         "longTerm": "Airdrop pasca-mainnet akan menciptakan initial liquidity event — exchange butuh tokenomics clarity, unlock schedule, jurisdictional clarity sebelum listing.",
@@ -2076,13 +2266,15 @@
       },
       "validator": {
         "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
         "qualifier": "calon validator mainnet",
         "shortTerm": "Testnet validator berjalan tanpa token reward (testnet token tidak bernilai); operator test infrastructure untuk technical readiness.",
         "longTerm": "Airdrop/token allocation untuk validator set penting untuk bootstrapping security — namun validator economics (staking min, reward curve, slashing) belum dipublikasikan.",
         "basis": "Phase 4 Consensus Mechanism (slashing planned not parameterized), Phase 7 Infrastructure Providers (validator operators) (MEDIUM) [Monad Docs, https://docs.monad.xyz/validators]."
       },
       "builder": {
-        "verdict": "Sebagian (positif)",
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian (positif)",
         "qualifier": "ecosystem project founder",
         "shortTerm": "Bangun di testnet tanpa biaya opportunity cost farming airdrop chain lain; tooling familiar = faster iteration.",
         "longTerm": "Jika airdrop allocation ada untuk ecosystem projects (bukan individual wallet), builder early adopter benefit; jika hanya retail airdrop, builder tidak mendapat allocation khusus.",
@@ -2110,56 +2302,64 @@
     "events": [],
     "povOutcomes": {
       "founder": {
-        "verdict": "Tidak relevan (belum ada airdrop)",
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan (belum ada airdrop)",
         "qualifier": null,
         "shortTerm": null,
         "longTerm": null,
         "basis": null
       },
       "vc": {
-        "verdict": "Tidak relevan (belum ada airdrop)",
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan (belum ada airdrop)",
         "qualifier": "Series A investors undisclosed",
         "shortTerm": null,
         "longTerm": null,
         "basis": null
       },
       "retail": {
-        "verdict": "Tidak relevan (belum ada airdrop)",
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan (belum ada airdrop)",
         "qualifier": "potensial penerima testnet/user",
         "shortTerm": null,
         "longTerm": null,
         "basis": null
       },
       "community": {
-        "verdict": "Tidak relevan (belum ada airdrop)",
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan (belum ada airdrop)",
         "qualifier": "Discord/testnet participants",
         "shortTerm": null,
         "longTerm": null,
         "basis": null
       },
       "developer": {
-        "verdict": "Tidak relevan (belum ada airdrop)",
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan (belum ada airdrop)",
         "qualifier": "builder di Movement SDK/MEVM",
         "shortTerm": null,
         "longTerm": null,
         "basis": null
       },
       "institution": {
-        "verdict": "Tidak relevan (belum ada airdrop)",
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan (belum ada airdrop)",
         "qualifier": "potensial market maker/liquidity provider",
         "shortTerm": null,
         "longTerm": null,
         "basis": null
       },
       "validator": {
-        "verdict": "Tidak relevan (belum ada airdrop)",
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan (belum ada airdrop)",
         "qualifier": "future decentralized sequencer",
         "shortTerm": null,
         "longTerm": null,
         "basis": null
       },
       "builder": {
-        "verdict": "Tidak relevan (belum ada airdrop)",
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan (belum ada airdrop)",
         "qualifier": "ecosystem app developer",
         "shortTerm": null,
         "longTerm": null,
@@ -2208,6 +2408,7 @@
     "povOutcomes": {
       "founder": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": "Open Builders / Sasha Plotnikov / Mad Tail",
         "shortTerm": "11M+ wallet claim hari TGE, market cap >$1.5B dalam jam, viral media coverage, validasi \"largest consumer crypto onboarding\" narrative, CEX listings tier-1 tercapai tanpa biaya listing fee besar (liquidity provided by community)【Phase 3 — EV-005】【Phase 8 — Adoption Metrics】.",
         "longTerm": "50M+ lifetime users (Des 2024), platform flywheel hidup (Explore/Earn/Wallet), revenue diversification (Ads + Earn fees) berjalan, team/ecosystem 22% supply tetap terkendali tanpa vesting pressure publik, posisi first-mover di Telegram Mini App terjaga【Phase 3 — EV-012】【Phase 8 — Market Position】【Phase 5 — Revenue Model】.",
@@ -2215,6 +2416,7 @@
       },
       "vc": {
         "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
         "qualifier": "Tidak ada investor VC publik",
         "shortTerm": "Tidak ada investor VC untuk melaporkan outcome.",
         "longTerm": "Tidak ada investor VC.",
@@ -2222,6 +2424,7 @@
       },
       "retail": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": "Penerima TGE claim",
         "shortTerm": "Kebebasan instan menjual/hold; early claimers yang menjual di $0.01+ memperoleh profit signifikan dari aktivitas gratis; late claimers menghadapi tekanan harga turun pasca-TGE (NOT turun ke ~$0.004 Juli 2024)【Phase 8 — Market Timeline】【CoinGecko NOT Historical】.",
         "longTerm": "Holders yang bertahan mendapat utility: Explore access, Earn campaigns (50+), Governance voting, Wallet AA gasless, NFT Genesis benefit; price recovery ke $0.015+ Q4 2024 memberikan paper gain bagi holder jangka panjang【Phase 6 — Utility】【Phase 8 — Adoption Metrics】【CoinGecko NOT Historical】.",
@@ -2229,6 +2432,7 @@
       },
       "community": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": "Pengguna aktif mining & post-TGE",
         "shortTerm": "Komunitas merasa divalidasi — 78% supply ke mereka, tidak ada insider allocation; governance Snapshot dibuka 2 bulan pasca-TGE memberi suara【Phase 3 — EV-009】【Phase 6 — Governance】.",
         "longTerm": "Ecosystem flywheel berfungsi — Earn campaigns mendistribusikan token partner (Tonstakers, bemo, TonWhales) ke NOT holders; Wallet AA 2M+ deployments mempermudah onboarding teman/keluarga; komunitas tumbuh organik via referral Explore/Earn【Phase 3 — EV-008】【Phase 3 — EV-010】【Phase 8 — Adoption Metrics】.",
@@ -2236,6 +2440,7 @@
       },
       "developer": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": "Builder di ekosistem TON / Mini App",
         "shortTerm": "Notcoin Explore jadi launchpad discovery untuk Mini App lain; Earn campaigns jadi saluran user acquisition berbayar hasil (fee ke Notcoin, reward ke user)【Phase 3 — EV-006】【Phase 3 — EV-008】.",
         "longTerm": "Notcoin Wallet AA (ERC-4337) jadi reference implementation & onboarding tool untuk developer lain; Tonapi & TonConnect adoption meningkat via Notcoin integration; 50M+ user base jadi addressable market bagi builder TON【Phase 3 — EV-010】【Phase 7 — Developer Ecosystem】【Phase 8 — Narrative Position】.",
@@ -2243,6 +2448,7 @@
       },
       "institution": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": "CEX / Market Maker / Fund",
         "shortTerm": "Binance/Bybit/OKX mendapat volume besar NOT/USDT dari hari pertama ($150-300M 24h vol Jan 2025), listing fee minimal karena community-provided liquidity; market maker mendapat order book depth dari 11M+ holders【Phase 8 — Trading Markets】【Phase 8 — Liquidity】.",
         "longTerm": "NOT menjadi staple asset di TON ecosystem di CEX; perpetual contracts aktif di 5 CEX besar; tapi team allocation opacity (22% no vesting) menciptakan overhang risk yang tidak terukur bagi risk management institusional【Phase 8 — Trading Markets】【Phase 6 — Vesting Schedule】【Phase 5 — Financial Risk】.",
@@ -2250,6 +2456,7 @@
       },
       "validator": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": "TON Validators",
         "shortTerm": "TGE menghasilkan 150M+ Jetton transfer events (Jan 2025), meningkatkan transaction fees & block space usage di TON mainnet【Phase 8 — Adoption Metrics: 150M+ transfers】.",
         "longTerm": "Notcoin Wallet AA (Paymaster/Bundler) menambahkan tipe transaksi baru (batched, gasless) yang validator harus support; DEX volume (Dedust/Ston.fi) menambah MEV/fee opportunities; tapi Notcoin tidak menjalankan validator sendiri, tidak ada stake delegation ke validator spesifik【Phase 3 — EV-010】【Phase 8 — Liquidity】.",
@@ -2257,6 +2464,7 @@
       },
       "builder": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": "Proyek TON yang pakai Notcoin Explore/Earn",
         "shortTerm": "50+ proyek (Tonstakers, bemo, TonWhales, dll) menjalankan kampanye Earn, mendapat user acquisition berbayar hasil (hanya bayar reward jika user complete quest)【Phase 3 — EV-008】【Phase 8 — Adoption Metrics】.",
         "longTerm": "Notcoin jadi \"Product Hunt for Mini Apps\" — builder baru dapat distribusi instan ke 50M+ users via Explore; fee model align incentives (Notcoin hanya untung kalau kampanye berhasil)【Phase 3 — EV-006】【Phase 5 — Revenue Model】【Phase 8 — Narrative Position】.",
@@ -2285,6 +2493,7 @@
     "povOutcomes": {
       "founder": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": "Zeus, War1, Juan",
         "shortTerm": "OHM launch tanpa tekanan jual VC; treasury mengumpulkan $100M+ dalam bulan pertama (on-chain data); community ownership narrative terbangun kuat. [Phase 3 EV-002; Phase 8 Market Timeline] (HIGH) [https://etherscan.io/token/0x383518188c0c6d7730d91b2c03a03c837814a899]",
         "longTerm": "Protocol-owned liquidity model proven sustainable; Olympus Pro menjadi revenue diversification; no investor overhang memungkinkan governance decisions tanpa tekanan eksternal. [Phase 3 EV-006, EV-008; Phase 9 Strategic Trade-offs Trade-off 4] (HIGH) [https://blog.olympusdao.finance/olympus-pro-partners]",
@@ -2292,6 +2501,7 @@
       },
       "vc": {
         "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
         "qualifier": "tidak ada investor Olympus",
         "shortTerm": "Tidak ada VC allocation, jadi tidak ada POV VC Olympus. Beberapa VC mungkin membeli OHM di secondary market post-launch. [Phase 5 Funding History; Phase 6 Distribution] (HIGH) [https://blog.olympusdao.finance/launching-olympus-ohm-2021-03-20]",
         "longTerm": "N/A",
@@ -2299,6 +2509,7 @@
       },
       "retail": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": "bonding/staking participants 2021",
         "shortTerm": "Early bonders memperoleh OHM dengan diskon signifikan (bond price < market price) dan vesting 5 hari; high APY stOHM (1,000%+ awal) menarik capital. [Phase 3 EV-002; Phase 4 Core Components Bonding Module; Phase 6 Utility Staking] (HIGH) [https://docs.olympusdao.finance/main/bonding]",
         "longTerm": "OHM price turun dari $1,400+ (peak 2021-04) ke <$10 (2023) — bonders early yang hold mengalami loss besar; stakers menerima rebasing tapi nominal value drop. Vesting 5 hari melindungi sebagian dari immediate dump. [Phase 8 Market Timeline; Phase 6 Inflation Mechanism high APY early] (HIGH) [https://coingecko.com/en/coins/olympus]",
@@ -2306,6 +2517,7 @@
       },
       "community": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": "Discord/Forum/Twitter participants",
         "shortTerm": "Komunitas tumbuh cepat berkat high APY narrative dan \"3,3\" meme (stake, don't sell); governance participation via gOHM dari 2021-07. [Phase 3 EV-005; Phase 7 Community; Phase 8 Narrative Position] (HIGH) [https://discord.gg/olympusdao]",
         "longTerm": "Bear market 2022-2023 mengurangi aktivitas; tidak ada airdrop/retroactive reward untuk loyal community; beberapa merasa \"diluted\" oleh emisisi rebasing terus-menerus tanpa value capture. [Phase 6 Inflation Mechanism; Phase 7 Community; Phase 9 Failure Factors Factor 4 revenue cyclical] (MEDIUM) [https://forum.olympusdao.finance]",
@@ -2313,6 +2525,7 @@
       },
       "developer": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": "core contributors, Olympus Pro integrators",
         "shortTerm": "Kontributor dibayar via DAO treasury proposals (bukan token allocation); Olympus Pro launch (2022) menciptakan dev work untuk partner integrations (Frax, Lido, Tokemak). [Phase 5 Financial Dependencies; Phase 3 EV-006, EV-009; Phase 7 Major Integrations] (HIGH) [https://forum.olympusdao.finance/t/contributor-onboarding/1234]",
         "longTerm": "Modular architecture (V2→V3) memungkinkan developer contribution tanpa migration risk; SDK dan subgraph tersedia untuk third-party builders. [Phase 4 Technical Upgrade History; Phase 7 Developer Ecosystem] (HIGH) [https://github.com/OlympusDAO/olympus-v3]",
@@ -2320,6 +2533,7 @@
       },
       "institution": {
         "verdict": "Sukses",
+        "verdictRaw": "Sukses",
         "qualifier": "DAO treasury managers, partner protocols",
         "shortTerm": "Olympus Pro (2022) memungkinkan Frax, Lido, Tokemak mengakuisisi POL via Olympus bonds — institusi memperoleh bonding infrastructure tanpa build sendiri. [Phase 3 EV-009; Phase 7 Major Integrations Olympus Pro + Frax/Lido/Tokemak] (HIGH) [https://blog.olympusdao.finance/olympus-pro-partners]",
         "longTerm": "POL model validasi sebagai sustainable alternative to liquidity mining; Olympus menjadi infrastructure layer untuk DAO treasury management. [Phase 8 Narrative Position POL Main Narrative; Phase 9 Success Factors Factor 4 Olympus Pro moat] (HIGH) [https://docs.olympusdao.finance/main/products/olympus-pro]",
@@ -2327,6 +2541,7 @@
       },
       "validator": {
         "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
         "qualifier": null,
         "shortTerm": "Olympus adalah application layer di Ethereum/Arbitrum/Base; tidak punya validator set sendiri. Konsensus diwarisi dari L1/L2. [Phase 4 Consensus Mechanism; Phase 7 Governance Ecosystem Validator Group] (HIGH) [https://docs.olympusdao.finance/main/protocol]",
         "longTerm": "N/A",
@@ -2334,6 +2549,7 @@
       },
       "builder": {
         "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
         "qualifier": "third-party integrators via SDK/Subgraph",
         "shortTerm": "Olympus SDK dan Subgraph tersedia untuk integrasi bonding/staking/governance; tapi tidak ada grant program atau hackathon support tercatat. [Phase 7 Developer Ecosystem SDK, Subgraphs, Grant Program] (MEDIUM) [https://github.com/OlympusDAO/olympus-sdk]",
         "longTerm": "Tidak ada ecosystem fund untuk mendanai builders; integrasi terbatas pada partner Olympus Pro yang dipilih tim core. [Phase 7 Grant Program \"tidak diketahui\"; Phase 8 Open Threads] (LOW) [https://forum.olympusdao.finance]",

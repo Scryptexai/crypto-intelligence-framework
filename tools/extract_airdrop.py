@@ -48,6 +48,44 @@ _pov_alt = "|".join(POV_NAMES)
 
 VALID_STATUS = ["Sudah dilakukan", "Sedang berjalan", "Diumumkan belum eksekusi", "Belum ada"]
 
+# The five verdicts the prompt asks for, and the phrasings reports actually used for them.
+# Across 27 projects the model produced eight distinct strings for five meanings -- "Tidak
+# relevan", "Tidak berlaku", "Tidak diterapkan" and "Tidak berkaitan" all mean the same thing,
+# and "Gagal / Tidak relevan" packs two into one cell. Free text is fine in a report and
+# useless in a column: a product cannot filter or count on it.
+#
+# Normalised here rather than in the prompt because both are needed and only one is reliable.
+# The prompt keeps asking for the canonical five (a model that complies costs nothing extra);
+# this mapping catches the ones that drift, and `verdictRaw` keeps the model's own words so a
+# reader loses nothing -- "Tidak relevan (Blur bukan chain)" says more than the enum does.
+_VERDICT_CANON = [
+    ("sukses", "Sukses"),
+    ("sebagian", "Sebagian"),
+    ("gagal", "Gagal"),
+    ("tidak diketahui", "Tidak diketahui"),
+    ("tidak relevan", "Tidak relevan"),
+    ("tidak berlaku", "Tidak relevan"),
+    ("tidak diterapkan", "Tidak relevan"),
+    ("tidak berkaitan", "Tidak relevan"),
+    ("tidak ada", "Tidak relevan"),
+]
+
+
+def normalise_verdict(raw):
+    """One of the five canonical verdicts, or None when nothing recognisable is present.
+
+    First match wins on a lowercased substring test, and the list is ordered so a compound
+    answer resolves to its more specific half: "Gagal / Tidak relevan" is a real outcome for
+    the POV plus an aside, so it reads as Gagal.
+    """
+    if not raw:
+        return None
+    low = raw.lower()
+    for needle, canon in _VERDICT_CANON:
+        if needle in low:
+            return canon
+    return None
+
 # Same markdown tolerance as extract_knowledge/_behavior: the model decorates headers with
 # `##`/`**` despite being told not to, and undecorated matching is what keeps a cosmetic slip
 # from hiding a whole section.
@@ -144,8 +182,10 @@ def _parse_pov(section):
             b = re.search(rf"(?im)^\s*[-·*]?\s*{label}\s*:\s*(.+?)\s*$", block)
             return b.group(1).strip() if b else None
 
+        raw_verdict = m.group(3).strip()
         out[m.group(1).lower()] = {
-            "verdict": m.group(3).strip(),
+            "verdict": normalise_verdict(raw_verdict),
+            "verdictRaw": raw_verdict,
             "qualifier": (m.group(2) or "").strip() or None,
             "shortTerm": bullet("Jangka pendek"),
             "longTerm": bullet("Jangka panjang"),
