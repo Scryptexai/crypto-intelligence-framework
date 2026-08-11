@@ -100,6 +100,29 @@ if [ "$DRY_RUN" = 1 ]; then
 fi
 
 # ---------------------------------------------------------------------------------------
+# Refuse to run while git is mid-operation. A conflicted rebase or merge leaves the working
+# tree half from one commit and half from another, and the pipeline cannot tell -- it reads
+# whatever files are on disk.
+#
+# Exactly this happened on 2026-08-11: `git pull --rebase` stopped on a conflict in
+# poc/cif.json, the pasted command ran anyway, and the phase11 stage began regenerating
+# Celestia against a tree that was neither the old commit nor the new one. --redo-phases had
+# already moved 11-conflict.docx to .bak, so a Ctrl-C left that project with no Phase 11 at
+# all. Cheap to prevent, and the recovery is manual every time.
+# ---------------------------------------------------------------------------------------
+git_dir="$(git rev-parse --git-dir 2>/dev/null || true)"
+if [ -n "$git_dir" ]; then
+  for marker in rebase-merge rebase-apply MERGE_HEAD CHERRY_PICK_HEAD; do
+    if [ -e "$git_dir/$marker" ]; then
+      say "✗ git is mid-operation ($marker present) -- the working tree is in an"
+      say "  inconsistent state and this script reads whatever is on disk. Finish or abort"
+      say "  it first (git rebase --continue / --abort), then re-run. Nothing was done."
+      exit 2
+    fi
+  done
+fi
+
+# ---------------------------------------------------------------------------------------
 # Audit helpers. `audit_field` pulls one list out of --audit-json; `audit_broken` emits
 # "<project>\t<phases>" lines. Both re-read disk on every call, deliberately.
 # ---------------------------------------------------------------------------------------

@@ -174,6 +174,23 @@ records that are permanently stuck: too finished to retry, too broken to use.
 
 ---
 
+## L10 — Never run the pipeline while git is mid-operation
+
+`git pull --rebase` stopped on a conflict in `poc/cif.json`. The rest of the pasted command
+ran anyway, and the phase11 stage began regenerating Celestia against a working tree that was
+neither the old commit nor the new one — half the files from each. `--redo-phases` had already
+moved `11-conflict.docx` aside to `.bak`, so interrupting it left that project with **no Phase
+11 at all**, recoverable only by knowing the `.bak` was there.
+
+The pipeline cannot detect this on its own: it reads whatever files are on disk, and a
+conflicted tree looks like a normal tree to `open()`.
+
+**Rule.** Any script that reads the repo as its input state checks for `rebase-merge`,
+`rebase-apply`, `MERGE_HEAD` and `CHERRY_PICK_HEAD` in `$(git rev-parse --git-dir)` and
+refuses to start. Related: a command that pulls and then acts on the result must not be
+pasted as one block, because the shell runs line 2 whether or not line 1 succeeded.
+
+
 ## Related
 
 - `CLAUDE.md` — the session bootstrap; its "Acquisition readiness" section is what these rules
