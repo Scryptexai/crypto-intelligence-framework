@@ -143,10 +143,18 @@ Aturan pengisian:
 
 - Tulis SATU angka per baris, bukan rentang. Kalau sumbernya memberi rentang ($1,20-$1,50), ambil
   titik tengahnya sebagai angka dan sebutkan rentang aslinya di dalam kurung sumber.
-- CoinGecko dan CoinMarketCap punya data historis harian untuk hampir semua token yang pernah listing;
-  cari di sana lebih dulu. Sertakan URL-nya.
-- Kalau token belum pernah listing atau distribusinya berjalan kontinu tanpa satu tanggal klaim, tulis
-  `Tidak berlaku` dan jelaskan alasannya dalam satu kalimat.
+- **Harga pasar adalah fakta publik, BUKAN fakta laporan.** Empat angka ini tidak ada di Phase 1-11
+  dan memang tidak seharusnya ada di sana. Jawab dari pengetahuanmu sendiri tentang riwayat pasar
+  token ini, dengan Evidence Level yang jujur: `MEDIUM` kalau kamu ingat angkanya dengan cukup yakin,
+  `LOW` kalau hanya perkiraan kasar. Sebutkan CoinGecko/CoinMarketCap sebagai tempat verifikasinya.
+  Perkiraan yang ditandai MEDIUM jauh lebih berguna daripada baris kosong; yang dilarang adalah
+  mengarang angka untuk token yang tidak kamu kenal sama sekali.
+- **`Tidak ditemukan` BUKAN jawaban yang sah untuk keempat baris ini**, dan alasan seperti "data
+  tidak tersedia di sumber Phase 1-11" atau "perlu data historis CoinGecko" akan ditolak parser.
+  Satu-satunya ketiadaan yang sah adalah `Tidak berlaku`, dan itu hanya untuk dua situasi: token
+  belum pernah listing sama sekali, atau distribusinya berjalan kontinu tanpa satu tanggal klaim
+  (harga saat klaim jadi tidak terdefinisi — tapi +30/+90 hari dan puncak TETAP wajib diisi, dihitung
+  dari tanggal TGE). Tulis `Tidak berlaku` beserta alasannya dalam satu kalimat.
 - Jangan menghitung persentase perubahan sendiri — cukup empat angkanya, biarkan pembaca yang
   membandingkan.
 

@@ -321,17 +321,33 @@ def _check_price_block(text: str, project_name: str) -> tuple:
     if res["status"] not in ("Sudah dilakukan", "Sedang berjalan"):
         return True, f"status={res['status']!r} — no distribution, price block not required"
     price = res["priceTrajectory"]
-    missing = [label for key, label in _extract_airdrop.PRICE_POINTS if key not in price]
+    missing = [label for key, label, _pat in _extract_airdrop.PRICE_POINTS if key not in price]
     if missing:
         return False, f"{len(missing)} price line(s) missing: {', '.join(missing)}"
-    # A line that is present but says nothing is the same defect as a missing line, except
-    # harder to see. Either a number, or an explicit statement that there isn't one.
-    empty = [label for key, label in _extract_airdrop.PRICE_POINTS
-             if price[key]["usd"] is None
-             and not re.search(r"(?i)tidak (?:berlaku|ditemukan|diketahui)", price[key]["raw"])]
-    if empty:
-        return False, (f"{len(empty)} price line(s) with neither a figure nor an explicit "
-                       f"`Tidak berlaku`: {', '.join(empty)}")
+    # Only `Tidak berlaku` excuses a missing figure -- never `Tidak ditemukan`. The two are not
+    # synonyms here: "berlaku" means the question does not apply (token never listed, or a
+    # continuous distribution with no claim date), while "ditemukan" means the model did not
+    # look. The first version of this check accepted both, and three projects took the exit:
+    # Blast answered all four lines "Tidak ditemukan USD [CoinGecko/CoinMarketCap historical
+    # data diperlukan]" and passed, for a token with complete price history. Hyperliquid's
+    # at_claim really is Tidak berlaku (native TGE, no single claim price) but its +30/+90 read
+    # "tidak tersedia di sumber Phase 1-11" -- treating the dossier as the only admissible
+    # source for a public market fact.
+    refused = [label for key, label, _pat in _extract_airdrop.PRICE_POINTS
+               if price[key]["usd"] is None
+               and not re.search(r"(?i)tidak\s+berlaku", price[key]["raw"])]
+    if refused:
+        return False, (f"{len(refused)} price line(s) with neither a figure nor `Tidak "
+                       f"berlaku`: {', '.join(refused)}")
+    # `Tidak berlaku` on its own is an assertion, not an answer -- the reason is what makes it
+    # checkable by a reader, and is the difference between "this token never listed" and "I
+    # would rather not say".
+    unexplained = [label for key, label, _pat in _extract_airdrop.PRICE_POINTS
+                   if price[key]["usd"] is None
+                   and len(re.sub(r"(?i)tidak\s+berlaku", "", price[key]["raw"]).strip(" .—-:()")) < 15]
+    if unexplained:
+        return False, (f"{len(unexplained)} `Tidak berlaku` line(s) with no reason given: "
+                       f"{', '.join(unexplained)}")
     return True, f"{len(price)}/4 price points"
 
 
@@ -344,11 +360,16 @@ _PRICE_HINT = (
     "Harga +90 hari: 2,10 USD (2025-03-07) [https://coingecko.com/...] (MEDIUM)\n"
     "Harga puncak 12 bulan pertama: 4,80 USD (2025-02-14) [https://coingecko.com/...] (LOW)\n\n"
     "Satu angka per baris (bukan rentang), tanggal ISO dalam kurung, URL sumber dalam kurung "
-    "siku, Evidence Level dalam kurung terakhir. CoinGecko dan CoinMarketCap menyimpan harga "
-    "harian historis untuk hampir semua token yang pernah listing — cari di sana lebih dulu. "
-    "Hanya jika token memang belum pernah listing atau distribusinya kontinu tanpa satu tanggal "
-    "klaim, tulis `Tidak berlaku` beserta alasannya dalam satu kalimat. JANGAN mengosongkan "
-    "barisnya dan JANGAN menghitung persentase perubahan sendiri."
+    "siku, Evidence Level dalam kurung terakhir.\n\n"
+    "HARGA PASAR ADALAH FAKTA PUBLIK, BUKAN FAKTA LAPORAN. Keempat angka ini memang tidak ada "
+    "di Phase 1-11. Jawab dari pengetahuanmu sendiri tentang riwayat pasar token ini dengan "
+    "Evidence Level yang jujur — `MEDIUM` kalau cukup yakin, `LOW` kalau perkiraan kasar — dan "
+    "sebut CoinGecko/CoinMarketCap sebagai tempat verifikasinya. `Tidak ditemukan` DITOLAK "
+    "parser, begitu juga alasan \"data tidak tersedia di sumber Phase 1-11\" atau \"perlu data "
+    "historis CoinGecko\". Satu-satunya ketiadaan yang sah adalah `Tidak berlaku` + alasannya, "
+    "dan hanya untuk token yang belum pernah listing, atau distribusi kontinu tanpa satu "
+    "tanggal klaim — dalam kasus kedua baris +30 hari, +90 hari dan puncak TETAP wajib diisi, "
+    "dihitung dari tanggal TGE. JANGAN menghitung persentase perubahan sendiri."
 )
 
 

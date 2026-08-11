@@ -198,15 +198,23 @@ def _parse_pov(section):
     return out
 
 
-# The four price lines, in the order the prompt asks for them, mapped to the key each becomes.
-# Ordered so a later label cannot shadow an earlier one: "Harga puncak 12 bulan pertama" is
-# matched before the substring-shaped labels it does not share, and each label is anchored to
-# the start of its line anyway.
+# The four price lines, in the order the prompt asks for them, mapped to the key each becomes,
+# plus the pattern that recognises the label on the page. Each label is anchored to the start
+# of its line, so one cannot shadow another.
+#
+# The patterns tolerate cosmetic drift the prompt does not ask for: an inserted "token", a
+# parenthetical date after the label, "hari ke-30" for "+30 hari". Ethena wrote `Harga token
+# pada klaim (TGE 2024-04-02): ~$0.50-$0.60` -- the right datum under a reworded label, which
+# the strict form read as a missing line and sent into two regenerations. The label is
+# cosmetic; the figure is the contract. The prompt keeps asking for the exact form (a model
+# that complies costs nothing), and this catches the ones that drift -- the same split that
+# already works for verdict/verdictRaw and for markdown-decorated headers.
 PRICE_POINTS = [
-    ("atClaim", "Harga saat klaim"),
-    ("day30", "Harga +30 hari"),
-    ("day90", "Harga +90 hari"),
-    ("peak12m", "Harga puncak 12 bulan pertama"),
+    ("atClaim", "Harga saat klaim", r"Harga(?:\s+token)?\s+(?:saat|pada)\s+klaim"),
+    ("day30", "Harga +30 hari", r"Harga(?:\s+token)?\s*(?:\+\s*30\s*hari|hari\s*ke-?\s*30)"),
+    ("day90", "Harga +90 hari", r"Harga(?:\s+token)?\s*(?:\+\s*90\s*hari|hari\s*ke-?\s*90)"),
+    ("peak12m", "Harga puncak 12 bulan pertama",
+     r"Harga(?:\s+token)?\s+(?:puncak|tertinggi)(?:\s+12\s+bulan\s+pertama)?"),
 ]
 
 _EVIDENCE_RE = re.compile(r"\((HIGH|MEDIUM|LOW)\)", re.I)
@@ -273,8 +281,8 @@ def _parse_price(section):
     (no listing, or continuous distribution with no claim date) and the first is a defect.
     """
     out = {}
-    for key, label in PRICE_POINTS:
-        m = re.search(rf"(?im)^\s*[-·*]?\s*{re.escape(label)}\s*:\s*(.+?)\s*$", section or "")
+    for key, _label, pattern in PRICE_POINTS:
+        m = re.search(rf"(?im)^\s*[-·*]?\s*{pattern}[^:\n]*:\s*(.+?)\s*$", section or "")
         if not m:
             continue
         raw = m.group(1).strip()
