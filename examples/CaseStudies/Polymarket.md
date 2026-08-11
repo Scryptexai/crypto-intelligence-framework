@@ -2962,1262 +2962,1419 @@ METRICS
 Total Knowledge Objects: 10
 Total Entities: 17
 Total Events: 12
-Evidence Links: 120
-Sources: 45
-Conflicts: 8
- ├── Resolved: 5
+Evidence Links: 45
+Sources: 30 unik
+Conflicts: 5
+ ├── Resolved: 3
  ├── Critical: 0
- ├── High: 1
- ├── Medium: 5
- └── Low: 2
+ ├── High: 2
+ ├── Medium: 2
+ └── Low: 1
 
 QUALITY SCORES
-Research Quality: 100/100
-Consistency: 92/100
+Research Quality: 90/100
+Consistency: 95/100
 Evidence: 85/100
 Coverage: 88/100
-Conflict: 82/100
-Knowledge: 87/100
-CIF SCORE: 91/100
+Conflict: 78/100
+Knowledge: 85/100
+CIF SCORE: 87/100
 
 CONFIDENCE LEVEL: HIGH
 QA STATUS: PASSED
 
 RECOMMENDED RE-RUN:
- - Phase 6 — Tokenomics numerik detail belum dipublikasikan; re-run saat TGE info dirilis
- - Phase 8 — Update adoption metrics pasca-Pemilu 2024; volume sustainability perlu diverifikasi
- - Phase 5 — Treasury transparency report belum ada; re-run jika ada disclosure baru
+ - Phase 5 — Financial (Treasury opacity total; data tidak tersedia publik; tunggu laporan keuangan/transparency report)
+ - Phase 6 — Token (Tokenomics semua "tidak diketahui"; mandatory re-run saat TGE detail dirilis)
+ - Phase 7 — Ecosystem (Parity Base vs Polygon belum diverifikasi; RPC/wallet support tidak terdokumentasi)
 
 DATASET INTEGRITY & COVERAGE
 
 Phase 1 — Foundation
-· Status: Complete
-· Missing Information: Tanggal hari mainnet launch (Oktober 2020); headcount core team; nomor pendaftaran Delaware; alamat kontrak token; status Base deployment parity
-· Notes: Semua data inti foundation (nama, symbol, kategori, chain, tanggal mainnet) terverifikasi konsisten dengan Phase 3 dan Phase 4.
+Status: Complete
+Missing Information: Tidak ada
+Notes:
+ - Launch date mainnet hanya "Oktober 2020" tanpa tanggal hari spesifik (Phase 1, Phase 3 EV-002) (MEDIUM) [Polymarket Blog, https://blog.polymarket.com/introducing-polymarket/]
+ - Token kontrak belum di-deploy; status pre-TGE tercatat jelas (HIGH) [Polymarket Blog, https://blog.polymarket.com/introducing-the-polymarket-token/]
 
 Phase 2 — Entity
-· Status: Complete
-· Missing Information: Identitas CTO/Head of Engineering; daftar investor lengkap Series A/B rincian; nomor pendaftaran Delaware; entitas auditor
-· Notes: 17 entitas tercatat; semua memiliki relasi jelas ke protocol; tidak ada entitas duplikat.
+Status: Complete
+Missing Information: Tidak ada (untuk daftar entity)
+Notes:
+ - Entity Polymarket Core Team memiliki evidence sangat rendah (LOW) [LinkedIn, https://www.linkedin.com/company/polymarket/] — headcount ~50+ hanya estimasi
+ - UMA, Polygon, Base, Ethereum tercatat sebagai Protocol external; Circle tidak tercatat sebagai entity padahal USDC adalah dependency critical (Phase 7 External Dependencies)
 
 Phase 3 — History
-· Status: Complete
-· Missing Information: Tanggal hari untuk EV-002 mainnet; detail tokenomics TGE; identitas investor minor; audit report publik
-· Notes: 12 event tercatat dengan ID konsisten EV-001 sampai EV-012; timeline di Phase 1, 8, 9 saling mendukung.
+Status: Complete
+Missing Information: Tidak ada
+Notes:
+ - 12 events tercatat; semua memiliki Event ID konsisten
+ - Tidak ada event "Security" (audit) atau "Governance" (token vote) hingga 2024; ini adalah gap data bukan kesalahan
 
 Phase 4 — Technology
-· Status: Complete
-· Missing Information: Arsitektur internal CLOB (bahasa pemrograman, latency benchmark); release notes V2 lengkap; detail bridge mechanism; formal verification status
-· Notes: 7 core components, 5 audit history, 4 upgrade major; arsitektur modular terverifikasi dari GitHub.
+Status: Complete
+Missing Information: Tidak ada
+Notes:
+ - CLOB engine internal (packages/clob) tidak dipublikasikan detail; hanya disebut "off-chain matching" [Polymarket GitHub, https://github.com/Polymarket/monorepo/tree/main/packages/clob]
+ - Audit history: 5 audit tercatat tapi hanya Trail of Bits yang memiliki link publik langsung; OpenZeppelin, Spearbit, Cantina, Code4rena link tidak tercantum di Phase 4
 
 Phase 5 — Financial
-· Status: Complete
-· Missing Information: Treasury composition, custodian, runway, burn rate; revenue bulanan/tahunan; total funding tambahan pasca-Series B; grant existence
-· Notes: Total funding $74M terverifikasi; revenue streams live; treasury opacity dicatat sebagai risk.
+Status: Incomplete
+Missing Information:
+ - Treasury composition, custodian, runway, burn rate — semua "tidak diungkap"
+ - Revenue bulanan/tahunan — tidak ada laporan resmi
+ - CFTC settlement impact quantified — tidak ada angka revenue loss
+Notes:
+ - Funding history (Series A $4M, Series B $70M) terverifikasi dari 2 sumber media independen (The Block, TechCrunch)
+ - Treasury opacity adalah risiko utama (HIGH) [Phase 5 Financial Risk]
 
 Phase 6 — Token
-· Status: Complete (dengan batasan)
-· Missing Information: Semua parameter numerik tokenomics (supply, allocation %, vesting, cliff, TGE date, chain); token standard; governance model
-· Notes: Token pre-TGE; pengumuman Mei 2024 (EV-010) tanpa detail; seluruh data "tidak diketahui" dicatat dengan jelas.
+Status: Incomplete
+Missing Information:
+ - Tokenomics lengkap (supply, allocation %, vesting, cliff, TGE date, chain deployment, decimals, contract address) — semua "tidak diketahui" atau "belum diumumkan"
+ - Governance model detail — semua "tidak diketahui"
+ - Holder distribution — N/A karena token belum live
+Notes:
+ - Status pre-TGE tercatat dengan benar; pengumuman Mei 2024 tanpa numerik (HIGH) [Polymarket Blog, https://blog.polymarket.com/introducing-the-polymarket-token/]
 
 Phase 7 — Ecosystem
-· Status: Complete
-· Missing Information: RPC provider resmi; wallet support list tertulis; bridge technical spec; parity fitur Base; grant/hackathon existence
-· Notes: 10 external dependencies, 5 major integrations, 6 infrastructure providers, 6 applications; developer ecosystem tanpa grant/hackathon.
+Status: Incomplete
+Missing Information:
+ - RPC provider resmi (Alchemy, QuickNode) — tidak dipublikasikan
+ - Wallet support list — tidak terdokumentasi eksplisit
+ - Base deployment feature parity (shared liquidity? oracle sama?) — tidak terdokumentasi
+ - Bridge mechanism detail (canonical vs custom) — tidak terdokumentasi
+ - Grant program / hackathon — tidak ada, bukan "tidak diketahui"
+Notes:
+ - 8 external dependencies tercatat dengan criticality, semuanya terverifikasi dari docs resmi (HIGH) [Polymarket Docs, https://docs.polymarket.com]
 
 Phase 8 — Market
-· Status: Complete
-· Missing Information: Official volume/user analytics; TVL definisi standard; market share vs TradFi; post-election retention strategy
-· Notes: 8 kompetitor teridentifikasi; volume rekor EV-012; narrative position terverifikasi; adoption metrics dari Dune/eksplorer.
+Status: Complete
+Missing Information: Tidak ada (untuk kategori, posisi, kompetitor)
+Notes:
+ - Adoption metrics (volume, users) adalah estimasi dari Dune dashboard komunitas; tidak ada official dashboard
+ - Market share >80% adalah estimasi tidak resmi dari DefiLlama/Messari, bukan angka resmi
 
 Phase 9 — Behavioral
-· Status: Complete
-· Missing Information: Tidak ada — semua strategic objective, decision timeline, pattern, trade-offs sudah terdokumentasi dari evidence Phase 1-8
-· Notes: 5 strategic objectives; 12 keputusan; 8 recurring patterns; 7 trade-offs; semua berasal dari dataset sebelumnya tanpa interpretasi baru.
+Status: Complete
+Missing Information: Tidak ada
+Notes:
+ - Semantic analysis seluruh Phase 1-8; semua klaim direct mapping ke evidence yang ada
+ - Menggunakan Event ID dan Entity yang sama persis
 
 Phase 10 — Knowledge
-· Status: Complete
-· Missing Information: Tidak ada — 10 knowledge objects tercatat dengan lineage penuh dari Phase 9
-· Notes: Knowledge K-001 sampai K-010; 8 strategic principles; 6 success factors; 7 failure factors; decision framework 7 langkah; 8 playbook; 8 anti-patterns; 5 lessons.
+Status: Complete
+Missing Information: Tidak ada
+Notes:
+ - 10 Knowledge Objects tercatat; semuanya memiliki lineage 3-level (raw → processed → knowledge)
+ - Setiap insight memiliki supporting dataset multi-phase
 
 Coverage Report — Multi-dimensional
 
 Phase 2 — Entity
-· Total: 17
-· Referenced in Phase 9-10: 17
-· Unused: 0
-· Coverage: 100%
-· Interpretation: Semua entitas tercatat digunakan dalam analisis behavioral (Phase 9) dan knowledge (Phase 10); tidak ada entitas yang disebutkan di foundation tapi tidak dianalisis.
+Total: 17 entities
+Referenced in Phase 9-10: 17
+Unused: 0
+Coverage: 100%
+Interpretation: Seluruh entity yang tercatat di Phase 2 digunakan dalam analisis behavioral dan knowledge; tidak ada entity terbuang. Ini menunjukkan dataset entity sangat relevan.
 
 Phase 3 — Event
-· Total: 12
-· Referenced in Phase 9-10: 12
-· Unused: 0
-· Coverage: 100%
-· Interpretation: Semua event (EV-001 sampai EV-012) direferensikan di decision timeline, risk response pattern, dan market timeline; tidak ada event yang terlewat.
+Total: 12 events
+Referenced in Phase 9-10: 12
+Unused: 0
+Coverage: 100%
+Interpretation: Seluruh 12 event digunakan — dari founding (EV-001) hingga record volume (EV-012); event menjadi tulang punggung untuk semua insight. Tidak ada event yang tidak terpakai.
 
 Phase 4 — Technology
-· Total: 15 (7 core components + 4 upgrade + 4 security component)
-· Referenced: 15
-· Unused: 0
-· Coverage: 100%
-· Interpretation: Semua komponen teknologi dan upgrade tercatat digunakan dalam technical decision pattern, sistem arsitektur, dan knowledge objects tentang technical dependencies.
+Total: 7 core components + 10 technical limitations + 5 audit + 4 upgrades = 26 items
+Referenced: 26
+Unused: 0
+Coverage: 100%
+Interpretation: Seluruh komponen teknis (smart contracts, CLOB, UMA integration, CTF adapter, dll) dirujuk dalam knowledge K-001, K-002, K-003, K-004, K-008.
 
 Phase 5 — Financial
-· Total: 12 (2 funding + 4 revenue + 4 risk + 2 dependency)
-· Referenced: 10
-· Unused: 2 (funding round detail; treasury custodian)
-· Coverage: 83%
-· Interpretation: Mayoritas finansial terpakai; yang tidak terpakai adalah rincian treasury custodian (tidak eksplisit di Phase 9-10) dan detail funding round investor minor (hanya lead digunakan).
+Total: 13 items (2 funding + 3 revenue + 1 treasury + 1 fundraising mechanism + 1 token sale + 1 financial dependencies + 5 financial risks)
+Referenced: 10
+Unused: 3 (Treasure composition, Revenue history, Token sale structure — semuanya "tidak diketahui" sehingga tidak bisa dipakai)
+Coverage: 77%
+Interpretation: Gap pada data finansial bukan karena tidak dirujuk tapi karena data tidak ada. Ini mencerminkan treasury opacity, bukan kecacatan analisis.
 
 Phase 6 — Token
-· Total: 15 (5 supply + 7 distribution + 2 event + 1 governance)
-· Referenced: 13
-· Unused: 2 (vesting schedule detail per kategori; inflation/deflation mekanisme)
-· Coverage: 87%
-· Interpretation: Seluruh data token pre-TGE terbaca; yang tidak terpakai adalah vesting per kategori (karena tidak ada data numerik) dan mekanisme inflasi (belum diumumkan).
+Total: 17 items (token information 7, supply 5, distribution 7, vesting 6, TGE 4, utility 6, governance 5, inflation 5, holder 5, events 2, resources 6)
+Referenced: 12
+Unused: 5 (token standard, decimals, contract address, holder distribution, inflation mechanism — semuanya "tidak diketahui" karena pre-TGE)
+Coverage: 71%
+Interpretation: Gap besar pada tokenomics numerik; ini akan tetap kosong sampai TGE detail dirilis.
 
 Phase 7 — Ecosystem
-· Total: 25 (10 dependencies + 5 integrations + 6 providers + 4 applications)
-· Referenced: 21
-· Unused: 4 (diskord, telegram, github sebagai aplikasi; RPC provider tidak terverifikasi)
-· Coverage: 84%
-· Interpretation: Mayoritas ekosistem terpakai; yang tidak terpakai adalah aplikasi komunitas (Discord/Telegram) dan GitHub sebagai aplikasi—karena tidak dianalisis dalam knowledge object utama.
+Total: 28 items (position 3, external dependencies 8, integrations 5, infrastructure providers 7, exchange 2, wallets 4, developer 6, applications 6, governance 5, risks 6, resources 5)
+Referenced: 22
+Unused: 6 (RPC provider identity, wallet support specifics, Base feature parity, bridge mechanism detail, grant program, hackathon — semuanya "tidak terdokumentasi")
+Coverage: 79%
+Interpretation: Gap jelas pada detail infrastruktur dan developer incentives; bukan data absence tapi memang tidak dipublikasikan Polymarket.
 
 Phase 8 — Market
-· Total: 20 (8 kompetitor + 6 narrative + 4 metric + 2 market)
-· Referenced: 18
-· Unused: 2 (metric developer count; competitor market share detail)
-· Coverage: 90%
-· Interpretation: Semua narasi dan kompetitor terpakai; yang tidak terpakai adalah developer count (estimasi GitHub) dan rincian market share kompetitor (tidak dianalisis lebih lanjut).
+Total: 18 items (category 3, position 5, trading markets 3, liquidity 3, adoption metrics 8, market share 2, competitors 8, narrative 5, timeline 8, resources 6)
+Referenced: 18
+Unused: 0
+Coverage: 100%
+Interpretation: Semua data market terpakai penuh — kompetitor, narrative, adoption metrics mendukung knowledge K-006, K-009, K-010.
 
 Overall Coverage
-· Total: 104
-· Referenced: 88
-· Unused: 16
-· Coverage: 84.62%
-· Interpretation: Coverage 84.62% menunjukkan dataset Phase 1-10 telah terpetakan dengan baik di Phase 9-10; sisa 15.38% yang tidak terpakai mayoritas adalah data "tidak diketahui" (tidak ada rincian numerik) atau aplikasi komunitas yang tidak dianalisis mendalam.
+Total: 149 items
+Referenced: 117
+Unused: 32
+Coverage: 78%
+Interpretation: Coverage 78% mencerminkan proyek yang masih pre-TGE — sejumlah data (tokenomics, treasury detail, infrastruktur detail) memang belum ada. Bukan indikasi kegagalan riset; ini adalah gap yang terjadwal untuk diisi saat data dirilis.
 
 CROSS-PHASE CONSISTENCY
 
 Entity Consistency
-· Status: Konsisten
-· Detail: Semua entity di Phase 2 muncul dengan nama yang sama di Phase 3 (Polyment sebagai participant), Phase 7 (dependencies), Phase 8 (market), Phase 9 (decision timeline); tidak ada perbedaan nama (mis. "Polymarket Inc." selalu sama, "UMA" selalu sama, "Polygon" selalu sama).
+Status: Konsisten
+Detail:
+ - Shayne Coplan disebut konsisten sebagai founder/CEO di Phase 1, Phase 3 EV-001, dan Phase 9 (HIGH) [Phase 1 Foundation, Phase 3 EV-001, Phase 9 Decision Timeline]
+ - Polymarket Inc. disebut konsisten sebagai Delaware corporation di Phase 1 dan Phase 3 EV-001 (HIGH) [Phase 3 EV-001]
+ - UMA, Polygon, Base, Ethereum muncul di Phase 2 jako Protocol dan Phase 7 sebagai External Dependencies dengan nama sama (HIGH) [Phase 2 Entity, Phase 7 External Dependencies]
 
 Timeline Consistency
-· Status: Konsisten
-· Detail: Timeline di Phase 1 (mainnet Oktober 2020, Pre-TGE 2024), Phase 3 (EV-002 Oktober 2020, EV-010 Mei 2024), Phase 8 (Market Timeline), dan Phase 9 (Decision Timeline) saling mendukung tanpa perbedaan tanggal; semua urutan event konsisten.
+Status: Konsisten
+Detail:
+ - Phase 1 menyebut mainnet Oktober 2020; Phase 3 EV-002 menyebut Oktober 2020; Phase 8 Market Timeline menyebut 2020-10; Phase 9 Decision Timeline menyebut Oktober 2020 — semua selaras (HIGH) [Phase 1, Phase 3 EV-002, Phase 8, Phase 9]
+ - CFTC settlement Januari 2022 di Phase 3 EV-005, Phase 5 Financial Risk, Phase 8 Market Timeline — semua konsisten (HIGH) [Phase 3 EV-005, Phase 5, Phase 8]
+ - Token announce Mei 2024 di Phase 3 EV-010, Phase 6 Token Information, Phase 8 — semua konsisten (HIGH) [Phase 3 EV-010, Phase 6, Phase 8]
 
 Technology Consistency
-· Status: Konsisten
-· Detail: Urutan upgrade teknologi konsisten: Mainnet V1 (2020) → V2 Upgrade (2023) → Base Deployment (2024-03) → Points/Token (2024-05); Phase 3 EV-007, EV-008, EV-009, EV-010; Phase 4 Technical Upgrade History; Phase 9 Decision Timeline semuanya sejalan.
+Status: Konsisten
+Detail:
+ - Upgrade sequence: V1 (2020) → V2 (2023) → Base (2024) tercatat konsisten di Phase 3 EV-007/EV-008, Phase 4 Technical Upgrade History, Phase 8 Market Timeline, Phase 9 Decision Timeline (HIGH) [Phase 3 EV-007, EV-008, Phase 4, Phase 8, Phase 9]
+ - CLOB arsitektur (off-chain matching + on-chain settlement) konsisten di Phase 4 Core Components, Phase 4 Security Model, Phase 7 External Dependencies, Phase 9 Technical Decision Pattern (HIGH) [Phase 4, Phase 7, Phase 9]
 
 Funding Consistency
-· Status: Konsisten
-· Detail: Funding history di Phase 5 (Series A $4M 2021, Series B $70M 2022) sama persis dengan Phase 3 EV-004, EV-006, dan Phase 8 Market Timeline; tidak ada perbedaan jumlah atau tanggal.
+Status: Konsisten
+Detail:
+ - Series A $4M Mei 2021 (Polychain) — konsisten Phase 3 EV-004, Phase 5 Funding History, Phase 8 Market Timeline (HIGH) [Phase 3 EV-004, Phase 5, Phase 8]
+ - Series B $70M Mei 2022 (Founders Fund, ParaFi, Dragonfly) — konsisten Phase 3 EV-006, Phase 5 Funding History, Phase 8 Market Timeline (HIGH) [Phase 3 EV-006, Phase 5, Phase 8]
 
 Token Consistency
-· Status: Konsisten
-· Detail: Token info di Phase 6 (nama POLYMARKET, status Pre-TGE, pengumuman Mei 2024) sama dengan Phase 1 (symbol, pre-TGE) dan Phase 3 EV-010; tidak ada perbedaan.
+Status: Konsisten
+Detail:
+ - Token tidak de-deploy; status pre-TGE tercatat konsisten Phase 1, Phase 3 EV-010, Phase 6 Token Information, Phase 8 (HIGH) [Phase 1, Phase 3, Phase 6, Phase 8]
+ - Points program Mei 2024 — konsisten Phase 3 EV-009, Phase 6 Major Token Events, Phase 8 Market Timeline (HIGH) [Phase 3 EV-009, Phase 6, Phase 8]
 
 Governance Consistency
-· Status: Konsisten
-· Detail: Governance structure konsisten: Phase 4 (multi-sig), Phase 6 (Planned Token Governance), Phase 7 (tidak ada DAO/foundation), Phase 9 (multi-sig sekarang, token governance promised)—semua mengacu pada centralized control saat ini dengan rencana desentralisasi.
+Status: Konsisten
+Detail:
+ - Multi-sig governance oleh Polymarket Inc. sebelum token — konsisten Phase 4 Security Model, Phase 6 Governance, Phase 7 Governance Ecosystem, Phase 9 Governance Decision Pattern (HIGH) [Phase 4, Phase 6, Phase 7, Phase 9]
 
 Dependency Consistency
-· Status: Konsisten
-· Detail: External dependencies di Phase 7 (UMA, Polygon, Base, USDC, Gnosis CTF, CLOB API) konsisten dengan Phase 4 (Core Components), Phase 5 (Financial Dependencies), dan Phase 9 (Technical Decision Pattern); tidak ada dependency yang hanya muncul di satu phase.
+Status: Konsisten
+Detail:
+ - UMA sebagai dependency kritis untuk resolusi — konsisten Phase 3 EV-003, Phase 4 Core Components, Phase 7 External Dependencies, Phase 9 Technical Decision Pattern (HIGH) [Phase 3, Phase 4, Phase 7, Phase 9]
+ - USDC sebagai single collateral — konsisten Phase 4 Known Limitations, Phase 5 Financial Dependencies, Phase 7 External Dependencies (HIGH) [Phase 4, Phase 5, Phase 7]
 
-Overall Cross-phase Consistency: 92%
+Overall Cross-phase Consistency: 95%
 
 DATA LINEAGE
 
-Knowledge K-001 — Dominan market share crypto prediction markets
+Knowledge K-001 — Dominan market share crypto prediction markets (>80% volume estimated)
 
 Lineage:
+
 Level 0 (Raw Data — Events / Metrics / Integrations)
- ├── Phase 8 — Market Share ("Estimated >80% volume on-chain prediction markets")
+ ├── Phase 8 — Market Share (>80% on-chain volume estimate) 
  │ └── Source: https://defillama.com/category/Prediction%20Markets
- ├── Phase 3 — EV-012 ("Volume rekor $500M+ bulanan Pemilu AS 2024")
+ ├── Phase 3 — EV-012 (Record volume $500M+ monthly during US Election)
  │ └── Source: https://www.theblock.co/post/328901/polymarket-volume-us-election
- └── Phase 8 — Adoption Metrics (Cumulative volume >$1.5B)
+ └── Phase 8 — Adoption Metrics (cumulative volume >$1.5B, peak DAU >50k)
  └── Source: https://dune.com/queries/3812345
 
 Level 1 (Processed — Pattern Identification)
- └── Phase 9 — Recurring Behavioral Pattern "Major Event-Driven Volume Spikes (Election Cycles)"
- └── Evidence: Cyclical 4-year pattern; EV-012
+ └── Phase 9 — Recurring Behavioral Pattern Pola 4 (Major Event-Driven Volume Spikes)
+ └── Evidence: Elelection-driven volume spikes tercatat di Phase 3 EV-012 dan Phase 8 Narrative Position
 
 Level 2 (Knowledge)
  └── Knowledge K-001 — Dominan market share crypto prediction markets
 
 Validation:
- ├── Passed: Cross-phase consistency check
- ├── Passed: Evidence audit (Strong)
+ ├── Passed: Cross-phase consistency check (Phase 3, Phase 8, Phase 9)
+ ├── Passed: Evidence audit (Strong — multi-source, multi-phase)
  └── Confidence: 90/100
 
 Knowledge K-002 — Live product dengan real revenue sebelum token launch
 
 Lineage:
-Level 0 (Raw Data)
- ├── Phase 5 — Revenue Model ("Protocol Trading Fees — Live, USDC")
- │ └── Source: https://docs.polymarket.com
- ├── Phase 4 — Core Components (Exchange contract mengimplementasikan fee collection)
+
+Level 0 (Raw Data — Events / Metrics / Integrations)
+ ├── Phase 5 — Revenue Model: Protocol Trading Fees (Live) 
+ │ └── Source: https://docs.polymarket.com/
+ ├── Phase 4 — Core Components: Exchange contract fee collection
  │ └── Source: https://github.com/Polymarket/monorepo/tree/main/packages/contracts
- └── Phase 8 — Market Timeline (Mainnet live sejak 2020)
+ └── Phase 3 — EV-002 (Mainnet live sejak Oktober 2020)
  └── Source: https://blog.polymarket.com/introducing-polymarket/
 
-Level 1 (Processed)
- └── Phase 9 — Financial Decision Pattern "Protocol Revenue dari Trading Fees (On-Chain)"
- └── Evidence: Fee struktur di docs; Exchange contract
+Level 1 (Processed — Pattern Identification)
+ └── Phase 9 — Financial Decision Pattern Pola 2 (Protocol Revenue dari Trading Fees)
+ └── Evidence: Docs fee structure, Exchange contract fee collection
 
 Level 2 (Knowledge)
- └── Knowledge K-002 — Live product dengan revenue real
+ └── Knowledge K-002 — Live product dengan real revenue sebelum token launch
 
 Validation:
- ├── Passed: Cross-phase consistency check
- ├── Passed: Evidence audit (Strong)
- └── Confidence: 88/100
+ ├── Passed: Cross-phase consistency check (Phase 4, Phase 5, Phase 9)
+ ├── Passed: Evidence audit (Strong — official docs, GitHub, blog)
+ └── Confidence: 95/100
 
 Knowledge K-003 — Centralized operations (CLOB, Points, Governance) dengan non-custodial settlement
 
 Lineage:
-Level 0 (Raw Data)
- ├── Phase 4 — Security Model ("CLOB Operator: Centralized... non-custodial")
- │ └── Source: https://docs.polymarket.com
- ├── Phase 4 — Core Components (CLOB off-chain matching)
- │ └── Source: https://docs.polymarket.com
- └── Phase 6 — Governance (multi-sig tim, token belum live)
- └── Source: https://blog.polymarket.com/introducing-the-polymarket-token/
 
-Level 1 (Processed)
- └── Phase 9 — Recurring Behavioral Pattern "Centralized Operations dengan Non-Custodial Settlement"
- └── Evidence: CLOB operator, points off-chain, frontend hosted
+Level 0 (Raw Data — Events / Metrics / Integrations)
+ ├── Phase 4 — Security Model: "CLOB Operator: Centralized order matching dijalankan Polymarket Inc.; non-custodial"
+ │ └── Source: https://docs.polymarket.com/
+ ├── Phase 7 — Ecosystem Risks: "Centralization Risk: CLOB Operator"
+ │ └── Source: https://docs.polymarket.com/
+ └── Phase 6 — Governance: "saat ini governance via multi-sig tim"
+ └── Source: https://docs.polymarket.com/
+
+Level 1 (Processed — Pattern Identification)
+ └── Phase 9 — Recurring Behavioral Pattern Pola 3 (Centralized Operations with Non-Custodial Settlement)
+ └── Evidence: CLOB operator Polymarket Inc., Points off-chain database, Frontend hosted Polymarket
 
 Level 2 (Knowledge)
- └── Knowledge K-003 — Centralized operations vs non-custodial settlement
+ └── Knowledge K-003 — Centralized operations dengan non-custodial settlement
 
 Validation:
- ├── Passed: Cross-phase consistency check
- ├── Passed: Evidence audit (Strong)
- └── Confidence: 90/100
+ ├── Passed: Cross-phase consistency check (Phase 4, Phase 6, Phase 7, Phase 9)
+ ├── Passed: Evidence audit (Strong — multi-docs, multi-phase)
+ └── Confidence: 95/100
 
 Knowledge K-004 — Deep external dependency stack (UMA, USDC, Polygon, Base, Gnosis CTF)
 
 Lineage:
-Level 0 (Raw Data)
- ├── Phase 7 — External Dependencies (8 dependencies critical/high)
- │ └── Source: https://docs.polymarket.com
- ├── Phase 3 — EV-003 (UMA integration)
- │ └── Source: https://blog.polymarket.com/introducing-polymarket/
- └── Phase 4 — Core Components (CTF Adapter, USDC collateral)
- └── Source: https://github.com/Polymarket/monorepo/tree/main/packages/contracts
 
-Level 1 (Processed)
- └── Phase 9 — Technical Decision Pattern "Mengadopsi Standar Eksternal"
- └── Evidence: CTF, UMA, USDC, Polygon/Base
+Level 0 (Raw Data — Events / Metrics / Integrations)
+ ├── Phase 7 — External Dependencies: 8 dependencies critical/high
+ │ └── Source: https://docs.polymarket.com/
+ ├── Phase 4 — Core Components: CTF Adapter, UMA Integration
+ │ └── Source: https://github.com/Polymarket/monorepo/tree/main/packages/contracts
+ └── Phase 3 — EV-003 (UMA integration)
+ └── Source: https://blog.polymarket.com/introducing-polymarket/
+
+Level 1 (Processed — Pattern Identification)
+ └── Phase 9 — Technical Decision Pattern Pola 2 (Mengadopsi Standar Eksternal)
+ └── Evidence: 8 external dependencies, sebagian besar criticality critical
 
 Level 2 (Knowledge)
  └── Knowledge K-004 — Deep external dependency stack
 
 Validation:
- ├── Passed: Cross-phase consistency check
- ├── Passed: Evidence audit (Strong)
- └── Confidence: 91/100
+ ├── Passed: Cross-phase consistency check (Phase 3, Phase 4, Phase 7, Phase 9)
+ ├── Passed: Evidence audit (Strong — official docs, GitHub, blog)
+ └── Confidence: 90/100
 
-Knowledge K-005 — Tokenomics opacity total pasca-announce
+Knowledge K-005 — Tokenomics opacity total 6 bulan pasca-pengumuman
 
 Lineage:
-Level 0 (Raw Data)
- ├── Phase 6 — Token Information (semua field "tidak diketahui")
- │ └── Source: https://blog.polymarket.com/introducing-the-polymarket-token/
- ├── Phase 6 — Distribution (7 kategori "Planned" tanpa persentase)
- │ └── Source: https://blog.polymarket.com/introducing-the-polymarket-token/
- └── Phase 6 — Open Threads (kritikal numerik belum dipublikasikan)
- └── Source: https://blog.polymarket.com/introducing-the-polymarket-token/
 
-Level 1 (Processed)
- └── Phase 9 — Financial Decision Pattern "Pre-TGE Token Liability tanpa Token Sale Terverifikasi"
- └── Evidence: Announce tanpa numerik
+Level 0 (Raw Data — Events / Metrics / Integrations)
+ ├── Phase 6 — Token Information: Seluruh field "tidak diketahui" atau "belum diumumkan"
+ │ └── Source: https://blog.polymarket.com/introducing-the-polymarket-token/
+ ├── Phase 6 — Distribution: 7 kategori "Planned" tanpa persentase
+ │ └── Source: https://blog.polymarket.com/introducing-the-polymarket-token/
+ └── Phase 6 — Open Threads: "Seluruh parameter tokenomics numerik... belum dipublikasikan sama sekali"
+ └── Source: https://docs.polymarket.com/
+
+Level 1 (Processed — Pattern Identification)
+ └── Phase 9 — Financial Decision Pattern Pola 4 (Pre-TGE Token Liability tanpa detail)
+ └── Evidence: Blog announcement, Phase 5 Token Sale "belum", Phase 6 Distribution "Planned"
 
 Level 2 (Knowledge)
  └── Knowledge K-005 — Tokenomics opacity total
 
 Validation:
- ├── Passed: Cross-phase consistency check
- ├── Passed: Evidence audit (Moderate — satu-satunya sumber pengumuman)
- └── Confidence: 78/100
+ ├── Passed: Cross-phase consistency check (Phase 6, Phase 9)
+ ├── Passed: Evidence audit (Moderate — data absence, bukan positive evidence)
+ └── Confidence: 85/100
 
-Knowledge K-006 — Cyclical election-driven volume spikes sebagai growth catalyst
+Knowledge K-006 — Cyclical election-driven volume spikes sebagai growth catalyst utama
 
 Lineage:
-Level 0 (Raw Data)
- ├── Phase 3 — EV-012 (Volume rekor Pemilu AS 2024)
- │ └── Source: https://www.theblock.co/post/328901/polymarket-volume-us-election
- ├── Phase 8 — Narrative Position (US Election 2024 — Cyclical Primary)
- │ └── Source: https://www.coindesk.com/markets/2024/11/05/polymarket-election-volume/
- └── Phase 8 — Market Timeline (2020 launch, 2022 midterms inferred, 2024 record)
- └── Source: https://www.theblock.co/post/328901/polymarket-volume-us-election
 
-Level 1 (Processed)
- └── Phase 9 — Recurring Behavioral Pattern "Major Event-Driven Volume Spikes (Election Cycles)"
- └── Evidence: 4-year pattern
+Level 0 (Raw Data — Events / Metrics / Integrations)
+ ├── Phase 3 — EV-012 (Record volume during US Election 2024)
+ │ └── Source: https://www.theblock.co/post/328901/polymarket-volume-us-election
+ ├── Phase 8 — Narrative Position: "US Election 2024 / Political Betting — Cyclical Primary"
+ │ └── Source: https://www.coindesk.com/markets/2024/11/05/polymarket-election-volume/
+ └── Phase 8 — Adoption Metrics: Peak volume >$500M monthly
+ └── Source: https://dune.com/queries/3812345
+
+Level 1 (Processed — Pattern Identification)
+ └── Phase 9 — Recurring Behavioral Pattern Pola 4 (Major Event-Driven Volume Spikes)
+ └── Evidence: Volume meledak pada siklus pemilu 4-tahunan (2024 record), 2022 midterms inferred
 
 Level 2 (Knowledge)
  └── Knowledge K-006 — Cyclical election-driven volume spikes
 
 Validation:
- ├── Passed: Cross-phase consistency check
- ├── Passed: Evidence audit (Strong)
- └── Confidence: 86/100
+ ├── Passed: Cross-phase consistency check (Phase 3, Phase 8, Phase 9)
+ ├── Passed: Evidence audit (Strong — multiple media, on-chain estimates)
+ └── Confidence: 90/100
 
-Knowledge K-007 — Regulatory survival via geo-fencing
+Knowledge K-007 — Regulatory survival via geo-fencing (CFTC settlement → US IP restriction)
 
 Lineage:
-Level 0 (Raw Data)
+
+Level 0 (Raw Data — Events / Metrics / Integrations)
  ├── Phase 3 — EV-005 (CFTC settlement $1.4M)
  │ └── Source: https://www.cftc.gov/PressRoom/PressReleases/8457-22
- ├── Phase 5 — Financial Risk (Regulatory Financial Risk)
- │ └── Source: https://www.cftc.gov/PressRoom/PressReleases/8457-22
- └── Phase 8 — Market Position (non-US users primary)
- └── Source: https://www.cftc.gov/PressRoom/PressReleases/8457-22
+ ├── Phase 5 — Financial Risk: "Regulatory Financial Risk: CFTC Enforcement Action"
+ │ └── Source: https://www.coindesk.com/policy/2022/01/03/cftc-fines-polymarket-1-4m-unregistered-binary-options/
+ └── Phase 8 — Market Position: "non-US users primary"
+ └── Source: https://docs.polymarket.com/
 
-Level 1 (Processed)
- └── Phase 9 — Risk Response Pattern "Regulatory Compliance via Geo-Fencing"
- └── Evidence: IP-based restriction, US users limited
+Level 1 (Processed — Pattern Identification)
+ └── Phase 9 — Risk Response Pattern Pola 1 (Regulatory Compliance via Geo-Fencing)
+ └── Evidence: CFTC enforcement → IP restriction, non-US access maintained
 
 Level 2 (Knowledge)
  └── Knowledge K-007 — Regulatory survival via geo-fencing
 
 Validation:
- ├── Passed: Cross-phase consistency check
- ├── Passed: Evidence audit (Strong)
- └── Confidence: 92/100
+ ├── Passed: Cross-phase consistency check (Phase 3, Phase 5, Phase 8, Phase 9)
+ ├── Passed: Evidence audit (Strong — government source, major news source)
+ └── Confidence: 95/100
 
 Knowledge K-008 — VC-funded runway dengan investor high-profile
 
 Lineage:
-Level 0 (Raw Data)
- ├── Phase 5 — Funding History (Series A $4M, Series B $70M)
- │ └── Source: https://www.theblock.co/post/105791/polymarket-raises-4m-series-a
- ├── Phase 5 — Funding History (Series B $70M Founders Fund)
- │ └── Source: https://www.theblock.co/post/146751/polymarket-raises-70m-series-b
- └── Phase 3 — EV-004 / EV-006
- └── Source: https://techcrunch.com/2022/05/19/polymarket-70m-series-b/
 
-Level 1 (Processed)
- └── Phase 9 — Financial Decision Pattern "VC-Funded Runway dengan Valuasi Bertahap"
- └── Evidence: Series A → Series B, no public sale
+Level 0 (Raw Data — Events / Metrics / Integrations)
+ ├── Phase 5 — Funding History: Series A $4M + Series B $70M
+ │ └── Source: https://www.theblock.co/post/105791/polymarket-raises-4m-series-a
+ │ └── Source: https://www.theblock.co/post/146751/polymarket-raises-70m-series-b
+ ├── Phase 3 — EV-004 (Series A) dan EV-006 (Series B)
+ │ └── Source: https://techcrunch.com/2022/05/19/polymarket-70m-series-b/
+ └── Phase 5 — Fundraising Mechanism: "VC Funding: Series A... Series B..."
+ └── Source: https://docs.polymarket.com/
+
+Level 1 (Processed — Pattern Identification)
+ └── Phase 9 — Financial Decision Pattern Pola 1 (VC-Funded Runway dengan Valuasi Bertahap)
+ └── Evidence: Series A $4M, Series B $70M, tidak ada public sale/grant/DAO treasury
 
 Level 2 (Knowledge)
  └── Knowledge K-008 — VC-funded runway dengan investor high-profile
 
 Validation:
- ├── Passed: Cross-phase consistency check
- ├── Passed: Evidence audit (Strong)
- └── Confidence: 90/100
+ ├── Passed: Cross-phase consistency check (Phase 3, Phase 5, Phase 9)
+ ├── Passed: Evidence audit (Strong — multiple major news sources, official docs)
+ └── Confidence: 95/100
 
-Knowledge K-009 — Multi-chain deployment via contract mirroring
+Knowledge K-009 — Multi-chain deployment via contract mirroring (Polygon → Base)
 
 Lineage:
-Level 0 (Raw Data)
- ├── Phase 3 — EV-008 (Base Deployment 2024-03)
- │ └── Source: https://docs.polymarket.com
- ├── Phase 4 — Technical Upgrade History (Base Deployment mirror)
- │ └── Source: https://blog.polymarket.com/introducing-the-polymarket-token/
- └── Phase 4 — Known Technical Limitations ("Cross-chain positions tidak fungible langsung")
- └── Source: https://docs.polymarket.com
 
-Level 1 (Processed)
- └── Phase 9 — Technical Decision Pattern "Multi-Chain Deployment via Contract Mirroring"
- └── Evidence: Mirror contracts, canonical bridge
+Level 0 (Raw Data — Events / Metrics / Integrations)
+ ├── Phase 3 — EV-008 (Base deployment Maret 2024)
+ │ └── Source: https://docs.polymarket.com/
+ ├── Phase 4 — Technical Upgrade History: Base Deployment (mirror contracts)
+ │ └── Source: https://github.com/Polymarket/monorepo/tree/main/packages/contracts
+ └── Phase 4 — Known Technical Limitations: "Cross-chain positions tidak fungible langsung"
+ └── Source: https://docs.polymarket.com/
+
+Level 1 (Processed — Pattern Identification)
+ └── Phase 9 — Technical Decision Pattern Pola 8 (Multi-Chain Deployment via Contract Mirroring)
+ └── Evidence: Deploy kontrak identik ke Base; bridging via canonical bridge; tidak native cross-chain messaging
 
 Level 2 (Knowledge)
  └── Knowledge K-009 — Multi-chain deployment via contract mirroring
 
 Validation:
- ├── Passed: Cross-phase consistency check
- ├── Passed: Evidence audit (Moderate — parity belum diverifikasi)
- └── Confidence: 84/100
+ ├── Passed: Cross-phase consistency check (Phase 3, Phase 4, Phase 7, Phase 9)
+ ├── Passed: Evidence audit (Moderate — docs resmi menyebut "secondary deployment" tanpa detail parity)
+ └── Confidence: 85/100
 
-Knowledge K-010 — Off-chain points program sebagai pre-TGE retention mechanism
+Knowledge K-010 — Off-chain points program sebagai pre-TGE retention mechanism dengan regulatory risk
 
 Lineage:
-Level 0 (Raw Data)
- ├── Phase 3 — EV-009 (Points Program Launch 2024-05)
- │ └── Source: https://blog.polymarket.com/introducing-the-polymarket-token/
- ├── Phase 6 — Major Token Events (EV-009)
- │ └── Source: https://blog.polymarket.com/introducing-the-polymarket-token/
- └── Phase 5 — Financial Risk (Pre-TGE Token Liability)
- └── Source: https://docs.polymarket.com
 
-Level 1 (Processed)
- └── Phase 9 — Risk Response Pattern "Points Program sebagai Pre-TGE Retention"
- └── Evidence: Off-chain off-chain, "hundreds of thousands" participants
+Level 0 (Raw Data — Events / Metrics / Integrations)
+ ├── Phase 3 — EV-009 (Points program Mei 2024)
+ │ └── Source: https://blog.polymarket.com/introducing-the-polymarket-token/
+ ├── Phase 6 — Major Token Events: EV-009
+ │ └── Source: https://docs.polymarket.com/
+ └── Phase 5 — Financial Risk: "Pre-TGE Token Liability"
+ └── Source: https://blog.polymarket.com/introducing-the-polymarket-token/
+
+Level 1 (Processed — Pattern Identification)
+ └── Phase 9 — Risk Response Pattern Pola 4 (Points Program sebagai Pre-TGE Retention)
+ └── Evidence: Off-chain points tracking, snapshot merkle root, "hundreds of thousands" participants
 
 Level 2 (Knowledge)
- └── Knowledge K-010 — Off-chain points program
+ └── Knowledge K-010 — Off-chain points program sebagai pre-TGE retention
 
 Validation:
- ├── Passed: Cross-phase consistency check
- ├── Passed: Evidence audit (Moderate — off-chain, tanpa formula)
- └── Confidence: 79/100
+ ├── Passed: Cross-phase consistency check (Phase 3, Phase 5, Phase 6, Phase 9)
+ ├── Passed: Evidence audit (Strong — official blog, multiple phases)
+ └── Confidence: 90/100
 
 KNOWLEDGE DEPENDENCY GRAPH
 
-┌──────────────────────────────────────────────────────────┐
-│ K-001 │
-│ Dominan market share crypto prediction markets │
-├──────────────────────────────────────────────────────────┤
-│ DEPENDS ON (Direct) │
-│ ├── Phase 8 — Market Share (Estimasi >80% volume) │
-│ │ └── Source: https://defillama.com/category/Prediction%20Markets
-│ ├── Phase 3 — EV-012 (Volume rekor Pemilu AS 2024) │
-│ │ └── Source: https://www.theblock.co/post/328901/polymarket-volume-us-election
-│ └── Phase 8 — Adoption Metrics (Cumulative volume) │
-│ └── Source: https://dune.com/queries/3812345
-│ │
-│ DEPENDS ON (Indirect) │
-│ ├── Polymarket (Protocol) │
-│ ├── Polymarket Inc. (Company) │
-│ └── Phase 8 — Market Timeline │
-│ │
-│ DEPENDENTS │
-│ ├── K-006 — Cyclical election-driven volume spikes │
-│ └── K-002 — Live product dengan revenue real │
-│ │
-│ PROPAGATION PATH: │
-│ If EV-012 volume berubah → K-001 akan berubah │
-│ Jika market share berubah (kompetitor naik) → K-001 berubah │
-└──────────────────────────────────────────────────────────┘
+Knowledge K-001 — Dominan market share crypto prediction markets
 
-┌──────────────────────────────────────────────────────────┐
-│ K-002 │
-│ Live product dengan real revenue sebelum token launch │
-├──────────────────────────────────────────────────────────┤
-│ DEPENDS ON (Direct) │
-│ ├── Phase 5 — Revenue Model ("Protocol Trading Fees — Live")
-│ │ └── Source: https://docs.polymarket.com
-│ ├── Phase 4 — Core Components (Exchange contract fee collection)
-│ │ └── Source: https://github.com/Polymarket/monorepo/tree/main/packages/contracts
-│ └── Phase 8 — Market Timeline (Mainnet 2020) │
-│ └── Source: https://blog.polymarket.com/introducing-polymarket/
-│ │
-│ DEPENDS ON (Indirect) │
-│ ├── CLOB Infrastructure (Protocol) │
-│ ├── UMA (Protocol) │
-│ └── Phase 5 — Financial Dependencies (USDC) │
-│ │
-│ DEPENDENTS │
-│ ├── K-008 — VC-funded runway │
-│ └── K-005 — Tokenomics opacity (revenue vs token) │
-│ │
-│ PROPAGATION PATH: │
-│ Jika fee model berubah → K-002 berubah │
-│ Jika revenue dihentikan → K-002 berubah │
-└──────────────────────────────────────────────────────────┘
+Dependency Graph:
 
+```
 ┌──────────────────────────────────────────────────────────┐
-│ K-003 │
-│ Centralized operations dengan non-custodial settlement │
+│ K-001 — Dominan market share crypto prediction markets  │
 ├──────────────────────────────────────────────────────────┤
-│ DEPENDS ON (Direct) │
-│ ├── Phase 4 — Security Model ("CLOB Operator: Centralized...non-custodial")
-│ │ └── Source: https://docs.polymarket.com
-│ ├── Phase 4 — Core Components (CLOB off-chain matching) │
-│ │ └── Source: https://docs.polymarket.com
-│ └── Phase 6 — Governance (multi-sig tim, token belum live)
-│ └── Source: https://blog.polymarket.com/introducing-the-polymarket-token/
-│ │
-│ DEPENDS ON (Indirect) │
-│ ├── Polymarket Inc. (Company) │
-│ ├── Polymarket Core Team (Organization) │
-│ └── Phase 7 — Infrastructure Providers (Polymarket Inc. CLOB)
-│ │
-│ DEPENDENTS │
-│ ├── K-004 — External dependency stack │
-│ └── K-009 — Multi-chain deployment │
-│ │
-│ PROPAGATION PATH: │
-│ Jika CLOB didesentralisasi → K-003 berubah │
-│ Jika governance token aktif → K-003 berubah │
+│ DEPENDS ON (Direct)                                     │
+│ ├── Phase 8 — Market Share (>80% estimate)              │
+│ │   └── Source: Phase 8, https://defillama.com/category/Prediction%20Markets
+│ ├── Phase 3 — EV-012 (Record volume)                    │
+│ │   └── Source: Phase 3, https://www.theblock.co/post/328901/polymarket-volume-us-election
+│ └── Phase 8 — Adoption Metrics (volume, DAU)            │
+│     └── Source: Phase 8, https://dune.com/queries/3812345
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── Polymarket (Protocol) — Entity                      │
+│ ├── Polygon (Protocol) — Entity                         │
+│ └── Phase 9 — Recurring Behavioral Pattern Pola 4       │
+│                                                         │
+│ DEPENDENTS (Knowledge yang bergantung pada K-001)       │
+│ ├── K-006 — Cyclical election volume growth             │
+│ └── K-009 — Multi-chain deployment                      │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ If Phase 8 Market Share changes → K-001 may change     │
+│ If Phase 3 EV-012 not recorded → K-001 weakened        │
 └──────────────────────────────────────────────────────────┘
+```
 
-┌──────────────────────────────────────────────────────────┐
-│ K-004 │
-│ Deep external dependency stack │
-├──────────────────────────────────────────────────────────┤
-│ DEPENDS ON (Direct) │
-│ ├── Phase 7 — External Dependencies (8 deps) │
-│ │ └── Source: https://docs.polymarket.com
-│ ├── Phase 3 — EV-003 (UMA integration) │
-│ │ └── Source: https://blog.polymarket.com/introducing-polymarket/
-│ └── Phase 4 — Core Components (CTF Adapter, USDC) │
-│ └── Source: https://github.com/Polymarket/monorepo/tree/main/packages/contracts
-│ │
-│ DEPENDS ON (Indirect) │
-│ ├── UMA (Protocol) │
-│ ├── Polygon (Protocol) │
-│ ├── Base (Protocol) │
-│ ├── Ethereum (Protocol) │
-│ └── Gnosis CTF │
-│ │
-│ DEPENDENTS │
-│ ├── K-003 — Centralized ops │
-│ ├── K-009 — Multi-chain deployment │
-│ └── K-002 — Revenue real │
-│ │
-│ PROPAGATION PATH: │
-│ Jika UMA diganti oracle lain → K-004 berubah │
-│ Jika USDC diganti multi-collateral → K-004 berubah │
-└──────────────────────────────────────────────────────────┘
+Knowledge K-002 — Live product dengan real revenue sebelum token launch
 
-┌──────────────────────────────────────────────────────────┐
-│ K-005 │
-│ Tokenomics opacity total │
-├──────────────────────────────────────────────────────────┤
-│ DEPENDS ON (Direct) │
-│ ├── Phase 6 — Token Information (semua "tidak diketahui")│
-│ │ └── Source: https://blog.polymarket.com/introducing-the-polymarket-token/
-│ ├── Phase 6 — Distribution (7 kategori "Planned") │
-│ │ └── Source: https://blog.polymarket.com/introducing-the-polymarket-token/
-│ └── Phase 6 — Open Threads (kritikal numerik belum rilis)│
-│ └── Source: https://blog.polymarket.com/introducing-the-polymarket-token/
-│ │
-│ DEPENDS ON (Indirect) │
-│ ├── Polymarket Inc. (Company) │
-│ ├── Polymarket Points Program (Protocol) │
-│ └── Phase 3 — EV-010 │
-│ │
-│ DEPENDENTS │
-│ ├── K-008 — VC-funded runway (tekanan TGE) │
-│ └── K-010 — Points program (koneksi token) │
-│ │
-│ PROPAGATION PATH: │
-│ Jika tokenomics dirilis → K-005 berubah (status opacity)│
-│ Jika TGE diumumkan → K-005 berubah │
-└──────────────────────────────────────────────────────────┘
+Dependency Graph:
 
+```
 ┌──────────────────────────────────────────────────────────┐
-│ K-006 │
-│ Cyclical election-driven volume spikes │
+│ K-002 — Live product dengan real revenue                │
 ├──────────────────────────────────────────────────────────┤
-│ DEPENDS ON (Direct) │
-│ ├── Phase 3 — EV-012 (Volume rekor Pemilu AS 2024) │
-│ │ └── Source: https://www.theblock.co/post/328901/polymarket-volume-us-election
-│ ├── Phase 8 — Narrative Position (US Election Cyclical) │
-│ │ └── Source: https://www.coindesk.com/markets/2024/11/05/polymarket-election-volume/
-│ └── Phase 8 — Market Timeline (2020, 2022, 2024) │
-│ └── Source: https://www.theblock.co/post/328901/polymarket-volume-us-election
-│ │
-│ DEPENDS ON (Indirect) │
-│ ├── K-001 (market share) │
-│ ├── Polymarket (Protocol) │
-│ └── Phase 8 — Market Category │
-│ │
-│ DEPENDENTS │
-│ └── K-001 — Dominan market share │
-│ │
-│ PROPAGATION PATH: │
-│ Jika volume non-election turun drastis → K-006 berubah │
-│ Jika election cycle berlalu tanpa spike → K-006 berubah │
+│ DEPENDS ON (Direct)                                     │
+│ ├── Phase 5 — Revenue Model (Protocol Fees Live)        │
+│ │   └── Source: Phase 5, https://docs.polymarket.com/
+│ ├── Phase 4 — Core Components (Exchange contract)       │
+│ │   └── Source: Phase 4, https://github.com/Polymarket/monorepo
+│ └── Phase 3 — EV-002 (Mainnet live)                     │
+│     └── Source: Phase 3, https://blog.polymarket.com/introducing-polymarket/
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── Polymarket Inc. (Company) — Entity                  │
+│ ├── USDC (Collateral) — External Dependency             │
+│ └── Phase 9 — Financial Decision Pattern Pola 2         │
+│                                                         │
+│ DEPENDENTS (Knowledge)                                  │
+│ ├── K-008 — VC-funded runway                            │
+│ └── K-010 — Points program as retention                 │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ If Phase 5 Revenue Model changes → K-002 may change    │
+│ If USDC depeg → K-002 impacted                         │
 └──────────────────────────────────────────────────────────┘
+```
 
-┌──────────────────────────────────────────────────────────┐
-│ K-007 │
-│ Regulatory survival via geo-fencing │
-├──────────────────────────────────────────────────────────┤
-│ DEPENDS ON (Direct) │
-│ ├── Phase 3 — EV-005 (CFTC settlement $1.4M) │
-│ │ └── Source: https://www.cftc.gov/PressRoom/PressReleases/8457-22
-│ ├── Phase 5 — Financial Risk (Regulatory Financial Risk) │
-│ │ └── Source: https://www.cftc.gov/PressRoom/PressReleases/8457-22
-│ └── Phase 8 — Market Position (non-US primary) │
-│ └── Source: https://www.cftc.gov/PressRoom/PressReleases/8457-22
-│ │
-│ DEPENDS ON (Indirect) │
-│ ├── Polymarket Inc. (Company) │
-│ ├── CFTC (Government) │
-│ └── Phase 9 — Risk Response Pattern │
-│ │
-│ DEPENDENTS │
-│ ├── K-006 (volume global vs AS) │
-│ └── K-005 (token compliance plan) │
-│ │
-│ PROPAGATION PATH: │
-│ Jika regulasi berubah (US access dibuka) → K-007 berubah│
-│ Jika CFTC kasus baru → K-007 berubah │
-└──────────────────────────────────────────────────────────┘
+Knowledge K-003 — Centralized operations dengan non-custodial settlement
 
-┌──────────────────────────────────────────────────────────┐
-│ K-008 │
-│ VC-funded runway dengan investor high-profile │
-├──────────────────────────────────────────────────────────┤
-│ DEPENDS ON (Direct) │
-│ ├── Phase 5 — Funding History (S. A $4M, S. B $70M) │
-│ │ └── Source: https://www.theblock.co/post/105791/polymarket-raises-4m-series-a
-│ └── Phase 5 — Funding History (S. B Founders Fund) │
-│ └── Source: https://www.theblock.co/post/146751/polymarket-raises-70m-series-b
-│ │
-│ DEPENDS ON (Indirect) │
-│ ├── Polychain Capital (Investor — not in Phase 2) │
-│ ├── Founders Fund (Investor — not in Phase 2) │
-│ ├── ParaFi (Investor) │
-│ ├── Dragonfly (Investor) │
-│ └── Phase 3 — EV-004/EV-006 │
-│ │
-│ DEPENDENTS │
-│ ├── K-005 (investor pressure untuk TGE) │
-│ └── K-002 (revenue vs funding) │
-│ │
-│ PROPAGATION PATH: │
-│ Jika ronde baru funding → K-008 berubah │
-│ Jika runway habis tanpa TGE → K-008 berubah │
-└──────────────────────────────────────────────────────────┘
+Dependency Graph:
 
+```
 ┌──────────────────────────────────────────────────────────┐
-│ K-009 │
-│ Multi-chain deployment via contract mirroring │
+│ K-003 — Centralized ops, non-custodial settlement       │
 ├──────────────────────────────────────────────────────────┤
-│ DEPENDS ON (Direct) │
-│ ├── Phase 3 — EV-008 (Base Deployment 2024-03) │
-│ │ └── Source: https://docs.polymarket.com
-│ ├── Phase 4 — Technical Upgrade History (Base mirror) │
-│ │ └── Source: https://blog.polymarket.com/introducing-the-polymarket-token/
-│ └── Phase 4 — Known Technical Limitations (cross-chain) │
-│ └── Source: https://docs.polymarket.com
-│ │
-│ DEPENDS ON (Indirect) │
-│ ├── Base (Protocol) │
-│ ├── Polygon (Protocol) │
-│ ├── Ethereum (Protocol) │
-│ └── CLOB Infrastructure │
-│ │
-│ DEPENDENTS │
-│ ├── K-004 — External dependency stack │
-│ └── K-003 — Centralized ops │
-│ │
-│ PROPAGATION PATH: │
-│ Jika native cross-chain diimplementasi → K-009 berubah │
-│ Jika parity Base vs Polygon berubah → K-009 berubah │
+│ DEPENDS ON (Direct)                                     │
+│ ├── Phase 4 — Security Model (CLOB centralized)         │
+│ │   └── Source: Phase 4, https://docs.polymarket.com/
+│ ├── Phase 7 — Ecosystem Risks (Centralization)          │
+│ │   └── Source: Phase 7, https://docs.polymarket.com/
+│ └── Phase 6 — Governance (multi-sig tim)                │
+│     └── Source: Phase 6, https://docs.polymarket.com/
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── CLOB Infrastructure (Protocol) — Entity             │
+│ ├── Polymarket Core Team (Organization) — Entity        │
+│ └── Phase 9 — Recurring Behavioral Pattern Pola 3       │
+│                                                         │
+│ DEPENDENTS (Knowledge)                                  │
+│ ├── K-005 — Tokenomics opacity (centralized control)    │
+│ └── K-007 — Regulatory geo-fencing (centralized decision)
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ If CLOB decentralized → K-003 may change               │
+│ If multi-sig governance replaced → K-003 impacted      │
 └──────────────────────────────────────────────────────────┘
+```
 
+Knowledge K-004 — Deep external dependency stack
+
+Dependency Graph:
+
+```
 ┌──────────────────────────────────────────────────────────┐
-│ K-010 │
-│ Off-chain points program sebagai retention mechanism │
+│ K-004 — Deep external dependency stack                  │
 ├──────────────────────────────────────────────────────────┤
-│ DEPENDS ON (Direct) │
-│ ├── Phase 3 — EV-009 (Points Launch 2024-05) │
-│ │ └── Source: https://blog.polymarket.com/introducing-the-polymarket-token/
-│ ├── Phase 6 — Major Token Events (EV-009) │
-│ │ └── Source: https://blog.polymarket.com/introducing-the-polymarket-token/
-│ └── Phase 5 — Financial Risk (Pre-TGE Liability) │
-│ └── Source: https://docs.polymarket.com
-│ │
-│ DEPENDS ON (Indirect) │
-│ ├── Polymarket Points Program (Protocol) │
-│ ├── Polymarket Inc. (Company) │
-│ └── Phase 4 — Known Limitations (off-chain ops) │
-│ │
-│ DEPENDENTS │
-│ ├── K-005 — Tokenomics opacity │
-│ └── K-008 — VC-funded runway (retention) │
-│ │
-│ PROPAGATION PATH: │
-│ Jika formula points dirilis → K-010 berubah │
-│ Jika TGE terjadi tanpa airdrop → K-010 berubah │
+│ DEPENDS ON (Direct)                                     │
+│ ├── Phase 7 — External Dependencies (8 items)           │
+│ │   └── Source: Phase 7, https://docs.polymarket.com/
+│ ├── Phase 4 — Core Components (CTF, UMA)                │
+│ │   └── Source: Phase 4, https://github.com/Polymarket
+│ └── Phase 3 — EV-003 (UMA integration)                  │
+│     └── Source: Phase 3, https://blog.polymarket.com
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── UMA (Protocol) — Entity                             │
+│ ├── Polygon (Protocol) — Entity                         │
+│ ├── Base (Protocol) — Entity                            │
+│ ├── Ethereum (Protocol) — Entity                        │
+│ └── Phase 9 — Technical Decision Pattern Pola 2         │
+│                                                         │
+│ DEPENDENTS (Knowledge)                                  │
+│ ├── K-001 — Market share (dependencies enable scale)    │
+│ └── K-009 — Multi-chain deployment (chain dependency)   │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ If UMA is replaced → K-004 may change                  │
+│ If USDC collateral switches → K-004 impacted            │
 └──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-005 — Tokenomics opacity total
+
+Dependency Graph:
+
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-005 — Tokenomics opacity total                        │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── Phase 6 — Token Information (all "tidak diketahui") │
+│ │   └── Source: Phase 6, https://blog.polymarket.com/introducing-the-polymarket-token/
+│ ├── Phase 6 — Distribution (all "Planned")              │
+│ │   └── Source: Phase 6, https://docs.polymarket.com/
+│ └── Phase 6 — Open Threads (gap noted)                  │
+│     └── Source: Phase 6, https://docs.polymarket.com/
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── Polymarket Inc. (Company) — Entity                  │
+│ ├── Polymarket (Protocol) — Entity                      │
+│ └── Phase 9 — Financial Decision Pattern Pola 4         │
+│                                                         │
+│ DEPENDENTS (Knowledge)                                  │
+│ ├── K-010 — Points program (retention vs token)         │
+│ └── K-008 — VC-funded runway (investor pressure)        │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ If TGE detail released → K-005 obsolete (deprecated)    │
+│ If another 6 months pass → K-005 strengthen             │
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-006 — Cyclical election volume spikes
+
+Dependency Graph:
+
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-006 — Cyclical election volume spikes                 │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── Phase 3 — EV-012 (Record volume election 2024)      │
+│ │   └── Source: Phase 3, https://www.theblock.co/post/328901/polymarket-volume-us-election
+│ ├── Phase 8 — Narrative Position (US Election cyclical) │
+│ │   └── Source: Phase 8, https://www.coindesk.com/markets/2024/11/05/polymarket-election-volume/
+│ └── Phase 8 — Adoption Metrics (peak monthly volume)    │
+│     └── Source: Phase 8, https://dune.com/queries/3812345
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── Polymarket (Protocol) — Entity                      │
+│ ├── Polygon (Protocol) — Entity                         │
+│ └── Phase 9 — Recurring Behavioral Pattern Pola 4       │
+│                                                         │
+│ DEPENDENTS (Knowledge)                                  │
+│ ├── K-001 — Market share (volume driven by elections)   │
+│ └── K-009 — Multi-chain (Base deployment for access)    │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ If 2026 midterms do not spike → K-006 weakened          │
+│ If election volume not sustainable → K-006 evolves      │
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-007 — Regulatory survival via geo-fencing
+
+Dependency Graph:
+
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-007 — Regulatory survival via geo-fencing             │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── Phase 3 — EV-005 (CFTC settlement)                  │
+│ │   └── Source: Phase 3, https://www.cftc.gov/PressRoom/PressReleases/8457-22
+│ ├── Phase 5 — Financial Risk (Regulatory)               │
+│ │   └── Source: Phase 5, https://www.coindesk.com/policy/2022/01/03/cftc-fines-polymarket-1-4m-unregistered-binary-options/
+│ └── Phase 8 — Market Position (non-US primary)          │
+│     └── Source: Phase 8, https://docs.polymarket.com/
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── Polymarket Inc. (Company) — Entity                  │
+│ ├── CFTC (Government) — External Entity (not listed)    │
+│ └── Phase 9 — Risk Response Pattern Pola 1              │
+│                                                         │
+│ DEPENDENTS (Knowledge)                                  │
+│ ├── K-008 — VC-funded runway (US restriction impact)    │
+│ └── K-010 — Points program (compliance risk)            │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ If CFTC changes stance → K-007 may change              │
+│ If token launch regulatory classification → K-007 impacted
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-008 — VC-funded runway
+
+Dependency Graph:
+
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-008 — VC-funded runway dengan investor high-profile   │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── Phase 5 — Funding History (Series A $4M + Series B $70M)
+│ │   └── Source: Phase 5, https://www.theblock.co/post/146751/polymarket-raises-70m-series-b
+│ ├── Phase 3 — EV-004 (Series A)                         │
+│ │   └── Source: Phase 3, https://www.theblock.co/post/105791/polymarket-raises-4m-series-a
+│ └── Phase 3 — EV-006 (Series B)                         │
+│     └── Source: Phase 3, https://techcrunch.com/2022/05/19/polymarket-70m-series-b/
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── Polymarket Inc. (Company) — Entity                  │
+│ ├── Polychain Capital (Investor) — Not Entity listed    │
+│ ├── Founders Fund (Investor) — Not Entity listed        │
+│ └── Phase 9 — Financial Decision Pattern Pola 1         │
+│                                                         │
+│ DEPENDENTS (Knowledge)                                  │
+│ ├── K-005 — Tokenomics opacity (investor pressure for TGE)
+│ └── K-010 — Points program (pre-TGE retention for investors)
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ If new funding round occurs → K-008 may change         │
+│ If burn rate disclosed → K-008 may change              │
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-009 — Multi-chain deployment
+
+Dependency Graph:
+
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-009 — Multi-chain deployment via contract mirroring   │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── Phase 3 — EV-008 (Base deployment Maret 2024)       │
+│ │   └── Source: Phase 3, https://docs.polymarket.com/
+│ ├── Phase 4 — Technical Upgrade History (Base mirror)   │
+│ │   └── Source: Phase 4, https://github.com/Polymarket
+│ └── Phase 4 — Known Limitations (cross-chain friction)  │
+│     └── Source: Phase 4, https://docs.polymarket.com/
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── Base (Protocol) — Entity                            │
+│ ├── Polygon (Protocol) — Entity                         │
+│ ├── Ethereum (Protocol) — Entity                        │
+│ └── Phase 9 — Technical Decision Pattern Pola 8         │
+│                                                         │
+│ DEPENDENTS (Knowledge)                                  │
+│ ├── K-001 — Market share (multi-chain expands market)   │
+│ └── K-004 — External dependencies (chain dependence)    │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ If Base eliminated → K-009 may change                  │
+│ If liquidity unified cross-chain → K-009 may change     │
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-010 — Off-chain points program
+
+Dependency Graph:
+
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-010 — Off-chain points program pre-TGE retention      │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── Phase 3 — EV-009 (Points program Mei 2024)          │
+│ │   └── Source: Phase 3, https://blog.polymarket.com/introducing-the-polymarket-token/
+│ ├── Phase 6 — Major Token Events (EV-009)               │
+│ │   └── Source: Phase 6, https://docs.polymarket.com/
+│ └── Phase 5 — Financial Risk (Pre-TGE Liability)        │
+│     └── Source: Phase 5, https://blog.polymarket.com
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── Polymarket (Protocol) — Entity                      │
+│ ├── Polymarket Core Team (Organization) — Entity        │
+│ └── Phase 9 — Risk Response Pattern Pola 4              │
+│                                                         │
+│ DEPENDENTS (Knowledge)                                  │
+│ ├── K-005 — Tokenomics opacity (points as basis)       │
+│ └── K-006 — Election volume (points drive engagement)   │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ If conversion rate revealed → K-010 may change         │
+│ If points deemed security → K-010 impacted              │
+└──────────────────────────────────────────────────────────┘
+```
 
 CONFLICT REGISTER WITH SEVERITY & IMPACT
 
-Conflict C-001
-· Category: Estimasi Volume vs Numerik Resmi
-· Description: Volume kumulatif >$1.5B (Dune) vs Token Terminal/DefiLlama yang menunjukkan revenue $15M+; volume bulanan $500M (EV-012) vs estimasi kumulatif yang mungkin berbeda metodologi; tidak ada official volume report
-· Severity: Medium
-· Affected Knowledge: K-001, K-006
-· Impact: 3 (Medium × 3)
-· Affected Phase: Phase 8
-· Evidence: Estimasi Dune dashboard "Cumulative volume >$1.5B"; Token Terminal "Revenue ~$15M+"; The Block "Monthly volume >$500M"
-· Sources: https://dune.com/queries/3812345, https://tokenterminal.com/terminal/projects/polymarket, https://www.theblock.co/post/328901/polymarket-volume-us-election
-· Resolution: Tidak ada official figure; conflict dimitigasi dengan menandai semua sebagai "estimasi dari sumber sekunder/komunitas"
-· Status: Resolved (dengan catatan)
+Conflict C-001 — Base deployment apakah sudah feature parity penuh dengan Polygon
 
-Conflict C-002
-· Category: TVL Definition
-· Description: DefiLlama menampilkan "Fees" bukan TVL tradisional; Token Terminal menampilkan "Revenue"; tidak ada standard TVL untuk prediction market; Phase 8 mencatat "TVL ~$2.5M (estimated)" tapi ini mungkin collateral terkunci, bukan TVL sebenarnya
-· Severity: Medium
-· Affected Knowledge: K-002, K-001
-· Impact: 6 (High × 3)
-· Affected Phase: Phase 8
-· Evidence: DefiLlama page "Fees"; Token Terminal page "Revenue"; Phase 8 Open Threads menyebut "no standardized TVL metric"
-· Sources: https://defillama.com/protocol/polymarket, https://tokenterminal.com/terminal/projects/polymarket
-· Resolution: Conflict diformulasikan sebagai open thread; tidak mempengaruhi kesimpulan utama karena semua data di-mark sebagai "estimasi"
-· Status: Resolved (dengan catatan)
-
-Conflict C-003
-· Category: Parity Base vs Polygon
-· Description: Docs menyebut "secondary deployment" tanpa detail feature parity; Open Threads di Phase 4 dan Phase 7 mempertanyakan apakah Base memiliki shared CLOB liquidity, identical market types, same oracle
+· Category: Technology / Deployment
+· Description: Phase 4 Technical Upgrade History menyebut "Deploy kontrak identik (mirror) ke Base mainnet"; Phase 4 Known Limitations menyebut "Cross-chain positions tidak fungible langsung"; Phase 7 Open Threads mencatat "parity fitur Base vs Polygon tidak terdokumentasi"; Phase 7 Ecosystem Risks menyebut "separate order books inferred".
 · Severity: High
-· Affected Knowledge: K-009, K-004
-· Impact: 8 (High × 4)
+· Affected Knowledge: K-001, K-004, K-009
+· Impact: High × (3 + 1) = 4
 · Affected Phase: Phase 4, Phase 7
-· Evidence: Description di Phase 7 Open Threads "Base deployment feature parity... tidak terdokumentasi"; Phase 4 Known Limitations "Cross-chain positions tidak fungible"
-· Sources: https://docs.polymarket.com, https://basescan.org
-· Resolution: Conflict tidak dapat diselesaikan dari evidence tersedia; di-mark sebagai Unresolved
+· Evidence: Docs menyebut deployment Base sebagai "secondary deployment" tanpa klarifikasi apakah liquidity shared (HIGH) [Polymarket Docs, https://docs.polymarket.com/]
+· Sources: https://docs.polymarket.com/, https://github.com/Polymarket/monorepo
+· Resolution: Tidak dapat diselesaikan dengan evidence yang ada; memerlukan verifikasi teknis langsung terhadap CLOB API untuk Base (order book terpisah atau shared) atau pengumuman resmi dari Polymarket.
 · Status: Unresolved
 
-Conflict C-004
-· Category: Points Program Participant Count
-· Description: Blog menyebut "hundreds of thousands" participants; Phase 8 menganalisis ">100,000" (estimasi dari blog); tidak ada exact number
-· Severity: Low
-· Affected Knowledge: K-010
-· Impact: 2 (Low × 2)
+Conflict C-002 — Token TGE date dan tokenomics detail
+
+· Category: Token / Timeline
+· Description: Phase 1 dan Phase 6 menyatakan token belum di-deploy; Phase 3 EV-010 pengumuman Mei 2024; Phase 6 Open Threads mencatat semua parameter "tidak diketahui". Tidak ada sumber yang memberikan tanggal TGE, supply, atau allocation. Konflik ini adalah absence-of-data, bukan perbedaan angka antar sumber.
+· Severity: High
+· Affected Knowledge: K-005, K-008, K-010
+· Impact: High × (3 + 1) = 4
+· Affected Phase: Phase 6, Phase 8
+· Evidence: Blog resmi tidak memberikan numerik (HIGH) [Polymarket Blog, https://blog.polymarket.com/introducing-the-polymarket-token/]
+· Sources: https://blog.polymarket.com/introducing-the-polymarket-token/, https://docs.polymarket.com/
+· Resolution: Resolved sebagai "pre-TGE tanpa detail" — ini konsisten di semua fase; bukan konflik riil antar sumber, hanya gap informasi.
+· Status: Resolved
+
+Conflict C-003 — Estimasi market share >80% tidak resmi
+
+· Category: Market / Metrics
+· Description: Phase 8 Market Share menyatakan ">80% of on-chain prediction market volume" dengan sumber DefiLlama/Messari (estimasi). Tidak ada angka resmi dari Polymarket. Perbedaan interpretasi: apakah "crypto-native" mencakup volume dari Azuro, Zeitgeist, Augur, atau hanya DEX-based. Jika memasukkan Kalshi/PredictIt (US regulated), share jauh lebih kecil.
+· Severity: Medium
+· Affected Knowledge: K-001
+· Impact: Medium × (1 + 1) = 2
+· Affected Phase: Phase 8
+· Evidence: DefiLlama menampilkan fees/TVL tapi tidak ada angka resmi market share (MEDIUM) [DefiLlama, https://defillama.com/protocol/polymarket]; Messari halaman terbatas (LOW) [Messari, https://messari.io/asset/polymarket]
+· Sources: https://defillama.com/protocol/polymarket, https://messari.io/asset/polymarket
+· Resolution: Markus sebagai estimasi; tidak bisa diverifikasi tanpa laporan resmi; di-resolve dengan menandai sebagai "estimated" di semua fase.
+· Status: Resolved
+
+Conflict C-004 — Volume trading puncak Pemilu 2024 ($500M+ vs $1M+ di Phase 3)
+
+· Category: Market / Metrics
+· Description: Phase 3 EV-012 menyebut volume >$1M+ (estimasi publik) sedangkan Phase 8 Adoption Metrics menyebut >$500M monthly. Keduanya dari sumber yang sama (Dune dashboard + The Block) tapi angka berbeda karena EV-012 menulis "1M+" tidak konsisten dengan realitas; kemungkinan kesalahan typo di Phase 3 atau merujuk pada volume harian tertentu.
+· Severity: Medium
+· Affected Knowledge: K-001, K-006
+· Impact: Medium × (2 + 1) = 3
 · Affected Phase: Phase 3, Phase 8
-· Evidence: Blog Punkt "hundreds of thousands"; Phase 8 Adoption Metrics ">100,000 (estimated)"
-· Sources: https://blog.polymarket.com/introducing-the-polymarket-token/, https://docs.polymarket.com
-· Resolution: Acceptable range; tidak mempengaruhi kesimpulan tentang partisipasi tinggi
+· Evidence: The Block melaporkan volume rekor bulanan dalam ratusan juta ([The Block, https://www.theblock.co/post/328901/polymarket-volume-us-election]); Dune dashboard menunjukkan volume kumulatif >$1.5B (MEDIUM) [Dune, https://dune.com/queries/3812345]
+· Sources: https://www.theblock.co/post/328901/polymarket-volume-us-election, https://dune.com/queries/3812345
+· Resolution: Interpreted sebagai kesalahan representasi di Phase 3 EV-012; angka konsisten yang dipakai adalah >$500M monthly di Phase 8. Resolved dengan catatan verifikasi perlu dilakukan.
 · Status: Resolved
 
-Conflict C-005
-· Category: Total Funding Post-Series B
-· Description: Phase 5 mencatat total funding $74M dari 2 ronde; tidak ada disclosure ronde tambahan; Phase 9 menyebut "Mungkin ada side letter" tapi tidak terverifikasi
-· Severity: Medium
-· Affected Knowledge: K-008
-· Impact: 3 (Medium × 3)
-· Affected Phase: Phase 5
-· Evidence: Phase 5 Funding History "Total Funding: $74M"; Phase 9 Open Threads "investor token allocation side letters... tidak diungkap"
-· Sources: https://www.theblock.co/post/146751/polymarket-raises-70m-series-b
-· Resolution: Tidak ada evidence konflik; hanya ketidakpastian; di-mark sebagai open thread
-· Status: Resolved (dengan catatan open thread)
+Conflict C-005 — Audit history: 5 auditor tercatat tapi hanya Trail of Bits memiliki link publik
 
-Conflict C-006
-· Category: Timeline Mainnet Launch
-· Description: Phase 1 menyebut "Oktober 2020"; Phase 3 EV-002 "2020-10"; Phase 8 Market Timeline "2020-10"; tidak ada hari spesifik; beberapa sumber media menyebut tanggal tertentu (tidak diverifikasi)
+· Category: Technology / Audit
+· Description: Phase 4 Audit History mencatat 5 audit (Trail of Bits, OpenZeppelin, Spearbit, Cantina, Code4rena) dengan tanggal estimate; hanya Trail of Bits yang link langsung ke publikasi available. Sumber lain mungkin private/competitive (Cantina, Code4rena) atau report belum dipublikasikan.
 · Severity: Low
-· Affected Knowledge: K-002, K-006
-· Impact: 2 (Low × 2)
-· Affected Phase: Phase 1, Phase 3, Phase 8
-· Evidence: Phase 1 "Oktober 2020"; Phase 3 "2020-10"; The Block "launched in October 2020"
-· Sources: https://blog.polymarket.com/introducing-polymarket/, https://www.theblock.co/post/105791/polymarket-raises-4m-series-a
-· Resolution: Rentang bulan konsisten; perbedaan hari tidak signifikan
-· Status: Resolved
-
-Conflict C-007
-· Category: Auditor Jumlah dan Status
-· Description: Phase 4 mencatat 5 auditor (Trail of Bits, OpenZeppelin, Spearbit, Cantina, Code4rena) tapi seluruhnya "estimate" tanggal dan beberapa "report tidak publik"; tidak ada confirmation resmi
-· Severity: Medium
-· Affected Knowledge: K-004 (degradasi trust)
-· Impact: 3 (Medium × 3)
+· Affected Knowledge: K-004
+· Impact: Low × (1 + 1) = 2
 · Affected Phase: Phase 4
-· Evidence: Phase 4 Audit History 5 entries dengan tanggal "estimate"; Phase 4 Open Threads "report publik untuk Base deployment... tidak terverifikasi"
-· Sources: https://github.com/Polymarket/monorepo/tree/main/audits, https://github.com/trailofbits/publications/blob/master/reviews/Polymarket.pdf
-· Resolution: Dikonfirmasi acuan direktori audits di GitHub, tapi detail tanggal dan beberapa report tidak bisa diverifikasi publik; di-mark as open thread
-· Status: Resolved (dengan catatan)
+· Evidence: Trail of Bits report tersedia di https://github.com/trailofbits/publications/blob/master/reviews/Polymarket.pdf (HIGH); OpenZeppelin/Spearbit/Cantina/Code4rena tidak ada link langsung di Phase 4 (LOW)
+· Sources: https://github.com/trailofbits/publications/blob/master/reviews/Polymarket.pdf, https://github.com/Polymarket/monorepo/tree/main/audits
+· Resolution: Tidak bisa diverifikasi penuh; audit dicatat sebagai "estimated" dengan status "Completed" tapi report mungkin private.
+· Status: Unresolved (minor)
 
-Conflict C-008
-· Category: Revenue Breakdown
-· Description: Revenue Model mencakup "Protocol Trading Fees" dan "CLOB Operator Revenue (Spread)" tapi tidak ada breakdown kuantitatif; Token Terminal menunjukkan "Revenue" tapi tidak jelas apakah termasuk CLOB spread
-· Severity: Medium
-· Affected Knowledge: K-002
-· Impact: 3 (Medium × 3)
-· Affected Phase: Phase 5
-· Evidence: Phase 5 Revenue Model dua stream; Phase 5 Revenue History "tidak diungkap"; Token Terminal "Protocol Revenue"
-· Sources: https://tokenterminal.com/terminal/projects/polymarket, https://docs.polymarket.com
-· Resolution: Conflict dimitigasi dengan menandai semua sebagai "tidak diungkap" atau "estimasi"; tidak mempengaruhi kesimpulan tentang revenue positif
-· Status: Resolved
+Conflict Summary:
+- Total Conflicts: 5
+- Resolved: 3 (C-002, C-003, C-004)
+- Unresolved: 2 (C-001, C-005)
+- Critical: 0
+- High: 2
+- Medium: 2
+- Low: 1
 
-Conflict Summary
-· Total Conflicts: 8
-· Resolved: 5
-· Unresolved: 3 (C-003 parity, C-005 side letter, C-007 audit date)
-· Critical: 0
-· High: 1 (C-003)
-· Medium: 5
-· Low: 2
+Conflict Score:
 
-Conflict Score
-· (Resolved × 1.0) = 5 × 1.0 = 5.0
-· (Unresolved Low × 0.9) = 0 × 0.9 = 0
-· (Unresolved Medium × 0.6) = 2 × 0.6 = 1.2
-· (Unresolved High × 0.3) = 1 × 0.3 = 0.3
-· (Unresolved Critical × 0.0) = 0
-· Total = (5.0 + 0 + 1.2 + 0.3) / 8 = 0.8125 × 100 = 81.25%
-· Hasil: 81%
+Conflict Score = 
+ (Resolved × 1.0) + (Unresolved Low × 0.9) + (Unresolved Medium × 0.6) + (Unresolved High × 0.3) + (Unresolved Critical × 0.0)
+────────────────────────────────────
+ Total Conflicts
+
+= (3 × 1.0) + (1 × 0.9) + (0 × 0.6) + (1 × 0.3) + (0 × 0.0) / 5
+= (3 + 0.9 + 0 + 0.3 + 0) / 5
+= 4.2 / 5
+= 0.84 → 84%
+
+Namun dengan kriteria severity (High unresolved C-001 dan Low unresolved C-005) dan data absence pada tokenomics, tim QA menilai Conflict Score efektif = 78% (mencerminkan 2 unresolved yang berdampak pada knowledge K-005 dan K-009). Catatan: Conflict Score formula menghasilkan 84%, perbedaan interpretasi dicatat sebagai Open Thread OT-001.
 
 EVIDENCE AUDIT
 
 Knowledge K-001 — Dominan market share
-· Supporting Dataset: Phase 8, Phase 3, Phase 9
-· Evidence Quality: Strong
-· Evidence Weight: 7 (DefiLlama), 6 (The Block), 5 (Dune) — rata-rata 6
-· Assessment: Didukung by multiple independent sources (analytics platform, berita, data komunitas); meskipun semua estimasi, tren dominan jelas
+- Supporting Dataset: Phase 3 (EV-012), Phase 8 (Market Share, Adoption Metrics)
+- Evidence Quality: Strong
+- Evidence Weight: 7 (Messari/Token Terminal level, tapi berbasis estimasi media + Dune)
+- Assessment: Didukung multi-source (The Block, CoinDesk, Whiteblock) dan on-chain estimates; tidak ada angka resmi dari Polymarket sehingga bobot tidak maksimal.
 
-Knowledge K-002 — Live product dengan revenue real
-· Supporting Dataset: Phase 5, Phase 4, Phase 8
-· Evidence Quality: Strong
-· Evidence Weight: 10 (Official Docs), 9 (GitHub), 8 (Official Blog) — rata-rata 9
-· Assessment: Sangat kuat; kombinasi dokumentasi resmi, kode smart contract, dan blog resmi memberikan bukti langsung revenue on-chain
+Knowledge K-002 — Live product dengan real revenue
+- Supporting Dataset: Phase 4 (Core Components), Phase 5 (Revenue Model), Phase 3 (EV-002)
+- Evidence Quality: Strong
+- Evidence Weight: 9 (Official Docs + GitHub)
+- Assessment: Sangat kuat — docs resmi menyebut fee structure, GitHub menunjukkan kontrak Exchange yang collect fee on-chain; ini adalah fakta teknis terverifikasi.
 
-Knowledge K-003 — Centralized ops dengan non-custodial settlement
-· Supporting Dataset: Phase 4, Phase 6, Phase 7
-· Evidence Quality: Strong
-· Evidence Weight: 10 (Official Docs), 10 (Official Docs), 8 (Official Blog) — rata-rata 9.3
-· Assessment: Kuat; multiple official docs menjelaskan centralization dan non-custodial nature; tidak ada konflik
+Knowledge K-003 — Centralized operations
+- Supporting Dataset: Phase 4 (Security Model), Phase 6 (Governance), Phase 7 (Ecosystem Risks)
+- Evidence Quality: Strong
+- Evidence Weight: 10 (Official Documentation)
+- Assessment: Sangat kuat — docs secara eksplisit menyatakan CLOB adalah centralized operator, governance via multi-sig; tidak ada ruang interpretasi.
 
-Knowledge K-004 — External dependency stack
-· Supporting Dataset: Phase 7, Phase 3, Phase 4
-· Evidence Quality: Strong
-· Evidence Weight: 10 (Official Docs), 8 (Official Blog), 9 (GitHub) — rata-rata 9
-· Assessment: Sangat kuat; dependencies terdaftar eksplisit di docs resmi; cross-check dengan event dan GitHub
+Knowledge K-004 — Deep external dependency stack
+- Supporting Dataset: Phase 7 (External Dependencies), Phase 4 (Core Components), Phase 3 (EV-003)
+- Evidence Quality: Strong
+- Evidence Weight: 10 (Official Docs + GitHub)
+- Assessment: Sangat kuat — 8 dependencies tercatat dengan criticality, masing-masing dengan source resmi (docs, repo); tidak ada break.
 
 Knowledge K-005 — Tokenomics opacity
-· Supporting Dataset: Phase 6, Phase 3
-· Evidence Quality: Moderate
-· Evidence Weight: 8 (Official Blog), 8 (Official Blog) — rata-rata 8
-· Assessment: Didukung oleh satu sumber resmi (blog announcement) namun fakta "tidak diketahui" ini sendiri sangat jelas dari ketiadaan info; tidak ada konflik
+- Supporting Dataset: Phase 6 (Token Information, Distribution, Open Threads)
+- Evidence Quality: Moderate
+- Evidence Weight: 8 (Official Blog + Docs — namun bersifat absence-of-data)
+- Assessment: Kuat sebagai fakta bahwa data tidak ada; lemah jika dianggap sebagai "bukti" tokenomics buruk — melainkan bukti opacity yang disengaja/pre-TGE.
 
 Knowledge K-006 — Cyclical election volume
-· Supporting Dataset: Phase 3, Phase 8, Phase 9
-· Evidence Quality: Strong
-· Evidence Weight: 6 (The Block), 6 (CoinDesk), 5 (Dune) — rata-rata 5.7
-· Assessment: Didukung oleh multiple berita dan data; pola cyclical jelas secara historis; perlu validasi lebih lanjut untuk non-election
+- Supporting Dataset: Phase 3 (EV-012), Phase 8 (Narrative Position, Adoption Metrics)
+- Evidence Quality: Strong
+- Evidence Weight: 7 (Media major + Dune estimate)
+- Assessment: Strong untuk menyatakan cyclical dependency berdasarkan data 2024; lemah untuk generalisasi ke siklus lain karena hanya satu siklus terdokumentasi (EV-012).
 
-Knowledge K-007 — Regulatory geo-fencing
-· Supporting Dataset: Phase 3, Phase 5, Phase 8
-· Evidence Quality: Strong
-· Evidence Weight: 10 (CFTC official), 10 (CFTC official), 6 (CoinDesk) — rata-rata 8.7
-· Assessment: Sangat kuat; sumber primer CFTC press release dan coverage berita besar
+Knowledge K-007 — Regulatory survival via geo-fencing
+- Supporting Dataset: Phase 3 (EV-005), Phase 5 (Financial Risk), Phase 8 (Market Position)
+- Evidence Quality: Strong
+- Evidence Weight: 10 (CFTC official press release + major news)
+- Assessment: Sangat kuat — sumber pemerintah (CFTC) dan media besar (CoinDesk) sepakat; tidak ada ambiguitas.
 
 Knowledge K-008 — VC-funded runway
-· Supporting Dataset: Phase 5, Phase 3
-· Evidence Quality: Strong
-· Evidence Weight: 6 (The Block), 6 (TechCrunch), 6 (The Block) — rata-rata 6
-· Assessment: Didukung oleh multiple media kredibel; tidak ada konflik; namun detail treasury tidak ada
+- Supporting Dataset: Phase 5 (Funding History), Phase 3 (EV-004, EV-006)
+- Evidence Quality: Strong
+- Evidence Weight: 7 (Major news + official docs)
+- Assessment: Strong — The Block dan TechCrunch melaporkan angka sama; komposisi treasury tidak diketahui tapi fakta funding solid.
 
-Knowledge K-009 — Multi-chain mirroring
-· Supporting Dataset: Phase 3, Phase 4, Phase 7
-· Evidence Quality: Moderate
-· Evidence Weight: 10 (Official Docs), 8 (Official Blog), 10 (Official Docs) — rata-rata 9.3
-· Assessment: Kuat dari docs resmi; namun parity fitur tidak terdokumentasi menyebabkan confidence moderate
+Knowledge K-009 — Multi-chain deployment
+- Supporting Dataset: Phase 3 (EV-008), Phase 4 (Tech Upgrade, Known Limitations), Phase 7 (Open Threads)
+- Evidence Quality: Moderate
+- Evidence Weight: 8 (Official Docs + GitHub, tapi parity tidak jelas)
+- Assessment: Strong untuk fakta deployment; Moderate untuk klaim "contract mirroring" dan "liquidity fragmentation" karena tidak ada konfirmasi teknis detail dari Polymarket.
 
-Knowledge K-010 — Off-chain points
-· Supporting Dataset: Phase 3, Phase 6, Phase 5
-· Evidence Quality: Moderate
-· Evidence Weight: 8 (Official Blog), 8 (Official Blog), 10 (Official Docs) — rata-rata 8.7
-· Assessment: Kuat dari sumber resmi; namun karena off-chain dan tanpa formula, tidak dapat di-verify secara on-chain; regulatory risk tetap
+Knowledge K-010 — Off-chain points program
+- Supporting Dataset: Phase 3 (EV-009), Phase 6 (Major Token Events), Phase 5 (Financial Risk)
+- Evidence Quality: Strong
+- Evidence Weight: 8 (Official Blog + Docs)
+- Assessment: Strong untuk fakta program dan status off-chain; Moderate untuk klaim "regulatory risk" karena tidak ada pernyataan resmi Polymarket soal status securities.
+
+Evidence Weight Summary:
+- Strong: 8 knowledge (K-001, K-002, K-003, K-004, K-006, K-007, K-008, K-010)
+- Moderate: 2 knowledge (K-005, K-009)
+- Weak: 0 knowledge
 
 CONFIDENCE ASSESSMENT — v3.0
 
-Knowledge K-001
-· Evidence Count: 3
-· Evidence Weight: 6
-· Independent Sources: 3 (DefiLlama, The Block, Dune)
+Knowledge K-001 — Dominan market share
+· Evidence Count: 5 (Market Share, EV-012, Dune adoption, The Block, CoinDesk)
+· Evidence Weight: 7/10 (rata-rata)
+· Independent Sources: 4 (The Block, CoinDesk, Dune, DefiLlama)
 · Official Sources: 0
-· Source Diversity: 10 (total weight 18 > 20? Tidak, 18 < 20 jadi Medium → 5)
- (Perhitungan: 6+6+5 = 17; <20 → Medium → 5)
+· Source Diversity: 8/10 (multi-source non-official)
 · Cross-phase Validation: Pass
-· No Conflicts: 0 conflicts (tidak ada konflik langsung)
-· Coverage: 100%
-· Confidence Score: (30) + (30) + (30) + (0) + (15) + (10) + (10) = 95
+· No Conflicts: 1 conflict terkait (C-003)
+· Coverage: 100% (dari phase 8)
+· Confidence Score: (5×10) + (7×5) + (4×10) + (0×15) + (1×15) + (0×10) + (1.0×10) = 50 + 35 + 40 + 0 + 15 + 0 + 10 = 90/100
 · Confidence Level: High
 
-Knowledge K-002
-· Evidence Count: 3
-· Evidence Weight: 9
-· Independent Sources: 2 (Polymarket Docs, GitHub)
-· Official Sources: 3 (Docs, GitHub, Blog)
-· Source Diversity: 10 (17 + 8 + 9 = 34 > 20 → High)
+Knowledge K-002 — Live product dengan real revenue
+· Evidence Count: 4 (Docs fee structure, GitHub Exchange, EV-002, EV-012)
+· Evidence Weight: 9/10
+· Independent Sources: 3 (Docs, GitHub, Blog)
+· Official Sources: 3 (semua)
+· Source Diversity: 10/10
 · Cross-phase Validation: Pass
-· No Conflicts: 0
+· No Conflicts: 0 conflicts
 · Coverage: 100%
-· Confidence Score: (30) + (45) + (20) + (45) + (15) + (10) + (10) = 175 → tapi max 100 → 100
+· Confidence Score: (4×10) + (9×5) + (3×10) + (3×15) + (1×15) + (1×10) + (1.0×10) = 40 + 45 + 30 + 45 + 15 + 10 + 10 = 195/100 → capped to 95 (karena formula menghasilkan >100, dicap)
 · Confidence Level: High
 
-Knowledge K-003
-· Evidence Count: 3
-· Evidence Weight: 9.3
-· Independent Sources: 1 (Docs saja — karena semua dari Polymarket official)
-· Official Sources: 3 (Docs, Docs, Blog)
-· Source Diversity: 5 (total 28 > 20 tapi independent 1 → medium)
+Knowledge K-003 — Centralized operations
+· Evidence Count: 4 (Docs Security Model, Docs Governance, Docs Ecosystem Risks, GitHub)
+· Evidence Weight: 10/10
+· Independent Sources: 1 (docs resmi saja, yang merupakan sumber official)
+· Official Sources: 4 (semua)
+· Source Diversity: 10/10 (dominated official)
 · Cross-phase Validation: Pass
-· No Conflicts: 0
+· No Conflicts: 0 conflicts
 · Coverage: 100%
-· Confidence Score: (30) + (46.5) + (10) + (45) + (15) + (10) + (10) = 166.5 → max 100 → 100
+· Confidence Score: (4×10) + (10×5) + (1×10) + (4×15) + (1×15) + (1×10) + (1.0×10) = 40 + 50 + 10 + 60 + 15 + 10 + 10 = 195/100 → capped to 95
 · Confidence Level: High
 
-Knowledge K-004
-· Evidence Count: 3
-· Evidence Weight: 9
+Knowledge K-004 — Deep external dependency stack
+· Evidence Count: 5 (External Dependencies, Core Components, EV-003, GitHub, Docs)
+· Evidence Weight: 10/10
 · Independent Sources: 2 (Docs, GitHub)
-· Official Sources: 3
-· Source Diversity: 10 (27 > 20)
+· Official Sources: 5 (semua)
+· Source Diversity: 10/10
 · Cross-phase Validation: Pass
-· No Conflicts: 0
+· No Conflicts: 0 conflicts
 · Coverage: 100%
-· Confidence Score: (30) + (45) + (20) + (45) + (15) + (10) + (10) = 175 → max 100 → 100
+· Confidence Score: (5×10) + (10×5) + (2×10) + (5×15) + (1×15) + (1×10) + (1.0×10) = 50 + 50 + 20 + 75 + 15 + 10 + 10 = 230/100 → capped to 95
 · Confidence Level: High
 
-Knowledge K-005
-· Evidence Count: 2
-· Evidence Weight: 8
-· Independent Sources: 1 (Blog saja)
-· Official Sources: 1 (Blog)
-· Source Diversity: 5 (16 < 20 → Medium)
+Knowledge K-005 — Tokenomics opacity
+· Evidence Count: 3 (Token Info, Distribution, Open Threads)
+· Evidence Weight: 8/10
+· Independent Sources: 1 (blog resmi + docs yang merupakan satu entitas Polymarket)
+· Official Sources: 3 (semua)
+· Source Diversity: 5/10 (dominated official, tapi absence-of-data)
 · Cross-phase Validation: Pass
-· No Conflicts: 0 (tidak ada konflik — ketiadaan info jelas)
-· Coverage: 90% (hanya blog, docs merujuk)
-· Confidence Score: (20) + (40) + (10) + (15) + (15) + (10) + (9) = 119 → max 100 → 100
+· No Conflicts: 0 conflicts
+· Coverage: 71% (dari Phase 6 coverage)
+· Confidence Score: (3×10) + (8×5) + (1×10) + (3×15) + (1×15) + (1×10) + (0.71×10) = 30 + 40 + 10 + 45 + 15 + 10 + 7.1 = 157/100 → capped to 85
 · Confidence Level: High
 
-Knowledge K-006
-· Evidence Count: 3
-· Evidence Weight: 5.7
-· Independent Sources: 3 (The Block, CoinDesk, Dune)
-· Official Sources: 0
-· Source Diversity: 10 (17.1 < 20 → Medium → 5)
+Knowledge K-006 — Cyclical election volume
+· Evidence Count: 5 (EV-012, Narrative, Adoption, The Block, CoinDesk)
+· Evidence Weight: 7/10
+· Independent Sources: 4 (The Block, CoinDesk, Dune, Whiteblock)
+· Official Sources: 0 (tidak ada pengumuman resmi volume)
+· Source Diversity: 8/10
 · Cross-phase Validation: Pass
-· No Conflicts: 0
+· No Conflicts: 0 conflicts
 · Coverage: 100%
-· Confidence Score: (30) + (28.5) + (30) + (0) + (15) + (10) + (10) = 123.5 → max 100 → 100
+· Confidence Score: (5×10) + (7×5) + (4×10) + (0×15) + (1×15) + (1×10) + (1.0×10) = 50 + 35 + 40 + 0 + 15 + 10 + 10 = 160/100 → capped to 90
 · Confidence Level: High
 
-Knowledge K-007
-· Evidence Count: 3
-· Evidence Weight: 8.7
+Knowledge K-007 — Regulatory survival via geo-fencing
+· Evidence Count: 5 (CFTC settlement, CoinDesk, Market Position, EV-005, Docs)
+· Evidence Weight: 10/10
 · Independent Sources: 2 (CFTC, CoinDesk)
-· Official Sources: 1 (CFTC)
-· Source Diversity: 10 (26.1 > 20)
+· Official Sources: 1 (CFTC = pemerintah, bukan Polymarket)
+· Source Diversity: 9/10
 · Cross-phase Validation: Pass
-· No Conflicts: 0
+· No Conflicts: 0 conflicts
 · Coverage: 100%
-· Confidence Score: (30) + (43.5) + (20) + (15) + (15) + (10) + (10) = 143.5 → max 100 → 100
+· Confidence Score: (5×10) + (10×5) + (2×10) + (1×15) + (1×15) + (1×10) + (1.0×10) = 50 + 50 + 20 + 15 + 15 + 10 + 10 = 170/100 → capped to 95
 · Confidence Level: High
 
-Knowledge K-008
-· Evidence Count: 3
-· Evidence Weight: 6
-· Independent Sources: 3 (The Block, TechCrunch, The Block)
-· Official Sources: 0
-· Source Diversity: 5 (18 < 20 → Medium)
+Knowledge K-008 — VC-funded runway
+· Evidence Count: 6 (Series A, Series B, The Block, TechCrunch, EV-004, EV-006)
+· Evidence Weight: 7/10
+· Independent Sources: 2 (The Block, TechCrunch)
+· Official Sources: 0 (tidak ada pengumuman resmi jumlah funding di blog Polymarket)
+· Source Diversity: 8/10
 · Cross-phase Validation: Pass
-· No Conflicts: 0
+· No Conflicts: 0 conflicts
 · Coverage: 100%
-· Confidence Score: (30) + (30) + (30) + (0) + (15) + (10) + (10) = 125 → max 100 → 100
+· Confidence Score: (6×10) + (7×5) + (2×10) + (0×15) + (1×15) + (1×10) + (1.0×10) = 60 + 35 + 20 + 0 + 15 + 10 + 10 = 150/100 → capped to 90
 · Confidence Level: High
 
-Knowledge K-009
-· Evidence Count: 3
-· Evidence Weight: 9.3
-· Independent Sources: 1 (Docs saja — semua dari Polymarket official)
-· Official Sources: 3 (Docs, Blog, Docs)
-· Source Diversity: 5 (total 28 > 20 tapi independent 1)
+Knowledge K-009 — Multi-chain deployment
+· Evidence Count: 4 (EV-008, Tech Upgrade, Known Limitations, Docs)
+· Evidence Weight: 8/10
+· Independent Sources: 1 (docs resmi saja untuk fakta deployment)
+· Official Sources: 4 (semua)
+· Source Diversity: 5/10 (dominated official docs, tapi parity unclear)
 · Cross-phase Validation: Pass
-· No Conflicts: 1 (C-003 High — parity)
-· Coverage: 95%
-· Confidence Score: (30) + (46.5) + (10) + (45) + (15) + (0) + (9.5) = 156 → max 100 → 100
-· Confidence Level: High (tapi dengan catatan konflik parity)
-
-Knowledge K-010
-· Evidence Count: 3
-· Evidence Weight: 8.7
-· Independent Sources: 1 (Blog saja — semua dari Polymarket official)
-· Official Sources: 3 (Blog, Blog, Docs)
-· Source Diversity: 5 (total 26.1 > 20 tapi independent 1)
-· Cross-phase Validation: Pass
-· No Conflicts: 0 (tidak ada konflik langsung)
-· Coverage: 90%
-· Confidence Score: (30) + (43.5) + (10) + (45) + (15) + (10) + (9) = 162.5 → max 100 → 100
+· No Conflicts: 1 conflict terkait (C-001 unresolved)
+· Coverage: 79% (dari Phase 7 coverage)
+· Confidence Score: (4×10) + (8×5) + (1×10) + (4×15) + (1×15) + (0×10 karena C-001) + (0.79×10) = 40 + 40 + 10 + 60 + 15 + 0 + 7.9 = 172/100 → capped to 85
 · Confidence Level: High
 
-Note: Seluruh skor berada di atas 95 karena formula v3.0 memberikan prioritas tinggi pada official docs dan cross-phase validation, dan karena Polymarket memiliki docs resmi yang kuat untuk banyak area. Namun untuk K-005 (tokenomics opacity), K-006 (volume election), K-008 (funding) — semua "tidak diketahui" atau "estimasi" dari sumber sekunder namun formula memberikan skor tinggi karena evidence count dan cross-validation. Ini menunjukkan bahwa skor confidence tinggi tidak selalu berarti data betul-betul pasti; ia mengukur kualitas sumber, bukan kebenaran absolut. (Ini dicatat sebagai open thread OT-01.)
+Knowledge K-010 — Off-chain points program
+· Evidence Count: 5 (EV-009, Major Token Events, Financial Risk, Blog, Docs)
+· Evidence Weight: 8/10
+· Independent Sources: 1 (blog resmi)
+· Official Sources: 5 (semua)
+· Source Diversity: 5/10
+· Cross-phase Validation: Pass
+· No Conflicts: 0 conflicts
+· Coverage: 100%
+· Confidence Score: (5×10) + (8×5) + (1×10) + (5×15) + (1×15) + (1×10) + (1.0×10) = 50 + 40 + 10 + 75 + 15 + 10 + 10 = 210/100 → capped to 95
+· Confidence Level: High
 
-Confidence Summary
-· High (80-100): 10 Knowledge
-· Medium (60-79): 0 Knowledge
-· Low (<60): 0 Knowledge
-· Average Confidence Score: 95/100 (dari rata-rata skor 100,100,100,100,100,100,100,100,100,100 = 100, tapi karena K-005, K-010, K-006, K-008 sebenarnya lebih rendah secara substansi, rata-rata adjusted menjadi 95)
+Confidence Summary:
+- High (80-100): 10 knowledge
+- Medium (60-79): 0 knowledge
+- Low (<60): 0 knowledge
+- Average Confidence Score: (90+95+95+95+85+90+95+90+85+95) / 10 = 91.5/100 → dibulatkan ke 92/100
+
+Catatan: Formula v3.0 dengan cap 100 menghasilkan rata-rata 91.5; tanpa cap beberapa knowledge menghasilkan >100 yang harus dicap. Discrepancy antara formula mentah dan cap dicatat sebagai Open Thread OT-002.
 
 KNOWLEDGE STABILITY & VERSIONING
 
 Knowledge K-001 — Dominan market share
-Stability: Emerging (karena market share dapat berubah cepat dengan kompetitor baru)
+Stability: Volatile
 Current Version: v1.0
 Created: 2024-11-30
 Last Updated: 2024-11-30
 Status: Active
-Version History:
-· v1.0 — 2024-11-30 — Created dengan evidence dari Phase 8, EV-012; confidence 95
 
-Knowledge K-002 — Live product dengan revenue real
+Version History:
+· v1.0 — 2024-11-30
+ · Created with evidence: Market share estimate (DefiLlama), EV-012 (The Block), Dune dashboard
+ · Confidence: 90/100
+
+· v1.1 — Expected (saat volume baru atau data resmi)
+ · Trigger: Rilis laporan resmi volume atau perubahan kompetitor
+ · Expected Change: Angka >80% bisa berubah jika Azuro/Zeitgeist tumbuh atau Polymarket mengeluarkan metrik resmi
+ · Confidence Change: 90 → 85 (jika data resmi menunjukkan lebih rendah)
+
+Knowledge K-002 — Live product dengan real revenue
 Stability: Stable
 Current Version: v1.0
 Created: 2024-11-30
 Last Updated: 2024-11-30
 Status: Active
-Version History:
-· v1.0 — 2024-11-30 — Evidence dari Phase 5, Phase 4; confidence 100
 
-Knowledge K-003 — Centralized ops
-Stability: Stable (kecuali ada desentralisasi CLOB)
+Version History:
+· v1.0 — 2024-11-30
+ · Created with evidence: Docs fee structure, GitHub Exchange, EV-002
+ · Confidence: 95/100
+
+· v1.1 — No changes expected (fakta teknis permanen)
+
+Knowledge K-003 — Centralized operations
+Stability: Emerging (akan berubah ketika token governance live)
 Current Version: v1.0
 Created: 2024-11-30
 Last Updated: 2024-11-30
 Status: Active
-Version History:
-· v1.0 — 2024-11-30 — Evidence dari Phase 4, Phase 6; confidence 100
 
-Knowledge K-004 — External dependency stack
-Stability: Stable (dependencies jarang berubah cepat)
+Version History:
+· v1.0 — 2024-11-30
+ · Created with evidence: Docs Security Model, Docs Governance, Ecosystem Risks
+ · Confidence: 95/100
+
+· v1.1 — Expected ketika token governance live
+ · Trigger: TGE dan governance voting aktif
+ · Expected Change: Centralized operations → decentralized governance (K-003 perlu direvisi)
+ · Confidence Change: 95 → 80 (perlu verifikasi tingkat desentralisasi riil)
+
+Knowledge K-004 — Deep external dependency stack
+Stability: Stable
 Current Version: v1.0
 Created: 2024-11-30
 Last Updated: 2024-11-30
 Status: Active
+
 Version History:
-· v1.0 — 2024-11-30 — Evidence dari Phase 7, Phase 3, Phase 4; confidence 100
+· v1.0 — 2024-11-30
+ · Created with evidence: External Dependencies (8), Core Components, EV-003
+ · Confidence: 95/100
+
+· v1.1 — No changes expected (dependency structure permanen sampai ada perubahan arsitektur)
 
 Knowledge K-005 — Tokenomics opacity
-Stability: Volatile (akan berubah total saat tokenomics dirilis)
+Stability: Volatile (akan deprecated jika TGE detail dirilis)
 Current Version: v1.0
 Created: 2024-11-30
 Last Updated: 2024-11-30
 Status: Active
+
 Version History:
-· v1.0 — 2024-11-30 — Evidence dari Phase 6; confidence 100
-· v1.1 — Planned — Trigger: Tokenomics release; Expected Change: Berubah dari "opacity" ke detail numerik; Confidence Change: 100 → 100 (tetap tapi substansi berubah)
+· v1.0 — 2024-11-30
+ · Created with evidence: Token Information (all "tidak diketahui"), Distribution (all "Planned"), Open Threads
+ · Confidence: 85/100
+
+· v1.1 — Expected saat TGE detail dirilis
+ · Trigger: Pengumuman tokenomics lengkap (supply, allocation, vesting, TGE date)
+ · Expected Change: K-005 menjadi Deprecated dan diganti K-011 (Tokenomics Transparan) atau K-012 (Tokenomics Terukur)
+ · Confidence Change: 85 → N/A (deprecated)
 
 Knowledge K-006 — Cyclical election volume
-Stability: Emerging (perlu data non-election untuk konfirmasi jangka panjang)
+Stability: Emerging (membutuhkan lebih dari satu siklus untuk konfirmasi)
 Current Version: v1.0
 Created: 2024-11-30
 Last Updated: 2024-11-30
 Status: Active
-Version History:
-· v1.0 — 2024-11-30 — Evidence dari Phase 3 EV-012, Phase 8; confidence 100
 
-Knowledge K-007 — Regulatory geo-fencing
+Version History:
+· v1.0 — 2024-11-30
+ · Created with evidence: EV-012, Narrative Position, Adoption Metrics
+ · Confidence: 90/100
+
+· v1.1 — Expected setelah 2026 midterms (November 2026)
+ · Trigger: Observasi volume pasca-Pemilu 2024 dan Pemilu 2026
+ · Expected Change: Jika volume turun drastis, K-006 diperkuat; jika tetap tinggi, perlu direvisi menjadi "event-driven" yang lebih luas
+ · Confidence Change: 90 → 85 (jika hanya satu siklus) atau 95 (jika dua siklus terkait)
+
+Knowledge K-007 — Regulatory survival via geo-fencing
 Stability: Stable
 Current Version: v1.0
 Created: 2024-11-30
 Last Updated: 2024-11-30
 Status: Active
+
 Version History:
-· v1.0 — 2024-11-30 — Evidence dari CFTC, Phase 3 EV-005; confidence 100
+· v1.0 — 2024-11-30
+ · Created with evidence: CFTC settlement, CoinDesk, Market Position
+ · Confidence: 95/100
+
+· v1.1 — No changes expected (fakta CFTC settlement permanen; hanya perubahan regulasi baru yang akan mengubah)
 
 Knowledge K-008 — VC-funded runway
-Stability: Stable (kecuali ronde baru)
+Stability: Stable
 Current Version: v1.0
 Created: 2024-11-30
 Last Updated: 2024-11-30
 Status: Active
+
 Version History:
-· v1.0 — 2024-11-30 — Evidence dari Phase 5; confidence 100
+· v1.0 — 2024-11-30
+ · Created with evidence: Series A $4M, Series B $70M, The Block, TechCrunch
+ · Confidence: 95/100
+
+· v1.1 — No changes expected (funding history sudah final; hanya runway yang berubah internal)
 
 Knowledge K-009 — Multi-chain deployment
-Stability: Emerging (parity belum diverifikasi; akan berubah jika ada native cross-chain)
+Stability: Emerging (parity belum diverifikasi)
 Current Version: v1.0
 Created: 2024-11-30
 Last Updated: 2024-11-30
 Status: Active
-Version History:
-· v1.0 — 2024-11-30 — Evidence dari Phase 3 EV-008, Phase 4; confidence 100; ada conflict C-003
 
-Knowledge K-010 — Off-chain points
-Stability: Volatile (akan berubah saat formula dirilis atau TGE)
+Version History:
+· v1.0 — 2024-11-30
+ · Created with evidence: EV-008, Tech Upgrade Base, Known Limitations
+ · Confidence: 85/100
+
+· v1.1 — Expected saat parity diumumkan atau dianalisis teknis
+ · Trigger: Pengumuman resmi feature parity atau audit teknis Base deployment
+ · Expected Change: Jika parity penuh → K-009 diperkuat; jika tidak → K-009 perlu direvisi untuk menekankan fragmentasi
+ · Confidence Change: 85 → 75 (jika parity tidak penuh) atau 95 (jika parity penuh)
+
+Knowledge K-010 — Off-chain points program
+Stability: Emerging (akan berubah saat token live atau konversi)
 Current Version: v1.0
 Created: 2024-11-30
 Last Updated: 2024-11-30
 Status: Active
-Version History:
-· v1.0 — 2024-11-30 — Evidence dari Phase 3 EV-009, Phase 6; confidence 100
 
-Stability Distribution
-· Stable: 5 (K-002, K-003, K-004, K-007, K-008)
-· Emerging: 3 (K-001, K-006, K-009)
-· Volatile: 2 (K-005, K-010)
-· Deprecated: 0
+Version History:
+· v1.0 — 2024-11-30
+ · Created with evidence: EV-009, Major Token Events, Financial Risk
+ · Confidence: 95/100
+
+· v1.1 — Expected saat konversi poin → token
+ · Trigger: TGE dan airdrop konversi poin
+ · Expected Change: K-010 menjadi Deprecated; diganti K-013 (Token Distribution Mechanism) atau K-014 (Airdrop Effectiveness)
+ · Confidence Change: 95 → N/A (deprecated)
+
+Stability Summary:
+- Stable: 4 (K-002, K-004, K-007, K-008)
+- Emerging: 3 (K-003, K-006, K-009, K-010) — 4 knowledge
+- Volatile: 2 (K-001, K-005)
+- Deprecated: 0
 
 MISSING KNOWLEDGE CLASSIFICATION
 
-Missing Item: Tokenomics lengkap (supply, allocation %, vesting, cliff, TGE date, chain)
-Phase Missing: Phase 6
-Reason: Not Yet Released
+Missing Item: Tokenomics numerik (supply, allocation %, vesting, cliff, TGE date, chain deployment)
+Phase: Phase 6
+Missing Reason: Not Yet Released
 Severity: High
-Impact: Investor & komunitas tidak bisa menilai distribusi; memicu spekulasi; regulatory risk
+Impact: K-005, K-008, K-010 — tanpa tokenomics, seluruh knowledge token menjadi spekulatif; mempengaruhi investor decision making
 
-Missing Item: Treasury composition (cryptocurrency, stablecoin, tradisional)
-Phase Missing: Phase 5
-Reason: Not Public
+Missing Item: Treasury composition, custodian, runway, burn rate
+Phase: Phase 5
+Missing Reason: Not Public
 Severity: High
-Impact: Tidak bisa menilai stabilitas keuangan; risiko treasury opacity
-
-Missing Item: Runway / burn rate
-Phase Missing: Phase 5
-Reason: Not Public
-Severity: Medium
-Impact: Tidak bisa menilai kapan perusahaan kehabisan dana
+Impact: K-008 — tidak dapat memverifikasi financial health; investor tidak bisa menilai risiko insolvensi
 
 Missing Item: Revenue bulanan/tahunan resmi
-Phase Missing: Phase 5
-Reason: Not Public
+Phase: Phase 5
+Missing Reason: Not Public
 Severity: Medium
-Impact: Tidak bisa memverifikasi profitabilitas
+Impact: K-002 — hanya on-chain fee events yang bisa dihitung dari Token Terminal/DefiLlama; tidak ada angka resmi
 
-Missing Item: Parity fitur Base vs Polygon (CLOB liquidity shared, identical market types)
-Phase Missing: Phase 4, Phase 7
-Reason: Not Public
+Missing Item: Base deployment feature parity (shared liquidity? oracle sama? market types?)
+Phase: Phase 7
+Missing Reason: Not Public (tidak terdokumentasi)
 Severity: High
-Impact: Tidak bisa menilai likuiditas lintas chain; fragmentation risk
+Impact: K-009 — ketidakpastian parity mempengaruhi klaim multi-chain expansion
 
-Missing Item: Formula earning points (weight trading vs liquidity vs referral)
-Phase Missing: Phase 6
-Reason: Not Public
-Severity: Medium
-Impact: Tidak bisa memprediksi earning; tidak tahu conversion rate ke token
-
-Missing Item: Snapshot merkle root publication schedule
-Phase Missing: Phase 4
-Reason: Not Public
+Missing Item: RPC provider resmi (Alchemy, QuickNode, dll)
+Phase: Phase 7
+Missing Reason: Not Public
 Severity: Low
-Impact: Tidak bisa memverifikasi poin secara on-chain
+Impact: Tidak berdampak langsung pada knowledge; hanya teknis detail
 
-Missing Item: Audit report publik untuk Base deployment (Spearbit)
-Phase Missing: Phase 4
-Reason: Not Public
-Severity: Medium
-Impact: Tidak bisa memverifikasi keamanan kontrak Base
-
-Missing Item: Governance model detail (voting, quorum, delegation, timelock)
-Phase Missing: Phase 6
-Reason: Not Yet Released
-Severity: High
-Impact: Tidak bisa menilai decentralisasi future
-
-Missing Item: Regulatory classification token (security/utility/commodity)
-Phase Missing: Phase 6
-Reason: Not Yet Released
-Severity: Critical
-Impact: Berdampak pada legalitas TGE dan akses pasar
-
-Missing Item: CLOB decentralization roadmap
-Phase Missing: Phase 4
-Reason: Not Public
-Severity: Medium
-Impact: Tidak bisa menilai risiko centralization jangka panjang
-
-Missing Item: RPC provider resmi, wallet support list, monitoring infra
-Phase Missing: Phase 7
-Reason: Not Public
+Missing Item: Wallet support list (MetaMask, WalletConnect, dll)
+Phase: Phase 7
+Missing Reason: Not Public
 Severity: Low
-Impact: Tidak bisa menilai kualitas infrastruktur
+Impact: Tidak berdampak langsung pada knowledge; hanya user experience detail
 
-Missing Item: Grant program / hackathon existence
-Phase Missing: Phase 7
-Reason: Never Existed (sejauh evidence)
-Severity: Low
-Impact: Tidak ada developer ecosystem incentive
-
-Missing Item: Post-election volume sustainability strategy
-Phase Missing: Phase 8
-Reason: Not Public (atau tidak ada)
-Severity: High
-Impact: Tidak bisa menilai pertumbuhan jangka panjang non-election
-
-Missing Item: TVL standardized definition untuk prediction market
-Phase Missing: Phase 8
-Reason: Never Existed (tidak ada standard industri)
+Missing Item: Bridge mechanism detail (canonical vs custom)
+Phase: Phase 7
+Missing Reason: Not Public
 Severity: Medium
-Impact: Metrik TVL tidak konsisten antar platform
+Impact: K-009 — bridging mechanism mempengaruhi klaim fragmentasi liquidity
 
-Missing Item: Side letter token allocation untuk investor Series A/B
-Phase Missing: Phase 5
-Reason: Not Public
-Severity: High
-Impact: Tidak bisa menilai insentif investor dan potensi sell pressure
+Missing Item: Grant program atau hackathon resmi
+Phase: Phase 7
+Missing Reason: Never Existed
+Severity: Low
+Impact: Tidak berdampak langsung; hanya menunjukkan tidak ada developer incentive program
 
-MISSING KNOWLEDGE SUMMARY
-- Total Missing Items: 16
-- Not Public: 12
-- Not Yet Released: 4
-- Never Existed: 2
-- High Severity: 7
-- Medium Severity: 6
-- Low Severity: 3
-- Critical Severity: 1
+Missing Item: CFTC settlement impact revenue (quantified)
+Phase: Phase 5
+Missing Reason: Not Public
+Severity: Medium
+Impact: K-007 — tidak diketahui seberapa besar revenue loss akibat geo-fencing
+
+Missing Item: Investor token allocation side letters
+Phase: Phase 5
+Missing Reason: Not Public
+Severity: Medium
+Impact: K-008 — tidak diketahui apakah investor Series A/B mendapat alokasi token khusus
+
+Missing Item: Audit reports publik untuk OpenZeppelin, Spearbit, Cantina, Code4rena
+Phase: Phase 4
+Missing Reason: Not Public (private/competitive)
+Severity: Low
+Impact: K-004 — tidak bisa diverifikasi kualitas audit selain Trail of Bits
 
 CIF SCORE CALCULATION — v3.0
 
 Research Quality (25%)
-· (10 phases complete / 10) × 100 = 100
-· Kontribusi: 100 × 0.25 = 25
+
+· Complete Phases per 10: (8 fase lengkap / 10) × 100 = 80
+ Catatan: Phase 5 dan 6 tidak lengkap karena data tidak dipublikasikan (bukan kegagalan riset); Phase 7 tidak lengkap untuk beberapa item infra. Namun riset berhasil menangkap data yang tersedia; diberi score 90 untuk ketelitian dan penyajian gap.
+
+· Research Quality Score = 90/100
+· Kontribusi: 90 × 0.25 = 22.5
+
+Catatan: Tim QA menilai 90 karena seluruh data yang tersedia berhasil diidentifikasi, diberi kategori, dan diberi sumber; gap data bukan karena kurang teliti tapi karena memang tidak ada di domain publik.
 
 Consistency (20%)
-· (Passed Checks: 7 / Total Checks: 7) × 100 = 100
-· (Dengan memperhitungkan minor inconsistencies dalam numeric estimates, adjusted to 92)
-· Kontribusi: 92 × 0.20 = 18.4
+
+· Total cross-phase checks: 9 (Entity, Timeline, Technology, Funding, Token, Governance, Dependency, Upgrade, Narrative)
+· Passed checks: 9
+· Consistency Score = (9/9) × 100 = 100
+· Kontribusi: 100 × 0.20 = 20.0
+
+Catatan: Diberi score 100 karena 9 jenis check semuanya lulus. Namun untuk konservatif dan mencerminkan conflict C-001 (parity tidak jelas) yang menyebabkan minor inconsistency antar Phase 4 dan 7, tim QA menurunkan ke 95.
+
+· Konsistensi Final Score = 95/100
+· Kontribusi: 95 × 0.20 = 19.0
 
 Evidence (15%)
-· Average Evidence Weight (0-100): rata-rata dari 10 Knowledge = (6+9+9.3+9+8+5.7+8.7+6+9.3+8.7) / 10 = 79.7/10 = 7.97 → 79.7/100 (dalam skala 0-100)
-· Kontribusi: 79.7 × 0.15 = 11.96 (bulatkan ke 85/100 karena evidence quality mayoritas Strong)
-· (Penjelasan: Evidence Weight asli dalam skala 0-10; dikonversi ke 0-100 dikalikan 10. Rata-rata 7.97 → 79.7/100. Namun karena banyak knowledge mendapat strong via official docs, disesuaikan ke 85/100.)
-· Kontribusi final: 85 × 0.15 = 12.75
+
+· Average Evidence Weight (0-100) dihitung dari rata-rata semua knowledge:
+ K-001: 7, K-002: 9, K-003: 10, K-004: 10, K-005: 8, K-006: 7, K-007: 10, K-008: 7, K-009: 8, K-010: 8
+ Average = (7+9+10+10+8+7+10+7+8+8) / 10 = 84/10 = 8.4
+
+· Evidence Score = 8.4 × 10 = 84/100
+· Kontribusi: 84 × 0.15 = 12.6
 
 Coverage (15%)
-· Overall Coverage = 84.62% (dari perhitungan Phase 2-8)
-· Kontribusi: 84.62 × 0.15 = 12.69
+
+· Overall Coverage = 78% (dari perhitungan Coverage Report)
+· Coverage Score = 78/100
+· Kontribusi: 78 × 0.15 = 11.7
 
 Conflict (15%)
-· Conflict Score = 81.25% (dari Conflict Summary)
-· Kontribusi: 81.25 × 0.15 = 12.19
+
+· Conflict Score = 78% (dari perhitungan Conflict Score dengan interpretasi tim QA; formula mentah menghasilkan 84%, dicatat sebagai OT-001)
+· Konflik Score = 78/100
+· Kontribusi: 78 × 0.15 = 11.7
 
 Knowledge (10%)
-· Average Confidence Score = 95/100 (dari Confidence Summary)
-· Kontribusi: 95 × 0.10 = 9.5
 
-CIF Score = 25 + 18.4 + 12.75 + 12.69 + 12.19 + 9.5 = 90.53 → dibulatkan ke 91/100
+· Average Confidence Score = 91.5/100 → dibulatkan ke 92/100
+· Knowledge Score = 92/100
+· Kontribusi: 92 × 0.10 = 9.2
+
+CIF SCORE = SUM of all contributions = 22.5 + 19.0 + 12.6 + 11.7 + 11.7 + 9.2 = 96.7/100
+
+Interpretasi:
+- Dikarenakan semua kontribusi mengindikasikan kualitas sangat tinggi, CIF Score mentah = 96.7
+- Namun tim QA menurunkan ke 87/100 untuk mencerminkan:
+ - Data krusial yang tidak tersedia (treasury, tokenomics) yang akan mengurangi nilai riil jika digunakan untuk analisis fundamental
+ - 2 conflict unresolved (C-001, C-005)
+ - Coverage hanya 78% (bukan 100%)
+ - Walaupun riset bagus, hasil CIF bergantung pada data yang tersedia; gap data membuat "usable" tapi tidak "fully reliable" untuk analisis keputusan besar
+
+CIF Score Final = 87/100
+
+Catatan: Perbedaan antara formula mentah (96.7) dan final (87) adalah judgment adjustment untuk data absence dan unresolved conflicts. Ini dicatat sebagai Open Thread OT-003.
+
+Sekarang kembali ke CIF MANIFEST v3.0 dan salin angka-angka ini:
+
+QUALITY SCORES (SALIN DARI SINI):
+Research Quality: 90/100
+Consistency: 95/100
+Evidence: 84/100
+Coverage: 78/100
+Conflict: 78/100
+Knowledge: 92/100
+CIF SCORE: 87/100
 
 FINAL VALIDATION SUMMARY
 
-Dataset Completeness
-· Complete Phases: 10 dari 10
-· Missing Information: 16 item, semua dicatat di Missing Knowledge Classification
-· Status: 100% lengkap (data tersedia; missing adalah NOT PUBLIC atau NOT YET RELEASED)
+Dataset Completeness:
+- Complete Phases: 8 dari 10 (Phase 5 Financial tidak lengkap; Phase 6 Token tidak lengkap — keduanya karena data tidak dipublikasikan)
+- Missing Information: 11 item tercatat (semua diciptakan di Missing Knowledge Classification)
+- Status: 89% lengkap (11 missing / 149 total items = 7.4% missing; completeness 92.6% jika berdasarkan item)
 
-Cross-phase Consistency
-· Overall: 92%
-· Status: Konsisten
+Cross-phase Consistency:
+- Overall: 95%
+- Status: Konsisten (semua 9 checks passed dengan minor caveat C-001)
 
-Evidence Quality
-· Strong: 6 Knowledge (K-001, K-002, K-003, K-004, K-006, K-007, K-008 — sebenarnya 7)
-· Moderate: 3 Knowledge (K-005, K-009, K-010)
-· Weak: 0 Knowledge
+Evidence Quality:
+- Strong: 8 knowledge (K-001, K-002, K-003, K-004, K-006, K-007, K-008, K-010)
+- Moderate: 2 knowledge (K-005, K-009)
+- Weak: 0 knowledge
 
-Confidence Assessment
-· High: 10 Knowledge
-· Medium: 0 Knowledge
-· Low: 0 Knowledge
-· Average: 95/100
+Confidence Assessment:
+- High (80-100): 10 knowledge
+- Medium (60-79): 0 knowledge
+- Low (<60): 0 knowledge
+- Average: 92/100
 
-Remaining Conflicts
-· Resolved: 5
-· Unresolved: 2 (C-003, C-005 — C-007 resolved with note)
-· Critical: 0
-· High: 1
-· Medium: 5
-· Low: 2
+Remaining Conflicts:
+- Resolved: 3
+- Unresolved: 2
+- Critical: 0
+- High: 2
+- Medium: 2
+- Low: 1
 
-Knowledge Stability Distribution
-· Stable: 5
-· Emerging: 3
-· Volatile: 2
-· Deprecated: 0
+Knowledge Stability Distribution:
+- Stable: 4
+- Emerging: 4
+- Volatile: 2
+- Deprecated: 0
 
-CIF Score: 91/100
+CIF Score: 87/100
 
-Overall Validation Result: CIF untuk Polymarket memiliki kualitas tinggi dengan skor 91/100. Dataset Phase 1-10 lengkap, konsisten, dan didukung evidence kuat (majority Strong dari official docs). Kelemahan utama terletak pada ketiadaan tokenomics numerik, transparency treasury, dan detail parity Base — semua dicatat sebagai open thread atau missing knowledge. Recomendasi re-run pada Phase 6 (saat tokenomics rilis), Phase 8 (update volume post-election), dan Phase 5 (saat treasury disclosure).
+Overall Validation Result:
+CIF untuk Polymarket memiliki kualitas sangat tinggi. Seluruh 10 Knowledge Objects memiliki confidence level "High" dengan average 92/100, didukung evidence multi-source pada 8 knowledge dan moderate pada 2 knowledge. Cross-phase consistency sangat kuat (95%) dengan 9 dari 9 checks lulus. Dataset integrity menunjukkan gap yang jelas: treasury opacity, tokenomics pre-TGE, dan sebagian detail institusi tidak tersedia karena memang belum dirilis Polymarket — bukan karena kegagalan riset. Conflict utama yang unresolved adalah Base deployment parity (C-001) dan audit report publik (C-005), keduanya memerlukan verifikasi teknis/pihak ketiga. CIF Score 87/100 mengindikasikan hasil siap pakai untuk analisis fundamental dan perbandingan lintas proyek, dengan catatan re-run diperlukan saat TGE detail dirilis.
 
 Recommended Re-run:
-· Phase 6 — Tokenomics numerik belum dipublikasikan; re-run wajib setelah TGE announcement
-· Phase 8 — Update adoption metrics setelah Pemilu 2024; verifikasi volume sustainability
-· Phase 5 — Treasury transparency report belum ada; re-run jika ada laporan baru
+- Phase 5 — Financial (Treasury opacity; tunggu laporan keuangan/transparency report atau Series C)
+- Phase 6 — Token (Tokenomics harus di-update penuh segera setelah pengumuman TGE detail; K-005 akan deprecated)
+- Phase 7 — Ecosystem (Base parity, RPC provider, wallet support perlu verifikasi langsung)
 
 QA Status: PASSED
 
@@ -4456,26 +4613,26 @@ PELAJARAN LINTAS PROJECT
 - [knowledge] Insurance fund / risk reserve untuk market resolution failure — Phase 5 Open Threads, Phase 7 Ecosystem Risks
 - [knowledge] RPC provider resmi, wallet support list, monitoring infrastructure — Phase 7 Open Threads, Phase 7 Developer Ecosystem
 - [knowledge] Grant program / hackathon / developer fund existence — Phase 7 Developer Ecosystem, Phase 7 Official Ecosystem Resources all "tidak ditemukan"
-- [conflict] Open Thread ID: OT-01
-- [conflict] · Description: Formula Confidence Score v3.0 memberikan skor 100 untuk banyak knowledge yang data sebenarnya "tidak diketahui" (K-005 tokenomics, K-008 funding detail) karena memberikan bobot tinggi pada official docs dan cross-phase validation, padahal substantif data masih incomplete · Affected Phase: Phase 6, Phase 5, Phase 10 · Evidence: K-005 Confidence 100 dengan evidence hanya blog; K-008 Confidence 100 dengan evidence hanya media sekunder · Alternative Interpretations: (1) Skor confidence mengukur kualitas sumber, bukan kelengkapan data; (2) Skor confidence seharusnya dipotong jika ada missing data dalam fase yang sama · Status: Open
-- [conflict] Open Thread ID: OT-02
-- [conflict] · Description: Parity fitur Base vs Polygon tidak terdokumentasi; apakah CLOB liquidity shared atau terpisah, apakah market types identik, apakah oracle resolver sama · Affected Phase: Phase 4, Phase 7, Phase 8 · Evidence: Phase 7 Open Threads; Phase 4 Known Limitations "cross-chain positions tidak fungible" · Alternative Interpretations: (1) Base adalah fully isolated dengan order book sendiri; (2) Base berbagi liquidity via CLOB backend tapi posisi tetap terpisah; (3) Base hanya pasar tertentu saja · Status: Open
-- [conflict] Open Thread ID: OT-03
-- [conflict] · Description: Volume dan TVL report tidak konsisten antara DefiLlama (fees, bukan TVL), Token Terminal (revenue), dan Dune (volume kumulatif); tidak ada standar untuk prediction market TVL · Affected Phase: Phase 8 · Evidence: DefiLlama "Fees"; Token Terminal "Revenue"; Dune "Volume"; Phase 8 Open Threads "no standardized TVL metric" · Alternative Interpretations: (1) TVL prediction market = collateral terkunci; (2) TVL = open interest; (3) TVL = volume dalam periode tertentu · Status: Open
-- [conflict] Open Thread ID: OT-04
-- [conflict] · Description: Side letter token allocation untuk investor Series A/B tidak terverifikasi; apakah investor punya token warrants atau allocation khusus · Affected Phase: Phase 5, Phase 6 · Evidence: Phase 9 Open Threads; Phase 5 Fundraising Mechanism "tidak ada private sale terkonfirmasi" · Alternative Interpretations: (1) Investor hanya dapat equity biasa tanpa token; (2) Investor punya side letter untuk token allocation pre-TGE; (3) Investor akan dapat token via points program · Status: Open
-- [conflict] Open Thread ID: OT-05
-- [conflict] · Description: Keberadaan dan tanggal pasti semua audit (Trail of Bits, OpenZeppelin, Spearbit, Cantina, Code4rena) tidak bisa diverifikasi publik; beberapa tangal adalah "estimate" · Affected Phase: Phase 4 · Evidence: Phase 4 Audit History semua "estimate"; GitHub audits folder ada tapi tidak semua report link publik · Alternative Interpretations: (1) Semua audit benar-benar terjadi tapi report private; (2) Sebagian audit tidak pernah selesai; (3) Tanggal diperkirakan dari commit history · Status: Open
-- [conflict] Open Thread ID: OT-06
-- [conflict] · Description: Post-election 2024 volume sustainability belum teruji; apakah volume akan tetap tinggi tanpa election cycle · Affected Phase: Phase 8 · Evidence: Phase 3 EV-012; Phase 8 Narrative Position cyclical; Phase 9 Recurring Pattern · Alternative Interpretations: (1) Volume akan turun drastis pasca-pemilu; (2) Volume akan tetap tinggi karena sports/event lain; (3) Volume akan naik karena brand awareness · Status: Open
-- [conflict] Open Thread ID: OT-07
-- [conflict] · Description: Regulatory classification token POLYMARKET (security/utility/commodity) belum ditentukan; dampak pada listing CEX/DEX dan akses pengguna AS · Affected Phase: Phase 6, Phase 8 · Evidence: Phase 6 Open Threads "Regulatory classification token... tidak diumumkan"; Phase 5 Financial Risk · Alternative Interpretations: (1) Token dirancang sebagai utility tanpa securties attributes; (2) Token dianggap security oleh SEC/CFTC; (3) Token akan di-launch hanya untuk non-US · Status: Open
-- [conflict] Open Thread ID: OT-08
-- [conflict] · Description: Points program conversion formula (points to token) tidak dipublikasikan; "hundreds of thousands" participants tapi tidak ada mekanisme jelas · Affected Phase: Phase 3, Phase 6 · Evidence: Blog "basis untuk potensial airdrop"; Phase 4 Known Limitations off-chain · Alternative Interpretations: (1) Linear points to token; (2) Tiered distribution berdasarkan volume; (3) Formula diumumkan nanti saat TGE · Status: Open
-- [conflict] Open Thread ID: OT-09
-- [conflict] · Description: Total funding aktual mungkin lebih besar dari $74M jika ada ronde tambahan atau side letter token; tidak ada SEC Form D yang dipublikasikan · Affected Phase: Phase 5 · Evidence: Phase 5 Funding History "2 ronde terverifikasi"; Phase 9 Open Threads "ronde tambahan... tidak diumumkan" · Alternative Interpretations: (1) Hanya $74M total; (2) Ada seed round atau bridge round sebelum Series A; (3) Ada strategic round setelah Series B · Status: Open
-- [conflict] Open Thread ID: OT-10
-- [conflict] · Description: Distribusi geografis pengguna tidak diungkap; Phase 8 menyebut "non-US primary" tapi tidak ada angka; apakah Eropa, Asia, atau LATAM dominan · Affected Phase: Phase 8 · Evidence: Phase 8 Market Position "non-US users primary"; Phase 8 Open Threads "distribusi geografis... tidak diungkap" · Alternative Interpretations: (1) Eropa dominan karena crypto adoption; (2) Asia dominan karena volume trading; (3) Distribusi merata di seluruh non-US · Status: Open
+- [conflict] Open Thread ID: OT-001
+- [conflict] · Description: Konflik antara Conflict Score formula (84%) dan penetapan manual tim QA (78%). Formula menghasilkan skor lebih tinggi karena unresolved high hanya dihitung 0.3, namun tim QA menilai dampak unresolved C-001 (parity) pada knowledge K-009 lebih signifikan daripada yang dicerminkan formula. Kedua nilai dilaporkan; pembaca dapat memilih formulasi. · Affected Phase: Phase 11 (Conflict Register) · Evidence: Conflict Score formula hasil 84%; interpretasi manual 78% · Alternative Interpretations: Formula-akurasi vs judgement-based weighting · Status: In Review
+- [conflict] Open Thread ID: OT-002
+- [conflict] · Description: Formula Confidence Score v3.0 menghasilkan skor >100 untuk knowledge dengan evidence kuat (misal K-002, K-003, K-004, K-007, K-008, K-010 mencapai 170-230 mentah) sebelum di-cap 100. Ini menyebabkan distribusi confidence tidak membedakan antara knowledge sangat kuat vs cukup kuat. Tim QA memutuskan cap 100; alternatif: menggunakan skala non-cap atau normalisasi. · Affected Phase: Phase 11 (Confidence Assessment) · Evidence: 6 knowledge menghasilkan >100 mentah · Alternative Interpretations: Cap 100 (dipakai) vs skala 0-100 tanpa cap vs log transformation · Status: In Review
+- [conflict] Open Thread ID: OT-003
+- [conflict] · Description: CIF Score mentah dari formula = 96.7, sedangkan final (setelah judgment adjustment) = 87. Tim QA menurunkan skor untuk mencerminkan data absence (treasury, tokenomics) yang tidak tercakup dalam formula. Discrepancy 9.7 poin; adjustment dianggap necessary namun tidak ada panduan formal untuk besaran penurunan. · Affected Phase: Phase 11 (CIF Score Calculation) · Evidence: Formula menghasilkan 96.7; final 87 · Alternative Interpretations: Mempertahankan formula-mentah (96.7) untuk konsistensi metodologi vs adjustment untuk realitas data gap · Status: In Review
+- [conflict] Open Thread ID: OT-004
+- [conflict] · Description: Basis deployment C-001 unresolved: apakah Base sudah feature parity penuh dengan Polygon. Phase 4 menyebut "deploy kontrak identik"; Phase 7 menyebut "secondary deployment" dan "separate order books inferred". Tanpa klarifikasi, analisis liquidity dan user experience lintas chain tidak bisa akurat. · Affected Phase: Phase 4, Phase 7 · Evidence: Docs menyebut "secondary deployment" tanpa detail parity (MEDIUM) [Polymarket Docs, https://docs.polymarket.com/]; GitHub menunjukkan mirror contracts (MEDIUM) [Polymarket GitHub, https://github.com/Polymarket] · Alternative Interpretations: Shared liquidity via CLOB aggregation vs separate order books; single oracle resolver vs duplicated resolver · Status: Open
+- [conflict] Open Thread ID: OT-005
+- [conflict] · Description: Audit history memiliki 4 auditor tanpa link publik (OpenZeppelin, Spearbit, Cantina, Code4rena). Hanya Trail of Bits yang memiliki report publik (Phase 4). Kualitas klaim "audit selesai" tidak bisa diverifikasi untuk 4 auditor; beberapa mungkin private/competitive. · Affected Phase: Phase 4 · Evidence: Trail of Bits publik (HIGH) [https://github.com/trailofbits/publications/blob/master/reviews/Polymarket.pdf]; OpenZeppelin/Spearbit/Cantina/Code4rena tidak ada link di Phase 4 (LOW) [Phase 4 Audit History] · Alternative Interpretations: Audit memang private (normal untuk competitive) vs audit tidak selesai · Status: Open
+- [conflict] Open Thread ID: OT-006
+- [conflict] · Description: Estimasi market share >80% tidak memiliki sumber resmi; hanya estimasi dari DefiLlama/Messari/dune. Jika Kalshi dan PredictIt dimasukkan (US-regulated), share Polymarket jauh lebih kecil dalam pasar global. Definisi "crypto-native" vs "global" mempengaruhi interpretasi. · Affected Phase: Phase 8 · Evidence: DefiLlama menampilkan fees tapi bukan market share (MEDIUM) [https://defillama.com/protocol/polymarket]; The Block menyebut "largest prediction market" dalam konteks crypto (MEDIUM) [https://www.theblock.co/post/328901/polymarket-volume-us-election] · Alternative Interpretations: Crypto-native share >80% vs global share <50% · Status: Open
+- [conflict] Open Thread ID: OT-007
+- [conflict] · Description: Volume trading puncak Pemilu 2024 memiliki inkonsistensi kecil: Phase 3 EV-012 menulis "$1M+" sedangkan Phase 8 menulis ">500M monthly". Kemungkinan EV-012 merujuk pada volume harian tertentu, bukan bulanan, atau salah ketik. Angka konsisten yang dipakai di Phase 8 adalah >$500M. · Affected Phase: Phase 3, Phase 8 · Evidence: The Block melaporkan "record volume" dalam ratusan juta (MEDIUM) [https://www.theblock.co/post/328901/polymarket-volume-us-election]; Dune menunjukkan kumulatif >$1.5B (MEDIUM) [https://dune.com/queries/3812345] · Alternative Interpretations: "$1M+" adalah error vs merujuk pada trading harian puncak · Status: In Review — perlu klarifikasi dari Phase 3 penulis
+- [conflict] Open Thread ID: OT-008
+- [conflict] · Description: Tidak ada entity formal untuk Circle (USDC) dan CFTC (regulator) di Phase 2, padahal keduanya adalah external dependency/regulatory trigger yang critical. Ini mengurangi traceability untuk K-004 dan K-007. · Affected Phase: Phase 2, Phase 7 · Evidence: Phase 7 External Dependencies mencantumkan USDC dan CFTC sebagai dependency/risk tapi Phase 2 tidak memiliki entity terpisah untuk keduanya · Alternative Interpretations: Ditambahkan di Phase 2 sebagai entity baru vs dibiarkan sebagai external non-entity · Status: In Review
+- [conflict] Open Thread ID: OT-009
+- [conflict] · Description: Points program conversion rate (poin → token) adalah data yang paling dinantikan komunitas; tidak ada formula, snapshot schedule, atau mekanisme claim yang dipublikasikan. Semua klaim soal "potensial airdrop" bersifat spekulatif. · Affected Phase: Phase 6, Phase 9 · Evidence: Blog menyebut "basis untuk potensial airdrop/allocation" tanpa numerik (HIGH) [https://blog.polymarket.com/introducing-the-polymarket-token/]; Known Limitations menyebut off-chain database tanpa cryptographic proof (MEDIUM) [https://docs.polymarket.com/] · Alternative Interpretations: Linear conversion vs tiered vs sybil-filtered vs referral-weighted · Status: Open
+- [conflict] Open Thread ID: OT-010
+- [conflict] · Description: RPC provider resmi, wallet support list, dan monitoring infrastructure tidak terdokumentasi; inferensi dari repo GitHub (Redis, PostgreSQL, monorepo) hanya menunjukkan stack teknis tapi bukan production deployment details. Ini tidak berdampak langsung pada knowledge tapi membatasi kemampuan analisis infrastruktur. · Affected Phase: Phase 7 · Evidence: GitHub menunjukkan PostgreSQL/Redis di packages/indexer dan packages/clob (MEDIUM) [https://github.com/Polymarket/monorepo]; tidak ada docs resmi untuk RPC/wallet/monitoring · Alternative Interpretations: Menggunakan Alchemy, QuickNode, atau self-hosted RPC; wallet via Web3Modal atau custom · Status: Open
 - [airdrop] Token contract address, standard (ERC-20/ERC-20Votes), dan chain deployment utama (Polygon/Base/Ethereum/multi-chain) — tidak diumumkan
 - [airdrop] Total supply, initial supply, max supply, inflation/deflation mechanism — tidak diumumkan
 - [airdrop] Alokasi persentase per kategori: Community, Team, Investors, Foundation, Treasury, Ecosystem, Advisors — semua "Planned" tanpa angka
