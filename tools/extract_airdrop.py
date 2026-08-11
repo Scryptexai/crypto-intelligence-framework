@@ -212,7 +212,11 @@ PRICE_POINTS = [
 _EVIDENCE_RE = re.compile(r"\((HIGH|MEDIUM|LOW)\)", re.I)
 _DATE_RE = re.compile(r"\((\d{4}-\d{2}-\d{2})\)")
 _SOURCE_RE = re.compile(r"\[([^\]]+)\]")
-_NUMBER_RE = re.compile(r"\d[\d.,]*")
+# A figure only counts when it is presented as money -- `1,20 USD`, `USD 1,20` or `$1,20`.
+# A bare number in the same sentence is prose, not a price: "Tidak berlaku — belum genap 12
+# bulan" parsed as $12.00 on the first round-trip test, which is exactly the kind of number
+# that looks precise and is wrong (and would then be charted).
+_AMOUNT_RE = re.compile(r"(?i)(?:(\d[\d.,]*)\s*USD\b|USD\s*(\d[\d.,]*)|\$\s*(\d[\d.,]*))")
 
 
 def _parse_amount(head):
@@ -229,10 +233,10 @@ def _parse_amount(head):
     `raw` is always kept, so a figure this heuristic gets wrong is still visible to a reader
     and recoverable by a later re-parse.
     """
-    m = _NUMBER_RE.search(head)
+    m = _AMOUNT_RE.search(head)
     if not m:
         return None
-    tok = m.group(0).rstrip(".,")
+    tok = next(g for g in m.groups() if g).rstrip(".,")
     seps = [i for i, ch in enumerate(tok) if ch in ".,"]
     if not seps:
         digits, frac = tok, ""

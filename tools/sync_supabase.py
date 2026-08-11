@@ -39,12 +39,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 POC = ROOT / "poc"
 # Synced by default: the tables this script writes. Verified against the live schema
-# 2026-08-11 -- 17 tables, of which relationships is empty by design and
-# users/saved_views/notes belong to the frontend. The four airdrop_* tables carry Phase 12
+# 2026-08-11 -- 18 tables, of which relationships is empty by design and
+# users/saved_views/notes belong to the frontend. The five airdrop_* tables carry Phase 12
 # (created 2026-08-11, schema agreed with the maintainer before creation per CLAUDE.md).
 TABLES = ("projects", "knowledge_items", "evidence_items", "entities", "events", "conflicts",
           "qa_dimensions", "qa_phases", "behavior_profiles",
-          "airdrop_profiles", "airdrop_events", "airdrop_pov_outcomes", "airdrop_retention")
+          "airdrop_profiles", "airdrop_events", "airdrop_pov_outcomes", "airdrop_retention",
+          "airdrop_price_points")
 
 # Buildable but NOT synced by default: the older AirdropOS-style schema, which lives in a
 # different Supabase project. Requesting them against the CIF project returns PGRST205
@@ -459,6 +460,47 @@ def airdrop_retention_rows():
     return rows
 
 
+# The DB vocabulary for the four observation points, and the order a trajectory is drawn in.
+# The extractor's keys are camelCase because they are JSON; the column is snake_case because
+# it is SQL, and the seq is stored so a chart sorts without a CASE expression.
+PRICE_POINT_COLUMNS = [
+    ("atClaim", "at_claim", 1),
+    ("day30", "day_30", 2),
+    ("day90", "day_90", 3),
+    ("peak12m", "peak_12m", 4),
+]
+
+
+def airdrop_price_rows():
+    """Up to four rows per project -- the price trajectory after distribution.
+
+    A point the report did not write at all is skipped rather than sent as an all-null row:
+    "the model never answered" and "the model answered Tidak berlaku" are different facts,
+    and only the second belongs in the table (as a row whose usd is null and whose raw says
+    why). Empty for every project until Phase 12 is regenerated -- the HARGA PASCA-DISTRIBUSI
+    block postdates the reports currently on disk.
+    """
+    rows = []
+    for project, prof in load_optional("airdrop.json").items():
+        slug = slugify(project)
+        for key, point, seq in PRICE_POINT_COLUMNS:
+            p = (prof.get("priceTrajectory") or {}).get(key)
+            if not p:
+                continue
+            rows.append({
+                "id": f"{slug}-{point}",
+                "project_slug": slug,
+                "point": point,
+                "seq": seq,
+                "usd": p.get("usd"),
+                "observed_on": p.get("date"),
+                "source": p.get("source"),
+                "evidence": p.get("evidence"),
+                "raw": p.get("raw"),
+            })
+    return rows
+
+
 BUILDERS = {
     "projects": project_rows,
     "knowledge_items": knowledge_rows,
@@ -473,6 +515,7 @@ BUILDERS = {
     "airdrop_events": airdrop_event_rows,
     "airdrop_pov_outcomes": airdrop_pov_rows,
     "airdrop_retention": airdrop_retention_rows,
+    "airdrop_price_points": airdrop_price_rows,
     "cif_patterns": pattern_rows,
     "cif_backtests": backtest_rows,
     "cif_decision_events": decision_event_rows,
@@ -489,8 +532,9 @@ ON_CONFLICT = {
 # knowledge_items before evidence_items.
 ORDER = ["projects", "entities", "knowledge_items", "evidence_items", "events", "conflicts",
          "qa_dimensions", "qa_phases", "behavior_profiles",
-         # all four airdrop_* tables FK to projects.slug, so they follow projects
+         # all five airdrop_* tables FK to projects.slug, so they follow projects
          "airdrop_profiles", "airdrop_events", "airdrop_pov_outcomes", "airdrop_retention",
+         "airdrop_price_points",
          "cif_patterns", "cif_backtests", "cif_decision_events"]
 
 
