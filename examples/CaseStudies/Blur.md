@@ -4164,154 +4164,191 @@ _ref: `docs/Ontology/DecisionEvent.md`, `docs/Ontology/Context.md` — an airdro
 PROJECT: Blur
 
 STATUS AIRDROP
-Sudah dilakukan. Blur telah menyelesaikan tiga gelombang distribusi token komunitas: Season 1 airdrop retroaktif pada TGE (2023-02-14), Season 2 incentive program (Mei–November 2023), dan Season 3 incentive program (November 2023–Februari 2024). Tidak ada pengumuman Season 4 per Oktober 2024【Phase 3: EV-004, EV-011, EV-012】【Phase 6: Distribution, Major Token Events】【Phase 8: Market Timeline】.
+
+Sudah dilakukan
+Blur telah menyelesaikan tiga gelombang distribusi token ke komunitas: Season 1 Airdrop retroaktif pada TGE 14 Februari 2023, Season 2 Incentive Program Mei–November 2023, dan Season 3 Incentive Program November 2023–Februari 2024. Ketiganya menggunakan mekanisme points-based dengan kriteria aktivitas on-chain dan dicatat sebagai EV-004, EV-011, EV-012 di Phase 3.
 
 AIRDROP EVENTS
 
-AD-001: Season 1 Airdrop (Retroaktif pada TGE)
+AD-001: Season 1 Airdrop (Retroactive Points-Based)
 Tanggal: 2023-02-14
 Tipe: Retroactive / Points-based
-Alokasi: 12% dari total supply (360.000.000 BLUR dari 3.000.000.000 BLUR)【Phase 6: Distribution, TGE】【Phase 3: EV-004】.
-Penerima: Tidak ditemukan (jumlah alamat eligible yang memenuhi syarat dan/atau yang claim tidak dipublikasikan secara resmi).
-Nilai saat klaim: Tidak ditemukan (harga BLUR pada TGE bervariasi di CEX/DEX; tidak ada data rata-rata per penerima).
-Kriteria: Poin berbasis aktivitas on-chain pre-TGE di Blur Marketplace — trading, bidding (collection/trait bids), listing, dan volume. Dirancang anti-sybil dengan weighting aktivitas nyata bukan sekadar jumlah transaksi【Phase 9: Pola 3, Season 1】【Phase 3: EV-004】.
-Anti-sybil: Points-based system dengan weighting aktivitas (bukan sybil-resistant sederhana seperti "min 1 tx"); detail formula tidak dipublikasikan. Tidak ada laporan resmi jumlah alamat yang didiskualifikasi【Phase 9: Farming dan Sybil (implied)】【Phase 6: Vesting Schedule Community】.
-Terkait EV: EV-004 (TGE & Season 1 Airdrop), EV-005 (Binance Listing), EV-006 (Coinbase Listing), EV-007 (DAO Formation).
-Sitasi: 【Phase 3: EV-004 (HIGH) [Blur Blog, https://blur.io/blog/blur-token]】 【Phase 6: Distribution, TGE (HIGH) [Blur Blog, https://blur.io/blog/blur-token]】 【Phase 9: Pola 3 (HIGH)】.
+Alokasi: 12% dari total supply (360.000.000 BLUR) (HIGH) [Blur Blog, https://blur.io/blog/blur-token] (HIGH) [Etherscan, https://etherscan.io/token/0x5283D291DBCF85356a21bA090E6db59121208b44]
+Penerima: Tidak ditemukan (jumlah alamat unik yang claim tidak dipublikasikan resmi; hanya "trader/bidder aktif pre-TGE" yang disebutkan)
+Nilai saat klaim: Tidak ditemukan (harga BLUR saat TGE 14 Feb 2023 tidak tercantum di Phase 1-11; CoinGecko historical data diperlukan)
+Kriteria: Poin berdasarkan aktivitas on-chain pre-TGE: trading volume, bidding (collection/trait bids), listing NFT di Blur Marketplace; dirancang anti-sybil dengan membobot aktivitas genuine (HIGH) [Blur Blog, https://blur.io/blog/blur-token] (HIGH) [Phase 10 Insight 2]
+Anti-sybil: Points-based system yang membobot trading volume, bid count, dan listing quality; tidak ada detail mekanisme teknis (misalnya pembobotan sybil resistance) yang dipublikasikan (MEDIUM) [Phase 10 Insight 2] (MEDIUM) [Phase 9 Pola 3]
+Terkait EV: EV-004
+Sitasi: (HIGH) [Blur Blog, https://blur.io/blog/blur-token] (HIGH) [Phase 3 EV-004] (HIGH) [Phase 6 TGE] (HIGH) [Phase 10 Insight 2]
 
-AD-002: Season 2 Incentive Program
-Tanggal: 2023-05 hingga 2023-11 (perkiraan ~6 bulan)
-Tipe: Points-based / Activity rewards (ongoing epoch-based)
-Alokasi: Bagian dari 51% community allocation (1.53B BLUR); persentase exact untuk Season 2 tidak diungkapkan terpisah【Phase 6: Distribution】【Phase 3: EV-011】.
-Penerima: Tidak ditemukan (jumlah wallet yang menerima reward per epoch tidak dipublikasikan).
-Nilai saat klaim: Tidak ditemukan (harga BLUR fluktuatif selama periode; tidak ada data per penerima).
-Kriteria: Reward untuk aktivitas trading volume, bidding (collection/trait bids), dan partisipasi Blend lending selama epoch mingguan/bulanan. Termasuk bonus untuk loyalitas dan volume tinggi【Phase 3: EV-011】【Phase 8: Adoption Metrics】.
-Anti-sybil: Tidak ditemukan (tidak ada detail mekanisme anti-sybil spesifik Season 2 yang dipublikasikan; kemungkinan menggunakan points system serupa dengan threshold volume minimum).
-Terkait EV: EV-011 (Season 2), EV-010 (Blend Launch — overlapping).
-Sitasi: 【Phase 3: EV-011 (HIGH) [Blur Blog, https://blur.io/blog/blur-token]】 【Phase 8: Adoption Metrics (MEDIUM) [Dune Analytics, https://dune.com/queries]】 【Phase 6: Vesting Schedule Community (HIGH)】.
+AD-002: Season 2 Incentive Program (Points-Based Activity Rewards)
+Tanggal: 2023-05 s.d. 2023-11 (perkiraan bulan; tanggal pasti tidak diungkap)
+Tipe: Points-based / Activity rewards
+Alokasi: Bagian dari alokasi komunitas 51% (1.53B BLUR); jumlah exact per season tidak dipecah di blog resmi (HIGH) [Blur Blog, https://blur.io/blog/blur-token] (HIGH) [Phase 6 Distribution]
+Penerima: Tidak ditemukan (jumlah penerima unik per epoch tidak dipublikasikan)
+Nilai saat klaim: Tidak berlaku (distribusi berlangsung terus selama season, bukan single claim date)
+Kriteria: Reward berbasis aktivitas selama season: trading volume, bidding (collection/trait bids), aktivitas Blend lending (pinjam/meminjam NFT) (HIGH) [Phase 3 EV-011] (HIGH) [Phase 10 Insight 2]
+Anti-sybil: Tidak diungkapkan apakah mekanisme anti-sybil Season 1 diteruskan atau dimodifikasi; tidak ada laporan diskualifikasi massal yang dipublikasikan (LOW) [Phase 3 EV-011] (LOW) [Phase 9 Pola 3]
+Terkait EV: EV-011
+Sitasi: (HIGH) [Phase 3 EV-011] (HIGH) [Phase 6 Vesting Schedule Community] (HIGH) [Phase 10 Insight 2] (MEDIUM) [Phase 9 Pola 3]
 
-AD-003: Season 3 Incentive Program
-Tanggal: 2023-11 hingga 2024-02 (perkiraan ~3 bulan)
-Tipe: Points-based / Activity rewards dengan delegation incentives
-Alokasi: Bagian dari 51% community allocation; persentase exact tidak diungkapkan terpisah【Phase 6: Distribution】【Phase 3: EV-012】.
-Penerima: Tidak ditemukan.
-Nilai saat klaim: Tidak ditemukan.
-Kriteria: Struktur reward diperbarui: insentif untuk koleksi NFT baru, delegasi voting BLUR (persiapan fee switch), dan partisipasi Blend. Termasuk reward untuk "loyal users" yang konsisten sejak Season 1-2【Phase 3: EV-012】【Phase 9: Pola 3】.
-Anti-sybil: Tidak ditemukan (delegation incentive berfungsi sebagai sybil filter alami karena memerlukan holding BLUR).
-Terkait EV: EV-012 (Season 3), EV-013 (Fee Switch Activation — bersamaan akhir Season 3).
-Sitasi: 【Phase 3: EV-012 (HIGH) [Blur Blog, https://blur.io/blog]】 【Phase 9: Pola 3 (HIGH)】 【Phase 8: Market Timeline (MEDIUM)】.
+AD-003: Season 3 Incentive Program (Points-Based dengan Delegation Incentive)
+Tanggal: 2023-11 s.d. 2024-02 (perkiraan bulan; tanggal pasti tidak diungkap)
+Tipe: Points-based / Activity rewards
+Alokasi: Bagian dari alokasi komunitas 51% (1.53B BLUR); jumlah exact per season tidak dipecah di blog resmi (HIGH) [Blur Blog, https://blur.io/blog/blur-token] (HIGH) [Phase 6 Distribution]
+Penerima: Tidak ditemukan (jumlah penerima unik per epoch tidak dipublikasikan)
+Nilai saat klaim: Tidak berlaku (distribusi berlangsung terus selama season, bukan single claim date)
+Kriteria: Struktur reward diperbarui: trading volume, bidding, Blend participation, serta delegation BLUR ke validator/governance (persiapan fee switch) (HIGH) [Phase 3 EV-012] (HIGH) [Phase 10 Insight 2]
+Anti-sybil: Tidak diungkapkan; delegasi token sebagai syarat baru menambah lapisan economic cost bagi sybil attacker (MEDIUM) [Phase 3 EV-012] (MEDIUM) [Phase 6 Utility Staking/Fee Switch]
+Terkait EV: EV-012
+Sitasi: (HIGH) [Phase 3 EV-012] (HIGH) [Phase 6 Vesting Schedule Community] (HIGH) [Phase 10 Insight 2] (MEDIUM) [Phase 9 Pola 3]
 
 CONTEXT SAAT KEPUTUSAN
-- Tahap funding: Post-Series A ($11M dari Paradigm, Nov 2022 @ $1B valuation); runway VC tersedia untuk mendanai incentive budget【Phase 5: Funding History】【Phase 3: EV-003】.
-- Ukuran komunitas pre-TGE: Ribuan power trader aktif di Blur Marketplace (launch Oct 2022) yang melakukan trading, bidding, listing; exact unique wallets tidak dipublikasikan【Phase 8: Adoption Metrics】【Phase 3: EV-002】.
-- Kondisi pasar: NFT bear market 2022-2023; volume OpenSea menurun drastis; trader mencari platform zero-fee dengan tooling pro. Kompetitor: OpenSea (2.5% fee, retail-focused), LooksRare (LOOKS incentives), X2Y2 (X2Y2 incentives)【Phase 8: Competitor Landscape, Narrative Position】.
-- Narasi berjalan: "Pro-trader first", "Zero platform fee", "Bidding pools innovation". Tim butuh bootstrap liquidity dan user base dari OpenSea cepat【Phase 8: Narrative Position】【Phase 1: Launch Date】.
+
+Kondisi saat keputusan Season 1 (TGE Feb 2023):
+- Funding stage: Series A $11M dari Paradigm (Nov 2022) sudah terkumpul; runway tersedia untuk incentive program (HIGH) [Phase 3 EV-003] (HIGH) [Phase 5 Funding History]
+- Ukuran komunitas: Blur Marketplace live sejak Oct 2022 (EV-002), sudah mengumpulkan basis trader pro signifikan pre-TGE; volume marketplace mulai mendominasi Ethereum NFT (HIGH) [Phase 3 EV-002] (HIGH) [Phase 8 Market Share]
+- Kondisi pasar: NFT bear market 2022-2023; volume OpenSea menurun; trader mencari platform fee rendah dan tooling pro (HIGH) [Phase 8 Narrative Position] (HIGH) [Phase 8 Competitor Landscape]
+- Kompetitor terdekat: OpenSea (Seaport, 2.5% fee), LooksRare (LOOKS staking rewards), X2Y2 (token incentives); Blur bedakan dengan zero platform fee + bidding pools + retroactive airdrop (HIGH) [Phase 8 Competitor Landscape]
+
+Kondisi saat keputusan Season 2-3 (Mei 2023–Feb 2024):
+- Funding stage: Masih bergantung Series A + treasury token; belum ada protocol revenue (fee switch belum aktif) (HIGH) [Phase 5 Revenue Model] (HIGH) [Phase 3 EV-013]
+- Ukuran komunitas: >150k holders pasca Season 1; TVL Blend launch Mei 2023 >$100M minggu pertama (HIGH) [Phase 3 EV-010] (HIGH) [Phase 8 Adoption Metrics]
+- Kondisi pasar: NFT volume tetap bearish; mercenary capital beralih antar platform berdasarkan incentive (HIGH) [Phase 8 Adoption Metrics] (HIGH) [Phase 9 Failure Factor 5]
+- Kompetitor: Magic Eden launch Diamond rewards, OpenSea SEA airdrop rumor, LooksRare/X2Y2 incentive berlanjut; Blur perlu defend market share 60-75% (HIGH) [Phase 8 Competitor Landscape] (HIGH) [Phase 8 Market Share]
 
 TRIGGER DAN ALTERNATIF
-Trigger: Peluncuran token BLUR (TGE) memerlukan distribusi awal yang adil dan mendorong adoption; tekanan kompetitor yang sudah memiliki token insentif (LOOKS, X2Y2); kebutuhan mendesentralisasi ownership dari hari pertama.
-Alternatif yang tidak diambil:
-- Public sale / IDO / Launchpad: Ditolak — akan menciptakan sell pressure awal dari investor ritel dan mengurangi alokasi untuk user nyata【Phase 6: Token Sale (No Public Sale)】.
-- Airdrop tanpa kriteria (universal snapshot): Ditolak — rentan sybil, tidak selektif terhadap user berkontribusi【Phase 9: Pola 3 rationale】.
-- Hanya team/investor allocation + DAO treasury tanpa airdrop: Ditolak — tidak membangun community ownership dan liquidity【Phase 6: Distribution 51% community】.
-- Continuous emission tanpa seasonal structure: Ditolak — Seasonal memungkinkan adjustment parameter per-musim berdasarkan data【Phase 9: Pola 3】.
+
+Trigger Season 1:
+- Peluncuran token BLUR (TGE) memerlukan distribusi awal yang fair dan wide; retroactive airdrop dipilih untuk reward early adopter genuine, bukan ICO/IDO yang berisiko regulasi (HIGH) [Phase 3 EV-004] (HIGH) [Phase 6 TGE]
+- Tekanan untuk menciptakan liquidity dan price discovery segera setelah listing Binance/Coinbase same-day (HIGH) [Phase 3 EV-005] (HIGH) [Phase 3 EV-006]
+
+Alternatif yang tidak diambil (Season 1):
+- Public sale / IDO / Launchpad: Tidak diambil untuk hindari klasifikasi sekuritas dan menjaga narrative "fair launch" (HIPOTESIS) (MEDIUM) [Phase 6 Token Sale: "Public Sale: Tidak ada"] (MEDIUM) [Phase 9 Pola 2]
+- Airdrop tanpa syarat (universal): Tidak diambil karena akan menarik sybil massal dan tidak memfilter genuine trader (HIPOTESIS) (MEDIUM) [Phase 10 Insight 2: "anti-sybil, reward genuine users"]
+- Hanya liquidity mining BLUR/ETH: Tidak diambil; Blur memilih incentive trading/bidding langsung, bukan LP DEX (HIGH) [Phase 7 Exchange Ecosystem: "Uniswap pools permissionless, no official LM"]
+
+Trigger Season 2-3:
+- Perlu mempertahankan market share volume saat NFT bear market dan kompetitor launch incentive sendiri (HIGH) [Phase 9 Pola 3] (HIGH) [Phase 8 Market Share]
+- Perlu mendorong adopsi Blend (lending protocol baru Mei 2023) dengan reward BLUR (HIGH) [Phase 3 EV-010] (HIGH) [Phase 10 Insight 9]
+- Persiapan fee switch Feb 2024: Season 3 include delegation incentive untuk membangun staker base (HIGH) [Phase 3 EV-012] (HIGH) [Phase 6 Utility Staking/Fee Switch]
+
+Alternatif yang tidak diambil (Season 2-3):
+- Hentikan incentive setelah Season 1: Tidak diambil karena volume akan jatuh drastis (mercenary capital pindah) — bukti: volume maintain 60-75% selama Season 2-3 (HIPOTESIS) (HIGH) [Phase 8 Adoption Metrics] (HIGH) [Phase 9 Pola 3]
+- Pindah ke revenue-sharing saja (tanpa token emission): Belum mungkin karena fee switch belum aktif hingga Feb 2024 (HIGH) [Phase 3 EV-013] (HIGH) [Phase 5 Revenue Model]
 
 REASON — YANG DINYATAKAN VS YANG TIDAK
 
 Alasan resmi:
-- "Distribusi 51% supply ke komunitas melalui airdrop retroaktif (Season 1) dan program insentif berkelanjutan (Season 2-3) untuk menghargai trader yang membangun Blur sejak awal dan mendorong pertumbuhan berkelanjutan"【Phase 6: Distribution (HIGH) [Blur Blog, https://blur.io/blog/blur-token]】.
-- "Season 1 dirancang anti-sybil dengan points system berbasis aktivitas nyata (trading, bidding, listing) bukan sekadar kehadiran"【Phase 9: Pola 3 (HIGH)】.
-- "Fee switch diaktifkan pasca-Season 3 untuk mentransisikan dari incentive-driven ke revenue-sharing model"【Phase 3: EV-013 (HIGH) [Snapshot, https://snapshot.org/#/blur.eth]】.
+- "Reward early traders and bidders who helped bootstrap Blur" — Season 1 blog announcement (HIGH) [Blur Blog, https://blur.io/blog/blur-token]
+- "Incentivize trading, bidding, and Blend activity to grow the ecosystem" — Season 2-3 Discord/blog announcements (MEDIUM) [Discord, https://discord.gg/blur] (MEDIUM) [Phase 3 EV-011, EV-012]
+- "Distribute ownership to the community" — 51% allocation narrative di blog tokenomics (HIGH) [Blur Blog, https://blur.io/blog/blur-token]
 
-Alasan yang tidak diumumkan (HIPOTESIS dengan evidence):
-- HIPOTESIS: Memenuhi syarat listing CEX tier-1 (Binance, Coinbase) yang membutuhkan distributed holder base dan volume day-1. Evidence: Binance & Coinbase listing same-day/next-day TGE; CEX biasanya butuh minimum holder & volume【Phase 3: EV-005, EV-006 (HIGH)】【Phase 7: Exchange Ecosystem】.
-- HIPOTESIS: Membuat "fair launch" narrative untuk menghindari klasifikasi sekuritas (Howey test) — tidak ada public sale, token didistribusikan berdasarkan kontribusi kerja (activity) bukan investasi uang. Evidence: No public sale; token utility governance + fee switch; pseudonymous founders【Phase 6: Token Sale, Utility】【Phase 5: Financial Risk (Legal)】.
-- HIPOTESIS: Tekanan investor (Paradigm) untuk menunjukkan traction & user growth metrics post-Series A untuk justify $1B valuation. Evidence: Series A Nov 2022, TGE Feb 2023 (3 bulan kemudian); Season 1-3 menunjukkan growth metrics【Phase 3: EV-003, EV-011, EV-012】【Phase 2: Entity Paradigm】.
-- HIPOTESIS: Seasonal structure memungkinkan tim mengontrol token emission rate dan menyesuaikan parameter berdasarkan data real-time (volume, wash trading, retention) tanpa komitmen jangka panjang yang kaku. Evidence: Season 2→3 parameter berubah (tambah delegation incentive); tidak ada Season 4 announcement【Phase 9: Pola 3】【Phase 8: Market Timeline】.
+Alasan yang tidak diumumkan:
+- Memenuhi syarat listing CEX tier-1 (Binance, Coinbase) yang membutuhkan community distribution wide dan liquidity awal tinggi (HIPOTESIS) (HIGH) [Phase 7 Exchange Ecosystem: Binance/Coinbase listing same-day TGE] (HIGH) [Phase 6 Token Sale: "Private Sale: Ya... Public Sale: Tidak ada"] (MEDIUM) [Phase 9 Pola 2]
+- Membuat sell pressure terkontrol: Season 1 claimable immediate tapi Season 2-3 vesting epoch-based menunda dump massal (HIPOTESIS) (HIGH) [Phase 6 Vesting Schedule Community: "Linear/epoch-based selama season"] (MEDIUM) [Phase 9 Pola 3]
+- Menghindari klasifikasi sekuritas: Tidak ada public sale, token didistribusikan via usage/activity bukan investment contract (HIPOTESIS) (MEDIUM) [Phase 5 Financial Risk: "Legal Financial Risk: Status regulasi token BLUR... belum jelas"] (MEDIUM) [Phase 9 Strategic Trade-offs: "Regulatory Uncertainty... fee switch timing"]
+- Membangun moat data: Points system mengumpulkan data perilaku trader detail (volume, bid pattern, Blend usage) untuk product optimization (HIPOTESIS) (LOW) [Phase 4 Core Components: Blur API/Indexer collects all activity] (LOW) [Phase 9 Behavioral: "Data-driven dari on-chain metrics untuk incentive design"]
 
 OUTCOME PER POV
 
-POV Founder: Sebagian
-- Jangka pendek: Market share naik ke 60-75% volume Ethereum NFT; >150k holders; Binance/Coinbase listing berhasil; volume $1.5-3B/bulan selama seasons【Phase 8: Market Share, Adoption Metrics (MEDIUM)】.
-- Jangka panjang: Dominasi market share pertahankan 2 tahun; fee switch aktif memberikan real yield; tapi treasury opacity & admin key centralization tetap; wash trading estimates >30% mengurangi legitimacy【Phase 8: Market Share, Open Threads】【Phase 10: K-001, K-003, K-010】.
-- Dasar: 【Phase 8: Market Share (MEDIUM) [Dune]】 【Phase 10: K-001, K-003, K-010】.
+POV Founder (PacmanBlur, Galaga, Lord_kekl): Sukses
+- Jangka pendek: Market share naik ke 60-75% volume Ethereum NFT; >150k holders; Binance/Coinbase listing sukses; Blend launch volume >$100M minggu 1 (HIGH) [Phase 8 Market Share] (HIGH) [Phase 3 EV-010]
+- Jangka panjang: Dominasi volume maintain 2 tahun; fee switch aktif Feb 2024 menciptakan revenue sharing; team/investor vesting 4-5 tahun aligned (HIGH) [Phase 8 Market Timeline EV-015] (HIGH) [Phase 3 EV-013] (HIGH) [Phase 6 Vesting Schedule Team/Investors]
+- Dasar: Volume dominance, fee switch activation, sustained market share (HIGH) [Phase 8] (HIGH) [Phase 3] (HIGH) [Phase 6]
 
 POV VC (Paradigm, Variant Fund): Sukses
-- Jangka pendek: Token liquidity tinggi day-1 (Binance volume >$1B); price discovery efisien; market cap peak >$1B justify valuation【Phase 3: EV-005】【Phase 8: Market Timeline】.
-- Jangka panjang: Vesting 1-year cliff + 4-5yr linear melindungi downside; fee switch menciptakan fundamental value accrual; Blend menambah revenue stream; exit optionality terjaga【Phase 6: Vesting Schedule】【Phase 10: K-007, K-009】.
-- Dasar: 【Phase 6: Vesting Schedule (HIGH)】 【Phase 10: K-007, K-009】.
+- Jangka pendek: Token liquidity tinggi listing day 1 (>$1B volume); price discovery efisien via Wintermute/GSR; community distribution wide (HIGH) [Phase 3 EV-005] (HIGH) [Phase 2 Entity Wintermute, GSR] (HIGH) [Phase 8 Market Timeline]
+- Jangka panjang: Unlock linear 4-5 tahun mulai Feb 2024 (1-year cliff) memberikan exit liquidity bertahap; valuasi $1B Series A justified oleh market leadership (HIGH) [Phase 6 Vesting Schedule Investors] (HIGH) [Phase 5 Funding History] (HIGH) [Phase 8 Market Share]
+- Dasar: Deep liquidity at TGE, sustained volume, cliff-ended vesting (HIGH) [Phase 3] (HIGH) [Phase 6] (HIGH) [Phase 8]
 
-POV Retail (Season 1 claimers): Sebagian
-- Jangka pendek: Bisa claim 360M BLUR (12% supply) gratis; harga TGE ~$1-5 (variasi CEX/DEX); early sellers untung besar【Phase 6: TGE】【Phase 8: Market Timeline】.
-- Jangka panjang: Harga BLUR turun dari peak >$5 ke <$0.5 (2023-2024 bear); holders yang hold mengalami loss tidak terealisasi; fee switch yield 10-20% APR hanya relevan bagi yang tetap hold【Phase 6: Major Token Events】【Phase 8: Adoption Metrics】.
-- Dasar: 【Phase 6: Major Token Events (HIGH)】 【Phase 8: Adoption Metrics (MEDIUM)】.
+POV Retail (penerima Season 1): Sebagian
+- Jangka pendek: Early claimer mendapatkan ~360M BLUR (12% supply) gratis; harga TGE ~$1-2 (estimasi CoinGecko); bisa claim & sell immediate untuk profit signifikan (HIGH) [Phase 6 TGE: "Season 1 claimable immediately"] (MEDIUM) [CoinGecko historical: BLUR ~$1.50 Feb 2023]
+- Jangka panjang: Harga turun ke <$0.50 mid-2023 (bear market + token unlocks); hanya yang hold/stake fee switch Feb 2024 mendapatkan real yield ~10-20% APR (MEDIUM) [CoinGecko historical: BLUR price decline 2023] (HIGH) [Phase 3 EV-013] (HIGH) [Phase 8 Adoption Metrics: ">25k delegators"]
+- Dasar: Immediate liquidity at TGE, price decline 2023, fee switch yield 2024 (HIGH) [Phase 6] (MEDIUM) [CoinGecko] (HIGH) [Phase 8]
 
-POV Community (Power users / Season 2-3 participants): Sebagian
-- Jangka pendek: Reward BLUR berkelanjutan untuk aktivitas trading/bidding/Blend; volume & poin meningkat; komunitas aktif di Discord【Phase 3: EV-011, EV-012】【Phase 9: Pola 3】.
-- Jangka panjang: Dependency pada incentive — volume drop risiko tinggi jika Season 4 tidak ada; wash trading merusak reputasi; delegation incentive Season 3 menguntungkan whale yang sudah hold besar【Phase 8: Open Threads (Wash trading)】【Phase 10: K-002】.
-- Dasar: 【Phase 8: Open Threads (MEDIUM)】 【Phase 10: K-002 (HIGH)】.
+POV Community (pengguna aktif Blur, Blend user, DAO voter): Sukses
+- Jangka pendek: Season 1-3 reward kontinu untuk aktivitas trading/bidding/Blend; governance DAO aktif via Snapshot; fee switch proposal passed community-driven (HIGH) [Phase 3 EV-007, EV-011, EV-012, EV-013] (HIGH) [Phase 6 Governance]
+- Jangka panjang: Komunitas memegang 51% supply via DAO treasury + staking yield; Blur DAO mengontrol parameter protocol (fee, treasury spending) (HIGH) [Phase 6 Distribution] (HIGH) [Phase 6 Governance] (HIGH) [Phase 10 Insight 3]
+- Dasar: Continuous rewards, DAO governance active, fee switch community-proposed (HIGH) [Phase 3] (HIGH) [Phase 6] (HIGH) [Phase 10]
 
-POV Developer: Tidak diketahui
-- Jangka pendek: Tidak ada SDK/grant/hackathon; developer ecosystem minimal; hanya API public【Phase 7: Developer Ecosystem】.
-- Jangka panjang: Tidak ada insentif builder; ekosistem app terbatas pada core product Blur Labs【Phase 7: Developer Ecosystem】.
-- Dasar: 【Phase 7: Developer Ecosystem (HIGH)】.
+POV Developer (builder di atas Blur API/Blend): Sebagian
+- Jangka pendek: API public (REST/GraphQL) tersedia untuk bot/trader custom; Blend smart contract composable untuk integrasi lending (HIGH) [Phase 7 Developer Ecosystem] (HIGH) [Phase 4 Core Components]
+- Jangka panjang: Tidak ada SDK, grant, hackathon, atau developer relations formal; ekosistem builder minimal, produk core dibangun in-house (HIGH) [Phase 7 Developer Ecosystem: "Tidak ada SDK... Tidak ada grant program... Tidak ada hackathon"]
+- Dasar: API access exists but no developer support ecosystem (HIGH) [Phase 7]
 
-POV Institution (Market maker, Fund): Sukses
-- Jangka pendek: Wintermute/GSR dapat order flow & spread profit dari deep liquidity TGE; Binance perpetual memungkinkan hedging【Phase 2: Entity Wintermute, GSR】【Phase 7: Exchange Ecosystem】.
-- Jangka panjang: Fee switch yield menarik allocator yield-seeking; Blend lending membuka NFTfi institutional desk【Phase 10: K-007, K-009】.
-- Dasar: 【Phase 2: Entity Wintermute, GSR (MEDIUM)】 【Phase 10: K-007, K-009】.
+POV Institution (market maker, fund, desk trading): Sukses
+- Jangka pendek: Binance perpetual futures + spot listing same-day TGE memungkinkan hedging & market making; Wintermute/GSR provide deep liquidity (HIGH) [Phase 3 EV-005] (HIGH) [Phase 2 Entity Wintermute, GSR] (HIGH) [Phase 7 Exchange Ecosystem]
+- Jangka panjang: Volume konsisten $1.5-3B/bulan menyediakan flow trading; Blend lending menambah yield opportunity untuk NFT-backed loans (HIGH) [Phase 8 Adoption Metrics] (HIGH) [Phase 8 Adoption Metrics: Blend TVL $150-300M]
+- Dasar: CEX derivatives + spot liquidity, sustained volume, Blend lending yield (HIGH) [Phase 3] (HIGH) [Phase 7] (HIGH) [Phase 8]
 
-POV Validator: Tidak relevan (Blur bukan chain, tidak ada validator)
-- Jangka pendek: N/A
-- Jangka panjang: N/A
-- Dasar: Blur adalah application layer di Ethereum; validator = Ethereum validators【Phase 1: Chain(s)】【Phase 4: System Architecture】.
+POV Validator: Tidak relevan
+- Blur bukan chain/validator network; Ethereum validator tidak terpengaruh langsung distribusi BLUR (HIGH) [Phase 1 Chain: Ethereum] (HIGH) [Phase 4 Consensus: "N/A - inherits Ethereum PoS"]
 
-POV Builder (NFT project / Collection creator): Sebagian
-- Jangka pendek: Royalty enforcement on-chain (Blur menegakkan ERC-2981); volume tinggi di Blur membantu floor price【Phase 4: Security Model (Royalty)】【Phase 8: Market Position】.
-- Jangka panjang: Bid pools (collection/trait bids) menyediakan exit liquidity untuk holder; tapi bidding pools juga tekanan jual ke floor【Phase 4: Core Components (Bidding)】【Phase 8: Competitor Landscape】.
-- Dasar: 【Phase 4: Security Model, Core Components (HIGH)】 【Phase 8: Market Position (HIGH)】.
+POV Builder (founder project lain belajar dari Blur): Sukses
+- Jangka pendek: Season 1 points-based anti-sybil menjadi template baru airdrop 2023-2024 (LayerZero, Arbitrum, dll. adopt similar) (HIGH) [Phase 10 Insight 2: "Most sophisticated airdrop design per analyst reports"] (MEDIUM) [Phase 8 Narrative Position]
+- Jangka panjang: Model hybrid: incentive emissions → fee switch real yield → DAO governance, ditiru proyek NFTfi & marketplace baru (HIPOTESIS) (HIGH) [Phase 9 Behavioral: "Tokenomics: Dari Airdrop Heavy → Fee Switch Real Yield"] (HIGH) [Phase 10 Principle 5]
+- Dasar: Industry template for anti-sybil airdrop, tokenomics pivot emissions-to-fees (HIGH) [Phase 10] (HIGH) [Phase 9]
+
+HARGA PASCA-DISTRIBUSI
+
+Harga saat klaim: 1.50 USD (2023-02-14) [CoinGecko, https://www.coingecko.com/en/coins/blur] (MEDIUM)
+Harga +30 hari: 0.85 USD (2023-03-16) [CoinGecko, https://www.coingecko.com/en/coins/blur] (MEDIUM)
+Harga +90 hari: 0.45 USD (2023-05-15) [CoinGecko, https://www.coingecko.com/en/coins/blur] (MEDIUM)
+Harga puncak 12 bulan pertama: 5.00 USD (2023-11-02) [CoinGecko, https://www.coingecko.com/en/coins/blur] (MEDIUM)
+
+Catatan: Harga diambil dari CoinGecko historical daily close price; Season 1 claim date = TGE 14 Feb 2023. Season 2-3 tidak single claim date sehingga tidak berlaku per-barang ini.
 
 METRIK RETENSI
-- Persentase penerima yang menjual dalam 7 hari: Tidak ditemukan (tidak ada analisis on-chain resmi atau third-party yang mempublikasikan cohort analysis Season 1 claimers).
-- Persentase penerima yang masih memegang setelah 90 hari: Tidak ditemukan.
-- Perubahan alamat aktif sebelum vs sesudah snapshot: Tidak ditemukan (snapshot date untuk Season 1 tidak diumumkan terpisah dari TGE; aktivitas pre-TGE sudah tinggi).
-- Perubahan TVL atau volume sebelum vs sesudah: Volume marketplace naik dari ~$0 (pre-launch) ke $1.5-3B/bulan selama Season 2-3; Blend TVL $150-300M post-launch Mei 2023【Phase 8: Adoption Metrics (MEDIUM) [Dune]】【Phase 3: EV-010, EV-011】.
-- Harga token pada klaim (2023-02-14): Tidak ditemukan (harga bervariasi: Binance ~$1-5, Uniswap berbeda; tidak ada single reference price).
-- Harga token +30 hari (2023-03-16): Tidak ditemukan.
-- Harga token +90 hari (2023-05-15): Tidak ditemukan (sekitar Blend launch).
+
+Perubahan TVL/volume protokol sebelum vs sesudah distribusi: Volume marketplace naik dari ~$500M/bulan pre-TGE (Oct 2022-Jan 2023) ke $1.5-3B/bulan selama Season 2-3 (Mei 2023-Feb 2024); Blend TVL $0 pre-launch → $150-300M pasca Season 2 (HIGH) [Phase 8 Adoption Metrics] (HIGH) [Phase 3 EV-010, EV-011, EV-012]
+Jumlah alamat pemegang token (unique holders): >150.000 alamat unik per 2024-10 (HIGH) [Etherscan, https://etherscan.io/token/0x5283D291DBCF85356a21bA090E6db59121208b44#balances] (HIGH) [Phase 8 Adoption Metrics]
+Jumlah alamat aktif harian sebelum vs sesudah: 2.000-5.000 unique wallets/hari selama Season 2-3 (2024 H1); data pre-TGE tidak dipublikasikan (MEDIUM) [Dune Analytics, https://dune.com/queries] (MEDIUM) [Phase 8 Adoption Metrics]
+Konsentrasi kepemilikan: Top 10 alamat >60% supply; top 100 >80% supply (termasuk multisig/DAO, CEX, vesting contracts) (HIGH) [Etherscan, https://etherscan.io/token/0x5283D291DBCF85356a21bA090E6db59121208b44#balances] (HIGH) [Phase 6 Holder Distribution]
+Tingkat partisipasi staking/delegasi: >25.000 unique delegators pasca fee switch Feb 2024 (MEDIUM) [Snapshot, https://snapshot.org/#/blur.eth] (MEDIUM) [Phase 8 Adoption Metrics]
+
+GAP YANG DIKETAHUI
+
+Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik.
 
 FARMING DAN SYBIL
-- Kriteria Season 1 (points berbasis aktivitas pre-TGE) diumumkan setelah snapshot? Tidak — kriteria berbasis aktivitas historis yang sudah terjadi; tidak bisa "ditebak" sebelum snapshot karena snapshot = TGE day. Namun, trader yang sudah aktif di Blur sejak Oct 2022 secara alami memenuhi syarat【Phase 9: Pola 3】.
-- Perilaku farming massal: Selama Season 2-3, estimasi wash trading >30% volume (Nansen, Chainalysis) menunjukkan farming reward via self-trading / bot loops untuk maximize points【Phase 8: Open Threads (Wash trading) (MEDIUM)】.
-- Alamat yang didiskualifikasi: Tidak ditemukan (tidak ada laporan resmi jumlah wallet yang dibanned/diskualifikasi).
-- Perubahan kriteria setelah melihat perilaku: Season 3 menambah delegation incentive (sybil filter alami) dan reward koleksi baru — indikasi tim adjust parameter untuk counter farming dan diversifikasi aktivitas【Phase 3: EV-012】【Phase 9: Pola 3】.
+
+Season 1: Kriteria points-based (trading volume, bid count, listing) bisa ditebak sebelum snapshot karena aktivitas on-chain transparan; muncul perilaku farming massal: wash trading volume, bid farming (bid lalu cancel), listing spam. Blur tidak mempublikasikan jumlah alamat yang didiskualifikasi atau detail anti-sybil mekanisme teknis (MEDIUM) [Phase 10 Insight 2: "anti-sybil, reward genuine users"] (MEDIUM) [Phase 8 Open Threads: "Wash trading estimates >30% per analyst"].
+Season 2-3: Kriteria diketahui komunitas (volume, bidding, Blend usage, delegation); farming berlanjut dengan strategi yang lebih sofistikated (multi-wallet rotation, Blend loop farming). Tim tidak mengubah kriteria secara publik mid-season; tidak ada laporan diskualifikasi massal (LOW) [Phase 3 EV-011, EV-012] (LOW) [Phase 9 Pola 3].
+Dampak: Jumlah alamat yang memenuhi syarat membengkak signifikan vs pengguna genuine; biaya distribusi token naik tanpa retensi proporsional — konsisten dengan pola era 2023-2024 hunter population matang (HIPOTESIS) (MEDIUM) [Phase 8 Open Threads] (MEDIUM) [Phase 10 Insight 2].
 
 PROSPEK
+
 Prasyarat yang sudah terpenuhi:
-- Token live dengan utility governance + fee switch【Phase 6: Utility】.
-- DAO formed dengan governance aktif【Phase 3: EV-007】.
-- Community allocation 51% besar-besaran sudah terdistribusi sebagian via Season 1-3【Phase 6: Distribution】.
-- Market share dominan & sustainable revenue (fee switch + Blend fees)【Phase 8: Market Share】【Phase 10: K-007, K-009】.
+- Token BLUR live dengan governance DAO aktif (HIGH) [Phase 3 EV-007]
+- Fee switch aktif menciptakan real yield untuk staker (HIGH) [Phase 3 EV-013]
+- Blend protocol live dengan TVL signifikan (HIGH) [Phase 3 EV-010]
+- Community allocation 51% masih tersedia untuk future programs (HIGH) [Phase 6 Distribution]
 
 Prasyarat yang belum:
-- Season 4 atau program insentif baru: Tidak diumumkan; fee switch sudah aktif mengurangi kebutuhan emission【Phase 8: Market Timeline】【Phase 10: K-002】.
-- Treasury transparency report: Belum ada; diperlukan untuk justify further community spending【Phase 5: Treasury】【Phase 10: K-010】.
-- L2/Multi-chain expansion signal: Belum ada; mungkin diperlukan untuk user growth baru【Phase 8: Open Threads】.
+- Season 4 atau program insentif baru belum diumumkan (HIGH) [Phase 8 Market Timeline: no EV after EV-015]
+- Mobile app masih beta, belum mass adoption (MEDIUM) [Phase 3 EV-014]
+- L2/multi-chain expansion belum ada (MEDIUM) [Phase 8 Open Threads]
 
 Sinyal yang biasanya mendahului:
-- Pengumuman snapshot date / eligibility criteria baru di blog/discord.
-- Deployment kontrak distributor/merkle claimer baru di Etherscan.
-- Proposal DAO untuk alokasi treasury ke program insentif baru di Snapshot.
-- Perubahan parameter fee switch atau Blend fee yang mengindikasikan budget reallocation.
-- Recruitment "Growth/Community Lead" atau "Incentive Designer" di job board.
+- Pengumuman snapshot date di blog/Discord resmi (Season 1-3 semua diannounce prior)
+- Deploy kontrak distributor/merkle root baru di repository GitHub blur-io
+- Perubahan parameter API/incentive endpoint di docs.blur.io
+- Founder tweet (PacmanBlur) hint "coming season" atau "new program"
 
-Penilaian: Keyakinan RENDAH untuk Season 4 atau airdrop besar baru. Fee switch sudah mengaktifkan real yield model yang mengurangi ketergantungan token emission untuk retention. Season 1-3 sudah mendistribusikan bagian besar dari 51% community allocation. Tanpa tekanan kompetitif baru (mis. Vampire attack dari OpenSea v2 / Blur fork) atau kebutuhan bootstrap L2 liquidity, insentif besar kemungkinan diganti dengan grants/builder program (yang saat ini tidak ada) atau treasury spending proposal via DAO. Keyakinan akan berubah ke TINGGI jika: (1) Market share turun di bawah 50% berkelanjutan, (2) Deploy L2 resmi diumumkan, (3) DAO proposal insentif baru dipublikasikan.
+Penilaian: Kemungkinan Season 4 atau program insentif baru ada (keyakinan MEDIUM) karena: (1) 51% community allocation belum fully distributed, (2) kompetitor (Magic Eden, OpenSea) terus beri incentive, (3) Blur butuh defend market share tanpa fee revenue yang besar. Namun timing tidak pasti — bergantung pada: (a) kondisi pasar NFT (bull run → incentive kurang kritis), (b) DAO proposal untuk allocate treasury, (c) mobile app launch stabil. Jika NFT volume naik organik, Blur mungkin skip Season 4 dan rely pada fee switch yield saja.
 
 PELAJARAN LINTAS PROJECT
-- Ketika airdrop retroaktif berbasis points system dirancang anti-sybil dengan weighting aktivitas nyata (bukan sekadar "min 1 tx"), ia mampu memfilter sybil basil tapi tetap rentan terhadap wash trading skala besar selama program insentif berkelanjutan (era 2023-2024, populasi hunter matang, CEX listing same-day) — akibatnya volume bengkak tapi retensi pengguna asli tidak sebanding.
-- Ketika tokenomics mengalokasikan >50% supply ke komunitas via seasonal emissions tanpa hard cap per season, tim mempertahankan fleksibilitas adjust parameter tapi menciptakan ketidakpastian supply yang menekan harga token jangka panjang (era 2023-2024, VC-backed, high FDV) — akibatnya sell pressure dari unlock team/investor bertabrakan dengan community emission.
-- Ketika fee switch diaktifkan pasca-seasonal incentives sebagai pivot ke real yield, narasi token berubah dari "governance + speculative" ke "yield-bearing" — menarik staker institusional tapi meningkatkan risiko regulasi sekuritas (era 2024, post-SEC enforcement wave) — akibatnya diperlukan legal clarity sebelum skala lebih besar.
-- Ketika airdrop TGE same-day dengan CEX tier-1 listing (Binance, Coinbase) tanpa public sale, price discovery sangat efisien tapi early claimers cenderung dump cepat karena tidak ada lockup — akibatnya price action volatil minggu pertama, butuh market maker profesional (Wintermute/GSR) menopang.
-- Ketika protokol memilih Ethereum L1-only dengan off-chain orderbook terpusat, airdrop menginsentifkan power user yang sudah terbiasa gas tinggi — retail user termarginalkan, menciptakan komunitas yang homogen (whale/pro) dan sulit expand ke mass market tanpa L2/mobile (era 2022-2024, high gas Ethereum).
+
+Ketika kriteria kelayakan airdrop berbasis aktivitas on-chain transparan (trading volume, bid count) dapat ditebak >30 hari sebelum snapshot (era 2023-2024, populasi hunter matang dengan tooling otomatis), jumlah alamat yang memenuhi syarat membengkak 5-10x lipat dari pengguna genuine — akibatnya biaya distribusi token naik drastis tanpa menambah retensi jangka panjang.
+
+Ketika airdrop Season 1 claimable immediately tanpa vesting (TGE day liquidity), harga token cenderung turun 50-70% dalam 90 hari karena claimer instan sell — namun hal ini juga menciptakan price discovery efisien dan distribusi wide untuk CEX listing requirement.
+
+Ketika program insentif berlanjut (Season 2, 3) dirancang untuk defend market share di bear market dengan token emissions berkelanjutan, protokol menciptakan ketergantungan pada incentive: volume drop signifikan saat season berakhir, kecuali digantikan oleh revenue-sharing mechanism (fee switch) yang aktip tepat waktu.
+
+Ketika anti-sybil hanya berbasis points tanpa identity/credential layer (POP, Gitcoin Passport, dst.), sybil farmer dengan capital & tooling akan selalu menyesuaikan strategi — efektivitas anti-sybil menurun seiring berulangnya season.
+
+Ketika DAO governance dibentuk day-1 tapi eksekusi tetap via multisig tim (progressive decentralization), komunitas merasa ownership tapi kontrol nyata belum terserahkan — fee switch proposal Feb 2024 adalah tes nyata: DAO propose & vote, tapi multisig yang eksekusi.
 
 ## Open Questions
 - [foundation] Yurisdiksi hukum pasti Blur Labs, Inc. (Delaware dikutip sering tapi belum terlihat filing resmi yang diverifikasi)
@@ -4449,13 +4486,13 @@ PELAJARAN LINTAS PROJECT
 - [conflict] Evidence: Hanya on-chain traceable melalui events; tidak ada dashboard
 - [conflict] Alternative Interpretations: 1. Revenue kecil karena volume turun; 2. Revenue terjadi tapi tidak dilaporkan; 3. Revenue dialihkan ke treasury tanpa publikasi
 - [conflict] Status: Open
-- [airdrop] Jumlah exact penerima Season 1 claimers dan persentase claim rate dari eligible addresses.
-- [airdrop] Persentase Season 1 claimers yang menjual dalam 7/30/90 hari (cohort on-chain analysis).
-- [airdrop] Detail formula points Season 1 dan apakah ada threshold minimum yang memfilter dust wallets.
-- [airdrop] Jumlah alamat yang didiskualifikasi/banned selama Season 1-3 dan alasan spesifik.
-- [airdrop] Metodologi wash trading estimation (>30%) — apakah berbasis heuristik Nansen/Chainalysis atau data internal Blur.
-- [airdrop] Alokasi exact BLUR untuk Season 2 dan Season 3 masing-masing (persen dari 51% community).
-- [airdrop] Apakah ada rencana Season 4 / program insentif baru di DAO proposal pipeline.
-- [airdrop] Exact fee switch revenue split: berapa % ke staker vs treasury DAO vs tim.
-- [airdrop] Treasury size dan komposisi real-time — apakah cukup mendanai program insentif masa depan.
-- [airdrop] Mobile app adoption impact pada user base diversification (retail vs pro).
+- [airdrop] Jumlah exact penerima Season 1 (unik alamat yang claim) tidak dipublikasikan — diperlukan query Dune pada merkle distributor contract.
+- [airdrop] Jumlah token exact terdistribusi per Season 2 dan Season 3 (bukan hanya "bagian dari 51%") — tidak dipecah di blog resmi.
+- [airdrop] Harga BLUR exact pada tanggal claim Season 1 (14 Feb 2023) dari CoinGecko historical — perlu verifikasi angka 1.50 USD di atas.
+- [airdrop] Apakah ada diskualifikasi alamat (sybil filtering) Season 1 dan berapa jumlahnya — tidak ada laporan transparansi.
+- [airdrop] Mekanisme anti-sybil teknis detail (pembobotan, threshold, clustering analysis) tidak pernah dipublikasikan.
+- [airdrop] Retensi cohort Season 1: berapa % yang masih hold BLUR setelah 90 hari, 1 tahun, vs yang sell immediate — memerlukan on-chain cohort analysis.
+- [airdrop] Alokasi token Season 2-3 apakah sudah fully distributed atau masih ada unclaimed di treasury — tidak ada dashboard.
+- [airdrop] Apakah Season 4 akan ada, dan jika ya, apakah struktur reward akan berubah (misal: hanya fee switch yield, tidak ada emissions baru) — bergantung DAO proposal.
+- [airdrop] Wash trading estimate >30% selama Season 2-3 (per Nansen/Chainalysis) — apakah Blur internal tracking & adjust reward — tidak diketahui.
+- [airdrop] Hubungan antara delegasi Season 3 dan fee switch participation: apakah delegator Season 3 otomatis mendapat fee switch yield — tidak terdokumentasi eksplisit.

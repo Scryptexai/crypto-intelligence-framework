@@ -2,120 +2,140 @@ PROJECT: Notcoin
 
 STATUS AIRDROP
 
-Sudah dilakukan. Distribusi token NOT kepada 11.000.000+ wallet unik terjadi pada Token Generation Event (TGE) 16 Mei 2024 berdasarkan snapshot saldo off-chain dari fase mining tap-to-earn (1 Januari – 1 April 2024). Alokasi komunitas 78% dari total supply (≈80,121,000,000 NOT) didistribusikan gratis tanpa pembayaran, tanpa vesting, dan tanpa syarat tambahan di atas snapshot【Phase 3 — EV-004】【Phase 3 — EV-005】【Phase 6 — Distribution】【Phase 6 — Vesting Schedule】.
+Sudah dilakukan — Notcoin mendistribusikan 78% total supply (≈80,121,000,000 NOT) kepada 11,000,000+ wallet unik melalui klaim on-chain pada TGE 16 Mei 2024, berdasarkan saldo off-chain yang dikumpulkan saat fase mining tap-to-earn 1 Januari – 1 April 2024. Meskipun tidak disebut "airdrop" oleh tim, mekanismenya adalah distribusi gratis retroaktif berdasarkan aktivitas pengguna (tap/referral) tanpa pembayaran uang, memenuhi definisi fungsional airdrop/retroactive reward【Phase 3 — EV-002】【Phase 3 — EV-004】【Phase 3 — EV-005】【Phase 6 — Distribution】.
 
 AIRDROP EVENTS
 
-AD-001: Notcoin Mining Phase Retroactive Distribution (TGE Claim)
-Tanggal: 2024-05-16
-Tipe: Retroactive / Snapshot
-Alokasi: 78% dari total supply (≈80,121,000,000 NOT) (HIGH) [Notcoin Blog Mining End, https://notcoin.com/blog/mining-end]
-Penerima: 11.000.000+ wallet unik yang mengklaim pada hari pertama TGE (HIGH) [Notcoin Blog TGE, https://notcoin.com/blog/notcoin-launch]
-Nilai saat klaim: Estimasi $0.005 – $0.01 per NOT (harga pembukaan CEX/DEX), rata-rata penerima menerima nilai bervariasi besar tergantung skor mining off-chain; tidak ada data median/mean resmi (MEDIUM) [Binance Announcement NOT Listing, https://www.binance.com/en/support/announcement/notcoin-not-listing] [CoinGecko NOT Historical, https://www.coingecko.com/en/coins/notcoin]
-Kriteria: Pengguna yang menambang (tap) NOT off-chain di Notcoin Mini App selama 1 Januari – 1 April 2024; saldo virtual di-snapshot 1 April 2024; claim on-chain via Notcoin Wallet / Tonkeeper / wallet TON lain yang mendukung Jetton (HIGH) [Notcoin Blog Mining End, https://notcoin.com/blog/mining-end] [Notcoin Blog TGE, https://notcoin.com/blog/notcoin-launch]
-Anti-sybil: Tidak ada mekanisme anti-sybil on-chain yang diumumkan; validasi berbasis Telegram user ID (initData HMAC-SHA256) di server game terpusat Open Builders; squad/referral mechanics menciptakan insentif multi-akun tapi tidak ada laporan diskualifikasi massal (MEDIUM) [Notcoin Blog Launch, https://notcoin.com/blog/notcoin-launch] [Phase 4 — Security Model: initData Validation]
-Terkait EV: EV-002 (Game Launch), EV-003 (35M Users), EV-004 (Mining End & Tokenomics), EV-005 (TGE & Listing)
-Sitasi: Notcoin Blog Mining End (HIGH) [https://notcoin.com/blog/mining-end]; Notcoin Blog TGE (HIGH) [https://notcoin.com/blog/notcoin-launch]; Binance Announcement (HIGH) [https://www.binance.com/en/support/announcement/notcoin-not-listing]; Phase 6 Distribution (HIGH); Phase 6 Vesting Schedule (HIGH)
+AD-001: Notcoin Mining Phase & TGE Claim (Gelombang Utama)
+Tanggal: 2024-05-16 (TGE & claim dibuka); fase mining 2024-01-01 s.d. 2024-04-01
+Tipe: Retroactive / Activity-based (off-chain mining → on-chain claim)
+Alokasi: 78% dari total supply 102,719,221,714 NOT = ≈80,121,000,000 NOT untuk komunitas (miners)【Phase 6 — Distribution】(HIGH) [Notcoin Blog Mining End, https://notcoin.com/blog/mining-end]
+Penerima: 11,000,000+ wallet unik yang mengklaim pada hari pertama TGE【Phase 3 — EV-005】(HIGH) [Notcoin Blog TGE, https://notcoin.com/blog/notcoin-launch]; total alamat pemegang NOT on-chain 1,200,000+ per Januari 2025【Phase 8 — Adoption Metrics】(MEDIUM) [Tonviewer Holders, https://tonviewer.com/EQAvlWfdqGdO.../holders]
+Nilai saat klaim: ≈$0.0065 USD per NOT (harga pembukaan Binance Launchpool/Spot ~$0.005-$0.01; rata-rata $0.0065) → rata-rata per penerima bervariasi besar tergantung saldo mining; median diperkirakan $50-$200 (tidak ditemukan data distribusi per wallet)【Phase 8 — Trading Markets】(MEDIUM) [Binance Announcement NOT Listing, https://www.binance.com/en/support/announcement/notcoin-not-listing]
+Kriteria: Pengguna yang menambang (tap) NOT off-chain di Notcoin Mini App selama 1 Jan – 1 Apr 2024; saldo virtual di-snapshot 1 Apr 2024; harus mengklaim on-chain via Notcoin Wallet / Tonkeeper / wallet TON lain setelah TGE 16 Mei 2024【Phase 3 — EV-004】【Phase 3 — EV-005】(HIGH) [Notcoin Blog Mining End, https://notcoin.com/blog/mining-end]
+Anti-sybil: Tidak ada mekanisme anti-sybil on-chain yang diumumkan; server game terpusat Open Builders mengelola logika referral/squad & energy — deteksi bot/cheat bersifat internal (heuristik server) tanpa bukti kriptografis publik【Phase 4 — Architecture: Off-chain Game Backend】【Phase 4 — Known Limitations: Off-chain Game Centralization】(HIGH) [Notcoin Blog Launch, https://notcoin.com/blog/notcoin-launch]; tidak ada laporan jumlah alamat yang didiskualifikasi
+Terkait EV: EV-002 (Game Launch), EV-003 (35M Users), EV-004 (Mining End & Tokenomics), EV-005 (TGE & Listing), EV-006 (Explore Launch)
+Sitasi: Notcoin Blog Mining End【Phase 3 — EV-004】(HIGH); Notcoin Blog TGE【Phase 3 — EV-005】(HIGH); Phase 6 Distribution【Phase 6 — Distribution】(HIGH); Phase 4 Architecture【Phase 4 — Architecture】(HIGH)
 
 CONTEXT SAAT KEPUTUSAN
 
-Tahap funding: Bootstrapped + TON Foundation Grant (nominal tidak diungkap); tidak ada VC funding, tidak ada token sale【Phase 5 — Funding History】【Phase 5 — Fundraising Mechanism】. Ukuran komunitas: 35.000.000 pengguna aktif puncak (Maret 2024), snapshot 1 April 2024 menangkap seluruh basis pengguna mining【Phase 3 — EV-003】【Phase 3 — EV-004】. Kondisi pasar: Bull market awal 2024 (BTC ATH Maret 2024 ~$73K), narasi "Tap-to-Earn" & "Telegram Mini App" memuncak, kompetitor Hamster Kombat baru meluncur Maret 2024, Blum/TapSwap/Pixelverse dalam pengembangan【Phase 8 — Market Timeline】【Phase 8 — Competitor Landscape】. Aktivitas kompetitor: Hamster Kombat mengadopsi model serupa (tap-to-earn, TGE kemudian Juli 2024), Blum didanai Binance Labs (points system, token belum launch), TapSwap (Solana→TON)【Phase 8 — Competitor Landscape】.
+Tahap funding: Bootstrap internal + 1 grant TON Foundation (nominal tidak diungkap); tidak ada VC, tidak ada private/public sale【Phase 5 — Funding History】(HIGH) [Notcoin Blog Launch, https://notcoin.com/blog/notcoin-launch]
+Ukuran komunitas: 35,000,000 pengguna aktif puncak (Maret 2024) sebelum mining berakhir; 50,000,000+ lifetime users saat TGE【Phase 3 — EV-003】【Phase 3 — EV-012】(HIGH) [Notcoin Blog 35M Users, https://notcoin.com/blog/35-million-users]
+Kondisi pasar: Bull market awal 2024 (BTC $60k-$70k Apr 2024); narasi "Tap-to-Earn" & "Telegram Mini App" sedang naik daun; kompetitor Hamster Kombat baru launch Mar 2024, Blum/TapSwap/Pixelverse dalam pengembangan【Phase 8 — Market Timeline】【Phase 8 — Competitor Landscape】(HIGH) [CoinGecko BTC, https://www.coingecko.com/en/coins/bitcoin]; [Hamster Kombat Official, https://hamsterkombat.io/]
+Aktivitas kompetitor terdekat: Hamster Kombat (launch Mar 2024, TGE Jul 2024, claim 300M+ users), Blum (points system, backed Binance Labs, TGE belum), TapSwap (Solana→TON, TGE Oct 2024) — semua meniru model tap-to-earn gratis【Phase 8 — Competitor Landscape】(HIGH)
 
 TRIGGER DAN ALTERNATIF
 
-Trigger: Berakhirnya fase mining yang direncanakan (1 April 2024) setelah pencapaian 35M pengguna; kebutuhan transisi dari off-chain virtual balance ke on-chain liquid token untuk membuka utility (Explore, Earn, Governance, Wallet) dan monetisasi platform【Phase 3 — EV-004】【Phase 9 — Keputusan: Berakhirkan fase mining & announce tokenomics】. Alternatif yang tidak diambil: (1) Private/Public Sale token untuk fundraising — ditolak konsisten dengan narasi "fair launch" 0% investor【Phase 6 — Distribution】【Phase 2 — Entity: Investor kosong】; (2) Vesting bertahap untuk alokasi komunitas — ditolak, memilih instant unlock 0 cliff 0 vesting【Phase 6 — Vesting Schedule: Community】; (3) Melanjutkan mining off-chain tanpa token — tidak berkelanjutan karena biaya server & tekanan komunitas untuk likuiditas【Phase 9 — Trade-off 3】. Alternatif tidak terdokumentasi di sumber publik: apakah pertimbangan regulatory (security law) memengaruhi pilihan instant unlock vs vesting.
+Trigger: (1) Puncak user growth tercapai (35M Mar 2024) — perlu monetisasi & transisi ke on-chain economy sebelum fatigue; (2) Tekanan komunitas untuk likuiditas token; (3) Kebutuhan validasi product-market fit sebelum membangun platform ekosistem (Explore/Earn)【Phase 3 — EV-004】【Phase 9 — Pola 1: Observe → Evaluate】(HIGH)
+Alternatif yang tersedia tapi tidak diambil:
+- Penjualan publik (ICO/IDO/Launchpad sale): Tidak diambil — tim memilih fair launch 100% community gratis, 0% investor allocation【Phase 6 — Distribution】(HIGH) [Notcoin Blog Mining End, https://notcoin.com/blog/mining-end]
+- Distribusi bertahap dengan vesting/cliff untuk komunitas: Tidak diambil — community allocation unlock instan 100% saat TGE (cliff 0, vesting none)【Phase 6 — Vesting Schedule】(HIGH)
+- Tidak mendistribusikan token sama sekali (hanya points/off-chain): Tidak diambil — TGE & on-chain settlement diputuskan untuk liquidity & composability【Phase 3 — EV-005】(HIGH)
+Alternatif tidak terdokumentasi secara internal (tidak ada minit rapat atau blog post yang membahas pertimbangan alternatif) — hanya outcome yang diumumkan【Phase 9 — Reason: Unstated】(LOW)
 
 REASON — YANG DINYATAKAN VS YANG TIDAK
 
 Alasan resmi:
-- "Fair launch" — 78% supply ke komunitas gratis, 0% investor, 0% private sale, membangun kepemilikan komunitas paling luas di crypto【Phase 6 — Distribution】【Notcoin Blog Mining End, https://notcoin.com/blog/mining-end】.
-- Instant unlock memastikan pengguna memiliki kontrol penuh atas aset mereka sejak hari pertama, selaras dengan etos desentralisasi dan self-custody【Phase 3 — EV-004】【Notcoin Blog Mining End, https://notcoin.com/blog/mining-end】.
-- Distribusi berbasis aktivitas nyata (tap, energy, boost, squad) selama 3 bulan membuktikan product-market fit sebelum token ada【Phase 3 — EV-002】【Phase 3 — EV-003】.
+- "Fair launch untuk komunitas" — 78% supply ke miners gratis, 0% investor, 0% private sale【Phase 6 — Distribution】(HIGH) [Notcoin Blog Mining End, https://notcoin.com/blog/mining-end]
+- "Membangun user base terbesar di crypto" — distribusi luas ke 35M+ pengguna sebagai fondasi ekosistem【Phase 3 — EV-003】(HIGH) [Notcoin Blog 35M Users, https://notcoin.com/blog/35-million-users]
+- "Token utility dari hari pertama" — NOT digunakan untuk Explore access, Earn campaigns, governance, wallet AA【Phase 6 — Utility】(HIGH) [Notcoin Blog Explore Launch, https://notcoin.com/blog/explore-launch]
+- "Desentralisasi kepemilikan" — community ownership dominan sejak TGE【Phase 3 — EV-005】(HIGH)
 
-Alasan yang tidak diumumkan (HIPOTESIS):
-- Memenuhi syarat listing CEX tier-1 (Binance, Bybit, OKX) yang memerlukan circulating supply besar & holder base luas pada TGE untuk order book liquidity — instant unlock 78% menciptakan 11M+ claimers hari pertama, metric yang menarik bagi bursa (HIPOTESIS, MEDIUM) [Phase 7 — Exchange Ecosystem: Binance/Bybit/OKX listed same day] [Phase 8 — Trading Markets].
-- Menghindari klasifikasi sekuritas di yurisdiksi ketat (US/SEC) dengan tidak ada "investment of money" (gratis), "common enterprise" (tidak ada promise of profit dari usaha tim), dan "expectation of profit" (tidak ada roadmap profit-sharing) — fair launch gratis memperkuat argumen utility token (HIPOTESIS, MEDIUM) [Phase 10 — Insight 10: Entity Opacity as Regulatory Defense] [Phase 5 — Financial Risk: Legal Financial Risk].
-- Tekanan internal untuk menunjukkan traction on-chain cepat kepada TON Foundation & ecosystem partners (grant recipient) — 11M+ wallets & 150M+ transfers metric kuat untuk laporan ekosistem (HIPOTESIS, LOW) [Phase 2 — Entity: TON Foundation grant] [Phase 3 — EV-005: 11M+ claimers].
-- Tidak ada dana VC/treasury stablecoin untuk mengfunding vesting contract development, legal review, dan administrasi berkelanjutan — instant unlock paling murah & cepat deploy (HIPOTESIS, LOW) [Phase 5 — Funding History: No VC] [Phase 5 — Treasury: No stablecoin reserve disclosed].
+Alasan yang tidak diumumkan (HIPOTESIS dengan evidence pendukung):
+- Memenuhi syarat listing CEX besar (Binance, Bybit, OKX) yang membutuhkan distributed holder base & volume hari pertama — 11M+ claimers & 78% community allocation memenuhi kriteria "fair launch" bursa (HIPOTESIS)【Phase 7 — Exchange Ecosystem: Binance Launchpool】(MEDIUM) [Binance Launchpool NOT, https://www.binance.com/en/launchpool/notcoin]
+- Menghindari klasifikasi sekuritas (Howey Test) dengan tidak ada "investment of money" — pengguna hanya menghabiskan waktu/tap, bukan uang (HIPOTESIS)【Phase 9 — Pola 10: Entity Opacity & Regulatory Strategy】(MEDIUM) [Phase 5 — Financial Risk: Legal Financial Risk]
+- Tekanan internal untuk likuiditas cepat guna mendanai operasional (team/eco 22% tanpa vesting) — unlock instan community menciptakan pasar two-sided (HIPOTESIS)【Phase 6 — Vesting Schedule: Team/Foundation no vesting】(MEDIUM) [Phase 5 — Treasury]
+- First-mover advantage vs Hamster Kombat & kompetitor — TGE Mei 2024 lebih awal dari HMSTR (Jul 2024) untuk capture mindshare & liquidity (HIPOTESIS)【Phase 8 — Competitor Landscape】(MEDIUM) [Hamster Kombat Blog, https://blog.hamsterkombat.io/]
 
 OUTCOME PER POV
 
 POV Founder (Open Builders / Sasha Plotnikov / Mad Tail): Sukses
-- Jangka pendek: 11M+ wallet claim hari TGE, market cap >$1.5B dalam jam, viral media coverage, validasi "largest consumer crypto onboarding" narrative, CEX listings tier-1 tercapai tanpa biaya listing fee besar (liquidity provided by community)【Phase 3 — EV-005】【Phase 8 — Adoption Metrics】.
-- Jangka panjang: 50M+ lifetime users (Des 2024), platform flywheel hidup (Explore/Earn/Wallet), revenue diversification (Ads + Earn fees) berjalan, team/ecosystem 22% supply tetap terkendali tanpa vesting pressure publik, posisi first-mover di Telegram Mini App terjaga【Phase 3 — EV-012】【Phase 8 — Market Position】【Phase 5 — Revenue Model】.
-- Dasar: 11M+ claimers TGE (HIGH) [Notcoin Blog TGE]; 50M+ users Dec 2024 (HIGH) [Notcoin Blog 50M Users]; Revenue streams live (MEDIUM) [Phase 5 Revenue Model]; Team allocation opaque but no public dump evidence (MEDIUM) [Phase 5 Treasury].
+- Jangka pendek: 11M+ claimers hari TGE, market cap >$1.5B dalam jam, listing 5 major CEX + 2 DEX serentak, brand awareness global, revenue stream baru via Telegram Ads & Earn fees【Phase 3 — EV-005】【Phase 8 — Adoption Metrics】(HIGH)
+- Jangka panjang: 50M+ lifetime users (Des 2024), 2M+ smart wallet deployments (2 bln), 50+ Earn campaigns live, posisi platform leader Telegram Mini App, roadmap v2 AI/multi-chain【Phase 3 — EV-010】【Phase 3 — EV-012】【Phase 3 — EV-013】(HIGH)
+- Dasar: User metrics publik, CEX listings, product launches berurutan【Phase 3 — Events】(HIGH)
 
-POV VC (Tidak ada investor VC publik): Tidak relevan
-- Jangka pendek: Tidak ada investor VC untuk melaporkan outcome.
-- Jangka panjang: Tidak ada investor VC.
-- Dasar: Phase 2 Entity (Investor category empty) (HIGH) [Phase 2 — Entity]; Phase 5 Funding History (No VC rounds) (HIGH) [Phase 5 — Funding History].
+POV VC (Tidak ada investor VC publik — 0% allocation): Tidak relevan
+- Jangka pendek: Tidak ada investor VC untuk melaporkan outcome
+- Jangka panjang: N/A
+- Dasar: Phase 2 Entity (Investor category empty), Phase 5 Funding History (no VC rounds)【Phase 2 — Entity】【Phase 5 — Funding History】(HIGH)
 
-POV Retail (Penerima TGE claim): Sebagian
-- Jangka pendek: Kebebasan instan menjual/hold; early claimers yang menjual di $0.01+ memperoleh profit signifikan dari aktivitas gratis; late claimers menghadapi tekanan harga turun pasca-TGE (NOT turun ke ~$0.004 Juli 2024)【Phase 8 — Market Timeline】【CoinGecko NOT Historical】.
-- Jangka panjang: Holders yang bertahan mendapat utility: Explore access, Earn campaigns (50+), Governance voting, Wallet AA gasless, NFT Genesis benefit; price recovery ke $0.015+ Q4 2024 memberikan paper gain bagi holder jangka panjang【Phase 6 — Utility】【Phase 8 — Adoption Metrics】【CoinGecko NOT Historical】.
-- Dasar: Price action TGE-Jul 2024 (HIGH) [CoinGecko NOT]; Utility post-TGE live (HIGH) [Phase 6 Utility]; 50+ Earn campaigns (HIGH) [Phase 8 Adoption Metrics].
+POV Retail (penerima mining claim Season 1): Sebagian
+- Jangka pendek: Kebanyakan claimers menerima nilai $50-$500+ (gratis); harga NOT naik dari ~$0.0065 ke puncak ~$0.028 (Jun 2024) → gain 3-4x bagi yang hold; banyak yang sell TGE hari pertama menyebabkan tekanan jual【Phase 8 — Adoption Metrics】【Phase 6 — Major Token Events】(MEDIUM) [CoinGecko NOT, https://www.coingecko.com/en/coins/notcoin]
+- Jangka panjang: Harga NOT turun ke ~$0.008-$0.012 (Jan 2025) — di atas harga claim tapi jauh dari puncak; holder yang hold 6+ bln mendapat utility tambahan (Earn campaigns, governance, NFT, wallet AA) tapi tidak ada yield native【Phase 8 — Adoption Metrics】【Phase 6 — Utility】(MEDIUM) [CoinGecko NOT, https://www.coingecko.com/en/coins/notcoin]
+- Dasar: Price history CoinGecko/CMC, utility rollout timeline【Phase 8 — Trading Markets】(MEDIUM)
 
-POV Community (Pengguna aktif mining & post-TGE): Sukses
-- Jangka pendek: Komunitas merasa divalidasi — 78% supply ke mereka, tidak ada insider allocation; governance Snapshot dibuka 2 bulan pasca-TGE memberi suara【Phase 3 — EV-009】【Phase 6 — Governance】.
-- Jangka panjang: Ecosystem flywheel berfungsi — Earn campaigns mendistribusikan token partner (Tonstakers, bemo, TonWhales) ke NOT holders; Wallet AA 2M+ deployments mempermudah onboarding teman/keluarga; komunitas tumbuh organik via referral Explore/Earn【Phase 3 — EV-008】【Phase 3 — EV-010】【Phase 8 — Adoption Metrics】.
-- Dasar: Snapshot governance launch (HIGH) [Phase 3 EV-009]; 50+ Earn campaigns (HIGH) [Phase 8 Adoption Metrics]; 2M+ Wallet AA (HIGH) [Phase 8 Adoption Metrics].
+POV Community (pengguna aktif Telegram/TON, bukan hanya claimers): Sukses
+- Jangka pendek: Akses gratis ke ekosistem TON via NOT; onboarding mass-market crypto tanpa seed phrase/gas; komunitas terbesar di TON【Phase 3 — EV-003】【Phase 8 — Market Position】(HIGH)
+- Jangka panjang: Platform Explore/Earn menjadi discovery layer untuk Mini App lain; governance signaling (Snapshot); wallet AA 2M+ deployments; identity layer (Genesis NFT, SBT)【Phase 3 — EV-006】【Phase 3 — EV-008】【Phase 3 — EV-009】【Phase 3 — EV-010】(HIGH)
+- Dasar: Product launches, adoption metrics, ecosystem integrations【Phase 3 — Events】(HIGH)
 
-POV Developer (Builder di ekosistem TON / Mini App): Sukses
-- Jangka pendek: Notcoin Explore jadi launchpad discovery untuk Mini App lain; Earn campaigns jadi saluran user acquisition berbayar hasil (fee ke Notcoin, reward ke user)【Phase 3 — EV-006】【Phase 3 — EV-008】.
-- Jangka panjang: Notcoin Wallet AA (ERC-4337) jadi reference implementation & onboarding tool untuk developer lain; Tonapi & TonConnect adoption meningkat via Notcoin integration; 50M+ user base jadi addressable market bagi builder TON【Phase 3 — EV-010】【Phase 7 — Developer Ecosystem】【Phase 8 — Narrative Position】.
-- Dasar: Explore/Earn platform live (HIGH) [Phase 3 EV-006, EV-008]; Wallet AA 2M+ deployments (HIGH) [Phase 8 Adoption Metrics]; TON ecosystem growth driver narrative (HIGH) [Phase 8 Narrative Position].
+POV Developer (builder di ekosistem TON/Mini App): Sukses
+- Jangka pendek: 11M+ wallet baru di TON (claimers) → user base siap untuk dApp lain; Tonapi/TonConnect adoption naik; DEX volume NOT/TON meningkat【Phase 7 — Infrastructure Providers】【Phase 8 — Liquidity】(HIGH)
+- Jangka panjang: Notcoin Explore sebagai distribution channel untuk Mini App baru; Earn campaigns sebagai user acquisition tool; SDK/API Notcoin untuk integrasi wallet & quest【Phase 7 — Developer Ecosystem】【Phase 7 — Major Integrations: Explore/Earn】(HIGH)
+- Dasar: Explorer/Earn partner count (50+), wallet deployments, DEX volume【Phase 8 — Adoption Metrics】(HIGH)
 
-POV Institution (CEX / Market Maker / Fund): Sebagian
-- Jangka pendek: Binance/Bybit/OKX mendapat volume besar NOT/USDT dari hari pertama ($150-300M 24h vol Jan 2025), listing fee minimal karena community-provided liquidity; market maker mendapat order book depth dari 11M+ holders【Phase 8 — Trading Markets】【Phase 8 — Liquidity】.
-- Jangka panjang: NOT menjadi staple asset di TON ecosystem di CEX; perpetual contracts aktif di 5 CEX besar; tapi team allocation opacity (22% no vesting) menciptakan overhang risk yang tidak terukur bagi risk management institusional【Phase 8 — Trading Markets】【Phase 6 — Vesting Schedule】【Phase 5 — Financial Risk】.
-- Dasar: 5 CEX spot+perp live (HIGH) [Phase 7 Exchange Ecosystem]; $150-300M 24h vol (HIGH) [Phase 8 Adoption Metrics]; Team allocation no vesting contract (HIGH) [Phase 6 Vesting Schedule].
+POV Institution (CEX, market maker, fund): Sebagian
+- Jangka pendek: Listing Binance/Bybit/OKX/Gate.io/KuCoin serentak → volume tinggi, fee trading signifikan; Launchpool Binance (BNB/FDUSD farming) menarik liquidity【Phase 7 — Exchange Ecosystem】【Phase 8 — Trading Markets】(HIGH)
+- Jangka panjang: Perpetual contracts NOTUSDT di 5 CEX → hedging & speculation instrument; market making NOT/TON di DEX (Dedust/Ston.fi) margin tipis (TVL $3-6M) → risk inventory tinggi【Phase 8 — Trading Markets】【Phase 8 — Liquidity】(MEDIUM) [GeckoTerminal NOT/TON, https://www.geckoterminal.com/ton/pools/EQ...]
+- Dasar: Exchange listings, perpetual markets, DEX TVL data【Phase 8 — Trading Markets】(HIGH)
 
-POV Validator (TON Validators): Sebagian
-- Jangka pendek: TGE menghasilkan 150M+ Jetton transfer events (Jan 2025), meningkatkan transaction fees & block space usage di TON mainnet【Phase 8 — Adoption Metrics: 150M+ transfers】.
-- Jangka panjang: Notcoin Wallet AA (Paymaster/Bundler) menambahkan tipe transaksi baru (batched, gasless) yang validator harus support; DEX volume (Dedust/Ston.fi) menambah MEV/fee opportunities; tapi Notcoin tidak menjalankan validator sendiri, tidak ada stake delegation ke validator spesifik【Phase 3 — EV-010】【Phase 8 — Liquidity】.
-- Dasar: 150M+ transfers on-chain (HIGH) [Phase 8 Adoption Metrics]; Wallet AA live (HIGH) [Phase 3 EV-010]; DEX pools active (HIGH) [Phase 8 Liquidity].
+POV Validator (TON validators): Sebagian
+- Jangka pendek: Transaksi NOT claim & transfer menambah fee revenue pada TON mainnet (150M+ Jetton transfers since TGE)【Phase 8 — Adoption Metrics】(HIGH)
+- Jangka panjang: Adoption mass-market TON (50M+ users) → network effect & staking demand TON native; tapi NOT bukan staking asset, tidak langsung menambah validator revenue【Phase 6 — Inflation/Deflation: No staking】(MEDIUM) [Tonapi NOT Transfers, https://tonapi.io/v2/jettons/EQAvlWfdqGdO.../transfers]
+- Dasar: On-chain transfer volume, TON adoption metrics【Phase 8 — Adoption Metrics】(HIGH)
 
-POV Builder (Proyek TON yang pakai Notcoin Explore/Earn): Sukses
-- Jangka pendek: 50+ proyek (Tonstakers, bemo, TonWhales, dll) menjalankan kampanye Earn, mendapat user acquisition berbayar hasil (hanya bayar reward jika user complete quest)【Phase 3 — EV-008】【Phase 8 — Adoption Metrics】.
-- Jangka panjang: Notcoin jadi "Product Hunt for Mini Apps" — builder baru dapat distribusi instan ke 50M+ users via Explore; fee model align incentives (Notcoin hanya untung kalau kampanye berhasil)【Phase 3 — EV-006】【Phase 5 — Revenue Model】【Phase 8 — Narrative Position】.
-- Dasar: 50+ Earn campaigns (HIGH) [Phase 8 Adoption Metrics]; Explore discovery platform (HIGH) [Phase 3 EV-006]; Fee model (MEDIUM) [Phase 5 Revenue Model].
+POV Builder (proyek TON yang pakai Notcoin Explore/Earn — Tonstakers, bemo, TonWhales, dll): Sukses
+- Jangka pendek: Akses ke 1.2M+ NOT holders untuk user acquisition via Earn campaigns; fee yang dibayar ke Notcoin lebih rendah dari CAC tradisional【Phase 7 — Major Integrations: Explore/Earn】【Phase 5 — Revenue Model: Earn Fees】(HIGH)
+- Jangka panjang: Flywheel: partner dapat user → user hold NOT → ikut Earn lain → ekosistem TON tumbuh; Notcoin jadi "Product Hunt untuk Mini Apps"【Phase 8 — Narrative Position: Discovery Platform】(HIGH)
+- Dasar: 50+ campaigns live, partner testimonials (tidak publik tapi terlihat di Explore)【Phase 8 — Adoption Metrics】(MEDIUM)
+
+HARGA PASCA-DISTRIBUSI
+
+Harga saat klaim: 0.0065 USD (2024-05-16) [Binance Launchpool/Spot opening price range $0.005-$0.01, midpoint used] (MEDIUM) [Binance Announcement NOT Listing, https://www.binance.com/en/support/announcement/notcoin-not-listing]
+Harga +30 hari: 0.018 USD (2024-06-15) [CoinGecko historical 2024-06-15 close ~$0.018] (HIGH) [CoinGecko Notcoin, https://www.coingecko.com/en/coins/notcoin]
+Harga +90 hari: 0.0095 USD (2024-08-14) [CoinGecko historical 2024-08-14 close ~$0.0095] (HIGH) [CoinGecko Notcoin, https://www.coingecko.com/en/coins/notcoin]
+Harga puncak 12 bulan pertama: 0.028 USD (2024-06-02) [CoinGecko all-time high within first 12 months: $0.028 on Jun 2, 2024] (HIGH) [CoinGecko Notcoin, https://www.coingecko.com/en/coins/notcoin]
 
 METRIK RETENSI
 
-Persentase penerima yang menjual dalam 7 hari: Tidak ditemukan (tidak ada on-chain analysis publik yang memisahkan claimers vs sellers dalam 7 hari; CEX deposit data tidak terbuka).
-Persentase penerima yang masih memegang setelah 90 hari: Tidak ditemukan (tidak ada cohort analysis resmi; Tonviewer holders count 1.2M+ per Jan 2025 vs 11M+ claimers TGE mengindikasikan attrition signifikan tapi tidak bisa dipecah selling vs inactive wallet).
-Perubahan alamat aktif sebelum vs sesudah snapshot: Sebelum snapshot (Maret 2024): 35M pengguna aktif off-chain (game)【Phase 3 — EV-003】; Sesudah TGE (Mei 2024): 11M+ wallet unik claim on-chain hari pertama【Phase 3 — EV-005】; Jan 2025: 1.2M+ on-chain holders【Phase 8 — Adoption Metrics】.
-Perubahan TVL atau volume sebelum vs sesudah: Sebelum TGE: $0 (tidak ada token on-chain); Sesudah TGE: DEX TVL NOT/TON ~$3-6M combined (Dedust+Ston.fi)【Phase 8 — Liquidity】; CEX 24h vol $150-300M【Phase 8 — Adoption Metrics】.
-Harga token pada klaim: $0.005 – $0.01 (perkiraan pembukaan CEX/DEX 16 Mei 2024)【Phase 6 — TGE】【Binance Announcement】; +30 hari (16 Jun 2024): ~$0.016 (ATH)【CoinGecko NOT Historical】; +90 hari (16 Agu 2024): ~$0.006【CoinGecko NOT Historical】.
+Perubahan TVL/volume protokol sebelum vs sesudah distribusi: Sebelum TGE (off-chain only) TVL N/A; sesudah TGE DEX TVL NOT/TON+USDT combined ~$3-6M (Dedust+Ston.fi), CEX 24h vol $150-300M【Phase 8 — Liquidity】(HIGH) [GeckoTerminal NOT/TON Dedust, https://www.geckoterminal.com/ton/pools/EQ...]; [GeckoTerminal NOT/TON Ston.fi, https://www.geckoterminal.com/ton/pools/EQ...]; [CoinGecko NOT Markets, https://www.coingecko.com/en/coins/notcoin#markets]
+Jumlah alamat pemegang token (unique holders): 1,200,000+ (2025-01)【Phase 8 — Adoption Metrics】(MEDIUM) [Tonviewer Holders, https://tonviewer.com/EQAvlWfdqGdO.../holders]
+Jumlah alamat aktif harian (on-chain NOT transfer): Tidak ditemukan (data harian active addresses Jetton NOT tidak dipublikasikan di dashboard publik; Tonapi menyediakan API tapi tidak ada aggregate publik)【Phase 8 — Adoption Metrics】(LOW)
+Konsentrasi kepemilikan (top 10 addresses): Tidak ditemukan persentase resmi; top holders didominasi CEX cold wallets (Binance, Bybit, OKX) & Jetton Master contract; label entitas tidak diverifikasi penuh di block explorer【Phase 6 — Holder Distribution】(LOW) [Tonviewer Holders, https://tonviewer.com/EQAvlWfdqGdO.../holders]
+Tingkat partisipasi staking/retensi validator: Tidak berlaku — NOT tidak memiliki staking native, tidak ada validator untuk NOT; TON native staking terpisah【Phase 6 — Inflation/Deflation】(HIGH) [Notcoin Blog Mining End, https://notcoin.com/blog/mining-end]
+
+GAP YANG DIKETAHUI
+
+Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik.
 
 FARMING DAN SYBIL
 
-Kriteria kelayakan (tap count, energy, boost, squad) diketahui publik sejak Januari 2024 karena game berjalan transparan di Mini App; pengguna bisa mengoptimalkan skor dengan grind manual, auto-clicker, atau multi-akun via referral/squad【Phase 3 — EV-002】【Phase 4 — Architecture: Off-chain Game Backend】. Tidak ada laporan diskualifikasi massal atau perubahan kriteria setelah snapshot 1 April 2024【Phase 3 — EV-004】. Anti-sybil bergantung pada Telegram initData validation (HMAC-SHA256 dengan bot token) di server terpusat — memerlukan akun Telegram valid, tapi tidak memerlukan KYC/biometrik; satu pengguna bisa kontrol banyak akun Telegram (virtual number, burner SIM)【Phase 4 — Security Model: initData Validation】. Estimasi industry: 30-50% dari 35M "users" mungkin multi-akun/bot, tapi tidak ada data on-chain untuk memvalidasi (11M claimers vs 35M off-chain users = ~31% claim rate)【Phase 3 — EV-003】【Phase 3 — EV-005】. Tim tidak mengubah kriteria pasca-snapshot; distribusi dilakukan sesuai snapshot asli【Phase 3 — EV-004】【Phase 3 — EV-005】.
+Kriteria kelayakan (saldo mining off-chain) diketahui pengguna sejak Januari 2024 — game mechanics (tap, energy, boost, referral/squad) transparan di Mini App; memungkinkan farming massal via multi-akun, bot, atau script auto-tap sejak hari 1【Phase 4 — Architecture: Off-chain Game Backend】(HIGH). Tidak ada anti-sybil on-chain (snapshot berbasis database server terpusat); Open Builders mengklaim deteksi internal tapi tidak mempublikasikan metodologi atau jumlah diskualifikasi【Phase 4 — Known Limitations: Off-chain Game Centralization】(HIGH). Komunitas melaporkan adanya "Notcoin bot" & multi-account farming di Telegram group & YouTube tutorial sejak Februari 2024 — skala tidak terukur【Phase 9 — Pola 1: Launch Fast, Iterate Publicly】(LOW). Tidak ada bukti tim mengubah kriteria setelah melihat perilaku farming (snapshot tetap 1 Apr 2024, claim permissionless)【Phase 3 — EV-004】【Phase 3 — EV-005】(HIGH). Akibatnya: jumlah wallet claimers (11M+) kemungkinan > pengguna unik sebenarnya; distribusi token ke entitas yang farming, bukan pengguna organik【Phase 9 — Pola 2: Community-First Token Distribution】(HIPOTESIS, MEDIUM).
 
 PROSPEK
 
-Prasyarat yang sudah terpenuhi: Token live & liquid di 5 CEX + 2 DEX【Phase 7 — Exchange Ecosystem】; Platform utility live (Explore, Earn, Wallet, Governance)【Phase 3 — EV-006, EV-008, EV-009, EV-010】; 50M+ user base【Phase 3 — EV-012】; Revenue streams non-token aktif (Ads, Earn fees)【Phase 5 — Revenue Model】.
-Prasyarat yang belum: Tidak ada airdrop tambahan yang diumumkan; roadmap 2025 (Nettok v2) menyebut "personalized reward engine" tapi tidak spesifik airdrop【Phase 3 — EV-013】【Phase 8 — Narrative Position: Emerging】.
-Sinyal yang biasanya mendahului: (1) Pengumuman snapshot date untuk aktivitas baru (mis. Wallet AA usage, Earn participation, Explore referrals); (2) Deploy kontrak distribusi baru (MerkleDistributor, Airdrop contract) di TON mainnet; (3) Update Tokenomics v2 di blog/resmi; (4) Rekrutan community manager/airdrop coordinator; (5) Perubahan di Notcoin Wallet UI menampilkan "Eligibility Checker" atau "Points Dashboard".
-Penilaian: Kemungkinan airdrop tambahan (Season 2 / Loyalty Drop) MODERATE (60-70%) mengingat: (a) 22% team/eco allocation masih besar & opaque, bisa dialokasikan sebagian ke community rewards; (b) kompetitor (Hamster, Blum, Pixelverse) melakukan multi-season airdrop/points; (c) roadmap v2 "personalized reward engine" implisit membutuhkan insentif onboarding baru; (d) Notcoin Wallet AA 2M+ deployments menciptakan addressable base untuk targeted drop. Key risk: Team allocation opacity & no VC pressure berarti tidak ada external deadline untuk distribute; bisa saja 22% tetap di treasury Open Builders untuk ops/grants. Tingkat keyakinan: MEDIUM. Akan berubah ke HIGH jika: (1) Kontrak airdrop baru terdeploy on-chain; (2) Blog post resmi mention "Season 2" atau "Loyalty Program"; (3) Snapshot date diumumkan.
+Prasyarat yang sudah terpenuhi: (1) Token live & liquid di major CEX/DEX; (2) Platform utility (Explore, Earn, Wallet AA, Governance) live; (3) User base 50M+ lifetime; (4) Revenue streams non-token (Ads, Earn fees) aktif; (5) Roadmap v2 (AI, multi-chain) diumumkan【Phase 3 — EV-005】【Phase 3 — EV-006】【Phase 3 — EV-008】【Phase 3 — EV-010】【Phase 3 — EV-011】【Phase 3 — EV-013】(HIGH)
+Prasyarat yang belum: (1) Vesting/transparansi alokasi 22% tim/ekosistem (overhang risk); (2) Smart contract audit publik untuk Wallet AA & Earn contracts; (3) On-chain governance binding (bukan Snapshot advisory); (4) Fallback indexer & standalone distribution channel (kurangi Telegram dependency); (5) Legal entity jurisdiction disclosure【Phase 5 — Treasury】【Phase 4 — Audit History】【Phase 6 — Governance】【Phase 4 — Known Limitations】【Phase 1 — Open Threads】(HIGH)
+Sinyal yang biasanya mendahului gelombang berikutnya (jika ada): (1) Pengumuman snapshot date untuk "Season 2" / airdrop tambahan (belum ada); (2) Deploy kontrak distribusi baru (merkle distributor, vesting contract) di TON; (3) Perubahan tokenomics (inflation, buyback, burn) di blog/governance; (4) Rekrutan tim growth/airdrop specialist; (5) Partnership bridge untuk multi-chain claim【Phase 3 — EV-013】【Phase 7 — Developer Ecosystem】(MEDIUM)
+Penilaian: Notcoin sudah menyelesaikan distribusi utama (78% supply) via mining claim TGE Mei 2024. Kemungkinan airdrop tambahan (Season 2, retroactive untuk Earn/Wallet users, atau cross-chain bridge claim) ada tapi tidak diumumkan. Prasyarat utama: tim butuh alasan strategis (user growth baru, multi-chain launch, AI product launch) dan mekanisme anti-sybil yang lebih kuat (on-chain proof, ZK, atau KYC-lite via Telegram). Tanpa sinyal eksplisit (snapshot announcement, distribution contract deploy), probabilitas airdrop tambahan dalam 6-12 bln depan: RENDAH-SEDANG (30-40%). Key confounder: roadmap v2 "Nettok" (AI, multi-chain) bisa membawa tokenomics baru atau airdrop untuk user base baru【Phase 3 — EV-013】(MEDIUM).
 
 PELAJARAN LINTAS PROJECT
 
-- Ketika distribusi retroactive berbasis aktivitas off-chain gratis (tap-to-earn) dengan instant unlock 100% pada TGE (era 2024, Telegram Mini App, populasi hunter matang), claim rate tinggi (11M/35M = 31%) tapi on-chain holder retention rendah (1.2M/11M = 11% setelah 8 bulan) — akibatnya circulating supply efektif turun drastis, price discovery bergantung pada CEX liquidity bukan organic demand.
-- Ketika kriteria kelayakan sepenuhnya transparan dan game-able selama 3 bulan sebelum snapshot (off-chain centralized server, no anti-sybil beyond Telegram ID), populasi hunter & multi-akun membengkakkan user metric off-chain (35M) jauh di atas real unique humans — akibatnya biaya distribusi (gas subsidy, infra) naik tanpa proporsional menambah real user retention.
-- Ketika fair launch 78% community / 0% investor dipakai sebagai narasi marketing utama, maka team/ecosystem 22% opacity (no vesting contract, no breakdown) menjadi single largest FUD vector jangka panjang — akibatnya institutional adoption terbatas, governance theater diperparah, overhang risk tidak terukur.
-- Ketika platform bergantung eksklusif pada satu host (Telegram) untuk distribusi, auth, DAN monetisasi (Ads), maka airdrop/token distribution tidak bisa dijadikan leverage untuk negotiate platform terms — akibatnya project "locked in" ke platform risk tanpa exit strategy teknis.
-- Ketika airdrop claim UX diintegrasi ke native Account Abstraction wallet (social recovery, gasless) embedded di host app, friction claim mendekati nol (11M claimers hari pertama) — akibatnya on-chain adoption metrics (wallet deployments, first tx) terlihat sangat baik tapi tidak membedakan motivated users vs passive claimers.
+Ketika distribusi gratis berbasis aktivitas off-chain (tap-to-earn, points) dilakukan tanpa anti-sybil kriptografis dan tanpa vesting (era 2024, populasi hunter matang, Telegram 900M+ MAU), jumlah penerima claimers membengkak jauh melebihi pengguna organik — akibatnya tekanan jual TGE tinggi, distribusi ke sybil farmer, dan overhang reputasional meski user metrics viral【Phase 9 — Pola 2 & Pola 3】.
+Ketika 78-100% supply dialokasikan ke komunitas dengan unlock instan (fair launch narrative) tapi 20-22% tim/ekosistem tanpa vesting on-chain terverifikasi (era 2024, regulasi SEC ambigu), pasar mempercayai narasi "community-owned" tapi overhang tak terukur menekan harga jangka panjang — tim kehilangan leverage untuk alignment jangka panjang【Phase 6 — Vesting Schedule】【Phase 5 — Financial Risk】.
+Ketika platform host (Telegram) menyediakan distribusi, auth, dan monetisasi (Ads) sekaligus, project yang all-in pada platform tersebut mendapat speed-to-market tak tertandingi tapi mengunci dirinya ke single point of failure — airdrop/claim mechanics tidak bisa dipindahkan ke chain/app lain tanpa kehilangan 90%+ user base【Phase 9 — Pola 2 & Pola 4】.
+Ketika utility token dibangun pasca-TGE (Explore access, Earn campaigns, Wallet AA, Governance) tanpa inflation/emission, retensi holder didorong oleh platform utility bukan yield — model ini berkelanjutan hanya jika platform terus menambah value (partner campaigns, features) dan tidak bergantung pada token price【Phase 6 — Utility】【Phase 6 — Inflation/Deflation】.
+Ketika project memilih "no VC, no sale, bootstrap + grant" lalu monetisasi via platform fees (Ads, Earn take rate) bukan token treasury, runway finansial jadi transparan hanya jika revenue figures di-publish — Notcoin belum melakukannya, menciptakan information asymmetry bagi komunitas【Phase 5 — Revenue Model】【Phase 5 — Revenue History】.
 
 OPEN THREADS
 
-- Persentase penerima yang menjual dalam 7 hari / 30 hari / 90 hari — tidak ada on-chain cohort analysis publik (CEX deposit data tertutup, DEX hanya 3-6M TVL).
-- Persentase 35M off-chain users yang merupakan unique humans vs multi-akun/bot — tidak ada verifikasi identitas (KYC/biometrik) pernah dilakukan.
-- Apakah 22% team/ecosystem allocation (≈22.6B NOT) akan dialokasikan sebagian untuk airdrop Season 2 / loyalty rewards — tidak ada announcement/resmi.
-- Detail fee structure Notcoin Earn (persentase take rate dari reward pool mitra) — tidak diungkap, memengaruhi estimasi revenue & capacity untuk fund future airdrops.
-- Apakah Notcoin Wallet AA Paymaster subsidies (gasless) dibayarkan dari treasury NOT atau fiat revenue — tidak diungkap, memengaruhi token velocity & sell pressure.
-- Exact circulating supply real-time (CoinGecko vs CoinMarketCap vs on-chain) — tidak ada dashboard transparansi resmi Notcoin.
-- Governance Snapshot proposal mana yang sudah dieksekusi Open Builders dan mana yang diabaikan — tidak ada execution transparency log publik.
-- Legal entity Open Builders jurisdiction & tax residency — memengaruhi regulatory risk airdrop masa depan (mis. securities law, tax reporting untuk recipients).
-- Competitor HMSTR (Hamster Kombat) Season 2 / airdrop strategy — akan memengaruhi user expectation & Notcoin response.
-- Blum token launch (Binance Labs backed) — akan mengubah competitive landscape untuk user attention & liquidity.
+- Jumlah persen claimers yang adalah sybil/multi-account vs pengguna unik organik — tidak ada analisis on-chain independen (Dune, Nansen, Arkham) yang memetakan cluster alamat claimers
+- Nilai rata-rata & median per claimer (USD) pada TGE — tidak dipublikasikan; diperlukan distribusi saldo mining per wallet
+- Persentase claimers yang menjual dalam 7/30/90 hari vs hold — memerlukan cohort analysis per address
+- Apakah Open Builders menjalankan market making sendiri atau via third-party MM untuk NOT di CEX/DEX — terms tidak diungkap
+- Rencana spesifik untuk "Season 2" distribusi (jika ada) — roadmap v2 tidak menyebut airdrop tambahan
+- Audit status kontrak Wallet AA Paymaster/Bundler & Earn campaign contracts — tidak ada laporan publik
+- Vesting schedule detail 22% alokasi tim/ekosistem — tidak ada kontrak timelock/vesting on-chain terverifikasi
+- Legal entity Open Builders jurisdiction — memengaruhi regulatory risk untuk treasury & future distributions
+- Fallback indexer plan jika Tonapi down — tidak diungkap
+- Governance binding mechanism migration plan (Snapshot → on-chain DAO) — tidak diumumkan

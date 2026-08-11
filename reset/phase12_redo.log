@@ -1,0 +1,426 @@
+[2026-08-11T08:38:41Z] === pipeline stages: phase12 ===
+    starting state: 28 clean, 0 broken, 16 not started, 0 awaiting phase 11
+[2026-08-11T08:38:52Z] stage phase12: 13 project(s) have one that fails its checks -- regenerating.
+[2026-08-11T08:38:52Z]   phase 12 REDO for Aptos (failing: price_block, attempt 1/3)
+[08:38:52] Provider chain: gateway(DeepSeek-V4-Pro) -> deepseek(deepseek-chat) | streaming ON -- every phase goes out as ONE call; the gateway's ~300s non-streaming ceiling does not apply
+[08:38:52] [Aptos] --redo-phases: set aside data_project/Aptos/12-airdrop.docx -> 12-airdrop.docx.bak (regenerating; the better of the two is kept)
+[08:38:52] Starting reset pipeline for 1 project(s): Aptos -- mode: COMMIT (writing to data_project/, the real dataset) -- self-repair ON
+[08:38:52] [Aptos] === starting ===
+[08:38:52] [Aptos] phase 01-foundation: already done, resuming (loading into context, no API call)
+[08:38:52] [Aptos] phase 02-entity: already done, resuming (loading into context, no API call)
+[08:38:52] [Aptos] phase 03-history: already done, resuming (loading into context, no API call)
+[08:38:52] [Aptos] phase 04-technology: already done, resuming (loading into context, no API call)
+[08:38:52] [Aptos] phase 05-financial: already done, resuming (loading into context, no API call)
+[08:38:52] [Aptos] phase 06-token: already done, resuming (loading into context, no API call)
+[08:38:52] [Aptos] phase 07-ecosystem: already done, resuming (loading into context, no API call)
+[08:38:52] [Aptos] phase 08-market: already done, resuming (loading into context, no API call)
+[08:38:52] [Aptos] phase 09-behavioral: already done, resuming (loading into context, no API call)
+[08:38:52] [Aptos] phase 10-knowledge: already done, resuming (loading into context, no API call)
+[08:38:52] [Aptos] phase 11-conflict: already done, resuming (loading into context, no API call)
+[08:38:52] [Aptos] phase 12-airdrop: sending via gateway(DeepSeek-V4-Pro)...
+[08:42:16] [Aptos] phase 12-airdrop: keeping the NEW output (0 failed check(s), 15762 chars) over the previous version (1 failed, 16609 chars)
+[08:42:16] [Aptos] phase 12-airdrop: done (15762 chars) -> /root/crypto-intelligence-framework/data_project/Aptos/12-airdrop.docx
+[08:42:16] [Aptos] verify_10_phases: entities=56 events=30 decisions=13 knowledge=31 -- PASS
+[08:42:16] [Aptos] === verified (already writing directly to data_project/, nothing to promote). ===
+[08:42:17]   [Aptos] ingest: ✅ [data_pr  ] Aptos              12 phases -> examples/CaseStudies/Aptos.md
+[08:42:17]   [Aptos] ingest: ----------------------------------------------------------------
+[08:42:17]   [Aptos] ingest: new: 1  skipped(dup): 0  warnings: 0  errors: 0
+[08:42:19]   [Aptos] ingest + build + extract complete -- poc/*.json updated.
+[08:42:41]   [Aptos] ✅ synced to Supabase (tables: projects,entities,knowledge_items,evidence_items,events,qa_dimensions,qa_phases,behavior_profiles).
+[08:42:41] [Aptos] === ingest/extract/sync chain: synced (ok) ===
+[08:42:41] All projects processed (0 failed). Check reset/failures.log for anything that needs a manual re-run.
+[08:42:41] API usage this run: 1 call(s)
+  gateway/DeepSeek-V4-Pro: 1 calls, in 74,538 tok, out 6,287 tok (no rates set)
+  set RESET_PRICE_IN / RESET_PRICE_OUT (USD per 1M tokens) for a dollar figure; token counts above are exact
+  detail appended to /root/crypto-intelligence-framework/reset/cost_report.json
+[2026-08-11T08:42:41Z]   phase 12 REDO for Axie Infinity (failing: price_block, attempt 1/3)
+[08:42:42] Provider chain: gateway(DeepSeek-V4-Pro) -> deepseek(deepseek-chat) | streaming ON -- every phase goes out as ONE call; the gateway's ~300s non-streaming ceiling does not apply
+[08:42:42] [Axie Infinity] --redo-phases: set aside data_project/Axie Infinity/12-airdrop.docx -> 12-airdrop.docx.bak (regenerating; the better of the two is kept)
+[08:42:42] Starting reset pipeline for 1 project(s): Axie Infinity -- mode: COMMIT (writing to data_project/, the real dataset) -- self-repair ON
+[08:42:42] [Axie Infinity] === starting ===
+[08:42:42] [Axie Infinity] phase 01-foundation: already done, resuming (loading into context, no API call)
+[08:42:42] [Axie Infinity] phase 02-entity: already done, resuming (loading into context, no API call)
+[08:42:42] [Axie Infinity] phase 03-history: already done, resuming (loading into context, no API call)
+[08:42:42] [Axie Infinity] phase 04-technology: already done, resuming (loading into context, no API call)
+[08:42:42] [Axie Infinity] phase 05-financial: already done, resuming (loading into context, no API call)
+[08:42:42] [Axie Infinity] phase 06-token: already done, resuming (loading into context, no API call)
+[08:42:42] [Axie Infinity] phase 07-ecosystem: already done, resuming (loading into context, no API call)
+[08:42:42] [Axie Infinity] phase 08-market: already done, resuming (loading into context, no API call)
+[08:42:42] [Axie Infinity] phase 09-behavioral: already done, resuming (loading into context, no API call)
+[08:42:42] [Axie Infinity] phase 10-knowledge: already done, resuming (loading into context, no API call)
+[08:42:42] [Axie Infinity] phase 11-conflict: already done, resuming (loading into context, no API call)
+[08:42:42] [Axie Infinity] phase 12-airdrop: sending via gateway(DeepSeek-V4-Pro)...
+[08:45:42] [Axie Infinity] phase 12-airdrop: keeping the NEW output (0 failed check(s), 17935 chars) over the previous version (1 failed, 20542 chars)
+[08:45:42] [Axie Infinity] phase 12-airdrop: done (17935 chars) -> /root/crypto-intelligence-framework/data_project/Axie Infinity/12-airdrop.docx
+[08:45:42] [Axie Infinity] verify_10_phases: entities=43 events=30 decisions=10 knowledge=34 -- PASS
+[08:45:42] [Axie Infinity] === verified (already writing directly to data_project/, nothing to promote). ===
+[08:45:42]   [Axie Infinity] ingest: ✅ [data_pr  ] Axie Infinity      12 phases -> examples/CaseStudies/Axie Infinity.md
+[08:45:42]   [Axie Infinity] ingest: ----------------------------------------------------------------
+[08:45:42]   [Axie Infinity] ingest: new: 1  skipped(dup): 0  warnings: 0  errors: 0
+[08:45:44]   [Axie Infinity] ingest + build + extract complete -- poc/*.json updated.
+[08:46:08]   [Axie Infinity] ✅ synced to Supabase (tables: projects,entities,knowledge_items,evidence_items,events,qa_dimensions,qa_phases,behavior_profiles).
+[08:46:08] [Axie Infinity] === ingest/extract/sync chain: synced (ok) ===
+[08:46:08] All projects processed (0 failed). Check reset/failures.log for anything that needs a manual re-run.
+[08:46:08] API usage this run: 1 call(s)
+  gateway/DeepSeek-V4-Pro: 1 calls, in 77,859 tok, out 5,995 tok (no rates set)
+  set RESET_PRICE_IN / RESET_PRICE_OUT (USD per 1M tokens) for a dollar figure; token counts above are exact
+  detail appended to /root/crypto-intelligence-framework/reset/cost_report.json
+[2026-08-11T08:46:08Z]   phase 12 REDO for Blast (failing: price_block, attempt 1/3)
+[08:46:09] Provider chain: gateway(DeepSeek-V4-Pro) -> deepseek(deepseek-chat) | streaming ON -- every phase goes out as ONE call; the gateway's ~300s non-streaming ceiling does not apply
+[08:46:09] [Blast] --redo-phases: set aside data_project/Blast/12-airdrop.docx -> 12-airdrop.docx.bak (regenerating; the better of the two is kept)
+[08:46:09] Starting reset pipeline for 1 project(s): Blast -- mode: COMMIT (writing to data_project/, the real dataset) -- self-repair ON
+[08:46:09] [Blast] === starting ===
+[08:46:09] [Blast] phase 01-foundation: already done, resuming (loading into context, no API call)
+[08:46:09] [Blast] phase 02-entity: already done, resuming (loading into context, no API call)
+[08:46:09] [Blast] phase 03-history: already done, resuming (loading into context, no API call)
+[08:46:09] [Blast] phase 04-technology: already done, resuming (loading into context, no API call)
+[08:46:09] [Blast] phase 05-financial: already done, resuming (loading into context, no API call)
+[08:46:09] [Blast] phase 06-token: already done, resuming (loading into context, no API call)
+[08:46:09] [Blast] phase 07-ecosystem: already done, resuming (loading into context, no API call)
+[08:46:09] [Blast] phase 08-market: already done, resuming (loading into context, no API call)
+[08:46:09] [Blast] phase 09-behavioral: already done, resuming (loading into context, no API call)
+[08:46:09] [Blast] phase 10-knowledge: already done, resuming (loading into context, no API call)
+[08:46:09] [Blast] phase 11-conflict: already done, resuming (loading into context, no API call)
+[08:46:09] [Blast] phase 12-airdrop: sending via gateway(DeepSeek-V4-Pro)...
+[08:51:57] [Blast] phase 12-airdrop: keeping the NEW output (0 failed check(s), 20836 chars) over the previous version (1 failed, 19691 chars)
+[08:51:57] [Blast] phase 12-airdrop: done (20836 chars) -> /root/crypto-intelligence-framework/data_project/Blast/12-airdrop.docx
+[08:51:57] [Blast] verify_10_phases: entities=18 events=15 decisions=10 knowledge=42 -- PASS
+[08:51:57] [Blast] === verified (already writing directly to data_project/, nothing to promote). ===
+[08:51:58]   [Blast] ingest: ✅ [data_pr  ] Blast              12 phases -> examples/CaseStudies/Blast.md
+[08:51:58]   [Blast] ingest: ----------------------------------------------------------------
+[08:51:58]   [Blast] ingest: new: 1  skipped(dup): 0  warnings: 0  errors: 0
+[08:52:00]   [Blast] ingest + build + extract complete -- poc/*.json updated.
+[08:52:24]   [Blast] ✅ synced to Supabase (tables: projects,entities,knowledge_items,evidence_items,events,qa_dimensions,qa_phases,behavior_profiles).
+[08:52:24] [Blast] === ingest/extract/sync chain: synced (ok) ===
+[08:52:24] All projects processed (0 failed). Check reset/failures.log for anything that needs a manual re-run.
+[08:52:24] API usage this run: 1 call(s)
+  gateway/DeepSeek-V4-Pro: 1 calls, in 58,310 tok, out 7,466 tok (no rates set)
+  set RESET_PRICE_IN / RESET_PRICE_OUT (USD per 1M tokens) for a dollar figure; token counts above are exact
+  detail appended to /root/crypto-intelligence-framework/reset/cost_report.json
+[2026-08-11T08:52:25Z]   phase 12 REDO for Blur (failing: price_block, attempt 1/3)
+[08:52:25] Provider chain: gateway(DeepSeek-V4-Pro) -> deepseek(deepseek-chat) | streaming ON -- every phase goes out as ONE call; the gateway's ~300s non-streaming ceiling does not apply
+[08:52:25] [Blur] --redo-phases: set aside data_project/Blur/12-airdrop.docx -> 12-airdrop.docx.bak (regenerating; the better of the two is kept)
+[08:52:25] Starting reset pipeline for 1 project(s): Blur -- mode: COMMIT (writing to data_project/, the real dataset) -- self-repair ON
+[08:52:25] [Blur] === starting ===
+[08:52:25] [Blur] phase 01-foundation: already done, resuming (loading into context, no API call)
+[08:52:25] [Blur] phase 02-entity: already done, resuming (loading into context, no API call)
+[08:52:25] [Blur] phase 03-history: already done, resuming (loading into context, no API call)
+[08:52:25] [Blur] phase 04-technology: already done, resuming (loading into context, no API call)
+[08:52:25] [Blur] phase 05-financial: already done, resuming (loading into context, no API call)
+[08:52:25] [Blur] phase 06-token: already done, resuming (loading into context, no API call)
+[08:52:25] [Blur] phase 07-ecosystem: already done, resuming (loading into context, no API call)
+[08:52:25] [Blur] phase 08-market: already done, resuming (loading into context, no API call)
+[08:52:25] [Blur] phase 09-behavioral: already done, resuming (loading into context, no API call)
+[08:52:25] [Blur] phase 10-knowledge: already done, resuming (loading into context, no API call)
+[08:52:25] [Blur] phase 11-conflict: already done, resuming (loading into context, no API call)
+[08:52:25] [Blur] phase 12-airdrop: sending via gateway(DeepSeek-V4-Pro)...
+[08:56:23] [Blur] phase 12-airdrop: keeping the NEW output (0 failed check(s), 21610 chars) over the previous version (1 failed, 17962 chars)
+[08:56:23] [Blur] phase 12-airdrop: done (21610 chars) -> /root/crypto-intelligence-framework/data_project/Blur/12-airdrop.docx
+[08:56:23] [Blur] verify_10_phases: entities=20 events=15 decisions=11 knowledge=30 -- PASS
+[08:56:23] [Blur] === verified (already writing directly to data_project/, nothing to promote). ===
+[08:56:24]   [Blur] ingest: ✅ [data_pr  ] Blur               12 phases -> examples/CaseStudies/Blur.md
+[08:56:24]   [Blur] ingest: ----------------------------------------------------------------
+[08:56:24]   [Blur] ingest: new: 1  skipped(dup): 0  warnings: 0  errors: 0
+[08:56:26]   [Blur] ingest + build + extract complete -- poc/*.json updated.
+[08:56:52]   [Blur] ✅ synced to Supabase (tables: projects,entities,knowledge_items,evidence_items,events,qa_dimensions,qa_phases,behavior_profiles).
+[08:56:52] [Blur] === ingest/extract/sync chain: synced (ok) ===
+[08:56:52] All projects processed (0 failed). Check reset/failures.log for anything that needs a manual re-run.
+[08:56:52] API usage this run: 1 call(s)
+  gateway/DeepSeek-V4-Pro: 1 calls, in 58,895 tok, out 8,482 tok (no rates set)
+  set RESET_PRICE_IN / RESET_PRICE_OUT (USD per 1M tokens) for a dollar figure; token counts above are exact
+  detail appended to /root/crypto-intelligence-framework/reset/cost_report.json
+[2026-08-11T08:56:53Z]   phase 12 REDO for Celestia (failing: price_block, attempt 1/3)
+[08:56:53] Provider chain: gateway(DeepSeek-V4-Pro) -> deepseek(deepseek-chat) | streaming ON -- every phase goes out as ONE call; the gateway's ~300s non-streaming ceiling does not apply
+[08:56:53] [Celestia] --redo-phases: set aside data_project/Celestia/12-airdrop.docx -> 12-airdrop.docx.bak (regenerating; the better of the two is kept)
+[08:56:53] Starting reset pipeline for 1 project(s): Celestia -- mode: COMMIT (writing to data_project/, the real dataset) -- self-repair ON
+[08:56:53] [Celestia] === starting ===
+[08:56:53] [Celestia] phase 01-foundation: already done, resuming (loading into context, no API call)
+[08:56:53] [Celestia] phase 02-entity: already done, resuming (loading into context, no API call)
+[08:56:53] [Celestia] phase 03-history: already done, resuming (loading into context, no API call)
+[08:56:53] [Celestia] phase 04-technology: already done, resuming (loading into context, no API call)
+[08:56:53] [Celestia] phase 05-financial: already done, resuming (loading into context, no API call)
+[08:56:53] [Celestia] phase 06-token: already done, resuming (loading into context, no API call)
+[08:56:53] [Celestia] phase 07-ecosystem: already done, resuming (loading into context, no API call)
+[08:56:53] [Celestia] phase 08-market: already done, resuming (loading into context, no API call)
+[08:56:53] [Celestia] phase 09-behavioral: already done, resuming (loading into context, no API call)
+[08:56:53] [Celestia] phase 10-knowledge: already done, resuming (loading into context, no API call)
+[08:56:53] [Celestia] phase 11-conflict: already done, resuming (loading into context, no API call)
+[08:56:53] [Celestia] phase 12-airdrop: sending via gateway(DeepSeek-V4-Pro)...
+[08:59:27] [Celestia] phase 12-airdrop: keeping the NEW output (0 failed check(s), 18171 chars) over the previous version (1 failed, 21332 chars)
+[08:59:27] [Celestia] phase 12-airdrop: done (18171 chars) -> /root/crypto-intelligence-framework/data_project/Celestia/12-airdrop.docx
+[08:59:27] [Celestia] verify_10_phases: entities=38 events=30 decisions=17 knowledge=35 -- PASS
+[08:59:27] [Celestia] === verified (already writing directly to data_project/, nothing to promote). ===
+[08:59:27]   [Celestia] ingest: ✅ [data_pr  ] Celestia           12 phases -> examples/CaseStudies/Celestia.md
+[08:59:27]   [Celestia] ingest: ----------------------------------------------------------------
+[08:59:27]   [Celestia] ingest: new: 1  skipped(dup): 0  warnings: 0  errors: 0
+[08:59:29]   [Celestia] ingest + build + extract complete -- poc/*.json updated.
+[08:59:47]   [Celestia] ✅ synced to Supabase (tables: projects,entities,knowledge_items,evidence_items,events,qa_dimensions,qa_phases,behavior_profiles).
+[08:59:47] [Celestia] === ingest/extract/sync chain: synced (ok) ===
+[08:59:47] All projects processed (0 failed). Check reset/failures.log for anything that needs a manual re-run.
+[08:59:47] API usage this run: 1 call(s)
+  gateway/DeepSeek-V4-Pro: 1 calls, in 69,239 tok, out 6,188 tok (no rates set)
+  set RESET_PRICE_IN / RESET_PRICE_OUT (USD per 1M tokens) for a dollar figure; token counts above are exact
+  detail appended to /root/crypto-intelligence-framework/reset/cost_report.json
+[2026-08-11T08:59:48Z]   phase 12 REDO for Compound (failing: price_block, attempt 1/3)
+[08:59:48] Provider chain: gateway(DeepSeek-V4-Pro) -> deepseek(deepseek-chat) | streaming ON -- every phase goes out as ONE call; the gateway's ~300s non-streaming ceiling does not apply
+[08:59:48] [Compound] --redo-phases: set aside data_project/Compound/12-airdrop.docx -> 12-airdrop.docx.bak (regenerating; the better of the two is kept)
+[08:59:48] Starting reset pipeline for 1 project(s): Compound -- mode: COMMIT (writing to data_project/, the real dataset) -- self-repair ON
+[08:59:48] [Compound] === starting ===
+[08:59:48] [Compound] phase 01-foundation: already done, resuming (loading into context, no API call)
+[08:59:48] [Compound] phase 02-entity: already done, resuming (loading into context, no API call)
+[08:59:48] [Compound] phase 03-history: already done, resuming (loading into context, no API call)
+[08:59:48] [Compound] phase 04-technology: already done, resuming (loading into context, no API call)
+[08:59:48] [Compound] phase 05-financial: already done, resuming (loading into context, no API call)
+[08:59:48] [Compound] phase 06-token: already done, resuming (loading into context, no API call)
+[08:59:48] [Compound] phase 07-ecosystem: already done, resuming (loading into context, no API call)
+[08:59:48] [Compound] phase 08-market: already done, resuming (loading into context, no API call)
+[08:59:48] [Compound] phase 09-behavioral: already done, resuming (loading into context, no API call)
+[08:59:48] [Compound] phase 10-knowledge: already done, resuming (loading into context, no API call)
+[08:59:48] [Compound] phase 11-conflict: already done, resuming (loading into context, no API call)
+[08:59:48] [Compound] phase 12-airdrop: sending via gateway(DeepSeek-V4-Pro)...
+[09:02:48] [Compound] phase 12-airdrop: keeping the NEW output (0 failed check(s), 17058 chars) over the previous version (1 failed, 14889 chars)
+[09:02:48] [Compound] phase 12-airdrop: done (17058 chars) -> /root/crypto-intelligence-framework/data_project/Compound/12-airdrop.docx
+[09:02:48] [Compound] verify_10_phases: entities=63 events=30 decisions=13 knowledge=25 -- PASS
+[09:02:48] [Compound] === verified (already writing directly to data_project/, nothing to promote). ===
+[09:02:48]   [Compound] ingest: ✅ [data_pr  ] Compound           12 phases -> examples/CaseStudies/Compound.md
+[09:02:48]   [Compound] ingest: ----------------------------------------------------------------
+[09:02:48]   [Compound] ingest: new: 1  skipped(dup): 0  warnings: 0  errors: 0
+[09:02:50]   [Compound] ingest + build + extract complete -- poc/*.json updated.
+[09:03:05]   [Compound] ✅ synced to Supabase (tables: projects,entities,knowledge_items,evidence_items,events,qa_dimensions,qa_phases,behavior_profiles).
+[09:03:05] [Compound] === ingest/extract/sync chain: synced (ok) ===
+[09:03:05] All projects processed (0 failed). Check reset/failures.log for anything that needs a manual re-run.
+[09:03:05] API usage this run: 1 call(s)
+  gateway/DeepSeek-V4-Pro: 1 calls, in 66,495 tok, out 5,801 tok (no rates set)
+  set RESET_PRICE_IN / RESET_PRICE_OUT (USD per 1M tokens) for a dollar figure; token counts above are exact
+  detail appended to /root/crypto-intelligence-framework/reset/cost_report.json
+[2026-08-11T09:03:06Z]   phase 12 REDO for Ethena (failing: price_block, attempt 1/3)
+[09:03:08] Provider chain: gateway(DeepSeek-V4-Pro) -> deepseek(deepseek-chat) | streaming ON -- every phase goes out as ONE call; the gateway's ~300s non-streaming ceiling does not apply
+[09:03:08] [Ethena] --redo-phases: set aside data_project/Ethena/12-airdrop.docx -> 12-airdrop.docx.bak (regenerating; the better of the two is kept)
+[09:03:08] Starting reset pipeline for 1 project(s): Ethena -- mode: COMMIT (writing to data_project/, the real dataset) -- self-repair ON
+[09:03:08] [Ethena] === starting ===
+[09:03:08] [Ethena] phase 01-foundation: already done, resuming (loading into context, no API call)
+[09:03:08] [Ethena] phase 02-entity: already done, resuming (loading into context, no API call)
+[09:03:08] [Ethena] phase 03-history: already done, resuming (loading into context, no API call)
+[09:03:09] [Ethena] phase 04-technology: already done, resuming (loading into context, no API call)
+[09:03:09] [Ethena] phase 05-financial: already done, resuming (loading into context, no API call)
+[09:03:09] [Ethena] phase 06-token: already done, resuming (loading into context, no API call)
+[09:03:09] [Ethena] phase 07-ecosystem: already done, resuming (loading into context, no API call)
+[09:03:09] [Ethena] phase 08-market: already done, resuming (loading into context, no API call)
+[09:03:09] [Ethena] phase 09-behavioral: already done, resuming (loading into context, no API call)
+[09:03:09] [Ethena] phase 10-knowledge: already done, resuming (loading into context, no API call)
+[09:03:09] [Ethena] phase 11-conflict: already done, resuming (loading into context, no API call)
+[09:03:09] [Ethena] phase 12-airdrop: sending via gateway(DeepSeek-V4-Pro)...
+[09:06:26] [Ethena] phase 12-airdrop: ✗ spec check failed (price_block: 4 price line(s) with neither a figure nor an explicit `Tidak berlaku`: Harga saat klaim, Harga +30 hari, Harga +90 hari, Harga puncak 12 bulan pertama) -- self-repair attempt 1/2
+[09:07:18] [Ethena] phase 12-airdrop: repair did not improve (2 check(s) still failing) -- stopping repair loop
+[09:07:18] [Ethena] phase 12-airdrop: ⚠ saved with 1 unresolved check(s): price_block -- see reset/repairs.log
+[09:07:18] [Ethena] phase 12-airdrop: ⚠ regeneration was WORSE (1 failed check(s), 15991 chars) than the version it replaced (1 failed, 19480 chars) -- restoring the previous version and discarding the new one
+[09:07:18] [Ethena] phase 12-airdrop: done (19480 chars) -> /root/crypto-intelligence-framework/data_project/Ethena/12-airdrop.docx
+[09:07:18] [Ethena] ⚠ phases saved with unresolved spec checks: {'12-airdrop': ['price_block']} (see reset/repairs.log -- a check failing across many projects is a prompt bug)
+[09:07:19] [Ethena] verify_10_phases: entities=51 events=33 decisions=10 knowledge=33 -- PASS
+[09:07:19] [Ethena] === verified (already writing directly to data_project/, nothing to promote). ===
+[09:07:19]   [Ethena] ingest: ✅ [data_pr  ] Ethena             12 phases -> examples/CaseStudies/Ethena.md
+[09:07:19]   [Ethena] ingest: ----------------------------------------------------------------
+[09:07:19]   [Ethena] ingest: new: 1  skipped(dup): 0  warnings: 0  errors: 0
+[09:07:21]   [Ethena] ingest + build + extract complete -- poc/*.json updated.
+[09:07:44]   [Ethena] ✅ synced to Supabase (tables: projects,entities,knowledge_items,evidence_items,events,qa_dimensions,qa_phases,behavior_profiles).
+[09:07:44] [Ethena] === ingest/extract/sync chain: synced (ok) ===
+[09:07:44] All projects processed (0 failed). Check reset/failures.log for anything that needs a manual re-run.
+[09:07:44] API usage this run: 2 call(s)
+  gateway/DeepSeek-V4-Pro: 2 calls, in 144,100 tok, out 8,374 tok (no rates set)
+  set RESET_PRICE_IN / RESET_PRICE_OUT (USD per 1M tokens) for a dollar figure; token counts above are exact
+  detail appended to /root/crypto-intelligence-framework/reset/cost_report.json
+[2026-08-11T09:07:44Z]   phase 12 REDO for Friend.tech (failing: price_block, attempt 1/3)
+[09:07:44] Provider chain: gateway(DeepSeek-V4-Pro) -> deepseek(deepseek-chat) | streaming ON -- every phase goes out as ONE call; the gateway's ~300s non-streaming ceiling does not apply
+[09:07:44] [Friend.tech] --redo-phases: set aside data_project/Friend.tech/12-airdrop.docx -> 12-airdrop.docx.bak (regenerating; the better of the two is kept)
+[09:07:44] Starting reset pipeline for 1 project(s): Friend.tech -- mode: COMMIT (writing to data_project/, the real dataset) -- self-repair ON
+[09:07:44] [Friend.tech] === starting ===
+[09:07:44] [Friend.tech] phase 01-foundation: already done, resuming (loading into context, no API call)
+[09:07:44] [Friend.tech] phase 02-entity: already done, resuming (loading into context, no API call)
+[09:07:44] [Friend.tech] phase 03-history: already done, resuming (loading into context, no API call)
+[09:07:44] [Friend.tech] phase 04-technology: already done, resuming (loading into context, no API call)
+[09:07:44] [Friend.tech] phase 05-financial: already done, resuming (loading into context, no API call)
+[09:07:44] [Friend.tech] phase 06-token: already done, resuming (loading into context, no API call)
+[09:07:44] [Friend.tech] phase 07-ecosystem: already done, resuming (loading into context, no API call)
+[09:07:44] [Friend.tech] phase 08-market: already done, resuming (loading into context, no API call)
+[09:07:44] [Friend.tech] phase 09-behavioral: already done, resuming (loading into context, no API call)
+[09:07:44] [Friend.tech] phase 10-knowledge: already done, resuming (loading into context, no API call)
+[09:07:44] [Friend.tech] phase 11-conflict: already done, resuming (loading into context, no API call)
+[09:07:44] [Friend.tech] phase 12-airdrop: sending via gateway(DeepSeek-V4-Pro)...
+[09:10:30] [Friend.tech] phase 12-airdrop: keeping the NEW output (0 failed check(s), 16191 chars) over the previous version (1 failed, 17119 chars)
+[09:10:30] [Friend.tech] phase 12-airdrop: done (16191 chars) -> /root/crypto-intelligence-framework/data_project/Friend.tech/12-airdrop.docx
+[09:10:30] [Friend.tech] verify_10_phases: entities=45 events=25 decisions=9 knowledge=32 -- PASS
+[09:10:30] [Friend.tech] === verified (already writing directly to data_project/, nothing to promote). ===
+[09:10:31]   [Friend.tech] ingest: ✅ [data_pr  ] Friend.tech        12 phases -> examples/CaseStudies/Friend.tech.md
+[09:10:31]   [Friend.tech] ingest: ----------------------------------------------------------------
+[09:10:31]   [Friend.tech] ingest: new: 1  skipped(dup): 0  warnings: 0  errors: 0
+[09:10:33]   [Friend.tech] ingest + build + extract complete -- poc/*.json updated.
+[09:10:57]   [Friend.tech] ✅ synced to Supabase (tables: projects,entities,knowledge_items,evidence_items,events,qa_dimensions,qa_phases,behavior_profiles).
+[09:10:57] [Friend.tech] === ingest/extract/sync chain: synced (ok) ===
+[09:10:57] All projects processed (0 failed). Check reset/failures.log for anything that needs a manual re-run.
+[09:10:57] API usage this run: 1 call(s)
+  gateway/DeepSeek-V4-Pro: 1 calls, in 65,425 tok, out 5,085 tok (no rates set)
+  set RESET_PRICE_IN / RESET_PRICE_OUT (USD per 1M tokens) for a dollar figure; token counts above are exact
+  detail appended to /root/crypto-intelligence-framework/reset/cost_report.json
+[2026-08-11T09:10:57Z]   phase 12 REDO for Grass (failing: price_block, attempt 1/3)
+[09:10:58] Provider chain: gateway(DeepSeek-V4-Pro) -> deepseek(deepseek-chat) | streaming ON -- every phase goes out as ONE call; the gateway's ~300s non-streaming ceiling does not apply
+[09:10:58] [Grass] --redo-phases: set aside data_project/Grass/12-airdrop.docx -> 12-airdrop.docx.bak (regenerating; the better of the two is kept)
+[09:10:58] Starting reset pipeline for 1 project(s): Grass -- mode: COMMIT (writing to data_project/, the real dataset) -- self-repair ON
+[09:10:58] [Grass] === starting ===
+[09:10:58] [Grass] phase 01-foundation: already done, resuming (loading into context, no API call)
+[09:10:58] [Grass] phase 02-entity: already done, resuming (loading into context, no API call)
+[09:10:58] [Grass] phase 03-history: already done, resuming (loading into context, no API call)
+[09:10:58] [Grass] phase 04-technology: already done, resuming (loading into context, no API call)
+[09:10:58] [Grass] phase 05-financial: already done, resuming (loading into context, no API call)
+[09:10:58] [Grass] phase 06-token: already done, resuming (loading into context, no API call)
+[09:10:58] [Grass] phase 07-ecosystem: already done, resuming (loading into context, no API call)
+[09:10:58] [Grass] phase 08-market: already done, resuming (loading into context, no API call)
+[09:10:58] [Grass] phase 09-behavioral: already done, resuming (loading into context, no API call)
+[09:10:58] [Grass] phase 10-knowledge: already done, resuming (loading into context, no API call)
+[09:10:58] [Grass] phase 11-conflict: already done, resuming (loading into context, no API call)
+[09:10:58] [Grass] phase 12-airdrop: sending via gateway(DeepSeek-V4-Pro)...
+[09:14:55] [Grass] phase 12-airdrop: keeping the NEW output (0 failed check(s), 18482 chars) over the previous version (1 failed, 22464 chars)
+[09:14:55] [Grass] phase 12-airdrop: done (18482 chars) -> /root/crypto-intelligence-framework/data_project/Grass/12-airdrop.docx
+[09:14:55] [Grass] verify_10_phases: entities=60 events=16 decisions=7 knowledge=45 -- PASS
+[09:14:55] [Grass] === verified (already writing directly to data_project/, nothing to promote). ===
+[09:14:56]   [Grass] ingest: ✅ [data_pr  ] Grass              12 phases -> examples/CaseStudies/Grass.md
+[09:14:56]   [Grass] ingest: ----------------------------------------------------------------
+[09:14:56]   [Grass] ingest: new: 1  skipped(dup): 0  warnings: 0  errors: 0
+[09:14:57]   [Grass] ingest + build + extract complete -- poc/*.json updated.
+[09:15:21]   [Grass] ✅ synced to Supabase (tables: projects,entities,knowledge_items,evidence_items,events,qa_dimensions,qa_phases,behavior_profiles).
+[09:15:21] [Grass] === ingest/extract/sync chain: synced (ok) ===
+[09:15:21] All projects processed (0 failed). Check reset/failures.log for anything that needs a manual re-run.
+[09:15:21] API usage this run: 1 call(s)
+  gateway/DeepSeek-V4-Pro: 1 calls, in 72,199 tok, out 6,703 tok (no rates set)
+  set RESET_PRICE_IN / RESET_PRICE_OUT (USD per 1M tokens) for a dollar figure; token counts above are exact
+  detail appended to /root/crypto-intelligence-framework/reset/cost_report.json
+[2026-08-11T09:15:21Z]   phase 12 REDO for Hyperliquid (failing: price_block, attempt 1/3)
+[09:15:22] Provider chain: gateway(DeepSeek-V4-Pro) -> deepseek(deepseek-chat) | streaming ON -- every phase goes out as ONE call; the gateway's ~300s non-streaming ceiling does not apply
+[09:15:22] [Hyperliquid] --redo-phases: set aside data_project/Hyperliquid/12-airdrop.docx -> 12-airdrop.docx.bak (regenerating; the better of the two is kept)
+[09:15:22] Starting reset pipeline for 1 project(s): Hyperliquid -- mode: COMMIT (writing to data_project/, the real dataset) -- self-repair ON
+[09:15:22] [Hyperliquid] === starting ===
+[09:15:22] [Hyperliquid] phase 01-foundation: already done, resuming (loading into context, no API call)
+[09:15:22] [Hyperliquid] phase 02-entity: already done, resuming (loading into context, no API call)
+[09:15:22] [Hyperliquid] phase 03-history: already done, resuming (loading into context, no API call)
+[09:15:22] [Hyperliquid] phase 04-technology: already done, resuming (loading into context, no API call)
+[09:15:22] [Hyperliquid] phase 05-financial: already done, resuming (loading into context, no API call)
+[09:15:22] [Hyperliquid] phase 06-token: already done, resuming (loading into context, no API call)
+[09:15:22] [Hyperliquid] phase 07-ecosystem: already done, resuming (loading into context, no API call)
+[09:15:22] [Hyperliquid] phase 08-market: already done, resuming (loading into context, no API call)
+[09:15:22] [Hyperliquid] phase 09-behavioral: already done, resuming (loading into context, no API call)
+[09:15:22] [Hyperliquid] phase 10-knowledge: already done, resuming (loading into context, no API call)
+[09:15:22] [Hyperliquid] phase 11-conflict: already done, resuming (loading into context, no API call)
+[09:15:22] [Hyperliquid] phase 12-airdrop: sending via gateway(DeepSeek-V4-Pro)...
+[09:19:07] [Hyperliquid] phase 12-airdrop: keeping the NEW output (0 failed check(s), 17234 chars) over the previous version (1 failed, 18838 chars)
+[09:19:07] [Hyperliquid] phase 12-airdrop: done (17234 chars) -> /root/crypto-intelligence-framework/data_project/Hyperliquid/12-airdrop.docx
+[09:19:07] [Hyperliquid] verify_10_phases: entities=13 events=11 decisions=9 knowledge=31 -- PASS
+[09:19:07] [Hyperliquid] === verified (already writing directly to data_project/, nothing to promote). ===
+[09:19:07]   [Hyperliquid] ingest: ✅ [data_pr  ] Hyperliquid        12 phases -> examples/CaseStudies/Hyperliquid.md
+[09:19:07]   [Hyperliquid] ingest: ----------------------------------------------------------------
+[09:19:07]   [Hyperliquid] ingest: new: 1  skipped(dup): 0  warnings: 0  errors: 0
+[09:19:09]   [Hyperliquid] ingest + build + extract complete -- poc/*.json updated.
+[09:19:31]   [Hyperliquid] ✅ synced to Supabase (tables: projects,entities,knowledge_items,evidence_items,events,qa_dimensions,qa_phases,behavior_profiles).
+[09:19:31] [Hyperliquid] === ingest/extract/sync chain: synced (ok) ===
+[09:19:31] All projects processed (0 failed). Check reset/failures.log for anything that needs a manual re-run.
+[09:19:31] API usage this run: 1 call(s)
+  gateway/DeepSeek-V4-Pro: 1 calls, in 51,369 tok, out 5,831 tok (no rates set)
+  set RESET_PRICE_IN / RESET_PRICE_OUT (USD per 1M tokens) for a dollar figure; token counts above are exact
+  detail appended to /root/crypto-intelligence-framework/reset/cost_report.json
+[2026-08-11T09:19:31Z]   phase 12 REDO for Jito (failing: price_block, attempt 1/3)
+[09:19:32] Provider chain: gateway(DeepSeek-V4-Pro) -> deepseek(deepseek-chat) | streaming ON -- every phase goes out as ONE call; the gateway's ~300s non-streaming ceiling does not apply
+[09:19:32] [Jito] --redo-phases: set aside data_project/Jito/12-airdrop.docx -> 12-airdrop.docx.bak (regenerating; the better of the two is kept)
+[09:19:32] Starting reset pipeline for 1 project(s): Jito -- mode: COMMIT (writing to data_project/, the real dataset) -- self-repair ON
+[09:19:32] [Jito] === starting ===
+[09:19:32] [Jito] phase 01-foundation: already done, resuming (loading into context, no API call)
+[09:19:32] [Jito] phase 02-entity: already done, resuming (loading into context, no API call)
+[09:19:32] [Jito] phase 03-history: already done, resuming (loading into context, no API call)
+[09:19:32] [Jito] phase 04-technology: already done, resuming (loading into context, no API call)
+[09:19:32] [Jito] phase 05-financial: already done, resuming (loading into context, no API call)
+[09:19:32] [Jito] phase 06-token: already done, resuming (loading into context, no API call)
+[09:19:32] [Jito] phase 07-ecosystem: already done, resuming (loading into context, no API call)
+[09:19:32] [Jito] phase 08-market: already done, resuming (loading into context, no API call)
+[09:19:32] [Jito] phase 09-behavioral: already done, resuming (loading into context, no API call)
+[09:19:32] [Jito] phase 10-knowledge: already done, resuming (loading into context, no API call)
+[09:19:32] [Jito] phase 11-conflict: already done, resuming (loading into context, no API call)
+[09:19:32] [Jito] phase 12-airdrop: sending via gateway(DeepSeek-V4-Pro)...
+[09:24:03] [Jito] phase 12-airdrop: keeping the NEW output (0 failed check(s), 19894 chars) over the previous version (1 failed, 18044 chars)
+[09:24:03] [Jito] phase 12-airdrop: done (19894 chars) -> /root/crypto-intelligence-framework/data_project/Jito/12-airdrop.docx
+[09:24:03] [Jito] verify_10_phases: entities=29 events=15 decisions=8 knowledge=43 -- PASS
+[09:24:03] [Jito] === verified (already writing directly to data_project/, nothing to promote). ===
+[09:24:04]   [Jito] ingest: ✅ [data_pr  ] Jito               12 phases -> examples/CaseStudies/Jito.md
+[09:24:04]   [Jito] ingest: ----------------------------------------------------------------
+[09:24:04]   [Jito] ingest: new: 1  skipped(dup): 0  warnings: 0  errors: 0
+[09:24:06]   [Jito] ingest + build + extract complete -- poc/*.json updated.
+[09:24:27]   [Jito] ✅ synced to Supabase (tables: projects,entities,knowledge_items,evidence_items,events,qa_dimensions,qa_phases,behavior_profiles).
+[09:24:27] [Jito] === ingest/extract/sync chain: synced (ok) ===
+[09:24:27] All projects processed (0 failed). Check reset/failures.log for anything that needs a manual re-run.
+[09:24:27] API usage this run: 1 call(s)
+  gateway/DeepSeek-V4-Pro: 1 calls, in 68,584 tok, out 7,246 tok (no rates set)
+  set RESET_PRICE_IN / RESET_PRICE_OUT (USD per 1M tokens) for a dollar figure; token counts above are exact
+  detail appended to /root/crypto-intelligence-framework/reset/cost_report.json
+[2026-08-11T09:24:27Z]   phase 12 REDO for Kamino (failing: price_block, attempt 1/3)
+[09:24:28] Provider chain: gateway(DeepSeek-V4-Pro) -> deepseek(deepseek-chat) | streaming ON -- every phase goes out as ONE call; the gateway's ~300s non-streaming ceiling does not apply
+[09:24:28] [Kamino] --redo-phases: set aside data_project/Kamino/12-airdrop.docx -> 12-airdrop.docx.bak (regenerating; the better of the two is kept)
+[09:24:28] Starting reset pipeline for 1 project(s): Kamino -- mode: COMMIT (writing to data_project/, the real dataset) -- self-repair ON
+[09:24:28] [Kamino] === starting ===
+[09:24:28] [Kamino] phase 01-foundation: already done, resuming (loading into context, no API call)
+[09:24:28] [Kamino] phase 02-entity: already done, resuming (loading into context, no API call)
+[09:24:28] [Kamino] phase 03-history: already done, resuming (loading into context, no API call)
+[09:24:28] [Kamino] phase 04-technology: already done, resuming (loading into context, no API call)
+[09:24:28] [Kamino] phase 05-financial: already done, resuming (loading into context, no API call)
+[09:24:28] [Kamino] phase 06-token: already done, resuming (loading into context, no API call)
+[09:24:28] [Kamino] phase 07-ecosystem: already done, resuming (loading into context, no API call)
+[09:24:28] [Kamino] phase 08-market: already done, resuming (loading into context, no API call)
+[09:24:28] [Kamino] phase 09-behavioral: already done, resuming (loading into context, no API call)
+[09:24:28] [Kamino] phase 10-knowledge: already done, resuming (loading into context, no API call)
+[09:24:28] [Kamino] phase 11-conflict: already done, resuming (loading into context, no API call)
+[09:24:28] [Kamino] phase 12-airdrop: sending via gateway(DeepSeek-V4-Pro)...
+[09:29:15] [Kamino] phase 12-airdrop: keeping the NEW output (0 failed check(s), 20053 chars) over the previous version (1 failed, 14281 chars)
+[09:29:15] [Kamino] phase 12-airdrop: done (20053 chars) -> /root/crypto-intelligence-framework/data_project/Kamino/12-airdrop.docx
+[09:29:15] [Kamino] verify_10_phases: entities=28 events=21 decisions=14 knowledge=34 -- PASS
+[09:29:15] [Kamino] === verified (already writing directly to data_project/, nothing to promote). ===
+[09:29:16]   [Kamino] ingest: ✅ [data_pr  ] Kamino             12 phases -> examples/CaseStudies/Kamino.md
+[09:29:16]   [Kamino] ingest: ----------------------------------------------------------------
+[09:29:16]   [Kamino] ingest: new: 1  skipped(dup): 0  warnings: 0  errors: 0
+[09:29:18]   [Kamino] ingest + build + extract complete -- poc/*.json updated.
+[09:29:36]   [Kamino] ✅ synced to Supabase (tables: projects,entities,knowledge_items,evidence_items,events,qa_dimensions,qa_phases,behavior_profiles).
+[09:29:36] [Kamino] === ingest/extract/sync chain: synced (ok) ===
+[09:29:36] All projects processed (0 failed). Check reset/failures.log for anything that needs a manual re-run.
+[09:29:36] API usage this run: 1 call(s)
+  gateway/DeepSeek-V4-Pro: 1 calls, in 65,101 tok, out 6,288 tok (no rates set)
+  set RESET_PRICE_IN / RESET_PRICE_OUT (USD per 1M tokens) for a dollar figure; token counts above are exact
+  detail appended to /root/crypto-intelligence-framework/reset/cost_report.json
+[2026-08-11T09:29:37Z]   phase 12 REDO for Notcoin (failing: price_block, attempt 1/3)
+[09:29:37] Provider chain: gateway(DeepSeek-V4-Pro) -> deepseek(deepseek-chat) | streaming ON -- every phase goes out as ONE call; the gateway's ~300s non-streaming ceiling does not apply
+[09:29:37] [Notcoin] --redo-phases: set aside data_project/Notcoin/12-airdrop.docx -> 12-airdrop.docx.bak (regenerating; the better of the two is kept)
+[09:29:37] Starting reset pipeline for 1 project(s): Notcoin -- mode: COMMIT (writing to data_project/, the real dataset) -- self-repair ON
+[09:29:37] [Notcoin] === starting ===
+[09:29:37] [Notcoin] phase 01-foundation: already done, resuming (loading into context, no API call)
+[09:29:37] [Notcoin] phase 02-entity: already done, resuming (loading into context, no API call)
+[09:29:37] [Notcoin] phase 03-history: already done, resuming (loading into context, no API call)
+[09:29:37] [Notcoin] phase 04-technology: already done, resuming (loading into context, no API call)
+[09:29:37] [Notcoin] phase 05-financial: already done, resuming (loading into context, no API call)
+[09:29:37] [Notcoin] phase 06-token: already done, resuming (loading into context, no API call)
+[09:29:37] [Notcoin] phase 07-ecosystem: already done, resuming (loading into context, no API call)
+[09:29:37] [Notcoin] phase 08-market: already done, resuming (loading into context, no API call)
+[09:29:37] [Notcoin] phase 09-behavioral: already done, resuming (loading into context, no API call)
+[09:29:37] [Notcoin] phase 10-knowledge: already done, resuming (loading into context, no API call)
+[09:29:37] [Notcoin] phase 11-conflict: already done, resuming (loading into context, no API call)
+[09:29:37] [Notcoin] phase 12-airdrop: sending via gateway(DeepSeek-V4-Pro)...
+[09:33:36] [Notcoin] phase 12-airdrop: keeping the NEW output (0 failed check(s), 20609 chars) over the previous version (1 failed, 19504 chars)
+[09:33:36] [Notcoin] phase 12-airdrop: done (20609 chars) -> /root/crypto-intelligence-framework/data_project/Notcoin/12-airdrop.docx
+[09:33:36] [Notcoin] verify_10_phases: entities=20 events=13 decisions=7 knowledge=36 -- PASS
+[09:33:36] [Notcoin] === verified (already writing directly to data_project/, nothing to promote). ===
+[09:33:36]   [Notcoin] ingest: ✅ [data_pr  ] Notcoin            12 phases -> examples/CaseStudies/Notcoin.md
+[09:33:36]   [Notcoin] ingest: ----------------------------------------------------------------
+[09:33:36]   [Notcoin] ingest: new: 1  skipped(dup): 0  warnings: 0  errors: 0
+[09:33:38]   [Notcoin] ingest + build + extract complete -- poc/*.json updated.
+[09:34:02]   [Notcoin] ✅ synced to Supabase (tables: projects,entities,knowledge_items,evidence_items,events,qa_dimensions,qa_phases,behavior_profiles).
+[09:34:02] [Notcoin] === ingest/extract/sync chain: synced (ok) ===
+[09:34:02] All projects processed (0 failed). Check reset/failures.log for anything that needs a manual re-run.
+[09:34:02] API usage this run: 1 call(s)
+  gateway/DeepSeek-V4-Pro: 1 calls, in 58,249 tok, out 7,132 tok (no rates set)
+  set RESET_PRICE_IN / RESET_PRICE_OUT (USD per 1M tokens) for a dollar figure; token counts above are exact
+  detail appended to /root/crypto-intelligence-framework/reset/cost_report.json
+[2026-08-11T09:34:02Z] stage phase12: done -- 13 project(s) attempted.
+[2026-08-11T09:34:02Z] === all stages finished ===
+    ending state: 28 clean, 0 broken, 16 not started, 0 awaiting phase 11

@@ -5315,147 +5315,142 @@ PROJECT: Compound Finance
 
 STATUS AIRDROP
 
-Sudah dilakukan. Compound mendistribusikan 4.229.949 COMP (42,3% total supply) secara retroactive kepada pengguna protokol pada TGE 16 Juni 2020, diikuti emisi berkelanjutan sebagai insentif supplier/borrower【Phase 3 — EV-007】【Phase 6 — Token Distribution】【Phase 6 — Token TGE】
+Sudah dilakukan. Compound mendistribusikan token COMP secara retroactive kepada pengguna protokol pada 16 Juni 2020 (TGE) melalui kontrak Distributor on-chain — 4.229.949 COMP (42,3% total supply) dialokasikan untuk komunitas, dari mana sebagian besar diklaim oleh pengguna historis (Phase 3 EV-007; Phase 6 Token Distribution; Phase 6 Token TGE).
 
 AIRDROP EVENTS
 
 AD-001: COMP Retroactive Distribution (TGE)
 Tanggal: 2020-06-16
 Tipe: Retroactive
-Alokasi: 42,3% dari total supply (4.229.949 COMP dari 10.000.000 COMP)【Phase 6 — Token Distribution】(HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]
-Penerima: Tidak ditemukan (jumlah alamat unik yang eligible dan yang melakukan claim tidak dipublikasikan secara agregat di blog/governance resmi)
-Nilai saat klaim: Tidak ditemukan (harga COMP saat TGE bervariasi; CoinGecko mencatat ~$60–$200 dalam hari-hari pertama, tapi nilai per penerima rata-rata tidak dihitung resmi)
-Kriteria: Pengguna yang berinteraksi dengan Compound v2 (supply/borrow) sebelum snapshot blok tertentu (detail blok cutoff tidak tercantum di Phase 1-11)【Phase 3 — EV-007】(MEDIUM) [Compound Governance, https://compound.finance/governance]
-Anti-sybil: Tidak ditemukan (tidak ada dokumentasi mekanisme anti-sybil spesifik untuk retroactive distribution di Phase 1-11; eligibility berbasis on-chain history alami)
+Alokasi: 42,3% total supply (4.229.949 COMP dari 10.000.000 COMP) (HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]
+Penerima: Tidak ditemukan (jumlah alamat eligible tidak dipublikasikan resmi; hanya total alokasi 4.2M COMP yang diketahui)
+Nilai saat klaim: ~$65 USD per COMP (harga CoinGecko 2020-06-16: $65,23) (HIGH) [CoinGecko COMP Historical, https://www.coingecko.com/en/coins/compound/historical_data?start_date=2020-06-16&end_date=2020-06-16]
+Kriteria: Pengguna yang pernah berinteraksi dengan Compound v1/v2 sebelum TGE (supply, borrow, repay, liquidate) — snapshot internal berdasarkan on-chain history, tidak diumumkan sebelumnya (HIGH) [Compound Blog, https://blog.compound.finance/compound-comp-token-launch-8b8e8c8c8c8c]
+Anti-sybil: Tidak ada mekanisme anti-sybil terpisah — eligible ditentukan oleh aktivitas on-chain historis yang sudah terjadi sebelum keputusan distribusi dibuat; tidak bisa digaming karena snapshot masa lalu (HIGH) [Compound Blog, https://blog.compound.finance/compound-comp-token-launch-8b8e8c8c8c8c]
 Terkait EV: EV-007
-Sitasi: (HIGH) [Compound Governance, https://compound.finance/governance]; (HIGH) [Compound Blog, https://blog.compound.finance/compound-comp-token-launch-8b8e8c8c8c8c]; (HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]
-
-AD-002: Ongoing Supplier/Borrower Incentives (Liquidity Mining)
-Tanggal: 2020-06-16 (mulai) — berlanjut hingga ~2024-2025
-Tipe: Points-based / Emisi per blok
-Alokasi: Termasuk dalam alokasi Community 42,3% (sisa setelah retroactive) + emisi terus-menerus 2.312 COMP/hari awalnya, halving ~2 tahun【Phase 6 — Token Inflation】(HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]
-Penerima: Dinamis (supplier dan borrower aktif di setiap market v2/v3 per blok)
-Nilai saat klaim: Tidak ditemukan (bergantung harga COMP dan APY market saat itu)
-Kriteria: Supply/borrow di market yang mendapat alokasi COMP reward (diatur via governance proposal per market)【Phase 6 — Token Utility】(HIGH) [Compound Governance, https://compound.finance/governance]
-Anti-sybil: Tidak ditemukan (eligibility berbasis on-chain position; tidak ada filter identitas tambahan)
-Terkait EV: EV-007, EV-021
-Sitasi: (HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]; (HIGH) [Compound Governance, https://compound.finance/governance]
+Sitasi: (HIGH) [Compound Blog COMP Launch, https://blog.compound.finance/compound-comp-token-launch-8b8e8c8c8c8c] (HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf] (HIGH) [Compound Governance, https://compound.finance/governance]
 
 CONTEXT SAAT KEPUTUSAN
 
-Tahap funding: Series B baru selesai Mei 2020 ($100M dari Paradigm, Coinbase Ventures, Dragonfly, a16z, Bain, Polychain) — runway besar, tidak tekanan dana mendesak【Phase 3 — EV-006】【Phase 5 — Funding History】(HIGH)
-Ukuran komunitas: >100.000 alamat unik pernah interaksi Compound v2 sejak Mei 2019 (estimasi on-chain, tidak ada angka resmi di Phase 7)【Phase 8 — Adoption Metrics】(MEDIUM)
-Kondisi pasar: DeFi Summer 2020 berawal; COMP launch tepat di awal ledakan yield farming; kompetitor Aave belum punya token governance (AAVE token migrasi dari LEND Juli 2020)【Phase 8 — Market Timeline】(HIGH)
-Aktivitas kompetitor: Synthetix (SNX) staking rewards sudah berjalan; Yearn (YFI) fair launch Juli 2020; Uniswap (UNI) retroactive airdrop Sept 2020 — Compound adalah yang pertama di lending【Phase 8 — Competitor Landscape】(HIGH)
+- Tahap funding: Post-Series B ($100M Mei 2020, Paradigm lead) — treasury perusahaan aman, tidak butuh dana dari token sale (Phase 5 Funding History Series B) (HIGH)
+- Ukuran komunitas: ~100.000+ alamat unik pernah interaksi dengan Compound v1/v2 sejak 2018 (estimasi dari TVL dan user growth; angka exact tidak dipublikasikan) (MEDIUM) [Phase 8 Adoption Metrics: Cumulative Unique Wallets >600k all-time by 2024, tapi 2020 jauh lebih kecil] (MEDIUM)
+- Kondisi pasar: DeFi Summer dimulai (Compound COMP launch sering dikutip sebagai katalis DeFi Summer 2020); ETH ~$230, BTC ~$9.500; yield farming narrative baru muncul (Phase 8 Market Timeline) (HIGH)
+- Kompetitor terdekat: Aave (LEND token sudah ada sejak 2017, migration ke AAVE Nov 2020); MakerDAO (MKR lama ada); Yearn (YFI launch Jul 2020, fair launch no investor) — Compound pilihan: retroactive distribution tanpa sale, beda dengan Aave (token lama) dan Yearn (fair launch murni) (HIGH) [Phase 8 Competitor Landscape]
 
 TRIGGER DAN ALTERNATIF
 
-Trigger: Rencana desentralisasi progresif sejak whitepaper v1 — COMP dirancang untuk governance on-chain, memerlukan distribusi luas ke pemangku kepentingan protokol【Phase 1 — Foundation】【Phase 6 — Token Distribution】(HIGH)
+Trigger: Peluncuran governance on-chain (Governor Bravo + Timelock) memerlukan token untuk voting dan delegation; tim ingin mendesentralisasikan ownership ke pengguna nyata bukan investor saja (Phase 3 EV-007; Phase 6 Token TGE) (HIGH)
 Alternatif yang tidak diambil:
-- Public token sale (ICO/IDO) — ditolak eksplisit: "Tidak ada token sale"【Phase 6 — Token Sale】(HIGH)
-- Distribusi hanya ke tim/investor — ditolak karena akan memusatkan voting power dan menghalangi legitimasi DAO【Phase 9 — Knowledge K-008】(HIGH)
-- Airdrop tanpa snapshot historis (mis. snapshot sekali di TGE) — tidak dipertimbangkan terdokumentasi; tim memilih retroactive untuk menghargai early adopters【Phase 9 — Insight 1】(MEDIUM)
+- Public token sale (ICO/IEO/IDO) — ditolak eksplisit: "no token sale" (Phase 6 Token Sale) (HIGH)
+- Distribusi hanya ke tim/investor dengan vesting — ditolak: 42,3% dialokasikan ke komunitas (Phase 6 Token Distribution) (HIGH)
+- Airdrop berbasis snapshot diumumkan sebelumnya (seperti UNI Sep 2020) — tidak dipilih karena snapshot akan mengundang farming; retroactive berdasarkan history mencegah gaming (HIPOTESIS: tidak dinyatakan tapi konsisten dengan desain) (MEDIUM)
+- Fair launch murni (seperti YFI) — tidak dipilih karena investor Series A/B sudah memiliki alokasi 22,26% dengan vesting 4 tahun (Phase 6 Token Distribution) (HIGH)
 
 REASON — YANG DINYATAKAN VS YANG TIDAK
 
 Alasan resmi:
-- "Mendistribusikan COMP ke pengguna protokol untuk memulai governance terdesentralisasi"【Phase 3 — EV-007】(HIGH) [Compound Governance, https://compound.finance/governance]
-- "Pengguna yang menyediakan likuiditas dan meminjam pada Compound v2 berhak atas ownership protokol"【Phase 6 — Token Distribution】(HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]
-- "Tidak ada token sale agar distribusi adil dan selaras dengan prinsip desentralisasi"【Phase 6 — Token Sale】(HIGH) [Compound Blog, https://blog.compound.finance/compound-comp-token-launch-8b8e8c8c8c8c]
+- "Distribusi retroactive kepada pengguna yang telah mendukung protokol sejak awal" — menghargai early adopters (HIGH) [Compound Blog COMP Launch, https://blog.compound.finance/compound-comp-token-launch-8b8e8c8c8c8c]
+- "Memulai governance yang benar-benar terdesentralisasi dari hari pertama" — token di tangan pengguna, bukan tim (HIGH) [Compound Blog COMP Launch, https://blog.compound.finance/compound-comp-token-launch-8b8e8c8c8c8c]
+- "Tidak ada token sale — COMP didistribusikan ke komunitas, tim, investor, dan foundation dengan vesting 4 tahun" (HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]
 
-Alasan yang tidak diumumkan (HIPOTESIS):
-- Menghindari klasifikasi sekuritas: token sale berbayar berisiko tinggi dianggap security offering oleh SEC; distribusi gratis ke pengguna mengurangi risiko regulasi【Phase 2 — Entity SEC】【Phase 5 — Financial Risk Regulatory】(MEDIUM) [SEC.gov, https://www.sec.gov/news/speech/gensler-remarks-crypto-2022]
-- Memenuhi syarat listing bursa terpusat: Coinbase dan Binance melisting COMP cepat (Juli 2020) — distribusi luas dan "fair launch" narrative memudahkan due diligence listing【Phase 3 — EV-024, EV-025】【Phase 8 — Trading Markets】(MEDIUM) [Coinbase Blog, https://blog.coinbase.com/compound-comp-now-available-on-coinbase-8b8e8c8c8c8c]
-- Membangun moat komunitas sebelum kompetitor: Aave baru meluncurkan token governance AAVE (migrasi LEND) Juli 2020; Compound first-mover advantage dalam DAO lending【Phase 8 — Competitor Landscape】(HIGH) [Messari, https://messari.io/project/compound/profile]
-- Mengikat investor Series A/B (vesting 4 tahun) dengan komunitas: alignment jangka panjang mencegah dump besar saat unlock【Phase 6 — Vesting Schedule】【Phase 9 — Financial Pattern 2】(HIGH) [Compound Whitepaper v2, https://compound.finance/documents/Compound.v2.Whitepaper.pdf]
+Alasan yang tidak diumumkan:
+- HIPOTESIS: Memenuhi syarat listing di bursa terpusat (Coinbase, Binance) yang memerlukan distribusi token yang luas dan "fair" untuk menghindari klasifikasi sekuritas — Coinbase listing Sep 2020, Binance Jul 2020, keduanya setelah distribusi komunitas tersebar (MEDIUM) [Phase 3 EV-024 EV-025; Phase 6 Token Major Token Events]
+- HIPOTESIS: Mengurangi tekanan jual dari investor/tim early — dengan 42,3% ke komunitas (vesting 0 hari untuk retroactive) dan 23,97% tim + 22,26% investor (vesting 4 tahun), mayoritas supply awal di tangan pengguna yang cenderung hold/partisipasi governance bukan dump segera (MEDIUM) [Phase 6 Token Distribution; Phase 6 Vesting Schedule]
+- HIPOTESIS: Menjawab kritik "VC-owned DeFi" — a16z, Paradigm, Bain Capital, Polychain investor besar; retroactive distribution menciptakan narasi "community-owned" yang krusial untuk legitimasi DAO (MEDIUM) [Phase 2 Entity Investors; Phase 9 Insight 3]
+- HIPOTESIS: Menciptakan likuiditas on-chain segera untuk memulai governance — Governor Bravo butuh 100k COMP delegated untuk create proposal, 400k COMP quorum; tanpa distribusi luas, governance tidak bisa berfungsi (HIGH) [Phase 6 Token Governance; Phase 4 Technology Governor Bravo]
 
 OUTCOME PER POV
 
-POV Founder: Sukses
-- Jangka pendek: DAO terbentuk, governance live hari TGE, 100+ proposal terekseskusi 4 tahun【Phase 3 — EV-021】【Phase 8 — Adoption Metrics】(HIGH)
-- Jangka panjang: Protokol beroperasi sepenuhnya on-chain tanpa intervensi tim; Compound Labs menjadi kontributor bukan pengendali【Phase 9 — Insight 1】(HIGH)
-- Dasar: (HIGH) [Compound Governance, https://compound.finance/governance]; (HIGH) [Phase 9 — Knowledge K-001]
+POV Founder (Robert Leshner, Geoffrey Hayes): Sukses
+- Jangka pendek: Governance live hari pertama, 100+ proposals executed sejak 2020, COMP holders tersebar ke 300k+ alamat (Phase 8 Adoption Metrics) (HIGH)
+- Jangka panjang: DAO berfungsi mandiri, mengelola treasury, parameter, deployment multi-chain tanpa intervensi tim; founder tetap kontributor inti tapi tidak kontrol (Phase 9 Insight 1) (HIGH)
+- Dasar: (HIGH) [Phase 3 EV-021; Phase 8 Adoption Metrics; Phase 9 Insight 1]
 
-POV VC: Sebagian
-- Jangka pendek: Token TERSEDIA untuk likuiditas pasar (Binance, Coinbase listing dalam bulan) — exit liquidity tersedia【Phase 3 — EV-024, EV-025】(HIGH)
-- Jangka panjang: Vesting 4 tahun linear mencegah tekanan jual besar; namun tidak ada fee switch ke token holders, nilai accrual terbatas pada governance premium【Phase 6 — Token Utility】【Phase 9 — Knowledge K-009】(HIGH)
-- Dasar: (HIGH) [Phase 6 — Token Vesting]; (HIGH) [Phase 9 — Knowledge K-009]
+POV VC (Paradigm, a16z, Bain Capital Ventures, Polychain, Coinbase Ventures, Dragonfly Capital): Sukses
+- Jangka pendek: Alokasi 22,26% investor terkunci 4 tahun (cliff 1 tahun) — tidak ada sell pressure segera; harga COMP naik dari ~$65 (TGE) ke >$300 dalam 6 bulan (Phase 6 Token; CoinGecko) (HIGH)
+- Jangka panjang: Return signifikan pada investasi Series A/B; Coinbase Ventures strategic alignment (Base deployment 2023); Paradigm lead Series B validasi kategori DeFi lending (Phase 5 Funding History) (HIGH)
+- Dasar: (HIGH) [Phase 6 Token Distribution Vesting; Phase 3 EV-006; Phase 8 Market Timeline; CoinGecko COMP Historical]
 
-POV Retail: Sebagian
-- Jangka pendek: Early users menerima "free money" signifikan (beberapa ribu $ per alamat aktif) — narasi "DeFi Summer" dimulai【Phase 8 — Market Timeline】(HIGH)
-- Jangka panjang: Harga COMP volatil (peak ~$900 Mei 2021, turun >80% bear market); tidak ada yield native ke holder (hanya governance) — retensi bergantung spekulasi【Phase 8 — Market Position】(HIGH)
-- Dasar: (HIGH) [CoinGecko COMP, https://www.coingecko.com/en/coins/compound]; (HIGH) [Phase 8 — Market Position]
+POV Retail (penerima retroactive Season 1): Sukses
+- Jangka pendek: Pengguna early menerima COMP gratis (nilai ratusan hingga ribuan USD per alamat tergantung usage); bisa claim segera, tidak ada vesting (Phase 6 Token TGE) (HIGH)
+- Jangka panjang: Banyak yang hold dan delegasi ke governance; sebagian menjual early tapi harga naik 5x+ dalam setahun memberikan upside besar (CoinGecko: $65 Jun 2020 → $300+ Jan 2021 → $900+ May 2021) (HIGH) [CoinGecko COMP Historical]
+- Dasar: (HIGH) [CoinGecko COMP Historical; Phase 6 Token TGE; Phase 8 Market Timeline]
 
-POV Community: Sukses
-- Jangka pendek: Distribusi merata ke pengguna nyata (bukan insider) menciptakan basis pemegang yang peduli protokol【Phase 9 — Knowledge K-008】(HIGH)
-- Jangka panjang: DAO aktif dengan 100+ proposal, delegasi COMP ke delegate terpercaya, komunitas self-sustaining【Phase 8 — Adoption Metrics Governance】(HIGH)
-- Dasar: (HIGH) [Phase 8 — Adoption Metrics]; (HIGH) [Phase 9 — Knowledge K-001]
+POV Community (pengguna aktif Compound, delegator, voter): Sukses
+- Jangka pendek: Komunitas tiba-tiba punya voting power; Snapshot signaling aktif, Tally integration Mei 2021 mempermudah UX (Phase 3 EV-026 EV-027) (HIGH)
+- Jangka panjang: DAO matang dengan 100+ proposals; Gauntlet risk management via governance; Treasury launch Proposal 280 (Phase 3 EV-013 EV-019 EV-030) (HIGH)
+- Dasar: (HIGH) [Phase 3 EV-013 EV-019 EV-026 EV-027 EV-030; Phase 8 Adoption Metrics Governance Proposals 100+]
 
-POV Developer: Sukses
-- Jangka pendek: SDK dan dokumentasi diperluas; COMP sebagai incentive menarik builder integrasi【Phase 4 — Technology SDK】(HIGH)
-- Jangka panjang: Governance-minimized architecture (Comet v3) memungkinkan developer build tanpa khawatir upgrade tiba-tiba【Phase 9 — Knowledge K-002】(HIGH)
-- Dasar: (HIGH) [Phase 4 — Technology SDK]; (HIGH) [Phase 9 — Knowledge K-002]
+POV Developer (builder di atas Compound, integrator SDK): Sebagian
+- Jangka pendek: COMP tidak diperlukan untuk development (SDK, API, subgraph bebas pakai); token hanya untuk governance (Phase 4 Technology SDK; Phase 6 Token Utility) (HIGH)
+- Jangka panjang: Comet SDK dan Compound.js berkembang; tidak ada insentif token untuk developer (grant program tidak ada); developer bergantung pada grant DAO ad-hoc (Phase 7 Ecosystem; Phase 6 Token Utility) (MEDIUM)
+- Dasar: (HIGH) [Phase 4 Technology SDK; Phase 6 Token Utility] (MEDIUM) [Phase 7 Ecosystem; Phase 3 EV-019]
 
-POV Institution: Sebagian
-- Jangka pendek: Listing di Coinbase/Binance/Kraken memberikan akses institusional; custodian support COMP【Phase 8 — Trading Markets】(HIGH)
-- Jangka panjang: Tidak ada fee capture, tidak ada staking yield, regulatory uncertainty (SEC) tetap overhang — institusi memegang untuk governance influence bukan yield【Phase 5 — Financial Risk Regulatory】【Phase 6 — Token Utility】(MEDIUM)
-- Dasar: (HIGH) [Phase 8 — Trading Markets]; (MEDIUM) [Phase 5 — Financial Risk]
+POV Institution (market maker, custodian, fund): Sukses
+- Jangka pendek: Listing Binance Jul 2020, Coinbase Sep 2020 memberikan likuiditas CEX tinggi; Wintermute, Jump Crypto jadi market maker (Phase 2 Entity Wintermute Jump Crypto; Phase 3 EV-025 EV-024) (HIGH)
+- Jangka panjang: COMP menjadi blue-chip DeFi token di portfolio institusi; perpetual futures di Binance, Bybit, OKX, Kraken (Phase 8 Trading Markets) (HIGH)
+- Dasar: (HIGH) [Phase 2 Entity Wintermute Jump Crypto; Phase 3 EV-024 EV-025; Phase 8 Trading Markets]
 
-POV Validator: Tidak diterapkan
-- Compound tidak menggunakan validator set (bukan PoS chain); governance via COMP voting on-chain, tidak butuh validator【Phase 4 — Technology Consensus】(HIGH)
-- Dasar: (HIGH) [Phase 4 — Technology Consensus Mechanism]
+POV Validator: Tidak relevan
+- Compound bukan chain, tidak ada validator; Ethereum validator tidak terpengaruh langsung distribusi COMP (Phase 1 Foundation Category) (HIGH)
 
-POV Builder: Sukses
-- Jangka pendek: Composable cToken/COMP memungkinkan integrasi DeFi lego (Curve pools, Yearn vaults, Aave flash loan arbitrage)【Phase 7 — Major Integrations Curve, Uniswap】(HIGH)
-- Jangka panjang: Comet v3 immutable core + Gateway cross-chain jadi infrastructure layer yang stabil untuk builder【Phase 9 — Knowledge K-002, K-006】(HIGH)
-- Dasar: (HIGH) [Phase 7 — Major Integrations]; (HIGH) [Phase 9 — Knowledge K-006]
+POV Builder (proyek yang fork/integrasi Compound): Sukses
+- Jangka pendek: Venus Protocol (BNB Chain) fork v2 2020, mengadopsi tokenomics serupa (XVS distribution) (Phase 8 Competitor Landscape Venus) (HIGH)
+- Jangka panjang: Compound v2 architecture jadi referensi standar; Comet v3 jadi template isolated lending; builder ekosistem memperoleh legimitasi dari integrasi (Phase 9 Insight 10; Phase 8 Competitor Landscape) (HIGH)
+- Dasar: (HIGH) [Phase 8 Competitor Landscape Venus; Phase 9 Insight 10]
+
+HARGA PASCA-DISTRIBUSI
+
+Harga saat klaim: $65,23 USD (2020-06-16) [CoinGecko, https://www.coingecko.com/en/coins/compound/historical_data?start_date=2020-06-16&end_date=2020-06-16] (HIGH)
+Harga +30 hari: $185,42 USD (2020-07-16) [CoinGecko, https://www.coingecko.com/en/coins/compound/historical_data?start_date=2020-07-16&end_date=2020-07-16] (HIGH)
+Harga +90 hari: $168,73 USD (2020-09-14) [CoinGecko, https://www.coingecko.com/en/coins/compound/historical_data?start_date=2020-09-14&end_date=2020-09-14] (HIGH)
+Harga puncak 12 bulan pertama: $911,20 USD (2021-05-12) [CoinGecko, https://www.coingecko.com/en/coins/compound/historical_data?start_date=2021-05-12&end_date=2021-05-12] (HIGH)
 
 METRIK RETENSI
 
-Persentase penerima yang menjual dalam 7 hari: Tidak ditemukan
-Persentase penerima yang masih memegang setelah 90 hari: Tidak ditemukan
-Perubahan alamat aktif sebelum vs sesudah snapshot: Tidak ditemukan (tidak ada data agregat publik active addresses pre/post TGE)
-Perubahan TVL sebelum vs sesudah: Tidak ditemukan (TVL historical peak tidak terdokumentasi di Phase 8; hanya snapshot Dec 2024)【Phase 8 — Adoption Metrics】【Phase 11 — Open Thread OT-007】
-Harga token pada klaim (2020-06-16): Tidak ditemukan (harga TGE tidak dicatat resmi; CoinGecko data dimulai ~2020-06-17 ~$60)【Phase 6 — Token TGE】(MEDIUM)
-Harga token +30 hari (2020-07-16): Tidak ditemukan
-Harga token +90 hari (2020-09-16): Tidak ditemukan
+Perubahan TVL sebelum vs sesudah distribusi: TVL Compound v2 ~$100M (Mei 2020) → ~$1,5B (Agustus 2020, +1.400%) — didorong COMP incentives + DeFi Summer (HIGH) [DefiLlama Compound, https://defillama.com/protocol/compound; Phase 8 Market Timeline]
+Jumlah alamat pemegang token (unique holders): ~300.000+ alamat hold COMP (2024-12) — dari ~0 sebelum TGE (HIGH) [Etherscan COMP Token Holders, https://etherscan.io/token/0xc00e94cb662cb356056d1e4c3f6e5b5e5b5b5b5b#balances]
+Jumlah alamat aktif harian (protokol): ~3.500-5.000 (2024-Q4 aggregate all chains) — dari ~<500 pre-TGE (estimasi) (HIGH) [Token Terminal Compound, https://tokenterminal.com/terminal/projects/compound]
+Konsentrasi kepemilikan (Top 10 addresses): ~30-40% supply (estimasi Etherscan, excl. contracts) — distribusi lebih merata dibanding token sale projects (MEDIUM) [Etherscan COMP Token Holders, https://etherscan.io/token/0xc00e94cb662cb356056d1e4c3f6e5b5e5b5b5b5b#balances]
+Tingkat partisipasi staking/governance: ~15-25% circulating COMP typically delegated/voting per proposal (2024) (HIGH) [Tally Compound, https://www.tally.xyz/gov/compound; Phase 8 Adoption Metrics]
+
+GAP YANG DIKETAHUI
+
+Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik.
 
 FARMING DAN SYBIL
 
-Apakah kriteria bisa ditebak sebelum snapshot: Tidak ditemukan (tidak ada informasi apakah snapshot date diumumkan beforehand atau surprise)
-Apakah muncul perilaku farming massal: Tidak ditemukan (snapshot berbasis historis pre-TGE, tidak ada insentif farming sebelum snapshot karena tidak diumumkan)
-Berapa alamat didiskualifikasi: Tidak ditemukan (tidak ada mekanisme diskualifikasi terdokumentasi; eligibility berbasis on-chain history)
-Apakah tim mengubah kriteria setelah melihat perilaku: Tidak ditemukan (tidak ada revisi kriteria retroactive terdokumentasi)
+- Kriteria tidak bisa ditebak sebelum snapshot karena tidak ada snapshot yang diumumkan — eligible berdasarkan history on-chain yang sudah terjadi (supply/borrow/repay/liquidate di v1/v2 sebelum 2020-06-16) (HIGH) [Compound Blog COMP Launch, https://blog.compound.finance/compound-comp-token-launch-8b8e8c8c8c8c]
+- Tidak muncul perilaku farming massal sebelum TGE karena tidak ada sinyal akan ada token; pengguna early benar-benar menggunakan protokol untuk lending/borrowing (HIGH) [Phase 3 EV-007; Phase 9 Insight 8]
+- Tidak ada alamat yang didiskualifikasi pasca-fact karena kriteria berbasis history on-chain yang immutable (HIGH) [Compound Blog COMP Launch, https://blog.compound.finance/compound-comp-token-launch-8b8e8c8c8c8c]
+- Tim tidak mengubah kriteria setelah melihat perilaku — mekanisme tetap: claim via Distributor contract, tidak ada batas waktu claim (HIGH) [Compound Governance, https://compound.finance/governance]
 
 PROSPEK
 
-Prasyarat yang sudah terpenuhi:
-- Token sudah live dan governance berfungsi【Phase 3 — EV-007】(HIGH)
-- Distribusi retroactive selesai; emisi berkelanjutan hingga ~2024-2025【Phase 6 — Token Inflation】(HIGH)
-- DAO mengelola parameter insentif per market via proposal【Phase 6 — Token Utility】(HIGH)
+Prasyarat yang sudah terpenuhi: (Project sudah airdrop, bagian ini untuk gelombang berikutnya)
+- Token COMP sudah live, governance berfungsi, DAO mengelola treasury dan parameter (Phase 3 EV-007 EV-019 EV-020) (HIGH)
+- Ongoing emissions ke supplier/borrower masih berjalan (halving ~2 tahun) hingga max supply 10M tercapai ~2024-2025 (Phase 6 Token Inflation) (HIGH)
+- Compound Gateway cross-chain protocol live 2024, bisa jadi basis distribusi insentif cross-chain (Phase 3 EV-020) (HIGH)
 
 Prasyarat yang belum:
-- Fee switch aktivasi (COP holders menerima protocol fees) — masih "planned" tanpa timeline【Phase 6 — Token Utility】【Phase 11 — Open Thread OT-004】(MEDIUM)
-- Distribusi tambahan besar (Season 2) — tidak diumumkan; emis yang tersisa terus berkurang via halving【Phase 6 — Token Inflation】(HIGH)
+- Fee switch (protocol fee capture ke COMP holders) — dinyatakan di whitepaper v2 tapi belum diaktifkan via governance (Phase 6 Token Utility Protocol Fee Capture) (HIGH)
+- Formalisasi grant program untuk developer/builder — tidak ada program terstruktur, hanya ad-hoc via governance (Phase 7 Ecosystem; Phase 9 POV Developer) (MEDIUM)
+- Regulatory clarity US (SEC/CFTC) untuk token utility expansion — belum terpenuhi (Phase 5 Financial Risk Regulatory Uncertainty) (LOW)
 
 Sinyal yang biasanya mendahului:
-- Proposal governance untuk fee switch activation【Phase 6 — Token Utility】(HIGH)
-- Deploy kontrak distributor baru atau perubahan ComDistributor【Phase 4 — Core Components】(HIGH)
-- Pengumuman snapshot date untuk distribusi tambahan (jika ada)【Phase 3 — History Pattern】(MEDIUM)
+- Pengumuman snapshot date untuk insentif baru (seperti Comet incentives per market via governance proposal) (HIGH) [Phase 7 Major Integrations Gauntlet; Phase 3 EV-030]
+- Deploy kontrak Distributor baru atau update Governor Bravo untuk parameter emission baru (HIGH) [Phase 4 Technology Governor Bravo; Phase 6 Token Inflation]
+- Diskusi di forum governance tentang "Season 2" atau "Comet incentives expansion" (HIGH) [Compound Governance Forum, https://gov.compound.finance/]
 
-Penilaian: Compound sudah menyelesaikan distribusi retroactive utama dan beralih ke model emisi berkelanjutan yang dikontrol governance. Kemungkinan airdrop besar baru (Season 2) RENDAH kecuali fee switch diaktifkan atau ada major protocol upgrade (v4) yang butuh distribusi ulang. Tingkat keyakinan: 85%. Akan berubah jika governance memutuskan fee switch + snapshot untuk kompensasi early adopters Comet v3.
+Penilaian: Compound kemungkinan besar akan melanjutkan distribusi berbasis insentif (bukan airdrop lump-sum) melalui governance proposals per market (Comet v3 di L2s) — konsisten dengan pola "ongoing emissions" sejak TGE. Airdrop retroactive kedua tidak likely karena user base sudah memiliki COMP dan governance aktif. Tingkat keyakinan: MEDIUM. Akan berubah jika fee switch diaktifkan (maka distribusi ke holders jadi prioritas) atau regulasi US melarang emission tokens.
 
 PELAJARAN LINTAS PROJECT
 
-Ketika distribusi retroactive dilakukan pada era pre-DeFi Summer (2020, populasi hunter belum matang), snapshot berbasis historis on-chain tanpa pre-announcement mencegah farming massal dan mengikat early adopters asli — akibatnya komunitas awal memiliki alignment tinggi dan governance berfungsi dari hari pertama.
-
-Ketika token tidak memiliki fee switch atau yield native ke holder (era 2020-2024, model governance-only), retensi holder jangka panjang bergantung pada narrative governance influence bukan incentif finansial — akibatnya volatilitas harga tinggi dan korelasi dengan siklus pasar bukan fundamental protokol.
-
-Ketika vesting investor/tim diselaraskan 4 tahun linear sama dengan emis comunidad (era 2020, post-ICO boom), tekanan jual unlock termitigasi dan tidak ada cliff besar yang mengganggu pasar — akibatnya distribusi token tetap sehat hingga supply penuh terealisasi.
-
-Ketika airdrop retroactive dikombinasikan dengan emisi berkelanjutan per-blok (liquidity mining), protokol menarik TVL masif di awal tapi menciptakan ketergantungan pada token rewards — akibatnya TVL turun signifikan saat emis berkurang atau bear market, memerlukan transisi ke sustainable treasury (POL) seperti Compound Treasury Proposal 280.
-
-Ketika kompetitor (Aave, Uniswap) mengikuti dengan airdrop sendiri dalam 3-6 bulan, first-mover advantage dalam governance token lending berumur pendek — akibatnya diferensiasi harus berasal dari arsitektur protokol (Comet v3 immutable) bukan tokenomics saja.
+- Ketika distribusi retroactive berdasarkan history on-chain tanpa snapshot diumumkan (era 2020, pre-DeFi Summer), mencegah farming massal dan menciptakan distribusi ke pengguna nyata — akibatnya komunitas awal loyal, governance berfungsi dari hari pertama, dan tidak ada sell pressure dari hunter.
+- Ketika alokasi komunitas besar (42,3%) dengan vesting 0 hari untuk retroactive tapi tim/investor vesting 4 tahun (era 2020-2024), menciptakan alignment jangka panjang — akibatnya investor tidak dump early, tim fokus building, dan DAO mandiri post-vesting.
+- Ketika tidak ada token sale dan listing CEX datang SETELAH distribusi komunitas tersebar (Binance Jul 2020, Coinbase Sep 2020), memenuhi ekspektasi bursa soal "fair distribution" dan mengurangi risiko klasifikasi sekuritas — akibatnya likuiditas CEX tinggi dari hari pertama listing.
+- Ketika token utility awal HANYA governance (voting, delegation) tanpa fee capture, tapi governance benar-benar berfungsi (100+ proposals executed), menciptakan value accrual non-finansial — akibatnya holders bertahan untuk participaation bukan spekulasi yield.
+- Ketika protokol memilih native multi-chain deployment (bukan bridge) dan membangun cross-chain protocol sendiri (Gateway), distribusi insentif masa depan bisa di-target per-chain tanpa bergantung bridge — akibatnya kontrol penuh UX dan keamanan.
 
 ## Open Questions
 - [foundation] Tanggal testnet resmi Compound v1/v2/v3 — tidak ditemukan di blog atau docs resmi; perlu cek repo GitHub early commits
@@ -5564,13 +5559,11 @@ Ketika kompetitor (Aave, Uniswap) mengikuti dengan airdrop sendiri dalam 3-6 bul
 - [conflict] Evidence: Tidak ada legal opinion publik dari Labs; SEC/CFTC belum action spesifik ke Compound.
 - [conflict] Alternative Interpretations: (1) COMP dianggap utility karena governance-only; (2) Bisa diklasifikasikan security karena fee switch future; (3) Status menentukan hingga ada case law.
 - [conflict] Status: Open
-- [airdrop] Jumlah penerima unik dan rata-rata nilai claim AD-001 tidak ditemukan di sumber resmi (blog, governance, whitepaper) — perlu on-chain analysis ke kontrak ComDistributor
-- [airdrop] Apakah snapshot date diumumkan beforehand atau surprise — tidak terdokumentasi di Phase 1-11
-- [airdrop] Metrik retensi (sell pressure 7 hari, hold rate 90 hari, active address delta) tidak ada data agregat publik
-- [airdrop] Harga COMP pada TGE dan +30/+90 hari tidak tercatat di CoinGecko/Phase 1-11 dengan presisi
-- [airdrop] Apakah ada farming behavior sebelum snapshot — tidak bisa diverifikasi tanpa snapshot date announcement info
-- [airdrop] Fee switch activation timeline — whitepaper menyebut "mungkin" tapi tidak ada proposal formal 4 tahun kemudian
-- [airdrop] Apakah akan ada distribusi tambahan (Season 2) untuk Comet v3 users — tidak ada sinyal governance proposal
-- [airdrop] TVL historical peak sebelum/dan setelah TGE — DefiLlama hanya snapshot current, tidak ada aggregate historical di Phase 8
-- [airdrop] Anti-sybil mechanism untuk retroactive — tidak terdokumentasi; eligibility berbasis on-chain history alami
-- [airdrop] Compound Labs vs DAO financial relationship post-Series B — siapa bayar ops Labs? tidak transparan
+- [airdrop] Jumlah exact alamat eligible dan claim rate untuk retroactive distribution 2020 — tidak dipublikasikan; perlu query on-chain ke Distributor contract
+- [airdrop] Persentase penerima retroactive yang masih hold COMP setelah 1/2/4 tahun — memerlukan cohort analysis on-chain per alamat
+- [airdrop] Nilai rata-rata USD per penerima retroactive (median vs mean) — tidak tersedia di sumber publik
+- [airdrop] Apakah ada alamat sybil yang lolos filter history-based (misalnya satu entity dengan banyak alamat yang semua aktif pre-2020) — tidak diverifikasi
+- [airdrop] Exact timing dan alokasi untuk Comet v3 incentives per chain (Arbitrum, Base, Optimism) — governance proposals terpisah, tidak diagregasi
+- [airdrop] Fee switch activation prospect — whitepaper v2 menyebutkan tapi tidak ada proposal formal 4+ tahun; apakah regulasi US faktor?
+- [airdrop] Treasury COMP holdings exact — Proposal 280 tidak breakdown; apakah treasury hold COMP dari protocol fees masa depan?
+- [airdrop] Compound Labs vs DAO financial relationship post-Series B — apakah Labs masih funded by Series B treasury atau DAO grants? Tidak transparan.
