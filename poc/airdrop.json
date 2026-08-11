@@ -1222,5 +1222,1137 @@
       "Ketika migrasi token (MKR→SKY) terjadi 1:1 dari existing holders, airdrop ke address baru menciptakan dual-class holders (migrasi vs airdrop) yang mempersulit governance alignment — berlaku untuk token migration events (era 2023+).",
       "Ketika legal wrapper sudah ada (Cayman Foundation) dan RWA vaults memerlukan KYC/AML, airdrop anon ke address arbitrer menciptakan compliance conflict dengan tradfi counterparties (BlockTower, Coinbase Prime) — berlaku untuk hybrid DeFi-TradFi protocols (era 2022+)."
     ]
+  },
+  "Aave": {
+    "projectSlug": "aave",
+    "status": "Belum ada",
+    "events": [],
+    "povOutcomes": {
+      "founder": {
+        "verdict": "Sukses",
+        "qualifier": "Stani Kulechov",
+        "shortTerm": "Migrasi LEND→AAVE lancar; 81.25% supply terkunci di tangan early believers; Safety Module aktif dengan staking signifikan【Phase 3 EV-009】【Phase 6 Distribution】",
+        "longTerm": "Tokenomics fixed supply 16M AAVE terjaga; tidak ada tekanan jual dari airdrop claimers; governance control tetap pada komunitas yang aligned【Phase 6 Supply】【Phase 9 Core Insights Insight 2】",
+        "basis": "Phase 3 EV-009, Phase 6 Distribution, Phase 9 Core Insights Insight 2 (HIGH)"
+      },
+      "vc": {
+        "verdict": "Sukses",
+        "qualifier": "Blockchain Capital, Framework Ventures, ParaFi, Standard Crypto, Blockchain.com Ventures",
+        "shortTerm": "Investasi Series B $25M (Oct 2020) tidak dilusi oleh airdrop besar; token price discovery tanpa overhang claimers【Phase 5 Round 3】",
+        "longTerm": "Early investors (Framework, 3AC, ParaFi dari private sale $3M+$4.5M Jul 2020) memegang AAVE via migrasi LEND atau pembelian secondary; tidak ada unlock cliff airdrop yang menimbulkan sell pressure tiba-tiba【Phase 5 Rounds 1-2】【Phase 6 Vesting Schedule】",
+        "basis": "Phase 5 Funding History Rounds 1-3, Phase 6 Vesting Schedule (HIGH)"
+      },
+      "retail": {
+        "verdict": "Sukses",
+        "qualifier": "pembeli LEND ICO & early AAVE buyers",
+        "shortTerm": "Tidak ada dumper airdrop yang menekan harga; migrasi 100:1 transparan; early buyers LEND mendapat AAVE tanpa konkurensi claimers baru【Phase 3 EV-009】【Phase 6 Distribution】",
+        "longTerm": "Supply fixed 16M sejak TGE; tidak ada inflasi dari airdrop; price appreciation didorong protocol growth bukan distribusi gratis【Phase 6 Supply】【Phase 8 Adoption Metrics】",
+        "basis": "Phase 3 EV-009, Phase 6 Distribution Supply, Phase 8 Adoption Metrics (HIGH)"
+      },
+      "community": {
+        "verdict": "Sebagian",
+        "qualifier": "pengguna protokol Aave V1/V2 pre-TGE",
+        "shortTerm": "Pengguna aktif V1 (launch Jan 2020) tidak mendapat reward retroactive; hanya pemegang LEND yang benefit【Phase 3 EV-005】【Phase 3 EV-009】",
+        "longTerm": "Komunitas tumbuh via Safety Module staking, GHO facilitator rewards, dan grants dari Ecosystem Reserve — insentif berkelanjutan bukan one-time drop【Phase 3 EV-008】【Phase 3 EV-024】【Phase 6 Distribution】",
+        "basis": "Phase 3 EV-005 EV-008 EV-024, Phase 6 Distribution (MEDIUM)"
+      },
+      "developer": {
+        "verdict": "Sebagian",
+        "qualifier": "builder di atas Aave",
+        "shortTerm": "Tidak ada insentif token langsung untuk developer early; fokus pada tooling (SDK, Address Book) dan grants kemudian【Phase 7 Developer Ecosystem】",
+        "longTerm": "Developer ecosystem tumbuh via Aave Grants DAO, BGD Labs Address Book, Aave Kit (planned) — sustainable funding bukan airdrop【Phase 2 Entity 42 Entity 82】【Phase 7 Developer Ecosystem】",
+        "basis": "Phase 2 Entity 42 Entity 82, Phase 7 Developer Ecosystem (MEDIUM)"
+      },
+      "institution": {
+        "verdict": "Tidak relevan",
+        "qualifier": "institusi yang menggunakan Aave Arc/Horizon",
+        "shortTerm": "Institutional products (Arc Nov 2021, Horizon 2025) muncul setelah TGE; tidak terpengaruh keputusan airdrop 2020【Phase 3 EV-017】【Phase 2 Entity 19】",
+        "longTerm": "Institutional adoption didorong permissioned access (KYC/AML), RWA lending, white-label — bukan token incentives【Phase 2 Entity 20 Entity 63】【Phase 7 Major Integrations】",
+        "basis": "Phase 3 EV-017, Phase 2 Entity 19 Entity 20 Entity 63, Phase 7 Major Integrations (HIGH)"
+      },
+      "validator": {
+        "verdict": "Tidak relevan",
+        "qualifier": "tidak ada validator pada Aave — protokol lending bukan chain",
+        "shortTerm": "Aave bukan blockchain Layer 1; tidak ada validator set; Safety Module stakers berperan sebagai insurance backstop bukan validator【Phase 6 Utility Staking】",
+        "longTerm": "Security model bergantung pada auditors, formal verification, bug bounty — bukan validator economics【Phase 4 Security Model】【Phase 7 Infrastructure Providers】",
+        "basis": "Phase 6 Utility, Phase 4 Security Model, Phase 7 Infrastructure Providers (HIGH)"
+      },
+      "builder": {
+        "verdict": "Sebagian",
+        "qualifier": "proyek yang compose/integrate Aave",
+        "shortTerm": "Builder early (seperti Instadapp, DeFi Saver, Yearn) tidak mendapat airdrop AAVE; mengandalkan composability V1/V2 tanpa token incentive【Phase 3 EV-005】【Phase 3 EV-011】",
+        "longTerm": "Builder benefit dari V3 modular architecture, V4 hub-and-spoke, stablecoin GHO, dan grants — sustainable integration value bukan token drop【Phase 4 Architecture V3 V4】【Phase 2 Entity 18】【Phase 7 Developer Ecosystem】",
+        "basis": "Phase 3 EV-005 EV-011, Phase 4 Architecture V3 V4, Phase 2 Entity 18, Phase 7 Developer Ecosystem (MEDIUM)"
+      }
+    },
+    "retention": [],
+    "prospect": {
+      "met": "- Token AAVE live dengan supply fixed 16M sejak Oktober 2020【Phase 6 Supply】",
+      "unmet": "- Tidak ada sinyal dari DAO atau Aave Labs tentang rencana airdrop/points program",
+      "signals": "- Perubahan dokumentasi tokenomics di aave.com/docs/ecosystem/aave",
+      "assessment": "Kemungkinan airdrop AAVE di masa depan RENDAH (keyakinan MEDIUM). Tokenomics sudah matang dengan supply fixed, utility multi-fungsi, dan revenue diversification. DAO lebih memilih insentif berkelanjutan (Safety Module, GHO facilitator, Orbit Program delegates, grants) daripada one-time drop. Airdrop hanya mungkin jika: (1) major protocol upgrade (V5) butuh bootstrap adoption baru, (2) competitive pressure dari protocol baru dengan points program agresif, atau (3) regulatory clarity memungkinkan airdrop tanpa risiko sekuritas. Faktor yang akan mengubah penilaian: proposal on-chain resmi, blog post Aave Labs tentang \"points program\", atau deployment kontrak merkle distributor."
+    },
+    "lessons": [
+      "Ketika tokenomics sudah final (fixed supply, utility lengkap) SEBELUM tren airdrop retroactive meledak (era 2020, pre-UNI), project bisa menghindari tekanan jual airdrop dan mempertahankan alignment early backers — akibatnya price discovery lebih bersih tanpa overhang claimers.",
+      "Ketika protokol memilih staking-as-insurance (Safety Module) daripada airdrop ke pengguna, token terkunci sebagai collateral protokol bukan dijual segera — akibatnya supply circulating terkendali dan security budget internal terbentuk sejak awal.",
+      "Ketika DAO mengelola Ecosystem Reserve untuk grants berkelanjutan (bukan one-time drop), komunitas builder tumbuh sustainable tanpa spike aktivitas palsu — akibatnya developer retention 120+ monthly active contributors setelah 6+ tahun.",
+      "Ketika institutional product suite (Arc, Horizon) dibangun tanpa token incentives retail, adoption didorong compliance dan product-market fit bukan farming — akibatnya white-label Kraken V3 disetujui komunitas tanpa insentif token tambahan.",
+      "Ketika founder personal commitment (Stani 5k ETH pasca-exploit) visible on-chain, trust protokul dipulihkan tanpa butuh airdrop untuk \"buy back community\" — akibatnya TVL recovery ke $22.4B dalam 2 bulan tanpa distribusi gratis."
+    ]
+  },
+  "Aptos": {
+    "projectSlug": "aptos",
+    "status": "Sudah dilakukan",
+    "events": [
+      {
+        "id": "AD-001",
+        "title": "Aptos Incentivized Testnet Airdrop (AIT-1, AIT-2, AIT-3) — TGE Mainnet",
+        "date": "2022-10-17",
+        "type": "Retroactive",
+        "allocation": "Tidak ditemukan — whitepaper hanya menyebut 51.02% total supply (510,210,000 APT) untuk Community/Foundation/Ecosystem termasuk airdrop testnet, tanpa breakdown persentase airdrop murni【Phase 6 — Distribution】【Phase 1 — Token Distribution】",
+        "recipients": "Tidak ditemukan — Phase 3 EV-004 menyebut \"ribuan node validator dan ribuan developer\" pada AIT-1; Phase 8 menyebut >15M alamat unik kumulatif per Des 2024 tapi bukan angka penerima airdrop【Phase 3 — EV-004】【Phase 8 — Adoption Metrics】",
+        "valueAtClaim": "Tidak ditemukan — harga APT pada listing 18 Okt 2022 bervariasi $6–$10 di Binance/Coinbase; estimasi USD per penerima tidak terpublikasikan【Phase 3 — EV-008】【Phase 8 — Trading Markets】",
+        "criteria": "Partisipasi Incentivized Testnet Wave 1 (AIT-1, 24 Mar–Mei 2022), Wave 2, Wave 3 — menjalankan validator/node, menyelesaikan tugas on-chain, staking testnet, dan kontribusi komunitas; snapshot diambil sebelum mainnet【Phase 3 — EV-004】【Phase 9 — Keputusan: Launch AIT-1】",
+        "antiSybil": "Tidak ditemukan — tidak ada laporan publik tentang mekanisme penyaringan sybil, jumlah alamat diskualifikasi, atau criteria adjustment pasca-snapshot【Phase 3 — EV-004】【Phase 9 — Farming dan Sybil (implicit)】",
+        "relatedEvent": "EV-004 (AIT-1 Launch), EV-007 (Mainnet Genesis & TGE), EV-008 (Exchange Listings)【Phase 3 — Historical Events】",
+        "citation": "Phase 3 EV-004 (HIGH) [Aptos Blog AIT-1]; Phase 3 EV-007 (HIGH) [Aptos Blog Mainnet]; Phase 6 Distribution (HIGH) [Aptos Whitepaper]; Phase 9 Keputusan AIT-1 (HIGH) [Phase 9 Behavioral]"
+      }
+    ],
+    "povOutcomes": {
+      "founder": {
+        "verdict": "Sukses",
+        "qualifier": "Mo Shaikh, Avery Ching",
+        "shortTerm": "Mainnet launch lancar 17 Okt 2022; 100+ validator aktif dari AIT participants; exchange listing 9+ CEX hari berikutnya; narrative \"largest Series A L1\" tervalidasi【Phase 3 — EV-007, EV-008】(HIGH) [Aptos Blog Mainnet, Binance Listing]",
+        "longTerm": "Aptos Labs tetap kontrol core dev (Petra Wallet, protocol upgrades); Foundation terpisah mengelola treasury; dual-entity structure berfungsi【Phase 9 — Evolution Pattern Fase 1】(HIGH) [Phase 9 Behavioral]",
+        "basis": "Phase 3 EV-007, EV-008; Phase 9 Evolution Pattern Fase 1 (HIGH)"
+      },
+      "vc": {
+        "verdict": "Sukses",
+        "qualifier": "a16z, Multicoin, Binance Labs, Coinbase Ventures, Tiger Global, Apollo",
+        "shortTerm": "Token liquid di pasar sekundER sehari post-mainnet; price discovery tertata; SAFT allocation 13.48% supply terkunci 1 tahun (cliff Okt 2023) melindungi downside【Phase 6 — Vesting Schedule Investors】(HIGH) [Whitepaper, Phase 5 Funding History]",
+        "longTerm": "Vesting linear 4 tahun (Okt 2023–2026) memberikan exit liquidity bertahap; portfolio mark-up signifikan dari $2B→$4B valuation Series A→B【Phase 5 — Funding History】(HIGH) [Crunchbase, TechCrunch]",
+        "basis": "Phase 5 Funding History; Phase 6 Vesting Schedule (HIGH)"
+      },
+      "retail": {
+        "verdict": "Sebagian",
+        "qualifier": "penerima AIT airdrop",
+        "shortTerm": "Klaim APT gratis pada harga $6–$10; bisa langsung jual di Binance/Coinbase; early sellers menangkap $8–$12 peak awal Nov 2022【Phase 8 — Trading Markets】(MEDIUM) [CoinGecko APT price history]",
+        "longTerm": "Harga turun ke $3–$4 sepanjang 2023 (bear market); hanya holders yang staking/delegate ke validator atau LP di Liquidswap/Thala yang recover via yield【Phase 8 — Market Timeline】(MEDIUM) [DefiLlama TVL, Token Terminal]",
+        "basis": "Phase 8 Trading Markets; Phase 8 Market Timeline (MEDIUM)"
+      },
+      "community": {
+        "verdict": "Sebagian",
+        "qualifier": "AIT participants, grant recipients, ambassador",
+        "shortTerm": "Merasa dihargai atas kontribusi testnet; airdrop menjadi \"proof of work\" bukan handout; komunitas Discord/Telegram aktif【Phase 2 — Entity: Discord, Telegram】(HIGH) [Aptos Community Links]",
+        "longTerm": "Grant DAO (2024) memberi akses dana lanjutan; tapi treasury opacity dan circulating supply methodology conflict menciptakan trust gap【Phase 7 — Governance Ecosystem】【Phase 8 — Open Threads】(MEDIUM) [Foundation Grants, Phase 8 Open Threads]",
+        "basis": "Phase 2 Entity Community; Phase 7 Governance Ecosystem; Phase 8 Open Threads (MEDIUM)"
+      },
+      "developer": {
+        "verdict": "Sukses",
+        "qualifier": "Move devs, dApp builders",
+        "shortTerm": "SDKs, CLI, Move Analyzer, Local Testnet siap saat mainnet; AIT participants sudah familiar tooling【Phase 4 — Development Framework】【Phase 7 — Developer Ecosystem】(HIGH) [Aptos Dev Docs, GitHub]",
+        "longTerm": "Electric Capital rank #8–10 monthly active developers 2024; >500 proyek ekosistem; Move 2024 Edition (v1.8) meningkatkan DX【Phase 8 — Adoption Metrics】【Phase 3 — EV-029】(HIGH) [Electric Capital Report, GitHub Releases]",
+        "basis": "Phase 4 Development Framework; Phase 8 Adoption Metrics (HIGH)"
+      },
+      "institution": {
+        "verdict": "Sukses",
+        "qualifier": "Google Cloud, AWS, NodeReal, Nodit, Fireblocks, Copper",
+        "shortTerm": "Validator infrastructure partnerships Des 2022 (EV-014); enterprise RPC/indexer Jun 2024 (EV-028) — timing aligned dengan network maturity post-airdrop【Phase 3 — EV-014, EV-028】(HIGH) [Google Cloud Web3, NodeReal Blog]",
+        "longTerm": "108 active validators Des 2024; production-grade RPC terpusat di 2 provider; institutional custody integrations live【Phase 8 — Adoption Metrics】【Phase 7 — Infrastructure Providers】(HIGH) [Explorer Validators, Phase 7 Infra]",
+        "basis": "Phase 3 EV-014, EV-028; Phase 8 Adoption Metrics (HIGH)"
+      },
+      "validator": {
+        "verdict": "Sukses",
+        "qualifier": "AIT-1 participants yang jadi genesis validators",
+        "shortTerm": "Mendapat delegasi stake awal dari airdrop recipients & Foundation; reward staking 7% APY inflationary dari epoch 1【Phase 6 — Inflation/Deflation】【Phase 4 — Consensus Mechanism】(HIGH) [Tokenomics, Consensus Docs]",
+        "longTerm": "Validator set stabil 100+; tidak ada slashing; hardware requirements tinggi (32C/64GB/2TB) menciptakan barrier tapi cloud partnerships (GCP/AWS) membantu【Phase 7 — Ecosystem Risks】【Phase 4 — Known Technical Limitations】(HIGH) [Explorer Validators, Hardware Requirements]",
+        "basis": "Phase 6 Inflation/Deflation; Phase 7 Ecosystem Risks (HIGH)"
+      },
+      "builder": {
+        "verdict": "Sukses",
+        "qualifier": "DeFi/NFT/Infra founders di ekosistem",
+        "shortTerm": "Liquidswap (Nov 2022), Thala (Jan 2023), Amnis (Feb 2023) launch cepat dengan liquidity dari airdrop recipients yang staking/LP【Phase 3 — EV-012, EV-015, EV-016】(HIGH) [DefiLlama Launch Dates]",
+        "longTerm": "TVL peak $1B+ Mar 2024; >15 major DeFi protocols; Grants DAO mendanai infrastructure/builders 2024【Phase 8 — Adoption Metrics】【Phase 3 — EV-026】(HIGH) [DefiLlama, Foundation Grants]",
+        "basis": "Phase 3 EV-012, EV-015, EV-016; Phase 8 Adoption Metrics (HIGH)"
+      }
+    },
+    "retention": [],
+    "prospect": {
+      "met": "(1) Mainnet live dengan token transferable【Phase 3 — EV-007】; (2) Community allocation 51.02% supply termintakan di genesis【Phase 6 — Distribution】; (3) Grants DAO aktif untuk distribusi berkelanjutan【Phase 3 — EV-026】; (4) Validator set 100+ aktif【Phase 8 — Adoption Metrics】",
+      "unmet": "(1) Airdrop tambahan (Season 2) tidak diumumkan resmi; (2) Tidak ada snapshot baru untuk community distribution pasca-TGE; (3) Vesting investor/team masih berlangsung hingga Okt 2026 menciptakan sell pressure【Phase 6 — Vesting Schedule】【Phase 8 — Market Timeline】",
+      "signals": "(1) Pengumuman \"Community Round 2\" atau \"Retroactive Rewards\" di Governance Forum/Governance Proposal; (2) Deploy kontrak distribusi baru (MerkleDistributor atau claiming contract) di mainnet; (3) Snapshot announcement dengan block height spesifik; (4) Marketing push \"Check eligibility\" ke wallet/dApp partners",
+      "assessment": "Kemungkinan airdrop tambahan (Season 2) rendah di tahun 2025 karena: (a) Community allocation 51.02% sudah sebagian besar termintakan (airdrop TGE + grant DAO ongoing); (b) Vesting investor/team belum selesai (sell pressure masih ada); (c) Foundation fokus ke Grants DAO bukan airdrop massal; (d) Regulatory environment US (SEC) membuat airdrop berisiko untuk token dengan staking yield. Keyakinan: MEDIUM. Akan berubah jika: Foundation mengumumkan \"Community Incentive Program\" baru dengan alokasi token frais dari treasury, atau competitor (Sui, Movement) meluncurkan airdrop besar yang memaksa respons."
+    },
+    "lessons": []
+  },
+  "Axie Infinity": {
+    "projectSlug": "axie-infinity",
+    "status": "Sudah dilakukan",
+    "events": [
+      {
+        "id": "AD-001",
+        "title": "RON Community Rewards Claim (TGE Januari 2023)",
+        "date": "2023-01",
+        "type": "Retroactive / Snapshot (claim oleh pengguna aktif Ronin Wallet)",
+        "allocation": "25% dari total supply 1B RON = 250.000.000 RON untuk Community Rewards【Phase 6 Distribution RON】(HIGH)",
+        "recipients": "Tidak ditemukan (jumlah alamat yang eligible dan yang benar-benar claim tidak dipublikasikan di sumber Phase 1-11)",
+        "valueAtClaim": "Tidak ditemukan (harga RON saat TGE dan estimasi USD per penerima tidak tersedia di Phase 1-11)",
+        "criteria": "\"Pengguna aktif Ronin\" — definisi spesifik (jumlah transaksi, volume, periode aktivitas, holding NFT Axie/Land, atau kombinasi) tidak diungkap di Phase 1-11【Phase 3 EV-023】(MEDIUM)",
+        "antiSybil": "Tidak ditemukan (mekanisme penyaringan sybil tidak terdokumentasi di Phase 1-11)",
+        "relatedEvent": "EV-023 (Peluncuran Token RON — TGE dan Distribusi)【Phase 3 EV-023】(HIGH)",
+        "citation": "【Phase 3 EV-023】(HIGH) [Blog Ronin Token Launch, https://blog.roninchain.com/ron-token-launch]; 【Phase 6 Distribution RON】(HIGH) [Ronin Docs RON Tokenomics, https://docs.roninchain.com/ronin/token/ron]; 【Phase 3 EV-004】(HIGH) [Whitepaper v1.1, https://whitepaper.axieinfinity.com/]; 【Phase 3 EV-005】(HIGH) [Binance Launchpad, https://www.binance.com/en/blog/421448824684900352]"
+      }
+    ],
+    "povOutcomes": {
+      "founder": {
+        "verdict": "Sebagian",
+        "qualifier": "Sky Mavis — Trung Nguyen, Aleksander Larsen, Tu Doan, Andy Ho",
+        "shortTerm": "RON tersebar ke ribuan wallet aktif; staking participation tinggi (~60-80% circulating supply staked per 2024)【Phase 8 Adoption Metrics】(HIGH); gas fee burn mulai efektif【Phase 6 Inflation/Deflation RON】(HIGH); DPoS validator set live dengan 22 validator aktif【Phase 4 Consensus Mechanism】(HIGH)",
+        "longTerm": "Validator set tetap didominasi early backers (Binance, Google Cloud, Animoca, Hashed, Delphi, Mechanism, DeFiance) — desentralisasi terbatas【Phase 7 Major Integrations Validators】(HIGH); RON price volatil, tidak ada hard cap supply reduction selain gas burn【Phase 6 Inflation/Deflation RON】(HIGH); Community rewards 250M RON sudah mostly claimed/vested, supply overhang dari Sky Mavis 30% (300M) vesting hingga Jan 2027【Phase 6 Vesting Schedule RON】(HIGH)",
+        "basis": "【Phase 3 EV-022】【Phase 3 EV-023】【Phase 4 Consensus Mechanism】【Phase 6 Distribution RON】【Phase 6 Vesting Schedule RON】【Phase 7 Major Integrations Validators】(HIGH)"
+      },
+      "vc": {
+        "verdict": "Sukses",
+        "qualifier": "a16z Crypto, Accel, Paradigm, Animoca Brands, Galaxy Digital, Binance Labs, Hashed, Delphi Digital, Mechanism Capital, DeFiance Capital",
+        "shortTerm": "Token native chain (RON) live dengan utility jelas; validator mereka (Binance, Animoca, Hashed, Delphi, Mechanism, DeFiance) mendapat stake & reward dari awal【Phase 7 Major Integrations Validators】(HIGH); tidak ada dilution dari public sale",
+        "longTerm": "Validator reward 20% supply (200M RON) mengalir ke validator mereka selama bertahun-tahun【Phase 6 Distribution RON】(HIGH); tapi token price belum recover ke level yang memberikan ROI signifikan vs Series B valuasi $3B【Phase 8 Market Share RON Rank 100-200】(MEDIUM)",
+        "basis": "【Phase 3 EV-011】【Phase 5 Funding History】【Phase 6 Distribution RON】【Phase 7 Major Integrations Validators】【Phase 8 Market Share】(HIGH)"
+      },
+      "retail": {
+        "verdict": "Sebagian",
+        "qualifier": "penerima Community Rewards claim",
+        "shortTerm": "Bisa claim RON gratis via Ronin Wallet; harga RON awal volatil, banyak yang sell segera (estimasi pasar: claimers cenderung sell pressure tinggi) — data exact sell rate tidak ditemukan【Phase 8 Liquidity】(LOW)",
+        "longTerm": "Pemegang yang hold & stake mendapat staking reward ~10-15% APY (variabel)【Phase 4 Consensus Mechanism】(MEDIUM); tapi RON price turun dari TGE level, real return negatif bagi early seller; tidak ada airdrop tambahan untuk holder RON sejak itu【Phase 3 Timeline】(HIGH)",
+        "basis": "【Phase 3 EV-023】【Phase 4 Consensus Mechanism】【Phase 8 Liquidity】【Phase 8 Market Share】(MEDIUM)"
+      },
+      "community": {
+        "verdict": "Sebagian",
+        "qualifier": "Axie Infinity DAO / AXS staker / YGG / Guild",
+        "shortTerm": "Community Treasury (AXS) tidak terpengaruh langsung; RON distribution terpisah dari AXS governance【Phase 2 Entity: Axie Infinity Community Treasury】(HIGH); YGG & guild mendapat RON untuk scholar wallet mereka (jika eligible) tapi tidak ada data volume【Phase 3 EV-026】(LOW)",
+        "longTerm": "DAO governance AXS tetap terpisah dari RON governance (RON on-chain voting belum full live 2024)【Phase 6 Governance RON】(HIGH); Guild harus manage RON untuk gas fee scholar — biaya operasional baru【Phase 6 Utility RON Gas】(HIGH)",
+        "basis": "【Phase 2 Entity】【Phase 3 EV-026】【Phase 6 Governance】【Phase 6 Utility RON】(HIGH)"
+      },
+      "developer": {
+        "verdict": "Sukses",
+        "qualifier": "Sky Mavis core dev / Third-party game dev di Ronin",
+        "shortTerm": "Gas token native (RON) tersedia untuk deploy kontrak & transaksi game; Ronin SDK, Katana, Mavis Market, Wallet semua support RON native【Phase 4 Core Components】(HIGH); Third-party game (Pixels, Kuroro, Zoids, TMA) migrasi ke Ronin 2023-2024 dengan infra siap pakai【Phase 3 EV-025】【Phase 7 Major Integrations】(HIGH)",
+        "longTerm": "Revenue protocol fee (Marketplace 4.25%, DEX 0.3%, Bridge fee) denominated RON/AXS — developer third-party ikut capture fee【Phase 5 Revenue Model】(HIGH); tapi scaling ceiling EVM single-threaded ~100-200 TPS membatasi game high-throughput【Phase 4 Known Limitations】(HIGH)",
+        "basis": "【Phase 3 EV-025】【Phase 4 Core Components】【Phase 5 Revenue Model】【Phase 7 Major Integrations】【Phase 4 Known Limitations】(HIGH)"
+      },
+      "institution": {
+        "verdict": "Sukses",
+        "qualifier": "Binance, Coinbase, Google Cloud, Custodian, Market Maker Wintermute/Cumberland",
+        "shortTerm": "Binance & Google Cloud jadi validator DPoS dengan stake besar, dapat reward block + gas fee【Phase 7 Major Integrations Validators】(HIGH); CEX listing RON dengan liquidity memadai (market maker Wintermute, Cumberland provide liquidity)【Phase 7 Exchange Ecosystem】(HIGH)",
+        "longTerm": "Validator reward 200M RON (20% supply) mengalir ke institution selama bertahun-tahun【Phase 6 Distribution RON】(HIGH); Google Cloud infrastructure revenue dari hosting validator node【Phase 7 Infrastructure Providers】(HIGH); tapi regulatory risk US SEC Wells Notice (Mar 2024) menarget AXS/Katana/Ronin Bridge, tidak spesifik RON — tapi overhang chain-wide【Phase 3 EV-024】(MEDIUM)",
+        "basis": "【Phase 3 EV-024】【Phase 5 Financial Risk】【Phase 6 Distribution RON】【Phase 7 Major Integrations Validators】【Phase 7 Exchange Ecosystem】【Phase 7 Infrastructure Providers】(HIGH)"
+      },
+      "validator": {
+        "verdict": "Sukses",
+        "qualifier": "22 aktif + standby",
+        "shortTerm": "Staking RON live, block reward + gas fee distribuisi per epoch【Phase 4 Consensus Mechanism】(HIGH); Community rewards 250M RON + Validator rewards 200M RON memastikan stake awal tinggi【Phase 6 Distribution RON】(HIGH)",
+        "longTerm": "Top validator terus didominasi early backers (Binance, Google Cloud, Animoca, Hashed, Delphi, Mechanism, DeFiance) — barrier to entry validator baru tinggi (min 250k RON self-stake)【Phase 4 Consensus Mechanism】【Phase 7 Major Integrations Validators】(HIGH); Slashing enforcement status unclear — risiko downtime tidak ter-slash【Phase 4 Known Limitations】(MEDIUM)",
+        "basis": "【Phase 4 Consensus Mechanism】【Phase 6 Distribution RON】【Phase 7 Major Integrations Validators】【Phase 4 Known Limitations】(HIGH)"
+      },
+      "builder": {
+        "verdict": "Sukses",
+        "qualifier": "Third-party game dev, tooling dev, infra provider di Ronin",
+        "shortTerm": "Full-stack infra ready (Chain, Bridge, DEX, Marketplace, Wallet, Naming, SDK) — tinggal build game logic【Phase 4 Core Components】(HIGH); Ronin Ecosystem Fund grant tersedia dari Series B treasury【Phase 5 Financial Dependencies】(HIGH)",
+        "longTerm": "Pixels, Kuroro, Zoids, TMA berhasil migrasi/launch — proof of concept ecosystem【Phase 3 EV-025】【Phase 7 Major Integrations】(HIGH); tapi revenue share dari protocol fee ke builder tidak transparan【Phase 5 Revenue Model】(MEDIUM); Account Abstraction (ERC-4337) belum native — UX onboarding masih bergantung Ronin Wallet first-party【Phase 4 Known Limitations】(HIGH)",
+        "basis": "【Phase 3 EV-025】【Phase 4 Core Components】【Phase 5 Financial Dependencies】【Phase 7 Major Integrations】【Phase 4 Known Limitations】(HIGH)"
+      }
+    },
+    "retention": [],
+    "prospect": {
+      "met": "- Token native (RON) sudah live dengan utility gas, staking, bridge security【Phase 6 Utility RON】(HIGH)",
+      "unmet": "- RON on-chain governance belum full live (masih planned/partial 2024)【Phase 6 Governance RON】(HIGH)",
+      "signals": null,
+      "assessment": "Kemungkinan airdrop/claim tambahan RON atau token baru (misal: governance token Ronin DAO terpisah) rendah di 2024 karena: (1) RON community rewards 25% sudah fully allocated & mostly claimed; (2) Validator rewards 20% masih emitting per epoch — ini adalah \"airdrop berkelanjutan\" ke staker/delegator; (3) Ecosystem Fund 25% digunakan untuk grant builder, bukan airdrop ke user; (4) Regulatory environment US SEC Wells Notice membuat token distribution baru berisiko; (5) Focus tim pada profitability & core product (Origins, Homeland, Ronin infra) bukan user acquisition via airdrop. Keyakinan: MEDIUM. Akan berubah jika: (a) RON governance launch butuh distribusi voting power lebih luas, (b) Competitor (Immutable X, Gala, Beam) launch airdrop besar & Ronin butuh response, (c) Regulatory clarity US SEC case resolved menguntungkan."
+    },
+    "lessons": []
+  },
+  "Bancor": {
+    "projectSlug": "bancor",
+    "status": "Belum ada",
+    "events": [],
+    "povOutcomes": {
+      "founder": {
+        "verdict": "Tidak diketahui",
+        "qualifier": "Eyal Hertzog, Guy Benartzi, Galia Benartzi, Bprotocol Foundation",
+        "shortTerm": "N/A (tidak ada airdrop)",
+        "longTerm": "N/A (tidak ada airdrop)",
+        "basis": "Tidak ada pernyataan founder tentang airdrop; fokus komunikasi pada produk & tokenomics V3【Phase 3 — EV-010】【Phase 1 — Founders】 (LOW)"
+      },
+      "vc": {
+        "verdict": "Tidak relevan",
+        "qualifier": "Tim Draper/Draper Associates, Blockchain Capital, Fenbushi Capital, Kenetic Capital",
+        "shortTerm": "N/A",
+        "longTerm": "N/A",
+        "basis": "Investor ICO 2017 sudah exit/hold via secondary market; tidak ada ronde equity baru; airdrop tidak mempengaruhi equity value【Phase 2 — Investors】【Phase 5 — Fundraising Mechanism】 (HIGH)"
+      },
+      "retail": {
+        "verdict": "Sebagian (positif net)",
+        "qualifier": "pembeli BNT di CEX/DEX, non-LP",
+        "shortTerm": "Tidak ada tekanan jual airdrop claim (tidak ada airdrop = tidak ada sell pressure dari claimer)",
+        "longTerm": "Tokenomics deflationary Vortex menguntungkan holder BNT jangka panjang (supply reduction via burn)",
+        "basis": "Harga BNT tidak mengalami dump airdrop-typical; Vortex burn aktif sejak Oct 2021【Phase 6 — Inflation/Deflation】【Phase 8 — Trading Markets】 (MEDIUM)"
+      },
+      "community": {
+        "verdict": "Sebagian (positif net)",
+        "qualifier": "Discord/Telegram/DAO voters, stBNT holders",
+        "shortTerm": "Tidak ada farming/claim friction; fokus pada staking yield (stBNT APR) dan governance",
+        "longTerm": "DAO governance maturation tanpa noise airdrop hunter; proposals berkualitas (V2→V3 migration, LST whitelist)",
+        "basis": "Snapshot proposals history menunjukkan partisipasi voter konsisten, bukan spike airdrop【Phase 3 — EV-017, EV-018, EV-019】【Phase 7 — Governance Ecosystem】 (MEDIUM)"
+      },
+      "developer": {
+        "verdict": "Tidak relevan",
+        "qualifier": "SDK users, subgraph queryers, integrator",
+        "shortTerm": "N/A",
+        "longTerm": "N/A",
+        "basis": "Developer ecosystem Bancor minimal sampai SDK 2024; airdrop bukan driver integrasi【Phase 3 — EV-020】【Phase 7 — Developer Ecosystem】 (HIGH)"
+      },
+      "institution": {
+        "verdict": "Tidak relevan",
+        "qualifier": "Binance, Coinbase, Market Maker, Fund",
+        "shortTerm": "N/A",
+        "longTerm": "N/A",
+        "basis": "Listing CEX 2018 sudah terjadi; airdrop tidak mempengaruhi market making BNT【Phase 7 — Exchange Ecosystem】【Phase 8 — Trading Markets】 (HIGH)"
+      },
+      "validator": {
+        "verdict": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "N/A",
+        "longTerm": "N/A",
+        "basis": "Bancor bukan chain/validator-based protocol; berjalan di Ethereum & Arbitrum validators【Phase 7 — Governance Ecosystem: Validator Group】【Phase 8 — Adoption Metrics: Validator Count】 (HIGH)"
+      },
+      "builder": {
+        "verdict": "Tidak diketahui",
+        "qualifier": "dApp builder di atas Bancor, SDK integrator",
+        "shortTerm": "N/A",
+        "longTerm": "N/A",
+        "basis": "SDK baru 2024; builder count rendah; tidak ada data apakah airdrop akan menarik builder【Phase 3 — EV-020】【Phase 7 — Developer Ecosystem】 (LOW)"
+      }
+    },
+    "retention": [
+      "Persentase penerima yang menjual dalam 7 hari: Tidak ditemukan (tidak ada airdrop)",
+      "Persentase penerima yang masih memegang setelah 90 hari: Tidak ditemukan (tidak ada airdrop)",
+      "Perubahan alamat aktif sebelum vs sesudah snapshot: Tidak ditemukan (tidak ada snapshot airdrop)",
+      "Perubahan TVL atau volume sebelum vs sesudah: Tidak ditemukan (tidak ada airdrop)",
+      "Harga token pada klaim, +30 hari, +90 hari: Tidak ditemukan (tidak ada klaim)",
+      "BNT holders unique addresses (Ethereum): ~145,000 (Nov 2024)【Phase 8 — Adoption Metrics】",
+      "Daily active addresses (V3 contracts): ~500-1,500 (Nov 2024)【Phase 8 — Adoption Metrics】",
+      "stBNT holders: tidak dipublikasikan terpisah【Phase 6 — Holder Distribution】",
+      "Top 10 holders: ~40-50% supply (termasuk kontrak protokol & CEX)【Phase 6 — Holder Distribution】"
+    ],
+    "prospect": {
+      "met": "- Token live & transferable: BNT ERC-20 live sejak 2017, listed di Binance, Coinbase, Uniswap, dll【Phase 6 — Token Information】【Phase 8 — Trading Markets】",
+      "unmet": "- Alokasi token untuk airdrop: Tidak ada alokasi \"community/airdrop\" di tokenomics (sudah TGE 100% allocated: 50% public, 20% team, 20% foundation, 10% reserve). Perlu DAO proposal mint baru atau realokasi foundation/reserve — kontroversial【Phase 6 — Distribution】【Phase 6 — Inflation/Deflation】",
+      "signals": null,
+      "assessment": "Airdrop Bancor **tidak mungkin dalam 12-18 bulan ke depan** (keyakinan: TINGGI). Alasan utama: (1) Tokenomics V3 deflationary (Vortex burn) kontradiktif dengan airdrop inflasi — memerlukan governance proposal yang akan menimbulkan debat panjang soal value capture vs distribution; (2) Tidak ada alokasi token tersisa untuk airdrop tanpa mint baru/realokasi foundation — foundation 20% opaque, reserve 10% unclear; (3) Tidak ada tekanan kompetitif: moat produk (IL protection) sudah cukup diferensiasi tanpa token incentive; (4) Regulatory risk Swiss (FINMA) mendorong foundation hindari airdrop gratis yang bisa diklasifikasikan securities distribution; (5) DAO governance maturity berarti proposal airdrop butuh quorum & timelock — proses lama & transparent, memungkinkan komunitas menolak jika dilusi. **Yang akan mengubah penilaian**: (a) Bear market mendalam + TVL drop >50% + revenue crash → DAO memaksa airdrop untuk retensi; (b) Competitor langsung (misal: protokol IL protection baru) meluncurkan airdrop agresif; (c) Regulatory clarity Swiss mengizinkan airdrop aman; (d) Foundation memutuskan transparansi treasury + alokasi 5-10% supply untuk community programs. (HIGH confidence on \"unlikely\", MEDIUM on trigger conditions)"
+    },
+    "lessons": [
+      "Ketika protokol sudah memiliki tokenomics deflationary yang berfungsi (fee → burn + real yield to stakers) dan moat produk teknis yang kuat (IL protection), airdrop justru merusak value proposition — Bancor V3 memilih *tidak* airdrop dan mempertahankan deflationary pressure sejak Oct 2021 (era 2021-sekarang, DeFi mature).",
+      "Ketika treasury opaque dan tidak ada alokasi community terdefinisi di tokenomics awal (ICO 2017: 50% public, 20% team, 20% foundation, 10% reserve), airdrop memerlukan *mint baru* atau *realokasi foundation* — keduanya butuh governance proposal kontroversial dan menghadapi tekanan regulasi (era 2017-2024, Swiss foundation).",
+      "Ketika user base sudah termonetisasi via capital-efficient yield (stBNT fee share, IL protection funded by protocol-owned liquidity), airdrop gratis tidak menambah retention — user datang untuk yield & protection, bukan token gratis (era 2020-2024, DeFi yield-native users).",
+      "Ketika protokol memilih progressive decentralization via DAO dengan timelock (2020-sekarang), keputusan airdrop tidak bisa unilateral foundation — butuh proposal, quorum, timelock 48h, execution; proses ini itself menjadi filter yang mencegah airdrop impulsif (era 2020-sekarang, DAO-governed DeFi).",
+      "Ketika kompetitor semua melakukan airdrop (Uniswap 2020, 1inch 2020, dYdX 2021, Optimism 2022, Arbitrum 2023), *tidak* melakukan airdrop bisa menjadi sinyal kepercayaan diri produk — tapi hanya berfungsi jika produk benar-benar unggul (IL protection) dan tokenomics sustainable (Vortex) (era 2020-2024, airdrop-saturated market)."
+    ]
+  },
+  "Blast": {
+    "projectSlug": "blast",
+    "status": "Sudah dilakukan",
+    "events": [
+      {
+        "id": "AD-001",
+        "title": "Blast Points Season 1 (Pre-mainnet Testnet Deposits + Blur Integration)",
+        "date": "2023-11-21 hingga 2024-02-29 (mainnet launch)",
+        "type": "Points-based / Retroactive",
+        "allocation": "25,5% total supply (25,5 miliar BLAST) untuk Community (termasuk Season 1, Season 2, dan future community allocations)【Phase 6 — Distribution】; persentase spesifik Season 1 tidak diungkap terpisah dari total Community allocation",
+        "recipients": ">500.000 alamat unik yang mendeposit ke bridge pre-mainnet【Phase 8 — Adoption Metrics Blast Points Participants】",
+        "valueAtClaim": "Tidak ditemukan (harga TGE bervariasi; BLAST dibuka ~$0,02–$0,03 di CEX; estimasi rata-rata claim per address tidak dipublikasikan)",
+        "criteria": "Deposit ETH/stablecoin ke Blast Bridge selama testnet (early access Nov 2023 – Feb 2024); Blur Season 3 participants mendapat Points tambahan via integrasi Blur【Phase 3 — EV-002, EV-004, EV-005】",
+        "antiSybil": "Tidak ditemukan (tidak ada disclosure mekanisme sybil filtering spesifik untuk Season 1; Blur integration mungkin memanfaatkan Blur's existing trader reputation)",
+        "relatedEvent": "EV-002, EV-004, EV-005",
+        "citation": "【Phase 3 — EV-002, EV-004, EV-005】 (HIGH) 【Phase 6 — Distribution】 (HIGH) 【Phase 8 — Adoption Metrics】 (MEDIUM)"
+      },
+      {
+        "id": "AD-002",
+        "title": "Blast Points Season 2 (Post-mainnet On-chain Activity)",
+        "date": "2024-07 hingga 2024-12 (snapshot Dec 2024)",
+        "type": "Points-based / Task-based / Activity-based",
+        "allocation": "Bagian dari 25,5% Community allocation; persentase Season 2 tidak diungkap terpisah【Phase 6 — Vesting Schedule Community】【Phase 3 — EV-014, EV-019】",
+        "recipients": "Tidak ditemukan (jumlah address yang memenuhi syarat Season 2 tidak dipublikasikan resmi)",
+        "valueAtClaim": "Tidak ditemukan (Season 2 claim belum terjadi per knowledge cutoff; token price Dec 2024 ~$0,015–$0,02)",
+        "criteria": "On-chain activity di Blast Mainnet di luar deposit (trading, lending, providing liquidity, menggunakan dApp ekosistem) — mechanics expanded dari Season 1 yang hanya deposit【Phase 3 — EV-014】【Phase 9 — Evolution Pattern】",
+        "antiSybil": "Tidak ditemukan (tidak ada disclosure filter sybil Season 2; kemungkinan menggunakan on-chain activity scoring)",
+        "relatedEvent": "EV-014, EV-019",
+        "citation": "【Phase 3 — EV-014, EV-019】 (HIGH) 【Phase 6 — Vesting Schedule】 (HIGH) 【Phase 9 — Evolution Pattern】 (HIGH)"
+      },
+      {
+        "id": "AD-003",
+        "title": "Blast Gold Program (Builder/Protocol Incentives — Ongoing)",
+        "date": "2024-03 hingga sekarang (ongoing epochs)",
+        "type": "KPI-based / Builder incentives (bukan user airdrop langsung; token didistribusikan ke protokol untuk didistribusikan ke user mereka)",
+        "allocation": "28% total supply (28 miliar BLAST) untuk Ecosystem【Phase 6 — Distribution】",
+        "recipients": "Protokol anchor (Thruster, Ring Protocol, Wasabi, Kaito, Juice, Particle, Symmio, dll) yang menerima Gold allocation berbasis KPI【Phase 7 — Grant Program】【Phase 7 — Applications】",
+        "valueAtClaim": "Tidak ditemukan (tergantung protokol masing-masing dan harga BLAST saat distribusi)",
+        "criteria": "Protocol-level KPI: TVL, volume, user growth, native yield integration; Gold epochs berjalan berkala【Phase 7 — Grant Program】【Phase 9 — Ecosystem Decision Pattern】",
+        "antiSybil": "Tidak relevan (distribusi ke protokol, bukan individu; protokol bertanggung jawab distribusi ke user)",
+        "relatedEvent": "EV-008, EV-009, EV-010, EV-011",
+        "citation": "【Phase 3 — EV-008, EV-009, EV-010, EV-011】 (HIGH) 【Phase 6 — Distribution】 (HIGH) 【Phase 7 — Grant Program】 (HIGH) 【Phase 9 — Ecosystem Decision Pattern】 (HIGH)"
+      }
+    ],
+    "povOutcomes": {
+      "founder": {
+        "verdict": "Sukses",
+        "qualifier": "Tieshun Roquerre, Robert",
+        "shortTerm": "Mainnet launch dengan $2B+ TVL day-1; 500k+ users onboarded; Blur integration delivered; CEX listings secured; narrative \"native yield L2\" established【Phase 3 — EV-006】【Phase 8 — Adoption Metrics TVL】 (HIGH)",
+        "longTerm": "TVL decline 73% post-Season 1 ($1.48B → $400M) menunjukkan mercenary capital; Gold program sustain protocol-level TVL tapi user retention butuh Season 3; centralized control retained (sequencer, upgrade keys)【Phase 8 — Adoption Metrics TVL】【Phase 9 — Failure Factors TVL Crash】【Phase 9 — Recurring Behavioral Pattern】 (HIGH)",
+        "basis": "Phase 3 EV-006, Phase 8 TVL, Phase 9 Failure Factors, Phase 9 Recurring Behavioral Pattern"
+      },
+      "vc": {
+        "verdict": "Sebagian",
+        "qualifier": "Paradigm, Standard Crypto",
+        "shortTerm": "Token liquid di 4 major CEX; price discovery achieved; significant paper returns pada TGE price vs private round (assumed)【Phase 8 — Trading Markets】【Phase 5 — Funding History】 (HIGH)",
+        "longTerm": "16,5% allocation vesting schedule undisclosed → unlock overhang uncertainty; no buyback/burn mechanism; TVL decline reduces fundamental valuation anchor【Phase 6 — Vesting Schedule Investors】【Phase 6 — Inflation/Deflation】【Phase 8 — Adoption Metrics TVL】 (HIGH)",
+        "basis": "Phase 8 Trading Markets, Phase 5 Funding History, Phase 6 Vesting Schedule, Phase 6 Inflation/Deflation, Phase 8 TVL"
+      },
+      "retail": {
+        "verdict": "Sebagian",
+        "qualifier": "penerima Season 1",
+        "shortTerm": "Season 1 claim 100% unlocked at TGE Jun 2024; immediate sell pressure → price drop dari ~$0,03 ke ~$0,02 dalam minggu pertama【Phase 6 — Vesting Schedule Community】【Phase 8 — Market Timeline TGE】 (HIGH)",
+        "longTerm": "Holder count >300k tapi TVL crash menunjukkan banyak exit; Season 2 mechanics expanded tapi reward value diluted by token price decline; no staking yield clarity【Phase 8 — Adoption Metrics Holders】【Phase 8 — Adoption Metrics TVL】【Phase 6 — Utility Staking】 (MEDIUM)",
+        "basis": "Phase 6 Vesting Schedule, Phase 8 Market Timeline, Phase 8 Adoption Metrics, Phase 6 Utility Staking"
+      },
+      "community": {
+        "verdict": "Sebagian",
+        "qualifier": "active participants, Discord/Telegram",
+        "shortTerm": "High engagement durante Points Season 1/2; Gold program creates builder activity; community sentiment positive during incentives【Phase 2 — Entity Blast Community】【Phase 3 — EV-002, EV-014】 (MEDIUM)",
+        "longTerm": "Governance power minimal (Foundation executes); no treasury transparency; Season 3 uncertainty; centralized control persists【Phase 6 — Governance】【Phase 7 — Governance Ecosystem】【Phase 9 — Governance Decision Pattern】 (HIGH)",
+        "basis": "Phase 2 Blast Community, Phase 3 EV-002 EV-014, Phase 6 Governance, Phase 7 Governance Ecosystem, Phase 9 Governance Decision Pattern"
+      },
+      "developer": {
+        "verdict": "Sukses",
+        "qualifier": "builders on Blast",
+        "shortTerm": "Day-1 DeFi stack (Thruster, Ring, Wasabi); Gold incentives untuk protocols; EVM equivalence + SDK + Foundry/Hardhat support; low friction onboarding【Phase 3 — EV-008, EV-009, EV-010】【Phase 7 — Developer Ecosystem】【Phase 9 — Success Factors EVM Equivalence】 (HIGH)",
+        "longTerm": "Gold emissions sustain protocol revenue; native yield as primitive untuk DeFi composability; tapi closed-source execution client limits customization【Phase 7 — Grant Program】【Phase 4 — Native Yield Distributor】【Phase 4 — Known Technical Limitations blast-geth】 (HIGH)",
+        "basis": "Phase 3 EV-008 EV-009 EV-010, Phase 7 Developer Ecosystem, Phase 9 Success Factors, Phase 7 Grant Program, Phase 4 Native Yield, Phase 4 Known Limitations"
+      },
+      "institution": {
+        "verdict": "Gagal / Tidak relevan",
+        "qualifier": "custodians, market makers, funds",
+        "shortTerm": "Single sequencer, permissioned proposer/challenger, no forced inclusion → custody integration blocked; no Fireblocks/Copper/Coinbase Custody support confirmed【Phase 7 — Ecosystem Risks Single Sequencer】【Phase 8 — Open Threads Institutional Custody】 (HIGH)",
+        "longTerm": "Regulatory opacity (Cayman + US persons), audit reports not public, treasury opaque → institutional allocation unlikely tanpa compliance clarity【Phase 5 — Financial Risk Regulatory Exposure】【Phase 4 — Audit History】【Phase 5 — Treasury】 (HIGH)",
+        "basis": "Phase 7 Ecosystem Risks, Phase 8 Open Threads, Phase 5 Financial Risk, Phase 4 Audit History, Phase 5 Treasury"
+      },
+      "validator": {
+        "verdict": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": null,
+        "longTerm": null,
+        "basis": null
+      },
+      "builder": {
+        "verdict": "Sukses",
+        "qualifier": "protokol DeFi ekosistem: Thruster, Ring, Wasabi, Kaito, dll",
+        "shortTerm": "Gold program memberikan token emissions berbasis KPI; TVL dan volume bootstrap cepat; native yield integration sebagai differentiator produk【Phase 7 — Grant Program】【Phase 7 — Applications】【Phase 3 — EV-008, EV-009, EV-010, EV-011】 (HIGH)",
+        "longTerm": "Dependency pada Gold emissions untuk user retention; token price decline mengurangi incentive value; protocol revenue butuh organic growth beyond Gold【Phase 9 — Financial Decision Pattern Gold Program】【Phase 8 — Adoption Metrics DEX Volume】【Phase 9 — Failure Factors TVL Crash】 (HIGH)",
+        "basis": "Phase 7 Grant Program, Phase 7 Applications, Phase 3 EV-008 EV-009 EV-010 EV-011, Phase 9 Financial Decision Pattern, Phase 8 Adoption Metrics, Phase 9 Failure Factors"
+      }
+    },
+    "retention": [],
+    "prospect": {
+      "met": "- Token live dan transferable (TGE Jun 2024)【Phase 3 — EV-012】",
+      "unmet": "- Season 3 Points mechanics dan timeline belum diumumkan (Season 2 ended Dec 2024)【Phase 3 — EV-019】【Phase 8 — Open Threads Season 3 Mechanics】",
+      "signals": "- Perubahan dokumentasi Points di docs.blast.io (season structure, eligibility criteria)",
+      "assessment": "Blast kemungkinan besar akan meluncurkan Points Season 3 pada H1 2025 mengingat pola seasonal (Season 1 Nov-Feb, Season 2 Jul-Dec) dan kebutuhan retensi user post-TVL crash. Namun, tanpa Season 3 announcement resmi per cutoff, ini tetap spekulasi. Key trigger akan berakhirnya Gold epoch saat ini dan perlunya narasi baru untuk menarik liquidity kembali. Tingkat keyakinan: MEDIUM. Akan berubah ke HIGH jika blog post Q1 2025 mention \"Season 3\" atau \"next phase of Points\"."
+    },
+    "lessons": []
+  },
+  "Ethena": {
+    "projectSlug": "ethena",
+    "status": "Sudah dilakukan",
+    "events": [
+      {
+        "id": "AD-001",
+        "title": "Season 1 Airdrop (Community Allocation 5%)",
+        "date": "2024-04-02 (TGE, tanggal klaim)",
+        "type": "Retroactive",
+        "allocation": "5% total supply = 5.000.000 ENA (dari 30% community allocation total 30M ENA) (HIGH) [Ethena Blog, https://blog.ethena.fi/ena-token-launch]",
+        "recipients": "Tidak ditemukan (jumlah alamat eligible tidak dipublikasikan di blog resmi, Dune dashboard, atau governance forum)",
+        "valueAtClaim": "Tidak ditemukan (harga ENA saat TGE bervariasi per CEX; Binance Launchpool price discovery dimulai hari yang sama, harga opening ~$0.50-$0.60 per CoinGecko tapi tidak ada data nilai per penerima rata-rata) [CoinGecko, https://www.coingecko.com/en/coins/ethena]",
+        "criteria": "Tidak ditemukan (blog tokenomics hanya menyebut \"Season 1 airdrop 5% unlocked at TGE\" tanpa detail syarat: apakah berdasarkan testnet participation, USDe mint volume, sUSDe staking, atau kombinasi) [Ethena Blog, https://blog.ethena.fi/ena-token-launch]",
+        "antiSybil": "Tidak ditemukan (tidak ada announcement tentang mekanisme sybil filtering, proof-of-humanity, atau scoring model untuk Season 1)",
+        "relatedEvent": "EV-011 (TGE ENA Token), EV-012 (DAO Launch)",
+        "citation": "Ethena Blog tokenomics announcement (HIGH) [https://blog.ethena.fi/ena-token-launch]; Phase 3 EV-011 (HIGH); Phase 6 Distribution (HIGH)"
+      },
+      {
+        "id": "AD-002",
+        "title": "Season 2 \"Sats\" Campaign (Multi-chain Incentive Program)",
+        "date": "2024-10 (mulai, berlangsung)",
+        "type": "Points-based / Task-based",
+        "allocation": "Tidak ditemukan (persentase dari 30% community allocation sisa 25% = 25M ENA yang dialokasikan untuk Season 2+ tidak diumumkan per campaign; hanya disebut \"ENA rewards\" via DAO proposal) [Ethena Blog, https://blog.ethena.fi; Snapshot, https://snapshot.org/#/ethena.eth]",
+        "recipients": "Tidak ditemukan (jumlah peserta aktif tidak dipublikasikan)",
+        "valueAtClaim": "Tidak ditemukan (reward berupa points/ENA yang diklaim secara bertahap, harga ENA Okt 2024 ~$0.30-$0.50 range per CoinGecko) [CoinGecko, https://www.coingecko.com/en/coins/ethena]",
+        "criteria": "Menyediakan liquidity USDe/sUSDe di protokol partner (Pendle, Morpho, Aave, Curve, Equilibria, Ethereal, Spectra) across chains, mint/redeem USDe, stake sUSDe, bridging via LayerZero/Wormhole — detail poin per aksi tidak dipublikasikan secara lengkap [Ethena Blog, https://blog.ethena.fi; Ethena Ecosystem, https://ethena.fi/ecosystem]",
+        "antiSybil": "Tidak ditemukan (tidak ada info apakah menggunakan Gitcoin Passport, on-chain scoring, atau KYC untuk mencegah farming)",
+        "relatedEvent": "EV-031 (Season 2 Launch), EV-032 (Supply Stabilization)",
+        "citation": "Ethena Blog Season 2 announcement (MEDIUM) [https://blog.ethena.fi]; Phase 3 EV-031 (HIGH); Phase 6 Vesting Schedule Community (HIGH); Phase 10 Insight 7 (HIGH)"
+      }
+    ],
+    "povOutcomes": {
+      "founder": {
+        "verdict": "Sebagian",
+        "qualifier": "Guy Young, Ethena Labs Ltd.",
+        "shortTerm": "TGE berhasil, DAO aktif day-1, CEX listings lancar, TVL naik cepat ke $3.4B peak Agustus 2024【Phase 3 — EV-011 to EV-029】.",
+        "longTerm": "Season 2 menstabilkan supply $2.5-3B tapi treasury opacity & fee switch belum live menciptakan tekanan value capture ENA; vesting cliff April 2025 (45% supply) risiko sell pressure【Phase 3 — EV-032】【Phase 5 — Treasury】【Phase 6 — Vesting Schedule】【Phase 9 — Failure Factor 7】.",
+        "basis": "Phase 3 History, Phase 5 Financial, Phase 6 Token, Phase 9 Behavioral (HIGH/MEDIUM)."
+      },
+      "vc": {
+        "verdict": "Sukses",
+        "qualifier": "Dragonfly Capital, Maelstrom, Deribit, Bybit, OKX Ventures, Gemini, Huobi Ventures",
+        "shortTerm": "Token liquid di top CEX dalam hari TGE, price discovery efisien, community allocation 15% circulating memberikan market depth【Phase 3 — EV-013 to EV-015】【Phase 8 — Trading Markets】.",
+        "longTerm": "Token unlock cliff April 2025 (Investors 25% + Team 20%) memberikan exit liquidity pathway; protocol revenue model berfungsi (funding rate yield)【Phase 6 — Vesting Schedule】【Phase 5 — Revenue Model】.",
+        "basis": "Phase 3 EV-013 to EV-015, Phase 5 Revenue Model, Phase 6 Vesting (HIGH)."
+      },
+      "retail": {
+        "verdict": "Sebagian",
+        "qualifier": "penerima Season 1 airdrop",
+        "shortTerm": "Bisa klaim 5M ENA total (rata-rata per wallet tidak diketahui), harga TGE ~$0.50-$0.60, bisa langsung jual di Binance/Coinbase/Kraken【Phase 8 — Trading Markets】【Phase 6 — TGE】.",
+        "longTerm": "Harga ENA volatil, fee switch belum live → value capture spekulatif; Season 2 reward memerlukan capital aktif (LP, staking) bukan passive hold【Phase 3 — EV-033】【Phase 6 — Utility】【Phase 8 — Adoption Metrics】.",
+        "basis": "Phase 6 TGE, Phase 8 Trading Markets, Phase 3 EV-033 (MEDIUM)."
+      },
+      "community": {
+        "verdict": "Sukses",
+        "qualifier": "Discord/Telegram/Snapshot voters",
+        "shortTerm": "Governance aktif day-1, proposal pertama (EV-030) dieksekusi Agustus 2024, Season 2 incentive terus berjalan【Phase 3 — EV-012】【Phase 3 — EV-030】【Phase 3 — EV-031】.",
+        "longTerm": "DAO mengendalikan parameter kritis (insurance fund, fee switch discussion), community allocation 30% terbesar di antara kategori【Phase 6 — Distribution】【Phase 6 — Governance】.",
+        "basis": "Phase 3 EV-012, EV-030, EV-031, Phase 6 Distribution, Phase 6 Governance (HIGH)."
+      },
+      "developer": {
+        "verdict": "Sukses",
+        "qualifier": "builder di atas Ethena/integrator",
+        "shortTerm": "sUSDe ERC-4626 primitive siap integrasi, 7 major integrations live Q2 2024, SDK/docs tersedia【Phase 7 — Major Integrations】【Phase 4 — Core Components (sUSDe)】.",
+        "longTerm": "Composability network effect kuat, sUSDe menjadi yield standard di DeFi, multi-chain deployment via LayerZero OFT memudah cross-chain development【Phase 7 — Infrastructure Providers】【Phase 8 — Narrative Position】.",
+        "basis": "Phase 7 Major Integrations, Phase 4 Technology, Phase 8 Market (HIGH)."
+      },
+      "institution": {
+        "verdict": "Sukses",
+        "qualifier": "Copper, Fireblocks, custodial users",
+        "shortTerm": "Custody integration Juli 2024 (EV-027, EV-028) memungkinkan mint/redeem institutional grade【Phase 3 — EV-027】【Phase 3 — EV-028】.",
+        "longTerm": "ClearLoop & Fireblocks workflow operational, compliance readiness, access ke yield crypto-native tanpa RWA【Phase 7 — Infrastructure Providers】【Phase 8 — Narrative Position (Institutional Onboarding)】.",
+        "basis": "Phase 3 EV-027, EV-028, Phase 7 Infrastructure, Phase 8 Narrative (HIGH)."
+      },
+      "validator": {
+        "verdict": "Tidak relevan (Ethena bukan blockchain, tidak ada validator set)【Phase 1 — Foundation】【Phase 4 — Consensus Mechanism】.",
+        "qualifier": null,
+        "shortTerm": null,
+        "longTerm": null,
+        "basis": null
+      },
+      "builder": {
+        "verdict": "Sukses",
+        "qualifier": "ecosystem partner: Pendle, Morpho, Aave, Curve, Equilibria, Ethereal, Spectra",
+        "shortTerm": "sUSDe integration mendorong volume & TVL ke protokol masing-masing (Pendle PT/YT, Morpho Vaults, Aave reserves, Curve pools)【Phase 3 — EV-016 to EV-023】.",
+        "longTerm": "Symbiotic relationship — Ethena butuh DeFi primitive untuk composability, partner butuh yield-bearing asset berkualitas; Season 2 incentive mengalir ke partner【Phase 7 — Major Integrations】【Phase 3 — EV-031】.",
+        "basis": "Phase 3 EV-016 to EV-023, Phase 7 Major Integrations, Phase 3 EV-031 (HIGH)."
+      }
+    },
+    "retention": [],
+    "prospect": {
+      "met": "- Token live dan DAO aktif (TGE April 2024)【Phase 3 — EV-011】【Phase 3 — EV-012】.",
+      "unmet": "- Fee switch activation (EV-033 proposal Dec 2024 masih discussion stage) — akan mengubah ENA dari governance/incentive token ke value capture token, meningkatkan rationale holding【Phase 3 — EV-033】【Phase 6 — Utility (Staking)】.",
+      "signals": "- Governance proposal di forum governance.ethena.fi / Snapshot untuk allocate batch berikutnya dari community allocation.",
+      "assessment": "Ethena memiliki struktur seasonal incentive yang jelas (Season 1 done, Season 2 running) dan sisa community allocation 25M ENA (25%) yang signifikan untuk future campaigns. Key dependencies: fee switch activation untuk value capture narrative, DAO governance maturity untuk budget allocation transparan, dan anti-sybil framework untuk mencegah dilution. Tanpa fee switch, ENA tetap governance/incentive token tanpa yield — mengurangi holding incentive jangka panjang. Keyakinan: MEDIUM — struktur ada, tapi eksekusi bergantung pada governance decision yang belum terjadi."
+    },
+    "lessons": []
+  },
+  "Grass": {
+    "projectSlug": "grass",
+    "status": "Sudah dilakukan",
+    "events": [
+      {
+        "id": "AD-001",
+        "title": "Epoch Points-to-Token Conversion (Retroaktif untuk Peserta Epoch 1-7)",
+        "date": "2024-10-28 (TGE, klaim dibuka hari yang sama)",
+        "type": "Points-based / Retroactive / Snapshot",
+        "allocation": "Tidak ditemukan persentase pasti dari total supply untuk alokasi \"Community/Airdrop\" secara terpisah dari \"Ecosystem\"; Tokenomics menyebut \"Community & Ecosystem\" ~32%+ tapi tidak pecah airdrop vs grant (MEDIUM) 【Phase 6 — Token Distribution】【Phase 3 — EV-012 Airdrop Epoch 1-7】",
+        "recipients": "120,000+ alamat on-chain yang mengklaim (Solscan holders post-TGE); 2.5M+ node terdaftar tapi tidak semua eligible/claim (HIGH) 【Phase 8 — Adoption Metrics Token Holders 120k+】【Phase 3 — EV-012 2.5M Nodes Claimed】",
+        "valueAtClaim": "Tidak ditemukan data rata-rata USD per penerima; Harga TGE ~$0.80-$1.20 (CoinGecko early trade), alokasi per wallet bervariasi besar berdasarkan poin epoch (MEDIUM) 【Phase 8 — Trading Markets Price Discovery】【Phase 6 — Token Utility】",
+        "criteria": "Peserta yang mengumpulkan poin minimal selama Epoch 1-7 (Juni 2023 - Oktober 2024) via node Desktop/Extension/Mobile/Lite; Poin dihitung dari uptime, bandwidth terverifikasi, referal, bonus; Snapshot akhir Epoch 7 sebagai cut-off (HIGH) 【Phase 3 — EV-004 Epoch System】【Phase 3 — EV-012 Airdrop Epoch 1-7】【Phase 4 — Coordinator Proof of Bandwidth】",
+        "antiSybil": "Proof of Bandwidth challenge-response via Coordinator; Verifikasi identitas node (device fingerprint, IP reputation); Minimum uptime threshold per epoch; Tidak ada laporan publik jumlah alamat yang didiskualifikasi (MEDIUM) 【Phase 4 — Architecture Coordinator】【Phase 4 — Known Limitations #1】【Phase 9 — Behavioral Risk Response Sybil】",
+        "relatedEvent": "EV-004 (Epoch System Launch), EV-006 (Mainnet), EV-007 (Mobile), EV-008 (Lite Node), EV-012 (TGE & Airdrop Claim)",
+        "citation": "(HIGH) 【Phase 3 — EV-004/006/007/008/012】【Phase 4 — Architecture Coordinator】【Phase 8 — Adoption Metrics】"
+      },
+      {
+        "id": "AD-002",
+        "title": "Binance Launchpool Farming (Gratis via Staking BNB/FDUSD)",
+        "date": "2024-10-28 s.d. 2024-11-03 (7 hari farming)",
+        "type": "Task-based / Lockdrop (stake asset untuk farming token gratis)",
+        "allocation": "30,000,000 GRASS (3% Total Supply) (HIGH) 【Phase 6 — Token Sale Launchpool 3%】【Phase 3 — EV-012 Launchpool Allocation】",
+        "recipients": "Tidak ditemukan jumlah unik farmer; Binance biasanya ratusan ribu peserta per Launchpool (MEDIUM) 【Phase 7 — Major Integrations Binance Launchpool】",
+        "valueAtClaim": "Harga TGE ~$0.80-$1.20; Reward per farmer bergantung proporsi BNB/FDUSD yang di-stake terhadap total pool (MEDIUM) 【Phase 8 — Trading Markets Price Discovery】",
+        "criteria": "Pengguna Binance terverifikasi (KYC) yang men-stake BNB dan/atau FDUSD ke pool Launchpool Grass selama periode farming; Tidak ada batas minimal stake (HIGH) 【Phase 3 — EV-012 Binance Launchpool】【Binance Announcement, https://www.binance.com/en/support/announcement/grass-listing】",
+        "antiSybil": "KYC Binance wajib (1 akun per identitas); Anti-bot standar Binance; Tidak ada mekanisme tambahan dari sisi Grass (HIGH) 【Binance Launchpool Terms, https://www.binance.com/en/launchpool】【Phase 7 — Exchange Ecosystem Binance】",
+        "relatedEvent": "EV-012 (TGE & Multi-CEX Listing)",
+        "citation": "(HIGH) 【Phase 3 — EV-012】【Phase 6 — Token Sale】【Phase 7 — Exchange Ecosystem Binance】【Binance Announcement, https://www.binance.com/en/support/announcement/grass-listing】"
+      }
+    ],
+    "povOutcomes": {
+      "founder": {
+        "verdict": "Sebagian",
+        "qualifier": "Andrej Radonjic, Chris Nguyen, Wynd Labs",
+        "shortTerm": "TGE lancar, listing 6 CEX tier-1 tercapai, $150-300M vol/hari, zero exploit, komunitas puas claim airdrop; Wynd Labs tetap core dev via Foundation grant (HIGH) 【Phase 3 — EV-012/013/014】【Phase 8 — Trading Markets】【Phase 4 — Security Model Zero Exploit】",
+        "longTerm": "Tekanan eksekusi Rollup (Q1-Q2 2025 target devnet) sangat tinggi; treasury GRASS concentrasi risiko besar; revenue data sales belum terbukti; founder reputation terikat pada delivery rollup (MEDIUM) 【Phase 4 — Known Limitations #1 #7】【Phase 5 — Financial Risk Concentration & Revenue】【Phase 9 — Behavioral Trade-offs Rollup vs Time-to-Market】",
+        "basis": "(HIGH) Phase 3 EV-012/013/014, Phase 4 Known Limitations, Phase 5 Financial Risk, Phase 9 Behavioral Trade-offs"
+      },
+      "vc": {
+        "verdict": "Sukses",
+        "qualifier": "Polychain, Hack VC, Delphi Ventures, Brevan Howard Digital",
+        "shortTerm": "Token liquid di 6 CEX + DeFi, price discovery berfungsi, vesting streaming on-chain (Streamflow/Cliff) berjalan tanpa cliff besar, paper gains signifikan dari seed valuation (HIGH) 【Phase 6 — Vesting Streaming】【Phase 8 — Trading Markets & Liquidity】【Phase 7 — Infrastructure Providers Streamflow】",
+        "longTerm": "Unlock bulanan menciptakan sell pressure konstan; ROI bergantung pada apakah Rollup & data sales bisa drive demand token jangka panjang — belum terbukti (MEDIUM) 【Phase 6 — Vesting Schedule】【Phase 5 — Revenue Uncertainty】【Phase 9 — Behavioral Financial Decision Pattern Vesting】",
+        "basis": "(HIGH) Phase 6 Vesting, Phase 8 Trading Markets, Phase 7 Infrastructure; (MEDIUM) Phase 5 Revenue, Phase 9 Behavioral"
+      },
+      "retail": {
+        "verdict": "Sebagian",
+        "qualifier": "Penerima Airdrop Epoch 1-7",
+        "shortTerm": "120k+ wallet claim, banyak yang sell segera (harga turun dari ~$1.20 ke ~$0.80 dalam minggu pertama — estimasi), gas fee Solana rendah memudahkan claim & sell; yang hold mendapat staking yield ~15-25% APR awal (MEDIUM) 【Phase 8 — Trading Markets Price Discovery】【Phase 3 — EV-013 Staking Live】【Phase 8 — Adoption Metrics Holders】",
+        "longTerm": "Retensi holder turun drastis (estimasi <20% holder asli tetap setelah 90 hari — pola standar airdrop 2024); nilai portofolio bergantung pada Rollup delivery & AI data revenue (LOW) 【Phase 8 — Adoption Metrics Retention Not Disclosed】【Phase 9 — Behavioral Pattern Vanity Metrics vs Real Metrics】",
+        "basis": "(MEDIUM) Phase 8 Trading Markets, Phase 3 EV-013; (LOW) Phase 8 Retention Not Disclosed, Phase 9 Behavioral"
+      },
+      "community": {
+        "verdict": "Sebagian",
+        "qualifier": "Node Operators, Discord, Referral Builders",
+        "shortTerm": "Validasi usaha 16 bulan farming poin; referral bonus termaktub; NFT badge soulbound sebagai reputasi; tapi banyak keluh kesah alokasi \"terlalu kecil\" vs biaya listrik/internet (MEDIUM) 【Phase 3 — EV-016 NFT Badges】【Phase 7 — Major Integrations Tensor/Magic Eden】【Phase 8 — Community Discord Sentiment】",
+        "longTerm": "Transisi dari \"point farmer\" ke \"staker/builder\" butuh utility nyata; Ecosystem Incentives Program (Nov 2024) mulai menarik builder tapi masih awal; komunitas besar tapi passive (HIGH) 【Phase 3 — EV-015 Ecosystem Incentives】【Phase 7 — Developer Ecosystem Grants】【Phase 9 — Behavioral Pattern Community Growth Metrics】",
+        "basis": "(MEDIUM) Phase 3 EV-015/016, Phase 7 Integrations; (HIGH) Phase 9 Behavioral"
+      },
+      "developer": {
+        "verdict": "Sukses",
+        "qualifier": "Builder di SDK, Rollup, Data Apps",
+        "shortTerm": "SDK TypeScript/Rust tersedia, dokumentasi lengkap, hackathon Superteam/Colosseum dengan bounty Grass, Grant Foundation dibuka — low barrier to entry (HIGH) 【Phase 7 — Developer Ecosystem SDK/Hackathon/Grants】【Phase 3 — EV-015 Ecosystem Incentives】",
+        "longTerm": "Sovereign Data Rollup devnet (target 2025) akan membuka use case baru (ZK verified data, AI training data marketplace) — high option value bagi builder early (MEDIUM) 【Phase 3 — EV-011 Rollup Announcement】【Phase 4 — Architecture Rollup】【Phase 7 — External Dependencies RISC Zero/Intel TDX】",
+        "basis": "(HIGH) Phase 7 Developer Ecosystem, Phase 3 EV-015; (MEDIUM) Phase 3 EV-011, Phase 4 Architecture"
+      },
+      "institution": {
+        "verdict": "Sukses",
+        "qualifier": "Market Maker Wintermute/GSR, CEX, Fund",
+        "shortTerm": "Likuiditas mendalam multi-venue (6 CEX + 2 DEX + perp), spread ketat, volume tinggi, borrow/lend tersedia (Kamino), hedging perp (Drift) — kondisi ideal untuk MM & fund (HIGH) 【Phase 7 — Major Integrations Wintermute/GSR】【Phase 8 — Liquidity Sources Major CEX/DEX/Perp】【Phase 3 — EV-014 DeFi Integrations】",
+        "longTerm": "Bergantung pada organic volume (bukan insentif farming) & fundamental demand token (data sales, rollup fees) — belum ada visibility (MEDIUM) 【Phase 5 — Revenue Model】【Phase 8 — Trading Markets Organic vs Incentivized】",
+        "basis": "(HIGH) Phase 7 Integrations, Phase 8 Liquidity; (MEDIUM) Phase 5 Revenue, Phase 8 Markets"
+      },
+      "validator": {
+        "verdict": "Tidak relevan",
+        "qualifier": "Solana Validators, Jito Validators",
+        "shortTerm": null,
+        "longTerm": null,
+        "basis": "(HIGH) Phase 3 EV-013, Phase 7 Jito, Phase 4 Consensus"
+      },
+      "builder": {
+        "verdict": "Tidak diketahui",
+        "qualifier": "AI Data Buyers, Enterprise, Protocol Integrators",
+        "shortTerm": "Tidak ada publikasi enterprise deal/LOI; Sovereign Data Rollup belum live; data purchase API belum terbuka publik; hanya roadmap & naratif (LOW) 【Phase 5 — Revenue Model Enterprise Data Sales Early】【Phase 3 — EV-011 Rollup Announcement】【Phase 7 — Ecosystem Grants for Data Apps】",
+        "longTerm": "Jika Rollup live & ZK/TEE terbukti cost-effective, Grass bisa jadi data layer utama untuk AI training — high upside tapi execution risk sangat tinggi (LOW) 【Phase 4 — Known Limitations #7】【Phase 8 — Narrative AI Data Layer】【Phase 9 — Behavioral Trade-offs Custom Rollup】",
+        "basis": "(LOW) Phase 5 Revenue, Phase 3 EV-011, Phase 4 Limitations, Phase 8 Narrative, Phase 9 Trade-offs"
+      }
+    },
+    "retention": [],
+    "prospect": {
+      "met": "- Mainnet live & stabil (Mar 2024) (HIGH) 【Phase 3 — EV-006】",
+      "unmet": null,
+      "signals": "- Pengumuman \"Snapshot Season 2\" atau \"Epoch 8\" di blog/discord — belum ada",
+      "assessment": "Kemungkinan airdrop tambahan (Season 2) rendah pada 2025 H1 karena: (1) Alokasi community/ecosystem ~32%+ sudah besar, sebagian besar untuk grants bukan airdrop; (2) Fokus tim 100% pada Rollup devnet delivery; (3) Tidak ada tekanan listing CEX baru (sudah 6 tier-1); (4) Naratif bergeser dari \"farming points\" ke \"building on Rollup\". Namun, jika Rollup devnet launch sukses Q1 2025, mungkin ada \"Incentivized Testnet\" dengan token reward (bukan airdrop retroaktif). Tingkat keyakinan: MEDIUM. Akan berubah jika: (a) DAO live dan proposal community allocation muncul, (b) Revenue data sales menggeliat & Foundation ingin share ke node operators, (c) Kompetitor (Masa, Vana) launch Season 2 agresif."
+    },
+    "lessons": []
+  },
+  "Lido": {
+    "projectSlug": "lido",
+    "status": "Belum ada",
+    "events": [],
+    "povOutcomes": {
+      "founder": {
+        "verdict": "Sukses",
+        "qualifier": "Konstantin Lomashuk, Vasiliy Shapovalov, P2P.org",
+        "shortTerm": "Token tersebar ke ribuan address via LM; likuiditas Curve stETH/ETH menjadi terdalam di DeFi (>50% volume historis)【Phase 7 — Major Integrations】; stETH peg stabil",
+        "longTerm": "Distribusi 100M LDO selesai Jan 2022 tanpa sisa token community terkunci; founder/team/investor vesting terpisah tidak terganggu【Phase 6 — Vesting Schedule】",
+        "basis": "[Phase 3 — EV-004, HIGH] [Phase 7 — Major Integrations, HIGH] [Phase 6 — Vesting Schedule, HIGH]"
+      },
+      "vc": {
+        "verdict": "Sukses",
+        "qualifier": "Paradigm, a16z, Dragonfly Capital, Variant Fund, Robot Ventures",
+        "shortTerm": "Alokasi investor 22.18% (221.8M LDO) cliff 12 bulan + vesting 24-36 bulan terjaga; tidak ada tekanan jual dari community allocation (LM reward linear 12 bulan)【Phase 6 — Vesting Schedule】",
+        "longTerm": "Tokenomics terbukti sustainable; fee switch 10% aktif 2024 menciptakan revenue DAO ~$45-55M/tahun【Phase 3 — EV-020】【Phase 8 — Adoption Metrics】; valuation naik $73M → >$1B Series B【Phase 3 — EV-011】",
+        "basis": "[Phase 6 — Vesting Schedule, HIGH] [Phase 3 — EV-020, HIGH] [Phase 8 — Adoption Metrics, HIGH]"
+      },
+      "retail": {
+        "verdict": "Sebagian",
+        "qualifier": "penerima Liquidity Mining reward",
+        "shortTerm": "Pengguna dengan modal besar (whale) memperoleh LDO signifikan via LM APY tinggi awal 2021; pengguna kecil mendapat reward proporsional tapi gas cost Ethereum mainnet 2021 ($50-100/tx) mengurangi net yield",
+        "longTerm": "Sebagian besar LM reward dijual segera (tekanan jual konstan 2021); harga LDO turun dari puncak ~$7 (Mei 2021) ke ~$1 (Akhir 2021)【Phase 8 — Market Timeline】; tidak ada data retensi on-chain resmi",
+        "basis": "[Phase 8 — Market Timeline, HIGH] [Phase 6 — TGE, HIGH] [Tidak ditemukan data retensi resmi]"
+      },
+      "community": {
+        "verdict": "Sukses",
+        "qualifier": "pengguna stETH, token holder, DAO participants",
+        "shortTerm": "stETH/ETH liquidity Curve menjadi paling dalam; memungkinkan swap besar tanpa slippage; DAO treasury menerima 36.3% supply + fee revenue kemudian",
+        "longTerm": "Governance aktif (fee switch, V2 upgrade, sunset products, operator expansion) — community benar-benar mengontrol protokol via LDO【Phase 3 — EV-013】【Phase 3 — EV-014】【Phase 3 — EV-020】【Phase 3 — EV-021】",
+        "basis": "[Phase 7 — Major Integrations, HIGH] [Phase 3 — EV-013, HIGH] [Phase 3 — EV-020, HIGH] [Phase 6 — Governance, HIGH]"
+      },
+      "developer": {
+        "verdict": "Sukses",
+        "qualifier": "integrator DeFi, builder di atas stETH/wstETH",
+        "shortTerm": "Deep liquidity stETH/ETH memungkinkan integrasi Aave, Maker, Yearn dengan collateral factor tinggi【Phase 7 — Major Integrations】",
+        "longTerm": "stETH/wstETH menjadi \"base layer\" DeFi; wstETH supply >1M token (Jan 2024)【Phase 3 — EV-023】; SDK, API, dokumentasi matang【Phase 7 — Developer Ecosystem】",
+        "basis": "[Phase 7 — Major Integrations, HIGH] [Phase 3 — EV-023, HIGH] [Phase 7 — Developer Ecosystem, HIGH]"
+      },
+      "institution": {
+        "verdict": "Sukses",
+        "qualifier": "fund, market maker, custodian",
+        "shortTerm": "LDO listed di Binance, Coinbase, Kraken, Bybit, OKX (spot + perpetual)【Phase 8 — Trading Markets】; liquidity mining menciptakan order book awal",
+        "longTerm": "Institutional staking via Lido (stETH/wstETH) menjadi standar; custody support Ledger, Trezor, Fireblocks, Coinbase Prime【Phase 7 — Wallet Ecosystem】; regulatory clarity via Cayman Foundation【Phase 3 — EV-007】",
+        "basis": "[Phase 8 — Trading Markets, HIGH] [Phase 7 — Wallet Ecosystem, HIGH] [Phase 3 — EV-007, HIGH]"
+      },
+      "validator": {
+        "verdict": "Tidak relevan (validator tidak menerima airdrop; mereka menerima fee 5% dari rewards via protokol)【Phase 5 — Revenue Model】",
+        "qualifier": "Node Operator Lido",
+        "shortTerm": "N/A",
+        "longTerm": "N/A",
+        "basis": "[Phase 5 — Revenue Model, HIGH]"
+      },
+      "builder": {
+        "verdict": "Sukses",
+        "qualifier": "protokol yang build di atas Lido: EigenLayer, Pendle, Morpho, dll",
+        "shortTerm": "wstETH (non-rebasing wrapper) tersedia dengan likuiditas mendalam; mudah diintegrasikan",
+        "longTerm": "EigenLayer menerima wstETH sebagai LRT dominan (>50% TVL awal)【Phase 7 — Major Integrations】; Pendle, Morpho, Yearn build strategies di atas wstETH【Phase 7 — Applications】",
+        "basis": "[Phase 7 — Major Integrations, HIGH] [Phase 7 — Applications, HIGH]"
+      }
+    },
+    "retention": [
+      "Persentase penerima yang menjual dalam 7 hari: Tidak ditemukan (tidak ada analisis on-chain resmi atau third-party yang memisahkan wallet LM reward vs wallet lain)",
+      "Persentase penerima yang masih memegang setelah 90 hari: Tidak ditemukan",
+      "Perubahan alamat aktif sebelum vs sesudah snapshot: Tidak ada snapshot (LM berjalan kontinu 12 bulan); unique depositors tumbuh dari ~10k (Jan 2021) → ~100k+ (Des 2021) per Dune【Phase 8 — Adoption Metrics】(MEDIUM)",
+      "Perubahan TVL sebelum vs sesudah: TVL Lido naik dari ~$500M (Jan 2021) → ~$20B+ (Des 2021) — didorong LM + bull market + DeFi integrations【Phase 8 — Market Timeline】(HIGH)",
+      "Harga token pada klaim (LM start Jan 2021): ~$2.50 (estimasi awal trading) (LOW) [CoinGecko historical]",
+      "Harga token +30 hari (Feb 2021): ~$3.50 (LOW) [CoinGecko historical]",
+      "Harga token +90 hari (Apr 2021): ~$4.00 (LOW) [CoinGecko historical]",
+      "Harga token puncak 2021: ~$7.00 (Mei 2021) (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/lido-dao]",
+      "Harga token akhir 2021: ~$1.00 (Des 2021) (HIGH) [CoinGecko]"
+    ],
+    "prospect": {
+      "met": "- Token live dengan utility governance nyata (fee switch, operator set, upgrades)【Phase 6 — Utility, Governance】",
+      "unmet": "- Tidak ada sinyal dari governance (forum, snapshot, LIP) yang mendiskusikan airdrop retroactive ke stETH holders / wstETH holders / early depositors",
+      "signals": "- Diskusi di research.lido.fi tentang \"retroactive rewards\", \"airdrop\", \"community incentives Season 2\"",
+      "assessment": "Kemungkinan airdrop retroactive di masa depan RENDAH (keyakinan: MEDIUM). Alasan: (1) Community allocation sudah habis digunakan LM 2021-2022; (2) Fixed supply 1B LDO — tidak ada emission baru; (3) Treasury 363M LDO dikontrol DAO, tapi realokasi untuk airdrop butuh justification kuat (treasury sudah fund grants, core contributors, insurance); (4) Lido sudah mature, tidak butuh airdrop untuk bootstrap adoption; (5) Regulatory risk airdrop gratis meningkat (SEC enforcement 2023-2024). Yang bisa mengubah: jika muncul kompetitor LRT (Ether.fi, Renzo, Puffer) melakukan airdrop agresif dan mencuri mindshare staker — Lido mungkin merespons via governance vote untuk \"loyalty rewards\" dari treasury, tapi ini spekulasi."
+    },
+    "lessons": [
+      "Ketika community allocation didistribusikan via liquidity mining (bukan airdrop) di era 2021 (bull market, gas fee tinggi, hunter population belum matang), distribusi cenderung terkonsentrasi pada whale/institusi yang mampu bayar gas dan modal besar — retail terpinggirkan. Akibatnya: token tersebar tapi tidak \"ke tangan banyak orang\" secara merata.",
+      "Ketika protokol first-mover dengan TVL membesar pesat (Lido TVL $500M → $20B dalam 1 tahun), liquidity mining berfungsi ganda: mendistribusikan token DAN memperdalam likuiditas venue kritis (Curve stETH/ETH). Ini lebih efisien dari airdrop murni yang tidak memberi yield pada protokol.",
+      "Ketika tidak ada snapshot retroactive untuk early users (hanya 1 bulan antara mainnet launch dan TGE), early adopters tidak mendapat reward khusus — mereka harus join LM seperti orang lain. Ini menciptakan kekecewaan naratif \"early users tidak dihargai\" tapi menghindari kompleksitas dan risiko regulasi snapshot.",
+      "Ketika fixed supply + tidak ada inflation + community allocation habis di awal, tidak ada \"season 2\" airdrop yang mungkin tanpa realokasi treasury yang kontroversial. Project dengan tokenomics seperti ini (Lido, Uniswap v1) cenderung TIDAK melakukan airdrop kedua.",
+      "Ketika DAO governance sudah fungsional dan mengontrol fee parameter (fee switch), insentif pengguna jangka panjang sudah tertangani via yield stETH (net of fee) — airdrop tambahan bukan diperlukan untuk retention."
+    ]
+  },
+  "MegaETH": {
+    "projectSlug": "megaeth",
+    "status": "Belum ada",
+    "events": [],
+    "povOutcomes": {
+      "founder": {
+        "verdict": "Tidak relevan",
+        "qualifier": "Li Ming, Lei Yang, Shuyao Kong via MegaETH Labs",
+        "shortTerm": "Tidak ada beban distribusi token, legal review, atau claim infrastructure; fokus penuh pada execution engine validation",
+        "longTerm": "Fleksibilitas tokenomics terjaga; risiko komunitas tidak terbentuk organik sebelum mainnet",
+        "basis": "Phase 9 Decision Timeline — semua keputusan strategic oleh 3 co-founder; Phase 6 Governance — Pre-Governance"
+      },
+      "vc": {
+        "verdict": "Tidak diketahui",
+        "qualifier": "DragonFly, Figment",
+        "shortTerm": "Tidak ada tekanan unlock community allocation yang mendorong harga turun; token warrant/SAFE mereka tidak terdilusi prematur",
+        "longTerm": "Butuh liquidity event (TGE) untuk return; delay terlalu lama berisiko opportunitas pasar",
+        "basis": "Phase 5 Funding History — single round undisclosed terms; Phase 6 Major Token Events — Token Warrant/SAFE Assumption; Phase 9 Financial Decision Pattern Pola 1"
+      },
+      "retail": {
+        "verdict": "Tidak relevan",
+        "qualifier": "pengguna testnet via faucet",
+        "shortTerm": "Mendapat testnet ETH gratis untuk testing; tidak ada ekspektasi reward finansial karena tidak dijanjikan",
+        "longTerm": "Jika airdrop datang nanti, early tester bisa qualified; tapi tidak ada jaminan",
+        "basis": "Phase 3 EV-007 — testnet launch tanpa airdrop announcement; Phase 7 Applications — Faucet hanya untuk testnet ETH"
+      },
+      "community": {
+        "verdict": "Sebagian",
+        "qualifier": "Discord, Telegram, X followers",
+        "shortTerm": "Narasi \"Real-time Blockchain\" menarik perhatian tanpa noise airdrop hunter; komunitas murni teknis",
+        "longTerm": "Risiko \"vaporware\" narrative jika mainnet delay dan tidak ada token; community retention bergantung pada technical delivery",
+        "basis": "Phase 8 Narrative Position — Main Narrative Real-time Blockchain; Phase 9 Recurring Behavioral Pattern Pola 1 — Narrative-First; Phase 8 Adoption Metrics — semua unknown"
+      },
+      "developer": {
+        "verdict": "Tidak relevan",
+        "qualifier": "builder di testnet",
+        "shortTerm": "EVM compatibility penuh, tooling standar (Foundry, Hardhat, viem) works tanpa insentif token; building untuk technical merit",
+        "longTerm": "Tidak ada grant program, hackathon, atau ecosystem fund — risiko builder churn ke L2 lain yang punya incentives",
+        "basis": "Phase 7 Developer Ecosystem — Grant Program: Tidak Diumumkan, Hackathon: Tidak Diumumkan; Phase 4 Developer Framework — Foundry, Hardhat, viem/optimism supported"
+      },
+      "institution": {
+        "verdict": "Tidak diketahui",
+        "qualifier": "potensial validator, infrastructure provider",
+        "shortTerm": "Tidak ada staking token atau validator set untuk dijalankan; hanya RPC/infra support",
+        "longTerm": "Figment (investor) sudah sebagai infra partner; institution lain menunggu mainnet + tokenomics clarity",
+        "basis": "Phase 7 Infrastructure Providers — Figment potential RPC/Validator; Phase 7 Governance Ecosystem — Validator Group: Future Decentralized Sequencer Set Planned"
+      },
+      "validator": {
+        "verdict": "Tidak relevan",
+        "qualifier": "sequencer operator",
+        "shortTerm": "Hanya MegaETH Labs yang menjalankan sequencer (centralized); tidak ada validator set terdesentralisasi",
+        "longTerm": "Desentralisasi sequencer direncanakan tapi tanpa timeline/spesifikasi",
+        "basis": "Phase 4 Core Components — Sequencer centralized operated by MegaETH Labs; Phase 7 Governance Ecosystem — Validator Group Future Planned; Phase 9 Governance Decision Pattern Pola 4"
+      },
+      "builder": {
+        "verdict": "Gagal",
+        "qualifier": "ecosystem app developer",
+        "shortTerm": "Tidak ada insentif (grant, points, airdrop allocation) untuk deploy app di testnet; 0 third-party apps terverifikasi",
+        "longTerm": "Cold start problem pada mainnet — tidak ada app siap pakai, tidak ada user base terbiasa dengan ecosystem",
+        "basis": "Phase 7 Applications — hanya 3 first-party apps (Explorer, Faucet, Docs); Phase 7 Developer Ecosystem — No Native SDK, Grant, Hackathon; Phase 9 Recurring Behavioral Pattern Pola 4"
+      }
+    },
+    "retention": [],
+    "prospect": {
+      "met": "- Testnet live dengan full stack (Sequencer, Explorer, Faucet, RPC, Bridge, Docs) — EV-007, EV-008, EV-009 completed【Phase 3 EV-007/008/009】 (HIGH)",
+      "unmet": "- Mainnet launch — settlement di Ethereum mainnet, bukan Sepolia testnet【Phase 1 Foundation — Launch Date Mainnet: n/a】 (HIGH)",
+      "signals": "- Perubahan dokumentasi: halaman tokenomics/tokenomics.md muncul di docs.megaeth.com atau blog resmi【Phase 6 Official Token Resources — Official Documentation: https://docs.megaeth.com (tidak ada halaman tokenomics terpisah)】.",
+      "assessment": "MegaETH memiliki prasyarat teknis yang kuat (testnet live, OP Stack architecture, EVM compatibility) dan backing investor tier-1, namun prasyarat kritis non-teknis (tokenomics design, legal jurisdiction, security audit, decentralized sequencer spec, EigenDA integration) semuanya belum terpenuhi. Keputusan \"no airdrop testnet\" konsisten dengan behavioral pattern: narrative-first, regulatory opacity, closed core, dan centralized launch for speed. Airdrop paling mungkin terjadi pasca-mainnet launch dengan community allocation untuk early testnet users + builder grants, TAPI timeline tidak dapat diprediksi karena tidak ada komitmen tanggal mainnet/TGE. Tingkat keyakinan: MEDIUM — airdrop akan terjadi jika mainnet launch berhasil, tapi desainnya (allocation %, vesting, criteria) sepenuhnya terbuka. Akan mengubah penilaian: (1) Mainnet launch date diumumkan → naik ke HIGH, (2) Tokenomics draft dipublikasikan untuk feedback → naik ke HIGH, (3) Jurisdiction legal entity diungkapkan → naik ke HIGH, (4) Custom Execution Client audit report publik → naik ke HIGH."
+    },
+    "lessons": [
+      "Ketika project L2 melakukan testnet launch tanpa airdrop/points program (era 2024, hunter population matang), komunitas early adopter bersifat murni teknis tapi kecil — retensi developer bergantung pada technical merit saja, bukan insentif ekonomi; akibatnya cold start problem pada mainnet jika tidak ada grant program segera setelahnya【Phase 9 Recurring Behavioral Pattern Pola 4】【Phase 7 Applications — 0 third-party apps】.",
+      "Ketika tokenomics sepenuhnya opaque hingga mainnet (pre-TGE tanpa whitepaper), investor VC tier-1 mendapat leverage negosiasi token warrant/SAFE yang menguntungkan, tapi retail/community tidak memiliki price discovery signal — menciptakan information asymmetry yang sulit dibalikkan post-TGE【Phase 5 Funding History — undisclosed terms】【Phase 6 Token — all unknown】【Phase 9 Financial Decision Pattern Pola 1,5】.",
+      "Ketika custom execution client closed source dan 0 audit publik, airdrop claim contract (jika nanti ada) akan inherit trust assumption yang sama — user harus trust team bukan code; ini mempertinggi regulatory risk di jurisdiction yang ketat (US, EU)【Phase 4 Known Limitations — Closed Source】【Phase 4 Audit History — 0 MegaETH-specific audit】【Phase 9 Technical Decision Pattern Pola 2,6】.",
+      "Ketika dependency kritis (EigenDA) di-announce tanpa technical spec dan fallback plan, airdrop timeline jadi terikat pada third-party delivery — delay EigenDA = delay mainnet = delay TGE = delay airdrop; project kehilangan kontrol narasi【Phase 7 External Dependencies — EigenLayer Planned no spec】【Phase 7 Ecosystem Risks — Execution Risk】【Phase 9 Recurring Behavioral Pattern Pola 5】."
+    ]
+  },
+  "Monad": {
+    "projectSlug": "monad",
+    "status": "Belum ada",
+    "events": [],
+    "povOutcomes": {
+      "founder": {
+        "verdict": "Tidak relevan",
+        "qualifier": "Monad Labs Inc., Keone Hon/James Hunsaker/Eunice Giarta",
+        "shortTerm": "Tidak ada airdrop = tidak ada biaya distribusi, tidak ada tekanan harga, tidak ada sybil noise di testnet; fokus 100% pada engineering delivery.",
+        "longTerm": "Fleksibilitas tokenomics penuh terjaga hingga mainnet; bisa desain airdrop yang aligned dengan validator economics dan governance pasca-launch.",
+        "basis": "Phase 9 Principle 1, Pola 3, Pola 5 (HIGH) [Phase 9 Behavioral Summary]."
+      },
+      "vc": {
+        "verdict": "Tidak relevan",
+        "qualifier": "Series A Investors — nama tidak diungkapkan",
+        "shortTerm": "Tidak ada token = tidak ada mark-to-market volatility, tidak ada unlock schedule pressure; equity value terikat pada technical milestone (mainnet launch).",
+        "longTerm": "Jika airdrop dilakukan pasca-mainnet, dilution terhadap equity holder minimal karena investor memegang equity Monad Labs Inc., bukan token allocation (kecuali ada SAFT tersembunyi — tidak terverifikasi).",
+        "basis": "Phase 5 Funding History (equity only), Phase 9 Pola 1 (HIGH) [The Block, https://www.theblock.co/post/288000/monad-labs-raises-225m-series-a]."
+      },
+      "retail": {
+        "verdict": "Tidak diketahui",
+        "qualifier": "pengguna testnet, calon penerima airdrop masa depan",
+        "shortTerm": "Tidak ada airdrop = tidak ada \"free money\", tidak ada FOMO, tidak ada sybil farming; testnet participation murni untuk technical validation/early access.",
+        "longTerm": "Jika airdrop datang, kriteria akan berbasis kontribusi nyata (deploy contract, provide liquidity, run validator) bukan wallet activity farming — karena testnet tidak mengincentivasi volume.",
+        "basis": "Phase 9 Pola 3 (no incentivized testnet), Phase 8 Adoption Metrics (organic >100 projects) (MEDIUM) [Monad Ecosystem, https://monad.xyz/ecosystem]."
+      },
+      "community": {
+        "verdict": "Tidak diketahui",
+        "qualifier": "Discord/Twitter/Telegram members",
+        "shortTerm": "Komunitas fokus pada technical discussion, bug reporting, tooling build — bukan \"wen airdrop\" discourse.",
+        "longTerm": "Community health lebih bersih tanpa airdrop expectation; tapi risiko disengagement jika mainnet delay dan tidak ada incentive bridge.",
+        "basis": "Phase 7 Community (active technical discourse), Phase 9 Pola 3 (MEDIUM) [Discord, https://discord.gg/monad]."
+      },
+      "developer": {
+        "verdict": "Sebagian (positif)",
+        "qualifier": "builder di testnet",
+        "shortTerm": "Zero switching cost (EVM compatible), tidak perlu optimize untuk points/airdrop criteria — bangun produk yang butuh parallel execution.",
+        "longTerm": "Jika airdrop berbasis technical contribution (contract deployment, TVL, volume), developer early adopter mendapat reward alami; jika berbasis social/farming, misalignment.",
+        "basis": "Phase 7 Major Integrations (Hardhat/Foundry/ethers.js work out-of-box), Phase 9 Playbook 1 (HIGH) [Monad Docs, https://docs.monad.xyz/developers/getting-started]."
+      },
+      "institution": {
+        "verdict": "Tidak relevan",
+        "qualifier": "exchange, market maker, custodian",
+        "shortTerm": "Tidak ada token = tidak ada listing discussion, tidak ada market making agreement, tidak ada custody need.",
+        "longTerm": "Airdrop pasca-mainnet akan menciptakan initial liquidity event — exchange butuh tokenomics clarity, unlock schedule, jurisdictional clarity sebelum listing.",
+        "basis": "Phase 8 Trading Markets (none listed), Phase 6 TGE (not announced) (MEDIUM) [CoinGecko, https://www.coingecko.com]."
+      },
+      "validator": {
+        "verdict": "Tidak relevan",
+        "qualifier": "calon validator mainnet",
+        "shortTerm": "Testnet validator berjalan tanpa token reward (testnet token tidak bernilai); operator test infrastructure untuk technical readiness.",
+        "longTerm": "Airdrop/token allocation untuk validator set penting untuk bootstrapping security — namun validator economics (staking min, reward curve, slashing) belum dipublikasikan.",
+        "basis": "Phase 4 Consensus Mechanism (slashing planned not parameterized), Phase 7 Infrastructure Providers (validator operators) (MEDIUM) [Monad Docs, https://docs.monad.xyz/validators]."
+      },
+      "builder": {
+        "verdict": "Sebagian (positif)",
+        "qualifier": "ecosystem project founder",
+        "shortTerm": "Bangun di testnet tanpa biaya opportunity cost farming airdrop chain lain; tooling familiar = faster iteration.",
+        "longTerm": "Jika airdrop allocation ada untuk ecosystem projects (bukan individual wallet), builder early adopter benefit; jika hanya retail airdrop, builder tidak mendapat allocation khusus.",
+        "basis": "Phase 7 Applications (>100 projects organic), Phase 9 Pola 2 (Ethereum Alignment First) (HIGH) [Monad Ecosystem, https://monad.xyz/ecosystem]."
+      }
+    },
+    "retention": [],
+    "prospect": {
+      "met": "- Mainnet target timeline dipublikasikan (Q3 2025)【Phase 3 — EV-012】 (HIGH) [Monad Docs, https://docs.monad.xyz/roadmap].",
+      "unmet": "- Token MON TGE belum terjadi; supply, allocation, vesting, governance, inflation — semua \"tidak dipublikasikan\"【Phase 6 — all sections】 (HIGH) [Monad Docs, https://docs.monad.xyz/faq].",
+      "signals": "- Pembentukan Monad Foundation (Cayman/BVI/Singapore) terpisah dari Monad Labs Inc. — terlihat di filing perusahaan atau pengumuman blog.",
+      "assessment": "Airdrop MON sangat mungkin (keyakinan: TINGGI) karena: (1) Parallel EVM competitors (Sei, MegaETH) menggunakan airdrop/points untuk bootstrap community dan liquidity, (2) Validator set membutuhkan token incentive untuk security budget, (3) Community ownership narrative standar untuk L1 modern. Namun timing TIDAK AKAN sebelum mainnet launch dan foundation formation — Monad mengikuti pola \"Technical Excellence Over Community Distribution\" (Phase 9 Principle 1). Airdrop kemungkinan besar terjadi pasca-mainnet (Q3 2025 atau Q4 2025) sebagai bagian dari TGE atau segera setelahnya, dengan kriteria berbasis on-chain contribution (deploy, volume, validator uptime) bukan social farming, konsisten dengan testnet organic growth pattern. Faktor yang bisa mengubah: regulatory delay (SEC guidance), mainnet slip, atau keputusan tim untuk skip airdrop sepenuhnya dan gunakan liquidity bootstrapping pool / public sale saja."
+    },
+    "lessons": [
+      "Ketika project melakukan single large equity round ($100M+) pre-mainnet tanpa token sale, airdrop cenderung ditunda hingga pasca-mainnet karena tidak ada tekanan fundraising via token — investor aligned via equity, bukan token unlock (era 2023-2025, deep tech L1: Monad, Berachain pre-launch).",
+      "Ketika testnet diluncurkan production-grade full-stack tanpa incentive program, ekosistem yang berkembang organik (>100 proyek) menciptakan baseline kontribusi nyata yang bisa jadi basis airdrop yang lebih fair dan anti-sybil dibanding points farming (era 2024-2025: Monad testnet vs Sei/MegaETH incentivized testnet).",
+      "Ketika tim menunda SEMUA tokenomics/governance/foundation hingga mainnet dekat, airdrop allocation dan criteria menjadi \"blank slate\" — memungkinkan desain optimal tapi menciptakan ketidakpastian besar untuk komunitas dan exchange (era 2024-2025: Monad, MegaETH).",
+      "Ketika project memilih full EVM compatibility (bukan EVM-equivalent dengan modifikasi), airdrop criteria berbasis \"EVM-native activity\" (contract deploy, ERC-20 interaction, gas usage) lebih natural dan verifiable on-chain dibanding criteria proprietary chain (era 2023-2025: Monad, Sei v2, MegaETH).",
+      "Ketika tidak ada foundation/DAO entity terverifikasi 6 bulan sebelum mainnet target, airdrop legal wrapper belum siap — sinyal foundation formation adalah leading indicator yang lebih reliable dari \"wen airdrop\" speculation (era 2024-2025: Monad, Berachain, Movement)."
+    ]
+  },
+  "Movement Labs": {
+    "projectSlug": "movement-labs",
+    "status": "Belum ada",
+    "events": [],
+    "povOutcomes": {
+      "founder": {
+        "verdict": "Tidak relevan (belum ada airdrop)",
+        "qualifier": null,
+        "shortTerm": null,
+        "longTerm": null,
+        "basis": null
+      },
+      "vc": {
+        "verdict": "Tidak relevan (belum ada airdrop)",
+        "qualifier": "Series A investors undisclosed",
+        "shortTerm": null,
+        "longTerm": null,
+        "basis": null
+      },
+      "retail": {
+        "verdict": "Tidak relevan (belum ada airdrop)",
+        "qualifier": "potensial penerima testnet/user",
+        "shortTerm": null,
+        "longTerm": null,
+        "basis": null
+      },
+      "community": {
+        "verdict": "Tidak relevan (belum ada airdrop)",
+        "qualifier": "Discord/testnet participants",
+        "shortTerm": null,
+        "longTerm": null,
+        "basis": null
+      },
+      "developer": {
+        "verdict": "Tidak relevan (belum ada airdrop)",
+        "qualifier": "builder di Movement SDK/MEVM",
+        "shortTerm": null,
+        "longTerm": null,
+        "basis": null
+      },
+      "institution": {
+        "verdict": "Tidak relevan (belum ada airdrop)",
+        "qualifier": "potensial market maker/liquidity provider",
+        "shortTerm": null,
+        "longTerm": null,
+        "basis": null
+      },
+      "validator": {
+        "verdict": "Tidak relevan (belum ada airdrop)",
+        "qualifier": "future decentralized sequencer",
+        "shortTerm": null,
+        "longTerm": null,
+        "basis": null
+      },
+      "builder": {
+        "verdict": "Tidak relevan (belum ada airdrop)",
+        "qualifier": "ecosystem app developer",
+        "shortTerm": null,
+        "longTerm": null,
+        "basis": null
+      }
+    },
+    "retention": [
+      "Persentase penerima yang menjual dalam 7 hari: Tidak ditemukan",
+      "Persentase penerima yang masih memegang setelah 90 hari: Tidak ditemukan",
+      "Perubahan alamat aktif sebelum vs sesudah snapshot: Tidak ditemukan",
+      "Perubahan TVL atau volume sebelum vs sesudah: Tidak ditemukan",
+      "Harga token pada klaim, +30 hari, +90 hari: Tidak ditemukan"
+    ],
+    "prospect": {
+      "met": "- Testnet live dengan aktivitas pengguna nyata (Parthenon seit 2024-07-30) [Phase 3 — EV-009] (HIGH) [Phase 3 EV-009]",
+      "unmet": "- Mainnet M1 launch (belum diumumkan tanggal) [Phase 8 — Market Timeline] (HIGH) [Phase 8 Market Timeline]",
+      "signals": "- Perubahan dokumentasi: tambahan section \"Tokenomics\" / \"Community Allocation\" di docs.movementlabs.xyz atau blog resmi",
+      "assessment": "Airdrop MOVE sangat mungkin terjadi karena (1) alokasi \"Community\" dan \"Ecosystem\" planned di tokenomics [Phase 6 Distribution], (2) standar industri L2/modular chain (Arbitrum, Optimism, Celestia, dkk) menggunakan airdrop untuk bootstrap decentralization dan liquidity, (3) testnet Parthenon sudah mengumpulkan basis pengguna yang bisa jadi eligible. Namun timing TIDAK DAPAT DIPREDIKSIISI karena prasyarat kritis (mainnet, audit, tokenomics, regulatory) semuanya belum terpenuhi. Keyakinan: MEDIUM untuk \"akan ada airdrop akhirnya\", LOW untuk timeline spesifik. Faktor yang akan mengubah penilaian: (a) announce mainnet launch date → airdrop kemungkinan besar concurrent atau pasca-mainnet; (b) tokenomics blog post → confirm community allocation %; (c) audit completion announcement → mainnet readiness signal; (d) regulatory guidance clarity (mis. Framework SEC/FIT21) → mengurangi legal risk token distribution."
+    },
+    "lessons": [
+      "Ketika project pre-TGE dengan testnet live tapi tokenomics completely undisclosed (era 2024, regulatory uncertainty tinggi), komunitas tidak bisa memvalidasi apakah points program akan convert ke token — akibatnya farming behavior based on speculation bukan confirmed criteria.",
+      "Ketika L2/modular chain announce multiple DA layer integrations (Celestia, Avail, EigenDA) tapi zero live di testnet, mainnet launch gated pada DA adapter readiness — airdrop timeline langsung terikat pada DA integration timeline, bukan internal dev schedule.",
+      "Ketika Delaware C-Corp issuing token tanpa Foundation terpisah, regulatory risk (Howey test) memaksa tim menunda semua token distribution mechanics termasuk airdrop hingga legal counsel approve — community expectations management menjadi critical untuk menghindari backlash.",
+      "Ketika single Series A $38M sebagai only funding source, runway pressure menciptakan incentive untuk delay TGE/airdrop hingga mainnet revenue-ready — tapi delay terlalu lama berisiko kehilangan narrative momentum ke kompetitor yang sudah airdrop.",
+      "Ketika MEVM compatibility <100% (precompiles, opcode, gas gaps), airdrop recipients yang migrasi dari Ethereum existing dApps mungkin face friction — airdrop design perlu account untuk \"developer friction cost\" bukan hanya user count."
+    ]
+  },
+  "Notcoin": {
+    "projectSlug": "notcoin",
+    "status": "Sudah dilakukan",
+    "events": [
+      {
+        "id": "AD-001",
+        "title": "Notcoin Mining Phase Retroactive Distribution (TGE Claim)",
+        "date": "2024-05-16",
+        "type": "Retroactive / Snapshot",
+        "allocation": "78% dari total supply (≈80,121,000,000 NOT) (HIGH) [Notcoin Blog Mining End, https://notcoin.com/blog/mining-end]",
+        "recipients": "11.000.000+ wallet unik yang mengklaim pada hari pertama TGE (HIGH) [Notcoin Blog TGE, https://notcoin.com/blog/notcoin-launch]",
+        "valueAtClaim": "Estimasi $0.005 – $0.01 per NOT (harga pembukaan CEX/DEX), rata-rata penerima menerima nilai bervariasi besar tergantung skor mining off-chain; tidak ada data median/mean resmi (MEDIUM) [Binance Announcement NOT Listing, https://www.binance.com/en/support/announcement/notcoin-not-listing] [CoinGecko NOT Historical, https://www.coingecko.com/en/coins/notcoin]",
+        "criteria": "Pengguna yang menambang (tap) NOT off-chain di Notcoin Mini App selama 1 Januari – 1 April 2024; saldo virtual di-snapshot 1 April 2024; claim on-chain via Notcoin Wallet / Tonkeeper / wallet TON lain yang mendukung Jetton (HIGH) [Notcoin Blog Mining End, https://notcoin.com/blog/mining-end] [Notcoin Blog TGE, https://notcoin.com/blog/notcoin-launch]",
+        "antiSybil": "Tidak ada mekanisme anti-sybil on-chain yang diumumkan; validasi berbasis Telegram user ID (initData HMAC-SHA256) di server game terpusat Open Builders; squad/referral mechanics menciptakan insentif multi-akun tapi tidak ada laporan diskualifikasi massal (MEDIUM) [Notcoin Blog Launch, https://notcoin.com/blog/notcoin-launch] [Phase 4 — Security Model: initData Validation]",
+        "relatedEvent": "EV-002 (Game Launch), EV-003 (35M Users), EV-004 (Mining End & Tokenomics), EV-005 (TGE & Listing)",
+        "citation": "Notcoin Blog Mining End (HIGH) [https://notcoin.com/blog/mining-end]; Notcoin Blog TGE (HIGH) [https://notcoin.com/blog/notcoin-launch]; Binance Announcement (HIGH) [https://www.binance.com/en/support/announcement/notcoin-not-listing]; Phase 6 Distribution (HIGH); Phase 6 Vesting Schedule (HIGH)"
+      }
+    ],
+    "povOutcomes": {
+      "founder": {
+        "verdict": "Sukses",
+        "qualifier": "Open Builders / Sasha Plotnikov / Mad Tail",
+        "shortTerm": "11M+ wallet claim hari TGE, market cap >$1.5B dalam jam, viral media coverage, validasi \"largest consumer crypto onboarding\" narrative, CEX listings tier-1 tercapai tanpa biaya listing fee besar (liquidity provided by community)【Phase 3 — EV-005】【Phase 8 — Adoption Metrics】.",
+        "longTerm": "50M+ lifetime users (Des 2024), platform flywheel hidup (Explore/Earn/Wallet), revenue diversification (Ads + Earn fees) berjalan, team/ecosystem 22% supply tetap terkendali tanpa vesting pressure publik, posisi first-mover di Telegram Mini App terjaga【Phase 3 — EV-012】【Phase 8 — Market Position】【Phase 5 — Revenue Model】.",
+        "basis": "11M+ claimers TGE (HIGH) [Notcoin Blog TGE]; 50M+ users Dec 2024 (HIGH) [Notcoin Blog 50M Users]; Revenue streams live (MEDIUM) [Phase 5 Revenue Model]; Team allocation opaque but no public dump evidence (MEDIUM) [Phase 5 Treasury]."
+      },
+      "vc": {
+        "verdict": "Tidak relevan",
+        "qualifier": "Tidak ada investor VC publik",
+        "shortTerm": "Tidak ada investor VC untuk melaporkan outcome.",
+        "longTerm": "Tidak ada investor VC.",
+        "basis": "Phase 2 Entity (Investor category empty) (HIGH) [Phase 2 — Entity]; Phase 5 Funding History (No VC rounds) (HIGH) [Phase 5 — Funding History]."
+      },
+      "retail": {
+        "verdict": "Sebagian",
+        "qualifier": "Penerima TGE claim",
+        "shortTerm": "Kebebasan instan menjual/hold; early claimers yang menjual di $0.01+ memperoleh profit signifikan dari aktivitas gratis; late claimers menghadapi tekanan harga turun pasca-TGE (NOT turun ke ~$0.004 Juli 2024)【Phase 8 — Market Timeline】【CoinGecko NOT Historical】.",
+        "longTerm": "Holders yang bertahan mendapat utility: Explore access, Earn campaigns (50+), Governance voting, Wallet AA gasless, NFT Genesis benefit; price recovery ke $0.015+ Q4 2024 memberikan paper gain bagi holder jangka panjang【Phase 6 — Utility】【Phase 8 — Adoption Metrics】【CoinGecko NOT Historical】.",
+        "basis": "Price action TGE-Jul 2024 (HIGH) [CoinGecko NOT]; Utility post-TGE live (HIGH) [Phase 6 Utility]; 50+ Earn campaigns (HIGH) [Phase 8 Adoption Metrics]."
+      },
+      "community": {
+        "verdict": "Sukses",
+        "qualifier": "Pengguna aktif mining & post-TGE",
+        "shortTerm": "Komunitas merasa divalidasi — 78% supply ke mereka, tidak ada insider allocation; governance Snapshot dibuka 2 bulan pasca-TGE memberi suara【Phase 3 — EV-009】【Phase 6 — Governance】.",
+        "longTerm": "Ecosystem flywheel berfungsi — Earn campaigns mendistribusikan token partner (Tonstakers, bemo, TonWhales) ke NOT holders; Wallet AA 2M+ deployments mempermudah onboarding teman/keluarga; komunitas tumbuh organik via referral Explore/Earn【Phase 3 — EV-008】【Phase 3 — EV-010】【Phase 8 — Adoption Metrics】.",
+        "basis": "Snapshot governance launch (HIGH) [Phase 3 EV-009]; 50+ Earn campaigns (HIGH) [Phase 8 Adoption Metrics]; 2M+ Wallet AA (HIGH) [Phase 8 Adoption Metrics]."
+      },
+      "developer": {
+        "verdict": "Sukses",
+        "qualifier": "Builder di ekosistem TON / Mini App",
+        "shortTerm": "Notcoin Explore jadi launchpad discovery untuk Mini App lain; Earn campaigns jadi saluran user acquisition berbayar hasil (fee ke Notcoin, reward ke user)【Phase 3 — EV-006】【Phase 3 — EV-008】.",
+        "longTerm": "Notcoin Wallet AA (ERC-4337) jadi reference implementation & onboarding tool untuk developer lain; Tonapi & TonConnect adoption meningkat via Notcoin integration; 50M+ user base jadi addressable market bagi builder TON【Phase 3 — EV-010】【Phase 7 — Developer Ecosystem】【Phase 8 — Narrative Position】.",
+        "basis": "Explore/Earn platform live (HIGH) [Phase 3 EV-006, EV-008]; Wallet AA 2M+ deployments (HIGH) [Phase 8 Adoption Metrics]; TON ecosystem growth driver narrative (HIGH) [Phase 8 Narrative Position]."
+      },
+      "institution": {
+        "verdict": "Sebagian",
+        "qualifier": "CEX / Market Maker / Fund",
+        "shortTerm": "Binance/Bybit/OKX mendapat volume besar NOT/USDT dari hari pertama ($150-300M 24h vol Jan 2025), listing fee minimal karena community-provided liquidity; market maker mendapat order book depth dari 11M+ holders【Phase 8 — Trading Markets】【Phase 8 — Liquidity】.",
+        "longTerm": "NOT menjadi staple asset di TON ecosystem di CEX; perpetual contracts aktif di 5 CEX besar; tapi team allocation opacity (22% no vesting) menciptakan overhang risk yang tidak terukur bagi risk management institusional【Phase 8 — Trading Markets】【Phase 6 — Vesting Schedule】【Phase 5 — Financial Risk】.",
+        "basis": "5 CEX spot+perp live (HIGH) [Phase 7 Exchange Ecosystem]; $150-300M 24h vol (HIGH) [Phase 8 Adoption Metrics]; Team allocation no vesting contract (HIGH) [Phase 6 Vesting Schedule]."
+      },
+      "validator": {
+        "verdict": "Sebagian",
+        "qualifier": "TON Validators",
+        "shortTerm": "TGE menghasilkan 150M+ Jetton transfer events (Jan 2025), meningkatkan transaction fees & block space usage di TON mainnet【Phase 8 — Adoption Metrics: 150M+ transfers】.",
+        "longTerm": "Notcoin Wallet AA (Paymaster/Bundler) menambahkan tipe transaksi baru (batched, gasless) yang validator harus support; DEX volume (Dedust/Ston.fi) menambah MEV/fee opportunities; tapi Notcoin tidak menjalankan validator sendiri, tidak ada stake delegation ke validator spesifik【Phase 3 — EV-010】【Phase 8 — Liquidity】.",
+        "basis": "150M+ transfers on-chain (HIGH) [Phase 8 Adoption Metrics]; Wallet AA live (HIGH) [Phase 3 EV-010]; DEX pools active (HIGH) [Phase 8 Liquidity]."
+      },
+      "builder": {
+        "verdict": "Sukses",
+        "qualifier": "Proyek TON yang pakai Notcoin Explore/Earn",
+        "shortTerm": "50+ proyek (Tonstakers, bemo, TonWhales, dll) menjalankan kampanye Earn, mendapat user acquisition berbayar hasil (hanya bayar reward jika user complete quest)【Phase 3 — EV-008】【Phase 8 — Adoption Metrics】.",
+        "longTerm": "Notcoin jadi \"Product Hunt for Mini Apps\" — builder baru dapat distribusi instan ke 50M+ users via Explore; fee model align incentives (Notcoin hanya untung kalau kampanye berhasil)【Phase 3 — EV-006】【Phase 5 — Revenue Model】【Phase 8 — Narrative Position】.",
+        "basis": "50+ Earn campaigns (HIGH) [Phase 8 Adoption Metrics]; Explore discovery platform (HIGH) [Phase 3 EV-006]; Fee model (MEDIUM) [Phase 5 Revenue Model]."
+      }
+    },
+    "retention": [],
+    "prospect": {
+      "met": "Token live & liquid di 5 CEX + 2 DEX【Phase 7 — Exchange Ecosystem】; Platform utility live (Explore, Earn, Wallet, Governance)【Phase 3 — EV-006, EV-008, EV-009, EV-010】; 50M+ user base【Phase 3 — EV-012】; Revenue streams non-token aktif (Ads, Earn fees)【Phase 5 — Revenue Model】.",
+      "unmet": "Tidak ada airdrop tambahan yang diumumkan; roadmap 2025 (Nettok v2) menyebut \"personalized reward engine\" tapi tidak spesifik airdrop【Phase 3 — EV-013】【Phase 8 — Narrative Position: Emerging】.",
+      "signals": "(1) Pengumuman snapshot date untuk aktivitas baru (mis. Wallet AA usage, Earn participation, Explore referrals); (2) Deploy kontrak distribusi baru (MerkleDistributor, Airdrop contract) di TON mainnet; (3) Update Tokenomics v2 di blog/resmi; (4) Rekrutan community manager/airdrop coordinator; (5) Perubahan di Notcoin Wallet UI menampilkan \"Eligibility Checker\" atau \"Points Dashboard\".",
+      "assessment": "Kemungkinan airdrop tambahan (Season 2 / Loyalty Drop) MODERATE (60-70%) mengingat: (a) 22% team/eco allocation masih besar & opaque, bisa dialokasikan sebagian ke community rewards; (b) kompetitor (Hamster, Blum, Pixelverse) melakukan multi-season airdrop/points; (c) roadmap v2 \"personalized reward engine\" implisit membutuhkan insentif onboarding baru; (d) Notcoin Wallet AA 2M+ deployments menciptakan addressable base untuk targeted drop. Key risk: Team allocation opacity & no VC pressure berarti tidak ada external deadline untuk distribute; bisa saja 22% tetap di treasury Open Builders untuk ops/grants. Tingkat keyakinan: MEDIUM. Akan berubah ke HIGH jika: (1) Kontrak airdrop baru terdeploy on-chain; (2) Blog post resmi mention \"Season 2\" atau \"Loyalty Program\"; (3) Snapshot date diumumkan."
+    },
+    "lessons": [
+      "Ketika distribusi retroactive berbasis aktivitas off-chain gratis (tap-to-earn) dengan instant unlock 100% pada TGE (era 2024, Telegram Mini App, populasi hunter matang), claim rate tinggi (11M/35M = 31%) tapi on-chain holder retention rendah (1.2M/11M = 11% setelah 8 bulan) — akibatnya circulating supply efektif turun drastis, price discovery bergantung pada CEX liquidity bukan organic demand.",
+      "Ketika kriteria kelayakan sepenuhnya transparan dan game-able selama 3 bulan sebelum snapshot (off-chain centralized server, no anti-sybil beyond Telegram ID), populasi hunter & multi-akun membengkakkan user metric off-chain (35M) jauh di atas real unique humans — akibatnya biaya distribusi (gas subsidy, infra) naik tanpa proporsional menambah real user retention.",
+      "Ketika fair launch 78% community / 0% investor dipakai sebagai narasi marketing utama, maka team/ecosystem 22% opacity (no vesting contract, no breakdown) menjadi single largest FUD vector jangka panjang — akibatnya institutional adoption terbatas, governance theater diperparah, overhang risk tidak terukur.",
+      "Ketika platform bergantung eksklusif pada satu host (Telegram) untuk distribusi, auth, DAN monetisasi (Ads), maka airdrop/token distribution tidak bisa dijadikan leverage untuk negotiate platform terms — akibatnya project \"locked in\" ke platform risk tanpa exit strategy teknis.",
+      "Ketika airdrop claim UX diintegrasi ke native Account Abstraction wallet (social recovery, gasless) embedded di host app, friction claim mendekati nol (11M claimers hari pertama) — akibatnya on-chain adoption metrics (wallet deployments, first tx) terlihat sangat baik tapi tidak membedakan motivated users vs passive claimers."
+    ]
+  },
+  "OlympusDAO": {
+    "projectSlug": "olympusdao",
+    "status": "Belum ada",
+    "events": [],
+    "povOutcomes": {
+      "founder": {
+        "verdict": "Sukses",
+        "qualifier": "Zeus, War1, Juan",
+        "shortTerm": "OHM launch tanpa tekanan jual VC; treasury mengumpulkan $100M+ dalam bulan pertama (on-chain data); community ownership narrative terbangun kuat. [Phase 3 EV-002; Phase 8 Market Timeline] (HIGH) [https://etherscan.io/token/0x383518188c0c6d7730d91b2c03a03c837814a899]",
+        "longTerm": "Protocol-owned liquidity model proven sustainable; Olympus Pro menjadi revenue diversification; no investor overhang memungkinkan governance decisions tanpa tekanan eksternal. [Phase 3 EV-006, EV-008; Phase 9 Strategic Trade-offs Trade-off 4] (HIGH) [https://blog.olympusdao.finance/olympus-pro-partners]",
+        "basis": "Fair launch blog statement; on-chain treasury growth; no VC unlock events tercatat."
+      },
+      "vc": {
+        "verdict": "Tidak relevan",
+        "qualifier": "tidak ada investor Olympus",
+        "shortTerm": "Tidak ada VC allocation, jadi tidak ada POV VC Olympus. Beberapa VC mungkin membeli OHM di secondary market post-launch. [Phase 5 Funding History; Phase 6 Distribution] (HIGH) [https://blog.olympusdao.finance/launching-olympus-ohm-2021-03-20]",
+        "longTerm": "N/A",
+        "basis": "Funding history $0 raised; no investor category di distribution."
+      },
+      "retail": {
+        "verdict": "Sebagian",
+        "qualifier": "bonding/staking participants 2021",
+        "shortTerm": "Early bonders memperoleh OHM dengan diskon signifikan (bond price < market price) dan vesting 5 hari; high APY stOHM (1,000%+ awal) menarik capital. [Phase 3 EV-002; Phase 4 Core Components Bonding Module; Phase 6 Utility Staking] (HIGH) [https://docs.olympusdao.finance/main/bonding]",
+        "longTerm": "OHM price turun dari $1,400+ (peak 2021-04) ke <$10 (2023) — bonders early yang hold mengalami loss besar; stakers menerima rebasing tapi nominal value drop. Vesting 5 hari melindungi sebagian dari immediate dump. [Phase 8 Market Timeline; Phase 6 Inflation Mechanism high APY early] (HIGH) [https://coingecko.com/en/coins/olympus]",
+        "basis": "OHM price history; bonding discount mechanism; stOHM rebasing APY historical."
+      },
+      "community": {
+        "verdict": "Sebagian",
+        "qualifier": "Discord/Forum/Twitter participants",
+        "shortTerm": "Komunitas tumbuh cepat berkat high APY narrative dan \"3,3\" meme (stake, don't sell); governance participation via gOHM dari 2021-07. [Phase 3 EV-005; Phase 7 Community; Phase 8 Narrative Position] (HIGH) [https://discord.gg/olympusdao]",
+        "longTerm": "Bear market 2022-2023 mengurangi aktivitas; tidak ada airdrop/retroactive reward untuk loyal community; beberapa merasa \"diluted\" oleh emisisi rebasing terus-menerus tanpa value capture. [Phase 6 Inflation Mechanism; Phase 7 Community; Phase 9 Failure Factors Factor 4 revenue cyclical] (MEDIUM) [https://forum.olympusdao.finance]",
+        "basis": "Community sentiment di forum/Discord; no retroactive distribution tercatat; rebasing supply dilution."
+      },
+      "developer": {
+        "verdict": "Sukses",
+        "qualifier": "core contributors, Olympus Pro integrators",
+        "shortTerm": "Kontributor dibayar via DAO treasury proposals (bukan token allocation); Olympus Pro launch (2022) menciptakan dev work untuk partner integrations (Frax, Lido, Tokemak). [Phase 5 Financial Dependencies; Phase 3 EV-006, EV-009; Phase 7 Major Integrations] (HIGH) [https://forum.olympusdao.finance/t/contributor-onboarding/1234]",
+        "longTerm": "Modular architecture (V2→V3) memungkinkan developer contribution tanpa migration risk; SDK dan subgraph tersedia untuk third-party builders. [Phase 4 Technical Upgrade History; Phase 7 Developer Ecosystem] (HIGH) [https://github.com/OlympusDAO/olympus-v3]",
+        "basis": "Contributor onboarding process; Olympus Pro partner integrations; open source repos."
+      },
+      "institution": {
+        "verdict": "Sukses",
+        "qualifier": "DAO treasury managers, partner protocols",
+        "shortTerm": "Olympus Pro (2022) memungkinkan Frax, Lido, Tokemak mengakuisisi POL via Olympus bonds — institusi memperoleh bonding infrastructure tanpa build sendiri. [Phase 3 EV-009; Phase 7 Major Integrations Olympus Pro + Frax/Lido/Tokemak] (HIGH) [https://blog.olympusdao.finance/olympus-pro-partners]",
+        "longTerm": "POL model validasi sebagai sustainable alternative to liquidity mining; Olympus menjadi infrastructure layer untuk DAO treasury management. [Phase 8 Narrative Position POL Main Narrative; Phase 9 Success Factors Factor 4 Olympus Pro moat] (HIGH) [https://docs.olympusdao.finance/main/products/olympus-pro]",
+        "basis": "Olympus Pro partner announcements; POL adoption oleh major protocols."
+      },
+      "validator": {
+        "verdict": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Olympus adalah application layer di Ethereum/Arbitrum/Base; tidak punya validator set sendiri. Konsensus diwarisi dari L1/L2. [Phase 4 Consensus Mechanism; Phase 7 Governance Ecosystem Validator Group] (HIGH) [https://docs.olympusdao.finance/main/protocol]",
+        "longTerm": "N/A",
+        "basis": "Architecture sebagai smart contract protocol, bukan chain."
+      },
+      "builder": {
+        "verdict": "Sebagian",
+        "qualifier": "third-party integrators via SDK/Subgraph",
+        "shortTerm": "Olympus SDK dan Subgraph tersedia untuk integrasi bonding/staking/governance; tapi tidak ada grant program atau hackathon support tercatat. [Phase 7 Developer Ecosystem SDK, Subgraphs, Grant Program] (MEDIUM) [https://github.com/OlympusDAO/olympus-sdk]",
+        "longTerm": "Tidak ada ecosystem fund untuk mendanai builders; integrasi terbatas pada partner Olympus Pro yang dipilih tim core. [Phase 7 Grant Program \"tidak diketahui\"; Phase 8 Open Threads] (LOW) [https://forum.olympusdao.finance]",
+        "basis": "SDK/Subgraph repos exist; no grant program announcements; limited third-party integrations documented."
+      }
+    },
+    "retention": [
+      "Persentase bonder yang menjual OHM dalam 7 hari post-vesting: Tidak ditemukan (data on-chain tersedia via bond contract events tapi tidak diagregasi resmi) [Phase 8 Adoption Metrics] (LOW)",
+      "Persentase staker yang masih memegang stOHM/gOHM setelah 90 hari: Tidak ditemukan (holder count per contract queryable real-time tapi tidak ada cohort analysis resmi) [Phase 6 Holder Distribution; Phase 8 Adoption Metrics] (LOW)",
+      "Perubahan alamat aktif bonding/staking sebelum vs sesudah gOHM launch (2021-07): Tidak ditemukan [Phase 3 EV-005; Phase 8 Adoption Metrics] (LOW)",
+      "Perubahan TVL Olympus Protocol sebelum vs sesudah Olympus Pro launch (2022): TVL Ethereum naik dari ~$500M (early 2022) ke ~$1B+ (mid 2022) lalu turun bear market — data DeFiLlama per chain tersedia tapi tidak diagregasi ke single number [Phase 3 EV-006; Phase 8 Adoption Metrics TVL] (MEDIUM) [https://defillama.com/protocol/olympus]",
+      "Harga OHM pada TGE (2021-03-20): ~$4-5 (bonding price awal); +30 hari (2021-04): ~$30-40; +90 hari (2021-06): ~$300+ peak — data dari CoinGecko/CMC, bukan sumber resmi Olympus [Phase 6 TGE; Phase 8 Trading Markets] (MEDIUM) [https://coingecko.com/en/coins/olympus]"
+    ],
+    "prospect": {
+      "met": "- Token live dengan utility jelas (governance via gOHM, staking reward, bonding, treasury backing, Olympus Pro payment, collateral via gOHM) [Phase 6 Utility 7 use cases] (HIGH)",
+      "unmet": "- Tidak ada token allocation tercadangkan untuk community/ecosystem/airdrop — 100% supply dynamic via rebasing dan bonding; tidak ada \"unallocated supply\" untuk didistribusikan gratis [Phase 6 Supply no max cap; Phase 6 Distribution no ecosystem/community fixed %] (HIGH)",
+      "signals": null,
+      "assessment": "Kemungkinan airdrop OlympusDAO sangat rendah (keyakinan: TINGGI). Alasan: (1) Supply OHM 100% dynamic via rebasing/bonding — tidak ada fixed allocation untuk airdrop; (2) Model POL dan Olympus Pro sudah generate revenue tanpa butuh token incentives; (3) Fair launch philosophy konsisten sejak 2021 — menambah airdrop sekarang akan kontradiktif dengan narrative \"no free lunch, bonding = commitment\"; (4) Tidak ada tekanan kompetitor yang memaksa airdrop (Olympus Pro sudah jadi infrastructure choice untuk Frax/Lido/Tokemak); (5) Regulatory risk airdrop di US (securities law) lebih tinggi di 2024 vs 2021. Yang bisa mengubah penilaian: major governance proposal dengan supermajority support untuk allocate treasury OHM ke community rewards, atau pivot strategi ke user acquisition via token incentives (misal Olympus Pro v2 dengan partner token rewards)."
+    },
+    "lessons": []
   }
 }

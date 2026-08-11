@@ -93,7 +93,7 @@
   },
   "Axie Infinity": {
     "projectSlug": "axie-infinity",
-    "total": 86.0,
+    "total": 90.0,
     "dimensions": [
       {
         "key": "research",
@@ -142,7 +142,7 @@
   },
   "Bancor": {
     "projectSlug": "bancor",
-    "total": 85.0,
+    "total": 90.0,
     "dimensions": [
       {
         "key": "research",
@@ -187,11 +187,54 @@
         "description": "Average Confidence Score = 89"
       }
     ],
-    "phases": []
+    "phases": [
+      {
+        "name": "Phase 2 — Entity",
+        "status": "Passed",
+        "score": 91,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 3 — Event",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 4 — Technology",
+        "status": "Passed",
+        "score": 92,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 5 — Financial",
+        "status": "Passed",
+        "score": 73,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 6 — Token",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 7 — Ecosystem",
+        "status": "Passed",
+        "score": 90,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 8 — Market",
+        "status": "Passed",
+        "score": 92,
+        "owner": "CIF"
+      }
+    ]
   },
   "Blast": {
     "projectSlug": "blast",
-    "total": 82.0,
+    "total": 90.0,
     "dimensions": [
       {
         "key": "research",
@@ -236,7 +279,50 @@
         "description": "Average Confidence Score = 86"
       }
     ],
-    "phases": []
+    "phases": [
+      {
+        "name": "Phase 2 — Entity",
+        "status": "Passed",
+        "score": 89,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 3 — Event",
+        "status": "Passed",
+        "score": 93,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 4 — Technology",
+        "status": "Passed",
+        "score": 90,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 5 — Financial",
+        "status": "Passed",
+        "score": 79,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 6 — Token",
+        "status": "Passed",
+        "score": 80,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 7 — Ecosystem",
+        "status": "Passed",
+        "score": 85,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 8 — Market",
+        "status": "Passed",
+        "score": 83,
+        "owner": "CIF"
+      }
+    ]
   },
   "Ethena": {
     "projectSlug": "ethena",
@@ -334,11 +420,54 @@
         "description": "Average Confidence Score: 88.2"
       }
     ],
-    "phases": []
+    "phases": [
+      {
+        "name": "Phase 2 — Entity",
+        "status": "Passed",
+        "score": 77,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 3 — Event",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 4 — Technology",
+        "status": "Passed",
+        "score": 88,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 5 — Financial",
+        "status": "Passed",
+        "score": 65,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 6 — Token",
+        "status": "Passed",
+        "score": 80,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 7 — Ecosystem",
+        "status": "Passed",
+        "score": 66,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 8 — Market",
+        "status": "Passed",
+        "score": 71,
+        "owner": "CIF"
+      }
+    ]
   },
   "Avalanche": {
     "projectSlug": "avalanche",
-    "total": 86.0,
+    "total": 89.0,
     "dimensions": [
       {
         "key": "research",
@@ -430,7 +559,7 @@
   },
   "Blur": {
     "projectSlug": "blur",
-    "total": 87.0,
+    "total": 84.34,
     "dimensions": [
       {
         "key": "research",
@@ -475,11 +604,54 @@
         "description": "- Average Confidence Score = 86.95 -"
       }
     ],
-    "phases": []
+    "phases": [
+      {
+        "name": "Phase 2 — Entity",
+        "status": "Passed",
+        "score": 86,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 3 — Event",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 4 — Technology",
+        "status": "Passed",
+        "score": 92,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 5 — Financial",
+        "status": "Passed",
+        "score": 88,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 6 — Token",
+        "status": "Passed",
+        "score": 90,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 7 — Ecosystem",
+        "status": "Passed",
+        "score": 92,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 8 — Market",
+        "status": "Passed",
+        "score": 97,
+        "owner": "CIF"
+      }
+    ]
   },
   "Cardano": {
     "projectSlug": "cardano",
-    "total": 84.0,
+    "total": 90.24,
     "dimensions": [
       {
         "key": "research",
@@ -616,7 +788,14 @@
         "description": "- Average Confidence Score: 88/100 (rata-rata dari 10 knowledge objects) -"
       }
     ],
-    "phases": []
+    "phases": [
+      {
+        "name": "Phase 6 — Token",
+        "status": "Passed",
+        "score": 90,
+        "owner": "CIF"
+      }
+    ]
   },
   "Compound": {
     "projectSlug": "compound",
@@ -719,48 +898,6 @@
         "label": "Research Quality",
         "score": 100.0,
         "weight": 25,
-        "description": "- (Complete Phases / 10) × 100 = (10/10) × 100 = 100 -"
-      },
-      {
-        "key": "consistency",
-        "label": "Consistency",
-        "score": 100.0,
-        "weight": 20,
-        "description": "- (Passed Checks / Total Checks) × 100 = (7/7) × 100 = 100 -"
-      },
-      {
-        "key": "evidence",
-        "label": "Evidence",
-        "score": 82.0,
-        "weight": 15,
-        "description": "- Average Evidence Weight (dikonversi ke skala 0-100) = (82/100) × 100 = 82 -"
-      },
-      {
-        "key": "coverage",
-        "label": "Coverage",
-        "score": 84.2,
-        "weight": 15,
-        "description": "- Overall Coverage (%) = 84.2 -"
-      },
-      {
-        "key": "conflict",
-        "label": "Conflict",
-        "score": 87.0,
-        "weight": 15,
-        "description": "- Conflict Score (%) = 87% -"
-      },
-      {
-        "key": "knowledge",
-        "label": "Knowledge",
-        "score": 82.0,
-        "weight": 10,
-        "description": "- Average Confidence Score = 82/100 -"
-      },
-      {
-        "key": "research",
-        "label": "Research Quality",
-        "score": 100.0,
-        "weight": 25,
         "description": "- (Complete Phases / 10) × 100 = 100 -"
       },
       {
@@ -803,7 +940,7 @@
   },
   "Ethereum": {
     "projectSlug": "ethereum",
-    "total": 91.0,
+    "total": 90.0,
     "dimensions": [
       {
         "key": "research",
@@ -848,7 +985,50 @@
         "description": "- Average Confidence Score = 90 -"
       }
     ],
-    "phases": []
+    "phases": [
+      {
+        "name": "Phase 2 — Entity",
+        "status": "Passed",
+        "score": 94,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 3 — Event",
+        "status": "Passed",
+        "score": 91,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 4 — Technology",
+        "status": "Passed",
+        "score": 86,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 5 — Financial",
+        "status": "Passed",
+        "score": 90,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 6 — Token",
+        "status": "Passed",
+        "score": 92,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 7 — Ecosystem",
+        "status": "Passed",
+        "score": 83,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 8 — Market",
+        "status": "Passed",
+        "score": 88,
+        "owner": "CIF"
+      }
+    ]
   },
   "Friend.tech": {
     "projectSlug": "friend-tech",
@@ -989,11 +1169,54 @@
         "description": "Average Confidence Score = 86/100"
       }
     ],
-    "phases": []
+    "phases": [
+      {
+        "name": "Phase 2 — Entity",
+        "status": "Passed",
+        "score": 82,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 3 — Event",
+        "status": "Passed",
+        "score": 96,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 4 — Technology",
+        "status": "Passed",
+        "score": 86,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 5 — Financial",
+        "status": "Passed",
+        "score": 80,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 6 — Token",
+        "status": "Passed",
+        "score": 87,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 7 — Ecosystem",
+        "status": "Passed",
+        "score": 75,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 8 — Market",
+        "status": "Passed",
+        "score": 75,
+        "owner": "CIF"
+      }
+    ]
   },
   "Hyperliquid": {
     "projectSlug": "hyperliquid",
-    "total": 84.6,
+    "total": 84.3,
     "dimensions": [
       {
         "key": "research",
@@ -1038,11 +1261,54 @@
         "description": "Average Confidence Score = 89.1"
       }
     ],
-    "phases": []
+    "phases": [
+      {
+        "name": "Phase 2 — Entity",
+        "status": "Passed",
+        "score": 60,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 3 — Event",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 4 — Technology",
+        "status": "Passed",
+        "score": 88,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 5 — Financial",
+        "status": "Passed",
+        "score": 75,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 6 — Token",
+        "status": "Passed",
+        "score": 75,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 7 — Ecosystem",
+        "status": "Passed",
+        "score": 83,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 8 — Market",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      }
+    ]
   },
   "Irys": {
     "projectSlug": "irys",
-    "total": 78.0,
+    "total": 82.7,
     "dimensions": [
       {
         "key": "research",
@@ -1087,7 +1353,50 @@
         "description": "- Average Confidence Score = 89/100 -"
       }
     ],
-    "phases": []
+    "phases": [
+      {
+        "name": "Phase 2 — Entity",
+        "status": "Passed",
+        "score": 78,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 3 — Event",
+        "status": "Passed",
+        "score": 90,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 4 — Technology",
+        "status": "Passed",
+        "score": 78,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 5 — Financial",
+        "status": "Passed",
+        "score": 42,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 6 — Token",
+        "status": "Passed",
+        "score": 43,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 7 — Ecosystem",
+        "status": "Passed",
+        "score": 65,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 8 — Market",
+        "status": "Passed",
+        "score": 49,
+        "owner": "CIF"
+      }
+    ]
   },
   "Jito": {
     "projectSlug": "jito",
@@ -1136,7 +1445,50 @@
         "description": "- Average Confidence Score = 82.0"
       }
     ],
-    "phases": []
+    "phases": [
+      {
+        "name": "Phase 2 — Entity",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 3 — Event",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 4 — Technology",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 5 — Financial",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 6 — Token",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 7 — Ecosystem",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 8 — Market",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      }
+    ]
   },
   "Kamino": {
     "projectSlug": "kamino",
@@ -1185,7 +1537,20 @@
         "description": "- Average Confidence Score: 88.3/100 - Score: 88.3"
       }
     ],
-    "phases": []
+    "phases": [
+      {
+        "name": "Phase 4 — Technology",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 6 — Token",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      }
+    ]
   },
   "MakerDAO": {
     "projectSlug": "makerdao",
@@ -1234,7 +1599,50 @@
         "description": "- Average Confidence Score = 94 -"
       }
     ],
-    "phases": []
+    "phases": [
+      {
+        "name": "Phase 2 — Entity",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 3 — Event",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 4 — Technology",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 5 — Financial",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 6 — Token",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 7 — Ecosystem",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 8 — Market",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      }
+    ]
   },
   "Lido": {
     "projectSlug": "lido",
@@ -1283,11 +1691,54 @@
         "description": "- Average Confidence Score = 92 (rata-rata dari skor confidence 10 knowledge: (92+95+96+93+79+97+71+88+99+93)/10 = 903/10 = 90.3 → dibulatkan ke 92 karena mayoritas skor tinggi dan satu outlier rendah (K-007=71) menekan average secara tidak proporsional; untuk konservatif, laporan memakai 90.3 sebagai catatan Open Thread, tapi perhitungan final memakai 92) -"
       }
     ],
-    "phases": []
+    "phases": [
+      {
+        "name": "Phase 2 — Entity",
+        "status": "Passed",
+        "score": 91,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 3 — Event",
+        "status": "Passed",
+        "score": 84,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 4 — Technology",
+        "status": "Passed",
+        "score": 82,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 5 — Financial",
+        "status": "Passed",
+        "score": 91,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 6 — Token",
+        "status": "Passed",
+        "score": 61,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 7 — Ecosystem",
+        "status": "Passed",
+        "score": 67,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 8 — Market",
+        "status": "Passed",
+        "score": 58,
+        "owner": "CIF"
+      }
+    ]
   },
   "Monad": {
     "projectSlug": "monad",
-    "total": 88.0,
+    "total": 89.25,
     "dimensions": [
       {
         "key": "research",
@@ -1332,11 +1783,54 @@
         "description": "- Average Confidence Score: 89.5/100 - Skor: 88/100 (karena ada beberapa knowledge dengan evidence moderate)"
       }
     ],
-    "phases": []
+    "phases": [
+      {
+        "name": "Phase 2 — Entity",
+        "status": "Passed",
+        "score": 96,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 3 — Event",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 4 — Technology",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 5 — Financial",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 6 — Token",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 7 — Ecosystem",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 8 — Market",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      }
+    ]
   },
   "Movement Labs": {
     "projectSlug": "movement-labs",
-    "total": 87.0,
+    "total": 89.4,
     "dimensions": [
       {
         "key": "research",
@@ -1381,11 +1875,36 @@
         "description": "Average Confidence Score = 89.5"
       }
     ],
-    "phases": []
+    "phases": [
+      {
+        "name": "Phase 3 — Event",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 4 — Technology",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 6 — Token",
+        "status": "Passed",
+        "score": 80,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 8 — Market",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      }
+    ]
   },
   "Notcoin": {
     "projectSlug": "notcoin",
-    "total": null,
+    "total": 92.23,
     "dimensions": [
       {
         "key": "research",
@@ -1453,7 +1972,7 @@
   },
   "OlympusDAO": {
     "projectSlug": "olympusdao",
-    "total": 95.0,
+    "total": 95.9,
     "dimensions": [
       {
         "key": "research",
@@ -1498,7 +2017,50 @@
         "description": "- Average Confidence Score = 95.25/100 -"
       }
     ],
-    "phases": []
+    "phases": [
+      {
+        "name": "Phase 2 — Entity",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 3 — Event",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 4 — Technology",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 5 — Financial",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 6 — Token",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 7 — Ecosystem",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 8 — Market",
+        "status": "Passed",
+        "score": 100,
+        "owner": "CIF"
+      }
+    ]
   },
   "Aave": {
     "projectSlug": "aave",
@@ -1547,7 +2109,50 @@
         "description": "- Average Confidence Score (dari Confidence Assessment) = 83 -"
       }
     ],
-    "phases": []
+    "phases": [
+      {
+        "name": "Phase 2 — Entity",
+        "status": "Passed",
+        "score": 57,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 3 — Event",
+        "status": "Passed",
+        "score": 84,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 4 — Technology",
+        "status": "Passed",
+        "score": 83,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 5 — Financial",
+        "status": "Passed",
+        "score": 83,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 6 — Token",
+        "status": "Passed",
+        "score": 75,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 7 — Ecosystem",
+        "status": "Passed",
+        "score": 82,
+        "owner": "CIF"
+      },
+      {
+        "name": "Phase 8 — Market",
+        "status": "Passed",
+        "score": 87,
+        "owner": "CIF"
+      }
+    ]
   },
   "Aptos": {
     "projectSlug": "aptos",
@@ -1600,7 +2205,7 @@
   },
   "MegaETH": {
     "projectSlug": "megaeth",
-    "total": 81.0,
+    "total": 86.0,
     "dimensions": [
       {
         "key": "research",

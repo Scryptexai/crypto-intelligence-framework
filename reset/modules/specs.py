@@ -212,6 +212,17 @@ def _check_qa_parse(text: str, project_name: str) -> tuple:
     wrapped = wrap_for_extractor(text, "conflict")
     res = _extract_qa.parse_qa(wrapped, project_name)
     if res is not None and res.get("dimensions"):
+        # The stated CIF Score must equal the sum of its own Kontribusi lines. The prompt's
+        # rule 16 already demands this ("Kedua bagian WAJIB melaporkan angka yang sama
+        # persis") and reports break it anyway -- 5 of 28 on 2026-08-10, worst at 77.85 vs a
+        # claimed 86.0. A headline number that contradicts the breakdown printed beside it is
+        # the one defect a user is guaranteed to notice, so it is caught here rather than
+        # shipped. Tolerance 1.0 is generous: six values rounded to 2dp cannot drift past ~0.5.
+        if res["total"] is not None:
+            computed = sum(d["score"] * d["weight"] / 100 for d in res["dimensions"])
+            if abs(computed - res["total"]) > 1.0:
+                return False, (f"CIF Score {res['total']} does not match the sum of its own "
+                               f"Kontribusi lines ({computed:.2f})")
         return True, (f"total={res['total']} {len(res['dimensions'])} dimensions "
                       f"{len(res.get('phases') or [])} phases")
 
@@ -302,7 +313,11 @@ _AIRDROP_HINT = (
     "3. Jika status `Sudah dilakukan` atau `Sedang berjalan`, wajib ada minimal satu blok "
     "`AD-001: <judul>` diikuti baris berlabel `Tanggal:`, `Tipe:`, `Alokasi:`, `Penerima:`, "
     "`Kriteria:`, `Sitasi:`.\n"
-    "4. JANGAN memakai heading markdown (`##`, `###`) di mana pun."
+    "4. JANGAN memakai heading markdown (`##`, `###`) di mana pun.\n"
+    "5. Angka `CIF SCORE: <n>/100` WAJIB sama persis dengan penjumlahan seluruh baris "
+    "`Kontribusi:` di atasnya. Hitung ulang penjumlahannya, lalu tulis angka yang sama di "
+    "bagian CIF SCORE CALCULATION dan di CIF MANIFEST — jangan menaksir dan jangan memakai "
+    "angka dari draf sebelumnya."
 )
 
 
