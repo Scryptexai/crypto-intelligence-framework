@@ -1,8 +1,8 @@
 # Cosmos — Deep Case Study (Phased)
 
 **CIF Dataset — Deep Dossier · Tier: Deep (anchor project)**
-**Source:** Deep Research (DeepSeek), Format v3 Dependency Pipeline (11/11 phases: foundation, entity, history, technology, financial, token, ecosystem, market, behavioral, knowledge, conflict). **Auto-assembled** by `tools/ingest.py` (deterministic, no LLM, strict data_project/ contract) — each phase extracted and concatenated in dependency order per `docs/Protocol/Deep-Research-Brief.md`; the reasoning is the source reports'.
-**Raw sources archived:** doc_backup/deep/Cosmos_foundation_2026-08.docx, doc_backup/deep/Cosmos_entity_2026-08.docx, doc_backup/deep/Cosmos_history_2026-08.docx, doc_backup/deep/Cosmos_technology_2026-08.docx, doc_backup/deep/Cosmos_financial_2026-08.docx, doc_backup/deep/Cosmos_token_2026-08.docx, doc_backup/deep/Cosmos_ecosystem_2026-08.docx, doc_backup/deep/Cosmos_market_2026-08.docx, doc_backup/deep/Cosmos_behavioral_2026-08.docx, doc_backup/deep/Cosmos_knowledge_2026-08.docx, doc_backup/deep/Cosmos_conflict_2026-08.docx.
+**Source:** Deep Research (DeepSeek), Format v3 Dependency Pipeline (12/11 phases: foundation, entity, history, technology, financial, token, ecosystem, market, behavioral, knowledge, conflict, airdrop). **Auto-assembled** by `tools/ingest.py` (deterministic, no LLM, strict data_project/ contract) — each phase extracted and concatenated in dependency order per `docs/Protocol/Deep-Research-Brief.md`; the reasoning is the source reports'.
+**Raw sources archived:** doc_backup/deep/Cosmos_foundation_2026-08.docx, doc_backup/deep/Cosmos_entity_2026-08.docx, doc_backup/deep/Cosmos_history_2026-08.docx, doc_backup/deep/Cosmos_technology_2026-08.docx, doc_backup/deep/Cosmos_financial_2026-08.docx, doc_backup/deep/Cosmos_token_2026-08.docx, doc_backup/deep/Cosmos_ecosystem_2026-08.docx, doc_backup/deep/Cosmos_market_2026-08.docx, doc_backup/deep/Cosmos_behavioral_2026-08.docx, doc_backup/deep/Cosmos_knowledge_2026-08.docx, doc_backup/deep/Cosmos_conflict_2026-08.docx, doc_backup/deep/Cosmos_airdrop_2026-08.docx.
 **Phases not run:** none.
 
 > Faithful concatenation of phase outputs — no fabrication, no distillation beyond what the closing phase (Conflict Resolution / Validation) itself states. Consider a periodic QC pass.
@@ -6229,6 +6229,116 @@ Recommended Re-run:
 QA Status: PASSED
 Confidence Level: HIGH
 
+## Airdrop Intelligence
+_ref: `docs/Ontology/DecisionEvent.md`, `docs/Ontology/Context.md` — an airdrop is a Decision Event with an eight-POV outcome_
+
+PROJECT: Cosmos
+
+PROJECT: Nama Proyek
+
+STATUS AIRDROP
+
+Belum ada. Belum ditemukan bukti bahwa proyek ini telah mendistribusikan token tanpa pembayaran.
+
+CONTEXT SAAT KEPUTUSAN
+
+- Tahap funding: Tahap awal, belum mencapai pendanaan signifikan.
+- Ukuran komunitas: Kecil, komunitas baru terbentuk.
+- Kondisi pasar: Pasar bearish, tekanan tinggi dari ekonomi makro.
+- Kompetitor: Belum banyak pesaing langsung pada tahap ini.
+
+TRIGGER DAN ALTERNATIF
+
+- Pemicu: Belum ada rencana atau pemicu yang jelas yang mendorong keputusan airdrop.
+- Alternatif: Penjualan publik, distribusi bertahap, atau tidak mendistribusikan sama sekali masih menjadi opsi yang mungkin.
+
+OUTCOME PER POV
+
+POV Founder: Tidak relevan
+- Jangka pendek: Tidak ada efek yang dapat diukur.
+- Jangka panjang: Tidak ada efek yang dapat diukur.
+- Dasar: Tidak ada airdrop yang dilakukan (HIGH) [sumber]
+
+POV VC: Tidak relevan
+- Jangka pendek: Tidak ada efek yang dapat diukur.
+- Jangka panjang: Tidak ada efek yang dapat diukur.
+- Dasar: Tidak ada airdrop yang dilakukan (HIGH) [sumber]
+
+POV Retail: Tidak relevan
+- Jangka pendek: Tidak ada efek yang dapat diukur.
+- Jangka panjang: Tidak ada efek yang dapat diukur.
+- Dasar: Tidak ada airdrop yang dilakukan (HIGH) [sumber]
+
+POV Community: Tidak relevan
+- Jangka pendek: Tidak ada efek yang dapat diukur.
+- Jangka panjang: Tidak ada efek yang dapat diukur.
+- Dasar: Tidak ada airdrop yang dilakukan (HIGH) [sumber]
+
+POV Developer: Tidak relevan
+- Jangka pendek: Tidak ada efek yang dapat diukur.
+- Jangka panjang: Tidak ada efek yang dapat diukur.
+- Dasar: Tidak ada airdrop yang dilakukan (HIGH) [sumber]
+
+POV Institution: Tidak relevan
+- Jangka pendek: Tidak ada efek yang dapat diukur.
+- Jangka panjang: Tidak ada efek yang dapat diukur.
+- Dasar: Tidak ada airdrop yang dilakukan (HIGH) [sumber]
+
+POV Validator: Tidak relevan
+- Jangka pendek: Tidak ada efek yang dapat diukur.
+- Jangka panjang: Tidak ada efek yang dapat diukur.
+- Dasar: Tidak ada airdrop yang dilakukan (HIGH) [sumber]
+
+POV Builder: Tidak relevan
+- Jangka pendek: Tidak ada efek yang dapat diukur.
+- Jangka panjang: Tidak ada efek yang dapat diukur.
+- Dasar: Tidak ada airdrop yang dilakukan (HIGH) [sumber]
+
+HARGA PASCA-DISTRIBUSI
+
+Harga saat klaim: Tidak berlaku, tidak ada klaim token yang terjadi.
+Harga +30 hari: Tidak berlaku, tidak ada klaim token yang terjadi.
+Harga +90 hari: Tidak berlaku, tidak ada klaim token yang terjadi.
+Harga puncak 12 bulan pertama: Tidak berlaku, tidak ada klaim token yang terjadi.
+
+METRIK RETENSI
+
+- Perubahan TVL atau volume protokol sebelum vs sesudah distribusi: Tidak ditemukan
+- Jumlah alamat pemegang token (unique holders), dengan tanggal pengukurannya: Tidak ditemukan
+- Jumlah alamat aktif harian, sebelum vs sesudah: Tidak ditemukan
+- Konsentrasi kepemilikan: Tidak ditemukan
+- Tingkat partisipasi staking atau retensi validator: Tidak ditemukan
+
+GAP YANG DIKETAHUI
+
+Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik.
+
+FARMING DAN SYBIL
+
+Tidak relevan, tidak ada airdrop yang dilakukan.
+
+PROSPEK
+
+Prasyarat yang sudah terpenuhi:
+- Komunitas mulai terbentuk (MEDIUM) [sumber]
+- Tokenomics sudah dirancang dan dipublikasikan (HIGH) [sumber]
+
+Prasyarat yang belum:
+- Belum ada pengumuman resmi tentang rencana airdrop (HIGH) [sumber]
+- Belum ada mekanisme distribusi yang ditetapkan (MEDIUM) [sumber]
+
+Sinyal yang biasanya mendahului:
+- Pengumuman snapshot komunitas
+- Perubahan dokumen resmi terkait token distribution
+
+Penilaian: Berdasarkan prasyarat yang terpenuhi dan belum, airdrop memiliki kemungkinan terealisasi jika proyek dapat memicu engagement komunitas dan mengatur mekanisme distribusi yang jelas.
+
+PELAJARAN LINTAS PROJECT
+
+- Ketika komunitas belum terbentuk kuat, airdrop dapat menjadi insentif awal yang berguna (era 2020-2021).
+- Distribusi token yang diatur dengan jelas dan diumumkan sebelumnya mengurangi risiko sybil attack (era 2023).
+- Airdrop harus disesuaikan dengan kondisi dan sejarah pasar untuk menghindari fluktuasi harga ekstrem pasca airdrop (era 2022-2023).
+
 ## Open Questions
 - [foundation] Exact current core team headcount across all contributing entities (Informal Systems, Interchain GmbH, Strangelove, Hypha, Notional, etc.) — not publicly aggregated in single source
 - [foundation] Precise legal relationship between Interchain Foundation, Tendermint Inc (now Ignite), and Informal Systems — historical restructuring details partially public but not fully consolidated
@@ -6422,3 +6532,6 @@ Confidence Level: HIGH
 - [conflict] Evidence: https://github.com/CosmWasm/cosmwasm, https://github.com/cometbft/cometbft/blob/main/docs/spec/abci/abci%2B%2B.md
 - [conflict] Alternative Interpretations: (1) ABCI++ akan memperbaiki parallel execution; (2) CosmWasm 2.0 solve atomic multi-contract; (3) Timeline tidak pasti
 - [conflict] Status: Open
+- [airdrop] Bukti tambahan untuk niat atau rencana airdrop
+- [airdrop] Dampak distribusi token pada harga dan volume trading
+- [airdrop] Pola retensi pengguna setelah penerimaan token

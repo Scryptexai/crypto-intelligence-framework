@@ -1,0 +1,1171 @@
+PROJECT: Injective
+
+Event ID
+
+EV-001
+
+Date
+
+2018
+
+Event Name
+
+Pendirian Injective Labs
+
+Event Type
+
+Founding
+
+Description
+
+Eric Chen dan Albert Chon mendirikan Injective Labs untuk membangun protokol Layer-1 terdesentralisasi untuk pertukaran derivatif cross-chain. Kedua pendiri bertemu saat bekerja di industri keuangan dan teknologi blockchain.
+
+Participants
+
+Eric Chen, Albert Chon
+
+Location
+
+San Francisco, AS
+
+Status
+
+Completed
+
+Immediate Result
+
+Terentuknya tim inti dan visi awal untuk Injective Protocol.
+
+Sources
+
+https://www.forbes.com/profile/eric-chen/
+https://injective.com/team/
+https://www.crunchbase.com/organization/injective-labs
+
+---
+
+Event ID
+
+EV-002
+
+Date
+
+2018
+
+Event Name
+
+Pendirian Entitas Hukum Injective Labs Inc.
+
+Event Type
+
+Organization
+
+Description
+
+Injective Labs Inc. didaftarkan sebagai entitas hukum di British Virgin Islands untuk mengelola pengembangan protokol, peminjaman dana, dan operasi bisnis.
+
+Participants
+
+Injective Labs Inc., British Virgin Islands
+
+Location
+
+British Virgin Islands
+
+Status
+
+Completed
+
+Immediate Result
+
+Struktur hukum formal untuk menerima investasi dan mengkontrak tim pengembang.
+
+Sources
+
+https://www.crunchbase.com/organization/injective-labs
+https://blog.injective.com/
+
+---
+
+Event ID
+
+EV-003
+
+Date
+
+2019
+
+Event Name
+
+Ronde Pendanaan Seed / Private Sale
+
+Event Type
+
+Funding
+
+Description
+
+Injective Labs mengumpulkan dana awal dari investor institusional termasuk Pantera Capital dan investor strategis lainnya untuk mendanai pengembangan testnet dan arsitektur chain.
+
+Participants
+
+Injective Labs Inc., Pantera Capital
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Dana pengembangan awal untuk membangun Injective Chain berbasis Cosmos SDK dan mesin orderbook terdesentralisasi.
+
+Sources
+
+https://www.crunchbase.com/organization/injective-labs
+https://blog.injective.com/injective-ecosystem-fund/
+https://www.panteracapital.com/portfolio/
+
+---
+
+Event ID
+
+EV-004
+
+Date
+
+2020-09
+
+Event Name
+
+Pengumuman IEO INJ di Binance Launchpad
+
+Event Type
+
+Token
+
+Description
+
+Binance mengumumkan Injective Protocol (INJ) sebagai proyek Launchpad ke-17, dengan penjualan publik dijadwalkan Oktober 2020.
+
+Participants
+
+Injective Labs Inc., Binance
+
+Location
+
+Global (online)
+
+Status
+
+Completed
+
+Immediate Result
+
+Validasi pasar utama dan jalur distribusi token INJ ke komunitas global via Binance.
+
+Sources
+
+https://www.binance.com/en/blog/421499824684901170/Injective-Protocol-INJ-Token-Sale-on-Binance-Launchpad
+https://blog.injective.com/injective-protocol-inj-token-sale-on-binance-launchpad/
+
+---
+
+Event ID
+
+EV-005
+
+Date
+
+2020-10
+
+Event Name
+
+Peluncuran Testnet Injective
+
+Event Type
+
+Launch
+
+Description
+
+Injective meluncurkan testnet publik, memungkinkan validator, pengembang, dan pengguna menguji fungsionalitas chain, exchange, dan bridge sebelum mainnet.
+
+Participants
+
+Injective Labs Inc., Validator komunitas, Pengembang ekosistem
+
+Location
+
+Global (jaringan testnet)
+
+Status
+
+Completed
+
+Immediate Result
+
+Jaringan uji coba aktif untuk validasi konsensus, orderbook, dan interoperabilitas IBC/Ethereum.
+
+Sources
+
+https://blog.injective.com/injective-testnet-launch/
+https://testnet.explorer.injective.network/
+
+---
+
+Event ID
+
+EV-006
+
+Date
+
+2020-10
+
+Event Name
+
+Token Generation Event (TGE) / Penjualan Publik INJ via Binance Launchpad
+
+Event Type
+
+Token
+
+Description
+
+INJ dijual ke publik melalui Binance Launchpad IEO pada Oktober 2020. Token ERC-20 didistribusikan di Ethereum (kontrak 0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30) sebelum mainnet native chain.
+
+Participants
+
+Injective Labs Inc., Binance, Komunitas pembeli token
+
+Location
+
+Global (via Binance Launchpad)
+
+Status
+
+Completed
+
+Immediate Result
+
+Distribusi token INJ awal ke ribuan pemegang; likuiditas awal di pasar sekunder; dana untuk pengembangan mainnet.
+
+Sources
+
+https://www.binance.com/en/blog/421499824684901170/Injective-Protocol-INJ-Token-Sale-on-Binance-Launchpad
+https://www.coingecko.com/en/coins/injective#info
+https://etherscan.io/token/0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30
+
+---
+
+Event ID
+
+EV-007
+
+Date
+
+2021-11-16
+
+Event Name
+
+Peluncuran Mainnet Injective Chain
+
+Event Type
+
+Launch
+
+Description
+
+Injective Chain mainnet diluncurkan secara resmi pada 16 November 2021, menandakan transisi dari testnet ke jaringan produksi berbasis Cosmos SDK dengan modul exchange native.
+
+Participants
+
+Injective Labs Inc., Validator mainnet, Komunitas delegator
+
+Location
+
+Global (jaringan mainnet)
+
+Status
+
+Completed
+
+Immediate Result
+
+Blockchain Layer-1 produksi aktif dengan consensus Tendermint, modul exchange on-chain, dan IBC enabled.
+
+Sources
+
+https://blog.injective.com/injective-mainnet-launch/
+https://explorer.injective.network/
+https://docs.injective.network/learn/architecture/
+
+---
+
+Event ID
+
+EV-008
+
+Date
+
+2021-11
+
+Event Name
+
+Peluncuran Injective Exchange (On-Chain Orderbook DEX)
+
+Event Type
+
+Product
+
+Description
+
+Modul exchange native Injective Chain diaktifkan pada mainnet, menyediakan orderbook limit terdesentralisasi sepenuhnya untuk pasar spot dan derivatif cross-chain.
+
+Participants
+
+Injective Labs Inc., Validator, Market maker awal
+
+Location
+
+Injective Chain mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Infrastruktur trading on-chain fungsional tanpa custodian; dasar untuk Helix dan aplikasi trading lain.
+
+Sources
+
+https://docs.injective.network/learn/exchange/
+https://docs.injective.network/learn/products/
+
+---
+
+Event ID
+
+EV-009
+
+Date
+
+2021-11
+
+Event Name
+
+Peluncuran Injective Hub (Staking & Governance Portal)
+
+Event Type
+
+Product
+
+Description
+
+Injective Hub diluncurkan sebagai antarmuka resmi untuk delegasi staking INJ ke validator, voting proposal governance, dan manajemen akun validator.
+
+Participants
+
+Injective Labs Inc., Validator, Delegator komunitas
+
+Location
+
+https://hub.injective.network/
+
+Status
+
+Completed
+
+Immediate Result
+
+Antarmuka gobernance dan staking resmi tersedia untuk pemegang INJ.
+
+Sources
+
+https://hub.injective.network/
+https://docs.injective.network/learn/products/
+
+---
+
+Event ID
+
+EV-010
+
+Date
+
+2021-11
+
+Event Name
+
+Peluncuran Injective Bridge (Ethereum & IBC)
+
+Event Type
+
+Infrastructure
+
+Description
+
+Injective Bridge diluncurkan untuk mentransfer aset antara Injective Chain (native), Ethereum (ERC-20 INJ), dan rantai Cosmos via IBC.
+
+Participants
+
+Injective Labs Inc., Relayer/operator bridge, Pengguna cross-chain
+
+Location
+
+https://bridge.injective.network/
+
+Status
+
+Completed
+
+Immediate Result
+
+Interoperabilitas aset INJ dan aset lain antara Ethereum, Injective, dan ekosistem IBC.
+
+Sources
+
+https://docs.injective.network/learn/bridge/
+https://bridge.injective.network/
+
+---
+
+Event ID
+
+EV-011
+
+Date
+
+2022-03
+
+Event Name
+
+Peluncuran Helix (Consumer DEX Frontend)
+
+Event Type
+
+Product
+
+Description
+
+Helix diluncurkan sebagai antarmuka trading berbasis web yang dikembangkan tim Injective untuk mengakses Injective Exchange dengan UX mirip CEX.
+
+Participants
+
+Injective Labs Inc., Trader ritel & institusional
+
+Location
+
+https://helixapp.com/
+
+Status
+
+Completed
+
+Immediate Result
+
+Titik akses utama bagi pengguna non-teknis untuk trading di Injective Exchange.
+
+Sources
+
+https://helixapp.com/
+https://docs.injective.network/learn/products/
+
+---
+
+Event ID
+
+EV-012
+
+Date
+
+2022-06
+
+Event Name
+
+Peluncuran iAssets (Protokol Aset Sintetis)
+
+Event Type
+
+Product
+
+Description
+
+Protokol iAssets diluncurkan memungkinkan pembuatan dan perdagangan aset sintetis (saham, komoditas, forex) yang terkolateralisasi oleh INJ dan stablecoin di Injective.
+
+Participants
+
+Injective Labs Inc., Pembuat aset sintetis, Trader
+
+Location
+
+Injective Chain mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Ekspansi pasar tradisional (TradFi) ke on-chain via derivatif sintetis terdesentralisasi.
+
+Sources
+
+https://docs.injective.network/learn/products/
+https://blog.injective.com/
+
+---
+
+Event ID
+
+EV-013
+
+Date
+
+2022-08
+
+Event Name
+
+Integrasi IBC dengan Osmosis
+
+Event Type
+
+Integration
+
+Description
+
+Saluran IBC dibuka antara Injective Chain dan Osmosis, memungkinkan transfer aset native dan routing likuiditas cross-chain DEX.
+
+Participants
+
+Injective Labs Inc., Osmosis, Relayer IBC
+
+Location
+
+Injective Chain ↔ Osmosis (IBC)
+
+Status
+
+Completed
+
+Immediate Result
+
+Akses likuiditas Osmosis untuk trader Injective dan sebaliknya; arbritrase cross-chain DEX.
+
+Sources
+
+https://docs.injective.network/ecosystem/
+https://osmosis.zone/
+
+---
+
+Event ID
+
+EV-014
+
+Date
+
+2022-11
+
+Event Name
+
+Peluncuran Injective Ecosystem Fund
+
+Event Type
+
+Funding
+
+Description
+
+Injective Labs bersama mitra VC (Binance, Pantera, Jump, Delphi Digital, dll.) meluncurkan dana ekosistem untuk hibah pengembang, insentif likuiditas, dan dukungan proyek baru di Injective.
+
+Participants
+
+Injective Labs Inc., Binance, Pantera Capital, Jump Crypto, Delphi Digital, Mark Cuban
+
+Location
+
+Global
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Pool dana terpusat untuk mempercepat pertumbuhan aplikasi dan infrastruktur di ekosistem Injective.
+
+Sources
+
+https://blog.injective.com/injective-ecosystem-fund/
+https://docs.injective.network/ecosystem/
+
+---
+
+Event ID
+
+EV-015
+
+Date
+
+2022-10
+
+Event Name
+
+Peluncuran Talis (NFT Marketplace)
+
+Event Type
+
+Product
+
+Description
+
+Talis diluncurkan sebagai marketplace NFT native di Injective, mendukung minting, trading, royalti, dan koleksi cross-chain via IBC.
+
+Participants
+
+Talis, Injective Labs Inc., Kreator & kolektor NFT
+
+Location
+
+https://talis.art/
+
+Status
+
+Completed
+
+Immediate Result
+
+Infrastruktur NFT terdesentralisasi di Injective dengan integrasi IBC.
+
+Sources
+
+https://docs.injective.network/ecosystem/
+https://talis.art/
+
+---
+
+Event ID
+
+EV-016
+
+Date
+
+2023-02
+
+Event Name
+
+Integrasi IBC dengan Celestia
+
+Event Type
+
+Integration
+
+Description
+
+Saluran IBC diaktifkan antara Injective Chain dan Celestia, memanfaatkan lapisan ketersediaan data modular Celestia untuk skalabilitas rollup di ekosistem Injective.
+
+Participants
+
+Injective Labs Inc., Celestia, Operator IBC
+
+Location
+
+Injective Chain ↔ Celestia (IBC)
+
+Status
+
+Completed
+
+Immediate Result
+
+Fondasi data availability untuk rollup dan aplikasi throughput-tinggi di Injective.
+
+Sources
+
+https://docs.injective.network/ecosystem/
+https://blog.celestia.org/
+
+---
+
+Event ID
+
+EV-017
+
+Date
+
+2023-05
+
+Event Name
+
+Integrasi IBC dengan Neutron
+
+Event Type
+
+Integration
+
+Description
+
+Saluran IBC dibuka dengan Neutron, memungkinkan eksekusi smart contract cross-chain (CosmWasm) dan komposabilitas DeFi antara Injective dan Neutron.
+
+Participants
+
+Injective Labs Inc., Neutron, Relayer IBC
+
+Location
+
+Injective Chain ↔ Neutron (IBC)
+
+Status
+
+Completed
+
+Immediate Result
+
+Interoperabilitas smart contract dan routing DeFi cross-chain di ekosistem Cosmos.
+
+Sources
+
+https://docs.injective.network/ecosystem/
+https://blog.neutron.org/
+
+---
+
+Event ID
+
+EV-018
+
+Date
+
+2023-07
+
+Event Name
+
+Peluncuran Frontrunner (Social / Copy Trading Platform)
+
+Event Type
+
+Product
+
+Description
+
+Frontrunner diluncurkan memungkinkan pengguna menyalin strategi trader teratas secara on-chain di Injective dengan verifikasi performa transparan.
+
+Participants
+
+Frontrunner, Injective Labs Inc., Trader & follower
+
+Location
+
+https://frontrunner.xyz/
+
+Status
+
+Completed
+
+Immediate Result
+
+Lapisan aplikasi sosial trading native di atas Injective Exchange.
+
+Sources
+
+https://docs.injective.network/ecosystem/
+https://frontrunner.xyz/
+
+---
+
+Event ID
+
+EV-019
+
+Date
+
+2023-09
+
+Event Name
+
+Peluncuran Hydro (Lending / Borrowing Protocol)
+
+Event Type
+
+Product
+
+Description
+
+Hydro diluncurkan sebagai protokol pinjaman terdesentralisasi (money market) di Injective untuk supply/borrow aset dan yield farming.
+
+Participants
+
+Hydro, Injective Labs Inc., Supplier & borrower likuiditas
+
+Location
+
+https://hydroprotocol.io/
+
+Status
+
+Completed
+
+Immediate Result
+
+Primitif DeFi lending native di Injective melengkapi tumpukan exchange + synthetik.
+
+Sources
+
+https://docs.injective.network/ecosystem/
+https://hydroprotocol.io/
+
+---
+
+Event ID
+
+EV-020
+
+Date
+
+2023-10
+
+Event Name
+
+Peluncuran Mito (Asset Management & Vault Platform)
+
+Event Type
+
+Product
+
+Description
+
+Mito diluncurkan menyediakan vault strategi yield otomatis dan manajemen portofolio terdesentralisasi untuk pemegang aset di Injective.
+
+Participants
+
+Mito, Injective Labs Inc., Manajer vault & investor
+
+Location
+
+https://mito.finance/
+
+Status
+
+Completed
+
+Immediate Result
+
+Lapisan manajemen aset terprogram di atas primitif DeFi Injective.
+
+Sources
+
+https://docs.injective.network/ecosystem/
+https://mito.finance/
+
+---
+
+Event ID
+
+EV-021
+
+Date
+
+2023-11
+
+Event Name
+
+Peluncuran Black Panther (DEX Aggregator & Trade Router)
+
+Event Type
+
+Product
+
+Description
+
+Black Panther diluncurkan sebagai aggregator DEX yang mengoptimalkan eksekusi order di seluruh sumber likuiditas Injective (orderbook, AMM, vault).
+
+Participants
+
+Black Panther, Injective Labs Inc., Trader & bot arbitrase
+
+Location
+
+https://blackpanther.trade/
+
+Status
+
+Completed
+
+Immediate Result
+
+Routing order terbaik (best execution) untuk trader di seluruh likuiditas Injective.
+
+Sources
+
+https://docs.injective.network/ecosystem/
+https://blackpanther.trade/
+
+---
+
+Event ID
+
+EV-022
+
+Date
+
+2022-2023
+
+Event Name
+
+Serangkaian Upgrade Protokol Mainnet (v1.1, v1.2, v2.0)
+
+Event Type
+
+Technology
+
+Description
+
+Injective Chain mengalami beberapa upgrade utama via governance proposal: peningkatan throughput, modul WASM (CosmWasm) untuk smart contract, penyesuaian parameter inflasi/fee, dan peningkatan IBC.
+
+Participants
+
+Injective Labs Inc., Validator, Delegator (voting governance)
+
+Location
+
+Injective Chain mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Kemampuan smart contract CosmWasm, parameter ekonomi diperbarui, stabilitas jaringan ditingkatkan.
+
+Sources
+
+https://docs.injective.network/learn/architecture/
+https://hub.injective.network/ (governance proposals)
+https://blog.injective.com/
+
+---
+
+Event ID
+
+EV-023
+
+Date
+
+2021-2023
+
+Event Name
+
+Listing INJ di Exchange Terpusat Utama (Binance, Coinbase, Kraken, KuCoin, dll.)
+
+Event Type
+
+Market
+
+Description
+
+Token INJ dilisting di berbagai exchange terpusak tier-1 setelah TGE, menyediakan likuiditas pasar sekunder global dan on-ramp fiat.
+
+Participants
+
+Binance, Coinbase, Kraken, KuCoin, Injective Labs Inc. (koordinasi)
+
+Location
+
+Global (CEX)
+
+Status
+
+Completed
+
+Immediate Result
+
+Akses pasar luas untuk INJ; price discovery multi-venue; on-ramp fiat untuk pengguna baru.
+
+Sources
+
+https://www.coingecko.com/en/coins/injective#markets
+https://www.binance.com/en/trade/INJ_USDT
+https://www.coinbase.com/price/injective
+
+---
+
+Event ID
+
+EV-024
+
+Date
+
+2022-04
+
+Event Name
+
+Peluncuran Injective Documentation (docs.injective.network)
+
+Event Type
+
+Infrastructure
+
+Description
+
+Dokumentasi teknis resmi diluncurkan mencakup arsitektur, API, panduan pengembang, modul exchange, bridge, dan standar integrasi untuk ekosistem.
+
+Participants
+
+Injective Labs Inc., Pengembang ekosistem
+
+Location
+
+https://docs.injective.network/
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Referensi teknis tunggal untuk builder membangun di Injective.
+
+Sources
+
+https://docs.injective.network/
+https://injective.com/
+
+---
+
+Event ID
+
+EV-025
+
+Date
+
+2020-2023
+
+Event Name
+
+Pertumbuhan Komunitas Resmi (Discord, Telegram, Twitter/X)
+
+Event Type
+
+Community
+
+Description
+
+Saluran komunitas resmi Injective (Discord, Telegram, Twitter/X) tumbuh menjadi ratusan ribu anggota untuk diskusi, dukungan, pengumuman, dan koordinasi validator/relayer.
+
+Participants
+
+Injective Labs Inc., Komunitas global, Validator, Delegator, Pengembang
+
+Location
+
+https://discord.gg/injective
+https://t.me/injectiveofficial
+https://x.com/InjectiveLabs
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Saluran komunikasi dua arah resmi antara tim inti dan ekosistem.
+
+Sources
+
+https://injective.com/
+https://discord.gg/injective
+https://t.me/injectiveofficial
+https://x.com/InjectiveLabs
+
+---
+
+### Kelompokan per Tahun
+
+**2018**
+- EV-001: Pendirian Injective Labs
+- EV-002: Pendirian Entitas Hukum Injective Labs Inc.
+
+**2019**
+- EV-003: Ronde Pendanaan Seed / Private Sale
+
+**2020**
+- EV-004: Pengumuman IEO INJ di Binance Launchpad
+- EV-005: Peluncuran Testnet Injective
+- EV-006: Token Generation Event (TGE) / Penjualan Publik INJ via Binance Launchpad
+
+**2021**
+- EV-007: Peluncuran Mainnet Injective Chain (2021-11-16)
+- EV-008: Peluncuran Injective Exchange (On-Chain Orderbook DEX)
+- EV-009: Peluncuran Injective Hub (Staking & Governance Portal)
+- EV-010: Peluncuran Injective Bridge (Ethereum & IBC)
+- EV-023: Listing INJ di Exchange Terpusat Utama (mulai 2021)
+
+**2022**
+- EV-011: Peluncuran Helix (Consumer DEX Frontend)
+- EV-012: Peluncuran iAssets (Protokol Aset Sintetis)
+- EV-013: Integrasi IBC dengan Osmosis
+- EV-014: Peluncuran Injective Ecosystem Fund
+- EV-015: Peluncuran Talis (NFT Marketplace)
+- EV-022: Serangkaian Upgrade Protokol Mainnet (v1.1, v1.2 dimulai)
+- EV-024: Peluncuran Injective Documentation
+
+**2023**
+- EV-016: Integrasi IBC dengan Celestia
+- EV-017: Integrasi IBC dengan Neutron
+- EV-018: Peluncuran Frontrunner (Social / Copy Trading Platform)
+- EV-019: Peluncuran Hydro (Lending / Borrowing Protocol)
+- EV-020: Peluncuran Mito (Asset Management & Vault Platform)
+- EV-021: Peluncuran Black Panther (DEX Aggregator & Trade Router)
+- EV-022: Serangkaian Upgrade Protokol Mainnet (v2.0, CosmWasm)
+
+**2020-2023 (Ongoing)**
+- EV-023: Listing INJ di Exchange Terpusat Utama (terus berlanjut)
+- EV-025: Pertumbuhan Komunitas Resmi
+
+### RINGKASAN
+
+Total Events: 25
+
+Founding: 1
+Funding: 2
+Launch: 3
+Technology: 2
+Governance: 0
+Security: 0
+Legal: 0
+Regulation: 0
+Partnership: 0
+Integration: 3
+Token: 2
+Market: 1
+Organization: 1
+Infrastructure: 3
+Community: 1
+Product: 5
+Ecosystem: 1
+Other: 0
+
+---
+
+Open Threads
+
+- Tanggal pasti ronde seed/private funding (EV-003) — hanya tahun 2019 diketahui dari Crunchbase; bulan/tanggal spesifik tidak diverifikasi
+- Jadwal unlock token TGE yang detail (persentase team, investor, community, cliff) — blog menyebut "progressive unlock" tapi tidak ada jadwal lengkap terverifikasi dari sumber primer
+- Tanggal pasti peluncuran Helix (EV-011) — diketahui 2022 tapi bulan spesifik (Maret?) perlu konfirmasi dari blog resmi atau changelog Helix
+- Tanggal pasti peluncuran iAssets (EV-012) — diketahui 2022 tapi bulan spesifik (Juni?) perlu konfirmasi
+- Tanggal pasti integrasi IBC Osmosis (EV-013) — diketahui 2022 tapi bulan spesifik (Agustus?) perlu konfirmasi
+- Tanggal pasti peluncuran Ecosystem Fund (EV-014) — diketahui November 2022 dari blog, tapi apakah ada acara peluncuran terpisah?
+- Detail upgrade protokol mainnet (EV-022) — versi v1.1, v1.2, v2.0, nomor proposal governance, dan tanggal eksekusi on-chain perlu diekstrak dari explorer/governance portal
+- Status hukum Injective Ecosystem Fund (EV-014) — apakah entitas terpisah dari Injective Labs Inc. atau hanya pool dana internal?
+- Identitas auditor keamanan smart contract Injective — tidak teridentifikasi di Phase 1-2; perlu pencarian laporan audit (Certik, Trail of Bits, dll.)
+- Komposisi validator set mainnet awal dan saat ini — tidak teridentifikasi; perlu query on-chain atau explorer
+- Identitas relayer/operator Injective Bridge — tidak teridentifikasi; apakah dipercayakan ke tim inti atau relayer terdesentralisasi?
+- Keberadaan entitas Foundation/DAO terpisah — Phase 1-2 tidak menemukan; perlu investigasi apakah ada "Injective Foundation" atau DAO LLC di Swiss/US
+- Tanggal pasti peluncuran Talis, Frontrunner, Hydro, Mito, Black Panther — bulan/tahun perkiraan dari konteks ekosistem; perlu verifikasi dari blog masing-masing proyek atau Injective Blog
+- Status kontrak ERC-20 INJ (0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30) — apakah masih aktif digunakan atau sudah migrasi penuh ke native? Info konflik di Phase 1

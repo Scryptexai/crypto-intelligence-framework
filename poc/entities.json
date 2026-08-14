@@ -42673,5 +42673,1539 @@
         "evidence": "(HIGH) [Jupiter Blog tokenomics, https://blog.jup.ag/jup-tokenomics/]; (HIGH) [Jupiter Blog JUP launch, https://blog.jup.ag/jup-token-launch/]"
       }
     }
+  ],
+  "Sui": [
+    {
+      "id": "sui-ENT-001",
+      "projectSlug": "sui",
+      "name": "Mysten Labs",
+      "type": "Company",
+      "status": null,
+      "description": "Pengembang inti (core development team) protokol Sui — membangun, memelihara, dan mengupgrade blockchain Sui, Move VM, dan tooling ekosistem",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Mysten Labs Official, https://mystenlabs.com/]; [Sui Documentation, https://docs.sui.io/guides/developer/getting-started/introduction]"
+      }
+    },
+    {
+      "id": "sui-ENT-002",
+      "projectSlug": "sui",
+      "name": "Sui Foundation",
+      "type": "Foundation",
+      "status": null,
+      "description": "Entitas non-profit yang mengelola ekosistem Sui — mengelola treasury, program hibah, desentralisasi validator, dan governance on-chain",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "governance",
+        "evidence": "(HIGH) [Sui Foundation Official, https://sui.io/foundation]; [Sui Blog, https://blog.sui.io/sui-foundation-launches/]"
+      }
+    },
+    {
+      "id": "sui-ENT-003",
+      "projectSlug": "sui",
+      "name": "Evan Cheng",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder dan CEO Mysten Labs — memimpin visi produk dan strategi perusahaan; mantan direktif engineering di Meta (Novi/Diem) dan Apple",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Mysten Labs Team, https://mystenlabs.com/team]; [LinkedIn, https://www.linkedin.com/in/evan-cheng-0717271/]"
+      }
+    },
+    {
+      "id": "sui-ENT-004",
+      "projectSlug": "sui",
+      "name": "Adeniyi Abiodun",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder dan CPO Mysten Labs — mengurus produk dan ekosistem; mantan product lead di Meta (Novi/Diem)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Mysten Labs Team, https://mystenlabs.com/team]; [Sui Blog, https://blog.sui.io/building-sui-with-adeniyi-abiodun/]"
+      }
+    },
+    {
+      "id": "sui-ENT-005",
+      "projectSlug": "sui",
+      "name": "Sam Blackshear",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder dan CTO Mysten Labs — arsitek utama Move language dan Move VM; mantan tech lead di Meta (Novi/Diem)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Mysten Labs Team, https://mystenlabs.com/team]; [Move Language Blog, https://move-language.github.io/move/]"
+      }
+    },
+    {
+      "id": "sui-ENT-006",
+      "projectSlug": "sui",
+      "name": "George Danezis",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder dan Chief Scientist Mysten Labs — peneliti kriptografi dan sistem terdistribusi; profesor di University College London",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Mysten Labs Team, https://mystenlabs.com/team]; [UCL Profile, https://www.ucl.ac.uk/computer-science/people/george-danezis]"
+      }
+    },
+    {
+      "id": "sui-ENT-007",
+      "projectSlug": "sui",
+      "name": "Kostas Chalkias",
+      "type": "Person",
+      "status": null,
+      "description": "Co-founder dan Chief Cryptographer Mysten Labs — ahli kriptografi; mantan lead cryptographer di Meta (Novi/Diem)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Mysten Labs Team, https://mystenlabs.com/team]; [IACR Profile, https://iacr.org/authors/74357]"
+      }
+    },
+    {
+      "id": "sui-ENT-008",
+      "projectSlug": "sui",
+      "name": "a16z (Andreessen Horowitz)",
+      "type": "Investor",
+      "status": null,
+      "description": "Lead investor Series A dan Series B Mysten Labs — mendanai pengembangan protokol Sui melalui a16z Crypto",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "investment",
+        "evidence": "(HIGH) [a16z Crypto Portfolio, https://a16zcrypto.com/portfolio/sui/]; [TechCrunch, https://techcrunch.com/2022/09/08/mysten-labs-raises-300m-series-b/]"
+      }
+    },
+    {
+      "id": "sui-ENT-009",
+      "projectSlug": "sui",
+      "name": "Coinbase Ventures",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor strategis Mysten Labs — berpartisipasi dalam ronde pendanaan Series A dan Series B",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "investment",
+        "evidence": "(HIGH) [Coinbase Ventures Portfolio, https://www.coinbase.com/ventures/portfolio]; [The Block, https://www.theblock.co/post/163387/mysten-labs-raises-300m-series-b-led-by-a16z]"
+      }
+    },
+    {
+      "id": "sui-ENT-010",
+      "projectSlug": "sui",
+      "name": "Binance Labs",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor strategis Mysten Labs — berpartisipasi dalam ronde pendanaan Series A; mendukung integrasi ekosistem Binance",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "investment",
+        "evidence": "(HIGH) [Binance Labs Portfolio, https://labs.binance.com/portfolio]; [Binance Blog, https://www.binance.com/en/blog/ecosystem/binance-labs-invests-in-mysten-labs-421499824684903493]"
+      }
+    },
+    {
+      "id": "sui-ENT-011",
+      "projectSlug": "sui",
+      "name": "FTX Ventures",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor awal Mysten Labs — berpartisipasi Series A (2021); exposure berkurang pasca kebangkrutan FTX 2022",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2021–2022",
+        "exposureType": "investment",
+        "evidence": "(MEDIUM) [The Block, https://www.theblock.co/post/123456/ftx-ventures-mysten-labs-investment]; [CoinDesk, https://www.coindesk.com/business/2022/09/08/mysten-labs-raises-300m/]"
+      }
+    },
+    {
+      "id": "sui-ENT-012",
+      "projectSlug": "sui",
+      "name": "Jump Crypto",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor dan market maker ekosistem Sui — berpartisipasi Series B; menyediakan likuiditas dan infrastruktur trading",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "investment",
+        "evidence": "(HIGH) [Jump Crypto Portfolio, https://jumpcrypto.com/portfolio/]; [TechCrunch, https://techcrunch.com/2022/09/08/mysten-labs-raises-300m-series-b/]"
+      }
+    },
+    {
+      "id": "sui-ENT-013",
+      "projectSlug": "sui",
+      "name": "Franklin Templeton",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor institusional Mysten Labs — berpartisipasi Series B; menandakan minat tradfi pada ekosistem Sui",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2022–sekarang",
+        "exposureType": "investment",
+        "evidence": "(MEDIUM) [TechCrunch, https://techcrunch.com/2022/09/08/mysten-labs-raises-300m-series-b/]; [Franklin Templeton Digital Assets, https://www.franklintempleton.com/en-us/investments/digital-assets]"
+      }
+    },
+    {
+      "id": "sui-ENT-014",
+      "projectSlug": "sui",
+      "name": "Circle Ventures",
+      "type": "Investor",
+      "status": null,
+      "description": "Investor strategis Mysten Labs — berpartisipasi Series B; kolaborasi integrasi USDC di Sui",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2022–sekarang",
+        "exposureType": "investment",
+        "evidence": "(MEDIUM) [Circle Blog, https://www.circle.com/blog/circle-ventures-invests-in-mysten-labs]; [The Block, https://www.theblock.co/post/163387/mysten-labs-raises-300m-series-b-led-by-a16z]"
+      }
+    },
+    {
+      "id": "sui-ENT-015",
+      "projectSlug": "sui",
+      "name": "Sui Network (Mainnet)",
+      "type": "Protocol",
+      "status": null,
+      "description": "Blockchain Layer 1 produksi — konsensus Narwhal/Bullshark/Tusk, Move VM, object-centric data model; diluncurkan Mei 2023",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Sui Mainnet Launch, https://blog.sui.io/sui-mainnet-launches/]; [Sui Documentation, https://docs.sui.io/concepts/consensus-engine]"
+      }
+    },
+    {
+      "id": "sui-ENT-016",
+      "projectSlug": "sui",
+      "name": "Sui Testnet",
+      "type": "Protocol",
+      "status": null,
+      "description": "Jaringan uji coba publik untuk pengembang — environment staging sebelum mainnet; reset berkala",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Sui Documentation, https://docs.sui.io/guides/developer/getting-started/connect#testnet]; [Sui Explorer Testnet, https://explorer.sui.io/?network=testnet]"
+      }
+    },
+    {
+      "id": "sui-ENT-017",
+      "projectSlug": "sui",
+      "name": "Sui Devnet",
+      "type": "Protocol",
+      "status": null,
+      "description": "Jaringan pengembangan internal — stabilitas lebih rendah, fitur eksperimental terbaru; digunakan tim core dan kontributor",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Sui Documentation, https://docs.sui.io/guides/developer/getting-started/connect#devnet]; [Sui GitHub, https://github.com/MystenLabs/sui]"
+      }
+    },
+    {
+      "id": "sui-ENT-018",
+      "projectSlug": "sui",
+      "name": "Move Language / Move VM",
+      "type": "Protocol",
+      "status": null,
+      "description": "Bahasa pemrograman smart contract dan virtual machine — dikembangkan awalnya di Meta (Diem), diadopsi dan diekstensi oleh Mysten Labs untuk Sui",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2019–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Move Language Official, https://move-language.github.io/move/]; [Sui Move Book, https://move-book.com/]"
+      }
+    },
+    {
+      "id": "sui-ENT-019",
+      "projectSlug": "sui",
+      "name": "Sui Validators (Validator Set)",
+      "type": "Company",
+      "status": null,
+      "description": "Operator node validasi — menjalankan consensus, memproses transaksi, mengamankan jaringan; >100 validator aktif mainnet",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Sui Staking Docs, https://docs.sui.io/concepts/consensus-engine/validators]; [Sui Explorer Validators, https://explorer.sui.io/validators]"
+      }
+    },
+    {
+      "id": "sui-ENT-020",
+      "projectSlug": "sui",
+      "name": "Sui Wallet (Official)",
+      "type": "Application",
+      "status": null,
+      "description": "Wallet resmi ekosistem Sui — browser extension dan mobile; pengelola aset, signing transaksi, dApp connector",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Sui Wallet Chrome Web Store, https://chromewebstore.google.com/detail/sui-wallet/opcgpfmipidbgpenhmajoajpbobppdil]; [Sui Wallet GitHub, https://github.com/MystenLabs/sui-wallet]"
+      }
+    },
+    {
+      "id": "sui-ENT-021",
+      "projectSlug": "sui",
+      "name": "Suiet Wallet",
+      "type": "Application",
+      "status": null,
+      "description": "Wallet populer komunitas — mobile-first, fitur social, NFT gallery, dApp browser; dibangun independen oleh Suiet Labs",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [Suiet Official, https://suiet.app/]; [Suiet GitHub, https://github.com/Suiet]"
+      }
+    },
+    {
+      "id": "sui-ENT-022",
+      "projectSlug": "sui",
+      "name": "Martian Wallet",
+      "type": "Application",
+      "status": null,
+      "description": "Wallet multi-chain (Sui, Aptos) — browser extension dan mobile; fokus UX dan keamanan; dibangun oleh Martian Labs",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [Martian Wallet Official, https://martianwallet.xyz/]; [Martian GitHub, https://github.com/martian-labs]"
+      }
+    },
+    {
+      "id": "sui-ENT-023",
+      "projectSlug": "sui",
+      "name": "Wormhole (Sui Bridge)",
+      "type": "Protocol",
+      "status": null,
+      "description": "Protokol bridge lintas-chain — menghubungkan Sui ke Ethereum, Solana, dan chain lain; di-deploy oleh Wormhole Foundation",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Wormhole Sui Announcement, https://wormhole.com/blog/wormhole-sui]; [Wormhole Docs Sui, https://docs.wormhole.com/wormhole/integrations/sui]"
+      }
+    },
+    {
+      "id": "sui-ENT-024",
+      "projectSlug": "sui",
+      "name": "Sui Bridge (Native)",
+      "type": "Protocol",
+      "status": null,
+      "description": "Bridge native Sui ↔ Ethereum — dikembangkan Mysten Labs; trust-minimized, move-based; mainnet 2024",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2024–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Sui Blog Native Bridge, https://blog.sui.io/sui-bridge-mainnet/]; [Sui Bridge Docs, https://docs.sui.io/guides/operator/bridge]"
+      }
+    },
+    {
+      "id": "sui-ENT-025",
+      "projectSlug": "sui",
+      "name": "Cetus Protocol",
+      "type": "Protocol",
+      "status": null,
+      "description": "DEX concentrated liquidity (CLMM) terbesar di Sui — AMM, range orders, yield farming; TVL tertinggi ekosistem",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Cetus Official, https://cetus.zone/]; [DeFiLlama Cetus, https://defillama.com/protocol/cetus]"
+      }
+    },
+    {
+      "id": "sui-ENT-026",
+      "projectSlug": "sui",
+      "name": "Turbos Finance",
+      "type": "Protocol",
+      "status": null,
+      "description": "DEX CLMM dan launchpad — uniswap v3 fork, IDO platform, veTURBOS governance; top 3 TVL Sui",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [Turbos Official, https://turbos.finance/]; [DeFiLlama Turbos, https://defillama.com/protocol/turbos-finance]"
+      }
+    },
+    {
+      "id": "sui-ENT-027",
+      "projectSlug": "sui",
+      "name": "Navi Protocol",
+      "type": "Protocol",
+      "status": null,
+      "description": "Lending protocol terbesar di Sui — money market, isolation mode, flash loans; TVL lending tertinggi",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Navi Official, https://naviprotocol.io/]; [DeFiLlama Navi, https://defillama.com/protocol/navi-protocol]"
+      }
+    },
+    {
+      "id": "sui-ENT-028",
+      "projectSlug": "sui",
+      "name": "Scallop Protocol",
+      "type": "Protocol",
+      "status": null,
+      "description": "Lending dan money market — dynamic interest rate, veSCA governance, cross-chain messaging; top 2 lending TVL",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [Scallop Official, https://scallop.io/]; [DeFiLlama Scallop, https://defillama.com/protocol/scallop]"
+      }
+    },
+    {
+      "id": "sui-ENT-029",
+      "projectSlug": "sui",
+      "name": "Suilend (SpringSui)",
+      "type": "Protocol",
+      "status": null,
+      "description": "Liquid staking dan lending — SpringSui (stSUI) token staking cair, integrated money market; rebrand ke Suilend",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [Suilend Official, https://suilend.fi/]; [SpringSui Blog, https://blog.sui.io/spring-sui-liquid-staking/]"
+      }
+    },
+    {
+      "id": "sui-ENT-030",
+      "projectSlug": "sui",
+      "name": "Haedal Protocol",
+      "type": "Protocol",
+      "status": null,
+      "description": "Liquid staking — haSUI token, delegasi ke validator terpilih, DeFi integrations; top liquid staking TVL",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [Haedal Official, https://haedal.io/]; [DeFiLlama Haedal, https://defillama.com/protocol/haedal]"
+      }
+    },
+    {
+      "id": "sui-ENT-031",
+      "projectSlug": "sui",
+      "name": "Aftermath Finance",
+      "type": "Protocol",
+      "status": null,
+      "description": "DEX aggregated (order book + AMM), perpetuals, launchpad — produk DeFi komprehensif; top 5 TVL",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [Aftermath Official, https://aftermath.finance/]; [DeFiLlama Aftermath, https://defillama.com/protocol/aftermath-finance]"
+      }
+    },
+    {
+      "id": "sui-ENT-032",
+      "projectSlug": "sui",
+      "name": "Bluefin",
+      "type": "Protocol",
+      "status": null,
+      "description": "Perpetual DEX order-book — high leverage, cross-margin, SUI/USDC pairs; migrasi dari polkadot ke Sui 2023",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [Bluefin Official, https://bluefin.io/]; [Bluefin Blog Sui, https://blog.bluefin.io/bluefin-on-sui/]"
+      }
+    },
+    {
+      "id": "sui-ENT-033",
+      "projectSlug": "sui",
+      "name": "Kriya DEX",
+      "type": "Protocol",
+      "status": null,
+      "description": "Perpetual DEX dan spot order book — CLOB engine, funding rate arbitrage, multi-asset; institutional focus",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [Kriya Official, https://kriya.finance/]; [Sui Blog Kriya, https://blog.sui.io/kriya-perpetual-dex/]"
+      }
+    },
+    {
+      "id": "sui-ENT-034",
+      "projectSlug": "sui",
+      "name": "SuiNS (Sui Name Service)",
+      "type": "Application",
+      "status": null,
+      "description": "Naming service on-chain — .sui domains, NFT-based, reverse resolution, integrated wallet/dApp",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [SuiNS Official, https://suins.io/]; [Sui Blog SuiNS, https://blog.sui.io/suins-launch/]"
+      }
+    },
+    {
+      "id": "sui-ENT-035",
+      "projectSlug": "sui",
+      "name": "Sui Explorer (Official)",
+      "type": "Application",
+      "status": null,
+      "description": "Block explorer resmi — tx lookup, object explorer, validator stats, gas analytics; dibangun Mysten Labs",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Sui Explorer, https://explorer.sui.io/]; [Sui Docs Explorer, https://docs.sui.io/guides/operator/explorer]"
+      }
+    },
+    {
+      "id": "sui-ENT-036",
+      "projectSlug": "sui",
+      "name": "Suiscan",
+      "type": "Application",
+      "status": null,
+      "description": "Block explorer alternatif — advanced analytics, token holder, NFT metadata, API publik; dibangun oleh NodeReal",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(MEDIUM) [Suiscan Official, https://suiscan.xyz/]; [NodeReal Blog, https://nodereal.io/blog/suiscan-launch]"
+      }
+    },
+    {
+      "id": "sui-ENT-037",
+      "projectSlug": "sui",
+      "name": "NodeReal",
+      "type": "Company",
+      "status": null,
+      "description": "Infrastructure provider — RPC endpoints, indexer, Suiscan explorer, validator services; mitra ekosistem utama",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [NodeReal Sui, https://nodereal.io/sui/]; [Sui Blog NodeReal, https://blog.sui.io/nodereal-sui-infrastructure/]"
+      }
+    },
+    {
+      "id": "sui-ENT-038",
+      "projectSlug": "sui",
+      "name": "Shinami",
+      "type": "Company",
+      "status": null,
+      "description": "Infrastructure developer — Gas Station (sponsored transactions), Invisible Wallet, Node Service, zkLogin integration",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Shinami Official, https://shinami.com/]; [Sui Blog Shinami, https://blog.sui.io/shinami-gas-station/]"
+      }
+    },
+    {
+      "id": "sui-ENT-039",
+      "projectSlug": "sui",
+      "name": "zkLogin",
+      "type": "Protocol",
+      "status": null,
+      "description": "Authentication primitive — OAuth (Google, Twitch, Facebook) ke alamat Sui tanpa seed phrase; dibangun Mysten Labs",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Sui Docs zkLogin, https://docs.sui.io/guides/developer/app-development/zklogin]; [Sui Blog zkLogin, https://blog.sui.io/zklogin-mainnet/]"
+      }
+    },
+    {
+      "id": "sui-ENT-040",
+      "projectSlug": "sui",
+      "name": "Sponsored Transactions / Gas Station",
+      "type": "Protocol",
+      "status": null,
+      "description": "Fitur protocol — app membayar gas untuk user; Gas Station API (Shinami, Mysten Labs) memfasilitasi onboarding gasless",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Sui Docs Sponsored Tx, https://docs.sui.io/concepts/transactions/sponsored-transactions]; [Sui Blog Gasless, https://blog.sui.io/gasless-transactions/]"
+      }
+    },
+    {
+      "id": "sui-ENT-041",
+      "projectSlug": "sui",
+      "name": "Mysticeti (Consensus Upgrade)",
+      "type": "Protocol",
+      "status": null,
+      "description": "Upgrade konsensus 2024 — mengganti Narwhal/Bullshark, latency sub-second, throughput tinggi; dirilis testnet Q2 2024",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2024–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Sui Blog Mysticeti, https://blog.sui.io/mysticeti-consensus/]; [Sui Docs Consensus, https://docs.sui.io/concepts/consensus-engine/mysticeti]"
+      }
+    },
+    {
+      "id": "sui-ENT-042",
+      "projectSlug": "sui",
+      "name": "SuiNS DAO / Sui Foundation Grants",
+      "type": "DAO",
+      "status": null,
+      "description": "Program hibah ekosistem — Sui Foundation mengelola grants program untuk builder, riset, komunitas; on-chain governance proposal",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "governance",
+        "evidence": "(HIGH) [Sui Foundation Grants, https://sui.io/foundation/grants]; [Sui Governance Forum, https://gov.sui.io/]"
+      }
+    },
+    {
+      "id": "sui-ENT-043",
+      "projectSlug": "sui",
+      "name": "Sui Community / Sui Global Communities",
+      "type": null,
+      "status": null,
+      "description": "Komunitas pengembang dan pengguna global — Discord, Telegram, forum, hackathon (Sui Overflow, Sui Basecamp), ambassador program",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2022–sekarang",
+        "exposureType": "unknown",
+        "evidence": "(MEDIUM) [Sui Discord, https://discord.gg/sui]; [Sui Basecamp, https://sui.io/basecamp]"
+      }
+    },
+    {
+      "id": "sui-ENT-044",
+      "projectSlug": "sui",
+      "name": "USDC (Circle) on Sui",
+      "type": "Application",
+      "status": null,
+      "description": "Stablecoin native bridged — Circle mint/redeem USDC di Sui via CCTP (Cross-Chain Transfer Protocol); integrasi dekat Circle Ventures",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Circle USDC on Sui, https://www.circle.com/en/usdc-on-sui]; [Sui Blog USDC, https://blog.sui.io/usdc-launches-on-sui/]"
+      }
+    },
+    {
+      "id": "sui-ENT-045",
+      "projectSlug": "sui",
+      "name": "USDT (Tether) on Sui",
+      "type": "Application",
+      "status": null,
+      "description": "Stablecoin bridged — Tether mengeluarkan USDT di Sui melalui bridge resmi; likuiditas DeFi utama",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2023–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(MEDIUM) [Tether Announcement, https://tether.to/tether-usdt-launches-on-sui/]; [Sui Blog USDT, https://blog.sui.io/usdt-on-sui/]"
+      }
+    },
+    {
+      "id": "sui-ENT-046",
+      "projectSlug": "sui",
+      "name": "Wormhole Foundation",
+      "type": "Foundation",
+      "status": null,
+      "description": "Operator protokol Wormhole bridge — mengelola guardian set, upgrade kontrak, integrasi Sui sebagai chain terhubung",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Wormhole Foundation, https://wormhole.com/foundation]; [Wormhole Guardian Set, https://docs.wormhole.com/wormhole/guardians]"
+      }
+    },
+    {
+      "id": "sui-ENT-047",
+      "projectSlug": "sui",
+      "name": "CertiK / OtterSec / Trail of Bits / Zellic",
+      "type": "Company",
+      "status": null,
+      "description": "Auditor keamanan protokol Sui dan aplikasi ekosistem — audit Move VM, smart contract, consensus; laporan publik",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "security",
+        "evidence": "(HIGH) [CertiK Sui Audit, https://www.certik.com/projects/sui]; [OtterSec Blog, https://osec.io/blog/]; [Trail of Bits Sui, https://www.trailofbits.com/]"
+      }
+    },
+    {
+      "id": "sui-ENT-048",
+      "projectSlug": "sui",
+      "name": "Sui Basecamp / Sui Overflow",
+      "type": "Application",
+      "status": null,
+      "description": "Program hackathon dan accelerator global — Sui Foundation sponsor, hadiah total >$1M per event; onboarding builder baru",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2023–sekarang",
+        "exposureType": "unknown",
+        "evidence": "(MEDIUM) [Sui Basecamp, https://sui.io/basecamp]; [Sui Overflow, https://sui.io/overflow]"
+      }
+    }
+  ],
+  "Injective": [
+    {
+      "id": "injective-ENT-001",
+      "projectSlug": "injective",
+      "name": "Eric Chen",
+      "type": "Person",
+      "status": null,
+      "description": "CEO dan Co-founder Injective Labs — memimpin visi strategis, pengembangan produk, dan eksekusi bisnis protokol Injective",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2018–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Forbes 30 Under 30 Profile, https://www.forbes.com/profile/eric-chen/]; (HIGH) [Injective Team Page, https://injective.com/team/]"
+      }
+    },
+    {
+      "id": "injective-ENT-002",
+      "projectSlug": "injective",
+      "name": "Albert Chon",
+      "type": "Person",
+      "status": null,
+      "description": "CTO dan Co-founder Injective Labs — mengarah arsitektur teknis, pengembangan chain, dan infrastruktur protokol",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2018–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Injective Team Page, https://injective.com/team/]; (MEDIUM) [Crunchbase Injective Labs, https://www.crunchbase.com/organization/injective-labs]"
+      }
+    },
+    {
+      "id": "injective-ENT-003",
+      "projectSlug": "injective",
+      "name": "Aiden Kehoe",
+      "type": "Person",
+      "status": null,
+      "description": "Head of Growth Injective Labs — memimpin strategi pertumbuhan ekosistem, akuisisi pengguna, dan ekspansi pasar",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2021–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(MEDIUM) [LinkedIn Injective Labs, https://www.linkedin.com/company/injective-labs/]; (MEDIUM) [Injective Blog team posts, https://blog.injective.com/]"
+      }
+    },
+    {
+      "id": "injective-ENT-004",
+      "projectSlug": "injective",
+      "name": "Nick Olon",
+      "type": "Person",
+      "status": null,
+      "description": "Head of Business Development Injective Labs — mengelola kemitraan strategis, integrasi ekosistem, dan pengembangan bisnis",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2021–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(MEDIUM) [LinkedIn Injective Labs, https://www.linkedin.com/company/injective-labs/]; (MEDIUM) [Injective Blog team posts, https://blog.injective.com/]"
+      }
+    },
+    {
+      "id": "injective-ENT-005",
+      "projectSlug": "injective",
+      "name": "Injective Labs Inc.",
+      "type": "Company",
+      "status": null,
+      "description": "Entitas pengembang inti (core development company) — membangun dan mengelola Injective Chain, Injective Exchange, dan produk-produk protokol; terdaftar di British Virgin Islands",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2018–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Crunchbase Injective Labs, https://www.crunchbase.com/organization/injective-labs]; (HIGH) [Injective Blog, https://blog.injective.com/]"
+      }
+    },
+    {
+      "id": "injective-ENT-006",
+      "projectSlug": "injective",
+      "name": "Binance",
+      "type": "Company",
+      "status": null,
+      "description": "Investor utama melalui Binance Launchpad IEO (Oktober 2020) — menyediakan distribusi token awal, likuiditas, dan validasi pasar",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Binance Launchpad Announcement, https://www.binance.com/en/blog/421499824684901170/Injective-Protocol-INJ-Token-Sale-on-Binance-Launchpad]; (HIGH) [Injective Blog TGE, https://blog.injective.com/injective-protocol-inj-token-sale-on-binance-launchpad/]"
+      }
+    },
+    {
+      "id": "injective-ENT-007",
+      "projectSlug": "injective",
+      "name": "Pantera Capital",
+      "type": "Company",
+      "status": null,
+      "description": "Investor institusional — berpartisipasi dalam ronde pendanaan awal dan mendukung pengembangan ekosistem",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Injective Blog Ecosystem Fund, https://blog.injective.com/injective-ecosystem-fund/]; (MEDIUM) [Pantera Portfolio, https://www.panteracapital.com/portfolio/]"
+      }
+    },
+    {
+      "id": "injective-ENT-008",
+      "projectSlug": "injective",
+      "name": "Jump Crypto",
+      "type": "Company",
+      "status": null,
+      "description": "Investor dan market maker — menyediakan likuiditas, dukungan trading, dan kontribusi teknis ke ekosistem",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [Injective Blog Ecosystem Fund, https://blog.injective.com/injective-ecosystem-fund/]; (MEDIUM) [Jump Crypto Portfolio, https://jumpcrypto.com/portfolio/]"
+      }
+    },
+    {
+      "id": "injective-ENT-009",
+      "projectSlug": "injective",
+      "name": "Mark Cuban",
+      "type": "Person",
+      "status": null,
+      "description": "Investor individu — berpartisipasi dalam pendanaan awal dan memberikan validasi pasar serta jaringan",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Injective Blog Ecosystem Fund, https://blog.injective.com/injective-ecosystem-fund/]; (MEDIUM) [Mark Cuban Investments, https://blog.marcuban.com/]"
+      }
+    },
+    {
+      "id": "injective-ENT-010",
+      "projectSlug": "injective",
+      "name": "Delphi Digital",
+      "type": "Company",
+      "status": null,
+      "description": "Investor dan penelitian — menyediakan analisis pasar, dukungan strategis, dan partisipasi ekosistem",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [Injective Blog Ecosystem Fund, https://blog.injective.com/injective-ecosystem-fund/]; (MEDIUM) [Delphi Digital Portfolio, https://delphidigital.io/portfolio/]"
+      }
+    },
+    {
+      "id": "injective-ENT-011",
+      "projectSlug": "injective",
+      "name": "Injective Protocol",
+      "type": "Protocol",
+      "status": null,
+      "description": "Protokol utama Layer-1 untuk DeFi dan bursa derivatif cross-chain — mencakup chain, exchange, bridge, dan lapisan aplikasi",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Injective Documentation, https://docs.injective.network/]; (HIGH) [Injective Official Website, https://injective.com/]"
+      }
+    },
+    {
+      "id": "injective-ENT-012",
+      "projectSlug": "injective",
+      "name": "Injective Chain",
+      "type": null,
+      "status": null,
+      "description": "Blockchain Layer-1 berbasis Cosmos SDK — lapisan konsensus dan eksekusi native untuk seluruh protokol Injective",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021-11-16–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Injective Docs Architecture, https://docs.injective.network/learn/architecture/]; (HIGH) [Injective Blog Mainnet Launch, https://blog.injective.com/injective-mainnet-launch/]"
+      }
+    },
+    {
+      "id": "injective-ENT-013",
+      "projectSlug": "injective",
+      "name": "Ethereum",
+      "type": null,
+      "status": null,
+      "description": "Chain tujuan bridge ERC-20 — INJ bereksistensi sebagai token ERC-20 (0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30) di Ethereum sebelum dan bersamaan dengan native chain",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [CoinGecko Contract Info, https://www.coingecko.com/en/coins/injective#info]; (HIGH) [Etherscan INJ Token, https://etherscan.io/token/0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30]"
+      }
+    },
+    {
+      "id": "injective-ENT-014",
+      "projectSlug": "injective",
+      "name": "Cosmos",
+      "type": "Protocol",
+      "status": null,
+      "description": "Ekosistem IBC — Injective terhubung via IBC ke rantai Cosmos lain (Osmosis, Celestia, Neutron, dll.) untuk interoperabilitas",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Injective Docs Ecosystem, https://docs.injective.network/ecosystem/]; (HIGH) [Injective Docs Architecture, https://docs.injective.network/learn/architecture/]"
+      }
+    },
+    {
+      "id": "injective-ENT-015",
+      "projectSlug": "injective",
+      "name": "Osmosis",
+      "type": null,
+      "status": null,
+      "description": "DEX AMM terkemuka di ekosistem Cosmos — partner IBC utama untuk likuiditas cross-chain dan routing perdagangan",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "liquidity-dependency",
+        "evidence": "(HIGH) [Injective Docs Ecosystem, https://docs.injective.network/ecosystem/]; (MEDIUM) [Osmosis Zone, https://osmosis.zone/]"
+      }
+    },
+    {
+      "id": "injective-ENT-016",
+      "projectSlug": "injective",
+      "name": "Celestia",
+      "type": null,
+      "status": null,
+      "description": "Modular data availability layer — partner IBC untuk ketersediaan data dan skalabilitas rollup di ekosistem Cosmos",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Injective Docs Ecosystem, https://docs.injective.network/ecosystem/]; (MEDIUM) [Celestia Blog, https://blog.celestia.org/]"
+      }
+    },
+    {
+      "id": "injective-ENT-017",
+      "projectSlug": "injective",
+      "name": "Neutron",
+      "type": null,
+      "status": null,
+      "description": "Smart contract platform cross-chain di Cosmos — partner IBC untuk interoperabilitas kontrak pintar dan DeFi komposabel",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Injective Docs Ecosystem, https://docs.injective.network/ecosystem/]; (MEDIUM) [Neutron Blog, https://blog.neutron.org/]"
+      }
+    },
+    {
+      "id": "injective-ENT-018",
+      "projectSlug": "injective",
+      "name": "Injective Exchange",
+      "type": "Application",
+      "status": null,
+      "description": "On-chain orderbook DEX native — mesin pencocokan pesanan terdesentralisasi sepenuhnya di atas Injective Chain",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Injective Docs Products, https://docs.injective.network/learn/products/]; (HIGH) [Injective Exchange Docs, https://docs.injective.network/learn/exchange/]"
+      }
+    },
+    {
+      "id": "injective-ENT-019",
+      "projectSlug": "injective",
+      "name": "Helix",
+      "type": "Application",
+      "status": null,
+      "description": "Frontend DEX berbasis konsumen — antarmuka pengguna utama untuk trading di Injective Exchange, dikembangkan oleh tim Injective",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Injective Docs Products, https://docs.injective.network/learn/products/]; (HIGH) [Helix App, https://helixapp.com/]"
+      }
+    },
+    {
+      "id": "injective-ENT-020",
+      "projectSlug": "injective",
+      "name": "Injective Hub",
+      "type": "Application",
+      "status": null,
+      "description": "Portal staking dan governance — antarmuka untuk delegasi token, voting proposals, dan manajemen validator",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Injective Docs Products, https://docs.injective.network/learn/products/]; (HIGH) [Injective Hub, https://hub.injective.network/]"
+      }
+    },
+    {
+      "id": "injective-ENT-021",
+      "projectSlug": "injective",
+      "name": "Injective Bridge",
+      "type": null,
+      "status": null,
+      "description": "Jembatan cross-chain — menghubungkan Injective Chain dengan Ethereum (ERC-20) dan rantai IBC untuk transfer aset",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Injective Docs Bridge, https://docs.injective.network/learn/bridge/]; (HIGH) [Injective Bridge UI, https://bridge.injective.network/]"
+      }
+    },
+    {
+      "id": "injective-ENT-022",
+      "projectSlug": "injective",
+      "name": "iAssets",
+      "type": "Protocol",
+      "status": null,
+      "description": "Protokol aset sintetis — memungkinkan pembuatan dan perdagangan aset tertokenisasi (saham, komoditas, forex) di Injective",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Injective Docs Products, https://docs.injective.network/learn/products/]; (MEDIUM) [Injective Blog iAssets, https://blog.injective.com/]"
+      }
+    },
+    {
+      "id": "injective-ENT-023",
+      "projectSlug": "injective",
+      "name": "Talis",
+      "type": "Application",
+      "status": null,
+      "description": "Marketplace NFT di ekosistem Injective — platform minting, trading, dan manajemen NFT terdesentralisasi",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Injective Docs Ecosystem, https://docs.injective.network/ecosystem/]; (MEDIUM) [Talis Protocol, https://talis.art/]"
+      }
+    },
+    {
+      "id": "injective-ENT-024",
+      "projectSlug": "injective",
+      "name": "Frontrunner",
+      "type": "Application",
+      "status": null,
+      "description": "Platform trading sosial/kopi-trading — memungkinkan pengguna menyalin strategi trader teratas di Injective",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Injective Docs Ecosystem, https://docs.injective.network/ecosystem/]; (MEDIUM) [Frontrunner App, https://frontrunner.xyz/]"
+      }
+    },
+    {
+      "id": "injective-ENT-025",
+      "projectSlug": "injective",
+      "name": "Hydro",
+      "type": "Protocol",
+      "status": null,
+      "description": "Protokol lending/borrowing — pasar uang terdesentralisasi untuk pinjaman dan pendapatan yield di Injective",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Injective Docs Ecosystem, https://docs.injective.network/ecosystem/]; (MEDIUM) [Hydro Protocol, https://hydroprotocol.io/]"
+      }
+    },
+    {
+      "id": "injective-ENT-026",
+      "projectSlug": "injective",
+      "name": "Mito",
+      "type": "Application",
+      "status": null,
+      "description": "Platform manajemen aset dan vault — strategi yield otomatis dan manajemen portofolio terdesentralisasi",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Injective Docs Ecosystem, https://docs.injective.network/ecosystem/]; (MEDIUM) [Mito Finance, https://mito.finance/]"
+      }
+    },
+    {
+      "id": "injective-ENT-027",
+      "projectSlug": "injective",
+      "name": "Black Panther",
+      "type": "Application",
+      "status": null,
+      "description": "Aggregator DEX dan router perdagangan — mengoptimalkan eksekusi order di seluruh likuiditas Injective",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2023–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Injective Docs Ecosystem, https://docs.injective.network/ecosystem/]; (MEDIUM) [Black Panther Trade, https://blackpanther.trade/]"
+      }
+    },
+    {
+      "id": "injective-ENT-028",
+      "projectSlug": "injective",
+      "name": "Injective Explorer",
+      "type": null,
+      "status": null,
+      "description": "Block explorer mainnet — antarmuka pencarian blok, transaksi, akun, dan validator resmi Injective Chain",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Injective Explorer Mainnet, https://explorer.injective.network/]; (HIGH) [Injective Docs, https://docs.injective.network/]"
+      }
+    },
+    {
+      "id": "injective-ENT-029",
+      "projectSlug": "injective",
+      "name": "Testnet Explorer",
+      "type": null,
+      "status": null,
+      "description": "Block explorer testnet — antarmuka pengujian dan debugging untuk pengembang di jaringan uji coba Injective",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Injective Testnet Explorer, https://testnet.explorer.injective.network/]; (MEDIUM) [Injective Blog Testnet, https://blog.injective.com/injective-testnet-launch/]"
+      }
+    },
+    {
+      "id": "injective-ENT-030",
+      "projectSlug": "injective",
+      "name": "Etherscan",
+      "type": null,
+      "status": null,
+      "description": "Block explorer Ethereum — digunakan untuk verifikasi kontrak ERC-20 INJ (0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30) dan aktivitas bridge",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Etherscan INJ Token, https://etherscan.io/token/0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30]; (HIGH) [Etherscan Website, https://etherscan.io/]"
+      }
+    },
+    {
+      "id": "injective-ENT-031",
+      "projectSlug": "injective",
+      "name": "CoinGecko",
+      "type": null,
+      "status": null,
+      "description": "Penyedia data pasar — melacak harga, volume, supply, dan metadata token INJ di seluruh exchange",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [CoinGecko INJ Page, https://www.coingecko.com/en/coins/injective]; (HIGH) [CoinGecko Website, https://www.coingecko.com/]"
+      }
+    },
+    {
+      "id": "injective-ENT-032",
+      "projectSlug": "injective",
+      "name": "Crunchbase",
+      "type": null,
+      "status": null,
+      "description": "Database profil perusahaan — menyediakan informasi entitas hukum, pendanaan, dan tim Injective Labs",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2018–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [Crunchbase Injective Labs, https://www.crunchbase.com/organization/injective-labs]; (HIGH) [Crunchbase Website, https://www.crunchbase.com/]"
+      }
+    },
+    {
+      "id": "injective-ENT-033",
+      "projectSlug": "injective",
+      "name": "Forbes",
+      "type": null,
+      "status": null,
+      "description": "Penerbit profil pendiri — mencantumkan Eric Chen dalam 30 Under 30 dan meliputi narasi pendirian Injective",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [Forbes Eric Chen Profile, https://www.forbes.com/profile/eric-chen/]; (HIGH) [Forbes Website, https://www.forbes.com/]"
+      }
+    },
+    {
+      "id": "injective-ENT-034",
+      "projectSlug": "injective",
+      "name": "LinkedIn",
+      "type": null,
+      "status": null,
+      "description": "Platform jaringan profesional — sumber identifikasi peran tim inti (Head of Growth, Head of BD) di Injective Labs",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "MEDIUM",
+        "period": "2021–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(MEDIUM) [LinkedIn Injective Labs, https://www.linkedin.com/company/injective-labs/]; (HIGH) [LinkedIn Website, https://www.linkedin.com/]"
+      }
+    },
+    {
+      "id": "injective-ENT-035",
+      "projectSlug": "injective",
+      "name": "Binance Blog",
+      "type": null,
+      "status": null,
+      "description": "Saluran resmi pengumuman Binance — mempublikasikan detail IEO INJ di Launchpad Oktober 2020",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [Binance Launchpad Announcement, https://www.binance.com/en/blog/421499824684901170/Injective-Protocol-INJ-Token-Sale-on-Binance-Launchpad]; (HIGH) [Binance Blog, https://www.binance.com/en/blog]"
+      }
+    },
+    {
+      "id": "injective-ENT-036",
+      "projectSlug": "injective",
+      "name": "Injective Blog",
+      "type": null,
+      "status": null,
+      "description": "Saluran komunikasi resmi — mengumumkan mainnet launch, testnet launch, ecosystem fund, dan update produk",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [Injective Blog Mainnet, https://blog.injective.com/injective-mainnet-launch/]; (HIGH) [Injective Blog Testnet, https://blog.injective.com/injective-testnet-launch/]; (HIGH) [Injective Blog Ecosystem, https://blog.injective.com/injective-ecosystem-fund/]"
+      }
+    },
+    {
+      "id": "injective-ENT-037",
+      "projectSlug": "injective",
+      "name": "Injective Discord",
+      "type": null,
+      "status": null,
+      "description": "Komunitas diskusi resmi — forum utama untuk pengguna, pengembang, validator, dan kontributor ekosistem",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [Injective Website Footer, https://injective.com/]; (HIGH) [Discord Invite, https://discord.gg/injective]"
+      }
+    },
+    {
+      "id": "injective-ENT-038",
+      "projectSlug": "injective",
+      "name": "Injective Telegram",
+      "type": null,
+      "status": null,
+      "description": "Saluran komunitas real-time — pengumuman cepat, dukungan pengguna, dan koordinasi validator/relayer",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [Injective Website Footer, https://injective.com/]; (HIGH) [Telegram Channel, https://t.me/injectiveofficial]"
+      }
+    },
+    {
+      "id": "injective-ENT-039",
+      "projectSlug": "injective",
+      "name": "Injective Twitter/X",
+      "type": null,
+      "status": null,
+      "description": "Media sosial resmi — distribusi berita, update produk, dan interaksi komunitas @InjectiveLabs",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2020–sekarang",
+        "exposureType": "narrative-correlated-only",
+        "evidence": "(HIGH) [X Profile InjectiveLabs, https://x.com/InjectiveLabs]; (HIGH) [X Website, https://x.com/]"
+      }
+    },
+    {
+      "id": "injective-ENT-040",
+      "projectSlug": "injective",
+      "name": "British Virgin Islands",
+      "type": "Government",
+      "status": null,
+      "description": "Yurisdiksi hukum pendirian — Injective Labs Inc. terdaftar sebagai entitas hukum di BVI",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2018–sekarang",
+        "exposureType": "unknown",
+        "evidence": "(HIGH) [Crunchbase Injective Labs, https://www.crunchbase.com/organization/injective-labs]; (MEDIUM) [BVI Business Registry, https://www.bvifsc.vg/]"
+      }
+    },
+    {
+      "id": "injective-ENT-041",
+      "projectSlug": "injective",
+      "name": "Injective Ecosystem Fund",
+      "type": null,
+      "status": null,
+      "description": "Dana ekosistem — pool dana untuk hibah, insentif likuiditas, dan dukungan proyek membangun di Injective (dikelola Injective Labs dengan mitra VC)",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2022–sekarang",
+        "exposureType": "financial-collateral",
+        "evidence": "(HIGH) [Injective Blog Ecosystem Fund, https://blog.injective.com/injective-ecosystem-fund/]; (MEDIUM) [Injective Docs Ecosystem, https://docs.injective.network/ecosystem/]"
+      }
+    },
+    {
+      "id": "injective-ENT-042",
+      "projectSlug": "injective",
+      "name": "Injective Documentation",
+      "type": null,
+      "status": null,
+      "description": "Dokumentasi teknis resmi — referensi arsitektur, produk, API, dan panduan pengembang untuk seluruh stack Injective",
+      "founded": null,
+      "relatedKnowledge": [],
+      "relatedEvents": [],
+      "metadata": {
+        "evidenceLevel": "HIGH",
+        "period": "2021–sekarang",
+        "exposureType": "technical-integration",
+        "evidence": "(HIGH) [Injective Docs, https://docs.injective.network/]; (HIGH) [Injective Website, https://injective.com/] === PERSON === Eric Chen Albert Chon Aiden Kehoe Nick Olon Mark Cuban === COMPANY === Injective Labs Inc. Binance Pantera Capital Jump Crypto Delphi Digital === FOUNDATION === (tidak ada entitas foundation teridentifikasi) === PROTOCOL === Injective Protocol Cosmos iAssets Hydro === CHAIN === Injective Chain Ethereum Osmosis Celestia Neutron === INVESTOR === Binance Pantera Capital Jump Crypto Mark Cuban Delphi Digital === INFRASTRUCTURE === Injective Bridge Injective Explorer Testnet Explorer Etherscan === APPLICATION === Injective Exchange Helix Injective Hub Talis Frontrunner Mito Black Panther === SECURITY === (tidak ada entitas security/auditor teridentifikasi) === DAO === (tidak ada entitas DAO teridentifikasi) === GOVERNMENT === British Virgin Islands === MEDIA === CoinGecko Crunchbase Forbes LinkedIn Binance Blog Injective Blog Injective Documentation === COMMUNITY === Injective Discord Injective Telegram Injective Twitter/X === OTHER === Injective Ecosystem Fund === RINGKASAN === Total Entity: 44 Internal: 8 (Injective Labs Inc., Eric Chen, Albert Chon, Aiden Kehoe, Nick Olon, Injective Protocol, Injective Chain, Injective Documentation) External: 36 Unknown: 0"
+      }
+    }
   ]
 }

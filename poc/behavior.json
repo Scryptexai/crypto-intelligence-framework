@@ -2864,5 +2864,108 @@
       "Pseudonymous Team vs Institutional Trust",
       "Perps v2 JLP Model (Capital Efficient) vs LP Impermanent Loss Risk"
     ]
+  },
+  "Sui": {
+    "projectSlug": "sui",
+    "strategicObjectives": [
+      "Menjadi blockchain Layer 1 generasi berikutnya dengan throughput tertinggi dan finality tercepat",
+      "Membangun ekosistem DeFi dan consumer application yang luas dengan onboarding pengguna Web2 tanpa hambatan teknis",
+      "Menciptakan ekosistem Move Language yang berkembang dan aman melalui formal verification",
+      "Membangun interoperabilitas cross-chain yang trusted melalui bridge native dan integrasi stablecoin",
+      "Mencapai desentralisasi progresif melalui Sui Foundation dan on-chain governance",
+      "Memperluas ekosistem gaming dan consumer app melalui perangkat keras dan inovasi UX"
+    ],
+    "decisionPatterns": [
+      "Pemilihan Arsitektur Object-Centric",
+      "Konsensus DAG-Based (Narwhal/Bullshark → Mysticeti) untuk Throughput Tinggi",
+      "Pembangunan Empat Lapisan Node secara Terpisah (Validator, Full Node, RPC, Indexer)",
+      "Penggunaan Move Language dengan Formal Verification",
+      "Perkembangan zkLogin dan Sponsored Transactions sebagai Primitive Utama",
+      "Tidak Adopsi EVM Compatibility",
+      "Pendanaan Ekuitas Bertahap dengan Valuasi Meningkat",
+      "Treasury Management yang Transparan dan Konservatif",
+      "Grants Program sebagai Instrumen Pertumbuhan Ekosistem",
+      "Tidak Ada Protocol-Level Revenue Capture ke Foundation",
+      "Integrasi Stablecoin Sejak Awal untuk Likuiditas DeFi",
+      "Bridge berlapis — Wormhole untuk Cakupan Luas, Native Bridge untuk Kepercayaan",
+      "Listing Exchange Utama Serentak Sejak TGE",
+      "Investasi pada Infrastruktur Pihak Ketiga (Shinami, NodeReal) untuk Skala",
+      "Fokus pada Gaming dan Consumer App sebagai Pembeda",
+      "Pemisahan Entitas Pengembang (Mysten Labs) dan Pengelola Ekosistem (Sui Foundation)",
+      "On-chain Governance untuk Parameter Protokol, Off-chain untuk Treasury",
+      "Slashing Tidak Aktif sebagai Keputusan Keamanan Awal",
+      "Membangun Internal Apabila Dependensi Eksternal Dianggap Kritis",
+      "Launch Cepat, Upgrade Terus-Menerus",
+      "Mengadopsi Standar Eksternal (CCTP, Move Language) Sebelum Membangun Sendiri",
+      "Fokus pada Developer dan Community Engagement Melalui Hackathon",
+      "Menarik Investor Strategis yang Mendukung Integrasi Ekosistem"
+    ],
+    "riskResponse": [
+      "Menanggapi Ketergantungan Bridge Eksternal dengan Membangun Bridge Native",
+      "Keamanan Berlapis Melalui Audit Eksternal Berulang",
+      "Perlindungan Terhadap Volatilitas Pasar Melalui Treasury Diversifikasi (tidak dikonfirmasi)",
+      "Respons Terhadap Insiden FTX (tidak terdokumentasi secara eksplisit)"
+    ],
+    "tradeOffs": [
+      "Desentralisasi vs Throughput",
+      "Keamanan vs Adopsi Developer (Tidak EVM-Compatible)",
+      "Trust-Minimized Bridge vs Kecepatan Interoperabilitas",
+      "Sentralisasi Salt Service vs Keamanan zkLogin",
+      "Pertumbuhan Ekosistem vs Keberlanjutan Jangka Panjang (Grants)",
+      "Keamanan Slashing vs Partisipasi Validator"
+    ]
+  },
+  "Injective": {
+    "projectSlug": "injective",
+    "strategicObjectives": [
+      "Menjadi Layer-1 blockchain terdepan untuk decentralized finance dengan fokus cross-chain derivatives exchange",
+      "Mengamankan interoperabilitas cross-chain sebagai diferensiasi utama melalui IBC (Cosmos) dan Peggy Bridge (Ethereum)",
+      "Membangun ekosistem developer dan aplikasi melalui CosmWasm enablement dan Injective Ecosystem Fund",
+      "Mendistribusikan nilai ke pemegang INJ melalui staking rewards, exchange fee share, governance, dan deflationary mechanism (auction burn)",
+      "Menjaga kontrol pengembangan inti di Injective Labs Inc. (entitas BVI) sambil transisi ke governance on-chain untuk parameter protokol"
+    ],
+    "decisionPatterns": [
+      "Appchain Purpose-Built Architecture — Native Module untuk Exchange, Bukan Smart Contract",
+      "Cosmos SDK + Tendermint/CometBFT sebagai Foundation — Sovereign Chain dengan IBC Native",
+      "Dual Bridge Strategy — Peggy (Validator-based) untuk Ethereum + IBC (Light Client) untuk Cosmos",
+      "Staged CosmWasm Enablement — Activate Setelah Mainnet Stabil",
+      "Upgrade Via On-Chain Governance — Coordinated Software Upgrade Proposal",
+      "Validator Set sebagai Multi-Role Operator — Consensus, Bridge Attestation, Oracle, Governance",
+      "Minimal Public Fundraising — Hanya Binance Launchpad IEO ($3M) Terverifikasi Publik",
+      "Ecosystem Fund sebagai Vehicle VC Partnership — Bukan Direct Equity Investment",
+      "Protocol Revenue Multi-Stream — Exchange Fee, Bridge Fee, Auction, Insurance Allocation",
+      "Tokenomics dengan Inflation + Deflationary Mechanism — Staking Rewards + Auction Burn",
+      "Vesting Length Berbeda per Kategori — Team/Foundation/Investors 3-4 Tahun, Community/Ecosystem Lebih Lama",
+      "Treasury/Community Pool Dikelola Via Governance — Tidak Ada Foundation Terpisah Terverifikasi",
+      "IBC-First Expansion — Prioritaskan Integrasi dengan Cosmos Ecosystem Chains",
+      "Official Frontend Trio — Helix (Trading), Hub (Staking/Gov), Bridge UI (Cross-chain) Sebagai Controlled Entry Points",
+      "Ecosystem Fund Grants untuk Bootstrap Application Layer — Target Kategori DeFi Lengkap",
+      "SDK Multi-Bahasa untuk Developer Accessibility — TS, Python, Go, Rust/CosmWasm",
+      "Validator/Relayer/Indexer Infrastructure Decentralized Operation — Injective Labs Provide Binary, Community Run Nodes",
+      "On-Chain Governance untuk Semua Protocol Changes — Parameter, Upgrade, Treasury Spend",
+      "Validator sebagai Voting Power Proxy — Delegator Override Optional",
+      "Tidak Ada Foundation/DAO Terpisah — Governance Langsung ke Protokol, Core Dev di Injective Labs Inc.",
+      "Community Pool Spend untuk Ecosystem Growth — Treasury Deployment Via Proposal",
+      "Major Upgrade di Setiap Tahun — v1.x (2022), v2.x (2023), CometBFT (2024)",
+      "Ekspansi IBC Channel Setiap Quarter — Osmosis, Celestia, Neutron, Axelar, Stride, dydX",
+      "Launch Aplikasi Ekosistem Berkelompok Pasca-CosmWasm Enable — 6 dApp dalam 12 Bulan (2022-2023)",
+      "Mitra VC Konsisten dari Seed ke Ecosystem Fund — Pantera, Binance, Jump, Delphi, Mark Cuban",
+      "Official Frontend/Maintenance oleh Core Team — Helix, Hub, Bridge UI Selalu di-maintain Injective Labs"
+    ],
+    "riskResponse": [
+      "Upgrade Proaktif untuk Scaling dan Security — Bukan Reactive ke Exploit",
+      "Validator Set Slashing sebagai Primary Security Enforcement — Double-Sign 5%, Downtime 0.01%/Block",
+      "Insurance Fund sebagai Backstop untuk Cascading Liquidation — Exchange Fee Allocation",
+      "Peggy Bridge Trust Assumption Mitigasi — Validator Set Sebagai Attester dengan Threshold 2/3+",
+      "CometBFT Migration Preparation Sebagai Risk Mitigation untuk Consensus Layer — Proaktif Anti-Upstream Abandonment"
+    ],
+    "tradeOffs": [
+      "Desentralisasi vs Kecepatan Pengembangan — Core Dev Terpusat di Injective Labs Inc.",
+      "Trust-Minimized Bridge (IBC) vs Trusted Bridge (Peggy) untuk Ethereum — Interoperabilitas vs Security Assumption",
+      "Orderbook Fully On-Chain vs Throughput/Latency — Transparansi & Non-Custodial vs HFT Performance",
+      "Cosmos SDK Appchain vs General-Purpose L1 / EVM Compatibility — Sovereignty & IBC Native vs Developer Onboarding",
+      "Inflationary Staking Rewards vs Token Holder Dilution — Network Security vs Value Accrual",
+      "Single Validator Set untuk Multi-Fungsi vs Role Separation — Operational Simplicity vs Concentration Risk"
+    ]
   }
 }

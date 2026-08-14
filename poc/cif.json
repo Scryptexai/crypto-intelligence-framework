@@ -1,9 +1,9 @@
 {
   "meta": {
     "schema": "cif-export/1",
-    "generated": "2026-08-14 07:13 UTC",
-    "projects": 54,
-    "deep": 54,
+    "generated": "2026-08-14 15:45 UTC",
+    "projects": 56,
+    "deep": 56,
     "summary": 0,
     "sentiment": 0,
     "patterns": 16,
@@ -106,6 +106,7 @@
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "pivot",
         "l1"
       ]
@@ -171,6 +172,7 @@
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "modular",
         "bridge"
       ]
@@ -193,6 +195,7 @@
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "lrt",
         "liquid-restaking",
         "restaking",
@@ -220,6 +223,7 @@
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "lrt",
         "liquid-restaking",
         "restaking",
@@ -282,6 +286,17 @@
       ]
     },
     {
+      "n": "Injective",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Injective.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "airdrop",
+        "bridge"
+      ]
+    },
+    {
       "n": "Irys",
       "tier": "Deep",
       "file": "examples/CaseStudies/Irys.md",
@@ -311,7 +326,9 @@
       "file": "examples/CaseStudies/Jupiter.md",
       "cat": "",
       "era": "",
-      "tags": []
+      "tags": [
+        "airdrop"
+      ]
     },
     {
       "n": "Kamino",
@@ -389,7 +406,9 @@
       "file": "examples/CaseStudies/Near.md",
       "cat": "",
       "era": "",
-      "tags": []
+      "tags": [
+        "airdrop"
+      ]
     },
     {
       "n": "Notcoin",
@@ -419,6 +438,7 @@
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "l2"
       ]
     },
@@ -429,6 +449,7 @@
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "bridge"
       ]
     },
@@ -439,6 +460,7 @@
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "l2"
       ]
     },
@@ -460,7 +482,7 @@
       "cat": "",
       "era": "",
       "tags": [
-        "amm"
+        "airdrop"
       ]
     },
     {
@@ -470,6 +492,7 @@
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "oracle",
         "bridge"
       ]
@@ -480,7 +503,9 @@
       "file": "examples/CaseStudies/Render.md",
       "cat": "",
       "era": "",
-      "tags": []
+      "tags": [
+        "airdrop"
+      ]
     },
     {
       "n": "Scroll",
@@ -489,7 +514,7 @@
       "cat": "",
       "era": "",
       "tags": [
-        "bridge",
+        "airdrop",
         "l2"
       ]
     },
@@ -500,6 +525,7 @@
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "modular",
         "l1"
       ]
@@ -521,7 +547,20 @@
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "l2"
+      ]
+    },
+    {
+      "n": "Sui",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Sui.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "airdrop",
+        "testnet-incentive",
+        "l1"
       ]
     },
     {
@@ -531,6 +570,7 @@
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "amm",
         "bridge",
         "governance"

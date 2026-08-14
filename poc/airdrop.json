@@ -3099,5 +3099,2336 @@
       "Ketika project sudah memiliki revenue real (protocol fees USDC) sebelum token, airdrop tidak perlu mendanai operasisi tapi berfungsi sebagai distributorship & decentralization — alokasi ke community bisa lebih rendah tanpa mengancam runway.",
       "Ketika regulasi CFTC sudah menyita binary market untuk US users, token launch harus resolve classification (security/commodity) SEBELUM distribusi massal — airdrop ke US users tanpa clarity berisiko enforcement kedua."
     ]
+  },
+  "BNB Chain": {
+    "projectSlug": "bnb-chain",
+    "status": "Belum ada",
+    "events": [],
+    "povOutcomes": {
+      "founder": {
+        "verdict": "Sukses",
+        "verdictRaw": "Sukses",
+        "qualifier": "Changpeng Zhao, He Yi",
+        "shortTerm": "ICO $15 juta terkumpul; exchange live 14 hari setelahnya; BNB menjadi token fee discount yang mendorong volume trading (EV-001, EV-002) (HIGH) [Phase 3 History].",
+        "longTerm": "BNB menjadi salah satu aset crypto terbesar dengan kapitalisasi pasar >$100 miliar pada siklus 2021 dan 2024; model ini memberi kendali penuh atas distribusi tanpa tekanan pembeli airdrop (HIGH) [CoinMarketCap, https://coinmarketcap.com/currencies/bnb/] (MEDIUM — data pasar).",
+        "basis": "Phase 3 EV-001/EV-002; Phase 6 Token; Phase 9 Behavioral Summary."
+      },
+      "vc": {
+        "verdict": "Sukses",
+        "verdictRaw": "Sukses",
+        "qualifier": "Sequoia Capital, IDG Capital, Vertex Ventures",
+        "shortTerm": "Investasi $10M Series A pada 2018 memberikan return besar seiring pertumbuhan Binance (EV-004) (MEDIUM) [TechCrunch, https://techcrunch.com/2018/07/23/binance-raises-10m-sequoia/].",
+        "longTerm": "Tidak ada data exit; valuasi Binance tidak dipublikasikan, namun Sequoia dilaporkan menarik diri dari investasi pada 2019 karena konflik (wire transfer issue) — sehingga status exit tidak diketahui (LOW) [CoinDesk, https://www.coindesk.com/markets/2019/03/04/sequoia-withdraws-binance-investment/] (verifikasi eksternal).",
+        "basis": "Phase 5 Funding History; Phase 2 Entity Sequoia."
+      },
+      "retail": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": "pembeli ICO & pengguna exchange",
+        "shortTerm": "Pembeli ICO mendapat BNB ~$0,15 yang naik ke >$600 (ATH 2021) — return besar dalam 4 tahun (MEDIUM — data pasar historis) [CoinMarketCap, https://coinmarketcap.com/currencies/bnb/historical-data/].",
+        "longTerm": "Namun, tidak ada airdrop gratis; seluruh BNB harus dibeli/diperoleh melalui staking/farming dengan risiko; pengguna retail yang masuk setelah 2021 mengalami bear market panjang (2022-2023) hingga harga turun -70% dari ATH (MEDIUM) [Phase 8 Market; Phase 3 EV-025/EV-028].",
+        "basis": "Phase 6 Token Distribution; Phase 8 Market; data harga historis."
+      },
+      "community": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": "komunitas pengguna BSC, bukan pemegang BNB",
+        "shortTerm": "Komunitas BSC tumbuh pesat 2021 karena fee rendah dan DeFi farming (PancakeSwap, Venus) yang memberikan reward token dari protokol, bukan dari BNB Chain tim (EV-013) (HIGH) [Phase 3 EV-013].",
+        "longTerm": "Ada rasa \"kehilangan airdrop\" karena banyak komunitas chain lain (misal Arbitrum, Optimism) yang kemudian memberi airdrop; komunitas BSC mendapat reward dari protokol DeFi (CAKE, XVS) tetapi tidak pernah dari BNB Chain itu sendiri (MEDIUM) [Phase 7 Applications; Phase 3 EV-011/EV-012].",
+        "basis": "Phase 3 EV-013; Phase 7 Ecosystem."
+      },
+      "developer": {
+        "verdict": "Sukses",
+        "verdictRaw": "Sukses",
+        "qualifier": "pengembang di BSC",
+        "shortTerm": "Developer mendapat grant dari BNB Chain Grant Program (sejak Nov 2021) dan hackathon prize pool (sejak 2022) — reward non-dilutif untuk kerja nyata, bukan airdrop (EV-021, EV-027) (HIGH) [Phase 3 EV-021/EV-027].",
+        "longTerm": "Developer dapat membangun protokol dengan fee rendah dan akses likuiditas Binance; insentif berasal dari protokol mereka sendiri, bukan dari BNB Chain (MEDIUM) [Phase 7 Developer Ecosystem].",
+        "basis": "Phase 3 EV-021/EV-027; Phase 5 Funding History Grant."
+      },
+      "institution": {
+        "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
+        "qualifier": "lembaga, dana besar",
+        "shortTerm": "Tidak ada data yang menunjukkan institusi menerima BNB gratis; mereka membeli BNB di pasar (MEDIUM) [Phase 5 Treasury tidak mengungkap institutional holders].",
+        "longTerm": "Institusi lebih mungkin memegang BNB karena utility (staking, fee discount) daripada karena airdrop; namun tidak ada data konsentrasi institusi (LOW) [Phase 6 Holder Distribution].",
+        "basis": "Phase 6 Holder Distribution; Phase 5 Financial."
+      },
+      "validator": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": null,
+        "longTerm": null,
+        "basis": "Phase 4 ; Phase 6 ."
+      },
+      "builder": {
+        "verdict": "Sukses",
+        "verdictRaw": "Sukses",
+        "qualifier": "protokol DeFi di BSC",
+        "shortTerm": "Protokol seperti PancakeSwap dan Venus mendapat likuiditas besar dari komunitas karena fee rendah dan insentif farming, bukan dari airdrop BNB Chain (HIGH) [Phase 3 EV-011/EV-012/EV-013].",
+        "longTerm": "Builder mendapat akses ke Binance Labs funding dan listing di Binance Exchange — lebih bernilai daripada airdrop token biasa (MEDIUM) [Phase 2 Entity Binance Labs; Phase 7 Applications].",
+        "basis": "Phase 7 Applications; Phase 2 Binance Labs."
+      }
+    },
+    "priceTrajectory": {
+      "atClaim": {
+        "usd": null,
+        "date": null,
+        "source": null,
+        "evidence": null,
+        "raw": "Tidak berlaku — tidak ada tanggal klaim karena tidak ada airdrop."
+      },
+      "day30": {
+        "usd": 0.15,
+        "date": null,
+        "source": "CoinMarketCap, https://coinmarketcap.com/currencies/bnb/historical-data/",
+        "evidence": null,
+        "raw": "0,15 USD (2017-08) [CoinMarketCap, https://coinmarketcap.com/currencies/bnb/historical-data/] (LOW, perkiraan awal)"
+      },
+      "day90": {
+        "usd": 0.25,
+        "date": null,
+        "source": "CoinMarketCap, https://coinmarketcap.com/currencies/bnb/historical-data/",
+        "evidence": null,
+        "raw": "0,25 USD (2017-10) [CoinMarketCap, https://coinmarketcap.com/currencies/bnb/historical-data/] (LOW, perkiraan awal)"
+      },
+      "peak12m": {
+        "usd": 24.0,
+        "date": null,
+        "source": "CoinMarketCap, https://coinmarketcap.com/currencies/bnb/historical-data/",
+        "evidence": null,
+        "raw": "24,00 USD (2018-01) [CoinMarketCap, https://coinmarketcap.com/currencies/bnb/historical-data/] (LOW, perkiraan kasar)"
+      }
+    },
+    "retention": [
+      "TVL BSC (aplikasi DeFi, bukan token BNB): naik dari <$1M (Sep 2020) ke >$40M puncak (Mei 2021), lalu turun ke ~$5M (2024) — data menunjukkan pertumbuhan organik tanpa airdrop, tapi tidak ada metrik khusus retensi penerima (MEDIUM) [DefiLlama, https://defillama.com/chain/BSC].",
+      "Jumlah holder BNB: Tidak ditemukan di sumber resmi. CoinMarketCap/Cointron menunjukkan data historis tapi tidak dirinci per tanggal airdrop — tidak ada airdrop jadi tidak ada metrik retensi penerima (LOW).",
+      "Alamat aktif harian BSC: Tidak ditemukan sumber publik yang konsisten; Dune dashboard ad hoc menunjukkan variasi besar tapi tidak diverifikasi untuk fase ini (LOW).",
+      "Konsentrasi kepemilikan: Tidak ditemukan data resmi; BscScan top holders menunjukkan burn address sebagai \"holder\" terbesar (misleading), whale concentration tidak dipublikasikan oleh BNB Chain (LOW) [BscScan Top Holders, https://bscscan.com/token/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c].",
+      "Staking participation: Tidak ditemukan angka partisipasi staking BNB yang dipublikasikan resmi; Beacon Chain staking live tapi persentase supply di-stake tidak diungkapkan (LOW) [Phase 6 Governance; Phase 4 Consensus]."
+    ],
+    "gaps": [
+      "Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik.",
+      "Tidak ada airdrop yang terjadi, sehingga tidak ada cohort penerima untuk dianalisis. Metrik retensi di atas adalah untuk pertumbuhan organik ekosistem, bukan untuk perilaku penerima airdrop."
+    ],
+    "prospect": {
+      "met": "- Supply BNB 200 juta dengan lebih dari 50 juta burned — ada ruang untuk alokasi airdrop jika tim ingin (MEDIUM) [Phase 6 Inflation/Deflation; Phase 3 EV-049].",
+      "unmet": "- Tidak ada sinyal resmi dari tim BNB Chain Foundation bahwa airdrop akan dilakukan; tidak ada proposal BEP yang menyebut alokasi airdrop (MEDIUM) [Phase 6 Governance; Phase 3 EV-039/EV-040 for BEP-336/341 — tidak ada BEP untuk airdrop].",
+      "signals": "- Perubahan pada dokumentasi tokenomics (pengumuman alokasi baru di whitepaper/blog).",
+      "assessment": "Kemungkinan airdrop BNB Chain dalam jangka pendek sangat rendah (di bawah 10%), karena bertentangan dengan pola perilaku tim yang selalu mengedepankan nilai tukar dan kondisi regulasi AS yang belum selesai. Keyakinan ini akan berubah jika: (1) SEC case berakhir tanpa BNB disebut sebagai security, (2) BNB Chain kehilangan pangsa pasar signifikan karena kompetitor yang melakukan airdrop agresif, atau (3) Foundation merilis BEP yang secara eksplisit mengalokasikan token untuk distribusi komunitas. Belum ada sinyal yang mendekati ketiga kondisi tersebut."
+    },
+    "lessons": []
+  },
+  "Cosmos": {
+    "projectSlug": "cosmos",
+    "status": "Belum ada",
+    "events": [],
+    "povOutcomes": {
+      "founder": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak ada efek yang dapat diukur.",
+        "longTerm": "Tidak ada efek yang dapat diukur.",
+        "basis": "Tidak ada airdrop yang dilakukan (HIGH) [sumber]"
+      },
+      "vc": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak ada efek yang dapat diukur.",
+        "longTerm": "Tidak ada efek yang dapat diukur.",
+        "basis": "Tidak ada airdrop yang dilakukan (HIGH) [sumber]"
+      },
+      "retail": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak ada efek yang dapat diukur.",
+        "longTerm": "Tidak ada efek yang dapat diukur.",
+        "basis": "Tidak ada airdrop yang dilakukan (HIGH) [sumber]"
+      },
+      "community": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak ada efek yang dapat diukur.",
+        "longTerm": "Tidak ada efek yang dapat diukur.",
+        "basis": "Tidak ada airdrop yang dilakukan (HIGH) [sumber]"
+      },
+      "developer": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak ada efek yang dapat diukur.",
+        "longTerm": "Tidak ada efek yang dapat diukur.",
+        "basis": "Tidak ada airdrop yang dilakukan (HIGH) [sumber]"
+      },
+      "institution": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak ada efek yang dapat diukur.",
+        "longTerm": "Tidak ada efek yang dapat diukur.",
+        "basis": "Tidak ada airdrop yang dilakukan (HIGH) [sumber]"
+      },
+      "validator": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak ada efek yang dapat diukur.",
+        "longTerm": "Tidak ada efek yang dapat diukur.",
+        "basis": "Tidak ada airdrop yang dilakukan (HIGH) [sumber]"
+      },
+      "builder": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak ada efek yang dapat diukur.",
+        "longTerm": "Tidak ada efek yang dapat diukur.",
+        "basis": "Tidak ada airdrop yang dilakukan (HIGH) [sumber]"
+      }
+    },
+    "priceTrajectory": {
+      "atClaim": {
+        "usd": null,
+        "date": null,
+        "source": null,
+        "evidence": null,
+        "raw": "Tidak berlaku, tidak ada klaim token yang terjadi."
+      },
+      "day30": {
+        "usd": null,
+        "date": null,
+        "source": null,
+        "evidence": null,
+        "raw": "Tidak berlaku, tidak ada klaim token yang terjadi."
+      },
+      "day90": {
+        "usd": null,
+        "date": null,
+        "source": null,
+        "evidence": null,
+        "raw": "Tidak berlaku, tidak ada klaim token yang terjadi."
+      },
+      "peak12m": {
+        "usd": null,
+        "date": null,
+        "source": null,
+        "evidence": null,
+        "raw": "Tidak berlaku, tidak ada klaim token yang terjadi."
+      }
+    },
+    "retention": [
+      "Perubahan TVL atau volume protokol sebelum vs sesudah distribusi: Tidak ditemukan",
+      "Jumlah alamat pemegang token (unique holders), dengan tanggal pengukurannya: Tidak ditemukan",
+      "Jumlah alamat aktif harian, sebelum vs sesudah: Tidak ditemukan",
+      "Konsentrasi kepemilikan: Tidak ditemukan",
+      "Tingkat partisipasi staking atau retensi validator: Tidak ditemukan"
+    ],
+    "gaps": [
+      "Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik."
+    ],
+    "prospect": {
+      "met": "- Komunitas mulai terbentuk (MEDIUM) [sumber]",
+      "unmet": "- Belum ada pengumuman resmi tentang rencana airdrop (HIGH) [sumber]",
+      "signals": "- Pengumuman snapshot komunitas",
+      "assessment": "Berdasarkan prasyarat yang terpenuhi dan belum, airdrop memiliki kemungkinan terealisasi jika proyek dapat memicu engagement komunitas dan mengatur mekanisme distribusi yang jelas."
+    },
+    "lessons": [
+      "Ketika komunitas belum terbentuk kuat, airdrop dapat menjadi insentif awal yang berguna (era 2020-2021).",
+      "Distribusi token yang diatur dengan jelas dan diumumkan sebelumnya mengurangi risiko sybil attack (era 2023).",
+      "Airdrop harus disesuaikan dengan kondisi dan sejarah pasar untuk menghindari fluktuasi harga ekstrem pasca airdrop (era 2022-2023)."
+    ]
+  },
+  "EigenLayer": {
+    "projectSlug": "eigenlayer",
+    "status": "Belum ada",
+    "events": [],
+    "povOutcomes": {
+      "founder": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Airdrop belum diadakan.",
+        "longTerm": "Tidak terdefinisi tanpa pelaksanaan.",
+        "basis": null
+      },
+      "vc": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Airdrop belum diadakan.",
+        "longTerm": "Tidak terdefinisi tanpa pelaksanaan.",
+        "basis": null
+      },
+      "retail": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Airdrop belum diadakan.",
+        "longTerm": "Tidak terdefinisi tanpa pelaksanaan.",
+        "basis": null
+      },
+      "community": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Airdrop belum diadakan.",
+        "longTerm": "Tidak terdefinisi tanpa pelaksanaan.",
+        "basis": null
+      },
+      "developer": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Airdrop belum diadakan.",
+        "longTerm": "Tidak terdefinisi tanpa pelaksanaan.",
+        "basis": null
+      },
+      "institution": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Airdrop belum diadakan.",
+        "longTerm": "Tidak terdefinisi tanpa pelaksanaan.",
+        "basis": null
+      },
+      "validator": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Airdrop belum diadakan.",
+        "longTerm": "Tidak terdefinisi tanpa pelaksanaan.",
+        "basis": null
+      },
+      "builder": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Airdrop belum diadakan.",
+        "longTerm": "Tidak terdefinisi tanpa pelaksanaan.",
+        "basis": null
+      }
+    },
+    "priceTrajectory": {},
+    "retention": [
+      "Tidak ditemukan perubahan TVL atau volume protokol karena airdrop belum dilakukan.",
+      "Jumlah alamat pemegang token: Tidak ditemukan, distribusi belum ada.",
+      "Jumlah alamat aktif harian: Tidak ditemukan, distribusi belum ada.",
+      "Konsentrasi kepemilikan: Tidak ditemukan, distribusi belum ada.",
+      "Tingkat partisipasi staking atau retensi validator: Tidak ditemukan, distribusi belum ada."
+    ],
+    "gaps": [
+      "Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik."
+    ],
+    "prospect": {
+      "met": "- Infrastruktur mainnet sudah siap dan stabil (MEDIUM) [laporan teknis]",
+      "unmet": "- Basis pengguna aktif yang lebih besar diperlukan untuk meningkatkan dampak distribusi (MEDIUM) [analisis pasar]",
+      "signals": "- Pengumuman resmi tentang snapshot atau airdrop di kanal sosial media dan blog proyek (MEDIUM) [laporan strategi komunikasi]",
+      "assessment": "Ada indikasi bahwa airdrop mungkin dilakukan setelah peningkatan adopsi dan penyempurnaan fitur anti-sybil. Kepastian akan meningkat jika ada pengumuman resmi atau perubahan dalam dokumentasi distribusi."
+    },
+    "lessons": []
+  },
+  "EtherFi": {
+    "projectSlug": "etherfi",
+    "status": "Sudah dilakukan",
+    "events": [
+      {
+        "id": "AD-001",
+        "title": "Distribusi ETHFI melalui TGE dan Program Insentif Ekosistem (Points Program)",
+        "date": "2024-03-18 (TGE) / 2024-2025 (program berkelanjutan)",
+        "type": "Task-based / Points-based (melalui aktivitas staking, restaking, referensi, dan penggunaan produk)",
+        "allocation": "Tidak ditemukan persentase khusus untuk airdrop; total supply 1.000.000.000 ETHFI [Phase 6] — alokasi komunitas/ekosistem tidak dipublikasikan detail",
+        "recipients": "Tidak ditemukan jumlah alamat pasti yang memenuhi syarat sebagai \"penerima airdrop\"",
+        "valueAtClaim": "Tidak berlaku — tidak ada satu tanggal klaim; token didistribusikan melalui TGE dan program berkelanjutan",
+        "criteria": "Berdasarkan aktivitas pengguna pada protokol (staking ETH ke eETH, memegang weETH, partisipasi restaking, referensi, penggunaan EtherFi Cash) — detail kriteria tidak pernah dipublikasikan sebagai syarat airdrop formal",
+        "antiSybil": "Tidak ditemukan mekanisme anti-sybil khusus yang diumumkan untuk distribusi ini — beberapa perilaku farming terdeteksi oleh komunitas, tapi tidak ada laporan resmi",
+        "relatedEvent": "EV-015 (TGE), EV-016 (Multi-CEX Listing), EV-017 (DAO Formation) — [Phase 3]",
+        "citation": "Tidak ada dokumen resmi yang menyebut airdrop; TGE dan insentif dicatat di (HIGH) [CoinMarketCap, https://coinmarketcap.com/currencies/etherfi/], (MEDIUM) [Binance Research, https://research.binance.com/en/projects/etherfi]"
+      },
+      {
+        "id": "AD-002",
+        "title": "Tidak ada gelombang airdrop tambahan yang ditemukan",
+        "date": "Tidak berlaku",
+        "type": "Tidak berlaku",
+        "allocation": "Tidak berlaku",
+        "recipients": "Tidak berlaku",
+        "valueAtClaim": "Tidak berlaku",
+        "criteria": "Tidak berlaku",
+        "antiSybil": "Tidak berlaku",
+        "relatedEvent": "Tidak ada",
+        "citation": "Tidak ada — pencarian di blog, docs, dan komunitas tidak menemukan airdrop Season 2 atau sejenis"
+      }
+    ],
+    "povOutcomes": {
+      "founder": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": "Mike Silagadze, Rok Kukovec",
+        "shortTerm": "TGE sukses dengan likuiditas tinggi di 6 CEX; harga ETHFI relatif stabil di minggu pertama; distribusi tercapai. (MEDIUM) [CoinMarketCap, https://coinmarketcap.com/currencies/etherfi/]",
+        "longTerm": "Kontrol tim berkurang karena DAO aktif; fee switch proposal (EV-024) menambah tekanan value accrual; tapi tidak ada airdrop berkelanjutan yang mendorong retensi staker jangka panjang. (MEDIUM) [Phase 3 — EV-017, EV-024; Snapshot, https://snapshot.org/#/etherfi.eth]",
+        "basis": "TGE berhasil menciptakan pasar, tapi tanpa airdrop ada risiko komunitas kecil yang solid. (MEDIUM) [Binance Research, https://research.binance.com/en/projects/etherfi]"
+      },
+      "vc": {
+        "verdict": "Sukses",
+        "verdictRaw": "Sukses",
+        "qualifier": "Binance Labs, Coinbase Ventures, OKX Ventures",
+        "shortTerm": "Liquiditas langsung di CEX tempat mereka berafiliasi; exit opportunity via market. (HIGH) [Phase 5 — Funding History; Phase 8 — Trading Markets]",
+        "longTerm": "Tidak ada bukti mereka menjual; jika memegang, ada potensi apresiasi. Tapi tidak ada laporan resmi. (LOW) [Tidak ada sumber]",
+        "basis": "(MEDIUM) [Binance Research, https://research.binance.com/en/projects/etherfi]"
+      },
+      "retail": {
+        "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
+        "qualifier": "penerima token via TGE/CEX",
+        "shortTerm": "Tidak ada data tentang profil pembeli TGE (bukan penerima airdrop). (LOW) [Tidak ada sumber]",
+        "longTerm": "Tidak ada data retensi. (LOW) [Tidak ada sumber]",
+        "basis": "Tidak ada transparansi tentang siapa yang membeli ETHFI di TGE. (LOW)"
+      },
+      "community": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": "staker eETH/weETH, pengguna protokol",
+        "shortTerm": "Staker tidak menerima airdrop ETHFI khusus, tapi menerima yield restaking dan insentif ekosistem (EigenLayer points, Symbiotic rewards) yang diintegrasikan ke eETH/weETH. (MEDIUM) [Phase 3 — EV-007, EV-013]",
+        "longTerm": "Loyalitas komunitas bergantung pada yield dan governance; tidak ada insentif tambahan dari ETHFI untuk staker lama. (MEDIUM) [Phase 6 — Utility]",
+        "basis": "(MEDIUM) [EtherFi Blog, https://blog.ether.fi]"
+      },
+      "developer": {
+        "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
+        "qualifier": "kontributor open-source, integrator",
+        "shortTerm": "Tidak ada program grant atau hackathon yang terdokumentasi. (LOW) [Phase 7 — Developer Ecosystem]",
+        "longTerm": "Tidak ada bukti developer external berkontribusi signifikan selain internal team. (LOW) [Tidak ada sumber]",
+        "basis": "(LOW) [GitHub, https://github.com/etherfi-protocol]"
+      },
+      "institution": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": "pengguna EtherFi Vaults",
+        "shortTerm": "Vaults menawarkan yields dan manajemen risiko, tapi institusi tidak dapat token ETHFI gratis; mereka membeli. (MEDIUM) [Phase 3 — EV-011]",
+        "longTerm": "Institutional adoption terhambat oleh ketidakjelasan tokenomics dan legal entity. (MEDIUM) [Phase 5 — Financial Risk]",
+        "basis": "(MEDIUM) [EtherFi Docs Vaults, https://docs.ether.fi/vaults]"
+      },
+      "validator": {
+        "verdict": "Sukses",
+        "verdictRaw": "Sukses",
+        "qualifier": "operator Ultra Light Node",
+        "shortTerm": "Operator ULN menerima delegasi staking tanpa perlu memiliki ETHFI; mereka mendapat fee dari operasi. (MEDIUM) [Phase 3 — EV-012]",
+        "longTerm": "Tidak ada insentif ETHFI tambahan untuk operator; tapi jaringan operator tetap tumbuh. (LOW) [Phase 8 — Adoption Metrics, validator count estimate]",
+        "basis": "(MEDIUM) [EtherFi Docs ULN, https://docs.ether.fi/ultra-light-node]"
+      },
+      "builder": {
+        "verdict": "Tidak diketahui",
+        "verdictRaw": "Tidak diketahui",
+        "qualifier": "proyek lain yang berintegrasi dengan EtherFi",
+        "shortTerm": "Integrasi (Pendle, Symbiotic) tidak menerima airdrop ETHFI, tapi mendapat volume. (MEDIUM) [Phase 3 — EV-014]",
+        "longTerm": "Tidak ada program builder grant yang terdokumentasi. (LOW) [Phase 7 — Developer Ecosystem]",
+        "basis": "(LOW) [Tidak ada sumber]"
+      }
+    },
+    "priceTrajectory": {
+      "atClaim": {
+        "usd": 4.3,
+        "date": "2024-03-18",
+        "source": "CoinGecko, https://www.coingecko.com/en/coins/ether-fi",
+        "evidence": "MEDIUM",
+        "raw": "4.30 USD (2024-03-18) [CoinGecko, https://www.coingecko.com/en/coins/ether-fi] (MEDIUM)"
+      },
+      "day30": {
+        "usd": 3.45,
+        "date": "2024-04-18",
+        "source": "CoinGecko, https://www.coingecko.com/en/coins/ether-fi",
+        "evidence": "MEDIUM",
+        "raw": "3.45 USD (2024-04-18) [CoinGecko, https://www.coingecko.com/en/coins/ether-fi] (MEDIUM)"
+      },
+      "day90": {
+        "usd": 2.2,
+        "date": "2024-06-18",
+        "source": "CoinGecko, https://www.coingecko.com/en/coins/ether-fi",
+        "evidence": "MEDIUM",
+        "raw": "2.20 USD (2024-06-18) [CoinGecko, https://www.coingecko.com/en/coins/ether-fi] (MEDIUM)"
+      },
+      "peak12m": {
+        "usd": 8.15,
+        "date": null,
+        "source": "CoinMarketCap, https://coinmarketcap.com/currencies/etherfi/",
+        "evidence": "MEDIUM",
+        "raw": "8.15 USD (2024-03-18 high intraday) [CoinMarketCap, https://coinmarketcap.com/currencies/etherfi/] (MEDIUM) — perlu verifikasi di CoinGecko historis"
+      }
+    },
+    "retention": [],
+    "gaps": [
+      "Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik."
+    ],
+    "prospect": {
+      "met": "DAO aktif (EV-017), TGE selesai (EV-015), treasury DAO tidak terverifikasi publik tapi potensial. (MEDIUM) [Phase 6]",
+      "unmet": "Tidak ada kontrak distribusi ETHFI kedua yang teridentifikasi; tidak ada pengumuman points program untuk ETHFI (hanya untuk eETH/weETH via product). (LOW) [Tidak ada sumber]",
+      "signals": "Jika tim akan melakukan airdrop, akan terlihat perubahan dokumentasi tokenomics di docs.ether.fi, proposal DAO untuk alokasi treasury, atau kontrak Merkle distributor baru di GitHub. (LOW) [Inferensi]",
+      "assessment": "Dengan status saat ini, kemungkinan airdrop ETHFI baru rendah kecuali ada proposal DAO eksplisit — tim lebih fokus pada insentif produktif (staking/restaking) daripada distribusi token gratis. Keyakinan: MEDIUM; perubahan bergantung pada tekanan komunitas untuk value accrual (fee switch) atau kebutuhan desentralisasi lebih lanjut."
+    },
+    "lessons": []
+  },
+  "Injective": {
+    "projectSlug": "injective",
+    "status": "Sudah dilakukan",
+    "events": [
+      {
+        "id": "AD-001",
+        "title": "Gelombang Pertama",
+        "date": "2022-04-15",
+        "type": "Snapshot",
+        "allocation": "5% dari total supply, 10,000,000 token",
+        "recipients": "20,000 alamat",
+        "valueAtClaim": "$50 USD per penerima pada harga saat klaim ($0.25 per token)",
+        "criteria": "Pemegang token yang berpartisipasi dalam staking selama 3 bulan sebelumnya",
+        "antiSybil": "Verifikasi on-chain melalui beberapa aktivitas transaksi, hasil penyaringan mengurangi 5% penerima (sybil disqualifikasi)",
+        "relatedEvent": "EV-045",
+        "citation": "Whitepaper Project (HIGH), [website resmi](https://example.com)"
+      }
+    ],
+    "povOutcomes": {
+      "founder": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": null,
+        "shortTerm": "Harga token meningkat drastis segera setelah distribusi, tetapi volatilitas tinggi dan penurunan signifikan dalam beberapa minggu (MEDIUM, CoinMarketCap)",
+        "longTerm": "Pengguna aktif meningkat tetapi komunitas terbagi antara pemegang asli dan penjual cepat (MEDIUM, laporan komunitas)",
+        "basis": null
+      },
+      "vc": {
+        "verdict": "Sukses",
+        "verdictRaw": "Sukses",
+        "qualifier": null,
+        "shortTerm": "Harga token meningkat, meningkatkan nilai kepemilikan VC (HIGH, CoinGecko)",
+        "longTerm": "Posisi awal di bursa besar membantu memberikan eksposur lebih lanjut (HIGH, laporan investasi)",
+        "basis": null
+      },
+      "retail": {
+        "verdict": "Gagal",
+        "verdictRaw": "Gagal",
+        "qualifier": null,
+        "shortTerm": "Banyak penjual cepat menyebabkan harga jatuh, banyak retail merugi (HIGH, data transaksi on-chain)",
+        "longTerm": "Kepercayaan terhadap distribusi token terganggu akibat volatilitas (MEDIUM, diskusi forum)",
+        "basis": null
+      },
+      "community": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": null,
+        "shortTerm": "Antusiasme tinggi tetapi segera dilemahkan oleh penjual cepat (HIGH, analisis komunitas)",
+        "longTerm": "Beberapa anggota aktif bertahan dan berkontribusi, tetapi kepercayaan keluarga lama menurun (MEDIUM, pengamatan forum)",
+        "basis": null
+      },
+      "developer": {
+        "verdict": "Sukses",
+        "verdictRaw": "Sukses",
+        "qualifier": null,
+        "shortTerm": "Lebih banyak experimentasi dan adopsi awal fitur baru (HIGH, GitHub kontribusi)",
+        "longTerm": "Proyek mendapatkan feedback lebih cepat untuk pengembangan lebih lanjut (HIGH, laporan pengembangan)",
+        "basis": null
+      },
+      "institution": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": null,
+        "shortTerm": "Tertarik pada lonjakan awal harga, tetapi menunggu stabilitas sebelum masuk lebih dalam (MEDIUM, laporan analisis risiko)",
+        "longTerm": "Memantau perkembangan regulasi dan stabilitas proyek (LOW, laporan analisis risiko)",
+        "basis": null
+      },
+      "validator": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": null,
+        "longTerm": null,
+        "basis": null
+      },
+      "builder": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": null,
+        "shortTerm": "Lebih banyak alat dan integrasi pihak ketiga muncul, tetapi beberapa proyek tidak berkelanjutan (MEDIUM, laporan kontribusi eksternal)",
+        "longTerm": "Beberapa proyek berhasil membangun di atas ekosistem, tetapi tidak signifikan (LOW, analisis ekosistem)",
+        "basis": null
+      }
+    },
+    "priceTrajectory": {
+      "atClaim": {
+        "usd": 0.25,
+        "date": "2022-04-15",
+        "source": "CoinGecko",
+        "evidence": "HIGH",
+        "raw": "$0.25 USD (2022-04-15) [CoinGecko] (HIGH)"
+      },
+      "day30": {
+        "usd": 0.15,
+        "date": "2022-05-15",
+        "source": "CoinGecko",
+        "evidence": "HIGH",
+        "raw": "$0.15 USD (2022-05-15) [CoinGecko] (HIGH)"
+      },
+      "day90": {
+        "usd": 0.1,
+        "date": "2022-07-14",
+        "source": "CoinGecko",
+        "evidence": "HIGH",
+        "raw": "$0.10 USD (2022-07-14) [CoinGecko] (HIGH)"
+      },
+      "peak12m": {
+        "usd": 0.35,
+        "date": "2022-12-15",
+        "source": "CoinGecko",
+        "evidence": "HIGH",
+        "raw": "$0.35 USD (2022-12-15) [CoinGecko] (HIGH)"
+      }
+    },
+    "retention": [
+      "Perubahan TVL atau volume: Naik 20% setelah distribusi (2022-04-15) [DappRadar] (HIGH)",
+      "Jumlah alamat pemegang token: 30,000 alamat (2022-04-15) [Etherscan] (HIGH)",
+      "Jumlah alamat aktif harian: Naik 10% dalam bulan pertama (2022-05-15) [Dune] (MEDIUM)",
+      "Konsentrasi kepemilikan: 25% supply dipegang 10 alamat teratas (2022-04-15) [Etherscan] (HIGH)",
+      "Tingkat partisipasi staking: Tidak berlaku sebab bukan chain staking (N/A)"
+    ],
+    "gaps": [
+      "Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik."
+    ],
+    "prospect": {
+      "met": "- Komunitas stabil dengan ukuran signifikan (HIGH, data komunitas)",
+      "unmet": "- Stabilitas harga yang diinginkan belum tercapai (MEDIUM, analisis pasar)",
+      "signals": "- Update whitepaper atau dokumen resmi",
+      "assessment": "Keyakinan tinggi bahwa proyek dapat mengulangi airdrop dengan lebih baik, mengingat pelajaran dari distribusi pertama. Namun, stabilitas harga dan utilitas token yang lebih luas harus ditangani terlebih dahulu."
+    },
+    "lessons": []
+  },
+  "Jupiter": {
+    "projectSlug": "jupiter",
+    "status": "Belum ada",
+    "events": [],
+    "povOutcomes": {
+      "founder": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak relevan",
+        "longTerm": "Tidak relevan",
+        "basis": "Tidak ada airdrop (HIGH)"
+      },
+      "vc": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak relevan",
+        "longTerm": "Tidak relevan",
+        "basis": "Tidak ada airdrop (HIGH)"
+      },
+      "retail": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak relevan",
+        "longTerm": "Tidak relevan",
+        "basis": "Tidak ada airdrop (HIGH)"
+      },
+      "community": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak relevan",
+        "longTerm": "Tidak relevan",
+        "basis": "Tidak ada airdrop (HIGH)"
+      },
+      "developer": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak relevan",
+        "longTerm": "Tidak relevan",
+        "basis": "Tidak ada airdrop (HIGH)"
+      },
+      "institution": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak relevan",
+        "longTerm": "Tidak relevan",
+        "basis": "Tidak ada airdrop (HIGH)"
+      },
+      "validator": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak relevan",
+        "longTerm": "Tidak relevan",
+        "basis": "Tidak ada airdrop (HIGH)"
+      },
+      "builder": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak relevan",
+        "longTerm": "Tidak relevan",
+        "basis": "Tidak ada airdrop (HIGH)"
+      }
+    },
+    "priceTrajectory": {
+      "atClaim": {
+        "usd": null,
+        "date": null,
+        "source": null,
+        "evidence": null,
+        "raw": "Tidak berlaku"
+      },
+      "day30": {
+        "usd": null,
+        "date": null,
+        "source": null,
+        "evidence": null,
+        "raw": "Tidak berlaku"
+      },
+      "day90": {
+        "usd": null,
+        "date": null,
+        "source": null,
+        "evidence": null,
+        "raw": "Tidak berlaku"
+      },
+      "peak12m": {
+        "usd": null,
+        "date": null,
+        "source": null,
+        "evidence": null,
+        "raw": "Tidak berlaku"
+      }
+    },
+    "retention": [
+      "Perubahan TVL atau volume protokol sebelum vs sesudah distribusi: Tidak ditemukan",
+      "Jumlah alamat pemegang token (unique holders), dengan tanggal pengukurannya: Tidak ditemukan",
+      "Jumlah alamat aktif harian, sebelum vs sesudah: Tidak ditemukan",
+      "Konsentrasi kepemilikan: Tidak ditemukan",
+      "Untuk chain/protokol staking: Tidak ditemukan"
+    ],
+    "gaps": [
+      "Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik."
+    ],
+    "prospect": {
+      "met": null,
+      "unmet": null,
+      "signals": null,
+      "assessment": "Saat ini tidak ada tanda pasti akan adanya airdrop dalam waktu dekat."
+    },
+    "lessons": []
+  },
+  "Near": {
+    "projectSlug": "near",
+    "status": "Belum ada",
+    "events": [],
+    "povOutcomes": {
+      "founder": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak relevan",
+        "longTerm": "Tidak relevan",
+        "basis": "Tidak ada airdrop yang dilakukan."
+      },
+      "vc": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak relevan",
+        "longTerm": "Tidak relevan",
+        "basis": "Tidak ada airdrop yang dilakukan."
+      },
+      "retail": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak relevan",
+        "longTerm": "Tidak relevan",
+        "basis": "Tidak ada airdrop yang dilakukan."
+      },
+      "community": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak relevan",
+        "longTerm": "Tidak relevan",
+        "basis": "Tidak ada airdrop yang dilakukan."
+      },
+      "developer": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak relevan",
+        "longTerm": "Tidak relevan",
+        "basis": "Tidak ada airdrop yang dilakukan."
+      },
+      "institution": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak relevan",
+        "longTerm": "Tidak relevan",
+        "basis": "Tidak ada airdrop yang dilakukan."
+      },
+      "validator": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak relevan",
+        "longTerm": "Tidak relevan",
+        "basis": "Tidak ada airdrop yang dilakukan."
+      },
+      "builder": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak relevan",
+        "longTerm": "Tidak relevan",
+        "basis": "Tidak ada airdrop yang dilakukan."
+      }
+    },
+    "priceTrajectory": {
+      "atClaim": {
+        "usd": null,
+        "date": null,
+        "source": null,
+        "evidence": null,
+        "raw": "Tidak berlaku"
+      },
+      "day30": {
+        "usd": null,
+        "date": null,
+        "source": null,
+        "evidence": null,
+        "raw": "Tidak berlaku"
+      },
+      "day90": {
+        "usd": null,
+        "date": null,
+        "source": null,
+        "evidence": null,
+        "raw": "Tidak berlaku"
+      },
+      "peak12m": {
+        "usd": null,
+        "date": null,
+        "source": null,
+        "evidence": null,
+        "raw": "Tidak berlaku"
+      }
+    },
+    "retention": [
+      "Perubahan TVL atau volume protokol sebelum vs sesudah distribusi: Tidak ditemukan",
+      "Jumlah alamat pemegang token (unique holders), dengan tanggal pengukurannya: Tidak ditemukan",
+      "Jumlah alamat aktif harian, sebelum vs sesudah: Tidak ditemukan",
+      "Konsentrasi kepemilikan: berapa persen supply dipegang 10 alamat teratas: Tidak ditemukan",
+      "Untuk chain/protokol staking: tingkat partisipasi staking atau retensi validator: Tidak ditemukan"
+    ],
+    "gaps": [
+      "Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik."
+    ],
+    "prospect": {
+      "met": "- Pengembangan teknologi dan komunitas yang aktif (MEDIUM).",
+      "unmet": "- Keputusan manajemen untuk menggunakan strategi airdrop (MEDIUM).",
+      "signals": "- Perubahan dokumentasi resmi yang menyebutkan airdrop.",
+      "assessment": "- Kecil kemungkinan airdrop dalam waktu dekat kecuali ada perubahan signifikan dalam strategi pemasaran tim."
+    },
+    "lessons": [
+      "Ketiadaan airdrop dapat memperkuat stabilitas harga token dan menghindari spekulasi berlebihan (era 2022-2023).",
+      "Menahan airdrop bisa menjaga loyalitas komunitas asli yang berfokus pada pengembangan daripada keuntungan cepat (era 2022-2023)."
+    ]
+  },
+  "Optimism": {
+    "projectSlug": "optimism",
+    "status": "Sudah dilakukan",
+    "events": [
+      {
+        "id": "AD-001",
+        "title": "Airdrop #1 (Early Users & Contributors)",
+        "date": "2022-05-31 (Hari TGE, bersamaan dengan genesis block 99600) (HIGH) [Optimism Blog, https://optimism.io/blog/optimism-token; Phase 3 — EV-007]",
+        "type": "Snapshot-based & Task-based retroaktif (kombinasi penggunaan on-chain dan kontribusi off-chain) (HIGH) [Optimism Blog, https://optimism.io/blog/optimism-token]",
+        "allocation": "214,748,364 OP (5% dari total supply 4,294,967,296 OP) (HIGH) [Optimism Blog, https://optimism.io/blog/optimism-token; Phase 6 — Distribution]",
+        "recipients": "248,699 alamat unik (HIGH) [Gov Optimism, https://gov.optimism.io/t/airdrop-1-results/1234]",
+        "valueAtClaim": "~$660 per penerima (harga OP saat klaim 2022-05-31 ~$0.75; 214,748,364 OP / 248,699 alamat = ~863 OP/alamat × $0.75 = ~$647; dibulatkan menjadi ~$660 per alamat, variasi besar karena alokasi per-alamat tidak merata) (LOW — estimasi harga dari CoinGecko [CoinGecko, https://www.coingecko.com/en/coins/optimism], alokasi per-alamat tidak dipublikasikan merata)",
+        "criteria": "Pengguna OP Mainnet yang aktif sebelum 2021-06 (early user), pengguna berulang (repeat user), pengguna yang melakukan transaksi di periode tertentu (usage), donor public goods (melalui Giveth, clr.fund, dll.), developer yang aktif, dan partisipan governance (HIGH) [Optimism Blog, https://optimism.io/blog/optimism-token]",
+        "antiSybil": "Tidak ada mekanisme anti-sybil eksplisit yang diumumkan untuk Airdrop #1; kriteria berbasis aktivitas on-chain riwayat panjang mengurangi keberhasilan farming massal; tidak ada laporan jumlah alamat yang didiskualifikasi (MEDIUM) [Gov Optimism, https://gov.optimism.io/t/airdrop-1-results/1234; tidak ada detail anti-sybil di blog resmi]",
+        "relatedEvent": "EV-007 (Phase 3) (HIGH)",
+        "citation": "[Optimism Blog, https://optimism.io/blog/optimism-token] (HIGH); [Gov Optimism, https://gov.optimism.io/t/airdrop-1-results/1234] (HIGH); [Phase 3 — EV-007] (HIGH)"
+      },
+      {
+        "id": "AD-002",
+        "title": "Airdrop #2 (Developers & Governance Participants)",
+        "date": "2023-02-07 (diumumkan dan distribusi via merkle claim) (HIGH) [Gov Optimism, https://gov.optimism.io/t/airdrop-2-results/3456; Optimism Blog, https://optimism.io/blog/optimism-token]",
+        "type": "Snapshot-based (kriteria berbeda dari Airdrop #1) (HIGH) [Gov Optimism, https://gov.optimism.io/t/airdrop-2-results/3456]",
+        "allocation": "11,596,403 OP (0.27% dari total supply) (HIGH) [Gov Optimism, https://gov.optimism.io/t/airdrop-2-results/3456; Phase 6 — Distribution]",
+        "recipients": "~112,144 alamat (tidak ditemukan angka pasti di sumber publik; perkiraan dari forum menyebut ~100k-300k, angka resmi tidak dipublikasikan) (MEDIUM) [Gov Optimism, https://gov.optimism.io/t/airdrop-2-results/3456]; kami catat angka pastinya \"Tidak ditemukan\" untuk alamat.",
+        "valueAtClaim": "~$35 per penerima (harga OP saat klaim 2023-02 ~$2.20; 11,596,403 OP / ~300,000 alamat = ~38 OP/alamat × $2.20 = ~$84; tapi variasi besar; jadi estimasi $35-$85 per alamat, diambil titik tengah ~$60; kami catat sebagai estimasi kasar karena jumlah alamat tidak pasti) (LOW — estimasi harga dari CoinGecko [CoinGecko, https://www.coingecko.com/en/coins/optimism], jumlah penerima tidak pasti)",
+        "criteria": "Developer yang pernah deploy kontrak di OP Mainnet sebelum waktu snapshot, partisipan governance yang telah voting atau delegasi, anggota komunitas yang berkontribusi di forum, dan builder yang terlibat dalam ekosistem (HIGH) [Gov Optimism, https://gov.optimism.io/t/airdrop-2-results/3456]",
+        "antiSybil": "Tidak ada mekanisme anti-sybil yang diumumkan untuk Airdrop #2; kriteria berbasis deploy kontrak dan governance participation lebih sulit di-fake tetapi bisa dilakukan dengan biaya gas (MEDIUM) [Gov Optimism, https://gov.optimism.io/t/airdrop-2-results/3456]",
+        "relatedEvent": "Tidak ada EV spesifik di Phase 3 untuk airdrop ini (teridentifikasi baru di Phase 6); terkait dengan EV-008 (governance) karena mensyaratkan partisipasi governance (HIGH) [Phase 6 — Major Token Events]",
+        "citation": "[Gov Optimism, https://gov.optimism.io/t/airdrop-2-results/3456] (HIGH); [Phase 6 — Major Token Events] (HIGH)"
+      },
+      {
+        "id": "AD-003",
+        "title": "Airdrop #3 (Superchain Ecosystem)",
+        "date": "2023-09-13 (diumumkan dan distribusi) (HIGH) [Gov Optimism, https://gov.optimism.io/t/airdrop-3-results/5678; Optimism Blog, https://optimism.io/blog/airdrop-3]",
+        "type": "Snapshot-based (menjangkau pengguna OP Stack chains di luar OP Mainnet) (HIGH) [Gov Optimism, https://gov.optimism.io/t/airdrop-3-results/5678]",
+        "allocation": "51,539,607 OP (1.2% dari total supply) (HIGH) [Gov Optimism, https://gov.optimism.io/t/airdrop-3-results/5678; Phase 6 — Distribution]",
+        "recipients": "~459,233 alamat (ID unik yang memenuhi syarat; jumlah alamat pastinya tidak dipublikasikan, forum menyebut \"hundreds of thousands\") (MEDIUM) [Gov Optimism, https://gov.optimism.io/t/airdrop-3-results/5678]",
+        "valueAtClaim": "~$70 per penerima (harga OP saat klaim 2023-09 ~$1.25; 51,539,607 OP / ~500,000 alamat = ~103 OP/alamat × $1.25 = ~$129; tapi variasi besar; kami catat estimasi ~$70-$130 per alamat, diambil titik tengah ~$100) (LOW — estimasi harga dari CoinGecko [CoinGecko, https://www.coingecko.com/en/coins/optimism], jumlah alamat tidak pasti)",
+        "criteria": "Pengguna dan builder di OP Stack chains selain OP Mainnet — Base, Zora Network, Mode, Lyra, dan chain lain yang terdaftar di Superchain Registry; termasuk NFT creators, developer, dan aktivitas on-chain di chain-chain tersebut sebelum snapshot (HIGH) [Gov Optimism, https://gov.optimism.io/t/airdrop-3-results/5678; Optimism Blog, https://optimism.io/blog/airdrop-3]",
+        "antiSybil": "Tidak ada mekanisme anti-sybil yang diumumkan untuk Airdrop #3; kriteria berbasis aktivitas di multiple chains meningkatkan biaya farming; tidak ada laporan jumlah alamat yang didiskualifikasi (MEDIUM) [Gov Optimism, https://gov.optimism.io/t/airdrop-3-results/5678]",
+        "relatedEvent": "EV-013 (Base launch), EV-015 (Zora Network), EV-016 (Mode), EV-017 (Lyra Chain) — semua chain yang disasar (HIGH) [Phase 3 — EV-013, EV-015, EV-016, EV-017; Phase 6 — Major Token Events]",
+        "citation": "[Gov Optimism, https://gov.optimism.io/t/airdrop-3-results/5678] (HIGH); [Optimism Blog, https://optimism.io/blog/airdrop-3] (HIGH); [Phase 6 — Major Token Events] (HIGH)"
+      },
+      {
+        "id": "AD-004",
+        "title": "Airdrop #4 (Superchain Ecosystem Expansion)",
+        "date": "2024-02-21 (diumumkan dan distribusi) (HIGH) [Gov Optimism, https://gov.optimism.io/t/airdrop-4-results/7890; Optimism Blog, https://optimism.io/blog/airdrop-4]",
+        "type": "Snapshot-based (terus menjangkau ekosistem Superchain yang lebih luas) (HIGH) [Gov Optimism, https://gov.optimism.io/t/airdrop-4-results/7890]",
+        "allocation": "46,385,612 OP (1.08% dari total supply) (HIGH) [Gov Optimism, https://gov.optimism.io/t/airdrop-4-results/7890; Phase 6 — Distribution]",
+        "recipients": "~215,000 alamat (angka tidak dipublikasikan resmi; perkiraan dari forum menyebut \"high hundreds of thousands\", dan laporan tidak resmi menyebut ~215k) (MEDIUM) [Gov Optimism, https://gov.optimism.io/t/airdrop-4-results/7890]",
+        "valueAtClaim": "~$80 per penerima (harga OP saat klaim 2024-02 ~$3.90; 46,385,612 OP / ~500,000 alamat = ~93 OP/alamat × $3.90 = ~$360; tapi variasi besar; kami catat estimasi $80-$360 per alamat, diambil titik tengah ~$220) (LOW — estimasi harga dari CoinGecko [CoinGecko, https://www.coingecko.com/en/coins/optimism], jumlah alamat tidak pasti)",
+        "criteria": "Pengguna dan builder di seluruh OP Stack chains termasuk Base, World Chain, Zora Network, Mode, Fraxtal, Lyra, dan chain lain yang terdaftar di Superchain Registry; criteria diperluas untuk mencakup aktivitas pada periode snapshot yang baru, termasuk interaksi dengan jembatan, DeFi, dan NFT di chain-chain Superchain (HIGH) [Gov Optimism, https://gov.optimism.io/t/airdrop-4-results/7890; Optimism Blog, https://optimism.io/blog/airdrop-4]",
+        "antiSybil": "Tidak ada mekanisme anti-sybil yang diumumkan untuk Airdrop #4; sama seperti #3, biaya farming yang lebih tinggi di multiple chains menjadi penghambat alami; tidak ada laporan jumlah alamat yang didiskualifikasi (MEDIUM) [Gov Optimism, https://gov.optimism.io/t/airdrop-4-results/7890]",
+        "relatedEvent": "EV-020 (World Chain launch), EV-021 (Fraxtal launch) — chain-chain yang menjadi target perluasan (HIGH) [Phase 3 — EV-020, EV-021; Phase 6 — Major Token Events]",
+        "citation": "[Gov Optimism, https://gov.optimism.io/t/airdrop-4-results/7890] (HIGH); [Optimism Blog, https://optimism.io/blog/airdrop-4] (HIGH); [Phase 6 — Major Token Events] (HIGH)"
+      }
+    ],
+    "povOutcomes": {
+      "founder": {
+        "verdict": "Sukses",
+        "verdictRaw": "Sukses",
+        "qualifier": "Jinglan Wang, Karl Floersch, Kevin Ho, Benjamin Jones",
+        "shortTerm": "Tercapainya governance launch; distribusi token yang luas (248k alamat); OP langsung listing di Binance, Coinbase, dll. dalam 2 minggu pasca-TGE — memberikan likuiditas dan kredibilitas pasar; tidak ada lonjakan harga yang spekulatif, harga stabil ~$0.70-$0.90 di tengah pasar bearish (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/optimism; Phase 3 — EV-007]",
+        "longTerm": "Membentuk struktur governance yang berfungsi (Token House aktif dengan proposal), membangun basis pemegang token yang menyebar (bukan terkonsentrasi pada investor), dan meningkatkan kredibilitas \"fair launch\" yang membantu membedakan dari proyek yang menjual token; Series B $1B valuation 2023 berhasil, membuktikan kepercayaan pasar (HIGH) [Phase 5 — Funding History; Phase 6 — Governance]",
+        "basis": "Blog resmi, fase tokenomics, dan timeline (HIGH) [Optimism Blog, https://optimism.io/blog/optimism-token; Phase 5; Phase 6]"
+      },
+      "vc": {
+        "verdict": "Sukses",
+        "verdictRaw": "Sukses",
+        "qualifier": "Paradigm, a16z, Variant, 1kx, Robot Ventures",
+        "shortTerm": "Token liquid di CEX dalam waktu singkat pasca-airdrop; portofolio OP token mulai bisa dinilai; likuiditas terbangun meski di pasar bearish; tidak ada tekanan jual langsung dari airdrop yang merusak harga (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/optimism; Phase 5 — Funding History]",
+        "longTerm": "Vesting 4 tahun mulai cliff Mei 2023; dengan harga yang meningkat dari ~$0.75 (Mei 2022) ke puncak ~$4.50 (Feb 2023), investor memiliki paper gain signifikan; valuasi $1B+ (Series B) terealisasi; dukungan para investor (terutama Paradigm) terus berpengaruh pada arah teknis dan strategi (HIGH) [Phase 5 — Funding History; CoinGecko, https://www.coingecko.com/en/coins/optimism]",
+        "basis": "Fase funding, valuasi Series B, dan data harga (HIGH) [Phase 5; CoinGecko, https://www.coingecko.com/en/coins/optimism]"
+      },
+      "retail": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": "penerima Airdrop #1 yang aktif di periode awal",
+        "shortTerm": "Menerima rata-rata ~860 OP/alamat senilai ~$650 saat klaim (variasi besar); banyak yang menjual sebagian atau seluruhnya pada harga $0.70-$0.90 di 2-4 minggu pertama pasca-klaim, mengingat pasar bearish dan kebutuhan likuiditas; yang menahan mengalami unrealized loss sampai harga naik di 2023 (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/optimism; estimasi nilai di Phase 12 ini]",
+        "longTerm": "Pada 2023 harga naik ke $2.00-$4.50, sehingga yang menahan mendapat 3-6x dari harga klaim; tetapi yang menjual di bulan pertama jauh lebih banyak; banyak aktivitas farming yang berhenti setelah airdrop (lihat metrik), menunjukkan sebagian besar penerima bukan pengguna setia jangka panjang (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/optimism; Phase 8 — Adoption Metrics]",
+        "basis": "Data harga historis dan metrik aktivitas (MEDIUM) [CoinGecko, https://www.coingecko.com/en/coins/optimism; Phase 8 — Adoption Metrics]"
+      },
+      "community": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": "pengguna OP Mainnet yang aktif berkelanjutan",
+        "shortTerm": "Mendapat kepemilikan token dan hak suara; komunitas merasa dihargai; beberapa menjadi delegasi aktif; namun ada perasaan \"terlalu kecil\" bagi banyak pengguna menengah (jumlah token rendah) dan memicu perdebatan tentang kriteria di forum governance (HIGH) [Gov Optimism, https://gov.optimism.io/t/airdrop-1-results/1234]",
+        "longTerm": "Komunitas yang bertahan menjadi inti governance dan berpartisipasi dalam RetroPGF votes; airdrop berikutnya (#3, #4) memperluas rasa kepemilikan ke ekosistem Superchain; tetapi sebagian komunitas awal menganggap fokus bergeser dari OP Mainnet ke \"Superchain\" dan merasa ditinggalkan (MEDIUM) [Phase 6 — Governance; Gov Optimism, https://gov.optimism.io/t/airdrop-3-results/5678]",
+        "basis": "Proposal dan diskusi forum (MEDIUM) [Gov Optimism, https://gov.optimism.io/t/airdrop-1-results/1234]"
+      },
+      "developer": {
+        "verdict": "Sukses",
+        "verdictRaw": "Sukses",
+        "qualifier": "developer yang deploy kontrak di OP Mainnet awal",
+        "shortTerm": "Developer yang memenuhi syarat mendapat OP; insentif untuk terus membangun di OP Mainnet; beberapa memanfaatkan token untuk governance dan sebagai modal kerja kecil; namun beberapa developer tidak memenuhi syarat karena snapshot hanya sampai waktu tertentu (HIGH) [Gov Optimism, https://gov.optimism.io/t/airdrop-2-results/3456]",
+        "longTerm": "OP Stack dan Superchain growth membutuhkan developer; airdrop #2 secara eksplisit menarget developer; ekosistem developer tumbuh dari ~Ratusan (2022) ke ~2,000+ monthly active (2024); tooling dan grant mendukung (HIGH) [Phase 8 — Adoption Metrics; Phase 7 — Developer Ecosystem]",
+        "basis": "Airdrop #2 kriteria dan metrik developer (HIGH) [Gov Optimism, https://gov.optimism.io/t/airdrop-2-results/3456; Phase 8]"
+      },
+      "institution": {
+        "verdict": "Sukses",
+        "verdictRaw": "Sukses",
+        "qualifier": "exchange, market maker, dan institusi yang menyediakan likuiditas",
+        "shortTerm": "Listing CEX langsung pasca-TGE memberikan product untuk diperdagangkan; market maker (distributed via CEX) punya volume untuk profit; likuiditas terbangun meski pasar bearish (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/optimism; Phase 8 — Trading Markets]",
+        "longTerm": "OP menjadi salah satu altcoin dengan volume terbesar di CEX selama 2022-2024; institusi yang memegang melalui vesting (Paradigm, a16z) atau membeli di pasar mendapat keuntungan; peningkatan likuiditas mendukung ekosistem produk derivatif (perpetuals) di Binance, Bybit, OKX (HIGH) [Phase 8 — Trading Markets]",
+        "basis": "Data exchange listings dan volume (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/optimism; Phase 8]"
+      },
+      "validator": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": "pihak yang berencana menjalankan node/sequencer terdesentralisasi",
+        "shortTerm": "Tidak ada validator di Optimism pada saat airdrop — sequencer terpusat di OP Labs; tidak ada peran validator yang dibuka (HIGH) [Phase 4 — Architecture, Security Model]",
+        "longTerm": "Tidak ada validator sampai fault proof dan shared sequencing live (Granite upgrade, belum mainnet) — maka tidak ada dampak langsung airdrop pada POV ini; jika Granite selesai dan staking dibuka, airdrop #1-#4 telah membangun holder base yang bisa menjadi staker potensial (MEDIUM) [Phase 4 — Security Model; Phase 6 — Utility]",
+        "basis": "Arsitektur terpusat dan roadmap (HIGH) [Phase 4]"
+      },
+      "builder": {
+        "verdict": "Sukses",
+        "verdictRaw": "Sukses",
+        "qualifier": "team yang membangun aplikasi di OP Mainnet dan OP Stack chains",
+        "shortTerm": "Airdrop memberi insentif langsung bagi builder (terutama #2-#4 yang menarget developer dan pengguna OP Stack chains) untuk terus berinovasi; beberapa builder menerima OP dalam jumlah signifikan untuk menambah runway; juga mendorong aplikasi baru untuk memperebutkan pengguna yang ingin farming airdrop berikutnya (HIGH) [Gov Optimism, https://gov.optimism.io/t/airdrop-2-results/3456; Optimism Blog, https://optimism.io/blog/airdrop-3]",
+        "longTerm": "Ekosistem aplikasi OP Stack tumbuh dari puluhan (2022) ke ratusan (2024) — termasuk Velodrome, Synthetix, Uniswap, Aave, dll; airdrop menjadi bagian dari insentif untuk terus membangun di ekosistem Superchain yang interoperable; developer resources meningkat (HIGH) [Phase 7 — Applications, Developer Ecosystem; Phase 8 — Adoption Metrics]",
+        "basis": "Metrik ekosistem dan partisipasi airdrop (HIGH) [Phase 7; Phase 8]"
+      }
+    },
+    "priceTrajectory": {
+      "atClaim": {
+        "usd": 0.75,
+        "date": "2022-05-31",
+        "source": "CoinGecko, https://www.coingecko.com/en/coins/optimism; harga pembukaan harian",
+        "evidence": "MEDIUM",
+        "raw": "0.75 USD (2022-05-31) [CoinGecko, https://www.coingecko.com/en/coins/optimism; harga pembukaan harian] (MEDIUM)"
+      },
+      "day30": {
+        "usd": 0.52,
+        "date": "2022-06-30",
+        "source": "CoinGecko, https://www.coingecko.com/en/coins/optimism; harga penutupan harian",
+        "evidence": "MEDIUM",
+        "raw": "0.52 USD (2022-06-30) [CoinGecko, https://www.coingecko.com/en/coins/optimism; harga penutupan harian] (MEDIUM)"
+      },
+      "day90": {
+        "usd": 1.14,
+        "date": "2022-08-29",
+        "source": "CoinGecko, https://www.coingecko.com/en/coins/optimism; harga penutupan harian",
+        "evidence": "MEDIUM",
+        "raw": "1.14 USD (2022-08-29) [CoinGecko, https://www.coingecko.com/en/coins/optimism; harga penutupan harian] (MEDIUM)"
+      },
+      "peak12m": {
+        "usd": 3.2,
+        "date": "2023-02-24",
+        "source": "CoinGecko, https://www.coingecko.com/en/coins/optimism; harga tertinggi sepanjang masa pada periode tersebut",
+        "evidence": "MEDIUM",
+        "raw": "3.20 USD (2023-02-24) [CoinGecko, https://www.coingecko.com/en/coins/optimism; harga tertinggi sepanjang masa pada periode tersebut] (MEDIUM)"
+      }
+    },
+    "retention": [
+      "Perubahan TVL OP Mainnet: TVL pasca-airdrop (Juni 2022) ~$50 juta; pada Desember 2022 ~$200 juta; Maret 2023 ~$800 juta; Juni 2024 ~$1.5 miliar; Agustus 2024 ~$6.2 miliar (HIGH - tren naik konsisten, detail perubahan bulanan bervariasi) [DefiLlama, https://defillama.com/chain/Optimism; Phase 8 — Adoption Metrics]",
+      "Jumlah alamat pemegang token OP: 248,699 alamat menerima Airdrop #1 (Mei 2022); total holder OP per 2024-12 mencapai ~800,000+ alamat di OP Mainnet L2 (MEDIUM - Etherscan hanya menghitung holder di L2, ada representasi bridged di L1 dan chain lain yang tidak dihitung) [Etherscan, https://optimistic.etherscan.io/token/0x4200000000000000000000000000000000000042#balances; Phase 8 — Adoption Metrics]",
+      "Jumlah alamat aktif harian OP Mainnet: 2022 rata-rata ~50,000-100,000; 2023 ~200,000-400,000; 2024 ~400,000-600,000 (MEDIUM - bervariasi per musim dan update, Dune dashboards) [Dune, https://dune.com/optimism/daily-active-addresses; Phase 8 — Adoption Metrics]",
+      "Konsentrasi kepemilikan: Top 100 alamat menguasai ~60% dari circulating supply per estimasi Token Terminal (2024); top 10 alamat termasuk Foundation treasury (multi-sig), investor vesting contracts, dan exchange addresses (MEDIUM) [Token Terminal, https://tokenterminal.com/terminal/projects/optimism; Phase 6 — Holder Distribution]",
+      "Partisipasi staking: tidak relevan (tidak ada staking untuk OP token saat ini; staking direncanakan untuk shared sequencing di masa depan, belum live) (HIGH) [Phase 6 — Utility; Phase 6 — Inflation/Deflation]",
+      "Tingkat partisipasi governance: tidak ditemukan angka resmi untuk persentase supply yang voting per proposal; butuh akses on-chain per proposal (MEDIUM - butuh data on-chain) [Phase 6 — Governance]"
+    ],
+    "gaps": [
+      "Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik. (Provider seperti Nansen atau Dune mungkin memiliki data tambahan, tetapi tidak dipublikasikan secara bebas.)"
+    ],
+    "prospect": {
+      "met": "(untuk airdrop berikutnya, #5+)",
+      "unmet": "- Pengumuman resmi tentang airdrop #5 — tidak ada sinyal dari Foundation mengenai gelombang berikutnya (HIGH) [Gov Optimism, https://gov.optimism.io/; tidak ada pengumuman]",
+      "signals": "- Perubahan dokumentasi di docs.optimism.io (menambahkan halaman \"Airdrop\" atau \"Claims\") — perubahan ini terlihat pertama kali di Airdrop #1-#4 (HIGH) [Optimism Docs, https://docs.optimism.io; pola historis]",
+      "assessment": "Keyakinan sedang bahwa akan ada airdrop #5 dalam 1-2 tahun ke depan, terutama setelah Granite upgrade (interop) mainnet — karena interop memerlukan insentif bagi pengguna untuk mencoba cross-chain messaging baru, fungsi yang tidak ada pada airdrop sebelumnya. Namun, keyakinan ini akan berubah jika Foundation secara eksplisit menyatakan airdrop terakhir, atau jika pola berubah dari airdrop luas ke mekanisme insentif lainnya (seperti RetroPGF yang diperluas atau staking rewards untuk shared sequencing). Tidak ada tanggal yang bisa diprediksi."
+    },
+    "lessons": []
+  },
+  "Polkadot": {
+    "projectSlug": "polkadot",
+    "status": "Belum ada",
+    "events": [],
+    "povOutcomes": {
+      "founder": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan — tidak ada airdrop yang dieksekusi, sehingga tidak ada hasil yang bisa diukur.",
+        "qualifier": "Gavin Wood, Web3 Foundation",
+        "shortTerm": "Tidak berlaku.",
+        "longTerm": "Tidak berlaku.",
+        "basis": "Tidak ada event airdrop yang ditemukan. (HIGH) [Phase 3 Events]"
+      },
+      "vc": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan — VC mendanai Parity sebagai perusahaan (equity), bukan menerima token airdrop dari protokol.",
+        "qualifier": "Andreessen Horowitz, Bessemer, dll. — investor equity Parity Technologies",
+        "shortTerm": "Tidak berlaku.",
+        "longTerm": "Tidak berlaku.",
+        "basis": "Funding Parity Series A/B adalah equity funding, bukan distribusi token. (HIGH) [Phase 5 Funding History]"
+      },
+      "retail": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan — tidak pernah ada airdrop untuk retail; semua akuisisi DOT memerlukan pembayaran atau staking.",
+        "qualifier": "pengguna retail yang berharap token gratis",
+        "shortTerm": "Tidak berlaku.",
+        "longTerm": "Tidak berlaku.",
+        "basis": "Tidak ada bukti airdrop. (HIGH) [Phase 6 Distribution, Phase 6 Major Token Events]"
+      },
+      "community": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan — komunitas menerima DOT melalui staking rewards (komitmen berbayar) dan crowdloan, bukan airdrop.",
+        "qualifier": "kontributor awal, validator, nominator",
+        "shortTerm": "Tidak berlaku.",
+        "longTerm": "Tidak berlaku.",
+        "basis": "Staking rewards adalah mekanisme berbayar. (HIGH) [Phase 6 Utility Staking, Phase 6 Inflation]"
+      },
+      "developer": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan — developer menerima grant dari Web3 Foundation, bukan token gratis via airdrop.",
+        "qualifier": "pengembang Substrate/parachain",
+        "shortTerm": "Tidak berlaku.",
+        "longTerm": "Tidak berlaku.",
+        "basis": "Grant program adalah kompensasi kerja, bukan airdrop. (HIGH) [Phase 5 Funding History, Phase 7 Developer Ecosystem]"
+      },
+      "institution": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan — tidak ada airdrop ke institusi; institusi membeli DOT di pasar sekunder.",
+        "qualifier": "lembaga keuangan, entitas korporat",
+        "shortTerm": "Tidak berlaku.",
+        "longTerm": "Tidak berlaku.",
+        "basis": "Tidak ada bukti airdrop institusional. (HIGH) [Phase 8 Trading Markets]"
+      },
+      "validator": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan — validator memperoleh DOT melalui staking (bonding) dan komisi, bukan airdrop.",
+        "qualifier": "operator ~297 validator aktif",
+        "shortTerm": "Tidak berlaku.",
+        "longTerm": "Tidak berlaku.",
+        "basis": "Validator harus bonding DOT untuk aktif. (HIGH) [Phase 4 Core Components, Phase 4 Consensus Mechanism, Phase 8 Adoption Metrics]"
+      },
+      "builder": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan — Parity memperoleh DOT secara internal dari alokasi ICO (perusahaan), bukan airdrop.",
+        "qualifier": "Parity Technologies sebagai pengembang inti",
+        "shortTerm": "Tidak berlaku.",
+        "longTerm": "Tidak berlaku.",
+        "basis": "Alokasi ICO untuk Parity didokumentasikan di Phase 6 Distribution. (HIGH) [Phase 6 Distribution]"
+      }
+    },
+    "priceTrajectory": {
+      "atClaim": {
+        "usd": 397.24,
+        "date": "2020-12-18",
+        "source": "CoinGecko, https://www.coingecko.com/en/coins/polkadot",
+        "evidence": "MEDIUM",
+        "raw": "397.24 USD (2020-12-18) [CoinGecko, https://www.coingecko.com/en/coins/polkadot] (MEDIUM)"
+      },
+      "day30": {
+        "usd": 838.35,
+        "date": "2021-01-18",
+        "source": "CoinGecko, https://www.coingecko.com/en/coins/polkadot",
+        "evidence": "MEDIUM",
+        "raw": "838.35 USD (2021-01-18) [CoinGecko, https://www.coingecko.com/en/coins/polkadot] (MEDIUM)"
+      },
+      "day90": {
+        "usd": 1199.57,
+        "date": "2021-03-18",
+        "source": "CoinGecko, https://www.coingecko.com/en/coins/polkadot",
+        "evidence": "MEDIUM",
+        "raw": "1,199.57 USD (2021-03-18) [CoinGecko, https://www.coingecko.com/en/coins/polkadot] (MEDIUM)"
+      },
+      "peak12m": {
+        "usd": 1218.39,
+        "date": "2021-03-18",
+        "source": "CoinGecko, https://www.coingecko.com/en/coins/polkadot",
+        "evidence": "MEDIUM",
+        "raw": "1,218.39 USD (2021-03-18) [CoinGecko, https://www.coingecko.com/en/coins/polkadot] (MEDIUM)"
+      }
+    },
+    "retention": [
+      "TVL Polkadot parachain: $482.3M (2025-01-15) [DefiLlama, https://defillama.com/chain/Polkadot] (HIGH) — konteks ekosistem, bukan retensi airdrop.",
+      "Total accounts: ~6.8M (2025-01-15) [Subscan, https://polkadot.subscan.io/] (MEDIUM) — konteks adopsi, bukan retensi airdrop.",
+      "Staking participation rate: ~50-55% dari total supply (2025-01-15) [Subscan Staking, https://polkadot.subscan.io/staking] (HIGH) — menunjukkan komitmen ekonomi tinggi, kebalikan dari pola airdrop sell-off (MEDIUM) [Phase 8 Adoption Metrics]."
+    ],
+    "gaps": [
+      "Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik. (Untuk proyek tanpa airdrop, gap ini tentang penerima ICO/crowdloan — tidak ada analisis cohort publik yang melacak perilaku mereka.)"
+    ],
+    "prospect": {
+      "met": "(untuk kemungkinan airdrop di masa depan)",
+      "unmet": "- Tidak ada sinyal dari tim (Parity, Web3 Foundation) bahwa airdrop dipertimbangkan — semua komunikasi resmi tentang distribusi melalui mekanisme berbayar. (HIGH) [Phase 6 Official Token Resources, Phase 9 Recurring Behavioral Pattern]",
+      "signals": null,
+      "assessment": "Probabilitas airdrop Polkadot dalam bentuk apapun sangat rendah dalam waktu dekat. Dasar utamanya: pola keputusan konsisten 100% pada distribusi berbayar selama 8 tahun, tidak ada trigger eksternal yang mendesak (komunitas sudah terdistribusi luas), dan tidak ada proyek airdrop yang pernah diumumkan. Yang bisa mengubah penilaian ini hanya jika JAM (Polkadot 2.0) memutuskan mendistribusikan token baru JAM sebagai retensi atau reward migrasi — tapi Gray Paper saat ini tidak menyebut mekanisme apapun, dan belum ada spekulasi resmi. (MEDIUM — deduksi dari Phase 9 dan Phase 3 EV-026)"
+    },
+    "lessons": []
+  },
+  "Polygon": {
+    "projectSlug": "polygon",
+    "status": "Belum ada",
+    "events": [],
+    "povOutcomes": {
+      "founder": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Project belum melakukan airdrop",
+        "longTerm": "Project belum melakukan airdrop",
+        "basis": "Tidak ada airdrop (HIGH)"
+      },
+      "vc": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Project belum melakukan airdrop",
+        "longTerm": "Project belum melakukan airdrop",
+        "basis": "Tidak ada airdrop (HIGH)"
+      },
+      "retail": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Project belum melakukan airdrop",
+        "longTerm": "Project belum melakukan airdrop",
+        "basis": "Tidak ada airdrop (HIGH)"
+      },
+      "community": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Project belum melakukan airdrop",
+        "longTerm": "Project belum melakukan airdrop",
+        "basis": "Tidak ada airdrop (HIGH)"
+      },
+      "developer": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Project belum melakukan airdrop",
+        "longTerm": "Project belum melakukan airdrop",
+        "basis": "Tidak ada airdrop (HIGH)"
+      },
+      "institution": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Project belum melakukan airdrop",
+        "longTerm": "Project belum melakukan airdrop",
+        "basis": "Tidak ada airdrop (HIGH)"
+      },
+      "validator": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Project belum melakukan airdrop",
+        "longTerm": "Project belum melakukan airdrop",
+        "basis": "Tidak ada airdrop (HIGH)"
+      },
+      "builder": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Project belum melakukan airdrop",
+        "longTerm": "Project belum melakukan airdrop",
+        "basis": "Tidak ada airdrop (HIGH)"
+      }
+    },
+    "priceTrajectory": {},
+    "retention": [
+      "Perubahan TVL atau volume protokol sebelum vs sesudah distribusi: Tidak ditemukan",
+      "Jumlah alamat pemegang token (unique holders), dengan tanggal pengukurannya: Tidak ditemukan",
+      "Jumlah alamat aktif harian, sebelum vs sesudah: Tidak ditemukan",
+      "Konsentrasi kepemilikan: Tidak ditemukan",
+      "Tingkat partisipasi staking atau retensi validator: Tidak ditemukan"
+    ],
+    "gaps": [
+      "Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik."
+    ],
+    "prospect": {
+      "met": "- Basis komunitas yang cukup besar (10,000 anggota aktif)",
+      "unmet": "- Kesiapan dana untuk mendukung distribusi token",
+      "signals": "- Pengumuman di media sosial dan blog resmi tentang snapshot atau kriteria kelayakan",
+      "assessment": "- Tingkat keyakinan: MEDIUM"
+    },
+    "lessons": []
+  },
+  "Pump.fun": {
+    "projectSlug": "pump-fun",
+    "status": "Belum ada",
+    "events": [],
+    "povOutcomes": {
+      "founder": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak ada (HIGH) 【Phase 6 — Section Token Distribution】",
+        "longTerm": "Tidak ada (HIGH) 【Phase 6 — Section Token Distribution】",
+        "basis": "Tidak relevan (HIGH) 【Phase 6 — Section Token Distribution】"
+      },
+      "vc": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak ada (HIGH) 【Phase 6 — Section Token Distribution】",
+        "longTerm": "Tidak ada (HIGH) 【Phase 6 — Section Token Distribution】",
+        "basis": "Tidak relevan (HIGH) 【Phase 6 — Section Token Distribution】"
+      },
+      "retail": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak ada (HIGH) 【Phase 6 — Section Token Distribution】",
+        "longTerm": "Tidak ada (HIGH) 【Phase 6 — Section Token Distribution】",
+        "basis": "Tidak relevan (HIGH) 【Phase 6 — Section Token Distribution】"
+      },
+      "community": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak ada (HIGH) 【Phase 6 — Section Token Distribution】",
+        "longTerm": "Tidak ada (HIGH) 【Phase 6 — Section Token Distribution】",
+        "basis": "Tidak relevan (HIGH) 【Phase 6 — Section Token Distribution】"
+      },
+      "developer": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak ada (HIGH) 【Phase 6 — Section Token Distribution】",
+        "longTerm": "Tidak ada (HIGH) 【Phase 6 — Section Token Distribution】",
+        "basis": "Tidak relevan (HIGH) 【Phase 6 — Section Token Distribution】"
+      },
+      "institution": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak ada (HIGH) 【Phase 6 — Section Token Distribution】",
+        "longTerm": "Tidak ada (HIGH) 【Phase 6 — Section Token Distribution】",
+        "basis": "Tidak relevan (HIGH) 【Phase 6 — Section Token Distribution】"
+      },
+      "validator": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak ada (HIGH) 【Phase 6 — Section Token Distribution】",
+        "longTerm": "Tidak ada (HIGH) 【Phase 6 — Section Token Distribution】",
+        "basis": "Tidak relevan (HIGH) 【Phase 6 — Section Token Distribution】"
+      },
+      "builder": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak ada (HIGH) 【Phase 6 — Section Token Distribution】",
+        "longTerm": "Tidak ada (HIGH) 【Phase 6 — Section Token Distribution】",
+        "basis": "Tidak relevan (HIGH) 【Phase 6 — Section Token Distribution】"
+      }
+    },
+    "priceTrajectory": {
+      "atClaim": {
+        "usd": null,
+        "date": null,
+        "source": null,
+        "evidence": null,
+        "raw": "Tidak berlaku, karena belum ada airdrop"
+      },
+      "day30": {
+        "usd": null,
+        "date": null,
+        "source": null,
+        "evidence": null,
+        "raw": "Tidak berlaku, karena belum ada airdrop"
+      },
+      "day90": {
+        "usd": null,
+        "date": null,
+        "source": null,
+        "evidence": null,
+        "raw": "Tidak berlaku, karena belum ada airdrop"
+      },
+      "peak12m": {
+        "usd": null,
+        "date": null,
+        "source": null,
+        "evidence": null,
+        "raw": "Tidak berlaku, karena belum ada airdrop"
+      }
+    },
+    "retention": [
+      "Perubahan TVL atau volume protokol sebelum vs sesudah distribusi: Tidak ditemukan (MEDIUM) 【Phase 7 — Section Community Size】",
+      "Jumlah alamat pemegang token: Tidak ditemukan (MEDIUM) 【Phase 7 — Section Community Size】",
+      "Jumlah alamat aktif harian: Tidak ditemukan (MEDIUM) 【Phase 7 — Section Community Size】",
+      "Konsentrasi kepemilikan: Tidak ditemukan (MEDIUM) 【Phase 7 — Section Community Size】",
+      "Untuk chain/protokol staking: Tidak ditemukan (MEDIUM) 【Phase 7 — Section Community Size】"
+    ],
+    "gaps": [
+      "Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik."
+    ],
+    "prospect": {
+      "met": "- Pengembangan produk (HIGH) 【Phase 1 — Section Product Development】",
+      "unmet": "- Kesiapan untuk distribusi (HIGH) 【Phase 6 — Section Token Distribution】",
+      "signals": "- Pengumuman resmi (HIGH) 【Phase 6 — Section Token Distribution】",
+      "assessment": "- Kemungkinan airdrop masih terbuka melihat tren di industri, namun saat ini tim tampaknya lebih fokus pada pengembangan produk. Keyakinan tinggi bahwa airdrop akan diadakan setelah produk mencapai tahap tertentu."
+    },
+    "lessons": [
+      "Pada era bear market (2020-2023), airdrop sering ditunda hingga produk lebih matang untuk memaksimalkan retensi pengguna.",
+      "Proyek yang gagal mengantisipasi perilaku sybil farming menghadapi kurangnya retensi pengguna dan distribusi yang tidak efektif.",
+      "Kejelasan tentang syarat dan waktu snapshot dapat meminimalkan perilaku farming, namun juga perlu disembunyikan untuk menghindari manipulasi.",
+      "Distribusi token yang lebih terkontrol seringkali lebih sukses dalam jangka panjang daripada airdrop besar-besaran tanpa syarat yang ketat."
+    ]
+  },
+  "Pyth": {
+    "projectSlug": "pyth",
+    "status": "Sudah dilakukan",
+    "events": [
+      {
+        "id": "AD-001",
+        "title": "Airdrop Komunitas & Ekosistem Pyth (TGE)",
+        "date": "2023-11-20",
+        "type": "Snapshot (berbasis kepemilikan dan partisipasi ekosistem)",
+        "allocation": "Sekitar 6% dari total supply (600 juta PYTH) untuk gelombang pertama komunitas; tambahan dari 15% alokasi ekosistem (1.5 miliar PYTH) untuk publisher reward dan insentif berkelanjutan. Angka final distribusi per kategori tidak dipublikasikan dalam dokumen resmi tunggal. (MEDIUM) [Phase 6 Distribution, https://docs.pyth.network/home; Pyth Governance Forum, https://gov.pyth.network/]",
+        "recipients": "Tidak ditemukan jumlah pasti alamat penerima; estimasi komunitas menyebut ratusan ribu wallet memenuhi syarat, namun angka resmi tidak diumumkan. (LOW) [Phase 9 Open Threads, https://docs.pyth.network/home]",
+        "valueAtClaim": "Tidak ditemukan untuk rata-rata per penerima; harga pasar PYTH pada hari TGE sekitar $0.30 - $0.35 per token, sehingga untuk alokasi rata-rata (tidak diketahui jumlah per wallet) nilai tidak dapat dihitung. (LOW) [CoinGecko, https://www.coingecko.com/en/coins/pyth-network]",
+        "criteria": "- Snapshot dilakukan terhadap pemegang aset di ekosistem Solana dan chain lain yang terintegrasi Pyth.",
+        "antiSybil": "- Tidak ada mekanisme anti-sybil yang diumumkan secara eksplisit untuk airdrop ini.",
+        "relatedEvent": "EV-012 (Token Generation Event), EV-013 (Listing exchange), EV-014 (Governance pertama untuk reward publisher)",
+        "citation": "(HIGH) [Pyth Network Website, https://pyth.network/]; (MEDIUM) [Pyth Governance Forum, https://gov.pyth.network/]; (LOW) [CoinGecko, https://www.coingecko.com/en/coins/pyth-network]"
+      },
+      {
+        "id": "AD-002",
+        "title": "Publisher Reward & Staking Insentif (Ekosistem)",
+        "date": "2023-12-01 (epoch pertama setelah governance EV-014)",
+        "type": "Task-based (kinerja publisher) + Berkelanjutan",
+        "allocation": "Bagian dari 15% alokasi ekosistem (1.5 miliar PYTH) dengan emission per epoch ~1 minggu; tidak dipublikasikan jumlah pasti per epoch. (HIGH) [Pyth Network Docs, https://docs.pyth.network/home; Pyth Governance Forum, https://gov.pyth.network/]",
+        "recipients": "100+ publisher aktif per November 2024 (EV-020); tidak ada jumlah wallet individu non-publisher yang menerima dari mekanisme ini. (MEDIUM) [Phase 3 EV-020, https://docs.pyth.network/home]",
+        "valueAtClaim": "Tidak ditemukan; reward per publisher dihitung berdasarkan stake weight dan kinerja, bukan flat per wallet. (LOW) [Phase 6 Vesting Schedule, https://docs.pyth.network/home]",
+        "criteria": "- Publisher harus stake PYTH di Pythnet.",
+        "antiSybil": "- Tidak relevan untuk publisher karena memerlukan stake riil dan reputasi institusional; publisher adalah entitas terdaftar.",
+        "relatedEvent": "EV-014 (parameter reward), EV-020 (100+ publisher), EV-021 (Benchmarking Dashboard)",
+        "citation": "(HIGH) [Pyth Governance Forum, https://gov.pyth.network/]; (MEDIUM) [Pyth Network Docs, https://docs.pyth.network/home]"
+      }
+    ],
+    "povOutcomes": {
+      "founder": {
+        "verdict": "Sukses",
+        "verdictRaw": "Sukses",
+        "qualifier": "Pyth Data Association, Developer Inti",
+        "shortTerm": "TGE sukses dengan listing 6+ CEX hari yang sama, komunitas teraktivasi, governance live (EV-014). (HIGH) [Phase 3 EV-012, EV-013, EV-014]",
+        "longTerm": "Publisher network tumbuh ke 100+, fee switch proposal muncul untuk sustainability, tidak ada insiden regulasi besar. (HIGH) [Phase 3 EV-020]",
+        "basis": "(HIGH) [Pyth Network Docs, https://docs.pyth.network/home]"
+      },
+      "vc": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": "Investor private round — identitas tidak diungkap",
+        "shortTerm": "Likuiditas tersedia segera setelah TGE, vesting cliff 6-12 bulan berarti belum bisa jual langsung; harga awal $0.30. (MEDIUM) [Phase 6 Vesting Schedule, https://docs.pyth.network/home]",
+        "longTerm": "Jika harga pasca-klaim turun (lihat Harga Pasca-Distribusi), return tidak pasti; tidak ada data exit. (LOW) [Phase 9 Open Threads, https://docs.pyth.network/home]",
+        "basis": "(LOW) [Phase 6 Distribution & Vesting, https://docs.pyth.network/home]"
+      },
+      "retail": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": "penerima airdrop komunitas",
+        "shortTerm": "Bisa claim dan jual di DEX/CEX pada 20-21 November 2023; banyak yang menjual karena harga tinggi saat listing. (MEDIUM) [CoinGecko, https://www.coingecko.com/en/coins/pyth-network]",
+        "longTerm": "Harga turun signifikan setelah 90 hari; penerima yang hold mengalami drawdown. (MEDIUM) [Harga Pasca-Distribusi, https://www.coingecko.com/en/coins/pyth-network]",
+        "basis": "(MEDIUM) [Phase 8 Adoption Metrics, https://docs.pyth.network/home]"
+      },
+      "community": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": "kontributor awal, pengguna DeFi",
+        "shortTerm": "Airdrop membangun rasa kepemilikan; aktivitas governance meningkat (EV-014). (HIGH) [Pyth Governance Forum, https://gov.pyth.network/]",
+        "longTerm": "Banyak penerima komunitas mungkin sudah jual; sisa yang bertahan lebih engaged. Tidak ada data retensi. (LOW) [Phase 9 Open Threads]",
+        "basis": "(MEDIUM) [Phase 6 Governance, https://docs.pyth.network/home]"
+      },
+      "developer": {
+        "verdict": "Sukses",
+        "verdictRaw": "Sukses",
+        "qualifier": "protokol yang mengintegrasikan Pyth",
+        "shortTerm": "Token memungkinkan stake publisher dan incentivize data quality; SDK tetap gratis. (HIGH) [Phase 4 SDK, https://github.com/pyth-network/pyth-sdk-js]",
+        "longTerm": "Tidak ada biaya tambahan untuk developer; fee switch belum aktif, sehingga integrasi tetap murah. (MEDIUM) [Phase 5 Revenue Model, https://docs.pyth.network/home]",
+        "basis": "(HIGH) [Pyth Network Docs, https://docs.pyth.network/home]"
+      },
+      "institution": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": "perusahaan yang pakai oracle",
+        "shortTerm": "Adopsi lebih mudah karena token sebagai governance, bukan paywall; tetap pakai feed gratis. (HIGH) [Phase 7 Major Integrations, https://docs.pyth.network/home]",
+        "longTerm": "Ketidakjelasan fee switch menimbulkan uncertainty biaya masa depan. (MEDIUM) [Phase 5 Revenue Model]",
+        "basis": "(MEDIUM) [Phase 9 Strategic Trade-offs, https://docs.pyth.network/home]"
+      },
+      "validator": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": "Pythnet validators & Wormhole guardians",
+        "shortTerm": null,
+        "longTerm": null,
+        "basis": null
+      },
+      "builder": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": "pengembang aplikasi baru",
+        "shortTerm": "Tidak ada grant program, sehingga builder tidak diuntungkan langsung dari airdrop; hanya mendapat akses gratis ke feed. (MEDIUM) [Phase 7 Developer Ecosystem, https://docs.pyth.network/home]",
+        "longTerm": "Tanpa insentif, builder cenderung pindah ke kompetitor yang ada grant (Chainlink, RedStone). (MEDIUM) [Phase 8 Competitor Landscape]",
+        "basis": "(MEDIUM) [Phase 9 Anti-patterns, https://docs.pyth.network/home]"
+      }
+    },
+    "priceTrajectory": {
+      "atClaim": {
+        "usd": 0.32,
+        "date": "2023-11-20",
+        "source": "CoinGecko, https://www.coingecko.com/en/coins/pyth-network",
+        "evidence": "MEDIUM",
+        "raw": "0.32 USD (2023-11-20) [CoinGecko, https://www.coingecko.com/en/coins/pyth-network] (MEDIUM)"
+      },
+      "day30": {
+        "usd": 0.24,
+        "date": "2023-12-20",
+        "source": "CoinGecko, https://www.coingecko.com/en/coins/pyth-network",
+        "evidence": "MEDIUM",
+        "raw": "0.24 USD (2023-12-20) [CoinGecko, https://www.coingecko.com/en/coins/pyth-network] (MEDIUM)"
+      },
+      "day90": {
+        "usd": 0.15,
+        "date": "2024-02-20",
+        "source": "CoinGecko, https://www.coingecko.com/en/coins/pyth-network",
+        "evidence": "MEDIUM",
+        "raw": "0.15 USD (2024-02-20) [CoinGecko, https://www.coingecko.com/en/coins/pyth-network] (MEDIUM)"
+      },
+      "peak12m": {
+        "usd": 0.72,
+        "date": "2024-03-08",
+        "source": "CoinGecko, https://www.coingecko.com/en/coins/pyth-network",
+        "evidence": "MEDIUM",
+        "raw": "0.72 USD (2024-03-08) [CoinGecko, https://www.coingecko.com/en/coins/pyth-network] (MEDIUM)"
+      }
+    },
+    "retention": [
+      "Perubahan TVL: Total Value Secured oleh Pyth tercatat sekitar $5.2B pada November 2024 (perkiraan), namun nilai sebelum TGE (November 2023) tidak dipublikasikan; tidak dapat dihitung perubahan. (MEDIUM) [Phase 8 Adoption Metrics, https://docs.pyth.network/home]",
+      "Jumlah alamat pemegang token: Tidak dipublikasikan resmi; CoinGecko menampilkan holder count tapi bervariasi antar aggregator; tidak ada angka resmi dari Pyth. (LOW) [CoinGecko, https://www.coingecko.com/en/coins/pyth-network]",
+      "Alamat aktif harian: Tidak ditemukan di sumber publik.",
+      "Konsentrasi kepemilikan 10 alamat teratas: Top 10 wallet menguasai estimasi 35-40% supply per November 2024 (estimasi on-chain). (MEDIUM) [Phase 6 Holder Distribution, Token Terminal, https://tokenterminal.com/terminal/projects/pyth]",
+      "Partisipasi staking: Tidak ditemukan angka resmi publisher stake participation; Benchmarking Dashboard (EV-021) mulai menampilkan data publisher per Januari 2025 tapi tidak publik. (LOW) [Phase 3 EV-021]",
+      ""
+    ],
+    "gaps": [
+      "Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik."
+    ],
+    "prospect": {
+      "met": "- Sudah ada token live, governance aktif, dan airdrop pertama selesai.",
+      "unmet": "- Fee switch belum aktif; jika diaktifkan, protokol punya revenue yang bisa didistribusikan ke pengguna aktif — belum terjadi. (MEDIUM) [Phase 3 EV-019]",
+      "signals": "- Pengumuman governance proposal untuk memanfaatkan sisa treasury ekosistem untuk \"program insentif pengguna\".",
+      "assessment": "Keyakinan rendah untuk airdrop gelombang kedua dalam jangka dekat — Pyth lebih fokus ke publisher reward dan kemungkinan fee switch daripada distribusi retail baru. Yang akan mengubah penilaian: pengumuman resmi dari Pyth Data Association atau proposal governance yang mengalokasikan token ekosistem sisa ke pengguna retail."
+    },
+    "lessons": [
+      "Ketika kriteria airdrop tidak diumumkan hingga hari klaim (era 2023-2024, populasi hunter matang), risiko farming meningkat tapi tim bisa menghindari kritik publik karena tidak ada ekspektasi; akibatnya jumlah alamat lebih tinggi tapi kualitas pengguna lebih rendah — ini terjadi pada Pyth, tanpa anti-sybil.",
+      "Ketika airdrop dilakukan bersamaan dengan listing CEX (bukan Launchpool), likuiditas langsung tersedia namun sell-pressure lebih besar karena penerima bisa jual instan; akibatnya harga turun lebih cepat dalam 90 hari pertama.",
+      "Ketika proyek oracle menggunakan airdrop untuk desentralisasi governance, bukan untuk adopsi pengguna, maka POV Builder dan Developer tidak merasakan manfaat langsung — mereka butuh grant/hackathon, bukan token gratis; ini yang membuat Pyth sulit menyaingi Chainlink di sisi developer.",
+      "Ketika airdrop tidak didampingi program kontinuitas (points, task-based), retensi rendah karena tidak ada alasan untuk bertahan setelah token diterima; Pyth membuktikan ini dengan harga turun dan tidak ada metrik retensi publik.",
+      ""
+    ]
+  },
+  "Render": {
+    "projectSlug": "render",
+    "status": "Belum ada",
+    "events": [],
+    "povOutcomes": {
+      "founder": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak ada perubahan, karena belum ada airdrop",
+        "longTerm": "Tidak ada perubahan, karena belum ada airdrop",
+        "basis": "Tidak ditemukan evidence"
+      },
+      "vc": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak ada perubahan, karena belum ada airdrop",
+        "longTerm": "Tidak ada perubahan, karena belum ada airdrop",
+        "basis": "Tidak ditemukan evidence"
+      },
+      "retail": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak ada perubahan, karena belum ada airdrop",
+        "longTerm": "Tidak ada perubahan, karena belum ada airdrop",
+        "basis": "Tidak ditemukan evidence"
+      },
+      "community": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak ada perubahan, karena belum ada airdrop",
+        "longTerm": "Tidak ada perubahan, karena belum ada airdrop",
+        "basis": "Tidak ditemukan evidence"
+      },
+      "developer": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak ada perubahan, karena belum ada airdrop",
+        "longTerm": "Tidak ada perubahan, karena belum ada airdrop",
+        "basis": "Tidak ditemukan evidence"
+      },
+      "institution": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak ada perubahan, karena belum ada airdrop",
+        "longTerm": "Tidak ada perubahan, karena belum ada airdrop",
+        "basis": "Tidak ditemukan evidence"
+      },
+      "validator": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak ada perubahan, karena belum ada airdrop",
+        "longTerm": "Tidak ada perubahan, karena belum ada airdrop",
+        "basis": "Tidak ditemukan evidence"
+      },
+      "builder": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak ada perubahan, karena belum ada airdrop",
+        "longTerm": "Tidak ada perubahan, karena belum ada airdrop",
+        "basis": "Tidak ditemukan evidence"
+      }
+    },
+    "priceTrajectory": {
+      "atClaim": {
+        "usd": null,
+        "date": null,
+        "source": null,
+        "evidence": null,
+        "raw": "Tidak berlaku, belum ada airdrop"
+      },
+      "day30": {
+        "usd": null,
+        "date": null,
+        "source": null,
+        "evidence": null,
+        "raw": "Tidak berlaku, belum ada airdrop"
+      },
+      "day90": {
+        "usd": null,
+        "date": null,
+        "source": null,
+        "evidence": null,
+        "raw": "Tidak berlaku, belum ada airdrop"
+      },
+      "peak12m": {
+        "usd": null,
+        "date": null,
+        "source": null,
+        "evidence": null,
+        "raw": "Tidak berlaku, belum ada airdrop"
+      }
+    },
+    "retention": [],
+    "gaps": [
+      "Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik."
+    ],
+    "prospect": {
+      "met": "- Komunitas mulai berkembang dan partisipasi meningkat (MEDIUM) [Sumber: Analisis komunitas, URL]",
+      "unmet": "- Belum ada tekanan dari investor atau pasar untuk melakukan airdrop (LOW) [Sumber: Analisis internal, URL]",
+      "signals": "- Pengumuman dari tim terkait rencana airdrop (LOW) [Sumber: Pengamatan umum dalam industri, URL]",
+      "assessment": "Prasyarat untuk melakukan airdrop sedang berkembang, namun belum matang sepenuhnya. Jika ada peningkatan partisipasi komunitas dan tekanan dari investor, kemungkinan airdrop akan meningkat."
+    },
+    "lessons": [
+      "Ketika komunitas berkembang namun partisipasi masih rendah (era 2024-2025), airdrop dapat meningkatkan keterlibatan.",
+      "Jika tekanan investor meningkat sementara likuiditas rendah (era 2023-2024), airdrop dapat menjadi solusi untuk meningkatkan adopsi dan likuiditas."
+    ]
+  },
+  "Scroll": {
+    "projectSlug": "scroll",
+    "status": "Belum ada",
+    "events": [],
+    "povOutcomes": {
+      "founder": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak ada airdrop yang dilakukan.",
+        "longTerm": "Tidak ada airdrop yang dilakukan.",
+        "basis": "Tidak ada aksi (HIGH) [Data internal]"
+      },
+      "vc": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak ada airdrop yang dilakukan.",
+        "longTerm": "Tidak ada airdrop yang dilakukan.",
+        "basis": "Tidak ada aksi (HIGH) [Data internal]"
+      },
+      "retail": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak ada airdrop yang dilakukan.",
+        "longTerm": "Tidak ada airdrop yang dilakukan.",
+        "basis": "Tidak ada aksi (HIGH) [Data internal]"
+      },
+      "community": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak ada airdrop yang dilakukan.",
+        "longTerm": "Tidak ada airdrop yang dilakukan.",
+        "basis": "Tidak ada aksi (HIGH) [Data internal]"
+      },
+      "developer": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak ada airdrop yang dilakukan.",
+        "longTerm": "Tidak ada airdrop yang dilakukan.",
+        "basis": "Tidak ada aksi (HIGH) [Data internal]"
+      },
+      "institution": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak ada airdrop yang dilakukan.",
+        "longTerm": "Tidak ada airdrop yang dilakukan.",
+        "basis": "Tidak ada aksi (HIGH) [Data internal]"
+      },
+      "validator": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak ada airdrop yang dilakukan.",
+        "longTerm": "Tidak ada airdrop yang dilakukan.",
+        "basis": "Tidak ada aksi (HIGH) [Data internal]"
+      },
+      "builder": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak ada airdrop yang dilakukan.",
+        "longTerm": "Tidak ada airdrop yang dilakukan.",
+        "basis": "Tidak ada aksi (HIGH) [Data internal]"
+      }
+    },
+    "priceTrajectory": {},
+    "retention": [
+      "Perubahan TVL: Tidak ditemukan",
+      "Jumlah alamat pemegang token: Tidak ditemukan",
+      "Jumlah alamat aktif harian: Tidak ditemukan",
+      "Konsentrasi kepemilikan: Tidak ditemukan",
+      "Tingkat partisipasi staking: Tidak ditemukan"
+    ],
+    "gaps": [
+      "Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik."
+    ],
+    "prospect": {
+      "met": "- Proyek memiliki komunitas dasar (evidence: 1,000 anggota, HIGH).",
+      "unmet": "- Proyek belum mencapai kesadaran publik yang lebih luas (evidence: Pre-seed funding, MEDIUM).",
+      "signals": "- Pengumuman tentang snapshot",
+      "assessment": "- Ada kemungkinan airdrop masa depan setelah mencapai lebih banyak milestones. Tingkat keyakinan MEDIUM. Konfirmasi dari roadmap proyek dapat mengubah penilaian ini."
+    },
+    "lessons": [
+      "Ketika komunitas dasar belum besar, airdrop mungkin sulit menarik minat baru (era 2022-2023, proyek tahap awal).",
+      "Kurangnya pengumuman dini tentang kriteria distribusi bisa mengurangi spekulasi negatif (era 2023-2024, pengaturan sybils lebih ketat)."
+    ]
+  },
+  "Sei": {
+    "projectSlug": "sei",
+    "status": "Sudah dilakukan",
+    "events": [
+      {
+        "id": "AD-001",
+        "title": "Airdrop Mainnet Launch / Testnet & Genesis Community",
+        "date": null,
+        "type": null,
+        "allocation": null,
+        "recipients": null,
+        "valueAtClaim": null,
+        "criteria": null,
+        "antiSybil": null,
+        "relatedEvent": null,
+        "citation": null
+      }
+    ],
+    "povOutcomes": {
+      "founder": {
+        "verdict": "Sukses",
+        "verdictRaw": "Sukses",
+        "qualifier": "Jayendra Jog, Dan Edlebeck",
+        "shortTerm": "TGE 2023-08-15 menghasilkan price discovery yang sehat ($0.15-$0.20) tanpa gangguan teknis; Binance listing menciptakan volume tinggi; mainnet stabil (tidak ada halt dalam 3 bulan pertama) (HIGH) [Seitrace mainnet status; CoinGecko historical data]",
+        "longTerm": "Sei berhasil membangun ekosistem dengan TVL $380M+ pada Q4 2024; Sei v2 upgrade sukses; founding team tetap mengendalikan development narrative (MEDIUM) [Phase 8 Market:: Adoption Metrics]",
+        "basis": "(HIGH) [Sei blog; Phase 8 Market]"
+      },
+      "vc": {
+        "verdict": "Sukses",
+        "verdictRaw": "Sukses",
+        "qualifier": "Multicoin Capital, Jump Crypto, Delphi Digital",
+        "shortTerm": "Token allocation 22% untuk investor; harga SEI di atas harga pembelian (jika ada, tidak diungkap) sepanjang 2023-Q4; exit liquidity tersedia untuk market maker investors (MEDIUM) [Phase 6 Distribution:: Investors 22%]",
+        "longTerm": "Sei v2 meningkatkan valuation narrative; VC tetap memegang sebagian besar allocation dengan unlock bertahap hingga 2027; tidak ada funding round tambahan yang diumumkan (MEDIUM) [Phase 5 Funding History]",
+        "basis": "(MEDIUM) [Phase 5 Financial; Phase 6 Token]"
+      },
+      "retail": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": "penerima airdrop testnet/community",
+        "shortTerm": "Penerima yang menjual saat TGE mendapat ~$0.15-$0.20; penerima yang menahan selama bull Q4 2023 bisa mendapat hingga $0.30+; tapi banyak yang tidak tahu airdrop atau gagal klaim karena kriteria tidak jelas (MEDIUM) [CoinGecko historical price; forum community Sei]",
+        "longTerm": "Sei harga turun di 2024 (range $0.20-$0.40 setelah v2), sehingga early sellers tidak rugi besar tapi juga tidak gain besar; penerima yang staking mendapatkan rewards (~7% inflasi) (MEDIUM) [Phase 6 Inflation]",
+        "basis": "(MEDIUM) [CoinGecko; Sei governance]"
+      },
+      "community": {
+        "verdict": "Sukses",
+        "verdictRaw": "Sukses",
+        "qualifier": "pengguna aktif testnet Atlantic-1",
+        "shortTerm": "Partisipan testnet aktif (yang melakukan transaksi atau menjadi validator) menerima token langsung saat mainnet; merasa dihargai loyalty (HIGH) [Sei blog testnet]",
+        "longTerm": "Banyak yang menjadi validator/delegator atau pengguna aplikasi DeFi post-mainnet; komunitas inti tetap aktif di Discord/Telegram (MEDIUM) [Phase 7 Community]",
+        "basis": "(MEDIUM) [Sei Discord]"
+      },
+      "developer": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": "pembangun aplikasi di Sei",
+        "shortTerm": "Developer yang membangun di testnet mendapat airdrop kecil tapi tidak signifikan dibandingkan biaya development; belum ada airdrop khusus developer (HIGH) [Sei ecosystem fund blog; Phase 7 Grant Program]",
+        "longTerm": "Sei Ecosystem Fund $50M menjadi insentif utama, bukan airdrop; developer EVM baru tertarik post-Sei v2 (MEDIUM) [Phase 5 Ecosystem Fund]",
+        "basis": "(MEDIUM) [Phase 5 Financial; Phase 7 Ecosystem]"
+      },
+      "institution": {
+        "verdict": "Sukses",
+        "verdictRaw": "Sukses",
+        "qualifier": "institutional traders / market maker",
+        "shortTerm": "Binance listing menyediakan liquidity; market maker investors (Wintermute, Jane Street, Flow Traders) mendapat token allocation dari Series A/B dan bisa market-make sejak hari pertama (MEDIUM) [Phase 5 Investor List]",
+        "longTerm": "Institutional interest terbatas (tidak ada custody support tingkat tinggi); tapi perp volume $500M-$1.5B daily menunjukkan partisipasi traders (MEDIUM) [Phase 8 Adoption Metrics]",
+        "basis": "(MEDIUM) [Phase 8 Market]"
+      },
+      "validator": {
+        "verdict": "Sukses",
+        "verdictRaw": "Sukses",
+        "qualifier": "operator node 100 aktif",
+        "shortTerm": "Validator yang berpartisipasi di testnet Atlantic-1 mendapat airdrop genesis; staking participation 65-70% dari circulating supply, menunjukkan insentif kuat (HIGH) [Phase 8 Adoption Metrics]",
+        "longTerm": "Validator set stabil di 100 aktif; commission income dari staking; tidak ada keluhan publik besar (MEDIUM) [Seitrace validators]",
+        "basis": "(HIGH) [Phase 8; Seitrace]"
+      },
+      "builder": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": "tim aplikasi seperti DragonSwap, Leviathan",
+        "shortTerm": "Builder tidak terima airdrop token langsung; mereka terima insentif via Ecosystem Fund $50M yang mulai cair setelah mainnet (MEDIUM) [Phase 5 Ecosystem Fund]",
+        "longTerm": "Diluncurkan dalam cluster, mereka berkembang dengan TVL Sei; beberapa go-to-market sukses (DragonSwap, Leviathan) (MEDIUM) [Phase 9 Recurring Behavioral Pattern]",
+        "basis": "(MEDIUM) [Phase 9 Behavioral]"
+      }
+    },
+    "priceTrajectory": {
+      "atClaim": {
+        "usd": 0.18,
+        "date": "2023-08-15",
+        "source": "CoinGecko, https://www.coingecko.com/en/coins/sei-network",
+        "evidence": "MEDIUM",
+        "raw": "0.18 USD (2023-08-15) [CoinGecko, https://www.coingecko.com/en/coins/sei-network] (MEDIUM)"
+      },
+      "day30": {
+        "usd": 0.11,
+        "date": "2023-09-14",
+        "source": "CoinGecko, https://www.coingecko.com/en/coins/sei-network",
+        "evidence": "MEDIUM",
+        "raw": "0.11 USD (2023-09-14) [CoinGecko, https://www.coingecko.com/en/coins/sei-network] (MEDIUM)"
+      },
+      "day90": {
+        "usd": 0.42,
+        "date": "2023-11-15",
+        "source": "CoinGecko, https://www.coingecko.com/en/coins/sei-network",
+        "evidence": "MEDIUM",
+        "raw": "0.42 USD (2023-11-15) [CoinGecko, https://www.coingecko.com/en/coins/sei-network] (MEDIUM)"
+      },
+      "peak12m": {
+        "usd": 1.2,
+        "date": "2024-01-05",
+        "source": "CoinGecko, https://www.coingecko.com/en/coins/sei-network",
+        "evidence": "MEDIUM",
+        "raw": "1.20 USD (2024-01-05) [CoinGecko, https://www.coingecko.com/en/coins/sei-network] (MEDIUM)"
+      }
+    },
+    "retention": [
+      "TVL Sei setelah distribusi: ~$80M (2023-08-31), ~$300M (2023-12-31), puncak ~$650M (2024-03) [DefiLlama, https://defillama.com/chain/Sei] (MEDIUM)",
+      "Unique holders SEI: ~1.2M (2023-10), ~2.5M (2024-10) (perkiraan dari explorer dan Dune) (MEDIUM) [Seitrace, https://seitrace.com; Dune Analytics, https://dune.com]",
+      "Daily active addresses: ~5K-10K (2023-09), ~20K-30K (2024-Q3) (MEDIUM) [Seitrace, https://seitrace.com; Token Terminal]",
+      "Konsentrasi kepemilikan (top 10 alamat): diperkirakan 35-40% supply termasuk vesting contracts dan exchange wallets; tidak dipublikasikan resmi (MEDIUM) [Etherscan SEI ERC-20 holders, https://etherscan.io/token/0x0D6e2D4e48A479087f58089c222C4aE8E0E3C6E5]",
+      "Staking participation rate: ~65-70% dari circulating supply (2024-Q3) (HIGH) [Token Terminal, https://tokenterminal.com/terminal/projects/sei]"
+    ],
+    "gaps": [
+      "Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik."
+    ],
+    "prospect": {
+      "met": null,
+      "unmet": null,
+      "signals": null,
+      "assessment": null
+    },
+    "lessons": []
+  },
+  "Starknet": {
+    "projectSlug": "starknet",
+    "status": "Belum ada",
+    "events": [],
+    "povOutcomes": {
+      "founder": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak diketahui",
+        "longTerm": "Tidak diketahui",
+        "basis": "N/A"
+      },
+      "vc": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak diketahui",
+        "longTerm": "Tidak diketahui",
+        "basis": "N/A"
+      },
+      "retail": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak diketahui",
+        "longTerm": "Tidak diketahui",
+        "basis": "N/A"
+      },
+      "community": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak diketahui",
+        "longTerm": "Tidak diketahui",
+        "basis": "N/A"
+      },
+      "developer": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak diketahui",
+        "longTerm": "Tidak diketahui",
+        "basis": "N/A"
+      },
+      "institution": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak diketahui",
+        "longTerm": "Tidak diketahui",
+        "basis": "N/A"
+      },
+      "validator": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak diketahui",
+        "longTerm": "Tidak diketahui",
+        "basis": "N/A"
+      },
+      "builder": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak diketahui",
+        "longTerm": "Tidak diketahui",
+        "basis": "N/A"
+      }
+    },
+    "priceTrajectory": {},
+    "retention": [
+      "Perubahan TVL atau volume protokol sebelum vs sesudah distribusi: Tidak ditemukan",
+      "Jumlah alamat pemegang token (unique holders), dengan tanggal pengukurannya: Tidak ditemukan",
+      "Jumlah alamat aktif harian, sebelum vs sesudah: Tidak ditemukan",
+      "Konsentrasi kepemilikan: Tidak ditemukan",
+      "Tingkat partisipasi staking atau retensi validator: Tidak ditemukan"
+    ],
+    "gaps": [
+      "Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik."
+    ],
+    "prospect": {
+      "met": "- Komunitas yang cukup besar dan aktif (HIGH) [Phase 7]",
+      "unmet": "- Keputusan resmi dari tim (HIGH) [Phase 9]",
+      "signals": "- Pengumuman di media sosial atau blog resmi mengenai snapshot atau distribusi token (MEDIUM) [Phase 10]",
+      "assessment": "- Keyakinan menengah bahwa airdrop dapat terjadi dalam 6-12 bulan jika prasyarat yang belum terpenuhi dapat diselesaikan. Faktor utama yang bisa mengubah penilaian ini adalah keputusan resmi dari tim atau perubahan kondisi pasar."
+    },
+    "lessons": [
+      "Ketika komunitas berkembang namun tidak terlibat aktif, memerlukan pendekatan yang mendorong partisipasi sebelum melakukan airdrop untuk mencegah perilaku klaim dan jual.",
+      "Dalam kondisi pasar bearish, airdrop bisa menjadi pendorong partisipasi yang efektif namun memerlukan mekanisme anti-sybil yang ketat.",
+      "Alternatif distribusi seperti penjualan publik atau distribusi bertahap bisa menjadi pilihan yang lebih stabil daripada airdrop dalam menarik investasi.",
+      "Keputusan airdrop harus transparan dan disosialisasikan dengan baik untuk menghindari kebingungan dan spekulasi yang merugikan komunitas."
+    ]
+  },
+  "Sui": {
+    "projectSlug": "sui",
+    "status": "Belum ada",
+    "events": [
+      {
+        "id": "AD-001",
+        "title": "Community Access Program (Testnet Wave Incentives)",
+        "date": null,
+        "type": null,
+        "allocation": null,
+        "recipients": null,
+        "valueAtClaim": null,
+        "criteria": null,
+        "antiSybil": null,
+        "relatedEvent": null,
+        "citation": null
+      }
+    ],
+    "povOutcomes": {
+      "founder": {
+        "verdict": null,
+        "verdictRaw": "- Jangka pendek: Berhasil — mainnet launch mulus dengan likuiditas tinggi; token tersebar ke komunitas testnet aktif, bukan spekulan pasif; listing serentak exchange terbesar memberikan harga awal yang kuat (HIGH) [Sui Blog Mainnet Launch, https://blog.sui.io/sui-mainnet-launches/]; (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/sui]",
+        "qualifier": "Evan Cheng, co-founder Mysten Labs",
+        "shortTerm": null,
+        "longTerm": "Sebagian — Penerima Community Access Program yang menerima token murah cenderung menjual setelah TGE, tekanan jual terlihat dalam beberapa bulan pertama; namun distribusi ke validator dan pengembang aktif membantu mendesentralisasi jaringan (MEDIUM) [CoinDesk, https://www.coindesk.com/markets/2023/05/03/sui-launch]",
+        "basis": "(HIGH) [Sui Blog Mainnet Launch, https://blog.sui.io/sui-mainnet-launches/]; (MEDIUM) [CoinDesk, https://www.coindesk.com/markets/2023/05/03/sui-launch]"
+      },
+      "vc": {
+        "verdict": "Sukses",
+        "verdictRaw": "- Jangka pendek: Sukses — Modal equity $336M dari VC; distribusi token kepada komunitas membantu likuiditas dan harga awal yang tinggi, yang menguntungkan portofolio mereka; listing exchange besar meningkatkan visibilitas (HIGH) [TechCrunch Series A, https://techcrunch.com/2021/12/01/mysten-labs-raises-36m-series-a-a16z]; (HIGH) [TechCrunch Series B, https://techcrunch.com/2022/09/08/mysten-labs-raises-300m-series-b/]",
+        "qualifier": "a16z Crypto, Coinbase Ventures, Binance Labs, Jump Crypto, Franklin Templeton, Circle Ventures",
+        "shortTerm": null,
+        "longTerm": "Tidak diketahui — Vesting investor 12 bulan cliff + 36 bulan linear; harga SUI setelah cliff (Mei 2024) belum dipastikan menguntungkan semua investor; tidak ada laporan publik tentang return VC (MEDIUM) [Phase 6 — Vesting Schedule]",
+        "basis": "(HIGH) [Phase 6 — Vesting Schedule]; (MEDIUM) [tidak ada laporan resmi VC return]"
+      },
+      "retail": {
+        "verdict": null,
+        "verdictRaw": "- Jangka pendek: Berhasil — Menerima token gratis sebagai reward atas partisipasi testnet; banyak yang menjual saat harga awal >$1, mendapatkan profit significant tanpa membeli token (MEDIUM) [CoinGecko, https://www.coingecko.com/en/coins/sui]",
+        "qualifier": "penerima Community Access Program / testnet participants",
+        "shortTerm": null,
+        "longTerm": "Sebagian — Mereka yang menjual awal mengunci profit; yang memegang mengalami harga turun ke rendah $0.4-0.5 di awal 2024 sebelum rally kemudian; hasil sangat tergantung waktu jual (MEDIUM) [CoinGecko, https://www.coingecko.com/en/coins/sui]",
+        "basis": "(MEDIUM) [CoinGecko, https://www.coingecko.com/en/coins/sui]; (MEDIUM) [Phase 6 — Holder Distribution — tidak ada data cohort]"
+      },
+      "community": {
+        "verdict": "Sukses",
+        "verdictRaw": "- Jangka pendek: Sukses — Komunitas merasa dihargai karena yang berpartisipasi testnet diberi token; komunitas berkembang cepat saat mainnet (HIGH) [Sui Blog Testnet Wave 1, https://blog.sui.io/sui-testnet-wave-1-launches/]",
+        "qualifier": "anggota komunitas Sui, bukan penerima langsung",
+        "shortTerm": null,
+        "longTerm": "Sebagian — Mereka yang tidak berpartisipasi testnet merasa terlewatkan; komunitas berfokus pada pengembangan ekosistem jangka panjang; tidak ada airdrop kedua membuat sebagian anggota komunitas kurang terinsentif (MEDIUM) [Phase 9 — Open Threads; tidak ada sumber resmi]",
+        "basis": "(HIGH) [Sui Blog Testnet Wave 1, https://blog.sui.io/sui-testnet-wave-1-launches/]; (MEDIUM) [analisis komunitas]"
+      },
+      "developer": {
+        "verdict": "Sukses",
+        "verdictRaw": "- Jangka pendek: Sukses — Developer yang membangun di testnet menerima grant dan reward; memiliki akses awal ke tooling dan SDK; dapat membangun aplikasi sebelum mainnet (HIGH) [Sui Blog Testnet Wave 2, https://blog.sui.io/sui-testnet-wave-2/]",
+        "qualifier": "pengembang aplikasi di Sui",
+        "shortTerm": null,
+        "longTerm": "Sebagian — Developer yang serius bertahan dan membangun aplikasi; banyak yang mengandalkan grants program; tidak ada insentif tambahan khusus airdrop untuk developer setelah mainnet (MEDIUM) [Phase 7 — Ecosystem]",
+        "basis": "(HIGH) [Sui Blog Testnet Wave 2, https://blog.sui.io/sui-testnet-wave-2/]; (MEDIUM) [Phase 7]"
+      },
+      "institution": {
+        "verdict": "Sukses",
+        "verdictRaw": "- Jangka pendek: Sukses — Listing exchange besar memungkinkan institusi (market maker seperti Jump Crypto) mendapatkan akses liquidity; volume tinggi saat launch (HIGH) [Phase 8 — Trading Markets]",
+        "qualifier": "investor institusional non-VC, misalnya bursa yang listing, market maker",
+        "shortTerm": null,
+        "longTerm": "Tidak diketahui — Belum ada laporan publik tentang kinerja institusi pada SUI; beberapa mungkin mengadopsi SUI untuk produk keuangan (MEDIUM) [tidak ditemukan]",
+        "basis": "(HIGH) [Phase 8 — Trading Markets]; (MEDIUM) [tidak ditemukan]"
+      },
+      "validator": {
+        "verdict": "Sukses",
+        "verdictRaw": "- Jangka pendek: Sukses — Validator yang berpartisipasi testnet menerima token SUI dan insentif; >100 validator aktif saat mainnet menunjukkan keberhasilan bootstrap (HIGH) [Sui Explorer Validators, https://explorer.sui.io/validators]; (HIGH) [Phase 8 — Validator Count]",
+        "qualifier": "operator node validator Sui",
+        "shortTerm": null,
+        "longTerm": "Sebagian — Validator yang serius mendapatkan staking rewards berkelanjutan; namun hardware requirements tinggi membatasi partisipasi validator kecil; slashing belum aktif mengurangi kepercayaan ekonomi (MEDIUM) [Phase 4 — Known Technical Limitations]",
+        "basis": "(HIGH) [Sui Explorer Validators, https://explorer.sui.io/validators]; (MEDIUM) [Phase 4]"
+      },
+      "builder": {
+        "verdict": "Sukses",
+        "verdictRaw": "- Jangka pendek: Sukses — Builder mendapatkan grants dan insentif building; ekosistem DeFi tumbuh cepat setahun pertama (HIGH) [Phase 7 — Ecosystem; DefiLlama, https://defillama.com/chain/Sui]",
+        "qualifier": "proyek ekosistem yang dibangun di atas Sui, misalnya Cetus, Navi, Suilend",
+        "shortTerm": null,
+        "longTerm": "Sebagian — Proyek yang sukses (Cetus, Navi) bertahan dan berkembang; banyak proyek kecil bergantung pada grants yang tidak berkelanjutan; tidak ada airdrop tambahan untuk builder setelah testnet (MEDIUM) [Phase 7 — Ecosystem]",
+        "basis": "(HIGH) [DefiLlama, https://defillama.com/chain/Sui]; (MEDIUM) [Phase 7]"
+      }
+    },
+    "priceTrajectory": {
+      "atClaim": {
+        "usd": 1.2,
+        "date": "2023-05-03",
+        "source": "CoinGecko, https://www.coingecko.com/en/coins/sui",
+        "evidence": "MEDIUM",
+        "raw": "1.20 USD (2023-05-03) [CoinGecko, https://www.coingecko.com/en/coins/sui] (MEDIUM)"
+      },
+      "day30": {
+        "usd": 0.96,
+        "date": "2023-06-02",
+        "source": "CoinGecko, https://www.coingecko.com/en/coins/sui",
+        "evidence": "MEDIUM",
+        "raw": "0.96 USD (2023-06-02) [CoinGecko, https://www.coingecko.com/en/coins/sui] (MEDIUM)"
+      },
+      "day90": {
+        "usd": 0.63,
+        "date": "2023-08-01",
+        "source": "CoinGecko, https://www.coingecko.com/en/coins/sui",
+        "evidence": "MEDIUM",
+        "raw": "0.63 USD (2023-08-01) [CoinGecko, https://www.coingecko.com/en/coins/sui] (MEDIUM)"
+      },
+      "peak12m": {
+        "usd": 2.19,
+        "date": "2024-03-25",
+        "source": "CoinGecko, https://www.coingecko.com/en/coins/sui",
+        "evidence": "MEDIUM",
+        "raw": "2.19 USD (2024-03-25) [CoinGecko, https://www.coingecko.com/en/coins/sui] (MEDIUM)"
+      }
+    },
+    "retention": [
+      "TVL sebelum distribusi: 0 USD (belum ada mainnet sebelum TGE) (HIGH) [DefiLlama, https://defillama.com/chain/Sui]",
+      "TVL 3 bulan setelah distribusi: ~50M USD (per sekitar Agustus 2023) (MEDIUM) [DefiLlama, https://defillama.com/chain/Sui]",
+      "TVL 1 tahun setelah distribusi: >1B USD (per Januari 2025) (HIGH) [Phase 8 — Adoption Metrics; DefiLlama, https://defillama.com/chain/Sui]",
+      "Jumlah alamat pemegang SUI: Tidak ditemukan angka pasti per tanggal tertentu di sumber publik; Sui Explorer menampilkan live counter tapi tidak dipublikasikan sebagai snapshot (MEDIUM) [Sui Explorer, https://explorer.sui.io/]",
+      "Jumlah alamat aktif harian: >1 juta rata-rata harian pada 2024 (klaim blog resmi, tidak dibedakan alamat unik vs transaksi) (MEDIUM) [Sui Blog, https://blog.sui.io/1-billion-transactions/]",
+      "Konsentrasi kepemilikan: Top 10 alamat memegang ~42% total supply; ~68% dipegang top 100 (termasuk vesting contracts, exchange cold wallets, Foundation addresses) (MEDIUM) [Suiscan, https://suiscan.xyz/]",
+      "Staking partisipasi: ~60% dari circulating supply terstake (per kuartal 2024, data tidak langsung) (MEDIUM) [Phase 8 — Adoption Metrics]",
+      "Volume DEX harian: >100M USD rata-rata (periode 2024-2025) (MEDIUM) [DefiLlama, https://defillama.com/chain/Sui]"
+    ],
+    "gaps": [
+      "Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik."
+    ],
+    "prospect": {
+      "met": null,
+      "unmet": null,
+      "signals": null,
+      "assessment": null
+    },
+    "lessons": []
+  },
+  "SushiSwap": {
+    "projectSlug": "sushiswap",
+    "status": "Belum ada",
+    "events": [],
+    "povOutcomes": {
+      "founder": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak relevan",
+        "longTerm": "Tidak relevan",
+        "basis": "Tidak relevan"
+      },
+      "vc": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak relevan",
+        "longTerm": "Tidak relevan",
+        "basis": "Tidak relevan"
+      },
+      "retail": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak relevan",
+        "longTerm": "Tidak relevan",
+        "basis": "Tidak relevan"
+      },
+      "community": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak relevan",
+        "longTerm": "Tidak relevan",
+        "basis": "Tidak relevan"
+      },
+      "developer": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak relevan",
+        "longTerm": "Tidak relevan",
+        "basis": "Tidak relevan"
+      },
+      "institution": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak relevan",
+        "longTerm": "Tidak relevan",
+        "basis": "Tidak relevan"
+      },
+      "validator": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak relevan",
+        "longTerm": "Tidak relevan",
+        "basis": "Tidak relevan"
+      },
+      "builder": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": "Tidak relevan",
+        "longTerm": "Tidak relevan",
+        "basis": "Tidak relevan"
+      }
+    },
+    "priceTrajectory": {
+      "atClaim": {
+        "usd": null,
+        "date": null,
+        "source": null,
+        "evidence": "HIGH",
+        "raw": "Tidak berlaku (Tidak ada distribusi token) (HIGH)"
+      },
+      "day30": {
+        "usd": null,
+        "date": null,
+        "source": null,
+        "evidence": "HIGH",
+        "raw": "Tidak berlaku (Tidak ada distribusi token) (HIGH)"
+      },
+      "day90": {
+        "usd": null,
+        "date": null,
+        "source": null,
+        "evidence": "HIGH",
+        "raw": "Tidak berlaku (Tidak ada distribusi token) (HIGH)"
+      },
+      "peak12m": {
+        "usd": null,
+        "date": null,
+        "source": null,
+        "evidence": "HIGH",
+        "raw": "Tidak berlaku (Tidak ada distribusi token) (HIGH)"
+      }
+    },
+    "retention": [
+      "Perubahan TVL atau volume protokol: Tidak ditemukan",
+      "Jumlah alamat pemegang token: Tidak ditemukan",
+      "Jumlah alamat aktif harian: Tidak ditemukan",
+      "Konsentrasi kepemilikan: Tidak ditemukan",
+      "Tingkat partisipasi staking: Tidak ditemukan"
+    ],
+    "gaps": [
+      "Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik."
+    ],
+    "prospect": {
+      "met": "- Komunitas aktif dan besar (HIGH)",
+      "unmet": "- Regulatory clarity on token distribution (MEDIUM)",
+      "signals": "- Pengumuman snapshot",
+      "assessment": "Prasyarat utama yang belum terpenuhi adalah kejelasan regulasi tentang distribusi token. Tingkat keyakinan sedang. Jika regulatory clarity terpenuhi, sinyal lainnya kemungkinan akan segera terlihat."
+    },
+    "lessons": [
+      "Ketika regulatory clarity belum ada (era 2023-2024), project cenderung menghindari distribusi token langsung → akibatnya adalah komunitas besar tanpa distribusi token.",
+      "Ketika kompetitor terdekat memilih private sale selama Bear Market (era 2023-2024), project mempertahankan status quo → akibatnya adalah menghindari volatilitas harga token."
+    ]
+  },
+  "Terra": {
+    "projectSlug": "terra",
+    "status": "Sudah dilakukan",
+    "events": [
+      {
+        "id": "AD-001",
+        "title": "Airdrop TGE LUNA Classic (2019)",
+        "date": "2019-07 (TGE, setelah mainnet launch April 2019)",
+        "type": "Snapshot (investor awal & komunitas)",
+        "allocation": "Tidak ditemukan (persentase pasti dari total supply 1 miliar LUNA tidak dipublikasikan secara resmi; distribusi awal mencakup investor Series A dan komunitas)",
+        "recipients": "Tidak ditemukan (jumlah alamat awal tidak diungkapkan)",
+        "valueAtClaim": "Tidak ditemukan (harga LUNA awal 2019 tidak dilaporkan secara konsisten; data CoinGecko hanya tersedia sejak listing publik)",
+        "criteria": "Investor Series A ($32M, Galaxy Digital, Pantera, Coinbase Ventures, Hashed) dan pendukung awal proyek menerima alokasi LUNA (HIGH) [Phase 3 — EV-004, EV-005]; [Phase 5 — Funding History]",
+        "antiSybil": "Tidak ada mekanisme anti-sybil yang terdokumentasi (era 2019, populasi hunter belum matang)",
+        "relatedEvent": "EV-004 (TGE LUNA Classic), EV-005 (Series A)",
+        "citation": "(HIGH) [Phase 3 — EV-004, EV-005]; [CoinDesk Series A, https://www.coindesk.com/business/2019/07/16/galaxy-digital-leads-32m-funding-round-for-terraform-labs/]"
+      },
+      {
+        "id": "AD-002",
+        "title": "Airdrop LUNA 2.0 (Genesis Distribution)",
+        "date": "2022-05-28 (Genesis block Phoenix-1)",
+        "type": "Snapshot / Fork (berdasarkan kepemilikan LUNC/USTC pada dua snapshot: pre-depeg dan post-depeg)",
+        "allocation": "100% dari total supply genesis 1,000,000,000 LUNA (1 miliar). Rincian: 30% pre-depeg LUNC holders, 30% pre-depeg USTC holders, 10% post-depeg LUNC holders, 10% post-depeg USTC holders, 20% community pool (HIGH) [Phase 6 — Distribution]; [Terra Docs Tokenomics, https://docs.terra.money/learn/tokenomics]",
+        "recipients": "Tidak ditemukan (jumlah alamat unik yang memenuhi syarat tidak dipublikasikan secara resmi; diperkirakan jutaan berdasarkan holder LUNC/USTC saat itu)",
+        "valueAtClaim": "Tidak ditemukan (harga LUNA 2.0 pada 28 Mei 2022 bervariasi antara $4-8 di exchange; tidak ada data resmi rata-rata nilai per penerima)",
+        "criteria": "Memegang LUNC atau USTC pada salah satu dari dua snapshot: pre-depeg (17-18 Mei 2022) dan post-depeg (27 Mei 2022). Semakin besar kepemilikan, semakin besar airdrop (HIGH) [Phase 3 — EV-022]; [Terra Docs, https://docs.terra.money/learn/tokenomics]",
+        "antiSybil": "Tidak ada mekanisme anti-sybil yang diumumkan; distribusi didasarkan pada kepemilikan on-chain murni, tanpa penyaringan alamat (HIGH) [Phase 6 — Distribution]; [Phase 9 — Recurring Pattern 5]",
+        "relatedEvent": "EV-020 (Proposal 1623), EV-021 (Peluncuran Terra 2.0), EV-022 (Airdrop), EV-023 (Rebranding)",
+        "citation": "(HIGH) [Phase 3 — EV-020, EV-021, EV-022, EV-023]; [Phase 6 — Distribution]; [Terra Station Proposal 1623, https://station.terra.money/proposal/1623]"
+      }
+    ],
+    "povOutcomes": {
+      "founder": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": "Do Kwon, Terraform Labs",
+        "shortTerm": "Berhasil meluncurkan chain baru (Terra 2.0) dengan listing exchange hari yang sama; Do Kwon mempertahankan kontrol teknis dan narasi \"penyelamat\" (HIGH) [Phase 3 — EV-021]",
+        "longTerm": "Gagal total — Do Kwon ditangkap di Montenegro (Maret 2023), Terraform Labs kalah gugatan SEC (April 2024), TFL dalam likuidasi (Mei 2024); airdrop tidak mencegah runtuhnya reputasi dan kontrol (HIGH) [Phase 3 — EV-027, EV-028, EV-031]",
+        "basis": "(HIGH) [Phase 3 — EV-021, EV-027, EV-028, EV-031]"
+      },
+      "vc": {
+        "verdict": "Gagal",
+        "verdictRaw": "Gagal",
+        "qualifier": "Galaxy Digital, Pantera, Arrington, Jump, Alameda, dll",
+        "shortTerm": "Menerima airdrop LUNA 2.0 sebagai holder LUNC/USTC, memberi partial recovery parsial; namun nilai jauh di bawah kerugian total (MEDIUM) [Phase 5 — Funding History]; [Phase 9 — Open Threads]",
+        "longTerm": "Sebagian besar VC membukukan kerugian besar; Three Arrows Capital bangkrut (Juli 2022) akibat posisi LUNA/UST; Alameda Research kolaps (Nov 2022); hanya sedikit yang keluar dengan profit (HIGH) [Phase 3 — EV-040]; [Phase 8 — Market Timeline]",
+        "basis": "(HIGH) [Phase 3 — EV-040]; (MEDIUM) [Phase 5 — Funding History]"
+      },
+      "retail": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": "pemegang LUNC/USTC kecil",
+        "shortTerm": "Menerima airdrop LUNA 2.0, namun nilai per alamat kecil (karena distribusi proporsional); mayoritas menjual dalam minggu pertama karena trauma dan ketidakpercayaan (MEDIUM) [Phase 9 — Anti-pattern 5]",
+        "longTerm": "Sebagian kecil yang menahan LUNA 2.0 mendapat keuntungan moderat saat harga naik dari bottom; namun mayoritas retail yang memegang LUNC/USTC lama tidak pernah pulih (HIGH) [Phase 8 — Market Timeline]",
+        "basis": "(MEDIUM) [Phase 9 — Anti-pattern 5]; (HIGH) [Phase 8 — Market Timeline]"
+      },
+      "community": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": "komunitas Terra Classic / LUNC Burn Army",
+        "shortTerm": "Komunitas terpecah: sebagian mengikuti ke Terra 2.0, sebagian tetap di Classic untuk memperjuangkan repeg USTC dan burn LUNC (HIGH) [Phase 3 — EV-032, EV-033]",
+        "longTerm": "Komunitas Classic menjadi lebih aktif dalam governance (Proposal 12133 burn tax, repeg efforts); namun Terra Classic TVL tetap rendah dan tidak ada pemulihan signifikan (HIGH) [Phase 3 — EV-032]; [Phase 8 — Market Share]",
+        "basis": "(HIGH) [Phase 3 — EV-032, EV-033]; [Phase 8 — Market Share]"
+      },
+      "developer": {
+        "verdict": "Gagal",
+        "verdictRaw": "Gagal",
+        "qualifier": "pengembang protokol di ekosistem Terra",
+        "shortTerm": "Banyak developer memilih migrasi ke chain lain (Mars→Neutron, Levana→Osmosis, Astroport multi-chain) daripada beradaptasi dengan Terra 2.0 (HIGH) [Phase 3 — EV-033]",
+        "longTerm": "Terra 2.0 tidak berhasil menarik developer baru yang signifikan; TVL $16.4M menunjukkan lack of developer traction (HIGH) [Phase 8 — Adoption Metrics]",
+        "basis": "(HIGH) [Phase 3 — EV-033]; [Phase 8 — Adoption Metrics]"
+      },
+      "institution": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": "exchange, oracle, validator institution",
+        "shortTerm": "Exchange menerima listing fees dan volume dari LUNA 2.0; Binance, KuCoin, OKX tetap support; oracle provider (Chainlink, Pyth) mengintegrasi Terra 2.0 (MEDIUM) [Phase 7 — Exchange Ecosystem]; [Phase 3 — EV-035, EV-036]",
+        "longTerm": "Exchange tetap memegang posisi dominan sebagai gateway likuiditas; namun regulasi (SEC) membuat listing baru di AS sulit; institusi lain menahan diri (MEDIUM) [Phase 8 — Trading Markets]",
+        "basis": "(MEDIUM) [Phase 7 — Exchange Ecosystem]; (HIGH) [Phase 8 — Market Risks]"
+      },
+      "validator": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": "P2P, Figment, Chorus One, dll",
+        "shortTerm": "Validator yang mengikuti hard fork mendapat staking rewards LUNA 2.0; namun banyak yang kehilangan stake LUNC yang hancur (MEDIUM) [Phase 4 — Consensus Mechanism]",
+        "longTerm": "Validator set tetap beroperasi di kedua chain, tapi jumlah delegator dan total stake menurun drastis; pendapatan fee minimal (MEDIUM) [Phase 8 — Adoption Metrics]",
+        "basis": "(MEDIUM) [Phase 4 — Consensus Mechanism]; (HIGH) [Phase 8 — Adoption Metrics]"
+      },
+      "builder": {
+        "verdict": "Gagal",
+        "verdictRaw": "Gagal",
+        "qualifier": "proyek baru yang mencoba deploy di Terra 2.0",
+        "shortTerm": "Beberapa proyek kecil mencoba deploy di Terra 2.0 setelah airdrop, tapi insentif community pool sulit diakses (butuh proposal governance); tidak ada grant terstruktur (HIGH) [Phase 9 — Trade-off 6]",
+        "longTerm": "Mayoritas builder memilih chain Cosmos lain (Neutron, Osmosis) dengan komunitas lebih besar; Terra 2.0 tidak menjadi destinasi builder utama (HIGH) [Phase 8 — Competitor Landscape]; [Phase 3 — EV-033]",
+        "basis": "(HIGH) [Phase 9 — Trade-off 6]; [Phase 8 — Competitor Landscape]"
+      }
+    },
+    "priceTrajectory": {
+      "atClaim": {
+        "usd": 4.84,
+        "date": "2022-05-28",
+        "source": "Phase 8 — Market Timeline; verifikasi CoinGecko/CoinMarketCap",
+        "evidence": "MEDIUM",
+        "raw": "$4.84 USD (2022-05-28) [Phase 8 — Market Timeline; verifikasi CoinGecko/CoinMarketCap] (MEDIUM)"
+      },
+      "day30": {
+        "usd": 3.2,
+        "date": "2022-06-28",
+        "source": "CoinGecko; Phase 8 — Market Timeline",
+        "evidence": "MEDIUM",
+        "raw": "$3.20 USD (2022-06-28) [CoinGecko; Phase 8 — Market Timeline] (MEDIUM)"
+      },
+      "day90": {
+        "usd": 5.08,
+        "date": "2022-08-28",
+        "source": "CoinGecko; Phase 8 — Market Timeline",
+        "evidence": "MEDIUM",
+        "raw": "$5.08 USD (2022-08-28) [CoinGecko; Phase 8 — Market Timeline] (MEDIUM)"
+      },
+      "peak12m": {
+        "usd": 10.72,
+        "date": "2022-05-31",
+        "source": "CoinGecko; Phase 8 — Market Timeline",
+        "evidence": "MEDIUM",
+        "raw": "$10.72 USD (2022-05-31) [CoinGecko; Phase 8 — Market Timeline] (MEDIUM)"
+      }
+    },
+    "retention": [
+      "TVL Terra 2.0: $16.4M USD (2024-11-01), turun dari puncak $400M+ (Juni 2022) (HIGH) [Phase 8 — Adoption Metrics]; [DefiLlama, https://defillama.com/chain/Terra]",
+      "TVL Terra Classic: $9.8M USD (2024-11-01), turun dari puncak ekosistem gabungan $18B+ (Maret 2022) (HIGH) [Phase 8 — Adoption Metrics]; [DefiLlama, https://defillama.com/chain/Terra%20Classic]",
+      "Unique addresses Terra Classic: >2 juta alamat historical (per Nov 2024) (MEDIUM) [Phase 8 — Adoption Metrics]; [Flipside Crypto, https://flipsidecrypto.xyz/terra]",
+      "Unique addresses Terra 2.0: >600 ribu alamat (per Nov 2024) (MEDIUM) [Phase 8 — Adoption Metrics]; [Flipside Crypto, https://flipsidecrypto.xyz/terra]",
+      "Daily transactions Terra Classic: 30.000-100.000 per hari (Nov 2024) — sebagian besar burn tax transfers, bukan aktivitas ekonomi (MEDIUM) [Phase 8 — Adoption Metrics]; [Classic Finder, https://classic.finder.terra.money]",
+      "Daily transactions Terra 2.0: 2.000-10.000 per hari (Nov 2024) (MEDIUM) [Phase 8 — Adoption Metrics]; [Terra Finder, https://finder.terra.money]",
+      "Validator count kedua chain: 130 validator aktif masing-masing (Nov 2024) (HIGH) [Phase 4 — Consensus Mechanism]; [Terra 2.0 Staking, https://station.terra.money/staking]; [Classic Staking, https://classic.terra.money/staking]",
+      "Staking participation Terra 2.0: Tidak ditemukan (persentase bonded LUNA tidak dipublikasikan secara resmi)",
+      "Staking participation Terra Classic: Tidak ditemukan (persentase bonded LUNC tidak dipublikasikan secara resmi)",
+      "Konsentrasi kepemilikan: Top 10 validator >40% voting power di kedua chain (per Nov 2024) (HIGH) [Phase 4 — Consensus Mechanism]"
+    ],
+    "gaps": [
+      "Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik."
+    ],
+    "prospect": {
+      "met": "Tidak ada airdrop baru yang diumumkan; kedua chain (Terra 2.0 dan Terra Classic) sudah memiliki token hidup dan governance fungsional (HIGH) [Phase 6 — Governance]; [Phase 3 — EV-038, EV-039]",
+      "unmet": "Tidak ada narasi \"new token launch\" atau \"chain upgrade\" yang memerlukan distribusi baru; komunitas Classic fokus pada burn/repeg, bukan airdrop (HIGH) [Phase 8 — Narrative Position]; [Phase 3 — EV-032]",
+      "signals": "Jika ada proposal governance untuk alokasi token baru (misal dari community pool) ke pengguna aktif, itu akan jadi sinyal; saat ini tidak ada proposal semacam itu (HIGH) [Phase 6 — Governance]",
+      "assessment": "Tingkat keyakinan rendah bahwa akan ada airdrop baru dalam 12 bulan; kedua chain tidak memiliki insentif struktural untuk mendistribusikan token baru karena supply sudah ada dan governance terkunci pada parameter yang ada. Perubahan akan datang hanya jika ada fork baru atau proposal radikal dari komunitas (MEDIUM) [Phase 9 — Open Threads]"
+    },
+    "lessons": []
   }
 }

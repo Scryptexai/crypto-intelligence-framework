@@ -64,3 +64,15 @@
 2026-08-14T06:41:08.881417+00:00	Curve	phase 06-token	attempt 1	failed=no_junk,min_length,ingest_contract	repaired
 2026-08-14T07:09:43.720576+00:00	Berachain	phase 11-conflict	attempt 1	failed=qa_parse	no_improvement
 2026-08-14T07:13:56.387889+00:00	Cosmos	phase 11-conflict	attempt 1	failed=qa_parse	repaired
+2026-08-14T10:10:38.614967+00:00	Curve	phase 01-foundation	attempt 1	failed=no_junk,ingest_contract	no_improvement
+2026-08-14T11:37:24.918645+00:00	EtherFi	phase 11-conflict	attempt 1	failed=qa_parse	repaired
+2026-08-14T11:55:12.724466+00:00	Jupiter	phase 11-conflict	attempt 1	failed=ingest_contract,qa_parse	repaired
+2026-08-14T12:01:52.620113+00:00	Near	phase 11-conflict	attempt 1	failed=qa_parse	repaired
+2026-08-14T12:27:01.978120+00:00	Pump.fun	phase 11-conflict	attempt 1	failed=qa_parse	repaired
+2026-08-14T12:34:51.098853+00:00	Pyth	phase 11-conflict	attempt 1	failed=qa_parse	repaired
+2026-08-14T12:40:10.441806+00:00	Render	phase 11-conflict	attempt 1	failed=qa_parse	repaired
+2026-08-14T13:21:05.612829+00:00	Sui	phase 11-conflict	attempt 1	failed=qa_parse	repaired
+2026-08-14T13:34:34.165558+00:00	Terra	phase 11-conflict	attempt 1	failed=qa_parse	repaired
+2026-08-14T13:48:20.300344+00:00	Wormhole	phase 11-conflict	attempt 1	failed=qa_parse	repaired
+2026-08-14T14:04:23.863058+00:00	zkSync	phase 11-conflict	attempt 1	failed=qa_parse	repaired
+2026-08-14T15:08:25.071719+00:00	Pump.fun	phase 12-airdrop	attempt 1	failed=ingest_contract	repaired

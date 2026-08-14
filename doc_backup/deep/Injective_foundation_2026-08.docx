@@ -1,0 +1,28 @@
+PROJECT: Injective
+Official Name: Injective Protocol (HIGH) [Injective Official Website, https://injective.com/]
+Symbol: INJ (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/injective]
+Category: Layer-1 blockchain for decentralized finance / cross-chain derivatives exchange (HIGH) [Injective Documentation, https://docs.injective.network/]
+Founding Entity: Injective Labs Inc., British Virgin Islands (HIGH) [Crunchbase, https://www.crunchbase.com/organization/injective-labs; Injective Blog, https://blog.injective.com/]
+Founders: Eric Chen (CEO/Co-founder); Albert Chon (CTO/Co-founder) (HIGH) [Forbes 30 Under 30 Profile, https://www.forbes.com/profile/eric-chen/; Injective Team Page, https://injective.com/team/]
+Core Team: ~50+ full-time engineers/researchers (names not fully public); key public leads include Aiden Kehoe (Head of Growth), Nick Olon (Head of BD) (MEDIUM) [LinkedIn search "Injective Labs", https://www.linkedin.com/company/injective-labs/; Injective Blog team posts]
+Country: British Virgin Islands (legal entity); team distributed globally (US, Singapore, Europe) (HIGH) [Crunchbase, https://www.crunchbase.com/organization/injective-labs]
+Launch Date - Testnet: 2020-10 (HIGH) [Injective Blog "Testnet Launch", https://blog.injective.com/injective-testnet-launch/]
+Launch Date - Mainnet: 2021-11-16 (HIGH) [Injective Blog "Mainnet Launch", https://blog.injective.com/injective-mainnet-launch/]
+Launch Date - TGE: 2020-10 (pre-TGE via Binance Launchpad IEO, public sale Oct 2020) (HIGH) [Binance Launchpad Announcement, https://www.binance.com/en/blog/421499824684901170/Injective-Protocol-INJ-Token-Sale-on-Binance-Launchpad]
+Main Products: Injective Chain (Cosmos-based L1); Injective Exchange (on-chain orderbook DEX); Helix (consumer-facing DEX frontend); Injective Bridge (IBC/Ethereum/Cosmos); iAssets (synthetic assets); Injective Hub (staking/governance portal) (HIGH) [Injective Docs Products Overview, https://docs.injective.network/learn/products/]
+Official Website: https://injective.com/ (HIGH)
+Repository: https://github.com/InjectiveLabs (HIGH) [GitHub Org, https://github.com/InjectiveLabs]
+Documentation: https://docs.injective.network/ (HIGH)
+Social - X/Twitter: @InjectiveLabs (HIGH) [X Profile, https://x.com/InjectiveLabs]
+Social - Discord: https://discord.gg/injective (HIGH) [Website footer link]
+Social - Telegram: @injectiveofficial (HIGH) [Website footer link]
+Block Explorer: https://explorer.injective.network/ (mainnet); https://testnet.explorer.injective.network/ (testnet) (HIGH) [Injective Explorer, https://explorer.injective.network/]
+Token Contract: inj1... (native on Injective Chain); ERC-20: 0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30 (Ethereum) (HIGH) [CoinGecko Contract Info, https://www.coingecko.com/en/coins/injective#info; Etherscan, https://etherscan.io/token/0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30]
+Chain(s): Injective Chain (native Cosmos SDK L1); Ethereum (ERC-20 bridge); IBC-connected Cosmos chains (Osmosis, Celestia, Neutron, etc.) (HIGH) [Injective Docs "Chain Architecture", https://docs.injective.network/learn/architecture/]
+Ecosystem: Cosmos (IBC); Ethereum (bridge); partners: Binance, Pantera, Jump, Mark Cuban, Delphi Digital, Helix, Talis, Frontrunner, Hydro, Mito, Black Panther (HIGH) [Injective Blog "Ecosystem Fund", https://blog.injective.com/injective-ecosystem-fund/; Injective Docs "Ecosystem", https://docs.injective.network/ecosystem/]
+
+Open Threads
+- Exact core team headcount and full named roster — not fully public; only leadership names confirmed
+- Current token contract upgrade status (any migration from ERC-20 to native only?) — conflicting info on whether ERC-20 still actively used
+- Precise TGE unlock schedule breakdown (team/investors/community percentages) — blog mentions "progressive unlock" but exact cliffs not in single verified source
+- Legal entity structure beyond "Injective Labs Inc. BVI" — any foundation, DAO LLC, or Swiss entity?

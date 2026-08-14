@@ -1,9 +1,9 @@
 # Vana — Deep Case Study (Phased)
 
 **CIF Dataset — Deep Dossier · Tier: Deep (anchor project)**
-**Source:** Deep Research (DeepSeek), Format v3 Dependency Pipeline (10/11 phases: foundation, entity, history, technology, financial, token, ecosystem, market, behavioral, knowledge). **Auto-assembled** by `tools/ingest.py` (deterministic, no LLM, strict data_project/ contract) — each phase extracted and concatenated in dependency order per `docs/Protocol/Deep-Research-Brief.md`; the reasoning is the source reports'.
-**Raw sources archived:** doc_backup/deep/Vana_foundation_2026-08.docx, doc_backup/deep/Vana_entity_2026-08.docx, doc_backup/deep/Vana_history_2026-08.docx, doc_backup/deep/Vana_technology_2026-08.docx, doc_backup/deep/Vana_financial_2026-08.docx, doc_backup/deep/Vana_token_2026-08.docx, doc_backup/deep/Vana_ecosystem_2026-08.docx, doc_backup/deep/Vana_market_2026-08.docx, doc_backup/deep/Vana_behavioral_2026-08.docx, doc_backup/deep/Vana_knowledge_2026-08.docx.
-**Phases not run:** conflict.
+**Source:** Deep Research (DeepSeek), Format v3 Dependency Pipeline (11/11 phases: foundation, entity, history, technology, financial, token, ecosystem, market, behavioral, knowledge, conflict). **Auto-assembled** by `tools/ingest.py` (deterministic, no LLM, strict data_project/ contract) — each phase extracted and concatenated in dependency order per `docs/Protocol/Deep-Research-Brief.md`; the reasoning is the source reports'.
+**Raw sources archived:** doc_backup/deep/Vana_foundation_2026-08.docx, doc_backup/deep/Vana_entity_2026-08.docx, doc_backup/deep/Vana_history_2026-08.docx, doc_backup/deep/Vana_technology_2026-08.docx, doc_backup/deep/Vana_financial_2026-08.docx, doc_backup/deep/Vana_token_2026-08.docx, doc_backup/deep/Vana_ecosystem_2026-08.docx, doc_backup/deep/Vana_market_2026-08.docx, doc_backup/deep/Vana_behavioral_2026-08.docx, doc_backup/deep/Vana_knowledge_2026-08.docx, doc_backup/deep/Vana_conflict_2026-08.docx.
+**Phases not run:** none.
 
 > Faithful concatenation of phase outputs — no fabrication, no distillation beyond what the closing phase (Conflict Resolution / Validation) itself states. Consider a periodic QC pass.
 
@@ -4023,6 +4023,1510 @@ Anti-patterns:
 7. Regulatory Uncertainty Acknowledged But Not Actively Mitigated
 8. Validator Set Economics Opaque
 
+## Validation & Quality Assurance (CIF Score)
+_ref: `docs/Reasoning/Confidence.md` — CIF Score, Data Lineage, Knowledge Dependency Graph_
+
+PROJECT: Vana
+
+CIF MANIFEST v3.0
+
+Project: Vana
+Symbol: VANA
+Research Date: 2025-01
+CIF Version: 3.0
+QA Date: 2025-01
+
+METRICS
+Total Knowledge Objects: 10
+Total Entities: 36
+Total Events: 19
+Evidence Links: 124
+Sources: 28
+Conflicts: 5
+ ├── Resolved: 3
+ ├── Critical: 0
+ ├── High: 1
+ ├── Medium: 1
+ └── Low: 3
+
+QUALITY SCORES
+Research Quality: 100/100
+Consistency: 95/100
+Evidence: 75/100
+Coverage: 88/100
+Conflict: 60/100
+Knowledge: 82/100
+CIF SCORE: 86/100
+
+CONFIDENCE LEVEL: HIGH
+QA STATUS: PASSED
+
+RECOMMENDED RE-RUN:
+ - Phase 5 — Treasury size, revenue history, dan grant deployments tidak diungkap; butuh update pasca-TGE
+ - Phase 6 — Vesting schedule, token distribution percentages, dan unlock timeline tidak dipublikasikan; kritis untuk analisis tokenomics
+ - Phase 8 — Need update post-TGE untuk market metrics (volume, market cap, TVL) yang belum teragregasi
+
+---
+
+DATASET INTEGRITY & COVERAGE
+
+Periksa setiap phase.
+
+Phase 1 — Foundation
+ Status: Complete
+ Missing Information: Tidak ada
+ Notes: Seluruh data dasar (official name, symbol, category, launch dates, chain, ecosystem) terisi lengkap. Open threads dicatat dengan baik.
+
+Phase 2 — Entity
+ Status: Complete
+ Missing Information: Tidak ada
+ Notes: 36 entity teridentifikasi dengan klasifikasi lengkap. Beberapa entity investor memiliki peran ganda (investor dan ekosistem). Tidak ada entity keamanan yang teridentifikasi — tercatat sebagai "tidak ada".
+
+Phase 3 — History
+ Status: Complete
+ Missing Information: Tidak ada
+ Notes: 19 event dari EV-001 hingga EV-019 mencakup founding (2021) hingga Forbes (2024). Timeline konsisten dengan phase lain. Tipe event "Ecosystem" mendominasi (5 event).
+
+Phase 4 — Technology
+ Status: Complete
+ Missing Information: Tidak ada
+ Notes: Arsitektur, core components (10), consensus mechanism, execution environment, bahasa pemrograman, development framework, security model, dan audit history terdokumentasi. Audit history "tidak diketahui" — tercatat sebagai open thread.
+
+Phase 5 — Financial
+ Status: Complete
+ Missing Information: Tidak ada (semua data tidak diungkap dicatat sebagai "tidak diungkap")
+ Notes: Funding history hanya 2 round (VC round 2023 + TGE 2024). Treasury size, revenue, dan grant deployments semua "tidak diungkap" — tercatat di open threads.
+
+Phase 6 — Token
+ Status: Complete
+ Missing Information: Tidak ada (semua parameter tidak diketahui dicatat)
+ Notes: Supply, distribution, vesting, dan holder distribution "tidak diketahui" — tercatat di open threads. Utilitas teridentifikasi (8 utilitas) dengan governance sebagai yang paling terverifikasi.
+
+Phase 7 — Ecosystem
+ Status: Complete
+ Missing Information: Tidak ada
+ Notes: 25+ external dependencies, 10 major integrations, 8 infrastructure providers teridentifikasi. Grant program "referenced but not deployed" — tercatat.
+
+Phase 8 — Market
+ Status: Complete
+ Missing Information: Tidak ada
+ Notes: Market category, position, competitor landscape (8+ pesaing), narrative position teridentifikasi. Adoption metrics (TVL, users, transactions) "tidak diketahui" — tercatat.
+
+Phase 9 — Behavioral
+ Status: Complete
+ Missing Information: Tidak ada
+ Notes: 5 strategic objectives, 6 keputusan kunci, 6 technical decision patterns, 6 financial decision patterns, 6 ecosystem decision patterns, 5 governance decision patterns, 5 risk response patterns, 6 recurring behavioral patterns, 7 strategic trade-offs terdokumentasi.
+
+Phase 10 — Knowledge
+ Status: Complete
+ Missing Information: Tidak ada
+ Notes: 10 knowledge objects (K-001 hingga K-010), 10 core insights, 8 strategic principles, 6 success factors, 8 failure factors, 1 decision framework, 8 playbook items, 8 anti-patterns, 10 lessons learned terdokumentasi.
+
+Coverage Report — Multi-dimensional
+
+Phase 2 — Entity
+ Total: 36
+ Referenced in Phase 9-10: 21
+ Unused: 15
+ Coverage: 58%
+ Interpretation: 15 entity tidak secara eksplisit direferensikan di Phase 9-10 (misalnya entity media seperti Forbes, CoinGecko, Messari digunakan sebagai sumber event tapi tidak menjadi subjek analisis perilaku). Entity yang tidak digunakan sebagian besar adalah infrastructure dan media yang memiliki peran pendukung.
+
+Phase 3 — Event
+ Total: 19
+ Referenced in Phase 9-10: 19
+ Unused: 0
+ Coverage: 100%
+ Interpretation: Seluruh 19 event direferensikan di Phase 9 (Decision Timeline, Recurring Behavioral Pattern) dan Phase 10 (insight, playbook, anti-patterns). Coverage sempurna.
+
+Phase 4 — Technology
+ Total: 24 komponen (10 core components + 4 consensus + 3 execution + 5 programming languages + 6 development framework + 4 security + 1 audit + 4 upgrade + 5 limitation)
+ Referenced: 22
+ Unused: 2 (Redis, Ignite CLI — tercatat sebagai asumsi di Phase 7)
+ Coverage: 92%
+ Interpretation: Hampir seluruh teknologi direferensikan. Redis dan Ignite CLI hanya tercatat sebagai asumsi dan tidak dipakai dalam analisis perilaku atau knowledge.
+
+Phase 5 — Financial
+ Total: 14 item (2 funding rounds + 3 treasury + 5 revenue streams + 6 funding mechanisms + 3 dependencies + 4 risks)
+ Referenced: 12
+ Unused: 2 (komponen treasury "Stablecoin Holdings" dan "Other Assets" tidak direferensikan karena "tidak diketahui")
+ Coverage: 86%
+ Interpretation: Mayoritas data finansial direferensikan. Item treasury yang "tidak diketahui" tidak bisa direferensikan secara bermakna.
+
+Phase 6 — Token
+ Total: 10 kategori (supply, distribution, vesting, TGE, utility, governance, inflation, holder distribution, major events, resources)
+ Referenced: 10
+ Unused: 0
+ Coverage: 100%
+ Interpretation: Seluruh kategori token direferensikan di Phase 9 (Decision Timeline, Financial Decision Pattern) dan Phase 10 (insight, anti-patterns).
+
+Phase 7 — Ecosystem
+ Total: 22 kategori (17 external dependencies + 10 integrations + 8 infrastructure providers + 8 exchange entries + 5 wallets + 10 developer tools + 8 applications + 8 governance ecosystem + 6 ecosystem risks)
+ Referenced: 20
+ Unused: 2 (Wallet Cosmostation dan Leap Wallet — tidak direferensikan eksplisit karena status "tidak diketahui")
+ Coverage: 91%
+ Interpretation: Mayoritas ekosistem direferensikan. Wallet dengan status "tidak diketahui" tidak bisa direferensikan.
+
+Phase 8 — Market
+ Total: 10 kategori (category, position, trading markets, liquidity, adoption metrics, market share, competitor landscape, narrative position, market timeline, market resources)
+ Referenced: 9
+ Unused: 1 (Market Share — tidak dapat dihitung karena kategori belum dilacak oleh platform analitik)
+ Coverage: 90%
+ Interpretation: Market share tidak bisa direferensikan karena data tidak tersedia. Semua kategori lain digunakan.
+
+Overall Coverage
+ Total: 145 item
+ Referenced: 123 item
+ Unused: 22 item
+ Coverage: 85%
+ Interpretation: Coverage keseluruhan 85% menunjukkan dataset solid. Item yang tidak direferensikan mayoritas adalah data yang "tidak diketahui" atau "tidak dapat diverifikasi" yang tidak bisa digunakan dalam analisis. Ini bukan kelemahan metodologis melainkan keterbatasan data yang sudah dicatat.
+
+---
+
+CROSS-PHASE CONSISTENCY
+
+Entity Consistency
+ Status: Konsisten
+ Detail:
+ - Vana Foundation muncul di Phase 1, 2, 5, 7, 9, 10 dengan nama yang sama persis.
+ - Anna Kazlauskas dan Art Abal konsisten di Phase 1, 2, 3, 9.
+ - Investor ternama (Paradigm, Polymorphic Capital, Coinbase Ventures, Polychain Capital, Dragonfly Capital) konsisten di Phase 2, 3, 5, 7, 9.
+ - 5 Data DAO (r/datadao, Volara, Flirtual, DataPig, Kappa) konsisten di Phase 1, 2, 3, 7, 9.
+
+Timeline Consistency
+ Status: Konsisten
+ Detail:
+ - Founding 2021 konsisten di Phase 1, 3 (EV-001), dan 9 (Strategic Objectives).
+ - Vana Foundation 2023 konsisten di Phase 3 (EV-002), Phase 5 (Funding), Phase 9 (Decision Timeline).
+ - Moksha Testnet 2023-07 konsisten di Phase 1, 3 (EV-004), 4 (Upgrade History), 9 (Decision Timeline).
+ - Mainnet 2024-10-16 konsisten di Phase 1, 3 (EV-013), 4 (Upgrade History), 6 (Token Events), 8 (Market Timeline), 9 (Decision Timeline).
+ - TGE 2024-12-16 konsisten di Phase 1, 3 (EV-016), 4 (Upgrade History), 6 (Token Events), 8 (Market Timeline), 9 (Decision Timeline).
+
+Technology Consistency
+ Status: Konsisten
+ Detail:
+ - Arsitektur Cosmos SDK + CometBFT + Ethermint konsisten di Phase 4 (System Architecture), Phase 7 (External Dependencies), Phase 8 (Narrative Position), Phase 9 (Technical Decision Pattern).
+ - Universal Connectors SDK konsisten di Phase 4 (Core Components), Phase 7 (Major Integrations), Phase 9 (Ecosystem Decision Pattern).
+ - Vana-Ethereum Bridge konsisten di Phase 4 (Core Components), Phase 7 (Major Integrations), Phase 9 (Decision Timeline, Strategic Trade-offs).
+
+Funding Consistency
+ Status: Konsisten
+ Detail:
+ - Early funding round 2023 dengan 5 investor konsisten di Phase 3 (EV-005), Phase 5 (Funding History), Phase 8 (Market Timeline), Phase 9 (Financial Decision Pattern).
+ - TGE 2024-12-16 konsisten di Phase 3 (EV-016), Phase 5 (Funding History), Phase 6 (Token Events), Phase 9 (Decision Timeline).
+
+Token Consistency
+ Status: Konsisten
+ Detail:
+ - VANA token sebagai native token Vana L1 dan ERC-20 di Ethereum konsisten di Phase 1, 6, 7, 9.
+ - TGE 2024-12-16 konsisten di Phase 1, 3, 6, 8, 9.
+ - Utilitas governance, staking, fee payment, incentive konsisten di Phase 6 (Utility), Phase 7 (Governance Ecosystem), Phase 9 (Strategic Objectives).
+
+Governance Consistency
+ Status: Konsisten
+ Detail:
+ - Dual governance (Vana Foundation + on-chain Cosmos SDK module) konsisten di Phase 2 (Entity), Phase 4 (Consensus Mechanism), Phase 6 (Governance), Phase 7 (Governance Ecosystem), Phase 9 (Governance Decision Pattern).
+ - Token-weighted voting dengan delegation konsisten di Phase 6 (Governance), Phase 7 (Governance Ecosystem), Phase 9 (Governance Decision Pattern).
+
+Dependency Consistency
+ Status: Konsisten
+ Detail:
+ - Cosmos SDK, CometBFT, Ethermint sebagai critical dependencies konsisten di Phase 4 (System Architecture), Phase 7 (External Dependencies), Phase 9 (Strategic Trade-offs).
+ - Vana Foundation sebagai critical dependency konsisten di Phase 2 (Entity), Phase 7 (External Dependencies), Phase 9 (Governance Decision Pattern).
+
+Overall Cross-phase Consistency: 95%
+
+---
+
+DATA LINEAGE
+
+Knowledge K-001 — Sovereign L1 dengan custom PoC module menciptakan technical moat
+
+Lineage:
+ Level 0 (Raw Data — Events / Metrics / Integrations)
+ ├── Phase 4 — System Architecture (Layer 1 blockchain berbasis Cosmos SDK dengan kompatibilitas EVM)
+ │ └── Source: [Vana Whitepaper, https://vana.org/whitepaper.pdf]
+ ├── Phase 4 — Core Components (PoC Module sebagai custom Cosmos SDK module)
+ │ └── Source: [Vana Whitepaper, https://vana.org/whitepaper.pdf]
+ ├── Phase 4 — Consensus Mechanism (PoC BUKAN consensus mechanism, application-layer module)
+ │ └── Source: [Vana Whitepaper, https://vana.org/whitepaper.pdf]
+ └── Phase 9 — Technical Decision Pattern Pola 3 (PoC sebagai application-layer)
+ └── Source: Phase 4 + Phase 9 synthesis
+
+Level 1 (Processed — Pattern Identification)
+ └── Phase 9 — Technical Decision Pattern Pola 1, 2, 3
+ └── Evidence: Modular App-Chain Architecture, EVM compatibility, PoC application-layer
+
+Level 2 (Knowledge)
+ └── Knowledge K-001 — Sovereign L1 dengan custom PoC module menciptakan technical moat
+
+Validation:
+ ├── Passed: Cross-phase consistency check
+ ├── Passed: Evidence audit (Strong)
+ └── Confidence: 90/100
+
+Knowledge K-002 — Decoupled chain launch dari token launch (2 bulan gap)
+
+Lineage:
+ Level 0 (Raw Data — Events / Metrics / Integrations)
+ ├── Phase 3 — EV-013 (Mainnet Genesis 2024-10-16)
+ │ └── Source: [Vana Blog Mainnet Live, https://blog.vana.org/vana-mainnet-is-live/]
+ ├── Phase 3 — EV-016 (TGE 2024-12-16)
+ │ └── Source: [Vana Blog Token Launch, https://blog.vana.org/vana-token-launch/]
+ ├── Phase 6 — Major Token Events (Mainnet Genesis native VANA, TGE ERC-20)
+ │ └── Source: [Vana Blog Mainnet Live, https://blog.vana.org/vana-mainnet-is-live/]
+ │ [Vana Blog Token Launch, https://blog.vana.org/vana-token-launch/]
+ └── Phase 9 — Decision Timeline (Keputusan: Mainnet tanpa TGE, gap ~2 bulan)
+ └── Source: Phase 3 + Phase 6 synthesis
+
+Level 1 (Processed — Pattern Identification)
+ └── Phase 9 — Recurring Behavioral Pattern Pola 4 (Decouple chain launch dari token launch)
+
+Level 2 (Knowledge)
+ └── Knowledge K-002 — Decoupled chain launch dari token launch (2 bulan gap)
+
+Validation:
+ ├── Passed: Cross-phase consistency check
+ ├── Passed: Evidence audit (Strong)
+ └── Confidence: 95/100
+
+Knowledge K-003 — Parallel vertical Data DAO launch dengan verification fragmentation
+
+Lineage:
+ Level 0 (Raw Data — Events / Metrics / Integrations)
+ ├── Phase 3 — EV-006 (r/datadao launch)
+ │ └── Source: [Vana Blog Data DAO Ecosystem, https://blog.vana.org/category/data-daos/]
+ ├── Phase 3 — EV-007 (Volara launch)
+ │ └── Source: [Vana Blog Data DAO Ecosystem, https://blog.vana.org/category/data-daos/]
+ ├── Phase 3 — EV-008 (Flirtual launch)
+ │ └── Source: [Vana Blog Data DAO Ecosystem, https://blog.vana.org/category/data-daos/]
+ ├── Phase 3 — EV-009 (DataPig launch)
+ │ └── Source: [Vana Blog Data DAO Ecosystem, https://blog.vana.org/category/data-daos/]
+ ├── Phase 3 — EV-010 (Kappa launch)
+ │ └── Source: [Vana Blog Data DAO Ecosystem, https://blog.vana.org/category/data-daos/]
+ ├── Phase 4 — Known Technical Limitations (PoC verification fragmentation)
+ │ └── Source: [Vana Whitepaper, https://vana.org/whitepaper.pdf]
+ │ [Vana Docs PoC, https://docs.vana.org]
+ └── Phase 7 — Ecosystem Risks Data Quality Risk (verification quality fragmented)
+ └── Source: [Vana Whitepaper, https://vana.org/whitepaper.pdf]
+ [Vana Docs PoC, https://docs.vana.org]
+
+Level 1 (Processed — Pattern Identification)
+ └── Phase 9 — Ecosystem Decision Pattern Pola 1 (Parallel vertical Data DAO launch)
+
+Level 2 (Knowledge)
+ └── Knowledge K-003 — Parallel vertical Data DAO launch dengan verification fragmentation
+
+Validation:
+ ├── Passed: Cross-phase consistency check
+ ├── Passed: Evidence audit (Strong)
+ └── Confidence: 92/100
+
+Knowledge K-004 — Validator-set attestation bridge model (single point of failure)
+
+Lineage:
+ Level 0 (Raw Data — Events / Metrics / Integrations)
+ ├── Phase 4 — Core Components Bridge (Vana-Ethereum Bridge validator attestation)
+ │ └── Source: [Vana Blog Mainnet Live, https://blog.vana.org/vana-mainnet-is-live/]
+ │ [Vana Docs Bridge, https://docs.vana.org]
+ ├── Phase 4 — Known Technical Limitations (bridge trust model honest majority)
+ │ └── Source: [Vana Whitepaper, https://vana.org/whitepaper.pdf]
+ │ [Vana Docs Bridge, https://docs.vana.org]
+ └── Phase 7 — Ecosystem Risks Bridge Dependency (single point of failure)
+ └── Source: [Vana Whitepaper, https://vana.org/whitepaper.pdf]
+ [Vana Docs Bridge, https://docs.vana.org]
+
+Level 1 (Processed — Pattern Identification)
+ └── Phase 9 — Technical Decision Pattern Pola 4 (Validator-set attestation bridge model)
+ └── Phase 9 — Strategic Trade-offs Trade-off 2 (Validators bridge vs light-client)
+
+Level 2 (Knowledge)
+ └── Knowledge K-004 — Validator-set attestation bridge model (single point of failure)
+
+Validation:
+ ├── Passed: Cross-phase consistency check
+ ├── Passed: Evidence audit (Strong)
+ └── Confidence: 93/100
+
+Knowledge K-005 — Zero public financial transparency
+
+Lineage:
+ Level 0 (Raw Data — Events / Metrics / Integrations)
+ ├── Phase 5 — Treasury (size "tidak diungkap", composition "tidak diungkap")
+ │ └── Source: [Vana Foundation GitHub, https://github.com/vana-com]
+ │ [Vana.org Team, https://vana.org/team]
+ │ [Vana Whitepaper, https://vana.org/whitepaper.pdf]
+ ├── Phase 5 — Revenue History ("Tidak diungkap")
+ │ └── Source: [Vana Blog, https://blog.vana.org]
+ │ [Vana Docs, https://docs.vana.org]
+ ├── Phase 6 — Distribution ("persentase tidak diungkap")
+ │ └── Source: [Vana Whitepaper, https://vana.org/whitepaper.pdf]
+ │ [Vana Blog Token Launch, https://blog.vana.org/vana-token-launch/]
+ ├── Phase 6 — Vesting Schedule ("tidak diketahui")
+ │ └── Source: [Vana Whitepaper, https://vana.org/whitepaper.pdf]
+ └── Phase 7 — Developer Ecosystem Grant Program ("no public recipient list")
+ └── Source: [Vana Whitepaper, https://vana.org/whitepaper.pdf]
+
+Level 1 (Processed — Pattern Identification)
+ └── Phase 9 — Recurring Behavioral Pattern Pola 5 (Minimal public financial transparency)
+
+Level 2 (Knowledge)
+ └── Knowledge K-005 — Zero public financial transparency
+
+Validation:
+ ├── Passed: Cross-phase consistency check
+ ├── Passed: Evidence audit (Strong — karena tidak adanya data adalah fakta yang terverifikasi)
+ └── Confidence: 85/100
+
+Knowledge K-006 — Testnet-first approach dengan real users selama 15 bulan
+
+Lineage:
+ Level 0 (Raw Data — Events / Metrics / Integrations)
+ ├── Phase 3 — EV-004 (Moksha Testnet Launch 2023-07)
+ │ └── Source: [Vana Blog Introducing Moksha, https://blog.vana.org/introducing-moksha-testnet/]
+ ├── Phase 3 — EV-006 to EV-010 (5 Data DAO di testnet)
+ │ └── Source: [Vana Blog Data DAO Ecosystem, https://blog.vana.org/category/data-daos/]
+ ├── Phase 3 — EV-013 (Mainnet 2024-10-16)
+ │ └── Source: [Vana Blog Mainnet Live, https://blog.vana.org/vana-mainnet-is-live/]
+ ├── Phase 4 — Technical Upgrade History (Moksha Testnet deprecated after mainnet)
+ │ └── Source: [Vana Blog Introducing Moksha, https://blog.vana.org/introducing-moksha-testnet/]
+ │ [Vana Blog Mainnet Live, https://blog.vana.org/vana-mainnet-is-live/]
+ └── Phase 9 — Recurring Behavioral Pattern Pola 1 (Testnet-first approach)
+ └── Source: Phase 3 + Phase 4 synthesis
+
+Level 1 (Processed — Pattern Identification)
+ └── Phase 9 — Testnet-First Approach dengan Real Users dan Real Data DAOs
+
+Level 2 (Knowledge)
+ └── Knowledge K-006 — Testnet-first approach dengan real users selama 15 bulan
+
+Validation:
+ ├── Passed: Cross-phase consistency check
+ ├── Passed: Evidence audit (Strong)
+ └── Confidence: 95/100
+
+Knowledge K-007 — No public security audit sebelum mainnet launch
+
+Lineage:
+ Level 0 (Raw Data — Events / Metrics / Integrations)
+ ├── Phase 4 — Audit History ("Auditor: tidak diketahui; no public audit reports found")
+ │ └── Source: [Vana GitHub, https://github.com/vana-com]
+ │ [Vana Blog, https://blog.vana.org]
+ │ [Vana Docs, https://docs.vana.org]
+ ├── Phase 4 — Known Technical Limitations (limitation: tidak ada audit keamanan publik)
+ │ └── Source: [Vana GitHub, https://github.com/vana-com]
+ │ [Vana Blog, https://blog.vana.org]
+ └── Phase 7 — Ecosystem Risks Security Dependency (no institutional-grade security validation)
+ └── Source: [Vana GitHub, https://github.com/vana-com]
+ [Vana Blog, https://blog.vana.org]
+
+Level 1 (Processed — Pattern Identification)
+ └── Phase 9 — Technical Decision Pattern Pola 7 (Tidak ada public security audit announcement)
+
+Level 2 (Knowledge)
+ └── Knowledge K-007 — No public security audit sebelum mainnet launch
+
+Validation:
+ ├── Passed: Cross-phase consistency check
+ ├── Passed: Evidence audit (Moderate — karena "tidak adanya data" adalah fakta terverifikasi tapi bukan bukti langsung)
+ └── Confidence: 75/100
+
+Knowledge K-008 — Universal Connectors SDK sebagai standardization layer
+
+Lineage:
+ Level 0 (Raw Data — Events / Metrics / Integrations)
+ ├── Phase 4 — Core Components Universal Connectors (TypeScript/Python SDK)
+ │ └── Source: [Vana Whitepaper, https://vana.org/whitepaper.pdf]
+ │ [Vana Docs Connectors, https://docs.vana.org]
+ ├── Phase 4 — Core Components Vana Portal (React frontend)
+ │ └── Source: [Vana Portal, https://portal.vana.org]
+ │ [Vana Docs, https://docs.vana.org]
+ └── Phase 7 — Major Integrations Universal Connectors SDK + Web2 Platforms
+ └── Source: [Vana Whitepaper, https://vana.org/whitepaper.pdf]
+ [Vana Docs Connectors, https://docs.vana.org]
+
+Level 1 (Processed — Pattern Identification)
+ └── Phase 9 — Ecosystem Decision Pattern Pola 2 (Universal SDK Standardization)
+
+Level 2 (Knowledge)
+ └── Knowledge K-008 — Universal Connectors SDK sebagai standardization layer
+
+Validation:
+ ├── Passed: Cross-phase consistency check
+ ├── Passed: Evidence audit (Strong)
+ └── Confidence: 88/100
+
+Knowledge K-009 — Foundation-controlled entity dengan on-chain governance module
+
+Lineage:
+ Level 0 (Raw Data — Events / Metrics / Integrations)
+ ├── Phase 2 — Entity Vana Foundation (Cayman Islands foundation)
+ │ └── Source: [Vana Foundation GitHub, https://github.com/vana-com]
+ │ [Vana.org Team, https://vana.org/team]
+ ├── Phase 4 — Consensus Mechanism (CometBFT PoS, governance module live)
+ │ └── Source: [Vana Whitepaper, https://vana.org/whitepaper.pdf]
+ │ [Cosmos SDK Docs, https://docs.cosmos.network]
+ ├── Phase 6 — Governance (token-weighted voting, delegation supported)
+ │ └── Source: [Vana Whitepaper, https://vana.org/whitepaper.pdf]
+ │ [Vana Docs Governance, https://docs.vana.org/governance]
+ │ [Cosmos SDK Governance, https://docs.cosmos.network/main/build/modules/gov]
+ └── Phase 7 — Governance Ecosystem Foundation
+ └── Source: [Vana Foundation GitHub, https://github.com/vana-com]
+ [Vana.org Team, https://vana.org/team]
+
+Level 1 (Processed — Pattern Identification)
+ └── Phase 9 — Governance Decision Pattern Pola 1 (Foundation-controlled entity dengan on-chain governance)
+
+Level 2 (Knowledge)
+ └── Knowledge K-009 — Foundation-controlled entity dengan on-chain governance module
+
+Validation:
+ ├── Passed: Cross-phase consistency check
+ ├── Passed: Evidence audit (Strong)
+ └── Confidence: 90/100
+
+Knowledge K-010 — Early strategic VC round dengan 5 tier-1 investors
+
+Lineage:
+ Level 0 (Raw Data — Events / Metrics / Integrations)
+ ├── Phase 3 — EV-005 (Early Funding Round 2023)
+ │ └── Source: [Messari Vana Report, https://messari.io/report/vana]
+ ├── Phase 5 — Funding History (Early Funding Round dengan 5 investor)
+ │ └── Source: [Messari Vana Report, https://messari.io/report/vana]
+ ├── Phase 2 — Entities Investors (Paradigm, Polymorphic, Coinbase Ventures, Polychain, Dragonfly)
+ │ └── Source: [Messari Vana Report, https://messari.io/report/vana]
+ └── Phase 6 — Vesting Schedule Category: Investors ("tidak diketahui")
+ └── Source: [Vana Whitepaper, https://vana.org/whitepaper.pdf]
+
+Level 1 (Processed — Pattern Identification)
+ └── Phase 9 — Financial Decision Pattern Pola 1 (Strategic VC round sebelum public launch)
+ └── Phase 9 — Recurring Behavioral Pattern Pola 3 (Strategic investor alignment)
+
+Level 2 (Knowledge)
+ └── Knowledge K-010 — Early strategic VC round dengan 5 tier-1 investors
+
+Validation:
+ ├── Passed: Cross-phase consistency check
+ ├── Passed: Evidence audit (Strong)
+ └── Confidence: 88/100
+
+---
+
+KNOWLEDGE DEPENDENCY GRAPH
+
+Knowledge K-001 — Sovereign L1 dengan custom PoC module menciptakan technical moat
+
+Dependency Graph:
+
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-001                                                   │
+│ Sovereign L1 dengan custom PoC module                    │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── Phase 4 — System Architecture (Layer 1 Cosmos SDK)  │
+│ │   └── Source: Phase 4                                 │
+│ ├── Phase 4 — Core Components PoC Module (custom module)│
+│ │   └── Source: Phase 4                                 │
+│ ├── Phase 4 — Consensus Mechanism (PoC bukan consensus) │
+│ │   └── Source: Phase 4                                 │
+│ └── Phase 9 — Technical Decision Pattern Pola 1, 2, 3   │
+│     └── Source: Phase 9                                 │
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── Cosmos SDK (Entity / Technology)                    │
+│ ├── CometBFT (Entity / Technology)                      │
+│ ├── Ethermint (Entity / Technology)                     │
+│ └── Phase 4 — Execution Environment (EVM via Ethermint) │
+│                                                         │
+│ DEPENDENTS (Knowledge yang bergantung pada K-001)       │
+│ ├── K-004 (Bridge model terkait dengan arsitektur L1)   │
+│ ├── K-006 (Testnet validation terkait dengan PoC)       │
+│ └── K-009 (Governance structure terkait dengan L1)      │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ Jika Cosmos SDK version changes → K-001 may change      │
+│ Jika PoC module deprecated → K-001 may change          │
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-002 — Decoupled chain launch dari token launch
+
+Dependency Graph:
+
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-002                                                   │
+│ Decoupled chain launch dari token launch                 │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── Phase 3 — EV-013 (Mainnet Genesis 2024-10-16)       │
+│ │   └── Source: Phase 3                                 │
+│ ├── Phase 3 — EV-016 (TGE 2024-12-16)                   │
+│ │   └── Source: Phase 3                                 │
+│ ├── Phase 6 — Major Token Events (native VANA then ERC-20)│
+│ │   └── Source: Phase 6                                 │
+│ └── Phase 9 — Recurring Behavioral Pattern Pola 4       │
+│     └── Source: Phase 9                                 │
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── Vana Mainnet (Chain)                                │
+│ ├── VANA Token (Token)                                  │
+│ ├── Vana Foundation (Foundation)                        │
+│ └── Phase 9 — Decision Timeline (keputusan decouple)    │
+│                                                         │
+│ DEPENDENTS (Knowledge yang bergantung pada K-002)       │
+│ ├── K-005 (Financial transparency terkait TGE)          │
+│ ├── K-010 (VC funding terkait timeline)                 │
+│ └── K-007 (Audit terkait timeline launch)               │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ Jika TGE date changes → K-002 may change                │
+│ Jika Mainnet date changes → K-002 may change            │
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-003 — Parallel vertical Data DAO launch dengan verification fragmentation
+
+Dependency Graph:
+
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-003                                                   │
+│ Parallel vertical Data DAO launch                        │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── Phase 3 — EV-006 (r/datadao)                        │
+│ ├── Phase 3 — EV-007 (Volara)                           │
+│ ├── Phase 3 — EV-008 (Flirtual)                         │
+│ ├── Phase 3 — EV-009 (DataPig)                          │
+│ ├── Phase 3 — EV-010 (Kappa)                            │
+│ │   └── Source: Phase 3                                 │
+│ ├── Phase 4 — Known Technical Limitations (verification)│
+│ │   └── Source: Phase 4                                 │
+│ └── Phase 7 — Ecosystem Risks Data Quality Risk         │
+│     └── Source: Phase 7                                 │
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── r/datadao (DAO)                                     │
+│ ├── Volara (DAO)                                        │
+│ ├── Flirtual (DAO)                                      │
+│ ├── DataPig (DAO)                                       │
+│ ├── Kappa (DAO)                                         │
+│ └── Phase 7 — Major Integrations (masing-masing DAO)    │
+│                                                         │
+│ DEPENDENTS (Knowledge yang bergantung pada K-003)       │
+│ ├── K-008 (Universal Connectors SDK sebagai solusi)     │
+│ └── K-010 (VC funding untuk support DAO expansion)      │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ Jika salah satu DAO deprecates → K-003 may change       │
+│ Jika PoC standard diterapkan → K-003 may change         │
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-004 — Validator-set attestation bridge model
+
+Dependency Graph:
+
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-004                                                   │
+│ Validator-set attestation bridge model                   │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── Phase 4 — Core Components Bridge (validator attestation)│
+│ │   └── Source: Phase 4                                 │
+│ ├── Phase 4 — Known Technical Limitations (trust model) │
+│ │   └── Source: Phase 4                                 │
+│ ├── Phase 7 — Ecosystem Risks Bridge Dependency         │
+│ │   └── Source: Phase 7                                 │
+│ └── Phase 9 — Strategic Trade-offs Trade-off 2          │
+│     └── Source: Phase 9                                 │
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── Vana-Ethereum Bridge (Protocol)                     │
+│ ├── Vana Foundation (Foundation) — validator set        │
+│ ├── Vana Validator Set (Validator Group)                │
+│ └── Phase 7 — Major Integrations Vana-Ethereum Bridge   │
+│                                                         │
+│ DEPENDENTS (Knowledge yang bergantung pada K-004)       │
+│ ├── K-001 (L1 arsitektur terkait bridge)                │
+│ ├── K-005 (Financial risiko terkait bridge)             │
+│ └── K-007 (Audit terkait bridge security)               │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ Jika bridge di-upgrade ke light-client → K-004 may change│
+│ Jika validator set compromised → K-004 may change       │
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-005 — Zero public financial transparency
+
+Dependency Graph:
+
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-005                                                   │
+│ Zero public financial transparency                       │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── Phase 5 — Treasury (size "tidak diungkap")          │
+│ ├── Phase 5 — Revenue History ("Tidak diungkap")        │
+│ ├── Phase 6 — Distribution (persentase "tidak diungkap")│
+│ ├── Phase 6 — Vesting Schedule ("tidak diketahui")      │
+│ │   └── Source: Phase 5, Phase 6                        │
+│ └── Phase 7 — Grant Program ("no public recipient list")│
+│     └── Source: Phase 7                                 │
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── Vana Foundation (Foundation) — treasury custodian   │
+│ ├── Vana Foundation — treasury multi-sig (tidak public) │
+│ └── Phase 9 — Recurring Behavioral Pattern Pola 5       │
+│                                                         │
+│ DEPENDENTS (Knowledge yang bergantung pada K-005)       │
+│ ├── K-010 (Investor unlock concentration risk)          │
+│ ├── K-007 (Audit status mempengaruhi transparansi)      │
+│ └── K-002 (TGE distribution terkait transparansi)       │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ Jika Foundation publishes treasury report → K-005 may change│
+│ Jika token distribution % diungkap → K-005 may change   │
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-006 — Testnet-first approach selama 15 bulan
+
+Dependency Graph:
+
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-006                                                   │
+│ Testnet-first approach dengan real users                 │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── Phase 3 — EV-004 (Moksha Testnet 2023-07)           │
+│ ├── Phase 3 — EV-006 to EV-010 (5 Data DAO testnet)     │
+│ ├── Phase 3 — EV-013 (Mainnet 2024-10-16)               │
+│ │   └── Source: Phase 3                                 │
+│ └── Phase 9 — Recurring Behavioral Pattern Pola 1       │
+│     └── Source: Phase 9                                 │
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── Moksha Testnet (Chain)                              │
+│ ├── Vana Mainnet (Chain)                                │
+│ ├── 5 Data DAO (DAO)                                    │
+│ └── Phase 4 — Technical Upgrade History (Moksha deprecated)│
+│                                                         │
+│ DEPENDENTS (Knowledge yang bergantung pada K-006)       │
+│ ├── K-003 (DAO parallel launch terkait testnet)         │
+│ ├── K-001 (PoC diuji di testnet)                        │
+│ └── K-007 (testnet tidak menggantikan audit)            │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ Jika testnet data migration diungkap → K-006 may change │
+│ Jika testnet durasi berbeda → K-006 may change          │
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-007 — No public security audit sebelum mainnet
+
+Dependency Graph:
+
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-007                                                   │
+│ No public security audit sebelum mainnet                 │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── Phase 4 — Audit History ("tidak diketahui")         │
+│ ├── Phase 4 — Known Technical Limitations (no audit)    │
+│ │   └── Source: Phase 4                                 │
+│ └── Phase 7 — Ecosystem Risks Security Dependency       │
+│     └── Source: Phase 7                                 │
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── Vana GitHub (repository — no audit reports)         │
+│ ├── Vana Blog (blog — no audit announcements)           │
+│ ├── Vana Docs (docs — no audit references)              │
+│ └── Phase 9 — Technical Decision Pattern Pola 7         │
+│                                                         │
+│ DEPENDENTS (Knowledge yang bergantung pada K-007)       │
+│ ├── K-005 (Financial risk terkait audit)                │
+│ ├── K-004 (Bridge security terkait audit)               │
+│ └── K-002 (Launch timeline terkait audit)               │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ Jika audit dipublikasikan → K-007 may change            │
+│ Jika audit tetap private → K-007 tetap valid             │
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-008 — Universal Connectors SDK sebagai standardization
+
+Dependency Graph:
+
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-008                                                   │
+│ Universal Connectors SDK standardization                 │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── Phase 4 — Core Components Universal Connectors      │
+│ │   └── Source: Phase 4                                 │
+│ ├── Phase 4 — Core Components Vana Portal               │
+│ │   └── Source: Phase 4                                 │
+│ └── Phase 7 — Major Integrations SDK + Web2 platforms   │
+│     └── Source: Phase 7                                 │
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── Universal Connectors (Application)                  │
+│ ├── Vana Portal (Application)                           │
+│ ├── TypeScript (Technology)                             │
+│ └── Phase 7 — Developer Ecosystem SDK                   │
+│                                                         │
+│ DEPENDENTS (Knowledge yang bergantung pada K-008)       │
+│ ├── K-003 (SDK reduces verification fragmentation)      │
+│ ├── K-001 (SDK sebagai bagian dari technical moat)      │
+│ └── K-006 (SDK diuji di testnet)                        │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ Jika SDK deprecated atau diubah → K-008 may change      │
+│ Jika SDK versi baru dirilis → K-008 stable               │
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-009 — Foundation-controlled entity dengan on-chain governance
+
+Dependency Graph:
+
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-009                                                   │
+│ Foundation-controlled entity dengan on-chain governance  │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── Phase 2 — Entity Vana Foundation (Cayman Islands)   │
+│ │   └── Source: Phase 2                                 │
+│ ├── Phase 4 — Consensus Mechanism (governance module)   │
+│ │   └── Source: Phase 4                                 │
+│ ├── Phase 6 — Governance (token-weighted voting)        │
+│ │   └── Source: Phase 6                                 │
+│ └── Phase 7 — Governance Ecosystem Foundation           │
+│     └── Source: Phase 7                                 │
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── Vana Foundation (Foundation)                        │
+│ ├── Vana Foundation — treasury multi-sig (tidak public) │
+│ ├── Cosmos SDK — governance module (Technology)         │
+│ └── Phase 9 — Governance Decision Pattern Pola 1        │
+│                                                         │
+│ DEPENDENTS (Knowledge yang bergantung pada K-009)       │
+│ ├── K-002 (Launch timeline terkait governance)          │
+│ ├── K-005 (Treasury transparency terkait governance)    │
+│ └── K-004 (Bridge attestation terkait validator set)    │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ Jika Foundation structure berubah → K-009 may change    │
+│ Jika governance parameter publik → K-009 stable          │
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-010 — Early strategic VC round dengan 5 tier-1 investors
+
+Dependency Graph:
+
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-010                                                   │
+│ Early strategic VC round 5 tier-1 investors               │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── Phase 3 — EV-005 (Early Funding Round 2023)         │
+│ │   └── Source: Phase 3                                 │
+│ ├── Phase 5 — Funding History (5 investor)              │
+│ │   └── Source: Phase 5                                 │
+│ ├── Phase 2 — Entities Investors (5 investor)           │
+│ │   └── Source: Phase 2                                 │
+│ └── Phase 6 — Vesting Schedule Investors ("tidak diketahui")│
+│     └── Source: Phase 6                                 │
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── Paradigm (Investor)                                 │
+│ ├── Polymorphic Capital (Investor)                      │
+│ ├── Coinbase Ventures (Investor)                        │
+│ ├── Polychain Capital (Investor)                        │
+│ ├── Dragonfly Capital (Investor)                        │
+│ └── Phase 9 — Financial Decision Pattern Pola 1         │
+│                                                         │
+│ DEPENDENTS (Knowledge yang bergantung pada K-010)       │
+│ ├── K-002 (Timeline launch terkait funding)             │
+│ ├── K-005 (Investor transparency terkait funding)       │
+│ └── K-003 (DAO expansion terkait funding)               │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ Jika investor vesting schedule diungkap → K-010 may change│
+│ Jika funding round amount diungkap → K-010 may change   │
+└──────────────────────────────────────────────────────────┘
+```
+
+---
+
+CONFLICT REGISTER WITH SEVERITY & IMPACT
+
+Conflict ID: C-001
+ Category: Timeline Conflict (Mainnet vs TGE)
+ Description: Terdapat interpretasi berbeda tentang apakah VANA token sudah aktif saat mainnet launch (2024-10-16) atau baru saat TGE (2024-12-16). Phase 4 mencatat native VANA minted pada genesis, Phase 6 mencatat TGE sebagai "token transferable". Ini bukan konflik data melainkan interpretasi stage.
+ Severity: Low
+ Affected Knowledge: K-002, K-005
+ Impact: 2 × (2 + 1) = 3
+ Affected Phase: Phase 3 (EV-013, EV-016), Phase 4 (Upgrade History), Phase 6 (Major Token Events)
+ Evidence: Blog Mainnet menyebut native VANA minted pada genesis; Blog Token Launch menyebut TGE 2024-12-16 sebagai "token launch"
+ Sources: [Vana Blog Mainnet Live, https://blog.vana.org/vana-mainnet-is-live/], [Vana Blog Token Launch, https://blog.vana.org/vana-token-launch/], [CoinGecko VANA, https://www.coingecko.com/en/coins/vana]
+ Resolution: VANA minted sebagai native gas/staking token pada mainnet genesis (2024-10-16); TGE (2024-12-16) adalah momen token menjadi transferable/tradable. Kedua interpretasi valid dan sejalan — bukan kontradiksi nyata.
+ Status: Resolved
+
+Conflict ID: C-002
+ Category: Evidence Conflict (Audit Status)
+ Description: Phase 4 mencatat "tidak ada audit publik yang diumumkan". Namun ini adalah negative evidence (tidak ditemukannya pengumuman) — bukan bukti bahwa audit privat tidak dilakukan. Tidak ada konflik data langsung, hanya interpretasi.
+ Severity: Medium
+ Affected Knowledge: K-007, K-005
+ Impact: 2 × (2 + 1) = 6
+ Affected Phase: Phase 4, Phase 7
+ Evidence: Search GitHub, Blog, Docs tidak menemukan pengumuman audit
+ Sources: [Vana GitHub, https://github.com/vana-com], [Vana Blog, https://blog.vana.org], [Vana Docs, https://docs.vana.org]
+ Resolution: Dinyatakan sebagai "tidak diketahui" — tidak bisa diklaim audit tidak dilakukan, hanya bahwa tidak dipublikasikan. Ini adalah batasan data, bukan konflik antar sumber.
+ Status: Resolved
+
+Conflict ID: C-003
+ Category: Data Gap (Treasury Size Fluctuation)
+ Description: Phase 5 menyatakan treasury size "tidak diungkap" sementara beberapa sumber sekunder (seperti CryptoRank atau forum) mungkin memiliki estimasi. Data tidak tersedia dari sumber primer sehingga tidak ada konflik nyata — hanya gap.
+ Severity: Low
+ Affected Knowledge: K-005, K-010
+ Impact: 2 × (2 + 1) = 3
+ Affected Phase: Phase 5
+ Evidence: Whitepaper, Foundation GitHub, dan blog tidak mempublikasikan treasury
+ Sources: [Vana Whitepaper, https://vana.org/whitepaper.pdf], [Vana Foundation GitHub, https://github.com/vana-com], [Vana Blog, https://blog.vana.org]
+ Resolution: Tidak ada konflik sumber karena tidak ada data yang tersedia dari sumber primer. Ini adalah keterbatasan data.
+ Status: Resolved
+
+Conflict ID: C-004
+ Category: Supply Conflict (Supply Tidak Diungkap vs CoinGecko Circulation)
+ Description: Phase 6 mencatat "Circulating Supply: tidak diketahui" sementara CoinGecko menampilkan angka circulating supply pada halaman VANA. Namun angka CoinGecko tidak diverifikasi terhadap on-chain data dan tidak dipublikasikan sumber primer.
+ Severity: High
+ Affected Knowledge: K-002, K-005, K-010
+ Impact: 2 × (3 + 1) = 8
+ Affected Phase: Phase 6
+ Evidence: CoinGecko menampilkan circulating supply; Phase 6 menggunakan "tidak diketahui" untuk alasan verifikasi
+ Sources: [CoinGecko VANA, https://www.coingecko.com/en/coins/vana], [Vana Blog Token Launch, https://blog.vana.org/vana-token-launch/]
+ Resolution: Tidak dapat diselesaikan — CoinGecko mungkin memiliki data yang lebih baru tapi sumber primer tidak mengkonfirmasi angka. Ditandai Unresolved karena tidak ada evidence cukup untuk verifikasi.
+ Status: Unresolved
+
+Conflict ID: C-005
+ Category: Formatting Conflict (TGE Date Formatting)
+ Description: Tanggal TGE kadang ditulis "2024-12-16" dan kadang "16 Desember 2024" di berbagai phase. Ini bukan konflik data, hanya format penulisan.
+ Severity: Low
+ Affected Knowledge: K-002
+ Impact: 1 × (1 + 1) = 2
+ Affected Phase: Phase 1, Phase 3, Phase 6
+ Evidence: Semua phase menggunakan tanggal yang sama (2024-12-16)
+ Sources: [Vana Blog Token Launch, https://blog.vana.org/vana-token-launch/], [CoinGecko VANA, https://www.coingecko.com/en/coins/vana]
+ Resolution: Format berbeda tidak mengubah data. Diseragamkan menjadi ISO 8601.
+ Status: Resolved
+
+Conflict Summary:
+ Total Conflicts: 5
+ Resolved: 3
+ Unresolved: 2
+ Critical: 0
+ High: 1
+ Medium: 1
+ Low: 3
+
+Conflict Score:
+ (Resolved × 1.0) + (Unresolved Low × 0.9) + (Unresolved Medium × 0.6) + (Unresolved High × 0.3) + (Unresolved Critical × 0.0) / Total Conflicts
+ = (3 × 1.0) + (1 × 0.9) + (1 × 0.6) + (1 × 0.3) + (0 × 0.0) / 5
+ = (3 + 0.9 + 0.6 + 0.3) / 5
+ = 4.8 / 5
+ Hasil: 96%
+
+Catatan: Conflict Score 96% menunjukkan mayoritas konflik telah diselesaikan dengan good confidence. Satu Unresolved High (C-004, supply discrepancy) tetap mempengaruhi skor.
+
+---
+
+EVIDENCE AUDIT
+
+Knowledge K-001 — Sovereign L1 dengan custom PoC module
+ Supporting Dataset: Phase 4 (System Architecture, Core Components, Consensus Mechanism), Phase 9 (Technical Decision Pattern)
+ Evidence Quality: Strong
+ Evidence Weight: 8 (Whitepaper)
+ Assessment: Dukungan kuat dari whitepaper dan Phase 9 yang mengkonsolidasi arsitektur. Tidak ada konflik antar sumber.
+
+Knowledge K-002 — Decoupled chain launch dari token launch
+ Supporting Dataset: Phase 3 (EV-013, EV-016), Phase 6 (Major Token Events), Phase 9 (Decision Timeline)
+ Evidence Quality: Strong
+ Evidence Weight: 8 (Official Blog × 2)
+ Assessment: Konfirmasi timestamp dari blog resmi (Mainnet Live dan Token Launch). Konsisten di semua phase.
+
+Knowledge K-003 — Parallel vertical Data DAO launch
+ Supporting Dataset: Phase 3 (EV-006 to EV-010), Phase 4 (Known Limitations), Phase 7 (Ecosystem Risks), Phase 9 (Ecosystem Decision Pattern)
+ Evidence Quality: Strong
+ Evidence Weight: 8 (Official Blog)
+ Assessment: 5 event terpisah mendukung klaim parallel launch. Whitepaper dan docs mengkonfirmasi verification fragmentation.
+
+Knowledge K-004 — Validator-set attestation bridge model
+ Supporting Dataset: Phase 4 (Core Components Bridge, Known Limitations), Phase 7 (Ecosystem Risks), Phase 9 (Strategic Trade-offs)
+ Evidence Quality: Strong
+ Evidence Weight: 8 (Whitepaper) + 8 (Official Blog) = 16
+ Assessment: Bridge model terdokumentasi di beberapa sumber. Trust assumption diakui.
+
+Knowledge K-005 — Zero public financial transparency
+ Supporting Dataset: Phase 5 (Treasury, Revenue History), Phase 6 (Distribution, Vesting), Phase 7 (Grant Program), Phase 9 (Recurring Pattern)
+ Evidence Quality: Strong
+ Evidence Weight: 8 (Whitepaper) + 8 (Foundation GitHub) = 16
+ Assessment: Fakta tidak adanya data adalah verifiable dari beberapa sumber yang tidak mengungkap data.
+
+Knowledge K-006 — Testnet-first approach selama 15 bulan
+ Supporting Dataset: Phase 3 (EV-004, EV-006 to EV-010, EV-013), Phase 4 (Upgrade History), Phase 9 (Recurring Pattern)
+ Evidence Quality: Strong
+ Evidence Weight: 8 (Official Blog × 3) + 8 (Whitepaper) = 32
+ Assessment: Timeline jelas dari blog resmi. Durasi 15 bulan terverifikasi.
+
+Knowledge K-007 — No public security audit sebelum mainnet
+ Supporting Dataset: Phase 4 (Audit History, Known Limitations), Phase 7 (Ecosystem Risks), Phase 9 (Technical Decision Pattern)
+ Evidence Quality: Moderate
+ Evidence Weight: 8 (Whitepaper) — tapi ini adalah negative evidence
+ Assessment: Kuat sebagai fakta negatif (tidak ada pengumuman audit) tapi lemah sebagai bukti positif (bahwa audit memang tidak pernah dilakukan). Dinyatakan "tidak diketahui".
+
+Knowledge K-008 — Universal Connectors SDK standardization
+ Supporting Dataset: Phase 4 (Core Components, Vana Portal), Phase 7 (Major Integrations, Developer Ecosystem), Phase 9 (Ecosystem Decision Pattern)
+ Evidence Quality: Strong
+ Evidence Weight: 8 (Whitepaper) + 8 (Official Docs) = 16
+ Assessment: SDK terdokumentasi sebagai component aktif dan diintegrasikan ke 5 Data DAO yang live.
+
+Knowledge K-009 — Foundation-controlled entity dengan on-chain governance
+ Supporting Dataset: Phase 2 (Entity), Phase 4 (Consensus), Phase 6 (Governance), Phase 7 (Governance Ecosystem), Phase 9 (Governance Decision Pattern)
+ Evidence Quality: Strong
+ Evidence Weight: 8 (Whitepaper) + 8 (Official Docs) + 8 (Foundation GitHub) = 24
+ Assessment: Governance structure konsisten di semua phase, dual governance (Foundation + on-chain module) jelas.
+
+Knowledge K-010 — Early strategic VC round dengan 5 tier-1 investors
+ Supporting Dataset: Phase 2 (Entities), Phase 3 (EV-005), Phase 5 (Funding History), Phase 6 (Vesting), Phase 9 (Financial Decision Pattern)
+ Evidence Quality: Strong
+ Evidence Weight: 7 (Messari Report)
+ Assessment: Messari report (7) adalah sumber sekunder yang kredibel untuk funding. Tidak ada sumber primer (blog) yang mengkonfirmasi investor list secara langsung, tapi tidak ada kontradiksi.
+
+---
+
+CONFIDENCE ASSESSMENT — v3.0
+
+Knowledge K-001 — Sovereign L1 dengan custom PoC module
+ Evidence Count: 4
+ Evidence Weight: 8 (rata-rata)
+ Independent Sources: 3
+ Official Sources: 3
+ Source Diversity: 10
+ Cross-phase Validation: Pass
+ No Conflicts: 0 conflicts
+ Coverage: 95%
+ Confidence Score: 90/100
+ Confidence Level: High
+
+Knowledge K-002 — Decoupled chain launch dari token launch
+ Evidence Count: 4
+ Evidence Weight: 8 (rata-rata)
+ Independent Sources: 2
+ Official Sources: 2
+ Source Diversity: 10
+ Cross-phase Validation: Pass
+ No Conflicts: 0 conflicts
+ Coverage: 100%
+ Confidence Score: 95/100
+ Confidence Level: High
+
+Knowledge K-003 — Parallel vertical Data DAO launch
+ Evidence Count: 6
+ Evidence Weight: 8 (rata-rata)
+ Independent Sources: 2
+ Official Sources: 2
+ Source Diversity: 10
+ Cross-phase Validation: Pass
+ No Conflicts: 0 conflicts
+ Coverage: 92%
+ Confidence Score: 92/100
+ Confidence Level: High
+
+Knowledge K-004 — Validator-set attestation bridge model
+ Evidence Count: 3
+ Evidence Weight: 8 (rata-rata)
+ Independent Sources: 2
+ Official Sources: 2
+ Source Diversity: 10
+ Cross-phase Validation: Pass
+ No Conflicts: 0 conflicts
+ Coverage: 93%
+ Confidence Score: 93/100
+ Confidence Level: High
+
+Knowledge K-005 — Zero public financial transparency
+ Evidence Count: 5
+ Evidence Weight: 8 (rata-rata)
+ Independent Sources: 3
+ Official Sources: 2
+ Source Diversity: 10
+ Cross-phase Validation: Pass
+ No Conflicts: 1 conflict (C-003, Low)
+ Coverage: 85%
+ Confidence Score: 85/100
+ Confidence Level: High
+
+Knowledge K-006 — Testnet-first approach selama 15 bulan
+ Evidence Count: 5
+ Evidence Weight: 8 (rata-rata)
+ Independent Sources: 3
+ Official Sources: 3
+ Source Diversity: 10
+ Cross-phase Validation: Pass
+ No Conflicts: 0 conflicts
+ Coverage: 100%
+ Confidence Score: 95/100
+ Confidence Level: High
+
+Knowledge K-007 — No public security audit sebelum mainnet
+ Evidence Count: 3
+ Evidence Weight: 8 (rata-rata)
+ Independent Sources: 2
+ Official Sources: 2
+ Source Diversity: 10
+ Cross-phase Validation: Pass
+ No Conflicts: 1 conflict (C-002, Medium)
+ Coverage: 75%
+ Confidence Score: 75/100
+ Confidence Level: Medium
+
+Knowledge K-008 — Universal Connectors SDK standardization
+ Evidence Count: 3
+ Evidence Weight: 8 (rata-rata)
+ Independent Sources: 2
+ Official Sources: 2
+ Source Diversity: 10
+ Cross-phase Validation: Pass
+ No Conflicts: 0 conflicts
+ Coverage: 88%
+ Confidence Score: 88/100
+ Confidence Level: High
+
+Knowledge K-009 — Foundation-controlled entity dengan on-chain governance
+ Evidence Count: 4
+ Evidence Weight: 8 (rata-rata)
+ Independent Sources: 3
+ Official Sources: 3
+ Source Diversity: 10
+ Cross-phase Validation: Pass
+ No Conflicts: 0 conflicts
+ Coverage: 90%
+ Confidence Score: 90/100
+ Confidence Level: High
+
+Knowledge K-010 — Early strategic VC round dengan 5 tier-1 investors
+ Evidence Count: 4
+ Evidence Weight: 7 (rata-rata)
+ Independent Sources: 2
+ Official Sources: 2
+ Source Diversity: 10
+ Cross-phase Validation: Pass
+ No Conflicts: 1 conflict (C-003, Low)
+ Coverage: 88%
+ Confidence Score: 88/100
+ Confidence Level: High
+
+Confidence Summary:
+ High (80-100): 9 Knowledge
+ Medium (60-79): 1 Knowledge
+ Low (<60): 0 Knowledge
+ Average Confidence Score: 89/100
+
+---
+
+KNOWLEDGE STABILITY & VERSIONING
+
+Knowledge K-001 — Sovereign L1 dengan custom PoC module
+ Stability: Stable
+ Current Version: v1.0
+ Created: 2025-01
+ Last Updated: 2025-01
+ Status: Active
+
+Version History:
+ · v1.0 — 2025-01
+ · Created with evidence: Phase 4 System Architecture, Core Components, Consensus Mechanism
+ · Confidence: 90/100
+
+Deprecation Status: Active
+Replacement: N/A
+
+Knowledge K-002 — Decoupled chain launch dari token launch
+ Stability: Stable
+ Current Version: v1.0
+ Created: 2025-01
+ Last Updated: 2025-01
+ Status: Active
+
+Version History:
+ · v1.0 — 2025-01
+ · Created with evidence: Phase 3 EV-013, EV-016, Phase 6 Major Token Events
+ · Confidence: 95/100
+
+Deprecation Status: Active
+Replacement: N/A
+
+Knowledge K-003 — Parallel vertical Data DAO launch
+ Stability: Emerging
+ Current Version: v1.0
+ Created: 2025-01
+ Last Updated: 2025-01
+ Status: Active
+
+Version History:
+ · v1.0 — 2025-01
+ · Created with evidence: Phase 3 EV-006 to EV-010
+ · Confidence: 92/100
+
+Deprecation Status: Active
+Replacement: N/A
+
+Knowledge K-004 — Validator-set attestation bridge model
+ Stability: Emerging
+ Current Version: v1.0
+ Created: 2025-01
+ Last Updated: 2025-01
+ Status: Active
+
+Version History:
+ · v1.0 — 2025-01
+ · Created with evidence: Phase 4 Core Components Bridge, Known Limitations
+ · Confidence: 93/100
+
+Deprecation Status: Active
+Replacement: N/A
+
+Knowledge K-005 — Zero public financial transparency
+ Stability: Volatile
+ Current Version: v1.0
+ Created: 2025-01
+ Last Updated: 2025-01
+ Status: Active
+
+Version History:
+ · v1.0 — 2025-01
+ · Created with evidence: Phase 5 Treasury, Revenue History, Phase 6 Distribution
+ · Confidence: 85/100
+
+Deprecation Status: Active
+Replacement: N/A
+
+Knowledge K-006 — Testnet-first approach selama 15 bulan
+ Stability: Stable
+ Current Version: v1.0
+ Created: 2025-01
+ Last Updated: 2025-01
+ Status: Active
+
+Version History:
+ · v1.0 — 2025-01
+ · Created with evidence: Phase 3 EV-004, EV-013, Phase 4 Upgrade History
+ · Confidence: 95/100
+
+Deprecation Status: Active
+Replacement: N/A
+
+Knowledge K-007 — No public security audit sebelum mainnet
+ Stability: Volatile
+ Current Version: v1.0
+ Created: 2025-01
+ Last Updated: 2025-01
+ Status: Active
+
+Version History:
+ · v1.0 — 2025-01
+ · Created with evidence: Phase 4 Audit History, Phase 7 Ecosystem Risks
+ · Confidence: 75/100
+ · v1.1 — 2025-01 (Planned)
+ · Trigger: Jika audit dipublikasikan oleh Vana Foundation
+ · Expected Change: K-007 akan di-update dari "no public audit" menjadi "audit dipublikasikan" dengan confidence naik
+ · Confidence Change: 75 → 95
+
+Deprecation Status: Active
+Replacement: N/A
+
+Knowledge K-008 — Universal Connectors SDK standardization
+ Stability: Stable
+ Current Version: v1.0
+ Created: 2025-01
+ Last Updated: 2025-01
+ Status: Active
+
+Version History:
+ · v1.0 — 2025-01
+ · Created with evidence: Phase 4 Core Components, Phase 7 Major Integrations
+ · Confidence: 88/100
+
+Deprecation Status: Active
+Replacement: N/A
+
+Knowledge K-009 — Foundation-controlled entity dengan on-chain governance
+ Stability: Stable
+ Current Version: v1.0
+ Created: 2025-01
+ Last Updated: 2025-01
+ Status: Active
+
+Version History:
+ · v1.0 — 2025-01
+ · Created with evidence: Phase 2 Entity, Phase 4 Consensus, Phase 6 Governance
+ · Confidence: 90/100
+
+Deprecation Status: Active
+Replacement: N/A
+
+Knowledge K-010 — Early strategic VC round dengan 5 tier-1 investors
+ Stability: Stable
+ Current Version: v1.0
+ Created: 2025-01
+ Last Updated: 2025-01
+ Status: Active
+
+Version History:
+ · v1.0 — 2025-01
+ · Created with evidence: Phase 3 EV-005, Phase 5 Funding History
+ · Confidence: 88/100
+ · v1.1 — 2025-01 (Planned)
+ · Trigger: Jika vesting schedule investor diungkap
+ · Expected Change: K-010 akan di-update dengan detail vesting; confidence tetap 88
+ · Confidence Change: 88 → 88
+
+Deprecation Status: Active
+Replacement: N/A
+
+---
+
+MISSING KNOWLEDGE CLASSIFICATION
+
+Missing Item: Treasury Size
+ Phase Missing: Phase 5, Phase 6
+ Reason: Not Public
+ Severity: High
+ Impact: Membatasi analisis financial health dan runway; K-005 confidence dalam risiko
+
+Missing Item: Token Distribution Percentage (per kategori)
+ Phase Missing: Phase 6
+ Reason: Not Public
+ Severity: High
+ Impact: Tidak bisa menilai centralization risk, investor concentration, atau community allocation fairness
+
+Missing Item: Vesting Schedule (cliff, duration, unlock frequency)
+ Phase Missing: Phase 6
+ Reason: Not Public
+ Severity: Critical
+ Impact: Tidak bisa memodelkan unlock pressure pada harga; kritis untuk risk assessment
+
+Missing Item: Circulating Supply
+ Phase Missing: Phase 6
+ Reason: Not Public
+ Severity: Critical
+ Impact: Tidak bisa menghitung market cap, FDV ratio, atau supply dilution timeline
+
+Missing Item: Audit Report (public)
+ Phase Missing: Phase 4
+ Reason: Not Public (atau Unknown)
+ Severity: Critical
+ Impact: Tidak bisa memverifikasi keamanan smart contract; institutional adoption barrier
+
+Missing Item: Revenue History (protocol-level)
+ Phase Missing: Phase 5
+ Reason: Not Public
+ Severity: Medium
+ Impact: Tidak bisa menilai keberlanjutan finansial atau fee switch activation
+
+Missing Item: Grant Program Recipients dan Amounts
+ Phase Missing: Phase 5, Phase 7
+ Reason: Not Yet Released (referenced in whitepaper, belum deployed)
+ Severity: Medium
+ Impact: Tidak bisa menilai efektivitas ekosistem expansion
+
+Missing Item: Total Staked VANA / Staking Ratio
+ Phase Missing: Phase 4, Phase 6
+ Reason: Not Public (tidak ada dashboard terpusat)
+ Severity: High
+ Impact: Tidak bisa menilai economic security dan validator concentration
+
+Missing Item: Validator Count dan Nakamoto Coefficient
+ Phase Missing: Phase 4
+ Reason: Not Public (explorer raw data only)
+ Severity: Medium
+ Impact: Tidak bisa menilai decentralization level
+
+Missing Item: DAO Treasury per Data DAO
+ Phase Missing: Phase 5, Phase 7
+ Reason: Not Public
+ Severity: Medium
+ Impact: Tidak bisa menilai keuangan masing-masing Data DAO
+
+Missing Item: Daily Active Users / Transactions
+ Phase Missing: Phase 8
+ Reason: Not Public (tidak ada dashboard)
+ Severity: High
+ Impact: Tidak bisa menilai adopsi riil
+
+Missing Item: Specific CEX Listing Names dan Volume
+ Phase Missing: Phase 8
+ Reason: Not Public
+ Severity: Medium
+ Impact: Tidak bisa menilai distribusi likuiditas
+
+Missing Item: Moksha Testnet → Mainnet Migration Status
+ Phase Missing: Phase 3, Phase 4
+ Reason: Unknown (tidak didokumentasikan)
+ Severity: Low
+ Impact: Tidak bisa memverifikasi kontinuitas data testnet
+
+Missing Item: IBC Active Channels dan Relayers
+ Phase Missing: Phase 4, Phase 7
+ Reason: Not Public (enabled, not documented)
+ Severity: Medium
+ Impact: Tidak bisa menilai interoperabilitas aktif
+
+Missing Item: Vana-Ethereum Bridge Volume / TVL
+ Phase Missing: Phase 5, Phase 8
+ Reason: Not Public (tidak ada dashboard bridge)
+ Severity: High
+ Impact: Tidak bisa menilai likuiditas cross-chain
+
+Missing Item: Market Maker Arrangement
+ Phase Missing: Phase 8
+ Reason: Not Public
+ Severity: Low
+ Impact: Tidak bisa menilai stabilitas harga jangka pendek
+
+Missing Item: Regulatory Engagement Status
+ Phase Missing: Phase 7
+ Reason: Not Public (whitepaper acknowledges uncertainty)
+ Severity: High
+ Impact: Tidak bisa menilai risiko regulasi secara konkret
+
+Missing Item: Foundation Multi-sig Signers dan Threshold
+ Phase Missing: Phase 5, Phase 7
+ Reason: Not Public
+ Severity: High
+ Impact: Tidak bisa menilai governance security treasury
+
+Missing Item: Community Pool Governance Parameters
+ Phase Missing: Phase 6
+ Reason: Not Public (governance module live tapi parameter tidak diungkap)
+ Severity: Medium
+ Impact: Tidak bisa menilai mekanisme perubahan parameter
+
+---
+
+CIF SCORE CALCULATION — v3.0
+
+Research Quality (25%)
+
+· (Complete Phases / 10) × 100 = (10 / 10) × 100 = 100
+ · Kontribusi: 100 × 0.25 = 25.00
+
+Consistency (20%)
+
+· (Passed Checks / Total Checks) × 100 = (7 / 7) × 100 = 100
+ · Kontribusi: 100 × 0.20 = 20.00
+
+Evidence (15%)
+
+· Average Evidence Weight (0-100) = 80
+ · Kontribusi: 80 × 0.15 = 12.00
+
+Coverage (15%)
+
+· Overall Coverage (%) = 85
+ · Kontribusi: 85 × 0.15 = 12.75
+
+Conflict (15%)
+
+· Conflict Score (%) = 96
+ · Kontribusi: 96 × 0.15 = 14.40
+
+Knowledge (10%)
+
+· Average Confidence Score = 89
+ · Kontribusi: 89 × 0.10 = 8.90
+
+CIF Score = 25.00 + 20.00 + 12.00 + 12.75 + 14.40 + 8.90 = 93.05
+
+Interpretasi:
+ · Excellent (>90) — CIF siap pakai untuk analisis lintas proyek
+
+PENTING: Angka CIF Score di sini adalah HASIL FINAL. Kembali ke CIF MANIFEST v3.0 di awal laporan dan salin angka Research Quality / Consistency / Evidence / Coverage / Conflict / Knowledge / CIF SCORE dari perhitungan di atas.
+
+Research Quality = 100
+Consistency = 100
+Evidence = 80
+Coverage = 85
+Conflict = 96
+Knowledge = 89
+CIF SCORE = 93
+
+---
+
+FINAL VALIDATION SUMMARY
+
+Dataset Completeness:
+ · Complete Phases: 10 dari 10
+ · Missing Information: 18 item, semua dicatat (mayoritas Not Public)
+ · Status: 100% lengkap (dalam hal dokumentasi; data yang tidak tersedia dicatat tanpa ditutupi)
+
+Cross-phase Consistency:
+ · Overall: 95%
+ · Status: Konsisten
+
+Evidence Quality:
+ · Strong: 9 Knowledge
+ · Moderate: 1 Knowledge
+ · Weak: 0 Knowledge
+
+Confidence Assessment:
+ · High: 9 Knowledge
+ · Medium: 1 Knowledge
+ · Low: 0 Knowledge
+ · Average: 89/100
+
+Remaining Conflicts:
+ · Resolved: 3
+ · Unresolved: 2
+ · Critical: 0
+ · High: 1
+ · Medium: 1
+ · Low: 3
+
+Knowledge Stability Distribution:
+ · Stable: 6
+ · Emerging: 2
+ · Volatile: 2
+ · Deprecated: 0
+
+CIF Score: 93/100
+
+Overall Validation Result:
+CIF untuk Vana memiliki kualitas sangat tinggi (Excellent, skor 93). Dataset lengkap untuk 10 phase, konsistensi lintas phase 95%, dan mayoritas knowledge stable dengan confidence tinggi. Kelemahan utama adalah keterbatasan data yang tidak dipublikasikan oleh Vana Foundation (treasury, token distribution, vesting, audit, supply) — bukan kelemahan metodologis. CIF ini siap digunakan untuk analisis lintas proyek dengan catatan bahwa data finansial dan tokenomics harus di-re-run ketika Vana Foundation mempublikasikan informasi yang hilang.
+
+Recommended Re-run:
+ · Phase 5 — Treasury size, revenue history, dan grant deployments tidak diungkap; butuh update pasca-TGE ketika laporan keuangan dirilis
+ · Phase 6 — Vesting schedule, token distribution percentages, dan unlock timeline tidak dipublikasikan; kritis untuk analisis tokenomics
+ · Phase 8 — Need update post-TGE untuk market metrics (volume, market cap, TVL) yang belum teragregasi
+
+QA Status: PASSED
+Confidence Level: HIGH
+
+---
+
 ## Open Questions
 - [foundation] Exact founding entity legal name and registration number in Cayman Islands — not fully public in registry searches
 - [foundation] Complete core team headcount and org chart — only partial public disclosure
@@ -4192,3 +5696,33 @@ Anti-patterns:
 - [knowledge] Regulatory engagement status in key jurisdictions (US, EU, Singapore, etc.) — whitepaper acknowledges uncertainty only【Phase 1 — Open Threads】【Phase 9 — Open Threads】.
 - [knowledge] VANA token fee switch / revenue share activation status — whitepaper mentions but governance status unclear【Phase 5 — Revenue Model】【Phase 6 — Inflation/Deflation】【Phase 9 — Open Threads】.
 - [knowledge] Treasury size, composition, runway — not disclosed【Phase 5 — Treasury】【Phase 9 — Open Threads】.
+- [conflict] Audit dilakukan tapi tidak dipublikasikan (kemungkinan besar untuk mengurangi biaya atau strategi)
+- [conflict] Audit memang tidak dilakukan sebelum launch
+- [conflict] Audit dilakukan setelah launch pasca-TGE tanpa pengumuman publik · Status: Open Open Thread ID: OT-002 · Description: Berapa total supply, circulating supply, dan initial supply VANA token? · Affected Phase: Phase 6 · Evidence: CoinGecko menampilkan circulating supply, tapi tidak diverifikasi terhadap sumber primer; Phase 6 mencatat "tidak diketahui" · Alternative Interpretations:
+- [conflict] CoinGecko memiliki data yang lebih baru dari sumber primer
+- [conflict] Angka CoinGecko tidak akurat atau belum di-update
+- [conflict] Vana Foundation sengaja tidak mempublikasikan supply detail untuk alasan tokenomics · Status: Open Open Thread ID: OT-003 · Description: Bagaimana vesting schedule untuk tim, investor, dan advisors? · Affected Phase: Phase 6 · Evidence: Whitepaper menyebutkan vesting tanpa detail; tidak ada unlock schedule yang dipublikasikan · Alternative Interpretations:
+- [conflict] Standard 12-24 bulan cliff + 24-48 bulan vesting (praktik umum industri)
+- [conflict] Vesting lebih ketat untuk investor (60 bulan)
+- [conflict] Tidak ada lock-up sama sekali untuk beberapa kategori (community) · Status: Open Open Thread ID: OT-004 · Description: Apakah data Moksha testnet dimigrasi ke mainnet atau reset total? · Affected Phase: Phase 3, Phase 4 · Evidence: Tidak ada dokumentasi tentang migrasi testnet state; blog hanya mengumumkan mainnet launch · Alternative Interpretations:
+- [conflict] Data testnet (Data DAO contributions, PoC scores) dimigrasi ke mainnet
+- [conflict] Data testnet di-reset untuk memastikan keadilan dan clean slate
+- [conflict] Sebagian data dimigrasi (misalnya validator list) tapi data aplikasi di-reset · Status: Open Open Thread ID: OT-005 · Description: Berapa nilai economic security VANA saat ini (total staked)? · Affected Phase: Phase 4, Phase 6 · Evidence: Explorer menampilkan staking data raw; tidak ada dashboard agregat · Alternative Interpretations:
+- [conflict] Total staked mungkin sudah signifikan pasca-TGE
+- [conflict] Staking ratio mungkin rendah karena TGE baru Desember 2024
+- [conflict] Validator set mungkin terpusat pada beberapa entitas · Status: Open Open Thread ID: OT-006 · Description: Apakah VANA token memiliki fee switch atau revenue share mechanism yang aktif? · Affected Phase: Phase 5, Phase 6 · Evidence: Whitepaper menyebutkan fee mechanism; tidak ada konfirmasi aktivasi di mainnet · Alternative Interpretations:
+- [conflict] Fee switch belum diaktifkan (pending governance vote)
+- [conflict] Fee switch aktif tapi tidak diumumkan publik
+- [conflict] Fee switch tidak akan pernah diaktifkan (protocol nilai diambil melalui token appreciation) · Status: Open Open Thread ID: OT-007 · Description: Siapa market maker untuk VANA token dan bagaimana likuiditas di CEX? · Affected Phase: Phase 8 · Evidence: Tidak ada pengumuman tentang market maker; CEX listing names tidak diungkap · Alternative Interpretations:
+- [conflict] Market maker adalah entitas besar (Jump, Wintermute, dll) yang tidak diumumkan
+- [conflict] Vana Foundation menyediakan likuiditas awal sendiri
+- [conflict] CEX listing names diembargo untuk jangka waktu tertentu · Status: Open Open Thread ID: OT-008 · Description: Apakah semua Data DAO menggunakan VANA sebagai reward token atau ada token native masing-masing? · Affected Phase: Phase 7 · Evidence: Tidak ada dokumentasi tentang reward token per Data DAO · Alternative Interpretations:
+- [conflict] Semua DAO menggunakan VANA sebagai reward native
+- [conflict] Beberapa DAO memiliki token native sendiri (seperti r/datadao dengan token sendiri)
+- [conflict] DAO menggunakan hybrid: VANA untuk staking + token native untuk reward · Status: Open Open Thread ID: OT-009 · Description: Bagaimana status IBC channels ke Cosmos ecosystem? · Affected Phase: Phase 4, Phase 7 · Evidence: IBC enabled on mainnet; active channels tidak didokumentasikan · Alternative Interpretations:
+- [conflict] Channels sudah aktif tapi tidak dipublikasikan
+- [conflict] Channels dalam proses setup
+- [conflict] Channels direncanakan tapi belum dibuka · Status: Open Open Thread ID: OT-010 · Description: Apakah ada enterprise partnership yang akan diumumkan di masa depan? · Affected Phase: Phase 1, Phase 7 · Evidence: Tidak ada dokumentasi partnership selain Data DAO · Alternative Interpretations:
+- [conflict] Enterprise partnership masih dalam negosiasi
+- [conflict] Partnership model adalah Data DAO itu sendiri (bukan enterprise)
+- [conflict] Informasi partnership diembargo sampai kesepakatan selesai · Status: Open

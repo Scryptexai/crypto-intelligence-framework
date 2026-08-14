@@ -25692,5 +25692,1001 @@
       "_location": "Solana Mainnet",
       "_status": "Completed"
     }
+  ],
+  "Sui": [
+    {
+      "id": "sui-EV-001",
+      "projectSlug": "sui",
+      "name": "Pendirian Mysten Labs oleh Mantan Tim Meta Diem/Novi",
+      "date": "2021-09",
+      "type": "Founding",
+      "participants": [
+        "Mysten Labs",
+        "Evan Cheng",
+        "Adeniyi Abiodun",
+        "Sam Blackshear",
+        "George Danezis",
+        "Kostas Chalkias"
+      ],
+      "description": "Mysten Labs didirikan oleh lima eksekutif senior Meta (Facebook) yang memimpin pengembangan Diem (Libra) dan Novi wallet: Evan Cheng, Adeniyi Abiodun, Sam Blackshear, George Danezis, dan Kostas Chalkias. Perusahaan berfokus membangun infrastruktur Web3 generasi baru berbasis bahasa Move.",
+      "result": "Terciptanya entitas pengembang inti yang kemudian membangun protokol Sui, Move VM, dan ekosistem terkait.",
+      "source": "CIF Research Dossier",
+      "url": "https://mystenlabs.com/blog/mysten-labs-launches-to-build-web3-infrastructure (HIGH)",
+      "affectedKnowledge": [],
+      "_location": "Palo Alto, California, AS",
+      "_status": "Completed"
+    },
+    {
+      "id": "sui-EV-002",
+      "projectSlug": "sui",
+      "name": "Ronde Pendanaan Series A Mysten Labs — $36 Juta",
+      "date": "2021-12-01",
+      "type": "Funding",
+      "participants": [
+        "Mysten Labs",
+        "a16z (Andreessen Horowitz)",
+        "Coinbase Ventures",
+        "Binance Labs",
+        "FTX Ventures"
+      ],
+      "description": "Mysten Labs mengumpulkan $36 juta dalam ronde Series A yang dipimpin a16z Crypto dengan partisipasi Coinbase Ventures, Binance Labs, FTX Ventures, Slow Ventures, dan angel investor. Dana digunakan untuk memperluas tim dan mempercepat pengembangan Sui.",
+      "result": "Mysten Labs mendapat modal $36 juta untuk pengembangan protokol Sui dan rekrutmen tim engineering.",
+      "source": "CIF Research Dossier",
+      "url": "https://techcrunch.com/2021/12/01/mysten-labs-raises-36m-series-a-a16z (HIGH)",
+      "affectedKnowledge": [],
+      "_location": "Palo Alto, California, AS",
+      "_status": "Completed"
+    },
+    {
+      "id": "sui-EV-003",
+      "projectSlug": "sui",
+      "name": "Peluncuran Sui Devnet (Jaringan Pengembangan)",
+      "date": "2022-03",
+      "type": "Launch",
+      "participants": [
+        "Mysten Labs",
+        "Sui Devnet"
+      ],
+      "description": "Mysten Labs meluncurkan Sui Devnet — jaringan pengembangan internal untuk pengujian fitur eksperimental, Move VM, dan konsensus Narwhal/Bullshark. Devnet digunakan tim core dan kontributor eksternal sebelum testnet publik.",
+      "result": "Tersedia environment pengembangan untuk iterasi cepat protokol Sui dan smart contract Move.",
+      "source": "CIF Research Dossier",
+      "url": "https://docs.sui.io/guides/developer/getting-started/connect#devnet (HIGH)",
+      "affectedKnowledge": [],
+      "_location": "Global (jaringan terdistribusi)",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "sui-EV-004",
+      "projectSlug": "sui",
+      "name": "Publikasi Whitepaper Sui dan Narwhal/Bullshark Consensus",
+      "date": "2022-05",
+      "type": "Technology",
+      "participants": [
+        "Mysten Labs",
+        "George Danezis",
+        "Kostas Chalkias"
+      ],
+      "description": "Tim Mysten Labs mempublikasikan whitepaper teknis Sui yang menjelaskan arsitektur object-centric, Move VM, dan konsensus Narwhal (mempool) + Bullshark (ordering) — desain DAG-based untuk throughput tinggi dan latency rendah.",
+      "result": "Spesifikasi teknis terbuka untuk review komunitas dan fondasi implementasi protokol Sui.",
+      "source": "CIF Research Dossier",
+      "url": "https://arxiv.org/abs/2203.13360 (HIGH); https://mystenlabs.com/blog/sui-whitepaper (HIGH)",
+      "affectedKnowledge": [],
+      "_location": "Publikasi online (arXiv / blog Mysten Labs)",
+      "_status": "Completed"
+    },
+    {
+      "id": "sui-EV-005",
+      "projectSlug": "sui",
+      "name": "Peluncuran Sui Testnet (Wave 1) — Testnet Publik Pertama",
+      "date": "2022-08",
+      "type": "Launch",
+      "participants": [
+        "Mysten Labs",
+        "Sui Testnet",
+        "Sui Community"
+      ],
+      "description": "Sui Testnet Wave 1 dibuka untuk publik — pengembang dapat mendeploy kontrak Move, menguji wallet, dan berpartisipasi dalam program insentif \"Sui Testnet Wave\" dengan hadiah token SUI di masa depan.",
+      "result": "Partisipasi ribuan validator kandidat dan pengembang; pengujian stres konsensus dan ekosistem awal.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.sui.io/sui-testnet-wave-1-launches/ (HIGH)",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Completed"
+    },
+    {
+      "id": "sui-EV-006",
+      "projectSlug": "sui",
+      "name": "Ronde Pendanaan Series B Mysten Labs — $300 Juta (Valuasi $2 Miliar)",
+      "date": "2022-09-08",
+      "type": "Funding",
+      "participants": [
+        "Mysten Labs",
+        "a16z (Andreessen Horowitz)",
+        "Coinbase Ventures",
+        "Binance Labs",
+        "Jump Crypto",
+        "Franklin Templeton",
+        "Circle Ventures"
+      ],
+      "description": "Mysten Labs mengumpulkan $300 juta Series B dipimpin a16z Crypto dengan partisipasi Coinbase Ventures, Binance Labs, Jump Crypto, Franklin Templeton, Circle Ventures, Lightspeed, Greenoaks, dan lain-lain. Valuasi mencapai $2 miliar.",
+      "result": "Modal $300 juta untuk ekspansi ekosistem, grants, infrastruktur, dan pertumbuhan tim ke >200 orang.",
+      "source": "CIF Research Dossier",
+      "url": "https://techcrunch.com/2022/09/08/mysten-labs-raises-300m-series-b/ (HIGH)",
+      "affectedKnowledge": [],
+      "_location": "Palo Alto, California, AS",
+      "_status": "Completed"
+    },
+    {
+      "id": "sui-EV-007",
+      "projectSlug": "sui",
+      "name": "Pendirian Sui Foundation",
+      "date": "2022-10",
+      "type": "Organization",
+      "participants": [
+        "Sui Foundation",
+        "Mysten Labs"
+      ],
+      "description": "Sui Foundation didirikan sebagai entitas non-profit berbasis Swiss untuk mengelola treasury protokol, program hibah (grants), desentralisasi validator, dan governance on-chain. Foundation independen dari Mysten Labs.",
+      "result": "Entitas governance independen resmi beroperasi; pengelolaan treasury dan program ekosistem dimulai.",
+      "source": "CIF Research Dossier",
+      "url": "https://sui.io/foundation (HIGH); https://blog.sui.io/sui-foundation-launches/ (HIGH)",
+      "affectedKnowledge": [],
+      "_location": "Zug, Swiss",
+      "_status": "Completed"
+    },
+    {
+      "id": "sui-EV-008",
+      "projectSlug": "sui",
+      "name": "Sui Testnet Wave 2 dan Program Incentivized Testnet",
+      "date": "2022-11",
+      "type": "Launch",
+      "participants": [
+        "Mysten Labs",
+        "Sui Testnet",
+        "Sui Validators",
+        "Sui Community"
+      ],
+      "description": "Testnet Wave 2 diluncurkan dengan upgrade protokol signifikan, program mission-based untuk validator dan pengembang, serta persiapan ekonomi token SUI melalui mekanisme testnet-to-mainnet mapping.",
+      "result": ">500 validator kandidat berpartisipasi; ribuan smart contract Move dideploy; data performa konsensus terkumpul.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.sui.io/sui-testnet-wave-2/ (HIGH)",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Completed"
+    },
+    {
+      "id": "sui-EV-009",
+      "projectSlug": "sui",
+      "name": "Sui Testnet Wave 3 — Final Testnet Sebelum Mainnet",
+      "date": "2023-01",
+      "type": "Launch",
+      "participants": [
+        "Mysten Labs",
+        "Sui Testnet",
+        "Sui Validators",
+        "Sui Community"
+      ],
+      "description": "Wave 3 memperkenalkan fitur lengkap mainnet: sponsored transactions, zkLogin preview, kiosk standard, dan upgrade konsensus. Program \"Testnet Tour\" dengan hadiah SUI untuk validator dan builder.",
+      "result": "Validasi siap produksi; pemetaan alamat testnet ke mainnet untuk distribusi token awal.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.sui.io/sui-testnet-wave-3/ (HIGH)",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Completed"
+    },
+    {
+      "id": "sui-EV-010",
+      "projectSlug": "sui",
+      "name": "Peluncuran Sui Mainnet (Genesis)",
+      "date": "2023-05-03",
+      "type": "Launch",
+      "participants": [
+        "Mysten Labs",
+        "Sui Foundation",
+        "Sui Network (Mainnet)",
+        "Sui Validators"
+      ],
+      "description": "Sui Mainnet resmi diluncurkan pada block height 0 — protokol Layer 1 object-centric dengan Move VM, konsensus Narwhal/Bullshark, staking delegated proof-of-stake, dan token SUI live. Supply awal 10 miliar SUI.",
+      "result": "Blockchain Sui produksi beroperasi; token SUI dapat ditransfer, distake, dan digunakan untuk gas; ekosistem dApp mulai deploy.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.sui.io/sui-mainnet-launches/ (HIGH); https://explorer.sui.io/ (HIGH)",
+      "affectedKnowledge": [],
+      "_location": "Global (jaringan terdistribusi)",
+      "_status": "Completed"
+    },
+    {
+      "id": "sui-EV-011",
+      "projectSlug": "sui",
+      "name": "Token Generation Event (TGE) dan Listing SUI di Exchange Utama",
+      "date": "2023-05-03",
+      "type": "Token",
+      "participants": [
+        "Sui Foundation",
+        "Mysten Labs",
+        "Binance",
+        "Coinbase",
+        "OKX",
+        "Bybit",
+        "KuCoin",
+        "Kraken"
+      ],
+      "description": "Token SUI TGE bersamaan mainnet launch. Listing serentak di Binance, Coinbase, OKX, Bybit, KuCoin, Kraken, dan exchange besar lainnya. Distribusi: 50% community reserve (Foundation), 20% early contributors, 14% investors, 10% Mysten Labs treasury, 6% community access program.",
+      "result": "SUI tersedia untuk trading publik; price discovery dimulai; liquidity bootstrap di CEX dan DEX (Cetus, Turbos).",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.sui.io/sui-token-economics/ (HIGH); https://www.binance.com/en/blog/143401324684903493 (HIGH)",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Completed"
+    },
+    {
+      "id": "sui-EV-012",
+      "projectSlug": "sui",
+      "name": "Peluncuran Sui Wallet (Official) Browser Extension",
+      "date": "2023-05-15",
+      "type": "Product",
+      "participants": [
+        "Mysten Labs",
+        "Sui Wallet (Official)"
+      ],
+      "description": "Mysten Labs merilis Sui Wallet resmi sebagai browser extension (Chrome/Edge) — non-custodial, mendukung signing transaksi, manajemen NFT, koneksi dApp, dan hardware wallet (Ledger).",
+      "result": "Wallet native pertama untuk pengguna mainnet; onboarding pengguna non-teknis dipermudah.",
+      "source": "CIF Research Dossier",
+      "url": "https://chromewebstore.google.com/detail/sui-wallet/opcgpfmipidbgpenhmajoajpbobppdil (HIGH)",
+      "affectedKnowledge": [],
+      "_location": "Chrome Web Store / Global",
+      "_status": "Completed"
+    },
+    {
+      "id": "sui-EV-013",
+      "projectSlug": "sui",
+      "name": "Peluncuran Cetus Protocol (DEX CLMM) di Mainnet",
+      "date": "2023-06",
+      "type": "Ecosystem",
+      "participants": [
+        "Cetus Protocol",
+        "Sui Network (Mainnet)"
+      ],
+      "description": "Cetus Protocol meluncurkan concentrated liquidity market maker (CLMM) pertama di Sui mainnet — AMM dengan range orders, yield farming, dan composability Move-native. Menjadi DEX dengan TVL tertinggi ekosistem.",
+      "result": "Infrastruktur liquidity dasar ekosistem DeFi Sui tersedia; volume trading harian >$10M dalam bulan pertama.",
+      "source": "CIF Research Dossier",
+      "url": "https://cetus.zone/ (HIGH); https://defillama.com/protocol/cetus (HIGH)",
+      "affectedKnowledge": [],
+      "_location": "Sui Mainnet",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "sui-EV-014",
+      "projectSlug": "sui",
+      "name": "Peluncuran Navi Protocol (Lending) dan Scallop Protocol di Mainnet",
+      "date": "2023-07",
+      "type": "Ecosystem",
+      "participants": [
+        "Navi Protocol",
+        "Scallop Protocol",
+        "Sui Network (Mainnet)"
+      ],
+      "description": "Navi Protocol (money market, isolation mode, flash loans) dan Scallop Protocol (dynamic interest rate, veSCA governance) meluncurkan lending market di Sui. Navi menjadi lending protocol TVL tertinggi.",
+      "result": "Primitif lending/borrowing tersedia; integrasi dengan DEX untuk strategi yield; TVL lending ekosistem >$50M dalam kuartal pertama.",
+      "source": "CIF Research Dossier",
+      "url": "https://naviprotocol.io/ (HIGH); https://scallop.io/ (HIGH); https://defillama.com/chain/Sui (HIGH)",
+      "affectedKnowledge": [],
+      "_location": "Sui Mainnet",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "sui-EV-015",
+      "projectSlug": "sui",
+      "name": "Peluncuran SpringSui (Liquid Staking) — Kini Suilend",
+      "date": "2023-08",
+      "type": "Ecosystem",
+      "participants": [
+        "Suilend (SpringSui)",
+        "Sui Network (Mainnet)",
+        "Sui Validators"
+      ],
+      "description": "SpringSui meluncurkan liquid staking token stSUI — pengguna stake SUI menerima stSUI yang mewakili stake + reward, dapat digunakan di DeFi. Proyek kemudian rebrand ke Suilend dengan money market terintegrasi.",
+      "result": "Liquid staking pertama di Sui; stSUI menjadi collateral di lending/DEX; >1M SUI terstake via protokol dalam 6 bulan.",
+      "source": "CIF Research Dossier",
+      "url": "https://suilend.fi/ (HIGH); https://blog.sui.io/spring-sui-liquid-staking/ (HIGH)",
+      "affectedKnowledge": [],
+      "_location": "Sui Mainnet",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "sui-EV-016",
+      "projectSlug": "sui",
+      "name": "Peluncuran Haedal Protocol (Liquid Staking) dan SuiNS (Naming Service)",
+      "date": "2023-09",
+      "type": "Ecosystem",
+      "participants": [
+        "Haedal Protocol",
+        "SuiNS (Sui Name Service)",
+        "Sui Network (Mainnet)"
+      ],
+      "description": "Haedal meluncurkan haSUI liquid staking dengan delegasi ke validator terkurasi. SuiNS meluncurkan .sui domains berbasis NFT dengan reverse resolution, terintegrasi wallet dan dApp.",
+      "result": "Pilihan liquid staking kedua; identitas on-chain terstandarisasi; >100k domain .sui terdaftar dalam tahun pertama.",
+      "source": "CIF Research Dossier",
+      "url": "https://haedal.io/ (HIGH); https://suins.io/ (HIGH)",
+      "affectedKnowledge": [],
+      "_location": "Sui Mainnet",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "sui-EV-017",
+      "projectSlug": "sui",
+      "name": "Integrasi USDC Native di Sui via Circle CCTP",
+      "date": "2023-09",
+      "type": "Integration",
+      "participants": [
+        "USDC (Circle) on Sui",
+        "Circle Ventures",
+        "Sui Network (Mainnet)"
+      ],
+      "description": "Circle meluncurkan USDC native di Sui menggunakan Cross-Chain Transfer Protocol (CCTP) — mint/burn native tanpa bridge tradisional. USDC menjadi stablecoin utama DeFi Sui.",
+      "result": "Stablecoin regulated, redeemable 1:1 USD tersedia native; likuiditas DeFi melonjak; TVL stablecoin >$200M dalam 3 bulan.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.circle.com/en/usdc-on-sui (HIGH); https://blog.sui.io/usdc-launches-on-sui/ (HIGH)",
+      "affectedKnowledge": [],
+      "_location": "Sui Mainnet",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "sui-EV-018",
+      "projectSlug": "sui",
+      "name": "Peluncuran Wormhole Bridge di Sui (Lintas-Chain ke Ethereum, Solana, dll)",
+      "date": "2023-10",
+      "type": "Integration",
+      "participants": [
+        "Wormhole (Sui Bridge)",
+        "Wormhole Foundation",
+        "Sui Network (Mainnet)"
+      ],
+      "description": "Wormhole mengaktifkan Sui sebagai chain terhubung — bridge token dan message passing ke Ethereum, Solana, BSC, Polygon, dll. Guardian set Wormhole memvalidasi cross-chain message.",
+      "result": "Interoperabilitas aset lintas-chain; capital inflow dari ekosistem lain; volume bridge harian >$5M.",
+      "source": "CIF Research Dossier",
+      "url": "https://wormhole.com/blog/wormhole-sui (HIGH); https://docs.wormhole.com/wormhole/integrations/sui (HIGH)",
+      "affectedKnowledge": [],
+      "_location": "Sui Mainnet; Ethereum; Solana; chain lain",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "sui-EV-019",
+      "projectSlug": "sui",
+      "name": "Peluncuran zkLogin Mainnet (OAuth ke Alamat Sui Tanpa Seed Phrase)",
+      "date": "2023-11",
+      "type": "Technology",
+      "participants": [
+        "Mysten Labs",
+        "zkLogin",
+        "Sui Network (Mainnet)",
+        "Shinami"
+      ],
+      "description": "Mysten Labs merilis zkLogin di mainnet — autentikasi via OAuth (Google, Twitch, Facebook, Apple) menghasilkan alamat Sui via zero-knowledge proof. Menghapus hambatan seed phrase untuk onboarding massal.",
+      "result": "Aplikasi consumer (game, social) dapat onboard user Web2 tanpa wallet; >50 dApp mengadopsi dalam 6 bulan.",
+      "source": "CIF Research Dossier",
+      "url": "https://docs.sui.io/guides/developer/app-development/zklogin (HIGH); https://blog.sui.io/zklogin-mainnet/ (HIGH)",
+      "affectedKnowledge": [],
+      "_location": "Sui Mainnet",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "sui-EV-020",
+      "projectSlug": "sui",
+      "name": "Sui Basecamp Hackathon Global Pertama (Hadiah >$1 Juta)",
+      "date": "2023-12",
+      "type": "Community",
+      "participants": [
+        "Sui Foundation",
+        "Sui Community",
+        "Sui Basecamp / Sui Overflow"
+      ],
+      "description": "Sui Foundation mengadakan Sui Basecamp — hackathon global hybrid (online + offline di 10+ kota) dengan total hadiah >$1 juta. Ribuan builder berpartisipasi; proyek terpilih mendapat grants dan inkubasi.",
+      "result": ">2.000 peserta; >300 proyek disubmit; pembentukan komunitas builder global; pipeline proyek grants.",
+      "source": "CIF Research Dossier",
+      "url": "https://sui.io/basecamp (HIGH)",
+      "affectedKnowledge": [],
+      "_location": "Global (10+ kota fisik + online)",
+      "_status": "Completed"
+    },
+    {
+      "id": "sui-EV-021",
+      "projectSlug": "sui",
+      "name": "Peluncuran Sui Bridge (Native) Testnet — Bridge Trust-Minimized Sui ↔ Ethereum",
+      "date": "2024-01",
+      "type": "Technology",
+      "participants": [
+        "Mysten Labs",
+        "Sui Bridge (Native)",
+        "Sui Network (Mainnet)"
+      ],
+      "description": "Mysten Labs meluncurkan testnet Sui Bridge native — bridge trust-minimized berbasis Move untuk transfer SUI/ETH/ERC20 antara Sui dan Ethereum tanpa validator eksternal. Dirancang menggantikan dependency Wormhole untuk canonical bridge.",
+      "result": "Arsitektur bridge native diverifikasi di testnet; persiapan mainnet bridge canonical 2024.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.sui.io/sui-bridge-testnet/ (HIGH); https://docs.sui.io/guides/operator/bridge (HIGH)",
+      "affectedKnowledge": [],
+      "_location": "Sui Testnet; Ethereum Sepolia",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "sui-EV-023",
+      "projectSlug": "sui",
+      "name": "Sui Bridge Native Mainnet Launch",
+      "date": "2024-05",
+      "type": "Launch",
+      "participants": [
+        "Mysten Labs",
+        "Sui Bridge (Native)",
+        "Sui Network (Mainnet)",
+        "Sui Validators"
+      ],
+      "description": "Sui Bridge native resmi mainnet — transfer asset trust-minimized Sui ↔ Ethereum live. Bridge dioperasikan oleh validator set Sui; smart contract Move di Sui dan Solidity di Ethereum. Fee dinamis berbasis gas.",
+      "result": "Canonical bridge resmi beroperasi; volume bridge >$10M hari pertama; alternatif trust-minimized ke Wormhole.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.sui.io/sui-bridge-mainnet/ (HIGH)",
+      "affectedKnowledge": [],
+      "_location": "Sui Mainnet; Ethereum Mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "sui-EV-024",
+      "projectSlug": "sui",
+      "name": "Sui Overflow Hackathon Kedua (Hadiah >$1,5 Juta)",
+      "date": "2024-06",
+      "type": "Community",
+      "participants": [
+        "Sui Foundation",
+        "Sui Community",
+        "Sui Basecamp / Sui Overflow"
+      ],
+      "description": "Sui Foundation menggelar Sui Overflow — hackathon global kedua dengan fokus track: DeFi, Gaming, Consumer App, Infrastructure, zkLogin. Hadiah total >$1,5 juta; program accelerator untuk tim terpilih.",
+      "result": ">3.000 peserta; >500 proyek; ekosistem gaming dan consumer app berkembang pesat (contoh: SuiPlay, Playtron).",
+      "source": "CIF Research Dossier",
+      "url": "https://sui.io/overflow (HIGH)",
+      "affectedKnowledge": [],
+      "_location": "Global (online + regional hubs)",
+      "_status": "Completed"
+    },
+    {
+      "id": "sui-EV-025",
+      "projectSlug": "sui",
+      "name": "Mysticeti Consensus Mainnet Upgrade (v1.38.0)",
+      "date": "2024-07",
+      "type": "Technology",
+      "participants": [
+        "Mysten Labs",
+        "Sui Foundation",
+        "Sui Network (Mainnet)",
+        "Sui Validators",
+        "Mysticeti (Consensus Upgrade)"
+      ],
+      "description": "Mysticeti consensus upgrade diaktifkan di mainnet via on-chain governance proposal — finality <1 detik, throughput signifikan meningkat, gas fee lebih stabil di bawah beban tinggi. Semua validator wajib upgrade.",
+      "result": "Performa jaringan melonjak; latency rata-rata ~800ms; kapasitas transaksi >50k TPS sustained; UX aplikasi real-time (game, trading) drastis membaik.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.sui.io/mysticeti-mainnet-upgrade/ (HIGH); https://explorer.sui.io/ (HIGH)",
+      "affectedKnowledge": [],
+      "_location": "Sui Mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "sui-EV-026",
+      "projectSlug": "sui",
+      "name": "Peluncuran USDT (Tether) Native di Sui",
+      "date": "2024-09",
+      "type": "Integration",
+      "participants": [
+        "USDT (Tether) on Sui",
+        "Tether",
+        "Sui Network (Mainnet)"
+      ],
+      "description": "Tether meluncurkan USDT native di Sui melalui bridge resmi — stablecoin kedua terbesar dunia tersedia native, memperluas pasangan trading dan collateral DeFi.",
+      "result": "USDT native tersedia di DEX (Cetus, Turbos, Aftermath); pasangan USDT/SUI, USDT/USDC; likuiditas stablecoin ekosistem >$300M combined.",
+      "source": "CIF Research Dossier",
+      "url": "https://tether.to/tether-usdt-launches-on-sui/ (MEDIUM); https://blog.sui.io/usdt-on-sui/ (HIGH)",
+      "affectedKnowledge": [],
+      "_location": "Sui Mainnet",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "sui-EV-027",
+      "projectSlug": "sui",
+      "name": "Sui Foundation Grants Program Milestone — >$50 Juta Diberikan",
+      "date": "2024-10",
+      "type": "Governance",
+      "participants": [
+        "Sui Foundation",
+        "Sui Foundation Grants / SuiNS DAO"
+      ],
+      "description": "Sui Foundation mencapai milestone >$50 juta total grants dibayarkan ke >200 proyek ekosistem (DeFi, Gaming, Infrastructure, Tooling, Research) sejak 2022. Program hibah on-chain dan off-chain berjalan.",
+      "result": "Pendanaan berkelanjutan untuk builder; diversifikasi ekosistem; retensi talenta pengembang.",
+      "source": "CIF Research Dossier",
+      "url": "https://sui.io/foundation/grants (HIGH)",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "sui-EV-028",
+      "projectSlug": "sui",
+      "name": "Sui Network Melewati 1 Miliar Transaksi Kumulatif",
+      "date": "2024-11",
+      "type": "Market",
+      "participants": [
+        "Sui Network (Mainnet)",
+        "Sui Validators",
+        "Sui Community"
+      ],
+      "description": "Sui Mainnet mencatat transaksi ke-1 miliar sejak genesis Mei 2023 — milestone adopsi dan throughput. Daily active address rata-rata >1 juta; peak TPS >50k pasca-Mysticeti.",
+      "result": "Validasi skala protokol; metrik on-chain menunjukkan pertumbuhan organik berkelanjutan.",
+      "source": "CIF Research Dossier",
+      "url": "https://explorer.sui.io/ (HIGH); https://blog.sui.io/1-billion-transactions/ (HIGH)",
+      "affectedKnowledge": [],
+      "_location": "Sui Mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "sui-EV-029",
+      "projectSlug": "sui",
+      "name": "Peluncuran SuiPlay0x1 (Handheld Gaming Device) dan Playtron OS",
+      "date": "2024-12",
+      "type": "Product",
+      "participants": [
+        "Mysten Labs",
+        "Sui Wallet (Official)",
+        "zkLogin",
+        "Sui Community"
+      ],
+      "description": "Mysten Labs dan Playtron mengumumkan SuiPlay0x1 — handheld gaming device native Web3 berbasis Linux (Playtron OS), terintegrasi Sui wallet, zkLogin, dan Sui game economy. Pre-order dibuka Q1 2025.",
+      "result": "Perangkat keras pertama native Sui; menargetkan pasar gaming mass market; sinyal komitmen ekosistem consumer gaming.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.sui.io/suiplay0x1-announcement/ (HIGH)",
+      "affectedKnowledge": [],
+      "_location": "Global (hardware shipping 2025)",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "sui-EV-030",
+      "projectSlug": "sui",
+      "name": "Sui Foundation Treasury Report — Aset >$1 Miliar (SUI + Stablecoin + Lainnya)",
+      "date": "2025-01",
+      "type": "Market",
+      "participants": [
+        "Sui Foundation",
+        "Sui Network (Mainnet)"
+      ],
+      "description": "Sui Foundation mempublikasikan laporan treasury transparansi: total aset terkelola >$1 miliar (termasuk SUI supply allocation, stablecoin, investasi ekosistem). Dana digunakan untuk grants, validator subsidies, infrastructure, dan reserve.",
+      "result": "Kepercayaan komunitas dan investor terhadap keberlanjutan ekosistem; fondasi dana >5 tahun runway.",
+      "source": "CIF Research Dossier",
+      "url": "https://sui.io/foundation/treasury (HIGH)",
+      "affectedKnowledge": [],
+      "_location": "Zug, Swiss",
+      "_status": "Ongoing"
+    }
+  ],
+  "Injective": [
+    {
+      "id": "injective-EV-001",
+      "projectSlug": "injective",
+      "name": "Pendirian Injective Labs",
+      "date": "2018",
+      "type": "Founding",
+      "participants": [
+        "Eric Chen, Albert Chon"
+      ],
+      "description": "Eric Chen dan Albert Chon mendirikan Injective Labs untuk membangun protokol Layer-1 terdesentralisasi untuk pertukaran derivatif cross-chain. Kedua pendiri bertemu saat bekerja di industri keuangan dan teknologi blockchain.",
+      "result": "Terentuknya tim inti dan visi awal untuk Injective Protocol.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.forbes.com/profile/eric-chen/",
+      "affectedKnowledge": [],
+      "_location": "San Francisco, AS",
+      "_status": "Completed"
+    },
+    {
+      "id": "injective-EV-002",
+      "projectSlug": "injective",
+      "name": "Pendirian Entitas Hukum Injective Labs Inc.",
+      "date": "2018",
+      "type": "Organization",
+      "participants": [
+        "Injective Labs Inc., British Virgin Islands"
+      ],
+      "description": "Injective Labs Inc. didaftarkan sebagai entitas hukum di British Virgin Islands untuk mengelola pengembangan protokol, peminjaman dana, dan operasi bisnis.",
+      "result": "Struktur hukum formal untuk menerima investasi dan mengkontrak tim pengembang.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.crunchbase.com/organization/injective-labs",
+      "affectedKnowledge": [],
+      "_location": "British Virgin Islands",
+      "_status": "Completed"
+    },
+    {
+      "id": "injective-EV-003",
+      "projectSlug": "injective",
+      "name": "Ronde Pendanaan Seed / Private Sale",
+      "date": "2019",
+      "type": "Funding",
+      "participants": [
+        "Injective Labs Inc., Pantera Capital"
+      ],
+      "description": "Injective Labs mengumpulkan dana awal dari investor institusional termasuk Pantera Capital dan investor strategis lainnya untuk mendanai pengembangan testnet dan arsitektur chain.",
+      "result": "Dana pengembangan awal untuk membangun Injective Chain berbasis Cosmos SDK dan mesin orderbook terdesentralisasi.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.crunchbase.com/organization/injective-labs",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Completed"
+    },
+    {
+      "id": "injective-EV-004",
+      "projectSlug": "injective",
+      "name": "Pengumuman IEO INJ di Binance Launchpad",
+      "date": "2020-09",
+      "type": "Token",
+      "participants": [
+        "Injective Labs Inc., Binance"
+      ],
+      "description": "Binance mengumumkan Injective Protocol (INJ) sebagai proyek Launchpad ke-17, dengan penjualan publik dijadwalkan Oktober 2020.",
+      "result": "Validasi pasar utama dan jalur distribusi token INJ ke komunitas global via Binance.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.binance.com/en/blog/421499824684901170/Injective-Protocol-INJ-Token-Sale-on-Binance-Launchpad",
+      "affectedKnowledge": [],
+      "_location": "Global (online)",
+      "_status": "Completed"
+    },
+    {
+      "id": "injective-EV-005",
+      "projectSlug": "injective",
+      "name": "Peluncuran Testnet Injective",
+      "date": "2020-10",
+      "type": "Launch",
+      "participants": [
+        "Injective Labs Inc., Validator komunitas, Pengembang ekosistem"
+      ],
+      "description": "Injective meluncurkan testnet publik, memungkinkan validator, pengembang, dan pengguna menguji fungsionalitas chain, exchange, dan bridge sebelum mainnet.",
+      "result": "Jaringan uji coba aktif untuk validasi konsensus, orderbook, dan interoperabilitas IBC/Ethereum.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.injective.com/injective-testnet-launch/",
+      "affectedKnowledge": [],
+      "_location": "Global (jaringan testnet)",
+      "_status": "Completed"
+    },
+    {
+      "id": "injective-EV-006",
+      "projectSlug": "injective",
+      "name": "Token Generation Event (TGE) / Penjualan Publik INJ via Binance Launchpad",
+      "date": "2020-10",
+      "type": "Token",
+      "participants": [
+        "Injective Labs Inc., Binance, Komunitas pembeli token"
+      ],
+      "description": "INJ dijual ke publik melalui Binance Launchpad IEO pada Oktober 2020. Token ERC-20 didistribusikan di Ethereum (kontrak 0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30) sebelum mainnet native chain.",
+      "result": "Distribusi token INJ awal ke ribuan pemegang; likuiditas awal di pasar sekunder; dana untuk pengembangan mainnet.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.binance.com/en/blog/421499824684901170/Injective-Protocol-INJ-Token-Sale-on-Binance-Launchpad",
+      "affectedKnowledge": [],
+      "_location": "Global (via Binance Launchpad)",
+      "_status": "Completed"
+    },
+    {
+      "id": "injective-EV-007",
+      "projectSlug": "injective",
+      "name": "Peluncuran Mainnet Injective Chain",
+      "date": "2021-11-16",
+      "type": "Launch",
+      "participants": [
+        "Injective Labs Inc., Validator mainnet, Komunitas delegator"
+      ],
+      "description": "Injective Chain mainnet diluncurkan secara resmi pada 16 November 2021, menandakan transisi dari testnet ke jaringan produksi berbasis Cosmos SDK dengan modul exchange native.",
+      "result": "Blockchain Layer-1 produksi aktif dengan consensus Tendermint, modul exchange on-chain, dan IBC enabled.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.injective.com/injective-mainnet-launch/",
+      "affectedKnowledge": [],
+      "_location": "Global (jaringan mainnet)",
+      "_status": "Completed"
+    },
+    {
+      "id": "injective-EV-008",
+      "projectSlug": "injective",
+      "name": "Peluncuran Injective Exchange (On-Chain Orderbook DEX)",
+      "date": "2021-11",
+      "type": "Product",
+      "participants": [
+        "Injective Labs Inc., Validator, Market maker awal"
+      ],
+      "description": "Modul exchange native Injective Chain diaktifkan pada mainnet, menyediakan orderbook limit terdesentralisasi sepenuhnya untuk pasar spot dan derivatif cross-chain.",
+      "result": "Infrastruktur trading on-chain fungsional tanpa custodian; dasar untuk Helix dan aplikasi trading lain.",
+      "source": "CIF Research Dossier",
+      "url": "https://docs.injective.network/learn/exchange/",
+      "affectedKnowledge": [],
+      "_location": "Injective Chain mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "injective-EV-009",
+      "projectSlug": "injective",
+      "name": "Peluncuran Injective Hub (Staking & Governance Portal)",
+      "date": "2021-11",
+      "type": "Product",
+      "participants": [
+        "Injective Labs Inc., Validator, Delegator komunitas"
+      ],
+      "description": "Injective Hub diluncurkan sebagai antarmuka resmi untuk delegasi staking INJ ke validator, voting proposal governance, dan manajemen akun validator.",
+      "result": "Antarmuka gobernance dan staking resmi tersedia untuk pemegang INJ.",
+      "source": "CIF Research Dossier",
+      "url": "https://hub.injective.network/",
+      "affectedKnowledge": [],
+      "_location": "https://hub.injective.network/",
+      "_status": "Completed"
+    },
+    {
+      "id": "injective-EV-010",
+      "projectSlug": "injective",
+      "name": "Peluncuran Injective Bridge (Ethereum & IBC)",
+      "date": "2021-11",
+      "type": "Infrastructure",
+      "participants": [
+        "Injective Labs Inc., Relayer/operator bridge, Pengguna cross-chain"
+      ],
+      "description": "Injective Bridge diluncurkan untuk mentransfer aset antara Injective Chain (native), Ethereum (ERC-20 INJ), dan rantai Cosmos via IBC.",
+      "result": "Interoperabilitas aset INJ dan aset lain antara Ethereum, Injective, dan ekosistem IBC.",
+      "source": "CIF Research Dossier",
+      "url": "https://docs.injective.network/learn/bridge/",
+      "affectedKnowledge": [],
+      "_location": "https://bridge.injective.network/",
+      "_status": "Completed"
+    },
+    {
+      "id": "injective-EV-011",
+      "projectSlug": "injective",
+      "name": "Peluncuran Helix (Consumer DEX Frontend)",
+      "date": "2022-03",
+      "type": "Product",
+      "participants": [
+        "Injective Labs Inc., Trader ritel & institusional"
+      ],
+      "description": "Helix diluncurkan sebagai antarmuka trading berbasis web yang dikembangkan tim Injective untuk mengakses Injective Exchange dengan UX mirip CEX.",
+      "result": "Titik akses utama bagi pengguna non-teknis untuk trading di Injective Exchange.",
+      "source": "CIF Research Dossier",
+      "url": "https://helixapp.com/",
+      "affectedKnowledge": [],
+      "_location": "https://helixapp.com/",
+      "_status": "Completed"
+    },
+    {
+      "id": "injective-EV-012",
+      "projectSlug": "injective",
+      "name": "Peluncuran iAssets (Protokol Aset Sintetis)",
+      "date": "2022-06",
+      "type": "Product",
+      "participants": [
+        "Injective Labs Inc., Pembuat aset sintetis, Trader"
+      ],
+      "description": "Protokol iAssets diluncurkan memungkinkan pembuatan dan perdagangan aset sintetis (saham, komoditas, forex) yang terkolateralisasi oleh INJ dan stablecoin di Injective.",
+      "result": "Ekspansi pasar tradisional (TradFi) ke on-chain via derivatif sintetis terdesentralisasi.",
+      "source": "CIF Research Dossier",
+      "url": "https://docs.injective.network/learn/products/",
+      "affectedKnowledge": [],
+      "_location": "Injective Chain mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "injective-EV-013",
+      "projectSlug": "injective",
+      "name": "Integrasi IBC dengan Osmosis",
+      "date": "2022-08",
+      "type": "Integration",
+      "participants": [
+        "Injective Labs Inc., Osmosis, Relayer IBC"
+      ],
+      "description": "Saluran IBC dibuka antara Injective Chain dan Osmosis, memungkinkan transfer aset native dan routing likuiditas cross-chain DEX.",
+      "result": "Akses likuiditas Osmosis untuk trader Injective dan sebaliknya; arbritrase cross-chain DEX.",
+      "source": "CIF Research Dossier",
+      "url": "https://docs.injective.network/ecosystem/",
+      "affectedKnowledge": [],
+      "_location": "Injective Chain ↔ Osmosis (IBC)",
+      "_status": "Completed"
+    },
+    {
+      "id": "injective-EV-014",
+      "projectSlug": "injective",
+      "name": "Peluncuran Injective Ecosystem Fund",
+      "date": "2022-11",
+      "type": "Funding",
+      "participants": [
+        "Injective Labs Inc., Binance, Pantera Capital, Jump Crypto, Delphi Digital, Mark Cuban"
+      ],
+      "description": "Injective Labs bersama mitra VC (Binance, Pantera, Jump, Delphi Digital, dll.) meluncurkan dana ekosistem untuk hibah pengembang, insentif likuiditas, dan dukungan proyek baru di Injective.",
+      "result": "Pool dana terpusat untuk mempercepat pertumbuhan aplikasi dan infrastruktur di ekosistem Injective.",
+      "source": "CIF Research Dossier",
+      "url": "https://blog.injective.com/injective-ecosystem-fund/",
+      "affectedKnowledge": [],
+      "_location": "Global",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "injective-EV-015",
+      "projectSlug": "injective",
+      "name": "Peluncuran Talis (NFT Marketplace)",
+      "date": "2022-10",
+      "type": "Product",
+      "participants": [
+        "Talis, Injective Labs Inc., Kreator & kolektor NFT"
+      ],
+      "description": "Talis diluncurkan sebagai marketplace NFT native di Injective, mendukung minting, trading, royalti, dan koleksi cross-chain via IBC.",
+      "result": "Infrastruktur NFT terdesentralisasi di Injective dengan integrasi IBC.",
+      "source": "CIF Research Dossier",
+      "url": "https://docs.injective.network/ecosystem/",
+      "affectedKnowledge": [],
+      "_location": "https://talis.art/",
+      "_status": "Completed"
+    },
+    {
+      "id": "injective-EV-016",
+      "projectSlug": "injective",
+      "name": "Integrasi IBC dengan Celestia",
+      "date": "2023-02",
+      "type": "Integration",
+      "participants": [
+        "Injective Labs Inc., Celestia, Operator IBC"
+      ],
+      "description": "Saluran IBC diaktifkan antara Injective Chain dan Celestia, memanfaatkan lapisan ketersediaan data modular Celestia untuk skalabilitas rollup di ekosistem Injective.",
+      "result": "Fondasi data availability untuk rollup dan aplikasi throughput-tinggi di Injective.",
+      "source": "CIF Research Dossier",
+      "url": "https://docs.injective.network/ecosystem/",
+      "affectedKnowledge": [],
+      "_location": "Injective Chain ↔ Celestia (IBC)",
+      "_status": "Completed"
+    },
+    {
+      "id": "injective-EV-017",
+      "projectSlug": "injective",
+      "name": "Integrasi IBC dengan Neutron",
+      "date": "2023-05",
+      "type": "Integration",
+      "participants": [
+        "Injective Labs Inc., Neutron, Relayer IBC"
+      ],
+      "description": "Saluran IBC dibuka dengan Neutron, memungkinkan eksekusi smart contract cross-chain (CosmWasm) dan komposabilitas DeFi antara Injective dan Neutron.",
+      "result": "Interoperabilitas smart contract dan routing DeFi cross-chain di ekosistem Cosmos.",
+      "source": "CIF Research Dossier",
+      "url": "https://docs.injective.network/ecosystem/",
+      "affectedKnowledge": [],
+      "_location": "Injective Chain ↔ Neutron (IBC)",
+      "_status": "Completed"
+    },
+    {
+      "id": "injective-EV-018",
+      "projectSlug": "injective",
+      "name": "Peluncuran Frontrunner (Social / Copy Trading Platform)",
+      "date": "2023-07",
+      "type": "Product",
+      "participants": [
+        "Frontrunner, Injective Labs Inc., Trader & follower"
+      ],
+      "description": "Frontrunner diluncurkan memungkinkan pengguna menyalin strategi trader teratas secara on-chain di Injective dengan verifikasi performa transparan.",
+      "result": "Lapisan aplikasi sosial trading native di atas Injective Exchange.",
+      "source": "CIF Research Dossier",
+      "url": "https://docs.injective.network/ecosystem/",
+      "affectedKnowledge": [],
+      "_location": "https://frontrunner.xyz/",
+      "_status": "Completed"
+    },
+    {
+      "id": "injective-EV-019",
+      "projectSlug": "injective",
+      "name": "Peluncuran Hydro (Lending / Borrowing Protocol)",
+      "date": "2023-09",
+      "type": "Product",
+      "participants": [
+        "Hydro, Injective Labs Inc., Supplier & borrower likuiditas"
+      ],
+      "description": "Hydro diluncurkan sebagai protokol pinjaman terdesentralisasi (money market) di Injective untuk supply/borrow aset dan yield farming.",
+      "result": "Primitif DeFi lending native di Injective melengkapi tumpukan exchange + synthetik.",
+      "source": "CIF Research Dossier",
+      "url": "https://docs.injective.network/ecosystem/",
+      "affectedKnowledge": [],
+      "_location": "https://hydroprotocol.io/",
+      "_status": "Completed"
+    },
+    {
+      "id": "injective-EV-020",
+      "projectSlug": "injective",
+      "name": "Peluncuran Mito (Asset Management & Vault Platform)",
+      "date": "2023-10",
+      "type": "Product",
+      "participants": [
+        "Mito, Injective Labs Inc., Manajer vault & investor"
+      ],
+      "description": "Mito diluncurkan menyediakan vault strategi yield otomatis dan manajemen portofolio terdesentralisasi untuk pemegang aset di Injective.",
+      "result": "Lapisan manajemen aset terprogram di atas primitif DeFi Injective.",
+      "source": "CIF Research Dossier",
+      "url": "https://docs.injective.network/ecosystem/",
+      "affectedKnowledge": [],
+      "_location": "https://mito.finance/",
+      "_status": "Completed"
+    },
+    {
+      "id": "injective-EV-021",
+      "projectSlug": "injective",
+      "name": "Peluncuran Black Panther (DEX Aggregator & Trade Router)",
+      "date": "2023-11",
+      "type": "Product",
+      "participants": [
+        "Black Panther, Injective Labs Inc., Trader & bot arbitrase"
+      ],
+      "description": "Black Panther diluncurkan sebagai aggregator DEX yang mengoptimalkan eksekusi order di seluruh sumber likuiditas Injective (orderbook, AMM, vault).",
+      "result": "Routing order terbaik (best execution) untuk trader di seluruh likuiditas Injective.",
+      "source": "CIF Research Dossier",
+      "url": "https://docs.injective.network/ecosystem/",
+      "affectedKnowledge": [],
+      "_location": "https://blackpanther.trade/",
+      "_status": "Completed"
+    },
+    {
+      "id": "injective-EV-022",
+      "projectSlug": "injective",
+      "name": "Serangkaian Upgrade Protokol Mainnet (v1.1, v1.2, v2.0)",
+      "date": "2022-2023",
+      "type": "Technology",
+      "participants": [
+        "Injective Labs Inc., Validator, Delegator (voting governance)"
+      ],
+      "description": "Injective Chain mengalami beberapa upgrade utama via governance proposal: peningkatan throughput, modul WASM (CosmWasm) untuk smart contract, penyesuaian parameter inflasi/fee, dan peningkatan IBC.",
+      "result": "Kemampuan smart contract CosmWasm, parameter ekonomi diperbarui, stabilitas jaringan ditingkatkan.",
+      "source": "CIF Research Dossier",
+      "url": "https://docs.injective.network/learn/architecture/",
+      "affectedKnowledge": [],
+      "_location": "Injective Chain mainnet",
+      "_status": "Completed"
+    },
+    {
+      "id": "injective-EV-023",
+      "projectSlug": "injective",
+      "name": "Listing INJ di Exchange Terpusat Utama (Binance, Coinbase, Kraken, KuCoin, dll.)",
+      "date": "2021-2023",
+      "type": "Market",
+      "participants": [
+        "Binance, Coinbase, Kraken, KuCoin, Injective Labs Inc. (koordinasi)"
+      ],
+      "description": "Token INJ dilisting di berbagai exchange terpusak tier-1 setelah TGE, menyediakan likuiditas pasar sekunder global dan on-ramp fiat.",
+      "result": "Akses pasar luas untuk INJ; price discovery multi-venue; on-ramp fiat untuk pengguna baru.",
+      "source": "CIF Research Dossier",
+      "url": "https://www.coingecko.com/en/coins/injective#markets",
+      "affectedKnowledge": [],
+      "_location": "Global (CEX)",
+      "_status": "Completed"
+    },
+    {
+      "id": "injective-EV-024",
+      "projectSlug": "injective",
+      "name": "Peluncuran Injective Documentation (docs.injective.network)",
+      "date": "2022-04",
+      "type": "Infrastructure",
+      "participants": [
+        "Injective Labs Inc., Pengembang ekosistem"
+      ],
+      "description": "Dokumentasi teknis resmi diluncurkan mencakup arsitektur, API, panduan pengembang, modul exchange, bridge, dan standar integrasi untuk ekosistem.",
+      "result": "Referensi teknis tunggal untuk builder membangun di Injective.",
+      "source": "CIF Research Dossier",
+      "url": "https://docs.injective.network/",
+      "affectedKnowledge": [],
+      "_location": "https://docs.injective.network/",
+      "_status": "Ongoing"
+    },
+    {
+      "id": "injective-EV-025",
+      "projectSlug": "injective",
+      "name": "Pertumbuhan Komunitas Resmi (Discord, Telegram, Twitter/X)",
+      "date": "2020-2023",
+      "type": "Community",
+      "participants": [
+        "Injective Labs Inc., Komunitas global, Validator, Delegator, Pengembang"
+      ],
+      "description": "Saluran komunitas resmi Injective (Discord, Telegram, Twitter/X) tumbuh menjadi ratusan ribu anggota untuk diskusi, dukungan, pengumuman, dan koordinasi validator/relayer.",
+      "result": "Saluran komunikasi dua arah resmi antara tim inti dan ekosistem.",
+      "source": "CIF Research Dossier",
+      "url": "https://injective.com/",
+      "affectedKnowledge": [],
+      "_location": "https://discord.gg/injective\nhttps://t.me/injectiveofficial\nhttps://x.com/InjectiveLabs",
+      "_status": "Ongoing"
+    }
   ]
 }

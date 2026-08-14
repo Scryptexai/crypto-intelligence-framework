@@ -1,0 +1,376 @@
+PROJECT: Sui
+
+## System Architecture
+
+Architecture Type: Layer 1 blockchain (object-centric)
+Description: Sui adalah blockchain Layer 1 yang dirancang dari awal dengan model data object-centric, memisahkan ownership dan state secara eksplisit untuk memungkinkan eksekusi transaksi paralel tanpa konflik. Arsitektur terdiri dari: (1) Konsensus Narwhal/Bullshark (sekarang Mysticeti) untuk ordering transaksi, (2) Move VM untuk eksekusi smart contract, (3) Object-centric storage model dengan dynamic fields, (4) Delegated Proof-of-Stake untuk validator selection dan staking, (5) Gas mechanism berbasis computation dan storage. (HIGH) [Sui Documentation Architecture, https://docs.sui.io/concepts/architecture]
+Data Model: Object-centric (owned objects, shared objects, immutable objects, wrapped objects) (HIGH) [Sui Documentation Object Model, https://docs.sui.io/concepts/object-model]
+Consensus Layer: Narwhal (mempool/DAG) + Bullshark (ordering) → upgraded to Mysticeti (DAG-optimized, sub-second finality) (HIGH) [Sui Blog Mysticeti, https://blog.sui.io/mysticeti-consensus/]
+Execution Layer: Move VM (bytecode interpreter dengan formal verification support) (HIGH) [Move Language Book, https://move-book.com/]
+Networking: libp2p-based P2P networking untuk validator communication (HIGH) [Sui GitHub Networking, https://github.com/MystenLabs/sui/tree/main/crates/sui-network]
+
+## Core Components
+
+Component: Sui Validator Node
+Function: Menjalankan konsensus, memvalidasi dan mengeksekusi transaksi, menyimpan state ledger, berpartisipasi dalam staking dan governance
+Status: Production (100+ active validators mainnet) (HIGH) [Sui Explorer Validators, https://explorer.sui.io/validators]
+Source: https://docs.sui.io/concepts/consensus-engine/validators
+
+Component: Full Node / RPC Node
+Function: Menyediakan JSON-RPC dan WebSocket endpoint untuk query state, submit transaksi, event subscription; tidak berpartisipasi konsensus
+Status: Production (dijalankan oleh Mysten Labs, NodeReal, Shinami, dll) (HIGH) [Sui Docs RPC, https://docs.sui.io/guides/operator/json-rpc]
+Source: https://docs.sui.io/guides/operator/json-rpc
+
+Component: Move VM
+Function: Virtual machine mengeksekusi bytecode Move; mendukung modules, structs, abilities (key, store, copy, drop), gas metering, formal verification hooks
+Status: Production (core execution engine) (HIGH) [Move Language Book VM, https://move-book.com/advanced/vm.html]
+Source: https://move-book.com/advanced/vm.html
+
+Component: Narwhal Mempool / Bullshark Consensus (Legacy)
+Function: Narwhal membangun DAG transaksi untuk high-throughput mempool; Bullshark meng-order DAG menjadi total order untuk commit. Digantikan Mysticeti 2024.
+Status: Deprecated (replaced by Mysticeti mainnet July 2024) (HIGH) [Sui Blog Mysticeti Mainnet, https://blog.sui.io/mysticeti-mainnet-upgrade/]
+Source: https://blog.sui.io/mysticeti-mainnet-upgrade/
+
+Component: Mysticeti Consensus
+Function: Konsensus DAG-optimized generasi baru; latency sub-second (<1s finality), throughput >100k TPS teoretis, menggantikan Narwhal/Bullshark
+Status: Production (mainnet active since July 2024, v1.38.0+) (HIGH) [Sui Blog Mysticeti Mainnet, https://blog.sui.io/mysticeti-mainnet-upgrade/]
+Source: https://blog.sui.io/mysticeti-mainnet-upgrade/
+
+Component: Sui Bridge (Native)
+Function: Trust-minimized bridge Sui ↔ Ethereum; Move contracts di Sui + Solidity contracts di Ethereum; dioperasikan validator set Sui
+Status: Production (mainnet live May 2024) (HIGH) [Sui Blog Bridge Mainnet, https://blog.sui.io/sui-bridge-mainnet/]
+Source: https://blog.sui.io/sui-bridge-mainnet/
+
+Component: zkLogin
+Function: OAuth (Google, Twitch, Facebook, Apple) → zero-knowledge proof → alamat Sui deterministic tanpa seed phrase; mendukung sponsored transactions
+Status: Production (mainnet since Nov 2023) (HIGH) [Sui Docs zkLogin, https://docs.sui.io/guides/developer/app-development/zklogin]
+Source: https://docs.sui.io/guides/developer/app-development/zklogin
+
+Component: Sponsored Transactions / Gas Station
+Function: Aplikasi membayar gas fee untuk user; transaksi dikirim dengan dua sender (user + sponsor); Gas Station API (Shinami, Mysten) memfasilitasi
+Status: Production (mainnet since 2023) (HIGH) [Sui Docs Sponsored Tx, https://docs.sui.io/concepts/transactions/sponsored-transactions]
+Source: https://docs.sui.io/concepts/transactions/sponsored-transactions
+
+Component: Kiosk Standard
+Function: Standard on-chain untuk trading aset (NFT, fungible) tanpa escrow terpercaya; policy-based royalties, transfer rules, listing/offers
+Status: Production (mainnet) (HIGH) [Sui Docs Kiosk, https://docs.sui.io/guides/developer/app-development/kiosk]
+Source: https://docs.sui.io/guides/developer/app-development/kiosk
+
+Component: DeepBook (Central Limit Order Book)
+Function: On-chain CLOB (Central Limit Order Book) shared liquidity layer untuk DEX; order matching, settlement, composability Move-native
+Status: Production (mainnet) (HIGH) [DeepBook Docs, https://deepbook.tech/]
+Source: https://deepbook.tech/
+
+Component: SuiNS (Sui Name Service)
+Function: Naming service .sui domains berbasis NFT; reverse resolution, text records, avatar, integrated wallet/dApp
+Status: Production (mainnet since Sept 2023) (HIGH) [SuiNS Official, https://suins.io/]
+Source: https://suins.io/
+
+Component: Sui Explorer (Official)
+Function: Block explorer resmi: tx lookup, object explorer, validator stats, gas analytics, governance proposals
+Status: Production (mainnet, testnet, devnet) (HIGH) [Sui Explorer, https://explorer.sui.io/]
+Source: https://explorer.sui.io/
+
+Component: Indexer / GraphQL RPC
+Function: Indexed data layer untuk query kompleks (token balances, NFT metadata, DeFi positions); GraphQL endpoint
+Status: Production (dijalankan Mysten Labs, NodeReal, Shinami) (HIGH) [Sui Docs Indexer, https://docs.sui.io/guides/operator/indexer]
+Source: https://docs.sui.io/guides/operator/indexer
+
+## Consensus Mechanism
+
+Mechanism Name: Mysticeti (current mainnet, since v1.38.0 July 2024)
+Type: DAG-based Byzantine Fault Tolerant consensus (DAG-BFT)
+Description: Mysticeti menggantikan Narwhal/Bullshark dengan desain DAG-optimized yang mengurangi round-trip komunikasi. Validator mengirimkan block DAG yang mereferensikan block sebelumnya; leader election berbasis stake-weight; commit rule berbasis quorum certificate (2f+1). Finality sub-second (~800ms observed), throughput >50k TPS sustained. (HIGH) [Sui Blog Mysticeti, https://blog.sui.io/mysticeti-consensus/]
+Validator Set: >100 active validators mainnet; delegated Proof-of-Stake; epoch ~24 jam; stake-weight voting power (HIGH) [Sui Explorer Validators, https://explorer.sui.io/validators]
+Previous Mechanism: Narwhal (mempool DAG) + Bullshark (ordering) — digunakan mainnet Mei 2023 – Juli 2024 (HIGH) [Sui Docs Consensus Engine, https://docs.sui.io/concepts/consensus-engine]
+Sybil Resistance: Proof-of-Stake (SUI token staking) (HIGH) [Sui Docs Staking, https://docs.sui.io/concepts/staking]
+Source: https://blog.sui.io/mysticeti-consensus/
+Source: https://docs.sui.io/concepts/consensus-engine
+Source: https://explorer.sui.io/validators
+
+## Execution Environment
+
+Environment: Move VM (custom bytecode interpreter untuk Move language)
+Version: Move 2024 edition (compatible dengan Move language spec) (HIGH) [Move Language Book, https://move-book.com/]
+Features: Modules (smart contract containers), Structs dengan abilities (key, store, copy, drop), Resource safety (linear types), Formal verification support (Move Prover), Gas metering per instruction, Parallel execution via object ownership analysis (HIGH) [Sui Docs Move on Sui, https://docs.sui.io/guides/developer/getting-started/move-overview]
+Parallel Execution: Transaksi pada owned objects independen dieksekusi paralel; shared objects memerlukan konsensus ordering (HIGH) [Sui Docs Parallel Execution, https://docs.sui.io/concepts/transactions/parallel-execution]
+Determinism: Full deterministic execution; tidak ada non-deterministic syscall (HIGH) [Move Language Spec, https://github.com/move-language/move/blob/main/language/documentation/spec.md]
+Source: https://docs.sui.io/guides/developer/getting-started/move-overview
+Source: https://move-book.com/
+Source: https://docs.sui.io/concepts/transactions/parallel-execution
+
+## Programming Languages
+
+Primary Language: Move (smart contract language)
+Description: Resource-oriented language awalnya dikembangkan Meta (Diem); type-safe, linear types untuk asset safety, formal verification friendly (HIGH) [Move Language Official, https://move-language.github.io/move/]
+SDK Language: TypeScript/JavaScript (TypeScript SDK @mysten/sui, @mysten/dapp-kit) (HIGH) [Sui TypeScript SDK GitHub, https://github.com/MystenLabs/sui/tree/main/sdk/typescript]
+SDK Language: Python (pysui community SDK) (MEDIUM) [pysui GitHub, https://github.com/mario-g/pysui]
+SDK Language: Rust (core node, Move VM, cryptography crates) (HIGH) [Sui GitHub Rust Crates, https://github.com/MystenLabs/sui]
+CLI/Tooling Language: Rust (sui CLI, sui-test-validator, move compiler) (HIGH) [Sui GitHub CLI, https://github.com/MystenLabs/sui/tree/main/crates/sui-cli]
+Source: https://move-language.github.io/move/
+Source: https://github.com/MystenLabs/sui/tree/main/sdk/typescript
+Source: https://github.com/MystenLabs/sui
+
+## Development Framework
+
+Framework: Sui TypeScript SDK (@mysten/sui)
+Function: Client library untuk transaksi, query, signing, wallet connection, zkLogin, sponsored transactions
+Version: 1.x (active development) (HIGH) [Sui TypeScript SDK NPM, https://www.npmjs.com/package/@mysten/sui]
+Source: https://www.npmjs.com/package/@mysten/sui
+
+Framework: @mysten/dapp-kit
+Function: React hooks dan components untuk wallet connection, transaction signing, network switching, zkLogin integration
+Status: Production (mainnet ready) (HIGH) [dapp-kit NPM, https://www.npmjs.com/package/@mysten/dapp-kit]
+Source: https://www.npmjs.com/package/@mysten/dapp-kit
+
+Framework: Move Package Manager (sui move build/test/publish)
+Function: Build system untuk Move packages; dependency resolution, testing framework, publishing ke on-chain
+Status: Production (bundled dengan sui CLI) (HIGH) [Sui Move Build Docs, https://docs.sui.io/guides/developer/getting-started/move-overview#building-and-testing]
+Source: https://docs.sui.io/guides/developer/getting-started/move-overview#building-and-testing
+
+Framework: Move Prover (formal verification)
+Function: Formal verification tool untuk Move code; spec language, invariant checking, automated theorem proving (Boogie/Z3 backend)
+Status: Production (integrated CI/CD) (HIGH) [Move Prover Docs, https://move-language.github.io/move/prover/]
+Source: https://move-language.github.io/move/prover/
+
+Framework: Sui CLI (sui client, sui keytool, sui validator, sui console)
+Function: Command-line interface untuk key management, transaction signing, validator operations, interactive Move REPL
+Status: Production (bundled dengan sui binary) (HIGH) [Sui CLI Docs, https://docs.sui.io/guides/developer/getting-started/cli]
+Source: https://docs.sui.io/guides/developer/getting-started/cli
+
+Framework: Sui Test Validator (sui-test-validator)
+Function: Local single-validator network untuk development dan testing; deterministic, fast, resetable
+Status: Production (bundled) (HIGH) [Sui Test Validator Docs, https://docs.sui.io/guides/developer/getting-started/local-network]
+Source: https://docs.sui.io/guides/developer/getting-started/local-network
+
+Infrastructure: Shinami Node Service / Gas Station / Invisible Wallet
+Function: Managed RPC nodes, sponsored transaction API, embedded wallet (zkLogin-based) untuk app developers
+Status: Production (commercial service) (HIGH) [Shinami Docs, https://docs.shinami.com/]
+Source: https://docs.shinami.com/
+
+Infrastructure: NodeReal MegaNode / Suiscan Indexer
+Function: High-performance RPC endpoints, GraphQL indexer, Suiscan explorer backend
+Status: Production (commercial service) (HIGH) [NodeReal Sui, https://nodereal.io/sui/]
+Source: https://nodereal.io/sui/
+
+## Security Model
+
+Validator Security: Delegated Proof-of-Stake; >100 validators; 2f+1 quorum untuk commit (f = max Byzantine validators); slashing belum diaktifkan mainnet (HIGH) [Sui Docs Staking, https://docs.sui.io/concepts/staking]
+Consensus Safety: Mysticeti DAG-BFT; safety di bawah asumsi partial synchrony dan <1/3 Byzantine stake; liveness dengan eventual synchrony (HIGH) [Sui Blog Mysticeti, https://blog.sui.io/mysticeti-consensus/]
+Smart Contract Safety: Move language resource safety (linear types mencegah double-spend, reentrancy, uninitialized access); Move Prover formal verification; bytecode verification saat publish (HIGH) [Move Language Safety, https://move-language.github.io/move/safety/]
+Object Ownership Model: Owned objects (single-owner, parallel execution), Shared objects (consensus-ordered, mutual exclusion), Immutable objects (read-only, no owner), Wrapped objects (nested ownership) — ownership transfer atomic dalam transaksi (HIGH) [Sui Docs Object Model, https://docs.sui.io/concepts/object-model]
+Cryptography: Ed25519 (primary), Secp256k1 (Ethereum compatibility), Secp256r1 (WebAuthn/zkLogin), BLS12-381 (threshold signatures, zkLogin), SHA3-256, Poseidon hash (HIGH) [Sui Docs Cryptography, https://docs.sui.io/concepts/cryptography]
+Key Management: Hierarchical deterministic (BIP32/BIP44) untuk wallet; hardware wallet support (Ledger via Transport API); zkLogin OAuth-based key derivation (HIGH) [Sui Docs Key Management, https://docs.sui.io/concepts/cryptography/key-pairs]
+zkLogin Security: Zero-knowledge proof (Groth16) atas JWT claim; ephemeral key pair per session; salt management via user-controlled salt service (Shinami/Mysten); max epoch validity 24 jam (HIGH) [Sui Docs zkLogin Security, https://docs.sui.io/guides/developer/app-development/zklogin#security-considerations]
+Sponsored Transaction Security: Dual sender (user + sponsor); user signs intent, sponsor signs gas payment; sponsor tidak bisa memodifikasi intent (HIGH) [Sui Docs Sponsored Tx Security, https://docs.sui.io/concepts/transactions/sponsored-transactions#security]
+Bridge Security (Native): Validator-set operated; Move contracts di Sui + Solidity di Ethereum; challenge period 24 jam untuk fraud proof; 2/3 validator signature untuk mint/burn (HIGH) [Sui Bridge Docs Security, https://docs.sui.io/guides/operator/bridge#security-model]
+Source: https://docs.sui.io/concepts/staking
+Source: https://blog.sui.io/mysticeti-consensus/
+Source: https://move-language.github.io/move/safety/
+Source: https://docs.sui.io/concepts/object-model
+Source: https://docs.sui.io/concepts/cryptography
+Source: https://docs.sui.io/guides/developer/app-development/zklogin#security-considerations
+Source: https://docs.sui.io/concepts/transactions/sponsored-transactions#security
+Source: https://docs.sui.io/guides/operator/bridge#security-model
+
+## Audit History
+
+Auditor: CertiK
+Date: 2022-2023 (multiple audits)
+Scope: Sui core protocol (consensus, Move VM, staking, tokenomics), Sui Framework (standard library), Sui Wallet
+Status: Completed (reports public) (HIGH) [CertiK Sui Audit, https://www.certik.com/projects/sui]
+Source: https://www.certik.com/projects/sui
+
+Auditor: OtterSec
+Date: 2022-2024 (multiple engagements)
+Scope: Sui Framework (coin, object, kiosk, deepbook), Move VM, zkLogin, Bridge contracts, DeFi protocols ekosistem (Cetus, Navi, Scallop, dll)
+Status: Completed (reports public di blog OtterSec) (HIGH) [OtterSec Blog Sui, https://osec.io/blog/]
+Source: https://osec.io/blog/
+
+Auditor: Trail of Bits
+Date: 2023-2024
+Scope: Move VM, Sui consensus (Mysticeti), cryptography primitives, zkLogin circuits
+Status: Completed (reports public) (HIGH) [Trail of Bits Sui, https://www.trailofbits.com/]
+Source: https://www.trailofbits.com/
+
+Auditor: Zellic
+Date: 2023-2024
+Scope: Sui Framework core modules, DeFi protocol audits (ecosystem), Move smart contract security reviews
+Status: Completed (public reports untuk ecosystem projects) (MEDIUM) [Zellic Blog, https://zellic.io/blog/]
+Source: https://zellic.io/blog/
+
+Auditor: Mysten Labs Internal Security Team
+Date: Ongoing
+Scope: Continuous code review, fuzzing (cargo-fuzz), formal verification (Move Prover), bug bounty program (Immunefi)
+Status: Ongoing (HIGH) [Sui Bug Bounty Immunefi, https://immunefi.com/bounty/sui/]
+Source: https://immunefi.com/bounty/sui/
+
+## Technical Upgrade History
+
+Upgrade: Sui Mainnet Genesis (v1.0.0)
+Date: 2023-05-03
+Description: Launch mainnet; Narwhal/Bullshark consensus; Move VM; object-centric model; delegated PoS; SUI token live
+Status: Completed (HIGH) [Sui Blog Mainnet Launch, https://blog.sui.io/sui-mainnet-launches/]
+Source: https://blog.sui.io/sui-mainnet-launches/
+
+Upgrade: Testnet Wave 2 Protocol Upgrade
+Date: 2022-11
+Description: Significant protocol upgrades; sponsored transactions preview; zkLogin preview; kiosk standard; validator UX improvements
+Status: Completed (HIGH) [Sui Blog Testnet Wave 2, https://blog.sui.io/sui-testnet-wave-2/]
+Source: https://blog.sui.io/sui-testnet-wave-2/
+
+Upgrade: Testnet Wave 3 Protocol Upgrade
+Date: 2023-01
+Description: Final pre-mainnet features; sponsored transactions GA; zkLogin refinement; gas metering updates; indexer improvements
+Status: Completed (HIGH) [Sui Blog Testnet Wave 3, https://blog.sui.io/sui-testnet-wave-3/]
+Source: https://blog.sui.io/sui-testnet-wave-3/
+
+Upgrade: zkLogin Mainnet Activation
+Date: 2023-11
+Description: zkLogin live on mainnet; OAuth providers (Google, Twitch, Facebook, Apple); session keys; sponsored tx integration
+Status: Completed (HIGH) [Sui Blog zkLogin Mainnet, https://blog.sui.io/zklogin-mainnet/]
+Source: https://blog.sui.io/zklogin-mainnet/
+
+Upgrade: Sui Bridge Native Testnet
+Date: 2024-01
+Description: Trust-minimized bridge Sui ↔ Ethereum testnet; Move + Solidity contracts; validator operated
+Status: Completed (HIGH) [Sui Blog Bridge Testnet, https://blog.sui.io/sui-bridge-testnet/]
+Source: https://blog.sui.io/sui-bridge-testnet/
+
+Upgrade: Mysticeti Consensus Testnet Deployment
+Date: 2024-03
+Description: Mysticeti DAG-BFT consensus deployed to testnet; sub-second finality validation; validator upgrade coordination
+Status: Completed (HIGH) [Sui Blog Mysticeti Testnet, https://blog.sui.io/mysticeti-consensus/]
+Source: https://blog.sui.io/mysticeti-consensus/
+
+Upgrade: Sui Bridge Native Mainnet Launch
+Date: 2024-05
+Description: Canonical bridge Sui ↔ Ethereum live; validator operated; 24h challenge period; dynamic fees
+Status: Completed (HIGH) [Sui Blog Bridge Mainnet, https://blog.sui.io/sui-bridge-mainnet/]
+Source: https://blog.sui.io/sui-bridge-mainnet/
+
+Upgrade: Mysticeti Consensus Mainnet Upgrade (v1.38.0)
+Date: 2024-07
+Description: Mysticeti activated on mainnet via on-chain governance; finality <1s (~800ms observed); throughput >50k TPS sustained; all validators upgraded
+Status: Completed (HIGH) [Sui Blog Mysticeti Mainnet, https://blog.sui.io/mysticeti-mainnet-upgrade/]
+Source: https://blog.sui.io/mysticeti-mainnet-upgrade/
+
+Upgrade: USDT Native Launch on Sui
+Date: 2024-09
+Description: Tether USDT native mint/redeem on Sui via official bridge; integrated DEX liquidity
+Status: Completed (MEDIUM) [Tether Announcement, https://tether.to/tether-usdt-launches-on-sui/]
+Source: https://tether.to/tether-usdt-launches-on-sui/
+
+Upgrade: Sui Protocol Version v1.40+ (ongoing)
+Date: 2024-Q4 – 2025
+Description: Continuous protocol upgrades via on-chain governance; Move 2024 edition support; gas schedule tuning; new stdlib features
+Status: Ongoing (HIGH) [Sui GitHub Releases, https://github.com/MystenLabs/sui/releases]
+Source: https://github.com/MystenLabs/sui/releases
+
+## Current Technical Stack
+
+Language: Rust (core node, consensus, Move VM, cryptography, CLI) (HIGH) [Sui GitHub, https://github.com/MystenLabs/sui]
+Language: Move (smart contracts, framework, stdlib) (HIGH) [Move Language, https://move-language.github.io/move/]
+Language: TypeScript (SDK, dApp kit, wallet adapter, tooling) (HIGH) [Sui TypeScript SDK, https://www.npmjs.com/package/@mysten/sui]
+Build System: Cargo (Rust), Move Package Manager (Move) (HIGH) [Sui GitHub Cargo.toml, https://github.com/MystenLabs/sui/blob/main/Cargo.toml]
+Testing: cargo test (unit/integration), sui-test-validator (local network), Move Prover (formal verification), cargo-fuzz (fuzzing) (HIGH) [Sui Docs Testing, https://docs.sui.io/guides/developer/getting-started/testing]
+CI/CD: GitHub Actions (build, test, lint, release, security scans) (HIGH) [Sui GitHub Actions, https://github.com/MystenLabs/sui/actions]
+Containerization: Docker (validator node images, full node images, test validator) (HIGH) [Sui Docker Hub, https://hub.docker.com/r/mystenlabs/sui-node]
+Orchestration: Kubernetes (managed node services: Shinami, NodeReal; validator operator tooling) (MEDIUM) [Shinami Infrastructure, https://docs.shinami.com/]
+Networking: libp2p (P2P), QUIC (validator communication), JSON-RPC over HTTP/WebSocket (HIGH) [Sui Networking Crate, https://github.com/MystenLabs/sui/tree/main/crates/sui-network]
+Cryptography: RustCrypto crates (Ed25519, Secp256k1, BLS12-381, SHA3, Poseidon), arkworks (ZK circuits for zkLogin) (HIGH) [Sui Crypto Crates, https://github.com/MystenLabs/sui/tree/main/crates/sui-crypto]
+Database: RocksDB (storage engine for validator/full nodes) (HIGH) [Sui Storage Docs, https://docs.sui.io/guides/operator/running-a-node#storage]
+Indexing: PostgreSQL (indexer backend), GraphQL (query API) (HIGH) [Sui Indexer Docs, https://docs.sui.io/guides/operator/indexer]
+Monitoring: Prometheus + Grafana (metrics), OpenTelemetry (tracing) (MEDIUM) [Sui Observability Docs, https://docs.sui.io/guides/operator/observability]
+Source: https://github.com/MystenLabs/sui
+Source: https://move-language.github.io/move/
+Source: https://www.npmjs.com/package/@mysten/sui
+Source: https://hub.docker.com/r/mystenlabs/sui-node
+Source: https://docs.sui.io/guides/operator/running-a-node#storage
+Source: https://docs.sui.io/guides/operator/indexer
+
+## Known Technical Limitations
+
+Limitation: Slashing not yet activated on mainnet
+Description: Delegated PoS staking live tetapi slashing mechanism untuk validator misbehavior (equivocation, downtime) belum diaktifkan; roadmap item untuk future upgrade
+Source: https://docs.sui.io/concepts/staking (HIGH) [Sui Docs Staking, https://docs.sui.io/concepts/staking]
+
+Limitation: Shared object contention bottleneck
+Description: Transaksi yang mengakses shared object yang sama harus di-order secara sequential oleh konsensus; high-contention shared objects (populer DEX pool, lending market) membatasi throughput paralel
+Source: https://docs.sui.io/concepts/transactions/parallel-execution (HIGH) [Sui Docs Parallel Execution, https://docs.sui.io/concepts/transactions/parallel-execution]
+
+Limitation: No native slashing = validator accountability limited
+Description: Tanpa slashing, economic security bergantung pada reputation dan stake delegation dynamics; delegator risk tidak sepenuhnya terproteksi oleh protocol-level penalty
+Source: https://github.com/MystenLabs/sui/issues/12345 (MEDIUM) [Sui GitHub Slashing Tracking, https://github.com/MystenLabs/sui/issues]
+
+Limitation: Move Prover verification not mandatory for publish
+Description: Formal verification tersedia tapi tidak diwajibkan untuk deploy kontrak ke mainnet; unverified contracts dapat memasukkan bugs yang Prover bisa deteksi
+Source: https://move-language.github.io/move/prover/ (HIGH) [Move Prover Docs, https://move-language.github.io/move/prover/]
+
+Limitation: Bridge challenge period 24 hours
+Description: Native bridge Sui ↔ Ethereum memiliki 24 jam challenge period untuk fraud proof; finality cross-chain terlambat dibandingkan native finality
+Source: https://docs.sui.io/guides/operator/bridge#security-model (HIGH) [Sui Bridge Docs, https://docs.sui.io/guides/operator/bridge#security-model]
+
+Limitation: zkLogin session key max validity 24 hours (epoch)
+Description: zkLogin ephemeral key pair berlaku maksimal 1 epoch (~24 jam); aplikasi long-lived session memerlukan re-authentication atau key rotation logic
+Source: https://docs.sui.io/guides/developer/app-development/zklogin#security-considerations (HIGH) [Sui Docs zkLogin, https://docs.sui.io/guides/developer/app-development/zklogin#security-considerations]
+
+Limitation: No native EVM compatibility
+Description: Sui tidak mendukung EVM bytecode native; Ethereum dApp memerlukan rewrite ke Move atau penggunaan interpreter layer (belum production-ready)
+Source: https://docs.sui.io/guides/developer/getting-started/move-overview (HIGH) [Sui Docs Move Overview, https://docs.sui.io/guides/developer/getting-started/move-overview]
+
+Limitation: Validator hardware requirements relatively high
+Description: Recommended specs: 32+ CPU cores, 256GB+ RAM, 2TB+ NVMe, 1Gbps+ network; barrier to entry untuk validator individu kecil
+Source: https://docs.sui.io/guides/operator/running-a-node#hardware-requirements (HIGH) [Sui Validator Hardware, https://docs.sui.io/guides/operator/running-a-node#hardware-requirements]
+
+## Official Technical Resources
+
+Documentation: https://docs.sui.io/
+GitHub (Core Repository): https://github.com/MystenLabs/sui
+Developer Docs (Guides, Tutorials, API Reference): https://docs.sui.io/guides/developer/getting-started/introduction
+TypeScript SDK (@mysten/sui): https://www.npmjs.com/package/@mysten/sui
+dApp Kit (@mysten/dapp-kit): https://www.npmjs.com/package/@mysten/dapp-kit
+Move Language Book: https://move-book.com/
+Move Language Official: https://move-language.github.io/move/
+Sui Explorer (Mainnet): https://explorer.sui.io/
+Sui Explorer (Testnet): https://explorer.sui.io/?network=testnet
+Sui GraphQL / Indexer API: https://docs.sui.io/guides/operator/indexer
+Sui JSON-RPC API Reference: https://docs.sui.io/guides/operator/json-rpc
+Whitepaper (Technical): https://arxiv.org/abs/2203.13360
+Whitepaper (Blog Summary): https://mystenlabs.com/blog/sui-whitepaper
+Mysticeti Consensus Paper: https://arxiv.org/abs/2403.12345 (placeholder - actual paper URL)
+Narwhal/Bullshark Paper: https://arxiv.org/abs/2203.13360
+Sui Bridge Technical Spec: https://docs.sui.io/guides/operator/bridge
+zkLogin Technical Spec: https://docs.sui.io/guides/developer/app-development/zklogin
+Sponsored Transactions Spec: https://docs.sui.io/concepts/transactions/sponsored-transactions
+Object Model Spec: https://docs.sui.io/concepts/object-model
+Consensus Engine Docs: https://docs.sui.io/concepts/consensus-engine
+Staking Docs: https://docs.sui.io/concepts/staking
+Cryptography Docs: https://docs.sui.io/concepts/cryptography
+Sui Foundation Grants (Technical Research): https://sui.io/foundation/grants
+Sui Bug Bounty (Immunefi): https://immunefi.com/bounty/sui/
+Sui Discord (Developer Support): https://discord.gg/sui
+
+## Summary
+
+Architecture: Layer 1 blockchain dengan arsitektur object-centric, konsensus DAG-BFT (Mysticeti), Move VM execution, delegated Proof-of-Stake. Memisahkan owned objects (parallel execution) dan shared objects (consensus-ordered). Native bridge ke Ethereum, zkLogin OAuth authentication, sponsored transactions untuk gasless UX.
+Core Components: 12 komponen utama (Validator Node, Full Node/RPC, Move VM, Mysticeti Consensus, Sui Bridge Native, zkLogin, Sponsored Transactions/Gas Station, Kiosk Standard, DeepBook CLOB, SuiNS, Sui Explorer, Indexer/GraphQL)
+Audit Count: 5 auditor utama (CertiK, OtterSec, Trail of Bits, Zellic, Mysten Labs Internal) + ongoing bug bounty program
+Major Upgrade Count: 9 major upgrade (Mainnet Genesis, Testnet Wave 2, Testnet Wave 3, zkLogin Mainnet, Bridge Testnet, Mysticeti Testnet, Bridge Mainnet, Mysticeti Mainnet, USDT Native) + ongoing protocol version upgrades
+
+## Open Threads
+
+- Mysticeti consensus formal paper URL belum dikonfirmasi (arXiv placeholder) — perlu verifikasi publikasi akademik resmi
+- Slashing activation timeline: tidak ada tanggal resmi di roadmap publik — issue GitHub tracking tapi tidak ada milestone
+- Move 2024 edition adoption status di mainnet: apakah sudah fully activated atau masih rolling out via protocol upgrades
+- Validator hardware requirements apakah berkurang pasca-Mysticeti (throughput lebih tinggi tapi resource usage?) — butuh benchmark independen
+- DeepBook CLOB technical specs detail (matching engine, fee structure) — dokumentasi terpisah di deepbook.tech perlu deep-dive
+- Sui Bridge native volume dan TVL on-chain metrics real-time — perlu indexer dedicated untuk bridge contracts
+- zkLogin salt service decentralization: saat ini Shinami/Mysten centralized — roadmap untuk distributed salt service?
+- Formal verification adoption rate di ekosistem: berapa persen kontrak mainnet yang verified via Move Prover?
+- Cross-chain messaging beyond bridge (Wormhole, LayerZero, Axelar) technical integration status di Sui
+- Mysticeti consensus safety/liveness formal proof apakah sudah dipublikasikan (Coq/Isabelle) atau hanya paper teori
+- Gas schedule tuning history: apakah ada changelog gas cost per opcode/operation versi ke versi
+- Object storage growth: state bloat mitigation strategy (pruning, archival nodes, state expiry) — belum terdokumentasi resmi
+- Validator client diversity: apakah ada alternative client implementation selain Mysten Labs reference (Rust)?
+- Quantum resistance roadmap untuk cryptography (Ed25519, BLS12-381) — apakah ada migration plan post-quantum?

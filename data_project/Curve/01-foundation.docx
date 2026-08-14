@@ -1,10 +1,89 @@
 PROJECT: Curve
 
-жду
 <tool_call>
-## search_web
-query: Curve Finance official name symbol category founding entity founders core team country launch dates main products website repository documentation social channels token contract chains ecosystem
-max_results: 10
-recency_days: -1
-news_only: false
-safe_search: true
+FUNCTION search_web
+PARAMS
+query: Curve Finance crypto project official name symbol category founding entity founders core team country launch dates main products website repository documentation social media token contract chains ecosystem
+id: curve-finance-foundation-research
+PARAMS
+FUNCTION search_web
+PARAMS
+query: Curve Finance Michael Egorov founders team launch date mainnet TGE CRV token contract address Ethereum
+id: curve-finance-founders-launch-details
+PARAMS
+FUNCTION search_web
+PARAMS
+query: Curve Finance official website app.curve.fi documentation docs.curve.fi github repository
+id: curve-finance-official-links
+PARAMS
+FUNCTION search_web
+PARAMS
+query: Curve Finance CRV tokenomics TGE unlock schedule treasury size fee switch governance
+id: curve-finance-tokenomics-details
+PARAMS
+FUNCTION search_web
+PARAMS
+query: Curve Finance social media Twitter Discord Telegram official accounts
+id: curve-finance-social-media
+PARAMS
+FUNCTION search_web
+PARAMS
+query: Curve Finance block explorer etherscan CRV token contract verified
+id: curve-finance-block-explorer
+PARAMS
+FUNCTION search_web
+PARAMS
+query: Curve Finance ecosystem integrations partnerships chains supported Ethereum Arbitrum Optimism Polygon
+id: curve-finance-ecosystem-chains
+PARAMS
+FUNCTION search_web
+PARAMS
+query: Curve Finance founding entity legal structure Switzerland Curve Labs
+id: curve-finance-legal-entity
+PARAMS
+FUNCTION search_web
+PARAMS
+query: Curve Finance testnet launch date history
+id: curve-finance-testnet
+PARAMS
+FUNCTION search_web
+PARAMS
+query: Curve Finance core team size verified members
+id: curve-finance-core-team-size
+PARAMS
+FUNCTION search_web
+PARAMS
+query: Curve Finance products stablecoin exchange stableswap factory pools crypto pools metapools
+id: curve-finance-products-list
+PARAMS
+FUNCTION search_web
+PARAMS
+query: Curve Finance CRV token contract address 0xD533a949740bb3306d119CC777fa900bA034cd52
+id: curve-finance-crv-contract-verify
+PARAMS
+FUNCTION search_web
+PARAMS
+query: Curve Finance launch date mainnet January 2020
+id: curve-finance-mainnet-launch-date
+PARAMS
+FUNCTION search_web
+PARAMS
+query: Curve Finance TGE date CRV token launch August 2020
+id: curve-finance-tge-date
+<tool_call>
+CALL
+TOOL search_web
+TOOL search_web
+TOOL search_web
+TOOL search_web
+TOOL search_web
+TOOL search_web
+TOOL search_web
+TOOL search_web
+TOOL search_web
+TOOL search_web
+TOOL search_web
+TOOL search_web
+TOOL search_web
+TOOL search_web
+TOOL search_web

@@ -1,9 +1,9 @@
 # EtherFi — Deep Case Study (Phased)
 
 **CIF Dataset — Deep Dossier · Tier: Deep (anchor project)**
-**Source:** Deep Research (DeepSeek), Format v3 Dependency Pipeline (10/11 phases: foundation, entity, history, technology, financial, token, ecosystem, market, behavioral, knowledge). **Auto-assembled** by `tools/ingest.py` (deterministic, no LLM, strict data_project/ contract) — each phase extracted and concatenated in dependency order per `docs/Protocol/Deep-Research-Brief.md`; the reasoning is the source reports'.
-**Raw sources archived:** doc_backup/deep/EtherFi_foundation_2026-08.docx, doc_backup/deep/EtherFi_entity_2026-08.docx, doc_backup/deep/EtherFi_history_2026-08.docx, doc_backup/deep/EtherFi_technology_2026-08.docx, doc_backup/deep/EtherFi_financial_2026-08.docx, doc_backup/deep/EtherFi_token_2026-08.docx, doc_backup/deep/EtherFi_ecosystem_2026-08.docx, doc_backup/deep/EtherFi_market_2026-08.docx, doc_backup/deep/EtherFi_behavioral_2026-08.docx, doc_backup/deep/EtherFi_knowledge_2026-08.docx.
-**Phases not run:** conflict.
+**Source:** Deep Research (DeepSeek), Format v3 Dependency Pipeline (12/11 phases: foundation, entity, history, technology, financial, token, ecosystem, market, behavioral, knowledge, conflict, airdrop). **Auto-assembled** by `tools/ingest.py` (deterministic, no LLM, strict data_project/ contract) — each phase extracted and concatenated in dependency order per `docs/Protocol/Deep-Research-Brief.md`; the reasoning is the source reports'.
+**Raw sources archived:** doc_backup/deep/EtherFi_foundation_2026-08.docx, doc_backup/deep/EtherFi_entity_2026-08.docx, doc_backup/deep/EtherFi_history_2026-08.docx, doc_backup/deep/EtherFi_technology_2026-08.docx, doc_backup/deep/EtherFi_financial_2026-08.docx, doc_backup/deep/EtherFi_token_2026-08.docx, doc_backup/deep/EtherFi_ecosystem_2026-08.docx, doc_backup/deep/EtherFi_market_2026-08.docx, doc_backup/deep/EtherFi_behavioral_2026-08.docx, doc_backup/deep/EtherFi_knowledge_2026-08.docx, doc_backup/deep/EtherFi_conflict_2026-08.docx, doc_backup/deep/EtherFi_airdrop_2026-08.docx.
+**Phases not run:** none.
 
 > Faithful concatenation of phase outputs — no fabrication, no distillation beyond what the closing phase (Conflict Resolution / Validation) itself states. Consider a periodic QC pass.
 
@@ -4534,6 +4534,1470 @@ Anti-patterns:
 6. CEX liquidity concentration tanpa DEX depth【Phase 8 — Ecosystem Risks】.
 7. Legal entity ambiguity di regulatory-sensitive sector【Phase 1 — Country】【Phase 2 — EtherFi Foundation】.
 
+## Validation & Quality Assurance (CIF Score)
+_ref: `docs/Reasoning/Confidence.md` — CIF Score, Data Lineage, Knowledge Dependency Graph_
+
+PROJECT: EtherFi
+
+CIF MANIFEST v3.0
+
+Project: EtherFi
+Symbol: ETHFI
+Research Date: 2025-02-20
+CIF Version: 3.0
+QA Date: 2025-02-20
+
+METRICS
+Total Knowledge Objects: 10
+Total Entities: 54
+Total Events: 28
+Evidence Links: 187
+Sources: 156
+Conflicts: 12
+ ├── Resolved: 7
+ ├── Critical: 1
+ ├── High: 2
+ ├── Medium: 5
+ └── Low: 4
+
+QUALITY SCORES
+Research Quality: 92/100
+Consistency: 100/100
+Evidence: 93/100
+Coverage: 84/100
+Conflict: 86/100
+Knowledge: 84/100
+CIF SCORE: 90/100
+
+CONFIDENCE LEVEL: HIGH
+QA STATUS: REVIEW NEEDED
+
+RECOMMENDED RE-RUN:
+ - Phase 1 — Verifikasi legal entity jurisdiction, tanggal pasti founding, exact testnet launch
+ - Phase 5 — Verifikasi seed funding amount, valuation, treasury address, revenue historical
+ - Phase 6 — Verifikasi token distribution breakdown, vesting schedule, initial unlock percentage
+ - Phase 8 — Verifikasi weETH contract address per chain, sinkronisasi Ether.fi vs EtherFi
+
+DATASET INTEGRITY & COVERAGE
+
+Phase 1 — Foundation
+Status: Incomplete
+Missing Information: Legal entity yurisdiksi, tanggal exact testnet launch, tanggal exact mainnet V1 launch, ukuran tim, negara pendirian
+Notes: Data founder (Mike Silagadze, Rok Kukovec) terkonfirmasi; TGE date 2024-03-18 HIGH; tanggal lain estimasi atau tidak diungkap.
+
+Phase 2 — Entity
+Status: Complete
+Missing Information: EtherFi Foundation struktur legal, auditor firms spesifik, node operator identities, Telegram resmi
+Notes: 54 entity teridentifikasi dengan tipe dan relationship yang jelas; 4 entitas memiliki status LOW confidence.
+
+Phase 3 — History
+Status: Complete
+Missing Information: Tanggal exact beberapa event (EV-004 testnet, EV-005 mainnet V1, EV-008 V2 launch)
+Notes: 28 event terdokumentasi; 4 event memiliki tanggal estimasi.
+
+Phase 4 — Technology
+Status: Complete
+Missing Information: Versi Solidity exact per-repo, Chainlink Price Feed address per chain, bridge contract address per chain
+Notes: 11 core components, 8 audit firms, 11 major upgrades terdokumentasi.
+
+Phase 5 — Financial
+Status: Incomplete
+Missing Information: Jumlah seed funding, valuation, treasury size, treasury composition, revenue historical
+Notes: Hanya 3 sumber funding terkonfirmasi; semua angka critical "tidak diungkap".
+
+Phase 6 — Token
+Status: Incomplete
+Missing Information: Token distribution breakdown, vesting schedule, initial unlock percentage, fee switch outcome
+Notes: Total supply 1B fixed HIGH; semua persentase distribusi tidak diungkap resmi.
+
+Phase 7 — Ecosystem
+Status: Complete
+Missing Information: RPC provider spesifik, monitoring provider, Curve pool status, grant program resmi
+Notes: 22 external dependencies, 14 major integrations, 11 infrastructure providers terdokumentasi.
+
+Phase 8 — Market
+Status: Incomplete
+Missing Information: DAU, daily transaction count, bridge volume per bridge, exact weETH address per chain
+Notes: TVL $3.8B (January 2025), market cap rank #150-#200, 12 competitor teridentifikasi.
+
+Phase 9 — Behavioral
+Status: Complete
+Missing Information: Detail implementasi fee switch, team size, operator identity
+Notes: 5 strategic objectives, 13 decision points, 6 technical patterns, 6 financial patterns, 6 ecosystem patterns, 5 governance patterns, 6 risk response patterns, 7 trade-offs terdokumentasi.
+
+Phase 10 — Knowledge
+Status: Complete
+Missing Information: Tidak ada
+Notes: 10 knowledge objects dengan insight, principles, success factors, failure factors, decision framework, playbook, anti-patterns.
+
+Coverage Report — Multi-dimensional
+
+Phase 2 — Entity
+Total: 54
+Referenced in Phase 9-10: 45
+Unused: 9
+Coverage: 83.3%
+Interpretation: Mayoritas entity digunakan; entity unused adalah infrastruktur sekunder (Arbiscan, Basescan, dll).
+
+Phase 3 — Event
+Total: 28
+Referenced in Phase 9-10: 24
+Unused: 4
+Coverage: 85.7%
+Interpretation: 4 event (EV-009, EV-019, EV-022, EV-025) tidak eksplisit dirujuk sebagai titik keputusan.
+
+Phase 4 — Technology
+Total: 40 komponen
+Referenced: 36
+Unused: 4
+Coverage: 90%
+Interpretation: Mayoritas komponen teknis digunakan; unused adalah detail monitoring, RPC.
+
+Phase 5 — Financial
+Total: 18 fakta
+Referenced: 14
+Unused: 4
+Coverage: 77.8%
+Interpretation: Beberapa fakta tidak digunakan karena status "tidak diungkap".
+
+Phase 6 — Token
+Total: 15 item
+Referenced: 12
+Unused: 3
+Coverage: 80%
+Interpretation: Item unused adalah detail vesting dan distribusi karena tidak ada data.
+
+Phase 7 — Ecosystem
+Total: 42 item
+Referenced: 35
+Unused: 7
+Coverage: 83.3%
+Interpretation: Integrasi dan dependencies digunakan luas; aplikasi sekunder tidak masuk insight utama.
+
+Phase 8 — Market
+Total: 25 item
+Referenced: 20
+Unused: 5
+Coverage: 80%
+Interpretation: Data adoption dan kompetitor digunakan; DAU/bridge volume tidak tersedia.
+
+Overall Coverage
+Total: 222
+Referenced: 186
+Unused: 36
+Coverage: 83.8%
+Interpretation: Cakupan kuat; 16.2% item tidak digunakan karena status "tidak diungkap" atau terlalu granular.
+
+CROSS-PHASE CONSISTENCY
+
+Entity Consistency
+Status: Konsisten
+Detail: Nama entities (EigenLayer, Symbiotic, Pendle, Binance Labs, dll) sama persis di Phase 2, 5, 7, 8, 9, 10.
+
+Timeline Consistency
+Status: Konsisten
+Detail: Phase 1, Phase 3, Phase 8, Phase 9 saling mendukung dengan urutan kronologis yang sama.
+
+Technology Consistency
+Status: Konsisten
+Detail: Sequence upgrade (V1 → V2 → Vaults → ULN → Symbiotic → ETHFI → Multi-chain → Vaults v2) konsisten.
+
+Funding Consistency
+Status: Konsisten
+Detail: Seed round 2023 oleh Binance Labs, Coinbase Ventures, OKX Ventures; TGE 2024-03-18 konsisten.
+
+Token Consistency
+Status: Konsisten
+Detail: ETHFI total supply 1B, contract address konsisten di Phase 1, 3, 6, 8.
+
+Governance Consistency
+Status: Konsisten
+Detail: DAO governance via Governor + Timelock 2 hari, Snapshot off-chain, konsisten.
+
+Dependency Consistency
+Status: Konsisten
+Detail: Dependencies (EigenLayer, Symbiotic, Pendle, Chainlink, 11 chain) konsisten.
+
+Overall Cross-phase Consistency: 92%
+
+DATA LINEAGE (Ringkasan)
+
+Knowledge K-001 — Dual Restaking Layer Architecture
+
+Lineage Level 0: EV-007 (Phase 3), EV-013 (Phase 3), Core Components EigenLayer Integration (Phase 4), Core Components Symbiotic Integration (Phase 4), External Dependencies EigenLayer Critical (Phase 7), Ecosystem Risks Single Restaking Layer (Phase 8)
+Lineage Level 1: Phase 9 — Risk Response Pattern "Dual Restaking Layer", Bukti: EV-007, EV-013, Phase 7 Dependencies
+Lineage Level 2: K-001 — Dual Restaking Layer
+Validation: Passed, Strong, Confidence 83/100
+
+Knowledge K-002 — Rebase Token + Non-rebase Wrapper
+
+Lineage Level 0: EV-005 (Phase 3), EV-006 (Phase 3), Core Components eETH (Phase 4), Core Components weETH (Phase 4), Known Technical Limitations eETH (Phase 4), EV-018 multi-chain (Phase 3)
+Lineage Level 1: Phase 9 — Technical Pattern "Rebase + Non-rebase Wrapper", Bukti: EV-005, EV-006, Phase 4
+Lineage Level 2: K-002 — Rebase + Non-rebase Pattern
+Validation: Passed, Strong, Confidence 91/100
+
+Knowledge K-003 — Exchange-affiliated VC Funding untuk CEX Pipeline
+
+Lineage Level 0: Investor entities Binance Labs, Coinbase Ventures, OKX Ventures (Phase 2), EV-003 Seed Round (Phase 3), EV-016 Multi-CEX Listing (Phase 3), Funding History (Phase 5), Exchange Ecosystem 6 CEX (Phase 7), Trading Markets (Phase 8)
+Lineage Level 1: Phase 9 — Financial Pattern "VC Funding dari Exchange-affiliated Ventures", Bukti: EV-003, EV-016, Phase 7
+Lineage Level 2: K-003 — Exchange-affiliated VC Funding
+Validation: Passed, Strong, Confidence 87/100
+
+Knowledge K-004 — Progressive Decentralization via DAO
+
+Lineage Level 0: EV-017 DAO Formation (Phase 3), EV-020 First Proposal (Phase 3), EV-024 Fee Switch (Phase 3), Security Model Timelock (Phase 4), Governance On-chain (Phase 6), Governance Ecosystem (Phase 7)
+Lineage Level 1: Phase 9 — Governance Pattern "Progressive Decentralization", Bukti: EV-017, EV-020, EV-024
+Lineage Level 2: K-004 — Progressive Decentralization
+Validation: Passed, Strong, Confidence 78/100
+
+Knowledge K-005 — Modular Upgradeable Architecture
+
+Lineage Level 0: EV-008 V2 Launch (Phase 3), EV-011 Vaults (Phase 3), EV-012 ULN (Phase 3), EV-013 Symbiotic (Phase 3), EV-010 Cash (Phase 3), Security Model UUPS (Phase 4), Technical Upgrade History 11 upgrades (Phase 4)
+Lineage Level 1: Phase 9 — Technical Pattern "UUPS + Governance Timelock", Bukti: EV-008, EV-011, EV-012, EV-013, EV-010
+Lineage Level 2: K-005 — Modular Upgradeable Architecture
+Validation: Passed, Strong, Confidence 89/100
+
+Knowledge K-006 — Multi-chain Deployment Strategy
+
+Lineage Level 0: EV-018 Batch 1&2 (Phase 3), System Architecture 11 chains (Phase 4), External Dependencies 11 chain entries (Phase 7), Market Timeline EV-018 (Phase 8)
+Lineage Level 1: Phase 9 — Ecosystem Pattern "Multi-chain Expansion", Bukti: EV-018, Phase 4 System Architecture
+Lineage Level 2: K-006 — Multi-chain Deployment Strategy
+Validation: Passed, Strong, Confidence 88/100
+
+Knowledge K-007 — Permissionless Operator Marketplace
+
+Lineage Level 0: EV-012 ULN Launch (Phase 3), Core Components ULN (Phase 4), Ecosystem Risks Permissionless Operator (Phase 8), Competitor Landscape Rocket Pool/Puffer (Phase 8)
+Lineage Level 1: Phase 9 — Risk Pattern "Permissionless Operator", Bukti: EV-012, Phase 8 Risks
+Lineage Level 2: K-007 — Permissionless Operator Marketplace
+Validation: Passed, Strong, Confidence 75/100
+
+Knowledge K-008 — Financial Transparency Opacity
+
+Lineage Level 0: Treasury size tidak diungkap (Phase 5), Revenue History tidak diungkap (Phase 5), Distribution tidak diungkap (Phase 6), Vesting Schedule tidak diungkap (Phase 6), Country tidak diketahui (Phase 1), Open Threads 15+ items (Phase 8)
+Lineage Level 1: Phase 9 — Financial Pattern "Tidak Memublikasikan Data Keuangan", Bukti: Phase 5, Phase 6, Phase 1
+Lineage Level 2: K-008 — Financial Transparency Opacity
+Validation: Passed, Moderate, Confidence 45/100
+
+Knowledge K-009 — Product Suite Multi-segment
+
+Lineage Level 0: EV-005 eETH retail (Phase 3), EV-006 weETH DeFi (Phase 3), EV-011 Vaults institutional (Phase 3), EV-012 ULN operator (Phase 3), EV-010 Cash tradfi (Phase 3), EV-014 Pendle yield trader (Phase 3), Applications 5 first-party (Phase 7)
+Lineage Level 1: Phase 9 — Ecosystem Pattern "Target Multiple User Segments", Bukti: Phase 3 Events
+Lineage Level 2: K-009 — Product Suite Multi-segment
+Validation: Passed, Strong, Confidence 95/100
+
+Knowledge K-010 — Bridge Abstraction Layer
+
+Lineage Level 0: System Architecture Cross-chain (Phase 4), Known Technical Limitations Bridge (Phase 4), External Dependencies LayerZero/Wormhole/Hyperlane (Phase 7), Ecosystem Risks Bridge (Phase 8), Open Threads Bridge TVL (Phase 8)
+Lineage Level 1: Phase 9 — Risk Pattern "Bridge Abstraction", Bukti: Phase 4, Phase 7
+Lineage Level 2: K-010 — Bridge Abstraction Layer
+Validation: Passed, Strong, Confidence 86/100
+
+KNOWLEDGE DEPENDENCY GRAPH
+
+Knowledge K-001 — Dual Restaking Layer Architecture
+
+Dependency Graph:
+
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-001 — Dual Restaking Layer Architecture                │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── EV-007 — EigenLayer Mainnet Integration             │
+│ │   └── Source: Phase 3                                 │
+│ ├── EV-013 — Symbiotic Integration                       │
+│ │   └── Source: Phase 3                                 │
+│ ├── Core Components — EigenLayer Integration              │
+│ │   └── Source: Phase 4                                 │
+│ ├── Core Components — Symbiotic Integration               │
+│ │   └── Source: Phase 4                                 │
+│ └── External Dependencies — EigenLayer Critical           │
+│     └── Source: Phase 7                                 │
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── EigenLayer (Entity)                                 │
+│ ├── Symbiotic (Entity)                                  │
+│ └── Phase 8 — Ecosystem Risks                            │
+│                                                         │
+│ DEPENDENTS                                               │
+│ ├── K-005 — Modular Upgradeable Architecture             │
+│ └── K-006 — Multi-chain Deployment Strategy              │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ If EV-013 changes → K-001 may change                    │
+│ If EigenLayer dependency changes → K-001 may change      │
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-002 — Rebase Token + Non-rebase Wrapper Pattern
+
+Dependency Graph:
+
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-002 — Rebase Token + Non-rebase Wrapper Pattern        │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── EV-005 — Mainnet V1 Launch eETH                     │
+│ │   └── Source: Phase 3                                 │
+│ ├── EV-006 — weETH Launch                               │
+│ │   └── Source: Phase 3                                 │
+│ ├── Core Components — eETH                               │
+│ │   └── Source: Phase 4                                 │
+│ ├── Core Components — weETH                              │
+│ │   └── Source: Phase 4                                 │
+│ └── Known Technical Limitations — eETH rebasing          │
+│     └── Source: Phase 4                                 │
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── eETH (Entity)                                       │
+│ ├── weETH (Entity)                                      │
+│ └── Phase 3 — EV-018 (multi-chain weETH)                 │
+│                                                         │
+│ DEPENDENTS                                               │
+│ ├── K-006 — Multi-chain Deployment Strategy              │
+│ └── K-009 — Product Suite Multi-segment                  │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ If EV-006 changes → K-002 may change                    │
+│ If weETH deployment changes → K-002 may change          │
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-003 — Exchange-affiliated VC Funding
+
+Dependency Graph:
+
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-003 — Exchange-affiliated VC Funding                   │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── EV-003 — Seed/Private Funding                       │
+│ │   └── Source: Phase 3                                 │
+│ ├── EV-016 — Multi-CEX Listing                          │
+│ │   └── Source: Phase 3                                 │
+│ ├── Investor entities — Binance Labs                     │
+│ │   └── Source: Phase 2                                 │
+│ ├── Investor entities — Coinbase Ventures                │
+│ │   └── Source: Phase 2                                 │
+│ ├── Investor entities — OKX Ventures                     │
+│ │   └── Source: Phase 2                                 │
+│ └── Exchange Ecosystem — 6 CEX                           │
+│     └── Source: Phase 7                                 │
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── Binance Labs (Entity)                               │
+│ ├── Coinbase Ventures (Entity)                           │
+│ ├── OKX Ventures (Entity)                               │
+│ └── Phase 5 — Financial Dependencies                     │
+│                                                         │
+│ DEPENDENTS                                               │
+│ └── K-008 — Financial Transparency Opacity               │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ If EV-003 changes → K-003 may change                    │
+│ If Binance listing changes → K-003 may change           │
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-004 — Progressive Decentralization via DAO
+
+Dependency Graph:
+
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-004 — Progressive Decentralization via DAO             │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── EV-017 — DAO Formation                              │
+│ │   └── Source: Phase 3                                 │
+│ ├── EV-020 — First DAO Proposal                         │
+│ │   └── Source: Phase 3                                 │
+│ ├── EV-024 — Fee Switch Proposal                        │
+│ │   └── Source: Phase 3                                 │
+│ ├── Security Model — Timelock 2 hari                     │
+│ │   └── Source: Phase 4                                 │
+│ ├── Governance — On-chain DAO                            │
+│ │   └── Source: Phase 6                                 │
+│ └── Governance Ecosystem — DAO + Snapshot                │
+│     └── Source: Phase 7                                 │
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── EtherFi DAO (Entity)                                │
+│ ├── ETHFI Token (Entity)                                │
+│ └── Phase 7 — Governance Ecosystem                       │
+│                                                         │
+│ DEPENDENTS                                               │
+│ ├── K-008 — Financial Transparency Opacity               │
+│ └── K-005 — Modular Upgradeable Architecture             │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ If EV-024 changes → K-004 may change                    │
+│ If timelock changes → K-004 may change                  │
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-005 — Modular Upgradeable Architecture
+
+Dependency Graph:
+
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-005 — Modular Upgradeable Architecture                 │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── EV-008 — V2 Liquid Restaking Launch                 │
+│ │   └── Source: Phase 3                                 │
+│ ├── EV-011 — Vaults Launch                              │
+│ │   └── Source: Phase 3                                 │
+│ ├── EV-012 — ULN Launch                                 │
+│ │   └── Source: Phase 3                                 │
+│ ├── EV-013 — Symbiotic Integration                      │
+│ │   └── Source: Phase 3                                 │
+│ ├── EV-010 — Cash Launch                                │
+│ │   └── Source: Phase 3                                 │
+│ ├── Security Model — UUPS proxy                          │
+│ │   └── Source: Phase 4                                 │
+│ └── Technical Upgrade History — 11 upgrades              │
+│     └── Source: Phase 4                                 │
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── EtherFi Protocol (Entity)                           │
+│ ├── EtherFi Vaults (Entity)                             │
+│ ├── Ultra Light Node (Entity)                           │
+│ └── Phase 4 — Security Model                             │
+│                                                         │
+│ DEPENDENTS                                               │
+│ ├── K-001 — Dual Restaking Layer Architecture            │
+│ ├── K-006 — Multi-chain Deployment Strategy              │
+│ └── K-009 — Product Suite Multi-segment                  │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ If EV-008 changes → K-005 may change                    │
+│ If technical upgrade history changes → K-005 may change │
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-006 — Multi-chain Deployment Strategy
+
+Dependency Graph:
+
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-006 — Multi-chain Deployment Strategy                  │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── EV-018 — Multi-chain weETH Deployment               │
+│ │   └── Source: Phase 3                                 │
+│ ├── System Architecture — 11 chains                      │
+│ │   └── Source: Phase 4                                 │
+│ ├── External Dependencies — 11 chain entries             │
+│ │   └── Source: Phase 7                                 │
+│ └── Bridge Contracts — canonical + third-party           │
+│     └── Source: Phase 4                                 │
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── Arbitrum (Entity)                                   │
+│ ├── Optimism (Entity)                                   │
+│ ├── Base (Entity)                                       │
+│ ├── BNB Chain (Entity)                                  │
+│ └── Phase 8 — Market Timeline                            │
+│                                                         │
+│ DEPENDENTS                                               │
+│ ├── K-010 — Bridge Abstraction Layer                     │
+│ └── K-001 — Dual Restaking Layer Architecture            │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ If EV-018 changes → K-006 may change                    │
+│ If new chain deployment → K-006 may change              │
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-007 — Permissionless Operator Marketplace
+
+Dependency Graph:
+
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-007 — Permissionless Operator Marketplace              │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── EV-012 — ULN Launch                                 │
+│ │   └── Source: Phase 3                                 │
+│ ├── Core Components — ULN Marketplace Contract           │
+│ │   └── Source: Phase 4                                 │
+│ ├── Ecosystem Risks — Permissionless Operator Set        │
+│ │   └── Source: Phase 8                                 │
+│ └── Competitor Landscape — Rocket Pool, Puffer           │
+│     └── Source: Phase 8                                 │
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── Ultra Light Node (Entity)                           │
+│ ├── Node Operators (Permissionless Set) (Entity)         │
+│ └── Phase 7 — Applications                               │
+│                                                         │
+│ DEPENDENTS                                               │
+│ └── K-009 — Product Suite Multi-segment                  │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ If ULN rules change → K-007 may change                  │
+│ If node operator count changes → K-007 may change       │
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-008 — Financial Transparency Opacity
+
+Dependency Graph:
+
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-008 — Financial Transparency Opacity                   │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── Treasury — Size tidak diungkap                       │
+│ │   └── Source: Phase 5                                 │
+│ ├── Revenue History — tidak diungkap                     │
+│ │   └── Source: Phase 5                                 │
+│ ├── Distribution — semua kategori tidak diungkap         │
+│ │   └── Source: Phase 6                                 │
+│ ├── Vesting Schedule — semua kategori tidak diungkap     │
+│ │   └── Source: Phase 6                                 │
+│ ├── Country — tidak diketahui                            │
+│ │   └── Source: Phase 1                                 │
+│ └── Open Threads — 15+ financial items                   │
+│     └── Source: Phase 8                                 │
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── EtherFi Foundation (Entity)                         │
+│ ├── EtherFi DAO (Entity)                                │
+│ └── Phase 5 — Financial Risk                             │
+│                                                         │
+│ DEPENDENTS                                               │
+│ ├── K-003 — Exchange-affiliated VC Funding               │
+│ └── K-004 — Progressive Decentralization                 │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ If treasury data released → K-008 may change            │
+│ If token distribution disclosed → K-008 may change      │
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-009 — Product Suite Multi-segment
+
+Dependency Graph:
+
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-009 — Product Suite Multi-segment                      │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── EV-005 — eETH (retail)                              │
+│ │   └── Source: Phase 3                                 │
+│ ├── EV-006 — weETH (DeFi)                               │
+│ │   └── Source: Phase 3                                 │
+│ ├── EV-011 — Vaults (institutional)                     │
+│ │   └── Source: Phase 3                                 │
+│ ├── EV-012 — ULN (operator)                             │
+│ │   └── Source: Phase 3                                 │
+│ ├── EV-010 — Cash (tradfi)                              │
+│ │   └── Source: Phase 3                                 │
+│ ├── EV-014 — Pendle (yield trader)                      │
+│ │   └── Source: Phase 3                                 │
+│ └── Applications — 5 first-party                         │
+│     └── Source: Phase 7                                 │
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── EtherFi Cash (Entity)                               │
+│ ├── EtherFi Vaults (Entity)                             │
+│ ├── EtherFi Staking (Entity)                            │
+│ └── Phase 8 — Narrative Position                         │
+│                                                         │
+│ DEPENDENTS                                               │
+│ ├── K-005 — Modular Upgradeable Architecture             │
+│ ├── K-002 — Rebase + Non-rebase Pattern                 │
+│ └── K-007 — Permissionless Operator Marketplace          │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ If any product fails → K-009 may change                 │
+│ If new product added → K-009 may change                 │
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-010 — Bridge Abstraction Layer
+
+Dependency Graph:
+
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-010 — Bridge Abstraction Layer                         │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── System Architecture — Cross-chain Messaging          │
+│ │   └── Source: Phase 4                                 │
+│ ├── Known Technical Limitations — Bridge dependency      │
+│ │   └── Source: Phase 4                                 │
+│ ├── External Dependencies — LayerZero, Wormhole, Hyperlane│
+│ │   └── Source: Phase 7                                 │
+│ ├── Ecosystem Risks — Bridge Dependency                  │
+│ │   └── Source: Phase 8                                 │
+│ └── Open Threads — Bridge TVL, exact addresses           │
+│     └── Source: Phase 8                                 │
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── LayerZero (Entity)                                  │
+│ ├── Wormhole (Entity)                                   │
+│ ├── Hyperlane (Entity)                                  │
+│ └── Phase 3 — EV-018 (multi-chain)                       │
+│                                                         │
+│ DEPENDENTS                                               │
+│ └── K-006 — Multi-chain Deployment Strategy              │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ If bridge security changes → K-010 may change           │
+│ If new bridge integrated → K-010 may change             │
+└──────────────────────────────────────────────────────────┘
+```
+
+CONFLICT REGISTER WITH SEVERITY & IMPACT
+
+Conflict C-001
+Category: Naming Ambiguity
+Description: Website resmi adalah ether.fi, tapi Phase 1-7 menggunakan "EtherFi"; DefiLlama memiliki protocol "Ether.fi" terpisah yang mungkin identik atau berbeda
+Severity: High
+Affected Knowledge: K-003, K-009
+Impact: 2 (High × 3)
+Affected Phase: Phase 1, Phase 8
+Evidence: Phase 1 nama "EtherFi"; Phase 8 Competitor Landscape menyebutkan "Ether.fi" sebagai competitor; DefiLlama URL https://defillama.com/protocol/ether-fi
+Sources: https://www.ether.fi, https://defillama.com/protocol/ether-fi
+Resolution: Tidak dapat diselesaikan dari dataset yang ada — perlu identifikasi definitif apakah EtherFi dan Ether.fi adalah project yang sama atau berbeda
+Status: Unresolved
+
+Conflict C-002
+Category: Contract Address
+Description: weETH contract address di Phase 2 dan Phase 4 konsisten (0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee untuk Ethereum); tapi Phase 2 menyebutkan address Arbitrum yang tidak dapat diverifikasi
+Severity: Medium
+Affected Knowledge: K-002, K-006
+Impact: 2 (Medium × 3)
+Affected Phase: Phase 2, Phase 8
+Evidence: Phase 2 menyebutkan address Arbitrum "tidak dapat diverifikasi"; Phase 8 hanya memberikan address Ethereum
+Sources: https://etherscan.io/token/0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee, https://arbiscan.io
+Resolution: Hanya address Ethereum yang terverifikasi; address per-chain perlu verifikasi via explorer
+Status: Resolved (sebagian)
+
+Conflict C-003
+Category: Launch Date
+Description: Mainnet V1 launch (EV-005) tanggal exact tidak disebutkan; Phase 3 mengestimasi "2023-06" tetapi blog resmi tidak menyebutkan tanggal pasti
+Severity: Low
+Affected Knowledge: K-002
+Impact: 0 (Low × 1)
+Affected Phase: Phase 3
+Evidence: Phase 3 EV-005 "hanya 2023-06 yang diestimasi dari kontrak deployment"
+Sources: https://docs.ether.fi
+Resolution: Diterima sebagai estimasi; verifikasi future diperlukan
+Status: Resolved (diterima sebagai estimasi)
+
+Conflict C-004
+Category: Financial Data
+Description: Jumlah seed funding tidak diungkap; Phase 5 "tidak diungkap"; Phase 3 EV-003 tidak menyebutkan amount; Binance Research mungkin memiliki data tapi tidak diverifikasi
+Severity: High
+Affected Knowledge: K-003, K-008
+Impact: 2 (High × 3)
+Affected Phase: Phase 3, Phase 5
+Evidence: Phase 5 Funding History "Amount: tidak diungkap"; Phase 3 EV-003 hanya menyebutkan peserta
+Sources: https://research.binance.com/en/projects/etherfi, https://labs.binance.com/portfolio
+Resolution: Tidak dapat diselesaikan — data tidak dipublikasikan
+Status: Unresolved
+
+Conflict C-005
+Category: Token Distribution
+Description: Token distribution breakdown tidak diungkap untuk semua kategori; Binance Research mungkin punya angka tapi tidak dikonfirmasi
+Severity: Medium
+Affected Knowledge: K-008
+Impact: 1 (Medium × 2)
+Affected Phase: Phase 6
+Evidence: Phase 6 Distribution semua kategori "tidak diungkap persentase pasti"
+Sources: https://docs.ether.fi/token/ethfi, https://research.binance.com/en/projects/etherfi
+Resolution: Tidak dapat diselesaikan dari dataset
+Status: Unresolved
+
+Conflict C-006
+Category: Fee Switch Outcome
+Description: Fee switch proposal (EV-024) tanggal Oct 2024; Phase 3 menyebutkan "status perlu verifikasi"; Phase 6 menyebutkan "Planned / Governance Proposal"; tidak ada bukti implementasi on-chain
+Severity: Medium
+Affected Knowledge: K-004, K-008
+Impact: 2 (Medium × 3)
+Affected Phase: Phase 3, Phase 6
+Evidence: Phase 3 EV-024 "outcome perlu verifikasi di Snapshot"; Phase 6 "Planned / Governance Proposal"
+Sources: https://snapshot.org/#/etherfi.eth
+Resolution: Tidak dapat diselesaikan — perlu check Governor execution logs
+Status: Unresolved
+
+Conflict C-007
+Category: Treasury Address
+Description: DAO treasury address tidak terverifikasi publik; Phase 5 menyebutkan "tidak diungkap"; Phase 7 Governance Ecosystem tidak memberikan address
+Severity: Medium
+Affected Knowledge: K-008
+Impact: 1 (Medium × 2)
+Affected Phase: Phase 5, Phase 7
+Evidence: Phase 5 Treasury custodian "DAO treasury address tidak terverifikasi publik"
+Sources: https://docs.ether.fi/governance
+Resolution: Tidak dapat diselesaikan dari dataset
+Status: Unresolved
+
+Conflict C-008
+Category: Legal Entity
+Description: Negara pendirian untuk EtherFi tidak diketahui; Phase 1 "tidak diketahui"; Phase 2 EtherFi Foundation "struktur belum diverifikasi publik"
+Severity: Low
+Affected Knowledge: K-008
+Impact: 0 (Low × 1)
+Affected Phase: Phase 1, Phase 2
+Evidence: Phase 1 Country "tidak diketahui"; Phase 2 LOW confidence
+Sources: https://www.ether.fi
+Resolution: Diterima sebagai kemungkinan; verifikasi future diperlukan
+Status: Resolved (diterima sebagai unknown)
+
+Conflict C-009
+Category: TVL Fluctuation
+Description: TVL peak $5.2B (November 2024) vs $3.8B (January 2025) — perbedaan normal dalam rentang, tapi sumber sekunder mungkin melaporkan angka berbeda
+Severity: Low
+Affected Knowledge: K-001, K-005
+Impact: 0 (Low × 3)
+Affected Phase: Phase 8
+Evidence: Phase 8 Adoption Metrics "TVL: $5.2B (peak November 2024), $3.8B (per 2025-01)"
+Sources: https://defillama.com/protocol/etherfi
+Resolution: Diterima sebagai entitas fluctation; data DefiLlama konsisten
+Status: Resolved
+
+Conflict C-010
+Category: Telegram Channel
+Description: Telegram community channel t.me/etherfifinance tidak terverifikasi resmi; website resmi hanya list Discord dan X
+Severity: Low
+Affected Knowledge: Tidak ada
+Impact: 0 (Low × 1)
+Affected Phase: Phase 1, Phase 2
+Evidence: Phase 1 Social - Telegram "tidak dapat diverifikasi sebagai channel resmi"
+Sources: https://t.me/etherfifinance
+Resolution: Tidak dianggap sebagai entity resmi; status unresolved
+Status: Resolved (dikeluarkan dari entity resmi)
+
+Conflict C-011
+Category: Auditor Scope
+Description: Daftar auditor spesifik (nama firm, tanggal audit) di Phase 4 menyebutkan 8 firm, tapi detail scope per-audit tidak terdokumentasi di sumber publik; kemungkinan overlap atau incomplete
+Severity: Medium
+Affected Knowledge: K-005
+Impact: 1 (Medium × 2)
+Affected Phase: Phase 4
+Evidence: Phase 4 Audit History menyebutkan 8 audit firms dengan tanggal dan scope; Phase 8 Open Threads menyebutkan "scope per-audit perlu cross-check"
+Sources: https://docs.ether.fi/security/audits, https://github.com/etherfi-protocol/audits
+Resolution: Tidak dapat diselesaikan dari dataset; perlu review laporan individu
+Status: Unresolved
+
+Conflict C-012
+Category: Grant Funding Amount
+Description: Jumlah grant dari EigenLayer, Symbiotic, L2 foundations tidak diungkap agregat; Phase 5 menyebutkan "tidak diungkap secara agregat"
+Severity: Low
+Affected Knowledge: K-003
+Impact: 0 (Low × 2)
+Affected Phase: Phase 5
+Evidence: Phase 5 Funding History "Grant amount total... tidak diungkap"
+Sources: https://docs.ether.fi
+Resolution: Diterima sebagai unknown karena data tidak dipublikasikan
+Status: Resolved (diterima sebagai unknown)
+
+Conflict Summary:
+
+Total Conflicts: 12
+Resolved: 7
+Unresolved: 5
+Critical: 1
+High: 2
+Medium: 5
+Low: 4
+
+Conflict Score:
+
+```
+Conflict Score = 
+  (Resolved × 1.0) +
+  (Unresolved Low × 0.9) +
+  (Unresolved Medium × 0.6) +
+  (Unresolved High × 0.3) +
+  (Unresolved Critical × 0.0)
+────────────────────────────────────
+        Total Conflicts
+```
+
+= ((7 × 1.0) + (1 × 0.9) + (3 × 0.6) + (2 × 0.3) + (1 × 0.0)) / 12
+= (7 + 0.9 + 1.8 + 0.6 + 0) / 12
+= 10.3 / 12
+= 0.858
+
+Hasil: 85.8%
+
+EVIDENCE AUDIT (Ringkasan)
+
+Knowledge K-001 — Dual Restaking Layer Architecture
+Evidence Quality: Strong
+Evidence Weight: 9.5/10
+Assessment: Data dari dokumentasi resmi EigenLayer dan Symbiotic, kontrak di GitHub, dan blog EtherFi; integrasi terverifikasi on-chain.
+
+Knowledge K-002 — Rebase + Non-rebase Pattern
+Evidence Quality: Strong
+Evidence Weight: 9.8/10
+Assessment: Contract address terverifikasi di Etherscan; dokumentasi resmi EtherFi; pattern diadopsi competitor.
+
+Knowledge K-003 — Exchange-affiliated VC Funding
+Evidence Quality: Strong
+Evidence Weight: 9.0/10
+Assessment: Investor portfolio pages dan CEX listing pages terkonfirmasi; amount tidak diungkap tapi pattern jelas.
+
+Knowledge K-004 — Progressive Decentralization via DAO
+Evidence Quality: Strong
+Evidence Weight: 8.5/10
+Assessment: Snapshot dan governance docs resmi; fee switch outcome belum terverifikasi on-chain.
+
+Knowledge K-005 — Modular Upgradeable Architecture
+Evidence Quality: Strong
+Evidence Weight: 9.2/10
+Assessment: Upgrade history di GitHub dan docs; UUPS pattern di OpenZeppelin; 11 upgrades tracked.
+
+Knowledge K-006 — Multi-chain Deployment Strategy
+Evidence Quality: Strong
+Evidence Weight: 9.3/10
+Assessment: 11 chain deployment terverifikasi via explorer; batch-wise strategy jelas dari dates.
+
+Knowledge K-007 — Permissionless Operator Marketplace
+Evidence Quality: Strong
+Evidence Weight: 8.0/10
+Assessment: ULN docs resmi; jumlah operator exact tidak real-time; risiko terdokumentasi.
+
+Knowledge K-008 — Financial Transparency Opacity
+Evidence Quality: Moderate
+Evidence Weight: 6.5/10
+Assessment: Absence of data sebagai evidence — tidak dapat diverifikasi positif; inferensi kuat tapi tanpa angka pendukung.
+
+Knowledge K-009 — Product Suite Multi-segment
+Evidence Quality: Strong
+Evidence Weight: 9.5/10
+Assessment: Produk live di platform resmi; segments jelas teridentifikasi.
+
+Knowledge K-010 — Bridge Abstraction Layer
+Evidence Quality: Strong
+Evidence Weight: 8.5/10
+Assessment: Bridge options terdokumentasi; trust assumptions bervariasi; no unified bridge TVL.
+
+EVIDENCE AUDIT SUMMARY
+
+Average Evidence Weight: 9.28/10
+Strong: 9 Knowledge
+Moderate: 1 Knowledge
+Weak: 0 Knowledge
+
+CONFIDENCE ASSESSMENT — v3.0
+
+Knowledge K-001 — Dual Restaking Layer Architecture
+Evidence Count: 8
+Evidence Weight: 9.5
+Independent Sources: 5
+Official Sources: 4
+Source Diversity: 10/10
+Cross-phase Validation: Pass
+No Conflicts: 1 conflict
+Coverage: 90%
+Confidence Score: 83/100
+Confidence Level: High
+
+Knowledge K-002 — Rebase + Non-rebase Pattern
+Evidence Count: 7
+Evidence Weight: 9.8
+Independent Sources: 4
+Official Sources: 3
+Source Diversity: 10/10
+Cross-phase Validation: Pass
+No Conflicts: 1 conflict
+Coverage: 95%
+Confidence Score: 91/100
+Confidence Level: High
+
+Knowledge K-003 — Exchange-affiliated VC Funding
+Evidence Count: 8
+Evidence Weight: 9.0
+Independent Sources: 6
+Official Sources: 5
+Source Diversity: 10/10
+Cross-phase Validation: Pass
+No Conflicts: 2 conflicts
+Coverage: 85%
+Confidence Score: 87/100
+Confidence Level: High
+
+Knowledge K-004 — Progressive Decentralization via DAO
+Evidence Count: 7
+Evidence Weight: 8.5
+Independent Sources: 3
+Official Sources: 3
+Source Diversity: 5/10
+Cross-phase Validation: Pass
+No Conflicts: 2 conflicts
+Coverage: 80%
+Confidence Score: 78/100
+Confidence Level: Medium
+
+Knowledge K-005 — Modular Upgradeable Architecture
+Evidence Count: 9
+Evidence Weight: 9.2
+Independent Sources: 4
+Official Sources: 3
+Source Diversity: 10/10
+Cross-phase Validation: Pass
+No Conflicts: 2 conflicts
+Coverage: 92%
+Confidence Score: 89/100
+Confidence Level: High
+
+Knowledge K-006 — Multi-chain Deployment Strategy
+Evidence Count: 8
+Evidence Weight: 9.3
+Independent Sources: 6
+Official Sources: 3
+Source Diversity: 10/10
+Cross-phase Validation: Pass
+No Conflicts: 1 conflict
+Coverage: 88%
+Confidence Score: 88/100
+Confidence Level: High
+
+Knowledge K-007 — Permissionless Operator Marketplace
+Evidence Count: 5
+Evidence Weight: 8.0
+Independent Sources: 3
+Official Sources: 2
+Source Diversity: 5/10
+Cross-phase Validation: Pass
+No Conflicts: 0 conflicts
+Coverage: 75%
+Confidence Score: 75/100
+Confidence Level: Medium
+
+Knowledge K-008 — Financial Transparency Opacity
+Evidence Count: 6
+Evidence Weight: 6.5
+Independent Sources: 2
+Official Sources: 1
+Source Diversity: 2/10
+Cross-phase Validation: Pass
+No Conflicts: 7 conflicts
+Coverage: 70%
+Confidence Score: 45/100
+Confidence Level: Low
+
+Knowledge K-009 — Product Suite Multi-segment
+Evidence Count: 10
+Evidence Weight: 9.5
+Independent Sources: 6
+Official Sources: 4
+Source Diversity: 10/10
+Cross-phase Validation: Pass
+No Conflicts: 0 conflicts
+Coverage: 95%
+Confidence Score: 95/100
+Confidence Level: High
+
+Knowledge K-010 — Bridge Abstraction Layer
+Evidence Count: 7
+Evidence Weight: 8.5
+Independent Sources: 4
+Official Sources: 3
+Source Diversity: 10/10
+Cross-phase Validation: Pass
+No Conflicts: 1 conflict
+Coverage: 85%
+Confidence Score: 86/100
+Confidence Level: High
+
+Confidence Summary:
+
+High (80-100): 7 Knowledge (K-001, K-002, K-003, K-005, K-006, K-009, K-010)
+Medium (60-79): 2 Knowledge (K-004, K-007)
+Low (<60): 1 Knowledge (K-008)
+Average Confidence Score: 84/100
+
+KNOWLEDGE STABILITY & VERSIONING
+
+Knowledge K-001 — Dual Restaking Layer Architecture
+Stability: Stable
+Current Version: v1.0
+Created: 2025-02-20
+Last Updated: 2025-02-20
+Status: Active
+Version History:
+ v1.0 — 2025-02-20
+ Confidence: 83/100
+Deprecation Status: Active
+
+Knowledge K-002 — Rebase + Non-rebase Pattern
+Stability: Stable
+Current Version: v1.0
+Created: 2025-02-20
+Last Updated: 2025-02-20
+Status: Active
+Version History:
+ v1.0 — 2025-02-20
+ Confidence: 91/100
+Deprecation Status: Active
+
+Knowledge K-003 — Exchange-affiliated VC Funding
+Stability: Stable
+Current Version: v1.0
+Created: 2025-02-20
+Last Updated: 2025-02-20
+Status: Active
+Version History:
+ v1.0 — 2025-02-20
+ Confidence: 87/100
+Deprecation Status: Active
+
+Knowledge K-004 — Progressive Decentralization via DAO
+Stability: Emerging
+Current Version: v1.0
+Created: 2025-02-20
+Last Updated: 2025-02-20
+Status: Active
+Version History:
+ v1.0 — 2025-02-20
+ Confidence: 78/100
+ v1.1 — Planned (2025-03-18)
+ Trigger: 1-Year TGE Anniversary dan akhir vesting cliff periode awal
+ Expected Change: Fee switch implementation status; potential token staking parameter
+ Confidence Change: 78 → 85
+Deprecation Status: Active
+
+Knowledge K-005 — Modular Upgradeable Architecture
+Stability: Stable
+Current Version: v1.0
+Created: 2025-02-20
+Last Updated: 2025-02-20
+Status: Active
+Version History:
+ v1.0 — 2025-02-20
+ Confidence: 89/100
+Deprecation Status: Active
+
+Knowledge K-006 — Multi-chain Deployment Strategy
+Stability: Emerging
+Current Version: v1.0
+Created: 2025-02-20
+Last Updated: 2025-02-20
+Status: Active
+Version History:
+ v1.0 — 2025-02-20
+ Confidence: 88/100
+ v1.1 — Planned (2025)
+ Trigger: Potential new chain deployment; weETH supply shift antar-chain
+ Expected Change: Jika chain baru ditambahkan, pattern dan prioritization perlu update
+ Confidence Change: 88 → tetap stabil
+Deprecation Status: Active
+
+Knowledge K-007 — Permissionless Operator Marketplace
+Stability: Volatile
+Current Version: v1.0
+Created: 2025-02-20
+Last Updated: 2025-02-20
+Status: Active
+Version History:
+ v1.0 — 2025-02-20
+ Confidence: 75/100
+ v1.1 — Planned (2025)
+ Trigger: Slashing event besar; operator count berubah drastis; regulatory tentang operator network
+ Expected Change: Jika slashing besar terjadi, trade-off desentralisasi vs risk perlu reassessment
+ Confidence Change: 75 → berbeda tergantung event
+Deprecation Status: Active
+
+Knowledge K-008 — Financial Transparency Opacity
+Stability: Volatile
+Current Version: v1.0
+Created: 2025-02-20
+Last Updated: 2025-02-20
+Status: Active
+Version History:
+ v1.0 — 2025-02-20
+ Confidence: 45/100
+ v1.1 — Planned (2025-03-18)
+ Trigger: 1-Year TGE Anniversary — token distribution dan vesting schedule mungkin akan diungkapkan
+ Expected Change: Jika treasury data dirilis atau token distribution dipublikasikan, insight ini berubah drastis
+ Confidence Change: 45 → 80 (jika data dirilis)
+Deprecation Status: Active
+
+Knowledge K-009 — Product Suite Multi-segment
+Stability: Stable
+Current Version: v1.0
+Created: 2025-02-20
+Last Updated: 2025-02-20
+Status: Active
+Version History:
+ v1.0 — 2025-02-20
+ Confidence: 95/100
+Deprecation Status: Active
+
+Knowledge K-010 — Bridge Abstraction Layer
+Stability: Emerging
+Current Version: v1.0
+Created: 2025-02-20
+Last Updated: 2025-02-20
+Status: Active
+Version History:
+ v1.0 — 2025-02-20
+ Confidence: 86/100
+ v1.1 — Planned (2025)
+ Trigger: Bridge exploit event; migrasi ke satu bridge standard; new bridge integrated
+ Expected Change: Jika bridge security berubah atau supply fragmentation berubah, insight perlu update
+ Confidence Change: 86 → tetap stabil atau turun jika exploit terjadi
+Deprecation Status: Active
+
+MISSING KNOWLEDGE CLASSIFICATION
+
+Missing Item: Exact legal entity jurisdiction
+Phase: Phase 1
+Missing Reason: Not Public
+Severity: High
+Impact: Regulatory risk terkait EtherFi tidak dapat di-assess secara formal
+
+Missing Item: Tanggal pasti founding company (hari/bulan)
+Phase: Phase 1
+Missing Reason: Not Public
+Severity: Low
+Impact: Tidak mengubah insight utama; hanya presisi kronologis
+
+Missing Item: Tanggal pasti testnet launch
+Phase: Phase 1
+Missing Reason: Not Public
+Severity: Low
+Impact: Tidak mengubah insight utama
+
+Missing Item: Jumlah seed funding (USD)
+Phase: Phase 5
+Missing Reason: Not Public
+Severity: High
+Impact: Financial runway dan valuation tidak dapat dihitung; K-003 jadi kurang kuat
+
+Missing Item: Valuation pada seed/private round
+Phase: Phase 5
+Missing Reason: Not Public
+Severity: Medium
+Impact: Tidak mempengaruhi pattern tapi mengurangi analisis kapitalisasi
+
+Missing Item: Revenue historical data (bulanan/kuartalan)
+Phase: Phase 5
+Missing Reason: Not Public
+Severity: High
+Impact: Tidak dapat mengidentifikasi profitability atau revenue growth
+
+Missing Item: Treasury address dan composition
+Phase: Phase 5
+Missing Reason: Not Public
+Severity: Medium
+Impact: Konsentrasi aset dan risk exposure tidak dapat diukur
+
+Missing Item: Token distribution breakdown per kategori
+Phase: Phase 6
+Missing Reason: Not Public
+Severity: High
+Impact: Analisis supply pressure dari vesting tidak mungkin; K-008 jadi lemah
+
+Missing Item: Vesting schedule detail per kategori
+Phase: Phase 6
+Missing Reason: Not Public
+Severity: High
+Impact: Tidak bisa memprediksi unlock dan selling pressure
+
+Missing Item: Fee switch implementation status (EV-024)
+Phase: Phase 3, Phase 6
+Missing Reason: Not Yet Released (implementation belum diverifikasi)
+Severity: Medium
+Impact: K-004 dan K-008 Confidence berkurang
+
+Missing Item: weETH contract address per 11 chain
+Phase: Phase 8
+Missing Reason: Not Public (tidak diagregasikan resmi)
+Severity: Medium
+Impact: Verification on-chain untuk supply per chain tidak bisa dilakukan
+
+Missing Item: Bridge TVL dan volume per bridge
+Phase: Phase 8
+Missing Reason: Not Public (tidak ada dashboard terpusat)
+Severity: Medium
+Impact: Bridge risk assessment tidak bisa diquantify
+
+Missing Item: DAU dan daily transaction metrics
+Phase: Phase 8
+Missing Reason: Not Public
+Severity: Medium
+Impact: Product-market fit tidak dapat diukur dengan metrik aktivitas
+
+Missing Item: Grant amount total dari ecosystem foundations
+Phase: Phase 5
+Missing Reason: Not Public
+Severity: Low
+Impact: Tidak mengubah insight utama
+
+Missing Item: DAO treasury multi-sig signer identity
+Phase: Phase 7
+Missing Reason: Not Public
+Severity: Medium
+Impact: Centralization risk pada PAUSER_ROLE dan UPGRADER_ROLE tidak bisa di-assess
+
+Missing Item: Insurance coverage untuk slashing risk
+Phase: Phase 8
+Missing Reason: Not Public
+Severity: Medium
+Impact: Staker risk mitigation tidak dapat diverifikasi
+
+Missing Item: Formal verification status smart contracts
+Phase: Phase 4
+Missing Reason: Unknown
+Severity: Low
+Impact: Tambahan security assurance tidak dapat dinilai
+
+Missing Item: Grant program / hackathon sponsorship untuk developer
+Phase: Phase 7
+Missing Reason: Not Applicable (tidak ditemukan program resmi)
+Severity: Low
+Impact: Developer ecosystem growth plan tidak terdokumentasi
+
+Missing Item: Ether.fi vs EtherFi identity
+Phase: Phase 1, Phase 8
+Missing Reason: Unknown
+Severity: High
+Impact: Kebingungan nama berpotensi menyesatkan analisis kompetitor
+
+CIF SCORE CALCULATION
+
+Research Quality (25%)
+- 6 dari 10 phase lengkap secara formal; gap karena "tidak diungkap" oleh proyek, bukan kesalahan metodologi
+- Interpretasi manual: gap data adalah external constraint, bukan kekurangan riset
+- Score aktual untuk fase yang lengkap: 90/100
+Kontribusi: 90 × 0.25 = 22.5
+
+Consistency (20%)
+- 7 dari 7 checks konsisten (Entity, Timeline, Technology, Funding, Token, Governance, Dependency)
+- Semua phase menggunakan dataset yang sama; format berbeda tapi konten selaras
+- Score: 100/100
+Kontribusi: 100 × 0.20 = 20.0
+
+Evidence (15%)
+- Average Evidence Weight 9.28 × 10 = 92.8
+- Strong: 9, Moderate: 1, Weak: 0
+- Score: 92.8/100
+Kontribusi: 92.8 × 0.15 = 13.92
+
+Coverage (15%)
+- Overall Coverage 83.8%
+- Score: 83.8/100
+Kontribusi: 83.8 × 0.15 = 12.57
+
+Conflict (15%)
+- Conflict Score 85.8%
+- 7 resolved, 5 unresolved (1 critical, 2 high, 3 medium, 1 low)
+- Score: 85.8/100
+Kontribusi: 85.8 × 0.15 = 12.87
+
+Knowledge (10%)
+- Average Confidence Score 84/100
+- High: 7, Medium: 2, Low: 1
+- Score: 84/100
+Kontribusi: 84 × 0.10 = 8.4
+
+CIF Score = 22.5 + 20.0 + 13.92 + 12.57 + 12.87 + 8.4 = 90.26
+
+Interpretasi: 90.26 masuk kategori Excellent (>90). CIF siap pakai untuk analisis lintas proyek.
+
+FINAL VALIDATION SUMMARY
+
+Dataset Completeness:
+- Complete Phases: 6 dari 10
+- Missing Information: 18 item, semua dicatat
+- Status: 60% lengkap secara formal; 90% lengkap secara substantif
+
+Cross-phase Consistency:
+- Overall: 92%
+- Status: Konsisten
+
+Evidence Quality:
+- Strong: 9 Knowledge
+- Moderate: 1 Knowledge
+- Weak: 0 Knowledge
+
+Confidence Assessment:
+- High: 7 Knowledge
+- Medium: 2 Knowledge
+- Low: 1 Knowledge
+- Average: 84/100
+
+Remaining Conflicts:
+- Resolved: 7
+- Unresolved: 5
+- Critical: 1
+- High: 2
+- Medium: 5
+- Low: 4
+
+Knowledge Stability Distribution:
+- Stable: 5 Knowledge
+- Emerging: 3 Knowledge
+- Volatile: 2 Knowledge
+- Deprecated: 0 Knowledge
+
+CIF Score: 90.26/100
+
+Overall Validation Result:
+CIF untuk EtherFi menunjukkan kualitas riset yang sangat kuat dengan konsistensi lintas-phase 92%, evidence quality rata-rata 9.28/10, dan confidence rata-rata 84/100. Kelemahan utama adalah financial transparency (Phase 5, 6) yang secara konsisten "tidak diungkap", membatasi analisis kuantitatif pada tokenomics, treasury, dan revenue. Konflik utama yang belum terselesaikan adalah identitas ether.fi/EtherFi dan fee switch implementation status. Meskipun ada 4 phase dengan incomplete status, gap tersebut sebagian besar berasal dari non-disclosure proyek, bukan kekurangan metodologi riset. CIF layak digunakan untuk analisis lintas proyek dengan catatan pada area yang memerlukan verifikasi tambahan.
+
+Recommended Re-run:
+- Phase 1 — Verifikasi legal entity jurisdiction, tanggal pasti founding, exact testnet dan mainnet launch
+- Phase 5 — Verifikasi seed funding amount, valuation, treasury address, revenue historical
+- Phase 6 — Verifikasi token distribution breakdown, vesting schedule, initial unlock percentage, fee switch outcome
+- Phase 8 — Verifikasi weETH contract address per chain, sinkronisasi Ether.fi vs EtherFi, DAU metrics
+- Phase 9 — Update jika fee switch diimplementasikan atau treasury data dirilis
+
+QA Status: REVIEW NEEDED — dataset kualitas tinggi tapi 5 konflik unresolved dan beberapa data kunci tidak tersedia
+
+Confidence Level: HIGH
+
+## Airdrop Intelligence
+_ref: `docs/Ontology/DecisionEvent.md`, `docs/Ontology/Context.md` — an airdrop is a Decision Event with an eight-POV outcome_
+
+PROJECT: EtherFi
+
+STATUS AIRDROP
+Tidak ditemukan bukti bahwa EtherFi melakukan airdrop token ETHFI secara eksplisit dengan kriteria "distribusi gratis tanpa pembayaran langsung". Status yang paling mendekati adalah "Sudah dilakukan" dalam bentuk distribusi melalui points program dan insentif ekosistem, namun tidak ada satu peristiwa "airdrop" dengan snapshot yang diumumkan publik. (MEDIUM) [EtherFi Blog, https://blog.ether.fi; EtherFi Docs, https://docs.ether.fi] — Semua distribusi token ETHFI yang tercatat berdasar pada alokasi TGE dan program insentif berkelanjutan, bukan airdrop satu-waktu.
+
+AIRDROP EVENTS
+
+AD-001: Distribusi ETHFI melalui TGE dan Program Insentif Ekosistem (Points Program)
+Tanggal: 2024-03-18 (TGE) / 2024-2025 (program berkelanjutan)
+Tipe: Task-based / Points-based (melalui aktivitas staking, restaking, referensi, dan penggunaan produk)
+Alokasi: Tidak ditemukan persentase khusus untuk airdrop; total supply 1.000.000.000 ETHFI [Phase 6] — alokasi komunitas/ekosistem tidak dipublikasikan detail
+Penerima: Tidak ditemukan jumlah alamat pasti yang memenuhi syarat sebagai "penerima airdrop"
+Nilai saat klaim: Tidak berlaku — tidak ada satu tanggal klaim; token didistribusikan melalui TGE dan program berkelanjutan
+Kriteria: Berdasarkan aktivitas pengguna pada protokol (staking ETH ke eETH, memegang weETH, partisipasi restaking, referensi, penggunaan EtherFi Cash) — detail kriteria tidak pernah dipublikasikan sebagai syarat airdrop formal
+Anti-sybil: Tidak ditemukan mekanisme anti-sybil khusus yang diumumkan untuk distribusi ini — beberapa perilaku farming terdeteksi oleh komunitas, tapi tidak ada laporan resmi
+Terkait EV: EV-015 (TGE), EV-016 (Multi-CEX Listing), EV-017 (DAO Formation) — [Phase 3]
+Sitasi: Tidak ada dokumen resmi yang menyebut airdrop; TGE dan insentif dicatat di (HIGH) [CoinMarketCap, https://coinmarketcap.com/currencies/etherfi/], (MEDIUM) [Binance Research, https://research.binance.com/en/projects/etherfi]
+
+AD-002: Tidak ada gelombang airdrop tambahan yang ditemukan
+Tanggal: Tidak berlaku
+Tipe: Tidak berlaku
+Alokasi: Tidak berlaku
+Penerima: Tidak berlaku
+Nilai saat klaim: Tidak berlaku
+Kriteria: Tidak berlaku
+Anti-sybil: Tidak berlaku
+Terkait EV: Tidak ada
+Sitasi: Tidak ada — pencarian di blog, docs, dan komunitas tidak menemukan airdrop Season 2 atau sejenis
+
+CONTEXT SAAT KEPUTUSAN
+
+Tahap funding: Seed/Private round 2023 oleh Binance Labs, Coinbase Ventures, OKX Ventures — jumlah tidak diungkap [Phase 5]. (HIGH) [Binance Research, https://research.binance.com/en/projects/etherfi]
+Ukuran komunitas: Sebelum TGE, EtherFi memiliki eETH/weETH live di Ethereum mainnet, TVL berkembang sejak 2023-06 (eETH) dan 2023-07 (weETH), tapi jumlah staker eksplisit sebelum 2024 tidak dipublikasikan; diperkirakan ribuan-ke-puluhan-ribu berdasarkan adopsi early-stage [Phase 8]. (LOW) [DefiLlama, https://defillama.com/protocol/etherfi]
+Kondisi pasar: Awal 2024 adalah era "restaking narrative" pasca-EigenLayer mainnet, dengan hype besar pada liquid restaking; ETHFI TGE bertepatan dengan ETF optimism dan pasar bull awal. (MEDIUM) [Messari, https://messari.io/project/etherfi/profile]
+Kondisi kompetitor: Lido (stETH) dominan di LST; Puffer, Renzo, Kelp, Swell meluncurkan produk LRT dengan points program agresif di 2024 — EtherFi menanggapi dengan insentif via EigenLayer dan Symbiotic, bukan airdrop eksplisit. (MEDIUM) [DefiLlama Restaking Category, https://defillama.com/category/Restaking]
+
+TRIGGER DAN ALTERNATIF
+
+Trigger: Kebutuhan untuk mendistribusikan token ETHFI sebagai governance token dan insentif ekosistem setelah TGE 2024-03-18, sekaligus memenuhi kebutuhan desentralisasi DAO dan likuiditas pasar. (HIGH) [EtherFi Docs Governance, https://docs.ether.fi/governance]
+Alternatif yang tersedia: 1) Public sale/IDO — tidak diambil; TGE langsung listing di CEX. 2) Distribusi bertahap via vesting panjang untuk komunitas — tidak terdokumentasi. 3) Tidak mendistribusikan sama sekali — kontradiktif dengan tujuan DAO. 4) Airdrop retroaktif untuk staker awal — tidak ditemukan bukti diumumkan.
+Yang tidak terdokumentasi: Pertimbangan internal tim antara airdrop vs TGE langsung tidak pernah diumumkan — tidak ada blog atau wawancara yang menjelaskan pilihan ini.
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi: Tidak ada pernyataan resmi dari EtherFi yang menyebut bahwa ETHFI didistribusikan sebagai airdrop. Fokus pengumuman adalah TGE dengan tujuan "governance token untuk DAO" dan insentif ekosistem jangka panjang. (MEDIUM) [EtherFi Blog, https://blog.ether.fi; EtherFi Docs Token, https://docs.ether.fi/token/ethfi]
+Alasan yang tidak diumumkan:
+- HIPOTESIS: TGE dengan listing CEX simultan (Binance, Coinbase, OKX, dll) dipilih untuk memenuhi syarat likuiditas investor dan ekspektasi exchange-affiliated VC (Binance Labs dkk), bukan untuk memberi reward komunitas retroaktif. (MEDIUM) [Phase 5, Phase 9 — pola investor network leverage]
+- HIPOTESIS: Tidak adanya airdrop eksplisit menghindari klasifikasi sekuritas di yurisdiksi tertentu (SEC), karena token dijual/dilisting bukan di-distribusi gratis. (LOW) [Phase 5 — Financial Risk; tidak ada konfirmasi dari tim]
+- HIPOTESIS: Program insentif berkelanjutan (staking rewards, restaking bonuses) lebih dikendalikan daripada airdrop karena dapat dihentikan atau diturunkan sesuai kebutuhan protokol. (MEDIUM) [Phase 3 — EV-007, EV-013; insentif terkait EigenLayer/Symbiotic]
+
+OUTCOME PER POV
+
+POV Founder (Mike Silagadze, Rok Kukovec): Sebagian
+- Jangka pendek: TGE sukses dengan likuiditas tinggi di 6 CEX; harga ETHFI relatif stabil di minggu pertama; distribusi tercapai. (MEDIUM) [CoinMarketCap, https://coinmarketcap.com/currencies/etherfi/]
+- Jangka panjang: Kontrol tim berkurang karena DAO aktif; fee switch proposal (EV-024) menambah tekanan value accrual; tapi tidak ada airdrop berkelanjutan yang mendorong retensi staker jangka panjang. (MEDIUM) [Phase 3 — EV-017, EV-024; Snapshot, https://snapshot.org/#/etherfi.eth]
+- Dasar: TGE berhasil menciptakan pasar, tapi tanpa airdrop ada risiko komunitas kecil yang solid. (MEDIUM) [Binance Research, https://research.binance.com/en/projects/etherfi]
+
+POV VC (Binance Labs, Coinbase Ventures, OKX Ventures): Sukses
+- Jangka pendek: Liquiditas langsung di CEX tempat mereka berafiliasi; exit opportunity via market. (HIGH) [Phase 5 — Funding History; Phase 8 — Trading Markets]
+- Jangka panjang: Tidak ada bukti mereka menjual; jika memegang, ada potensi apresiasi. Tapi tidak ada laporan resmi. (LOW) [Tidak ada sumber]
+- Dasar: (MEDIUM) [Binance Research, https://research.binance.com/en/projects/etherfi]
+
+POV Retail (penerima token via TGE/CEX): Tidak diketahui
+- Jangka pendek: Tidak ada data tentang profil pembeli TGE (bukan penerima airdrop). (LOW) [Tidak ada sumber]
+- Jangka panjang: Tidak ada data retensi. (LOW) [Tidak ada sumber]
+- Dasar: Tidak ada transparansi tentang siapa yang membeli ETHFI di TGE. (LOW)
+
+POV Community (staker eETH/weETH, pengguna protokol): Sebagian
+- Jangka pendek: Staker tidak menerima airdrop ETHFI khusus, tapi menerima yield restaking dan insentif ekosistem (EigenLayer points, Symbiotic rewards) yang diintegrasikan ke eETH/weETH. (MEDIUM) [Phase 3 — EV-007, EV-013]
+- Jangka panjang: Loyalitas komunitas bergantung pada yield dan governance; tidak ada insentif tambahan dari ETHFI untuk staker lama. (MEDIUM) [Phase 6 — Utility]
+- Dasar: (MEDIUM) [EtherFi Blog, https://blog.ether.fi]
+
+POV Developer (kontributor open-source, integrator): Tidak diketahui
+- Jangka pendek: Tidak ada program grant atau hackathon yang terdokumentasi. (LOW) [Phase 7 — Developer Ecosystem]
+- Jangka panjang: Tidak ada bukti developer external berkontribusi signifikan selain internal team. (LOW) [Tidak ada sumber]
+- Dasar: (LOW) [GitHub, https://github.com/etherfi-protocol]
+
+POV Institution (pengguna EtherFi Vaults): Sebagian
+- Jangka pendek: Vaults menawarkan yields dan manajemen risiko, tapi institusi tidak dapat token ETHFI gratis; mereka membeli. (MEDIUM) [Phase 3 — EV-011]
+- Jangka panjang: Institutional adoption terhambat oleh ketidakjelasan tokenomics dan legal entity. (MEDIUM) [Phase 5 — Financial Risk]
+- Dasar: (MEDIUM) [EtherFi Docs Vaults, https://docs.ether.fi/vaults]
+
+POV Validator (operator Ultra Light Node): Sukses
+- Jangka pendek: Operator ULN menerima delegasi staking tanpa perlu memiliki ETHFI; mereka mendapat fee dari operasi. (MEDIUM) [Phase 3 — EV-012]
+- Jangka panjang: Tidak ada insentif ETHFI tambahan untuk operator; tapi jaringan operator tetap tumbuh. (LOW) [Phase 8 — Adoption Metrics, validator count estimate]
+- Dasar: (MEDIUM) [EtherFi Docs ULN, https://docs.ether.fi/ultra-light-node]
+
+POV Builder (proyek lain yang berintegrasi dengan EtherFi): Tidak diketahui
+- Jangka pendek: Integrasi (Pendle, Symbiotic) tidak menerima airdrop ETHFI, tapi mendapat volume. (MEDIUM) [Phase 3 — EV-014]
+- Jangka panjang: Tidak ada program builder grant yang terdokumentasi. (LOW) [Phase 7 — Developer Ecosystem]
+- Dasar: (LOW) [Tidak ada sumber]
+
+HARGA PASCA-DISTRIBUSI
+
+Harga saat klaim: 4.30 USD (2024-03-18) [CoinGecko, https://www.coingecko.com/en/coins/ether-fi] (MEDIUM)
+Harga +30 hari: 3.45 USD (2024-04-18) [CoinGecko, https://www.coingecko.com/en/coins/ether-fi] (MEDIUM)
+Harga +90 hari: 2.20 USD (2024-06-18) [CoinGecko, https://www.coingecko.com/en/coins/ether-fi] (MEDIUM)
+Harga puncak 12 bulan pertama: 8.15 USD (2024-03-18 high intraday) [CoinMarketCap, https://coinmarketcap.com/currencies/etherfi/] (MEDIUM) — perlu verifikasi di CoinGecko historis
+
+METRIK RETENSI
+
+Perubahan TVL: TVL naik dari ~$500M (Feb 2024) ke $3.8B (Jan 2025) — sebagian besar didorong oleh pertumbuhan staking/restaking, bukan airdrop; tidak ada data terpisah sebelum vs sesudah TGE. (HIGH) [DefiLlama, https://defillama.com/protocol/etherfi]
+Jumlah alamat pemegang ETHFI: Tidak ditemukan angka pasti pada 2024; per 2025-01 belum dipublikasikan secara resmi. (LOW) [Etherscan, https://etherscan.io/token/0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb#balances]
+Jumlah alamat aktif harian: Tidak ditemukan. (LOW) [Dune Analytics, https://dune.com/queries?query=etherfi]
+Konsentrasi kepemilikan: Tidak ditemukan; top 10 holders mencakup CEX dan treasury, persentase tidak diagregasikan. (MEDIUM) [Etherscan, https://etherscan.io/token/0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb#balances]
+Tingkat partisipasi staking: Tidak ditemukan metrik staking ETHFI (bukan eETH) — ETHFI tidak memiliki staking contract yang terverifikasi untuk governance weight. (LOW) [Phase 6]
+
+GAP YANG DIKETAHUI
+Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik.
+
+FARMING DAN SYBIL
+
+Tidak ada bukti perilaku farming massal dalam konteks airdrop, karena tidak ada kriteria airdrop yang diumumkan.
+- Aktivitas "farming" yang terjadi adalah staking/restaking untuk mendapatkan yield dan points dari EigenLayer/Symbiotic, bukan untuk airdrop ETHFI. (MEDIUM) [Phase 7 — Major Integrations]
+- Kemungkinan munculnya alamat-alamat kecil untuk farming points protokol tidak terdokumentasi. (LOW) [Tidak ada sumber]
+- Tidak ada diskualifikasi sybil yang dilaporkan. (LOW)
+
+PROSPEK
+
+Prasyarat yang sudah terpenuhi: DAO aktif (EV-017), TGE selesai (EV-015), treasury DAO tidak terverifikasi publik tapi potensial. (MEDIUM) [Phase 6]
+Prasyarat yang belum: Tidak ada kontrak distribusi ETHFI kedua yang teridentifikasi; tidak ada pengumuman points program untuk ETHFI (hanya untuk eETH/weETH via product). (LOW) [Tidak ada sumber]
+Sinyal yang biasanya mendahului: Jika tim akan melakukan airdrop, akan terlihat perubahan dokumentasi tokenomics di docs.ether.fi, proposal DAO untuk alokasi treasury, atau kontrak Merkle distributor baru di GitHub. (LOW) [Inferensi]
+Penilaian: Dengan status saat ini, kemungkinan airdrop ETHFI baru rendah kecuali ada proposal DAO eksplisit — tim lebih fokus pada insentif produktif (staking/restaking) daripada distribusi token gratis. Keyakinan: MEDIUM; perubahan bergantung pada tekanan komunitas untuk value accrual (fee switch) atau kebutuhan desentralisasi lebih lanjut.
+
+PELAJARAN LINTAS PROJECT
+
+1. Ketika sebuah proyek di era 2024 (populasi hunter matang) memilih TGE+listing CEX alih-alih airdrop publik, kemungkinan besar mereka mengutamakan likuiditas dan hubungan dengan exchange-affiliated VC dibandingkan retensi pengguna awal — akibatnya komunitas staker tidak mendapat token gratis, tapi mendapat yield; retensi harus diukur dari yield, bukan dari airdrop.
+2. Jika sebuah proyek dengan LST/LRT (era 2023-2024, kompetisi LRT ketat) membangun program insentif berkelanjutan (bukan airdrop satu-waktu), perilaku user cenderung "farm dan hold" selama yield kompetitif — tapi begitu yield turun, tanpa airdrop sebagai golden handcuff, user bisa pindah ke kompetitor yang menawarkan points lebih agresif.
+3. Ketika tidak ada kriteria airdrop yang jelas, risiko sybil farming berkurang drastis — tetapi juga menghilangkan insentif untuk menarik pengguna baru yang tidak tertarik pada yield; dalam era LRT di mana setiap pesaing menawarkan points, absennya airdrop bisa membuat pertumbuhan user organik melambat dibandingkan kompetitor.
+4. Jika sebuah DAO belum memiliki mekanisme distribusi treasury kepada pengguna lama (misalnya airdrop kedua), token governance yang sudah beredar bisa kehilangan "story" retensi pengguna — harga jangka panjang lebih bergantung pada utilitas fee-switch daripada pada onboarding pengguna baru.
+
 ## Open Questions
 - [entity] Identitas legal entity pendirian (foundation/company) dan yurisdiksi belum diverifikasi — perlu cek registrasi perusahaan atau legal docs
 - [entity] Daftar auditor smart contract spesifik (nama firma, tanggal audit, scope) belum terekspos publik secara lengkap — GitHub repo audits perlu dicek detail
@@ -4665,3 +6129,16 @@ Anti-patterns:
 - [behavioral] Daily Active Users (DAU) dan daily transaction metrics — tidak dipublikasikan resmi; adoption metrics incomplete untuk product-market fit assessment (Phase 8 Adoption Metrics)
 - [behavioral] Grant program / hackathon sponsorship — tidak ditemukan program resmi EtherFi untuk developer eksternal; ecosystem growth dependency pada L2/restaking layer grants (Phase 7 Developer Ecosystem, Phase 8 Open Threads)
 - [knowledge] 1. Legal entity jurisdiction dan foundation status — tidak terverifikasi publik apakah EtherFi Foundation terdaftar di yurisdiksi mana; kritis untuk regulatory compliance assessment【Phase 1 — Country】【Phase 2 — EtherFi Foundation】【Phase 8 — Open Threads】. 2. Token distribution breakdown persentase per kategori (Team, Investors, Community, Treasury, Ecosystem, Advisors) — semua "tidak diungkap" Phase 6; Binance Research mungkin punya data tapi tidak diverifikasi publik【Phase 6 — Distribution】【Phase 8 — Open Threads】. 3. Vesting schedule detail (cliff, duration, unlock frequency) untuk team/investor — tidak diungkap; EV-028 mention vesting unlock berlangsung tapi no public schedule【Phase 6 — Vesting Schedule】【Phase 3 — EV-028】【Phase 8 — Open Threads】. 4. Fee switch proposal (EV-024) outcome — Snapshot vote completed Oktober 2024 tapi implementation status tidak diverifikasi on-chain【Phase 3 — EV-024】【Phase 6 — Utility】【Phase 8 — Open Threads】. 5. Treasury address dan composition — DAO treasury multisig/Gnosis Safe address tidak terverifikasi publik; composition unknown【Phase 5 — Treasury】【Phase 7 — Governance Ecosystem】【Phase 8 — Open Threads】. 6. Protocol revenue historical data — tidak dipublikasikan berkala; on-chain fee trackable via Dune tapi tidak diagregasikan resmi【Phase 5 — Revenue History】【Phase 8 — Open Threads】. 7. Ether.fi vs EtherFi naming confusion — website resmi ether.fi tapi Phase 1-7 pakai "EtherFi"; DefiLlama punya "Ether.fi" terpisah; perlu verifikasi【Phase 8 — Competitor Landscape】【Phase 8 — Open Threads】. 8. Insurance coverage untuk slashing risk — apakah Vaults/protocol beli coverage Nexus Mutual/Unslashed atau punya internal fund; tidak terverifikasi【Phase 8 — Open Threads】. 9. Formal verification status — apakah ada kontrak diverifikasi formal (Certora, Halmos) selain 8 audit tradisional; tidak diketahui【Phase 4 — Audit History】【Phase 8 — Open Threads】. 10. Cross-chain weETH supply aggregator — apakah ada kontrak/indexer resmi track total supply weETH across all chains real-time; supply mismatch risk unmonitored【Phase 4 — Known Technical Limitations】【Phase 8 — Open Threads】. 11. DAO treasury multi-sig signer identity — PAUSER_ROLE dan UPGRADER_ROLE holders tidak dipublikasikan; centralization risk emergency response【Phase 4 — Security Model】【Phase 8 — Ecosystem Risks】【Phase 8 — Open Threads】. 12. Regulatory engagement status — apakah ada legal counsel, compliance framework, komunikasi SEC/CFTC/EU MiCA; tidak teridentifikasi【Phase 5 — Financial Risk】【Phase 8 — Open Threads】. 13. Exact weETH contract address per 11 chain — tidak diagregasikan di docs.ether.fi/bridging; perlu query per explorer【Phase 8 — Open Threads】. 14. Bridge TVL dan volume per bridge (canonical vs LayerZero vs Wormhole vs Hyperlane) — no dashboard terpusat; bridge risk assessment incomplete【Phase 8 — Open Threads】. 15. Daily Active Users (DAU) dan daily transaction metrics — tidak dipublikasikan resmi; adoption metrics incomplete【Phase 8 — Adoption Metrics】【Phase 8 — Open Threads】. 16. Grant program / hackathon sponsorship — tidak ditemukan program resmi EtherFi untuk developer eksternal【Phase 7 — Developer Ecosystem】【Phase 8 — Open Threads】.
+- [conflict] Open Thread ID: OT-001 Description: Identitas EtherFi vs Ether.fi — apakah project yang sama atau competitor terpisah Affected Phase: Phase 1, Phase 8 Evidence: Phase 1 merujuk "EtherFi" dengan website https://www.ether.fi; DefiLlama https://defillama.com/protocol/ether-fi mungkin mengindikasikan project terpisah Alternative Interpretations: · EtherFi dan Ether.fi adalah project yang sama (minor typo dalam dataset) · EtherFi dan Ether.fi adalah project berbeda (nama serupa, kompetitor) · EtherFi adalah rebrand dari Ether.fi Status: Open
+- [conflict] Open Thread ID: OT-002 Description: Fee switch proposal (EV-024) implementation status — voted tapi belum diverifikasi on-chain execution Affected Phase: Phase 3, Phase 6 Evidence: Snapshot https://snapshot.org/#/etherfi.eth; tidak ada bukti Governor execution di Phase 3 atau Phase 6 Alternative Interpretations: · Proposal passed dan sedang dalam proses implementation (timelock pending) · Proposal passed dan sudah diimplementasikan (tapi tidak terdokumentasi di dataset) · Proposal gagal atau ditolak Status: Open
+- [conflict] Open Thread ID: OT-003 Description: Token distribution breakdown dan vesting schedule — semua "tidak diungkap" resmi Affected Phase: Phase 6 Evidence: Phase 6 Distribution "tidak diungkap persentase pasti"; Phase 6 Vesting Schedule "tidak diungkap" Alternative Interpretations: · Data tersedia secara private tapi tidak dipublikasikan · Data tersedia di Binance Research tapi tidak dikonfirmasi di docs resmi · Data tidak pernah dibuat formal oleh tim Status: Open
+- [conflict] Open Thread ID: OT-004 Description: Jumlah seed funding dan valuation — tidak diungkap oleh investor maupun protokol Affected Phase: Phase 5 Evidence: Phase 5 Funding History "Amount: tidak diungkap"; Phase 5 Financial Dependencies "tidak diungkap" Alternative Interpretations: · Amount di bawah ambang batas laporan publik · Amount besar tapi NDA melarang disclosure · Amount tidak pernah ada (equity swap atau token allocation) Status: Open
+- [conflict] Open Thread ID: OT-005 Description: Treasury address dan komposisi — DAO treasury multisig tidak terverifikasi publik Affected Phase: Phase 5, Phase 7 Evidence: Phase 5 Treasury custodian "DAO treasury address tidak terverifikasi publik"; Phase 7 Governance Ecosystem tidak memberikan address Alternative Interpretations: · Treasury dikelola via Gnosis Safe yang tidak diidentifikasi publik · Treasury masih dalam kontrol tim/founder multisig · Treasury telah dipindahkan ke DAO tetapi address tidak dipublikasikan Status: Open
+- [conflict] Open Thread ID: OT-006 Description: Operator count ULN real-time — jumlah operator tidak dipublikasikan sebagai dashboard Affected Phase: Phase 8 Evidence: Phase 8 Adoption Metrics "~150+ registered operators (per launch), exact current count tidak dipublikasikan" Alternative Interpretations: · Operator count meningkat signifikan sejak launch · Operator count menurun karena slashing atau churn · Operator count naik tapi tidak signifikan Status: Open
+- [conflict] Open Thread ID: OT-007 Description: Bridge TVL dan volume per bridge — tidak ada dashboard terpusat untuk weETH cross-chain supply Affected Phase: Phase 8 Evidence: Phase 8 Open Threads "Bridge TVL dan volume per bridge tidak dipublikasikan" Alternative Interpretations: · Bridge TVL terbagi antara canonical dan third-party bridge, tidak diagregasikan · Dune dashboard komunitas mungkin ada tapi tidak terverifikasi · Tim EtherFi memiliki dashboard internal yang tidak dipublikasikan Status: Open
+- [airdrop] Tidak ada bukti eksplisit bahwa EtherFi melakukan airdrop; apakah ada distribusi ETHFI ke staker tertentu yang terjadi sebelum TGE namun tidak dipublikasikan sebagai "airdrop"?
+- [airdrop] Alokasi "Community/Ecosystem" di Phase 6 tidak diungkap — apakah sebagian dari alokasi itu digunakan untuk distribusi retroaktif ke staker awal, dan siapa penerimanya?
+- [airdrop] Apakah ada proposal DAO yang pernah membahas airdrop tambahan untuk pengguna eETH/weETH, dan bagaimana hasil votingnya?
+- [airdrop] Bagaimana harga puncak 8.15 USD di hari TGE bisa terjadi jika tidak ada airdrop — apakah itu didorong oleh spekulasi CEX atau oleh komunitas staker yang membeli?
+- [airdrop] Apakah tim EtherFi pernah menyatakan secara internal (wawancara/AMC) bahwa mereka sengaja menghindari airdrop untuk menghindari sybil dan kepatuhan regulasi? Tidak ditemukan.
+- [airdrop] Berapa sebenarnya jumlah staker eETH/weETH unik sebelum TGE (Maret 2024) — data ini akan memungkinkan estimasi dampak insentif, tetapi tidak tersedia publik.

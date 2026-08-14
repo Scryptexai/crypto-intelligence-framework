@@ -2,9 +2,9 @@
 window.CIF = {
   "meta": {
     "schema": "cif-export/1",
-    "generated": "2026-08-14 07:13 UTC",
-    "projects": 54,
-    "deep": 54,
+    "generated": "2026-08-14 15:45 UTC",
+    "projects": 56,
+    "deep": 56,
     "summary": 0,
     "sentiment": 0,
     "patterns": 16,
@@ -107,6 +107,7 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "pivot",
         "l1"
       ]
@@ -172,6 +173,7 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "modular",
         "bridge"
       ]
@@ -194,6 +196,7 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "lrt",
         "liquid-restaking",
         "restaking",
@@ -221,6 +224,7 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "lrt",
         "liquid-restaking",
         "restaking",
@@ -283,6 +287,17 @@ window.CIF = {
       ]
     },
     {
+      "n": "Injective",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Injective.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "airdrop",
+        "bridge"
+      ]
+    },
+    {
       "n": "Irys",
       "tier": "Deep",
       "file": "examples/CaseStudies/Irys.md",
@@ -312,7 +327,9 @@ window.CIF = {
       "file": "examples/CaseStudies/Jupiter.md",
       "cat": "",
       "era": "",
-      "tags": []
+      "tags": [
+        "airdrop"
+      ]
     },
     {
       "n": "Kamino",
@@ -390,7 +407,9 @@ window.CIF = {
       "file": "examples/CaseStudies/Near.md",
       "cat": "",
       "era": "",
-      "tags": []
+      "tags": [
+        "airdrop"
+      ]
     },
     {
       "n": "Notcoin",
@@ -420,6 +439,7 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "l2"
       ]
     },
@@ -430,6 +450,7 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "bridge"
       ]
     },
@@ -440,6 +461,7 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "l2"
       ]
     },
@@ -461,7 +483,7 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
-        "amm"
+        "airdrop"
       ]
     },
     {
@@ -471,6 +493,7 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "oracle",
         "bridge"
       ]
@@ -481,7 +504,9 @@ window.CIF = {
       "file": "examples/CaseStudies/Render.md",
       "cat": "",
       "era": "",
-      "tags": []
+      "tags": [
+        "airdrop"
+      ]
     },
     {
       "n": "Scroll",
@@ -490,7 +515,7 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
-        "bridge",
+        "airdrop",
         "l2"
       ]
     },
@@ -501,6 +526,7 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "modular",
         "l1"
       ]
@@ -522,7 +548,20 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "l2"
+      ]
+    },
+    {
+      "n": "Sui",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Sui.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "airdrop",
+        "testnet-incentive",
+        "l1"
       ]
     },
     {
@@ -532,6 +571,7 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
+        "airdrop",
         "amm",
         "bridge",
         "governance"

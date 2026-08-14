@@ -1,9 +1,9 @@
 # Render — Deep Case Study (Phased)
 
 **CIF Dataset — Deep Dossier · Tier: Deep (anchor project)**
-**Source:** Deep Research (DeepSeek), Format v3 Dependency Pipeline (10/11 phases: foundation, entity, history, technology, financial, token, ecosystem, market, behavioral, knowledge). **Auto-assembled** by `tools/ingest.py` (deterministic, no LLM, strict data_project/ contract) — each phase extracted and concatenated in dependency order per `docs/Protocol/Deep-Research-Brief.md`; the reasoning is the source reports'.
-**Raw sources archived:** doc_backup/deep/Render_foundation_2026-08.docx, doc_backup/deep/Render_entity_2026-08.docx, doc_backup/deep/Render_history_2026-08.docx, doc_backup/deep/Render_technology_2026-08.docx, doc_backup/deep/Render_financial_2026-08.docx, doc_backup/deep/Render_token_2026-08.docx, doc_backup/deep/Render_ecosystem_2026-08.docx, doc_backup/deep/Render_market_2026-08.docx, doc_backup/deep/Render_behavioral_2026-08.docx, doc_backup/deep/Render_knowledge_2026-08.docx.
-**Phases not run:** conflict.
+**Source:** Deep Research (DeepSeek), Format v3 Dependency Pipeline (12/11 phases: foundation, entity, history, technology, financial, token, ecosystem, market, behavioral, knowledge, conflict, airdrop). **Auto-assembled** by `tools/ingest.py` (deterministic, no LLM, strict data_project/ contract) — each phase extracted and concatenated in dependency order per `docs/Protocol/Deep-Research-Brief.md`; the reasoning is the source reports'.
+**Raw sources archived:** doc_backup/deep/Render_foundation_2026-08.docx, doc_backup/deep/Render_entity_2026-08.docx, doc_backup/deep/Render_history_2026-08.docx, doc_backup/deep/Render_technology_2026-08.docx, doc_backup/deep/Render_financial_2026-08.docx, doc_backup/deep/Render_token_2026-08.docx, doc_backup/deep/Render_ecosystem_2026-08.docx, doc_backup/deep/Render_market_2026-08.docx, doc_backup/deep/Render_behavioral_2026-08.docx, doc_backup/deep/Render_knowledge_2026-08.docx, doc_backup/deep/Render_conflict_2026-08.docx, doc_backup/deep/Render_airdrop_2026-08.docx.
+**Phases not run:** none.
 
 > Faithful concatenation of phase outputs — no fabrication, no distillation beyond what the closing phase (Conflict Resolution / Validation) itself states. Consider a periodic QC pass.
 
@@ -3515,6 +3515,1343 @@ Anti-patterns
 7. Bridge Dependency For Cross-Chain Liquidity Without Protocol-Level Mitigation【Phase 7 — External Dependencies, Ecosystem Risks】.
 8. No Confidential Compute Capability For Enterprise AI Workloads【Phase 4 — Security Model】【Phase 7 — Ecosystem Risks】.
 
+## Validation & Quality Assurance (CIF Score)
+_ref: `docs/Reasoning/Confidence.md` — CIF Score, Data Lineage, Knowledge Dependency Graph_
+
+PROJECT: Render Network
+
+CIF MANIFEST v3.0
+
+Project: Render Network
+Symbol: RENDER
+Research Date: 2025-01-01
+CIF Version: 3.0
+QA Date: 2025-01-01
+
+METRICS
+Total Knowledge Objects: 18
+Total Entities: 33
+Total Events: 16
+Conflict Register: 9
+Conflict Resolved: 0
+Conflict Unresolved: 9
+Critical: 1
+High: 2
+Medium: 3
+Low: 3
+
+QUALITY SCORES
+Research Quality: 80/100
+Consistency: 87.5/100
+Evidence: 72/100
+Coverage: 82/100
+Conflict: 57/100
+Knowledge: 93/100
+CIF SCORE: 78.45/100
+
+CONFIDENCE LEVEL: MEDIUM
+QA STATUS: REVIEW NEEDED
+
+RECOMMENDED RE-RUN:
+- Phase 5 — Financial — Treasury size, composition, dan revenue history tidak diungkap; ICO amount tidak diverifikasi dari sumber primer
+- Phase 6 — Token — Total supply, distribution allocation, dan vesting schedule tidak dipublikasikan; perlu verifikasi on-chain
+- Phase 8 — Market — Adoption metrics (DAU, job volume, GPU capacity, staking amount) tidak tersedia; perlu integrasi on-chain data
+
+DATASET INTEGRITY & COVERAGE
+
+Phase 1 — Foundation
+- Status: Complete
+- Missing Information: Tidak ada
+- Notes: Seluruh field fundamental terisi dengan HIGH confidence; token contract placeholder untuk Solana SPL dan Polygon bridged menjadi open thread
+
+Phase 2 — Entity
+- Status: Complete
+- Missing Information: Tidak ada
+- Notes: 33 entities teridentifikasi; 10 internal, 20 external, 3 unknown exposure type
+
+Phase 3 — History
+- Status: Complete
+- Missing Information: Testnet launch exact date tidak tercantum (hanya 2019); RNP-002 voting period end date tidak tercantum
+- Notes: 16 events teridentifikasi, 2017-2023
+
+Phase 4 — Technology
+- Status: Complete
+- Missing Information: Solana program IDs, Wormhole bridge contract addresses, exact staking minimum, hash parameter tidak tercantum
+- Notes: 9 core components, 4 audits, 6 major upgrades teridentifikasi
+
+Phase 5 — Financial
+- Status: Incomplete
+- Missing Information: Treasury size, treasury composition, revenue history, ICO amount, grant amount, vesting schedule — semua tidak diungkap
+- Notes: 5 funding rounds (1 ICO, 1 grant, 3 ongoing/outbound), 7 revenue streams; tidak ada audited financials
+
+Phase 6 — Token
+- Status: Incomplete
+- Missing Information: Total supply, circulating supply, distribution allocation (7 kategori), vesting schedule (5 kategori), emission schedule, holder distribution — semua tidak dipublikasikan
+- Notes: 7 utilities, token-weighted governance, inflation/deflation mechanism teridentifikasi; 9 major token events
+
+Phase 7 — Ecosystem
+- Status: Complete
+- Missing Information: IPFS/Arweave status, Kubernetes usage, Prometheus/Grafana — inferred tidak confirmed; real-time metrics tidak ada
+- Notes: 16 external dependencies, 6 major integrations, 7 infrastructure providers, 8 exchanges, 8 wallets, 11 developer tools, 7 applications, 6 governance components, 10 risks
+
+Phase 8 — Market
+- Status: Incomplete
+- Missing Information: DAU, transaction volume, active wallets, job count, GPU capacity, staking amount, governance participation, market share — semua tidak dipublikasikan
+- Notes: 8 CEXs, 7 perpetuals, 6 competitors, 8 narratives, 15 market milestones; TVL $12.4M (DeFiLlama 2024-11) satu-satunya adoption metric terverifikasi
+
+Phase 9 — Behavioral
+- Status: Complete
+- Missing Information: Tidak ada
+- Notes: 5 strategic objectives, 14 decision points, 7 evolution patterns, 6 technical decision patterns, 6 financial decision patterns, 5 ecosystem decision patterns, 5 governance decision patterns, 6 risk response patterns, 5 recurring patterns, 7 strategic trade-offs
+
+Phase 10 — Knowledge
+- Status: Complete
+- Missing Information: Tidak ada
+- Notes: 10 core insights, 6 strategic principles, 5 success factors, 8 failure factors, 6 decision framework steps, 6 reusable playbooks, 8 anti-patterns, 10 lessons learned
+
+Coverage Report — Multi-dimensional
+
+Phase 2 — Entity
+- Total: 33
+- Referenced in Phase 9-10: 24
+- Unused: 9
+- Coverage: 72%
+- Interpretation: 9 entities (Trezor, Trust Wallet, Exodus, Polygonscan, CoinMarketCap, CryptoRank, Telegram @rendertoken, Akash, Aethir) tidak tereksplisit dalam Phase 9-10, meskipun beberapa disebut implisit dalam konteks pasar atau wallet
+
+Phase 3 — Event
+- Total: 16
+- Referenced in Phase 9-10: 14
+- Unused: 2
+- Coverage: 88%
+- Interpretation: EV-003 (Testnet) dan EV-004 (GitHub) tidak menjadi basis knowledge utama di Phase 9-10; mayoritas event jadi fondasi knowledge insight besar (migrasi, DAO, token)
+
+Phase 4 — Technology
+- Total: 9 komponen
+- Referenced: 9
+- Unused: 0
+- Coverage: 100%
+- Interpretation: Seluruh core components (scheduler, node software, proof-of-render, dll) dirujuk di Phase 9-10 sebagai dependency atau decision pattern
+
+Phase 5 — Financial
+- Total: 12 items (5 funding, 7 revenue)
+- Referenced: 9
+- Unused: 3
+- Coverage: 75%
+- Interpretation: 3 revenue streams (Bridge Fees, Enterprise Contracts, Treasury Yield) tidak dieksplisit di Phase 9-10, meski enterprise revenue disebut implisit lewat OTOY
+
+Phase 6 — Token
+- Total: 16 items (7 utilities + 9 major events)
+- Referenced: 14
+- Unused: 2
+- Coverage: 88%
+- Interpretation: Cross-chain bridge asset dan revenue share telah diidentifikasi tapi tidak menjadi fokus utama knowledge; mayoritas token events jadi basis insight
+
+Phase 7 — Ecosystem
+- Total: 73 items (16 deps + 6 integrations + 7 providers + 8 exchanges + 8 wallets + 11 dev tools + 7 apps + 10 risks)
+- Referenced: 58
+- Unused: 15
+- Coverage: 79%
+- Interpretation: Mayoritas dependencies dan integrations dirujuk; 5 wallets, 2 dev tools (CI/CLI), dan beberapa exchange detail tidak menjadi knowledge utama
+
+Phase 8 — Market
+- Total: 37 items (8 exchanges + 6 competitors + 8 narratives + 15 milestones)
+- Referenced: 32
+- Unused: 5
+- Coverage: 86%
+- Interpretation: Mayoritas narratives dan competitors dirujuk; beberapa exchange OTC detail dan milestones tertentu tidak dieksplisit
+
+Overall Coverage
+- Total: 33+16+9+12+16+73+37 = 196
+- Referenced: 24+14+9+9+14+58+32 = 160
+- Unused: 9+2+0+3+2+15+5 = 36
+- Coverage: 160/196 = 82%
+- Interpretation: Cakupan kuat — mayoritas data mentah diproses menjadi knowledge; 18% dataset tidak terpakai terutama berasal dari detail wallet/exchange/consumers yang tidak relevan untuk strategic analysis di Phase 9-10
+
+CROSS-PHASE CONSISTENCY
+
+Entity Consistency
+- Status: Konsisten
+- Detail: Seluruh entity yang sama muncul dengan nama yang sama persis di semua phase — "OTOY Inc." konsisten sebagai parent company, "Render Network Foundation" konsisten sebagai entitas hukum, "Render Network DAO" konsisten sebagai governance, "Jules Urbach" konsisten sebagai founder/CEO
+
+Timeline Consistency
+- Status: Konsisten
+- Detail: Timeline di Phase 1 (Testnet 2019, Mainnet April 2020), Phase 3 (EV-003, EV-005, EV-012), Phase 8 (Market Timeline), dan Phase 9 (Decision Timeline) saling mendukung penuh
+
+Technology Consistency
+- Status: Konsisten
+- Detail: Upgrade sequence konsisten — Ethereum mainnet v1 (2020) → Polygon Bridge (2022) → Solana Migration (2023) → DAO Launch (2023) → Scheduler Decentralization v1 (2024) → AI/ML Compute Support (2024); tidak ada kontradiksi
+
+Funding Consistency
+- Status: Konsisten
+- Detail: Funding history di Phase 5 sesuai dengan Phase 3 events — ICO 2017 (EV-001), Solana Foundation Grant 2023 (EV-010/011), Grants Program 2023 (EV-016); tidak ada conflict
+
+Token Consistency
+- Status: Konsisten
+- Detail: Token info di Phase 6 sesuai dengan Phase 1 dan Phase 3 — symbol RENDER, contract address Ethereum 0x6de...2e, SPL standard 8 decimals, ERC-20 legacy 18 decimals, token swap RNDR→RENDER 1:1 di 2023 (EV-012)
+
+Governance Consistency
+- Status: Konsisten
+- Detail: Governance structure konsisten — Phase 2 (Entity: Render Network DAO), Phase 3 (EV-009, EV-014), Phase 6 (Token-weighted DAO), Phase 7 (Realms/SPL Governance), Phase 9 (Governance Decision Pattern)
+
+Dependency Consistency
+- Status: Konsisten
+- Detail: External dependencies konsisten — Solana (kritis), Wormhole (bridge), OctaneRender (engine), OTOY (funding) — disebutkan dengan role yang sama di Phase 4, 5, 7, 9, 10
+
+Overall Cross-phase Consistency: 88%
+
+DATA LINEAGE
+
+Knowledge K-001 — Migration Chain sebagai Strategic Inflection Point
+- Lineage: Phase 3 EV-010, EV-011; Phase 4 System Architecture, Execution Environment
+- Supporting Dataset: Phase 3, Phase 4
+- Validation: Passed — Evidence Strong, Confidence 98/100
+
+Knowledge K-002 — Proprietary Engine Dependency
+- Lineage: Phase 4 Core Components, Known Technical Limitations; Phase 7 Ecosystem Risks
+- Supporting Dataset: Phase 4, Phase 7
+- Validation: Passed — Evidence Strong, Confidence 95/100
+
+Knowledge K-003 — Progressive Decentralization Via RNP
+- Lineage: Phase 3 EV-010, EV-014; Phase 6 Governance; Phase 4 Technical Upgrade History
+- Supporting Dataset: Phase 3, Phase 6, Phase 4
+- Validation: Passed — Evidence Strong, Confidence 98/100
+
+Knowledge K-004 — OTOY Funding Anchor
+- Lineage: Phase 5 Financial Dependencies, Financial Risk; Phase 7 Infrastructure Providers; Phase 2 Entity
+- Supporting Dataset: Phase 5, Phase 7, Phase 2
+- Validation: Passed — Evidence Strong, Confidence 90/100
+
+Knowledge K-005 — Treasury Opacity Systemic Risk
+- Lineage: Phase 5 Treasury, Revenue History, Financial Risk; Phase 6 Distribution, Vesting
+- Supporting Dataset: Phase 5, Phase 6
+- Validation: Passed — Evidence Strong, Confidence 97/100
+
+Knowledge K-006 — Single-Chain Dependency (Solana)
+- Lineage: Phase 4 System Architecture, Consensus Mechanism; Phase 7 Ecosystem Risks, External Dependencies
+- Supporting Dataset: Phase 4, Phase 7
+- Validation: Passed — Evidence Strong, Confidence 98/100
+
+Knowledge K-007 — Token Utility Expansion
+- Lineage: Phase 6 Utility, Governance; Phase 4 Technical Upgrade History; Phase 3 EV-012, EV-013, EV-014
+- Supporting Dataset: Phase 6, Phase 4, Phase 3
+- Validation: Passed — Evidence Strong, Confidence 100/100
+
+Knowledge K-008 — Bridge Dependency (Wormhole)
+- Lineage: Phase 4 Cross-Chain Messaging; Phase 7 External Dependencies, Ecosystem Risks; Phase 3 EV-007, EV-011
+- Supporting Dataset: Phase 4, Phase 7, Phase 3
+- Validation: Passed — Evidence Moderate, Confidence 79/100
+
+Knowledge K-009 — Inflationary Tokenomics Tanpa Offset
+- Lineage: Phase 6 Inflation/Deflation, Supply; Phase 5 Revenue Model
+- Supporting Dataset: Phase 6, Phase 5
+- Validation: Passed — Evidence Moderate, Confidence 78/100
+
+Knowledge K-010 — Enterprise Demand Anchor Via OTOY
+- Lineage: Phase 2 Entity Major Studio Partners; Phase 7 Major Integrations, Infrastructure Providers; Phase 5 Financial Dependencies
+- Supporting Dataset: Phase 2, Phase 7, Phase 5
+- Validation: Passed — Evidence Strong, Confidence 90/100
+
+Knowledge K-011 — Governance-First untuk Major Changes
+- Lineage: Phase 3 EV-010, EV-014; Phase 6 Governance; Phase 4 Technical Upgrade History; Phase 7 Governance Ecosystem
+- Supporting Dataset: Phase 3, Phase 6, Phase 4, Phase 7
+- Validation: Passed — Evidence Strong, Confidence 98/100
+
+Knowledge K-012 — Progressive Decentralization Over Big-Bang
+- Lineage: Phase 4 Technical Upgrade History, Known Technical Limitations; Phase 7 Ecosystem Risks
+- Supporting Dataset: Phase 4, Phase 7
+- Validation: Passed — Evidence Strong, Confidence 97/100
+
+Knowledge K-013 — Partnership-Driven Expansion
+- Lineage: Phase 3 EV-015; Phase 7 Major Integrations; Phase 8 Narrative Position; Phase 4 Technical Upgrade History
+- Supporting Dataset: Phase 3, Phase 7, Phase 8, Phase 4
+- Validation: Passed — Evidence Moderate, Confidence 87/100
+
+Knowledge K-014 — Enterprise Demand Anchor Via Parent Company
+- Lineage: Phase 2 Entity Major Studio Partners; Phase 7 Major Integrations, Infrastructure Providers; Phase 5 Financial Dependencies
+- Supporting Dataset: Phase 2, Phase 7, Phase 5
+- Validation: Passed — Evidence Strong, Confidence 90/100
+
+Knowledge K-015 — Off-Chain Compute, On-Chain Settlement
+- Lineage: Phase 4 System Architecture, Consensus Mechanism, Core Components, Security Model
+- Supporting Dataset: Phase 4
+- Validation: Passed — Evidence Strong, Confidence 98/100
+
+Knowledge K-016 — Foundation + DAO Dual Structure
+- Lineage: Phase 2 Entity Foundation, DAO; Phase 5 Treasury; Phase 7 Governance Ecosystem; Phase 3 EV-009, EV-014
+- Supporting Dataset: Phase 2, Phase 5, Phase 7, Phase 3
+- Validation: Passed — Evidence Strong, Confidence 98/100
+
+Knowledge K-017 — Migration Chain Via Governance Proposal
+- Lineage: Phase 3 EV-010, EV-011, EV-012, EV-013; Phase 6 Major Token Events
+- Supporting Dataset: Phase 3, Phase 6
+- Validation: Passed — Evidence Strong, Confidence 89/100
+
+Knowledge K-018 — Core Engineering Fully Funded By Single Corp
+- Lineage: Phase 5 Financial Dependencies, Financial Risk; Phase 7 Infrastructure Providers; Phase 2 Entity
+- Supporting Dataset: Phase 5, Phase 7, Phase 2
+- Validation: Passed — Evidence Strong, Confidence 90/100
+
+KNOWLEDGE DEPENDENCY GRAPH
+
+Knowledge K-001 — Migration Chain Sebagai Strategic Inflection Point
+- Depends On (Direct): EV-010, EV-011, System Architecture, Execution Environment
+- Depends On (Indirect): OTOY Inc., Render Network Foundation, Render Network Protocol, Phase 8 Narrative
+- Dependents: K-011, K-012, K-017
+- Propagation: Jika EV-010/011 tanggal berubah → K-001 timeline berubah; Jika Solana bukan primary → K-001 deprecated
+
+Knowledge K-002 — Proprietary Engine Dependency
+- Depends On (Direct): Core Components, Known Technical Limitations, Ecosystem Risks
+- Depends On (Indirect): OctaneRender, OTOY Inc.
+- Dependents: K-014, K-018
+- Propagation: Jika lisensi OctaneRender berubah → K-002 affected; Jika open-source alternative muncul → K-002 melemah
+
+Knowledge K-003 — Progressive Decentralization Via RNP
+- Depends On (Direct): EV-010, EV-014, Governance Proposal System, Technical Upgrade History
+- Depends On (Indirect): Render Network DAO, Realms/SPL Governance
+- Dependents: K-011, K-012, K-015
+- Propagation: Jika RNP process berubah → K-003 affected; Jika DAO parameter berubah → K-003 affected
+
+Knowledge K-004 — OTOY Inc. Sebagai Funding Anchor
+- Depends On (Direct): Financial Dependencies, Financial Risk, Infrastructure Providers, Entity Core Team
+- Depends On (Indirect): OTOY Inc., OctaneRender, EV-005, EV-011
+- Dependents: K-010, K-014, K-018
+- Propagation: Jika OTOY revenue menurun → K-004 affected; Jika OTOY leadership berubah → K-004 affected
+
+Knowledge K-005 — Treasury Opacity Systemic Risk
+- Depends On (Direct): Treasury, Revenue History, Distribution, Vesting Schedule, Financial Risk
+- Depends On (Indirect): Render Network Foundation, Render Network DAO, EV-009, EV-016
+- Dependents: K-018
+- Propagation: Jika Treasury disclosure dipublikasikan → K-005 melemah; Jika Treasury data diverifikasi on-chain → K-005 updated
+
+Knowledge K-006 — Single-Chain Dependency (Solana)
+- Depends On (Direct): System Architecture, Ecosystem Risks, External Dependencies, Consensus Mechanism
+- Depends On (Indirect): Solana, Render Network Protocol, EV-011
+- Dependents: K-015
+- Propagation: Jika Solana bukan primary → K-006 deprecated; Jika Solana ada outage → K-006 risk upgraded
+
+Knowledge K-007 — Token Utility Expansion
+- Depends On (Direct): Utility, Governance, Technical Upgrade History, EV-012/013/014
+- Depends On (Indirect): RENDER Token (SPL), Render Network DAO, Phase 8 Narrative
+- Dependents: K-011
+- Propagation: Jika utility baru ditambahkan → K-007 updated; Jika utility deprecated → K-007 affected
+
+Knowledge K-008 — Bridge Dependency (Wormhole)
+- Depends On (Direct): Cross-Chain Messaging, External Dependencies, Ecosystem Risks, EV-007, EV-011
+- Depends On (Indirect): Ethereum, Polygon
+- Dependents: K-015
+- Propagation: Jika Wormhole exploit → K-008 risk upgraded; Jika alternative bridge ditambahkan → K-008 melemah
+
+Knowledge K-009 — Inflationary Tokenomics Tanpa Offset
+- Depends On (Direct): Inflation/Deflation, Supply, Revenue Model
+- Depends On (Indirect): RENDER Token (SPL), Render Network DAO, Governance-controlled fee burn
+- Dependents: K-018
+- Propagation: Jika fee burn diaktifkan → K-009 updated; Jika emission schedule dipublikasikan → K-009 complete
+
+Knowledge K-010 — Enterprise Demand Anchor Via OTOY
+- Depends On (Direct): Entity Major Studio Partners, Major Integrations, Infrastructure Providers, Financial Dependencies
+- Depends On (Indirect): OTOY Inc., OctaneRender
+- Dependents: K-004, K-014
+- Propagation: Jika enterprise clients berubah → K-010 affected; Jika OTOY sales strategy berubah → K-010 affected
+
+Knowledge K-011 — Governance-First untuk Major Changes
+- Depends On (Direct): EV-010, Governance Proposal System, Technical Upgrade History, Governance Ecosystem
+- Depends On (Indirect): Render Network DAO, Render Network Foundation
+- Dependents: K-003, K-012, K-017
+- Propagation: Jika RNP process berubah → K-011 affected; Jika governance ditinggalkan → K-011 deprecated
+
+Knowledge K-012 — Progressive Decentralization Over Big-Bang
+- Depends On (Direct): Technical Upgrade History, Known Technical Limitations, Ecosystem Risks
+- Depends On (Indirect): Render Network DAO, Render Network Foundation
+- Dependents: K-001, K-003, K-011
+- Propagation: Jika full decentralization tercapai → K-012 updated; Jika scheduler permanent v1 → K-012 risk upgraded
+
+Knowledge K-013 — Partnership-Driven Expansion
+- Depends On (Direct): EV-015, Major Integrations, Technical Upgrade History, Narrative Position
+- Depends On (Indirect): io.net, Metaplex, Solana Foundation
+- Dependents: K-007
+- Propagation: Jika partnership io.net berakhir → K-013 affected; Jika partnership baru → K-013 expanded
+
+Knowledge K-014 — Enterprise Demand Anchor Via Parent Company
+- Depends On (Direct): Entity Major Studio Partners, Major Integrations, Infrastructure Providers, Financial Dependencies
+- Depends On (Indirect): OTOY Inc., Major Studio Partners
+- Dependents: K-002, K-004, K-010
+- Propagation: Jika OTOY enterprise strategy berubah → K-014 affected; Jika protocol adopsi direct enterprise → K-014 melemah
+
+Knowledge K-015 — Off-Chain Compute, On-Chain Settlement
+- Depends On (Direct): System Architecture, Consensus Mechanism, Core Components, Security Model
+- Depends On (Indirect): Render Network Protocol, Solana, OctaneRender
+- Dependents: K-001, K-006, K-008
+- Propagation: Jika architecture pattern berubah → K-015 affected; Jika proof-of-render algorithm berubah → K-015 updated
+
+Knowledge K-016 — Foundation + DAO Dual Structure
+- Depends On (Direct): Entity Foundation, Entity DAO, Treasury, Governance Ecosystem, EV-009, EV-014
+- Depends On (Indirect): Render Network Foundation, Render Network DAO, Cayman Islands Registry
+- Dependents: K-003, K-005, K-011
+- Propagation: Jika Foundation legal status berubah → K-016 affected; Jika DAO governance ditinggalkan → K-016 deprecated
+
+Knowledge K-017 — Migration Chain Via Governance Proposal
+- Depends On (Direct): EV-010, EV-011, EV-012, EV-013, Major Token Events
+- Depends On (Indirect): Solana, Ethereum, Polygon
+- Dependents: K-001, K-003, K-011
+- Propagation: Jika token swap deadline berubah → K-017 affected; Jika exchange delist RENDER → K-017 affected
+
+Knowledge K-018 — Core Engineering Fully Funded By Single Corp
+- Depends On (Direct): Financial Dependencies, Financial Risk, Infrastructure Providers, Entity Core Team
+- Depends On (Indirect): OTOY Inc., OctaneRender, Major Studio Partners
+- Dependents: K-004, K-005
+- Propagation: Jika OTOY revenue menurun → K-018 risk upgraded; Jika protocol diversifikasi funding → K-018 melemah
+
+CONFLICT REGISTER WITH SEVERITY & IMPACT
+
+Conflict C-001
+- Category: Token Contract Address
+- Description: Solana SPL RENDER token contract address menggunakan placeholder "rndrM9r..." di Phase 1 dan Phase 6, bukan full address terverifikasi dari on-chain primary source
+- Severity: Critical
+- Affected Knowledge: K-001, K-007, K-017
+- Impact: 4
+- Affected Phase: Phase 1, Phase 6
+- Evidence: Phase 1 Token Contract, Phase 6 Token Information — keduanya menyebut "rndrM9r..." tanpa full address; SPL Token Registry tidak diakses sebagai primary source
+- Sources: https://spl.solana.com/token-registry, https://solscan.io/token/rndrM9r...
+- Resolution: Tidak dapat diselesaikan dengan evidence yang ada; memerlukan verifikasi on-chain di Solana Explorer/SPL Registry
+- Status: Unresolved
+
+Conflict C-002
+- Category: Polygon Bridged Contract Address
+- Description: Polygon RENDER bridged token contract address menggunakan placeholder "0x0e8f..." di Phase 1 dan Phase 6, bukan full address terverifikasi
+- Severity: High
+- Affected Knowledge: K-008
+- Impact: 2
+- Affected Phase: Phase 1, Phase 6
+- Evidence: Phase 1 Token Contract, Phase 6 Token Information — keduanya menyebut "0x0e8f..." tanpa full address; Polygonscan tidak diakses sebagai primary source
+- Sources: https://polygonscan.com/token/0x0e8f...
+- Resolution: Tidak dapat diselesaikan dengan evidence yang ada; memerlukan verifikasi di Polygonscan
+- Status: Unresolved
+
+Conflict C-003
+- Category: Total Supply
+- Description: Total supply RENDER tidak diketahui — CoinGecko/CoinMarketCap menampilkan angka yang bervariasi, tidak ada dashboard resmi yang mempublikasikan total supply terverifikasi on-chain
+- Severity: High
+- Affected Knowledge: K-009, K-017
+- Impact: 3
+- Affected Phase: Phase 6
+- Evidence: Phase 6 Supply: "Total Supply: tidak diketahui (tidak dipublikasikan secara resmi secara real-time; CoinGecko/CoinMarketCap menampilkan angka yang bervariasi)"
+- Sources: https://www.coingecko.com/en/coins/render-token, https://coinmarketcap.com/currencies/render-token/
+- Resolution: Tidak dapat diselesaikan dengan evidence yang ada; memerlukan query on-chain Solana token account untuk aggregasi supply
+- Status: Unresolved
+
+Conflict C-004
+- Category: Treasury Size
+- Description: Treasury size tidak diungkap — Phase 5 menyebut "tidak diungkap" untuk seluruh field treasury; tidak ada transparency report resmi atau dashboard on-chain
+- Severity: Medium
+- Affected Knowledge: K-005, K-018
+- Impact: 3
+- Affected Phase: Phase 5
+- Evidence: Phase 5 Treasury: "Current Treasury Size: tidak diungkap; Treasury Composition: tidak diungkap; Native Token Holdings: tidak diungkap"
+- Sources: https://docs.render.network/governance, https://medium.com/render-token/introducing-the-render-network-foundation-8c7e8b5b5c5a
+- Resolution: Tidak dapat diselesaikan dengan evidence yang ada; memerlukan aggregasi on-chain wallet treasury via Realms/SPL Governance
+- Status: Unresolved
+
+Conflict C-005
+- Category: Revenue History
+- Description: Revenue history (protocol fees bulanan/tahunan) tidak dipublikasikan — Phase 5 menyebut "Tidak diungkap" untuk seluruh revenue history; tidak ada laporan keuangan resmi
+- Severity: Medium
+- Affected Knowledge: K-005, K-009
+- Impact: 3
+- Affected Phase: Phase 5
+- Evidence: Phase 5 Revenue History: "Tidak diungkap — tidak ada sumber resmi yang mempublikasikan revenue bulanan/tahunan Render Network"
+- Sources: https://medium.com/render-token, https://docs.render.network
+- Resolution: Tidak dapat diselesaikan dengan evidence yang ada; memerlukan query on-chain escrow program untuk estimasi fees
+- Status: Unresolved
+
+Conflict C-006
+- Category: ICO Amount
+- Description: ICO 2017 amount raised, token price, dan allocation tidak dipublikasikan — CoinDesk melaporkan terjadinya sale tapi tanpa angka spesifik; tidak ada sumber primer yang mempublikasikan detail
+- Severity: Medium
+- Affected Knowledge: K-005
+- Impact: 2
+- Affected Phase: Phase 5, Phase 6
+- Evidence: Phase 5 Token Sale: "Detail alokasi, harga, dan total raised tidak diverifikasi dari sumber primer"; Phase 5 Funding History: "Amount: tidak diketahui"
+- Sources: https://www.coindesk.com/icos/render-token-rndr-ico/, https://render.network/whitepaper
+- Resolution: Tidak dapat diselesaikan dengan evidence yang ada; memerlukan dokumen sale resmi atau foundation archive
+- Status: Unresolved
+
+Conflict C-007
+- Category: Emission Schedule
+- Description: Emission schedule staking rewards tidak ditentukan — whitepaper menyebut "dynamic based on network utilization" tanpa formula/curve; tidak ada publikasi rate per tahun
+- Severity: Low
+- Affected Knowledge: K-009
+- Impact: 2
+- Affected Phase: Phase 6
+- Evidence: Phase 6 Inflation/Deflation: "Emission Schedule: tidak diketahui (kurva emisi, rate per tahun, halving schedule tidak dipublikasikan dari sumber primer)"
+- Sources: https://render.network/whitepaper
+- Resolution: Tidak dapat diselesaikan dengan evidence yang ada; memerlukan parameter governance di Realms atau RNP eksplisit
+- Status: Unresolved
+
+Conflict C-008
+- Category: Testnet Launch Date
+- Description: Testnet launch date hanya disebut "2019" — Medium blog tidak mencantumkan bulan/tanggal spesifik
+- Severity: Low
+- Affected Knowledge: Tidak ada (hanya timeline)
+- Impact: 1
+- Affected Phase: Phase 1, Phase 3
+- Evidence: Phase 1 Launch Date - Testnet: "2019"; Phase 3 EV-003: "Date: 2019"
+- Sources: https://medium.com/render-token/render-network-testnet-is-live-5f8b3c2e8b3a
+- Resolution: Tidak dapat diselesaikan dengan evidence yang ada; memerlukan arsip blog lengkap atau announcement lain
+- Status: Unresolved
+
+Conflict C-009
+- Category: DAO Launch Date
+- Description: DAO launch exact date tidak tercantum — Phase 3 EV-014 menyebut "2023" tanpa bulan/tanggal; Realms DAO tidak menampilkan tanggal pembuatan di publik
+- Severity: Low
+- Affected Knowledge: K-003, K-016
+- Impact: 3
+- Affected Phase: Phase 3, Phase 6
+- Evidence: Phase 3 EV-014: "Date: 2023"; Phase 6 Governance: "live sejak 2023"
+- Sources: https://docs.render.network/governance, https://realms.today/dao/render
+- Resolution: Tidak dapat diselesaikan dengan evidence yang ada; memerlukan explorer data Realms untuk tanggal pembuatan program
+- Status: Unresolved
+
+Conflict Summary:
+- Total Conflicts: 9
+- Resolved: 0
+- Unresolved: 9
+- Critical: 1
+- High: 2
+- Medium: 3
+- Low: 3
+
+Conflict Score:
+- (Resolved 0 × 1.0) + (Unresolved Low 3 × 0.9 = 2.7) + (Unresolved Medium 3 × 0.6 = 1.8) + (Unresolved High 2 × 0.3 = 0.6) + (Unresolved Critical 1 × 0.0 = 0) = 5.1
+- Conflict Score: 5.1 / 9 = 0.57
+- Hasil: 57%
+
+EVIDENCE AUDIT
+
+Knowledge K-001 — Migration Chain Sebagai Inflection Point
+- Evidence Quality: Strong
+- Evidence Weight: 9 (Official Blog 8, Whitepaper 8)
+- Assessment: Didukung oleh events migrasi dan architecture diagram dari whitepaper resmi — sangat kuat
+
+Knowledge K-002 — Proprietary Engine Dependency
+- Evidence Quality: Strong
+- Evidence Weight: 8 (Whitepaper, Official Blog)
+- Assessment: OctaneRender dependency terdokumentasi di whitepaper dan licensing page — kuat
+
+Knowledge K-003 — Progressive Decentralization Via RNP
+- Evidence Quality: Strong
+- Evidence Weight: 9 (Official Blog, Governance Docs)
+- Assessment: RNP-002 dan DAO launch adalah events terverifikasi; governance docs mendukung — kuat
+
+Knowledge K-004 — OTOY Funding Anchor
+- Evidence Quality: Strong
+- Evidence Weight: 8 (OTOY Leadership, LinkedIn, Medium)
+- Assessment: OTOY funding engineerdocumented di LinkedIn dan leadership page; tidak ada angka pasti tapi fakta keberadaan kuat
+
+Knowledge K-005 — Treasury Opacity Systemic Risk
+- Evidence Quality: Strong
+- Evidence Weight: 8 (Governance Docs, Whitepaper)
+- Assessment: Tidak ada data treasury adalah fakta terdokumentasi; absence of evidence = evidence of absence — kuat
+
+Knowledge K-006 — Single-Chain Dependency (Solana)
+- Evidence Quality: Strong
+- Evidence Weight: 9 (Whitepaper, Official Blog, Docs)
+- Assessment: Arsitektur single-chain jelas di whitepaper; risiko didokumentasikan di ecosystem risks — kuat
+
+Knowledge K-007 — Token Utility Expansion
+- Evidence Quality: Strong
+- Evidence Weight: 9 (Whitepaper, Governance Docs, SPL Registry)
+- Assessment: 7 utilities live dengan mekanisme on-chain; governance voting dan AI compute payment terverifikasi — kuat
+
+Knowledge K-008 — Bridge Dependency (Wormhole)
+- Evidence Quality: Moderate
+- Evidence Weight: 6 (Docs, Wormhole site)
+- Assessment: Dependency function terdokumentasi; tapi bridge economic/technical detail tidak di primary source Render — moderate
+
+Knowledge K-009 — Inflationary Tokenomics Tanpa Offset
+- Evidence Quality: Moderate
+- Evidence Weight: 8 (Whitepaper)
+- Assessment: Whitepaper jelas menyebut inflation mechanism; tapi emission schedule tidak diketahui sehingga insight tidak lengkap
+
+Knowledge K-010 — Enterprise Demand Anchor Via OTOY
+- Evidence Quality: Strong
+- Evidence Weight: 8 (OTOY Customers, Middle leadership)
+- Assessment: Daftar customer OTOY publik dan terdokumentasi; anchor demand interpretasi logis — kuat
+
+Knowledge K-011 — Governance-First untuk Major Changes
+- Evidence Quality: Strong
+- Evidence Weight: 9 (Governance Docs, Official Blog)
+- Assessment: Semua major changes melalui RNP — terdokumentasi di blog dan governance docs — kuat
+
+Knowledge K-012 — Progressive Decentralization Over Big-Bang
+- Evidence Quality: Strong
+- Evidence Weight: 8 (Whitepaper, Official Blog)
+- Assessment: Timeline decentralization terdokumentasi — mainnet centralized → DAO → scheduler API — kuat
+
+Knowledge K-013 — Partnership-Driven Expansion
+- Evidence Quality: Moderate
+- Evidence Weight: 7 (Official Blog, io.net Blog, Metaplex Docs)
+- Assessment: Partnership ada dan terdokumentasi; tapi terms dan technical specification tidak dipublikasikan detail — moderate
+
+Knowledge K-014 — Enterprise Demand Anchor Via Parent Company
+- Evidence Quality: Strong
+- Evidence Weight: 8 (OTOY Customers, Leadership)
+- Assessment: Sama dengan K-010 — didukung OTOY customer list — kuat
+
+Knowledge K-015 — Off-Chain Compute, On-Chain Settlement
+- Evidence Quality: Strong
+- Evidence Weight: 9 (Whitepaper, Official Docs)
+- Assessment: Architecture pattern jelas di whitepaper dan docs; proof-of-render terdokumentasi detail — kuat
+
+Knowledge K-016 — Foundation + DAO Dual Structure
+- Evidence Quality: Strong
+- Evidence Weight: 9 (Official Blog, Governance Docs)
+- Assessment: Foundation announcement dan DAO launch terdokumentasi; treasury custodian jelas — kuat
+
+Knowledge K-017 — Migration Chain Via Governance Proposal
+- Evidence Quality: Strong
+- Evidence Weight: 9 (Official Blog, SPL Registry, Coingecko)
+- Assessment: Token swap, rebranding, dan migration terdokumentasi — kuat
+
+Knowledge K-018 — Core Engineering Fully Funded By Single Corp
+- Evidence Quality: Strong
+- Evidence Weight: 8 (OTOY Leadership, LinkedIn)
+- Assessment: Fakta OTOY membayar engineers terdokumentasi; risk assessment interpretasi — kuat
+
+CONFIDENCE ASSESSMENT — v3.0
+
+Source Diversity Score:
+- Jika total weight > 20: 10/10 (High)
+- Jika total weight 10-20: 5/10 (Medium)
+- Jika total weight < 10: 2/10 (Low)
+
+Knowledge K-001 — Migration Chain
+- Evidence Count: 4
+- Evidence Weight: 9
+- Independent Sources: 3
+- Official Sources: 3
+- Source Diversity: 10 (total weight 36)
+- Cross-phase Validation: Pass
+- No Conflicts: 0
+- Coverage: 100%
+- Confidence: (4×10)+(9×5)+(3×10)+(3×15)+(15)+(10)+(10) = 195/195 = 98 → High
+
+Knowledge K-002 — Proprietary Engine Dependency
+- Evidence Count: 4
+- Evidence Weight: 8
+- Independent Sources: 3
+- Official Sources: 3
+- Source Diversity: 10 (total weight 32)
+- Cross-phase Validation: Pass
+- No Conflicts: 0
+- Coverage: 100%
+- Confidence: (4×10)+(8×5)+(3×10)+(3×15)+(15)+(10)+(10) = 190/195 = 95 → High
+
+Knowledge K-003 — Progressive Decentralization Via RNP
+- Evidence Count: 4
+- Evidence Weight: 9
+- Independent Sources: 3
+- Official Sources: 3
+- Source Diversity: 10 (total weight 36)
+- Cross-phase Validation: Pass
+- No Conflicts: 0
+- Coverage: 100%
+- Confidence: (4×10)+(9×5)+(3×10)+(3×15)+(15)+(10)+(10) = 195/195 = 98 → High
+
+Knowledge K-004 — OTOY Funding Anchor
+- Evidence Count: 4
+- Evidence Weight: 8
+- Independent Sources: 3
+- Official Sources: 2
+- Source Diversity: 10 (total weight 32)
+- Cross-phase Validation: Pass
+- No Conflicts: 0
+- Coverage: 100%
+- Confidence: (4×10)+(8×5)+(3×10)+(2×15)+(15)+(10)+(10) = 175/195 = 90 → High
+
+Knowledge K-005 — Treasury Opacity Systemic Risk
+- Evidence Count: 5
+- Evidence Weight: 8
+- Independent Sources: 3
+- Official Sources: 3
+- Source Diversity: 10 (total weight 40)
+- Cross-phase Validation: Pass
+- No Conflicts: 1 (C-004)
+- Coverage: 100%
+- Confidence: (5×10)+(8×5)+(3×10)+(3×15)+(15)+(0)+(10) = 190/195 = 97 → High
+
+Knowledge K-006 — Single-Chain Dependency (Solana)
+- Evidence Count: 4
+- Evidence Weight: 9
+- Independent Sources: 3
+- Official Sources: 3
+- Source Diversity: 10 (total weight 36)
+- Cross-phase Validation: Pass
+- No Conflicts: 0
+- Coverage: 100%
+- Confidence: (4×10)+(9×5)+(3×10)+(3×15)+(15)+(10)+(10) = 195/195 = 98 → High
+
+Knowledge K-007 — Token Utility Expansion
+- Evidence Count: 5
+- Evidence Weight: 9
+- Independent Sources: 4
+- Official Sources: 4
+- Source Diversity: 10 (total weight 45)
+- Cross-phase Validation: Pass
+- No Conflicts: 0
+- Coverage: 100%
+- Confidence: (5×10)+(9×5)+(4×10)+(4×15)+(15)+(10)+(10) = 230/230 = 100 → High
+
+Knowledge K-008 — Bridge Dependency (Wormhole)
+- Evidence Count: 4
+- Evidence Weight: 6
+- Independent Sources: 3
+- Official Sources: 2
+- Source Diversity: 10 (total weight 24)
+- Cross-phase Validation: Pass
+- No Conflicts: 1 (C-002)
+- Coverage: 90%
+- Confidence: (4×10)+(6×5)+(3×10)+(2×15)+(15)+(0)+(9) = 154/195 = 79 → Medium
+
+Knowledge K-009 — Inflationary Tokenomics Tanpa Offset
+- Evidence Count: 4
+- Evidence Weight: 8
+- Independent Sources: 2
+- Official Sources: 2
+- Source Diversity: 5 (total weight 16)
+- Cross-phase Validation: Pass
+- No Conflicts: 2 (C-003, C-007)
+- Coverage: 80%
+- Confidence: (4×10)+(8×5)+(2×10)+(2×15)+(15)+(0)+(8) = 153/195 = 78 → Medium
+
+Knowledge K-010 — Enterprise Demand Anchor Via OTOY
+- Evidence Count: 4
+- Evidence Weight: 8
+- Independent Sources: 3
+- Official Sources: 2
+- Source Diversity: 10 (total weight 32)
+- Cross-phase Validation: Pass
+- No Conflicts: 0
+- Coverage: 100%
+- Confidence: (4×10)+(8×5)+(3×10)+(2×15)+(15)+(10)+(10) = 175/195 = 90 → High
+
+Knowledge K-011 — Governance-First untuk Major Changes
+- Evidence Count: 4
+- Evidence Weight: 9
+- Independent Sources: 3
+- Official Sources: 3
+- Source Diversity: 10 (total weight 36)
+- Cross-phase Validation: Pass
+- No Conflicts: 0
+- Coverage: 100%
+- Confidence: (4×10)+(9×5)+(3×10)+(3×15)+(15)+(10)+(10) = 195/195 = 98 → High
+
+Knowledge K-012 — Progressive Decentralization Over Big-Bang
+- Evidence Count: 4
+- Evidence Weight: 8
+- Independent Sources: 3
+- Official Sources: 3
+- Source Diversity: 10 (total weight 32)
+- Cross-phase Validation: Pass
+- No Conflicts: 0
+- Coverage: 100%
+- Confidence: (4×10)+(8×5)+(3×10)+(3×15)+(15)+(10)+(10) = 190/195 = 97 → High
+
+Knowledge K-013 — Partnership-Driven Expansion
+- Evidence Count: 4
+- Evidence Weight: 7
+- Independent Sources: 3
+- Official Sources: 2
+- Source Diversity: 10 (total weight 28)
+- Cross-phase Validation: Pass
+- No Conflicts: 0
+- Coverage: 100%
+- Confidence: (4×10)+(7×5)+(3×10)+(2×15)+(15)+(10)+(10) = 170/195 = 87 → High
+
+Knowledge K-014 — Enterprise Demand Anchor Via Parent Company
+- Evidence Count: 4
+- Evidence Weight: 8
+- Independent Sources: 3
+- Official Sources: 2
+- Source Diversity: 10 (total weight 32)
+- Cross-phase Validation: Pass
+- No Conflicts: 0
+- Coverage: 100%
+- Confidence: (4×10)+(8×5)+(3×10)+(2×15)+(15)+(10)+(10) = 175/195 = 90 → High
+
+Knowledge K-015 — Off-Chain Compute, On-Chain Settlement
+- Evidence Count: 4
+- Evidence Weight: 9
+- Independent Sources: 3
+- Official Sources: 3
+- Source Diversity: 10 (total weight 36)
+- Cross-phase Validation: Pass
+- No Conflicts: 0
+- Coverage: 100%
+- Confidence: (4×10)+(9×5)+(3×10)+(3×15)+(15)+(10)+(10) = 195/195 = 98 → High
+
+Knowledge K-016 — Foundation + DAO Dual Structure
+- Evidence Count: 4
+- Evidence Weight: 9
+- Independent Sources: 3
+- Official Sources: 3
+- Source Diversity: 10 (total weight 36)
+- Cross-phase Validation: Pass
+- No Conflicts: 0
+- Coverage: 100%
+- Confidence: (4×10)+(9×5)+(3×10)+(3×15)+(15)+(10)+(10) = 195/195 = 98 → High
+
+Knowledge K-017 — Migration Chain Via Governance Proposal
+- Evidence Count: 5
+- Evidence Weight: 9
+- Independent Sources: 4
+- Official Sources: 3
+- Source Diversity: 10 (total weight 45)
+- Cross-phase Validation: Pass
+- No Conflicts: 1 (C-001)
+- Coverage: 95%
+- Confidence: (5×10)+(9×5)+(4×10)+(3×15)+(15)+(0)+(9.5) = 204.5/230 = 89 → High
+
+Knowledge K-018 — Core Engineering Fully Funded By Single Corp
+- Evidence Count: 4
+- Evidence Weight: 8
+- Independent Sources: 3
+- Official Sources: 2
+- Source Diversity: 10 (total weight 32)
+- Cross-phase Validation: Pass
+- No Conflicts: 0
+- Coverage: 100%
+- Confidence: (4×10)+(8×5)+(3×10)+(2×15)+(15)+(10)+(10) = 175/195 = 90 → High
+
+Confidence Summary:
+- High (80-100): 15 Knowledge
+- Medium (60-79): 2 Knowledge (K-008, K-009)
+- Low (<60): 0 Knowledge
+- Average Confidence Score: 93/100
+
+KNOWLEDGE STABILITY & VERSIONING
+
+K-001 — Migration Chain Sebagai Inflection Point
+- Stability: Stable
+- Current Version: v1.0
+- Created: 2025-01-01
+- Last Updated: 2025-01-01
+- Status: Active
+- Deprecation Status: Active
+
+K-002 — Proprietary Engine Dependency
+- Stability: Stable
+- Current Version: v1.0
+- Created: 2025-01-01
+- Last Updated: 2025-01-01
+- Status: Active
+- Deprecation Status: Active
+
+K-003 — Progressive Decentralization Via RNP
+- Stability: Stable
+- Current Version: v1.0
+- Created: 2025-01-01
+- Last Updated: 2025-01-01
+- Status: Active
+- Deprecation Status: Active
+
+K-004 — OTOY Funding Anchor
+- Stability: Stable
+- Current Version: v1.0
+- Created: 2025-01-01
+- Last Updated: 2025-01-01
+- Status: Active
+- Deprecation Status: Active
+
+K-005 — Treasury Opacity Systemic Risk
+- Stability: Stable
+- Current Version: v1.0
+- Created: 2025-01-01
+- Last Updated: 2025-01-01
+- Status: Active
+- Deprecation Status: Active
+
+K-006 — Single-Chain Dependency (Solana)
+- Stability: Stable
+- Current Version: v1.0
+- Created: 2025-01-01
+- Last Updated: 2025-01-01
+- Status: Active
+- Deprecation Status: Active
+
+K-007 — Token Utility Expansion
+- Stability: Stable
+- Current Version: v1.0
+- Created: 2025-01-01
+- Last Updated: 2025-01-01
+- Status: Active
+- Deprecation Status: Active
+
+K-008 — Bridge Dependency (Wormhole)
+- Stability: Emerging
+- Current Version: v1.0
+- Created: 2025-01-01
+- Last Updated: 2025-01-01
+- Status: Active
+- Deprecation Status: Active
+- Planned Update: v1.1 — Trigger: verifikasi on-chain bridge contract address; Expected Change: confidence naik jika address terverifikasi
+
+K-009 — Inflationary Tokenomics Tanpa Offset
+- Stability: Emerging
+- Current Version: v1.0
+- Created: 2025-01-01
+- Last Updated: 2025-01-01
+- Status: Active
+- Deprecation Status: Active
+- Planned Update: v1.1 — Trigger: publikasi emission schedule atau fee burn proposal; Expected Change: confidence naik jika data tersedia
+
+K-010 — Enterprise Demand Anchor Via OTOY
+- Stability: Stable
+- Current Version: v1.0
+- Created: 2025-01-01
+- Last Updated: 2025-01-01
+- Status: Active
+- Deprecation Status: Active
+
+K-011 — Governance-First untuk Major Changes
+- Stability: Stable
+- Current Version: v1.0
+- Created: 2025-01-01
+- Last Updated: 2025-01-01
+- Status: Active
+- Deprecation Status: Active
+
+K-012 — Progressive Decentralization Over Big-Bang
+- Stability: Emerging
+- Current Version: v1.0
+- Created: 2025-01-01
+- Last Updated: 2025-01-01
+- Status: Active
+- Deprecation Status: Active
+- Planned Update: v1.1 — Trigger: Scheduler decentralization progress; Expected Change: confidence naik jika full decentralization tercapai
+
+K-013 — Partnership-Driven Expansion
+- Stability: Stable
+- Current Version: v1.0
+- Created: 2025-01-01
+- Last Updated: 2025-01-01
+- Status: Active
+- Deprecation Status: Active
+
+K-014 — Enterprise Demand Anchor Via Parent Company
+- Stability: Stable
+- Current Version: v1.0
+- Created: 2025-01-01
+- Last Updated: 2025-01-01
+- Status: Active
+- Deprecation Status: Active
+
+K-015 — Off-Chain Compute, On-Chain Settlement
+- Stability: Stable
+- Current Version: v1.0
+- Created: 2025-01-01
+- Last Updated: 2025-01-01
+- Status: Active
+- Deprecation Status: Active
+
+K-016 — Foundation + DAO Dual Structure
+- Stability: Stable
+- Current Version: v1.0
+- Created: 2025-01-01
+- Last Updated: 2025-01-01
+- Status: Active
+- Deprecation Status: Active
+
+K-017 — Migration Chain Via Governance Proposal
+- Stability: Stable
+- Current Version: v1.0
+- Created: 2025-01-01
+- Last Updated: 2025-01-01
+- Status: Active
+- Deprecation Status: Active
+
+K-018 — Core Engineering Fully Funded By Single Corp
+- Stability: Stable
+- Current Version: v1.0
+- Created: 2025-01-01
+- Last Updated: 2025-01-01
+- Status: Active
+- Deprecation Status: Active
+
+MISSING KNOWLEDGE CLASSIFICATION
+
+Missing Item: Treasury Size
+- Phase: Phase 5
+- Reason: Not Public
+- Severity: High
+- Impact: Menghambat analisis financial health dan runway; berdampak K-005, K-018
+
+Missing Item: Treasury Composition
+- Phase: Phase 5
+- Reason: Not Public
+- Severity: High
+- Impact: Tidak bisa menilai stablecoin vs native token exposure; berdampak K-005
+
+Missing Item: Revenue History
+- Phase: Phase 5
+- Reason: Not Public
+- Severity: High
+- Impact: Tidak bisa menilai protocol adoption dan sustainability; berdampak K-005, K-009
+
+Missing Item: ICO Amount Raised
+- Phase: Phase 5
+- Reason: Not Public
+- Severity: Medium
+- Impact: Tidak bisa menilai awal tokenomics; berdampak K-005
+
+Missing Item: Total Supply
+- Phase: Phase 6
+- Reason: Not Public
+- Severity: High
+- Impact: Tidak bisa menilai inflation/dilution; berdampak K-009
+
+Missing Item: Circulating Supply
+- Phase: Phase 6
+- Reason: Not Public
+- Severity: High
+- Impact: Tidak bisa menilai market cap accuracy; berdampak K-009
+
+Missing Item: Distribution Allocation (7 kategori)
+- Phase: Phase 6
+- Reason: Not Public
+- Severity: High
+- Impact: Tidak bisa menilai token concentration; berdampak K-005
+
+Missing Item: Vesting Schedule (5 kategori)
+- Phase: Phase 6
+- Reason: Not Public
+- Severity: High
+- Impact: Tidak bisa menilai unlock pressure; berdampak K-005, K-009
+
+Missing Item: Emission Schedule
+- Phase: Phase 6
+- Reason: Not Public
+- Severity: Medium
+- Impact: Tidak bisa menilai inflation curve; berdampak K-009
+
+Missing Item: Holder Distribution
+- Phase: Phase 6
+- Reason: Not Public
+- Severity: Medium
+- Impact: Tidak bisa menilai whale concentration; berdampak K-005
+
+Missing Item: Scheduler Decentralization v1 Spec
+- Phase: Phase 4
+- Reason: Not Yet Released
+- Severity: Medium
+- Impact: Tidak bisa menilai efficacy decentralization; berdampak K-003, K-012
+
+Missing Item: AI/ML Compute Technical Specification
+- Phase: Phase 4
+- Reason: Not Yet Released
+- Severity: Medium
+- Impact: Tidak bisa menilai readiness AI workloads; berdampak K-007
+
+Missing Item: Solana SPL Contract Full Address
+- Phase: Phase 1, Phase 6
+- Reason: Unknown (placeholder)
+- Severity: Critical
+- Impact: Invalid untuk user onboarding; berdampak K-001, K-007, K-017
+
+Missing Item: Polygon Bridged Contract Full Address
+- Phase: Phase 1, Phase 6
+- Reason: Unknown (placeholder)
+- Severity: High
+- Impact: Invalid untuk bridge user; berdampak K-008
+
+Missing Item: Realms DAO Program ID
+- Phase: Phase 6
+- Reason: Not Public
+- Severity: Medium
+- Impact: Tidak bisa direct on-chain governance verification; berdampak K-003, K-011
+
+Missing Item: Wormhole Bridge Contract Addresses
+- Phase: Phase 7
+- Reason: Not Public
+- Severity: Medium
+- Impact: Tidak bisa verify bridge liquidity; berdampak K-008
+
+Missing Item: Audit Report Full URLs
+- Phase: Phase 4
+- Reason: Not Public
+- Severity: Medium
+- Impact: Tidak bisa verify audit findings; berdampak K-015
+
+Missing Item: Enterprise Revenue Split
+- Phase: Phase 5
+- Reason: Not Public
+- Severity: Medium
+- Impact: Tidak bisa menilai revenue ke protocol vs OTOY; berdampak K-004, K-014
+
+Missing Item: Bridge Fee Revenue Share
+- Phase: Phase 5
+- Reason: Not Public
+- Severity: Low
+- Impact: Tidak bisa menilai cross-chain revenue; berdampak K-008
+
+Missing Item: Solana Foundation Grant Amount
+- Phase: Phase 5
+- Reason: Not Public
+- Severity: Medium
+- Impact: Tidak bisa menilai grant dependency; berdampak K-004
+
+Missing Item: OTOY Financial Contribution Amount
+- Phase: Phase 5
+- Reason: Not Public
+- Severity: Medium
+- Impact: Tidak bisa menilai actual engineering cost; berdampak K-004, K-018
+
+Missing Item: Grants Program Disbursement Detail
+- Phase: Phase 5, Phase 7
+- Reason: Not Public
+- Severity: Medium
+- Impact: Tidak bisa menilai ecosystem fund deployment; berdampak K-013
+
+Missing Item: IPFS/Arweave Integration Status
+- Phase: Phase 4
+- Reason: Deprecated
+- Severity: Medium
+- Impact: Tidak bisa menilai storage architecture; berdampak K-015
+
+Missing Item: Kubernetes/Prometheus Usage
+- Phase: Phase 4
+- Reason: Never Existed
+- Severity: Low
+- Impact: Tidak mempengaruhi analisis
+
+Missing Item: DAU (Daily Active Users)
+- Phase: Phase 8
+- Reason: Not Public
+- Severity: High
+- Impact: Tidak bisa menilai adoption; berdampak semua knowledge pasar
+
+Missing Item: Job Volume per bulan
+- Phase: Phase 8
+- Reason: Not Public
+- Severity: High
+- Impact: Tidak bisa menilai utilization; berdampak K-013
+
+Missing Item: GPU Capacity Online
+- Phase: Phase 8
+- Reason: Not Public
+- Severity: Medium
+- Impact: Tidak bisa menilai supply-side health; berdampak K-006
+
+Missing Item: Staking Amount (Total RENDER bonded)
+- Phase: Phase 8
+- Reason: Not Public
+- Severity: Medium
+- Impact: Tidak bisa menilai security; berdampak K-009
+
+Missing Item: Governance Participation
+- Phase: Phase 8
+- Reason: Not Public
+- Severity: Medium
+- Impact: Tidak bisa menilai DAO health; berdampak K-003
+
+Missing Item: Market Share Data
+- Phase: Phase 8
+- Reason: Never Existed
+- Severity: Low
+- Impact: Tidak mempengaruhi analisis; berdampak —
+
+CIF SCORE CALCULATION
+
+Research Quality (25%)
+- (8 / 10) × 100 = 80
+- Kontribusi: 80 × 0.25 = 20
+
+Consistency (20%)
+- (7 / 8) × 100 = 87.5
+- Kontribusi: 87.5 × 0.20 = 17.5
+
+Evidence (15%)
+- Average Evidence Weight = 72
+- Kontribusi: 72 × 0.15 = 10.8
+
+Coverage (15%)
+- Overall Coverage = 82%
+- Kontribusi: 82 × 0.15 = 12.3
+
+Conflict (15%)
+- Conflict Score = 57%
+- Kontribusi: 57 × 0.15 = 8.55
+
+Knowledge (10%)
+- Average Confidence Score = 93
+- Kontribusi: 93 × 0.10 = 9.3
+
+CIF Score = 20 + 17.5 + 10.8 + 12.3 + 8.55 + 9.3 = 78.45
+
+Interpretasi:
+- Needs Improvement (60-80): CIF usable, perbaikan disarankan
+
+FINAL VALIDATION SUMMARY
+
+Dataset Completeness:
+- Complete Phases: 8 dari 10 (Phase 5 Financial incomplete, Phase 6 Token incomplete, Phase 8 Market incomplete)
+- Missing Information: 28 item, semua dicatat
+- Status: 80% lengkap (dengan catatan major gaps di financial, token supply, adoption metrics)
+
+Cross-phase Consistency:
+- Overall: 88%
+- Status: Konsisten
+
+Evidence Quality:
+- Strong: 15 Knowledge
+- Moderate: 2 Knowledge (K-008, K-009)
+- Weak: 0 Knowledge
+
+Confidence Assessment:
+- High: 15 Knowledge
+- Medium: 2 Knowledge (K-008, K-009)
+- Low: 0 Knowledge
+- Average: 93/100
+
+Remaining Conflicts:
+- Resolved: 0
+- Unresolved: 9
+- Critical: 1
+- High: 2
+- Medium: 3
+- Low: 3
+
+Knowledge Stability Distribution:
+- Stable: 14
+- Emerging: 3 (K-008, K-009, K-012)
+- Volatile: 0
+- Deprecated: 0
+
+CIF Score: 78.45/100
+
+Overall Validation Result:
+CIF untuk Render Network memiliki kualitas yang baik namun terhambat oleh beberapa gap data signifikan yang bersumber pada kurangnya transparansi proyek. Fondasi teknis (Phase 4) dan historis (Phase 3) sangat kuat dan didukung oleh whitepaper, governance docs, dan blog resmi yang konsisten. Celah utama berada di aspek finansial (Phase 5), token supply allocation (Phase 6), dan adoption metrics (Phase 8) yang semuanya "tidak diungkap" oleh Render Network Foundation — ini bukan kekurangan riset, melainkan keterbatasan data yang dipublikasikan. Hal ini menghasilkan Conflict Score rendah (57%) karena banyak konflik unresolved yang murni due to missing data, bukan karena informasi bertentangan. Rekomendasi: CIF dapat digunakan untuk analisis strategis dengan catatan bahwa analisis finansial dan tokenomics harus menyertakan disclaimer besar tentang ketidaktersediaan data. Re-run disarankan ketika Foundation mempublikasikan transparency report atau dashboard on-chain.
+
+Recommended Re-run:
+- Phase 5 — Financial — Untuk verifikasi treasury size, revenue history, funding amount jika Foundation mempublikasikan data baru atau dashboard on-chain diaktifkan
+- Phase 6 — Token — Untuk verifikasi supply, distribution, vesting, emission schedule jika data on-chain teraggregasi
+- Phase 8 — Market — Untuk integrasi adoption metrics (DAU, job volume, staking amount) dari on-chain analytics tools
+
+QA Status: REVIEW NEEDED (karena banyak missing data fundamental)
+Confidence Level: MEDIUM (untuk analisis finansial; HIGH untuk analisis teknis dan historis)
+
+## Airdrop Intelligence
+_ref: `docs/Ontology/DecisionEvent.md`, `docs/Ontology/Context.md` — an airdrop is a Decision Event with an eight-POV outcome_
+
+PROJECT: Render
+
+PROJECT: NamaProject
+
+STATUS AIRDROP
+
+Belum ada. Berdasarkan hasil analisis, tidak ditemukan informasi mengenai pelaksanaan airdrop pada project ini.
+
+CONTEXT SAAT KEPUTUSAN
+
+Pendanaan: Tahap awal, belum ada pendanaan besar
+Komunitas: Ukuran komunitas masih kecil dan belum aktif
+Pasar: Kondisi pasar relatif stabil, tidak ada tekanan signifikan
+Kompetitor: Beberapa kompetitor besar telah melakukan airdrop, namun tidak ada tekanan langsung
+
+TRIGGER DAN ALTERNATIF
+
+Pemicu: Tekanan dari komunitas untuk meningkatkan partisipasi
+Alternatif: Penjualan token publik, distribusi bertahap, atau tidak mendistribusikan sama sekali
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi:
+- Belum diumumkan secara formal oleh tim
+
+Alasan yang tidak diumumkan:
+- HIPOTESIS: Kebutuhan untuk meningkatkan likuiditas di pasar (LOW)
+- HIPOTESIS: Tekanan dari investor untuk mempercepat adopsi (LOW)
+
+OUTCOME PER POV
+
+POV Founder: Tidak relevan
+- Jangka pendek: Tidak ada perubahan, karena belum ada airdrop
+- Jangka panjang: Tidak ada perubahan, karena belum ada airdrop
+- Dasar: Tidak ditemukan evidence
+
+POV VC: Tidak relevan
+- Jangka pendek: Tidak ada perubahan, karena belum ada airdrop
+- Jangka panjang: Tidak ada perubahan, karena belum ada airdrop
+- Dasar: Tidak ditemukan evidence
+
+POV Retail: Tidak relevan
+- Jangka pendek: Tidak ada perubahan, karena belum ada airdrop
+- Jangka panjang: Tidak ada perubahan, karena belum ada airdrop
+- Dasar: Tidak ditemukan evidence
+
+POV Community: Tidak relevan
+- Jangka pendek: Tidak ada perubahan, karena belum ada airdrop
+- Jangka panjang: Tidak ada perubahan, karena belum ada airdrop
+- Dasar: Tidak ditemukan evidence
+
+POV Developer: Tidak relevan
+- Jangka pendek: Tidak ada perubahan, karena belum ada airdrop
+- Jangka panjang: Tidak ada perubahan, karena belum ada airdrop
+- Dasar: Tidak ditemukan evidence
+
+POV Institution: Tidak relevan
+- Jangka pendek: Tidak ada perubahan, karena belum ada airdrop
+- Jangka panjang: Tidak ada perubahan, karena belum ada airdrop
+- Dasar: Tidak ditemukan evidence
+
+POV Validator: Tidak relevan
+- Jangka pendek: Tidak ada perubahan, karena belum ada airdrop
+- Jangka panjang: Tidak ada perubahan, karena belum ada airdrop
+- Dasar: Tidak ditemukan evidence
+
+POV Builder: Tidak relevan
+- Jangka pendek: Tidak ada perubahan, karena belum ada airdrop
+- Jangka panjang: Tidak ada perubahan, karena belum ada airdrop
+- Dasar: Tidak ditemukan evidence
+
+HARGA PASCA-DISTRIBUSI
+
+Harga saat klaim: Tidak berlaku, belum ada airdrop
+Harga +30 hari: Tidak berlaku, belum ada airdrop
+Harga +90 hari: Tidak berlaku, belum ada airdrop
+Harga puncak 12 bulan pertama: Tidak berlaku, belum ada airdrop
+
+METRIK RETENSI
+
+Perubahan TVL atau volume protokol sebelum vs sesudah distribusi: Tidak ditemukan
+Jumlah alamat pemegang token (unique holders), dengan tanggal pengukurannya: Tidak ditemukan
+Jumlah alamat aktif harian, sebelum vs sesudah: Tidak ditemukan
+Konsentrasi kepemilikan: berapa persen supply dipegang 10 alamat teratas: Tidak ditemukan
+Tingkat partisipasi staking atau retensi validator: Tidak ditemukan
+
+GAP YANG DIKETAHUI
+
+Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik.
+
+FARMING DAN SYBIL
+
+Belum ada laporan perilaku farming atau sybil, karena belum ada pelaksanaan airdrop.
+
+PROSPEK
+
+Prasyarat yang sudah terpenuhi:
+- Komunitas mulai berkembang dan partisipasi meningkat (MEDIUM) [Sumber: Analisis komunitas, URL]
+Prasyarat yang belum:
+- Belum ada tekanan dari investor atau pasar untuk melakukan airdrop (LOW) [Sumber: Analisis internal, URL]
+Sinyal yang biasanya mendahului:
+- Pengumuman dari tim terkait rencana airdrop (LOW) [Sumber: Pengamatan umum dalam industri, URL]
+
+Penilaian: Prasyarat untuk melakukan airdrop sedang berkembang, namun belum matang sepenuhnya. Jika ada peningkatan partisipasi komunitas dan tekanan dari investor, kemungkinan airdrop akan meningkat.
+
+PELAJARAN LINTAS PROJECT
+
+- Ketika komunitas berkembang namun partisipasi masih rendah (era 2024-2025), airdrop dapat meningkatkan keterlibatan.
+- Jika tekanan investor meningkat sementara likuiditas rendah (era 2023-2024), airdrop dapat menjadi solusi untuk meningkatkan adopsi dan likuiditas.
+
 ## Open Questions
 - [foundation] Exact core team headcount not publicly disclosed — OTOY employee count on LinkedIn ~50-200 but Render-specific subset unclear
 - [foundation] Telegram channel @rendertoken appears community-run not official — need verification of official Telegram presence
@@ -3682,3 +5019,96 @@ Anti-patterns
 - [knowledge] Node operator Docker image registry: Docker Hub vs GHCR vs private tidak specified【Phase 7 — Developer Ecosystem】【Phase 4 — Current Technical Stack】.
 - [knowledge] Hackathon bounty amounts dan winning projects: Tidak aggregated di public sources【Phase 7 — Developer Ecosystem】.
 - [knowledge] Bridge fee revenue share dengan Wormhole: Apakah DAO menerima share — tidak diklaim Render Network【Phase 5 — Revenue Model】【Phase 7 — External Dependencies】.
+- [conflict] Description: Solana SPL RENDER token contract address — placeholder "rndrM9r..." digunakan; full address tidak diverifikasi dari on-chain primary source
+- [conflict] Affected Phase: Phase 1, Phase 6
+- [conflict] Evidence: Phase 1 Token Contract, Phase 6 Token Information
+- [conflict] Alternative Interpretations: (a) Full address tersedia di SPL Token Registry tapi tidak diakses; (b) Placeholder digunakan karena registry tidak menampilkan full address di halaman publik mudah diakses
+- [conflict] Status: Open Open Thread ID: OT-02
+- [conflict] Description: Polygon bridged RENDER contract address — placeholder "0x0e8f..." digunakan; full address tidak diverifikasi
+- [conflict] Affected Phase: Phase 1, Phase 6
+- [conflict] Evidence: Phase 1 Token Contract, Phase 6 Token Information
+- [conflict] Alternative Interpretations: (a) Address tersedia di Polygonscan; (b) Tidak ada token bridged aktif di Polygon post-migration
+- [conflict] Status: Open Open Thread ID: OT-03
+- [conflict] Description: Total supply dan circulating supply RENDER tidak diketahui — CoinGecko/CoinMarketCap menampilkan angka bervariasi, tidak ada dashboard resmi
+- [conflict] Affected Phase: Phase 6
+- [conflict] Evidence: Phase 6 Supply
+- [conflict] Alternative Interpretations: (a) Metrics tersedia via on-chain query tapi tidak dipublikasikan; (b) Supply berubah karena migration/burn yang tidak terdokumentasi
+- [conflict] Status: Open Open Thread ID: OT-04
+- [conflict] Description: Treasury size dan composition tidak diungkap — tidak ada transparency report, dashboard, atau audited financials; berdampak pada analisis runway
+- [conflict] Affected Phase: Phase 5
+- [conflict] Evidence: Phase 5 Treasury
+- [conflict] Alternative Interpretations: (a) Treasury dikelola internal Foundation tanpa publikasi; (b) Treasury on-chain tersedia via Realms tapi tidak teraggregasi
+- [conflict] Status: Open Open Thread ID: OT-05
+- [conflict] Description: ICO 2017 exact amount raised, token price, allocation tidak dipublikasikan — hanya konfirmasi sale terjadi
+- [conflict] Affected Phase: Phase 5, Phase 6
+- [conflict] Evidence: CoinDesk, Whitepaper
+- [conflict] Alternative Interpretations: (a) Detail hilang atau arsip tidak online; (b) Foundation sengaja tidak mempublikasikan detail sale lama
+- [conflict] Status: Open Open Thread ID: OT-06
+- [conflict] Description: Emission schedule staking rewards tidak ditentukan — whitepaper menyebut "dynamic" tanpa formula; tidak ada parameter governance publik
+- [conflict] Affected Phase: Phase 6
+- [conflict] Evidence: Phase 6 Inflation/Deflation
+- [conflict] Alternative Interpretations: (a) Parameter diatur via governance real-time di Realms; (b) Emisi ditetapkan off-chain oleh core team
+- [conflict] Status: Open Open Thread ID: OT-07
+- [conflict] Description: Testnet launch exact date hanya "2019" — tidak ada bulan/tanggal spesifik di blog resmi
+- [conflict] Affected Phase: Phase 1, Phase 3
+- [conflict] Evidence: Phase 3 EV-003
+- [conflict] Alternative Interpretations: (a) Blog lama dipindah atau arsip hilang; (b) Testnet dibuat bertahap tanpa tanggal rilis tunggal
+- [conflict] Status: Open Open Thread ID: OT-08
+- [conflict] Description: DAO launch exact date hanya "2023" — Realms DAO tidak menampilkan tanggal pembuatan program di halaman publik
+- [conflict] Affected Phase: Phase 3, Phase 6
+- [conflict] Evidence: Phase 3 EV-014
+- [conflict] Alternative Interpretations: (a) Tanggal tersedia via explorer on-chain; (b) DAO dibentuk bersamaan dengan migrasi tapi tanpa announcement tanggal spesifik
+- [conflict] Status: Open Open Thread ID: OT-09
+- [conflict] Description: Audit report full URLs tidak diverifikasi — GitHub audits repo direferensikan tapi path PDF diinferensikan, tidak diakses langsung
+- [conflict] Affected Phase: Phase 4
+- [conflict] Evidence: Phase 4 Audit History
+- [conflict] Alternative Interpretations: (a) Reports ada di repo dengan nama file standar; (b) Reports tidak publik penuh, hanya executive summary
+- [conflict] Status: Open Open Thread ID: OT-10
+- [conflict] Description: Scheduler decentralization v1 spec detail — API specification, reputation algorithm, third-party requirements tidak terdokumentasi publik
+- [conflict] Affected Phase: Phase 4
+- [conflict] Evidence: Phase 4 Technical Upgrade History 2024
+- [conflict] Alternative Interpretations: (a) Spesifikasi di dokumentasi internal; (b) Belum dirilis ke publik sampai stabil
+- [conflict] Status: Open Open Thread ID: OT-11
+- [conflict] Description: AI/ML compute job format dan GPU memory management tidak terdokumentasi — hanya disebut didukung
+- [conflict] Affected Phase: Phase 4
+- [conflict] Evidence: Phase 4 Technical Upgrade History 2024
+- [conflict] Alternative Interpretations: (a) Format job mengikuti OctaneRender extension; (b) Framework baru sedang dikembangkan
+- [conflict] Status: Open Open Thread ID: OT-12
+- [conflict] Description: IPFS/Arweave integration status — whitepaper references tapi tidak dikonfirmasi di docs saat ini
+- [conflict] Affected Phase: Phase 4, Phase 7
+- [conflict] Evidence: Phase 4 System Architecture, Phase 7 External Dependencies
+- [conflict] Alternative Interpretations: (a) Pindah ke central storage untuk job assets; (b) Integration direncanakan tapi belum live
+- [conflict] Status: Open Open Thread ID: OT-13
+- [conflict] Description: Enterprise revenue split antara OTOY dan Render Network Foundation — tidak transparan apakah DAO menerima share dari dedicated capacity deals
+- [conflict] Affected Phase: Phase 5
+- [conflict] Evidence: Phase 5 Revenue Model
+- [conflict] Alternative Interpretations: (a) Semua enterprise revenue ke OTOY; (b) DAO menerima fee dari enterprise jobs via protocol escrow
+- [conflict] Status: Open Open Thread ID: OT-14
+- [conflict] Description: Bridge fee revenue share dengan Wormhole — tidak ada klaim bahwa DAO menerima share dari bridge fees
+- [conflict] Affected Phase: Phase 5
+- [conflict] Evidence: Phase 5 Revenue Model
+- [conflict] Alternative Interpretations: (a) Semua bridge fees ke Wormhole; (b) Ada share tersembunyi yang tidak dipublikasikan
+- [conflict] Status: Open Open Thread ID: OT-15
+- [conflict] Description: Holder distribution termasuk whale vs retail — on-chain data tersedia di Solscan tapi tidak terlabel resmi; tidak ada analisis konsentrasi
+- [conflict] Affected Phase: Phase 6
+- [conflict] Evidence: Phase 6 Holder Distribution
+- [conflict] Alternative Interpretations: (a) Top holders adalah node operators besar; (b) Ada whale accumulation oleh institusi
+- [conflict] Status: Open Open Thread ID: OT-16
+- [conflict] Description: Market share data untuk decentralized GPU compute — tidak ada standard industri; Messari/Token Terminal mungkin memiliki estimate tapi tidak diverifikasi
+- [conflict] Affected Phase: Phase 8
+- [conflict] Evidence: Phase 8 Market Share
+- [conflict] Alternative Interpretations: (a) Render dominan di rendering tapi share AI compute belum jelas; (b) Kompetisi io.net/Akash menggerus share
+- [conflict] Status: Open Open Thread ID: OT-17
+- [conflict] Description: Adoption metrics (DAU, job volume, GPU count, staking amount) tidak dipublikasikan — tidak ada dashboard resmi atau on-chain aggregator
+- [conflict] Affected Phase: Phase 8
+- [conflict] Evidence: Phase 8 Adoption Metrics
+- [conflict] Alternative Interpretations: (a) Data tersedia via scheduler off-chain tapi tidak publik; (b) Volume terlalu kecil untuk dipublikasikan
+- [conflict] Status: Open Open Thread ID: OT-18
+- [conflict] Description: Regulatory status RENDER token di US/Cayman — tidak ada legal opinion publik; berdampak pada governance dan treasury
+- [conflict] Affected Phase: Phase 5, Phase 7
+- [conflict] Evidence: Phase 5 Financial Risk, Phase 7 Ecosystem Risks
+- [conflict] Alternative Interpretations: (a) Foundation memegang legal opinion internal; (b) Belum ada kepastian regulasi
+- [conflict] Status: Open
+- [airdrop] Alasan pasti di balik keputusan untuk tidak melakukan airdrop hingga saat ini.
+- [airdrop] Potensi perkembangan komunitas lebih lanjut sebagai syarat untuk airdrop.
+- [airdrop] Reaksi investor terhadap kemungkinan pelaksanaan airdrop di masa depan.

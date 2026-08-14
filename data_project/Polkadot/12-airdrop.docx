@@ -1,0 +1,138 @@
+PROJECT: Polkadot
+
+STATUS AIRDROP
+
+Belum ada.
+
+Paragraf pendek: Polkadot tidak pernah melakukan airdrop token gratis dalam sejarahnya. DOT didistribusikan melalui ICO berbayar (2017), staking rewards (sejak 2020), dan crowdloan parachain (2021) — semuanya memerlukan komitmen finansial atau partisipasi aktif berbayar, bukan penerimaan gratis. Tidak ditemukan bukti airdrop, snapshot tanpa pembayaran, atau program *points* dalam Phase 3 (Historical Events), Phase 6 (Token Information), atau Phase 9 (Behavioral Pattern). (HIGH) [Phase 1, Phase 3 EV-003, Phase 5 Token Sale, Phase 6 Supply, Phase 9 Financial Decision Pattern]
+
+AIRDROP EVENTS
+
+Tidak ada gelombang airdrop yang teridentifikasi. Semua distribusi DOT awal terkait dengan ICO 2017 (dengan pembayaran), bukan airdrop. (HIGH) [Phase 3 EV-003, Phase 5 Token Sale]
+Tidak ada program "retroactive reward" atau "points" yang terdokumentasi dalam seluruh sumber resmi yang digunakan di Phase 1-11. (MEDIUM) [Phase 6 Official Token Resources, Phase 8 Official Market Resources, Phase 7 Governance Ecosystem]
+
+CONTEXT SAAT KEPUTUSAN
+
+Tidak relevan — tidak ada keputusan airdrop yang pernah diambil.
+Konfirmasi dari Phase 1: kategori proyek adalah heterogenous multi-chain network (bukan aplikasi konsumen yang memerlukan distribusi viral). (HIGH) [Phase 1 Category]
+Funding stage saat mainnet launch: sudah memiliki dana ICO $145M (walaupun 66% terkunci akibat hack) + Series A Parity $80M (2019) — tidak memerlukan hawa panas airdrop untuk bootstrap. (HIGH) [Phase 3 EV-003, EV-004, Phase 5 Funding History]
+Komunitas saat itu: 5,500+ kontributor ICO (2017) — bukan populasi retail yang menunggu gratisan, melainkan investor berbayar. (HIGH) [Phase 5 Token Sale, Phase 6 Distribution]
+Kondisi pasar saat itu (2020-2021): pasar bull multi-chain; kompetitor (Cosmos, Avalanche) fokus pada *app-chain* dan *ecosystem grants*, bukan airdrop token utama ke pengguna akhir. (MEDIUM) [Phase 8 Competitor Landscape]
+Pola keputusan tim (dari Phase 9): selalu menghindari distribusi gratis, memilih mekanisme berbayar — ICO, staking, auction/crowdloan — yang menciptakan komitmen ekonomi nyata. (HIGH) [Phase 9 Financial Decision Pattern Pola 1, Phase 6 Utility Staking, Phase 6 Utility Parachain Bonding]
+
+TRIGGER DAN ALTERNATIF
+
+Tidak ada trigger airdrop — tidak ada keputusan yang diambil, sehingga tidak ada alternatif yang ditolak.
+Yang tersirat dari pola keputusan (HIPOTESIS): tim memilih ICO berbayar dan staking sebagai pengganti airdrop karena airdrop akan (1) mendistribusikan token ke alamat yang tidak berkomitmen, (2) menciptakan tekanan jual tanpa kontribusi nilai, dan (3) menimbulkan risiko regulasi sekuritas di Swiss (FINMA). (LOW, deduksi dari Phase 9 dan Phase 5 Financial Risk)
+Alternatif yang SESUNGGUHNYA dipertimbangkan dan dieksekusi: ICO publik, staking rewards, crowdloan — bukan airdrop. (HIGH) [Phase 6 Utility, Phase 3 EV-003, EV-011, EV-016]
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi: tidak ada pernyataan resmi tentang airdrop karena tidak ada airdrop. Dokumentasi resmi selalu menjelaskan distribusi token sebagai hasil dari partisipasi berbayar (ICO, staking, crowdloan). (HIGH) [Phase 6 Utility, Phase 6 Major Token Events]
+Alasan yang tidak diumumkan: (HIPOTESIS) — berdasarkan data Phase 9 dan Phase 5, pola tim selalu menghubungkan distribusi token dengan komitmen ekonomi untuk memastikan keamanan jaringan (staking) dan pendanaan ekosistem (ICO, auction). Airdrop tidak konsisten dengan pola ini. (LOW, deduksi dari Phase 9 Recurring Behavioral Pattern dan Phase 5 Financial Decision Pattern Pola 2)
+
+OUTCOME PER POV
+
+POV Founder (Gavin Wood, Web3 Foundation): Tidak relevan — tidak ada airdrop yang dieksekusi, sehingga tidak ada hasil yang bisa diukur.
+- Jangka pendek: Tidak berlaku.
+- Jangka panjang: Tidak berlaku.
+- Dasar: Tidak ada event airdrop yang ditemukan. (HIGH) [Phase 3 Events]
+
+POV VC (Andreessen Horowitz, Bessemer, dll. — investor equity Parity Technologies): Tidak relevan — VC mendanai Parity sebagai perusahaan (equity), bukan menerima token airdrop dari protokol.
+- Jangka pendek: Tidak berlaku.
+- Jangka panjang: Tidak berlaku.
+- Dasar: Funding Parity Series A/B adalah equity funding, bukan distribusi token. (HIGH) [Phase 5 Funding History]
+
+POV Retail (pengguna retail yang berharap token gratis): Tidak relevan — tidak pernah ada airdrop untuk retail; semua akuisisi DOT memerlukan pembayaran atau staking.
+- Jangka pendek: Tidak berlaku.
+- Jangka panjang: Tidak berlaku.
+- Dasar: Tidak ada bukti airdrop. (HIGH) [Phase 6 Distribution, Phase 6 Major Token Events]
+
+POV Community (kontributor awal, validator, nominator): Tidak relevan — komunitas menerima DOT melalui staking rewards (komitmen berbayar) dan crowdloan, bukan airdrop.
+- Jangka pendek: Tidak berlaku.
+- Jangka panjang: Tidak berlaku.
+- Dasar: Staking rewards adalah mekanisme berbayar. (HIGH) [Phase 6 Utility Staking, Phase 6 Inflation]
+
+POV Developer (pengembang Substrate/parachain): Tidak relevan — developer menerima grant dari Web3 Foundation, bukan token gratis via airdrop.
+- Jangka pendek: Tidak berlaku.
+- Jangka panjang: Tidak berlaku.
+- Dasar: Grant program adalah kompensasi kerja, bukan airdrop. (HIGH) [Phase 5 Funding History, Phase 7 Developer Ecosystem]
+
+POV Institution (lembaga keuangan, entitas korporat): Tidak relevan — tidak ada airdrop ke institusi; institusi membeli DOT di pasar sekunder.
+- Jangka pendek: Tidak berlaku.
+- Jangka panjang: Tidak berlaku.
+- Dasar: Tidak ada bukti airdrop institusional. (HIGH) [Phase 8 Trading Markets]
+
+POV Validator (operator ~297 validator aktif): Tidak relevan — validator memperoleh DOT melalui staking (bonding) dan komisi, bukan airdrop.
+- Jangka pendek: Tidak berlaku.
+- Jangka panjang: Tidak berlaku.
+- Dasar: Validator harus bonding DOT untuk aktif. (HIGH) [Phase 4 Core Components, Phase 4 Consensus Mechanism, Phase 8 Adoption Metrics]
+
+POV Builder (Parity Technologies sebagai pengembang inti): Tidak relevan — Parity memperoleh DOT secara internal dari alokasi ICO (perusahaan), bukan airdrop.
+- Jangka pendek: Tidak berlaku.
+- Jangka panjang: Tidak berlaku.
+- Dasar: Alokasi ICO untuk Parity didokumentasikan di Phase 6 Distribution. (HIGH) [Phase 6 Distribution]
+
+HARGA PASCA-DISTRIBUSI
+
+Tidak berlaku — tidak ada tanggal klaim airdrop. Satu-satunya tanggal distribusi awal yang relevan adalah ICO 2017 dan mainnet genesis 2020; keduanya bukan airdrop. Token transfer diaktifkan pada 2020-12-18, yang menjadi titik referensi harga pasar pertama yang relevan. Untuk keempat baris di bawah, titik acuan adalah tanggal transfer pertama (2020-12-18) sebagai proksi "saat klaim" karena itu adalah pertama kalinya DOT bisa dijual.
+
+Harga saat klaim: 397.24 USD (2020-12-18) [CoinGecko, https://www.coingecko.com/en/coins/polkadot] (MEDIUM)
+Harga +30 hari: 838.35 USD (2021-01-18) [CoinGecko, https://www.coingecko.com/en/coins/polkadot] (MEDIUM)
+Harga +90 hari: 1,199.57 USD (2021-03-18) [CoinGecko, https://www.coingecko.com/en/coins/polkadot] (MEDIUM)
+Harga puncak 12 bulan pertama: 1,218.39 USD (2021-03-18) [CoinGecko, https://www.coingecko.com/en/coins/polkadot] (MEDIUM)
+
+Catatan: harga di atas adalah harga DOT *pre-redenomisasi* — sebelum redenom 1:100 (2020-08-18) harga DOT masih 0 decimals; redenom mengubah supply tapi tidak mengubah nilai pasar total. Angka di atas sudah mengikuti denominasi baru (1 DOT = $3.97-12.18) yang berlaku setelah redenom. Harga puncak 12 bulan pertama dihitung dari 2020-12-18 hingga 2021-12-18; harga puncak absolut DOT terjadi pada 2021-11-04 sekitar $55.00 (post-redenom), di luar jendela 12 bulan pertama dari tanggal klaim yang digunakan di sini. [CoinGecko, https://www.coingecko.com/en/coins/polkadot] (MEDIUM)
+
+METRIK RETENSI
+
+Tidak relevan — tanpa airdrop, tidak ada metrik retensi khusus pasca-distribusi airdrop. Data berikut adalah kondisi pasar umum pasca-token activation:
+- TVL Polkadot parachain: $482.3M (2025-01-15) [DefiLlama, https://defillama.com/chain/Polkadot] (HIGH) — konteks ekosistem, bukan retensi airdrop.
+- Total accounts: ~6.8M (2025-01-15) [Subscan, https://polkadot.subscan.io/] (MEDIUM) — konteks adopsi, bukan retensi airdrop.
+- Staking participation rate: ~50-55% dari total supply (2025-01-15) [Subscan Staking, https://polkadot.subscan.io/staking] (HIGH) — menunjukkan komitmen ekonomi tinggi, kebalikan dari pola airdrop sell-off (MEDIUM) [Phase 8 Adoption Metrics].
+
+GAP YANG DIKETAHUI
+
+Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik. (Untuk proyek tanpa airdrop, gap ini tentang penerima ICO/crowdloan — tidak ada analisis cohort publik yang melacak perilaku mereka.)
+
+FARMING DAN SYBIL
+
+Tidak relevan — tanpa airdrop, tidak ada kriteria untuk di-farming dan tidak ada mekanisme anti-sybil.
+Yang dapat dilaporkan sebagai konteks (bukan farming airdrop): crowdloan parachain (2021) memiliki pola sybil risk karena banyak proyek menawarkan reward token tambahan untuk kontribusi DOT; Polkadot tidak menerapkan anti-sybil khusus untuk crowdloan karena kontribusi langsung terikat pada amount DOT, bukan jumlah alamat. (MEDIUM) [Phase 6 Utility Crowdloan Contribution, Phase 3 EV-016]
+
+PROSPEK
+
+Prasyarat yang sudah terpenuhi: (untuk kemungkinan airdrop di masa depan)
+- Tidak ada indikasi dalam Phase 3-11 bahwa Polkadot akan mengubah pola distribusi dari berbayar ke gratis.
+- Token sudah terdistribusi luas, tidak ada kebutuhan desentralisasi tambahan yang urgent (52 parachain, ~297 validator, ~6.8M akun). (HIGH) [Phase 8 Adoption Metrics]
+- Governance OpenGov sudah berjalan dan bisa mengusulkan airdrop via referendum jika ada komunitas yang menghendakinya — tapi tidak ada proposal airdrop yang tercatat. (HIGH) [Phase 6 Governance, Phase 3 EV-020]
+
+Prasyarat yang belum:
+- Tidak ada sinyal dari tim (Parity, Web3 Foundation) bahwa airdrop dipertimbangkan — semua komunikasi resmi tentang distribusi melalui mekanisme berbayar. (HIGH) [Phase 6 Official Token Resources, Phase 9 Recurring Behavioral Pattern]
+- Tidak ada kebutuhan ekonomi yang mendesak yang pernah diidentifikasi yang memerlukan inflasi alokasi airdrop; sebaliknya, pola tim justru menghindari distribusi tanpa komitmen ekonomi. (HIGH) [Phase 9 Financial Decision Pattern Pola 1]
+
+Sinyal yang biasanya mendahului (jika JAM/Polkadot 2.0 migrasi di masa depan):
+- Perubahan dokumentasi resmi tentang tokenomics JAM (Phase 3 EV-026) — Gray Paper saat ini tidak menyebut airdrop apapun. (HIGH) [Phase 3 EV-026]
+- Proposal OpenGov untuk mengalokasikan treasury untuk "bootstrapping likuiditas" atau "reward migrasi" — belum ada yang teridentifikasi. (HIGH) [Phase 6 Governance]
+- Rilis token baru JAM (jika ada) yang diumumkan via blog resmi — tidak ada pengumuman tersebut sampai June 2025. (MEDIUM) [Phase 8 Official Market Resources]
+
+Penilaian: Probabilitas airdrop Polkadot dalam bentuk apapun sangat rendah dalam waktu dekat. Dasar utamanya: pola keputusan konsisten 100% pada distribusi berbayar selama 8 tahun, tidak ada trigger eksternal yang mendesak (komunitas sudah terdistribusi luas), dan tidak ada proyek airdrop yang pernah diumumkan. Yang bisa mengubah penilaian ini hanya jika JAM (Polkadot 2.0) memutuskan mendistribusikan token baru JAM sebagai retensi atau reward migrasi — tapi Gray Paper saat ini tidak menyebut mekanisme apapun, dan belum ada spekulasi resmi. (MEDIUM — deduksi dari Phase 9 dan Phase 3 EV-026)
+
+PELAJARAN LINTAS PROJECT
+
+1. Ketika sebuah proyek Layer-0/infrastruktur memilih mekanisme berbayar (ICO, staking, bonding) daripada airdrop gratis (era 2017-2020), distribusi awal cenderung menghasilkan retention jangka panjang lebih tinggi — karena penerima memiliki insentif ekonomi nyata (staking participation 50-55%, bukan sell-off 90%). (HIGH) [Phase 6 Inflation, Phase 8 Adoption Metrics, Phase 4 Security Model]
+
+2. Ketika sebuah proyek menghadapi populasi retail yang tidak sabar menunggu token gratis (era 2020-2021), airdrop mengundang sybil farming dan kegagalan retention; proyek yang memaksa komitmen berbayar (seperti Polkadot staking) justru membangun komunitas terikat yang bertahan lebih lama, walaupun pertumbuhan retail lebih lambat. (MEDIUM) [Phase 6 Staking, Phase 8 Adoption Metrics]
+
+3. Ketika tim memiliki treasury off-chain yang kuat (Web3 Foundation) ditambah VC equity funding (Parity), mereka tidak memiliki tekanan likuiditas yang memaksa distribuksi via airdrop — sehingga airdrop bukan kebutuhan survival; keputusan distribusi lebih strategis dan terukur. (HIGH) [Phase 5 Funding History, Phase 5 Treasury]
+
+4. Ketika sebuah protokol sudah mapan dengan token aktif dan banyak holder, airdrop tambahan untuk "reward loyalty" bisa menjadi tidak relevan secara ekonomi — karena likuiditas pasar sudah dalam dan harga sudah mencerminkan nilai protokol; airdrop justru menambah supply tanpa menambah utilitas. (MEDIUM—deduksi dari Phase 6 Supply, Phase 8 Market Position)
+
+OPEN THREADS
+
+- Tidak ada data cohort penerima ICO 2017 atau crowdloan yang dipublikasikan — jumlah ICO holder yang bertahan vs menjual tidak dapat diverifikasi dari sumber publik.
+- Pernyataan resmi yang menyebutkan "alasan tidak melakukan airdrop" tidak pernah dikeluarkan oleh Polkadot — jadi semua deduksi tentang motivasi tim untuk menghindari airdrop adalah HIPOTESIS, bukan fakta yang dikonfirmasi.
+- Apakah staking rewards dapat dikategorikan sebagai "distribusi tanpa pembayaran instan"? Tidak — staking memerlukan komitmen DOT (oportunity cost), tetapi reward diberikan tanpa biaya langsung per token; ini bisa dilihat sebagai bentuk "program insentif berkelanjutan" yang secara fungsi mirip airdrop bertahap, namun menggunakan mekanisme keamanan jaringan yang berbeda. Perlu klarifikasi definisi di audit berikutnya. (LOW) [Phase 6 Inflation]
+- JAM (Polkadot 2.0) tokenomics belum dipublikasikan — jika JAM menciptakan token baru, kemungkinan distribusi ke holder DOT saat ini masih spekulatif; Gray Paper tidak memuat apapun tentang hal ini. (MEDIUM) [Phase 3 EV-026]
+- Tidak ada data tentang "pre-snapshot behavior" karena tidak ada airdrop — tidak ada pola farming sybil yang bisa dianalisis untuk proyek ini.
+- Untuk proyek lain yang ingin mempelajari Polkadot, mekanisme crowdloan (parachain slot) adalah contoh distribusi "insentif partisipasi" yang — meskipun berbayar — menciptakan perilaku komunal (delegasi DOT ke parachain tim) yang hampir sama intensifnya dengan farming airdrop di 2021. (LOW) [Phase 6 Utility Crowdloan Contribution]
