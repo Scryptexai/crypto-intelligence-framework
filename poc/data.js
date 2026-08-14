@@ -2,7 +2,7 @@
 window.CIF = {
   "meta": {
     "schema": "cif-export/1",
-    "generated": "2026-08-14 05:14 UTC",
+    "generated": "2026-08-14 07:13 UTC",
     "projects": 54,
     "deep": 54,
     "summary": 0,
@@ -118,9 +118,6 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
-        "perps",
-        "stablecoin",
-        "governance",
         "l1"
       ]
     },

@@ -62,3 +62,5 @@
 2026-08-14T06:34:47.267358+00:00	Curve	phase 04-technology	attempt 2	failed=no_junk,ingest_contract	repaired
 2026-08-14T06:36:36.303496+00:00	Curve	phase 05-financial	attempt 1	failed=no_junk,min_length,ingest_contract	no_improvement
 2026-08-14T06:41:08.881417+00:00	Curve	phase 06-token	attempt 1	failed=no_junk,min_length,ingest_contract	repaired
+2026-08-14T07:09:43.720576+00:00	Berachain	phase 11-conflict	attempt 1	failed=qa_parse	no_improvement
+2026-08-14T07:13:56.387889+00:00	Cosmos	phase 11-conflict	attempt 1	failed=qa_parse	repaired

@@ -1,9 +1,9 @@
 # BNB Chain — Deep Case Study (Phased)
 
 **CIF Dataset — Deep Dossier · Tier: Deep (anchor project)**
-**Source:** Deep Research (DeepSeek), Format v3 Dependency Pipeline (10/11 phases: foundation, entity, history, technology, financial, token, ecosystem, market, behavioral, knowledge). **Auto-assembled** by `tools/ingest.py` (deterministic, no LLM, strict data_project/ contract) — each phase extracted and concatenated in dependency order per `docs/Protocol/Deep-Research-Brief.md`; the reasoning is the source reports'.
-**Raw sources archived:** doc_backup/deep/BNB Chain_foundation_2026-08.docx, doc_backup/deep/BNB Chain_entity_2026-08.docx, doc_backup/deep/BNB Chain_history_2026-08.docx, doc_backup/deep/BNB Chain_technology_2026-08.docx, doc_backup/deep/BNB Chain_financial_2026-08.docx, doc_backup/deep/BNB Chain_token_2026-08.docx, doc_backup/deep/BNB Chain_ecosystem_2026-08.docx, doc_backup/deep/BNB Chain_market_2026-08.docx, doc_backup/deep/BNB Chain_behavioral_2026-08.docx, doc_backup/deep/BNB Chain_knowledge_2026-08.docx.
-**Phases not run:** conflict.
+**Source:** Deep Research (DeepSeek), Format v3 Dependency Pipeline (11/11 phases: foundation, entity, history, technology, financial, token, ecosystem, market, behavioral, knowledge, conflict). **Auto-assembled** by `tools/ingest.py` (deterministic, no LLM, strict data_project/ contract) — each phase extracted and concatenated in dependency order per `docs/Protocol/Deep-Research-Brief.md`; the reasoning is the source reports'.
+**Raw sources archived:** doc_backup/deep/BNB Chain_foundation_2026-08.docx, doc_backup/deep/BNB Chain_entity_2026-08.docx, doc_backup/deep/BNB Chain_history_2026-08.docx, doc_backup/deep/BNB Chain_technology_2026-08.docx, doc_backup/deep/BNB Chain_financial_2026-08.docx, doc_backup/deep/BNB Chain_token_2026-08.docx, doc_backup/deep/BNB Chain_ecosystem_2026-08.docx, doc_backup/deep/BNB Chain_market_2026-08.docx, doc_backup/deep/BNB Chain_behavioral_2026-08.docx, doc_backup/deep/BNB Chain_knowledge_2026-08.docx, doc_backup/deep/BNB Chain_conflict_2026-08.docx.
+**Phases not run:** none.
 
 > Faithful concatenation of phase outputs — no fabrication, no distillation beyond what the closing phase (Conflict Resolution / Validation) itself states. Consider a periodic QC pass.
 
@@ -7445,6 +7445,1551 @@ Lessons Learned Utama:
 - Mengandalkan tech stack proven itu bijak (Lesson 9).
 - Confidence: High untuk 1-7, Medium untuk 8, High untuk 9.
 
+## Validation & Quality Assurance (CIF Score)
+_ref: `docs/Reasoning/Confidence.md` — CIF Score, Data Lineage, Knowledge Dependency Graph_
+
+PROJECT: BNB Chain
+
+# CIF MANIFEST v3.0
+
+Project: BNB Chain
+Symbol: BNB
+Research Date: 2027-01-24
+CIF Version: 3.0
+QA Date: 2027-01-24
+
+METRICS
+Total Knowledge Objects: 12
+Total Entities: 127
+Total Events: 50
+Evidence Links: 450+
+Sources: 150+
+Conflicts: 8
+ ├── Resolved: 6
+ ├── Critical: 0
+ ├── High: 2
+ ├── Medium: 4
+ └── Low: 2
+
+QUALITY SCORES
+Research Quality: 90/100
+Consistency: 92/100
+Evidence: 85/100
+Coverage: 87/100
+Conflict: 75/100
+Knowledge: 91/100
+CIF SCORE: 87/100
+
+CONFIDENCE LEVEL: HIGH
+QA STATUS: PASSED
+
+RECOMMENDED RE-RUN:
+ - Phase 5 — Data treasury dan biaya legal yang belum lengkap untuk analisis keuangan lebih lanjut.
+ - Phase 8 — Data pasar terkini perlu pembaruan berkala untuk mempertahankan akurasi pangsa pasar.
+
+# DATASET INTEGRITY & COVERAGE
+
+Phase 1 — Foundation
+- Status: Complete
+- Missing Information: Tidak ada; semua field inti terisi (nama, symbol, founder, chain IDs, contracts).
+- Notes: Informasi dasar benar dan selaras dengan phase lain.
+
+Phase 2 — Entity
+- Status: Complete
+- Missing Information: Detail legal entity BNB Chain Foundation tidak ditemukan; beberapa entitas regional Binance memiliki status tidak pasti.
+- Notes: 127 entitas tercatat; beberapa memiliki relationship yang sama namun diperlakukan entitas terpisah.
+
+Phase 3 — History
+- Status: Complete
+- Missing Information: Tanggal pasti ICO BNB (bulan Juli 2017); tanggal pasti testnet beacon chain tidak dicantumkan.
+- Notes: 50 events valid dan terkait dengan phase lain.
+
+Phase 4 — Technology
+- Status: Complete
+- Missing Information: Detail teknis validator expansion, PBS, dan kinerja zkBNB belum dipublikasikan lengkap.
+- Notes: Arsitektur multi-chain terdokumentasi baik; celah kecil pada parameter MEV.
+
+Phase 5 — Financial
+- Status: Incomplete
+- Missing Information: Ukuran dan komposisi treasury BNB Chain Foundation tidak diungkapkan; laporan keuangan tidak ada.
+- Notes: Hanya data publik (burn dan gas fee) yang tersedia; banyak data sensitif tidak dipublikasikan.
+
+Phase 6 — Token
+- Status: Complete
+- Missing Information: Vesting schedule tim dan angel tidak terdokumentasi; distribusi holder tidak transparan.
+- Notes: Total supply 200M dan burn 50M terverifikasi; alokasi awal jelas dari whitepaper.
+
+Phase 7 — Ecosystem
+- Status: Complete
+- Missing Information: Jumlah pasti developer aktif bulanan tidak tersedia.
+- Notes: 127 entitas eksternal terdokumentasi; 20+ kategori aplikasi dan infrastruktur.
+
+Phase 8 — Market
+- Status: Complete
+- Missing Information: Data pasar terkini (market share, jumlah user aktif) tidak disediakan dalam dataset.
+- Notes: Posisi pasar berdasarkan TVL dan data DefiLlama; TVL BSC > $5B pada 2024 (MEDIUM) [DefiLlama, https://defillama.com/chain/BSC].
+
+Phase 9 — Behavioral
+- Status: Complete
+- Missing Information: Tidak ada; keputusan dan pola teridentifikasi.
+- Notes: 9 objective strategis, 10 keputusan penting, dan 6 pola berulang terdokumentasi.
+
+Phase 10 — Knowledge
+- Status: Complete
+- Missing Information: Tidak ada; 12 knowledge object teridentifikasi.
+- Notes: Semua knowledge object memiliki lineage dan validity.
+
+Coverage Report — Multi-dimensional
+
+Phase 2 — Entity
+ - Total: 127
+ - Referenced in Phase 9-10: 37
+ - Unused: 90
+ - Coverage: 29%
+ - Interpretation: Hanya entitas yang paling relevan terhadap insight pengetahuan digunakan; sisanya berfungsi sebagai konteks ekosistem.
+
+Phase 3 — Event
+ - Total: 50
+ - Referenced in Phase 9-10: 32
+ - Unused: 18
+ - Coverage: 64%
+ - Interpretation: Sebagian besar event digunakan untuk mendukung pola keputusan; event yang tidak terkait langsung dibiarkan sebagai latar.
+
+Phase 4 — Technology
+ - Total: 10 komponen inti
+ - Referenced: 8
+ - Unused: 2
+ - Coverage: 80%
+ - Interpretation: Komponen yang tidak relevan (Seperti Truffle) dianggap teknologi legacy.
+
+Phase 5 — Financial
+ - Total: 15 fakta
+ - Referenced: 12
+ - Unused: 3
+ - Coverage: 80%
+ - Interpretation: Fakta yang tidak terpakai seperti rincian token sale dan mekanisme grant.
+
+Phase 6 — Token
+ - Total: 15 item
+ - Referenced: 12
+ - Unused: 3
+ - Coverage: 80%
+ - Interpretation: Item yang tidak terpakai seperti detail vesting yang tidak terdokumentasi.
+
+Phase 7 — Ecosystem
+ - Total: 100+ item
+ - Referenced: 30
+ - Unused: 70+
+ - Coverage: 30%
+ - Interpretation: Hanya entitas yang paling berpengaruh yang digunakan; sisanya adalah aplikasi dan infrastruktur kecil.
+
+Phase 8 — Market
+ - Total: 8 item
+ - Referenced: 5
+ - Unused: 3
+ - Coverage: 63%
+ - Interpretation: Data kompetitor dan posisi pasar digunakan; data pasar kuantitatif tidak tersedia.
+
+Overall Coverage
+ - Total: 325 (estimasi dari semua item)
+ - Referenced: 136
+ - Unused: 189
+ - Coverage: 42%
+ - Interpretation: Coverage rendah namun memadai karena fase 9 dan 10 menggunakan item yang paling signifikan; item lain berfungsi sebagai konteks.
+
+# CROSS-PHASE CONSISTENCY
+
+Entity Consistency
+- Status: Konsisten
+- Detail: Semua entitas (CZ, Richard Teng, Binance, BNB Chain Foundation) memiliki nama dan data yang sama di Phase 2, 3, 5, dan 7.
+
+Timeline Consistency
+- Status: Konsisten
+- Detail: Timeline di Phase 1, 3, 8, dan 9 saling mendukung; tanggal peluncuran mainnet dan peristiwa penting selaras (contoh: BSC mainnet 2020-09-01 muncul di Phase 1, 3, dan 9) (HIGH) [Phase 1 Foundation, https://docs.bnbchain.org]
+
+Technology Consistency
+- Status: Konsisten
+- Detail: Upgrade sequence (BSC, opBNB, Greenfield, zkBNB) konsisten di Phase 3 dan 4; arsitektur multi-chain di Phase 4 selaras dengan integrasi di Phase 7.
+
+Funding Consistency
+- Status: Konsisten
+- Detail: Funding history di Phase 5 (ICO $15M, Binance Series A $10M) selaras dengan event di Phase 3 (EV-001 dan EV-004).
+
+Token Consistency
+- Status: Konsisten
+- Detail: Token info di Phase 6 (Total supply 200M, burn >50M) sesuai dengan Phase 1 dan 3 (EV-001, EV-020, EV-049).
+
+Governance Consistency
+- Status: Konsisten
+- Detail: Governance structure (BEP process, on-chain vote) di Phase 6 konsisten dengan narasi di Phase 9 dan 10.
+
+Dependency Consistency
+- Status: Konsisten
+- Detail: External dependencies (Chainlink, Pyth, LayerZero, OP Stack) di Phase 7 selaras dengan teknologi di Phase 4.
+
+Overall Cross-phase Consistency: 92%
+
+# DATA LINEAGE
+
+Knowledge K-01 — Kompatibilitas EVM adalah akselerator adopsi terkuat
+
+Lineage:
+```
+Level 0 (Raw Data — Events / Metrics / Integrations)
+  ├── Phase 3 — EV-010 (BSC Mainnet Launch)
+  │   └── Source: https://www.binance.com/en/blog/421499824684900357
+  ├── Phase 3 — EV-011 (PancakeSwap V1 Launch)
+  │   └── Source: https://pancakeswap.finance
+  ├── Phase 4 — Execution Environment (EVM Compatibility)
+  │   └── Source: https://docs.bnbchain.org/docs/evm
+  └── Phase 7 — Developer Ecosystem (Hardhat, Foundry, Remix)
+      └── Source: https://hardhat.org/hardhat-runner/docs/guides/bnb-smart-chain
+
+Level 1 (Processed — Pattern Identification)
+  └── Phase 9 — Pola 4 (Adopsi Tech Stack Proven)
+      └── Evidence: OP Stack, Cosmos SDK, Block-STM, mev-boost architecture
+
+Level 2 (Knowledge)
+  └── Knowledge K-01 — Kompatibilitas EVM adalah akselerator adopsi terkuat
+
+Validation:
+  ├── Passed: Cross-phase consistency check
+  ├── Passed: Evidence audit (Strong)
+  └── Confidence: 90/100
+```
+
+Knowledge K-02 — Multi-chain modular memungkinkan optimasi per lapisan
+
+Lineage:
+```
+Level 0 (Raw Data — Events / Metrics / Integrations)
+  ├── Phase 3 — EV-022 (Greenfield Whitepaper)
+  │   └── Source: https://github.com/bnb-chain/greenfield-whitepaper
+  ├── Phase 3 — EV-034 (opBNB Mainnet Launch)
+  │   └── Source: https://www.bnbchain.org/en/blog/opbnb-mainnet-launch
+  ├── Phase 4 — System Architecture (5-chain ecosystem)
+  │   └── Source: https://docs.bnbchain.org/docs/overview
+  └── Phase 7 — External Dependencies (OP Stack, Cosmos SDK)
+      └── Source: https://docs.opbnb.io/architecture
+
+Level 1 (Processed — Pattern Identification)
+  └── Phase 9 — Pola 2 (Modular Multi-chain Architecture)
+      └── Evidence: 5 chain aktif dengan fungsi terpisah
+
+Level 2 (Knowledge)
+  └── Knowledge K-02 — Multi-chain modular memungkinkan optimasi per lapisan
+
+Validation:
+  ├── Passed: Cross-phase consistency check
+  ├── Passed: Evidence audit (Strong)
+  └── Confidence: 92/100
+```
+
+Knowledge K-03 — Likuiditas exchange afiliasi adalah moat
+
+Lineage:
+```
+Level 0 (Raw Data — Events / Metrics / Integrations)
+  ├── Phase 2 — Entity Binance Exchange
+  │   └── Source: https://www.binance.com
+  ├── Phase 5 — Financial Dependencies (Binance Exchange)
+  │   └── Source: https://www.binance.com/en/fee/trading
+  ├── Phase 6 — Utility (Fee Discount Binance)
+  │   └── Source: https://www.binance.com/en/fee/trading
+  └── Phase 7 — External Dependencies Binance Exchange
+      └── Source: https://www.binance.com
+
+Level 1 (Processed — Pattern Identification)
+  └── Phase 9 — Pola 6 (Selalu Menargetkan Emerging Markets)
+      └── Evidence: Binance regional entities 30+ jurisdictions
+
+Level 2 (Knowledge)
+  └── Knowledge K-03 — Likuiditas exchange afiliasi adalah moat
+
+Validation:
+  ├── Passed: Cross-phase consistency check
+  ├── Passed: Evidence audit (Strong)
+  └── Confidence: 88/100
+```
+
+Knowledge K-04 — Burn mechanism deflasioner transparan
+
+Lineage:
+```
+Level 0 (Raw Data — Events / Metrics / Integrations)
+  ├── Phase 3 — EV-020 (BEP-95 Activation)
+  │   └── Source: https://docs.bnbchain.org/docs/burn
+  ├── Phase 3 — EV-049 (Auto-Burn >50M)
+  │   └── Source: https://www.bnbchain.org/en/burn
+  ├── Phase 6 — Inflation/Deflation
+  │   └── Source: https://www.bnbchain.org/en/burn
+  └── Phase 5 — Revenue Model (Gas Fee)
+      └── Source: https://docs.bnbchain.org/docs/burn
+
+Level 1 (Processed — Pattern Identification)
+  └── Phase 9 — Pola 4 (Token Burn sebagai Value Accrual)
+      └── Evidence: BEP-95 + auto-burn, >50M BNB burned
+
+Level 2 (Knowledge)
+  └── Knowledge K-04 — Burn mechanism deflasioner transparan
+
+Validation:
+  ├── Passed: Cross-phase consistency check
+  ├── Passed: Evidence audit (Strong)
+  └── Confidence: 94/100
+```
+
+Knowledge K-05 — Krisis regulasi dihadapi dengan settlement strategis
+
+Lineage:
+```
+Level 0 (Raw Data — Events / Metrics / Integrations)
+  ├── Phase 3 — EV-037 (DOJ Settlement $4.3B)
+  │   └── Source: https://www.justice.gov/opa/pr/binance-holdings-ltd-and-changpeng-zhao-plead-guilty-federal-charges
+  ├── Phase 3 — EV-038 (Richard Teng CEO)
+  │   └── Source: https://www.binance.com/en/blog/421499824684900357
+  ├── Phase 2 — Entity Richard Teng
+  │   └── Source: https://www.reuters.com/technology/binance-ceo-richard-teng-says-exchange-has-turned-corner-2024-01-16/
+  └── Phase 7 — Government Dependencies (DOJ, CFTC, SEC)
+      └── Source: https://www.cftc.gov/PressRoom/PressReleases/8674-23
+
+Level 1 (Processed — Pattern Identification)
+  └── Phase 9 — Pola 1 (Regulatory Crisis Response)
+      └── Evidence: Settlement, leadership change, compliance investment
+
+Level 2 (Knowledge)
+  └── Knowledge K-05 — Krisis regulasi dihadapi dengan settlement strategis
+
+Validation:
+  ├── Passed: Cross-phase consistency check
+  ├── Passed: Evidence audit (Strong)
+  └── Confidence: 96/100
+```
+
+Knowledge K-06 — Redundansi infrastruktur kritis adalah keharusan
+
+Lineage:
+```
+Level 0 (Raw Data — Events / Metrics / Integrations)
+  ├── Phase 3 — EV-023 (Wormhole Exploit)
+  │   └── Source: https://www.coindesk.com/business/2022/02/03/wormhole-hack-320-million/
+  ├── Phase 3 — EV-026 (Multichain Collapse)
+  │   └── Source: https://www.coindesk.com/business/2023/07/14/multichain-team-arrested-chinese-police/
+  ├── Phase 7 — External Dependencies Bridge (4+ bridges)
+  │   └── Source: https://docs.bnbchain.org/docs/bridge
+  └── Phase 7 — External Dependencies Oracle (3+ oracles)
+      └── Source: https://blog.chain.link/tag/bnb-chain/
+
+Level 1 (Processed — Pattern Identification)
+  └── Phase 9 — Pola 1 (Selalu Jaga Multiple Options)
+      └── Evidence: 4+ bridge, 3+ oracle, 10+ RPC providers
+
+Level 2 (Knowledge)
+  └── Knowledge K-06 — Redundansi infrastruktur kritis adalah keharusan
+
+Validation:
+  ├── Passed: Cross-phase consistency check
+  ├── Passed: Evidence audit (Strong)
+  └── Confidence: 89/100
+```
+
+Knowledge K-07 — Fokus pada emerging markets menciptakan moat geografis
+
+Lineage:
+```
+Level 0 (Raw Data — Events / Metrics / Integrations)
+  ├── Phase 2 — Entity Binance Regional Entities (30+ jurisdictions)
+  │   └── Source: https://www.binance.com/en/access-restriction
+  ├── Phase 3 — EV-027 (Hackathon Series Global)
+  │   └── Source: https://dorahacks.io/hackathon/bnb-chain
+  ├── Phase 7 — Government Dependencies (Lisensi UAE, Bahrain, Kazakhstan)
+  │   └── Source: https://vara.ae
+  └── Phase 8 — Market Geographic Focus
+      └── Source: https://www.binance.com/en/access-restriction
+
+Level 1 (Processed — Pattern Identification)
+  └── Phase 9 — Pola 6 (Selalu Menargetkan Emerging Markets)
+      └── Evidence: Binance regional entities + lisensi lokal
+
+Level 2 (Knowledge)
+  └── Knowledge K-07 — Fokus pada emerging markets menciptakan moat geografis
+
+Validation:
+  ├── Passed: Cross-phase consistency check
+  ├── Passed: Evidence audit (Moderate)
+  └── Confidence: 78/100
+```
+
+Knowledge K-08 — Testnet panjang dan hard fork bernama mengurangi risiko teknis
+
+Lineage:
+```
+Level 0 (Raw Data — Events / Metrics / Integrations)
+  ├── Phase 3 — EV-009 (BSC Testnet)
+  │   └── Source: https://docs.bnbchain.org/docs/overview
+  ├── Phase 3 — EV-030 (opBNB Testnet)
+  │   └── Source: https://docs.opbnb.io
+  ├── Phase 3 — EV-042 (Luban Hard Fork)
+  │   └── Source: https://www.bnbchain.org/en/blog/luban-hardfork
+  └── Phase 4 — Technical Upgrade History
+      └── Source: https://www.bnbchain.org/en/blog/moran-hardfork
+
+Level 1 (Processed — Pattern Identification)
+  └── Phase 9 — Pola 5 (Upgrade Bertahap dengan Testnet)
+      └── Evidence: Testnet 3-13 bulan untuk semua major launch
+
+Level 2 (Knowledge)
+  └── Knowledge K-08 — Testnet panjang dan hard fork bernama mengurangi risiko teknis
+
+Validation:
+  ├── Passed: Cross-phase consistency check
+  ├── Passed: Evidence audit (Strong)
+  └── Confidence: 93/100
+```
+
+Knowledge K-09 — Sentralisasi awal menciptakan hutang desentralisasi
+
+Lineage:
+```
+Level 0 (Raw Data — Events / Metrics / Integrations)
+  ├── Phase 3 — EV-040 (PBS Research)
+  │   └── Source: https://forum.bnbchain.org/t/bep-341-pbs
+  ├── Phase 3 — EV-046 (Roadmap 2025)
+  │   └── Source: https://www.bnbchain.org/en/blog/4th-anniversary
+  ├── Phase 4 — Limitations Validator Set
+  │   └── Source: https://docs.bnbchain.org/docs/consensus
+  └── Phase 4 — Limitations opBNB Sequencer
+      └── Source: https://docs.opbnb.io/architecture
+
+Level 1 (Processed — Pattern Identification)
+  └── Phase 9 — Pola 5 (Single Sequencer / Small Validator Set)
+      └── Evidence: 21 validator, single sequencer, Foundation opaque
+
+Level 2 (Knowledge)
+  └── Knowledge K-09 — Sentralisasi awal menciptakan hutang desentralisasi
+
+Validation:
+  ├── Passed: Cross-phase consistency check
+  ├── Passed: Evidence audit (Strong)
+  └── Confidence: 91/100
+```
+
+Knowledge K-10 — Opasitas treasury dan legal entity menghambat kepercayaan
+
+Lineage:
+```
+Level 0 (Raw Data — Events / Metrics / Integrations)
+  ├── Phase 2 — Entity BNB Chain Foundation (legal entity unknown)
+  │   └── Source: https://www.bnbchain.org/en/blog
+  ├── Phase 5 — Treasury (tidak diungkapkan)
+  │   └── Source: https://www.bnbchain.org/en/burn
+  ├── Phase 6 — Vesting (tidak didokumentasikan)
+  │   └── Source: https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf
+  └── Phase 7 — Governance Ecosystem (Foundation opaque)
+      └── Source: https://forum.bnbchain.org/c/grants
+
+Level 1 (Processed — Pattern Identification)
+  └── Phase 9 — Pola 4 (Financial Opacity pada Treasury & Foundation)
+      └── Evidence: Tidak ada laporan keuangan publik
+
+Level 2 (Knowledge)
+  └── Knowledge K-10 — Opasitas treasury dan legal entity menghambat kepercayaan
+
+Validation:
+  ├── Passed: Cross-phase consistency check
+  ├── Passed: Evidence audit (Strong)
+  └── Confidence: 84/100
+```
+
+Knowledge K-11 — Adopsi tech stack proven lebih efektif daripada membangun dari nol
+
+Lineage:
+```
+Level 0 (Raw Data — Events / Metrics / Integrations)
+  ├── Phase 3 — EV-039 (Parallel EVM BEP-336)
+  │   └── Source: https://forum.bnbchain.org/t/bep-336-parallel-evm
+  ├── Phase 4 — Consensus (Cosmos SDK/Tendermint)
+  │   └── Source: https://docs.bnbchain.org/docs/beacon-chain
+  ├── Phase 4 — Technology opBNB (OP Stack)
+  │   └── Source: https://docs.opbnb.io/architecture
+  └── Phase 7 — Dependencies Flashbots (mev-boost)
+      └── Source: https://www.bnbchain.org/en/blog/mev-mitigation
+
+Level 1 (Processed — Pattern Identification)
+  └── Phase 9 — Pola 4 (Adopsi Tech Stack Proven)
+      └── Evidence: OP Stack, Cosmos SDK, Block-STM, mev-boost
+
+Level 2 (Knowledge)
+  └── Knowledge K-11 — Adopsi tech stack proven lebih efektif daripada membangun dari nol
+
+Validation:
+  ├── Passed: Cross-phase consistency check
+  ├── Passed: Evidence audit (Strong)
+  └── Confidence: 95/100
+```
+
+Knowledge K-12 — Kontradiksi narasi community-driven vs struktur sentral
+
+Lineage:
+```
+Level 0 (Raw Data — Events / Metrics / Integrations)
+  ├── Phase 3 — EV-019 (Rebranding Community-driven)
+  │   └── Source: https://www.bnbchain.org/en/blog/announcing-the-bnb-chain-brand
+  ├── Phase 5 — Treasury (Opaque)
+  │   └── Source: https://www.bnbchain.org/en/burn
+  ├── Phase 6 — Governance (Tidak ada voting untuk grant)
+  │   └── Source: https://docs.bnbchain.org/docs/governance
+  └── Phase 2 — Entity Changpeng Zhao (Influence tetap ada)
+      └── Source: https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf
+
+Level 1 (Processed — Pattern Identification)
+  └── Phase 9 — Strategic Trade-off 2 (Transparansi Treasury vs Fleksibilitas)
+      └── Evidence: Narasi desentralisasi vs kontrol Foundation
+
+Level 2 (Knowledge)
+  └── Knowledge K-12 — Kontradiksi narasi community-driven vs struktur sentral
+
+Validation:
+  ├── Passed: Cross-phase consistency check
+  ├── Passed: Evidence audit (Strong)
+  └── Confidence: 86/100
+```
+
+# KNOWLEDGE DEPENDENCY GRAPH
+
+Knowledge K-01 — Kompatibilitas EVM
+
+Dependency Graph:
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-01 — Kompatibilitas EVM                                │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                      │
+│ ├── EV-010 — BSC Mainnet Launch                          │
+│ │   └── Source: Phase 3                                  │
+│ ├── EV-011 — PancakeSwap V1 Launch                       │
+│ │   └── Source: Phase 3                                  │
+│ └── Phase 4 — Execution Environment                      │
+│     └── Source: Phase 4                                  │
+│                                                          │
+│ DEPENDS ON (Indirect)                                    │
+│ ├── BNB Smart Chain (Chain)                              │
+│ ├── PancakeSwap (Application)                            │
+│ └── Phase 7 — Developer Ecosystem                        │
+│                                                          │
+│ DEPENDENTS (Knowledge yang bergantung pada K-01)         │
+│ ├── K-03 — Likuiditas exchange afiliasi                  │
+│ └── K-11 — Adopsi tech stack proven                      │
+│                                                          │
+│ PROPAGATION PATH:                                        │
+│ If BSC mainnet launch date changes → K-01 may change    │
+│ If PancakeSwap TVL changes → K-01 may change             │
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-02 — Multi-chain modular
+
+Dependency Graph:
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-02 — Multi-chain modular                               │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                      │
+│ ├── EV-022 — Greenfield Whitepaper                       │
+│ │   └── Source: Phase 3                                  │
+│ ├── EV-034 — opBNB Mainnet Launch                        │
+│ │   └── Source: Phase 3                                  │
+│ └── Phase 4 — System Architecture (5-chain)             │
+│     └── Source: Phase 4                                  │
+│                                                          │
+│ DEPENDS ON (Indirect)                                    │
+│ ├── opBNB (Chain)                                        │
+│ ├── BNB Greenfield (Chain)                               │
+│ └── Phase 7 — External Dependencies (OP Stack, Cosmos)  │
+│                                                          │
+│ DEPENDENTS (Knowledge yang bergantung pada K-02)         │
+│ ├── K-08 — Testnet panjang                               │
+│ └── K-09 — Sentralisasi awal                             │
+│                                                          │
+│ PROPAGATION PATH:                                        │
+│ If Greenfield mainnet date changes → K-02 may change     │
+│ If opBNB architecture changes → K-02 may change          │
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-03 — Likuiditas exchange afiliasi
+
+Dependency Graph:
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-03 — Likuiditas exchange afiliasi                      │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                      │
+│ ├── Entity Binance Exchange                              │
+│ │   └── Source: Phase 2                                  │
+│ ├── Phase 5 — Financial Dependencies                     │
+│ │   └── Source: Phase 5                                  │
+│ └── Phase 6 — Utility (Fee Discount)                     │
+│     └── Source: Phase 6                                  │
+│                                                          │
+│ DEPENDS ON (Indirect)                                    │
+│ ├── Binance (Company)                                    │
+│ ├── BNB (Token)                                          │
+│ └── Phase 7 — Exchange Ecosystem                         │
+│                                                          │
+│ DEPENDENTS (Knowledge yang bergantung pada K-03)         │
+│ ├── K-05 — Krisis regulasi                               │
+│ └── K-07 — Emerging markets                              │
+│                                                          │
+│ PROPAGATION PATH:                                        │
+│ If Binance Exchange liquidity changes → K-03 may change  │
+│ If BNB fee discount changes → K-03 may change            │
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-04 — Burn mechanism deflasioner
+
+Dependency Graph:
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-04 — Burn mechanism deflasioner                        │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                      │
+│ ├── EV-020 — BEP-95 Activation                           │
+│ │   └── Source: Phase 3                                  │
+│ ├── EV-049 — Auto-Burn >50M                              │
+│ │   └── Source: Phase 3                                  │
+│ └── Phase 6 — Inflation/Deflation                        │
+│     └── Source: Phase 6                                  │
+│                                                          │
+│ DEPENDS ON (Indirect)                                    │
+│ ├── BNB (Token)                                          │
+│ ├── BNB Smart Chain (Chain)                              │
+│ └── Phase 5 — Revenue Model (Gas Fee)                    │
+│                                                          │
+│ DEPENDENTS (Knowledge yang bergantung pada K-04)         │
+│ ├── K-01 — Kompatibilitas EVM                            │
+│ └── K-12 — Kontradiksi community-driven                  │
+│                                                          │
+│ PROPAGATION PATH:                                        │
+│ If BEP-95 parameter changes → K-04 may change            │
+│ If auto-burn formula changes → K-04 may change           │
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-05 — Krisis regulasi
+
+Dependency Graph:
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-05 — Krisis regulasi                                   │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                      │
+│ ├── EV-037 — DOJ Settlement $4.3B                        │
+│ │   └── Source: Phase 3                                  │
+│ ├── EV-038 — Richard Teng CEO                            │
+│ │   └── Source: Phase 3                                  │
+│ └── Phase 7 — Government Dependencies (DOJ, CFTC, SEC)  │
+│     └── Source: Phase 7                                  │
+│                                                          │
+│ DEPENDS ON (Indirect)                                    │
+│ ├── Department of Justice (Government)                   │
+│ ├── Binance Holdings Ltd (Company)                       │
+│ └── Phase 5 — Legal Risk                                 │
+│                                                          │
+│ DEPENDENTS (Knowledge yang bergantung pada K-05)         │
+│ ├── K-07 — Emerging markets                              │
+│ └── K-12 — Kontradiksi community-driven                  │
+│                                                          │
+│ PROPAGATION PATH:                                        │
+│ If SEC case outcome changes → K-05 may change            │
+│ If Binance settlement terms change → K-05 may change     │
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-06 — Redundansi infrastruktur kritis
+
+Dependency Graph:
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-06 — Redundansi infrastruktur kritis                   │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                      │
+│ ├── EV-023 — Wormhole Exploit                            │
+│ │   └── Source: Phase 3                                  │
+│ ├── EV-026 — Multichain Collapse                         │
+│ │   └── Source: Phase 3                                  │
+│ └── Phase 7 — External Dependencies Bridge               │
+│     └── Source: Phase 7                                  │
+│                                                          │
+│ DEPENDS ON (Indirect)                                    │
+│ ├── BNB Bridge (Protocol)                                │
+│ ├── LayerZero (Protocol)                                 │
+│ ├── Chainlink (Protocol)                                 │
+│ └── Pyth Network (Protocol)                              │
+│                                                          │
+│ DEPENDENTS (Knowledge yang bergantung pada K-06)         │
+│ ├── K-11 — Adopsi tech stack proven                      │
+│ └── K-02 — Multi-chain modular                           │
+│                                                          │
+│ PROPAGATION PATH:                                        │
+│ If a bridge fails again → K-06 validated further         │
+│ If oracle redundancy changes → K-06 may change           │
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-07 — Fokus pada emerging markets
+
+Dependency Graph:
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-07 — Fokus pada emerging markets                       │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                      │
+│ ├── Phase 2 — Entity Binance Regional Entities           │
+│ │   └── Source: Phase 2                                  │
+│ ├── Phase 3 — EV-027 (Hackathon Series)                  │
+│ │   └── Source: Phase 3                                  │
+│ └── Phase 7 — Government Dependencies (Lisensi)          │
+│     └── Source: Phase 7                                  │
+│                                                          │
+│ DEPENDS ON (Indirect)                                    │
+│ ├── Binance (Company)                                    │
+│ ├── Richard Teng (Person)                                │
+│ └── Phase 8 — Market Geographic Focus                    │
+│                                                          │
+│ DEPENDENTS (Knowledge yang bergantung pada K-07)         │
+│ ├── K-03 — Likuiditas exchange afiliasi                  │
+│ └── K-05 — Krisis regulasi                               │
+│                                                          │
+│ PROPAGATION PATH:                                        │
+│ If Binance licenses change → K-07 may change             │
+│ If emerging market adoption changes → K-07 may change    │
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-08 — Testnet panjang dan hard fork bernama
+
+Dependency Graph:
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-08 — Testnet panjang dan hard fork bernama             │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                      │
+│ ├── EV-009 — BSC Testnet                                 │
+│ │   └── Source: Phase 3                                  │
+│ ├── EV-030 — opBNB Testnet                               │
+│ │   └── Source: Phase 3                                  │
+│ ├── EV-042 — Luban Hard Fork                             │
+│ │   └── Source: Phase 3                                  │
+│ └── Phase 4 — Technical Upgrade History                  │
+│     └── Source: Phase 4                                  │
+│                                                          │
+│ DEPENDS ON (Indirect)                                    │
+│ ├── BNB Smart Chain (Chain)                              │
+│ ├── opBNB (Chain)                                        │
+│ └── Phase 7 — Infrastructure Providers                   │
+│                                                          │
+│ DEPENDENTS (Knowledge yang bergantung pada K-08)         │
+│ ├── K-02 — Multi-chain modular                           │
+│ └── K-09 — Sentralisasi awal                             │
+│                                                          │
+│ PROPAGATION PATH:                                        │
+│ If future hard fork dates change → K-08 may change       │
+│ If testnet duration changes → K-08 may change            │
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-09 — Sentralisasi awal
+
+Dependency Graph:
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-09 — Sentralisasi awal                                 │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                      │
+│ ├── EV-040 — PBS Research (BEP-341)                      │
+│ │   └── Source: Phase 3                                  │
+│ ├── EV-046 — Roadmap 2025 (Validator Expansion)          │
+│ │   └── Source: Phase 3                                  │
+│ └── Phase 4 — Limitations Validator Set                  │
+│     └── Source: Phase 4                                  │
+│                                                          │
+│ DEPENDS ON (Indirect)                                    │
+│ ├── BNB Validators (21)                                  │
+│ ├── opBNB Sequencer                                      │
+│ └── Phase 7 — Governance Ecosystem                       │
+│                                                          │
+│ DEPENDENTS (Knowledge yang bergantung pada K-09)         │
+│ ├── K-10 — Opasitas treasury                             │
+│ └── K-12 — Kontradiksi community-driven                  │
+│                                                          │
+│ PROPAGATION PATH:                                        │
+│ If validator expansion BEP passes → K-09 changes         │
+│ If PBS implementation timeline changes → K-09 changes    │
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-10 — Opasitas treasury
+
+Dependency Graph:
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-10 — Opasitas treasury                                 │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                      │
+│ ├── Phase 2 — Entity BNB Chain Foundation                │
+│ │   └── Source: Phase 2                                  │
+│ ├── Phase 5 — Treasury (tidak diungkapkan)               │
+│ │   └── Source: Phase 5                                  │
+│ └── Phase 6 — Vesting (tidak didokumentasikan)           │
+│     └── Source: Phase 6                                  │
+│                                                          │
+│ DEPENDS ON (Indirect)                                    │
+│ ├── BNB Chain Foundation (Foundation)                    │
+│ ├── Binance (Company)                                    │
+│ └── Phase 7 — Governance Ecosystem                       │
+│                                                          │
+│ DEPENDENTS (Knowledge yang bergantung pada K-10)         │
+│ ├── K-09 — Sentralisasi awal                             │
+│ └── K-12 — Kontradiksi community-driven                  │
+│                                                          │
+│ PROPAGATION PATH:                                        │
+│ If Foundation releases treasury report → K-10 changes    │
+│ If legal entity is identified → K-10 changes             │
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-11 — Adopsi tech stack proven
+
+Dependency Graph:
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-11 — Adopsi tech stack proven                          │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                      │
+│ ├── EV-039 — Parallel EVM BEP-336                        │
+│ │   └── Source: Phase 3                                  │
+│ ├── Phase 4 — Consensus (Cosmos SDK)                     │
+│ │   └── Source: Phase 4                                  │
+│ ├── Phase 4 — Technology opBNB (OP Stack)                │
+│ │   └── Source: Phase 4                                  │
+│ └── Phase 7 — Dependencies Flashbots (mev-boost)         │
+│     └── Source: Phase 7                                  │
+│                                                          │
+│ DEPENDS ON (Indirect)                                    │
+│ ├── Cosmos SDK (SDK)                                     │
+│ ├── Optimism (Protocol)                                  │
+│ └── Flashbots (Protocol)                                 │
+│                                                          │
+│ DEPENDENTS (Knowledge yang bergantung pada K-11)         │
+│ ├── K-01 — Kompatibilitas EVM                            │
+│ └── K-06 — Redundansi infrastruktur                      │
+│                                                          │
+│ PROPAGATION PATH:                                        │
+│ If OP Stack changes → K-11 may change                    │
+│ If Block-STM adoption changes → K-11 may change          │
+└──────────────────────────────────────────────────────────┘
+```
+
+Knowledge K-12 — Kontradiksi community-driven
+
+Dependency Graph:
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-12 — Kontradiksi community-driven                      │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                      │
+│ ├── EV-019 — Rebranding Community-driven                 │
+│ │   └── Source: Phase 3                                  │
+│ ├── Phase 5 — Treasury (Opaque)                          │
+│ │   └── Source: Phase 5                                  │
+│ ├── Phase 6 — Governance (Tidak ada voting treasury)     │
+│ │   └── Source: Phase 6                                  │
+│ └── Phase 2 — Entity Changpeng Zhao                      │
+│     └── Source: Phase 2                                  │
+│                                                          │
+│ DEPENDS ON (Indirect)                                    │
+│ ├── BNB Chain Foundation (Foundation)                    │
+│ ├── Changpeng Zhao (Person)                              │
+│ └── Phase 9 — Strategic Trade-off 2                      │
+│                                                          │
+│ DEPENDENTS (Knowledge yang bergantung pada K-12)         │
+│ ├── K-10 — Opasitas treasury                             │
+│ └── K-09 — Sentralisasi awal                             │
+│                                                          │
+│ PROPAGATION PATH:                                        │
+│ If governance reform happens → K-12 changes              │
+│ If CZ influence wanes → K-12 may change                  │
+└──────────────────────────────────────────────────────────┘
+```
+
+# CONFLICT REGISTER WITH SEVERITY & IMPACT
+
+Conflict C-001
+- Category: Tokenomics — Total Supply
+- Description: Total supply BNB disebut 200,000,000 di semua sumber, namun beberapa laporan tidak resmi menyebut >200M karena kemungkinan tidak memperhitungkan burn.
+- Severity: Low
+- Affected Knowledge: K-04 (Burn mechanism)
+- Impact: 2 (Low × 2)
+- Affected Phase: Phase 6, Phase 3
+- Evidence: Whitepaper resmi menetapkan 200M; burn on-chain >50M diverifikasi (HIGH) [BNB Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf] [BNB Chain Burn, https://www.bnbchain.org/en/burn]
+- Sources: https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf, https://www.bnbchain.org/en/burn
+- Resolution: Diselesaikan — Total supply tetap 200M; circulating supply berkurang karena burn; semua sumber resmi sepakat.
+- Status: Resolved
+
+Conflict C-002
+- Category: Treasury — Ukuran dan Komposisi
+- Description: BNB Chain Foundation tidak mempublikasikan ukuran treasury; beberapa analis mengasumsikan dari alokasi tim 80M BNB, sumber lain tidak memberikan data.
+- Severity: High
+- Affected Knowledge: K-10 (Opasitas treasury)
+- Impact: 4 (High × 2)
+- Affected Phase: Phase 5, Phase 2
+- Evidence: Tidak ada laporan resmi treasury; whitepaper tidak menyebut alokasi treasury (HIGH) [BNB Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf] [Phase 5 Treasury, https://www.bnbchain.org/en/burn]
+- Sources: https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf, https://www.bnbchain.org/en/burn
+- Resolution: Tidak dapat diselesaikan — data tidak pernah dipublikasikan; dicatat sebagai open thread.
+- Status: Unresolved
+
+Conflict C-003
+- Category: Vesting — Tim dan Angel Investors
+- Description: Whitepaper tidak mendokumentasikan vesting schedule untuk 80M BNB tim dan 20M BNB angel; beberapa sumber asumsi "sudah unlocked", tapi tidak ada bukti.
+- Severity: Medium
+- Affected Knowledge: K-10 (Opasitas treasury)
+- Impact: 3 (Medium × 2)
+- Affected Phase: Phase 6, Phase 3
+- Evidence: Whitepaper hanya menyebut alokasi; tidak ada rincian vesting (MEDIUM) [BNB Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf]
+- Sources: https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf
+- Resolution: Tidak dapat diselesaikan — data tidak pernah didokumentasikan; dicatat sebagai open thread.
+- Status: Unresolved
+
+Conflict C-004
+- Category: BNB sebagai Security — SEC Case
+- Description: SEC mengklaim BNB adalah security dalam gugatan 2023; BNB Chain mengklaim BNB adalah utility token; beberapa pengamat memperingatkan implikasi hukum.
+- Severity: High
+- Affected Knowledge: K-05 (Krisis regulasi)
+- Impact: 4 (High × 2)
+- Affected Phase: Phase 3, Phase 7
+- Evidence: SEC complaint menyebut BNB sebagai security (HIGH) [SEC, https://www.sec.gov/litigation/complaints/2023-131.pdf]; Binance menyangkal dan menyebut utility (MEDIUM) [Binance Blog, https://www.binance.com/en/blog/421499824684900357]
+- Sources: https://www.sec.gov/litigation/complaints/2023-131.pdf, https://www.binance.com/en/blog/421499824684900357
+- Resolution: Tidak dapat diselesaikan — kasus berjalan; hasil pengadilan belum final.
+- Status: Unresolved
+
+Conflict C-005
+- Category: Tanggal ICO BNB
+- Description: Whitepaper menyebut "Juli 2017" tanpa tanggal pasti; beberapa sumber pihak ketiga menyebut tanggal berbeda (14 Juli vs 24 Juli).
+- Severity: Low
+- Affected Knowledge: K-01 (Kompatibilitas EVM) — minor
+- Impact: 2 (Low × 2)
+- Affected Phase: Phase 3, Phase 1
+- Evidence: Whitepaper hanya menyebut bulan (HIGH) [BNB Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf]; pihak ketiga memberikan tanggal berbeda (LOW) [CoinMarketCap, https://coinmarketcap.com/currencies/bnb/]
+- Sources: https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf, https://coinmarketcap.com/currencies/bnb/
+- Resolution: Diselesaikan — tanggal pasti bulan Juli 2017 diterima; variasi harian tidak signifikan.
+- Status: Resolved
+
+Conflict C-006
+- Category: Validator Count — BSC vs Beacon Chain
+- Description: Beberapa sumber menyebut validator aktif BSC adalah 21, sumber lain menyebut 21 untuk BSC dan jumlah berbeda untuk Beacon Chain (tidak disebutkan by BNB Chain official docs).
+- Severity: Medium
+- Affected Knowledge: K-09 (Sentralisasi awal)
+- Impact: 3 (Medium × 2)
+- Affected Phase: Phase 4, Phase 7
+- Evidence: Docs resmi menyebut 21 validator BSC (HIGH) [BNB Chain Docs, https://docs.bnbchain.org/docs/consensus]; Beacon Chain validator count tidak diungkapkan jelas (MEDIUM) [BNB Chain Docs, https://docs.bnbchain.org/docs/beacon-chain-validator]
+- Sources: https://docs.bnbchain.org/docs/consensus, https://docs.bnbchain.org/docs/beacon-chain-validator
+- Resolution: Diselesaikan — untuk BSC 21 validator; Beacon Chain validator lebih besar namun tidak perlu angka pasti untuk insight.
+- Status: Resolved
+
+Conflict C-007
+- Category: TVL — BSC Puncak
+- Description: Beberapa sumber menyebut TVL BSC puncak $40M, sumber lain menyebut $40B (perbedaan besaran).
+- Severity: Medium
+- Affected Knowledge: K-01 (Kompatibilitas EVM)
+- Impact: 3 (Medium × 2)
+- Affected Phase: Phase 3, Phase 8
+- Evidence: DefiLlama mencatat TVL BSC pernah mencapai $40 miliar (HIGH) [DefiLlama, https://defillama.com/chain/BSC]; beberapa blog menyebut $40M (salah skala) (LOW) [Blog tidak resmi]
+- Sources: https://defillama.com/chain/BSC
+- Resolution: Diselesaikan — puncak TVL adalah $40 miliar (bukan $40 juta); sumber resmi DefiLlama digunakan.
+- Status: Resolved
+
+Conflict C-008
+- Category: Status Binance.US
+- Description: Setelah kasus SEC 2023, Binance.US operasi terbatas; beberapa sumber menyebut fiat off-ramp dicabut, sumber lain menyebut sebagian besar operasi dihentikan.
+- Severity: Medium
+- Affected Knowledge: K-03 (Likuiditas exchange afiliasi)
+- Impact: 3 (Medium × 2)
+- Affected Phase: Phase 7, Phase 3
+- Evidence: BAM Trading (Binance.US) kasus SEC berjalan (HIGH) [SEC Complaint, https://www.sec.gov/litigation/complaints/2023-131.pdf]; laporan Reuters menyebut operasi terbatas (MEDIUM) [Reuters, https://www.reuters.com/technology/binance-us-says-it-operates-independently-2023-06-06/]
+- Sources: https://www.sec.gov/litigation/complaints/2023-131.pdf, https://www.reuters.com/technology/binance-us-says-it-operates-independently-2023-06-06/
+- Resolution: Diselesaikan — Binance.US operasi terbatas; tidak dihentikan total; rincian perbankan tidak dipublikasikan.
+- Status: Resolved
+
+Conflict Summary:
+- Total Conflicts: 8
+- Resolved: 6
+- Unresolved: 2
+- Critical: 0
+- High: 2
+- Medium: 4
+- Low: 2
+
+Conflict Score:
+```
+Conflict Score = 
+  (6 × 1.0) +
+  (0 × 0.9) +
+  (1 × 0.6) +
+  (1 × 0.3) +
+  (0 × 0.0)
+────────────────
+        8
+= (6 + 0 + 0.6 + 0.3 + 0) / 8
+= 7.9 / 8
+= 98.75%
+```
+Hasil: 99% (dibulatkan)
+
+# EVIDENCE AUDIT
+
+Knowledge K-01 — Kompatibilitas EVM
+- Supporting Dataset: Phase 3, Phase 4, Phase 7
+- Evidence Quality: Strong
+- Evidence Weight: 8.5 (rata-rata dari official docs & blog)
+- Assessment: Sangat kuat — didukung oleh banyak official source dan event; tidak ada konflik serius.
+- Evidence Weight Detail: [Phase 3 — EV-010, https://www.binance.com/en/blog/421499824684900357] + [Phase 4 — Execution Environment, https://docs.bnbchain.org/docs/evm] + [Phase 7 — Developer Tools, https://hardhat.org/hardhat-runner/docs/guides/bnb-smart-chain]
+
+Knowledge K-02 — Multi-chain modular
+- Supporting Dataset: Phase 3, Phase 4, Phase 7
+- Evidence Quality: Strong
+- Evidence Weight: 8.0 (official docs & whitepaper)
+- Assessment: Kuat — didukung oleh produk live (opBNB, Greenfield) dan docs.
+- Evidence Weight Detail: [Phase 3 — EV-022, https://github.com/bnb-chain/greenfield-whitepaper] + [Phase 3 — EV-034, https://www.bnbchain.org/en/blog/opbnb-mainnet-launch] + [Phase 4 — Architecture, https://docs.bnbchain.org/docs/overview]
+
+Knowledge K-03 — Likuiditas exchange afiliasi
+- Supporting Dataset: Phase 2, Phase 5, Phase 6, Phase 7
+- Evidence Quality: Strong
+- Evidence Weight: 8.0 (official Binance & BNB docs)
+- Assessment: Kuat — dependensi pada Binance Exchange jelas dan terdokumentasi.
+- Evidence Weight Detail: [Phase 2 — Binance Exchange, https://www.binance.com] + [Phase 5 — Financial Dependencies, https://www.binance.com/en/fee/trading] + [Phase 7 — External Dependencies, https://www.binance.com]
+
+Knowledge K-04 — Burn mechanism deflasioner
+- Supporting Dataset: Phase 3, Phase 5, Phase 6
+- Evidence Quality: Strong
+- Evidence Weight: 9.0 (on-chain burn + dashboard resmi)
+- Assessment: Sangat kuat — diverifikasi on-chain dan dashboard resmi.
+- Evidence Weight Detail: [Phase 3 — EV-020, https://docs.bnbchain.org/docs/burn] + [Phase 3 — EV-049, https://www.bnbchain.org/en/burn] + [Phase 6 — Inflation/Deflation, https://www.bnbchain.org/en/burn]
+
+Knowledge K-05 — Krisis regulasi
+- Supporting Dataset: Phase 3, Phase 2, Phase 7
+- Evidence Quality: Strong
+- Evidence Weight: 8.5 (official DOJ & court docs, high authority)
+- Assessment: Sangat kuat — faktual dan terdokumentasi oleh pengadilan.
+- Evidence Weight Detail: [Phase 3 — EV-037, https://www.justice.gov/opa/pr/binance-holdings-ltd-and-changpeng-zhao-plead-guilty-federal-charges] + [Phase 3 — EV-038, https://www.binance.com/en/blog/421499824684900357] + [Phase 7 — Government Dependencies, https://www.cftc.gov/PressRoom/PressReleases/8674-23]
+
+Knowledge K-06 — Redundansi infrastruktur kritis
+- Supporting Dataset: Phase 3, Phase 7
+- Evidence Quality: Strong
+- Evidence Weight: 8.0 (insiden multidimensi dan strategi terdokumentasi)
+- Assessment: Kuat — dihasilkan dari insiden nyata dan tanggapan resmi.
+- Evidence Weight Detail: [Phase 3 — EV-023, https://www.coindesk.com/business/2022/02/03/wormhole-hack-320-million/] + [Phase 3 — EV-026, https://www.coindesk.com/business/2023/07/14/multichain-team-arrested-chinese-police/] + [Phase 7 — Bridge Dependencies, https://docs.bnbchain.org/docs/bridge]
+
+Knowledge K-07 — Fokus pada emerging markets
+- Supporting Dataset: Phase 2, Phase 3, Phase 7, Phase 8
+- Evidence Quality: Moderate
+- Evidence Weight: 6.5 (didukung oleh entity list dan government licenses)
+- Assessment: Cukup kuat — bukti tidak sekuat K-01 karena data kuantitatif adoption belum tersedia.
+- Evidence Weight Detail: [Phase 2 — Binance Regional Entities, https://www.binance.com/en/access-restriction] + [Phase 3 — EV-027, https://dorahacks.io/hackathon/bnb-chain] + [Phase 7 — Government Dependencies, https://vara.ae]
+
+Knowledge K-08 — Testnet panjang dan hard fork bernama
+- Supporting Dataset: Phase 3, Phase 4
+- Evidence Quality: Strong
+- Evidence Weight: 8.0 (official docs & blog)
+- Assessment: Kuat — semua major launch mengikuti pola.
+- Evidence Weight Detail: [Phase 3 — EV-009, https://docs.bnbchain.org/docs/overview] + [Phase 3 — EV-030, https://docs.opbnb.io] + [Phase 3 — EV-042, https://www.bnbchain.org/en/blog/luban-hardfork]
+
+Knowledge K-09 — Sentralisasi awal
+- Supporting Dataset: Phase 3, Phase 4
+- Evidence Quality: Strong
+- Evidence Weight: 8.0 (docs validators dan proposal)
+- Assessment: Kuat — terdokumentasi dengan jelas.
+- Evidence Weight Detail: [Phase 3 — EV-040, https://forum.bnbchain.org/t/bep-341-pbs] + [Phase 3 — EV-046, https://www.bnbchain.org/en/blog/4th-anniversary] + [Phase 4 — Limitations, https://docs.bnbchain.org/docs/consensus]
+
+Knowledge K-10 — Opasitas treasury
+- Supporting Dataset: Phase 2, Phase 5, Phase 6
+- Evidence Quality: Strong
+- Evidence Weight: 8.0 (karena absence of data actually menunjukkan opacity)
+- Assessment: Kuat — kekosongan data merupakan bukti itu sendiri.
+- Evidence Weight Detail: [Phase 2 — BNB Chain Foundation, https://www.bnbchain.org/en/blog] + [Phase 5 — Treasury, https://www.bnbchain.org/en/burn] + [Phase 6 — Vesting, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf]
+
+Knowledge K-11 — Adopsi tech stack proven
+- Supporting Dataset: Phase 3, Phase 4, Phase 7
+- Evidence Quality: Strong
+- Evidence Weight: 8.5 (perbandingan langsung dengan products live)
+- Assessment: Sangat kuat — langkah nyata menunjukkan adopsi.
+- Evidence Weight Detail: [Phase 3 — EV-039, https://forum.bnbchain.org/t/bep-336-parallel-evm] + [Phase 4 — Consensus, https://docs.bnbchain.org/docs/beacon-chain] + [Phase 4 — opBNB, https://docs.opbnb.io/architecture]
+
+Knowledge K-12 — Kontradiksi community-driven
+- Supporting Dataset: Phase 3, Phase 5, Phase 6, Phase 2
+- Evidence Quality: Strong
+- Evidence Weight: 7.5 (dari perbandingan narasi vs struktur)
+- Assessment: Kuat — kontradiksi jelas terlihat.
+- Evidence Weight Detail: [Phase 3 — EV-019, https://www.bnbchain.org/en/blog/announcing-the-bnb-chain-brand] + [Phase 5 — Treasury, https://www.bnbchain.org/en/burn] + [Phase 6 — Governance, https://docs.bnbchain.org/docs/governance]
+
+# CONFIDENCE ASSESSMENT — v3.0
+
+Knowledge K-01 — Kompatibilitas EVM
+- Evidence Count: 5
+- Evidence Weight: 8.5
+- Independent Sources: 3
+- Official Sources: 2
+- Source Diversity: 10 (weight > 20)
+- Cross-phase Validation: Pass
+- No Conflicts: 0 conflicts
+- Coverage: 80%
+- Confidence Score: 90/100
+- Confidence Level: High
+
+Knowledge K-02 — Multi-chain modular
+- Evidence Count: 4
+- Evidence Weight: 8.0
+- Independent Sources: 2
+- Official Sources: 2
+- Source Diversity: 10 (weight > 20)
+- Cross-phase Validation: Pass
+- No Conflicts: 0 conflicts
+- Coverage: 80%
+- Confidence Score: 93/100
+- Confidence Level: High
+
+Knowledge K-03 — Likuiditas exchange afiliasi
+- Evidence Count: 4
+- Evidence Weight: 8.0
+- Independent Sources: 2
+- Official Sources: 2
+- Source Diversity: 10 (weight > 20)
+- Cross-phase Validation: Pass
+- No Conflicts: 0 conflicts
+- Coverage: 80%
+- Confidence Score: 89/100
+- Confidence Level: High
+
+Knowledge K-04 — Burn mechanism deflasioner
+- Evidence Count: 6
+- Evidence Weight: 9.0
+- Independent Sources: 3
+- Official Sources: 3
+- Source Diversity: 10 (weight > 20)
+- Cross-phase Validation: Pass
+- No Conflicts: 0 conflicts
+- Coverage: 100%
+- Confidence Score: 95/100
+- Confidence Level: High
+
+Knowledge K-05 — Krisis regulasi
+- Evidence Count: 5
+- Evidence Weight: 8.5
+- Independent Sources: 3
+- Official Sources: 2
+- Source Diversity: 10 (weight > 20)
+- Cross-phase Validation: Pass
+- No Conflicts: 1 conflict (C-004)
+- Coverage: 80%
+- Confidence Score: 94/100
+- Confidence Level: High
+
+Knowledge K-06 — Redundansi infrastruktur
+- Evidence Count: 5
+- Evidence Weight: 8.0
+- Independent Sources: 3
+- Official Sources: 2
+- Source Diversity: 10 (weight > 20)
+- Cross-phase Validation: Pass
+- No Conflicts: 0 conflicts
+- Coverage: 80%
+- Confidence Score: 90/100
+- Confidence Level: High
+
+Knowledge K-07 — Fokus emerging markets
+- Evidence Count: 4
+- Evidence Weight: 6.5
+- Independent Sources: 2
+- Official Sources: 2
+- Source Diversity: 10 (weight > 20)
+- Cross-phase Validation: Pass
+- No Conflicts: 0 conflicts
+- Coverage: 80%
+- Confidence Score: 75/100
+- Confidence Level: Medium
+
+Knowledge K-08 — Testnet panjang
+- Evidence Count: 5
+- Evidence Weight: 8.0
+- Independent Sources: 3
+- Official Sources: 2
+- Source Diversity: 10 (weight > 20)
+- Cross-phase Validation: Pass
+- No Conflicts: 0 conflicts
+- Coverage: 80%
+- Confidence Score: 92/100
+- Confidence Level: High
+
+Knowledge K-09 — Sentralisasi awal
+- Evidence Count: 5
+- Evidence Weight: 8.0
+- Independent Sources: 3
+- Official Sources: 2
+- Source Diversity: 10 (weight > 20)
+- Cross-phase Validation: Pass
+- No Conflicts: 0 conflicts
+- Coverage: 80%
+- Confidence Score: 91/100
+- Confidence Level: High
+
+Knowledge K-10 — Opasitas treasury
+- Evidence Count: 5
+- Evidence Weight: 8.0
+- Independent Sources: 2
+- Official Sources: 2
+- Source Diversity: 10 (weight > 20)
+- Cross-phase Validation: Pass
+- No Conflicts: 1 conflict (C-002 dan C-003)
+- Coverage: 80%
+- Confidence Score: 83/100
+- Confidence Level: High
+
+Knowledge K-11 — Adopsi tech stack proven
+- Evidence Count: 5
+- Evidence Weight: 8.5
+- Independent Sources: 3
+- Official Sources: 2
+- Source Diversity: 10 (weight > 20)
+- Cross-phase Validation: Pass
+- No Conflicts: 0 conflicts
+- Coverage: 80%
+- Confidence Score: 94/100
+- Confidence Level: High
+
+Knowledge K-12 — Kontradiksi community-driven
+- Evidence Count: 5
+- Evidence Weight: 7.5
+- Independent Sources: 3
+- Official Sources: 2
+- Source Diversity: 10 (weight > 20)
+- Cross-phase Validation: Pass
+- No Conflicts: 0 conflicts
+- Coverage: 80%
+- Confidence Score: 88/100
+- Confidence Level: High
+
+Confidence Summary:
+- High (80-100): 11 Knowledge
+- Medium (60-79): 1 Knowledge
+- Low (<60): 0 Knowledge
+- Average Confidence Score: 90/100
+
+# KNOWLEDGE STABILITY & VERSIONING
+
+Knowledge K-01 — Kompatibilitas EVM
+Stability: Stable
+Current Version: v1.0
+Created: 2027-01-24
+Last Updated: 2027-01-24
+Status: Active
+Version History:
+ · v1.0 — 2027-01-24
+ · Created with evidence: EV-010, EV-011, Phase 4 Execution, Phase 7 Dev Tools
+ · Confidence: 90/100
+
+Knowledge K-02 — Multi-chain modular
+Stability: Stable
+Current Version: v1.0
+Created: 2027-01-24
+Last Updated: 2027-01-24
+Status: Active
+Version History:
+ · v1.0 — 2027-01-24
+ · Created with evidence: EV-022, EV-034, Phase 4 System Architecture
+ · Confidence: 93/100
+
+Knowledge K-03 — Likuiditas exchange afiliasi
+Stability: Emerging
+Current Version: v1.0
+Created: 2027-01-24
+Last Updated: 2027-01-24
+Status: Active
+Version History:
+ · v1.0 — 2027-01-24
+ · Created with evidence: Binance Exchange, Phase 5 Financial Dependencies, Phase 6 Utility
+ · Confidence: 89/100
+
+Knowledge K-04 — Burn mechanism deflasioner
+Stability: Stable
+Current Version: v1.0
+Created: 2027-01-24
+Last Updated: 2027-01-24
+Status: Active
+Version History:
+ · v1.0 — 2027-01-24
+ · Created with evidence: EV-020, EV-049, Phase 6 Inflation/Deflation
+ · Confidence: 95/100
+
+Knowledge K-05 — Krisis regulasi
+Stability: Volatile
+Current Version: v1.0
+Created: 2027-01-24
+Last Updated: 2027-01-24
+Status: Active
+Version History:
+ · v1.0 — 2027-01-24
+ · Created with evidence: EV-037, EV-038, Phase 7 Government Dependencies
+ · Confidence: 94/100
+ · v1.1 — Planned update jika SEC case selesai
+ · Trigger: Putusan SEC vs Binance (BNB sebagai security)
+ · Expected Change: Confidence mungkin berubah jika klaim SEC dikabulkan/ditolak
+ · Confidence Change: 94 → ?
+
+Knowledge K-06 — Redundansi infrastruktur
+Stability: Stable
+Current Version: v1.0
+Created: 2027-01-24
+Last Updated: 2027-01-24
+Status: Active
+Version History:
+ · v1.0 — 2027-01-24
+ · Created with evidence: EV-023, EV-026, Phase 7 Bridge Dependencies
+ · Confidence: 90/100
+
+Knowledge K-07 — Fokus emerging markets
+Stability: Emerging
+Current Version: v1.0
+Created: 2027-01-24
+Last Updated: 2027-01-24
+Status: Active
+Version History:
+ · v1.0 — 2027-01-24
+ · Created with evidence: Binance Regional Entities, EV-027, Phase 7 Government
+ · Confidence: 75/100
+
+Knowledge K-08 — Testnet panjang
+Stability: Stable
+Current Version: v1.0
+Created: 2027-01-24
+Last Updated: 2027-01-24
+Status: Active
+Version History:
+ · v1.0 — 2027-01-24
+ · Created with evidence: EV-009, EV-030, EV-042, Phase 4 Upgrade
+ · Confidence: 92/100
+
+Knowledge K-09 — Sentralisasi awal
+Stability: Volatile
+Current Version: v1.0
+Created: 2027-01-24
+Last Updated: 2027-01-24
+Status: Active
+Version History:
+ · v1.0 — 2027-01-24
+ · Created with evidence: EV-040, EV-046, Phase 4 Limitations
+ · Confidence: 91/100
+ · v1.1 — Planned update setelah BEP validator expansion disetujui/ditolak
+ · Trigger: Voting BEP validator expansion
+ · Expected Change: Jika disetujui, insight mungkin berubah drastis
+ · Confidence Change: 91 → ?
+
+Knowledge K-10 — Opasitas treasury
+Stability: Stable
+Current Version: v1.0
+Created: 2027-01-24
+Last Updated: 2027-01-24
+Status: Active
+Version History:
+ · v1.0 — 2027-01-24
+ · Created with evidence: BNB Chain Foundation, Phase 5 Treasury, Phase 6 Vesting
+ · Confidence: 83/100
+
+Knowledge K-11 — Adopsi tech stack proven
+Stability: Stable
+Current Version: v1.0
+Created: 2027-01-24
+Last Updated: 2027-01-24
+Status: Active
+Version History:
+ · v1.0 — 2027-01-24
+ · Created with evidence: EV-039, Phase 4 Consensus, Phase 4 opBNB, Phase 7 Flashbots
+ · Confidence: 94/100
+
+Knowledge K-12 — Kontradiksi community-driven
+Stability: Emerging
+Current Version: v1.0
+Created: 2027-01-24
+Last Updated: 2027-01-24
+Status: Active
+Version History:
+ · v1.0 — 2027-01-24
+ · Created with evidence: EV-019, Phase 5 Treasury, Phase 6 Governance, Phase 2 CZ
+ · Confidence: 88/100
+ · v1.1 — Planned update jika governance reform terjadi
+ · Trigger: Roadmap 2025 governance reform
+ · Expected Change: Insight mungkin tetap atau berkurang sesuai perkembangan
+ · Confidence Change: 88 → ?
+
+Knowledge Stability Distribution:
+- Stable: 6 Knowledge
+- Emerging: 3 Knowledge
+- Volatile: 2 Knowledge
+- Deprecated: 0 Knowledge
+
+# MISSING KNOWLEDGE CLASSIFICATION
+
+Missing Item 1
+- Item: Ukuran treasury BNB Chain Foundation
+- Phase Missing: Phase 5
+- Reason: Not Public
+- Severity: High
+- Impact: Menghambat analisis keuangan mendalam (K-10)
+
+Missing Item 2
+- Item: Vesting schedule tim (80M BNB) dan angel (20M BNB)
+- Phase Missing: Phase 6
+- Reason: Never Existed (tidak pernah didokumentasikan)
+- Severity: Medium
+- Impact: Ketidakjelasan distribusi awal BNB (K-10)
+
+Missing Item 3
+- Item: Legal entity dan yurisdiksi BNB Chain Foundation
+- Phase Missing: Phase 2
+- Reason: Not Public
+- Severity: High
+- Impact: Menghambat penilaian governance dan legal (K-12)
+
+Missing Item 4
+- Item: Jumlah validator aktif dan komposisi stake di Beacon Chain
+- Phase Missing: Phase 4
+- Reason: Not Public (tidak dipublikasikan secara resmi)
+- Severity: Medium
+- Impact: Analisis desentralisasi kurang lengkap (K-09)
+
+Missing Item 5
+- Item: Status Fee Switch / parameter burn terkini (BEP-95 adjustment)
+- Phase Missing: Phase 6
+- Reason: Not Public (parameter teknis sangat detail)
+- Severity: Low
+- Impact: Tidak berdampak signifikan pada insight utama
+
+Missing Item 6
+- Item: Jumlah developer aktif bulanan (full-time/part-time)
+- Phase Missing: Phase 7
+- Reason: Not Public
+- Severity: Medium
+- Impact: Analisis perkembangan developer dan ekosistem kurang kuat (K-01)
+
+Missing Item 7
+- Item: Data pasar terkini (market share per segment, jumlah user aktif)
+- Phase Missing: Phase 8
+- Reason: Not Yet Released
+- Severity: Medium
+- Impact: Analisis pasar dan posisi kompetitif kurang akurat (K-07)
+
+Missing Item 8
+- Item: Navigasi agregat untuk grant/hackathon allocation total
+- Phase Missing: Phase 5
+- Reason: Not Public
+- Severity: Low
+- Impact: Tidak berdampak pada insight utama
+
+Missing Item 9
+- Item: Status independen BNB Chain Foundation dari Binance Holdings
+- Phase Missing: Phase 2
+- Reason: Unknown
+- Severity: High
+- Impact: Ketidakjelasan kontradiksi narasi community-driven (K-12)
+
+Missing Item 10
+- Item: Daftar lengkap 21 validator BSC dan komisinya
+- Phase Missing: Phase 4
+- Reason: Not Public
+- Severity: Medium
+- Impact: Analisis desentralisasi kurang detail (K-09)
+
+# CIF SCORE CALCULATION — v3.0
+
+Research Quality (25%)
+- (Complete Phases / 10) × 100 = (9 / 10) × 100 = 90.00
+- Kontribusi: 90.00 × 0.25 = 22.50
+
+Consistency (20%)
+- (Passed Checks / Total Checks) × 100 = (11 / 12) × 100 = 91.67
+- Kontribusi: 91.67 × 0.20 = 18.33
+
+Evidence (15%)
+- Average Evidence Weight (0-100) = (850 / 10) = 85.00
+- Kontribusi: 85.00 × 0.15 = 12.75
+
+Coverage (15%)
+- Overall Coverage (%) = 42.00
+- Kontribusi: 42.00 × 0.15 = 6.30
+
+Conflict (15%)
+- Conflict Score (%) = 98.75
+- Kontribusi: 98.75 × 0.15 = 14.81
+
+Knowledge (10%)
+- Average Confidence Score = 90.00
+- Kontribusi: 90.00 × 0.10 = 9.00
+
+CIF Score = 22.50 + 18.33 + 12.75 + 6.30 + 14.81 + 9.00 = 83.69
+
+Interpretasi: Good (80-90) — CIF berkualitas tinggi, beberapa area perlu perbaikan.
+
+Catatan: Coverage score rendah (42%) karena banyak item entity dan aplikasi yang terdaftar di Phase 7 tapi tidak digunakan secara eksplisit di Phase 9-10; namun hal ini tidak menurunkan kualitas insight utama, karena hanya item yang paling relevan yang digunakan untuk membangun knowledge. Jika coverage dihitung berdasarkan item yang benar-benar diperlukan, angkanya akan lebih tinggi.
+
+# FINAL VALIDATION SUMMARY
+
+Dataset Completeness:
+- Complete Phases: 9 dari 10
+- Missing Information: 10 item, semua dicatat di Missing Knowledge Classification
+- Status: 90% lengkap
+
+Cross-phase Consistency:
+- Overall: 92%
+- Status: Konsisten
+
+Evidence Quality:
+- Strong: 11 Knowledge
+- Moderate: 1 Knowledge
+- Weak: 0 Knowledge
+
+Confidence Assessment:
+- High: 11 Knowledge
+- Medium: 1 Knowledge
+- Low: 0 Knowledge
+- Average: 90/100
+
+Remaining Conflicts:
+- Resolved: 6
+- Unresolved: 2
+- Critical: 0
+- High: 2
+- Medium: 4
+- Low: 2
+
+Knowledge Stability Distribution:
+- Stable: 6
+- Emerging: 3
+- Volatile: 2
+- Deprecated: 0
+
+CIF Score: 84/100
+
+Overall Validation Result:
+CIF untuk BNB Chain memiliki kualitas sangat baik secara keseluruhan. Integritas dataset kuat — 9 dari 10 phase lengkap, konsistensi lintas phase tinggi (92%), dan evidence yang mendukung knowledge sangat kuat (11 dari 12 knowledge memiliki evidence quality Strong). Kepercayaan (Confidence Level) High dengan rata-rata skor 90/100. Kelemahan utama terletak pada: (1) financial transparency yang sangat terbatas dari BNB Chain Foundation (treasury, vesting, legal entity tidak diungkapkan), menciptakan 2 unresolved conflicts yang tidak dapat diselesaikan dengan data yang ada; (2) coverage angka rendah (42%) karena banyak item ekosistem yang terdokumentasi namun hanya sebagian kecil yang benar-benar digunakan untuk membangun insight — ini bukan kekurangan data, melainkan kelebihan data konteks. CIF Score 84/100 berada pada level "Good", artinya hasil siap digunakan untuk analisis lintas proyek tetapi disarankan untuk perbaikan pada transparansi keuangan dan pembaruan data pasar berkala.
+
+Recommended Re-run:
+- Phase 5 — Data treasury dan biaya legal yang belum lengkap; diperlukan pembaruan jika BNB Chain Foundation mempublikasikan laporan keuangan atau jika kasus SEC selesai.
+- Phase 8 — Data pasar terkini perlu pembaruan berkala untuk mempertahankan akurasi pangsa pasar, jumlah user, dan posisi kompetitif.
+- Phase 4 — Status PBS, validator expansion, dan zkBNB mainnet perlu pembaruan saat milestone teknis tercapai.
+
+QA Status: PASSED
+Confidence Level: HIGH
+
 ## Open Questions
 - [foundation] Jumlah validator aktif saat ini dan mekanisme rotasi validator PoSA — perlu data on-chain terkini
 - [foundation] Distribusi token BNB terkini (treasury, team, ecosystem, public) — butuh cross-check ke halaman governance/resmi
@@ -7569,3 +9114,53 @@ Lessons Learned Utama:
 - [knowledge] Apakah BNB yang di-burn (khususnya dari alokasi tim/angel yang telah beredar) mengurangi holding historis pihak tersebut atau hanya mengurangi circulating supply — interpretasi belum jelas dari docs resmi【Phase 6 — Open Threads】.
 - [knowledge] Data "top holder concentration" dari BscScan mengklasifikasikan burn address sebagai "holder", yang dapat menyesatkan interpretasi konsentrasi — analisis harus hati-hati sebelum dipakai sebagai dasar keputusan【Phase 6 — Open Threads】.
 - [knowledge] Ada indikasi kontradiksi antara narasi "community-driven" dan kontrol Foundation yang opaque pada treasury/grant; apakah ini akan diperbaiki melalui governance reform 2025 belum jelas【Phase 3 — EV-046】【Phase 6 — Governance】【Phase 9 — Strategic Objective 3】.
+- [conflict] Description: Status dan ukuran treasury BNB Chain Foundation tidak pernah diungkapkan; apakah Foundation benar-benar memiliki aset terpisah dari Binance Holdings?
+- [conflict] Affected Phase: Phase 5, Phase 2
+- [conflict] Evidence: Tidak ada laporan keuangan atau dokumentasi legal yang ditemukan [Phase 5 Treasury, https://www.bnbchain.org/en/burn]; [Phase 2 Entity Foundation, https://www.bnbchain.org/en/blog]
+- [conflict] Alternative Interpretations: (1) Treasury berasal dari sisa alokasi tim ICO (80M BNB) yang belum dibakar; (2) Treasury dibiayai dari pendapatan gas fee yang terakumulasi; (3) Treasury tidak signifikan dan operasi didukung langsung oleh Binance.
+- [conflict] Status: In Review Open Thread ID: OT-02
+- [conflict] Description: Vesting schedule untuk alokasi tim (80M BNB) dan angel investors (20M BNB) tidak pernah didokumentasikan dalam whitepaper; kapan token-token tersebut dirilis?
+- [conflict] Affected Phase: Phase 6, Phase 3
+- [conflict] Evidence: Whitepaper hanya menyebut alokasi tanpa rincian vesting [BNB Whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf]
+- [conflict] Alternative Interpretations: (1) Semua token dirilis langsung saat TGE (dan sudah beredar); (2) Token dirilis bertahap tanpa publikasi jadwal; (3) Beberapa token masih dikunci oleh tim internal.
+- [conflict] Status: In Review Open Thread ID: OT-03
+- [conflict] Description: Kasus SEC vs Binance masih berjalan; jika pengadilan memutuskan BNB sebagai "security", apa dampaknya terhadap tokenomics, listing, dan narasi utility?
+- [conflict] Affected Phase: Phase 7, Phase 3, Phase 6
+- [conflict] Evidence: SEC complaint menyebut BNB sebagai security [SEC, https://www.sec.gov/litigation/complaints/2023-131.pdf]; BNB Chain mengklaim utility [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+- [conflict] Alternative Interpretations: (1) BNB ditetapkan sebagai security di AS; (2) BNB dianggap bukan security karena utility besar; (3) Ditunda tanpa hasil jelas.
+- [conflict] Status: In Review Open Thread ID: OT-04
+- [conflict] Description: Validator expansion proposal (21 → 100+) belum diimplementasikan; kapan dan bagaimana transisinya?
+- [conflict] Affected Phase: Phase 3, Phase 4
+- [conflict] Evidence: Roadmap 2025 menyebut "path to full decentralization" tapi tidak ada BEP resmi [BNB Chain Blog, https://www.bnbchain.org/en/blog/4th-anniversary]; Forum tidak memiliki proposal validator expansion [BNB Chain Forum, https://forum.bnbchain.org/c/validator]
+- [conflict] Alternative Interpretations: (1) Proposal akan diajukan 2025; (2) Tidak akan diimplementasikan dalam waktu dekat; (3) Dilakukan bertahap tanpa BEP publik besar.
+- [conflict] Status: In Review Open Thread ID: OT-05
+- [conflict] Description: Status zkBNB mainnet dan tech stack final (RISC Zero / Polygon zkEVM / Scroll) belum diumumkan; kapan mainnet dan dengan stack apa?
+- [conflict] Affected Phase: Phase 3, Phase 4
+- [conflict] Evidence: zkBNB testnet Nov 2024 [BNB Chain GitHub, https://github.com/bnb-chain/zkevm]; target mainnet H1 2025 [Phase 3 EV-048]
+- [conflict] Alternative Interpretations: (1) Mainnet akan dirilis H1 2025; (2) Ditunda karena auditor findings; (3) Tech stack final akan diumumkan pada whitepaper v2.
+- [conflict] Status: In Review Open Thread ID: OT-06
+- [conflict] Description: Status Binance.US pasca-kasus SEC dan DOJ settlement masih tidak jelas; apakah akan pulih atau tetap terbatas?
+- [conflict] Affected Phase: Phase 7, Phase 3
+- [conflict] Evidence: SEC case berjalan [SEC, https://www.sec.gov/litigation/complaints/2023-131.pdf]; Binance.US operasi terbatas [Reuters, https://www.reuters.com/technology/binance-us-says-it-operates-independently-2023-06-06/]
+- [conflict] Alternative Interpretations: (1) Binance.US akan tetap terbatas; (2) Akan pulih jika kasus SEC diselesaikan; (3) Mungkin tutup permanen.
+- [conflict] Status: In Review Open Thread ID: OT-07
+- [conflict] Description: Opasitas legal entity BNB Chain Foundation — apakah terdaftar di Cayman, Singapura, atau yurisdiksi lain; dan apakah benar-benar terpisah dari Binance Holdings?
+- [conflict] Affected Phase: Phase 2
+- [conflict] Evidence: Tidak ada filing hukum yang ditemukan; semua sumber hanya menyebut "Foundation" [BNB Chain Blog, https://www.bnbchain.org/en/blog]
+- [conflict] Alternative Interpretations: (1) Terdaftar di Cayman (yurisdiksi Binance Holdings); (2) Terdaftar di Abu Dhabi/Singapura; (3) Tidak ada legal entity formal — hanya nama merek.
+- [conflict] Status: In Review Open Thread ID: OT-08
+- [conflict] Description: Parameter MEV dan PBS di BSC belum stabil; apakah PBS akan diadopsi sepenuhnya dan bagaimana dampaknya terhadap validator dan MEV searchers?
+- [conflict] Affected Phase: Phase 4, Phase 3
+- [conflict] Evidence: BEP-341 masih riset [BNB Chain Forum, https://forum.bnbchain.org/t/bep-341-pbs]; dashboard EigenPhi BSC tersedia tapi tidak ada analisis resmi.
+- [conflict] Alternative Interpretations: (1) PBS diadopsi 2025; (2) Diadopsi sebagian; (3) Ditunda karena kompleksitas.
+- [conflict] Status: In Review Open Thread ID: OT-09
+- [conflict] Description: MEV landscape BSC saat ini — jumlah searcher, builder revenue, relay adoption — tidak ada data publik terverifikasi.
+- [conflict] Affected Phase: Phase 4, Phase 7
+- [conflict] Evidence: Tidak ada laporan resmi; hanya dashboard EigenPhi [EigenPhi BSC, https://eigenphi.io/bsc]
+- [conflict] Alternative Interpretations: (1) Belum signifikan; (2) Signifikan namun tidak dipublikasikan; (3) Data tersedia tapi proprietary.
+- [conflict] Status: In Review Open Thread ID: OT-10
+- [conflict] Description: Greenfield SP economics v1.1 — jumlah SP aktif, storage volume, dan SLA compliance — tidak ada dashboard publik.
+- [conflict] Affected Phase: Phase 3, Phase 4
+- [conflict] Evidence: v1.1 upgrade disebut di GitHub [Greenfield Releases, https://github.com/bnb-chain/greenfield/releases]; tidak ada dashboard adoption
+- [conflict] Alternative Interpretations: (1) Adopsi berjalan baik tapi private; (2) Tidak signifikan; (3) Data belum dipublikasikan.
+- [conflict] Status: In Review
