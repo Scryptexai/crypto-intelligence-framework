@@ -1,0 +1,300 @@
+PROJECT: Walrus
+
+## Market Category
+
+Primary Category: Decentralized Storage (HIGH) [https://walrus.xyz/, https://github.com/MystenLabs/walrus]
+Secondary Category: Data Availability Layer (HIGH) [https://walrus.xyz/docs/, https://github.com/MystenLabs/walrus/blob/main/docs/whitepaper.md]
+Sector: DePIN (Decentralized Physical Infrastructure Networks) (HIGH) [https://walrus.xyz/, https://messari.io/project/sui]
+Sub-sector: Blob Storage / Programmable Storage (HIGH) [https://walrus.xyz/docs/, https://github.com/MystenLabs/walrus/blob/main/docs/whitepaper.md]
+Sources: https://walrus.xyz/, https://github.com/MystenLabs/walrus, https://walrus.xyz/docs/, https://github.com/MystenLabs/walrus/blob/main/docs/whitepaper.md, https://messari.io/project/sui
+
+## Market Position
+
+Project Stage: Pre-TGE / Testnet (HIGH) [https://walrus.xyz/, https://github.com/MystenLabs/walrus/blob/main/docs/testnet.md]
+Primary Competitors: Filecoin, Arweave, Storj, Sia, 0G, Celestia (data availability), EigenDA (HIGH) [https://walrus.xyz/docs/, https://filecoin.io/, https://arweave.org/, https://storj.io/, https://0g.ai/, https://celestia.org/, https://eigenlayer.xyz/eigenda]
+Market Segment: Developer-focused programmable storage for Sui ecosystem, expanding to cross-chain via Wormhole (HIGH) [https://walrus.xyz/docs/, https://walrus.xyz/blog/, https://wormhole.com/]
+Geographic Focus: Global (no geographic restriction) (HIGH) [https://walrus.xyz/, https://github.com/MystenLabs/walrus]
+Sources: https://walrus.xyz/, https://github.com/MystenLabs/walrus, https://walrus.xyz/docs/, https://github.com/MystenLabs/walrus/blob/main/docs/testnet.md, https://filecoin.io/, https://arweave.org/, https://storj.io/, https://0g.ai/, https://celestia.org/, https://eigenlayer.xyz/eigenda, https://walrus.xyz/blog/, https://wormhole.com/
+
+## Trading Markets
+
+Exchange: N/A (WAL token not yet launched)
+Spot: Not Listed
+Perpetual: Not Listed
+Futures: Not Listed
+Options: Not Listed
+OTC: Not Listed
+Status: Not Applicable — Token does not exist yet
+Sources: https://walrus.xyz/, https://coinmarketcap.com/, https://coingecko.com/, https://github.com/MystenLabs/walrus
+
+## Liquidity
+
+Liquidity Source: None (Token not launched)
+Major Liquidity Venue: N/A
+DEX: N/A
+CEX: N/A
+Bridge Liquidity: N/A
+Status: Not Applicable
+Sources: https://walrus.xyz/, https://coinmarketcap.com/, https://coingecko.com/, https://defillama.com/chain/Sui
+
+## Adoption Metrics
+
+Metric Name: Testnet Storage Nodes
+Value: ~50-100 permissioned nodes (estimated from testnet docs)
+Date: 2024 (Testnet period)
+Sources: https://github.com/MystenLabs/walrus/blob/main/docs/running-a-node.md, https://discord.gg/sui
+Evidence Level: MEDIUM (inferred from testnet documentation, no public dashboard)
+
+Metric Name: Testnet Blobs Stored
+Value: Tidak diketahui (no public metrics dashboard)
+Date: 2024
+Sources: https://walrus.xyz/docs/, https://github.com/MystenLabs/walrus
+Evidence Level: LOW (no public data)
+
+Metric Name: Daily Active Users (Testnet)
+Value: Tidak diketahui
+Date: 2024
+Sources: https://walrus.xyz/docs/, https://github.com/MystenLabs/walrus
+Evidence Level: LOW (no public data)
+
+Metric Name: Transactions (Testnet)
+Value: Tidak diketahui
+Date: 2024
+Sources: https://walrus.xyz/docs/, https://github.com/MystenLabs/walrus
+Evidence Level: LOW (no public data)
+
+Metric Name: Wallets Interacting with Walrus
+Value: Tidak diketahui
+Date: 2024
+Sources: https://walrus.xyz/docs/, https://github.com/MystenLabs/walrus
+Evidence Level: LOW (no public data)
+
+Metric Name: Developer Count (Walrus SDK downloads / GitHub stars)
+Value: ~500+ GitHub stars on walrus repo (as of 2024)
+Date: 2024
+Sources: https://github.com/MystenLabs/walrus
+Evidence Level: MEDIUM (public GitHub metric)
+
+Metric Name: Volume (Storage Fees)
+Value: $0 (Testnet uses test tokens, no real fees)
+Date: 2024
+Sources: https://walrus.xyz/docs/, https://github.com/MystenLabs/walrus/blob/main/docs/testnet.md
+Evidence Level: HIGH (testnet uses test SUI)
+
+Metric Name: Bridge Volume (Wormhole)
+Value: N/A (Integration not live)
+Date: 2024
+Sources: https://walrus.xyz/blog/, https://wormhole.com/
+Evidence Level: HIGH (announced but not deployed)
+
+Metric Name: Messages (Cross-chain)
+Value: N/A
+Date: 2024
+Sources: https://walrus.xyz/blog/, https://wormhole.com/
+Evidence Level: HIGH
+
+Metric Name: Validator Count (Storage Nodes)
+Value: ~50-100 (Testnet, permissioned)
+Date: 2024
+Sources: https://github.com/MystenLabs/walrus/blob/main/docs/running-a-node.md
+Evidence Level: MEDIUM
+
+Sources: https://walrus.xyz/, https://github.com/MystenLabs/walrus, https://walrus.xyz/docs/, https://github.com/MystenLabs/walrus/blob/main/docs/testnet.md, https://github.com/MystenLabs/walrus/blob/main/docs/running-a-node.md, https://discord.gg/sui, https://walrus.xyz/blog/, https://wormhole.com/
+
+## Market Share
+
+Tidak tersedia. (Protocol in testnet, no live mainnet, no token, no revenue, no standardized market share metrics for decentralized storage protocols)
+Sources: https://walrus.xyz/, https://github.com/MystenLabs/walrus, https://defillama.com/, https://tokenterminal.com/
+
+## Competitor Landscape
+
+Competitor: Filecoin
+Category: Decentralized Storage (Layer 1 / Storage Network)
+Difference: Filecoin uses Proof-of-Replication/Spacetime, FVM for compute; Walrus uses erasure coding + proof-of-availability on Sui, programmable via Move
+Market Segment: General-purpose decentralized storage, enterprise, NFT.Storage, Web3.storage
+Sources: https://filecoin.io/, https://walrus.xyz/docs/, https://github.com/MystenLabs/walrus/blob/main/docs/whitepaper.md
+Evidence Level: HIGH
+
+Competitor: Arweave
+Category: Decentralized Permanent Storage (Layer 1)
+Difference: Arweave focuses on permanent storage with endowment model; Walrus focuses on programmable, deletable blob storage with fee-based model
+Market Segment: Permanent data, permaweb, NFT metadata
+Sources: https://arweave.org/, https://walrus.xyz/docs/, https://github.com/MystenLabs/walrus/blob/main/docs/whitepaper.md
+Evidence Level: HIGH
+
+Competitor: Storj
+Category: Decentralized Cloud Storage (S3-compatible)
+Difference: Storj is S3-compatible, centralized satellite coordination; Walrus is native to Sui, smart-contract programmable, no S3 API
+Market Segment: Developers needing S3-compatible, backup, video streaming
+Sources: https://storj.io/, https://walrus.xyz/docs/, https://github.com/MystenLabs/walrus/blob/main/docs/whitepaper.md
+Evidence Level: HIGH
+
+Competitor: Sia / Skynet
+Category: Decentralized Storage (Layer 1)
+Difference: Sia uses host-renter contracts, Skynet provides portal layer; Walrus integrates directly with Move VM on Sui
+Market Segment: General storage, CDN via Skynet
+Sources: https://sia.tech/, https://walrus.xyz/docs/, https://github.com/MystenLabs/walrus/blob/main/docs/whitepaper.md
+Evidence Level: HIGH
+
+Competitor: 0G (ZeroGravity)
+Category: Data Availability / AI-focused Storage (Layer 1)
+Difference: 0G targets AI workloads with high throughput DA; Walrus targets general programmable storage on Sui
+Market Segment: AI data, high-throughput DA, modular blockchain
+Sources: https://0g.ai/, https://walrus.xyz/docs/, https://github.com/MystenLabs/walrus/blob/main/docs/whitepaper.md
+Evidence Level: HIGH
+
+Competitor: Celestia
+Category: Data Availability Layer (Modular Blockchain)
+Difference: Celestia provides DA for rollups via blobstream; Walrus provides programmable blob storage with on-chain logic via Move
+Market Segment: Rollup DA, sovereign chains
+Sources: https://celestia.org/, https://walrus.xyz/docs/, https://github.com/MystenLabs/walrus/blob/main/docs/whitepaper.md
+Evidence Level: HIGH
+
+Competitor: EigenDA
+Category: Data Availability Layer (EigenLayer AVS)
+Difference: EigenDA secured by ETH restaking, serves Ethereum rollups; Walrus secured by Sui validators, serves Sui + cross-chain
+Market Segment: Ethereum rollup DA
+Sources: https://eigenlayer.xyz/eigenda, https://walrus.xyz/docs/, https://github.com/MystenLabs/walrus/blob/main/docs/whitepaper.md
+Evidence Level: HIGH
+
+Sources: https://filecoin.io/, https://arweave.org/, https://storj.io/, https://sia.tech/, https://0g.ai/, https://celestia.org/, https://eigenlayer.xyz/eigenda, https://walrus.xyz/docs/, https://github.com/MystenLabs/walrus/blob/main/docs/whitepaper.md
+
+## Narrative Position
+
+Narrative: DePIN (Decentralized Physical Infrastructure Networks)
+Status: Main Narrative
+Evidence: Walrus positioned as programmable storage layer for Sui ecosystem, marketed as DePIN infrastructure
+Sources: https://walrus.xyz/, https://messari.io/project/sui, https://github.com/MystenLabs/walrus
+Evidence Level: HIGH
+
+Narrative: Modular Blockchain / Data Availability
+Status: Secondary Narrative
+Evidence: Walrus provides DA-like blob storage for Sui and cross-chain via Wormhole; compared to Celestia/EigenDA in technical discussions
+Sources: https://walrus.xyz/docs/, https://github.com/MystenLabs/walrus/blob/main/docs/whitepaper.md, https://wormhole.com/
+Evidence Level: MEDIUM
+
+Narrative: Programmable Storage / Smart Contract Storage
+Status: Main Narrative (Walrus-specific differentiation)
+Evidence: Native Move VM integration, Seal encryption, Walrus Sites, on-chain blob metadata — unique vs pure storage protocols
+Sources: https://walrus.xyz/docs/, https://github.com/MystenLabs/walrus/blob/main/docs/whitepaper.md, https://github.com/MystenLabs/seal
+Evidence Level: HIGH
+
+Narrative: Sui Ecosystem / Move Ecosystem
+Status: Main Narrative
+Evidence: Native to Sui, built by Mysten Labs, core infrastructure for Sui apps
+Sources: https://walrus.xyz/, https://sui.io/, https://www.mystenlabs.com/
+Evidence Level: HIGH
+
+Narrative: Cross-chain Interoperability (via Wormhole)
+Status: Secondary Narrative (Planned)
+Evidence: Announced Wormhole integration for cross-chain blob access
+Sources: https://walrus.xyz/blog/, https://wormhole.com/
+Evidence Level: MEDIUM
+
+Narrative: AI / Machine Learning Data Storage
+Status: Not Currently Positioned
+Evidence: No specific AI-focused marketing; 0G targets this narrative
+Sources: https://walrus.xyz/, https://0g.ai/
+Evidence Level: HIGH (by absence)
+
+Narrative: RWA (Real World Assets)
+Status: Not Currently Positioned
+Evidence: No RWA-specific positioning
+Sources: https://walrus.xyz/
+Evidence Level: HIGH (by absence)
+
+Narrative: Gaming / Metaverse Asset Storage
+Status: Secondary Narrative (Planned via SuiPlay0x1)
+Evidence: Announced integration with SuiPlay0x1 gaming handheld for game asset storage
+Sources: https://walrus.xyz/blog/, https://www.mystenlabs.com/blog/
+Evidence Level: LOW
+
+Sources: https://walrus.xyz/, https://messari.io/project/sui, https://github.com/MystenLabs/walrus, https://walrus.xyz/docs/, https://github.com/MystenLabs/walrus/blob/main/docs/whitepaper.md, https://github.com/MystenLabs/seal, https://sui.io/, https://www.mystenlabs.com/, https://wormhole.com/, https://walrus.xyz/blog/, https://0g.ai/
+
+## Market Timeline
+
+Date: 2021-12
+Milestone: Mysten Labs Series A Funding ($92M led by a16z crypto)
+Description: Capitalized core team building Sui and Walrus
+Related Historical Event ID: Mysten Labs Series A
+Sources: https://www.mystenlabs.com/blog/mysten-labs-raises-92m-series-a
+
+Date: 2022-09
+Milestone: Mysten Labs Series B Funding ($300M led by FTX Ventures)
+Description: Major capital infusion; FTX Ventures equity later complicated by bankruptcy
+Related Historical Event ID: Mysten Labs Series B
+Sources: https://www.mystenlabs.com/blog/mysten-labs-raises-300m-series-b, https://www.coindesk.com/business/2022/11/11/mysten-labs-ftx-venture-investment/
+
+Date: 2023-05
+Milestone: Sui Mainnet Launch
+Description: Sui L1 launches; Walrus development continues as storage layer
+Related Historical Event ID: Sui Mainnet Launch
+Sources: https://sui.io/blog/sui-mainnet-launches
+
+Date: 2024 (Q2-Q3)
+Milestone: Walrus Testnet Launch
+Description: Permissioned testnet with ~50-100 storage nodes, Walrus Sites, Seal encryption, TypeScript SDK
+Related Historical Event ID: Walrus Testnet Launch
+Sources: https://walrus.xyz/docs/, https://github.com/MystenLabs/walrus/blob/main/docs/testnet.md, https://github.com/MystenLabs/walrus
+
+Date: 2024
+Milestone: Wormhole Integration Announced
+Description: Partnership announced for cross-chain blob storage access
+Related Historical Event ID: Wormhole Partnership Announcement
+Sources: https://walrus.xyz/blog/, https://wormhole.com/blog/
+
+Date: 2024
+Milestone: Akord Integration Live on Testnet
+Description: Akord vault app uses Walrus as storage backend
+Related Historical Event ID: Akord Integration
+Sources: https://akord.com/, https://walrus.xyz/blog/
+
+Date: 2024
+Milestone: Decrypt Media Pilot
+Description: Decrypt Media archives content on Walrus Sites testnet
+Related Historical Event ID: Decrypt Media Pilot
+Sources: https://walrus.xyz/blog/, https://decrypt.co/
+
+Date: 2024-2025 (Projected)
+Milestone: Walrus Mainnet Launch / WAL TGE
+Description: Not yet occurred; no official date announced
+Related Historical Event ID: N/A (Future)
+Sources: https://walrus.xyz/, https://github.com/MystenLabs/walrus
+
+Sources: https://www.mystenlabs.com/blog/mysten-labs-raises-92m-series-a, https://www.mystenlabs.com/blog/mysten-labs-raises-300m-series-b, https://www.coindesk.com/business/2022/11/11/mysten-labs-ftx-venture-investment/, https://sui.io/blog/sui-mainnet-launches, https://walrus.xyz/docs/, https://github.com/MystenLabs/walrus/blob/main/docs/testnet.md, https://github.com/MystenLabs/walrus, https://walrus.xyz/blog/, https://wormhole.com/blog/, https://akord.com/, https://decrypt.co/, https://walrus.xyz/
+
+## Official Market Resources
+
+Official Dashboard: https://walrus.xyz/ (No live metrics dashboard)
+DefiLlama: https://defillama.com/chain/Sui (Sui ecosystem page, no Walrus-specific)
+CoinGecko: https://www.coingecko.com/ (No WAL token page)
+CoinMarketCap: https://coinmarketcap.com/ (No WAL token page)
+Token Terminal: https://tokenterminal.com/terminal/projects/sui (Sui only)
+Messari: https://messari.io/project/sui (Sui report covers Walrus as ecosystem project)
+Explorer: https://suivision.xyz/ (Sui explorer, includes Walrus testnet activity), https://walruscan.com/ (Planned, not live)
+
+## BUAT RINGKASAN
+
+Market Stage: Pre-TGE / Testnet
+Primary Category: Decentralized Storage / Data Availability Layer
+Competitor Count: 7 major direct competitors identified (Filecoin, Arweave, Storj, Sia, 0G, Celestia, EigenDA)
+Major Narrative: DePIN, Programmable Storage, Sui Ecosystem, Modular DA
+Trading Availability: None (Token not launched)
+Adoption Metrics Available: Minimal (GitHub stars ~500+, testnet node count estimated 50-100, no public user/volume dashboards)
+
+## Open Threads
+
+- Exact Walrus testnet storage node count and operator identities — not publicly enumerated; testnet is permissioned
+- Walrus testnet blob count, storage volume, bandwidth metrics — no public dashboard or transparency report
+- WAL token TGE date, initial circulating supply, launch mechanism (auction, LBP, public sale, airdrop) — no official announcement
+- Walrus mainnet launch date — not announced; dependent on testnet hardening and Sui governance
+- Wormhole integration technical specs, launch timeline, and whether WAL token needed for cross-chain fees — only announcement, no docs
+- Walrus Foundation legal formation, jurisdiction, initial treasury allocation — announced as planned, no public filing
+- FTX Ventures equity status in Mysten Labs post-bankruptcy — conflicting reports, no official settlement disclosure
+- Sui Foundation grant recipients specifically building on Walrus — no public dashboard filtering for Walrus-specific grants
+- Competitor benchmark: Walrus vs Filecoin/Arweave/0G on cost-per-GB, retrieval latency, durability guarantees — no independent third-party benchmarks published
+- Walrus Sites custom domain support (non-SNS) status and timeline — docs mention planned, no details
+- Audit reports for Walrus core protocol, Seal threshold encryption, Wormhole bridge contracts — not publicly released
+- Market size addressable: Developer demand for programmable storage on Sui vs general-purpose storage — no TAM/SAM analysis published
+- Whether Walrus will have native token incentives for storage nodes at mainnet launch (WAL staking, slashing) — tokenomics doc references but no final params
+- Exchange listing discussions / market maker arrangements for WAL — no public info

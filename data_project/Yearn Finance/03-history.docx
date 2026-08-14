@@ -1,0 +1,75 @@
+PROJECT: Yearn Finance
+
+
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance history timeline founding 2020 Andre Cronje iEarn yEarn launch",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance YFI token launch July 2020 fair launch distribution",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance vaults v1 v2 v3 launch dates yVaults strategies",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance governance YIP proposals voting snapshot history",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance exploits hacks 2021 2022 2023 2024 Eminence hack",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance partnerships integrations Curve Convex Aave Iron Bank",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance multisig signers governance changes yTeams formation",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance expansion Fantom Arbitrum Optimism Base Polygon deployment dates",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance audits Trail of Bits Certora PeckShield Quantstamp results",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance Treasury DAO funding grants yBudget",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance legal entity Cayman Foundation Yearn Foundation formation",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance Andre Cronje departure return 2022 2023",
+  "top_k": 10
+}

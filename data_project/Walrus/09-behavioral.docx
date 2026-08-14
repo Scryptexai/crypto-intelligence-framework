@@ -1,0 +1,351 @@
+PROJECT: Walrus
+
+Strategic Objectives
+
+1. Menjadi lapisan penyimpanan terprogram native untuk ekosistem Sui
+· Evidence: Walrus dirancang sebagai "programmable storage layer" yang terintegrasi native dengan Move VM di Sui, memungkinkan smart contract berinteraksi langsung dengan blob storage on-chain (Walrus Sites, Seal encryption, on-chain metadata)
+· Supporting Dataset: Phase 1 Foundation, Phase 4 Technology (Move VM integration, Seal, Walrus Sites), Phase 7 Ecosystem (Sui Native Integration live testnet)
+
+2. Mendiferensiasi dari penyimpanan terdesentralisasi lain melalui programmability dan integrasi Move
+· Evidence: Whitepaper dan dokumentasi menonjokkan "programmable storage" sebagai diferensiasi utama vs Filecoin/Arweave/Storj yang lebih generic; fitur Seal (threshold encryption), Walrus Sites, dan direct Move VM calls tidak ada di kompetitor
+· Supporting Dataset: Phase 4 Technology (whitepaper, Seal integration), Phase 8 Market (Competitor Landscape, Narrative Position)
+
+3. Ekspansi cross-chain melalui Wormhole untuk menjangkau developer non-Sui
+· Evidence: Partnership Wormhole diumumkan 2024 untuk cross-chain blob access; Walrus tidak terbatas pada Sui saja tapi menargetkan multi-chain DA/storage market
+· Supporting Dataset: Phase 2 Entity (Wormhole dependency), Phase 3 History (Wormhole announcement 2024), Phase 7 Ecosystem (Wormhole integration planned), Phase 8 Market (Cross-chain narrative secondary)
+
+4. Desentralisasi progresif dari testnet permissioned ke mainnet permissionless dengan governance DAO
+· Evidence: Testnet saat ini permissioned (~50-100 nodes oleh Mysten Labs + komunitas); roadmap menyebutkan Walrus Foundation/DAO untuk governance, parameter upgrades, treasury management; validator set mainnet direncanakan permissionless
+· Supporting Dataset: Phase 2 Entity (Walrus Foundation planned, DAO planned), Phase 3 History (Testnet launch 2024 permissioned), Phase 7 Ecosystem (Validator group testnet permissioned, mainnet planned permissionless, Governance ecosystem)
+
+5. Monetisasi melalui fee-based model (storage + retrieval) dengan token WAL untuk staking/governance
+· Evidence: Revenue model planned: blob storage fees, retrieval fees, validator rewards; WAL token untuk governance, staking, fee payment; tokenomics doc referenced tapi belum final/public
+· Supporting Dataset: Phase 5 Financial (Revenue Model planned), Phase 6 Token (WAL utility planned), Phase 8 Market (Market Timeline projected mainnet/TGE)
+
+Decision Timeline
+
+Keputusan: Mysten Labs mendirikan Walrus sebagai protocol storage terpisah dari Sui core (2021-2022)
+· Trigger: Kebutuhan lapisan storage terprogram untuk aplikasi Sui yang tidak terpenuhi oleh existing solutions (Filecoin/Arweave tidak native ke Move/Sui)
+· Evidence: Mysten Labs Series A (Dec 2021) dan Series B (Sep 2022) funding untuk membangun Sui + ecosystem infrastructure termasuk Walrus
+· Decision: Membangun Walrus sebagai protocol terpisah di atas Sui consensus, bukan sebagai fitur built-in Sui
+· Immediate Result: Tim terdedikasi Walrus, whitepaper, arsitektur erasure coding + proof-of-availability
+· Long-term Impact: Walrus menjadi core infrastructure Sui ecosystem; memungkinkan Walrus Sites, Seal, programmable storage
+· Supporting Dataset: Phase 3 History (Mysten Labs Series A 2021-12, Series B 2022-09), Phase 4 Technology (Architecture), Phase 1 Foundation
+
+Keputusan: Memilih arsitektur erasure coding + proof-of-availability di atas Sui consensus (bukan Proof-of-Replication seperti Filecoin atau endowment seperti Arweave)
+· Trigger: Kebutuhan throughput tinggi, deletable storage, dan integrasi native Move VM
+· Evidence: Whitepaper Walrus menjelaskan desain erasure coding (Red Stuff) + proof-of-availability (Blue Stuff) yang berbeda dari Filecoin/Arweave
+· Decision: Arsitektur 2-layer: Red Stuff (encoding/distribution) + Blue Stuff (availability proofs via Sui consensus)
+· Immediate Result: Testnet live 2024 dengan ~50-100 storage nodes, Walrus Sites, Seal encryption
+· Long-term Impact: Diferensiasi teknis vs kompetitor; trade-off: dependency pada Sui validator set untuk consensus
+· Supporting Dataset: Phase 4 Technology (Architecture, Consensus, Whitepaper), Phase 8 Market (Competitor Landscape)
+
+Keputusan: Launch testnet permissioned terlebih dahulu sebelum mainnet permissionless (2024 Q2-Q3)
+· Trigger: Kebutuhan hardening protocol, testing economics, validator operations sebelum permissionless
+· Evidence: Testnet docs menunjukkan permissioned validator set, test SUI tokens, no real fees; Mysten Labs mengoperasikan mayoritas infrastructure
+· Decision: Testnet permissioned ~6-12 bulan sebelum mainnet; community validators diundang tapi curated
+· Immediate Result: Akord, Decrypt Media, Seal integration live di testnet; developer feedback loop
+· Long-term Impact: Mengurangi risiko mainnet launch; tapi menunda desentralisasi nyata dan token launch
+· Supporting Dataset: Phase 3 History (Walrus Testnet Launch 2024), Phase 7 Ecosystem (Infrastructure Providers, Validator Group), Phase 5 Financial (No live revenue)
+
+Keputusan: Partnership Wormhole untuk cross-chain bukan bridge custom atau IBC (2024)
+· Trigger: Kebutuhan akses cross-chain cepat tanpa membangun bridge infrastructure sendiri
+· Evidence: Wormhole announcement blog 2024; Wormhole NTT/Gateway digunakan; bukan IBC (Sui tidak native IBC) atau LayerZero
+· Decision: Integrasi Wormhole untuk cross-chain blob access dan messaging
+· Immediate Result: Announcement saja, belum live; technical specs tidak dipublikasikan
+· Long-term Impact: Dependency pada Wormhole security; memperluas TAM ke non-Sui chains; risiko bridge exploit
+· Supporting Dataset: Phase 2 Entity (Wormhole dependency), Phase 3 History (Wormhole announcement 2024), Phase 7 Ecosystem (Wormhole integration planned), Phase 8 Market (Cross-chain narrative)
+
+Keputusan: Tidak meluncurkan token WAL bersamaan dengan testnet; menunggu mainnet readiness (2024-sekarang)
+· Trigger: Hindari token launch prematur tanpa utility nyata, regulatory clarity, dan mainnet economics teruji
+· Evidence: Tidak ada WAL token di testnet (menggunakan test SUI); tokenomics doc referenced tapi tidak public; tidak ada TGE date announcement
+· Decision: Delay token launch hingga mainnet; testnet menggunakan test tokens
+· Immediate Result: Tidak ada speculative trading, fokus pada product-market fit; tapi tidak ada incentive mechanism untuk storage nodes nyata
+· Long-term Impact: Tokenomics design space lebih luas; risiko community impatience; competitor (0G, Celestia) sudah launch token
+· Supporting Dataset: Phase 5 Financial (Token Sale: not announced), Phase 6 Token (WAL not launched), Phase 8 Market (Trading Markets: N/A)
+
+Keputusan: Bergantung sepenuhnya pada treasury Mysten Labs tanpa treasury Walrus terpisah/transparan (2021-sekarang)
+· Trigger: Walrus adalah produk internal Mysten Labs, bukan entity legal terpisah awalnya
+· Evidence: Tidak ada transparency report Walrus; semua funding via Mysten Labs rounds; FTX Ventures equity di Mysten Labs bukan Walrus langsung
+· Decision: Operasional Walrus difunding dari treasury Mysten Labs ($428M total raised)
+· Immediate Result: Capital cukup untuk development panjang; tidak perlu token sale awal
+· Long-term Impact: Ketidaktransparan allocation Walrus-specific; FTX exposure risk; DAO formation kompleks (harus carve-out dari Mysten Labs)
+· Supporting Dataset: Phase 5 Financial (Funding History, Treasury, Financial Dependencies, Financial Risk), Phase 2 Entity (Mysten Labs, FTX Ventures)
+
+Evolution Pattern
+
+Perubahan Strategi: Dari "Sui storage layer" → "Cross-chain programmable storage platform"
+· Evidence: Awalnya positioning fokus Sui ecosystem (Phase 1, 3 Sui mainnet 2023 → Walrus testnet 2024); kemudian announcement Wormhole 2024 untuk cross-chain; narrative "Modular DA" ditambahkan (Phase 8 Market Narrative Position)
+· Supporting Dataset: Phase 1 Foundation, Phase 3 History (Sui Mainnet 2023-05, Walrus Testnet 2024, Wormhole 2024), Phase 8 Market (Narrative Position: DePIN primary, Modular DA secondary)
+
+Perubahan Teknologi: Dari core protocol → ecosystem integrations (Seal, SNS, Walrus Sites, Akord)
+· Evidence: Phase 4 Technology menunjukkan core protocol (erasure coding, PoA); Phase 7 Ecosystem menunjukkan integrations berlipat: Seal (encryption), SNS (naming), Walrus Sites (hosting), Akord (vault app), Decrypt (media) — semuanya dibangun di atas core protocol
+· Supporting Dataset: Phase 4 Technology (Seal integration, Walrus Sites), Phase 7 Ecosystem (Major Integrations, Applications)
+
+Perubahan Tokenomics: Dari tidak ada token → planned WAL token dengan governance + staking + fee utility
+· Evidence: Phase 6 Token menunjukkan WAL belum launched, tidak ada detail supply/vesting; Phase 5 Financial Revenue Model planned fee-based; Phase 2 Entity Walrus Foundation planned untuk governance
+· Supporting Dataset: Phase 5 Financial (Revenue Model, Fundraising Mechanism), Phase 6 Token (all sections), Phase 2 Entity (Walrus Foundation planned)
+
+Perubahan Governance: Dari centralized (Mysten Labs) → planned DAO/Foundation
+· Evidence: Phase 2 Entity: Mysten Labs current steward, Walrus Foundation planned, DAO planned; Phase 7 Governance Ecosystem: Sui validators indirectly govern via Sui governance; Testnet committee Mysten Labs + selected validators
+· Supporting Dataset: Phase 2 Entity (Foundation, DAO), Phase 3 History (Testnet launch permissioned), Phase 7 Ecosystem (Governance Ecosystem)
+
+Perubahan Funding: Dari VC-funded (Mysten Labs) → protocol revenue + future token treasury
+· Evidence: Phase 5 Financial: $428M via Mysten Labs VC rounds; Revenue Model planned tapi $0 actual; Fundraising Mechanism: VC via parent, grants via Sui Foundation, future DAO treasury
+· Supporting Dataset: Phase 5 Financial (Funding History, Revenue Model, Fundraising Mechanism, Financial Dependencies)
+
+Technical Decision Pattern
+
+Pola 1: Native Sui/Move Integration First
+· Decision Pattern: Semua fitur core (Walrus Sites, Seal encryption, blob metadata, programmable access) dibangun native pada Move VM dan Sui consensus, bukan sebagai layer terpisah dengan bridge
+· Evidence: Walrus Sites menggunakan Sui objects untuk metadata; Seal menggunakan Sui threshold encryption; blob references on-chain; TypeScript SDK wraps Sui transactions
+· Supporting Dataset: Phase 4 Technology (Architecture, Move VM, Seal), Phase 7 Ecosystem (Sui Native Integration live, Seal integration live, Walrus Sites core app)
+
+Pola 2: Erasure Coding + Proof-of-Availability sebagai Konsensus Storage (bukan PoRep/PoSt)
+· Decision Pattern: Memilih Red Stuff (erasure coding distribution) + Blue Stuff (availability proofs via Sui consensus) alih-alih Filecoin PoRep/PoSt atau Arweave endowment
+· Evidence: Whitepaper Walrus menjelaskan 2-layer design; proof-of-availability leverages Sui validator set yang sudah ada; erasure coding untuk durability + deletability
+· Supporting Dataset: Phase 4 Technology (Architecture, Consensus, Whitepaper), Phase 8 Market (Competitor Landscape: Filecoin PoRep, Arweave endowment)
+
+Pola 3: Testnet Permissioned untuk Hardening Sebelum Permissionless
+· Decision Pattern: Mengoperasikan testnet dengan validator set curated (~50-100 nodes, Mysten Labs + invited community) selama 6-12+ bulan sebelum mainnet permissionless
+· Evidence: Testnet docs menunjukkan permissioned; Mysten Labs operate majority infrastructure; community validators need approval; no public permissionless registration yet
+· Supporting Dataset: Phase 3 History (Testnet Launch 2024), Phase 7 Ecosystem (Validator Group testnet permissioned, Infrastructure Providers Mysten Labs critical)
+
+Pola 4: Modular Architecture dengan Integrasi Eksternal untuk Fitur Non-Core
+· Decision Pattern: Core protocol fokus pada blob storage + availability; encryption (Seal), naming (SNS), cross-chain (Wormhole), hosting (Sites) diimplementasikan sebagai integrasi/modular layer
+· Evidence: Seal adalah protocol terpisah (MystenLabs/seal repo); SNS external; Wormhole external; Walrus Sites built on top of blob primitives
+· Supporting Dataset: Phase 4 Technology (Seal integration), Phase 7 Ecosystem (Major Integrations: Seal, SNS, Wormhole, Walrus Sites), Phase 2 Entity (Seal, SNS, Wormhole as dependencies)
+
+Pola 5: TypeScript/Rust SDK + HTTP API untuk Developer Experience
+· Decision Pattern: Menyediakan SDK tingkat tinggi (TS/Rust) dan HTTP API sederhana (blob store/read/delete/sites) alih-alih hanya low-level Move calls
+· Evidence: GitHub repo memiliki walrus-sdk (TS), walrus CLI, HTTP API docs; Walrus Sites CLI terpisah; Akord menggunakan SDK
+· Supporting Dataset: Phase 4 Technology (Programming Languages Rust/TypeScript), Phase 7 Ecosystem (Developer Ecosystem: TS SDK, HTTP API, CLI, Sites CLI)
+
+Financial Decision Pattern
+
+Pola 1: Pendanaan Via Parent Company (Mysten Labs) Tanpa Ronde Terpisah
+· Decision Pattern: Seluruh capital ($428M: $36M Seed + $92M Series A + $300M Series B) di-raise di level Mysten Labs; tidak ada funding round khusus Walrus
+· Evidence: Phase 5 Funding History menunjukkan 3 rounds semua Mysten Labs; a16z lead Seed+Series A; FTX Ventures lead Series B; Walrus-specific funding "tidak diungkap"
+· Supporting Dataset: Phase 5 Financial (Funding History, Fundraising Mechanism), Phase 2 Entity (Mysten Labs, a16z crypto, FTX Ventures), Phase 3 History (Series A 2021-12, Series B 2022-09)
+
+Pola 2: Tidak Ada Treasury Transparan Terpisah untuk Walrus
+· Decision Pattern: Tidak mempublikasikan treasury dashboard, transparency report, atau allocation breakdown khusus Walrus; semua financial reporting di level Mysten Labs/Sui Foundation
+· Evidence: Phase 5 Treasury: "Tidak diungkap" untuk semua field; Transparency Report: "Tidak tersedia"; Treasury Dashboard: "Tidak tersedia"
+· Supporting Dataset: Phase 5 Financial (Treasury, Official Financial Resources), Phase 2 Entity (Mysten Labs, Sui Foundation)
+
+Pola 3: Revenue Model Fee-Based (Storage + Retrieval) + Validator Rewards, Belum Live
+· Decision Pattern: Merancang economics berbasis fee (blob write, read, validator rewards) mirip cloud storage tapi decentralized; token WAL untuk fee payment dan staking; semua masih planned
+· Evidence: Phase 5 Revenue Model: Blob Storage Fees, Retrieval Fees, Validator Rewards — semua "Planned"; Phase 6 Token: WAL utility planned untuk fee/governance/staking
+· Supporting Dataset: Phase 5 Financial (Revenue Model), Phase 6 Token (Utility, Governance), Phase 8 Market (Adoption Metrics: Volume $0 testnet)
+
+Pola 4: Dependency Finansial pada VC Backers dengan Risiko FTX
+· Decision Pattern: Financial dependency tertuju pada a16z (lead Seed+A) dan FTX Ventures (lead B $300M); status FTX equity uncertain pasca-bankruptcy; tidak ada diversifikasi funding source lain
+· Evidence: Phase 5 Financial Dependencies: a16z crypto (Medium, Live), FTX Ventures (Medium, Uncertain); Financial Risk: FTX Ventures Exposure HIGH; Fundraising Mechanism: VC only, no public sale, no grants direct to Walrus
+· Supporting Dataset: Phase 5 Financial (Financial Dependencies, Financial Risk, Fundraising Mechanism), Phase 2 Entity (a16z crypto, FTX Ventures), Phase 3 History (Series B 2022-09 FTX lead)
+
+Pola 5: Grant Ecosystem Via Sui Foundation, Bukan Direct Walrus Grants
+· Decision Pattern: Menggunakan Sui Foundation grants untuk ecosystem builders di atas Walrus; tidak ada grant program Walrus-specific; Mysten Labs Builder Grants umum
+· Evidence: Phase 5 Fundraising Mechanism: Grant "Ya (Sui Foundation ecosystem grants untuk builders di atas Walrus/Sui)"; Phase 7 Developer Ecosystem: Grant Program Sui Foundation Grants + Mysten Labs Builder Grants
+· Supporting Dataset: Phase 5 Financial (Fundraising Mechanism), Phase 7 Ecosystem (Developer Ecosystem), Phase 2 Entity (Sui Foundation)
+
+Ecosystem Decision Pattern
+
+Pola 1: Deep Integration dengan Sui Ecosystem Sebagai Primary Moat
+· Decision Pattern: Semua core features (Walrus Sites, Seal, blob metadata, programmable access) memerlukan Sui; tidak ada standalone version; Sui validator set menjalankan storage nodes
+· Evidence: Phase 7 Primary Chain: Sui (Critical); External Dependencies: Sui Blockchain (Critical); Major Integrations: Sui Native Integration (Live Testnet); Infrastructure: Mysten Labs operators; Wallets: semua Sui wallets
+· Supporting Dataset: Phase 7 Ecosystem (Primary Chain, External Dependencies, Major Integrations, Infrastructure Providers, Wallet Ecosystem), Phase 4 Technology (Move VM, Sui Consensus)
+
+Pola 2: Cross-Chain Expansion Via Wormhole (Single Bridge Partner)
+· Decision Pattern: Memilih satu bridge partner (Wormhole) untuk cross-chain alih-alih multi-bridge atau custom; announcement 2024 tapi technical specs belum public
+· Evidence: Phase 7 External Dependencies: Wormhole (High, Planned); Major Integrations: Wormhole Cross-Chain (Planned); Phase 8 Narrative: Cross-chain secondary; Supported Chains: Sui native, others via Wormhole planned
+· Supporting Dataset: Phase 7 Ecosystem (External Dependencies, Major Integrations, Supported Chains), Phase 2 Entity (Wormhole), Phase 3 History (Wormhole announcement 2024), Phase 8 Market (Narrative Position)
+
+Pola 3: Early Ecosystem Partnerships dengan Application Builders (Akord, Decrypt)
+· Decision Pattern: Mengintegrasikan aplikasi real (Akord vault, Decrypt media archive) di testnet untuk validasi product-market fit sebelum mainnet
+· Evidence: Phase 7 Major Integrations: Akord (Live Testnet), Decrypt Media (Beta); Applications: Akord (Built on Walrus), Decrypt Media Archive (Pilot)
+· Supporting Dataset: Phase 7 Ecosystem (Major Integrations, Applications), Phase 3 History (Akord integration 2024, Decrypt pilot 2024)
+
+Pola 4: Infrastructure Dependency pada Cloud Providers + Mysten Labs Ops
+· Decision Pattern: Testnet infrastructure berjalan pada GCP/AWS/Azure via Mysten Labs; community validators belum dominant; Shinami/Ankr untuk RPC/indexer
+· Evidence: Phase 7 Infrastructure Providers: Mysten Labs (Critical), Community Validators (High), Shinami (Medium), Ankr (Medium), GCP (Medium); External Dependencies: Cloud Providers (Medium)
+· Supporting Dataset: Phase 7 Ecosystem (Infrastructure Providers, External Dependencies), Phase 4 Technology (Tech Stack Docker/Kubernetes implied)
+
+Pola 5: Developer-First dengan SDK/CLI/HTTP API Lengkap
+· Decision Pattern: Menginvestasi heavy pada developer tooling (TS SDK, Rust SDK, CLI, Sites CLI, HTTP API) sebelum mainnet; hackathons (Sui Overflow) dan grants untuk adoption
+· Evidence: Phase 7 Developer Ecosystem: Walrus TS SDK, HTTP API, CLI, Sites CLI, Sui Foundation Grants, Mysten Labs Builder Grants, Sui Overflow Hackathons; GitHub stars ~500+
+· Supporting Dataset: Phase 7 Ecosystem (Developer Ecosystem), Phase 4 Technology (Programming Languages), Phase 8 Market (Adoption Metrics: GitHub stars)
+
+Governance Decision Pattern
+
+Pola 1: Centralized Stewardship oleh Mysten Labs Selama Testnet
+· Decision Pattern: Semua keputusan protocol (upgrades, parameters, validator set, roadmap) dikendalikan Mysten Labs; testnet committee = Mysten Labs + selected validators
+· Evidence: Phase 7 Governance Ecosystem: Foundation Mysten Labs (Role: Core developer, testnet operator, initial governance steward); Committee: Walrus Testnet Committee (Mysten Labs + selected community validators); DAO: Walrus Foundation (Planned, Not Yet Formed)
+· Supporting Dataset: Phase 7 Ecosystem (Governance Ecosystem), Phase 3 History (Testnet Launch 2024 permissioned), Phase 2 Entity (Mysten Labs, Walrus Foundation planned)
+
+Pola 2: Indirect Governance Via Sui Validators dan Sui Foundation
+· Decision Pattern: Sui governance (validator voting) mempengaruhi Walrus karena consensus dependency; Sui Foundation grants mempengaruhi ecosystem direction
+· Evidence: Phase 7 Governance: Council: Sui Validators (indirectly govern Walrus via Sui governance); Foundation: Sui Foundation (ecosystem grants, validator delegation); External Dependencies: Sui Foundation (High)
+· Supporting Dataset: Phase 7 Ecosystem (Governance Ecosystem, External Dependencies), Phase 2 Entity (Sui Foundation), Phase 4 Technology (Sui Consensus dependency)
+
+Pola 3: Planned DAO/Foundation Transition Tanpa Timeline Konkrit
+· Decision Pattern: Roadmap menyebutkan Walrus Foundation dan DAO untuk governance, treasury, parameter control; tapi tidak ada legal formation announcement, jurisdiction, atau timeline
+· Evidence: Phase 2 Entity: Walrus Foundation (Planned), DAO (Planned); Phase 5 Financial Dependencies: Future Walrus DAO/Foundation (Planned); Phase 7 Governance: DAO Walrus Foundation (Planned, Not Yet Formed); Phase 8 Open Threads: "Walrus Foundation legal formation status... announced as planned, no public filing"
+· Supporting Dataset: Phase 2 Entity (Foundation, DAO), Phase 5 Financial (Financial Dependencies), Phase 7 Ecosystem (Governance Ecosystem), Phase 8 Market (Open Threads)
+
+Pola 4: Token-Gated Governance Direncanakan (WAL) Tapi Token Belum Ada
+· Decision Pattern: Governance design mengasumsikan WAL token untuk voting, staking, parameter control; tapi token launch delayed hingga mainnet; governance vacuum saat ini
+· Evidence: Phase 6 Token: Governance planned, WAL not launched; Phase 5 Fundraising Mechanism: DAO Treasury "Belum terbentuk"; Phase 8 Trading Markets: N/A token not launched
+· Supporting Dataset: Phase 6 Token (all sections), Phase 5 Financial (Fundraising Mechanism, Revenue Model), Phase 8 Market (Trading Markets)
+
+Risk Response Pattern
+
+Pola 1: Technical Risk Mitigation Via Extended Permissioned Testnet
+· Trigger: Kompleksitas protocol baru (erasure coding + PoA + Move integration) memerlukan hardening sebelum permissionless
+· Response: Menjalankan testnet permissioned 6-12+ bulan dengan curated validator set; Mysten Labs operate infrastructure; iterasi cepat berdasarkan feedback
+· Evidence: Testnet permissioned design; Mysten Labs critical infrastructure provider; Akord/Decrypt/Seal integrations sebagai validation; no mainnet date announced
+· Result: Protocol teruji dengan real applications (Akord, Decrypt, Seal) sebelum mainnet; bug/performance issues ditemukan di testnet
+· Supporting Dataset: Phase 3 History (Testnet Launch 2024), Phase 7 Ecosystem (Validator Group testnet permissioned, Infrastructure Providers, Major Integrations), Phase 4 Technology (Technical Limitations: centralized testnet)
+
+Pola 2: Financial Risk (FTX Exposure) — Tidak Ada Respons Publik Transparan
+· Trigger: FTX Ventures lead Series B $300M (Sep 2022); FTX bankruptcy Nov 2022; potential clawback/equity uncertainty
+· Response: Tidak ada official statement tentang status equity FTX di Mysten Labs post-bankruptcy; operasi lanjut normal dengan treasury Series B
+· Evidence: Phase 5 Financial Risk: FTX Ventures Exposure HIGH; Financial Dependencies: FTX Ventures status Uncertain; Phase 3 History: Series B 2022-09, Coindesk article Nov 2022; Phase 8 Open Threads: "Status of FTX Ventures equity... conflicting reports, no official settlement disclosure"
+· Result: Ketidakpastian tetap; investor/community tidak memiliki clarity; Mysten Labs terus operate dengan capital existing
+· Supporting Dataset: Phase 5 Financial (Financial Risk, Financial Dependencies), Phase 3 History (Series B, Coindesk article), Phase 8 Market (Open Threads)
+
+Pola 3: Single-Chain Dependency Risk — Mitigasi Via Wormhole Cross-Chain (Planned)
+· Trigger: Walrus fully dependent pada Sui consensus/validator set; Sui failure = Walrus failure
+· Response: Announcement partnership Wormhole untuk cross-chain access; memungkinkan non-Sui chains menggunakan Walrus storage
+· Evidence: Phase 7 External Dependencies: Sui Blockchain (Critical), Wormhole (High, Planned); Phase 8 Market: Narrative Cross-chain secondary, Risk: Single Chain Dependency HIGH; Phase 3 History: Wormhole announcement 2024
+· Result: Mitigasi masih planned, belum live; technical specs tidak public; Wormhole sendiri punya bridge risk
+· Supporting Dataset: Phase 7 Ecosystem (External Dependencies, Major Integrations), Phase 8 Market (Narrative Position, Competitor Landscape, Open Threads)
+
+Pola 4: Centralization Risk (Testnet) — Mitigasi Via Community Validator Onboarding (Gradual)
+· Trigger: Testnet validators permissioned, Mysten Labs dominant; tidak representative of mainnet decentralization
+· Response: Membuka aplikasi community validators (curated); dokumentasi running-a-node public; target mainnet permissionless
+· Evidence: Phase 7 Validator Group: Testnet permissioned, Mainnet planned permissionless; Infrastructure Providers: Community Validators High; External Dependencies: Cloud Providers Medium; Phase 4 Technical Limitations: Centralized testnet operation HIGH
+· Result: Beberapa community validators join testnet; tapi Mysten Labs masih majority operator; mainnet decentralization unproven
+· Supporting Dataset: Phase 7 Ecosystem (Validator Group, Infrastructure Providers, External Dependencies), Phase 4 Technology (Technical Limitations)
+
+Pola 5: Token Launch Regulatory/Market Risk — Delay Token Launch Hingga Mainnet Ready
+· Trigger: Regulatory uncertainty (US SEC actions pada crypto tokens); competitor token launches (0G, Celestia, EigenDA); need real utility untuk WAL
+· Response: Tidak launch token di testnet; menggunakan test SUI; menunggu mainnet readiness, regulatory clarity, product-market fit terbukti
+· Evidence: Phase 6 Token: WAL not launched; Phase 5 Token Sale: all not announced; Phase 8 Trading Markets: N/A; Phase 3 History: Testnet 2024 no token, Mainnet/TGE projected 2024-2025 not announced
+· Result: Avoid regulatory exposure early; tapi kehilangan momentum vs competitor yang sudah launch token; community incentive mechanism absent
+· Supporting Dataset: Phase 6 Token (all), Phase 5 Financial (Token Sale), Phase 8 Market (Trading Markets, Market Timeline), Phase 8 Competitor Landscape (0G, Celestia, EigenDA have tokens)
+
+Recurring Behavioral Pattern
+
+Pola 1: Build Core Protocol First, Ecosystem Integrations Second
+· Evidence: Phase 3-4: Core protocol (erasure coding, PoA, Move integration) developed 2022-2024; Phase 7: Integrations (Seal, SNS, Wormhole, Akord, Decrypt) announced/built 2024 setelah testnet live; Phase 8: Narrative "Programmable Storage" primary setelah core ready
+· Supporting Dataset: Phase 3 History (Timeline), Phase 4 Technology (Architecture), Phase 7 Ecosystem (Major Integrations timeline), Phase 8 Market (Narrative Position)
+
+Pola 2: Leverage Parent Company (Mysten Labs) Resources untuk Semua Hal Operasional
+· Evidence: Funding via Mysten Labs rounds (Phase 5); Infrastructure operated by Mysten Labs (Phase 7); Testnet committee led by Mysten Labs (Phase 7); Legal/entity via Mysten Labs (Phase 2); Grants via Mysten Labs Builder Grants (Phase 7); No independent ops
+· Supporting Dataset: Phase 2 Entity (Mysten Labs), Phase 3 History (Funding rounds), Phase 5 Financial (Funding, Dependencies), Phase 7 Ecosystem (Infrastructure, Governance, Developer Ecosystem)
+
+Pola 3: Announce Partnerships Early, Technical Details Later
+· Evidence: Wormhole announced 2024 tapi technical specs belum public (Phase 3, 7); SNS integration beta tapi custom domain support "planned no timeline" (Phase 8 Open Threads); Akord/Decrypt announced sebagai integrations tapi volume metrics tidak public (Phase 8 Adoption Metrics)
+· Supporting Dataset: Phase 3 History (Wormhole announcement), Phase 7 Ecosystem (Major Integrations), Phase 8 Market (Open Threads, Adoption Metrics)
+
+Pola 4: Delay Decentralization/Governance/Token Milestones Tanpa Hard Deadline
+· Evidence: Walrus Foundation/DAO "planned" sejak awal tapi no formation (Phase 2, 5, 7); Mainnet/TGE "projected 2024-2025" tapi tidak announced (Phase 3, 8); Permissionless validator set "planned" tapi testnet masih permissioned (Phase 7); Tokenomics doc referenced tapi tidak public (Phase 5, 6)
+· Supporting Dataset: Phase 2 Entity (Foundation, DAO), Phase 3 History (Market Timeline), Phase 5 Financial (Dependencies), Phase 6 Token (all), Phase 7 Ecosystem (Governance, Validator Group), Phase 8 Market (Market Timeline, Open Threads)
+
+Pola 5: Transparansi Minimal pada Metriks Adopsi dan Financials
+· Evidence: Tidak ada public dashboard untuk testnet blobs, users, volume (Phase 8 Adoption Metrics: mostly "Tidak diketahui"); Treasury tidak transparan (Phase 5); Tokenomics tidak public (Phase 6); FTX equity status tidak diklarifikasi (Phase 5, 8); Validator set tidak enumerated public (Phase 7, 8)
+· Supporting Dataset: Phase 5 Financial (Treasury, Revenue History), Phase 6 Token (all), Phase 7 Ecosystem (Validator Group), Phase 8 Market (Adoption Metrics, Open Threads)
+
+Strategic Trade-offs
+
+Trade-off 1: Desentralisasi vs Kecepatan Pengembangan (Time-to-Market)
+· Decision: Memilih testnet permissioned berbulan-bulan dengan Mysten Labs sebagai operator utama alih-alih launch permissionless segera
+· Trade-off: Mengorbankan desentralisasi nyata dan community ownership awal demi kecepatan iterasi protocol, keamanan testing, dan developer onboarding yang controlled
+· Evidence: Testnet permissioned ~50-100 nodes curated; Mysten Labs critical infrastructure; no mainnet date; validator group testnet permissioned; Phase 4 Technical Limitations: Centralized testnet operation HIGH
+· Supporting Dataset: Phase 3 History (Testnet Launch 2024), Phase 4 Technology (Technical Limitations), Phase 7 Ecosystem (Validator Group, Infrastructure Providers), Phase 8 Market (Risk: Centralized Testnet Operation HIGH)
+
+Trade-off 2: Single-Chain Native Integration vs Multi-Chain Reach
+· Decision: Build native pada Sui/Move dengan deep integration (Move VM calls, Sui objects, Seal, SNS) alih-alih chain-agnostic dari awal
+· Trade-off: Mendapatkan developer experience terbaik dan programmability unik di Sui; tapi menciptakan vendor lock-in ke Sui, dependency pada Sui validator set, dan perlu bridge (Wormhole) untuk cross-chain yang menambah complexity dan risk
+· Evidence: Phase 4 Technology (Move VM, Seal, Walrus Sites native); Phase 7 Primary Chain Sui Critical; External Dependencies Sui Critical, Wormhole High Planned; Phase 8 Risk: Single Chain Dependency HIGH; Competitor Landscape: 0G, Celestia, EigenDA multi-chain native
+· Supporting Dataset: Phase 4 Technology (Architecture, Move VM), Phase 7 Ecosystem (Primary Chain, External Dependencies, Major Integrations), Phase 8 Market (Risk Response, Competitor Landscape)
+
+Trade-off 3: VC Funding via Parent vs Independent Protocol Treasury
+· Decision: Menerima funding seluruhnya via Mysten Labs VC rounds ($428M) tanpa separate Walrus raise atau community allocation awal
+· Trade-off: Capital cukup besar tanpa dilution protokol sendiri; tapi menciptakan financial opacity (tidak ada treasury transparan), FTX exposure risk, dan kompleksitas carve-out untuk DAO/Foundation nanti
+· Evidence: Phase 5 Funding History: 3 rounds Mysten Labs only; Treasury: tidak diungkap; Financial Risk: FTX Exposure HIGH, Treasury Concentration MEDIUM; Financial Dependencies: Future Walrus DAO Planned; Phase 2 Entity: Mysten Labs, FTX Ventures
+· Supporting Dataset: Phase 5 Financial (Funding History, Treasury, Financial Risk, Financial Dependencies), Phase 2 Entity (Mysten Labs, FTX Ventures, Walrus Foundation), Phase 3 History (Series B FTX lead)
+
+Trade-off 4: Fee-Based Revenue Model vs Token Incentives untuk Bootstrap
+· Decision: Merancang fee-based model (storage + retrieval fees) sebagai revenue utama; token WAL untuk governance/staking bukan primary incentive; tidak ada token incentives di testnet
+· Trade-off: Economics lebih sustainable dan predictable (seperti cloud); tapi kehilangan bootstrap network effects dari token incentives (seperti Filecoin mining rewards, Arweave endowment); storage nodes testnet tidak mendapat real rewards
+· Evidence: Phase 5 Revenue Model: Planned fees only; Token Sale: not announced; Adoption Metrics: Volume $0 testnet; Competitor: Filecoin/Arweave/0G/Celestia/EigenDA all have token incentives live
+· Supporting Dataset: Phase 5 Financial (Revenue Model, Fundraising Mechanism), Phase 6 Token (Utility, Distribution), Phase 8 Market (Adoption Metrics, Competitor Landscape)
+
+Trade-off 5: Minimal Public Transparency vs Competitive OpSec
+· Decision: Tidak mempublikasikan testnet metrics dashboard, treasury breakdown, tokenomics detail, validator list, FTX settlement status
+· Trade-off: Menghindari scrutiny premature, melindungi competitive positioning, flexibility pivot; tapi menciptakan trust deficit dengan community/investor, sulit benchmarks vs competitor, governance credibility gap
+· Evidence: Phase 5 Treasury/Transparency Report: tidak tersedia; Phase 6 Token: all tidak diungkap; Phase 7 Validator Group: tidak enumerated; Phase 8 Adoption Metrics: mostly tidak diketahui; Open Threads: banyak "tidak diketahui"
+· Supporting Dataset: Phase 5 Financial (Treasury, Official Financial Resources), Phase 6 Token (all), Phase 7 Ecosystem (Validator Group), Phase 8 Market (Adoption Metrics, Open Threads)
+
+Behavioral Summary
+
+Prioritas Utama Proyek:
+1. Technical Excellence & Differentiation: Membangun programmable storage yang benar-benar native ke Move/Sui dengan erasure coding + PoA — bukan fork existing design
+2. Sui Ecosystem Dominance: Menjadi storage layer default untuk semua Sui apps (Walrus Sites, Seal, Akord, dll) — moat via deep integration
+3. Controlled Rollout: Testnet permissioned → mainnet permissionless dengan timeline internal, bukan deadline publik — prioritaskan kualitas over hype
+4. Parent Company Leverage: Gunakan resources Mysten Labs (capital, talent, infra, distribution) sepenuhnya — avoid premature independence
+
+Cara Mengambil Keputusan:
+- Top-down dari Mysten Labs leadership (Evan Spiegel/co-founders, Mysten Labs execs) untuk strategic direction
+- Technical decisions by core protocol team (Mysten Labs engineers) dengan community validator feedback di testnet
+- Ecosystem/partnership decisions via business dev team (Wormhole, Akord, Decrypt)
+- Governance/token decisions delayed hingga mainnet readiness — no community governance saat ini
+- Risk decisions: conservative (delay token, permissioned testnet, no public treasury) — avoid regulatory/technical blowups
+
+Faktor Paling Sering Mempengaruhi Keputusan:
+1. Sui/Move Native Alignment: Setiap fitur dievaluasi against "apakah ini leverage Move VM/Sui objects/consensus?"
+2. Mysten Labs Resource Availability: Capital, engineering talent, infra ops, legal — semua dari parent
+3. Technical Risk Tolerance: Conservative pada consensus/storage layer (extended testnet), aggressive pada integrations (Wormhole, Seal, SNS)
+4. Regulatory Uncertainty: Token launch delayed, no public sale, no token di testnet — wait for clarity
+5. Competitive Differentiation: Programmable storage narrative vs generic storage — drive feature decisions (Seal, Sites, Move calls)
+
+Pola Evolusi:
+- Phase 1 (2021-2022): Concept & Funding via Mysten Labs Series A/B
+- Phase 2 (2023): Sui Mainnet → Walrus core protocol development
+- Phase 3 (2024 H1): Testnet Launch permissioned + Core Integrations (Seal, Sites)
+- Phase 4 (2024 H2): Ecosystem Expansion (Akord, Decrypt, Wormhole announcement)
+- Phase 5 (2025+): Mainnet + TGE + DAO Formation (projected, not committed)
+
+Kekuatan Utama:
+- Deep technical differentiation (erasure coding + PoA + Move programmability) — bukan me-too
+- Strong parent backing (Mysten Labs $428M, top-tier VCs, Sui ecosystem)
+- Real applications on testnet (Akord, Decrypt, Seal) — product-market fit signals
+- Developer tooling maturity (SDK, CLI, HTTP API, Sites CLI) — ready for adoption
+- Clear programmable storage narrative — differentiated vs Filecoin/Arweave/Storj
+
+Kelemahan Utama:
+- Zero transparency pada financials, tokenomics, adoption metrics — trust deficit
+- Single-chain dependency (Sui) dengan bridge risk (Wormhole) sebagai einzige cross-chain path
+- Centralized testnet operations — decentralization unproven at scale
+- No token/governance mechanism live — community alignment missing, no incentive bootstrap
+- FTX Ventures exposure unresolved — potential clawback/equity risk
+- No hard timeline untuk mainnet/DAO/token — execution risk vs competitors executing
+
+Open Threads
+
+- Exact Walrus testnet storage node count, operator identities, dan geographic distribution — tidak public; testnet permissioned
+- Walrus testnet blob count, storage volume (GB), bandwidth metrics, daily active users — tidak ada dashboard public
+- WAL token TGE date, initial circulating supply, launch mechanism (auction/LBP/public sale/airdrop), vesting schedules — tidak diumumkan
+- Walrus mainnet launch date — tidak diumumkan; dependent pada testnet hardening dan Sui governance
+- Wormhole integration technical specifications, launch timeline, fee model, apakah WAL token required untuk cross-chain fees — hanya announcement, no docs
+- Walrus Foundation legal formation status, jurisdiction, initial board, treasury allocation — diumumkan planned, no public filing
+- Status equity FTX Ventures di Mysten Labs pasca-bankruptcy — laporan conflicting, no official settlement disclosure
+- Sui Foundation grant recipients spesifik building on Walrus — no public dashboard filtering Walrus-specific grants
+- Mainnet validator set requirements, staking mechanics, slashing conditions untuk storage nodes — detailed specs tidak dipublikasikan
+- Walrus Sites custom domain support (non-SNS) status dan timeline — docs mention planned, no details
+- Audit reports untuk Walrus core protocol, Seal threshold encryption, Wormhole bridge contracts — tidak public released
+- Competitor benchmark independen: Walrus vs Filecoin/Arweave/0G pada cost-per-GB, retrieval latency, durability guarantees — tidak ada third-party benchmarks
+- Apakah Walrus akan native token incentives untuk storage nodes di mainnet launch (WAL staking, slashing) — tokenomics doc reference tapi no final params
+- Exchange listing discussions / market maker arrangements untuk WAL — no public info
+- Allocation breakdown dari $428M Mysten Labs funding yang dialokasikan khusus Walrus development — tidak diungkap

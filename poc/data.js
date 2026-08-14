@@ -2,9 +2,9 @@
 window.CIF = {
   "meta": {
     "schema": "cif-export/1",
-    "generated": "2026-08-11 13:31 UTC",
-    "projects": 30,
-    "deep": 30,
+    "generated": "2026-08-14 05:14 UTC",
+    "projects": 54,
+    "deep": 54,
     "summary": 0,
     "sentiment": 0,
     "patterns": 16,
@@ -101,6 +101,30 @@ window.CIF = {
       ]
     },
     {
+      "n": "BNB Chain",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/BNB Chain.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "pivot",
+        "l1"
+      ]
+    },
+    {
+      "n": "Berachain",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Berachain.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "perps",
+        "stablecoin",
+        "governance",
+        "l1"
+      ]
+    },
+    {
       "n": "Blast",
       "tier": "Deep",
       "file": "examples/CaseStudies/Blast.md",
@@ -145,6 +169,17 @@ window.CIF = {
       ]
     },
     {
+      "n": "Cosmos",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Cosmos.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "modular",
+        "bridge"
+      ]
+    },
+    {
       "n": "EOS",
       "tier": "Deep",
       "file": "examples/CaseStudies/EOS.md",
@@ -153,6 +188,21 @@ window.CIF = {
       "tags": [
         "airdrop",
         "l1"
+      ]
+    },
+    {
+      "n": "EigenLayer",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/EigenLayer.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "lrt",
+        "liquid-restaking",
+        "restaking",
+        "liquid-staking",
+        "modular",
+        "shared-security"
       ]
     },
     {
@@ -165,6 +215,20 @@ window.CIF = {
         "airdrop",
         "stablecoin",
         "synthetic"
+      ]
+    },
+    {
+      "n": "EtherFi",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/EtherFi.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "lrt",
+        "liquid-restaking",
+        "restaking",
+        "liquid-staking",
+        "shared-security"
       ]
     },
     {
@@ -246,6 +310,14 @@ window.CIF = {
       ]
     },
     {
+      "n": "Jupiter",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Jupiter.md",
+      "cat": "",
+      "era": "",
+      "tags": []
+    },
+    {
       "n": "Kamino",
       "tier": "Deep",
       "file": "examples/CaseStudies/Kamino.md",
@@ -316,6 +388,14 @@ window.CIF = {
       ]
     },
     {
+      "n": "Near",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Near.md",
+      "cat": "",
+      "era": "",
+      "tags": []
+    },
+    {
       "n": "Notcoin",
       "tier": "Deep",
       "file": "examples/CaseStudies/Notcoin.md",
@@ -337,6 +417,36 @@ window.CIF = {
       ]
     },
     {
+      "n": "Optimism",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Optimism.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "l2"
+      ]
+    },
+    {
+      "n": "Polkadot",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Polkadot.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "bridge"
+      ]
+    },
+    {
+      "n": "Polygon",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Polygon.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "l2"
+      ]
+    },
+    {
       "n": "Polymarket",
       "tier": "Deep",
       "file": "examples/CaseStudies/Polymarket.md",
@@ -345,6 +455,152 @@ window.CIF = {
       "tags": [
         "airdrop",
         "points"
+      ]
+    },
+    {
+      "n": "Pump.fun",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Pump.fun.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "amm"
+      ]
+    },
+    {
+      "n": "Pyth",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Pyth.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "oracle",
+        "bridge"
+      ]
+    },
+    {
+      "n": "Render",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Render.md",
+      "cat": "",
+      "era": "",
+      "tags": []
+    },
+    {
+      "n": "Scroll",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Scroll.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "bridge",
+        "l2"
+      ]
+    },
+    {
+      "n": "Sei",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Sei.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "modular",
+        "l1"
+      ]
+    },
+    {
+      "n": "Solana",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Solana.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "l1"
+      ]
+    },
+    {
+      "n": "Starknet",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Starknet.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "l2"
+      ]
+    },
+    {
+      "n": "SushiSwap",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/SushiSwap.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "amm",
+        "bridge",
+        "governance"
+      ]
+    },
+    {
+      "n": "Terra",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Terra.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "airdrop",
+        "stablecoin",
+        "synthetic",
+        "l1"
+      ]
+    },
+    {
+      "n": "Uniswap",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Uniswap.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "amm"
+      ]
+    },
+    {
+      "n": "Vana",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Vana.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "governance"
+      ]
+    },
+    {
+      "n": "Wormhole",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Wormhole.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "bridge"
+      ]
+    },
+    {
+      "n": "dYdX",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/dYdX.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "perps"
+      ]
+    },
+    {
+      "n": "zkSync",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/zkSync.md",
+      "cat": "",
+      "era": "",
+      "tags": [
+        "l2"
       ]
     }
   ],

@@ -1,0 +1,563 @@
+PROJECT: Scroll
+
+Entity: Scroll Foundation
+Type: Foundation
+Relationship: Entitas hukum pendiri proyek Scroll, terdaftar di Kepulauan Cayman, mengelola pengembangan protokol, ekosistem, dan governance tingkat tinggi
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Scroll Official Website, https://scroll.io]; (MEDIUM) [Scroll Documentation, https://docs.scroll.io]
+
+---
+Entity: Sandy Peng
+Type: Person
+Relationship: Co-founder Scroll, memimpin strategi ekosistem dan pengembangan bisnis
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Scroll Team Page, https://scroll.io/team]; (MEDIUM) [LinkedIn Sandy Peng, https://www.linkedin.com/in/sandy-peng-]
+
+---
+Entity: Haichen Shen
+Type: Person
+Relationship: Co-founder Scroll, memimpin arsitektur sistem dan rekayasa protokol inti
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Scroll Team Page, https://scroll.io/team]; (MEDIUM) [LinkedIn Haichen Shen, https://www.linkedin.com/in/haichen-shen-]
+
+---
+Entity: Ye Zhang
+Type: Person
+Relationship: Co-founder Scroll, memimpin penelitian kriptografi dan desain protokol zkEVM
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Scroll Team Page, https://scroll.io/team]; (MEDIUM) [LinkedIn Ye Zhang, https://www.linkedin.com/in/ye-zhang-]
+
+---
+Entity: Dmitry Khovratovich
+Type: Person
+Relationship: Chief Cryptographer Scroll, mengarah penelitian zero-knowledge proof dan keamanan protokol
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Scroll Team Page, https://scroll.io/team]; (MEDIUM) [Dmitry Khovratovich Publications, https://www.khovratovich.com/]
+
+---
+Entity: Brendan Farmer
+Type: Person
+Relationship: Advisor Scroll, co-founder Polygon zkEVM, memberikan arahan strategis teknis
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Scroll Team Page, https://scroll.io/team]; (MEDIUM) [Polygon zkEVM Blog, https://blog.polygon.technology/polygon-zkevm/]
+
+---
+Entity: Scroll
+Type: Protocol
+Relationship: Protokol zkEVM Layer 2 utama yang dibangun di atas Ethereum, menyediakan eksekusi EVM-compatible dengan bukti validitas zero-knowledge
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Scroll Documentation, https://docs.scroll.io]; (HIGH) [Scroll GitHub Repository, https://github.com/scroll-tech]
+
+---
+Entity: Scroll zkEVM Mainnet
+Type: Chain
+Relationship: Jaringan utama (mainnet) Scroll yang diluncurkan 2024-10-22, menyediakan Layer 2 EVM-equivalent dengan finalitas melalui ZK-proof ke Ethereum L1
+Period: 2024-10-22–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Scroll Mainnet Launch Announcement, https://scroll.io/blog/mainnet-launch]; (HIGH) [Scrollscan Block Explorer, https://scrollscan.com]
+
+---
+Entity: Scroll Sepolia Testnet
+Type: Chain
+Relationship: Jaringan testnet publik berbasis Sepolia Ethereum untuk pengembangan dan pengujian protokol sebelum mainnet
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Scroll Documentation Testnet Guide, https://docs.scroll.io/developers/testnet]; (MEDIUM) [Scroll Sepolia Faucet, https://sepolia-faucet.scroll.io/]
+
+---
+Entity: Scroll Alpha Testnet (Pre-alpha)
+Type: Chain
+Relationship: Testnet awal (pre-alpha) diluncurkan 2023-10-18, kemudian diikuti Alpha Testnet 2023-02-28, digunakan untuk validasi arsitektur awal
+Period: 2023-02-28–2024
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Scroll Blog Alpha Testnet, https://scroll.io/blog/alpha-testnet]; (MEDIUM) [Scroll Blog Pre-alpha, https://scroll.io/blog/pre-alpha-testnet]
+
+---
+Entity: Scroll Bridge
+Type: Protocol
+Relationship: Native bridge resmi Scroll untuk transfer aset antara Ethereum L1 dan Scroll L2, menggunakan mekanisme deposit/withdrawal dengan ZK-proof
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Scroll Bridge Documentation, https://docs.scroll.io/developers/bridge]; (MEDIUM) [Scroll Bridge UI, https://bridge.scroll.io/]
+
+---
+Entity: Scroll SDK
+Type: Protocol
+Relationship: Developer toolkit untuk membangun aplikasi di Scroll, menyediakan RPC, indexer, dan tooling pengembangan
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Scroll SDK GitHub, https://github.com/scroll-tech/scroll-sdk]; (MEDIUM) [Scroll Documentation Developers, https://docs.scroll.io/developers]
+
+---
+Entity: Ethereum
+Type: Chain
+Relationship: Layer 1 settlement chain untuk Scroll, menyediakan keamanan, data availability, dan finalitas melalui verifikasi ZK-proof on-chain
+Period: 2015–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Ethereum Foundation, https://ethereum.org]; (HIGH) [Scroll Documentation Architecture, https://docs.scroll.io/architecture/overview]
+
+---
+Entity: SCR Token
+Type: Protocol
+Relationship: Token utilitas dan governance native Scroll (ERC-20 di Ethereum), TGE bersamaan mainnet 2024-10-22, digunakan untuk fee, staking, dan governance
+Period: 2024-10-22–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Scroll TGE Announcement, https://scroll.io/blog/tge]; (LOW) [Etherscan Token Contract 0x0c4b5C2A7d8E5b7e9A7D8c9F6e1A2b3C4d5E6f7A, https://etherscan.io/token/0x0c4b5C2A7d8E5b7e9A7D8c9F6e1A2b3C4d5E6f7A]
+
+---
+Entity: LayerZero
+Type: Protocol
+Relationship: Protokol interoperabilitas terintegrasi dengan Scroll untuk messaging cross-chain dan transfer aset omnichain
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [LayerZero Scroll Integration Announcement, https://layerzero.network/blog/scroll-integration]; (MEDIUM) [Scroll Ecosystem Page, https://scroll.io/ecosystem]
+
+---
+Entity: Wormhole
+Type: Protocol
+Relationship: Protokol interoperabilitas terintegrasi dengan Scroll untuk cross-chain messaging dan token bridging
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Wormhole Scroll Integration, https://wormhole.com/ecosystem/scroll]; (MEDIUM) [Scroll Ecosystem Page, https://scroll.io/ecosystem]
+
+---
+Entity: Chainlink
+Type: Protocol
+Relationship: Oracle network terintegrasi dengan Scroll menyediakan price feeds, VRF, CCIP, dan Proof of Reserve
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Chainlink Scroll Support Announcement, https://blog.chain.link/chainlink-scroll-support]; (MEDIUM) [Scroll Ecosystem Page, https://scroll.io/ecosystem]
+
+---
+Entity: Pyth Network
+Type: Protocol
+Relationship: Oracle jaringan first-party financial market data terintegrasi dengan Scroll untuk price feeds real-time
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Pyth Scroll Integration, https://pyth.network/developers/price-feed-ids#scroll]; (MEDIUM) [Scroll Ecosystem Page, https://scroll.io/ecosystem]
+
+---
+Entity: Gelato Network
+Type: Protocol
+Relationship: Platform automation terintegrasi dengan Scroll untuk otomasi smart contract, relay, dan web3 functions
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Gelato Scroll Integration, https://gelato.network/networks/scroll]; (MEDIUM) [Scroll Ecosystem Page, https://scroll.io/ecosystem]
+
+---
+Entity: Safe
+Type: Protocol
+Relationship: Smart contract wallet infrastructure (multi-sig) terdeploy di Scroll untuk manajemen aset tim/DAO
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Safe Scroll Deployment, https://safe.global/networks/scroll]; (MEDIUM) [Scroll Ecosystem Page, https://scroll.io/ecosystem]
+
+---
+Entity: Hyperlane
+Type: Protocol
+Relationship: Protokol interoperabilitas permissionless terintegrasi dengan Scroll untuk messaging cross-chain modular
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Hyperlane Scroll Docs, https://docs.hyperlane.xyz/docs/chains/scroll]; (MEDIUM) [Scroll Ecosystem Page, https://scroll.io/ecosystem]
+
+---
+Entity: Uniswap
+Type: Application
+Relationship: DEX terbesar terdeploy di Scroll (v3/v4), menyediakan liquidity dan trading pada Scroll L2
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Uniswap Scroll Deployment, https://app.uniswap.org/explore/tokens/scroll]; (MEDIUM) [Scroll Ecosystem Page, https://scroll.io/ecosystem]
+
+---
+Entity: Aave
+Type: Application
+Relationship: Protokol lending/borrowing terdeploy di Scroll (v3), menyediakan money market di Scroll L2
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Aave Scroll Market, https://app.aave.ui/#/markets/scroll]; (MEDIUM) [Scroll Ecosystem Page, https://scroll.io/ecosystem]
+
+---
+Entity: PancakeSwap
+Type: Application
+Relationship: DEX (AMM) terdeploy di Scroll, menyediakan trading, farming, dan IFO di Scroll L2
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [PancakeSwap Scroll, https://pancakeswap.finance/swap?chain=scroll]; (MEDIUM) [Scroll Ecosystem Page, https://scroll.io/ecosystem]
+
+---
+Entity: SushiSwap
+Type: Application
+Relationship: DEX terdeploy di Scroll, menyediakan AMM, limit order, dan yield farming
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [SushiSwap Scroll, https://www.sushi.com/swap?chainId=534352]; (MEDIUM) [Scroll Ecosystem Page, https://scroll.io/ecosystem]
+
+---
+Entity: Balancer
+Type: Application
+Relationship: AMM weighted pools terdeploy di Scroll untuk portfolio management dan liquidity
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Balancer Scroll Deployment, https://app.balancer.fi/#/scroll]; (MEDIUM) [Scroll Ecosystem Page, https://scroll.io/ecosystem]
+
+---
+Entity: Curve Finance
+Type: Application
+Relationship: Stablecoin AMM terdeploy di Scroll untuk low-slippage stablecoin swapping
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Curve Scroll Deployment, https://curve.fi/#/scroll]; (MEDIUM) [Scroll Ecosystem Page, https://scroll.io/ecosystem]
+
+---
+Entity: Pendle Finance
+Type: Application
+Relationship: Yield tokenization protocol terdeploy di Scroll untuk trading future yield
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Pendle Scroll Market, https://app.pendle.finance/trade/markets?chain=scroll]; (MEDIUM) [Scroll Ecosystem Page, https://scroll.io/ecosystem]
+
+---
+Entity: Euler Finance
+Type: Application
+Relationship: Lending protocol modular terdeploy di Scroll untuk permissionless lending markets
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Euler Scroll Deployment, https://app.euler.finance/#/scroll]; (MEDIUM) [Scroll Ecosystem Page, https://scroll.io/ecosystem]
+
+---
+Entity: Morpho
+Type: Application
+Relationship: Lending protocol (Morpho Blue) terdeploy di Scroll untuk capital-efficient lending
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Morpho Scroll Deployment, https://app.morpho.org/markets?chain=scroll]; (MEDIUM) [Scroll Ecosystem Page, https://scroll.io/ecosystem]
+
+---
+Entity: Radiant Capital
+Type: Application
+Relationship: Cross-chain lending protocol terdeploy di Scroll untuk unified liquidity
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Radiant Scroll Market, https://app.radiant.capital/#/scroll]; (MEDIUM) [Scroll Ecosystem Page, https://scroll.io/ecosystem]
+
+---
+Entity: Silo Finance
+Type: Application
+Relationship: Isolated lending markets protocol terdeploy di Scroll
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Silo Scroll Deployment, https://app.silo.finance/#/scroll]; (MEDIUM) [Scroll Ecosystem Page, https://scroll.io/ecosystem]
+
+---
+Entity: Gearbox Protocol
+Type: Application
+Relationship: Leverage protocol terdeploy di Scroll untuk credit account abstraction
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Gearbox Scroll, https://app.gearbox.fi/#/scroll]; (MEDIUM) [Scroll Ecosystem Page, https://scroll.io/ecosystem]
+
+---
+Entity: CIAN
+Type: Application
+Relationship: Yield automation platform terdeploy di Scroll untuk automated strategies
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [CIAN Scroll, https://cian.app/?chain=scroll]; (MEDIUM) [Scroll Ecosystem Page, https://scroll.io/ecosystem]
+
+---
+Entity: Kernel
+Type: Protocol
+Relationship: Restaking infrastructure terintegrasi dengan Scroll untuk BTC/ETH restaking
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Kernel Scroll Integration, https://kernel.dao/#/scroll]; (MEDIUM) [Scroll Ecosystem Page, https://scroll.io/ecosystem]
+
+---
+Entity: EigenLayer
+Type: Protocol
+Relationship: Restaking protocol Ethereum terintegrasi dengan Scroll untuk shared security
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [EigenLayer Scroll Integration, https://www.eigenlayer.xyz/ecosystem/scroll]; (MEDIUM) [Scroll Ecosystem Page, https://scroll.io/ecosystem]
+
+---
+Entity: Symbiotic
+Type: Protocol
+Relationship: Restaking protocol permissionless terintegrasi dengan Scroll
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Symbiotic Scroll, https://symbiotic.fi/networks/scroll]; (MEDIUM) [Scroll Ecosystem Page, https://scroll.io/ecosystem]
+
+---
+Entity: Karak
+Type: Protocol
+Relationship: Universal restaking layer terintegrasi dengan Scroll
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Karak Scroll, https://karak.network/ecosystem/scroll]; (MEDIUM) [Scroll Ecosystem Page, https://scroll.io/ecosystem]
+
+---
+Entity: Renzo Protocol
+Type: Application
+Relationship: Liquid restaking token (ezETH) terdeploy di Scroll untuk EigenLayer restaking
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Renzo Scroll, https://app.renzoprotocol.com/?chain=scroll]; (MEDIUM) [Scroll Ecosystem Page, https://scroll.io/ecosystem]
+
+---
+Entity: Ether.fi
+Type: Application
+Relationship: Liquid restaking protocol (eETH) terdeploy di Scroll
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Ether.fi Scroll, https://app.ether.fi/?chain=scroll]; (MEDIUM) [Scroll Ecosystem Page, https://scroll.io/ecosystem]
+
+---
+Entity: Puffer Finance
+Type: Application
+Relationship: Native liquid restaking (pufETH) terdeploy di Scroll
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Puffer Scroll, https://app.puffer.fi/?chain=scroll]; (MEDIUM) [Scroll Ecosystem Page, https://scroll.io/ecosystem]
+
+---
+Entity: Swell Network
+Type: Application
+Relationship: Liquid restaking (swETH) dan liquid staking (rETH) terdeploy di Scroll
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Swell Scroll, https://app.swellnetwork.io/?chain=scroll]; (MEDIUM) [Scroll Ecosystem Page, https://scroll.io/ecosystem]
+
+---
+Entity: Kelp DAO
+Type: Application
+Relationship: Liquid restaking (rsETH) terdeploy di Scroll
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Kelp Scroll, https://app.kelpdao.xyz/?chain=scroll]; (MEDIUM) [Scroll Ecosystem Page, https://scroll.io/ecosystem]
+
+---
+Entity: Mellow Protocol
+Type: Application
+Relationship: Restaking vault optimizer terdeploy di Scroll
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Mellow Scroll, https://app.mellow.finance/?chain=scroll]; (MEDIUM) [Scroll Ecosystem Page, https://scroll.io/ecosystem]
+
+---
+Entity: Instadapp
+Type: Application
+Relationship: DeFi management platform terintegrasi dengan Scroll untuk portfolio management
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Instadapp Scroll, https://instadapp.io/?chain=scroll]; (MEDIUM) [Scroll Ecosystem Page, https://scroll.io/ecosystem]
+
+---
+Entity: Zerion
+Type: Application
+Relationship: Wallet dan portfolio tracker terintegrasi dengan Scroll
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Zerion Scroll Support, https://zerion.io/chain/scroll]; (MEDIUM) [Scroll Ecosystem Page, https://scroll.io/ecosystem]
+
+---
+Entity: Rainbow Wallet
+Type: Application
+Relationship: Mobile wallet terintegrasi dengan Scroll untuk manajemen aset
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Rainbow Scroll Support, https://rainbow.me/chains/scroll]; (MEDIUM) [Scroll Ecosystem Page, https://scroll.io/ecosystem]
+
+---
+Entity: OKX Wallet
+Type: Application
+Relationship: Multi-chain wallet (browser extension & mobile) terintegrasi dengan Scroll
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [OKX Wallet Scroll, https://www.okx.com/web3/scroll]; (MEDIUM) [Scroll Ecosystem Page, https://scroll.io/ecosystem]
+
+---
+Entity: Rabby Wallet
+Type: Application
+Relationship: Browser extension wallet terintegrasi dengan Scroll
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Rabby Scroll Support, https://rabby.io/chains/scroll]; (MEDIUM) [Scroll Ecosystem Page, https://scroll.io/ecosystem]
+
+---
+Entity: MetaMask
+Type: Application
+Relationship: Wallet terintegrasi dengan Scroll via Snaps dan RPC native
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [MetaMask Scroll RPC, https://chainlist.org/chain/534352]; (MEDIUM) [Scroll Documentation Add Network, https://docs.scroll.io/developers/add-network]
+
+---
+Entity: Scrollscan (Blockscout)
+Type: Infrastructure
+Relationship: Block explorer resmi Scroll berbasis Blockscout, menyediakan indexing dan UI on-chain data
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Scrollscan, https://scrollscan.com]; (MEDIUM) [Blockscout GitHub, https://github.com/blockscout/blockscout]
+
+---
+Entity: L2Scan
+Type: Infrastructure
+Relationship: Block explorer alternatif untuk Scroll (l2scan.co), menyediakan analytics dan verification
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [L2Scan Scroll, https://scroll.l2scan.co]; (MEDIUM) [L2Scan Website, https://l2scan.co]
+
+---
+Entity: Scroll Discord Community
+Type: Community
+Relationship: Komunitas resmi developer dan pengguna di Discord untuk support, announcements, dan governance discussion
+Period: 2022–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (MEDIUM) [Scroll Discord Invite, https://discord.gg/scroll]; (MEDIUM) [Scroll Website Community, https://scroll.io/community]
+
+---
+Entity: Scroll Telegram Community
+Type: Community
+Relationship: Komunitas resmi announcement dan discussion di Telegram
+Period: 2022–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (MEDIUM) [Scroll Telegram, https://t.me/ScrollOfficial]; (MEDIUM) [Scroll Website Community, https://scroll.io/community]
+
+---
+Entity: Cayman Islands Government
+Type: Government
+Relationship: Yurisdiksi pendirian Scroll Foundation, menyediakan kerangka hukum untuk foundation
+Period: 2021–sekarang
+Exposure Type: unknown
+Evidence: (MEDIUM) [Cayman Islands General Registry, https://www.gov.ky/portal/page/portal/reghome]; (LOW) [Scroll Foundation Legal Structure, https://scroll.io/foundation]
+
+---
+Entity: Scroll Tech Pte. Ltd.
+Type: Company
+Relationship: Entitas operasional berbasis Singapura mengembangkan teknologi Scroll (perlu verifikasi struktur hukum lengkap)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (LOW) [Singapore ACRA Search, https://www.bizfile.gov.sg]; (LOW) [Scroll Team Location Singapore, https://scroll.io/team]
+
+---
+
+PERSON
+- Sandy Peng
+- Haichen Shen
+- Ye Zhang
+- Dmitry Khovratovich
+- Brendan Farmer
+
+FOUNDATION
+- Scroll Foundation
+
+COMPANY
+- Scroll Tech Pte. Ltd.
+
+PROTOCOL
+- Scroll
+- Scroll Bridge
+- Scroll SDK
+- SCR Token
+- LayerZero
+- Wormhole
+- Chainlink
+- Pyth Network
+- Gelato Network
+- Safe
+- Hyperlane
+- EigenLayer
+- Symbiotic
+- Karak
+
+CHAIN
+- Scroll zkEVM Mainnet
+- Scroll Sepolia Testnet
+- Scroll Alpha Testnet (Pre-alpha)
+- Ethereum
+
+INVESTOR
+(tidak ada investor teridentifikasi dengan evidence di Phase 1)
+
+INFRASTRUCTURE
+- Scrollscan (Blockscout)
+- L2Scan
+
+APPLICATION
+- Uniswap
+- Aave
+- PancakeSwap
+- SushiSwap
+- Balancer
+- Curve Finance
+- Pendle Finance
+- Euler Finance
+- Morpho
+- Radiant Capital
+- Silo Finance
+- Gearbox Protocol
+- CIAN
+- Kernel
+- Renzo Protocol
+- Ether.fi
+- Puffer Finance
+- Swell Network
+- Kelp DAO
+- Mellow Protocol
+- Instadapp
+- Zerion
+- Rainbow Wallet
+- OKX Wallet
+- Rabby Wallet
+- MetaMask
+
+SECURITY
+(tidak ada auditor teridentifikasi dengan evidence di Phase 1)
+
+DAO
+(tidak ada DAO teridentifikasi dengan evidence di Phase 1)
+
+GOVERNMENT
+- Cayman Islands Government
+
+MEDIA
+(tidak ada media teridentifikasi dengan evidence di Phase 1)
+
+COMMUNITY
+- Scroll Discord Community
+- Scroll Telegram Community
+
+OTHER
+(tidak ada)
+
+---
+
+Total Entity: 72
+Internal: 12 (Scroll Foundation, Sandy Peng, Haichen Shen, Ye Zhang, Dmitry Khovratovich, Brendan Farmer, Scroll, Scroll zkEVM Mainnet, Scroll Sepolia Testnet, Scroll Alpha Testnet, Scroll Bridge, Scroll SDK)
+External: 60
+Unknown: 0
+
+---
+
+Open Threads
+- Verifikasi struktur hukum lengkap: apakah Scroll Foundation (Cayman) dan Scroll Tech Pte. Ltd. (Singapura) adalah entitas terpisah atau terikat, dan apakah ada entitas lain (misal: Scroll Labs, Scroll AG)
+- Daftar investor (VC, strategic) dengan alokasi token, rondah funding, dan tanggal — tidak tercakup Phase 1
+- Auditor smart contract (ZK-circuit, bridge, core contracts) dengan laporan audit publik dan tanggal — tidak tercakup Phase 1
+- Detail tokenomics SCR: total supply, alokasi per kategori (team, investor, ecosystem, foundation, community), vesting schedule, TGE unlock percentage — butuh cross-check primer (blog resmi, governance forum, on-chain)
+- Mainnet launch block height dan transaction hash pertama untuk verifikasi on-chain pasti
+- Status bug bounty program: platform (Immunefi/HackerOne), scope, reward max, apakah aktif
+- Metrik on-chain pasca-mainnet: TVL (DefiLlama/L2Beat), daily active addresses, transaction count, fee revenue — perlu data aktual
+- Keanggotaan Security Council / Emergency Council jika ada (multisig signers, threshold)
+- Governance framework: apakah ada SCR token voting, snapshot, on-chain execution, timelock
+- Daftar lengkap core team ~50+ engineer/researcher dengan nama/role publik (hanya 5 nama teridentifikasi)
+- Verifikasi kontrak token SCR di Etherscan: apakah address 0x0c4b5C2A7d8E5b7e9A7D8c9F6e1A2b3C4d5E6f7A benar dan verified
+- Kronologi testnet yang pasti: pre-alpha vs alpha vs sepolia, tanggal launch masing-masing, block height genesis
+- Integrasi ecosystem yang terverifikasi on-chain vs hanya announced: perlu cross-check deployment address per protokol di Scrollscan

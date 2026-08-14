@@ -1,0 +1,93 @@
+PROJECT: Yearn Finance
+
+
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance core team members developers Andre Cronje banteg Travis Rodriguez Wires Samuel Garneau",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance investors a16z Paradigm Polychain Coinbase Ventures Dragonfly Framework Ventures",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance auditors Trail of Bits Certora PeckShield Quantstamp MixBytes",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance partners integrations Curve Finance Convex Finance Aave Compound MakerDAO",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance multisig signers governance YFI holders Yearn DAO yTeams",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance legal entity Cayman Islands foundation Yearn Foundation jurisdiction",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance products yVaults yEarn Iron Bank yTrade yBribe Boost Woofy",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance ecosystem chains Ethereum Fantom Arbitrum Optimism Base Polygon zkSync",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance oracle providers Chainlink Keep3r Network Gelato",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance exchanges Binance Coinbase Uniswap SushiSwap Balancer Curve",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance infrastructure Alchemy Infura The Graph Tenderly",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance wallet integrations MetaMask Rainbow Wallet Ledger Trezor",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance media coverage The Defiant Bankless CoinDesk Decrypt",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance community Discord governance forum snapshot voting",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance hack exploits 2021 2022 2023 2024 postmortem",
+  "top_k": 10
+}

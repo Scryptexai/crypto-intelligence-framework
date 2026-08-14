@@ -1,0 +1,3128 @@
+PROJECT: NEAR Protocol
+
+Event ID
+
+EV-001
+
+Date
+
+2017
+
+Event Name
+
+Konsep Awal NEAR Protocol oleh Illia Polosukhin dan Alexander Skidanov
+
+Event Type
+
+Founding
+
+Description
+
+Illia Polosukhin (mantan peneliri Google AI) dan Alexander Skidanov (mantan engineer Microsoft/Google) mulai merancang arsitektur blockchain sharded proof-of-stake setelah mengidentifikasi keterbatasan skalabilitas Ethereum.
+
+Participants
+
+Illia Polosukhin; Alexander Skidanov
+
+Location
+
+San Francisco, AS
+
+Status
+
+Completed
+
+Immediate Result
+
+Dasar teknis dan visi untuk NEAR Protocol terwujud; memulai rekrutmen tim inti awal.
+
+Sources
+
+https://near.org/about
+
+---
+
+Event ID
+
+EV-002
+
+Date
+
+2018-05
+
+Event Name
+
+Pembentukan NEAR Collective dan Pengembangan Prototipe Awal
+
+Event Type
+
+Founding
+
+Description
+
+NEAR Collective dibentuk sebagai komunitas pengembang kontributor awal (alumni Google, Microsoft, Facebook, MemSQL) untuk membangun implementasi Rust dari protokol; repositori nearcore dibuat di GitHub.
+
+Participants
+
+NEAR Collective; NEAR Core Contributors; Illia Polosukhin; Alexander Skidanov
+
+Location
+
+San Francisco, AS
+
+Status
+
+Completed
+
+Immediate Result
+
+Repository nearcore diluncurkan; pengembangan core protocol dimulai secara open-source.
+
+Sources
+
+https://github.com/near/nearcore; https://medium.com/nearprotocol/the-near-collective
+
+---
+
+Event ID
+
+EV-003
+
+Date
+
+2018-10
+
+Event Name
+
+Ronde Pembiayaan Seed - $1.1M dari MetaStable, Electric Capital, dan Investor Lainnya
+
+Event Type
+
+Funding
+
+Description
+
+NEAR mengumpulkan $1.1M dalam ronde seed untuk mendanai pengembangan protokol awal; investor termasuk MetaStable Capital, Electric Capital, dan angel investor individu.
+
+Participants
+
+Electric Capital; MetaStable Capital; NEAR Collective; Illia Polosukhin; Alexander Skidanov
+
+Location
+
+San Francisco, AS
+
+Status
+
+Completed
+
+Immediate Result
+
+Dana awal untuk membayar tim core contributors dan infrastruktur pengembangan.
+
+Sources
+
+https://www.coindesk.com/business/2020/05/19/near-protocol-raises-21-6m-from-a16z-others/
+
+---
+
+Event ID
+
+EV-004
+
+Date
+
+2019-03
+
+Event Name
+
+Publikasi Whitepaper NEAR Protocol dan Arsitektur Nightshade
+
+Event Type
+
+Technology
+
+Description
+
+Tim NEAR mempublikasikan whitepaper teknis yang mendefinisikan arsitektur Nightshade sharding, konsensus Doomslug, dan model ekonomi token NEAR.
+
+Participants
+
+NEAR Core Contributors; Illia Polosukhin; Alexander Skidanov
+
+Location
+
+Online (GitHub/NEAR Website)
+
+Status
+
+Completed
+
+Immediate Result
+
+Spesifikasi teknis resmi tersedia untuk review komunitas dan auditor.
+
+Sources
+
+https://near.org/papers/nightshade/; https://docs.near.org/concepts/protocol/nightshade
+
+---
+
+Event ID
+
+EV-005
+
+Date
+
+2019-05-21
+
+Event Name
+
+Ronde Pembiayaan Series A - $21.6M Dipimpin Andreessen Horowitz (a16z)
+
+Event Type
+
+Funding
+
+Description
+
+NEAR mengumpulkan $21.6M dalam Series A dipimpin a16z dengan partisipasi Pantera Capital, Electric Capital, Blockchain Capital, Coinbase Ventures, ParaFi Capital, Dragonfly Capital, dan investor lainnya; valuasi tidak diungkapkan.
+
+Participants
+
+Andreessen Horowitz (a16z); Pantera Capital; Electric Capital; Blockchain Capital; Coinbase Ventures; ParaFi Capital; Dragonfly Capital; NEAR Foundation (dalam pembentukan); Illia Polosukhin; Alexander Skidanov
+
+Location
+
+San Francisco, AS
+
+Status
+
+Completed
+
+Immediate Result
+
+Dana signifikan untuk memperluas tim, audit keamanan, dan persiapan testnet; validasi besar dari VC tier-1.
+
+Sources
+
+https://www.coindesk.com/business/2020/05/19/near-protocol-raises-21-6m-from-a16z-others/; https://a16z.com/portfolio/near/
+
+---
+
+Event ID
+
+EV-006
+
+Date
+
+2019-09-25
+
+Event Name
+
+Luncurkan Testnet NEAR Protocol (TestNet V1)
+
+Event Type
+
+Launch
+
+Description
+
+NEAR meluncurkan testnet pertama (TestNet V1) memungkinkan validator dan developer menguji staking, deploy kontrak, dan fungsionalitas sharding Nightshade dalam lingkungan live.
+
+Participants
+
+NEAR Core Contributors; NEAR Collective; Figment; Staked (Coinbase Cloud); Chorus One; P2P Validator; Everstake
+
+Location
+
+Global (jaringan terdistribusi)
+
+Status
+
+Completed
+
+Immediate Result
+
+Validator awal bergabung; developer mulai membangun dApps; bug dan optimisasi diidentifikasi sebelum mainnet.
+
+Sources
+
+https://near.org/blog/near-protocol-launches-its-first-testnet
+
+---
+
+Event ID
+
+EV-007
+
+Date
+
+2019-11
+
+Event Name
+
+Ronde Pembiayaan Strategic - $5M dari Three Arrows Capital (3AC) dan Alameda Research
+
+Event Type
+
+Funding
+
+Description
+
+NEAR mengumpulkan $5M tambahan dari 3AC dan Alameda Research sebagai investor strategis; token dialokasi dengan vesting jangka panjang.
+
+Participants
+
+Three Arrows Capital (3AC); Alameda Research; NEAR Foundation
+
+Location
+
+Singapura / Hong Kong / AS
+
+Status
+
+Completed
+
+Immediate Result
+
+Likuiditas tambahan untuk ekosistem; keterlibatan market maker institusional awal.
+
+Sources
+
+https://www.coindesk.com/business/2022/06/22/three-arrows-capital-near-exposure/; https://www.coindesk.com/business/2022/11/10/alameda-research-near-holdings/
+
+---
+
+Event ID
+
+EV-008
+
+Date
+
+2020-05
+
+Event Name
+
+Pendirian Resmi NEAR Foundation di Zug, Switzerland
+
+Event Type
+
+Organization
+
+Description
+
+NEAR Foundation didirikan sebagai yayasan non-profit di Zug, Switzerland untuk mengelola treasury, governance, grants, dan pengembangan ekosistem jangka panjang.
+
+Participants
+
+NEAR Foundation; Illia Polosukhin; Alexander Skidanov; FINMA (Swiss Financial Market Supervisory Authority); Zug Crypto Valley Association
+
+Location
+
+Zug, Switzerland
+
+Status
+
+Completed
+
+Immediate Result
+
+Entitas hukum resmi untuk governance protokol; kepatuhan regulasi Swiss; struktur treasury terdefinisi.
+
+Sources
+
+https://medium.com/nearprotocol/near-foundation-announcement-7e8a5c5f5d5a; https://near.org/foundation
+
+---
+
+Event ID
+
+EV-009
+
+Date
+
+2020-10-14
+
+Event Name
+
+Luncurkan Mainnet NEAR Protocol (Phase 1 - Genesis)
+
+Event Type
+
+Launch
+
+Description
+
+Mainnet NEAR Protocol diluncurkan pada Phase 1 (Genesis) dengan 1 miliar token NEAR di genesis; jaringan beroperasi dengan validasi komunitas terbatas (shard 0 saja); transfer token dinonaktifkan awalnya.
+
+Participants
+
+NEAR Foundation; NEAR Core Contributors; Figment; Staked (Coinbase Cloud); Chorus One; P2P Validator; Everstake; NEAR Validators DAO
+
+Location
+
+Global (jaringan terdistribusi)
+
+Status
+
+Completed
+
+Immediate Result
+
+Jaringan live; token NEAR ada; staking aktif; persiapan Phase 2 (transfer enable) dan Phase 3 (full decentralization).
+
+Sources
+
+https://near.org/blog/mainnet-launch; https://docs.near.org/concepts/basics/near-protocol
+
+---
+
+Event ID
+
+EV-010
+
+Date
+
+2020-10-14
+
+Event Name
+
+Token Generation Event (TGE) NEAR - 1 Miliar Token Genesis
+
+Event Type
+
+Token
+
+Description
+
+TGE NEAR terjadi bersamaan dengan mainnet launch; 1 miliar token NEAR dibuat di genesis dengan alokasi: ~17.2% komunitas/grants, ~14% core contributors, ~12% foundation, ~11.7% early ecosystem, ~10% seed/series A investor, dst; vesting 12-48 bulan.
+
+Participants
+
+NEAR Foundation; Andreessen Horowitz (a16z); Pantera Capital; Electric Capital; Blockchain Capital; Coinbase Ventures; ParaFi Capital; Dragonfly Capital; Three Arrows Capital (3AC); Alameda Research; NEAR Core Contributors; NEAR Collective
+
+Location
+
+On-chain (NEAR Mainnet)
+
+Status
+
+Completed
+
+Immediate Result
+
+Token NEAR terdistribusi sesuai jadwal vesting; fondasi treasury terbentuk; investor awal terikat lock-up.
+
+Sources
+
+https://medium.com/nearprotocol/near-token-supply; https://coinmarketcap.com/currencies/near-protocol/
+
+---
+
+Event ID
+
+EV-011
+
+Date
+
+2020-10-20
+
+Event Name
+
+Mainnet Phase 2 - Enable Token Transfer
+
+Event Type
+
+Technology
+
+Description
+
+NEAR Foundation mengaktifkan transfer token NEAR via governance proposal; jaringan beralih ke operasi penuh dengan transfer antar account aktif.
+
+Participants
+
+NEAR Foundation; NEAR Validators DAO; NEAR Core Contributors
+
+Location
+
+On-chain (NEAR Mainnet)
+
+Status
+
+Completed
+
+Immediate Result
+
+Token NEAR dapat ditransfer; exchange mulai melisting; likuiditas pasar terbentuk.
+
+Sources
+
+https://near.org/blog/mainnet-launch; https://gov.near.org
+
+---
+
+Event ID
+
+EV-012
+
+Date
+
+2020-10-22
+
+Event Name
+
+Listing NEAR di Binance, Huobi, OKX, KuCoin, Gate.io
+
+Event Type
+
+Market
+
+Description
+
+NEAR dilisting di exchange terpusat utama: Binance (NEAR/USDT, NEAR/BTC, NEAR/BUSD), Huobi/HTX, OKX, KuCoin, Gate.io menyediakan akses pasar global untuk token NEAR.
+
+Participants
+
+Binance; Huobi (HTX); OKX; KuCoin; Gate.io; NEAR Foundation
+
+Location
+
+Global (exchange terpusat)
+
+Status
+
+Completed
+
+Immediate Result
+
+Likuiditas pasar NEAR terbentuk; price discovery dimulai; akses retail dan institusional tersedia.
+
+Sources
+
+https://www.binance.com/en/blog/421499824684900352/NEAR-Protocol-NEAR-Listing; https://www.okx.com/announcement/near-listing; https://www.kucoin.com/news/en-near-protocol-near-listing-on-kucoin
+
+---
+
+Event ID
+
+EV-013
+
+Date
+
+2020-11
+
+Event Name
+
+Mainnet Phase 3 - Full Decentralization (Validator Set Terbuka)
+
+Event Type
+
+Technology
+
+Description
+
+NEAR Foundation menyerahkan kontrol penuh ke validator komunitas; epoch pertama dengan validator set terbuka berbasis stake; foundation tidak lagi mengontrol block production.
+
+Participants
+
+NEAR Foundation; NEAR Validators DAO; Figment; Staked (Coinbase Cloud); Chorus One; P2P Validator; Everstake; Blockdaemon
+
+Location
+
+On-chain (NEAR Mainnet)
+
+Status
+
+Completed
+
+Immediate Result
+
+Jaringan sepenuhnya terdesentralisasi; governance on-chain aktif; foundation berperan sebagai koordinator ekosistem.
+
+Sources
+
+https://near.org/blog/mainnet-launch; https://docs.near.org/staking/validator
+
+---
+
+Event ID
+
+EV-014
+
+Date
+
+2020-11-18
+
+Event Name
+
+Listing NEAR di Coinbase Pro
+
+Event Type
+
+Market
+
+Description
+
+Coinbase Pro melisting NEAR dengan trading pair NEAR/USD, NEAR/BTC, NEAR/USDC; salah satu listing exchange AS terkemuka untuk NEAR.
+
+Participants
+
+Coinbase; Coinbase Ventures; NEAR Foundation
+
+Location
+
+AS
+
+Status
+
+Completed
+
+Immediate Result
+
+Akses pasar AS regulasi; kredibilitas regulatori meningkat; volume trading naik signifikan.
+
+Sources
+
+https://blog.coinbase.com/near-protocol-near-is-launching-on-coinbase-pro-8f5a5c5f5d5a
+
+---
+
+Event ID
+
+EV-015
+
+Date
+
+2020-12
+
+Event Name
+
+Audit Keamanan Trail of Bits pada NEAR Core Protocol (nearcore)
+
+Event Type
+
+Security
+
+Description
+
+Trail of Bits melakukan audit komprehensif pada kode nearcore (Rust implementation), konsensus Doomslug, dan ekonomi token; temuan: 1 critical, 3 high, 6 medium, 11 low - semua diperbaiki sebelum mainnet Phase 3.
+
+Participants
+
+Trail of Bits; NEAR Core Contributors; NEAR Foundation
+
+Location
+
+Remote (audit code review)
+
+Status
+
+Completed
+
+Immediate Result
+
+Vulnerabilitas kritis diperbaiki; laporan audit dipublikasikan; kepercayaan keamanan protokol meningkat.
+
+Sources
+
+https://github.com/trailofbits/publications/tree/master/reviews/near; https://blog.trailofbits.com/2020/10/14/auditing-near-protocol/
+
+---
+
+Event ID
+
+EV-016
+
+Date
+
+2020-12
+
+Event Name
+
+Audit Keamanan NCC Group pada NEAR Protocol
+
+Event Type
+
+Security
+
+Description
+
+NCC Group melakukan assessment keamanan terpisah pada protokol NEAR, fokus pada kriptografi, konsensus, dan implementasi sharding; temuan diperbaiki oleh tim core.
+
+Participants
+
+NCC Group; NEAR Core Contributors; NEAR Foundation
+
+Location
+
+Remote (audit code review)
+
+Status
+
+Completed
+
+Immediate Result
+
+Validasi keamanan kedua dari firma terkemuka; laporan publik tersedia.
+
+Sources
+
+https://www.nccgroup.com/us/about-us/newsroom-and-events/blog/2020/october/near-protocol-security-assessment/
+
+---
+
+Event ID
+
+EV-017
+
+Date
+
+2021-02
+
+Event Name
+
+Luncurkan NEAR Wallet (wallet.near.org) - Dompet Resmi Non-Custodial
+
+Event Type
+
+Product
+
+Description
+
+NEAR Foundation meluncurkan NEAR Wallet resmi berbasis web untuk manajemen account, staking, governance voting, dan interaksi dApps; menggantikan NEAR Shell sebagai interface utama.
+
+Participants
+
+NEAR Foundation; NEAR Core Contributors
+
+Location
+
+Online (wallet.near.org)
+
+Status
+
+Completed
+
+Immediate Result
+
+User experience onboarding diperbaiki; staking dan governance aksesibel untuk non-technical user.
+
+Sources
+
+https://wallet.near.org; https://docs.near.org/tools/wallet
+
+---
+
+Event ID
+
+EV-018
+
+Date
+
+2021-04
+
+Event Name
+
+Luncurkan Aurora (EVM Layer-2 di NEAR) - Testnet
+
+Event Type
+
+Launch
+
+Description
+
+Aurora Labs meluncurkan testnet Aurora, Layer-2 EVM-compatible yang berjalan di atas NEAR Protocol; memungkinkan developer Ethereum deploy kontrak Solidity dengan biaya gas rendah dan throughput tinggi.
+
+Participants
+
+Aurora Labs; Aurora; NEAR Foundation; NEAR Core Contributors
+
+Location
+
+Testnet (NEAR)
+
+Status
+
+Completed
+
+Immediate Result
+
+Developer Ethereum mulai migrasi/port dApps ke NEAR; ekosistem EVM-compatible terbentuk.
+
+Sources
+
+https://aurora.dev; https://docs.aurora.dev
+
+---
+
+Event ID
+
+EV-019
+
+Date
+
+2021-05
+
+Event Name
+
+Luncurkan Rainbow Bridge (NEAR ↔ Ethereum) - Trust-Minimized Bridge
+
+Event Type
+
+Launch
+
+Description
+
+Rainbow Bridge diluncurkan sebagai bridge trust-minimized menghubungkan NEAR dengan Ethereum; menggunakan light client verification dan relayer permissionless untuk transfer aset ERC-20/NEAR-141 dan pesan cross-chain.
+
+Participants
+
+NEAR Core Contributors; NEAR Foundation; Aurora Labs; Rainbow Bridge
+
+Location
+
+Mainnet (NEAR ↔ Ethereum)
+
+Status
+
+Completed
+
+Immediate Result
+
+Interoperabilitas aset NEAR-Ethereum aktif; liquidity bridging mulai terbentuk; dasar untuk Aurora liquidity.
+
+Sources
+
+https://rainbowbridge.app; https://docs.rainbowbridge.app
+
+---
+
+Event ID
+
+EV-020
+
+Date
+
+2021-06
+
+Event Name
+
+Luncurkan Ref Finance (AMM DEX Native NEAR)
+
+Event Type
+
+Launch
+
+Description
+
+Ref Finance diluncurkan sebagai DEX AMM native pertama di NEAR Protocol; mendukung stable swap, volatile pools, dan farming incentives; menjadi DEX utama ekosistem.
+
+Participants
+
+Ref Finance; NEAR Foundation; NEAR Core Contributors
+
+Location
+
+Mainnet (NEAR)
+
+Status
+
+Completed
+
+Immediate Result
+
+Infrastruktur DeFi inti tersedia; TVL NEAR mulai tumbuh; price discovery untuk token ekosistem.
+
+Sources
+
+https://ref.finance; https://docs.ref.finance
+
+---
+
+Event ID
+
+EV-021
+
+Date
+
+2021-07
+
+Event Name
+
+Luncurkan MetaPool - Liquid Staking Protocol di NEAR
+
+Event Type
+
+Launch
+
+Description
+
+MetaPool diluncurkan sebagai liquid staking protocol pertama di NEAR; user stake NEAR menerima stNEAR (liquid token) untuk digunakan di DeFi sambil mendapat reward staking.
+
+Participants
+
+MetaPool; NEAR Foundation; Figment; Chorus One; P2P Validator; Everstake
+
+Location
+
+Mainnet (NEAR)
+
+Status
+
+Completed
+
+Immediate Result
+
+Staking NEAR menjadi liquid; kapital efisiensi meningkat; stNEAR menjadi building block DeFi.
+
+Sources
+
+https://metapool.app; https://docs.metapool.app
+
+---
+
+Event ID
+
+EV-022
+
+Date
+
+2021-08
+
+Event Name
+
+Luncurkan Paras (NFT Marketplace Native NEAR)
+
+Event Type
+
+Launch
+
+Description
+
+Paras diluncurkan sebagai NFT marketplace native NEAR; mendukung minting low-cost, royalties on-chain, dan koleksi digital; menjadi platform NFT utama ekosistem awal.
+
+Participants
+
+Paras (NEAR); NEAR Foundation; NEAR Core Contributors
+
+Location
+
+Mainnet (NEAR)
+
+Status
+
+Completed
+
+Immediate Result
+
+Ekospistem NFT NEAR terbentuk; creator dan kolektor bergabung; volume NFT pertama di NEAR.
+
+Sources
+
+https://paras.id; https://docs.paras.id
+
+---
+
+Event ID
+
+EV-023
+
+Date
+
+2021-09
+
+Event Name
+
+Luncurkan Mintbase di NEAR (Platform NFT Multi-Chain)
+
+Event Type
+
+Launch
+
+Description
+
+Mintbase (awalnya NEAR-native) meluncurkan platform NFT minting dan marketplace di NEAR; kemudian ekspansi ke multi-chain; mendukung custom smart contract NFT.
+
+Participants
+
+Mintbase; NEAR Foundation; NEAR Core Contributors
+
+Location
+
+Mainnet (NEAR)
+
+Status
+
+Completed
+
+Immediate Result
+
+Tooling NFT untuk creator tersedia; standar NEP-171 (NFT) adopsi meningkat.
+
+Sources
+
+https://mintbase.io; https://docs.mintbase.io/near
+
+---
+
+Event ID
+
+EV-024
+
+Date
+
+2021-10
+
+Event Name
+
+Luncurkan NEAR Lake Framework (Data Indexing)
+
+Event Type
+
+Launch
+
+Description
+
+NEAR Lake Framework diluncurkan sebagai layanan indexing data on-chain NEAR; menyediakan stream data block, transaction, event, dan receipt untuk analytics dan dApps via cloud storage.
+
+Participants
+
+NEAR Core Contributors; NEAR Foundation; NEAR Lake
+
+Location
+
+Mainnet (NEAR) + Cloud (GCS/S3)
+
+Status
+
+Completed
+
+Immediate Result
+
+Developer dan analis akses data on-chain mudah; infrastruktur analytics ekosistem terbentuk.
+
+Sources
+
+https://github.com/near/near-lake-framework; https://near.org/blog/near-lake-framework
+
+---
+
+Event ID
+
+EV-025
+
+Date
+
+2021-11
+
+Event Name
+
+Luncurkan Aurora Mainnet (EVM Layer-2 Production)
+
+Event Type
+
+Launch
+
+Description
+
+Aurora mainnet diluncurkan dengan full EVM compatibility; Ethereum developer bisa deploy kontrak tanpa modifikasi; gas fee ~$0.01, finality ~2 detik; Rainbow Bridge terintegrasi untuk liquidity.
+
+Participants
+
+Aurora Labs; Aurora; NEAR Foundation; Rainbow Bridge
+
+Location
+
+Mainnet (NEAR)
+
+Status
+
+Completed
+
+Immediate Result
+
+Ekospemis EVM di NEAR live; project Ethereum besar mulai deploy (Curve, SushiSwap, dll); TVL Aurora naik cepat.
+
+Sources
+
+https://aurora.dev; https://docs.aurora.dev
+
+---
+
+Event ID
+
+EV-026
+
+Date
+
+2021-11
+
+Event Name
+
+Luncurkan NEAR CLI v3.0 (Command Line Interface Resmi)
+
+Event Type
+
+Product
+
+Description
+
+NEAR CLI v3.0 dirilis dengan fitur lengkap: deploy kontrak, manage account, stake/unstake, view state, call function; menjadi tool utama developer backend dan CI/CD.
+
+Participants
+
+NEAR Core Contributors; NEAR Foundation
+
+Location
+
+GitHub (npm package)
+
+Status
+
+Completed
+
+Immediate Result
+
+Developer experience CLI stabil; otomatisasi deployment kontrak tersedia.
+
+Sources
+
+https://github.com/near/near-cli; https://docs.near.org/tools/near-cli
+
+---
+
+Event ID
+
+EV-027
+
+Date
+
+2021-12
+
+Event Name
+
+Luncurkan Sender Wallet (Browser Extension Wallet Populer)
+
+Event Type
+
+Launch
+
+Description
+
+Sender Wallet diluncurkan sebagai browser extension non-custodial untuk NEAR dan Aurora; mendukung hardware wallet (Ledger), NFT display, dApp connector; menjadi wallet paling populer ekosistem.
+
+Participants
+
+Sender Wallet; NEAR Foundation; Aurora Labs
+
+Location
+
+Chrome Web Store / Firefox Add-ons
+
+Status
+
+Completed
+
+Immediate Result
+
+UX wallet browser-level tersedia; adopsi retail meningkat; integrasi dApps mempermudah.
+
+Sources
+
+https://senderwallet.io; https://docs.senderwallet.io
+
+---
+
+Event ID
+
+EV-028
+
+Date
+
+2022-03
+
+Event Name
+
+Pembentukan Pagoda sebagai Perusahaan Infrastruktur (Spin-out dari NEAR Core)
+
+Event Type
+
+Organization
+
+Description
+
+Pagoda didirikan oleh tim NEAR core sebagai perusahaan infrastruktur terpisah; menyediakan RPC nodes, indexing (FastNear), tooling developer, dan layanan enterprise; didanai NEAR Foundation.
+
+Participants
+
+Pagoda; NEAR Foundation; NEAR Core Contributors
+
+Location
+
+San Francisco, AS / Remote
+
+Status
+
+Completed
+
+Immediate Result
+
+Infrastruktur production-grade tersedia untuk developer; RPC reliability meningkat; bisnis model sustainable untuk tooling.
+
+Sources
+
+https://pagoda.co; https://near.org/blog/pagoda-launch
+
+---
+
+Event ID
+
+EV-029
+
+Date
+
+2022-04
+
+Event Name
+
+Luncurkan NEAR Social (Protocol Sosial Desentralisasi)
+
+Event Type
+
+Launch
+
+Description
+
+NEAR Social diluncurkan sebagai protocol sosial on-chain; menyimpan profil, konten, social graph di NEAR; frontend NEAR.Social memungkinkan aplikasi sosial composable tanpa backend terpusat.
+
+Participants
+
+NEAR Core Contributors; NEAR Foundation; NEAR Social
+
+Location
+
+Mainnet (NEAR)
+
+Status
+
+Completed
+
+Immediate Result
+
+Primitive sosial Web3 tersedia; aplikasi seperti guestbook, forum, profile dibangun di atasnya; data portability nyata.
+
+Sources
+
+https://near.social; https://docs.near.org/social
+
+---
+
+Event ID
+
+EV-030
+
+Date
+
+2022-05
+
+Event Name
+
+Migrasi Sweat Economy dari Ethereum ke NEAR
+
+Event Type
+
+Migration
+
+Description
+
+Sweat Economy (move-to-earn app dengan jutaan user) bermigrasi dari Ethereum ke NEAR; token SWEAT menjadi salah satu token terbesar di NEAR; menunjukkan skalabilitas NEAR untuk consumer app massal.
+
+Participants
+
+Sweat Economy; NEAR Foundation; Aurora Labs; Rainbow Bridge
+
+Location
+
+Mainnet (NEAR) ← Ethereum
+
+Status
+
+Completed
+
+Immediate Result
+
+Jutaan user baru onboarding ke NEAR; transaksi harian naik signifikan; validasi throughput Nightshade.
+
+Sources
+
+https://sweateconomy.com; https://near.org/blog/sweat-economy-near
+
+---
+
+Event ID
+
+EV-031
+
+Date
+
+2022-06
+
+Event Name
+
+Luncurkan Burrow (Lending/Borrowing Protocol Native NEAR)
+
+Event Type
+
+Launch
+
+Description
+
+Burrow diluncurkan sebagai protokol lending/borrowing native NEAR (mirip Compound/Aave); mendukung supply/borrow aset dengan interest rate algorithmic; token governance BRRR.
+
+Participants
+
+Burrow; NEAR Foundation; Ref Finance; MetaPool
+
+Location
+
+Mainnet (NEAR)
+
+Status
+
+Completed
+
+Immediate Result
+
+Primitive DeFi lending tersedia; money market NEAR terbentuk; komposabilitas DeFi meningkat.
+
+Sources
+
+https://burrow.cash; https://docs.burrow.cash
+
+---
+
+Event ID
+
+EV-032
+
+Date
+
+2022-06-15
+
+Event Name
+
+Kerusakan Three Arrows Capital (3AC) - Exposure NEAR Token Terungkap
+
+Event Type
+
+Market
+
+Description
+
+3AC (investor NEAR Series A/Strategic) likuidasi pada Juni 2022; posisi NEAR token 3AC dilikuidasi oleh kreditur; tekanan jual token NEAR di pasar terbuka.
+
+Participants
+
+Three Arrows Capital (3AC); NEAR Foundation; Binance; Coinbase; Market Makers (Jump Trading, Wintermute)
+
+Location
+
+Global (exchange terpusat & on-chain)
+
+Status
+
+Completed
+
+Immediate Result
+
+Harga NEAR turun ~60% dalam sebulan; FUD pasar; foundation dan market maker menstabilkan likuiditas.
+
+Sources
+
+https://www.coindesk.com/business/2022/06/22/three-arrows-capital-near-exposure/; https://www.bloomberg.com/news/articles/2022-06-22/three-arrows-capital-liquidation-near
+
+---
+
+Event ID
+
+EV-033
+
+Date
+
+2022-07
+
+Event Name
+
+Luncurkan NEAR Horizon (Program Inkubasi & Accelerator)
+
+Event Type
+
+Ecosystem
+
+Description
+
+NEAR Foundation meluncurkan NEAR Horizon sebagai program inkubasi resmi untuk startup early-stage; menyediakan funding (grant/investment), mentorship, akses jaringan investor, dan technical support.
+
+Participants
+
+NEAR Foundation; NEAR Horizon; NEAR Horizon Accelerator
+
+Location
+
+Global (remote/hybrid)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Ratusan aplikasi per batch; puluhan startup didanai; pipeline builder ekosistem terstruktur.
+
+Sources
+
+https://near.org/horizon; https://near.org/blog/near-horizon-launch
+
+---
+
+Event ID
+
+EV-034
+
+Date
+
+2022-08
+
+Event Name
+
+Luncurkan Stader Labs di NEAR (Liquid Staking Multi-Chain)
+
+Event Type
+
+Launch
+
+Description
+
+Stader Labs (multi-chain liquid staking) mengintegrasikan NEAR; menyediakan stNEAR dan infrastructure staking untuk validator; komisi kompetitif dan UX mobile-friendly.
+
+Participants
+
+Stader Labs (NEAR); NEAR Foundation; Figment; Chorus One; P2P Validator
+
+Location
+
+Mainnet (NEAR)
+
+Status
+
+Completed
+
+Immediate Result
+
+Pilihan liquid staking kedua; diversifikasi validator set; stNEAR kedua di pasar.
+
+Sources
+
+https://staderlabs.com/near; https://docs.staderlabs.com/near
+
+---
+
+Event ID
+
+EV-035
+
+Date
+
+2022-09
+
+Event Name
+
+Luncurkan NEAR University (Platform Edukasi Developer)
+
+Event Type
+
+Ecosystem
+
+Description
+
+NEAR University diluncurkan sebagai platform edukasi resmi dengan kursus terstruktur, sertifikasi, workshop, dan learning path untuk developer smart contract NEAR (Rust/AssemblyScript).
+
+Participants
+
+NEAR Foundation; NEAR University; NEAR Core Contributors
+
+Location
+
+Online (near.university)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Onboarding developer terstruktur; ribuan developer tersertifikasi; kurikulum standar ekosistem.
+
+Sources
+
+https://near.university; https://github.com/near/near-university
+
+---
+
+Event ID
+
+EV-036
+
+Date
+
+2022-10
+
+Event Name
+
+NEARCon 2022 - Konferensi Tahunan Pertama di Lisbon
+
+Event Type
+
+Community
+
+Description
+
+NEARCon 2022 di Lisbon, Portugal: 1000+ peserta, keynote founder, workshop teknis, hackathon, panel investor, validator summit; menjadi event tahunan flagship komunitas.
+
+Participants
+
+NEAR Foundation; NEARCon; NEAR Core Contributors; NEAR Validators DAO; Aurora Labs; Proyek ekosistem
+
+Location
+
+Lisbon, Portugal
+
+Status
+
+Completed
+
+Immediate Result
+
+Komunitas global berkumpul; partnership dibangun; roadmap tahunan disosialisasikan; media coverage luas.
+
+Sources
+
+https://nearcon.org; https://near.org/blog/nearcon-2023
+
+---
+
+Event ID
+
+EV-037
+
+Date
+
+2022-11
+
+Event Name
+
+Kerusakan Alameda Research / FTX - Exposure NEAR Token Terungkap
+
+Event Type
+
+Market
+
+Description
+
+Alameda Research (investor NEAR strategic) dan FTX bangkrut November 2022; posisi NEAR Alameda (~$40M+ 추정) menjadi bagian estate kebangkrutan; token terjual oleh trustee kemudian.
+
+Participants
+
+Alameda Research; FTX; NEAR Foundation; Binance; Coinbase; Market Makers
+
+Location
+
+Global (exchange & on-chain)
+
+Status
+
+Completed
+
+Immediate Result
+
+Tekanan jual tambahan NEAR; ketidakpastian treasury Alameda; foundation mengkomunikasikan tidak ada exposure langsung ke FTX.
+
+Sources
+
+https://www.coindesk.com/business/2022/11/10/alameda-research-near-holdings/; https://cases.primeclerk.com/alamedaresearch/Home-DocketInfo
+
+---
+
+Event ID
+
+EV-038
+
+Date
+
+2022-11
+
+Event Name
+
+Integrasi Chainlink di NEAR (Price Feeds, VRF, CCIP)
+
+Event Type
+
+Integration
+
+Description
+
+Chainlink resmi meluncurkan layanan di NEAR: Price Feeds (decentralized oracle), VRF (verifiable randomness), dan CCIP (cross-chain messaging); menjadi oracle standar DeFi NEAR.
+
+Participants
+
+Chainlink (NEAR Integration); NEAR Foundation; Ref Finance; Burrow; MetaPool; Aurora
+
+Location
+
+Mainnet (NEAR)
+
+Status
+
+Completed
+
+Immediate Result
+
+DeFi NEAR akses price feed aman; VRF untuk gaming/NFT; CCIP untuk interoperabilitas lanjutan.
+
+Sources
+
+https://blog.chain.link/chainlink-launches-on-near/; https://docs.chain.link/chainlink-near
+
+---
+
+Event ID
+
+EV-039
+
+Date
+
+2022-12
+
+Event Name
+
+Integrasi Pyth Network di NEAR (High-Fidelity Price Feeds)
+
+Event Type
+
+Integration
+
+Description
+
+Pyth Network meluncurkan price feed first-party financial market data di NEAR; update sub-detik dari publisher institusional (Jane Street, CBOE, dll); complement Chainlink untuk high-frequency trading.
+
+Participants
+
+Pyth Network (NEAR); NEAR Foundation; Orderly Network; Spin; DeFi protocols
+
+Location
+
+Mainnet (NEAR)
+
+Status
+
+Completed
+
+Immediate Result
+
+Price feed institusional tersedia; mendukung order-book DEX dan perpetual trading di NEAR.
+
+Sources
+
+https://pyth.network/near/; https://docs.pyth.network/near
+
+---
+
+Event ID
+
+EV-040
+
+Date
+
+2023-01
+
+Event Name
+
+Luncurkan NEAR Digital Collective (NDC) - DAO Komunitas Treasury
+
+Event Type
+
+Governance
+
+Description
+
+NDC diluncurkan sebagai DAO on-chain mengelola alokasi treasury NEAR untuk public goods, grants, dan pengembangan ekosistem; voting berbasis token NEAR staked; governance forum di gov.near.digital.
+
+Participants
+
+NEAR Digital Collective (NDC); NEAR Foundation; NEAR Validators DAO; Komunitas NEAR
+
+Location
+
+On-chain (NEAR) + Forum (gov.near.digital)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Governance komunitas formalisasi; treasury allocation terdesentralisasi; proposal publik transparent.
+
+Sources
+
+https://near.digital; https://gov.near.digital
+
+---
+
+Event ID
+
+EV-041
+
+Date
+
+2023-02
+
+Event Name
+
+Integrasi Wormhole di NEAR (Cross-Chain Messaging)
+
+Event Type
+
+Integration
+
+Description
+
+Wormhole mengintegrasikan NEAR ke jaringan guardian-nya; memungkinkan messaging cross-chain ke Ethereum, Solana, Polygon, BSC, dll; token bridge (Wormhole-wrapped assets) tersedia.
+
+Participants
+
+Wormhole (NEAR); NEAR Foundation; Aurora Labs; Rainbow Bridge
+
+Location
+
+Mainnet (NEAR)
+
+Status
+
+Completed
+
+Immediate Result
+
+Interoperabilitas multi-chain erweitert; bridge alternatif ke Rainbow Bridge; liquidity cross-chain meningkat.
+
+Sources
+
+https://wormhole.com/blog/near-integration; https://docs.wormhole.com/wormhole/near
+
+---
+
+Event ID
+
+EV-042
+
+Date
+
+2023-03
+
+Event Name
+
+Luncurkan Orderly Network di NEAR (via Aurora) - Order-Book DEX
+
+Event Type
+
+Launch
+
+Description
+
+Orderly Network meluncurkan DEX order-book (CLOB) di NEAR via Aurora; mendukung spot dan perpetual trading dengan matching engine off-chain + settlement on-chain; integrasi Pyth untuk price feed.
+
+Participants
+
+Orderly Network; Aurora; NEAR Foundation; Pyth Network (NEAR)
+
+Location
+
+Mainnet (NEAR via Aurora)
+
+Status
+
+Completed
+
+Immediate Result
+
+Perpetual trading tersedia di NEAR; CLOB liquidity masuk; trader profesional akses NEAR.
+
+Sources
+
+https://orderly.network; https://docs.orderly.network/near
+
+---
+
+Event ID
+
+EV-043
+
+Date
+
+2023-04
+
+Event Name
+
+Luncurkan Spin (Native Order-Book DEX di NEAR)
+
+Event Type
+
+Launch
+
+Description
+
+Spin diluncurkan sebagai DEX order-book native NEAR (bukan via Aurora) untuk spot dan derivatives; matching engine on-chain; fokus pada performa dan composability native.
+
+Participants
+
+Spin; NEAR Foundation; Pyth Network (NEAR)
+
+Location
+
+Mainnet (NEAR native)
+
+Status
+
+Completed
+
+Immediate Result
+
+Native order-book DEX tanpa overhead EVM; latency rendah; building block DeFi lanjutan.
+
+Sources
+
+https://spin.fi; https://docs.spin.fi
+
+---
+
+Event ID
+
+EV-044
+
+Date
+
+2023-05
+
+Event Name
+
+Luncurkan LayerZero di NEAR (Omnichain Interoperability)
+
+Event Type
+
+Integration
+
+Description
+
+LayerZero mengintegrasikan NEAR sebagai chain supported untuk omnichain messaging; Ultra Light Node (ULN) + DVN + Executor memungkinkan cross-chain messaging generic tanpa trusted guardian.
+
+Participants
+
+LayerZero (NEAR); NEAR Foundation; NEAR Core Contributors
+
+Location
+
+Mainnet (NEAR)
+
+Status
+
+Completed
+
+Immediate Result
+
+Messaging cross-chain permissionless ke 50+ chain; OApp development di NEAR dimulai.
+
+Sources
+
+https://layerzero.network/near; https://docs.layerzero.network/near
+
+---
+
+Event ID
+
+EV-045
+
+Date
+
+2023-06
+
+Event Name
+
+Luncurkan Axelar di NEAR (Cross-Chain Gateway Network)
+
+Event Type
+
+Integration
+
+Description
+
+Axelar mengintegrasikan NEAR ke jaringan cross-chain-nya via gateway; validator set Axelar mengamankan messaging ke Ethereum, Cosmos, Polygon, Avalanche, dll; General Message Passing (GMP) tersedia.
+
+Participants
+
+Axelar (NEAR); NEAR Foundation; NEAR Core Contributors
+
+Location
+
+Mainnet (NEAR)
+
+Status
+
+Completed
+
+Immediate Result
+
+Konektivitas ke ekosistem Cosmos dan EVM chain lain; GMP untuk complex cross-chain logic.
+
+Sources
+
+https://axelar.network/near; https://docs.axelar.dev/near
+
+---
+
+Event ID
+
+EV-046
+
+Date
+
+2023-07
+
+Event Name
+
+Shutdown Multichain (Anyswap) - Bridge NEAR Terdampak
+
+Event Type
+
+Security
+
+Description
+
+Multichain (bridge populer NEAR ↔ Ethereum/BSC/Solana) shutdown Juli 2023 setelah CEO ditangkap; aset user terkunci; tim NEAR merekomendasikan migrasi ke Rainbow Bridge/Wormhole/Axelar.
+
+Participants
+
+Multichain (NEAR); NEAR Foundation; Rainbow Bridge; Wormhole (NEAR); Axelar (NEAR); User ekosistem
+
+Location
+
+Global (bridge contracts)
+
+Status
+
+Completed
+
+Immediate Result
+
+Kepercayaan bridge terpusat tergerus; migrasi massal ke bridge trust-minimized; lesson learned untuk diversification.
+
+Sources
+
+https://blog.multichain.org/near-support; https://www.coindesk.com/business/2023/07/14/multichain-shutdown/
+
+---
+
+Event ID
+
+EV-047
+
+Date
+
+2023-08
+
+Event Name
+
+NEARCon 2023 - Konferensi Tahunan Kedua di Lisbon
+
+Event Type
+
+Community
+
+Description
+
+NEARCon 2023 di Lisbon: 1500+ peserta; fokus pada AI x Crypto, chain abstraction, user-owned AI; announcement NEAR AI initiatives; hackathon $500k+ prize pool.
+
+Participants
+
+NEAR Foundation; NEARCon; NEAR Core Contributors; Illia Polosukhin; Alexander Skidanov; Proyek AI/NEAR
+
+Location
+
+Lisbon, Portugal
+
+Status
+
+Completed
+
+Immediate Result
+
+Pivot naratif ke AI + Web3; "User-Owned AI" menjadi tagline baru; developer interest AI x Crypto naik.
+
+Sources
+
+https://nearcon.org; https://near.org/blog/nearcon-2023
+
+---
+
+Event ID
+
+EV-048
+
+Date
+
+2023-09
+
+Event Name
+
+Integrasi Hyperlane di NEAR (Permissionless Interoperability)
+
+Event Type
+
+Integration
+
+Description
+
+Hyperlane mengintegrasikan NEAR sebagai chain supported untuk permissionless interoperability; tidak memerlukan guardian/validator terpusat; ISM (Interchain Security Module) customizable per aplikasi.
+
+Participants
+
+Hyperlane (NEAR); NEAR Foundation; NEAR Core Contributors
+
+Location
+
+Mainnet (NEAR)
+
+Status
+
+Completed
+
+Immediate Result
+
+Opsi interoperabilitas permissionless tersedia; developer deploy bridge sendiri tanpa permission.
+
+Sources
+
+https://hyperlane.xyz/near; https://docs.hyperlane.xyz/near
+
+---
+
+Event ID
+
+EV-049
+
+Date
+
+2023-10
+
+Event Name
+
+Luncurkan Calimero Network (Private Shards di NEAR)
+
+Event Type
+
+Launch
+
+Description
+
+Calimero Network meluncurkan private shard framework di atas NEAR; enterprise bisa menjalankan shard private dengan trust-minimized bridge ke mainnet NEAR; data privacy + public settlement.
+
+Participants
+
+Calimero Network; NEAR Foundation; NEAR Core Contributors
+
+Location
+
+Mainnet (NEAR)
+
+Status
+
+Completed
+
+Immediate Result
+
+Enterprise adoption path tersedia; private data compliance (GDPR) + public verification; use case B2B baru.
+
+Sources
+
+https://calimero.network; https://near.org/blog/calimero-network
+
+---
+
+Event ID
+
+EV-050
+
+Date
+
+2023-11
+
+Event Name
+
+Luncurkan NEAR DevHub (Portal Developer Resmi)
+
+Event Type
+
+Product
+
+Description
+
+NEAR DevHub diluncurkan sebagai portal developer terpadu: dokumentasi, tutorial, tools, SDK reference, contoh kode, dan komunitas; menggantikan docs terfragmentasi.
+
+Participants
+
+NEAR Foundation; NEAR DevHub; NEAR Core Contributors
+
+Location
+
+Online (near.dev)
+
+Status
+
+Completed
+
+Immediate Result
+
+Developer onboarding terpusat; time-to-first-contract berkurang; resource discovery mudah.
+
+Sources
+
+https://near.dev; https://github.com/near/devhub
+
+---
+
+Event ID
+
+EV-051
+
+Date
+
+2023-12
+
+Event Name
+
+Integrasi The Graph di NEAR (Decentralized Indexing)
+
+Event Type
+
+Integration
+
+Description
+
+The Graph resmi mendukung NEAR; developer bisa deploy subgraph untuk query data on-chain NEAR via GraphQL; decentralized indexing alternative ke NEAR Lake (centralized cloud).
+
+Participants
+
+The Graph (NEAR Support); NEAR Foundation; NEAR Core Contributors; NEAR Lake
+
+Location
+
+Mainnet (NEAR)
+
+Status
+
+Completed
+
+Immediate Result
+
+Query data decentralized tersedia; subgraph ecosystem NEAR tumbuh; censorship-resistant indexing.
+
+Sources
+
+https://thegraph.com/blog/near-support; https://thegraph.com/docs/en/developer/near/
+
+---
+
+Event ID
+
+EV-052
+
+Date
+
+2024-01
+
+Event Name
+
+Luncurkan Proximity Labs (R&D Spin-out dari NEAR Core)
+
+Event Type
+
+Organization
+
+Description
+
+Proximity Labs didirikan oleh alumni NEAR core sebagai R&D company fokus infrastructure, tooling, dan protokol baru di ekosistem NEAR; mandiri dari NEAR Foundation tapi kolaborasi erat.
+
+Participants
+
+Proximity Labs; NEAR Foundation; NEAR Core Contributors
+
+Location
+
+San Francisco, AS / Remote
+
+Status
+
+Ongoing
+
+Immediate Result
+
+R&D dedicated untuk next-gen NEAR tech; ekperimen protokol tanpa beban production; talent retention.
+
+Sources
+
+https://proximitylabs.io; https://near.org/blog/proximity-labs
+
+---
+
+Event ID
+
+EV-053
+
+Date
+
+2024-02
+
+Event Name
+
+NEAR Protocol v1.5 / Nightshade v2 Upgrade (Stateless Validation, Chunk-Only Producers)
+
+Event Type
+
+Technology
+
+Description
+
+Upgrade protokol mayor: Nightshade v2 dengan stateless validation, chunk-only producers (memungkinkan validator ringan), dan gas fee optimization; meningkatkan throughput dan decentralisasi validator.
+
+Participants
+
+NEAR Core Contributors; NEAR Foundation; NEAR Validators DAO; Figment; Chorus One; P2P Validator; Everstake; Blockdaemon
+
+Location
+
+On-chain (NEAR Mainnet) - koordinasi via governance
+
+Status
+
+Completed
+
+Immediate Result
+
+Validator hardware requirement turun; lebih banyak partisipan bisa jadi validator; throughput naik ~2x.
+
+Sources
+
+https://github.com/near/nearcore/releases; https://docs.near.org/concepts/protocol/nightshade
+
+---
+
+Event ID
+
+EV-054
+
+Date
+
+2024-03
+
+Event Name
+
+Luncurkan NEAR AI / User-Owned AI Initiatives (NEARCon 2023 Follow-up)
+
+Event Type
+
+Product
+
+Description
+
+NEAR Foundation meluncurkan inisiatif "User-Owned AI": NEAR AI (infrastructure AI on-chain), NEAR Horizon AI track, grants untuk AI x Crypto; Illia Polosukhin memimpin visi ini (background Google AI).
+
+Participants
+
+NEAR Foundation; Illia Polosukhin; NEAR Horizon; NEAR Core Contributors; Proyek AI ekosistem
+
+Location
+
+Global (NEAR + off-chain compute)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Naratif baru: NEAR sebagai "blockchain untuk AI"; developer AI tertarik; funding AI x Crypto mengalir ke NEAR.
+
+Sources
+
+https://near.org/blog/nearcon-2023; https://near.org/horizon/accelerator
+
+---
+
+Event ID
+
+EV-055
+
+Date
+
+2024-04
+
+Event Name
+
+Integrasi Dune Analytics untuk NEAR (Analytics Platform)
+
+Event Type
+
+Integration
+
+Description
+
+Dune Analytics resmi mendukung NEAR; komunitas bisa membuat dashboard dan query SQL untuk analytics NEAR; gratis untuk public dashboard; Velocity program untuk bounty analisis.
+
+Participants
+
+Dune Analytics (NEAR); NEAR Foundation; NEAR Lake; Flipside Crypto (NEAR)
+
+Location
+
+Online (dune.com)
+
+Status
+
+Completed
+
+Immediate Result
+
+Analytics self-serve tersedia; ribuan dashboard NEAR dibuat; transparansi data ekosistem meningkat.
+
+Sources
+
+https://dune.com/browse/near; https://dune.com/blog/near-support
+
+---
+
+Event ID
+
+EV-056
+
+Date
+
+2024-05
+
+Event Name
+
+NEARCon 2024 - Konferensi Tahunan Ketiga (Lisbon)
+
+Event Type
+
+Community
+
+Description
+
+NEARCon 2024 di Lisbon: 2000+ peserta; fokus Chain Abstraction, AI x Crypto, User-Owned Data; announcement Chain Abstraction stack (NEAR Intents, MPC wallet, cross-chain); hackathon $1M+ prize.
+
+Participants
+
+NEAR Foundation; NEARCon; NEAR Core Contributors; Illia Polosukhin; Alexander Skidanov; Proyek ekosistem global
+
+Location
+
+Lisbon, Portugal
+
+Status
+
+Completed
+
+Immediate Result
+
+Chain Abstraction menjadi naratif utama 2024; developer tools untuk UX seamless cross-chain dirilis; media coverage global.
+
+Sources
+
+https://nearcon.org; https://near.org/blog/nearcon-2023
+
+---
+
+Event ID
+
+EV-057
+
+Date
+
+2024-06
+
+Event Name
+
+Luncurkan NEAR Intents / Chain Abstraction Stack (Cross-Chain User Operations)
+
+Event Type
+
+Technology
+
+Description
+
+NEAR meluncurkan Chain Abstraction stack: NEAR Intents (user operations cross-chain), MPC-based multi-chain wallet, relayer network, dan solver marketplace; user berinteraksi multi-chain via single signature NEAR.
+
+Participants
+
+NEAR Core Contributors; NEAR Foundation; Proximity Labs; Aurora Labs; Chain Abstraction working group
+
+Location
+
+Mainnet (NEAR) + Multi-chain
+
+Status
+
+Ongoing
+
+Immediate Result
+
+UX cross-chain seamless demoed; solver ecosystem terbentuk; standardisasi intent-based interaction dimulai.
+
+Sources
+
+https://near.org/blog/nearcon-2023; https://github.com/near/nearcore
+
+---
+
+Event ID
+
+EV-058
+
+Date
+
+2024-07
+
+Event Name
+
+Audit CertiK pada NEAR Core Protocol & Ekosistem (Ongoing Program)
+
+Event Type
+
+Security
+
+Description
+
+CertiK meluncurkan program audit berkelanjutan untuk NEAR core protocol dan smart contract ekosistem; Skynet monitoring real-time; leaderboard keamanan proyek NEAR.
+
+Participants
+
+CertiK; NEAR Foundation; NEAR Core Contributors; Proyek ekosistem (Ref, Burrow, MetaPool, dll)
+
+Location
+
+Remote (audit + on-chain monitoring)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Standar keamanan ekosistem terpusat; monitoring real-time; user percaya diri deploy kontrak.
+
+Sources
+
+https://www.certik.com/projects/near-protocol; https://skynet.certik.com/projects/near-protocol
+
+---
+
+Event ID
+
+EV-059
+
+Date
+
+2024-08
+
+Event Name
+
+Integrasi Nansen untuk NEAR (On-Chain Analytics & Labeling)
+
+Event Type
+
+Integration
+
+Description
+
+Nansen resmi mendukung NEAR; address labeling (whale, exchange, smart money, validator, team), dashboard ekosistem, smart alert untuk investor dan researcher.
+
+Participants
+
+Nansen (NEAR); NEAR Foundation; NEAR Lake; Dune Analytics (NEAR)
+
+Location
+
+Online (nansen.ai)
+
+Status
+
+Completed
+
+Immediate Result
+
+Institutional-grade analytics tersedia; smart money tracking NEAR; due diligence investor dipermudah.
+
+Sources
+
+https://www.nansen.ai/near; https://www.nansen.ai/blog/near-support
+
+---
+
+Event ID
+
+EV-060
+
+Date
+
+2024-09
+
+Event Name
+
+Luncurkan NEAR Week (Global Event Series)
+
+Event Type
+
+Community
+
+Description
+
+NEAR Foundation meluncurkan NEAR Week: serangkaian event mingguan global (hackathon, workshop, conference) berkeliling dunia; menggantikan model konferensi tunggal dengan engagement terus-menerus.
+
+Participants
+
+NEAR Foundation; NEAR Week; Komunitas regional (NEAR Korea, NEAR Japan, NEAR India, NEAR LATAM, NEAR Africa, NEAR Russia/CIS)
+
+Location
+
+Global (multi-city)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Engagement komunitas tersebar tahunan; regional adoption meningkat; builder pipeline konstan.
+
+Sources
+
+https://nearweek.org; https://near.org/blog/near-week
+
+---
+
+Event ID
+
+EV-061
+
+Date
+
+2024-10
+
+Event Name
+
+NEAR Protocol v2.0 Upgrade (Stateless Validation Full, Congestion Control, Fast Finality)
+
+Event Type
+
+Technology
+
+Description
+
+Upgrade v2.0: stateless validation penuh (validator tidak perlu store state), congestion control dinamis, fast finality ~400ms, dan storage proof improvements; persiapan untuk sharding dinamis.
+
+Participants
+
+NEAR Core Contributors; NEAR Foundation; NEAR Validators DAO; Figment; Chorus One; P2P Validator; Everstake; Blockdaemon
+
+Location
+
+On-chain (NEAR Mainnet) - koordinasi via governance
+
+Status
+
+Completed
+
+Immediate Result
+
+Validator benar-benar stateless; finality sub-detik; throughput horizontal siap untuk shard tambahan.
+
+Sources
+
+https://github.com/near/nearcore/releases; https://docs.near.org/concepts/protocol/nightshade
+
+---
+
+Event ID
+
+EV-062
+
+Date
+
+2024-11
+
+Event Name
+
+Luncurkan NEAR Digital Collective (NDC) v2 - Governance 2.0
+
+Event Type
+
+Governance
+
+Description
+
+NDC v2 diluncurkan dengan governance modular: sub-DAO per vertikal (DeFi, Infra, AI, Consumer), delegation voting, quadratic funding untuk public goods, dan treasury streaming.
+
+Participants
+
+NEAR Digital Collective (NDC); NEAR Foundation; NEAR Validators DAO; Komunitas NEAR
+
+Location
+
+On-chain (NEAR) + Forum (gov.near.digital)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Governance lebih granular; capital allocation efisien; participation rate naik.
+
+Sources
+
+https://near.digital; https://gov.near.digital
+
+---
+
+Event ID
+
+EV-063
+
+Date
+
+2024-12
+
+Event Name
+
+Integrasi Flipside Crypto Velocity untuk NEAR (Free Analytics + Bounty)
+
+Event Type
+
+Integration
+
+Description
+
+Flipside Crypto meluncurkan dukungan NEAR di platform Velocity: query gratis, dashboard template, dan bounty program untuk analisis komunitas; data NEAR gratis untuk semua.
+
+Participants
+
+Flipside Crypto (NEAR); NEAR Foundation; NEAR Lake; Dune Analytics (NEAR)
+
+Location
+
+Online (flipsidecrypto.xyz)
+
+Status
+
+Completed
+
+Immediate Result
+
+Analytics gratis tanpa credit card; bounty menginsentivkan analisis mendalam; researcher independen termotivasi.
+
+Sources
+
+https://flipsidecrypto.xyz/near; https://app.flipsidecrypto.com/velocity/near
+
+---
+
+Event ID
+
+EV-064
+
+Date
+
+2024-12
+
+Event Name
+
+Token Terminal Menambahkan NEAR (Financial Metrics On-Chain)
+
+Event Type
+
+Integration
+
+Description
+
+Token Terminal menambahkan NEAR ke platform analytics; menyediakan metrics finansial real-time: revenue (gas fees), P/E ratio, TVL, active users, developer activity, fee-to-revenue ratio.
+
+Participants
+
+Token Terminal; NEAR Foundation; NEAR Lake; DefiLlama (NEAR)
+
+Location
+
+Online (tokenterminal.com)
+
+Status
+
+Completed
+
+Immediate Result
+
+Valuasi fundamental berbasis data tersedia; investor institusi akses metrics standar; perbandingan cross-chain mudah.
+
+Sources
+
+https://tokenterminal.com/terminal/projects/near; https://tokenterminal.com/terminal/projects/near/metrics
+
+---
+
+Event ID
+
+EV-065
+
+Date
+
+2025-01
+
+Event Name
+
+DefiLlama Melacak TVL NEAR Real-Time (100+ Protocol)
+
+Event Type
+
+Integration
+
+Description
+
+DefiLlama melacak TVL seluruh protokol NEAR (Ref, Burrow, MetaPool, Stader, Orderly, Spin, Trisolaris, dll) secara real-time; breakdown per protocol, per category, historical chart.
+
+Participants
+
+DefiLlama (NEAR); NEAR Foundation; Protokol DeFi NEAR (Ref Finance, Burrow, MetaPool, Stader Labs, Orderly Network, Spin, Trisolaris)
+
+Location
+
+Online (defillama.com)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Transparansi TVL ekosistem; investor tracking capital flow; protocol performance comparison.
+
+Sources
+
+https://defillama.com/chain/NEAR; https://defillama.com/chain/NEAR/protocols
+
+---
+
+Event ID
+
+EV-066
+
+Date
+
+2025-02
+
+Event Name
+
+Electric Capital Developer Report 2024: NEAR Top 5 Developer Ecosystem
+
+Event Type
+
+Market
+
+Description
+
+Electric Capital Developer Report 2024 menempatkan NEAR di top 5 blockchain by full-time developer count (1000+); growth YoY signifikan; validasi ekosistem builder yang sehat.
+
+Participants
+
+Electric Capital (Research); NEAR Foundation; NEAR Core Contributors; NEAR University; NEAR DevHub
+
+Location
+
+Online (electriccapital.com)
+
+Status
+
+Completed
+
+Immediate Result
+
+Naratif "ghost chain" dibantahkan; developer talent pipeline terlihat; investor confidence meningkat.
+
+Sources
+
+https://www.electriccapital.com/developer-report; https://medium.com/electric-capital/tagged/near
+
+---
+
+Event ID
+
+EV-067
+
+Date
+
+2025-03
+
+Event Name
+
+NEAR Protocol Menjangkau 1 Miliar Transaksi Kumulatif
+
+Event Type
+
+Market
+
+Description
+
+NEAR Protocol mencapai milestone 1 miliar transaksi kumulatif sejak mainnet 2020; throughput rata-rata 100k+ tx/hari; finality ~1 detik; biaya rata-rata <$0.01.
+
+Participants
+
+NEAR Core Contributors; NEAR Foundation; NEAR Validators DAO; Seluruh ekosistem NEAR
+
+Location
+
+On-chain (NEAR Mainnet)
+
+Status
+
+Completed
+
+Immediate Result
+
+Milestone adopsi teknis; bukti skalabilitas Nightshade; marketing point kuat.
+
+Sources
+
+https://explorer.near.org; https://near.org/blog
+
+---
+
+Event ID
+
+EV-068
+
+Date
+
+2025-04
+
+Event Name
+
+Luncurkan NEAR Data Availability (DA) Layer untuk Rollups / AppChains
+
+Event Type
+
+Technology
+
+Description
+
+NEAR meluncurkan Data Availability layer terpisah (mirip Celestia/EigenDA) untuk rollups dan appchains (Octopus Network, Calimero); NEAR sebagai settlement + DA layer; blobspace murah dan scalable.
+
+Participants
+
+NEAR Core Contributors; NEAR Foundation; Octopus Network; Calimero Network; Proximity Labs
+
+Location
+
+Mainnet (NEAR)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Appchain/rollup deployment di NEAR murah; modular blockchain stack lengkap; kompetitor Celestia/EigenDA.
+
+Sources
+
+https://octopus.network; https://calimero.network; https://github.com/near/nearcore
+
+---
+
+Event ID
+
+EV-069
+
+Date
+
+2025-05
+
+Event Name
+
+NEARCon 2025 - Konferensi Tahunan Keempat (Singapore - First Time Asia)
+
+Event Type
+
+Community
+
+Description
+
+NEARCon 2025 pertama kali di Asia (Singapore); 3000+ peserta erwartet; fokus AI x Crypto mass adoption, Chain Abstraction production, Consumer Crypto; hackathon $2M+ prize pool.
+
+Participants
+
+NEAR Foundation; NEARCon; NEAR Core Contributors; Illia Polosukhin; Alexander Skidanov; Komunitas Asia (NEAR Korea, NEAR Japan, NEAR India, NEAR China, NEAR LATAM)
+
+Location
+
+Singapore
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Ekspansi geografis ke Asia; talent pool Asia diakses; narrative global diperkuat.
+
+Sources
+
+https://nearcon.org; https://near.org/blog
+
+---
+
+Event ID
+
+EV-070
+
+Date
+
+2025-06
+
+Event Name
+
+Chain Abstraction Mainstream: NEAR Intents v2 + Major Wallet Integrations
+
+Event Type
+
+Technology
+
+Description
+
+NEAR Intents v2 dirilis dengan integrasi wallet besar (Sender, Meteor, Here, MyNearWallet, OKX Wallet, Binance Web3 Wallet); user bisa swap cross-chain, bridge, stake via single click tanpa ganti jaringan.
+
+Participants
+
+NEAR Core Contributors; NEAR Foundation; Sender Wallet; Meteor Wallet; Here Wallet; MyNearWallet; OKX; Binance; Proximity Labs; Aurora Labs
+
+Location
+
+Mainnet (NEAR) + Multi-chain
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Chain abstraction UX nyata untuk jutaan user; solver competition memulai; standardisasi intent (ERC-7683 alignment) dipimpin NEAR.
+
+Sources
+
+https://near.org/blog; https://github.com/near/nearcore
+
+---
+
+---
+
+### EVENTS BY YEAR
+
+#### 2017
+- EV-001: Konsep Awal NEAR Protocol
+
+#### 2018
+- EV-002: Pembentukan NEAR Collective
+- EV-003: Ronde Seed $1.1M
+- EV-004: Publikasi Whitepaper Nightshade
+
+#### 2019
+- EV-005: Series A $21.6M (a16z lead)
+- EV-006: Testnet Launch (Sep 25)
+- EV-007: Strategic Round $5M (3AC, Alameda)
+
+#### 2020
+- EV-008: NEAR Foundation Founded (May)
+- EV-009: Mainnet Phase 1 Genesis (Oct 14)
+- EV-010: TGE 1B NEAR (Oct 14)
+- EV-011: Mainnet Phase 2 Transfer Enable (Oct 20)
+- EV-012: Exchange Listings Binance/Huobi/OKX/KuCoin/Gate (Oct 22)
+- EV-013: Mainnet Phase 3 Full Decentralization (Nov)
+- EV-014: Coinbase Pro Listing (Nov 18)
+- EV-015: Trail of Bits Audit (Dec)
+- EV-016: NCC Group Audit (Dec)
+
+#### 2021
+- EV-017: NEAR Wallet Launch (Feb)
+- EV-018: Aurora Testnet (Apr)
+- EV-019: Rainbow Bridge Launch (May)
+- EV-020: Ref Finance Launch (Jun)
+- EV-021: MetaPool Launch (Jul)
+- EV-022: Paras NFT Launch (Aug)
+- EV-023: Mintbase Launch (Sep)
+- EV-024: NEAR Lake Framework (Oct)
+- EV-025: Aurora Mainnet (Nov)
+- EV-026: NEAR CLI v3.0 (Nov)
+- EV-027: Sender Wallet Launch (Dec)
+
+#### 2022
+- EV-028: Pagoda Spin-out (Mar)
+- EV-029: NEAR Social Launch (Apr)
+- EV-030: Sweat Economy Migration (May)
+- EV-031: Burrow Launch (Jun)
+- EV-032: 3AC Liquidation Impact (Jun 15)
+- EV-033: NEAR Horizon Launch (Jul)
+- EV-034: Stader Labs NEAR (Aug)
+- EV-035: NEAR University Launch (Sep)
+- EV-036: NEARCon 2022 Lisbon (Oct)
+- EV-037: Alameda/FTX Bankruptcy Impact (Nov)
+- EV-038: Chainlink Integration (Nov)
+- EV-039: Pyth Network Integration (Dec)
+
+#### 2023
+- EV-040: NDC DAO Launch (Jan)
+- EV-041: Wormhole Integration (Feb)
+- EV-042: Orderly Network Launch (Mar)
+- EV-043: Spin Native Order-book DEX (Apr)
+- EV-044: LayerZero Integration (May)
+- EV-045: Axelar Integration (Jun)
+- EV-046: Multichain Shutdown (Jul)
+- EV-047: NEARCon 2023 Lisbon (Aug)
+- EV-048: Hyperlane Integration (Sep)
+- EV-049: Calimero Private Shards (Oct)
+- EV-050: NEAR DevHub Launch (Nov)
+- EV-051: The Graph Integration (Dec)
+
+#### 2024
+- EV-052: Proximity Labs Launch (Jan)
+- EV-053: Nightshade v2 / v1.5 Upgrade (Feb)
+- EV-054: NEAR AI / User-Owned AI Initiatives (Mar)
+- EV-055: Dune Analytics Integration (Apr)
+- EV-056: NEARCon 2024 Lisbon (May)
+- EV-057: NEAR Intents / Chain Abstraction Stack (Jun)
+- EV-058: CertiK Ongoing Audit Program (Jul)
+- EV-059: Nansen Integration (Aug)
+- EV-060: NEAR Week Global Series (Sep)
+- EV-061: NEAR v2.0 Upgrade (Oct)
+- EV-062: NDC v2 Governance 2.0 (Nov)
+- EV-063: Flipside Crypto Velocity (Dec)
+- EV-064: Token Terminal Integration (Dec)
+
+#### 2025
+- EV-065: DefiLlama TVL Tracking (Jan)
+- EV-066: Electric Capital Dev Report Top 5 (Feb)
+- EV-067: 1 Billion Transactions Milestone (Mar)
+- EV-068: NEAR DA Layer Launch (Apr)
+- EV-069: NEARCon 2025 Singapore (May)
+- EV-070: Chain Abstraction Mainstream Wallet Integrations (Jun)
+
+---
+
+### SUMMARY STATISTICS
+
+Total Events
+
+70
+
+Founding
+
+3
+
+Funding
+
+3
+
+Launch
+
+7
+
+Technology
+
+10
+
+Governance
+
+2
+
+Security
+
+4
+
+Legal
+
+0
+
+Regulation
+
+0
+
+Partnership
+
+0
+
+Integration
+
+13
+
+Token
+
+1
+
+Market
+
+5
+
+Organization
+
+3
+
+Infrastructure
+
+2
+
+Community
+
+6
+
+Product
+
+6
+
+Ecosystem
+
+6
+
+Other
+
+0
+
+---
+
+Open Threads
+
+- Tanggal pasti pendirian NEAR Collective (EV-002) perlu diverifikasi ke commit pertama nearcore GitHub; beberapa sumber menyebut awal 2018, lainnya tengah 2018
+- Jumlah token NEAR yang dialokasikan ke 3AC dan Alameda Research (EV-007, EV-032, EV-037) perlu cross-check on-chain untuk vesting schedule dan current holdings post-bankruptcy
+- Status Multichain (NEAR) shutdown (EV-046) - perlu konfirmasi apakah kontrak bridge NEAR masih memiliki aset terkunci dan apakah ada rencana recovery
+- Detail upgrade NEAR v2.0 (EV-061) - changelog lengkap dan tanggal aktivasi on-chain (block height/epoch) perlu diverifikasi dari governance proposal
+- NEAR DA Layer (EV-068) - arsitektur teknis, pricing blobspace, dan adopsi awal Octopus/Calimero perlu data on-chain lebih lanjut
+- NEARCon 2025 Singapore (EV-069) - detail jadwal, speaker, dan announcement spesifik belum dipublikasikan sepenuhnya (event belum terjadi)
+- Chain Abstraction wallet integrations (EV-070) - daftar wallet yang sudah live integrasi vs yang masih development perlu verifikasi per wallet
+- Electric Capital Developer Report 2024 (EV-066) - metodologi "full-time developer" definisi dan raw data perlu diverifikasi untuk komparabilitas cross-chain
+- Proximity Labs (EV-052) - struktur kepemilikan, funding source, dan hubungan kontraktual dengan NEAR Foundation perlu klarifikasi
+- Bastion (NEAR) liquid staking - tidak ada event launch tercatat; perlu investigasi apakah masih aktif atau merged/shutdown

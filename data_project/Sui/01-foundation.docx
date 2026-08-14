@@ -1,0 +1,11 @@
+PROJECT: Sui
+
+
+voegd
+<tool_call>
+## search_web
+query: Sui blockchain official name symbol category founding entity founders core team country launch dates mainnet testnet TGE products website repository documentation social media block explorer token contract chain ecosystem
+max_results: 10
+recency_days: -1
+news_only: false
+search_engine: duckduckgo

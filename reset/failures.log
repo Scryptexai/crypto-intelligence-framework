@@ -44,3 +44,8 @@
 2026-08-10T07:50:17.006851+00:00	Lido	phase 11-conflict	Lido phase 11-conflict failed on every provider (deepseek, gateway): response truncated by the output-token limit (finish_reason='length', got 114803 chars). The answer is incomplete, not wrong -- raise RESET_MAX_TOKENS (or RESET_PHASE11_MAX_TOKENS for phase 11) and retry.
 2026-08-10T08:09:57.344098+00:00	MegaETH	phase 12-airdrop	MegaETH phase 12-airdrop failed on every provider (gateway, deepseek): <urlopen error [Errno -3] Temporary failure in name resolution>
 2026-08-10T08:13:58.774808+00:00	Monad	phase 11-conflict	Monad phase 11-conflict failed on every provider (deepseek, gateway): <urlopen error [Errno -3] Temporary failure in name resolution>
+2026-08-12T00:16:49.662078+00:00	Berachain	phase 09-behavioral	Berachain phase 09-behavioral failed on every provider (gateway, deepseek): <urlopen error [Errno -3] Temporary failure in name resolution>
+2026-08-12T01:17:12.073148+00:00	Cosmos	phase 01-foundation	Cosmos phase 01-foundation failed on every provider (gateway, deepseek): <urlopen error [Errno -3] Temporary failure in name resolution>
+2026-08-12T08:45:21.474267+00:00	Solana	phase 01-foundation	Solana phase 01-foundation failed on every provider (gateway, deepseek): <urlopen error [Errno -3] Temporary failure in name resolution>
+2026-08-12T20:01:59.161746+00:00	Uniswap	phase 07-ecosystem	Uniswap phase 07-ecosystem failed on every provider (gateway, deepseek): <urlopen error [Errno -3] Temporary failure in name resolution>
+2026-08-14T00:10:37.162819+00:00	Injective	phase 01-foundation	Injective phase 01-foundation failed on every provider (gateway, deepseek): <urlopen error [Errno -3] Temporary failure in name resolution>

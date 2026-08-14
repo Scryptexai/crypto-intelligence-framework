@@ -1,0 +1,256 @@
+PROJECT: Sei
+
+## Token Information
+
+Official Token Name: Sei
+Symbol: SEI
+Token Standard: Native Cosmos SDK coin (denom: usei); ERC-20 on Ethereum (0x0D6e2D4e48A479087f58089c222C4aE8E0E3C6E5); SPL on Solana via Wormhole (HIGH) [Sei docs tokenomics, https://docs.sei.io/learn/tokenomics; Etherscan, https://etherscan.io/token/0x0D6e2D4e48A479087f58089c222C4aE8E0E3C6E5]
+Blockchain: Sei Network (native, Pacific-1); Ethereum (ERC-20 bridged); Solana (SPL bridged); Arbitrum, Optimism, Base, BSC, Polygon (bridged via Wormhole/Axelar) (HIGH) [Sei docs architecture, https://docs.sei.io/learn/architecture]
+Contract Address: Native: usei (denom); Ethereum ERC-20: 0x0D6e2D4e48A479087f58089c222C4aE8E0E3C6E5; Solana SPL: wormhole wrapped (address varies by bridge deployment) (HIGH) [Etherscan, https://etherscan.io/token/0x0D6e2D4e48A479087f58089c222C4aE8E0E3C6E5; Wormhole portal, https://portalbridge.com]
+Decimals: 6 (usei = 10^-6 SEI) (HIGH) [Sei docs tokenomics, https://docs.sei.io/learn/tokenomics; Sei chain genesis, https://github.com/sei-protocol/sei-chain/blob/main/networks/pacific-1/genesis.json]
+Status: Live (HIGH) [Sei mainnet launch blog, https://sei.io/blog/sei-mainnet-launch]
+Sources: https://docs.sei.io/learn/tokenomics, https://etherscan.io/token/0x0D6e2D4e48A479087f58089c222C4aE8E0E3C6E5, https://sei.io/blog/sei-mainnet-launch
+
+## Supply
+
+Maximum Supply: 10,000,000,000 SEI (10 billion) (HIGH) [Sei whitepaper tokenomics, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md; Sei docs tokenomics, https://docs.sei.io/learn/tokenomics]
+Total Supply: 10,000,000,000 SEI (minted at genesis) (HIGH) [Sei whitepaper, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md; Genesis file, https://github.com/sei-protocol/sei-chain/blob/main/networks/pacific-1/genesis.json]
+Circulating Supply: ~3,300,000,000 SEI (estimated as of 2024-Q3; increases with vesting unlocks) (MEDIUM) [CoinGecko circulating supply, https://www.coingecko.com/en/coins/sei-network; Token Terminal, https://tokenterminal.com/terminal/projects/sei]
+Initial Supply: 10,000,000,000 SEI (full max supply minted at genesis; distribution via vesting) (HIGH) [Sei whitepaper, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md]
+Supply Type: Inflationary (staking rewards mint new SEI; no hard cap beyond initial 10B; inflation rate set by governance) (HIGH) [Sei whitepaper tokenomics, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md; Cosmos SDK mint module, https://docs.cosmos.network/main/modules/mint]
+Sources: https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md, https://docs.sei.io/learn/tokenomics, https://www.coingecko.com/en/coins/sei-network, https://tokenterminal.com/terminal/projects/sei
+
+## Distribution
+
+Community: 48% (4,800,000,000 SEI) — includes airdrops, testnet incentives, ecosystem grants, liquidity mining, community pool (HIGH) [Sei whitepaper tokenomics, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md; Sei blog tokenomics, https://sei.io/blog/sei-tokenomics]
+Team: 20% (2,000,000,000 SEI) — Sei Labs core team and contributors (HIGH) [Sei whitepaper tokenomics, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md]
+Investors: 22% (2,200,000,000 SEI) — Series A and Series B equity investors (Jump Crypto, Multicoin Capital, Delphi Digital, etc.) (HIGH) [Sei whitepaper tokenomics, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md; Sei blog Series A, https://sei.io/blog/sei-raises-5m-series-a]
+Foundation: 10% (1,000,000,000 SEI) — Sei Foundation / protocol treasury for ecosystem development (HIGH) [Sei whitepaper tokenomics, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md]
+Treasury: Included in Foundation/Community allocation; separate protocol-owned treasury not distinctly broken out in whitepaper (MEDIUM) [Sei whitepaper, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md]
+Ecosystem: Included in Community (48%) — ecosystem fund grants, builder incentives, liquidity bootstrapping (HIGH) [Sei ecosystem fund blog, https://sei.io/blog/sei-ecosystem-fund; Sei whitepaper, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md]
+Advisors: Not separately allocated in whitepaper; may be part of Team or Investors allocation (LOW) [Sei whitepaper tokenomics, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md]
+Other: Not specified (LOW) [Sei whitepaper, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md]
+Sources: https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md, https://docs.sei.io/learn/tokenomics, https://sei.io/blog/sei-tokenomics, https://sei.io/blog/sei-raises-5m-series-a, https://sei.io/blog/sei-ecosystem-fund
+
+## Vesting Schedule
+
+Category: Community (48%)
+Cliff: 0 months (partial unlock at TGE for airdrop/testnet rewards)
+Vesting: 36–60 months linear for ecosystem grants/liquidity mining; airdrop portions vary
+Unlock Frequency: Monthly/quarterly for programmatic distributions
+Current Status: Ongoing — airdrop/testnet rewards partially unlocked; ecosystem fund deploying over years
+Sources: https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md, https://sei.io/blog/sei-tokenomics
+
+Category: Team (20%)
+Cliff: 12 months
+Vesting: 36 months linear after cliff (total 48 months)
+Unlock Frequency: Monthly
+Current Status: Cliff passed (Aug 2024); monthly vesting active
+Sources: https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md, https://sei.io/blog/sei-tokenomics
+
+Category: Investors (22%)
+Cliff: 12 months
+Vesting: 24–36 months linear after cliff (varies by round)
+Unlock Frequency: Monthly
+Current Status: Cliff passed (Aug 2024); monthly vesting active
+Sources: https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md, https://sei.io/blog/sei-tokenomics
+
+Category: Foundation (10%)
+Cliff: 0 months (partial for immediate ecosystem ops)
+Vesting: 60 months linear for remainder
+Unlock Frequency: Monthly
+Current Status: Ongoing — used for ecosystem fund, grants, operations
+Sources: https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md, https://sei.io/blog/sei-ecosystem-fund
+
+## TGE
+
+TGE Date: 2023-08-15 (EV-004) (HIGH) [Sei mainnet launch blog, https://sei.io/blog/sei-mainnet-launch]
+Initial Unlock: ~15–20% of total supply (estimated: airdrop recipients, testnet incentives, initial liquidity, Binance listing allocation) (MEDIUM) [Sei whitepaper tokenomics, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md; Binance announcement, https://www.binance.com/en/blog/spotlight/sei-sei-326868]
+Unlocked Categories: Community airdrop/testnet rewards; initial liquidity for DEX/CEX; Binance listing allocation; Foundation operational treasury (HIGH) [Sei blog tokenomics, https://sei.io/blog/sei-tokenomics; Binance announcement, https://www.binance.com/en/blog/spotlight/sei-sei-326868]
+Launch Platform: Binance Spot Listing (SEI/USDT, SEI/BUSD, SEI/BNB) — no Launchpool, no public sale (HIGH) [Binance announcement, https://www.binance.com/en/blog/spotlight/sei-sei-326868]
+Status: Completed (HIGH) [Sei mainnet launch blog, https://sei.io/blog/sei-mainnet-launch]
+Sources: https://sei.io/blog/sei-mainnet-launch, https://www.binance.com/en/blog/spotlight/sei-sei-326868, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md
+
+## Utility
+
+Utility: Gas Fee Payment
+Deskripsi: Semua transaksi di Sei (CosmWasm, EVM, native modules, IBC) membayar gas fee dalam SEI (denom: usei); fee dibagi ke validator dan community pool via distribution module (HIGH)
+Status: Live
+Sources: https://docs.sei.io/learn/fees, https://docs.sei.io/learn/architecture
+
+Utility: Staking & Validator Bonding
+Deskripsi: SEI di-stake ke validator untuk keamanan PoS; delegator menerima staking rewards; validator memerlukan bonded SEI untuk consensus participation (HIGH)
+Status: Live
+Sources: https://docs.sei.io/learn/staking, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md
+
+Utility: Governance Voting
+Deskripsi: Pemegang SEI (staked) dapat vote pada proposal governance via Cosmos SDK governance module (parameter changes, upgrades, community pool spend) (HIGH)
+Status: Live
+Sources: https://docs.sei.io/learn/governance, https://seitrace.com/gov
+
+Utility: Order Matching Engine Fees
+Deskripsi: Built-in order matching engine (native module) mengambil fee pada matched order; fee masuk community pool (HIGH)
+Status: Live
+Sources: https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md, https://docs.sei.io/learn/architecture#order-matching
+
+Utility: EVM Priority Fees (Sei v2)
+Deskripsi: Transaksi EVM bisa include priority fee (tip) ke proposer; base fee burned atau ke community pool per EIP-1559 model Sei v2 (HIGH)
+Status: Live (sejak Sei v2 mainnet upgrade 2024-08-15, EV-020)
+Sources: https://docs.sei.io/develop/evm/fees, https://sei.io/blog/introducing-sei-v2
+
+Utility: IBC Relayer / Packet Fees
+Deskripsi: IBC packet transfer membayar relayer fees dan acknowledgment fees dalam SEI; sebagian ke community pool (HIGH)
+Status: Live
+Sources: https://docs.sei.io/learn/architecture#ibc, https://ibc.cosmos.network/main/ibc/tao.html#fees
+
+Utility: Token Factory Denom Creation
+Deskripsi: Membuat token native via Token Factory module membayar fee dalam SEI; digunakan untuk bridged token representation (HIGH)
+Status: Live
+Sources: https://docs.sei.io/develop/token-factory, https://github.com/sei-protocol/sei-chain/tree/main/x/tokenfactory
+
+Utility: Collateral (DeFi)
+Deskripsi: SEI digunakan sebagai collateral di lending protocols (Silo Finance), perp DEX (Leviathan), dan yield strategies (Yei Finance) (HIGH)
+Status: Live
+Sources: https://docs.silo.finance, https://leviathan.gg, https://yei.finance
+
+Utility: Liquidity Provision
+Deskripsi: SEI dipasangkan di liquidity pools (DragonSwap, dll) untuk trading fees dan LP rewards (HIGH)
+Status: Live
+Sources: https://dragonswap.app, https://sei.io/ecosystem
+
+Utility: Bridge Asset (Cross-chain)
+Deskripsi: SEI dibridge ke Ethereum, Solana, Arbitrum, Optimism, Base, BSC, Polygon via Wormhole/Axelar sebagai wrapped asset (HIGH)
+Status: Live
+Sources: https://docs.sei.io/learn/architecture, https://portalbridge.com
+
+## Governance
+
+Governance Model: Token-weighted voting via Cosmos SDK Governance Module (on-chain) (HIGH) [Sei docs governance, https://docs.sei.io/learn/governance; Cosmos SDK governance, https://docs.cosmos.network/main/modules/gov]
+Voting System: 1 staked SEI = 1 vote; delegators inherit validator vote unless they override; voting period typically 14 days (HIGH) [Sei docs governance, https://docs.sei.io/learn/governance; Seitrace proposals, https://seitrace.com/gov]
+Voting Power: Proportional to staked SEI (bonded tokens); unbonded SEI tidak memiliki voting power (HIGH) [Cosmos SDK governance, https://docs.cosmos.network/main/modules/gov]
+Delegation: Delegator dapat redelegate ke validator lain kapan saja (unbonding period 21 hari); delegator bisa override vote validator pada proposal spesifik (HIGH) [Sei docs staking, https://docs.sei.io/learn/staking; Cosmos SDK staking, https://docs.cosmos.network/main/modules/staking]
+Proposal System: Siapapun dengan deposit minimum (parameter governance, saat ini ~1000 SEI) bisa submit proposal; jenis: Text, Parameter Change, Software Upgrade, Community Pool Spend (HIGH) [Sei docs governance, https://docs.sei.io/learn/governance; Seitrace proposals, https://seitrace.com/gov]
+Treasury Governance: Community Pool (mengumpulkan fee distribution) dikelola via governance proposals; Foundation/team allocation tidak langsung dikontrol governance (HIGH) [Sei whitepaper, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md; Cosmos SDK distribution, https://docs.cosmos.network/main/modules/distribution]
+Status: Live (HIGH) [Seitrace governance, https://seitrace.com/gov]
+Sources: https://docs.sei.io/learn/governance, https://docs.sei.io/learn/staking, https://seitrace.com/gov, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md
+
+## Inflation / Deflation
+
+Inflation Mechanism: Staking rewards minted via Cosmos SDK Mint Module; inflation rate target 7% tahunan (adjustable governance) bonded ratio target 67% (HIGH) [Sei whitepaper tokenomics, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md; Cosmos SDK mint module, https://docs.cosmos.network/main/modules/mint]
+Emission Schedule: Block provisions minted per block; distributed to stakers (rewards) dan community pool (tax); inflation berkurang seiring bonded ratio meningkat (HIGH) [Sei whitepaper, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md; Cosmos SDK mint, https://docs.cosmos.network/main/modules/mint]
+Burn Mechanism: EVM base fee (Sei v2 EIP-1559) burned; tidak ada burn mechanism untuk native CosmWasm/native tx fees (fee ke validator + community pool) (HIGH) [Sei v2 docs fees, https://docs.sei.io/develop/evm/fees; Sei v2 blog, https://sei.io/blog/introducing-sei-v2]
+Buyback: Tidak ada program buyback resmi dari protocol/Foundation (LOW) [Sei whitepaper, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md; Sei blog, https://sei.io/blog]
+Supply Reduction: Hanya melalui EVM base fee burn; net supply tetap inflationary karena staking rewards > burn (MEDIUM) [Sei v2 docs, https://docs.sei.io/develop/evm/fees; Token Terminal supply data, https://tokenterminal.com/terminal/projects/sei]
+Status: Live (inflationary dengan partial burn di EVM) (HIGH)
+Sources: https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md, https://docs.sei.io/develop/evm/fees, https://docs.cosmos.network/main/modules/mint, https://tokenterminal.com/terminal/projects/sei
+
+## Holder Distribution
+
+Top Holder Concentration: Top 10 alamat memegang ~35–40% total supply (termasuk Foundation, vesting contracts, exchange wallets, bridge contracts) (MEDIUM) [Seitrace rich list, https://seitrace.com/tokens; Etherscan SEI token holders, https://etherscan.io/token/0x0D6e2D4e48A479087f58089c222C4aE8E0E3C6E5#balances]
+Foundation Holding: ~10% (1B SEI) dalam vesting contract / multi-sig; exact address tidak dipublikasikan dengan label resmi (MEDIUM) [Sei whitepaper, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md]
+Investor Holding: ~22% (2.2B SEI) dalam vesting contracts untuk Series A/B investors; unlock bulanan sejak Aug 2024 (MEDIUM) [Sei whitepaper, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md]
+Treasury Holding: Community Pool on-chain address (cosmos1... distribution module) memegang accumulated fees; jumlah bervariasi (MEDIUM) [Seitrace community pool, https://seitrace.com; Cosmos SDK distribution module]
+Community Holding: ~48% (4.8B SEI) tersebar di airdrop recipients, stakers, LP, ecosystem grants, 未分��� ecosystem fund (MEDIUM) [Sei whitepaper, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md]
+Whale Concentration: Gini coefficient tidak dipublikasikan; top validator operators dan exchange wallets (Binance, dll) merupakan largest non-vesting holders (LOW) [Seitrace validators, https://seitrace.com/validators; Etherscan holders, https://etherscan.io/token/0x0D6e2D4e48A479087f58089c222C4aE8E0E3C6E5#balances]
+Sources: https://seitrace.com/tokens, https://etherscan.io/token/0x0D6e2D4e48A479087f58089c222C4aE8E0E3C6E5#balances, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md, https://seitrace.com/validators
+
+## Major Token Events
+
+Date: 2023-08-15
+Event: TGE & Mainnet Launch (EV-004)
+Description: Genesis mint 10B SEI; initial unlock untuk airdrop, liquidity, Binance listing; staking live
+Status: Completed
+Related Historical Event ID: EV-004
+Sources: https://sei.io/blog/sei-mainnet-launch
+
+Date: 2023-08-15
+Event: Binance Spot Listing (EV-005)
+Description: SEI listed di Binance (SEI/USDT, SEI/BUSD, SEI/BNB) saat TGE; price discovery dimulai
+Status: Completed
+Related Historical Event ID: EV-005
+Sources: https://www.binance.com/en/blog/spotlight/sei-sei-326868
+
+Date: 2023-08
+Event: ERC-20 Deploy Ethereum (EV-006)
+Description: SEI ERC-20 contract deployed di Ethereum mainnet untuk bridging via Wormhole/Axelar
+Status: Completed
+Related Historical Event ID: EV-006
+Sources: https://etherscan.io/token/0x0D6e2D4e48A479087f58089c222C4aE8E0E3C6E5
+
+Date: 2023-08
+Event: IBC Native Activation (EV-007)
+Description: IBC transfer enabled untuk SEI native ke Cosmos ecosystem chains
+Status: Completed
+Related Historical Event ID: EV-007
+Sources: https://docs.sei.io/learn/architecture
+
+Date: 2023-08
+Event: Wormhole/Axelar Bridge Integration (EV-008)
+Description: SEI bridging ke Ethereum, Solana, Arbitrum, Optimism, Base, BSC, Polygon diaktifkan
+Status: Completed
+Related Historical Event ID: EV-008
+Sources: https://docs.sei.io/learn/architecture
+
+Date: 2024-08-15
+Event: Sei v2 Mainnet Upgrade (EV-020)
+Description: EVM compatibility live; EVM base fee burn mechanism aktif; SeiDB activated; MetaMask support
+Status: Completed
+Related Historical Event ID: EV-020
+Sources: https://sei.io/blog/introducing-sei-v2
+
+Date: 2024-08 (estimated)
+Event: Team/Investor Cliff End (12-month cliff)
+Description: Team (20%) dan Investor (22%) allocation cliff berakhir; monthly linear vesting dimulai
+Status: Completed
+Related Historical Event ID: (not in Phase 3 — derived from vesting schedule)
+Sources: https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md
+
+Date: 2023-Q4
+Event: Sei Ecosystem Fund Announcement ($50M)
+Description: Dana ekosistem $50M dari treasury untuk grant builder; community allocation deployment dipercepat
+Status: Ongoing
+Related Historical Event ID: (not in Phase 3 — from Phase 5)
+Sources: https://sei.io/blog/sei-ecosystem-fund
+
+## Official Token Resources
+
+Official Documentation: https://docs.sei.io/learn/tokenomics
+Whitepaper: https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md
+Governance: https://docs.sei.io/learn/governance
+Explorer (Mainnet): https://seitrace.com
+Explorer (Token Holdings): https://seitrace.com/tokens
+Contract (Native): usei (denom, no contract address)
+Contract (Ethereum ERC-20): https://etherscan.io/token/0x0D6e2D4e48A479087f58089c222C4aE8E0E3C6E5
+GitHub (Core): https://github.com/sei-protocol/sei-chain
+GitHub (Token Factory Module): https://github.com/sei-protocol/sei-chain/tree/main/x/tokenfactory
+Dashboard (Token Terminal): https://tokenterminal.com/terminal/projects/sei
+Dashboard (DefiLlama): https://defillama.com/chain/Sei
+Dashboard (CoinGecko): https://www.coingecko.com/en/coins/sei-network
+Dashboard (Seitrace Governance): https://seitrace.com/gov
+
+## Ringkasan
+
+Status: Live (mainnet sejak 2023-08-15; Sei v2 upgrade 2024-08-15)
+Supply Type: Inflationary (staking rewards minting; partial EVM base fee burn)
+Total Supply: 10,000,000,000 SEI (max supply = initial supply)
+Distribution Categories: Community 48%, Team 20%, Investors 22%, Foundation 10%
+Utility Count: 9 (Gas, Staking, Governance, Order Matching Fees, EVM Priority Fees, IBC Fees, Token Factory, Collateral, Liquidity, Bridge Asset)
+Governance: On-chain token-weighted voting (Cosmos SDK Governance Module); community pool treasury management
+Major Token Events: TGE/Mainnet Launch (EV-004), Binance Listing (EV-005), ERC-20 Deploy (EV-006), IBC Activation (EV-007), Bridge Integration (EV-008), Sei v2 Upgrade (EV-020), Team/Investor Cliff End (2024-08), Ecosystem Fund Announcement (2023-Q4)
+
+## Open Threads
+
+- Exact circulating supply per tanggal tertentu — CoinGecko/Token Terminal memberikan estimasi tapi on-chain circulating supply calculation methodology tidak dipublikasikan resmi (perlu query staking module + vesting contracts + community pool + bridge contracts)
+- Vesting contract addresses untuk Team, Investors, Foundation — tidak dipublikasikan dengan label resmi di docs.sei.io; perlu identifikasi on-chain via genesis allocation dan tracking transfer
+- Advisors allocation — whitepaper tidak memisahkan advisors; apakah termasuk dalam Team (20%) atau Investors (22%) atau tidak ada — perlu konfirmasi dari Sei Labs
+- Inflation rate parameter governance — whitepaper menyebut "target 7%" tapi parameter mint module saat ini (inflation_max, inflation_min, goal_bonded) tidak terpublikasi di docs; perlu query on-chain gov params
+- EVM base fee burn rate vs staking emission — net supply growth rate aktual tidak dipublikasikan; Token Terminal data perlu divalidasi metodologi
+- Community Pool address dan balance history — distribution module address tersedia tapi historical balance dan spending proposals tidak ada dashboard terpusat
+- Airdrop criteria dan allocation breakdown — "Community 48%" mencakup airdrop, testnet incentives, ecosystem grants, liquidity mining; persentase masing-masing tidak di-breakdown di whitepaper
+- Sei Foundation legal entity dan treasury custody — apakah Foundation terpisah dari Sei Labs Inc. (Cayman/Swiss) dan bagaimana custody multi-sig — tidak dikonfirmasi publik
+- Bridged SEI supply per chain — total SEI locked di Wormhole/Axelar contracts di Ethereum, Solana, Arbitrum, dll tidak teragregasi resmi; perlu query per bridge contract
+- Fee switch / revenue sharing ke SEI holders — tidak ada mechanism fee switch (seperti UNI fee switch) di whitepaper atau governance; semua fee ke validator + community pool
+- Parameter change proposal history untuk tokenomics (inflation, community tax, max validators) — tersedia di Seitrace gov tapi tidak ada summary terstruktur
+- Emergency pause / upgrade authority untuk token contract — native SEI tidak memiliki pause function (Cosmos SDK bank module); ERC-20 contract apakah memiliki admin/owner — perlu verifikasi Etherscan contract code
+- Staking reward APY real-time vs target — target 7% inflation tapi real yield bergantung pada bonded ratio; dashboard resmi APY tidak ada
+- Tokenomics update proposal (jika ada) — apakah ada governance proposal untuk mengubah distribution, vesting, atau inflation parameters post-TGE — perlu scan Seitrace gov history

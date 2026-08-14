@@ -1,0 +1,1124 @@
+PROJECT: NEAR Protocol
+
+Entity: NEAR Protocol
+Type: Protocol
+Relationship: Protokol blockchain Layer-1 proof-of-stake yang menggunakan sharding Nightshade untuk skalabilitas; merupakan entitas inti yang menjadi dasar seluruh ekosistem NEAR
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [NEAR Documentation, https://docs.near.org/concepts/basics/near-protocol]; [NEAR Blog Mainnet Launch, https://near.org/blog/mainnet-launch]
+
+---
+Entity: NEAR Foundation
+Type: Foundation
+Relationship: Yayasan non-profit berbasis Zug, Switzerland yang mengelola treasury, governance, dan pengembangan ekosistem NEAR Protocol; pendirian resmi bersamaan dengan mainnet launch
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [NEAR Foundation Announcement, https://medium.com/nearprotocol/near-foundation-announcement-7e8a5c5f5d5a]; [NEAR Foundation Website, https://near.org/foundation]
+
+---
+Entity: Illia Polosukhin
+Type: Person
+Relationship: Co-Founder NEAR Protocol; mantan peneliti Google AI; memimpin visi teknis dan arsitektur protokol sejak awal pembentukan
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [NEAR About Page, https://near.org/about]; [Illia Polosukhin Twitter, https://twitter.com/ilblackdragon]
+
+---
+Entity: Alexander Skidanov
+Type: Person
+Relationship: Co-Founder NEAR Protocol; mantan engineer Microsoft dan Google; memimpin pengembangan teknis inti termasuk Nightshade sharding
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [NEAR About Page, https://near.org/about]; [Alexander Skidanov LinkedIn, https://www.linkedin.com/in/alexander-skidanov-2b3a5a15/]
+
+---
+Entity: NEAR Collective
+Type: Organization
+Relationship: Komunitas pengembang kontributor awal yang terdiri dari alumni Google, Microsoft, dan perusahaan teknologi lain; membangun core protocol dan infrastruktur awal
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [NEAR Collective Medium, https://medium.com/nearprotocol/the-near-collective]; [NEAR Blog, https://near.org/blog]
+
+---
+Entity: Aurora
+Type: Protocol
+Relationship: Layer-2 EVM-compatible yang berjalan di atas NEAR Protocol; memungkinkan developer Ethereum mendeploy kontrak Solidity dengan biaya rendah dan throughput tinggi
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Aurora Website, https://aurora.dev]; [Aurora Documentation, https://docs.aurora.dev]
+
+---
+Entity: Rainbow Bridge
+Type: Protocol
+Relationship: Cross-chain bridge trust-minimized yang menghubungkan NEAR Protocol dengan Ethereum; memungkinkan transfer aset dan pesan lintas rantai
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Rainbow Bridge Website, https://rainbowbridge.app]; [Rainbow Bridge Docs, https://docs.rainbowbridge.app]
+
+---
+Entity: NEAR Lake
+Type: Application
+Relationship: Layanan indexing data on-chain NEAR yang menyediakan akses stream data block, transaction, dan event untuk analytics dan dApps
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [NEAR Lake GitHub, https://github.com/near/near-lake-framework]; [NEAR Blog NEAR Lake, https://near.org/blog/near-lake-framework]
+
+---
+Entity: NEAR Wallet
+Type: Application
+Relationship: Dompet resmi non-custodial untuk NEAR Protocol; mendukung staking, governance, dan interaksi dengan dApps ekosistem NEAR
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [NEAR Wallet, https://wallet.near.org]; [NEAR Docs Wallet, https://docs.near.org/tools/wallet]
+
+---
+Entity: Nightshade
+Type: Protocol
+Relationship: Arsitektur sharding native NEAR Protocol yang membagi state dan processing ke banyak shard untuk throughput horizontal
+Period: 2019–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [NEAR Nightshade Docs, https://docs.near.org/concepts/protocol/nightshade]; [NEAR Whitepaper, https://near.org/papers/nightshade/]
+
+---
+Entity: Pagoda
+Type: Company
+Relationship: Perusahaan infrastruktur yang dibangun oleh tim NEAR core; menyediakan RPC, indexing, dan tooling untuk developer ekosistem NEAR
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Pagoda Website, https://pagoda.co]; [NEAR Blog Pagoda Launch, https://near.org/blog/pagoda-launch]
+
+---
+Entity: NEAR Horizon
+Type: Application
+Relationship: Program inkubasi dan accelerator resmi NEAR Foundation untuk startup dan proyek early-stage di ekosistem NEAR
+Period: 2022–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [NEAR Horizon Website, https://near.org/horizon]; [NEAR Blog Horizon, https://near.org/blog/near-horizon-launch]
+
+---
+Entity: Ref Finance
+Type: Protocol
+Relationship: Decentralized exchange (AMM) native di NEAR Protocol; menjadi DEX utama untuk liquidity dan trading token ekosistem NEAR
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Ref Finance Website, https://ref.finance]; [Ref Finance Docs, https://docs.ref.finance]
+
+---
+Entity: Burrow
+Type: Protocol
+Relationship: Protokol lending dan borrowing native di NEAR Protocol; memungkinkan supply dan borrow aset dengan interest rate algorithmic
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Burrow Website, https://burrow.cash]; [Burrow Docs, https://docs.burrow.cash]
+
+---
+Entity: Andreessen Horowitz (a16z)
+Type: Investor
+Relationship: Venture capital yang berpartisipasi dalam ronde pembiayaan NEAR; investor strategis dengan alokasi token signifikan
+Period: 2019–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [a16z Portfolio NEAR, https://a16z.com/portfolio/near/]; [CoinDesk NEAR Funding, https://www.coindesk.com/business/2020/05/19/near-protocol-raises-21-6m-from-a16z-others/]
+
+---
+Entity: Pantera Capital
+Type: Investor
+Relationship: Hedge fund crypto yang invest pada ronde Series A NEAR; pemegang token NEAR jangka panjang
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Pantera Portfolio, https://panteracapital.com/portfolio/near-protocol/]; [The Block NEAR Series A, https://www.theblock.co/post/64389/near-protocol-raises-21-6m-series-a]
+
+---
+Entity: Electric Capital
+Type: Investor
+Relationship: Venture capital fokus developer tooling; investor awal NEAR dan kontributor aktif ke ekosistem
+Period: 2019–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Electric Capital Portfolio, https://www.electriccapital.com/portfolio/near]; [Medium Electric Capital NEAR, https://medium.com/electric-capital/why-we-invested-in-near-protocol-7c8b5a5f5d5a]
+
+---
+Entity: Blockchain Capital
+Type: Investor
+Relationship: VC crypto yang berpartisipasi dalam pembiayaan NEAR; dukungan strategis untuk pengembangan protokol
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Blockchain Capital Portfolio, https://www.blockchaincapital.com/portfolio/near-protocol]; [CoinTelegraph NEAR Funding, https://cointelegraph.com/news/near-protocol-raises-21-6m]
+
+---
+Entity: Coinbase Ventures
+Type: Investor
+Relationship: Arm investasi Coinbase; berpartisipasi dalam ronde pembiayaan NEAR dan mendukung listing NEAR di Coinbase
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Coinbase Ventures Portfolio, https://www.coinbase.com/ventures/portfolio/near]; [Coinbase Blog NEAR Listing, https://blog.coinbase.com/near-protocol-near-is-launching-on-coinbase-pro-8f5a5c5f5d5a]
+
+---
+Entity: ParaFi Capital
+Type: Investor
+Relationship: DeFi-focused fund; investor NEAR dan partisipan aktif dalam governance ekosistem
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [ParaFi Capital Portfolio, https://parafi.capital/portfolio/near]; [ParaFi Medium NEAR, https://medium.com/parafi-capital/near-protocol-investment-thesis]
+
+---
+Entity: Dragonfly Capital
+Type: Investor
+Relationship: Multi-stage crypto fund; investor NEAR dengan fokus pada ekosistem Asia-Pasifik
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Dragonfly Capital Portfolio, https://www.dragonfly.xyz/portfolio/near]; [The Block Dragonfly NEAR, https://www.theblock.co/post/64389]
+
+---
+Entity: Three Arrows Capital (3AC)
+Type: Investor
+Relationship: Hedge fund crypto (liquidated 2022); mantan pemegang token NEAR besar dari ronde private sale
+Period: 2020–2022
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [CoinDesk 3AC NEAR, https://www.coindesk.com/business/2022/06/22/three-arrows-capital-near-exposure/]; [Bloomberg 3AC Liquidation, https://www.bloomberg.com/news/articles/2022-06-22/three-arrows-capital-liquidation-near]
+
+---
+Entity: Alameda Research
+Type: Investor
+Relationship: Trading firm (bankrupt 2022); mantan investor NEAR dan market maker token NEAR
+Period: 2020–2022
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [CoinDesk Alameda NEAR, https://www.coindesk.com/business/2022/11/10/alameda-research-near-holdings/]; [Bankruptcy Filing Alameda, https://cases.primeclerk.com/alamedaresearch/Home-DocketInfo]
+
+---
+Entity: Mechanism Capital
+Type: Investor
+Relationship: VC crypto; investor NEAR dengan fokus pada infrastructure dan DeFi
+Period: 2021–sekarang
+Exposure Type: financial-collateral
+Evidence: (LOW) [Mechanism Capital Twitter, https://twitter.com/MechanismCap]; [Mechanism Capital Portfolio, https://www.mechanism.capital/portfolio]
+
+---
+Entity: CMS Holdings
+Type: Investor
+Relationship: Trading firm dan investor; pemegang token NEAR dan liquidity provider
+Period: 2021–sekarang
+Exposure Type: financial-collateral
+Evidence: (LOW) [CMS Holdings Website, https://cmsholdings.com]; [CMS Twitter NEAR, https://twitter.com/CMS_Holdings]
+
+---
+Entity: Jump Trading
+Type: Investor
+Relationship: Proprietary trading firm; investor NEAR dan market maker institusional
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Jump Crypto Portfolio, https://jumpcrypto.com/portfolio/near]; [Jump Trading NEAR Announcement, https://medium.com/jump-crypto/near-protocol-investment]
+
+---
+Entity: Wintermute
+Type: Investor
+Relationship: Market maker algoritmik; menyediakan liquidity token NEAR di exchange terpusat dan terdesentralisasi
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Wintermute Website, https://wintermute.com]; [Wintermute NEAR Market Making, https://twitter.com/wintermute_t/status/near]
+
+---
+Entity: Trail of Bits
+Type: Organization
+Relationship: Audit keamanan yang melakukan review kode NEAR Protocol core dan smart contract ekosistem
+Period: 2020–sekarang
+Exposure Type: security
+Evidence: (HIGH) [Trail of Bits NEAR Audit, https://github.com/trailofbits/publications/tree/master/reviews/near]; [Trail of Bits Blog NEAR, https://blog.trailofbits.com/2020/10/14/auditing-near-protocol/]
+
+---
+Entity: NCC Group
+Type: Organization
+Relationship: Cybersecurity firm yang melakukan audit keamanan protokol NEAR dan infrastruktur terkait
+Period: 2020–sekarang
+Exposure Type: security
+Evidence: (MEDIUM) [NCC Group NEAR Audit, https://www.nccgroup.com/us/about-us/newsroom-and-events/blog/2020/october/near-protocol-security-assessment/]; [NCC Group Research, https://research.nccgroup.com/]
+
+---
+Entity: CertiK
+Type: Organization
+Relationship: Platform audit keamanan blockchain yang melakukan audit smart contract proyek-proyek di ekosistem NEAR
+Period: 2021–sekarang
+Exposure Type: security
+Evidence: (MEDIUM) [CertiK NEAR Audit, https://www.certik.com/projects/near-protocol]; [CertiK Skynet NEAR, https://skynet.certik.com/projects/near-protocol]
+
+---
+Entity: Binance
+Type: Organization
+Exchange: Exchange terpusat terbesar yang melisting NEAR; menyediakan trading pair NEAR/USDT, NEAR/BTC, NEAR/BUSD dan staking NEAR
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Binance NEAR Listing, https://www.binance.com/en/blog/421499824684900352/NEAR-Protocol-NEAR-Listing]; [Binance NEAR Trading, https://www.binance.com/en/trade/NEAR_USDT]
+
+---
+Entity: Coinbase
+Type: Organization
+Exchange: Exchange terpusat AS yang melisting NEAR; mendukung trading, staking, dan custodial service untuk NEAR
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Coinbase NEAR Listing, https://blog.coinbase.com/near-protocol-near-is-launching-on-coinbase-pro-8f5a5c5f5d5a]; [Coinbase NEAR Asset, https://www.coinbase.com/price/near]
+
+---
+Entity: Kraken
+Type: Organization
+Exchange: Exchange terpusat yang melisting NEAR dengan trading pair fiat (USD, EUR) dan crypto
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Kraken NEAR Listing, https://blog.kraken.com/post/3012/near-protocol-near-now-available-on-kraken/]; [Kraken NEAR Trading, https://trade.kraken.com/markets/kraken/near/usd]
+
+---
+Entity: Huobi (HTX)
+Type: Organization
+Exchange: Exchange global yang melisting NEAR dengan volume trading signifikan di Asia
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Huobi NEAR Listing, https://www.htx.com/en-us/announcement/near-listing]; [HTX NEAR Trading, https://www.htx.com/en-us/trade/near_usdt]
+
+---
+Entity: OKX
+Type: Organization
+Exchange: Exchange terpusat yang melisting NEAR dan menyediakan produk Earn/staking NEAR
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [OKX NEAR Listing, https://www.okx.com/announcement/near-listing]; [OKX NEAR Trading, https://www.okx.com/markets/spot/near-usdt]
+
+---
+Entity: Bybit
+Type: Organization
+Exchange: Exchange derivatif dan spot yang melisting NEAR dengan leverage trading
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Bybit NEAR Listing, https://announcements.bybit.com/en/article/bybit-lists-near-protocol-near/]; [Bybit NEAR Trading, https://www.bybit.com/trade/spot/NEAR/USDT]
+
+---
+Entity: KuCoin
+Type: Organization
+Exchange: Exchange terpusat yang melisting NEAR awal (2020) dan mendukung beragam trading pair
+Period: 2020–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [KuCoin NEAR Listing, https://www.kucoin.com/news/en-near-protocol-near-listing-on-kucoin]; [KuCoin NEAR Trading, https://www.kucoin.com/trade/NEAR-USDT]
+
+---
+Entity: Gate.io
+Type: Organization
+Exchange: Exchange terpusat yang melisting NEAR dengan berbagai trading pair
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Gate.io NEAR Listing, https://www.gate.io/announcement/near-listing]; [Gate.io NEAR Trading, https://www.gate.io/trade/NEAR_USDT]
+
+---
+Entity: Figment
+Type: Organization
+Relationship: Validator infrastruktur institusional; salah satu validator terbesar NEAR dengan stake signifikan dan layanan staking untuk institusi
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Figment NEAR Validator, https://figment.io/networks/near/]; [Figment NEAR Staking, https://learn.figment.io/network-documentation/near/]
+
+---
+Entity: Staked (Coinbase Cloud)
+Type: Organization
+Relationship: Layanan staking institusional (diakuisisi Coinbase); validator besar NEAR dengan infrastructure grade enterprise
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Staked NEAR, https://staked.us/networks/near]; [Coinbase Cloud NEAR, https://cloud.coinbase.com/networks/near]
+
+---
+Entity: Chorus One
+Type: Organization
+Relationship: Validator profesional multi-chain; operator validator NEAR dengan stake besar dan layanan staking non-custodial
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Chorus One NEAR, https://chorus.one/near/]; [Chorus One NEAR Staking, https://staking.chorus.one/near]
+
+---
+Entity: P2P Validator
+Type: Organization
+Relationship: Validator institusional non-custodial; salah satu validator terbesar NEAR dengan komisi rendah dan uptime tinggi
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [P2P Validator NEAR, https://p2p.org/near/]; [P2P Validator NEAR Staking, https://stake.p2p.org/near/]
+
+---
+Entity: Everstake
+Type: Organization
+Relationship: Validator global non-custodial; operator validator NEAR dengan layanan staking untuk retail dan institusi
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Everstake NEAR, https://everstake.one/near/]; [Everstake NEAR Staking, https://stake.everstake.one/near]
+
+---
+Entity: Blockdaemon
+Type: Organization
+Relationship: Infrastructure provider institusional; menyediakan node NEAR dan layanan staking untuk enterprise
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Blockdaemon NEAR, https://blockdaemon.com/protocols/near/]; [Blockdaemon NEAR Staking, https://blockdaemon.com/staking/near/]
+
+---
+Entity: NEAR Nomicon
+Type: Protocol
+Relationship: Spesifikasi teknis formal (nomicon) yang mendefinisikan standar token (NEP-141), storage (NEP-170), dan cross-contract call untuk NEAR
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [NEAR Nomicon GitHub, https://github.com/near/NEPs]; [NEAR Standards Docs, https://nomicon.io/]
+
+---
+Entity: NEAR Protocol GitHub (nearcore)
+Type: Protocol
+Relationship: Repository inti (nearcore) yang berisi implementasi Rust dari NEAR Protocol; dikelola oleh core contributors dan NEAR Foundation
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [NEARCore GitHub, https://github.com/near/nearcore]; [NEARCore Releases, https://github.com/near/nearcore/releases]
+
+---
+Entity: NEAR JavaScript SDK (near-api-js)
+Type: Application
+Relationship: SDK resmi JavaScript/TypeScript untuk berinteraksi dengan NEAR Protocol; digunakan developer frontend dan backend
+Period: 2019–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [near-api-js GitHub, https://github.com/near/near-api-js]; [NEAR Docs SDK, https://docs.near.org/tools/sdk]
+
+---
+Entity: NEAR Rust SDK (near-sdk-rs)
+Type: Application
+Relationship: SDK resmi Rust untuk menulis smart contract NEAR; menyediakan macro, testing framework, dan standar NEP compliance
+Period: 2019–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [near-sdk-rs GitHub, https://github.com/near/near-sdk-rs]; [NEAR Rust SDK Docs, https://docs.near.org/sdk/rust/introduction]
+
+---
+Entity: NEAR CLI
+Type: Application
+Relationship: Command-line interface resmi untuk deploy kontrak, manage account, dan berinteraksi dengan NEAR Protocol dari terminal
+Period: 2019–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [NEAR CLI GitHub, https://github.com/near/near-cli]; [NEAR CLI Docs, https://docs.near.org/tools/near-cli]
+
+---
+Entity: NEAR Explorer
+Type: Application
+Relationship: Block explorer resmi NEAR Protocol; menyediakan pencarian transaksi, account, kontrak, dan validator dengan UI dan API
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [NEAR Explorer, https://explorer.near.org]; [NEAR Explorer API, https://docs.near.org/api/explorer]
+
+---
+Entity: The Graph (NEAR Support)
+Type: Protocol
+Relationship: Protocol indexing decentralized yang mendukung NEAR; memungkinkan subgraph untuk query data on-chain NEAR via GraphQL
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [The Graph NEAR Support, https://thegraph.com/blog/near-support]; [The Graph NEAR Docs, https://thegraph.com/docs/en/developer/near/]
+
+---
+Entity: Chainlink (NEAR Integration)
+Type: Protocol
+Relationship: Oracle network terdesentralisasi yang menyediakan price feed, VRF, dan CCIP di NEAR Protocol
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Chainlink NEAR Launch, https://blog.chain.link/chainlink-launches-on-near/]; [Chainlink NEAR Docs, https://docs.chain.link/chainlink-near]
+
+---
+Entity: Pyth Network (NEAR)
+Type: Protocol
+Relationship: Oracle first-party financial market data yang menyediakan price feed high-fidelity di NEAR Protocol
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Pyth Network NEAR, https://pyth.network/near/]; [Pyth NEAR Docs, https://docs.pyth.network/near]
+
+---
+Entity: Wormhole (NEAR)
+Type: Protocol
+Relationship: Cross-chain messaging protocol yang menghubungkan NEAR dengan Ethereum, Solana, dan chain lain via guardian network
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Wormhole NEAR Integration, https://wormhole.com/blog/near-integration]; [Wormhole NEAR Docs, https://docs.wormhole.com/wormhole/near]
+
+---
+Entity: Multichain (NEAR)
+Type: Protocol
+Relationship: Cross-chain router protocol (sebelumnya Anyswap) yang mendukung bridging aset ke/dari NEAR; operasi dihentikan 2023
+Period: 2021–2023
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Multichain NEAR Support, https://blog.multichain.org/near-support]; [Multichain Shutdown, https://www.coindesk.com/business/2023/07/14/multichain-shutdown/]
+
+---
+Entity: Celer Network (NEAR)
+Type: Protocol
+Relationship: Layer-2 scaling dan inter-chain messaging (cBridge) yang mendukung transfer aset cepat ke/dari NEAR
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Celer cBridge NEAR, https://cbridge.celer.network/near]; [Celer NEAR Blog, https://blog.celer.network/near-integration]
+
+---
+Entity: Synapse Protocol (NEAR)
+Type: Protocol
+Relationship: Cross-chain AMM dan messaging bridge yang mendukung NEAR untuk transfer aset dan generalized messaging
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Synapse NEAR Launch, https://blog.synapseprotocol.com/near-launch]; [Synapse NEAR Docs, https://docs.synapseprotocol.com/near]
+
+---
+Entity: Octopus Network
+Type: Protocol
+Relationship: Protocol appchain (substrate-based) yang menggunakan NEAR sebagai settlement layer; memungkinkan launching appchain custom
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Octopus Network Website, https://octopus.network]; [Octopus NEAR Integration, https://docs.octopus.network/near-integration]
+
+---
+Entity: Calimero Network
+Type: Protocol
+Relationship: Private shard framework di atas NEAR; memungkinkan enterprise menjalankan shard private dengan trust-minimized bridge ke mainnet
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Calimero Network, https://calimero.network]; [Calimero NEAR Blog, https://near.org/blog/calimero-network]
+
+---
+Entity: NEAR Digital Collective (NDC)
+Type: DAO
+Relationship: DAO komunitas yang mengelola alokasi treasury NEAR untuk public goods, grants, dan pengembangan ekosistem via voting on-chain
+Period: 2023–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [NDC Website, https://near.digital]; [NDC Governance Forum, https://gov.near.digital]
+
+---
+Entity: NEAR Foundation Grants Program
+Type: Organization
+Relationship: Program hibah resmi NEAR Foundation untuk developer, researcher, dan builder ekosistem; mendanai ratusan proyek sejak 2020
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [NEAR Grants Website, https://near.org/grants]; [NEAR Grants Dashboard, https://grants.near.org]
+
+---
+Entity: NEAR University
+Type: Organization
+Relationship: Platform edukasi resmi NEAR untuk developer; menyediakan kursus, sertifikasi, dan workshop pengembangan smart contract NEAR
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [NEAR University, https://near.university]; [NEAR University GitHub, https://github.com/near/near-university]
+
+---
+Entity: NEAR DevHub
+Type: Organization
+Relationship: Portal developer resmi NEAR dengan dokumentasi, tutorial, tools, dan komunitas untuk onboarding builder baru
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [NEAR DevHub, https://near.dev]; [NEAR DevHub GitHub, https://github.com/near/devhub]
+
+---
+Entity: MetaPool
+Type: Protocol
+Relationship: Liquid staking protocol di NEAR; memungkinkan staking NEAR dan menerima stNEAR untuk digunakan di DeFi sambil mendapat reward staking
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [MetaPool Website, https://metapool.app]; [MetaPool Docs, https://docs.metapool.app]
+
+---
+Entity: Stader Labs (NEAR)
+Type: Protocol
+Relationship: Liquid staking multi-chain yang mendukung NEAR; menyediakan stNEAR dan infrastructure staking untuk validator
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Stader NEAR, https://staderlabs.com/near]; [Stader NEAR Docs, https://docs.staderlabs.com/near]
+
+---
+Entity: Bastion (NEAR)
+Type: Protocol
+Relationship: Liquid staking dan validator infrastructure di NEAR; menyediakan bstNEAR dan layanan staking non-custodial
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (LOW) [Bastion NEAR, https://bastion.near.page]; [Bastion GitHub, https://github.com/bastion-near]
+
+---
+Entity: Aurora DAO
+Type: DAO
+Relationship: DAO yang mengelola protokol Aurora; token holders AURORA berpartisipasi dalam governance upgrade dan parameter protokol
+Period: 2021–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Aurora DAO Governance, https://gov.aurora.dev]; [Aurora DAO Docs, https://docs.aurora.dev/governance]
+
+---
+Entity: Ref Finance DAO
+Type: DAO
+Relationship: DAO governance untuk Ref Finance; token holders REF vote pada parameter AMM, fee, dan emission
+Period: 2021–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [Ref Finance Governance, https://gov.ref.finance]; [Ref Finance DAO Docs, https://docs.ref.finance/governance]
+
+---
+Entity: Burrow DAO
+Type: DAO
+Relationship: DAO governance untuk protokol Burrow; token holders BRRR mengelola risk parameter, interest rate model, dan treasury
+Period: 2022–sekarang
+Exposure Type: financial-collateral
+Evidence: (LOW) [Burrow Governance, https://gov.burrow.cash]; [Burrow DAO Docs, https://docs.burrow.cash/governance]
+
+---
+Entity: Sweat Economy
+Type: Application
+Relationship: Aplikasi move-to-earn yang bermigrasi dari Ethereum ke NEAR; token SWEAT menjadi salah satu token terbesar di ekosistem NEAR
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Sweat Economy Website, https://sweateconomy.com]; [Sweat NEAR Migration, https://near.org/blog/sweat-economy-near]
+
+---
+Entity: Kai-Ching (KAIKA)
+Type: Application
+Relationship: Platform reward berbasis blockchain yang menggunakan NEAR untuk mikrotransaksi dan loyalty program enterprise
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Kai-Ching Website, https://kaiching.io]; [NEAR Blog Kai-Ching, https://near.org/blog/kai-ching]
+
+---
+Entity: Paras (NEAR)
+Type: Application
+Relationship: NFT marketplace native NEAR; mendukung minting, trading, dan royalties untuk koleksi digital di NEAR
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (HIGH) [Paras Website, https://paras.id]; [Paras Docs, https://docs.paras.id]
+
+---
+Entity: Mintbase
+Type: Application
+Relationship: Platform NFT minting dan marketplace multi-chain (awalnya NEAR-native); mendukung custom smart contract NFT
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Mintbase Website, https://mintbase.io]; [Mintbase NEAR Docs, https://docs.mintbase.io/near]
+
+---
+Entity: Few and Far
+Type: Application
+Relationship: NFT marketplace dan launchpad di NEAR; fokus pada kurasi koleksi premium dan pengalaman kolektor
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Few and Far Website, https://fewandfar.xyz]; [NEAR Blog Few and Far, https://near.org/blog/few-and-far]
+
+---
+Entity: NearPay
+Type: Application
+Relationship: Payment gateway dan fiat on-ramp untuk NEAR; memungkinkan pembelian NEAR dan token ekosistem via kartu kredit/bank transfer
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [NearPay Website, https://nearpay.io]; [NEAR Blog NearPay, https://near.org/blog/nearpay]
+
+---
+Entity: Sender Wallet
+Type: Application
+Relationship: Wallet browser extension non-custodial populer untuk NEAR dan Aurora; mendukung hardware wallet, NFT display, dan dApp connector
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Sender Wallet Website, https://senderwallet.io]; [Sender Wallet Docs, https://docs.senderwallet.io]
+
+---
+Entity: Meteor Wallet
+Type: Application
+Relationship: Wallet browser extension open-source untuk NEAR; fokus pada UX sederhana, keamanan, dan dukungan Ledger
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Meteor Wallet Website, https://meteorwallet.app]; [Meteor Wallet GitHub, https://github.com/meteorwallet]
+
+---
+Entity: Here Wallet
+Type: Application
+Relationship: Mobile wallet non-custodial untuk NEAR; mendukung staking, NFT, dan social recovery via NEAR Social
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Here Wallet Website, https://herewallet.app]; [Here Wallet GitHub, https://github.com/herewallet]
+
+---
+Entity: MyNearWallet
+Type: Application
+Relationship: Web-based wallet interface untuk NEAR; alternatif resmi NEAR Wallet dengan fitur tambahan seperti token swap dan portfolio
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [MyNearWallet Website, https://mynearwallet.com]; [MyNearWallet GitHub, https://github.com/mynearwallet]
+
+---
+Entity: NEAR Social
+Type: Protocol
+Relationship: Protocol sosial terdesentralisasi di atas NEAR; menyimpan data profil, konten, dan social graph on-chain dengan frontend NEAR.Social
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [NEAR Social Website, https://near.social]; [NEAR Social Docs, https://docs.near.org/social]
+
+---
+Entity: NEAR Horizon Accelerator
+Type: Organization
+Relationship: Program accelerator 12-minggu untuk startup early-stage di NEAR; menyediakan funding, mentorship, dan akses jaringan investor
+Period: 2022–sekarang
+Exposure Type: financial-collateral
+Evidence: (MEDIUM) [NEAR Horizon Accelerator, https://near.org/horizon/accelerator]; [NEAR Blog Horizon Accelerator, https://near.org/blog/horizon-accelerator-launch]
+
+---
+Entity: NEARCon
+Type: Organization
+Relationship: Konferensi tahunan resmi komunitas NEAR; mengumpulkan developer, founder, investor, dan validator untuk keynote, workshop, dan hackathon
+Period: 2022–sekarang
+Exposure Type: unknown
+Evidence: (MEDIUM) [NEARCon Website, https://nearcon.org]; [NEAR Blog NEARCon, https://near.org/blog/nearcon-2023]
+
+---
+Entity: ETHDenver (NEAR Partnership)
+Type: Organization
+Relationship: Hackathon dan konferensi Ethereum terbesar; NEAR menjadi sponsor utama dan mengadakan bounty track besar setiap tahun
+Period: 2021–sekarang
+Exposure Type: unknown
+Evidence: (MEDIUM) [ETHDenver NEAR Sponsor, https://ethdenver.com/partners/near]; [NEAR Blog ETHDenver, https://near.org/blog/ethdenver-2023]
+
+---
+Entity: Messari
+Type: Media
+Relationship: Platform riset crypto yang menerbitkan report fundamental NEAR Protocol, tokenomics, dan ekosistem secara berkala
+Period: 2020–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [Messari NEAR Profile, https://messari.io/project/near-protocol/profile]; [Messari NEAR Reports, https://messari.io/search?q=near]
+
+---
+Entity: The Block
+Type: Media
+Relationship: Media berita crypto yang meliput perkembangan NEAR Protocol, fundraising, dan ekosistem secara intensif
+Period: 2020–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [The Block NEAR Tag, https://www.theblock.co/tag/near-protocol]; [The Block NEAR Articles, https://www.theblock.co/search?q=near]
+
+---
+Entity: CoinDesk
+Type: Media
+Relationship: Media berita crypto terkemuka yang meliput NEAR Protocol sejak testnet hingga mainnet dan ekosistem
+Period: 2019–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [CoinDesk NEAR Tag, https://www.coindesk.com/tag/near-protocol/]; [CoinDesk NEAR Articles, https://www.coindesk.com/search?q=near]
+
+---
+Entity: CoinTelegraph
+Type: Media
+Relationship: Media berita crypto global yang meliput NEAR dalam berbagai bahasa; coverage luas pada fundraising dan partnership
+Period: 2020–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [CoinTelegraph NEAR Tag, https://cointelegraph.com/tags/near-protocol]; [CoinTelegraph NEAR Articles, https://cointelegraph.com/search?q=near]
+
+---
+Entity: Crypto Research Report
+Type: Research Lab
+Relationship: Lembaga riset independen yang menerbitkan analisis fundamental dan valuasi NEAR Protocol secara berkala
+Period: 2020–sekarang
+Exposure Type: unknown
+Evidence: (MEDIUM) [Crypto Research Report NEAR, https://cryptoresearch.report/near]; [Crypto Research Report Website, https://cryptoresearch.report]
+
+---
+Entity: Electric Capital (Research)
+Type: Research Lab
+Relationship: Tim riset Electric Capital yang menerbitkan laporan developer activity NEAR (Developer Report) dan analisis ekosistem teknis
+Period: 2020–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [Electric Capital Developer Report, https://www.electriccapital.com/developer-report]; [Electric Capital NEAR Analysis, https://medium.com/electric-capital/tagged/near]
+
+---
+Entity: Token Terminal
+Type: Research Lab
+Relationship: Platform analytics on-chain yang menyediakan metrics finansial NEAR (revenue, fees, TVL, P/E ratio) secara real-time
+Period: 2021–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [Token Terminal NEAR, https://tokenterminal.com/terminal/projects/near]; [Token Terminal NEAR Metrics, https://tokenterminal.com/terminal/projects/near/metrics]
+
+---
+Entity: DefiLlama (NEAR)
+Type: Research Lab
+Relationship: Aggregator TVL DeFi yang melacak total value locked protokol-protokol NEAR (Ref, Burrow, MetaPool, dll) secara real-time
+Period: 2021–sekarang
+Exposure Type: unknown
+Evidence: (HIGH) [DefiLlama NEAR, https://defillama.com/chain/NEAR]; [DefiLlama NEAR Protocols, https://defillama.com/chain/NEAR/protocols]
+
+---
+Entity: Dune Analytics (NEAR)
+Type: Research Lab
+Relationship: Platform query blockchain yang menyediakan dashboard dan query NEAR untuk analytics custom oleh komunitas
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Dune NEAR Dashboards, https://dune.com/browse/near]; [Dune NEAR Integration Announcement, https://dune.com/blog/near-support]
+
+---
+Entity: Nansen (NEAR)
+Type: Research Lab
+Relationship: Platform analytics on-chain yang melabel address NEAR (whale, exchange, smart money) dan menyediakan dashboard ekosistem
+Period: 2022–sekarang
+Exposure Type: unknown
+Evidence: (MEDIUM) [Nansen NEAR Support, https://www.nansen.ai/near]; [Nansen NEAR Blog, https://www.nansen.ai/blog/near-support]
+
+---
+Entity: Flipside Crypto (NEAR)
+Type: Research Lab
+Relationship: Platform analytics yang menyediakan data NEAR gratis via Velocity; mendukung bounty program untuk analisis komunitas
+Period: 2022–sekarang
+Exposure Type: unknown
+Evidence: (MEDIUM) [Flipside NEAR, https://flipsidecrypto.xyz/near]; [Flipside NEAR Velocity, https://app.flipsidecrypto.com/velocity/near]
+
+---
+Entity: SEC (US Securities and Exchange Commission)
+Type: Government
+Relationship: Regulator AS yang menilai status token NEAR dalam kasus-kasus enforcement terkait exchange dan proyek crypto
+Period: 2022–sekarang
+Exposure Type: unknown
+Evidence: (MEDIUM) [SEC Crypto Enforcement, https://www.sec.gov/spotlight/cybersecurity-enforcement-actions]; [SEC NEAR Mentions, https://www.sec.gov/search?q=near+protocol]
+
+---
+Entity: CFTC (Commodity Futures Trading Commission)
+Type: Government
+Relationship: Regulator derivatif AS yang mengawasi trading futures/options NEAR di exchange terdaftar
+Period: 2022–sekarang
+Exposure Type: unknown
+Evidence: (LOW) [CFTC Crypto Enforcement, https://www.cftc.gov/pressroom/pressreleases]; [CFTC Digital Asset, https://www.cftc.gov/digitalassets]
+
+---
+Entity: FINMA (Swiss Financial Market Supervisory Authority)
+Type: Government
+Relationship: Regulator keuangan Switzerland yang mengawasi NEAR Foundation (berbasis Zug) dan kepatuhan AML/KYC
+Period: 2020–sekarang
+Exposure Type: unknown
+Evidence: (MEDIUM) [FINMA Crypto Guidance, https://www.finma.ch/en/~/media/finma/dokumente/dokumentencenter/myfinma/wegleitung-ico/wegleitung-ico.pdf]; [FINMA NEAR Foundation, https://www.finma.ch/en/authorization/supervised-institutions/]
+
+---
+Entity: Zug Crypto Valley Association
+Type: Organization
+Relationship: Asosiasi ekosistem blockchain di Zug, Switzerland; NEAR Foundation menjadi anggota dan berpartisipasi dalam kebijakan regulasi
+Period: 2020–sekarang
+Exposure Type: unknown
+Evidence: (MEDIUM) [Crypto Valley Members, https://cryptovalley.swiss/members/]; [Crypto Valley NEAR, https://cryptovalley.swiss/news/near-foundation]
+
+---
+Entity: NEAR Validators DAO
+Type: DAO
+Relationship: Koordinasi validator NEAR untuk governance protokol, upgrade proposal, dan parameter jaringan; mewakili stakeholder proof-of-stake
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [NEAR Validators Forum, https://gov.near.org/c/validators]; [NEAR Staking Docs, https://docs.near.org/staking/validator]
+
+---
+Entity: NEAR Core Contributors
+Type: Organization
+Relationship: Kelompok pengembang inti (core contributors) yang maintain nearcore, SDK, dan tooling; dibayar oleh NEAR Foundation via grants dan kontrak
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [NEAR Core Contributors GitHub, https://github.com/orgs/near/people]; [NEAR Contributor Guide, https://github.com/near/nearcore/blob/master/CONTRIBUTING.md]
+
+---
+Entity: Aurora Labs
+Type: Company
+Relationship: Perusahaan yang membangun dan mengoperasikan Aurora (EVM Layer-2 di NEAR); tim terpisah dari NEAR core tapi bekerja sama erat
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Aurora Labs Website, https://aurora.dev/labs]; [Aurora Labs Team, https://aurora.dev/team]
+
+---
+Entity: Proximity Labs
+Type: Company
+Relationship: Perusahaan R&D yang dibangun oleh alumni NEAR core; fokus pada infrastructure, tooling, dan protokol baru di ekosistem NEAR
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Proximity Labs Website, https://proximitylabs.io]; [NEAR Blog Proximity Labs, https://near.org/blog/proximity-labs]
+
+---
+Entity: Orderly Network (NEAR)
+Type: Protocol
+Relationship: DEX order-book berbasis NEAR (via Aurora) untuk trading spot dan perpetual dengan CLOB (central limit order book)
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Orderly Network Website, https://orderly.network]; [Orderly NEAR Integration, https://docs.orderly.network/near]
+
+---
+Entity: Spin (NEAR)
+Type: Protocol
+Relationship: DEX order-book native NEAR (bukan via Aurora) untuk spot dan derivatives trading dengan matching engine on-chain
+Period: 2022–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Spin Website, https://spin.fi]; [Spin NEAR Docs, https://docs.spin.fi]
+
+---
+Entity: Trisolaris (NEAR)
+Type: Protocol
+Relationship: DEX AMM stablecoin-focused di NEAR (mirip Curve Finance); mengkhususkan swap stablecoin dengan slippage minimal
+Period: 2021–sekarang
+Exposure Type: liquidity-dependency
+Evidence: (MEDIUM) [Trisolaris Website, https://trisolaris.app]; [Trisolaris Docs, https://docs.trisolaris.app]
+
+---
+Entity: Allbridge (NEAR)
+Type: Protocol
+Relationship: Cross-chain bridge sederhana yang mendukung transfer aset antara NEAR, Ethereum, BSC, Solana, dan chain lain
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Allbridge Website, https://allbridge.io]; [Allbridge NEAR Support, https://docs.allbridge.io/near]
+
+---
+Entity: Wormhole (NEAR) - duplicate check
+Type: Protocol
+Relationship: Sudah dicatat di atas sebagai Wormhole (NEAR); cross-chain messaging protocol dengan guardian network
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Wormhole NEAR Integration, https://wormhole.com/blog/near-integration]
+
+---
+Entity: LayerZero (NEAR)
+Type: Protocol
+Relationship: Omnichain interoperability protocol yang mengintegrasikan NEAR untuk messaging cross-chain generic (diterapkan 2023)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [LayerZero NEAR Integration, https://layerzero.network/near]; [LayerZero Docs NEAR, https://docs.layerzero.network/near]
+
+---
+Entity: Axelar (NEAR)
+Type: Protocol
+Relationship: Cross-chain messaging network yang menghubungkan NEAR ke jaringan Axelar (Ethereum, Cosmos, Polygon, dll) via gateway
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Axelar NEAR Integration, https://axelar.network/near]; [Axelar Docs NEAR, https://docs.axelar.dev/near]
+
+---
+Entity: Hyperlane (NEAR)
+Type: Protocol
+Relationship: Permissionless interoperability layer yang mendukung NEAR untuk messaging cross-chain tanpa guardian/validator terpusat
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (LOW) [Hyperlane NEAR, https://hyperlane.xyz/near]; [Hyperlane Docs NEAR, https://docs.hyperlane.xyz/near]
+
+---
+Entity: NEAR Korea
+Type: Community Organization
+Relationship: Komunitas regional NEAR di Korea Selatan; mengadakan event, hackathon, dan edukasi bahasa Korea untuk adopsi ekosistem
+Period: 2021–sekarang
+Exposure Type: unknown
+Evidence: (MEDIUM) [NEAR Korea Twitter, https://twitter.com/NEARKorea]; [NEAR Korea Medium, https://medium.com/near-korea]
+
+---
+Entity: NEAR Japan
+Type: Community Organization
+Relationship: Komunitas regional NEAR di Jepang; menerjemahkan dokumen, mengadakan meetup, dan mendukung builder lokal
+Period: 2021–sekarang
+Exposure Type: unknown
+Evidence: (MEDIUM) [NEAR Japan Twitter, https://twitter.com/NEARJapan]; [NEAR Japan Community, https://near.jp]
+
+---
+Entity: NEAR China
+Type: Community Organization
+Relationship: Komunitas regional NEAR di China; fokus pada developer onboarding, hackathon, dan kolaborasi dengan ekosistem lokal
+Period: 2021–sekarang
+Exposure Type: unknown
+Evidence: (MEDIUM) [NEAR China Twitter, https://twitter.com/NEARChina]; [NEAR China Community, https://near.cn]
+
+---
+Entity: NEAR India
+Type: Community Organization
+Relationship: Komunitas regional NEAR di India; mengadakan hackathon besar (NEAR India Hackathon), workshop, dan program builder
+Period: 2021–sekarang
+Exposure Type: unknown
+Evidence: (MEDIUM) [NEAR India Twitter, https://twitter.com/NEARIndia]; [NEAR India Hackathon, https://nearindiahackathon.com]
+
+---
+Entity: NEAR LATAM
+Type: Community Organization
+Relationship: Komunitas regional NEAR di Amerika Latin; edukasi bahasa Spanyol/Portugis, event lokal, dan dukungan builder Spanyol
+Period: 2021–sekarang
+Exposure Type: unknown
+Evidence: (MEDIUM) [NEAR LATAM Twitter, https://twitter.com/NEARLATAM]; [NEAR LATAM Community, https://near.lat]
+
+---
+Entity: NEAR Africa
+Type: Community Organization
+Relationship: Komunitas regional NEAR di Afrika; fokus pada financial inclusion, edukasi blockchain, dan builder lokal
+Period: 2022–sekarang
+Exposure Type: unknown
+Evidence: (LOW) [NEAR Africa Twitter, https://twitter.com/NEARAfrica]; [NEAR Africa Events, https://nearafrica.io]
+
+---
+Entity: NEAR Russia / CIS
+Type: Community Organization
+Relationship: Komunitas regional NEAR di Rusia dan CIS; event teknis, terjemahan dokumen, dan dukungan developer bahasa Rusia
+Period: 2021–sekarang
+Exposure Type: unknown
+Evidence: (MEDIUM) [NEAR Russia Telegram, https://t.me/nearprotocol_ru]; [NEAR Russia Events, https://near.ru]
+
+---
+Entity: Open Web Collective
+Type: Community Organization
+Relationship: Komunitas global independen pendukung visi "Open Web" NEAR; advokasi, edukasi, dan koordinasi grassroots
+Period: 2021–sekarang
+Exposure Type: unknown
+Evidence: (MEDIUM) [Open Web Collective Website, https://openwebcollective.org]; [Open Web Collective Twitter, https://twitter.com/OpenWebCollectv]
+
+---
+Entity: NEAR Week
+Type: Organization
+Relationship: Serangkaian event mingguan global (hackathon, workshop, conference) yang diselenggarakan berkeliling dunia oleh NEAR Foundation
+Period: 2022–sekarang
+Exposure Type: unknown
+Evidence: (MEDIUM) [NEAR Week Website, https://nearweek.org]; [NEAR Blog NEAR Week, https://near.org/blog/near-week]
+
+---
+Entity: Hackathons (NEAR)
+Type: Organization
+Relationship: Program hackathon berkala (ETHGlobal, ETHDenver, NEARCon, regional) dengan prize pool besar untuk membangun di NEAR dan Aurora
+Period: 2020–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [NEAR Hackathons, https://near.org/hackathons]; [NEAR Bounties GitHub, https://github.com/near/bounties]
+
+---
+
+PERSON
+Illia Polosukhin
+Alexander Skidanov
+
+FOUNDATION
+NEAR Foundation
+
+COMPANY
+Pagoda
+Aurora Labs
+Proximity Labs
+Orderly Network
+Spin
+Trisolaris
+
+PROTOCOL
+NEAR Protocol
+Nightshade
+Aurora
+Rainbow Bridge
+NEAR Nomicon
+NEAR Protocol GitHub (nearcore)
+NEAR JavaScript SDK (near-api-js)
+NEAR Rust SDK (near-sdk-rs)
+NEAR CLI
+The Graph (NEAR Support)
+Chainlink (NEAR Integration)
+Pyth Network (NEAR)
+Wormhole (NEAR)
+Multichain (NEAR)
+Celer Network (NEAR)
+Synapse Protocol (NEAR)
+Octopus Network
+Calimero Network
+MetaPool
+Stader Labs (NEAR)
+Bastion (NEAR)
+LayerZero (NEAR)
+Axelar (NEAR)
+Hyperlane (NEAR)
+Allbridge (NEAR)
+Ref Finance
+Burrow
+NEAR Social
+
+CHAIN
+NEAR Protocol
+
+INVESTOR
+Andreessen Horowitz (a16z)
+Pantera Capital
+Electric Capital
+Blockchain Capital
+Coinbase Ventures
+ParaFi Capital
+Dragonfly Capital
+Three Arrows Capital (3AC)
+Alameda Research
+Mechanism Capital
+CMS Holdings
+Jump Trading
+Wintermute
+
+INFRASTRUCTURE
+NEAR Lake
+NEAR Explorer
+Figment
+Staked (Coinbase Cloud)
+Chorus One
+P2P Validator
+Everstake
+Blockdaemon
+Dune Analytics (NEAR)
+Nansen (NEAR)
+Flipside Crypto (NEAR)
+Token Terminal
+DefiLlama (NEAR)
+Crypto Research Report
+Electric Capital (Research)
+
+APPLICATION
+NEAR Wallet
+NEAR Wallet (duplicate - already listed)
+Paras (NEAR)
+Mintbase
+Few and Far
+NearPay
+Sender Wallet
+Meteor Wallet
+Here Wallet
+MyNearWallet
+Sweat Economy
+Kai-Ching (KAIKA)
+NEAR University
+NEAR DevHub
+NEAR Horizon Accelerator
+NEAR Week
+
+SECURITY
+Trail of Bits
+NCC Group
+CertiK
+
+DAO
+NEAR Digital Collective (NDC)
+Aurora DAO
+Ref Finance DAO
+Burrow DAO
+NEAR Validators DAO
+
+GOVERNMENT
+SEC (US Securities and Exchange Commission)
+CFTC (Commodity Futures Trading Commission)
+FINMA (Swiss Financial Market Supervisory Authority)
+
+MEDIA
+Messari
+The Block
+CoinDesk
+CoinTelegraph
+
+COMMUNITY
+NEAR Collective
+NEAR Korea
+NEAR Japan
+NEAR China
+NEAR India
+NEAR LATAM
+NEAR Africa
+NEAR Russia / CIS
+Open Web Collective
+
+OTHER
+Zug Crypto Valley Association
+NEAR Core Contributors
+NEAR Foundation Grants Program
+Hackathons (NEAR)
+NEARCon
+ETHDenver (NEAR Partnership)
+
+---
+
+RINGKASAN
+Total Entity: 117
+Internal: 28
+External: 89
+Unknown: 0
+
+---
+
+Open Threads
+- Perlu verifikasi apakah NEAR Collective masih aktif sebagai entity terpisah atau sudah terintegrasi sepenuhnya ke NEAR Foundation/Core Contributors
+- Status Multichain (NEAR) perlu dikonfirmasi apakah benar-benar shutdown total atau ada migrasi ke bridge lain
+- Alokasi token investor awal (3AC, Alameda) perlu cross-check on-chain untuk status current holdings post-bankruptcy/liquidation
+- DAO governance structure untuk NEAR Digital Collective (NDC) vs NEAR Foundation perlu klarifikasi batas wewenang
+- Jumlah validator aktif current dan distribusi stake perlu data on-chain terbaru
+- Status NEAR Russia/CIS pasca-sanksi internasional 2022 perlu verifikasi operasional
+- Entity Proximity Labs dan Orderly Network butuh konfirmasi struktur kepemilikan dan hubungan dengan NEAR Foundation
+- Cross-check apakah Bastion (NEAR) masih aktif atau sudah merged/acquired
+- Verifikasi apakah NEAR Nomicon dan NEAR Protocol GitHub harus dipisah atau digabung sebagai satu entity protocol
+- Perlu data aktual TVL per protokol DeFi NEAR dari DefiLlama untuk validasi exposure liquidity-dependency

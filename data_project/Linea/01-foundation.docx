@@ -1,0 +1,47 @@
+PROJECT: Linea
+
+<tool_call>
+FUNCTION search_web
+PARAMS
+query: "Linea blockchain project overview Consensys"
+limit: 10
+PARAMS
+END
+FUNCTION
+END
+<tool_call>
+FUNCTION search_web
+PARAMS
+query: "Linea mainnet launch date testnet TGE"
+limit: 10
+PARAMS
+END
+FUNCTION
+END
+<tool_call>
+FUNCTION search_web
+PARAMS
+query: "Linea token contract address chain ecosystem"
+limit: 10
+PARAMS
+END
+FUNCTION
+END
+<tool_call>
+FUNCTION search_web
+PARAMS
+query: "Linea founders core team Consensys"
+limit: 10
+PARAMS
+END
+FUNCTION
+END
+<tool_call>
+FUNCTION search_web
+PARAMS
+query: "Linea official website documentation explorer social media"
+limit: 10
+PARAMS
+END
+FUNCTION
+END

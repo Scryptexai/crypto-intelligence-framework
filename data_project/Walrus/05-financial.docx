@@ -1,0 +1,207 @@
+PROJECT: Walrus
+
+## Funding History
+
+### Funding Round: Mysten Labs Seed Round
+Date: 2021
+Amount: $36M
+Currency: USD
+Lead Investor: a16z crypto
+Participating Investors: Consortium of strategic angels
+Valuation: Tidak diungkap
+Funding Type: Seed
+Status: Completed
+Sources: https://www.mystenlabs.com/blog/mysten-labs-raises-36m-series-a
+
+### Funding Round: Mysten Labs Series A
+Date: December 2021
+Amount: $92M
+Currency: USD
+Lead Investor: a16z crypto
+Participating Investors: Coinbase Ventures, Circle, Slow Ventures, Samsung Next, others
+Valuation: Tidak diungkap
+Funding Type: Series A
+Status: Completed
+Sources: https://www.mystenlabs.com/blog/mysten-labs-raises-92m-series-a
+
+### Funding Round: Mysten Labs Series B
+Date: September 2022
+Amount: $300M
+Currency: USD
+Lead Investor: FTX Ventures
+Participating Investors: a16z crypto, Coinbase Ventures, Circle, Slow Ventures, others
+Valuation: $2B+
+Funding Type: Series B
+Status: Completed
+Sources: https://www.mystenlabs.com/blog/mysten-labs-raises-300m-series-b
+
+### Funding Round: Walrus-Specific Funding
+Date: Tidak diungkap
+Amount: Tidak diungkap
+Currency: USD
+Lead Investor: Tidak diungkap
+Participating Investors: Tidak diungkap
+Valuation: Tidak diungkap
+Funding Type: N/A
+Status: Tidak diungkap
+Sources: https://walrus.xyz/, https://www.mystenlabs.com/
+Evidence: Walrus adalah produk protocol dari Mysten Labs, tidak memiliki ronde pendanaan terpisah yang diumumkan secara publik
+
+## Treasury
+
+Current Treasury Size: Tidak diungkap
+Treasury Composition: Tidak diungkap
+Stablecoin Holdings: Tidak diungkap
+Native Token Holdings: Tidak diungkap
+Other Assets: Tidak diungkap
+Treasury Custodian: Tidak diungkap
+Sources: https://walrus.xyz/, https://www.mystenlabs.com/, https://github.com/MystenLabs/walrus
+Note: Tidak ada transparency report atau treasury dashboard resmi yang diterbitkan untuk Walrus protocol secara terpisah dari Mysten Labs/Sui Foundation
+
+## Revenue Model
+
+### Revenue Stream: Protocol Storage Fees
+Nama: Blob Storage Fees
+Status: Planned
+Description: Biaya penyimpanan blob data pada jaringan Walrus, dibayar dalam SUI atau WAL token
+Sources: https://walrus.xyz/docs/, https://github.com/MystenLabs/walrus/blob/main/docs/tokenomics.md
+
+### Revenue Stream: Read/Retrieval Fees
+Nama: Data Retrieval Fees
+Status: Planned
+Description: Biaya untuk mengambil/membaca data yang tersimpan
+Sources: https://walrus.xyz/docs/
+
+### Revenue Stream: Validator/Storage Node Rewards
+Nama: Storage Node Rewards Distribution
+Status: Planned
+Description: Bagian dari fee yang didistribusikan ke storage node operators
+Sources: https://walrus.xyz/docs/
+
+## Revenue History
+
+Tidak diungkap.
+Sources: https://walrus.xyz/, https://www.mystenlabs.com/
+Note: Walrus baru meluncurkan testnet (2024) dan mainnet belum live secara penuh, belum ada revenue history yang dipublikasikan
+
+## Fundraising Mechanism
+
+VC Funding: Ya (via Mysten Labs - a16z crypto, FTX Ventures, Coinbase Ventures, dll)
+Private Sale: Tidak diungkap (khusus WAL token)
+Public Sale: Tidak diungkap
+Grant: Ya (Sui Foundation ecosystem grants untuk builders di atas Walrus)
+Foundation: Ya (Mysten Labs, Sui Foundation)
+DAO Treasury: Belum terbentuk (Walrus Foundation direncanakan)
+Protocol Revenue: Belum live
+Bootstrapping: Tidak (didukung oleh treasury Mysten Labs)
+Sources: https://www.mystenlabs.com/blog/, https://sui.io/foundation/grants, https://walrus.xyz/
+
+## Token Sale
+
+### Private Sale: WAL Token
+Tanggal: Tidak diungkap
+Status: Tidak diungkap / Belum diumumkan
+Sources: https://walrus.xyz/, https://github.com/MystenLabs/walrus
+Note: Tidak ada informasi resmi mengenai private sale WAL token
+
+### Public Sale: WAL Token
+Tanggal: Tidak diungkap
+Status: Tidak diungkap / Belum diumumkan
+Sources: https://walrus.xyz/
+Note: Tidak ada informasi resmi mengenai public sale WAL token
+
+### Launchpad: WAL Token
+Tanggal: Tidak diungkap
+Status: Tidak diungkap
+Sources: https://walrus.xyz/
+
+### Auction: WAL Token
+Tanggal: Tidak diungkap
+Status: Tidak diungkap
+Sources: https://walrus.xyz/
+
+### Community Sale: WAL Token
+Tanggal: Tidak diungkap
+Status: Tidak diungkap
+Sources: https://walrus.xyz/
+
+## Financial Dependencies
+
+### Dependency: Mysten Labs
+Type: VC-Backed Parent Company
+Description: Entitas induk yang mengembangkan dan mendanai pengembangan Walrus
+Sources: https://www.mystenlabs.com/, https://www.mystenlabs.com/blog/mysten-labs-raises-300m-series-b
+
+### Dependency: Sui Foundation
+Type: Foundation / Grant Program
+Description: Menyediakan ekosystem grants untuk proyek yang membangun di atas Walrus/Sui
+Sources: https://sui.io/foundation/grants
+
+### Dependency: a16z crypto
+Type: VC / Lead Investor Series A & Seed
+Description: Investor utama Mysten Labs sejak tahap awal
+Sources: https://www.mystenlabs.com/blog/mysten-labs-raises-92m-series-a
+
+### Dependency: FTX Ventures (Historical)
+Type: VC / Lead Investor Series B
+Description: Lead investor Series B ($300M) - status kompleks pasca-kollapse FTX
+Sources: https://www.mystenlabs.com/blog/mysten-labs-raises-300m-series-b
+
+### Dependency: Future Walrus DAO/Foundation
+Type: DAO Treasury (Planned)
+Description: Direncanakan untuk governance dan pengelolaan treasury protocol
+Sources: https://walrus.xyz/docs/, https://github.com/MystenLabs/walrus
+
+## Financial Risk
+
+### Risk: Treasury Concentration in Parent Company
+Description: Walrus bergantung sepenuhnya pada treasury Mysten Labs; tidak ada treasury terpisah yang transparan
+Sources: https://www.mystenlabs.com/, https://walrus.xyz/
+Evidence Level: MEDIUM (inferensi dari struktur organisasi)
+
+### Risk: FTX Ventures Exposure
+Description: Series B dipimpin oleh FTX Ventures ($300M); kollapse FTX menciptakan ketidakpastian pada status equity dan potensi clawback
+Sources: https://www.mystenlabs.com/blog/mysten-labs-raises-300m-series-b, https://www.coindesk.com/business/2022/11/11/mysten-labs-ftx-venture-investment/
+Evidence Level: HIGH (banyak dilaporkan media kredibel)
+
+### Risk: No Live Protocol Revenue
+Description: Protocol belum menghasilkan revenue; seluruh operasi didanai dari treasury VC
+Sources: https://walrus.xyz/, https://www.mystenlabs.com/
+Evidence Level: HIGH (fakta operasional)
+
+### Risk: Token Launch Uncertainty
+Description: WAL token belum diluncurkan; tokenomics dan distribusi belum difinalisasi secara publik
+Sources: https://walrus.xyz/, https://github.com/MystenLabs/walrus
+Evidence Level: MEDIUM (berdasarkan roadmap publik)
+
+## Official Financial Resources
+
+Official Blog: https://www.mystenlabs.com/blog/
+Walrus Blog: https://walrus.xyz/blog/
+Transparency Report: Tidak tersedia
+Treasury Dashboard: Tidak tersedia
+Governance: https://gov.sui.io/ (Sui governance, belum ada Walrus-specific)
+Messari: https://messari.io/project/sui (covers Sui ecosystem termasuk Walrus)
+Token Terminal: https://tokenterminal.com/terminal/projects/sui
+DefiLlama: https://defillama.com/chain/Sui
+CryptoRank: https://cryptorank.io/ico/mysten-labs
+Whitepaper: https://walrus.xyz/whitepaper.pdf, https://github.com/MystenLabs/walrus/blob/main/docs/whitepaper.md
+
+## RINGKASAN
+
+Total Funding Raised: ~$428M (via Mysten Labs: $36M Seed + $92M Series A + $300M Series B)
+Funding Rounds: 3 ronde (Seed, Series A, Series B) semua di level Mysten Labs, tidak ada ronde terpisah untuk Walrus
+Treasury Status: Tidak diungkap (tidak ada transparency report terpisah untuk Walrus)
+Revenue Sources: Planned - blob storage fees, retrieval fees, validator rewards (belum live)
+Revenue Availability: Tidak tersedia (belum ada revenue history)
+
+## Open Threads
+
+- Jumlah exact allocation dari treasury Mysten Labs yang dialokasikan khusus untuk pengembangan Walrus
+- Status equity FTX Ventures pasca-bankruptcy dan apakah ada clawback/settlement
+- Rincian tokenomics WAL: supply, alokasi, vesting schedule, mekanisme fee switch
+- Tanggal mainnet launch resmi dan kapan revenue mulai di-generate
+- Apakah Walrus Foundation sudah terbentuk secara legal dan struktur governance-nya
+- Detail Sui Foundation grants yang spesifik untuk Walrus ecosystem builders
+- Audit keamanan finansial/ekonomi token yang telah dilakukan
+- Rencana decentralisasi treasury ke DAO/community

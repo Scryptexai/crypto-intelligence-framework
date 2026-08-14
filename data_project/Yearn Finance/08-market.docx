@@ -1,0 +1,75 @@
+PROJECT: Yearn Finance
+
+
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance TVL total value locked historical 2024 2025 DefiLlama",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance YFI token price market cap circulating supply CoinGecko CoinMarketCap",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance competitors yield aggregators Harvest Finance Beefy Finance Autofarm Alpaca Finance",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance trading volume YFI daily volume exchanges Binance Coinbase Uniswap",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance market share yield aggregator DeFi TVL percentage",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance daily active users transactions wallets Dune Analytics",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance developer count GitHub contributors commits 2024",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance narrative position DeFi yield aggregator ERC-4626 v3 vaults",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance official dashboard DefiLlama CoinGecko CoinMarketCap Token Terminal Messari",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance YFI liquidity Uniswap Curve Balancer pools depth",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance bridge volume cross-chain LayerZero Wormhole multichain",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance market timeline milestones 2020 2021 2022 2023 2024 2025",
+  "top_k": 10
+}

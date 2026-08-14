@@ -1,0 +1,441 @@
+PROJECT: Sei
+
+## Market Category
+
+Primary Category: Layer 1 blockchain optimized for trading / high-performance DeFi (HIGH) [Sei website, https://sei.io; Sei whitepaper, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md]
+Secondary Category: EVM-compatible execution environment; Cosmos ecosystem interoperability via IBC (HIGH) [Sei v2 blog, https://sei.io/blog/introducing-sei-v2; Sei docs architecture, https://docs.sei.io/learn/architecture]
+Sector: Blockchain Infrastructure (HIGH) [Messari sector classification, https://messari.io/asset/sei; CoinGecko category, https://www.coingecko.com/en/coins/sei-network]
+Sub-sector: Parallel Execution L1; Trading-Optimized Chain; Dual VM (CosmWasm + EVM) (HIGH) [Sei whitepaper, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md; Sei v2 blog, https://sei.io/blog/introducing-sei-v2]
+Sources: https://sei.io, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md, https://sei.io/blog/introducing-sei-v2, https://docs.sei.io/learn/architecture, https://messari.io/asset/sei, https://www.coingecko.com/en/coins/sei-network
+
+## Market Position
+
+Project Stage: Growth (mainnet live since 2023-08-15; Sei v2 EVM upgrade live 2024-08-15; active ecosystem expansion) (HIGH) [Sei mainnet launch blog, https://sei.io/blog/sei-mainnet-launch; Sei v2 blog, https://sei.io/blog/introducing-sei-v2; DefiLlama Sei chain page, https://defillama.com/chain/Sei]
+Primary Competitors: Solana, Aptos, Sui, Monad, Hyperliquid (L1), Injective (trading-focused Cosmos chain), Berachain (EVM-compatible Cosmos chain), dYdX Chain (trading-focused app-chain) (HIGH) [Messari competitor tags, https://messari.io/asset/sei; DefiLlama chain comparisons, https://defillama.com/chains; Sei ecosystem page, https://sei.io/ecosystem]
+Market Segment: High-throughput DeFi trading infrastructure; Retail and institutional traders; EVM developers seeking parallel execution; Cosmos ecosystem developers (HIGH) [Sei whitepaper, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md; Sei v2 blog, https://sei.io/blog/introducing-sei-v2]
+Geographic Focus: Global; team based in US (Delaware); major exchange listings on Binance (global), Coinbase (US), Kraken (US/EU), Bybit, OKX, KuCoin (Asia-focused) (HIGH) [Sei Labs incorporation, https://opencorporates.com/companies/us_de/7465721; Exchange listings from Phase 7]
+Sources: https://sei.io/blog/sei-mainnet-launch, https://sei.io/blog/introducing-sei-v2, https://defillama.com/chain/Sei, https://messari.io/asset/sei, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md, https://opencorporates.com/companies/us_de/7465721
+
+## Trading Markets
+
+Exchange: Binance
+Spot: SEI/USDT, SEI/BUSD, SEI/BNB (listed 2023-08-15 at TGE) (HIGH) [Binance announcement, https://www.binance.com/en/blog/spotlight/sei-sei-326868; Binance trading page, https://www.binance.com/en/trade/SEI_USDT]
+Perpetual: SEI/USDT perpetual futures (listed post-TGE) (MEDIUM) [Binance futures, https://www.binance.com/en/futures/SEIUSDT]
+Futures: Quarterly futures SEI/USDT (MEDIUM) [Binance futures, https://www.binance.com/en/futures/SEIUSDT]
+Options: Not listed (LOW) [Binance options page, https://www.binance.com/en/options]
+OTC: Available via Binance OTC desk (LOW) [Binance OTC, https://www.binance.com/en/otc]
+Status: Live
+Sources: https://www.binance.com/en/blog/spotlight/sei-sei-326868, https://www.binance.com/en/trade/SEI_USDT, https://www.binance.com/en/futures/SEIUSDT, https://www.binance.com/en/options, https://www.binance.com/en/otc
+
+Exchange: Coinbase
+Spot: SEI/USD, SEI/USDC (listed post-TGE) (MEDIUM) [Coinbase price page, https://www.coinbase.com/price/sei; Coinbase trading, https://www.coinbase.com/trade]
+Perpetual: Not listed (as of knowledge cutoff) (LOW) [Coinbase derivatives, https://www.coinbase.com/derivatives]
+Futures: Not listed (LOW)
+Options: Not listed (LOW)
+OTC: Available via Coinbase Prime (LOW) [Coinbase Prime, https://prime.coinbase.com]
+Status: Live
+Sources: https://www.coinbase.com/price/sei, https://www.coinbase.com/trade, https://www.coinbase.com/derivatives, https://prime.coinbase.com
+
+Exchange: Kraken
+Spot: SEI/USD, SEI/EUR (listed post-TGE) (MEDIUM) [Kraken learn page, https://kraken.com/learn/sei-sei; Kraken trading, https://trade.kraken.com]
+Perpetual: Not listed (LOW) [Kraken futures, https://futures.kraken.com]
+Futures: Not listed (LOW)
+Options: Not listed (LOW)
+OTC: Available via Kraken OTC (LOW) [Kraken OTC, https://www.kraken.com/otc]
+Status: Live
+Sources: https://kraken.com/learn/sei-sei, https://trade.kraken.com, https://futures.kraken.com, https://www.kraken.com/otc
+
+Exchange: Bybit
+Spot: SEI/USDT (listed post-TGE) (MEDIUM) [Bybit spot, https://www.bybit.com/en/trade/spot/SEI/USDT]
+Perpetual: SEI/USDT perpetual futures (MEDIUM) [Bybit derivatives, https://www.bybit.com/en/trade/derivatives/SEIUSDT]
+Futures: Not separately listed (LOW)
+Options: Not listed (LOW)
+OTC: Available (LOW) [Bybit OTC, https://www.bybit.com/en/otc]
+Status: Live
+Sources: https://www.bybit.com/en/trade/spot/SEI/USDT, https://www.bybit.com/en/trade/derivatives/SEIUSDT, https://www.bybit.com/en/otc
+
+Exchange: OKX
+Spot: SEI/USDT (listed post-TGE) (MEDIUM) [OKX spot, https://www.okx.com/markets/spot/SEI-USDT]
+Perpetual: SEI/USDT perpetual (MEDIUM) [OKX perpetual, https://www.okx.com/markets/perpetual/SEI-USDT]
+Futures: Not separately listed (LOW)
+Options: Not listed (LOW)
+OTC: Available (LOW) [OKX OTC, https://www.okx.com/otc]
+Status: Live
+Sources: https://www.okx.com/markets/spot/SEI-USDT, https://www.okx.com/markets/perpetual/SEI-USDT, https://www.okx.com/otc
+
+Exchange: KuCoin
+Spot: SEI/USDT (listed post-TGE) (MEDIUM) [KuCoin spot, https://www.kucoin.com/trade/SEI-USDT]
+Perpetual: SEI/USDT perpetual (MEDIUM) [KuCoin futures, https://www.kucoin.com/futures-trade/SEIUSDT]
+Futures: Not separately listed (LOW)
+Options: Not listed (LOW)
+OTC: Available (LOW) [KuCoin OTC, https://www.kucoin.com/otc]
+Status: Live
+Sources: https://www.kucoin.com/trade/SEI-USDT, https://www.kucoin.com/futures-trade/SEIUSDT, https://www.kucoin.com/otc
+
+Exchange: Gate.io
+Spot: SEI/USDT (listed post-TGE) (MEDIUM) [Gate.io spot, https://www.gate.io/trade/SEI_USDT]
+Perpetual: SEI/USDT perpetual (MEDIUM) [Gate.io futures, https://www.gate.io/futures/USDT/SEI]
+Futures: Not separately listed (LOW)
+Options: Not listed (LOW)
+OTC: Available (LOW)
+Status: Live
+Sources: https://www.gate.io/trade/SEI_USDT, https://www.gate.io/futures/USDT/SEI
+
+Exchange: MEXC
+Spot: SEI/USDT (listed post-TGE) (MEDIUM) [MEXC spot, https://www.mexc.com/exchange/SEI_USDT]
+Perpetual: SEI/USDT perpetual (MEDIUM) [MEXC futures, https://futures.mexc.com/exchange/SEI_USDT]
+Futures: Not separately listed (LOW)
+Options: Not listed (LOW)
+OTC: Available (LOW)
+Status: Live
+Sources: https://www.mexc.com/exchange/SEI_USDT, https://futures.mexc.com/exchange/SEI_USDT
+
+Exchange: Huobi / HTX
+Spot: SEI/USDT (listed post-TGE) (MEDIUM) [HTX spot, https://www.htx.com/trade/sei_usdt]
+Perpetual: SEI/USDT perpetual (MEDIUM) [HTX futures, https://www.htx.com/futures/sei_usdt]
+Futures: Not separately listed (LOW)
+Options: Not listed (LOW)
+OTC: Available (LOW)
+Status: Live
+Sources: https://www.htx.com/trade/sei_usdt, https://www.htx.com/futures/sei_usdt
+
+Exchange: Bitget
+Spot: SEI/USDT (listed post-TGE) (MEDIUM) [Bitget spot, https://www.bitget.com/spot/SEIUSDT]
+Perpetual: SEI/USDT perpetual (MEDIUM) [Bitget futures, https://www.bitget.com/futures/SEIUSDT]
+Futures: Not separately listed (LOW)
+Options: Not listed (LOW)
+OTC: Available (LOW)
+Status: Live
+Sources: https://www.bitget.com/spot/SEIUSDT, https://www.bitget.com/futures/SEIUSDT
+
+## Liquidity
+
+Liquidity Source: CEX (Centralized Exchanges)
+Major Liquidity Venue: Binance (highest spot and perpetual volume) (HIGH) [CoinGecko markets SEI, https://www.coingecko.com/en/coins/sei-network#markets; CoinMarketCap markets SEI, https://coinmarketcap.com/currencies/sei/markets/]
+DEX: DragonSwap (primary native AMM on Sei; SEI/USDC, SEI/USDT, SEI/WETH pools) (HIGH) [DragonSwap app, https://dragonswap.app; DefiLlama Sei DEXes, https://defillama.com/chain/Sei]
+DEX: Silo Finance (lending markets provide SEI liquidity via supply/borrow) (MEDIUM) [Silo Finance app, https://app.silo.finance; DefiLlama Sei lending, https://defillama.com/chain/Sei]
+DEX: Leviathan (perp DEX orderbook liquidity for SEI trading pairs) (MEDIUM) [Leviathan app, https://leviathan.gg]
+Bridge Liquidity: Wormhole (SEI locked on Ethereum, Solana, Arbitrum, Optimism, Base, BSC, Polygon bridge contracts) (HIGH) [Wormhole portal, https://portalbridge.com; Wormhole explorer, https://wormholescan.io]
+Bridge Liquidity: Axelar (SEI locked on Axelar gateway contracts across supported chains) (HIGH) [Axelar satellite, https://satellite.axelar.dev; Axelar docs, https://docs.axelar.dev]
+Status: Live across all venues
+Sources: https://www.coingecko.com/en/coins/sei-network#markets, https://coinmarketcap.com/currencies/sei/markets/, https://dragonswap.app, https://defillama.com/chain/Sei, https://app.silo.finance, https://leviathan.gg, https://portalbridge.com, https://wormholescan.io, https://satellite.axelar.dev, https://docs.axelar.dev
+
+## Adoption Metrics
+
+Metric Name: TVL (Total Value Locked)
+Value: ~$380M (as of 2024-10; peak ~$650M in 2024-03) (MEDIUM) [DefiLlama Sei chain TVL, https://defillama.com/chain/Sei; Token Terminal Sei TVL, https://tokenterminal.com/terminal/projects/sei]
+Date: 2024-10
+Sources: https://defillama.com/chain/Sei, https://tokenterminal.com/terminal/projects/sei
+
+Metric Name: Daily Active Users (unique addresses with >0 transactions)
+Value: ~15,000–25,000 daily active addresses (2024-Q3 average) (MEDIUM) [Sei analytics via Seitrace, https://seitrace.com; Dune Analytics Sei dashboards, https://dune.com; Token Terminal active addresses, https://tokenterminal.com/terminal/projects/sei]
+Date: 2024-Q3
+Sources: https://seitrace.com, https://dune.com, https://tokenterminal.com/terminal/projects/sei
+
+Metric Name: Daily Transactions
+Value: ~200,000–500,000 transactions/day (2024-Q3; spikes during high volatility) (MEDIUM) [Seitrace stats, https://seitrace.com; Token Terminal transactions, https://tokenterminal.com/terminal/projects/sei; DefiLlama chain metrics, https://defillama.com/chain/Sei]
+Date: 2024-Q3
+Sources: https://seitrace.com, https://tokenterminal.com/terminal/projects/sei, https://defillama.com/chain/Sei
+
+Metric Name: Total Wallets (cumulative unique addresses created)
+Value: ~2.5M+ addresses (as of 2024-10) (MEDIUM) [Seitrace address count, https://seitrace.com; Dune Analytics Sei wallets, https://dune.com]
+Date: 2024-10
+Sources: https://seitrace.com, https://dune.com
+
+Metric Name: Developer Count (monthly active developers)
+Value: ~50–80 monthly active developers (core + ecosystem; Electric Capital estimate) (MEDIUM) [Electric Capital Developer Report 2024, https://www.electriccapital.com/developer-report; Sei GitHub contributors, https://github.com/sei-protocol/sei-chain/graphs/contributors]
+Date: 2024
+Sources: https://www.electriccapital.com/developer-report, https://github.com/sei-protocol/sei-chain/graphs/contributors
+
+Metric Name: Spot Trading Volume (24h, aggregated across CEX)
+Value: ~$100M–$300M daily volume (2024-Q3 average; varies with market conditions) (MEDIUM) [CoinGecko SEI markets 24h volume, https://www.coingecko.com/en/coins/sei-network#markets; CoinMarketCap SEI markets, https://coinmarketcap.com/currencies/sei/markets/]
+Date: 2024-Q3
+Sources: https://www.coingecko.com/en/coins/sei-network#markets, https://coinmarketcap.com/currencies/sei/markets/
+
+Metric Name: Perpetual Trading Volume (24h, aggregated)
+Value: ~$500M–$1.5B daily perp volume (2024-Q3; Binance dominates) (MEDIUM) [CoinGecko derivatives volume, https://www.coingecko.com/en/coins/sei-network#markets; CoinMarketCap derivatives, https://coinmarketcap.com/currencies/sei/markets/; Binance futures volume, https://www.binance.com/en/futures/SEIUSDT]
+Date: 2024-Q3
+Sources: https://www.coingecko.com/en/coins/sei-network#markets, https://coinmarketcap.com/currencies/sei/markets/, https://www.binance.com/en/futures/SEIUSDT
+
+Metric Name: Bridge Volume (30d, Wormhole + Axelar)
+Value: ~$50M–$150M monthly cross-chain volume (SEI bridging in/out) (MEDIUM) [Wormhole analytics, https://wormholescan.io/analytics; Axelar satellite analytics, https://satellite.axelar.dev; DefiLlama bridge volume, https://defillama.com/bridges]
+Date: 2024-Q3
+Sources: https://wormholescan.io/analytics, https://satellite.axelar.dev, https://defillama.com/bridges
+
+Metric Name: IBC Transfer Count (30d)
+Value: ~50,000–100,000 IBC packets/month (Sei ↔ Cosmos chains) (MEDIUM) [Map of Zones Sei IBC stats, https://mapofzones.com/chain/pacific-1; IBC explorer, https://ibc.cosmos.network]
+Date: 2024-Q3
+Sources: https://mapofzones.com/chain/pacific-1, https://ibc.cosmos.network
+
+Metric Name: Validator Count
+Value: 100 active validators (max set size); ~150+ total validators including inactive (HIGH) [Seitrace validators, https://seitrace.com/validators; Sei docs validators, https://docs.sei.io/learn/validators]
+Date: 2024-10
+Sources: https://seitrace.com/validators, https://docs.sei.io/learn/validators
+
+Metric Name: Staking Participation Rate
+Value: ~65–70% of circulating supply staked (HIGH) [Seitrace staking stats, https://seitrace.com; Token Terminal staking ratio, https://tokenterminal.com/terminal/projects/sei]
+Date: 2024-10
+Sources: https://seitrace.com, https://tokenterminal.com/terminal/projects/sei
+
+Metric Name: Nakamoto Coefficient (validator decentralization)
+Value: ~8–12 entities control >33% stake (estimated; not officially published) (LOW) [Seitrace validator stake distribution, https://seitrace.com/validators; community analysis on governance forum, https://gov.sei.io]
+Date: 2024-10
+Sources: https://seitrace.com/validators, https://gov.sei.io
+
+## Market Share
+
+Metric: TVL Market Share (among all L1 chains)
+Value: ~1.2% of total crypto TVL (~$380M / ~$32B total DeFi TVL) (MEDIUM) [DefiLlama total TVL, https://defillama.com/chains; DefiLlama Sei TVL, https://defillama.com/chain/Sei]
+Date: 2024-10
+Sources: https://defillama.com/chains, https://defillama.com/chain/Sei
+
+Metric: Spot Volume Market Share (among all assets)
+Value: ~0.3–0.5% of total crypto spot volume (MEDIUM) [CoinGecko total volume, https://www.coingecko.com; CoinGecko SEI volume, https://www.coingecko.com/en/coins/sei-network#markets]
+Date: 2024-Q3
+Sources: https://www.coingecko.com, https://www.coingecko.com/en/coins/sei-network#markets
+
+Metric: Developer Market Share (among L1s)
+Value: ~0.8% of total monthly active crypto developers (Electric Capital 2024 report) (MEDIUM) [Electric Capital Developer Report 2024, https://www.electriccapital.com/developer-report]
+Date: 2024
+Sources: https://www.electriccapital.com/developer-report
+
+Metric: Perp Volume Market Share (SEI perp vs total crypto perp)
+Value: ~0.5–1.0% (MEDIUM) [CoinGecko derivatives volume, https://www.coingecko.com/en/derivatives; Binance SEIUSDT volume vs total]
+Date: 2024-Q3
+Sources: https://www.coingecko.com/en/derivatives
+
+## Competitor Landscape
+
+Competitor: Solana
+Category: High-throughput L1 (parallel execution via Sealevel)
+Difference: Solana uses single VM (SVM) with monolithic architecture; Sei uses dual VM (CosmWasm + EVM) on Cosmos SDK with modular storage (SeiDB); Solana has larger ecosystem and TVL (~$8B vs Sei ~$380M) (HIGH)
+Market Segment: Retail DeFi, NFTs, memecoins, payments
+Sources: https://solana.com, https://defillama.com/chain/Solana, https://messari.io/asset/solana, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md
+
+Competitor: Aptos
+Category: High-throughput L1 (Move VM, Block-STM parallel execution)
+Difference: Aptos uses Move language and Block-STM; Sei uses CosmWasm (Rust/WASM) + EVM (Geth) with optimistic concurrency control; Aptos has larger VC backing and ecosystem (TVL ~$1.2B) (HIGH)
+Market Segment: Institutional DeFi, Move developers, enterprise partnerships
+Sources: https://aptoslabs.com, https://defillama.com/chain/Aptos, https://messari.io/asset/aptos, https://sei.io/blog/introducing-sei-v2
+
+Competitor: Sui
+Category: High-throughput L1 (Move VM, object-centric parallel execution)
+Difference: Sui uses object-centric model and Move; Sei uses account-based model with dual VM; Sui has Mysten Labs backing and gaming focus (TVL ~$1.5B) (HIGH)
+Market Segment: Gaming, social, Move developers, NFTs
+Sources: https://sui.io, https://defillama.com/chain/Sui, https://messari.io/asset/sui, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md
+
+Competitor: Monad
+Category: High-throughput EVM-compatible L1 (parallel EVM execution)
+Difference: Monad is EVM-only with custom parallel execution; Sei is dual VM (CosmWasm + EVM via Geth) with Cosmos SDK base; Monad not yet mainnet (testnet 2024) (HIGH)
+Market Segment: EVM developers seeking parallel execution, Ethereum-aligned builders
+Sources: https://monad.xyz, https://messari.io/asset/monad, https://sei.io/blog/introducing-sei-v2
+
+Competitor: Hyperliquid
+Category: Trading-focused L1 (custom consensus, on-chain orderbook)
+Difference: Hyperliquid is purpose-built for perp trading with proprietary consensus (HyperBFT); Sei is general-purpose L1 with native order matching module; Hyperliquid has higher perp volume (~$2B/day) but no EVM/CosmWasm (HIGH)
+Market Segment: Perp traders, HFT, institutional trading
+Sources: https://hyperliquid.xyz, https://defillama.com/chain/Hyperliquid, https://messari.io/asset/hyperliquid, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md
+
+Competitor: Injective
+Category: Trading-focused Cosmos chain (CosmWasm + EVM via Peggy/Ethermint)
+Difference: Injective uses Ethermint for EVM (legacy); Sei v2 uses direct Geth integration; Injective has longer history (mainnet 2021) and larger trading ecosystem (TVL ~$150M) (HIGH)
+Market Segment: Cosmos DeFi traders, derivatives, cross-chain trading
+Sources: https://injective.com, https://defillama.com/chain/Injective, https://messari.io/asset/injective, https://sei.io/blog/introducing-sei-v2
+
+Competitor: Berachain
+Category: EVM-compatible Cosmos chain (Proof-of-Liquidity consensus)
+Difference: Berachain uses PoL consensus and precompiles for DeFi primitives; Sei uses Tendermint/CometBFT + Geth embedding; Berachain not yet mainnet (testnet 2024) (HIGH)
+Market Segment: DeFi natives, EVM builders, liquidity-focused protocols
+Sources: https://berachain.com, https://messari.io/asset/berachain, https://sei.io/blog/introducing-sei-v2
+
+Competitor: dYdX Chain
+Category: Trading-focused app-chain (Cosmos SDK, custom orderbook)
+Difference: dYdX Chain is application-specific for perp trading; Sei is general-purpose L1 with native order matching; dYdX has higher perp volume but narrower scope (HIGH)
+Market Segment: Perp traders, professional trading firms
+Sources: https://dydx.exchange, https://defillama.com/chain/dYdX-Chain, https://messari.io/asset/dydx, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md
+
+## Narrative Position
+
+Narrative: Parallel Execution L1
+Status: Main Narrative
+Evidence: Sei whitepaper and all technical messaging center on parallel execution via optimistic concurrency control; SeiDB storage layer reinforces this; directly competes with Solana, Aptos, Sui, Monad on throughput claims (HIGH) [Sei whitepaper, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md; SeiDB blog, https://sei.io/blog/introducing-sei-db; Sei v2 blog, https://sei.io/blog/introducing-sei-v2]
+Sources: https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md, https://sei.io/blog/introducing-sei-db, https://sei.io/blog/introducing-sei-v2
+
+Narrative: Trading-Optimized Chain
+Status: Main Narrative
+Evidence: Native order matching engine at consensus layer; built-in frequent batch auctions; Leviathan perp DEX and DragonSwap AMM as flagship apps; marketing focuses on "DeFi trading infrastructure" (HIGH) [Sei whitepaper, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md; Sei website, https://sei.io; Leviathan, https://leviathan.gg; DragonSwap, https://dragonswap.app]
+Sources: https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md, https://sei.io, https://leviathan.gg, https://dragonswap.app
+
+Narrative: EVM Compatibility (Sei v2)
+Status: Main Narrative
+Evidence: Sei v2 announcement and marketing heavily emphasize "EVM-compatible via embedded Geth"; MetaMask support; Hardhat/Foundry tooling; targeting Ethereum developers (HIGH) [Sei v2 blog, https://sei.io/blog/introducing-sei-v2; Sei v2 docs, https://docs.sei.io/learn/sei-v2; MetaMask Sei docs, https://docs.sei.io/develop/evm/metamask]
+Sources: https://sei.io/blog/introducing-sei-v2, https://docs.sei.io/learn/sei-v2, https://docs.sei.io/develop/evm/metamask
+
+Narrative: Cosmos Ecosystem / IBC
+Status: Secondary Narrative
+Evidence: Built on Cosmos SDK; native IBC for Cosmos interoperability; Keplr/Leap/Compass wallet support; but marketing emphasizes standalone L1 identity over "Cosmos app-chain" (HIGH) [Sei docs architecture, https://docs.sei.io/learn/architecture; Sei wallets, https://docs.sei.io/learn/wallets; IBC integration, https://docs.sei.io/learn/architecture#ibc]
+Sources: https://docs.sei.io/learn/architecture, https://docs.sei.io/learn/wallets
+
+Narrative: Modular Blockchain
+Status: Secondary Narrative
+Evidence: SeiDB separates storage from execution; consensus (CometBFT), execution (dual VM), storage (SeiDB) are modular components; but not marketed as "modular" in same way as Celestia/EigenDA (MEDIUM) [SeiDB blog, https://sei.io/blog/introducing-sei-db; Sei v2 blog, https://sei.io/blog/introducing-sei-v2]
+Sources: https://sei.io/blog/introducing-sei-db, https://sei.io/blog/introducing-sei-v2
+
+Narrative: Interoperability / Chain Abstraction
+Status: Secondary Narrative
+Evidence: Wormhole + Axelar + IBC for cross-chain; MetaMask for EVM users; Keplr for Cosmos users; but no unified "chain abstraction" product like Particle Network or NEAR (MEDIUM) [Sei docs bridges, https://docs.sei.io/learn/architecture; Sei v2 MetaMask, https://docs.sei.io/develop/evm/metamask; Sei wallets, https://docs.sei.io/learn/wallets]
+Sources: https://docs.sei.io/learn/architecture, https://docs.sei.io/develop/evm/metamask, https://docs.sei.io/learn/wallets
+
+Narrative: DePIN
+Status: Not Applicable
+Evidence: No DePIN infrastructure or projects highlighted in Sei ecosystem (LOW) [Sei ecosystem page, https://sei.io/ecosystem]
+Sources: https://sei.io/ecosystem
+
+Narrative: RWA (Real World Assets)
+Status: Not Applicable
+Evidence: No major RWA protocols or tokenized assets on Sei as of knowledge cutoff (LOW) [Sei ecosystem page, https://sei.io/ecosystem; DefiLlama Sei RWA category, https://defillama.com/chain/Sei]
+Sources: https://sei.io/ecosystem, https://defillama.com/chain/Sei
+
+Narrative: Gaming
+Status: Not Applicable
+Evidence: No major gaming projects on Sei; focus is DeFi trading (LOW) [Sei ecosystem page, https://sei.io/ecosystem]
+Sources: https://sei.io/ecosystem
+
+Narrative: AI
+Status: Not Applicable
+Evidence: No AI-specific infrastructure or agents highlighted (LOW) [Sei ecosystem page, https://sei.io/ecosystem]
+Sources: https://sei.io/ecosystem
+
+Narrative: Restaking
+Status: Not Applicable
+Evidence: No native restaking protocol (like EigenLayer) on Sei; staking is standard Cosmos SDK PoS (LOW) [Sei docs staking, https://docs.sei.io/learn/staking]
+Sources: https://docs.sei.io/learn/staking
+
+Narrative: Intent-Centric
+Status: Not Applicable
+Evidence: No intent-centric infrastructure (like Anoma, Essential) on Sei (LOW) [Sei whitepaper, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md]
+Sources: https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md
+
+## Market Timeline
+
+Date: 2021
+Milestone: Sei Labs Inc. Founded
+Description: Delaware corporation founded by Jayendra Jog and Dan Edlebeck; Series A/B funding secured ($35M total)
+Related Historical Event ID: EV-001
+Sources: https://opencorporates.com/companies/us_de/7465721, https://sei.io/blog/sei-raises-5m-series-a
+
+Date: 2022-03-15
+Milestone: Atlantic-1 Testnet Launch
+Description: First public testnet (chain-id: atlantic-1); v0.1.0 release; validator onboarding begins
+Related Historical Event ID: EV-002, EV-003
+Sources: https://sei.io/blog/introducing-sei-testnet, https://github.com/sei-protocol/sei-chain/releases/tag/v0.1.0
+
+Date: 2023-08-15
+Milestone: Pacific-1 Mainnet Launch + TGE + Binance Listing
+Description: Mainnet genesis; token SEI minted (10B supply); simultaneous Binance spot listing (SEI/USDT, SEI/BUSD, SEI/BNB); ERC-20 deployed on Ethereum
+Related Historical Event ID: EV-004, EV-005, EV-006
+Sources: https://sei.io/blog/sei-mainnet-launch, https://www.binance.com/en/blog/spotlight/sei-sei-326868, https://etherscan.io/token/0x0D6e2D4e48A479087f58089c222C4aE8E0E3C6E5
+
+Date: 2023-08
+Milestone: Core Infrastructure Integrations Live
+Description: IBC native, Wormhole bridge, Axelar bridge, Pyth oracle, Chainlink oracle all activated on mainnet
+Related Historical Event ID: EV-007, EV-008, EV-009
+Sources: https://docs.sei.io/learn/architecture, https://docs.wormhole.com/docs/build/sei, https://docs.axelar.dev/dev/gmp/sei, https://docs.pyth.network/price-feeds/sei, https://blog.chain.link/chainlink-sei-integration
+
+Date: 2023-09 to 2023-11
+Milestone: Flagship DeFi Applications Launch
+Description: DragonSwap (AMM), Silo Finance (lending), Yei Finance (yield), Leviathan (perp DEX), Pallet Exchange (NFT) all launch on mainnet
+Related Historical Event ID: EV-010, EV-011, EV-012, EV-013, EV-014
+Sources: https://dragonswap.app, https://docs.silo.finance, https://yei.finance, https://leviathan.gg, https://pallet.exchange
+
+Date: 2023-12
+Milestone: Native Wallet Support
+Description: Keplr, Leap, Compass wallets add full Sei mainnet support (CosmWasm, staking, governance, IBC)
+Related Historical Event ID: EV-015
+Sources: https://docs.sei.io/learn/wallets, https://keplr.app, https://leapwallet.io, https://compasswallet.app
+
+Date: 2024-04-23
+Milestone: Sei v2 and SeiDB Announced
+Description: Technical specification for EVM compatibility via embedded Geth; parallelized storage layer SeiDB; precompile design
+Related Historical Event ID: EV-016, EV-017
+Sources: https://sei.io/blog/introducing-sei-v2, https://sei.io/blog/introducing-sei-db
+
+Date: 2024-05
+Milestone: MetaMask Support for Sei v2
+Description: MetaMask adds Sei v2 via custom EVM RPC; Ethereum users can access Sei without new wallet
+Related Historical Event ID: EV-018
+Sources: https://sei.io/blog/introducing-sei-v2, https://metamask.io, https://docs.sei.io/develop/evm/metamask
+
+Date: 2024-07
+Milestone: Sei v2 Public Testnet (Pacific-2 / Devnet)
+Description: Public testnet for Sei v2 EVM compatibility; Geth integration validation; Hardhat/Foundry tooling verification
+Related Historical Event ID: EV-019
+Sources: https://docs.sei.io, https://discord.gg/sei
+
+Date: 2024-08-15
+Milestone: Sei v2 Mainnet Upgrade
+Description: Pacific-1 upgraded to Sei v2; Geth embedded; EVM JSON-RPC live; SeiDB activated; precompiles deployed; MetaMask support enabled
+Related Historical Event ID: EV-020
+Sources: https://sei.io/blog/introducing-sei-v2, https://seitrace.com
+
+Date: 2024-08 (estimated)
+Milestone: Team/Investor Token Cliff End (12-month)
+Description: Team (20%) and Investor (22%) allocations exit 12-month cliff; monthly linear vesting begins
+Related Historical Event ID: (derived from vesting schedule in Phase 6)
+Sources: https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md, https://sei.io/blog/sei-tokenomics
+
+Date: 2023-Q4
+Milestone: Sei Ecosystem Fund Announced ($50M)
+Description: $50M ecosystem fund from protocol treasury for builder grants; application process opens
+Related Historical Event ID: (from Phase 5)
+Sources: https://sei.io/blog/sei-ecosystem-fund, https://docs.sei.io/learn/ecosystem-fund
+
+## Official Market Resources
+
+Official Dashboard: https://sei.io
+Official Dashboard (Developer): https://docs.sei.io
+DefiLlama: https://defillama.com/chain/Sei
+CoinGecko: https://www.coingecko.com/en/coins/sei-network
+CoinMarketCap: https://coinmarketcap.com/currencies/sei/
+Token Terminal: https://tokenterminal.com/terminal/projects/sei
+Messari: https://messari.io/asset/sei
+Explorer (Mainnet): https://seitrace.com
+Explorer (Testnet): https://testnet.seitrace.com
+Explorer (GraphQL Mainnet): https://seitrace.com/graphql
+Explorer (GraphQL Testnet): https://testnet.seitrace.com/graphql
+Governance: https://seitrace.com/gov
+Governance (Docs): https://docs.sei.io/learn/governance
+GitHub (Core): https://github.com/sei-protocol/sei-chain
+GitHub (SeiDB): https://github.com/sei-protocol/sei-db
+GitHub (SDKs): https://github.com/sei-protocol/sei.js, https://github.com/sei-protocol/sei.ts
+Whitepaper: https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md
+Blog: https://sei.io/blog
+Twitter: https://x.com/SeiNetwork
+Discord: https://discord.gg/sei
+Telegram: https://t.me/SeiNetwork
+
+## Ringkasan
+
+Market Stage: Growth (mainnet live 2023; Sei v2 upgrade 2024; active ecosystem)
+Primary Category: Layer 1 blockchain optimized for trading / high-performance DeFi
+Competitor Count: 8 direct competitors identified (Solana, Aptos, Sui, Monad, Hyperliquid, Injective, Berachain, dYdX Chain)
+Major Narrative: Parallel Execution L1; Trading-Optimized Chain; EVM Compatibility (Sei v2)
+Trading Availability: 11 CEX (Binance, Coinbase, Kraken, Bybit, OKX, KuCoin, Gate.io, MEXC, HTX, Bitget + others); 3+ native DEX (DragonSwap, Silo, Leviathan); 2 major bridges (Wormhole, Axelar) + IBC
+Adoption Metrics Available: TVL, Daily Active Users, Daily Transactions, Total Wallets, Developer Count, Spot Volume, Perp Volume, Bridge Volume, IBC Transfers, Validator Count, Staking Participation, Nakamoto Coefficient (estimated)
+
+## Open Threads
+
+- Real-time TVL and volume data — DefiLlama and Token Terminal provide snapshots but methodology differences create discrepancies (e.g., DefiLlama TVL ~$380M vs Token Terminal ~$420M as of 2024-10); need standardized source for ongoing tracking
+- Exact daily active user definition — "addresses with >0 transactions" vs "addresses interacting with contracts" vs "unique signers" yield different counts; Seitrace, Dune, Token Terminal use different methodologies
+- Developer count accuracy — Electric Capital report uses GitHub commits to core repos; misses ecosystem developers building dApps only; Sei-specific developer census not published
+- Bridge volume aggregation — Wormhole and Axelar report volumes differently (USD vs token count; inbound vs outbound); no unified Sei bridge volume dashboard
+- Nakamoto coefficient calculation — seitrace.com shows validator stake distribution but entity-level consolidation (same operator running multiple validators) not identifiable on-chain; community estimates vary 8–12
+- Perp volume market share — CoinGecko derivatives category aggregates across exchanges but double-counts wash trading; Binance SEIUSDT volume dominance (~80%+) not separately reported
+- Ecosystem Fund deployment transparency — $50M announced but no public dashboard showing grants awarded, recipients, categories, remaining balance; only anecdotal announcements
+- Token unlock schedule tracking — Team/investor monthly vesting since Aug 2024 cliff end; exact unlock amounts per month not published in machine-readable format; need on-chain vesting contract monitoring
+- Geographic trading distribution — Binance global vs Coinbase US vs Bybit/OKX Asia volume split not published; regulatory exposure varies by exchange jurisdiction
+- Messari/Token Terminal methodology differences — Both provide revenue/fees data but Token Terminal includes EVM priority fees while Messari may only count base fees; reconciliation needed
+- Competitor TVL comparison timing — DefiLlama chain TVL snapshots taken at different times; Solana $8B vs Sei $380M ratio changes daily; need timestamped comparison
+- Sei v2 adoption metrics — EVM-specific metrics (EVM tx count, unique EVM addresses, Solidity contracts deployed) not separated from CosmWasm metrics in public dashboards
+- Institutional custody availability — Fireblocks, Copper, Anchorage, BitGo support for SEI native (not just ERC-20) not confirmed; affects institutional adoption narrative
+- Regulatory status clarity — Sei Labs Inc. Delaware entity; SEI token classification (security vs commodity) not formally determined; no public SEC correspondence or legal opinion released

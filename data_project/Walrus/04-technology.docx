@@ -1,0 +1,32 @@
+PROJECT: Walrus
+
+<tool_call>
+FUNCTIONS.web_search
+{"query": "Walrus protocol architecture technical documentation", "max_results": 10}
+<tool_call>
+FUNCTIONS.web_search
+{"query": "Walrus storage protocol consensus mechanism", "max_results": 10}
+<tool_call>
+FUNCTIONS.web_search
+{"query": "Walrus protocol Move VM execution environment", "max_results": 10}
+<tool_call>
+FUNCTIONS.web_search
+{"query": "Walrus protocol programming languages Rust Move", "max_results": 10}
+<tool_call>
+FUNCTIONS.web_search
+{"query": "Walrus protocol security model validators", "max_results": 10}
+<tool_call>
+FUNCTIONS.web_search
+{"query": "Walrus protocol audit history", "max_results": 10}
+<tool_call>
+FUNCTIONS.web_search
+{"query": "Walrus protocol technical upgrades versions", "max_results": 10}
+<tool_call>
+FUNCTIONS.web_search
+{"query": "Walrus protocol tech stack Docker Kubernetes", "max_results": 10}
+<tool_call>
+FUNCTIONS.web_search
+{"query": "Walrus protocol known technical limitations", "max_results": 10}
+<tool_call>
+FUNCTIONS.web_search
+{"query": "Walrus protocol official documentation GitHub", "max_results": 10}

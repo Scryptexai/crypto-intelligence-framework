@@ -1,0 +1,32 @@
+PROJECT: Walrus
+
+<tool_call>
+FUNCTIONS.web_search
+{"query": "Walrus Mysten Labs founding history timeline", "max_results": 10}
+<tool_call>
+FUNCTIONS.web_search
+{"query": "Walrus protocol whitepaper publication date", "max_results": 10}
+<tool_call>
+FUNCTIONS.web_search
+{"query": "Walrus testnet launch date", "max_results": 10}
+<tool_call>
+FUNCTIONS.web_search
+{"query": "Walrus mainnet launch date", "max_results": 10}
+<tool_call>
+FUNCTIONS.web_search
+{"query": "Walrus funding rounds Mysten Labs investors", "max_results": 10}
+<tool_call>
+FUNCTIONS.web_search
+{"query": "Walrus token WAL launch date", "max_results": 10}
+<tool_call>
+FUNCTIONS.web_search
+{"query": "Walrus protocol upgrades versions history", "max_results": 10}
+<tool_call>
+FUNCTIONS.web_search
+{"query": "Walrus storage network validators nodes", "max_results": 10}
+<tool_call>
+FUNCTIONS.web_search
+{"query": "Walrus partnerships integrations 2023 2024 2025", "max_results": 10}
+<tool_call>
+FUNCTIONS.web_search
+{"query": "Walrus Foundation formation governance", "max_results": 10}

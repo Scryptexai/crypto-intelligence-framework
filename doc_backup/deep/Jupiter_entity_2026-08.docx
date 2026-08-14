@@ -1,0 +1,278 @@
+PROJECT: Jupiter
+
+Entity: Jupiter Exchange Ltd.
+Type: Company
+Relationship: Entitas hukum pendiri (BVI) yang mengoperasikan protokol Jupiter dan produk-produknya — aggregator, limit order, DCA, perps, API/SDK, Terminal, dan token JUP
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [OpenCorporates, https://opencorporates.com/companies/bvi/2055186]; (HIGH) [Jupiter Terms, https://jup.ag/terms]
+
+---
+Entity: Meow
+Type: Person
+Relationship: Founder/CEO (pseudonim) — memimpin visi produk, strategi token, dan komunikasi publik Jupiter
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Meow Twitter, https://x.com/meowjup]; (HIGH) [Jupiter Blog, https://blog.jup.ag/]
+
+---
+Entity: Rolex
+Type: Person
+Relationship: CFO/COO (pseudonim) — mengelola operasional keuangan, treasury, dan eksekusi strategi bisnis
+Period: tidak diketahui–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Jupiter Careers, https://jup.ag/careers]; (MEDIUM) [Meow Twitter threads, https://x.com/meowjup]
+
+---
+Entity: Slorg
+Type: Person
+Relationship: Head of Product (pseudonim) — mengarah roadmap produk aggregator, limit order, DCA, perps, dan Terminal
+Period: tidak diketahui–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Jupiter Careers, https://jup.ag/careers]; (MEDIUM) [Meow Twitter threads, https://x.com/meowjup]
+
+---
+Entity: Worm
+Type: Person
+Relationship: Head of Engineering (pseudonim) — memimpin tim engineering inti, arsitektur on-chain, dan integrasi SDK/API
+Period: tidak diketahui–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Jupiter Careers, https://jup.ag/careers]; (MEDIUM) [Meow Twitter threads, https://x.com/meowjup]
+
+---
+Entity: Jupiter Exchange
+Type: Organization
+Relationship: Brand/operational entity yang mengelola produk, komunitas, governance, dan ekosistem Jupiter di atas entitas hukum Jupiter Exchange Ltd.
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Official Website, https://jup.ag/]; (HIGH) [Jupiter Docs, https://dev.jup.ag/]
+
+---
+Entity: Solana
+Type: Organization
+Relationship: Blockchain layer-1 utama tempat seluruh protokol Jupiter (aggregator, perps, token JUP) dideploy dan beroperasi
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Jupiter Docs chains, https://dev.jup.ag/docs/intro]; (HIGH) [Solana ecosystem page, https://solana.com/ecosystem/jupiter]
+
+---
+Entity: Wormhole
+Type: Protocol
+Relationship: Cross-chain bridge/infrastructure yang digunakan Jupiter Perps untuk oracle lintas chain dan integrasi multi-chain
+Period: tidak diketahui–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Wormhole ecosystem Jupiter, https://wormhole.com/ecosystem/jupiter/]; (HIGH) [Jupiter Docs, https://dev.jup.ag/]
+
+---
+Entity: Jupiter Aggregator
+Type: Protocol
+Relationship: Produk inti swap routing/DEX aggregator yang mengagregasi likuiditas dari DEX Solana untuk best price execution
+Period: Oktober 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Jupiter Blog v1 launch, https://blog.jup.ag/introducing-jupiter-v1/]; (HIGH) [Jupiter Products, https://jup.ag/products]
+
+---
+Entity: Jupiter Limit Orders
+Type: Application
+Relationship: Produk limit order on-chain terintegrasi dengan aggregator untuk eksekusi conditional swap
+Period: tidak diketahui–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Jupiter Products, https://jup.ag/products]; (HIGH) [Jupiter Docs, https://dev.jup.ag/]
+
+---
+Entity: Jupiter DCA
+Type: Application
+Relationship: Produk Dollar Cost Averaging otomatis untuk pembelian/b penjualan berkala token SPL
+Period: tidak diketahui–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Jupiter Products, https://jup.ag/products]; (HIGH) [Jupiter Docs, https://dev.jup.ag/]
+
+---
+Entity: Jupiter Perps
+Type: Protocol
+Relationship: Perpetual futures DEX pada Solana dengan oracle berbasis Wormhole/Pyth, terintegrasi aggregator untuk likuiditas
+Period: tidak diketahui–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Jupiter Products, https://jup.ag/products]; (HIGH) [Jupiter Docs, https://dev.jup.ag/]
+
+---
+Entity: Jupiter API/SDK
+Type: Infrastructure
+Relationship: Developer infrastructure (REST API, TypeScript/Rust SDK, Terminal widget) untuk mengintegrasikan swap/limit/DCA/perps ke aplikasi eksternal
+Period: tidak diketahui–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Jupiter Docs, https://dev.jup.ag/]; (HIGH) [Jupiter Products, https://jup.ag/products]
+
+---
+Entity: Jupiter Terminal
+Type: Application
+Relationship: Embeddable swap widget (React/iframe) untuk dApp/wallet mengakses aggregator tanpa custom UI
+Period: tidak diketahui–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Jupiter Products, https://jup.ag/products]; (HIGH) [Jupiter Docs, https://dev.jup.ag/]
+
+---
+Entity: JUP Token
+Type: Protocol
+Relationship: Governance token SPL (JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN) untuk voting DAO, fee switch, dan insentif ekosistem
+Period: 31 Januari 2024–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Solscan JUP token, https://solscan.io/token/JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN]; (HIGH) [Jupiter Tokenomics, https://blog.jup.ag/jup-tokenomics/]
+
+---
+Entity: LFG Launchpad
+Type: Application
+Relationship: Platform launchpad (Jupiter LFG) digunakan untuk TGE token JUP dan airdrop komunitas Januari 2024
+Period: Januari 2024
+Exposure Type: technical-integration
+Evidence: (HIGH) [Jupiter Blog JUP launch, https://blog.jup.ag/jup-token-launch/]; (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/jupiter]
+
+---
+Entity: CoinGecko
+Type: Media
+Relationship: Data aggregator harga/volume/market cap JUP — referensi pasar independen
+Period: 2024–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [CoinGecko Jupiter, https://www.coingecko.com/en/coins/jupiter]
+
+---
+Entity: Solscan
+Type: Infrastructure
+Relationship: Block explorer Solana untuk verifikasi on-chain program Jupiter, token JUP, transaksi, dan akun program
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Solscan JUP token, https://solscan.io/token/JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN]; (HIGH) [Solscan program deploy, https://solscan.io/account/JUP4Fb2cqiRUcaTHdrPC8h2gNsA2ETXiPDY33WQGuJQ]
+
+---
+Entity: OpenCorporates
+Type: Media
+Relationship: Database corporat global yang memverifikasi entitas hukum Jupiter Exchange Ltd. di BVI
+Period: 2021–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [OpenCorporates Jupiter, https://opencorporates.com/companies/bvi/2055186]
+
+---
+Entity: GitHub (jup-ag org)
+Type: Infrastructure
+Relationship: Repository kode sumber terbuka protokol Jupiter (smart contracts, SDK, API, frontend)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [GitHub jup-ag, https://github.com/jup-ag]
+
+---
+Entity: Discord (Jupiter)
+Type: Community Organization
+Relationship: Server komunitas utama untuk diskusi produk, governance, support, dan announcement tim
+Period: 2021–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Jupiter site footer, https://jup.ag/]
+
+---
+Entity: Telegram (JupiterExchangeAnnouncements)
+Type: Community Organization
+Relationship: Channel announcement resmi untuk update produk, governance, dan airdrop
+Period: tidak diketahui–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (MEDIUM) [Telegram, https://t.me/JupiterExchangeAnnouncements]
+
+---
+Entity: X/Twitter (JupiterExchange)
+Type: Media
+Relationship: Saluran komunikasi resmi tim untuk announcement, thread edukasi, dan interaksi komunitas
+Period: 2021–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [X.com JupiterExchange, https://x.com/JupiterExchange]
+
+---
+Entity: Solana Foundation
+Type: Foundation
+Relationship: Entitas ekosistem Solana yang mendukung Jupiter melalui grants, ekosistem listing, dan kolaborasi teknis
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Solana ecosystem Jupiter, https://solana.com/ecosystem/jupiter]; (HIGH) [Jupiter Docs, https://dev.jup.ag/docs/intro]
+
+---
+Entity: Jupiter DAO
+Type: DAO
+Relationship: Governance on-chain pemegang token JUP — voting proposal fee switch, treasury, parameter protokol, dan arah ekosistem
+Period: Januari 2024–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Jupiter Blog tokenomics, https://blog.jup.ag/jup-tokenomics/]; (HIGH) [Jupiter Blog JUP launch, https://blog.jup.ag/jup-token-launch/]
+
+---
+
+PERSON
+Meow
+Rolex
+Slorg
+Worm
+
+FOUNDATION
+Solana Foundation
+
+COMPANY
+Jupiter Exchange Ltd.
+
+PROTOCOL
+Jupiter Aggregator
+Jupiter Perps
+JUP Token
+Wormhole
+
+CHAIN
+Solana
+
+INVESTOR
+(tidak ada investor teridentifikasi dari fase 01)
+
+INFRASTRUCTURE
+Jupiter API/SDK
+Solscan
+GitHub (jup-ag org)
+
+APPLICATION
+Jupiter Exchange
+Jupiter Limit Orders
+Jupiter DCA
+Jupiter Terminal
+LFG Launchpad
+
+SECURITY
+(tidak ada auditor/security firm teridentifikasi dari fase 01)
+
+DAO
+Jupiter DAO
+
+GOVERNMENT
+(tidak ada entitas pemerintah teridentifikasi dari fase 01)
+
+MEDIA
+CoinGecko
+OpenCorporates
+X/Twitter (JupiterExchange)
+
+COMMUNITY
+Discord (Jupiter)
+Telegram (JupiterExchangeAnnouncements)
+
+OTHER
+(tidak ada)
+
+---
+
+Total Entity: 26
+Internal: 12 (Jupiter Exchange Ltd., Meow, Rolex, Slorg, Worm, Jupiter Exchange, Jupiter Aggregator, Jupiter Limit Orders, Jupiter DCA, Jupiter Perps, Jupiter API/SDK, Jupiter Terminal, JUP Token, Jupiter DAO — 14 entitas internal jika termasuk produk sebagai internal; konservatif: 12)
+External: 12 (Solana, Wormhole, LFG Launchpad, CoinGecko, Solscan, OpenCorporates, GitHub, Discord, Telegram, X/Twitter, Solana Foundation — 11; plus LFG Launchpad = 12)
+Unknown: 2 (Exact founding entity jurisdiction details, Full core team real names)
+
+Open Threads
+- Exact founding entity jurisdiction (BVI confirmed via OpenCorporates; need to confirm if any subsidiary in another jurisdiction)
+- Full core team real names vs pseudonyms — most remain pseudonymous; verify if any doxxed publicly
+- Testnet phase details — unclear if formal testnet existed before Oct 2021 mainnet launch
+- JUP token contract upgradeability / admin keys — verify multisig / timelock setup on-chain
+- Revenue/fee switch status — Jupiter has discussed fee switch in governance; need on-chain verification of current status
+- Exact team headcount — "30-40" from careers page; need more precise or recent figure
+- Investor/VC backers — not disclosed in Phase 01; need to identify funding rounds and investors
+- Security auditors — no audit firms identified yet; need to find audit reports for aggregator, perps, token contracts
+- Jupiter DAO multisig/timelock signers — governance execution layer not yet mapped
+- LFG Launchpad entity — whether separate legal entity or product under Jupiter Exchange Ltd.

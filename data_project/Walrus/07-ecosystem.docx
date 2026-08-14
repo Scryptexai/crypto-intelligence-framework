@@ -1,0 +1,390 @@
+PROJECT: Walrus
+
+## Ecosystem Position
+
+Primary Sector: Decentralized Storage
+Primary Sector Evidence Level: HIGH
+Primary Sector Sources: https://walrus.xyz/, https://github.com/MystenLabs/walrus
+
+Secondary Sector: Data Availability Layer
+Secondary Sector Evidence Level: HIGH
+Secondary Sector Sources: https://walrus.xyz/docs/, https://github.com/MystenLabs/walrus/blob/main/docs/whitepaper.md
+
+Primary Chain: Sui
+Primary Chain Evidence Level: HIGH
+Primary Chain Sources: https://walrus.xyz/, https://sui.io/
+
+Supported Chains: Sui (native), Planned cross-chain via Wormhole and other bridges
+Supported Chains Evidence Level: MEDIUM
+Supported Chains Sources: https://walrus.xyz/docs/, https://github.com/MystenLabs/walrus
+
+## External Dependencies
+
+Dependency Name: Sui Blockchain
+Dependency Type: Chain
+Purpose: Consensus layer, settlement, validator coordination, staking, governance
+Criticality: Critical
+Status: Live
+Related Entity: Sui Foundation
+Related Technology Component: Sui consensus (Narwhal/Bullshark), Move VM, Sui SDK
+Sources: https://walrus.xyz/docs/, https://github.com/MystenLabs/walrus/blob/main/docs/whitepaper.md
+Evidence Level: HIGH
+
+Dependency Name: Mysten Labs
+Dependency Type: Protocol (Developer/Infrastructure Provider)
+Purpose: Core protocol development, testnet operation, initial validator set, SDK maintenance
+Criticality: Critical
+Status: Live
+Related Entity: Mysten Labs
+Related Technology Component: Walrus core protocol, Walrus CLI, Walrus SDK (TypeScript/Rust)
+Sources: https://www.mystenlabs.com/, https://github.com/MystenLabs/walrus
+Evidence Level: HIGH
+
+Dependency Name: Wormhole
+Dependency Type: Bridge
+Purpose: Cross-chain messaging, enabling Walrus blob storage access from non-Sui chains
+Criticality: High
+Status: Planned / Beta
+Related Entity: Wormhole Foundation
+Related Technology Component: Wormhole NTT, Wormhole Gateway
+Sources: https://walrus.xyz/blog/, https://wormhole.com/
+Evidence Level: MEDIUM
+
+Dependency Name: Sui Foundation
+Dependency Type: Foundation / Grant Provider
+Purpose: Ecosystem grants for builders, validator delegation program, community support
+Criticality: High
+Status: Live
+Related Entity: Sui Foundation
+Related Technology Component: Sui Foundation Delegation Program, Grant Program
+Sources: https://sui.io/foundation/grants, https://sui.io/foundation/delegation
+Evidence Level: HIGH
+
+Dependency Name: a16z crypto
+Dependency Type: VC / Financial Dependency
+Purpose: Lead investor in Mysten Labs (Seed, Series A), strategic guidance
+Criticality: Medium
+Status: Live
+Related Entity: a16z crypto
+Related Technology Component: N/A (financial)
+Sources: https://www.mystenlabs.com/blog/mysten-labs-raises-92m-series-a
+Evidence Level: HIGH
+
+Dependency Name: FTX Ventures (Historical)
+Dependency Type: VC / Financial Dependency
+Purpose: Lead investor Mysten Labs Series B ($300M) — status uncertain post-bankruptcy
+Criticality: Medium
+Status: Uncertain
+Related Entity: FTX Ventures
+Related Technology Component: N/A (financial)
+Sources: https://www.mystenlabs.com/blog/mysten-labs-raises-300m-series-b, https://www.coindesk.com/business/2022/11/11/mysten-labs-ftx-venture-investment/
+Evidence Level: HIGH
+
+Dependency Name: Cloud Providers (AWS/GCP/Azure)
+Dependency Type: Cloud / Infrastructure
+Purpose: Testnet node hosting, RPC endpoints, CI/CD infrastructure
+Criticality: Medium
+Status: Live
+Related Entity: Amazon Web Services, Google Cloud Platform, Microsoft Azure
+Related Technology Component: Walrus testnet nodes, indexer infrastructure
+Sources: https://github.com/MystenLabs/walrus/blob/main/docs/running-a-node.md
+Evidence Level: MEDIUM
+
+Dependency Name: Sui Name Service (SNS)
+Dependency Type: Protocol / Service
+Purpose: Human-readable names for Walrus blob addresses and sites
+Criticality: Low
+Status: Planned / Beta
+Related Entity: Sui Name Service
+Related Technology Component: SNS resolution integration
+Sources: https://walrus.xyz/docs/, https://sns.xyz/
+Evidence Level: LOW
+
+## Major Integrations
+
+Integration Name: Walrus + Sui Native Integration
+Integrated With: Sui Blockchain
+Purpose: Native blob storage for Sui smart contracts, Move VM execution environment, on-chain metadata
+Status: Live (Testnet)
+Related Historical Event ID: Testnet Launch 2024
+Sources: https://walrus.xyz/docs/, https://github.com/MystenLabs/walrus
+Evidence Level: HIGH
+
+Integration Name: Walrus + Wormhole Cross-Chain
+Integrated With: Wormhole
+Purpose: Cross-chain blob storage access, multi-chain data availability
+Status: Planned
+Related Historical Event ID: N/A (Announced partnership)
+Sources: https://walrus.xyz/blog/, https://wormhole.com/blog/
+Evidence Level: MEDIUM
+
+Integration Name: Walrus + Sui Name Service
+Integrated With: Sui Name Service (SNS)
+Purpose: Human-readable names for Walrus Sites and blob references
+Status: Beta
+Related Historical Event ID: N/A
+Sources: https://walrus.xyz/docs/sites/, https://sns.xyz/
+Evidence Level: MEDIUM
+
+Integration Name: Walrus + Akord
+Integrated With: Akord
+Purpose: Secure data vault application using Walrus for decentralized storage backend
+Status: Live (Testnet)
+Related Historical Event ID: N/A
+Sources: https://akord.com/, https://walrus.xyz/blog/
+Evidence Level: MEDIUM
+
+Integration Name: Walrus + Decrypt Media
+Integrated With: Decrypt Media
+Purpose: Decentralized content publishing and archiving using Walrus Sites
+Status: Beta / Pilot
+Related Historical Event ID: N/A
+Sources: https://walrus.xyz/blog/, https://decrypt.co/
+Evidence Level: LOW
+
+Integration Name: Walrus + SuiPlay0x1
+Integrated With: SuiPlay0x1 (Playtron/Mysten Labs gaming handheld)
+Purpose: Game asset storage and distribution via Walrus
+Status: Planned
+Related Historical Event ID: N/A
+Sources: https://walrus.xyz/blog/, https://www.mystenlabs.com/blog/
+Evidence Level: LOW
+
+## Infrastructure Providers
+
+Provider: Mysten Labs (Testnet Operators)
+Service: Testnet validator nodes, RPC endpoints, indexer nodes, faucet
+Criticality: Critical
+Status: Live
+Sources: https://github.com/MystenLabs/walrus/blob/main/docs/running-a-node.md, https://walrus.xyz/docs/
+Evidence Level: HIGH
+
+Provider: Community Validators (Testnet)
+Service: Storage nodes, validator nodes, RPC endpoints
+Criticality: High
+Status: Live (Testnet)
+Sources: https://github.com/MystenLabs/walrus/blob/main/docs/running-a-node.md, https://discord.gg/sui
+Evidence Level: MEDIUM
+
+Provider: Shinami
+Service: Node infrastructure (RPC, indexer, gas station) for Sui/Walrus developers
+Criticality: Medium
+Status: Live
+Sources: https://shinami.com/, https://walrus.xyz/docs/
+Evidence Level: MEDIUM
+
+Provider: Ankr
+Service: RPC endpoints, node hosting for Sui network (used by Walrus)
+Criticality: Medium
+Status: Live
+Sources: https://www.ankr.com/rpc/sui/, https://walrus.xyz/docs/
+Evidence Level: MEDIUM
+
+Provider: Google Cloud Platform
+Service: Cloud infrastructure for Mysten Labs testnet operations
+Criticality: Medium
+Status: Live
+Sources: https://github.com/MystenLabs/walrus/blob/main/.github/workflows/
+Evidence Level: LOW
+
+## Exchange Ecosystem
+
+Exchange: N/A (WAL token not yet launched)
+Listing Status: Not Listed
+Spot: N/A
+Perpetual: N/A
+OTC: N/A
+Launchpool: N/A
+Status: Not Applicable
+Sources: https://walrus.xyz/, https://coinmarketcap.com/, https://coingecko.com/
+Evidence Level: HIGH
+
+## Wallet Ecosystem
+
+Wallet: Sui Wallet (Official)
+Support Type: Native Sui wallet, will support Walrus Sites and blob interactions
+Status: Live (Sui Mainnet) / Planned (Walrus features)
+Sources: https://wallet.sui.io/, https://walrus.xyz/docs/
+Evidence Level: HIGH
+
+Wallet: Suiet Wallet
+Support Type: Sui ecosystem wallet, planned Walrus integration
+Status: Live (Sui) / Planned (Walrus)
+Sources: https://suiet.app/, https://walrus.xyz/docs/
+Evidence Level: MEDIUM
+
+Wallet: Ethos Wallet
+Support Type: Sui ecosystem wallet, planned Walrus integration
+Status: Live (Sui) / Planned (Walrus)
+Sources: https://ethoswallet.xyz/, https://walrus.xyz/docs/
+Evidence Level: MEDIUM
+
+Wallet: Martian Wallet
+Support Type: Sui ecosystem wallet
+Status: Live (Sui) / Planned (Walrus)
+Sources: https://martianwallet.xyz/, https://walrus.xyz/docs/
+Evidence Level: MEDIUM
+
+Wallet: Glass Wallet
+Support Type: Sui ecosystem wallet
+Status: Live (Sui) / Planned (Walrus)
+Sources: https://glasswallet.xyz/, https://walrus.xyz/docs/
+Evidence Level: LOW
+
+Wallet: Ledger (Hardware)
+Support Type: Hardware wallet support for Sui (via Ledger Live / blind signing)
+Status: Live (Sui) / Planned (Walrus)
+Sources: https://www.ledger.com/, https://walrus.xyz/docs/
+Evidence Level: HIGH
+
+## Developer Ecosystem
+
+SDK: Walrus TypeScript SDK
+API: Walrus HTTP API (blob store, read, delete, sites)
+Developer Tools: Walrus CLI (walrus binary), Walrus Sites CLI
+Open Source Repository: https://github.com/MystenLabs/walrus
+Developer Portal: https://walrus.xyz/docs/
+Hackathon: Sui Overflow (Sui Foundation hackathons include Walrus tracks), Sui Global Hackathons
+Grant Program: Sui Foundation Grants (ecosystem builders on Walrus), Mysten Labs Builder Grants
+Sources: https://github.com/MystenLabs/walrus, https://walrus.xyz/docs/, https://sui.io/foundation/grants, https://www.mystenlabs.com/grants
+Evidence Level: HIGH
+
+## Applications
+
+Application: Walrus Sites
+Category: Decentralized Web Hosting
+Relationship: Core protocol application (static site hosting on Walrus blobs)
+Status: Live (Testnet)
+Sources: https://walrus.xyz/docs/sites/, https://github.com/MystenLabs/walrus/tree/main/sites
+Evidence Level: HIGH
+
+Application: Akord
+Category: Secure Data Vault / Collaboration
+Relationship: Built on Walrus (storage backend)
+Status: Live (Testnet)
+Sources: https://akord.com/, https://walrus.xyz/blog/
+Evidence Level: MEDIUM
+
+Application: Decrypt Media Archive
+Category: Content Publishing / Archiving
+Relationship: Pilot integration using Walrus Sites
+Status: Beta
+Sources: https://walrus.xyz/blog/, https://decrypt.co/
+Evidence Level: LOW
+
+Application: SuiPlay0x1 Game Asset Storage
+Category: Gaming / Asset Distribution
+Relationship: Planned integration for game asset storage
+Status: Planned
+Sources: https://walrus.xyz/blog/, https://www.mystenlabs.com/blog/
+Evidence Level: LOW
+
+Application: Walrus Encrypted Blobs (Seal Integration)
+Category: Encrypted Storage / Access Control
+Relationship: Protocol feature using Seal (threshold encryption on Sui)
+Status: Live (Testnet)
+Sources: https://walrus.xyz/docs/encryption/, https://github.com/MystenLabs/seal
+Evidence Level: HIGH
+
+## Governance Ecosystem
+
+Foundation: Mysten Labs
+Role: Core developer, testnet operator, initial governance steward
+Sources: https://www.mystenlabs.com/, https://github.com/MystenLabs/walrus
+Evidence Level: HIGH
+
+Foundation: Sui Foundation
+Role: Ecosystem grants, validator delegation, community governance for Sui (affects Walrus)
+Sources: https://sui.io/foundation/, https://gov.sui.io/
+Evidence Level: HIGH
+
+DAO: Walrus Foundation (Planned)
+Role: Future protocol governance, treasury management, parameter upgrades
+Status: Not Yet Formed
+Sources: https://walrus.xyz/docs/, https://github.com/MystenLabs/walrus/blob/main/docs/tokenomics.md
+Evidence Level: MEDIUM
+
+Council: Sui Validators (indirectly govern Walrus via Sui governance)
+Role: Sui protocol upgrades affect Walrus; validator set operates storage nodes
+Sources: https://gov.sui.io/, https://walrus.xyz/docs/
+Evidence Level: HIGH
+
+Committee: Walrus Testnet Committee (Mysten Labs + selected community validators)
+Role: Testnet operations, parameter tuning, upgrade coordination
+Sources: https://github.com/MystenLabs/walrus/blob/main/docs/testnet.md
+Evidence Level: MEDIUM
+
+Validator Group: Walrus Storage Node Operators
+Role: Store and serve blobs, participate in proof-of-availability consensus
+Status: Testnet (permissioned), Mainnet (planned permissionless)
+Sources: https://github.com/MystenLabs/walrus/blob/main/docs/running-a-node.md
+Evidence Level: HIGH
+
+## Ecosystem Risks
+
+Risk: Single Chain Dependency (Sui)
+Description: Walrus is natively built on Sui; any critical Sui consensus failure, validator centralization, or governance issue directly impacts Walrus availability and security
+Sources: https://walrus.xyz/docs/, https://github.com/MystenLabs/walrus/blob/main/docs/whitepaper.md
+Evidence Level: HIGH
+
+Risk: Centralized Testnet Operation
+Description: Testnet validators and infrastructure primarily operated by Mysten Labs; limited decentralization currently
+Sources: https://github.com/MystenLabs/walrus/blob/main/docs/running-a-node.md
+Evidence Level: HIGH
+
+Risk: Cloud Infrastructure Concentration
+Description: Significant testnet infrastructure hosted on centralized cloud providers (GCP, AWS); potential censorship or outage risk
+Sources: https://github.com/MystenLabs/walrus/blob/main/.github/workflows/
+Evidence Level: MEDIUM
+
+Risk: Bridge Dependency (Wormhole)
+Description: Cross-chain functionality depends on Wormhole bridge security; bridge exploits could affect cross-chain Walrus operations
+Sources: https://wormhole.com/, https://walrus.xyz/blog/
+Evidence Level: MEDIUM
+
+Risk: Financial Dependency on Mysten Labs Treasury
+Description: No independent Walrus treasury; all development funded by Mysten Labs (VC-backed); Series B investor FTX Ventures in bankruptcy
+Sources: https://www.mystenlabs.com/blog/mysten-labs-raises-300m-series-b, https://www.coindesk.com/business/2022/11/11/mysten-labs-ftx-venture-investment/
+Evidence Level: HIGH
+
+Risk: No Live Token / Governance Mechanism
+Description: WAL token not launched; no on-chain governance for parameter changes or treasury management; protocol upgrades controlled by Mysten Labs
+Sources: https://walrus.xyz/, https://github.com/MystenLabs/walrus
+Evidence Level: HIGH
+
+Risk: Limited Validator Set (Testnet)
+Description: Testnet storage nodes are permissioned and limited in number; not representative of mainnet decentralization
+Sources: https://github.com/MystenLabs/walrus/blob/main/docs/running-a-node.md
+Evidence Level: HIGH
+
+## Official Ecosystem Resources
+
+Official Documentation: https://walrus.xyz/docs/
+Developer Portal: https://walrus.xyz/docs/
+GitHub: https://github.com/MystenLabs/walrus
+Partner Documentation: https://wormhole.com/docs/, https://sns.xyz/docs/, https://shinami.com/docs/
+Grant Program: https://sui.io/foundation/grants, https://www.mystenlabs.com/grants
+Ecosystem Dashboard: https://suivision.xyz/ (Sui explorer, includes Walrus testnet), https://walruscan.com/ (planned)
+
+## BUAT RINGKASAN
+
+Primary Ecosystem: Sui (native), with planned cross-chain via Wormhole
+Supported Chains: Sui (primary), Ethereum/Solana/others via Wormhole (planned)
+External Dependencies: Sui Blockchain (Critical), Mysten Labs (Critical), Wormhole (High), Sui Foundation (High), a16z crypto (Medium), FTX Ventures (Medium, uncertain), Cloud Providers (Medium), SNS (Low)
+Major Integrations: Sui Native (Live Testnet), Wormhole Cross-Chain (Planned), Sui Name Service (Beta), Akord (Live Testnet), Decrypt Media (Beta), SuiPlay0x1 (Planned), Seal Encryption (Live Testnet)
+Infrastructure Providers: Mysten Labs (Critical), Community Validators (High), Shinami (Medium), Ankr (Medium), GCP (Medium)
+Developer Programs: Walrus TS SDK, HTTP API, CLI, Sites CLI, Sui Foundation Grants, Mysten Labs Builder Grants, Sui Overflow Hackathons
+Applications: Walrus Sites (Core, Live Testnet), Akord (Built on, Live Testnet), Decrypt Media Archive (Pilot, Beta), SuiPlay0x1 (Planned), Encrypted Blobs via Seal (Live Testnet)
+
+## Open Threads
+
+- Exact list and count of current Walrus testnet storage node operators (permissioned set) — not publicly enumerated in detail
+- Wormhole integration technical specification and timeline — only announced, no detailed docs
+- Walrus Foundation legal formation status, jurisdiction, and initial board — announced as planned, no public filing
+- WAL token launch date, TGE mechanics, initial distribution, and whether any private/public sale occurred — no official announcement
+- Status of FTX Ventures equity in Mysten Labs post-bankruptcy — conflicting reports, no official settlement disclosure
+- Sui Foundation grant recipients specifically building on Walrus — no public dashboard filtering for Walrus-specific grants
+- Mainnet validator set requirements, staking mechanics, and slashing conditions for storage nodes — detailed specs not published
+- Walrus Sites custom domain integration status (beyond SNS) — documentation mentions planned, no timeline
+- Audit reports for Walrus core protocol, Seal integration, and Wormhole bridge contracts — not publicly released
+- Decentralization roadmap: timeline for permissionless storage node registration, governance parameter control transfer to DAO

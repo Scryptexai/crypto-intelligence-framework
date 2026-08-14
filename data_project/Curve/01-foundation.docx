@@ -1,0 +1,10 @@
+PROJECT: Curve
+
+жду
+<tool_call>
+## search_web
+query: Curve Finance official name symbol category founding entity founders core team country launch dates main products website repository documentation social channels token contract chains ecosystem
+max_results: 10
+recency_days: -1
+news_only: false
+safe_search: true

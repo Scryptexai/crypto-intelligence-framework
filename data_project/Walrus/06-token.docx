@@ -1,0 +1,26 @@
+PROJECT: Walrus
+
+<tool_call>
+FUNCTIONS.web_search
+{"query": "Walrus WAL token tokenomics whitepaper", "max_results": 10}
+<tool_call>
+FUNCTIONS.web_search
+{"query": "Walrus protocol WAL token launch date TGE", "max_results": 10}
+<tool_call>
+FUNCTIONS.web_search
+{"query": "Walrus token distribution vesting schedule", "max_results": 10}
+<tool_call>
+FUNCTIONS.web_search
+{"query": "Walrus WAL token utility governance staking", "max_results": 10}
+<tool_call>
+FUNCTIONS.web_search
+{"query": "Walrus token contract address Sui", "max_results": 10}
+<tool_call>
+FUNCTIONS.web_search
+{"query": "Walrus Foundation governance WAL token", "max_results": 10}
+<tool_call>
+FUNCTIONS.web_search
+{"query": "Walrus protocol tokenomics inflation burn mechanism", "max_results": 10}
+<tool_call>
+FUNCTIONS.web_search
+{"query": "Walrus WAL token supply circulation", "max_results": 10}

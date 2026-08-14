@@ -1,0 +1,50 @@
+PROJECT: Polkadot
+
+Official Name: Polkadot (HIGH) [Polkadot Official Website, https://polkadot.network/]
+
+Symbol: DOT (HIGH) [Polkadot Official Website, https://polkadot.network/]
+
+Category: Heterogeneous multi-chain network / blockchain interoperability protocol (HIGH) [Polkadot Official Website, https://polkadot.network/]
+
+Founding Entity: Parity Technologies (HIGH) [Web3 Foundation, https://web3.foundation/about/]
+
+Founders: Gavin Wood (Founder/Lead Visionary); Robert Habermeier (Co-Founder); Peter Czaban (Co-Founder) (HIGH) [Web3 Foundation, https://web3.foundation/polkadot/]
+
+Core Team: tidak diungkap (jumlah dev aktif di ekosistem besar namun tidak dirilis single keanggotaan inti) — (MEDIUM) [Parity Technologies, https://www.parity.io/about/]
+
+Country: Yurisdiksi pendirian tidak diungkap secara eksplisit — kantor Parity Technologies berlokasi di Berlin, Jerman, namun badan hukum tersebar (MEDIUM) [Parity Technologies, https://www.parity.io/about/]
+
+Launch Date - Testnet: Tidak diketahui — banyak testnet berbeda dengan tanggal berbeda; testnet pertama (Krumme Lanke) dan Kusama sebagai canary network (MEDIUM) [Polkadot Wiki, https://wiki.polkadot.network/docs/polkadot-history]
+
+Launch Date - Mainnet: 26 Mei 2020 (mainnet genesis block) — (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/polkadot-history]
+
+Launch Date - TGE: 15 Oktober 2017 (initial DOT token sale) — (HIGH) [Polkadot Blog, https://polkadot.network/blog/polkadot-ico-report]
+
+Main Products: Relay Chain (jaringan utama); Parachains (chain khusus yang terhubung); Kusama (canary network); XCM (Cross-Consensus Message Format); Substrate (framework pembangun chain) (HIGH) [Polkadot Official Website, https://polkadot.network/technology/]
+
+Official Website: https://polkadot.network/ (HIGH) [Polkadot Official Website, https://polkadot.network/]
+
+Repository: https://github.com/paritytech/polkadot-sdk (HIGH) [GitHub, https://github.com/paritytech/polkadot-sdk]
+
+Documentation: https://wiki.polkadot.network/ (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/]
+
+Social - X/Twitter: @Polkadot (HIGH) [X/Twitter, https://x.com/Polkadot]
+
+Social - Discord: discord.gg/polkadot (HIGH) [Polkadot Official Website, https://polkadot.network/]
+
+Social - Telegram: https://t.me/polkadot_official (MEDIUM) [Telegram, https://t.me/polkadot_official]
+
+Block Explorer: https://polkadot.subscan.io/ (HIGH) [Subscan, https://polkadot.subscan.io/]
+
+Token Contract: Bukan token ERC-20; DOT adalah native token di Relay Chain. Address native di chain Polkadot: tidak diketahui — tidak ada kontrak smart contract (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-DOT]
+
+Chain(s): Polkadot Relay Chain (jaringan utama); Kusama (canary network); 50+ parachains terhubung (HIGH) [Polkadot Official Website, https://polkadot.network/]
+
+Ecosystem: Ekosistem Polkadot mencakup lebih dari 50 parachains (desain asli target 100) yang terkoneksi melalui Relay Chain, termasuk namun tidak terbatas pada: Acala, Moonbeam, Astar, Parallel, Centrifuge, dan lain-lain. (MEDIUM) [Polkadot Networks, https://polkadot.network/ecosystem/]
+
+Open Threads
+- Yurisdiksi formal tempat Polkadot terdaftar secara resmi tidak diungkap jelas — Parity memiliki kantor di Berlin namun asosiasi dan yayasan ekosistem tersebar.
+- Jumlah total anggota tim inti (core team) tidak pernah dirilis resmi sebagai satu angka tunggal; perlu verifikasi ulang dari sumber internal.
+- Status "Launch Date - Testnet" sulit ditentukan single-point karena berbagai testnet dirilis bertahap sejak 2018; Kusama (canary network) sering dipakai sebagai pengganti testnet, tapi statusnya berbeda dari testnet teknis.
+- Taksonomi "Category" — Polkadot sering disebut sebagai Layer-0, namun dalam konteks kategori teknis lebih tepat disebut interoperability protocol dibanding "infrastruktur" — masih bisa diperdebatkan.
+- Token contract: tidak memiliki contract address karena native token — perlu klarifikasi apakah data ini akan dipakai untuk sistem yang mencari alamat kontrak, karena Polkadot tidak punya smart contract untuk DOT.

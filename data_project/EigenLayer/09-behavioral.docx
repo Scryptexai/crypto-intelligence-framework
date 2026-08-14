@@ -1,0 +1,452 @@
+PROJECT: EigenLayer
+
+Strategic Objectives
+
+1. Membangun lapisan keamanan bersama (shared security) di atas Ethereum melalui restaking
+
+· Evidence: Visi protokol restaking yang memungkinkan ETH, LST, dan LRT di-restake untuk mengamankan AVS (Actively Validated Services) — didefinisikan sejak pendirian 2021 dan diluncurkan mainnet fase 1 Juni 2023 (EV-005)
+· Supporting Dataset: Phase 1 Foundation, Phase 3 EV-001, EV-005, Phase 4 System Architecture
+
+2. Menjadi infrastruktur data availability terdepan melalui EigenDA sebagai AVS pertama
+
+· Evidence: EigenDA diluncurkan mainnet April 2024 (EV-009) sebagai AVS pertama, menyediakan throughput data tinggi untuk rollup; whitepaper dan arsitektur modular memposisikan EigenDA sebagai komponen kunci
+· Supporting Dataset: Phase 3 EV-009, Phase 4 Core Components (EigenDA), Phase 8 Market Position
+
+3. Menciptakan ekosistem AVS yang berkembang melalui framework permissionless (bertahap)
+
+· Evidence: AVSRegistry dan AllocationManager memungkinkan AVS baru mendaftar; 3 AVS pihak ketiga live April 2024 (EV-010); roadmap menuju permissionless operator registration
+· Supporting Dataset: Phase 3 EV-010, Phase 4 Core Components (AVSRegistry, AllocationManager), Phase 7 Major Integrations
+
+4. Mendistribusikan governance dan value capture ke komunitas melalui token EIGEN
+
+· Evidence: TGE Oktober 2024 (EV-012) dengan alokasi 45% untuk komunitas (Season 1 5%, Season 2 10%, Future 30%); staking EIGEN untuk governance dan intersubjective work rewards live Season 2 (EV-014)
+· Supporting Dataset: Phase 3 EV-012, EV-014, Phase 6 Token Distribution, Phase 6 Governance
+
+5. Memisahkan pengembangan protokol (Eigen Labs) dari pengelolaan token/ekosistem (Eigen Foundation)
+
+· Evidence: Eigen Labs Inc (Delaware) sebagai core developer; Eigen Foundation (Cayman) didirikan Juli 2024 (EV-011) untuk treasury, governance, token distribution — struktur dual-entity yang disengaja
+· Supporting Dataset: Phase 2 Entity (Eigen Labs Inc, Eigen Foundation), Phase 3 EV-011, Phase 5 Financial Dependencies
+
+Decision Timeline
+
+Keputusan: Pendirian Eigen Labs Inc di Delaware oleh Sreeram Kannan (2021)
+· Trigger: Identifikasi peluang restaking ETH untuk shared security di Ethereum; perlu entitas hukum untuk pengembangan protokol dan fundraising
+· Evidence: Pendirian Eigen Labs Inc tercatat di dokumen Delawere 2021; Sreeram Kannan sebagai Founder & CEO (Phase 2)
+· Decision: Membangun perusahaan pengembangan protokol (bukan DAO langsung) dengan struktur venture-backed
+· Immediate Result: Entitas legal untuk merekrut tim, mengumpulkan dana, mengembangkan kontrak pintar
+· Long-term Impact: Memisahkan core development (Labs) dari governance protokol (Foundation) — pola dual-entity yang berlanjut hingga sekarang
+· Supporting Dataset: Phase 2 Entity (Eigen Labs Inc, Sreeram Kannan), Phase 3 EV-001, Phase 5 Funding History
+
+Keputusan: Series A $50M dipimpin Blockchain Capital (2023-02)
+· Trigger: Butuh dana untuk pengembangan mainnet, audit, dan tim sebelum testnet publik
+· Evidence: The Block melaporkan Series A $50M led by Blockchain Capital dengan Coinbase Ventures, Polychain (Phase 3 EV-003, Phase 5)
+· Decision: Menerima venture funding dengan valuasi tidak diungkap; investor menerima token allocation (vesting 12-36 bulan)
+· Immediate Result: Dana untuk meluncurkan testnet "Mango" April 2023 dan mainnet Juni 2023
+· Long-term Impact: Menetapkan pola venture-backed dengan token allocation untuk investor; investor 29.5% supply EIGEN (Phase 6)
+· Supporting Dataset: Phase 3 EV-003, Phase 5 Funding History, Phase 6 Vesting Schedule
+
+Keputusan: Peluncuran mainnet fase 1 hanya native ETH restaking (2023-06-14)
+· Trigger: Kontrak inti (StrategyManager, DelegationManager, SlashingManager, EigenPodManager) siap; keamanan diprioritaskan dengan scope minimal
+· Evidence: Blog resmi mainnet launch menyebut "Phase 1: Native ETH Restaking Only" (Phase 3 EV-005, Phase 4 Technical Upgrade History)
+· Decision: Batasi deposit hanya native ETH via EigenPod; LST/LRT ditunda ke upgrade berikutnya
+· Immediate Result: TVL mulai tumbuh dari native ETH staker; slashing mechanics diuji produksi dengan risiko terbatas
+· Long-term Impact: Pola "phased rollout" berulang — LST support Sep 2023, LRT Dec 2023, EigenDA Apr 2024, AVS Apr 2024
+· Supporting Dataset: Phase 3 EV-005, Phase 4 Technical Upgrade History, Phase 4 Known Limitations
+
+Keputusan: Integrasi EtherFi eETH sebagai LRT pertama (2023-07)
+· Trigger: Permintaan pasar untuk likuiditas restaking; EigenLayer belum support LST/LRT native
+· Evidence: EtherFi meluncurkan eETH Juli 2023 terintegrasi StrategyManager (Phase 3 EV-006, Phase 7 Major Integrations)
+· Decision: Mengizinkan LRT protocol membangun di atas StrategyManager tanpa modifikasi protokol inti
+· Immediate Result: eETH menjadi LRT terbesar; membuka pintu Renzo, Kelp, Puffer, Swell (EV-007)
+· Long-term Impact: Ekosistem LRT jadi growth driver utama TVL EigenLayer (~4.8M ETH equivalent, Phase 8); LRT protocol jadi dependency kritis (Phase 7 External Dependencies)
+· Supporting Dataset: Phase 3 EV-006, EV-007, Phase 7 Major Integrations, Phase 8 Adoption Metrics
+
+Keputusan: Series B $100M dipimpin a16z crypto valuasi $1B (2024-02)
+· Trigger: Butuh dana untuk ekspansi AVS ecosystem, EigenDA development, scaling tim pasca-mainnet
+· Evidence: The Block melaporkan Series B $100M led by a16z crypto at $1B valuation (Phase 3 EV-008, Phase 5)
+· Decision: Funding besar kedua dengan unicorn valuation; a16z mendapat token allocation vesting 12-36 bulan
+· Immediate Result: Dana untuk EigenDA mainnet April 2024, AVS onboarding, team expansion
+· Long-term Impact: Investor concentration meningkat (Blockchain Capital + a16z + Coinbase Ventures + Polychain = 29.5% supply); governance influence besar
+· Supporting Dataset: Phase 3 EV-008, Phase 5 Funding History, Phase 6 Vesting Schedule, Phase 8 Ecosystem Risks
+
+Keputusan: Peluncuran EigenDA mainnet sebagai AVS pertama (2024-04)
+· Trigger: Arsitektur AVS framework siap (AllocationManager, AVSRegistry); butuh proof-of-concept produk nyata
+· Evidence: EigenDA mainnet launch April 2024 dengan disperser/retriever, permissioned operator set (Phase 3 EV-009, Phase 4 Core Components)
+· Decision: Membangun AVS pertama secara internal (bukan third-party) untuk memvalidasi framework dan generate revenue
+· Immediate Result: EigenDA live, rollup mulai integrasi, protocol revenue dari service fees mulai mengalir
+· Long-term Impact: EigenDA jadi revenue source utama protokol; template untuk AVS lain; operator permissioned model jadi precedent
+· Supporting Dataset: Phase 3 EV-009, Phase 4 Core Components (EigenDA), Phase 5 Revenue Model, Phase 8 Market Position
+
+Keputusan: Onboarding 3 AVS third-party bersamaan (AltLayer, Dymension, Lagrange) (2024-04)
+· Trigger: AVS framework siap; multiple teams siap deploy; perlu demonstrasi shared security model
+· Evidence: 3 AVS launch April 2024 tercatat EV-010 (Phase 3, Phase 7 Major Integrations)
+· Decision: Koordinasi multi-AVS launch untuk momentum ekosistem; bukan sequential
+· Immediate Result: 4 total AVS live (termasuk EigenDA); operator delegation mulai tersebar ke multiple AVS
+· Long-term Impact: Validasi AVS framework; tapi operator set masih permissioned; slashing isolation mechanics belum teruji produksi
+· Supporting Dataset: Phase 3 EV-010, Phase 7 Major Integrations, Phase 4 Known Limitations (slashing isolation)
+
+Keputusan: Pembentukan Eigen Foundation di Cayman Islands (2024-07)
+· Trigger: Perlu entitas terpisah untuk token issuance, treasury, governance, compliance sebelum TGE
+· Evidence: Eigen Foundation repo GitHub dibuat 2024; struktur terpisah dari Eigen Labs (Phase 2 Entity, Phase 3 EV-011)
+· Decision: Foundation mengelola 10.5% supply, token distribution (Season 1/2), governance execution (multisig transitional), ecosystem grants
+· Immediate Result: Legal wrapper untuk TGE Oktober 2024; token distribution contracts di-deploy oleh Foundation
+· Long-term Impact: Dual-entity structure (Labs + Foundation) jadi permanent; Foundation multisig kontrol upgrade protokol hingga on-chain governance live
+· Supporting Dataset: Phase 2 Entity (Eigen Foundation), Phase 3 EV-011, Phase 6 Governance, Phase 7 Governance Ecosystem
+
+Keputusan: Token Generation Event EIGEN dengan Season 1 claim & CEX listing simultan (2024-10-01)
+· Trigger: Protokol matang (mainnet 16 bulan, 4 AVS live, $18B+ TVL); investor/community menunggu liquidity event
+· Evidence: TGE Oct 1 2024 dengan 5% supply unlock Season 1, listing Binance/Bybit/OKX/Gate.io/KuCoin simultan (Phase 3 EV-012, EV-013, Phase 6 TGE)
+· Decision: Fair launch style (claim bukan public sale); major CEX listing day-1 untuk liquidity; no perpetual/futures at launch
+· Immediate Result: Price discovery dimulai; ~45K holders; ~$50M+ staked EIGEN untuk governance (Phase 8)
+· Long-term Impact: Vesting cliff investor/team 12 bulan (Oct 2025) jadi overhang supply besar; Season 2 cliff 6 bulan (Apr 2025)
+· Supporting Dataset: Phase 3 EV-012, EV-013, Phase 6 TGE, Vesting Schedule, Phase 8 Trading Markets
+
+Keputusan: Aktivasi Season 2 distribution & EIGEN staking untuk governance/intersubjective rewards (2024-10)
+· Trigger: Post-TGE, perlu mendorong participation governance dan secure intersubjective work
+· Evidence: Season 2 claim dibuka (10% supply), staking contracts live, delegation supported (Phase 3 EV-014, Phase 6 Utility, Governance)
+· Decision: Token utility langsung aktif: governance voting + intersubjective work staking rewards (inflationary)
+· Immediate Result: ~50M EIGEN staked; governance proposals mulai diajukan; operator delegation voting power
+· Long-term Impact: Inflationary emissions dimulai; governance capture risk oleh large holders (investor/team/foundation = 55% supply locked)
+· Supporting Dataset: Phase 3 EV-014, Phase 6 Utility, Inflation/Deflation, Governance, Phase 8 Ecosystem Risks
+
+Evolution Pattern
+
+Evolusi Strategi: Dari Core Protocol → AVS Platform → Modular Infrastructure Stack
+· Fase 1 (2021-2023 H1): Fokus penuh pada core restaking contracts (StrategyManager, DelegationManager, SlashingManager, EigenPodManager) — "build the rails"
+· Fase 2 (2023 H2): Ekspansi ke LST/LRT support — membuka pintu capital efficiency untuk staker; LRT protocol jadi growth engine
+· Fase 3 (2024 H1): EigenDA mainnet + first third-party AVS — transisi dari "restaking protocol" ke "AVS platform"; proof-of-concept shared security
+· Fase 4 (2024 H2+): Token launch, governance activation, Foundation operations — tambahan layer ekonomi & governance; roadmap ke permissionless AVS/operator
+· Evidence: Timeline Phase 3 (EV-001 melalui EV-014); Phase 4 Technical Upgrade History; Phase 8 Market Timeline
+
+Evolusi Teknologi: Monolithic Contracts → Modular AVS Framework → Intersubjective Work Layer
+· Awal: 4 kontrak inti monolithic untuk restaking dasar (Phase 4 Core Components)
+· Menengah: AllocationManager, AVSRegistry, EigenDA contracts — modularisasi untuk multi-AVS support (Phase 4 Technical Upgrade History EV-009, EV-010)
+· Lanjut: EIGEN token contracts untuk intersubjective work — tambahan economic layer di atas objective slashing (Phase 4 Consensus Mechanism, Phase 6 Utility)
+· Evidence: Phase 4 Technical Upgrade History, Core Components, Consensus Mechanism; Phase 6 Token Information
+
+Evolusi Tokenomics: No Token → Venture-Backed Equity Only → Dual Token/Equity Model dengan Community Distribution
+· Pre-2024: Hanya equity investors (Series A/B); no token, no community ownership
+· TGE 2024: EIGEN token dengan 45% community allocation (Season 1/2/Future), 29.5% investors, 15% team, 10.5% foundation
+· Post-TGE: Inflationary emissions untuk intersubjective work rewards; governance via staking
+· Evidence: Phase 5 Funding History (no token rounds), Phase 6 Distribution, Vesting Schedule, Inflation/Deflation
+
+Evolusi Governance: Centralized (Labs) → Foundation Multisig → On-Chain Token-Weighted (Transitional)
+· 2021-2024 H1: Eigen Labs kontrol penuh (deploy, upgrade, parameter)
+· 2024 H1: Eigen Foundation formed, multisig admin proxy contracts (Phase 7 Governance Ecosystem)
+· 2024 H2: EIGEN staking + Governor contracts live; delegation supported; Foundation multisig masih emergency/upgrade authority
+· Evidence: Phase 3 EV-011, EV-014; Phase 6 Governance; Phase 7 Governance Ecosystem
+
+Evolusi Ekosistem: Single Protocol → Multi-Sided Marketplace (Stakers ↔ Operators ↔ AVS)
+· Awal: Hanya stakers ↔ EigenLayer contracts
+· LRT Era: Stakers → LRT protocols → EigenLayer → Operators (3-sided)
+· AVS Era: Stakers ↔ Operators ↔ Multiple AVS (EigenDA, AltLayer, Dymension, Lagrange) — marketplace keamanan bersama
+· Evidence: Phase 7 External Dependencies, Major Integrations, Infrastructure Providers, Applications
+
+Technical Decision Pattern
+
+Pola 1: Ethereum Alignment First — Semua Kembali ke Ethereum
+· Decision Pattern: Protokol tidak membangun consensus, execution, atau settlement layer sendiri; sepenuhnya leverage Ethereum PoS untuk finality, validator set, dan economic security. EigenPod menggunakan beacon chain withdrawal credentials (0x01). Slashing di-enforce di Ethereum L1.
+· Evidence: Phase 4 System Architecture ("Settlement Layer: Ethereum mainnet"), Consensus Mechanism ("Ethereum Consensus: EigenLayer does not have its own consensus"), Core Components (EigenPodManager), Known Limitations ("Single Settlement Chain")
+· Supporting Dataset: Phase 4 System Architecture, Consensus Mechanism, Core Components, Known Limitations
+
+Pola 2: Phased Rollout dengan Scope Minimal per Fase
+· Decision Pattern: Setiap mainnet launch membatasi fungsi: Phase 1 hanya native ETH; LST support bulan 3 kemudian; LRT support bulan 6 kemudian; EigenDA & AVS terpisah 10 bulan kemudian. Setiap fase audit ulang.
+· Evidence: Phase 3 EV-005 (Phase 1 native only), EV-006/007 (LST/LST), EV-009/010 (EigenDA/AVS); Phase 4 Technical Upgrade History (7 major upgrades bertahap); Phase 4 Audit History (7 audits terpisah per komponen/upgrade)
+· Supporting Dataset: Phase 3 Historical Events, Phase 4 Technical Upgrade History, Audit History
+
+Pola 3: Modular AVS Framework — Protokol Menyediakan Rails, AVS Bangun Sendiri
+· Decision Pattern: EigenLayer core hanya menyediakan: stake delegation (DelegationManager), operator allocation (AllocationManager), slashing enforcement (SlashingManager), service discovery (AVSRegistry). AVS harus bangun off-chain software, disperser/retriever, service manager contracts sendiri.
+· Evidence: Phase 4 Core Components (AllocationManager, AVSRegistry, SlashingManager), EigenDA Components (Disperser, Retriever, ServiceManager terpisah), Phase 7 Major Integrations (AltLayer, Dymension, Lagrange masing-masing punya ServiceManager sendiri)
+· Supporting Dataset: Phase 4 Core Components, EigenDA Components, Phase 7 Major Integrations
+
+Pola 4: Objective Slashing Dulu, Intersubjective Slashing Kemudian via Token Baru
+· Decision Pattern: Slashing awal hanya untuk faults objektif terbukti on-chain (equivocation, invalid attestation). Intersubjective faults (data withholding, oracle manipulation) butuh social consensus → dipisah ke EIGEN token dengan mechanics terpisah.
+· Evidence: Phase 4 Security Model (SlashingManager untuk objective, EIGEN untuk intersubjective), Consensus Mechanism (Intersubjective Consensus), Phase 6 Utility (Intersubjective Work Staking, Collateral/Slashing)
+· Supporting Dataset: Phase 4 Security Model, Consensus Mechanism, Phase 6 Utility
+
+Pola 5: Permissioned Operator Set Awal, Progressive Decentralization
+· Decision Pattern: EigenDA dan early AVS menggunakan operator set permissioned (dipilih Eigen Labs/Foundation). Roadmap menyebut "progressive decentralization" tapi tidak ada tanggal/kriteria konkret.
+· Evidence: Phase 4 Core Components (EigenDA Operator — "Live, permissioned operator set initially"), Known Limitations ("Operator Permissioning: EigenDA and early AVS use permissioned operator sets"), Phase 7 Infrastructure Providers (EigenDA Operators permissioned)
+· Supporting Dataset: Phase 4 Core Components, Known Limitations, Phase 7 Infrastructure Providers, Phase 8 Ecosystem Risks
+
+Pola 6: Go untuk Off-Chain Infrastructure, Solidity untuk On-Chain
+· Decision Pattern: Semua smart contracts Solidity (Foundry). Off-chain components (EigenDA disperser/retriever, operator nodes, CLI) menggunakan Go. Rust untuk erasure coding library. TypeScript untuk SDK.
+· Evidence: Phase 4 Programming Languages, Development Framework, Current Technical Stack — Go 1.21+ untuk EigenDA/CLI, Solidity 0.8.x untuk contracts, Rust untuk crates erasure coding, TypeScript untuk SDK
+· Supporting Dataset: Phase 4 Programming Languages, Development Framework, Current Technical Stack
+
+Pola 7: Withdrawal Delay Wajib sebagai Security Primitive
+· Decision Pattern: 7-day withdrawal delay (configurable tapi mandatory) di-enforce di DelegationManager untuk slashing window. EigenPod menambah Ethereum validator exit queue delay. Tidak ada "instant withdraw" meski LRT protocol memberikan likuiditas sintetis.
+· Evidence: Phase 4 Core Components (DelegationManager, EigenPodManager), Security Model (Withdrawal Delay), Known Limitations (Withdrawal Delay, EigenPod Exit Queue), Phase 8 Ecosystem Risks (Liquidity Risk)
+· Supporting Dataset: Phase 4 Core Components, Security Model, Known Limitations, Phase 8 Ecosystem Risks
+
+Financial Decision Pattern
+
+Pola 1: Venture Funding Bertahap dengan Valuasi Meningkat — Equity First, Token Later
+· Decision Pattern: Series A ($50M, Feb 2023) → Series B ($100M, Feb 2024, $1B valuation) sebelum TGE. Token allocation untuk investor (29.5%) vesting 12-36 bulan cliff 12 bulan. Tidak ada public/private token sale tradisional.
+· Evidence: Phase 5 Funding History (Series A, Series B), Phase 6 Vesting Schedule (Investors cliff 12 bulan vesting 24-36 bulan), Phase 6 Token Sale (no public sale, Season 1/2 claim only)
+· Supporting Dataset: Phase 3 EV-003, EV-008; Phase 5 Funding History; Phase 6 Vesting Schedule, Token Sale
+
+Pola 2: Treasury Terpusat di Foundation, Komposisi Tidak Transparan
+· Decision Pattern: Eigen Foundation (Cayman) mengelola 10.5% supply + ecosystem fund. Tidak ada dashboard treasury publik, tidak ada transparency report berkala. Foundation multisig kontrol upgrade protokol.
+· Evidence: Phase 5 Treasury (Current Treasury Size: tidak diungkap, Composition: tidak diungkap, Custodian: Eigen Foundation), Phase 7 Governance Ecosystem (Foundation multisig transitional control)
+· Supporting Dataset: Phase 5 Treasury, Phase 7 Governance Ecosystem, Phase 2 Entity (Eigen Foundation)
+
+Pola 3: Revenue Hanya dari EigenDA Service Fees (Live), Core Protocol Fee Switch Belum Aktif
+· Decision Pattern: EigenLayer core protocol tidak mengambil fee dari restaking/delegation. Revenue hanya dari EigenDA (disperser fees ke operator + protokol) sejak April 2024. AVS fees tidak ke core protocol.
+· Evidence: Phase 5 Revenue Model (Protocol Fees: Planned/Not Live, EigenDA Service Fees: Live since 2024-04, AVS Service Fees: per AVS basis, not to core), Phase 4 Core Components (no fee mechanism in StrategyManager/DelegationManager)
+· Supporting Dataset: Phase 5 Revenue Model, Phase 4 Core Components, Phase 8 Market Position
+
+Pola 4: Token Allocation Berbobot ke Investor & Team (55% Combined) vs Community (45%)
+· Decision Pattern: Investors 29.5% + Team 15% + Foundation 10.5% = 55% supply locked tapi terkonsentrasi. Community 45% tapi hanya 5% unlocked at TGE (Season 1), 10% Season 2 cliff 6 bulan, 30% Future belum jadwal pasti.
+· Evidence: Phase 6 Distribution (Community 45%, Team 15%, Investors 29.5%, Foundation 10.5%), Vesting Schedule (Team/Investor cliff 12 bulan, Season 2 cliff 6 bulan), Phase 8 Ecosystem Risks (VC Token Concentration)
+· Supporting Dataset: Phase 6 Distribution, Vesting Schedule, Phase 8 Ecosystem Risks
+
+Pola 5: Inflationary Emissions untuk Intersubjective Work Rewards, No Burn/Buyback
+· Decision Pattern: EIGEN supply inflationary via programmatic emissions untuk staking rewards (target 5-10% APY awal). Max supply cap 1.673B tapi emissions menambah circulating supply. Tidak ada fee burn, buyback, atau deflationary mechanism.
+· Evidence: Phase 6 Supply Type (Inflationary), Inflation/Deflation (Intersubjective work rewards, no burn, no buyback), Phase 4 Consensus Mechanism (Intersubjective Consensus)
+· Supporting Dataset: Phase 6 Supply, Inflation/Deflation, Phase 4 Consensus Mechanism
+
+Pola 6: Eigen Labs Burn Rate Ditanggung VC Funding, Belum Ada Protocol Revenue Cover
+· Decision Pattern: Operasional Eigen Labs (tim 50-100+ orang, infrastructure, audit) dibiayai Series A/B $150M. Protocol revenue (EigenDA fees) baru mulai 2024-04, jumlah tidak diungkap, kemungkinan jauh di bawah burn rate.
+· Evidence: Phase 5 Financial Risk (Funding Dependency: "Operasional Eigen Labs bergantung pada venture funding... belum ada revenue protokol yang signifikan"), Phase 8 Adoption Metrics (Developer count 50-100), Phase 5 Revenue History (tidak diungkap)
+· Supporting Dataset: Phase 5 Financial Risk, Revenue History, Phase 8 Adoption Metrics
+
+Ecosystem Decision Pattern
+
+Pola 1: LRT Protocol sebagai Primary Growth Engine — Build Ecosystem di Atas StrategyManager
+· Decision Pattern: EigenLayer tidak membangun LRT sendiri; menyediakan StrategyManager sebagai platform untuk EtherFi, Renzo, Kelp, Puffer, Swell membangun LRT. LRT jadi user-facing product yang drive TVL.
+· Evidence: Phase 3 EV-006, EV-007 (LRT integrations), Phase 7 Major Integrations (5 LRT protocols), Phase 7 External Dependencies (EtherFi, Renzo, Kelp, Puffer, Swell — Critical/High criticality), Phase 8 Adoption Metrics (TVL ~$18.5B driven by LRT)
+· Supporting Dataset: Phase 3 EV-006, EV-007, Phase 7 Major Integrations, External Dependencies, Phase 8 Adoption Metrics
+
+Pola 2: EigenDA sebagai First-Party AVS untuk Validasi Framework & Revenue
+· Decision Pattern: Membangun AVS pertama secara internal (EigenDA) bukan menunggu third-party. Memvalidasi AVS framework, generate protocol revenue, jadi template untuk AVS lain.
+· Evidence: Phase 3 EV-009 (EigenDA mainnet), Phase 4 Core Components (EigenDA Components), Phase 5 Revenue Model (EigenDA Service Fees live), Phase 7 Major Integrations (EigenDA AVS Integration)
+· Supporting Dataset: Phase 3 EV-009, Phase 4 Core Components, Phase 5 Revenue Model, Phase 7 Major Integrations
+
+Pola 3: Coordinated Multi-AVS Launch untuk Momentum Ekosistem
+· Decision Pattern: AltLayer, Dymension, Lagrange diluncurkan bersamaan April 2024 (EV-010) bukan sequential. Koordinasi dengan tim AVS untuk demonstrasi shared security model yang nyata.
+· Evidence: Phase 3 EV-010 (3 AVS launch April 2024), Phase 7 Major Integrations (3 AVS integration terpisah tapi same timeline), Phase 8 Market Timeline (EV-010)
+· Supporting Dataset: Phase 3 EV-010, Phase 7 Major Integrations, Phase 8 Market Timeline
+
+Pola 4: CEX Listing Strategy — Major Exchanges Day-1, No Derivatives at Launch
+· Decision Pattern: Binance (lead), Bybit, OKX, Gate.io, KuCoin listing spot simultan TGE Oct 1 2024. Tidak ada perpetual/futures/options day-1. Fokus spot liquidity.
+· Evidence: Phase 3 EV-013, Phase 7 Exchange Ecosystem (5 CEX listed spot, 0 perpetual), Phase 8 Trading Markets (same data)
+· Supporting Dataset: Phase 3 EV-013, Phase 7 Exchange Ecosystem, Phase 8 Trading Markets
+
+Pola 5: Developer Ecosystem via SDK/CLI/Grants — Bottom-Up AVS Building
+· Decision Pattern: Menyediakan EigenLayer SDK (TS), EigenDA SDK (Go/TS), CLI (Go), Subgraph, Foundry templates. Grant program via Eigen Foundation. Hackathon tracks di ETHGlobal. Tidak ada "AVS template" cookie-cutter — setiap AVS custom build.
+· Evidence: Phase 7 Developer Ecosystem (2 SDKs, 1 CLI, 1 Subgraph, Foundry, Grant programs, Hackathons), Phase 4 Development Framework, Phase 8 Ecosystem Risks (AVS Development Complexity)
+· Supporting Dataset: Phase 7 Developer Ecosystem, Phase 4 Development Framework, Phase 8 Ecosystem Risks
+
+Pola 6: Cloud-Agnostic Operator Infrastructure — Best Practices Bukan Enforcement
+· Decision Pattern: Docs merekomendasikan Kubernetes, Prometheus/Grafana, Docker untuk operator production. Tapi tidak ada on-chain enforcement hardware specs, cloud diversity, atau geo-distribution. Operator bebas pilih infra.
+· Evidence: Phase 7 Infrastructure Providers (Cloud Providers, Docker Hub, Kubernetes — Medium criticality), Phase 4 Current Technical Stack (Kubernetes recommended), Phase 8 Ecosystem Risks (Cloud Provider Dependency)
+· Supporting Dataset: Phase 7 Infrastructure Providers, Phase 4 Current Technical Stack, Phase 8 Ecosystem Risks
+
+Governance Decision Pattern
+
+Pola 1: Dual-Entity Governance — Labs (Dev) + Foundation (Token/Treasury/Gov)
+· Decision Pattern: Eigen Labs (Delaware corp) handle core development, contract deployment, research. Eigen Foundation (Cayman) handle token issuance, treasury, governance execution, grants. Pisah legal & operational.
+· Evidence: Phase 2 Entity (Eigen Labs Inc, Eigen Foundation — terpisah), Phase 3 EV-011 (Foundation formation), Phase 7 Governance Ecosystem (Foundation role: treasury, grants, governance execution, upgrade authority)
+· Supporting Dataset: Phase 2 Entity, Phase 3 EV-011, Phase 7 Governance Ecosystem
+
+Pola 2: Transitional Multisig → On-Chain Governance via EIGEN Staking
+· Decision Pattern: Saat ini: Foundation multisig kontrol proxy admin (upgrade contracts), emergency params. Transisi ke: EIGEN staking → Governor contracts → Timelock execution. Delegation supported. Belum fully live.
+· Evidence: Phase 6 Governance (Token-weighted voting via staked EIGEN, Governor + Timelock, delegation supported, partially live), Phase 7 Governance Ecosystem (Foundation multisig transitional, on-chain governance transitioning), Phase 4 Security Model (Multi-sig/Governance upgradeability)
+· Supporting Dataset: Phase 6 Governance, Phase 7 Governance Ecosystem, Phase 4 Security Model
+
+Pola 3: Token-Weighted Voting dengan Delegation ke Operator
+· Decision Pattern: 1 EIGEN staked = 1 vote. Staker bisa delegate voting power ke operator/delegate lain. Operator (yang sudah punya delegated stake) jadi natural governance delegates — alignment tapi concentration risk.
+· Evidence: Phase 6 Governance (Voting Power: 1 EIGEN = 1 vote, Delegation: Supported), Phase 7 Governance Ecosystem (Validator Group: Operators as delegation recipients), Phase 8 Ecosystem Risks (VC Token Concentration, Governance Risk)
+· Supporting Dataset: Phase 6 Governance, Phase 7 Governance Ecosystem, Phase 8 Ecosystem Risks
+
+Pola 4: AVS Onboarding via Governance (Planned Committee)
+· Decision Pattern: AVSRegistry memungkinkan permissionless registration tapi AVS onboarding ke operator set & slashing butuh governance approval. Committee planned tapi belum formed.
+· Evidence: Phase 7 Governance Ecosystem (Committee: AVS Onboarding Committee planned), Phase 4 Core Components (AVSRegistry), Phase 8 Ecosystem Risks (Operator Permissioning Centralization)
+· Supporting Dataset: Phase 7 Governance Ecosystem, Phase 4 Core Components, Phase 8 Ecosystem Risks
+
+Pola 5: Season-Based Token Distribution sebagai Governance Bootstrap
+· Decision Pattern: Season 1 (5%, TGE unlock) → Season 2 (10%, cliff 6 bln) → Future Community (30%, long-term). Distribusi berbasis aktivitas (restaking, operating, contributing) bukan airdrop acak. Mengikat komunitas ke protokol sebelum full governance live.
+· Evidence: Phase 6 Distribution (Community 45% = Season 1 5% + Season 2 10% + Future 30%), Vesting Schedule (Season 1 cliff 0, Season 2 cliff 6 bln), Phase 3 EV-012, EV-014
+· Supporting Dataset: Phase 6 Distribution, Vesting Schedule, Phase 3 EV-012, EV-014
+
+Risk Response Pattern
+
+Pola 1: Phased Rollout sebagai Risk Mitigation Utama
+· Decision Pattern: Setiap major feature (native restaking, LST, LRT, EigenDA, AVS, token) diluncurkan bertahap dengan audit terpisah, scope minimal, monitoring period. Tidak ada "big bang" launch.
+· Evidence: Phase 3 Historical Events (14 events over 3+ years, phased), Phase 4 Technical Upgrade History (7 major upgrades bertahap), Phase 4 Audit History (7 audits terpisah per komponen/timeline), Phase 4 Known Limitations (acknowledged risks per phase)
+· Trigger: Complexity protokol tinggi (restaking + slashing + AVS + token); single failure point berakibat besar
+· Response: Batasi blast radius per fase; audit sebelum setiap fase; monitor mainnet sebelum ekspansi
+· Result: Zero major exploit/hack pada core contracts mainnet 2023-2024; TVL tumbuh bertahap ke $18B+
+· Supporting Dataset: Phase 3 Historical Events, Phase 4 Technical Upgrade History, Audit History, Known Limitations
+
+Pola 2: Permissioned Operator Set untuk Early AVS — Centralization Sementara Demi Keamanan
+· Decision Pattern: EigenDA dan early AVS menggunakan operator set permissioned (dikelola Eigen Labs/Foundation). Mengurangi risiko operator malicious/incompetent di fase awal. Trade-off: centralization.
+· Evidence: Phase 4 Core Components (EigenDA Operator "permissioned operator set initially"), Known Limitations ("Operator Permissioning Centralization"), Phase 8 Ecosystem Risks (EigenDA Operator Permissioning Centralization - High severity)
+· Trigger: AVS framework baru, slashing mechanics untested production, operator software immature
+· Response: Kurasi operator set; hardware/spec requirements; monitoring ketat; roadmap permissionless
+· Result: EigenDA mainnet stable April-Oct 2024; zero slashing incidents; tapi centralization risk tetap
+· Supporting Dataset: Phase 4 Core Components, Known Limitations, Phase 8 Ecosystem Risks
+
+Pola 3: Withdrawal Delay & Veto Period sebagai Slashing Safety Net
+· Decision Pattern: 7-day withdrawal delay (DelegationManager) + slashing veto period (SlashingManager, default ~7 hari) → total 14 hari buffer sebelum slashing final. Memberi waktu untuk challenge/dispute.
+· Evidence: Phase 4 Core Components (DelegationManager withdrawal delay, SlashingManager veto period), Security Model (Withdrawal Delay, Slashing Mechanism), Known Limitations (Withdrawal Delay)
+· Trigger: Slashing risk untuk staker/operator; butuh waktu detect & challenge false slashing
+· Response: Mandatory delay di protocol level; veto period untuk governance/operator challenge
+· Result: Tidak ada slashing incident mainnet → mechanism untested tapi ada safety net
+· Supporting Dataset: Phase 4 Core Components, Security Model, Known Limitations
+
+Pola 4: Foundation Multisig Emergency Control — Upgradeability Risk Mitigation
+· Decision Pattern: Proxy admin di Foundation multisig (bukan single key). Bisa emergency pause/upgrade jika critical bug ditemukan. Transisi ke on-chain governance bertahap.
+· Evidence: Phase 4 Security Model (Multi-sig/Governance upgradeability), Phase 7 Governance Ecosystem (Foundation multisig transitional control), Phase 8 Ecosystem Risks (Upgradeability via Foundation Multisig - Medium severity)
+· Trigger: Smart contract upgradeability risk; butuh emergency response capability
+· Response: Multisig (multi-party) control; timelock untuk non-emergency; plan transisi ke token governance
+· Result: Zero emergency upgrade needed to date; multisig sebagai safety net
+· Supporting Dataset: Phase 4 Security Model, Phase 7 Governance Ecosystem, Phase 8 Ecosystem Risks
+
+Pola 5: Multiple Independent Audits per Component — Defense in Depth
+· Decision Pattern: 7 audits dari 4 firm berbeda (Spearbit 3x, Trail of Bits 2x, Sigma Prime 1x, OpenZeppelin 1x) covering core contracts, EigenDA, EIGEN token. Setiap major upgrade audit ulang.
+· Evidence: Phase 4 Audit History (7 audits detailed), Phase 4 Technical Upgrade History (audit per upgrade)
+· Trigger: High-value protocol ($18B+ TVL), novel mechanics (restaking, slashing, intersubjective work)
+· Response: Diverse auditor set; repeated audits; public audit reports di GitHub
+· Result: Zero critical bugs mainnet; findings addressed pre-launch each phase
+· Supporting Dataset: Phase 4 Audit History, Technical Upgrade History
+
+Pola 6: No Slashing Insurance — Risk Fully Borne by Stakers/Operators
+· Decision Pattern: Protokol tidak menyediakan insurance fund, slashing coverage, atau safety module. Full loss ditanggung staker/operator. LRT protocol mungkin punya risk management sendiri tapi tidak di-level protokol.
+· Evidence: Phase 4 Security Model (no insurance mentioned), Phase 8 Ecosystem Risks (Slashing Insurance Absence - Medium severity), Phase 5 Financial Risk (Slashing Financial Exposure)
+· Trigger: Slashing risk inherent to restaking; insurance mahal/kompleks
+· Response: Transparan tentang risk; withdrawal delay sebagai mitigation; staker/operator do own risk management
+· Result: Capital efficiency lower (staker butuh risk premium); LRT protocol jadi risk intermediary
+· Supporting Dataset: Phase 4 Security Model, Phase 8 Ecosystem Risks, Phase 5 Financial Risk
+
+Recurring Behavioral Pattern
+
+Pola 1: Selalu Audit Sebelum Major Launch/Upgrade
+· Pattern: Setiap 7 major upgrade (Phase 4 Technical Upgrade History) didahului audit dari firm top-tier. Tidak ada launch tanpa audit.
+· Evidence: Phase 4 Audit History (7 audits mapped ke timeline: Spearbit May 2023 pre-mainnet, Trail of Bits Jun 2023 pre-mainnet, Sigma Prime Jul 2023 post-phase1, OpenZeppelin Mar 2024 pre-EigenDA, Spearbit Apr 2024 EigenDA, Trail of Bits Aug 2024 EIGEN token, Spearbit Sep 2024 token distribution)
+· Supporting Dataset: Phase 4 Audit History, Technical Upgrade History
+
+Pola 2: Ekspansi Ekosistem Pasca-Funding
+· Pattern: Series A Feb 2023 → Testnet Apr 2023 → Mainnet Jun 2023 → LST Sep 2023 → LRT Dec 2023. Series B Feb 2024 → EigenDA Apr 2024 → 3 AVS Apr 2024 → Foundation Jul 2024 → TGE Oct 2024. Funding memicu hiring & building spree.
+· Evidence: Phase 3 Historical Events timeline correlated dengan Phase 5 Funding History (EV-003 → EV-004/005/006/007; EV-008 → EV-009/010/011/012/013/014)
+· Supporting Dataset: Phase 3 Historical Events, Phase 5 Funding History
+
+Pola 3: LRT Protocol Integration Sebagai Growth Lever Utama
+· Pattern: Setiap LRT baru (EtherFi Jul 2023, Renzo/Kelp/Puffer/Swell Dec 2023) drive TVL lonjak. EigenLayer tidak build LRT sendiri — enable platform untuk LRT builders.
+· Evidence: Phase 3 EV-006, EV-007; Phase 7 External Dependencies (5 LRT protocols Critical/High); Phase 8 Adoption Metrics (TVL ~$18.5B, 4.8M ETH equivalent mostly via LRT)
+· Supporting Dataset: Phase 3 EV-006, EV-007, Phase 7 External Dependencies, Phase 8 Adoption Metrics
+
+Pola 4: Token Launch Setelah Product-Market Fit & Live Revenue
+· Pattern: TGE Oct 2024 setelah: mainnet 16 bulan, $18B+ TVL, 4 AVS live, EigenDA revenue live, 5 LRT integrated. Bukan pre-product token launch.
+· Evidence: Phase 3 EV-012 (TGE timeline), Phase 8 Market Position (Project Stage: Growth), Phase 5 Revenue Model (EigenDA fees live since Apr 2024)
+· Supporting Dataset: Phase 3 EV-012, Phase 8 Market Position, Phase 5 Revenue Model
+
+Pola 5: Dual Entity Structure (Labs + Foundation) Sebagai Permanent Pattern
+· Pattern: Eigen Labs (dev) + Eigen Foundation (gov/token/treasury) dipisah sejak 2024 (EV-011) dan bertahan. Tidak ada plan merge. Foundation multisig kontrol upgrade.
+· Evidence: Phase 2 Entity (both active), Phase 3 EV-011, Phase 7 Governance Ecosystem (Foundation role), Phase 8 Ecosystem Risks (Upgradeability via Foundation Multisig)
+· Supporting Dataset: Phase 2 Entity, Phase 3 EV-011, Phase 7 Governance Ecosystem, Phase 8 Ecosystem Risks
+
+Pola 6: Phased Decentralization — Permissioned Dulu, Permissionless Kemudian (Janji)
+· Pattern: EigenDA operator permissioned, AVS onboarding butuh governance approval, Foundation multisig kontrol upgrade. Semua diberi label "progressive decentralization" tapi timeline/kriteria vague.
+· Evidence: Phase 4 Known Limitations (Operator Permissioning), Phase 7 Infrastructure Providers (EigenDA Operators permissioned), Phase 8 Ecosystem Risks (EigenDA Operator Permissioning Centralization), Phase 7 Governance Ecosystem (AVS Onboarding Committee planned)
+· Supporting Dataset: Phase 4 Known Limitations, Phase 7 Infrastructure Providers, Phase 8 Ecosystem Risks, Phase 7 Governance Ecosystem
+
+Strategic Trade-offs
+
+Trade-off 1: Desentralisasi vs Keamanan/Kecepatan Eksekusi (Operator Permissioning)
+· Decision: Menggunakan operator set permissioned untuk EigenDA dan early AVS
+· Trade-off: Mengorbankan desentralisasi operator (centralization risk, single point of failure, censorship resistance rendah) demi keamanan operasional (operator terkurasi, hardware verified, slashing risk minimized) dan speed to market
+· Evidence: Phase 4 Known Limitations ("Operator Permissioning: EigenDA and early AVS use permissioned operator sets"), Phase 8 Ecosystem Risks (EigenDA Operator Permissioning Centralization - High severity), Phase 7 Infrastructure Providers (EigenDA Operators permissioned)
+· Supporting Dataset: Phase 4 Known Limitations, Phase 8 Ecosystem Risks, Phase 7 Infrastructure Providers
+
+Trade-off 2: Capital Efficiency vs Slashing Safety (Withdrawal Delay)
+· Decision: Mandatory 7-day withdrawal delay + EigenPod exit queue (compound delay)
+· Trade-off: Mengorbankan capital efficiency (staked ETH illiquid 7-30+ hari) dan user experience (no instant withdraw) demi slashing detection window dan economic security guarantee
+· Evidence: Phase 4 Core Components (DelegationManager withdrawal delay, EigenPodManager exit queue), Known Limitations (Withdrawal Delay, EigenPod Exit Queue), Phase 8 Ecosystem Risks (Liquidity Risk - High severity)
+· Supporting Dataset: Phase 4 Core Components, Known Limitations, Phase 8 Ecosystem Risks
+
+Trade-off 3: Protocol Revenue vs Ecosystem Growth (No Core Protocol Fees)
+· Decision: EigenLayer core tidak charge fee pada restaking/delegation/slashing; revenue hanya dari EigenDA
+· Trade-off: Mengorbankan direct protocol revenue dan value capture ke token holders demi menarik more stakers, operators, AVS ke platform (lower friction, higher TVL, network effects)
+· Evidence: Phase 5 Revenue Model (Protocol Fees: Planned/Not Live), Phase 4 Core Components (no fee params in StrategyManager/DelegationManager), Phase 8 Market Position (Revenue only EigenDA)
+· Supporting Dataset: Phase 5 Revenue Model, Phase 4 Core Components, Phase 8 Market Position
+
+Trade-off 4: Investor/Team Token Concentration vs Funding Certainty
+· Decision: 29.5% investors + 15% team + 10.5% foundation = 55% supply locked tapi terkonsentrasi; vesting cliff 12 bulan
+· Trade-off: Mengorbankan token distribution decentralization dan governance capture resistance demi secure $150M+ venture funding untuk build protokol tanpa public sale pressure
+· Evidence: Phase 6 Distribution, Vesting Schedule, Phase 8 Ecosystem Risks (VC Token Concentration - Medium severity), Phase 5 Funding History
+· Supporting Dataset: Phase 6 Distribution, Vesting Schedule, Phase 8 Ecosystem Risks, Phase 5 Funding History
+
+Trade-off 5: Intersubjective Slashing Subjectivity vs Objective-Only Security
+· Decision: Memperkenalkan EIGEN token untuk intersubjective work slashing (social consensus) di atas objective slashing
+· Trade-off: Mengorbankan objective enforceability dan trust-minimization (social consensus butuh trusted parties, governance process, appeal mechanism) demi coverage ke fault classes yang tidak objectively verifiable (data withholding, oracle manipulation)
+· Evidence: Phase 4 Consensus Mechanism (Intersubjective Consensus), Security Model (Intersubjective Slashing), Phase 6 Utility (Intersubjective Work Staking, Collateral/Slashing), Phase 8 Ecosystem Risks (Intersubjective Slashing Governance Dependency - Medium severity)
+· Supporting Dataset: Phase 4 Consensus Mechanism, Security Model, Phase 6 Utility, Phase 8 Ecosystem Risks
+
+Trade-off 6: Single Chain Focus (Ethereum) vs Multi-Chain Expansion
+· Decision: Semua core contracts, staking, slashing, token hanya di Ethereum mainnet
+· Trade-off: Mengorbangkan multi-chain reach, cross-chain restaking, dan larger TAM demi security alignment dengan Ethereum validator set, simpler architecture, dan focus execution
+· Evidence: Phase 4 System Architecture ("Settlement Layer: Ethereum mainnet"), Known Limitations ("Single Settlement Chain: Currently only Ethereum mainnet"), Phase 8 Market Position (Primary Chain: Ethereum)
+· Supporting Dataset: Phase 4 System Architecture, Known Limitations, Phase 8 Market Position
+
+Behavioral Summary
+
+Prioritas Utama Proyek:
+1. Security First — Phased rollout, extensive audits, withdrawal delays, permissioned operators, objective slashing dulu. Zero exploit track record.
+2. Ethereum Alignment — Tidak bangun chain/consensus sendiri; leverage Ethereum security, validator set, finality. Max composability dengan Ethereum ecosystem.
+3. Ecosystem Enablement — Build platform (StrategyManager, AVSRegistry, SDKs) untuk LRT & AVS builders, bukan kompetisi dengan mereka. LRT & AVS jadi growth engine.
+4. Long-term Credible Neutrality — Dual entity (Labs/Foundation), progressive decentralization roadmap, community token allocation (45%), on-chain governance transition.
+
+Cara Mengambil Keputusan:
+- Data-driven & security-paranoid: Setiap major decision didahului audit, testnet, phased mainnet. Metrics (TVL, operator count, AVS live) dipakai validate progress.
+- Founder-led vision dengan team execution: Sreeram set direction (restaking thesis); Luke/Robert/Calvin execute (strategy, tech, ops). Board (VC) influence via token allocation.
+- Community feedback loop: Season-based distribution berbasis aktivitas; governance proposals dari stakers; developer grants bottom-up.
+- Conservative upgrades: Proxy upgradeability hanya via Foundation multisig; timelock; emergency pause capability.
+
+Faktor Paling Sering Mempengaruhi Keputusan:
+1. Security Risk — Slashing mechanics, withdrawal delay, operator permissioning, audit coverage selalu prioritized over speed/features.
+2. Ethereum Constraints — Gas costs, validator exit queue, L1 finality, EVM limitations shape architecture (no native cross-chain, no instant withdraw).
+3. Capital/TVL Growth — LRT integrations, AVS onboarding, EigenDA revenue drive decisions; TVL = primary success metric.
+4. Regulatory/Legal — Dual entity (Delaware/Cayman), token classification uncertainty, no public sale, Foundation structure semua driven by legal.
+5. Investor Expectations — $150M funding, token allocation, vesting schedules, unicorn valuation create obligations & constraints.
+
+Pola Evolusi:
+- Dari Core Protocol → Platform → Modular Stack: Semakin modular, semakin banyak external dependencies (LRT, AVS, operators, rollups).
+- Dari Centralized → Transitional → Decentralized (Target): Foundation multisig → EIGEN staking governance → permissionless AVS/operator. Masih di fase transitional.
+- Dari No Token → Token dengan Utility Real: EIGEN bukan governance token saja; staking untuk intersubjective work, slashing collateral, AVS security. Utility-first.
+
+Kekuatan Utama:
+1. First-mover & Market Leader: 85-90% restaking TVL share, 16+ bulan mainnet track record, $18B+ TVL.
+2. Deep Technical Moat: Novel restaking architecture, EigenPod (native ETH), slashing framework, EigenDA erasure coding, intersubjective work innovation.
+3. Strong Ecosystem Flywheel: LRT protocols bring capital → operators secure AVS → AVS generate yield → attract more capital. 5 LRT + 4 AVS live.
+4. World-class Team & Backing: Sreeram (academic credentials), Robert (CTO ex-AWS/ConsenSys), a16z/Blockchain Capital backing, top-tier auditors.
+5. Token Utility Beyond Governance: Intersubjective work staking, slashing collateral, AVS security token — real economic function.
+
+Kelemahan Utama:
+1. Centralization Risks: Permissioned operators (EigenDA), Foundation multisig upgrade control, VC/team token concentration (55%), LRT protocol concentration (top 3 = majority TVL).
+2. Liquidity/UX Friction: 7-day withdrawal delay + EigenPod exit queue = compound illiquidity. LRT tokens help tapi tambah layer risk.
+3. Single Chain Dependency: 100% Ethereum L1. Gas spikes, congestion, validator queue langsung impact semua operasi. No multi-chain hedge.
+4. Revenue Uncertainty: Core protocol no fees; EigenDA revenue baru, unproven scale; AVS fees tidak ke core. Burn rate VC-funded.
+5. Intersubjective Slashing Unproven: Social consensus mechanism complex, governance-dependent, appeal process unclear. Legal/regulatory risk pada slashing decisions.
+6. AVS Development Barrier Tinggi: Custom off-chain + on-chain per AVS; no cookie-cutter framework; slow ecosystem expansion.
+
+Open Threads
+
+- Exact EigenDA erasure coding parameters (k, n) di mainnet production — tidak dipublikasikan di docs; perlu verifikasi dari kode disperser/retriever atau operator config
+- Permissionless operator registration criteria & timeline untuk EigenDA — "progressive decentralization" disebut berulang tapi tidak ada concrete milestone, KPI, atau tanggal target
+- Cross-AVS slashing isolation mechanics — apakah stake allocated ke AVS A terisolir dari slashing di AVS B? AllocationManager suggest isolation tapi tidak eksplisit dikonfirmasi di docs
+- EigenDA horizontal scaling roadmap (DAS, sharding) — research paper mention tapi tidak di official roadmap; throughput ceiling committee-based
+- Eigen Foundation treasury on-chain address, composition, spending history — tidak transparan; multisig address tidak disclosed; no dashboard
+- Actual circulating supply methodology untuk EIGEN — CoinGecko/CMC estimates vary; vesting contract unlocks vs claimed tokens; no official API
+- AVS pipeline: complete list AVS testnet vs mainnet — dashboard menunjukkan >4 tapi tidak semua named; perlu query AVSRegistry contract langsung
+- Slashing events history (if any) pada mainnet AVS — zero reported tapi tidak ada official confirmation "zero slashing incidents"
+- EigenLayer bug bounty / Immunefi program details — tidak ditemukan di docs; perlu verifikasi apakah active
+- Cross-chain restaking concrete roadmap — whitepaper mention future expansion tapi no testnet, no timeline, no partner announcement
+- Regulatory classification legal opinion untuk EIGEN (security vs utility) — tidak dipublikasikan; Cayman Foundation + Delaware Corp + token utility kompleks
+- Operator hardware requirements enforcement — docs give guidelines tapi no on-chain enforcement, no slashing untuk hardware spec violation
+- Community grant application process & awarded grants list — Foundation grants repo exists tapi no public dashboard recipients/amounts
+- EigenDA rollup integration names & status (live vs testnet) — tidak enumerated di official docs; perlu query disperser contracts atau partner announcements
+- Symbiotic & Karak TVL comparison at same date untuk market share accuracy — DefiLlama category page aggregate only; per-protocol historical TVL perlu verified
+- EIGEN token perpetual/futures listing status pada derivatives exchanges major — tidak confirmed as of 2024-10; perlu monitor Binance Futures, Bybit, OKX
+- Formal verification status core contracts — audits completed tapi no public formal verification (Certora, K-framework) reports found
