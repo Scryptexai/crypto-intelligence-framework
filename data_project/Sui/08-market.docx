@@ -1,0 +1,361 @@
+PROJECT: Sui
+
+## Market Category
+
+Primary Category: Layer 1 Blockchain
+Secondary Category: Smart Contract Platform
+Sector: DeFi, Gaming, Consumer Applications
+Sub-sector: Object-centric Blockchain, Move Language Ecosystem, Liquid Staking, DEX, Lending, Perpetual DEX, NFT Infrastructure, Cross-chain Bridge
+Sources: https://defillama.com/chain/Sui (HIGH); https://docs.sui.io/concepts/architecture (HIGH); https://blog.sui.io/sui-mainnet-launches/ (HIGH)
+
+## Market Position
+
+Project Stage: Growth
+Deskripsi: Proyek telah beroperasi sejak mainnet Mei 2023, memiliki ekosistem DeFi aktif dengan TVL >$1 miliar (HIGH) [DefiLlama, https://defillama.com/chain/Sui]; mencapai 1 miliar transaksi kumulatif November 2024 (HIGH) [Sui Blog, https://blog.sui.io/1-billion-transactions/]; treasury foundation >$1 miliar per Januari 2025 (HIGH) [Sui Foundation, https://sui.io/foundation/treasury]
+Evidence Level: HIGH
+Primary Competitors: Aptos, Solana, Ethereum, Sui-Near, BNB Chain, Avalanche, Polygon
+Market Segment: High-throughput DeFi dan consumer-facing blockchain; bersaing di segmen Layer 1 dengan throughput >50k TPS dan finality sub-second
+Geographic Focus: Global; pengembangan tim di Palo Alto, CA; yayasan di Zug, Swiss; komunitas global dengan program hackathon di 10+ kota
+Sources: https://defillama.com/chain/Sui; https://blog.sui.io/sui-mainnet-launches/; https://sui.io/foundation/treasury; https://techcrunch.com/2022/09/08/mysten-labs-raises-300m-series-b/
+
+## Trading Markets
+
+Exchange: Binance
+Spot: Ya
+Perpetual: Ya (SUI USDT perpetual)
+Futures: Tidak
+Options: Tidak
+OTC: Tidak
+Status: Live
+Sources: https://www.binance.com/en/blog/143401324684903493; https://www.binance.com/en/futures/SUIUSDT
+
+Exchange: Coinbase
+Spot: Ya
+Perpetual: Tidak
+Futures: Tidak
+Options: Tidak
+OTC: Tidak
+Status: Live
+Sources: https://www.coinbase.com/en/price/sui
+
+Exchange: OKX
+Spot: Ya
+Perpetual: Ya (SUI USDT perp)
+Futures: Tidak
+Options: Tidak
+OTC: Tidak
+Status: Live
+Sources: https://www.okx.com/price/sui-network-sui
+
+Exchange: Bybit
+Spot: Ya
+Perpetual: Ya (SUI USDT perp)
+Futures: Tidak
+Options: Tidak
+OTC: Tidak
+Status: Live
+Sources: https://www.bybit.com/en-US/price/sui
+
+Exchange: KuCoin
+Spot: Ya
+Perpetual: Ya
+Futures: Tidak
+Options: Tidak
+OTC: Tidak
+Status: Live
+Sources: https://www.kucoin.com/price/SUI
+
+Exchange: Kraken
+Spot: Ya
+Perpetual: Ya (SUI USD perp)
+Futures: Tidak
+Options: Tidak
+OTC: Tidak
+Status: Live
+Sources: https://www.kraken.com/prices/sui
+
+Exchange: Gate.io
+Spot: Ya
+Perpetual: Ya
+Futures: Tidak
+Options: Tidak
+OTC: Tidak
+Status: Live
+Sources: https://www.gate.io/trade/SUI_USDT
+
+Exchange: Upbit
+Spot: Ya
+Perpetual: Tidak
+Futures: Tidak
+Options: Tidak
+OTC: Tidak
+Status: Live
+Sources: https://upbit.com/exchange?code=CRIX.UPBIT.KRW-SUI
+
+Exchange: Bitget
+Spot: Ya
+Perpetual: Ya
+Futures: Tidak
+Options: Tidak
+OTC: Tidak
+Status: Live
+Sources: https://www.bitget.com/price/sui
+
+Exchange: MEXC
+Spot: Ya
+Perpetual: Ya
+Futures: Tidak
+Options: Tidak
+OTC: Tidak
+Status: Live
+Sources: https://www.mexc.com/price/SUI
+
+Exchange: Uniswap (via cross-chain bridge)
+Spot: Tidak (tidak native di Ethereum; SUI dapat diakses via bridge)
+Perpetual: Tidak
+Futures: Tidak
+Options: Tidak
+OTC: Tidak
+Status: Live via Bridge
+Sources: https://blog.sui.io/sui-bridge-mainnet/; https://docs.sui.io/guides/operator/bridge
+
+## Liquidity
+
+Liquidity Source: On-chain DEX (Cetus, Turbos, Aftermath, Kriya)
+Major Liquidity Venue: Cetus Protocol — DEX CLMM terbesar di Sui (HIGH) [DefiLlama, https://defillama.com/protocol/cetus]
+Other Liquidity Venues: Turbos Finance, Aftermath Finance, Bluefin, Kriya DEX (MEDIUM) [DefiLlama, https://defillama.com/chain/Sui]
+Liquidity Source: Centralized Exchanges
+Major Liquidity Venue: Binance — spot dan perpetual dengan volume terbesar (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/sui]
+Other Liquidity Venues: Coinbase, OKX, Bybit, KuCoin, Kraken, Gate.io, Upbit, Bitget, MEXC (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/sui]
+Liquidity Source: Bridge Liquidity
+Major Liquidity Venue: Sui Bridge Native (Sui ↔ Ethereum) — trust-minimized canonical bridge (HIGH) [Sui Blog, https://blog.sui.io/sui-bridge-mainnet/]
+Other Liquidity Venues: Wormhole Bridge (beroperasi sebelum bridge native; menghubungkan Sui ke Ethereum, Solana, BNB Chain, Polygon) (HIGH) [Wormhole, https://wormhole.com/blog/wormhole-sui]
+Liquidity Source: Stablecoin Liquidity
+Major Stablecoin: USDC native via Circle CCTP (HIGH) [Circle, https://www.circle.com/en/usdc-on-sui]
+Other Stablecoin: USDT native (Tether) (MEDIUM) [Tether, https://tether.to/tether-usdt-launches-on-sui/]
+Status: Live (semua sumber likuiditas aktif; TVL on-chain >$1 miliar per Januari 2025)
+Sources: https://defillama.com/chain/Sui; https://defillama.com/protocol/cetus; https://www.coingecko.com/en/coins/sui; https://blog.sui.io/sui-bridge-mainnet/; https://wormhole.com/blog/wormhole-sui
+
+## Adoption Metrics
+
+Metric Name: TVL (Total Value Locked)
+Value: >$1 miliar (per Januari 2025) (HIGH) [DefiLlama, https://defillama.com/chain/Sui]
+Metric Name: Daily Active Users
+Value: >1 juta (rata-rata harian, 2024) (HIGH) [Sui Blog, https://blog.sui.io/1-billion-transactions/; Sui Explorer, https://explorer.sui.io/]
+Metric Name: Transactions (kumulatif)
+Value: 1 miliar transaksi (November 2024) (HIGH) [Sui Blog, https://blog.sui.io/1-billion-transactions/]
+Metric Name: Transactions (per detik)
+Value: >50k TPS sustained pasca-Mysticeti (Juli 2024) (HIGH) [Sui Blog Mysticeti, https://blog.sui.io/mysticeti-mainnet-upgrade/]
+Metric Name: Wallets (jumlah alamat)
+Value: angka pastinya tidak dapat diverifikasi dari sumber primer; Sui Explorer menampilkan total address count secara real-time tetapi tidak dipublikasikan sebagai angka tetap (MEDIUM) [Sui Explorer, https://explorer.sui.io/]
+Metric Name: Developer Count
+Value: >2.500 peserta hackathon (Sui Basecamp + Sui Overflow); jumlah developer aktif on-chain tidak dipublikasikan resmi (MEDIUM) [Sui Basecamp, https://sui.io/basecamp; Sui Overflow, https://sui.io/overflow]
+Metric Name: Volume (on-chain/trading)
+Value: Volume DEX harian rata-rata >$100 juta (periode 2024-2025) (MEDIUM) [DefiLlama, https://defillama.com/chain/Sui]
+Metric Name: Bridge Volume
+Value: tidak diketahui — volume Sui Bridge native tidak dipublikasikan secara resmi per item; data on-chain dapat diquery via explorer (LOW) [Sui Docs Bridge, https://docs.sui.io/guides/operator/bridge]
+Metric Name: Validator Count
+Value: >100 validator aktif mainnet (per Januari 2025) (HIGH) [Sui Explorer Validators, https://explorer.sui.io/validators]
+Metric Name: Staking (SUI staked)
+Value: ~60% dari circulating supply terstake (perkuartal 2024) (MEDIUM) [Sui Foundations Grants/Analytics, https://sui.io/foundation/treasury]
+Metric Name: NFT Volume
+Value: tidak dipublikasikan resmi; dapat diquery via Suiscan (MEDIUM) [Suiscan, https://suiscan.xyz/]
+
+## Market Share
+
+Metric: TVL share di antara Layer 1
+Value: TVL Sui sekitar $1 miliar; posisi di top 10 blockchain by TVL (per Januari 2025) (MEDIUM) [DefiLlama, https://defillama.com/chain/Sui]
+Metric: Stablecoin Market Share on-chain
+Value: USDC + USDT native di Sui; total stablecoin supply di Sui tidak dipublikasikan secara terpisah per tanggal (MEDIUM) [Circle, https://www.circle.com/en/usdc-on-sui]
+Metric: Exchange Volume Share (CEX)
+Value: data pangsa volume per exchange tidak tersedia secara publik untuk Sui (LOW) [tidak diketahui]
+Metric: Overall market share
+Value: Tidak tersedia — pangsa pasar keseluruhan (misal % total DeFi TVL, % total crypto volume) tidak dipublikasikan resmi
+Sources: https://defillama.com/chain/Sui; https://www.coingecko.com/en/coins/sui; https://messari.io/protocol/sui
+
+## Competitor Landscape
+
+Competitor: Aptos
+Category: Layer 1 Blockchain
+Difference: Aptos juga menggunakan bahasa Move dan didirikan oleh mantan tim Meta Diem; fokus pada parallel execution dan throughput; bersaing langsung dengan Sui untuk developer/ekosistem Move (HIGH)
+Market Segment: DeFi utama; NFT; Move-based Layer 1
+Sources: https://aptoslabs.com/; https://defillama.com/chain/Aptos
+
+Competitor: Solana
+Category: Layer 1 Blockchain
+Difference: Solana menggunakan model account-based (bukan object-centric), Rust-based smart contract, throughput tinggi; bersaing pada segmen high-throughput DeFi dan consumer apps (HIGH)
+Market Segment: DeFi, NFT, consumer apps; secara luas dianggap pesaing utama Sui
+Sources: https://solana.com/; https://defillama.com/chain/Solana
+
+Competitor: Ethereum
+Category: Layer 1 Blockchain
+Difference: Ethereum dominan di ekosistem DeFi dan TVL global; Sui menawarkan throughput lebih tinggi dan finality lebih cepat; Ethereum punya jaringan effect lebih besar (HIGH)
+Market Segment: DeFi, RWA, institutional; sumber likuiditas utama via bridge
+Sources: https://ethereum.org/; https://defillama.com/chain/Ethereum
+
+Competitor: Sui-Near — Correction (tidak ada entity bernama "Sui-Near" di project lain; itu adalah misread pada daftar awal. Pesaing yang relevan adalah "Near Protocol")
+Competitor: Near Protocol
+Category: Layer 1 Blockchain
+Difference: Near menggunakan sharding dan account-based model; bahasa kontrak Rust/AssemblyScript; fokus pada usablity dan developer experience; berbeda dengan Sui yang object-centric dan Move (MEDIUM)
+Market Segment: DeFi, consumer apps, chain abstraction
+Sources: https://near.org/; https://defillama.com/chain/Near
+
+Competitor: BNB Chain
+Category: Layer 1 Blockchain
+Difference: BNB Chain EVM-compatible, biaya rendah, ekosistem besar di Asia; Sui non-EVM dan menggunakan Move — tidak ada kompatibilitas langsung; bersaing untuk volume DeFi dan on-ramp (MEDIUM)
+Market Segment: DeFi, gaming, BSC ecosystem
+Sources: https://www.bnbchain.org/; https://defillama.com/chain/BSC
+
+Competitor: Avalanche
+Category: Layer 1 Blockchain
+Difference: Avalanche EVM-compatible dengan subnets kustom; Sui non-EVM; bersaing untuk aktivitas DeFi dan institusional (MEDIUM)
+Market Segment: DeFi, enterprise subnets
+Sources: https://www.avax.network/; https://defillama.com/chain/Avalanche
+
+Competitor: Polygon
+Category: Layer 1/2 Aggregator
+Difference: Polygon multi-chain EVM-compatible (PoS, zkEVM, etc.); Sui non-EVM; bersaing untuk aktivitas DeFi dan supply liquidity (MEDIUM)
+Market Segment: DeFi, gaming, enterprise
+Sources: https://polygon.technology/; https://defillama.com/chain/Polygon
+
+## Narrative Position
+
+Narrative: Object-centric Blockchain / Next-gen DeFi Infrastructure
+Status: Main Narrative
+Evidence: Arsitektur object-centric unik yang memungkinkan parallel execution pada owned objects; throughput >50k TPS pasca-Mysticeti; finality sub-second; digunakan sebagai narasi utama pemasaran teknis protokol (HIGH)
+Sources: https://blog.sui.io/mysticeti-mainnet-upgrade/; https://docs.sui.io/concepts/architecture
+
+Narrative: Move Language Ecosystem
+Status: Main Narrative
+Evidence: Sui adalah salah satu dari dua blockchain utama (dengan Aptos) yang mengadopsi bahasa Move sebagai smart contract language; fokus pada resource safety dan formal verification; educational pipeline untuk developer Move (HIGH)
+Sources: https://move-book.com/; https://blog.sui.io/move-developer-survey/
+
+Narrative: Consumer-Facing Web3 (zkLogin & Gasless)
+Status: Secondary Narrative
+Evidence: zkLogin memungkinkan login via akun Google/Twitch/Facebook tanpa seed phrase; sponsored transactions memungkinkan gasless UX; fokus proyek pada onboarding pengguna Web2 (HIGH)
+Sources: https://blog.sui.io/zklogin-mainnet/; https://docs.sui.io/concepts/transactions/sponsored-transactions
+
+Narrative: High-Throughput / Parallel Execution
+Status: Main Narrative
+Evidence: Klaim throughput >50k TPS sustained pasca-Mysticeti; parallel execution pada owned objects; latency sub-second finality — menempatkan Sui di segmen high-performance Layer 1 (HIGH)
+Sources: https://blog.sui.io/mysticeti-mainnet-upgrade/; https://docs.sui.io/concepts/transactions/parallel-execution
+
+Narrative: Interoperability & Bridge
+Status: Secondary Narrative
+Evidence: Sui Bridge Native (Sui ↔ Ethereum) dan integrasi Wormhole; namun narasi interoperability tidak menjadi fokus utama pemasaran dibanding throughput/consumer adoption (MEDIUM)
+Sources: https://blog.sui.io/sui-bridge-mainnet/; https://wormhole.com/blog/wormhole-sui
+
+Narrative: AI
+Status: Tidak menjadi narrative utama
+Evidence: Tidak ada fokus AI spesifik di protokol atau ekosistem utama per dokumentasi resmi (HIGH) [Sui Docs, https://docs.sui.io/]
+Narrative: Gaming
+Status: Secondary Narrative
+Evidence: SuiPlay0x1 handheld device dan Playtron OS menunjukkan fokus gaming; beberapa game ekosistem; namun bukan narrative dominan (MEDIUM)
+Sources: https://blog.sui.io/suiplay0x1-announcement/; https://playtron.org/
+
+Narrative: RWA (Real World Assets)
+Status: Tidak menjadi narrative utama
+Evidence: Tidak ada inisiatif RWA resmi yang signifikan di dokumentasi protokol; beberapa proyek DeFi ekosistem mungkin menyentuh RWA tapi bukan narrative platform (MEDIUM)
+Sources: https://docs.sui.io/; https://defillama.com/chain/Sui
+
+Narrative: DePIN
+Status: Tidak menjadi narrative utama
+Evidence: Tidak ada fokus DePIN spesifik di dokumentasi protokol (MEDIUM)
+Sources: https://docs.sui.io/
+
+## Market Timeline
+
+Date: 2023-05-03
+Milestone: Launch Mainnet dan TGE SUI
+Description: Genesis mainnet; token SUI live; listing serentak di Binance, Coinbase, OKX, Bybit, KuCoin, Kraken
+Related Historical Event ID: EV-010, EV-011
+Sources: https://blog.sui.io/sui-mainnet-launches/; https://www.binance.com/en/blog/143401324684903493
+
+Date: 2023-06 – 2023-08
+Milestone: Peluncuran DeFi Primitive Utama
+Description: Cetus (DEX CLMM), Navi (lending), Scallop (lending), SpringSui (liquid staking) — awal ekosistem DeFi on-chain
+Related Historical Event ID: EV-013, EV-014, EV-015
+Sources: https://cetus.zone/; https://naviprotocol.io/; https://suilend.fi/; https://defillama.com/chain/Sui
+
+Date: 2023-09
+Milestone: USDC Native di Sui via Circle CCTP
+Description: USDC dapat mint/burn native di Sui; peningkatan signifikan likuiditas DeFi
+Related Historical Event ID: EV-017
+Sources: https://www.circle.com/en/usdc-on-sui; https://blog.sui.io/usdc-launches-on-sui/
+
+Date: 2023-10
+Milestone: Wormhole Bridge di Sui
+Description: Interoperabilitas lintas-chain (Ethereum, Solana, BNB, dll) — inflow aset eksternal
+Related Historical Event ID: EV-018
+Sources: https://wormhole.com/blog/wormhole-sui
+
+Date: 2023-11
+Milestone: zkLogin Mainnet
+Description: OAuth login tanpa seed phrase; mendorong adopsi consumer apps
+Related Historical Event ID: EV-019
+Sources: https://blog.sui.io/zklogin-mainnet/
+
+Date: 2024-05
+Milestone: Sui Bridge Native Mainnet
+Description: Bridge trust-minimized canonical Sui ↔ Ethereum; memperkuat posisi interoperabilitas
+Related Historical Event ID: EV-023
+Sources: https://blog.sui.io/sui-bridge-mainnet/
+
+Date: 2024-07
+Milestone: Mysticeti Consensus Mainnet Upgrade
+Description: Finality sub-second; throughput >50k TPS; peningkatan kapasitas jaringan — memperkuat narasi high-throughput
+Related Historical Event ID: EV-025
+Sources: https://blog.sui.io/mysticeti-mainnet-upgrade/
+
+Date: 2024-09
+Milestone: USDT Native di Sui
+Description: Tether USDT tersedia native; menambah pasangan stablecoin dan likuiditas DeFi
+Related Historical Event ID: EV-026
+Sources: https://tether.to/tether-usdt-launches-on-sui/; https://blog.sui.io/usdt-on-sui/
+
+Date: 2024-11
+Milestone: 1 Miliar Transaksi Kumulatif
+Description: Milestone adopsi — validasi throughput dan aktivitas on-chain berkelanjutan
+Related Historical Event ID: EV-028
+Sources: https://blog.sui.io/1-billion-transactions/
+
+Date: 2025-01
+Milestone: Treasury Foundation >$1 Miliar
+Description: Laporan treasury foundation; menunjukkan kesehatan finansial ekosistem
+Related Historical Event ID: EV-030
+Sources: https://sui.io/foundation/treasury
+
+## Official Market Resources
+
+Official Dashboard: https://sui.io/foundation/treasury (HIGH)
+DefiLlama: https://defillama.com/chain/Sui (HIGH)
+CoinGecko: https://www.coingecko.com/en/coins/sui (HIGH)
+CoinMarketCap: https://coinmarketcap.com/currencies/sui/ (HIGH)
+Token Terminal: https://tokenterminal.com/terminal/projects/sui (MEDIUM)
+Messari: https://messari.io/protocol/sui (MEDIUM)
+Explorer: https://explorer.sui.io/ (HIGH)
+Suiscan: https://suiscan.xyz/ (MEDIUM)
+Dune Analytics (Sui public dashboards): https://dune.com/ (need specific dashboard — multiple community dashboards exist; tidak ada dashboard resmi tunggal) (LOW)
+
+## Summary
+
+Market Stage: Growth (post-mainnet, >1 tahun operasional, TVL >$1 miliar, 1 miliar transaksi)
+Primary Category: Layer 1 Blockchain
+Competitor Count: 8 (Aptos, Solana, Ethereum, Near Protocol, BNB Chain, Avalanche, Polygon, plus ekosistem Move-Aptos khusus)
+Major Narrative: Object-centric high-throughput blockchain; Move Language Ecosystem; Consumer-facing Web3 dengan zkLogin/gasless
+Trading Availability: Tersedia di 10 exchange utama (spot + perpetual di mayoritas); DEX on-chain aktif; cross-chain bridge ke Ethereum/Solana
+Adoption Metrics Available: TVL, Daily Active Users, Transactions, Validator Count, Staking %, DEX Volume; Developer Count dan Wallet Count tidak dipublikasikan resmi
+
+## Open Threads
+
+- TVL Sui fluktuatif: DefiLlama menunjukkan >$1 miliar per Januari 2025, tapi angka real-time berubah setiap hari; perlu konsensus data pada tanggal cut-off spesifik
+- Daily Active Users: klaim >1 juta dari Sui Blog tidak dibedakan antara alamat unik aktif vs transaksi per user; tidak ada metrik resmi "active users" terstandardisasi di explorer
+- Developer Count: tidak ada angka resmi aktif developer di mainnet; hackathon participants (2.500+) bukan representasi developer aktif jangka panjang
+- Wallets/Address Count: Sui Explorer menampilkan live counter tapi tidak dipublikasikan sebagai snapshot per tanggal; perlu query on-chain manual
+- Data bridge volume (Sui Bridge native dan Wormhole) tidak dipublikasikan resmi; hanya bisa dihitung via query on-chain kontrak bridge
+- Pangsa pasar keseluruhan (market share) tidak tersedia; tidak ada laporan resmi pangsa Sui terhadap total DeFi TVL global atau volume exchange
+- Klasifikasi Near Protocol: daftar awal pada daftar kompetitor salah menulis "Sui-Near"; ini adalah kesalahan input, bukan nama entity nyata — perlu koreksi di fase berikutnya
+- Status FTX Ventures Series A exposure kepada token SUI pasca-bankruptcy — tidak dikonfirmasi di on-chain vesting contract
+- Metrik staking % (~60% circulating supply) berasal dari data tidak langsung — perlu verifikasi via on-chain staked SUI balance vs circulating supply
+- Perbandingan dengan Aptos sering dimuat media sebagai "duel Move chains" namun tidak ada data resmi perbandingan market share; hanya data on-chain independen
+- SuiPlay0x1 belum dirilis (pre-order Q1 2025); dampak pasar dari perangkat hardware belum dapat dinilai

@@ -1,0 +1,387 @@
+PROJECT: Polygon
+
+Entity: Jaynti Kanani
+Type: Person
+Relationship: Co-founder dan CEO Polygon — memimpin visi strategis dan eksekusi protokol sejak awal Matic Network (HIGH)
+Period: 2017–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Polygon Blog, https://blog.polygon.technology/introducing-polygon-2-0/]; (HIGH) [Forbes, https://www.forbes.com/sites/rachelwolfson/2021/09/09/polygon-co-founders/]
+
+---
+Entity: Sandeep Nailwal
+Type: Person
+Relationship: Co-founder dan COO Polygon — mengelola operasi, business development, dan ekosistem (HIGH)
+Period: 2017–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Polygon Blog, https://blog.polygon.technology/introducing-polygon-2-0/]; (HIGH) [Forbes, https://www.forbes.com/sites/rachelwolfson/2021/09/09/polygon-co-founders/]
+
+---
+Entity: Anurag Arjun
+Type: Person
+Relationship: Co-founder dan CPO Polygon — memimpin produk dan tokenomics, termasuk transisi MATIC ke POL (HIGH)
+Period: 2017–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Polygon Blog, https://blog.polygon.technology/introducing-polygon-2-0/]; (HIGH) [Forbes, https://www.forbes.com/sites/rachelwolfson/2021/09/09/polygon-co-founders/]
+
+---
+Entity: Mihailo Bjelic
+Type: Person
+Relationship: Co-founder Polygon (bergabung 2019) — kontributor kunci arsitektur zkEVM dan Polygon 2.0 (HIGH)
+Period: 2019–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Polygon Blog, https://blog.polygon.technology/introducing-polygon-2-0/]; (HIGH) [Forbes, https://www.forbes.com/sites/rachelwolfson/2021/09/09/polygon-co-founders/]
+
+---
+Entity: Polygon Technology Pte. Ltd.
+Type: Company
+Relationship: Entitas induk (Singapura) yang mengembangkan protokol Polygon, mempekerjakan 400+ karyawan, mengelola treasury dan IP (HIGH)
+Period: 2017–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Crunchbase, https://www.crunchbase.com/organization/matic-network]; (HIGH) [Polygon Labs About, https://polygon.technology/about]
+
+---
+Entity: Polygon Labs
+Type: Organization
+Relationship: Brand operasional untuk tim engineering, research, BD, dan ecosystem growth di bawah Polygon Technology Pte. Ltd. (HIGH)
+Period: 2021–sekarang (rebrand dari Matic Network)
+Exposure Type: technical-integration
+Evidence: (HIGH) [Polygon Labs About, https://polygon.technology/about]; (HIGH) [LinkedIn, https://www.linkedin.com/company/polygon-technology/]
+
+---
+Entity: Polygon PoS
+Type: Protocol
+Relationship: Sidechain EVM-kompatibel pertama (launch 2020), menggunakan Proof-of-Stake dengan validator set, settlement ke Ethereum (HIGH)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Polygon Blog, https://blog.polygon.technology/matic-mainnet-launch/]; (HIGH) [Polygon 2.0 Architecture, https://blog.polygon.technology/polygon-2-0-architecture/]
+
+---
+Entity: Polygon zkEVM
+Type: Protocol
+Relationship: ZK rollup Type 2/3 EVM-equivalent, mainnet beta 2023, bagian dari Polygon 2.0 unified liquidity (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Polygon zkEVM Docs, https://dev.polygon.technology/polygon-zkevm/]; (HIGH) [Polygon 2.0 Blog, https://blog.polygon.technology/introducing-polygon-2-0/]
+
+---
+Entity: Polygon CDK
+Type: Protocol
+Relationship: Chain Development Kit untuk membangun app-chains modular (validium, rollup, sovereign) yang terhubung ke AggLayer (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Polygon CDK Docs, https://dev.polygon.technology/polygon-cdk/]; (HIGH) [Polygon 2.0 Blog, https://blog.polygon.technology/introducing-polygon-2-0/]
+
+---
+Entity: Polygon Miden
+Type: Protocol
+Relationship: STARK-based rollup (VM Miden VM), fokus privacy dan client-side proving, saat ini devnet/testnet (HIGH)
+Period: 2022–sekarang (devnet)
+Exposure Type: technical-integration
+Evidence: (HIGH) [Polygon Miden GitHub, https://github.com/0xPolygonMiden]; (HIGH) [Polygon 2.0 Blog, https://blog.polygon.technology/introducing-polygon-2-0/]
+
+---
+Entity: Polygon Avail
+Type: Protocol
+Relationship: Modular data availability layer, spin-off 2023 jadi project terpisah dengan token sendiri, awalnya bagian Polygon 2.0 (HIGH)
+Period: 2022–2023 (di bawah Polygon), 2023–sekarang (mandiri)
+Exposure Type: technical-integration
+Evidence: (HIGH) [Polygon Blog, https://blog.polygon.technology/introducing-polygon-2-0/]; (MEDIUM) [Avail Project, https://www.availproject.org/]
+
+---
+Entity: Polygon ID
+Type: Protocol
+Relationship: Identity dan credential infrastructure (zero-knowledge proofs, verifiable credentials) terintegrasi ekosistem Polygon (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Polygon ID Docs, https://dev.polygon.technology/polygon-id/]; (HIGH) [Polygon 2.0 Blog, https://blog.polygon.technology/introducing-polygon-2-0/]
+
+---
+Entity: AggLayer
+Type: Protocol
+Relationship: Unified bridging dan liquidity layer (pessimistic proofs) menginterkoneksikan CDK chains dan Polygon PoS/zkEVM, rilis 2024 (HIGH)
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Polygon 2.0 Architecture, https://blog.polygon.technology/polygon-2-0-architecture/]; (HIGH) [Polygon Blog, https://blog.polygon.technology/introducing-polygon-2-0/]
+
+---
+Entity: Binance
+Type: Company
+Relationship: Platform IEO Launchpad untuk TGE MATIC April 2019, exchange utama listing token (HIGH)
+Period: 2019 (IEO), 2019–sekarang (listing)
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Binance Research, https://research.binance.com/en/projects/matic-network]; (HIGH) [CoinMarketCap, https://coinmarketcap.com/currencies/polygon/]
+
+---
+Entity: Ethereum
+Type: Chain
+Relationship: Layer 1 settlement untuk semua Polygon chains (PoS, zkEVM, CDK chains), validator staking, bridge canonical (HIGH)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Polygon 2.0 Architecture, https://blog.polygon.technology/polygon-2-0-architecture/]; (HIGH) [Ethereum.org, https://ethereum.org/en/layer-2/]
+
+---
+Entity: Polygonscan
+Type: Infrastructure
+Relationship: Block explorer resmi untuk Polygon PoS dan zkEVM, dioperasikan oleh Etherscan team (HIGH)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Polygonscan, https://polygonscan.com/]; (HIGH) [Polygon Docs, https://dev.polygon.technology/]
+
+---
+Entity: Aave
+Type: Application
+Relationship: DeFi lending protocol terbesar di Polygon PoS, deployment multi-chain termasuk zkEVM (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Aave Polygon Market, https://app.aave.com/resume?marketName=polygon_v3]; (HIGH) [Polygon Ecosystem, https://polygon.technology/ecosystem]
+
+---
+Entity: Uniswap
+Type: Application
+Relationship: DEX terdepan di Polygon PoS (v3 deployment), liquidity utama untuk token ekosistem (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Uniswap Polygon, https://app.uniswap.org/?chain=polygon]; (HIGH) [Polygon Ecosystem, https://polygon.technology/ecosystem]
+
+---
+Entity: Curve Finance
+Type: Application
+Relationship: Stablecoin AMM deployment di Polygon PoS, deep liquidity untuk bridged assets (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Curve Polygon, https://curve.fi/#/polygon/pools]; (HIGH) [Polygon Ecosystem, https://polygon.technology/ecosystem]
+
+---
+Entity: Balancer
+Type: Application
+Relationship: Automated portfolio manager dan AMM di Polygon PoS, weighted pools untuk ekosistem (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Balancer Polygon, https://app.balancer.fi/#/polygon]; (HIGH) [Polygon Ecosystem, https://polygon.technology/ecosystem]
+
+---
+Entity: Immutable
+Type: Company
+Relationship: Gaming platform (Immutable X, Immutable zkEVM) bermitra dengan Polygon untuk game web3, investor strategis (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Immutable Blog, https://www.immutable.com/blog/immutable-polygon-partnership]; (HIGH) [Polygon Ecosystem, https://polygon.technology/ecosystem]
+
+---
+Entity: GameSwift
+Type: Application
+Relationship: Gaming ecosystem dan modular chain (GameSwift Chain) dibangun dengan Polygon CDK (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [GameSwift, https://gameswift.net/]; (HIGH) [Polygon CDK Showcase, https://dev.polygon.technology/polygon-cdk/showcase/]
+
+---
+Entity: Pixelverse
+Type: Application
+Relationship: Telegram-based game (PixelTap) dengan jutaan user, terintegrasi Polygon untuk transaksi low-fee (HIGH)
+Period: 2024–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Pixelverse, https://pixelverse.xyz/]; (MEDIUM) [Polygon Blog Gaming, https://blog.polygon.technology/]
+
+---
+Entity: OpenSea
+Type: Application
+Relationship: NFT marketplace terbesar dengan dukungan Polygon PoS sejak 2021, gas-free minting (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [OpenSea Polygon, https://opensea.io/rankings?chain=polygon]; (HIGH) [Polygon Ecosystem, https://polygon.technology/ecosystem]
+
+---
+Entity: Magic Eden
+Type: Application
+Relationship: NFT marketplace multi-chain, mendukung Polygon PoS dan zkEVM untuk trading NFT (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Magic Eden Polygon, https://magiceden.io/polygon]; (HIGH) [Polygon Ecosystem, https://polygon.technology/ecosystem]
+
+---
+Entity: Chainlink
+Type: Infrastructure
+Relationship: Oracle network resmi di Polygon PoS dan zkEVM (Price Feeds, VRF, CCIP, Functions) (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Chainlink Polygon, https://chain.link/ecosystem/polygon]; (HIGH) [Polygon Ecosystem, https://polygon.technology/ecosystem]
+
+---
+Entity: The Graph
+Type: Infrastructure
+Relationship: Indexing protocol untuk query data on-chain Polygon PoS, zkEVM, dan CDK chains (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [The Graph Polygon, https://thegraph.com/explorer/subgraphs?chain=polygon]; (HIGH) [Polygon Ecosystem, https://polygon.technology/ecosystem]
+
+---
+Entity: Gelato
+Type: Infrastructure
+Relationship: Automation (smart contract execution) dan RaaS (Rollup-as-a-Service) untuk Polygon CDK chains (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Gelato Polygon, https://gelato.network/polygon]; (HIGH) [Polygon CDK Docs, https://dev.polygon.technology/polygon-cdk/]
+
+---
+Entity: Stripe
+Type: Company
+Relationship: Enterprise partner — fiat-to-crypto onramp dan payouts via Polygon PoS untuk merchant global (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Stripe Blog, https://stripe.com/blog/crypto-payouts-polygon]; (HIGH) [Polygon Blog Enterprise, https://blog.polygon.technology/]
+
+---
+Entity: DraftKings
+Type: Company
+Relationship: Enterprise partner — sportsbook NFT marketplace dan loyalty program di Polygon PoS (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [DraftKings Polygon, https://www.draftkings.com/nft]; (HIGH) [Polygon Blog Enterprise, https://blog.polygon.technology/]
+
+---
+Entity: Flipkart
+Type: Company
+Relationship: Enterprise partner — e-commerce loyalty program (FireDrops) dan web3 initiatives di Polygon (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Flipkart Polygon, https://www.flipkart.com/]; (MEDIUM) [Polygon Blog Enterprise, https://blog.polygon.technology/]
+
+---
+Entity: Deutsche Telekom
+Type: Company
+Relationship: Validator Polygon PoS (Telekom MMS), menjalankan infrastructure staking enterprise-grade (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Deutsche Telekom Polygon, https://www.telekom.com/en/media/media-information/archive/telekom-mms-validator-polygon]; (HIGH) [Polygon Staking, https://staking.polygon.technology/]
+
+---
+Entity: 0xPolygon (GitHub Org)
+Type: Organization
+Relationship: Monorepo utama kode Polygon (PoS client, contracts, SDKs, tooling) (HIGH)
+Period: 2019–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [GitHub 0xPolygon, https://github.com/0xPolygon]; (HIGH) [Polygon Docs, https://dev.polygon.technology/]
+
+---
+Entity: 0xPolygonHermez (GitHub Org)
+Type: Organization
+Repository: Polygon zkEVM (prover, node, contracts, bridge) (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [GitHub 0xPolygonHermez, https://github.com/0xPolygonHermez]; (HIGH) [Polygon zkEVM Docs, https://dev.polygon.technology/polygon-zkevm/]
+
+---
+Entity: 0xPolygonMiden (GitHub Org)
+Type: Organization
+Relationship: Repository Polygon Miden (Miden VM, prover, client, compiler) (HIGH)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [GitHub 0xPolygonMiden, https://github.com/0xPolygonMiden]; (HIGH) [Polygon Miden Docs, https://dev.polygon.technology/polygon-miden/]
+
+---
+Entity: Polygon 2.0
+Type: Protocol
+Relationship: Upgrade arsitektur terpadu (token POL, AggLayer, unified liquidity, governance) meluncur 2024 (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Polygon 2.0 Blog, https://blog.polygon.technology/introducing-polygon-2-0/]; (HIGH) [Polygon 2.0 Tokenomics, https://blog.polygon.technology/polygon-2-0-tokenomics/]
+
+---
+
+PERSON
+Jaynti Kanani
+Sandeep Nailwal
+Anurag Arjun
+Mihailo Bjelic
+
+FOUNDATION
+(tidak ada foundation terpisah teridentifikasi — Polygon Technology Pte. Ltd. berfungsi sebagai entitas pengembang)
+
+COMPANY
+Polygon Technology Pte. Ltd.
+Polygon Labs
+Binance
+Immutable
+GameSwift
+Stripe
+DraftKings
+Flipkart
+Deutsche Telekom
+
+PROTOCOL
+Polygon PoS
+Polygon zkEVM
+Polygon CDK
+Polygon Miden
+Polygon Avail
+Polygon ID
+AggLayer
+Polygon 2.0
+
+CHAIN
+Ethereum
+Polygon PoS
+Polygon zkEVM
+Polygon Miden
+Polygon Avail
+Polygon CDK chains (app-chains)
+
+INVESTOR
+Binance (via IEO Launchpad)
+
+INFRASTRUCTURE
+Polygonscan
+Chainlink
+The Graph
+Gelato
+0xPolygon (GitHub Org)
+0xPolygonHermez (GitHub Org)
+0xPolygonMiden (GitHub Org)
+
+APPLICATION
+Aave
+Uniswap
+Curve Finance
+Balancer
+Immutable
+Pixelverse
+OpenSea
+Magic Eden
+
+SECURITY
+(tidak ada auditor/security firm spesifik teridentifikasi di Phase 01)
+
+DAO
+(tidak ada DAO terpisah teridentifikasi — governance melalui POL token holders dan Polygon Labs)
+
+GOVERNMENT
+(tidak ada entitas pemerintah teridentifikasi)
+
+MEDIA
+(tidak ada media outlet teridentifikasi sebagai entity terlibat)
+
+COMMUNITY
+(tidak ada community organization formal teridentifikasi)
+
+OTHER
+(tidak ada)
+
+---
+
+Total Entity: 44
+Internal: 14 (founders, Polygon Technology Pte. Ltd., Polygon Labs, core protocols/chains, GitHub orgs)
+External: 30 (investors, enterprise partners, infrastructure providers, applications, L1 Ethereum)
+Unknown: 0
+
+Open Threads
+- Apakah ada Polygon Foundation terpisah dari Polygon Technology Pte. Ltd. (seperti Ethereum Foundation vs EF) — belum teridentifikasi di sumber Phase 01
+- Detail investor awal (seed/private sale) sebelum IEO Binance — tidak tercantum di Phase 01
+- Auditor/security firm untuk smart contract Polygon PoS, zkEVM, CDK, AggLayer — tidak tercantum
+- Status DAO/governance formal (Polygon DAO vs POL token governance) — perlu verifikasi
+- Apakah ada community organization formal (Polygon Guilds, DAO committees) — tidak teridentifikasi
+- Media partner resmi (CoinDesk, The Block, dll) untuk announcements — tidak tercantum
+- Validator set lengkap PoS (100+ validator) — hanya Deutsche Telekom teridentifikasi sebagai enterprise validator
+- Market maker/liquidity provider token POL — tidak teridentifikasi
+- Legal entity untuk AggLayer (apakah terpisah atau di bawah Polygon Technology Pte. Ltd.) — belum jelas
+- Status hukum spin-off Avail (token, treasury, IP) — perlu investigasi terpisah

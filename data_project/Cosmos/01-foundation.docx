@@ -1,0 +1,30 @@
+PROJECT: Cosmos
+
+Official Name: Cosmos Network (HIGH) [Cosmos Network, https://cosmos.network/]
+Symbol: ATOM (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/cosmos]
+Category: cross-chain messaging / interoperability / app-chain framework (HIGH) [Cosmos Whitepaper, https://github.com/cosmos/cosmos/blob/master/WHITEPAPER.md]
+Founding Entity: Interchain Foundation (ICF), Stiftung (Swiss non-profit foundation), Zug, Switzerland (HIGH) [Interchain Foundation, https://interchain.io/; Swiss Commercial Register, https://www.zefix.ch/]
+Founders: Jae Kwon (co-founder, former CEO Tendermint Inc); Ethan Buchman (co-founder, CTO Tendermint Inc / Informal Systems); Zarko Milosevic (co-founder, researcher) (HIGH) [Cosmos Whitepaper authors; Tendermint Inc blog, https://blog.tendermint.com/]
+Core Team: ~50+ core contributors across Informal Systems, Interchain GmbH, Strangelove, Hypha, Notional, and independent contributors; key maintainers: Billy Rennekamp, Tess Rinearson, Maghnus Mareneck, Christopher Goes, Dev Ojha (MEDIUM) [Cosmos SDK GitHub contributors, https://github.com/cosmos/cosmos-sdk/graphs/contributors; Interchain Foundation team page, https://interchain.io/team/]
+Country: Switzerland (foundation jurisdiction); globally distributed team (HIGH) [Interchain Foundation, https://interchain.io/]
+Launch Date - Testnet: 2017-12 (Game of Stakes testnet series); 2019-02-13 (Gaia testnet pre-mainnet) (MEDIUM) [Tendermint blog, https://blog.tendermint.com/game-of-stakes/; Cosmos blog, https://blog.cosmos.network/gaia-testnet-launch/]
+Launch Date - Mainnet: 2019-03-13 (Cosmos Hub mainnet genesis) (HIGH) [Cosmos Network blog, https://blog.cosmos.network/cosmos-hub-mainnet-launch/]
+Launch Date - TGE: 2017-04-06 (ICO / fundraiser); ATOM distribution at mainnet launch 2019-03-13 (HIGH) [ICF fundraiser terms, https://cosmos.network/icf-fundraiser; CoinGecko historical data, https://www.coingecko.com/en/coins/cosmos]
+Main Products: Cosmos SDK (application development framework); Tendermint Core / CometBFT (BFT consensus engine); IBC (Inter-Blockchain Communication protocol); Cosmos Hub (first hub, ATOM staking); Gaia (Cosmos Hub implementation); Interchain Security (shared security); Liquid Staking Module (LSM) (HIGH) [Cosmos Network products page, https://cosmos.network/ecosystem/; Cosmos SDK docs, https://docs.cosmos.network/]
+Official Website: https://cosmos.network/ (HIGH)
+Repository: https://github.com/cosmos (HIGH) [GitHub organization]
+Documentation: https://docs.cosmos.network/ (HIGH)
+Social - X/Twitter: @cosmos (HIGH) [X.com/cosmos]
+Social - Discord: https://discord.gg/cosmosnetwork (HIGH) [Discord invite on cosmos.network]
+Social - Telegram: @cosmosproject (HIGH) [Telegram handle listed on cosmos.network]
+Block Explorer: https://www.mintscan.io/cosmos (Cosmos Hub); https://explorer.cosmos.network/ (HIGH) [Mintscan; Cosmos official explorer]
+Token Contract: native token on Cosmos Hub (not an ERC-20); ATOM also exists as wrapped ERC-20 on Ethereum (0x0eb3a705fc54725037cc9e008bdede697f62f337) and other chains via bridges (HIGH) [CoinGecko ATOM page; Etherscan, https://etherscan.io/token/0x0eb3a705fc54725037cc9e008bdede697f62f337]
+Chain(s): Cosmos Hub (primary); 100+ sovereign app-chains in ecosystem (Osmosis, Celestia, dYdX, Injective, Stride, Neutron, etc.) (HIGH) [Map of Zones, https://mapofzones.com/; Cosmos ecosystem page, https://cosmos.network/ecosystem/apps]
+Ecosystem: Cosmos / Interchain (HIGH) [Cosmos Network, https://cosmos.network/ecosystem/]
+
+Open Threads
+- Exact current core team headcount across all contributing entities (Informal Systems, Interchain GmbH, Strangelove, Hypha, Notional, etc.) — not publicly aggregated in single source
+- Precise legal relationship between Interchain Foundation, Tendermint Inc (now Ignite), and Informal Systems — historical restructuring details partially public but not fully consolidated
+- Current ATOM tokenomics parameters (inflation rate, community pool %, staking rewards) post-v18/v19 upgrades — need on-chain governance proposal verification
+- Whether "Cosmos" refers strictly to Cosmos Hub or the broader interchain ecosystem in official communications — terminology used inconsistently across sources
+- Exact list of chains using CometBFT vs legacy Tendermint Core — migration status not centrally tracked

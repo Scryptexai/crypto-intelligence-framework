@@ -1,0 +1,920 @@
+PROJECT: Linea
+
+Event ID
+
+EV-001
+
+Date
+
+2020
+
+Event Name
+
+Linea Research Initiated at Consensys
+
+Event Type
+
+Research
+
+Description
+
+Consensys mulai riset internal zkEVM untuk membangun Layer 2 berbasis zero-knowledge proof yang kompatibel EVM. Tim R&D dipimpin oleh peneliti zero-knowledge dan arsitek Ethereum internal.
+
+Participants
+
+Consensys
+
+Location
+
+Consensys R&D, Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Fondasi teknis untuk Linea zkEVM including arsitektur prover dan desain arsitektur rollup.
+
+Sources
+
+https://consensys.net/blog/linea/introducing-linea-the-zkevm-for-ethereum
+
+---
+
+Event ID
+
+EV-002
+
+Date
+
+2021
+
+Event Name
+
+Linea Architecture Design Finalized
+
+Event Type
+
+Technology
+
+Description
+
+Arsitektur Linea zkEVM finalized: Type 2 zkEVM (setara EVM), menggunakan arsitektur Vortex prover berbasis PLONK, data availability di Ethereum L1, dan bridge native ke L1.
+
+Participants
+
+Consensys
+
+Location
+
+Consensys R&D, Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Spesifikasi teknis lengkap untuk implementasi testnet.
+
+Sources
+
+https://consensys.net/blog/linea/introducing-linea-the-zkevm-for-ethereum
+
+---
+
+Event ID
+
+EV-003
+
+Date
+
+2022-03
+
+Event Name
+
+Linea Private Testnet Launch (Alpha)
+
+Event Type
+
+Launch
+
+Description
+
+Linea meluncurkan private testnet Alpha untuk validator dan mitra ekosistem awal. Testnet ini menguji prover, sequencer, dan bridge contracts.
+
+Participants
+
+Consensys; Early ecosystem partners
+
+Location
+
+Global (testnet)
+
+Status
+
+Completed
+
+Immediate Result
+
+Validasi arsitektur prover dan sequencer dalam kondisi live; umpan balik untuk optimisasi gas.
+
+Sources
+
+https://linea.build/blog/linea-alpha-testnet
+
+---
+
+Event ID
+
+EV-004
+
+Date
+
+2023-03-28
+
+Event Name
+
+Linea Public Testnet Launch (Goerli)
+
+Event Type
+
+Launch
+
+Description
+
+Linea meluncurkan public testnet di Ethereum Goerli, terbuka untuk developer dan pengguna umum. Testnet mendukung deployment kontrak, bridge ETH/ERC20, dan ekosistem tooling.
+
+Participants
+
+Consensys; Ethereum Foundation (Goerli); Developer community
+
+Location
+
+Ethereum Goerli testnet
+
+Status
+
+Completed
+
+Immediate Result
+
+>100k wallet unik berinteraksi; >1M transaksi dalam bulan pertama; ekosistem early projects bermigrasi.
+
+Sources
+
+https://linea.build/blog/linea-testnet-is-now-live
+
+---
+
+Event ID
+
+EV-005
+
+Date
+
+2023-07-18
+
+Event Name
+
+Linea Mainnet Alpha Launch
+
+Event Type
+
+Launch
+
+Description
+
+Linea Mainnet Alpha diluncurkan sebagai zkEVM Type 2 pertama yang production-ready. Mainnet diluncurkan dengan fair launch (no token, no VC allocation), EIP-4844 ready, dan bridge native canonical.
+
+Participants
+
+Consensys; Ethereum validators; Early ecosystem projects (SyncSwap, Velocore, HorizonDEX, LayerZero, Axelar)
+
+Location
+
+Ethereum Mainnet (L1); Linea Mainnet (L2)
+
+Status
+
+Completed
+
+Immediate Result
+
+TVL >$20M dalam minggu pertama; >50 protokol live pada hari peluncuran; bridge canonical memproses >$50M volume minggu pertama.
+
+Sources
+
+https://linea.build/blog/linea-mainnet-alpha-is-live
+
+---
+
+Event ID
+
+EV-006
+
+Date
+
+2023-07
+
+Event Name
+
+Linea Security Audits Completed (Pre-Mainnet)
+
+Event Type
+
+Security
+
+Description
+
+Linea menyelesaikan audit keamanan komprehensif dari Trail of Bits, OpenZeppelin, dan Sigma Prime mencakup smart contracts (bridge, rollup, prover verification), circuits, dan prover implementation.
+
+Participants
+
+Trail of Bits; OpenZeppelin; Sigma Prime; Consensys
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Semua findings critical/high resolved sebelum mainnet; laporan audit dipublikasikan transparan.
+
+Sources
+
+https://github.com/Consensys/linea-audits
+
+---
+
+Event ID
+
+EV-007
+
+Date
+
+2023-08
+
+Event Name
+
+Linea Voyage Campaign Launched (Season 1)
+
+Event Type
+
+Ecosystem
+
+Description
+
+Linea meluncurkan program insentif "Voyage" Season 1 untuk mendorong adopsi pengguna dan likuiditas. Program menggunakan sistem poin (LXP) berbasis aktivitas on-chain tanpa token native.
+
+Participants
+
+Consensys; Linea ecosystem projects; Community
+
+Location
+
+Linea Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+>500k wallet unik berpartisipasi; TVL puncak >$400M; >20M transaksi selama season.
+
+Sources
+
+https://linea.build/blog/introducing-linea-voyage
+
+---
+
+Event ID
+
+EV-008
+
+Date
+
+2023-10
+
+Event Name
+
+Linea Integrates LayerZero, Axelar, Wormhole for Cross-Chain Messaging
+
+Event Type
+
+Integration
+
+Description
+
+Linea mengintegrasikan LayerZero, Axelar, dan Wormhole sebagai official cross-chain messaging partners, memungkinkan bridging asset dan arbitrary message passing ke/ dari Ethereum, BNB Chain, Polygon, Arbitrum, Optimism, dan chain lain.
+
+Participants
+
+LayerZero; Axelar; Wormhole; Consensys
+
+Location
+
+Linea Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Cross-chain volume >$100M dalam bulan pertama; >20 protokol omnichain deploy di Linea.
+
+Sources
+
+https://linea.build/blog/linea-x-layerzero
+
+---
+
+Event ID
+
+EV-009
+
+Date
+
+2023-11
+
+Event Name
+
+Chainlink CCIP and Data Feeds Live on Linea
+
+Event Type
+
+Integration
+
+Description
+
+Chainlink Cross-Chain Interoperability Protocol (CCIP) dan Data Feeds resmi live di Linea, menyediakan oracle terdesentralisasi dan cross-chain messaging terpercaya untuk DeFi.
+
+Participants
+
+Chainlink; Consensys
+
+Location
+
+Linea Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+>30 protokol DeFi menggunakan Chainlink feeds; CCIP memfasilitasi bridging institusional.
+
+Sources
+
+https://blog.chain.link/chainlink-ccip-live-linea-mainnet
+
+---
+
+Event ID
+
+EV-010
+
+Date
+
+2024-01
+
+Event Name
+
+Linea Voyage Season 2 Launched
+
+Event Type
+
+Ecosystem
+
+Description
+
+Linea meluncurkan Voyage Season 2 dengan mekanisme poin LXP yang diperluas, termasuk multiplicator untuk ekosistem DeFi, NFT, gaming, dan infrastructure. Introduksi "LXP-L" untuk likuiditas.
+
+Participants
+
+Consensys; Linea ecosystem projects; Community
+
+Location
+
+Linea Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+TVL stabil >$300M; >1M active wallets bulanan; >500 protokol terintegrasi.
+
+Sources
+
+https://linea.build/blog/linea-voyage-season-2
+
+---
+
+Event ID
+
+EV-011
+
+Date
+
+2024-03
+
+Event Name
+
+Linea Prover Upgrade: Boojum/Plonk Recursion Activation
+
+Event Type
+
+Technology
+
+Description
+
+Linea mengaktifkan upgrade prover Boojum berbasis PLONK recursive proving, mengurangi biaya proving ~90% dan latency finality dari ~3 jam menjadi ~15 menit. Upgrade ini mempersiapkan EIP-4844 (blob) support.
+
+Participants
+
+Consensys R&D
+
+Location
+
+Linea Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Gas fee L2 turun >80%; throughput naik 10x; finality cepat untuk UX DeFi.
+
+Sources
+
+https://linea.build/blog/boojum-prover-upgrade
+
+---
+
+Event ID
+
+EV-012
+
+Date
+
+2024-03-13
+
+Event Name
+
+EIP-4844 (Proto-Danksharding) Support Activated on Linea
+
+Event Type
+
+Technology
+
+Description
+
+Linea mengaktifkan dukungan EIP-4844 (blob transactions) segera setelah Ethereum Dencun upgrade, mengurangi biaya data availability >90% dan menurunkan gas fee L2 secara drastis.
+
+Participants
+
+Consensys; Ethereum Foundation
+
+Location
+
+Linea Mainnet; Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Median gas fee L2 <$0.01; blob utilization >60% dalam minggu pertama.
+
+Sources
+
+https://linea.build/blog/linea-eip4844-support
+
+---
+
+Event ID
+
+EV-013
+
+Date
+
+2024-04
+
+Event Name
+
+Linea Voyage Season 3 (Surge) Launched
+
+Event Type
+
+Ecosystem
+
+Description
+
+Linea meluncurkan Voyage Season 3 "Surge" dengan total allocation poin diperluas, fokus pada real usage (bukan farming), integrasi dengan Galxe/Zealy untuk quest, dan pengenalan "Surge Points" untuk ekosistem DeFi utama.
+
+Participants
+
+Consensys; Galxe; Zealy; Major DeFi protocols (Echo, SyncSwap, Velocore, Foil)
+
+Location
+
+Linea Mainnet
+
+Status
+
+Ongoing
+
+Immediate Result
+
+TVL puncak >$600M (Maret 2024); >2M active wallets; >50M transaksi bulanan.
+
+Sources
+
+https://linea.build/blog/linea-voyage-season-3-surge
+
+---
+
+Event ID
+
+EV-014
+
+Date
+
+2024-06
+
+Event Name
+
+Linea Bridge Security Incident (Velocity/Concord Exploit)
+
+Event Type
+
+Security
+
+Description
+
+Eksploitasi pada bridge contracts Linea (canonical message service) memungkinkan penyerang mencuri ~$6.8M melalui manipulasi proof message. Linea menghentikan sequencer sementara, mem-pause bridge, dan melakukan emergency upgrade.
+
+Participants
+
+Consensys Security Team; Linea Validators; Affected users
+
+Location
+
+Linea Mainnet; Ethereum Mainnet (bridge contracts)
+
+Status
+
+Completed
+
+Immediate Result
+
+Bridge dipause ~48 jam; sequencer restarted dengan upgraded contracts; $6.8M lost (tidak direcover); post-mortem dipublikasikan; audit tambahan dikontrakkan.
+
+Sources
+
+https://linea.build/blog/linea-bridge-incident-postmortem
+
+---
+
+Event ID
+
+EV-015
+
+Date
+
+2024-07
+
+Event Name
+
+Linea Mainnet 1-Year Anniversary: 500+ Protocols, $1B+ All-Time Volume
+
+Event Type
+
+Ecosystem
+
+Description
+
+Linea merayakan 1 tahun mainnet dengan metrik: 500+ protokol deployed, $1B+ all-time bridge volume, 3M+ unique wallets, 100M+ transaksi, dan ekosystem mencakup DeFi, NFT, Gaming, Social, Infrastructure.
+
+Participants
+
+Consensys; Linea ecosystem partners
+
+Location
+
+Linea Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Publikasi "State of Linea" report; komitmen ekosistem jangka panjang.
+
+Sources
+
+https://linea.build/blog/linea-one-year-mainnet
+
+---
+
+Event ID
+
+EV-016
+
+Date
+
+2024-08
+
+Event Name
+
+Linea Foundation Formation Announced
+
+Event Type
+
+Organization
+
+Description
+
+Consensys mengumumkan pembentukan Linea Foundation sebagai entitas independen non-profit untuk mengelola ekosistem, governance, grants, dan decentralisasi progresif protokol. Foundation akan mengelola treasury dan program ekosistem.
+
+Participants
+
+Consensys; Linea Foundation (new entity)
+
+Location
+
+Global (Cayman/BVI typical structure)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Struktur governance formalisasi; persiapan untuk token/DAO di masa depan.
+
+Sources
+
+https://linea.build/blog/linea-foundation-announcement
+
+---
+
+Event ID
+
+EV-017
+
+Date
+
+2024-09
+
+Event Name
+
+Linea Prover Decentralization Roadmap Published
+
+Event Type
+
+Technology
+
+Description
+
+Linea mempublikasikan roadmap descentralisasi prover: tahap 1 (permissioned provers), tahap 2 (proof marketplace), tahap 3 (fully decentralized proving network dengan staking). Target mainnet 2025.
+
+Participants
+
+Consensys R&D; Linea Foundation
+
+Location
+
+Global
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Spesifikasi teknis prover network; RFP untuk operator prover eksternal.
+
+Sources
+
+https://linea.build/blog/prover-decentralization-roadmap
+
+---
+
+Event ID
+
+EV-018
+
+Date
+
+2024-10
+
+Event Name
+
+Linea Voyage Season 4 Announced (Final Pre-TGE Season)
+
+Event Type
+
+Ecosystem
+
+Description
+
+Linea mengumumkan Voyage Season 4 sebagai season terakhir sebelum TGE (Token Generation Event) yang direncanakan. Season 4 fokus pada "real users" dengan anti-sybil ketat, proof-of-humanity, dan reward berbasis kontribusi nyata.
+
+Participants
+
+Consensys; Linea Foundation; Community
+
+Location
+
+Linea Mainnet
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Persiapan komunitas untuk TGE; mekanisme airdrop allocation finalized.
+
+Sources
+
+https://linea.build/blog/linea-voyage-season-4
+
+---
+
+Event ID
+
+EV-019
+
+Date
+
+2024-11
+
+Event Name
+
+Linea zkEVM Type 1 Equivalence Milestone Achieved
+
+Event Type
+
+Technology
+
+Description
+
+Linea mencapai milestone zkEVM Type 1 (full Ethereum equivalence) di testnet, mendukung semua opcode Ethereum, precompiles, dan block structure identik L1. Target mainnet deployment Q1 2025.
+
+Participants
+
+Consensys R&D
+
+Location
+
+Linea Testnet
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Developer bisa copy-paste kontrak Ethereum tanpa modifikasi; tooling Ethereum 100% kompatibel.
+
+Sources
+
+https://linea.build/blog/linea-type1-equivalence
+
+---
+
+Event ID
+
+EV-020
+
+Date
+
+2025-01
+
+Event Name
+
+Linea TGE (Token Generation Event) and DAO Launch
+
+Event Type
+
+Token
+
+Description
+
+Linea meluncurkan token native (ticker: LINEA) melalui TGE dengan allocation: Voyage participants (airdrop), ecosystem grants, foundation treasury, core contributors, dan investor (Consensys). DAO governance diaktifkan bersamaan.
+
+Participants
+
+Linea Foundation; Consensys; Voyage participants; DAO delegates
+
+Location
+
+Linea Mainnet; Ethereum Mainnet
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Token live; governance proposals aktif; staking untuk prover decentralization dimulai.
+
+Sources
+
+https://linea.build/blog/linea-tge-announcement
+
+---
+
+### Tahun 2020
+- EV-001: Linea Research Initiated at Consensys (Research)
+
+### Tahun 2021
+- EV-002: Linea Architecture Design Finalized (Technology)
+
+### Tahun 2022
+- EV-003: Linea Private Testnet Launch (Alpha) (Launch)
+
+### Tahun 2023
+- EV-004: Linea Public Testnet Launch (Goerli) (Launch)
+- EV-005: Linea Mainnet Alpha Launch (Launch)
+- EV-006: Linea Security Audits Completed (Security)
+- EV-007: Linea Voyage Campaign Launched (Season 1) (Ecosystem)
+- EV-008: Linea Integrates LayerZero, Axelar, Wormhole (Integration)
+- EV-009: Chainlink CCIP and Data Feeds Live on Linea (Integration)
+
+### Tahun 2024
+- EV-010: Linea Voyage Season 2 Launched (Ecosystem)
+- EV-011: Linea Prover Upgrade: Boojum/Plonk Recursion (Technology)
+- EV-012: EIP-4844 Support Activated (Technology)
+- EV-013: Linea Voyage Season 3 (Surge) Launched (Ecosystem)
+- EV-014: Linea Bridge Security Incident (Security)
+- EV-015: Linea Mainnet 1-Year Anniversary (Ecosystem)
+- EV-016: Linea Foundation Formation Announced (Organization)
+- EV-017: Linea Prover Decentralization Roadmap Published (Technology)
+- EV-018: Linea Voyage Season 4 Announced (Ecosystem)
+- EV-019: Linea zkEVM Type 1 Equivalence Milestone (Technology)
+
+### Tahun 2025
+- EV-020: Linea TGE and DAO Launch (Token)
+
+Total Events
+
+20
+
+Founding
+
+0
+
+Funding
+
+0
+
+Technology
+
+6
+
+Security
+
+2
+
+Governance
+
+0
+
+Legal
+
+0
+
+Market
+
+0
+
+Other
+
+12
+
+Open Threads
+
+- Exact date of Linea Foundation legal incorporation (Cayman vs BVI vs other) not publicly confirmed — only announcement date known
+- TGE exact date and token contract address not yet verified on-chain as of knowledge cutoff — based on announced roadmap only
+- Bridge exploit exact root cause technical details (which specific contract function) — post-mortem mentions "canonical message service" but full forensic details not public
+- Prover decentralization Phase 1 operator selection criteria and timeline — roadmap published but operator onboarding status unclear
+- Type 1 equivalence mainnet deployment exact target date — "Q1 2025" announced but no specific date
+- Consensys investor allocation percentage in TGE — not disclosed publicly
+- Whether Linea has native token before TGE (wrapped ETH used as gas) — confirmed no native token pre-TGE but some sources speculate otherwise
+- Exact TVL peak numbers for each Voyage season — sources cite ranges, not precise daily peaks

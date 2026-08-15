@@ -1,0 +1,169 @@
+PROJECT: Polygon
+
+Funding History
+
+Funding Round: IEO di Binance Launchpad
+Date: 2019-04-24
+Amount: $5.000.000
+Currency: USD
+Lead Investor: Binance Launchpad (platform)
+Participating Investors: Partisipan IEO publik melalui Binance
+Valuation: tidak diungkap
+Funding Type: Public Sale (IEO)
+Status: Completed
+Sources: Binance Research, https://research.binance.com/en/projects/matic-network
+
+Funding Round: Strategic Funding Round
+Date: 2022-02-07
+Amount: $450.000.000
+Currency: USD
+Lead Investor: Sequoia Capital India
+Participating Investors: SoftBank Vision Fund 2, Galaxy Digital, Tiger Global, Republic Capital, Kevin O'Leary (O'Leary Ventures), Alan Howard, Polygon founders
+Valuation: $13.000.000.000 (dilaporkan)
+Funding Type: Strategic / Private Sale
+Status: Completed
+Sources: Reuters, https://www.reuters.com/technology/polygon-raises-450-mln-sequoia-capital-india-2022-02-07/; Polygon Blog, https://blog.polygon.technology/polygon-450m-funding/
+
+Funding Round: zkEVM Development Funding
+Date: 2023 (bulan tidak dispesifikkan)
+Amount: tidak diungkap
+Currency: USD
+Lead Investor: Sequoia Capital
+Participating Investors: Coinbase Ventures
+Valuation: tidak diungkap
+Funding Type: Strategic / Ecosystem Fund
+Status: Completed
+Sources: Polygon Blog, https://blog.polygon.technology/polygon-zkevm-funding/; Reuters (referensi round 2022 sebagai konteks), https://www.reuters.com/technology/polygon-raises-450-mln-sequoia-capital-india-2022-02-07/
+
+Funding Round: ZK Research Additional Funding
+Date: 2025 (proyeksi dari roadmap, belum terverifikasi realisasi)
+Amount: tidak diungkap
+Currency: USD
+Lead Investor: tidak diungkap
+Participating Investors: tidak diungkap
+Valuation: tidak diungkap
+Funding Type: Strategic / R&D Grant
+Status: Unknown (belum dikonfirmasi resmi)
+Sources: Polygon Blog (roadmap), https://blog.polygon.technology/; Crunchbase, https://www.crunchbase.com/organization/polygon-technology
+
+Treasury
+
+Current Treasury Size: tidak diungkap
+Treasury Composition: tidak diungkap
+Stablecoin Holdings: tidak diungkap
+Native Token Holdings: tidak diungkap (POL treasury allocation disebutkan di tokenomics 2024 tapi persentase dan jumlah absolut tidak dipublikasikan)
+Other Assets: tidak diungkap
+Treasury Custodian: Polygon Technology Pte. Ltd. (entitas hukum); pengelolaan harian oleh Polygon Labs; governance transisi ke Polygon Foundation (dua kamar) per Polygon 2.0
+Sources: Polygon 2.0 Tokenomics Blog, https://blog.polygon.technology/polygon-2-0-tokenomics/; Polygon Governance Blog, https://blog.polygon.technology/polygon-governance/
+
+Revenue Model
+
+Nama: Gas Fees Polygon PoS
+Status: Live
+Sources: Polygon PoS Docs, https://dev.polygon.technology/polygon-pos/; Polygonscan (on-chain fee data), https://polygonscan.com/
+
+Nama: Gas Fees Polygon zkEVM
+Status: Live
+Sources: Polygon zkEVM Docs, https://dev.polygon.technology/polygon-zkevm/; zkEVM Explorer, https://zkevm.polygonscan.com/
+
+Nama: Bridge Fees (Canonical Bridge PoS & zkEVM)
+Status: Live
+Sources: Polygon Bridge, https://bridge.polygon.technology/; Polygon zkEVM Bridge Docs, https://dev.polygon.technology/polygon-zkevm/bridge/
+
+Nama: Enterprise Partnership Revenue (Stripe, DraftKings, Flipkart, Deutsche Telekom)
+Status: Live
+Sources: Stripe Blog, https://stripe.com/blog/crypto-payouts-polygon; Polygon Blog Enterprise, https://blog.polygon.technology/; Deutsche Telekom Press, https://www.telekom.com/en/media/media-information/archive/telekom-mms-validator-polygon
+
+Nama: Validator Commission (Staking Rewards)
+Status: Live
+Sources: Polygon Staking, https://staking.polygon.technology/
+
+Nama: Polygon CDK / AggLayer Service Fees (RaaS via Gelato, shared sequencer fees)
+Status: Planned / Early Live
+Sources: Gelato Polygon, https://gelato.network/polygon; Polygon CDK Docs, https://dev.polygon.technology/polygon-cdk/; AggLayer Docs, https://dev.polygon.technology/agglayer/
+
+Nama: Ecosystem Grants / Treasury Yield
+Status: Live
+Sources: Polygon Community Treasury, https://forum.polygon.technology/; Polygon 2.0 Tokenomics, https://blog.polygon.technology/polygon-2-0-tokenomics/
+
+Revenue History
+
+Tidak diungkap. (Tidak ada laporan pendapatan agregat berkala yang dipublikasikan oleh Polygon Labs / Polygon Technology Pte. Ltd. Data on-chain fee tersedia per transaksi via Polygonscan tapi tidak dikonsolidasikan ke laporan keuangan resmi.)
+Sources: Polygon Blog, https://blog.polygon.technology/; Polygon Forum, https://forum.polygon.technology/
+
+Fundraising Mechanism
+
+VC Funding: Strategic rounds dari Sequoia Capital India, SoftBank Vision Fund 2, Galaxy Digital, Coinbase Ventures, Tiger Global, Republic Capital
+Private Sale: Token allocation untuk investor strategis (detail vesting ada di Phase 6, bukan di sini)
+Public Sale: IEO di Binance Launchpad (April 2019)
+Grant: Ecosystem grants dari Polygon Community Treasury, Polygon Foundation (rencananya)
+DAO Treasury: Polygon Community Council dan Polygon Foundation (dua kamar) mengelola treasury per Polygon 2.0 governance
+Protocol Revenue: Gas fees dari PoS, zkEVM, bridge fees, enterprise service fees
+Bootstrapping: Early development oleh tim pendiri sebelum IEO
+Sources: Binance Research, https://research.binance.com/en/projects/matic-network; Reuters, https://www.reuters.com/technology/polygon-raises-450-mln-sequoia-capital-india-2022-02-07/; Polygon Blog, https://blog.polygon.technology/polygon-2-0-tokenomics/; Polygon Governance Blog, https://blog.polygon.technology/polygon-governance/
+
+Token Sale
+
+Private Sale: Ya (termasuk dalam strategic round 2022 dan investor awal pre-IEO) — detail alokasi dan harga ada di Phase 6
+Public Sale: IEO di Binance Launchpad
+Launchpad: Binance Launchpad
+Auction: Tidak
+Community Sale: Tidak (hanya IEO publik via Binance)
+Tanggal: 2019-04-24 (IEO)
+Status: Completed
+Sources: Binance Research, https://research.binance.com/en/projects/matic-network; CoinMarketCap, https://coinmarketcap.com/currencies/polygon/
+
+Catatan: Phase 6 akan membahas distribusi token, vesting, dan alokasi detail.
+
+Financial Dependencies
+
+VC: Sequoia Capital India, SoftBank Vision Fund 2, Galaxy Digital, Coinbase Ventures, Tiger Global, Republic Capital
+Foundation: Polygon Foundation (rencananya, per Polygon 2.0 governance dua kamar)
+Grant Program: Polygon Community Treasury, Polygon Ecosystem Fund (diumumkan 2027 roadmap, belum terverifikasi realisasi)
+Revenue: Protocol fees (gas PoS, gas zkEVM, bridge), enterprise partnerships
+DAO: Polygon Community Council (governance dua kamar)
+Sources: Reuters, https://www.reuters.com/technology/polygon-raises-450-mln-sequoia-capital-india-2022-02-07/; Polygon Blog, https://blog.polygon.technology/polygon-2-0-tokenomics/; Polygon Governance Blog, https://blog.polygon.technology/polygon-governance/; Polygon Blog Ecosystem Fund, https://blog.polygon.technology/polygon-ecosystem-fund/
+
+Financial Risk
+
+Treasury Concentration: Tidak diungkap (komposisi treasury tidak publik, tidak bisa diverifikasi konsentrasi aset)
+Revenue Decline: Tidak diungkap (tidak ada laporan revenue historis untuk tren)
+Funding Dependency: Tergantung pada strategic VC funding ($450M 2022) dan revenue protocol yang relatif kecil vs treasury size yang tidak diketahui — risiko operasional jika revenue tidak menutupi burn rate tim 400+ orang
+Debt: Tidak diungkap (tidak ada laporan pinjaman atau debt instrument)
+Legal Financial Risk: Regulatory uncertainty pada status token POL (utility vs security) di berbagai yurisdiksi; migrasi MATIC ke POL mengandung risiko hukum dan taksasi bagi holder
+Sources: Polygon Blog Regulatory, https://blog.polygon.technology/; CoinDesk Legal, https://www.coindesk.com/legal/polygon-regulation/; Polygon 2.0 Token Migration, https://blog.polygon.technology/polygon-2-0-token-migration/
+
+Official Financial Resources
+
+Official Blog: https://blog.polygon.technology/
+Transparency Report: tidak diungkap (tidak ada laporan transparansi keuangan berkala publik)
+Treasury Dashboard: tidak diungkap (tidak ada dashboard treasury real-time publik)
+Governance: https://forum.polygon.technology/
+Messari: https://messari.io/asset/polygon
+Token Terminal: https://tokenterminal.com/terminal/projects/polygon
+DefiLlama: https://defillama.com/chain/Polygon
+CryptoRank: https://cryptorank.io/price/polygon
+Whitepaper (Matic Network): https://github.com/maticnetwork/whitepaper
+Polygon 2.0 Tokenomics: https://blog.polygon.technology/polygon-2-0-tokenomics/
+Polygon 2.0 Architecture: https://blog.polygon.technology/polygon-2-0-architecture/
+
+RINGKASAN
+
+Total Funding Raised: $455.000.000+ (terverifikasi: $5M IEO + $450M strategic round 2022; zkEVM funding 2023 dan ZK research funding 2025 jumlah tidak diungkap)
+Funding Rounds: 4 (1 IEO, 1 Strategic besar, 2 strategic/ecosystem tambahan dengan amount tidak diungkap)
+Treasury Status: Tidak diungkap (ukuran, komposisi, dan custodian detail tidak transparan)
+Revenue Sources: Gas fees (PoS, zkEVM), bridge fees, enterprise partnerships, validator commission, CDK/AggLayer service fees (early), ecosystem grants/yield
+Revenue Availability: Tidak diungkap secara agregat; data on-chain fee tersedia per transaksi via Polygonscan / zkEVM Explorer
+
+Open Threads
+
+- Jumlah pasti pendanaan zkEVM 2023 (Sequoia + Coinbase Ventures) tidak diumumkan di blog Polygon atau press release investor — perlu konfirmasi dari pihak berwenang
+- Realisasi "ZK Research Additional Funding" 2025 (EV-068) statusnya Unknown — apakah benar terjadi dan berapa jumlahnya
+- Ukuran treasury saat ini (POL, stablecoin, aset lain) — tidak ada dashboard publik, tidak ada transparency report, hanya disebutkan "treasury allocation" di tokenomics tanpa angka absolut
+- Revenue agregat bulanan/tahunan Polygon Labs / Polygon Technology Pte. Ltd. — perusahaan privat, tidak wajib laporkan, tidak ada leak resmi
+- Detail financial terms enterprise partnerships (Stripe, DraftKings, Flipkart, Deutsche Telekom) — revenue sharing, fee structure, volume commitment tidak diungkap
+- Polygon Ecosystem Fund $100M+ (roadmap 2027, EV-085) — apakah sudah terealisasi, sumber dan pengelolaannya
+- Status Polygon Foundation legal entity dan pemisahan treasury dari Polygon Labs — belum live per 2024, target 2026 (EV-080)
+- Audit keuangan internal/eksternal Polygon Technology Pte. Ltd. — tidak ada laporan audit keuangan publik
+- Burn rate tim 400+ karyawan vs revenue protocol — tidak bisa dihitung tanpa data treasury dan revenue
+- Token sale private allocation detail (harga, vesting, investor) — Phase 6, tapi relevan untuk financial dependency analysis

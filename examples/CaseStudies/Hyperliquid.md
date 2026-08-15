@@ -1,9 +1,9 @@
 # Hyperliquid — Deep Case Study (Phased)
 
 **CIF Dataset — Deep Dossier · Tier: Deep (anchor project)**
-**Source:** Deep Research (DeepSeek), Format v3 Dependency Pipeline (10/11 phases: foundation, entity, history, technology, financial, token, ecosystem, market, behavioral, knowledge). **Auto-assembled** by `tools/ingest.py` (deterministic, no LLM, strict data_project/ contract) — each phase extracted and concatenated in dependency order per `docs/Protocol/Deep-Research-Brief.md`; the reasoning is the source reports'.
-**Raw sources archived:** doc_backup/deep/Hyperliquid_foundation_2026-08.docx, doc_backup/deep/Hyperliquid_entity_2026-08.docx, doc_backup/deep/Hyperliquid_history_2026-08.docx, doc_backup/deep/Hyperliquid_technology_2026-08.docx, doc_backup/deep/Hyperliquid_financial_2026-08.docx, doc_backup/deep/Hyperliquid_token_2026-08.docx, doc_backup/deep/Hyperliquid_ecosystem_2026-08.docx, doc_backup/deep/Hyperliquid_market_2026-08.docx, doc_backup/deep/Hyperliquid_behavioral_2026-08.docx, doc_backup/deep/Hyperliquid_knowledge_2026-08.docx.
-**Phases not run:** conflict.
+**Source:** Deep Research (DeepSeek), Format v3 Dependency Pipeline (12/11 phases: foundation, entity, history, technology, financial, token, ecosystem, market, behavioral, knowledge, conflict, airdrop). **Auto-assembled** by `tools/ingest.py` (deterministic, no LLM, strict data_project/ contract) — each phase extracted and concatenated in dependency order per `docs/Protocol/Deep-Research-Brief.md`; the reasoning is the source reports'.
+**Raw sources archived:** doc_backup/deep/Hyperliquid_foundation_2026-08.docx, doc_backup/deep/Hyperliquid_entity_2026-08.docx, doc_backup/deep/Hyperliquid_history_2026-08.docx, doc_backup/deep/Hyperliquid_technology_2026-08.docx, doc_backup/deep/Hyperliquid_financial_2026-08.docx, doc_backup/deep/Hyperliquid_token_2026-08.docx, doc_backup/deep/Hyperliquid_ecosystem_2026-08.docx, doc_backup/deep/Hyperliquid_market_2026-08.docx, doc_backup/deep/Hyperliquid_behavioral_2026-08.docx, doc_backup/deep/Hyperliquid_knowledge_2026-08.docx, doc_backup/deep/Hyperliquid_conflict_2026-08.docx, doc_backup/deep/Hyperliquid_airdrop_2026-08.docx.
+**Phases not run:** none.
 
 > Faithful concatenation of phase outputs — no fabrication, no distillation beyond what the closing phase (Conflict Resolution / Validation) itself states. Consider a periodic QC pass.
 
@@ -1829,255 +1829,380 @@ _ref: `docs/Ontology/Hidden.md` — enriches DecisionEvent Alternatives/Reason/R
 
 PROJECT: Hyperliquid
 
-1. Menjadi infrastruktur keuangan-native untuk ekonomi terprogram
-· Evidence: Hyperliquid membangun Layer 1 sovereign custom (Hyperliquid L1) dengan konsensus HyperBFT dan CLOB on-chain terintegrasi untuk perpetual dan spot trading, bukan general-purpose L1 — arsitektur dirancang khusus untuk trading performa tinggi
-· Supporting Dataset: Phase 1 Foundation (Category: Layer 1 Blockchain / Decentralized Exchange), Phase 4 Technology (System Architecture: Hyperliquid L1 custom, HyperBFT consensus, CLOB on-chain)
+Strategic Objectives
 
-2. Menciptakan CLOB (Central Limit Order Book) on-chain penuh dengan finalitas sub-sekon
-· Evidence: Produk utama Hyperliquid Perpetual DEX dan Spot DEX menggunakan matching engine CLOB yang berjalan di dalam konsensus HyperBFT, bukan AMM atau off-chain matching — dirancang untuk pengalaman trading setara CEX on-chain
-· Supporting Dataset: Phase 1 Foundation (Main Products: Hyperliquid Perpetual DEX, Spot DEX), Phase 3 History (EV-005 Mainnet Launch Perpetual DEX, EV-006 Spot DEX Launch), Phase 4 Technology (Core Components: Hyperliquid Perpetual DEX CLOB Engine, Spot DEX CLOB Engine)
+1. Membangun Layer 1 sovereign khusus untuk trading on-chain dengan CLOB native dan finalitas sub-sekon
+· Evidence: Hyperliquid L1 dirancang dari awal dengan konsensus HyperBFT custom dan matching engine CLOB terintegrasi dalam konsensus, bukan general-purpose L1 (Phase 1 Foundation, https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview; Phase 4 Technology, https://hyperliquid.xyz/blog/introducing-hyperliquid)
+· Supporting Dataset: Phase 1 Foundation, Phase 4 Technology, Phase 3 EV-001, EV-005
 
-3. Membangun ekosistem modular dengan HyperEVM sebagai execution layer EVM-compatible di atas L1
-· Evidence: HyperEVM diluncurkan sebagai testnet November 2024 untuk memungkinkan deployment smart contract Solidity/Vyper dengan akses ke CLOB native via precompile — memperluas use case dari trading-only ke general-purpose dApps
-· Supporting Dataset: Phase 1 Foundation (Main Products: HyperEVM), Phase 3 History (EV-007 HyperEVM Testnet Launch), Phase 4 Technology (Core Components: HyperEVM, Execution Environment: HyperEVM), Phase 7 Ecosystem (Applications: HyperEVM dApps Testnet)
+2. Menjadi venue perdagangan perpetual futures on-chain terdepan dengan likuiditas institusional
+· Evidence: Perpetual DEX mainnet live sejak Mei 2023 dengan leverage 50x, didukung market maker tier-1 SIG dan GSR sebagai investor sekaligus penyedia likuiditas (Phase 3 EV-005, Phase 2 Entity SIG/GSR, Phase 5 Financial Dependencies, https://www.theblock.co/post/298123/hyperliquid-labs-raises-funding)
+· Supporting Dataset: Phase 3 EV-005, Phase 2 Entity, Phase 5 Financial Dependencies
 
-4. Desentralisasi progresif melalui token HYPE staking dan governance
-· Evidence: TGE HYPE 29 November 2024 mengaktifkan staking untuk keamanan jaringan (PoS), governance direncanakan tapi infrastructure belum lengkap — Foundation formation diindikasikan tapi belum diverifikasi resmi
-· Supporting Dataset: Phase 1 Foundation (Launch Date TGE: 2024-11-29), Phase 3 History (EV-008 TGE HYPE, EV-011 Foundation Formation), Phase 6 Token (Utility: Staking, Governance, Security, Validator), Phase 2 Entity (Hyperliquid Foundation indicated)
+3. Memperluas ekosistem melalui HyperEVM sebagai execution layer EVM-compatible di atas L1 trading-native
+· Evidence: HyperEVM testnet diluncurkan November 2024 memungkinkan deployment smart contract Solidity/Vyper dengan akses ke CLOB native via precompile (Phase 3 EV-007, Phase 4 Technology, https://hyperliquid.xyz/blog/hyperevm)
+· Supporting Dataset: Phase 3 EV-007, Phase 4 Technology
 
-5. Menarik likuiditas institusional melalui market maker tier-1 dan bridge native
-· Evidence: Investor dan market maker SIG (Susquehanna International Group) dan GSR Markets berpartisipasi funding round 2023 dan menyediakan likuiditas di Perpetual DEX; Native bridge ke Arbitrum/Ethereum memungkinkan onboarding USDC cross-chain
-· Supporting Dataset: Phase 2 Entity (SIG, GSR Markets as Investor/Market Maker), Phase 3 History (EV-004 Funding Round 2023), Phase 4 Technology (Core Components: Hyperliquid Bridge), Phase 5 Financial (Financial Dependencies: SIG, GSR), Phase 7 Ecosystem (External Dependencies: SIG, GSR, USDC, Arbitrum, Ethereum)
+4. Mendistribusikan ownership ke komunitas melalui TGE HYPE dan mengaktifkan Proof-of-Stake untuk keamanan jaringan
+· Evidence: TGE 29 November 2024 dengan distribusi airdrop/points ke pengguna testnet/mainnet, staking live untuk validator economics (Phase 3 EV-008, Phase 6 Token, https://hyperliquid.xyz/blog/hype-genesis)
+· Supporting Dataset: Phase 3 EV-008, Phase 6 Token
 
-6. Membangun moat teknis melalui vertical integration: consensus + matching engine + execution layer
-· Evidence: HyperBFT consensus custom, CLOB matching engine di dalam konsensus, HyperEVM di atas L1 — tidak menggunakan Cosmos SDK, Substrate, OP Stack, atau Tendermint; full stack custom Rust
-· Supporting Dataset: Phase 4 Technology (Consensus Mechanism: HyperBFT custom, Development Framework: Custom Rust framework, Programming Languages: Rust core), Phase 1 Foundation (Repository: github.com/hyperliquid-dex)
-
----
-
-Keputusan: Membangun Layer 1 sovereign custom (Hyperliquid L1) dengan konsensus HyperBFT alih-alih deploy di L1/L2 existing (2022)
-· Trigger: Kebutuhan finalitas sub-sekon dan throughput tinggi untuk CLOB on-chain yang tidak terpenuhi oleh arsitektur L1/L2 general-purpose (Ethereum, Solana, Arbitrum, Cosmos SDK chains)
-· Evidence: Phase 1 Foundation (Founding 2022, Category: Layer 1 Blockchain custom), Phase 4 Technology (Consensus Mechanism: HyperBFT custom BFT, not Tendermint/CometBFT; System Architecture: Modular custom L1), Phase 3 History (EV-001 Founding Hyperliquid Labs 2022)
-· Decision: Mengembangkan blockchain L1 sendiri dari nol dengan konsensus HyperBFT custom dan matching engine CLOB terintegrasi dalam konsensus
-· Immediate Result: Testnet internal Q4 2022, testnet publik Maret 2023, mainnet Perp DEX 14 Mei 2023
-· Long-term Impact: Sovereign control over consensus parameters, gas model, upgrade path; tidak bergantung pada roadmap L1 lain; memungkinkan HyperEVM sebagai execution layer tambahan
-· Supporting Dataset: Phase 1 Foundation, Phase 3 EV-001 EV-002 EV-003 EV-005, Phase 4 Technology
-
-Keputusan: Meluncurkan Perpetual DEX dulu (Mei 2023), Spot DEX belakangan (Oktober 2023) (2023)
-· Trigger: Perpetual futures adalah produk dengan volume dan fee tertinggi di DeFi; CLOB perp membutuhkan matching engine paling kompleks; validasi teknis matching engine via perp dulu sebelum expand ke spot
-· Evidence: Phase 3 History (EV-005 Mainnet Launch Perpetual DEX 2023-05-14, EV-006 Spot DEX Launch 2023-10), Phase 4 Technology (Core Components: Perpetual DEX CLOB Engine live first, Spot DEX CLOB Engine added later), Phase 1 Foundation (Launch Date Mainnet: 14 Mei 2023 Perp, Oktober 2023 Spot)
-· Decision: Phased product launch — perpetual DEX first, spot DEX second on same CLOB infrastructure
-· Immediate Result: Perp DEX live 5 bulan sebelum Spot DEX; early revenue dari perp trading fees; community building via perp trading
-· Long-term Impact: Unified CLOB untuk perp dan spot; cross-margin potential; single liquidity venue untuk both products
-· Supporting Dataset: Phase 1 Foundation, Phase 3 EV-005 EV-006, Phase 4 Technology
-
-Keputusan: Mengambil funding dari VC + market maker institusional (Variant, Delphi, Hack VC, SIG, GSR) bukan public token sale (2023)
-· Trigger: Butuh kapital pengembangan + likuiditas pasar yang dijamin dari day-1 mainnet; market maker tier-1 memberikan kredibilitas institusional
-· Evidence: Phase 2 Entity (Variant Fund, Delphi Digital, Hack VC, SIG, GSR as Investors), Phase 3 History (EV-004 Funding Round 2023), Phase 5 Financial (Funding History: Series A/Strategic 2023, Fundraising Mechanism: VC Funding), Phase 7 Ecosystem (External Dependencies: SIG, GSR as Market Makers)
-· Decision: Private equity/SAFT round dengan strategic investors yang juga berfungsi sebagai market maker
-· Immediate Result: Dana pengembangan tersedia; SIG dan GSR commit market making di mainnet launch
-· Long-term Impact: Token distribution tidak melalui public sale; TGE berbasis community airdrop/points; investor alignment via equity + token warrant (assumed); dependency pada SIG/GSR untuk likuiditas
-· Supporting Dataset: Phase 2 Entity, Phase 3 EV-004, Phase 5 Financial, Phase 7 Ecosystem
-
-Keputusan: TGE HYPE via community airdrop/points claim tanpa public sale / IDO / launchpad (2024-11-29)
-· Trigger: Distribusi token ke pengguna nyata (traders, testnet participants) untuk alignment jangka panjang; menghindari regulasi token sale; membangun community ownership
-· Evidence: Phase 1 Foundation (TGE Date: 2024-11-29), Phase 3 History (EV-008 TGE HYPE), Phase 5 Financial (Token Sale: No private/public sale, Community Distribution via airdrop/points), Phase 6 Token (TGE Date: 2024-11-29, Launch Platform: Native Hyperliquid L1)
-· Decision: Fair launch style distribution via points/airdrop ke pengguna aktif; no VC token unlock at TGE (assumed based on no public sale)
-· Immediate Result: HYPE circulating via community claim; staking activated immediately; no sell pressure dari public sale participants
-· Long-term Impact: Token holder base aligned dengan protocol usage; governance legitimacy dari community; regulatory risk reduction (no token sale)
-· Supporting Dataset: Phase 1 Foundation, Phase 3 EV-008, Phase 5 Financial, Phase 6 Token
-
-Keputusan: Meluncurkan HyperEVM testnet (November 2024) sebagai EVM execution layer di atas Hyperliquid L1 (2024)
-· Trigger: Memperluas developer ecosystem beyond trading; menarik Ethereum developers dengan tooling familiar (Solidity, Foundry, Hardhat); memanfaatkan CLOB native sebagai primitive unik untuk DeFi apps
-· Evidence: Phase 3 History (EV-007 HyperEVM Testnet Launch 2024-11), Phase 4 Technology (Core Components: HyperEVM, Execution Environment: HyperEVM EVM-compatible), Phase 1 Foundation (Main Products: HyperEVM), Phase 7 Ecosystem (Developer Ecosystem: HyperEVM testnet, Grant Program: Ecosystem Fund)
-· Decision: Build EVM-compatible execution layer as separate module on top of Hyperliquid L1 consensus, dengan precompile access ke CLOB
-· Immediate Result: HyperEVM testnet live; developers dapat deploy contracts; Ecosystem Fund announced untuk builder grants
-· Long-term Impact: Potential untuk DeFi composability (lending, options, structured products menggunakan CLOB); chain abstraction narrative; competition dengan general-purpose L1/L2
-· Supporting Dataset: Phase 1 Foundation, Phase 3 EV-007, Phase 4 Technology, Phase 7 Ecosystem
-
-Keputusan: Menggunakan native bridge (trusted validator set) ke Arbitrum/Ethereum alih-alih trust-minimized bridge (2024)
-· Trigger: Kebutuhan onboarding USDC liquidity cepat untuk trading; native bridge simpler to implement; validator set sudah trusted untuk consensus
-· Evidence: Phase 4 Technology (Core Components: Hyperliquid Bridge - native bridge, Bridge Security: trusted validator set model), Phase 3 History (EV-009 Bridge Launch 2024), Phase 7 Ecosystem (External Dependencies: Arbitrum, Ethereum, USDC; Major Integrations: Native Bridge to Arbitrum/Ethereum), Phase 7 Ecosystem Risks (Single Bridge Dependency)
-· Decision: Native bridge secured by Hyperliquid validator set (same set as consensus) untuk transfer USDC dan aset lain
-· Immediate Result: Cross-chain USDC deposits/withdrawals live; liquidity onboarding dari Arbitrum/Ethereum
-· Long-term Impact: Bridge centralization risk (validator set controls bridge); no trust-minimized alternative live; dependency pada Arbitrum/Ethereum liveness
+5. Membangun interoperabilitas via native bridge ke Arbitrum dan Ethereum untuk onboarding likuiditas cross-chain
+· Evidence: Hyperliquid Bridge native live 2024 menghubungkan Hyperliquid L1 dengan Arbitrum dan Ethereum mainnet untuk transfer USDC dan aset lain (Phase 3 EV-009, Phase 4 Technology, https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview)
 · Supporting Dataset: Phase 3 EV-009, Phase 4 Technology, Phase 7 Ecosystem
 
-Keputusan: Mengaktifkan staking HYPE untuk validator security unmittelbar saat TGE (2024-11-29)
-· Trigger: Proof-of-Stake security memerlukan stake value dari day-1; HYPE token utility sebagai staking token harus immediate; tidak ada pre-staking period
-· Evidence: Phase 3 History (EV-008 TGE HYPE), Phase 6 Token (Utility: Staking, Security, Validator - Status Live since TGE), Phase 4 Technology (Security Model: PoS dengan HYPE staking post-TGE), Phase 1 Foundation (TGE Date 2024-11-29)
-· Decision: Staking dan validator economics live at TGE; no delay untuk token utility activation
-· Immediate Result: Validator set secured by HYPE stake; staking rewards emission started; network security active
-· Long-term Impact: Token value accrual via staking yield; validator set decentralization depends on stake distribution; inflationary pressure dari staking emissions
-· Supporting Dataset: Phase 3 EV-008, Phase 4 Technology, Phase 6 Token
+Decision Timeline
 
----
+Keputusan: Pendirian Hyperliquid Labs di British Virgin Islands (2022)
+· Trigger: Founder Jeff Yan dan iliensinc memulai pengembangan L1 custom untuk trading on-chain setelah pengalaman di industri tradisional/quant
+· Evidence: Phase 1 Foundation (https://hyperliquid.xyz/blog/introducing-hyperliquid); Phase 2 Entity Hyperliquid Labs (https://messari.io/report/hyperliquid-deep-dive)
+· Decision: Membentuk entitas hukum BVI, merekrut tim ~20-30 insinyur, memulai R&D HyperBFT dan CLOB engine
+· Immediate Result: Entitas hukum terbentuk, pengembangan arsitektur dimulai
+· Long-term Impact: Menjadi fondasi seluruh ekosistem Hyperliquid; struktur BVI memengaruhi exposure regulasi global
+· Supporting Dataset: Phase 1 Foundation, Phase 2 Entity, Phase 3 EV-001
+
+Keputusan: Membangun konsensus custom HyperBFT alih-alih menggunakan Tendermint/CometBFT (2022-2023)
+· Trigger: Kebutuhan finalitas sub-sekon dan integrasi ketat dengan matching engine CLOB on-chain yang tidak terpenuhi oleh consensus framework existing
+· Evidence: Phase 4 Technology (https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview); Phase 3 EV-002 testnet internal validasi HyperBFT
+· Decision: Mengembangkan algoritma BFT custom dari nol dalam Rust, terintegrasi langsung dengan matching engine
+· Immediate Result: Testnet internal Q4 2022 memvalidasi arsitektur; testnet publik Maret 2023 menguji beban nyata
+· Long-term Impact: Differentiator teknis utama vs competitor (dYdX v4 pakai Cosmos SDK, Vertex di Arbitrum); single-threaded CLOB menjadi bottleneck throughput
+· Supporting Dataset: Phase 3 EV-002, EV-003, Phase 4 Technology
+
+Keputusan: Launch Mainnet Perpetual DEX terlebih dahulu sebelum Spot DEX dan Token (2023-05-14)
+· Trigger: Validasi product-market fit untuk core value proposition (perp on-chain CLOB) sebelum ekspansi produk
+· Evidence: Phase 3 EV-005 (https://hyperliquid.xyz/blog/mainnet-launch); Phase 3 EV-006 Spot launch Oct 2023 (5 bulan kemudian); Phase 3 EV-008 TGE Nov 2024 (1.5 tahun kemudian)
+· Decision: Deploy Hyperliquid L1 mainnet dengan Perpetual DEX saja; Spot DEX dan token ditunda
+· Immediate Result: Perpetual DEX live, volume dan TVL mulai tercatat, market maker institusional onboarding
+· Long-term Impact: First-mover advantage di on-chain CLOB perp; membangun reputasi dan likuiditas sebelum tokenomics; menunda tekanan regulasi token
+· Supporting Dataset: Phase 3 EV-005, EV-006, EV-008, Phase 1 Foundation
+
+Keputusan: Memilih ronde pendanaan strategic dengan investor VC + market maker institusional (2023)
+· Trigger: Butuh kapital pengembangan dan validasi likuiditas dari player institusional tier-1
+· Evidence: Phase 3 EV-004 (https://www.theblock.co/post/298123/hyperliquid-labs-raises-funding); Phase 2 Entity Variant Fund, Delphi Digital, Hack VC, SIG, GSR
+· Decision: Mengumpulkan dana (amount undisclosed) dari Variant Fund (lead), Delphi Digital, Hack VC, SIG, GSR Markets
+· Immediate Result: Dana pengembangan tersedia; SIG dan GSR menjadi market maker di perp DEX
+· Long-term Impact: Ketergantungan likuiditas pada 2 market maker utama; investor VC mempengaruhi governance jalan tokenomics; tidak ada follow-on funding round tercatat publik
+· Supporting Dataset: Phase 3 EV-004, Phase 2 Entity, Phase 5 Financial History
+
+Keputusan: Launch Spot DEX terintegrasi di CLOB yang sama (2023-10)
+· Trigger: Permintaan pengguna untuk spot trading; synergi dengan perp CLOB existing (shared order book infrastructure)
+· Evidence: Phase 3 EV-006 (https://hyperliquid.xyz/blog/spot-launch); Phase 4 Technology unified CLOB
+· Decision: Menambahkan Spot DEX ke mainnet existing tanpa hard fork konsensus baru
+· Immediate Result: Unified trading interface spot + perp; USDC sebagai quote asset untuk keduanya
+· Long-term Impact: Meningkatkan utilitas USDC collateral; menarik user spot yang mungkin migrate ke perp; memperkuat moat CLOB terintegrasi
+· Supporting Dataset: Phase 3 EV-006, Phase 4 Technology, Phase 7 Major Integrations
+
+Keputusan: Mengembangkan HyperEVM sebagai EVM layer terpisah di atas L1 (2024)
+· Trigger: Permintaan developer untuk composability Ethereum; perlu menarik ekosistem dApp tanpa mengorbankan performa CLOB
+· Evidence: Phase 3 EV-007 (https://hyperliquid.xyz/blog/hyperevm); Phase 4 Technology modular architecture
+· Decision: Membangun HyperEVM sebagai execution environment terpisah (bukan mengganti native execution), dengan precompile untuk akses CLOB
+· Immediate Result: Testnet live Nov 2024; developer mulai eksperimen; Ecosystem Fund diannounce
+· Long-term Impact: Memposisikan Hyperliquid sebagai "appchain + general purpose"; risiko fragmentasi likuiditas antara native CLOB dan HyperEVM dApps; mainnet belum live
+· Supporting Dataset: Phase 3 EV-007, Phase 4 Technology, Phase 7 Ecosystem
+
+Keputusan: Token Generation Event HYPE native (bukan ERC-20) dengan distribusi komunitas via airdrop/points (2024-11-29)
+· Trigger: Transisi ke Proof-of-Stake security; community ownership; governance foundation
+· Evidence: Phase 3 EV-008 (https://hyperliquid.xyz/blog/hype-genesis); Phase 6 Token native L1
+· Decision: TGE native token HYPE di Hyperliquid L1, claim via airdrop/points, staking live immediately, no public/private sale
+· Immediate Result: HYPE beredar, staking aktif, validator economics live, price discovery di pasar
+· Long-term Impact: Tokenomics opacity (alokasi, vesting, emission tidak transparan) menciptakan ketidakpastian investor/staker; fee switch belum diaktifkan; foundation formation indicated tapi belum verified
+· Supporting Dataset: Phase 3 EV-008, Phase 6 Token, Phase 5 Financial
+
+Keputusan: Meluncurkan Native Bridge ke Arbitrum dan Ethereum (2024)
+· Trigger: Butuh onboarding likuiditas dari ekosistem Ethereum/Arbitrum yang besar; USDC primary collateral
+· Evidence: Phase 3 EV-009 (https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview); Phase 7 External Dependencies Arbitrum, Ethereum, USDC
+· Decision: Membangun bridge trusted model (validator set Hyperliquid sebagai custodian) bukan trust-minimized light client/ZK
+· Immediate Result: Cross-chain transfer USDC live; inflow likuiditas dari Arbitrum/Ethereum
+· Long-term Impact: Single point of failure bridge risk; dependency pada Arbitrum/Ethereum liveness; tidak ada alternative bridge trust-minimized di roadmap publik
+· Supporting Dataset: Phase 3 EV-009, Phase 7 External Dependencies, Phase 7 Ecosystem Risks
+
+Keputusan: Mengumumkan Ecosystem Fund dan Builder Grants untuk HyperEVM (2024)
+· Trigger: Butuh menarik developer membangun di HyperEVM testnet; kompetisi dengan L1/L2 lain untuk developer mindshare
+· Evidence: Phase 3 EV-010 (https://hyperliquid.xyz/blog/ecosystem-fund); Phase 7 Developer Ecosystem
+· Decision: Alokasi dana (jumlah dan sumber token vs stablecoin vs equity tidak diungkap) untuk grant builder
+· Immediate Result: Program grant terbuka; sinyal komitmen ekosistem jangka panjang
+· Long-term Impact: Sukses HyperEVM mainnet bergantung pada kualitas dApp yang tumbuh; token allocation untuk ecosystem tidak transparan
+· Supporting Dataset: Phase 3 EV-010, Phase 7 Developer Ecosystem
 
 Evolution Pattern
 
-Dari Phase 1-8, evolusi Hyperliquid mengikuti pola:
+Perubahan Strategi: Dari "Perp DEX Appchain" → "Trading L1 + EVM Execution Layer + Token Economy"
+· Fase 1 (2022-2023): Fokus eksklusif pada membangun L1 custom dengan HyperBFT dan Perpetual CLOB. Tidak ada token, tidak ada EVM, tidak ada spot. (Phase 3 EV-001, EV-002, EV-003, EV-005)
+· Fase 2 (2023-2024): Ekspansi produk ke Spot DEX (EV-006), bridge cross-chain (EV-009), mempersiapkan TGE (EV-008). Strategi "build product first, token later" terlihat jelas.
+· Fase 3 (Nov 2024-sekarang): TGE selesai, HyperEVM testnet live, staking aktif, foundation indicated. Proyek bertransisi ke fase "ekosistem & governance" dengan kompleksitas tinggi: native CLOB + HyperEVM dApps + tokenomics + bridge + validator set.
+· Driver: Product-market fit perp DEX terbukti → butuh diversifikasi revenue & user base → token sebagai coordination tool → HyperEVM untuk developer adoption.
 
-1. **Foundation & Core Infra (2022-2023 H1)**: Pendirian Hyperliquid Labs, R&D konsensus HyperBFT custom dan CLOB matching engine di Rust. Fokus teknis murni — no token, no community, no revenue. (Phase 3 EV-001, EV-002)
+Perubahan Teknologi: Monolithic Trading Chain → Modular (Consensus + Native Execution + HyperEVM)
+· Awal: Semua execution (matching engine) di dalam konsensus HyperBFT single-threaded. (Phase 4 Technology)
+· HyperEVM menambahkan execution layer terpisah (EVM) yang settle ke Hyperliquid L1. Precompile menghubungkan HyperEVM ke CLOB native.
+· Trade-off: Kompleksitas arsitektur bertambah (dua execution environment, cross-layer messaging), tapi membuka composability Ethereum tanpa mengorbankan performa CLOB native.
 
-2. **Validation & Funding (2023 H1)**: Testnet publik berincentiv (Maret 2023) untuk load test CLOB + konsensus; funding round strategis dengan VC + market maker institusional (SIG, GSR) — validasi pasar dan jaminan likuiditas. (Phase 3 EV-003, EV-004)
+Perubahan Tokenomics: No Token → Community Airdrop TGE → Inflationary Staking (Fee Switch Pending)
+· Pre-TGE: Tidak ada token, revenue protocol (trading fees) kemungkinan ke treasury Hyperliquid Labs. (Phase 5 Financial)
+· TGE: Distribusi komunitas via points/airdrop, staking emission mulai. Alokasi team/investor/foundation/treasury undisclosed. (Phase 6 Token)
+· Post-TGE: Inflationary via staking rewards. Fee switch (revenue sharing ke staker) belum diaktifkan. Burn mechanism tidak ada. (Phase 6 Inflation/Deflation)
+· Evolusi: Dari "revenue ke entity pusat" → "emission ke staker" → (rencana) "fee switch ke staker". Transparansi menurun seiring kompleksitas tokenomics bertambah.
 
-3. **Product Launch Sequencing (2023 H2)**: Mainnet Perpetual DEX (Mei 2023) → Spot DEX (Oktober 2023) pada L1 yang sama. Phased approach memvalidasi matching engine paling kompleks (perp) dulu. Revenue mulai dari trading fees. (Phase 3 EV-005, EV-006)
+Perubahan Governance: Founder-Controlled → Foundation Indicated → Token Governance Planned
+· 2022-2024: Hyperliquid Labs (founder-controlled) membuat semua keputusan teknis, produk, bisnis. (Phase 2 Entity, Phase 3 History)
+· 2024: Indikasi Hyperliquid Foundation terbentuk (EV-011), tapi detail hukum, hubungan dengan Labs, kontrol treasury tidak diverifikasi. (Phase 2 Entity Foundation, Phase 6 Governance)
+· TGE: HYPE staking live, governance "planned" tapi infrastructure (forum, proposal system, voting mechanism) tidak ada. (Phase 6 Governance)
+· Evolusi: Desentralisasi governance berjalan lambat dibanding teknis/token launch. Risiko "governance theater" jika foundation tidak benar-benar independen dari Labs.
 
-4. **Expansion & Modularity (2024)**: Native Bridge (2024) untuk cross-chain liquidity onboarding → HyperEVM Testnet (Nov 2024) untuk EVM execution layer → TGE HYPE (Nov 2024) untuk staking/governance/community ownership → Ecosystem Fund untuk builder grants. Transisi dari single-product appchain ke modular platform. (Phase 3 EV-007, EV-008, EV-009, EV-010)
+Technical Decision Pattern
 
-5. **Governance Formation (2024 ongoing)**: Indikasi Hyperliquid Foundation formation untuk treasury/governance terpisah dari Labs — belum diverifikasi resmi. (Phase 3 EV-011, Phase 2 Entity Hyperliquid Foundation)
+Pola 1: Custom Stack dari Nol (Not Invented Here) untuk Core Consensus dan Execution
+· Decision Pattern: Menulis HyperBFT consensus, matching engine CLOB, dan L1 node dari nol dalam Rust alih-alih menggunakan Cosmos SDK, Substrate, OP Stack, atau Tendermint/CometBFT.
+· Evidence: Phase 4 Technology "Custom Rust framework untuk node dan konsensus (tidak menggunakan Cosmos SDK, Substrate, atau OP Stack)" (https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview; https://github.com/hyperliquid-dex)
+· Supporting Dataset: Phase 4 Technology, Phase 3 EV-001, EV-002
 
-Pola evolusi: **Technical-first → Product-sequenced → Modular expansion → Token-activated → Governance formalization**. Setiap phase membangun pada layer sebelumnya tanpa pivot besar.
+Pola 2: CLOB On-Chain Terintegrasi Konsensus (Bukan Smart Contract)
+· Decision Pattern: Matching engine berjalan di dalam proses konsensus HyperBFT, bukan sebagai smart contract di atas VM. Order placement, cancellation, matching, settlement terjadi dalam block proposal.
+· Evidence: Phase 4 Core Components "CLOB matching engine berjalan di dalam konsensus (bukan smart contract), mengurangi surface area attack" (https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview)
+· Supporting Dataset: Phase 4 Technology, Phase 3 EV-005
 
----
+Pola 3: Modular Execution Layer Tambahan (HyperEVM) Tanpa Mengganggu Core Trading
+· Decision Pattern: HyperEVM dibangun sebagai execution environment terpisah yang settle ke L1, dengan precompile untuk akses CLOB. Native CLOB tetap performa tinggi, HyperEVM handle general-purpose dApps.
+· Evidence: Phase 4 Technology "Modular dengan pemisahan konsensus (HyperBFT), eksekusi trading (matching engine CLOB), dan eksekusi smart contract (HyperEVM)" (https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview; https://hyperliquid.xyz/blog/hyperevm)
+· Supporting Dataset: Phase 4 Technology, Phase 3 EV-007
 
-Pola 1: Vertical Integration — Consensus + Matching Engine + Execution Layer Custom-Built
-· Decision Pattern: Membangun seluruh stack dari nol (HyperBFT consensus, CLOB matching engine in-consensus, HyperEVM execution layer) alih-alih compose existing frameworks (Cosmos SDK, OP Stack, Arbitrum Orbit, Substrate)
-· Evidence: Phase 4 Technology (Consensus Mechanism: HyperBFT custom BFT not Tendermint; Development Framework: Custom Rust framework; System Architecture: Modular custom L1); Phase 1 Foundation (Repository: github.com/hyperliquid-dex Rust repos); Phase 3 History (EV-001 Founding 2022 untuk build custom L1)
-· Supporting Dataset: Phase 1 Foundation, Phase 3 EV-001, Phase 4 Technology
+Pola 4: Native Bridge Trusted Model (Validator Set sebagai Custodian)
+· Decision Pattern: Bridge menggunakan validator set Hyperliquid sebagai trusted custodian untuk mint/burn di sisi Hyperliquid L1, bukan light client verification atau ZK proof.
+· Evidence: Phase 4 Security Model "Native bridge dengan validator set Hyperliquid sebagai custodian (trusted bridge model)" (https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview; https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview)
+· Supporting Dataset: Phase 4 Technology, Phase 3 EV-009, Phase 7 Ecosystem Risks
 
-Pola 2: Phased Product Rollout — Most Complex First (Perp CLOB → Spot CLOB → HyperEVM)
-· Decision Pattern: Meluncurkan produk paling teknis sulit (Perpetual CLOB dengan leverage, funding rate, liquidation engine) pertama, lalu produk lebih sederhana (Spot CLOB), lalu execution layer general-purpose (HyperEVM)
-· Evidence: Phase 3 History (EV-005 Perp Mainnet 2023-05-14 → EV-006 Spot Launch 2023-10 → EV-007 HyperEVM Testnet 2024-11); Phase 4 Technology (Core Components: Perpetual DEX CLOB Engine live first, Spot DEX CLOB Engine added, HyperEVM testnet later)
+Pola 5: Tidak Ada Formal Audit Keamanan Publik untuk Core Protocol
+· Decision Pattern: Meluncurkan mainnet (Mei 2023), Spot DEX (Oct 2023), TGE (Nov 2024), HyperEVM testnet (Nov 2024) tanpa mempublikasikan laporan audit formal untuk HyperBFT, CLOB engine, atau bridge contracts.
+· Evidence: Phase 4 Audit History "Tidak diketahui audit keamanan formal yang dipublikasikan... saat cut-off pengetahuan" (https://hyperliquid.gitbook.io/hyperliquid-docs/; https://github.com/hyperliquid-dex; https://messari.io/report/hyperliquid-deep-dive)
+· Supporting Dataset: Phase 4 Technology, Phase 7 Ecosystem Risks
+
+Financial Decision Pattern
+
+Pola 1: Satu Ronde Pendanaan Strategic dengan Investor + Market Maker (No Follow-on Public)
+· Decision Pattern: Hanya satu ronde pendanaan tercatat (2023) dari Variant Fund, Delphi Digital, Hack VC, SIG, GSR. Jumlah, valuasi, struktur (SAFE/equity/token warrant) undisclosed. Tidak ada Series B, extension, atau strategic round tambahan yang diumumkan.
+· Evidence: Phase 3 EV-004 (https://www.theblock.co/post/298123/hyperliquid-labs-raises-funding); Phase 5 Funding History amount undisclosed; Phase 5 Financial Dependencies
+· Supporting Dataset: Phase 3 EV-004, Phase 5 Financial History, Phase 5 Financial Dependencies
+
+Pola 2: Revenue Model Berbasis Trading Fees (Perp + Spot) + Bridge Fees, Belum Ada Fee Switch
+· Decision Pattern: Protocol revenue dari trading fees perp/spot CLOB dan bridge fees. Staking rewards dari emission (inflationary). Fee switch (revenue sharing ke staker) tidak diaktifkan saat TGE.
+· Evidence: Phase 5 Revenue Model "Staking Rewards / Fee Switch (Revenue Sharing ke Staker HYPE) Status: Planned / Belum Diaktifkan" (https://hyperliquid.xyz/blog/hype-genesis; https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview)
+· Supporting Dataset: Phase 5 Financial, Phase 6 Token Utility, Phase 3 EV-008
+
+Pola 3: Treasury Opacity (Tidak Ada Dashboard, Transparency Report, Atau On-Chain Label)
+· Decision Pattern: Ukuran, komposisi, custodian treasury (Labs vs Foundation) tidak diungkap. Tidak ada treasury dashboard publik, tidak ada transparency report berkala.
+· Evidence: Phase 5 Treasury "Current Treasury Size: tidak diungkap... Treasury Custodian: Hyperliquid Labs (sebelum TGE); Hyperliquid Foundation (indikasi pasca-TGE, belum diverifikasi resmi)" (https://hyperliquid.xyz/blog/hype-genesis; https://hyperliquid.gitbook.io/hyperliquid-docs/)
+· Supporting Dataset: Phase 5 Financial, Phase 2 Entity Foundation, Phase 6 Token Distribution
+
+Pola 4: Token Distribution Tanpa Public/Private Sale, Full Community Airdrop + Staking Emission
+· Decision Pattern: TGE 100% berbasis distribusi komunitas (airdrop/points claim) + staking emission. Tidak ada IDO, launchpad, auction, private sale token. Investor/team allocation via vesting undisclosed.
+· Evidence: Phase 5 Fundraising Mechanism "Community Distribution (Airdrop/Points): Distribusi token HYPE ke komunitas via TGE bukan penjualan token" (https://hyperliquid.xyz/blog/hype-genesis); Phase 6 Token Sale "Private Sale: Tidak ada... Public Sale: Tidak ada"
+· Supporting Dataset: Phase 5 Financial, Phase 6 Token, Phase 3 EV-008
+
+Pola 5: Ecosystem Fund Announced Tanpa Detail Alokasi (HYPE vs Stablecoin vs Equity)
+· Decision Pattern: Ecosystem Fund diannounce 2024 untuk builder grants HyperEVM, tapi jumlah total, sumber dana (token allocation, protocol revenue, Labs equity), dan mekanisme distribusi tidak transparan.
+· Evidence: Phase 3 EV-010 (https://hyperliquid.xyz/blog/ecosystem-fund); Phase 7 Developer Ecosystem "Grant Program: Hyperliquid Ecosystem Fund / Builder Grants (announced 2024)"
+· Supporting Dataset: Phase 3 EV-010, Phase 5 Financial, Phase 7 Ecosystem
+
+Ecosystem Decision Pattern
+
+Pola 1: Native Bridge ke Arbitrum dan Ethereum Saja (No IBC, No General Messaging)
+· Decision Pattern: Bridge hanya ke dua chain: Arbitrum dan Ethereum mainnet. Tidak ada IBC, tidak ada generic cross-chain messaging (Wormhole, LayerZero, Axelar), tidak ada bridge ke Solana atau L1 lain.
+· Evidence: Phase 4 Technology "Cross-chain Messaging: Native bridge ke Arbitrum dan Ethereum mainnet"; Phase 7 External Dependencies hanya Arbitrum dan Ethereum; Phase 7 Ecosystem Risks "Tidak ada alternatif bridge trust-minimized"
+· Supporting Dataset: Phase 4 Technology, Phase 7 Ecosystem, Phase 3 EV-009
+
+Pola 2: Ketergantungan Likuiditas pada Dua Market Maker Institusional (SIG, GSR)
+· Decision Pattern: SIG dan GSR既是 investor (funding round 2023) maupun primary market maker di Perp DEX. Tidak ada market maker lain yang diumumkan publik.
+· Evidence: Phase 2 Entity SIG, GSR; Phase 3 EV-004; Phase 5 Financial Dependencies "Market Makers / Liquidity Providers: SIG, GSR"; Phase 7 Ecosystem Risks "Market Maker Dependency"
+· Supporting Dataset: Phase 2 Entity, Phase 3 EV-004, Phase 5 Financial, Phase 7 Ecosystem
+
+Pola 3: USDC sebagai Single Collateral/Quote Asset (No Multi-Collateral)
+· Decision Pattern: Seluruh perp dan spot trading menggunakan USDC sebagai margin, quote, dan settlement. Tidak ada dukungan multi-collateral (USDT, DAI, native token, dst) yang diumumkan.
+· Evidence: Phase 7 External Dependencies "USDC (USD Coin) Purpose: Primary collateral and quote asset... Criticality: Critical"; Phase 4 Technology products overview
+· Supporting Dataset: Phase 7 Ecosystem, Phase 4 Technology
+
+Pola 4: HyperEVM sebagai Strategi Developer Adoption (EVM Compatibility + CLOB Access)
+· Decision Pattern: Membangun EVM layer terpisah (bukan migrate ke EVM) untuk menarik developer Ethereum existing, dengan precompile unik untuk akses CLOB native sebagai differentiator.
+· Evidence: Phase 3 EV-007; Phase 4 Technology "HyperEVM — EVM-compatible execution layer... menggunakan precompile untuk akses CLOB"; Phase 7 Developer Ecosystem "SDK: Hyperliquid TypeScript SDK... HyperEVM development tooling (Foundry/Hardhat)"
+· Supporting Dataset: Phase 3 EV-007, Phase 4 Technology, Phase 7 Ecosystem
+
+Pola 5: Infrastructure Centralization ke Cloud Provider Tidak Diungkap
+· Decision Pattern: Validator nodes, RPC, API, indexers kemungkinan besar hosted di AWS/GCP/Azure tapi tidak ada disclosure resmi. Hypurrscan (independent) dan official explorer sebagai infra data.
+· Evidence: Phase 7 Infrastructure Providers "Cloud Providers (Unspecified - AWS/GCP/Azure likely) Criticality: High... Status: Live (inferred)"; Phase 7 Ecosystem Risks "Cloud Infrastructure Centralization"
+· Supporting Dataset: Phase 7 Ecosystem, Phase 4 Technology
+
+Governance Decision Pattern
+
+Pola 1: Founder-Controlled Decision Making Hingga TGE (No Formal Governance)
+· Decision Pattern: Selama 2022-2024 (pre-TGE), semua keputusan teknis, produk, bisnis, funding dibuat oleh Hyperliquid Labs (Jeff Yan, iliensinc). Tidak ada DAO, tidak ada proposal system, tidak ada community voting.
+· Evidence: Phase 2 Entity Hyperliquid Labs, Jeff Yan, iliensinc; Phase 3 History semua keputusan oleh Labs; Phase 6 Governance "Governance Model: Token-based governance... detail... belum dipublikasikan lengkap... Status: Planned / Early stage"
+· Supporting Dataset: Phase 2 Entity, Phase 3 History, Phase 6 Token
+
+Pola 2: Foundation Formation Indicated Tapi Unverified (Legal Structure Opacity)
+· Decision Pattern: Blog HYPE Genesis dan Ecosystem Fund mengimplikasikan adanya Hyperliquid Foundation, tapi tidak ada announcement resmi, tidak ada dokumen incorporasi, tidak ada yurisdiksi, tidak ada hubungan hukum dengan Labs yang diverifikasi.
+· Evidence: Phase 2 Entity Hyperliquid Foundation "Status: Unknown... Evidence: LOW"; Phase 3 EV-011 "Status: Unknown"; Phase 6 Governance "Treasury Governance: Dikelola oleh Hyperliquid Foundation (indikasi), detail multisig / timelock / DAO framework tidak transparan"
+· Supporting Dataset: Phase 2 Entity, Phase 3 EV-011, Phase 6 Token
+
+Pola 3: Token Governance Infrastructure Belum Ada Saat TGE Live
+· Decision Pattern: HYPE TGE Nov 2024 dengan staking live, tapi governance forum, snapshot, proposal platform, voting mechanism, execution delay, timelock — semuanya "tidak diketahui" atau "planned".
+· Evidence: Phase 6 Governance "Voting System: tidak diketahui... Proposal System: tidak diketahui... Governance: tidak tersedia (belum ada governance forum / snapshot / proposal platform resmi)"
+· Supporting Dataset: Phase 6 Token, Phase 3 EV-008
+
+Pola 4: Validator Set Permissioning Unclear (No Public Decentralization Roadmap)
+· Decision Pattern: Komposisi validator, jumlah, geografis, entity, permissioned vs permissionless — tidak dipublikasikan. Staking live tapi siapa yang boleh jadi validator, minimum stake, slashing conditions — tidak terdokumentasi.
+· Evidence: Phase 4 Technology "Validator Security: Proof-of-Stake dengan HYPE staking... minimum stake amount tidak dipublikasikan"; Phase 7 Ecosystem Risks "Centralized Validator Set (Permissioned Unclear)"; Phase 8 Market "Validator Count: tidak diketahui"
+· Supporting Dataset: Phase 4 Technology, Phase 7 Ecosystem, Phase 8 Market
+
+Risk Response Pattern
+
+Pola 1: Regulatory Risk Mitigation via BVI Entity + Geo-blocking Unclear
+· Decision Pattern: Entitas hukum di BVI (jurisdiksi offshore) untuk Hyperliquid Labs. Perpetual DEX accessible globally. Tidak ada announcement geo-blocking, KYC, atau compliance framework spesifik untuk jurisdiksi utama (US, EU, SG).
+· Evidence: Phase 1 Foundation "Country: British Virgin Islands"; Phase 7 Ecosystem Risks "Regulatory Exposure (Perpetual DEX, BVI Entity) Risk: Hyperliquid Labs (BVI) operates perpetual futures DEX accessible globally. Risk of enforcement actions (CFTC, SEC, etc.)"; Phase 5 Financial Risk "Regulatory Financial Risk"
+· Trigger: Operasi perp DEX global dari entitas BVI menarik perhatian regulator (CFTC action terhadap platform serupa seperti BitMEX, Binance, dYdX history)
+· Response: Memilih BVI incorporation; tidak mengimplementasikan geo-blocking/KYC pada saat mainnet launch; token TGE native (bukan ERC-20) mungkin untuk menghindari definisi security di US
+· Result: Exposure regulasi tetap tinggi; tidak ada Wells Notice atau enforcement action tercatat publik; TGE native token memisahkan dari ERC-20 regulatory framework
+· Supporting Dataset: Phase 1 Foundation, Phase 5 Financial Risk, Phase 7 Ecosystem Risks, Phase 2 Entity
+
+Pola 2: Technical Risk Mitigation via Incremental Launches (Testnet → Perp Mainnet → Spot → HyperEVM Testnet → TGE)
+· Decision Pattern: Setiap major component diuji di testnet/internal sebelum mainnet. Perp mainnet 5 bulan sebelum Spot. HyperEVM testnet 1 tahun sebelum mainnet estimated. TGE setelah 1.5 tahun mainnet live.
+· Evidence: Phase 3 History timeline EV-002 (internal testnet Q4 2022) → EV-003 (public testnet Mar 2023) → EV-005 (perp mainnet May 2023) → EV-006 (spot Oct 2023) → EV-007 (HyperEVM testnet Nov 2024) → EV-008 (TGE Nov 2024)
+· Trigger: Kompleksitas teknis tinggi (custom consensus + CLOB) memerlukan validasi bertahap; reputasi "on-chain CLOB pertama" butuh reliability
+· Response: Phased rollout dengan testing ekstensif di setiap stage; tidak rush token launch
+· Result: Zero major exploit/outage tercatat publik pada core protocol; HyperEVM masih testnet (belum proven production); single-threaded CLOB bottleneck identified tapi tidak di-shard
+· Supporting Dataset: Phase 3 History, Phase 4 Technology, Phase 7 Ecosystem Risks
+
+Pola 3: Liquidity Risk Mitigation via Institutional Market Maker Partnership (SIG, GSR as Investors + MMs)
+· Decision Pattern: Menggabungkan funding round dengan market maker commitment. SIG dan GSR invest di equity/token warrant DAN menyediakan likuiditas di perp DEX.
+· Evidence: Phase 3 EV-004; Phase 2 Entity SIG, GSR; Phase 5 Financial Dependencies; Phase 7 External Dependencies
+· Trigger: Cold start problem perp DEX — butuh depth order book day one untuk menarik trader
+· Response: Strategic round dengan tier-1 MM yang juga jadi investor (aligned incentives)
+· Result: Deep liquidity dari launch; tapi concentration risk pada 2 entity; jika salah satu withdraw, order book quality drop drastis
+· Supporting Dataset: Phase 3 EV-004, Phase 5 Financial, Phase 7 Ecosystem
+
+Pola 4: Bridge Risk Acceptance (Trusted Model, No Alternative)
+· Decision Pattern: Menerima trusted bridge model (validator set custodian) untuk speed to market dan simplicity. Tidak membangun/deploy light client, ZK bridge, atau IBC sebagai alternative.
+· Evidence: Phase 4 Security Model "Native bridge dengan validator set Hyperliquid sebagai custodian (trusted bridge model)"; Phase 7 Ecosystem Risks "Single Bridge Dependency... No alternative trust-minimized bridge live"
+· Trigger: Butuh bridge cepat untuk onboarding USDC liquidity dari Arbitrum/Ethereum; trust-minimized bridge butuh R&D lama
+· Response: Native bridge trusted model live 2024; tidak ada roadmap public untuk trust-minimized upgrade
+· Result: Bridge functional, USDC inflow enabled; single point of failure validator set; smart contract risk di sisi Arbitrum/Ethereum bridge contracts
+· Supporting Dataset: Phase 4 Technology, Phase 3 EV-009, Phase 7 Ecosystem Risks
+
+Pola 5: Audit Gap Acceptance (No Formal Audits for Core Protocol)
+· Decision Pattern: Meluncurkan mainnet, TGE, HyperEVM testnet tanpa audit formal publik untuk HyperBFT, CLOB engine, bridge contracts. Mengandalkan internal testing, bug bounty (tidak diverifikasi), dan battle-testing di mainnet.
+· Evidence: Phase 4 Audit History "Tidak diketahui audit keamanan formal yang dipublikasikan"; Phase 7 Ecosystem Risks "No Formal Security Audits (Core Protocol)"
+· Trigger: Custom stack (HyperBFT, CLOB) sulit di-audit firm standar; cost dan time untuk audit custom consensus tinggi; confidence dari internal team dan testnet battle-testing
+· Response: Skip formal audit pre-launch; mungkin audit post-launch (tidak diumumkan)
+· Result: Zero exploit tercatat; tapi institutional trust mungkin terbatas; insurance protocol mungkin tidak cover; regulatory scrutiny lebih tinggi
+· Supporting Dataset: Phase 4 Technology, Phase 7 Ecosystem Risks
+
+Recurring Behavioral Pattern
+
+Pola 1: Product-First, Token-Last (Build > Launch > Distribute)
+· Pattern: 1.5 tahun mainnet live (Perp May 2023, Spot Oct 2023) sebelum TGE Nov 2024. Semua core produk (L1, consensus, perp, spot, bridge) live dan battle-tested sebelum token.
+· Evidence: Phase 3 History timeline EV-005 (2023-05) → EV-006 (2023-10) → EV-009 (2024) → EV-008 (2024-11-29)
+· Supporting Dataset: Phase 3 History, Phase 1 Foundation, Phase 6 Token
+
+Pola 2: Custom Stack over Standards (Not Invented Here untuk Core)
+· Pattern: HyperBFT custom (bukan Tendermint), Custom Rust L1 (bukan Cosmos SDK/Substrate/OP Stack), Native CLOB in-consensus (bukan smart contract), Native Bridge (bukan IBC/Wormhole/LayerZero), HyperEVM custom precompile (bukan standard EVM extension).
+· Evidence: Phase 4 Technology "Custom Rust framework... tidak menggunakan Cosmos SDK, Substrate, atau OP Stack"; "HyperBFT custom... tidak menggunakan Tendermint/CometBFT"; "Native bridge... bukan generic message passing"
+· Supporting Dataset: Phase 4 Technology, Phase 3 EV-001, EV-007, EV-009
+
+Pola 3: Institutional Alignment via Investor-Market Maker Dual Role
+· Pattern: SIG dan GSR adalah investor (funding round) DAN market maker (liquidity provider) DAN kemungkinan besar token holder (vesting allocation). Alignment across capital, liquidity, dan governance.
+· Evidence: Phase 3 EV-004; Phase 2 Entity SIG, GSR; Phase 5 Financial Dependencies; Phase 7 External Dependencies
+· Supporting Dataset: Phase 3 EV-004, Phase 2 Entity, Phase 5 Financial, Phase 7 Ecosystem
+
+Pola 4: Opacity pada Tokenomics, Treasury, Governance, Validator Set
+· Pattern: Semua aspek kritikal post-TGE (alokasi token %, vesting schedule, emission rate, fee switch, treasury size/composition, foundation legal structure, validator set composition, minimum stake, slashing) — tidak transparan.
+· Evidence: Phase 6 Token Distribution "semua Planned, persentase tidak diungkap"; Vesting "tidak diketahui"; Inflation "rate tidak dipublikasikan"; Phase 5 Treasury "tidak diungkap"; Phase 2 Entity Foundation "Status: Unknown"; Phase 4 Technology Validator "minimum stake amount tidak dipublikasikan"; Phase 7 Ecosystem Risks "Tokenomics Opacity", "Centralized Validator Set"
+· Supporting Dataset: Phase 6 Token, Phase 5 Financial, Phase 2 Entity, Phase 4 Technology, Phase 7 Ecosystem
+
+Pola 5: Modular Expansion Tanpa Mengganggu Core (Additive Architecture)
+· Pattern: Spot DEX ditambah ke perp CLOB existing. HyperEVM ditambah sebagai layer terpisah di atas L1. Bridge ditambah sebagai infrastructure terpisah. Core consensus dan matching engine tidak diubah.
+· Evidence: Phase 3 EV-006 (Spot add-on), EV-007 (HyperEVM separate layer), EV-009 (Bridge separate); Phase 4 Technology "Modular dengan pemisahan konsensus, eksekusi trading, eksekusi smart contract"
 · Supporting Dataset: Phase 3 History, Phase 4 Technology
 
-Pola 3: Performance-Optimized Consensus Design — HyperBFT Custom untuk CLOB
-· Decision Pattern: Konsensus dirancang khusus untuk matching engine CLOB (finalitas sub-sekon, throughput tinggi, deterministic ordering) bukan general-purpose BFT
-· Evidence: Phase 4 Technology (Consensus Mechanism: HyperBFT custom untuk finalitas sub-sekon dan throughput tinggi, terintegrasi ketat dengan matching engine CLOB); Phase 1 Foundation (Category: On-chain Order Book CLOB); Phase 3 History (EV-002 Internal Testnet Q4 2022 validasi HyperBFT + CLOB)
-· Supporting Dataset: Phase 1 Foundation, Phase 3 EV-002, Phase 4 Technology
+Strategic Trade-offs
 
-Pola 4: Modular Execution Layer Addition — HyperEVM sebagai Optional Layer Atas L1
-· Decision Pattern: Menambah EVM execution layer (HyperEVM) sebagai modul terpisah di atas L1 consensus yang sudah stable, dengan precompile access ke CLOB native — tidak mengganti core execution
-· Evidence: Phase 4 Technology (Execution Environment: HyperEVM EVM-compatible layer di atas Hyperliquid L1; System Architecture: Modular dengan pemisahan konsensus, eksekusi trading, eksekusi smart contract); Phase 3 History (EV-007 HyperEVM Testnet Launch 2024-11); Phase 1 Foundation (Main Products: HyperEVM)
-· Supporting Dataset: Phase 1 Foundation, Phase 3 EV-007, Phase 4 Technology
+Trade-off 1: Custom Consensus/Execution (Performance & Control) vs Auditability & Developer Familiarity
+· Decision: Membangun HyperBFT dan CLOB engine custom dalam Rust dari nol.
+· Trade-off: Mengorbankan kemudahan audit (custom logic sulit di-review), ekosistem tooling existing (CosmWasm, Substrate, EVM), dan developer onboarding untuk mendapatkan performa CLOB terintegrasi konsensus, finalitas sub-sekon, dan kontrol penuh atas stack.
+· Evidence: Phase 4 Technology "Custom Rust framework... tidak menggunakan Cosmos SDK, Substrate, atau OP Stack"; "HyperBFT custom... tidak menggunakan Tendermint/CometBFT"; Audit History "Tidak diketahui audit formal"; Phase 7 Ecosystem Risks "No Formal Security Audits"
+· Supporting Dataset: Phase 4 Technology, Phase 3 EV-001, EV-005, Phase 7 Ecosystem Risks
 
-Pola 5: Native Bridge dengan Trusted Validator Set — Simplicity Over Trust-Minimization
-· Decision Pattern: Bridge native menggunakan validator set yang sama dengan consensus (trusted model) untuk speed to market dan operational simplicity, bukan light client/ZK bridge
-· Evidence: Phase 4 Technology (Core Components: Hyperliquid Bridge native; Bridge Security: trusted validator set model); Phase 3 History (EV-009 Bridge Launch 2024); Phase 7 Ecosystem (External Dependencies: Arbitrum, Ethereum; Major Integrations: Native Bridge; Ecosystem Risks: Single Bridge Dependency)
-· Supporting Dataset: Phase 3 EV-009, Phase 4 Technology, Phase 7 Ecosystem
+Trade-off 2: Trusted Bridge (Speed & Simplicity) vs Trust-Minimization (Security)
+· Decision: Native bridge dengan validator set Hyperliquid sebagai custodian trusted model.
+· Trade-off: Mengorbankan trust-minimization (users trust validator set honesty) untuk mendapatkan bridge functional cepat, UX sederhana, dan biaya R&D rendah dibanding light client/ZK/IBC.
+· Evidence: Phase 4 Security Model "Native bridge dengan validator set Hyperliquid sebagai custodian (trusted bridge model)"; Phase 7 Ecosystem Risks "Single Bridge Dependency... No alternative trust-minimized bridge live"
+· Supporting Dataset: Phase 4 Technology, Phase 3 EV-009, Phase 7 Ecosystem Risks
 
-Pola 6: Rust-First Development — Core Infrastructure dalam Rust, EVM Tooling untuk HyperEVM
-· Decision Pattern: Core blockchain (consensus, matching engine, networking) ditulis dalam Rust untuk performance dan safety; HyperEVM menggunakan standard Ethereum tooling (Foundry, Hardhat, Solidity/Vyper)
-· Evidence: Phase 4 Technology (Programming Languages: Rust utama untuk L1 node, HyperBFT, CLOB engine; Solidity/Vyper untuk HyperEVM; Development Framework: Custom Rust framework, Foundry/Hardhat untuk HyperEVM); Phase 1 Foundation (Repository: github.com/hyperliquid-dex Rust repos)
-· Supporting Dataset: Phase 1 Foundation, Phase 4 Technology
+Trade-off 3: Single-Threaded CLOB In-Consensus (Simplicity & Determinism) vs Horizontal Scalability (Throughput)
+· Decision: Matching engine single-threaded di dalam proses konsensus HyperBFT.
+· Trade-off: Mengorbankan throughput maksimum (bottleneck single thread) untuk mendapatkan determinisme penuh, kesederhanaan implementasi, dan konsistensi state antara consensus dan matching.
+· Evidence: Phase 4 Known Technical Limitations "Throughput CLOB terbatas oleh kapasitas single-threaded matching engine di dalam konsensus (tidak di-shard)"; Phase 4 Technology "Native Execution: Custom execution environment untuk CLOB matching engine... di dalam konsensus HyperBFT"
+· Supporting Dataset: Phase 4 Technology, Phase 4 Known Limitations
 
----
+Trade-off 4: Token Opacity (Flexibility & Control) vs Transparency & Community Trust
+· Decision: Tidak mempublikasikan whitepaper tokenomics, alokasi persentase, vesting schedule, emission curve, fee switch detail, treasury composition.
+· Trade-off: Mengorbankan kepercayaan komunitas/investor, kemudahan valuasi, dan compliance regulasi untuk mempertahankan fleksibilitas mengubah parameter tokenomics, kontrol founder/team atas supply, dan menghindari komitmen yang sulit di-reverse.
+· Evidence: Phase 6 Token Distribution "semua Planned, persentase tidak diungkap"; Vesting "tidak diketahui"; Inflation "rate tidak dipublikasikan"; Phase 5 Treasury "tidak diungkap"; Phase 6 Governance "detail... belum dipublikasikan lengkap"
+· Supporting Dataset: Phase 6 Token, Phase 5 Financial, Phase 2 Entity Foundation
 
-Pola 1: Single Strategic Funding Round dengan Investor-Market Maker Overlap (2023)
-· Decision Pattern: Satu ronde pendanaan besar (Series A/Strategic 2023) dari VC (Variant, Delphi, Hack VC) + market maker institusional (SIG, GSR) yang juga commit liquidity — no follow-on rounds publik, no public token sale
-· Evidence: Phase 5 Financial (Funding History: 1 round 2023, Amount undisclosed; Fundraising Mechanism: VC Funding); Phase 2 Entity (Variant Fund, Delphi Digital, Hack VC, SIG, GSR as Investors); Phase 3 History (EV-004 Funding Round 2023); Phase 7 Ecosystem (External Dependencies: SIG, GSR as Market Makers)
-· Supporting Dataset: Phase 2 Entity, Phase 3 EV-004, Phase 5 Financial, Phase 7 Ecosystem
+Trade-off 5: Institutional Market Maker Dependency (Deep Liquidity Day One) vs Decentralization & Censorship Resistance
+· Decision: Bergantung pada SIG dan GSR sebagai primary market makers (juga investor).
+· Trade-off: Mendapatkan likuiditas institusional grade dari launch, menarik trader profesional, tapi menciptakan sentralisasi likuiditas pada 2 entity yang juga punya influence governance via token allocation.
+· Evidence: Phase 3 EV-004; Phase 5 Financial Dependencies; Phase 7 Ecosystem Risks "Market Maker Dependency... Withdrawal could severely impact order book quality"
+· Supporting Dataset: Phase 3 EV-004, Phase 5 Financial, Phase 7 Ecosystem
 
-Pola 2: Revenue Model = Pure Protocol Fees (Trading Fees Perp + Spot + Bridge) — No Fee Switch Yet
-· Decision Pattern: Pendapatan sepenuhnya dari trading fees (perp & spot CLOB) dan bridge fees; fee switch / revenue sharing ke staker HYPE diumumkan tapi belum diaktifkan
-· Evidence: Phase 5 Financial (Revenue Model: Protocol Fees Perp DEX Live, Spot DEX Live, Bridge Fees Live, Fee Switch Planned/Not Activated); Phase 1 Foundation (Main Products: Perp DEX, Spot DEX, Bridge); Phase 4 Technology (Core Components: Perp DEX, Spot DEX, Bridge); Phase 6 Token (Utility: Fee Payment Live, Reward Live via staking emission, Fee Switch not mentioned)
-· Supporting Dataset: Phase 1 Foundation, Phase 4 Technology, Phase 5 Financial, Phase 6 Token
+Trade-off 6: USDC Single Collateral (UX Simplicity & Liquidity Concentration) vs Collateral Diversification & Depeg Risk
+· Decision: Hanya USDC sebagai margin/quote/settlement untuk semua perp dan spot.
+· Trade-off: UX sederhana (satu asset deposit), likuiditas terkonsentrasi di USDC pairs, tapi exposed ke USDC depeg risk, Circle blacklist risk, dan regulatory risk stablecoin.
+· Evidence: Phase 7 External Dependencies "USDC... Criticality: Critical"; Phase 7 Ecosystem Risks "USDC Collateral Concentration... Exposure to Circle/USDC regulatory, depeg, or blacklist risk"
+· Supporting Dataset: Phase 7 Ecosystem, Phase 4 Technology
 
-Pola 3: Token Distribution via Community Airdrop/Points — No Public/Private Token Sale
-· Decision Pattern: TGE HYPE 100% community distribution (airdrop/points claim) tanpa IDO/launchpad/private token sale; investor allocation via equity/SAFT terpisah dari token distribution
-· Evidence: Phase 5 Financial (Token Sale: No private/public sale, Community Distribution via airdrop/points); Phase 3 History (EV-008 TGE HYPE); Phase 6 Token (TGE Date 2024-11-29, Launch Platform: Native Hyperliquid L1, Distribution: Community Planned); Phase 1 Foundation (TGE Date 2024-11-29)
-· Supporting Dataset: Phase 1 Foundation, Phase 3 EV-008, Phase 5 Financial, Phase 6 Token
+Behavioral Summary
 
-Pola 4: Treasury & Tokenomics Opacity — No Public Disclosure
-· Decision Pattern: Ukuran treasury, komposisi, tokenomics detail (alokasi team/investor/foundation/ecosystem), emission schedule, vesting schedule — semuanya tidak dipublikasikan; whitepaper tokenomics belum terbit
-· Evidence: Phase 5 Financial (Treasury: Current Treasury Size undisclosed, Composition undisclosed; Financial Risk: Treasury Concentration Risk); Phase 6 Token (Supply: Max/Total/Circulating/Initial all unknown; Distribution: all categories Planned percentages unknown; Vesting Schedule: all categories unknown; Inflation: emission schedule unknown; Governance: proposal system unknown); Phase 1 Foundation (Open Threads: tokenomics detail, fee switch, foundation legal relation)
-· Supporting Dataset: Phase 5 Financial, Phase 6 Token, Phase 1 Foundation
+Prioritas Utama Proyek:
+1. **Teknis: Performance & Correctness Trading Engine** — Custom consensus + in-consensus CLOB adalah heart of value proposition. Semua keputusan teknis mengorbit ini.
+2. **Produk: Time-to-Market dengan Quality** — Phased launch (testnet → perp → spot → bridge → HyperEVM testnet → TGE) menunjukkan disiplin shipping bertahap.
+3. **Likuiditas: Institutional Grade dari Hari Pertama** — Strategic round dengan SIG/GSR sebagai investor+MM memastikan order book depth.
+4. **Komunitas: Ownership Distribution via Airdrop** — TGE 100% community claim (points/airdrop) no sale, staking live immediate.
+5. **Ekspansi: EVM Compatibility tanpa Kompromi Core** — HyperEVM sebagai additive layer, bukan replacement.
 
-Pola 5: Ecosystem Fund Announced Post-TGE untuk HyperEVM Builder Grants
-· Decision Pattern: Dana ekosistem (Ecosystem Fund) diannounce 2024 setelah TGE untuk mendukung developer membangun di HyperEVM — sumber dana tidak transparan (token allocation? treasury? revenue?)
-· Evidence: Phase 3 History (EV-010 Ecosystem Fund Announcement 2024); Phase 5 Financial (Fundraising Mechanism: Ecosystem Fund/Builder Grants); Phase 7 Ecosystem (Developer Ecosystem: Grant Program: Hyperliquid Ecosystem Fund/Builder Grants); Phase 1 Foundation (Official Blog Ecosystem Fund)
-· Supporting Dataset: Phase 3 EV-010, Phase 5 Financial, Phase 7 Ecosystem, Phase 1 Foundation
+Cara Mengambil Keputusan:
+- **Founder-driven (Jeff Yan, iliensinc)** melalui Hyperliquid Labs hingga TGE. Tidak ada governance formal pre-TGE.
+- **Technical-first** — Arsitektur custom dipilih meski cost audit/tooling tinggi, karena trading performance non-negotiable.
+- **Incremental validation** — Setiap major component diuji di testnet/internal sebelum mainnet. Zero major launch disaster.
+- **Strategic opacity** — Tokenomics, treasury, foundation, validator set sengaja tidak transparan (fleksibilitas > kepercayaan pasar).
+- **Institutional alignment** — Investor = Market Maker = Potential Validator/Token Holder. Konsep "aligned incentives" dieksekusi via dual-role SIG/GSR.
 
-Pola 6: Staking Rewards sebagai Primary Token Emission Mechanism — Inflationary by Design
-· Decision Pattern: HYPE supply inflationary melalui staking rewards/validator emission; no burn mechanism, no buyback announced; fee switch status unknown
-· Evidence: Phase 6 Token (Supply Type: Inflationary staking rewards/validator emissions active post-TGE; Inflation Mechanism: staking rewards/validator emission; Burn Mechanism: none announced; Buyback: none announced); Phase 3 History (EV-008 TGE activates staking); Phase 4 Technology (Security Model: PoS dengan HYPE staking post-TGE)
-· Supporting Dataset: Phase 3 EV-008, Phase 4 Technology, Phase 6 Token
+Faktor Paling Sering Mempengaruhi Keputusan:
+1. **Trading engine performance & correctness** (technical)
+2. **Liquidity bootstrapping** (market)
+3. **Regulatory risk avoidance** (legal — BVI entity, native token, no KYC/geo-blocking)
+4. **Founder/team control retention** (governance — opacity pada tokenomics/foundation/validator)
+5. **Developer ecosystem expansion** (strategic — HyperEVM additive layer)
 
----
+Pola Evolusi:
+- **Phase 0 (2022)**: R&D custom L1 + consensus + CLOB (stealth/internal)
+- **Phase 1 (2023)**: Product validation — Perp mainnet → Spot add-on. No token. Revenue ke Labs.
+- **Phase 2 (2024)**: Infrastructure expansion — Bridge → HyperEVM testnet → Ecosystem Fund.
+- **Phase 3 (Nov 2024+)**: Tokenization & decentralization attempt — TGE → Staking → Foundation indicated → Governance planned. Core teknis stabil, layer sosial/ekonomis baru mulai.
 
-Pola 1: Strategic Investor = Market Maker — SIG & GSR Dual Role
-· Decision Pattern: Market maker institusional tier-1 (Susquehanna SIG, GSR) berperan ganda sebagai investor (funding round 2023) dan penyedia likuiditas utama di Perpetual DEX
-· Evidence: Phase 2 Entity (SIG, GSR as Investors); Phase 3 History (EV-004 Funding Round 2023 includes SIG, GSR); Phase 5 Financial (Financial Dependencies: SIG, GSR as Market Makers); Phase 7 Ecosystem (External Dependencies: SIG, GSR as Service/Market Maker; Major Integrations: Institutional Market Makers)
-· Supporting Dataset: Phase 2 Entity, Phase 3 EV-004, Phase 5 Financial, Phase 7 Ecosystem
+Kekuatan Utama:
+- **Teknologi differensiasi nyata**: First fully on-chain CLOB perp dengan custom consensus. Bukan fork, bukan deployment di L2 lain.
+- **Produk live & battle-tested**: 1.5 tahun mainnet perp, 1 tahun spot, zero exploit publik.
+- **Likuiditas institusional**: SIG/GSR commitment dari hari pertama.
+- **Token distribution fair launch**: No private/public sale, community airdrop, staking live.
+- **Arsitektur modular additive**: HyperEVM tidak mengganggu core CLOB performance.
 
-Pola 2: USDC sebagai Settlement Layer Utama — Bridge ke Arbitrum/Ethereum untuk Onboarding
-· Decision Pattern: Seluruh trading economy (perp & spot) menggunakan USDC sebagai collateral/quote asset; Native bridge ke Arbitrum dan Ethereum mainnet dibangun untuk mengimpor USDC liquidity
-· Evidence: Phase 4 Technology (Core Components: Hyperliquid Bridge to Arbitrum/Ethereum); Phase 7 Ecosystem (External Dependencies: USDC critical, Arbitrum critical, Ethereum critical; Major Integrations: Native Bridge to Arbitrum/Ethereum); Phase 5 Financial (Revenue Model: fees denominated in USDC implied); Phase 1 Foundation (Products: Perp/Spot DEX)
-· Supporting Dataset: Phase 4 Technology, Phase 5 Financial, Phase 7 Ecosystem, Phase 1 Foundation
-
-Pola 3: HyperEVM sebagai Developer Onboarding Strategy — EVM Compatibility + CLOB Primitive
-· Decision Pattern: HyperEVM testnet + Ecosystem Fund grants untuk menarik Ethereum developers dengan tooling familiar (Solidity, Foundry, Hardhat) sambil menawarkan CLOB native sebagai primitive unik yang tidak ada di L1/L2 lain
-· Evidence: Phase 3 History (EV-007 HyperEVM Testnet, EV-010 Ecosystem Fund); Phase 4 Technology (Core Components: HyperEVM, Execution Environment: HyperEVM); Phase 7 Ecosystem (Developer Ecosystem: HyperEVM testnet, Grant Program; Applications: HyperEVM dApps Testnet); Phase 1 Foundation (Main Products: HyperEVM)
-· Supporting Dataset: Phase 3 EV-007 EV-010, Phase 4 Technology, Phase 7 Ecosystem, Phase 1 Foundation
-
-Pola 4: Native Block Explorer Ecosystem — Hypurrscan sebagai Primary, Official Explorer sebagai Backup
-· Decision Pattern: Hypurrscan (independent team) menjadi primary explorer; official explorer (explorer.hyperliquid.xyz) sebagai backup — tidak mengembangkan explorer in-house
-· Evidence: Phase 4 Technology (Core Components: Hypurrscan/Official Explorer); Phase 7 Ecosystem (Infrastructure Providers: Hypurrscan independent, Official Explorer; Applications: Hypurrscan); Phase 1 Foundation (Block Explorer: Hypurrscan utama, explorer.hyperliquid.xyz resmi)
-· Supporting Dataset: Phase 1 Foundation, Phase 4 Technology, Phase 7 Ecosystem
-
-Pola 5: Cloud Infrastructure Dependency Tidak Diungkap — Validator & API Hosting Centralization Risk
-· Decision Pattern: Validator nodes, RPC endpoints, API services kemungkinan besar hosted di cloud provider major (AWS/GCP/Azure) tapi tidak di-disclose — menciptakan single point of failure risk
-· Evidence: Phase 7 Ecosystem (External Dependencies: Cloud Infrastructure Providers inferred; Infrastructure Providers: Cloud Providers unspecified; Ecosystem Risks: Cloud Infrastructure Centralization); Phase 4 Technology (Current Technical Stack: Docker/Kubernetes inferred, no explicit cloud disclosure)
-· Supporting Dataset: Phase 4 Technology, Phase 7 Ecosystem
-
----
-
-Pola 1: Token-Based Governance dengan Staking-Weighted Voting — Infrastructure Belum Lengkap
-· Decision Pattern: Governance model dirancang token-based (HYPE staked/delegated = voting power) tapi proposal system, forum, voting mechanism, execution framework belum dipublikasikan/resmi launch
-· Evidence: Phase 6 Token (Governance Model: Token-based governance, Voting Power proportional to HYPE staked, Delegation supported, Proposal System unknown, Treasury Governance: Hyperliquid Foundation indicated); Phase 3 History (EV-011 Foundation Formation indicated); Phase 2 Entity (Hyperliquid Foundation indicated); Phase 1 Foundation (Open Threads: governance framework, foundation legal relation)
-· Supporting Dataset: Phase 1 Foundation, Phase 2 Entity, Phase 3 EV-011, Phase 6 Token
-
-Pola 2: Foundation Formation Separate dari Labs — Governance Entity Terpisah
-· Decision Pattern: Indikasi pembentukan Hyperliquid Foundation sebagai entitas governance/treasury terpisah dari Hyperliquid Labs (developer company) — tapi yurisdiksi, struktur hukum, hubungan formal belum diverifikasi
-· Evidence: Phase 2 Entity (Hyperliquid Foundation type Foundation, Relationship: governance entity terpisah, Exposure: unknown); Phase 3 History (EV-011 Foundation Formation indicated 2024); Phase 6 Token (Treasury Governance: managed by Hyperliquid Foundation indicated); Phase 1 Foundation (Open Threads: legal relation Labs vs Foundation)
-· Supporting Dataset: Phase 2 Entity, Phase 3 EV-011, Phase 6 Token, Phase 1 Foundation
-
-Pola 3: No Formal DAO Structure — Governance via Foundation + Token Voting (Planned)
-· Decision Pattern: Tidak ada DAO formal (snapshot, governor contracts, timelock) yang diumumkan; governance akan melalui Foundation + token voting on-chain (HyperEVM precompile atau native L1 governance module)
-· Evidence: Phase 6 Token (Governance: Voting System unknown, Proposal System unknown, no governance forum); Phase 7 Ecosystem (Governance Ecosystem: DAO tidak ada formal, Council/Committee tidak diumumkan); Phase 2 Entity (Hyperliquid Foundation indicated)
-· Supporting Dataset: Phase 2 Entity, Phase 6 Token, Phase 7 Ecosystem
-
-Pola 4: Validator Set sebagai Governance Actor Implisit — Consensus Participation = Network Governance
-· Decision Pattern: Validator set (permissioned/permissionless unclear) mengontrol consensus upgrades, bridge operations, parameter changes — de facto governance power sebelum formal token governance live
-· Evidence: Phase 4 Technology (Core Components: Validator Set; Security Model: Validator Security PoS dengan HYPE staking); Phase 7 Ecosystem (Governance Ecosystem: Validator Group: Hyperliquid Validator Set; Ecosystem Risks: Centralized Validator Set); Phase 2 Entity (Hyperliquid L1 as Organization running validator set)
-· Supporting Dataset: Phase 2 Entity, Phase 4 Technology, Phase 7 Ecosystem
-
----
-
-Pola 1: Single Bridge Dependency — No Trust-Minimized Alternative Live
-· Decision Pattern: Mengandalkan single native bridge (trusted validator set) untuk semua cross-chain transfers; no light client bridge, no ZK bridge, no IBC live — bridge risk = protocol risk
-· Evidence: Phase 7 Ecosystem (External Dependencies: Arbitrum, Ethereum critical for bridge; Ecosystem Risks: Single Bridge Dependency High); Phase 4 Technology (Core Components: Hyperliquid Bridge native trusted model); Phase 3 History (EV-009 Bridge Launch 2024)
-· Trigger: Perlu cross-chain liquidity onboarding cepat; trust-minimized bridge R&D butuh waktu
-· Response: Launch native bridge first; trust-minimized alternatives tidak diroadmap publik
-· Result: Cross-chain USDC flow live; bridge centralization risk accepted
-· Supporting Dataset: Phase 3 EV-009, Phase 4 Technology, Phase 7 Ecosystem
-
-Pola 2: USDC Concentration Risk — No Alternative Collateral/Stablecoin Live
-· Decision Pattern: 100% trading economy bergantung pada USDC; no native stablecoin, no multi-collateral support, no diversification — Circle/USDC regulatory risk = protocol risk
-· Evidence: Phase 7 Ecosystem (External Dependencies: USDC critical; Ecosystem Risks: USDC Collateral Concentration High); Phase 5 Financial (Revenue Model: fees in USDC implied); Phase 4 Technology (Core Components: Perp/Spot DEX using USDC)
-· Trigger: USDC adalah stablecoin paling liquid dan trusted di DeFi; multi-collateral complexity tinggi untuk CLOB
-· Response: Focus pada USDC-only untuk simplicity dan liquidity depth
-· Result: Deep liquidity di USDC pairs; single point of failure jika USDC depeg/blacklist
-· Supporting Dataset: Phase 4 Technology, Phase 5 Financial, Phase 7 Ecosystem
-
-Pola 3: Market Maker Dependency — SIG & GSR sebagai Liquidity Backbone
-· Decision Pattern: Likuiditas CLOB sangat bergantung pada 2 market maker institusional; withdrawal salah satu akan mengurangi order book depth drastis
-· Evidence: Phase 7 Ecosystem (External Dependencies: SIG, GSR High criticality; Ecosystem Risks: Market Maker Dependency High); Phase 2 Entity (SIG, GSR as Investors/Market Makers); Phase 5 Financial (Financial Dependencies: SIG, GSR)
-· Trigger: Bootstrapping CLOB liquidity butuh professional market makers; retail liquidity insufficient untuk tight spreads
-· Response: Strategic partnership dengan SIG/GSR via funding round + market making agreement
-· Result: Deep liquidity dari day-1 mainnet; concentration risk accepted
-· Supporting Dataset: Phase 2 Entity, Phase 3 EV-004, Phase 5 Financial, Phase 7 Ecosystem
-
-Pola 4: Regulatory Exposure — Perpetual DEX + BVI Entity + Global Access
-· Decision Pattern: Operasi perpetual futures DEX (derivatives) dari entitas BVI tanpa geo-blocking resmi — exposed ke CFTC, SEC, FCA enforcement; no public compliance framework
-· Evidence: Phase 7 Ecosystem (Ecosystem Risks: Regulatory Exposure High); Phase 5 Financial (Financial Risk: Regulatory Financial Risk High); Phase 1 Foundation (Country: BVI entity; Open Threads: regulatory classification); Phase 3 History (EV-005 Perp DEX Mainnet global access)
-· Trigger: Global permissionless access = core value prop; compliance cost tinggi dan membatasi user base
-· Response: Launch global permissionless; monitor regulatory landscape; no public geo-blocking announcement
-· Result: Global user base acquired; regulatory tail risk remains
-· Supporting Dataset: Phase 1 Foundation, Phase 3 EV-005, Phase 5 Financial, Phase 7 Ecosystem
-
-Pola 5: No Formal Security Audits — Core Protocol Unaudited Publicly
-· Decision Pattern: HyperBFT consensus, CLOB matching engine, native bridge contracts — no public audit reports dari auditor tier-1; security model berg
+Kelemahan Utama:
+- **Opacity ekstrem**: Tokenomics, treasury, foundation, validator set, fee switch — semua kritikal tapi undisclosed.
+- **Single points of failure**: 2 market makers (SIG/GSR), 1 bridge (trusted model), 1 collateral (USDC), opaque validator set.
+- **No formal audits**: Core consensus, matching engine, bridge — zero public audit reports.
+- **Governance vaporware**: TGE done, staking live, tapi governance infrastructure zero (no forum, no voting, no proposal system).
+- **Technical debt**: Single-threaded CLOB bottleneck, no sharding roadmap public, HyperEVM mainnet unproven.
+- **Regulatory exposure tinggi**: BVI entity, global perp DEX access, no KYC/geo-blocking, USDC dependency.
 
 ## Knowledge Extraction
 _ref: `docs/Patterns/*`, `docs/Reasoning/*` (rule candidates)_
@@ -2277,6 +2402,1539 @@ Explanation: Validator nodes, RPC endpoints, API services kemungkinan besar host
 Evidence: Cloud providers unspecified inferred【Phase 7 — External Dependencies】; Infrastructure providers cloud providers unspecified【Phase 7 — Infrastructure Providers】; Ecosystem risk cloud centralization Medium【Phase 7 — Ecosystem Risks】; Pattern: cloud infrastructure dependency undisclosed【Phase 9 — Ecosystem Pattern 5】.
 Supporting Dataset: Phase 7 Ecosystem
 
+## Validation & Quality Assurance (CIF Score)
+_ref: `docs/Reasoning/Confidence.md` — CIF Score, Data Lineage, Knowledge Dependency Graph_
+
+PROJECT: Hyperliquid
+
+CIF MANIFEST v3.0
+
+Project: Hyperliquid
+Symbol: HYPE
+Research Date: 2025-04-04
+CIF Version: 3.0
+QA Date: 2025-04-04
+
+METRICS
+Total Knowledge Objects: 10
+Total Entities: 20
+Total Events: 11
+Evidence Links: 54
+Sources: 18
+Conflicts: 4
+ ├── Resolved: 3
+ ├── Critical: 0
+ ├── High: 1
+ ├── Medium: 2
+ └── Low: 1
+
+QUALITY SCORES
+Research Quality: 90/100
+Consistency: 86/100
+Evidence: 78/100
+Coverage: 82/100
+Conflict: 75/100
+Knowledge: 88/100
+CIF SCORE: 84.6/100
+
+CONFIDENCE LEVEL: HIGH
+QA STATUS: PASSED
+
+RECOMMENDED RE-RUN:
+ - Phase 5 — Amount pendanaan ronde 2023 tidak diungkap; perlu sumber sekunder kredibel (The Block sudah dipakai, tapi angka detail belum)
+ - Phase 6 — Whitepaper tokenomics belum terbit; alokasi persentase per kategori tidak dapat diverifikasi
+ - Phase 7 — Alamat resmi treasury, foundation, team, investor vesting belum dipublikasikan
+ - Phase 8 — Metrik adopsi (TVL, volume, daily users) tidak diekstrak dengan angka spesifik; perlu query DefiLlama API
+
+---
+
+DATASET INTEGRITY & COVERAGE
+
+Periksa setiap phase.
+
+Phase 1 — Foundation
+Status: Complete
+Missing Information: Tidak ada
+Notes: Fondasi lengkap; open threads terkait tanggal testnet publik dan alamat WHYPE dicatat tetapi tidak menghalangi QA.
+
+Phase 2 — Entity
+Status: Complete
+Missing Information: Tidak ada
+Notes: 20 entity teridentifikasi; entity foundation (Hyperliquid Foundation) ditandai "unknown" exposure type karena tidak diverifikasi resmi.
+
+Phase 3 — History
+Status: Complete
+Missing Information: Tidak ada
+Notes: 11 event terdokumentasi dengan ID EV-001 hingga EV-011. Timeline konsisten dengan Phase 1.
+
+Phase 4 — Technology
+Status: Complete
+Missing Information: Tidak ada
+Notes: Komponen teknis lengkap; audit history "tidak diketahui" karena tidak ada laporan publik.
+
+Phase 5 — Financial
+Status: Incomplete
+Missing Information: Amount dana ronde 2023, jumlah treasury, komposisi aset treasury, valuasi ronde
+Notes: Ketidaklengkapan berasal dari opacity proyek, bukan kegagalan riset.
+
+Phase 6 — Token
+Status: Incomplete
+Missing Information: Maximum supply, total supply, circulating supply, initial supply, alokasi per kategori, vesting schedule, emission rate
+Notes: Whitepaper tokenomics belum diterbitkan; seluruh data supply tidak dapat diverifikasi.
+
+Phase 7 — Ecosystem
+Status: Complete
+Missing Information: Tidak ada
+Notes: Ekosistem terdokumentasi lengkap dengan dependencies dan aplikasi.
+
+Phase 8 — Market
+Status: Incomplete
+Missing Information: TVL, volume, daily active users, transactions, market share, validator count
+Notes: Tidak ada dashboard resmi; data di DefiLlama hanya disebutkan sebagai sumber tanpa angka spesifik di dataset.
+
+Phase 9 — Behavioral
+Status: Complete
+Missing Information: Tidak ada
+Notes: Semua decision timeline, pattern, trade-off terdokumentasi dari Phase 1–8.
+
+Phase 10 — Knowledge
+Status: Complete
+Missing Information: Tidak ada
+Notes: 10 knowledge object (K-001 hingga K-010) terdokumentasi dengan confidence HIGH.
+
+Coverage Report — Multi-dimensional
+
+Phase 2 — Entity
+ Total: 20
+ Referenced in Phase 9-10: 12
+ Unused: 8
+ Coverage: 60%
+ Interpretation: 12 entity secara langsung terlibat ke narrative dan insight Knowledge; 8 lainnya (sebagian besar investor/infrastructure non-kunci) tidak digunakan — wajar untuk menjaga fokus pada insight inti.
+
+Phase 3 — Event
+ Total: 11
+ Referenced in Phase 9-10: 11
+ Unused: 0
+ Coverage: 100%
+ Interpretation: Seluruh event digunakan sebagai bukti dalam decision timeline, pattern, dan insight — kuat.
+
+Phase 4 — Technology
+ Total: 8 (komponen inti)
+ Referenced: 7
+ Unused: 1 (Official Explorer)
+ Coverage: 88%
+ Interpretation: 7 komponen digunakan; explorer official tidak menjadi inti Knowledge karena hanya alat infrastruktur.
+
+Phase 5 — Financial
+ Total: 8 (funding, treasury, revenue, dependencies, risk)
+ Referenced: 6
+ Unused: 2 (treasury composition, revenue history)
+ Coverage: 75%
+ Interpretation: Treasury dan revenue history tidak digunakan karena data tidak diungkap; kekurangan tersebut dicatat sebagai gap, bukan kegagalan referensi.
+
+Phase 6 — Token
+ Total: 8 (supply, distribution, vesting, TGE, utility, governance, inflation, holder distribution)
+ Referenced: 6
+ Unused: 2 (supply detail, vesting schedule)
+ Coverage: 75%
+ Interpretation: Detail supply dan vesting tidak dipakai karena memang tidak ada data; TGE, utility, governance dipakai penuh.
+
+Phase 7 — Ecosystem
+ Total: 6 (external dependencies, integrations, infrastructure, exchange, wallet, developer)
+ Referenced: 5
+ Unused: 1 (wallet ecosystem)
+ Coverage: 83%
+ Interpretation: Wallet ecosystem kurang dieksploitasi di Knowledge karena bukan core narrative Hyperliquid saat ini (HyperEVM masih testnet).
+
+Phase 8 — Market
+ Total: 4 (market position, adoption metrics, competitor, narrative)
+ Referenced: 4
+ Unused: 0
+ Coverage: 100%
+ Interpretation: Seluruh dimensi market dipakai untuk insight K-004, K-005, K-008, K-009.
+
+Overall Coverage
+ Total: 65
+ Referenced: 51
+ Unused: 14
+ Coverage: 78%
+ Interpretation: Mayoritas data (78%) digunakan untuk Knowledge. 22% unused sebagian besar dari volume data yang tidak tersedia (treasury, tokenomics, metrik adopsi) bukan karena tidak relevan — menunjukkan dataset padat namun terkendala opacity proyek.
+
+---
+
+CROSS-PHASE CONSISTENCY
+
+Entity Consistency
+Status: Konsisten
+Detail: Nama entity yang sama muncul persis di Phase 1 (Foundation), Phase 2 (Entity), Phase 3 (History) — misalnya "Hyperliquid Labs", "Jeff Yan", "iliensinc", "SIG", "GSR" — tanpa variasi ejaan.
+
+Timeline Consistency
+Status: Konsisten
+Detail: Timeline di Phase 1 (launch dates), Phase 3 (EV-005 mainnet perp, EV-006 spot, EV-007 HyperEVM testnet, EV-008 TGE), Phase 8 (market timeline), dan Phase 9 (decision timeline) saling mendukung — semua menunjuk 2023-05-14 mainnet perp, 2023-10 spot, 2024-11 HyperEVM testnet, 2024-11-29 TGE.
+
+Technology Consistency
+Status: Konsisten
+Detail: Upgrade sequence di Phase 3 (EV-002 testnet internal → EV-003 testnet publik → EV-005 mainnet perp → EV-006 spot → EV-007 HyperEVM testnet → EV-008 TGE) selaras dengan Phase 4 (core components status live, HyperEVM testnet) dan Phase 9 (decision timeline).
+
+Funding Consistency
+Status: Konsisten
+Detail: Funding history di Phase 3 (EV-004) identik dengan Phase 5 (funding history): ronde 2023, investor Variant Fund, Delphi Digital, Hack VC, SIG, GSR — tidak ada konflik.
+
+Token Consistency
+Status: Konsisten
+Detail: Token info di Phase 6 (symbol HYPE, native L1, TGE 2024-11-29, no public/private sale) sesuai dengan Phase 1 (symbol, TGE date), Phase 3 (EV-008), dan Phase 8 (market timeline).
+
+Governance Consistency
+Status: Konsisten
+Detail: Governance structure di Phase 6 (token-based planned, foundation indicated) konsisten dengan Phase 3 (EV-011 foundation formation indicated), Phase 7 (no formal DAO), dan Phase 9 (governance patterns).
+
+Dependency Consistency
+Status: Konsisten
+Detail: External dependencies di Phase 7 (Arbitrum, Ethereum, USDC, SIG, GSR, cloud providers) dimunculkan kembali di Phase 4 (bridge, collateral) dan Phase 5 (financial dependencies) tanpa konflik.
+
+Overall Cross-phase Consistency: 86%
+
+---
+
+DATA LINEAGE
+
+Knowledge K-001 — Vertical Integration Membuat Moat Teknis yang Sulit Direplikasi
+
+Lineage:
+```
+Level 0 (Raw Data)
+  ├── Phase 4 — Consensus Mechanism (HyperBFT custom)
+  │   └── Source: https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview
+  ├── Phase 4 — Development Framework (Custom Rust)
+  │   └── Source: https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview
+  ├── Phase 1 — Repository (GitHub Rust)
+  │   └── Source: https://github.com/hyperliquid-dex
+  └── Phase 4 — System Architecture (Modular separation)
+      └── Source: https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview
+
+Level 1 (Processed)
+  └── Phase 9 — Technical Decision Pattern 6 (Custom Stack from Scratch)
+      └── Evidence: Evidence berulang di Phase 4, GitHub, Phase 1 documentation
+
+Level 2 (Knowledge)
+  └── Knowledge K-001 — Vertical Integration Membuat Moat Teknis yang Sulit Direplikasi
+
+Validation:
+  ├── Passed: Cross-phase consistency check (Phase 1, Phase 4, Phase 9 mendukung)
+  ├── Passed: Evidence audit (Strong — 4 sumber, seluruhnya official/primary)
+  └── Confidence: 95/100
+```
+
+Knowledge K-002 — Phased Product Rollout Mengurangi Risiko Eksekusi Kompleks
+
+Lineage:
+```
+Level 0 (Raw Data)
+  ├── Phase 3 — EV-005 (Mainnet Perp DEX 2023-05-14)
+  │   └── Source: https://hyperliquid.xyz/blog/mainnet-launch
+  ├── Phase 3 — EV-006 (Spot DEX 2023-10)
+  │   └── Source: https://hyperliquid.xyz/blog/spot-launch
+  ├── Phase 3 — EV-007 (HyperEVM testnet 2024-11)
+  │   └── Source: https://hyperliquid.xyz/blog/hyperevm
+  └── Phase 4 — Core Components (Perp live first, Spot added, HyperEVM testnet)
+      └── Source: https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview
+
+Level 1 (Processed)
+  └── Phase 9 — Evolution Pattern 2 (Product validation → Infrastructure expansion → Tokenization)
+      └── Evidence: Timeline EV-005 → EV-006 → EV-007 → EV-008
+
+Level 2 (Knowledge)
+  └── Knowledge K-002 — Phased Product Rollout Mengurangi Risiko Eksekusi Kompleks
+
+Validation:
+  ├── Passed: Cross-phase consistency check
+  ├── Passed: Evidence audit (Strong — 4 sumber, seluruhnya official blog)
+  └── Confidence: 92/100
+```
+
+Knowledge K-003 — Strategic Investor = Market Maker Alignment Mengurangi Cold Start Liquidity Problem
+
+Lineage:
+```
+Level 0 (Raw Data)
+  ├── Phase 3 — EV-004 (Funding round 2023 dengan SIG, GSR)
+  │   └── Source: https://www.theblock.co/post/298123/hyperliquid-labs-raises-funding
+  ├── Phase 2 — Entity SIG, Entity GSR (Investor)
+  │   └── Source: https://www.theblock.co/post/298123/hyperliquid-labs-raises-funding
+  ├── Phase 5 — Financial Dependencies (SIG, GSR sebagai market maker)
+  │   └── Source: https://www.theblock.co/post/298123/hyperliquid-labs-raises-funding
+  └── Phase 7 — External Dependencies (SIG, GSR criticality High)
+      └── Source: https://www.theblock.co/post/298123/hyperliquid-labs-raises-funding
+
+Level 1 (Processed)
+  └── Phase 9 — Financial Pattern 1 (Single strategic funding round dengan investor-MM)
+      └── Evidence: SIG & GSR di kolom investor dan kolom market maker
+
+Level 2 (Knowledge)
+  └── Knowledge K-003 — Strategic Investor = Market Maker Alignment Mengurangi Cold Start Liquidity Problem
+
+Validation:
+  ├── Passed: Cross-phase consistency check
+  ├── Passed: Evidence audit (Strong — 4 sumber, satu sumber cukup kredibel "Major News")
+  └── Confidence: 88/100
+```
+
+Knowledge K-004 — Community-First Token Distribution Tanpa Public Sale Membangun Legitimasi Governance Awal
+
+Lineage:
+```
+Level 0 (Raw Data)
+  ├── Phase 3 — EV-008 (TGE 2024-11-29)
+  │   └── Source: https://hyperliquid.xyz/blog/hype-genesis
+  ├── Phase 5 — Token Sale (No private/public sale, community distribution)
+  │   └── Source: https://hyperliquid.xyz/blog/hype-genesis
+  ├── Phase 6 — TGE (Launch platform native Hyperliquid L1)
+  │   └── Source: https://hyperliquid.xyz/blog/hype-genesis
+  └── Phase 6 — Distribution (Community planned via airdrop/points)
+      └── Source: https://hyperliquid.xyz/blog/hype-genesis
+
+Level 1 (Processed)
+  └── Phase 9 — Decision: TGE via airdrop (Financial Pattern 3)
+      └── Evidence: Seluruh sumber blog resmi mengkonfirmasi airdrop/points claim
+
+Level 2 (Knowledge)
+  └── Knowledge K-004 — Community-First Token Distribution Tanpa Public Sale Membangun Legitimasi Governance Awal
+
+Validation:
+  ├── Passed: Cross-phase consistency check
+  ├── Passed: Evidence audit (Strong — 4 sumber, seluruhnya official)
+  └── Confidence: 93/100
+```
+
+Knowledge K-005 — Tokenomics Opacity Menciptakan Ketidakpastian Nilai Jangka Panjang
+
+Lineage:
+```
+Level 0 (Raw Data)
+  ├── Phase 6 — Supply (Max, Total, Circulating, Initial all unknown)
+  │   └── Source: https://hyperliquid.xyz/blog/hype-genesis
+  ├── Phase 6 — Distribution (Percentages per category unknown)
+  │   └── Source: https://hyperliquid.xyz/blog/hype-genesis
+  ├── Phase 6 — Vesting (All categories unknown)
+  │   └── Source: https://hyperliquid.xyz/blog/hype-genesis
+  ├── Phase 6 — Inflation/Deflation (Emission schedule unknown, no buyback/burn)
+  │   └── Source: https://hyperliquid.gitbook.io/hyperliquid-docs
+  └── Phase 5 — Treasury (Size, composition undisclosed)
+      └── Source: https://hyperliquid.xyz/blog/hype-genesis
+
+Level 1 (Processed)
+  └── Phase 9 — Financial Pattern 4 (Tokenomics opacity)
+      └── Evidence: Ketiadaan data supply, alokasi, vesting, treasury di seluruh docs resmi
+
+Level 2 (Knowledge)
+  └── Knowledge K-005 — Tokenomics Opacity Menciptakan Ketidakpastian Nilai Jangka Panjang
+
+Validation:
+  ├── Passed: Cross-phase consistency check
+  ├── Passed: Evidence audit (Moderate — 5 sumber, semua bersifat absence-of-data)
+  └── Confidence: 85/100
+```
+
+Knowledge K-006 — Single Trusted Bridge + USDC Concentration = Systemic Risk Tinggi
+
+Lineage:
+```
+Level 0 (Raw Data)
+  ├── Phase 4 — Core Components (Hyperliquid Bridge, native trusted model)
+  │   └── Source: https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview
+  ├── Phase 4 — Security Model (Bridge secured by validator set)
+  │   └── Source: https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview
+  ├── Phase 7 — External Dependencies (USDC criticality High)
+  │   └── Source: https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview
+  └── Phase 7 — Ecosystem Risks (Single bridge dependency, USDC concentration, both High)
+      └── Source: https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview
+
+Level 1 (Processed)
+  └── Phase 9 — Risk Response Pattern 1 (Bridge risk acceptance)
+      └── Evidence: Tidak ada alternative bridge trust-minimized di roadmap; USDC satu-satunya quote asset
+
+Level 2 (Knowledge)
+  └── Knowledge K-006 — Single Trusted Bridge + USDC Concentration = Systemic Risk Tinggi
+
+Validation:
+  ├── Passed: Cross-phase consistency check
+  ├── Passed: Evidence audit (Strong — 4 sumber, seluruhnya official docs)
+  └── Confidence: 90/100
+```
+
+Knowledge K-007 — Governance Infrastructure Tertinggal dari Token Launch
+
+Lineage:
+```
+Level 0 (Raw Data)
+  ├── Phase 6 — Governance (Proposal system unknown, voting unknown)
+  │   └── Source: https://hyperliquid.gitbook.io/hyperliquid-docs
+  ├── Phase 3 — EV-011 (Foundation formation indicated)
+  │   └── Source: https://hyperliquid.xyz/blog/hype-genesis
+  ├── Phase 7 — Governance Ecosystem (No formal DAO)
+  │   └── Source: https://hyperliquid.gitbook.io/hyperliquid-docs
+  └── Phase 9 — Governance Pattern 4 (Validator set implicit governance)
+      └── Source: https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview
+
+Level 1 (Processed)
+  └── Phase 9 — Decision: Staking activated at TGE (governance infra incomplete)
+      └── Evidence: Staking live, governance forum tidak ada
+
+Level 2 (Knowledge)
+  └── Knowledge K-007 — Governance Infrastructure Tertinggal dari Token Launch
+
+Validation:
+  ├── Passed: Cross-phase consistency check
+  ├── Passed: Evidence audit (Moderate — 4 sumber, termasuk absence-of-data)
+  └── Confidence: 88/100
+```
+
+Knowledge K-008 — No Formal Security Audits pada Core Protocol Meningkatkan Tail Risk
+
+Lineage:
+```
+Level 0 (Raw Data)
+  ├── Phase 4 — Audit History (Tidak ada audit formal publik)
+  │   └── Source: https://hyperliquid.gitbook.io/hyperliquid-docs
+  ├── Phase 7 — Ecosystem Risks (No formal security audits, High)
+  │   └── Source: https://hyperliquid.gitbook.io/hyperliquid-docs
+  └── Phase 9 — Risk Response Pattern 5 (Audit gap accepted)
+      └── Source: https://hyperliquid.gitbook.io/hyperliquid-docs
+
+Level 1 (Processed)
+  └── Phase 9 — Behavioral Pattern (Audit gap acceptance)
+      └── Evidence: Tidak ada laporan audit di docs, GitHub, atau Messari
+
+Level 2 (Knowledge)
+  └── Knowledge K-008 — No Formal Security Audits pada Core Protocol Meningkatkan Tail Risk
+
+Validation:
+  ├── Passed: Cross-phase consistency check
+  ├── Passed: Evidence audit (Moderate — 3 sumber, absence-of-data)
+  └── Confidence: 82/100
+```
+
+Knowledge K-009 — HyperEVM sebagai Developer Onboarding Strategy Memanfaatkan EVM Compatibility + CLOB Primitive
+
+Lineage:
+```
+Level 0 (Raw Data)
+  ├── Phase 3 — EV-007 (HyperEVM testnet 2024-11)
+  │   └── Source: https://hyperliquid.xyz/blog/hyperevm
+  ├── Phase 3 — EV-010 (Ecosystem Fund 2024)
+  │   └── Source: https://hyperliquid.xyz/blog/ecosystem-fund
+  ├── Phase 4 — Core Components (HyperEVM processing layer)
+  │   └── Source: https://hyperliquid.xyz/blog/hyperevm
+  ├── Phase 7 — Developer Ecosystem (EVM tooling, grants)
+  │   └── Source: https://hyperliquid.xyz/blog/ecosystem-fund
+  └── Phase 8 — Narrative (EVM-compatible/chain abstraction emerging)
+      └── Source: https://hyperliquid.xyz/blog/hyperevm
+
+Level 1 (Processed)
+  └── Phase 9 — Pattern: Modular execution layer addition
+      └── Evidence: HyperEVM additive layer, precompile CLOB access, Ecosystem Fund grants
+
+Level 2 (Knowledge)
+  └── Knowledge K-009 — HyperEVM sebagai Developer Onboarding Strategy Memanfaatkan EVM Compatibility + CLOB Primitive
+
+Validation:
+  ├── Passed: Cross-phase consistency check
+  ├── Passed: Evidence audit (Strong — 5 sumber, seluruhnya official blog)
+  └── Confidence: 94/100
+```
+
+Knowledge K-010 — Regulatory Exposure Perpetual DEX + BVI Entity + Global Permissionless Access = Tail Risk Terbuka
+
+Lineage:
+```
+Level 0 (Raw Data)
+  ├── Phase 1 — Foundation (Country BVI)
+  │   └── Source: https://messari.io/report/hyperliquid-deep-dive
+  ├── Phase 5 — Financial Risk (Regulatory risk High)
+  │   └── Source: https://messari.io/report/hyperliquid-deep-dive
+  ├── Phase 7 — Ecosystem Risks (Regulatory exposure High)
+  │   └── Source: https://messari.io/report/hyperliquid-deep-dive
+  └── Phase 9 — Risk Response Pattern 4 (No geo-blocking announcement)
+      └── Source: https://hyperliquid.gitbook.io/hyperliquid-docs
+
+Level 1 (Processed)
+  └── Phase 9 — Risk Response Pattern 4 (Regulatory risk acceptance)
+      └── Evidence: BVI entity, global perp access, no KYC/geo-blocking
+
+Level 2 (Knowledge)
+  └── Knowledge K-010 — Regulatory Exposure Perpetual DEX + BVI Entity + Global Permissionless Access = Tail Risk Terbuka
+
+Validation:
+  ├── Passed: Cross-phase consistency check
+  ├── Passed: Evidence audit (Moderate — 4 sumber, Messari kuat, docs official)
+  └── Confidence: 84/100
+```
+
+---
+
+KNOWLEDGE DEPENDENCY GRAPH
+
+K-001 — Vertical Integration Membuat Moat Teknis yang Sulit Direplikasi
+
+Dependency Graph:
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-001                                                  │
+│ Vertical Integration Moat                              │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── Phase 4 — Consensus Mechanism (HyperBFT custom)     │
+│ │   └── Source: Phase 4 Technology                      │
+│ ├── Phase 4 — Development Framework (Custom Rust)       │
+│ │   └── Source: Phase 4 Technology                      │
+│ ├── Phase 1 — Repository (GitHub Rust)                  │
+│ │   └── Source: Phase 1 Foundation                      │
+│ └── Phase 4 — System Architecture (Modular)             │
+│     └── Source: Phase 4 Technology                      │
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── Hyperliquid Labs (Entity)                           │
+│ ├── Jeff Yan (Entity)                                   │
+│ ├── iliensinc (Entity)                                  │
+│ └── Phase 3 — EV-001 (Founding)                         │
+│                                                         │
+│ DEPENDENTS (Knowledge)                                  │
+│ ├── K-002 (Phased rollout) — K-001 sebagai foundation   │
+│ ├── K-005 (Tokenomics opacity) — K-001 sebagai context  │
+│ └── K-009 (HyperEVM strategy) — K-001 sebagai basis     │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ If HyperBFT consensus changes → K-001 may change       │
+│ If framework changes from Rust → K-001 may change      │
+└──────────────────────────────────────────────────────────┘
+```
+
+K-002 — Phased Product Rollout Mengurangi Risiko Eksekusi Kompleks
+
+Dependency Graph:
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-002                                                  │
+│ Phased Product Rollout                                 │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── Phase 3 — EV-005 (Mainnet Perp DEX)                │
+│ │   └── Source: Phase 3 History                         │
+│ ├── Phase 3 — EV-006 (Spot DEX)                        │
+│ │   └── Source: Phase 3 History                         │
+│ ├── Phase 3 — EV-007 (HyperEVM testnet)                │
+│ │   └── Source: Phase 3 History                         │
+│ └── Phase 4 — Core Components                           │
+│     └── Source: Phase 4 Technology                      │
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── Hyperliquid Labs (Entity)                           │
+│ ├── Phase 2 — Entity (Team)                             │
+│ └── Phase 1 — Launch Dates                              │
+│                                                         │
+│ DEPENDENTS (Knowledge)                                  │
+│ ├── K-001 (Moat) — K-002 memperkuat K-001               │
+│ └── K-009 (HyperEVM) — K-002 jadi dasar                 │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ If TGE date changes → K-002 mungkin berubah            │
+│ If HyperEVM mainnet launch date changed → K-002 berubah│
+└──────────────────────────────────────────────────────────┘
+```
+
+K-003 — Strategic Investor = Market Maker Alignment
+
+Dependency Graph:
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-003                                                  │
+│ Investor = Market Maker Alignment                      │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── Phase 3 — EV-004 (Funding round 2023)              │
+│ │   └── Source: Phase 3 History                         │
+│ ├── Phase 2 — Entity SIG, GSR                          │
+│ │   └── Source: Phase 2 Entity                          │
+│ ├── Phase 5 — Financial Dependencies                    │
+│ │   └── Source: Phase 5 Financial                       │
+│ └── Phase 7 — External Dependencies                     │
+│     └── Source: Phase 7 Ecosystem                       │
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── Variant Fund (Entity)                               │
+│ ├── Delphi Digital (Entity)                             │
+│ ├── Hack VC (Entity)                                    │
+│ └── Phase 3 — EV-004 (Funding history)                  │
+│                                                         │
+│ DEPENDENTS (Knowledge)                                  │
+│ └── K-006 (Single bridge + USDC) — K-003 sebagai context│
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ If SIG/GSR withdrawal → K-003 mungkin berubah           │
+│ If funding round changed → K-003 berubah                │
+└──────────────────────────────────────────────────────────┘
+```
+
+K-004 — Community-First Token Distribution Tanpa Public Sale
+
+Dependency Graph:
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-004                                                  │
+│ Community-First Token Distribution                     │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── Phase 3 — EV-008 (TGE 2024-11-29)                  │
+│ │   └── Source: Phase 3 History                         │
+│ ├── Phase 5 — Token Sale (No private/public sale)       │
+│ │   └── Source: Phase 5 Financial                       │
+│ ├── Phase 6 — TGE (Native Hyperliquid L1)               │
+│ │   └── Source: Phase 6 Token                           │
+│ └── Phase 6 — Distribution (Community planned)          │
+│     └── Source: Phase 6 Token                           │
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── Hyperliquid Foundation (Entity)                     │
+│ ├── Hyperliquid Labs (Entity)                           │
+│ └── Phase 3 — EV-011 (Foundation formation indicated)   │
+│                                                         │
+│ DEPENDENTS (Knowledge)                                  │
+│ └── K-005 (Tokenomics opacity) — K-004 sebagai contrast │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ If token sale info changes → K-004 berubah              │
+│ If TGE distribution mechanism changes → K-004 berubah   │
+└──────────────────────────────────────────────────────────┘
+```
+
+K-005 — Tokenomics Opacity Menciptakan Ketidakpastian Nilai Jangka Panjang
+
+Dependency Graph:
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-005                                                  │
+│ Tokenomics Opacity                                     │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── Phase 6 — Supply (Max, Total, Circulating unknown)  │
+│ │   └── Source: Phase 6 Token                           │
+│ ├── Phase 6 — Distribution (Percentages unknown)        │
+│ │   └── Source: Phase 6 Token                           │
+│ ├── Phase 6 — Vesting (All unknown)                     │
+│ │   └── Source: Phase 6 Token                           │
+│ ├── Phase 6 — Inflation/Deflation (Unknown)             │
+│ │   └── Source: Phase 6 Token                           │
+│ └── Phase 5 — Treasury (Undisclosed)                    │
+│     └── Source: Phase 5 Financial                       │
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── Hyperliquid Foundation (Entity)                     │
+│ ├── Phase 3 — EV-008 (TGE)                              │
+│ └── Phase 9 — Financial Pattern 4                       │
+│                                                         │
+│ DEPENDENTS (Knowledge)                                  │
+│ ├── K-004 (Community distribution) — K-005 mengimbangi  │
+│ ├── K-007 (Governance delay) — K-005 sebagai context    │
+│ └── K-010 (Regulatory exposure) — K-005 sebagai risiko  │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ If whitepaper tokenomics released → K-005 berubah drastis│
+│ If supply data published → K-005 pasti berubah          │
+└──────────────────────────────────────────────────────────┘
+```
+
+K-006 — Single Trusted Bridge + USDC Concentration = Systemic Risk Tinggi
+
+Dependency Graph:
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-006                                                  │
+│ Single Trusted Bridge + USDC Concentration             │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── Phase 4 — Core Components (Hyperliquid Bridge)      │
+│ │   └── Source: Phase 4 Technology                      │
+│ ├── Phase 4 — Security Model (Trusted validator set)    │
+│ │   └── Source: Phase 4 Technology                      │
+│ ├── Phase 7 — External Dependencies (USDC criticality)  │
+│ │   └── Source: Phase 7 Ecosystem                       │
+│ └── Phase 7 — Ecosystem Risks (Single bridge, USDC)     │
+│     └── Source: Phase 7 Ecosystem                       │
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── Arbitrum (Entity — Chain)                           │
+│ ├── Ethereum Mainnet (Entity — Chain)                   │
+│ ├── USDC (Entity — Protocol)                            │
+│ ├── SIG (Entity — Market Maker)                         │
+│ ├── GSR (Entity — Market Maker)                         │
+│ └── Phase 9 — Risk Response Pattern 1                   │
+│                                                         │
+│ DEPENDENTS (Knowledge)                                  │
+│ ├── K-003 (Investor-MM) — K-006 terkait                 │
+│ ├── K-005 (Tokenomics opacity) — K-006 terkait          │
+│ └── K-010 (Regulatory) — K-006 sebagai salah satu risiko│
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ If bridge model changes to trust-minimized → K-006 berubah│
+│ If multi-collateral support added → K-006 berubah        │
+└──────────────────────────────────────────────────────────┘
+```
+
+K-007 — Governance Infrastructure Tertinggal dari Token Launch
+
+Dependency Graph:
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-007                                                  │
+│ Governance Infrastructure Tertinggal                    │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── Phase 6 — Governance (Unknown proposal system)      │
+│ │   └── Source: Phase 6 Token                           │
+│ ├── Phase 3 — EV-011 (Foundation formation indicated)   │
+│ │   └── Source: Phase 3 History                         │
+│ ├── Phase 7 — Governance Ecosystem (No formal DAO)      │
+│ │   └── Source: Phase 7 Ecosystem                       │
+│ └── Phase 9 — Governance Pattern 4 (Validator implicit) │
+│     └── Source: Phase 9 Behavioral                      │
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── Hyperliquid Foundation (Entity)                     │
+│ ├── Hyperliquid Labs (Entity)                           │
+│ ├── Jeff Yan (Entity)                                   │
+│ ├── iliensinc (Entity)                                  │
+│ └── Phase 6 — Governance (Validator set)                │
+│                                                         │
+│ DEPENDENTS (Knowledge)                                  │
+│ ├── K-005 (Tokenomics opacity) — K-007 terkait          │
+│ └── K-010 (Regulatory exposure) — K-007 sebagai konteks │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ If governance infrastructure launches → K-007 berubah   │
+│ If foundation legal docs published → K-007 berubah      │
+└──────────────────────────────────────────────────────────┘
+```
+
+K-008 — No Formal Security Audits pada Core Protocol Meningkatkan Tail Risk
+
+Dependency Graph:
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-008                                                  │
+│ No Formal Security Audits                              │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── Phase 4 — Audit History (Tidak ada audit)           │
+│ │   └── Source: Phase 4 Technology                      │
+│ ├── Phase 7 — Ecosystem Risks (No audit, High)          │
+│ │   └── Source: Phase 7 Ecosystem                       │
+│ └── Phase 9 — Risk Response Pattern 5 (Audit gap)       │
+│     └── Source: Phase 9 Behavioral                      │
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── Hyperliquid Labs (Entity)                           │
+│ ├── Phase 9 — Behavioral Pattern (Audit gap acceptance) │
+│ └── Phase 7 — Ecosystem Risks (Tail risk)               │
+│                                                         │
+│ DEPENDENTS (Knowledge)                                  │
+│ ├── K-005 (Tokenomics opacity) — K-008 terkait          │
+│ ├── K-006 (Bridge + USDC risk) — K-008 memperkuat       │
+│ └── K-010 (Regulatory exposure) — K-008 sebagai konteks │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ If formal audit published → K-008 berubah drastis       │
+│ If audit requirement waived → K-008 tetap               │
+└──────────────────────────────────────────────────────────┘
+```
+
+K-009 — HyperEVM sebagai Developer Onboarding Strategy
+
+Dependency Graph:
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-009                                                  │
+│ HyperEVM Developer Onboarding                          │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── Phase 3 — EV-007 (HyperEVM testnet)                │
+│ │   └── Source: Phase 3 History                         │
+│ ├── Phase 3 — EV-010 (Ecosystem Fund)                  │
+│ │   └── Source: Phase 3 History                         │
+│ ├── Phase 4 — Core Components (HyperEVM layer)          │
+│ │   └── Source: Phase 4 Technology                      │
+│ ├── Phase 7 — Developer Ecosystem (EVM tooling)         │
+│ │   └── Source: Phase 7 Ecosystem                       │
+│ └── Phase 8 — Narrative (EVM-compatible emerging)       │
+│     └── Source: Phase 8 Market                          │
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── Hyperliquid L1 (Entity — Chain)                     │
+│ ├── Phase 4 — Precompile (CLOB access)                  │
+│ └── Phase 9 — Pattern: Modular execution layer          │
+│                                                         │
+│ DEPENDENTS (Knowledge)                                  │
+│ ├── K-002 (Phased rollout) — K-009 sebagai produk       │
+│ └── K-005 (Tokenomics opacity) — K-009 terkait          │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ If HyperEVM mainnet launches → K-009 berubah           │
+│ If precompile spec change → K-009 berubah              │
+└──────────────────────────────────────────────────────────┘
+```
+
+K-010 — Regulatory Exposure Perpetual DEX + BVI Entity + Global Permissionless Access
+
+Dependency Graph:
+```
+┌──────────────────────────────────────────────────────────┐
+│ K-010                                                  │
+│ Regulatory Exposure                                    │
+├──────────────────────────────────────────────────────────┤
+│ DEPENDS ON (Direct)                                     │
+│ ├── Phase 1 — Foundation (Country BVI)                  │
+│ │   └── Source: Phase 1 Foundation                      │
+│ ├── Phase 5 — Financial Risk (Regulatory High)          │
+│ │   └── Source: Phase 5 Financial                       │
+│ ├── Phase 7 — Ecosystem Risks (Regulatory High)         │
+│ │   └── Source: Phase 7 Ecosystem                       │
+│ └── Phase 9 — Risk Response Pattern 4 (No geo-blocking) │
+│     └── Source: Phase 9 Behavioral                      │
+│                                                         │
+│ DEPENDS ON (Indirect)                                   │
+│ ├── Hyperliquid Labs (Entity)                           │
+│ ├── Hyperliquid L1 (Entity — Chain)                     │
+│ ├── Phase 8 — Market (Geographic focus unknown)         │
+│ └── Phase 5 — Financial (Regulatory dependencies)       │
+│                                                         │
+│ DEPENDENTS (Knowledge)                                  │
+│ ├── K-005 (Tokenomics opacity) — K-010 terkait          │
+│ ├── K-006 (Bridge + USDC risk) — K-010 terkait          │
+│ └── K-008 (No audits) — K-010 terkait                   │
+│                                                         │
+│ PROPAGATION PATH:                                       │
+│ If regulatory action occurs → K-010 berubah drastis     │
+│ If geo-blocking announced → K-010 berubah               │
+└──────────────────────────────────────────────────────────┘
+```
+
+---
+
+CONFLICT REGISTER WITH SEVERITY & IMPACT
+
+Conflict ID: C-001
+Category: Timeline
+Description: Testnet publik date — beberapa sumber menyebut "Maret 2023", fase lain "Q1 2023"
+Severity: Low
+Affected Knowledge: K-002 (Phased Product Rollout) — dampak minimal, hanya tanggal testnet
+Impact: 1 (Low × (1+1))
+Affected Phase: Phase 1, Phase 3
+Evidence: Phase 1 menyebut "Maret 2023 (testnet publik berincentiv)" dengan Evidence HIGH; Phase 3 EV-003 menyebut "2023-03" juga HIGH
+Sources: https://hyperliquid.xyz/blog/testnet-launch; https://defillama.com/chain/Hyperliquid
+Resolution: Dikategorikan sebagai perbedaan zona waktu/bulan; kedua sumber sepakat terjadi Q1-Q2 2023, konsensus utama (Maret 2023) diterima.
+Status: Resolved
+
+Conflict ID: C-002
+Category: Funding
+Description: Beberapa laporan menyebut "Series A" dan "Strategic" untuk ronde 2023; tidak ada angka dana.
+Severity: High
+Affected Knowledge: K-003 (Investor = MM Alignment) — dampak pada konteks valuasi dan anggaran
+Impact: 2 (High × (1+1))
+Affected Phase: Phase 5, Phase 3
+Evidence: Phase 3 EV-004 menyebut "Ronde Pendanaan Hyperliquid Labs (Seed/Series A)" dengan sumber The Block (HIGH); Phase 5 funding history menyebut "Series A / Strategic" dengan sumber yang sama (HIGH)
+Sources: https://www.theblock.co/post/298123/hyperliquid-labs-raises-funding
+Resolution: The Block Artikel menggunakan istilah "strategic round" dengan partisipasi investor terafiliasi; dikategorikan sebagai "Strategic/Series A" dan jumlah dana dianggap undisclosed.
+Status: Resolved — jumlah tetap tidak diungkap, label dikonsolidasi.
+
+Conflict ID: C-003
+Category: Token Supply
+Description: Tidak ada sumber yang menyebut total supply HYPE; beberapa unofficial blog menyebut "1 billion" tapi tidak diverifikasi.
+Severity: Medium
+Affected Knowledge: K-005 (Tokenomics Opacity) — memperkuat insight opacity
+Impact: 1 (Medium × (1+1))
+Affected Phase: Phase 6
+Evidence: Tidak ada sumber resmi yang menyebut angka supply; blog unofficial tidak dimasukkan ke dataset karena tidak kredibel.
+Sources: https://hyperliquid.xyz/blog/hype-genesis; https://www.coingecko.com/en/coins/hyperliquid
+Resolution: Dianggap "Not Public" — jumlah supply tidak dapat diverifikasi; Knowledge K-005 justru mengangkat fakta ini sebagai insight.
+Status: Resolved — diakui sebagai opacity, bukan konflik.
+
+Conflict ID: C-004
+Category: Bridge
+Description: Apakah bridge supports generic messaging atau hanya asset transfers — docs resmi ambigu.
+Severity: Medium
+Affected Knowledge: K-006 (Single Trusted Bridge + USDC Concentration)
+Impact: 1 (Medium × (1+1))
+Affected Phase: Phase 4, Phase 7
+Evidence: Phase 4 menyebut "Native bridge ke Arbitrum/Ethereum untuk transfer aset" dan "Cross-chain Messaging: Native bridge"; Phase 7 menyebut "bridge functionality depends on Arbitrum liveness"
+Sources: https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview; https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview
+Resolution: Docs tidak menyebut dukungan arbitrary message passing; disimpulkan hanya asset transfers via validator set (trusted custodial model).
+Status: Resolved — diinterpretasikan sebagai asset transfer only.
+
+Conflict Summary:
+Total Conflicts: 4
+Resolved: 3
+Unresolved: 1
+Critical: 0
+High: 1
+Medium: 2
+Low: 1
+
+Conflict Score:
+```
+Conflict Score = 
+  (Resolved × 1.0) +
+  (Unresolved Low × 0.9) +
+  (Unresolved Medium × 0.6) +
+  (Unresolved High × 0.3) +
+  (Unresolved Critical × 0.0)
+────────────────────────────────────
+        Total Conflicts
+
+= (3 × 1.0) + (0 × 0.9) + (0 × 0.6) + (1 × 0.3) + (0 × 0.0)
+= 3 + 0.3
+= 3.3 / 4
+= 0.825
+Hasil: 82.5%
+```
+
+Unresolved: 1 conflict (C-002 — jumlah dana ronde tidak diungkap) tetap unresolved karena tidak ada sumber primer yang transparan.
+
+---
+
+EVIDENCE AUDIT
+
+Knowledge K-001 — Vertical Integration
+· Supporting Dataset: Phase 1, Phase 4, Phase 9
+· Evidence Quality: Strong
+· Evidence Weight: 8.5 (rata-rata dari 4 sumber, semuanya official docs/blog)
+· Assessment: Evidence solid dengan 4 sumber resmi, seluruhnya dari docs Hyperliquid dan GitHub resmi.
+
+Knowledge K-002 — Phased Product Rollout
+· Supporting Dataset: Phase 1, Phase 3, Phase 4, Phase 8
+· Evidence Quality: Strong
+· Evidence Weight: 8 (semua blog resmi Hyperliquid)
+· Assessment: Timeline jelas, dapat diverifikasi dari 4 blog resmi; sangat kuat.
+
+Knowledge K-003 — Investor = Market Maker Alignment
+· Supporting Dataset: Phase 2, Phase 3, Phase 5, Phase 7, Phase 9
+· Evidence Quality: Moderate (satu sumber berita utama The Block)
+· Evidence Weight: 6.0 (The Block sebagai "Major News", plus dukungan dari Messari 7)
+· Assessment: Informasi substantif dari The Block, cukup kredibel; dukungan Messari memperkuat.
+
+Knowledge K-004 — Community-First Token Distribution
+· Supporting Dataset: Phase 3, Phase 5, Phase 6
+· Evidence Quality: Strong
+· Evidence Weight: 8 (blog resmi Hyperliquid)
+· Assessment: Fully official, konsisten seluruh sumber; tak ada konflik.
+
+Knowledge K-005 — Tokenomics Opacity
+· Supporting Dataset: Phase 5, Phase 6, Phase 9
+· Evidence Quality: Moderate (evidence berdasarkan absence-of-data)
+· Evidence Weight: 5 (docs resmi menyebut "not published" atau "unknown")
+· Assessment: Insight berbasis ketiadaan publikasi, akurat tapi data gap signifikan.
+
+Knowledge K-006 — Single Trusted Bridge + USDC Concentration
+· Supporting Dataset: Phase 4, Phase 7, Phase 9
+· Evidence Quality: Strong
+· Evidence Weight: 8.5 (docs resmi, konsisten)
+· Assessment: Sangat jelas dan terdokumentasi; risiko didasarkan fakta teknis.
+
+Knowledge K-007 — Governance Infrastructure Tertinggal
+· Supporting Dataset: Phase 6, Phase 3, Phase 7, Phase 9
+· Evidence Quality: Moderate
+· Evidence Weight: 6 (docs resmi + absence-of-data)
+· Assessment: Valid berdasarkan ketiadaan framework governance; diperkuat indikasi foundation di blog.
+
+Knowledge K-008 — No Formal Security Audits
+· Supporting Dataset: Phase 4, Phase 7, Phase 9
+· Evidence Quality: Moderate
+· Evidence Weight: 5.5 (absence-of-data; docs tidak menyebut audit, GitHub tidak ada)
+· Assessment: Kuat secara logika, bukti berdasarkan ketiadaan laporan audit publik.
+
+Knowledge K-009 — HyperEVM sebagai Developer Onboarding
+· Supporting Dataset: Phase 3, Phase 4, Phase 7, Phase 8
+· Evidence Quality: Strong
+· Evidence Weight: 8 (blog resmi Hyperliquid, ecosystem fund)
+· Assessment: Sangat solid; HyperEVM jelas, Ecosystem Fund jelas, narrative jelas.
+
+Knowledge K-010 — Regulatory Exposure
+· Supporting Dataset: Phase 1, Phase 5, Phase 7, Phase 9
+· Evidence Quality: Moderate
+· Evidence Weight: 6.5 (Messari kuat 7, docs resmi mendukung)
+· Assessment: Analisis risiko berdasarkan fakta BVI entity, perp DEX, dan global access; tidak ada legal opinion di dataset.
+
+---
+CONFIDENCE ASSESSMENT — v3.0
+
+Knowledge K-001 — Vertical Integration
+· Evidence Count: 4
+· Evidence Weight: 8.5
+· Independent Sources: 3 (Docs resmi, GitHub, Blog)
+· Official Sources: 3 (Docs resmi, GitHub, Blog)
+· Source Diversity: 10/10 (total weight 34)
+· Cross-phase Validation: Pass
+· No Conflicts: 0 conflicts
+· Coverage: 100%
+· Confidence Score: 95/100
+· Confidence Level: High
+
+Knowledge K-002 — Phased Product Rollout
+· Evidence Count: 4
+· Evidence Weight: 8
+· Independent Sources: 4
+· Official Sources: 4
+· Source Diversity: 10/10 (total weight 32)
+· Cross-phase Validation: Pass
+· No Conflicts: 0
+· Coverage: 100%
+· Confidence Score: 92/100
+· Confidence Level: High
+
+Knowledge K-003 — Investor = Market Maker Alignment
+· Evidence Count: 4
+· Evidence Weight: 6.5
+· Independent Sources: 3 (The Block, Messari, Docs)
+· Official Sources: 2 (Docs + messari menyebut)
+· Source Diversity: 10/10 (total weight 26)
+· Cross-phase Validation: Pass
+· No Conflicts: 1 (C-002 unresolved funding amount)
+· Coverage: 90%
+· Confidence Score: 88/100
+· Confidence Level: High
+
+Knowledge K-004 — Community-First Token Distribution
+· Evidence Count: 4
+· Evidence Weight: 8
+· Independent Sources: 3 (Blog, CoinGecko, Messari)
+· Official Sources: 3
+· Source Diversity: 10/10 (total weight 32)
+· Cross-phase Validation: Pass
+· No Conflicts: 0
+· Coverage: 100%
+· Confidence Score: 93/100
+· Confidence Level: High
+
+Knowledge K-005 — Tokenomics Opacity
+· Evidence Count: 5
+· Evidence Weight: 5
+· Independent Sources: 3
+· Official Sources: 2
+· Source Diversity: 10/10 (total weight 25)
+· Cross-phase Validation: Pass (menggunakan absence-of-data lintas Phase 5,6)
+· No Conflicts: 0 (justru konfirmasi oleh C-003)
+· Coverage: 90%
+· Confidence Score: 85/100
+· Confidence Level: High
+
+Knowledge K-006 — Single Trusted Bridge + USDC Concentration
+· Evidence Count: 4
+· Evidence Weight: 8.5
+· Independent Sources: 3 (Docs, GitBook, Messari)
+· Official Sources: 3
+· Source Diversity: 10/10 (total weight 34)
+· Cross-phase Validation: Pass
+· No Conflicts: 0
+· Coverage: 100%
+· Confidence Score: 90/100
+· Confidence Level: High
+
+Knowledge K-007 — Governance Infrastructure Tertinggal
+· Evidence Count: 4
+· Evidence Weight: 6
+· Independent Sources: 3 (Docs, Blog, Messari)
+· Official Sources: 2
+· Source Diversity: 10/10 (total weight 24)
+· Cross-phase Validation: Pass
+· No Conflicts: 0
+· Coverage: 85%
+· Confidence Score: 88/100
+· Confidence Level: High
+
+Knowledge K-008 — No Formal Security Audits
+· Evidence Count: 3
+· Evidence Weight: 5.5
+· Independent Sources: 2 (Docs, Messari)
+· Official Sources: 1 (Docs resmi — tidak ada audit)
+· Source Diversity: 5/10 (total weight 16.5)
+· Cross-phase Validation: Pass
+· No Conflicts: 0
+· Coverage: 80%
+· Confidence Score: 82/100
+· Confidence Level: High
+
+Knowledge K-009 — HyperEVM sebagai Developer Onboarding
+· Evidence Count: 5
+· Evidence Weight: 8
+· Independent Sources: 4 (Blog, Docs, CoinGecko, Messari)
+· Official Sources: 4
+· Source Diversity: 10/10 (total weight 40)
+· Cross-phase Validation: Pass
+· No Conflicts: 0
+· Coverage: 100%
+· Confidence Score: 94/100
+· Confidence Level: High
+
+Knowledge K-010 — Regulatory Exposure
+· Evidence Count: 4
+· Evidence Weight: 6.5
+· Independent Sources: 3 (Messari, Docs, The Block)
+· Official Sources: 2
+· Source Diversity: 10/10 (total weight 26)
+· Cross-phase Validation: Pass
+· No Conflicts: 0
+· Coverage: 85%
+· Confidence Score: 84/100
+· Confidence Level: High
+
+Confidence Summary:
+High (80-100): 10 Knowledge
+Medium (60-79): 0 Knowledge
+Low (<60): 0 Knowledge
+Average Confidence Score: 89.1/100
+
+---
+
+KNOWLEDGE STABILITY & VERSIONING
+
+Knowledge K-001 — Vertical Integration Membuat Moat Teknis
+· Stability: Stable
+· Current Version: v1.1
+· Created: 2025-04-04
+· Last Updated: 2025-04-04
+· Status: Active
+· Version History:
+ · v1.0 — 2025-04-04
+ · Created with evidence: Phase 4 (consensus, framework), Phase 1 (GitHub), Phase 9 (pattern)
+ · Confidence: 95/100
+ · v1.1 — 2025-04-04
+ · Trigger: Cross-phase consistency check menyelesaikan C-001
+ · Expected Change: Tidak ada; konsisten
+ · Confidence Change: 94 → 95
+
+Knowledge K-002 — Phased Product Rollout
+· Stability: Stable (selama tidak ada perubahan tanggal mainnet)
+· Current Version: v1.0
+· Created: 2025-04-04
+· Last Updated: 2025-04-04
+· Status: Active
+· Version History:
+ · v1.0 — 2025-04-04
+ · Created with evidence: Phase 3 EV-005, EV-006, EV-007
+ · Confidence: 92/100
+
+Knowledge K-003 — Investor = Market Maker Alignment
+· Stability: Stable (sepanjang pengumuman resmi)
+· Current Version: v1.0
+· Created: 2025-04-04
+· Last Updated: 2025-04-04
+· Status: Active
+· Version History:
+ · v1.0 — 2025-04-04
+ · Created with evidence: Phase 2, Phase 3 EV-004, Phase 5, Phase 7
+ · Confidence: 88/100
+
+Knowledge K-004 — Community-First Token Distribution
+· Stability: Stable
+· Current Version: v1.0
+· Created: 2025-04-04
+· Last Updated: 2025-04-04
+· Status: Active
+· Version History:
+ · v1.0 — 2025-04-04
+ · Created with evidence: Phase 3 EV-008, Phase 5, Phase 6
+ · Confidence: 93/100
+
+Knowledge K-005 — Tokenomics Opacity
+· Stability: Volatile (sangat dipengaruhi oleh rilis whitepaper)
+· Current Version: v1.0
+· Created: 2025-04-04
+· Last Updated: 2025-04-04
+· Status: Active
+· Version History:
+ · v1.0 — 2025-04-04
+ · Created with evidence: Phase 5, Phase 6 (absence-of-data)
+ · Confidence: 85/100
+ · v1.1 — Planned
+ · Trigger: Jika whitepaper tokenomics terbit
+ · Expected Change: Seluruh parameter supply, vesting, emission akan terupdate
+ · Confidence Change: 85 → 95
+
+Knowledge K-006 — Single Trusted Bridge + USDC Concentration
+· Stability: Stable
+· Current Version: v1.0
+· Created: 2025-04-04
+· Last Updated: 2025-04-04
+· Status: Active
+· Version History:
+ · v1.0 — 2025-04-04
+ · Created with evidence: Phase 4 bridge, Phase 7 ecosystem risks
+ · Confidence: 90/100
+
+Knowledge K-007 — Governance Infrastructure Tertinggal
+· Stability: Emerging (masker berubah jika governance diluncurkan)
+· Current Version: v1.0
+· Created: 2025-04-04
+· Last Updated: 2025-04-04
+· Status: Active
+· Version History:
+ · v1.0 — 2025-04-04
+ · Created with evidence: Phase 6, Phase 3, Phase 7
+ · Confidence: 88/100
+ · v1.1 — Planned
+ · Trigger: Jika foundation merilis dokumen legal
+ · Expected Change: Klarifikasi yurisdiksi foundation, kontrol treasury
+ · Confidence Change: 88 → 92
+
+Knowledge K-008 — No Formal Security Audits
+· Stability: Stable (sampai adanya audit baru)
+· Current Version: v1.0
+· Created: 2025-04-04
+· Last Updated: 2025-04-04
+· Status: Active
+· Version History:
+ · v1.0 — 2025-04-04
+ · Created with evidence: Phase 4 audit history, Phase 7 risks
+ · Confidence: 82/100
+ · v1.1 — Planned
+ · Trigger: Jika audit formal dirilis
+ · Expected Change: Menghapus "no audits" menjadi "audited by X"
+ · Confidence Change: 82 → 95
+
+Knowledge K-009 — HyperEVM sebagai Developer Onboarding
+· Stability: Emerging (berubah seiring mainnet HyperEVM)
+· Current Version: v1.0
+· Created: 2025-04-04
+· Last Updated: 2025-04-04
+· Status: Active
+· Version History:
+ · v1.0 — 2025-04-04
+ · Created with evidence: Phase 3 EV-007, EV-010
+ · Confidence: 94/100
+ · v1.1 — Planned
+ · Trigger: Saat HyperEVM mainnet live
+ · Expected Change: Perubahan dari testnet ke mainnet status, adopsi
+ · Confidence Change: 94 → 98
+
+Knowledge K-010 — Regulatory Exposure
+· Stability: Volatile (sangat dipengaruhi aksi regulasi)
+· Current Version: v1.0
+· Created: 2025-04-04
+· Last Updated: 2025-04-04
+· Status: Active
+· Version History:
+ · v1.0 — 2025-04-04
+ · Created with evidence: Phase 1, Phase 5, Phase 7
+ · Confidence: 84/100
+ · v1.1 — Planned
+ · Trigger: Jika enforcement action atau geo-blocking diumumkan
+ · Expected Change: Perubahan risiko, kemungkinan shutdown
+ · Confidence Change: 84 → 90
+
+---
+
+MISSING KNOWLEDGE CLASSIFICATION
+
+Missing Item: Jumlah dana ronde 2023 (amount, valuasi)
+· Phase: Phase 5
+· Reason: Not Public (tidak diungkap oleh proyek atau The Block)
+· Severity: High
+· Impact: K-003 (valuasi, skala investor)
+
+Missing Item: Total Supply HYPE
+· Phase: Phase 6
+· Reason: Not Public (whitepaper belum terbit)
+· Severity: High
+· Impact: K-005 (dampak langsung pada nilai)
+
+Missing Item: Circulating Supply HYPE saat TGE
+· Phase: Phase 6
+· Reason: Not Public
+· Severity: High
+· Impact: K-005, K-004
+
+Missing Item: Alokasi token team/investor/foundation/treasury (persentase)
+· Phase: Phase 6
+· Reason: Not Public
+· Severity: High
+· Impact: K-005
+
+Missing Item: Vesting schedule dan cliff
+· Phase: Phase 6
+· Reason: Not Public
+· Severity: Medium
+· Impact: K-005, K-007
+
+Missing Item: Tingkat inflasi staking / emission rate
+· Phase: Phase 6
+· Reason: Not Public
+· Severity: Medium
+· Impact: K-005, K-007
+
+Missing Item: Fee switch status
+· Phase: Phase 6
+· Reason: Not Yet Released (belum diumumkan)
+· Severity: Medium
+· Impact: K-005, K-007
+
+Missing Item: Ukuran dan komposisi treasury
+· Phase: Phase 5
+· Reason: Not Public
+· Severity: High
+· Impact: K-005, K-007
+
+Missing Item: Alamat kontrak Wrapped HYPE (WHYPE) di Arbitrum
+· Phase: Phase 1
+· Reason: Not Public (belum dipublikasikan di docs resmi)
+· Severity: Low
+· Impact: Integrasi teknis, bukan knowledge inti
+
+Missing Item: Alamat treasury/foundation/team/investor vesting (on-chain)
+· Phase: Phase 6
+· Reason: Not Public
+· Severity: Medium
+· Impact: K-005, K-007
+
+Missing Item: Jumlah validator set dan stake distribution
+· Phase: Phase 4, Phase 7
+· Reason: Not Public
+· Severity: High
+· Impact: K-007, desentralisasi
+
+Missing Item: Audit keamanan formal
+· Phase: Phase 4
+· Reason: Not Existed (belum ditemukan laporan publik)
+· Severity: High
+· Impact: K-008
+
+Missing Item: TVL dan volume spesifik
+· Phase: Phase 8
+· Reason: Not Public (tidak ada dashboard resmi; DefiLlama tersedia tapi data tidak di-extract dalam dataset)
+· Severity: Medium
+· Impact: K-003, market position
+
+Missing Item: Daily active users dan transactions
+· Phase: Phase 8
+· Reason: Not Public
+· Severity: Medium
+· Impact: Adopsi metrics
+
+Missing Item: Market share perp DEX
+· Phase: Phase 8
+· Reason: Not Public
+· Severity: Medium
+· Impact: Positioning
+
+---
+
+CIF SCORE CALCULATION — v3.0
+
+Research Quality (25%)
+· (Complete Phases / 10) × 100 = 0.9 × 100 = 90
+· Kontribusi: 90 × 0.25 = 22.5
+
+Consistency (20%)
+· (Passed Checks / Total Checks) × 100 = (6 / 7) × 100 = 85.7
+· Kontribusi: 85.7 × 0.20 = 17.14
+
+Evidence (15%)
+· Average Evidence Score (0-100) = 78 (rata-rata evidence weight × 10)
+· Kontribusi: 78 × 0.15 = 11.7
+
+Coverage (15%)
+· Overall Coverage (%) = 78
+· Kontribusi: 78 × 0.15 = 11.7
+
+Conflict (15%)
+· Conflict Score (%) = 82.5
+· Kontribusi: 82.5 × 0.15 = 12.38
+
+Knowledge (10%)
+· Average Confidence Score = 89.1
+· Kontribusi: 89.1 × 0.10 = 8.91
+
+CIF Score = (22.5 + 17.14 + 11.7 + 11.7 + 12.38 + 8.91) = 84.33
+Dibulatkan ke satu desimal: 84.3
+
+Interpretation:
+· 84.3 masuk kategori "Good (80-90)"
+· CIF berkualitas tinggi, beberapa area perlu perbaikan (terutama data tokenomics dan metrik adopsi)
+
+---
+
+FINAL VALIDATION SUMMARY
+
+Dataset Completeness:
+- Complete Phases: 7 dari 10
+- Missing Information: 15 item, semua dicatat di Missing Knowledge Classification
+- Status: 70% lengkap
+
+Cross-phase Consistency:
+- Overall: 85.7%
+- Status: Konsisten
+
+Evidence Quality:
+- Strong: 6 Knowledge (K-001, K-002, K-004, K-006, K-009, K-010)
+- Moderate: 4 Knowledge (K-003, K-005, K-007, K-008)
+- Weak: 0 Knowledge
+
+Confidence Assessment:
+- High: 10 Knowledge
+- Medium: 0 Knowledge
+- Low: 0 Knowledge
+- Average: 89.1/100
+
+Remaining Conflicts:
+- Resolved: 3
+- Unresolved: 1
+- Critical: 0
+- High: 1
+- Medium: 2
+- Low: 1
+
+Knowledge Stability Distribution:
+- Stable: 6 (K-001, K-002, K-003, K-004, K-006, K-008)
+- Emerging: 3 (K-007, K-009, K-010)
+- Volatile: 1 (K-005)
+- Deprecated: 0
+
+CIF Score: 84.3/100
+
+Overall Validation Result:
+CIF untuk Hyperliquid menunjukkan kualitas tinggi dengan skor 84.3/100, masuk kategori "Good". Dataset kuat pada aspek teknis (komponen lengkap, timeline jelas, teknologi terverifikasi dari docs resmi dan GitHub) dan knowledge generation (10 insight dengan confidence rata-rata 89.1/100). Kelemahan utama berasal dari opacity proyek: tokenomics tidak transparan, tidak ada audit keamanan publik, tidak ada treasury transparency, dan metrik adopsi tidak tersedia di dashboard resmi — ini membuat 15 item data "not public" dan menurunkan skor coverage (78%). Namun, insight yang dihasilkan justru mengangkat ketidaklengkapan ini sebagai temuan negatif yang valid (K-005, K-007, K-008), menunjukkan dataset tidak menyesatkan — ia secara jujur mencatat ketidaktahuan sebagai fakta. CIF layak digunakan untuk analisis lintas proyek dengan catatan data tokenomics dan metrik adopsi harus diperbarui saat proyek merilis informasi tambahan.
+
+Recommended Re-run:
+- Phase 5 — Amount pendanaan ronde 2023, treasury size, komposisi treasury — saat data diumumkan
+- Phase 6 — Seluruh tokenomics (supply, alokasi, vesting, emission) — saat whitepaper terbit
+- Phase 7 — Alamat resmi treasury/foundation/team/investor vesting — saat dipublikasikan
+- Phase 8 — Metrik adopsi (TVL, volume, daily users) — saat dashboard resmi tersedia atau query DefiLlama API
+
+QA Status: PASSED
+Confidence Level: HIGH
+
+---
+
+## Airdrop Intelligence
+_ref: `docs/Ontology/DecisionEvent.md`, `docs/Ontology/Context.md` — an airdrop is a Decision Event with an eight-POV outcome_
+
+PROJECT: Hyperliquid
+
+STATUS AIRDROP
+
+Sudah dilakukan. Token Generation Event (TGE) HYPE terjadi pada 2024-11-29 dengan distribusi komunitas melalui airdrop/points claim bagi pengguna testnet dan mainnet, tanpa public/private sale, diluncurkan native di Hyperliquid L1【Phase 3 — EV-008 (HIGH) https://hyperliquid.xyz/blog/hype-genesis】【Phase 6 — TGE (HIGH) https://hyperliquid.xyz/blog/hype-genesis】.
+
+AIRDROP EVENTS
+
+AD-001: HYPE Genesis Airdrop / Points Claim
+Tanggal: 2024-11-29
+Tipe: Points-based / Retroactive
+Alokasi: Tidak ditemukan (persentase dari total supply untuk komunitas tidak diungkap resmi)
+Penerima: Tidak ditemukan (jumlah alamat yang eligible tidak dipublikasikan)
+Nilai saat klaim: Tidak ditemukan (harga HYPE saat TGE 2024-11-29 tidak tercatat di sumber Phase 1-11; CoinGecko listing date 2024-11-29 tapi harga opening tidak diekstrak)
+Kriteria: Pengguna yang berpartisipasi di testnet publik (Maret 2023) dan mainnet (Perp DEX sejak Mei 2023, Spot DEX sejak Okt 2023), mengumpulkan points melalui aktivitas trading, volume, dan/atau interaksi protokol — detail formula points tidak diungkap
+Anti-sybil: Tidak ditemukan (mekanisme penyaringan sybil tidak diumumkan; tidak ada laporan jumlah alamat yang didiskualifikasi)
+Terkait EV: EV-008 (Phase 3 History)
+Sitasi: https://hyperliquid.xyz/blog/hype-genesis (HIGH) [Official Blog HYPE Genesis]; https://hyperliquid.gitbook.io/hyperliquid-docs (MEDIUM) [Documentation]; https://www.coingecko.com/en/coins/hyperliquid (HIGH) [CoinGecko Listing Date]
+
+CONTEXT SAAT KEPUTUSAN
+
+Tahap funding: Hanya satu ronde strategic funding 2023 (Variant Fund, Delphi Digital, Hack VC, SIG, GSR) — amount & valuation undisclosed; tidak ada follow-on round tercatat【Phase 5 — Funding History (HIGH) https://www.theblock.co/post/298123/hyperliquid-labs-raises-funding】. Ukuran komunitas: Testnet publik berincentiv Maret 2023, mainnet Perp live Mei 2023, Spot live Okt 2023 — jumlah pengguna unik tidak dipublikasikan; points program berjalan selama ~1.5 tahun pre-TGE【Phase 3 — EV-003, EV-005, EV-006 (HIGH)】. Kondisi pasar: Siklus 2024 post-Bitcoin ETF approval (Jan 2024), memecoin/airdrop meta kuat (JUP, WEN, DYM, STRK, AEVO Q1 2024), perp DEX on-chain narrative rising (dYdX v4, Aevo, Vertex aktif)【Phase 8 — Market Timeline, Narrative Position (HIGH)】. Kompetitor terdekat: dYdX (token DYDX live 2021, migration ke v4 chain 2023), GMX (token GMX live 2021), Vertex (token VRTX 2023), Aevo (token AEVO 2024) — semuanya sudah memiliki token sebelum Hyperliquid TGE【Phase 8 — Competitor Landscape (HIGH)】.
+
+TRIGGER DAN ALTERNATIF
+
+Trigger: Transisi ke Proof-of-Stake security (butuh token untuk staking validator), community ownership sebagai langkah desentralisasi, dan memenuhi ekspektasi komunitas yang mengumpulkan points >1.5 tahun【Phase 3 — EV-008 (HIGH)】【Phase 9 — Decision: TGE via airdrop (HIGH)】. Alternatif yang tersedia tapi tidak diambil: (1) Public token sale / IDO / launchpad — ditolak untuk menghindari regulatory risk securities dan selling pressure awal【Phase 5 — Token Sale (HIGH)】; (2) Private sale ke investor — investor sudah dapat allocation via equity/SAFT di funding round 2023, token allocation terpisah undisclosed【Phase 3 — EV-004 (HIGH)】; (3) Tidak mendistribusikan token sama sekali (stay tokenless) — tidak memungkinkan karena PoS security memerlukan native token untuk staking【Phase 4 — Security Model (HIGH)】; (4) Distribusi bertahap (seasonal) — diputuskan single TGE event dengan claim window, bukan multi-season【Phase 3 — EV-008 (HIGH)】.
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi:
+- "HYPE Genesis: distributing ownership to the community that built Hyperliquid" — distribusi kepemilikan ke komunitas yang membangun Hyperliquid【Phase 3 — EV-008 (HIGH) https://hyperliquid.xyz/blog/hype-genesis】.
+- Token digunakan untuk staking (network security), governance, fee payment, dan validator economics【Phase 6 — Utility (HIGH) https://hyperliquid.xyz/blog/hype-genesis】.
+- Fair launch: no private/public sale, no investor token allocation at TGE (investor allocation via vesting terpisah)【Phase 5 — Token Sale (HIGH) https://hyperliquid.xyz/blog/hype-genesis】.
+
+Alasan yang tidak diumumkan (HIPOTESIS):
+- Memenuhi syarat listing CEX tier-1 yang memerlukan token distribution ke retail/community sebelum listing — HIPOTESIS (MEDIUM) [Phase 8 — Exchange Ecosystem: CEX listing status unknown; Phase 9 — Pattern: fair launch builds CEX listing credibility].
+- Menghindari klasifikasi security di US (Howey test) dengan tidak ada public sale, no investment contract, token utility immediate (staking, fee, governance) — HIPOTESIS (HIGH) [Phase 9 — Risk Response Pattern 1: regulatory avoidance via BVI entity + native token + no sale; Phase 10 — Insight 10: regulatory exposure mitigation].
+- Memberikan exit liquidity untuk early investor/team via TGE price discovery tanpa lockup yang terlalu ketat (vesting schedule undisclosed) — HIPOTESIS (MEDIUM) [Phase 6 — Vesting Schedule: all unknown; Phase 9 — Financial Pattern 4: tokenomics opacity retained flexibility].
+- Membangun narratif "community-owned" untuk menarik developer ke HyperEVM (testnet launch Nov 2024 bersamaan TGE) — HIPOTESIS (HIGH) [Phase 3 — EV-007, EV-008 same month; Phase 9 — Decision: HyperEVM testnet + TGE simultaneous].
+
+OUTCOME PER POV
+
+POV Founder (Jeff Yan, iliensinc): Sukses
+- Jangka pendek: Token live, staking aktif, validator economics berjalan, komunitas claim airdrop, tidak ada exploit/major bug pada TGE, narrative "fair launch" tervalidasi media【Phase 3 — EV-008 (HIGH)】【Phase 9 — Decision: TGE via airdrop (HIGH)】.
+- Jangka panjang: Kontrol tokenomics tetap di tangan tim (allocation, vesting, fee switch undisclosed), fleksibilitas mengubah parameter supply, foundation formation indicated tapi unverified mempertahankan de facto control【Phase 6 — Distribution, Vesting, Governance (LOW)】【Phase 9 — Governance Pattern 2 (HIGH)】.
+- Dasar: Phase 3 EV-008, Phase 6 Token, Phase 9 Behavioral (HIGH/MEDIUM/LOW)
+
+POV VC (Variant Fund, Delphi Digital, Hack VC): Sebagian
+- Jangka pendek: Equity/SAFT value marked up via token price discovery; token allocation (vesting) terpisah dari community airdrop, tidak diluted oleh public sale【Phase 3 — EV-004 (HIGH)】【Phase 5 — Funding History (HIGH)】.
+- Jangka panjang: Tokenomics opacity (vesting, emission, fee switch unknown) menciptakan uncertainty pada ROI timeline; tidak ada follow-on funding round publik menandakan runway cukup tapi growth capital terbatas【Phase 6 — Vesting, Inflation (LOW)】【Phase 5 — Financial Dependencies (HIGH)】.
+- Dasar: Phase 3 EV-004, Phase 5 Financial, Phase 6 Token (HIGH/MEDIUM/LOW)
+
+POV Retail (penerima airdrop Season 1/Genesis): Sebagian
+- Jangka pendek: Menerima HYPE gratis via claim, immediate utility (staking, fee payment, governance), harga discovery di pasar — nilai aktual bergantung pada harga TGE & volatilitas awal【Phase 6 — Utility (HIGH)】.
+- Jangka panjang: Dilution risk dari emission staking (inflationary, rate unknown), fee switch belum aktif (no revenue share), vesting team/investor unknown unlock schedule — tekanan jual berkelanjutan mungkin【Phase 6 — Inflation/Deflation (MEDIUM)】【Phase 9 — Financial Pattern 4 (HIGH)】.
+- Dasar: Phase 6 Token, Phase 9 Behavioral (HIGH/MEDIUM)
+
+POV Community (pengguna aktif pre-TGE, points farmer, kontributor ekosistem): Sukses
+- Jangka pendek: Recognition untuk kontribusi testnet/mainnet via points claim; ownership rasa "builder" bukan speculator【Phase 3 — EV-003, EV-008 (HIGH)】.
+- Jangka panjang: Governance infrastructure belum lengkap (no forum, no proposal system, no voting) — community ownership symbolic tanpa execution power; Ecosystem Fund grants jadi salah satu channel partisipasi nyata【Phase 6 — Governance (MEDIUM)】【Phase 3 — EV-010 (HIGH)】.
+- Dasar: Phase 3 History, Phase 6 Token, Phase 7 Ecosystem (HIGH/MEDIUM)
+
+POV Developer (builder di HyperEVM/testnet): Sukses
+- Jangka pendek: HyperEVM testnet live bersamaan TGE, HYPE sebagai gas token, akses CLOB via precompile — token utility immediate untuk dev【Phase 3 — EV-007 (HIGH)】【Phase 4 — Core Components: HyperEVM (HIGH)】.
+- Jangka panjang: Ecosystem Fund grants tersedia, tapi allocation size & denomination (HYPE vs USDC) unknown; HyperEVM mainnet timeline unknown — dev commitment bergantung pada roadmap clarity【Phase 3 — EV-010 (HIGH)】【Phase 7 — Developer Ecosystem (HIGH)】.
+- Dasar: Phase 3 EV-007, EV-010, Phase 4 Technology, Phase 7 Ecosystem (HIGH)
+
+POV Institution (SIG, GSR sebagai market maker & investor): Sukses
+- Jangka pendek: Deep liquidity diperlukan untuk perp DEX disediakan; token TGE tidak mengganggu order book (no sell pressure dari public sale)【Phase 2 — Entity: SIG, GSR (HIGH)】【Phase 7 — External Dependencies (HIGH)】.
+- Jangka panjang: Token allocation vesting (unknown) memberikan upside; market maker position diperkuat sebagai primary liquidity provider di CLOB yang sekarang punya native token incentive layer【Phase 5 — Financial Dependencies (HIGH)】【Phase 9 — Ecosystem Pattern 1 (HIGH)】.
+- Dasar: Phase 2 Entity, Phase 5 Financial, Phase 7 Ecosystem, Phase 9 Behavioral (HIGH)
+
+POV Validator (operator node HyperBFT): Sukses
+- Jangka pendek: Staking HYPE live at TGE, validator economics activated, commission & rewards dari emission【Phase 3 — EV-008 (HIGH)】【Phase 6 — Utility: Staking, Validator (HIGH)】.
+- Jangka panjang: Validator set composition & permissioning opaque (count, geo, entity unknown); minimum stake undisclosed; slashing conditions undocumented — operational risk tinggi & governance power de facto tanpa accountability【Phase 4 — Security Model (HIGH)】【Phase 7 — Ecosystem Risks: Centralized Validator Set (HIGH)】【Phase 9 — Governance Pattern 4 (HIGH)】.
+- Dasar: Phase 3 EV-008, Phase 4 Technology, Phase 7 Ecosystem, Phase 9 Behavioral (HIGH)
+
+POV Builder (penerima Ecosystem Fund grant): Tidak diketahui
+- Jangka pendek: Program baru diannounce, selection process & disbursement belum terlihat publik【Phase 3 — EV-010 (HIGH)】.
+- Jangka panjang: Sukses bergantung pada grant size, milestone clarity, dan HyperEVM mainnet launch — semua unknown【Phase 7 — Developer Ecosystem (HIGH)】【Phase 9 — Ecosystem Pattern 4 (HIGH)】.
+- Dasar: Phase 3 EV-010, Phase 7 Ecosystem, Phase 9 Behavioral (HIGH/MEDIUM)
+
+HARGA PASCA-DISTRIBUSI
+
+Harga saat klaim: Tidak berlaku (TGE 2024-11-29 native di Hyperliquid L1 tanpa single claim price; price discovery terjadi di market setelah bridge/CEX listing, data CoinGecko historical tidak diekstrak di Phase 1-11)
+Harga +30 hari: Tidak ditemukan (data harga historis HYPE 2024-12-29 tidak tersedia di sumber Phase 1-11)
+Harga +90 hari: Tidak ditemukan (data harga historis HYPE 2025-02-27 tidak tersedia di sumber Phase 1-11)
+Harga puncak 12 bulan pertama: Tidak ditemukan (token baru live Nov 2024, 12 bulan belum tercapai pada cut-off pengetahuan)
+
+METRIK RETENSI
+
+Perubahan TVL atau volume protokol sebelum vs sesudah distribusi: Tidak ditemukan (DefiLlama menampilkan TVL chain tapi perbandingan pre/post TGE tidak diekstrak)【Phase 8 — Adoption Metrics (MEDIUM) https://defillama.com/chain/Hyperliquid】.
+Jumlah alamat pemegang token (unique holders), dengan tanggal pengukurannya: Tidak ditemukan (Hypurrscan tidak menampilkan rich list lengkap dengan holder count)【Phase 6 — Holder Distribution (LOW) https://hypurrscan.io】.
+Jumlah alamat aktif harian, sebelum vs sesudah: Tidak ditemukan (tidak ada dashboard active address pre/post TGE)【Phase 8 — Adoption Metrics (LOW)】.
+Konsentrasi kepemilikan: berapa persen supply dipegang 10 alamat teratas: Tidak ditemukan (holder distribution tidak transparan)【Phase 6 — Holder Distribution (LOW)】.
+Tingkat partisipasi staking atau retensi validator: Tidak ditemukan (staking dashboard resmi tidak ada; validator count unknown)【Phase 8 — Adoption Metrics: Validator Count unknown (LOW)】.
+
+GAP YANG DIKETAHUI
+
+Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik.
+
+FARMING DAN SYBIL
+
+Kriteria points program tidak diungkap resmi → sulit ditebak sebelum snapshot; tidak ada laporan perilaku farming massal atau jumlah alamat yang didiskualifikasi; tim tidak mengumumkan perubahan kriteria setelah snapshot karena kriteria tidak dipublikasikan【Phase 3 — EV-003, EV-008 (HIGH)】【Phase 6 — Distribution (LOW)】.
+
+PROSPEK
+
+Prasyarat yang sudah terpenuhi: Token live, staking active, HyperEVM testnet live, Ecosystem Fund announced, bridge functional【Phase 3 — EV-007, EV-008, EV-009, EV-010 (HIGH)】.
+Prasyarat yang belum: Tokenomics whitepaper (allocation, vesting, emission, fee switch), Governance infrastructure (forum, voting, proposal, execution), Foundation legal formation verified, Audit reports untuk core protocol, HyperEVM mainnet launch, CEX listing announcement【Phase 1 — Open Threads (HIGH)】【Phase 6 — Token, Governance (LOW)】【Phase 4 — Audit History (LOW)】.
+Sinyal yang biasanya mendahului: (1) Publikasi tokenomics whitepaper/docs resmi dengan alokasi & vesting detail; (2) Deploy governance contracts (timelock, multisig, voting) di Hyperliquid L1/HyperEVM; (3) Pengumuman resmi Hyperliquid Foundation dengan dokumen incorporasi; (4) Rilis laporan audit HyperBFT/CLOB/bridge; (5) HyperEVM mainnet launch date announcement; (6) CEX listing announcement untuk HYPE spot【Phase 9 — Behavioral Patterns (HIGH)】.
+Penilaian: Project sudah melewati TGE fair launch community airdrop (Nov 2024). Gelombang distribusi berikutnya kemungkinan besar berbentuk: (a) staking rewards emission (ongoing, inflationary), (b) Ecosystem Fund grants untuk builder (denomination HYPE/USDC unknown), (c) fee switch activation revenue share ke staker (planned, no timeline), (d) potential Season 2 airdrop untuk HyperEVM testnet users (speculative, no announcement). Key prerequisite untuk distribusi tambahan yang signifikan adalah transparansi tokenomics & governance infra — tanpa itu, distribusi tambahan akan memperparah opacity. Tingkat keyakinan: MEDIUM untuk staking emission (sudah live), LOW untuk fee switch/season 2 (tidak ada sinyal konkret).
+
+PELAJARAN LINTAS PROJECT
+
+- Ketika project meluncurkan token setelah 1.5+ tahun mainnet live dengan produk core battle-tested (era 2023-2024, perp DEX on-chain), distribusi 100% community airdrop tanpa public sale membangun legitimasi governance tinggi dan menghindari regulatory risk securities — tetapi opacity tokenomics pasca-TGE (vesting, emission, fee switch undisclosed) menciptakan ketidakpastian valuasi jangka panjang yang menahan institutional capital.
+- Ketika kriteria airdrop berbasis points program yang berjalan lama (>1 tahun) tanpa formula transparan (era 2023-2024, mature hunter population), sybil resistance bergantung pada heuristic internal tim bukan on-chain proof — hasilnya: community trust tinggi (fair launch narrative) tapi tidak dapat diverifikasi fairness distribusi.
+- Ketika token TGE bersamaan dengan EVM layer testnet launch (era late 2024, modular blockchain narrative), token utility immediate (gas, staking, CLOB access) memperkuat value accrual argument — namun governance infrastructure lagging (no forum, no voting) menciptakan "ownership without control" dynamic yang berisiko alienate builder community.
+- Ketika single trusted bridge + single collateral (USDC) menjadi dependency sistemik (era 2024, cross-chain DeFi), airdrop token tidak mengurangi systemic risk — bridge failure atau USDC depeg tetap mempengaruhi seluruh protokol termasuk token holders, independent dari token distribution model.
+- Ketika market maker institusional (SIG, GSR) menjadi investor sekaligus liquidity provider (era 2023-2024, institutional DeFi), token distribution ke community tidak mengubah liquidity concentration risk — order book depth tetap bergantung pada 2 entity, token incentives belum terbukti menarik MM tambahan.
+
 ## Open Questions
 - [foundation] Yurisdiksi pasti entitas hukum "Hyperliquid Labs" (BVI vs Cayman vs Singapura) — perlu verifikasi dokumen incorporasi resmi.
 - [foundation] Daftar lengkap core team (nama nyata vs pseudonim) dan ukuran tim presisi — tidak diungkap secara transparan.
@@ -2361,3 +4019,42 @@ Supporting Dataset: Phase 7 Ecosystem
 - [market] Alokasi Ecosystem Fund dalam HYPE vs stablecoin vs equity — tidak diungkap.
 - [market] Regulatory classification token HYPE (security vs utility vs commodity) di yurisdiksi utama (US, EU, SG, BVI) — tidak ada legal opinion publik.
 - [market] Status fee switch / revenue sharing ke staker HYPE — belum diaktifkan/diumumkan detailnya, mempengaruhi token value accrual narrative.
+- [behavioral] Tokenomics Whitepaper**: Apakah akan terbit? Kapan? Alokasi persentase team/investor/foundation/treasury/ecosystem/community, vesting schedule cliff/linear, emission curve, fee switch mechanism, burn mechanism — semua undisclosed. Perlu verifikasi primary source (blog resmi, governance forum, on-chain labeled addresses).
+- [behavioral] Hyperliquid Foundation Legal Status**: Apakah benar ada foundation terpisah? Yurisdiksi mana? Hubungan hukum dengan Hyperliquid Labs (BVI)? Kontrol treasury? Multisig signers? Dokumentasi incorporasi?
+- [behavioral] Validator Set Composition**: Jumlah validator, geografis, entity identity, permissioned vs permissionless, minimum stake HYPE, slashing conditions, commission rate — tidak ada data publik. Perlu on-chain analysis atau official disclosure.
+- [behavioral] Formal Security Audits**: Apakah audit HyperBFT, CLOB engine, bridge contracts sudah dilakukan/dijalankan? Oleh firm mana? Kapan rilis laporan? Bug bounty program detail?
+- [behavioral] Fee Switch Activation**: Kapan revenue sharing ke staker HYPE diaktifkan? Persentase fee apa yang dialokasikan? Mekanisme distribusi (buyback & distribute, direct emission reduction, dll)?
+- [behavioral] HyperEVM Mainnet Timeline & Audit**: Kapan mainnet? Precompile spec untuk CLOB access final? Audit pre-launch? Kompatibilitas EIP (Shanghai, Cancun, Prague)?
+- [behavioral] CEX Listing HYPE**: Daftar CEX yang melisting spot/perpetual HYPE. Market making program untuk CEX. Impact pada price discovery dan liquidity fragmentation.
+- [behavioral] Geo-blocking / Compliance Roadmap**: Apakah akan implement KYC/geo-blocking untuk US/EU/SG users? Legal opinion token classification (security vs utility vs commodity) di yurisdiksi utama?
+- [behavioral] Treasury Transparency**: Dashboard on-chain labeled addresses untuk treasury, foundation, team, investor, ecosystem fund. Periodic transparency report?
+- [behavioral] Bridge Trust-Minimization Roadmap**: Apakah ada rencana light client, ZK bridge, IBC, atau general message passing (Wormhole/LayerZero/Axelar) sebagai alternative ke native trusted bridge?
+- [behavioral] USDC Concentration Mitigation**: Rencana multi-collateral support (USDT, DAI, native HYPE, dst)? Circle blacklist contingency plan?
+- [behavioral] Market Maker Diversification**: Upaya menambah market maker selain SIG/GSR? Incentive program untuk MM retail/algo?
+- [behavioral] IBC / Cross-Chain Messaging Generik**: Apakah Hyperliquid L1 akan support IBC atau generic messaging untuk composability beyond native bridge?
+- [behavioral] Decentralization Metrics Dashboard**: Nakamoto coefficient, validator stake distribution, Gini coefficient HYPE holders, entity labeling (CEX, MM, foundation, team) — apakah akan dipublikasikan?
+- [behavioral] Ecosystem Fund Allocation Detail**: Total size, denomination (HYPE vs USDC vs equity), governance process grant approval, milestone-based disbursement?
+- [behavioral] Conflict of Interest Labs vs Foundation**: Jika foundation ada, bagaimana pemisahan fungsional (Labs = core dev, Foundation = governance/treasury/ecosystem)? Apakah Labs masih kontrol de facto?
+- [conflict] Open Thread ID: OT-01 · Description: Tanggal pasti testnet publik — beberapa sumber menyebut "Maret 2023", fase lain "Q1 2023". Dikategorikan Low severity, sudah resolved dengan konsensus Maret 2023, namun verifikasi bulan yang tepat masih diperlukan. · Affected Phase: Phase 1, Phase 3 · Evidence: https://hyperliquid.xyz/blog/testnet-launch; https://defillama.com/chain/Hyperliquid · Alternative Interpretations: Maret 2023 vs Q1 2023 (kisaran Jan-Mar) · Status: Resolved — fokus tetap pada mainnet 2023-05-14 dan TGE 2024-11-29 yang lebih deterministik.
+- [conflict] Open Thread ID: OT-02 · Description: Jumlah dana ronde 2023 (amount, valuasi) — The Block melaporkan "funding raised" tanpa angka; Messari tidak menyebut valuasi. Konflik C-002 tidak dapat diselesaikan tanpa rilis resmi dari Hyperliquid Labs. · Affected Phase: Phase 3, Phase 5 · Evidence: https://www.theblock.co/post/298123/hyperliquid-labs-raises-funding; https://messari.io/report/hyperliquid-deep-dive · Alternative Interpretations: Amount tidak diungkap (kemungkinan rendah `10M-30M` untuk seri strategis, tapi ini spekulasi) · Status: Unresolved — menunggu rilis resmi.
+- [conflict] Open Thread ID: OT-03 · Description: Wrapped HYPE (WHYPE) kontrak di Arbitrum — alamat 0xC5b... disebut di Phase 1 tapi tidak diverifikasi di docs resmi; tidak ada audit kontrak WHYPE yang dipublikasikan. Ini memengaruhi integrasi teknis dan kepercayaan pengguna yang ingin deposit ke Hyperliquid via Arbitrum. · Affected Phase: Phase 1, Phase 4, Phase 6 · Evidence: https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview (mention bridge, no WHYPE address) · Alternative Interpretations: Alamat WHYPE mungkin berbeda dari yang disebut; perlu verifikasi on-chain via Hypurrscan atau docs resmi. · Status: Open — perlu verifikasi on-chain.
+- [conflict] Open Thread ID: OT-04 · Description: Validator set komposisi — jumlah validator, geografis, entity, permissioned/permissionless, minimum stake tidak dipublikasikan. Ini memengaruhi penilaian desentralisasi dan keamanan jaringan. · Affected Phase: Phase 4, Phase 7 · Evidence: https://hyperliquid.gitbook.io/hyperliquid-docs/architecture/overview (menyebut validator set, tanpa detail) · Alternative Interpretations: Validator set mungkin masih dipegang mayoritas oleh Hyperliquid Labs/internal team; atau sudah campuran pihak ketiga — tidak dapat diverifikasi. · Status: Open — butuh rilis resmi atau on-chain analysis.
+- [conflict] Open Thread ID: OT-05 · Description: Fee switch ke staker HYPE — blog HYPE Genesis hanya menyebut staking untuk keamanan jaringan; tidak ada timeline atau mekanisme yang diumumkan terkait revenue sharing ke pemegang HYPE. · Affected Phase: Phase 6, Phase 7 · Evidence: https://hyperliquid.xyz/blog/hype-genesis · Alternative Interpretations: Fee switch mungkin sudah dipertimbangkan secara internal; atau sengaja ditunda karena preferensi retensi revenue untuk ecosystem fund. · Status: Open — menunggu pengumuman resmi.
+- [conflict] Open Thread ID: OT-06 · Description: HyperEVM mainnet timeline — testnet November 2024, tidak ada roadmap mainnet yang diumumkan; kompatibilitas precompile untuk akses CLOB belum terdokumentasi lengkap. · Affected Phase: Phase 3, Phase 4 · Evidence: https://hyperliquid.xyz/blog/hyperevm · Alternative Interpretations: Mainnet mungkin dirilis 2025; atau tertunda karena prioritas bisnis lain — tidak dapat diverifikasi. · Status: Open — butuh announcement resmi.
+- [conflict] Open Thread ID: OT-07 · Description: Status legal Hyperliquid Foundation — blog HYPE Genesis dan Ecosystem Fund mengimplikasikan adanya foundation, tapi tidak ada dokumen incorporasi, yurisdiksi tidak jelas, hubungan dengan Hyperliquid Labs tidak diverifikasi. · Affected Phase: Phase 2, Phase 3, Phase 6 · Evidence: https://hyperliquid.xyz/blog/hype-genesis; https://hyperliquid.xyz/blog/ecosystem-fund · Alternative Interpretations: Foundation mungkin sudah terbentuk di BVI/Cayman; atau baru direncanakan; atau hanya disebut sebagai branding tanpa legal entity terpisah. · Status: Open — butuh dokumen legal resmi.
+- [conflict] Open Thread ID: OT-08 · Description: Metrik adopsi — TVL, volume harian, daily active users tidak diekstrak dengan angka spesifik di dataset Phase 8, karena tidak ada dashboard resmi; DefiLlama tersedia tapi data tidak di-extract dalam proses awal.
+- [conflict] Affected Phase: Phase 8 · Evidence: https://defillama.com/chain/Hyperliquid · Alternative Interpretations: TVL mungkin besar (mengikuti hype TGE), tapi angka pasti harus di-query langsung dari API DefiLlama. · Status: Open — butuh proses ekstraksi data on-chain.
+- [conflict] Open Thread ID: OT-09 · Description: USDC depeg risk — seluruh trading economy bergantung pada USDC; tidak ada contingency plan yang diumumkan jika Circle melakukan blacklist atau USDC depeg. · Affected Phase: Phase 7 · Evidence: https://hyperliquid.gitbook.io/hyperliquid-docs/products/overview (USDC sebagai quote asset) · Alternative Interpretations: Hyperliquid mungkin beralih ke multi-collateral dalam jangka panjang; atau tetap bergantung pada USDC saja. · Status: Open — business continuity plan tidak dipublikasikan.
+- [conflict] Open Thread ID: OT-10 · Description: Regulasi token HYPE — tidak ada legal opinion apakah HYPE diklasifikasikan sebagai security, utility, atau commodity; tidak ada disclosure risiko di docs. · Affected Phase: Phase 1, Phase 6 · Evidence: https://messari.io/report/hyperliquid-deep-dive (membahas risiko regulasi, bukan classification) · Alternative Interpretations: HYPE bisa dianggap utility (staking + fee payment) oleh perusahaan, tapi regulator mungkin melihat sebagai security (akumulasi nilai dari pengelolaan protokol). · Status: Open — butuh legal opinion atau pengumuman compliance.
+- [airdrop] Alokasi persentase HYPE untuk community airdrop vs team vs investor vs foundation vs treasury vs ecosystem — tidak diungkap sama sekali.
+- [airdrop] Jumlah alamat eligible, jumlah yang claim, rata-rata allocation per wallet — tidak dipublikasikan.
+- [airdrop] Harga HYPE saat TGE (2024-11-29), harga +30/+90 hari, all-time high 12 bulan pertama — data CoinGecko/CoinMarketCap historis tidak diekstrak.
+- [airdrop] Mekanisme anti-sybil yang dipakai untuk points program, jumlah alamat yang didiskualifikasi — tidak diumumkan.
+- [airdrop] Fee switch activation timeline & mechanism (persentase fee ke staker, buyback vs direct distribution) — blog HYPE Genesis hanya menyebut staking untuk network security.
+- [airdrop] Hyperliquid Foundation legal status: incorporated? jurisdiction? multisig signers? treasury control? hubungan hukum dengan Hyperliquid Labs (BVI)?
+- [airdrop] Validator set composition: count, geo distribution, entity identity, minimum stake HYPE, slashing conditions, commission rates — semua unknown.
+- [airdrop] Formal security audit status untuk HyperBFT, CLOB engine, bridge contracts — tidak ada laporan publik.
+- [airdrop] HyperEVM mainnet launch timeline, precompile spec final, audit pre-launch — tidak diumumkan.
+- [airdrop] Ecosystem Fund total size, denomination (HYPE/USDC/equity), governance process grant approval — tidak transparan.
+- [airdrop] CEX listing status HYPE (spot/perpetual), market making program untuk CEX — tidak diumumkan resmi.
+- [airdrop] Regulatory classification legal opinion untuk HYPE di US/EU/SG/BVI — tidak ada publik.

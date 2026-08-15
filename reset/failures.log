@@ -30,3 +30,45 @@
 2026-08-08T11:28:09.841773+00:00	OlympusDAO	phase 07-ecosystem	OlympusDAO phase 07-ecosystem failed after 3 attempts: HTTP 524: {"error":{"message":"openai_error","type":"bad_response_status_code","param":"","code":"bad_response_status_code"}}
 2026-08-08T16:49:18.856132+00:00	Lido	phase 09-behavioral	Lido phase 09-behavioral failed after 3 attempts: HTTP 504: {"error":{"message":"openai_error","type":"bad_response_status_code","param":"","code":"bad_response_status_code"}}
 2026-08-08T17:39:35.005800+00:00	Lido	phase 09-behavioral	Lido phase 9a failed after 3 attempts: HTTP 504: {"error":{"message":"openai_error","type":"bad_response_status_code","param":"","code":"bad_response_status_code"}}
+2026-08-09T10:14:33.733556+00:00	Avalanche	phase 11-conflict	Avalanche phase 11-conflict failed on every provider (gateway): response truncated by the output-token limit (finish_reason='length', got 80649 chars). The answer is incomplete, not wrong -- raise RESET_MAX_TOKENS (or RESET_PHASE11_MAX_TOKENS for phase 11) and retry.
+2026-08-09T12:13:37.618852+00:00	Blur	phase 11-conflict	Blur phase 11-conflict failed on every provider (gateway): response truncated by the output-token limit (finish_reason='length', got 70473 chars). The answer is incomplete, not wrong -- raise RESET_MAX_TOKENS (or RESET_PHASE11_MAX_TOKENS for phase 11) and retry.
+2026-08-09T12:52:50.007842+00:00	Cardano	phase 11-conflict	Cardano phase 11-conflict failed on every provider (gateway): Remote end closed connection without response
+2026-08-09T13:02:40.673374+00:00	Celestia	phase 11-conflict	Celestia phase 11-conflict failed on every provider (gateway): <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1033)>
+2026-08-09T13:57:34.212263+00:00	Compound	phase 11-conflict	Compound phase 11-conflict failed on every provider (gateway): response truncated by the output-token limit (finish_reason='length', got 81197 chars). The answer is incomplete, not wrong -- raise RESET_MAX_TOKENS (or RESET_PHASE11_MAX_TOKENS for phase 11) and retry.
+2026-08-09T14:48:15.032028+00:00	EOS	phase 11-conflict	EOS phase 11-conflict failed on every provider (gateway): stream ended with no content (no data: chunks carried text)
+2026-08-09T15:46:13.637628+00:00	Ethereum	phase 11-conflict	Ethereum phase 11-conflict failed on every provider (gateway): response truncated by the output-token limit (finish_reason='length', got 81048 chars). The answer is incomplete, not wrong -- raise RESET_MAX_TOKENS (or RESET_PHASE11_MAX_TOKENS for phase 11) and retry.
+2026-08-09T16:16:52.800076+00:00	Friend.tech	phase 11-conflict	Friend.tech phase 11-conflict failed on every provider (gateway): stream ended with no content (no data: chunks carried text)
+2026-08-09T17:58:47.314751+00:00	Helium	phase 11-conflict	Helium phase 11-conflict failed on every provider (gateway): response truncated by the output-token limit (finish_reason='length', got 75036 chars). The answer is incomplete, not wrong -- raise RESET_MAX_TOKENS (or RESET_PHASE11_MAX_TOKENS for phase 11) and retry.
+2026-08-09T22:18:27.215777+00:00	Avalanche	phase 11-conflict	Avalanche phase 11-conflict failed on every provider (gateway): [Errno 103] Software caused connection abort
+2026-08-09T22:44:19.176329+00:00	Blur	phase 11-conflict	Blur phase 11-conflict failed on every provider (gateway): response truncated by the output-token limit (finish_reason='length', got 43161 chars). The answer is incomplete, not wrong -- raise RESET_MAX_TOKENS (or RESET_PHASE11_MAX_TOKENS for phase 11) and retry.
+2026-08-10T07:50:17.006851+00:00	Lido	phase 11-conflict	Lido phase 11-conflict failed on every provider (deepseek, gateway): response truncated by the output-token limit (finish_reason='length', got 114803 chars). The answer is incomplete, not wrong -- raise RESET_MAX_TOKENS (or RESET_PHASE11_MAX_TOKENS for phase 11) and retry.
+2026-08-10T08:09:57.344098+00:00	MegaETH	phase 12-airdrop	MegaETH phase 12-airdrop failed on every provider (gateway, deepseek): <urlopen error [Errno -3] Temporary failure in name resolution>
+2026-08-10T08:13:58.774808+00:00	Monad	phase 11-conflict	Monad phase 11-conflict failed on every provider (deepseek, gateway): <urlopen error [Errno -3] Temporary failure in name resolution>
+2026-08-12T00:16:49.662078+00:00	Berachain	phase 09-behavioral	Berachain phase 09-behavioral failed on every provider (gateway, deepseek): <urlopen error [Errno -3] Temporary failure in name resolution>
+2026-08-12T01:17:12.073148+00:00	Cosmos	phase 01-foundation	Cosmos phase 01-foundation failed on every provider (gateway, deepseek): <urlopen error [Errno -3] Temporary failure in name resolution>
+2026-08-12T08:45:21.474267+00:00	Solana	phase 01-foundation	Solana phase 01-foundation failed on every provider (gateway, deepseek): <urlopen error [Errno -3] Temporary failure in name resolution>
+2026-08-12T20:01:59.161746+00:00	Uniswap	phase 07-ecosystem	Uniswap phase 07-ecosystem failed on every provider (gateway, deepseek): <urlopen error [Errno -3] Temporary failure in name resolution>
+2026-08-14T00:10:37.162819+00:00	Injective	phase 01-foundation	Injective phase 01-foundation failed on every provider (gateway, deepseek): <urlopen error [Errno -3] Temporary failure in name resolution>
+2026-08-14T13:13:15.851845+00:00	Solana	phase 11-conflict	Solana phase 11-conflict failed on every provider (deepseek, gateway): HTTP 402: {"error":{"message":"Insufficient Balance","type":"unknown_error","param":"","code":"invalid_request_error"}}
+2026-08-14T14:16:54.625907+00:00	Berachain	phase 11-conflict	Berachain phase 11-conflict failed on every provider (deepseek, gateway): HTTP 402: {"error":{"message":"Insufficient Balance","type":"unknown_error","param":"","code":"invalid_request_error"}}
+2026-08-14T23:58:11.837958+00:00	Curve	phase 01-foundation	Curve phase 01-foundation failed on every provider (gateway): HTTP 404: <html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+2026-08-15T00:00:13.498372+00:00	Linea	phase 01-foundation	Linea phase 01-foundation failed on every provider (gateway): HTTP 404: <html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+2026-08-15T00:02:14.984260+00:00	Walrus	phase 01-foundation	Walrus phase 01-foundation failed on every provider (gateway): HTTP 404: <html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>

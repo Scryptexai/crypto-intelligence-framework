@@ -1,0 +1,397 @@
+PROJECT: Sei
+
+Strategic Objectives
+
+1. Menjadi Layer 1 teroptimasi untuk trading dan high-performance DeFi
+· Evidence: Whitepaper menekankan "parallel execution" dan "order matching engine at consensus layer" sebagai diferensiasi utama; semua messaging teknis dan marketing berfokus pada throughput dan latency untuk trading (HIGH) [Sei whitepaper, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md; Sei website, https://sei.io]
+· Supporting Dataset: Phase 1 Foundation, Phase 4 Technology (Core Components: Parallel Execution Engine, Order Matching Engine), Phase 8 Market (Primary Category, Narrative Position)
+
+2. Menjangkau developer Ethereum melalui kompatibilitas EVM native (Sei v2)
+· Evidence: Sei v2 mengembed Geth langsung ke consensus layer; MetaMask support; Hardhat/Foundry tooling; precompile contracts untuk bank/staking/IBC/tokenfactory; pengumuman dan blog fokus pada "EVM-compatible via embedded Geth" (HIGH) [Sei v2 blog, https://sei.io/blog/introducing-sei-v2; Sei v2 docs, https://docs.sei.io/learn/sei-v2; Phase 3 EV-016, EV-018, EV-020]
+· Supporting Dataset: Phase 3 History (EV-016, EV-018, EV-020), Phase 4 Technology (Sei v2 EVM Layer, Precompile Contracts), Phase 7 Ecosystem (Major Integrations: MetaMask, Hardhat/Foundry), Phase 8 Market (Narrative: EVM Compatibility)
+
+3. Memanfaatkan ekosistem Cosmos (IBC, wallet, tooling) sambil membangun identitas L1 mandiri
+· Evidence: Native IBC aktif sejak mainnet; wallet Keplr/Leap/Compass support; Cosmos SDK sebagai base; tapi marketing tidak memposisikan sebagai "app-chain" melainkan standalone L1; SeiDB dan parallel execution dikembangkan internal, tidak bergantung pada shared security (HIGH) [Phase 3 EV-007, EV-015; Phase 4 Technology (IBC Module, Cosmos SDK); Phase 7 Ecosystem (Wallet Ecosystem, IBC Relayers); Phase 8 Market (Narrative: Cosmos Ecosystem - Secondary)]
+· Supporting Dataset: Phase 3 History (EV-007, EV-015), Phase 4 Technology (Architecture, IBC Module), Phase 7 Ecosystem (Wallet Ecosystem, Major Integrations: IBC), Phase 8 Market (Narrative Position)
+
+4. Membangun flywheel liquidity melalui native order matching + DeFi flagship apps
+· Evidence: Built-in order matching engine di consensus layer; DragonSwap (AMM), Leviathan (perp DEX), Silo (lending), Yei (yield) diluncurkan dalam 3 bulan post-mainnet; Sei Ecosystem Fund $50M untuk insentif builder (HIGH) [Phase 3 EV-010 to EV-014; Phase 4 Technology (Order Matching Engine); Phase 5 Financial (Ecosystem Fund); Phase 7 Ecosystem (Applications); Phase 8 Market (TVL, Volume metrics)]
+· Supporting Dataset: Phase 3 History (EV-010 to EV-014), Phase 4 Technology (Order Matching Engine), Phase 5 Financial (Ecosystem Fund), Phase 7 Ecosystem (Applications, Grant Program), Phase 8 Market (Adoption Metrics: TVL, Volume)
+
+5. Desentralisasi progresif melalui on-chain governance dan validator set yang tersebar
+· Evidence: Cosmos SDK Governance Module aktif sejak mainnet; token-weighted voting; community pool dikelola governance; validator set 100 aktif; team/investor vesting 12-month cliff + linear (HIGH) [Phase 6 Token (Governance, Vesting); Phase 7 Ecosystem (Governance Ecosystem: DAO, Validator Set); Phase 3 EV-004 (TGE/Mainnet)]
+· Supporting Dataset: Phase 3 History (EV-004), Phase 6 Token (Governance, Vesting Schedule), Phase 7 Ecosystem (Governance Ecosystem), Phase 8 Market (Validator Count, Staking Participation)
+
+Decision Timeline
+
+Keputusan: Pendirian Sei Labs Inc. di Delaware sebagai entitas pengembang protokol (2021)
+· Trigger: Identifikasi peluang pasar untuk L1 teroptimasi trading; pengalaman founder di high-frequency trading (Jayendra Jog ex-Robinhood, Dan Edlebeck ex-Terra/Chorus One) mendorong arsitektur parallel execution
+· Evidence: Delaware incorporation filing; founder background di LinkedIn/Twitter; whitepaper motivation section
+· Decision: Mendirikan korporasi Delaware (file 7465721) dengan Jayendra Jog (CEO) dan Dan Edlebeck (COO); mengamankan $35M Series A+B sebelum testnet
+· Immediate Result: Entitas hukum terbentuk; dana pengembangan tersedia; tim core mulai dibangun
+· Long-term Impact: Struktur US corporation menciptakan regulatory exposure (SEC); equity investors (Jump, Multicoin) mendapat token allocation; keputusan fondasi memengaruhi semua keputusan finansial dan governance berikutnya
+· Supporting Dataset: Phase 1 Foundation, Phase 2 Entity (Sei Labs Inc., Jayendra Jog, Dan Edlebeck), Phase 3 EV-001, Phase 5 Financial (Funding History)
+
+Keputusan: Luncurkan testnet Atlantic-1 sebelum mainnet (2022-03-15)
+· Trigger: Perlu validasi arsitektur parallel execution dan order matching engine di lingkungan adversarial; onboarding validator set
+· Evidence: Testnet blog announcement; GitHub v0.1.0 release; 12+ bulan testnet sebelum mainnet
+· Decision: Deploy testnet publik (chain-id: atlantic-1) dengan kode v0.1.0; program incentivized testnet untuk validator dan developer
+· Immediate Result: Validator set terbentuk; bug parallel execution ditemukan dan diperbaiki; feedback untuk mainnet design
+· Long-term Impact: Testnet period 17 bulan (lebih lama dari rata-rata L1) menghasilkan mainnet yang stabil; validator set mature saat genesis; tidak ada chain halt mayor post-mainnet
+· Supporting Dataset: Phase 3 EV-002, EV-003, Phase 4 Technology (Audit History: Veridise parallel execution audit pre-mainnet)
+
+Keputusan: Mainnet launch + TGE + Binance listing bersamaan (2023-08-15)
+· Trigger: Kebutuhan liquidity immediat untuk token; momentum pasar; Binance sebagai strategic partner (investor Series A)
+· Evidence: Mainnet launch blog; Binance spotlight announcement same day; ERC-20 deploy Ethereum same week; no public sale/ICO
+· Decision: Genesis mint 10B SEI; simultaneous Binance spot listing (SEI/USDT, SEI/BUSD, SEI/BNB); airdrop/testnet rewards unlocked at TGE; team/investor 12-month cliff
+· Immediate Result: Price discovery dimulai day-1; liquidity CEX tersedia; circulating supply ~15-20%; community pool terisi dari fee segera
+· Long-term Impact: Tidak ada private/public sale menciptakan distribusi token yang bersih (no unlock cliff retail); Binance listing memberikan credibility; cliff 12 bulan menunda tekanan jual besar hingga Aug 2024; model ini menjadi referensi untuk L1 lain (Monad, Berachain mengamati)
+· Supporting Dataset: Phase 3 EV-004, EV-005, EV-006, Phase 5 Financial (Fundraising Mechanism, Token Sale), Phase 6 Token (TGE, Distribution, Vesting)
+
+Keputusan: Integrasi IBC, Wormhole, Axelar, Pyth, Chainlink sekaligus di mainnet launch (2023-08)
+· Trigger: Kebutuhan interoperabilitas dan oracle untuk DeFi flagship apps (DragonSwap, Leviathan, Silo) yang direncanakan launch Q3-Q4 2023
+· Evidence: Phase 3 EV-007, EV-008, EV-009 semuanya dalam bulan yang sama; ecosystem apps launch bergantung pada infrastruktur ini
+· Decision: Aktifkan semua bridge dan oracle native di mainnet genesis/post-genesis immediate; tidak menunggu upgrade terpisah
+· Immediate Result: DeFi apps bisa launch dengan price feed dan cross-chain liquidity day-1; SEI bridging ke 7+ chain tersedia
+· Long-term Impact: Sei menjadi L1 Cosmos dengan integrasi cross-chain paling lengkap sejak genesis; menciptakan moat untuk DeFi builders; bridge dependency risk tertanam sejak awal (Wormhole/Axelar external trust assumptions)
+· Supporting Dataset: Phase 3 EV-007, EV-008, EV-009, Phase 4 Technology (External Dependencies), Phase 7 Ecosystem (Major Integrations, Infrastructure Providers), Phase 7 Ecosystem Risks (Bridge/Oracle Dependency)
+
+Keputusan: Mengumumkan dan mengembangkan Sei v2 (EVM via embedded Geth) + SeiDB paralel (2024-04-23)
+· Trigger: Persaingan L1 parallel execution (Monad, Berachain, MegaETH) yang menargetkan developer Ethereum; feedback ecosystem butuh EVM compatibility untuk adopsi massal; state bloat menjadi bottleneck
+· Evidence: Sei v2 blog announcement; SeiDB blog announcement; Trail of Bits audit Sei v2; Oak Security audit SeiDB; testnet July 2024; mainnet upgrade Aug 2024
+· Decision: Embed Geth sebagai execution client (bukan Ethermint); bangun SeiDB custom storage layer (state store + commit log); precompile contracts untuk native module access; 4 bulan testnet sebelum mainnet upgrade
+· Immediate Result: EVM JSON-RPC live di mainnet; MetaMask support; Hardhat/Foundry werken; SeiDB aktif; parallel execution applies ke EVM tx
+· Long-term Impact: Sei menjadi L1 pertama dengan dual VM (CosmWasm + EVM via Geth) di consensus layer yang sama; menarik developer Ethereum tanpa migrasi tooling; SeiDB memposisikan Sei untuk scaling post-v2; technical complexity meningkat (dual VM, cross-VM calls, Geth fork maintenance)
+· Supporting Dataset: Phase 3 EV-016, EV-017, EV-019, EV-020, Phase 4 Technology (Sei v2 EVM Layer, SeiDB, Precompiles, Audit History), Phase 7 Ecosystem (Major Integrations: Sei v2, MetaMask, SeiDB), Phase 8 Market (Narrative: EVM Compatibility, Competitor Landscape: Monad, Berachain)
+
+Keputusan: Sei Ecosystem Fund $50M dari protocol treasury (2023-Q4)
+· Trigger: Post-mainnet liquidity bootstrapping selesai; perlu menarik builder jangka panjang; competitor (Aptos, Sui, Berachain) memiliki ecosystem fund ratusan juta USD
+· Evidence: Ecosystem fund blog announcement; $50M dari community/treasury allocation; grant categories: DeFi, infrastructure, tooling, NFT, gaming
+· Decision: Alokasi $50M dari Foundation/community treasury untuk grant; application process via forms; tidak ada matching fund requirement publik
+· Immediate Result: Builder mulai apply; beberapa grant diumumkan via blog/twitter; DragonSwap, Leviathan, Yei menerima early support
+· Long-term Impact: Fund size moderat vs competitor ($50M vs Aptos $200M+, Sui $100M+); sustainability bergantung pada protocol revenue (fees) dan token price; no public dashboard menciptakan opacity; grant distribution mungkin biased ke early insider projects
+· Supporting Dataset: Phase 5 Financial (Ecosystem Fund), Phase 6 Token (Foundation Allocation), Phase 7 Ecosystem (Grant Program), Phase 8 Market (Competitor Landscape)
+
+Evolution Pattern
+
+Perubahan Strategi: Dari "Cosmos App-Chain" ke "Standalone Parallel Execution L1"
+· Phase Awal (2021-2022): Whitepaper dan testnet memposisikan Sei sebagai Cosmos SDK chain dengan parallel execution; IBC sebagai primary interoperability; target audience: Cosmos developers
+· Phase Transisi (2023 Mainnet): Binance listing, Wormhole/Axelar bridges, ERC-20 deploy → positioning shift ke "L1 untuk trading" yang chain-agnostic; marketing mengurangi jargon Cosmos
+· Phase Sei v2 (2024): EVM compatibility via Geth → target audience berubah ke Ethereum developers; MetaMask integration; "EVM-compatible" menjadi narrative utama; Cosmos/IBC jadi secondary narrative
+· Evidence: Whitepaper vs Sei v2 blog vs Sei website messaging evolution; Phase 8 Narrative Position (Main: Parallel Execution, Trading-Optimized, EVM Compatibility; Secondary: Cosmos/IBC)
+· Supporting Dataset: Phase 1 Foundation, Phase 3 EV-002 to EV-020, Phase 4 Technology (Architecture Evolution), Phase 8 Market (Narrative Position)
+
+Perubahan Teknologi: Dari Single VM (CosmWasm) ke Dual VM (CosmWasm + EVM via Geth)
+· 2022-2023: CosmWasm only; Rust/WASM smart contracts; Wasmer runtime; parallel execution via optimistic concurrency control
+· 2024 (Sei v2): Embedded Geth untuk EVM execution; precompile contracts untuk native module access; SeiDB storage layer shared; cross-VM interoperability via precompiles
+· Driver: Developer adoption (Solidity > Rust untuk DeFi); Ethereum tooling maturity (Hardhat/Foundry); competitor pressure (Monad, Berachain, MegaETH semua EVM-first)
+· Trade-off: Complexity 증가 (dual VM maintenance, cross-VM reentrancy risk, Geth fork burden); tapi addressable market memperluas 10x (Ethereum developer base)
+· Supporting Dataset: Phase 3 EV-016, EV-020, Phase 4 Technology (Execution Environment, Sei v2 EVM Layer, Precompiles, Known Limitations), Phase 7 Ecosystem (Developer Ecosystem: Hardhat/Foundry, CosmWasm CLI)
+
+Perubahan Tokenomics: Dari Fixed Supply + Inflation ke Partial Burn (EVM Base Fee)
+· Genesis: 10B fixed max supply; inflationary staking rewards (~7% target); no burn mechanism untuk native tx
+· Sei v2 (2024-08): EIP-1559 base fee burn untuk EVM transactions; native CosmWasm tx tetap no burn; net supply tetap inflationary tapi growth rate reduced
+· Driver: Ethereum alignment narrative; fee value accrual ke token holders via burn; competitor (Monad, Berachain) semua memiliki burn mechanism
+· Evidence: Phase 6 Token (Inflation/Deflation: EVM base fee burn added); Phase 4 Technology (Sei v2 EVM Priority Fees); Phase 8 Market (Narrative: EVM Compatibility)
+· Supporting Dataset: Phase 3 EV-020, Phase 4 Technology (Sei v2 EVM Layer), Phase 6 Token (Inflation/Deflation, Utility), Phase 8 Market (Narrative Position)
+
+Perubahan Governance: Dari Team-Controlled ke On-Chain DAO + Foundation
+· Pre-mainnet: Sei Labs team control all parameters; genesis config set by team
+· Post-mainnet (2023-08): Cosmos SDK Governance Module live; parameter changes, upgrades, community pool spend via on-chain voting; team/investor tokens locked 12-month cliff
+· 2024 (post-cliff): Team/investor tokens vesting monthly → voting power shifting ke non-team holders; Foundation assumed managing ecosystem fund
+· Gap: Sei Foundation legal entity tidak dikonfirmasi publik; community pool address known tapi spending transparency rendah; validator set 100 tapi entity concentration tidak dipublikasikan
+· Supporting Dataset: Phase 3 EV-004, Phase 6 Token (Governance, Vesting), Phase 7 Ecosystem (Governance Ecosystem: DAO, Foundation, Validator Set), Phase 8 Market (Nakamoto Coefficient estimated)
+
+Perubahan Financial: Dari VC-Funded ke Protocol-Revenue + Treasury Management
+· 2021-2023: $35M Series A+B (equity + token) fund core development; no protocol revenue
+· 2023-08 (Mainnet): Protocol fees mulai masuk community pool (gas, order matching, IBC); $50M ecosystem fund announced dari treasury
+· 2024 (Sei v2): EVM priority fees + base fee burn → additional revenue stream; fee split antara validator/community pool/burn
+· Unresolved: Sei Labs revenue model tidak transparan (apakah team mendapat cut dari community pool?); treasury size/composition tidak diungkap; no audited financials
+· Supporting Dataset: Phase 5 Financial (Funding History, Revenue Model, Treasury, Financial Dependencies), Phase 6 Token (Distribution, Vesting), Phase 7 Ecosystem (Grant Program)
+
+Technical Decision Pattern
+
+Pola 1: Modular Architecture dengan Custom Components untuk Critical Path
+· Decision Pattern: Menggunakan framework standar (Cosmos SDK, CometBFT, IBC-Go) untuk non-critical path, tapi membangun custom components untuk performance-critical path: parallel execution engine, order matching engine, SeiDB storage layer, Geth embedding untuk EVM
+· Evidence: Cosmos SDK modules untuk bank/staking/gov/ibc (standard); parallel execution engine custom (whitepaper); order matching engine native module (whitepaper); SeiDB custom storage (SeiDB blog); Geth embedded bukan Ethermint (Sei v2 blog); Wasmer untuk CosmWasm (standard)
+· Supporting Dataset: Phase 4 Technology (Architecture, Core Components, Current Technical Stack), Phase 3 EV-016, EV-017, EV-020
+
+Pola 2: Upgrade Bertahap dengan Pengujian Ekstensif (Testnet → Devnet → Mainnet)
+· Decision Pattern: Setiap major upgrade melalui multi-stage testing: internal testnet → public testnet/incentivized testnet → devnet → mainnet upgrade via governance; 4+ bulan testnet untuk Sei v2; 17 bulan testnet untuk genesis
+· Evidence: Atlantic-1 testnet 2022-03 → Pacific-1 mainnet 2023-08 (17 bulan); Sei v2 announcement 2024-04 → testnet 2024-07 → mainnet 2024-08 (4 bulan); audit sebelum setiap major release (Veridise pre-mainnet, Trail of Bits Sei v2, Oak Security SeiDB)
+· Supporting Dataset: Phase 3 EV-002, EV-003, EV-004, EV-016 to EV-020, Phase 4 Technology (Audit History, Technical Upgrade History)
+
+Pola 3: Native Integration di Consensus Layer untuk Trading Primitives
+· Decision Pattern: Order matching engine dibangun sebagai native Cosmos SDK module (bukan smart contract); parallel execution di consensus layer (bukan L2/rollup); SeiDB terintegrasi di state commit path; precompile contracts native Go untuk EVM access ke native modules
+· Evidence: Whitepaper order matching engine design; parallel execution engine di Tendermint ABCI++; SeiDB replaces IAVDB di storage layer; precompiles untuk bank/staking/IBC/tokenfactory (Sei v2 docs); tidak menggunakan Ethermint (yang menjalankan EVM sebagai module)
+· Supporting Dataset: Phase 1 Foundation, Phase 3 EV-004, EV-020, Phase 4 Technology (Core Components: Order Matching Engine, Parallel Execution Engine, SeiDB, Precompile Contracts), Phase 8 Market (Narrative: Trading-Optimized Chain)
+
+Pola 4: Dual VM Strategy dengan Shared State Layer (SeiDB)
+· Decision Pattern: Menjalankan CosmWasm (Wasmer) dan EVM (Geth) bersamaan di consensus layer yang sama; shared state melalui SeiDB; cross-VM calls via precompile contracts; bukan pilihan "either/or" tapi "both/and"
+· Evidence: Sei v2 blog "dual VM"; SeiDB blog "shared storage"; precompiles untuk cross-VM access; Wasmer + Geth both in go.mod; execution environment documentation menampilkan both
+· Supporting Dataset: Phase 4 Technology (Execution Environment: CosmWasm + EVM, SeiDB, Precompile Contracts, Known Limitations: Cross-VM Latency), Phase 3 EV-016, EV-020, Phase 7 Ecosystem (Developer Ecosystem: both Hardhat/Foundry and CosmWasm CLI)
+
+Pola 5: Security-First dengan Multiple Audits Sebelum Mainnet/Upgrade
+· Decision Pattern: Minimal 2 audit firms untuk setiap major release; audit scope mencakup consensus, execution, storage, precompiles; findings addressed sebelum launch; post-launch bug bounty program implied (tidak dipublikasikan formal)
+· Evidence: 6 core audits: Informal Systems (core modules), Halborn (CosmWasm), Veridise (parallel execution), Trail of Bits (Sei v2 Geth embedding), Oak Security (SeiDB), Zellic (precompiles); all completed pre-respective launches
+· Supporting Dataset: Phase 4 Technology (Audit History), Phase 3 EV-004, EV-020
+
+Financial Decision Pattern
+
+Pola 1: Equity + Token Allocation Bundled di Series A/B (No Separate Token Sale)
+· Decision Pattern: Series A ($5M Multicoin lead) dan Series B ($30M Jump Crypto lead) memberikan equity + token allocation sekaligus; tidak ada private sale token terpisah, tidak ada public sale/ICO/Launchpool; TGE via Binance spot listing langsung
+· Evidence: Sei blog Series A announcement "$35M total Series A+B"; whitepaper tokenomics "Investors 22%"; Binance listing at TGE no Launchpool; investor list mencakup VCs + market makers (Jump, Wintermute, Jane Street, Flow Traders, GSR, Kronos)
+· Rationale: Menghindari regulatory risk public token sale (Howey test); investor alignment via equity + token; Binance listing memberikan liquidity dan price discovery tanpa discount private sale; market maker investors menyediakan liquidity day-1
+· Supporting Dataset: Phase 2 Entity (Investors not separately listed but named in funding), Phase 3 EV-001, EV-005, Phase 5 Financial (Funding History: Series A, Series B, Strategic Round, Token Sale), Phase 6 Token (Distribution, TGE, Token Sale)
+
+Pola 2: Treasury/Community Pool Management via On-Chain Governance (No Team Control)
+· Decision Pattern: Protocol fees (gas, order matching, IBC, EVM priority) → community pool → governance proposals untuk spending; Sei Labs tidak memiliki direct control; $50M ecosystem fund dari treasury tapi deployment via grant program (application process)
+· Evidence: Cosmos SDK distribution module; community pool address on-chain; governance proposals di Seitrace untuk community pool spend; ecosystem fund blog "from protocol treasury"; no team multisig spending disclosed
+· Rationale: Desentralisasi progresif; regulatory compliance (team tidak control treasury); community alignment; tapi menciptakan opacity (no dashboard) dan slow deployment (governance latency)
+· Supporting Dataset: Phase 5 Financial (Revenue Model, Treasury, Fundraising Mechanism), Phase 6 Token (Governance, Distribution: Foundation/Community), Phase 7 Ecosystem (Grant Program, Governance Ecosystem: DAO)
+
+Pola 3: Ecosystem Fund dari Protocol Treasury (Not Fresh Capital)
+· Decision Pattern: $50M ecosystem fund sourced dari Foundation/Community allocation (10% + portion of 48% community), bukan fresh raise; grant categories broad (DeFi, infra, tooling, NFT, gaming); no matching fund atau milestone-based tranches publik
+· Evidence: Ecosystem fund blog "$50M from protocol treasury"; tokenomics Foundation 10% + Community 48%; grant application via forms; no public dashboard of deployment
+· Rationale: Menggunakan token treasury untuk bootstrap ecosystem; token price appreciation memperbesar fund USD value; tapi fund size fixed dalam SEI → USD value volatil; sustainability bergantung pada protocol revenue refill community pool
+· Supporting Dataset: Phase 5 Financial (Ecosystem Fund), Phase 6 Token (Distribution: Foundation 10%, Community 48%), Phase 7 Ecosystem (Grant Program), Phase 8 Market (Competitor Landscape: larger ecosystem funds)
+
+Pola 4: Revenue Diversification melalui Multiple Fee Streams
+· Decision Pattern: Menambahkan fee streams seiring upgrade: native gas fees (2023) → order matching fees (2023) → IBC packet fees (2023) → EVM priority fees + base fee burn (2024 Sei v2); semua masuk community pool kecuali base fee burned
+· Evidence: Phase 5 Revenue Model (6 fee types); Phase 4 Technology (Order Matching Engine, Sei v2 EVM Priority Fees, IBC Module); Phase 3 EV-004, EV-007, EV-008, EV-020
+· Rationale: Maximize value capture dari semua aktivitas on-chain; trading activity (order matching, perp DEX) menghasilkan fee tinggi; EVM compatibility membuka fee market Ethereum-style; burn mechanism untuk narrative alignment
+· Supporting Dataset: Phase 3 EV-004, EV-007, EV-008, EV-020, Phase 4 Technology (Core Components), Phase 5 Financial (Revenue Model), Phase 6 Token (Inflation/Deflation: EVM base fee burn)
+
+Pola 5: Vesting Cliff Synchronization (Team + Investors 12 Months Post-TGE)
+· Decision Pattern: Team (20%) dan Investors (22%) sama-sama 12-month cliff + linear vesting; cliff berakhir Aug 2024; Foundation (10%) partial unlock at TGE + 60mo linear; Community (48%) programmatic ongoing
+· Evidence: Whitepaper vesting schedule; Phase 6 Token (Vesting Schedule); Phase 3 EV-004 (TGE 2023-08-15) → cliff end estimated 2024-08
+· Rationale: Align team dan investor incentives; mencegah early dump; cliff synchronization menciptakan "unlock wall" Aug 2024 yang perlu dikelola narasi; investor termasuk market makers (Wintermute, Jane Street, Flow Traders) yang bisa provide liquidity saat unlock
+· Supporting Dataset: Phase 3 EV-004, Phase 5 Financial (Strategic Round), Phase 6 Token (Distribution, Vesting Schedule, Major Token Events: Team/Investor Cliff End)
+
+Ecosystem Decision Pattern
+
+Pola 1: Dual Bridge Strategy (Wormhole + Axelar) untuk Redundansi dan Coverage Maksimal
+· Decision Pattern: Mengintegrasikan kedua major generic message passing bridges sekaligus: Wormhole (Guardian network, Solana + EVM coverage) + Axelar (PoS validators, Cosmos + EVM coverage); tidak exclusive ke satu bridge
+· Evidence: Phase 3 EV-008 (both activated same month); Phase 4 Technology (Wormhole Bridge Integration, Axelar Bridge Integration); Phase 7 Ecosystem (Major Integrations: both; Infrastructure Providers: both); Phase 7 Ecosystem Risks (Bridge Dependency listed for both)
+· Rationale: Wormhole stronger di Solana/EVM; Axelar stronger di Cosmos/IBC; redundancy jika satu bridge compromised; maximize chain coverage (7+ chains); developer choice
+· Trade-off: Double trust assumptions; double smart contract risk; fragmented liquidity (SEI di Wormhole vs Axelar contracts); user confusion
+· Supporting Dataset: Phase 3 EV-008, Phase 4 Technology (External Dependencies, Core Components), Phase 7 Ecosystem (Major Integrations, Infrastructure Providers, Ecosystem Risks)
+
+Pola 2: Dual Oracle Strategy (Pyth + Chainlink) untuk Data Diversity
+· Decision Pattern: Mengintegrasikan Pyth (first-party publisher, low-latency, financial market focus) + Chainlink (DONs, broad coverage, VRF/CCIP/Automation) sekaligus; tidak exclusive
+· Evidence: Phase 3 EV-009 (both same month); Phase 4 Technology (Pyth Oracle, Chainlink Oracle); Phase 7 Ecosystem (Major Integrations: both; Infrastructure Providers: both); Phase 7 Ecosystem Risks (Oracle Dependency for both)
+· Rationale: Pyth superior untuk high-frequency trading price feeds (HFT, perp DEX); Chainlink superior untuk broad asset coverage, randomness (VRF), cross-chain messaging (CCIP); DeFi apps butuh keduanya (Leviathan perp → Pyth; Silo lending → Chainlink)
+· Trade-off: Double oracle risk; developer complexity memilih oracle; cost double untuk protocol (jika subsidize feeds)
+· Supporting Dataset: Phase 3 EV-009, Phase 4 Technology (Core Components: Pyth, Chainlink), Phase 7 Ecosystem (Major Integrations, Infrastructure Providers, Ecosystem Risks)
+
+Pola 3: Wallet Support Segmentation (Cosmos Native + EVM) untuk User Acquisition
+· Decision Pattern: Support native Cosmos wallets (Keplr, Leap, Compass) untuk existing Cosmos users; tambah MetaMask/Rabby via Sei v2 EVM RPC untuk Ethereum users; tidak memaksa user ganti wallet
+· Evidence: Phase 3 EV-015 (Keplr/Leap/Compass Dec 2023); Phase 3 EV-018 (MetaMask May 2024); Phase 7 Ecosystem (Wallet Ecosystem: 8 wallets listed with support type segmentation)
+· Rationale: Lower barrier to entry; Cosmos users (~2M+) retain familiar UX; Ethereum users (20M+ MetaMask) bisa access Sei tanpa friction; wallet diversity sebagai moat
+· Supporting Dataset: Phase 3 EV-015, EV-018, Phase 7 Ecosystem (Wallet Ecosystem), Phase 8 Market (Narrative: Interoperability/Chain Abstraction secondary)
+
+Pola 4: Exchange Listing Strategy: Tier-1 CEX First, DEX Native, Perp Heavy
+· Decision Pattern: Binance listing at TGE (tier-1 global); rapid follow-on listings di Coinbase (US), Kraken (US/EU), Bybit/OKX/KuCoin (Asia); native DEX (DragonSwap) launch week-2; perp DEX (Leviathan) month-3; perp volume 5-10x spot volume
+· Evidence: Phase 3 EV-005 (Binance TGE), EV-010 (DragonSwap Sept), EV-013 (Leviathan Nov); Phase 7 Ecosystem (Exchange Ecosystem: 11 CEX, 3+ DEX); Phase 8 Market (Trading Markets: perp volume $500M-1.5B vs spot $100-300M)
+· Rationale: Binance provides global liquidity day-1; Coinbase/Kraken untuk US compliance; Asian exchanges untuk retail volume; native DEX/perp captures trading fee revenue on-chain; perp volume drives token relevance untuk traders
+· Supporting Dataset: Phase 3 EV-005, EV-010, EV-013, Phase 7 Ecosystem (Exchange Ecosystem, Applications), Phase 8 Market (Trading Markets, Liquidity, Adoption Metrics)
+
+Pola 5: Developer Tooling Parity (Hardhat/Foundry untuk EVM, CosmWasm CLI untuk Native)
+· Decision Pattern: Full support untuk Ethereum tooling (Hardhat plugin, Foundry, MetaMask) + Cosmos tooling (CosmWasm CLI, Ignite CLI, Keplr); SDKs di JS/TS/Python; tidak memaksa developer belajar tooling baru
+· Evidence: Phase 7 Ecosystem (Developer Ecosystem: SDKs, APIs, Toolchains); Phase 3 EV-018 (MetaMask), EV-019 (Sei v2 testnet dengan Hardhat/Foundry validation); Phase 4 Technology (Development Framework)
+· Rationale: Developer experience adalah primary adoption driver; Ethereum developers tidak akan migrasi kalau tooling broken; CosmWasm developers retain existing workflow; dual tooling = dual developer funnel
+· Supporting Dataset: Phase 3 EV-018, EV-019, Phase 4 Technology (Development Framework), Phase 7 Ecosystem (Developer Ecosystem), Phase 8 Market (Narrative: EVM Compatibility, Developer Count metric)
+
+Governance Decision Pattern
+
+Pola 1: On-Chain Governance untuk Semua Parameter Changes dan Upgrades
+· Decision Pattern: Setiap parameter change (inflation, fees, validator count), software upgrade (Sei v2, CosmWasm 2.0, IBC-Go v8), community pool spend → on-chain proposal via Cosmos SDK Governance Module; voting power = staked SEI; delegators bisa override validator vote
+· Evidence: Phase 6 Token (Governance: voting system, proposal system); Phase 7 Ecosystem (Governance Ecosystem: DAO, Validator Set); Phase 3 EV-020 (Sei v2 upgrade via governance); Phase 4 Technology (Technical Upgrade History: all upgrades via governance)
+· Rationale: Credible neutrality; community ownership; regulatorily safer (team tidak unilaterally control); Cosmos SDK standard
+· Gap: Quorum/threshold parameters tidak dipublikasikan di docs; validator default voting power besar (delegator apathy); Foundation/team allocation tidak vote (locked/vesting) → current governance dominated oleh early validators dan community pool
+· Supporting Dataset: Phase 3 EV-020, Phase 4 Technology (Technical Upgrade History), Phase 6 Token (Governance), Phase 7 Ecosystem (Governance Ecosystem)
+
+Pola 2: Foundation Assumed tapi Not Publicly Verified sebagai Treasury Custodian
+· Decision Pattern: Whitepaper mention "Foundation 10%"; ecosystem fund blog "from protocol treasury"; tapi no legal entity filing, no multi-sig address published, no Foundation website/team distinct dari Sei Labs
+· Evidence: Phase 6 Token (Distribution: Foundation 10%); Phase 5 Financial (Treasury: not disclosed); Phase 7 Ecosystem (Governance Ecosystem: Foundation "assumed entity", legal structure not confirmed); Phase 2 Entity (no Foundation entity identified)
+· Rationale: Common Cosmos pattern (Cayman/Swiss foundation); separates protocol treasury dari company (Sei Labs); tapi lack of transparency menciptakan trust issue
+· Risk: Regulatory ambiguity (US person control of foundation?); single point of failure jika foundation multisig compromised; community tidak bisa audit treasury management
+· Supporting Dataset: Phase 2 Entity (no Foundation), Phase 5 Financial (Treasury), Phase 6 Token (Distribution: Foundation), Phase 7 Ecosystem (Governance Ecosystem: Foundation), Phase 8 Open Threads (Foundation legal entity)
+
+Pola 3: Validator Set sebagai De Facto Governance Council
+· Decision Pattern: Top 100 validators by stake produce blocks dan vote pada proposals by default untuk delegators; validators juga run oracle price feeders (beberapa); validator signaling untuk upgrade readiness; Nakamoto coefficient ~8-12 estimated
+· Evidence: Phase 7 Ecosystem (Governance Ecosystem: Validator Set, Validator Group); Phase 8 Market (Adoption Metrics: Validator Count 100, Nakamoto Coefficient estimated); Phase 4 Technology (Consensus Mechanism: validator set dynamics)
+· Rationale: PoS security alignment; validators have skin in the game; operational expertise untuk technical upgrades; tapi centralization risk (entity concentration tidak transparent)
+· Risk: Validator cartel possible; delegator override rate rendah (apathy); validator business model (commission) mungkin misaligned dengan long-term protocol health
+· Supporting Dataset: Phase 4 Technology (Consensus Mechanism, Security Model), Phase 7 Ecosystem (Governance Ecosystem, Infrastructure Providers: Validator Operators), Phase 8 Market (Validator Count, Nakamoto Coefficient)
+
+Pola 4: Sei Labs Core Team sebagai De Facto Technical Leadership (Bukan Formal Governance Body)
+· Decision Pattern: Sei Labs authors specifications (Sei v2, SeiDB), implements upgrades, runs testnets, coordinates validators; tidak memiliki formal veto power tapi de facto control melalui technical expertise dan token allocation (team 20% vesting)
+· Evidence: Phase 2 Entity (Jayendra Jog, Dan Edlebeck, Sei Labs Inc.); Phase 3 EV-016, EV-017 (announcements via Sei Labs blog); Phase 4 Technology (GitHub repos under sei-protocol org); Phase 7 Ecosystem (Governance Ecosystem: Committee: Sei Labs Core Team)
+· Rationale: Bootstrapping phase butuh strong technical leadership; founder vision alignment; gradual decentralization sebagai tokens vest
+· Risk: Key person dependency (Jayendra/Dan); regulatory exposure (US corporation controlling protocol); transition ke true DAO tidak memiliki timeline formal
+· Supporting Dataset: Phase 2 Entity, Phase 3 EV-016, EV-017, Phase 4 Technology (Official Technical Resources: GitHub), Phase 7 Ecosystem (Governance Ecosystem)
+
+Risk Response Pattern
+
+Pola 1: Preemptive Audits dan Extended Testnet untuk Technical Risk Mitigation
+· Decision Pattern: Sebelum setiap major launch/upgrade, melakukan multiple audits (2-3 firms) dan extended public testnet (4-17 bulan); findings addressed pre-launch; no mainnet exploit/hack sejauh ini
+· Trigger: High-value DeFi protocols memerlukan security assurance; competitor L1s memiliki exploit history (Solana outages, Wormhole hack, Nomad bridge hack)
+· Evidence: Phase 4 Technology (Audit History: 6 core audits pre-respective launches); Phase 3 EV-002 (17 bulan testnet), EV-019 (4 bulan Sei v2 testnet); Phase 7 Ecosystem Risks (SeiDB maturity, Geth embedding, Wasmer determinism flagged as risks tapi mitigated via audit)
+· Response: Audit-first culture; testnet sebagai production simulation; bug bounty implied tapi tidak dipublikasikan formal
+· Result: Zero critical mainnet exploits; zero chain halts post-mainnet; validator set stable; SeiDB/Sei v2 upgrades smooth
+· Supporting Dataset: Phase 3 EV-002, EV-003, EV-019, Phase 4 Technology (Audit History, Technical Upgrade History, Known Limitations), Phase 7 Ecosystem (Ecosystem Risks)
+
+Pola 2: Dual/Redundant Infrastructure untuk Bridge dan Oracle Risk
+· Decision Pattern: Mengintegrasikan DUA bridge (Wormhole + Axelar) dan DUA oracle (Pyth + Chainlink) sekaligus; tidak bergantung pada single provider; jika satu compromised, yang lain still operational
+· Trigger: Wormhole hack Feb 2022 ($320M); Nomad hack Aug 2022 ($190M); oracle manipulation attacks di DeFi (Mango Markets, Eisenberg); competitor L1 sering single bridge/oracle
+· Evidence: Phase 3 EV-008, EV-009 (both activated same month mainnet); Phase 4 Technology (Core Components: both bridges, both oracles); Phase 7 Ecosystem (Major Integrations: both; Infrastructure Providers: both; Ecosystem Risks: Bridge/Oracle Dependency listed as HIGH for both)
+· Response: Redundancy by design; developer bisa choose; protocol tidak endorse satu over another
+· Result: Zero bridge/oracle incident affecting Sei DeFi; Leviathan perp menggunakan Pyth; Silo lending menggunakan Chainlink; cross-chain liquidity via both bridges
+· Supporting Dataset: Phase 3 EV-008, EV-009, Phase 4 Technology (Core Components, External Dependencies), Phase 7 Ecosystem (Major Integrations, Infrastructure Providers, Ecosystem Risks)
+
+Pola 3: Gradual Decentralization via Token Vesting dan Governance Activation
+· Decision Pattern: Team/investor tokens locked 12-month cliff; governance active day-1 tapi voting power concentrated di validators/community pool; cliff end Aug 2024 → voting power shifts ke broader holders; Foundation/ecosystem fund deployment gradual
+· Trigger: Regulatory pressure (SEC enforcement on L1 tokens); community demand untuk decentralization; competitor (Aptos, Sui) criticized untuk insider concentration
+· Evidence: Phase 6 Token (Vesting Schedule: Team/Investors 12mo cliff); Phase 3 EV-004 (TGE), derived cliff end Aug 2024; Phase 7 Ecosystem (Governance Ecosystem: DAO active, Foundation assumed); Phase 5 Financial (Fundraising: equity+token bundled)
+· Response: Time-based decentralization; no emergency centralization measures (no pause function, no admin keys pada native token); on-chain governance dari genesis
+· Result: Cliff passed Aug 2024 tanpa major governance attack; monthly vesting creates steady supply increase; community pool growing via fees
+· Supporting Dataset: Phase 3 EV-004, Phase 5 Financial (Fundraising, Financial Risk), Phase 6 Token (Distribution, Vesting, Governance, Major Token Events), Phase 7 Ecosystem (Governance Ecosystem)
+
+Pola 4: Technical Upgrade Coordination via Signaling dan Extended Testnet
+· Decision Pattern: Major upgrades (Sei v2) di-coordinate melalui: public announcement → spec publication → testnet → validator signaling → governance proposal → scheduled upgrade block; 4+ bulan lead time; validator upgrade readiness tracked
+· Trigger: Cosmos SDK upgrade coordination challenges (gaia upgrades); risk of chain halt jika >1/3 validators tidak upgrade; Sei v2 complexity (Geth embedding, SeiDB) butuh validator preparation
+· Evidence: Phase 3 EV-016 (announcement Apr 2024), EV-019 (testnet Jul 2024), EV-020 (mainnet Aug 2024); Phase 4 Technology (Technical Upgrade History); Phase 7 Ecosystem Risks (Cosmos SDK Upgrade Coordination, Validator Set Centralization)
+· Response: Structured upgrade timeline; testnet untuk validator practice; governance proposal untuk on-chain signaling; upgrade block height predetermined
+· Result: Sei v2 upgrade successful; no chain halt; validator participation high; SeiDB activated smoothly
+· Supporting Dataset: Phase 3 EV-016, EV-019, EV-020, Phase 4 Technology (Technical Upgrade History, Known Limitations: Governance Upgrade Coordination), Phase 7 Ecosystem (Ecosystem Risks: Validator Set Centralization, Cosmos SDK Upgrade Coordination)
+
+Recurring Behavioral Pattern
+
+Pola 1: Dual/Redundant Approach untuk Critical Dependencies
+· Pattern: Selalu memilih DUA provider untuk critical infrastructure: Bridges (Wormhole + Axelar), Oracles (Pyth + Chainlink), Wallets (Cosmos native + EVM), VMs (CosmWasm + EVM), Execution Clients (Wasmer + Geth)
+· Evidence: Phase 3 EV-008, EV-009, EV-015, EV-018, EV-020; Phase 4 Technology (Core Components, External Dependencies); Phase 7 Ecosystem (Major Integrations, Wallet Ecosystem, Infrastructure Providers)
+· Frequency: 5 critical dependency categories, all dual-sourced
+· Rationale: Risk diversification; avoid vendor lock-in; maximize coverage (Solana vs Cosmos vs Ethereum ecosystems); developer/user choice
+· Trade-off: Increased complexity; double audit surface; fragmented liquidity/integration effort; higher operational overhead
+
+Pola 2: Major Upgrade/Announcement Setiap ~12 Bulan
+· Pattern: 2022-03 Testnet → 2023-08 Mainnet (17 bulan) → 2024-04 Sei v2 Announcement (8 bulan post-mainnet) → 2024-08 Sei v2 Mainnet (4 bulan post-announcement) → next: CosmWasm 2.0 / IBC-Go v8 (estimated Q4 2024)
+· Evidence: Phase 3 History (all events timeline); Phase 4 Technology (Technical Upgrade History)
+· Frequency: ~3 major milestones per 2 tahun; cadence mempercepat post-mainnet
+· Rationale: Market narrative refresh; competitor response (Monad, Berachain announcements 2024); technical debt resolution (SeiDB untuk state bloat); investor milestone expectations
+
+Pola 3: Ecosystem App Launch dalam Cluster Post-Infrastructure Ready
+· Pattern: Infrastructure ready (mainnet + bridges + oracles + wallets) → cluster app launches dalam 3 bulan: DragonSwap (Sep), Silo (Sep), Yei (Oct), Leviathan (Nov), Pallet (Nov) 2023
+· Evidence: Phase 3 EV-004 (Mainnet Aug), EV-007/008/009 (Infra Aug), EV-010 to EV-014 (Apps Sep-Nov); Phase 7 Ecosystem (Applications)
+· Frequency: One-time cluster post-genesis; subsequent apps trickle (Sei v2 EVM apps expected cluster post-Aug 2024)
+· Rationale: Infrastructure readiness unlocks builder confidence; coordinated marketing push; liquidity bootstrapping simultan; first-mover advantage per category
+
+Pola 4: Token Unlock Events Dikotomi Narasi (Cliff End = Risk/Opportunity)
+· Pattern: Team/investor 12-month cliff (Aug 2024) di-narrate sebagai "decentralization milestone" bukan "sell pressure"; ecosystem fund deployment dipercepat pre-cliff untuk show traction; no explicit unlock management communication
+· Evidence: Phase 6 Token (Vesting Schedule, Major Token Events: Team/Investor Cliff End); Phase 5 Financial (Ecosystem Fund announced 2023-Q4 pre-cliff); Phase 8 Market (no explicit unlock dashboard)
+· Frequency: Major cliff Aug 2024; subsequent monthly linear vesting; Foundation 60mo linear; Community ongoing
+· Rationale: Control narrative; avoid "unlock FUD"; show protocol maturity via ecosystem growth; investor alignment (market makers dalam investor list bisa absorb selling)
+
+Pola 5: Technical Specification Publication Sebelum Implementation (Sei v2, SeiDB)
+· Pattern: Blog announcement dengan technical detail (Sei v2 blog, SeiDB blog) → public spec → testnet → mainnet; tidak "stealth launch"; community bisa review dan critique design
+· Evidence: Phase 3 EV-016 (Sei v2 announcement Apr 2024 dengan spec), EV-017 (SeiDB announcement Apr 2024), EV-019 (testnet Jul), EV-020 (mainnet Aug); Phase 4 Technology (Official Technical Resources: blogs, docs)
+· Frequency: 2 major tech specs published 2024 (Sei v2, SeiDB); prior: whitepaper 2021
+· Rationale: Credibility dengan technical community; attract developer feedback early; marketing narrative control; regulatorily transparent (no hidden features)
+
+Strategic Trade-offs
+
+Trade-off 1: Desentralisasi vs Kecepatan Eksekusi (Validator Set Size vs Throughput)
+· Decision: Validator set dibatasi 100 aktif (top by stake); Tendermint/CometBFT consensus dengan 2/3 threshold; parallel execution untuk throughput; bukan permissionless validator set seperti Bitcoin/Ethereum PoW
+· Trade-off: Mengorbankan validator decentralization (Nakamoto coefficient ~8-12) demi consensus speed (~400-600ms block time) dan finality deterministik; 100 validator cap menciptakan barrier to entry untuk validator baru
+· Evidence: Phase 4 Technology (Consensus Mechanism: 100 validators, ~400-600ms); Phase 7 Ecosystem (Governance: Validator Set 100); Phase 8 Market (Validator Count 100, Nakamoto Coefficient estimated 8-12)
+· Supporting Dataset: Phase 4 Technology (Consensus Mechanism, Security Model), Phase 7 Ecosystem (Governance Ecosystem, Ecosystem Risks: Validator Centralization), Phase 8 Market (Adoption Metrics)
+
+Trade-off 2: Keamanan Bridge vs Composability Cross-Chain (Trust Assumptions vs Liquidity Access)
+· Decision: Mengintegrasikan Wormhole (Guardian multisig 19) dan Axelar (PoS validators) untuk cross-chain liquidity; tidak menunggu trust-minimized bridge (seperti IBC untuk non-Cosmos) yang belum exist
+· Trade-off: Mengorbankan trust-minimization (bridged assets secured by external validator sets, bukan Sei consensus) demi immediate access ke Ethereum/Solana/EVM L2 liquidity dan user base; bridge hack = bridged asset value loss di Sei
+· Evidence: Phase 3 EV-008; Phase 4 Technology (External Dependencies: Wormhole, Axelar); Phase 7 Ecosystem (Major Integrations: both bridges; Infrastructure Providers: both; Ecosystem Risks: Bridge Dependency HIGH)
+· Supporting Dataset: Phase 3 EV-008, Phase 4 Technology (External Dependencies, Core Components), Phase 7 Ecosystem (Major Integrations, Infrastructure Providers, Ecosystem Risks)
+
+Trade-off 3: Kompleksitas Teknis (Dual VM + Custom Storage) vs Developer Adoption (EVM Compatibility)
+· Decision: Membangun dual VM (CosmWasm + EVM via Geth) dengan custom storage layer (SeiDB) dan precompile contracts; bukan choose one VM atau gunakan existing solution (Ethermint, evmOS)
+· Trade-off: Mengorbankan simplicity, audit surface, maintenance burden (Geth fork, Wasmer determinism, cross-VM reentrancy, SeiDB maturity) demi capture Ethereum developer base (10x larger than CosmWasm); time-to-market delay (Sei v2 1 tahun development)
+· Evidence: Phase 3 EV-016, EV-020; Phase 4 Technology (Execution Environment: both VMs, SeiDB, Precompiles, Known Limitations: Cross-VM Latency, Geth Embedding Dependency, SeiDB Maturity); Phase 7 Ecosystem (Developer Ecosystem: both toolchains); Phase 8 Market (Narrative: EVM Compatibility Main, Competitor: Monad, Berachain)
+· Supporting Dataset: Phase 3 EV-016, EV-020, Phase 4 Technology (Execution Environment, Sei v2 EVM Layer, SeiDB, Known Limitations), Phase 7 Ecosystem (Developer Ecosystem), Phase 8 Market (Narrative Position, Competitor Landscape)
+
+Trade-off 4: Treasury Transparency vs Operational Flexibilitas (Foundation Opacity vs Grant Speed)
+· Decision: Sei Foundation legal entity tidak dipublikasikan; treasury address tidak labeled; ecosystem fund deployment via private grant process; no public dashboard
+· Trade-off: Mengorbankan community trust dan accountability demi flexibility dalam grant decisions, regulatory ambiguity management, dan negotiation leverage dengan recipients; competitor (Aptos Foundation, Sui Foundation) lebih transparan
+· Evidence: Phase 2 Entity (no Foundation); Phase 5 Financial (Treasury: not disclosed); Phase 6 Token (Distribution: Foundation 10%); Phase 7 Ecosystem (Governance: Foundation assumed, Grant Program no dashboard); Phase 8 Open Threads (Foundation legal entity, Ecosystem Fund deployment transparency)
+· Supporting Dataset: Phase 2 Entity, Phase 5 Financial (Treasury), Phase 6 Token (Distribution), Phase 7 Ecosystem (Governance Ecosystem, Grant Program), Phase 8 Open Threads
+
+Trade-off 5: Inflationary Tokenomics (Staking Rewards) vs Token Holder Value Accrual (Fee Burn)
+· Decision: Staking rewards ~7% inflationary (minted per block); partial burn hanya untuk EVM base fee (Sei v2); native tx fees tidak burned; net supply inflationary
+· Trade-off: Mengorbankan token scarcity/value accrual via burn demi network security (staking rewards attract validators/delegators) dan DeFi composability (low gas fees); EVM burn token gesture untuk narrative alignment tapi quantitatively kecil vs staking emission
+· Evidence: Phase 6 Token (Inflation/Deflation: 7% target, EVM base fee burn only); Phase 4 Technology (Sei v2 EVM Priority Fees, Consensus Mechanism); Phase 5 Financial (Revenue Model: fees to community pool); Phase 8 Market (Adoption Metrics: Staking Participation 65-70%)
+· Supporting Dataset: Phase 4 Technology (Consensus Mechanism, Sei v2 EVM Layer), Phase 5 Financial (Revenue Model), Phase 6 Token (Inflation/Deflation, Utility: Staking, Gas), Phase 8 Market (Adoption Metrics)
+
+Behavioral Summary
+
+Prioritas Utama Proyek:
+1. Technical Differentiation via Parallel Execution + Native Order Matching → trading-optimized L1 moat
+2. Developer Adoption via EVM Compatibility (Sei v2) → capture Ethereum developer liquidity
+3. Ecosystem Growth via Dual Infrastructure (bridges, oracles, wallets, VMs) → reduce switching costs
+4. Progressive Decentralization via Token Vesting + On-Chain Governance → regulatory compliance + community ownership
+5. Revenue Diversification via Multi-Source Fee Capture → sustainable treasury post-VC funding
+
+Cara Mengambil Keputusan:
+- Founder-led technical vision (Jayendra/Dan) → spec publication → community review → audit → testnet → governance upgrade
+- Data-driven untuk technical choices (parallel execution benchmarks, SeiDB design docs, audit results)
+- Narrative-aware untuk market positioning (Sei v2 response ke Monad/Berachain; EVM compatibility sebagai must-have 2024)
+- Risk-mitigation melalui redundancy (dual bridges, dual oracles, dual VMs) dan preemptive audits
+- Gradual decentralization: team control → on-chain governance → community pool → Foundation (assumed) → full DAO (aspirational)
+
+Faktor Paling Sering Mempengaruhi Keputusan:
+1. Competitive Landscape (Monad, Berachain, Hyperliquid, Solana, Aptos, Sui) → drives Sei v2, SeiDB, EVM narrative
+2. Developer Experience (tooling, wallet, language) → drives dual VM, dual wallet, dual toolchain
+3. Regulatory Environment (US Delaware corp, SEC framework) → drives no public sale, equity+token bundle, Foundation opacity, gradual decentralization
+4. Infrastructure Maturity (Cosmos SDK, CometBFT, Geth, Wasmer, IBC-Go) → builds on proven layers, customizes critical path
+5. Capital Efficiency (VC funding $35M, ecosystem fund $50M from treasury) → drives revenue diversification, grant program, no fresh raises
+
+Pola Evolusi:
+- Phase 1 (2021-2022): Research & Development → parallel execution prototype, Cosmos SDK base
+- Phase 2 (2022-2023): Testnet & Validation → 17 bulan testnet, audit, validator onboarding
+- Phase 3 (2023-08 to 2023-12): Mainnet Launch & Ecosystem Bootstrap → TGE, Binance, infra, flagship apps, wallets
+- Phase 4 (2024): Pivot to EVM + Storage Scaling → Sei v2, SeiDB, MetaMask, mainnet upgrade
+- Phase 5 (2024+): Maturation & Competition → CosmWasm 2.0, IBC-Go v8, EVM app cluster, institutional adoption
+
+Kekuatan Utama:
+1. Technical Moat: Parallel execution + native order matching + SeiDB = genuine differentiation untuk trading use case
+2. Dual VM Strategy: CosmWasm (security, Rust) + EVM (adoption, Solidity) = widest developer addressable market
+3. Infrastructure Completeness: Bridges, oracles, wallets, explorers, indexers all live sejak early → builder ready
+4. Capital Efficiency: $35M VC → mainnet + $50M ecosystem fund from treasury → no down round, no token sale dilution
+5. Exchange/Market Maker Relationships: Binance TGE listing + investor MMs (Wintermute, Jane Street, Flow Traders, GSR) → deep liquidity
+
+Kelemahan Utama:
+1. Foundation/ Treasury Opacity: No legal entity confirmed, no addresses labeled, no dashboard → trust deficit
+2. Dual VM Complexity: Geth fork maintenance, cross-VM reentrancy risk, Wasmer determinism, SeiDB maturity unproven at scale
+3. Bridge/Oracle External Risk: 100% bridged asset value depends on Wormhole/Axelar/Pyth/Chainlink security
+4. Validator Centralization: Nakamoto coefficient ~8-12, entity concentration unknown, cloud dependency high
+5. No Sustainable Revenue Model Published: Protocol fees → community pool, but Sei Labs ops funding unclear post-VC; token price dependency high
+6. Regulatory Overhang: Delaware corporation + token = SEC enforcement risk; no public legal opinion
+7. Governance Maturity: Delegator apathy, validator dominance, no Foundation transparency, slow community pool deployment
+
+Open Threads
+
+- Sei Foundation legal entity dan jurisdiction: Whitepaper mention "Foundation 10%" tapi tidak ada filing publik (Cayman/Swiss/Delaware?); multi-sig signers tidak diketahui; custody arrangement tidak transparan → perlu verifikasi legal docs atau on-chain multisig analysis
+- Treasury wallet addresses dan composition: Community pool address known (distribution module) tapi Foundation/team treasury tidak labeled; stablecoin vs SEI ratio tidak diketahui; revenue/expense tracking tidak publik → perlu on-chain forensic atau official disclosure
+- Exact token allocation breakdown per investor (Series A vs B): Whitepaper "Investors 22%" aggregated; individual investor token amount, vesting start/end, lockup terms tidak dipublikasikan → cap table opacity; market maker investors (Wintermute, Jane Street) token allocation memengaruhi liquidity dynamics
+- Sei v2 Geth version pinning dan upgrade policy: Upstream Geth releases (Shanghai, Cancun, Prague) → bagaimana Sei handle consensus-critical changes? Fork maintenance burden? Delayed upgrade risk? → tidak terdokumentasi di public specs
+- SeiDB fast sync trust model detail: "Trusted checkpoint" untuk fast sync → siapa generate checkpoint? Verification process? Attack vector jika checkpoint malicious? → blog mention tapi spec tidak lengkap
+- Cross-VM (CosmWasm ↔ EVM) reentrancy protection implementation: Precompile calls dari EVM ke native module → reentrancy guard design? State sync atomicity? → tidak di public docs; audit reports (Trail of Bits, Zellic) mungkin cover tapi tidak publik
+- Ecosystem Fund ($50M) deployment actual: Berapa sudah dicairkan? Ke project apa? Kategori distribution? Remaining balance? → no dashboard; hanya announcements berantakan; transparency gap vs competitor foundations
+- Nakamoto coefficient actual (entity-level): Seitrace validator stake distribution known tapi entity mapping (same operator multiple validators) tidak on-chain → perlu off-chain analysis (IP, commission address, governance voting pattern)
+- Sei Labs revenue model post-VC: Apakah team mengambil cut dari community pool fees? Atau fully funded oleh Series A+B + token treasury? → tidak di-disclose; kritis untuk sustainability assessment
+- Regulatory engagement status: Sei Labs Inc. Delaware; SEI token classification (security vs commodity) → apakah ada legal memo? SEC correspondence? Howey analysis? → tidak publik; material risk untuk US operations
+- IBC-Go v8 / Interchain Accounts (ICA) upgrade timeline: Planned tapi no governance proposal visible; dependency pada Cosmos SDK upgrade path → blockers unknown
+- CosmWasm 2.0 (Stargate) upgrade status: CosmWasm 2.0 released 2024; Sei upgrade proposal tidak on-chain → timeline? Breaking changes untuk existing contracts?
+- Formal verification parallel execution engine: Veridise audit referenced "formal verification" tapi properties (safety/liveness under contention) tidak published → audit report access needed
+- Maximum validator count governance parameter history: Currently 100; change process? Rationale? Previous changes? → tidak di technical docs
+- Emergency circuit breakers untuk bridge/oracle failure: Protocol-level pause mechanism untuk bridged assets atau oracle feeds? → tidak terdokumentasi; dependency pada external provider emergency measures
+- Institutional custody support untuk SEI native: Fireblocks, Copper, Anchorage, BitGo support SEI native (bukan hanya ERC-20)? → affects institutional adoption narrative; tidak konfirmasi publik

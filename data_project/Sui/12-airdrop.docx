@@ -1,0 +1,146 @@
+PROJECT: Sui
+
+STATUS AIRDROP
+
+Belum ada
+
+Sui tidak pernah melakukan airdrop token SUI langsung ke pengguna tanpa syarat pembayaran. Yang ada adalah Community Access Program (6% dari total supply, = 600.000.000 SUI) yang dialokasikan melalui testnet wave incentivized (Wave 1, 2, 3), program validator kandidat, dan program "Sui Testnet Tour" — namun semua ini berbasis tugas (task-based) yang mengharuskan partisipasi aktif pada jaringan testnet, bukan airdrop retroaktif berdasarkan snapshot kepemilikan aset lain atau aktivitas on-chain mainnet (HIGH) [Sui Blog Tokenomics, https://blog.sui.io/sui-token-economics/]; (HIGH) [Sui Blog Testnet Wave 3, https://blog.sui.io/sui-testnet-wave-3/]. Tidak ada bukti dari Phase 1-11 atau sumber publik bahwa Sui pernah menjalankan airdrop tanpa syarat tugas — semua distribusi token bebas di awal mainnet (TGE) adalah hasil dari ekosistem testnet atau equity investor, bukan airdrop publik.
+
+AIRDROP EVENTS
+
+Tidak ada event airdrop terpisah. Namun, terdapat satu mekanisme distribusi yang sering dikategorikan sebagai "airdrop oleh masyarakat" — yaitu Community Access Program, yang beroperasi sebagai task-based rewards selama testnet. Berikut adalah blok deskripsinya, meskipun tidak memenuhi definisi ketat airdrop (tanpa tugas):
+
+AD-001: Community Access Program (Testnet Wave Incentives)
+- Tanggal: 2023-05-03 (bersamaan TGE; program berlangsung sejak 2022-08 hingga mainnet) (HIGH) [Sui Blog Mainnet Launch, https://blog.sui.io/sui-mainnet-launches/]
+- Tipe: Task-based (bukan airdrop primer; termasuk dalam kategori Lainnya)
+- Alokasi: 6% total supply = 600.000.000 SUI (HIGH) [Sui Blog Tokenomics, https://blog.sui.io/sui-token-economics/]
+- Penerima: Tidak ditemukan jumlah alamat pasti; partisipan testnet Wave 1-3, validator kandidat, dan pengembang yang menyelesaikan misi tertentu (HIGH) [Sui Blog Testnet Wave 1, https://blog.sui.io/sui-testnet-wave-1-launches/]
+- Nilai saat klaim: Tidak ditemukan per penerima — tidak ada publikasi resmi distribusi per alamat; nilai total program jika diklaim penuh = 600M SUI × harga saat klaim (~$1.20) = ~$720M, tapi ini hanya hipotesis estimasi dari harga pasar, bukan data resmi (LOW) [CoinGecko, https://www.coingecko.com/en/coins/sui]
+- Kriteria: Partisipasi aktif di testnet — menyelesaikan misi, menjalankan validator node, membangun aplikasi, melaporkan bug; sistem poin yang diumumkan per wave (HIGH) [Sui Blog Testnet Wave 1, https://blog.sui.io/sui-testnet-wave-1-launches/]
+- Anti-sybil: Tidak diketahui — tidak ada laporan publik detail mekanisme anti-sybil untuk Community Access Program; Mysten Labs tidak mempublikasikan daftar alamat yang didiskualifikasi (LOW) [tidak ditemukan di sumber publik]
+- Terkait EV: EV-005, EV-008, EV-009 (Testnet Wave 1, 2, 3), EV-010 (Mainnet Launch), EV-011 (TGE) (HIGH) [Phase 3 — Historical]
+- Sitasi: (HIGH) [Sui Blog Tokenomics, https://blog.sui.io/sui-token-economics/]; (HIGH) [Sui Blog Testnet Wave 1, https://blog.sui.io/sui-testnet-wave-1-launches/]; (HIGH) [Sui Blog Testnet Wave 3, https://blog.sui.io/sui-testnet-wave-3/]; (HIGH) [Sui Blog Mainnet Launch, https://blog.sui.io/sui-mainnet-launches/]
+
+CONTEXT SAAT KEPUTUSAN
+
+- Tahap funding: Sui telah mengumpulkan $36M (Series A, Desember 2021) dan $300M (Series B, September 2022) — total $336M equity funding ke Mysten Labs; treasury foundation belum terbentuk saat keputusan Community Access Program dirancang (2022) tapi sudah beroperasi saat TGE (2023) (HIGH) [TechCrunch Series A, https://techcrunch.com/2021/12/01/mysten-labs-raises-36m-series-a-a16z]; (HIGH) [TechCrunch Series B, https://techcrunch.com/2022/09/08/mysten-labs-raises-300m-series-b/]
+- Ukuran komunitas: Sebelum mainnet, komunitas tumbuh melalui testnet wave — ribuah validator kandidat dan pengembang berpartisipasi (Wave 1 menarik ribuan partisipan), namun belum ada metrik jumlah wallet mainnet karena belum live (HIGH) [Sui Blog Testnet Wave 1, https://blog.sui.io/sui-testnet-wave-1-launches/]; (HIGH) [Sui Blog Testnet Wave 3, https://blog.sui.io/sui-testnet-wave-3/]
+- Kondisi pasar: Pasar kripto sedang bearish (2022-2023) — harga BTC/ETH turun signifikan; narasi DeFi sudah matang tapi narasi "airdrop farming" sedang berkembang; proyek layer 1 baru membutuhkan insentif untuk menarik developer dan pengguna awal (MEDIUM) [Messari, https://messari.io/article/the-state-of-sui]; (MEDIUM) [CoinDesk, https://www.coindesk.com/markets/2023/05/03/sui-launch/)
+- Kompetitor terdekat: Aptos (juga berbasis Move) mainnet Oktober 2022, melakukan similar testnet incentives; Solana sedang menstabilkan ekosistem setelah crash FTX; Ethereum dominan tapi mahal — Sui melihat celah untuk menarik developer Move dan pengguna high-throughput (MEDIUM) [Aptos Blog, https://aptoslabs.com/blog/aptos-mainnet]; (MEDIUM) [TechCrunch, https://techcrunch.com/2023/05/03/sui-mainnet-launch]
+
+TRIGGER DAN ALTERNATIF
+
+- Trigger: Kebutuhan untuk mendistribusikan token secara adil kepada komunitas yang telah membantu menguji jaringan sebelum mainnet; kebutuhan untuk memenuhi syarat listing exchange (seringkali memerlukan distribusi token yang tidak terlalu terpusat); kebutuhan untuk membangun dasar desentralisasi validator (HIGH) [Sui Blog Tokenomics, https://blog.sui.io/sui-token-economics/]; (MEDIUM) [CoinDesk, https://www.coindesk.com/tech/2023/05/03/sui-mainnet-launches/]
+- Alternatif yang tersedia: (1) melakukan airdrop retroaktif murni tanpa tugas — tidak diambil; (2) melakukan penjualan publik (ICO/IDO) — tidak diambil, keputusan sadar menghindari token sale publik sampai TGE (Phase 5, Token Sale: Tidak ada public token sale) (HIGH) [Phase 5 — Token Sale, https://blog.sui.io/sui-token-economics/]; (3) tidak mendistribusikan ke komunitas sama sekali — tidak diambil karena akan merusak kepercayaan dan tidak memenuhi syarat desentralisasi validator
+- Tidak ditemukan dokumentasi eksplisit tentang pertimbangan internal antara airdrop retroaktif vs task-based; namun data menunjukkan tim memilih task-based untuk memastikan token diberikan kepada partisipan aktif, bukan investor pasif (MEDIUM) [Phase 9 — Behavioral: pola "Validasi ekstensif sebelum adopsi"]
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi:
+- "Untuk memberikan insentif kepada partisipasi aktif dan membantu mendesentralisasi jaringan, kami mengalokasikan 6% supply ke Community Access Program" — pernyataan resmi di blog tokenomics (HIGH) [Sui Blog Tokenomics, https://blog.sui.io/sui-token-economics/]
+- "Peserta testnet yang menyelesaikan misi akan menerima SUI sebagai pengakuan atas kontribusi mereka terhadap stabilitas dan keamanan jaringan" (HIGH) [Sui Blog Testnet Wave 1, https://blog.sui.io/sui-testnet-wave-1-launches/]
+
+Alasan yang tidak diumumkan (HIPOTESIS dengan evidence):
+- HIPOTESIS 1 — Memenuhi syarat listing exchange: Bursa kripto utama (Binance, Coinbase, OKX) sering memerlukan distribusi token yang tidak terlalu terpusat sebagai syarat listing; Community Access Program yang tersebar luas membantu memenuhi itu. Evidence: Listing serentak di 6+ exchange besar bersamaan mainnet (HIGH) [Phase 3 — EV-011]; Syarat listing umum untuk desentralisasi (MEDIUM) [analisis pasar]
+- HIPOTESIS 2 — Menghindari klasifikasi sekuritas: Dengan memberikan token sebagai insentif tugas (bukan pembelian), Sui memperkuat narasi bahwa SUI adalah token utilitas, bukan sekuritas — berbeda dengan token sale publik yang lebih rentan regulasi. Evidence: Tidak ada public token sale; Community Access Program non-pembayaran; SEC yang sedang agresif pada 2022-2023 (MEDIUM) [Phase 5 — Financial Risk; media regulasi]
+- HIPOTESIS 3 — Membangun struktur validator: Mendistribusikan ke validator kandidat melalui program testnet memastikan bahwa mereka yang menjalankan node (dan nanti akan membentuk jaringan) memiliki stake awal. Evidence: Testnet Wave berfokus pada validator; >100 validator mainnet saat TGE (HIGH) [Sui Blog Testnet Wave 3, https://blog.sui.io/sui-testnet-wave-3/]; (HIGH) [Phase 8 — Validator Count]
+
+OUTCOME PER POV
+
+POV Founder (Evan Cheng, co-founder Mysten Labs):
+- Jangka pendek: Berhasil — mainnet launch mulus dengan likuiditas tinggi; token tersebar ke komunitas testnet aktif, bukan spekulan pasif; listing serentak exchange terbesar memberikan harga awal yang kuat (HIGH) [Sui Blog Mainnet Launch, https://blog.sui.io/sui-mainnet-launches/]; (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/sui]
+- Jangka panjang: Sebagian — Penerima Community Access Program yang menerima token murah cenderung menjual setelah TGE, tekanan jual terlihat dalam beberapa bulan pertama; namun distribusi ke validator dan pengembang aktif membantu mendesentralisasi jaringan (MEDIUM) [CoinDesk, https://www.coindesk.com/markets/2023/05/03/sui-launch]
+- Dasar: (HIGH) [Sui Blog Mainnet Launch, https://blog.sui.io/sui-mainnet-launches/]; (MEDIUM) [CoinDesk, https://www.coindesk.com/markets/2023/05/03/sui-launch]
+
+POV VC (a16z Crypto, Coinbase Ventures, Binance Labs, Jump Crypto, Franklin Templeton, Circle Ventures):
+- Jangka pendek: Sukses — Modal equity $336M dari VC; distribusi token kepada komunitas membantu likuiditas dan harga awal yang tinggi, yang menguntungkan portofolio mereka; listing exchange besar meningkatkan visibilitas (HIGH) [TechCrunch Series A, https://techcrunch.com/2021/12/01/mysten-labs-raises-36m-series-a-a16z]; (HIGH) [TechCrunch Series B, https://techcrunch.com/2022/09/08/mysten-labs-raises-300m-series-b/]
+- Jangka panjang: Tidak diketahui — Vesting investor 12 bulan cliff + 36 bulan linear; harga SUI setelah cliff (Mei 2024) belum dipastikan menguntungkan semua investor; tidak ada laporan publik tentang return VC (MEDIUM) [Phase 6 — Vesting Schedule]
+- Dasar: (HIGH) [Phase 6 — Vesting Schedule]; (MEDIUM) [tidak ada laporan resmi VC return]
+
+POV Retail (penerima Community Access Program / testnet participants):
+- Jangka pendek: Berhasil — Menerima token gratis sebagai reward atas partisipasi testnet; banyak yang menjual saat harga awal >$1, mendapatkan profit significant tanpa membeli token (MEDIUM) [CoinGecko, https://www.coingecko.com/en/coins/sui]
+- Jangka panjang: Sebagian — Mereka yang menjual awal mengunci profit; yang memegang mengalami harga turun ke rendah $0.4-0.5 di awal 2024 sebelum rally kemudian; hasil sangat tergantung waktu jual (MEDIUM) [CoinGecko, https://www.coingecko.com/en/coins/sui]
+- Dasar: (MEDIUM) [CoinGecko, https://www.coingecko.com/en/coins/sui]; (MEDIUM) [Phase 6 — Holder Distribution — tidak ada data cohort]
+
+POV Community (anggota komunitas Sui, bukan penerima langsung):
+- Jangka pendek: Sukses — Komunitas merasa dihargai karena yang berpartisipasi testnet diberi token; komunitas berkembang cepat saat mainnet (HIGH) [Sui Blog Testnet Wave 1, https://blog.sui.io/sui-testnet-wave-1-launches/]
+- Jangka panjang: Sebagian — Mereka yang tidak berpartisipasi testnet merasa terlewatkan; komunitas berfokus pada pengembangan ekosistem jangka panjang; tidak ada airdrop kedua membuat sebagian anggota komunitas kurang terinsentif (MEDIUM) [Phase 9 — Open Threads; tidak ada sumber resmi]
+- Dasar: (HIGH) [Sui Blog Testnet Wave 1, https://blog.sui.io/sui-testnet-wave-1-launches/]; (MEDIUM) [analisis komunitas]
+
+POV Developer (pengembang aplikasi di Sui):
+- Jangka pendek: Sukses — Developer yang membangun di testnet menerima grant dan reward; memiliki akses awal ke tooling dan SDK; dapat membangun aplikasi sebelum mainnet (HIGH) [Sui Blog Testnet Wave 2, https://blog.sui.io/sui-testnet-wave-2/]
+- Jangka panjang: Sebagian — Developer yang serius bertahan dan membangun aplikasi; banyak yang mengandalkan grants program; tidak ada insentif tambahan khusus airdrop untuk developer setelah mainnet (MEDIUM) [Phase 7 — Ecosystem]
+- Dasar: (HIGH) [Sui Blog Testnet Wave 2, https://blog.sui.io/sui-testnet-wave-2/]; (MEDIUM) [Phase 7]
+
+POV Institution (investor institusional non-VC, misalnya bursa yang listing, market maker):
+- Jangka pendek: Sukses — Listing exchange besar memungkinkan institusi (market maker seperti Jump Crypto) mendapatkan akses liquidity; volume tinggi saat launch (HIGH) [Phase 8 — Trading Markets]
+- Jangka panjang: Tidak diketahui — Belum ada laporan publik tentang kinerja institusi pada SUI; beberapa mungkin mengadopsi SUI untuk produk keuangan (MEDIUM) [tidak ditemukan]
+- Dasar: (HIGH) [Phase 8 — Trading Markets]; (MEDIUM) [tidak ditemukan]
+
+POV Validator (operator node validator Sui):
+- Jangka pendek: Sukses — Validator yang berpartisipasi testnet menerima token SUI dan insentif; >100 validator aktif saat mainnet menunjukkan keberhasilan bootstrap (HIGH) [Sui Explorer Validators, https://explorer.sui.io/validators]; (HIGH) [Phase 8 — Validator Count]
+- Jangka panjang: Sebagian — Validator yang serius mendapatkan staking rewards berkelanjutan; namun hardware requirements tinggi membatasi partisipasi validator kecil; slashing belum aktif mengurangi kepercayaan ekonomi (MEDIUM) [Phase 4 — Known Technical Limitations]
+- Dasar: (HIGH) [Sui Explorer Validators, https://explorer.sui.io/validators]; (MEDIUM) [Phase 4]
+
+POV Builder (proyek ekosistem yang dibangun di atas Sui, misalnya Cetus, Navi, Suilend):
+- Jangka pendek: Sukses — Builder mendapatkan grants dan insentif building; ekosistem DeFi tumbuh cepat setahun pertama (HIGH) [Phase 7 — Ecosystem; DefiLlama, https://defillama.com/chain/Sui]
+- Jangka panjang: Sebagian — Proyek yang sukses (Cetus, Navi) bertahan dan berkembang; banyak proyek kecil bergantung pada grants yang tidak berkelanjutan; tidak ada airdrop tambahan untuk builder setelah testnet (MEDIUM) [Phase 7 — Ecosystem]
+- Dasar: (HIGH) [DefiLlama, https://defillama.com/chain/Sui]; (MEDIUM) [Phase 7]
+
+HARGA PASCA-DISTRIBUSI
+
+Harga saat klaim: 1.20 USD (2023-05-03) [CoinGecko, https://www.coingecko.com/en/coins/sui] (MEDIUM)
+Harga +30 hari: 0.96 USD (2023-06-02) [CoinGecko, https://www.coingecko.com/en/coins/sui] (MEDIUM)
+Harga +90 hari: 0.63 USD (2023-08-01) [CoinGecko, https://www.coingecko.com/en/coins/sui] (MEDIUM)
+Harga puncak 12 bulan pertama: 2.19 USD (2024-03-25) [CoinGecko, https://www.coingecko.com/en/coins/sui] (MEDIUM)
+
+CATATAN: Harga saat klaim diambil dari harga terbuka pertama di Binance (hari pertama trading); angka harga pasca-TGE diperkirakan dari data CoinGecko historis; verifikasi lebih lanjut dapat dilakukan langsung di CoinGecko/CoinMarketCap karena harga pasar adalah fakta publik, bukan data laporan internal.
+
+METRIK RETENSI
+
+- TVL sebelum distribusi: 0 USD (belum ada mainnet sebelum TGE) (HIGH) [DefiLlama, https://defillama.com/chain/Sui]
+- TVL 3 bulan setelah distribusi: ~50M USD (per sekitar Agustus 2023) (MEDIUM) [DefiLlama, https://defillama.com/chain/Sui]
+- TVL 1 tahun setelah distribusi: >1B USD (per Januari 2025) (HIGH) [Phase 8 — Adoption Metrics; DefiLlama, https://defillama.com/chain/Sui]
+- Jumlah alamat pemegang SUI: Tidak ditemukan angka pasti per tanggal tertentu di sumber publik; Sui Explorer menampilkan live counter tapi tidak dipublikasikan sebagai snapshot (MEDIUM) [Sui Explorer, https://explorer.sui.io/]
+- Jumlah alamat aktif harian: >1 juta rata-rata harian pada 2024 (klaim blog resmi, tidak dibedakan alamat unik vs transaksi) (MEDIUM) [Sui Blog, https://blog.sui.io/1-billion-transactions/]
+- Konsentrasi kepemilikan: Top 10 alamat memegang ~42% total supply; ~68% dipegang top 100 (termasuk vesting contracts, exchange cold wallets, Foundation addresses) (MEDIUM) [Suiscan, https://suiscan.xyz/]
+- Staking partisipasi: ~60% dari circulating supply terstake (per kuartal 2024, data tidak langsung) (MEDIUM) [Phase 8 — Adoption Metrics]
+- Volume DEX harian: >100M USD rata-rata (periode 2024-2025) (MEDIUM) [DefiLlama, https://defillama.com/chain/Sui]
+
+GAP YANG DIKETAHUI
+
+Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik.
+
+FARMING DAN SYBIL
+
+- Kriteria task-based diumumkan secara terbuka per wave testnet (Wave 1, 2, 3) — artinya perilaku farming bisa disesuaikan sebelum snapshot per-wave (HIGH) [Sui Blog Testnet Wave 1, https://blog.sui.io/sui-testnet-wave-1-launches/]; (HIGH) [Sui Blog Testnet Wave 3, https://blog.sui.io/sui-testnet-wave-3/]
+- Tidak ditemukan data publik tentang jumlah alamat yang didiskualifikasi karena sybil — Mysten Labs tidak mempublikasikan daftar diskualifikasi (LOW) [tidak ditemukan]
+- Tidak ada bukti bahwa tim mengubah kriteria setelah melihat perilaku farming — namun sistem misi berbasis tugas cenderung lebih sulit untuk di-farm secara massal dibanding snapshot sederhana karena memerlukan aksi nyata (menjalankan node, menyelesaikan misi spesifik) (MEDIUM) [analisis berdasarkan desain program testnet]
+- Populasi hunter pada era 2022-2023 sudah matang; namun program testnet Sui menarik banyak developer dan validator autentik karena insentifnya setara dengan kerja yang dibutuhkan (MEDIUM) [Phase 9 — Behavioral Pattern: "Mengadopsi standar eksternal sebelum membangun sendiri"]
+
+PROSPEK
+
+Untuk project berstatus `Belum ada` — fokus pada gelombang berikutnya (apakah ada airdrop kedepannya):
+
+- Prasyarat yang sudah terpenuhi: (1) Token sudah memiliki utilitas kuat (staking, gas, governance) (HIGH) [Phase 6 — Utility]; (2) Treasury foundation >$1 miliar (alokasi Community Reserve 50% masih belum sepenuhnya terdistribusi) (HIGH) [Phase 5 — Treasury]; (3) On-chain governance aktif dengan proposal (HIGH) [Phase 6 — Governance]; (4) Ekosistem tumbuh, TVL >$1 miliar, user aktif >1 juta (HIGH) [Phase 8 — Adoption Metrics]
+- Prasyarat yang belum: (1) Belum ada indikasi resmi dari Mysten Labs atau Sui Foundation tentang airdrop retroaktif; (2) Tidak ada kontrak distribusi dengan mekanisme airdrop yang ditemukan di on-chain — semua alokasi sisa adalah vesting grants program, bukan airdrop; (3) Tidak ada pengumuman snapshot, perekrutan untuk tim airdrop, atau perubahan dokumentasi yang mengarah pada airdrop (MEDIUM) [Phase 9 — Open Threads; analisis dokumentasi resmi]
+- Sinyal yang biasanya mendahului: (1) Pengumuman di blog resmi atau Discord tentang "Community Airdrop" atau "Reward Program" (belum ada); (2) Deploy kontrak Move on-chain dengan mekanisme claim (belum terlihat di explorer); (3) Pernyataan Foundation tentang "distribusi tambahan ke pengguna aktif" (belum ada); (4) Rekrutmen untuk posisi terkait "Incentives" atau "Community Rewards" di Sui Foundation (belum terlihat)
+- Penilaian: Keyakinan rendah bahwa airdrop akan terjadi dalam waktu dekat — tim secara konsisten memilih mekanisme task-based (testnet, grants, program validator) daripada airdrop retroaktif murni; pola dari Phase 9 menunjukkan preferensi pada pengguna yang memberikan kontribusi nyata. Namun, karena Community Reserve 50% (=5 miliar SUI) masih sangat besar dan belum didistribusikan sepenuhnya, ada kemungkinan program insentif baru (bukan airdrop) akan diluncurkan untuk mengaktifkan reserve tersebut. Yang akan mengubah penilaian ini: pengumuman resmi tentang program insentif berbasis aktivitas on-chain, atau deploy kontrak distribusi baru di mainnet.
+
+PELAJARAN LINTAS PROJECT
+
+1. Ketika tim layer-1 baru menghadapi pasar bearish (era 2022-2023) dan membutuhkan validator serta developer untuk membangun jaringan, memilih mekanisme task-based (testnet wave) daripada airdrop retroaktif menghasilkan distribusi token yang lebih berkualitas — penerima adalah kontributor aktif yang telah menguji infrastruktur, bukan sekadar spekulan pasif; akibatnya bootstrap validator lebih cepat dan ekosistem awal lebih sehat, namun tekanan jual tetap terjadi karena penerima tidak memiliki biaya modal mental.
+2. Ketika sebuah project menghindari token sale publik dan hanya mengandalkan equity VC (era 2021-2022), listing serentak di exchange besar menjadi sangat penting untuk likuiditas; distribusi token ke komunitas (walaupun task-based) membantu memenuhi syarat listing exchange yang menginginkan distribusi lebih merata — namun ini juga berarti tekanan jual lebih besar di awal karena penerima token gratis cenderung menjual cepat.
+3. Ketika sebuah project memiliki treasury besar namun belum memiliki mekanisme protocol revenue capture (era 2024-2025), keberlanjutan program insentif jangka panjang menjadi pertanyaan — grants program dapat berjalan sementara, tapi tanpa airdrop atau reward berkelanjutan untuk pengguna, retensi jangka pendek tidak otomatis mengarah ke loyalitas jangka panjang.
+4. Ketika anti-sybil tidak dipublikasikan secara detail (seperti yang dilakukan banyak project layer 1), populasi hunter masih tetap berpartisipasi jika insentifnya cukup besar (6% supply = ratusan juta USD); namun tanpa mekanisme anti-sybil yang transparan, kepercayaan terhadap distribusi bisa melemah — ini membedakan Sui dari project yang mempublikasikan metode filtering mereka.
+
+OPEN THREADS
+
+- Jumlah pasti penerima Community Access Program (alamat unik) tidak dipublikasikan oleh Sui Foundation atau Mysten Labs — hanya estimasi ribuan partisipan testnet.
+- Mekanisme anti-sybil untuk Community Access Program tidak pernah dijelaskan publik — apakah ada deteksi duplicate address, IP filtering, atau verifikasi identitas?
+- Persentase penerima yang telah menjual SUI dalam 30 hari setelah TGE tidak dapat dihitung tanpa analisis on-chain per-alamat — data tidak tersedia.
+- Apakah ada sisa alokasi Community Access Program (600M SUI) yang tidak diklaim, dan ke mana sisanya pergi (burned, dikembalikan ke treasury, atau dialihkan ke program lain) — tidak ditemukan informasi.
+- Sui Foundation belum pernah membuat pernyataan eksplisit "tidak akan ada airdrop" atau "akan ada airdrop" untuk masa depan — ketidakpastian ini tetap terbuka.
+- Tidak ada bukti bahwa tim mengubah kriteria kelayakan Community Access Program setelah melihat perilaku farming — apakah ini berarti tidak ada farming massal, atau tim tidak mengungkapkannya?
+- Investor Series A (termasuk FTX Ventures) menerima alokasi investor 14% — apakah mereka yang meneruskan token ke pengguna akhir, atau hanya memegang — tidak perlu dilacak di akun ini.
+- Metrik "harga saat klaim" diperkirakan dari harga pasar hari pertama Binance; jika ada data publish per-even dari Sui Foundation tentang harga klaim internal yang berbeda (misalnya harga untuk validator), itu tidak ditemukan.

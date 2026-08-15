@@ -1,0 +1,162 @@
+PROJECT: AAVE
+
+## DATASET INTEGRITY (PHASE 1-3)
+
+### Phase 01 — Foundation
+- Status: Complete
+- Missing Information: Tidak ada
+- Notes: 
+  - Data.foundation.mengandung informasi lengkap: nama resmi, simbol, kategori, entitas pendiri, founder, core team, negara, tanggal launch (testnet/mainnet/TGE), produk utama, website, repository, dokumentasi, media sosial, block explorer, token contract, chain deployment, ekosistem
+  - Open threads tercatat: yurisdiksi legal belum pasti (Switzerland/Cayman/UK), ukuran core team tidak diungkap publik, tanggal testnet V1 tidak terdokumentasi resmi
+
+### Phase 02 — Entity
+- Status: Complete
+- Missing Information: Tidak ada
+- Notes: 
+  - 82 entity tercatat dengan tipe, relasi, periode, evidence
+  - Kategori: Person (9), Company (4), Foundation (2), DAO (1), Protocol (4), Application (7), Chain (18), Investor/VC (13), Infrastructure (2), Security/Auditor (6), Government (1), Initiative/Program (2), Framework (1), Wallet (1), Service Provider/DAO Contributor (2), Exchange (1), Enterprise/Asset Manager (3), Other (2)
+  - Beberapa entity memiliki periode "Tidak diketahui" — dicatat sebagai gap data
+
+### Phase 03 — History
+- Status: Complete
+- Missing Information: Tidak ada
+- Notes: 
+  - 32 event (EV-001 s.d EV-032) dengan ID, tanggal, nama, tipe, deskripsi, partisipan, lokasi, status, hasil langsung, sumber
+  - Open threads tercatat: tanggal pendirian ETHLend tidak definitif, jumlah ICO bervariasi ($16.2M vs ~$17M), tanggal peluncuran mainnet Aave Arc tidak resmi, status implementasi Governance V3 tidak jelas, Aave Foundation masih usulan
+
+---
+
+## INVENTORY (PHASE 1-3)
+
+### Entity Inventory (dari Phase 2)
+
+- Stani Kulechov — Person — Pendiri dan CEO Aave, juga pendiri Lens Protocol dan Avara
+- Linda Jeng — Person — Chief Legal & Policy Officer di Aave
+- Nicole Butler — Person — Chief Compliance Officer di Aave
+- Peter Kerr — Person — Chief Financial Officer di Aave
+- Emilio Frangella — Person — VP of Engineering / Head of Smart Contracts di Aave
+- Claudia Ceniceros — Person — Chief of Communications & PR di Aave
+- Paris Rouzati — Person — SVP Marketing di Aave
+- Nick Kritikos — Person — COO (Chief Operating Officer) di Aave
+- Jouni Helminen — Person — Director of Design di Aave
+- Aave Labs — Company — Perusahaan pengembang perangkat lunak penulis asli dan kontributor utama Aave Protocol, didirikan Stani Kulechov, berbasis London, 51-200 karyawan
+- Avara — Company — Perusahaan payung yang sebelumnya menaungi Aave, Lens, GHO, merek lain; dihentikan brand-nya Februari 2026
+- Aave DAO — DAO — Organisasi otonom terdesentralisasi mengatur protokol Aave, terdiri pemegang token AAVE
+- Aave Foundation — Foundation — Yayasan baru diusulkan Aave Labs memegang merek dagang dan IP Aave (usulan 2026)
+- Aave Chan Initiative (ACI) — Service Provider / DAO Contributor — Tim tata kelola inti Aave, mengumumkan penghentian operasi dan keluar 3 Maret 2026
+- ETHLend — Protocol — Protokol awal Aave sebelum rebranding 2018, platform peminjaman P2P berbasis Ethereum
+- Aave Protocol — Protocol — Protokol likuiditas non-kustodial terdesentralisasi untuk lending/borrowing aset kripto
+- Aave V4 — Protocol — Versi terbaru protokol Aave dengan arsitektur hub-and-spoke, diluncurkan Avalanche 2026
+- GHO — Protocol / Application — Stablecoin native Aave diterbitkan oleh protokol Aave
+- Aave Horizon — Application — Pasar peminjaman institusional (RWA) dibangun di atas Aave V3.3
+- Aave Arc — Application — Versi permissioned Aave untuk institusi dengan KYC/AML
+- Aave App — Application — Aplikasi mobile Aave untuk akses protokol peminjaman dan Stable Vaults
+- Stable Vaults — Application — Solusi mengubah suku bunga stablecoin on-chain variabel jadi fixed rate
+- Push Labs Limited — Company — Badan hukum terkait Aave, terdaftar Inggris Raya 19 Oktober 2018
+- Aave SAGL — Company — Entitas Aave berbasis Swiss (Chiasso), didirikan 2018
+- Blockchain Capital — VC — Memimpin putaran pendanaan $25 juta Aave Oktober 2020
+- Standard Crypto — VC — Berpartisipasi token sale $3 juta Aave Juli 2020 dan Series A $25 juta Oktober 2020
+- Blockchain.com Ventures — VC — Berpartisipasi Series A $25 juta Aave Oktober 2020
+- Framework Ventures — VC — Berpartisipasi token sale $3 juta Aave Juli 2020
+- Three Arrows Capital (3AC) — VC / Hedge Fund — Berpartisipasi token sale $3 juta Aave Juli 2020
+- ParaFi Capital — VC — Berinvestasi $4.5 juta Aave Juli 2020
+- Circle Ventures — VC — Membeli token AAVE dan berpartisipasi aktif tata kelola Aave (2026-sekarang)
+- ICONIUM — VC — Investor terbaru Aave
+- Caesar Chad — Investor (Angel/Individual) — Investor individu terbaru Aave
+- Chainlink — Infrastructure Provider — Penyedia oracle dan infrastruktur cross-chain (CCIP) diadopsi Aave
+- ChainSecurity — Security / Auditor — Mengaudit Aave V4 (2025-2026)
+- Trail of Bits — Security / Auditor — Mengaudit Aave V4 (2025-2026)
+- Blackthorn — Security / Auditor — Mengaudit Aave V4 (2025-2026)
+- Certora — Security / Auditor — Verifikasi formal Aave V4, mengonfirmasi keamanan dan solvabilitas (2025-2026)
+- Sherlock — Security / Platform — Tuan rumah kontes publik Aave V4 dengan 900+ peneliti (2025-2026)
+- OpenZeppelin — Security / Auditor — Telah mengaudit Aave, Compound, Ethereum, proyek lain
+- MetaMask — Application / Wallet — Dompet kripto memilih Aave mitra DeFi lending untuk Stablecoin Earn
+- BGD Labs — Service Provider / DAO Contributor — Kontributor tata kelola Aave menyediakan antarmuka governance
+- Boardroom — Application / Platform — Antarmuka tata kelola untuk Aave DAO
+- Lens Protocol — Protocol — Social graph terdesentralisasi didirikan Stani Kulechov, sebelumnya di bawah Avara
+- Ethereum — Blockchain — Settlement layer utama, tempat Aave pertama diluncurkan dan token AAVE berada
+- Polygon — Blockchain — Deployment chain Aave V3
+- Avalanche — Blockchain — Deployment chain Aave V3 dan V4
+- Arbitrum — Blockchain — Layer 2 Ethereum deployment chain Aave V3
+- Base — Blockchain — Layer 2 Ethereum (Coinbase) deployment chain Aave V3
+- BNB Chain — Blockchain — Deployment chain Aave V3
+- Optimism — Blockchain — Layer 2 Ethereum deployment chain Aave V3
+- Gnosis — Blockchain — Deployment chain Aave V3
+- Scroll — Blockchain — Layer 2 Ethereum deployment chain Aave V3
+- Metis — Blockchain — Deployment chain Aave V3
+- ZKsync Era — Blockchain — Layer 2 Ethereum deployment chain Aave V3
+- Fantom — Blockchain — Deployment chain Aave V3
+- Harmony — Blockchain — Deployment chain Aave V3
+- Linea — Blockchain — Layer 2 Ethereum (ConsenSys) deployment chain Aave
+- Mantle — Blockchain — Layer 2 Ethereum deployment chain Aave
+- Plasma — Blockchain — Deployment chain Aave
+- Monetary Authority of Singapore (MAS) — Government — Regulator menginisiasi Project Guardian, Aave berpartisipasi
+- Project Guardian — Initiative / Program — Inisiatif MAS menguji tokenisasi aset dan DeFi
+- Kraken — Exchange / Company — Exchange yang foundation-nya (Ink Foundation) dapat persetujuan komunitas Aave untuk white-label Aave V3 (2026)
+- Franklin Templeton — Enterprise / Asset Manager — Mitra potensial Aave
+- VanEck — Enterprise / Asset Manager — Mitra potensial Aave
+- Ripple — Company / Infrastructure Provider — Mitra potensial Aave
+- Golem Foundation — Foundation — Peserta ekosistem Aave
+- LayerZero — Protocol / Infrastructure Provider — Protokol interoperability cross-chain messaging di ekosistem Aave
+- Ethena — Protocol — Synthetic dollar protocol di ekosistem Aave
+- Frax Finance — Protocol — Stablecoin protocol di ekosistem Aave
+- Defiance Capital — VC — Investor Aave
+- 4RC — VC — Investor Aave
+- LD Capital — VC — Investor Aave
+- Ark Stream Capital — VC — Investor Aave
+- Lightspeed Faction — VC — Investor Aave tercatat Owler
+- AVAIL — VC / Investor — Investor Aave tercatat Owler
+- Alchemy — Infrastructure Provider — Penyedia infrastruktur blockchain/node dan investor Aave
+- Dune Analytics — Application / Analytics — Platform analitik data on-chain digunakan untuk data Aave
+- Orbit Program — Program — Kompensasi delegate terakreditasi Aave dengan GHO (2024-sekarang)
+- Aligned Delegates Framework (ADF) — Framework / Program — Kerangka identifikasi, penghargaan, akuntabilitas delegate AAVE (usulan 2026)
+- Aave Card — Application / Product — Produk kartu pembayaran diusulkan kerangka Aave Will Win (rencana 2026)
+- Aave Kit — Application / Developer Tool — Toolkit pengembang Aave di kerangka Aave Will Win (rencana 2026)
+
+### Event Inventory (dari Phase 3)
+
+- EV-001 — Pendirian ETHLend — 2017-05-01
+- EV-002 — Peluncuran Platform ETHLend dan ICO — 2017-11
+- EV-003 — Rebranding ETHLend menjadi Aave — 2018-09-18
+- EV-004 — Peluncuran Public Testnet Aave V1 — 2019-10
+- EV-005 — Peluncuran Mainnet Aave V1 di Ethereum — 2020-01-08
+- EV-006 — Pendanaan Token Sale $3 Juta — 2020-07
+- EV-007 — Pengumuman Aavenomics dan Rencana Token AAVE — 2020-07-29
+- EV-008 — Aktivasi AIP-1 (Fase Awal Aavenomics) — 2020-09-25
+- EV-009 — Migrasi LEND ke AAVE dan Peluncuran Token AAVE — 2020-10
+- EV-010 — Pendanaan Seri A $25 Juta — 2020-10
+- EV-011 — Peluncuran Mainnet Aave V2 — 2020-12-03
+- EV-012 — Peluncuran AMM Markets di Aave V2 — 2021-03-16
+- EV-013 — Kemitraan Aave dengan Polygon — 2021-03-31
+- EV-014 — Program Liquidity Mining Aave-Polygon $40 Juta — 2021-04
+- EV-015 — Konsep Aave Arc Diperkenalkan — 2021-07
+- EV-016 — Program Insentif Avalanche Rush — Aave — 2021-08
+- EV-017 — Peluncuran Aave Arc — 2021-11
+- EV-018 — Proposal Lisensi Bisnis Aave — 2021-12
+- EV-019 — Diskusi Aave Governance V3 Dimulai — 2022-01
+- EV-020 — Peluncuran Aave V3 di Enam Jaringan — 2022-03-16
+- EV-021 — Penonaktifan Aave V1 — 2022-12-24
+- EV-022 — Peluncuran Aave V3 di Ethereum Mainnet — 2023-01-27
+- EV-023 — Peluncuran GHO di Goerli Testnet — 2023-02
+- EV-024 — Peluncuran Stablecoin GHO di Ethereum Mainnet — 2023-07-15
+- EV-025 — Rilis Whitepaper Aave V4 — 2025-11-10
+- EV-026 — Voting Snapshot Proposal Aave Will Win — 2025-12-23
+- EV-027 — Aave Labs Menghentikan Brand Avara — 2026-02
+- EV-028 — Peluncuran Aave V4 di Ethereum Mainnet — 2026-03-30
+- EV-029 — Proposal "Aave Will Win" Disahkan — 2026-04-12
+- EV-030 — Eksploitasi Bridge rsETH Kelp DAO — 2026-05-31
+- EV-031 — Aave Memperketat Aturan Collateral Pasca-Eksploitasi — 2026-06
+- EV-032 — Peluncuran Aave V4 di Avalanche — 2026-07-15
+
+---
+
+## Open Threads
+
+- Tanggal pendirian ETHLend: sumber bervariasi (1 Mei 2017 vs "November 2017" untuk peluncuran platform) — butuh verifikasi definitif
+- Jumlah pendanaan ICO ETHLend: ForkLog $16.2 juta vs sumber lain ~$17 juta — perlu cross-check sumber primer
+- Tanggal peluncuran mainnet Aave Arc: konsep Juli 2021, peluncuran November 2021, tapi tanggal pasti tidak terdokumentasi resmi
+- Status implementasi Aave Governance V3: diskusi Januari 2022, proposal off-chain vote Juli 2022, status implementasi penuh tidak jelas
+- Aave Foundation: masih tahap usulan (2026), belum entitas aktif beroperasi — perlu konfirmasi status legal terkini
+- Ukuran core team Aave: tidak diungkapkan publik — daftar nama diekstrapolasi dari berbagai sumber
+- Yurisdiksi legal pasti: menyebut Switzerland, Cayman Islands, London UK, plus usulan Cayman Foundation (A-C Prime Foundation) — perlu klarifikasi entitas hukum aktif
+- Beberapa entity Phase 2 periode "Tidak diketahui" — gap data untuk Person (Linda Jeng, Nicole Butler, Peter Kerr, Emilio Frangella, Claudia Ceniceros, Paris Rouzati, Nick Kritikos, Jouni Helminen), Company (Aave SAGL), VC (ICONIUM, Caesar Chad, Defiance Capital, 4RC, LD Capital, Ark Stream Capital, Lightspeed Faction, AVAIL), Infrastructure (Alchemy), Application (Aave App, MetaMask, BGD Labs, Boardroom, Dune Analytics), Program (Orbit Program, ADF), Product (Aave Card, Aave Kit)

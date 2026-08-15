@@ -73,6 +73,16 @@ def is_v2(sections) -> bool:
 # Ordered by information dependency (not topic) -- see brief for the full rationale.
 PHASE_KEYS = ["foundation", "entity", "history", "technology", "financial", "token",
               "ecosystem", "market", "behavioral", "knowledge", "conflict"]
+
+# Recognised and assembled, but NOT required for a project to count as complete.
+#
+# Phase 12 (Airdrop Intelligence) was added 2026-08-09, when 29 dossiers already existed
+# without it. Putting it in PHASE_KEYS would have made every one of them "incomplete: missing
+# phase(s) airdrop" and hard-failed `./run.sh ingest`, which does not pass --allow-partial --
+# a new capability is not a reason to invalidate the whole corpus. A project with it gets the
+# section; a project without it is still complete.
+OPTIONAL_PHASE_KEYS = ["airdrop"]
+ALL_PHASE_KEYS = PHASE_KEYS + OPTIONAL_PHASE_KEYS
 PHASE_META = {
     "foundation":  {"title": "Foundation Intelligence",
                      "ref": "`docs/Ontology/Identity.md`, `docs/Ontology/Team.md`"},
@@ -93,6 +103,9 @@ PHASE_META = {
     "knowledge":   {"title": "Knowledge Extraction", "ref": "`docs/Patterns/*`, `docs/Reasoning/*` (rule candidates)"},
     "conflict":    {"title": "Conflicting Evidence & Resolutions",
                      "ref": "`docs/Reasoning/Confidence.md` — INKONSISTENSI convention"},
+    "airdrop":     {"title": "Airdrop Intelligence",
+                     "ref": "`docs/Ontology/DecisionEvent.md`, `docs/Ontology/Context.md` — "
+                            "an airdrop is a Decision Event with an eight-POV outcome"},
 }
 # Track C (docs/Protocol/Phased-Research-Prompts.md "DeepSeek Methodology") replaces phase 11's simple
 # merge-only "Conflict Resolution" pass with a much broader "CIF Validation Report v3.0" (Manifest,
@@ -124,7 +137,7 @@ OPEN_THREADS_RE = re.compile(r"(?im)^\s{0,3}#{0,3}\s*\**\s*open\s*threads?\s*\**
 def detect_phase_key(filename: str):
     """Match a phase key as a substring of the filename (case/punctuation-insensitive)."""
     key = re.sub(r"[^a-z]", "", filename.lower()).replace("behaviour", "behavior")
-    for k in PHASE_KEYS:
+    for k in ALL_PHASE_KEYS:
         if k in key:
             return k
     return None
@@ -331,7 +344,7 @@ def process_phased_project(folder: Path, force: bool, dest_dir: Path = None):
     if not phases:
         return [("warn", name, f"no recognizable phase files (got: {', '.join(f.name for f in files)})")]
 
-    order = [k for k in PHASE_KEYS if k in phases]
+    order = [k for k in ALL_PHASE_KEYS if k in phases]
     body_md = []
     for k in order:
         meta = PHASE_META[k]
@@ -377,13 +390,13 @@ def detect_phase_key_strict(filename: str) -> str:
     if not m:
         raise ValueError(
             f"'{filename}' does not match the required '<NN>-<phasekey>.docx|pdf' naming "
-            f"(e.g. '03-history.docx'). Valid phase keys: {', '.join(PHASE_KEYS)}."
+            f"(e.g. '03-history.docx'). Valid phase keys: {', '.join(ALL_PHASE_KEYS)}."
         )
     key = m.group(2).lower().replace("behaviour", "behavior")
-    if key not in PHASE_KEYS:
+    if key not in ALL_PHASE_KEYS:
         raise ValueError(
             f"'{filename}': phase key '{key}' is not one of the 11 valid keys: "
-            f"{', '.join(PHASE_KEYS)}."
+            f"{', '.join(ALL_PHASE_KEYS)}."
         )
     return key
 
@@ -565,7 +578,7 @@ def process_data_project(folder: Path, force: bool, allow_partial: bool = False,
         all_threads.extend(f"[{key}] {t}" for t in threads)
         archived.append(_archive(folder / fname, "deep", f"{name}_{key}"))
 
-    order = [k for k in PHASE_KEYS if k in phases]
+    order = [k for k in ALL_PHASE_KEYS if k in phases]
     body_md = []
     for k in order:
         meta = phase_meta(k, phases[k])

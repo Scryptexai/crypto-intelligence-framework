@@ -1,0 +1,310 @@
+PROJECT: Polkadot
+
+Entity: Gavin Wood
+Type: Person
+Relationship: Pendiri dan Lead Visionary Polkadot — mengarahkan visi teknis dan arsitektur protokol (HIGH)
+Period: 2017–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Web3 Foundation, https://web3.foundation/polkadot/]
+
+---
+Entity: Robert Habermeier
+Type: Person
+Relationship: Co-Founder Polkadot — berperan dalam desain dan pengembangan awal protokol (HIGH)
+Period: 2017–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Web3 Foundation, https://web3.foundation/polkadot/]
+
+---
+Entity: Peter Czaban
+Type: Person
+Relationship: Co-Founder Polkadot — terlibat pengembangan awal dan strategi ekosistem (HIGH)
+Period: 2017–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Web3 Foundation, https://web3.foundation/polkadot/]
+
+---
+Entity: Parity Technologies
+Type: Company
+Relationship: Entitas pengembang inti (core development team) Polkadot — membangun dan memelihara Polkadot SDK, Relay Chain, Substrate, dan infrastruktur inti (HIGH)
+Period: 2017–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Web3 Foundation, https://web3.foundation/about/]; (HIGH) [Parity Technologies, https://www.parity.io/about/]; (HIGH) [GitHub, https://github.com/paritytech/polkadot-sdk]
+
+---
+Entity: Web3 Foundation
+Type: Foundation
+Relationship: Yayasan pendukung ekosistem Polkadot — mengelola treasury, grant, penelitian, dan stewardship protokol (HIGH)
+Period: 2017–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Web3 Foundation, https://web3.foundation/about/]; (HIGH) [Web3 Foundation, https://web3.foundation/polkadot/]
+
+---
+Entity: Polkadot Relay Chain
+Type: Chain
+Relationship: Jaringan utama (mainnet) Polkadot — lapisan koordinasi konsensus, keamanan bersama, dan validasi cross-chain untuk parachains (HIGH)
+Period: 2020-05-26–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/polkadot-history]; (HIGH) [Polkadot Official Website, https://polkadot.network/technology/]
+
+---
+Entity: Kusama
+Type: Chain
+Relationship: Canary network Polkadot — jaringan uji coba nyata (live testnet) dengan token bernilai ekonomis untuk validasi fitur sebelum deploy ke Relay Chain (HIGH)
+Period: 2019–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/polkadot-history]; (HIGH) [Polkadot Official Website, https://polkadot.network/technology/]
+
+---
+Entity: Substrate
+Type: Protocol
+Relationship: Framework modular pembangun blockchain — digunakan membangun Relay Chain, parachains, dan chain mandiri di ekosistem Polkadot (HIGH)
+Period: 2018–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Polkadot Official Website, https://polkadot.network/technology/]; (HIGH) [Parity Technologies, https://www.parity.io/about/]
+
+---
+Entity: XCM (Cross-Consensus Message Format)
+Type: Protocol
+Relationship: Standar pesan lintas konsensus — memungkinkan komunikasi dan transfer aset antar parachains dan chain eksternal (HIGH)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Polkadot Official Website, https://polkadot.network/technology/]
+
+---
+Entity: Acala
+Type: Protocol
+Relationship: Parachain DeFi hub di Polkadot — menyediakan stablecoin multi-kolateral (aUSD), AMM DEX, dan liquid staking (DOT/LDOT) (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Polkadot Official Website, https://polkadot.network/ecosystem/]
+
+---
+Entity: Moonbeam
+Type: Protocol
+Relationship: Parachain kompatibel Ethereum (EVM) di Polkadot — memungkinkan deploy Solidity smart contract dengan integrasi native Substrate (MEDIUM)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Polkadot Official Website, https://polkadot.network/ecosystem/]
+
+---
+Entity: Astar
+Type: Protocol
+Relationship: Parachain multi-VM (EVM + WASM) di Polkadot — mendukung dApp cross-chain dan program insentif developer (dApp Staking) (MEDIUM)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Polkadot Official Website, https://polkadot.network/ecosystem/]
+
+---
+Entity: Parallel Finance
+Type: Protocol
+Relationship: Parachain DeFi di Polkadot — money market, liquid staking, dan AMM DEX terintegrasi (MEDIUM)
+Period: 2022–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Polkadot Official Website, https://polkadot.network/ecosystem/]
+
+---
+Entity: Centrifuge
+Type: Protocol
+Relationship: Parachain Real World Asset (RWA) di Polkadot — tokenisasi aset off-chain (invoice, real estate) untuk akses likuiditas DeFi (MEDIUM)
+Period: 2021–sekarang
+Exposure Type: technical-integration
+Evidence: (MEDIUM) [Polkadot Official Website, https://polkadot.network/ecosystem/]
+
+---
+Entity: Subscan
+Type: Infrastructure Provider
+Relationship: Block explorer utama ekosistem Polkadot/Kusama — menyediakan data on-chain, analytics, dan API untuk Relay Chain dan parachains (HIGH)
+Period: 2020–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [Subscan, https://polkadot.subscan.io/]; (HIGH) [Polkadot Official Website, https://polkadot.network/]
+
+---
+Entity: Polkadot Wiki
+Type: Media
+Relationship: Dokumentasi resmi komunitas — panduan teknis, governance, tutorial, dan referensi ekosistem Polkadot (HIGH)
+Period: 2020–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/]
+
+---
+Entity: Polkadot Official Website
+Type: Media
+Relationship: Situs web resmi proyek — informasi produk, teknologi, ekosistem, blog, dan tautan komunitas (HIGH)
+Period: 2017–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Polkadot Official Website, https://polkadot.network/]
+
+---
+Entity: Polkadot Blog
+Type: Media
+Relationship: Blog resmi pengumuman rilis, penelitian, dan update ekosistem Polkadot (HIGH)
+Period: 2017–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Polkadot Blog, https://polkadot.network/blog/polkadot-ico-report]
+
+---
+Entity: GitHub (paritytech/polkadot-sdk)
+Type: Infrastructure Provider
+Platform repositori kode sumber terbuka Polkadot SDK — kolaborasi pengembangan, issue tracking, dan rilis versi (HIGH)
+Period: 2017–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [GitHub, https://github.com/paritytech/polkadot-sdk]
+
+---
+Entity: X/Twitter (@Polkadot)
+Type: Media
+Relationship: Saluran media sosial resmi pengumuman dan komunitas Polkadot (HIGH)
+Period: 2017–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [X/Twitter, https://x.com/Polkadot]
+
+---
+Entity: Discord (discord.gg/polkadot)
+Type: Media
+Relationship: Server Discord resmi komunitas Polkadot untuk diskusi teknis, governance, dan dukungan (HIGH)
+Period: 2018–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (HIGH) [Polkadot Official Website, https://polkadot.network/]
+
+---
+Entity: Telegram (@polkadot_official)
+Type: Media
+Relationship: Grup Telegram resmi komunitas Polkadot untuk pengumuman dan diskusi (MEDIUM)
+Period: 2018–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (MEDIUM) [Telegram, https://t.me/polkadot_official]
+
+---
+Entity: Polkadot Networks / Ecosystem Page
+Type: Media
+Relationship: Halaman direktori ekosistem resmi — daftar parachains, tools, wallet, dan aplikasi di Polkadot (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (MEDIUM) [Polkadot Official Website, https://polkadot.network/ecosystem/]
+
+---
+Entity: Parity Technologies About Page
+Type: Media
+Relationship: Halaman profil perusahaan Parity Technologies — visi, tim, dan portofolio proyek (MEDIUM)
+Period: 2017–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (MEDIUM) [Parity Technologies, https://www.parity.io/about/]
+
+---
+Entity: Web3 Foundation About Page
+Type: Media
+Relationship: Halaman profil yayasan Web3 Foundation — misi, tata kelola, dan program grant (MEDIUM)
+Period: 2017–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (MEDIUM) [Web3 Foundation, https://web3.foundation/about/]
+
+---
+Entity: Web3 Foundation Polkadot Page
+Type: Media
+Relationship: Halaman proyek Polkadot di situs Web3 Foundation — ringkasan teknis, tim, dan tautan resmi (MEDIUM)
+Period: 2017–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (MEDIUM) [Web3 Foundation, https://web3.foundation/polkadot/]
+
+---
+Entity: Polkadot History Wiki
+Type: Media
+Relationship: Halaman sejarah Polkadot di wiki komunitas — timeline testnet, mainnet, upgrade, dan milestones (MEDIUM)
+Period: 2020–sekarang
+Exposure Type: narrative-correlated-only
+Evidence: (MEDIUM) [Polkadot Wiki, https://wiki.polkadot.network/docs/polkadot-history]
+
+---
+Entity: DOT (Native Token)
+Type: Protocol
+Relationship: Token native Polkadot Relay Chain — digunakan staking, governance, bonding parachain, dan fee transaksi (HIGH)
+Period: 2017-10-15–sekarang
+Exposure Type: financial-collateral
+Evidence: (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-DOT]; (HIGH) [Polkadot Blog, https://polkadot.network/blog/polkadot-ico-report]
+
+---
+Entity: Polkadot SDK
+Type: Protocol
+Relationship: Kit pengembangan perangkat lunak (SDK) resmi membangun chain berbasis Substrate — menggabungkan Substrate, FRAME, Cumulus, dan tooling terkait (HIGH)
+Period: 2023–sekarang
+Exposure Type: technical-integration
+Evidence: (HIGH) [GitHub, https://github.com/paritytech/polkadot-sdk]
+
+### PERSON
+- Gavin Wood
+- Robert Habermeier
+- Peter Czaban
+
+### FOUNDATION
+- Web3 Foundation
+
+### COMPANY
+- Parity Technologies
+
+### PROTOCOL
+- Substrate
+- XCM (Cross-Consensus Message Format)
+- Acala
+- Moonbeam
+- Astar
+- Parallel Finance
+- Centrifuge
+- DOT (Native Token)
+- Polkadot SDK
+
+### CHAIN
+- Polkadot Relay Chain
+- Kusama
+
+### INVESTOR
+(none identified in foundation data)
+
+### INFRASTRUCTURE
+- Subscan
+- GitHub (paritytech/polkadot-sdk)
+
+### APPLICATION
+(none identified in foundation data beyond parachain protocols)
+
+### SECURITY
+(none identified in foundation data)
+
+### DAO
+(none identified in foundation data)
+
+### GOVERNMENT
+(none identified in foundation data)
+
+### MEDIA
+- Polkadot Wiki
+- Polkadot Official Website
+- Polkadot Blog
+- X/Twitter (@Polkadot)
+- Discord (discord.gg/polkadot)
+- Telegram (@polkadot_official)
+- Polkadot Networks / Ecosystem Page
+- Parity Technologies About Page
+- Web3 Foundation About Page
+- Web3 Foundation Polkadot Page
+- Polkadot History Wiki
+
+### COMMUNITY
+(none identified as distinct entity in foundation data)
+
+### OTHER
+(none)
+
+### RINGKASAN
+Total Entity: 30
+Internal: 11 (Person 3, Foundation 1, Company 1, Protocol 7 core, Chain 2)
+External: 19 (Protocol 5 parachain, Infrastructure 2, Media 12)
+
+### Open Threads
+- Identitas yurisdiksi hukum formal Polkadot/Web3 Foundation tidak diketahui — perlu investigasi dokumen pendirian yayasan.
+- Daftar anggota core team Parity Technologies yang bekerja full-time pada Polkadot SDK tidak dipublikasikan sebagai daftar nama — hanya diketahui "banyak dev aktif".
+- Tanggal peluncuran testnet pertama (Krumme Lanke) dan testnet lainnya tidak tercantum spesifik di data foundation — perlu verifikasi dari arsip teknis Parity.
+- Status Kusama sebagai "testnet" vs "canary network" bernilai ekonomis membutuhkan klarifikasi definisi untuk klasifikasi Chain.
+- Jumlah parachain aktif saat ini (50+) vs target desain (100) — perlu data on-chain terkini untuk validasi.
+- Investor awal (ICO 2017) dan investor strategis berikutnya tidak tercakup di data foundation — perlu fase terpisah untuk funding/investor intelligence.
+- Entitas auditor keamanan (audit firm) untuk Relay Chain, Substrate, dan parachain utama tidak teridentifikasi di data foundation.

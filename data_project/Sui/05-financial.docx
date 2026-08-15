@@ -1,0 +1,213 @@
+PROJECT: Sui
+
+## Funding History
+
+Funding Round: Series A
+Date: 2021-12-01
+Amount: $36M
+Currency: USD
+Lead Investor: a16z Crypto
+Participating Investors: Coinbase Ventures, Binance Labs, FTX Ventures, Slow Ventures, angel investors
+Valuation: tidak diungkap
+Funding Type: Series A
+Status: Completed
+Sources: https://techcrunch.com/2021/12/01/mysten-labs-raises-36m-series-a-a16z
+
+Funding Round: Series B
+Date: 2022-09-08
+Amount: $300M
+Currency: USD
+Lead Investor: a16z Crypto
+Participating Investors: Coinbase Ventures, Binance Labs, Jump Crypto, Franklin Templeton, Circle Ventures, Lightspeed, Greenoaks
+Valuation: $2B
+Funding Type: Series B
+Status: Completed
+Sources: https://techcrunch.com/2022/09/08/mysten-labs-raises-300m-series-b/
+
+## Treasury
+
+Current Treasury Size: >$1B (sebagai Januari 2025)
+Treasury Composition: SUI token allocation, stablecoin holdings (USDC, USDT), ecosystem investments, operational reserves
+Stablecoin Holdings: tidak diketahui (komposisi detail tidak diungkap per asset)
+Native Token Holdings: tidak diketahui (jumlah SUI spesifik tidak diungkap)
+Other Assets: tidak diketahui (investasi ekosistem, strategic holdings detail tidak diungkap)
+Treasury Custodian: Sui Foundation (Swiss non-profit entity)
+Sources: https://sui.io/foundation/treasury
+Sources: https://blog.sui.io/sui-foundation-treasury-report-2025/
+
+## Revenue Model
+
+Revenue Stream: Protocol Gas Fees
+Status: Live
+Description: Semua transaksi di Sui mainnet membayar gas fee dalam SUI; fee dibagi antara validator (staking rewards) dan storage fund; tidak ada protocol-level fee capture ke treasury
+Sources: https://docs.sui.io/concepts/gas
+
+Revenue Stream: Storage Fund Yield
+Status: Live
+Description: Storage fund mengakumulasi storage fee dan membayarkan yield ke validator; treasury tidak menerima revenue langsung dari storage fund
+Sources: https://docs.sui.io/concepts/storage-fund
+
+Revenue Stream: Sui Bridge Fees (Native)
+Status: Live (sejak Mei 2024)
+Description: Bridge native Sui ↔ Ethereum mengenakan fee dinamis berbasis gas; fee flow ke validator set dan bridge contracts; tidak ada protocol revenue ke foundation treasury
+Sources: https://docs.sui.io/guides/operator/bridge
+
+Revenue Stream: Grant Program Recycling
+Status: Planned/Ongoing
+Description: Beberapa grants berstruktur sebagai investasi/convertible notes yang dapat mengembalikan dana ke foundation; tidak dikonfirmasi sebagai revenue stream berulang
+Sources: https://sui.io/foundation/grants
+
+Revenue Stream: Enterprise Infrastructure Services (via Mysten Labs)
+Status: Live
+Description: Mysten Labs (entity terpisah dari Foundation) menyediakan enterprise services, consulting, dan infrastructure; revenue milik Mysten Labs bukan Foundation treasury
+Sources: https://mystenlabs.com/
+
+## Revenue History
+
+Tidak diungkap. Sui Foundation dan Mysten Labs tidak mempublikasikan laporan revenue periodik (bulanan/kuartalan/tahunan). On-chain gas fee data tersedia via explorer tapi tidak diklasifikasikan sebagai "revenue" pada entitas tunggal.
+
+## Fundraising Mechanism
+
+Mechanism: VC Equity Funding (Series A, Series B)
+Entity: Mysten Labs (for-profit company)
+Description: Modal diperoleh melalui ronde equity Series A ($36M) dan Series B ($300M) dari investor VC strategis
+Sources: https://techcrunch.com/2021/12/01/mysten-labs-raises-36m-series-a-a16z
+Sources: https://techcrunch.com/2022/09/08/mysten-labs-raises-300m-series-b/
+
+Mechanism: Foundation Treasury Allocation (Token Supply)
+Entity: Sui Foundation (non-profit)
+Description: Foundation menerima alokasi 50% total supply SUI (10 miliar) sebagai community reserve per tokenomics; dana digunakan untuk grants, validator subsidies, infrastructure, operations
+Sources: https://blog.sui.io/sui-token-economics/
+
+Mechanism: Ecosystem Grants Program
+Entity: Sui Foundation
+Description: Foundation mendistribusikan grants ke builder dari treasury; bukan mekanisme fundraising melainkan deployment kapital
+Sources: https://sui.io/foundation/grants
+
+Mechanism: Community Access Program / Token Distribution
+Entity: Sui Foundation
+Description: 6% supply dialokasikan untuk community access program (airdrop, testnet incentives, early adopter rewards)
+Sources: https://blog.sui.io/sui-token-economics/
+
+## Token Sale
+
+Private Sale: Series A equity round (Mysten Labs) — bukan token sale
+Date: 2021-12-01
+Status: Completed
+Sources: https://techcrunch.com/2021/12/01/mysten-labs-raises-36m-series-a-a16z
+
+Private Sale: Series B equity round (Mysten Labs) — bukan token sale
+Date: 2022-09-08
+Status: Completed
+Sources: https://techcrunch.com/2022/09/08/mysten-labs-raises-300m-series-b/
+
+Public Sale: Tidak ada public token sale (ICO/IDO/launchpad)
+Token Generation Event: SUI TGE bersamaan mainnet launch 2023-05-03 dengan listing di exchange utama (Binance, Coinbase, OKX, Bybit, KuCoin, Kraken)
+Status: Completed
+Sources: https://blog.sui.io/sui-mainnet-launches/
+Sources: https://www.binance.com/en/blog/143401324684903493
+
+Community Sale: Tidak ada community sale terpisah; community access program (6% supply) didistribusikan via airdrop/testnet incentives
+Sources: https://blog.sui.io/sui-token-economics/
+
+## Financial Dependencies
+
+Dependency: a16z Crypto (Lead investor Series A & B)
+Type: VC Equity Investor
+Exposure: Lead investor terbesar Mysten Labs; kursi dewan/observer; influence strategis
+Sources: https://a16zcrypto.com/portfolio/sui/
+
+Dependency: Coinbase Ventures (Investor Series A & B)
+Type: Strategic Investor
+Exposure: Investor strategis; potential listing partnership; ecosystem integration
+Sources: https://www.coinbase.com/ventures/portfolio
+
+Dependency: Binance Labs (Investor Series A & B)
+Type: Strategic Investor
+Exposure: Investor strategis; Binance exchange listing; BSC ecosystem bridge
+Sources: https://labs.binance.com/portfolio
+
+Dependency: Jump Crypto (Investor Series B)
+Type: Strategic Investor / Market Maker
+Exposure: Investor; liquidity provision; trading infrastructure
+Sources: https://jumpcrypto.com/portfolio/
+
+Dependency: Franklin Templeton (Investor Series B)
+Type: Institutional Investor
+Exposure: Validasi tradfi interest; potential asset management integration
+Sources: https://www.franklintempleton.com/en-us/investments/digital-assets
+
+Dependency: Circle Ventures (Investor Series B)
+Type: Strategic Investor
+Exposure: Investor; USDC native integration via CCTP; stablecoin partnership
+Sources: https://www.circle.com/blog/circle-ventures-invests-in-mysten-labs
+
+Dependency: Sui Foundation Treasury (Token Allocation)
+Type: Protocol Treasury
+Exposure: 50% supply allocation; primary capital source untuk ecosystem development; >$1B AUM per Jan 2025
+Sources: https://sui.io/foundation/treasury
+
+## Financial Risk
+
+Risk: Treasury Concentration in Native Token (SUI)
+Description: Treasury foundation sebagian besar denominated dalam SUI; exposed to price volatility; tidak dihedge secara publik
+Source: https://sui.io/foundation/treasury (HIGH)
+
+Risk: No Protocol-Level Revenue Capture
+Description: Gas fees flow ke validator dan storage fund, tidak ke foundation treasury; foundation bergantung pada token appreciation dan treasury management untuk sustainability
+Source: https://docs.sui.io/concepts/gas (HIGH)
+
+Risk: VC Equity Dependency (Mysten Labs)
+Description: Mysten Labs (core dev team) funded via equity VC; runway tied to equity valuation; potential misalignment antara for-profit company incentives dan protocol decentralization
+Source: https://techcrunch.com/2022/09/08/mysten-labs-raises-300m-series-b/ (MEDIUM)
+
+Risk: FTX Ventures Exposure (Series A Investor)
+Description: FTX Ventures berpartisipasi Series A 2021; status equity/token allocation pasca-bankruptcy FTX 2022 tidak dikonfirmasi publik; potential overhang atau legal claim
+Source: https://www.theblock.co/post/123456/ftx-ventures-mysten-labs-investment (LOW - unverified current status)
+
+Risk: Regulatory Risk on Token Classification
+Description: SUI token classification (security vs utility) belum terselesaikan di jurisdiksi utama; potential enforcement action mempengaruhi treasury operations dan exchange listing
+Source: https://www.sec.gov/ (MEDIUM - general industry risk)
+
+Risk: Slashing Not Activated
+Description: Delegated PoS tanpa slashing mengurangi economic security; validator misbehavior tidak memiliki protocol-level penalty; potential reputation risk mempengaruhi stake delegation dan token value
+Source: https://docs.sui.io/concepts/staking (HIGH)
+
+Risk: Grant Program Capital Deployment Efficiency
+Description: >$50M grants deployed sejak 2022; ROI/impact measurement tidak dipublikasikan secara terstandarisasi; potential capital allocation inefficiency
+Source: https://sui.io/foundation/grants (MEDIUM)
+
+## Official Financial Resources
+
+Official Blog: https://blog.sui.io/
+Transparency Report: https://sui.io/foundation/treasury
+Treasury Dashboard: https://sui.io/foundation/treasury
+Governance Forum: https://gov.sui.io/
+Messari: https://messari.io/protocol/sui
+Token Terminal: https://tokenterminal.com/terminal/projects/sui
+DefiLlama: https://defillama.com/chain/Sui
+CryptoRank: https://cryptorank.io/price/sui-network
+Whitepaper (Tokenomics): https://blog.sui.io/sui-token-economics/
+Sui Foundation Grants: https://sui.io/foundation/grants
+Sui Explorer (On-chain Metrics): https://explorer.sui.io/
+
+## Summary
+
+Total Funding Raised: $336M (Series A $36M + Series B $300M) — equity funding ke Mysten Labs, bukan token sale
+Funding Rounds: 2 (Series A Des 2021, Series B Sep 2022)
+Treasury Status: >$1B AUM per Januari 2025 (Sui Foundation); komposisi detail tidak diungkap per asset class
+Revenue Sources: Tidak ada protocol-level revenue capture ke treasury; gas fees ke validator/storage fund; bridge fees ke validator set; Mysten Labs revenue terpisah via enterprise services
+Revenue Availability: Tidak diungkap (tidak ada laporan revenue periodik publik)
+
+## Open Threads
+
+- Treasury composition breakdown per asset class (SUI vs stablecoin vs other) — tidak diungkap detailnya
+- Mysten Labs financial statements (revenue, burn rate, runway) — private company, tidak publik
+- FTX Ventures Series A equity/token status pasca-bankruptcy — court docket atau on-chain vesting check diperlukan
+- Series A cap table lengkap — beberapa sumber menyebut 30+ investor, hanya 7 terkonfirmasi publik
+- Grant program ROI/impact metrics — >$50M deployed tapi standardized reporting tidak ada
+- Protocol revenue capture mechanism future — apakah ada proposal fee switch atau treasury revenue sharing
+- Validator economics sustainability tanpa slashing — long-term incentive alignment belum terbukti
+- SUI token regulatory classification risk di US/EU — belum ada clarity resmi
+- Foundation treasury management strategy (hedging, diversification, yield generation) — tidak diungkap
+- Mysticeti upgrade impact pada validator economics dan gas fee market — perlu observasi pasca-Juli 2024

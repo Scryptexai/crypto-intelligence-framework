@@ -1,0 +1,153 @@
+PROJECT: Lido
+
+STATUS AIRDROP
+
+Belum ada
+Lido tidak pernah melaksanakan airdrop tradisional (distribusi retroactive berbasis snapshot, points program tanpa modal, atau lockdrop) kepada pengguna protokol. Alokasi komunitas 10% total supply (100.000.000 LDO) didistribusikan melalui program liquidity mining berdurasi 1 tahun (Januari 2021 – Januari 2022) di Curve stETH/ETH pool dan SushiSwap LDO/ETH pool, yang mengharuskan pengguna menyediakan likuiditas (modal ETH + stETH atau LDO + ETH) untuk memperoleh reward LDO【Phase 6 — TGE, Distribution】【Phase 3 — EV-004】【Phase 5 — Token Sale】. Tidak ada event distribusi gratis tanpa persyaratan modal dalam sejarah protokol.
+
+AIRDROP EVENTS
+
+Tidak ada event airdrop yang memenuhi definisi "distribusi tanpa pembayaran langsung". Satu-satunya mekanisme distribusi ke komunitas adalah liquidity mining program (bukan airdrop), dicatat untuk konteks:
+- Nama: LDO Liquidity Mining Program (Community Allocation Distribution)
+- Tanggal: 2021-01 s.d. 2022-01 (12 bulan)
+- Tipe: Task-based (memerlukan deposit likuiditas ke Curve/SushiSwap)
+- Alokasi: 10% total supply = 100.000.000 LDO (HIGH) [Phase 6 — Distribution]
+- Penerima: Tidak ditemukan (data jumlah alamat unik yang claim reward liquidity mining tidak dipublikasikan resmi)
+- Nilai saat klaim: Tidak ditemukan (harga LDO fluktuatif sepanjang 2021; tidak ada data rata-rata per penerima)
+- Kriteria: Menyediakan likuiditas di Curve stETH/ETH pool (stETH + ETH) atau SushiSwap LDO/ETH pool (LDO + ETH), lalu men-stake LP token ke gauge/contract liquidity mining Lido
+- Anti-sybil: Tidak ada mekanisme anti-sybil terpisah; syarat modal (perlu ETH + stETH/LDO) berfungsi sebagai filter alami
+- Terkait EV: EV-004 (TGE LDO Token dan Liquidity Mining Program)
+- Sitasi: [Phase 3 — EV-004, HIGH] [Phase 6 — TGE, Distribution, HIGH] [Phase 5 — Token Sale, HIGH]
+
+CONTEXT SAAT KEPUTUSAN
+
+- Tahap funding: Post-Series A (Maret 2021, $73M valuation, Paradigm lead) — treasury DAO sudah terisi 36.3% supply + dana VC【Phase 3 — EV-005】【Phase 5 — Funding History】
+- Ukuran komunitas: ~450.000+ unique addresses pernah deposit ke Lido (kumulatif sejak launch Des 2020) per data Dune akhir 2024, tapi pada Januari 2021 basis pengguna masih kecil (TVL ~$200M-500M)【Phase 8 — Adoption Metrics】【Phase 3 — EV-003】
+- Kondisi pasar: Bull market awal 2021 (ETH $1.000 → $4.000), DeFi Summer momentum, liquidity mining menjadi standar distribusi token (Compound, Uniswap, SushiSwap, Yearn semuanya pakai LM)【Phase 8 — Market Timeline】
+- Kompetitor terdekat: Rocket Pool belum launch token (RPL launch 2022), tidak ada liquid staking token lain di Ethereum mainnet saat itu — Lido first-mover【Phase 8 — Competitor Landscape】
+
+TRIGGER DAN ALTERNATIF
+
+Trigger: Peluncuran token governance LDO (TGE) memerlukan mekanisme distribusi 10% alokasi komunitas (100M LDO) agar token tersebar ke pengguna nyata, bukan hanya tersimpan di treasury.
+Alternatif yang tersedia (berdasarkan praktik era 2021):
+1. Retroactive airdrop ke early stETH depositors (snapshot sebelum TGE) — tidak diambil
+2. Public sale / IDO / LBP — tidak diambil (tidak ada public sale sama sekali)【Phase 5 — Token Sale】
+3. Airdrop ke pengguna DeFi lain (Curve LPs, Aave users, dll) — tidak diambil
+4. Liquidity mining program (dipilih) — standar industri saat itu, selaras dengan kebutuhan memperdalam likuiditas stETH/ETH di Curve【Phase 7 — Major Integrations】
+5. Tidak mendistribusikan sama sekali (simpan di treasury) — tidak diambil
+Alasan penolakan alternatif 1-3 tidak terdokumentasi secara resmi; tidak ada catatan forum/governance yang membahas opsi airdrop retroactive vs liquidity mining.
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi:
+- "Distribusi awal via liquidity mining di Curve stETH/ETH pool dan SushiSwap LDO/ETH. Program liquidity mining berjalan 1 tahun."【Phase 3 — EV-004, HIGH】
+- Tujuan: mendorong likuiditas stETH/ETH di Curve (venue utama) dan LDO/ETH di SushiSwap, serta mendistribusikan token ke partisipan aktif【Phase 6 — TGE, HIGH】
+
+Alasan yang tidak diumumkan (HIPOTESIS):
+- HIPOTESIS: Menghindari klasifikasi sekuritas — liquidity mining membutuhkan "work" (menyediakan modal/likuiditas) sehingga lebih aman secara regulasi dibanding airdrop gratis yang bisa dianggap investment contract (Howey test) (MEDIUM) [Phase 5 — Fundraising Mechanism: no public sale, regulatory caution era 2021]
+- HIPOTESIS: Mendukung peg stETH — mendorong likuiditas Curve stETH/ETH langsung memperkuat peg stabilitas, kritis untuk adopsi awal (HIGH) [Phase 7 — Major Integrations: Curve primary liquidity venue]
+- HIPOTESIS: Memenuhi ekspektasi investor VC — Series A Paradigm/a16z/Dragonfly terbiasa model liquidity mining (Compound, Uniswap portfolio mereka); model ini menciptakan metrik "TVL" dan "user growth" yang mudah dilacak untuk reporting LP (MEDIUM) [Phase 2 — Investors; Phase 5 — Funding History]
+- HIPOTESIS: Tidak ada data on-chain historis yang kaya untuk snapshot retroactive yang adil — Lido launch Des 2020, TGE Jan 2021 (hanya 1 bulan); basis pengguna kecil, snapshot akan sangat terbatas dan mengecualikan mayoritas pengguna masa depan (MEDIUM) [Phase 3 — EV-003, EV-004 timeline]
+
+OUTCOME PER POV
+
+POV Founder (Konstantin Lomashuk, Vasiliy Shapovalov, P2P.org): Sukses
+- Jangka pendek: Token tersebar ke ribuan address via LM; likuiditas Curve stETH/ETH menjadi terdalam di DeFi (>50% volume historis)【Phase 7 — Major Integrations】; stETH peg stabil
+- Jangka panjang: Distribusi 100M LDO selesai Jan 2022 tanpa sisa token community terkunci; founder/team/investor vesting terpisah tidak terganggu【Phase 6 — Vesting Schedule】
+- Dasar: [Phase 3 — EV-004, HIGH] [Phase 7 — Major Integrations, HIGH] [Phase 6 — Vesting Schedule, HIGH]
+
+POV VC (Paradigm, a16z, Dragonfly Capital, Variant Fund, Robot Ventures): Sukses
+- Jangka pendek: Alokasi investor 22.18% (221.8M LDO) cliff 12 bulan + vesting 24-36 bulan terjaga; tidak ada tekanan jual dari community allocation (LM reward linear 12 bulan)【Phase 6 — Vesting Schedule】
+- Jangka panjang: Tokenomics terbukti sustainable; fee switch 10% aktif 2024 menciptakan revenue DAO ~$45-55M/tahun【Phase 3 — EV-020】【Phase 8 — Adoption Metrics】; valuation naik $73M → >$1B Series B【Phase 3 — EV-011】
+- Dasar: [Phase 6 — Vesting Schedule, HIGH] [Phase 3 — EV-020, HIGH] [Phase 8 — Adoption Metrics, HIGH]
+
+POV Retail (penerima Liquidity Mining reward): Sebagian
+- Jangka pendek: Pengguna dengan modal besar (whale) memperoleh LDO signifikan via LM APY tinggi awal 2021; pengguna kecil mendapat reward proporsional tapi gas cost Ethereum mainnet 2021 ($50-100/tx) mengurangi net yield
+- Jangka panjang: Sebagian besar LM reward dijual segera (tekanan jual konstan 2021); harga LDO turun dari puncak ~$7 (Mei 2021) ke ~$1 (Akhir 2021)【Phase 8 — Market Timeline】; tidak ada data retensi on-chain resmi
+- Dasar: [Phase 8 — Market Timeline, HIGH] [Phase 6 — TGE, HIGH] [Tidak ditemukan data retensi resmi]
+
+POV Community (pengguna stETH, token holder, DAO participants): Sukses
+- Jangka pendek: stETH/ETH liquidity Curve menjadi paling dalam; memungkinkan swap besar tanpa slippage; DAO treasury menerima 36.3% supply + fee revenue kemudian
+- Jangka panjang: Governance aktif (fee switch, V2 upgrade, sunset products, operator expansion) — community benar-benar mengontrol protokol via LDO【Phase 3 — EV-013】【Phase 3 — EV-014】【Phase 3 — EV-020】【Phase 3 — EV-021】
+- Dasar: [Phase 7 — Major Integrations, HIGH] [Phase 3 — EV-013, HIGH] [Phase 3 — EV-020, HIGH] [Phase 6 — Governance, HIGH]
+
+POV Developer (integrator DeFi, builder di atas stETH/wstETH): Sukses
+- Jangka pendek: Deep liquidity stETH/ETH memungkinkan integrasi Aave, Maker, Yearn dengan collateral factor tinggi【Phase 7 — Major Integrations】
+- Jangka panjang: stETH/wstETH menjadi "base layer" DeFi; wstETH supply >1M token (Jan 2024)【Phase 3 — EV-023】; SDK, API, dokumentasi matang【Phase 7 — Developer Ecosystem】
+- Dasar: [Phase 7 — Major Integrations, HIGH] [Phase 3 — EV-023, HIGH] [Phase 7 — Developer Ecosystem, HIGH]
+
+POV Institution (fund, market maker, custodian): Sukses
+- Jangka pendek: LDO listed di Binance, Coinbase, Kraken, Bybit, OKX (spot + perpetual)【Phase 8 — Trading Markets】; liquidity mining menciptakan order book awal
+- Jangka panjang: Institutional staking via Lido (stETH/wstETH) menjadi standar; custody support Ledger, Trezor, Fireblocks, Coinbase Prime【Phase 7 — Wallet Ecosystem】; regulatory clarity via Cayman Foundation【Phase 3 — EV-007】
+- Dasar: [Phase 8 — Trading Markets, HIGH] [Phase 7 — Wallet Ecosystem, HIGH] [Phase 3 — EV-007, HIGH]
+
+POV Validator (Node Operator Lido): Tidak relevan (validator tidak menerima airdrop; mereka menerima fee 5% dari rewards via protokol)【Phase 5 — Revenue Model】
+- Jangka pendek: N/A
+- Jangka panjang: N/A
+- Dasar: [Phase 5 — Revenue Model, HIGH]
+
+POV Builder (protokol yang build di atas Lido: EigenLayer, Pendle, Morpho, dll): Sukses
+- Jangka pendek: wstETH (non-rebasing wrapper) tersedia dengan likuiditas mendalam; mudah diintegrasikan
+- Jangka panjang: EigenLayer menerima wstETH sebagai LRT dominan (>50% TVL awal)【Phase 7 — Major Integrations】; Pendle, Morpho, Yearn build strategies di atas wstETH【Phase 7 — Applications】
+- Dasar: [Phase 7 — Major Integrations, HIGH] [Phase 7 — Applications, HIGH]
+
+METRIK RETENSI
+
+- Persentase penerima yang menjual dalam 7 hari: Tidak ditemukan (tidak ada analisis on-chain resmi atau third-party yang memisahkan wallet LM reward vs wallet lain)
+- Persentase penerima yang masih memegang setelah 90 hari: Tidak ditemukan
+- Perubahan alamat aktif sebelum vs sesudah snapshot: Tidak ada snapshot (LM berjalan kontinu 12 bulan); unique depositors tumbuh dari ~10k (Jan 2021) → ~100k+ (Des 2021) per Dune【Phase 8 — Adoption Metrics】(MEDIUM)
+- Perubahan TVL sebelum vs sesudah: TVL Lido naik dari ~$500M (Jan 2021) → ~$20B+ (Des 2021) — didorong LM + bull market + DeFi integrations【Phase 8 — Market Timeline】(HIGH)
+- Harga token pada klaim (LM start Jan 2021): ~$2.50 (estimasi awal trading) (LOW) [CoinGecko historical]
+- Harga token +30 hari (Feb 2021): ~$3.50 (LOW) [CoinGecko historical]
+- Harga token +90 hari (Apr 2021): ~$4.00 (LOW) [CoinGecko historical]
+- Harga token puncak 2021: ~$7.00 (Mei 2021) (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/lido-dao]
+- Harga token akhir 2021: ~$1.00 (Des 2021) (HIGH) [CoinGecko]
+
+FARMING DAN SYBIL
+
+- Populasi hunter merespons: Liquidity mining 2021 memang menarik "yield farmers" yang memindahkan modal ke pool Curve stETH/ETH dan SushiSwap LDO/ETH untuk farm LDO. APY awal sangat tinggi (sering >100% APR denominasi LDO).
+- Kriteria bisa ditebak sebelum snapshot: Tidak ada snapshot — program diumumkan sebelum mulai (blog post Jan 2021)【Phase 3 — EV-004】. Semua yang punya modal bisa join dari hari 1.
+- Farming massal: Ya, modal besar (whale, fund) mendominasi LP positions; pengguna retail dengan modal kecil (<10 ETH) margin tipis setelah gas fee.
+- Alamat yang didiskualifikasi: 0 (tidak ada mekanisme diskualifikasi; semua LP yang stake ke gauge mendapat reward proporsional).
+- Tim mengubah kriteria setelah melihat perilaku: Tidak ada perubahan kriteria selama 12 bulan program; reward rate menurun seiring lebih banyak LP join (emisi LDO tetap/hari, dibagi proporsional).
+- Selisih alamat vs pengguna nyata: Jumlah address LP Curve stETH/ETH ~10k-20k unik, tapi banyak dikendalikan entitas sama (whale multi-wallet, fund). Pengguna nyata stETH (depositors) ~100k+ tapi hanya sebagian jadi LP.
+
+PROSPEK
+
+Prasyarat yang sudah terpenuhi:
+- Token live dengan utility governance nyata (fee switch, operator set, upgrades)【Phase 6 — Utility, Governance】
+- DAO treasury sustainable via protocol revenue (fee switch 10%)【Phase 3 — EV-020】【Phase 5 — Revenue Model】
+- Komunitas besar (>450k unique depositors kumulatif)【Phase 8 — Adoption Metrics】
+- Distribusi token relatif tersebar (top 10 holder ~60-65% termasuk treasury & vesting contracts)【Phase 6 — Holder Distribution】
+- Legal wrapper ada (Cayman Foundation)【Phase 3 — EV-007】
+
+Prasyarat yang belum:
+- Tidak ada sinyal dari governance (forum, snapshot, LIP) yang mendiskusikan airdrop retroactive ke stETH holders / wstETH holders / early depositors
+- Tidak ada points program berjalan (seperti "Lido Points" untuk aktivitas staking/DeFi)
+- Tidak ada kontrak distribusi airdrop yang di-deploy (MerkleDistributor, Claim contract, dll)
+- Tokenomics sudah matang: community allocation 10% sudah habis terdistribusi 2022; tidak ada alokasi tersisa untuk airdrop masa depan kecuali DAO vote untuk mint baru (tidak mungkin, fixed supply) atau realokasi dari treasury (363M LDO) — butuh proposal governance besar
+
+Sinyal yang biasanya mendahului:
+- Diskusi di research.lido.fi tentang "retroactive rewards", "airdrop", "community incentives Season 2"
+- Draft LIP (Lido Improvement Proposal) untuk airdrop allocation dari treasury
+- Deploy kontrak claim/merkle distributor di testnet/mainnet
+- Pengumuman snapshot date (biasanya 2-4 minggu sebelum eksekusi)
+- Rekrutmen vendor airdrop (Holograph, Claimable, dll) atau tim internal build tooling
+
+Penilaian: Kemungkinan airdrop retroactive di masa depan RENDAH (keyakinan: MEDIUM). Alasan: (1) Community allocation sudah habis digunakan LM 2021-2022; (2) Fixed supply 1B LDO — tidak ada emission baru; (3) Treasury 363M LDO dikontrol DAO, tapi realokasi untuk airdrop butuh justification kuat (treasury sudah fund grants, core contributors, insurance); (4) Lido sudah mature, tidak butuh airdrop untuk bootstrap adoption; (5) Regulatory risk airdrop gratis meningkat (SEC enforcement 2023-2024). Yang bisa mengubah: jika muncul kompetitor LRT (Ether.fi, Renzo, Puffer) melakukan airdrop agresif dan mencuri mindshare staker — Lido mungkin merespons via governance vote untuk "loyalty rewards" dari treasury, tapi ini spekulasi.
+
+PELAJARAN LINTAS PROJECT
+
+- Ketika community allocation didistribusikan via liquidity mining (bukan airdrop) di era 2021 (bull market, gas fee tinggi, hunter population belum matang), distribusi cenderung terkonsentrasi pada whale/institusi yang mampu bayar gas dan modal besar — retail terpinggirkan. Akibatnya: token tersebar tapi tidak "ke tangan banyak orang" secara merata.
+- Ketika protokol first-mover dengan TVL membesar pesat (Lido TVL $500M → $20B dalam 1 tahun), liquidity mining berfungsi ganda: mendistribusikan token DAN memperdalam likuiditas venue kritis (Curve stETH/ETH). Ini lebih efisien dari airdrop murni yang tidak memberi yield pada protokol.
+- Ketika tidak ada snapshot retroactive untuk early users (hanya 1 bulan antara mainnet launch dan TGE), early adopters tidak mendapat reward khusus — mereka harus join LM seperti orang lain. Ini menciptakan kekecewaan naratif "early users tidak dihargai" tapi menghindari kompleksitas dan risiko regulasi snapshot.
+- Ketika fixed supply + tidak ada inflation + community allocation habis di awal, tidak ada "season 2" airdrop yang mungkin tanpa realokasi treasury yang kontroversial. Project dengan tokenomics seperti ini (Lido, Uniswap v1) cenderung TIDAK melakukan airdrop kedua.
+- Ketika DAO governance sudah fungsional dan mengontrol fee parameter (fee switch), insentif pengguna jangka panjang sudah tertangani via yield stETH (net of fee) — airdrop tambahan bukan diperlukan untuk retention.
+
+OPEN THREADS
+
+- Jumlah alamat unik yang pernah claim LDO reward dari liquidity mining program 2021-2022 — tidak dipublikasikan resmi; perlu query on-chain ke contract LM gauge Curve/SushiSwap
+- Persentase LM reward yang dijual dalam 7/30/90 hari oleh penerima — tidak ada analisis resmi; community Dune dashboard mungkin ada tapi tidak diverifikasi
+- Apakah ada diskusi internal (private Discord/forum core contributors) tentang airdrop retroactive 2020-2021 yang tidak terekspos publik — tidak diketahui
+- Estimasi jumlah pengguna stETH early (Des 2020 - Jan 2021) yang eligible untuk hypothetical snapshot — tidak dihitung resmi
+- Apakah Lido DAO Foundation mempertimbangkan "loyalty program" berbasis points (bukan airdrop token) untuk staker long-term — tidak ada sinyal publik per Des 2024

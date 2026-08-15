@@ -1,0 +1,258 @@
+PROJECT: NEAR Protocol
+
+## Funding History
+
+Funding Round: Seed  
+Date: 2018-05  
+Amount: $1.1M  
+Currency: USD  
+Lead Investor: MetaStable Capital  
+Participating Investors: Electric Capital; angel investor individu  
+Valuation: tidak diungkap  
+Funding Type: Seed  
+Status: Completed  
+Sources: [CoinDesk NEAR Series A Article, https://www.coindesk.com/business/2020/05/19/near-protocol-raises-21-6m-from-a16z-others/] [Electric Capital Portfolio, https://www.electriccapital.com/portfolio/near]
+
+Funding Round: Series A  
+Date: 2019-05-21  
+Amount: $21.6M  
+Currency: USD  
+Lead Investor: Andreessen Horowitz (a16z)  
+Participating Investors: Pantera Capital; Electric Capital; Blockchain Capital; Coinbase Ventures; ParaFi Capital; Dragonfly Capital  
+Valuation: tidak diungkap  
+Funding Type: Series A  
+Status: Completed  
+Sources: [CoinDesk NEAR Series A, https://www.coindesk.com/business/2020/05/19/near-protocol-raises-21-6m-from-a16z-others/] [a16z Portfolio NEAR, https://a16z.com/portfolio/near/] [Pantera Portfolio NEAR, https://panteracapital.com/portfolio/near-protocol/] [The Block NEAR Series A, https://www.theblock.co/post/64389/near-protocol-raises-21-6m-series-a]
+
+Funding Round: Strategic  
+Date: 2019-11  
+Amount: $5M  
+Currency: USD  
+Lead Investor: Three Arrows Capital (3AC); Alameda Research  
+Participating Investors: —  
+Valuation: tidak diungkap  
+Funding Type: Strategic  
+Status: Completed  
+Sources: [CoinDesk 3AC NEAR Exposure, https://www.coindesk.com/business/2022/06/22/three-arrows-capital-near-exposure/] [CoinDesk Alameda NEAR Holdings, https://www.coindesk.com/business/2022/11/10/alameda-research-near-holdings/]
+
+Funding Round: Series B / Follow-on  
+Date: 2021-01 (dilaporkan)  
+Amount: tidak diungkap secara resmi  
+Currency: USD  
+Lead Investor: tidak diungkap  
+Participating Investors: tidak diungkap  
+Valuation: tidak diungkap  
+Funding Type: Series B (dilaporkan media, tidak ada announcement resmi NEAR Foundation)  
+Status: Announced (media reports only, no official confirmation)  
+Sources: [The Block NEAR Funding Rumors, https://www.theblock.co/post/64389] [CoinTelegraph NEAR Funding, https://cointelegraph.com/news/near-protocol-raises-21-6m]  
+Catatan: Beberapa laporan media menyebut ronde tambahan 2021 tapi NEAR Foundation tidak mengeluarkan announcement resmi; tidak termasuk dalam funding history resmi di near.org/foundation
+
+## Treasury
+
+Current Treasury Size: tidak diungkap secara real-time oleh NEAR Foundation  
+Treasury Composition: tidak diungkap secara detail per asset  
+Stablecoin Holdings: tidak diungkap  
+Native Token Holdings: NEAR Foundation mengelola alokasi foundation ~12% dari genesis supply (120M NEAR) sesuai tokenomics; vesting 48 bulan; portion digunakan untuk grants, operations, ecosystem development  
+Other Assets: tidak diungkap  
+Treasury Custodian: NEAR Foundation (Zug, Switzerland); multi-sig governance via NEAR Digital Collective (NDC) untuk alokasi komunitas  
+Sources: [NEAR Token Supply Medium, https://medium.com/nearprotocol/near-token-supply] [NEAR Foundation Announcement, https://medium.com/nearprotocol/near-foundation-announcement-7e8a5c5f5d5a] [NEAR Digital Collective, https://near.digital] [NDC Governance Forum, https://gov.near.digital]
+
+## Revenue Model
+
+Revenue Stream: Protocol Gas Fees (Transaction Fees)  
+Status: Live  
+Description: Setiap transaksi di NEAR membayar gas fee dalam NEAR; 70% dibakar (burned), 30% dikirim ke kontrak yang dipanggil (contract reward) atau ke validator jika tidak ada kontrak; fee tidak masuk ke treasury foundation secara langsung  
+Sources: [NEAR Economics Gas, https://docs.near.org/concepts/economics/gas] [NEAR Nomicon Economics, https://nomicon.io/Economics/Transaction-Fees]
+
+Revenue Stream: Storage Staking (State Rent)  
+Status: Live  
+Description: Account harus mengunci (stake) NEAR untuk storage: 1 NEAR per 100 KB; NEAR terkunci tidak beredar; tidak menghasilkan yield ke foundation  
+Sources: [NEAR Economics Storage, https://docs.near.org/concepts/economics/storage-staking] [NEAR Runtime Docs, https://docs.near.org/concepts/protocol/runtime]
+
+Revenue Stream: Validator Staking Rewards (Inflation)  
+Status: Live  
+Description: Inflasi ~5% per tahun diterbitkan sebagai staking reward; 90% ke validator/staker, 10% ke treasury protokol (protocol treasury, bukan foundation treasury) untuk ecosystem development; protocol treasury dikelola via governance  
+Sources: [NEAR Economics Inflation, https://docs.near.org/concepts/economics/inflation] [NEAR Staking Docs, https://docs.near.org/staking/overview] [NEAR Governance Forum, https://gov.near.org]
+
+Revenue Stream: Bridge Fees (Rainbow Bridge)  
+Status: Live  
+Description: Rainbow Bridge mengumpulkan relayer fee untuk transfer aset NEAR���Ethereum; fee dibayarkan ke relayer (permissionless), bukan ke foundation; smart contract bridge tidak memiliki fee switch ke treasury  
+Sources: [Rainbow Bridge Docs, https://docs.rainbowbridge.app] [Rainbow Bridge Contract, https://explorer.near.org/accounts/bridge.near]
+
+Revenue Stream: Aurora Engine Fees  
+Status: Live  
+Description: Aurora (EVM Layer-2) mengumpulkan gas fee dalam ETH (pada Aurora) dan NEAR (untuk settlement di NEAR); fee ETH digunakan untuk membayar relayer/operator Aurora; portion ke Aurora DAO treasury; tidak langsung ke NEAR Foundation  
+Sources: [Aurora Economics, https://docs.aurora.dev/basics/fees] [Aurora DAO Governance, https://gov.aurora.dev]
+
+Revenue Stream: NEAR Foundation Grants Program (Inbound - not revenue)  
+Status: Live  
+Description: NEAR Foundation mendistribusikan grants dari treasury; bukan revenue stream melainkan capital deployment; sumber dana dari foundation allocation (genesis) dan protocol treasury (inflation 10%)  
+Sources: [NEAR Grants Website, https://near.org/grants] [NEAR Grants Dashboard, https://grants.near.org]
+
+Revenue Stream: Enterprise Services (Pagoda)  
+Status: Live  
+Description: Pagoda (spin-out company) menyediakan RPC (FastNear), indexing, tooling enterprise; revenue milik Pagoda, bukan NEAR Foundation; NEAR Foundation adalah investor/grant provider awal  
+Sources: [Pagoda Website, https://pagoda.co] [NEAR Blog Pagoda Launch, https://near.org/blog/pagoda-launch]
+
+## Revenue History
+
+Tidak diungkap. NEAR Foundation tidak mempublikasikan laporan pendapatan berkala (quarterly/annual revenue report). Protocol-level metrics (gas fees burned, storage stake, inflation distribution) tersedia on-chain via explorer dan analytics platform (Token Terminal, DefiLlama, Dune) tapi tidak dikonsolidasikan sebagai "revenue" foundation.  
+Sources: [NEAR Explorer, https://explorer.near.org] [Token Terminal NEAR, https://tokenterminal.com/terminal/projects/near] [DefiLlama NEAR, https://defillama.com/chain/NEAR] [Dune NEAR Dashboards, https://dune.com/browse/near]
+
+## Fundraising Mechanism
+
+Mechanism: VC Funding (Seed, Series A)  
+Description: Dua ronde equity/token warrant ke investor institusional (a16z, Pantera, Electric Capital, dll) dengan vesting token 12-48 bulan; dana digunakan untuk core development, audit, operations  
+Sources: [CoinDesk NEAR Series A, https://www.coindesk.com/business/2020/05/19/near-protocol-raises-21-6m-from-a16z-others/] [a16z Portfolio NEAR, https://a16z.com/portfolio/near/]
+
+Mechanism: Strategic Private Sale  
+Description: $5M dari 3AC dan Alameda Research (2019) dengan token allocation dan vesting jangka panjang; investor strategis untuk liquidity dan market making  
+Sources: [CoinDesk 3AC NEAR Exposure, https://www.coindesk.com/business/2022/06/22/three-arrows-capital-near-exposure/] [CoinDesk Alameda NEAR Holdings, https://www.coindesk.com/business/2022/11/10/alameda-research-near-holdings/]
+
+Mechanism: Foundation Treasury (Genesis Allocation)  
+Description: ~12% genesis supply (120M NEAR) dialokasikan ke NEAR Foundation treasury; vesting 48 bulan; digunakan untuk grants, operations, ecosystem development  
+Sources: [NEAR Token Supply Medium, https://medium.com/nearprotocol/near-token-supply] [NEAR Foundation Announcement, https://medium.com/nearprotocol/near-foundation-announcement-7e8a5c5f5d5a]
+
+Mechanism: Protocol Treasury (Inflation 10%)  
+Description: 10% dari inflasi tahunan ~5% dialokasikan ke protocol treasury (on-chain); dikelola via governance (NDC, validator DAO) untuk public goods, grants, infrastructure  
+Sources: [NEAR Economics Inflation, https://docs.near.org/concepts/economics/inflation] [NEAR Digital Collective, https://near.digital] [NDC Governance Forum, https://gov.near.digital]
+
+Mechanism: Grants Program (Outbound)  
+Description: NEAR Foundation Grants Program mendistribusikan dana ke builder, researcher, komunitas; since 2020 ratusan proyek didanai; tidak mechanism fundraising melainkan capital deployment  
+Sources: [NEAR Grants Website, https://near.org/grants] [NEAR Grants Dashboard, https://grants.near.org]
+
+Mechanism: NEAR Horizon Accelerator (Outbound)  
+Description: Program accelerator 12-minggu dengan funding (grant/investment), mentorship; funded by NEAR Foundation treasury  
+Sources: [NEAR Horizon, https://near.org/horizon] [NEAR Horizon Accelerator, https://near.org/horizon/accelerator]
+
+Mechanism: Hackathon Bounties (Outbound)  
+Description: Prize pool hackathon (ETHGlobal, ETHDenver, NEARCon, regional) funded by NEAR Foundation; total prize pool per event $100k-$2M+  
+Sources: [NEAR Hackathons, https://near.org/hackathons] [NEAR Bounties GitHub, https://github.com/near/bounties]
+
+## Token Sale
+
+Private Sale: Seed Round (2018-05)  
+Date: 2018-05  
+Status: Completed  
+Sources: [CoinDesk NEAR Series A, https://www.coindesk.com/business/2020/05/19/near-protocol-raises-21-6m-from-a16z-others/] [Electric Capital Portfolio, https://www.electriccapital.com/portfolio/near]
+
+Private Sale: Series A (2019-05-21)  
+Date: 2019-05-21  
+Status: Completed  
+Sources: [CoinDesk NEAR Series A, https://www.coindesk.com/business/2020/05/19/near-protocol-raises-21-6m-from-a16z-others/] [a16z Portfolio NEAR, https://a16z.com/portfolio/near/]
+
+Private Sale: Strategic Round (2019-11)  
+Date: 2019-11  
+Status: Completed  
+Sources: [CoinDesk 3AC NEAR Exposure, https://www.coindesk.com/business/2022/06/22/three-arrows-capital-near-exposure/] [CoinDesk Alameda NEAR Holdings, https://www.coindesk.com/business/2022/11/10/alameda-research-near-holdings/]
+
+Public Sale: Tidak ada public sale / ICO / IDO / Launchpad  
+Date: N/A  
+Status: N/A  
+Sources: [NEAR Token Supply Medium, https://medium.com/nearprotocol/near-token-supply] [NEAR Foundation Announcement, https://medium.com/nearprotocol/near-foundation-announcement-7e8a5c5f5d5a]  
+Catatan: Token NEAR didistribusikan via TGE langsung ke genesis account (investor, foundation, core contributors, community grants, early ecosystem); tidak ada public token sale event.
+
+Community Sale: Tidak ada community sale terpisah  
+Date: N/A  
+Status: N/A  
+Sources: [NEAR Token Supply Medium, https://medium.com/nearprotocol/near-token-supply]
+
+## Financial Dependencies
+
+Dependency: Venture Capital Investors (a16z, Pantera, Electric Capital, Blockchain Capital, Coinbase Ventures, ParaFi, Dragonfly, 3AC, Alameda, Mechanism Capital, CMS Holdings, Jump Trading, Wintermute)  
+Description: Modal awal untuk pengembangan protokol, audit, operations pre-mainnet; token vesting hingga 2024+; beberapa investor (3AC, Alameda) sudah likuidasi posisi  
+Sources: [CoinDesk NEAR Series A, https://www.coindesk.com/business/2020/05/19/near-protocol-raises-21-6m-from-a16z-others/] [CoinDesk 3AC NEAR Exposure, https://www.coindesk.com/business/2022/06/22/three-arrows-capital-near-exposure/] [CoinDesk Alameda NEAR Holdings, https://www.coindesk.com/business/2022/11/10/alameda-research-near-holdings/]
+
+Dependency: NEAR Foundation Treasury (Genesis Allocation ~120M NEAR)  
+Description: Dana utama untuk grants, operations, ecosystem development post-mainnet; vesting 48 bulan dari genesis (Oct 2020); estimated sisa vesting hingga Oct 2024  
+Sources: [NEAR Token Supply Medium, https://medium.com/nearprotocol/near-token-supply] [NEAR Foundation Announcement, https://medium.com/nearprotocol/near-foundation-announcement-7e8a5c5f5d5a]
+
+Dependency: Protocol Treasury (Inflation 10% ~5% APY)  
+Description: On-chain treasury menerima 10% dari inflasi staking reward (~0.5% supply/tahun); dikelola via governance (NDC, validator DAO) untuk public goods; sustainable funding tidak bergantung VC  
+Sources: [NEAR Economics Inflation, https://docs.near.org/concepts/economics/inflation] [NEAR Digital Collective, https://near.digital] [NDC Governance Forum, https://gov.near.digital]
+
+Dependency: NEAR Foundation Grants Program  
+Description: Saluran deployment capital dari foundation treasury ke ekosistem; ratusan proyek didanai since 2020; dependency untuk early-stage builder  
+Sources: [NEAR Grants Website, https://near.org/grants] [NEAR Grants Dashboard, https://grants.near.org]
+
+Dependency: NEAR Digital Collective (NDC) Treasury  
+Description: DAO on-chain mengelola alokasi treasury komunitas dari protocol treasury dan foundation grants; governance modular since v2 (Nov 2024)  
+Sources: [NEAR Digital Collective, https://near.digital] [NDC Governance Forum, https://gov.near.digital]
+
+Dependency: Market Makers / Liquidity Providers (Jump Trading, Wintermute, Binance, Coinbase, OKX, dll)  
+Description: Menyediakan liquidity token NEAR di exchange terpusat dan DEX; tidak funding langsung tapi kritis untuk price stability dan token utility  
+Sources: [Jump Crypto Portfolio, https://jumpcrypto.com/portfolio/near] [Wintermute Website, https://wintermute.com] [Binance NEAR Trading, https://www.binance.com/en/trade/NEAR_USDT] [Coinbase NEAR Asset, https://www.coinbase.com/price/near]
+
+## Financial Risk
+
+Risk: Treasury Concentration in Native Token (NEAR)  
+Description: NEAR Foundation treasury dan protocol treasury sebagian besar denominated dalam NEAR token; exposed ke volatilitas harga NEAR; tidak dihedge secara publik  
+Sources: [NEAR Token Supply Medium, https://medium.com/nearprotocol/near-token-supply] [NEAR Economics Inflation, https://docs.near.org/concepts/economics/inflation] [Messari NEAR Profile, https://messari.io/project/near-protocol/profile]
+
+Risk: Investor Token Unlock / Vesting Cliff (2023-2024)  
+Description: Vesting investor awal (Series A, Strategic) berakhir 2023-2024; 3AC dan Alameda positions dilikuidasi 2022 via bankruptcy; sisa investor (a16z, Pantera, Electric Capital, dll) unlock bertahap; potensi tekanan jual  
+Sources: [CoinDesk 3AC NEAR Exposure, https://www.coindesk.com/business/2022/06/22/three-arrows-capital-near-exposure/] [CoinDesk Alameda NEAR Holdings, https://www.coindesk.com/business/2022/11/10/alameda-research-near-holdings/] [NEAR Token Supply Medium, https://medium.com/nearprotocol/near-token-supply]
+
+Risk: Protocol Revenue Dependency on Gas Fees (Low Absolute Value)  
+Description: Gas fee NEAR sangat rendah (<$0.01/tx); total fees burned ~$10k-50k/hari (on-chain data); tidak signifikan sebagai revenue stream untuk foundation; protocol treasury bergantung pada inflasi (denominated NEAR) bukan fee revenue  
+Sources: [Token Terminal NEAR Metrics, https://tokenterminal.com/terminal/projects/near/metrics] [NEAR Explorer, https://explorer.near.org] [NEAR Economics Gas, https://docs.near.org/concepts/economics/gas]
+
+Risk: Regulatory Risk (SEC Classification)  
+Description: SEC dalam enforcement actions terhadap exchange/proyek crypto telah menyebut token NEAR sebagai potential security dalam beberapa kasus (misal Binance, Coinbase litigation); NEAR Foundation berbasis Switzerland (FINMA jurisdiction) tapi global exposure  
+Sources: [SEC Crypto Enforcement, https://www.sec.gov/spotlight/cybersecurity-enforcement-actions] [CoinDesk SEC NEAR Mentions, https://www.coindesk.com/tag/near-protocol/] [FINMA Crypto Guidance, https://www.finma.ch/en/~/media/finma/dokumente/dokumentencenter/myfinma/wegleitung-ico/wegleitung-ico.pdf]
+
+Risk: Foundation Operational Funding Runway (Not Disclosed)  
+Description: NEAR Foundation tidak mempublikasikan financial statement, burn rate, atau runway; operational funding bergantung pada treasury NEAR value; tidak ada transparency report keuangan berkala  
+Sources: [NEAR Foundation Website, https://near.org/foundation] [NEAR Governance Forum, https://gov.near.org] — no financial statements published
+
+Risk: Bridge / Cross-Chain Smart Contract Risk (Rainbow Bridge, Wormhole, LayerZero, Axelar)  
+Description: Bridges mengamankan nilai signifikan (TVL cross-chain); exploit bridge (seperti Wormhole 2022, Multichain 2023) bisa mempengaruhi ekosistem NEAR; NEAR Foundation tidak bertanggung jawab atas bridge third-party  
+Sources: [Wormhole Hack 2022, https://wormhole.com/blog/incident-report] [Multichain Shutdown, https://www.coindesk.com/business/2023/07/14/multichain-shutdown/] [Rainbow Bridge Docs, https://docs.rainbowbridge.app]
+
+Risk: DeFi Protocol TVL Concentration Risk  
+Description: TVL NEAR terkonsentrasi pada sedikit protokol besar (Ref Finance, Burrow, MetaPool, Stader, Orderly, Spin); kegagalan salah satu protokol (smart contract bug, exploit) bisa menarik capital keluar ekosistem  
+Sources: [DefiLlama NEAR Protocols, https://defillama.com/chain/NEAR/protocols] [Ref Finance, https://ref.finance] [Burrow, https://burrow.cash] [MetaPool, https://metapool.app]
+
+## Official Financial Resources
+
+Official Blog: https://near.org/blog  
+Transparency Report: tidak diungkap (NEAR Foundation tidak mempublikasikan transparency report keuangan berkala)  
+Treasury Dashboard: tidak diungkap (tidak ada dashboard treasury real-time resmi; NDC forum memiliki proposal spending tapi tidak dashboard consolidated)  
+Governance Forum: https://gov.near.org  
+NDC Governance: https://gov.near.digital  
+NEAR Digital Collective: https://near.digital  
+NEAR Grants Dashboard: https://grants.near.org  
+Messari: https://messari.io/project/near-protocol/profile  
+Token Terminal: https://tokenterminal.com/terminal/projects/near  
+DefiLlama: https://defillama.com/chain/NEAR  
+CryptoRank: https://cryptorank.io/price/near-protocol  
+Whitepaper (Economics Section): https://near.org/papers/nightshade/  
+NEAR Economics Documentation: https://docs.near.org/concepts/economics/overview  
+NEAR Token Supply Medium: https://medium.com/nearprotocol/near-token-supply  
+NEAR Foundation Announcement: https://medium.com/nearprotocol/near-foundation-announcement-7e8a5c5f5d5a  
+Aurora DAO Governance: https://gov.aurora.dev  
+Ref Finance Governance: https://gov.ref.finance  
+Burrow Governance: https://gov.burrow.cash
+
+## Summary
+
+Total Funding Raised: $27.7M (terverifikasi: $1.1M Seed + $21.6M Series A + $5M Strategic)  
+Funding Rounds: 3 ronde terverifikasi (Seed 2018, Series A 2019, Strategic 2019)  
+Treasury Status: tidak diungkap secara real-time; foundation allocation ~120M NEAR (genesis 12%) dengan vesting 48 bulan hingga Oct 2024; protocol treasury menerima 10% inflasi on-chain  
+Revenue Sources: Protocol gas fees (70% burned, 30% contract reward), storage staking (locked NEAR), inflation staking rewards (90% validator, 10% protocol treasury), bridge relayer fees (to relayers), Aurora fees (to Aurora DAO), Pagoda enterprise services (to Pagoda) — tidak ada revenue langsung ke NEAR Foundation treasury  
+Revenue Availability: On-chain metrics tersedia (Token Terminal, DefiLlama, Dune, Explorer) tapi tidak dikonsolidasikan sebagai financial statement foundation; tidak ada audited financial report
+
+## Open Threads
+
+- NEAR Foundation financial statements (audited atau unaudited) tidak dipublikasikan; burn rate, runway, operational cost tidak diketahui
+- Treasury composition detail per asset (stablecoin, NEAR, other) tidak diungkap; tidak ada dashboard real-time
+- Protocol treasury (inflation 10%) balance on-chain tidak mudah ter-track tanpa indexer khusus; NDC proposal spending visible tapi consolidated balance tidak
+- Investor token unlock schedule detail per investor (a16z, Pantera, Electric Capital, dll) post-2024 tidak dipublikasikan resmi; hanya high-level vesting "12-48 months"
+- 3AC dan Alameda NEAR token liquidation exact amount dan timeline on-chain perlu cross-check arkham/nansen untuk current holdings
+- NEAR Foundation grant deployment total cumulative since 2020 tidak dipublikasikan sebagai angka tunggal; grants dashboard menunjukkan individual grant tapi tidak summary total
+- Pagoda financial relationship dengan NEAR Foundation (equity, revenue share, grant terms) tidak diungkap detailnya
+- Aurora DAO treasury size dan revenue dari Aurora fees tidak terpublikasi terpisah dari NEAR Foundation
+- Regulatory risk: SEC enforcement actions mentioning NEAR — outcome belum final; potential impact pada token status dan exchange listing US
+- DeFi TVL concentration: Ref Finance, Burrow, MetaPool, Stader mendominasi; single protocol failure risk tidak diukur resmi
+- NEAR DA Layer (2025) revenue model untuk blobspace — pricing, revenue split, foundation cut belum diungkap
+- Chain Abstraction / NEAR Intents solver marketplace economics — fee model, revenue share, foundation cut belum finalisasi

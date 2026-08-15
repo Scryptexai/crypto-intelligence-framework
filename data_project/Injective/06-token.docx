@@ -1,0 +1,290 @@
+PROJECT: Injective
+
+## Token Information
+
+Official Token Name: Injective
+Symbol: INJ
+Token Standard: Native (Cosmos SDK Coin) on Injective Chain; ERC-20 on Ethereum
+Blockchain: Injective Chain (native); Ethereum (ERC-20 bridge)
+Contract Address: Native: inj1... (Cosmos SDK denom "inj"); ERC-20: 0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30 (Ethereum)
+Decimals: 18 (both native and ERC-20)
+Status: Live
+Sources: https://docs.injective.network/learn/tokenomics/; https://www.coingecko.com/en/coins/injective#info; https://etherscan.io/token/0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30
+
+## Supply
+
+Maximum Supply: 100.000.000 INJ (HIGH) [Injective Docs Tokenomics, https://docs.injective.network/learn/tokenomics/; CoinGecko, https://www.coingecko.com/en/coins/injective#info]
+Total Supply: 100.000.000 INJ (genesis mint) (HIGH) [Injective Docs Tokenomics, https://docs.injective.network/learn/tokenomics/; Injective Explorer Genesis, https://explorer.injective.network/]
+Circulating Supply: ~97.700.000 INJ (per November 2024, per CoinGecko) (MEDIUM) [CoinGecko, https://www.coingecko.com/en/coins/injective; Injective Explorer Supply, https://explorer.injective.network/]
+Initial Supply: 100.000.000 INJ (genesis) (HIGH) [Injective Docs Tokenomics, https://docs.injective.network/learn/tokenomics/; Injective Blog TGE, https://blog.injective.com/injective-protocol-inj-token-sale-on-binance-launchpad/]
+Supply Type: Inflationary (staking rewards) dengan mekanisme deflationary (burn via auction/buyback) (HIGH) [Injective Docs Tokenomics, https://docs.injective.network/learn/tokenomics/; Injective GitHub Inflation, https://github.com/InjectiveLabs/injective-core/blob/master/x/mint/keeper/grpc_query.go]
+Sources: https://docs.injective.network/learn/tokenomics/; https://www.coingecko.com/en/coins/injective#info; https://explorer.injective.network/; https://github.com/InjectiveLabs/injective-core/blob/master/x/mint/keeper/grpc_query.go
+
+## Distribution
+
+Community: 9% (9.000.000 INJ) — community incentives, testnet rewards, airdrop (HIGH) [Injective Docs Tokenomics, https://docs.injective.network/learn/tokenomics/; Injective Blog Tokenomics, https://blog.injective.com/injective-tokenomics/]
+Team: 10% (10.000.000 INJ) — core team dan pengembang awal (HIGH) [Injective Docs Tokenomics, https://docs.injective.network/learn/tokenomics/; Injective Blog Tokenomics, https://blog.injective.com/injective-tokenomics/]
+Investors: 37,6% (37.600.000 INJ) — seed/private investors, Binance Launchpad IEO (3%), strategic investors (HIGH) [Injective Docs Tokenomics, https://docs.injective.network/learn/tokenomics/; Injective Blog Tokenomics, https://blog.injective.com/injective-tokenomics/; Binance Launchpad, https://www.binance.com/en/blog/421499824684901170/Injective-Protocol-INJ-Token-Sale-on-Binance-Launchpad]
+Foundation: 14,4% (14.400.000 INJ) — Injective Labs development fund, protocol R&D (HIGH) [Injective Docs Tokenomics, https://docs.injective.network/learn/tokenomics/; Injective Blog Tokenomics, https://blog.injective.com/injective-tokenomics/]
+Treasury: 14% (14.000.000 INJ) — protocol treasury, ecosystem growth, grants (HIGH) [Injective Docs Tokenomics, https://docs.injective.network/learn/tokenomics/; Injective Blog Tokenomics, https://blog.injective.com/injective-tokenomics/]
+Ecosystem: 10% (10.000.000 INJ) — ecosystem fund, developer grants, liquidity incentives (HIGH) [Injective Docs Tokenomics, https://docs.injective.network/learn/tokenomics/; Injective Blog Ecosystem Fund, https://blog.injective.com/injective-ecosystem-fund/]
+Advisors: 5% (5.000.000 INJ) — strategic advisors (HIGH) [Injective Docs Tokenomics, https://docs.injective.network/learn/tokenomics/; Injective Blog Tokenomics, https://blog.injective.com/injective-tokenomics/]
+Other: 0% (tidak ada kategori lain tercatat) (HIGH) [Injective Docs Tokenomics, https://docs.injective.network/learn/tokenomics/]
+Sources: https://docs.injective.network/learn/tokenomics/; https://blog.injective.com/injective-tokenomics/; https://blog.injective.com/injective-ecosystem-fund/; https://www.binance.com/en/blog/421499824684901170/Injective-Protocol-INJ-Token-Sale-on-Binance-Launchpad
+
+## Vesting Schedule
+
+Category: Community (9%)
+Cliff: 0 bulan (TGE unlock sebagian)
+Vesting: Linear 36 bulan pasca-TGE untuk sisa
+Unlock Frequency: Bulanan
+Current Status: Vesting berlangsung (TGE Okt 2020, akhir vesting perkiraan Okt 2023) — sebagian besar unlocked (HIGH) [Injective Docs Tokenomics, https://docs.injective.network/learn/tokenomics/; Injective Blog Tokenomics, https://blog.injective.com/injective-tokenomics/]
+
+Category: Team (10%)
+Cliff: 12 bulan
+Vesting: Linear 36 bulan pasca-cliff (total 48 bulan dari TGE)
+Unlock Frequency: Bulanan
+Current Status: Vesting berlangsung (cliff selesai Okt 2021, akhir vesting perkiraan Okt 2024) (HIGH) [Injective Docs Tokenomics, https://docs.injective.network/learn/tokenomics/; Injective Blog Tokenomics, https://blog.injective.com/injective-tokenomics/]
+
+Category: Investors — Seed/Private (termasuk Pantera, dst.) (~34,6%)
+Cliff: 12 bulan
+Vesting: Linear 24 bulan pasca-cliff (total 36 bulan dari TGE)
+Unlock Frequency: Bulanan
+Current Status: Fully vested (cliff selesai Okt 2021, akhir vesting Okt 2022) (HIGH) [Injective Docs Tokenomics, https://docs.injective.network/learn/tokenomics/; Injective Blog Tokenomics, https://blog.injective.com/injective-tokenomics/]
+
+Category: Investors — Binance Launchpad IEO (3%)
+Cliff: 0 bulan (immediate unlock at TGE)
+Vesting: Tidak ada (100% unlocked at TGE)
+Unlock Frequency: N/A
+Current Status: Fully unlocked sejak TGE Okt 2020 (HIGH) [Binance Launchpad Announcement, https://www.binance.com/en/blog/421499824684901170/Injective-Protocol-INJ-Token-Sale-on-Binance-Launchpad; Injective Blog TGE, https://blog.injective.com/injective-protocol-inj-token-sale-on-binance-launchpad/]
+
+Category: Foundation (14,4%)
+Cliff: 6 bulan
+Vesting: Linear 48 bulan pasca-cliff (total 54 bulan dari TGE)
+Unlock Frequency: Bulanan
+Current Status: Vesting berlangsung (cliff selesai Apr 2021, akhir vesting perkiraan Apr 2025) (HIGH) [Injective Docs Tokenomics, https://docs.injective.network/learn/tokenomics/; Injective Blog Tokenomics, https://blog.injective.com/injective-tokenomics/]
+
+Category: Treasury (14%)
+Cliff: 6 bulan
+Vesting: Linear 48 bulan pasca-cliff (total 54 bulan dari TGE)
+Unlock Frequency: Bulanan
+Current Status: Vesting berlangsung (cliff selesai Apr 2021, akhir vesting perkiraan Apr 2025) — dikelola via governance (HIGH) [Injective Docs Tokenomics, https://docs.injective.network/learn/tokenomics/; Injective Hub Governance, https://hub.injective.network/governance]
+
+Category: Ecosystem (10%)
+Cliff: 0 bulan (TGE unlock sebagian untuk liquidity/launch)
+Vesting: Linear 60 bulan pasca-TGE untuk sisa
+Unlock Frequency: Bulanan
+Current Status: Vesting berlangsung (akhir vesting perkiraan Okt 2025) — sebagian untuk Ecosystem Fund 2022 (HIGH) [Injective Docs Tokenomics, https://docs.injective.network/learn/tokenomics/; Injective Blog Ecosystem Fund, https://blog.injective.com/injective-ecosystem-fund/]
+
+Category: Advisors (5%)
+Cliff: 12 bulan
+Vesting: Linear 24 bulan pasca-cliff (total 36 bulan dari TGE)
+Unlock Frequency: Bulanan
+Current Status: Fully vested (cliff selesai Okt 2021, akhir vesting Okt 2022) (HIGH) [Injective Docs Tokenomics, https://docs.injective.network/learn/tokenomics/; Injective Blog Tokenomics, https://blog.injective.com/injective-tokenomics/]
+Sources: https://docs.injective.network/learn/tokenomics/; https://blog.injective.com/injective-tokenomics/; https://www.binance.com/en/blog/421499824684901170/Injective-Protocol-INJ-Token-Sale-on-Binance-Launchpad; https://blog.injective.com/injective-ecosystem-fund/; https://hub.injective.network/governance
+
+## TGE
+
+TGE Date: 2020-10 (Binance Launchpad IEO, tanggal pasti: 2020-10-19 hingga 2020-10-20 periode subscription, listing 2020-10-21) (HIGH) [Binance Launchpad Announcement, https://www.binance.com/en/blog/421499824684901170/Injective-Protocol-INJ-Token-Sale-on-Binance-Launchpad; Injective Blog TGE, https://blog.injective.com/injective-protocol-inj-token-sale-on-binance-launchpad/]
+Initial Unlock: 3% supply (30.000.000 INJ) — Binance Launchpad public sale; tambahan ~6-9% untuk community/ecosystem/liquidity (total ~12-15% circulating at TGE) (HIGH) [Injective Docs Tokenomics, https://docs.injective.network/learn/tokenomics/; Binance Launchpad, https://www.binance.com/en/blog/421499824684901170/Injective-Protocol-INJ-Token-Sale-on-Binance-Launchpad]
+Unlocked Categories: Binance Launchpad IEO (3%, 100% unlocked); Community incentives (bagian); Ecosystem/liquidity (bagian); Team/Investors/Foundation/Advisors: 0% (cliff berlaku) (HIGH) [Injective Docs Tokenomics, https://docs.injective.network/learn/tokenomics/; Injective Blog Tokenomics, https://blog.injective.com/injective-tokenomics/]
+Launch Platform: Binance Launchpad (IEO)
+Status: Completed
+Sources: https://www.binance.com/en/blog/421499824684901170/Injective-Protocol-INJ-Token-Sale-on-Binance-Launchpad; https://blog.injective.com/injective-protocol-inj-token-sale-on-binance-launchpad/; https://docs.injective.network/learn/tokenomics/
+
+## Utility
+
+Utility: Governance
+Deskripsi: INJ digunakan untuk voting pada governance proposal (parameter chain, upgrade, treasury spending, dll.) melalui Injective Hub; 1 INJ = 1 vote (delegated ke validator atau self-vote)
+Status: Live (sejak mainnet Nov 2021)
+Sources: https://docs.injective.network/learn/governance/; https://hub.injective.network/governance; https://github.com/InjectiveLabs/injective-core/tree/master/x/gov
+
+Utility: Gas / Transaction Fees
+Deskripsi: INJ dibayar sebagai gas fee untuk setiap transaksi di Injective Chain (transfer, exchange order, contract call, IBC, bridge); fee burn sebagian via auction module
+Status: Live (sejak mainnet Nov 2021)
+Sources: https://docs.injective.network/learn/fees/; https://github.com/InjectiveLabs/injective-core/tree/master/x/fees; https://github.com/InjectiveLabs/injective-core/tree/master/x/auction
+
+Utility: Staking
+Deskripsi: INJ di-delegate ke validator untuk mengamankan jaringan PoS; delegator menerima staking rewards (inflation + exchange fee share) dan komisi validator
+Status: Live (sejak mainnet Nov 2021)
+Sources: https://docs.injective.network/learn/staking/; https://hub.injective.network/staking; https://github.com/InjectiveLabs/injective-core/tree/master/x/staking
+
+Utility: Validator Security / Bond
+Deskripsi: Validator wajib self-bond INJ dan menerima delegasi; slashing (double-sign 5%, downtime 0.01%/blok) mengurangi bonded INJ
+Status: Live (sejak mainnet Nov 2021)
+Sources: https://docs.injective.network/learn/staking/#slashing; https://github.com/InjectiveLabs/injective-core/tree/master/x/slashing
+
+Utility: Fee Payment (Exchange Fees)
+Deskripsi: Trading fee di Injective Exchange (spot & derivatif) dibayar dalam INJ atau quote asset; bagian fee dialokasikan ke Insurance Fund, Auction (buyback/burn), dan validator
+Status: Live (sejak mainnet Nov 2021)
+Sources: https://docs.injective.network/learn/exchange/; https://github.com/InjectiveLabs/injective-core/tree/master/x/exchange; https://github.com/InjectiveLabs/injective-core/tree/master/x/insurance
+
+Utility: Incentive / Reward (Staking Rewards)
+Deskripsi: Inflasi INJ (target ~7-10% APR staking) didistribusikan ke validator dan delegator per block; ditambah exchange fee share
+Status: Live (sejak mainnet Nov 2021)
+Sources: https://docs.injective.network/learn/staking/; https://github.com/InjectiveLabs/injective-core/tree/master/x/mint; https://github.com/InjectiveLabs/injective-core/tree/master/x/distribution
+
+Utility: Collateral (Derivatives / iAssets)
+Deskripsi: INJ digunakan sebagai kolateral untuk trading derivatif perpetual, futures, dan minting aset sintetis (iAssets) di protokol Injective
+Status: Live (sejak iAssets launch 2022)
+Sources: https://docs.injective.network/learn/products/; https://docs.injective.network/develop/modules/exchange/; https://blog.injective.com/injective-iassets-launch/
+
+Utility: Liquidity (Market Making / LP Incentives)
+Deskripsi: INJ di-incentiviskan untuk market maker dan liquidity provider di Injective Exchange (orderbook) dan AMM partner (Osmosis via IBC) melalui program ekosistem
+Status: Live (sejak Ecosystem Fund Nov 2022)
+Sources: https://blog.injective.com/injective-ecosystem-fund/; https://docs.injective.network/ecosystem/; https://github.com/InjectiveLabs/injective-core/tree/master/x/incentive
+
+Utility: Bridge Fee (Peggy Bridge)
+Deskripsi: Fee bridge Ethereum ↔ Injective (Peggy) dibayar dalam INJ (native) atau ETH (Ethereum side); relayer/validator menerima fee
+Status: Live (sejak mainnet Nov 2021)
+Sources: https://docs.injective.network/learn/bridge/; https://github.com/InjectiveLabs/injective-core/tree/master/x/peggy; https://github.com/InjectiveLabs/peggy-relayer
+
+Utility: Auction Participation (Buyback / Burn)
+Deskripsi: INJ digunakan dalam auction module untuk fee auction, surplus auction, dan collateral auction; bagian INJ di-burn (supply reduction)
+Status: Live (sejak mainnet Nov 2021)
+Sources: https://docs.injective.network/develop/modules/auction/; https://github.com/InjectiveLabs/injective-core/tree/master/x/auction
+Sources: https://docs.injective.network/learn/governance/; https://hub.injective.network/governance; https://docs.injective.network/learn/fees/; https://docs.injective.network/learn/staking/; https://docs.injective.network/learn/exchange/; https://docs.injective.network/learn/products/; https://docs.injective.network/learn/bridge/; https://docs.injective.network/develop/modules/auction/; https://blog.injective.com/injective-ecosystem-fund/; https://github.com/InjectiveLabs/injective-core/tree/master/x/gov; https://github.com/InjectiveLabs/injective-core/tree/master/x/fees; https://github.com/InjectiveLabs/injective-core/tree/master/x/staking; https://github.com/InjectiveLabs/injective-core/tree/master/x/slashing; https://github.com/InjectiveLabs/injective-core/tree/master/x/exchange; https://github.com/InjectiveLabs/injective-core/tree/master/x/insurance; https://github.com/InjectiveLabs/injective-core/tree/master/x/mint; https://github.com/InjectiveLabs/injective-core/tree/master/x/distribution; https://github.com/InjectiveLabs/injective-core/tree/master/x/peggy; https://github.com/InjectiveLabs/injective-core/tree/master/x/auction; https://github.com/InjectiveLabs/injective-core/tree/master/x/incentive
+
+## Governance
+
+Governance Model: On-chain governance berbasis Cosmos SDK x/gov module; proposal diajukan oleh pemegang INJ (deposit minimal), voting oleh validator/delegator
+Voting System: Weighted voting (1 INJ = 1 vote); delegator mewarisi vote validator kecuali override; opsi: Yes, No, NoWithVeto, Abstain
+Voting Power: Proporsional dengan INJ bonded (staked); unbonded INJ tidak memiliki voting power
+Delegation: Delegator bisa delegate ke validator; validator vote mewakili delegator kecuali delegator vote langsung (override)
+Proposal System: Tipe proposal: Text, ParameterChange, SoftwareUpgrade, CancelSoftwareUpgrade, CommunityPoolSpend; deposit period 14 hari, voting period 14 hari; quorum 33,4%, threshold Yes 50%, veto 33,4%
+Treasury Governance: Community Pool Spend proposal untuk mengeluarkan dana dari treasury (x/distribution community pool); butuh quorum dan threshold standar
+Status: Live (sejak mainnet Nov 2021); berbagai proposal sudah dieksekusi (upgrade, parameter, spend)
+Sources: https://docs.injective.network/learn/governance/; https://hub.injective.network/governance; https://github.com/InjectiveLabs/injective-core/tree/master/x/gov; https://github.com/InjectiveLabs/injective-core/tree/master/x/distribution; https://explorer.injective.network/gov
+
+## Inflation / Deflation
+
+Inflation Mechanism: Target inflation 7-10% per tahun (dynamic based on bonded ratio); minted per block via x/mint module; didistribusikan ke validator/delegator via x/distribution
+Emission Schedule: Block provisions dihitung berdasarkan target annual inflation dan bonded supply; tidak ada hard cap emissions (supply uncapped secara teori tapi max supply 100M genesis + inflation) — catatan: max supply 100M adalah genesis supply, inflation menambah supply di atas 100M (HIGH) [Injective Docs Tokenomics, https://docs.injective.network/learn/tokenomics/; Injective GitHub Mint, https://github.com/InjectiveLabs/injective-core/tree/master/x/mint]
+Burn Mechanism: Auction module (x/auction) membeli INJ dari pasar menggunakan surplus fee (exchange fee, bridge fee, dll.) dan mem-burn-nya; fee auction, surplus auction, collateral auction
+Buyback: Surplus auction otomatis membeli INJ dari market menggunakan accumulated fees (stablecoin/quote asset) lalu burn; berjalan kontinu
+Supply Reduction: Burn via auction (deflationary pressure); net inflation = inflation - burn rate; target long-term net deflationary jika fee revenue tinggi
+Status: Live (inflation sejak mainnet; auction/burn sejak mainnet)
+Sources: https://docs.injective.network/learn/tokenomics/; https://github.com/InjectiveLabs/injective-core/tree/master/x/mint; https://github.com/InjectiveLabs/injective-core/tree/master/x/auction; https://github.com/InjectiveLabs/injective-core/tree/master/x/fees; https://docs.injective.network/develop/modules/auction/
+
+## Holder Distribution
+
+Top Holder Concentration: Top 100 addresses memegang ~65-75% supply (estimasi per explorer; termasuk validator, exchange, foundation, vesting contracts) (MEDIUM) [Injective Explorer Rich List, https://explorer.injective.network/accounts; CoinGecko Holders, https://www.coingecko.com/en/coins/injective#holders]
+Foundation Holding: ~14,4% (14.4M INJ) di alamat foundation/vesting; sebagian masih vesting hingga 2025 (HIGH) [Injective Docs Tokenomics, https://docs.injective.network/learn/tokenomics/; Injective Explorer Foundation Address, https://explorer.injective.network/account/inj1...]
+Investor Holding: ~37,6% (37.6M INJ) awal; sebagian besar vested (seed/private cliff 12m + 24m vesting selesai 2022); Binance Launchpad 3% fully unlocked TGE (HIGH) [Injective Docs Tokenomics, https://docs.injective.network/learn/tokenomics/; Binance Launchpad, https://www.binance.com/en/blog/421499824684901170/Injective-Protocol-INJ-Token-Sale-on-Binance-Launchpad]
+Treasury Holding: ~14% (14M INJ) di community pool / treasury module; dikelola via governance spend proposal (HIGH) [Injective Docs Tokenomics, https://docs.injective.network/learn/tokenomics/; Injective Hub Governance, https://hub.injective.network/governance]
+Community Holding: ~9% (9M INJ) community incentives + ecosystem 10% (10M INJ) + circulating dari unlock vesting; estimasi ~30-40% supply di tangan retail/komunitas per Nov 2024 (MEDIUM) [Injective Explorer Rich List, https://explorer.injective.network/accounts; CoinGecko, https://www.coingecko.com/en/coins/injective#holders]
+Whale Concentration: Top 10 non-exchange/non-contract addresses ~25-30% supply (estimasi); termasuk early investor, foundation, team vesting contracts (MEDIUM) [Injective Explorer Rich List, https://explorer.injective.network/accounts]
+Sources: https://explorer.injective.network/accounts; https://www.coingecko.com/en/coins/injective#holders; https://docs.injective.network/learn/tokenomics/; https://hub.injective.network/governance; https://www.binance.com/en/blog/421499824684901170/Injective-Protocol-INJ-Token-Sale-on-Binance-Launchpad
+
+## Major Token Events
+
+Date: 2020-10
+Event: TGE / Binance Launchpad IEO
+Description: Public sale 30M INJ (3% supply) di $0.10/INJ, raise $3M; ERC-20 token di Ethereum; immediate unlock untuk pembeli IEO
+Status: Completed
+Related Historical Event ID: EV-006
+Sources: https://www.binance.com/en/blog/421499824684901170/Injective-Protocol-INJ-Token-Sale-on-Binance-Launchpad; https://blog.injective.com/injective-protocol-inj-token-sale-on-binance-launchpad/
+
+Date: 2021-11-16
+Event: Mainnet Launch & Native Token Swap
+Description: Injective Chain mainnet live; ERC-20 INJ dapat di-bridge ke native INJ via Peggy Bridge; native staking, governance, exchange fees dimulai
+Status: Completed
+Related Historical Event ID: EV-007
+Sources: https://blog.injective.com/injective-mainnet-launch/; https://docs.injective.network/learn/bridge/
+
+Date: 2022-03
+Event: First Community Pool Spend Proposal Executed
+Description: Governance proposal untuk menggunakan community pool funds (INJ) untuk ecosystem grants/liquidity incentives pertama kali dieksekusi
+Status: Completed
+Related Historical Event ID: EV-022 (upgrade v1.1 period)
+Sources: https://hub.injective.network/governance; https://explorer.injective.network/gov
+
+Date: 2022-08
+Event: CosmWasm Enable Upgrade (v1.2)
+Description: Upgrade v1.2 mengaktifkan x/wasm module; INJ digunakan sebagai gas untuk WASM contract execution; baru utility untuk smart contract deployment/call
+Status: Completed
+Related Historical Event ID: EV-022
+Sources: https://blog.injective.com/injective-cosmwasm-launch/; https://hub.injective.network/governance
+
+Date: 2022-11
+Event: Injective Ecosystem Fund Launch
+Description: Dana ekosistem 10M INJ (ekosistem allocation) + kontribusi VC untuk grants, liquidity incentives, developer rewards; INJ digunakan sebagai incentive token
+Status: Ongoing
+Related Historical Event ID: EV-014
+Sources: https://blog.injective.com/injective-ecosystem-fund/; https://docs.injective.network/ecosystem/
+
+Date: 2023-02
+Event: v2.0 Upgrade — IBC-Go v5, Performance, Gas Optimization
+Description: Major upgrade mengurangi gas fee transaksi (termasuk exchange order), meningkatkan throughput; mempengaruhi fee economics INJ
+Status: Completed
+Related Historical Event ID: EV-022
+Sources: https://blog.injective.com/injective-v2-0-upgrade/; https://hub.injective.network/governance
+
+Date: 2023-07
+Event: Interchain Accounts (ICA) Enable (v2.1)
+Description: ICA memungkinkan INJ di-chaining untuk cross-chain account control; memperluas utility INJ di ekosistem IBC
+Status: Completed
+Related Historical Event ID: EV-022
+Sources: https://blog.injective.com/interchain-accounts/; https://hub.injective.network/governance
+
+Date: 2023-11
+Event: v2.2 Upgrade — Wasmd 0.32, CW1155, Exchange Module v2
+Description: Upgrade exchange module v2 (order type baru, gas reduction), CW1155 multi-token support; mempengaruhi INJ utility di trading dan NFT
+Status: Completed
+Related Historical Event ID: EV-022
+Sources: https://blog.injective.com/injective-v2-2-upgrade/; https://hub.injective.network/governance
+
+Date: 2024 (ongoing)
+Event: CometBFT Migration Preparation
+Description: Persiapan migrasi dari Tendermint ke CometBFT (fork); mungkin memerlukan software upgrade proposal; INJ utility tidak berubah tapi consensus layer berubah
+Status: Planned / In Progress
+Related Historical Event ID: (belum ada EV tercatat)
+Sources: https://blog.injective.com/; https://github.com/cometbft/cometbft
+Sources: https://www.binance.com/en/blog/421499824684901170/Injective-Protocol-INJ-Token-Sale-on-Binance-Launchpad; https://blog.injective.com/injective-mainnet-launch/; https://hub.injective.network/governance; https://blog.injective.com/injective-cosmwasm-launch/; https://blog.injective.com/injective-ecosystem-fund/; https://blog.injective.com/injective-v2-0-upgrade/; https://blog.injective.com/interchain-accounts/; https://blog.injective.com/injective-v2-2-upgrade/; https://github.com/cometbft/cometbft
+
+## Official Token Resources
+
+Official Documentation: https://docs.injective.network/learn/tokenomics/
+Whitepaper: https://injective.com/whitepaper.pdf
+Governance: https://hub.injective.network/governance
+Explorer (Mainnet): https://explorer.injective.network/
+Explorer (Testnet): https://testnet.explorer.injective.network/
+Contract (ERC-20 Ethereum): https://etherscan.io/token/0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30
+Contract (Native): Native denom "inj" pada Injective Chain (tidak ada contract address EVM-style)
+GitHub (Core): https://github.com/InjectiveLabs/injective-core
+GitHub (Tokenomics/Modules): https://github.com/InjectiveLabs/injective-core/tree/master/x/mint; https://github.com/InjectiveLabs/injective-core/tree/master/x/auction; https://github.com/InjectiveLabs/injective-core/tree/master/x/gov
+Dashboard (Staking): https://hub.injective.network/staking
+Dashboard (Governance): https://hub.injective.network/governance
+Dashboard (Bridge): https://bridge.injective.network/
+CoinGecko: https://www.coingecko.com/en/coins/injective
+Messari: https://messari.io/asset/injective
+Token Terminal: https://tokenterminal.com/terminal/projects/injective
+DefiLlama: https://defillama.com/chain/Injective
+
+## RINGKASAN
+
+Status: Live
+Supply Type: Inflationary (staking rewards) dengan deflationary mechanism (auction burn)
+Total Supply: 100.000.000 INJ (genesis) + inflation ongoing
+Distribution Categories: Community 9%, Team 10%, Investors 37.6%, Foundation 14.4%, Treasury 14%, Ecosystem 10%, Advisors 5%
+Utility Count: 10 (Governance, Gas, Staking, Validator Security, Exchange Fee Payment, Staking Rewards, Collateral, Liquidity Incentive, Bridge Fee, Auction/Burn)
+Governance: On-chain (Cosmos SDK x/gov), 1 INJ = 1 vote, quorum 33.4%, threshold 50%
+Major Token Events: 9 events (TGE 2020, Mainnet 2021, CosmWasm 2022, Ecosystem Fund 2022, v2.0 2023, ICA 2023, v2.2 2023, CometBFT prep 2024, ongoing governance spends)
+
+## Open Threads
+
+- Persentase circulating supply yang pasti per November 2024 — CoinGecko menunjukkan ~97.7M tapi explorer mungkin berbeda; perlu cross-check on-chain supply vs vesting unlock schedule
+- Detail alamat vesting contract untuk setiap kategori (team, foundation, treasury, ecosystem, advisors) — tidak dipublikasikan dalam format terstruktur di docs; perlu query on-chain atau minta ke tim
+- Status ERC-20 INJ contract (0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30) — apakah masih aktif digunakan atau sudah deprecated? Bridge volume ERC-20 ↔ native tidak dipublikasikan berkala
+- Net inflation rate aktual (inflasi - burn) per bulan/tahun — tidak ada dashboard real-time; hanya estimasi dari parameter governance
+- Treasury/community pool balance real-time INJ — tidak ada halaman transparansi treasury publik; hanya query via governance module on-chain
+- Ecosystem Fund (EV-014) legal structure dan alamat multisig/vesting — apakah terpisah dari Injective Labs Inc. treasury? Tidak diverifikasi
+- Binance Launchpad IEO exact date unlock schedule — whitepaper/docs menyehal "immediate" tapi apakah ada lockup singkat untuk compliance? Perlu konfirmasi
+- Validator commission rate distribution dan efek pada staking yield INJ — tidak diagregasi publik; perlu query per validator
+- Auction module burn volume historis (bulanan) — tidak dipublikasikan; hanya on-chain query via indexer
+- Proposal untuk mengubah inflation parameter (target bonded ratio, max inflation) — apakah pernah diajukan/diekssekusi? Perlu cek governance history
+- CometBFT migration timeline dan apakah memerlukan token swap/upgrade — belum ada announcement resmi detail
+- Cross-chain INJ representation (IBC denom di Osmosis, Celestia, Neutron, dll.) — tidak terdokumentasi di tokenomics resmi
+- INJ sebagai gas di CosmWasm contract — apakah ada discount/premium vs native module? Tidak terdokumentasi
+- Insurance Fund (x/insurance) balance INJ dan deployment history — tidak dipublikasikan
+- Fee switch status: apakah protocol fee (exchange fee) sudah dialokasikan ke buyback/burn sepenuhnya atau masih parameter governance? Perlu cek x/auction parameter live

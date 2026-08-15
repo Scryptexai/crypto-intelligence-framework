@@ -1,0 +1,153 @@
+PROJECT: Injective
+
+## Funding History
+
+### Funding Round: Seed / Private Sale
+Date: 2019
+Amount: Tidak diungkap
+Currency: USD
+Lead Investor: Pantera Capital
+Participating Investors: Tidak diungkap (investor strategis lainnya)
+Valuation: Tidak diungkap
+Funding Type: Seed / Private
+Status: Completed
+Sources: https://www.crunchbase.com/organization/injective-labs; https://blog.injective.com/injective-ecosystem-fund/
+
+### Funding Round: Binance Launchpad IEO (Public Sale)
+Date: 2020-10
+Amount: $3.000.000
+Currency: USD
+Lead Investor: Binance (Launchpad platform)
+Participating Investors: Komunitas publik via Binance Launchpad
+Valuation: Tidak diungkap (price $0.10 per INJ, 3% supply = 30M INJ)
+Funding Type: Public Sale / Launchpad
+Status: Completed
+Sources: https://www.binance.com/en/blog/421499824684901170/Injective-Protocol-INJ-Token-Sale-on-Binance-Launchpad; https://blog.injective.com/injective-protocol-inj-token-sale-on-binance-launchpad/
+
+### Funding Round: Injective Ecosystem Fund Launch
+Date: 2022-11
+Amount: Tidak diungkap (pool dana gabungan mitra VC)
+Currency: USD
+Lead Investor: Injective Labs Inc. (manajemen dana)
+Participating Investors: Binance, Pantera Capital, Jump Crypto, Delphi Digital, Mark Cuban
+Valuation: Tidak diungkap
+Funding Type: Grant / Ecosystem Fund
+Status: Ongoing
+Sources: https://blog.injective.com/injective-ecosystem-fund/; https://docs.injective.network/ecosystem/
+
+## Treasury
+
+Current Treasury Size: Tidak diungkap
+Treasury Composition: Tidak diungkap
+Stablecoin Holdings: Tidak diungkap
+Native Token Holdings: Tidak diungkap
+Other Assets: Tidak diungkap
+Treasury Custodian: Tidak diungkap (Injective Labs Inc. sebagai entitas pengembang; tidak ada foundation/DAO treasury terpisah yang diverifikasi publik)
+Sources: https://blog.injective.com/; https://docs.injective.network/; https://www.crunchbase.com/organization/injective-labs
+
+## Revenue Model
+
+### Revenue Stream: Exchange Fees (Trading Fees)
+Status: Live
+Description: Fee transaksi pada Injective Exchange (on-chain orderbook) untuk spot dan derivatif; sebagian dialokasikan ke Insurance Fund
+Sources: https://docs.injective.network/learn/exchange/; https://github.com/InjectiveLabs/injective-core/tree/master/x/exchange; https://github.com/InjectiveLabs/injective-core/tree/master/x/insurance
+
+### Revenue Stream: Bridge Fees (Peggy Bridge & IBC Relayer Fees)
+Status: Live
+Description: Fee untuk transfer aset via Peggy Bridge (Ethereum ↔ Injective) dan fee relayer IBC; dibayar oleh pengguna ke validator/relayer
+Sources: https://docs.injective.network/learn/bridge/; https://github.com/InjectiveLabs/injective-core/tree/master/x/peggy; https://github.com/InjectiveLabs/relayer
+
+### Revenue Stream: Staking Rewards (Inflation + Fee Distribution)
+Status: Live
+Description: Validator menerima block reward (inflasi INJ) dan komisi dari delegator; protokol tidak langsung menerima pendapatan ini
+Sources: https://docs.injective.network/learn/staking/; https://hub.injective.network/staking
+
+### Revenue Stream: Insurance Fund Allocation
+Status: Live
+Description: Bagian dari exchange fees dialokasikan ke Insurance Fund (x/insurance module) untuk melindungi trader dari likuidasi kaskade
+Sources: https://github.com/InjectiveLabs/injective-core/tree/master/x/insurance; https://docs.injective.network/develop/modules/insurance/
+
+### Revenue Stream: Auction Module Revenue (Fee Auction / Buyback)
+Status: Live
+Description: Mekanisme lelang untuk fee market, buyback INJ, dan likuidasi derivatif via x/auction module
+Sources: https://github.com/InjectiveLabs/injective-core/tree/master/x/auction; https://docs.injective.network/develop/modules/auction/
+
+## Revenue History
+
+Tidak diungkap.
+Sources: https://blog.injective.com/; https://docs.injective.network/; https://www.coingecko.com/en/coins/injective
+
+## Fundraising Mechanism
+
+- VC Funding: Seed/Private round 2019 (Pantera Capital, investor strategis lain)
+- Public Sale: Binance Launchpad IEO Oktober 2020 ($3M raise)
+- Grant / Ecosystem Fund: Injective Ecosystem Fund (diluncurkan November 2022, dikelola Injective Labs dengan mitra VC)
+- Protocol Revenue: Exchange fees, bridge fees, auction revenue (live sejak mainnet November 2021)
+- Bootstrapping: Pengembangan awal didanai oleh tim pendiri sebelum ronde seed
+Sources: https://www.crunchbase.com/organization/injective-labs; https://www.binance.com/en/blog/421499824684901170/Injective-Protocol-INJ-Token-Sale-on-Binance-Launchpad; https://blog.injective.com/injective-ecosystem-fund/; https://docs.injective.network/learn/exchange/
+
+## Token Sale
+
+### Sale: Binance Launchpad IEO (Public Sale)
+Date: 2020-10
+Type: Public Sale / Launchpad
+Status: Completed
+Amount Raised: $3.000.000
+Token Price: $0.10 per INJ
+Allocation: 3% total supply (30.000.000 INJ)
+Vesting: Immediate unlock (no vesting untuk public sale Launchpad)
+Sources: https://www.binance.com/en/blog/421499824684901170/Injective-Protocol-INJ-Token-Sale-on-Binance-Launchpad; https://blog.injective.com/injective-protocol-inj-token-sale-on-binance-launchpad/; https://www.coingecko.com/en/coins/injective#info
+
+Catatan: Private sale / seed round 2019 detail alokasi dan vesting tidak diungkap publik; tidak termasuk di sini sesuai aturan fase (tokenomics/vesting = Phase 6).
+
+## Financial Dependencies
+
+- Binance: Launchpad IEO distributor, investor utama, CEX listing partner, liquidity provider
+- Pantera Capital: Seed investor, ekosistem fund contributor
+- Jump Crypto: Investor, market maker, ekosistem fund contributor
+- Mark Cuban: Individual investor, ekosistem fund contributor
+- Delphi Digital: Investor, research partner, ekosistem fund contributor
+- Injective Ecosystem Fund: Grant program untuk proyek ekosistem (dana dari Injective Labs + mitra VC)
+- Protocol Revenue: Exchange fees, bridge fees, auction fees (mandiri sejak mainnet live)
+Sources: https://blog.injective.com/injective-ecosystem-fund/; https://www.crunchbase.com/organization/injective-labs; https://www.binance.com/en/blog/421499824684901170/Injective-Protocol-INJ-Token-Sale-on-Binance-Launchpad; https://docs.injective.network/learn/exchange/
+
+## Financial Risk
+
+Tidak ada risiko finansial yang dikonfirmasi via laporan resmi, governance proposal, audit, disclosure, atau regulator yang dapat diverifikasi publik.
+Catatan: Injective Labs Inc. adalah perusahaan swasta (BVI) — tidak wajib mempublikasikan laporan keuangan, treasury disclosure, atau risk filing.
+Sources: https://blog.injective.com/; https://docs.injective.network/; https://hub.injective.network/governance; https://www.crunchbase.com/organization/injective-labs
+
+## Official Financial Resources
+
+- Official Blog: https://blog.injective.com/
+- Transparency Report: Tidak tersedia (tidak dipublikasikan)
+- Treasury Dashboard: Tidak tersedia
+- Governance Portal: https://hub.injective.network/governance
+- Messari: https://messari.io/asset/injective
+- Token Terminal: https://tokenterminal.com/terminal/projects/injective
+- DefiLlama: https://defillama.com/chain/Injective
+- CryptoRank: https://cryptorank.io/price/injective-protocol
+- Whitepaper: https://injective.com/whitepaper.pdf (atau https://docs.injective.network/whitepaper/)
+- CoinGecko: https://www.coingecko.com/en/coins/injective
+- Crunchbase: https://www.crunchbase.com/organization/injective-labs
+
+## RINGKASAN
+
+Total Funding Raised: $3.000.000 (hanya dari Binance Launchpad IEO yang terverifikasi publik; seed round 2019 dan ecosystem fund size tidak diungkap)
+Funding Rounds: 3 (Seed/Private 2019, Binance Launchpad IEO 2020-10, Ecosystem Fund 2022-11)
+Treasury Status: Tidak diungkap (perusahaan swasta, tidak ada dashboard treasury publik)
+Revenue Sources: Exchange fees, Bridge fees (Peggy/IBC), Auction module fees, Insurance fund allocation (semua live sejak mainnet 2021-11)
+Revenue Availability: Tidak diungkap (tidak ada laporan revenue bulanan/tahunan publik)
+
+## Open Threads
+
+- Jumlah dana seed/private round 2019 yang pasti — Crunchbase tidak mencantumkan angka; Pantera portfolio tidak mengungkap nominal
+- Ukuran total Injective Ecosystem Fund — blog mengumumkan peluncuran dengan mitra VC tapi tidak mencantumkan total committed capital dalam USD
+- Treasury composition Injective Labs Inc. — entitas swasta BVI, tidak ada disclosure wajib; tidak ada foundation/DAO treasury terpisah terverifikasi
+- Revenue numbers historis (bulanan/tahunan) — tidak dipublikasikan; Token Terminal/DefiLlama mungkin memiliki estimasi protocol revenue tapi bukan sumber primer
+- Valuasi pada setiap ronde funding — tidak diumumkan publik untuk seed maupun IEO (IEO price $0.10 �� valuation perusahaan)
+- Status financial audit / financial statements — tidak tersedia untuk perusahaan swasta BVI
+- Injective Ecosystem Fund legal structure — apakah entitas terpisah (foundation/DAO LLC) atau hanya internal accounting di Injective Labs Inc.?
+- Breakdown exchange fee allocation (protocol vs insurance fund vs validator vs relayer) — parameter governance tapi angka historis tidak diagregasi publik
+- Market maker agreement dengan Jump Crypto — detail financial terms (revenue share, liquidity commitment) tidak publik
+- Apakah ada debt facility / convertible note / SAFE selain equity rounds — tidak teridentifikasi di sumber publik

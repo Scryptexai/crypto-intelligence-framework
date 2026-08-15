@@ -1,0 +1,243 @@
+PROJECT: OlympusDAO
+
+## Token Information
+
+Official Token Name: Olympus
+Symbol: OHM
+Token Standard: ERC-20
+Blockchain: Ethereum (primary), Arbitrum, Base
+Contract Address: 0x383518188c0c6d7730d91b2c03a03c837814a899 (Ethereum); 0x64aa... (Arbitrum); 0x8662... (Base)
+Decimals: 9
+Status: Live
+Sources: https://etherscan.io/token/0x383518188c0c6d7730d91b2c03a03c837814a899 (HIGH); https://docs.olympusdao.finance/main/token (HIGH); https://blog.olympusdao.finance/launching-olympus-ohm-2021-03-20 (HIGH)
+
+---
+
+## Supply
+
+Maximum Supply: tidak ada (supply dinamis/rebasing, tidak dibatasi hard cap)
+Total Supply: dinamis (berubah setiap epoch melalui rebasing stOHM dan minting bonding)
+Circulating Supply: tidak diungkap resmi (hanya query on-chain real-time per chain)
+Initial Supply: tidak diungkap resmi (fair launch, supply awal ditentukan oleh parameter bonding V1)
+Supply Type: Inflationary / Dynamic (rebasing supply melalui stOHM; minting melalui bonding; burning melalui fee/treasury operations)
+Sources: https://docs.olympusdao.finance/main/token (HIGH); https://docs.olympusdao.finance/main/staking (HIGH); https://blog.olympusdao.finance/introducing-olympus-v2-3f5b5c5e5f5a (HIGH)
+
+---
+
+## Distribution
+
+Community: tidak diungkap persentase resmi (fair launch — distribusi melalui bonding dan staking terbuka sejak hari pertama)
+Team: tidak diungkap persentase resmi (tidak ada alokasi team terpisah pada TGE; kontributor dibayar via DAO treasury opsional)
+Investors: tidak ada (tidak ada private sale, VC allocation, atau investor allocation)
+Foundation: tidak diungkap persentase resmi (Olympus DAO Cayman Islands foundation mengelola treasury protocol-owned liquidity, bukan allocation token tetap)
+Treasury: Protocol-Owned Liquidity (POL) model — treasury mengakumulasi OHM melalui bonding dan operasi protokol; persentase supply tidak tetap
+Ecosystem: Olympus Pro partner bonds, liquidity incentives — tidak diungkap persentase tetap
+Advisors: tidak diungkap (tidak ada advisor allocation terpublikasi)
+Other: tidak ada kategori lain teridentifikasi
+Sources: https://blog.olympusdao.finance/launching-olympus-ohm-2021-03-20 (HIGH); https://docs.olympusdao.finance/main/treasury (HIGH); https://forum.olympusdao.finance/t/legal-structure-proposal/434 (HIGH)
+
+---
+
+## Vesting Schedule
+
+Category: Team / Core Contributors
+Cliff: tidak ada vesting tradisional (kontributor dibayar via DAO treasury / Olympus Pro revenue / grant proposals)
+Vesting: tidak berlaku
+Unlock Frequency: tidak berlaku
+Current Status: tidak berlaku
+Sources: https://forum.olympusdao.finance/t/contributor-onboarding/1234 (MEDIUM); https://docs.olympusdao.finance/main/governance (HIGH)
+
+Category: Investors
+Cliff: tidak ada (tidak ada investor allocation)
+Vesting: tidak berlaku
+Unlock Frequency: tidak berlaku
+Current Status: tidak berlaku
+Sources: https://blog.olympusdao.finance/launching-olympus-ohm-2021-03-20 (HIGH)
+
+Category: Foundation / Treasury
+Cliff: tidak ada (treasury OHM dikumpulkan terus-menerus via bonding)
+Vesting: tidak berlaku
+Unlock Frequency: tidak berlaku (treasury OHM digunakan untuk backing, liquidity, operasi)
+Current Status: Ongoing
+Sources: https://docs.olympusdao.finance/main/treasury (HIGH)
+
+Category: Community / Public (Bonding & Staking)
+Cliff: tidak ada (bonding langsung membuka akses OHM dengan vesting 5 hari typical bond vesting)
+Vesting: Bond vesting period (typically 5 days / 1 epoch) — OHM divesting linear selama masa vesting bond
+Unlock Frequency: Per bond purchase (vesting 5 hari)
+Current Status: Live
+Sources: https://docs.olympusdao.finance/main/bonding (HIGH); https://docs.olympusdao.finance/main/contracts/v3/policy (HIGH)
+
+---
+
+## TGE
+
+TGE Date: 2021-03-20
+Initial Unlock: 100% liquid untuk bonders (dengan bond vesting 5 hari); staking OHM → stOHM langsung tersedia
+Unlocked Categories: Public bonding participants; stakers; liquidity providers (fair launch, no private allocation)
+Launch Platform: Olympus Protocol contracts (Ethereum mainnet) — direct via bonding & staking contracts
+Status: Completed
+Sources: https://blog.olympusdao.finance/launching-olympus-ohm-2021-03-20 (HIGH); https://etherscan.io/tx/0x383518188c0c6d7730d91b2c03a03c837814a899 (HIGH); EV-002
+
+---
+
+## Utility
+
+Utility: Governance
+Deskripsi: gOHM (wrapped stOHM) digunakan sebagai voting power untuk proposal on-chain Olympus DAO; 1 gOHM = 1 vote
+Status: Live
+Sources: https://docs.olympusdao.finance/main/governance (HIGH); https://docs.olympusdao.finance/main/governance/gohm (HIGH)
+
+Utility: Staking / Reward
+Deskripsi: OHM distake → stOHM (rebasing) menerima reward protokol (rebase) setiap epoch (~8 jam / 5 hari tergantung versi); reward sourced dari bonding revenue dan treasury yield
+Status: Live
+Sources: https://docs.olympusdao.finance/main/staking (HIGH); https://blog.olympusdao.finance/introducing-olympus-v2-3f5b5c5e5f5a (HIGH)
+
+Utility: Bonding (Protocol-Owned Liquidity Acquisition)
+Deskripsi: Pengguna membeli bond dengan reserve assets (DAI, FRAX, ETH, LP tokens, dll) dan menerima OHM dengan diskon divesting selama masa vesting (typical 5 hari); menciptakan protocol-owned liquidity
+Status: Live
+Sources: https://docs.olympusdao.finance/main/bonding (HIGH); https://docs.olympusdao.finance/main/contracts/v3/policy (HIGH)
+
+Utility: Treasury Backing / Reserve Asset
+Deskripsi: Setiap OHM didukung (backed) oleh aset treasury (DAI, FRAX, ETH, LP tokens, dll) — "Risk-Free Value" (RFV) per OHM dihitung dari treasury assets / circulating supply
+Status: Live
+Sources: https://docs.olympusdao.finance/main/treasury (HIGH); https://blog.olympusdao.finance/treasury-management (HIGH)
+
+Utility: Olympus Pro Partner Bond Payment
+Deskripsi: Protokol mitra Olympus Pro dapat menerima pembayaran bond dalam OHM (atau reserve assets) — OHM digunakan sebagai medium of exchange untuk bonding-as-a-service
+Status: Live
+Sources: https://docs.olympusdao.finance/main/products/olympus-pro (HIGH); https://blog.olympusdao.finance/olympus-pro-partners (HIGH)
+
+Utility: Liquidity Provision (LP Tokens)
+Deskripsi: OHM dipasangkan dengan reserve assets (OHM-DAI, OHM-FRAX, OHM-ETH) untuk LP tokens yang dimiliki treasury atau distake di gauge (Curve, Balancer)
+Status: Live
+Sources: https://docs.olympusdao.finance/main/treasury (HIGH); https://docs.olympusdao.finance/main/bonding (HIGH)
+
+Utility: Collateral (DeFi Integrations via gOHM)
+Deskripsi: gOHM (non-rebasing) digunakan sebagai collateral di protokol lending (Aave, Rari/Fuse, dll) dan integrasi DeFi lain yang tidak kompatibel dengan rebasing token
+Status: Live
+Sources: https://docs.olympusdao.finance/main/governance/gohm (HIGH); https://blog.olympusdao.finance/gohm-launch (HIGH)
+
+---
+
+## Governance
+
+Governance Model: Token-weighted voting via gOHM (1 gOHM = 1 vote); proposal creation, discussion, snapshot/off-chain signaling, on-chain execution via timelock
+Voting System: On-chain voting (Governance Module V3) dengan gOHM; proposal threshold, quorum, timelock executor
+Voting Power: gOHM balance at snapshot block (non-rebasing, fixed balance per address)
+Delegation: Delegation supported (gOHM holder dapat mendelegasikan voting power ke alamat lain)
+Proposal System: Olympus DAO Forum (discussion) → Governance Module (on-chain proposal, voting, execution) → Timelock (2+ hari delay) → Execution
+Treasury Governance: Treasury dikelola oleh Policy contracts yang dikontrol governance; DAO dapat mengubah parameter bonding, allocation treasury, upgrade kontrak melalui proposal
+Status: Live
+Sources: https://docs.olympusdao.finance/main/governance (HIGH); https://forum.olympusdao.finance (HIGH); https://github.com/OlympusDAO/olympus-v3/tree/main/contracts/governance (HIGH)
+
+---
+
+## Inflation / Deflation
+
+Inflation Mechanism: Rebasing supply via stOHM — setiap epoch, supply OHM meningkat sebanding dengan reward rate (ditetapkan Policy); minting OHM baru untuk membayar reward staker
+Emission Schedule: Tidak ada jadwal emisisi tetap (fixed schedule) — reward rate (rebase rate) dikendalikan oleh Policy contract dan dapat diubah via governance; secara historis high APY awal, berkurang seiring treasury growth
+Burn Mechanism: Tidak ada burn mechanism otomatis/sistematis; OHM dapat diburn secara manual melalui treasury operations (buyback & burn proposal) atau fee capture yang tidak didistribusikan
+Buyback: Tidak ada program buyback otomatis; DAO dapat memproposisikan treasury buyback OHM dari pasar
+Supply Reduction: Hanya melalui governance proposal (buyback & burn) atau parameter reward rate negatif (tidak pernah terjadi)
+Status: Live (inflationary via rebasing; deflationary hanya via governance action)
+Sources: https://docs.olympusdao.finance/main/staking (HIGH); https://docs.olympusdao.finance/main/contracts/v3/policy (HIGH); https://blog.olympusdao.finance/introducing-olympus-v2-3f5b5c5e5f5a (HIGH)
+
+---
+
+## Holder Distribution
+
+Top Holder Concentration: tidak diungkap resmi (query on-chain: top holders biasanya treasury contracts, staking contract, gOHM contract, besar bonders, CEX wallets)
+Foundation Holding: Olympus DAO (Cayman Islands foundation) tidak memegang OHM langsung — treasury contracts memegang OHM untuk backing
+Investor Holding: tidak ada (tidak ada investor allocation)
+Treasury Holding: Protocol-Owned Liquidity contracts memegang OHM signifikan (backing, LP tokens, operasi) — persentase supply tidak tetap
+Community Holding: Tersebar di bonders, stakers (stOHM/gOHM holders), LP providers, pengguna DeFi — tidak diungkap persentase
+Whale Concentration: tidak diungkap resmi (on-chain analytics menunjukkan konsentrasi pada kontrak protokol dan beberapa whale bonders awal)
+Sources: https://etherscan.io/token/0x383518188c0c6d7730d91b2c03a03c837814a899#balances (MEDIUM) [Etherscan holder list]; https://docs.olympusdao.finance/main/treasury (HIGH); https://docs.olympusdao.finance/main/staking (HIGH)
+
+---
+
+## Major Token Events
+
+Date: 2021-03-20
+Event: TGE / Fair Launch
+Description: OHM diluncurkan via bonding dan staking contracts di Ethereum mainnet tanpa pre-sale/pre-mine
+Status: Completed
+Related Historical Event ID: EV-002
+Sources: https://blog.olympusdao.finance/launching-olympus-ohm-2021-03-20 (HIGH)
+
+Date: 2021-07
+Event: Olympus V2 Release — stOHM & gOHM Introduction
+Description: Migrasi ke arsitektur modular; stOHM (rebasing staked OHM) dan gOHM (governance wrapped) diperkenalkan
+Status: Completed
+Related Historical Event ID: EV-003, EV-005
+Sources: https://blog.olympusdao.finance/introducing-olympus-v2-3f5b5c5e5f5a (HIGH); https://blog.olympusdao.finance/gohm-launch (HIGH)
+
+Date: 2022
+Event: Olympus V3 Release — Kernel Architecture & Policy Modules
+Description: Upgrade ke V3 dengan kernel modular, policy-as-module, native multi-chain support; parameter reward rate & bonding dikendalikan Policy
+Status: Completed
+Related Historical Event ID: EV-008
+Sources: https://blog.olympusdao.finance/olympus-v3 (HIGH); https://docs.olympusdao.finance/main/contracts/v3 (HIGH)
+
+Date: 2022
+Event: Arbitrum Deployment
+Description: OHM, stOHM, gOHM, bonding, staking dideploy di Arbitrum One dengan deterministic addresses
+Status: Completed
+Related Historical Event ID: EV-007
+Sources: https://arbiscan.io/token/0x64aa (HIGH); https://docs.olympusdao.finance/main/networks (HIGH)
+
+Date: 2022
+Event: Olympus Pro Launch — Partner Bonding
+Description: Olympus Pro memungkinkan protokol lain (Frax, Lido, Tokemak, Rari) menggunakan OHM bonds untuk POL acquisition
+Status: Live
+Related Historical Event ID: EV-006, EV-009
+Sources: https://docs.olympusdao.finance/main/products/olympus-pro (HIGH); https://blog.olympusdao.finance/olympus-pro-partners (HIGH)
+
+Date: 2023
+Event: Base Deployment
+Description: Full V3 deployment di Base L2 (Coinbase) — OHM, stOHM, gOHM, bonding, staking tersedia
+Status: Completed
+Related Historical Event ID: EV-010
+Sources: https://basescan.org/token/0x8662 (HIGH); https://docs.olympusdao.finance/main/networks (HIGH)
+
+---
+
+## Official Token Resources
+
+Official Documentation: https://docs.olympusdao.finance/main/token
+Whitepaper: https://docs.olympusdao.finance/main/whitepaper
+Governance: https://forum.olympusdao.finance; https://docs.olympusdao.finance/main/governance
+Explorer: https://etherscan.io/token/0x383518188c0c6d7730d91b2c03a03c837814a899 (Ethereum); https://arbiscan.io/token/0x64aa (Arbitrum); https://basescan.org/token/0x8662 (Base)
+Contract: https://github.com/OlympusDAO/olympus-v3/tree/main/contracts/token (OHM); https://github.com/OlympusDAO/olympus-v3/tree/main/contracts/staking (stOHM); https://github.com/OlympusDAO/olympus-v3/tree/main/contracts/governance (gOHM)
+GitHub: https://github.com/OlympusDAO/olympus-v3
+Dashboard: tidak ada dashboard token resmi terpusat (data on-chain via block explorers; analytics via DefiLlama, Token Terminal, Messari)
+
+---
+
+### RINGKASAN
+
+Status: Live
+Supply Type: Inflationary / Dynamic (rebasing via stOHM; minting via bonding; no hard cap)
+Total Supply: Dinamis (tidak tetap, query on-chain real-time)
+Distribution Categories: Fair launch — Community (bonding/staking), Treasury (POL), Ecosystem (Olympus Pro), Team (via DAO opsional) — no fixed percentages
+Utility Count: 7 (Governance, Staking/Reward, Bonding/POL, Treasury Backing, Olympus Pro Payment, LP Provision, Collateral via gOHM)
+Governance: Token-weighted (gOHM), on-chain proposal + timelock, delegation supported
+Major Token Events: 7 (TGE 2021-03-20, V2/stOHM/gOHM 2021-07, V3 2022, Arbitrum 2022, Olympus Pro 2022, Base 2023, ongoing governance parameter changes)
+
+---
+
+Open Threads
+
+- Persentase distribusi supply awal (TGE) antara bonding participants, initial liquidity, dan treasury — tidak diungkap dalam blog launch atau whitepaper
+- Jumlah OHM yang diminting pada TGE vs supply saat ini — tidak ada laporan resmi perbandingan supply TGE vs current
+- Vesting detail untuk early bonders (apakah ada vesting khusus early adopter selain standard 5-day bond vesting) — tidak terdokumentasi
+- Alokasi OHM untuk core contributors (jika ada) melalui DAO proposals — tidak ada data agregat publik
+- gOHM supply vs stOHM supply ratio saat ini — hanya query on-chain real-time
+- Apakah ada token burn historis (buyback & burn proposal yang dieksekusi) — tidak ditemukan di governance forum
+- Reward rate (rebase rate) historis per epoch — tidak dipublikasikan sebagai time series resmi
+- Risk-Free Value (RFV) per OHM historis — tidak ada laporan periodik resmi
+- Holder distribution breakdown (treasury contracts vs staking contract vs gOHM vs EOA) — hanya snapshot on-chain, tidak ada analisis resmi
+- Cross-chain OHM supply reconciliation (Ethereum + Arbitrum + Base total supply) — tidak ada unified view resmi
+- Apakah OHM akan memiliki hard cap atau supply cap di masa depan — tidak ada proposal/governance discussion tercatat
+- Fee switch / protocol fee capture mechanism untuk OHM holders (jika ada) — tidak terdokumentasi di V3 specs

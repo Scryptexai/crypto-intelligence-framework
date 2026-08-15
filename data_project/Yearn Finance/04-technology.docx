@@ -1,0 +1,93 @@
+PROJECT: Yearn Finance
+
+
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance technical architecture smart contracts vaults strategies v1 v2 v3 GitHub",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance yVaults architecture controller strategy keeper fee structure",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance V3 vaults ERC-4626 tokenized strategies",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance smart contracts GitHub repository yearn/yearn-vaults yearn/yearn-sdk",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance execution environment EVM chains Ethereum Fantom Arbitrum Optimism Base",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance programming languages Solidity TypeScript Rust Vyper",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance development framework Hardhat Foundry Brownie testing",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance security model multisig timelock governance yTeams",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance audits Trail of Bits Certora PeckShield Quantstamp MixBytes reports",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance technical upgrades v1 v2 v3 vaults iron bank zap",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance current tech stack Docker Kubernetes The Graph Tenderly Alchemy",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance known technical limitations gas costs strategy risk",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance official documentation docs.yearn.finance developers GitHub",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance Keep3r Network oracle integration job automation",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance SDK API TypeScript JavaScript Python yearn-sdk",
+  "top_k": 10
+}

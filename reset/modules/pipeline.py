@@ -18,27 +18,46 @@ from .logs import log
 # dossier, no repo-wide reprocessing except build_json.py (fast, deterministic, and operating
 # on the full examples/CaseStudies/ roster by design).
 EXTRACT_SCRIPTS = ["extract_entities.py", "extract_decision_events.py", "extract_knowledge.py",
-                   "extract_behavior.py", "extract_qa.py", "extract_events.py"]
-# cif_patterns/cif_backtests/cif_decision_events are the OLD AirdropOS-style schema, not part
-# of the dedicated CIF Supabase project (uqtvjerhgvwoxiejvrli has only the 13
-# intelligence-workspace tables) -- excluded on purpose. "conflicts" is excluded too: nothing
-# in EXTRACT_SCRIPTS populates poc/conflicts.json automatically (tools/extract_conflicts.py is
-# hand-curated per project), so syncing it here would just re-push whatever is already in that
-# file rather than this project's actual conflicts.
-SYNC_TABLES = ("projects,entities,knowledge_items,evidence_items,events,"
-               "qa_dimensions,qa_phases,behavior_profiles")
+                   "extract_behavior.py", "extract_qa.py", "extract_events.py",
+                   "extract_airdrop.py"]
+
+# Nothing in EXTRACT_SCRIPTS populates poc/conflicts.json -- tools/extract_conflicts.py is
+# hand-curated per project -- so syncing that table here would re-push whatever the file
+# already holds rather than this project's actual conflicts.
+NO_AUTO_SYNC = ("conflicts",)
+
+# Derived from the sync script's own table list rather than restated, because a restated list
+# goes stale silently. It already did: this was a hardcoded string of 8 tables, and when the
+# five airdrop_* tables were added to tools/sync_supabase.py nothing here changed, so every
+# --auto-sync run printed "✅ synced to Supabase" while sending none of the Phase 12 data.
+# The log even names the tables it sent, and the omission still went unnoticed for a full
+# 13-project run. (The cif_* legacy tables belong to a different Supabase project and are in
+# LEGACY_TABLES, not TABLES, so they are excluded by construction.)
+import sync_supabase as _sync  # tools/ is on sys.path via config
+
+SYNC_TABLES = ",".join(t for t in _sync.TABLES if t not in NO_AUTO_SYNC)
 
 
 def promote_to_data_project(name: str, src_dir) -> None:
-    """Copies phases 1-10 (NOT phase 11 -- deliberately deferred) into data_project/<name>/.
-    Only called after validate.verify_10_phases() passes."""
+    """Copies the generated phases into data_project/<name>/.
+
+    Only called after validate.verify_10_phases() passes, and only from a non-commit run --
+    a --commit run already writes straight into data_project/, so there is nothing to move.
+
+    Phases 1-10 always. Phase 11 only when it holds real content: it is usually an empty
+    scaffold (deliberately deferred), and copying a 0-byte file over a real audit produced by
+    an earlier pass would silently destroy it.
+    """
     dest_dir = config.DATA_PROJECT_ROOT / name
     dest_dir.mkdir(parents=True, exist_ok=True)
-    for num, key in config.PHASES[:10]:
+    for num, key in config.PHASES:
         src = src_dir / f"{num:02d}-{key}.docx"
-        if src.exists():
-            (dest_dir / f"{num:02d}-{key}.docx").write_text(
-                src.read_text(encoding="utf-8"), encoding="utf-8")
+        if not src.exists():
+            continue
+        text = src.read_text(encoding="utf-8")
+        if num == 11 and len(text.strip()) < config.MIN_PHASE_CHARS:
+            continue
+        (dest_dir / f"{num:02d}-{key}.docx").write_text(text, encoding="utf-8")
 
 
 def _run(cmd: list) -> subprocess.CompletedProcess:
