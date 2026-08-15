@@ -72,3 +72,24 @@
 <hr><center>openresty</center>
 </body>
 </html>
+2026-08-15T00:04:52.293646+00:00	Berachain	phase 11-conflict	Berachain phase 11-conflict failed on every provider (gateway): HTTP 404: <html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+2026-08-15T00:07:10.414597+00:00	Uniswap	phase 12-airdrop	Uniswap phase 12-airdrop failed on every provider (gateway): HTTP 404: <html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+2026-08-15T00:09:12.351257+00:00	Blast	phase 12-airdrop	Blast phase 12-airdrop failed on every provider (gateway): HTTP 404: <html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
