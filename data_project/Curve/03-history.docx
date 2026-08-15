@@ -1,9 +1,0 @@
-PROJECT: Curve
-
-<tool_call>
-## search_web
-query: Curve Finance history timeline events mainnet launch whitepaper funding rounds token CRV launch governance DAO security incidents audits upgrades partnerships integrations
-max_results: 20
-recency_days: -1
-news_only: false
-safe_search: true

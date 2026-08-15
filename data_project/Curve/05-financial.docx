@@ -1,9 +1,0 @@
-PROJECT: Curve
-
-<tool_call>
-## search_web
-query: Curve Finance funding rounds investors venture capital seed series A amount valuation date
-max_results: 15
-recency_days: -1
-news_only: false
-safe_search: true
