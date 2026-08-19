@@ -1056,28 +1056,28 @@
         "date": null,
         "source": null,
         "evidence": null,
-        "raw": "Tidak berlaku (TGE 2024-11-29 native di Hyperliquid L1 tanpa single claim price; price discovery terjadi di market setelah bridge/CEX listing, data CoinGecko historical tidak diekstrak di Phase 1-11)"
+        "raw": "Tidak berlaku (native TGE 2024-11-29 di Hyperliquid L1 tanpa single claim price; price discovery terjadi di market setelah listing)"
       },
       "day30": {
-        "usd": null,
-        "date": null,
-        "source": null,
-        "evidence": null,
-        "raw": "Tidak ditemukan (data harga historis HYPE 2024-12-29 tidak tersedia di sumber Phase 1-11)"
+        "usd": 27.5,
+        "date": "2024-12-29",
+        "source": "KuCoin HYPE-USDT daily candle close, https://www.kucoin.com/trade/HYPE-USDT",
+        "evidence": "MEDIUM",
+        "raw": "27.50 USD (2024-12-29) [KuCoin HYPE-USDT daily candle close, https://www.kucoin.com/trade/HYPE-USDT] (MEDIUM)"
       },
       "day90": {
-        "usd": null,
-        "date": null,
-        "source": null,
-        "evidence": null,
-        "raw": "Tidak ditemukan (data harga historis HYPE 2025-02-27 tidak tersedia di sumber Phase 1-11)"
+        "usd": 20.96,
+        "date": "2025-02-27",
+        "source": "KuCoin HYPE-USDT daily candle close, https://www.kucoin.com/trade/HYPE-USDT",
+        "evidence": "MEDIUM",
+        "raw": "20.96 USD (2025-02-27) [KuCoin HYPE-USDT daily candle close, https://www.kucoin.com/trade/HYPE-USDT] (MEDIUM)"
       },
       "peak12m": {
-        "usd": null,
-        "date": null,
-        "source": null,
-        "evidence": null,
-        "raw": "Tidak ditemukan (token baru live Nov 2024, 12 bulan belum tercapai pada cut-off pengetahuan)"
+        "usd": 59.39,
+        "date": "2025-09-18",
+        "source": "StealthEX HYPE Price History & MEXC HYPE Analysis, https://stealthex.io/blog/hyperliquid-price-prediction-can-hype-reach-100/",
+        "evidence": "MEDIUM",
+        "raw": "59.39 USD (2025-09-18) [StealthEX HYPE Price History & MEXC HYPE Analysis, https://stealthex.io/blog/hyperliquid-price-prediction-can-hype-reach-100/] (MEDIUM)"
       }
     },
     "retention": [],
@@ -2013,7 +2013,7 @@
         "type": "Points-based / Retroactive",
         "allocation": "25,5% total supply (25,5 miliar BLAST) untuk Community (termasuk Points Season 1, Season 2, Airdrop, Incentives) — persentase exact untuk Season 1 saja tidak dipecah di blog TGE【Phase 6 Distribution】(HIGH) [Blast Blog TGE, https://blog.blast.io/blast-token-generation-event]",
         "recipients": ">500.000 alamat unik yang deposit ke bridge pre-mainnet (Season 1 participants)【Phase 3 EV-002 Immediate Result】(HIGH) [Blast Blog Mainnet Launch, https://blog.blast.io/blast-mainnet-launch]",
-        "valueAtClaim": "Tidak ditemukan (harga BLAST pada TGE 26 Juni 2024 tidak tercatat di fase sebelumnya; CoinGecko/CoinMarketCap historical data diperlukan)",
+        "valueAtClaim": "0.0257 USD per BLAST (close hari TGE 2024-06-26; intraday range 0.002-0.03) [KuCoin BLAST-USDT daily candle, https://www.kucoin.com/trade/BLAST-USDT] (MEDIUM)",
         "criteria": "Deposit ETH/stablecoin ke Blast bridge selama testnet (Nov 2023 – Feb 2024) dan/atau partisipasi Blur Season 3 (Nov 2023) yang terintegrasi dengan Blast Points【Phase 3 EV-002, EV-004, EV-005】(HIGH)",
         "antiSybil": "Tidak ditemukan (tidak ada publikasi mekanisme sybil filtering spesifik untuk Season 1; Blur Season 3 memiliki anti-sybil sendiri berbasis volume trading NFT)【Phase 3 EV-005】(MEDIUM)",
         "relatedEvent": "EV-002 (Testnet Launch & Points), EV-004 (Bridge Testnet), EV-005 (Blur Integration), EV-012 (TGE)",
@@ -2114,32 +2114,32 @@
     },
     "priceTrajectory": {
       "atClaim": {
-        "usd": null,
+        "usd": 0.0257,
         "date": "2024-06-26",
-        "source": "CoinGecko/CoinMarketCap historical data diperlukan",
-        "evidence": "LOW",
-        "raw": "Tidak ditemukan USD (2024-06-26) [CoinGecko/CoinMarketCap historical data diperlukan] (LOW)"
+        "source": "KuCoin BLAST-USDT daily candle close (hari TGE), https://www.kucoin.com/trade/BLAST-USDT",
+        "evidence": "MEDIUM",
+        "raw": "0.0257 USD (2024-06-26) [KuCoin BLAST-USDT daily candle close (hari TGE), https://www.kucoin.com/trade/BLAST-USDT] (MEDIUM)"
       },
       "day30": {
-        "usd": null,
+        "usd": 0.0155,
         "date": "2024-07-26",
-        "source": "CoinGecko/CoinMarketCap historical data diperlukan",
-        "evidence": "LOW",
-        "raw": "Tidak ditemukan USD (2024-07-26) [CoinGecko/CoinMarketCap historical data diperlukan] (LOW)"
+        "source": "KuCoin BLAST-USDT daily candle close, https://www.kucoin.com/trade/BLAST-USDT",
+        "evidence": "MEDIUM",
+        "raw": "0.0155 USD (2024-07-26) [KuCoin BLAST-USDT daily candle close, https://www.kucoin.com/trade/BLAST-USDT] (MEDIUM)"
       },
       "day90": {
-        "usd": null,
+        "usd": 0.0101,
         "date": "2024-09-24",
-        "source": "CoinGecko/CoinMarketCap historical data diperlukan",
-        "evidence": "LOW",
-        "raw": "Tidak ditemukan USD (2024-09-24) [CoinGecko/CoinMarketCap historical data diperlukan] (LOW)"
+        "source": "KuCoin BLAST-USDT daily candle close, https://www.kucoin.com/trade/BLAST-USDT",
+        "evidence": "MEDIUM",
+        "raw": "0.0101 USD (2024-09-24) [KuCoin BLAST-USDT daily candle close, https://www.kucoin.com/trade/BLAST-USDT] (MEDIUM)"
       },
       "peak12m": {
-        "usd": null,
-        "date": null,
-        "source": "CoinGecko/CoinMarketCap historical data diperlukan",
-        "evidence": "LOW",
-        "raw": "Tidak ditemukan USD (Tanggal tidak diketahui) [CoinGecko/CoinMarketCap historical data diperlukan] (LOW)"
+        "usd": 0.03,
+        "date": "2024-06-26",
+        "source": "KuCoin BLAST-USDT TGE-day high; scan weekly 12 bulan tidak ada high lebih tinggi, https://www.kucoin.com/trade/BLAST-USDT",
+        "evidence": "MEDIUM",
+        "raw": "0.03 USD (2024-06-26) [KuCoin BLAST-USDT TGE-day high; scan weekly 12 bulan tidak ada high lebih tinggi, https://www.kucoin.com/trade/BLAST-USDT] (MEDIUM)"
       }
     },
     "retention": [],

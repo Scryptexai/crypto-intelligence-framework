@@ -4946,7 +4946,7 @@ Tanggal: 2024-06-26 (TGE claim date)
 Tipe: Points-based / Retroactive
 Alokasi: 25,5% total supply (25,5 miliar BLAST) untuk Community (termasuk Points Season 1, Season 2, Airdrop, Incentives) — persentase exact untuk Season 1 saja tidak dipecah di blog TGE【Phase 6 Distribution】(HIGH) [Blast Blog TGE, https://blog.blast.io/blast-token-generation-event]
 Penerima: >500.000 alamat unik yang deposit ke bridge pre-mainnet (Season 1 participants)【Phase 3 EV-002 Immediate Result】(HIGH) [Blast Blog Mainnet Launch, https://blog.blast.io/blast-mainnet-launch]
-Nilai saat klaim: Tidak ditemukan (harga BLAST pada TGE 26 Juni 2024 tidak tercatat di fase sebelumnya; CoinGecko/CoinMarketCap historical data diperlukan)
+Nilai saat klaim: 0.0257 USD per BLAST (close hari TGE 2024-06-26; intraday range 0.002-0.03) [KuCoin BLAST-USDT daily candle, https://www.kucoin.com/trade/BLAST-USDT] (MEDIUM)
 Kriteria: Deposit ETH/stablecoin ke Blast bridge selama testnet (Nov 2023 – Feb 2024) dan/atau partisipasi Blur Season 3 (Nov 2023) yang terintegrasi dengan Blast Points【Phase 3 EV-002, EV-004, EV-005】(HIGH)
 Anti-sybil: Tidak ditemukan (tidak ada publikasi mekanisme sybil filtering spesifik untuk Season 1; Blur Season 3 memiliki anti-sybil sendiri berbasis volume trading NFT)【Phase 3 EV-005】(MEDIUM)
 Terkait EV: EV-002 (Testnet Launch & Points), EV-004 (Bridge Testnet), EV-005 (Blur Integration), EV-012 (TGE)
@@ -5051,12 +5051,12 @@ POV Builder (Protocol founders di Blast — Thruster, Ring, Wasabi, Kaito, dll.)
 
 HARGA PASCA-DISTRIBUSI
 
-Harga saat klaim: Tidak ditemukan USD (2024-06-26) [CoinGecko/CoinMarketCap historical data diperlukan] (LOW)
-Harga +30 hari: Tidak ditemukan USD (2024-07-26) [CoinGecko/CoinMarketCap historical data diperlukan] (LOW)
-Harga +90 hari: Tidak ditemukan USD (2024-09-24) [CoinGecko/CoinMarketCap historical data diperlukan] (LOW)
-Harga puncak 12 bulan pertama: Tidak ditemukan USD (Tanggal tidak diketahui) [CoinGecko/CoinMarketCap historical data diperlukan] (LOW)
+Harga saat klaim: 0.0257 USD (2024-06-26) [KuCoin BLAST-USDT daily candle close (hari TGE), https://www.kucoin.com/trade/BLAST-USDT] (MEDIUM)
+Harga +30 hari: 0.0155 USD (2024-07-26) [KuCoin BLAST-USDT daily candle close, https://www.kucoin.com/trade/BLAST-USDT] (MEDIUM)
+Harga +90 hari: 0.0101 USD (2024-09-24) [KuCoin BLAST-USDT daily candle close, https://www.kucoin.com/trade/BLAST-USDT] (MEDIUM)
+Harga puncak 12 bulan pertama: 0.03 USD (2024-06-26) [KuCoin BLAST-USDT TGE-day high; scan weekly 12 bulan tidak ada high lebih tinggi, https://www.kucoin.com/trade/BLAST-USDT] (MEDIUM)
 
-Catatan: Fase 1-11 tidak mencatat harga BLAST historis per tanggal. CoinGecko (https://coingecko.com/en/coins/blast) dan CoinMarketCap (https://coinmarketcap.com/currencies/blast/) memiliki data historis harian sejak listing 26 Juni 2024. Phase 8 hanya menyebut range FDV $1.5B-$3B di price $0.015-$0.03 untuk Dec 2024, bukan TGE date.
+Catatan: Harga historis per tanggal dikumpulkan 2026-08-19 dari candle harian KuCoin BLAST-USDT (listing hari TGE). CoinGecko (https://coingecko.com/en/coins/blast) dan CoinMarketCap (https://coinmarketcap.com/currencies/blast/) memiliki data historis harian sejak listing 26 Juni 2024. Phase 8 hanya menyebut range FDV $1.5B-$3B di price $0.015-$0.03 untuk Dec 2024, bukan TGE date.
 
 METRIK RETENSI
 
@@ -5221,18 +5221,3 @@ PELAJARAN LINTAS PROJECT
 - [conflict] Open Thread ID: OT-13 · Description: Insurance coverage untuk bridge/sequencer failure — apakah ada fund atau Nexus Mutual coverage · Affected Phase: Phase 8, Phase 7 · Evidence: Phase 8 open threads insurance coverage never existed; Phase 7 ecosystem risks tidak mention insurance · Alternative Interpretations: Tidak ada insurance (self-insured via Foundation treasury); Nexus Mutual coverage tersedia; Akan di-launch dengan DAO · Status: Open
 - [conflict] Open Thread ID: OT-14 · Description: Native yield oracle architecture detail — Chainlink feed IDs exact, heartbeat, deviation threshold, fallback · Affected Phase: Phase 4, Phase 7 · Evidence: Phase 4 oracle dependency; Phase 7 oracle risk; Phase 8 open threads yield rate transparency · Alternative Interpretations: Standard Chainlink feeds (stETH/ETH, USDS/USD); Custom aggregation; TWAP on-chain fallback · Status: Open
 - [conflict] Open Thread ID: OT-15 · Description: Bridge emergency pause / circuit breaker mechanism existence · Affected Phase: Phase 4, Phase 7 · Evidence: Phase 4 known limitations tidak mention pause; Phase 7 ecosystem risks bridge dependency; Phase 8 open threads emergency pause · Alternative Interpretations: Tidak ada pause mechanism (trust-minimized design); Pause via Foundation multisig upgrade; Pause di L1 contracts (OptimismPortal) · Status: Open
-- [airdrop] Harga BLAST exact pada TGE (26 Jun 2024), +30 hari, +90 hari, dan puncak 12 bulan — memerlukan CoinGecko/CoinMarketCap historical data pull
-- [airdrop] Jumlah penerima Season 2 exact dan mekanisme klaim/vesting detail
-- [airdrop] Sybil filtering results Season 1 (berapa alamat diskualifikasi, mekanisme apa)
-- [airdrop] Vesting schedules exact untuk team (20%), investor (16.5%), foundation (10%), ecosystem (28%)
-- [airdrop] Season 3 Points mechanics, timeline, dan allocation
-- [airdrop] Cohort analysis: persen Season 1 claimants yang sell dalam 7/30/90 hari vs hold
-- [airdrop] Gold allocation per protocol (Thruster, Ring, Wasabi, Kaito, dll.) amount dan KPI achievement
-- [airdrop] Institutional custody support status (Fireblocks, Copper, Coinbase Custody, dll.)
-- [airdrop] Decentralized sequencer roadmap concrete milestones
-- [airdrop] Permissionless challenger game implementation timeline
-- [airdrop] Treasury addresses dan composition on-chain
-- [airdrop] Full audit reports (Trail of Bits, OpenZeppelin) publication status
-- [airdrop] BLAST token staking mechanics detail (APY, lock, slashing, reward source)
-- [airdrop] Cross-chain BLAST representation (L1 bridge token vs L2 native only)
-- [airdrop] Regulatory legal opinion untuk token distribution dan US restrictions

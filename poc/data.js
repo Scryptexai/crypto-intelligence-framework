@@ -2,7 +2,7 @@
 window.CIF = {
   "meta": {
     "schema": "cif-export/1",
-    "generated": "2026-08-15 00:09 UTC",
+    "generated": "2026-08-19 15:10 UTC",
     "projects": 56,
     "deep": 56,
     "summary": 0,
