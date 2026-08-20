@@ -758,6 +758,35 @@
       "ICF Treasury Dependency for Core Protocol Funding vs Sustainable Revenue Diversification"
     ]
   },
+  "Curve": {
+    "projectSlug": "curve",
+    "strategicObjectives": [
+      "Mempertahankan dominasi likuiditas stableswap lintas chain",
+      "Memperluas value capture melalui crvUSD dan Curve Lend",
+      "Menjaga relevansi governance CRV pasca-Curve-Wars"
+    ],
+    "decisionPatterns": [
+      "Spesialisasi invariant per kelas aset (StableSwap vs Crypto pools) bukan satu AMM umum",
+      "Factory pools permissionless untuk ekspansi venue tanpa bottleneck governance",
+      "crvUSD dengan likuidasi gradual LLAMAA alih-alih hard liquidation",
+      "Value accrual via fee share ke veCRV (bukan buyback/burn)",
+      "Emisi menurun bertahap hingga max supply 3,03 miliar CRV",
+      "Tanpa public sale; pendanaan awal via alokasi token vesting",
+      "Membiarkan meta-layer (Convex/bribe market) tumbuh tanpa intervensi",
+      "Deployment mengikuti likuiditas ke chain baru (Arbitrum, Optimism, Polygon, dll.)",
+      "Gauge voting sebagai alokasi sumber daya publik (emisi)",
+      "Iterasi produk bertahap (Earn-era pools → veCRV → factory → crvUSD → Lend) tanpa grand relaunch"
+    ],
+    "riskResponse": [
+      "Respons teknis cepat dengan komunikasi publik terbatas saat krisis",
+      "Penanganan posisi tokoh kunci via jalur OTC untuk menghindari tekanan harga spot"
+    ],
+    "tradeOffs": [
+      "Emisi besar untuk likuiditas vs tekanan inflasi CRV jangka panjang",
+      "Membiarkan konsentrasi veCRV di Convex vs risiko ketergantungan satu agregator",
+      "crvUSD menambah produk dan fee vs menambah risiko sistemik stablecoin ke protokol"
+    ]
+  },
   "EOS": {
     "projectSlug": "eos",
     "strategicObjectives": [
@@ -2959,6 +2988,59 @@
       "Open-Source vs IP Protection"
     ]
   },
+  "Yearn Finance": {
+    "projectSlug": "yearn-finance",
+    "strategicObjectives": [
+      "Menjadi infrastruktur yield aggregation terdepan yang trust-minimized dan composable",
+      "Desentralisasi progresif melalui DAO governance dan legal wrapper",
+      "Memaksimalkan yield untuk user melalui strategi otomatis dan efisien gas",
+      "Membangun moat melalui ekosistem Curve/Convex dan bribe marketplace",
+      "Sustainability finansial melalui protocol-owned revenue tanpa token inflation"
+    ],
+    "decisionPatterns": [
+      "Ethereum Alignment First, L2 Expansion Second",
+      "Upgrade Bertahap dengan Migration Path dan Backward Compatibility",
+      "Modular Strategy Pattern dengan Keeper Automation",
+      "Standarisasi ERC-4626 untuk Composability Maksimal",
+      "Oracle Dependency Terpusat pada Chainlink dengan Minimal Fallback",
+      "Security via Multisig + Timelock + Extensive Audits, Tanpa On-Chain Governance Execution",
+      "Zero VC Funding — Fair Launch dan Protocol Revenue Only",
+      "Treasury Diversification Menggunakan Protocol-Owned Strategies",
+      "Revenue Diversification Beyond Vault Fees (Iron Bank, yBribe, Zap, Boost)",
+      "Grant Program (yBudget) dari Treasury Yield, Bukan Token Inflation",
+      "Conservative Financial Risk Management — Acknowledge Concentration Risks Transparently",
+      "Deep Integration dengan Curve/Convex Ecosystem sebagai Core Moat",
+      "Partner dengan Infrastructure Providers Tier-1 (Alchemy, Chainlink, The Graph, Tenderly) untuk Reliability",
+      "Expand ke L2/Sidechain berdasarkan User Demand dan Gas Cost Arbitrage",
+      "Build Developer Platform (SDK, API, Subgraphs, Grants) untuk Ecosystem Growth",
+      "Legal Wrapper via Cayman Foundation untuk DAO Compliance dan Contracts",
+      "Off-Chain Signaling (Snapshot) + On-Chain Multisig Execution",
+      "Delegasi Operational Authority ke yTeams (Elected Domain Experts)",
+      "YFI Token sebagai Governance-Only (Non-Financial), Fee Switch Diusulkan Tapi Belum Live",
+      "Transparansi Radikal via Governance Forum dan Postmortem",
+      "Foundation sebagai Legal Wrapper, DAO sebagai Governance Layer — Boundary Masih Evolving",
+      "Selalu Bangun di Atas Curve/Convex — \"Curve-Native\" Strategy",
+      "Upgrade Protocol Setelah Exploit/Incident Major",
+      "Ekspansi Multi-Chain Mengikuti Gas Cost Arbitrage",
+      "Fair Launch Ethos — No VC, No Team Allocation, Community First",
+      "Transparansi Radikal sebagai Crisis Management Tool"
+    ],
+    "riskResponse": [
+      "Emergency Multisig Intervention untuk Exploit Containment",
+      "Transparent Postmortem dan Governance Discussion untuk Accountability",
+      "Strategy Deprecation dan Migration Acceleration Pasca-Exploit",
+      "Bear Market Response — Treasury Diversification dan Cost Discipline",
+      "Bridge Exploit Response — Asset Recovery dan Bridge Diversification"
+    ],
+    "tradeOffs": [
+      "Desentralisasi vs Kecepatan Operational (Multisig vs On-Chain Governor)",
+      "Curve/Convex Concentration vs Yield Maximization",
+      "Multi-Chain Expansion vs Operational Complexity dan Bridge Risk",
+      "Fixed Supply Token (Non-Inflationary) vs Contributor Incentive Alignment",
+      "Security via Extensive Audits vs Speed to Market",
+      "Legal Wrapper (Cayman Foundation) vs Regulatory Uncertainty"
+    ]
+  },
   "dYdX": {
     "projectSlug": "dydx",
     "strategicObjectives": [
@@ -3068,88 +3150,6 @@
       "Treasury Controlled by Matter Labs Multisig (Operational Agility) vs. DAO Ownership (Decentralization)",
       "Modular Stack (Shared Prover/VM) vs. Sovereign Chain Independence (Own Prover, Own Token, Own Economics)",
       "Early Token Launch (TGE 2024, Post-Mainnet Maturity) vs. Token Utility Readiness (Staking, Fee Payment, Prover Security Not Live)"
-    ]
-  },
-  "Yearn Finance": {
-    "projectSlug": "yearn-finance",
-    "strategicObjectives": [
-      "Menjadi infrastruktur yield aggregation terdepan yang trust-minimized dan composable",
-      "Desentralisasi progresif melalui DAO governance dan legal wrapper",
-      "Memaksimalkan yield untuk user melalui strategi otomatis dan efisien gas",
-      "Membangun moat melalui ekosistem Curve/Convex dan bribe marketplace",
-      "Sustainability finansial melalui protocol-owned revenue tanpa token inflation"
-    ],
-    "decisionPatterns": [
-      "Ethereum Alignment First, L2 Expansion Second",
-      "Upgrade Bertahap dengan Migration Path dan Backward Compatibility",
-      "Modular Strategy Pattern dengan Keeper Automation",
-      "Standarisasi ERC-4626 untuk Composability Maksimal",
-      "Oracle Dependency Terpusat pada Chainlink dengan Minimal Fallback",
-      "Security via Multisig + Timelock + Extensive Audits, Tanpa On-Chain Governance Execution",
-      "Zero VC Funding — Fair Launch dan Protocol Revenue Only",
-      "Treasury Diversification Menggunakan Protocol-Owned Strategies",
-      "Revenue Diversification Beyond Vault Fees (Iron Bank, yBribe, Zap, Boost)",
-      "Grant Program (yBudget) dari Treasury Yield, Bukan Token Inflation",
-      "Conservative Financial Risk Management — Acknowledge Concentration Risks Transparently",
-      "Deep Integration dengan Curve/Convex Ecosystem sebagai Core Moat",
-      "Partner dengan Infrastructure Providers Tier-1 (Alchemy, Chainlink, The Graph, Tenderly) untuk Reliability",
-      "Expand ke L2/Sidechain berdasarkan User Demand dan Gas Cost Arbitrage",
-      "Build Developer Platform (SDK, API, Subgraphs, Grants) untuk Ecosystem Growth",
-      "Legal Wrapper via Cayman Foundation untuk DAO Compliance dan Contracts",
-      "Off-Chain Signaling (Snapshot) + On-Chain Multisig Execution",
-      "Delegasi Operational Authority ke yTeams (Elected Domain Experts)",
-      "YFI Token sebagai Governance-Only (Non-Financial), Fee Switch Diusulkan Tapi Belum Live",
-      "Transparansi Radikal via Governance Forum dan Postmortem",
-      "Foundation sebagai Legal Wrapper, DAO sebagai Governance Layer — Boundary Masih Evolving",
-      "Selalu Bangun di Atas Curve/Convex — \"Curve-Native\" Strategy",
-      "Upgrade Protocol Setelah Exploit/Incident Major",
-      "Ekspansi Multi-Chain Mengikuti Gas Cost Arbitrage",
-      "Fair Launch Ethos — No VC, No Team Allocation, Community First",
-      "Transparansi Radikal sebagai Crisis Management Tool"
-    ],
-    "riskResponse": [
-      "Emergency Multisig Intervention untuk Exploit Containment",
-      "Transparent Postmortem dan Governance Discussion untuk Accountability",
-      "Strategy Deprecation dan Migration Acceleration Pasca-Exploit",
-      "Bear Market Response — Treasury Diversification dan Cost Discipline",
-      "Bridge Exploit Response — Asset Recovery dan Bridge Diversification"
-    ],
-    "tradeOffs": [
-      "Desentralisasi vs Kecepatan Operational (Multisig vs On-Chain Governor)",
-      "Curve/Convex Concentration vs Yield Maximization",
-      "Multi-Chain Expansion vs Operational Complexity dan Bridge Risk",
-      "Fixed Supply Token (Non-Inflationary) vs Contributor Incentive Alignment",
-      "Security via Extensive Audits vs Speed to Market",
-      "Legal Wrapper (Cayman Foundation) vs Regulatory Uncertainty"
-    ]
-  },
-  "Curve": {
-    "projectSlug": "curve",
-    "strategicObjectives": [
-      "Mempertahankan dominasi likuiditas stableswap lintas chain",
-      "Memperluas value capture melalui crvUSD dan Curve Lend",
-      "Menjaga relevansi governance CRV pasca-Curve-Wars"
-    ],
-    "decisionPatterns": [
-      "Spesialisasi invariant per kelas aset (StableSwap vs Crypto pools) bukan satu AMM umum",
-      "Factory pools permissionless untuk ekspansi venue tanpa bottleneck governance",
-      "crvUSD dengan likuidasi gradual LLAMAA alih-alih hard liquidation",
-      "Value accrual via fee share ke veCRV (bukan buyback/burn)",
-      "Emisi menurun bertahap hingga max supply 3,03 miliar CRV",
-      "Tanpa public sale; pendanaan awal via alokasi token vesting",
-      "Membiarkan meta-layer (Convex/bribe market) tumbuh tanpa intervensi",
-      "Deployment mengikuti likuiditas ke chain baru (Arbitrum, Optimism, Polygon, dll.)",
-      "Gauge voting sebagai alokasi sumber daya publik (emisi)",
-      "Iterasi produk bertahap (Earn-era pools → veCRV → factory → crvUSD → Lend) tanpa grand relaunch"
-    ],
-    "riskResponse": [
-      "Respons teknis cepat dengan komunikasi publik terbatas saat krisis",
-      "Penanganan posisi tokoh kunci via jalur OTC untuk menghindari tekanan harga spot"
-    ],
-    "tradeOffs": [
-      "Emisi besar untuk likuiditas vs tekanan inflasi CRV jangka panjang",
-      "Membiarkan konsentrasi veCRV di Convex vs risiko ketergantungan satu agregator",
-      "crvUSD menambah produk dan fee vs menambah risiko sistemik stablecoin ke protokol"
     ]
   }
 }

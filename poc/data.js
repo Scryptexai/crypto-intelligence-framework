@@ -2,7 +2,7 @@
 window.CIF = {
   "meta": {
     "schema": "cif-export/1",
-    "generated": "2026-08-20 04:53 UTC",
+    "generated": "2026-08-20 04:54 UTC",
     "projects": 60,
     "deep": 60,
     "summary": 0,
@@ -120,8 +120,7 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
-        "airdrop",
-        "l1"
+        "airdrop"
       ]
     },
     {
@@ -567,8 +566,7 @@ window.CIF = {
       "cat": "",
       "era": "",
       "tags": [
-        "airdrop",
-        "l1"
+        "airdrop"
       ]
     },
     {
