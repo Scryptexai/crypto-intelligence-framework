@@ -314,6 +314,10 @@ def main():
         if rows:
             data[project] = rows
             total_written += len(rows)
+        elif project in data:
+            # A stale entry (e.g. from a merge) whose conflicts no longer survive the
+            # pairing rules must go -- keeping it would re-publish a dropped row forever.
+            del data[project]
         total_skipped += len(skipped)
         if target != "--all" or rows:
             print(f"{project}: wrote {len(rows)} conflict(s)"

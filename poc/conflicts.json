@@ -112,36 +112,6 @@
       "affectedPhase": "Phase 6"
     }
   ],
-  "Axie Infinity": [
-    {
-      "id": "C-008",
-      "projectSlug": "axie-infinity",
-      "category": "RON Token Launch Distribution",
-      "title": "Phase 3 EV-023: \"Distribusi: Community rewards (25%), Sky Mavis (30%), Ecosystem Fund (25%",
-      "description": "Phase 3 EV-023: \"Distribusi: Community rewards (25%), Sky Mavis (30%), Ecosystem Fund (25%), Validator rewards (20%)\". Phase 6 Distribution RON: \"Community: 25% Community Rewards (250M) + 20% Validator Rewards (200M) = 450M (45%); Team: 30% Sky Mavis (300M); Foundation: 25% Ecosystem Fund (250M)\". Phase 6 Vesting RON: \"Sky Mavis 30% cliff 12 bulan vesting 36 bulan; Ecosystem Fund 25% no cliff; Community Rewards 25% no cliff; Validator Rewards 20% no cliff\". Konsisten angka tapi kategori labeling berbeda (Phase 3: 4 kategori; Phase 6: 4 kategori tapi Community+Validator digabung).",
-      "severity": "Low",
-      "status": "",
-      "versionA": {
-        "source": "(30%), Ecosystem Fund (25%), Validator rewards (20%)\". Phase 6 Distribution RON",
-        "value": "\"Community: 25% Community Rewards (250M) + 20% Validator Rewards (200M) = 450M (45%)",
-        "date": "",
-        "url": "",
-        "evidence": ""
-      },
-      "versionB": {
-        "source": "Team",
-        "value": "30% Sky Mavis (300M); Foundation: 25% Ecosystem Fund (250M)\"",
-        "date": "",
-        "url": "",
-        "evidence": ""
-      },
-      "resolution": "Labeling kategori berbeda tapi angka allocation identik. Status: Resolved.",
-      "affectedKnowledge": [
-        "K-002"
-      ],
-      "affectedPhase": "Phase 3, Phase 6"
-    }
-  ],
   "Curve": [
     {
       "id": "C-001",
