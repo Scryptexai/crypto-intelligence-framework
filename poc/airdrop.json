@@ -3160,6 +3160,160 @@
       "Ketika DAO governance sudah fungsional dan mengontrol fee parameter (fee switch), insentif pengguna jangka panjang sudah tertangani via yield stETH (net of fee) — airdrop tambahan bukan diperlukan untuk retention."
     ]
   },
+  "Linea": {
+    "projectSlug": "linea",
+    "status": "Sudah dilakukan",
+    "events": [
+      {
+        "id": "AD-001",
+        "title": "TGE Airdrop LINEA (Distribusi Utama)",
+        "date": "2025-09-10 (klaim dibuka; window hingga 2025-12-09; snapshot 2025-07-30; eligibility checker live 2025-09-03 via Linea Hub)",
+        "type": "Retroactive points-based (LXP/LXP-L) dengan window klaim 90 hari",
+        "allocation": "9.360.000.000 LINEA (~13% dari 72 miliar supply) (HIGH) [The Block, https://www.theblock.co/post/370206/consensys-ethereum-l2-linea-launches-tge-with-9-4-billion-token-airdrop-after-brief-outage]; [CoinGape, https://coingape.com/trending/linea-airdrop-goes-live-september-10-what-to-expect-from-its-launch-price/]",
+        "recipients": "~749.000-750.000 wallet yang memegang LXP/LXP-L pada snapshot; klaim wajib dari alamat yang sama dengan saldo poin (HIGH) [CoinGape, https://coingape.com/trending/linea-airdrop-goes-live-september-10-what-to-expect-from-its-launch-price/]; [The Block, https://www.theblock.co/post/370206/consensys-ethereum-l2-linea-launches-tge-with-9-4-billion-token-airdrop-after-brief-outage]",
+        "valueAtClaim": "0.0232 USD per LINEA (close hari TGE 2025-09-10; intraday range 0.005-0.047479) [KuCoin LINEA-USDT daily candle, https://www.kucoin.com/trade/LINEA-USDT] (MEDIUM)",
+        "criteria": "Akumulasi LXP/LXP-L melalui aktivitas ekosistem Linea (testnet, DeFi Voyage/Surge campaigns, penggunaan dApp) sebelum snapshot 30 Juli 2025 (MEDIUM) [Bitrue, https://www.bitrue.com/blog/linea-tokenomics-and-airdrop-eligibility]; [BingX, https://bingx.com/en/learn/article/what-is-linea-tokenomics-and-listing-price-prediction]",
+        "antiSybil": "Snapshot berbasis saldo poin yang terakumulasi dari aktivitas nyata lintas kampanye panjang (2023-2025); mekanisme detail anti-sybil tidak dipublikasikan penuh (LOW)",
+        "relatedEvent": "EV TGE LINEA 2025-09-10",
+        "citation": "Phase 1 TGE; Phase 5 Fundraising Mechanism (HIGH/MEDIUM)"
+      },
+      {
+        "id": "AD-002",
+        "title": "Program Poin LXP/LXP-L (Basis Eligibility Pra-TGE)",
+        "date": "2023–2025 (berakhir pada snapshot 2025-07-30)",
+        "type": "Points program (non-token) sebagai mekanisme kualifikasi airdrop",
+        "allocation": "Tidak ada alokasi token langsung — poin dikonversi menjadi eligibility airdrop TGE (MEDIUM) [Bitrue, https://www.bitrue.com/blog/linea-tokenomics-and-airdrop-eligibility]",
+        "recipients": "Pengguna aktif ekosistem Linea selama era kampanye (Linea Voyage, Surge, DeFi Voyage dengan MetaMask & Intract) (MEDIUM) [CoinMarketCap Academy, https://coinmarketcap.com/academy/article/linea-network-defi-voyage]",
+        "valueAtClaim": "Tidak berlaku (poin bukan token; nilai terealisasi saat konversi eligibility airdrop)",
+        "criteria": "Aktivitas on-chain dan kampanye yang diakui sistem LXP/LXP-L (MEDIUM)",
+        "antiSybil": "Akumulasi poin berbasis aktivitas multi-tahun; detail filter sybil tidak dipublikasikan penuh (LOW)",
+        "relatedEvent": "Program insentif pra-TGE",
+        "citation": "Phase 3 Events; Phase 6 Token (MEDIUM)"
+      },
+      {
+        "id": "AD-003",
+        "title": "Linea Consortium Ecosystem Fund (Distribusi Masa Depan 75% Supply)",
+        "date": "2025 mulai — horizon 10 tahun",
+        "type": "Program distribusi ekosistem jangka panjang (bukan airdrop satu kali)",
+        "allocation": "75% total supply (~54 miliar LINEA) terkunci dengan pencairan bertahap 10 tahun, dikelola Linea Consortium (ConsenSys, Eigen Labs, ENS Labs, SharpLink, Status); unclaimed airdrop TGE juga mengalir ke fund ini (MEDIUM) [Bitrue, https://www.bitrue.com/blog/linea-tokenomics-and-airdrop-eligibility]; [MEXC Blog, https://blog.mexc.com/news/linea-airdrop-2025-how-to-claim-tokens/]",
+        "recipients": "Ekosistem Linea dan Ethereum (public goods, grants, insentif) sesuai governance Linea Association (MEDIUM) [The Block, https://www.theblock.co/post/370206/consensys-ethereum-l2-linea-launches-tge-with-9-4-billion-token-airdrop-after-brief-outage]",
+        "valueAtClaim": "Tidak berlaku (distribusi bertahap multi-tahun)",
+        "criteria": "Keputusan governance Linea Association/Consortium per program (MEDIUM)",
+        "antiSybil": "Tidak relevan (distribusi programatik, bukan klaim terbuka)",
+        "relatedEvent": "Tokenomics LINEA",
+        "citation": "Phase 5 Treasury; Phase 6 Distribution (MEDIUM)"
+      }
+    ],
+    "povOutcomes": {
+      "founder": {
+        "verdict": "Sukses",
+        "verdictRaw": "Sukses",
+        "qualifier": "ConsenSys / Linea Association",
+        "shortTerm": "TGE terlaksana 10 September 2025 (setelah outage singkat yang berhasil diatasi); klaim 90 hari berjalan; listing CEX luas (HIGH) [The Block, https://www.theblock.co/post/370206/consensys-ethereum-l2-linea-launches-tge-with-9-4-billion-token-airdrop-after-brief-outage]",
+        "longTerm": "Linea Association (Swiss) memegang kendali governance; 90% supply tetap di luar sirkulasi (locked/bertahap) — kontrol struktural jangka panjang terjaga (MEDIUM) [MEXC Blog, https://blog.mexc.com/news/linea-airdrop-2025-how-to-claim-tokens/]",
+        "basis": "Phase 3 TGE event; Phase 6 Distribution (HIGH/MEDIUM)"
+      },
+      "vc": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": null,
+        "longTerm": null,
+        "basis": null
+      },
+      "retail": {
+        "verdict": "Gagal",
+        "verdictRaw": "Gagal",
+        "qualifier": "Penerima airdrop LXP",
+        "shortTerm": "Klaim dibuka dari close TGE 0.0232 USD (high hari pertama 0.047479) — penjual hari pertama merealisasi nilai dari poin yang dikumpulkan 2023-2025 (MEDIUM) [KuCoin LINEA-USDT, https://www.kucoin.com/trade/LINEA-USDT]",
+        "longTerm": "Harga turun ke 0.0177 pada +30 hari (-24%), 0.0081 pada +90 hari (-65%), dan ~0.0022 pada Agustus 2026 (-90% dari close TGE); pemegang pasif mengalami depresiasi ekstrem tanpa mekanisme penahan nilai (fee share tidak ada; gas tetap ETH) (MEDIUM) [KuCoin LINEA-USDT, https://www.kucoin.com/trade/LINEA-USDT]",
+        "basis": "KuCoin price history (MEDIUM)"
+      },
+      "community": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": "Pemegang LXP/LXP-L & pengguna ekosistem",
+        "shortTerm": "~750k wallet menerima distribusi; klaim via Linea Hub berjalan (dengan outage singkat pra-klaim yang diatasi) (HIGH) [The Block, https://www.theblock.co/post/370206/consensys-ethereum-l2-linea-launches-tge-with-9-4-billion-token-airdrop-after-brief-outage]",
+        "longTerm": "Nilai per token menurun tajam; mekanisme governance (Linea Association) masih terpusat pada konsorsium — kekuatan komunitas riil belum teruji (MEDIUM) [Bitrue, https://www.bitrue.com/blog/linea-tokenomics-and-airdrop-eligibility]",
+        "basis": "Phase 3 TGE; Phase 6 Governance (HIGH/MEDIUM)"
+      },
+      "developer": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": "Builder ekosistem Linea",
+        "shortTerm": "Ecosystem Fund 75% (10 tahun) menjanjikan pendanaan jangka panjang; tooling MetaMask/Infura native (MEDIUM) [Bitrue, https://www.bitrue.com/blog/linea-tokenomics-and-airdrop-eligibility]",
+        "longTerm": "Realisasi grants/insentif bergantung keputusan Linea Association; tanpa revenue share langsung, monetisasi builder bergantung adopsi aplikasi (LOW)",
+        "basis": "Phase 7 Ecosystem (MEDIUM/LOW)"
+      },
+      "institution": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": "Exchange, fund, mitra konsorsium",
+        "shortTerm": "Listing CEX besar serentak; struktur \"tanpa investor eksternal\" dipasarkan sebagai alokasi netral untuk institusi (HIGH) [The Block, https://www.theblock.co/post/370206/consensys-ethereum-l2-linea-launches-tge-with-9-4-billion-token-airdrop-after-brief-outage]",
+        "longTerm": "Depresiasi -90% dalam ~11 bulan menjadikan LINEA aset berkinerja buruk untuk pemegang institusional awal; unlock ConsenSys 15% (5 tahun) dan Consortium Fund (10 tahun) menjadi overhang jangka panjang (MEDIUM) [KuCoin LINEA-USDT, https://www.kucoin.com/trade/LINEA-USDT]; [MEXC Blog, https://blog.mexc.com/news/linea-airdrop-2025-how-to-claim-tokens/]",
+        "basis": "Phase 5 Token Sale; KuCoin price history (HIGH/MEDIUM)"
+      },
+      "validator": {
+        "verdict": "Tidak relevan",
+        "verdictRaw": "Tidak relevan",
+        "qualifier": null,
+        "shortTerm": null,
+        "longTerm": null,
+        "basis": null
+      },
+      "builder": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": "Aplikasi & protokol di Linea",
+        "shortTerm": "Akses ke basis pengguna MetaMask + likuiditas TGE; kampanye ekosistem berlanjut (MEDIUM) [BingX, https://bingx.com/en/learn/article/what-is-linea-tokenomics-and-listing-price-prediction]",
+        "longTerm": "Insentif masa depan dari Consortium Fund belum terinci per program; adopsi riil pasca-airdrop belum terverifikasi kuat di sumber publik (LOW)",
+        "basis": "Phase 7 Ecosystem (MEDIUM/LOW)"
+      }
+    },
+    "priceTrajectory": {
+      "atClaim": {
+        "usd": 0.0232,
+        "date": "2025-09-10",
+        "source": "KuCoin LINEA-USDT daily candle close (hari TGE), https://www.kucoin.com/trade/LINEA-USDT",
+        "evidence": "MEDIUM",
+        "raw": "0.0232 USD (2025-09-10) [KuCoin LINEA-USDT daily candle close (hari TGE), https://www.kucoin.com/trade/LINEA-USDT] (MEDIUM)"
+      },
+      "day30": {
+        "usd": 0.0177,
+        "date": "2025-10-10",
+        "source": "KuCoin LINEA-USDT daily candle close, https://www.kucoin.com/trade/LINEA-USDT",
+        "evidence": "MEDIUM",
+        "raw": "0.0177 USD (2025-10-10) [KuCoin LINEA-USDT daily candle close, https://www.kucoin.com/trade/LINEA-USDT] (MEDIUM)"
+      },
+      "day90": {
+        "usd": 0.0081,
+        "date": "2025-12-09",
+        "source": "KuCoin LINEA-USDT daily candle close, https://www.kucoin.com/trade/LINEA-USDT",
+        "evidence": "MEDIUM",
+        "raw": "0.0081 USD (2025-12-09) [KuCoin LINEA-USDT daily candle close, https://www.kucoin.com/trade/LINEA-USDT] (MEDIUM)"
+      },
+      "peak12m": {
+        "usd": 0.0475,
+        "date": "2025-09-10",
+        "source": "KuCoin LINEA-USDT TGE-day high; scan mingguan Sep 2025-Agu 2026 tidak menemukan high lebih tinggi (tertinggi berikutnya 0.0353 minggu Sep 2025). Catatan: window 12 bulan penuh berakhir 2026-09-09 (belum selesai saat laporan ini ditulis; data hingga 2026-08-20), https://www.kucoin.com/trade/LINEA-USDT",
+        "evidence": "MEDIUM",
+        "raw": "0.0475 USD (2025-09-10) [KuCoin LINEA-USDT TGE-day high; scan mingguan Sep 2025-Agu 2026 tidak menemukan high lebih tinggi (tertinggi berikutnya 0.0353 minggu Sep 2025). Catatan: window 12 bulan penuh berakhir 2026-09-09 (belum selesai saat laporan ini ditulis; data hingga 2026-08-20), https://www.kucoin.com/trade/LINEA-USDT] (MEDIUM)"
+      }
+    },
+    "retention": [],
+    "gaps": [
+      "Cohort penerima: memerlukan analisis on-chain per-alamat (klaim vs jual 7/30 hari), tidak tersedia di sumber publik.",
+      "Jumlah final token tidak diklaim yang kembali ke Ecosystem Fund setelah 9 Desember 2025 belum dipublikasikan.",
+      "TVL dan aktivitas jaringan pasca-TGE (Q4 2025 - 2026) belum tersedia di sumber yang diakses."
+    ],
+    "prospect": {
+      "met": null,
+      "unmet": null,
+      "signals": null,
+      "assessment": "Airdrop LINEA adalah distribusi dengan positioning institusional yang rapi (tanpa investor eksternal, konsorsium pengelola) namun menghasilkan outcome retail terburuk di cohort-nya: -90% dalam 11 bulan — kombinasi float kecil, utilitas tanpa arus kas, dan overhang 10 tahun (MEDIUM)"
+    },
+    "lessons": []
+  },
   "MakerDAO": {
     "projectSlug": "makerdao",
     "status": "Belum ada",
@@ -5712,6 +5866,147 @@
     },
     "lessons": []
   },
+  "Walrus": {
+    "projectSlug": "walrus",
+    "status": "Sudah dilakukan",
+    "events": [
+      {
+        "id": "AD-001",
+        "title": "Community Airdrop Pre-Mainnet (4% Supply)",
+        "date": "2025-03-27 (klaim dibuka seiring mainnet & TGE)",
+        "type": "Retroactive/partisipasi-based (aktivitas testnet, penyimpanan blob, staking testnet, kampanye komunitas)",
+        "allocation": "4% total supply (200.000.000 WAL dari 5 miliar) — bagian dari 10% alokasi komunitas (HIGH) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]",
+        "recipients": "Wallet yang berpartisipasi di Walrus Testnet dan kampanye ekosistem sebelum mainnet; jumlah penerima tidak dipublikasikan resmi (LOW)",
+        "valueAtClaim": "0.5390 USD per WAL (close hari TGE 2025-03-27; intraday range 0.1-0.97774) [KuCoin WAL-USDT daily candle, https://www.kucoin.com/trade/WAL-USDT] (MEDIUM)",
+        "criteria": "Partisipasi testnet (menyimpan blob, staking WAL testnet, kontribusi) dan aktivitas kampanye; detail pembobotan per aktivitas tidak dipublikasikan penuh (MEDIUM) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]",
+        "antiSybil": "Tidak dirinci publik; eligibility berbasis riwayat aktivitas on-chain testnet (LOW)",
+        "relatedEvent": "EV-005 (Mainnet & TGE), EV-006 (distribusi airdrop komunitas)",
+        "citation": "Phase 3 EV-005, EV-006; Phase 6 Distribution (HIGH/MEDIUM)"
+      },
+      {
+        "id": "AD-002",
+        "title": "Community Distribution Post-Mainnet (6% Supply, Bertahap)",
+        "date": "2025-04 mulai — berlanjut bertahap sepanjang 2025",
+        "type": "Distribusi bertahap berbasis aktivitas ekosistem pasca-launch",
+        "allocation": "6% total supply (300.000.000 WAL) didistribusikan dalam fase-fase seiring kematangan ekosistem (HIGH) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]",
+        "recipients": "Partisipan ekosistem pasca-launch (pengguna storage, staker, kontributor); rincian per gelombang tidak dipublikasikan di sumber yang diakses (LOW)",
+        "valueAtClaim": "Tidak berlaku (distribusi multi-gelombang; harga mengikuti pasar saat tiap gelombang)",
+        "criteria": "Aktivitas mainnet (menyimpan data, staking, kontribusi ekosistem) sesuai pengumuman foundation per gelombang (MEDIUM)",
+        "antiSybil": "Tidak dirinci publik (LOW)",
+        "relatedEvent": "EV-006",
+        "citation": "Phase 3 EV-006; Phase 6 Distribution (HIGH/MEDIUM)"
+      }
+    ],
+    "povOutcomes": {
+      "founder": {
+        "verdict": "Sukses",
+        "verdictRaw": "Sukses",
+        "qualifier": "Mysten Labs / Walrus Foundation",
+        "shortTerm": "TGE + mainnet terlaksana tepat jadwal; $140 juta token sale selesai pra-launch; listing MEXC hari pertama diikuti exchange lain (HIGH) [CoinDesk, https://www.coindesk.com/business/2025/03/20/data-storage-protocol-walrus-raises-usd140m-in-token-sale-ahead-of-mainnet-launch]; [Altcoin Buzz, https://www.altcoinbuzz.io/product-release/crypto-gem-sui-is-launching-a-new-altcoin-today-walrus-wal/]",
+        "longTerm": "Jaringan storage produksi berjalan; namun harga WAL terdepresiasi ~85% dari close TGE dalam 12 bulan (0.539 → ~0.07-0.08 per data mingguan KuCoin Mar 2026) — tekanan naratif pada ekosistem [KuCoin WAL-USDT, https://www.kucoin.com/trade/WAL-USDT] (MEDIUM)",
+        "basis": "Phase 3 EV-004, EV-005; KuCoin price history (HIGH/MEDIUM)"
+      },
+      "vc": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": "Standard Crypto, a16z crypto, Electric Capital, Franklin Templeton DA, RW3 Ventures",
+        "shortTerm": "Entry via token sale pra-TGE; harga hari TGE (high 0.97774 USD) memberi paper gain awal atas harga sale (tidak dipublikasikan) (MEDIUM) [KuCoin WAL-USDT, https://www.kucoin.com/trade/WAL-USDT]",
+        "longTerm": "Alokasi investor 7% dengan cliff 12 bulan (unlock pertama ~Maret 2026) terjadi saat harga ~0.07-0.11 USD — jauh di bawah harga hari TGE; realisasi nilai tertekan (MEDIUM) [Altcoin Buzz, https://www.altcoinbuzz.io/reviews/walrus-protocol-mainnet-and-tge-are-coming/]; [KuCoin WAL-USDT, https://www.kucoin.com/trade/WAL-USDT]",
+        "basis": "Phase 6 Distribution, Vesting Schedule; KuCoin price history (HIGH/MEDIUM)"
+      },
+      "retail": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": "Penerima airdrop komunitas",
+        "shortTerm": "Penerima klaim 4% pre-mainnet mendapat WAL pada harga close TGE 0.5390 USD (high hari pertama 0.97774) — penjual hari pertama merealisasi gain dari biaya nol (MEDIUM) [KuCoin WAL-USDT, https://www.kucoin.com/trade/WAL-USDT]",
+        "longTerm": "Harga turun ke ~0.4078 pada +90 hari dan ~0.07-0.08 per Maret 2026 (-85% dari close TGE); pemegang pasif mengalami depresiasi besar tanpa mekanisme penahan nilai (MEDIUM) [KuCoin WAL-USDT, https://www.kucoin.com/trade/WAL-USDT]",
+        "basis": "KuCoin price history (MEDIUM)"
+      },
+      "community": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": "Pengguna & peserta kampanye Sui/Walrus",
+        "shortTerm": "Distribusi luas (klaim portal + kampanye) berjalan; atensi komunitas Sui besar pada launch (MEDIUM) [Altcoin Buzz, https://www.altcoinbuzz.io/product-release/crypto-gem-sui-is-launching-a-new-altcoin-today-walrus-wal/]",
+        "longTerm": "Gelombang 6% post-mainnet menjaga keterlibatan, namun nilai per token menurun tajam; jumlah penerima tidak pernah dipublikasikan sehingga skala klaim tidak terverifikasi (LOW)",
+        "basis": "Phase 3 EV-006; Phase 6 Distribution (HIGH/LOW)"
+      },
+      "developer": {
+        "verdict": "Sukses",
+        "verdictRaw": "Sukses",
+        "qualifier": "Integrator SDK & aplikasi storage",
+        "shortTerm": "SDK, docs, dan infrastruktur storage live sejak TGE; developer dapat langsung membangun aplikasi data/AI di atas Walrus (HIGH) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]",
+        "longTerm": "Subsidi storage (bagian dari alokasi subsidies) mendukung adopsi; kelangsungan bergantung pendanaan foundation (MEDIUM) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]",
+        "basis": "Phase 4 Technology; Phase 7 Ecosystem (HIGH/MEDIUM)"
+      },
+      "institution": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": "Investor token sale & exchange",
+        "shortTerm": "Partisipasi institusional (termasuk Franklin Templeton Digital Assets) dan listing CEX luas sejak hari pertama (HIGH) [CoinDesk, https://www.coindesk.com/business/2025/03/20/data-storage-protocol-walrus-raises-usd140m-in-token-sale-ahead-of-mainnet-launch]",
+        "longTerm": "Depresiasi harga 12 bulan dan jadwal unlock yang belum rinci penuh menjadi catatan portofolio (MEDIUM) [KuCoin WAL-USDT, https://www.kucoin.com/trade/WAL-USDT]",
+        "basis": "Phase 5 Financial; KuCoin price history (HIGH/MEDIUM)"
+      },
+      "validator": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": "Storage node operators / staker",
+        "shortTerm": "Staking WAL aktif sejak mainnet; reward epoch berjalan untuk node yang memvalidasi storage proofs (HIGH) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]",
+        "longTerm": "Nilai reward dalam WAL terdepresiasi bersama harga; ekonomi node bergantung pertumbuhan permintaan storage riil (MEDIUM) [KuCoin WAL-USDT, https://www.kucoin.com/trade/WAL-USDT]",
+        "basis": "Phase 4 Technology; KuCoin price history (HIGH/MEDIUM)"
+      },
+      "builder": {
+        "verdict": "Sebagian",
+        "verdictRaw": "Sebagian",
+        "qualifier": "Protokol yang membangun di Walrus/Sui",
+        "shortTerm": "Akses storage terprogram + likuiditas ekosistem Sui sejak launch (MEDIUM) [Altcoin Buzz, https://www.altcoinbuzz.io/product-release/crypto-gem-sui-is-launching-a-new-altcoin-today-walrus-wal/]",
+        "longTerm": "Insentif berlanjut via subsidies, namun skala adopsi storage riil belum terverifikasi di sumber publik (LOW)",
+        "basis": "Phase 7 Ecosystem (MEDIUM/LOW)"
+      }
+    },
+    "priceTrajectory": {
+      "atClaim": {
+        "usd": 0.539,
+        "date": "2025-03-27",
+        "source": "KuCoin WAL-USDT daily candle close (hari TGE), https://www.kucoin.com/trade/WAL-USDT",
+        "evidence": "MEDIUM",
+        "raw": "0.5390 USD (2025-03-27) [KuCoin WAL-USDT daily candle close (hari TGE), https://www.kucoin.com/trade/WAL-USDT] (MEDIUM)"
+      },
+      "day30": {
+        "usd": 0.5356,
+        "date": "2025-04-26",
+        "source": "KuCoin WAL-USDT daily candle close, https://www.kucoin.com/trade/WAL-USDT",
+        "evidence": "MEDIUM",
+        "raw": "0.5356 USD (2025-04-26) [KuCoin WAL-USDT daily candle close, https://www.kucoin.com/trade/WAL-USDT] (MEDIUM)"
+      },
+      "day90": {
+        "usd": 0.4078,
+        "date": "2025-06-25",
+        "source": "KuCoin WAL-USDT daily candle close, https://www.kucoin.com/trade/WAL-USDT",
+        "evidence": "MEDIUM",
+        "raw": "0.4078 USD (2025-06-25) [KuCoin WAL-USDT daily candle close, https://www.kucoin.com/trade/WAL-USDT] (MEDIUM)"
+      },
+      "peak12m": {
+        "usd": 0.9777,
+        "date": "2025-03-27",
+        "source": "KuCoin WAL-USDT TGE-day high; scan mingguan 12 bulan (Mar 2025-Mar 2026) tidak menemukan high lebih tinggi (tertinggi berikutnya 0.77822 minggu Mei 2025), https://www.kucoin.com/trade/WAL-USDT",
+        "evidence": "MEDIUM",
+        "raw": "0.9777 USD (2025-03-27) [KuCoin WAL-USDT TGE-day high; scan mingguan 12 bulan (Mar 2025-Mar 2026) tidak menemukan high lebih tinggi (tertinggi berikutnya 0.77822 minggu Mei 2025), https://www.kucoin.com/trade/WAL-USDT] (MEDIUM)"
+      }
+    },
+    "retention": [],
+    "gaps": [
+      "Cohort penerima: memerlukan analisis on-chain per-alamat (persentase klaim & jual 7/30 hari pertama), tidak tersedia di sumber publik.",
+      "Jumlah wallet penerima airdrop tidak dipublikasikan resmi — klaim \"salah satu yang terbesar\" tidak terverifikasi kuantitatif.",
+      "Harga entry token sale investor tidak dipublikasikan — paper gain/loss VC tidak dapat dihitung pasti."
+    ],
+    "prospect": {
+      "met": null,
+      "unmet": null,
+      "signals": null,
+      "assessment": "Airdrop WAL sukses secara operasional dan distribusi, namun tanpa penahan nilai (fee share/burn efektif) dan dengan unlock bertahun-tahun di depan, retensi harga bergantung penuh pada adopsi storage riil yang belum terbukti skala besar (MEDIUM)"
+    },
+    "lessons": []
+  },
   "Wormhole": {
     "projectSlug": "wormhole",
     "status": "Sudah dilakukan",
@@ -6146,301 +6441,6 @@
       "unmet": null,
       "signals": null,
       "assessment": "Airdrop ZK adalah contoh distribusi besar yang sukses secara operasional namun merugikan secara naratif — desain kriteria dan opacity treasury mengubah windfall komunitas menjadi krisis kepercayaan (MEDIUM)"
-    },
-    "lessons": []
-  },
-  "Walrus": {
-    "projectSlug": "walrus",
-    "status": "Sudah dilakukan",
-    "events": [
-      {
-        "id": "AD-001",
-        "title": "Community Airdrop Pre-Mainnet (4% Supply)",
-        "date": "2025-03-27 (klaim dibuka seiring mainnet & TGE)",
-        "type": "Retroactive/partisipasi-based (aktivitas testnet, penyimpanan blob, staking testnet, kampanye komunitas)",
-        "allocation": "4% total supply (200.000.000 WAL dari 5 miliar) — bagian dari 10% alokasi komunitas (HIGH) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]",
-        "recipients": "Wallet yang berpartisipasi di Walrus Testnet dan kampanye ekosistem sebelum mainnet; jumlah penerima tidak dipublikasikan resmi (LOW)",
-        "valueAtClaim": "0.5390 USD per WAL (close hari TGE 2025-03-27; intraday range 0.1-0.97774) [KuCoin WAL-USDT daily candle, https://www.kucoin.com/trade/WAL-USDT] (MEDIUM)",
-        "criteria": "Partisipasi testnet (menyimpan blob, staking WAL testnet, kontribusi) dan aktivitas kampanye; detail pembobotan per aktivitas tidak dipublikasikan penuh (MEDIUM) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]",
-        "antiSybil": "Tidak dirinci publik; eligibility berbasis riwayat aktivitas on-chain testnet (LOW)",
-        "relatedEvent": "EV-005 (Mainnet & TGE), EV-006 (distribusi airdrop komunitas)",
-        "citation": "Phase 3 EV-005, EV-006; Phase 6 Distribution (HIGH/MEDIUM)"
-      },
-      {
-        "id": "AD-002",
-        "title": "Community Distribution Post-Mainnet (6% Supply, Bertahap)",
-        "date": "2025-04 mulai — berlanjut bertahap sepanjang 2025",
-        "type": "Distribusi bertahap berbasis aktivitas ekosistem pasca-launch",
-        "allocation": "6% total supply (300.000.000 WAL) didistribusikan dalam fase-fase seiring kematangan ekosistem (HIGH) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]",
-        "recipients": "Partisipan ekosistem pasca-launch (pengguna storage, staker, kontributor); rincian per gelombang tidak dipublikasikan di sumber yang diakses (LOW)",
-        "valueAtClaim": "Tidak berlaku (distribusi multi-gelombang; harga mengikuti pasar saat tiap gelombang)",
-        "criteria": "Aktivitas mainnet (menyimpan data, staking, kontribusi ekosistem) sesuai pengumuman foundation per gelombang (MEDIUM)",
-        "antiSybil": "Tidak dirinci publik (LOW)",
-        "relatedEvent": "EV-006",
-        "citation": "Phase 3 EV-006; Phase 6 Distribution (HIGH/MEDIUM)"
-      }
-    ],
-    "povOutcomes": {
-      "founder": {
-        "verdict": "Sukses",
-        "verdictRaw": "Sukses",
-        "qualifier": "Mysten Labs / Walrus Foundation",
-        "shortTerm": "TGE + mainnet terlaksana tepat jadwal; $140 juta token sale selesai pra-launch; listing MEXC hari pertama diikuti exchange lain (HIGH) [CoinDesk, https://www.coindesk.com/business/2025/03/20/data-storage-protocol-walrus-raises-usd140m-in-token-sale-ahead-of-mainnet-launch]; [Altcoin Buzz, https://www.altcoinbuzz.io/product-release/crypto-gem-sui-is-launching-a-new-altcoin-today-walrus-wal/]",
-        "longTerm": "Jaringan storage produksi berjalan; namun harga WAL terdepresiasi ~85% dari close TGE dalam 12 bulan (0.539 → ~0.07-0.08 per data mingguan KuCoin Mar 2026) — tekanan naratif pada ekosistem [KuCoin WAL-USDT, https://www.kucoin.com/trade/WAL-USDT] (MEDIUM)",
-        "basis": "Phase 3 EV-004, EV-005; KuCoin price history (HIGH/MEDIUM)"
-      },
-      "vc": {
-        "verdict": "Sebagian",
-        "verdictRaw": "Sebagian",
-        "qualifier": "Standard Crypto, a16z crypto, Electric Capital, Franklin Templeton DA, RW3 Ventures",
-        "shortTerm": "Entry via token sale pra-TGE; harga hari TGE (high 0.97774 USD) memberi paper gain awal atas harga sale (tidak dipublikasikan) (MEDIUM) [KuCoin WAL-USDT, https://www.kucoin.com/trade/WAL-USDT]",
-        "longTerm": "Alokasi investor 7% dengan cliff 12 bulan (unlock pertama ~Maret 2026) terjadi saat harga ~0.07-0.11 USD — jauh di bawah harga hari TGE; realisasi nilai tertekan (MEDIUM) [Altcoin Buzz, https://www.altcoinbuzz.io/reviews/walrus-protocol-mainnet-and-tge-are-coming/]; [KuCoin WAL-USDT, https://www.kucoin.com/trade/WAL-USDT]",
-        "basis": "Phase 6 Distribution, Vesting Schedule; KuCoin price history (HIGH/MEDIUM)"
-      },
-      "retail": {
-        "verdict": "Sebagian",
-        "verdictRaw": "Sebagian",
-        "qualifier": "Penerima airdrop komunitas",
-        "shortTerm": "Penerima klaim 4% pre-mainnet mendapat WAL pada harga close TGE 0.5390 USD (high hari pertama 0.97774) — penjual hari pertama merealisasi gain dari biaya nol (MEDIUM) [KuCoin WAL-USDT, https://www.kucoin.com/trade/WAL-USDT]",
-        "longTerm": "Harga turun ke ~0.4078 pada +90 hari dan ~0.07-0.08 per Maret 2026 (-85% dari close TGE); pemegang pasif mengalami depresiasi besar tanpa mekanisme penahan nilai (MEDIUM) [KuCoin WAL-USDT, https://www.kucoin.com/trade/WAL-USDT]",
-        "basis": "KuCoin price history (MEDIUM)"
-      },
-      "community": {
-        "verdict": "Sebagian",
-        "verdictRaw": "Sebagian",
-        "qualifier": "Pengguna & peserta kampanye Sui/Walrus",
-        "shortTerm": "Distribusi luas (klaim portal + kampanye) berjalan; atensi komunitas Sui besar pada launch (MEDIUM) [Altcoin Buzz, https://www.altcoinbuzz.io/product-release/crypto-gem-sui-is-launching-a-new-altcoin-today-walrus-wal/]",
-        "longTerm": "Gelombang 6% post-mainnet menjaga keterlibatan, namun nilai per token menurun tajam; jumlah penerima tidak pernah dipublikasikan sehingga skala klaim tidak terverifikasi (LOW)",
-        "basis": "Phase 3 EV-006; Phase 6 Distribution (HIGH/LOW)"
-      },
-      "developer": {
-        "verdict": "Sukses",
-        "verdictRaw": "Sukses",
-        "qualifier": "Integrator SDK & aplikasi storage",
-        "shortTerm": "SDK, docs, dan infrastruktur storage live sejak TGE; developer dapat langsung membangun aplikasi data/AI di atas Walrus (HIGH) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]",
-        "longTerm": "Subsidi storage (bagian dari alokasi subsidies) mendukung adopsi; kelangsungan bergantung pendanaan foundation (MEDIUM) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]",
-        "basis": "Phase 4 Technology; Phase 7 Ecosystem (HIGH/MEDIUM)"
-      },
-      "institution": {
-        "verdict": "Sebagian",
-        "verdictRaw": "Sebagian",
-        "qualifier": "Investor token sale & exchange",
-        "shortTerm": "Partisipasi institusional (termasuk Franklin Templeton Digital Assets) dan listing CEX luas sejak hari pertama (HIGH) [CoinDesk, https://www.coindesk.com/business/2025/03/20/data-storage-protocol-walrus-raises-usd140m-in-token-sale-ahead-of-mainnet-launch]",
-        "longTerm": "Depresiasi harga 12 bulan dan jadwal unlock yang belum rinci penuh menjadi catatan portofolio (MEDIUM) [KuCoin WAL-USDT, https://www.kucoin.com/trade/WAL-USDT]",
-        "basis": "Phase 5 Financial; KuCoin price history (HIGH/MEDIUM)"
-      },
-      "validator": {
-        "verdict": "Sebagian",
-        "verdictRaw": "Sebagian",
-        "qualifier": "Storage node operators / staker",
-        "shortTerm": "Staking WAL aktif sejak mainnet; reward epoch berjalan untuk node yang memvalidasi storage proofs (HIGH) [Backpack Exchange, https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network]",
-        "longTerm": "Nilai reward dalam WAL terdepresiasi bersama harga; ekonomi node bergantung pertumbuhan permintaan storage riil (MEDIUM) [KuCoin WAL-USDT, https://www.kucoin.com/trade/WAL-USDT]",
-        "basis": "Phase 4 Technology; KuCoin price history (HIGH/MEDIUM)"
-      },
-      "builder": {
-        "verdict": "Sebagian",
-        "verdictRaw": "Sebagian",
-        "qualifier": "Protokol yang membangun di Walrus/Sui",
-        "shortTerm": "Akses storage terprogram + likuiditas ekosistem Sui sejak launch (MEDIUM) [Altcoin Buzz, https://www.altcoinbuzz.io/product-release/crypto-gem-sui-is-launching-a-new-altcoin-today-walrus-wal/]",
-        "longTerm": "Insentif berlanjut via subsidies, namun skala adopsi storage riil belum terverifikasi di sumber publik (LOW)",
-        "basis": "Phase 7 Ecosystem (MEDIUM/LOW)"
-      }
-    },
-    "priceTrajectory": {
-      "atClaim": {
-        "usd": 0.539,
-        "date": "2025-03-27",
-        "source": "KuCoin WAL-USDT daily candle close (hari TGE), https://www.kucoin.com/trade/WAL-USDT",
-        "evidence": "MEDIUM",
-        "raw": "0.5390 USD (2025-03-27) [KuCoin WAL-USDT daily candle close (hari TGE), https://www.kucoin.com/trade/WAL-USDT] (MEDIUM)"
-      },
-      "day30": {
-        "usd": 0.5356,
-        "date": "2025-04-26",
-        "source": "KuCoin WAL-USDT daily candle close, https://www.kucoin.com/trade/WAL-USDT",
-        "evidence": "MEDIUM",
-        "raw": "0.5356 USD (2025-04-26) [KuCoin WAL-USDT daily candle close, https://www.kucoin.com/trade/WAL-USDT] (MEDIUM)"
-      },
-      "day90": {
-        "usd": 0.4078,
-        "date": "2025-06-25",
-        "source": "KuCoin WAL-USDT daily candle close, https://www.kucoin.com/trade/WAL-USDT",
-        "evidence": "MEDIUM",
-        "raw": "0.4078 USD (2025-06-25) [KuCoin WAL-USDT daily candle close, https://www.kucoin.com/trade/WAL-USDT] (MEDIUM)"
-      },
-      "peak12m": {
-        "usd": 0.9777,
-        "date": "2025-03-27",
-        "source": "KuCoin WAL-USDT TGE-day high; scan mingguan 12 bulan (Mar 2025-Mar 2026) tidak menemukan high lebih tinggi (tertinggi berikutnya 0.77822 minggu Mei 2025), https://www.kucoin.com/trade/WAL-USDT",
-        "evidence": "MEDIUM",
-        "raw": "0.9777 USD (2025-03-27) [KuCoin WAL-USDT TGE-day high; scan mingguan 12 bulan (Mar 2025-Mar 2026) tidak menemukan high lebih tinggi (tertinggi berikutnya 0.77822 minggu Mei 2025), https://www.kucoin.com/trade/WAL-USDT] (MEDIUM)"
-      }
-    },
-    "retention": [],
-    "gaps": [
-      "Cohort penerima: memerlukan analisis on-chain per-alamat (persentase klaim & jual 7/30 hari pertama), tidak tersedia di sumber publik.",
-      "Jumlah wallet penerima airdrop tidak dipublikasikan resmi — klaim \"salah satu yang terbesar\" tidak terverifikasi kuantitatif.",
-      "Harga entry token sale investor tidak dipublikasikan — paper gain/loss VC tidak dapat dihitung pasti."
-    ],
-    "prospect": {
-      "met": null,
-      "unmet": null,
-      "signals": null,
-      "assessment": "Airdrop WAL sukses secara operasional dan distribusi, namun tanpa penahan nilai (fee share/burn efektif) dan dengan unlock bertahun-tahun di depan, retensi harga bergantung penuh pada adopsi storage riil yang belum terbukti skala besar (MEDIUM)"
-    },
-    "lessons": []
-  },
-  "Linea": {
-    "projectSlug": "linea",
-    "status": "Sudah dilakukan",
-    "events": [
-      {
-        "id": "AD-001",
-        "title": "TGE Airdrop LINEA (Distribusi Utama)",
-        "date": "2025-09-10 (klaim dibuka; window hingga 2025-12-09; snapshot 2025-07-30; eligibility checker live 2025-09-03 via Linea Hub)",
-        "type": "Retroactive points-based (LXP/LXP-L) dengan window klaim 90 hari",
-        "allocation": "9.360.000.000 LINEA (~13% dari 72 miliar supply) (HIGH) [The Block, https://www.theblock.co/post/370206/consensys-ethereum-l2-linea-launches-tge-with-9-4-billion-token-airdrop-after-brief-outage]; [CoinGape, https://coingape.com/trending/linea-airdrop-goes-live-september-10-what-to-expect-from-its-launch-price/]",
-        "recipients": "~749.000-750.000 wallet yang memegang LXP/LXP-L pada snapshot; klaim wajib dari alamat yang sama dengan saldo poin (HIGH) [CoinGape, https://coingape.com/trending/linea-airdrop-goes-live-september-10-what-to-expect-from-its-launch-price/]; [The Block, https://www.theblock.co/post/370206/consensys-ethereum-l2-linea-launches-tge-with-9-4-billion-token-airdrop-after-brief-outage]",
-        "valueAtClaim": "0.0232 USD per LINEA (close hari TGE 2025-09-10; intraday range 0.005-0.047479) [KuCoin LINEA-USDT daily candle, https://www.kucoin.com/trade/LINEA-USDT] (MEDIUM)",
-        "criteria": "Akumulasi LXP/LXP-L melalui aktivitas ekosistem Linea (testnet, DeFi Voyage/Surge campaigns, penggunaan dApp) sebelum snapshot 30 Juli 2025 (MEDIUM) [Bitrue, https://www.bitrue.com/blog/linea-tokenomics-and-airdrop-eligibility]; [BingX, https://bingx.com/en/learn/article/what-is-linea-tokenomics-and-listing-price-prediction]",
-        "antiSybil": "Snapshot berbasis saldo poin yang terakumulasi dari aktivitas nyata lintas kampanye panjang (2023-2025); mekanisme detail anti-sybil tidak dipublikasikan penuh (LOW)",
-        "relatedEvent": "EV TGE LINEA 2025-09-10",
-        "citation": "Phase 1 TGE; Phase 5 Fundraising Mechanism (HIGH/MEDIUM)"
-      },
-      {
-        "id": "AD-002",
-        "title": "Program Poin LXP/LXP-L (Basis Eligibility Pra-TGE)",
-        "date": "2023–2025 (berakhir pada snapshot 2025-07-30)",
-        "type": "Points program (non-token) sebagai mekanisme kualifikasi airdrop",
-        "allocation": "Tidak ada alokasi token langsung — poin dikonversi menjadi eligibility airdrop TGE (MEDIUM) [Bitrue, https://www.bitrue.com/blog/linea-tokenomics-and-airdrop-eligibility]",
-        "recipients": "Pengguna aktif ekosistem Linea selama era kampanye (Linea Voyage, Surge, DeFi Voyage dengan MetaMask & Intract) (MEDIUM) [CoinMarketCap Academy, https://coinmarketcap.com/academy/article/linea-network-defi-voyage]",
-        "valueAtClaim": "Tidak berlaku (poin bukan token; nilai terealisasi saat konversi eligibility airdrop)",
-        "criteria": "Aktivitas on-chain dan kampanye yang diakui sistem LXP/LXP-L (MEDIUM)",
-        "antiSybil": "Akumulasi poin berbasis aktivitas multi-tahun; detail filter sybil tidak dipublikasikan penuh (LOW)",
-        "relatedEvent": "Program insentif pra-TGE",
-        "citation": "Phase 3 Events; Phase 6 Token (MEDIUM)"
-      },
-      {
-        "id": "AD-003",
-        "title": "Linea Consortium Ecosystem Fund (Distribusi Masa Depan 75% Supply)",
-        "date": "2025 mulai — horizon 10 tahun",
-        "type": "Program distribusi ekosistem jangka panjang (bukan airdrop satu kali)",
-        "allocation": "75% total supply (~54 miliar LINEA) terkunci dengan pencairan bertahap 10 tahun, dikelola Linea Consortium (ConsenSys, Eigen Labs, ENS Labs, SharpLink, Status); unclaimed airdrop TGE juga mengalir ke fund ini (MEDIUM) [Bitrue, https://www.bitrue.com/blog/linea-tokenomics-and-airdrop-eligibility]; [MEXC Blog, https://blog.mexc.com/news/linea-airdrop-2025-how-to-claim-tokens/]",
-        "recipients": "Ekosistem Linea dan Ethereum (public goods, grants, insentif) sesuai governance Linea Association (MEDIUM) [The Block, https://www.theblock.co/post/370206/consensys-ethereum-l2-linea-launches-tge-with-9-4-billion-token-airdrop-after-brief-outage]",
-        "valueAtClaim": "Tidak berlaku (distribusi bertahap multi-tahun)",
-        "criteria": "Keputusan governance Linea Association/Consortium per program (MEDIUM)",
-        "antiSybil": "Tidak relevan (distribusi programatik, bukan klaim terbuka)",
-        "relatedEvent": "Tokenomics LINEA",
-        "citation": "Phase 5 Treasury; Phase 6 Distribution (MEDIUM)"
-      }
-    ],
-    "povOutcomes": {
-      "founder": {
-        "verdict": "Sukses",
-        "verdictRaw": "Sukses",
-        "qualifier": "ConsenSys / Linea Association",
-        "shortTerm": "TGE terlaksana 10 September 2025 (setelah outage singkat yang berhasil diatasi); klaim 90 hari berjalan; listing CEX luas (HIGH) [The Block, https://www.theblock.co/post/370206/consensys-ethereum-l2-linea-launches-tge-with-9-4-billion-token-airdrop-after-brief-outage]",
-        "longTerm": "Linea Association (Swiss) memegang kendali governance; 90% supply tetap di luar sirkulasi (locked/bertahap) — kontrol struktural jangka panjang terjaga (MEDIUM) [MEXC Blog, https://blog.mexc.com/news/linea-airdrop-2025-how-to-claim-tokens/]",
-        "basis": "Phase 3 TGE event; Phase 6 Distribution (HIGH/MEDIUM)"
-      },
-      "vc": {
-        "verdict": "Tidak relevan",
-        "verdictRaw": "Tidak relevan",
-        "qualifier": null,
-        "shortTerm": null,
-        "longTerm": null,
-        "basis": null
-      },
-      "retail": {
-        "verdict": "Gagal",
-        "verdictRaw": "Gagal",
-        "qualifier": "Penerima airdrop LXP",
-        "shortTerm": "Klaim dibuka dari close TGE 0.0232 USD (high hari pertama 0.047479) — penjual hari pertama merealisasi nilai dari poin yang dikumpulkan 2023-2025 (MEDIUM) [KuCoin LINEA-USDT, https://www.kucoin.com/trade/LINEA-USDT]",
-        "longTerm": "Harga turun ke 0.0177 pada +30 hari (-24%), 0.0081 pada +90 hari (-65%), dan ~0.0022 pada Agustus 2026 (-90% dari close TGE); pemegang pasif mengalami depresiasi ekstrem tanpa mekanisme penahan nilai (fee share tidak ada; gas tetap ETH) (MEDIUM) [KuCoin LINEA-USDT, https://www.kucoin.com/trade/LINEA-USDT]",
-        "basis": "KuCoin price history (MEDIUM)"
-      },
-      "community": {
-        "verdict": "Sebagian",
-        "verdictRaw": "Sebagian",
-        "qualifier": "Pemegang LXP/LXP-L & pengguna ekosistem",
-        "shortTerm": "~750k wallet menerima distribusi; klaim via Linea Hub berjalan (dengan outage singkat pra-klaim yang diatasi) (HIGH) [The Block, https://www.theblock.co/post/370206/consensys-ethereum-l2-linea-launches-tge-with-9-4-billion-token-airdrop-after-brief-outage]",
-        "longTerm": "Nilai per token menurun tajam; mekanisme governance (Linea Association) masih terpusat pada konsorsium — kekuatan komunitas riil belum teruji (MEDIUM) [Bitrue, https://www.bitrue.com/blog/linea-tokenomics-and-airdrop-eligibility]",
-        "basis": "Phase 3 TGE; Phase 6 Governance (HIGH/MEDIUM)"
-      },
-      "developer": {
-        "verdict": "Sebagian",
-        "verdictRaw": "Sebagian",
-        "qualifier": "Builder ekosistem Linea",
-        "shortTerm": "Ecosystem Fund 75% (10 tahun) menjanjikan pendanaan jangka panjang; tooling MetaMask/Infura native (MEDIUM) [Bitrue, https://www.bitrue.com/blog/linea-tokenomics-and-airdrop-eligibility]",
-        "longTerm": "Realisasi grants/insentif bergantung keputusan Linea Association; tanpa revenue share langsung, monetisasi builder bergantung adopsi aplikasi (LOW)",
-        "basis": "Phase 7 Ecosystem (MEDIUM/LOW)"
-      },
-      "institution": {
-        "verdict": "Sebagian",
-        "verdictRaw": "Sebagian",
-        "qualifier": "Exchange, fund, mitra konsorsium",
-        "shortTerm": "Listing CEX besar serentak; struktur \"tanpa investor eksternal\" dipasarkan sebagai alokasi netral untuk institusi (HIGH) [The Block, https://www.theblock.co/post/370206/consensys-ethereum-l2-linea-launches-tge-with-9-4-billion-token-airdrop-after-brief-outage]",
-        "longTerm": "Depresiasi -90% dalam ~11 bulan menjadikan LINEA aset berkinerja buruk untuk pemegang institusional awal; unlock ConsenSys 15% (5 tahun) dan Consortium Fund (10 tahun) menjadi overhang jangka panjang (MEDIUM) [KuCoin LINEA-USDT, https://www.kucoin.com/trade/LINEA-USDT]; [MEXC Blog, https://blog.mexc.com/news/linea-airdrop-2025-how-to-claim-tokens/]",
-        "basis": "Phase 5 Token Sale; KuCoin price history (HIGH/MEDIUM)"
-      },
-      "validator": {
-        "verdict": "Tidak relevan",
-        "verdictRaw": "Tidak relevan",
-        "qualifier": null,
-        "shortTerm": null,
-        "longTerm": null,
-        "basis": null
-      },
-      "builder": {
-        "verdict": "Sebagian",
-        "verdictRaw": "Sebagian",
-        "qualifier": "Aplikasi & protokol di Linea",
-        "shortTerm": "Akses ke basis pengguna MetaMask + likuiditas TGE; kampanye ekosistem berlanjut (MEDIUM) [BingX, https://bingx.com/en/learn/article/what-is-linea-tokenomics-and-listing-price-prediction]",
-        "longTerm": "Insentif masa depan dari Consortium Fund belum terinci per program; adopsi riil pasca-airdrop belum terverifikasi kuat di sumber publik (LOW)",
-        "basis": "Phase 7 Ecosystem (MEDIUM/LOW)"
-      }
-    },
-    "priceTrajectory": {
-      "atClaim": {
-        "usd": 0.0232,
-        "date": "2025-09-10",
-        "source": "KuCoin LINEA-USDT daily candle close (hari TGE), https://www.kucoin.com/trade/LINEA-USDT",
-        "evidence": "MEDIUM",
-        "raw": "0.0232 USD (2025-09-10) [KuCoin LINEA-USDT daily candle close (hari TGE), https://www.kucoin.com/trade/LINEA-USDT] (MEDIUM)"
-      },
-      "day30": {
-        "usd": 0.0177,
-        "date": "2025-10-10",
-        "source": "KuCoin LINEA-USDT daily candle close, https://www.kucoin.com/trade/LINEA-USDT",
-        "evidence": "MEDIUM",
-        "raw": "0.0177 USD (2025-10-10) [KuCoin LINEA-USDT daily candle close, https://www.kucoin.com/trade/LINEA-USDT] (MEDIUM)"
-      },
-      "day90": {
-        "usd": 0.0081,
-        "date": "2025-12-09",
-        "source": "KuCoin LINEA-USDT daily candle close, https://www.kucoin.com/trade/LINEA-USDT",
-        "evidence": "MEDIUM",
-        "raw": "0.0081 USD (2025-12-09) [KuCoin LINEA-USDT daily candle close, https://www.kucoin.com/trade/LINEA-USDT] (MEDIUM)"
-      },
-      "peak12m": {
-        "usd": 0.0475,
-        "date": "2025-09-10",
-        "source": "KuCoin LINEA-USDT TGE-day high; scan mingguan Sep 2025-Agu 2026 tidak menemukan high lebih tinggi (tertinggi berikutnya 0.0353 minggu Sep 2025). Catatan: window 12 bulan penuh berakhir 2026-09-09 (belum selesai saat laporan ini ditulis; data hingga 2026-08-20), https://www.kucoin.com/trade/LINEA-USDT",
-        "evidence": "MEDIUM",
-        "raw": "0.0475 USD (2025-09-10) [KuCoin LINEA-USDT TGE-day high; scan mingguan Sep 2025-Agu 2026 tidak menemukan high lebih tinggi (tertinggi berikutnya 0.0353 minggu Sep 2025). Catatan: window 12 bulan penuh berakhir 2026-09-09 (belum selesai saat laporan ini ditulis; data hingga 2026-08-20), https://www.kucoin.com/trade/LINEA-USDT] (MEDIUM)"
-      }
-    },
-    "retention": [],
-    "gaps": [
-      "Cohort penerima: memerlukan analisis on-chain per-alamat (klaim vs jual 7/30 hari), tidak tersedia di sumber publik.",
-      "Jumlah final token tidak diklaim yang kembali ke Ecosystem Fund setelah 9 Desember 2025 belum dipublikasikan.",
-      "TVL dan aktivitas jaringan pasca-TGE (Q4 2025 - 2026) belum tersedia di sumber yang diakses."
-    ],
-    "prospect": {
-      "met": null,
-      "unmet": null,
-      "signals": null,
-      "assessment": "Airdrop LINEA adalah distribusi dengan positioning institusional yang rapi (tanpa investor eksternal, konsorsium pengelola) namun menghasilkan outcome retail terburuk di cohort-nya: -90% dalam 11 bulan — kombinasi float kecil, utilitas tanpa arus kas, dan overhang 10 tahun (MEDIUM)"
     },
     "lessons": []
   }
