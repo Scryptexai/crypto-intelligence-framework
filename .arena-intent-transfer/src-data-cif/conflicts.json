@@ -1,0 +1,484 @@
+{
+  "Arbitrum": [
+    {
+      "id": "C-001",
+      "projectSlug": "arbitrum",
+      "category": "Financial",
+      "title": "Treasury Size ($1.21B vs $1.3B+)",
+      "description": "Messari melaporkan $1.21B (per 31 Mei 2025), sementara KuCoin melaporkan $1.3B+. Perbedaan ~$90M (7%).",
+      "severity": "Medium",
+      "status": "Unresolved",
+      "versionA": {
+        "source": "Messari",
+        "value": "$1.21B",
+        "date": "2025-05-31",
+        "url": "https://messari.io/",
+        "evidence": "Treasury size, reported as of 31 May 2025"
+      },
+      "versionB": {
+        "source": "KuCoin",
+        "value": "$1.3B+",
+        "date": "",
+        "url": "https://www.kucoin.com/",
+        "evidence": "More recent data than Messari's; exact capture date not stated"
+      },
+      "resolution": "Perbedaan disebabkan oleh waktu pengambilan data dan metodologi. Messari per 31 Mei 2025; KuCoin data lebih baru. Tidak resolved.",
+      "affectedKnowledge": [
+        "K-002"
+      ],
+      "affectedPhase": "Phase 5"
+    },
+    {
+      "id": "C-004",
+      "projectSlug": "arbitrum",
+      "category": "Market",
+      "title": "Daily Transactions (4.7M vs 1.5M)",
+      "description": "KuCoin melaporkan 4.7M daily transactions (Feb 2026), sementara Blockeden melaporkan 1.5M.",
+      "severity": "High",
+      "status": "Unresolved",
+      "versionA": {
+        "source": "KuCoin",
+        "value": "4.7M daily transactions",
+        "date": "2026-02",
+        "url": "https://www.kucoin.com/",
+        "evidence": ""
+      },
+      "versionB": {
+        "source": "Blockeden",
+        "value": "1.5M daily transactions",
+        "date": "",
+        "url": "https://blockeden.xyz/",
+        "evidence": ""
+      },
+      "resolution": "Perbedaan karena periode waktu berbeda atau metodologi berbeda. Tidak resolved.",
+      "affectedKnowledge": [],
+      "affectedPhase": "Phase 8"
+    },
+    {
+      "id": "C-008",
+      "projectSlug": "arbitrum",
+      "category": "Token",
+      "title": "Distribution Percentages (42.78% vs 35.3% DAO)",
+      "description": "The Block: 42.78% DAO Treasury; KuCoin: 35.3% DAO.",
+      "severity": "High",
+      "status": "Unresolved",
+      "versionA": {
+        "source": "The Block",
+        "value": "42.78% DAO Treasury",
+        "date": "",
+        "url": "https://www.theblock.co/",
+        "evidence": ""
+      },
+      "versionB": {
+        "source": "KuCoin",
+        "value": "35.3% DAO",
+        "date": "",
+        "url": "https://www.kucoin.com/",
+        "evidence": ""
+      },
+      "resolution": "Perbedaan karena kategorisasi yang berbeda (DAO Treasury vs Foundation operational budget). Tidak resolved.",
+      "affectedKnowledge": [
+        "K-010"
+      ],
+      "affectedPhase": "Phase 6"
+    },
+    {
+      "id": "C-009",
+      "projectSlug": "arbitrum",
+      "category": "Governance",
+      "title": "Voting Power Concentration (Top 10 ~50% vs ~85%)",
+      "description": "Beberapa sumber menyebut top 10 addresses ~50%, sumber lain menyebut top 100 hold 60-85%.",
+      "severity": "High",
+      "status": "Unresolved",
+      "versionA": {
+        "source": "Phase 6 — Holder Distribution",
+        "value": "Top 10 addresses ~50%",
+        "date": "",
+        "url": "",
+        "evidence": "Internal dataset"
+      },
+      "versionB": {
+        "source": "Phase 9 — Governance Decision Pattern",
+        "value": "Top 100 hold 60-85%",
+        "date": "",
+        "url": "",
+        "evidence": "Internal dataset"
+      },
+      "resolution": "Perbedaan karena cakupan analisis (top 10 vs top 100). Tidak resolved.",
+      "affectedKnowledge": [
+        "K-004",
+        "K-005"
+      ],
+      "affectedPhase": "Phase 6"
+    }
+  ],
+  "Curve": [
+    {
+      "id": "C-001",
+      "projectSlug": "curve",
+      "category": "Tokenomics",
+      "title": "Komposisi distribusi non-komunitas (Team 30% vs shareholders 30%)",
+      "description": "Phase 6 dataset mencatat Team 30%/Investors 3%/Foundation 3%/Employees 2%; sumber publik umum menyebut shareholders 30%/team 3%/early users 5%. Atribusi 30% supply berbeda penerimanya.",
+      "severity": "High",
+      "status": "Unresolved",
+      "versionA": {
+        "source": "Phase 6 dataset (pipeline)",
+        "value": "Community 62%, Team 30% (2y vesting), Investors 3% (2y), Foundation 3% (4y), Employees 2% (2y)",
+        "date": "",
+        "url": "",
+        "evidence": "Internal dataset"
+      },
+      "versionB": {
+        "source": "Sumber publik umum (liputan pengumuman CRV Agu 2020)",
+        "value": "Community 62%, shareholders 30%, team 3%, early users 5%",
+        "date": "2020-08",
+        "url": "",
+        "evidence": "Tidak primer; agregasi liputan publik"
+      },
+      "resolution": "Keduanya dipertahankan; verifikasi dokumen primer Agustus 2020 diperlukan sebelum memilih.",
+      "affectedKnowledge": [
+        "K-002"
+      ],
+      "affectedPhase": "Phase 6"
+    }
+  ],
+  "Lido": [
+    {
+      "id": "C-001",
+      "projectSlug": "lido",
+      "category": "",
+      "title": "Category: Tokenomics / Fee Switch",
+      "description": "Phase 5 mencatat \"fee switch activated 10%\" dan Phase 6 mencatat \"fee switch 5% (2020-2024), 10% (Februari 2024)\" namun Phase 5 juga menyebut \"sebelum fee switch: 5% operator + 5% DAO; setelah fee switch: 5% operator + 10% DAO = 15% total fee\". Terdapat inkonsistensi kecil pada interpretasi total fee: 10% vs 15% (apakah DAO fee 10% dari total rewards atau 10% + 5% operator = 15%).",
+      "severity": "Medium",
+      "status": "Unresolved",
+      "versionA": {
+        "source": "10% (Februari 2024)\" namun Phase 5 juga menyebut \"sebelum fee switch",
+        "value": "5% operator + 5% DAO",
+        "date": "",
+        "url": "",
+        "evidence": ""
+      },
+      "versionB": {
+        "source": "setelah fee switch",
+        "value": "5% operator + 10% DAO = 15% total fee\"",
+        "date": "",
+        "url": "",
+        "evidence": ""
+      },
+      "resolution": "Tidak ditemukan bukti on-chain yang memastikan apakah total fee 10% (DAO only) atau 15% (DAO + operator) dalam satu entitas. Masing-masing fase menggunakan interpretasi berbeda.",
+      "affectedKnowledge": [
+        "K-005",
+        "K-008"
+      ],
+      "affectedPhase": "Phase 5, Phase 6"
+    }
+  ],
+  "Linea": [
+    {
+      "id": "C-002",
+      "projectSlug": "linea",
+      "category": "Timeline",
+      "title": "Tanggal TGE LINEA (akhir Juli 2025 vs 10 September 2025)",
+      "description": "Sumber pra-launch menyebut TGE akhir Juli 2025; realisasi pelaksanaan adalah 10 September 2025.",
+      "severity": "Medium",
+      "status": "Resolved",
+      "versionA": {
+        "source": "Bitrue (pra-launch)",
+        "value": "TGE akhir Juli 2025",
+        "date": "2025-07-15",
+        "url": "https://www.bitrue.com/blog/linea-tokenomics-and-airdrop-eligibility",
+        "evidence": "Artikel pra-launch"
+      },
+      "versionB": {
+        "source": "The Block (pelaksanaan)",
+        "value": "TGE 10 September 2025",
+        "date": "2025-09-10",
+        "url": "https://www.theblock.co/post/370206/consensys-ethereum-l2-linea-launches-tge-with-9-4-billion-token-airdrop-after-brief-outage",
+        "evidence": "Liputan eksekusi"
+      },
+      "resolution": "Tanggal pelaksanaan 2025-09-10 dipakai (sumber eksekusi); laporan pra-launch dicatat sebagai ekspektasi yang meleset.",
+      "affectedKnowledge": [],
+      "affectedPhase": "Phase 1"
+    }
+  ],
+  "Walrus": [
+    {
+      "id": "C-001",
+      "projectSlug": "walrus",
+      "category": "Tokenomics",
+      "title": "Breakdown distribusi komunitas (43% reserve vs 10% airdrop)",
+      "description": "Altcoin Buzz menyebut Community Reserve 43% dengan 690 juta token available at launch; Backpack Exchange memecah 10% community airdrop (4% pre-mainnet + 6% post-mainnet). Keduanya dapat konsisten namun tidak dikonfirmasi dokumen resmi.",
+      "severity": "Medium",
+      "status": "Unresolved",
+      "versionA": {
+        "source": "Altcoin Buzz",
+        "value": "Community Reserve 43% (690 juta available at launch, linear unlock hingga Mar 2033)",
+        "date": "2025-03",
+        "url": "https://www.altcoinbuzz.io/reviews/walrus-protocol-mainnet-and-tge-are-coming/",
+        "evidence": ""
+      },
+      "versionB": {
+        "source": "Backpack Exchange Learn",
+        "value": "Community airdrop 10% (4% pre-mainnet + 6% post-mainnet)",
+        "date": "2025-05",
+        "url": "https://learn.backpack.exchange/articles/what-is-walrus-a-programmable-decentralized-storage-network",
+        "evidence": ""
+      },
+      "resolution": "Keduanya dipertahankan dengan flag INKONSISTENSI; dokumen tokenomics resmi Walrus diperlukan.",
+      "affectedKnowledge": [],
+      "affectedPhase": "Phase 6"
+    }
+  ],
+  "BNB Chain": [
+    {
+      "id": "C-007",
+      "projectSlug": "bnb-chain",
+      "category": "",
+      "title": "Category: TVL — BSC Puncak",
+      "description": "Beberapa sumber menyebut TVL BSC puncak $40M, sumber lain menyebut $40B (perbedaan besaran).",
+      "severity": "Medium",
+      "status": "Resolved",
+      "versionA": {
+        "source": "Beberapa sumber",
+        "value": "TVL BSC puncak $40M",
+        "date": "",
+        "url": "",
+        "evidence": ""
+      },
+      "versionB": {
+        "source": "sumber lain",
+        "value": "$40B (perbedaan besaran)",
+        "date": "",
+        "url": "",
+        "evidence": ""
+      },
+      "resolution": "Diselesaikan — puncak TVL adalah $40 miliar (bukan $40 juta); sumber resmi DefiLlama digunakan.",
+      "affectedKnowledge": [
+        "K-01 (Kompatibilitas EVM)"
+      ],
+      "affectedPhase": "Phase 3, Phase 8"
+    }
+  ],
+  "Polkadot": [
+    {
+      "id": "C-001",
+      "projectSlug": "polkadot",
+      "category": "",
+      "title": "Category: Tokenomics (Redenomination)",
+      "description": "Tanggal redenominasi DOT tercatat berbeda antar sumber — Phase 3 (EV-012) menyebut 2020-08-18, beberapa sumber lain menyebut 2020-08-21.",
+      "severity": "Low",
+      "status": "Resolved",
+      "versionA": {
+        "source": "Phase 3 (EV-012)",
+        "value": "2020-08-18",
+        "date": "",
+        "url": "",
+        "evidence": ""
+      },
+      "versionB": {
+        "source": "beberapa sumber lain",
+        "value": "2020-08-21",
+        "date": "",
+        "url": "",
+        "evidence": ""
+      },
+      "resolution": "Tanggal referendum eksekusi on-chain (2020-08-18) digunakan; perbedaan 3 hari dianggap zona waktu/latency node. Tidak mempengaruhi kesimpulan.",
+      "affectedKnowledge": [
+        "K-010 (Tokenomics Inflationary)"
+      ],
+      "affectedPhase": "Phase 3"
+    }
+  ],
+  "Terra": [
+    {
+      "id": "C-003",
+      "projectSlug": "terra",
+      "category": "Token",
+      "title": "LUNC total supply (~6.1T CoinGecko vs ~6.5T burn tracker)",
+      "description": "CoinGecko melaporkan total supply ~6.1T LUNC (circulating ~5.8T); Lunc Burn tracker melaporkan ~6.5T. Perbedaan besar karena metodologi pelaporan (apakah supply pra-burn dihitung).",
+      "severity": "High",
+      "status": "Unresolved",
+      "versionA": {
+        "source": "CoinGecko",
+        "value": "~6.1T LUNC total (circulating ~5.8T)",
+        "date": "",
+        "url": "https://www.coingecko.com/",
+        "evidence": ""
+      },
+      "versionB": {
+        "source": "Lunc Burn tracker",
+        "value": "~6.5T LUNC",
+        "date": "",
+        "url": "",
+        "evidence": "Komunitas burn tracker"
+      },
+      "resolution": "Perbedaan metodologi pelaporan (supply pra-burn vs pasca-burn). Tidak resolved.",
+      "affectedKnowledge": [],
+      "affectedPhase": "Phase 6"
+    },
+    {
+      "id": "C-014",
+      "projectSlug": "terra",
+      "category": "Token",
+      "title": "LUNA total=circulating 1,170,305,141 vs 200M community pool belum ter-spend",
+      "description": "Phase 6 menulis total supply dan circulating supply sama (1,170,305,141 LUNA), padahal ada ~200M LUNA di community pool yang belum ter-spend — circulating efektif seharusnya lebih rendah.",
+      "severity": "Medium",
+      "status": "Unresolved",
+      "versionA": {
+        "source": "Phase 6 dataset",
+        "value": "Total = circulating = 1,170,305,141 LUNA",
+        "date": "",
+        "url": "",
+        "evidence": "Internal dataset"
+      },
+      "versionB": {
+        "source": "On-chain community pool",
+        "value": "~200,000,000 LUNA di community pool belum ter-spend",
+        "date": "",
+        "url": "",
+        "evidence": "Catatan on-chain Terra 2.0"
+      },
+      "resolution": "Keduanya dipertahankan; circulating efektif bergantung pada apakah community pool dihitung. Tidak resolved.",
+      "affectedKnowledge": [],
+      "affectedPhase": "Phase 6"
+    },
+    {
+      "id": "C-002",
+      "projectSlug": "terra",
+      "category": "Jumlah BTC LFG Puncak",
+      "title": "Bervariasi antara 80,000 BTC (Nansen) dan 80,394 BTC (Blockchain.com/dashboard LFG). Perbe",
+      "description": "Bervariasi antara 80,000 BTC (Nansen) dan 80,394 BTC (Blockchain.com/dashboard LFG). Perbedaan 394 BTC (0.4%).",
+      "severity": "Medium",
+      "status": "Unresolved (Low impact)",
+      "versionA": {
+        "source": "Nansen",
+        "value": "80,000 BTC",
+        "date": "",
+        "url": "",
+        "evidence": ""
+      },
+      "versionB": {
+        "source": "Blockchain.com/dashboard LFG",
+        "value": "80,394 BTC",
+        "date": "",
+        "url": "",
+        "evidence": ""
+      },
+      "resolution": "Tidak dapat diselesaikan tanpa akses on-chain penuh; perbedaan kecil, tidak mengubah kesimpulan (jumlah besar habis Mei 2022).",
+      "affectedKnowledge": [
+        "K-006"
+      ],
+      "affectedPhase": "Phase 3, Phase 5"
+    }
+  ],
+  "Cardano": [
+    {
+      "id": "C-001",
+      "projectSlug": "cardano",
+      "category": "Timeline",
+      "title": "Definisi TGE ADA (akhir voucher Jan 2017 vs mainnet 29 Sep 2017)",
+      "description": "Sumber berbeda mendefinisikan TGE ADA berbeda: akhir penjualan voucher Januari 2017, snapshot distribusi ke voucher holder, atau mainnet live 29 September 2017.",
+      "severity": "High",
+      "status": "Unresolved",
+      "versionA": {
+        "source": "Sumber penjualan voucher",
+        "value": "TGE = akhir penjualan voucher, Januari 2017",
+        "date": "2017-01",
+        "url": "",
+        "evidence": ""
+      },
+      "versionB": {
+        "source": "Sumber mainnet",
+        "value": "TGE = mainnet live, 29 September 2017",
+        "date": "2017-09-29",
+        "url": "",
+        "evidence": ""
+      },
+      "resolution": "Kedua tanggal sahih untuk definisi berbeda (penjualan vs mainnet). Dataset memakai mainnet 2017-09-29 sebagai launch kanonikal; ambiguitas dicatat.",
+      "affectedKnowledge": [],
+      "affectedPhase": "Phase 1"
+    },
+    {
+      "id": "C-003",
+      "projectSlug": "cardano",
+      "category": "Token",
+      "title": "Jumlah ADA terjual (~25.9B Messari vs ~26.9B sumber lain)",
+      "description": "Messari melaporkan ~25.9B ADA terjual selama penjualan; beberapa sumber lain menyebut ~26.9B termasuk alokasi tim/foundation.",
+      "severity": "High",
+      "status": "Unresolved",
+      "versionA": {
+        "source": "Messari",
+        "value": "~25.9B ADA terjual",
+        "date": "",
+        "url": "https://messari.io/",
+        "evidence": ""
+      },
+      "versionB": {
+        "source": "Sumber lain (termasuk alokasi tim/foundation)",
+        "value": "~26.9B ADA",
+        "date": "",
+        "url": "",
+        "evidence": ""
+      },
+      "resolution": "Perbedaan cakupan (penjualan publik saja vs termasuk alokasi tim/foundation). Tidak resolved.",
+      "affectedKnowledge": [],
+      "affectedPhase": "Phase 5"
+    }
+  ],
+  "SushiSwap": [
+    {
+      "id": "C-001",
+      "projectSlug": "sushiswap",
+      "category": "Token",
+      "title": "Circulating supply SUSHI (~262M CoinGecko vs hard cap 250M)",
+      "description": "CoinGecko melaporkan circulating supply ~262M SUSHI sementara max supply hard cap 250M SUSHI; Etherscan total supply menunjukkan ~249.9M. Angka circulating melampaui hard cap adalah anomali definisi.",
+      "severity": "High",
+      "status": "Unresolved",
+      "versionA": {
+        "source": "CoinGecko",
+        "value": "Circulating ~262M SUSHI",
+        "date": "",
+        "url": "https://www.coingecko.com/",
+        "evidence": ""
+      },
+      "versionB": {
+        "source": "Etherscan",
+        "value": "Total supply ~249.9M SUSHI (hard cap 250M)",
+        "date": "",
+        "url": "https://etherscan.io/",
+        "evidence": ""
+      },
+      "resolution": "Anomali kemungkinan karena metodologi 'circulating' agregator (termasuk token yang secara teknis belum beredar). Tidak resolved.",
+      "affectedKnowledge": [],
+      "affectedPhase": "Phase 6"
+    }
+  ],
+  "Uniswap": [
+    {
+      "id": "C-003",
+      "projectSlug": "uniswap",
+      "category": "Financial",
+      "title": "Seed round amount (~$1M vs ~$2M)",
+      "description": "Jumlah seed round tidak diungkap resmi; laporan media bervariasi antara ~$1M dan ~$2M.",
+      "severity": "Low",
+      "status": "Unresolved",
+      "versionA": {
+        "source": "Laporan media (sebagian)",
+        "value": "~$1M",
+        "date": "",
+        "url": "",
+        "evidence": ""
+      },
+      "versionB": {
+        "source": "Laporan media (sebagian lain)",
+        "value": "~$2M",
+        "date": "",
+        "url": "",
+        "evidence": ""
+      },
+      "resolution": "Tidak ada disclosure resmi; dataset menulis '~$1M-$2M'. Tidak resolved.",
+      "affectedKnowledge": [],
+      "affectedPhase": "Phase 5"
+    }
+  ]
+}
