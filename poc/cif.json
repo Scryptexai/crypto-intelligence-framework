@@ -1,7 +1,7 @@
 {
   "meta": {
     "schema": "cif-export/1",
-    "generated": "2026-08-20 04:54 UTC",
+    "generated": "2026-08-20 06:17 UTC",
     "projects": 60,
     "deep": 60,
     "summary": 0,
@@ -80,12 +80,568 @@
       "n": "Aptos",
       "tier": "Deep",
       "file": "examples/CaseStudies/Aptos.md",
-      "cat": "",
-      "era": "",
+      "cat": "Layer 1 Blockchain / Smart Contract Platform (Move VM)",
+      "era": "2022–",
+      "tags": [
+        "l1",
+        "airdrop",
+        "testnet-incentive"
+      ]
+    },
+    {
+      "n": "Berachain",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Berachain.md",
+      "cat": "Layer 1 blockchain / Proof-of-Liquidity consensus",
+      "era": "2022–",
+      "tags": [
+        "l1",
+        "airdrop"
+      ]
+    },
+    {
+      "n": "Cardano",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Cardano.md",
+      "cat": "Layer 1 Blockchain / Smart Contract Platform / Proof-of-Stake Blockchain",
+      "era": "2015–",
+      "tags": [
+        "l1",
+        "airdrop"
+      ]
+    },
+    {
+      "n": "Celestia",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Celestia.md",
+      "cat": "Modular Data Availability (DA) Layer / Modular Blockchain",
+      "era": "2022–",
       "tags": [
         "airdrop",
-        "testnet-incentive",
-        "l1"
+        "modular"
+      ]
+    },
+    {
+      "n": "Compound",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Compound.md",
+      "cat": "decentralized lending / borrowing protocol",
+      "era": "2017–",
+      "tags": [
+        "airdrop",
+        "mining"
+      ]
+    },
+    {
+      "n": "Cosmos",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Cosmos.md",
+      "cat": "cross-chain messaging / interoperability / app-chain framework",
+      "era": "2017–",
+      "tags": [
+        "airdrop",
+        "modular",
+        "bridge"
+      ]
+    },
+    {
+      "n": "Curve",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Curve.md",
+      "cat": "DeFi Automated Market Maker — stableswap/DEX optimal untuk aset bernilai serupa (stablecoin, wr",
+      "era": "2019–",
+      "tags": [
+        "defi",
+        "airdrop",
+        "liquid-staking",
+        "amm",
+        "stablecoin",
+        "governance"
+      ]
+    },
+    {
+      "n": "EOS",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/EOS.md",
+      "cat": "Layer 1 Blockchain / Smart Contract Platform",
+      "era": "2017–",
+      "tags": [
+        "l1",
+        "airdrop"
+      ]
+    },
+    {
+      "n": "EigenLayer",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/EigenLayer.md",
+      "cat": "restaking (restaking) / liquidity re-staking; middleware / Actively Validated Services (AVS) in",
+      "era": "2021–",
+      "tags": [
+        "airdrop",
+        "lrt",
+        "liquid-restaking",
+        "restaking",
+        "liquid-staking",
+        "modular",
+        "shared-security"
+      ]
+    },
+    {
+      "n": "Ethena",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Ethena.md",
+      "cat": "synthetic dollar / delta-neutral stablecoin protocol",
+      "era": "2023–",
+      "tags": [
+        "airdrop",
+        "stablecoin",
+        "synthetic"
+      ]
+    },
+    {
+      "n": "EtherFi",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/EtherFi.md",
+      "cat": "Non-custodial liquid staking & restaking; decentralized finance (DeFi) — specifically liquid re",
+      "era": "2023–",
+      "tags": [
+        "defi",
+        "airdrop",
+        "lrt",
+        "liquid-restaking",
+        "restaking",
+        "liquid-staking",
+        "shared-security"
+      ]
+    },
+    {
+      "n": "Ethereum",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Ethereum.md",
+      "cat": "Smart contract platform / Layer 1 blockchain",
+      "era": "2014–",
+      "tags": [
+        "l1",
+        "airdrop"
+      ]
+    },
+    {
+      "n": "Friend.tech",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Friend.tech.md",
+      "cat": "SocialFi / Social Finance / Creator Economy Platform",
+      "era": "2023–",
+      "tags": [
+        "social",
+        "airdrop"
+      ]
+    },
+    {
+      "n": "Grass",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Grass.md",
+      "cat": "Token Address",
+      "era": "2021–",
+      "tags": [
+        "airdrop"
+      ]
+    },
+    {
+      "n": "Helium",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Helium.md",
+      "cat": "Decentralized Physical Infrastructure Network (DePIN) / Wireless Network (IoT LoRaWAN, 5G CBRS,",
+      "era": "2018–",
+      "tags": [
+        "airdrop",
+        "depin"
+      ]
+    },
+    {
+      "n": "Hyperliquid",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Hyperliquid.md",
+      "cat": "Layer 1 Blockchain / Decentralized Exchange (Perpetual Futures & Spot) / On-chain Order Book (C",
+      "era": "2021–",
+      "tags": [
+        "l1",
+        "airdrop",
+        "perps"
+      ]
+    },
+    {
+      "n": "Injective",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Injective.md",
+      "cat": "Layer-1 blockchain for decentralized finance / cross-chain derivatives exchange",
+      "era": "2020–",
+      "tags": [
+        "airdrop",
+        "bridge"
+      ]
+    },
+    {
+      "n": "Irys",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Irys.md",
+      "cat": "Permanent data provenance layer / Layer 1 blockchain",
+      "era": "2023–",
+      "tags": [
+        "l1",
+        "airdrop",
+        "testnet-incentive"
+      ]
+    },
+    {
+      "n": "Jito",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Jito.md",
+      "cat": "MEV infrastructure / Liquid Staking / Validator Client (Solana)",
+      "era": "2022–",
+      "tags": [
+        "airdrop",
+        "liquid-staking",
+        "governance"
+      ]
+    },
+    {
+      "n": "Jupiter",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Jupiter.md",
+      "cat": "DEX aggregator / swap infrastructure",
+      "era": "2021–",
+      "tags": [
+        "airdrop"
+      ]
+    },
+    {
+      "n": "Kamino",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Kamino.md",
+      "cat": "DeFi — automated concentrated liquidity management / lending & borrowing / leveraged vaults / p",
+      "era": "2022–",
+      "tags": [
+        "defi",
+        "airdrop",
+        "points"
+      ]
+    },
+    {
+      "n": "Lido",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Lido.md",
+      "cat": "liquid staking / staking infrastructure",
+      "era": "2020–",
+      "tags": [
+        "liquid-staking",
+        "efficiency",
+        "airdrop",
+        "oracle",
+        "governance"
+      ]
+    },
+    {
+      "n": "Linea",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Linea.md",
+      "cat": "Ethereum Layer 2 / Type-2 zkEVM Rollup (validity proof ke Ethereum L1)",
+      "era": "2020–",
+      "tags": [
+        "l1",
+        "l2",
+        "airdrop",
+        "governance"
+      ]
+    },
+    {
+      "n": "MakerDAO",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/MakerDAO.md",
+      "cat": "Decentralized Collateralized Debt Position (CDP) Protocol / Algorithmic Stablecoin Issuance / D",
+      "era": "2015–",
+      "tags": [
+        "airdrop",
+        "stablecoin",
+        "governance"
+      ]
+    },
+    {
+      "n": "MegaETH",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/MegaETH.md",
+      "cat": "High-performance Ethereum Layer 2 / Real-time blockchain",
+      "era": "2023–",
+      "tags": [
+        "l2",
+        "airdrop"
+      ]
+    },
+    {
+      "n": "Monad",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Monad.md",
+      "cat": "High-performance Layer 1 / Parallel EVM",
+      "era": "2022–",
+      "tags": [
+        "l1",
+        "airdrop"
+      ]
+    },
+    {
+      "n": "Near",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Near.md",
+      "cat": "Community / Grants",
+      "era": "2020–",
+      "tags": [
+        "airdrop"
+      ]
+    },
+    {
+      "n": "Notcoin",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Notcoin.md",
+      "cat": "Telegram Mini App / Tap-to-Earn Game / Consumer Crypto Onboarding",
+      "era": "2024–",
+      "tags": [
+        "airdrop"
+      ]
+    },
+    {
+      "n": "OlympusDAO",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/OlympusDAO.md",
+      "cat": "Protocol-owned liquidity / algorithmic currency / decentralized reserve currency",
+      "era": "2021–",
+      "tags": [
+        "airdrop",
+        "governance"
+      ]
+    },
+    {
+      "n": "Optimism",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Optimism.md",
+      "cat": "Ethereum Layer 2 scaling / Optimistic Rollup",
+      "era": "2021–",
+      "tags": [
+        "l2",
+        "airdrop"
+      ]
+    },
+    {
+      "n": "Polkadot",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Polkadot.md",
+      "cat": "Heterogeneous multi-chain network / blockchain interoperability protocol",
+      "era": "2017–",
+      "tags": [
+        "airdrop",
+        "bridge"
+      ]
+    },
+    {
+      "n": "Polygon",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Polygon.md",
+      "cat": "Layer 2 scaling / Ethereum scaling ecosystem (multi-chain: PoS, zkEVM, CDK, Miden, Avail)",
+      "era": "2019–",
+      "tags": [
+        "l2",
+        "airdrop"
+      ]
+    },
+    {
+      "n": "Polymarket",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Polymarket.md",
+      "cat": "Decentralized prediction market / information market",
+      "era": "2020–",
+      "tags": [
+        "airdrop",
+        "points"
+      ]
+    },
+    {
+      "n": "Pump.fun",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Pump.fun.md",
+      "cat": "Memecoin launchpad / fair launch platform dengan bonding curve",
+      "era": "2024–",
+      "tags": [
+        "airdrop"
+      ]
+    },
+    {
+      "n": "Pyth",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Pyth.md",
+      "cat": "Oracle network / price feed infrastructure (cross-chain data delivery)",
+      "era": "2020–",
+      "tags": [
+        "oracle",
+        "infra",
+        "airdrop",
+        "bridge"
+      ]
+    },
+    {
+      "n": "Render",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Render.md",
+      "cat": "Decentralized GPU compute marketplace / distributed rendering network",
+      "era": "2017–",
+      "tags": [
+        "airdrop"
+      ]
+    },
+    {
+      "n": "Scroll",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Scroll.md",
+      "cat": "zkEVM Layer 2 / Ethereum scaling",
+      "era": "2021–",
+      "tags": [
+        "l2",
+        "airdrop"
+      ]
+    },
+    {
+      "n": "Sei",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Sei.md",
+      "cat": "Layer 1 blockchain optimized for trading / high-performance DeFi",
+      "era": "2022–",
+      "tags": [
+        "l1",
+        "airdrop",
+        "modular"
+      ]
+    },
+    {
+      "n": "Solana",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Solana.md",
+      "cat": "Layer 1 blockchain / smart contract platform",
+      "era": "2017–",
+      "tags": [
+        "l1",
+        "airdrop"
+      ]
+    },
+    {
+      "n": "Starknet",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Starknet.md",
+      "cat": "Rollup sebagai Layer 2 (validium/ZK-rollup hibrida) — lebih spesifik: general-purpose ZK-rollup",
+      "era": "2020–",
+      "tags": [
+        "l2",
+        "airdrop"
+      ]
+    },
+    {
+      "n": "Sui",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Sui.md",
+      "cat": "Layer 1 blockchain / smart contract platform",
+      "era": "2021–",
+      "tags": [
+        "l1",
+        "airdrop",
+        "testnet-incentive"
+      ]
+    },
+    {
+      "n": "SushiSwap",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/SushiSwap.md",
+      "cat": "Automated Market Maker (AMM) DEX / Decentralized Exchange Aggregator / Cross-chain DEX",
+      "era": "2020–",
+      "tags": [
+        "airdrop",
+        "amm",
+        "bridge",
+        "governance"
+      ]
+    },
+    {
+      "n": "Terra",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Terra.md",
+      "cat": "Layer 1 blockchain / algorithmic stablecoin ecosystem",
+      "era": "2019–",
+      "tags": [
+        "l1",
+        "airdrop",
+        "stablecoin",
+        "synthetic"
+      ]
+    },
+    {
+      "n": "Uniswap",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Uniswap.md",
+      "cat": "decentralized exchange / automated market maker",
+      "era": "2018–",
+      "tags": [
+        "airdrop",
+        "amm"
+      ]
+    },
+    {
+      "n": "Vana",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Vana.md",
+      "cat": "data liquidity / data DAO infrastructure",
+      "era": "2021–",
+      "tags": [
+        "airdrop",
+        "governance"
+      ]
+    },
+    {
+      "n": "Walrus",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Walrus.md",
+      "cat": "Decentralized programmable data storage protocol (blob storage) di atas Sui",
+      "era": "2024–",
+      "tags": [
+        "airdrop",
+        "modular"
+      ]
+    },
+    {
+      "n": "Wormhole",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/Wormhole.md",
+      "cat": "cross-chain messaging / interoperability",
+      "era": "2020–",
+      "tags": [
+        "airdrop",
+        "bridge"
+      ]
+    },
+    {
+      "n": "dYdX",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/dYdX.md",
+      "cat": "decentralized perpetual futures exchange / orderbook DEX",
+      "era": "2017–",
+      "tags": [
+        "airdrop",
+        "perps"
+      ]
+    },
+    {
+      "n": "zkSync",
+      "tier": "Deep",
+      "file": "examples/CaseStudies/zkSync.md",
+      "cat": "ZK-rollup / Layer 2 scaling solution for Ethereum",
+      "era": "2018–",
+      "tags": [
+        "l2",
+        "airdrop"
       ]
     },
     {
@@ -113,16 +669,6 @@
       ]
     },
     {
-      "n": "Berachain",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Berachain.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop"
-      ]
-    },
-    {
       "n": "Blast",
       "tier": "Deep",
       "file": "examples/CaseStudies/Blast.md",
@@ -131,289 +677,6 @@
       "tags": [
         "airdrop",
         "l2"
-      ]
-    },
-    {
-      "n": "Cardano",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Cardano.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "l1"
-      ]
-    },
-    {
-      "n": "Celestia",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Celestia.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "modular"
-      ]
-    },
-    {
-      "n": "Compound",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Compound.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "mining"
-      ]
-    },
-    {
-      "n": "Cosmos",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Cosmos.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "modular",
-        "bridge"
-      ]
-    },
-    {
-      "n": "Curve",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Curve.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "liquid-staking",
-        "amm",
-        "stablecoin",
-        "governance"
-      ]
-    },
-    {
-      "n": "EOS",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/EOS.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "l1"
-      ]
-    },
-    {
-      "n": "EigenLayer",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/EigenLayer.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "lrt",
-        "liquid-restaking",
-        "restaking",
-        "liquid-staking",
-        "modular",
-        "shared-security"
-      ]
-    },
-    {
-      "n": "Ethena",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Ethena.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "stablecoin",
-        "synthetic"
-      ]
-    },
-    {
-      "n": "EtherFi",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/EtherFi.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "lrt",
-        "liquid-restaking",
-        "restaking",
-        "liquid-staking",
-        "shared-security"
-      ]
-    },
-    {
-      "n": "Ethereum",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Ethereum.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "l1"
-      ]
-    },
-    {
-      "n": "Friend.tech",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Friend.tech.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop"
-      ]
-    },
-    {
-      "n": "Grass",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Grass.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop"
-      ]
-    },
-    {
-      "n": "Helium",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Helium.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "depin"
-      ]
-    },
-    {
-      "n": "Hyperliquid",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Hyperliquid.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "perps",
-        "l1"
-      ]
-    },
-    {
-      "n": "Injective",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Injective.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "bridge"
-      ]
-    },
-    {
-      "n": "Irys",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Irys.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "testnet-incentive",
-        "l1"
-      ]
-    },
-    {
-      "n": "Jito",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Jito.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "liquid-staking",
-        "governance"
-      ]
-    },
-    {
-      "n": "Jupiter",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Jupiter.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop"
-      ]
-    },
-    {
-      "n": "Kamino",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Kamino.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "points"
-      ]
-    },
-    {
-      "n": "Lido",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Lido.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "liquid-staking",
-        "oracle",
-        "governance"
-      ]
-    },
-    {
-      "n": "Linea",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Linea.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "governance",
-        "l2",
-        "l1"
-      ]
-    },
-    {
-      "n": "MakerDAO",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/MakerDAO.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "stablecoin",
-        "governance"
-      ]
-    },
-    {
-      "n": "MegaETH",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/MegaETH.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "l2"
-      ]
-    },
-    {
-      "n": "Monad",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Monad.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "l1"
       ]
     },
     {
@@ -429,239 +692,6 @@
       ]
     },
     {
-      "n": "Near",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Near.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop"
-      ]
-    },
-    {
-      "n": "Notcoin",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Notcoin.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop"
-      ]
-    },
-    {
-      "n": "OlympusDAO",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/OlympusDAO.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "governance"
-      ]
-    },
-    {
-      "n": "Optimism",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Optimism.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "l2"
-      ]
-    },
-    {
-      "n": "Polkadot",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Polkadot.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "bridge"
-      ]
-    },
-    {
-      "n": "Polygon",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Polygon.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "l2"
-      ]
-    },
-    {
-      "n": "Polymarket",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Polymarket.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "points"
-      ]
-    },
-    {
-      "n": "Pump.fun",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Pump.fun.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop"
-      ]
-    },
-    {
-      "n": "Pyth",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Pyth.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "oracle",
-        "bridge"
-      ]
-    },
-    {
-      "n": "Render",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Render.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop"
-      ]
-    },
-    {
-      "n": "Scroll",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Scroll.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "l2"
-      ]
-    },
-    {
-      "n": "Sei",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Sei.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "modular",
-        "l1"
-      ]
-    },
-    {
-      "n": "Solana",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Solana.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop"
-      ]
-    },
-    {
-      "n": "Starknet",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Starknet.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "l2"
-      ]
-    },
-    {
-      "n": "Sui",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Sui.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "testnet-incentive",
-        "l1"
-      ]
-    },
-    {
-      "n": "SushiSwap",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/SushiSwap.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "amm",
-        "bridge",
-        "governance"
-      ]
-    },
-    {
-      "n": "Terra",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Terra.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "stablecoin",
-        "synthetic",
-        "l1"
-      ]
-    },
-    {
-      "n": "Uniswap",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Uniswap.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "amm"
-      ]
-    },
-    {
-      "n": "Vana",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Vana.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "governance"
-      ]
-    },
-    {
-      "n": "Walrus",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Walrus.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "modular"
-      ]
-    },
-    {
-      "n": "Wormhole",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/Wormhole.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "bridge"
-      ]
-    },
-    {
       "n": "Yearn Finance",
       "tier": "Deep",
       "file": "examples/CaseStudies/Yearn Finance.md",
@@ -670,28 +700,6 @@
       "tags": [
         "airdrop",
         "governance"
-      ]
-    },
-    {
-      "n": "dYdX",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/dYdX.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "perps"
-      ]
-    },
-    {
-      "n": "zkSync",
-      "tier": "Deep",
-      "file": "examples/CaseStudies/zkSync.md",
-      "cat": "",
-      "era": "",
-      "tags": [
-        "airdrop",
-        "l2"
       ]
     }
   ],
