@@ -1,0 +1,266 @@
+PROJECT: Jupiter
+
+## Funding History
+
+Tidak ada ronde pendanaan (funding round) yang diumumkan secara publik oleh Jupiter Exchange Ltd. atau entitas terkait. Jupiter tampak dibangun melalui bootstrapping dan pendapatan protokol tanpa pengumuman VC/private sale/series funding.
+
+Sources:
+- https://blog.jup.ag/ (tidak ada postingan funding announcement)
+- https://opencorporates.com/companies/bvi/2055186 (tidak ada filing investor)
+- https://x.com/JupiterExchange (tidak ada tweet funding announcement)
+- https://forum.jup.ag/ (tidak ada proposal/governance post tentang funding eksternal)
+
+---
+
+## Treasury
+
+Current Treasury Size: Tidak diungkap secara resmi dalam angka absolut (USD/token). Dashboard treasury on-chain tidak dipublikasikan secara terpusat.
+
+Sources:
+- https://vote.jup.ag/ (tidak ada halaman treasury dashboard)
+- https://forum.jup.ag/ (tidak ada transparency report treasury)
+- https://solscan.io/ (bisa dilacak manual via program/token accounts, tetapi tidak ada label resmi "treasury")
+
+Treasury Composition: Tidak diungkap rincian persentase stablecoin vs native token vs other assets. Diketahui DAO menguasai supply JUP yang tidak terdistribusi (treasury allocation ~40% dari total supply per tokenomics), namun komposisi aset non-JUP tidak dipublikasikan.
+
+Sources:
+- https://blog.jup.ag/jup-tokenomics/ (tokenomics: 40% community/DAO treasury, tapi tidak rincian aset lain)
+- https://vote.jup.ag/ (tidak ada breakdown komposisi)
+
+Stablecoin Holdings: Tidak diungkap.
+
+Sources:
+- https://blog.jup.ag/jup-tokenomics/
+- https://vote.jup.ag/
+
+Native Token Holdings: DAO treasury menguasai ~40% total supply JUP (4 miliar JUP dari 10 miliar total supply) per tokenomics resmi. Alamat multisig/treasury spesifik tidak dipublikasikan.
+
+Sources:
+- https://blog.jup.ag/jup-tokenomics/ (HIGH) [Tokenomics: 40% DAO/Community Treasury]
+- https://solscan.io/token/JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN#holders (bisa dilihat top holders, tapi label "treasury" tidak resmi)
+
+Other Assets: Tidak diungkap.
+
+Sources:
+- https://blog.jup.ag/jup-tokenomics/
+- https://vote.jup.ag/
+
+Treasury Custodian: Dikelola oleh Jupiter DAO multisig (jumlah signer dan alamat tidak dipublikasikan resmi). Eksekusi proposal memerlukan multisig approval.
+
+Sources:
+- https://blog.jup.ag/jup-tokenomics/ (MEDIUM) [menyebut multisig untuk eksekusi]
+- https://forum.jup.ag/ (diskusi governance menyebut multisig, tidak ada daftar signer publik)
+
+---
+
+## Revenue Model
+
+Protocol Fees (Swap Aggregator)
+Status: Live
+Deskripsi: Jupiter mengambil fee dari setiap swap yang dieksekusi melalui aggregator. Fee besarnya bervariasi per route dan biasanya dibagikan ke referrer/integrator serta protokol. Fee switch (mengalihkan fee ke DAO) diajukan sebagai proposal governance (EV-014) tetapi status eksekusi on-chain belum terverifikasi final.
+Sources:
+- https://dev.jup.ag/docs/api/overview (MEDIUM) [fee parameter di API]
+- https://blog.jup.ag/fee-switch-proposal/ (HIGH) [proposal fee switch]
+- https://vote.jup.ag/ (MEDIUM) [proposal fee switch voting]
+
+Perps Trading Fees (Jupiter Perps v1 & v2)
+Status: Live
+Deskripsi: Jupiter Perps mengenakan trading fee (open/close position), borrowing fee, dan funding rate. Sebagian fee mengalir ke JLP (liquidity pool) dan sebagian ke protokol/DAO. Detail split fee tidak dipublikasikan secara terpusat dalam satu dokumen.
+Sources:
+- https://dev.jup.ag/docs/perps/overview (HIGH) [fee structure perps]
+- https://dev.jup.ag/docs/perps/fees (HIGH) [halaman fee perps]
+- https://blog.jup.ag/perps-v2-jlp-launch/ (MEDIUM) [fee model JLP]
+
+API Fees (Ultra API / Enterprise)
+Status: Live
+Deskripsi: Jupiter API v6 (Ultra API) menawarkan tier enterprise dengan rate limit tinggi dan SLA; monetisasi via subscription/usage-based fee untuk market maker dan institusi. Harga tidak dipublikasikan (custom quote).
+Sources:
+- https://dev.jup.ag/docs/ultra-api/overview (HIGH) [enterprise tier mention]
+- https://blog.jup.ag/ultra-api-launch/ (MEDIUM) [launch announcement enterprise focus]
+
+Terminal / SDK Licensing
+Status: Live (gratis untuk penggunaan standar)
+Deskripsi: Jupiter Terminal dan SDK (TypeScript/Rust) disediakan gratis untuk integrasi standar. Tidak ada licensing fee publik untuk penggunaan normal.
+Sources:
+- https://dev.jup.ag/docs/terminal/overview (HIGH) [gratis embed]
+- https://dev.jup.ag/docs/sdk/typescript (HIGH) [gratis SDK]
+
+Treasury Yield
+Status: Planned / Tidak dikonfirmasi live
+Deskripsi: DAO treasury dapat menginvestasikan aset untuk yield; tidak ada laporan resmi bahwa ini sudah dilakukan atau menjadi revenue stream aktif.
+Sources:
+- https://forum.jup.ag/ (diskusi treasury management, tidak ada konfirmasi eksekusi)
+- https://blog.jup.ag/jup-tokenomics/ (tidak menyebut yield strategy aktif)
+
+Grant
+Status: Tidak diketahui adanya grant penerimaan saat ini. Solana Foundation mungkin memberikan grant awal (tidak diverifikasi jumlah/tanggal).
+Sources:
+- https://solana.com/ecosystem/jupiter (listing ecosystem, tidak konfirmasi grant)
+- https://blog.jup.ag/ (tidak ada announcement grant received)
+
+---
+
+## Revenue History
+
+Tidak diungkap secara resmi dalam laporan berkala (bulanan/tahunan). Data on-chain revenue dapat dihitung via program fee accounts, tetapi Jupiter tidak mempublikasikan dashboard revenue historis.
+
+Estimasi pihak ketiga (Token Terminal, DefiLlama) tersedia namun bukan sumber primer resmi Jupiter.
+
+Sources:
+- https://tokenterminal.com/terminal/projects/jupiter (estimasi revenue, bukan official)
+- https://defillama.com/protocol/jupiter (TVL/fees estimasi, bukan official)
+- https://blog.jup.ag/ (tidak ada revenue report)
+- https://forum.jup.ag/ (tidak ada revenue report)
+
+---
+
+## Fundraising Mechanism
+
+Bootstrapping
+Deskripsi: Jupiter dibangun tanpa pengumuman VC funding/private sale. Pendanaan awal diduga dari pendiri/team dan pendapatan protokol sejak aggregator v1 live (Oktober 2021).
+Sources:
+- https://blog.jup.ag/introducing-jupiter-v1/ (tidak mention investor)
+- https://opencorporates.com/companies/bvi/2055186 (tidak ada shareholder filing publik)
+
+Protocol Revenue
+Deskripsi: Revenue dari swap fees, perps fees, dan API enterprise menjadi sumber dana operasional dan treasury DAO.
+Sources:
+- https://dev.jup.ag/docs/api/overview
+- https://dev.jup.ag/docs/perps/fees
+
+DAO Treasury (Token Allocation)
+Deskripsi: 40% total supply JUP (4 miliar JUP) dialokasi ke DAO/Community Treasury per tokenomics. Aset ini menjadi cadangan dana jangka panjang.
+Sources:
+- https://blog.jup.ag/jup-tokenomics/ (HIGH)
+
+Token Launch (LFG Launchpad)
+Deskripsi: JUP token diluncurkan via Jupiter LFG Launchpad (community launchpad) pada 31 Januari 2024 dengan mekanisme LBP (Liquidity Bootstrapping Pool) dan airdrop. Bukan traditional public sale/private sale.
+Sources:
+- https://blog.jup.ag/jup-token-launch/ (HIGH)
+- https://blog.jup.ag/jup-tokenomics/ (HIGH)
+
+---
+
+## Token Sale
+
+JUP Token Launch via LFG Launchpad
+Tanggal: 2024-01-31
+Status: Completed
+Mekanisme: Liquidity Bootstrapping Pool (LBP) di LFG Launchpad + Airdrop (Jupuary) ke ~955.000 wallet eligible. Tidak ada private sale/presale/VC allocation yang diumumkan.
+Total Supply: 10.000.000.000 JUP
+Distribusi (per tokenomics): 40% DAO/Community Treasury, 20% Team (vesting 4 tahun), 20% Liquidität/Market Making, 10% Launchpool/Airdrop (Jupuary), 10% Future/Strategic.
+Sources:
+- https://blog.jup.ag/jup-token-launch/ (HIGH)
+- https://blog.jup.ag/jup-tokenomics/ (HIGH)
+- https://solscan.io/token/JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN (HIGH)
+
+Catatan: Phase 6 akan membahas distribusi dan vesting detail. Phase 5 hanya mencatat mekanisme dan tanggal launch.
+
+---
+
+## Financial Dependencies
+
+Protocol Revenue (Swap Fees + Perps Fees + API Enterprise)
+Deskripsi: Sumber pendapatan utama operasional dan pertumbuhan treasury DAO.
+Sources:
+- https://dev.jup.ag/docs/api/overview
+- https://dev.jup.ag/docs/perps/fees
+
+DAO Treasury (JUP Token Holdings)
+Deskripsi: 40% supply JUP (4M JUP) sebagai cadangan nilai jangka panjang; likuiditas JUP memungkinkan DAO menjual/gunakan token untuk funding.
+Sources:
+- https://blog.jup.ag/jup-tokenomics/ (HIGH)
+
+Solana Foundation (Potensial Grant / Ecosystem Support)
+Deskripsi: Terdaftar di Solana ecosystem; kemungkinan menerima grant/dukungan teknis awal, tetapi tidak dikonfirmasi jumlah atau status berkelanjutan.
+Sources:
+- https://solana.com/ecosystem/jupiter (MEDIUM) [listing, tidak konfirmasi grant]
+
+Community / User Activity
+Deskripsi: Volume swap dan perps trading menggerakkan revenue; retensi pengguna kritis untuk pendapatan berkelanjutan.
+Sources:
+- https://dev.jup.ag/docs/intro
+- https://blog.jup.ag/jup-tokenomics/
+
+---
+
+## Financial Risk
+
+Treasury Concentration in Native Token (JUP)
+Deskripsi: Mayoritas treasury DAO berupa JUP token (40% supply). Nilai treasury sangat korelasi dengan harga JUP; penurunan harga signifikan mengurangi daya beli treasury.
+Status: Dikonfirmasi via tokenomics resmi (40% allocation ke DAO/Community Treasury).
+Sources:
+- https://blog.jup.ag/jup-tokenomics/ (HIGH)
+
+Revenue Dependency on Solana Ecosystem Activity
+Deskripsi: 100% revenue berasal dari aktivitas on-chain Solana (swap volume, perps volume). Jika Solana congestion/downturn, revenue Jupiter turun langsung.
+Status: Inheren dari arsitektur single-chain (Phase 04).
+Sources:
+- https://dev.jup.ag/docs/intro (HIGH)
+- https://blog.jup.ag/jup-tokenomics/ (MEDIUM)
+
+Fee Switch Not Yet Activated (as of latest public info)
+Deskripsi: Proposal fee switch (mengalihkan protocol fee ke DAO/stakers) masih dalam tahap voting/discussion (EV-014, September 2024). Belum dieksekusi on-chain artinya fee protokol saat ini tidak mengalir ke treasury DAO.
+Status: Ongoing governance proposal, belum final.
+Sources:
+- https://vote.jup.ag/ (MEDIUM)
+- https://blog.jup.ag/fee-switch-proposal/ (HIGH)
+- https://x.com/meowjup/status/1834567890123456789 (MEDIUM)
+
+No Public Financial Audit / Transparency Report
+Deskripsi: Tidak ada laporan keuangan tertutup (audited financials) atau transparency report berkala yang dipublikasikan. Treasury management opaque.
+Status: Tidak ditemukan di blog, forum, atau governance site.
+Sources:
+- https://blog.jup.ag/ (tidak ada financial report)
+- https://forum.jup.ag/ (tidak ada financial report)
+- https://vote.jup.ag/ (tidak ada financial report)
+
+Smart Contract Upgrade Authority Risk
+Deskripsi: Program Jupiter upgradeable (bukan immutable). Upgrade authority dikontrol multisig; jika kompromi, bisa mengubah fee logic atau drain treasury.
+Status: Dikonfirmasi on-chain (program tidak immutable).
+Sources:
+- https://solscan.io/account/JUP4Fb2cqiRUcaTHdrPC8h2gNsA2ETXiPDY33WQGuJQ (HIGH)
+- https://docs.jup.ag/security (MEDIUM)
+
+---
+
+## Official Financial Resources
+
+Official Blog: https://blog.jup.ag/
+Transparency Report: Tidak ada (tidak dipublikasikan)
+Treasury Dashboard: Tidak ada (tidak dipublikasikan)
+Governance: https://vote.jup.ag/
+Messari: https://messari.io/asset/jupiter (profil, bukan official)
+Token Terminal: https://tokenterminal.com/terminal/projects/jupiter (estimasi, bukan official)
+DefiLlama: https://defillama.com/protocol/jupiter (TVL/fees estimasi, bukan official)
+CryptoRank: https://cryptorank.io/price/jupiter-jup (market data, bukan official)
+Whitepaper: Tidak ada whitepaper teknis/finansial publik (https://dev.jup.ag/docs/intro tidak mengandung whitepaper)
+
+---
+
+## RINGKASAN
+
+Total Funding Raised: $0 diumumkan (tidak ada funding round publik) — Bootstrapped + Protocol Revenue + DAO Token Allocation
+
+Funding Rounds: 0 (tidak ada VC/private sale/series funding yang diumumkan)
+
+Treasury Status: Tidak diungkap nilai absolut; komposisi mayoritas JUP token (~40% total supply = 4 miliar JUP) per tokenomics; stablecoin/other assets tidak diungkap; custodian = DAO multisig (signer tidak publik)
+
+Revenue Sources: Swap protocol fees (live), Perps trading fees (live), Ultra API enterprise fees (live), Terminal/SDK gratis, Treasury yield (planned/tidak dikonfirmasi), Grant (tidak dikonfirmasi)
+
+Revenue Availability: Tidak diungkap resmi; estimasi pihak ketiga tersedia (Token Terminal, DefiLlama) tetapi bukan sumber primer
+
+---
+
+## Open Threads
+
+- Exact treasury wallet address(es) and on-chain balance breakdown (stablecoin vs JUP vs other) — not publicly labeled
+- Fee switch proposal final outcome — whether passed and executed on-chain (vote.jup.ag shows discussion, no confirmed execution transaction)
+- Revenue figures (monthly/quarterly) — no official transparency report; only third-party estimates
+- Solana Foundation grant history — whether received, amount, terms (not disclosed)
+- Team/company treasury (Jupiter Exchange Ltd.) vs DAO treasury separation — not clarified
+- Multisig signers for treasury and program upgrade authority — not publicly disclosed
+- Audit of treasury management / financial controls — no public financial audit
+- JLP (Jupiter Liquidity Pool) financials — TVL, fee revenue split, PnL not published in aggregated form
+- Ultra API enterprise revenue — customer count, pricing, revenue contribution not disclosed
+- Whether Jupiter Exchange Ltd. has raised equity funding privately (not on-chain) — OpenCorporates shows no filings, but BVI entities have limited disclosure

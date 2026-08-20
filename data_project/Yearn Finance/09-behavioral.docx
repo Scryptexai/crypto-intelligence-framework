@@ -1,0 +1,439 @@
+PROJECT: Yearn Finance
+
+Strategic Objectives
+
+1. Menjadi infrastruktur yield aggregation terdepan yang trust-minimized dan composable
+· Evidence: Arsitektur vault-strategy terpisah memungkinkan strategy apapun di-deploy tanpa upgrade vault core; ERC-4626 standardization (v3) memastikan composability lintas protokol DeFi 【Phase 4 — Technical Architecture】 【Phase 3 — History】 【Phase 7 — Major Integrations】
+· Supporting Dataset: Phase 4 Technical Architecture, Phase 3 History, Phase 7 Major Integrations
+
+2. Desentralisasi progresif melalui DAO governance dan legal wrapper
+· Evidence: Fair launch tanpa VC (100% community distribution); YIP governance process; yTeams delegasi authority; Yearn Foundation Cayman sebagai legal entity ownerless 【Phase 1 — Foundation】 【Phase 2 — Entity】 【Phase 3 — History】 【Phase 6 — Token】
+· Supporting Dataset: Phase 1 Foundation, Phase 2 Entity, Phase 3 History, Phase 6 Token
+
+3. Memaksimalkan yield untuk user melalui strategi otomatis dan efisien gas
+· Evidence: Vault management fee 0.5-2% + performance fee 10-20%; Keep3r/Gelato automation untuk harvest/rebalance; Zap untuk entry/exit single-tx; multi-chain deployment untuk lower gas 【Phase 5 — Revenue Model】 【Phase 4 — Technology】 【Phase 7 — Integrations】
+· Supporting Dataset: Phase 5 Revenue Model, Phase 4 Technology, Phase 7 Integrations
+
+4. Membangun moat melalui ekosistem Curve/Convex dan bribe marketplace
+· Evidence: yBribe untuk gauge incentives; Boost untuk vlCVX/veCRV delegation; >60% TVL bergantung Curve/Convex strategies; Yearn mengontrol gauge weight signifikan 【Phase 7 — External Dependencies】 【Phase 7 — Major Integrations】 【Phase 5 — Financial Dependencies】
+· Supporting Dataset: Phase 7 External Dependencies, Phase 7 Major Integrations, Phase 5 Financial Dependencies
+
+5. Sustainability finansial melalui protocol-owned revenue tanpa token inflation
+· Evidence: $0 VC funding; revenue dari vault fees, Iron Bank, yBribe, treasury yield; fixed supply YFI 36,666; treasury diversification via yBudget grants 【Phase 5 — Funding History】 【Phase 5 — Revenue Model】 【Phase 5 — Treasury】 【Phase 6 — Token】
+· Supporting Dataset: Phase 5 Funding History, Phase 5 Revenue Model, Phase 5 Treasury, Phase 6 Token
+
+Decision Timeline
+
+Keputusan: Fair Launch YFI tanpa VC, private sale, atau team allocation (2020-07)
+· Trigger: Andre Cronje ingin distribusi token yang adil dan menghindari regulator security law; precedented oleh YAM fair launch
+· Evidence: Phase 1 Foundation (founding date, fair launch), Phase 5 Fundraising Mechanism (fair launch description), Phase 6 Token (distribution, no private sale)
+· Decision: Supply genesis 30,000 YFI didistribusikan 100% ke liquidity miners Week 1-3 Juli 2020; tidak ada team/investor allocation
+· Immediate Result: Yearn menjadi protokol DeFi pertama major fair launch; YFI price discovery murni pasar; komunitas early adopters loyal
+· Long-term Impact: Tidak ada token unlock/vesting pressure; governance benar-benar community-owned; model ditiru proyek lain; namun tidak ada dana VC untuk opsional scaling cepat
+· Supporting Dataset: Phase 1 Foundation, Phase 5 Fundraising Mechanism, Phase 6 Token Distribution
+
+Keputusan: Migrasi yVaults v1 → v2 → v3 (ERC-4626) bertahap (2020-2023)
+· Trigger: v1 memiliki limitation: strategy hardcoded, tidak upgradeable, gas inefficient; v2 memperkenalkan Controller/Strategy pattern; v3 standarisasi ERC-4626 untuk composability
+· Evidence: Phase 4 Technical Architecture (v1/v2/v3 evolution, ERC-4626), Phase 3 History (v1 launch 2020, v2 2021, v3 2023), Phase 7 Major Integrations (yVault v3 ERC-4626)
+· Decision: Upgrade bertahap dengan migration path untuk user; v3 ERC-4626 memungkinkan vault sebagai strategy untuk vault lain (recursive composability)
+· Immediate Result: v2 memungkinkan strategy modular, multi-strategy per vault; v3 memungkinkan integrasi standar DeFi (Lido, Rocket Pool, dll)
+· Long-term Impact: Yearn menjadi pionir ERC-4626 adoption; composability menarik integrator third-party; namun migration complexity tinggi untuk user non-teknis
+· Supporting Dataset: Phase 3 History, Phase 4 Technical Architecture, Phase 7 Major Integrations
+
+Keputusan: Pembentukan Yearn Foundation Cayman Islands (2022, YIP-66)
+· Trigger: DAO butuh legal wrapper untuk contracts, IP, trademark, employment, limited liability; Cayman Foundation "ownerless" structure cocok untuk DAO
+· Evidence: Phase 2 Entity (Yearn Foundation), Phase 3 History (YIP-66), Phase 7 Governance Ecosystem (Foundation details)
+· Decision: Establish Yearn Foundation sebagai Cayman Islands Foundation; hold IP, trademarks, enter contracts, employ contributors, run grants (yBudget)
+· Immediate Result: Legal entity untuk sign contracts, hire, own assets; yBudget grant program launched; trademark protection
+· Long-term Impact: Regulatory compliance pathway; namun jurisdictional risk Cayman; Foundation vs DAO authority boundaries masih evolving
+· Supporting Dataset: Phase 2 Entity, Phase 3 History, Phase 7 Governance Ecosystem
+
+Keputusan: Ekspansi multi-chain (Fantom 2021 → Arbitrum/Optimism/Base/Polygon/zkSync 2022-2024)
+· Trigger: Ethereum L1 gas costs tinggi mengurangi yield net untuk user retail; L2/sidechain menawarkan lower fees
+· Evidence: Phase 4 Technology (supported chains), Phase 3 History (Fantom 2021, L2 deployments 2022-2024), Phase 7 Ecosystem Position (chains)
+· Decision: Deploy vaults dan strategies ke Fantom, Arbitrum, Optimism, Base, Polygon, zkSync, Gnosis, Avalanche, Moonbeam
+· Immediate Result: TVL multi-chain tumbuh; user retail kembali feasible; strategy diversification across chains
+· Long-term Impact: Bridge dependency risk (LayerZero/Wormhole); fragmentation liquidity; operational complexity yTeams per chain; TVL Ethereum L1 share menurun
+· Supporting Dataset: Phase 3 History, Phase 4 Technology, Phase 7 Ecosystem Position, Phase 7 Ecosystem Risks
+
+Keputusan: Launch Iron Bank sebagai isolated lending market (2021, v2 2023 Aave v3 fork)
+· Trigger: Vault strategies butuh borrowing leverage; existing lending protocols (Aave/Compound) tidak support long-tail assets Yearn; isolated risk model needed
+· Evidence: Phase 2 Entity (Iron Bank product), Phase 3 History (Iron Bank launch, v2 migration), Phase 7 Major Integrations (Iron Bank), Phase 5 Revenue Model (Iron Bank interest)
+· Decision: Build isolated lending protocol (fork Aave v3 v2) dengan permissioned markets untuk partner protocols; Yearn strategies sebagai primary borrowers
+· Immediate Result: Revenue stream baru (interest income); vault strategies akses leverage; partner protocols dapat borrow
+· Long-term Impact: Diversifikasi revenue beyond vault fees; namun smart contract risk lending; v2 migration complex; regulatory scrutiny lending protocols
+· Supporting Dataset: Phase 3 History, Phase 5 Revenue Model, Phase 7 Major Integrations, Phase 7 External Dependencies
+
+Keputusan: yBribe dan Boost untuk mengontrol Curve/Convex gauge weights (2022-2023)
+· Trigger: Yearn vaults bergantung CRV/CVX rewards; gauge weight menentukan reward allocation; Yearn butuh influence gauge voting
+· Evidence: Phase 7 External Dependencies (Curve, Convex critical), Major Integrations (yBribe, Boost), Phase 3 History (YIP-73 yBribe, YIP-85 Boost v2)
+· Decision: Build yBribe (bribe marketplace) dan Boost (vlCVX/veCRV delegation platform); YFI holders delegate vlCVX ke Yearn; Yearn direct rewards ke vault strategies
+· Immediate Result: Yearn mengontrol signifikan gauge weight; vault APY meningkat via directed rewards; revenue dari bribe marketplace
+· Long-term Impact: Moat around Curve/Convex dependency; namun systemic risk jika Curve/Convex fail; governance complexity (vlCVX delegation decisions)
+· Supporting Dataset: Phase 7 External Dependencies, Phase 7 Major Integrations, Phase 3 History
+
+Keputusan: Respons eksploit April 2023 (~$11M loss) — emergency multisig action dan strategy migration
+· Trigger: Exploit pada yVault v1 strategy (legacy) menyebabkan loss ~$11M; butuh emergency response untuk protect remaining funds
+· Evidence: Phase 2 Entity (hacks), Phase 3 History (April 2023 exploit), Phase 5 Financial Risk (exploit losses), Phase 7 Ecosystem Risks
+· Decision: Multisig emergency pause affected vaults; migrate user funds ke v2/v3 safe vaults; postmortem transparan; audit tambahan
+· Immediate Result: Funds secured; user confidence maintained via transparansi; accelerated v1→v3 migration
+· Long-term Impact: Security-first culture reinforced; legacy v1 vaults deprecated faster; audit budget increased; reputasi damage terbatas oleh transparency
+· Supporting Dataset: Phase 2 Entity, Phase 3 History, Phase 5 Financial Risk, Phase 7 Ecosystem Risks
+
+Keputusan: yTeams structure untuk delegasi operational authority (2022 onward)
+· Trigger: DAO governance terlalu lambat untuk operational decisions; butuh domain experts dengan authority terdelegasi
+· Evidence: Phase 2 Entity (yTeams), Phase 3 History (yTeams formation), Phase 7 Governance Ecosystem (yTeams structure)
+· Decision: Elected teams per domain (Protocol, Treasury, Growth, Ops, Risk, Legal) dengan multisig authority; term-based via Snapshot vote
+· Immediate Result: Faster operational decisions; domain expertise applied; accountability via elections
+· Long-term Impact: Governance scalability improved; namun centralization risk pada 13 signers; pseudo-anonymous signers accountability terbatas
+· Supporting Dataset: Phase 2 Entity, Phase 3 History, Phase 7 Governance Ecosystem, Phase 7 Ecosystem Risks
+
+Evolution Pattern
+
+Perubahan Strategi: Dari Single-Chain Yield Optimizer → Multi-Chain DeFi Infrastructure Platform
+· Phase 1-3: Yearn mulai sebagai yield optimizer Ethereum mainnet (iEarn → yEarn → yVaults v1/v2)
+· Phase 3-4: Ekspansi ke Fantom (2021) lalu L2s (Arbitrum, Optimism, Base, dll) mendorong menjadi multi-chain platform
+· Phase 7: Produk berkembang beyond vaults: Iron Bank (lending), Zap (router), yBribe/Boost (governance infrastructure), API/SDK (developer platform)
+· Evidence: Phase 3 History (timeline), Phase 4 Technology (multi-chain), Phase 7 Applications (10+ products), Phase 8 Market (narrative shift to infrastructure)
+· Supporting Dataset: Phase 3 History, Phase 4 Technology, Phase 7 Applications, Phase 8 Market
+
+Perubahan Teknologi: Dari Monolithic Vault → Modular Strategy Pattern → ERC-4626 Standardized Composability
+· v1 (2020): Vault + strategy coupled, tidak upgradeable, single strategy
+· v2 (2021): Controller-Vault-Strategy separation, multi-strategy, upgradeable strategies
+· v3 (2023): ERC-4626 compliance, tokenized vault shares, recursive composability (vault as strategy)
+· Evidence: Phase 4 Technical Architecture (v1/v2/v3 detail), Phase 3 History (version launches), Phase 7 Major Integrations (v3 ERC-4626)
+· Supporting Dataset: Phase 3 History, Phase 4 Technical Architecture, Phase 7 Major Integrations
+
+Perubahan Tokenomics: Dari Fixed Supply Governance Token → Potential Fee Switch Revenue Share
+· Genesis: YFI 30k fixed supply, fair launch, pure governance (2020)
+· YIP-41 (2021): Mint 6,666 YFI tambahan untuk treasury/operations; proposed fee switch untuk buyback/distribusi ke stakers
+· Current: Fee switch status unclear (tidak terimplementasi on-chain terverifikasi); YFI tetap non-inflationary
+· Evidence: Phase 6 Token (supply, YIP-41, fee switch), Phase 5 Financial (revenue streams), Phase 3 History (YIP-41)
+· Supporting Dataset: Phase 3 History, Phase 5 Financial, Phase 6 Token
+
+Perubahan Governance: Dari Founder-Led → Multisig → yTeams Delegated DAO → Foundation-Wrapped DAO
+· 2020: Andre Cronje sole decision maker (iEarn/yEarn)
+· 2020-2021: 9/13 multisig untuk treasury/protocol upgrades
+· 2022: yTeams formation (YIP-61) delegasi operational authority ke domain experts
+· 2022: Yearn Foundation Cayman (YIP-66) legal wrapper
+· Evidence: Phase 2 Entity (governance evolution), Phase 3 History (multisig, yTeams, Foundation), Phase 7 Governance Ecosystem
+· Supporting Dataset: Phase 2 Entity, Phase 3 History, Phase 7 Governance Ecosystem
+
+Perubahan Financial: Dari Zero Revenue Protocol → Multi-Stream Revenue DAO dengan Treasury Management
+· 2020: No revenue model, fair launch only
+· 2021: Vault fees menjadi primary revenue; Iron Bank launch tambah lending revenue
+· 2022-2023: yBribe/Boost, Zap fees, treasury yield diversifikasi revenue; yBudget grant program
+· Bear market 2022-2023: Revenue decline signifikan (DefiLlama/Token Terminal data); treasury diversification critical
+· Evidence: Phase 5 Revenue History (bear market decline), Revenue Model (streams), Treasury (management), Phase 3 History (product launches)
+· Supporting Dataset: Phase 5 Revenue History, Phase 5 Revenue Model, Phase 5 Treasury, Phase 3 History
+
+Technical Decision Pattern
+
+Pola 1: Ethereum Alignment First, L2 Expansion Second
+· Decision Pattern: Semua core development target Ethereum mainnet first; L2/sidechain deployment mengikuti setelah mainnet stable; tidak build native non-EVM chains
+· Evidence: Phase 4 Technology (EVM chains only: Ethereum, Fantom, Arbitrum, Optimism, Base, Polygon, zkSync, Gnosis, Avalanche, Moonbeam — all EVM); Phase 3 History (Fantom first non-Ethereum 2021, L2s 2022+); Phase 7 Ecosystem Position (primary chain Ethereum)
+· Supporting Dataset: Phase 3 History, Phase 4 Technology, Phase 7 Ecosystem Position
+
+Pola 2: Upgrade Bertahap dengan Migration Path dan Backward Compatibility
+· Decision Pattern: Setiap major upgrade (v1→v2→v3) menyediakan migration tools, tidak force-migrate user; legacy vaults tetap accessible tapi deprecated
+· Evidence: Phase 4 Technology (vault version architecture), Phase 3 History (v1 2020, v2 2021, v3 2023 — 2-3 year gaps); Phase 7 Major Integrations (v3 ERC-4626 standardization)
+· Supporting Dataset: Phase 3 History, Phase 4 Technical Architecture, Phase 7 Major Integrations
+
+Pola 3: Modular Strategy Pattern dengan Keeper Automation
+· Decision Pattern: Vault core minimal (accounting, shares, fees); logic yield di Strategy contracts terpisah; Keepers (Keep3r/Gelato) execute harvest/tend/rebalance permissionless
+· Evidence: Phase 4 Technology (Controller-Vault-Strategy, Keep3r/Gelato integration); Phase 7 External Dependencies (Keep3r, Gelato high criticality); Major Integrations (Keep3r job automation)
+· Supporting Dataset: Phase 4 Technical Architecture, Phase 7 External Dependencies, Phase 7 Major Integrations
+
+Pola 4: Standarisasi ERC-4626 untuk Composability Maksimal
+· Decision Pattern: v3 vault mengadopsi ERC-4626 tokenized vault standard; memungkinkan vault Yearn menjadi strategy untuk protokol lain dan sebaliknya
+· Evidence: Phase 4 Technology (ERC-4626 v3), Phase 7 Major Integrations (yVault v3 ERC-4626 standardization), Phase 3 History (v3 launch 2023)
+· Supporting Dataset: Phase 3 History, Phase 4 Technical Architecture, Phase 7 Major Integrations
+
+Pola 5: Oracle Dependency Terpusat pada Chainlink dengan Minimal Fallback
+· Decision Pattern: >90% vault valuation dan strategy triggers menggunakan Chainlink price feeds; tidak ada diversified oracle fallback sistematis untuk most feeds
+· Evidence: Phase 7 External Dependencies (Chainlink critical), Ecosystem Risks (Single Oracle Dependency); Phase 4 Technology (ChainlinkPriceOracle)
+· Supporting Dataset: Phase 4 Technology, Phase 7 External Dependencies, Phase 7 Ecosystem Risks
+
+Pola 6: Security via Multisig + Timelock + Extensive Audits, Tanpa On-Chain Governance Execution
+· Decision Pattern: Protocol upgrades dan treasury moves via 9/13 multisig + timelock; Snapshot off-chain voting; no on-chain governor contract executing directly; extensive audit program (Trail of Bits, Certora, PeckShield, Quantstamp, MixBytes)
+· Evidence: Phase 4 Technology (security model), Phase 2 Entity (auditors), Phase 7 Governance Ecosystem (multisig, Snapshot), Phase 7 Ecosystem Risks (multisig centralization)
+· Supporting Dataset: Phase 2 Entity, Phase 4 Technology, Phase 7 Governance Ecosystem, Phase 7 Ecosystem Risks
+
+Financial Decision Pattern
+
+Pola 1: Zero VC Funding — Fair Launch dan Protocol Revenue Only
+· Decision Pattern: Tidak menerima VC funding apapun; fair launch token distribution; semua operasional dibiayai protocol revenue (vault fees, Iron Bank, yBribe, treasury yield)
+· Evidence: Phase 5 Funding History ($0 raised, fair launch), Fundraising Mechanism (fair launch, DAO treasury, grants); Phase 1 Foundation (no investors); Phase 6 Token (no private sale)
+· Supporting Dataset: Phase 1 Foundation, Phase 5 Funding History, Phase 5 Fundraising Mechanism, Phase 6 Token Distribution
+
+Pola 2: Treasury Diversification Menggunakan Protocol-Owned Strategies
+· Decision Pattern: Treasury assets (YFI, stablecoin, ETH, CRV, CVX) di-deploy ke Yearn vaults sendiri untuk yield; yBudget grants dari treasury yield bukan principal
+· Evidence: Phase 5 Treasury (composition, custodian), Revenue Model (treasury yield), Phase 7 Governance Ecosystem (Treasury Committee, yBudget)
+· Supporting Dataset: Phase 5 Treasury, Phase 5 Revenue Model, Phase 7 Governance Ecosystem
+
+Pola 3: Revenue Diversification Beyond Vault Fees (Iron Bank, yBribe, Zap, Boost)
+· Decision Pattern: Vault fees >80% revenue; upaya diversifikasi via Iron Bank lending revenue, yBribe/Boost bribe marketplace, Zap router fees, treasury yield
+· Evidence: Phase 5 Revenue Model (6 streams), Financial Dependencies (vault fees dominant), Phase 7 Major Integrations (Iron Bank, yBribe, Boost, Zap)
+· Supporting Dataset: Phase 5 Revenue Model, Phase 5 Financial Dependencies, Phase 7 Major Integrations
+
+Pola 4: Grant Program (yBudget) dari Treasury Yield, Bukan Token Inflation
+· Decision Pattern: yBudget grant program funded dari treasury yield/deployed assets; tidak ada token emission/inflation untuk grants; fixed supply YFI maintained
+· Evidence: Phase 5 Fundraising Mechanism (grants), Phase 7 Governance Ecosystem (yBudget), Phase 6 Token (fixed supply, no inflation)
+· Supporting Dataset: Phase 5 Fundraising Mechanism, Phase 6 Token, Phase 7 Governance Ecosystem
+
+Pola 5: Conservative Financial Risk Management — Acknowledge Concentration Risks Transparently
+· Decision Pattern: Governance discussions terbuka tentang YFI concentration, Curve/Convex dependency, bear market revenue decline; tidak hide risks
+· Evidence: Phase 5 Financial Risk (6 identified risks with sources), Phase 7 Ecosystem Risks (concentration risks), Phase 3 History (governance transparency)
+· Supporting Dataset: Phase 5 Financial Risk, Phase 7 Ecosystem Risks, Phase 3 History
+
+Ecosystem Decision Pattern
+
+Pola 1: Deep Integration dengan Curve/Convex Ecosystem sebagai Core Moat
+· Decision Pattern: Bangun produk (yBribe, Boost, Curve strategies) yang mengunci Yearn ke dalam Curve/Convex flywheel; Yearn menjadi major vlCVX/veCRV delegator dan bribe marketplace operator
+· Evidence: Phase 7 External Dependencies (Curve, Convex critical), Major Integrations (yBribe, Boost, Convex delegation), Phase 5 Financial Dependencies (Curve/Convex concentration), Phase 3 History (YIP-73, YIP-85)
+· Supporting Dataset: Phase 3 History, Phase 5 Financial Dependencies, Phase 7 External Dependencies, Phase 7 Major Integrations
+
+Pola 2: Partner dengan Infrastructure Providers Tier-1 (Alchemy, Chainlink, The Graph, Tenderly) untuk Reliability
+· Decision Pattern: Gunakan provider terbaik untuk RPC, oracle, indexing, monitoring; tidak build in-house infrastructure kecuali keeper network (Keep3r/Gelato integration)
+· Evidence: Phase 7 Infrastructure Providers (9 providers), External Dependencies (Chainlink, Keep3r, The Graph, Alchemy critical/high); Phase 4 Technology (oracles, keepers)
+· Supporting Dataset: Phase 4 Technology, Phase 7 Infrastructure Providers, Phase 7 External Dependencies
+
+Pola 3: Expand ke L2/Sidechain berdasarkan User Demand dan Gas Cost Arbitrage
+· Decision Pattern: Deploy ke chain baru ketika Ethereum L1 gas membuat retail yield negative; prioritaskan chain dengan liquidity dan DeFi maturity (Arbitrum, Optimism, Base > zkSync > others)
+· Evidence: Phase 3 History (Fantom 2021 → L2s 2022-2024), Phase 4 Technology (supported chains), Phase 7 Ecosystem Position (10 chains), Phase 8 Market (cross-chain volume)
+· Supporting Dataset: Phase 3 History, Phase 4 Technology, Phase 7 Ecosystem Position, Phase 8 Market
+
+Pola 4: Build Developer Platform (SDK, API, Subgraphs, Grants) untuk Ecosystem Growth
+· Decision Pattern: Invest di developer tooling (Yearn SDK, API, Subgraphs) dan grant program (yBudget, yGrants) untuk menarik integrator third-party (DeFi Saver, Instadapp, Zerion, Zapper)
+· Evidence: Phase 7 Developer Ecosystem (SDK, API, Subgraphs, grants, hackathons), Applications (third-party integrations), Phase 5 Fundraising Mechanism (grants)
+· Supporting Dataset: Phase 5 Fundraising Mechanism, Phase 7 Developer Ecosystem, Phase 7 Applications
+
+Pola 5: Legal Wrapper via Cayman Foundation untuk DAO Compliance dan Contracts
+· Decision Pattern: Gunakan Cayman Islands Foundation (ownerless) sebagai legal entity untuk hold IP, employ contributors, enter contracts, run grants; DAO remains governance layer
+· Evidence: Phase 2 Entity (Yearn Foundation), Phase 3 History (YIP-66), Phase 7 Governance Ecosystem (Foundation), Phase 7 Ecosystem Risks (legal jurisdiction risk)
+· Supporting Dataset: Phase 2 Entity, Phase 3 History, Phase 7 Governance Ecosystem, Phase 7 Ecosystem Risks
+
+Governance Decision Pattern
+
+Pola 1: Off-Chain Signaling (Snapshot) + On-Chain Multisig Execution
+· Decision Pattern: Semua governance proposals (YIP) melalui Discourse discussion → Snapshot vote → Multisig execution; tidak ada on-chain governor contract dengan direct execution
+· Evidence: Phase 7 Governance Ecosystem (Snapshot, multisig, YIP process), Phase 2 Entity (governance, multisig), Phase 3 History (governance evolution)
+· Supporting Dataset: Phase 2 Entity, Phase 3 History, Phase 7 Governance Ecosystem
+
+Pola 2: Delegasi Operational Authority ke yTeams (Elected Domain Experts)
+· Decision Pattern: DAO memilih yTeams per domain (Protocol, Treasury, Growth, Ops, Risk, Legal) via Snapshot; teams mendapat multisig authority untuk operational decisions; term-based
+· Evidence: Phase 2 Entity (yTeams), Phase 3 History (yTeams formation), Phase 7 Governance Ecosystem (yTeams structure, committees), Phase 7 Ecosystem Risks (multisig centralization)
+· Supporting Dataset: Phase 2 Entity, Phase 3 History, Phase 7 Governance Ecosystem, Phase 7 Ecosystem Risks
+
+Pola 3: YFI Token sebagai Governance-Only (Non-Financial), Fee Switch Diusulkan Tapi Belum Live
+· Decision Pattern: YFI pure governance token (voting, delegation); YIP-41 propose fee switch untuk buyback/distribusi ke stakers; status implementasi unclear (tidak terverifikasi on-chain)
+· Evidence: Phase 6 Token (utility, governance, fee switch), Phase 5 Financial (revenue streams), Phase 3 History (YIP-41)
+· Supporting Dataset: Phase 3 History, Phase 5 Revenue Model, Phase 6 Token Utility
+
+Pola 4: Transparansi Radikal via Governance Forum dan Postmortem
+· Decision Pattern: Semua major decisions, exploits, financial discussions terdokumen di gov.yearn.finance; postmortem publik untuk exploits (Eminence, April 2023)
+· Evidence: Phase 2 Entity (community, media), Phase 3 History (postmortems), Phase 5 Financial Risk (exploit losses documented), Phase 7 Official Resources (governance forum transparency category)
+· Supporting Dataset: Phase 2 Entity, Phase 3 History, Phase 5 Financial Risk, Phase 7 Official Resources
+
+Pola 5: Foundation sebagai Legal Wrapper, DAO sebagai Governance Layer — Boundary Masih Evolving
+· Decision Pattern: Yearn Foundation (Cayman) hold legal liability, IP, contracts, employment; DAO govern protocol parameters, treasury allocation; interaction boundaries defined per YIP
+· Evidence: Phase 2 Entity (Foundation), Phase 3 History (YIP-66), Phase 7 Governance Ecosystem (Foundation, DAO), Phase 7 Ecosystem Risks (legal jurisdiction, Foundation vs DAO)
+· Supporting Dataset: Phase 2 Entity, Phase 3 History, Phase 7 Governance Ecosystem, Phase 7 Ecosystem Risks
+
+Risk Response Pattern
+
+Pola 1: Emergency Multisig Intervention untuk Exploit Containment
+· Decision Pattern: Saat exploit terdeteksi, 9/13 multisig emergency pause affected vaults, migrate user funds ke safe contracts, communicate transparan via governance forum
+· Trigger: Smart contract exploit pada vault/strategy (Eminence 2020, v1 vaults 2021, April 2023 ~$11M)
+· Evidence: Phase 2 Entity (hacks), Phase 3 History (Eminence exploit, April 2023 exploit), Phase 5 Financial Risk (exploit losses), Phase 7 Ecosystem Risks
+· Response: Multisig pause → fund migration → postmortem → audit tambahan → accelerated deprecated migration
+· Result: User funds secured (mostly); reputational damage mitigated by transparency; accelerated v1→v3 migration; security budget increased
+· Supporting Dataset: Phase 2 Entity, Phase 3 History, Phase 5 Financial Risk, Phase 7 Ecosystem Risks
+
+Pola 2: Transparent Postmortem dan Governance Discussion untuk Accountability
+· Decision Pattern: Setiap major exploit/security incident diikuti postmortem detail di governance forum; root cause analysis; remediation steps; community discussion
+· Trigger: Exploit/hack events (Eminence 2020, April 2023, others)
+· Evidence: Phase 3 History (postmortem links), Phase 5 Financial Risk (exploit documentation), Phase 7 Official Resources (governance forum transparency category)
+· Response: Publish postmortem → governance discussion → parameter changes / strategy deprecation / audit commissioning
+· Result: Community trust maintained; industry reference untuk transparency; security practices improved
+· Supporting Dataset: Phase 3 History, Phase 5 Financial Risk, Phase 7 Official Resources
+
+Pola 3: Strategy Deprecation dan Migration Acceleration Pasca-Exploit
+· Decision Pattern: Legacy vulnerable strategies (v1 vaults) dideprecasi dan user didorong migrate ke v2/v3 yang lebih secure; migration tools disediakan
+· Trigger: Exploit pada legacy strategy contracts (v1 vaults April 2023)
+· Evidence: Phase 3 History (April 2023 exploit → v1 deprecation), Phase 4 Technology (v1→v2→v3 evolution), Phase 7 Major Integrations (v3 migration)
+· Response: Emergency migration tools → UI warnings → incentive programs untuk migrate → eventual v1 sunset
+· Result: TVL v1 drastis turun; v2/v3 adoption accelerated; attack surface reduced
+· Supporting Dataset: Phase 3 History, Phase 4 Technology, Phase 7 Major Integrations
+
+Pola 4: Bear Market Response — Treasury Diversification dan Cost Discipline
+· Decision Pattern: Saat revenue vault drop >80% (2022-2023 bear market), treasury committee diversifikasi assets, yBudget grant sizing adjusted, operational costs reviewed
+· Trigger: Crypto bear market 2022-2023 → TVL dan fee revenue collapse (DefiLlama/Token Terminal data)
+· Evidence: Phase 5 Revenue History (bear market decline), Financial Risk (revenue decline), Treasury (management), Phase 7 Governance Ecosystem (Treasury Committee)
+· Response: Treasury diversification (stablecoin, ETH, blue chip) → grant pacing → contributor compensation review → revenue diversification push (Iron Bank, yBribe)
+· Result: Treasury survived bear market; runway extended; revenue diversification accelerated
+· Supporting Dataset: Phase 5 Revenue History, Phase 5 Financial Risk, Phase 5 Treasury, Phase 7 Governance Ecosystem
+
+Pola 5: Bridge Exploit Response — Asset Recovery dan Bridge Diversification
+· Decision Pattern: Multichain exploit 2023 → Yearn respond dengan asset recovery efforts, migrasi ke LayerZero/Wormhole, reduce bridge exposure
+· Trigger: Multichain bridge exploit July 2023 (affecting cross-chain assets)
+· Evidence: Phase 3 History (Multichain exploit response), Phase 7 External Dependencies (LayerZero/Wormhole live, Multichain deprecated), Phase 7 Ecosystem Risks (bridge dependency)
+· Response: Pause affected bridge routes → migrate to LayerZero/Wormhole → audit bridge integrations → reduce cross-chain strategy complexity
+· Result: Bridge dependency reduced; LayerZero/Wormhole primary; cross-chain TVL recovered
+· Supporting Dataset: Phase 3 History, Phase 7 External Dependencies, Phase 7 Ecosystem Risks
+
+Recurring Behavioral Pattern
+
+Pola 1: Selalu Bangun di Atas Curve/Convex — "Curve-Native" Strategy
+· Setiap major product (vault strategies, yBribe, Boost, Iron Bank collateral) terintegrasi dalam Curve/Convex ecosystem; Yearn tidak pernah pivot away dari Curve dependency
+· Evidence: Phase 7 External Dependencies (Curve, Convex critical), Major Integrations (yBribe, Boost, Curve strategies), Phase 5 Financial Dependencies (Curve/Convex concentration), Phase 3 History (YIP-73, YIP-85)
+· Supporting Dataset: Phase 3 History, Phase 5 Financial Dependencies, Phase 7 External Dependencies, Phase 7 Major Integrations
+
+Pola 2: Upgrade Protocol Setelah Exploit/Incident Major
+· Eminence hack 2020 → v1 vaults launch; v1 exploits 2021 → v2 architecture; April 2023 exploit → accelerated v3 migration; Multichain exploit → bridge diversification
+· Evidence: Phase 3 History (exploit timeline → version launches), Phase 4 Technology (v1/v2/v3 evolution), Phase 7 Ecosystem Risks (exploit history)
+· Supporting Dataset: Phase 3 History, Phase 4 Technical Architecture, Phase 7 Ecosystem Risks
+
+Pola 3: Ekspansi Multi-Chain Mengikuti Gas Cost Arbitrage
+· Fantom 2021 (low gas) → Arbitrum/Optimism 2022 (L2 maturity) → Base 2023 (Coinbase backing) → zkSync 2024 (ZK narrative); selalu deploy ke chain dengan fee terendah untuk retail yield
+· Evidence: Phase 3 History (multi-chain timeline), Phase 4 Technology (chains), Phase 7 Ecosystem Position (chains), Phase 8 Market (cross-chain volume)
+· Supporting Dataset: Phase 3 History, Phase 4 Technology, Phase 7 Ecosystem Position, Phase 8 Market
+
+Pola 4: Fair Launch Ethos — No VC, No Team Allocation, Community First
+· YFI fair launch 2020 → no VC rounds ever → yBudget grants community-focused → Foundation ownerless structure → all decisions via DAO governance
+· Evidence: Phase 1 Foundation (fair launch), Phase 5 Funding History ($0 VC), Phase 6 Token (distribution), Phase 7 Governance Ecosystem (Foundation, DAO)
+· Supporting Dataset: Phase 1 Foundation, Phase 5 Funding History, Phase 6 Token Distribution, Phase 7 Governance Ecosystem
+
+Pola 5: Transparansi Radikal sebagai Crisis Management Tool
+· Setiap exploit, financial risk, governance conflict didiskusikan terbuka di forum; postmortem publik; on-chain data verifiable; no hidden decision making
+· Evidence: Phase 3 History (postmortems), Phase 5 Financial Risk (documented risks), Phase 7 Official Resources (governance forum transparency), Phase 2 Entity (community, media)
+· Supporting Dataset: Phase 2 Entity, Phase 3 History, Phase 5 Financial Risk, Phase 7 Official Resources
+
+Strategic Trade-offs
+
+Trade-off 1: Desentralisasi vs Kecepatan Operational (Multisig vs On-Chain Governor)
+· Decision: Gunakan 9/13 multisig + timelock + Snapshot off-chain voting; tidak deploy on-chain governor dengan direct execution
+· Trade-off: Kecepatan dan flexibility operational (multisig bisa act fast) vs desentralisasi murni (on-chain governor trust-minimized); centralization risk pada 13 signers pseudo-anonymous
+· Evidence: Phase 4 Technology (security model), Phase 7 Governance Ecosystem (multisig, Snapshot), Phase 7 Ecosystem Risks (multisig centralization)
+· Supporting Dataset: Phase 4 Technology, Phase 7 Governance Ecosystem, Phase 7 Ecosystem Risks
+
+Trade-off 2: Curve/Convex Concentration vs Yield Maximization
+· Decision: Fokus strategi vault pada Curve/Convex ecosystem (60-70% TVL) untuk yield tertinggi via CRV/CVX rewards dan gauge control
+· Trade-off: Yield maksimal untuk user vs systemic risk jika Curve/Convex fail, tokenomics berubah, atau gauge weight terdilusi; single point of failure protocol-layer
+· Evidence: Phase 5 Financial Dependencies (Curve/Convex concentration), Phase 7 External Dependencies (critical), Phase 7 Ecosystem Risks (Curve/Convex concentration), Phase 7 Major Integrations (yBribe, Boost)
+· Supporting Dataset: Phase 5 Financial Dependencies, Phase 7 External Dependencies, Phase 7 Ecosystem Risks, Phase 7 Major Integrations
+
+Trade-off 3: Multi-Chain Expansion vs Operational Complexity dan Bridge Risk
+· Decision: Deploy ke 10 chains (Ethereum + 9 L2/sidechain) untuk capture retail yield di low-fee environments
+· Trade-off: TVL growth dan user acquisition vs fragmentasi liquidity, bridge dependency (LayerZero/Wormhole), operational overhead yTeams per chain, smart contract risk per deployment
+· Evidence: Phase 3 History (multi-chain timeline), Phase 4 Technology (chains), Phase 7 Ecosystem Position (chains), Phase 7 Ecosystem Risks (bridge dependency), Phase 8 Market (cross-chain volume)
+· Supporting Dataset: Phase 3 History, Phase 4 Technology, Phase 7 Ecosystem Position, Phase 7 Ecosystem Risks, Phase 8 Market
+
+Trade-off 4: Fixed Supply Token (Non-Inflationary) vs Contributor Incentive Alignment
+· Decision: YFI fixed supply 36,666, no inflation, no team allocation; contributor compensation dari treasury stablecoin/grants bukan token emission
+· Trade-off: Token holder value protection (no dilution) vs difficulty incentivizing long-term contributors tanpa token upside; reliance pada treasury management untuk comp
+· Evidence: Phase 6 Token (fixed supply, distribution), Phase 5 Treasury (management), Phase 7 Governance Ecosystem (yTeams compensation), Phase 5 Fundraising Mechanism (grants)
+· Supporting Dataset: Phase 5 Treasury, Phase 5 Fundraising Mechanism, Phase 6 Token, Phase 7 Governance Ecosystem
+
+Trade-off 5: Security via Extensive Audits vs Speed to Market
+· Decision: Multiple auditors (Trail of Bits, Certora, PeckShield, Quantstamp, MixBytes) untuk setiap major release; formal verification (Certora); bug bounty; slow release cadence
+· Trade-off: Security assurance tinggi vs slower feature deployment; competitors (Beefy, Harvest) bisa ship strategies faster; Yearn strategies lebih conservative
+· Evidence: Phase 2 Entity (auditors), Phase 4 Technology (security model, audits), Phase 8 Market (competitors)
+· Supporting Dataset: Phase 2 Entity, Phase 4 Technology, Phase 8 Market
+
+Trade-off 6: Legal Wrapper (Cayman Foundation) vs Regulatory Uncertainty
+· Decision: Establish Cayman Foundation untuk legal contracts, IP, employment, limited liability
+· Trade-off: Regulatory compliance pathway vs jurisdictional risk (Cayman law changes), Foundation vs DAO authority ambiguity, potential regulatory capture, costo compliance
+· Evidence: Phase 2 Entity (Foundation), Phase 3 History (YIP-66), Phase 7 Governance Ecosystem (Foundation), Phase 7 Ecosystem Risks (legal jurisdiction)
+· Supporting Dataset: Phase 2 Entity, Phase 3 History, Phase 7 Governance Ecosystem, Phase 7 Ecosystem Risks
+
+Behavioral Summary
+
+Prioritas Utama Proyek:
+1. Security dan trust-minimization (extensive audits, multisig, timelock, conservative upgrades)
+2. Yield maximization untuk user (Curve/Convex strategies, automation, multi-chain low fees)
+3. Desentralisasi progresif dan community ownership (fair launch, DAO governance, yTeams, Foundation)
+4. Composability dan standarisasi (ERC-4626 pioneer, SDK/API untuk integrator)
+5. Sustainability finansial tanpa token inflation (protocol revenue, treasury yield, grants)
+· Evidence: Phase 4 Technology (security), Phase 7 External Dependencies (Curve/Convex), Phase 1 Foundation (fair launch), Phase 4 Technology (ERC-4626), Phase 5 Revenue Model (protocol revenue)
+· Supporting Dataset: Phase 1 Foundation, Phase 4 Technology, Phase 5 Revenue Model, Phase 7 External Dependencies
+
+Cara Mengambil Keputusan:
+- Data-driven: On-chain metrics (TVL, revenue, APY), governance forum discussion, security audits
+- Konsensus berbasis: YIP process (Discourse → Snapshot → Multisig), yTeams domain expertise
+- Transparan: Semua discussion, financial, exploit postmortem publik di gov.yearn.finance
+- Iteratif: Upgrade bertahap (v1→v2→v3), migration path, backward compatibility
+- Risk-aware: Explicit risk documentation (Financial Risk, Ecosystem Risks), diversification efforts
+· Evidence: Phase 7 Governance Ecosystem (YIP process), Phase 2 Entity (community), Phase 3 History (postmortems), Phase 3 History (version evolution), Phase 5 Financial Risk (risk documentation)
+· Supporting Dataset: Phase 2 Entity, Phase 3 History, Phase 5 Financial Risk, Phase 7 Governance Ecosystem
+
+Faktor Paling Sering Mempengaruhi Keputusan:
+1. Security track record (exploit history mendorong architecture changes)
+2. Gas cost environment (mendorong multi-chain expansion)
+3. Curve/Convex ecosystem dynamics (mendorong yBribe/Boost, strategy focus)
+4. Bear/bull market cycle (revenue → treasury management → grant sizing)
+5. Regulatory landscape (Foundation formation, legal wrapper)
+6. Community governance sentiment (YIP voting, yTeams elections)
+· Evidence: Phase 3 History (exploit → version changes), Phase 3 History (multi-chain timeline), Phase 7 External Dependencies (Curve/Convex), Phase 5 Revenue History (bear market), Phase 3 History (YIP-66), Phase 7 Governance Ecosystem (yTeams elections)
+· Supporting Dataset: Phase 3 History, Phase 5 Revenue History, Phase 7 External Dependencies, Phase 7 Governance Ecosystem
+
+Pola Evolusi:
+- Phase 1 (2020): Founder-led yield optimizer (iEarn/yEarn) → Fair launch YFI
+- Phase 2 (2020-2021): Multisig governance → Vault v2 modular → Iron Bank → Multi-chain (Fantom)
+- Phase 3 (2022): yTeams delegation → Yearn Foundation legal wrapper → yBribe/Boost governance infrastructure
+- Phase 4 (2023-2024): Vault v3 ERC-4626 standardization → Iron Bank v2 (Aave v3) → Base/zkSync deployment → Developer platform maturation
+· Evidence: Phase 3 History (full timeline), Phase 4 Technology (versions), Phase 7 Applications (products)
+· Supporting Dataset: Phase 3 History, Phase 4 Technology, Phase 7 Applications
+
+Kekuatan Utama:
+- Blue-chip DeFi reputation, extensive audit history, battle-tested vaults
+- Curve/Convex moat: gauge control, bribe marketplace, strategy expertise
+- Fair launch credibility: no VC, community-owned, transparent governance
+- Developer ecosystem: SDK, API, Subgraphs, ERC-4626 standard, third-party integrations
+- Multi-chain presence: 10 chains, unified frontend, cross-chain infrastructure
+- Treasury sustainability: protocol revenue, diversified assets, grant program
+· Evidence: Phase 2 Entity (auditors), Phase 7 External Dependencies (Curve/Convex), Phase 1 Foundation (fair launch), Phase 7 Developer Ecosystem (SDK/API), Phase 7 Ecosystem Position (chains), Phase 5 Treasury (management)
+· Supporting Dataset: Phase 1 Foundation, Phase 2 Entity, Phase 5 Treasury, Phase 7 Developer Ecosystem, Phase 7 Ecosystem Position, Phase 7 External Dependencies
+
+Kelemahan Utama:
+- Curve/Convex concentration risk (60-70% TVL dependency)
+- Multisig centralization (9/13 pseudo-anonymous signers)
+- Chainlink oracle single point of failure (>90% feeds)
+- Bridge dependency untuk multi-chain (LayerZero/Wormhole)
+- Revenue concentration: >80% dari vault fees, bear market vulnerable
+- YFI holder concentration (top holders control governance)
+- Legal jurisdiction risk (Cayman Foundation untested regulatory framework)
+- No fee switch activation (YIP-41 proposed but status unclear) → YFI pure governance, no direct value accrual
+· Evidence: Phase 7 Ecosystem Risks (concentration risks), Phase 5 Financial Risk (revenue decline), Phase 6 Token (fee switch status), Phase 7 Governance Ecosystem (Foundation)
+· Supporting Dataset: Phase 5 Financial Risk, Phase 6 Token, Phase 7 Ecosystem Risks, Phase 7 Governance Ecosystem
+
+Open Threads
+
+- Fee switch implementation status: YIP-41 proposed fee buyback/distribusi ke YFI stakers; tidak ada kontrak fee switch terverifikasi on-chain mainnet; perlu verifikasi apakah masih di roadmap atau dibuang
+· Sources: https://gov.yearn.finance/t/yip-41-yearn-finance-tokenomics/263, https://yearn.finance/#/tokenomics
+- Exact Curve/Convex TVL concentration percentage: DefiLlama menunjukkan aggregate TVL tapi tidak per-strategy breakdown; Dune query diperlukan untuk precise metric
+· Sources: https://defillama.com/protocol/yearn-finance, https://dune.com/yearn
+- yTeam signer identities dan accountability: 13 multisig signers pseudo-anonymous by design; tidak ada public mapping signer → role → real identity; legal liability unclear
+· Sources: https://gnosis-safe.io/app/#/safes/0xFEB4acf3df3cDEA7399794D0869ef76A6EfAff52, https://gov.yearn.finance/t/yip-61-yearn-treasury-management/1120
+- Yearn Foundation constitutional documents: Full charter/bylaws tidak public; hanya summary di YIP-66; governance boundary DAO vs Foundation ambigu
+· Sources: https://gov.yearn.finance/t/yip-66-yearn-foundation/1200, https://www.yearn.foundation/
+- Iron Bank v2 isolated market risk parameters per market: LTV, liquidation threshold, oracle config tersebar di governance proposals; tidak ada single public doc
+· Sources: https://docs.yearn.finance/products/iron-bank, https://gov.yearn.finance/t/yip-57-iron-bank-v2/900
+- yBudget grant allocation per epoch: Amounts, recipients, KPIs tidak terpusat di dashboard resmi; hanya di individual governance threads
+· Sources: https://gov.yearn.finance/t/yip-75-ybudget/1600, https://www.yearn.foundation/grants
+- Keep3r job coverage ratio: Jobs posted vs executed tidak publicly dashboarded; hanya anecdotal di governance discussions
+· Sources: https://keep3r.network/, https://docs.yearn.finance/developers/keep3r
+- Alchemy/Infura RPC redundancy: Apakah Yearn menjalankan fallback nodes sendiri atau menggunakan decentralized RPC (Pocket, Lava) tidak terdokumen di developer docs
+· Sources: https://docs.yearn.finance/developers/sdk, https://alchemy.com/, https://infura.io/
+- Bridge risk quantification: Total value bridged via LayerZero/Wormhole untuk Yearn strategies tidak teragregasi di single dashboard
+· Sources: https://layerzero.network/, https://wormhole.com/, https://gov.yearn.finance/t/multichain-exploit-response/2000
+- Cross-chain vault strategy registry: Tidak ada canonical list strategi mana deployed di chain mana dengan TVL breakdown
+· Sources: https://yearn.finance/#/vaults, https://github.com/yearn/yearn-vaults-v3
+- Legal liability yTeam members: Cayman Foundation structure limits liability tapi extent untested; no public legal opinion
+· Sources: https://www.yearn.foundation/, https://gov.yearn.finance/t/yip-66-yearn-foundation/1200
+- Revenue split DAO treasury vs yTeam contributors vs grants: Tidak ada transparent recurring report
+· Sources: https://gov.yearn.finance/t/yip-61-yearn-treasury-management/1120, https://gov.yearn.finance/t/yip-75-ybudget/1600
+- v1 vault sunset timeline: Legacy v1 vaults masih accessible tapi deprecated; tidak ada official sunset date
+· Sources: https://yearn.finance/#/vaults, https://github.com/yearn/yearn-vaults
+- Gelato vs Keep3r job distribution percentage: Tidak disclosed publicly
+· Sources: https://gelato.network/, https://keep3r.network/, https://docs.yearn.finance/developers/keep3r

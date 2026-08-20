@@ -1,0 +1,139 @@
+PROJECT: Uniswap
+
+STATUS AIRDROP
+
+Sudah dilakukan. Uniswap mendistribusikan token governance UNI melalui retroactive airdrop ke pengguna historis (15% supply, 400 UNI per alamat) dan liquidity mining program (4,15% supply) mulai Token Generation Event (TGE) 17 September 2020; DAO Treasury 40,85% dialokasikan untuk distribusi masa depan (grants, community initiatives)【Phase 6 — Distribution】(HIGH) [Uniswap Blog UNI, https://uniswap.org/blog/uni/].
+
+AIRDROP EVENTS
+
+AD-001: Retroactive Airdrop ke Pengguna Historis
+Tanggal: 2020-09-17 (TGE; claimable sejak TGE)
+Tipe: Retroactive / Flat-amount per address
+Alokasi: 15% total supply (150.000.000 UNI dari 1.000.000.000 UNI)【Phase 6 — Distribution】(HIGH) [Uniswap Blog UNI, https://uniswap.org/blog/uni/]
+Penerima: ~250.000 alamat unik yang pernah berinteraksi dengan protokol Uniswap sebelum 1 September 2020; masing-masing menerima 400 UNI【Phase 3 — EV-009】(HIGH) [Uniswap Blog UNI, https://uniswap.org/blog/uni/]
+Nilai saat klaim: 3.44 USD per UNI (close hari TGE 2020-09-17; intraday range 2.05-5.00) [KuCoin UNI-USDT daily candle, https://www.kucoin.com/trade/UNI-USDT] (MEDIUM)
+Kriteria: Interaksi historis dengan protokol sebelum snapshot 1 September 2020 — termasuk swap, LP, dan aktivitas lain yang tercatat on-chain; tanpa persyaratan tugas tambahan【Phase 3 — EV-009】(HIGH)
+Anti-sybil: Flat 400 UNI per alamat tanpa verifikasi identitas; snapshot berbasis interaksi on-chain historis sehingga multi-wallet farming pasca-pengumuman tidak mungkin untuk alokasi utama (namun alamat-alamat yang memecah aktivitas sebelum snapshot menerima porsi lebih besar secara proporsional)【Phase 3 — EV-009】(MEDIUM)
+Terkait EV: EV-009 (UNI Token Launch via Airdrop dan Liquidity Mining)
+Sitasi: Phase 3 EV-009; Phase 6 Distribution (HIGH)
+
+AD-002: Liquidity Mining Program (4 Pool Utama)
+Tanggal: 2020-09-18 mulai — berjalan ~2 bulan pasca-TGE dengan emisi bertahap 4 tahun sesuai jadwal
+Tipe: Liquidity mining / On-chain activity rewards
+Alokasi: 4,15% total supply (41.500.000 UNI), didistribusikan ke 4 pool: ETH/USDT, ETH/USDC, ETH/DAI, ETH/WBTC【Phase 6 — Distribution】(HIGH) [Uniswap Blog UNI, https://uniswap.org/blog/uni/]
+Penerima: Liquidity provider pada 4 pool eligible selama periode program; jumlah alamat tidak dipublikasikan secara resmi (LOW)
+Nilai saat klaim: Tidak berlaku (emisi berkelanjutan per blok ke LP, bukan klaim satu kali)
+Kriteria: Menyediakan likuiditas di salah satu dari 4 pool eligible selama periode perhitungan; reward proporsional dengan share pool【Phase 3 — EV-009】(HIGH)
+Anti-sybil: Tidak relevan (reward berbasis kontribusi likuiditas on-chain, bukan identitas)
+Terkait EV: EV-009
+Sitasi: Phase 3 EV-009; Phase 6 Distribution (HIGH)
+
+CONTEXT SAAT KEPUTUSAN
+
+Kondisi saat keputusan airdrop UNI (September 2020):
+- Tahap project: Uniswap v2 live ~4 bulan, belum memiliki token; kompetitor fork SushiSwap melakukan vampire attack Agustus 2020 dengan insentif token SUSHI dan mengancam likuiditas Uniswap v2【Phase 9 — Decision Timeline】(HIGH)
+- Kondisi pasar: "DeFi Summer" 2020 — TVL DeFi melonjak; yield farming dan token governance sedang puncak narasi【Phase 8 — Market Timeline】(HIGH)
+- Kompetitor terdekat: SushiSwap (fork v2 + token SUSHI), Curve (CRV diluncurkan Agustus 2020), Balancer (BAL Juni 2020) — hampir semua DEX besar sudah memiliki token kecuali Uniswap【Phase 8 — Competitor Landscape】(HIGH)
+- Trigger: Kompetisi SushiSwap vampire attack (Agustus 2020) mengancam liquidity Uniswap v2; perlu komunitas ownership dan retention【Phase 9 — Decision Timeline】(HIGH)
+
+TRIGGER DAN ALTERNATIF
+
+Trigger utama: Vampire attack SushiSwap menguras likuiditas; Uniswap membutuhkan mekanisme retensi LP dan legitimasi komunitas secara cepat【Phase 9 — Decision Timeline】(HIGH).
+Alternatif tidak diambil:
+- Liquidity mining saja tanpa retroactive airdrop: tidak dipilih karena tidak menghargai pengguna awal yang loyal sebelum ada token (retroactive recognition dipilih sebagai diferensiasi moral vs SushiSwap) (MEDIUM) [Uniswap Blog UNI, https://uniswap.org/blog/uni/]
+- Public sale / ICO: tidak dilakukan; distribusi sepenuhnya ke komunitas tanpa penggalangan dana publik (HIGH) [Phase 5 — Token Sale】
+- Token dengan fee-sharing sejak awal: fee switch (0,05% ke DAO) tersedia di kontrak tapi tidak diaktifkan — proposal aktivasi Oktober 2020 tidak mencapai quorum 40M UNI (~39M UNI voting)【Phase 3 — EV-010】(HIGH)
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi:
+- "UNI governance token: decentralised governance untuk protokol; 60% dialokasikan ke anggota komunitas Uniswap"【Phase 6 — Distribution】(HIGH) [Uniswap Blog UNI, https://uniswap.org/blog/uni/]
+- Retroactive reward mengakui early adopters yang membangun likuiditas sebelum ada insentif token (HIGH) [Uniswap Blog UNI, https://uniswap.org/blog/uni/]
+
+Alasan yang tidak diumumkan (HIPOTESIS):
+- Respons defensif langsung terhadap SushiSwap: menghentikan outflow LP dengan memberi alasan ekonomi untuk bertahan — HIPOTESIS (HIGH) [Phase 9 — Decision Timeline: Immediate Result TVL melonjak dari ~$1B ke >$3B dalam satu bulan]
+- Mempertahankan opsi value capture (fee switch) di tangan DAO tanpa mengaktifkannya — menghindari klasifikasi security dengan tidak menjanjikan aliran pendapatan ke pemegang token — HIPOTESIS (MEDIUM) [Phase 6 — Governance Model fee switch; Phase 3 EV-010]
+- Membangun basis voting untuk melawan potensi pengambilalihan arah protokol oleh fork yang didukung VC — HIPOTESIS (LOW)
+
+OUTCOME PER POV
+
+POV Founder (Hayden Adams, Uniswap Labs): Sukses
+- Jangka pendek: TVL melonjak dari ~$1B ke >$3B dalam sebulan; vampire attack SushiSwap terhenti; DAO terbentuk【Phase 9 — Decision Timeline Immediate Result】(HIGH)
+- Jangka panjang: Uniswap menjadi standar AMM industri (v3 di-fork luas); namun Wells Notice SEC April 2024 dan fee switch yang tak pernah aktif menimbulkan tekanan berkelanjutan【Phase 3 — EV terkait Wells Notice】(HIGH)
+- Dasar: Phase 9 Decision Timeline; Phase 3 Events; Phase 8 Market (HIGH)
+
+POV VC (a16z, Paradigm, dkk.): Sukses
+- Jangka pendek: Alokasi investor 17,8% (178M UNI) dengan vesting; UNI naik dari ~3.44 USD saat TGE ke puncak 45.05 USD (Mei 2021) — potensi >10x paper return pada sebagian alokasi [KuCoin UNI-USDT, https://www.kucoin.com/trade/UNI-USDT] (MEDIUM)
+- Jangka panjang: Fully vested September 2024; pengaruh governance signifikan melalui delegasi; tidak ada fee-sharing sehingga nilai bergantung pada apresiasi harga【Phase 6 — Vesting Schedule Investors】(HIGH)
+- Dasar: Phase 6 Distribution, Vesting Schedule (HIGH/MEDIUM)
+
+POV Retail (Penerima airdrop 400 UNI): Sebagian
+- Jangka pendek: 400 UNI ≈ 1.376 USD pada harga klaim 3.44 USD — windfall tanpa tugas; sebagian menjual cepat, sebagian menahan [KuCoin UNI-USDT, https://www.kucoin.com/trade/UNI-USDT] (MEDIUM)
+- Jangka panjang: Pemegang sampai puncak Mei 2021 memperoleh ~18.000 USD per alokasi 400 UNI; namun tidak ada pembagian fee protokol (fee switch tidak aktif) sehingga imbal hasil hanya dari apresiasi harga【Phase 3 — EV-010】(MEDIUM)
+- Dasar: KuCoin price history; Phase 3 EV-010; Phase 6 Governance (MEDIUM)
+
+POV Community (Pengguna & governance participants): Sukses
+- Jangka pendek: Salah satu distribusi token komunitas terbesar pada masanya (150M UNI + 41.5M LM); partisipasi governance langsung terbentuk【Phase 6 — Distribution】(HIGH)
+- Jangka panjang: DAO Treasury 408,5M UNI mendanai grants dan inisiatif; komunitas governance aktif meskipun quorum 40M UNI sulit dicapai (proposal fee switch dan buyback gagal)【Phase 3 — EV-010, EV-040】(HIGH)
+- Dasar: Phase 6 Distribution; Phase 3 EV-010, EV-040 (HIGH)
+
+POV Developer (Integrator & frontend builder): Sukses
+- Jangka pendek: Likuiditas yang stabil dan governance token meningkatkan kepercayaan integrasi; SDK/API tersedia luas【Phase 7 — Developer Ecosystem】(HIGH)
+- Jangka panjang: AMM Uniswap menjadi primitif standar industri; deployment v3 ke 12+ chain memperluas permukaan integrasi【Phase 7 — Major Integrations】(HIGH)
+- Dasar: Phase 7 Developer Ecosystem, Major Integrations (HIGH)
+
+POV Institution (Fund, custodian, exchange): Sebagian
+- Jangka pendek: Listing CEX besar cepat (termasuk Coinbase) memberikan likuiditas institusional【Phase 8 — Trading Markets】(MEDIUM)
+- Jangka panjang: Wells Notice SEC April 2024 menciptakan ketidakpastian klasifikasi sekuritas; konsentrasi top-100 holders ~60-70% supply membatasi daya tarik governance institusional【Phase 3 — Wells Notice; Phase 6 — Holder Distribution】(MEDIUM)
+- Dasar: Phase 3 Events; Phase 6 Holder Distribution; Phase 8 Trading Markets (MEDIUM)
+
+POV Validator: Tidak relevan
+- UNI adalah ERC-20 governance token di Ethereum; tidak ada validator set milik Uniswap — keamanan bergantung pada validator Ethereum L1 (HIGH) [Phase 4 — Consensus/Architecture context】
+
+POV Builder (Protocol yang membangun di atas/mem-fork Uniswap): Sebagian
+- Jangka pendek: Lisensi v3 Business Source License (BSL) membatasi penggunaan komersial fork hingga April 2023 — hambatan bagi builder yang ingin mem-fork v3 (MEDIUM) [Phase 4 — Known Technical Limitations】
+- Jangka panjang: Setelah BSL berakhir (April 2023), v3 menjadi standar fork terbuka (PancakeSwap v3, SushiSwap Trident, Maverick, Ambient); grants DAO mendukung builder ekosistem【Phase 8 — Competitor Landscape; Phase 7 — Grant Program】(HIGH)
+- Dasar: Phase 4 Known Technical Limitations; Phase 8 Competitor Landscape (HIGH/MEDIUM)
+
+HARGA PASCA-DISTRIBUSI
+
+Harga saat klaim: 3.44 USD (2020-09-17) [KuCoin UNI-USDT daily candle close (hari TGE), https://www.kucoin.com/trade/UNI-USDT] (MEDIUM)
+Harga +30 hari: 3.06 USD (2020-10-17) [KuCoin UNI-USDT daily candle close, https://www.kucoin.com/trade/UNI-USDT] (MEDIUM)
+Harga +90 hari: 3.54 USD (2020-12-16) [KuCoin UNI-USDT daily candle close, https://www.kucoin.com/trade/UNI-USDT] (MEDIUM)
+Harga puncak 12 bulan pertama: 45.05 USD (2021-05-03) [KuCoin UNI-USDT daily candle high, https://www.kucoin.com/trade/UNI-USDT] (MEDIUM)
+
+METRIK RETENSI
+
+Perubahan TVL sebelum vs sesudah distribusi: TVL ~$1B (pra-TGE) → >$3B dalam satu bulan pasca-TGE; liquidity mining 4 pool mendorong lonjakan awal【Phase 9 — Decision Timeline Immediate Result】(HIGH)
+Jumlah alamat pemegang token (unique holders): Estimasi ratusan ribu penerima airdrop (~250k alamat eligible) + LP; top-100 holders mengontrol ~60-70% supply (Okt 2024) termasuk DAO timelock dan vesting contracts【Phase 6 — Holder Distribution】(MEDIUM) [Etherscan UNI Holders, https://etherscan.io/token/0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984#balances]
+Jumlah alamat aktif harian sebelum vs sesudah: Tidak ditemukan (tidak ada dashboard publik yang membandingkan daily active addresses pre/post TGE di fase sebelumnya) (LOW)
+Konsentrasi kepemilikan (top 10 addresses): Termasuk DAO Treasury timelock (~300-350M UNI), vesting contracts team/investor, dan exchange wallets — distribusi ritel estimasi ~200-250M UNI【Phase 6 — Holder Distribution】(MEDIUM)
+Tingkat partisipasi staking: Tidak berlaku (UNI tidak memiliki mekanisme staking native; utilitas utama governance voting dan delegasi)【Phase 6 — Utility】(HIGH)
+
+GAP YANG DIKETAHUI
+
+Cohort penerima: memerlukan analisis on-chain per-alamat (berapa persen penerima yang menjual dalam 30 hari pertama), tidak tersedia di sumber publik.
+Jumlah alamat penerima liquidity mining per pool tidak dipublikasikan resmi.
+
+FARMING DAN SYBIL
+
+Kriteria retroactive (interaksi sebelum 1 September 2020) diumumkan bersamaan dengan token, sehingga farming retroactive untuk alokasi utama tidak mungkin; namun alamat-alamat yang telah memecah aktivitas on-chain sebelum pengumuman menerima alokasi per-alamat penuh (400 UNI per wallet), memberi keuntungan pada pengguna besar yang memakai banyak wallet (MEDIUM) [Phase 3 — EV-009】. Liquidity mining rentan pada farming jual-tekan (sell-pressure loop) yang umum di era DeFi Summer 2020 (LOW).
+
+PROSPEK
+
+Metrik yang terpenuhi: Retensi likuiditas pasca-vampire-attack (TVL naik >3x dalam sebulan); pembentukan DAO fungsional; standar industri AMM (HIGH)
+Metrik yang tidak terpenuhi: Aktivasi value capture on-chain (fee switch tidak pernah mencapai quorum 40M UNI; proposal buyback juga gagal)【Phase 3 — EV-010, EV-040】(HIGH)
+Sinyal ke depan: Aktivasi fee switch atau mekanisme value capture alternatif; resolusi SEC; adopsi Unichain (HIGH)
+Penilaian: Airdrop UNI adalah distribusi defensif paling sukses di eranya — menghentikan vampire attack dan mengunci posisi standar industri — tetapi desain governance tanpa value capture membuat imbal hasil pemegang token sepenuhnya bergantung pada apresiasi harga (MEDIUM)
+
+PELAJARAN LINTAS PROJECT
+
+Retroactive airdrop flat-amount dengan snapshot historis yang kredibel (diambil setelah fakta) efektif menghentikan serangan likuiditas kompetitor — efeknya terukur dalam 30 hari (TVL ~1B ke >3B).
+Mekanisme value capture yang disiapkan tapi tidak diaktifkan (fee switch) menciptakan ekspektasi yang tidak pernah terbayar dan berulang kali gagal di governance — keputusan desain awal menentukan batas value accrual jangka panjang.
+Distribusi tanpa public sale menjaga legitimasi komunitas tetapi memusatkan supply pada team/investor/treasury (82%+ non-airdrop), yang kemudian terlihat sebagai konsentrasi holder.
+
+OPEN THREADS
+
+- Berapa persen penerima airdrop 400 UNI yang masih memegang hingga 2024 (on-chain cohort analysis).
+- Status akhir Wells Notice SEC dan dampaknya terhadap klasifikasi UNI.
+- Apakah Unichain mengubah utilitas/nilai UNI (sequencing revenue).

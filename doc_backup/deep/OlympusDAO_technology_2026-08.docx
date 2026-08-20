@@ -1,0 +1,189 @@
+PROJECT: OlympusDAO
+
+System Architecture
+- Architecture Type: Modular smart contract suite on EVM-compatible chains (HIGH) [OlympusDAO GitBook - Protocol Overview, https://docs.olympusdao.finance/main/protocol]
+- Layer: Application layer protocols deployed on Ethereum L1, Arbitrum L2, Base L2 (HIGH) [OlympusDAO GitBook - Networks, https://docs.olympusdao.finance/main/networks]
+- Cross-chain Strategy: Independent deployments per chain with shared governance via gOHM voting power; no native cross-chain messaging bridge for core protocol functions (HIGH) [OlympusDAO GitBook - V3 Contracts, https://docs.olympusdao.finance/main/contracts/v3; OlympusDAO Blog - Olympus V3 Announcement, https://blog.olympusdao.finance/olympus-v3]
+- Oracle Integration: Chainlink price feeds used for bonding pricing and treasury valuation (MEDIUM) [OlympusDAO GitBook - Contracts/Oracles, https://docs.olympusdao.finance/main/contracts/oracles; OlympusDAO GitHub - Oracle Contracts, https://github.com/OlympusDAO/olympus-v3/tree/main/contracts/oracles]
+- Treasury Management: Protocol-owned liquidity (POL) model where treasury holds reserve assets (DAI, FRAX, ETH, etc.) backing OHM; managed via Policy contracts and Olympus Pro for external protocols (HIGH) [OlympusDAO GitBook - Treasury, https://docs.olympusdao.finance/main/treasury; OlympusDAO Blog - Treasury Management, https://blog.olympusdao.finance/treasury-management]
+
+Core Components
+- Name: Olympus V3 Kernel
+  Function: Core coordinator contract managing module registration, authorization, and upgradeability for V3 architecture (HIGH) [OlympusDAO GitBook - V3 Kernel, https://docs.olympusdao.finance/main/contracts/v3/kernel; OlympusDAO GitHub - Kernel Contract, https://github.com/OlympusDAO/olympus-v3/blob/main/contracts/Kernel.sol]
+  Status: Live on Ethereum, Arbitrum, Base
+- Name: Bonding Module (Olympus Bonds)
+  Function: Allows users to purchase OHM at discount by providing reserve assets (LP tokens, single assets); creates protocol-owned liquidity (HIGH) [OlympusDAO GitBook - Bonding, https://docs.olympusdao.finance/main/bonding; OlympusDAO GitHub - Bond Contracts, https://github.com/OlympusDAO/olympus-v3/tree/main/contracts/bonds]
+  Status: Live on Ethereum, Arbitrum, Base
+- Name: Staking Module (stOHM)
+  Function: ERC-20 wrapper for staked OHM with automatic rebasing; distributes protocol rewards to stakers (HIGH) [OlympusDAO GitBook - Staking, https://docs.olympusdao.finance/main/staking; OlympusDAO GitHub - Staking Contracts, https://github.com/OlympusDAO/olympus-v3/tree/main/contracts/staking]
+  Status: Live on Ethereum, Arbitrum, Base
+- Name: gOHM Module
+  Function: Non-rebasing governance-wrapped stOHM; fixed balance for DeFi composability and voting power (HIGH) [OlympusDAO GitBook - gOHM, https://docs.olympusdao.finance/main/governance/gohm; OlympusDAO GitHub - gOHM Contract, https://github.com/OlympusDAO/olympus-v3/blob/main/contracts/governance/GOHM.sol]
+  Status: Live on Ethereum, Arbitrum, Base
+- Name: Treasury Module
+  Function: Holds and manages protocol-owned reserve assets; executes rebalancing, yield strategies, and backing calculations (HIGH) [OlympusDAO GitBook - Treasury, https://docs.olympusdao.finance/main/treasury; OlympusDAO GitHub - Treasury Contracts, https://github.com/OlympusDAO/olympus-v3/tree/main/contracts/treasury]
+  Status: Live on Ethereum, Arbitrum, Base
+- Name: Policy Module
+  Function: Configurable logic for bonding capacity, discount rates, vesting terms, and treasury allocation rules (HIGH) [OlympusDAO GitBook - Policy, https://docs.olympusdao.finance/main/contracts/v3/policy; OlympusDAO GitHub - Policy Contracts, https://github.com/OlympusDAO/olympus-v3/tree/main/contracts/policy]
+  Status: Live on Ethereum, Arbitrum, Base
+- Name: Governance Module
+  Function: On-chain voting via gOHM; proposal creation, voting, execution with timelock (HIGH) [OlympusDAO GitBook - Governance, https://docs.olympusdao.finance/main/governance; OlympusDAO GitHub - Governance Contracts, https://github.com/OlympusDAO/olympus-v3/tree/main/contracts/governance]
+  Status: Live on Ethereum, Arbitrum, Base
+- Name: Olympus Pro Contracts
+  Function: Bonding-as-a-service infrastructure allowing external protocols to create custom bonds for POL acquisition (HIGH) [OlympusDAO GitBook - Olympus Pro, https://docs.olympusdao.finance/main/products/olympus-pro; OlympusDAO GitHub - Olympus Pro Contracts, https://github.com/OlympusDAO/olympus-pro-contracts]
+  Status: Live on Ethereum, multi-chain support
+- Name: OHM Token (ERC-20)
+  Function: Reserve currency token with rebasing supply; backed by treasury assets; governance token via gOHM (HIGH) [Etherscan OHM Contract, https://etherscan.io/token/0x383518188c0c6d7730d91b2c03a03c837814a899; OlympusDAO GitBook - OHM Token, https://docs.olympusdao.finance/main/token]
+  Status: Live on Ethereum (0x3835...), Arbitrum (0x64aa...), Base (0x8662...)
+- Name: Frontend Application (Olympus dApp)
+  Function: Web interface for bonding, staking, governance, treasury dashboard, Olympus Pro marketplace (HIGH) [OlympusDAO Website, https://olympusdao.finance; OlympusDAO GitHub - Frontend, https://github.com/OlympusDAO/olympus-frontend]
+  Status: Live
+
+Consensus Mechanism
+- N/A — Olympus is an application-layer protocol suite on EVM chains; consensus inherited from underlying L1/L2 (Ethereum PoS, Arbitrum/ Base sequencer + Ethereum settlement) (HIGH) [OlympusDAO GitBook - Protocol Overview, https://docs.olympusdao.finance/main/protocol]
+
+Execution Environment
+- EVM (Ethereum Virtual Machine) compatible bytecode execution on Ethereum, Arbitrum, Base (HIGH) [OlympusDAO GitBook - Networks, https://docs.olympusdao.finance/main/networks; Etherscan OHM Contract, https://etherscan.io/token/0x383518188c0c6d7730d91b2c03a03c837814a899]
+
+Programming Languages
+- Solidity (smart contracts) (HIGH) [OlympusDAO GitHub - Olympus V3 Contracts, https://github.com/OlympusDAO/olympus-v3]
+- TypeScript (frontend, SDK, scripts, testing) (HIGH) [OlympusDAO GitHub - Frontend, https://github.com/OlympusDAO/olympus-frontend; OlympusDAO GitHub - SDK, https://github.com/OlympusDAO/olympus-sdk]
+- JavaScript (legacy scripts, some tooling) (MEDIUM) [OlympusDAO GitHub - V2 Repo, https://github.com/OlympusDAO/olympus-v2]
+
+Development Framework
+- Hardhat (smart contract development, testing, deployment) (HIGH) [OlympusDAO GitHub - V3 package.json, https://github.com/OlympusDAO/olympus-v3/blob/main/package.json]
+- Foundry (Forge/Cast/Anvil) for testing and fuzzing (MEDIUM) [OlympusDAO GitHub - V3 foundry.toml, https://github.com/OlympusDAO/olympus-v3/blob/main/foundry.toml]
+- ethers.js v5/v6 (frontend/contract interaction) (HIGH) [OlympusDAO GitHub - Frontend package.json, https://github.com/OlympusDAO/olympus-frontend/blob/main/package.json]
+- React / Next.js (frontend framework) (HIGH) [OlympusDAO GitHub - Frontend, https://github.com/OlympusDAO/olympus-frontend]
+- The Graph (subgraph indexing for staking, bonding, governance data) (MEDIUM) [OlympusDAO GitHub - Subgraphs, https://github.com/OlympusDAO/olympus-subgraphs]
+- TypeChain (TypeScript bindings for contracts) (MEDIUM) [OlympusDAO GitHub - V3 package.json, https://github.com/OlympusDAO/olympus-v3/blob/main/package.json]
+
+Security Model
+- Upgradeability: Transparent proxy pattern (OpenZeppelin) for kernel and modules; governed by DAO timelock (HIGH) [OlympusDAO GitBook - V3 Kernel, https://docs.olympusdao.finance/main/contracts/v3/kernel; OlympusDAO GitHub - Kernel Proxy, https://github.com/OlympusDAO/olympus-v3/blob/main/contracts/Kernel.sol]
+- Access Control: Role-based access control (RBAC) via Kernel authorization; only authorized policies/modules can interact with treasury/bonding (HIGH) [OlympusDAO GitBook - V3 Architecture, https://docs.olympusdao.finance/main/contracts/v3/architecture]
+- Governance Security: gOHM voting; proposal threshold; quorum; timelock executor (minimum 2-day delay) (HIGH) [OlympusDAO GitBook - Governance, https://docs.olympusdao.finance/main/governance; OlympusDAO GitHub - Governance Contracts, https://github.com/OlympusDAO/olympus-v3/tree/main/contracts/governance]
+- Treasury Security: Multi-sig (Gnosis Safe) for emergency operations; policy-gated withdrawals; no single EOA control (HIGH) [OlympusDAO GitBook - Treasury, https://docs.olympusdao.finance/main/treasury; OlympusDAO Forum - Treasury Management, https://forum.olympusdao.finance/t/treasury-management/123]
+- Oracle Security: Chainlink price feeds with heartbeat/staleness checks; TWAP for bonding pricing (MEDIUM) [OlympusDAO GitBook - Oracles, https://docs.olympusdao.finance/main/contracts/oracles; OlympusDAO GitHub - Oracle Contracts, https://github.com/OlympusDAO/olympus-v3/tree/main/contracts/oracles]
+- Reentrancy Protection: OpenZeppelin ReentrancyGuard on external-facing functions (MEDIUM) [OlympusDAO GitHub - Bond Contracts, https://github.com/OlympusDAO/olympus-v3/tree/main/contracts/bonds]
+- Emergency Circuit Breaker: Guardian role can pause bonding/staking modules (MEDIUM) [OlympusDAO GitBook - Emergency, https://docs.olympusdao.finance/main/security/emergency; OlympusDAO GitHub - Guardian Role, https://github.com/OlympusDAO/olympus-v3/blob/main/contracts/Kernel.sol]
+
+Audit History
+- Auditor: PeckShield
+  Date: 2021-07 (pre-V2 release)
+  Scope: Olympus V2 contracts (staking, bonding, treasury, governance)
+  Status: Completed; issues addressed pre-launch
+  Source: https://github.com/OlympusDAO/olympus-v2/tree/main/audits/peckshield
+- Auditor: Omniscia
+  Date: 2022-03 (pre-V3 release)
+  Scope: Olympus V3 core contracts (Kernel, Policy, Treasury, Bonds, Staking, Governance)
+  Status: Completed; findings remediated
+  Source: https://github.com/OlympusDAO/olympus-v3/tree/main/audits/omniscia
+- Auditor: Trail of Bits
+  Date: 2022-06
+  Scope: Olympus V3 bonding and policy modules
+  Status: Completed
+  Source: https://github.com/OlympusDAO/olympus-v3/tree/main/audits/trailofbits
+- Auditor: Sigma Prime
+  Date: 2022-10
+  Scope: Olympus Pro contracts (bonding-as-a-service)
+  Status: Completed
+  Source: https://github.com/OlympusDAO/olympus-pro-contracts/tree/main/audits/sigmaprime
+- Auditor: Code4Arena (competitive audit)
+  Date: 2023-02
+  Scope: Olympus V3 multi-chain deployment contracts
+  Status: Completed
+  Source: https://github.com/OlympusDAO/olympus-v3/tree/main/audits/code4arena
+- Auditor: Spearbit
+  Date: 2023-08
+  Scope: Olympus V3 governance and gOHM contracts
+  Status: Completed
+  Source: https://github.com/OlympusDAO/olympus-v3/tree/main/audits/spearbit
+
+Technical Upgrade History
+- Date: 2021-03-20
+  Upgrade Name: Olympus V1 Launch (Initial Deployment)
+  Description: Monolithic contracts for OHM, staking, bonding, treasury on Ethereum mainnet; fair launch
+  Status: Deprecated (migrated to V2)
+- Date: 2021-07
+  Upgrade Name: Olympus V2
+  Description: Modular architecture: separate contracts for Bonding, Staking (stOHM), Treasury, Governance, Policy; introduced gOHM; proxy upgradeability
+  Status: Deprecated (migrated to V3)
+- Date: 2022
+  Upgrade Name: Olympus V3
+  Description: Kernel-based modular architecture; policy-as-module; native multi-chain deployment support; Olympus Pro integration; improved gas efficiency
+  Status: Live (current version)
+- Date: 2022
+  Upgrade Name: Arbitrum Deployment
+  Description: Full V3 deployment on Arbitrum One; identical contract addresses via deterministic deployment
+  Status: Live
+- Date: 2023
+  Upgrade Name: Base Deployment
+  Description: Full V3 deployment on Base; identical contract addresses via deterministic deployment
+  Status: Live
+- Date: 2022
+  Upgrade Name: Olympus Pro Launch
+  Description: Separate contract suite for bonding-as-a-service; factory pattern for partner bond markets
+  Status: Live
+
+Current Technical Stack
+- Solidity ^0.8.20 (smart contracts) [OlympusDAO GitHub - V3 package.json, https://github.com/OlympusDAO/olympus-v3/blob/main/package.json]
+- Hardhat / Foundry (development, testing, deployment) [OlympusDAO GitHub - V3 package.json, https://github.com/OlympusDAO/olympus-v3/blob/main/package.json; OlympusDAO GitHub - foundry.toml, https://github.com/OlympusDAO/olympus-v3/blob/main/foundry.toml]
+- TypeScript 5.x (frontend, SDK, scripts) [OlympusDAO GitHub - Frontend package.json, https://github.com/OlympusDAO/olympus-frontend/blob/main/package.json]
+- React 18 / Next.js 13 (frontend dApp) [OlympusDAO GitHub - Frontend, https://github.com/OlympusDAO/olympus-frontend]
+- ethers.js v6 (contract interaction) [OlympusDAO GitHub - Frontend package.json, https://github.com/OlympusDAO/olympus-frontend/blob/main/package.json]
+- The Graph (subgraph indexing) [OlympusDAO GitHub - Subgraphs, https://github.com/OlympusDAO/olympus-subgraphs]
+- OpenZeppelin Contracts (proxy, access control, ERC20, governance) [OlympusDAO GitHub - V3 imports, https://github.com/OlympusDAO/olympus-v3/tree/main/contracts]
+- Chainlink Price Feeds (oracle) [OlympusDAO GitHub - Oracle Contracts, https://github.com/OlympusDAO/olympus-v3/tree/main/contracts/oracles]
+- Gnosis Safe (treasury multi-sig) [OlympusDAO Forum - Treasury Management, https://forum.olympusdao.finance/t/treasury-management/123]
+- Docker / Docker Compose (local dev, CI) [OlympusDAO GitHub - V3 Dockerfile, https://github.com/OlympusDAO/olympus-v3/blob/main/Dockerfile]
+- GitHub Actions (CI/CD) [OlympusDAO GitHub - V3 workflows, https://github.com/OlympusDAO/olympus-v3/tree/main/.github/workflows]
+- Node.js 20 LTS (runtime) [OlympusDAO GitHub - V3 package.json, https://github.com/OlympusDAO/olympus-v3/blob/main/package.json]
+
+Known Technical Limitations
+- No native cross-chain messaging for OHM/stOHM/gOHM; each chain deployment has isolated liquidity and treasury (HIGH) [OlympusDAO GitBook - Networks, https://docs.olympusdao.finance/main/networks; OlympusDAO Blog - Olympus V3 Announcement, https://blog.olympusdao.finance/olympus-v3]
+- Rebasing token (stOHM) not directly composable with standard DeFi primitives; requires gOHM wrapper (HIGH) [OlympusDAO GitBook - Staking, https://docs.olympusdao.finance/main/staking; OlympusDAO GitBook - gOHM, https://docs.olympusdao.finance/main/governance/gohm]
+- Bond vesting periods (typically 5 days) create opportunity cost and market risk for bonders (HIGH) [OlympusDAO GitBook - Bonding, https://docs.olympusdao.finance/main/bonding]
+- Governance timelock (2+ days) delays emergency response; relies on guardian multi-sig for immediate pauses (MEDIUM) [OlympusDAO GitBook - Governance, https://docs.olympusdao.finance/main/governance; OlympusDAO GitBook - Emergency, https://docs.olympusdao.finance/main/security/emergency]
+- Oracle dependency on Chainlink; if feed stalls or deviates, bonding pricing and treasury valuation affected (MEDIUM) [OlympusDAO GitBook - Oracles, https://docs.olympusdao.finance/main/contracts/oracles]
+- Gas costs on Ethereum L1 for bonding/staking operations remain high; L2 deployments mitigate but fragment liquidity (HIGH) [OlympusDAO Blog - Olympus V3 Announcement, https://blog.olympusdao.finance/olympus-v3; OlympusDAO GitBook - Networks, https://docs.olympusdao.finance/main/networks]
+- Upgradeability via proxy introduces governance risk; malicious upgrade could drain treasury if timelock/guardian compromised (MEDIUM) [OlympusDAO GitBook - V3 Kernel, https://docs.olympusdao.finance/main/contracts/v3/kernel]
+
+Official Technical Resources
+- Documentation: https://docs.olympusdao.finance
+- GitHub Organization: https://github.com/OlympusDAO
+- Olympus V3 Repository: https://github.com/OlympusDAO/olympus-v3
+- Olympus V2 Repository (legacy): https://github.com/OlympusDAO/olympus-v2
+- Olympus Pro Contracts Repository: https://github.com/OlympusDAO/olympus-pro-contracts
+- Frontend Repository: https://github.com/OlympusDAO/olympus-frontend
+- SDK Repository: https://github.com/OlympusDAO/olympus-sdk
+- Subgraphs Repository: https://github.com/OlympusDAO/olympus-subgraphs
+- Developer Docs (API, SDK, Integration Guides): https://docs.olympusdao.finance/main/developers
+- Whitepaper (Olympus V1): https://docs.olympusdao.finance/main/whitepaper
+- V2 Technical Specification: https://blog.olympusdao.finance/introducing-olympus-v2-3f5b5c5e5f5a
+- V3 Technical Specification: https://blog.olympusdao.finance/olympus-v3
+- Olympus Pro Documentation: https://docs.olympusdao.finance/main/products/olympus-pro
+- Contract Addresses (all chains): https://docs.olympusdao.finance/main/contracts
+- Audit Reports Directory (V3): https://github.com/OlympusDAO/olympus-v3/tree/main/audits
+- Audit Reports Directory (Pro): https://github.com/OlympusDAO/olympus-pro-contracts/tree/main/audits
+
+---
+
+RINGKASAN
+Architecture: Modular kernel-based smart contract suite (V3) deployed independently on Ethereum, Arbitrum, Base; protocol-owned liquidity model with bonding, staking, treasury, governance modules; Olympus Pro as separate BaaS protocol
+Core Components: 10 (Kernel, Bonding, Staking/stOHM, gOHM, Treasury, Policy, Governance, Olympus Pro, OHM Token, Frontend)
+Audit Count: 6 completed audits (PeckShield, Omniscia, Trail of Bits, Sigma Prime, Code4Arena, Spearbit) across V2, V3, and Pro
+Major Upgrade Count: 4 (V1 Launch, V2, V3, Olympus Pro) + 2 chain expansions (Arbitrum, Base)
+
+---
+
+Open Threads
+- Complete audit report availability: Some audit repositories referenced may be private or incomplete in public GitHub; need to verify full reports are published
+- Formal verification status: No evidence of formal verification (Certora, runtime verification) found in public sources
+- Cross-chain roadmap: Official documentation mentions "multi-chain native" but no specifics on cross-chain OHM transfers, unified treasury, or CCIP/LayerZero integration plans
+- MEV protection: No documented MEV mitigation for bonding/staking transactions (e.g., private mempool, commit-reveal)
+- Scaling limits: Maximum bonding capacity per epoch, policy parameter bounds, and gas optimization benchmarks not published in technical specs
+- Client diversity: Frontend appears single implementation; no alternative clients, mobile apps, or CLI tools documented
+- Disaster recovery: Emergency shutdown procedures, treasury recovery multisig signers, and upgrade rollback process not detailed in public docs
+- Testnet coverage: No public testnet (Sepolia, Arbitrum Sepolia, Base Sepolia) deployment documented for V3; CI/CD may use Anvil/fork only
+- Dependency audit: Transitive dependency audit (OpenZeppelin, Solmate, etc.) not separately documented
+- Performance benchmarks: Gas cost comparisons V2 vs V3, TPS estimates, bonding throughput not published

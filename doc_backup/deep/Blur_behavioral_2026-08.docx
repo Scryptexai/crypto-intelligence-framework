@@ -1,300 +1,429 @@
 PROJECT: Blur
 
-1. Mendominasi volume trading NFT Ethereum melalui produk profesional untuk trader berbasis data
-· Evidence: Blur Marketplace meluncurkan tanpa platform fee (EV-002), bidding kolektif dan trait bids menarik power trader; market share 60-75% konstan sejak Q1 2023 (Phase 8 Market Share)
-· Supporting Dataset: Phase 3 EV-002, Phase 8 Market Share, Phase 4 System Architecture
+Strategic Objectives
 
-2. Membangun lapisan finansialisasi NFT (NFTfi) via Blend sebagai diferensiasi struktural dari kompetitor marketplace murni
-· Evidence: Blend launch Mei 2023 (EV-010) sebagai protokol lending peer-to-peer perpetual tanpa token sendiri; TVL puncak >$200M; market share lending 40-60% (Phase 8 Market Share)
-· Supporting Dataset: Phase 3 EV-010, Phase 4 Core Components (Blend Contract), Phase 8 Competitor Landscape
+1. Mendominasi volume trading NFT Ethereum melalui produk khusus pro-trader
+· Evidence: Blur mencapai 60-75% market share volume Ethereum NFT sejak Q1 2023 dan mempertahankannya hingga 2024-10 (Phase 8 Market Share, EV-015)
+· Supporting Dataset: Phase 3 EV-002, EV-015; Phase 8 Market Position, Market Share
 
-3. Transisi kendali dari company (Blur Labs) ke DAO melalui token BLUR dengan fee switch sebagai value accrual
-· Evidence: TGE Feb 2023 (EV-004) + DAO formation (EV-007) + Fee switch activation Feb 2024 (EV-013) mengarahkan 0.5% protocol fee ke staker; governance via Snapshot off-chain + multisig execution
-· Supporting Dataset: Phase 3 EV-004, EV-007, EV-013, Phase 6 Governance, Phase 2 Blur DAO entity
+2. Membangun lapisan finansialisasi NFT (NFTfi) via Blend sebagai diferensiasi jangka panjang
+· Evidence: Launch Blend Mei 2023 (EV-010) menarik >$100M volume minggu pertama; perpetual peer-to-peer lending model berbeda dari peer-to-pool kompetitor (Phase 8 Competitor Landscape)
+· Supporting Dataset: Phase 3 EV-010; Phase 4 Core Components (Blend Contract); Phase 8 Narrative Position
 
-4. Mempertahankan alignment Ethereum-only (no L2, no multi-chain) sebagai moat teknis dan naratif
-· Evidence: Tidak ada deployment L2 per 2024-10 (Phase 4 Known Limitations); founder PacmanBlur publik pro-Ethereum L1 (Phase 8 Narrative Position)
-· Supporting Dataset: Phase 4 System Architecture, Phase 8 Narrative Position, Phase 3 EV-015
+3. Mentransisikan kontrol protokol ke Blur DAO melalui fee switch dan governance token
+· Evidence: Fee switch proposal Feb 2024 (EV-013) mengaktifkan 0.5% protocol fee ke BLUR staker; DAO formation EV-007 bersamaan TGE; Snapshot governance aktif sejak 2023-02-14
+· Supporting Dataset: Phase 3 EV-007, EV-013; Phase 6 Governance; Phase 7 Major Integrations (Blur DAO ↔ Snapshot)
 
-5. Menggunakan insentif token berkelanjutan (Season 1-3) untuk bootstrap liquidity dan user retention tanpa public sale
-· Evidence: Season 1 airdrop 360M BLUR (12% supply) ke trader pre-TGE (EV-004); Season 2-3 reward trading/bidding/Blend (EV-011, EV-012); no IDO/public sale (Phase 6 Token Sale)
-· Supporting Dataset: Phase 3 EV-004, EV-011, EV-012, Phase 6 Distribution & Vesting
+4. Mempertahankan alignment Ethereum L1-only sebagai moat teknis dan naratif
+· Evidence: Tidak ada deployment L2 (Arbitrum/Optimism/Base/Blast) per 2024-10; blog resmi dan founder PacmanBlur menegaskan komitmen Ethereum L1 (Phase 8 Narrative Position)
+· Supporting Dataset: Phase 1 Chain(s); Phase 4 System Architecture (Cross-chain: Tidak ada); Phase 8 Narrative Position
 
-Keputusan: Launch Mainnet Blur Marketplace tanpa testnet publik (2022-10-19)
-· Trigger: Kebutuhan time-to-market cepat untuk menangkap momentum NFT bear market 2022 dan mengisi kekosongan fitur pro-trader (bidding pools, aggregator) yang OpenSea tidak layani
-· Evidence: Blur Blog "Introducing Blur" menegaskan focus pada "pro traders" dan "aggregator" (Phase 3 EV-002); Phase 4 Architecture menyearkan off-chain orderbook langsung live
-· Decision: Deploy kontrak marketplace (Exchange, Bidding) ke Ethereum mainnet langsung 19 Okt 2022 tanpa fase testnet terpisah
-· Immediate Result: Marketplace live, volume awal didorong oleh power trader early adopter; zero platform fee menarik volume dari OpenSea
-· Long-term Impact: Menetapkan Blur sebagai "pro-first" marketplace; market share naik >60% dalam 6 bulan (EV-015); etablish reputasi speed of execution
-· Supporting Dataset: Phase 3 EV-002, Phase 4 System Architecture, Phase 8 Market Timeline
+5. Mengoptimalkan tokenomics untuk value accrual jangka panjang via staking/fee switch, bukan inflasi
+· Evidence: Fixed supply 3B BLUR, no minting, no burn; fee switch Feb 2024 mengarahkan revenue ke staker; team/investor vesting 4-5 tahun dengan 1-year cliff (Phase 6 Token)
+· Supporting Dataset: Phase 6 Supply, Vesting Schedule, Inflation/Deflation, Major Token Events
 
-Keputusan: Series A $11M dari Paradigm valuasi $1B (2022-11-01)
-· Trigger: Perlu dana ekspansi tim, infrastruktur off-chain orderbook, dan runway 3-4 tahun pasca-launch marketplace
-· Evidence: TechCrunch & Paradigm announcement konfirmasi $11M Series A led by Paradigm (Phase 3 EV-003); Variant Fund seed earlier (Phase 2 Investors)
-· Decision: Terima Series A $11M dari Paradigm (lead) + Variant + Cozomo de' Medici angel pada valuasi $1B pre-revenue
-· Immediate Result: Treasury Blur Labs funded; Paradigm join board/advisory; credibility signal ke market & talent
-· Long-term Impact: Paradigm network akses ke ekosistem Ethereum, talent hiring, strategic advice; investor allocation token vesting 4-5 tahun menciptakan overhang supply (Phase 6 Vesting)
-· Supporting Dataset: Phase 3 EV-003, Phase 2 Paradigm entity, Phase 6 Vesting Schedule
+Decision Timeline
 
-Keputusan: TGE BLUR token + Season 1 airdrop + Binance/Coinbase listing same day (2023-02-14)
-· Trigger: Perlu token untuk governance DAO, incentive alignment, dan liquidity exit untuk investor/team; momentum market share naik butuh retentie user
-· Evidence: Blur Blog "BLUR Token" announcement (Phase 3 EV-004); Binance listing announcement same day (EV-005); Coinbase next day (EV-006); 51% supply ke community (Phase 6 Distribution)
-· Decision: Deploy token contract 3B supply, mint ke multisig; 12% (360M) claimable immediate Season 1 airdrop; listing Binance (spot+perp) & Coinbase (experimental) hari yang sama
-· Immediate Result: Price discovery instan; >$1B volume hari pertama; 150k+ holders; Season 1 claim rate tinggi; market maker Wintermute/GSR provide liquidity
-· Long-term Impact: Token menjadi mata uang incentive Season 2-3; fee switch Feb 2024 memberi utility real yield; investor/team cliff 1 tahun mulai unlock Feb 2024 (Phase 6 Major Token Events)
-· Supporting Dataset: Phase 3 EV-004, EV-005, EV-006, Phase 6 TGE & Distribution, Phase 8 Market Timeline
+Keputusan: Pendirian Blur Labs, Inc. di Delaware sebagai entitas hukum (2022)
+· Trigger: Perlu struktur legal untuk fundraising VC, employment, dan kepatuhan AS sebelum launch produk
+· Evidence: Blur Labs, Inc. didirikan 2022 oleh PacmanBlur, Galaga, Lord_kekl (Phase 2 Entity Blur Labs, Inc.; Phase 3 EV-001)
+· Decision: Mendirikan C-Corp Delaware dengan tiga founder pseudonim sebagai pendiri
+· Immediate Result: Entitas legal siap menerima Series A $11M dari Paradigm Nov 2022 (EV-003)
+· Long-term Impact: Menjadi pembawa risiko hukum/regulasi untuk protokol; multisig Blur Labs memegang admin key hingga DAO transisi lengkap
+· Supporting Dataset: Phase 2 Entity Blur Labs, Inc.; Phase 3 EV-001, EV-003
 
-Keputusan: Launch Blend Protocol (NFT Lending) setelah dual audit (2023-05-01)
-· Trigger: Peluang NFTfi emerging (BendDAO, NFTX); user Blur minta yield pada NFT idle; perlu diferensiasi produk dari OpenSea/Magic Eden
-· Evidence: Trail of Bits audit Apr 2023 (EV-008) + OpenZeppelin audit Apr 2023 (EV-009); Blur Blog "Blend" launch (EV-010); Blend contract deploy 1 Mei 2023
-· Decision: Deploy Blend sebagai protokol terpisah (contract 0x2946...) dengan model peer-to-peer perpetual loan, oracle Uniswap V3 TWAP, no token
-· Immediate Result: $100M+ loan volume minggu pertama; TVL naik >$200M puncak; Blur marketplace volume bertahan via Blend integration
-· Long-term Impact: Blend jadi revenue source kedua (protocol fee lending); market share lending 40-60% (Phase 8); no token menghindari regulatory complexity tapi limit governance Blend ke DAO Blur
-· Supporting Dataset: Phase 3 EV-008, EV-009, EV-010, Phase 4 Core Components (Blend), Phase 8 Competitor Landscape
+Keputusan: Launch langsung Mainnet tanpa Testnet publik (2022-10-19)
+· Trigger: Kebutuhan speed-to-market untuk menangkap momentum NFT bear market 2022; confidence tim pada arsitektur off-chain orderbook
+· Evidence: Blur Marketplace live Ethereum mainnet 2022-10-19 tanpa fase testnet terpisah (Phase 3 EV-002; Phase 4 System Architecture)
+· Decision: Deploy kontrak Exchange, Bidding, dan Proxy admin langsung ke mainnet
+· Immediate Result: Marketplace live, trader pro mulai migrasi dari OpenSea ke Blur untuk zero fee dan bidding pools
+· Long-term Impact: Menetapkan reputasi "pro-trader first"; technischen debt pada kontrak marketplace yang belum audit publik (Phase 4 Known Technical Limitations)
+· Supporting Dataset: Phase 3 EV-002; Phase 4 System Architecture, Current Technical Stack
 
-Keputusan: Aktifkan Fee Switch 0.5% ke BLUR staker via governance (2024-02 approx)
-· Trigger: Token BLUR perlu utility beyond governance; community & investor pressure untuk value accrual; Season 3 ending, perlu retentie staker
-· Evidence: Snapshot proposal passed (EV-013); 0.5% protocol fee dari marketplace flow ke delegator; staker >25k addresses (Phase 8 Adoption Metrics)
-· Decision: Governance proposal mengaktifkan fee switch pada marketplace contract; fee yang sebelumnya 0% (kecuali royalty) jadi 0.5% protocol fee → staker
-· Immediate Result: BLUR staking yield ~10-20% APR (variable); delegasi naik; price support pasca-unlock team/investor cliff Feb 2024
-· Long-term Impact: Tokenomics shift dari pure incentive ke real yield; DAO treasury management jadi kritis; fee switch parameter controllable via future proposals
-· Supporting Dataset: Phase 3 EV-013, Phase 6 Utility (Staking/Fee Switch), Phase 8 Adoption Metrics
+Keputusan: Series A $11M dari Paradigm pada valuasi $1B (2022-11-01)
+· Trigger: Butuh capital untuk scaling tim, infrastructure, dan incentive programs (Season 1-3)
+· Evidence: Paradigm lead Series A $11M @ $1B valuation; Variant Fund seed sebelumnya (Phase 3 EV-003; Phase 5 Funding History)
+· Decision: Menerima funding VC besar dengan valuasi unicorn pre-revenue
+· Immediate Result: Runway untuk hiring, Season 1 airdrop budget, Blend development
+· Long-term Impact: Token allocation besar untuk investor (15-20% estimated) menciptakan sell pressure pasca-cliff Feb 2024; Paradigm influence pada strategic direction
+· Supporting Dataset: Phase 3 EV-003; Phase 5 Funding History; Phase 6 Distribution, Vesting Schedule
 
-Keputusan: Tidak deploy ke L2 (Arbitrum/Optimism/Base/Blast) hingga 2024-10
-· Trigger: Ethereum L1 gas tinggi tapi security & liquidity terpusat; kompetitor (OpenSea, Magic Eden) multi-chain; narasi "Ethereum alignment" diferensiasi
-· Evidence: Phase 4 Known Limitations "No L2 deployment resmi"; Phase 8 Narrative "Ethereum Alignment"; Phase 3 EV-015 anniversary blog tidak mention L2
-· Decision: Fokus resource pada Ethereum L1 only; optimize gas via contract upgrades; mobile app beta (EV-014) sebagai akses retail alternative
-· Immediate Result: Power trader remain di L1 (gas insensitive); retail user terbatas oleh gas cost; volume share dominan tetap di L1
-· Long-term Impact: Risk market share erosion ke L2 NFT marketplace (Blur di Base, OpenSea di Base/Arbitrum); potential future pivot jika L2 volume > L1
-· Supporting Dataset: Phase 4 Known Limitations, Phase 8 Narrative Position, Phase 3 EV-014, EV-015
+Keputusan: TGE BLUR token dengan 51% alokasi komunitas dan Season 1 airdrop 12% (2023-02-14)
+· Trigger: Mendistribusikan ownership ke user aktif, mendorong liquidity, memenuhi ekspektasi komunitas post-Season 1 points
+· Evidence: TGE 2023-02-14, 3B supply, 360M (12%) Season 1 claimable immediate, 51% community allocation (Phase 3 EV-004, EV-005, EV-006; Phase 6 TGE, Distribution)
+· Decision: Fair launch style dengan airdrop berbasis aktivitas on-chain pre-TGE (bukan ICO/IDO)
+· Immediate Result: >150k holders, Binance/Coinbase listing same day, price discovery immediate
+· Long-term Impact: Community ownership tinggi tapi whale concentration tetap >60% top 100; vesting team/investor cliff 1 tahun berakhir Feb 2024
+· Supporting Dataset: Phase 3 EV-004, EV-005, EV-006; Phase 6 TGE, Distribution, Holder Distribution, Major Token Events
 
-Keputusan: Multisig (Blur Labs) memegang admin key kontrak hingga 2024-10 (belum full timelock/DAO)
-· Trigger: Perlu kecepatan upgrade parameter (fee, royalty logic, pause) di early stage; DAO governance off-chain Snapshot belum mature untuk emergency response
-· Evidence: Etherscan owner address 0x5c8D... labeled "Blur: Owner" (Phase 4 Security Model); Phase 2 Blur Multisig entity; Phase 6 Governance "multisig execution"
-· Decision: Retain upgrade authority & parameter control di Gnosis Safe multisig (3-5 signer assumed) بدلاً dari timelock contract controlled by DAO
-· Immediate Result: Bisa upgrade cepat (gas optimization, royalty enforcement fix); centralization risk tinggi (single point of failure)
-· Long-term Impact: Trust assumption pada Blur Labs/team; regulatory risk (SEC control person); DAO governance advisory only; community pressure untuk timelock meningkat
-· Supporting Dataset: Phase 4 Security Model, Phase 2 Blur Multisig, Phase 6 Governance, Phase 5 Financial Risk
+Keputusan: Blur DAO formation bersamaan TGE dengan Snapshot governance (2023-02-14)
+· Trigger: Legitimasi komunitas, framework untuk fee switch dan treasury management masa depan
+· Evidence: DAO formed EV-007; Snapshot space blur.eth aktif; proposal pertama fee parameters (Phase 3 EV-007; Phase 6 Governance)
+· Decision: Off-chain voting (Snapshot) + on-chain execution via multisig (belum timelock/DAO-kan penuh)
+· Immediate Result: Governance proposals mulai flow (fee, reward, treasury)
+· Long-term Impact: Multisig Blur Labs masih memegang admin key per 2024-10 (Phase 4 Security Model, Phase 2 Entity Blur Multisig); transisi ke DAO belum lengkap
+· Supporting Dataset: Phase 3 EV-007; Phase 6 Governance; Phase 4 Security Model; Phase 2 Entity Blur DAO, Blur Multisig
 
-Pola 1: Ethereum Alignment First — Semua deployment kontrak (Marketplace, Blend, BLUR Token) hanya di Ethereum Mainnet; tidak ada L2/multi-chain meski gas tinggi dan kompetitor multi-chain
-· Decision Pattern: Pilih Ethereum L1 sebagai settlement layer tunggal; tolak multi-chain expansion untuk menjaga security, liquidity concentration, dan narasi "purist"
-· Evidence: Phase 4 System Architecture "Cross-chain: Tidak ada"; Phase 8 Narrative "Ethereum Alignment"; Phase 3 EV-002, EV-004, EV-010 all Ethereum Mainnet
-· Supporting Dataset: Phase 4, Phase 8, Phase 3
+Keputusan: Dual audit Blend oleh Trail of Bits dan OpenZeppelin sebelum launch (2023-04)
+· Trigger: Blend mengelola ETH value tinggi (pinjaman NFT); risiko smart contract lending lebih kompleks dari marketplace
+· Evidence: Trail of Bits audit April 2023 (EV-008); OpenZeppelin audit April 2023 (EV-009); findings addressed pre-launch
+· Decision: Invest 2x audit cost untuk Blend; marketplace contracts tidak audit publik
+· Immediate Result: Blend launch Mei 2023 aman, >$100M volume minggu pertama
+· Long-term Impact: Marketplace core contracts (Exchange, Bidding) tetap unaudited publik hingga 2024-10 (Phase 4 Audit History, Known Technical Limitations)
+· Supporting Dataset: Phase 3 EV-008, EV-009; Phase 4 Audit History, Security Model; Phase 7 External Dependencies
 
-Pola 2: Off-chain Orderbook Terpusat untuk Performa — Matching engine & orderbook di server Blur Labs (Web2 style) bukan on-chain (Seaport style) demi latency rendah, gas efficiency, dan fitur advanced (trait bids, collection bids)
-· Decision Pattern: Hybrid architecture — off-chain matching + on-chain settlement; trust assumption pada operator Blur untuk fair ordering
-· Evidence: Phase 4 Core Components "Off-chain Orderbook & Matching Engine"; Phase 4 Known Limitations "Orderbook Off-chain Terpusat"; Phase 3 EV-002 launch blog
-· Supporting Dataset: Phase 4, Phase 3 EV-002
+Keputusan: Launch Blend Protocol (NFT Lending) sebagai produk terpisah terintegrasi (2023-05-01)
+· Trigger: Ekspansi TAM ke NFTfi; leverage user base Blur; diferensiasi vs OpenSea yang tidak punya lending native
+· Evidence: Blend live EV-010; perpetual peer-to-peer model, Uniswap V3 TWAP oracle, no token (Phase 3 EV-010; Phase 4 Core Components Blend Contract)
+· Decision: Build lending protocol terpisah dengan kontrak sendiri, terintegrasi UI di Blur.io
+· Immediate Result: >$2B cumulative loan volume 2024-10; TVL $150-300M; 40-60% market share NFT lending
+· Long-term Impact: Membuka revenue stream baru (Blend fees); menambah attack surface; oracle dependency pada Uniswap V3
+· Supporting Dataset: Phase 3 EV-010; Phase 4 Core Components, External Dependencies (Uniswap V3 Oracle); Phase 8 Competitor Landscape, Market Share
 
-Pola 3: Dual Audit untuk Produk Baru Berisiko Tinggi (Blend) — Blend mendapatkan audit Trail of Bits + OpenZeppelin sebelum launch; Marketplace core contracts tidak audit publik dari firma top-tier
-· Decision Pattern: Produk baru dengan kompleksitas finansial tinggi (lending, liquidation, oracle) wajib dual audit; produk existing (marketplace) rely pada battle-testing live
-· Evidence: Phase 3 EV-008, EV-009 (Blend audits); Phase 4 Audit History "Tidak ada audit publik untuk Marketplace core contracts"
-· Supporting Dataset: Phase 3, Phase 4
+Keputusan: Season 2 & 3 incentive programs dengan BLUR rewards (2023-05 to 2024-02)
+· Trigger: Pertahankan market share pasca-airdrop; fight mercenary capital; drive Blend adoption
+· Evidence: Season 2 EV-011, Season 3 EV-012; reward untuk trading, bidding, Blend, delegation (Phase 3 EV-011, EV-012; Phase 6 Vesting Schedule Community)
+· Decision: Alokasi token community (51%) didistribusikan via seasonal programs epoch-based
+· Immediate Result: Volume spike selama seasons; Blur mempertahankan #1 volume share
+· Long-term Impact: Token emission berkelanjutan ke pasar; wash trading estimates >30% (Phase 8 Open Threads); dependency pada incentives untuk volume
+· Supporting Dataset: Phase 3 EV-011, EV-012; Phase 6 Vesting Schedule; Phase 8 Adoption Metrics, Open Threads
 
-Pola 4: Upgrade via Proxy Pattern (TransparentUpgradeableProxy/UUPS) — Semua kontrak inti (Marketplace, Blend, Token) menggunakan upgradeable proxy dikontrol multisig
-· Decision Pattern: Fleksibilitas upgrade parameter & logic tanpa migrasi kontrak; trade-off centralization risk pada admin key
-· Evidence: Phase 4 Security Model "Upgradeability: proxy pattern"; Phase 4 Technical Upgrade History multiple upgrades via proxy
-· Supporting Dataset: Phase 4
+Keputusan: Fee Switch Activation via governance proposal (2024-02 approx)
+· Trigger: Token holders demand value accrual; 1-year cliff team/investor berakhir; need real yield narrative
+· Evidence: Proposal passed Snapshot Feb 2024 (EV-013); 0.5% protocol fee redirect ke BLUR stakers/delegators
+· Decision: Aktifkan fee switch 0.5% dari volume marketplace ke staker; sebelumnya 0% platform fee
+· Immediate Result: >25k delegators; BLUR price reaction positif; real yield narrative aktif
+· Long-term Impact: Revenue sharing model established; treasury DAO receive portion; regulatory risk (security classification) meningkat
+· Supporting Dataset: Phase 3 EV-013; Phase 6 Utility (Staking/Fee Switch), Governance; Phase 8 Narrative Position
 
-Pola 5: OpenZeppelin Library sebagai Standard — ERC-20, AccessControl, ReentrancyGuard, Upgradeable Proxy semua dari OpenZeppelin Contracts v4.x
-· Decision Pattern: Minimalkan custom cryptography/security code; gunakan library battle-tested; audit fokus pada business logic bukan primitive
-· Evidence: Phase 4 Development Framework "OpenZeppelin Contracts"; Etherscan contract code verification shows OpenZeppelin imports
-· Supporting Dataset: Phase 4
+Keputusan: Team/Investor vesting cliff berakhir, linear unlock bulanan dimulai (2024-02-14 approx)
+· Trigger: 1-year cliff dari TGE Feb 2023 selesai; vesting 4-5 tahun kontrak smart contract termulai
+· Evidence: Blog menciona "1-year cliff, 4-5 year vesting" (Phase 6 Vesting Schedule, Major Token Events)
+· Decision: Smart contract vesting contracts mulai release bulanan ke team/investor
+· Immediate Result: Sell pressure tambahan ~bulanan; circulating supply meningkat
+· Long-term Impact: Fully diluted valuation pressure hingga 2027-2028; alignment team/investor jangka panjang
+· Supporting Dataset: Phase 6 Vesting Schedule, Major Token Events; Phase 5 Financial Risk
 
-Pola 1: VC Funding Tunggal Series A Large ($11M at $1B) — Tidak ada public sale, tidak ada strategic round berulang; single large Series A dari Paradigm cukup untuk runway panjang
-· Decision Pattern: Amati capital efficiency; raise once at high valuation dari top-tier VC (Paradigm) yang bawa network value > capital; avoid dilution berantai
-· Evidence: Phase 3 EV-003 Series A only; Phase 5 Funding History hanya 2 rounds (Seed undisclosed + Series A $11M); Phase 2 Investors hanya Paradigm & Variant
-· Supporting Dataset: Phase 3, Phase 5, Phase 2
+Keputusan: Blur Mobile App Beta launch (2024-06)
+· Trigger: Ekspansi user base ke-delà power trader desktop; mobile-first retail adoption
+· Evidence: Mobile app beta iOS/Android Juni 2024 (EV-014; Phase 4 Core Components Mobile App)
+· Decision: Build native mobile app dengan feature parity desktop
+· Immediate Result: Beta testing komunitas; belum feature-complete atau audit mobile khusus
+· Long-term Impact: Potential retail user growth; security surface expansion; resource allocation ke mobile vs core protocol
+· Supporting Dataset: Phase 3 EV-014; Phase 4 Core Components, Known Technical Limitations; Phase 7 Applications
 
-Pola 2: Token Allocation Community-Heavy (51%) — Mayoritas supply ke community/treasury/ecosystem; team & investor allocation tidak diungkap exact tapi vesting 4-5 tahun cliff 1 tahun
-· Decision Pattern: Align incentive jangka panjang ke community growth; VC/team locked lama mencegah dump early; DAO treasury besar untuk self-funding future
-· Evidence: Phase 6 Distribution "Community 51%"; Phase 6 Vesting "Team/Investor 4-5 year linear"; Phase 5 Treasury "DAO Treasury 51% supply"
-· Supporting Dataset: Phase 5, Phase 6
+Evolution Pattern
 
-Pola 3: Revenue dari Protocol Fee (Fee Switch) + Blend Fees — Zero platform fee awal → Fee switch 0.5% Feb 2024 ke staker; Blend lending fee sejak launch Mei 2023
-· Decision Pattern: Bootstrap volume dengan zero fee → monetize via governance-activated fee switch; lending sebagai revenue stream kedua independen
-· Evidence: Phase 3 EV-002 "zero platform fee"; EV-013 "fee switch activated"; EV-010 "Blend fee live"; Phase 5 Revenue Model
-· Supporting Dataset: Phase 3, Phase 5
+Strategi Produk: Dari Marketplace Murni → Marketplace + Lending Protocol (Blend)
+· Phase 2022: Fokus singular pada Blur Marketplace (aggregator, bidding, zero fee) untuk ramp volume dan ambil share dari OpenSea (EV-002)
+· Phase 2023 Q2: Ekspansi ke Blend (NFT lending) sebagai produk kedua terintegrasi, membuka TAM NFTfi dan revenue stream baru (EV-010)
+· Phase 2024: Fee switch activation menambah value accrual ke token; mobile app menambah distribution channel
+· Driver: Satu-satunya cara defend market share di bear market NFT adalah memperluas revenue per user (lending yield + fee switch) dan user base (mobile)
 
-Pola 4: Treasury Concentrated di Native Token (BLUR) — Tidak ada disclosure diversifikasi treasury ke stablecoin/ETH/blue-chip; mayoritas aset DAO = BLUR token
-· Decision Pattern: Bet pada appreciation token sendiri; high beta exposure; risk jika bear market NFT + token price crash simultan
-· Evidence: Phase 5 Treasury "Composition tidak diungkap"; Phase 5 Financial Risk "Treasury Concentration HIGH"; Phase 6 Distribution "51% community includes treasury"
-· Supporting Dataset: Phase 5, Phase 6
+Teknologi: Off-chain Orderbook Tetap Terpusat; Smart Contract Upgrade via Proxy
+· Awal 2022: Arsitektur off-chain orderbook + on-chain settlement dipilih untuk speed dan UX (gas efficient, trait bids, collection bids)
+· 2023-2024: Kontrak marketplace dan Blend menggunakan TransparentUpgradeableProxy/UUPS (Phase 4 Security Model) — upgrade oleh multisig tanpa timelock DAO
+· Tidak ada pergerakan ke on-chain orderbook (Seaport-style) atau L2 deployment — komitmen Ethereum L1 settlement tetap
+· Driver: Technical debt terkelola via proxy upgrades; centralization trade-off diterima untuk UX pro-trader
 
-Pola 5: Market Maker Professional (Wintermute, GSR) pada TGE — Engage top-tier market maker untuk liquidity CEX/DEX hari launch; tidak rely pada community liquidity saja
-· Decision Pattern: Ensure tight spreads & depth dari hari pertama; professional MM reduce volatility & support price discovery; cost = token loan/option (undisclosed)
-· Evidence: Phase 3 EV-004, EV-005 Wintermute/GSR mention; Phase 2 Wintermute/GSR entities; Phase 5 Financial Dependencies
-· Supporting Dataset: Phase 3, Phase 2, Phase 5
+Tokenomics: Dari Airdrop Heavy → Fee Switch Real Yield
+· TGE Feb 2023: 12% supply airdrop immediate, 51% community allocation untuk seasonal incentives (Season 1-3) — inflationary pressure via emissions
+· Feb 2024: Fee switch aktif, 0.5% protocol fee ke staker — pivot ke value accrual model, mengurangi ketergantungan pada token emissions untuk retention
+· Team/Investor unlock mulai Feb 2024 (1-year cliff) — supply-side pressure berlawanan dengan demand-side fee switch
+· Driver: Maturity protokol; butuh narrative "real yield" untuk justify holding BLUR pasca-incentive seasons
 
-Pola 1: Integrasi Vertikal (Marketplace + Lending) — Blend dibangun in-house, terintegrasi UI di Blur.io, share user base & NFT collateral; bukan partnership eksternal
-· Decision Pattern: Build core financial primitive (lending) sendiri daripada integrate BendDAO/NFTX; control UX, fee, risk parameters; faster iteration
-· Evidence: Phase 3 EV-010 Blend launch; Phase 4 Core Components Blend Contract; Phase 7 Applications "Blend Protocol (Web Interface via Blur.io)"
-· Supporting Dataset: Phase 3, Phase 4, Phase 7
+Governance: Dari Multisig-Centric → DAO-Signaled tapi Multisig-Executed
+· 2022-2023: Blur Labs multisig kontrol penuh (admin, fee, pause, upgrade)
+· TGE Feb 2023: DAO formed, Snapshot voting, proposal flow — tapi execution masih multisig Blur Labs
+· 2024: Fee switch proposal passed DAO, executed multisig — pattern: DAO signals, multisig executes
+· Belum ada timelock contract atau full DAO ownership transfer per 2024-10 (Phase 4 Security Model, Phase 2 Entity Blur Multisig)
+· Driver: Legal/regulatory caution (securities law); technical complexity timelock; founder control retention
 
-Pola 2: Dependency Minimal pada External Protocol — Hanya dependency kritis: Ethereum (L1), OpenZeppelin (lib), Uniswap V3 (oracle Blend), Gnosis Safe (multisig); tidak bergantung pada oracle chainlink, cross-chain bridge, atau middleware lain
-· Decision Pattern: Minimalkan external smart contract risk; gunakan primitives yang sudah battle-tested (Uniswap TWAP untuk oracle); build sendiri kalau perlu
-· Evidence: Phase 7 External Dependencies list; Phase 4 Core Components; Phase 3 EV-010 Blend oracle Uniswap V3
-· Supporting Dataset: Phase 7, Phase 4, Phase 3
+Pendanaan: VC-Backed → Protocol Revenue + DAO Treasury
+· 2022: Series A $11M Paradigm @ $1B valuation — fully VC-funded ops
+· 2023: TGE menciptakan DAO treasury (51% supply) + protocol revenue potential (fee switch, Blend fees)
+· 2024: Fee switch live, Blend revenue ongoing — transisi ke protocol-owned revenue, tapi treasury composition tidak transparan (Phase 5 Treasury)
+· Driver: Runway VC terbatas; perlu sustainable revenue untuk independence dari investor
 
-Pola 3: CEX Listing Strategy — Top-tier CEX only (Binance, Coinbase) pada TGE; tidak listing mass-market ke banyak CEX kecil; perp futures di Binance/Bybit/OKX untuk hedging
-· Decision Pattern: Quality over quantity; Binance untuk global liquidity, Coinbase untuk US retail access; perp untuk institutional hedging & price discovery
-· Evidence: Phase 3 EV-005 Binance, EV-006 Coinbase; Phase 8 Exchange Ecosystem major CEX listed; Phase 7 Exchange Ecosystem
-· Supporting Dataset: Phase 3, Phase 8, Phase 7
+Technical Decision Pattern
 
-Pola 4: Wallet Agnostic (No Official Wallet Partnership) — Tidak ada wallet "official partner"; support standar EIP-1193/WalletConnect; MetaMask, Rabby, Coinbase Wallet, Rainbow, Ledger semua work out-of-box
-· Decision Pattern: Neutral infrastructure; tidak lock-in ke wallet tertentu; user experience consistent across wallets
-· Evidence: Phase 7 Wallet Ecosystem "Catatan: Blur tidak mempublikasikan daftar wallet resmi"; all standard Ethereum wallets supported
-· Supporting Dataset: Phase 7
+Pola 1: Ethereum L1 Settlement Only — No L2, No Multi-chain
+· Decision Pattern: Semua kontrak (Marketplace, Blend, BLUR Token) dideploy hanya di Ethereum mainnet; tidak ada deployment Arbitrum, Optimism, Base, Blast, atau chain lain per 2024-10
+· Evidence: Phase 1 Chain(s): Ethereum; Phase 4 System Architecture Cross-chain: Tidak ada; Phase 8 Narrative Position "Ethereum Alignment"; Phase 4 Current Technical Stack Ethereum Mainnet only
+· Supporting Dataset: Phase 1, Phase 4 System Architecture, Phase 8 Narrative Position
 
-Pola 5: Developer Ecosystem Minimal (No SDK, No Grants, No Hackathon) — Fokus pada API publik (REST/GraphQL) untuk power trader/bot; tidak invest pada builder ecosystem (SDK, grants, hackathon)
-· Decision Pattern: Target user = trader bukan builder; API cukup untuk bot/terminal; resource allocation ke core product (matching engine, mobile) bukan developer tooling
-· Evidence: Phase 7 Developer Ecosystem "Tidak ada SDK resmi", "Tidak ada grant program", "Tidak ada hackathon"; Phase 4 API/Indexer operational
-· Supporting Dataset: Phase 7, Phase 4
+Pola 2: Off-chain Centralized Orderbook + On-chain Settlement untuk UX Pro-Trader
+· Decision Pattern: Matching engine, orderbook, API, indexer sepenuhnya terpusat di server Blur Labs; hanya trade execution dan royalty enforcement on-chain
+· Evidence: Phase 4 Core Components (Off-chain Orderbook & Matching Engine, Blur API/Indexer); Phase 4 Security Model "Off-chain Trust: Orderbook terpusat"; Phase 8 Market Position "pro-trader focused"
+· Supporting Dataset: Phase 4 Core Components, Security Model; Phase 8 Market Position
 
-Pola 1: Governance Off-chain Signaling (Snapshot) + Multisig Execution — Proposal di Snapshot (blur.eth), voting token-weighted, execution via Blur Multisig; belum full on-chain timelock
-· Decision Pattern: Speed & flexibility early stage; off-chain gasless voting; multisig execution cepat; gradual decentralization path
-· Evidence: Phase 3 EV-007 DAO formation; Phase 6 Governance "Snapshot off-chain, multisig execution"; Phase 2 Blur DAO entity
-· Supporting Dataset: Phase 3, Phase 6, Phase 2
+Pola 3: Proxy Upgradeability pada Semua Kontrak Inti (Marketplace, Blend, Token)
+· Decision Pattern: Menggunakan TransparentUpgradeableProxy/UUPS pattern dengan OpenZeppelin; admin key di multisig Blur Labs; memungkinkan upgrade fee logic, royalty logic, gas optimization tanpa migrasi user
+· Evidence: Phase 4 Security Model Upgradeability; Phase 4 Current Technical Stack OpenZeppelin Contracts; Phase 4 Technical Upgrade History (multiple marketplace upgrades via proxy)
+· Supporting Dataset: Phase 4 Security Model, Current Technical Stack, Technical Upgrade History
 
-Pola 2: Token-Weighted Voting (1 BLUR = 1 Vote) — Delegation supported; no quadratic voting, no vote-escrow (veToken), no reputation weighting
-· Decision Pattern: Simple, plutocratic governance; whale/investor dominance accepted; delegation allows community representation
-· Evidence: Phase 6 Governance "1 BLUR = 1 vote"; Phase 6 Holder Distribution "Whale concentration tinggi"; Phase 3 EV-013 fee switch proposal passed
-· Supporting Dataset: Phase 6, Phase 3
+Pola 4: Dual Audit untuk Produk Baru Berisiko Tinggi (Blend); Marketplace Contracts Unaudited Publik
+· Decision Pattern: Blend mendapat audit Trail of Bits + OpenZeppelin pre-launch; Marketplace core contracts (Exchange, Bidding) tidak memiliki audit publik dari firma terkemuka
+· Evidence: Phase 3 EV-008, EV-009; Phase 4 Audit History (2 audits Blend, 0 audit Marketplace); Phase 4 Known Technical Limitations "Marketplace Contracts Unaudited"
+· Supporting Dataset: Phase 3 EV-008, EV-009; Phase 4 Audit History, Known Technical Limitations
 
-Pola 3: DAO Treasury Management via Proposal — Spending dari treasury (51% supply) melalui proposal Snapshot → multisig execution; no automated budget, no stream payments
-· Decision Pattern: Ad-hoc treasury management; high friction untuk recurring ops; community entscheiden each spend
-· Evidence: Phase 6 Governance "Treasury Governance: DAO mengelola treasury melalui proposal spending"; Phase 5 Treasury "Custodian: Blur DAO via governance proposal"
-· Supporting Dataset: Phase 5, Phase 6
+Pola 5: Standard Library OpenZeppelin untuk Security Primitives (AccessControl, ReentrancyGuard, ERC-20, Upgradeable)
+· Decision Pattern: Menggunakan OpenZeppelin Contracts v4.x untuk semua building block security; tidak custom-implement primitives
+· Evidence: Phase 4 Current Technical Stack OpenZeppelin Contracts; Phase 4 Security Model Access Control, Reentrancy Protection; Phase 7 External Dependencies OpenZeppelin
+· Supporting Dataset: Phase 4 Current Technical Stack, Security Model; Phase 7 External Dependencies
 
-Pola 4: Parameter Control Gradual Handover — Fee switch (0.5%) activated via proposal; future parameter (royalty enforcement, Blend params) bisa di-propose; admin key masih di multisig
-· Decision Pattern: Incremental decentralization; critical params (pause, upgrade) remain multisig; revenue params (fee) moved to DAO first
-· Evidence: Phase 3 EV-013 fee switch; Phase 4 Security Model "Admin Control: Multisig memegang ownership"; Phase 6 Governance status "Active"
-· Supporting Dataset: Phase 3, Phase 4, Phase 6
+Pola 6: Uniswap V3 TWAP sebagai Oracle Internal Blend (No External Oracle Network)
+· Decision Pattern: Blend menggunakan TWAP dari Uniswap V3 pools untuk likuidasi; tidak menggunakan Chainlink, Pyth, atau oracle terdesentralisasi lain
+· Evidence: Phase 4 System Architecture Oracle; Phase 4 External Dependencies Uniswap V3 Oracle; Phase 7 Major Integrations Blend ↔ Uniswap V3 Oracle; Phase 4 Known Technical Limitations "Blend Oracle Dependency"
+· Supporting Dataset: Phase 4 System Architecture, External Dependencies, Known Technical Limitations; Phase 7 Major Integrations
 
-Pola 5: No Formal Dispute Resolution / Legal Wrapper — DAO unincorporated; no legal entity for DAO (Blur Labs Inc is company); multisig signers unknown legal liability
-· Decision Pattern: Pure code-based governance; legal ambiguity accepted; rely on Delaware corp (Blur Labs) untuk legal compliance
-· Evidence: Phase 2 Entities "Blur Labs Inc" only company; "Blur DAO" as DAO type; Phase 5 Legal Financial Risk "Status regulasi token BLUR belum jelas"
-· Supporting Dataset: Phase 2, Phase 5
+Financial Decision Pattern
 
-Pola 1: Security Incident Response — Audit Pre-Launch (Blend Dual Audit) — Tidak ada exploit major historis; responsif via audit sebelum launch produk berisiko tinggi (Blend)
-· Decision Pattern: Preventive security > reactive; invest dual audit top-tier untuk lending protocol; marketplace rely pada battle-testing live volume
-· Evidence: Phase 3 EV-008, EV-009 Blend audits; Phase 4 Audit History "Marketplace contracts tidak audit publik"; Phase 4 Known Limitations "Marketplace Contracts Unaudited HIGH"
-· Supporting Dataset: Phase 3, Phase 4
+Pola 1: Single Large Series A dari Top-Tier VC (Paradigm) sebagai Primary Funding
+· Decision Pattern: Hanya satu ronde funding besar ($11M Series A Nov 2022 @ $1B valuation) dari Paradigm; seed/private round Variant Fund amount tidak diungkap; no strategic round, no public sale
+· Evidence: Phase 3 EV-003; Phase 5 Funding History (Series A $11M Paradigm, Seed undisclosed); Phase 2 Entity Paradigm, Variant Fund
+· Supporting Dataset: Phase 3 EV-003; Phase 5 Funding History; Phase 2 Entity Paradigm, Variant Fund
 
-Pola 2: Market Crash Response — Incentive Season Extension (Season 2→3) — Saat NFT bear market 2023, Blur lanjutkan Season 2 & 3 reward untuk retain volume & market share
-· Decision Pattern: Counter-cyclical incentive spending; gunakan treasury token (51% supply) untuk subsidize volume; defend market share posisi #1
-· Evidence: Phase 3 EV-011 Season 2 (May-Nov 2023), EV-012 Season 3 (Nov 2023-Feb 2024); Phase 8 Adoption Metrics volume sustained; Phase 5 Financial Risk "Revenue Decline Risk HIGH"
-· Supporting Dataset: Phase 3, Phase 8, Phase 5
+Pola 2: Token Allocation Majoritas ke Komunitas (51%) dengan Seasonal Emissions
+· Decision Pattern: 51% supply untuk community/treasury/ecosystem; didistribusikan via Season 1 airdrop (12% immediate), Season 2-3 incentives (epoch-based), future programs — tidak ada liquidity mining resmi BLUR/ETH
+· Evidence: Phase 6 Distribution (Community 51%); Phase 6 Vesting Schedule Community; Phase 3 EV-004, EV-011, EV-012; Phase 8 Adoption Metrics
+· Supporting Dataset: Phase 6 Distribution, Vesting Schedule; Phase 3 EV-004, EV-011, EV-012; Phase 8 Adoption Metrics
 
-Pola 3: Regulatory Ambiguity Response — No Geo-blocking, No KYC, Token Utility Real (Fee Switch) — Tidak implement KYC/geo-block; fee switch Feb 2024 memberi "real yield" utility argument; legal opinion tidak publik
-· Decision Pattern: Operate sebagai protocol global permissionless; utility token argument via fee switch; accept US regulatory risk (Paradigm backed, Coinbase listed)
-· Evidence: Phase 8 Geographic Focus "Global, no restriction"; Phase 3 EV-013 fee switch; Phase 5 Legal Financial Risk MEDIUM; Phase 2 Coinbase investor/listing
-· Supporting Dataset: Phase 8, Phase 3, Phase 5, Phase 2
+Pola 3: Team/Investor Vesting Panjang (4-5 Tahun) dengan 1-Year Cliff
+· Decision Pattern: Team dan investor (Paradigm, Variant, angels) vesting 4-5 tahun linear monthly setelah 1-year cliff dari TGE Feb 2023; cliff berakhir Feb 2024, unlock bulanan berlanjut hingga 2027-2028
+· Evidence: Phase 6 Vesting Schedule Team, Investors; Phase 6 Major Token Events (Vesting Cliff End Feb 2024); Phase 5 Financial Risk "Funding Dependency"
+· Supporting Dataset: Phase 6 Vesting Schedule, Major Token Events; Phase 5 Financial Risk
 
-Pola 4: Centralization Risk Mitigation — Multisig (Gnosis Safe) bukan single EOA; 3-5 signer assumed; timelock tidak ada tapi multisig raise attack threshold
-· Decision Pattern: Pragmatic decentralization; multisig cukup untuk now; timelock/DAO kan di future roadmap (tidak veröffentlichte)
-· Evidence: Phase 4 Security Model "Admin Control: Multisig"; Phase 2 Blur Multisig entity; Phase 6 Governance "multisig execution"
-· Supporting Dataset: Phase 4, Phase 2, Phase 6
+Pola 4: Fee Switch sebagai Pivot dari Zero-Fee ke Revenue Sharing (Feb 2024)
+· Decision Pattern: 2022-2023: 0% platform fee (hanya royalty creator); Feb 2024: Governance proposal aktifkan 0.5% protocol fee ke BLUR stakers — menciptakan real yield dan protocol revenue
+· Evidence: Phase 3 EV-013; Phase 6 Utility Staking/Fee Switch; Phase 8 Narrative Position "Token Utility/Fee Switch"; Phase 5 Revenue Model Protocol Fee Marketplace
+· Supporting Dataset: Phase 3 EV-013; Phase 6 Utility; Phase 8 Narrative Position; Phase 5 Revenue Model
 
-Pola 5: Competitive Pressure Response — Feature Parity + Innovation (Mobile App, Trait Bids, Blend) — Saat OpenSea launch Seaport/Pro, Blur launch Mobile App Beta (EV-014) & Blend (EV-010); feature differentiation terus
-· Decision Pattern: Product velocity sebagai moat; ship fast, iterate; mobile untuk retail expansion; Blend untuk NFTfi moat
-· Evidence: Phase 3 EV-010 Blend, EV-014 Mobile App; Phase 8 Competitor Landscape vs OpenSea/Magic Eden; Phase 4 Technical Upgrade History
-· Supporting Dataset: Phase 3, Phase 8, Phase 4
+Pola 5: Treasury Opasitas — Tidak Ada Dashboard Real-time Atau Transparency Report
+· Decision Pattern: Ukuran treasury, komposisi (stablecoin vs BLUR vs ETH), custodian address tidak dipublikasikan resmi; hanya diketahui 51% supply allocation ke community/DAO
+· Evidence: Phase 5 Treasury (Current Treasury Size, Composition, Stablecoin Holdings: tidak diungkap); Phase 6 Distribution Treasury; Phase 5 Open Threads treasury transparency
+· Supporting Dataset: Phase 5 Treasury; Phase 6 Distribution; Phase 5 Open Threads
 
-Pola 1: Speed-to-Market > Perfect Decentralization — Launch marketplace mainnet tanpa testnet (EV-002); launch token dengan multisig control (EV-004); Blend launch setelah audit tapi admin key multisig (EV-010)
-· Evidence: Phase 3 timeline compressed (Oct 2022 launch → Feb 2023 TGE → May 2023 Blend); Phase 4 admin key multisig retained; Phase 8 Growth stage
-· Supporting Dataset: Phase 3, Phase 4, Phase 8
+Pola 6: Market Maker Dependency pada TGE (Wintermute, GSR) untuk Likuiditas Launch
+· Decision Pattern: Wintermute dan GSR sebagai market maker utama TGE Feb 2023; menyediakan likuiditas CEX (Binance, Coinbase) dan DEX (Uniswap) untuk price discovery stabil
+· Evidence: Phase 3 EV-004, EV-005; Phase 2 Entity Wintermute, GSR; Phase 5 Financial Dependencies Market Makers; Phase 7 Exchange Ecosystem
+· Supporting Dataset: Phase 3 EV-004, EV-005; Phase 2 Entity Wintermute, GSR; Phase 5 Financial Dependencies; Phase 7 Exchange Ecosystem
 
-Pola 2: Incentive-Driven Growth Loops — Season 1 airdrop → volume spike → Season 2-3 reward → volume sustain → fee switch → staking yield → retention
-· Evidence: Phase 3 EV-004, EV-011, EV-012, EV-013 sequential; Phase 8 Adoption Metrics volume & stakers; Phase 6 Utility incentive + staking
-· Supporting Dataset: Phase 3, Phase 8, Phase 6
+Ecosystem Decision Pattern
 
-Pola 3: Vertical Integration over Partnerships — Build Blend in-house bukan partner BendDAO; build mobile app in-house bukan partner wallet; build orderbook in-house bukan use Seaport
-· Evidence: Phase 7 Major Integrations mostly internal; Phase 4 Core Components all proprietary contracts; Phase 7 Developer Ecosystem minimal
-· Supporting Dataset: Phase 7, Phase 4
+Pola 1: Deep Integration dengan Ethereum Base Layer — No Bridge, No L2, No Multi-chain
+· Decision Pattern: Semua integrasi teknis (contracts, oracle, settlement) bersifat native Ethereum; tidak ada bridge canonical, tidak ada deployment L2, tidak ada partnership cross-chain
+· Evidence: Phase 1 Chain(s) Ethereum; Phase 4 System Architecture Cross-chain Tidak ada; Phase 7 External Dependencies Ethereum (Critical); Phase 8 Narrative Position "Ethereum Alignment"
+· Supporting Dataset: Phase 1, Phase 4 System Architecture, Phase 7 External Dependencies, Phase 8 Narrative Position
 
-Pola 4: Ethereum Maximalism as Strategy — No L2, no multi-chain, no bridging; bet on Ethereum L1 settlement dominance untuk high-value NFT
-· Evidence: Phase 4 Cross-chain "Tidak ada"; Phase 8 Narrative "Ethereum Alignment"; Phase 3 all events Ethereum Mainnet only
-· Supporting Dataset: Phase 4, Phase 8, Phase 3
+Pola 2: CEX Listing Strategy — Top-Tier Exchange Only pada TGE (Binance, Coinbase)
+· Decision Pattern: Binance (listing hari TGE, spot + perpetual) dan Coinbase (TGE+1, Experimental label) sebagai CEX utama; Bybit, OKX, Kraken follow-on tanpa announcement resmi Blur
+· Evidence: Phase 3 EV-005, EV-006; Phase 7 Exchange Ecosystem Binance, Coinbase; Phase 2 Entity Binance, Coinbase
+· Supporting Dataset: Phase 3 EV-005, EV-006; Phase 7 Exchange Ecosystem; Phase 2 Entity Binance, Coinbase
 
-Pola 5: VC-Backed but Community-Owned Narrative — Paradigm $11M Series A (VC control) tapi 51% token ke community; DAO governance advisory; fee switch ke staker
-· Evidence: Phase 2 Paradigm investor; Phase 6 Distribution 51% community; Phase 3 EV-013 fee switch; Phase 6 Governance multisig execution
-· Supporting Dataset: Phase 2, Phase 6, Phase 3
+Pola 3: Security Audit Partnership dengan Firm Terkemuka untuk Produk Baru (Trail of Bits, OpenZeppelin)
+· Decision Pattern: Blend protocol mendapat dual audit dari Trail of Bits dan OpenZeppelin (dua firma top-tier) sebelum mainnet; marketplace contracts tidak
+· Evidence: Phase 3 EV-008, EV-009; Phase 7 External Dependencies Trail of Bits, OpenZeppelin (Security); Phase 4 Audit History
+· Supporting Dataset: Phase 3 EV-008, EV-009; Phase 7 External Dependencies; Phase 4 Audit History
 
-Trade-off 1: Desentralisasi vs Kecepatan Eksekusi (Speed)
-· Decision: Retain admin key & upgrade authority di Blur Multisig (company-controlled) daripada timelock/DAO dari hari pertama
-· Trade-off: Kecepatan upgrade parameter (fee, royalty, pause, gas opt) dan emergency response ditukar dengan centralization risk (single point of failure, regulatory exposure, trust assumption)
-· Evidence: Phase 4 Security Model "Admin Control: Multisig memegang ownership"; Phase 4 Technical Upgrade History multiple upgrades via proxy; Phase 5 Financial Risk "Admin Key Financial Risk HIGH"
-· Supporting Dataset: Phase 4, Phase 5
+Pola 4: Uniswap V3 sebagai Oracle Infrastructure untuk Blend (DeFi Primitive Integration)
+· Decision Pattern: Blend menggunakan Uniswap V3 TWAP sebagai oracle harga untuk likuidasi NFT collateral; tidak build oracle sendiri atau pakai Chainlink
+· Evidence: Phase 4 System Architecture Oracle; Phase 7 External Dependencies Uniswap V3 Oracle; Phase 7 Major Integrations Blend ↔ Uniswap V3 Oracle
+· Supporting Dataset: Phase 4 System Architecture; Phase 7 External Dependencies, Major Integrations
 
-Trade-off 2: On-chain Orderbook (Trustless) vs Off-chain Orderbook (Performa)
-· Decision: Off-chain centralized matching engine (Web2 style) untuk latency rendah, gas efficiency, fitur advanced (trait bids, collection bids)
-· Trade-off: Performa & UX pro-trader ditukar dengan trust assumption pada operator Blur (fair ordering, no front-running, censorship resistance); tidak verifiable on-chain
-· Evidence: Phase 4 System Architecture "Off-chain Orderbook & Matching Engine"; Phase 4 Known Limitations "Orderbook Off-chain Terpusat HIGH"; Phase 8 Competitor vs OpenSea Seaport on-chain
-· Supporting Dataset: Phase 4, Phase 8
+Pola 5: Wallet Agnostic — Standard Ethereum Wallet Support Tanpa Partnership Eksklusif
+· Decision Pattern: Tidak ada wallet partner eksklusif; MetaMask, WalletConnect, Coinbase Wallet, Rainbow, Ledger, Trezor, Rabby semua supported via standard EIP-1193/WalletConnect
+· Evidence: Phase 7 Wallet Ecosystem (catatan: "Blur tidak mempublikasikan daftar wallet resmi yang supported; semua wallet Ethereum standar kompatibel")
+· Supporting Dataset: Phase 7 Wallet Ecosystem
 
-Trade-off 3: Multi-chain Expansion (User Growth) vs Ethereum L1 Focus (Liquidity Concentration)
-· Decision: Tidak deploy ke L2 (Arbitrum, Base, Optimism, Blast) hingga 2024-10; fokus resource pada Ethereum L1
-· Trade-off: Retail user & volume di L2 dikorbankan untuk menjaga liquidity concentration di L1, security alignment, dan narasi diferensiasi; risk market share erosion ke competitor multi-chain
-· Evidence: Phase 4 Known Limitations "No L2 deployment"; Phase 8 Narrative "Ethereum Alignment"; Phase 8 Competitor Magic Eden/OpenSea multi-chain
-· Supporting Dataset: Phase 4, Phase 8
+Pola 6: Developer Ecosystem Minimal — No SDK, No Grants, No Hackathon, API Only
+· Decision Pattern: Hanya public API (REST/GraphQL) dan docs.blur.io untuk developer; tidak ada SDK, CLI, grant program, hackathon, atau developer relations formal
+· Evidence: Phase 7 Developer Ecosystem (SDK: tidak ada; Grant Program: tidak ada; Hackathon: tidak ada); Phase 7 Applications (core products built in-house)
+· Supporting Dataset: Phase 7 Developer Ecosystem, Applications
 
-Trade-off 4: Zero Platform Fee (Growth) vs Protocol Fee Sustainability (Revenue)
-· Decision: Zero platform fee launch Oct 2022 → Fee switch 0.5% Feb 2024 via governance (16 bulan zero revenue)
-· Trade-off: User acquisition & market share dominance awal ditukar dengan delayed monetization; fee switch activation bergantung pada DAO vote (uncertainty)
-· Evidence: Phase 3 EV-002 "zero platform fee"; EV-013 "fee switch activated"; Phase 5 Revenue Model "Protocol Fee Live (fee switch activated Feb 2024)"
-· Supporting Dataset: Phase 3, Phase 5
+Governance Decision Pattern
 
-Trade-off 5: Token Incentive Cost (Inflationary Pressure) vs Volume Retention
-· Decision: Season 1-3 allocate ~39% supply (51% community includes future) untuk incentive trading/bidding/lending selama ~1 tahun
-· Trade-off: Sell pressure dari claimer & farmer ditukar dengan volume dominance & market share; fee switch Feb 2024 offset sebagian via buy pressure staking
-· Evidence: Phase 6 Distribution "Community 51% includes Season 1-3"; Phase 3 EV-004, EV-011, EV-012; Phase 8 Adoption Metrics volume sustained
-· Supporting Dataset: Phase 6, Phase 3, Phase 8
+Pola 1: Off-chain Signaling (Snapshot) + On-chain Execution via Multisig (Belum Full DAO)
+· Decision Pattern: Proposal diajukan dan divoting di Snapshot (blur.eth) dengan delegasi ERC-20 votes; eksekusi on-chain dilakukan oleh Blur Labs Multisig (Gnosis Safe) — tidak ada timelock contract atau DAO-owned executor
+· Evidence: Phase 3 EV-007, EV-013; Phase 6 Governance Model; Phase 7 Major Integrations Blur DAO ↔ Snapshot; Phase 4 Security Model Admin Control
+· Supporting Dataset: Phase 3 EV-007, EV-013; Phase 6 Governance; Phase 7 Major Integrations; Phase 4 Security Model
 
-Trade-off 6: Blend No Token (Regulatory Simplicity) vs Blend Governance Integration
-· Decision: Blend protocol tidak punya token sendiri; governance Blend parameter via Blur DAO (BLUR token); no direct BLUR utility di Blend smart contract
-· Trade-off: Regulatory simplicity & focus liquidity ke BLUR token ditukar dengan limited governance granularity untuk Blend-specific params (LTV, oracle, liquidation)
-· Evidence: Phase 4 Core Components Blend Contract no token; Phase 6 Utility "BLUR tidak digunakan di Blend"; Phase 3 EV-010 Blend launch
-· Supporting Dataset: Phase 4, Phase 6, Phase 3
+Pola 2: Fee Switch Activation via Governance Proposal (Contoh Nyata DAO Power)
+· Decision Pattern: Proposal fee switch 0.5% diajukan, divoting, disetujui via Snapshot Feb 2024; dieksekusi multisig — menunjukkan DAO dapat mengarahkan protocol revenue
+· Evidence: Phase 3 EV-013; Phase 6 Utility Staking/Fee Switch; Phase 8 Narrative Position "Token Utility/Fee Switch"; Phase 5 Revenue Model
+· Supporting Dataset: Phase 3 EV-013; Phase 6 Utility; Phase 8 Narrative Position; Phase 5 Revenue Model
+
+Pola 3: Seasonal Incentive Programs Dikelola via DAO/Team Hybrid (Bukan Pure DAO)
+· Decision Pattern: Season 2-3 reward parameters (distribusi BLUR, eligibility criteria) didesain team Blur Labs dengan input komunitas; tidak melalui proposal DAO formal per epoch
+· Evidence: Phase 3 EV-011, EV-012; Phase 6 Vesting Schedule Community (program-based cliff/vesting); Phase 8 Adoption Metrics
+· Supporting Dataset: Phase 3 EV-011, EV-012; Phase 6 Vesting Schedule; Phase 8 Adoption Metrics
+
+Pola 4: Delegation Infrastructure via Snapshot (Standard ERC-20 Votes)
+· Decision Pattern: Delegasi voting power didukung via Snapshot strategies (ERC-20 votes/EIP-5805 style); >25k delegators pasca fee switch Feb 2024
+· Evidence: Phase 6 Governance Delegation; Phase 8 Adoption Metrics BLUR Stakers; Phase 7 External Dependencies Snapshot
+· Supporting Dataset: Phase 6 Governance; Phase 8 Adoption Metrics; Phase 7 External Dependencies
+
+Pola 5: Admin Key Retention oleh Blur Labs Multisig (Belum Timelock/DAO Transfer)
+· Decision Pattern: Multisig Blur Labs (Gnosis Safe) tetap memegang ownership/admin key kontrak Marketplace, Blend, Token per 2024-10; bisa set fee, pause, upgrade proxy tanpa timelock
+· Evidence: Phase 4 Security Model Admin Control; Phase 2 Entity Blur Multisig; Phase 4 Known Technical Limitations Admin Key Risk; Phase 3 EV-004, EV-007
+· Supporting Dataset: Phase 4 Security Model, Known Technical Limitations; Phase 2 Entity Blur Multisig; Phase 3 EV-004, EV-007
+
+Risk Response Pattern
+
+Pola 1: Pre-launch Dual Audit untuk Mitigasi Smart Contract Risk (Blend)
+· Trigger: Blend protocol mengelola ETH collateral value tinggi; lending logic kompleks (perpetual, liquidation, oracle)
+· Decision Pattern: Komisi dua audit independen (Trail of Bits + OpenZeppelin) sebelum mainnet; findings addressed pre-launch
+· Evidence: Phase 3 EV-008, EV-009; Phase 4 Audit History; Phase 7 External Dependencies Trail of Bits, OpenZeppelin
+· Response: Dual audit completed April 2023; Blend launch Mei 2023 tanpa insiden keamanan mayor
+· Result: Blend beroperasi aman >1 tahun; TVL $150-300M; no major exploit reported
+· Supporting Dataset: Phase 3 EV-008, EV-009; Phase 4 Audit History; Phase 7 External Dependencies
+
+Pola 2: Fee Switch Activation sebagai Respons terhadap Token Utility Criticism dan Vesting Cliff
+· Trigger: 1-year cliff team/investor berakhir Feb 2024 (sell pressure); komunitas menuntut value accrual untuk BLUR; narasi "utility token" perlu real yield
+· Decision Pattern: Governance proposal untuk aktifkan 0.5% protocol fee redirect ke staker; passed dan dieksekusi Feb 2024
+· Evidence: Phase 3 EV-013; Phase 6 Utility Staking/Fee Switch; Phase 6 Major Token Events Vesting Cliff End; Phase 8 Narrative Position
+· Response: Fee switch live; >25k delegators; protocol revenue sharing dimulai
+· Result: Real yield narrative established; BLUR price support; regulatory risk meningkat (security classification)
+· Supporting Dataset: Phase 3 EV-013; Phase 6 Utility, Major Token Events; Phase 8 Narrative Position; Phase 5 Financial Risk
+
+Pola 3: Seasonal Incentive Programs untuk Counter Market Share Erosion (Bear Market NFT)
+· Trigger: NFT volume menurun 2023-2024; kompetitor (Magic Eden, OpenSea) launch incentive programs sendiri; mercenary capital migrasi
+· Decision Pattern: Season 2 (Mei-Nov 2023) dan Season 3 (Nov 2023-Feb 2024) dengan BLUR rewards untuk trading, bidding, Blend, delegation
+· Evidence: Phase 3 EV-011, EV-012; Phase 8 Adoption Metrics (volume maintain 60-75% share); Phase 6 Vesting Schedule Community
+· Response: Token emissions berkelanjutan ke power user; volume defense berhasil
+· Result: Market share maintain; wash trading estimates tinggi (>30% per analyst); dependency pada incentives untuk volume
+· Supporting Dataset: Phase 3 EV-011, EV-012; Phase 8 Adoption Metrics, Open Threads; Phase 6 Vesting Schedule
+
+Pola 4: Mobile App Beta untuk Counter Distribution Risk (Desktop-Only Power User Base)
+· Trigger: User base terkonsentrasi pada power trader desktop; retail adoption terbatas; kompetitor (Magic Eden, OpenSea) punya mobile app matang
+· Decision Pattern: Build native iOS/Android app beta launch Juni 2024 dengan feature parity desktop
+· Evidence: Phase 3 EV-014; Phase 4 Core Components Mobile App; Phase 7 Applications Mobile App; Phase 8 Market Position
+· Response: Beta testing komunitas; belum feature-complete atau audit mobile khusus
+· Result: Distribution channel baru dibuka; adoption metrics belum dipublikasikan; security surface bertambah
+· Supporting Dataset: Phase 3 EV-014; Phase 4 Core Components, Known Technical Limitations; Phase 7 Applications; Phase 8 Open Threads
+
+Pola 5: Ethereum L1 Only Commitment sebagai Respons terhadap Multi-chain Fatigue dan Fragmentation
+· Trigger: Ekosistem NFT terfragmentasi multi-chain (Solana, Polygon, Base, Arbitrum, Bitcoin Ordinals); user/liquidity tersebar tipis
+· Decision Pattern: Tidak deploy ke L2/other chain; fokus deepening Ethereum L1 liquidity dan tooling; narasi "Ethereum alignment" sebagai differentiator
+· Evidence: Phase 1 Chain(s); Phase 4 System Architecture Cross-chain; Phase 8 Narrative Position "Ethereum Alignment"; Phase 8 Open Threads L2 expansion signal
+· Response: Konsentrasi resources pada Ethereum L1; no bridging complexity; no fragmented liquidity
+· Result: Dominasi volume Ethereum NFT maintain; tapi miss growth di L2/new chain ecosystems
+· Supporting Dataset: Phase 1, Phase 4 System Architecture, Phase 8 Narrative Position, Open Threads
+
+Recurring Behavioral Pattern
+
+Pola 1: Launch Products Mainnet-Langsung Tanpa Testnet Publik (Marketplace 2022, Blend 2023)
+· Evidence: Blur Marketplace EV-002 live mainnet 2022-10-19 tanpa testnet; Blend EV-010 live mainnet 2023-05-01 setelah dual audit tapi tanpa public testnet phase
+· Supporting Dataset: Phase 3 EV-002, EV-010; Phase 4 System Architecture
+
+Pola 2: Paradigm sebagai Single Point of Truth untuk Strategic Funding Decisions
+· Evidence: Series A $11M Paradigm lead (EV-003); Paradigm portfolio page highlight Blur; tidak ada investor lain dengan visibility setara; Paradigm network akses ke CEX listing (Binance, Coinbase connections)
+· Supporting Dataset: Phase 3 EV-003; Phase 2 Entity Paradigm; Phase 5 Funding History; Phase 7 Exchange Ecosystem
+
+Pola 3: Seasonal Token Emissions untuk Defend Market Position (Season 1, 2, 3)
+· Evidence: Season 1 airdrop TGE (EV-004); Season 2 EV-011; Season 3 EV-012; setiap season dirancang counter specific threat (post-airdrop retention, Blend adoption, delegation)
+· Supporting Dataset: Phase 3 EV-004, EV-011, EV-012; Phase 6 Vesting Schedule Community; Phase 8 Adoption Metrics
+
+Pola 4: Upgrade Smart Contract via Proxy Admin Multisig Tanpa Timelock (Berulang)
+· Evidence: Marketplace upgrades multiple kali via proxy (Phase 4 Technical Upgrade History); Blend proxy admin multisig; Token contract proxy admin multisig; semua controlled by Blur Labs multisig
+· Supporting Dataset: Phase 4 Technical Upgrade History, Security Model, Current Technical Stack; Phase 2 Entity Blur Multisig
+
+Pola 5: Narrative Control via Founder Twitter (PacmanBlur) + Official Blog
+· Evidence: PacmanBlur @PacmanBlur aktif shape narrative (Ethereum alignment, pro-trader focus, fee switch rationale); Blur Blog sebagai primary communication channel (EV-002, EV-004, EV-010, EV-013 announcements)
+· Supporting Dataset: Phase 2 Entity PacmanBlur; Phase 3 EV-002, EV-004, EV-010, EV-013; Phase 8 Narrative Position
+
+Strategic Trade-offs
+
+Trade-off 1: Desentralisasi Orderbook vs UX Pro-Trader (Speed, Trait Bids, Collection Bids)
+· Decision: Memilih off-chain centralized orderbook (matching engine server Blur Labs) daripada on-chain orderbook (Seaport-style)
+· Trade-off: Mengorbankan desentralisasi dan censorship resistance untuk latency rendah, UX kaya (trait bids, collection-wide bids), gas efficiency, dan fair ordering trust assumption
+· Evidence: Phase 4 Core Components Off-chain Orderbook; Phase 4 Security Model Off-chain Trust; Phase 8 Market Position pro-trader focused; Phase 4 Known Technical Limitations Orderbook Off-chain Terpusat
+· Supporting Dataset: Phase 4 Core Components, Security Model, Known Technical Limitations; Phase 8 Market Position
+
+Trade-off 2: Admin Key Control (Multisig) vs Full DAO Ownership (Timelock)
+· Decision: Mempertahankan Blur Labs Multisig sebagai admin/owner kontrak marketplace, Blend, token per 2024-10; belum transfer ke timelock/DAO
+· Trade-off: Mengorbankan desentralisasi penuh dan trust-minimization untuk kecepatan upgrade, legal flexibility, dan emergency response capability (pause, fee change)
+· Evidence: Phase 4 Security Model Admin Control; Phase 2 Entity Blur Multisig; Phase 4 Known Technical Limitations Admin Key Risk; Phase 3 EV-007, EV-013
+· Supporting Dataset: Phase 4 Security Model, Known Technical Limitations; Phase 2 Entity Blur Multisig; Phase 3 EV-007, EV-013
+
+Trade-off 3: Ethereum L1 Only vs Multi-chain Expansion (User Growth vs Liquidity Depth)
+· Decision: Tidak deploy ke L2 (Arbitrum, Optimism, Base) atau chain lain (Solana, BNB, Polygon); fokus Ethereum mainnet only
+· Trade-off: Mengorbankan user growth di ecosystem baru dan retail adoption multi-chain untuk liquidity depth terpusat, no bridging risk, Ethereum security alignment, dan brand differentiation
+· Evidence: Phase 1 Chain(s); Phase 4 System Architecture Cross-chain; Phase 8 Narrative Position Ethereum Alignment; Phase 8 Open Threads L2 expansion signal
+· Supporting Dataset: Phase 1, Phase 4 System Architecture, Phase 8 Narrative Position, Open Threads
+
+Trade-off 4: Token Emissions (Seasonal Incentives) vs Sustainable Revenue (Fee Switch)
+· Decision: 2023: Heavy token emissions via Season 1-3 (51% supply allocation); 2024: Fee switch activation 0.5% protocol fee ke staker
+· Trade-off: Mengorbankan token value dilution (emissions) untuk volume defense dan market share maintenance; kemudian pivot ke real yield model yang mengurangi sell pressure tapi menambah regulatory risk
+· Evidence: Phase 6 Distribution, Vesting Schedule, Utility Fee Switch; Phase 3 EV-004, EV-011, EV-012, EV-013; Phase 8 Adoption Metrics, Narrative Position
+· Supporting Dataset: Phase 6 Distribution, Vesting Schedule, Utility; Phase 3 EV-004, EV-011, EV-012, EV-013; Phase 8 Adoption Metrics, Narrative Position
+
+Trade-off 5: Blend Oracle Dependency (Uniswap V3 TWAP) vs External Oracle Network (Chainlink/Pyth)
+· Decision: Menggunakan Uniswap V3 TWAP internal untuk Blend liquidation oracle; tidak integrasi Chainlink/Pyth
+· Trade-off: Mengorbankan oracle robustness dan manipulation resistance untuk simplicity, no external dependency cost, dan faster time-to-market
+· Evidence: Phase 4 System Architecture Oracle; Phase 4 External Dependencies Uniswap V3 Oracle; Phase 4 Known Technical Limitations Blend Oracle Dependency; Phase 7 Major Integrations Blend ↔ Uniswap V3 Oracle
+· Supporting Dataset: Phase 4 System Architecture, External Dependencies, Known Technical Limitations; Phase 7 Major Integrations
+
+Trade-off 6: Marketplace Contracts Unaudited vs Blend Dual Audited (Resource Allocation)
+· Decision: Allocate audit budget ke Blend (2x top-tier audit); Marketplace core contracts (Exchange, Bidding) tidak audit publik
+· Trade-off: Mengorbankan security assurance pada kontrak volume terbesar (Marketplace) untuk memastikan produk baru berisiko tinggi (Blend) secure; rationale: Marketplace simpler logic, Blend complex lending/liquidation
+· Evidence: Phase 4 Audit History (2 Blend, 0 Marketplace); Phase 4 Known Technical Limitations Marketplace Contracts Unaudited; Phase 3 EV-008, EV-009
+· Supporting Dataset: Phase 4 Audit History, Known Technical Limitations; Phase 3 EV-008, EV-009
 
 Behavioral Summary
 
 Prioritas Utama Proyek:
-1. Market share dominance di NFT trading Ethereum (pro-trader segment) — terukur via volume share 60-75% konstan
-2. Product velocity & feature differentiation — ship fast: marketplace, Blend, mobile app, fee switch dalam 2 tahun
-3. Token incentive alignment — 51% supply ke community, seasonal rewards, fee switch real yield
-4. Ethereum alignment sebagai moat naratif & teknis — no L2, no multi-chain
+1. Market Share Dominance di Ethereum NFT — defend #1 position via product depth (bidding, Blend) dan incentives
+2. Pro-Trader UX — speed, advanced order types, API access over decentralization idealism
+3. Token Value Accrual — pivot dari emissions ke fee switch real yield untuk sustain holder loyalty
+4. Ethereum Alignment — L1-only sebagai moat naratif dan teknis
 
 Cara Mengambil Keputusan:
-- Founder-led (PacmanBlur, Galaga, Lord_kekl) dengan input Paradigm strategic; decision speed tinggi
-- Data-driven dari on-chain metrics (volume, bid activity, loan volume) untuk design incentive
-- Governance advisory via Snapshot; execution control di multisig (company) untuk kecepatan
-- Risk tolerance tinggi pada centralization (admin key, off-chain orderbook) demi speed & UX
+- Founder-driven (PacmanBlur, Galaga, Lord_kekl) dengan input Paradigm strategic
+- Data-driven dari on-chain metrics (volume, TVL, holder behavior) untuk incentive design
+- Risk-aware tapi speed-prioritized: dual audit untuk Blend (high risk), no audit untuk Marketplace (lower perceived risk), mainnet launch tanpa testnet
+- Governance sebagai signaling layer, execution masih centralized (multisig) — pragmatic transition
 
 Faktor Paling Sering Mempengaruhi Keputusan:
-1. Competitive positioning vs OpenSea/Magic Eden (feature parity + differentiation)
-2. Trader feedback & on-chain behavior (bidding patterns, loan demand)
-3. Token price & liquidity management (MM engagement, fee switch timing, vesting cliff)
-4. Paradigm network & strategic advice (Series A lead investor)
-5. Regulatory environment US (token utility argument, Coinbase listing, no KYC)
+1. Competitive Pressure (OpenSea, Magic Eden, LooksRare) → feature parity/advantage, incentive wars
+2. Token Price/Holder Sentiment → fee switch, seasonal incentives, vesting schedule communication
+3. Regulatory Uncertainty (US securities law) → admin key retention, no full DAO transfer, fee switch timing
+4. Technical Debt Management → proxy upgrades, OpenZeppelin standards, no L2 complexity
+5. Investor Expectations (Paradigm) → unicorn valuation growth, market leadership, exit optionality
 
 Pola Evolusi:
-Phase 1 (Oct 2022-Feb 2023): Marketplace launch → VC funding → Token TGE + Airdrop + CEX listing (bootstrap)
-Phase 2 (Mar-Nov 2023): Blend launch (NFTfi vertical) → Season 2-3 incentives (retention) → Volume dominance established
-Phase 3 (Feb 2024-sekarang): Fee switch activation (monetization) → Mobile app beta (retail expansion) → Sustained leadership
+- 2022: Product Launch → Market Fit (Marketplace)
+- 2023: Token Launch + Incentive Engine + Second Product (Blend) → Growth
+- 2024: Monetization (Fee Switch) + Distribution Expansion (Mobile) + Maturity → Optimization
 
 Kekuatan Utama:
-- Product execution speed & quality (off-chain orderbook performance, Blend innovation)
-- Trader-centric UX moat (bidding pools, trait bids, API for bots)
-- Capital efficiency (single Series A, community-heavy tokenomics)
-- Paradigm backing (talent, network, credibility)
-- Vertical integration (Marketplace + Lending + Token flywheel)
+- Dominasi volume pasar (60-75% Ethereum NFT) yang sticky
+- Pro-trader tooling depth (bidding pools, trait bids, API) moat teknis
+- Blend sebagai diferensiasi NFTfi dengan TVL signifikan
+- Tokenomics dengan real yield (fee switch) + long vesting alignment
+- Paradigm backing + CEX relationships (Binance, Coinbase)
 
 Kelemahan Utama:
-- Centralization risk tinggi (multisig admin key, off-chain orderbook, no timelock)
-- Treasury concentration di BLUR token (no diversification disclosed)
-- No L2/multi-chain strategy (retail exclusion, competitor encroachment)
-- Marketplace contracts unaudited (security debt)
-- Governance not fully decentralized (multisig execution, plutocratic voting)
-- Developer ecosystem minimal (no SDK, grants, hackathon)
-- Regulatory ambiguity (token utility
+- Admin key centralization (multisig) — single point of failure
+- Marketplace contracts unaudited publik — security debt
+- Treasury opacity — no transparency report/dashboard
+- Incentive dependency — volume drop risk jika Season 4 tidak ada
+- No L2/multi-chain — TAM ceiling di Ethereum L1 only
+- Wash trading estimates tinggi selama incentive seasons
+- Mobile app beta — unproven distribution channel
+- Regulatory risk pada fee switch (security classification BLUR)
+
+Open Threads
+
+- Status kepemilikan kontrak (ownership/admin keys) saat ini: apakah Blur Multisig sudah menyerahkan kontrol penuh ke Blur DAO via timelock atau masih memegang admin key kritis — data on-chain menunjukkan multisig masih owner per 2024-10 (Phase 2 Entity Blur Multisig; Phase 4 Security Model; Phase 7 External Dependencies Gnosis Safe)
+- Persentase exact alokasi Team, Investors, Advisors tidak diungkapkan di blog resmi Blur; hanya "51% community" yang eksplisit — sumber sekunder bervariasi (Team 20-25%, Investors 15-20%) perlu konfirmasi primary source atau on-chain vesting contract analysis (Phase 6 Distribution, Open Threads)
+- Real-time volume & market share data: tidak ada dashboard resmi Blur; bergantung Dune community queries metodologi bervariasi (include/exclude wash trading) — perlu standardisasi (Phase 8 Open Threads)
+- Blend TVL & loan volume on-chain vs DeFiLlama: DeFiLlama tidak selalu sinkron dengan data on-chain Blend contract 0x2946... — perlu cross-check manual (Phase 8 Open Threads)
+- BLUR token circulating supply methodology: CoinGecko vs CoinMarketCap vs Token Terminal definisi circulating berbeda (include/exclude team vesting, DAO treasury, unclaimed Season 1) — angka berbeda 10-20% (Phase 6 Holder Distribution; Phase 8 Open Threads)
+- Wash trading estimation: Beberapa analyst (Nansen, Chainalysis) estimasi >30% wash trading di Blur selama Season 2-3 tapi tidak ada report resmi — perlu audit independen (Phase 8 Open Threads)
+- Fee switch revenue actuals: Jumlah ETH terkumpul dari 0.5% fee switch dan terdistribusi ke staker tidak dipublikasikan berkala — hanya on-chain traceable via contract events (Phase 8 Open Threads)
+- L2 expansion signal: Tidak ada announcement resmi L2 deployment (Arbitrum, Base, Blast, Optimism) meskipun kompetitor sudah — narasi "Ethereum only" apakah permanent atau temporary (Phase 8 Open Threads)
+- Entity legal terpisah untuk Blend (apakah di bawah Blur Labs Inc yang sama atau entity baru) belum dikonfirmasi (Phase 2 Open Threads; Phase 7 Applications)
+- Mobile app adoption metrics: Download count, MAU, volume via mobile vs desktop tidak dipublikasikan (Phase 8 Open Threads)
+- Competitor volume data source: OpenSea volume sering include multi-chain (Polygon, Base, dll.) — perbandingan "Ethereum only" vs "All chains" tidak apple-to-apple (Phase 8 Open Threads)
+- Status vesting investor/team token: jadwal unlock detail (cliff exact date, linear monthly start date) tidak diungkapkan di blog — hanya "4-5 tahun vesting" umum (Phase 6 Vesting Schedule, Open Threads)

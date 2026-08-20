@@ -1,0 +1,475 @@
+PROJECT: NEAR Protocol
+
+## Market Category
+
+Primary Category: Layer-1 blockchain (HIGH) [NEAR Documentation, https://docs.near.org/concepts/basics/near-protocol]
+Secondary Category: EVM-compatible Layer-2 via Aurora (HIGH) [Aurora Documentation, https://docs.aurora.dev]
+Sector: Smart Contract Platform (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/near]
+Sub-sector: Sharded Proof-of-Stake; Cross-Chain Interoperability Hub; AI x Crypto Infrastructure (User-Owned AI) (HIGH) [NEAR Blog NEARCon 2023, https://near.org/blog/nearcon-2023] [NEAR Blog, https://near.org/blog/near-data-availability-layer]
+Sources: [NEAR Documentation, https://docs.near.org/concepts/basics/near-protocol] [Aurora Documentation, https://docs.aurora.dev] [CoinGecko, https://www.coingecko.com/en/coins/near] [NEAR Blog NEARCon 2023, https://near.org/blog/nearcon-2023] [NEAR Blog, https://near.org/blog/near-data-availability-layer]
+
+## Market Position
+
+Project Stage: Growth (HIGH) [NEAR Blog Mainnet Launch, https://near.org/blog/mainnet-launch] [Electric Capital Developer Report 2024, https://www.electriccapital.com/developer-report]
+Primary Competitors: Ethereum; Solana; Polygon; Avalanche; Aptos; Sui; Celestia; EigenLayer (MEDIUM) [CoinGecko Category, https://www.coingecko.com/en/categories/smart-contract-platform] [Messari NEAR Profile, https://messari.io/project/near-protocol/profile]
+Market Segment: Developer-focused Layer-1 dengan sharding native (Nightshade); EVM compatibility via Aurora; chain abstraction via NEAR Intents; data availability layer untuk rollups/appchains (HIGH) [NEAR Documentation, https://docs.near.org/concepts/protocol/nightshade] [Aurora Documentation, https://docs.aurora.dev] [NEAR Blog NEARCon 2023, https://near.org/blog/nearcon-2023] [NEAR Blog, https://near.org/blog/near-data-availability-layer]
+Geographic Focus: Global; regional communities di Korea, Japan, China, India, LATAM, Africa, Russia/CIS, Europe, North America (HIGH) [NEAR Korea Twitter, https://twitter.com/NEARKorea] [NEAR Japan Twitter, https://twitter.com/NEARJapan] [NEAR China Twitter, https://twitter.com/NEARChina] [NEAR India Twitter, https://twitter.com/NEARIndia] [NEAR LATAM Twitter, https://twitter.com/NEARLATAM] [NEAR Africa Twitter, https://twitter.com/NEARAfrica] [NEAR Russia Telegram, https://t.me/nearprotocol_ru] [NEARCon Website, https://nearcon.org] [NEAR Week Website, https://nearweek.org]
+Sources: [NEAR Blog Mainnet Launch, https://near.org/blog/mainnet-launch] [Electric Capital Developer Report 2024, https://www.electriccapital.com/developer-report] [CoinGecko Category, https://www.coingecko.com/en/categories/smart-contract-platform] [Messari NEAR Profile, https://messari.io/project/near-protocol/profile] [NEAR Documentation, https://docs.near.org/concepts/protocol/nightshade] [Aurora Documentation, https://docs.aurora.dev] [NEAR Blog NEARCon 2023, https://near.org/blog/nearcon-2023] [NEAR Blog, https://near.org/blog/near-data-availability-layer] [NEAR Korea Twitter, https://twitter.com/NEARKorea] [NEAR Japan Twitter, https://twitter.com/NEARJapan] [NEAR China Twitter, https://twitter.com/NEARChina] [NEAR India Twitter, https://twitter.com/NEARIndia] [NEAR LATAM Twitter, https://twitter.com/NEARLATAM] [NEAR Africa Twitter, https://twitter.com/NEARAfrica] [NEAR Russia Telegram, https://t.me/nearprotocol_ru] [NEARCon Website, https://nearcon.org] [NEAR Week Website, https://nearweek.org]
+
+## Trading Markets
+
+Exchange: Binance
+Spot: NEAR/USDT; NEAR/BTC; NEAR/BUSD; NEAR/USDC; NEAR/BNB (HIGH) [Binance NEAR Trading, https://www.binance.com/en/trade/NEAR_USDT]
+Perpetual: NEAR/USDT perpetual futures (HIGH) [Binance NEAR Trading, https://www.binance.com/en/trade/NEAR_USDT]
+Futures: Tidak terpisah dari perpetual (HIGH) [Binance NEAR Trading, https://www.binance.com/en/trade/NEAR_USDT]
+Options: Tidak tersedia (HIGH) [Binance NEAR Trading, https://www.binance.com/en/trade/NEAR_USDT]
+OTC: Available via Binance OTC (MEDIUM) [Binance OTC, https://www.binance.com/en/otc]
+Status: Listed (Active) (HIGH) [Binance NEAR Listing, https://www.binance.com/en/blog/421499824684900352/NEAR-Protocol-NEAR-Listing]
+
+Exchange: Coinbase (Coinbase Pro / Advanced Trade)
+Spot: NEAR/USD; NEAR/BTC; NEAR/USDC (HIGH) [Coinbase NEAR Asset, https://www.coinbase.com/price/near]
+Perpetual: Tidak tersedia (HIGH) [Coinbase NEAR Asset, https://www.coinbase.com/price/near]
+Futures: Tidak tersedia (HIGH) [Coinbase NEAR Asset, https://www.coinbase.com/price/near]
+Options: Tidak tersedia (HIGH) [Coinbase NEAR Asset, https://www.coinbase.com/price/near]
+OTC: Available via Coinbase Prime (MEDIUM) [Coinbase Prime, https://prime.coinbase.com/]
+Status: Listed (Active) (HIGH) [Coinbase NEAR Listing, https://blog.coinbase.com/near-protocol-near-is-launching-on-coinbase-pro-8f5a5c5f5d5a]
+
+Exchange: Kraken
+Spot: NEAR/USD; NEAR/EUR; NEAR/USDT (HIGH) [Kraken NEAR Trading, https://trade.kraken.com/markets/kraken/near/usd]
+Perpetual: NEAR/USD perpetual futures (Kraken Futures) (HIGH) [Kraken Futures, https://futures.kraken.com/]
+Futures: Tidak terpisah dari perpetual (HIGH) [Kraken Futures, https://futures.kraken.com/]
+Options: Tidak tersedia (HIGH) [Kraken NEAR Trading, https://trade.kraken.com/markets/kraken/near/usd]
+OTC: Available via Kraken OTC (MEDIUM) [Kraken OTC, https://www.kraken.com/otc]
+Status: Listed (Active) (HIGH) [Kraken NEAR Listing, https://blog.kraken.com/post/3012/near-protocol-near-now-available-on-kraken/]
+
+Exchange: OKX
+Spot: NEAR/USDT; NEAR/USDC; NEAR/BTC (HIGH) [OKX NEAR Trading, https://www.okx.com/markets/spot/near-usdt]
+Perpetual: NEAR/USDT perpetual futures (HIGH) [OKX NEAR Trading, https://www.okx.com/markets/spot/near-usdt]
+Futures: Tidak terpisah dari perpetual (HIGH) [OKX NEAR Trading, https://www.okx.com/markets/spot/near-usdt]
+Options: Tidak tersedia (HIGH) [OKX NEAR Trading, https://www.okx.com/markets/spot/near-usdt]
+OTC: Available via OKX OTC (MEDIUM) [OKX OTC, https://www.okx.com/otc]
+Status: Listed (Active) (HIGH) [OKX NEAR Listing, https://www.okx.com/announcement/near-listing]
+
+Exchange: Bybit
+Spot: NEAR/USDT; NEAR/USDC (HIGH) [Bybit NEAR Trading, https://www.bybit.com/trade/spot/NEAR/USDT]
+Perpetual: NEAR/USDT perpetual futures (USDT-margined, coin-margined) (HIGH) [Bybit NEAR Trading, https://www.bybit.com/trade/spot/NEAR/USDT]
+Futures: Tidak terpisah dari perpetual (HIGH) [Bybit NEAR Trading, https://www.bybit.com/trade/spot/NEAR/USDT]
+Options: Tidak tersedia (HIGH) [Bybit NEAR Trading, https://www.bybit.com/trade/spot/NEAR/USDT]
+OTC: Available via Bybit OTC (MEDIUM) [Bybit OTC, https://www.bybit.com/otc]
+Status: Listed (Active) (HIGH) [Bybit NEAR Listing, https://announcements.bybit.com/en/article/bybit-lists-near-protocol-near/]
+
+Exchange: KuCoin
+Spot: NEAR/USDT; NEAR/BTC; NEAR/USDC (HIGH) [KuCoin NEAR Trading, https://www.kucoin.com/trade/NEAR-USDT]
+Perpetual: NEAR/USDT perpetual futures (HIGH) [KuCoin NEAR Trading, https://www.kucoin.com/trade/NEAR-USDT]
+Futures: Tidak terpisah dari perpetual (HIGH) [KuCoin NEAR Trading, https://www.kucoin.com/trade/NEAR-USDT]
+Options: Tidak tersedia (HIGH) [KuCoin NEAR Trading, https://www.kucoin.com/trade/NEAR-USDT]
+OTC: Available via KuCoin OTC (MEDIUM) [KuCoin OTC, https://www.kucoin.com/otc]
+Status: Listed (Active) (HIGH) [KuCoin NEAR Listing, https://www.kucoin.com/news/en-near-protocol-near-listing-on-kucoin]
+
+Exchange: Gate.io
+Spot: NEAR/USDT; NEAR/BTC; NEAR/USDC (HIGH) [Gate.io NEAR Trading, https://www.gate.io/trade/NEAR_USDT]
+Perpetual: NEAR/USDT perpetual futures (HIGH) [Gate.io NEAR Trading, https://www.gate.io/trade/NEAR_USDT]
+Futures: Tidak terpisah dari perpetual (HIGH) [Gate.io NEAR Trading, https://www.gate.io/trade/NEAR_USDT]
+Options: Tidak tersedia (HIGH) [Gate.io NEAR Trading, https://www.gate.io/trade/NEAR_USDT]
+OTC: Available via Gate.io OTC (MEDIUM) [Gate.io OTC, https://www.gate.io/otc]
+Status: Listed (Active) (HIGH) [Gate.io NEAR Listing, https://www.gate.io/announcement/near-listing]
+
+Exchange: Huobi / HTX
+Spot: NEAR/USDT; NEAR/BTC; NEAR/USDC (HIGH) [HTX NEAR Trading, https://www.htx.com/en-us/trade/near_usdt]
+Perpetual: NEAR/USDT perpetual futures (HIGH) [HTX NEAR Trading, https://www.htx.com/en-us/trade/near_usdt]
+Futures: Tidak terpisah dari perpetual (HIGH) [HTX NEAR Trading, https://www.htx.com/en-us/trade/near_usdt]
+Options: Tidak tersedia (HIGH) [HTX NEAR Trading, https://www.htx.com/en-us/trade/near_usdt]
+OTC: Available via HTX OTC (MEDIUM) [HTX OTC, https://www.htx.com/otc]
+Status: Listed (Active) (HIGH) [Huobi NEAR Listing, https://www.htx.com/en-us/announcement/near-listing]
+
+Exchange: Ref Finance (DEX)
+Spot: NEAR/wNEAR; NEAR/USDT; NEAR/USDC; NEAR/stNEAR; various NEP-141 pairs (HIGH) [Ref Finance Website, https://ref.finance]
+Perpetual: Tidak tersedia (HIGH) [Ref Finance Website, https://ref.finance]
+Futures: Tidak tersedia (HIGH) [Ref Finance Website, https://ref.finance]
+Options: Tidak tersedia (HIGH) [Ref Finance Website, https://ref.finance]
+OTC: Tidak tersedia (HIGH) [Ref Finance Website, https://ref.finance]
+Status: Live (Native DEX) (HIGH) [Ref Finance Website, https://ref.finance]
+
+Exchange: Spin (Native Order-Book DEX)
+Spot: NEAR/USDT; NEAR/USDC; NEAR/wNEAR order-book (HIGH) [Spin Website, https://spin.fi]
+Perpetual: NEAR perpetual futures (on-chain order book) (HIGH) [Spin Website, https://spin.fi]
+Futures: Tidak terpisah dari perpetual (HIGH) [Spin Website, https://spin.fi]
+Options: Tidak tersedia (HIGH) [Spin Website, https://spin.fi]
+OTC: Tidak tersedia (HIGH) [Spin Website, https://spin.fi]
+Status: Live (Native DEX) (HIGH) [Spin Website, https://spin.fi]
+
+Exchange: Orderly Network (via Aurora)
+Spot: NEAR/USDT order-book (CLOB) (HIGH) [Orderly NEAR Docs, https://docs.orderly.network/near]
+Perpetual: NEAR perpetual futures (CLOB) (HIGH) [Orderly NEAR Docs, https://docs.orderly.network/near]
+Futures: Tidak terpisah dari perpetual (HIGH) [Orderly NEAR Docs, https://docs.orderly.network/near]
+Options: Tidak tersedia (HIGH) [Orderly NEAR Docs, https://docs.orderly.network/near]
+OTC: Tidak tersedia (HIGH) [Orderly NEAR Docs, https://docs.orderly.network/near]
+Status: Live (DEX on Aurora) (HIGH) [Orderly Network Website, https://orderly.network]
+
+Exchange: Trisolaris (Stablecoin DEX)
+Spot: NEAR/USDT; NEAR/USDC; stablecoin pairs (low slippage) (HIGH) [Trisolaris Website, https://trisolaris.app]
+Perpetual: Tidak tersedia (HIGH) [Trisolaris Website, https://trisolaris.app]
+Futures: Tidak tersedia (HIGH) [Trisolaris Website, https://trisolaris.app]
+Options: Tidak tersedia (HIGH) [Trisolaris Website, https://trisolaris.app]
+OTC: Tidak tersedia (HIGH) [Trisolaris Website, https://trisolaris.app]
+Status: Live (Native DEX) (HIGH) [Trisolaris Website, https://trisolaris.app]
+
+Sources: [Binance NEAR Listing, https://www.binance.com/en/blog/421499824684900352/NEAR-Protocol-NEAR-Listing] [Binance NEAR Trading, https://www.binance.com/en/trade/NEAR_USDT] [Coinbase NEAR Listing, https://blog.coinbase.com/near-protocol-near-is-launching-on-coinbase-pro-8f5a5c5f5d5a] [Coinbase NEAR Asset, https://www.coinbase.com/price/near] [Kraken NEAR Listing, https://blog.kraken.com/post/3012/near-protocol-near-now-available-on-kraken/] [Kraken NEAR Trading, https://trade.kraken.com/markets/kraken/near/usd] [OKX NEAR Listing, https://www.okx.com/announcement/near-listing] [OKX NEAR Trading, https://www.okx.com/markets/spot/near-usdt] [Bybit NEAR Listing, https://announcements.bybit.com/en/article/bybit-lists-near-protocol-near/] [Bybit NEAR Trading, https://www.bybit.com/trade/spot/NEAR/USDT] [KuCoin NEAR Listing, https://www.kucoin.com/news/en-near-protocol-near-listing-on-kucoin] [KuCoin NEAR Trading, https://www.kucoin.com/trade/NEAR-USDT] [Gate.io NEAR Listing, https://www.gate.io/announcement/near-listing] [Gate.io NEAR Trading, https://www.gate.io/trade/NEAR_USDT] [Huobi NEAR Listing, https://www.htx.com/en-us/announcement/near-listing] [HTX NEAR Trading, https://www.htx.com/en-us/trade/near_usdt] [Ref Finance Website, https://ref.finance] [Spin Website, https://spin.fi] [Orderly NEAR Docs, https://docs.orderly.network/near] [Trisolaris Website, https://trisolaris.app]
+
+## Liquidity
+
+Liquidity Source: Centralized Exchanges (CEX)
+Major Liquidity Venue: Binance (largest volume), Coinbase, Kraken, OKX, Bybit, KuCoin, Gate.io, HTX (HIGH) [Binance NEAR Trading, https://www.binance.com/en/trade/NEAR_USDT] [Coinbase NEAR Asset, https://www.coinbase.com/price/near] [Kraken NEAR Trading, https://trade.kraken.com/markets/kraken/near/usd] [OKX NEAR Trading, https://www.okx.com/markets/spot/near-usdt] [Bybit NEAR Trading, https://www.bybit.com/trade/spot/NEAR/USDT] [KuCoin NEAR Trading, https://www.kucoin.com/trade/NEAR-USDT] [Gate.io NEAR Trading, https://www.gate.io/trade/NEAR_USDT] [HTX NEAR Trading, https://www.htx.com/en-us/trade/near_usdt]
+DEX: Ref Finance (primary AMM), Spin (native order-book), Orderly Network (CLOB on Aurora), Trisolaris (stablecoin AMM) (HIGH) [Ref Finance Website, https://ref.finance] [Spin Website, https://spin.fi] [Orderly Network Website, https://orderly.network] [Trisolaris Website, https://trisolaris.app]
+Bridge Liquidity: Rainbow Bridge (trust-minimized NEAR���Ethereum), Wormhole, LayerZero, Axelar, Hyperlane, Celer cBridge, Synapse, Allbridge (HIGH) [Rainbow Bridge Docs, https://docs.rainbowbridge.app] [Wormhole Docs, https://docs.wormhole.com/wormhole/near] [LayerZero Docs, https://docs.layerzero.network/near] [Axelar Docs, https://docs.axelar.dev/near] [Hyperlane Docs, https://docs.hyperlane.xyz/near] [Celer cBridge NEAR, https://cbridge.celer.network/near] [Synapse Docs, https://docs.synapseprotocol.com/near] [Allbridge Docs, https://docs.allbridge.io/near]
+Status: Deep liquidity di CEX; growing DEX liquidity; multi-bridge cross-chain liquidity (HIGH) [DefiLlama NEAR, https://defillama.com/chain/NEAR] [Token Terminal NEAR, https://tokenterminal.com/terminal/projects/near]
+Sources: [Binance NEAR Trading, https://www.binance.com/en/trade/NEAR_USDT] [Coinbase NEAR Asset, https://www.coinbase.com/price/near] [Kraken NEAR Trading, https://trade.kraken.com/markets/kraken/near/usd] [OKX NEAR Trading, https://www.okx.com/markets/spot/near-usdt] [Bybit NEAR Trading, https://www.bybit.com/trade/spot/NEAR/USDT] [KuCoin NEAR Trading, https://www.kucoin.com/trade/NEAR-USDT] [Gate.io NEAR Trading, https://www.gate.io/trade/NEAR_USDT] [HTX NEAR Trading, https://www.htx.com/en-us/trade/near_usdt] [Ref Finance Website, https://ref.finance] [Spin Website, https://spin.fi] [Orderly Network Website, https://orderly.network] [Trisolaris Website, https://trisolaris.app] [Rainbow Bridge Docs, https://docs.rainbowbridge.app] [Wormhole Docs, https://docs.wormhole.com/wormhole/near] [LayerZero Docs, https://docs.layerzero.network/near] [Axelar Docs, https://docs.axelar.dev/near] [Hyperlane Docs, https://docs.hyperlane.xyz/near] [Celer cBridge NEAR, https://cbridge.celer.network/near] [Synapse Docs, https://docs.synapseprotocol.com/near] [Allbridge Docs, https://docs.allbridge.io/near] [DefiLlama NEAR, https://defillama.com/chain/NEAR] [Token Terminal NEAR, https://tokenterminal.com/terminal/projects/near]
+
+## Adoption Metrics
+
+Metric Name: Total Value Locked (TVL)
+Value: ~$250M-350M (fluktuatif, per Oktober 2024) (MEDIUM) [DefiLlama NEAR, https://defillama.com/chain/NEAR]
+Date: 2024-10
+Sources: [DefiLlama NEAR, https://defillama.com/chain/NEAR]
+
+Metric Name: Daily Active Users (DAU)
+Value: ~300k-500k alamat aktif harian (per Dune/Nansen, fluktuatif) (MEDIUM) [Dune NEAR Dashboards, https://dune.com/browse/near] [Nansen NEAR, https://www.nansen.ai/near]
+Date: 2024-10
+Sources: [Dune NEAR Dashboards, https://dune.com/browse/near] [Nansen NEAR, https://www.nansen.ai/near]
+
+Metric Name: Transactions (Daily)
+Value: ~100k-200k transaksi/hari (rata-rata 2024) (MEDIUM) [NEAR Explorer, https://explorer.near.org] [Token Terminal NEAR Metrics, https://tokenterminal.com/terminal/projects/near/metrics]
+Date: 2024-10
+Sources: [NEAR Explorer, https://explorer.near.org] [Token Terminal NEAR Metrics, https://tokenterminal.com/terminal/projects/near/metrics]
+
+Metric Name: Cumulative Transactions
+Value: 1 miliar+ transaksi kumulatif sejak mainnet 2020 (HIGH) [NEAR Blog, https://near.org/blog] [NEAR Explorer, https://explorer.near.org]
+Date: 2025-03 (milestone reached)
+Sources: [NEAR Blog, https://near.org/blog] [NEAR Explorer, https://explorer.near.org] [EV-067]
+
+Metric Name: Wallets (Total Accounts Created)
+Value: ~25M+ accounts created (per NEAR Explorer, termasuk implicit accounts) (MEDIUM) [NEAR Explorer, https://explorer.near.org]
+Date: 2024-10
+Sources: [NEAR Explorer, https://explorer.near.org]
+
+Metric Name: Developer Count (Full-time)
+Value: 1000+ full-time developers (Electric Capital Developer Report 2024) — top 5 blockchain (HIGH) [Electric Capital Developer Report 2024, https://www.electriccapital.com/developer-report]
+Date: 2024 (report published 2025-02)
+Sources: [Electric Capital Developer Report 2024, https://www.electriccapital.com/developer-report] [EV-066]
+
+Metric Name: Validator Count
+Value: 100+ active validators mainnet (HIGH) [NEAR Staking Docs, https://docs.near.org/staking/validator] [Figment NEAR, https://figment.io/networks/near/]
+Date: 2024-10
+Sources: [NEAR Staking Docs, https://docs.near.org/staking/validator] [Figment NEAR, https://figment.io/networks/near/]
+
+Metric Name: Bridge Volume (Monthly)
+Value: Tidak tersedia sebagai single aggregated metric; per-bridge volume di Dune/Nansen/Token Terminal (MEDIUM) [Dune NEAR Dashboards, https://dune.com/browse/near] [Nansen NEAR, https://www.nansen.ai/near] [Token Terminal NEAR, https://tokenterminal.com/terminal/projects/near]
+Date: 2024-10
+Sources: [Dune NEAR Dashboards, https://dune.com/browse/near] [Nansen NEAR, https://www.nansen.ai/near] [Token Terminal NEAR, https://tokenterminal.com/terminal/projects/near]
+
+Metric Name: Cross-Chain Messages (Monthly)
+Value: Tidak tersedia sebagai single aggregated metric; per-protocol (Wormhole, LayerZero, Axelar, Hyperlane) di respective dashboards (MEDIUM) [Wormhole Docs, https://docs.wormhole.com/wormhole/near] [LayerZero Docs, https://docs.layerzero.network/near] [Axelar Docs, https://docs.axelar.dev/near] [Hyperlane Docs, https://docs.hyperlane.xyz/near]
+Date: 2024-10
+Sources: [Wormhole Docs, https://docs.wormhole.com/wormhole/near] [LayerZero Docs, https://docs.layerzero.network/near] [Axelar Docs, https://docs.axelar.dev/near] [Hyperlane Docs, https://docs.hyperlane.xyz/near]
+
+Sources: [DefiLlama NEAR, https://defillama.com/chain/NEAR] [Dune NEAR Dashboards, https://dune.com/browse/near] [Nansen NEAR, https://www.nansen.ai/near] [NEAR Explorer, https://explorer.near.org] [Token Terminal NEAR Metrics, https://tokenterminal.com/terminal/projects/near/metrics] [Electric Capital Developer Report 2024, https://www.electriccapital.com/developer-report] [NEAR Staking Docs, https://docs.near.org/staking/validator] [Figment NEAR, https://figment.io/networks/near/] [NEAR Blog, https://near.org/blog] [EV-067] [EV-066]
+
+## Market Share
+
+Metric: Layer-1 TVL Market Share
+Value: ~1-2% dari total TVL semua Layer-1 (Ethereum dominan ~55-60%, Solana ~10-15%, BSC ~5-8%, Tron ~5-8%, Arbitrum ~3-5%, Polygon ~3-5%, NEAR ~1-2%) (MEDIUM) [DefiLlama Chains, https://defillama.com/chains] [DefiLlama NEAR, https://defillama.com/chain/NEAR]
+Date: 2024-10
+Sources: [DefiLlama Chains, https://defillama.com/chains] [DefiLlama NEAR, https://defillama.com/chain/NEAR]
+
+Metric: Developer Market Share (Full-time)
+Value: Top 5 blockchain by full-time developer count (Electric Capital 2024) — persentase exact tidak dipublikasikan (MEDIUM) [Electric Capital Developer Report 2024, https://www.electriccapital.com/developer-report]
+Date: 2024
+Sources: [Electric Capital Developer Report 2024, https://www.electriccapital.com/developer-report]
+
+Metric: Spot Trading Volume Market Share
+Value: Tidak tersedia sebagai persentase pasar global; NEAR biasanya rank 20-30 by 24h volume di CoinGecko/CoinMarketCap (MEDIUM) [CoinGecko, https://www.coingecko.com/en/coins/near] [CoinMarketCap, https://coinmarketcap.com/currencies/near-protocol/]
+Date: 2024-10
+Sources: [CoinGecko, https://www.coingecko.com/en/coins/near] [CoinMarketCap, https://coinmarketcap.com/currencies/near-protocol/]
+
+Metric: Staking Market Share (Proof-of-Stake)
+Value: Tidak tersedia sebagai persentase; NEAR staking ratio ~45-55% of circulating supply (per Staking Rewards / Token Terminal) (MEDIUM) [Token Terminal NEAR Metrics, https://tokenterminal.com/terminal/projects/near/metrics] [Staking Rewards NEAR, https://www.stakingrewards.com/earn/near/]
+Date: 2024-10
+Sources: [Token Terminal NEAR Metrics, https://tokenterminal.com/terminal/projects/near/metrics] [Staking Rewards NEAR, https://www.stakingrewards.com/earn/near/]
+
+Sources: [DefiLlama Chains, https://defillama.com/chains] [DefiLlama NEAR, https://defillama.com/chain/NEAR] [Electric Capital Developer Report 2024, https://www.electriccapital.com/developer-report] [CoinGecko, https://www.coingecko.com/en/coins/near] [CoinMarketCap, https://coinmarketcap.com/currencies/near-protocol/] [Token Terminal NEAR Metrics, https://tokenterminal.com/terminal/projects/near/metrics] [Staking Rewards NEAR, https://www.stakingrewards.com/earn/near/]
+
+## Competitor Landscape
+
+Competitor: Ethereum
+Category: Layer-1 (Established)
+Difference: Largest TVL, largest developer ecosystem, rollup-centric roadmap (danksharding), EVM native; NEAR: sharding native (Nightshade), WASM runtime, lower fees, faster finality, Aurora untuk EVM compatibility
+Market Segment: Smart Contract Platform; DeFi; NFT; Institutional
+Sources: [Ethereum Website, https://ethereum.org] [NEAR Documentation, https://docs.near.org/concepts/protocol/nightshade] [Aurora Documentation, https://docs.aurora.dev] [DefiLlama Chains, https://defillama.com/chains] [Electric Capital Developer Report 2024, https://www.electriccapital.com/developer-report]
+
+Competitor: Solana
+Category: Layer-1 (High Throughput)
+Difference: Single-chain high throughput (PoH + PoS), monolithic architecture, frequent outages historically; NEAR: sharded architecture (Nightshade), more resilient, WASM runtime, Aurora EVM layer
+Market Segment: High-throughput Layer-1; Consumer Apps; DeFi; NFT
+Sources: [Solana Website, https://solana.com] [NEAR Documentation, https://docs.near.org/concepts/protocol/nightshade] [DefiLlama Chains, https://defillama.com/chains]
+
+Competitor: Polygon
+Category: Layer-2 / Sidechain / AggLayer
+Difference: EVM-compatible scaling solutions (PoS, zkEVM, AggLayer), large DeFi/NFT ecosystem; NEAR: independent Layer-1 dengan sharding, Aurora sebagai EVM L2, chain abstraction focus
+Market Segment: EVM Scaling; DeFi; Gaming; Enterprise
+Sources: [Polygon Website, https://polygon.technology] [Aurora Documentation, https://docs.aurora.dev] [NEAR Blog NEARCon 2023, https://near.org/blog/nearcon-2023] [DefiLlama Chains, https://defillama.com/chains]
+
+Competitor: Avalanche
+Category: Layer-1 (Subnets)
+Difference: Subnet architecture untuk custom chains, EVM-compatible (C-chain), high throughput; NEAR: Nightshade sharding, Octopus/Calimero untuk appchains/private shards, WASM native
+Market Segment: Appchain/Subnet Platform; DeFi; Enterprise; Gaming
+Sources: [Avalanche Website, https://avax.network] [Octopus Network Website, https://octopus.network] [Calimero Network, https://calimero.network] [NEAR Documentation, https://docs.near.org/concepts/protocol/nightshade]
+
+Competitor: Aptos
+Category: Layer-1 (Move-based)
+Difference: Move language, parallel execution (Block-STM), high throughput; NEAR: Rust/AssemblyScript, Nightshade sharding, WASM runtime, Aurora EVM
+Market Segment: Move Ecosystem; High-throughput Layer-1; DeFi
+Sources: [Aptos Website, https://aptoslabs.com] [NEAR Documentation, https://docs.near.org/concepts/protocol/nightshade] [NEAR Rust SDK, https://github.com/near/near-sdk-rs]
+
+Competitor: Sui
+Category: Layer-1 (Move-based)
+Difference: Move language, object-centric model, parallel execution, Mysticeti consensus; NEAR: account-based, Nightshade sharding, Doomslug consensus, WASM
+Market Segment: Move Ecosystem; High-throughput Layer-1; Gaming; Consumer
+Sources: [Sui Website, https://sui.io] [NEAR Documentation, https://docs.near.org/concepts/protocol/nightshade] [NEAR Whitepaper, https://near.org/papers/nightshade/]
+
+Competitor: Celestia
+Category: Modular Data Availability Layer
+Difference: Purpose-built DA layer untuk rollups, blobspace, data availability sampling; NEAR: full Layer-1 dengan DA layer tambahan (2025), settlement + execution + DA
+Market Segment: Modular Blockchain; Rollup Infrastructure; DA Layer
+Sources: [Celestia Website, https://celestia.org] [NEAR Blog, https://near.org/blog/near-data-availability-layer] [Octopus Network, https://octopus.network] [Calimero Network, https://calimero.network]
+
+Competitor: EigenLayer
+Category: Restaking / Modular Infrastructure
+Difference: Restaking protocol di Ethereum untuk shared security; NEAR: native staking, protocol treasury inflation funding, DA layer, chain abstraction
+Market Segment: Restaking; Shared Security; Ethereum Infrastructure
+Sources: [EigenLayer Website, https://eigenlayer.xyz] [NEAR Economics Inflation, https://docs.near.org/concepts/economics/inflation] [NEAR Blog NEARCon 2023, https://near.org/blog/nearcon-2023] [NEAR Blog, https://near.org/blog/near-data-availability-layer]
+
+Sources: [Ethereum Website, https://ethereum.org] [Solana Website, https://solana.com] [Polygon Website, https://polygon.technology] [Avalanche Website, https://avax.network] [Aptos Website, https://aptoslabs.com] [Sui Website, https://sui.io] [Celestia Website, https://celestia.org] [EigenLayer Website, https://eigenlayer.xyz] [NEAR Documentation, https://docs.near.org/concepts/protocol/nightshade] [Aurora Documentation, https://docs.aurora.dev] [Octopus Network Website, https://octopus.network] [Calimero Network, https://calimero.network] [NEAR Whitepaper, https://near.org/papers/nightshade/] [NEAR Rust SDK, https://github.com/near/near-sdk-rs] [NEAR Blog NEARCon 2023, https://near.org/blog/nearcon-2023] [NEAR Blog, https://near.org/blog/near-data-availability-layer] [DefiLlama Chains, https://defillama.com/chains] [Electric Capital Developer Report 2024, https://www.electriccapital.com/developer-report]
+
+## Narrative Position
+
+Narrative: Chain Abstraction
+Status: Main Narrative (HIGH) [NEAR Blog NEARCon 2023, https://near.org/blog/nearcon-2023] [NEAR Blog, https://near.org/blog] [NEARCore GitHub, https://github.com/near/nearcore]
+Evidence: NEARCon 2023/2024 keynote fokus "Chain Abstraction"; NEAR Intents v1 (2024-06) dan v2 (2025-06) launched; integrasi wallet besar (Sender, Meteor, Here, MyNearWallet, OKX Wallet, Binance Web3 Wallet); solver marketplace development; ERC-7683 alignment
+Sources: [NEAR Blog NEARCon 2023, https://near.org/blog/nearcon-2023] [NEAR Blog, https://near.org/blog] [NEARCore GitHub, https://github.com/near/nearcore] [EV-057] [EV-070]
+
+Narrative: AI x Crypto (User-Owned AI)
+Status: Main Narrative (HIGH) [NEAR Blog NEARCon 2023, https://near.org/blog/nearcon-2023] [NEAR Horizon Accelerator, https://near.org/horizon/accelerator]
+Evidence: Illia Polosukhin background Google AI; NEARCon 2023 theme "User-Owned AI"; NEAR Horizon AI track; grants untuk AI x Crypto projects; NEAR AI infrastructure initiative announced
+Sources: [NEAR Blog NEARCon 2023, https://near.org/blog/nearcon-2023] [NEAR Horizon Accelerator, https://near.org/horizon/accelerator] [EV-054]
+
+Narrative: Modular Blockchain (DA Layer)
+Status: Secondary Narrative (HIGH) [NEAR Blog, https://near.org/blog/near-data-availability-layer] [Octopus Network, https://octopus.network] [Calimero Network, https://calimero.network]
+Evidence: NEAR Data Availability Layer launched April 2025; blobspace untuk rollups/appchains; adoption oleh Octopus Network dan Calimero Network; kompetitor Celestia/EigenDA/Avail
+Sources: [NEAR Blog, https://near.org/blog/near-data-availability-layer] [Octopus Network, https://octopus.network] [Calimero Network, https://calimero.network] [EV-068]
+
+Narrative: Interoperability / Cross-Chain Hub
+Status: Secondary Narrative (HIGH) [Rainbow Bridge Docs, https://docs.rainbowbridge.app] [Wormhole Docs, https://docs.wormhole.com/wormhole/near] [LayerZero Docs, https://docs.layerzero.network/near] [Axelar Docs, https://docs.axelar.dev/near] [Hyperlane Docs, https://docs.hyperlane.xyz/near] [Celer cBridge NEAR, https://cbridge.celer.network/near] [Synapse Docs, https://docs.synapseprotocol.com/near] [Allbridge Docs, https://docs.allbridge.io/near]
+Evidence: 8+ cross-chain bridges live (Rainbow Bridge trust-minimized, Wormhole, LayerZero, Axelar, Hyperlane, Celer, Synapse, Allbridge); Aurora EVM L2; Octopus/Calimero appchain settlement
+Sources: [Rainbow Bridge Docs, https://docs.rainbowbridge.app] [Wormhole Docs, https://docs.wormhole.com/wormhole/near] [LayerZero Docs, https://docs.layerzero.network/near] [Axelar Docs, https://docs.axelar.dev/near] [Hyperlane Docs, https://docs.hyperlane.xyz/near] [Celer cBridge NEAR, https://cbridge.celer.network/near] [Synapse Docs, https://docs.synapseprotocol.com/near] [Allbridge Docs, https://docs.allbridge.io/near] [Aurora Documentation, https://docs.aurora.dev] [Octopus Network Website, https://octopus.network] [Calimero Network, https://calimero.network]
+
+Narrative: Sharded Layer-1 (Nightshade)
+Status: Foundational Narrative (HIGH) [NEAR Whitepaper, https://near.org/papers/nightshade/] [NEAR Documentation, https://docs.near.org/concepts/protocol/nightshade] [NEARCore Releases, https://github.com/near/nearcore/releases]
+Evidence: Nightshade sharding live since mainnet 2020; Nightshade v1.5 (2024-02) chunk-only producers, stateless validation; v2.0 (2024-10) full stateless validation, fast finality ~400ms; dynamic sharding roadmap
+Sources: [NEAR Whitepaper, https://near.org/papers/nightshade/] [NEAR Documentation, https://docs.near.org/concepts/protocol/nightshade] [NEARCore Releases, https://github.com/near/nearcore/releases] [EV-053] [EV-061]
+
+Narrative: EVM Compatibility via Aurora
+Status: Secondary Narrative (HIGH) [Aurora Documentation, https://docs.aurora.dev] [Aurora Website, https://aurora.dev]
+Evidence: Aurora mainnet live since Nov 2021; full EVM compatibility; gas ~$0.01, finality ~2 detik; major Ethereum protocols deployed (Curve, SushiSwap, etc.); separate DAO governance (AURORA token)
+Sources: [Aurora Documentation, https://docs.aurora.dev] [Aurora Website, https://aurora.dev] [EV-025]
+
+Narrative: Consumer Crypto / Mass Adoption
+Status: Secondary Narrative (MEDIUM) [NEAR Blog, https://near.org/blog/sweat-economy-near] [NEAR Blog, https://near.org/blog/kai-ching] [Sweat Economy Website, https://sweateconomy.com] [Kai-Ching Website, https://kaiching.io]
+Evidence: Sweat Economy migration (jutaan users); Kai-Ching enterprise loyalty; NEAR Social protocol; low fees (<$0.01), fast finality (~1s) enabling consumer UX
+Sources: [NEAR Blog, https://near.org/blog/sweat-economy-near] [NEAR Blog, https://near.org/blog/kai-ching] [Sweat Economy Website, https://sweateconomy.com] [Kai-Ching Website, https://kaiching.io] [EV-030] [NEAR Social Docs, https://docs.near.org/social]
+
+Narrative: DeFi Hub (Native + EVM)
+Status: Secondary Narrative (MEDIUM) [DefiLlama NEAR, https://defillama.com/chain/NEAR] [Ref Finance Website, https://ref.finance] [Burrow Website, https://burrow.cash] [MetaPool Website, https://metapool.app] [Orderly Network Website, https://orderly.network] [Spin Website, https://spin.fi] [Trisolaris Website, https://trisolaris.app]
+Evidence: Native DeFi (Ref Finance AMM, Burrow lending, MetaPool/Stader liquid staking, Trisolaris stablecoin DEX); EVM DeFi via Aurora; Order-book DEX (Spin native, Orderly via Aurora); perpetual trading
+Sources: [DefiLlama NEAR, https://defillama.com/chain/NEAR] [Ref Finance Website, https://ref.finance] [Burrow Website, https://burrow.cash] [MetaPool Website, https://metapool.app] [Orderly Network Website, https://orderly.network] [Spin Website, https://spin.fi] [Trisolaris Website, https://trisolaris.app]
+
+Sources: [NEAR Blog NEARCon 2023, https://near.org/blog/nearcon-2023] [NEAR Blog, https://near.org/blog] [NEARCore GitHub, https://github.com/near/nearcore] [NEAR Horizon Accelerator, https://near.org/horizon/accelerator] [NEAR Blog, https://near.org/blog/near-data-availability-layer] [Octopus Network, https://octopus.network] [Calimero Network, https://calimero.network] [Rainbow Bridge Docs, https://docs.rainbowbridge.app] [Wormhole Docs, https://docs.wormhole.com/wormhole/near] [LayerZero Docs, https://docs.layerzero.network/near] [Axelar Docs, https://docs.axelar.dev/near] [Hyperlane Docs, https://docs.hyperlane.xyz/near] [Celer cBridge NEAR, https://cbridge.celer.network/near] [Synapse Docs, https://docs.synapseprotocol.com/near] [Allbridge Docs, https://docs.allbridge.io/near] [Aurora Documentation, https://docs.aurora.dev] [NEAR Whitepaper, https://near.org/papers/nightshade/] [NEAR Documentation, https://docs.near.org/concepts/protocol/nightshade] [NEARCore Releases, https://github.com/near/nearcore/releases] [Aurora Website, https://aurora.dev] [NEAR Blog, https://near.org/blog/sweat-economy-near] [NEAR Blog, https://near.org/blog/kai-ching] [Sweat Economy Website, https://sweateconomy.com] [Kai-Ching Website, https://kaiching.io] [DefiLlama NEAR, https://defillama.com/chain/NEAR] [NEAR Social Docs, https://docs.near.org/social] [EV-057] [EV-070] [EV-054] [EV-068] [EV-025] [EV-030] [EV-053] [EV-061]
+
+## Market Timeline
+
+Date: 2020-10-14
+Milestone: Mainnet Launch (Phase 1 Genesis) & TGE
+Description: NEAR Protocol mainnet live dengan 1 miliar NEAR genesis; shard 0 only; token transfers disabled initially
+Related Historical Event ID: EV-009, EV-010
+Sources: [NEAR Blog Mainnet Launch, https://near.org/blog/mainnet-launch] [NEAR Token Supply Medium, https://medium.com/nearprotocol/near-token-supply]
+
+Date: 2020-10-20
+Milestone: Token Transfers Enabled (Mainnet Phase 2)
+Description: Governance proposal passed; NEAR token transfers activated
+Related Historical Event ID: EV-011
+Sources: [NEAR Blog Mainnet Launch, https://near.org/blog/mainnet-launch] [NEAR Governance Forum, https://gov.near.org]
+
+Date: 2020-10-22
+Milestone: Major Exchange Listings (Binance, Huobi, OKX, KuCoin, Gate.io)
+Description: NEAR listed di 5 exchange terpusat utama; likuiditas pasar terbentuk
+Related Historical Event ID: EV-012
+Sources: [Binance NEAR Listing, https://www.binance.com/en/blog/421499824684900352/NEAR-Protocol-NEAR-Listing] [OKX NEAR Listing, https://www.okx.com/announcement/near-listing] [KuCoin NEAR Listing, https://www.kucoin.com/news/en-near-protocol-near-listing-on-kucoin]
+
+Date: 2020-11-18
+Milestone: Coinbase Pro Listing
+Description: NEAR listed di Coinbase Pro (US regulated exchange); akses pasar AS regulasi
+Related Historical Event ID: EV-014
+Sources: [Coinbase NEAR Listing, https://blog.coinbase.com/near-protocol-near-is-launching-on-coinbase-pro-8f5a5c5f5d5a]
+
+Date: 2020-11
+Milestone: Full Decentralization (Mainnet Phase 3)
+Description: Validator set opened to community; Foundation relinquishes block production control
+Related Historical Event ID: EV-013
+Sources: [NEAR Blog Mainnet Launch, https://near.org/blog/mainnet-launch] [NEAR Staking Docs, https://docs.near.org/staking/validator]
+
+Date: 2021-05
+Milestone: Rainbow Bridge Launch
+Description: Trust-minimized bridge NEAR���Ethereum live; cross-chain liquidity enabled
+Related Historical Event ID: EV-019
+Sources: [Rainbow Bridge Docs, https://docs.rainbowbridge.app] [Rainbow Bridge Website, https://rainbowbridge.app]
+
+Date: 2021-07
+Milestone: MetaPool Launch (Liquid Staking)
+Description: First liquid staking protocol NEAR; stNEAR token for DeFi composability
+Related Historical Event ID: EV-021
+Sources: [MetaPool Website, https://metapool.app] [MetaPool Docs, https://docs.metapool.app]
+
+Date: 2021-11
+Milestone: Aurora Mainnet Launch
+Description: EVM-compatible Layer-2 live on NEAR; Ethereum developer onboarding accelerated
+Related Historical Event ID: EV-025
+Sources: [Aurora Website, https://aurora.dev] [Aurora Docs, https://docs.aurora.dev]
+
+Date: 2022-06-15
+Milestone: Three Arrows Capital (3AC) Liquidation Impact
+Description: 3AC liquidated; NEAR token positions sold; significant sell pressure on market
+Related Historical Event ID: EV-032
+Sources: [CoinDesk 3AC NEAR Exposure, https://www.coindesk.com/business/2022/06/22/three-arrows-capital-near-exposure/] [Bloomberg 3AC Liquidation, https://www.bloomberg.com/news/articles/2022-06-22/three-arrows-capital-liquidation-near]
+
+Date: 2022-11
+Milestone: Alameda Research / FTX Bankruptcy Impact
+Description: Alameda NEAR positions (~$40M+) part of bankruptcy estate; tokens sold by trustee 2023-2024
+Related Historical Event ID: EV-037
+Sources: [CoinDesk Alameda NEAR Holdings, https://www.coindesk.com/business/2022/11/10/alameda-research-near-holdings/] [FTX Bankruptcy Docket, https://cases.primeclerk.com/alamedaresearch/Home-DocketInfo]
+
+Date: 2023-01
+Milestone: NEAR Digital Collective (NDC) DAO Launch
+Description: On-chain DAO for community treasury allocation; public goods funding
+Related Historical Event ID: EV-040
+Sources: [NEAR Digital Collective, https://near.digital] [NDC Governance Forum, https://gov.near.digital]
+
+Date: 2023-07
+Milestone: Multichain (Anyswap) Shutdown
+Description: Multichain bridge shutdown; user funds locked; migration to Rainbow Bridge/Wormhole/Axelar recommended
+Related Historical Event ID: EV-046
+Sources: [Multichain Shutdown, https://www.coindesk.com/business/2023/07/14/multichain-shutdown/] [NEAR Blog Multichain, https://blog.multichain.org/near-support]
+
+Date: 2023-08
+Milestone: NEARCon 2023 Lisbon — "User-Owned AI" Narrative Launch
+Description: 1500+ attendees; pivot to AI x Crypto narrative; $500k+ hackathon prize pool
+Related Historical Event ID: EV-047
+Sources: [NEARCon Website, https://nearcon.org] [NEAR Blog NEARCon, https://near.org/blog/nearcon-2023]
+
+Date: 2024-02
+Milestone: Nightshade v1.5 / Protocol v1.5 Upgrade
+Description: Stateless validation introduction; chunk-only producers; gas optimization; ~2x throughput improvement
+Related Historical Event ID: EV-053
+Sources: [NEARCore Releases, https://github.com/near/nearcore/releases] [NEAR Nightshade Docs, https://docs.near.org/concepts/protocol/nightshade]
+
+Date: 2024-06
+Milestone: NEAR Intents / Chain Abstraction Stack v1 Launch
+Description: Cross-chain user operations via intent; MPC multi-chain wallet; solver marketplace; relayer network
+Related Historical Event ID: EV-057
+Sources: [NEAR Blog NEARCon 2023, https://near.org/blog/nearcon-2023] [NEARCore GitHub, https://github.com/near/nearcore]
+
+Date: 2024-10
+Milestone: NEAR Protocol v2.0 Upgrade
+Description: Full stateless validation; congestion control; fast finality ~400ms; storage proof improvements
+Related Historical Event ID: EV-061
+Sources: [NEARCore Releases, https://github.com/near/nearcore/releases] [NEAR Nightshade Docs, https://docs.near.org/concepts/protocol/nightshade]
+
+Date: 2024-11
+Milestone: NDC v2 Governance 2.0 Launch
+Description: Modular governance: sub-DAOs per vertical, delegation voting, quadratic funding, treasury streaming
+Related Historical Event ID: EV-062
+Sources: [NEAR Digital Collective, https://near.digital] [NDC Governance Forum, https://gov.near.digital]
+
+Date: 2025-03
+Milestone: 1 Billion Cumulative Transactions Milestone
+Description: NEAR Protocol reached 1B+ transactions since mainnet 2020
+Related Historical Event ID: EV-067
+Sources: [NEAR Blog, https://near.org/blog] [NEAR Explorer, https://explorer.near.org]
+
+Date: 2025-04
+Milestone: NEAR Data Availability Layer Launch
+Description: Blobspace for rollups/appchains; NEAR as settlement + DA layer; Octopus/Calimero early adopters
+Related Historical Event ID: EV-068
+Sources: [NEAR Blog, https://near.org/blog/near-data-availability-layer] [Octopus Network, https://octopus.network] [Calimero Network, https://calimero.network]
+
+Date: 2025-06
+Milestone: NEAR Intents v2 + Major Wallet Integrations
+Description: Wallet integrations (Sender, Meteor, Here, MyNearWallet, OKX Wallet, Binance Web3 Wallet); single-click cross-chain UX
+Related Historical Event ID: EV-070
+Sources: [NEAR Blog, https://near.org/blog] [NEARCore GitHub, https://github.com/near/nearcore]
+
+Sources: [NEAR Blog Mainnet Launch, https://near.org/blog/mainnet-launch] [NEAR Token Supply Medium, https://medium.com/nearprotocol/near-token-supply] [NEAR Governance Forum, https://gov.near.org] [Binance NEAR Listing, https://www.binance.com/en/blog/421499824684900352/NEAR-Protocol-NEAR-Listing] [OKX NEAR Listing, https://www.okx.com/announcement/near-listing] [KuCoin NEAR Listing, https://www.kucoin.com/news/en-near-protocol-near-listing-on-kucoin] [Coinbase NEAR Listing, https://blog.coinbase.com/near-protocol-near-is-launching-on-coinbase-pro-8f5a5c5f5d5a] [NEAR Staking Docs, https://docs.near.org/staking/validator] [Rainbow Bridge Docs, https://docs.rainbowbridge.app] [MetaPool Website, https://metapool.app] [Aurora Website, https://aurora.dev] [CoinDesk 3AC NEAR Exposure, https://www.coindesk.com/business/2022/06/22/three-arrows-capital-near-exposure/] [Bloomberg 3AC Liquidation, https://www.bloomberg.com/news/articles/2022-06-22/three-arrows-capital-liquidation-near] [CoinDesk Alameda NEAR Holdings, https://www.coindesk.com/business/2022/11/10/alameda-research-near-holdings/] [FTX Bankruptcy Docket, https://cases.primeclerk.com/alamedaresearch/Home-DocketInfo] [NEAR Digital Collective, https://near.digital] [NDC Governance Forum, https://gov.near.digital] [Multichain Shutdown, https://www.coindesk.com/business/2023/07/14/multichain-shutdown/] [NEARCon Website, https://nearcon.org] [NEAR Blog NEARCon, https://near.org/blog/nearcon-2023] [NEARCore Releases, https://github.com/near/nearcore/releases] [NEAR Nightshade Docs, https://docs.near.org/concepts/protocol/nightshade] [NEAR Blog NEARCon 2023, https://near.org/blog/nearcon-2023] [NEARCore GitHub, https://github.com/near/nearcore] [NEAR Digital Collective, https://near.digital] [NDC Governance Forum, https://gov.near.digital] [NEAR Blog, https://near.org/blog] [NEAR Explorer, https://explorer.near.org] [NEAR Blog, https://near.org/blog/near-data-availability-layer] [Octopus Network, https://octopus.network] [Calimero Network, https://calimero.network]
+
+## Official Market Resources
+
+Official Dashboard: https://explorer.near.org
+DefiLlama: https://defillama.com/chain/NEAR
+CoinGecko: https://www.coingecko.com/en/coins/near
+CoinMarketCap: https://coinmarketcap.com/currencies/near-protocol/
+Token Terminal: https://tokenterminal.com/terminal/projects/near
+Messari: https://messari.io/project/near-protocol/profile
+Explorer: https://explorer.near.org
+
+## Summary
+
+Market Stage: Growth
+Primary Category: Layer-1 blockchain (sharded PoS) dengan EVM Layer-2 (Aurora) dan Chain Abstraction stack
+Competitor Count: 8 primary competitors identified (Ethereum, Solana, Polygon, Avalanche, Aptos, Sui, Celestia, EigenLayer)
+Major Narrative: Chain Abstraction (Main), User-Owned AI (Main), Modular DA Layer (Secondary), Interoperability Hub (Secondary), Sharded Layer-1 (Foundational)
+Trading Availability: Listed on 8 major CEX (Binance, Coinbase, Kraken, OKX, Bybit, KuCoin, Gate.io, HTX) dengan spot + perpetual; 4 native DEX (Ref, Spin, Orderly, Trisolaris); 8+ cross-chain bridges
+Adoption Metrics Available: TVL, DAU, Transactions, Wallets, Developer Count, Validator Count, Bridge Volume (per-bridge), Cross-Chain Messages (per-protocol) — semua via third-party analytics (DefiLlama, Dune, Nansen, Token Terminal, Electric Capital, Explorer)
+
+## Open Threads
+
+- TVL exact current value: DefiLlama menunjukkan fluktuasi harian; tidak ada single authoritative real-time number dari NEAR Foundation
+- Daily Active Users definition inconsistency: Dune, Nansen, Flipside, Token Terminal menggunakan metodologi berbeda (unique signers vs active accounts vs active addresses); tidak ada standardized metric
+- Bridge volume aggregated: Tidak ada unified dashboard yang aggregate volume across all 8+ bridges (Rainbow Bridge, Wormhole, LayerZero, Axelar, Hyperlane, Celer, Synapse, Allbridge); DefiLlama tracks per protocol TVL tapi tidak bridge volume
+- Cross-chain messages aggregated: Tidak ada single metric untuk total cross-chain messages across all messaging protocols
+- Market share percentages: Layer-1 TVL market share ~1-2% adalah estimasi berdasarkan DefiLlama total chains data; tidak ada official market share report
+- Developer count methodology: Electric Capital "full-time developer" definition tidak transparan; cross-chain comparability tidak diverifikasi
+- Staking ratio exact: Token Terminal dan Staking Rewards menunjukkan ~45-55% tapi metodologi perbedaan (circulating vs total supply denominator) tidak diklarifikasi
+- NEAR DA Layer adoption metrics: blobspace utilization, revenue, Octopus/Calimero usage data on-chain belum teraggregate di public dashboard
+- NEAR Intents v2 solver marketplace metrics: active solver count, fee revenue, decentralization metrics tidak dipublikasikan
+- NDC v2 sub-DAO budget allocation, quadratic funding matching pool size, treasury streaming parameters belum dipublikasikan detail
+- Aurora DAO treasury size dan revenue dari Aurora fees tidak terpublikasi terpisah dari NEAR Foundation
+- Pagoda financial relationship dengan NEAR Foundation (equity, revenue share, grant terms) tidak diungkap detailnya
+- Proximity Labs struktur kepemilikan, funding source, hubungan kontraktual dengan NEAR Foundation perlu klarifikasi
+- Bastion (NEAR) liquid staking status: masih aktif atau merged/shutdown? tidak ada event launch tercatat di Phase 3
+- Multichain (NEAR) shutdown: apakah kontrak bridge NEAR masih memiliki aset terkunci? apakah ada recovery plan?
+- 3AC dan Alameda NEAR token exact amount pada genesis, vesting schedule, liquidation timeline on-chain (wallet address, tx hash) perlu cross-check via Arkham/Nansen/Dune
+- NEAR Foundation financial statements (audited/unaudited) tidak dipublikasikan; burn rate, runway, operational cost tidak diketahui
+- Protocol treasury (10% inflasi) on-chain balance dan spending history tidak mudah ter-track tanpa indexer khusus
+- Investor token unlock schedule detail per investor (a16z, Pantera, Electric Capital, Blockchain Capital, Coinbase Ventures, ParaFi, Dragonfly) post-2024 tidak dipublikasikan resmi
+- Liquid staking token (stNEAR MetaPool, stNEAR Stader, bstNEAR Bastion) governance voting rights di NDC dan protocol governance — implementasi bervariasi, tidak distandarisasi
+- AssemblyScript SDK end-of-life timeline resmi dan migration guide completeness — deprecated tapi belum ada hard cutoff
+- Regulatory classification: SEC enforcement actions mentioning NEAR (Binance, Coinbase cases) — outcome belum final
+- Quantum resistance roadmap untuk Ed25519/BLS signatures securing NEAR accounts — tidak terdokumentasi resmi
+- Maximum theoretical throughput dengan 4 shards current vs dynamic sharding target — whitepaper claim vs real-world benchmark gap
+- NEAR AI / User-Owned AI technical spec: compute verification, data availability untuk AI, token utility — konsep level, spec belum lengkap
+- Chain abstraction standardization (ERC-7683 alignment) dan solver competition dynamics — early production
+- Formal verification progress untuk core protocol (K framework) — ongoing, coverage incomplete
+- NEARCon 2025 Singapore detail jadwal, speaker, announcement spesifik belum dipublikasikan sepenuhnya (event belum terjadi)
+- NEAR Week global series: participation metrics, regional adoption impact belum terukur publik
+- Flipside Crypto Velocity NEAR: bounty program payouts, analysis quality metrics tidak dipublikasikan
+- Token Terminal NEAR: P/E ratio methodology untuk Layer-1 dengan inflationary tokenomics — perbandingan cross-chain metodologi perlu klarifikasi
+- DefiLlama NEAR: adapter maintenance status untuk protokol-protokol baru (Spin, Orderly, Trisolaris, dll) — community maintained, tidak official
+- Dune Analytics NEAR: spell coverage untuk NEAR contracts (NEP-141, NEP-171, dll) completeness tidak terdokumentasi
+- Nansen NEAR: address labeling coverage percentage untuk NEAR ecosystem (whale, exchange, smart money, validator, team) tidak dipublikasikan

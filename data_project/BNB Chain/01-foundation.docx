@@ -1,0 +1,30 @@
+PROJECT: BNB Chain
+Official Name: BNB Chain
+Symbol: BNB
+Category: Layer 1 blockchain ecosystem (EVM-compatible smart contract platform + beacon chain)
+Founding Entity: Binance (Cayman Islands entity; operates as community-driven ecosystem post-rebrand)
+Founders: Changpeng Zhao (CZ) — pendiri Binance; He Yi — co-founder Binance
+Core Team: Tidak diungkap secara resmi sebagai "core team" terpisah dari Binance; pengembangan diasosiasikan dengan BNB Chain Core Contributors (komunitas terbuka)
+Country: Cayman Islands (entitas Binance); operasi global, komunitas terdesentralisasi
+Launch Date - Testnet: April 2020 (Binance Smart Chain testnet) [MEDIUM] [BNB Chain docs, https://docs.bnbchain.org]
+Launch Date - Mainnet: 1 September 2020 (Binance Smart Chain mainnet) [HIGH] [Binance blog, https://www.binance.com/en/blog/421499824684900357]
+Launch Date - TGE: Juli 2017 (BNB ICO pada Ethereum mainnet, ERC-20) [HIGH] [Binance whitepaper, https://www.binance.com/resources/ico/BNB_Whitepaper_en.pdf]
+Main Products: BNB Smart Chain (BSC) — EVM-compatible L1; BNB Beacon Chain (sebelumnya Binance Chain) — staking & governance; BNB Greenfield — decentralized storage; opBNB — optimistic rollup L2; zkBNB — ZK rollup (devnet); BNB Bridge — cross-chain bridge
+Official Website: https://www.bnbchain.org
+Repository: https://github.com/bnb-chain (organisasi GitHub resmi)
+Documentation: https://docs.bnbchain.org
+Social - X/Twitter: @BNBChain
+Social - Discord: https://discord.gg/bnbchain
+Social - Telegram: @BNBChainOfficial
+Block Explorer: https://bscscan.com (BSC); https://bnbscan.com (Beacon Chain)
+Token Contract: BNB (BEP-2) — Beacon Chain native; BNB (BEP-20) — 0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c (BSC); BNB (ERC-20) — 0xB8c77482e45F1F44dE1745F52C74426C631bDD52 (Ethereum) [HIGH] [BscScan, https://bscscan.com/token/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c]
+Chain(s): BNB Smart Chain (chain ID 56), BNB Beacon Chain (chain ID 102), opBNB (chain ID 204), BNB Greenfield (chain ID 5600)
+Ecosystem: BNB Chain ecosystem (DeFi, gaming, infrastructure, NFT, AI, RWA, meme coins)
+
+Open Threads
+- Jumlah validator aktif saat ini dan mekanisme rotasi validator PoSA — perlu data on-chain terkini
+- Distribusi token BNB terkini (treasury, team, ecosystem, public) — butuh cross-check ke halaman governance/resmi
+- Status fee switch / burn mechanism (BEP-95, auto-burn) — detail parameter terkini
+- Ukuran tim core contributors resmi vs kontributor komunitas — tidak diungkap transparan
+- Yurisdiksi hukum exact untuk "BNB Chain Foundation" (berbeda dari Binance entity) — perlu verifikasi legal entity
+- Roadmap resmi 2024-2025 (Parallel EVM, PBS, path to full decentralization) — butuh sumber primer terbaru

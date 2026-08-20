@@ -1,0 +1,178 @@
+PROJECT: Polygon
+
+System Architecture
+- Polygon PoS: Sidechain EVM-kompatibel dengan Proof-of-Stake validator set dan checkpoint ke Ethereum mainnet (HIGH) [Polygon 2.0 Architecture, https://blog.polygon.technology/polygon-2-0-architecture/]
+- Polygon zkEVM: ZK rollup Type 2/3 EVM-equivalent, settlement ke Ethereum via validity proofs (HIGH) [Polygon zkEVM Docs, https://dev.polygon.technology/polygon-zkevm/]
+- Polygon CDK: Chain Development Kit untuk membangun app-chains modular (validium, rollup, sovereign) yang terhubung ke AggLayer (HIGH) [Polygon CDK Docs, https://dev.polygon.technology/polygon-cdk/]
+- Polygon Miden: STARK-based rollup dengan Miden VM, client-side proving, fokus privasi (HIGH) [Polygon Miden GitHub, https://github.com/0xPolygonMiden]
+- Polygon Avail: Modular data availability layer (spin-off 2023, kini proyek terpisah) (HIGH) [Avail Project, https://www.availproject.org/]
+- Polygon ID: Identity dan credential infrastructure menggunakan zero-knowledge proofs dan verifiable credentials (HIGH) [Polygon ID Docs, https://dev.polygon.technology/polygon-id/]
+- AggLayer: Unified bridging dan liquidity layer dengan pessimistic proofs untuk interkoneksi chain (HIGH) [Polygon 2.0 Architecture, https://blog.polygon.technology/polygon-2-0-architecture/]
+- Settlement Layer: Ethereum mainnet untuk semua chain Polygon (PoS, zkEVM, CDK chains, Miden) (HIGH) [Polygon 2.0 Architecture, https://blog.polygon.technology/polygon-2-0-architecture/]
+
+Core Components
+- Polygon PoS Validator Set: 100+ validator aktif, Proof-of-Stake dengan staking MATIC/POL di Ethereum, checkpoint ke Ethereum setiap ~34 menit (HIGH) [Polygon Staking, https://staking.polygon.technology/]
+- Polygon PoS Heimdall: Tendermint-based consensus layer untuk validator selection dan checkpoint (HIGH) [GitHub 0xPolygon, https://github.com/0xPolygon/heimdall]
+- Polygon PoS Bor: EVM execution client berbasis Geth, memproduksi block sidechain (HIGH) [GitHub 0xPolygon, https://github.com/0xPolygon/bor]
+- Polygon zkEVM Sequencer: Single sequencer (saat ini) yang mengurutkan transaksi dan mengirim batch ke prover (HIGH) [Polygon zkEVM Docs, https://dev.polygon.technology/polygon-zkevm/architecture/]
+- Polygon zkEVM Prover: Menghasilkan validity proofs (zk-SNARKs) untuk batch transaksi, menggunakan circuit berbasis RISC Zero / Polygon Hermez prover stack (HIGH) [GitHub 0xPolygonHermez, https://github.com/0xPolygonHermez]
+- Polygon zkEVM Bridge: Smart contract di Ethereum dan zkEVM untuk deposit/withdraw dengan exit mechanism berbasis validity proof (HIGH) [Polygon zkEVM Bridge, https://dev.polygon.technology/polygon-zkevm/bridge/]
+- Polygon CDK Node: Modular node software untuk app-chain (sequencer, aggregator, RPC, sync) (HIGH) [Polygon CDK Docs, https://dev.polygon.technology/polygon-cdk/]
+- AggLayer Contract: Unified bridge contract di Ethereum yang menerima pessimistic proofs dari chain terhubung (HIGH) [AggLayer Docs, https://dev.polygon.technology/agglayer/]
+- AggLayer Pessimistic Proof Generator: Komponen off-chain yang membangun pessimistic proofs untuk state transitions lintas chain (HIGH) [AggLayer Docs, https://dev.polygon.technology/agglayer/]
+- Polygon ID Issuer Node: Node untuk mengeluarkan verifiable credentials (W3C VC) dengan ZK proofs (HIGH) [Polygon ID Docs, https://dev.polygon.technology/polygon-id/]
+- Polygon ID Verifier SDK: Library untuk memverifikasi ZK proofs di smart contract dan off-chain (HIGH) [Polygon ID Docs, https://dev.polygon.technology/polygon-id/]
+- Miden VM: STARK-based virtual machine dengan assembly language sendiri, mendukung client-side proving (HIGH) [Miden VM Docs, https://github.com/0xPolygonMiden/miden-vm]
+- Miden Prover: Menghasilkan STARK proofs untuk eksekusi program Miden VM (HIGH) [Miden Prover, https://github.com/0xPolygonMiden/miden-prover]
+- Polygon Bridge (PoS): Plasma-style bridge dengan checkpoint mechanism untuk transfer aset Ethereum ↔ Polygon PoS (HIGH) [Polygon Bridge, https://bridge.polygon.technology/]
+- Polygonscan: Block explorer untuk PoS dan zkEVM (dioperasikan Etherscan team) (HIGH) [Polygonscan, https://polygonscan.com/]
+
+Consensus Mechanism
+- Polygon PoS: Proof-of-Stake dengan validator set dipilih via staking POL di Ethereum, Heimdall (Tendermint) untuk consensus validator dan checkpoint, Bor untuk block production (HIGH) [Polygon Staking, https://staking.polygon.technology/]
+- Polygon zkEVM: Centralized sequencer (saat ini) + validity proofs (zk-SNARKs) diverifikasi di Ethereum; sequencer decentralization direncanakan via Polygon 2.0 (HIGH) [Polygon zkEVM Docs, https://dev.polygon.technology/polygon-zkevm/architecture/]
+- Polygon CDK Chains: Fleksibel — mendukung single sequencer, decentralized sequencer set, atau validium mode dengan data availability committee (HIGH) [Polygon CDK Docs, https://dev.polygon.technology/polygon-cdk/]
+- Polygon Miden: Client-side proving dengan STARKs; consensus via validity proofs di L1, tidak ada validator set tradisional (HIGH) [Miden Docs, https://github.com/0xPolygonMiden]
+- AggLayer: Pessimistic proofs — chain mengirim state transition, AggLayer memverifikasi tidak ada double-spend, finality setelah challenge period (HIGH) [AggLayer Docs, https://dev.polygon.technology/agglayer/]
+
+Execution Environment
+- Polygon PoS: EVM (Ethereum Virtual Machine) kompatibel penuh, berbasis Geth (Bor client) (HIGH) [Polygon PoS Docs, https://dev.polygon.technology/polygon-pos/]
+- Polygon zkEVM: EVM-equivalent (Type 2/3), mendukung sebagian besar opcode Ethereum dengan precompiles untuk ZK operations (HIGH) [Polygon zkEVM Docs, https://dev.polygon.technology/polygon-zkevm/]
+- Polygon CDK: EVM execution environment (bisa custom VM via modular design) (HIGH) [Polygon CDK Docs, https://dev.polygon.technology/polygon-cdk/]
+- Polygon Miden: Miden VM (custom STARK-based VM, bukan EVM), assembly language Miden Assembly (MASM) (HIGH) [Miden VM, https://github.com/0xPolygonMiden/miden-vm]
+- Polygon ID: Off-chain credential execution dengan on-chain ZK verification (HIGH) [Polygon ID Docs, https://dev.polygon.technology/polygon-id/]
+
+Programming Languages
+- Rust: Core components (zkEVM prover, Miden VM, CDK node, AggLayer components) (HIGH) [GitHub 0xPolygonHermez, https://github.com/0xPolygonHermez; GitHub 0xPolygonMiden, https://github.com/0xPolygonMiden]
+- Go: Polygon PoS clients (Heimdall, Bor), Polygon Edge/CDK node, Polygon ID issuer node (HIGH) [GitHub 0xPolygon, https://github.com/0xPolygon/heimdall; GitHub 0xPolygon, https://github.com/0xPolygon/polygon-edge]
+- Solidity: Smart contracts (staking, bridge, governance, zkEVM contracts, AggLayer contracts, Polygon ID contracts) (HIGH) [GitHub 0xPolygon, https://github.com/0xPolygon/contracts]
+- TypeScript/JavaScript: SDKs (Polygon SDK, Polygon ID SDK, CDK SDK), tooling, frontend libraries (HIGH) [GitHub 0xPolygon, https://github.com/0xPolygon/polygon-sdk-js]
+- C++: Komponen prover tertentu (RISC Zero integration, cryptographic primitives) (MEDIUM) [GitHub 0xPolygonHermez, https://github.com/0xPolygonHermez]
+- Python: Scripting, testing, research tooling (MEDIUM) [GitHub 0xPolygon, https://github.com/0xPolygon]
+
+Development Framework
+- Polygon SDK (legacy): Framework awal untuk app-chain, digantikan oleh CDK (HIGH) [GitHub 0xPolygon, https://github.com/0xPolygon/polygon-sdk]
+- Polygon Edge: Framework modular untuk EVM-compatible chains (sekarang Teil von CDK) (HIGH) [GitHub 0xPolygon, https://github.com/0xPolygon/polygon-edge]
+- Polygon CDK: Chain Development Kit utama — CLI, node binary, smart contract templates, deployment scripts (HIGH) [Polygon CDK Docs, https://dev.polygon.technology/polygon-cdk/]
+- Polygon zkEVM Node: Docker images, Kubernetes Helm charts untuk sequencer, aggregator, RPC, prover (HIGH) [GitHub 0xPolygonHermez, https://github.com/0xPolygonHermez/zkevm-node]
+- Polygon Miden Toolchain: Miden compiler (masm), Miden VM, prover, client SDK (Rust, JS) (HIGH) [Miden Docs, https://github.com/0xPolygonMiden]
+- Polygon ID SDK: TypeScript/Rust library untuk issuer, holder, verifier flows (HIGH) [Polygon ID Docs, https://dev.polygon.technology/polygon-id/]
+- Hardhat / Foundry: Supported untuk smart contract development di semua Polygon chains (HIGH) [Polygon Dev Docs, https://dev.polygon.technology/]
+- Wagmi / Viem / Ethers.js: Library standar untuk frontend integration (HIGH) [Polygon Dev Docs, https://dev.polygon.technology/]
+
+Security Model
+- Polygon PoS: Validator set (100+) dengan staking POL di Ethereum; checkpoint ke Ethereum memberikan finality; slashing untuk misbehavior (belum fully implemented on-chain, social slashing via governance) (HIGH) [Polygon Staking, https://staking.polygon.technology/]
+- Polygon zkEVM: Validity proofs (zk-SNARKs) diverifikasi di Ethereum L1 contract; trust-minimized bridge; sequencer trust assumption (single sequencer saat ini) (HIGH) [Polygon zkEVM Security, https://dev.polygon.technology/polygon-zkevm/security/]
+- Polygon CDK: Security model bergantung mode — rollup: validity proofs ke Ethereum; validium: data availability committee + validity proofs; sovereign: own validator set (HIGH) [Polygon CDK Docs, https://dev.polygon.technology/polygon-cdk/]
+- AggLayer: Pessimistic proofs — unified bridge contract di Ethereum memverifikasi tidak ada double-spend; challenge period untuk fraud detection; unified liquidity dengan shared state (HIGH) [AggLayer Docs, https://dev.polygon.technology/agglayer/]
+- Polygon Miden: STARK proofs diverifikasi on-chain; client-side proving — user generate proof sendiri, no trusted setup (HIGH) [Miden Security, https://github.com/0xPolygonMiden]
+- Polygon ID: Zero-knowledge proofs untuk credential verification; no personal data on-chain; W3C VC standard; revocation via Merkle tree accumulator (HIGH) [Polygon ID Security, https://dev.polygon.technology/polygon-id/]
+- Bridge Security: Canonical bridges (PoS Bridge, zkEVM Bridge) menggunakan smart contract di Ethereum dengan exit mechanisms; emergency pause via governance multisig (HIGH) [Polygon Bridge, https://bridge.polygon.technology/]
+
+Audit History
+- Trail of Bits: Audit smart contract Matic Network (staking, validator, bridge) — Februari 2020 — Scope: PoS contracts — Status: Completed (HIGH) [Trail of Bits Publications, https://github.com/trailofbits/publications]
+- PeckShield: Audit Polygon PoS contracts — 2021 — Scope: Staking, checkpoint, bridge — Status: Completed (HIGH) [PeckShield Audit, https://github.com/peckshield/publications]
+- CertiK: Audit Polygon Bridge V2 — 2021 — Scope: Bridge contracts — Status: Completed (HIGH) [CertiK Audit, https://www.certik.com/projects/polygon]
+- Trail of Bits: Audit Polygon zkEVM circuits dan contracts — 2022-2023 (multiple) — Scope: zkEVM prover, bridge, rollup contracts — Status: Completed (HIGH) [Trail of Bits, https://github.com/trailofbits/publications]
+- Sigma Prime: Audit Polygon zkEVM — 2023 — Scope: Consensus, execution, bridge — Status: Completed (HIGH) [Sigma Prime, https://sigmaprime.io/]
+- OpenZeppelin: Audit Polygon CDK contracts — 2023 — Scope: CDK core contracts, bridge — Status: Completed (HIGH) [OpenZeppelin Audits, https://blog.openzeppelin.com/]
+- Spearbit: Audit Polygon AggLayer — 2024 — Scope: Pessimistic proofs, bridge contracts — Status: Completed (HIGH) [Spearbit, https://spearbit.io/]
+- Veridise: Audit Polygon Miden VM dan prover — 2024 — Scope: Miden VM, STARK prover — Status: Completed (HIGH) [Veridise, https://veridise.com/]
+- AuditOne: Audit Polygon ID contracts — 2023 — Scope: Credential issuer, verifier, revocation — Status: Completed (MEDIUM) [AuditOne, https://auditone.io/]
+- Halborn: Audit Polygon PoS network upgrade (EIP-1559, hard fork) — 2024 — Scope: Bor/Heimdall consensus changes — Status: Completed (MEDIUM) [Halborn, https://halborn.com/]
+
+Technical Upgrade History
+- 2020-05-29: Matic Network Mainnet Launch — PoS sidechain dengan Heimdall/Bor, checkpoint ke Ethereum — Status: Completed (HIGH) [Polygon Blog, https://blog.polygon.technology/matic-mainnet-launch/]
+- 2021-02: Rebrand ke Polygon — Ekspansi visi ke multi-chain scaling — Status: Completed (HIGH) [Polygon Blog, https://blog.polygon.technology/introducing-polygon-2-0/]
+- 2021-07-07: Akuisisi Hermez Network — Tim ZK rollup bergabung untuk zkEVM — Status: Completed (HIGH) [Polygon Blog, https://blog.polygon.technology/polygon-acquires-hermez/]
+- 2022-03: Polygon Edge Release — Framework app-chain modular — Status: Completed (HIGH) [Polygon Edge, https://dev.polygon.technology/polygon-edge/]
+- 2022-08: Polygon Avail Launch — Data availability layer (kemudian spin-off) — Status: Completed (HIGH) [Polygon Avail, https://github.com/0xPolygonAvail]
+- 2022-11: Polygon zkEVM Public Testnet — ZK rollup EVM-equivalent testnet — Status: Completed (HIGH) [Polygon Blog, https://blog.polygon.technology/polygon-zkevm-public-testnet/]
+- 2023-03-27: Polygon zkEVM Mainnet Beta — ZK rollup live di Ethereum mainnet — Status: Completed (HIGH) [Polygon Blog, https://blog.polygon.technology/polygon-zkevm-mainnet-beta/]
+- 2023-03: Polygon CDK Public Release — Chain Development Kit untuk app-chains — Status: Completed (HIGH) [Polygon CDK, https://dev.polygon.technology/polygon-cdk/]
+- 2023-10: AggLayer Testnet Launch — Unified liquidity layer dengan pessimistic proofs — Status: Ongoing (HIGH) [Polygon Blog, https://blog.polygon.technology/agglayer/]
+- 2024-01: POL Token Migration Start — Transisi MATIC ke POL sebagai gas/staking token — Status: Ongoing (HIGH) [Polygon Blog, https://blog.polygon.technology/polygon-2-0-token-migration/]
+- 2024-02: AggLayer Mainnet Beta — Interop Polygon PoS dan zkEVM — Status: Ongoing (HIGH) [Polygon Blog, https://blog.polygon.technology/agglayer-mainnet-beta/]
+- 2024-07: zkEVM Prover Optimization — Pengurangan proving time signifikan — Status: Completed (HIGH) [GitHub 0xPolygonHermez, https://github.com/0xPolygonHermez]
+- 2025-01: Polygon Miden Mainnet Beta — STARK rollup dengan Miden VM — Status: Ongoing (HIGH) [Miden GitHub, https://github.com/0xPolygonMiden]
+- 2024-2025: Polygon PoS EIP-1559 & Network Upgrades — Fee market, throughput optimizations — Status: Completed (HIGH) [Polygon Blog, https://blog.polygon.technology/polygon-pos-network-upgrade/]
+
+Current Technical Stack
+- Docker: Containerization untuk semua node software (PoS, zkEVM, CDK, Miden, ID) (HIGH) [GitHub 0xPolygon, https://github.com/0xPolygon]
+- Kubernetes: Orchestration untuk production deployments (validator nodes, RPC, prover clusters) (HIGH) [Polygon CDK Docs, https://dev.polygon.technology/polygon-cdk/]
+- Rust: Core cryptographic components, provers, VM implementations (HIGH) [GitHub 0xPolygonHermez, https://github.com/0xPolygonHermez; GitHub 0xPolygonMiden, https://github.com/0xPolygonMiden]
+- Go: Consensus clients (Heimdall), execution clients (Bor), Edge/CDK node, ID issuer (HIGH) [GitHub 0xPolygon, https://github.com/0xPolygon/heimdall]
+- Solidity: Semua smart contracts (staking, bridge, governance, zkEVM, AggLayer, CDK, ID) (HIGH) [GitHub 0xPolygon, https://github.com/0xPolygon/contracts]
+- TypeScript/JavaScript: SDKs, CLI tools, frontend libraries, testing frameworks (HIGH) [GitHub 0xPolygon, https://github.com/0xPolygon/polygon-sdk-js]
+- Prometheus/Grafana: Monitoring dan observability untuk validator dan RPC nodes (MEDIUM) [Polygon Staking Docs, https://staking.polygon.technology/]
+- Tendermint: Consensus engine untuk Heimdall (PoS validator layer) (HIGH) [GitHub 0xPolygon, https://github.com/0xPolygon/heimdall]
+- Geth (fork): Bor execution client berbasis Go-Ethereum (HIGH) [GitHub 0xPolygon, https://github.com/0xPolygon/bor]
+- RISC Zero: ZK VM untuk komponen prover tertentu (zkEVM, Miden) (MEDIUM) [RISC Zero, https://www.risczero.com/]
+- PLONK / Halo2: Proving systems untuk zkEVM circuits (HIGH) [GitHub 0xPolygonHermez, https://github.com/0xPolygonHermez]
+- STARK (Winterfell/Stone): Proving system untuk Miden VM (HIGH) [Miden VM, https://github.com/0xPolygonMiden/miden-vm]
+- Chainlink: Oracle (Price Feeds, VRF, CCIP, Functions) terintegrasi di PoS dan zkEVM (HIGH) [Chainlink Polygon, https://chain.link/ecosystem/polygon]
+- The Graph: Indexing protocol untuk query data on-chain (HIGH) [The Graph Polygon, https://thegraph.com/explorer/subgraphs?chain=polygon]
+- Gelato: Automation dan RaaS untuk CDK chains (HIGH) [Gelato Polygon, https://gelato.network/polygon]
+- EigenDA / Celestia: Data availability options untuk CDK validium chains (MEDIUM) [Polygon CDK Docs, https://dev.polygon.technology/polygon-cdk/]
+
+Known Technical Limitations
+- Polygon PoS: Checkpoint finality ~34 menit (bukan instant); single checkpoint signer set (committee) trusted untuk finality; no on-chain slashing implemented yet (social slashing only) (HIGH) [Polygon PoS Docs, https://dev.polygon.technology/polygon-pos/]
+- Polygon zkEVM: Single centralized sequencer saat ini (censorship risk, single point of failure); prover computation time masih relatif lama (~10-30 menit per batch); withdrawal ke Ethereum memerlukan challenge period ~7 hari untuk security (HIGH) [Polygon zkEVM Docs, https://dev.polygon.technology/polygon-zkevm/]
+- Polygon CDK: Validium mode memerlukan trusted Data Availability Committee; sovereign chain memerlukan own validator set (bootstrapping difficulty); shared sequencer decentralization masih roadmap (HIGH) [Polygon CDK Docs, https://dev.polygon.technology/polygon-cdk/]
+- AggLayer: Pessimistic proofs memerlukan challenge period (finality delayed); unified liquidity mengasumsikan honest majority di chain terhubung; cross-chain MEV protection belum sepenuhnya solved (HIGH) [AggLayer Docs, https://dev.polygon.technology/agglayer/]
+- Polygon Miden: Tidak EVM-compatible (butuh rewrite smart contract ke Miden Assembly); tooling masih minimal; client-side proving membutuhkan client compute resources (HIGH) [Miden Docs, https://github.com/0xPolygonMiden]
+- Polygon ID: Revocation mekanisme via accumulator membutuhkan on-chain update; ZK circuit complexity limit credential schema expressiveness; issuer trust assumption untuk credential authenticity (HIGH) [Polygon ID Docs, https://dev.polygon.technology/polygon-id/]
+- Bridge Security: Semua canonical bridges memiliki upgradeability via governance multisig (centralization risk); emergency pause mechanisms tersentralisasi; exit delays untuk security (HIGH) [Polygon Bridge, https://bridge.polygon.technology/]
+- Token Migration: MATIC ke POL migration memerlukan user action (claim); legacy MATIC contracts tetap ada di Ethereum; dual token period menciptakan UX fragmentation (HIGH) [Polygon Blog, https://blog.polygon.technology/polygon-2-0-token-migration/]
+
+Official Technical Resources
+- Documentation: https://dev.polygon.technology/
+- GitHub Main (0xPolygon): https://github.com/0xPolygon
+- GitHub zkEVM (0xPolygonHermez): https://github.com/0xPolygonHermez
+- GitHub Miden (0xPolygonMiden): https://github.com/0xPolygonMiden
+- Developer Docs: https://dev.polygon.technology/
+- SDK: https://github.com/0xPolygon/polygon-sdk-js
+- API: https://polygon-rpc.com/ (public RPC), https://docs.alchemy.com/docs/polygon-api (Alchemy), https://www.quicknode.com/chains/polygon (QuickNode)
+- Whitepaper (Matic Network): https://github.com/maticnetwork/whitepaper
+- Polygon 2.0 Architecture: https://blog.polygon.technology/polygon-2-0-architecture/
+- Polygon 2.0 Tokenomics: https://blog.polygon.technology/polygon-2-0-tokenomics/
+- Polygon zkEVM Docs: https://dev.polygon.technology/polygon-zkevm/
+- Polygon CDK Docs: https://dev.polygon.technology/polygon-cdk/
+- Polygon Miden Docs: https://github.com/0xPolygonMiden
+- Polygon ID Docs: https://dev.polygon.technology/polygon-id/
+- AggLayer Docs: https://dev.polygon.technology/agglayer/
+- Polygon PoS Docs: https://dev.polygon.technology/polygon-pos/
+- Polygon Staking: https://staking.polygon.technology/
+- Polygon Bridge: https://bridge.polygon.technology/
+- Polygonscan: https://polygonscan.com/
+- zkEVM Explorer: https://zkevm.polygonscan.com/
+- Forum Governance: https://forum.polygon.technology/
+
+RINGKASAN
+Architecture
+Multi-chain ecosystem: PoS sidechain, zkEVM rollup, CDK app-chains, Miden STARK rollup, AggLayer interop layer, all settling to Ethereum. Modular design with shared bridging (AggLayer) and unified token (POL).
+
+Core Components
+PoS: Heimdall (consensus), Bor (execution), Validator Set, Bridge. zkEVM: Sequencer, Prover (zk-SNARK), Bridge, Contracts. CDK: Modular node, sequencer options, DA modes. AggLayer: Pessimistic proof generator, unified bridge contract. Miden: Miden VM, STARK prover, client-side proving. ID: Issuer node, verifier SDK, ZK circuits.
+
+Audit Count
+10+ major audits from Trail of Bits, PeckShield, CertiK, Sigma Prime, OpenZeppelin, Spearbit, Veridise, Halborn, AuditOne covering PoS, zkEVM, CDK, AggLayer, Miden, ID, Bridge.
+
+Major Upgrade Count
+12+ major upgrades: Mainnet launch (2020), Rebrand (2021), Hermez acquisition (2021), Edge release (2022), zkEVM testnet (2022), zkEVM mainnet beta (2023), CDK release (2023), AggLayer testnet (2023), POL migration (2024), AggLayer mainnet beta (2024), Miden mainnet beta (2025), PoS EIP-1559 (2024).
+
+Open Threads
+- zkEVM decentralized sequencer design belum final — roadmap Polygon 2.0 menyebut shared sequencer tapi spesifikasi teknis detail belum dipublikasikan
+- AggLayer pessimistic proof challenge period duration dan parameter ekonomi (bond, slash) belum terdokumentasi lengkap di docs resmi
+- Polygon Miden EVM compatibility layer (jika ada) — apakah akan ada transpiler Solidity ke MASM atau user harus menulis ulang kontrak
+- CDK shared sequencer decentralization mechanism — apakah akan menggunakan EigenLayer restaking, POL staking, atau mekanisme lain
+- On-chain slashing untuk PoS validator — status implementasi (belum live per 2024), desain ekonomi slash (percentage, conditions)
+- zkEVM prover hardware acceleration (GPU/FPGA/ASIC) — apakah ada partnership atau R&D internal untuk specialized hardware
+- AggLayer integration dengan non-Polygon chains (Arbitrum, Optimism, dll) — technical spec untuk cross-ecosystem pessimistic proofs
+- Polygon ID on-chain revocation gas cost optimization — accumulator update cost di high gas periods
+- State sync dan light client support untuk CDK chains — apakah ada standard light client seperti Ethereum sync committee
+- Formal verification status untuk critical circuits (zkEVM, AggLayer, Miden) — apakah ada Coq/Isabelle proofs selain audit
+- Polygon PoS checkpoint committee rotation mechanism — apakah ada on-chain randomness (VDF/VRF) atau governance-controlled
+- Miden VM formal semantics dan specification document — apakah ada reference spec terpisah dari implementasi
+- Cross-chain atomic transactions via AggLayer — apakah didukung native atau perlu application-level coordination
+- POL token contract upgradeability — proxy pattern digunakan, admin multisig threshold, timelock duration
+- zkEVM Type 1 equivalence target — roadmap untuk mencapai Type 1 (full Ethereum equivalence) vs current Type 2/3

@@ -1,0 +1,696 @@
+PROJECT: Polkadot
+
+## Ecosystem Position
+
+Primary Sector: Blockchain Interoperability Protocol / Layer-0 Infrastructure
+Secondary Sector: Multi-Chain Network / Shared Security Platform
+Primary Chain: Polkadot Relay Chain
+Supported Chains: Polkadot Relay Chain (HIGH) [Polkadot Official Website, https://polkadot.network/]; Kusama (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-kusama]; 50+ Parachains including Acala (MEDIUM) [Polkadot Official Website, https://polkadot.network/ecosystem/], Moonbeam (MEDIUM) [Polkadot Official Website, https://polkadot.network/ecosystem/], Astar (MEDIUM) [Polkadot Official Website, https://polkadot.network/ecosystem/], Parallel Finance (MEDIUM) [Polkadot Official Website, https://polkadot.network/ecosystem/], Centrifuge (MEDIUM) [Polkadot Official Website, https://polkadot.network/ecosystem/]; Ethereum via bridges (Snowbridge, Interlay) (MEDIUM) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-bridges]; Bitcoin via bridges (Interlay) (MEDIUM) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-bridges]
+Sources: https://polkadot.network/technology/ (HIGH) [Polkadot Official Website, https://polkadot.network/technology/]; https://wiki.polkadot.network/docs/learn-polkadot (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-polkadot]; https://polkadot.network/ecosystem/ (MEDIUM) [Polkadot Official Website, https://polkadot.network/ecosystem/]
+
+## External Dependencies
+
+Dependency Name: Libp2p
+Dependency Type: Protocol / Networking
+Purpose: Peer-to-peer networking layer for node discovery, transport, and communication in Polkadot SDK
+Criticality: Critical
+Status: Live
+Related Entity: Libp2p (not listed as separate entity in Phase 2 — infrastructure protocol)
+Related Technology Component: Networking Protocol (Libp2p) in Current Technical Stack
+Sources: https://wiki.polkadot.network/docs/learn-networking (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-networking]; https://github.com/libp2p/rust-libp2p (HIGH) [GitHub, https://github.com/libp2p/rust-libp2p]
+
+Dependency Name: Wasmer / Wasmtime
+Dependency Type: SDK / Runtime
+Purpose: WebAssembly runtime for executing Substrate runtime (Wasm blobs) on-chain and off-chain
+Criticality: Critical
+Status: Live
+Related Entity: Wasmer / Wasmtime (not listed as separate entity in Phase 2)
+Related Technology Component: Execution Environment (Wasm)
+Sources: https://docs.substrate.io/reference/runtime-apis/ (HIGH) [Substrate Docs, https://docs.substrate.io/reference/runtime-apis/]; https://github.com/paritytech/polkadot-sdk/tree/master/bin/wasmtime (HIGH) [GitHub, https://github.com/paritytech/polkadot-sdk/tree/master/bin/wasmtime]
+
+Dependency Name: RocksDB
+Dependency Type: Infrastructure / Storage
+Purpose: Embedded key-value database for blockchain state storage (state trie, block data)
+Criticality: Critical
+Status: Live
+Related Entity: RocksDB (not listed as separate entity in Phase 2)
+Related Technology Component: Storage (On-chain state trie)
+Sources: https://docs.substrate.io/reference/frame/ (HIGH) [Substrate Docs, https://docs.substrate.io/reference/frame/]; https://github.com/paritytech/polkadot-sdk/blob/master/Cargo.lock (MEDIUM) [GitHub, https://github.com/paritytech/polkadot-sdk/blob/master/Cargo.lock]
+
+Dependency Name: BLAKE2 / Schnorrkel (sr25519)
+Dependency Type: Protocol / Cryptography
+Purpose: Hash function (BLAKE2) and signature scheme (sr25519) for consensus, accounts, and cryptography
+Criticality: Critical
+Status: Live
+Related Entity: Schnorrkel / Ristretto (not listed as separate entity in Phase 2)
+Related Technology Component: Signature Scheme (sr25519), Hash Function (BLAKE2) in Current Technical Stack
+Sources: https://wiki.polkadot.network/docs/learn-cryptography (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-cryptography]; https://github.com/paritytech/schnorrkel (HIGH) [GitHub, https://github.com/paritytech/schnorrkel]
+
+Dependency Name: Snowbridge
+Dependency Type: Bridge
+Purpose: Trust-minimized Ethereum-Polkadot bridge for asset transfer and general messaging
+Criticality: High
+Status: Live (Mainnet launch 2023-2024)
+Related Entity: Snowbridge (not listed as separate entity in Phase 2 — bridge protocol)
+Related Technology Component: XCM / Cross-chain messaging
+Sources: https://snowbridge.com/ (MEDIUM) [Snowbridge Official, https://snowbridge.com/]; https://polkadot.network/blog/snowbridge/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/snowbridge/]
+
+Dependency Name: Interlay / BTC Bridge
+Dependency Type: Bridge
+Purpose: Trust-minimized Bitcoin-Polkadot bridge (Interlay) for BTC as iBTC on Polkadot
+Criticality: High
+Status: Live
+Related Entity: Interlay (not listed as separate entity in Phase 2 — parachain/protocol)
+Related Technology Component: XCM / Cross-chain messaging
+Sources: https://interlay.io/ (MEDIUM) [Interlay Official, https://interlay.io/]; https://wiki.polkadot.network/docs/learn-bridges (MEDIUM) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-bridges]
+
+Dependency Name: Wormhole
+Dependency Type: Bridge
+Purpose: Multi-chain bridge connecting Polkadot to Ethereum, Solana, and other ecosystems (used by some parachains)
+Criticality: Medium
+Status: Live
+Related Entity: Wormhole (mentioned in Phase 3 EV-029)
+Related Technology Component: Cross-chain messaging (external bridge)
+Sources: https://wormhole.com/ (MEDIUM) [Wormhole Official, https://wormhole.com/]; https://blog.wormhole.com/wormhole-incident-report/ (HIGH) [Wormhole Blog, https://blog.wormhole.com/wormhole-incident-report/]
+
+Dependency Name: Subscan
+Dependency Type: Infrastructure Provider / Data Provider
+Purpose: Primary block explorer, analytics, and API provider for Polkadot and Kusama
+Criticality: High
+Status: Live
+Related Entity: Subscan (listed in Phase 2)
+Related Technology Component: Indexer / Block Explorer
+Sources: https://polkadot.subscan.io/ (HIGH) [Subscan, https://polkadot.subscan.io/]; https://polkadot.network/ (HIGH) [Polkadot Official Website, https://polkadot.network/]
+
+Dependency Name: SubQuery
+Dependency Type: Infrastructure Provider / Data Provider
+Purpose: Decentralized indexer framework for querying on-chain data via GraphQL
+Criticality: Medium
+Status: Live
+Related Entity: SubQuery (not listed as separate entity in Phase 2)
+Related Technology Component: Indexer / Data Tooling
+Sources: https://subquery.network/ (MEDIUM) [SubQuery Official, https://subquery.network/]; https://academy.subquery.network/ (MEDIUM) [SubQuery Academy, https://academy.subquery.network/]
+
+Dependency Name: Subsquid (Squid)
+Dependency Type: Infrastructure Provider / Data Provider
+Purpose: High-performance indexer and data transformation framework for Polkadot ecosystem
+Criticality: Medium
+Status: Live
+Related Entity: Subsquid (not listed as separate entity in Phase 2)
+Related Technology Component: Indexer / Data Tooling
+Sources: https://subsquid.io/ (MEDIUM) [Subsquid Official, https://subsquid.io/]; https://docs.subsquid.io/ (MEDIUM) [Subsquid Docs, https://docs.subsquid.io/]
+
+Dependency Name: Trail of Bits
+Dependency Type: Security / Audit
+Purpose: Security auditor for Polkadot SDK v1.0 and core components
+Criticality: High
+Status: Completed (2023-06)
+Related Entity: Trail of Bits (mentioned in Phase 4 Audit History)
+Related Technology Component: Audit History
+Sources: https://github.com/paritytech/polkadot-sdk/security/advisories (MEDIUM) [GitHub, https://github.com/paritytech/polkadot-sdk/security/advisories]; https://www.trailofbits.com/ (MEDIUM) [Trail of Bits, https://www.trailofbits.com/]
+
+Dependency Name: Quarkslab
+Dependency Type: Security / Audit
+Purpose: Security assessment for BABE & GRANDPA consensus implementation
+Criticality: Medium
+Status: Completed (2022)
+Related Entity: Quarkslab (mentioned in Phase 4 Audit History)
+Related Technology Component: Consensus Mechanism
+Sources: https://blog.quarkslab.com/security-assessment-for-parity-technologies.html (MEDIUM) [Quarkslab Blog, https://blog.quarkslab.com/security-assessment-for-parity-technologies.html]
+
+Dependency Name: Immunefi
+Dependency Type: Security / Bug Bounty Platform
+Purpose: Bug bounty platform for Polkadot SDK, Substrate, and parachains (up to $1M rewards)
+Criticality: High
+Status: Live (ongoing)
+Related Entity: Immunefi (mentioned in Phase 4 Audit History)
+Related Technology Component: Security Model
+Sources: https://immunefi.com/bounty/polkadot/ (HIGH) [Immunefi, https://immunefi.com/bounty/polkadot/]
+
+Dependency Name: NCC Group
+Dependency Type: Security / Audit
+Purpose: Security audit for Substrate runtime and FRAME pallets (2019-2020)
+Criticality: Medium
+Status: Completed
+Related Entity: NCC Group (mentioned in Phase 4 Audit History)
+Related Technology Component: Security Model
+Sources: https://research.nccgroup.com/ (MEDIUM) [NCC Group Research, https://research.nccgroup.com/]
+
+Dependency Name: Docker
+Dependency Type: Infrastructure / DevOps
+Purpose: Containerization for development environments and CI/CD in Polkadot SDK
+Criticality: Medium
+Status: Live
+Related Entity: Docker (not listed as separate entity in Phase 2)
+Related Technology Component: DevOps (Docker for development environment)
+Sources: https://github.com/paritytech/polkadot-sdk/blob/master/scripts/ci/dockerfiles/ (MEDIUM) [GitHub, https://github.com/paritytech/polkadot-sdk/blob/master/scripts/ci/dockerfiles/]
+
+Dependency Name: GitHub (GitHub Actions)
+Dependency Type: Infrastructure / CI/CD
+Purpose: Source control, issue tracking, and CI/CD pipelines for Polkadot SDK development
+Criticality: High
+Status: Live
+Related Entity: GitHub (paritytech/polkadot-sdk) (listed in Phase 2)
+Related Technology Component: Development Framework / Open Source Repository
+Sources: https://github.com/paritytech/polkadot-sdk (HIGH) [GitHub, https://github.com/paritytech/polkadot-sdk]
+
+## Major Integrations
+
+Integration Name: Kusama Canary Network Integration
+Integrated With: Kusama
+Purpose: Live canary network for testing features with real economic value before Polkadot deployment; shares codebase and governance model
+Status: Live
+Related Historical Event ID: EV-008 (Kusama Mainnet Launch)
+Sources: https://polkadot.network/blog/kusama-mainnet-launch/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/kusama-mainnet-launch/]; https://wiki.polkadot.network/docs/learn-kusama (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-kusama]
+
+Integration Name: Acala Parachain Integration
+Integrated With: Acala
+Purpose: DeFi hub parachain providing stablecoin (aUSD), AMM DEX, liquid staking (LDOT) — first parachain to win slot auction on both Kusama (Karura) and Polkadot
+Status: Live
+Related Historical Event ID: EV-014 (First Kusama Parachain Auction), EV-016 (First Polkadot Parachain Auction), EV-017 (First Parachains Live)
+Sources: https://polkadot.network/blog/first-parachain-auctions/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/first-parachain-auctions/]; https://polkadot.network/blog/first-parachains-live/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/first-parachains-live/]; https://acala.network/ (MEDIUM) [Acala Official, https://acala.network/]
+
+Integration Name: Moonbeam Parachain Integration
+Integrated With: Moonbeam
+Purpose: EVM-compatible parachain enabling Solidity smart contract deployment with native Substrate integration
+Status: Live
+Related Historical Event ID: EV-017 (First Parachains Live)
+Sources: https://polkadot.network/blog/first-parachains-live/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/first-parachains-live/]; https://moonbeam.network/ (MEDIUM) [Moonbeam Official, https://moonbeam.network/]
+
+Integration Name: Astar Parachain Integration
+Integrated With: Astar
+Purpose: Multi-VM parachain (EVM + WASM) with dApp Staking incentives for developers
+Status: Live
+Related Historical Event ID: EV-017 (First Parachains Live)
+Sources: https://polkadot.network/blog/first-parachains-live/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/first-parachains-live/]; https://astar.network/ (MEDIUM) [Astar Official, https://astar.network/]
+
+Integration Name: Parallel Finance Parachain Integration
+Integrated With: Parallel Finance
+Purpose: DeFi parachain with money market, liquid staking, and AMM DEX
+Status: Live
+Related Historical Event ID: EV-017 (First Parachains Live)
+Sources: https://polkadot.network/blog/first-parachains-live/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/first-parachains-live/]; https://parallel.fi/ (MEDIUM) [Parallel Finance Official, https://parallel.fi/]
+
+Integration Name: Centrifuge Parachain Integration
+Integrated With: Centrifuge
+Purpose: RWA (Real World Asset) parachain for tokenizing off-chain assets (invoices, real estate) for DeFi liquidity
+Status: Live
+Related Historical Event ID: EV-017 (First Parachains Live) — Centrifuge onboarded in subsequent waves
+Sources: https://centrifuge.io/ (MEDIUM) [Centrifuge Official, https://centrifuge.io/]; https://polkadot.network/ecosystem/ (MEDIUM) [Polkadot Official Website, https://polkadot.network/ecosystem/]
+
+Integration Name: XCM v2 Cross-Chain Messaging Integration
+Integrated With: XCM (Cross-Consensus Message Format)
+Purpose: Full cross-consensus messaging enabling asset transfers, remote execution, and programmable cross-chain logic between parachains
+Status: Live
+Related Historical Event ID: EV-018 (XCM v2 Launch)
+Sources: https://polkadot.network/blog/xcm-v2/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/xcm-v2/]; https://wiki.polkadot.network/docs/learn-xcm (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-xcm]
+
+Integration Name: XCM v3 Enhanced Integration
+Integrated With: XCM v3
+Purpose: Programmable asset transfers, remote locking, fee payment abstraction, NFT cross-chain support
+Status: Live
+Related Historical Event ID: EV-025 (XCM v3 Launch)
+Sources: https://polkadot.network/blog/xcm-v3/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/xcm-v3/]
+
+Integration Name: Snowbridge Ethereum Bridge Integration
+Integrated With: Snowbridge
+Purpose: Trust-minimized Ethereum-Polkadot bridge for general messaging and asset transfers
+Status: Live
+Related Historical Event ID: No specific EV — launched 2023-2024
+Sources: https://snowbridge.com/ (MEDIUM) [Snowbridge Official, https://snowbridge.com/]; https://polkadot.network/blog/snowbridge/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/snowbridge/]
+
+Integration Name: Interlay Bitcoin Bridge Integration
+Integrated With: Interlay
+Purpose: Trust-minimized Bitcoin bridge bringing BTC as iBTC to Polkadot ecosystem
+Status: Live
+Related Historical Event ID: No specific EV
+Sources: https://interlay.io/ (MEDIUM) [Interlay Official, https://interlay.io/]; https://wiki.polkadot.network/docs/learn-bridges (MEDIUM) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-bridges]
+
+Integration Name: Agile Coretime Integration
+Integrated With: Coretime Chain / Agile Coretime
+Purpose: On-demand blockspace marketplace replacing fixed slot auctions; bulk coretime (28 days) and on-demand coretime
+Status: Live
+Related Historical Event ID: EV-024 (Agile Coretime Launch)
+Sources: https://polkadot.network/blog/agile-coretime-launch/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/agile-coretime-launch/]; https://wiki.polkadot.network/docs/learn-agile-coretime (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-agile-coretime]
+
+Integration Name: Asynchronous Backing Integration
+Integrated With: Asynchronous Backing
+Purpose: Validator pipeline optimization allowing 2-8x throughput increase for parachains
+Status: Live
+Related Historical Event ID: EV-023 (Async Backing Activation)
+Sources: https://polkadot.network/blog/async-backing/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/async-backing/]
+
+Integration Name: OpenGov Governance Integration
+Integrated With: OpenGov (Governance v2)
+Purpose: Direct referenda system with tracks, conviction voting, and delegation replacing Council + Technical Committee
+Status: Live
+Related Historical Event ID: EV-020 (OpenGov Launch)
+Sources: https://polkadot.network/blog/opengov/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/opengov/]; https://gov.polkadot.network/ (HIGH) [OpenGov Dashboard, https://gov.polkadot.network/]
+
+Integration Name: JAM (Join-Accumulate Machine) Testnet Integration
+Integrated With: JAM Gray Paper / Polkadot 2.0
+Purpose: Next-generation architecture testnet (Toaster/JamNP) for permissionless, general-purpose compute
+Status: Beta / Testnet (Ongoing)
+Related Historical Event ID: EV-026 (JAM Gray Paper), EV-027 (JAM Testnet Launch)
+Sources: https://www.gavwood.com/jam.pdf (HIGH) [Gavin Wood, https://www.gavwood.com/jam.pdf]; https://github.com/paritytech/jam (MEDIUM) [GitHub, https://github.com/paritytech/jam]
+
+## Infrastructure Providers
+
+Provider: Subscan
+Service: Block Explorer, Analytics, API, Indexer
+Criticality: High
+Status: Live
+Sources: https://polkadot.subscan.io/ (HIGH) [Subscan, https://polkadot.subscan.io/]; https://polkadot.network/ (HIGH) [Polkadot Official Website, https://polkadot.network/]
+
+Provider: SubQuery
+Service: Decentralized Indexer, GraphQL API, Data Aggregation
+Criticality: Medium
+Status: Live
+Sources: https://subquery.network/ (MEDIUM) [SubQuery Official, https://subquery.network/]; https://academy.subquery.network/ (MEDIUM) [SubQuery Academy, https://academy.subquery.network/]
+
+Provider: Subsquid (Squid)
+Service: High-performance Indexer, Data Transformation, ETL Pipelines
+Criticality: Medium
+Status: Live
+Sources: https://subsquid.io/ (MEDIUM) [Subsquid Official, https://subsquid.io/]; https://docs.subsquid.io/ (MEDIUM) [Subsquid Docs, https://docs.subsquid.io/]
+
+Provider: Polkadot.js Apps
+Service: Frontend Wallet Interface, Governance UI, Staking Dashboard, Chain Interaction Portal
+Criticality: High
+Status: Live
+Sources: https://polkadot.js.org/apps/ (HIGH) [Polkadot.js Apps, https://polkadot.js.org/apps/]; https://polkadot.js.org/docs/ (HIGH) [polkadot.js Docs, https://polkadot.js.org/docs/]
+
+Provider: OnFinality
+Service: Node Infrastructure, RPC Endpoints, Managed Node Hosting for Polkadot/Kusama/Parachains
+Criticality: Medium
+Status: Live
+Sources: https://onfinality.io/ (MEDIUM) [OnFinality Official, https://onfinality.io/]
+
+Provider: Parity Technologies (Node Operators)
+Service: Core Node Software Development, Runtime Maintenance, Release Engineering
+Criticality: Critical
+Status: Live
+Sources: https://www.parity.io/about/ (HIGH) [Parity Technologies, https://www.parity.io/about/]; https://github.com/paritytech/polkadot-sdk (HIGH) [GitHub, https://github.com/paritytech/polkadot-sdk]
+
+Provider: Web3 Foundation (Grant Funder)
+Service: Ecosystem Funding, Grants Program, Decentralized Futures Program, Treasury Stewardship
+Criticality: High
+Status: Live
+Sources: https://web3.foundation/grants/ (HIGH) [Web3 Foundation, https://web3.foundation/grants/]; https://web3.foundation/decentralized-futures/ (HIGH) [Web3 Foundation, https://web3.foundation/decentralized-futures/]
+
+Provider: Figment / Kiln / P2P.org / Chorus One (Major Validator Operators)
+Service: Validator Operations, Staking Services, Infrastructure for NPoS
+Criticality: High
+Status: Live
+Sources: https://polkadot.subscan.io/validator (MEDIUM) [Subscan Validators, https://polkadot.subscan.io/validator]; https://www.figment.io/networks/polkadot (MEDIUM) [Figment Polkadot, https://www.figment.io/networks/polkadot]
+
+Provider: Google Cloud / AWS / Azure (Cloud Providers for Node Hosting)
+Service: Cloud Infrastructure for Validator Nodes, RPC Nodes, Archive Nodes
+Criticality: Medium
+Status: Live
+Sources: https://cloud.google.com/blog/topics/developers-practitioners/running-polkadot-validator-google-cloud (MEDIUM) [Google Cloud Blog, https://cloud.google.com/blog/topics/developers-practitioners/running-polkadot-validator-google-cloud]; (Note: Generic cloud dependency — no official Polkadot endorsement of specific provider)
+
+## Exchange Ecosystem
+
+Exchange: Binance
+Listing Status: Listed
+Spot: Yes
+Perpetual: Yes
+OTC: Yes (via Binance OTC)
+Launchpool: Yes (DOT Launchpool 2020)
+Status: Active
+Sources: https://www.binance.com/en/trade/DOT_USDT (HIGH) [Binance, https://www.binance.com/en/trade/DOT_USDT]; https://www.binance.com/en/launchpool/dot (MEDIUM) [Binance Launchpool, https://www.binance.com/en/launchpool/dot]
+
+Exchange: Coinbase
+Listing Status: Listed
+Spot: Yes
+Perpetual: No (Coinbase does not offer perpetual futures)
+OTC: Yes (Coinbase Prime OTC)
+Launchpool: No
+Status: Active
+Sources: https://www.coinbase.com/price/polkadot (HIGH) [Coinbase, https://www.coinbase.com/price/polkadot]; https://prime.coinbase.com/ (MEDIUM) [Coinbase Prime, https://prime.coinbase.com/]
+
+Exchange: Kraken
+Listing Status: Listed
+Spot: Yes
+Perpetual: Yes (Kraken Futures)
+OTC: Yes (Kraken OTC)
+Launchpool: No
+Status: Active
+Sources: https://trade.kraken.com/markets/kraken/dot/usd (HIGH) [Kraken, https://trade.kraken.com/markets/kraken/dot/usd]; https://futures.kraken.com/ (MEDIUM) [Kraken Futures, https://futures.kraken.com/]
+
+Exchange: Bybit
+Listing Status: Listed
+Spot: Yes
+Perpetual: Yes
+OTC: Yes (Bybit OTC)
+Launchpool: Yes (Bybit Launchpool for DOT periodically)
+Status: Active
+Sources: https://www.bybit.com/trade/usdt/DOTUSDT (HIGH) [Bybit, https://www.bybit.com/trade/usdt/DOTUSDT]; https://www.bybit.com/launchpool/ (MEDIUM) [Bybit Launchpool, https://www.bybit.com/launchpool/]
+
+Exchange: OKX
+Listing Status: Listed
+Spot: Yes
+Perpetual: Yes
+OTC: Yes (OKX OTC)
+Launchpool: Yes (OKX Jumpstart/Launchpool for DOT)
+Status: Active
+Sources: https://www.okx.com/trade/DOT-USDT (HIGH) [OKX, https://www.okx.com/trade/DOT-USDT]; https://www.okx.com/jumpstart (MEDIUM) [OKX Jumpstart, https://www.okx.com/jumpstart]
+
+Exchange: KuCoin
+Listing Status: Listed
+Spot: Yes
+Perpetual: Yes
+OTC: Yes (KuCoin OTC)
+Launchpool: Yes (KuCoin Spotlight/Launchpool)
+Status: Active
+Sources: https://www.kucoin.com/trade/DOT-USDT (HIGH) [KuCoin, https://www.kucoin.com/trade/DOT-USDT]; https://www.kucoin.com/spotlight (MEDIUM) [KuCoin Spotlight, https://www.kucoin.com/spotlight]
+
+Exchange: Gate.io
+Listing Status: Listed
+Spot: Yes
+Perpetual: Yes
+OTC: Yes
+Launchpool: Yes (Gate.io Startup/Launchpool)
+Status: Active
+Sources: https://www.gate.io/trade/DOT_USDT (HIGH) [Gate.io, https://www.gate.io/trade/DOT_USDT]; https://www.gate.io/startup (MEDIUM) [Gate.io Startup, https://www.gate.io/startup]
+
+Exchange: Huobi / HTX
+Listing Status: Listed
+Spot: Yes
+Perpetual: Yes
+OTC: Yes
+Launchpool: Yes (HTX Prime/Launchpool)
+Status: Active
+Sources: https://www.htx.com/trade/dot_usdt (HIGH) [HTX, https://www.htx.com/trade/dot_usdt]; https://www.htx.com/prime (MEDIUM) [HTX Prime, https://www.htx.com/prime]
+
+Exchange: Upbit
+Listing Status: Listed
+Spot: Yes
+Perpetual: No
+OTC: No
+Launchpool: No
+Status: Active
+Sources: https://upbit.com/exchange?code=CRIX.UPBIT.KRW-DOT (HIGH) [Upbit, https://upbit.com/exchange?code=CRIX.UPBIT.KRW-DOT]
+
+Exchange: Bitstamp
+Listing Status: Listed
+Spot: Yes
+Perpetual: No
+OTC: No
+Launchpool: No
+Status: Active
+Sources: https://www.bitstamp.net/markets/dot/usd/ (HIGH) [Bitstamp, https://www.bitstamp.net/markets/dot/usd/]
+
+## Wallet Ecosystem
+
+Wallet: Polkadot.js Extension
+Support Type: Browser Extension (Chrome, Firefox, Brave) — Official wallet for Polkadot/Kusama/Parachains
+Status: Live
+Sources: https://polkadot.js.org/extension/ (HIGH) [Polkadot.js Extension, https://polkadot.js.org/extension/]; https://github.com/polkadot-js/extension (HIGH) [GitHub, https://github.com/polkadot-js/extension]
+
+Wallet: Polkadot.js Apps (Web Wallet)
+Support Type: Web Interface — Full-featured portal for staking, governance, parachains, XCM, identity
+Status: Live
+Sources: https://polkadot.js.org/apps/ (HIGH) [Polkadot.js Apps, https://polkadot.js.org/apps/]
+
+Wallet: Talisman
+Support Type: Browser Extension, Mobile App (iOS/Android) — Multi-chain wallet for Polkadot and Ethereum ecosystems
+Status: Live
+Sources: https://talisman.xyz/ (MEDIUM) [Talisman Official, https://talisman.xyz/]
+
+Wallet: SubWallet
+Support Type: Browser Extension, Mobile App — Polkadot/Substrate ecosystem wallet with hardware wallet support
+Status: Live
+Sources: https://subwallet.app/ (MEDIUM) [SubWallet Official, https://subwallet.app/]
+
+Wallet: Nova Wallet
+Support Type: Mobile App (iOS/Android) — Polkadot/Kusama/Parachain wallet with staking, governance, crowdloan
+Status: Live
+Sources: https://novawallet.io/ (MEDIUM) [Nova Wallet Official, https://novawallet.io/]
+
+Wallet: Fearless Wallet
+Support Type: Mobile App (iOS/Android), Browser Extension — DeFi-focused wallet with crowdloan, staking, XCM support
+Status: Live
+Sources: https://fearlesswallet.com/ (MEDIUM) [Fearless Wallet Official, https://fearlesswallet.com/]
+
+Wallet: Ledger Hardware Wallet
+Support Type: Hardware Wallet — Native DOT app via Ledger Live; supports Polkadot, Kusama, Parachains via Polkadot.js / Talisman / SubWallet
+Status: Live
+Sources: https://www.ledger.com/supported-crypto-assets/polkadot-dot (HIGH) [Ledger Supported Assets, https://www.ledger.com/supported-crypto-assets/polkadot-dot]
+
+Wallet: Trezor Hardware Wallet
+Support Type: Hardware Wallet — Native support via Trezor Suite and third-party integrations
+Status: Live
+Sources: https://trezor.io/coins/#DOT (HIGH) [Trezor Supported Coins, https://trezor.io/coins/#DOT]
+
+Wallet: MathWallet
+Support Type: Browser Extension, Mobile App, Web — Multi-chain wallet supporting Polkadot ecosystem
+Status: Live
+Sources: https://mathwallet.org/ (MEDIUM) [MathWallet Official, https://mathwallet.org/]
+
+Wallet: TokenPocket
+Support Type: Mobile App, Browser Extension, Desktop — Multi-chain wallet with Polkadot support
+Status: Live
+Sources: https://www.tokenpocket.pro/ (MEDIUM) [TokenPocket Official, https://www.tokenpocket.pro/]
+
+Wallet: Enkrypt
+Support Type: Browser Extension — Multi-chain wallet by MEW team supporting Polkadot/Substrate
+Status: Live
+Sources: https://www.enkrypt.com/ (MEDIUM) [Enkrypt Official, https://www.enkrypt.com/]
+
+## Developer Ecosystem
+
+SDK: Polkadot SDK
+API: Substrate RPC (JSON-RPC), Polkadot.js API, gRPC (limited)
+Developer Tools: cargo-contract (ink! CLI), Substrate CLI, Polkadot CLI, chopsticks (local testnet), try-runtime (dry-run), frame-benchmarking
+Open Source Repository: https://github.com/paritytech/polkadot-sdk (HIGH) [GitHub, https://github.com/paritytech/polkadot-sdk]
+Developer Portal: https://wiki.polkadot.network/docs/build-index (HIGH) [Polkadot Wiki Build Section, https://wiki.polkadot.network/docs/build-index]; https://developers.polkadot.network/ (MEDIUM) [Polkadot Developers Portal, https://developers.polkadot.network/]
+Hackathon: Polkadot Decoded Hackathon (annual), Sub0 Hackathon tracks, regional hackathons (ETHGlobal, etc.) — organized via Web3 Foundation grants and community
+Grant Program: Web3 Foundation Grants Program (https://web3.foundation/grants/), Decentralized Futures Program (https://web3.foundation/decentralized-futures/), Treasury Grants via OpenGov (https://gov.polkadot.network/)
+Sources: https://github.com/paritytech/polkadot-sdk (HIGH) [GitHub, https://github.com/paritytech/polkadot-sdk]; https://wiki.polkadot.network/docs/build-index (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/build-index]; https://web3.foundation/grants/ (HIGH) [Web3 Foundation, https://web3.foundation/grants/]; https://web3.foundation/decentralized-futures/ (HIGH) [Web3 Foundation, https://web3.foundation/decentralized-futures/]; https://polkadot.js.org/docs/ (HIGH) [polkadot.js Docs, https://polkadot.js.org/docs/]; https://use.ink/ (HIGH) [ink! Documentation, https://use.ink/]
+
+## Applications
+
+Application: Acala (DeFi Hub)
+Category: DeFi / Stablecoin / DEX / Liquid Staking
+Relationship: Parachain (Winning parachain slot auction on Polkadot and Kusama)
+Status: Live
+Sources: https://acala.network/ (MEDIUM) [Acala Official, https://acala.network/]; https://polkadot.network/blog/first-parachains-live/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/first-parachains-live/]
+
+Application: Moonbeam (EVM Parachain)
+Category: Smart Contract Platform / EVM Compatibility
+Relationship: Parachain (EVM-compatible parachain on Polkadot)
+Status: Live
+Sources: https://moonbeam.network/ (MEDIUM) [Moonbeam Official, https://moonbeam.network/]; https://polkadot.network/blog/first-parachains-live/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/first-parachains-live/]
+
+Application: Astar (Multi-VM Parachain)
+Category: Smart Contract Platform / dApp Staking / Multi-VM (EVM+WASM)
+Relationship: Parachain (Multi-VM parachain with dApp Staking incentives)
+Status: Live
+Sources: https://astar.network/ (MEDIUM) [Astar Official, https://astar.network/]; https://polkadot.network/blog/first-parachains-live/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/first-parachains-live/]
+
+Application: Parallel Finance (DeFi Parachain)
+Category: DeFi / Money Market / Liquid Staking / DEX
+Relationship: Parachain (DeFi-focused parachain)
+Status: Live
+Sources: https://parallel.fi/ (MEDIUM) [Parallel Finance Official, https://parallel.fi/]; https://polkadot.network/blog/first-parachains-live/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/first-parachains-live/]
+
+Application: Centrifuge (RWA Parachain)
+Category: Real World Assets / Tokenization / DeFi
+Relationship: Parachain (RWA-focused parachain for asset tokenization)
+Status: Live
+Sources: https://centrifuge.io/ (MEDIUM) [Centrifuge Official, https://centrifuge.io/]; https://polkadot.network/ecosystem/ (MEDIUM) [Polkadot Official Website, https://polkadot.network/ecosystem/]
+
+Application: HydraDX (Omnipool DEX)
+Category: DeFi / AMM / Omnipool
+Relationship: Parachain (Liquidity-focused parachain with omnipool model)
+Status: Live
+Sources: https://hydradx.io/ (MEDIUM) [HydraDX Official, https://hydradx.io/]; https://polkadot.network/ecosystem/ (MEDIUM) [Polkadot Official Website, https://polkadot.network/ecosystem/]
+
+Application: Bifrost (Liquid Staking)
+Category: Liquid Staking / DeFi
+Relationship: Parachain (Liquid staking for DOT, KSM, and other assets via vTokens)
+Status: Live
+Sources: https://bifrost.finance/ (MEDIUM) [Bifrost Official, https://bifrost.finance/]; https://polkadot.network/ecosystem/ (MEDIUM) [Polkadot Official Website, https://polkadot.network/ecosystem/]
+
+Application: Interlay (Bitcoin Bridge)
+Category: Bridge / Bitcoin Integration / DeFi
+Relationship: Parachain (Trust-minimized Bitcoin bridge bringing iBTC to Polkadot)
+Status: Live
+Sources: https://interlay.io/ (MEDIUM) [Interlay Official, https://interlay.io/]; https://wiki.polkadot.network/docs/learn-bridges (MEDIUM) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-bridges]
+
+Application: Snowbridge (Ethereum Bridge)
+Category: Bridge / Ethereum Integration
+Relationship: Bridge Protocol (Trust-minimized Ethereum-Polkadot bridge deployed as system parachain / common-good)
+Status: Live
+Sources: https://snowbridge.com/ (MEDIUM) [Snowbridge Official, https://snowbridge.com/]; https://polkadot.network/blog/snowbridge/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/snowbridge/]
+
+Application: Statemint / Asset Hub (Common-Good Parachain)
+Category: Infrastructure / Asset Management / Token Deployment
+Relationship: Common-Good Parachain (System parachain for asset minting/transfer, no slot auction needed)
+Status: Live
+Sources: https://wiki.polkadot.network/docs/learn-statemint (MEDIUM) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-statemint]; https://polkadot.network/ecosystem/ (MEDIUM) [Polkadot Official Website, https://polkadot.network/ecosystem/]
+
+Application: Coretime Chain / Agile Coretime
+Category: Infrastructure / Blockspace Marketplace
+Relationship: System Parachain / Core Protocol Component (Manages coretime sales and allocation)
+Status: Live
+Sources: https://wiki.polkadot.network/docs/learn-agile-coretime (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-agile-coretime]; https://polkadot.network/blog/agile-coretime-launch/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/agile-coretime-launch/]
+
+Application: Karura (Acala on Kusama)
+Category: DeFi / Stablecoin / DEX / Liquid Staking (Kusama)
+Relationship: Parachain (Canary network deployment of Acala on Kusama)
+Status: Live
+Sources: https://karura.network/ (MEDIUM) [Karura Official, https://karura.network/]; https://kusama.network/blog/first-parachain-auction/ (HIGH) [Kusama Blog, https://kusama.network/blog/first-parachain-auction/]
+
+Application: Moonriver (Moonbeam on Kusama)
+Category: EVM Parachain (Kusama)
+Relationship: Parachain (Canary network deployment of Moonbeam on Kusama)
+Status: Live
+Sources: https://moonbeam.network/networks/moonriver/ (MEDIUM) [Moonbeam Moonriver, https://moonbeam.network/networks/moonriver/]
+
+Application: Shiden (Astar on Kusama)
+Category: Multi-VM Parachain (Kusama)
+Relationship: Parachain (Canary network deployment of Astar on Kusama)
+Status: Live
+Sources: https://astar.network/networks/shiden/ (MEDIUM) [Astar Shiden, https://astar.network/networks/shiden/]
+
+Application: SubQuery (Indexer)
+Category: Infrastructure / Data Indexing
+Relationship: External Infrastructure Provider (Decentralized indexer for Polkadot ecosystem)
+Status: Live
+Sources: https://subquery.network/ (MEDIUM) [SubQuery Official, https://subquery.network/]
+
+Application: Subsquid (Indexer)
+Category: Infrastructure / Data Indexing
+Relationship: External Infrastructure Provider (High-performance indexer)
+Status: Live
+Sources: https://subsquid.io/ (MEDIUM) [Subsquid Official, https://subsquid.io/]
+
+## Governance Ecosystem
+
+Foundation: Web3 Foundation
+Role: Protocol Stewardship, Treasury Management (off-chain), Grant Programs, Research Funding, Trademark Holder
+Sources: https://web3.foundation/about/ (HIGH) [Web3 Foundation, https://web3.foundation/about/]; https://web3.foundation/grants/ (HIGH) [Web3 Foundation, https://web3.foundation/grants/]
+
+Foundation: Parity Technologies
+Role: Core Development, Polkadot SDK Maintenance, Runtime Engineering, Release Management, Technical Direction
+Sources: https://www.parity.io/about/ (HIGH) [Parity Technologies, https://www.parity.io/about/]; https://github.com/paritytech/polkadot-sdk (HIGH) [GitHub, https://github.com/paritytech/polkadot-sdk]
+
+DAO: Polkadot OpenGov (On-Chain Governance)
+Role: Decentralized Governance via Referenda, Tracks, Conviction Voting, Delegation, Treasury Allocation
+Sources: https://gov.polkadot.network/ (HIGH) [OpenGov Dashboard, https://gov.polkadot.network/]; https://polkadot.network/blog/opengov/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/opengov/]; https://wiki.polkadot.network/docs/learn-governance (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-governance]
+
+Council: (Deprecated) — Replaced by OpenGov (Governance v2) in 2022-11 (EV-020)
+Sources: https://polkadot.network/blog/opengov/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/opengov/]
+
+Committee: Technical Committee (Deprecated) — Replaced by OpenGov Tracks (Fellowship, Root, etc.)
+Sources: https://polkadot.network/blog/opengov/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/opengov/]
+
+Committee: Polkadot Fellowship (OpenGov Track)
+Role: Expert body for technical referenda (Whitelisted Caller track), runtime upgrade reviews
+Sources: https://gov.polkadot.network/ (HIGH) [OpenGov Dashboard, https://gov.polkadot.network/]; https://wiki.polkadot.network/docs/learn-governance (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-governance]
+
+Validator Group: Active Validator Set (~297 validators elected per era via NPoS)
+Role: Block Production (BABE), Finality (GRANDPA), Parachain Validation, Slashing Risk
+Sources: https://wiki.polkadot.network/docs/learn-validator (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-validator]; https://polkadot.subscan.io/validator (MEDIUM) [Subscan Validators, https://polkadot.subscan.io/validator]
+
+Nominator Group: DOT Holders Nominating Validators
+Role: Economic Security Backing, Staking Rewards, Slashing Exposure
+Sources: https://wiki.polkadot.network/docs/learn-nominator (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-nominator]
+
+Governance Portal: Polkassembly
+Role: Off-chain Discussion, Proposal Drafting, Voting Interface for OpenGov
+Sources: https://polkadot.polkassembly.io/ (HIGH) [Polkassembly, https://polkadot.polkassembly.io/]
+
+Governance Portal: SubSquare
+Role: Off-chain Governance Analytics, Proposal Tracking, Voting Interface
+Sources: https://www.subsquare.io/ (MEDIUM) [SubSquare, https://www.subsquare.io/]
+
+## Ecosystem Risks
+
+Risk: Single Core Development Entity Dependency (Parity Technologies)
+Description: Overwhelming majority of Polkadot SDK, Substrate, and Runtime development is performed by Parity Technologies employees — creates bus factor and centralized technical direction risk
+Category: Centralization Risk / Single Infrastructure Dependency
+Sources: https://www.parity.io/about/ (HIGH) [Parity Technologies, https://www.parity.io/about/]; https://github.com/paritytech/polkadot-sdk/graphs/contributors (HIGH) [GitHub Contributors, https://github.com/paritytech/polkadot-sdk/graphs/contributors]
+
+Risk: Web3 Foundation Treasury Concentration
+Description: Web3 Foundation controls significant off-chain treasury (ICO proceeds, token allocations) with limited public transparency on composition, management, and spending — single entity custodial risk
+Category: Centralization Risk / Financial Dependency
+Sources: https://web3.foundation/about/ (MEDIUM) [Web3 Foundation, https://web3.foundation/about/] — Catatan: Tidak ada laporan keuangan publik detail
+
+Risk: Cloud Provider Centralization for Validators
+Description: Significant portion of validator nodes hosted on major cloud providers (AWS, Google Cloud, Azure) — creates infrastructure centralization and regulatory exposure
+Category: Cloud Dependency / Centralization Risk
+Sources: https://cloud.google.com/blog/topics/developers-practitioners/running-polkadot-validator-google-cloud (MEDIUM) [Google Cloud Blog, https://cloud.google.com/blog/topics/developers-practitioners/running-polkadot-validator-google-cloud]; (Inferred from industry patterns — no official validator hosting census)
+
+Risk: Bridge Dependency (Snowbridge, Interlay, Wormhole)
+Description: Cross-chain interoperability relies on external bridge protocols — bridge exploits (e.g., Wormhole EV-029) can impact asset security and user funds on Polkadot parachains
+Category: Bridge Dependency
+Sources: https://blog.wormhole.com/wormhole-incident-report/ (HIGH) [Wormhole Blog, https://blog.wormhole.com/wormhole-incident-report/]; https://snowbridge.com/ (MEDIUM) [Snowbridge Official, https://snowbridge.com/]; https://interlay.io/ (MEDIUM) [Interlay Official, https://interlay.io/]
+
+Risk: XCM Complexity and Upgrade Risk
+Description: XCM version upgrades (v2→v3) require coordinated runtime upgrades across all parachains — failure to upgrade can break cross-chain messaging; XCM v3 fee abstraction may reduce DOT demand for fees
+Category: Chain Dependency / Protocol Upgrade Risk
+Sources: https://polkadot.network/blog/xcm-v3/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/xcm-v3/]; https://forum.polkadot.network/t/what-are-the-limitations-of-xcm/ (MEDIUM) [Polkadot Forum, https://forum.polkadot.network/t/what-are-the-limitations-of-xcm/]
+
+Risk: Parachain Slot / Coretime Economic Uncertainty
+Description: Agile Coretime (launched 2024-05) is new economic model — long-term demand for coretime, pricing stability, and treasury revenue unknown; parachain sustainability depends on coretime affordability
+Category: Economic Model Risk
+Sources: https://polkadot.network/blog/agile-coretime-launch/ (HIGH) [Polkadot Blog, https://polkadot.network/blog/agile-coretime-launch/]; https://wiki.polkadot.network/docs/learn-agile-coretime (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-agile-coretime/]
+
+Risk: JAM (Polkadot 2.0) Migration Uncertainty
+Description: JAM Gray Paper proposes fundamental architecture change (permissionless, in-core execution) — migration path from current Relay Chain to JAM undefined; could disrupt parachains, tooling, and tokenomics
+Category: Protocol Upgrade Risk / Technical Dependency
+Sources: https://www.gavwood.com/jam.pdf (HIGH) [Gavin Wood, https://www.gavwood.com/jam.pdf]; https://github.com/paritytech/jam (MEDIUM) [GitHub, https://github.com/paritytech/jam]
+
+Risk: Validator Set Concentration (Top Validators Control Large Stake)
+Description: Top validators and staking pools control disproportionate stake — potential for collusion, governance capture, or coordinated slashing events
+Category: Centralization Risk / Staking Centralization
+Sources: https://polkadot.subscan.io/validator (MEDIUM) [Subscan Validators, https://polkadot.subscan.io/validator]; https://wiki.polkadot.network/docs/learn-staking (HIGH) [Polkadot Wiki, https://wiki.polkadot.network/docs/learn-staking]
+
+Risk: Regulatory Classification Uncertainty (FINMA / SEC)
+Description: DOT token classification (security vs utility vs payment token) unresolved in major jurisdictions — Web3 Foundation in Zug, Switzerland subject to FINMA; potential enforcement impacts treasury operations and token distribution
+Category: Regulatory Risk
+Sources: https://web3.foundation/about/ (MEDIUM) [Web3 Foundation, https://web3.foundation/about/] — Catatan: Tidak ada klasifikasi resmi publik dari FINMA atau SEC
+
+## Official Ecosystem Resources
+
+Official Documentation: https://wiki.polkadot.network/
+Developer Portal: https://developers.polkadot.network/ ; https://wiki.polkadot.network/docs/build-index
+GitHub: https://github.com/paritytech/polkadot-sdk
+Partner Documentation: https://substrate.io/ ; https://docs.substrate.io/ ; https://use.ink/ ; https://polkadot.js.org/docs/
+Grant Program: https://web3.foundation/grants/ ; https://web3.foundation/decentralized-futures/ ; https://gov.polkadot.network/
+Ecosystem Dashboard: https://polkadot.network/ecosystem/ ; https://polkadot.subscan.io/ ; https://gov.polkadot.network/
+
+## SUMMARY
+
+Primary Ecosystem: Polkadot (Relay Chain + Parachains + Kusama Canary Network)
+Supported Chains: Polkadot Relay Chain, Kusama, 50+ Parachains (Acala, Moonbeam, Astar, Parallel, Centrifuge, HydraDX, Bifrost, Interlay, Snowbridge, Asset Hub, Coretime Chain, Karura, Moonriver, Shiden, etc.), Ethereum (via Snowbridge, Wormhole), Bitcoin (via Interlay)
+External Dependencies: 17 identified (Libp2p, Wasmer/Wasmtime, RocksDB, BLAKE2/sr25519, Snowbridge, Interlay, Wormhole, Subscan, SubQuery, Subsquid, Trail of Bits, Quarkslab, Immunefi, NCC Group, Docker, GitHub, major cloud providers)
+Major Integrations: 16 documented (Kusama, 5 initial parachains + additional major parachains, XCM v2/v3, Snowbridge, Interlay, Agile Coretime, Async Backing, OpenGov, JAM Testnet)
+Infrastructure Providers: 8 key providers (Subscan, SubQuery, Subsquid, Polkadot.js, OnFinality, Parity Technologies, Web3 Foundation, major validator operators/cloud)
+Exchange Ecosystem: 10+ major CEXs with spot listing (Binance, Coinbase, Kraken, Bybit, OKX, KuCoin, Gate.io, HTX, Upbit, Bitstamp); 7+ with perpetuals; 6+ with launchpools
+Wallet Ecosystem: 10+ wallets (Polkadot.js Extension/Apps, Talisman, SubWallet, Nova Wallet, Fearless Wallet, Ledger, Trezor, MathWallet, TokenPocket, Enkrypt)
+Developer Ecosystem: Polkadot SDK (core), Substrate/FRAME/Cumulus (frameworks), ink! (smart contracts), polkadot.js (JS/TS), Web3 Foundation Grants (>$100M), Decentralized Futures ($20M), annual hackathons (Decoded, Sub0)
+Applications: 15+ major live parachains/applications across DeFi, RWA, Bridges, Infrastructure, Liquid Staking, Smart Contract Platforms
+Governance Ecosystem: Web3 Foundation (steward), Parity Technologies (core dev), OpenGov (on-chain DAO), Polkadot Fellowship (technical track), ~297 validators, nominators, Polkassembly/SubSquare (off-chain portals)
+
+## Open Threads
+
+- Exact validator hosting distribution across cloud providers vs bare metal — no official census published; inferred from industry patterns only
+- Web3 Foundation off-chain treasury composition, size, and management policy — not publicly disclosed in detail
+- Parity Technologies contributor breakdown (employees vs external contributors) for Polkadot SDK — GitHub graphs show Parity dominance but exact ratio not verified
+- Snowbridge and Interlay bridge TVL, usage metrics, and security audit status — not aggregated in single dashboard
+- Agile Coretime adoption rate, pricing trends, and treasury revenue impact — launched May 2024, limited historical data
+- JAM (Polkadot 2.0) migration roadmap, timeline, and backward compatibility guarantees — Gray Paper published Oct 2024, testnet Dec 2024, no official migration plan
+- XCM v3 adoption across all 50+ parachains — upgrade coordination status not tracked in central registry
+- Regulatory status of DOT in US (SEC), EU (MiCA), Switzerland (FINMA) — no official classification confirmations found
+- Decentralized Futures Program grant recipients and deployment status — program launched June 2023, recipient list not fully public
+- Polkadot SDK external contributor onboarding process and governance for accepting external RFCs — not documented in central location
+- Subscan/SubQuery/Subsquid data coverage completeness and decentralization — all three are commercial/centralized entities with varying decentralization roadmaps
+- Validator set Nakamoto coefficient and stake concentration metrics over time — not published as official metric
+- Parachain crowdloan/lease expiration schedule and coretime migration status for existing parachains — no public unified schedule
+- Wormhole bridge usage on Polkadot parachains post-EV-029 incident — impact assessment not published
+- Trail of Bits audit scope completeness for Polkadot SDK v1.0 — only advisories public, full report not released

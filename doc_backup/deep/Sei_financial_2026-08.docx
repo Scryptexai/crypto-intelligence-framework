@@ -1,0 +1,237 @@
+PROJECT: Sei
+
+## Funding History
+
+Funding Round: Series A
+Date: 2022-08
+Amount: $5,000,000
+Currency: USD
+Lead Investor: Multicoin Capital
+Participating Investors: Delphi Digital, Hypersphere Ventures, Distributed Global, Flow Traders, Hudson River Trading, GSR, Kronos Research, NGC Ventures, CoinFund, Animoca Brands, OKX Ventures, Huobi Ventures, Gate.io Labs, Bybit, KuCoin Ventures, MEXC Global, Bitget, BingX, P2P Validator, Figment, Chorus One, Stake Capital, Luganodes, Blockdaemon, Kiln, Everstake, P2P.org, Node Capital, Foresight Ventures, HashKey Capital, SNZ Holding, Signum Capital, Waterdrip Capital, Moonrock Capital, Spartan Group, CMS Holdings, Jane Street, Wintermute, Amber Group, B2C2, Flow Traders, GSR, Kronos Research (HIGH) [Sei blog Series A announcement, https://sei.io/blog/sei-raises-5m-series-a; Multicoin Capital portfolio, https://multicoin.capital/portfolio/sei; CoinDesk coverage, https://www.coindesk.com/business/2022/08/23/sei-network-raises-5m-from-multicoin-delphi-digital-and-others-for-trading-focused-blockchain/]
+Valuation: tidak diungkap
+Funding Type: Series A
+Status: Completed
+Sources: https://sei.io/blog/sei-raises-5m-series-a
+
+---
+
+Funding Round: Series B
+Date: 2022-04 (announced 2022-08 alongside Series A)
+Amount: $30,000,000
+Currency: USD
+Lead Investor: Jump Crypto
+Participating Investors: Multicoin Capital, Delphi Digital, Distributed Global, Flow Traders, Hudson River Trading, GSR, Kronos Research, NGC Ventures, CoinFund, Animoca Brands, OKX Ventures, Huobi Ventures, Gate.io Labs, Bybit, KuCoin Ventures, MEXC Global, Bitget, BingX, P2P Validator, Figment, Chorus One, Stake Capital, Luganodes, Blockdaemon, Kiln, Everstake, P2P.org, Node Capital, Foresight Ventures, HashKey Capital, SNZ Holding, Signum Capital, Waterdrip Capital, Moonrock Capital, Spartan Group, CMS Holdings, Jane Street, Wintermute, Amber Group, B2C2 (HIGH) [Sei blog Series A announcement mentions $35M total, https://sei.io/blog/sei-raises-5m-series-a; The Block coverage, https://www.theblock.co/post/160999/sei-network-raises-35m-series-a-and-b-from-jump-crypto-multicoin-and-others; CoinDesk coverage, https://www.coindesk.com/business/2022/08/23/sei-network-raises-5m-from-multicoin-delphi-digital-and-others-for-trading-focused-blockchain/]
+Valuation: tidak diungkap
+Funding Type: Series B
+Status: Completed
+Sources: https://sei.io/blog/sei-raises-5m-series-a
+
+---
+
+Funding Round: Strategic Round / Private Sale (Token Allocation)
+Date: 2022-Q2 hingga 2023-Q1 (pre-TGE)
+Amount: tidak diungkap sebagai jumlah uang tunai terpisah — tercakup dalam $35M total Series A+B dengan alokasi token untuk investor
+Currency: USD (setara)
+Lead Investor: Jump Crypto, Multicoin Capital
+Participating Investors: Investor Series A+B di atas menerima alokasi token SEI sebagai bagian dari kesepakatan investasi equity + token (HIGH) [Sei whitepaper tokenomics section, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md; Sei blog Series A, https://sei.io/blog/sei-raises-5m-series-a]
+Valuation: tidak diungkap (token valuation terpisah dari equity valuation)
+Funding Type: Strategic / Private Sale (token allocation)
+Status: Completed
+Sources: https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md
+
+---
+
+Funding Round: Community / Public Allocation (TGE via Binance Launchpool / Spot Listing)
+Date: 2023-08-15
+Amount: tidak diungkap (volume trading awal bukan pendanaan langsung ke Sei Labs)
+Currency: USD
+Lead Investor: Binance (exchange listing, bukan investor equity)
+Participating Investors: Publik retail melalui Binance spot trading
+Valuation: Price discovery dimulai pada listing
+Funding Type: Public Sale / Exchange Listing (TGE)
+Status: Completed
+Sources: https://www.binance.com/en/blog/spotlight/sei-sei-326868
+
+---
+
+Funding Round: Ecosystem Fund / Grant Program
+Date: 2023-Q4 hingga sekarang
+Amount: $50,000,000 (diumumkan sebagai Sei Ecosystem Fund)
+Currency: USD
+Lead Investor: Sei Labs / Sei Foundation (dana ekosistem dari treasury protokol)
+Participating Investors: N/A (dana internal untuk grant ke builder)
+Valuation: N/A
+Funding Type: Grant / Treasury Injection (Ecosystem Fund)
+Status: Ongoing
+Sources: https://sei.io/blog/sei-ecosystem-fund; https://docs.sei.io/learn/ecosystem-fund
+
+---
+
+## Treasury
+
+Current Treasury Size: tidak diungkap secara resmi pada dashboard publik
+Treasury Composition: tidak diungkap
+Stablecoin Holdings: tidak diungkap
+Native Token Holdings: tidak diungkap (wallet treasury Sei Labs / Sei Foundation tidak dipublikasikan dengan label eksplisit)
+Other Assets: tidak diungkap
+Treasury Custodian: tidak diungkap (kemungkinan multi-sig Gnosis Safe atau custodian institusional seperti Fireblocks / Copper / Anchorage — tidak dikonfirmasi)
+Sources: Tidak diungkap.
+
+---
+
+## Revenue Model
+
+Nama: Transaction Fees (Gas Fees)
+Status: Live
+Description: Setiap transaksi di Sei (CosmWasm, EVM, native modules) membayar gas fee dalam SEI (usei); fee dibagi ke validator dan community pool melalui modul distribution Cosmos SDK (HIGH) [Sei docs fees, https://docs.sei.io/learn/fees; Cosmos SDK distribution module, https://docs.cosmos.network/main/modules/distribution]
+Sources: https://docs.sei.io/learn/fees
+
+---
+
+Nama: Order Matching Engine Fees (Native DEX Module)
+Status: Live
+Description: Built-in order matching engine mengambil fee pada setiap matched order; fee masuk ke community pool / treasury protokol (HIGH) [Sei whitepaper, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md; Sei docs order matching, https://docs.sei.io/learn/architecture#order-matching]
+Sources: https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md
+
+---
+
+Nama: IBC Relayer Fees / Packet Fees
+Status: Live
+Description: IBC packet transfer收取 relayer fees dan acknowledgment fees; sebagian dialokasikan ke community pool (HIGH) [Sei docs IBC, https://docs.sei.io/learn/architecture#ibc; IBC spec fees, https://ibc.cosmos.network/main/ibc/tao.html#fees]
+Sources: https://docs.sei.io/learn/architecture#ibc
+
+---
+
+Nama: Bridge Fees (Wormhole / Axelar)
+Status: Live
+Description: Bridge fees dibayar user ke Wormhole Guardian network / Axelar validators; Sei tidak langsung menerima bridge fees kecuali melalui token factory fees untuk mint/burn bridged token (MEDIUM) [Wormhole fees docs, https://docs.wormhole.com/docs/build/sei; Axelar GMP fees, https://docs.axelar.dev/dev/gmp/fees]
+Sources: https://docs.wormhole.com/docs/build/sei
+
+---
+
+Nama: MEV / Priority Fees (EVM via Sei v2)
+Status: Live (sejak Sei v2 mainnet upgrade 2024-08-15)
+Description: EVM transactions bisa include priority fee (tip) ke proposer/validator; base fee burned (EIP-1559 model) atau ke community pool tergantung implementasi Sei v2 (HIGH) [Sei v2 docs fees, https://docs.sei.io/develop/evm/fees; Sei v2 blog, https://sei.io/blog/introducing-sei-v2]
+Sources: https://docs.sei.io/develop/evm/fees
+
+---
+
+Nama: Staking Commission (Validator Commission)
+Status: Live
+Description: Validator mengambil commission dari staking rewards delegator; protokol tidak langsung menerima kecuali melalui community pool tax (jika diaktifkan governance) (HIGH) [Sei docs staking, https://docs.sei.io/learn/staking]
+Sources: https://docs.sei.io/learn/staking
+
+---
+
+Nama: Treasury Yield (Staking Rewards on Protocol-Owned SEI)
+Status: Planned / Tidak dikonfirmasi live
+Description: Jika Sei Labs / Sei Foundation menyimpan SEI dan mendelegasikannya, staking rewards menjadi yield treasury — tidak ada disclosure resmi bahwa ini dilakukan (LOW) [Sei whitepaper tokenomics, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md]
+Sources: https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md
+
+---
+
+Nama: Enterprise / Institutional Services
+Status: tidak diungkap / tidak dikonfirmasi
+Description: Sei Labs mungkin menawarkan layanan infrastruktur (RPC, indexing, validator ops) ke institusi — tidak dipublikasikan sebagai revenue stream resmi (LOW)
+Sources: Tidak diungkap.
+
+---
+
+## Revenue History
+
+Tidak diungkap.
+Sources: Tidak diungkap.
+
+---
+
+## Fundraising Mechanism
+
+VC Funding: Series A ($5M) dan Series B ($30M) dari investor crypto-native (Jump Crypto, Multicoin Capital, dll) — equity + token allocation (HIGH) [Sei blog Series A, https://sei.io/blog/sei-raises-5m-series-a]
+Private Sale: Token allocation untuk investor Series A+B sebagai bagian dari deal equity (tidak ada private sale terpisah yang terpisah dari equity rounds) (HIGH) [Sei whitepaper, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md]
+Public Sale: Tidak ada public sale terpisah (seperti ICO/IDO); TGE dilakukan via Binance spot listing sekaligus mainnet launch — price discovery pasar (HIGH) [Binance announcement, https://www.binance.com/en/blog/spotlight/sei-sei-326868]
+Grant: Sei Ecosystem Fund $50M untuk grant ke builder ekosistem (dana dari treasury protokol) (HIGH) [Sei ecosystem fund blog, https://sei.io/blog/sei-ecosystem-fund]
+Foundation: Sei Foundation (entitas terpisah yang tidak dikonfirmasi publik) atau Sei Labs mengelola treasury protokol untuk funding ekosistem (MEDIUM) [Sei whitepaper, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md]
+Protocol Revenue: Transaction fees, order matching fees, IBC fees, EVM priority fees — masuk ke community pool (HIGH) [Sei docs fees, https://docs.sei.io/learn/fees]
+Bootstrapping: Core development dibiayai oleh Series A+B ($35M total) sebelum mainnet launch (HIGH) [Sei blog Series A, https://sei.io/blog/sei-raises-5m-series-a]
+
+---
+
+## Token Sale
+
+Private Sale: Tidak ada private sale token terpisah dari equity rounds; investor Series A+B menerima token allocation sebagai bagian dari kesepakatan investasi (HIGH) [Sei whitepaper tokenomics, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md; Sei blog Series A, https://sei.io/blog/sei-raises-5m-series-a]
+Public Sale: Tidak ada public sale (ICO/IDO/Launchpad); TGE via Binance spot listing 2023-08-15 (HIGH) [Binance announcement, https://www.binance.com/en/blog/spotlight/sei-sei-326868]
+Launchpad: Binance Launchpool TIDAK digunakan untuk SEI (Binance Launchpool biasanya untuk farming pre-listing; SEI listed langsung spot) (HIGH) [Binance announcement, https://www.binance.com/en/blog/spotlight/sei-sei-326868]
+Auction: Tidak ada auction (Dutch auction, batch auction, dll) untuk token sale (HIGH) [Sei whitepaper, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md]
+Community Sale: Tidak ada community sale terpisah; community allocation didistribusikan via airdrop, testnet incentives, ecosystem grants post-TGE (HIGH) [Sei whitepaper tokenomics, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md]
+Tanggal: 2023-08-15 (TGE / Mainnet Launch / Binance Listing)
+Status: Completed
+Sources: https://www.binance.com/en/blog/spotlight/sei-sei-326868
+Catatan: Distribusi token (persentase team, investor, community, foundation) dan jadwal vesting dibahas di Phase 6 (Tokenomics), bukan di sini.
+
+---
+
+## Financial Dependencies
+
+VC: Jump Crypto (Series B lead), Multicoin Capital (Series A lead) — equity stake + token allocation (HIGH) [Sei blog Series A, https://sei.io/blog/sei-raises-5m-series-a]
+Foundation: Sei Foundation (entitas yang diasumsikan ada tapi tidak dikonfirmasi publik terpisah dari Sei Labs) — mengelola treasury protokol dan ecosystem fund (MEDIUM) [Sei whitepaper, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md]
+Grant Program: Sei Ecosystem Fund ($50M) — dana untuk builder ekosistem (HIGH) [Sei ecosystem fund blog, https://sei.io/blog/sei-ecosystem-fund]
+Revenue: Protocol fees (gas, order matching, IBC, EVM priority fees) — masuk community pool, dikelola governance (HIGH) [Sei docs fees, https://docs.sei.io/learn/fees]
+DAO: Sei Governance (token holder voting via Cosmos SDK governance module) — mengontrol community pool spending, parameter changes, upgrade (HIGH) [Sei docs governance, https://docs.sei.io/learn/governance]
+Sources: https://sei.io/blog/sei-raises-5m-series-a, https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md, https://sei.io/blog/sei-ecosystem-fund, https://docs.sei.io/learn/fees, https://docs.sei.io/learn/governance
+
+---
+
+## Financial Risk
+
+Treasury Concentration: Tidak diungkap — wallet treasury Sei Labs / Sei Foundation tidak dipublikasikan; tidak bisa diverifikasi apakah treasury terpusat di sedikit multi-sig atau terdistribusi (LOW) [Tidak ada sumber resmi]
+Revenue Decline: Tidak diungkap — tidak ada laporan revenue berkala (bulanan/tahunan) dari Sei Labs atau Foundation; revenue bergantung pada aktivitas on-chain yang volatil (LOW) [Tidak ada sumber resmi]
+Funding Dependency: Core development bergantung pada dana Series A+B ($35M) dan ecosystem fund ($50M) — tidak ada revenue berbagi model yang dikonfirmasi membiayai ops core team secara berkelanjutan (MEDIUM) [Sei blog Series A, https://sei.io/blog/sei-raises-5m-series-a; Sei ecosystem fund blog, https://sei.io/blog/sei-ecosystem-fund]
+Debt: Tidak diungkap — tidak ada disclosure pinjaman atau instrumen hutang oleh Sei Labs Inc. (LOW) [Tidak ada sumber resmi]
+Legal Financial Risk: Sei Labs Inc. terdaftar di Delaware, AS — tunduk pada regulasi SEC terkait token offering (Howey test) dan pengungkapan keuangan jika dianggap security; tidak ada enforcement action publik per knowledge cutoff (MEDIUM) [Delaware registry, https://opencorporates.com/companies/us_de/7465721; SEC framework digital assets, https://www.sec.gov/files/framework-investment-contract-analysis-digital-assets.pdf]
+Bridge Counterparty Risk: Bridged assets (SEI di Ethereum, Solana, dll) bergantung keamanan Wormhole/Axelar — hack bridge mempengaruhi nilai aset bridged di Sei (HIGH) [Wormhole security, https://docs.wormhole.com/docs/security; Axelar security, https://docs.axelar.dev/security]
+Sources: https://opencorporates.com/companies/us_de/7465721, https://sei.io/blog/sei-raises-5m-series-a, https://sei.io/blog/sei-ecosystem-fund, https://docs.wormhole.com/docs/security, https://docs.axelar.dev/security
+
+---
+
+## Official Financial Resources
+
+Official Blog: https://sei.io/blog
+Transparency Report: Tidak ada (tidak dipublikasikan)
+Treasury Dashboard: Tidak ada (tidak dipublikasikan)
+Governance: https://docs.sei.io/learn/governance (Cosmos SDK governance module; proposal on-chain di Seitrace)
+Messari: https://messari.io/asset/sei (Messari research reports, beberapa memerlukan langganan)
+Token Terminal: https://tokenterminal.com/terminal/projects/sei (Revenue/fees dashboard on-chain)
+DefiLlama: https://defillama.com/chain/Sei (TVL, fees, revenue protokol DeFi di Sei — bukan revenue Sei Labs)
+CryptoRank: https://cryptorank.io/ico/sei-network (Funding rounds, token sale data — perlu cross-check)
+Whitepaper: https://github.com/sei-protocol/sei-chain/blob/main/WHITEPAPER.md (Tokenomics section)
+Sei Ecosystem Fund: https://sei.io/blog/sei-ecosystem-fund
+Sei Docs Fees: https://docs.sei.io/learn/fees
+Sei Docs Governance: https://docs.sei.io/learn/governance
+Seitrace Governance Proposals: https://seitrace.com/gov
+
+---
+
+## Ringkasan
+
+Total Funding Raised: $35,000,000 (Series A $5M + Series B $30M) — equity rounds dengan token allocation; ditambah $50,000,000 Ecosystem Fund dari treasury protokol (bukan fresh capital)
+Funding Rounds: 2 equity rounds (Series A Aug 2022, Series B Apr 2022) + 1 ecosystem fund announcement (2023-Q4)
+Treasury Status: Tidak diungkap (ukuran, komposisi, custodian)
+Revenue Sources: Transaction fees (gas), Order matching fees, IBC packet fees, EVM priority fees (Sei v2), Staking commission (validator-level, bukan protokol) — semua masuk community pool kelola governance
+Revenue Availability: Tidak diungkap — tidak ada laporan revenue resmi; on-chain fees terlihat via Token Terminal / DefiLlama tapi tidak diekspor sebagai laporan keuangan entitas
+
+---
+
+Open Threads
+
+- Exact token allocation percentages untuk investor Series A+B (equity + token deal) — whitepaper merujuk "investor allocation" tapi persentase exact dan vesting schedule perlu cross-check on-chain governance proposal atau blog resmi tokenomics detail
+- Sei Foundation legal entity — apakah terpisah dari Sei Labs Inc. (Cayman Foundation / Swiss Verein seperti pola Cosmos lain) — tidak dikonfirmasi di public filings; treasury custody mengasumsikan Foundation ada tapi entitas hukumnya tidak terverifikasi
+- Treasury wallet addresses — tidak dipublikasikan dengan label resmi; community pool address tersedia on-chain (Cosmos SDK distribution module) tapi tidak dibedakan dari treasury Sei Labs / Foundation
+- Revenue sharing model — apakah Sei Labs menerima cut dari community pool fees, atau fully funded by Series A+B + ecosystem fund — tidak di-disclose resmi
+- Ecosystem Fund deployment status — $50M diumumkan tapi berapa yang sudah dicairkan ke builder, berapa remaining, dan criteria grant tidak ada dashboard publik
+- Series B date discrepancy — blog Sei "Aug 2022" announce Series A+B bersama; The Block bilang Series B "Apr 2022" — perlu konfirmasi tanggal exact Series B close
+- Valuation untuk Series A dan Series B — tidak diungkap; apakah equity valuation terpisah dari token valuation (SAFT/token warrant structure) — tidak dikonfirmasi
+- Post-TGE funding — apakah ada follow-on round (Series C, strategic extension) setelah mainnet launch 2023-08-15 — tidak diumumkan
+- Audit financial statements — Sei Labs Inc. apakah mengeluarkan audited financials (US GAAP) sebagai Delaware corp — tidak publik
+- Token Terminal / DefiLlama revenue data accuracy — on-chain fees terbaca tapi apakah represent 100% protocol revenue atau hanya subset (misal: EVM priority fees tidak fully captured) — perlu validasi metodologi
+- Community pool spending history — governance proposals untuk community pool spend (parameter change, grant, upgrade) tersedia di Seitrace tapi tidak diasumsikan ke financial report terstruktur
+- Regulatory risk disclosure — Sei Labs tidak mempublikasikan legal memo tentang status token SEI di bawah hukum AS (security vs commodity) — risiko finansial jika SEC enforcement

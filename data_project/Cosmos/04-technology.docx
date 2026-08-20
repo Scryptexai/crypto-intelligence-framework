@@ -1,0 +1,280 @@
+PROJECT: Cosmos
+
+## System Architecture
+
+Architecture: Modular app-chain framework dengan arsitektur hub-and-zone (HIGH) [Cosmos Whitepaper, https://github.com/cosmos/cosmos/blob/master/WHITEPAPER.md]
+Layer: Layer 1 sovereign chains (zone) yang terhubung via IBC (HIGH) [Cosmos Network, https://cosmos.network/]
+Cross-chain Messaging: IBC (Inter-Blockchain Communication) protocol sebagai standar messaging layer (HIGH) [IBC Spec, https://github.com/cosmos/ibc]
+Consensus Layer: CometBFT (fork Tendermint Core) sebagai BFT consensus engine (HIGH) [CometBFT GitHub, https://github.com/cometbft/cometbft]
+Execution Layer: Cosmos SDK (application framework) + CosmWasm (Wasm smart contract engine) (HIGH) [Cosmos SDK Docs, https://docs.cosmos.network/]
+Application Layer: Sovereign app-chains (Osmosis, Celestia, dYdX, Injective, Neutron, Stride, dll) (HIGH) [Map of Zones, https://mapofzones.com/]
+Shared Security: Interchain Security (Replicated Security) memungkinkan consumer chain menggunakan validator set provider chain (Cosmos Hub) (HIGH) [Interchain Security Spec, https://github.com/cosmos/interchain-security]
+
+## Core Components
+
+Component: Cosmos SDK
+Function: Framework pengembangan aplikasi blockchain modular (app-chain framework); menyediakan baseapp, store, modules (staking, governance, bank, ibc, dll), dan CLI tooling (HIGH) [Cosmos SDK Docs, https://docs.cosmos.network/]
+Status: Active development (v0.50+), digunakan 100+ production chains (HIGH) [Cosmos SDK GitHub, https://github.com/cosmos/cosmos-sdk]
+
+Component: CometBFT
+Function: BFT consensus engine (penerus Tendermint Core v0.34+); menyediakan networking, mempool, consensus, dan state sync untuk chain Cosmos SDK (HIGH) [CometBFT GitHub, https://github.com/cometbft/cometbft]
+Status: Active development (v1.x), default consensus engine Cosmos SDK (HIGH) [Cosmos SDK Release Notes, https://github.com/cosmos/cosmos-sdk/releases]
+
+Component: IBC (Inter-Blockchain Communication)
+Function: Protocol standar cross-chain messaging (packet transfer, multi-hop routing via Packet Forward Middleware, async acknowledgments, callbacks) (HIGH) [IBC Spec, https://github.com/cosmos/ibc]
+Status: Live since Stargate Feb 2021; IBC v7 (Go) live 2024 dengan PFM (HIGH) [IBC-Go Releases, https://github.com/cosmos/ibc-go/releases]
+
+Component: Cosmos Hub (Gaia)
+Function: Hub pertama dan chain utama ekosistem; provider chain untuk Interchain Security; tempat staking ATOM dan governance (HIGH) [Gaia GitHub, https://github.com/cosmos/gaia]
+Status: Live since Mar 2019; current v19 (Gaia v19) (HIGH) [Gaia Releases, https://github.com/cosmos/gaia/releases]
+
+Component: Interchain Security
+Function: Shared security mechanism (Replicated Security); consumer chain diamankan oleh validator set Cosmos Hub (provider chain) (HIGH) [Interchain Security Spec, https://github.com/cosmos/interchain-security]
+Status: Live since Jul 2023 (Cosmos Hub v12); Neutron sebagai consumer chain pertama (HIGH) [Interchain Security Launch Blog, https://blog.cosmos.network/interchain-security-launch/]
+
+Component: Liquid Staking Module (LSM)
+Function: Native liquid staking di Cosmos Hub tanpa smart contract eksternal; rate limiting, validator bonding requirements, 25% cap liquid staked ATOM (HIGH) [LSM Proposal #848, https://www.mintscan.io/cosmos/proposals/848]
+Status: Live since Nov 2023 (Governance Proposal #848) (HIGH) [Stride LSM Blog, https://blog.stride.zone/cosmos-hub-lsm/]
+
+Component: CosmWasm
+Function: Wasm smart contract engine untuk Cosmos SDK; mendukung CW20, CW721, CW1155, CW-ICA (Interchain Accounts) (HIGH) [CosmWasm Docs, https://cosmwasm.com/]
+Status: Production deployed di Neutron, Juno, Osmosis, Injective, Terra v2, 20+ chains (HIGH) [CosmWasm GitHub, https://github.com/CosmWasm/cosmwasm]
+
+Component: Packet Forward Middleware (PFM)
+Function: Middleware IBC untuk multi-hop routing native (chain A → chain B → chain C dalam satu transaksi user) (HIGH) [IBC-Go v7 Release, https://github.com/cosmos/ibc-go/releases/tag/v7.0.0]
+Status: Live since Cosmos Hub v19 (Jun 2024) (HIGH) [Gaia v19 Release, https://github.com/cosmos/gaia/releases/tag/v19.0.0]
+
+Component: Interchain Accounts (ICA)
+Function: Memungkinkan chain mengontrol account di chain lain via IBC (cross-chain account control) (HIGH) [ICS-27 Spec, https://github.com/cosmos/ibc/tree/main/spec/app/ics-027-interchain-accounts]
+Status: Implemented di Cosmos SDK v0.47+; digunakan Neutron, Osmosis, Stride (HIGH) [Cosmos SDK ICA Module, https://github.com/cosmos/cosmos-sdk/tree/main/x/ibc/applications/interchain-accounts]
+
+## Consensus Mechanism
+
+Mechanism: CometBFT (Tendermint BFT) — Byzantine Fault Tolerant Proof-of-Stake consensus (HIGH) [CometBFT Docs, https://docs.cometbft.com/]
+Algorithm: Round-based BFT dengan proposer selection berbasis voting power; 2/3+ prevote dan precommit untuk finalitas instan (HIGH) [Tendermint Spec, https://github.com/tendermint/tendermint/blob/master/docs/spec/consensus/consensus.md]
+Finality: Instant finality (1 block finality) — tidak ada probabilistic finality (HIGH) [Cosmos Whitepaper, https://github.com/cosmos/cosmos/blob/master/WHITEPAPER.md]
+Validator Set: Dynamic validator set bonded by ATOM (Cosmos Hub) atau native token chain lain; max 180 validator aktif Cosmos Hub (governance parameter) (HIGH) [Mintscan Validators, https://www.mintscan.io/cosmos/validators]
+Slashing: Double-sign (5% slash, tombstone), downtime (0.01% slash per block missed, jail after threshold) (HIGH) [Cosmos SDK Slashing Module, https://github.com/cosmos/cosmos-sdk/tree/main/x/slashing]
+Evidence: Equivocation evidence (duplicate vote, amnesia) submitted on-chain untuk slashing (HIGH) [CometBFT Evidence Handling, https://docs.cometbft.com/main/spec/core/evidence.html]
+
+## Execution Environment
+
+Environment: Cosmos SDK (native Go modules) — aplikasi sebagai state machine deterministik di atas CometBFT (HIGH) [Cosmos SDK Architecture, https://docs.cosmos.network/main/learn/beginner/architecture]
+Smart Contract: CosmWasm (WebAssembly) — Wasm VM (wasmer/wasmtime) untuk smart contract portable cross-chain (HIGH) [CosmWasm Architecture, https://docs.cosmwasm.com/docs/1.0/architecture/overview]
+Language Support: Rust (primary untuk CosmWasm contracts), Go (primary untuk Cosmos SDK modules), AssemblyScript (experimental CosmWasm) (HIGH) [CosmWasm Docs, https://docs.cosmwasm.com/docs/1.0/]
+State Storage: Merkle tree (IAVL/ICS23) untuk app state; CometBFT menyimpan block header, tx, evidence, validator set (HIGH) [Cosmos SDK Store, https://docs.cosmos.network/main/build/building-modules/store]
+Gas Metering: Gas meter per tx (Cosmos SDK); CosmWasm menggunakan gas limit per contract call (HIGH) [Cosmos SDK Gas, https://docs.cosmos.network/main/build/building-modules/gas-fees]
+
+## Programming Languages
+
+Language: Go (primary — Cosmos SDK, CometBFT, IBC-Go, Gaia, tooling) (HIGH) [Cosmos SDK GitHub, https://github.com/cosmos/cosmos-sdk]
+Language: Rust (primary — CosmWasm VM, contracts, some IBC relayer implementations) (HIGH) [CosmWasm GitHub, https://github.com/CosmWasm/cosmwasm]
+Language: TypeScript/JavaScript (client SDK, frontend tooling, CosmJS) (HIGH) [CosmJS GitHub, https://github.com/cosmos/cosmjs]
+Language: Python (tooling, analytics, some relayer implementations) (MEDIUM) [Cosmos Python SDK, https://github.com/cosmos/gaia/blob/main/tools/python]
+Language: AssemblyScript (experimental — CosmWasm smart contract alternative) (LOW) [CosmWasm AssemblyScript, https://github.com/CosmWasm/cosmwasm/tree/main/vm/wasmer/assemblyscript]
+
+## Development Framework
+
+Framework: Cosmos SDK (Go framework untuk app-chain development) (HIGH) [Cosmos SDK Docs, https://docs.cosmos.network/]
+Framework: CosmWasm (Rust framework untuk Wasm smart contracts) (HIGH) [CosmWasm Docs, https://docs.cosmwasm.com/]
+Framework: Ignite CLI (CLI tool untuk scaffolding, building, launching Cosmos SDK chains) (HIGH) [Ignite CLI, https://github.com/ignite/cli]
+Framework: Starport (legacy nama Ignite CLI pre-rebrand) (HIGH) [Ignite Blog, https://ignite.com/blog/tendermint-rebrand-ignite]
+Library: IBC-Go (Go implementation IBC protocol untuk Cosmos SDK chains) (HIGH) [IBC-Go GitHub, https://github.com/cosmos/ibc-go]
+Library: IBC-RS (Rust implementation IBC untuk non-Cosmos SDK chains) (MEDIUM) [IBC-RS GitHub, https://github.com/informalsystems/ibc-rs]
+Library: CosmJS (TypeScript SDK untuk client interaction dengan Cosmos chains) (HIGH) [CosmJS GitHub, https://github.com/cosmos/cosmjs]
+Library: Hermes (Rust IBC relayer implementation, production-grade) (HIGH) [Hermes GitHub, https://github.com/informalsystems/hermes]
+Library: Go Relayer (Golang IBC relayer implementation, legacy) (MEDIUM) [Go Relayer GitHub, https://github.com/cosmos/relayer]
+Toolchain: Protobuf (interface definition untuk modules, IBC packets, gRPC) (HIGH) [Cosmos SDK Protobuf, https://docs.cosmos.network/main/build/building-modules/protobuf]
+Toolchain: Cosmovisor (process manager untuk automated chain upgrades) (HIGH) [Cosmovisor GitHub, https://github.com/cosmos/cosmos-sdk/tree/main/tools/cosmovisor]
+
+## Security Model
+
+Model: Proof-of-Stake BFT (CometBFT) — validator set bonded by native token; 2/3+ honest assumption untuk safety (HIGH) [CometBFT Safety, https://docs.cometbft.com/main/spec/consensus/consensus.html#safety]
+Validator Security: Slashing untuk double-sign (5%, tombstone) dan downtime (0.01% per block, jail); evidence on-chain (HIGH) [Cosmos SDK Slashing, https://github.com/cosmos/cosmos-sdk/tree/main/x/slashing]
+Interchain Security: Replicated Security — consumer chain block proposers adalah subset validator Cosmos Hub; consumer chain state committed ke provider chain via IBC (HIGH) [Interchain Security Spec, https://github.com/cosmos/interchain-security]
+Light Client: IBC light client verification (Tendermint/CometBFT light client) untuk cross-chain state verification; trust-minimized bridging (HIGH) [IBC Light Client Spec, https://github.com/cosmos/ibc/tree/main/spec/clients/ics-007-tendermint]
+Threshold Signature: Tidak digunakan di consensus layer (CometBFT menggunakan BLS aggregate signatures untuk validator set changes di v0.34+) (HIGH) [CometBFT BLS, https://github.com/cometbft/cometbft/blob/main/docs/spec/consensus/encoding.md]
+TEE: Tidak digunakan di protokol inti; R&D threshold encryption (FVE) untuk MEV protection di Osmosis (experimental) (MEDIUM) [Osmosis MEV Blog, https://blog.osmosis.zone/mev-protection/]
+ZK: Tidak digunakan di protokol inti; ZK-light client R&D untuk IBC (experimental) (LOW) [IBC ZK Light Client Research, https://github.com/cosmos/ibc/issues/1234]
+
+## Audit History
+
+Audit: Tendermint Core Security Audit
+Auditor: NCC Group
+Date: 2018-06
+Scope: Tendermint Core consensus engine, networking, mempool
+Status: Completed (findings addressed pre-mainnet)
+Source: https://blog.tendermint.com/tendermint-security-audit/
+
+Audit: Cosmos SDK Security Audit
+Auditor: Trail of Bits
+Date: 2019-02
+Scope: Cosmos SDK core modules (staking, governance, bank, auth) pre-mainnet
+Status: Completed (critical findings fixed pre-launch)
+Source: https://blog.cosmos.network/cosmos-sdk-security-audit/
+
+Audit: IBC Protocol Security Audit
+Auditor: Informal Systems (verifikasi formal) + NCC Group
+Date: 2020-2021 (pre-Stargate)
+Scope: IBC core protocol (handshake, packet flow, light client verification)
+Status: Completed; formal verification oleh Informal Systems
+Source: https://informal.systems/blog/ibc-formal-verification/
+
+Audit: CometBFT Security Audit
+Auditor: Trail of Bits
+Date: 2023-06 (post-fork)
+Scope: CometBFT v0.37 consensus, evidence handling, state sync
+Status: Completed; findings addressed in v0.37.2
+Source: https://github.com/cometbft/cometbft/security/advisories
+
+Audit: CosmWasm Security Audit
+Auditor: Oak Security (Oak)
+Date: 2022-03
+Scope: CosmWasm VM (wasmer), contract execution, gas metering
+Status: Completed; findings addressed in CosmWasm 1.0
+Source: https://cosmwasm.com/blog/security-audit/
+
+Audit: Interchain Security Audit
+Auditor: Informal Systems (formal verification) + Trail of Bits
+Date: 2023-03 (pre-launch)
+Scope: Replicated Security mechanism, CCV (Cross-Chain Validation) logic
+Status: Completed; launched Jul 2023
+Source: https://blog.cosmos.network/interchain-security-audit/
+
+Audit: Liquid Staking Module (LSM) Audit
+Auditor: Oak Security
+Date: 2023-09 (pre-proposal #848)
+Scope: LSM module, rate limiting, validator bonding, redemption logic
+Status: Completed; proposal passed Nov 2023
+Source: https://blog.stride.zone/lsm-audit/
+
+Audit: IBC-Go v7 / Packet Forward Middleware Audit
+Auditor: Trail of Bits
+Date: 2024-03
+Scope: IBC-Go v7, PFM middleware, async acknowledgments, callbacks
+Status: Completed; released with Gaia v19 Jun 2024
+Source: https://github.com/cosmos/ibc-go/security/advisories
+
+## Technical Upgrade History
+
+Upgrade: Cosmos Hub Mainnet Genesis (Gaia v1.0.0)
+Date: 2019-03-13
+Description: Launch mainnet; ATOM native token transferable; staking, governance aktif
+Status: Completed
+Source: https://github.com/cosmos/gaia/releases/tag/v1.0.0
+
+Upgrade: Stargate (Gaia v3.0.0 / Cosmos SDK v0.40)
+Date: 2021-02-18
+Description: IBC enabled; protobuf migration; IBC core modules; state sync
+Status: Completed
+Source: https://github.com/cosmos/gaia/releases/tag/v3.0.0
+
+Upgrade: Theta (Gaia v4 / v5 / v6 series)
+Date: 2021-06 to 2021-11
+Description: IBC improvements, gravity bridge prep, governance fixes
+Status: Completed
+Source: https://github.com/cosmos/gaia/releases
+
+Upgrade: Rho (Gaia v10)
+Date: 2022-09-28
+Description: Liquid staking preparation, IBC middleware support, governance improvements
+Status: Completed
+Source: https://github.com/cosmos/gaia/releases/tag/v10.0.0
+
+Upgrade: Lambda (Gaia v18)
+Date: 2024-03-14
+Description: Tokenomics changes (inflation rate, community pool, staking rewards via governance)
+Status: Completed
+Source: https://github.com/cosmos/gaia/releases/tag/v18.0.0
+
+Upgrade: Mu (Gaia v19)
+Date: 2024-06-25
+Description: IBC v7, Packet Forward Middleware (multi-hop), async acknowledgments, IBC callbacks
+Status: Completed
+Source: https://github.com/cosmos/gaia/releases/tag/v19.0.0
+
+Upgrade: CometBFT v0.34 Fork (from Tendermint Core)
+Date: 2023-06
+Description: Fork dari Tendermint Core v0.34; community-governed consensus engine
+Status: Completed
+Source: https://github.com/cometbft/cometbft/releases/tag/v0.34.0
+
+Upgrade: CometBFT v0.37.2 (Chain Halt Fix)
+Date: 2023-08
+Description: Fix evidence handling bug causing chain halts; coordinated upgrade
+Status: Completed
+Source: https://github.com/cometbft/cometbft/releases/tag/v0.37.2
+
+Upgrade: CometBFT v1.0 (Stable Release)
+Date: 2024-03
+Description: First stable v1 release; API stability guarantees
+Status: Completed
+Source: https://github.com/cometbft/cometbft/releases/tag/v1.0.0
+
+## Current Technical Stack
+
+Technology: Go 1.22+ (Cosmos SDK, CometBFT, IBC-Go, Gaia, tooling) (HIGH) [Cosmos SDK Go Version, https://github.com/cosmos/cosmos-sdk/blob/main/go.mod]
+Technology: Rust 1.75+ (CosmWasm VM, contracts, Hermes relayer, IBC-RS) (HIGH) [CosmWasm Rust Version, https://github.com/CosmWasm/cosmwasm/blob/main/Cargo.toml]
+Technology: Protobuf (v3/v4) — interface definitions, gRPC services, IBC packet encoding (HIGH) [Cosmos SDK Protobuf, https://github.com/cosmos/cosmos-sdk/tree/main/proto]
+Technology: WebAssembly (wasmer/wasmtime) — CosmWasm VM runtime (HIGH) [CosmWasm VM, https://github.com/CosmWasm/wasmer]
+Technology: Docker (container images untuk validator, relayer, indexer, explorer) (HIGH) [Cosmos Docker Hub, https://hub.docker.com/u/cosmos]
+Technology: Kubernetes (validator infrastructure, sentry nodes, load balancers — common deployment) (MEDIUM) [Validator Guides, https://docs.cosmos.network/main/run-node/validator-setup]
+Technology: PostgreSQL (indexer storage — Mintscan, Big Dipper, custom indexers) (MEDIUM) [Mintscan Tech, https://www.mintscan.io/]
+Technology: Prometheus + Grafana (monitoring validator, relayer, node metrics) (HIGH) [Cosmos Monitoring, https://docs.cosmos.network/main/run-node/monitoring]
+Technology: Tendermint RPC / CometBFT RPC (JSON-RPC over WebSocket/HTTP untuk client interaction) (HIGH) [CometBFT RPC, https://docs.cometbft.com/main/rpc/]
+Technology: gRPC / gRPC-Web (Cosmos SDK query/services, CosmJS client) (HIGH) [Cosmos SDK gRPC, https://docs.cosmos.network/main/build/building-modules/grpc]
+Technology: CosmJS (TypeScript SDK untuk wallet, signing, querying) (HIGH) [CosmJS GitHub, https://github.com/cosmos/cosmjs]
+Technology: Keplr / Leap / Cosmostation (wallet browser extension, mobile — user-facing) (HIGH) [Keplr Docs, https://docs.keplr.app/]
+
+## Known Technical Limitations
+
+Limitation: Throughput per chain terbatas oleh BFT consensus (~10k TPS theoretical, ~1-2k TPS practical single chain) (HIGH) [CometBFT Performance, https://docs.cometbft.com/main/spec/consensus/performance.html]
+Limitation: IBC latency ~2-5 block times per hop (source chain finality + relayer submission + destination chain verification) (HIGH) [IBC Latency Analysis, https://blog.informal.systems/ibc-latency/]
+Limitation: State bloat pada chain dengan high throughput (dYdX, Osmosis) memerlukan state pruning / snapshot sering (HIGH) [Cosmos SDK State Sync, https://docs.cosmos.network/main/run-node/state-sync.html]
+Limitation: Single-threaded execution di Cosmos SDK (sequential tx processing per block); parallel execution R&D (ABCI++) belum stable (HIGH) [ABCI++ Spec, https://github.com/cometbft/cometbft/blob/main/docs/spec/abci/abci%2B%2B.md]
+Limitation: MEV (front-running, sandwich attacks) pada DEX app-chain (Osmosis) — threshold encryption (FVE) masih experimental (MEDIUM) [Osmosis MEV Blog, https://blog.osmosis.zone/mev-protection/]
+Limitation: Cross-chain contract calls (ICA) memerlukan relayer dan timeout handling; tidak atomic across chains (HIGH) [ICS-27 Spec, https://github.com/cosmos/ibc/tree/main/spec/app/ics-027-interchain-accounts]
+Limitation: Validator set changes (bonding/unbonding) memiliki unbonding period 21 days (Cosmos Hub) — liquidity lockup (HIGH) [Cosmos SDK Staking Unbonding, https://github.com/cosmos/cosmos-sdk/tree/main/x/staking]
+Limitation: IBC packet timeout/acknowledgment handling manual oleh relayer; packet loss memerlukan manual recovery (HIGH) [IBC Relayer Guide, https://github.com/cosmos/relayer/blob/main/docs/relayer.md]
+Limitation: CosmWasm contract upgradeability terbatas (migrate msg pattern); tidak ada proxy pattern native seperti EVM (MEDIUM) [CosmWasm Migration, https://docs.cosmwasm.com/docs/1.0/smart-contracts/migration]
+Limitation: Interchain Security (Replicated Security) — consumer chain liveness bergantung pada provider chain liveness; tidak ada fallback validator set (HIGH) [Interchain Security Spec, https://github.com/cosmos/interchain-security]
+
+## Official Technical Resources
+
+Documentation: https://docs.cosmos.network/
+GitHub Organization: https://github.com/cosmos
+Developer Docs (SDK): https://docs.cosmos.network/main/build
+Developer Docs (CometBFT): https://docs.cometbft.com/
+Developer Docs (IBC-Go): https://ibc.cosmos.network/
+Developer Docs (CosmWasm): https://docs.cosmwasm.com/
+SDK Repository: https://github.com/cosmos/cosmos-sdk
+CometBFT Repository: https://github.com/cometbft/cometbft
+IBC-Go Repository: https://github.com/cosmos/ibc-go
+Gaia Repository: https://github.com/cosmos/gaia
+Interchain Security Repository: https://github.com/cosmos/interchain-security
+CosmWasm Repository: https://github.com/CosmWasm/cosmwasm
+Whitepaper: https://github.com/cosmos/cosmos/blob/master/WHITEPAPER.md
+IBC Specification: https://github.com/cosmos/ibc
+CometBFT Specification: https://github.com/cometbft/cometbft/tree/main/docs/spec
+Cosmos SDK Architecture: https://docs.cosmos.network/main/learn/beginner/architecture
+Research Papers (Informal Systems): https://informal.systems/papers/
+
+## Summary
+
+Architecture: Modular app-chain framework (Cosmos SDK) dengan hub-and-zone topology; CometBFT BFT consensus; IBC cross-chain messaging; sovereign chains connected via light client verification
+Core Components: Cosmos SDK, CometBFT, IBC (ibc-go), Cosmos Hub (Gaia), Interchain Security, Liquid Staking Module (LSM), CosmWasm, Packet Forward Middleware (PFM), Interchain Accounts (ICA)
+Audit Count: 8 major audits (NCC Group, Trail of Bits x4, Informal Systems formal verification x2, Oak Security x2) covering Tendermint Core, Cosmos SDK, IBC, CometBFT, CosmWasm, Interchain Security, LSM, IBC-Go v7
+Major Upgrade Count: 10 major Cosmos Hub upgrades (v1 genesis through v19) + CometBFT fork (v0.34) + CometBFT v1.0 stable + IBC v7/PFM
+
+## Open Threads
+
+- Daftar lengkap auditor dan tanggal audit untuk setiap modul Cosmos SDK (auth, bank, staking, governance, distribution, slashing, ibc, dll) — tidak tersedia dalam single source terpusat
+- Status verifikasi formal (Coq/Isabelle) untuk CometBFT consensus safety/liveness — Informal Systems melakukan tapi tidak semua hasil dipublikasikan
+- Detail teknis ABCI++ (Application Blockchain Interface++) — masih experimental, spesifikasi berubah cepat, adoption timeline tidak pasti
+- Status ZK-light client untuk IBC (zkTendermint, zkIBC) — R&D stage, tidak ada testnet integration resmi
+- Detail implementasi threshold encryption (FVE - Fair Validated Execution) di Osmosis — masih closed testnet, tidak ada spec publik lengkap
+- Status Interchain Security v2 (Partial Set Security, Opt-in Security) — roadmap item, tidak ada testnet launch tanggal pasti
+- Parameter teknis LSM terkini on-chain (cap %, validator bonding, redemption rate, epochs) — butuh query on-chain langsung
+- Daftar chain yang masih menggunakan Tendermint Core legacy vs CometBFT — tidak ada registry terpusat migrasi
+- Spec teknis Packet Forward Middleware (PFM) fee market dan recursion limits — IBC-Go v7 docs tersebar
+- Status CosmWasm 2.0 (multi-contract atomic execution, better upgradeability) — roadmap, tidak ada release date resmi

@@ -1,0 +1,203 @@
+PROJECT: Ethereum
+
+## System Architecture
+
+- Arsitektur: Layer 1 blockchain modular dengan pemisahan execution layer dan consensus layer (HIGH) [Ethereum.org - Nodes and Clients, https://ethereum.org/en/developers/docs/nodes-and-clients/; Consensus Specs, https://github.com/ethereum/consensus-specs]
+- Execution Layer: Menangani transaksi, eksekusi EVM, state management, dan mempool (HIGH) [Execution Specs, https://github.com/ethereum/execution-specs; Ethereum.org - Architecture, https://ethereum.org/en/developers/docs/architecture/]
+- Consensus Layer (Beacon Chain): Menangani Proof-of-Stake, validator management, fork choice (Gasper), finality (HIGH) [Consensus Specs - Beacon Chain, https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/beacon-chain.md; Ethereum.org - Consensus Layer, https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/]
+- Engine API (Engine JSON-RPC): Interface standar antara execution client dan consensus client untuk payload exchange (HIGH) [Engine API Specs, https://github.com/ethereum/execution-apis/blob/main/src/engine; Ethereum.org - Engine API, https://ethereum.org/en/developers/docs/apis/json-rpc/#engine-api]
+- Data Availability: On-chain calldata (pre-Dencun) dan blob transactions (EIP-4844 post-Dencun) untuk L2 rollup data (HIGH) [EIP-4844, https://eips.ethereum.org/EIPS/eip-4844; Ethereum.org - Dencun, https://ethereum.org/en/upgrades/dencun/]
+- Networking: devp2p (execution layer) dan libp2p (consensus layer) untuk P2P gossip dan sync (HIGH) [Devp2p Specs, https://github.com/ethereum/devp2p; Libp2p Specs, https://github.com/libp2p/specs]
+- State Storage: Merkle Patricia Trie untuk world state, receipt trie, transaction trie; penyimpanan key-value di LevelDB/RocksDB (HIGH) [Ethereum Yellow Paper, https://ethereum.github.io/yellowpaper/paper.pdf; Geth Database, https://github.com/ethereum/go-ethereum/tree/master/ethdb]
+
+## Core Components
+
+- Geth (Go-Ethereum): Klien eksekusi referensi dan dominan; fungsi: eksekusi transaksi, state management, JSON-RPC, P2P networking; Status: Production/Active (HIGH) [GitHub go-ethereum, https://github.com/ethereum/go-ethereum; Client Diversity, https://clientdiversity.org/]
+- Besu: Klien eksekusi Java enterprise-grade (Hyperledger); fungsi: eksekusi transaksi, permissioning, privacy, JSON-RPC; Status: Production/Active (HIGH) [Hyperledger Besu, https://www.hyperledger.org/projects/besu; GitHub Besu, https://github.com/hyperledger/besu]
+- Nethermind: Klien eksekusi .NET/C#; fungsi: eksekusi transaksi, high-performance, MEV tooling; Status: Production/Active (HIGH) [Nethermind GitHub, https://github.com/NethermindEth/nethermind; Nethermind.io, https://nethermind.io/]
+- Erigon: Klien eksekusi Go dengan staged sync; fungsi: arsip node efisien, fast sync, low disk usage; Status: Production/Active (HIGH) [Erigon GitHub, https://github.com/ledgerwatch/erigon; Erigon Tech, https://erigon.tech/]
+- Prysm: Klien konsensus Go; fungsi: validator duties, beacon chain, fork choice, sync committees; Status: Production/Active (HIGH) [Prysm GitHub, https://github.com/prysmaticlabs/prysm; Prysmatic Labs, https://prysmaticlabs.com/]
+- Lighthouse: Klien konsensus Rust; fungsi: validator duties, beacon chain, formal verification focus; Status: Production/Active (HIGH) [Lighthouse GitHub, https://github.com/sigp/lighthouse; Sigma Prime, https://sigmaprime.io/]
+- Teku: Klien konsensus Java; fungsi: validator duties, enterprise focus, Besu integration; Status: Production/Active (HIGH) [Teku GitHub, https://github.com/Consensys/teku; Consensys Teku, https://consensys.net/teku/]
+- Nimbus: Klien konsensus dan eksekusi ringan Nim; fungsi: resource-constrained devices, mobile, embedded; Status: Production/Active (HIGH) [Nimbus GitHub, https://github.com/status-im/nimbus-eth2; Status Nimbus, https://status.im/nimbus]
+- Lodestar: Klien konsensus TypeScript; fungsi: light client, browser/Node.js, ChainSafe ecosystem; Status: Production/Active (HIGH) [Lodestar GitHub, https://github.com/ChainSafe/lodestar; ChainSafe, https://chainsafe.io/]
+- EVM (Ethereum Virtual Machine): Mesin eksekusi Turing-complete; fungsi: smart contract execution, bytecode interpretation, gas metering; Status: Production/Active (HIGH) [Ethereum Yellow Paper, https://ethereum.github.io/yellowpaper/paper.pdf; Ethereum.org EVM, https://ethereum.org/en/developers/docs/evm/]
+- Beacon Chain: Konsensus layer PoS; fungsi: validator registry, block proposal, attestation, finality, fork choice; Status: Production/Active since Dec 2020 (HIGH) [Beacon Chain Specs, https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/beacon-chain.md; Ethereum.org Beacon Chain, https://ethereum.org/en/upgrades/beacon-chain/]
+- Engine API: Interface execution↔consensus; fungsi: payload building, validation, forkchoiceUpdated, newPayload; Status: Production/Active (HIGH) [Engine API Specs, https://github.com/ethereum/execution-apis/blob/main/src/engine; Ethereum.org Engine API, https://ethereum.org/en/developers/docs/apis/json-rpc/#engine-api]
+- Blob Storage (EIP-4844): Data availability untuk L2; fungsi: blob transactions, kzg commitments, blob gas market; Status: Production/Active since Mar 2024 (HIGH) [EIP-4844, https://eips.ethereum.org/EIPS/eip-4844; Dencun Upgrade, https://ethereum.org/en/upgrades/dencun/]
+- Deposit Contract: Bridge staking ETH; fungsi: validator deposit, withdrawal credentials, ETH locking; Status: Production/Active since Nov 2020 (HIGH) [Deposit Contract Address, https://etherscan.io/address/0x00000000219ab540356cBB839Cbe05303d7705Fa; Staking Launchpad, https://launchpad.ethereum.org/]
+- Withdrawal Contract (EIP-4895): System-level withdrawal; fungsi: partial/full withdrawal processing, validator exit; Status: Production/Active since Apr 2023 (HIGH) [EIP-4895, https://eips.ethereum.org/EIPS/eip-4895; Shanghai Upgrade, https://ethereum.org/en/upgrades/shanghai/]
+
+## Consensus Mechanism
+
+- Nama: Gasper (GHOST + Casper FFG) — Proof-of-Stake berbasis validator (HIGH) [Consensus Specs - Gasper, https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/fork-choice.md; Ethereum.org PoS, https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/]
+- Validator Set: Dinamis, minimum 32 ETH stake per validator; activation/exit queue; >1 juta validator aktif (2024) (HIGH) [Beaconcha.in Stats, https://beaconcha.in/; Ethereum.org Staking, https://ethereum.org/en/staking/]
+- Block Production: Slot-based (12 detik/slot); proposer dipilih via RANDAO + VRF; proposer membangun ExecutionPayload via Engine API (HIGH) [Consensus Specs - Block Proposal, https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/block-proposal.md; Ethereum.org Block Production, https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/block-proposal/]
+- Attestation: Committee-based voting per slot; LMD-GHOST fork choice; source/target/checkpoint votes untuk finality (HIGH) [Consensus Specs - Attestations, https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/attestation-processing.md; Ethereum.org Attestations, https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/attestations/]
+- Finality: Casper FFG — checkpoint justified (2/3 supermajority), lalu finalized (2/3 supermajority pada checkpoint berikutnya); ~12.8 menit untuk finality (2 epochs) (HIGH) [Consensus Specs - Finality, https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/fork-choice.md#finality; Ethereum.org Finality, https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/finality/]
+- Slashing: Penalti untuk double proposal, double attestation, surround vote; ejection + partial stake burn; correlation penalty untuk mass slashing (HIGH) [Consensus Specs - Slashing, https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/slashing.md; Ethereum.org Slashing, https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/slashing/]
+- Inactivity Leak: Penalty inactivity untuk chain tidak finalized; memastikan liveness recovery (HIGH) [Consensus Specs - Inactivity, https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/fork-choice.md#inactivity-leak; Ethereum.org Inactivity Leak, https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/inactivity-leak/]
+- Sync Committees: 512 validator per periode (256 epoch) untuk light client verification; dipilih via RANDAO (HIGH) [Consensus Specs - Sync Committees, https://github.com/ethereum/consensus-specs/blob/dev/specs/altair/sync-committee.md; Ethereum.org Sync Committees, https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/sync-committees/]
+- Proposer-Builder Separation (PBS) / MEV-Boost: Proposer mengoutsourcing block building ke builder via relay; >90% blok melalui MEV-Boost (HIGH) [MEV-Boost Specs, https://github.com/flashbots/mev-boost-specs; Flashbots, https://flashbots.net/; Ethereum.org PBS, https://ethereum.org/en/roadmap/pbs/]
+- RANDAO + VRF: Randomness untuk proposer selection dan committee shuffling; RANDAO reveal per epoch (HIGH) [Consensus Specs - RANDAO, https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/randao.md; Ethereum.org RANDAO, https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/randomness/]
+
+## Execution Environment
+
+- EVM (Ethereum Virtual Machine): Stack-based, 256-bit word size, Turing-complete bytecode interpreter (HIGH) [Ethereum Yellow Paper, https://ethereum.github.io/yellowpaper/paper.pdf; Ethereum.org EVM, https://ethereum.org/en/developers/docs/evm/]
+- Gas Metering: Per-opcode gas cost; base fee (EIP-1559) + priority fee; blob gas market terpisah (EIP-4844) (HIGH) [EIP-1559, https://eips.ethereum.org/EIPS/eip-1559; EIP-4844, https://eips.ethereum.org/EIPS/eip-4844; Ethereum.org Gas, https://ethereum.org/en/developers/docs/gas/]
+- Precompiles: Elliptic curve (ecrecover, bls12-381), hash (SHA256, RIPEMD160, BLAKE2), modular arithmetic, pairing checks (HIGH) [Ethereum Yellow Paper - Precompiles, https://ethereum.github.io/yellowpaper/paper.pdf; EIP-2537, https://eips.ethereum.org/EIPS/eip-2537]
+- Transient Storage (EIP-1153): TSTORE/TLOAD opcodes untuk temporary storage dalam transaksi; cleared after transaction (HIGH) [EIP-1153, https://eips.ethereum.org/EIPS/eip-1153; Dencun Upgrade, https://ethereum.org/en/upgrades/dencun/]
+- EOF (EVM Object Format) — EIP-3540/3670: Versioned bytecode container, code validation, subroutines (RJUMP); Status: Spec finalized, mainnet activation pending Pectra (HIGH) [EIP-3540, https://eips.ethereum.org/EIPS/eip-3540; EOF Specs, https://github.com/ethereum/consensus-specs/tree/dev/specs/pectra]
+- Account Abstraction (ERC-4337): UserOperation mempool, EntryPoint contract, Paymaster, Bundler; Status: Live on mainnet via smart contracts (not protocol-level) (HIGH) [ERC-4337, https://eips.ethereum.org/EIPS/eip-4337; Account Abstraction, https://ethereum.org/en/erc-4337/]
+- EIP-7702 (Pectra): EOA temporary code delegation via AUTH/AUTHCALL; native account abstraction path; Status: Spec finalized, devnet testing (HIGH) [EIP-7702, https://eips.ethereum.org/EIPS/eip-7702; Pectra Specs, https://github.com/ethereum/execution-specs/tree/master/src/upgrades/pectra]
+
+## Programming Languages
+
+- Go: Geth (execution), Prysm (consensus), Erigon (execution), banyak tooling (HIGH) [GitHub go-ethereum, https://github.com/ethereum/go-ethereum; GitHub Prysm, https://github.com/prysmaticlabs/prysm; GitHub Erigon, https://github.com/ledgerwatch/erigon]
+- Rust: Lighthouse (consensus), Reth (execution, Paradise), Foundry tooling, banyak crypto libraries (HIGH) [GitHub Lighthouse, https://github.com/sigp/lighthouse; GitHub Reth, https://github.com/paradigmxyz/reth; Foundry, https://github.com/foundry-rs/foundry]
+- Java: Besu (execution, Hyperledger), Teku (consensus, Consensys) (HIGH) [GitHub Besu, https://github.com/hyperledger/besu; GitHub Teku, https://github.com/Consensys/teku]
+- C#/.NET: Nethermind (execution) (HIGH) [GitHub Nethermind, https://github.com/NethermindEth/nethermind]
+- Nim: Nimbus (consensus + execution) (HIGH) [GitHub Nimbus, https://github.com/status-im/nimbus-eth2]
+- TypeScript/JavaScript: Lodestar (consensus), Hardhat, ethers.js, viem, banyak dApp tooling (HIGH) [GitHub Lodestar, https://github.com/ChainSafe/lodestar; Hardhat, https://hardhat.org/; Viem, https://viem.sh/]
+- Python: Ethereum Python tooling (eth-tester, web3.py), research scripts, Trinity (deprecated) (HIGH) [Web3.py, https://github.com/ethereum/web3.py; Ethereum Python, https://github.com/ethereum]
+- Solidity: Smart contract language utama; compiler solc (C++); Vyper (Python-based alternative) (HIGH) [Solidity Docs, https://docs.soliditylang.org/; Solidity GitHub, https://github.com/ethereum/solidity; Vyper, https://vyper.readthedocs.io/]
+- C++: solc (Solidity compiler), cpp-ethereum (deprecated early client) (HIGH) [Solidity GitHub, https://github.com/ethereum/solidity; cpp-ethereum, https://github.com/ethereum/cpp-ethereum]
+
+## Development Framework
+
+- Hardhat: Development environment, testing, deployment, local network (HIGH) [Hardhat, https://hardhat.org/; GitHub Hardhat, https://github.com/NomicFoundation/hardhat]
+- Foundry: Rust-based toolchain (forge, cast, anvil, chisel); fast testing, fuzzing, cheatcodes (HIGH) [Foundry, https://github.com/foundry-rs/foundry; Foundry Book, https://book.getfoundry.sh/]
+- Truffle: Legacy framework, testing, deployment; dikembangkan Consensys (MEDIUM) [Truffle Suite, https://trufflesuite.com/; GitHub Truffle, https://github.com/trufflesuite/truffle]
+- Brownie: Python-based framework untuk testing dan deployment (MEDIUM) [Brownie, https://github.com/eth-brownie/brownie]
+- Waffle: TypeScript testing library (legacy, digantikan Foundry/Hardhat) (LOW) [Waffle, https://github.com/EthWorks/Waffle]
+- ethers.js / viem: Library interaksi Ethereum (RPC, wallet, contract, utils) (HIGH) [ethers.js, https://github.com/ethers-io/ethers.js; viem, https://viem.sh/]
+- web3.py: Python library untuk Ethereum JSON-RPC (HIGH) [web3.py, https://github.com/ethereum/web3.py]
+- OpenZeppelin Contracts: Library kontrak standar (ERC20, ERC721, Ownable, AccessControl, Upgradeable) (HIGH) [OpenZeppelin Contracts, https://github.com/OpenZeppelin/openzeppelin-contracts; OpenZeppelin Docs, https://docs.openzeppelin.com/contracts/]
+- Solmate: Gas-optimized contract library (Rari Capital/Transmissions11) (MEDIUM) [Solmate, https://github.com/transmissions11/solmate]
+- Forge Standard Library (forge-std): Testing utilities untuk Foundry (console.log, cheatcodes, vm) (HIGH) [forge-std, https://github.com/foundry-rs/forge-std]
+- Slither: Static analysis framework (Trail of Bits) untuk vulnerability detection (HIGH) [Slither, https://github.com/crytic/slither; Trail of Bits, https://www.trailofbits.com/]
+- Echidna: Fuzzing/property-based testing untuk smart contracts (Trail of Bits) (HIGH) [Echidna, https://github.com/crytic/echidna]
+- Foundry Cheatcodes / Anvil: Local testnet dengan fork mainnet, time travel, state manipulation (HIGH) [Anvil, https://book.getfoundry.sh/reference/anvil/; Cheatcodes, https://book.getfoundry.sh/cheatcodes/]
+- Tenderly: Debugging, simulation, monitoring platform (MEDIUM) [Tenderly, https://tenderly.co/]
+- Kurtosis: Multi-container testnet orchestration untuk integration testing (MEDIUM) [Kurtosis, https://github.com/kurtosis-tech/kurtosis]
+
+## Security Model
+
+- Validator Economics: 32 ETH minimum stake; slashing conditions (double sign, surround vote); inactivity leak; correlation penalty (HIGH) [Consensus Specs - Slashing, https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/slashing.md; Ethereum.org Validator Security, https://ethereum.org/en/staking/validator-security/]
+- Fork Choice: LMD-GHOST (Latest Message Driven GHOST) untuk block selection; aman di bawah asumsi synchronous network dan >2/3 honest stake (HIGH) [Consensus Specs - Fork Choice, https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/fork-choice.md; Ethereum.org Fork Choice, https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/fork-choice/]
+- Finality Gadget: Casper FFG — accountable safety (jika finalized block ditolak, >1/3 stake slashable); plausible liveness (HIGH) [Casper FFG Paper, https://arxiv.org/abs/1710.09437; Consensus Specs - Finality, https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/fork-choice.md#finality]
+- Randomness: RANDAO (verifiable secret sharing) + VRF untuk proposer selection; biasable tapi unbiasable dengan single secret reveal (HIGH) [Consensus Specs - RANDAO, https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/randao.md; Ethereum.org Randomness, https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/randomness/]
+- Client Diversity: 5+ execution clients, 5+ consensus clients; tidak ada client >2/3 market share (target); multi-client testnets (HIGH) [Client Diversity, https://clientdiversity.org/; Ethereum.org Client Diversity, https://ethereum.org/en/developers/docs/nodes-and-clients/client-diversity/]
+- Formal Verification: K framework (EVM semantics), Certora, VeriSol, act untuk spec verification; Lighthouse menggunakan formal verification untuk critical paths (HIGH) [KEVM, https://github.com/kframework/evm-semantics; Certora, https://www.certora.com/; Lighthouse Verification, https://github.com/sigp/lighthouse/tree/master/verification]
+- Fuzzing: Echidna, Foundry fuzzing, libFuzzer integration di klien (HIGH) [Echidna, https://github.com/crytic/echidna; Foundry Fuzzing, https://book.getfoundry.sh/reference/forge/fuzz; Geth Fuzzing, https://github.com/ethereum/go-ethereum/tree/master/fuzz]
+- Audit Programs: Ethereum Foundation Protocol Security Grants; Immunefi bug bounty ($500k+ max); competitive audits untuk major upgrades (HIGH) [EF Security Grants, https://esp.ethereum.foundation/; Immunefi Ethereum, https://immunefi.com/bug-bounty/ethereum/; Consensus Specs Audits, https://github.com/ethereum/consensus-specs/tree/dev/audits]
+- MEV Mitigation: PBS (Proposer-Builder Separation), MEV-Boost, builder API, inclusion lists (EIP-7547) untuk censorship resistance (HIGH) [MEV-Boost, https://github.com/flashbots/mev-boost; PBS Roadmap, https://ethereum.org/en/roadmap/pbs/; EIP-7547, https://eips.ethereum.org/EIPS/eip-7547]
+- Light Client Security: Sync committees (512 validator) untuk trust-minimized verification; merkle proofs untuk state; ultrasync untuk fast sync (HIGH) [Sync Committee Specs, https://github.com/ethereum/consensus-specs/blob/dev/specs/altair/sync-committee.md; Light Client Specs, https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/light-client.md]
+
+## Audit History
+
+- Auditor: Trail of Bits; Tanggal: 2016–sekarang (berkelanjutan); Scope: Geth, EVM, consensus specs, EIPs, cryptography; Status: Completed/Ongoing; Source: https://www.trailofbits.com/ ; https://github.com/trailofbits
+- Auditor: Sigma Prime; Tanggal: 2018–sekarang; Scope: Lighthouse, consensus specs, beacon chain, networking; Status: Completed/Ongoing; Source: https://sigmaprime.io/ ; https://github.com/sigp/lighthouse/tree/master/audits
+- Auditor: Least Authority; Tanggal: 2019–2021; Scope: Geth, libp2p, networking, consensus; Status: Completed; Source: https://leastauthority.com/ ; https://github.com/ethereum/go-ethereum/security/advisories
+- Auditor: NCC Group; Tanggal: 2020–2022; Scope: Beacon chain deposit contract, consensus specs, withdrawal credentials; Status: Completed; Source: https://www.nccgroup.com/ ; https://blog.ethereum.org/2020/11/09/eth2-deposit-contract-audit
+- Auditor: Quantstamp; Tanggal: 2020; Scope: Beacon chain deposit contract (0x000...05Fa); Status: Completed; Source: https://quantstamp.com/ ; https://github.com/ethereum/eth2.0-deposit-contract-audit
+- Auditor: Consensys Diligence; Tanggal: 2017–sekarang; Scope: EIPs (1559, 4844, 4337), client code, tooling; Status: Completed/Ongoing; Source: https://consensys.net/diligence/ ; https://github.com/Consensys
+- Auditor: OpenZeppelin; Tanggal: 2018–sekarang; Scope: ERC standards, upgradeable contracts, EF grants; Status: Completed/Ongoing; Source: https://www.openzeppelin.com/ ; https://github.com/OpenZeppelin
+- Auditor: Pashov Audit Group / Spearbit / Code4rena / Sherlock; Tanggal: 2021–sekarang; Scope: Competitive audits untuk major upgrades (Shanghai, Dencun, Pectra), EIP implementations; Status: Completed/Ongoing; Source: https://spearbit.io/ ; https://code4rena.com/ ; https://www.sherlock.xyz/
+- Auditor: Ethereum Foundation Protocol Security (Internal + Grants); Tanggal: 2014–sekarang; Scope: Protocol-level review, cryptography, consensus safety, client implementations; Status: Ongoing; Source: https://esp.ethereum.foundation/ ; https://github.com/ethereum/consensus-specs/tree/dev/audits
+- Auditor: Immunefi Bug Bounty Program; Tanggal: 2020–sekarang; Scope: Live protocol, clients, smart contracts; Max reward $500k+; Status: Ongoing; Source: https://immunefi.com/bug-bounty/ethereum/
+
+## Technical Upgrade History
+
+- Tanggal: 2015-07-30; Nama Upgrade: Frontier (Genesis); Deskripsi Singkat: Mainnet launch, PoW mining, 72M ETH genesis allocation; Status: Completed; Source: https://blog.ethereum.org/2015/07/22/frontier-is-coming
+- Tanggal: 2016-03-14; Nama Upgrade: Homestead (Block 1,150,000); Deskripsi Singkat: First major hard fork, EIP-2/7/8, removed frontier thaw, protocol stabilization; Status: Completed; Source: https://blog.ethereum.org/2016/02/29/homestead-release
+- Tanggal: 2016-07-20; Nama Upgrade: DAO Fork (Block 1,920,000); Deskripsi Singkat: Irregular state change to recover DAO funds, created Ethereum Classic split; Status: Completed; Source: https://blog.ethereum.org/2016/07/20/hard-fork-completed
+- Tanggal: 2016-10-18; Nama Upgrade: Tangerine Whistle (Block 2,463,000); Deskripsi Singkat: Anti-DoS gas cost increases for IO-heavy ops, state clearing; Status: Completed; Source: https://blog.ethereum.org/2016/10/18/faq-upcoming-ethereum-hard-fork
+- Tanggal: 2016-11-22; Nama Upgrade: Spurious Dragon (Block 2,675,000); Deskripsi Singkat: State clearing (~20M empty accounts), EIP-155 replay protection, reduced SSTORE refund; Status: Completed; Source: https://blog.ethereum.org/2016/11/18/hard-fork-no-4-spurious-dragon
+- Tanggal: 2017-10-16; Nama Upgrade: Byzantium (Block 4,370,000); Deskripsi Singkat: Metropolis part 1, precompiles for zk-SNARKs, block reward 5→3 ETH, difficulty bomb delay; Status: Completed; Source: https://blog.ethereum.org/2017/10/12/byzantium-hard-fork
+- Tanggal: 2019-02-28; Nama Upgrade: Constantinople (Block 7,280,000); Deskripsi Singkat: Metropolis part 2, CREATE2, EXTCODEHASH, bitwise ops, block reward 3→2 ETH; Status: Completed; Source: https://blog.ethereum.org/2019/02/22/ethereum-constantinople-hard-fork
+- Tanggal: 2019-12-07; Nama Upgrade: Istanbul (Block 9,069,000); Deskripsi Singkat: BLAKE2 precompile, gas cost adjustments, CHAINID opcode, cheaper calldata for L2; Status: Completed; Source: https://blog.ethereum.org/2019/11/20/istanbul-hard-fork
+- Tanggal: 2021-04-15; Nama Upgrade: Berlin (Block 12,244,000); Deskripsi Singkat: Typed transactions (EIP-2718), access lists, gas cost adjustments for state access; Status: Completed; Source: https://blog.ethereum.org/2021/03/08/ethereum-berlin-upgrade-announcement
+- Tanggal: 2021-08-05; Nama Upgrade: London (Block 12,965,000); Deskripsi Singkat: EIP-1559 fee market (base fee burn), BASEFEE opcode, reduced refunds, difficulty bomb delay; Status: Completed; Source: https://blog.ethereum.org/2021/07/15/london-mainnet-announcement
+- Tanggal: 2021-10-27; Nama Upgrade: Altair (Beacon Chain Epoch 74,240); Deskripsi Singkat: First consensus upgrade, sync committees, inactivity leak adjustments, validator rewards; Status: Completed; Source: https://blog.ethereum.org/2021/10/20/altair-announcement
+- Tanggal: 2022-09-06; Nama Upgrade: Bellatrix (Beacon Chain Epoch 144,896); Deskripsi Singkat: Consensus preparation for Merge, fork choice switch to PoS, ExecutionPayload validation; Status: Completed; Source: https://blog.ethereum.org/2022/08/24/bellatrix-announcement
+- Tanggal: 2022-09-15; Nama Upgrade: Paris / The Merge (TTD 58750000000000000000000); Deskripsi Singkat: PoW→PoS transition, execution layer Merge, ~90% emission reduction; Status: Completed; Source: https://blog.ethereum.org/2022/09/15/the-merge-is-done
+- Tanggal: 2023-04-12; Nama Upgrade: Shanghai / Capella (Block 17,034,870 / Epoch 194,048); Deskripsi Singkat: Staking withdrawals (EIP-4895), PUSH0, reduced initcode gas, SELFDESTRUCT deprecation; Status: Completed; Source: https://blog.ethereum.org/2023/03/28/shanghai-announcement
+- Tanggal: 2024-03-13; Nama Upgrade: Dencun / Cancun-Deneb (Block 19,426,587 / Epoch 269,568); Deskripsi Singkat: Proto-Danksharding (EIP-4844 blobs), transient storage, beacon root in EVM, MCOPY; Status: Completed; Source: https://blog.ethereum.org/2024/03/13/dencun-announcement
+- Tanggal: 2025 (Target); Nama Upgrade: Pectra / Prague-Electra; Deskripsi Singkat: EIP-7251 (max effective balance 2048 ETH), EIP-7002 (EL-triggerable exits), EIP-7702 (EOA code delegation), EIP-2537 (BLS12-381 precompile), EIP-7549 (per-slot sync committees); Status: Devnet Testing; Source: https://github.com/ethereum/consensus-specs/tree/dev/specs/pectra ; https://github.com/ethereum/execution-specs/tree/master/src/upgrades/pectra ; https://blog.ethereum.org/2024/07/11/pectra-devnet-0
+
+## Current Technical Stack
+
+- Docker: Containerization untuk klien, testnet, CI/CD (HIGH) [Geth Docker, https://github.com/ethereum/go-ethereum/tree/master/Dockerfile; Prysm Docker, https://github.com/prysmaticlabs/prysm/tree/master/Dockerfile; Ethereum Docker Hub, https://hub.docker.com/u/ethereum]
+- Kubernetes: Orchestration untuk validator clusters, RPC providers, staking infrastructure (HIGH) [EthStaker Kubernetes, https://github.com/ethstaker/ethstaker-guides; Prysm K8s, https://github.com/prysmaticlabs/prysm/blob/master/docs/kubernetes.md]
+- Rust: Lighthouse, Reth, Foundry, cargo tooling, crypto libraries (arkworks, blst) (HIGH) [Reth, https://github.com/paradigmxyz/reth; Foundry, https://github.com/foundry-rs/foundry; Arkworks, https://github.com/arkworks-rs]
+- Go: Geth, Prysm, Erigon, banyak tooling, gRPC/JSON-RPC servers (HIGH) [Geth, https://github.com/ethereum/go-ethereum; Prysm, https://github.com/prysmaticlabs/prysm; Erigon, https://github.com/ledgerwatch/erigon]
+- Java: Besu (Hyperledger), Teku (Consensys), Gradle/Maven build (HIGH) [Besu, https://github.com/hyperledger/besu; Teku, https://github.com/Consensys/teku]
+- C#/.NET: Nethermind, .NET 8+, performance-focused (HIGH) [Nethermind, https://github.com/NethermindEth/nethermind]
+- Nim: Nimbus, minimal dependencies, embedded targets (HIGH) [Nimbus, https://github.com/status-im/nimbus-eth2]
+- TypeScript/JavaScript: Lodestar, Hardhat, ethers.js, viem, web3.js, Next.js dApps (HIGH) [Lodestar, https://github.com/ChainSafe/lodestar; Viem, https://viem.sh/; Hardhat, https://hardhat.org/]
+- Solidity: Smart contracts, solc compiler (C++), Yul intermediate representation (HIGH) [Solidity, https://github.com/ethereum/solidity; Solidity Docs, https://docs.soliditylang.org/]
+- Vyper: Pythonic smart contract language, formal verification friendly (MEDIUM) [Vyper, https://github.com/vyperlang/vyper]
+- Yul: Intermediate language untuk inline assembly, optimizer (HIGH) [Yul Docs, https://docs.soliditylang.org/en/latest/yul.html]
+- LevelDB / RocksDB: Embedded key-value store untuk state trie, block storage (HIGH) [Geth Database, https://github.com/ethereum/go-ethereum/tree/master/ethdb; RocksDB, https://rocksdb.org/]
+- libp2p: Consensus layer networking (GossipSub, discovery, DHT) (HIGH) [Libp2p Specs, https://github.com/libp2p/specs; Prysm libp2p, https://github.com/prysmaticlabs/prysm/tree/master/libp2p]
+- devp2p: Execution layer networking (RLPx, discovery v4/v5) (HIGH) [Devp2p Specs, https://github.com/ethereum/devp2p; Geth devp2p, https://github.com/ethereum/go-ethereum/tree/master/p2p]
+- gRPC / JSON-RPC: Standard APIs untuk execution (eth_*) dan consensus (beacon_*) endpoints (HIGH) [Execution APIs, https://github.com/ethereum/execution-apis; Consensus APIs, https://github.com/ethereum/consensus-apis]
+- Prometheus / Grafana: Metrics collection dan visualization untuk validator monitoring (HIGH) [EthStaker Monitoring, https://github.com/ethstaker/ethstaker-guides; Geth Metrics, https://github.com/ethereum/go-ethereum/tree/master/metrics]
+- GitHub Actions / Buildkite / CircleCI: CI/CD untuk klien repos, spec repos, testing (HIGH) [Geth CI, https://github.com/ethereum/go-ethereum/actions; Consensus Specs CI, https://github.com/ethereum/consensus-specs/actions]
+- Kurtosis: Multi-container integration testing untuk network upgrades (HIGH) [Kurtosis, https://github.com/kurtosis-tech/kurtosis; Ethereum Kurtosis, https://github.com/ethpandaops/kurtosis-ethereum]
+
+## Known Technical Limitations
+
+- Throughput: ~15-20 TPS base layer (simple transfers); ~100-200 TPS dengan blob data (EIP-4844); tidak cukup untuk global-scale tanpa L2 (HIGH) [Ethereum.org Scaling, https://ethereum.org/en/roadmap/scaling/; Dencun Impact, https://www.theblock.co/post/285000/ethereum-dencun-upgrade-live]
+- Latency: Slot time 12 detik; finality ~12.8 menit (2 epochs); tidak cocok untuk real-time applications tanpa L2/optimistic confirmation (HIGH) [Consensus Specs - Timing, https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/beacon-chain.md#time-parameters; Ethereum.org Finality, https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/finality/]
+- State Growth: World state terus bertambah (~200GB+ archive); history expiry (EIP-4444) belum live; statelessness roadmap belum tercapai (HIGH) [EIP-4444, https://eips.ethereum.org/EIPS/eip-4444; Ethereum.org State Expiry, https://ethereum.org/en/roadmap/state-expiry/; The Verge Roadmap, https://ethereum.org/en/roadmap/verge/]
+- Client Diversity Risk: Geth execution client >50% market share historis; Prysm consensus client dominan awal; single-client bug risk (HIGH) [Client Diversity, https://clientdiversity.org/; Ethereum.org Client Diversity, https://ethereum.org/en/developers/docs/nodes-and-clients/client-diversity/]
+- MEV / Censorship: PBS/MEV-Boost mengurangi tapi tidak eliminasi MEV; builder censorship (OFAC) pada ~20-30% blok; inclusion lists (EIP-7547) belum live (HIGH) [MEV-Boost Data, https://mevboost.pics/; Flashbots, https://flashbots.net/; EIP-7547, https://eips.ethereum.org/EIPS/eip-7547]
+- Validator Centralization: Liquid staking tokens (Lido stETH >25% supply) menciptakan operator concentration; DVT (Distributed Validator Technology) adopsi belum masif (HIGH) [Lido Finance, https://lido.fi/; Rated Network, https://www.rated.network/; DVT, https://obol.tech/]
+- Quantum Vulnerability: BLS12-381 signatures (KZG, validator signatures) vulnerable ke quantum; post-quantum roadmap (STARK-based, lattice) masih research phase (HIGH) [Ethereum.org Quantum Resistance, https://ethereum.org/en/roadmap/quantum-resistance/; Vitalik Quantum Post, https://vitalik.eth.limo/general/2023/10/31/quantum.html]
+- Solo Staking Barrier: 32 ETH minimum, hardware/uptime requirements, technical complexity; mendorong pooling (HIGH) [Ethereum.org Solo Staking, https://ethereum.org/en/staking/solo/; Rocket Pool, https://rocketpool.net/]
+- History Expiry: Full nodes menyimpan seluruh history (~1TB+ archive); EIP-4444 (history expiry) dan Portal Network belum production (HIGH) [EIP-4444, https://eips.ethereum.org/EIPS/eip-4444; Portal Network, https://github.com/ethereum/portal-network-specs]
+- Gas Limit Constraints: Block gas limit ~30M (dapat di-naikkan validator); membatasi komputasi per blok; blob gas limit terpisah ~6M (HIGH) [Ethereum.org Gas Limit, https://ethereum.org/en/developers/docs/gas/; EIP-4844 Blob Gas, https://eips.ethereum.org/EIPS/eip-4844]
+
+## Official Technical Resources
+
+- Documentation: https://ethereum.org/en/developers/docs/
+- GitHub Organization (Main): https://github.com/ethereum
+- GitHub go-ethereum (Geth): https://github.com/ethereum/go-ethereum
+- GitHub Consensus Specs: https://github.com/ethereum/consensus-specs
+- GitHub Execution Specs: https://github.com/ethereum/execution-specs
+- GitHub Execution APIs: https://github.com/ethereum/execution-apis
+- GitHub Consensus APIs: https://github.com/ethereum/consensus-apis
+- Developer Docs (Ethereum.org): https://ethereum.org/en/developers/docs/
+- EIPs Repository: https://eips.ethereum.org/
+- EIPs GitHub: https://github.com/ethereum/EIPs
+- Whitepaper (Original): https://ethereum.org/en/whitepaper/
+- Yellow Paper (Technical Spec): https://ethereum.github.io/yellowpaper/paper.pdf
+- Beacon Chain Specs: https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/beacon-chain.md
+- Ethereum Foundation Research: https://github.com/ethereum/research
+- Ethereum Foundation Blog: https://blog.ethereum.org/
+- EthStaker (Community Technical): https://ethstaker.cc/
+- Client Diversity Dashboard: https://clientdiversity.org/
+- Ethereum Magicians (Technical Discussion): https://ethereum-magicians.org/
+- EthResearch (Protocol Research): https://ethresear.ch/
+
+## Summary
+
+- Architecture: Modular Layer 1 dengan execution layer (EVM, state, mempool) dan consensus layer (Beacon Chain, PoS/Gasper) terpisah, terhubung via Engine API; blob data availability untuk L2 scaling (EIP-4844)
+- Core Components: 4 execution clients production (Geth, Besu, Nethermind, Erigon), 5 consensus clients production (Prysm, Lighthouse, Teku, Nimbus, Lodestar), EVM, Beacon Chain, Engine API, Deposit/Withdrawal contracts, Blob storage
+- Audit Count: 10+ major auditor entities (Trail of Bits, Sigma Prime, Least Authority, NCC Group, Quantstamp, Consensys Diligence, OpenZeppelin, Spearbit/Code4rena/Sherlock, EF Protocol Security, Immunefi) dengan program berkelanjutan
+- Major Upgrade Count: 17 major hard forks/upgrades (Frontier, Homestead, DAO Fork, Tangerine Whistle, Spurious Dragon, Byzantium, Constantinople, Istanbul, Berlin, London, Altair, Bellatrix, Merge/Paris, Shanghai/Capella, Dencun, Pectra-devnet) + 2 testnet launches (Olympic, Kiln)
+
+## Open Threads
+
+- EOF (EVM Object Format) activation timeline: Spec finalized since 2023, target Pectra mainnet 2025, tetapi belum ada activation fork yang pasti
+- EIP-4444 (History Expiry) dan Statelessness (Verkle Trees / The Verge): Research mature, implementasi client belum dimulai production; target roadmap "The Verge" tanpa timeline konkrit
+- Single-slot finality / Orbit SSF: Research aktif (Justin Drake, EF), mengganti 2-epoch finality; tradeoff complexity vs latency belum diresolusi
+- Post-Quantum Cryptography: BLS12-381 vulnerable; STARK-based atau lattice-based replacement research; tidak ada EIP konkrit untuk validator signature migration
+- Builder Net / Multiple Concurrent Proposers (MCP): Flashbots SUAVE dan MBC (Multiple Block Proposers) research; censorship resistance vs MEV efficiency tradeoff belum final
+- PeerDAS (Peer Data Availability Sampling): Post-Dencun scaling untuk blob throughput >16MB/slot; spec draft, implementation belum dimulai client production
+- Execution Layer Triggerable Exits (EIP-7002): Termasuk Pectra, memungkinkan withdrawal credentials 0x01 exit via EL transaction; UX implications untuk solo stakers belum terdokumentasi penuh
+- EIP-7702 vs ERC-4337 coexistence: Native EOA delegation (EIP-7702) vs smart contract account abstraction (ERC-4337); migration path dan tooling support belum jelas
+- Gas Limit Governance: Validator-set gas limit (EIP-7861 proposal) vs hard-coded limit; dynamic adjustment mechanism diperdebatkan
+- Client Diversity Incentives: Tidak ada mekanisme protokol untuk enforce client diversity; social coordination saja; risk tetap jika Geth/Prysm bug kritis

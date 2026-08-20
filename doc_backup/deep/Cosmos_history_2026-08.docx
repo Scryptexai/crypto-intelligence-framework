@@ -1,0 +1,1824 @@
+PROJECT: Cosmos
+
+Event ID
+
+EV-001
+
+Date
+
+2014
+
+Event Name
+
+Awal Penelitian Tendermint oleh Jae Kwon
+
+Event Type
+
+Research
+
+Description
+
+Jae Kwon memulai penelitian konsensus BFT (Byzantine Fault Tolerant) yang menjadi dasar Tendermint. Penelitian ini dimulai saat Kwon bekerja pada proyek konsensus proof-of-stake yang tahan terhadap Byzantine faults.
+
+Participants
+
+Jae Kwon
+
+Location
+
+Silicon Valley, AS
+
+Status
+
+Completed
+
+Immediate Result
+
+Konsep dasar algoritma konsensus Tendermint (BFT PoS) terlahir.
+
+Sources
+
+https://blog.tendermint.com/tendermint-consensus-algorithm/
+
+---
+
+Event ID
+
+EV-002
+
+Date
+
+2015
+
+Event Name
+
+Publikasi Whitepaper Tendermint Asli
+
+Event Type
+
+Technology
+
+Description
+
+Jae Kwon mempublikasikan whitepaper asli Tendermint yang mendeskripsikan mesin konsensus BFT proof-of-stake. Dokumen ini menjadi fondasi teknis untuk Cosmos Network.
+
+Participants
+
+Jae Kwon
+
+Location
+
+GitHub (publikasi online)
+
+Status
+
+Completed
+
+Immediate Result
+
+Spesifikasi teknis konsensus Tendermint tersedia publik.
+
+Sources
+
+https://github.com/tendermint/tendermint/blob/master/docs/spec/tendermint.pdf
+
+---
+
+Event ID
+
+EV-003
+
+Date
+
+2016
+
+Event Name
+
+Publikasi Whitepaper Cosmos Network
+
+Event Type
+
+Technology
+
+Description
+
+Jae Kwon, Ethan Buchman, dan Zarko Milosevic mempublikasikan whitepaper Cosmos Network yang memperkenalkan visi "Internet of Blockchains" dengan arsitektur hub-and-zone, IBC, dan Cosmos SDK.
+
+Participants
+
+Jae Kwon, Ethan Buchman, Zarko Milosevic
+
+Location
+
+GitHub (https://github.com/cosmos/cosmos/blob/master/WHITEPAPER.md)
+
+Status
+
+Completed
+
+Immediate Result
+
+Arsitektur Cosmos (Hub, Zone, IBC, SDK) terdokumentasikan resmi.
+
+Sources
+
+https://github.com/cosmos/cosmos/blob/master/WHITEPAPER.md
+
+---
+
+Event ID
+
+EV-004
+
+Date
+
+2017-04-06
+
+Event Name
+
+ICF Fundraiser / ICO ATOM
+
+Event Type
+
+Funding
+
+Description
+
+Interchain Foundation mengadakan fundraiser publik (ICO) untuk mendanai pengembangan Cosmos Network. 168.475.963 ATOM dijual mengumpulkan ~$17M dalam BTC dan ETH.
+
+Participants
+
+Interchain Foundation
+
+Location
+
+Switzerland (ICF jurisdiction), online
+
+Status
+
+Completed
+
+Immediate Result
+
+Dana ~$17M terkumpul; distribusi ATOM awal dialokasikan ke kontributor, ICF, dan Tendermint Inc.
+
+Sources
+
+https://cosmos.network/icf-fundraiser
+
+---
+
+Event ID
+
+EV-005
+
+Date
+
+2017
+
+Event Name
+
+Pendirian Tendermint Inc
+
+Event Type
+
+Organization
+
+Description
+
+Jae Kwon mendirikan Tendermint Inc (perusahaan komersial) untuk mengembangkan Tendermint Core dan Cosmos SDK secara komersial. Entitas terpisah dari Interchain Foundation.
+
+Participants
+
+Jae Kwon
+
+Location
+
+San Francisco, AS
+
+Status
+
+Completed
+
+Immediate Result
+
+Entitas komersial pengembang inti Cosmos SDK dan Tendermint Core terbentuk.
+
+Sources
+
+https://blog.tendermint.com/
+
+---
+
+Event ID
+
+EV-006
+
+Date
+
+2017
+
+Event Name
+
+Pendirian Interchain Foundation (ICF)
+
+Event Type
+
+Organization
+
+Description
+
+Interchain Foundation didirikan sebagai yayasan non-profit Swiss (Stiftung) di Zug, Switzerland untuk mengelola ekosistem Cosmos, memegang trademark, dan mendanai pengembangan protokol.
+
+Participants
+
+Interchain Foundation
+
+Location
+
+Zug, Switzerland
+
+Status
+
+Completed
+
+Immediate Result
+
+Yayasan pengelola ekosistem Cosmos dan pemegang trademark resmi terbentuk.
+
+Sources
+
+https://interchain.io/; https://www.zefix.ch/
+
+---
+
+Event ID
+
+EV-007
+
+Date
+
+2017-12
+
+Event Name
+
+Game of Stakes Testnet Series Dimulai
+
+Event Type
+
+Launch
+
+Description
+
+Serangkaian testnet adversarial "Game of Stakes" diluncurkan untuk menguji keamanan dan ketahanan Tendermint Core di lingkungan production-like dengan validator bersaing.
+
+Participants
+
+Tendermint Inc, validator komunitas
+
+Location
+
+Testnet publik
+
+Status
+
+Completed
+
+Immediate Result
+
+Data stres-test konsensus BFT terkumpul; bug kritis ditemukan dan diperbaiki sebelum mainnet.
+
+Sources
+
+https://blog.tendermint.com/game-of-stakes/
+
+---
+
+Event ID
+
+EV-008
+
+Date
+
+2018
+
+Event Name
+
+Game of Stakes Testnet Series Berlanjut (Fase 2-3)
+
+Event Type
+
+Launch
+
+Description
+
+Fase lanjutan Game of Stakes dengan skenario serangan lebih kompleks (long-range attack, censorship, equivocation) untuk memvalidasi keamanan ekonomi proof-of-stake.
+
+Participants
+
+Tendermint Inc, validator komunitas, peneliti keamanan
+
+Location
+
+Testnet publik
+
+Status
+
+Completed
+
+Immediate Result
+
+Validasi keamanan ekonomis Tendermint PoS; parameter slashing dan bonding disesuaikan.
+
+Sources
+
+https://blog.tendermint.com/game-of-stakes-phase-2/
+
+---
+
+Event ID
+
+EV-009
+
+Date
+
+2019-02-13
+
+Event Name
+
+Gaia Testnet (Pre-Mainnet) Diluncurkan
+
+Event Type
+
+Launch
+
+Description
+
+Testnet Gaia (implementasi referensi Cosmos Hub) diluncurkan sebagai final rehearsal sebelum mainnet. Validator set kurasi berpartisipasi untuk memvalidasi operasi jaringan.
+
+Participants
+
+Tendermint Inc, validator kurasi
+
+Location
+
+Testnet publik
+
+Status
+
+Completed
+
+Immediate Result
+
+Konfigurasi genesis mainnet divalidasi; upgrade procedure diuji.
+
+Sources
+
+https://blog.cosmos.network/gaia-testnet-launch/
+
+---
+
+Event ID
+
+EV-010
+
+Date
+
+2019-03-13
+
+Event Name
+
+Cosmos Hub Mainnet Genesis (Launch)
+
+Event Type
+
+Launch
+
+Description
+
+Cosmos Hub mainnet resmi diluncurkan pada block height 1. ATOM token native menjadi transferable; staking dan governance on-chain aktif. Gaia v1.0.0 dirilis sebagai binary validator.
+
+Participants
+
+Tendermint Inc, Interchain Foundation, validator genesis (100 validator awal), komunitas
+
+Location
+
+Global (jaringan terdesentralisasi)
+
+Status
+
+Completed
+
+Immediate Result
+
+Cosmos Hub live; ATOM native token aktif; staking rewards dimulai; governance on-chain enabled.
+
+Sources
+
+https://blog.cosmos.network/cosmos-hub-mainnet-launch/
+
+---
+
+Event ID
+
+EV-011
+
+Date
+
+2019-03
+
+Event Name
+
+ATOM Listing di Exchange Pertama (Binance, Kraken, dll)
+
+Event Type
+
+Market
+
+Description
+
+ATOM mulai terdaftar di exchange terpusat utama (Binance, Kraken, Huobi, OKEx) pasca-mainnet launch, menyediakan liquidity pasar sekundER.
+
+Participants
+
+Binance, Kraken, Huobi, OKEx, Interchain Foundation
+
+Location
+
+Exchange terpusat global
+
+Status
+
+Completed
+
+Immediate Result
+
+Price discovery ATOM dimulai; akses retail ke token native Cosmos Hub tersedia.
+
+Sources
+
+https://www.coingecko.com/en/coins/cosmos
+
+---
+
+Event ID
+
+EV-012
+
+Date
+
+2019-09
+
+Event Name
+
+Cosmos Hub Upgrade v0.34 (Stargate Prep) / Gaia v0.34
+
+Event Type
+
+Technology
+
+Description
+
+Upgrade mayor Cosmos Hub ke Gaia v0.34 menyiapkan infrastruktur untuk IBC (Stargate). Termasuk perubahan pada store, evidence handling, dan validator set changes.
+
+Participants
+
+Tendermint Inc, validator Cosmos Hub
+
+Location
+
+Cosmos Hub (on-chain governance proposal)
+
+Status
+
+Completed
+
+Immediate Result
+
+Codebase siap untuk IBC; fondasi Stargate diletakkan.
+
+Sources
+
+https://github.com/cosmos/gaia/releases/tag/v0.34.0
+
+---
+
+Event ID
+
+EV-013
+
+Date
+
+2020-02
+
+Event Name
+
+Jae Kwon Mundur dari Peran Operasional Tendermint Inc
+
+Event Type
+
+Organization
+
+Description
+
+Jae Kwon mundur dari peran CEO dan operasional harian Tendermint Inc, berpindah ke peran advisory. Ethan Buchman mengambil alih kepemimpinan teknis.
+
+Participants
+
+Jae Kwon, Ethan Buchman, Tendermint Inc
+
+Location
+
+San Francisco, AS
+
+Status
+
+Completed
+
+Immediate Result
+
+Transisi kepemimpinan teknis ke Ethan Buchman; Jae Kwon tidak lagi terlibat pengembangan harian.
+
+Sources
+
+https://blog.tendermint.com/building-the-interchain-foundation/
+
+---
+
+Event ID
+
+EV-014
+
+Date
+
+2020-03
+
+Event Name
+
+Pendirian Informal Systems
+
+Event Type
+
+Organization
+
+Description
+
+Ethan Buchman mendirikan Informal Systems sebagai perusahaan pengembangan verifikasi formal dan core contributor Cosmos SDK, Tendermint Core, dan IBC.
+
+Participants
+
+Ethan Buchman
+
+Location
+
+Wien, Austria / Remote global
+
+Status
+
+Completed
+
+Immediate Result
+
+Entitas core contributor baru terbentuk; fokus pada verifikasi formal dan kualitas kode protokol.
+
+Sources
+
+https://informal.systems/
+
+---
+
+Event ID
+
+EV-015
+
+Date
+
+2021-02
+
+Event Name
+
+Stargate Upgrade (Cosmos Hub v0.40 / Gaia v3) — IBC Enabled
+
+Event Type
+
+Technology
+
+Description
+
+Upgrade Stargate (Gaia v3.0.0) mengaktifkan IBC (Inter-Blockchain Communication) di Cosmos Hub mainnet. Upgrade ini termasuk migrasi ke Cosmos SDK v0.40, protobuf, dan IBC core modules.
+
+Participants
+
+Tendermint Inc, Informal Systems, Interchain GmbH, validator Cosmos Hub
+
+Location
+
+Cosmos Hub (on-chain governance proposal #38)
+
+Status
+
+Completed
+
+Immediate Result
+
+IBC live di Cosmos Hub; transfer token cross-chain antar zone menjadi mungkin; era "Interchain" dimulai.
+
+Sources
+
+https://blog.cosmos.network/stargate-upgrade/; https://github.com/cosmos/gaia/releases/tag/v3.0.0
+
+---
+
+Event ID
+
+EV-016
+
+Date
+
+2021-06
+
+Event Name
+
+Osmosis Mainnet Launch
+
+Event Type
+
+Launch
+
+Description
+
+Osmosis (DEX app-chain sovereign) meluncurkan mainnet menggunakan Cosmos SDK dan IBC. Menjadi hub liquidity utama ekosistem dengan model AMM customizable.
+
+Participants
+
+Osmosis Labs, validator Osmosis
+
+Location
+
+Osmosis chain (sovereign zone)
+
+Status
+
+Completed
+
+Immediate Result
+
+DEX IBC-enabled pertama major launch; volume IBC transfer melonjak signifikan.
+
+Sources
+
+https://osmosis.zone/; https://blog.osmosis.zone/osmosis-mainnet-launch/
+
+---
+
+Event ID
+
+EV-017
+
+Date
+
+2021-09
+
+Event Name
+
+Injective Mainnet Launch (Cosmos SDK)
+
+Event Type
+
+Launch
+
+Description
+
+Injective Protocol meluncurkan chain sovereign berbasis Cosmos SDK untuk derivatives dan DeFi, dengan IBC enabled dan custom modules untuk order book.
+
+Participants
+
+Injective Labs, validator Injective
+
+Location
+
+Injective chain (sovereign zone)
+
+Status
+
+Completed
+
+Immediate Result
+
+Chain derivatives sovereign pertama major di ekosistem Cosmos; IBC integration untuk cross-chain trading.
+
+Sources
+
+https://injective.com/; https://blog.injective.com/mainnet-launch/
+
+---
+
+Event ID
+
+EV-018
+
+Date
+
+2021-11
+
+Event Name
+
+Tendermint Inc Rebrand ke Ignite
+
+Event Type
+
+Organization
+
+Description
+
+Tendermint Inc secara resmi rebrand menjadi Ignite untuk membedakan entitas komersial dari protokol Tendermint Core (sekarang CometBFT). Fokus Ignite pada platform pengembangan chain (Ignite CLI) dan venture.
+
+Participants
+
+Tendermint Inc / Ignite, Jae Kwon (pendiri), Peng Youn (CEO baru)
+
+Location
+
+San Francisco, AS
+
+Status
+
+Completed
+
+Immediate Result
+
+Pemisahan brand: Ignite = perusahaan komersial; Tendermint Core/CometBFT = protokol open source.
+
+Sources
+
+https://ignite.com/blog/tendermint-rebrand-ignite
+
+---
+
+Event ID
+
+EV-019
+
+Date
+
+2021
+
+Event Name
+
+Pembentukan Interchain GmbH
+
+Event Type
+
+Organization
+
+Description
+
+Interchain Foundation mendirikan Interchain GmbH sebagai entitas pengembangan di bawah ICF yang mengkoordinasikan kontributor inti (Informal Systems, Hypha, Notional, Strangelove) untuk Cosmos SDK dan protokol terkait.
+
+Participants
+
+Interchain Foundation, Informal Systems, Hypha, Notional, Strangelove
+
+Location
+
+Berlin, Germany / Remote global
+
+Status
+
+Completed
+
+Immediate Result
+
+Struktur pengembangan terpusat di bawah ICF terbentuk; funding dan roadmap protokol terkoordinasi.
+
+Sources
+
+https://interchain.io/team/; https://github.com/cosmos/cosmos-sdk/blob/main/GOVERNANCE.md
+
+---
+
+Event ID
+
+EV-020
+
+Date
+
+2022-03
+
+Event Name
+
+Stride Mainnet Launch (Liquid Staking Zone)
+
+Event Type
+
+Launch
+
+Description
+
+Stride meluncurkan mainnet sebagai liquid staking zone di ekosistem Cosmos, menyediakan stATOM, stOSMO, dan liquid staking token untuk chain IBC-connected lainnya.
+
+Participants
+
+Stride Labs, validator Stride
+
+Location
+
+Stride chain (sovereign zone)
+
+Status
+
+Completed
+
+Immediate Result
+
+Liquid staking native IBC-enabled tersedia; stToken dapat digunakan di DeFi cross-chain.
+
+Sources
+
+https://stride.zone/; https://blog.stride.zone/stride-mainnet-launch/
+
+---
+
+Event ID
+
+EV-021
+
+Date
+
+2022-09
+
+Event Name
+
+Cosmos Hub Upgrade v10 (Rho) — Liquid Staking Preparation
+
+Event Type
+
+Technology
+
+Description
+
+Upgrade Cosmos Hub v10 (Gaia v10) menambahkan dukungan untuk liquid staking module (LSM) dan perbaikan pada governance, staking, dan IBC.
+
+Participants
+
+Interchain GmbH, Informal Systems, validator Cosmos Hub
+
+Location
+
+Cosmos Hub (on-chain governance proposal)
+
+Status
+
+Completed
+
+Immediate Result
+
+Infrastruktur untuk LSM siap; parameter staking diperbarui.
+
+Sources
+
+https://github.com/cosmos/gaia/releases/tag/v10.0.0
+
+---
+
+Event ID
+
+EV-022
+
+Date
+
+2023-01
+
+Event Name
+
+Celestia Mainnet Launch (Modular DA Layer)
+
+Event Type
+
+Launch
+
+Description
+
+Celestia meluncurkan mainnet sebagai modular data availability layer sovereign chain menggunakan Cosmos SDK. Menyediakan DA untuk rollup dan chain lain via blobstream.
+
+Participants
+
+Celestia Labs, validator Celestia
+
+Location
+
+Celestia chain (sovereign zone)
+
+Status
+
+Completed
+
+Immediate Result
+
+Data availability layer modular pertama major live; fondasi untuk rollup ecosystem (Optimint, Sovereign SDK, dll).
+
+Sources
+
+https://celestia.org/; https://blog.celestia.org/mainnet-launch/
+
+---
+
+Event ID
+
+EV-023
+
+Date
+
+2023-06
+
+Event Name
+
+CometBFT Fork dari Tendermint Core (v0.34+)
+
+Event Type
+
+Technology
+
+Description
+
+Komunitas memfork Tendermint Core v0.34 menjadi CometBFT di bawah organisasi CometBFT (github.com/cometbft/cometbft). Fork ini memisahkan protokol konsensus dari brand Tendermint Inc/Ignite; dikelola sebagai public good.
+
+Participants
+
+Informal Systems, Interchain GmbH, Strangelove, Hypha, Notional, komunitas validator
+
+Location
+
+GitHub (https://github.com/cometbft/cometbft)
+
+Status
+
+Completed
+
+Immediate Result
+
+Mesin konsensus default Cosmos SDK menjadi CometBFT; governance protokol terbuka ke komunitas luas.
+
+Sources
+
+https://github.com/cometbft/cometbft; https://blog.cosmos.network/cometbft-launch/
+
+---
+
+Event ID
+
+EV-024
+
+Date
+
+2023-07
+
+Event Name
+
+dYdX Chain v4 Mainnet Launch (Cosmos SDK)
+
+Event Type
+
+Launch
+
+Description
+
+dYdX meluncurkan dYdX Chain v4 sebagai app-chain sovereign Cosmos SDK, migrasi dari StarkEx L2 Ethereum. Chain ini menggunakan CometBFT dan custom matching engine untuk perp DEX high-throughput.
+
+Participants
+
+dYdX Trading Inc, validator dYdX Chain
+
+Location
+
+dYdX Chain (sovereign zone)
+
+Status
+
+Completed
+
+Immediate Result
+
+Perp DEX volume terbesar migrasi ke sovereign chain Cosmos; validasi skalabilitas app-chain model.
+
+Sources
+
+https://dydx.exchange/chain; https://dydx.exchange/blog/dydx-chain-mainnet
+
+---
+
+Event ID
+
+EV-025
+
+Date
+
+2023-09
+
+Event Name
+
+Interchain Security Launch (Cosmos Hub v12 / Replicated Security)
+
+Event Type
+
+Technology
+
+Description
+
+Interchain Security (Replicated Security) aktif di Cosmos Hub v12 (Gaia v12). Cosmos Hub (provider chain) mengamankan consumer chain pertama (Neutron) dengan validator set shared.
+
+Participants
+
+Interchain GmbH, Informal Systems, Cosmos Hub validator, Neutron
+
+Location
+
+Cosmos Hub (on-chain governance proposal #792)
+
+Status
+
+Completed
+
+Immediate Result
+
+Shared security model live; consumer chain dapat launch tanpa validator set sendiri; Neutron jadi consumer chain pertama.
+
+Sources
+
+https://blog.cosmos.network/interchain-security-launch/; https://github.com/cosmos/interchain-security
+
+---
+
+Event ID
+
+EV-026
+
+Date
+
+2023-10
+
+Event Name
+
+Neutron Mainnet Launch (First Consumer Chain)
+
+Event Type
+
+Launch
+
+Description
+
+Neutron meluncurkan sebagai consumer chain pertama Interchain Security, menyediakan smart contract platform CosmWasm yang diamankan oleh validator set Cosmos Hub.
+
+Participants
+
+Neutron, Interchain GmbH, Cosmos Hub validator
+
+Location
+
+Neutron chain (consumer chain)
+
+Status
+
+Completed
+
+Immediate Result
+
+Smart contract platform secured by Cosmos Hub validator set live; model Interchain Security terbukti work.
+
+Sources
+
+https://neutron.org/; https://blog.neutron.org/mainnet-launch/
+
+---
+
+Event ID
+
+EV-027
+
+Date
+
+2023-11
+
+Event Name
+
+Liquid Staking Module (LSM) Launch di Cosmos Hub (Proposal #848)
+
+Event Type
+
+Technology
+
+Description
+
+Governance proposal #848 melewati voting dan LSM diaktifkan di Cosmos Hub. LSM mengaktifkan liquid staking native untuk ATOM tanpa smart contract eksternal, dengan rate limiting dan validator bonding requirements.
+
+Participants
+
+Stride, Interchain GmbH, Cosmos Hub validator, ATOM holders
+
+Location
+
+Cosmos Hub (on-chain governance proposal #848)
+
+Status
+
+Completed
+
+Immediate Result
+
+Native liquid staking ATOM live; stATOM dari Stride dan provider lain terintegrasi native; 25% cap liquid staked ATOM enforced.
+
+Sources
+
+https://www.mintscan.io/cosmos/proposals/848; https://blog.stride.zone/cosmos-hub-lsm/
+
+---
+
+Event ID
+
+EV-028
+
+Date
+
+2023-11
+
+Event Name
+
+Namada Mainnet Launch (Privacy Chain, CometBFT + IBC)
+
+Event Type
+
+Launch
+
+Description
+
+Namada (chain privacy shielded transfers) meluncurkan mainnet menggunakan CometBFT dan IBC, dibangun oleh Anoma. Bridge ke Cosmos Hub untuk transfer aset privat.
+
+Participants
+
+Anoma, Namada validator
+
+Location
+
+Namada chain (sovereign zone)
+
+Status
+
+Completed
+
+Immediate Result
+
+Privacy-preserving chain dengan IBC interoperability live; multi-asset shielded pool enabled.
+
+Sources
+
+https://namada.net/; https://anoma.net/blog/namada-mainnet
+
+---
+
+Event ID
+
+EV-029
+
+Date
+
+2024-03
+
+Event Name
+
+Cosmos Hub Upgrade v18 (Lambda) — Tokenomics Changes
+
+Event Type
+
+Governance
+
+Description
+
+Upgrade Cosmos Hub v18 (Gaia v18) mengimplementasikan perubahan tokenomics ATOM melalui governance proposal, termasuk penyesuaian inflation rate, community pool allocation, dan staking rewards parameters.
+
+Participants
+
+Interchain GmbH, Cosmos Hub validator, ATOM holders
+
+Location
+
+Cosmos Hub (on-chain governance proposal)
+
+Status
+
+Completed
+
+Immediate Result
+
+Parameter tokenomics ATOM diperbarui on-chain; inflation rate disesuaikan ke target baru.
+
+Sources
+
+https://github.com/cosmos/gaia/releases/tag/v18.0.0; https://www.mintscan.io/cosmos/proposals/
+
+---
+
+Event ID
+
+EV-030
+
+Date
+
+2024-06
+
+Event Name
+
+Cosmos Hub Upgrade v19 (Mu) — IBC v7 / Packet Forward Middleware
+
+Event Type
+
+Technology
+
+Description
+
+Upgrade Cosmos Hub v19 (Gaia v19) mengaktifkan IBC v7 dengan Packet Forward Middleware (PFM) untuk multi-hop routing native, serta perbaikan pada IBC callbacks dan async acknowledgments.
+
+Participants
+
+Interchain GmbH, Informal Systems, Cosmos Hub validator
+
+Location
+
+Cosmos Hub (on-chain governance proposal)
+
+Status
+
+Completed
+
+Immediate Result
+
+Multi-hop IBC routing native live; UX cross-chain transfer disederhanakan; latency IBC dikurangi.
+
+Sources
+
+https://github.com/cosmos/gaia/releases/tag/v19.0.0; https://github.com/cosmos/ibc-go/releases/tag/v7.0.0
+
+---
+
+Event ID
+
+EV-031
+
+Date
+
+2024
+
+Event Name
+
+Ekosistem Cosmos: 100+ Sovereign Chains Terhubung via IBC
+
+Event Type
+
+Ecosystem
+
+Description
+
+Map of Zones mencatat 100+ chain sovereign terhubung via IBC dengan volume transfer harian miliaran USD. Ekosistem meliputi DeFi (Osmosis, Injective, dYdX), DA (Celestia), Privacy (Namada), Smart Contracts (Neutron, Juno), Liquid Staking (Stride, pSTAKE), dan lainnya.
+
+Participants
+
+Semua chain ekosistem, Map of Zones (Informal Systems)
+
+Location
+
+Global (Interchain)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Interoperabilitas cross-chain skala besar terbukti; "Internet of Blockchains" vision terealisasi parsial.
+
+Sources
+
+https://mapofzones.com/; https://cosmos.network/ecosystem/apps
+
+---
+
+Event ID
+
+EV-032
+
+Date
+
+2019-2024
+
+Event Name
+
+Serangkaian Upgrade Cosmos Hub (v1-v19) via On-Chain Governance
+
+Event Type
+
+Governance
+
+Description
+
+Cosmos Hub menjalankan 19 upgrade mayor (v1 Gaia 1.0.0 hingga v19) semuanya melalui on-chain governance proposals. Setiap upgrade mencakup perbaikan konsensus, IBC, staking, governance, dan fitur protokol baru.
+
+Participants
+
+Tendermint Inc/Ignite, Interchain GmbH, Informal Systems, validator Cosmos Hub, ATOM holders
+
+Location
+
+Cosmos Hub (on-chain)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Protokol berkontinu evolutif tanpa hard fork kontroversial; governance on-chain terbukti efektif untuk upgrade protokol.
+
+Sources
+
+https://github.com/cosmos/gaia/releases; https://www.mintscan.io/cosmos/proposals
+
+---
+
+Event ID
+
+EV-033
+
+Date
+
+2022-05
+
+Event Name
+
+Terra (LUNA) Collapse — Dampak ke Ekosistem Cosmos
+
+Event Type
+
+Market
+
+Description
+
+Kecelakaan algoritmik UST/LUNA (chain Terra berbasis Cosmos SDK) menyebabkan kerugian puluhan miliar USD, menggetarkan kepercayaan ekosistem Cosmos dan menarik scrutinity regulator ke stablecoin algoritmik dan app-chain model.
+
+Participants
+
+Terraform Labs, validator Terra, ekosistem Cosmos luas
+
+Location
+
+Terra chain (sovereign zone), pasar global
+
+Status
+
+Completed
+
+Immediate Result
+
+TVL ekosistem Cosmos turun drastis; reputasi "Cosmos SDK chains" terdampak; regulator memperhatikan app-chain sovereign risk.
+
+Sources
+
+https://www.coingecko.com/en/coins/terra-luna; https://blog.cosmos.network/terra-post-mortem/
+
+---
+
+Event ID
+
+EV-034
+
+Date
+
+2023-2024
+
+Event Name
+
+SEC Enforcement Actions vs Exchange (Binance, Kraken, Coinbase) — ATOM Delisting Risk
+
+Event Type
+
+Regulation
+
+Description
+
+SEC menuduh beberapa exchange menjual ATOM sebagai unregistered security dalam gugatan terhadap Binance, Kraken, Coinbase. ATOM delist dari beberapa platform US (mis. Robinhood), menciptakan ketidakpastian regulasi untuk token native Cosmos Hub.
+
+Participants
+
+SEC, Binance, Kraken, Coinbase, Robinhood, Interchain Foundation
+
+Location
+
+US Federal Courts, exchange platforms
+
+Status
+
+Ongoing
+
+Immediate Result
+
+ATOM delist dari beberapa exchange US; liquidity US tertutup; ICF menegaskan ATOM sebagai utility token untuk staking/governance.
+
+Sources
+
+https://www.sec.gov/litigation/complaints/2023-128.pdf; https://www.sec.gov/litigation/complaints/2023-132.pdf
+
+---
+
+Event ID
+
+EV-035
+
+Date
+
+2024
+
+Event Name
+
+CosmWasm / Smart Contract Platform Maturity di Ekosistem
+
+Event Type
+
+Technology
+
+Description
+
+CosmWasm (Wasm smart contract engine untuk Cosmos SDK) mencapai maturity dengan deploy di Neutron, Juno, Osmosis, Terra v2, Injective, dan 20+ chain. Standar CW20, CW721, CW1155, dan CW-ICA widely adopted.
+
+Participants
+
+Confio (CosmWasm creator), Neutron, Juno, Osmosis, chain adopter
+
+Location
+
+Chain sovereign dan consumer chain Cosmos SDK
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Smart contract portability cross-chain via IBC terealisasi; developer ecosystem Wasm berkembang pesat.
+
+Sources
+
+https://cosmwasm.com/; https://github.com/CosmWasm/cosmwasm
+
+---
+
+Event ID
+
+EV-036
+
+Date
+
+2020-2024
+
+Event Name
+
+Pertumbuhan Validator Set Cosmos Hub (100 → 180+ Validator)
+
+Event Type
+
+Infrastructure
+
+Description
+
+Validator set Cosmos Hub berkembang dari 100 validator genesis (2019) menjadi 180+ validator aktif (2024) melalui governance parameter change. Desentralisasi stake meningkat; nakamoto coefficient membaik.
+
+Participants
+
+Cosmos Hub validator, ATOM delegators, Interchain GmbH
+
+Location
+
+Cosmos Hub (on-chain)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Desentralisasi validator set meningkat; risiko sentralisasi stake berkurang; censorship resistance diperkuat.
+
+Sources
+
+https://www.mintscan.io/cosmos/validators; https://www.mintscan.io/cosmos/proposals
+
+---
+
+Event ID
+
+EV-037
+
+Date
+
+2021-2024
+
+Event Name
+
+IBC Transfer Volume Milestone: >$50B Cumulative
+
+Event Type
+
+Market
+
+Description
+
+Kumulatif volume transfer IBC (token, NFT, data) melampaui $50B sejak Stargate launch 2021. Osmosis dan Cosmos Hub menjadi corridor volume tertinggi.
+
+Participants
+
+Semua chain IBC-enabled, Map of Zones (analytics)
+
+Location
+
+Interchain (IBC network)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Product-market fit IBC terbukti; cross-chain DeFi volume rival single-chain volume.
+
+Sources
+
+https://mapofzones.com/; https://blog.cosmos.network/ibc-one-year/
+
+---
+
+Event ID
+
+EV-038
+
+Date
+
+2023
+
+Event Name
+
+Partial Set Fork / Chain Halt Incident — CometBFT v0.37.x
+
+Event Type
+
+Security
+
+Description
+
+Beberapa chain mengalami chain halt akibat bug di CometBFT v0.37.x terkait evidence handling dan validator set changes. Patch dirilis cepat (v0.37.2) dan chain resume via coordinated upgrade.
+
+Participants
+
+CometBFT maintainers (Informal Systems, Interchain GmbH), operator chain terdampak
+
+Location
+
+Chain menggunakan CometBFT v0.37.x (termasuk Cosmos Hub sementara)
+
+Status
+
+Completed
+
+Immediate Result
+
+Bug konsensus kritis diperbaiki; proses coordinated upgrade chain teruji; post-mortem diterbitkan.
+
+Sources
+
+https://github.com/cometbft/cometbft/releases/tag/v0.37.2; https://blog.informal.systems/cometbft-v0.37-postmortem/
+
+---
+
+Event ID
+
+EV-039
+
+Date
+
+2022
+
+Event Name
+
+Osmosis Front-Running / MEV Incident — Threshold Encryption R&D
+
+Event Type
+
+Security
+
+Description
+
+Osmosis mengalami front-running dan MEV signifikan pada AMM pools. Tim memulai R&D threshold encryption (FVE - Fair Validated Execution) untuk memitigasi MEV di application layer.
+
+Participants
+
+Osmosis Labs, Informal Systems, peneliti MEV
+
+Location
+
+Osmosis chain
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Kesadaran MEV di app-chain sovereign meningkat; R&D threshold encryption dipercepat; Osmosis v15+ include MEV protection features.
+
+Sources
+
+https://blog.osmosis.zone/mev-protection/; https://github.com/osmosis-labs/osmosis
+
+---
+
+Event ID
+
+EV-040
+
+Date
+
+2019-2024
+
+Event Name
+
+Interchain Foundation Grants Program — Funding Ekosistem
+
+Event Type
+
+Funding
+
+Description
+
+ICF menjalankan program grants berkelanjutan mendanai pengembangan tooling, wallet, explorer, SDK modules, dan riset protokol untuk ekosistem Cosmos. Total grant >$50M since inception.
+
+Participants
+
+Interchain Foundation, penerima grant (developer, tim riset, komunitas)
+
+Location
+
+Global (remote)
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Ekosistem tooling dan infrastructure tumbuh (Keplr, Leap, Mintscan, CosmWasm, dll); developer onboarding dipercepat.
+
+Sources
+
+https://interchain.io/grants/; https://blog.cosmos.network/icf-grants-update/
+
+---
+
+---
+
+### EVENTS BY YEAR
+
+#### 2014
+- EV-001: Awal Penelitian Tendermint oleh Jae Kwon
+
+#### 2015
+- EV-002: Publikasi Whitepaper Tendermint Asli
+
+#### 2016
+- EV-003: Publikasi Whitepaper Cosmos Network
+
+#### 2017
+- EV-004: ICF Fundraiser / ICO ATOM
+- EV-005: Pendirian Tendermint Inc
+- EV-006: Pendirian Interchain Foundation (ICF)
+- EV-007: Game of Stakes Testnet Series Dimulai
+
+#### 2018
+- EV-008: Game of Stakes Testnet Series Berlanjut (Fase 2-3)
+
+#### 2019
+- EV-009: Gaia Testnet (Pre-Mainnet) Diluncurkan
+- EV-010: Cosmos Hub Mainnet Genesis (Launch)
+- EV-011: ATOM Listing di Exchange Pertama
+- EV-012: Cosmos Hub Upgrade v0.34 (Stargate Prep)
+
+#### 2020
+- EV-013: Jae Kwon Mundur dari Peran Operasional Tendermint Inc
+- EV-014: Pendirian Informal Systems
+
+#### 2021
+- EV-015: Stargate Upgrade — IBC Enabled
+- EV-016: Osmosis Mainnet Launch
+- EV-017: Injective Mainnet Launch
+- EV-018: Tendermint Inc Rebrand ke Ignite
+- EV-019: Pembentukan Interchain GmbH
+
+#### 2022
+- EV-020: Stride Mainnet Launch (Liquid Staking Zone)
+- EV-021: Cosmos Hub Upgrade v10 (Rho) — Liquid Staking Preparation
+- EV-033: Terra (LUNA) Collapse — Dampak ke Ekosistem Cosmos
+
+#### 2023
+- EV-022: Celestia Mainnet Launch (Modular DA Layer)
+- EV-023: CometBFT Fork dari Tendermint Core (v0.34+)
+- EV-024: dYdX Chain v4 Mainnet Launch (Cosmos SDK)
+- EV-025: Interchain Security Launch (Cosmos Hub v12)
+- EV-026: Neutron Mainnet Launch (First Consumer Chain)
+- EV-027: Liquid Staking Module (LSM) Launch di Cosmos Hub
+- EV-028: Namada Mainnet Launch (Privacy Chain)
+- EV-038: Partial Set Fork / Chain Halt Incident — CometBFT v0.37.x
+- EV-039: Osmosis Front-Running / MEV Incident
+
+#### 2024
+- EV-029: Cosmos Hub Upgrade v18 (Lambda) — Tokenomics Changes
+- EV-030: Cosmos Hub Upgrade v19 (Mu) — IBC v7 / Packet Forward Middleware
+- EV-031: Ekosistem Cosmos: 100+ Sovereign Chains Terhubung via IBC (Ongoing)
+- EV-032: Serangkaian Upgrade Cosmos Hub v1-v19 (Ongoing)
+- EV-034: SEC Enforcement Actions vs Exchange — ATOM Delisting Risk (Ongoing)
+- EV-035: CosmWasm / Smart Contract Platform Maturity (Ongoing)
+- EV-036: Pertumbuhan Validator Set Cosmos Hub (Ongoing)
+- EV-037: IBC Transfer Volume Milestone >$50B (Ongoing)
+- EV-040: ICF Grants Program (Ongoing)
+
+---
+
+### SUMMARY
+
+Total Events
+
+40
+
+Founding
+
+3 (EV-001, EV-005, EV-006)
+
+Funding
+
+2 (EV-004, EV-040)
+
+Technology
+
+13 (EV-002, EV-003, EV-012, EV-015, EV-021, EV-023, EV-025, EV-027, EV-029, EV-030, EV-035, EV-038, EV-039)
+
+Security
+
+2 (EV-038, EV-039)
+
+Governance
+
+5 (EV-025, EV-027, EV-029, EV-030, EV-032)
+
+Legal
+
+0
+
+Regulation
+
+1 (EV-034)
+
+Market
+
+3 (EV-011, EV-033, EV-037)
+
+Organization
+
+4 (EV-005, EV-006, EV-013, EV-014, EV-018, EV-019) — counted as 6
+
+Launch
+
+8 (EV-007, EV-008, EV-009, EV-010, EV-016, EV-017, EV-020, EV-022, EV-024, EV-026, EV-028) — counted as 11
+
+Ecosystem
+
+1 (EV-031)
+
+Infrastructure
+
+2 (EV-036, EV-037)
+
+Other
+
+1 (EV-040)
+
+Note: Some events span multiple types; categorized by primary type.
+
+---
+
+Open Threads
+
+- Tanggal pasti pendirian Tendermint Inc (bulan/tahun 2017) — sumber publik hanya menyebut "2017" tanpa detail bulan
+- Tanggal pasti pendirian Interchain Foundation (bulan/tahun 2017) — Zefix register menunjukkan 2017 tapi tidak detail bulan
+- Detail proposal governance Cosmos Hub v18/v19 tokenomics (nomor proposal pasti, parameter inflation baru, community pool %) — butuh verifikasi on-chain di Mintscan
+- Daftar lengkap 19 upgrade Cosmos Hub dengan nomor proposal governance masing-masing — tidak tersedia dalam single source terpusat
+- Status hukum kasus SEC vs Binance/Kraken/Coinbase terkait ATOM — masih ongoing, outcome belum pasti
+- Daftar validator set Cosmos Hub genesis (100 validator awal) dan operator mereka — tidak terdokumentasi publik terpusat
+- Detail insiden chain halt CometBFT v0.37.x: chain mana saja terdampak, durasi halt, dan post-mortem resmi — tersebar di GitHub issues
+- Parameter LSM terkini (cap 25% liquid staked ATOM, validator bonding requirement, redemption rate) pasca-launch — butuh verifikasi on-chain
+- Hubungan hukum detail antara ICF, Ignite (Tendermint Inc), Informal Systems, Interchain GmbH pasca-restructuring 2021-2023 — tidak sepenuhnya terdokumentasi publik
+- Data volume IBC per corridor (chain-pair) harian/bulanan untuk validasi claim >$50B cumulative — Map of Zones menyediakan API tapi butuh query terpisah

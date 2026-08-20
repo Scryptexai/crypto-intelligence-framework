@@ -1,0 +1,372 @@
+PROJECT: Berachain
+
+Strategic Objectives
+
+1. Membangun Layer 1 dengan konsensus Proof-of-Liquidity yang mengikat keamanan jaringan langsung ke liquidity DeFi
+· Evidence: Whitepaper dan dokumentasi teknis memposisikan PoL sebagai inovasi inti — validator weight = BERA stake + delegated BGT dari LP di BEX; menciptakan flywheel liquidity-security (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+· Supporting Dataset: Phase 1 Foundation (kategori: Proof-of-Liquidity consensus); Phase 4 Technology (Consensus Mechanism, PoL Module); Phase 6 Token (BGT Utility: Validator Weight, Emission Direction)
+
+2. Menyediakan EVM-equivalent execution environment di atas Cosmos SDK untuk menarik developer Ethereum tanpa ganti tooling
+· Evidence: Custom EVM module di Cosmos SDK mendukung Solidity ^0.8.x, Hardhat, Foundry, MetaMask, JSON-RPC kompatibel Ethereum standard; tidak perlu porting kontrak (HIGH) [Berachain Documentation, https://docs.berachain.com/develop/evm]
+· Supporting Dataset: Phase 1 Foundation (EVM-compatible); Phase 4 Technology (Execution Environment, EVM Module); Phase 7 Major Integrations (Hardhat/Foundry/MetaMask)
+
+3. Meluncurkan primitive DeFi native (BEX, Bend, Berps, HONEY) sekaligus dengan mainnet untuk mem-bootstrapping liquidity dan BGT emission
+· Evidence: Ketiga aplikasi + stablecoin deployed dekat genesis mainnet 2024-06-06 (EV-008, EV-015); BGT emission hanya melalui LP di BEX (EV-016); HONEY sebagai base pair dan collateral (HIGH) [Phase 3 EV-007, EV-008, EV-015, EV-016]
+· Supporting Dataset: Phase 3 History (EV-007, EV-008, EV-015, EV-016); Phase 4 Core Components (BEX, Bend, Berps, HONEY); Phase 7 Applications (7 native apps)
+
+4. Menggunakan BGT (soulbound governance token) sebagai mekanisme alignment jangka panjang — non-transferable, hanya didapat via providing liquidity
+· Evidence: BGT 100% emission ke LP via PoL; tidak ada alokasi team/investor/foundation; voting power tidak transferable; delegation ke validator tidak memindahkan voting rights (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; [Phase 6 Token Distribution BGT]
+· Supporting Dataset: Phase 6 Token (BGT Distribution, Utility, Governance); Phase 4 Security Model (BGT non-transferable); Phase 3 EV-016, EV-017
+
+5. Memanfaatkan IBC untuk interoperabilitas Cosmos ecosystem sambil mempertahankan identitas EVM-first
+· Evidence: IBC channels live ke Osmosis, Celestia (EV-014); Cosmos SDK base; tapi marketing dan developer tooling fokus EVM (Hardhat/Foundry) bukan CosmWasm (HIGH) [Phase 3 EV-014]; [Phase 4 IBC Module]; [Phase 7 External Dependencies IBC]
+· Supporting Dataset: Phase 3 EV-014; Phase 4 Core Components (IBC Module); Phase 7 Major Integrations (IBC Channels); Phase 8 Narrative Position (IBC secondary narrative)
+
+Decision Timeline
+
+Keputusan: Mulai pengembangan konsep Proof-of-Liquidity dan arsitektur protokol (2022)
+· Trigger: Identifikasi kesenjangan antara security (validator stake) dan liquidity (DeFi TVL) pada L1 existing; keinginan menciptakan alignment langsung
+· Evidence: Phase 3 EV-001 mencatat konsep PoL dan pendirian proyek 2022 oleh trio founder pseudonim
+· Decision: Merancang konsensus di mana validator weight ditentukan oleh BGT yang didelegasikan dari LP, bukan hanya stake token gas
+· Immediate Result: Dasar teknis dan filosofis protokol; arsitektur awal PoL dirancang sebelum entity hukum ada
+· Long-term Impact: Menjadi differentiator utama vs competitor L1 (Monad, Sei, dll); menarik naratif "DeFi-native L1"
+· Supporting Dataset: Phase 3 EV-001; Phase 1 Foundation (Founding Entity, Founders)
+
+Keputusan: Pendirian Berachain Foundation di Cayman Islands sebagai legal wrapper (2023)
+· Trigger: Perlu entitas hukum untuk mengelola treasury, token issuance, compliance, dan pengawasan pengembangan sebelum public launch
+· Evidence: Phase 2 Entity Berachain Foundation (Cayman Islands); Phase 3 EV-002 pendirian 2023
+· Decision: Membentuk foundation non-profit di Cayman Islands sebagai pengelola treasury dan ekosistem
+· Immediate Result: Struktur hukum formal untuk operasi; fondation menjadi legal entity untuk TGE dan mainnet launch
+· Long-term Impact: Memisahkan legal liability dari contributor individu; memungkinkan token sale compliant; tapi menciptakan centralized entity vs DAO ideal
+· Supporting Dataset: Phase 2 Entity Berachain Foundation; Phase 3 EV-002; Phase 5 Financial (Treasury managed by Foundation)
+
+Keputusan: Peluncuran Artio Testnet v1 (2023-01-12) → v2 (2024-01-11) → v3 (2024-10) bertahap
+· Trigger: Validasi bertahap konsensus PoL, EVM compatibility, IBC integration sebelum mainnet; mengurangi risiko bug di genesis
+· Evidence: Phase 3 EV-003 (v1 Jan 2023), EV-006 (v2 Jan 2024), EV-009 (v3 Oct 2024); setiap iterasi menambah fitur (PoL, IBC, fee switch testing)
+· Decision: Three-phase testnet program dengan scope meningkat: v1 closed validator, v2 open validator + IBC, v3 fee switch + governance testing
+· Immediate Result: Identifikasi bug konsensus dan EVM execution早期; validator set siap untuk genesis; feedback untuk mainnet readiness
+· Long-term Impact: Mainnet genesis 2024-06-06 lancar tanpa major incident; 100 validator aktif dari hari 1; testnet v3 memvalidasi fee switch mechanics
+· Supporting Dataset: Phase 3 EV-003, EV-006, EV-009; Phase 4 Technical Upgrade History (Artio v1/v2/v3)
+
+Keputusan: Mainnet genesis launch dengan native apps (BEX, Bend, Berps) + BGT emission + HONEY + IBC sekaligus (2024-06-06)
+· Trigger: Siapnya semua komponen inti setelah testnet v2 validation; keinginan "DeFi-native from day one"
+· Evidence: Phase 3 EV-007 (mainnet genesis), EV-008 (native apps deployment), EV-014 (IBC), EV-015 (HONEY), EV-016 (BGT emission)
+· Decision: Launch semua primitive DeFi native bersamaan dengan consensus layer — bukan staged rollout
+· Immediate Result: BGT emission aktif hari 1 via BEX LP; liquidity flywheel berputar immediate; IBC channels live; 100 validator set
+· Long-term Impact: TVL dan activity bootstrap cepat; tapi kompleksitas operasional tinggi — semua sistem harus siap simultan; bug di satu app mempengaruhi seluruh ekosistem
+· Supporting Dataset: Phase 3 EV-007, EV-008, EV-014, EV-015, EV-016; Phase 4 Core Components (12 components live at genesis)
+
+Keputusan: BERA TGE dengan vesting cliffs untuk Team/Investors/Foundation/Advisors (2025-02-06)
+· Trigger: Mainnet sudah stable 8 bulan; native apps operational; BGT emission running; butuh transferable gas token untuk fee market dan staking validator
+· Evidence: Phase 3 EV-011 (TGE 2025-02-06); Phase 6 Token (BERA vesting: Team 12m cliff/36m linear, Investors 12m/24m, Foundation 6m/48m, Advisors 12m/24m, Community partial unlock)
+· Decision: Full supply 500M minted at genesis, TGE mengaktifkan transferability; vesting cliffs mulai berjalan post-TGE
+· Immediate Result: BERA tradable di BEX dan CEX; validator staking aktif; price discovery dimulai; cliff countdown untuk insider unlocks
+· Long-term Impact: Sell pressure dari cliff unlocks 2025-08 (Foundation/Ecosystem) dan 2026-02 (Team/Investors/Advisors); fee switch activation critical untuk BGT holder value capture pre-unlocks
+· Supporting Dataset: Phase 3 EV-011, EV-012; Phase 6 Token (TGE, Vesting Schedule, Major Token Events)
+
+Keputusan: Governance on-chain via BGT-weighted voting tanpa DAO legal wrapper terpisah (2024-ongoing)
+· Trigger: BGT emission aktif sejak genesis; butuh mekanisme untuk parameter changes, fee switch, emission direction
+· Evidence: Phase 3 EV-017 (governance proposals mulai 2024); Phase 6 Governance (BGT-weighted voting, Cosmos SDK governance module, delegation tidak transfer voting power); Phase 2 no DAO entity
+· Decision: Menggunakan Cosmos SDK governance module + custom PoL parameters; BGT holder vote langsung; Foundation tetap legal entity terpisah
+· Immediate Result: Parameter changes, software upgrades via on-chain proposal; fee switch gated by governance
+· Long-term Impact: Regulatory ambiguity — Foundation (Cayman) vs on-chain governance (global); tidak ada legal wrapper untuk DAO treasury; community pool existence unverified
+· Supporting Dataset: Phase 3 EV-017; Phase 6 Governance; Phase 2 Entity (no DAO); Phase 7 Governance Ecosystem
+
+Evolution Pattern
+
+Perubahan Strategi: Dari konsep PoL murni (2022) → testnet bertahap validasi teknis (2023-2024) → mainnet dengan full DeFi stack (2024) → TGE dan tokenomics live (2025) → governance-driven evolution (ongoing)
+· Evidence: Phase 3 timeline menunjukkan evolution dari research (EV-001) → infrastructure (EV-002, EV-004, EV-005) → testnet iteration (EV-003, EV-006, EV-009) → production launch (EV-007, EV-008, EV-014, EV-015, EV-016) → token launch (EV-011, EV-012) → governance (EV-017)
+· Supporting Dataset: Phase 3 History (all 18 events chronological); Phase 4 Technical Upgrade History (4 major upgrades)
+
+Perubahan Teknologi: Custom EVM module on Cosmos SDK (bukan fork geth/erigon) → CometBFT consensus (bukan Tendermint langsung) → PoL module terintegrasi di consensus layer → Native apps sebagai first-class citizens bukan third-party
+· Evidence: Phase 4 Architecture (modular: CometBFT + Cosmos SDK + EVM Module + PoL Module); Phase 4 Core Components (12 components including PoL, BGT, BERA, HONEY modules); Phase 4 Development Framework (Cosmos SDK v0.50+, CometBFT v0.38+, custom EVM)
+· Supporting Dataset: Phase 4 Technology (Architecture, Core Components, Consensus, Execution Environment, Technical Upgrade History)
+
+Perubahan Tokenomics: Pre-TGE: BERA non-transferable, BGT emission only, HONEY minting → Post-TGE: BERA transferable + gas + staking, fee switch eligible, vesting cliffs active, BGT fee switch revenue share, HONEY peg maintenance via arbitrage
+· Evidence: Phase 6 Token (BERA/BGT/HONEY supply, distribution, vesting, utility, inflation); Phase 3 EV-011 (TGE), EV-016 (BGT emission pre-TGE); Phase 6 Major Token Events (projected cliff ends 2025-08, 2026-02)
+· Supporting Dataset: Phase 6 Token (all sections); Phase 3 EV-011, EV-016; Phase 5 Revenue Model (Fee Switch planned)
+
+Perubahan Governance: Pre-mainnet: Foundation-controlled → Genesis: BGT emission to LPs, on-chain governance module live → Post-TGE: BGT holder voting on fee switch, emissions, upgrades; Foundation remains legal entity
+· Evidence: Phase 3 EV-016 (BGT emission genesis), EV-017 (governance proposals 2024+); Phase 6 Governance (BGT-weighted voting, proposal types, treasury governance unclear); Phase 2 Entity (Foundation only, no DAO)
+· Supporting Dataset: Phase 3 EV-016, EV-017; Phase 6 Governance; Phase 2 Entity List; Phase 7 Governance Ecosystem
+
+Technical Decision Pattern
+
+Pola 1: Modular Architecture dengan Custom Integration Layer
+· Decision Pattern: Memisahkan consensus (CometBFT), application framework (Cosmos SDK), execution (custom EVM module), dan PoL logic (custom module) — lalu mengintegrasikan via ABCI++ dan custom precompile
+· Evidence: Phase 4 Architecture (modular: consensus layer, application layer, IBC); Phase 4 Core Components (12 distinct modules); Phase 4 Development Framework (Cosmos SDK v0.50+, CometBFT v0.38+, custom EVM Module)
+· Supporting Dataset: Phase 4 Technology (Architecture, Core Components, Development Framework, Current Technical Stack)
+
+Pola 2: EVM-Equivalent Execution via Custom Module (Bukan Fork Client)
+· Decision Pattern: Membangun custom EVM interpreter di atas Cosmos SDK store (Merkle Patricia Trie) dengan precompile untuk native Cosmos functionality — bukan menjalankan geth/erigon sebagai sidecar
+· Evidence: Phase 4 Execution Environment (EVM state root di Cosmos SDK store via custom MPT); Phase 4 Core Components (EVM Module custom); Phase 4 Programming Languages (Go for core, Solidity for contracts)
+· Supporting Dataset: Phase 4 Technology (Execution Environment, Core Components, Programming Languages, Development Framework)
+
+Pola 3: Proof-of-Liquidity sebagai Consensus Extension (Bukan Application Layer)
+· Decision Pattern: PoL logic diimplementasikan sebagai module di consensus/application layer (validator weight calculation, BGT emission, delegation) — bukan sebagai smart contract di EVM
+· Evidence: Phase 4 Consensus Mechanism (validator weight = BERA stake + delegated BGT); Phase 4 Core Components (PoL Module, BGT Module); Phase 4 Security Model (PoL economic security)
+· Supporting Dataset: Phase 4 Technology (Consensus Mechanism, Core Components, Security Model); Phase 6 Token (BGT Utility: Validator Weight, Emission Direction)
+
+Pola 4: Native DeFi Primitives sebagai Protocol-Level Components
+· Decision Pattern: BEX, Bend, Berps, HONEY dibangun sebagai integrated modules dengan direct access ke PoL emission (BEX), gas token (BERA), governance token (BGT) — bukan third-party contracts
+· Evidence: Phase 4 Core Components (BEX, Bend, Berps, HONEY sebagai core components); Phase 3 EV-008 (deployment bersamaan mainnet); Phase 6 Token (BGT emission hanya via BEX LP)
+· Supporting Dataset: Phase 4 Technology (Core Components); Phase 3 History (EV-008, EV-015, EV-016); Phase 7 Applications (7 native apps)
+
+Pola 5: Upgrade Bertahap via Cosmos SDK Software Upgrade Proposal + On-Chain Governance
+· Decision Pattern: Menggunakan Cosmos SDK plan-based upgrade mechanism dengan validator signaling + BGT holder voting untuk parameter changes
+· Evidence: Phase 4 Technical Upgrade History (4 upgrades: Genesis, Artio v3, TGE, Governance); Phase 4 Security Model (upgrade mechanism); Phase 6 Governance (proposal types include Software Upgrade)
+· Supporting Dataset: Phase 4 Technology (Technical Upgrade History, Security Model); Phase 6 Governance; Phase 3 EV-017
+
+Financial Decision Pattern
+
+Pola 1: Tidak Ada Public Fundraising Announcement (Stealth/Private Funding Only)
+· Decision Pattern: Tidak mempublikasikan funding round (Seed, Series A, Strategic, Private Sale) — treasury dan operasi dibiayai via private channels; Foundation sebagai legal wrapper untuk fund management
+· Evidence: Phase 5 Funding History (0 verified rounds); Phase 5 Fundraising Mechanism (all "tidak diketahui"); Phase 5 Financial Dependencies (no identified VC/backer); Phase 2 Entity (no Investor entities)
+· Supporting Dataset: Phase 5 Financial (Funding History, Fundraising Mechanism, Financial Dependencies); Phase 2 Entity (no Investor category)
+
+Pola 2: Protocol Revenue dari Native Apps Sebagai Primary Sustainable Funding
+· Decision Pattern: Mengandalkan revenue BEX (trading fees), Bend (borrowing interest), Berps (perpetual fees), network fees (BERA gas), validator rewards — bukan VC funding berkelanjutan
+· Evidence: Phase 5 Revenue Model (7 confirmed streams: BEX, Bend, Berps, BERA gas, Fee Switch planned, MEV, Validator rewards); Phase 5 Revenue History (no historical data disclosed); Phase 7 Applications (native apps live)
+· Supporting Dataset: Phase 5 Financial (Revenue Model, Revenue History); Phase 7 Applications (BEX, Bend, Berps); Phase 3 EV-008 (apps deployment)
+
+Pola 3: Tokenomics Designed untuk Delayed Insider Liquidity (Vesting Cliffs Post-TGE)
+· Decision Pattern: Full supply minted at genesis, TGE activates transferability, tapi Team/Investors/Foundation/Advisors subject ke 6-12 bulan cliff + 2-4 tahun linear vesting — mencegah early dump
+· Evidence: Phase 6 Vesting Schedule (Team 12m/36m, Investors 12m/24m, Foundation 6m/48m, Advisors 12m/24m, Community partial unlock); Phase 6 Major Token Events (projected cliff ends 2025-08, 2026-02)
+· Supporting Dataset: Phase 6 Token (Distribution, Vesting Schedule, TGE, Major Token Events); Phase 3 EV-011 (TGE date)
+
+Pola 4: Fee Switch sebagai Value Capture Mechanism untuk BGT Holder (Governance-Gated)
+· Decision Pattern: Fee switch dirancang dari awal (whitepaper) tapi activatable hanya via BGT governance proposal — aligns BGT holder interest dengan protocol revenue
+· Evidence: Phase 5 Revenue Model (Fee Switch planned, status unverified); Phase 6 Token Utility BGT (Fee Switch Revenue Share); Phase 6 Governance (proposal types include Fee Switch Activation); Phase 3 EV-009 (Artio v3 test fee switch)
+· Supporting Dataset: Phase 5 Financial (Revenue Model); Phase 6 Token (BGT Utility, Governance); Phase 3 EV-009, EV-017
+
+Pola 5: Treasury Opacity — No Public Dashboard, Composition, atau Reporting
+· Decision Pattern: Treasury dikelola Foundation (Cayman) tanpa transparency report, on-chain address disclosure, atau DefiLlama/Token Terminal integration
+· Evidence: Phase 5 Treasury (size/composition undisclosed, custodian: Berachain Foundation); Phase 5 Financial Risk (all "tidak diketahui"); Phase 7 Ecosystem Risks (Treasury Concentration risk unidentified)
+· Supporting Dataset: Phase 5 Financial (Treasury, Financial Risk); Phase 2 Entity (Berachain Foundation); Phase 7 Ecosystem Risks
+
+Ecosystem Decision Pattern
+
+Pola 1: Build Native DeFi Stack First, External Integrations Second
+· Decision Pattern: Meluncurkan BEX, Bend, Berps, HONEY sebagai native apps sebelum menarik protokol eksternal — memastikan liquidity flywheel PoL berfungsi dari hari 1
+· Evidence: Phase 3 EV-008 (native apps deployed dengan mainnet genesis); Phase 7 Applications (7 native apps, external protocols "unidentified"); Phase 7 Major Integrations (native apps + IBC + tooling first)
+· Supporting Dataset: Phase 3 EV-008, EV-015, EV-016; Phase 7 Applications, Major Integrations; Phase 4 Core Components
+
+Pola 2: EVM Tooling Compatibility sebagai Primary Developer Onboarding Strategy
+· Decision Pattern: Prioritaskan Hardhat, Foundry, MetaMask, JSON-RPC Ethereum standard — tidak memaksa developer belajar CosmWasm/Rust; IBC sebagai bonus untuk cross-chain
+· Evidence: Phase 7 Developer Ecosystem (Hardhat, Foundry, Ignite CLI live); Phase 7 Wallet Ecosystem (MetaMask full support, Keplr/Leap inferred); Phase 4 Execution Environment (EVM-equivalent, standard JSON-RPC); Phase 8 Narrative (EVM-equivalent main narrative)
+· Supporting Dataset: Phase 7 Developer Ecosystem, Wallet Ecosystem, Major Integrations; Phase 4 Technology (Execution Environment); Phase 8 Market (Narrative Position)
+
+Pola 3: IBC Integration untuk Cosmos Liquidity Access, Bukan Sebagai Primary Identity
+· Decision Pattern: Mengaktifkan IBC channels ke Osmosis, Celestia untuk cross-chain liquidity — tapi branding, tooling, developer docs fokus EVM/PoL narrative
+· Evidence: Phase 3 EV-014 (IBC live mainnet); Phase 7 External Dependencies (IBC High criticality); Phase 7 Major Integrations (IBC Channels live); Phase 8 Narrative (IBC secondary narrative)
+· Supporting Dataset: Phase 3 EV-014; Phase 7 External Dependencies, Major Integrations; Phase 8 Market (Narrative Position)
+
+Pola 4: Validator Set Curated (100 Active) dengan High Hardware Requirements
+· Decision Pattern: Membatasi validator ke 100 dengan spec tinggi (64GB RAM, 4TB NVMe, 10Gbps) — memprioritaskan performance dan security over broad decentralization
+· Evidence: Phase 4 Consensus Mechanism (100 active validators); Phase 4 Known Limitations (validator centralization risk); Phase 7 Infrastructure Providers (100 Validators critical); Phase 3 EV-007 (genesis validator set)
+· Supporting Dataset: Phase 4 Technology (Consensus Mechanism, Known Technical Limitations); Phase 7 Infrastructure Providers; Phase 3 EV-007
+
+Pola 5: Pseudonymous Core Team dengan Foundation sebagai Public Face
+· Decision Pattern: Founders (Smokey, Dev, Papa) dan ~20+ core contributors pseudonim; Foundation (Cayman) sebagai legal entity publik; tidak ada doxxed leadership
+· Evidence: Phase 1 Foundation (Founders pseudonim); Phase 2 Entity (Smokey, Dev, Papa, Core Contributors all pseudonim); Phase 2 Entity (Berachain Foundation as legal entity)
+· Supporting Dataset: Phase 1 Foundation; Phase 2 Entity (Person: Smokey/Dev/Papa/Core Contributors; Foundation: Berachain Foundation)
+
+Governance Decision Pattern
+
+Pola 1: BGT-Weighted On-Chain Voting dengan Direct Delegator Participation
+· Decision Pattern: 1 BGT = 1 vote; delegator vote langsung (tidak melalui validator); BGT non-transferable mencegah vote buying; proposal types: Text, Parameter Change, Software Upgrade, Community Pool Spend, PoL-specific (Fee Switch, Emission Rate, Gauge Weight)
+· Evidence: Phase 6 Governance (model, voting system, voting power, delegation, proposal system); Phase 3 EV-017 (governance proposals mulai 2024); Phase 4 Security Model (BGT non-transferable prevents vote buying)
+· Supporting Dataset: Phase 6 Token (Governance); Phase 3 EV-017; Phase 4 Security Model
+
+Pola 2: Foundation sebagai Legal Entity Terpisah dari On-Chain Governance
+· Decision Pattern: Foundation (Cayman) mengelola treasury, legal, compliance; on-chain governance mengelola protocol parameters, fee switch, upgrades — tidak ada legal wrapper DAO yang bridge keduanya
+· Evidence: Phase 2 Entity (Foundation only, no DAO); Phase 6 Governance (treasury governance unclear, community pool existence unknown); Phase 7 Governance Ecosystem (Foundation live, DAO N/A, Council N/A)
+· Supporting Dataset: Phase 2 Entity List; Phase 6 Governance; Phase 7 Governance Ecosystem
+
+Pola 3: Fee Switch Activation Sebagai Governance Litmus Test
+· Decision Pattern: Fee switch dirancang dari awal tapi memerlukan BGT holder proposal dan vote untuk aktivasi — menguji apakah governance efektif dan BGT holder termotivasi
+· Evidence: Phase 5 Revenue Model (Fee Switch planned, status unverified); Phase 6 BGT Utility (Fee Switch Revenue Share); Phase 3 EV-009 (Artio v3 test fee switch), EV-017 (governance proposals); Phase 8 Open Threads (fee switch status unverified)
+· Supporting Dataset: Phase 5 Financial (Revenue Model); Phase 6 Token (BGT Utility); Phase 3 EV-009, EV-017; Phase 8 Market (Open Threads)
+
+Pola 4: Emission Direction via Gauge Voting (BGT Holder Mengarahkan Reward)
+· Decision Pattern: BGT holder vote gauge weights untuk menentukan alokasi BGT emission ke BEX pools — menciptakan competitive liquidity market internal
+· Evidence: Phase 6 BGT Utility (Emission Direction); Phase 4 Core Components (PoL Module, BGT Module); Phase 3 EV-016 (BGT emission via PoL); Phase 7 Applications (BEX sebagai primary emission venue)
+· Supporting Dataset: Phase 6 Token (BGT Utility); Phase 4 Technology (Core Components); Phase 3 EV-016; Phase 7 Applications
+
+Risk Response Pattern
+
+Pola 1: Extensive Testnet Iteration Sebelum Mainnet (Technical Risk Mitigation)
+· Decision Pattern: 3 fase testnet selama ~1.5 tahun (Artio v1 Jan 2023 → v2 Jan 2024 → v3 Oct 2024) dengan scope meningkat — validasi consensus, EVM, IBC, fee switch, governance sebelum mainnet
+· Trigger: Kompleksitas novel consensus (PoL) + custom EVM + native apps + IBC — high risk of genesis failure
+· Evidence: Phase 3 EV-003, EV-006, EV-009 (three testnets); Phase 4 Technical Upgrade History (Artio v1/v2/v3 as pre-mainnet validation)
+· Response: Staged testnet program dengan closed→open→pre-TGE phases; setiap iterasi menambah fitur dan validator set
+· Result: Mainnet genesis 2024-06-06 lancar; 100 validator aktif hari 1; no major consensus bug reported; native apps operational
+· Supporting Dataset: Phase 3 EV-003, EV-006, EV-009; Phase 4 Technical Upgrade History; Phase 3 EV-007 (successful genesis)
+
+Pola 2: Vesting Cliffs untuk Mitigasi Token Dump Risk (Economic Risk Mitigation)
+· Decision Pattern: 6-12 bulan cliff untuk semua insider allocation (Team, Investors, Foundation, Advisors) post-TGE — mencegah immediate sell pressure saat liquidity masih rendah
+· Trigger: TGE 2025-02-06 dengan full supply 500M minted; butuh protect early price discovery
+· Evidence: Phase 6 Vesting Schedule (Team 12m cliff, Investors 12m, Foundation 6m, Advisors 12m); Phase 6 Major Token Events (projected cliff ends 2025-08, 2026-02)
+· Response: Structured vesting dengan cliff + linear unlock; community partial unlock at TGE untuk liquidity
+· Result: TGE completed; cliff countdown active; fee switch activation critical sebelum 2025-08 Foundation cliff end
+· Supporting Dataset: Phase 6 Token (Vesting Schedule, Major Token Events, TGE); Phase 3 EV-011
+
+Pola 3: BGT Non-Transferable Design untuk Mitigasi Governance Capture (Governance Risk Mitigation)
+· Decision Pattern: BGT soulbound (non-transferable, hanya earned via LP) — mencegah whale accumulation, vote buying, dan plutocracy; delegation ke validator tidak transfer voting power
+· Trigger: Risiko governance capture pada token-weighted voting tradisional
+· Evidence: Phase 6 Token (BGT Distribution 100% to LPs, non-transferable); Phase 4 Security Model (BGT non-transferable prevents vote buying); Phase 6 Governance (delegator retain voting rights)
+· Response: Design choice pada tokenomics — BGT bukan tradable asset; value capture via fee switch dan emission direction
+· Result: BGT emission live since genesis 2024-06-06; governance proposals active 2024+; no secondary market manipulation possible
+· Supporting Dataset: Phase 6 Token (BGT Distribution, Utility, Governance); Phase 4 Security Model; Phase 3 EV-016, EV-017
+
+Pola 4: IBC Relay Dependency Diterima sebagai Calculated Risk (Bridge Risk Acceptance)
+· Decision Pattern: Mengaktifkan IBC tanpa native relayer incentivization — bergantung pada permissionless relayer market; liveness risk accepted untuk interoperability gain
+· Trigger: Kebutuhan cross-chain liquidity access ke Cosmos ecosystem (Osmosis, Celestia)
+· Evidence: Phase 4 Known Limitations (IBC relay dependency); Phase 7 External Dependencies (IBC Relayers High criticality); Phase 7 Ecosystem Risks (IBC Relay Dependency risk)
+· Response: Mengaktifkan IBC channels mainnet (EV-014); tidak membangun native relayer incentive program (tidak terdokumentasi)
+· Result: IBC channels live ke Osmosis, Celestia; cross-chain transfer operational; relayer liveness unmonitored publicly
+· Supporting Dataset: Phase 3 EV-014; Phase 4 Known Technical Limitations; Phase 7 External Dependencies, Ecosystem Risks
+
+Pola 5: Oracle Provider Unidentified — Silent Acceptance of Centralization Risk (Oracle Risk Acceptance)
+· Decision Pattern: Bend (liquidation), Berps (funding rate), HONEY (peg) memerlukan price feeds — tapi oracle provider tidak diungkapkan, tidak ada audit report publik, tidak ada decentralized oracle integration terverifikasi
+* Trigger: Perlu oracle untuk DeFi primitives tapi tidak ingin commit ke provider spesifik secara publik
+* Evidence: Phase 4 Known Limitations (No native oracle); Phase 7 External Dependencies (Oracle Provider unidentified, High criticality); Phase 7 Ecosystem Risks (Oracle Dependency risk); Phase 8 Open Threads (oracle provider unidentified)
+* Response: Tidak mempublikasikan oracle provider; tidak mengintegrasikan multiple oracle (Chainlink, Pyth, dll) secara terverifikasi
+* Result: Critical infrastructure dependency opaque; single point of failure risk untuk lending liquidation, perps funding, stablecoin peg
+* Supporting Dataset: Phase 4 Known Technical Limitations; Phase 7 External Dependencies, Ecosystem Risks; Phase 8 Market Open Threads
+
+Recurring Behavioral Pattern
+
+Pola 1: Launch dengan Full Stack Native — Apps + Consensus + Tokens Sekaligus
+· Decision Pattern: Berulang kali meluncurkan sistem kompleks secara bersamaan: mainnet genesis + 3 DeFi apps + 2 tokens (BGT, HONEY) + IBC + 100 validators (EV-007, EV-008, EV-014, EV-015, EV-016); TGE + vesting cliffs + CEX listing + fee switch eligibility (EV-011, EV-012)
+· Evidence: Phase 3 EV-007, EV-008, EV-014, EV-015, EV-016 (genesis cluster); Phase 3 EV-011, EV-012 (TGE cluster); Phase 4 Core Components (12 components live at genesis)
+* Supporting Dataset: Phase 3 History (EV-007, EV-008, EV-014, EV-015, EV-016, EV-011, EV-012); Phase 4 Core Components; Phase 6 Major Token Events
+
+Pola 2: Pseudonymous Leadership dengan Foundation Legal Wrapper
+· Decision Pattern: Founders dan core contributors tetap pseudonim (Smokey, Dev, Papa, ~20+ handles); Foundation (Cayman) sebagai sole legal entity untuk treasury, compliance, token issuance
+* Evidence: Phase 1 Foundation (Founders pseudonim); Phase 2 Entity (all Person entities pseudonim, Foundation only legal entity); Phase 5 Financial (Treasury managed by Foundation)
+* Supporting Dataset: Phase 1 Foundation; Phase 2 Entity (Person, Foundation); Phase 5 Financial (Treasury)
+
+Pola 3: EVM-First, Cosmos-Native Architecture
+· Decision Pattern: Semua developer tooling, wallet support, documentation, marketing mengutamakan EVM compatibility (Hardhat, Foundry, MetaMask, JSON-RPC) — Cosmos SDK/CometBFT/IBC sebagai underlying infrastructure tersembunyi
+* Evidence: Phase 7 Developer Ecosystem (Hardhat, Foundry primary); Phase 7 Wallet Ecosystem (MetaMask full, Keplr/Leap inferred); Phase 4 Execution Environment (EVM-equivalent); Phase 8 Narrative (EVM-equivalent main, IBC secondary)
+* Supporting Dataset: Phase 7 Developer Ecosystem, Wallet Ecosystem, Major Integrations; Phase 4 Technology (Execution Environment); Phase 8 Market (Narrative Position)
+
+Pola 4: Tokenomics dengan Delayed Insider Liquidity + Continuous Contributor Rewards
+· Decision Pattern: BERA vesting cliffs (6-12m) + linear (2-4y) untuk insider; BGT continuous emission ke LP (no insider allocation); HONEY elastic supply via user minting — alignment jangka panjang
+* Evidence: Phase 6 Vesting Schedule (all insider categories cliffed); Phase 6 BGT Distribution (100% to LPs, no team/investor); Phase 6 HONEY Supply (elastic, user-minted); Phase 3 EV-011, EV-016
+* Supporting Dataset: Phase 6 Token (Distribution, Vesting Schedule, BGT Distribution, HONEY Supply, Major Token Events); Phase 3 EV-011, EV-016
+
+Pola 5: Governance Parameter Changes via On-Chain Proposal, Treasury Opaque
+· Decision Pattern: Protocol parameters (gas limit, fee switch, emission rates, upgrades) via BGT voting on-chain; tapi Foundation treasury (Cayman) off-chain, no transparency, no community pool verified
+* Evidence: Phase 6 Governance (proposal types include parameter changes, software upgrades); Phase 6 Governance (treasury governance unclear); Phase 2 Entity (Foundation only); Phase 7 Governance Ecosystem (Foundation live, DAO N/A)
+* Supporting Dataset: Phase 6 Token (Governance); Phase 2 Entity List; Phase 7 Governance Ecosystem
+
+Strategic Trade-offs
+
+Trade-off 1: Desentralisasi Validator vs Performance & Security
+· Decision: Membatasi validator ke 100 dengan hardware requirements tinggi (64GB RAM, 4TB NVMe, 10Gbps)
+· Trade-off: Mengorbankan broad decentralization (hanya 100 slot, high barrier to entry) demi throughput, finality cepat (~1-2 detik), dan security threshold CometBFT (>2/3 honest)
+· Evidence: Phase 4 Consensus Mechanism (100 validators, CometBFT BFT); Phase 4 Known Limitations (validator centralization risk); Phase 7 Infrastructure Providers (100 validators critical)
+· Supporting Dataset: Phase 4 Technology (Consensus Mechanism, Known Technical Limitations); Phase 7 Infrastructure Providers
+
+Trade-off 2: BGT Non-Transferable (Soulbound) vs DeFi Composability
+· Decision: BGT tidak transferable, hanya earned via LP di BEX, tidak bisa dipakai collateral di protokol lain tanpa wrapper
+· Trade-off: Mengorbankan composability DeFi (BGT tidak bisa jadi collateral di Bend, tidak bisa trade di BEX, tidak bisa integrate ke external protocols) demi mencegah vote buying, whale capture, dan mercenary capital
+· Evidence: Phase 6 Token (BGT Distribution 100% to LPs, non-transferable); Phase 4 Security Model (BGT non-transferable prevents vote buying); Phase 4 Known Limitations (BGT design limits composability); Phase 6 BGT Utility (Governance, Emission Direction, Validator Weight)
+· Supporting Dataset: Phase 6 Token (BGT Distribution, Utility); Phase 4 Technology (Security Model, Known Technical Limitations)
+
+Trade-off 3: EVM-Equivalent Custom Module vs Upstream Client Compatibility
+· Decision: Custom EVM interpreter di Cosmos SDK (custom MPT, precompile) bukan fork geth/erigon
+· Trade-off: Mengorbankan automatic upstream EVM upgrades (Shanghai, Cancun, Prague, dll) dan client diversity demi tight integration dengan Cosmos state machine, PoL module, dan IBC
+· Evidence: Phase 4 Execution Environment (custom EVM module, EVM state root in Cosmos store); Phase 4 Core Components (EVM Module custom); Phase 4 Development Framework (custom EVM, not standard client)
+· Supporting Dataset: Phase 4 Technology (Execution Environment, Core Components, Development Framework)
+
+Trade-off 4: Native DeFi Apps sebagai Protocol Components vs Permissionless Innovation
+· Decision: BEX, Bend, Berps, HONEY dibangun dan dideploy oleh core team sebagai integrated modules — bukan membiarkan third-party membangun primitives dulu
+· Trade-off: Mengorbankan permissionless innovation speed dan diversity pada early stage demi memastikan PoL flywheel (BGT emission via BEX LP) berfungsi dari genesis dan liquidity terarah
+· Evidence: Phase 3 EV-008 (native apps deployed dengan genesis); Phase 4 Core Components (BEX, Bend, Berps, HONEY sebagai core components); Phase 7 Applications (7 native, external "unidentified"); Phase 6 BGT Utility (Emission Direction via BEX)
+· Supporting Dataset: Phase 3 EV-008; Phase 4 Core Components; Phase 7 Applications; Phase 6 Token (BGT Utility)
+
+Trade-off 5: Foundation-Controlled Treasury vs DAO-Owned Treasury
+· Decision: Treasury dikelola Berachain Foundation (Cayman Islands) tanpa transparency dashboard; on-chain governance hanya untuk protocol parameters, tidak untuk treasury spending
+· Trade-off: Mengorbankan community ownership dan transparency over treasury demi legal compliance, regulatory clarity, dan operational flexibility Foundation
+· Evidence: Phase 5 Treasury (undisclosed, managed by Foundation); Phase 5 Financial Risk (all unknown); Phase 2 Entity (Foundation only, no DAO); Phase 6 Governance (treasury governance unclear, community pool unknown); Phase 7 Governance Ecosystem (Foundation live, DAO N/A)
+· Supporting Dataset: Phase 5 Financial (Treasury, Financial Risk); Phase 2 Entity; Phase 6 Governance; Phase 7 Governance Ecosystem
+
+Trade-off 6: Stealth Funding (No Public VC Announcement) vs Ecosystem Signaling
+· Decision: Tidak mempublikasikan investor, valuation, funding rounds — Foundation sebagai sole funding vehicle
+· Trade-off: Mengorbankan marketing signal dan network effects dari top-tier VC backing demi strategic flexibility,جنب regulatory scrutiny pada token sale, dan narrative "community-first"
+· Evidence: Phase 5 Funding History (0 verified); Phase 5 Fundraising Mechanism (all unknown); Phase 5 Financial Dependencies (no identified backers); Phase 2 Entity (no Investor entities)
+· Supporting Dataset: Phase 5 Financial (Funding History, Fundraising Mechanism, Financial Dependencies); Phase 2 Entity List
+
+Behavioral Summary
+
+Prioritas Utama Proyek:
+1. Proof-of-Liquidity consensus sebagai differentiator teknis dan ekonomis — mengikat security ke DeFi liquidity via BGT delegation
+2. EVM-equivalent execution untuk developer onboarding seamless — Hardhat, Foundry, MetaMask out of the box
+3. Native DeFi primitives (BEX, Bend, Berps, HONEY) untuk bootstrapping liquidity flywheel dari genesis
+4. Tokenomics dengan delayed insider liquidity (vesting cliffs) dan continuous contributor rewards (BGT emission to LPs)
+5. Governance on-chain via BGT-weighted voting untuk protocol parameters, fee switch, upgrades
+
+Cara Mengambil Keputusan:
+- Technical decisions: Modular architecture dengan custom integration layers (CometBFT + Cosmos SDK + custom EVM + PoL module) — prioritaskan control dan integration depth over upstream compatibility
+- Product decisions: Launch full stack native (consensus + apps + tokens + IBC) secara bersamaan — high complexity tolerance, yakin pada testnet validation bertahap
+- Financial decisions: Opacity pada funding dan treasury; transparency pada tokenomics (whitepaper) dan protocol revenue (native apps) — Foundation sebagai legal wrapper, community via tokenomics
+- Governance decisions: On-chain untuk parameters, off-chain (Foundation) untuk treasury — pragmatic separation, regulatory-driven
+- Ecosystem decisions: EVM-first tooling/wallet/docs; IBC sebagai secondary bridge — capture Ethereum developer mindshare first
+
+Faktor Paling Sering Mempengaruhi Keputusan:
+1. PoL Consensus Integrity — semua desain (BGT soulbound, BEX sebagai emission venue, validator weight formula) derived dari PoL mechanics
+2. EVM Developer Experience — tooling, wallet, RPC, docs semua optimized untuk Ethereum developer
+3. Regulatory/Legal Pragmatism — Foundation di Cayman, pseudonymous founders, no public fundraising, treasury opacity
+4. Native DeFi Flywheel Bootstrapping — launch apps dengan consensus, BGT emission via BEX only, HONEY sebagai base pair
+5. Long-term Alignment via Tokenomics — vesting cliffs, BGT non-transferable, continuous emission to contributors
+
+Pola Evolusi:
+- 2022: Research/design PoL concept (pseudonymous trio)
+- 2023: Infrastructure build (Foundation, GitHub, Community, Testnet v1)
+- 2024: Iterative testnet validation (v2, v3) → Mainnet genesis dengan full stack native
+- 2025: TGE aktivasi tokenomics, vesting cliffs mulai, governance live
+- Ongoing: Governance-driven parameter evolution, fee switch activation, ecosystem expansion
+
+Kekuatan Utama:
+- Novel consensus (PoL) menciptakan alignment unik security-liquidity
+- EVM-equivalent pada Cosmos SDK — best of both worlds (tooling + modularity)
+- Native DeFi stack lengkap dari genesis — flywheel immediate
+- Tokenomics alignment jangka panjang (vesting, BGT soulbound, continuous LP rewards)
+- Strong technical execution (3 testnets, smooth genesis, 100 validators live)
+
+Kelemahan Utama:
+- Treasury dan funding opacity — tidak ada transparency report, investor disclosure, atau community pool verified
+- Oracle dependency unidentified — critical risk untuk Bend, Berps, HONEY
+- Validator set centralization risk — 100 slots, high hardware req, geographic distribution unknown
+- BGT non-transferable limits composability — tidak bisa integrate ke external DeFi tanpa wrapper
+- Foundation vs on-chain governance dual structure — regulatory ambiguity, no DAO legal wrapper
+- No public audit reports terverifikasi untuk core protocol dan native apps
+- Adoption metrics tidak teragregasi publik (TVL, volume, users, DAU) — DefiLlama integration incomplete
+
+Open Threads
+
+- Funding history lengkap: apakah benar tidak ada VC funding atau private funding tidak di-announce — perlu verifikasi Cayman Islands filing atau investor portfolio cross-check
+- Treasury dashboard/on-chain address: apakah Foundation akan mempublikasikan treasury wallet untuk verifikasi komposisi aset dan revenue flow
+- Fee switch activation status: apakah governance proposal sudah passed dan fee switch live post-TGE — critical untuk BGT holder value capture sebelum cliff unlocks 2025-08
+- Oracle provider untuk Bend/Berps/HONEY: unidentified di semua fase — perlu audit report atau contract verification untuk price feed addresses
+- CEX listing specifics: Phase 3 EV-012 mention CEX listing tapi tidak nama exchange — perlu CoinGecko/CoinMarketCap verification post-TGE
+- BGT slashing mechanics: apakah delegated BGT slashable saat validator misbehave — whitepaper hanya mention BERA stake slashable
+- HONEY collateralization parameter di Bend: LTV, liquidation threshold, penalty tidak terdokumentasi
+- Legal wrapper untuk DAO terpisah dari Foundation: Phase 2 no DAO entity; Phase 6 governance on-chain only — regulatory risk
+- Audit reports untuk core protocol (PoL, EVM module, CometBFT integration) dan native apps (BEX, Bend, Berps, HONEY) — tidak ditemukan publik
+- IBC channels aktif dan relayer infrastructure detail: docs mention IBC live tapi tidak ada daftar channel/relayer live
+- Validator set transparency: geographic distribution, entity identity, commission rates — tidak publik
+- MEV protection status: PBS, encrypted mempool, atau MEV mitigation — tidak terdokumentasi
+- Cross-chain BERA/BGT/HONEY representation (wrapped di Ethereum, Solana, dll) — tidak terdokumentasi
+- Grants program / hackathon history: tidak ditemukan di Phase 1-7
+- Non-IBC bridge integrations (Wormhole, LayerZero, Axelar) — tidak terdokumentasi
+- Circulating supply real-time BERA/BGT/HONEY: tidak ada dashboard resmi
+- Holder distribution on-chain analysis: top holders, foundation wallet, investor wallets — tidak diungkap
+- Vesting contract addresses dan enforcement mechanism (smart contract vs legal agreement) — tidak terdokumentasi
+- BGT emission rate per block/epoch exact number — tidak di-specify whitepaper/docs
+- Community pool existence: apakah ada on-chain community pool funded by protocol revenue — tidak terdokumentasi
+- HONEY peg stability metrics: historical depeg events, max deviation, recovery time — tidak ada data publik
+- Governance proposal history dan voting turnout aggregated — tidak ada dashboard

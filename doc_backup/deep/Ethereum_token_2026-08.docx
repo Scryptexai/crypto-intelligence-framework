@@ -1,0 +1,238 @@
+PROJECT: Ethereum
+
+## Token Information
+
+Official Token Name: Ether (HIGH) [Ethereum.org, https://ethereum.org/en/eth/]
+Symbol: ETH (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/ethereum]
+Token Standard: Native asset (bukan ERC-20; ETH adalah aset protokol Layer 1) (HIGH) [Ethereum.org - ETH, https://ethereum.org/en/eth/; Etherscan Token Tracker (tidak ada kontrak untuk ETH native), https://etherscan.io/token/0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee]
+Blockchain: Ethereum Mainnet (Layer 1) (HIGH) [Ethereum.org - Networks, https://ethereum.org/en/developers/docs/networks/]
+Contract Address: Native asset (tidak ada kontrak token pada mainnet; placeholder 0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE digunakan di beberapa konteks untuk mewakili native ETH) (HIGH) [Etherscan, https://etherscan.io/token/0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee; 1inch Token Reference, https://tokens.1inch.io/]
+Decimals: 18 (HIGH) [Ethereum Yellow Paper, https://ethereum.github.io/yellowpaper/paper.pdf; Ethereum.org - ETH, https://ethereum.org/en/eth/]
+Status: Live (HIGH) [Ethereum.org, https://ethereum.org/en/eth/]
+Sources: https://ethereum.org/en/eth/ ; https://www.coingecko.com/en/coins/ethereum ; https://ethereum.github.io/yellowpaper/paper.pdf ; https://etherscan.io/token/0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+
+## Supply
+
+Maximum Supply: Tidak ada (unbounded / tidak fixed) (HIGH) [Ethereum.org - ETH Supply, https://ethereum.org/en/eth/; Vitalik Buterin Blog - Supply, https://vitalik.eth.limo/general/2017/12/19/eth_supply.html]
+Total Supply: ~120.200.000 ETH (perkiraan Oktober 2024, berubah real-time) (MEDIUM) [Ultrasound.money, https://ultrasound.money/; Etherscan Total Supply, https://etherscan.io/stat/ethsupply]
+Circulating Supply: ~120.200.000 ETH (sama dengan total supply karena tidak ada token terkunci protokol; staked ETH tetap liquid via LST) (MEDIUM) [Ultrasound.money, https://ultrasound.money/; Beaconcha.in Staked ETH, https://beaconcha.in/]
+Initial Supply: 72.000.000 ETH (genesis block: 60.000.000 ETH crowdsale + 12.000.000 ETH Foundation/early contributors) (HIGH) [Ethereum Blog - Frontier, https://blog.ethereum.org/2015/07/22/frontier-is-coming; Messari, https://messari.io/asset/ethereum/profile]
+Supply Type: Dynamic (inflationary/deflationary bergantung net issuance vs base fee burn) (HIGH) [EIP-1559, https://eips.ethereum.org/EIPS/eip-1559; Consensus Specs - Issuance, https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/beacon-chain.md; Ultrasound.money, https://ultrasound.money/]
+Sources: https://ethereum.org/en/eth/ ; https://ultrasound.money/ ; https://etherscan.io/stat/ethsupply ; https://blog.ethereum.org/2015/07/22/frontier-is-coming ; https://eips.ethereum.org/EIPS/eip-1559 ; https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/beacon-chain.md
+
+## Distribution
+
+Community (Crowdsale Participants): 60.000.000 ETH (83,3% initial supply) (HIGH) [Ethereum Blog - Ether Sale, https://blog.ethereum.org/2014/07/22/launching-the-ether-sale; Messari, https://messari.io/asset/ethereum/profile]
+Foundation (Ethereum Foundation): Bagian dari 12.000.000 ETH (persentase pasti tidak dipublikasikan per entitas) (MEDIUM) [Ethereum Blog - Frontier, https://blog.ethereum.org/2015/07/22/frontier-is-coming; Messari, https://messari.io/asset/ethereum/profile]
+Team / Early Contributors: Bagian dari 12.000.000 ETH (persentase pasti tidak dipublikasikan per individu/entitas) (MEDIUM) [Ethereum Blog - Frontier, https://blog.ethereum.org/2015/07/22/frontier-is-coming; Messari, https://messari.io/asset/ethereum/profile]
+Investors: Tidak ada investor tradisional (VC/private sale) sebelum crowdsale; crowdsale terbuka ke publik (HIGH) [Ethereum Blog - Ether Sale, https://blog.ethereum.org/2014/07/22/launching-the-ether-sale; Messari, https://messari.io/asset/ethereum/profile]
+Treasury (Ethereum Foundation Treasury): Tidak diungkap jumlah ETH spesifik; analyst memperkirakan >200k ETH pada alamat terkait EF (estimasi eksternal) (LOW) [Ethereum Foundation Annual Report 2023, https://ethereum.foundation/annual-report-2023/; Nansen/Arkham analyst estimates, tidak ada URL resmi tunggal]
+Ecosystem / Grants: Didanai dari Foundation treasury (bagian dari 12M ETH awal + pengelolaan aset berkelanjutan) (MEDIUM) [EF Grants, https://esp.ethereum.foundation/; EF Annual Report 2023, https://ethereum.foundation/annual-report-2023/]
+Advisors: Tidak ada alokasi advisor terpisah terdokumentasi publik (HIGH) [Messari, https://messari.io/asset/ethereum/profile; Ethereum Blog - Frontier, https://blog.ethereum.org/2015/07/22/frontier-is-coming]
+Other (Pre-Merge PoW Mining Rewards): ~58.000.000 ETH di-mine antara 2015-2022 (estimasi kumulatif block rewards + uncle rewards) (MEDIUM) [Etherscan Historical Supply, https://etherscan.io/stat/ethsupply; Consensus Specs - PoW Issuance (historical), https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/beacon-chain.md]
+Sources: https://blog.ethereum.org/2014/07/22/launching-the-ether-sale ; https://blog.ethereum.org/2015/07/22/frontier-is-coming ; https://messari.io/asset/ethereum/profile ; https://ethereum.foundation/annual-report-2023/ ; https://esp.ethereum.foundation/ ; https://etherscan.io/stat/ethsupply
+
+## Vesting Schedule
+
+Category: Crowdsale Participants
+Cliff: Tidak ada (token langsung unlocked pada genesis block)
+Vesting: Tidak ada (fully unlocked at TGE/genesis)
+Unlock Frequency: N/A
+Current Status: Fully unlocked sejak 2015-07-30
+Sources: https://blog.ethereum.org/2014/07/22/launching-the-ether-sale ; https://blog.ethereum.org/2015/07/22/frontier-is-coming
+
+Category: Foundation / Early Contributors (12M ETH)
+Cliff: Tidak diketahui secara detail per penerima; tidak ada jadwal vesting on-chain yang dipublikasikan resmi
+Vesting: Tidak diketahui secara detail; didistribusikan secara internal EF sejak genesis
+Unlock Frequency: N/A
+Current Status: Fully unlocked (diasumsikan; tidak ada kontrak vesting on-chain untuk genesis allocation)
+Sources: https://blog.ethereum.org/2015/07/22/frontier-is-coming ; https://messari.io/asset/ethereum/profile
+
+Category: PoW Mining Rewards (Historical 2015-2022)
+Cliff: Tidak ada
+Vesting: Continuous per block (5 ETH → 3 ETH → 2 ETH per block sesuai hard fork)
+Unlock Frequency: Per block (~13 detik)
+Current Status: Berhenti pada The Merge (2022-09-15)
+Sources: https://blog.ethereum.org/2017/10/12/byzantium-hard-fork ; https://blog.ethereum.org/2019/02/22/ethereum-constantinople-hard-fork ; https://blog.ethereum.org/2022/09/15/the-merge-is-done
+
+Category: PoS Validator Rewards (Post-Merge)
+Cliff: Tidak ada
+Vesting: Continuous per epoch (attestation/reward) + withdrawal credentials 0x01 untuk partial/full withdrawal (Shanghai/Capella 2023-04-12)
+Unlock Frequency: Per epoch (~6,4 menit) untuk rewards; withdrawal queue untuk principal
+Current Status: Live
+Sources: https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/beacon-chain.md ; https://blog.ethereum.org/2023/03/28/shanghai-announcement ; https://eips.ethereum.org/EIPS/eip-4895
+
+## TGE
+
+TGE Date: 2014-07-22 (dimulainya crowdsale) / 2015-07-30 (genesis block, distribusi on-chain) (HIGH) [Ethereum Blog - Ether Sale, https://blog.ethereum.org/2014/07/22/launching-the-ether-sale; Ethereum Blog - Frontier, https://blog.ethereum.org/2015/07/22/frontier-is-coming]
+Initial Unlock: 100% (72.000.000 ETH langsung tersedia pada genesis block) (HIGH) [Ethereum Blog - Frontier, https://blog.ethereum.org/2015/07/22/frontier-is-coming; Messari, https://messari.io/asset/ethereum/profile]
+Unlocked Categories: Crowdsale participants (60M ETH), Foundation/early contributors (12M ETH) (HIGH) [Ethereum Blog - Frontier, https://blog.ethereum.org/2015/07/22/frontier-is-coming; Messari, https://messari.io/asset/ethereum/profile]
+Launch Platform: Platform crowdsale kustom Ethereum Foundation (website resmi 2014) (HIGH) [Ethereum Blog - Ether Sale, https://blog.ethereum.org/2014/07/22/launching-the-ether-sale]
+Status: Completed
+Sources: https://blog.ethereum.org/2014/07/22/launching-the-ether-sale ; https://blog.ethereum.org/2015/07/22/frontier-is-coming ; https://messari.io/asset/ethereum/profile
+
+## Utility
+
+Utility: Gas / Transaction Fees
+Deskripsi: ETH digunakan untuk membayar base fee (dibakar) dan priority fee (ke validator) untuk setiap transaksi dan komputasi EVM
+Status: Live
+Sources: https://eips.ethereum.org/EIPS/eip-1559 ; https://ethereum.org/en/developers/docs/gas/ ; https://ethereum.org/en/eth/
+
+Utility: Staking / Validator Security
+Deskripsi: Minimum 32 ETH untuk menjalankan validator; stake dijamin (slashing) untuk keamanan konsensus PoS (Gasper)
+Status: Live (sejak Beacon Chain genesis 2020-12-01)
+Sources: https://ethereum.org/en/staking/ ; https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/beacon-chain.md ; https://blog.ethereum.org/2020/11/27/eth2-genesis-confirmed
+
+Utility: Validator Rewards / Incentive
+Deskripsi: Validator menerima issuance ETH baru (beacon chain rewards) + priority tips + MEV-Boost payments untuk block proposal dan attestation
+Status: Live
+Sources: https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/beacon-chain.md ; https://flashbots.net/ ; https://mevboost.pics/
+
+Utility: Collateral / DeFi Primitive
+Deskripsi: ETH digunakan sebagai collateral utama di DeFi (MakerDAO, Aave, Lido, dll.) dan untuk mint stablecoin (DAI), liquid staking tokens (stETH, rETH)
+Status: Live
+Sources: https://defillama.com/chain/Ethereum ; https://makerdao.com/ ; https://lido.fi/ ; https://rocketpool.net/
+
+Utility: Liquidity / Trading Pair
+Deskripsi: ETH adalah base pair utama di DEX (Uniswap, Curve, Balancer) dan CEX; deep liquidity untuk seluruh ekosistem
+Status: Live
+Sources: https://uniswap.org/ ; https://curve.fi/ ; https://www.coingecko.com/en/coins/ethereum
+
+Utility: Governance (Informal / Off-chain)
+Deskripsi: ETH tidak digunakan untuk on-chain token voting; governance melalui EIP process (off-chain social consensus), core dev calls, dan client adoption signaling
+Status: Live
+Sources: https://eips.ethereum.org/ ; https://github.com/ethereum/pm ; https://blog.ethereum.org/2022/03/08/client-diversity
+
+Utility: Fee Payment (L2 / Rollup)
+Deskripsi: ETH digunakan untuk membayar L2 transaction fees (base fee + tip) dan untuk mendanai deposit/withdrawal ke L1; blob fees (EIP-4844) dibayar dalam ETH
+Status: Live (EIP-4844 live sejak Dencun 2024-03-13)
+Sources: https://eips.ethereum.org/EIPS/eip-4844 ; https://ethereum.org/en/upgrades/dencun/ ; https://blog.ethereum.org/2024/03/13/dencun-announcement
+
+Utility: Unit of Account / Denomination
+Deskripsi: ETH (dan sub-unit wei, gwei) digunakan sebagai unit account standar untuk gas pricing, token pricing, dan nilai ekosistem
+Status: Live
+Sources: https://ethereum.org/en/developers/docs/gas/ ; https://ethereum.github.io/yellowpaper/paper.pdf
+
+Sources: https://eips.ethereum.org/EIPS/eip-1559 ; https://ethereum.org/en/staking/ ; https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/beacon-chain.md ; https://defillama.com/chain/Ethereum ; https://uniswap.org/ ; https://eips.ethereum.org/ ; https://eips.ethereum.org/EIPS/eip-4844
+
+## Governance
+
+Governance Model: Off-chain Social Consensus (EIP Process + Core Dev Calls + Client Implementation Signaling) (HIGH) [EIPs Repository, https://eips.ethereum.org/; Ethereum Core Dev Calls, https://github.com/ethereum/pm; Ethereum.org Governance, https://ethereum.org/en/governance/]
+Voting System: Tidak ada on-chain token voting; keputusan melalui rough consensus pada EIP discussions, All Core Devs calls, dan client team adoption (HIGH) [EIPs Process, https://eips.ethereum.org/; Core Dev Calls, https://github.com/ethereum/pm]
+Voting Power: Tidak berlaku (bukan token-weighted voting); pengaruh berbasis reputasi teknis, client market share, dan komunitas (HIGH) [Ethereum.org Governance, https://ethereum.org/en/governance/; Vitalik Buterin - Governance, https://vitalik.eth.limo/general/2017/12/17/voting.html]
+Delegation: Tidak ada delegasi voting power on-chain; validator tidak memiliki voting power protokol (hanya signaling via client version) (HIGH) [Consensus Specs, https://github.com/ethereum/consensus-specs; Ethereum.org Governance, https://ethereum.org/en/governance/]
+Proposal System: EIP (Ethereum Improvement Proposal) process — draft → review → last call → final → client implementation → hard fork activation (HIGH) [EIP-1, https://eips.ethereum.org/EIPS/eip-1; EIPs Repository, https://eips.ethereum.org/]
+Treasury Governance: Ethereum Foundation (Stiftung) mengelola treasury secara independen; tidak ada on-chain treasury governance oleh token holder (HIGH) [Ethereum Foundation, https://ethereum.org/en/foundation/; EF Annual Report 2023, https://ethereum.foundation/annual-report-2023/]
+Status: Live (ongoing process)
+Sources: https://eips.ethereum.org/ ; https://github.com/ethereum/pm ; https://ethereum.org/en/governance/ ; https://vitalik.eth.limo/general/2017/12/17/voting.html ; https://ethereum.org/en/foundation/ ; https://ethereum.foundation/annual-report-2023/
+
+## Inflation / Deflation
+
+Inflation Mechanism: PoS Issuance (Beacon Chain rewards ke validator) — ~0,5%–0,8% per tahun netto tergantung total ETH staked (HIGH) [Consensus Specs - Issuance, https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/beacon-chain.md; Beaconcha.in, https://beaconcha.in/; Ultrasound.money, https://ultrasound.money/]
+Emission Schedule: Continuous per epoch; base reward ~proportional 1/sqrt(total_active_validators) * effective_balance; tidak ada halving schedule tetap (HIGH) [Consensus Specs - Rewards, https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/beacon-chain.md#rewards-and-penalties; Ethereum.org Staking Rewards, https://ethereum.org/en/staking/]
+Burn Mechanism: EIP-1559 Base Fee Burn (setiap transaksi membakar base fee) + EIP-4844 Blob Gas Burn (blob base fee dibakar) (HIGH) [EIP-1559, https://eips.ethereum.org/EIPS/eip-1559; EIP-4844, https://eips.ethereum.org/EIPS/eip-4844; Ultrasound.money, https://ultrasound.money/]
+Buyback: Tidak ada (protokol tidak melakukan buyback; burn adalah mekanisme supply reduction) (HIGH) [EIP-1559, https://eips.ethereum.org/EIPS/eip-1559; Ethereum.org - Ultrasound Money, https://ethereum.org/en/ultrasound-money/]
+Supply Reduction: Net deflationary ketika base fee burn > issuance (terjadi saat aktivitas tinggi); net inflationary ketika aktivitas rendah; seit Dencun (Maret 2024) blob fees menambah burn (HIGH) [Ultrasound.money, https://ultrasound.money/; EIP-1559, https://eips.ethereum.org/EIPS/eip-1559; EIP-4844, https://eips.ethereum.org/EIPS/eip-4844]
+Status: Live (dynamic equilibrium)
+Sources: https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/beacon-chain.md ; https://eips.ethereum.org/EIPS/eip-1559 ; https://eips.ethereum.org/EIPS/eip-4844 ; https://ultrasound.money/ ; https://beaconcha.in/ ; https://ethereum.org/en/ultrasound-money/
+
+## Holder Distribution
+
+Top Holder Concentration: Tidak ada data resmi konsolidasi; analyzer on-chain (Nansen, Arkham, Glassnode) menunjukkan top 100 alamat non-contract memegang ~30-40% supply (termasuk exchange, LST contracts, EF-related, whale) (MEDIUM) [Nansen/Arkham/Glassnode public dashboards, tidak ada URL resmi tunggal; Etherscan Token Holders, https://etherscan.io/token/0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee#balances]
+Foundation Holding: Tidak diungkap resmi; estimator eksternal (Nansen/Arkham) memperkirakan alamat terkait EF ~200k-300k ETH (LOW) [Ethereum Foundation Annual Report 2023, https://ethereum.foundation/annual-report-2023/; Nansen/Arkham estimates, tidak ada URL resmi]
+Investor Holding: Tidak ada investor tradisional (VC/private sale); early contributors (founders, devs) menerima bagian dari 12M ETH genesis — jumlah per individu tidak dipublikasikan (HIGH) [Messari, https://messari.io/asset/ethereum/profile; Ethereum Blog - Frontier, https://blog.ethereum.org/2015/07/22/frontier-is-coming]
+Treasury Holding: Ethereum Foundation treasury (jumlah ETH tidak diungkap); tidak ada protokol treasury on-chain terpisah (MEDIUM) [Ethereum Foundation Annual Report 2023, https://ethereum.foundation/annual-report-2023/]
+Community Holding: Mayoritas supply tersebar ke ribuan pemegang crowdsale, penambang PoW historis, validator PoS, pengguna DeFi, dan exchange (HIGH) [Etherscan Holders, https://etherscan.io/token/0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee#balances; Messari, https://messari.io/asset/ethereum/profile]
+Whale Concentration: Exchange cold wallets (Binance, Coinbase, Kraken, OKX, Bybit) + LST contracts (Lido stETH, Rocket Pool rETH, Coinbase cbETH) + besar whale individu mendominasi top holders; Lido stETH contract sendiri >25% total supply (MEDIUM) [Etherscan Top Holders, https://etherscan.io/token/0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee#balances; Lido Finance, https://lido.fi/; Rated Network, https://www.rated.network/]
+Sources: https://etherscan.io/token/0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee#balances ; https://ethereum.foundation/annual-report-2023/ ; https://messari.io/asset/ethereum/profile ; https://lido.fi/ ; https://www.rated.network/
+
+## Major Token Events
+
+Date: 2014-07-22
+Event: Ether Crowdsale Dimulai
+Description: Penjualan publik 60M ETH untuk BTC selama 42 hari
+Status: Completed
+Related Historical Event ID: EV-005
+Sources: https://blog.ethereum.org/2014/07/22/launching-the-ether-sale
+
+Date: 2014-09-02
+Event: Ether Crowdsale Berakhir
+Description: 31.529 BTC terkumpul; alokasi 60M ETH ke pembeli, 12M ETH ke Foundation/early contributors
+Status: Completed
+Related Historical Event ID: EV-006
+Sources: https://blog.ethereum.org/2014/09/02/ether-sale-ends-raised-31500-btc
+
+Date: 2015-07-30
+Event: Genesis Block / TGE On-Chain
+Description: 72M ETH tersebar pada genesis block (block 0); mainnet Frontier live
+Status: Completed
+Related Historical Event ID: EV-008
+Sources: https://blog.ethereum.org/2015/07/22/frontier-is-coming ; https://etherscan.io/block/0
+
+Date: 2016-07-20
+Event: DAO Fork / Ethereum Classic Split
+Description: Hard fork irregular state change mengembalikan ~3,6M ETH dari The DAO exploit; chain minoritas melanjutkan sebagai ETC
+Status: Completed
+Related Historical Event ID: EV-012
+Sources: https://blog.ethereum.org/2016/07/20/hard-fork-completed
+
+Date: 2021-08-05
+Event: London Upgrade / EIP-1559 Activated
+Description: Base fee burn mechanism live; >3,5M ETH terbakar sejak peluncuran (per Oktober 2024)
+Status: Completed
+Related Historical Event ID: EV-022
+Sources: https://blog.ethereum.org/2021/07/15/london-mainnet-announcement ; https://ultrasound.money/
+
+Date: 2022-09-15
+Event: The Merge (PoW → PoS)
+Description: Penghentian PoW mining rewards (~5,4M ETH/tahun); transisi ke PoS issuance (~0,5-0,8%/tahun); net emission reduction ~90%
+Status: Completed
+Related Historical Event ID: EV-026
+Sources: https://blog.ethereum.org/2022/09/15/the-merge-is-done ; https://eips.ethereum.org/EIPS/eip-3675
+
+Date: 2023-04-12
+Event: Shanghai/Capella Upgrade (Staking Withdrawals Enabled)
+Description: EIP-4895 memungkinkan penarikan ETH staked (partial/full); >18M ETH eligible untuk withdrawal; likuiditas staking terwujud
+Status: Completed
+Related Historical Event ID: EV-027
+Sources: https://blog.ethereum.org/2023/03/28/shanghai-announcement ; https://eips.ethereum.org/EIPS/eip-4895
+
+Date: 2024-03-13
+Event: Dencun Upgrade / EIP-4844 (Proto-Danksharding)
+Description: Blob transactions live; blob base fee burn mechanism menambah deflationary pressure; biaya L2 turun >90%
+Status: Completed
+Related Historical Event ID: EV-028
+Sources: https://blog.ethereum.org/2024/03/13/dencun-announcement ; https://eips.ethereum.org/EIPS/eip-4844
+
+## Official Token Resources
+
+Official Documentation: https://ethereum.org/en/eth/
+Whitepaper: https://ethereum.org/en/whitepaper/
+Governance: https://eips.ethereum.org/ ; https://github.com/ethereum/pm
+Explorer: https://etherscan.io/ ; https://beaconcha.in/ ; https://ultrasound.money/
+Contract: Native asset (tidak ada kontrak); placeholder https://etherscan.io/token/0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+GitHub: https://github.com/ethereum ; https://github.com/ethereum/go-ethereum ; https://github.com/ethereum/consensus-specs
+Dashboard: https://ultrasound.money/ ; https://beaconcha.in/ ; https://clientdiversity.org/
+
+## Summary
+
+Status: Live
+Supply Type: Dynamic (inflationary/deflationary berbasis net issuance vs burn)
+Total Supply: ~120.200.000 ETH (per Oktober 2024, real-time)
+Distribution Categories: Crowdsale Participants (60M genesis), Foundation/Early Contributors (12M genesis), PoW Mining Rewards (historical ~58M), PoS Validator Rewards (ongoing)
+Utility Count: 8 (Gas, Staking, Validator Rewards, Collateral/DeFi, Liquidity, Governance-informal, L2 Fee Payment, Unit of Account)
+Governance: Off-chain Social Consensus (EIP Process, Core Dev Calls, Client Signaling)
+Major Token Events: Crowdsale (2014), Genesis (2015), DAO Fork (2016), EIP-1559/London (2021), Merge (2022), Shanghai/Withdrawals (2023), Dencun/Blobs (2024)
+
+## Open Threads
+
+- Jumlah pasti ETH yang dimiliki Ethereum Foundation treasury saat ini — tidak dipublikasikan resmi; hanya estimasi eksternal (Nansen/Arkham) yang bervariasi
+- Rincian alokasi 12M ETH "Foundation/early contributors" per penerima individu/entitas — tidak pernah dipublikasikan transparan
+- Apakah ada vesting schedule internal untuk early contributors (founders, devs awal) — tidak ada kontrak on-chain atau dokumen resmi yang mengonfirmasi
+- Proporsi supply yang terkunci dalam staking (beacon chain deposit contract) vs liquid vs LST (stETH, rETH, cbETH) — data real-time tersedia di beaconcha.in tapi tidak ada laporan resmi terpusat
+- Status hukum ETH sebagai security/commodity di berbagai yurisdiksi (SEC vs CFTC, MiCA EU) — perkembangan berkelanjutan, belum final
+- Mekanisme governance formalisasi (misal EIP-7702 account abstraction, EIP-7547 inclusion lists) yang bisa mengubah dinamis validator/token holder — masih proposal/devnet
+- Apakah akan ada supply cap di masa depan (EIP/discussion tentang terminal supply) — tidak ada proposal resmi yang gaining consensus
+- Impact quantum vulnerability pada BLS12-381 validator signatures terhadap supply/keamanan jangka panjang — research phase, belum ada mitigation live
+- Cross-verifikasi angka ">$100M grants allocated" EF vs actual on-chain ETH outflow dari alamat EF — perlu analisis on-chain independen
+- Distribusi holder aktual (retail vs institutional vs exchange vs LST) dengan metodologi yang konsisten — tidak ada single source of truth resmi

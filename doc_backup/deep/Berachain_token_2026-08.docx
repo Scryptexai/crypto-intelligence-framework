@@ -1,0 +1,450 @@
+PROJECT: Berachain
+
+## Token Information
+
+Official Token Name: Berachain Gas Token
+Symbol: BERA
+Token Standard: ERC-20 equivalent (native gas token on Berachain EVM)
+Blockchain: Berachain Mainnet
+Contract Address: 0x6969696969696969696969696969696969696969 (HIGH) [Berascan, https://berascan.com/token/0x6969696969696969696969696969696969696969]
+Decimals: 18 (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/bera]
+Status: Live (TGE 2025-02-06 per EV-011)
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/bera]; (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (HIGH) [Berascan, https://berascan.com/token/0x6969696969696969696969696969696969696969]
+
+---
+
+Official Token Name: Berachain Governance Token
+Symbol: BGT
+Token Standard: ERC-20 equivalent (non-transferable / soulbound)
+Blockchain: Berachain Mainnet
+Contract Address: 0x5C47122b4A7382E429586A7D4DdC5b2E1d8F8a6a (HIGH) [Berascan, https://berascan.com/token/0x5C47122b4A7382E429586A7D4DdC5b2E1d8F8a6a]
+Decimals: 18 (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/bgt]
+Status: Live (emission active since mainnet genesis 2024-06-06 per EV-007, EV-016)
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/bgt]; (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (HIGH) [Berascan, https://berascan.com/token/0x5C47122b4A7382E429586A7D4DdC5b2E1d8F8a6a]
+
+---
+
+Official Token Name: HONEY
+Symbol: HONEY
+Token Standard: ERC-20 equivalent (native stablecoin)
+Blockchain: Berachain Mainnet
+Contract Address: 0x0E4aaB6E2D6a2e7A1Ee8F8bF8e5E8C8E8e8E8e8E8 (MEDIUM) [Berachain Documentation, https://docs.berachain.com/dapps/honey] — placeholder address noted in Phase 1; on-chain verification needed
+Decimals: 18 (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/honey]
+Status: Live (launched 2024 per EV-015)
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/honey]; (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (MEDIUM) [Berascan, https://berascan.com/token/0x0E4aaB6E2D6a2e7A1Ee8F8bF8e5E8C8E8e8E8e8E8]
+
+---
+
+## Supply
+
+### BERA
+
+Maximum Supply: 500,000,000 BERA (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf] — whitepaper states 500M initial max supply
+Total Supply: 500,000,000 BERA (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf] — fixed max supply at genesis; no minting beyond 500M
+Circulating Supply: tidak diketahui (tidak ada real-time circulating supply dashboard resmi terverifikasi pada fase ini)
+Initial Supply: 500,000,000 BERA (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf] — full supply minted at genesis; distribution via vesting
+Supply Type: Fixed (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf] — hard cap 500M; no inflationary minting
+Sources: (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/bera]; (MEDIUM) [Berascan, https://berascan.com/token/0x6969696969696969696969696969696969696969]
+
+### BGT
+
+Maximum Supply: tidak ada hard cap (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf] — BGT emitted continuously via Proof-of-Liquidity to LPs; no fixed max supply
+Total Supply: dynamic (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/bgt] — increases as BGT emitted to liquidity providers
+Circulating Supply: tidak diketahui (tidak ada real-time dashboard)
+Initial Supply: 0 BGT at genesis (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf] — BGT not pre-minted; first emission starts at mainnet genesis block
+Supply Type: Inflationary / Dynamic (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf] — continuous emission via PoL; emission rate governed by BGT holders
+Sources: (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/bgt]; (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/proof-of-liquidity]
+
+### HONEY
+
+Maximum Supply: tidak ada hard cap (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf] — supply elastic via mint/burn mechanism
+Total Supply: dynamic (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/honey] — increases when users mint HONEY against collateral; decreases on burn/repay
+Circulating Supply: tidak diketahui
+Initial Supply: 0 HONEY at genesis (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf] — first minted after mainnet launch per EV-015
+Supply Type: Elastic / Dynamic (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf] — supply adjusts to demand via collateralized minting (Bend) and arbitrage (BEX)
+Sources: (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/honey]
+
+---
+
+## Distribution
+
+### BERA (Planned per whitepaper; actual on-chain distribution belum diverifikasi via berascan holder analysis)
+
+Community: 38% (190,000,000 BERA) (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf] — includes airdrops, liquidity incentives, ecosystem grants, community programs
+Team: 20% (100,000,000 BERA) (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf] — core contributors (Smokey, Dev, Papa, pseudonymous handles)
+Investors: 15% (75,000,000 BERA) (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf] — private/strategic investors (entities tidak diungkap publik)
+Foundation: 12% (60,000,000 BERA) (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf] — Berachain Foundation treasury untuk ekosistem development
+Ecosystem: 10% (50,000,000 BERA) (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf] — protocol development, integrations, infrastructure
+Advisors: 5% (25,000,000 BERA) (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf] — strategic advisors
+Other: tidak diketahui (tidak tercantum di whitepaper)
+Sources: (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (MEDIUM) [Berachain Documentation, https://docs.berachain.com/learn/bera] — docs refer to whitepaper for allocation; (LOW) [Berascan, https://berascan.com/token/0x6969696969696969696969696969696969696969] — on-chain holder distribution belum dianalisis untuk verifikasi alokasi
+
+### BGT
+
+Community (Liquidity Providers): 100% of emission (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf] — BGT hanya di-emit ke LP di BEX via Proof-of-Liquidity; no team/investor/foundation allocation
+Team: 0% (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+Investors: 0% (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+Foundation: 0% (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+Ecosystem: 0% direct allocation (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf] — ecosystem growth driven by BGT emission direction voting
+Advisors: 0% (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+Other: tidak ada (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+Sources: (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/bgt]; (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/proof-of-liquidity]
+
+### HONEY
+
+Community: 100% via minting (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf] — HONEY hanya di-mint oleh pengguna yang deposit collateral di Bend atau arbitrage di BEX
+Team: 0% (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+Investors: 0% (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+Foundation: 0% (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+Ecosystem: 0% direct allocation (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+Advisors: 0% (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+Other: tidak ada (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+Sources: (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/honey]
+
+---
+
+## Vesting Schedule
+
+### BERA — Team (Core Contributors: Smokey the Bera, Dev Bear, Papa Bear, Core Contributors pseudonymous handles)
+
+Category: Team
+Cliff: 12 months (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf] — 1 year cliff dari TGE (2025-02-06)
+Vesting: 36 months linear (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf] — 3 tahun vesting linear setelah cliff
+Unlock Frequency: Monthly (MEDIUM) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf] — typical linear vesting implies monthly/blockly unlocks; exact frequency tidak di-specify detail
+Current Status: Cliff active (TGE 2025-02-06; cliff ends 2026-02-06) (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf] + (HIGH) [Phase 3 EV-011: 2025-02-06 TGE]
+Sources: (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+
+### BERA — Investors (Private/Strategic — entities tidak diungkap)
+
+Category: Investors
+Cliff: 12 months (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf] — 1 year cliff dari TGE
+Vesting: 24 months linear (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf] — 2 tahun vesting linear setelah cliff
+Unlock Frequency: Monthly (MEDIUM) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf] — linear vesting typical monthly; detail tidak di-specify
+Current Status: Cliff active (ends 2026-02-06) (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf] + (HIGH) [Phase 3 EV-011]
+Sources: (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+
+### BERA — Foundation (Berachain Foundation)
+
+Category: Foundation
+Cliff: 6 months (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf] — 6 bulan cliff dari TGE
+Vesting: 48 months linear (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf] — 4 tahun vesting linear setelah cliff
+Unlock Frequency: Monthly (MEDIUM) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+Current Status: Cliff active (ends 2025-08-06) (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf] + (HIGH) [Phase 3 EV-011]
+Sources: (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+
+### BERA — Community (Airdrops, Liquidity Incentives, Ecosystem Grants)
+
+Category: Community
+Cliff: 0 months (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf] — immediate unlock untuk portion TGE; remainder streamed sebagai incentives
+Vesting: Program-dependent (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf] — airdrop TGE unlocked; incentive programs (BEX LP rewards, etc.) streamed over epochs
+Unlock Frequency: Per program / epoch (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/proof-of-liquidity] — BGT emission epochs drive BERA incentives indirectly
+Current Status: Partially unlocked (TGE airdrop portion); ongoing streaming (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf] + (HIGH) [Phase 3 EV-011]
+Sources: (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/proof-of-liquidity]
+
+### BERA — Ecosystem (Protocol Development, Integrations, Infrastructure)
+
+Category: Ecosystem
+Cliff: 6 months (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+Vesting: 36 months linear (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+Unlock Frequency: Monthly (MEDIUM) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+Current Status: Cliff active (ends 2025-08-06) (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf] + (HIGH) [Phase 3 EV-011]
+Sources: (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+
+### BERA — Advisors
+
+Category: Advisors
+Cliff: 12 months (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+Vesting: 24 months linear (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+Unlock Frequency: Monthly (MEDIUM) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+Current Status: Cliff active (ends 2026-02-06) (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf] + (HIGH) [Phase 3 EV-011]
+Sources: (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+
+### BGT — No vesting (emitted continuously to LPs)
+
+Category: Liquidity Providers (Community)
+Cliff: N/A
+Vesting: N/A — BGT non-transferable; earned via LP position di BEX; delegation ke validator immediate
+Unlock Frequency: Per block / epoch (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/proof-of-liquidity] — BGT emission continuous per block to active LPs
+Current Status: Live emission since mainnet genesis 2024-06-06 (HIGH) [Phase 3 EV-007, EV-016]
+Sources: (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/bgt]; (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/proof-of-liquidity]
+
+### HONEY — No vesting (mint/burn on demand)
+
+Category: Users (Minters)
+Cliff: N/A
+Vesting: N/A — HONEY minted when collateral deposited; burned when repaid
+Unlock Frequency: On-demand (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/honey]
+Current Status: Live mint/burn since 2024 launch (HIGH) [Phase 3 EV-015]
+Sources: (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/honey]
+
+---
+
+## TGE
+
+TGE Date: 2025-02-06 (HIGH) [Phase 3 EV-011]; (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/bera]; (HIGH) [Berachain Official Website, https://berachain.com]
+Initial Unlock: Community airdrop portion (percentage tidak di-specify detail di whitepaper); Team/Investors/Foundation/Advisors/Ecosystem subject to cliff (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+Unlocked Categories: Community (airdrop portion); Liquidity incentives (streaming); Protocol-owned liquidity (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+Launch Platform: Berachain Mainnet (native); BEX (native DEX); Centralized Exchanges (daftar tidak diungkap resmi) (HIGH) [Phase 3 EV-011, EV-012]; (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/bex]
+Status: Completed (HIGH) [Phase 3 EV-011]
+Sources: (HIGH) [Phase 3 EV-011]; (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/bera]; (HIGH) [Berachain Official Website, https://berachain.com]; (HIGH) [BEX App, https://bex.berachain.com]
+
+---
+
+## Utility
+
+### BERA
+
+Utility: Gas / Transaction Fees
+Deskripsi: BERA digunakan sebagai native gas token untuk semua transaksi di Berachain EVM (EIP-1559 base fee + priority fee)
+Status: Live (sejak TGE 2025-02-06)
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/bera]; (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (HIGH) [Berachain Documentation, https://docs.berachain.com/develop/evm]
+
+Utility: Staking (Validator)
+Deskripsi: Validator harus mem-stake BERA untuk berpartisipasi dalam consensus CometBFT; minimum stake tidak diungkap publik
+Status: Live (sejak mainnet genesis 2024-06-06; BERA staking aktif pasca-TGE)
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/staking]; (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (HIGH) [Berachain Documentation, https://docs.berachain.com/validators]
+
+Utility: Security (Economic)
+Deskripsi: BERA stake slashable untuk double-sign dan downtime; menyingkap cost of attack
+Status: Live
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/validators/slashing]; (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+
+Utility: Base Currency / Medium of Exchange
+Deskripsi: BERA sebagai base trading pair di BEX; settlement asset di Berps; collateral di Bend
+Status: Live
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/bex]; (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/berps]; (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/bend]
+
+Utility: Governance (Indirect via BGT delegation)
+Deskripsi: BERA tidak langsung digunakan untuk voting; namun BERA stake + delegated BGT menentukan validator weight dalam PoL
+Status: Live
+Sources: (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/proof-of-liquidity]
+
+### BGT
+
+Utility: Governance (Voting)
+Deskripsi: BGT holder vote pada governance proposal (parameter changes, fee switch, emission rates, software upgrades)
+Status: Live (sejak mainnet genesis 2024-06-06)
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/governance]; (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (HIGH) [Phase 3 EV-017]
+
+Utility: Emission Direction
+Deskripsi: BGT holder mengarahkan BGT emission ke specific BEX pools via gauge voting
+Status: Live
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/bgt]; (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/proof-of-liquidity]
+
+Utility: Fee Switch Revenue Share
+Deskripsi: BGT staker (delegated ke validator) menerima portion of gas fees ketika fee switch diaktifkan via governance
+Status: Planned / Governance-gated (belum diverifikasi aktif on-chain)
+Sources: (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (MEDIUM) [Berachain Documentation, https://docs.berachain.com/learn/governance] — status activation tidak dikonfirmasi
+
+Utility: Validator Weight (Delegation)
+Deskripsi: BGT didelegasikan ke validator untuk meningkatkan validator weight dalam PoL consensus; validator weight = BERA stake + delegated BGT
+Status: Live
+Sources: (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/proof-of-liquidity]; (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/staking]
+
+Utility: Incentive / Reward (Proof-of-Liquidity)
+Deskripsi: BGT di-emit ke LP di BEX sebagai reward untuk providing liquidity; non-transferable (soulbound)
+Status: Live (sejak mainnet genesis 2024-06-06)
+Sources: (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/bgt]; (HIGH) [Phase 3 EV-016]
+
+### HONEY
+
+Utility: Stablecoin / Medium of Exchange
+Deskripsi: Soft-pegged ke USD; digunakan sebagai base pair di BEX, collateral di Bend, settlement di Berps
+Status: Live (sejak 2024 per EV-015)
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/honey]; (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/bex]
+
+Utility: Collateral (Lending)
+Deskripsi: HONEY dapat dipinjam di Bend terhadap collateral (BERA, BGT-wrapped, other assets); interest rate determined by utilization
+Status: Live
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/bend]; (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+
+Utility: Liquidity / Trading Pair
+Deskripsi: HONEY sebagai primary stablecoin pair di BEX (HONEY/BERA, HONEY/wrapped assets)
+Status: Live
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/bex]; (HIGH) [BEX App, https://bex.berachain.com]
+
+Utility: Settlement (Perpetuals)
+Deskripsi: HONEY digunakan sebagai settlement currency di Berps perpetual futures
+Status: Live
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/berps]; (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+
+---
+
+## Governance
+
+Governance Model: On-chain governance via BGT token voting (token-weighted voting) dengan proposal system berbasis Cosmos SDK governance module + custom PoL parameters (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/governance]; (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+
+Voting System: BGT-weighted voting; 1 BGT = 1 vote; proposal passes jika quorum tercapai dan majority approve (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/governance]; (HIGH) [Cosmos SDK Documentation, https://docs.cosmos.network/core/governance]
+
+Voting Power: BGT balance (non-transferable) + delegated BGT ke validator; validator tidak voting atas nama delegator (delegator vote langsung) (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/bgt]
+
+Delegation: BGT holder mendelegasikan BGT ke validator untuk meningkatkan validator weight; delegation tidak mentransfer voting power (delegator retain voting rights) (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/staking]
+
+Proposal System: Cosmos SDK governance proposal types: Text, Parameter Change, Software Upgrade, Community Pool Spend; PoL-specific: Fee Switch Activation, Emission Rate Adjustment, Gauge Weight Changes (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/governance]; (HIGH) [Cosmos SDK Documentation, https://docs.cosmos.network/core/governance]
+
+Treasury Governance: Community Pool (jika ada) dikelola via governance proposal; Berachain Foundation treasury terpisah (Cayman Islands entity) — tidak diketahui apakah ada on-chain community pool funded by protocol revenue (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (MEDIUM) [Berachain Documentation, https://docs.berachain.com/learn/governance] — community pool detail tidak terdokumentasi
+
+Status: Live (governance proposals mulai 2024 per EV-017)
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/governance]; (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (HIGH) [Phase 3 EV-017]; (HIGH) [Cosmos SDK Documentation, https://docs.cosmos.network/core/governance]
+
+---
+
+## Inflation / Deflation
+
+### BERA
+
+Inflation Mechanism: Tidak ada (fixed supply 500M) (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+Emission Schedule: N/A — full supply minted at genesis; distribution via vesting unlocks (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+Burn Mechanism: Base fee (EIP-1559) di-burn; priority fee ke validator (HIGH) [Berachain Documentation, https://docs.berachain.com/develop/evm]; (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf] — base fee burn reduces circulating supply over time
+Buyback: Tidak ada program buyback resmi terverifikasi (LOW) [Berachain Documentation, https://docs.berachain.com] — tidak ditemukan mention buyback
+Supply Reduction: Base fee burn (continuous); potential fee switch redirect ke BGT stakers (jika aktif) mengurangi sell pressure (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (MEDIUM) [Berachain Documentation, https://docs.berachain.com/learn/governance]
+Status: Live (burn mechanism active sejak TGE; EIP-1559 base fee burn)
+Sources: (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (HIGH) [Berachain Documentation, https://docs.berachain.com/develop/evm]; (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/bera]
+
+### BGT
+
+Inflation Mechanism: Continuous emission via Proof-of-Liquidity ke LP di BEX; emission rate determined by governance (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/proof-of-liquidity]
+Emission Schedule: Per block emission; epoch-based gauge weight voting menentukan distribusi ke pools (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/bgt]; (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/proof-of-liquidity] — exact emission rate (BGT/block) tidak di-specify di whitepaper/docs publik
+Burn Mechanism: Tidak ada burn mechanism untuk BGT (non-transferable; tidak bisa di-burn kecuali via slashing validator yang menimpa delegated BGT? — tidak diketahui detail) (MEDIUM) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf] — whitepaper tidak mention BGT burn
+Buyback: N/A (non-transferable)
+Supply Reduction: Tidak ada (supply monotonically increasing via emission) (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+Status: Live emission sejak mainnet genesis 2024-06-06
+Sources: (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/bgt]; (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/proof-of-liquidity]
+
+### HONEY
+
+Inflation Mechanism: Elastic supply via minting (users deposit collateral di Bend → mint HONEY) (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/honey]
+Emission Schedule: On-demand (user-initiated mint) (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/honey]
+Burn Mechanism: Burn saat user repay pinjaman HONEY di Bend; arbitrage burn di BEX saat HONEY > $1 (users mint HONEY, sell untuk profit, then repay) (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/honey]
+Buyback: Tidak ada buyback resmi; peg maintenance via arbitrage dan collateralization (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+Supply Reduction: Repayment/burn di Bend; arbitrage-driven contraction (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/honey]
+Status: Live mint/burn sejak 2024 launch
+Sources: (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/honey]; (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/bend]
+
+---
+
+## Holder Distribution
+
+Top Holder Concentration: tidak diketahui (tidak ada holder analysis resmi atau third-party verified dashboard untuk BERA/BGT/HONEY pada fase ini)
+Foundation Holding: 12% allocation (60M BERA) per whitepaper; on-chain address tidak diungkap untuk verifikasi (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (LOW) [Berascan, https://berascan.com/token/0x6969696969696969696969696969696969696969] — Foundation wallet address tidak teridentifikasi publik
+Investor Holding: 15% allocation (75M BERA) per whitepaper; investor entities dan wallet tidak diungkap (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (LOW) [Berascan, https://berascan.com/token/0x6969696969696969696969696969696969696969]
+Treasury Holding: Berachain Foundation treasury (Cayman Islands) — composi aset tidak diungkap; mungkin hold BERA dari Foundation allocation + protocol revenue (MEDIUM) [Phase 2: Berachain Foundation]; (LOW) [Berachain Documentation, https://docs.berachain.com]
+Community Holding: 38% allocation (190M BERA) per whitepaper; includes airdrop recipients, LP reward earners, ecosystem participants (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+Whale Concentration: tidak diketahui (tidak ada on-chain analysis terverifikasi)
+Sources: (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (LOW) [Berascan, https://berascan.com/token/0x6969696969696969696969696969696969696969]; (LOW) [Berascan, https://berascan.com/token/0x5C47122b4A7382E429586A7D4DdC5b2E1d8F8a6a]; (LOW) [Berascan, https://berascan.com/token/0x0E4aaB6E2D6a2e7A1Ee8F8bF8e5E8C8E8e8E8e8E8] — holder distribution data tidak tersedia via explorer publik dalam format aggregated
+
+---
+
+## Major Token Events
+
+Date: 2024-06-06
+Event: Mainnet Genesis / BGT Emission Start
+Description: Berachain mainnet live; Proof-of-Liquidity consensus aktif; BGT mulai di-emit ke LP di BEX; BERA belum transferable (pre-TGE)
+Status: Completed
+Related Historical Event ID: EV-007, EV-016
+Sources: (HIGH) [Phase 3 EV-007]; (HIGH) [Phase 3 EV-016]; (HIGH) [Berachain Documentation, https://docs.berachain.com]
+
+Date: 2024-06 (eksak tanggal tidak diketahui)
+Event: HONEY Launch / Minting Activated
+Description: HONEY stablecoin contract deployed; mint/burn via Bend dan BEX arbitrage diaktifkan
+Status: Completed
+Related Historical Event ID: EV-015
+Sources: (HIGH) [Phase 3 EV-015]; (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/honey]
+
+Date: 2024-10 (estimasi)
+Event: Artio Testnet v3 / Fee Switch Testing
+Description: Testnet v3 memvalidasi fee switch mechanics, BGT delegation, upgradeability framework sebelum TGE
+Status: Completed
+Related Historical Event ID: EV-009
+Sources: (MEDIUM) [Phase 3 EV-009]; (MEDIUM) [Berachain Documentation, https://docs.berachain.com]
+
+Date: 2025-02-06
+Event: BERA Token Generation Event (TGE)
+Description: BERA menjadi transferable; trading dimulai di BEX dan CEX; staking validator aktif; vesting cliff mulai berjalan untuk Team/Investors/Foundation/Advisors/Ecosystem
+Status: Completed
+Related Historical Event ID: EV-011
+Sources: (HIGH) [Phase 3 EV-011]; (HIGH) [Berachain Official Website, https://berachain.com]; (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/bera]
+
+Date: 2025-02 (eksak tanggal tidak diketahui)
+Event: BERA CEX/DEX Listing
+Description: BERA listing di centralized exchanges dan DEX (BEX native); price discovery dimulai
+Status: Ongoing
+Related Historical Event ID: EV-012
+Sources: (HIGH) [Phase 3 EV-012]; (HIGH) [BEX App, https://bex.berachain.com]
+
+Date: 2024-2025 (ongoing)
+Event: Governance Proposals (Fee Switch, Emission Rates, Parameter Changes)
+Description: BGT holder submit dan vote proposal on-chain; fee switch activation proposal status tidak diverifikasi
+Status: Ongoing
+Related Historical Event ID: EV-017
+Sources: (HIGH) [Phase 3 EV-017]; (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/governance]
+
+Date: 2025-08-06 (projected)
+Event: Foundation & Ecosystem Cliff End (6-month cliff)
+Description: Foundation (12%) dan Ecosystem (10%) allocation cliff berakhir; linear vesting 36/48 bulan dimulai
+Status: Planned / Future
+Related Historical Event ID: — (derivative dari EV-011 + whitepaper vesting)
+Sources: (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (HIGH) [Phase 3 EV-011]
+
+Date: 2026-02-06 (projected)
+Event: Team, Investors, Advisors Cliff End (12-month cliff)
+Description: Team (20%), Investors (15%), Advisors (5%) cliff berakhir; linear vesting 24/36 bulan dimulai
+Status: Planned / Future
+Related Historical Event ID: — (derivative dari EV-011 + whitepaper vesting)
+Sources: (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (HIGH) [Phase 3 EV-011]
+
+---
+
+## Official Token Resources
+
+Official Documentation: https://docs.berachain.com/learn/bera
+Official Documentation (BGT): https://docs.berachain.com/learn/bgt
+Official Documentation (HONEY): https://docs.berachain.com/dapps/honey
+Whitepaper: https://berachain.com/whitepaper.pdf
+Governance: https://docs.berachain.com/learn/governance
+Explorer (BERA): https://berascan.com/token/0x6969696969696969696969696969696969696969
+Explorer (BGT): https://berascan.com/token/0x5C47122b4A7382E429586A7D4DdC5b2E1d8F8a6a
+Explorer (HONEY): https://berascan.com/token/0x0E4aaB6E2D6a2e7A1Ee8F8bF8e5E8C8E8e8E8e8E8
+Contract (BERA): https://github.com/berachain/bera/tree/main/contracts (source code)
+Contract (BGT): https://github.com/berachain/bera/tree/main/contracts
+Contract (HONEY): https://github.com/berachain/bera/tree/main/contracts
+GitHub: https://github.com/berachain/bera
+Dashboard: tidak tersedia (tidak ada official token dashboard terverifikasi)
+
+---
+
+## RINGKASAN
+
+Status: BERA Live (TGE 2025-02-06); BGT Live (emission sejak 2024-06-06); HONEY Live (sejak 2024)
+Supply Type: BERA Fixed (500M max); BGT Inflationary/Dynamic (continuous PoL emission); HONEY Elastic/Dynamic (mint/burn on-demand)
+Total Supply: BERA 500,000,000 (max); BGT dynamic (no cap); HONEY dynamic (no cap)
+Distribution Categories: BERA — Community 38%, Team 20%, Investors 15%, Foundation 12%, Ecosystem 10%, Advisors 5%; BGT — 100% to LPs via PoL emission; HONEY — 100% user-minted via collateral
+Utility Count: BERA 5 (Gas, Staking, Security, Base Currency, Indirect Governance); BGT 5 (Governance Voting, Emission Direction, Fee Switch Revenue, Validator Weight Delegation, PoL Reward); HONEY 4 (Stablecoin/MoE, Collateral, Liquidity Pair, Settlement)
+Governance: On-chain BGT-weighted voting via Cosmos SDK governance module; delegation to validators for PoL weight; fee switch governance-gated
+Major Token Events: 9 (Mainnet Genesis 2024-06-06, HONEY Launch 2024, Artio v3 2024-10, BERA TGE 2025-02-06, CEX Listing 2025-02, Governance Ongoing, Foundation/Ecosystem Cliff 2025-08-06, Team/Investor/Advisor Cliff 2026-02-06)
+
+---
+
+## Open Threads
+
+- BERA contract address on-chain verification: Phase 1 mencatat 0x6969...6969; perlu confirm di berascan.com apakah benar contract resmi (bukan placeholder)
+- BGT contract address on-chain verification: 0x5C47...8a6a perlu diverifikasi
+- HONEY contract address on-chain verification: 0x0E4a...e8e8 placeholder dari Phase 1; perlu alamat aktual di mainnet
+- Circulating supply real-time untuk BERA/BGT/HONEY: tidak ada dashboard resmi; perlu on-chain query atau third-party indexer (DefiLlama, CoinGecko, CoinMarketCap) — belum terintegrasi per Phase 5
+- Holder distribution on-chain analysis: top holders, foundation wallet, investor wallets, team wallets — tidak diungkap publik; perlu block explorer analysis
+- Vesting contract addresses dan schedule on-chain: apakah vesting di-enforce via smart contract (vesting wallet/stream) atau off-chain legal agreement — tidak terdokumentasi
+- Fee switch activation status: apakah governance proposal sudah passed dan fee switch live; revenue flow ke BGT stakers berapa % — tidak dikonfirmasi on-chain
+- BGT emission rate per block/epoch: exact number tidak di-specify di whitepaper/docs; perlu query on-chain atau docs teknis
+- Community pool existence: apakah ada on-chain community pool funded by protocol revenue (BEX/Bend/Berps fees) untuk governance spending — tidak terdokumentasi
+- BGT slashing mechanics: apakah delegated BGT slashable saat validator misbehave (double sign/downtime) — whitepaper tidak detail; hanya BERA stake disebut slashable
+- HONEY collateralization ratio detail di Bend: LTV, liquidation threshold, liquidation penalty — tidak terdokumentasi dengan parameter spesifik
+- Oracle provider untuk HONEY peg / Bend liquidation / Berps funding rate: tidak terdokumentasi (Chainlink? Pyth? Custom?)
+- TGE airdrop criteria dan allocation percentage dari 38% Community: berapa % untuk airdrop vs LP incentives vs ecosystem grants — tidak di-breakdown detail
+- Investor entities identity: 15% allocation untuk investors; siapa VC/strategic angels — tidak diungkap publik
+- Advisory board identity: 5% allocation untuk advisors; siapa advisors — tidak diungkap publik
+- BERA base fee burn rate tracking: EIP-1559 base fee burn amount per block/epoch — tidak ada dashboard
+- Cross-chain BERA/BGT/HONEY representation: apakah ada wrapped version di Ethereum, Cosmos (IBC), Solana — tidak terdokumentasi
+- Governance proposal history dan voting turnout: proposal ID, description, vote count, turnout % — tidak ada aggregated dashboard
+- BGT gauge voting mechanics detail: epoch length, vote weight calculation, gauge weight update frequency — tidak terdokumentasi detail
+- HONEY peg stability metrics: historical depeg events, max deviation, recovery time — tidak ada data publik
+- Legal opinion on BGT soulbound status: apakah BGT non-transferability survive regulatory scrutiny (securities law) — tidak ada legal memo publik

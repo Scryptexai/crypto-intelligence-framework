@@ -1,0 +1,488 @@
+PROJECT: Scroll
+
+Strategic Objectives
+
+1. Membangun zkEVM Layer 2 yang EVM-equivalent (Type 2) pada Ethereum
+· Evidence: Scroll secara eksplisit menargetkan Vitalik Type 2 EVM-equivalence (bytecode compatible); execution client berbasis modified Geth; semua opcode standar dan precompiles didukung (HIGH) [Scroll Documentation EVM Equivalence, https://docs.scroll.io/architecture/evm-equivalence] [Vitalik ZK-EVM Types, https://vitalik.eth.limo/general/2022/08/04/zkevm.html]
+· Supporting Dataset: Phase 4 Technology (Architecture, Execution Environment), Phase 1 Foundation (Category, Core Products)
+
+2. Mencapai desentralisasi progresif melalui DAO dan token governance
+· Evidence: Roadmap desentralisasi sequencer dan prover dipublikasikan; SCR token diluncurkan untuk governance; Security Council multisig ada untuk emergency controls; DAO treasury 5% alokasi (HIGH) [Scroll Decentralization Roadmap, https://scroll.io/blog/decentralization-roadmap] [Scroll Blog TGE, https://scroll.io/blog/tge] [Scroll Governance Security Council, https://docs.scroll.io/governance/security-council]
+· Supporting Dataset: Phase 3 History (EV-010, EV-023), Phase 6 Token (Governance, Distribution), Phase 7 Ecosystem (Governance Ecosystem)
+
+3. Meluncurkan dengan ekosistem DeFi lengkap dari hari pertama (full stack at launch)
+· Evidence: 20+ protokol DeFi mayor (Uniswap, Aave, PancakeSwap, Sushi, Balancer, Curve, Pendle, Euler, Morpho, Radiant, Silo, Gearbox, CIAN), 10 restaking protocols, 6 wallet, 2 explorer, 3 cross-chain messaging — semuanya live dalam minggu pasca-mainnet (HIGH) [Scroll Ecosystem, https://scroll.io/ecosystem] [Phase 3 EV-011 through EV-022]
+· Supporting Dataset: Phase 3 History (EV-011 to EV-022), Phase 7 Ecosystem (Major Integrations, Applications), Phase 8 Market (Adoption Metrics)
+
+4. Mempertahankan Ethereum alignment penuh (settlement, data availability, security)
+· Evidence: Settlement di Ethereum L1; DA via calldata/blob (EIP-4844); finalitas melalui ZK-proof verification on-chain; tidak menggunakan separate DA layer; inherits Ethereum security (HIGH) [Scroll Documentation Architecture, https://docs.scroll.io/architecture/overview] [Scroll Data Availability, https://docs.scroll.io/architecture/data-availability]
+· Supporting Dataset: Phase 4 Technology (System Architecture, Consensus, Security Model), Phase 7 Ecosystem (External Dependencies - Ethereum)
+
+5. Developer-first approach dengan tooling lengkap sejak testnet
+· Evidence: Scroll SDK, Hardhat plugin, Foundry template, public RPC, faucet, contract verification, Blockscout explorer — semua tersedia sejak testnet fase awal (HIGH) [Scroll Developers, https://docs.scroll.io/developers] [Scroll SDK GitHub, https://github.com/scroll-tech/scroll-sdk] [Scroll Hardhat Plugin, https://github.com/scroll-tech/hardhat-scroll]
+· Supporting Dataset: Phase 4 Technology (Development Framework), Phase 7 Ecosystem (Developer Ecosystem), Phase 3 History (EV-006, EV-008)
+
+Decision Timeline
+
+Keputusan: Pendirian Scroll Foundation di Cayman Islands sebagai entitas hukum (2021)
+· Trigger: Perlu legal wrapper untuk token issuance, treasury management, dan compliance sebelum pengembangan protokol
+· Evidence: Scroll Foundation didirikan 2021 oleh tiga co-founder; Cayman Islands dipilih sebagai yurisdiksi foundation (MEDIUM) [Scroll Foundation, https://scroll.io/foundation] [Scroll Team, https://scroll.io/team]
+· Decision: Mendirikan Scroll Foundation (Cayman) dan Scroll Tech Pte. Ltd. (Singapura) sebagai entitas operasional
+· Immediate Result: Entitas hukum dan tim pendiri tersedia untuk pengembangan protokol
+· Long-term Impact: Struktur dual entity (Foundation + OpCo) memisahkan governance/protokol dari operasi komersial; memungkinkan TGE 2024 melalui Foundation
+· Supporting Dataset: Phase 2 Entity (Scroll Foundation, Scroll Tech Pte. Ltd., Sandy Peng, Haichen Shen, Ye Zhang), Phase 3 History (EV-001)
+
+Keputusan: Series A Funding $30M led by Polychain Capital at $1.8B valuation (2022-07)
+· Trigger: Perlu capital untuk scaling tim engineering dan penelitian ZK-proof setelah validasi konsep awal
+· Evidence: The Block melaporkan Series A $30M led Polychain dengan Sequoia China, Variant, Robot Ventures, dll; valuation $1.8B post-money (HIGH) [The Block Series A, https://www.theblock.co/post/158021/scroll-raises-30m-series-a-polychain-capital] [TechCrunch Series A, https://techcrunch.com/2022/07/19/scroll-raises-30m-for-zk-evm-layer-2]
+· Decision: Menerima equity + token warrant dari VC tier-1 dengan valuation tinggi pre-product
+· Immediate Result: $30M runway untuk hiring cryptographers dan engineers; validator signal ke pasar
+· Long-term Impact: Investor base kuat (Polychain, Sequoia, Variant) membuka pintu strategic round dan ecosystem partnerships; token warrant mengunci 15% supply untuk investors
+· Supporting Dataset: Phase 5 Financial (Funding History - Series A), Phase 2 Entity (Investor entities), Phase 6 Token (Distribution - Investors 15%)
+
+Keputusan: Rekrut Dmitry Khovratovich sebagai Chief Cryptographer (2022)
+· Trigger: Perlu kepemimpinan kriptografi senior untuk desain ZK-proof system production-grade
+· Evidence: Khovratovich (co-author Argon2, Equihash, berbagai konstruksi ZK) bergabung 2022; memimpin penelitian ZK-proof dan keamanan (HIGH) [Scroll Team, https://scroll.io/team] [Khovratovich Publications, https://www.khovratovich.com/]
+· Decision: Merekrut kriptografer ternama dunia sebagai Chief Cryptographer (bukan advisor saja)
+· Immediate Result: Arsitektur Halo2/KZG dengan Perpetual Powers of Tau dipilih dan dikembangkan
+· Long-term Impact: Scroll menjadi salah satu ZK-Rollup dengan tim kriptografi terkuat; membedakan dari kompetitor yang menggunakan STARK (Starknet) atau Plonky2 (Polygon zkEVM)
+· Supporting Dataset: Phase 2 Entity (Dmitry Khovratovich), Phase 3 History (EV-002), Phase 4 Technology (Proof System, Security Model)
+
+Keputusan: Rekrut Brendan Farmer (Polygon zkEVM co-founder) sebagai Advisor (2022)
+· Trigger: Perlu expertise production zkEVM dari kompetitor langsung untuk menghindari pitfalls arsitektur
+· Evidence: Farmer co-founder Polygon zkEVM bergabung sebagai advisor 2022 (HIGH) [Scroll Team, https://scroll.io/team] [Polygon zkEVM Blog, https://blog.polygon.technology/polygon-zkevm/]
+· Decision: Mengontrak advisor dari kompetitor utama dengan pengetahuan internal zkEVM production
+· Immediate Result: Arahan strategis untuk arsitektur sequencer, prover, dan EVM-equivalence implementation
+· Long-term Impact: Scroll menghindari kesalahan desain Polygon zkEVM; mempercepat time-to-mainnet
+· Supporting Dataset: Phase 2 Entity (Brendan Farmer), Phase 3 History (EV-003), Phase 4 Technology (Architecture)
+
+Keputusan: Meluncurkan multiple testnet phases (Pre-alpha Oct 2023, Alpha Feb 2023, Sepolia 2023)
+· Trigger: Perlu validasi bertahap arsitektur ZK-proof, sequencer, prover, bridge sebelum mainnet
+· Evidence: Pre-alpha Testnet 2023-10-18 untuk validasi arsitektur awal; Alpha Testnet 2023-02-28 untuk developer testing; Sepolia Testnet 2023 untuk persistent environment (HIGH) [Scroll Blog Pre-alpha, https://scroll.io/blog/pre-alpha-testnet] [Scroll Blog Alpha, https://scroll.io/blog/alpha-testnet] [Scroll Docs Testnet, https://docs.scroll.io/developers/testnet]
+· Decision: Three-phase testnet strategy (pre-alpha → alpha → sepolia persistent) bukan single testnet
+· Immediate Result: Bug ditemukan dan diperbaiki di setiap fase; developer ecosystem onboarded bertahap; prover/sequencer stress-tested
+· Long-term Impact: Mainnet launch lancar tanpa insiden mayor; developer tooling mature saat launch; community trust dibangun
+· Supporting Dataset: Phase 3 History (EV-004, EV-005, EV-006), Phase 4 Technology (Testnet Infrastructure)
+
+Keputusan: Series B Funding $50M led by Bain Capital Crypto at flat $1.8B valuation (2023-03)
+· Trigger: Perlu capital tambahan untuk mainnet preparation, audit, ecosystem incentives meskipun bear market 2023
+· Evidence: The Block melaporkan Series B $50M led Bain Capital Crypto; valuation flat $1.8B; existing investors participate (HIGH) [The Block Series B, https://www.theblock.co/post/217841/scroll-raises-50m-series-b-bain-capital-crypto] [CoinDesk Series B, https://coindesk.com/business/2023/03/08/scroll-raises-50m-series-b-at-1-8b-valuation]
+· Decision: Raise Series B di bear market dengan flat valuation; menambah investor strategic (Bain Capital Crypto)
+· Immediate Result: $50M tambahan runway; Bain Capital Crypto join cap table
+· Long-term Impact: Total $80M equity funding (A+B) memberikan runway ke mainnet dan pasca-launch; investor base diperluas ke traditional crypto VC
+· Supporting Dataset: Phase 5 Financial (Funding History - Series B), Phase 6 Token (Distribution - Investors 15% combined), Phase 2 Entity (Bain Capital Crypto)
+
+Keputusan: Strategic Round + Ethereum Foundation Grant (2023-10)
+· Trigger: Perlu ecosystem alignment dan non-dilutive funding untuk ZK research
+· Evidence: Strategic round dengan ecosystem partners; EF grant Q3 2023 untuk ZK research (MEDIUM) [Scroll Blog Strategic, https://scroll.io/blog/strategic-round] [EF Grants Q3 2023, https://blog.ethereum.org/2023/10/16/ethereum-foundation-grants-q3-2023]
+· Decision: Mengambil strategic investment dari ecosystem partners + EF grant tanpa equity dilution
+· Immediate Result: Ecosystem partners committed ke integration; EF validation untuk teknologi
+· Long-term Impact: LayerZero, Wormhole, Chainlink, Pyth, dll terintegrasi at/near launch; EF grant memperkuat credibility teknis
+· Supporting Dataset: Phase 5 Financial (Funding History - Strategic Round), Phase 7 Ecosystem (Major Integrations), Phase 3 History (EV-011 to EV-017)
+
+Keputusan: Simultaneous Mainnet Launch + TGE (2024-10-22)
+· Trigger: Maximize momentum; token utility immediate (governance, ecosystem incentives); avoid "launch then token later" narrative
+· Evidence: Mainnet launch dan TGE announcement同日; SCR token ERC-20 deployed Ethereum Mainnet bersamaan (HIGH) [Scroll Mainnet Launch Blog, https://scroll.io/blog/mainnet-launch] [Scroll TGE Blog, https://scroll.io/blog/tge]
+· Decision: Launch mainnet dan token pada block yang sama; 1B total supply, vesting schedules aktif immediately
+· Immediate Result: Token tradable day-1; governance live; ecosystem incentives funded; CEX listing immediate
+· Long-term Impact: Menghindari "ghost chain" perception; liquidity untuk ecosystem grants; investor unlock timeline dimulai (12-month cliff)
+· Supporting Dataset: Phase 3 History (EV-009, EV-010), Phase 6 Token (TGE, Distribution, Vesting), Phase 8 Market (Trading Markets)
+
+Keputusan: Full ecosystem deployment wave at/near mainnet launch (2024-10 to 2024-11)
+· Trigger: Demonstrate production readiness; attract users/liquidity immediately; differentiate from competitors with gradual rollouts
+· Evidence: 40+ integrations (LayerZero, Wormhole, Chainlink, Pyth, Gelato, Safe, Hyperlane, Uniswap, Aave, 11 DeFi, 10 restaking, 6 wallets, 2 explorers) live within weeks (HIGH) [Scroll Ecosystem, https://scroll.io/ecosystem] [Phase 3 EV-011 through EV-022]
+· Decision: Coordinated "wave 1" launch dengan major protocols simultaneously bukan staggered
+· Immediate Result: TVL ~$1.2B within weeks; full DeFi stack available day-1; user retention tinggi
+· Long-term Impact: Established sebagai top-3 ZK-Rollup by TVL/transactions; network effect compounding; developer mindshare captured
+· Supporting Dataset: Phase 3 History (EV-011 to EV-022), Phase 7 Ecosystem (Major Integrations, Applications), Phase 8 Market (Adoption Metrics, Market Share)
+
+Keputusan: EIP-4844 Blob Integration post-mainnet (2024-11)
+· Trigger: Reduce L1 data availability cost ~90% setelah EIP-4844 activated on Ethereum
+· Evidence: Migration dari calldata ke blob DA; L1 cost reduction ~90% (HIGH) [Scroll Blob Integration Blog, https://scroll.io/blog/eip4844-integration] [Scrollscan Blobs, https://scrollscan.com/blobs]
+· Decision: Prioritaskan blob migration secepat mungkin pasca-EIP-4844 activation
+· Immediate Result: Transaction fees turun signifikan; throughput cost-efficiency meningkat
+· Long-term Impact: Competitive fee advantage vs Optimistic Rollups; sustainable economics untuk high-throughput use cases
+· Supporting Dataset: Phase 4 Technology (Technical Upgrade History - EIP-4844), Phase 7 Ecosystem (External Dependencies - EIP-4844)
+
+Keputusan: Prover Parallelization v1 (2024-12)
+· Trigger: Throughput bottleneck di prover cluster; perlu scale proving capacity tanpa menambah hardware linear
+· Evidence: Prover cluster parallelization enabling ~3x throughput increase (MEDIUM) [Scroll Prover Upgrade Blog, https://scroll.io/blog/prover-parallelization] [Scroll Metrics, https://scroll.io/metrics]
+· Decision: Invest dalam prover software optimization (parallelization) sebelum hardware scaling
+· Immediate Result: Batch proving capacity 3x; latency proof generation turun
+· Long-term Impact: Foundation untuk prover decentralization; cost per proof turun; roadmap ke permissionless prover network
+· Supporting Dataset: Phase 4 Technology (Technical Upgrade History - Prover Parallelization), Phase 4 Technology (Core Components - zkProver)
+
+Keputusan: Sequencer Pre-confirmation API Beta (2025-01)
+· Trigger: User demand untuk soft finality sub-second; centralized sequencer bisa provide pre-conf sebelum L1 proof
+· Evidence: Soft finality API untuk pre-confirmation ~seconds sebelum L1 proof verification (MEDIUM) [Scroll Pre-conf API Docs, https://docs.scroll.io/developers/preconfirmation] [Scroll Pre-conf Endpoint, https://preconf.scroll.io/]
+· Decision: Release pre-confirmation API sebagai interim solution sebelum sequencer decentralization
+· Immediate Result: UX improvement signifikan untuk traders/DeFi users; differentiator vs L2 lain
+· Long-term Impact: Bridge ke based sequencing / PBS designs; revenue model untuk sequencer delegation
+· Supporting Dataset: Phase 4 Technology (Technical Upgrade History - Pre-confirmation API), Phase 4 Technology (Consensus Mechanism)
+
+Evolution Pattern
+
+Perubahan Strategi: Dari Research-Heavy ke Production-First
+· Early phase (2021-2022): Fokus fundamental research — hiring Khovratovich, designing Halo2 circuits, trusted setup ceremony participation
+· Mid phase (2023): Testnet iteration bertahap — pre-alpha, alpha, sepolia; bridge dan SDK development parallel
+· Late phase (2024+): Production execution — simultaneous mainnet+TGE, full ecosystem wave, rapid upgrades (blobs, prover parallelization, pre-conf)
+· Evidence: Timeline hiring (Khovratovich 2022) → testnet phases (2023) → mainnet+TGE+ecosystem wave (2024) → upgrades (2024-2025) (HIGH) [Phase 3 History all events], [Phase 2 Entity key hires], [Phase 4 Technical Upgrade History]
+
+Perubahan Teknologi: Dari Single-Prover ke Distributed Prover Network
+· Design awal: Centralized prover cluster operated by Foundation
+· Post-mainnet: Prover parallelization v1 (software scaling)
+· Roadmap: Permissionless prover network dengan staking/slashing
+· Evidence: Phase 4 Technology (Core Components - zkProver status "Live (distributed prover cluster operated by Scroll Foundation)"), (Technical Upgrade History - Prover Parallelization), (Known Limitations - Prover Cluster Operated by Foundation), (Security Model - Prover Trust)
+
+Perubahan Tokenomics: Dari Pre-launch Allocation ke Live Vesting Dynamics
+· Pre-TGE: Theoretical allocation percentages (Community 15%, Team 25%, Investors 15%, Foundation 20%, Treasury 5%, Ecosystem 20%)
+· Post-TGE: Vesting schedules aktif — Team/Investors 12-month cliff then 36-month linear; Foundation 6-month cliff 36-month linear; Ecosystem 3-month cliff 24-month linear; Community 1-month cliff 18-month linear
+· Evidence: Phase 6 Token (Distribution, Vesting Schedule, TGE), Phase 5 Financial (Token Sale - Private Sales)
+
+Perubahan Governance: Dari Foundation-Controlled ke DAO-Progressive
+· Launch: Foundation + Security Council multisig kontrol penuh (sequencer, prover, bridge, upgrades)
+· Post-TGE: SCR governance live (Snapshot + on-chain Governor); Grant committee active; Fee switch proposal drafted
+· Roadmap: Full DAO control over treasury, protocol parameters, sequencer/prover selection
+· Evidence: Phase 6 Token (Governance), Phase 7 Ecosystem (Governance Ecosystem), Phase 3 History (EV-023 fee switch proposal)
+
+Perubahan Market Position: Dari "ZK-EVM Contender" ke "Top-3 ZK-Rollup by Usage"
+· Pre-mainnet: Unknown, unproven, competing dengan zkSync Era, Polygon zkEVM, Linea
+· Post-mainnet (3 months): TVL ~$1.2B (#5-6 overall L2, #1-2 EVM-equivalent ZK); Transactions ~3M/day (~10% L2 share); Full DeFi stack
+· Evidence: Phase 8 Market (Market Position, Market Share, Adoption Metrics), Phase 3 History (EV-009 launch)
+
+Technical Decision Pattern
+
+Pola 1: Ethereum Alignment First
+· Decision Pattern: Setiap keputusan arsitektur utama dipilih untuk maximize alignment dengan Ethereum — settlement di L1, DA via Ethereum calldata/blob, finalitas via L1 verification, no separate DA layer, no separate consensus token
+· Evidence: Scroll documentation eksplisit: "Settlement Layer: Ethereum L1", "Data Availability: Ethereum L1 calldata/blob", "Consensus: derives from Ethereum L1" (HIGH) [Scroll Documentation Architecture, https://docs.scroll.io/architecture/overview] [Scroll Data Availability, https://docs.scroll.io/architecture/data-availability] [Scroll Consensus, https://docs.scroll.io/architecture/consensus]
+· Supporting Dataset: Phase 4 Technology (System Architecture, Consensus Mechanism, Security Model), Phase 7 Ecosystem (External Dependencies - Ethereum)
+
+Pola 2: EVM-Equivalence (Type 2) over EVM-Compatibility (Type 4)
+· Decision Pattern: Memilih bytecode-level equivalence (modified Geth) daripada Solidity-compatibility (LLVM-based seperti zkSync Era) — trade-off proving complexity untuk developer experience seamless
+· Evidence: Execution client based on go-ethereum v1.13+; all standard opcodes; precompiles包括PointEvaluation untuk EIP-4844; Vitalik Type 2 classification (HIGH) [Scroll Execution Client GitHub, https://github.com/scroll-tech/go-ethereum] [Scroll Documentation EVM Equivalence, https://docs.scroll.io/architecture/evm-equivalence] [Vitalik ZK-EVM Types, https://vitalik.eth.limo/general/2022/08/04/zkevm.html]
+· Supporting Dataset: Phase 4 Technology (Execution Environment, Core Components - L2 Execution Engine), Phase 1 Foundation (Category, Core Products)
+
+Pola 3: Halo2/KZG dengan Perpetual Powers of Tau untuk Proof System
+· Decision Pattern: Memilih PLONKish arithmetization (Halo2) + KZG polynomial commitment dengan universal trusted setup (Perpetual Powers of Tau) — bukan STARK (no trusted setup) atau Plonky2 (recursive)
+· Evidence: zkProver menggunakan Halo2/Rust; KZG commitment; Powers of Tau ceremony参加; Verifier contract on-chain (HIGH) [Scroll Prover GitHub, https://github.com/scroll-tech/zkprover] [Scroll ZK-Proof Blog, https://scroll.io/blog/zk-proof-system] [Powers of Tau Ceremony, https://github.com/privacy-scaling-explorations/perpetual-powers-of-tau]
+· Supporting Dataset: Phase 4 Technology (Security Model - Proof System, Core Components - zkProver), Phase 7 Ecosystem (External Dependencies - Halo2, Powers of Tau)
+
+Pola 4: Centralized Sequencer/Prover Initially dengan Decentralization Roadmap Explisit
+· Decision Pattern: Launch dengan single sequencer + Foundation-operated prover cluster; publish detailed decentralization roadmap; implement incremental steps (pre-conf API, prover parallelization) sebelum full decentralization
+· Evidence: Sequencer status "Live (centralized, single operator)"; Prover "Live (distributed prover cluster operated by Scroll Foundation)"; Decentralization roadmap blog; Pre-conf API beta; Prover parallelization (HIGH) [Scroll Documentation Sequencer, https://docs.scroll.io/architecture/sequencer] [Scroll Decentralization Roadmap, https://scroll.io/blog/decentralization-roadmap] [Scroll Pre-conf API, https://docs.scroll.io/developers/preconfirmation]
+· Supporting Dataset: Phase 4 Technology (Core Components - Sequencer, zkProver; Consensus Mechanism; Known Limitations), Phase 3 History (Technical Upgrades)
+
+Pola 5: Extensive Pre-Launch Testing via Multi-Phase Testnets
+· Decision Pattern: Three distinct testnet phases (pre-alpha architecture validation → alpha developer testing → sepolia persistent) dengan bridge, SDK, tooling di setiap fase — bukan single testnet rush
+· Evidence: Pre-alpha 2023-10-18; Alpha 2023-02-28; Sepolia 2023 persistent; Bridge, SDK released di testnet phase (HIGH) [Scroll Blog Pre-alpha, https://scroll.io/blog/pre-alpha-testnet] [Scroll Blog Alpha, https://scroll.io/blog/alpha-testnet] [Scroll Docs Testnet, https://docs.scroll.io/developers/testnet]
+· Supporting Dataset: Phase 3 History (EV-004, EV-005, EV-006), Phase 4 Technology (Testnet Infrastructure), Phase 7 Ecosystem (Developer Ecosystem)
+
+Pola 6: Multiple Independent Audits Sebelum Mainnet
+· Decision Pattern: 6 auditor independen (Trail of Bits, OpenZeppelin, Zellic, Spearbit/Pashov, Sigma Prime, Nethermind ongoing) mencakup circuits, contracts, execution client, bridge — bukan single audit
+· Evidence: Audit reports publik di GitHub scroll-tech/audits; scope: prover circuits, verifier, bridge, token, governance, execution client (HIGH) [Scroll Audits GitHub, https://github.com/scroll-tech/audits] [Trail of Bits Report, https://github.com/scroll-tech/audits/tree/main/trail-of-bits-2024] [OpenZeppelin Report, https://github.com/scroll-tech/audits/tree/main/openzeppelin-2024]
+· Supporting Dataset: Phase 4 Technology (Audit History), Phase 7 Ecosystem (Infrastructure Providers - Security)
+
+Pola 7: Modified Geth sebagai Execution Client Base
+· Decision Pattern: Fork go-ethereum (Geth) v1.13+ dan modify untuk zkEVM compatibility — bukan custom VM atau LLVM-based — memastikan bytecode equivalence dan upstream compatibility
+· Evidence: Execution client repo di github.com/scroll-tech/go-ethereum; based on Geth; all standard opcodes supported (HIGH) [Scroll Execution Client GitHub, https://github.com/scroll-tech/go-ethereum] [Scroll Documentation Execution, https://docs.scroll.io/architecture/execution]
+· Supporting Dataset: Phase 4 Technology (Core Components - L2 Execution Engine, Execution Environment), Phase 7 Ecosystem (External Dependencies - go-ethereum)
+
+Financial Decision Pattern
+
+Pola 1: VC Funding dengan Token Warrant Structure (Series A + B)
+· Decision Pattern: Mengambil equity funding dari top-tier crypto VC (Polychain, Sequoia China, Variant, Bain Capital Crypto) dengan token warrant/SAFT — bukan pure token sale — menjaga alignment jangka panjang dan regulatory clarity
+· Evidence: Series A $30M (2022-07), Series B $50M (2023-03); total $80M; valuation $1.8B flat; investors menerima token allocation 15% dengan vesting 12-month cliff + 36-month linear (HIGH) [The Block Series A, https://www.theblock.co/post/158021/scroll-raises-30m-series-a-polychain-capital] [The Block Series B, https://www.theblock.co/post/217841/scroll-raises-50m-series-b-bain-capital-crypto] [Scroll Blog TGE, https://scroll.io/blog/tge]
+· Supporting Dataset: Phase 5 Financial (Funding History), Phase 6 Token (Distribution - Investors, Vesting Schedule), Phase 2 Entity (Investor entities)
+
+Pola 2: Strategic Round untuk Ecosystem Alignment (bukan Kapital Murni)
+· Decision Pattern: Strategic investors (ecosystem partners, infrastructure providers) dipilih berdasarkan value-add bukan capital — LayerZero, Wormhole, Chainlink, Pyth, EigenLayer, dll — dengan token allocation bervariasi
+· Evidence: Strategic round 2023-10; EF grant non-dilutif; ecosystem partners terintegrasi at/near launch (MEDIUM) [Scroll Blog Strategic, https://scroll.io/blog/strategic-round] [EF Grants Q3 2023, https://blog.ethereum.org/2023/10/16/ethereum-foundation-grants-q3-2023] [Phase 7 Major Integrations all live 2024]
+· Supporting Dataset: Phase 5 Financial (Funding History - Strategic Round), Phase 7 Ecosystem (Major Integrations), Phase 3 History (EV-011 to EV-021)
+
+Pola 3: No Public Sale / Community Sale — TGE Langsung ke Circulating Supply
+· Decision Pattern: Tidak ada ICO, IDO, launchpad, community sale, auction — token diluncurkan langsung ke passing supply via CEX/DEX listing dan airdrop community allocation
+· Evidence: Phase 5 Financial (Token Sale - all "Tidak ada" for public/community/launchpad/auction); TGE blog menyebut airdrop community 15% tapi tidak public sale (HIGH) [Scroll Blog TGE, https://scroll.io/blog/tge] [CoinGecko Markets, https://coingecko.com/en/coins/scroll#markets]
+· Supporting Dataset: Phase 5 Financial (Token Sale), Phase 6 Token (TGE, Distribution - Community), Phase 8 Market (Trading Markets)
+
+Pola 4: Foundation Treasury Management dengan Token Allocation Besar
+· Decision Pattern: Foundation hold 20% + Treasury 5% = 25% total supply untuk operations, grants, research — vesting 6-month cliff + 36-month linear dengan 5% unlock at TGE
+· Evidence: Tokenomics blog: Foundation 20%, Treasury 5%; vesting schedule Foundation 6-month cliff 36-month linear, 5% unlocked at TGE (HIGH) [Scroll Blog TGE, https://scroll.io/blog/tge] [Scroll Docs Tokenomics, https://docs.scroll.io/tokenomics]
+· Supporting Dataset: Phase 5 Financial (Treasury), Phase 6 Token (Distribution - Foundation/Treasury, Vesting Schedule), Phase 7 Ecosystem (Governance Ecosystem - Foundation)
+
+Pola 5: Protocol Revenue Planned but Not Yet Active
+· Decision Pattern: Revenue streams identified (L2 fees, bridge fees, sequencer revenue, future protocol fee switch, prover fees) tapi protocol fee switch belum aktif — sequencer revenue目前全归Foundation
+· Evidence: Phase 5 Financial (Revenue Model - all streams "Live" except Protocol Fee Switch "Planned", Prover Fees "Planned"); Sequencer trust model confirms priority fees + MEV to single operator (HIGH) [Scroll Docs Gas, https://docs.scroll.io/architecture/gas] [Scroll Bridge Fees, https://docs.scroll.io/developers/bridge#fees] [Scroll Sequencer, https://docs.scroll.io/architecture/sequencer]
+· Supporting Dataset: Phase 5 Financial (Revenue Model, Revenue History), Phase 4 Technology (Core Components - Sequencer), Phase 6 Token (Utility - Protocol Fee Share)
+
+Pola 6: Ethereum Foundation Grant untuk Research Non-Dilutive
+· Decision Pattern: Mengambil EF grant Q3 2023 untuk ZK research — non-dilutive, no token/equity — menunjukkan research credibility dan alignment dengan Ethereum roadmap
+· Evidence: EF Grants Q3 2023 includes Scroll; grant amount tidak diungkap tapi non-dilutive (MEDIUM) [EF Grants Q3 2023, https://blog.ethereum.org/2023/10/16/ethereum-foundation-grants-q3-2023] [Scroll Blog Strategic, https://scroll.io/blog/strategic-round]
+· Supporting Dataset: Phase 5 Financial (Funding History - Strategic Round, Financial Dependencies), Phase 7 Ecosystem (External Dependencies - Ethereum Foundation)
+
+Ecosystem Decision Pattern
+
+Pola 1: "Full Stack at Launch" — Coordinated Ecosystem Wave
+· Decision Pattern: Mengkoordinasi 40+ major integrations (cross-chain, oracle, DeFi, restaking, wallet, explorer) untuk live dalam minggu yang sama/dekat mainnet — bukan staggered rollout bulan demi bulan
+· Evidence: EV-011 to EV-022 all dalam 2024 (post-mainnet Oct-Nov); LayerZero, Wormhole, Chainlink, Pyth, Gelato, Safe, Hyperlane, Uniswap, Aave, 11 DeFi, 10 restaking, 6 wallets, 2 explorers (HIGH) [Scroll Ecosystem, https://scroll.io/ecosystem] [Phase 3 History EV-011 through EV-022]
+· Supporting Dataset: Phase 3 History (EV-011 to EV-022), Phase 7 Ecosystem (Major Integrations, Applications, Infrastructure Providers), Phase 8 Market (Adoption Metrics - TVL $1.2B within weeks)
+
+Pola 2: Cross-Chain Messaging Redundancy (LayerZero + Wormhole + Hyperlane + Native Bridge)
+· Decision Pattern: Mengintegrasikan 3 major interop protocols + native bridge — tidak bergantung pada single bridge — memberikan user choice dan redundancy
+· Evidence: Native bridge (canonical), LayerZero (OFT/messaging), Wormhole (bridge/messaging), Hyperlane (permissionless messaging) all live (HIGH) [Scroll Bridge Docs, https://docs.scroll.io/developers/bridge] [LayerZero Scroll, https://layerzero.network/blog/scroll-integration] [Wormhole Scroll, https://wormhole.com/ecosystem/scroll] [Hyperlane Scroll, https://docs.hyperlane.xyz/docs/chains/scroll]
+· Supporting Dataset: Phase 7 Ecosystem (Major Integrations - LayerZero, Wormhole, Hyperlane; External Dependencies), Phase 4 Technology (System Architecture - Cross-chain Messaging)
+
+Pola 3: Oracle Dual-Source (Chainlink + Pyth) untuk DeFi Reliability
+· Decision Pattern: Mengintegrasikan Chainlink (Price Feeds, VRF, CCIP, PoR) DAN Pyth (first-party financial data) — bukan single oracle — untuk redundancy dan data diversity
+· Evidence: Chainlink full stack live; Pyth price feeds live; both documented di ecosystem page (HIGH) [Chainlink Scroll Support, https://blog.chain.link/chainlink-scroll-support] [Pyth Scroll Integration, https://pyth.network/developers/price-feed-ids#scroll]
+· Supporting Dataset: Phase 7 Ecosystem (Major Integrations - Chainlink, Pyth; External Dependencies), Phase 3 History (EV-013, EV-014)
+
+Pola 4: Restaking Ecosystem Full Integration dari Launch
+· Decision Pattern: 10 restaking/liquid restaking protocols (EigenLayer, Symbiotic, Karak, Renzo, Ether.fi, Puffer, Swell, Kelp, Mellow, Kernel) terintegrasi — mempositioning Scroll sebagai L2 untuk restaking economy
+· Evidence: EV-021 lists 10 protocols; all live di Scroll Mainnet; Kernel untuk BTC/ETH restaking (HIGH) [Scroll Ecosystem Restaking, https://scroll.io/ecosystem] [EigenLayer Scroll, https://www.eigenlayer.xyz/ecosystem/scroll] [Symbiotic Scroll, https://symbiotic.fi/networks/scroll]
+· Supporting Dataset: Phase 3 History (EV-021), Phase 7 Ecosystem (Major Integrations - Restaking, Applications - Restaking), Phase 8 Market (Narrative Position - Restaking Integration)
+
+Pola 5: Developer Tooling Priority — SDK, Hardhat, Foundry, Faucet, Verification dari Testnet
+· Decision Pattern: Invest heavily dalam developer experience sebelum mainnet — Scroll SDK, Hardhat plugin, Foundry template, public RPC, Sepolia faucet, contract verification all ready di testnet phase
+· Evidence: Phase 4 Technology (Development Framework - all live); Phase 7 Ecosystem (Developer Ecosystem - all tools listed); Sepolia faucet live 2023 (HIGH) [Scroll Developers, https://docs.scroll.io/developers] [Scroll SDK GitHub, https://github.com/scroll-tech/scroll-sdk] [Scroll Sepolia Faucet, https://sepolia-faucet.scroll.io/]
+· Supporting Dataset: Phase 4 Technology (Development Framework), Phase 7 Ecosystem (Developer Ecosystem), Phase 3 History (EV-006, EV-008)
+
+Pola 6: Wallet/Explorer Support Comprehensive dari Day-1
+· Decision Pattern: 6 major wallets (MetaMask, Rabby, OKX, Rainbow, Zerion, Safe) + 2 explorers (Scrollscan/Blockscout, L2Scan) supported at launch — memastikan user onboarding friction minimal
+· Evidence: EV-022 lists all; MetaMask via Snaps/RPC; Rabby/OKX/Rainbow native; Zerion/Instadapp portfolio; Safe multisig deployed (HIGH) [Scroll Ecosystem, https://scroll.io/ecosystem] [MetaMask Scroll, https://chainlist.org/chain/534352] [Rabby Scroll, https://rabby.io/chains/scroll]
+· Supporting Dataset: Phase 3 History (EV-022), Phase 7 Ecosystem (Major Integrations - Wallets/Infrastructure, Wallet Ecosystem), Phase 8 Market (Adoption Metrics - Daily Active Addresses)
+
+Governance Decision Pattern
+
+Pola 1: Foundation-Led dengan Progressive Decentralization Roadmap
+· Decision Pattern: Foundation (Cayman) + Security Council multisig kontrol penuh awal (sequencer, prover, bridge upgrades, treasury); roadmap publik untuk transition ke DAO governance via SCR token
+· Evidence: Scroll Foundation legal entity; Security Council docs menyebut emergency controls; Decentralization roadmap blog; SCR token governance live (HIGH) [Scroll Foundation, https://scroll.io/foundation] [Scroll Security Council, https://docs.scroll.io/governance/security-council] [Scroll Decentralization Roadmap, https://scroll.io/blog/decentralization-roadmap]
+· Supporting Dataset: Phase 2 Entity (Scroll Foundation), Phase 6 Token (Governance), Phase 7 Ecosystem (Governance Ecosystem), Phase 3 History (EV-001, EV-010)
+
+Pola 2: Dual-Layer Governance (Snapshot Off-chain + On-chain Governor)
+· Decision Pattern: Off-chain signaling via Snapshot (gasless, broad participation) + On-chain execution via OpenZeppelin Governor (binding, timelock) — best of both worlds
+· Evidence: Governance docs menyebut mixed model; Snapshot space scroll.eth active; Governor contracts di bridge-contracts repo (MEDIUM) [Scroll Docs Governance, https://docs.scroll.io/governance/overview] [Scroll Snapshot, https://snapshot.org/#/scroll.eth] [Scroll Contracts GitHub, https://github.com/scroll-tech/scroll-bridge-contracts/tree/main/contracts/governance]
+· Supporting Dataset: Phase 6 Token (Governance), Phase 7 Ecosystem (Governance Ecosystem - DAO), Phase 4 Technology (Security Model - Upgradeability)
+
+Pola 3: Security Council Multisig untuk Emergency Controls
+· Decision Pattern: t-of-n multisig (signers tidak dipublikasikan) dengan authority: pause bridge, upgrade contracts, halt sequencer — safety valve selama centralized phase
+· Evidence: Security Council docs: "Emergency controls: Security Council multisig dapat pause bridge, upgrade contracts, halt sequencer dalam emergency" (MEDIUM) [Scroll Security Council, https://docs.scroll.io/governance/security-council] [Scroll Docs Upgradeability, https://docs.scroll.io/architecture/upgrades]
+· Supporting Dataset: Phase 4 Technology (Security Model - Emergency Controls, Upgradeability), Phase 7 Ecosystem (Governance Ecosystem - Security Council), Phase 2 Entity (Security Council)
+
+Pola 4: Grant Committee untuk Ecosystem Fund Allocation
+· Decision Pattern: Committee terpisah (anggota tidak publik) review grant proposals dari ecosystem allocation (20% = 200M SCR) — bukan Foundation unilateral
+· Evidence: Ecosystem Grants page; Gov forum grants category; 200M SCR allocation untuk grants (MEDIUM) [Scroll Ecosystem Grants, https://scroll.io/ecosystem/grants] [Gov Forum Grants, https://gov.scroll.io/c/grants/6] [Scroll Blog TGE, https://scroll.io/blog/tge]
+· Supporting Dataset: Phase 6 Token (Distribution - Ecosystem), Phase 7 Ecosystem (Governance Ecosystem - Grant Committee, Developer Ecosystem - Grant Program)
+
+Pola 5: Token-Weighted Voting dengan Delegation (1 SCR = 1 Vote)
+· Decision Pattern: Voting power proporsional ke SCR balance; delegation tersedia (off-chain Snapshot, on-chain Governor); proposal threshold belum diungkapkan
+· Evidence: Governance docs: "Weighted voting (1 SCR = 1 vote)"; "Delegation tersedia"; threshold tidak spesifik (MEDIUM) [Scroll Docs Governance Voting, https://docs.scroll.io/governance/voting] [Scroll Docs Delegation, https://docs.scroll.io/governance/delegation] [Scroll Snapshot, https://snapshot.org/#/scroll.eth]
+· Supporting Dataset: Phase 6 Token (Governance - Voting System, Voting Power, Delegation), Phase 7 Ecosystem (Governance Ecosystem - DAO)
+
+Pola 6: Treasury Governance via DAO dengan Security Council Veto
+· Decision Pattern: DAO treasury (50M SCR) managed melalui governance vote; execution via timelock; Security Council dapat veto emergency — checks and balances
+· Evidence: Governance treasury docs; Security Council emergency controls; 5% allocation untuk treasury (MEDIUM) [Scroll Docs Governance Treasury, https://docs.scroll.io/governance/treasury] [Scroll Security Council, https://docs.scroll.io/governance/security-council] [Scroll Blog TGE, https://scroll.io/blog/tge]
+· Supporting Dataset: Phase 6 Token (Distribution - Treasury, Governance - Treasury Governance), Phase 7 Ecosystem (Governance Ecosystem)
+
+Risk Response Pattern
+
+Pola 1: Pre-Launch Multi-Audit Strategy untuk Mitigasi Smart Contract Risk
+· Decision Pattern: 6 auditor independen (Trail of Bits, OpenZeppelin, Zellic, Spearbit, Sigma Prime, Nethermind) sebelum mainnet — mencakup circuits, contracts, execution client, bridge — bukan reactive post-exploit
+· Evidence: Audit reports publik di GitHub; scope: zkProver circuits, L1 verifier, bridge contracts, token, governance, execution client, P2P (HIGH) [Scroll Audits GitHub, https://github.com/scroll-tech/audits] [Trail of Bits Report, https://github.com/scroll-tech/audits/tree/main/trail-of-bits-2024] [OpenZeppelin Report, https://github.com/scroll-tech/audits/tree/main/openzeppelin-2024]
+· Trigger: High-value bridge contracts + novel ZK-proof system = high attack surface; need credibility untuk TVL
+· Response: Commission comprehensive audit program 6 firma tier-1; publish reports transparan
+· Result: No major exploit post-mainnet; credibility untuk ecosystem partners dan users
+· Supporting Dataset: Phase 4 Technology (Audit History), Phase 7 Ecosystem (Infrastructure Providers - Security)
+
+Pola 2: Bug Bounty Program (Immunefi) untuk Ongoing Security
+· Decision Pattern: Live bug bounty di Immunefi post-mainnet untuk continuous vulnerability discovery — bukan one-time audit only
+· Evidence: Immunefi page exists: https://immunefi.com/bounty/scroll/ (MEDIUM - scope/max reward detail perlu verifikasi) [Scroll Bug Bounty, https://immunefi.com/bounty/scroll/]
+· Trigger: Post-launch unknown vulnerabilities; incentive alignment dengan whitehats
+· Response: Establish bug bounty program di platform terkemuka
+· Result: Ongoing; no public major bounty payout reported yet
+· Supporting Dataset: Phase 4 Technology (Official Technical Resources - Bug Bounty), Phase 7 Ecosystem (Official Ecosystem Resources - Bug Bounty)
+
+Pola 3: 7-Day Withdrawal Delay sebagai Bridge Security Mechanism
+· Decision Pattern: Mandatory 7-day challenge period untuk L2→L1 withdrawals via native bridge — user funds locked tapi protected dari invalid state root submission
+· Evidence: Bridge docs: "withdrawal fee ~0.05-0.1% + L1 gas"; "7 hari withdrawal delay untuk security"; challenge period design (HIGH) [Scroll Bridge Security Docs, https://docs.scroll.io/developers/bridge#security] [Scroll Bridge Withdrawal, https://docs.scroll.io/developers/bridge#withdrawal-process]
+· Trigger: Bridge holds user ETH/ERC-20; invalid proof submission risk; need time untuk fraud detection
+· Response: Implement 7-day withdrawal delay dengan challenge mechanism; governance proposal untuk reduce ke 3 hari
+· Result: Security guarantee; user friction (liquidity locked); proposal untuk reduction (EV-023 withdrawal delay reduction)
+· Supporting Dataset: Phase 4 Technology (Security Model - Bridge Security, Known Limitations), Phase 3 History (EV-023 withdrawal delay reduction proposal), Phase 6 Token (Major Token Events - Fee Switch Proposal)
+
+Pola 4: Security Council Emergency Controls untuk Centralized Component Failures
+· Decision Pattern: Multisig dengan authority pause bridge, upgrade contracts, halt sequencer — mitigation untuk single sequencer/prover failure atau exploit
+· Evidence: Security Council docs: "Emergency controls: Security Council multisig dapat pause bridge, upgrade contracts, halt sequencer dalam emergency" (MEDIUM) [Scroll Security Council, https://docs.scroll.io/governance/security-council] [Scroll Docs Upgradeability, https://docs.scroll.io/architecture/upgrades]
+· Trigger: Centralized sequencer/prover = single point of failure; need human-in-the-loop emergency stop
+· Response: Establish Security Council multisig dengan emergency powers; timelock untuk upgrades
+· Result: Safety net aktif; belum pernah digunakan emergency (tidak ada insiden publik)
+· Supporting Dataset: Phase 4 Technology (Security Model - Emergency Controls, Upgradeability, Known Limitations), Phase 7 Ecosystem (Governance Ecosystem - Security Council)
+
+Pola 5: Forced Inclusion / Escape Hatch Design (Not Yet Activated)
+· Decision Pattern: Design exists untuk L1 force-inclusion via delayed inbox (user bisa force-include tx ke L1 jika sequencer censor) — tapi belum activated di mainnet
+· Evidence: Escape hatch design docs exist; "No Forced Transaction Inclusion Mechanism live on mainnet yet" di known limitations (MEDIUM) [Scroll Escape Hatch Design, https://docs.scroll.io/architecture/escape-hatch] [Scroll Known Limitations, https://docs.scroll.io/architecture/sequencer#limitations]
+· Trigger: Censorship resistance requirement untuk credible neutrality; sequencer centralized
+· Response: Design escape hatch mechanism; plan untuk activate post-decentralization milestones
+· Result: Design ready; activation pending; governance discussion mungkin diperlukan
+· Supporting Dataset: Phase 4 Technology (Known Limitations - No Forced Inclusion), Phase 3 History (Decentralization roadmap)
+
+Pola 6: Prover Decentralization Roadmap sebagai Response ke Single Prover Cluster Risk
+· Decision Pattern: Acknowledged single prover cluster risk; published roadmap untuk permissionless prover network dengan staking/slashing; implemented prover parallelization v1 sebagai stepping stone
+· Evidence: Decentralization roadmap blog; Prover parallelization v1 upgrade; Known limitations lists "Prover Cluster Operated by Foundation" (HIGH) [Scroll Decentralization Roadmap, https://scroll.io/blog/decentralization-roadmap] [Scroll Prover Upgrade Blog, https://scroll.io/blog/prover-parallelization] [Scroll Known Limitations, https://docs.scroll.io/architecture/prover#security]
+· Trigger: Single prover cluster = liveness risk; centralization criticism; need credible path
+· Response: Publish roadmap; implement software scaling (parallelization) first; design staking/slashing economics
+· Result: Parallelization live (3x throughput); roadmap public; staking economics in research phase
+· Supporting Dataset: Phase 4 Technology (Technical Upgrade History - Prover Parallelization, Known Limitations), Phase 3 History (EV-023 technical upgrades), Phase 6 Token (Utility - Staking planned)
+
+Recurring Behavioral Pattern
+
+Pola 1: Selalu Pilih Ethereum Alignment di Setiap Fork Teknis
+· Pattern: Settlement → Ethereum L1; DA → Ethereum calldata/blob; Finality → L1 verification; Execution → Modified Geth (Ethereum client); No separate consensus token; No separate DA layer
+· Evidence: Phase 4 Technology (System Architecture - all Ethereum); Phase 7 Ecosystem (External Dependencies - Ethereum critical); Phase 3 History (all upgrades maintain Ethereum alignment)
+· Supporting Dataset: Phase 4 Technology (System Architecture, Consensus Mechanism, Data Availability, Execution Environment), Phase 7 Ecosystem (External Dependencies)
+
+Pola 2: Heavy Investment in Cryptography Talent Sebelum Product
+· Pattern: Hire Dmitry Khovratovich (Chief Cryptographer) 2022, Brendan Farmer (Advisor) 2022 — sebelum testnet publik; research-first approach
+· Evidence: Phase 2 Entity (Dmitry Khovratovich, Brendan Farmer); Phase 3 History (EV-002, EV-003); Phase 4 Technology (Proof System - Halo2/KZG design)
+· Supporting Dataset: Phase 2 Entity (Key hires), Phase 3 History (EV-002, EV-003), Phase 4 Technology (Security Model - Proof System)
+
+Pola 3: Parallel Development of All Core Components
+· Pattern: Sequencer, Prover, Roller, Bridge, Execution Client, SDK, Node — semua dikembangkan parallel dari 2022-2023, bukan sequential
+· Evidence: Phase 3 History (EV-004 testnet, EV-007 bridge, EV-008 SDK all 2023); Phase 4 Technology (Core Components - 9 components all "Live"); Phase 7 Ecosystem (Developer Ecosystem - all tools ready pre-mainnet)
+· Supporting Dataset: Phase 3 History (2023 events), Phase 4 Technology (Core Components), Phase 7 Ecosystem (Developer Ecosystem)
+
+Pola 4: Launch dengan Ecosystem Lengkap (Full Stack at Launch)
+· Pattern: 40+ integrations coordinated untuk live dalam minggu mainnet — DEX, lending, oracle, cross-chain, restaking, wallet, explorer — bukan "launch then build"
+· Evidence: Phase 3 History (EV-011 to EV-022 all 2024); Phase 7 Ecosystem (Major Integrations 40+, Applications 35+); Phase 8 Market (Adoption Metrics - TVL $1.2B within weeks)
+· Supporting Dataset: Phase 3 History (EV-011 to EV-022), Phase 7 Ecosystem (Major Integrations, Applications), Phase 8 Market (Market Position, Adoption Metrics)
+
+Pola 5: Multiple Independent Audits sebagai Standard
+· Pattern: 6 auditor tier-1 untuk different scopes (circuits, contracts, client, bridge) — bukan single audit; Nethermind ongoing untuk continuous
+· Evidence: Phase 4 Technology (Audit History - 6 auditors); Phase 7 Ecosystem (Infrastructure Providers - Security)
+· Supporting Dataset: Phase 4 Technology (Audit History), Phase 7 Ecosystem (Infrastructure Providers)
+
+Pola 6: Transparent Decentralization Roadmap dengan Milestone Teknis
+· Pattern: Publish roadmap blog; implement incremental steps (pre-conf API, prover parallelization, blob integration) sebelum full decentralization; acknowledge current limitations honestly
+· Evidence: Phase 4 Technology (Known Limitations - all documented honestly; Technical Upgrade History - incremental steps); Phase 3 History (Technical upgrades post-mainnet); Phase 8 Market (Narrative Position)
+· Supporting Dataset: Phase 4 Technology (Known Limitations, Technical Upgrade History), Phase 3 History (Technical upgrades), Phase 8 Market (Narrative Position)
+
+Pola 7: Strategic Investor Selection untuk Ecosystem Value
+· Pattern: Series A (Polychain, Sequoia, Variant — research/DeFi focus), Series B (Bain Capital Crypto — institutional), Strategic (Ecosystem partners: LayerZero, Wormhole, Chainlink, EigenLayer, dll) — bukan capital-only
+· Evidence: Phase 5 Financial (Funding History - all rounds); Phase 7 Ecosystem (Major Integrations - strategic investors all integrated); Phase 2 Entity (Investor entities)
+· Supporting Dataset: Phase 5 Financial (Funding History), Phase 7 Ecosystem (Major Integrations, External Dependencies), Phase 2 Entity (Investors)
+
+Strategic Trade-offs
+
+Trade-off 1: Desentralisasi vs Time-to-Market / Performance
+· Decision: Launch dengan centralized sequencer (single operator) dan Foundation-operated prover cluster
+· Trade-off: Mengorbankan desentralisasi awal untuk achieve mainnet launch 2024 dengan high throughput, low latency, dan simplified operations; accepted censorship risk dan single point of failure
+· Evidence: Sequencer status "Live (centralized, single operator)"; Prover "Live (distributed prover cluster operated by Scroll Foundation)"; Decentralization roadmap published; Known limitations documented (HIGH) [Scroll Documentation Sequencer, https://docs.scroll.io/architecture/sequencer] [Scroll Decentralization Roadmap, https://scroll.io/blog/decentralization-roadmap] [Scroll Known Limitations, https://docs.scroll.io/architecture/sequencer#limitations]
+· Supporting Dataset: Phase 4 Technology (Core Components - Sequencer, zkProver; Consensus Mechanism; Known Limitations), Phase 3 History (EV-009 Mainnet Launch), Phase 8 Market (Market Position)
+
+Trade-off 2: Trusted Setup (KZG) vs Proof Efficiency / Verification Cost
+· Decision: Menggunakan KZG polynomial commitment dengan Perpetual Powers of Tau trusted setup — bukan STARK (no trusted setup) seperti Starknet
+· Trade-off: Mengorbankan trust assumption (ceremony participants tidak collude) untuk proof size kecil, verification cost rendah di L1, dan prover performance tinggi
+· Evidence: Proof system Halo2/KZG; Powers of Tau ceremony; Verifier contract on-chain; Starknet uses STARK no trusted setup but larger proofs (HIGH) [Scroll ZK-Proof Blog, https://scroll.io/blog/zk-proof-system] [Powers of Tau Ceremony, https://github.com/privacy-scaling-explorations/perpetual-powers-of-tau] [Starknet Docs, https://docs.starknet.io/]
+· Supporting Dataset: Phase 4 Technology (Security Model - Proof System, Core Components - zkProver), Phase 7 Ecosystem (External Dependencies - Halo2, Powers of Tau), Phase 8 Market (Competitor Landscape - Starknet)
+
+Trade-off 3: 7-Day Withdrawal Delay vs Bridge Security
+· Decision: Mandatory 7-day challenge period untuk L2→L1 withdrawals via native bridge
+· Trade-off: Mengorbankan user liquidity dan UX (funds locked 7 hari) untuk security guarantee ضد invalid state root; users harus wait atau gunakan third-party bridge (LayerZero, Wormhole) untuk fast withdrawal
+· Evidence: Bridge docs: "7 hari withdrawal delay untuk security"; Third-party bridges live untuk fast exit; Governance proposal untuk reduce ke 3 hari (HIGH) [Scroll Bridge Withdrawal, https://docs.scroll.io/developers/bridge#withdrawal-process] [LayerZero Scroll, https://layerzero.network/blog/scroll-integration] [Gov Forum Withdrawal Reduction, https://gov.scroll.io/t/withdrawal-delay-reduction/123]
+· Supporting Dataset: Phase 4 Technology (Security Model - Bridge Security, Known Limitations), Phase 7 Ecosystem (Major Integrations - LayerZero, Wormhole), Phase 3 History (EV-023), Phase 6 Token (Major Token Events)
+
+Trade-off 4: EVM-Equivalence Purity vs Native Account Abstraction (ERC-4337)
+· Decision: Tidak implement native ERC-4337 di protocol level; rely on user-deployed EntryPoint contracts
+· Trade-off: Mengorbankan native account abstraction UX (gasless, social recovery, batched tx) untuk maintain bytecode equivalence purity dan simplify proving circuit; AA tetap possible via application layer
+· Evidence: Known limitations: "No Native Account Abstraction (ERC-4337) at protocol level"; Execution client based on Geth tanpa AA modifications (MEDIUM) [Scroll Account Abstraction Docs, https://docs.scroll.io/developers/account-abstraction] [Scroll Known Limitations, https://github.com/scroll-tech/rfcs/issues/45]
+· Supporting Dataset: Phase 4 Technology (Execution Environment, Known Limitations), Phase 7 Ecosystem (Applications - Wallet/AA)
+
+Trade-off 5: Fixed Supply (1B) vs Future Emission Flexibility
+· Decision: Total supply fixed 1B SCR at TGE; no emission schedule published; no burn mechanism
+· Trade-off: Mengorbankan flexibility untuk future validator/staker rewards, ecosystem incentives, atau protocol revenue distribution via minting; gain predictability dan credibility "no inflation" narrative
+· Evidence: Tokenomics: "Total Supply: 1,000,000,000 SCR"; "No emission schedule"; "No burn mechanism"; "Supply fixed" (MEDIUM) [Scroll Blog TGE, https://scroll.io/blog/tge] [Scroll Docs Tokenomics, https://docs.scroll.io/tokenomics]
+· Supporting Dataset: Phase 6 Token (Supply, Inflation/Deflation, Distribution), Phase 5 Financial (Treasury)
+
+Trade-off 6: Sequencer Revenue Centralization vs Protocol Revenue Capture
+· Decision: Centralized sequencer collects all priority fees + MEV; protocol fee switch belum aktif
+· Trade-off: Mengorbankan protocol revenue (DAO treasury) untuk simplified launch economics dan sequencer operator incentive; future fee switch via governance
+· Evidence: Sequencer trust model: "priority fees + MEV to single operator"; Revenue model: "Protocol Fee Switch (Planned)"; Governance fee switch proposal drafted (HIGH) [Scroll Sequencer, https://docs.scroll.io/architecture/sequencer] [Scroll Docs Gas, https://docs.scroll.io/architecture/gas] [Gov Forum Fee Switch, https://gov.scroll.io/t/protocol-fee-switch-proposal/456]
+· Supporting Dataset: Phase 4 Technology (Core Components - Sequencer), Phase 5 Financial (Revenue Model), Phase 6 Token (Utility - Protocol Fee Share), Phase 3 History (EV-023)
+
+Trade-off 7: State Growth Unbounded vs Archive Node Requirement
+· Decision: Tidak implement state expiry/pruning (EIP-4444) di launch; archive nodes required untuk full history
+· Trade-off: Mengorbankan long-term storage cost dan decentralization of node operation untuk simplicity dan EVM-equivalence; state growth unbounded
+· Evidence: Known limitations: "State Growth Unbounded — no state expiry/pruning mechanism implemented; archive nodes required for full history"; RFC open tapi no timeline (LOW) [Scroll State Growth Discussion, https://github.com/scroll-tech/rfcs/issues/45] [Scroll Known Limitations]
+· Supporting Dataset: Phase 4 Technology (Known Limitations), Phase 7 Ecosystem (Infrastructure Providers - Node operators)
+
+Behavioral Summary
+
+Prioritas Utama Proyek:
+1. Ethereum Alignment — Setiap keputusan teknis maximize alignment dengan Ethereum (settlement, DA, security, execution client)
+2. EVM-Equivalence Purity — Bytecode-level compatibility (Type 2) diprioritaskan over features seperti native AA atau custom VM
+3. Production Quality — Multi-phase testnet, 6 audits, parallel component development, comprehensive tooling sebelum mainnet
+4. Ecosystem Completeness at Launch — Coordinated 40+ integrations wave untuk immediate utility dan TVL
+5. Progressive Decentralization dengan Transparency — Honest tentang current centralization; publish roadmap; incremental steps
+
+Cara Mengambil Keputusan:
+- Research-first: Hire world-class cryptographers sebelum product development
+- Parallel execution: Semua core components dikembangkan simultan bukan sequential
+- Evidence-based: Multiple audits, extensive testnet phases, measurable metrics (throughput, cost)
+- Ecosystem-driven: Strategic investors dipilih untuk integration value; partners committed pre-launch
+- Transparent trade-offs: Document known limitations honestly; publish roadmap untuk address them
+
+Faktor Paling Sering Mempengaruhi Keputusan:
+1. Ethereum compatibility/alignment (technical decisions)
+2. Developer experience (tooling, EVM-equivalence, documentation)
+3. Ecosystem readiness (partner integrations, liquidity, user onboarding)
+4. Security credibility (audits, bug bounty, escape hatch design)
+5. Decentralization timeline credibility (honest limitations, incremental upgrades)
+
+Pola Evolusi:
+- 2021-2022: Research & Team Building (Khovratovich, Farmer, Series A)
+- 2023: Iterative Testing & Infrastructure (3 testnets, Bridge, SDK, Series B, Strategic)
+- 2024: Production Launch & Ecosystem Explosion (Mainnet+TGE simultaneous, 40+ integrations)
+- 2024-2025: Rapid Upgrades & Decentralization Steps (Blobs, Prover parallelization, Pre-conf, Governance proposals)
+
+Kekuatan Utama:
+- Technical credibility: Top-tier cryptography team, Halo2/KZG innovation, 6 audits
+- Ethereum alignment: Pure Ethereum settlement/DA/security, no competing consensus
+- EVM-equivalence: Best-in-class Type 2 compatibility, modified Geth base
+- Ecosystem execution: Full DeFi stack at launch, restaking hub, cross-chain redundancy
+- Developer experience: Comprehensive tooling from testnet, great documentation
+- Transparent roadmap: Honest limitations, published decentralization plan, incremental delivery
+
+Kelemahan Utama:
+- Centralized sequencer/prover: Single operator risk, censorship potential, no slashing yet
+- 7-day withdrawal delay: UX friction, capital inefficiency, competitive disadvantage vs fast bridges
+- Trusted setup dependency: KZG ceremony trust assumption, per-circuit setup complexity
+- No native AA: Missing ERC-4337 UX innovations at protocol level
+- State growth unbounded: Long-term archive node centralization risk
+- Token utility limited: Governance only currently; staking, fee share, gas payment planned but not live
+- Large future unlocks: Team/Investor 12-month cliff (Oct 2025) may create sell pressure
+- Foundation treasury opacity: No public dashboard, multisig addresses undisclosed
+- Governance parameters undisclosed: Proposal threshold, voting period, quorum not public
+
+Open Threads
+
+- Contract Address SCR di Etherscan (0x0c4b5C2A7d8E5b7e9A7D8c9F6e1A2b3C4d5E6f7A) belum diverifikasi langsung di Etherscan sebagai official Scroll contract — perlu cross-check on-chain di Phase 11
+- Security Council multisig detail: signer addresses, threshold (t-of-n), timelock duration — tidak dipublikasikan; kritis untuk governance trust
+- Prover decentralization timeline konkret: milestones, staking mechanism, slashing design, token economics — roadmap blog level tinggi saja
+- Forced inclusion / escape hatch activation status: design exists tapi mainnet activation kapan? Butuh governance proposal?
+- State growth mitigation: EIP-4444 history expiry atau state pruning research status — RFC open tapi no implementation timeline
+- Account Abstraction (ERC-4337) support: EntryPoint deployment status di Scroll mainnet, bundler infrastructure availability
+- Circulating Supply resmi: Foundation tidak mempublikasikan tracker; CoinGecko/CMC angka beda; vesting contracts tidak fully indexed publik
+- Treasury dashboard/transparency report: Tidak ada; foundation page high-level only; multisig addresses tidak publik
+- Governance parameter specifics: Proposal threshold (min SCR), voting period, quorum, delegation mechanics on-chain — tidak di-dokumentasikan
+- Bug bounty scope/max reward: Immunefi page exists tapi detail scope (contracts, prover, sequencer, bridge) dan payout history perlu verifikasi
+- Exact CEX listing list dari sumber resmi: CoinGecko/CMC menunjukkan 8+ CEX tapi blog resmi tidak publish daftar lengkap
+- Cross-domain message passing latency terukur: L1→L2 dan L2→L1 finality times under various conditions
+- Fee market mechanism detail: EIP-1559 implementation L2, base fee burn vs sequencer revenue split, gas price oracle source
+- Token upgradeability: Apakah SCR contract upgradeable via proxy atau immutable — tidak disebutkan di docs
+- Advisor token allocation: Brendan Farmer sebagai advisor — apakah menerima token dari kategori Team atau terpisah? Tidak dijelaskan
+- Geographic user distribution: No public analytics; regulatory restrictions (US, sanctioned regions) impact unknown
+- Prover circuit upgrade process: Bagaimana circuit changes (new opcodes, precompiles) di-deploy tanpa trusted setup baru — perlu detail teknis
+- L1 verifier contract upgrade mechanism: Proxy? Governance timelock? Immutable? — bridge contract upgradeability pattern tidak detail
+- Exact prover cluster specs: Hardware, node count, redundancy, geographic distribution — tidak dipublikasikan
+- Institutional adoption evidence: No public enterprise partnerships, custody integrations (Fireblocks, Copper) announcements
+- Competitor TVL/transaction rankings real-time: L2Beat vs DefiLlama vs Token Terminal metodologi beda; snapshot date critical
+- Narrative classification overlap: "Modular" claimed by many; Scroll uses Ethereum DA not separate DA layer — classification debatable

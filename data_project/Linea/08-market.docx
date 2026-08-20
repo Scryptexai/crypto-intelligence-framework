@@ -1,0 +1,387 @@
+PROJECT: Linea
+
+## Market Category
+
+Primary Category: Layer 2 Scaling (zkEVM Rollup) (HIGH) [https://linea.build/blog/introducing-linea-the-zkevm-for-ethereum]
+Secondary Category: DeFi Infrastructure (HIGH) [https://linea.build/blog/linea-mainnet-alpha-is-live]
+Sector: Ethereum Scaling (HIGH) [https://defillama.com/chain/Linea]
+Sub-sector: Zero-Knowledge Rollup (Type 2 zkEVM targeting Type 1) (HIGH) [https://linea.build/blog/linea-type1-equivalence]
+
+## Market Position
+
+Project Stage: Pre-TGE / Early Growth (HIGH) [https://linea.build/blog/linea-tge-announcement]
+Primary Competitors: Arbitrum; Optimism; Base; Scroll; zkSync Era; Starknet; Polygon zkEVM (HIGH) [https://defillama.com/chain/Linea]
+Market Segment: Ethereum L2 General-Purpose zkEVM (HIGH) [https://linea.build/blog/introducing-linea-the-zkevm-for-ethereum]
+Geographic Focus: Global (no geographic restriction) (HIGH) [https://linea.build/docs/infrastructure/network-information]
+
+## Trading Markets
+
+Exchange: Binance
+Spot: Not listed (Pre-TGE)
+Perpetual: Not listed
+Futures: Not listed
+Options: Not listed
+OTC: Not listed
+Status: Pre-TGE — no native LINEA token trading (HIGH) [https://www.binance.com/en/markets/overview]
+
+Exchange: Coinbase
+Spot: Not listed (Pre-TGE)
+Perpetual: Not listed
+Futures: Not listed
+Options: Not listed
+OTC: Not listed
+Status: Pre-TGE (HIGH) [https://www.coingecko.com/en/exchanges/coinbase]
+
+Exchange: Kraken
+Spot: Not listed (Pre-TGE)
+Perpetual: Not listed
+Futures: Not listed
+Options: Not listed
+OTC: Not listed
+Status: Pre-TGE (HIGH) [https://www.coingecko.com/en/exchanges/kraken]
+
+Exchange: KuCoin
+Spot: Not listed (Pre-TGE)
+Perpetual: Not listed
+Futures: Not listed
+Options: Not listed
+OTC: Not listed
+Status: Pre-TGE (HIGH) [https://www.kucoin.com/trade]
+
+Exchange: Gate.io
+Spot: Not listed (Pre-TGE)
+Perpetual: Not listed
+Futures: Not listed
+Options: Not listed
+OTC: Not listed
+Status: Pre-TGE (HIGH) [https://www.gate.io/trade]
+
+Exchange: Bybit
+Spot: Not listed (Pre-TGE)
+Perpetual: Not listed
+Futures: Not listed
+Options: Not listed
+OTC: Not listed
+Status: Pre-TGE (HIGH) [https://www.bybit.com/trade/spot]
+
+Exchange: OKX
+Spot: Not listed (Pre-TGE)
+Perpetual: Not listed
+Futures: Not listed
+Options: Not listed
+OTC: Not listed
+Status: Pre-TGE (HIGH) [https://www.okx.com/markets/spot]
+
+Note: All CEX listings show no LINEA token as project is Pre-TGE with TGE planned Q1 2025; CEX discussions ongoing per announcements but no confirmations (HIGH) [https://linea.build/blog/linea-tge-announcement]
+
+## Liquidity
+
+Liquidity Source: Canonical Bridge (Native L1-L2 Bridge)
+Major Liquidity Venue: bridge.linea.build (Official Bridge UI)
+DEX: SyncSwap; Velocore; HorizonDEX; Echo (Major DEXs on Linea) (HIGH) [https://syncswap.xyz]
+DEX: Uniswap v3 (deployed on Linea via governance) (HIGH) [https://linea.build/blog/linea-mainnet-alpha-is-live]
+CEX: No native LINEA token liquidity (Pre-TGE)
+Bridge Liquidity: Canonical Bridge TVL ~$200M+ (varies); LayerZero/Axelar/Wormhole/CCIP bridge liquidity aggregated across chains (HIGH) [https://bridge.linea.build]
+Status: Active — ETH and major ERC20s bridged natively; cross-chain via 4 messaging layers (HIGH) [https://linea.build/blog/linea-x-layerzero]
+
+## Adoption Metrics
+
+Metric Name: TVL (Total Value Locked)
+Value: ~$300M-$600M range (peaked ~$600M March 2024 per Voyage Season 3 announcement; declined post-exploit)
+Date: 2024-03 (peak); 2024-11 (current estimate ~$300M)
+Sources: (HIGH) [https://linea.build/blog/linea-voyage-season-3-surge] (MEDIUM) [https://defillama.com/chain/Linea]
+
+Metric Name: Daily Active Users (Unique Wallets)
+Value: >1M monthly active wallets (per 1-year anniversary); >2M during Voyage Season 3
+Date: 2024-07 (1-year); 2024-04 (Season 3)
+Sources: (HIGH) [https://linea.build/blog/linea-one-year-mainnet] (HIGH) [https://linea.build/blog/linea-voyage-season-3-surge]
+
+Metric Name: Transactions (Cumulative)
+Value: 100M+ transactions (all-time as of 1-year anniversary)
+Date: 2024-07
+Sources: (HIGH) [https://linea.build/blog/linea-one-year-mainnet]
+
+Metric Name: Wallets (Unique All-Time)
+Value: 3M+ unique wallets (all-time as of 1-year anniversary)
+Date: 2024-07
+Sources: (HIGH) [https://linea.build/blog/linea-one-year-mainnet]
+
+Metric Name: Developer Count
+Value: 500+ protocols deployed (per 1-year anniversary); exact developer headcount not published
+Date: 2024-07
+Sources: (HIGH) [https://linea.build/blog/linea-one-year-mainnet]
+
+Metric Name: Bridge Volume (Canonical + Cross-chain)
+Value: $1B+ all-time bridge volume (per 1-year anniversary); >$100M cross-chain volume in first month of LayerZero/Axelar/Wormhole integration
+Date: 2024-07 (all-time); 2023-10 (cross-chain monthly)
+Sources: (HIGH) [https://linea.build/blog/linea-one-year-mainnet] (HIGH) [https://linea.build/blog/linea-x-layerzero]
+
+Metric Name: Messages (Cross-chain)
+Value: Not published as standalone metric
+Date: N/A
+Sources: (LOW) [https://linea.build/blog/linea-x-layerzero]
+
+Metric Name: Prover/Validator Count
+Value: 1 centralized sequencer (Consensys); permissioned prover set (Consensys-operated); decentralization Phase 1 not live
+Date: 2024-11 (current)
+Sources: (HIGH) [https://linea.build/blog/prover-decentralization-roadmap]
+
+## Market Share
+
+Metric: TVL Share Among Ethereum L2s
+Value: ~2-4% of total L2 TVL (estimated; varies by source)
+Date: 2024-11
+Sources: (MEDIUM) [https://defillama.com/chains] (LOW) [https://l2beat.com/scaling/tvl]
+
+Metric: Transaction Count Share
+Value: Not published as percentage
+Date: N/A
+Sources: Tidak tersedia.
+
+Metric: User Share (Active Wallets)
+Value: Not published as percentage
+Date: N/A
+Sources: Tidak tersedia.
+
+## Competitor Landscape
+
+Competitor: Arbitrum
+Category: Optimistic Rollup (L2)
+Difference: Arbitrum uses optimistic fraud proofs with 7-day challenge window; Linea uses ZK validity proofs with ~15-min finality (post-Boojum); Arbitrum has larger TVL (~$15B+) and mature ecosystem; Linea is zkEVM Type 2 targeting Type 1
+Market Segment: Ethereum General-Purpose L2
+Sources: (HIGH) [https://arbitrum.io] (HIGH) [https://linea.build/blog/introducing-linea-the-zkevm-for-ethereum]
+
+Competitor: Optimism
+Category: Optimistic Rollup (L2)
+Difference: Optimism uses OP Stack, optimistic proofs; Linea uses zkEVM with PLONK proofs; Optimism has Superchain vision; Linea focuses on zkEVM equivalence
+Market Segment: Ethereum General-Purpose L2
+Sources: (HIGH) [https://optimism.io] (HIGH) [https://linea.build/blog/introducing-linea-the-zkevm-for-ethereum]
+
+Competitor: Base
+Category: Optimistic Rollup (L2, OP Stack)
+Difference: Base is Coinbase-incubated OP Stack chain; no native token; Linea is Consensys-built zkEVM with planned token; Base has higher TVL (~$2B+) and US retail focus
+Market Segment: Ethereum General-Purpose L2
+Sources: (HIGH) [https://base.org] (HIGH) [https://linea.build/blog/linea-mainnet-alpha-is-live]
+
+Competitor: Scroll
+Category: zkEVM Rollup (Type 2)
+Difference: Scroll is independent zkEVM (Type 2); Linea is Consensys-backed with deeper Ethereum tooling integration; Scroll mainnet launched 2023-10; Linea mainnet 2023-07
+Market Segment: Ethereum zkEVM L2
+Sources: (HIGH) [https://scroll.io] (HIGH) [https://linea.build/blog/linea-mainnet-alpha-is-live]
+
+Competitor: zkSync Era
+Category: zkEVM Rollup (Type 4, not EVM-equivalent)
+Difference: zkSync uses custom VM (Type 4) requiring Solidity compilation to Yul; Linea is Type 2 EVM-equivalent; zkSync has native account abstraction; Linea uses standard EVM
+Market Segment: Ethereum zk-Rollup L2
+Sources: (HIGH) [https://zksync.io] (HIGH) [https://linea.build/blog/linea-type1-equivalence]
+
+Competitor: Starknet
+Category: ZK-Rollup (Cairo VM, not EVM)
+Difference: Starknet uses Cairo language/VM; Linea is EVM-equivalent zkEVM; different developer experience; Starknet has native account abstraction
+Market Segment: Ethereum ZK-Rollup L2
+Sources: (HIGH) [https://starknet.io] (HIGH) [https://linea.build/blog/introducing-linea-the-zkevm-for-ethereum]
+
+Competitor: Polygon zkEVM
+Category: zkEVM Rollup (Type 2)
+Difference: Polygon zkEVM is Type 2 from Polygon Labs; Linea is Consensys-backed with Type 1 roadmap; both EVM-equivalent; Polygon has MATIC/POL token live
+Market Segment: Ethereum zkEVM L2
+Sources: (HIGH) [https://polygon.technology/zkEVM] (HIGH) [https://linea.build/blog/linea-type1-equivalence]
+
+## Narrative Position
+
+Narrative: L2 (Layer 2 Scaling)
+Status: Main Narrative
+Evidence: Linea positioned as zkEVM L2 for Ethereum scaling; all marketing and technical docs emphasize L2 rollup narrative
+Sources: (HIGH) [https://linea.build/blog/introducing-linea-the-zkevm-for-ethereum]
+
+Narrative: zkEVM (Zero-Knowledge EVM)
+Status: Main Narrative
+Evidence: Type 2 zkEVM with Type 1 equivalence roadmap; core technical differentiator vs optimistic rollups
+Sources: (HIGH) [https://linea.build/blog/linea-type1-equivalence]
+
+Narrative: Interoperability / Cross-chain Messaging
+Status: Secondary Narrative
+Evidence: Official integration of 4 cross-chain messaging layers (LayerZero, Axelar, Wormhole, Chainlink CCIP); heavily marketed in 2023-2024
+Sources: (HIGH) [https://linea.build/blog/linea-x-layerzero]
+
+Narrative: Modular Blockchain
+Status: Secondary Narrative
+Evidence: Separation of execution (L2), settlement (L1), data availability (L1 blobs), proving (Vortex/Boojum) — modular architecture
+Sources: (HIGH) [https://linea.build/blog/boojum-prover-upgrade]
+
+Narrative: DeFi Infrastructure
+Status: Secondary Narrative
+Evidence: 500+ protocols including major DEXs, lending, options, cross-chain; Voyage incentives targeting DeFi usage
+Sources: (HIGH) [https://linea.build/blog/linea-one-year-mainnet]
+
+Narrative: Chain Abstraction
+Status: Emerging Narrative
+Evidence: Account abstraction support (ERC-4337), cross-chain messaging, unified UX via bridges; not primary marketing focus yet
+Sources: (MEDIUM) [https://linea.build/docs/developers/account-abstraction]
+
+Narrative: Restaking
+Status: Not Applicable
+Evidence: No restaking protocol native to Linea; EigenLayer etc. operate on Ethereum L1
+Sources: (HIGH) [https://linea.build/blog/linea-mainnet-alpha-is-live]
+
+Narrative: RWA (Real World Assets)
+Status: Not Primary Narrative
+Evidence: Some RWA protocols deployed (Ondo Finance etc. via cross-chain) but not a marketed focus
+Sources: (LOW) [https://linea.build/ecosystem]
+
+Narrative: DePIN
+Status: Not Applicable
+Evidence: No DePIN-specific infrastructure or marketing
+Sources: (HIGH) [https://linea.build/ecosystem]
+
+Narrative: Gaming
+Status: Minor Narrative
+Evidence: Some gaming projects in ecosystem; Voyage included gaming quests; not a primary vertical
+Sources: (MEDIUM) [https://linea.build/blog/linea-voyage-season-3-surge]
+
+Narrative: AI
+Status: Not Applicable
+Evidence: No AI-specific infrastructure or narrative
+Sources: (HIGH) [https://linea.build/ecosystem]
+
+Narrative: Intent-Centric
+Status: Not Applicable
+Evidence: No intent-based architecture marketed
+Sources: (HIGH) [https://linea.build/ecosystem]
+
+## Market Timeline
+
+Date: 2023-03-28
+Milestone: Public Testnet Launch (Goerli)
+Description: Linea public testnet live on Ethereum Goerli; opened to developers and users
+Related Historical Event ID: EV-004
+Sources: (HIGH) [https://linea.build/blog/linea-testnet-is-now-live]
+
+Date: 2023-07-18
+Milestone: Mainnet Alpha Launch
+Description: Linea Mainnet Alpha live as first production-ready Type 2 zkEVM; fair launch (no token, no VC allocation); 50+ protocols live day one
+Related Historical Event ID: EV-005
+Sources: (HIGH) [https://linea.build/blog/linea-mainnet-alpha-is-live]
+
+Date: 2023-08
+Milestone: Voyage Season 1 Launch
+Description: LXP points program launched to incentivize ecosystem adoption without native token
+Related Historical Event ID: EV-007
+Sources: (HIGH) [https://linea.build/blog/introducing-linea-voyage]
+
+Date: 2023-10
+Milestone: Cross-chain Messaging Integrations Live
+Description: LayerZero, Axelar, Wormhole officially integrated for cross-chain messaging
+Related Historical Event ID: EV-008
+Sources: (HIGH) [https://linea.build/blog/linea-x-layerzero]
+
+Date: 2023-11
+Milestone: Chainlink CCIP and Data Feeds Live
+Description: Full Chainlink stack (CCIP, Feeds, VRF, Automation) live on Linea
+Related Historical Event ID: EV-009
+Sources: (HIGH) [https://blog.chain.link/chainlink-ccip-live-linea-mainnet]
+
+Date: 2024-01
+Milestone: Voyage Season 2 Launch
+Description: Expanded LXP mechanics, LXP-L for liquidity providers
+Related Historical Event ID: EV-010
+Sources: (HIGH) [https://linea.build/blog/linea-voyage-season-2]
+
+Date: 2024-03
+Milestone: Boojum Prover Upgrade Activated
+Description: PLONK recursive proving reduces proving cost ~90%, finality from ~3 hours to ~15 minutes
+Related Historical Event ID: EV-011
+Sources: (HIGH) [https://linea.build/blog/boojum-prover-upgrade]
+
+Date: 2024-03-13
+Milestone: EIP-4844 (Proto-Danksharding) Support Activated
+Description: Blob transaction support live post-Dencun; L2 median gas <$0.01
+Related Historical Event ID: EV-012
+Sources: (HIGH) [https://linea.build/blog/linea-eip4844-support]
+
+Date: 2024-04
+Milestone: Voyage Season 3 (Surge) Launch
+Description: Focus on real usage, Galxe/Zealy quest integration, Surge Points for major DeFi
+Related Historical Event ID: EV-013
+Sources: (HIGH) [https://linea.build/blog/linea-voyage-season-3-surge]
+
+Date: 2024-06
+Milestone: Bridge Security Incident
+Description: Canonical bridge exploited for ~$6.8M; sequencer paused ~48 hours; emergency upgrade deployed
+Related Historical Event ID: EV-014
+Sources: (HIGH) [https://linea.build/blog/linea-bridge-incident-postmortem]
+
+Date: 2024-07
+Milestone: 1-Year Mainnet Anniversary
+Description: 500+ protocols, $1B+ bridge volume, 3M+ wallets, 100M+ transactions
+Related Historical Event ID: EV-015
+Sources: (HIGH) [https://linea.build/blog/linea-one-year-mainnet]
+
+Date: 2024-08
+Milestone: Linea Foundation Formation Announced
+Description: Independent non-profit foundation formed for ecosystem, governance, grants, decentralization
+Related Historical Event ID: EV-016
+Sources: (HIGH) [https://linea.build/blog/linea-foundation-announcement]
+
+Date: 2024-09
+Milestone: Prover Decentralization Roadmap Published
+Description: 3-phase roadmap: permissioned provers → proof marketplace → decentralized proving network with staking
+Related Historical Event ID: EV-017
+Sources: (HIGH) [https://linea.build/blog/prover-decentralization-roadmap]
+
+Date: 2024-10
+Milestone: Voyage Season 4 Announced (Final Pre-TGE)
+Description: Final season before TGE; anti-sybil, proof-of-humanity, real-user focus
+Related Historical Event ID: EV-018
+Sources: (HIGH) [https://linea.build/blog/linea-voyage-season-4]
+
+Date: 2024-11
+Milestone: zkEVM Type 1 Equivalence Achieved (Testnet)
+Description: Full Ethereum equivalence on testnet; all opcodes, precompiles, block structure identical to L1
+Related Historical Event ID: EV-019
+Sources: (HIGH) [https://linea.build/blog/linea-type1-equivalence]
+
+Date: 2025-Q1 (Target)
+Milestone: TGE and DAO Launch
+Description: LINEA token generation event; DAO governance activation; airdrop distribution; prover staking begins
+Related Historical Event ID: EV-020
+Sources: (HIGH) [https://linea.build/blog/linea-tge-announcement]
+
+## Official Market Resources
+
+Official Dashboard: https://linea.build/ecosystem
+DefiLlama: https://defillama.com/chain/Linea
+CoinGecko: https://www.coingecko.com/en/chains/linea (chain page; no token page Pre-TGE)
+CoinMarketCap: https://coinmarketcap.com/chains/linea/ (chain page; no token page Pre-TGE)
+Token Terminal: https://tokenterminal.com/terminal/projects/linea (project page; limited data Pre-TGE)
+Messari: https://messari.io/project/linea (project page; research reports require subscription)
+Explorer: https://lineascan.build
+
+## Summary
+
+Market Stage: Pre-TGE / Early Growth
+Primary Category: Layer 2 Scaling (zkEVM Rollup)
+Competitor Count: 7 major direct competitors (Arbitrum, Optimism, Base, Scroll, zkSync Era, Starknet, Polygon zkEVM)
+Major Narrative: L2 / zkEVM / Interoperability
+Trading Availability: None (Pre-TGE; no CEX/DEX listings for native token)
+Adoption Metrics Available: TVL, Active Wallets, Transactions, Bridge Volume, Protocol Count (from official announcements and DefiLlama)
+
+## Open Threads
+
+- Exact current TVL (DefiLlama shows real-time but official announcements cite ranges; peak $600M March 2024 vs current ~$300M estimate) — conflicting data between sources
+- Daily active users vs monthly active users distinction not clarified in official metrics — "1M monthly active" vs "2M during Season 3" may not be comparable
+- Bridge volume breakdown (canonical vs LayerZero vs Axelar vs Wormhole vs CCIP) not published separately — only aggregate $1B+ all-time
+- Developer count (individual developers) not published — only "500+ protocols" metric available
+- Market share percentages (TVL, transactions, users) not available from authoritative third-party (L2Beat tracks but Linea not always separately categorized)
+- TGE exact date not confirmed — only "Q1 2025" target
+- CEX listing confirmations for LINEA token — "discussions ongoing" only, no signed agreements public
+- Voyage LXP-to-LINEA conversion formula not published — allocation mechanism opaque
+- Whether LINEA token will be required for gas at TGE — described as "potential" not committed
+- Post-TGE token price discovery mechanism (no public sale, fair launch via airdrop + liquidity) — no precedent for this exact model at this scale
+- Consensys investor allocation percentage in TGE not disclosed — impacts float and sell pressure estimates
+- Foundation legal jurisdiction (Cayman/BVI/other) not confirmed — affects regulatory treatment
+- Prover decentralization Phase 1 launch timeline — roadmap says "2025" but no quarter specified
+- Type 1 equivalence mainnet deployment exact date — "Q1 2025" only
+- Cross-chain messaging volume trends post-Voyage Season 3 — no updated metrics published
+- Revenue model post-TGE (if any fee switch to token holders) — not specified
+- Treasury composition and management strategy post-Foundation — not disclosed

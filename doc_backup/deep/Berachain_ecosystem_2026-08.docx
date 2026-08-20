@@ -1,0 +1,459 @@
+PROJECT: Berachain
+
+## Ecosystem Position
+
+Primary Sector: Layer 1 Blockchain
+Secondary Sector: DeFi Infrastructure / Proof-of-Liquidity Consensus
+Primary Chain: Berachain Mainnet
+Supported Chains: Ethereum (EVM compatibility), Cosmos Ecosystem (via IBC)
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/architecture]; (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (HIGH) [Phase 1 Foundation Data]; (HIGH) [Phase 4 Technology Architecture]
+
+## External Dependencies
+
+Dependency Name: Cosmos SDK
+Dependency Type: Protocol / SDK
+Purpose: Application framework modular untuk state machine, module system (staking, governance, IBC, EVM), transaction processing; core dependency untuk Berachain protocol implementation
+Criticality: Critical
+Status: Live
+Related Entity: Cosmos SDK
+Related Technology Component: Cosmos SDK Application Framework (Phase 4 Core Components)
+Sources: (HIGH) [Cosmos SDK Documentation, https://docs.cosmos.network]; (HIGH) [Berachain GitHub go.mod, https://github.com/berachain/bera/blob/main/go.mod]; (HIGH) [Phase 4 Technology Core Components]
+
+Dependency Name: CometBFT
+Dependency Type: Protocol
+Purpose: BFT consensus engine (fork Tendermint) untuk finality cepat (~1-2 detik), validator set management, block production; consensus layer Berachain
+Criticality: Critical
+Status: Live
+Related Entity: CometBFT
+Related Technology Component: CometBFT Consensus Engine (Phase 4 Core Components)
+Sources: (HIGH) [CometBFT Documentation, https://cometbft.com]; (HIGH) [Berachain GitHub go.mod, https://github.com/berachain/bera/blob/main/go.mod]; (HIGH) [Phase 4 Technology Consensus Mechanism]
+
+Dependency Name: IBC (Inter-Blockchain Communication)
+Dependency Type: Protocol
+Purpose: Standard cross-chain communication untuk transfer token (ICS-20), data (ICS-27), interchain accounts dengan chain Cosmos ecosystem; interoperabilitas native
+Criticality: High
+Status: Live
+Related Entity: IBC (Inter-Blockchain Communication)
+Related Technology Component: IBC Module (Phase 4 Core Components)
+Sources: (HIGH) [IBC Protocol, https://ibc.cosmos.network]; (MEDIUM) [Berachain Documentation, https://docs.berachain.com/learn/ibc]; (HIGH) [Phase 4 Technology Core Components]
+
+Dependency Name: Ethereum (EVM compatibility)
+Dependency Type: Chain
+Purpose: EVM-equivalent execution environment; kompatibilitas tooling Ethereum (Hardhat, Foundry, MetaMask, dll); memungkinkan porting kontrak Solidity tanpa modifikasi
+Criticality: Critical
+Status: Live
+Related Entity: Ethereum (EVM compatibility)
+Related Technology Component: EVM Module (Phase 4 Core Components)
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/develop/evm]; (HIGH) [Ethereum Foundation, https://ethereum.org]; (HIGH) [Phase 4 Technology Execution Environment]
+
+Dependency Name: Berachain Foundation
+Dependency Type: Foundation
+Purpose: Entitas hukum Cayman Islands mengelola treasury, pengembangan protokol, governance ekosistem; legal wrapper untuk operasi protokol
+Criticality: Critical
+Status: Live
+Related Entity: Berachain Foundation
+Related Technology Component: N/A (organizational dependency)
+Sources: (HIGH) [Berachain Official Website, https://berachain.com]; (MEDIUM) [Berachain Documentation, https://docs.berachain.com]; (HIGH) [Phase 2 Entity Berachain Foundation]
+
+Dependency Name: Oracle Provider (Unidentified)
+Dependency Type: Oracle
+Purpose: Price feeds untuk Bend (liquidation), Berps (funding rate/mark price), HONEY peg monitoring; tidak terdokumentasi provider resmi di Phase 4
+Criticality: High
+Status: tidak diketahui
+Related Entity: tidak diketahui
+Related Technology Component: Bend, Berps, HONEY modules (Phase 4 Core Components)
+Sources: (LOW) [Phase 4 Technology Known Technical Limitations - No native oracle]; (LOW) [Berachain Documentation, https://docs.berachain.com/dapps] — oracle provider tidak terdokumentasi
+
+Dependency Name: Relayer Infrastructure (IBC)
+Dependency Type: Infrastructure
+Purpose: Permissionless relayer untuk IBC packet forwarding; liveness cross-chain transfer bergantung pada relayer availability
+Criticality: High
+Status: Live
+Related Entity: IBC (Inter-Blockchain Communication)
+Related Technology Component: IBC Module (Phase 4 Core Components)
+Sources: (MEDIUM) [IBC Protocol, https://ibc.cosmos.network]; (MEDIUM) [Berachain Documentation, https://docs.berachain.com/learn/ibc]; (MEDIUM) [Phase 4 Technology Known Technical Limitations - IBC relay dependency]
+
+Dependency Name: GitHub
+Dependency Type: Infrastructure / Service
+Purpose: Hosting repository kode sumber terbuka (github.com/berachain); CI/CD, issue tracking, collaboration
+Criticality: Medium
+Status: Live
+Related Entity: Berachain GitHub Repository
+Related Technology Component: Development Framework (Phase 4)
+Sources: (HIGH) [GitHub Berachain, https://github.com/berachain]; (HIGH) [Phase 2 Entity Berachain GitHub Repository]
+
+Dependency Name: Docker / Containerization
+Dependency Type: Infrastructure
+Purpose: Containerization untuk node deployment (validator, RPC, indexer)
+Criticality: Medium
+Status: Live
+Related Entity: tidak diketahui (upstream Docker project)
+Related Technology Component: Current Technical Stack (Phase 4)
+Sources: (MEDIUM) [Berachain GitHub docker, https://github.com/berachain/bera/tree/main/docker]; (MEDIUM) [Phase 4 Technology Current Technical Stack]
+
+Dependency Name: Kubernetes / Helm
+Dependency Type: Infrastructure
+Purpose: Validator node orchestration untuk production deployment (recommended per docs)
+Criticality: Medium
+Status: Live
+Related Entity: tidak diketahui (upstream Kubernetes project)
+Related Technology Component: Current Technical Stack (Phase 4)
+Sources: (MEDIUM) [Berachain Documentation, https://docs.berachain.com/validators/deployment]; (MEDIUM) [Phase 4 Technology Current Technical Stack]
+
+Dependency Name: Prometheus / Grafana
+Dependency Type: Infrastructure / Data Provider
+Purpose: Monitoring dan alerting validator nodes
+Criticality: Medium
+Status: Live
+Related Entity: tidak diketahui (upstream Prometheus/Grafana projects)
+Related Technology Component: Current Technical Stack (Phase 4)
+Sources: (MEDIUM) [Berachain Documentation, https://docs.berachain.com/validators/monitoring]; (MEDIUM) [Phase 4 Technology Current Technical Stack]
+
+## Major Integrations
+
+Integration Name: BEX (Native DEX/AMM)
+Integrated With: Berachain Mainnet
+Purpose: Automated Market Maker dengan concentrated liquidity (CLMM) dan stable swap; sumber utama BGT emission melalui PoL; liquidity provider menerima BGT
+Status: Live
+Related Historical Event ID: EV-008 (Deployment Aplikasi Native), EV-016 (BGT Emission Activation)
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/bex]; (HIGH) [BEX App, https://bex.berachain.com]; (HIGH) [Phase 3 EV-008, EV-016]
+
+Integration Name: Bend (Native Lending Protocol)
+Integrated With: Berachain Mainnet
+Purpose: Over-collateralized lending/borrowing market; HONEY sebagai primary borrow asset; integrasi dengan BGT emission
+Status: Live
+Related Historical Event ID: EV-008 (Deployment Aplikasi Native)
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/bend]; (HIGH) [Bend App, https://bend.berachain.com]; (HIGH) [Phase 3 EV-008]
+
+Integration Name: Berps (Native Perpetuals Exchange)
+Integrated With: Berachain Mainnet
+Purpose: Perpetual futures trading dengan vault-based liquidity dari BEX; leverage hingga 50x; funding rate mechanism
+Status: Live
+Related Historical Event ID: EV-008 (Deployment Aplikasi Native)
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/berps]; (HIGH) [Berps App, https://berps.berachain.com]; (HIGH) [Phase 3 EV-008]
+
+Integration Name: HONEY Stablecoin
+Integrated With: Berachain Mainnet
+Purpose: Soft-pegged USD stablecoin native; mint/burn melalui collateral di Bend dan BEX; digunakan sebagai base pair dan settlement asset
+Status: Live
+Related Historical Event ID: EV-015 (Peluncuran HONEY Stablecoin di Mainnet)
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/honey]; (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (HIGH) [Phase 3 EV-015]
+
+Integration Name: IBC Channels (Osmosis, Celestia, dll)
+Integrated With: Cosmos Ecosystem Chains
+Purpose: Cross-chain asset transfer live; composability dengan ekosistem Cosmos; relayer infrastructure operational
+Status: Live
+Related Historical Event ID: EV-014 (Integrasi IBC di Mainnet)
+Sources: (MEDIUM) [Berachain Documentation, https://docs.berachain.com/learn/ibc]; (HIGH) [IBC Protocol, https://ibc.cosmos.network]; (HIGH) [Phase 3 EV-014]
+
+Integration Name: Hardhat / Foundry Support
+Integrated With: Ethereum Developer Tooling
+Purpose: Smart contract development, testing, deployment menggunakan standard Ethereum tooling; EVM-equivalent compatibility
+Status: Live
+Related Historical Event ID: EV-018 (Pertumbuhan Ekosistem: Integrasi Tooling)
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/develop/hardhat]; (HIGH) [Berachain Documentation, https://docs.berachain.com/develop/foundry]; (HIGH) [Phase 3 EV-018]
+
+Integration Name: MetaMask / EVM Wallet Support
+Integrated With: Ethereum Wallet Ecosystem
+Purpose: User onboarding via familiar Ethereum wallet interface; JSON-RPC kompatibel Ethereum standard
+Status: Live
+Related Historical Event ID: EV-018 (Pertumbuhan Ekosistem: Integrasi Tooling)
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/develop/rpc]; (HIGH) [Phase 3 EV-018]; (HIGH) [Phase 4 Technology Execution Environment]
+
+Integration Name: CosmWasm (Optional)
+Integrated With: Cosmos SDK WASM Platform
+Purpose: Smart contracting platform untuk WASM contracts (jika digunakan untuk non-EVM modules)
+Status: Planned / Optional
+Related Historical Event ID: tidak diketahui
+Sources: (MEDIUM) [CosmWasm Documentation, https://cosmwasm.com]; (MEDIUM) [Berachain Documentation, https://docs.berachain.com/develop/cosmwasm]; (MEDIUM) [Phase 4 Technology Development Framework]
+
+Integration Name: Berascan Block Explorer
+Integrated With: Berachain Mainnet
+Purpose: Block explorer resmi untuk transaksi, blok, token, validator, contract verification, analytics on-chain
+Status: Live
+Related Historical Event ID: EV-010 (Peluncuran Berascan Block Explorer Resmi)
+Sources: (HIGH) [Berascan, https://berascan.com]; (HIGH) [Berachain Documentation, https://docs.berachain.com/tools/berascan]; (HIGH) [Phase 3 EV-010]
+
+## Infrastructure Providers
+
+Provider: Berascan
+Service: Block Explorer / Indexer / Analytics
+Criticality: Critical
+Status: Live
+Sources: (HIGH) [Berascan, https://berascan.com]; (HIGH) [Berachain Documentation, https://docs.berachain.com/tools/berascan]; (HIGH) [Phase 2 Entity Berascan]
+
+Provider: Berachain GitHub Repository
+Service: Source Code Hosting / CI/CD / Collaboration
+Criticality: Medium
+Status: Live
+Sources: (HIGH) [GitHub Berachain, https://github.com/berachain]; (HIGH) [Phase 2 Entity Berachain GitHub Repository]
+
+Provider: Discord (discord.gg/berachain)
+Service: Community Coordination / Developer Support / Validator Coordination
+Criticality: Medium
+Status: Live
+Sources: (HIGH) [Discord Berachain, https://discord.gg/berachain]; (HIGH) [Phase 2 Entity Berachain Discord Community]
+
+Provider: Twitter/X (@berachain)
+Service: Official Announcements / Protocol Updates / Community Communication
+Criticality: Medium
+Status: Live
+Sources: (HIGH) [X/Twitter Berachain, https://x.com/berachain]; (HIGH) [Phase 2 Entity Berachain Twitter/X]
+
+Provider: Telegram (@berachainofficial)
+Service: Community Discussion / User Support
+Criticality: Low
+Status: Live
+Sources: (MEDIUM) [Telegram Berachain, https://t.me/berachainofficial]; (LOW) [Phase 2 Entity Berachain Telegram]
+
+Provider: RPC Node Operators (Unidentified Specific Providers)
+Service: JSON-RPC Endpoints / Archive Nodes / Validator Nodes
+Criticality: High
+Status: Live
+Sources: (MEDIUM) [Berachain Documentation, https://docs.berachain.com/develop/rpc] — docs mention public RPC endpoints tapi tidak list provider spesifik; (LOW) [Phase 4 Technology Execution Environment] — RPC endpoints kompatibel Ethereum standard
+
+Provider: Validator Operators (100 Active Validators)
+Service: Consensus Participation / Block Production / Network Security
+Criticality: Critical
+Status: Live
+Sources: (MEDIUM) [Berachain Documentation, https://docs.berachain.com/validators] — 100 validator aktif di mainnet genesis; (HIGH) [Phase 4 Technology Consensus Mechanism]
+
+Provider: Relayer Operators (IBC)
+Service: IBC Packet Relaying / Cross-chain Liveness
+Criticality: High
+Status: Live
+Sources: (MEDIUM) [IBC Protocol, https://ibc.cosmos.network]; (MEDIUM) [Berachain Documentation, https://docs.berachain.com/learn/ibc]; (MEDIUM) [Phase 4 Technology Known Technical Limitations]
+
+## Exchange Ecosystem
+
+Exchange: BEX (Native DEX)
+Listing Status: Live
+Spot: Yes (BERA, BGT, HONEY, wrapped assets, IBC assets)
+Perpetual: No (separate app Berps)
+OTC: tidak diketahui
+Launchpool: tidak diketahui
+Status: Live
+Sources: (HIGH) [BEX App, https://bex.berachain.com]; (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/bex]; (HIGH) [Phase 3 EV-008, EV-012]
+
+Exchange: Centralized Exchanges (CEX) — Specific Names Unidentified
+Listing Status: Live (post-TGE 2025-02-06)
+Spot: Yes (BERA trading pairs)
+Perpetual: tidak diketahui
+OTC: tidak diketahui
+Launchpool: tidak diketahui
+Status: Ongoing
+Sources: (HIGH) [Phase 3 EV-012 Listing BERA di CEX dan DEX]; (HIGH) [Berachain Official Website, https://berachain.com] — announcement TGE mention listing tapi tidak list nama CEX spesifik; (LOW) [CoinGecko / CoinMarketCap / DefiLlama] — perlu verifikasi listing aktual
+
+Exchange: Berps (Native Perpetuals)
+Listing Status: Live
+Spot: No
+Perpetual: Yes (BTC, ETH, BERA, HONEY pairs dengan leverage hingga 50x)
+OTC: tidak diketahui
+Launchpool: tidak diketahui
+Status: Live
+Sources: (HIGH) [Berps App, https://berps.berachain.com]; (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/berps]; (HIGH) [Phase 3 EV-008]
+
+## Wallet Ecosystem
+
+Wallet: MetaMask
+Support Type: Full EVM Support (Browser Extension, Mobile, Snap)
+Status: Live
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/develop/rpc] — JSON-RPC kompatibel Ethereum standard; (HIGH) [Phase 4 Technology Execution Environment]; (HIGH) [Ethereum Wallet Ecosystem standard compatibility]
+
+Wallet: Rabby Wallet
+Support Type: Full EVM Support (Browser Extension)
+Status: Live (inferred from EVM compatibility)
+Sources: (MEDIUM) [Rabby Wallet Documentation, https://rabby.io] — supports custom EVM chains; (MEDIUM) [Phase 4 Technology Execution Environment] — EVM-equivalent implies Rabby support
+
+Wallet: Keplr Wallet
+Support Type: Cosmos/IBC Support (Browser Extension, Mobile)
+Status: Live (inferred from IBC compatibility)
+Sources: (MEDIUM) [Keplr Wallet, https://keplr.app] — supports IBC chains; (MEDIUM) [Phase 4 Technology Core Components - IBC Module]; (LOW) [Berachain Documentation, https://docs.berachain.com/learn/ibc] — tidak explicitly documented
+
+Wallet: Leap Wallet
+Support Type: Cosmos/IBC Support (Browser Extension, Mobile)
+Status: Live (inferred from IBC compatibility)
+Sources: (MEDIUM) [Leap Wallet, https://www.leapwallet.io] — supports Cosmos ecosystem; (LOW) [Phase 4 Technology Core Components - IBC Module]
+
+Wallet: Cosmos Station / Other Cosmos Wallets
+Support Type: Cosmos/IBC Support
+Status: Planned / Inferred
+Sources: (LOW) [Phase 4 Technology Core Components - IBC Module]; (LOW) [IBC Protocol, https://ibc.cosmos.network] — standard IBC wallet support
+
+Wallet: Hardware Wallets (Ledger, Trezor)
+Support Type: EVM Transaction Signing / Cosmos App (Ledger)
+Status: Live (Ledger Ethereum app untuk EVM; Ledger Cosmos app untuk IBC)
+Sources: (HIGH) [Ledger Support, https://support.ledger.com] — Ethereum app + Cosmos app; (MEDIUM) [Phase 4 Technology Execution Environment + IBC Module]
+
+## Developer Ecosystem
+
+SDK: Berachain TypeScript/JavaScript SDK
+API: JSON-RPC (Ethereum compatible: eth_, net_, web3_, txpool_, debug_, trace_ namespaces)
+Developer Tools: Hardhat, Foundry, Ignite CLI (formerly Starport)
+Open Source Repository: https://github.com/berachain/bera (core protocol, contracts, SDK, tooling)
+Developer Portal: https://docs.berachain.com/develop
+Hackathon: tidak diketahui (tidak ditemukan hackathon resmi tercatat di Phase 1-6)
+Grant Program: tidak diketahui (tidak ditemukan grants program resmi di Phase 5 Financial; Phase 4 docs tidak mention)
+Sources: (HIGH) [Berachain GitHub SDK, https://github.com/berachain/bera/tree/main/sdk]; (HIGH) [Berachain Documentation Develop, https://docs.berachain.com/develop]; (HIGH) [Berachain Documentation Hardhat, https://docs.berachain.com/develop/hardhat]; (HIGH) [Berachain Documentation Foundry, https://docs.berachain.com/develop/foundry]; (HIGH) [Berachain Documentation RPC, https://docs.berachain.com/develop/rpc]; (MEDIUM) [Ignite CLI, https://ignite.com/cli]; (LOW) [Phase 5 Financial - no grants program identified]; (LOW) [Phase 3 EV-018 - ecosystem growth mentions tooling integration tapi tidak grants/hackathon]
+
+## Applications
+
+Application: BEX
+Category: DEX / AMM
+Relationship: Native Application (Core DeFi Primitive)
+Status: Live
+Sources: (HIGH) [BEX App, https://bex.berachain.com]; (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/bex]; (HIGH) [Phase 2 Entity BEX]; (HIGH) [Phase 3 EV-008, EV-016]
+
+Application: Bend
+Category: Lending / Borrowing
+Relationship: Native Application (Core DeFi Primitive)
+Status: Live
+Sources: (HIGH) [Bend App, https://bend.berachain.com]; (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/bend]; (HIGH) [Phase 2 Entity Bend]; (HIGH) [Phase 3 EV-008]
+
+Application: Berps
+Category: Perpetual Futures Exchange
+Relationship: Native Application (Core DeFi Primitive)
+Status: Live
+Sources: (HIGH) [Berps App, https://berps.berachain.com]; (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/berps]; (HIGH) [Phase 2 Entity Berps]; (HIGH) [Phase 3 EV-008]
+
+Application: HONEY
+Category: Stablecoin
+Relationship: Native Protocol (Core DeFi Primitive)
+Status: Live
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/honey]; (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (HIGH) [Phase 2 Entity HONEY]; (HIGH) [Phase 3 EV-015]
+
+Application: BGT (Berachain Governance Token)
+Category: Governance Token (Soulbound)
+Relationship: Native Protocol (Consensus/Governance Primitive)
+Status: Live
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/bgt]; (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (HIGH) [Phase 2 Entity BGT]; (HIGH) [Phase 3 EV-016, EV-017]
+
+Application: BERA (Berachain Gas Token)
+Category: Gas Token / Staking Token
+Relationship: Native Protocol (Consensus/Economic Primitive)
+Status: Live (since TGE 2025-02-06)
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/bera]; (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (HIGH) [Phase 2 Entity BERA]; (HIGH) [Phase 3 EV-011, EV-012]
+
+Application: Berascan
+Category: Block Explorer / Analytics
+Relationship: Infrastructure Application (Official Explorer)
+Status: Live
+Sources: (HIGH) [Berascan, https://berascan.com]; (HIGH) [Berachain Documentation, https://docs.berachain.com/tools/berascan]; (HIGH) [Phase 2 Entity Berascan]; (HIGH) [Phase 3 EV-010]
+
+Application: External DeFi Protocols (Unidentified Specific Protocols)
+Category: DeFi / Infrastructure / Tooling
+Relationship: External Integration (EVM-compatible deployments)
+Status: Ongoing
+Sources: (MEDIUM) [Phase 3 EV-018 Pertumbuhan Ekosistem: Integrasi Protokol Eksternal]; (MEDIUM) [Berachain Documentation, https://docs.berachain.com] — docs mention ecosystem growth tapi tidak list protokol spesifik
+
+## Governance Ecosystem
+
+Foundation: Berachain Foundation
+Role: Legal entity (Cayman Islands) mengelola treasury, pengembangan protokol, governance ekosistem; pengawas peluncuran mainnet dan TGE
+Status: Live
+Sources: (HIGH) [Berachain Official Website, https://berachain.com]; (MEDIUM) [Berachain Documentation, https://docs.berachain.com]; (HIGH) [Phase 2 Entity Berachain Foundation]
+
+DAO: Tidak teridentifikasi DAO legal wrapper terpisah dari Foundation
+Role: Governance on-chain dilakukan via BGT token voting; tidak ada DAO entity terpisah tercatat di Phase 2
+Status: N/A
+Sources: (HIGH) [Phase 2 Entity List - no DAO entity]; (HIGH) [Phase 4 Technology Security Model - BGT governance]; (HIGH) [Phase 6 Token Governance - on-chain BGT voting]
+
+Council: Tidak teridentifikasi council terpisah
+Role: Governance proposals diajukan dan divote oleh BGT holders langsung; validator tidak voting atas nama delegator
+Status: N/A
+Sources: (HIGH) [Phase 6 Token Governance - BGT holder vote langsung]; (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+
+Committee: Tidak teridentifikasi committee resmi
+Role: Parameter changes, fee switch, emission rates, software upgrades via BGT-weighted voting
+Status: N/A
+Sources: (HIGH) [Phase 6 Token Governance - proposal types]; (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/governance]
+
+Validator Group: 100 Active Validators (Mainnet Genesis Set)
+Role: Block production, consensus participation, PoL weight = BERA stake + delegated BGT; slashing pada BERA stake
+Status: Live
+Sources: (MEDIUM) [Berachain Documentation, https://docs.berachain.com/validators] — 100 validator aktif; (HIGH) [Phase 4 Technology Consensus Mechanism]; (HIGH) [Phase 3 EV-007 Mainnet Genesis]
+
+## Ecosystem Risks
+
+Risk: Single Consensus Engine Dependency (CometBFT)
+Type: Chain Dependency / Centralization Risk
+Description: Berachain sepenuhnya bergantung pada CometBFT (fork Tendermint) untuk consensus; bug atau vulnerability di CometBFT upstream mempengaruhi keseluruhan jaringan; tidak ada alternative consensus implementation
+Sources: (HIGH) [Phase 4 Technology Consensus Mechanism]; (HIGH) [CometBFT Documentation, https://cometbft.com]; (HIGH) [Phase 4 Technology Core Components - CometBFT Consensus Engine]
+
+Risk: Single Application Framework Dependency (Cosmos SDK)
+Type: Chain Dependency / Centralization Risk
+Description: Berachain dibangun di atas Cosmos SDK v0.50+; upgrade atau breaking changes di Cosmos SDK upstream memerlukan migrasi koordinat; tidak ada alternative framework
+Sources: (HIGH) [Phase 4 Technology Core Components - Cosmos SDK Application Framework]; (HIGH) [Cosmos SDK Documentation, https://docs.cosmos.network]; (HIGH) [Berachain GitHub go.mod, https://github.com/berachain/bera/blob/main/go.mod]
+
+Risk: IBC Relay Dependency
+Type: Bridge Dependency / Centralization Risk
+Description: Cross-chain transfer via IBC memerlukan relayer infrastructure; liveness bergantung pada relayer availability (permissionless tapi butuh incentive); tidak ada native relayer incentivization tercatat
+Sources: (MEDIUM) [Phase 4 Technology Known Technical Limitations - IBC relay dependency]; (MEDIUM) [IBC Protocol, https://ibc.cosmos.network]; (MEDIUM) [Berachain Documentation, https://docs.berachain.com/learn/ibc]
+
+Risk: Oracle Dependency (Unidentified Provider)
+Type: Oracle Dependency
+Description: Bend (liquidation), Berps (funding rate/mark price), HONEY (peg monitoring) memerlukan price feeds; oracle provider tidak diungkapkan publik; single point of failure jika centralized oracle
+Sources: (LOW) [Phase 4 Technology Known Technical Limitations - No native oracle]; (LOW) [Berachain Documentation, https://docs.berachain.com/dapps] — oracle provider tidak terdokumentasi
+
+Risk: Validator Set Centralization (High Hardware Requirements)
+Type: Centralization Risk
+Description: 100 validator cap dengan hardware requirements tinggi (64GB RAM, 4TB NVMe, 10Gbps network per docs) mungkin mengonsentrasi stake ke operator besar; geographic distribution tidak transparan
+Sources: (MEDIUM) [Berachain Documentation, https://docs.berachain.com/validators/requirements]; (MEDIUM) [Phase 4 Technology Known Technical Limitations - Validator set centralization risk]
+
+Risk: GitHub Hosting Dependency
+Type: Infrastructure Dependency
+Description: Repository utama di github.com/berachain; bergantung pada GitHub availability dan policies; tidak ada mirror resmi tercatat
+Sources: (MEDIUM) [GitHub Berachain, https://github.com/berachain]; (MEDIUM) [Phase 2 Entity Berachain GitHub Repository]
+
+Risk: Discord/Twitter/Telegram Centralized Communication
+Type: Infrastructure Dependency
+Description: Komunitas resmi bergantung pada platform terpusat (Discord, Twitter/X, Telegram) untuk koordinasi, announcements, support; platform risk (deplatforming, policy changes)
+Sources: (MEDIUM) [Discord Berachain, https://discord.gg/berachain]; (MEDIUM) [X/Twitter Berachain, https://x.com/berachain]; (MEDIUM) [Telegram Berachain, https://t.me/berachainofficial]; (HIGH) [Phase 2 Entities]
+
+Risk: BGT Non-Transferable Design Limits Composability
+Type: Chain Dependency / Protocol Design Risk
+Description: BGT soulbound (non-transferable) mencegah secondary market tapi membatasi composability DeFi (tidak bisa dipakai collateral di protokol lain tanpa wrapper); design choice dengan trade-off
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/bgt]; (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (HIGH) [Phase 4 Technology Known Technical Limitations]
+
+Risk: HONEY Soft-Peg Without Hard Reserves
+Type: Protocol Design Risk
+Description: HONEY soft-peg via arbitrage dan collateralization di Bend/BEX; tidak ada hard peg mechanism (seperti USDC reserves); risiko depeg di stress market
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/honey]; (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (HIGH) [Phase 4 Technology Known Technical Limitations]
+
+## Official Ecosystem Resources
+
+Official Documentation: https://docs.berachain.com
+Developer Portal: https://docs.berachain.com/develop
+GitHub: https://github.com/berachain
+Partner Documentation: https://docs.berachain.com/learn/ibc (IBC), https://docs.cosmos.network (Cosmos SDK), https://cometbft.com (CometBFT)
+Grant Program: tidak tersedia (tidak ditemukan grants program resmi)
+Ecosystem Dashboard: https://berascan.com (block explorer + analytics), https://bex.berachain.com (DEX analytics), https://bend.berachain.com (lending analytics), https://berps.berachain.com (perpetuals analytics)
+
+## RINGKASAN
+
+Primary Ecosystem: Cosmos SDK / CometBFT / IBC (Core Infrastructure) + Ethereum EVM (Execution Compatibility)
+Supported Chains: Berachain Mainnet (primary), Ethereum (EVM tooling/wallet compatibility), Cosmos Ecosystem (IBC: Osmosis, Celestia, dll)
+External Dependencies: 11 (Cosmos SDK, CometBFT, IBC, Ethereum EVM, Berachain Foundation, Oracle Provider unidentified, IBC Relayers, GitHub, Docker, Kubernetes, Prometheus/Grafana)
+Major Integrations: 10 (BEX, Bend, Berps, HONEY, IBC Channels, Hardhat/Foundry, MetaMask, CosmWasm optional, Berascan, CEX listings)
+Infrastructure Providers: 8 (Berascan, GitHub, Discord, Twitter/X, Telegram, RPC Node Operators unidentified, 100 Validators, IBC Relayers)
+Developer Programs: SDK + API + Tools (Hardhat, Foundry, Ignite CLI) live; Hackathon dan Grant Program tidak teridentifikasi
+Applications: 7 Native (BEX, Bend, Berps, HONEY, BGT, BERA, Berascan) + External DeFi protocols unidentified
+
+## Open Threads
+
+- Oracle provider resmi untuk Bend, Berps, HONEY — tidak terdokumentasi di docs.berachain.com, whitepaper, atau GitHub; perlu konfirmasi ke tim atau audit smart contract Bend/Berps untuk melihat price feed address
+- Daftar CEX spesifik yang listing BERA post-TGE 2025-02-06 — Phase 3 EV-012 mention "CEX/DEX listing dimulai" tapi tidak nama exchange; perlu cek CoinGecko/CoinMarketCap/DefiLlama listing data
+- Wallet support resmi terverifikasi (Keplr, Leap, Rabby, dll) — Phase 4 mention EVM/IBC compatibility tapi tidak ada halaman "Supported Wallets" resmi; perlu cek docs.berachain.com/wallets atau announcement resmi
+- RPC node provider resmi/public endpoint list — docs mention JSON-RPC endpoints tapi tidak list provider (QuickNode, Ankr, Chainstack, dll); perlu cek docs.berachain.com/develop/rpc untuk daftar lengkap
+- Grants program / hackathon history — Phase 5 Financial mention "Grants: tidak diketahui"; Phase 3 EV-018 mention ecosystem growth tapi tidak detail grants; perlu cari blog post "Berachain Grants" atau "Ecosystem Fund"
+- IBC channels aktif dan relayer operator identitas — docs mention IBC live tapi tidak ada daftar channel (channel-id, counterparty chain, relayer address); perlu query on-chain via berascan atau mapofzones
+- Validator set transparency: geografis distribution, entity identity, commission rates — docs mention 100 validator tapi tidak ada dashboard publik; perlu cek berascan validator page atau governance forum
+- External DeFi protocols terintegrasi (non-native) — Phase 3 EV-018 mention "integrasi protokol eksternal" tapi tidak list nama; perlu cak browsing DefiLlama Berachain ecosystem page atau docs.berachain.com/ecosystem
+- CosmWasm integration status — Phase 4 Technology mention "optional" tapi tidak ada contract WASM deployed tercatat; perlu cek github.com/berachain untuk CosmWasm contracts
+- Bug bounty program (Immunefi, HackerOne, native) — Phase 4 Security Model mention "tidak diketahui"; perlu cek immunefi.com/berachain atau hackerone.com/berachain
+- Bridge non-IBC (Ethereum, Bitcoin, Solana) — apakah hanya IBC atau ada Wormhole/LayerZero/Axelar integration; tidak terdokumentasi di Phase 1-6
+- Legal wrapper untuk DAO/governance terpisah dari Foundation — Phase 2 tidak ada DAO entity; Phase 6 governance mention on-chain voting tapi legal structure unclear
+- Indexer infrastructure detail: berascan menggunakan custom indexer atau The Graph/Subgraph — arsitektur indexer tidak terdokumentasi
+- MEV protection status: PBS, encrypted mempool, atau MEV mitigation native — Phase 4 Known Limitations tidak mention; perlu cek validator docs atau consensus specs
+- Light client support untuk trust-minimized bridging ke non-Cosmos chain — tidak terdokumentasi
+- Cross-chain BERA/BGT/HONEY representation (wrapped versions di Ethereum, Solana, dll) — tidak terdokumentasi

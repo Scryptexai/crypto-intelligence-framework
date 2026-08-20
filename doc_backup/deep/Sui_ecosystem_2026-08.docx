@@ -1,0 +1,593 @@
+PROJECT: Sui
+
+## Ecosystem Position
+
+Kategori Ekosistem: Layer 1 Blockchain
+Primary Sector: DeFi, Liquidity, Stablecoin, Smart Contract Platform
+Secondary Sector: Gaming, Consumer Apps, Infrastructure, Move Developer Ecosystem
+Primary Chain: Sui Network (Mainnet)
+Supported Chains: Sui Network (Mainnet) (native); Ethereum (via Sui Bridge Native & Wormhole); Solana (via Wormhole); BNB Chain (via Wormhole); Polygon (via Wormhole); Arbitrum (via Wormhole)
+Sources: https://docs.sui.io/concepts/architecture
+Sources: https://wormhole.com/blog/wormhole-sui
+Sources: https://blog.sui.io/sui-bridge-mainnet/
+Sources: https://defillama.com/chain/Sui
+
+## External Dependencies
+
+Dependency Name: Ethereum Network
+Dependency Type: Chain
+Purpose: Destinasi utama bridge native Sui; transfer aset SUI/ETH/ERC20 antara Sui dan Ethereum; liquiditas sumber untuk DeFi Sui
+Criticality: High
+Status: Live
+Related Entity: Sui Bridge (Native)
+Related Technology Component: Sui Bridge (Native)
+Sources: https://blog.sui.io/sui-bridge-mainnet/
+Sources: https://docs.sui.io/guides/operator/bridge
+
+Dependency Name: Wormhole Bridge Protocol
+Dependency Type: Bridge
+Purpose: Transfer token dan message passing antar-chain (Ethereum, Solana, BSC, Polygon, dll) ke dan dari Sui; telah beroperasi sebelum bridge native diluncurkan
+Criticality: Medium
+Status: Live
+Related Entity: Wormhole (Sui Bridge)
+Related Technology Component: Sui Network (Mainnet)
+Sources: https://wormhole.com/blog/wormhole-sui
+Sources: https://docs.wormhole.com/wormhole/integrations/sui
+
+Dependency Name: Circle USDC (via CCTP)
+Dependency Type: Stablecoin
+Purpose: USDC native di Sui untuk liquidity DeFi, collateral lending, dan stablecoin pair trading
+Criticality: Critical
+Status: Live
+Related Entity: USDC (Circle) on Sui
+Related Technology Component: Sui Network (Mainnet)
+Sources: https://www.circle.com/en/usdc-on-sui
+Sources: https://blog.sui.io/usdc-launches-on-sui/
+
+Dependency Name: Tether USDT
+Dependency Type: Stablecoin
+Purpose: USDT native di Sui untuk pasangan trading dan collateral; menambah likuiditas stablecoin ekosistem
+Criticality: High
+Status: Live
+Related Entity: USDT (Tether) on Sui
+Related Technology Component: Sui Network (Mainnet)
+Sources: https://tether.to/tether-usdt-launches-on-sui/
+Sources: https://blog.sui.io/usdt-on-sui/
+
+Dependency Name: zkLogin OAuth Providers (Google, Twitch, Facebook, Apple)
+Dependency Type: Service
+Purpose: Authentication identitas Web2 untuk membuat alamat Sui tanpa seed phrase; aplikasi consumer memakai OAuth login
+Criticality: High
+Status: Live
+Related Entity: zkLogin
+Related Technology Component: zkLogin
+Sources: https://docs.sui.io/guides/developer/app-development/zklogin
+Sources: https://blog.sui.io/zklogin-mainnet/
+
+Dependency Name: Salt Service (Shinami & Mysten Labs centralized)
+Dependency Type: Infrastructure
+Purpose: Menyediakan salt deterministik untuk zkLogin key derivation; tanpa salt, user tidak bisa restore wallet zkLogin
+Criticality: High
+Status: Live
+Related Entity: Shinami
+Related Technology Component: zkLogin
+Sources: https://docs.sui.io/guides/developer/app-development/zklogin
+Sources: https://docs.shinami.com/zkLogin/salt-service
+
+Dependency Name: Move Language Compiler & Prover
+Dependency Type: Development Tooling
+Purpose: Kompilasi dan formal verification smart contract Sui sebelum dipublish ke mainnet
+Criticality: Critical
+Status: Live
+Related Entity: Move Language / Move VM
+Related Technology Component: Move VM
+Sources: https://move-language.github.io/move/prover/
+Sources: https://docs.sui.io/guides/developer/getting-started/move-overview
+
+Dependency Name: libp2p Networking Stack
+Dependency Type: Infrastructure
+Purpose: Jaringan P2P untuk komunikasi antar-validator dan node full
+Criticality: Critical
+Status: Live
+Related Entity: Sui Network (Mainnet)
+Related Technology Component: Sui Validator Node
+Sources: https://github.com/MystenLabs/sui/tree/main/crates/sui-network
+Sources: https://docs.sui.io/guides/operator/running-a-node
+
+Dependency Name: RocksDB Storage Engine
+Dependency Type: Infrastructure
+Purpose: Persistence layer untuk state ledger validator dan full node
+Criticality: High
+Status: Live
+Related Entity: Sui Network (Mainnet)
+Related Technology Component: Sui Validator Node
+Sources: https://docs.sui.io/guides/operator/running-a-node#storage
+Sources: https://github.com/MystenLabs/sui/blob/main/crates/sui-storage
+
+Dependency Name: Cloud Provider Infrastructure (AWS, GCP, Azure for validator nodes)
+Dependency Type: Cloud
+Purpose: Mayoritas validator mainnet dijalankan di cloud providers; tidak ada cloud-native dependency tapi deployment bergantung
+Criticality: Medium
+Status: Live
+Related Entity: Sui Validators (Validator Set)
+Related Technology Component: Sui Validator Node
+Sources: https://docs.sui.io/guides/operator/running-a-node
+Sources: https://explorer.sui.io/validators
+
+Dependency Name: a16z Crypto
+Dependency Type: Investor
+Purpose: Lead investor Series A & B Mysten Labs; pendanaan pengembangan protokol Sui
+Criticality: Medium
+Status: Live
+Related Entity: a16z (Andreessen Horowitz)
+Related Technology Component: Tidak ada (equity funding)
+Sources: https://a16zcrypto.com/portfolio/sui/
+Sources: https://techcrunch.com/2022/09/08/mysten-labs-raises-300m-series-b/
+
+Dependency Name: Coinbase Ventures
+Dependency Type: Investor
+Purpose: Investor strategis Series A & B; integrasi listing Coinbase dan USDC
+Criticality: Medium
+Status: Live
+Related Entity: Coinbase Ventures
+Related Technology Component: Tidak ada (equity + listing partnership)
+Sources: https://www.coinbase.com/ventures/portfolio
+Sources: https://www.coinbase.com/en/price/sui
+
+Dependency Name: Binance Labs
+Dependency Type: Investor
+Purpose: Investor strategis Series A & B; integrasi listing Binance dan BNB Chain bridge
+Criticality: Medium
+Status: Live
+Related Entity: Binance Labs
+Related Technology Component: Tidak ada (equity + exchange listing)
+Sources: https://labs.binance.com/portfolio
+Sources: https://www.binance.com/en/blog/143401324684903493
+
+Dependency Name: Jump Crypto
+Dependency Type: Investor / Market Maker
+Purpose: Investor Series B; menyediakan liquidity dan trading infrastructure untuk SUI
+Criticality: Low
+Status: Live
+Related Entity: Jump Crypto
+Related Technology Component: Tidak ada (equity + liquidity)
+Sources: https://jumpcrypto.com/portfolio/
+Sources: https://techcrunch.com/2022/09/08/mysten-labs-raises-300m-series-b/
+
+Dependency Name: Franklin Templeton
+Dependency Type: Investor
+Purpose: Investor institusional Series B; menandakan minat tradfi pada ekosistem Sui
+Criticality: Low
+Status: Live
+Related Entity: Franklin Templeton
+Related Technology Component: Tidak ada (equity)
+Sources: https://www.franklintempleton.com/en-us/investments/digital-assets
+Sources: https://techcrunch.com/2022/09/08/mysten-labs-raises-300m-series-b/
+
+Dependency Name: Circle Ventures
+Dependency Type: Investor / Stablecoin Partner
+Purpose: Investor Series B; kemitraan USDC native via CCTP
+Criticality: High
+Status: Live
+Related Entity: Circle Ventures
+Related Technology Component: USDC (Circle) on Sui
+Sources: https://www.circle.com/blog/circle-ventures-invests-in-mysten-labs
+Sources: https://www.circle.com/en/usdc-on-sui
+
+Dependency Name: CertiK / OtterSec / Trail of Bits / Zellic
+Dependency Type: Security
+Purpose: Audit keamanan protokol core, Move VM, dan aplikasi ekosistem sebelum deploy mainnet
+Criticality: High
+Status: Live
+Related Entity: CertiK; OtterSec; Trail of Bits; Zellic
+Related Technology Component: Sui Network (Mainnet); Move VM
+Sources: https://www.certik.com/projects/sui
+Sources: https://osec.io/blog/
+Sources: https://www.trailofbits.com/
+Sources: https://zellic.io/blog/
+
+## Major Integrations
+
+Integration Name: USDC Native via Circle CCTP
+Integrated With: USDC (Circle) on Sui; Sui Network (Mainnet)
+Purpose: Mint/burn USDC native di Sui tanpa bridge tradisional; stablecoin regulated tersedia on-chain
+Status: Live
+Related Historical Event ID: EV-017
+Sources: https://www.circle.com/en/usdc-on-sui
+Sources: https://blog.sui.io/usdc-launches-on-sui/
+
+Integration Name: Wormhole Bridge di Sui
+Integrated With: Wormhole (Sui Bridge); Sui Network (Mainnet); Ethereum; Solana; BNB Chain; Polygon
+Purpose: Transfer token dan message passing lintas-chain; interoperabilitas aset
+Status: Live
+Related Historical Event ID: EV-018
+Sources: https://wormhole.com/blog/wormhole-sui
+Sources: https://docs.wormhole.com/wormhole/integrations/sui
+
+Integration Name: Sui Bridge Native (Sui ↔ Ethereum)
+Integrated With: Sui Bridge (Native); Sui Network (Mainnet); Ethereum
+Purpose: Trust-minimized bridge canonical untuk transfer SUI/ETH/ERC20 antara Sui dan Ethereum; dioperasikan validator set Sui
+Status: Live
+Related Historical Event ID: EV-021, EV-023
+Sources: https://blog.sui.io/sui-bridge-mainnet/
+Sources: https://docs.sui.io/guides/operator/bridge
+
+Integration Name: zkLogin OAuth Authentication
+Integrated With: zkLogin; Google; Twitch; Facebook; Apple; Sui Network (Mainnet)
+Purpose: Login via akun Web2 untuk membuat alamat Sui tanpa seed phrase; digunakan aplikasi consumer
+Status: Live
+Related Historical Event ID: EV-019
+Sources: https://docs.sui.io/guides/developer/app-development/zklogin
+Sources: https://blog.sui.io/zklogin-mainnet/
+
+Integration Name: Sponsored Transactions / Gas Station
+Integrated With: Shinami; Mysten Labs; Sui Network (Mainnet)
+Purpose: Aplikasi membayar gas fee user; onboarding gasless untuk aplikasi Web2/Web3
+Status: Live
+Related Historical Event ID: EV-019
+Sources: https://docs.sui.io/concepts/transactions/sponsored-transactions
+Sources: https://docs.shinami.com/gas-station
+
+Integration Name: USDT (Tether) Native di Sui
+Integrated With: USDT (Tether) on Sui; Sui Network (Mainnet); DEX (Cetus, Turbos, Aftermath)
+Purpose: USDT stablecoin tersedia native untuk trading pair dan collateral
+Status: Live
+Related Historical Event ID: EV-026
+Sources: https://tether.to/tether-usdt-launches-on-sui/
+Sources: https://blog.sui.io/usdt-on-sui/
+
+Integration Name: Cetus Protocol (DEX CLMM)
+Integrated With: Cetus Protocol; Sui Network (Mainnet)
+Purpose: Concentrated liquidity AMM; menyediakan liquidity DEX utama ekosistem Sui
+Status: Live
+Related Historical Event ID: EV-013
+Sources: https://cetus.zone/
+Sources: https://defillama.com/protocol/cetus
+
+Integration Name: Navi Protocol (Lending)
+Integrated With: Navi Protocol; Sui Network (Mainnet)
+Purpose: Money market dan lending; SUI dan USDC/USDT sebagai collateral
+Status: Live
+Related Historical Event ID: EV-014
+Sources: https://naviprotocol.io/
+Sources: https://defillama.com/protocol/navi-protocol
+
+Integration Name: Scallop Protocol (Lending)
+Integrated With: Scallop Protocol; Sui Network (Mainnet)
+Purpose: Money market dan lending dengan dynamic interest rate
+Status: Live
+Related Historical Event ID: EV-014
+Sources: https://scallop.io/
+Sources: https://defillama.com/protocol/scallop
+
+Integration Name: Suilend / SpringSui (Liquid Staking & Lending)
+Integrated With: Suilend (SpringSui); Sui Network (Mainnet); Sui Validators
+Purpose: Liquid staking token stSUI; dapat dipakai sebagai collateral di money market
+Status: Live
+Related Historical Event ID: EV-015
+Sources: https://suilend.fi/
+Sources: https://blog.sui.io/spring-sui-liquid-staking/
+
+Integration Name: Haedal Protocol (Liquid Staking)
+Integrated With: Haedal Protocol; Sui Network (Mainnet); Sui Validators
+Purpose: Liquid staking token haSUI; delegasi ke validator terkurasi
+Status: Live
+Related Historical Event ID: EV-016
+Sources: https://haedal.io/
+Sources: https://defillama.com/protocol/haedal
+
+Integration Name: SuiNS (Naming Service)
+Integrated With: SuiNS (Sui Name Service); Sui Network (Mainnet); Sui Wallet; Suiet Wallet
+Purpose: Domain .sui berbasis NFT; reverse resolution dan identitas on-chain terintegrasi wallet & dApp
+Status: Live
+Related Historical Event ID: EV-016
+Sources: https://suins.io/
+Sources: https://blog.sui.io/suins-launch/
+
+Integration Name: Kiosk Standard
+Integrated With: Sui Network (Mainnet); NFT marketplace ekosistem
+Purpose: Standar trading aset NFT tanpa escrow terpercaya; policy-based royalties
+Status: Live
+Related Historical Event ID: EV-019 (kiosk standard disebut di testnet wave 3)
+Sources: https://docs.sui.io/guides/developer/app-development/kiosk
+Sources: https://blog.sui.io/sui-testnet-wave-3/
+
+Integration Name: DeepBook (Central Limit Order Book)
+Integrated With: Sui Network (Mainnet); DEX (Aftermath, Turbos, Cetus)
+Purpose: On-chain CLOB shared liquidity untuk DEX dan perp
+Status: Live
+Related Historical Event ID: Tidak ada event spesifik di Phase 3 (DeepBook live sejak early mainnet)
+Sources: https://deepbook.tech/
+Sources: https://docs.sui.io/concepts/deepbook
+
+Integration Name: SuiPlay0x1 & Playtron OS
+Integrated With: Mysten Labs; Sui Wallet (Official); zkLogin; Sui Community
+Purpose: Handheld gaming device native Web3 dengan integrasi Sui wallet dan game economy
+Status: Planned (pre-order Q1 2025)
+Related Historical Event ID: EV-029
+Sources: https://blog.sui.io/suiplay0x1-announcement/
+Sources: https://playtron.org/
+
+Integration Name: Binance Listing
+Integrated With: Binance; Sui Network (Mainnet)
+Purpose: Listing SUI di Binance spot; liquidity dan akses global
+Status: Live
+Related Historical Event ID: EV-011
+Sources: https://www.binance.com/en/blog/143401324684903493
+Sources: https://www.coingecko.com/en/coins/sui
+
+Integration Name: Coinbase Listing
+Integrated With: Coinbase; Sui Network (Mainnet)
+Purpose: Listing SUI di Coinbase spot; akses pasar AS
+Status: Live
+Related Historical Event ID: EV-011
+Sources: https://www.coinbase.com/en/price/sui
+Sources: https://www.coingecko.com/en/coins/sui
+
+Integration Name: OKX Listing
+Integrated With: OKX; Sui Network (Mainnet)
+Purpose: Listing SUI di OKX spot dan perp
+Status: Live
+Related Historical Event ID: EV-011
+Sources: https://www.okx.com/price/sui-network-sui
+Sources: https://www.coingecko.com/en/coins/sui
+
+Integration Name: Bybit Listing
+Integrated With: Bybit; Sui Network (Mainnet)
+Purpose: Listing SUI di Bybit spot dan perp
+Status: Live
+Related Historical Event ID: EV-011
+Sources: https://www.bybit.com/en-US/price/sui
+Sources: https://www.coingecko.com/en/coins/sui
+
+Integration Name: KuCoin Listing
+Integrated With: KuCoin; Sui Network (Mainnet)
+Purpose: Listing SUI di KuCoin spot
+Status: Live
+Related Historical Event ID: EV-011
+Sources: https://www.kucoin.com/price/SUI
+Sources: https://www.coingecko.com/en/coins/sui
+
+Integration Name: Kraken Listing
+Integrated With: Kraken; Sui Network (Mainnet)
+Purpose: Listing SUI di Kraken spot dan futures
+Status: Live
+Related Historical Event ID: EV-011
+Sources: https://www.kraken.com/prices/sui
+Sources: https://www.coingecko.com/en/coins/sui
+
+Integration Name: Shinami Infrastructure (RPC, Gas Station, Invisible Wallet)
+Integrated With: Shinami; Sui Network (Mainnet)
+Purpose: Managed node service, sponsored transactions API, zkLogin-based embedded wallet
+Status: Live
+Related Historical Event ID: Tidak ada event spesifik di Phase 3; berdiri 2023
+Sources: https://docs.shinami.com/
+Sources: https://shinami.com/
+
+Integration Name: NodeReal MegaNode & Suiscan Indexer
+Integrated With: NodeReal; Sui Network (Mainnet); Suiscan
+Purpose: High-performance RPC endpoints, GraphQL indexer, block explorer alternatif
+Status: Live
+Related Historical Event ID: Tidak ada event spesifik di Phase 3
+Sources: https://nodereal.io/sui/
+Sources: https://suiscan.xyz/
+
+## Infrastructure Providers
+
+Provider: NodeReal
+Service: RPC endpoints, indexer, Suiscan explorer, validator services
+Criticality: High
+Status: Live
+Sources: https://nodereal.io/sui/
+Sources: https://suiscan.xyz/
+
+Provider: Shinami
+Service: Node service (RPC), Gas Station (sponsored transactions), Invisible Wallet (zkLogin-based), salt service
+Criticality: High
+Status: Live
+Sources: https://docs.shinami.com/
+Sources: https://shinami.com/
+
+Provider: Mysten Labs
+Service: Official RPC nodes, Sui Explorer, indexer, Gas Station API, Sui Wallet, developer tools
+Criticality: Critical
+Status: Live
+Sources: https://mystenlabs.com/
+Sources: https://docs.sui.io/
+Sources: https://explorer.sui.io/
+
+Provider: Sui Foundation
+Service: Validator subsidies, grant-funded infrastructure, treasury management
+Criticality: High
+Status: Live
+Sources: https://sui.io/foundation/grants
+Sources: https://sui.io/foundation/treasury
+
+Provider: Sui Validators (Validator Set)
+Service: Konsensus, staking, validator RPC, x-supervisor, bridge operators
+Criticality: Critical
+Status: Live
+Sources: https://explorer.sui.io/validators
+Sources: https://docs.sui.io/concepts/consensus-engine/validators
+
+Provider: Wormhole Foundation
+Service: Guardian set untuk Wormhole bridge; cross-chain messaging validasi
+Criticality: Medium
+Status: Live
+Sources: https://wormhole.com/foundation
+Sources: https://docs.wormhole.com/wormhole/guardians
+
+Provider: OtterSec
+Service: Security audit untuk protokol core dan aplikasi ekosistem
+Criticality: High
+Status: Live
+Sources: https://osec.io/blog/
+Sources: https://osec.io/
+
+Provider: CertiK
+Service: Security audit untuk protokol core dan aplikasi ekosistem
+Criticality: High
+Status: Live
+Sources: https://www.certik.com/projects/sui
+Sources: https://www.certik.com/
+
+Provider: Trail of Bits
+Service: Security audit untuk Move VM, konsensus, kriptografi
+Criticality: High
+Status: Live
+Sources: https://www.trailofbits.com/
+Sources: https://www.trailofbits.com/
+
+Provider: Zellic
+Service: Security audit untuk aplikasi ekosistem (DeFi protocols)
+Criticality: Medium
+Status: Live
+Sources: https://zellic.io/blog/
+Sources: https://zellic.io/
+
+Provider: Google Cloud / AWS / Azure (validator deployment)
+Service: Hosting infrastruktur untuk node validator mainnet
+Criticality: Medium (tidak ada dependency eksklusif; validator independen)
+Status: Live
+Sources: https://docs.sui.io/guides/operator/running-a-node
+Sources: https://explorer.sui.io/validators
+
+## Exchange Ecosystem
+
+Exchange: Binance
+Listing Status: Live
+Spot: Ya
+Perpetual: Ya (SUI USDT perpetual)
+OTC: Tidak
+Launchpool: Tidak
+Status: Live
+Sources: https://www.binance.com/en/blog/143401324684903493
+Sources: https://www.binance.com/en/futures/SUIUSDT
+
+Exchange: Coinbase
+Listing Status: Live
+Spot: Ya
+Perpetual: Tidak
+OTC: Tidak (tidak dikonfirmasi)
+Launchpool: Tidak
+Status: Live
+Sources: https://www.coinbase.com/en/price/sui
+Sources: https://www.coingecko.com/en/coins/sui
+
+Exchange: OKX
+Listing Status: Live
+Spot: Ya
+Perpetual: Ya (SUI USDT perp)
+OTC: Tidak
+Launchpool: Tidak
+Status: Live
+Sources: https://www.okx.com/price/sui-network-sui
+Sources: https://www.coingecko.com/en/coins/sui
+
+Exchange: Bybit
+Listing Status: Live
+Spot: Ya
+Perpetual: Ya (SUI USDT perp)
+OTC: Tidak
+Launchpool: Tidak
+Status: Live
+Sources: https://www.bybit.com/en-US/price/sui
+Sources: https://www.coingecko.com/en/coins/sui
+
+Exchange: KuCoin
+Listing Status: Live
+Spot: Ya
+Perpetual: Ya (SUI USDT perp)
+OTC: Tidak
+Launchpool: Tidak
+Status: Live
+Sources: https://www.kucoin.com/price/SUI
+Sources: https://www.coingecko.com/en/coins/sui
+
+Exchange: Kraken
+Listing Status: Live
+Spot: Ya
+Perpetual: Ya (SUI USD perp)
+OTC: Tidak
+Launchpool: Tidak
+Status: Live
+Sources: https://www.kraken.com/prices/sui
+Sources: https://www.coingecko.com/en/coins/sui
+
+Exchange: Gate.io
+Listing Status: Live
+Spot: Ya
+Perpetual: Ya
+OTC: Tidak
+Launchpool: Tidak
+Status: Live
+Sources: https://www.gate.io/trade/SUI_USDT
+Sources: https://www.coingecko.com/en/coins/sui
+
+Exchange: Upbit
+Listing Status: Live
+Spot: Ya
+Perpetual: Tidak
+OTC: Tidak
+Launchpool: Tidak
+Status: Live
+Sources: https://www.coingecko.com/en/coins/sui
+Sources: https://upbit.com/exchange?code=CRIX.UPBIT.KRW-SUI
+
+Exchange: Bitget
+Listing Status: Live
+Spot: Ya
+Perpetual: Ya
+OTC: Tidak
+Launchpool: Tidak
+Status: Live
+Sources: https://www.bitget.com/price/sui
+Sources: https://www.coingecko.com/en/coins/sui
+
+Exchange: MEXC
+Listing Status: Live
+Spot: Ya
+Perpetual: Ya
+OTC: Tidak
+Launchpool: Tidak
+Status: Live
+Sources: https://www.mexc.com/price/SUI
+Sources: https://www.coingecko.com/en/coins/sui
+
+## Wallet Ecosystem
+
+Wallet: Sui Wallet (Official)
+Support Type: Browser extension; mobile (tidak dikonfirmasi); hardware (Ledger via extension)
+Status: Live
+Sources: https://chromewebstore.google.com/detail/sui-wallet/opcgpfmipidbgpenhmajoajpbobppdil
+Sources: https://github.com/MystenLabs/sui-wallet
+
+Wallet: Suiet Wallet
+Support Type: Browser extension; mobile; dApp browser; NFT gallery
+Status: Live
+Sources: https://suiet.app/
+Sources: https://github.com/Suiet
+
+Wallet: Martian Wallet
+Support Type: Browser extension; mobile; multi-chain (Sui dan Aptos)
+Status: Live
+Sources: https://martianwallet.xyz/
+Sources: https://github.com/martian-labs
+
+Wallet: OneKey Wallet
+Support Type: Browser extension; mobile; hardware (OneKey Pro); multi-chain
+Status: Live
+Sources: https://onekey.so/
+Sources: https://onekey.so/download
+
+Wallet: OKX Wallet
+Support Type: Browser extension; mobile; multi-chain; mendukung Sui
+Status: Live
+Sources: https://www.okx.com/web3
+Sources: https://www.coingecko.com/en/coins/sui
+
+Wallet: Phantom Wallet (Mendukung Sui sejak 2023)
+Support Type: Browser extension; mobile; multi-chain; Sui support
+Status: Live
+Sources: https://phantom.app/
+Sources: https://blog.phantom.app/phantom-now-supports-sui-1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a

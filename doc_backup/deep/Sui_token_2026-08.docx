@@ -1,0 +1,267 @@
+PROJECT: Sui
+
+## Token Information
+
+Official Token Name: Sui
+Symbol: SUI
+Token Standard: Native (Move coin object — 0x2::sui::SUI)
+Blockchain: Sui Network (Mainnet)
+Contract Address: 0x2::sui::SUI (Move package address for SUI coin type)
+Decimals: 9
+Status: Live
+Sources: https://docs.sui.io/concepts/tokenomics/sui-token
+Sources: https://explorer.sui.io/object/0x2
+Sources: https://blog.sui.io/sui-token-economics/
+
+## Supply
+
+Maximum Supply: 10,000,000,000 SUI (10 billion)
+Total Supply: 10,000,000,000 SUI (fixed max supply, minted at genesis)
+Circulating Supply: 2,789,341,234 SUI (per Sui Explorer, Januari 2025)
+Initial Supply: 10,000,000,000 SUI (full supply minted at genesis block)
+Supply Type: Fixed (max supply capped at 10B; no inflationary minting beyond genesis)
+Sources: https://blog.sui.io/sui-token-economics/
+Sources: https://explorer.sui.io/
+Sources: https://docs.sui.io/concepts/tokenomics/sui-token
+
+## Distribution
+
+Community: 50% (5,000,000,000 SUI) — Community Reserve managed by Sui Foundation
+Team: 20% (2,000,000,000 SUI) — Early Contributors (Mysten Labs employees, advisors)
+Investors: 14% (1,400,000,000 SUI) — Series A & B investors (a16z, Coinbase Ventures, Binance Labs, Jump Crypto, Franklin Templeton, Circle Ventures, others)
+Foundation: 10% (1,000,000,000 SUI) — Mysten Labs Treasury
+Treasury: Included in Foundation/Community Reserve allocation above
+Ecosystem: Included in Community Reserve (grants, incentives, validator subsidies)
+Advisors: Included in Early Contributors (20%)
+Other: 6% (600,000,000 SUI) — Community Access Program (airdrop, testnet incentives, early adopters)
+Sources: https://blog.sui.io/sui-token-economics/
+Sources: https://docs.sui.io/concepts/tokenomics/sui-token
+Sources: https://sui.io/foundation/treasury
+
+## Vesting Schedule
+
+Category: Community Reserve (50%)
+Cliff: 0 months (partial unlock at TGE)
+Vesting: Linear over 48 months from TGE (May 2023 – May 2027)
+Unlock Frequency: Monthly
+Current Status: Ongoing (monthly unlocks via Foundation-controlled wallet)
+Sources: https://blog.sui.io/sui-token-economics/
+Sources: https://sui.io/foundation/treasury
+
+Category: Early Contributors / Team (20%)
+Cliff: 12 months from TGE
+Vesting: Linear over 36 months after cliff (Month 13 – Month 48)
+Unlock Frequency: Monthly
+Current Status: Cliff passed (May 2024); monthly vesting active
+Sources: https://blog.sui.io/sui-token-economics/
+Sources: https://techcrunch.com/2022/09/08/mysten-labs-raises-300m-series-b/
+
+Category: Investors (14%)
+Cliff: 12 months from TGE
+Vesting: Linear over 36 months after cliff (Month 13 – Month 48)
+Unlock Frequency: Monthly
+Current Status: Cliff passed (May 2024); monthly vesting active
+Sources: https://blog.sui.io/sui-token-economics/
+Sources: https://techcrunch.com/2022/09/08/mysten-labs-raises-300m-series-b/
+
+Category: Mysten Labs Treasury (10%)
+Cliff: 0 months (partial unlock at TGE)
+Vesting: Linear over 48 months from TGE
+Unlock Frequency: Monthly
+Current Status: Ongoing
+Sources: https://blog.sui.io/sui-token-economics/
+
+Category: Community Access Program (6%)
+Cliff: 0 months
+Vesting: Fully unlocked at TGE (distributed via airdrop, testnet rewards, early adopter programs)
+Unlock Frequency: One-time at TGE
+Current Status: Completed (distributed 2023)
+Sources: https://blog.sui.io/sui-token-economics/
+Sources: https://blog.sui.io/sui-mainnet-launches/
+
+## TGE
+
+TGE Date: 2023-05-03 (bersamaan Mainnet Genesis)
+Initial Unlock: Community Access Program (6%) fully unlocked; Community Reserve, Mysten Labs Treasury partial unlock; Early Contributors & Investors locked (12-month cliff)
+Unlocked Categories: Community Access Program (100%), Community Reserve (~8.33% of allocation), Mysten Labs Treasury (~8.33% of allocation)
+Launch Platform: Binance, Coinbase, OKX, Bybit, KuCoin, Kraken (simultaneous listing)
+Status: Completed
+Sources: https://blog.sui.io/sui-mainnet-launches/
+Sources: https://www.binance.com/en/blog/143401324684903493
+Sources: https://blog.sui.io/sui-token-economics/
+Related Historical Event ID: EV-010, EV-011
+
+## Utility
+
+Utility: Gas Payment
+Deskripsi: Semua transaksi di Sui mainnet membayar gas fee dalam SUI; fee dibagi antara validator (staking rewards) dan storage fund
+Status: Live
+Sources: https://docs.sui.io/concepts/gas
+
+Utility: Staking
+Deskripsi: SUI distake ke validator untuk berpartisipasi dalam Delegated Proof-of-Stake; delegator menerima staking rewards (dibayar dari gas fee + storage fund yield)
+Status: Live
+Sources: https://docs.sui.io/concepts/staking
+
+Utility: Validator Operation
+Deskripsi: Validator wajib menjalankan node dengan stake minimum; stake weight menentukan voting power di konsensus Mysticeti
+Status: Live
+Sources: https://docs.sui.io/concepts/consensus-engine/validators
+
+Utility: Governance
+Deskripsi: SUI holder dapat mengajukan dan vote proposal on-chain melalui Sui Governance; voting power berbasis stake-weighted SUI
+Status: Live
+Sources: https://gov.sui.io/
+Sources: https://docs.sui.io/guides/developer/app-development/governance
+
+Utility: Storage Fund Deposit
+Deskripsi: Pembuatan object baru mengunci SUI ke Storage Fund; SUI dilepaskan saat object dihapus; fund membayar yield ke validator
+Status: Live
+Sources: https://docs.sui.io/concepts/storage-fund
+
+Utility: Bridge Fee Payment (Native Bridge)
+Deskripsi: Sui Bridge native Sui ↔ Ethereum mengenakan fee dinamis berbasis gas yang dibayar dalam SUI di sisi Sui
+Status: Live (sejak Mei 2024)
+Sources: https://docs.sui.io/guides/operator/bridge
+
+Utility: zkLogin Gas Sponsorship
+Deskripsi: Aplikasi menggunakan SUI untuk membayar gas fee user via Sponsored Transactions (Gas Station)
+Status: Live
+Sources: https://docs.sui.io/concepts/transactions/sponsored-transactions
+
+Utility: DeFi Collateral / Liquidity
+Deskripsi: SUI digunakan sebagai collateral di lending protocol (Navi, Scallop, Suilend), liquidity pair di DEX (Cetus, Turbos, Aftermath), dan liquid staking (haSUI, stSUI)
+Status: Live
+Sources: https://defillama.com/chain/Sui
+Sources: https://naviprotocol.io/
+Sources: https://cetus.zone/
+
+Utility: NFT / Kiosk Trading Fee
+Deskripsi: Kiosk standard memungkinkan pembayaran royalties dan trading fee dalam SUI
+Status: Live
+Sources: https://docs.sui.io/guides/developer/app-development/kiosk
+
+## Governance
+
+Governance Model: On-chain governance dengan proposal dan voting berbasis stake-weighted SUI
+Voting System: Token-weighted voting (1 SUI staked = 1 vote); proposal memerlukan quorum dan supermajority
+Voting Power: Berbasis jumlah SUI yang distake (delegated ke validator) pada snapshot epoch proposal
+Delegation: SUI holder mendelegasikan stake ke validator; validator mewakili voting power delegator (dapat di-override oleh delegator via direct voting)
+Proposal System: Siapapun dengan ≥1M SUI staked dapat mengajukan proposal; proposal melalui fase: submission → review → voting → execution (jika lulus)
+Treasury Governance: Sui Foundation mengelola Community Reserve (50% supply) off-chain; on-chain governance mengontrol parameter protokol (gas schedule, upgrade, parameter changes) — treasury spending tidak on-chain
+Status: Live (on-chain governance aktif sejak mainnet; parameter changes via proposal)
+Sources: https://gov.sui.io/
+Sources: https://docs.sui.io/guides/developer/app-development/governance
+Sources: https://blog.sui.io/sui-governance-launch/
+
+## Inflation / Deflation
+
+Inflation Mechanism: Tidak ada inflasi token (max supply fixed 10B minted at genesis); staking rewards dibayar dari gas fee + storage fund yield, bukan minting baru
+Emission Schedule: Tidak ada emission schedule; supply tetap 10B; circulating supply meningkat mengikuti vesting unlock schedule
+Burn Mechanism: Tidak ada burn mechanism native protocol; gas fee tidak diburn (dibagi validator + storage fund)
+Buyback: Tidak ada buyback program resmi dari Foundation atau protokol
+Supply Reduction: Tidak ada supply reduction mechanism; total supply tetap 10B selamanya
+Status: Fixed supply, no inflation, no burn
+Sources: https://blog.sui.io/sui-token-economics/
+Sources: https://docs.sui.io/concepts/tokenomics/sui-token
+Sources: https://docs.sui.io/concepts/gas
+
+## Holder Distribution
+
+Top Holder Concentration: Top 10 addresses memegang ~42% total supply (termasuk Foundation, vesting contracts, exchange wallets) per Suiscan/Explorer Januari 2025
+Foundation Holding: Community Reserve (50% = 5B SUI) + Foundation Treasury (10% = 1B SUI) = 6B SUI (60% total supply) dikendalikan Foundation-related addresses
+Investor Holding: 14% (1.4B SUI) — terdistribusi ke vesting contracts investor Series A/B (a16z, Coinbase Ventures, Binance Labs, Jump Crypto, Franklin Templeton, Circle Ventures, dll)
+Treasury Holding: Termasuk dalam Foundation Holding di atas (Foundation Treasury 10%)
+Community Holding: Community Access Program (6% = 600M SUI) fully unlocked; Community Reserve vesting monthly (portion sudah unlocked menjadi circulating)
+Whale Concentration: Top 100 addresses memegang ~68% total supply (termasuk vesting contracts, exchange cold wallets, Foundation addresses)
+Sources: https://suiscan.xyz/
+Sources: https://explorer.sui.io/
+Sources: https://sui.io/foundation/treasury
+Sources: https://blog.sui.io/sui-token-economics/
+
+## Major Token Events
+
+Date: 2023-05-03
+Event: Token Generation Event (TGE) & Mainnet Launch
+Description: 10B SUI minted at genesis; simultaneous listing di Binance, Coinbase, OKX, Bybit, KuCoin, Kraken; Community Access Program (6%) fully unlocked
+Status: Completed
+Related Historical Event ID: EV-010, EV-011
+Sources: https://blog.sui.io/sui-mainnet-launches/
+Sources: https://www.binance.com/en/blog/143401324684903493
+
+Date: 2023-11
+Event: zkLogin Mainnet Activation
+Description: zkLogin live memungkinkan OAuth authentication tanpa seed phrase; meningkatkan utility SUI untuk gas sponsorship via sponsored transactions
+Status: Completed
+Related Historical Event ID: EV-019
+Sources: https://blog.sui.io/zklogin-mainnet/
+
+Date: 2024-05
+Event: Sui Bridge Native Mainnet Launch
+Description: Canonical bridge Sui ↔ Ethereum live; SUI digunakan untuk bridge fee di sisi Sui; memperluas utility cross-chain
+Status: Completed
+Related Historical Event ID: EV-023
+Sources: https://blog.sui.io/sui-bridge-mainnet/
+
+Date: 2024-07
+Event: Mysticeti Consensus Mainnet Upgrade
+Description: Konsensus upgrade meningkatkan throughput dan finality; tidak mengubah tokenomics tapi meningkatkan utility SUI untuk staking/validator economics
+Status: Completed
+Related Historical Event ID: EV-025
+Sources: https://blog.sui.io/mysticeti-mainnet-upgrade/
+
+Date: 2024-09
+Event: USDT Native Launch on Sui
+Description: Tether USDT native di Sui; memperluas pasangan trading SUI/USDT dan utility SUI di DeFi
+Status: Completed
+Related Historical Event ID: EV-026
+Sources: https://tether.to/tether-usdt-launches-on-sui/
+
+Date: 2024-11
+Event: 1 Billion Transactions Milestone
+Description: Sui mainnet melewati 1 miliar transaksi kumulatif; menvalidasi adoption dan utility gas fee SUI
+Status: Completed
+Related Historical Event ID: EV-028
+Sources: https://blog.sui.io/1-billion-transactions/
+
+Date: 2025-01
+Event: Sui Foundation Treasury Report >$1B AUM
+Description: Foundation melaporkan aset terkelola >$1 miliar (SUI + stablecoin + investasi); menunjukkan treasury health untuk grants/ecosystem
+Status: Completed
+Related Historical Event ID: EV-030
+Sources: https://sui.io/foundation/treasury
+
+## Official Token Resources
+
+Official Documentation: https://docs.sui.io/concepts/tokenomics/sui-token
+Whitepaper: https://blog.sui.io/sui-token-economics/
+Governance: https://gov.sui.io/
+Explorer: https://explorer.sui.io/
+Contract: https://explorer.sui.io/object/0x2
+GitHub: https://github.com/MystenLabs/sui/tree/main/crates/sui-framework/packages/sui-framework/sources/coin.move
+Dashboard: https://sui.io/foundation/treasury
+DefiLlama: https://defillama.com/chain/Sui
+Suiscan: https://suiscan.xyz/
+
+## Summary
+
+Status: Live (TGE 2023-05-03)
+Supply Type: Fixed (10B max supply, minted at genesis)
+Total Supply: 10,000,000,000 SUI
+Distribution Categories: Community Reserve (50%), Early Contributors/Team (20%), Investors (14%), Mysten Labs Treasury (10%), Community Access Program (6%)
+Utility Count: 9 (Gas Payment, Staking, Validator Operation, Governance, Storage Fund Deposit, Bridge Fee Payment, zkLogin Gas Sponsorship, DeFi Collateral/Liquidity, NFT/Kiosk Trading Fee)
+Governance: On-chain stake-weighted voting; proposal system live; treasury management off-chain by Foundation
+Major Token Events: 8 events (TGE, zkLogin, Native Bridge, Mysticeti, USDT Native, 1B Tx, Treasury Report, ongoing monthly unlocks)
+
+## Open Threads
+
+- Persentase circulating supply tepat per Januari 2025: Sui Explorer menampilkan 2,789,341,234 SUI tapi Suiscan angka sedikit berbeda — perlu cross-check on-chain vesting contract balances untuk akurasi
+- Detail vesting contract addresses untuk setiap kategori (Community Reserve, Team, Investors, Treasury) — tidak dipublikasikan sebagai daftar lengkap; perlu query on-chain untuk verifikasi unlock schedule real-time
+- Status slashing activation dan dampak pada staking rewards / token economics — belum ada timeline resmi; slashing tidak aktif mainnet
+- Apakah ada proposal fee switch atau protocol revenue capture ke treasury di roadmap governance — tidak ditemukan proposal aktif
+- FTX Ventures Series A token allocation (14% investors termasuk FTX) status pasca-bankruptcy — court docket atau on-chain vesting contract check diperlukan
+- Community Reserve 50%: apakah seluruh 5B SUI dikendalikan Foundation multisig atau ada portion yang sudah didistribusikan ke grants program sebagai unlocked — detail spending tidak diungkap per tranche
+- Validator economics sustainability tanpa slashing: apakah staking yield (gas fee + storage fund) cukup untuk menarik stake long-term — perlu data APY historis
+- Mysticeti upgrade apakah mengubah gas schedule atau storage fund parameter — changelog gas cost per opcode tidak dipublikasikan terpusat
+- Sui Bridge native fee flow: apakah portion fee masuk ke treasury Foundation atau sepenuhnya ke validator set — bridge docs menyatakan validator set tapi tidak eksplisit
+- ZkLogin salt service decentralization: apakah ada plan untuk distributed salt service yang mempengaruhi SUI utility untuk gas sponsorship — belum ada announcement resmi

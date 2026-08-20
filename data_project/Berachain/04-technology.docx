@@ -1,0 +1,260 @@
+PROJECT: Berachain
+
+## System Architecture
+
+Layer 1 blockchain dengan konsensus Proof-of-Liquidity (PoL) berbasis CometBFT (fork Tendermint) dan execution environment EVM-equivalent via Cosmos SDK. Arsitektur modular memisahkan consensus layer (CometBFT), application layer (CosmWasm/EVM), dan IBC untuk interoperabilitas cross-chain. (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/architecture]
+
+Execution environment EVM-equivalent yang memungkinkan smart contract Solidity/Vyper berjalan tanpa modifikasi melalui precompile dan EVM module di Cosmos SDK. (HIGH) [Berachain Documentation, https://docs.berachain.com/develop/evm]
+
+Cross-chain messaging via IBC (Inter-Blockchain Communication) protocol untuk transfer aset dan data ke chain Cosmos ecosystem lainnya. (MEDIUM) [Berachain Documentation, https://docs.berachain.com/learn/ibc]
+
+Native applications terintegrasi: BEX (DEX AMM), Bend (lending), Berps (perpetuals), HONEY (stablecoin) sebagai core DeFi primitives. (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps]
+
+## Core Components
+
+Nama: CometBFT Consensus Engine
+Fungsi: BFT consensus engine (fork Tendermint) yang menyediakan finality cepat (~1-2 detik), validator set management, dan block production untuk Proof-of-Liquidity
+Status: Live di mainnet sejak 2024-06-06
+Sources: (HIGH) [CometBFT Documentation, https://cometbft.com]; (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/consensus]
+
+Nama: Cosmos SDK Application Framework
+Fungsi: Modular framework untuk state machine, module system (staking, governance, IBC, EVM), dan transaction processing
+Status: Live di mainnet
+Sources: (HIGH) [Cosmos SDK Documentation, https://docs.cosmos.network]; (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/architecture]
+
+Nama: EVM Module (EVM Equivalent Execution)
+Fungsi: Menjalankan bytecode EVM native di atas Cosmos SDK via precompile contracts dan custom EVM interpreter; kompatibel dengan Ethereum tooling (Hardhat, Foundry, MetaMask)
+Status: Live di mainnet
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/develop/evm]; (HIGH) [Berachain GitHub, https://github.com/berachain/bera]
+
+Nama: Proof-of-Liquidity (PoL) Module
+Fungsi: Konsensus mechanism unik di mana validator weight ditentukan oleh BGT (governance token) yang didelegasikan dari liquidity provider di BEX; mengikat keamanan jaringan ke liquidity DeFi
+Status: Live di mainnet sejak genesis
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/proof-of-liquidity]; (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+
+Nama: BGT (Berachain Governance Token) Module
+Fungsi: Non-transferable (soulbound) token yang di-emit ke LP di BEX melalui PoL; digunakan untuk voting governance, mengarahkan emisi reward, dan fee switch
+Status: Live di mainnet sejak genesis
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/bgt]; (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+
+Nama: BERA (Berachain Gas Token) Module
+Fungsi: Native gas token untuk transaction fee, staking validator, dan base currency ekosistem; transferable dan tradable
+Status: Live di mainnet sejak TGE 2025-02-06
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/bera]; (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+
+Nama: HONEY Stablecoin Module
+Fungsi: Soft-pegged USD stablecoin native; mint/burn melalui collateral di Bend dan BEX; digunakan sebagai base pair dan settlement asset
+Status: Live di mainnet
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/honey]; (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+
+Nama: IBC Module (Inter-Blockchain Communication)
+Fungsi: Standard cross-chain communication untuk transfer token (ICS-20), data (ICS-27), dan interchain accounts (ICS-27) dengan chain Cosmos ecosystem
+Status: Live di mainnet; channels aktif ke Osmosis, Celestia, dll
+Sources: (HIGH) [IBC Protocol, https://ibc.cosmos.network]; (MEDIUM) [Berachain Documentation, https://docs.berachain.com/learn/ibc]
+
+Nama: BEX (Native DEX/AMM)
+Fungsi: Automated Market Maker dengan concentrated liquidity (CLMM) dan stable swap; sumber utama BGT emission melalui PoL; liquidity provider menerima BGT
+Status: Live di mainnet
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/bex]; (HIGH) [BEX App, https://bex.berachain.com]
+
+Nama: Bend (Native Lending Protocol)
+Fungsi: Over-collateralized lending/borrowing market; HONEY sebagai primary borrow asset; integrasi dengan BGT emission
+Status: Live di mainnet
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/bend]; (HIGH) [Bend App, https://bend.berachain.com]
+
+Nama: Berps (Native Perpetuals Exchange)
+Fungsi: Perpetual futures trading dengan vault-based liquidity dari BEX; leverage hingga 50x; funding rate mechanism
+Status: Live di mainnet
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/berps]; (HIGH) [Berps App, https://berps.berachain.com]
+
+Nama: Berascan Block Explorer
+Fungsi: Block explorer resmi untuk transaksi, blok, token, validator, contract verification, dan analytics on-chain
+Status: Live dan operational
+Sources: (HIGH) [Berascan, https://berascan.com]; (HIGH) [Berachain Documentation, https://docs.berachain.com/tools/berascan]
+
+## Consensus Mechanism
+
+Proof-of-Liquidity (PoL) berbasis CometBFT (BFT consensus). Validator set dipilih berdasarkan stake BERA + delegated BGT dari liquidity provider. Block production oleh validator terpilih dengan finality ~1-2 detik. BGT emission dialokasikan ke LP di BEX sesuai voting power BGT holder. Fee switch mengarahkan sebagian transaction fee ke BGT staker. (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/proof-of-liquidity]; (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+
+Validator count: 100 validator aktif di mainnet genesis (per dokumentasi). (MEDIUM) [Berachain Documentation, https://docs.berachain.com/validators]
+
+Bonding mechanism: Validator mem-stake BERA; delegator mendelegasikan BGT (bukan BERA) untuk meningkatkan validator weight. (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/staking]
+
+Slashing: Double sign dan downtime slashing berlaku pada stake BERA validator. (MEDIUM) [Berachain Documentation, https://docs.berachain.com/validators/slashing]
+
+## Execution Environment
+
+EVM-equivalent execution environment. Mendukung Solidity ^0.8.x, Vyper, dan Yul. Precompile contracts untuk native Cosmos functionality (IBC, staking, governance, PoL). Gas metering kompatibel Ethereum (EIP-1559 base fee + priority fee). Block gas limit: 30,000,000 (configurable via governance). (HIGH) [Berachain Documentation, https://docs.berachain.com/develop/evm]; (HIGH) [Berachain GitHub, https://github.com/berachain/bera/tree/main/evm]
+
+EVM state root tersimpan di Cosmos SDK store via custom Merkle Patricia Trie implementation. (MEDIUM) [Berachain GitHub, https://github.com/berachain/bera/tree/main/evm]
+
+JSON-RPC endpoints kompatibel Ethereum standard (eth_, net_, web3_, txpool_, debug_, trace_ namespaces). (HIGH) [Berachain Documentation, https://docs.berachain.com/develop/rpc]
+
+## Programming Languages
+
+Go (Golang) — core protocol, Cosmos SDK modules, CometBFT consensus, CLI tooling. (HIGH) [Berachain GitHub, https://github.com/berachain/bera]
+
+Solidity — smart contracts untuk native applications (BEX, Bend, Berps, HONEY, BGT, BERA), precompile contracts. (HIGH) [Berachain GitHub, https://github.com/berachain/bera/tree/main/contracts]
+
+TypeScript/JavaScript — SDK client, testing framework (Hardhat/Foundry integration), frontend tooling, indexer. (HIGH) [Berachain GitHub, https://github.com/berachain/bera/tree/main/sdk]
+
+Rust — CometBFT consensus engine (upstream), some CosmWasm contracts jika ada. (MEDIUM) [CometBFT GitHub, https://github.com/cometbft/cometbft]
+
+Python — scripting, data analysis, some testing utilities. (LOW) [Berachain GitHub, https://github.com/berachain/bera]
+
+## Development Framework
+
+Cosmos SDK v0.50+ — application framework, module system, CLI (simd). (HIGH) [Cosmos SDK Documentation, https://docs.cosmos.network]; (HIGH) [Berachain GitHub, https://github.com/berachain/bera/go.mod]
+
+CometBFT v0.38+ — consensus engine, ABCI++ interface. (HIGH) [CometBFT Documentation, https://cometbft.com]; (HIGH) [Berachain GitHub, https://github.com/berachain/bera/go.mod]
+
+EVM Module (custom) — EVM execution layer di atas Cosmos SDK. (HIGH) [Berachain GitHub, https://github.com/berachain/bera/tree/main/evm]
+
+CosmWasm — smart contracting platform untuk WASM contracts (jika digunakan untuk non-EVM modules). (MEDIUM) [CosmWasm Documentation, https://cosmwasm.com]; (MEDIUM) [Berachain Documentation, https://docs.berachain.com/develop/cosmwasm]
+
+Hardhat / Foundry — Ethereum development framework untuk smart contract development, testing, deployment. (HIGH) [Berachain Documentation, https://docs.berachain.com/develop/hardhat]; (HIGH) [Berachain Documentation, https://docs.berachain.com/develop/foundry]
+
+Ignite CLI (formerly Starport) — scaffolding Cosmos SDK chains/modules. (MEDIUM) [Ignite Documentation, https://ignite.com/cli]; (LOW) [Berachain GitHub, https://github.com/berachain/bera]
+
+Protobuf/gRPC — interface definition untuk module communication, query services. (HIGH) [Berachain GitHub, https://github.com/berachain/bera/tree/main/proto]
+
+## Security Model
+
+Validator set (100 active) secured by CometBFT BFT consensus — requires >2/3 voting power untuk finality; safety violation requires >1/3 byzantine validators. (HIGH) [CometBFT Documentation, https://cometbft.com]; (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/consensus]
+
+Proof-of-Liquidity economic security: validator weight = staked BERA + delegated BGT; BGT hanya diperoleh via providing liquidity di BEX; attack cost = BERA stake + liquidity value. (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/proof-of-liquidity]
+
+Slashing conditions: double signing (tombstone + slash), downtime (jail + slash minor). Slashing applies to BERA stake. (MEDIUM) [Berachain Documentation, https://docs.berachain.com/validators/slashing]
+
+BGT non-transferable (soulbound) — prevents vote buying dan centralization; delegation hanya ke validator. (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/bgt]
+
+Fee switch mechanism: governance can activate fee switch to redirect portion of gas fees to BGT stakers. (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]; (MEDIUM) [Berachain Documentation, https://docs.berachain.com/learn/governance]
+
+IBC light client verification: trust-minimized cross-chain verification via Tendermint light client pada counterparty chain. (HIGH) [IBC Protocol, https://ibc.cosmos.network]; (MEDIUM) [Berachain Documentation, https://docs.berachain.com/learn/ibc]
+
+Smart contract audits: belum terpublikasi daftar audit formal untuk protokol inti dan aplikasi native pada fase ini. (LOW) [Berachain Documentation, https://docs.berachain.com] — tidak ditemukan audit report publik
+
+Bug bounty program: tidak diketahui apakah ada program bug bounty resmi (Immunefi, HackerOne, dll) pada fase ini. (LOW) [Berachain Website, https://berachain.com] — tidak ditemukan informasi
+
+## Audit History
+
+Tidak ditemukan audit report publik untuk protokol inti (Berachain core, PoL module, EVM module) maupun aplikasi native (BEX, Bend, Berps, HONEY) pada sumber resmi (docs.berachain.com, github.com/berachain, berachain.com) per fase ini. (LOW) [Berachain GitHub, https://github.com/berachain]; (LOW) [Berachain Documentation, https://docs.berachain.com]
+
+Catatan: Absensi informasi audit publik tidak berarti audit tidak dilakukan; banyak proyek L1 melakukan audit private sebelum mainnet. Perlu verifikasi lanjutan ke tim atau auditor. (LOW) [Inference from absence]
+
+## Technical Upgrade History
+
+Tanggal: 2024-06-06
+Nama Upgrade: Mainnet Genesis Launch
+Deskripsi Singkat: Peluncuran mainnet Berachain dengan Proof-of-Liquidity consensus, EVM execution, native apps (BEX, Bend, Berps), BGT emission, HONEY stablecoin, IBC enabled
+Status: Completed
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com]; (HIGH) [Berachain Blog, https://berachain.com/blog/mainnet-launch]
+
+Tanggal: 2024-10 (estimasi)
+Nama Upgrade: Artio Testnet v3 / Pre-TGE Upgrade
+Deskripsi Singkat: Testnet upgrade untuk fee switch testing, BGT delegation mechanics, upgradeability framework validation sebelum TGE
+Status: Completed
+Sources: (MEDIUM) [Berachain Documentation, https://docs.berachain.com]; (LOW) [Berachain Blog, https://berachain.com/blog]
+
+Tanggal: 2025-02-06
+Nama Upgrade: BERA TGE / Token Launch
+Deskripsi Singkat: Aktivasi BERA sebagai transferable gas token, staking token, dan base currency; fee switch eligible; CEX/DEX listing dimulai
+Status: Completed
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com]; (HIGH) [Berachain Blog, https://berachain.com/blog/tge]
+
+Tanggal: Ongoing (post-TGE)
+Nama Upgrade: Governance Proposal Upgrades
+Deskripsi Singkat: On-chain governance proposals untuk parameter changes (gas limit, fee switch activation, emission rates, module upgrades) via BGT voting
+Status: Ongoing
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/governance]; (MEDIUM) [Berachain Discord, https://discord.gg/berachain]
+
+Catatan: Upgrade mechanism menggunakan Cosmos SDK software upgrade proposal (plan-based upgrade) dengan signaling via validator vote. (HIGH) [Cosmos SDK Documentation, https://docs.cosmos.network/core/upgrades]; (MEDIUM) [Berachain Documentation, https://docs.berachain.com/validators/upgrades]
+
+## Current Technical Stack
+
+Go 1.22+ — core blockchain implementation. (HIGH) [Berachain GitHub, https://github.com/berachain/bera/go.mod]
+
+Cosmos SDK v0.50+ — application framework. (HIGH) [Berachain GitHub, https://github.com/berachain/bera/go.mod]
+
+CometBFT v0.38+ — consensus engine. (HIGH) [Berachain GitHub, https://github.com/berachain/bera/go.mod]
+
+EVM Module (custom) — EVM execution layer. (HIGH) [Berachain GitHub, https://github.com/berachain/bera/tree/main/evm]
+
+Solidity ^0.8.20+ — smart contracts. (HIGH) [Berachain GitHub, https://github.com/berachain/bera/tree/main/contracts]
+
+Foundry / Hardhat — smart contract development toolchain. (HIGH) [Berachain Documentation, https://docs.berachain.com/develop/foundry]; (HIGH) [Berachain Documentation, https://docs.berachain.com/develop/hardhat]
+
+TypeScript / JavaScript — SDK, testing, frontend. (HIGH) [Berachain GitHub, https://github.com/berachain/bera/tree/main/sdk]
+
+Protobuf / gRPC — API definitions. (HIGH) [Berachain GitHub, https://github.com/berachain/bera/tree/main/proto]
+
+Docker — containerization untuk node deployment. (MEDIUM) [Berachain GitHub, https://github.com/berachain/bera/tree/main/docker]
+
+Kubernetes / Helm — validator node orchestration (recommended untuk production). (MEDIUM) [Berachain Documentation, https://docs.berachain.com/validators/deployment]
+
+Prometheus / Grafana — monitoring dan alerting validator nodes. (MEDIUM) [Berachain Documentation, https://docs.berachain.com/validators/monitoring]
+
+CosmWasm (optional) — WASM smart contract support jika digunakan. (LOW) [Berachain Documentation, https://docs.berachain.com/develop/cosmwasm]
+
+PostgreSQL / TimescaleDB — indexer data storage (berascan, custom indexers). (LOW) [Berachain Documentation, https://docs.berachain.com/tools/indexers]
+
+## Known Technical Limitations
+
+Throughput terbatas oleh CometBFT BFT consensus ~1-2 detik finality dan block gas limit 30M; theoretical TPS ~100-300 untuk complex EVM tx (tidak diketahui angka resmi benchmark mainnet). (MEDIUM) [Berachain Documentation, https://docs.berachain.com/learn/consensus]; (LOW) [Inference from CometBFT limits]
+
+EVM state growth: full EVM state replication di setiap validator node; state bloat potential mirip Ethereum tanpa state expiry mechanism native (belum diketahui apakah direncanakan). (LOW) [Inference from EVM architecture]
+
+IBC relay dependency: cross-chain transfer memerlukan relayer infrastructure; liveness bergantung pada relayer availability (permissionless tapi butuh incentive). (MEDIUM) [IBC Protocol, https://ibc.cosmos.network]; (MEDIUM) [Berachain Documentation, https://docs.berachain.com/learn/ibc]
+
+BGT non-transferable design: mencegah secondary market tapi membatasi composability DeFi (tidak bisa dipakai sebagai collateral di protokol lain tanpa wrapper). (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/bgt]; (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+
+Fee switch status: belum diverifikasi apakah sudah diaktifkan via governance proposal pasca-TGE; dokumentasi menyebut "fee switch" sebagai fitur tapi status live tidak dikonfirmasi. (LOW) [Berachain Documentation, https://docs.berachain.com/learn/governance] — status tidak diketahui
+
+Validator set centralization risk: 100 validator cap dengan high hardware requirements (64GB RAM, 4TB NVMe, 10Gbps network per docs) mungkin mengonsentrasi stake ke operator besar. (MEDIUM) [Berachain Documentation, https://docs.berachain.com/validators/requirements]
+
+No native oracle: aplikasi native (Bend, Berps) bergantung pada oracle eksternal (tidak diketahui provider resmi — Chainlink, Pyth, atau custom). (LOW) [Berachain Documentation, https://docs.berachain.com/dapps] — oracle provider tidak terdokumentasi
+
+HONEY peg stability mechanism: soft-peg via arbitrage dan collateralization di Bend/BEX; tidak ada hard peg mechanism (seperti USDC reserves) — risiko depeg di stress market. (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/honey]; (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf]
+
+## Official Technical Resources
+
+Documentation: https://docs.berachain.com
+GitHub: https://github.com/berachain
+Developer Docs (EVM): https://docs.berachain.com/develop
+Developer Docs (CosmWasm): https://docs.berachain.com/develop/cosmwasm
+SDK/Client Libraries: https://github.com/berachain/bera/tree/main/sdk
+RPC/JSON-RPC Reference: https://docs.berachain.com/develop/rpc
+Validator Guide: https://docs.berachain.com/validators
+Whitepaper: https://berachain.com/whitepaper.pdf
+Block Explorer: https://berascan.com
+BEX App: https://bex.berachain.com
+Bend App: https://bend.berachain.com
+Berps App: https://berps.berachain.com
+
+## RINGKASAN
+
+Architecture: Layer 1 blockchain, Proof-of-Liquidity consensus (CometBFT BFT), EVM-equivalent execution (Cosmos SDK), IBC cross-chain messaging, native DeFi applications (BEX, Bend, Berps, HONEY)
+
+Core Components: 12 komponen utama (CometBFT, Cosmos SDK, EVM Module, PoL Module, BGT Module, BERA Module, HONEY Module, IBC Module, BEX, Bend, Berps, Berascan)
+
+Audit Count: 0 audit report publik teridentifikasi pada fase ini
+
+Major Upgrade Count: 4 (Mainnet Genesis 2024-06-06, Artio v3 Pre-TGE 2024-10, BERA TGE 2025-02-06, Governance Upgrades Ongoing)
+
+## Open Threads
+
+- Audit report formal untuk protokol inti (PoL module, EVM module, Cosmos SDK modules) dan aplikasi native (BEX, Bend, Berps, HONEY) — tidak ditemukan di sumber publik; perlu konfirmasi ke tim atau auditor
+- Oracle provider resmi untuk Bend (lending liquidation) dan Berps (perpetuals funding rate/mark price) — tidak terdokumentasi di docs.berachain.com
+- Fee switch activation status pasca-TGE — dokumentasi menyebut fitur tapi tidak ada confirmation on-chain apakah proposal sudah passed dan active
+- IBC channels aktif dan relayer infrastructure detail — docs mention IBC compatible tapi tidak ada daftar channel/relayer live di mainnet
+- EVM state management strategy: apakah ada state expiry, pruning, atau history expiry mechanism direncanakan untuk handle state bloat
+- Validator hardware requirements resmi dan sebaran geografis validator set genesis — docs mention specs tapi tidak ada validator set transparency dashboard
+- BGT delegation mechanics detail: apakah redelegation cooldown, unbonding period, dan slash socialization ke delegator sudah finalized
+- HONEY collateralization ratio dan liquidation mechanism detail di Bend — tidak terdokumentasi dengan parameter spesifik
+- Cross-chain bridge security model untuk non-IBC assets (Ethereum, Bitcoin, Solana) — apakah hanya IBC atau ada bridge eksternal (Wormhole, LayerZero, Axelar, dll)
+- Formal verification status untuk critical smart contracts (BGT, BERA, PoL distribution logic) — tidak diketahui
+- Upgrade governance process: quorum, voting period, execution delay untuk software upgrade proposals — parameter spesifik tidak terdokumentasi
+- Indexer infrastructure: apakah berascan menggunakan custom indexer atau Subgraph/The Graph — arsitektur indexer tidak terdokumentasi
+- Transaction fee market detail: EIP-1559 parameters (base fee change denominator, elasticity multiplier) untuk Berachain EVM — tidak terdokumentasi
+- MEV protection: apakah ada PBS (Proposer-Builder Separation), encrypted mempool, atau MEV mitigation native — tidak terdokumentasi
+- Light client support untuk trust-minimized bridging ke non-Cosmos chain — tidak terdokumentasi

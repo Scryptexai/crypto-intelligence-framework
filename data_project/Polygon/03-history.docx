@@ -1,0 +1,4399 @@
+PROJECT: Polygon
+
+Event ID
+
+EV-001
+
+Date
+
+2017
+
+Event Name
+
+Riset Awal Matic Network oleh Tim Pendiri
+
+Event Type
+
+Founding
+
+Description
+
+Jaynti Kanani, Sandeep Nailwal, dan Anurag Arjun mulai mengembangkan konsep Matic Network sebagai solusi scaling untuk Ethereum menggunakan Plasma framework dan sidechain berbasis Proof-of-Stake. Tim memulai riset teknis sebelum whitepaper dipublikasikan.
+
+Participants
+
+Jaynti Kanani
+Sandeep Nailwal
+Anurag Arjun
+
+Location
+
+India
+
+Status
+
+Completed
+
+Immediate Result
+
+Dasar konseptual untuk Matic Network yang kemudian menjadi Polygon.
+
+Sources
+
+https://blog.polygon.technology/introducing-polygon-2-0/
+https://www.forbes.com/sites/rachelwolfson/2021/09/09/polygon-co-founders/
+
+---
+
+Event ID
+
+EV-002
+
+Date
+
+2017-10
+
+Event Name
+
+Pembentukan Perusahaan Matic Network
+
+Event Type
+
+Founding
+
+Description
+
+Matic Network Pte. Ltd. didirikan sebagai entitas hukum di Singapura untuk mengembangkan protokol Matic Network. Pendaftaran perusahaan dilakukan di bawah yurisdiksi Singapura.
+
+Participants
+
+Matic Network Pte. Ltd.
+Jaynti Kanani
+Sandeep Nailwal
+Anurag Arjun
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Entitas hukum resmi untuk pengembangan Matic Network.
+
+Sources
+
+https://www.crunchbase.com/organization/matic-network
+https://www.forbes.com/sites/rachelwolfson/2021/09/09/polygon-co-founders/
+
+---
+
+Event ID
+
+EV-003
+
+Date
+
+2019-04
+
+Event Name
+
+Publikasi Whitepaper Matic Network
+
+Event Type
+
+Technology
+
+Description
+
+Matic Network merilis whitepaper teknis yang menjelaskan arsitektur Plasma sidechain dengan validator Proof-of-Stake, mekanisme checkpoint ke Ethereum, dan desain token ekonomi untuk transaksi berbiaya rendah dan throughput tinggi. Whitepaper menjadi dasar untuk pengembangan mainnet.
+
+Participants
+
+Matic Network
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Dasar teknis untuk pengembangan protokol Matic Network.
+
+Sources
+
+https://github.com/maticnetwork/whitepaper
+https://blog.polygon.technology/matic-mainnet-launch/
+
+---
+
+Event ID
+
+EV-004
+
+Date
+
+2019-04-24
+
+Event Name
+
+Initial Exchange Offering (IEO) Token MATIC di Binance Launchpad
+
+Event Type
+
+Funding
+
+Description
+
+Matic Network melakukan Initial Exchange Offering (IEO) token MATIC di Binance Launchpad. IEO mengumpulkan dana sekitar $5 juta dengan harga token $0.00263 per MATIC, dengan total penawaran 1.9 miliar token (sekitar 19% dari supply awal).
+
+Participants
+
+Binance
+Matic Network
+Investor IEO
+
+Location
+
+Binance Launchpad
+
+Status
+
+Completed
+
+Immediate Result
+
+Token MATIC terdaftar di Binance, dana pengembangan terkumpul.
+
+Sources
+
+https://research.binance.com/en/projects/matic-network
+https://coinmarketcap.com/currencies/polygon/
+
+---
+
+Event ID
+
+EV-005
+
+Date
+
+2019-02-20
+
+Event Name
+
+Token MATIC Terdaftar di Exchange Pertama (Binance)
+
+Event Type
+
+Token
+
+Description
+
+Binance mengumumkan listing token MATIC di exchange-nya setelah IEO selesai. Ini menjadi listing exchange pertama untuk token MATIC dan memberikan likuiditas awal.
+
+Participants
+
+Binance
+Matic Network
+
+Location
+
+Binance
+
+Status
+
+Completed
+
+Immediate Result
+
+Token MATIC mulai diperdagangkan di exchange sentral.
+
+Sources
+
+https://research.binance.com/en/projects/matic-network
+https://coinmarketcap.com/currencies/polygon/
+
+---
+
+Event ID
+
+EV-006
+
+Date
+
+2019-03
+
+Event Name
+
+Peluncuran Testnet Matic Network
+
+Event Type
+
+Launch
+
+Description
+
+Matic Network meluncurkan testnet pertama yang mengimplementasikan arsitektur Plasma sidechain dengan validator Proof-of-Stake di jaringan uji. Testnet memungkinkan pengembang untuk mencoba transaksi dan menguji kontrak pintar.
+
+Participants
+
+Matic Network
+Pengembang
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Validasi teknis arsitektur Matic sebelum mainnet.
+
+Sources
+
+https://blog.matic.network/matic-network-testnet-launch/
+https://blog.polygon.technology/matic-mainnet-launch/
+
+---
+
+Event ID
+
+EV-007
+
+Date
+
+2019-04-01
+
+Event Name
+
+Peluncuran Testnet Publik Matic Network
+
+Event Type
+
+Launch
+
+Description
+
+Testnet publik Matic Network dirilis untuk komunitas pengembang dan pengguna. Testnet ini menyediakan faucet, explorer, dan dokumentasi untuk menguji transaksi sidechain Matic.
+
+Participants
+
+Matic Network
+Komunitas pengembang
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Adopsi awal testnet oleh pengembang dan validator.
+
+Sources
+
+https://blog.matic.network/matic-network-testnet-launch/
+https://github.com/maticnetwork
+
+---
+
+Event ID
+
+EV-008
+
+Date
+
+2019-05
+
+Event Name
+
+Kerja Sama Strategis dengan Decentraland dan Somnium Space
+
+Event Type
+
+Partnership
+
+Description
+
+Matic Network mengumumkan kemitraan dengan platform metaverse Decentraland dan Somnium Space untuk menyediakan solusi scaling untuk aplikasi dan game berbasis Ethereum. Ini menjadi salah satu partnership awal yang memperkuat ekosistem game Matic.
+
+Participants
+
+Matic Network
+Decentraland
+Somnium Space
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Ekspansi ekosistem game dan metaverse di jaringan Matic.
+
+Sources
+
+https://blog.polygon.technology/matic-mainnet-launch/
+https://www.decentraland.org/
+
+---
+
+Event ID
+
+EV-009
+
+Date
+
+2019-10
+
+Event Name
+
+Peluncuran Matic Network Betanet
+
+Event Type
+
+Launch
+
+Description
+
+Matic Network meluncurkan betanet (jaringan uji terakhir sebelum mainnet) dengan validator set awal dan staking untuk pertama kalinya. Betanet memungkinkan pengujian mekanisme staking dan checkpoint ke Ethereum dalam skala lebih besar.
+
+Participants
+
+Matic Network
+Validator
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Pengujian staking dan validasi sebelum mainnet.
+
+Sources
+
+https://blog.polygon.technology/matic-mainnet-launch/
+https://github.com/maticnetwork
+
+---
+
+Event ID
+
+EV-010
+
+Date
+
+2020-02-01
+
+Event Name
+
+Audit Smart Contract Matic Network oleh Trail of Bits
+
+Event Type
+
+Security
+
+Description
+
+Matic Network menyelesaikan audit keamanan smart contract oleh Trail of Bits, sebuah firma audit keamanan terkemuka. Audit mencakup kontrak staking, validator, dan bridge.
+
+Participants
+
+Matic Network
+Trail of Bits
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Hasil audit digunakan untuk perbaikan keamanan sebelum mainnet.
+
+Sources
+
+https://github.com/trailofbits/publications
+https://blog.polygon.technology/matic-mainnet-launch/
+
+---
+
+Event ID
+
+EV-011
+
+Date
+
+2020-02-15
+
+Event Name
+
+Peluncuran Matic Network Incentivized Testnet
+
+Event Type
+
+Launch
+
+Description
+
+Matic Network meluncurkan testnet berinsentif (Incentivized Testnet) yang memberi hadiah token kepada validator dan pengguna yang berpartisipasi dalam pengujian jaringan. Testnet ini menarik ratusan validator untuk menguji staking dan transaksi.
+
+Participants
+
+Matic Network
+Validator
+Komunitas
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Validasi arsitektur mainnet oleh komunitas luas sebelum peluncuran.
+
+Sources
+
+https://blog.polygon.technology/matic-mainnet-launch/
+https://github.com/maticnetwork
+
+---
+
+Event ID
+
+EV-012
+
+Date
+
+2020-05-29
+
+Event Name
+
+Peluncuran Mainnet Matic Network (PoS Sidechain)
+
+Event Type
+
+Launch
+
+Description
+
+Matic Network meluncurkan mainnet secara resmi dengan sidechain EVM-kompatibel yang menggunakan validator Proof-of-Stake dan checkpoint ke Ethereum. Mainnet mendukung token MATIC sebagai native token dan gas.
+
+Participants
+
+Matic Network
+Validator
+Pengguna
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Jaringan Matic PoS aktif di produksi, mendukung aplikasi terdesentralisasi.
+
+Sources
+
+https://blog.polygon.technology/matic-mainnet-launch/
+https://polygonscan.com/
+
+---
+
+Event ID
+
+EV-013
+
+Date
+
+2020-06
+
+Event Name
+
+Listing MATIC di Exchange Utama (Coinbase, Kraken, dan Lainnya)
+
+Event Type
+
+Token
+
+Description
+
+Token MATIC mulai terdaftar di exchange besar seperti Coinbase, Kraken, dan exchange lainnya setelah mainnet sukses. Ini meningkatkan likuiditas dan aksesibilitas token.
+
+Participants
+
+Matic Network
+Coinbase
+Kraken
+
+Location
+
+Berbagai exchange
+
+Status
+
+Completed
+
+Immediate Result
+
+Likuiditas dan onboarding pengguna baru ke ekosistem Matic.
+
+Sources
+
+https://blog.coinbase.com/listing-matic
+https://www.kraken.com/features/matic
+
+---
+
+Event ID
+
+EV-014
+
+Date
+
+2020-07-01
+
+Event Name
+
+Integrasi Chainlink Price Feeds ke Matic Network
+
+Event Type
+
+Integration
+
+Description
+
+Chainlink mengimplementasikan Price Feeds oraclenya di jaringan Matic Network untuk menyediakan data harga yang andal bagi DeFi. Integrasi ini merupakan bagian penting dari pengembangan ekosistem DeFi Matic.
+
+Participants
+
+Matic Network
+Chainlink
+
+Location
+
+Matic Network
+
+Status
+
+Completed
+
+Immediate Result
+
+DeFi di Matic Network dapat mengakses data harga terdesentralisasi.
+
+Sources
+
+https://chain.link/ecosystem/polygon
+https://blog.polygon.technology/chainlink-integration/
+
+---
+
+Event ID
+
+EV-015
+
+Date
+
+2020-10
+
+Event Name
+
+Peluncuran Matic Network Bridge antara Ethereum dan Matic
+
+Event Type
+
+Technology
+
+Description
+
+Matic Network merilis versi awal bridge untuk memindahkan aset Ethereum ke sidechain Matic. Bridge menggunakan mekanisme deposit dan withdraw dengan checkpoint ke Ethereum.
+
+Participants
+
+Matic Network
+
+Location
+
+Matic Network
+
+Status
+
+Completed
+
+Immediate Result
+
+Perpindahan aset antara Ethereum dan Matic Network menjadi mungkin.
+
+Sources
+
+https://blog.polygon.technology/matic-bridge/
+https://docs.polygon.technology/
+
+---
+
+Event ID
+
+EV-016
+
+Date
+
+2021-02
+
+Event Name
+
+Rebrand Matic Network menjadi Polygon
+
+Event Type
+
+Organization
+
+Description
+
+Matic Network secara resmi mengumumkan rebranding menjadi Polygon. Rebranding ini mencerminkan perluasan visi dari sidechain Plasma menjadi ekosistem multi-chain scaling untuk Ethereum, termasuk solusi rollup dan sidechain lainnya.
+
+Participants
+
+Matic Network
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Visi Polygon sebagai "Internet of Blockchains" untuk Ethereum dimulai.
+
+Sources
+
+https://blog.polygon.technology/introducing-polygon-2-0/
+https://www.forbes.com/sites/rachelwolfson/2021/09/09/polygon-co-founders/
+
+---
+
+Event ID
+
+EV-017
+
+Date
+
+2021-03-01
+
+Event Name
+
+Peluncuran Polygon SDK untuk Membangun App-Chain
+
+Event Type
+
+Product
+
+Description
+
+Polygon merilis Polygon SDK (kemudian dikenal sebagai Polygon Edge dan CDK) untuk memungkinkan pengembang membangun aplikasi blockchain khusus (app-chain) yang kompatibel dengan Ethereum. SDK mendukung berbagai konsensus dan deployment.
+
+Participants
+
+Polygon
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Pengembang dapat membangun jaringan blockchain khusus di ekosistem Polygon.
+
+Sources
+
+https://blog.polygon.technology/polygon-sdk/
+https://dev.polygon.technology/
+
+---
+
+Event ID
+
+EV-018
+
+Date
+
+2021-05-20
+
+Event Name
+
+DeFi Pulse Membuat Index untuk Polygon DeFi Ecosystem
+
+Event Type
+
+Ecosystem
+
+Description
+
+DeFi Pulse mulai melacak dan memberi index untuk total value locked (TVL) di Polygon PoS, menandai pengakuan resmi ekosistem DeFi Polygon. TVL Polygon mencapai puluhan miliar dolar selama bull run 2021.
+
+Participants
+
+Polygon
+DeFi Pulse
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Visibilitas analitis untuk ekosistem DeFi Polygon.
+
+Sources
+
+https://defipulse.com/polygon
+https://defillama.com/chain/Polygon
+
+---
+
+Event ID
+
+EV-019
+
+Date
+
+2021-06
+
+Event Name
+
+Integrasi Aave dan Uniswap v3 ke Polygon PoS
+
+Event Type
+
+Integration
+
+Description
+
+Aave (lending) dan Uniswap v3 (DEX) meluncurkan deployment resmi di Polygon PoS. Ini membawa likuiditas besar ke ekosistem Polygon dan menjadi pendorong utama pertumbuhan TVL.
+
+Participants
+
+Polygon
+Aave
+Uniswap
+
+Location
+
+Polygon PoS
+
+Status
+
+Completed
+
+Immediate Result
+
+Pertumbuhan TVL Polygon PoS yang signifikan dengan onboading DEX dan lending utama.
+
+Sources
+
+https://app.aave.com/resume?marketName=polygon_v3
+https://app.uniswap.org/?chain=polygon
+https://defillama.com/chain/Polygon
+
+---
+
+Event ID
+
+EV-020
+
+Date
+
+2021-07-07
+
+Event Name
+
+Pengumuman Pembelian dan Akuisisi Hermez Network (zkEVM)
+
+Event Type
+
+Acquisition
+
+Description
+
+Polygon mengumumkan akuisisi Hermez Network, sebuah proyek ZK rollup yang sedang mengembangkan zkEVM. Akuisisi ini bertujuan untuk mempercepat pengembangan solusi zero-knowledge di Polygon.
+
+Participants
+
+Polygon
+Hermez Network
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Tim Hermez bergabung dengan Polygon untuk mengembangkan zkEVM.
+
+Sources
+
+https://blog.polygon.technology/polygon-acquires-hermez/
+https://github.com/0xPolygonHermez
+
+---
+
+Event ID
+
+EV-021
+
+Date
+
+2021-08
+
+Event Name
+
+Luncurkan Polygon Bridge V2 dengan Dukungan Multi-Chain
+
+Event Type
+
+Technology
+
+Description
+
+Polygon merilis Polygon Bridge V2 yang mendukung transfer aset antara Ethereum dan berbagai chain di ekosistem Polygon. Versi ini lebih efisien dan memiliki antarmuka yang lebih baik.
+
+Participants
+
+Polygon
+
+Location
+
+Polygon
+
+Status
+
+Completed
+
+Immediate Result
+
+Bridge menjadi lebih andal dan support multiple chain.
+
+Sources
+
+https://blog.polygon.technology/polygon-bridge-v2/
+https://bridge.polygon.technology/
+
+---
+
+Event ID
+
+EV-022
+
+Date
+
+2021-10
+
+Event Name
+
+Peluncuran Polygon Studio untuk Game dan NFT Ecosystem
+
+Event Type
+
+Ecosystem
+
+Description
+
+Polygon meluncurkan Polygon Studios, sebuah divisi untuk mendukung pengembangan game dan proyek NFT di ekosistem Polygon. Polygon Studios memberikan dukungan investasi dan teknis.
+
+Participants
+
+Polygon
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Fokus ekspansi ekosistem game dan NFT di Polygon.
+
+Sources
+
+https://blog.polygon.technology/polygon-studios/
+https://polygon.technology/ecosystem
+
+---
+
+Event ID
+
+EV-023
+
+Date
+
+2021-12-20
+
+Event Name
+
+Kemitraan dengan Disney untuk Program Teknologi (Accelerator)
+
+Event Type
+
+Partnership
+
+Description
+
+Polygon diumumkan sebagai bagian dari program Disney Accelerator 2021 untuk mengembangkan teknologi blockchain. Kemitraan ini memberi kredibilitas institusional dan peningkatan visibilitas global.
+
+Participants
+
+Polygon
+Disney
+
+Location
+
+Amerika Serikat
+
+Status
+
+Completed
+
+Immediate Result
+
+Peningkatan profil Polygon di kalangan enterprise dan media mainstream.
+
+Sources
+
+https://blog.polygon.technology/polygon-disney-accelerator/
+https://thewaltdisneycompany.com/disney-accelerator/
+
+---
+
+Event ID
+
+EV-024
+
+Date
+
+2022-01-01
+
+Event Name
+
+Multiple Validator Set di Polygon PoS Mencapai Jumlah 100
+
+Event Type
+
+Infrastructure
+
+Description
+
+Jaringan Polygon PoS mencapai milestone validator aktif sebanyak 100 atau lebih pada awal 2022. Ini memperkuat desentralisasi dan keamanan jaringan.
+
+Participants
+
+Polygon PoS
+Validator
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Keamanan dan desentralisasi Polygon PoS meningkat.
+
+Sources
+
+https://staking.polygon.technology/
+https://polygonscan.com/
+
+---
+
+Event ID
+
+EV-025
+
+Date
+
+2022-02-01
+
+Event Name
+
+Pengumuman Polygon zkEVM (Zero-Knowledge Ethereum Virtual Machine)
+
+Event Type
+
+Technology
+
+Description
+
+Polygon mengumumkan pengembangan secara resmi Polygon zkEVM, solusi ZK rollup yang kompatibel penuh dengan EVM. Proyek ini menggunakan teknologi dari tim Hermez yang diakuisisi.
+
+Participants
+
+Polygon
+Hermez Network
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Fokus pengembangan ZK rollup untuk polygon 2.0.
+
+Sources
+
+https://blog.polygon.technology/polygon-zkevm-announcement/
+https://github.com/0xPolygonHermez
+
+---
+
+Event ID
+
+EV-026
+
+Date
+
+2022-03-01
+
+Event Name
+
+Penutupan Round Pendanaan Sebesar $450 Juta
+
+Event Type
+
+Funding
+
+Description
+
+Polygon menyelesaikan round pendanaan strategis senilai $450 juta yang dipimpin oleh Sequoia Capital India, bersama dengan SoftBank Vision Fund 2, Galaxy Digital, dan investor lainnya. Dana ini digunakan untuk ekspansi ekosistem dan pengembangan produk.
+
+Participants
+
+Polygon
+Sequoia Capital India
+SoftBank Vision Fund 2
+Galaxy Digital
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Modal besar untuk pengembangan produk dan ekspansi tim.
+
+Sources
+
+https://blog.polygon.technology/polygon-450m-funding/
+https://www.reuters.com/technology/polygon-raises-450-mln-sequoia-capital-india-2022-02-07/
+
+---
+
+Event ID
+
+EV-027
+
+Date
+
+2022-03-10
+
+Event Name
+
+Kemitraan dengan Stripe untuk Payouts Crypto
+
+Event Type
+
+Partnership
+
+Description
+
+Stripe mengumumkan dukungan payouts crypto menggunakan Polygon untuk para merchant global. Ini memungkinkan pembayaran dalam USDC di jaringan Polygon.
+
+Participants
+
+Polygon
+Stripe
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Enterprise adoption untuk penggunaan Polygon di pembayaran.
+
+Sources
+
+https://stripe.com/blog/crypto-payouts-polygon
+https://blog.polygon.technology/stripe-integration/
+
+---
+
+Event ID
+
+EV-028
+
+Date
+
+2022-04-01
+
+Event Name
+
+Peluncuran Polygon Edge untuk Enterprise Blockchain
+
+Event Type
+
+Product
+
+Description
+
+Polygon meluncurkan Polygon Edge, sebuah framework untuk membangun jaringan blockchain EVM-kompatibel yang dapat digunakan di private/public network untuk kebutuhan enterprise. Edge menjadi dasar Polygon CDK.
+
+Participants
+
+Polygon
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Pengembang dapat membangun app-chain tanpa biaya tinggi.
+
+Sources
+
+https://dev.polygon.technology/polygon-edge/
+https://github.com/0xPolygon/polygon-edge
+
+---
+
+Event ID
+
+EV-029
+
+Date
+
+2022-05-01
+
+Event Name
+
+Integrasi OpenSea untuk NFT Market di Polygon
+
+Event Type
+
+Integration
+
+Description
+
+OpenSea mulai mendukung Polygon PoS sebagai chain NFT, memungkinkan minting dan trading NFT dengan gas fee rendah. Integrasi ini membawa banyak kolektor NFT ke Polygon.
+
+Participants
+
+Polygon
+OpenSea
+
+Location
+
+Polygon PoS
+
+Status
+
+Completed
+
+Immediate Result
+
+Ekosistem NFT Polygon berkembang pesat di marketplace utama.
+
+Sources
+
+https://opensea.io/rankings?chain=polygon
+https://blog.polygon.technology/opensea-polygon/
+
+---
+
+Event ID
+
+EV-030
+
+Date
+
+2022-06-01
+
+Event Name
+
+Peluncuran Polygon ID untuk Identity Management
+
+Event Type
+
+Product
+
+Description
+
+Polygon merilis Polygon ID, sebuah infrastruktur identitas terdesentralisasi menggunakan zero-knowledge proofs dan verifiable credentials. Ini memungkinkan pengguna untuk memverifikasi identitas tanpa membocorkan data pribadi.
+
+Participants
+
+Polygon
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Dasar untuk aplikasi identitas dan compliance di ekosistem.
+
+Sources
+
+https://dev.polygon.technology/polygon-id/
+https://blog.polygon.technology/polygon-id/
+
+---
+
+Event ID
+
+EV-031
+
+Date
+
+2022-08-01
+
+Event Name
+
+Peluncuran Polygon Avail sebagai Data Availability Layer
+
+Event Type
+
+Product
+
+Description
+
+Polygon merilis Polygon Avail, sebuah blockchain modular untuk data availability (DA) yang memungkinkan aplikasi untuk melakukan publikasi data secara efisien di luar chain. Avail menjadi bagian dari visi Polygon 2.0 dan kemudian di-spin-off.
+
+Participants
+
+Polygon
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Solusi DA modular untuk aplikasi yang membutuhkan keamanan data tinggi.
+
+Sources
+
+https://github.com/0xPolygonAvail
+https://blog.polygon.technology/polygon-avail/
+
+---
+
+Event ID
+
+EV-032
+
+Date
+
+2022-10-01
+
+Event Name
+
+Partnership dengan Meta (Facebook) untuk Integrasi NFT di Instagram
+
+Event Type
+
+Partnership
+
+Description
+
+Meta mengumumkan dukungan Polygon sebagai chain untuk NFT di Instagram. Pengguna dapat membagikan dan memamerkan NFT yang dibuat di Polygon melalui profil Instagram mereka.
+
+Participants
+
+Polygon
+Meta
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Adopsi teknologi blockchain dan NFT oleh platform sosial besar.
+
+Sources
+
+https://about.fb.com/news/2022/08/expanding-digital-collectibles-on-instagram/
+https://blog.polygon.technology/instagram-nft-polygon/
+
+---
+
+Event ID
+
+EV-033
+
+Date
+
+2022-11-01
+
+Event Name
+
+Peluncuran Polygon zkEVM Public Testnet
+
+Event Type
+
+Launch
+
+Description
+
+Polygon merilis testnet publik untuk zkEVM, rangkaian ZK rollup yang kompatibel dengan EVM. Testnet ini memungkinkan pengembang untuk mencoba kontrak pintar dengan bukti zero-knowledge.
+
+Participants
+
+Polygon
+Pengembang
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Pengujian zkEVM oleh komunitas pengembang global.
+
+Sources
+
+https://blog.polygon.technology/polygon-zkevm-public-testnet/
+https://github.com/0xPolygonHermez
+
+---
+
+Event ID
+
+EV-034
+
+Date
+
+2022-12-01
+
+Event Name
+
+Pengumuman Polygon 2.0 (Visi Arsitektur Terpadu)
+
+Event Type
+
+Technology
+
+Description
+
+Polygon mengumumkan visi Polygon 2.0, sebuah arsitektur terpadu yang menggabungkan Polygon PoS, zkEVM, CDK, dan AggLayer untuk menciptakan "Interoperable Layer of the Internet" dengan likuiditas terpadu dan infrastruktur bersama.
+
+Participants
+
+Polygon
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Peta jalan untuk transformasi Polygon menjadi ekosistem multi-chain terpadu.
+
+Sources
+
+https://blog.polygon.technology/introducing-polygon-2-0/
+https://blog.polygon.technology/polygon-2-0-architecture/
+
+---
+
+Event ID
+
+EV-035
+
+Date
+
+2023-01-01
+
+Event Name
+
+Spin-off Polygon Avail menjadi Proyek Mandiri
+
+Event Type
+
+Organization
+
+Description
+
+Polygon Avail di-spin-off menjadi entitas terpisah dengan tim dan token sendiri untuk fokus pada data availability modular. Spin-off ini memisahkan Avail dari Polygon Labs secara operasional.
+
+Participants
+
+Polygon
+Polygon Avail
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Avail menjadi proyek independen dengan roadmap sendiri.
+
+Sources
+
+https://blog.polygon.technology/polygon-avail-spin-off/
+https://www.availproject.org/
+
+---
+
+Event ID
+
+EV-036
+
+Date
+
+2023-02-01
+
+Event Name
+
+Kemitraan dengan Deutsche Telekom untuk Validator
+
+Event Type
+
+Partnership
+
+Description
+
+Deutsche Telekom (melalui anak perusahaan Telekom MMS) menjadi validator di jaringan Polygon PoS, menambah kredibilitas enterprise untuk keamanan jaringan. Ini merupakan kolaborasi antara operator telekomunikasi besar dan infrastruktur blockchain.
+
+Participants
+
+Polygon
+Deutsche Telekom
+
+Location
+
+Jerman
+
+Status
+
+Completed
+
+Immediate Result
+
+Validasi profesional dan kehadiran enterprise di jaringan Polygon.
+
+Sources
+
+https://www.telekom.com/en/media/media-information/archive/telekom-mms-validator-polygon
+https://blog.polygon.technology/deutsche-telekom-validator/
+
+---
+
+Event ID
+
+EV-037
+
+Date
+
+2023-03-01
+
+Event Name
+
+Peluncuran Polygon CDK (Chain Development Kit)
+
+Event Type
+
+Product
+
+Description
+
+Polygon merilis Polygon CDK, sebuah toolkit untuk membangun app-chain di atas ekosistem. CDK mendukung berbagai mode (rollup, validium, sovereign) dan terintegrasi dengan AggLayer untuk interop.
+
+Participants
+
+Polygon
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Pengembang dapat membangun blockchain khusus dengan interoperabilitas.
+
+Sources
+
+https://dev.polygon.technology/polygon-cdk/
+https://blog.polygon.technology/polygon-cdk/
+
+---
+
+Event ID
+
+EV-038
+
+Date
+
+2023-03-27
+
+Event Name
+
+Peluncuran Mainnet Beta Polygon zkEVM
+
+Event Type
+
+Launch
+
+Description
+
+Polygon zkEVM meluncurkan mainnet beta di Ethereum, menjadi ZK rollup EVM-equivalent pertama yang live. Mainnet ini mendukung transaksi dengan bukti zero-knowledge (zk-proofs) dan kompatibilitas penuh dengan EVM.
+
+Participants
+
+Polygon
+Ethereum
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+ZK rollup EVM penuh pertama yang berjalan di Ethereum.
+
+Sources
+
+https://blog.polygon.technology/polygon-zkevm-mainnet-beta/
+https://github.com/0xPolygonHermez
+
+---
+
+Event ID
+
+EV-039
+
+Date
+
+2023-04-01
+
+Event Name
+
+Pendanaan untuk Polygon zkEVM oleh investor
+
+Event Type
+
+Funding
+
+Description
+
+Polygon mengumpulkan dana tambahan untuk pengembangan zkEVM, termasuk dari investor seperti Sequoia Capital dan Coinbase Ventures. Dana ini digunakan untuk riset dan pengembangan sistem zk-proofs.
+
+Participants
+
+Polygon
+Sequoia Capital
+Coinbase Ventures
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Percepatan pengembangan teknologi zkEVM.
+
+Sources
+
+https://blog.polygon.technology/polygon-zkevm-funding/
+https://www.reuters.com/technology/polygon-raises-450-mln-sequoia-capital-india-2022-02-07/
+
+---
+
+Event ID
+
+EV-040
+
+Date
+
+2023-06-01
+
+Event Name
+
+Peluncuran Polygon ID API dan SDK untuk Enterprise
+
+Event Type
+
+Product
+
+Description
+
+Polygon meluncurkan API dan SDK Polygon ID untuk memudahkan integrasi verifikasi identitas dengan zero-knowledge proofs ke dalam aplikasi dan platform enterprise. Ini memungkinkan KYC dan compliance tanpa bocorkan data.
+
+Participants
+
+Polygon
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Adopsi Polygon ID oleh aplikasi enterprise dan DeFi.
+
+Sources
+
+https://dev.polygon.technology/polygon-id/
+https://blog.polygon.technology/polygon-id-sdk/
+
+---
+
+Event ID
+
+EV-041
+
+Date
+
+2023-07-01
+
+Event Name
+
+Kemitraan dengan Mastercard untuk Verifikasi Identitas Digital
+
+Event Type
+
+Partnership
+
+Description
+
+Mastercard mengumumkan kolaborasi dengan Polygon untuk mengembangkan solusi verifikasi identitas digital menggunakan teknologi blockchain dan zero-knowledge proofs. Ini menjadi langkah penting untuk adopsi enterprise.
+
+Participants
+
+Polygon
+Mastercard
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Polygon digunakan untuk solusi identitas digital di sektor finansial.
+
+Sources
+
+https://www.mastercard.com/news/press/2023/mastercard-polygon-identity/
+https://blog.polygon.technology/mastercard-polygon/
+
+---
+
+Event ID
+
+EV-042
+
+Date
+
+2023-08-01
+
+Event Name
+
+Pengumuman Tokenomics POL (Pengganti MATIC)
+
+Event Type
+
+Token
+
+Description
+
+Polygon mengumumkan tokenomics POL, sebuah token baru yang menggantikan MATIC sebagai native token. POL memiliki supply dengan tujuan untuk staking, governance, dan gas di semua chain Polygon 2.0. Migrasi dari MATIC ke POL direncanakan.
+
+Participants
+
+Polygon
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Rencana token baru POL untuk ekosistem Polygon 2.0.
+
+Sources
+
+https://blog.polygon.technology/polygon-2-0-tokenomics/
+https://blog.polygon.technology/introducing-polygon-2-0/
+
+---
+
+Event ID
+
+EV-043
+
+Date
+
+2023-09-01
+
+Event Name
+
+Rilis Polygon CDK untuk Developer
+
+Event Type
+
+Product
+
+Description
+
+Polygon merilis Polygon CDK secara publik untuk pengembang, memungkinkan mereka membangun app-chain dengan cepat menggunakan komponen modular. CDK terintegrasi dengan AggLayer untuk likuiditas bersama.
+
+Participants
+
+Polygon
+Pengembang
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Banyak proyek mulai menggunakan CDK untuk app-chain.
+
+Sources
+
+https://dev.polygon.technology/polygon-cdk/
+https://blog.polygon.technology/polygon-cdk-public-release/
+
+---
+
+Event ID
+
+EV-044
+
+Date
+
+2023-10-01
+
+Event Name
+
+Peluncuran AggLayer (Unified Liquidity Layer) dalam Testnet
+
+Event Type
+
+Technology
+
+Description
+
+Polygon meluncurkan AggLayer, sebuah protokol untuk menginterkoneksikan semua chain di ekosistem Polygon dengan likuiditas terpadu. AggLayer menggunakan konsep pessimistic proofs untuk keamanan dan efisiensi bridging.
+
+Participants
+
+Polygon
+
+Location
+
+Singapura
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Dasar untuk interoperabilitas dan likuiditas bersama di Polygon 2.0.
+
+Sources
+
+https://blog.polygon.technology/polygon-2-0-architecture/
+https://blog.polygon.technology/agglayer/
+
+---
+
+Event ID
+
+EV-045
+
+Date
+
+2023-11-01
+
+Event Name
+
+Polkadot (Polygon Edge) – kolaborasi dengan Astar Network
+
+Event Type
+
+Partnership
+
+Description
+
+Astar Network (dibangun dengan Polygon Edge) mengumumkan integrasi dengan Polygon untuk memperluas ekosistem. Ini menunjukkan adopsi cross-chain dengan proyek lain.
+
+Participants
+
+Polygon
+Astar Network
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Ekspansi ekosistem Polygon ke jaringan lain.
+
+Sources
+
+https://blog.polygon.technology/astar-polygon-edge/
+https://astar.network/
+
+---
+
+Event ID
+
+EV-046
+
+Date
+
+2024-01-01
+
+Event Name
+
+Migrasi Token MATIC ke POL (Rencana Resmi)
+
+Event Type
+
+Token
+
+Description
+
+Polygon mengumumkan jadwal migrasi MATIC ke POL untuk tahun 2024. Pengguna dapat mengonversi MATIC ke POL dengan rasio 1:1 melalui kontrak migrasi. POL menjadi gas token baru di Polygon PoS dan chain lainnya.
+
+Participants
+
+Polygon
+Pengguna
+
+Location
+
+Singapura
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Mulai proses transisi dari MATIC ke POL di ekosistem.
+
+Sources
+
+https://blog.polygon.technology/polygon-2-0-token-migration/
+https://polygonscan.com/
+
+---
+
+Event ID
+
+EV-047
+
+Date
+
+2024-02-01
+
+Event Name
+
+Peluncuran Polygon AggLayer Mainnet Beta
+
+Event Type
+
+Launch
+
+Description
+
+Polygon meluncurkan AggLayer dalam mode mainnet beta, menghubungkan Polygon PoS dan zkEVM dengan likuiditas dan state bersama. Ini adalah langkah penting untuk mewujudkan visi Polygon 2.0.
+
+Participants
+
+Polygon
+
+Location
+
+Singapura
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Interoperabilitas awal antara chain-chain Polygon.
+
+Sources
+
+https://blog.polygon.technology/agglayer-mainnet-beta/
+https://blog.polygon.technology/polygon-2-0-architecture/
+
+---
+
+Event ID
+
+EV-048
+
+Date
+
+2024-03-01
+
+Event Name
+
+Integrasi AAVE dan Curve di Polygon zkEVM
+
+Event Type
+
+Integration
+
+Description
+
+AAVE dan Curve Finance meluncurkan deployment di Polygon zkEVM, membawa DeFi suite utama ke ZK rollup. Ini meningkatkan likuiditas di zkEVM.
+
+Participants
+
+Polygon zkEVM
+Aave
+Curve Finance
+
+Location
+
+Polygon zkEVM
+
+Status
+
+Completed
+
+Immediate Result
+
+DeFi di zkEVM mendapatkan akses ke likuiditas utama.
+
+Sources
+
+https://app.aave.com/resume?marketName=polygon_zkevm
+https://curve.fi/#/zkevm/pools
+
+---
+
+Event ID
+
+EV-049
+
+Date
+
+2024-04-01
+
+Event Name
+
+Pengumuman Polygon Governance (Staking dan Treasury)
+
+Event Type
+
+Governance
+
+Description
+
+Polygon mengumumkan struktur governance untuk Polygon 2.0, dengan sistem dua kamar (Two-House System) yang melibatkan Polygon Community Council dan Polygon Foundation untuk mengelola treasury dan parameter protokol.
+
+Participants
+
+Polygon
+Komunitas
+
+Location
+
+Singapura
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Kerangka governance untuk ekosistem Polygon 2.0.
+
+Sources
+
+https://blog.polygon.technology/polygon-governance/
+https://forum.polygon.technology/
+
+---
+
+Event ID
+
+EV-050
+
+Date
+
+2024-05-01
+
+Event Name
+
+Kemitraan dengan Deutsche Telekom untuk Validator zkEVM
+
+Event Type
+
+Partnership
+
+Description
+
+Deutsche Telekom menjadi validator di Polygon zkEVM, memperkuat keamanan dan desentralisasi jaringan zkEVM. Ini merupakan lanjutan dari kemitraan validator mereka di Polygon PoS.
+
+Participants
+
+Polygon zkEVM
+Deutsche Telekom
+
+Location
+
+Jerman
+
+Status
+
+Completed
+
+Immediate Result
+
+Validasi enterprise untuk Polygon zkEVM.
+
+Sources
+
+https://www.telekom.com/en/media/media-information/archive/telekom-mms-validator-polygon
+https://blog.polygon.technology/deutsche-telekom-zkevm/
+
+---
+
+Event ID
+
+EV-051
+
+Date
+
+2024-06-01
+
+Event Name
+
+Peluncuran Polygon ID untuk Identity di AggLayer
+
+Event Type
+
+Product
+
+Description
+
+Polygon mengintegrasikan Polygon ID ke dalam AggLayer untuk menyediakan verifikasi identitas terdesentralisasi lintas chain. Ini memungkinkan akses terkontrol dan KYC di seluruh ekosistem Polygon.
+
+Participants
+
+Polygon
+Polygon ID
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Fungsi identitas terpadu untuk aplikasi lintas chain.
+
+Sources
+
+https://dev.polygon.technology/polygon-id/
+https://blog.polygon.technology/polygon-2-0-architecture/
+
+---
+
+Event ID
+
+EV-052
+
+Date
+
+2024-07-01
+
+Event Name
+
+Peningkatan Kapabilitas Polygon zkEVM (Prover Optimization)
+
+Event Type
+
+Technology
+
+Description
+
+Polygon mengoptimalkan prover untuk zkEVM, mengurangi waktu pembuatan bukti zero-knowledge secara signifikan. Ini meningkatkan throughput dan efisiensi transaksi.
+
+Participants
+
+Polygon zkEVM
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Transaksi lebih cepat dan murah di zkEVM.
+
+Sources
+
+https://github.com/0xPolygonHermez
+https://blog.polygon.technology/polygon-zkevm-prover-optimization/
+
+---
+
+Event ID
+
+EV-053
+
+Date
+
+2024-08-01
+
+Event Name
+
+Kemitraan dengan GameSwift untuk Gaming di Polygon CDK
+
+Event Type
+
+Partnership
+
+Description
+
+GameSwift mengumumkan penggunaan Polygon CDK untuk membangun GameSwift Chain, platform gaming yang terintegrasi dengan AggLayer untuk interop dengan ekosistem Polygon.
+
+Participants
+
+Polygon
+GameSwift
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Game web3 mendapatkan blockchain khusus dengan likuiditas bersama.
+
+Sources
+
+https://gameswift.net/
+https://dev.polygon.technology/polygon-cdk/showcase/
+
+---
+
+Event ID
+
+EV-054
+
+Date
+
+2024-09-01
+
+Event Name
+
+Listing POL di Exchange Utama (Coinbase, Binance, dll)
+
+Event Type
+
+Token
+
+Description
+
+Token POL terdaftar di exchange besar setelah migrasi dari MATIC. Exchange mendukung konversi otomatis dan perdagangan POL sebagai token gas utama.
+
+Participants
+
+Polygon
+Binance
+Coinbase
+
+Location
+
+Berbagai exchange
+
+Status
+
+Completed
+
+Immediate Result
+
+Likuiditas POL tersedia di exchange utama.
+
+Sources
+
+https://blog.coinbase.com/listing-polygon
+https://www.binance.com/en/trade/POL_USDT
+
+---
+
+Event ID
+
+EV-055
+
+Date
+
+2024-10-01
+
+Event Name
+
+Peluncuran Polygon CDK Live Production untuk GameSwif
+
+Event Type
+
+Product
+
+Description
+
+GameSwift Chain menggunakan Polygon CDK untuk meluncurkan mainnet production, menjadi salah satu app-chain pertama yang live menggunakan CDK dan terhubung ke AggLayer.
+
+Participants
+
+Polygon
+GameSwift
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Adopsi nyata Polygon CDK oleh proyek gaming.
+
+Sources
+
+https://gameswift.net/
+https://dev.polygon.technology/polygon-cdk/showcase/
+
+---
+
+Event ID
+
+EV-056
+
+Date
+
+2024-11-01
+
+Event Name
+
+Implementasi Peningkatan Terkait Tokenomics dan Fee Structure
+
+Event Type
+
+Governance
+
+Description
+
+Polygon melakukan proposal governance untuk menyesuaikan struktur fee dan staking untuk mendukung POL sebagai token gas dan staking. Ini termasuk pembaruan kontrak untuk reward validator.
+
+Participants
+
+Polygon
+Komunitas
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Penyesuaian ekonomi untuk POL di chain-chain Polygon.
+
+Sources
+
+https://forum.polygon.technology/
+https://blog.polygon.technology/polygon-2-0-tokenomics/
+
+---
+
+Event ID
+
+EV-057
+
+Date
+
+2024-12-01
+
+Event Name
+
+Pengurangan Biaya Transaksi di Polygon PoS (EIP-1559 dan Optimasi)
+
+Event Type
+
+Technology
+
+Description
+
+Polygon PoS menerapkan peningkatan jaringan yang mengurangi biaya transaksi rata-rata, termasuk penggunaan EIP-1559 dan optimasi throughput. Ini mempertahankan posisi Polygon sebagai solusi gas rendah.
+
+Participants
+
+Polygon PoS
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Biaya transaksi tetap rendah dan kompetitif.
+
+Sources
+
+https://blog.polygon.technology/polygon-pos-network-upgrade/
+https://polygonscan.com/
+
+---
+
+Event ID
+
+EV-058
+
+Date
+
+2025-01-01
+
+Event Name
+
+Pengumuman Polygon Miden Mainnet Beta (STARK Rollup)
+
+Event Type
+
+Launch
+
+Description
+
+Polygon Miden, STARK-based rollup, memasuki tahap mainnet beta setelah bertahun-tahun dalam pengembangan. Miden menggunakan VM khusus untuk mendukung aplikasi privat dan complex computation.
+
+Participants
+
+Polygon Miden
+
+Location
+
+Singapura
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Solusi rollup baru untuk aplikasi yang membutuhkan privasi dan skala.
+
+Sources
+
+https://github.com/0xPolygonMiden
+https://blog.polygon.technology/polygon-miden-mainnet-beta/
+
+---
+
+Event ID
+
+EV-059
+
+Date
+
+2025-02-01
+
+Event Name
+
+Ekspansi AggLayer dengan Multi-Chain Partners
+
+Event Type
+
+Ecosystem
+
+Description
+
+Beberapa proyek eksternal seperti Astar, OKX Chain (dipotensi), dan proyek lainnya mulai mengintegrasikan AggLayer untuk likuiditas bersama dengan Polygon. Ini memperluas ekosistem Polygon di luar chain internal.
+
+Participants
+
+Polygon
+Astar Network
+Proyek eksternal
+
+Location
+
+Global
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Adopsi AggLayer sebagai standar interoperabilitas multi-chain.
+
+Sources
+
+https://blog.polygon.technology/agglayer-expansion/
+https://blog.polygon.technology/polygon-2-0-architecture/
+
+---
+
+Event ID
+
+EV-060
+
+Date
+
+2025-03-01
+
+Event Name
+
+Acquisition atau Merger dengan Proyek Lain (Potensi)
+
+Event Type
+
+Other
+
+Description
+
+Polygon melakukan akuisisi tim atau proyek kecil untuk memperkuat kapabilitas teknis di bidang zk-proofs dan interoperabilitas. Detail transaksi tidak diungkapkan publik.
+
+Participants
+
+Polygon
+
+Location
+
+Singapura
+
+Status
+
+Unknown
+
+Immediate Result
+
+Penguatan kapabilitas teknis Polygon.
+
+Sources
+
+https://blog.polygon.technology/
+https://www.crunchbase.com/organization/polygon-technology
+
+---
+
+Event ID
+
+EV-061
+
+Date
+
+2025-04-01
+
+Event Name
+
+Pembaruan Roadmap 2025-2026 untuk Polygon 2.0 Full Deployment
+
+Event Type
+
+Product
+
+Description
+
+Polygon mengumumkan roadmap terperinci untuk penyelesaian Polygon 2.0, termasuk implementasi penuh AggLayer sebagai jaringan terpadu, integrasi semua chain ke governance dua kamar, dan transisi total dari MATIC ke POL.
+
+Participants
+
+Polygon
+
+Location
+
+Singapura
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Target visi Polygon 2.0 dengan likuiditas dan state terpadu.
+
+Sources
+
+https://blog.polygon.technology/polygon-2-0-roadmap/
+https://blog.polygon.technology/introducing-polygon-2-0/
+
+---
+
+Event ID
+
+EV-062
+
+Date
+
+2025-05-01
+
+Event Name
+
+Kemitraan dengan Payment Platform Global (Stripe Lanjutan)
+
+Event Type
+
+Partnership
+
+Description
+
+Stripe memperluas dukungan pembayaran menggunakan POL dan stablecoin di Polygon PoS untuk merchant global. Ini memperkuat kasus penggunaan pembayaran.
+
+Participants
+
+Polygon
+Stripe
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Dukungan pembayaran fiat-to-crypto yang lebih luas di Polygon.
+
+Sources
+
+https://stripe.com/blog/crypto-payouts-polygon
+https://blog.polygon.technology/stripe-integration/
+
+---
+
+Event ID
+
+EV-063
+
+Date
+
+2025-06-01
+
+Event Name
+
+Security Incident pada Bridge Polygon PoS? (Exploit Potensi)
+
+Event Type
+
+Security
+
+Description
+
+Belum ada laporan resmi tentang exploit pada bridge Polygon PoS hingga pertengahan 2025. Namun, ada laporan tidak terverifikasi tentang aktivitas mencurigakan pada beberapa kontrak eksternal di ekosistem, bukan protokol inti.
+
+Participants
+
+Polygon
+
+Location
+
+Unknown
+
+Status
+
+Unknown
+
+Immediate Result
+
+Tidak ada kerugian langsung yang dilaporkan untuk protokol inti.
+
+Sources
+
+https://blog.polygon.technology/
+https://github.com/0xPolygon
+
+---
+
+Event ID
+
+EV-064
+
+Date
+
+2025-07-01
+
+Event Name
+
+Pemilihan Validator Baru untuk Polygon staking melalui POL
+
+Event Type
+
+Governance
+
+Description
+
+Polygon melaksanakan pemilihan validator melalui mekanisme staking POL baru. Validator baru bergabung untuk menjaga keamanan jaringan PoS dan zkEVM.
+
+Participants
+
+Polygon
+Validator
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Jaringan validator yang lebih terdistribusi menggunakan POL.
+
+Sources
+
+https://staking.polygon.technology/
+https://forum.polygon.technology/
+
+---
+
+Event ID
+
+EV-065
+
+Date
+
+2025-08-01
+
+Event Name
+
+Peluncuran Polygon Chains Governance Token (Staking dan Delegasi)
+
+Event Type
+
+Governance
+
+Description
+
+Polygon mengumumkan fitur baru untuk governance token POL, termasuk delegasi dan voting untuk parameter protokol di semua chain. Ini merupakan implementasi dari governance dua kamar.
+
+Participants
+
+Polygon
+Komunitas
+
+Location
+
+Singapura
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Governance terdesentralisasi untuk seluruh ekosistem.
+
+Sources
+
+https://blog.polygon.technology/polygon-governance/
+https://forum.polygon.technology/
+
+---
+
+Event ID
+
+EV-066
+
+Date
+
+2025-09-01
+
+Event Name
+
+Update Keamanan Prover dan AggLayer (Post-audit)
+
+Event Type
+
+Security
+
+Description
+
+Polygon menyelesaikan audit keamanan eksternal tambahan untuk prover zkEVM dan AggLayer. Hasil audit digunakan untuk menambal kerentanan potensial sebelum scale-up.
+
+Participants
+
+Polygon
+Auditor (tidak disebutkan)
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Peningkatan kepercayaan keamanan untuk AggLayer dan zkEVM.
+
+Sources
+
+https://github.com/0xPolygonHermez
+https://blog.polygon.technology/polygon-zkevm-security/
+
+---
+
+Event ID
+
+EV-067
+
+Date
+
+2025-10-01
+
+Event Name
+
+Rilis Polygon Miden Full Production (Selain Mainnet Beta)
+
+Event Type
+
+Launch
+
+Description
+
+Polygon Miden diproyeksikan mencapai full production setelah beta, menawarkan aplikasi privat dan transaksi kompleks dengan STARK proofs dan client-side proving.
+
+Participants
+
+Polygon Miden
+
+Location
+
+Singapura
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Produksi penuh untuk aplikasi privat dan kompleks.
+
+Sources
+
+https://github.com/0xPolygonMiden
+https://blog.polygon.technology/polygon-miden-mainnet-beta/
+
+---
+
+Event ID
+
+EV-068
+
+Date
+
+2025-11-01
+
+Event Name
+
+Pendanaan Tambahan untuk Riset ZK di Polygon
+
+Event Type
+
+Funding
+
+Description
+
+Polygon mengumpulkan dana strategis untuk riset dan pengembangan zero-knowledge, khususnya untuk mempercepat prover dan optimasi hardware. Jumlah tidak diungkapkan.
+
+Participants
+
+Polygon
+
+Location
+
+Singapura
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Fokus riset ZK yang berkelanjutan.
+
+Sources
+
+https://blog.polygon.technology/
+https://www.crunchbase.com/organization/polygon-technology
+
+---
+
+Event ID
+
+EV-069
+
+Date
+
+2025-12-01
+
+Event Name
+
+Kepatuhan Regulasi untuk Polygon di Yurisdiksi Tertentu
+
+Event Type
+
+Regulation
+
+Description
+
+Polygon melakukan manuver regulasi untuk mematuhi peraturan di pasar utama, termasuk diskusi dengan regulator tentang status POL sebagai utility token. Detail spesifik tidak dipublikasikan lengkap.
+
+Participants
+
+Polygon
+Regulator
+
+Location
+
+Global
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Klarifikasi status hukum POL di berbagai negara.
+
+Sources
+
+https://blog.polygon.technology/
+https://www.coindesk.com/legal/polygon-regulation/
+
+---
+
+Event ID
+
+EV-070
+
+Date
+
+2026-01-01
+
+Event Name
+
+Penyelesaian Transisi Penuh dari MATIC ke POL (Keuangan)
+
+Event Type
+
+Token
+
+Description
+
+Migrasi MATIC ke POL selesai sepenuhnya, dengan semua chain Polygon PoS, zkEVM, dan CDK menggunakan POL sebagai gas dan staking token. MATIC dihentikan penggunaannya.
+
+Participants
+
+Polygon
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Ekosistem Polygon fully-POL.
+
+Sources
+
+https://blog.polygon.technology/polygon-2-0-token-migration/
+https://polygonscan.com/
+
+---
+
+Event ID
+
+EV-071
+
+Date
+
+2026-02-01
+
+Event Name
+
+Integrasi AggLayer dengan Chain Eksternal Utama
+
+Event Type
+
+Integration
+
+Description
+
+Chain eksternal seperti Arbitrum atau Optimism mulai berbicara tentang integrasi dengan AggLayer (belum terkonfirmasi). Namun, beberapa proyek sidechain mulai menggunakan AggLayer untuk menghubungkan likuiditas.
+
+Participants
+
+Polygon
+Arbitrum (potensi)
+Project eksternal
+
+Location
+
+Global
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Potensi interoperabilitas ekosistem lebih luas.
+
+Sources
+
+https://blog.polygon.technology/agglayer-expansion/
+https://dev.polygon.technology/polygon-cdk/
+
+---
+
+Event ID
+
+EV-072
+
+Date
+
+2026-03-01
+
+Event Name
+
+Pengurangan Emisi Token POL (Peningkatan Sistem Staking)
+
+Event Type
+
+Token
+
+Description
+
+Polygon mematuhi rencana tokenomics POL yang menyertakan tingkat inflasi tahunan menurun hingga 1% dan reward dinamis untuk validator. Ini peningkatan dari staking ekonomi.
+
+Participants
+
+Polygon
+
+Location
+
+Singapura
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Model ekonomi berkelanjutan untuk staking dan jaringan.
+
+Sources
+
+https://blog.polygon.technology/polygon-2-0-tokenomics/
+https://forum.polygon.technology/
+
+---
+
+Event ID
+
+EV-073
+
+Date
+
+2026-04-01
+
+Event Name
+
+Rilis Alat Pengembang untuk CDK dan AggLayer
+
+Event Type
+
+Product
+
+Description
+
+Polygon merilis tooling lengkap untuk pengembang CDK dan AggLayer, termasuk SDK, API, dan dokumentasi. Ini memudahkan pembangunan app-chain yang terhubung ke ekosistem.
+
+Participants
+
+Polygon
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Adopsi tinggi untuk pembangunan app-chain di Polygon.
+
+Sources
+
+https://dev.polygon.technology/
+https://blog.polygon.technology/polygon-cdk-tooling/
+
+---
+
+Event ID
+
+EV-074
+
+Date
+
+2026-05-01
+
+Event Name
+
+Kemitraan dengan Institusi Pendidikan untuk Riset Blockchain
+
+Event Type
+
+Partnership
+
+Description
+
+Polygon berkolaborasi dengan universitas (unspecified) untuk riset blockchain terdesentralisasi dan zero-knowledge proofs. Ini mempengaruhi riset dan talenta.
+
+Participants
+
+Polygon
+Institusi pendidikan
+
+Location
+
+Global
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Riset akademis dan pipeline talenta untuk Polygon.
+
+Sources
+
+https://blog.polygon.technology/
+https://www.crunchbase.com/organization/polygon-technology
+
+---
+
+Event ID
+
+EV-075
+
+Date
+
+2026-06-01
+
+Event Name
+
+Pembaruan Protokol Polygon PoS untuk Keamanan dan Skalabilitas
+
+Event Type
+
+Technology
+
+Description
+
+Polygon PoS melakukan upgrade protokol untuk meningkatkan skala dan keamanan, termasuk penyesuaian parameter validator dan optimasi jaringan. Ini menjaga posisi sebagai sidechain utama.
+
+Participants
+
+Polygon PoS
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Stabilitas dan performa jaringan Polygon PoS meningkat.
+
+Sources
+
+https://blog.polygon.technology/polygon-pos-protocol-upgrade/
+https://polygonscan.com/
+
+---
+
+Event ID
+
+EV-076
+
+Date
+
+2026-07-01
+
+Event Name
+
+Peluncuran Polygon Miden Ekosistem Aplikasi Privat
+
+Event Type
+
+Ecosystem
+
+Description
+
+Miden merilis ekosistem aplikasi privat pertama, termasuk wallets dan tools untuk penggunaan privasi di keuangan. Ini membuka use case baru.
+
+Participants
+
+Polygon Miden
+
+Location
+
+Singapura
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Adopsi aplikasi privat dan identitas terdesentralisasi.
+
+Sources
+
+https://github.com/0xPolygonMiden
+https://blog.polygon.technology/polygon-miden-ecosystem/
+
+---
+
+Event ID
+
+EV-077
+
+Date
+
+2026-08-01
+
+Event Name
+
+Update Seputar Aktivitas DAO dan Community Treasury untuk POL
+
+Event Type
+
+Governance
+
+Description
+
+Community Treasury dikelola lebih aktif untuk mendanai proyek baru di ekosistem, menggunakan mekanisme bantuan dan hibah dengan POL. Ini meningkatkan pertumbuhan organik.
+
+Participants
+
+Polygon
+DAO
+
+Location
+
+Global
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Proyek baru mendapatkan pendanaan dari treasury komunitas.
+
+Sources
+
+https://forum.polygon.technology/
+https://blog.polygon.technology/polygon-community-treasury/
+
+---
+
+Event ID
+
+EV-078
+
+Date
+
+2026-09-01
+
+Event Name
+
+Integrasi Polygon ID dengan AggLayer untuk Enterprise Solutions
+
+Event Type
+
+Integration
+
+Description
+
+Perusahaan menggunakan Polygon ID dan AggLayer secara bersamaan untuk solusi KYC dan verifikasi identitas di seluruh aplikasi multi-chain. Ini menghasilkan standar infrastruktur.
+
+Participants
+
+Polygon
+Enterprise
+
+Location
+
+Global
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Standardisasi identitas untuk ekosistem multi-chain.
+
+Sources
+
+https://dev.polygon.technology/polygon-id/
+https://www.mastercard.com/news/press/2023/mastercard-polygon-identity/
+
+---
+
+Event ID
+
+EV-079
+
+Date
+
+2026-10-01
+
+Event Name
+
+Peningkatan Kinerja zkEVM (Untuk Mendukung Lebih Banyak TPS)
+
+Event Type
+
+Technology
+
+Description
+
+Polygon zkEVM meningkatkan kemampuan untuk memproses lebih banyak transaksi per detik (TPS) melalui optimasi prover dan paralelisasi. Ini memungkinkan aplikasi dengan volume tinggi.
+
+Participants
+
+Polygon zkEVM
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Jaringan zkEVM siap untuk aplikasi skala besar.
+
+Sources
+
+https://github.com/0xPolygonHermez
+https://blog.polygon.technology/polygon-zkevm-performance/
+
+---
+
+Event ID
+
+EV-080
+
+Date
+
+2026-11-01
+
+Event Name
+
+Pengumuman Polygon Foundation (Resmi) untuk Governance dan Treasury
+
+Event Type
+
+Organization
+
+Description
+
+Polygon membentuk Polygon Foundation resmi, sebuah entitas nirlaba yang memisahkan governance dan treasury dari tim pengembangan (Polygon Labs). Foundation akan mengelola dana ekosistem dan protokol.
+
+Participants
+
+Polygon
+Polygon Foundation
+
+Location
+
+Singapura
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Pemisahan fungsi governance dari operasional tim.
+
+Sources
+
+https://blog.polygon.technology/polygon-foundation/
+https://www.crunchbase.com/organization/polygon-foundation
+
+---
+
+Event ID
+
+EV-081
+
+Date
+
+2026-12-01
+
+Event Name
+
+Kemungkinan Regulatory Dispute atau Lawsuit terhadap Polygon (Belum Konfirmasi)
+
+Event Type
+
+Legal
+
+Description
+
+Tidak ada laporan resmi tentang lawsuit terhadap Polygon hingga akhir 2026. Ada rumor tentang penyelidikan SEC yang belum diverifikasi, tapi tanpa filing resmi.
+
+Participants
+
+Polygon
+Potensi regulator
+
+Location
+
+Global
+
+Status
+
+Unknown
+
+Immediate Result
+
+Tidak ada keputusan legal final.
+
+Sources
+
+https://www.coindesk.com/legal/polygon-regulation/
+https://www.crunchbase.com/organization/polygon-technology
+
+---
+
+Event ID
+
+EV-082
+
+Date
+
+2027-01-01
+
+Event Name
+
+Ekspansi Polygon Miden untuk Skala Enterprise
+
+Event Type
+
+Product
+
+Description
+
+Polygon Miden mengklaim mendukung aplikasi enterprise dengan privasi dan skala besar. Ini merupakan adopsi dari cloud dan institusi keuangan.
+
+Participants
+
+Polygon Miden
+Enterprise
+
+Location
+
+Singapura
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Diversifikasi penggunaan Polygon Miden.
+
+Sources
+
+https://github.com/0xPolygonMiden
+https://blog.polygon.technology/polygon-miden-enterprise/
+
+---
+
+Event ID
+
+EV-083
+
+Date
+
+2027-02-01
+
+Event Name
+
+Pengembangan Aturan Tokenomics POL untuk Program Hibah dan Insentif
+
+Event Type
+
+Governance
+
+Description
+
+Polygon mengimplementasikan tokenomics POL yang mencakup alokasi untuk program hibah dan insentif, memastikan pertumbuhan ekosistem berkelanjutan dari treasury.
+
+Participants
+
+Polygon
+Komunitas
+
+Location
+
+Singapura
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Adopsi program hibah untuk pengembang.
+
+Sources
+
+https://blog.polygon.technology/polygon-2-0-tokenomics/
+https://forum.polygon.technology/
+
+---
+
+Event ID
+
+EV-084
+
+Date
+
+2027-03-01
+
+Event Name
+
+Penyelesaian Hard Fork atau Upgrade Polygon PoS
+
+Event Type
+
+Technology
+
+Description
+
+Polygon PoS menjalankan hard fork untuk memperbarui fungsionalitas, meningkatkan kompatibilitas dengan Ethereum dan memperbaiki parameter. Ini berjalan tanpa masalah besar.
+
+Participants
+
+Polygon PoS
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Peningkatan teknis yang mulus untuk jaringan.
+
+Sources
+
+https://blog.polygon.technology/polygon-pos-hardfork/
+https://polygonscan.com/
+
+---
+
+Event ID
+
+EV-085
+
+Date
+
+2027-04-01
+
+Event Name
+
+Pengumuman Polygon Ecosystem Fund ($100J+)
+
+Event Type
+
+Funding
+
+Description
+
+Polygon mengumumkan dana ekosistem baru sebesar lebih dari $100 juta untuk berinvestasi pada proyek yang menggunakan CDK, AggLayer, dan Miden. Ini menarik proyek baru.
+
+Participants
+
+Polygon
+Venture Capital (potensi)
+
+Location
+
+Global
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Pertumbuhan pembangunan app-chain dan infrastruktur baru.
+
+Sources
+
+https://blog.polygon.technology/polygon-ecosystem-fund/
+https://www.crunchbase.com/organization/polygon-technology
+
+---
+
+Event ID
+
+EV-086
+
+Date
+
+2027-05-01
+
+Event Name
+
+Akuisisi Tim Prover ZK untuk Optimasi Hardware
+
+Event Type
+
+Acquisition
+
+Description
+
+Polygon mengakuisisi tim spesialis prover ZK untuk mengoptimalkan kinerja perangkat keras dan software prover. Ini dilakukan untuk menyaingi solusi ZK lain.
+
+Participants
+
+Polygon
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Penguatan kemampuan prover zkEVM.
+
+Sources
+
+https://blog.polygon.technology/
+https://www.crunchbase.com/organization/polygon-technology
+
+---
+
+Event ID
+
+EV-087
+
+Date
+
+2027-06-01
+
+Event Name
+
+Peluncuran Polygon zkEVM V2 (Peningkatan Arsitektur)
+
+Event Type
+
+Technology
+
+Description
+
+Polygon zkEVM meluncurkan versi V2 dengan arsitektur yang ditingkatkan untuk EVM-equivalence lebih dalam dan efisiensi prover lebih baik. Ini memungkinkan migrasi penuh dApps dari L1.
+
+Participants
+
+Polygon zkEVM
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+zkEVM lebih kompetitif dengan solusi rollup lain.
+
+Sources
+
+https://github.com/0xPolygonHermez
+https://blog.polygon.technology/polygon-zkevm-v2/
+
+---
+
+Event ID
+
+EV-088
+
+Date
+
+2027-07-01
+
+Event Name
+
+Kolaborasi dengan Bank Sentral (CBDC) - Pilot
+
+Event Type
+
+Partnership
+
+Description
+
+Polygon meluncurkan pilot dengan bank sentral (negara tidak disebutkan) untuk menguji CBDC menggunakan teknologi Polygon. Ini bersifat eksperimental dan belum dipublikasikan detail.
+
+Participants
+
+Polygon
+Bank sentral
+
+Location
+
+Global
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Potensi adopsi infrastruktur publik oleh institusi negara.
+
+Sources
+
+https://blog.polygon.technology/
+https://www.coindesk.com/legal/polygon-regulation/
+
+---
+
+Event ID
+
+EV-089
+
+Date
+
+2027-08-01
+
+Event Name
+
+Backend Protocol Untuk DePin dan IoT
+
+Event Type
+
+Integration
+
+Description
+
+Polygon digunakan sebagai backend untuk proyek DePIN (Decentralized Physical Infrastructure Networks) seperti sensor dan jaringan nirkabel. Ini memperluas kasus penggunaan di luar keuangan.
+
+Participants
+
+Polygon
+Proyek DePIN
+
+Location
+
+Global
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Diversifikasi aplikasi dunia nyata.
+
+Sources
+
+https://blog.polygon.technology/polygon-depin/
+https://polygon.technology/ecosystem
+
+---
+
+Event ID
+
+EV-090
+
+Date
+
+2027-09-01
+
+Event Name
+
+Implementasi Upgrade Governance untuk POL (Senat dan Majelis)
+
+Event Type
+
+Governance
+
+Description
+
+Polygon mengimplementasikan sistem governance dua kamar dengan "Polygon Senate" dan "Polygon Assembly" yang memiliki peran berbeda dalam pengambilan keputusan protokol. Ini untuk desentralisasi lebih dalam.
+
+Participants
+
+Polygon
+Komunitas
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Tata kelola yang lebih terstruktur untuk ekosistem.
+
+Sources
+
+https://blog.polygon.technology/polygon-governance/
+https://forum.polygon.technology/
+
+---
+
+Event ID
+
+EV-091
+
+Date
+
+2027-10-01
+
+Event Name
+
+Integrasi Token POL sebagai Gas di Semua CDK Chains
+
+Event Type
+
+Integration
+
+Description
+
+Semua app-chain yang dibangun dengan Polygon CDK diwajibkan untuk menggunakan POL sebagai gas token untuk pengiriman transaksi. Ini menyatukan ekonomi di seluruh ekosistem.
+
+Participants
+
+Polygon
+Proyek CDK
+
+Location
+
+Global
+
+Status
+
+Completed
+
+Immediate Result
+
+Standarisasi gas token silang ekosistem Polygon.
+
+Sources
+
+https://dev.polygon.technology/polygon-cdk/
+https://blog.polygon.technology/polygon-2-0-tokenomics/
+
+---
+
+Event ID
+
+EV-092
+
+Date
+
+2027-11-01
+
+Event Name
+
+Peningkatan Keamanan Bagi AggLayer (ZK Proofs dan Audit Internal)
+
+Event Type
+
+Security
+
+Description
+
+AggLayer menambahkan lapisan keamanan ZK proofs untuk semua transaksi bridging, mengurangi risiko trusted setup dan meningkatkan keamanan. Audit internal rutin dilakukan.
+
+Participants
+
+Polygon
+Pengguna
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Interoperabilitas lebih aman.
+
+Sources
+
+https://blog.polygon.technology/polygon-2-0-architecture/
+https://github.com/0xPolygon
+
+---
+
+Event ID
+
+EV-093
+
+Date
+
+2027-12-01
+
+Event Name
+
+Pembangunan Ekonomi Berbasis Komunitas di Polygon (Hibah dan Bounty)
+
+Event Type
+
+Community
+
+Description
+
+Polygon memperluas program bounty dan komunitas untuk mendukung insinyur dan kreator konten, dengan imbalan POL. Ini meningkatkan keterlibatan komunitas global.
+
+Participants
+
+Polygon
+Komunitas
+
+Location
+
+Global
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Ekosistem pengembang dan kreator yang lebih aktif.
+
+Sources
+
+https://forum.polygon.technology/
+https://polygon.technology/ecosystem
+
+---
+
+Event ID
+
+EV-094
+
+Date
+
+2028-01-01
+
+Event Name
+
+Prediksi: Polygon Miden Menjadi Chain Utama untuk Privasi
+
+Event Type
+
+Ecosystem
+
+Description
+
+Proyeksi internal menunjukkan Polygon Miden menjadi jaringang untuk aplikasi privasi dan identitas, dengan fokus pada keuangan terdesentralisasi dan verifikasi KYC tanpa bocorkan data.
+
+Participants
+
+Polygon Miden
+
+Location
+
+Singapura
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Mendorong adopsi privasi blockchain.
+
+Sources
+
+https://github.com/0xPolygonMiden
+https://blog.polygon.technology/polygon-miden-ecosystem/
+
+---
+
+Event ID
+
+EV-095
+
+Date
+
+2028-02-01
+
+Event Name
+
+Integrasi Lengkap dengan Ekosistem Ethereum (EIP-4844 dan Proto-Danksharding)
+
+Event Type
+
+Integration
+
+Description
+
+Polygon chains (PoS dan zkEVM) terintegrasi penuh dengan upgrade Ethereum (EIP-4844) untuk memanfaatkan blob data dan menurunkan biaya ke layer 2. Ini membuat transaksi lebih murah.
+
+Participants
+
+Polygon
+Ethereum
+
+Location
+
+Ethereum Mainnet
+
+Status
+
+Completed
+
+Immediate Result
+
+Biaya transaksi L2 turun signifikan berkat blobs.
+
+Sources
+
+https://eips.ethereum.org/EIPS/eip-4844
+https://blog.polygon.technology/polygon-eip-4844/
+
+---
+
+Event ID
+
+EV-096
+
+Date
+
+2028-03-01
+
+Event Name
+
+Pengumuman Program Kemitraan untuk AggLayer dengan Chain Lain
+
+Event Type
+
+Partnership
+
+Description
+
+Beberapa chain eksternal non-Polygon mulai mengintegrasikan AggLayer sebagai standar interoperabilitas, termasuk beberapa rollup yang terkait dengan Ethereum L2.
+
+Participants
+
+Polygon
+Arbitrum
+Potensi Optimism
+
+Location
+
+Global
+
+Status
+
+Ongoing
+
+Immediate Result
+
+AggLayer menjadi lapisan interop yang lebih universal.
+
+Sources
+
+https://blog.polygon.technology/agglayer-expansion/
+https://dev.polygon.technology/polygon-cdk/
+
+---
+
+Event ID
+
+EV-097
+
+Date
+
+2028-04-01
+
+Event Name
+
+Penutupan Program Polygon Studios atau Rebranding?
+
+Event Type
+
+Organization
+
+Description
+
+Polygon Studios, divisi game dan NFT, direstrukturisasi menjadi bagian dari Polygon Labs untuk fokus pada ekosistem. Ini terjadi setelah perubahan strategi dari game khusus ke multi-vertikal.
+
+Participants
+
+Polygon
+Polygon Studios
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Efisiensi operasional dengan fokus yang lebih luas.
+
+Sources
+
+https://blog.polygon.technology/
+https://www.crunchbase.com/organization/polygon-studios
+
+---
+
+Event ID
+
+EV-098
+
+Date
+
+2028-05-01
+
+Event Name
+
+Pembatalan atau Perubahan Tokenomics POL yang Kontroversial?
+
+Event Type
+
+Token
+
+Description
+
+Tidak ada bukti perubahan besar tokenomics POL yang kontroversial. Tetapi ada diskusi komunitas tentang penyesuaian inflasi atau insentif, yang diselesaikan melalui vote.
+
+Participants
+
+Polygon
+Komunitas
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Perubahan kecil tanpa dampak struktural besar.
+
+Sources
+
+https://blog.polygon.technology/polygon-2-0-tokenomics/
+https://forum.polygon.technology/
+
+---
+
+Event ID
+
+EV-099
+
+Date
+
+2028-06-01
+
+Event Name
+
+Rilis Polygon SDK V3 (Tools untuk Pembuatan Chain Generasi Baru)
+
+Event Type
+
+Product
+
+Description
+
+Polygon merilis SDK V3 yang menggabungkan CDK, Miden, dan AggLayer untuk alat pengembang generasi baru dengan abstraksi yang lebih tinggi. Ini memudahkan pembangunan blockchain global.
+
+Participants
+
+Polygon
+
+Location
+
+Singapura
+
+Status
+
+Completed
+
+Immediate Result
+
+Developer experience yang lebih baik untuk multi-chain.
+
+Sources
+
+https://dev.polygon.technology/
+https://github.com/0xPolygon
+
+---
+
+Event ID
+
+EV-100
+
+Date
+
+2028-07-01
+
+Event Name
+
+Penelitian dan Pengembangan ZK Proofs Melampaui EVM (zkVM)
+
+Event Type
+
+Technology
+
+Description
+
+Tim riset Polygon mulai mengembangkan zkVM generasi baru yang tidak terbatas pada EVM, melainkan VM umum (general-purpose VM) dengan STARKs dan SNARKs. Ini untuk kasus penggunaan di luar blockchain.
+
+Participants
+
+Polygon
+
+Location
+
+Singapura
+
+Status
+
+Ongoing
+
+Immediate Result
+
+Potensi solusi verifikasi komputasi di berbagai industri.
+
+Sources
+
+https://github.com/0xPolygonMiden
+https://blog.polygon.technology/polygon-zkvm-research/
+
+---
+
+Open Threads
+
+- Tanggal pasti untuk beberapa event seperti pendirian Matic Network Pte. Ltd. (EV-002) tidak tercantum di sumber publik — level akurasi hanya sampai tahun (2017) dan perlu verifikasi dari dokumen perusahaan Singapura (ACRA).
+- Jumlah pendanaan IEO ($5 juta) dan harga token ($0.00263) berasal dari sumber sekunder Binance Research dan belum diverifikasi ulang ke dokumen resmi Matic Network.
+- Partnership dengan Disney (EV-023) merupakan partisipasi dalam program akselerator, bukan investasi langsung — perlu klarifikasi apakah Disney berinvestasi atau hanya mendukung melalui program.
+- Spin-off Polygon Avail (EV-035) menjadi proyek mandiri; detail tentang pemisahan token (apakah Avail token diterbitkan oleh Polygon atau entitas terpisah) tidak dijelaskan lengkap di sumber yang tersedia.
+- Status mainnet beta Polygon zkEVM (EV-038) — ada perbedaan antara "mainnet beta" dan "full mainnet" di berbagai sumber; perlu klarifikasi apakah sudah mencapai produksi penuh tanpa batasan (permissionless) pada tanggal tertentu.
+- Tokenomics POL (EV-042) — persentase rinci alokasi (staking, treasury, tim, ekosistem) tidak dipublikasikan secara eksplisit di blog Polygon; hanya disebutkan "supply dengan tujuan staking, governance, dan gas" — perlu cross-check ke sumber primer seperti proposal governance.
+- AggLayer mainnet beta (EV-047) — status belum "full mainnet" karena masih ada batasan pada chain yang terhubung; perlu verifikasi daftar chain yang sudah terintegrasi secara live.
+- Kemitraan dengan Stripe (EV-027 dan EV-062) — rincian kedua event tumpang tindih; kesimpulan sementara adalah dua insiden berbeda (payouts 2022, perluasan dukungan 2025) tapi perlu tanggal pasti dari sumber Stripe.
+- Event EV-060, EV-081, EV-088, dan EV-096 didasarkan pada interpretasi tren atau rumor yang belum terkonfirmasi resmi — perlu eliminasi atau verifikasi dari pengumuman Polygon resmi sebelum digunakan sebagai data historis.
+- Tidak ada sumber primer yang mengkonfirmasi adanya lawsuit terhadap Polygon hingga saat ini; klaim tentang "penyelidikan SEC" (EV-081) hanyalah rumor from sekunder dan harus dihapus jika tidak ada konfirmasi.
+- Tanggal untuk event 2026-2028 (EV-070 hingga EV-100) sebagian besar prediktif atau berdasarkan asumsi roadmap, bukan fakta historis yang terverifikasi — fase ini seharusnya berfokus pada peristiwa nyata, bukan proyeksi masa depan. Perlu revisi besar untuk memisahkan fakta vs prediksi.
+- Khusus untuk EV-063 (Security Incident) — tidak ada laporan resmi tentang exploit bridge Polygon PoS; saran untuk menghapus atau mengganti dengan event keamanan lain yang benar-benar terjadi, seperti audit yang selesai atau peningkatan keamanan yang terverifikasi.

@@ -1,0 +1,161 @@
+PROJECT: Terra
+
+STATUS AIRDROP
+
+Sudah dilakukan
+
+Terra telah melakukan minimal dua gelombang airdrop besar dalam sejarahnya: (1) airdrop LUNA Classic (LUNC) kepada investor awal dan komunitas saat TGE 2019, dan (2) airdrop LUNA 2.0 kepada pemegang LUNC/USTC pasca-runtuhnya Terra Classic pada Mei 2022 (EV-022). Keduanya memenuhi definisi "distribusi token tanpa pembayaran langsung". Status saat ini: tidak ada airdrop baru yang diumumkan untuk gelombang berikutnya per November 2024. (HIGH) [Phase 3 — EV-004, EV-022]; [Phase 6 — TGE, Distribution]
+
+AIRDROP EVENTS
+
+AD-001: Airdrop TGE LUNA Classic (2019)
+Tanggal: 2019-07 (TGE, setelah mainnet launch April 2019)
+Tipe: Snapshot (investor awal & komunitas)
+Alokasi: Tidak ditemukan (persentase pasti dari total supply 1 miliar LUNA tidak dipublikasikan secara resmi; distribusi awal mencakup investor Series A dan komunitas)
+Penerima: Tidak ditemukan (jumlah alamat awal tidak diungkapkan)
+Nilai saat klaim: Tidak ditemukan (harga LUNA awal 2019 tidak dilaporkan secara konsisten; data CoinGecko hanya tersedia sejak listing publik)
+Kriteria: Investor Series A ($32M, Galaxy Digital, Pantera, Coinbase Ventures, Hashed) dan pendukung awal proyek menerima alokasi LUNA (HIGH) [Phase 3 — EV-004, EV-005]; [Phase 5 — Funding History]
+Anti-sybil: Tidak ada mekanisme anti-sybil yang terdokumentasi (era 2019, populasi hunter belum matang)
+Terkait EV: EV-004 (TGE LUNA Classic), EV-005 (Series A)
+Sitasi: (HIGH) [Phase 3 — EV-004, EV-005]; [CoinDesk Series A, https://www.coindesk.com/business/2019/07/16/galaxy-digital-leads-32m-funding-round-for-terraform-labs/]
+
+AD-002: Airdrop LUNA 2.0 (Genesis Distribution)
+Tanggal: 2022-05-28 (Genesis block Phoenix-1)
+Tipe: Snapshot / Fork (berdasarkan kepemilikan LUNC/USTC pada dua snapshot: pre-depeg dan post-depeg)
+Alokasi: 100% dari total supply genesis 1,000,000,000 LUNA (1 miliar). Rincian: 30% pre-depeg LUNC holders, 30% pre-depeg USTC holders, 10% post-depeg LUNC holders, 10% post-depeg USTC holders, 20% community pool (HIGH) [Phase 6 — Distribution]; [Terra Docs Tokenomics, https://docs.terra.money/learn/tokenomics]
+Penerima: Tidak ditemukan (jumlah alamat unik yang memenuhi syarat tidak dipublikasikan secara resmi; diperkirakan jutaan berdasarkan holder LUNC/USTC saat itu)
+Nilai saat klaim: Tidak ditemukan (harga LUNA 2.0 pada 28 Mei 2022 bervariasi antara $4-8 di exchange; tidak ada data resmi rata-rata nilai per penerima)
+Kriteria: Memegang LUNC atau USTC pada salah satu dari dua snapshot: pre-depeg (17-18 Mei 2022) dan post-depeg (27 Mei 2022). Semakin besar kepemilikan, semakin besar airdrop (HIGH) [Phase 3 — EV-022]; [Terra Docs, https://docs.terra.money/learn/tokenomics]
+Anti-sybil: Tidak ada mekanisme anti-sybil yang diumumkan; distribusi didasarkan pada kepemilikan on-chain murni, tanpa penyaringan alamat (HIGH) [Phase 6 — Distribution]; [Phase 9 — Recurring Pattern 5]
+Terkait EV: EV-020 (Proposal 1623), EV-021 (Peluncuran Terra 2.0), EV-022 (Airdrop), EV-023 (Rebranding)
+Sitasi: (HIGH) [Phase 3 — EV-020, EV-021, EV-022, EV-023]; [Phase 6 — Distribution]; [Terra Station Proposal 1623, https://station.terra.money/proposal/1623]
+
+CONTEXT SAAT KEPUTUSAN
+
+- Funding stage saat AD-002: Terraform Labs telah mengumpulkan $182M (Series A $32M + Strategic $150M) sebelum kolaps. Tidak ada kas baru setelah kolaps; airdrop didanai dari token genesis, bukan uang tunai. (HIGH) [Phase 5 — Funding History]
+- Komunitas saat AD-002: Lebih dari 2 juta alamat unik di Terra Classic (puncak era 2021-2022), dengan TVL ekosistem mencapai $18B+ Maret 2022. Pasca-depeg, sebagian besar holder mengalami kerugian total. (HIGH) [Phase 8 — Adoption Metrics]; [Phase 3 — EV-016]
+- Kondisi pasar saat AD-002: Mei 2022 adalah puncak krisis kripto; LUNA Classic hancur, UST depeg >99%, pasar luas menurun. Narasi publik menuntut kompensasi untuk korban. (HIGH) [Phase 3 — EV-016]; [Phase 8 — Market Timeline]
+- Kompetitor saat AD-002: Proyek Cosmos lain (Osmosis, Juno) sedang tumbuh dengan airdrop sebagai strategi adopsi; tidak ada proyek sebanding yang melakukan hard fork penyelamatan saat itu (MEDIUM) [Phase 8 — Competitor Landscape]
+- Kondisi teknis saat AD-002: Terra Classic chain sempat halt (block 7,603,700) dan restart dengan oracle/market disabled; hard fork menjadi satu-satunya jalan untuk "reset" (HIGH) [Phase 3 — EV-018, EV-019, EV-020]
+
+TRIGGER DAN ALTERNATIF
+
+- Trigger AD-002: Kolaps total Terra Classic (depeg UST, hyperinflasi LUNA, chain halt) pada 7-13 Mei 2022; kebutuhan mendesak untuk "menyelamatkan" ekosistem dan memberi kompensasi pada pemegang token yang rugi (HIGH) [Phase 3 — EV-016, EV-018, EV-020]; [Phase 9 — Risk Response 3]
+- Alternatif 1 (ditolak): Tidak melakukan apa-apa — membiarkan Terra Classic mati tanpa fork; ditolak karena tekanan komunitas dan investor yang menuntut solusi (HIGH) [Phase 3 — EV-020]
+- Alternatif 2 (ditolak): Memperbaiki Terra Classic dengan merestorasi oracle/market dan mencoba repeg USTC; ditolak karena mekanisme stablecoin terbukti rusak dan kepercayaan pasar hilang (HIGH) [Phase 9 — Anti-pattern 1, Anti-pattern 5]
+- Alternatif 3 (ditolak): Private sale / fundraising untuk chain baru; tidak diambil karena regulator dan komunitas melihatnya sebagai upaya "mengambil untung dari bencana" (MEDIUM, HIPOTESIS — tidak terdokumentasi resmi)
+- Alternatif 4 (tidak tersedia): Airdrop bertahap dengan vesting panjang; tidak dipilih karena kebutuhan likuiditas segera untuk memulai perekonomian chain baru (MEDIUM, HIPOTESIS — tidak ada pernyataan resmi)
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi:
+- Proposal 1623 menyatakan airdrop sebagai "kompensasi adil" untuk pemegang LUNA dan UST yang dirugikan oleh depeg, dengan tujuan "mendistribusikan kepemilikan chain baru kepada mereka yang paling terpengaruh" (HIGH) [Terra Station Proposal 1623, https://station.terra.money/proposal/1623]
+- Do Kwon dalam AMA publik menyebut airdrop sebagai "upaya terbaik untuk mendistribusikan nilai baru setelah kegagalan sistem" (MEDIUM) [Phase 9 — Recurring Pattern 5]
+- Alokasi community pool 20% diumumkan sebagai "dana untuk ekosistem agar dapat tumbuh secara mandiri" (HIGH) [Terra Docs Tokenomics, https://docs.terra.money/learn/tokenomics]
+
+Alasan yang tidak diumumkan:
+- HIPOTESIS — Menghindari klasifikasi sekuritas: dengan mendistribusikan token ke ribuan pemegang tanpa penjualan publik, tim menghindari tuduhan "penawaran sekuritas" baru; SEC kemudian mengklaim LUNA/UST sebagai sekuritas dalam gugatan 2023 (MEDIUM) [Phase 3 — EV-027]
+- HIPOTESIS — Menjaga listing exchange: exchange (Binance, Coinbase, Upbit) menekan TFL untuk memberikan kompensasi kepada pengguna mereka; airdrop menjadi syarat untuk listing LUNA 2.0 di exchange besar (MEDIUM) [Phase 8 — Trading Markets]; [Phase 9 — Recurring Pattern 6]
+- HIPOTESIS — Menenangkan investor VC: investor Strategic Round ($150M) termasuk Jump, Alameda, dan lainnya mengalami kerugian besar; airdrop memberi mereka partial recovery tanpa mengakui kesalahan desain (MEDIUM) [Phase 5 — Funding History]; [Phase 9 — Open Threads]
+- HIPOTESIS — Membangun legitimasi "fair launch": setelah bencana, narasi airdrop penuh komunitas membantu memulihkan reputasi yang rusak dan menarik developer baru (MEDIUM) [Phase 9 — Recurring Pattern 5]
+
+OUTCOME PER POV
+
+POV Founder (Do Kwon, Terraform Labs): Sebagian
+- Jangka pendek: Berhasil meluncurkan chain baru (Terra 2.0) dengan listing exchange hari yang sama; Do Kwon mempertahankan kontrol teknis dan narasi "penyelamat" (HIGH) [Phase 3 — EV-021]
+- Jangka panjang: Gagal total — Do Kwon ditangkap di Montenegro (Maret 2023), Terraform Labs kalah gugatan SEC (April 2024), TFL dalam likuidasi (Mei 2024); airdrop tidak mencegah runtuhnya reputasi dan kontrol (HIGH) [Phase 3 — EV-027, EV-028, EV-031]
+- Dasar: (HIGH) [Phase 3 — EV-021, EV-027, EV-028, EV-031]
+
+POV VC (Galaxy Digital, Pantera, Arrington, Jump, Alameda, dll): Gagal
+- Jangka pendek: Menerima airdrop LUNA 2.0 sebagai holder LUNC/USTC, memberi partial recovery parsial; namun nilai jauh di bawah kerugian total (MEDIUM) [Phase 5 — Funding History]; [Phase 9 — Open Threads]
+- Jangka panjang: Sebagian besar VC membukukan kerugian besar; Three Arrows Capital bangkrut (Juli 2022) akibat posisi LUNA/UST; Alameda Research kolaps (Nov 2022); hanya sedikit yang keluar dengan profit (HIGH) [Phase 3 — EV-040]; [Phase 8 — Market Timeline]
+- Dasar: (HIGH) [Phase 3 — EV-040]; (MEDIUM) [Phase 5 — Funding History]
+
+POV Retail (pemegang LUNC/USTC kecil): Sebagian
+- Jangka pendek: Menerima airdrop LUNA 2.0, namun nilai per alamat kecil (karena distribusi proporsional); mayoritas menjual dalam minggu pertama karena trauma dan ketidakpercayaan (MEDIUM) [Phase 9 — Anti-pattern 5]
+- Jangka panjang: Sebagian kecil yang menahan LUNA 2.0 mendapat keuntungan moderat saat harga naik dari bottom; namun mayoritas retail yang memegang LUNC/USTC lama tidak pernah pulih (HIGH) [Phase 8 — Market Timeline]
+- Dasar: (MEDIUM) [Phase 9 — Anti-pattern 5]; (HIGH) [Phase 8 — Market Timeline]
+
+POV Community (komunitas Terra Classic / LUNC Burn Army): Sebagian
+- Jangka pendek: Komunitas terpecah: sebagian mengikuti ke Terra 2.0, sebagian tetap di Classic untuk memperjuangkan repeg USTC dan burn LUNC (HIGH) [Phase 3 — EV-032, EV-033]
+- Jangka panjang: Komunitas Classic menjadi lebih aktif dalam governance (Proposal 12133 burn tax, repeg efforts); namun Terra Classic TVL tetap rendah dan tidak ada pemulihan signifikan (HIGH) [Phase 3 — EV-032]; [Phase 8 — Market Share]
+- Dasar: (HIGH) [Phase 3 — EV-032, EV-033]; [Phase 8 — Market Share]
+
+POV Developer (pengembang protokol di ekosistem Terra): Gagal
+- Jangka pendek: Banyak developer memilih migrasi ke chain lain (Mars→Neutron, Levana→Osmosis, Astroport multi-chain) daripada beradaptasi dengan Terra 2.0 (HIGH) [Phase 3 — EV-033]
+- Jangka panjang: Terra 2.0 tidak berhasil menarik developer baru yang signifikan; TVL $16.4M menunjukkan lack of developer traction (HIGH) [Phase 8 — Adoption Metrics]
+- Dasar: (HIGH) [Phase 3 — EV-033]; [Phase 8 — Adoption Metrics]
+
+POV Institution (exchange, oracle, validator institution): Sebagian
+- Jangka pendek: Exchange menerima listing fees dan volume dari LUNA 2.0; Binance, KuCoin, OKX tetap support; oracle provider (Chainlink, Pyth) mengintegrasi Terra 2.0 (MEDIUM) [Phase 7 — Exchange Ecosystem]; [Phase 3 — EV-035, EV-036]
+- Jangka panjang: Exchange tetap memegang posisi dominan sebagai gateway likuiditas; namun regulasi (SEC) membuat listing baru di AS sulit; institusi lain menahan diri (MEDIUM) [Phase 8 — Trading Markets]
+- Dasar: (MEDIUM) [Phase 7 — Exchange Ecosystem]; (HIGH) [Phase 8 — Market Risks]
+
+POV Validator (P2P, Figment, Chorus One, dll): Sebagian
+- Jangka pendek: Validator yang mengikuti hard fork mendapat staking rewards LUNA 2.0; namun banyak yang kehilangan stake LUNC yang hancur (MEDIUM) [Phase 4 — Consensus Mechanism]
+- Jangka panjang: Validator set tetap beroperasi di kedua chain, tapi jumlah delegator dan total stake menurun drastis; pendapatan fee minimal (MEDIUM) [Phase 8 — Adoption Metrics]
+- Dasar: (MEDIUM) [Phase 4 — Consensus Mechanism]; (HIGH) [Phase 8 — Adoption Metrics]
+
+POV Builder (proyek baru yang mencoba deploy di Terra 2.0): Gagal
+- Jangka pendek: Beberapa proyek kecil mencoba deploy di Terra 2.0 setelah airdrop, tapi insentif community pool sulit diakses (butuh proposal governance); tidak ada grant terstruktur (HIGH) [Phase 9 — Trade-off 6]
+- Jangka panjang: Mayoritas builder memilih chain Cosmos lain (Neutron, Osmosis) dengan komunitas lebih besar; Terra 2.0 tidak menjadi destinasi builder utama (HIGH) [Phase 8 — Competitor Landscape]; [Phase 3 — EV-033]
+- Dasar: (HIGH) [Phase 9 — Trade-off 6]; [Phase 8 — Competitor Landscape]
+
+HARGA PASCA-DISTRIBUSI
+
+Harga saat klaim: $4.84 USD (2022-05-28) [Phase 8 — Market Timeline; verifikasi CoinGecko/CoinMarketCap] (MEDIUM)
+Harga +30 hari: $3.20 USD (2022-06-28) [CoinGecko; Phase 8 — Market Timeline] (MEDIUM)
+Harga +90 hari: $5.08 USD (2022-08-28) [CoinGecko; Phase 8 — Market Timeline] (MEDIUM)
+Harga puncak 12 bulan pertama: $10.72 USD (2022-05-31) [CoinGecko; Phase 8 — Market Timeline] (MEDIUM)
+
+Catatan: Harga LUNA 2.0 berfluktuasi sangat volatil pada minggu pertama; angka di atas adalah perkiraan berdasarkan data CoinGecko historis. Untuk harga LUNC (Terra Classic) setelah airdrop: harga saat klaim (2022-05-28) ~$0.0001 USD, +30 hari ~$0.00005 USD, +90 hari ~$0.0002 USD, puncak 12 bulan pertama ~$0.0006 USD (Feb 2023) (MEDIUM) [CoinGecko LUNC, https://www.coingecko.com/en/coins/terra-luna-classic]
+
+METRIK RETENSI
+
+- TVL Terra 2.0: $16.4M USD (2024-11-01), turun dari puncak $400M+ (Juni 2022) (HIGH) [Phase 8 — Adoption Metrics]; [DefiLlama, https://defillama.com/chain/Terra]
+- TVL Terra Classic: $9.8M USD (2024-11-01), turun dari puncak ekosistem gabungan $18B+ (Maret 2022) (HIGH) [Phase 8 — Adoption Metrics]; [DefiLlama, https://defillama.com/chain/Terra%20Classic]
+- Unique addresses Terra Classic: >2 juta alamat historical (per Nov 2024) (MEDIUM) [Phase 8 — Adoption Metrics]; [Flipside Crypto, https://flipsidecrypto.xyz/terra]
+- Unique addresses Terra 2.0: >600 ribu alamat (per Nov 2024) (MEDIUM) [Phase 8 — Adoption Metrics]; [Flipside Crypto, https://flipsidecrypto.xyz/terra]
+- Daily transactions Terra Classic: 30.000-100.000 per hari (Nov 2024) — sebagian besar burn tax transfers, bukan aktivitas ekonomi (MEDIUM) [Phase 8 — Adoption Metrics]; [Classic Finder, https://classic.finder.terra.money]
+- Daily transactions Terra 2.0: 2.000-10.000 per hari (Nov 2024) (MEDIUM) [Phase 8 — Adoption Metrics]; [Terra Finder, https://finder.terra.money]
+- Validator count kedua chain: 130 validator aktif masing-masing (Nov 2024) (HIGH) [Phase 4 — Consensus Mechanism]; [Terra 2.0 Staking, https://station.terra.money/staking]; [Classic Staking, https://classic.terra.money/staking]
+- Staking participation Terra 2.0: Tidak ditemukan (persentase bonded LUNA tidak dipublikasikan secara resmi)
+- Staking participation Terra Classic: Tidak ditemukan (persentase bonded LUNC tidak dipublikasikan secara resmi)
+- Konsentrasi kepemilikan: Top 10 validator >40% voting power di kedua chain (per Nov 2024) (HIGH) [Phase 4 — Consensus Mechanism]
+
+GAP YANG DIKETAHUI
+
+Cohort penerima: memerlukan analisis on-chain per-alamat, tidak tersedia di sumber publik.
+
+FARMING DAN SYBIL
+
+- Tidak ada mekanisme anti-sybil yang diumumkan untuk AD-002 (2022-05-28); kriteria kelayakan (memegang LUNC/USTC pada snapshot) dapat ditebak publik sejak Proposal 1623 disetujui 25 Mei 2022, memberi waktu 3 hari untuk akumulasi (HIGH) [Phase 3 — EV-020, EV-022]
+- Farming massal muncul dalam bentuk transfer LUNC/USTC antar alamat sebelum snapshot untuk memperbesar proporsi airdrop; namun karena distribusi proporsional, farming mengurangi ukuran per alamat (MEDIUM) [Phase 9 — Recurring Pattern 5]
+- Jumlah alamat yang didiskualifikasi tidak dilaporkan; tidak ada laporan tim tentang sybil (HIGH) [Phase 6 — Distribution]
+- Pasca-snapshot, terjadi "dump" masif LUNA 2.0 dalam 24 jam pertama (volume $1B+ di Binance) — indikasi banyak penerima menjual segera (MEDIUM) [Phase 8 — Market Timeline]; [CoinGecko Terra, https://www.coingecko.com/en/coins/terra]
+
+PROSPEK
+
+Prasyarat yang sudah terpenuhi: Tidak ada airdrop baru yang diumumkan; kedua chain (Terra 2.0 dan Terra Classic) sudah memiliki token hidup dan governance fungsional (HIGH) [Phase 6 — Governance]; [Phase 3 — EV-038, EV-039]
+Prasyarat yang belum: Tidak ada narasi "new token launch" atau "chain upgrade" yang memerlukan distribusi baru; komunitas Classic fokus pada burn/repeg, bukan airdrop (HIGH) [Phase 8 — Narrative Position]; [Phase 3 — EV-032]
+Sinyal yang biasanya mendahului: Jika ada proposal governance untuk alokasi token baru (misal dari community pool) ke pengguna aktif, itu akan jadi sinyal; saat ini tidak ada proposal semacam itu (HIGH) [Phase 6 — Governance]
+Penilaian: Tingkat keyakinan rendah bahwa akan ada airdrop baru dalam 12 bulan; kedua chain tidak memiliki insentif struktural untuk mendistribusikan token baru karena supply sudah ada dan governance terkunci pada parameter yang ada. Perubahan akan datang hanya jika ada fork baru atau proposal radikal dari komunitas (MEDIUM) [Phase 9 — Open Threads]
+
+PELAJARAN LINTAS PROJECT
+
+1. Ketika airdrop didasarkan pada snapshot kepemilikan token lama yang hancur (era 2022, pasca-depeg), kriteria kelayakan yang dipublikasikan 3 hari sebelum eksekusi mendorong akumulasi spekulatif dan farming alamat, tetapi tidak menambah pengguna nyata — akibatnya distribusi terbagi tipis dan mayoritas penerima menjual dalam minggu pertama (MEDIUM) [Phase 9 — Recurring Pattern 5]; [Phase 8 — Market Timeline]
+2. Ketika airdrop digunakan sebagai mekanisme "penyelamatan" pasca-krisis (era 2022), airdrop berhasil mempertahankan eksistensi chain secara teknis (hard fork) tetapi gagal mempertahankan ekosistem — protokol migrasi ke chain lain karena tidak ada insentif jangka panjang yang kredibel (HIGH) [Phase 3 — EV-033]; [Phase 8 — Competitor Landscape]
+3. Ketika alokasi community pool dibiarkan dikelola governance penuh tanpa grant program terstruktur (era 2022-2024), dana airdrop tidak efektif menarik developer baru — proposal ad-hoc butuh quorum 33.4% dan 5 hari voting sehingga menjadi hambatan, bukan katalis (HIGH) [Phase 9 — Insight 9, Trade-off 6]
+4. Ketika airdrop besar dilakukan tanpa mekanisme anti-sybil (era 2022, krisis), jumlah alamat penerima membengkak secara artifisial, tetapi retensi jangka panjang tidak membaik — metrik TVL dan DAU tetap rendah bahkan setelah ribuan alamat menerima token (MEDIUM) [Phase 8 — Adoption Metrics]; [Phase 6 — Distribution]
+
+OPEN THREADS
+
+- Jumlah pasti alamat penerima airdrop LUNA 2.0 tidak dipublikasikan; perkiraan "jutaan" berasal dari holder LUNC/USTC tetapi tidak ada data resmi (HIGH) [Phase 6 — Distribution]
+- Nilai rata-rata airdrop per penerima tidak dihitung secara resmi; hanya bisa diestimasi dari harga saat klaim dan total supply, tapi tidak ada breakdown per kategori (MEDIUM) [Phase 6 — Distribution]
+- Detail vesting investor Strategic Round $150M — apakah mereka terikat lockup yang mempengaruhi airdrop LUNA 2.0? Tidak terdokumentasi (MEDIUM) [Phase 5 — Funding History]; [Phase 9 — Open Threads]
+- Apakah Do Kwon atau Terraform Labs secara pribadi menerima airdrop LUNA 2.0 dalam jumlah besar (sebagai holder LUNC/USTC)? The Block menginvestigasi tetapi tidak ada konfirmasi resmi (MEDIUM) [Phase 9 — Open Threads]
+- Efektivitas repeg USTC (Proposal 12133) — apakah ada token burn baru yang akan menjadi airdrop de facto? Status masih proposal, tidak ada eksekusi (HIGH) [Phase 3 — EV-032]
+- Peran Jump Crypto dalam pertahanan peg Mei 2022 — apakah mereka menerima kompensasi dari LFG atau airdrop terpisah? Belum terungkap penuh (MEDIUM) [Phase 3 — EV-017]; [Phase 9 — Open Threads]
+- Status likuidasi TFL — apakah sisa aset akan didistribusikan sebagai "airdrop" ke kreditor (termasuk holder token)? Deloitte belum publish laporan (MEDIUM) [Phase 3 — EV-031]
+- Apakah ada airdrop LUNC/USTC ke protokol DeFi (Anchor, Mirror) untuk mengkompensasi LP? Tidak ada bukti di sumber publik (LOW) [Phase 3 — EV-024]
+- Harga LUNA 2.0 saat klaim ($4.84) adalah estimasi tengah; fluktuasi intraday 28 Mei 2022 sangat tinggi, perlu cross-check data CoinGecko/Messari (MEDIUM) [Phase 8 — Market Timeline]

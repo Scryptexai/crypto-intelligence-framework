@@ -1,0 +1,30 @@
+PROJECT: Polygon
+Official Name: Polygon (dahulu Matic Network)
+Symbol: POL (token native; menggantikan MATIC melalui upgrade tokenomics 2024) (HIGH) [Polygon Blog, https://blog.polygon.technology/polygon-2-0-tokenomics/]
+Category: Layer 2 scaling / Ethereum scaling ecosystem (multi-chain: PoS, zkEVM, CDK, Miden, Avail) (HIGH) [Polygon Website, https://polygon.technology/]
+Founding Entity: Polygon Technology Pte. Ltd. (Singapura) (HIGH) [Crunchbase, https://www.crunchbase.com/organization/matic-network]
+Founders: Jaynti Kanani (CEO, co-founder); Sandeep Nailwal (COO, co-founder); Anurag Arjun (CPO, co-founder); Mihailo Bjelic (co-founder, bergabung 2019) (HIGH) [Polygon Blog, https://blog.polygon.technology/introducing-polygon-2-0/; Forbes, https://www.forbes.com/sites/rachelwolfson/2021/09/09/polygon-co-founders/]
+Core Team: 400+ karyawan (per 2023, termasuk engineering, research, BD, ecosystem growth) (MEDIUM) [Polygon Labs About, https://polygon.technology/about; LinkedIn, https://www.linkedin.com/company/polygon-technology/]
+Country: Singapura (HQ); tim terdistribusi global (HIGH) [Polygon Labs About, https://polygon.technology/about]
+Launch Date - Testnet: Maret 2019 (Matic Network testnet) (HIGH) [Matic Network Blog (arsip), https://blog.matic.network/matic-network-testnet-launch/]
+Launch Date - Mainnet: 29 Mei 2020 (Matic Network PoS mainnet) (HIGH) [Polygon Blog, https://blog.polygon.technology/matic-mainnet-launch/]
+Launch Date - TGE: April 2019 (IEO di Binance Launchpad, token MATIC) (HIGH) [Binance Research, https://research.binance.com/en/projects/matic-network]
+Main Products: Polygon PoS (EVM sidechain); Polygon zkEVM (ZK rollup); Polygon CDK (Chain Development Kit untuk app-chains); Polygon Miden (STARK-based rollup, devnet); Polygon Avail (modular data availability, spin-off 2023); Polygon ID (identity/credential infra); AggLayer (unified bridging/liquidity layer, 2024) (HIGH) [Polygon 2.0 Blog, https://blog.polygon.technology/introducing-polygon-2-0/; Polygon CDK Docs, https://dev.polygon.technology/polygon-cdk/]
+Official Website: https://polygon.technology/
+Repository: https://github.com/0xPolygon (monorepo utama); https://github.com/0xPolygonHermez (zkEVM); https://github.com/0xPolygonMiden (Miden) (HIGH) [GitHub Org, https://github.com/0xPolygon]
+Documentation: https://dev.polygon.technology/ (dev portal); https://wiki.polygon.technology/ (wiki lama) (HIGH) [Polygon Docs, https://dev.polygon.technology/]
+Social - X/Twitter: @0xPolygon (HIGH) [X.com, https://x.com/0xPolygon]
+Social - Discord: https://discord.gg/0xPolygon (HIGH) [Discord Invite, https://discord.gg/0xPolygon]
+Social - Telegram: @polygonofficial (channel resmi) (MEDIUM) [Telegram, https://t.me/polygonofficial]
+Block Explorer: https://polygonscan.com/ (PoS); https://zkevm.polygonscan.com/ (zkEVM) (HIGH) [Polygonscan, https://polygonscan.com/]
+Token Contract: POL: 0x455E53CBB86018Ac2B8092FdCd39d8444aFFC3F6 (Ethereum mainnet); MATIC (legacy): 0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0 (Ethereum); MATIC (PoS native): 0x0000000000000000000000000000000000001010 (PoS chain) (HIGH) [Etherscan POL, https://etherscan.io/token/0x455E53CBB86018Ac2B8092FdCd39d8444aFFC3F6; Polygon Blog Token Migration, https://blog.polygon.technology/polygon-2-0-token-migration/]
+Chain(s): Ethereum (L1 settlement); Polygon PoS (sidechain/EVM-compatible); Polygon zkEVM (L2 rollup); Polygon CDK chains (app-chains); Polygon Miden (L2 STARK rollup); AggLayer (interop layer) (HIGH) [Polygon 2.0 Architecture, https://blog.polygon.technology/polygon-2-0-architecture/]
+Ecosystem: DeFi (Aave, Uniswap, Curve, Balancer); Gaming (Immutable, GameSwift, Pixelverse); NFT (OpenSea, Magic Eden); Infra (Chainlink, The Graph, Gelato); Enterprise (Stripe, DraftKings, Flipkart, Deutsche Telekom validator); 7,000+ dApps terintegrasi (per 2023) (HIGH) [Polygon Ecosystem, https://polygon.technology/ecosystem; DappRadar, https://dappradar.com/rankings/protocol/polygon]
+
+Open Threads
+- Konfirmasi ukuran core team terkini (2024) — angka 400+ berasal dari data 2023, perlu update dari Polygon Labs HR atau blog resmi terbaru
+- Detail lengkap tokenomics POL post-migration (persentase alokasi staking, ekosistem, treasury, tim) — blog tokenomics 2024 memberi garis besar tapi tabel alokasi detail belum dipublikasikan sepenuhnya
+- Status mainnet launch Polygon Miden (STARK rollup) — saat ini masih devnet/testnet, timeline mainnet belum resmi diumumkan
+- Status spin-off Avail apakah benar-benar terpisah sepenuhnya (token, governance, treasury) atau masih ada keterkaitan hukum/ekonomis dengan Polygon Labs
+- Detail teknis AggLayer: apakah sudah live di mainnet atau masih testnet, dan bagaimana mekanisme unified bridging & pessimistic proofsnya secara spesifik
+- Verifikasi jumlah validator PoS aktif terkini (target 100+ validator, perlu cek staking dashboard real-time)

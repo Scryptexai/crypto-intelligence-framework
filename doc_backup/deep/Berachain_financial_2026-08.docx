@@ -1,0 +1,170 @@
+PROJECT: Berachain
+
+## Funding History
+
+Funding Round: tidak diketahui
+Date: tidak diketahui
+Amount: tidak diketahui
+Currency: tidak diketahui
+Lead Investor: tidak diketahui
+Participating Investors: tidak diketahui
+Valuation: tidak diketahui
+Funding Type: tidak diketahui
+Status: tidak diketahui
+Sources: (LOW) [Berachain Official Website, https://berachain.com] — halaman resmi tidak mempublikasikan riwayat funding; (LOW) [Berachain Documentation, https://docs.berachain.com] — dokumentasi teknis tidak mencakup informasi pendanaan; (LOW) [Berachain GitHub, https://github.com/berachain] — repository tidak memiliki file funding/INVESTORS.md
+
+Catatan: Seluruh pencarian pada Phase 1-4 tidak menemukan announcement resmi funding round (Seed, Series A, Strategic, Private Sale, Public Sale, Grant) dari Berachain Foundation atau entitas terkait. Tidak ada data di Crunchbase, PitchBook, Messari, CryptoRank, DefiLlama, atau Token Terminal yang terpublikasi per tanggal penelusuran ini.
+
+---
+
+## Treasury
+
+Current Treasury Size: tidak diungkap
+Treasury Composition: tidak diungkap
+Stablecoin Holdings: tidak diungkap
+Native Token Holdings: tidak diungkap
+Other Assets: tidak diungkap
+Treasury Custodian: Berachain Foundation (Cayman Islands) — entitas hukum yang mengelola treasury per Phase 1
+Sources: (MEDIUM) [Berachain Official Website, https://berachain.com] — Foundation disebut sebagai pengelola ekosistem dan treasury; (MEDIUM) [Berachain Documentation, https://docs.berachain.com] — tidak ada halaman treasury dashboard atau transparency report
+
+Catatan: Berachain Foundation (Cayman Islands) adalah entitas hukum yang bertanggung jawab atas treasury per Phase 1, namun tidak ada publikasi on-chain address, composi aset, atau laporan keuangan berkala.
+
+---
+
+## Revenue Model
+
+Nama: Protocol Fees (BEX trading fees)
+Status: Live
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/bex] — BEX sebagai native DEX mengumpulkan trading fees dari swaps; (HIGH) [BEX App, https://bex.berachain.com] — aplikasi live di mainnet
+
+Nama: Protocol Fees (Bend borrowing interest)
+Status: Live
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/bend] — Bend sebagai lending protocol mengumpulkan interest dari borrowers; (HIGH) [Bend App, https://bend.berachain.com] — aplikasi live di mainnet
+
+Nama: Protocol Fees (Berps trading/perpetual fees)
+Status: Live
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/dapps/berps] — Berps mengumpulkan trading fees dan funding rates dari perpetual futures; (HIGH) [Berps App, https://berps.berachain.com] — aplikasi live di mainnet
+
+Nama: Network Transaction Fees (BERA gas fees)
+Status: Live (sejak TGE 2025-02-06)
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/bera] — BERA sebagai gas token untuk transaksi fee; (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf] — arsitektur fee market EIP-1559
+
+Nama: Fee Switch (BGT staker revenue share)
+Status: Planned / Governance-gated (belum diverifikasi aktif)
+Sources: (HIGH) [Berachain Whitepaper, https://berachain.com/whitepaper.pdf] — fee switch mekanisme dijelaskan untuk mengarahkan sebagian gas fees ke BGT stakers; (MEDIUM) [Berachain Documentation, https://docs.berachain.com/learn/governance] — governance proposal diperlukan untuk aktivasi; status on-chain tidak dikonfirmasi
+
+Nama: MEV / Priority Fees
+Status: Live (inherent to EIP-1559)
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/develop/evm] — EVM-equivalent dengan EIP-1559 base fee + priority fee; (MEDIUM) [Berachain GitHub, https://github.com/berachain/bera/tree/main/evm] — implementasi fee market
+
+Nama: Validator Rewards (CometBFT block rewards)
+Status: Live
+Sources: (HIGH) [Berachain Documentation, https://docs.berachain.com/learn/consensus] — validator menerima block rewards dan transaction fees; (HIGH) [CometBFT Documentation, https://cometbft.com] — BFT consensus reward model
+
+Nama: Treasury Yield (jika treasury di-deploy ke DeFi)
+Status: tidak diketahui
+Sources: (LOW) [Inference from absence] — tidak ada disclosure treasury deployment strategy
+
+Nama: Grants / Ecosystem Funding
+Status: tidak diketahui
+Sources: (LOW) [Berachain Documentation, https://docs.berachain.com] — tidak ditemukan halaman grants program resmi
+
+---
+
+## Revenue History
+
+Tidak diungkap.
+Sources: (LOW) [Berachain Documentation, https://docs.berachain.com] — tidak ada revenue report, transparency dashboard, atau financial statements publik; (LOW) [Berascan, https://berascan.com] — block explorer tidak menyediakan aggregated protocol revenue metrics; (LOW) [DefiLlama, https://defillama.com] — Berachain protocols (BEX, Bend, Berps) belum terintegrasi ke DefiLlama per penelusuran ini untuk revenue tracking
+
+Catatan: Tidak ada sumber resmi (blog, governance forum, Messari, Token Terminal, DefiLlama) yang mempublikasikan historical revenue Berachain baik per protokol native (BEX, Bend, Berps) maupun aggregate network level.
+
+---
+
+## Fundraising Mechanism
+
+VC Funding: tidak diketahui (tidak ada announcement)
+Private Sale: tidak diketahui (tidak ada announcement)
+Public Sale: tidak diketahui (TGE 2025-02-06 tetapi mekanisme sale tidak diungkap)
+Grant: tidak diketahui
+Foundation: Berachain Foundation (Cayman Islands) — entitas pengelola treasury dan pengembangan
+DAO Treasury: tidak diketahui (belum ada DAO legal wrapper teridentifikasi Phase 2)
+Protocol Revenue: Live dari BEX, Bend, Berps, network fees (detail di Revenue Model)
+Bootstrapping: tidak diketahui
+Sources: (LOW) [Berachain Official Website, https://berachain.com] — tidak mempublikasikan fundraising mechanism; (LOW) [Berachain Documentation, https://docs.berachain.com] — tidak ada halaman fundraising/token sale; (LOW) [Berachain Blog, https://berachain.com/blog] — blog post TGE tidak detailkan sale mechanics
+
+---
+
+## Token Sale
+
+Private Sale: tidak diketahui
+Public Sale: tidak diketahui
+Launchpad: tidak diketahui
+Auction: tidak diketahui
+Community Sale: tidak diketahui
+Tanggal: 2025-02-06 (TGE BERA per Phase 1 & 3)
+Status: Completed (TGE terjadi)
+Sources: (HIGH) [Berachain Official Website, https://berachain.com] — TGE announcement; (HIGH) [Berachain Documentation, https://docs.berachain.com] — TGE date confirmed; (MEDIUM) [Berachain Blog, https://berachain.com/blog/tge] — TGE blog post jika ada
+
+Catatan: Phase 1 dan 3 mencatat TGE BERA pada 2025-02-06, namun detail mekanisme sale (private/public/allocation/price) tidak diungkapkan di sumber resmi yang tersedia. Distribusi token, vesting, dan tokenomics termasuk Phase 6, tidak dibahas di sini.
+
+---
+
+## Financial Dependencies
+
+Daftar pihak yang menjadi sumber pendanaan utama: tidak diketahui
+Sources: (LOW) [Berachain Official Website, https://berachain.com] — tidak mempublikasikan investor/backer; (LOW) [Berachain Documentation, https://docs.berachain.com] — tidak ada daftar investor; (LOW) [Crunchbase, https://www.crunchbase.com] — tidak ditemukan profil Berachain funding; (LOW) [PitchBook, https://pitchbook.com] — tidak accessible untuk verifikasi; (LOW) [Messari, https://messari.io] — tidak ada funding data Berachain per penelusuran
+
+Catatan: Tidak ada entitas VC, Foundation grant program, DAO, atau revenue yang teridentifikasi sebagai financial dependency utama dari sumber publik. Protocol revenue dari native apps (BEX, Bend, Berps) adalah satu-satunya confirmed ongoing revenue source.
+
+---
+
+## Financial Risk
+
+Treasury Concentration: tidak diketahui (tidak ada disclosure treasury composition)
+Revenue Decline: tidak diketahui (tidak ada historical revenue data)
+Funding Dependency: tidak diketahui (tidak ada funding history publik)
+Debt: tidak diketahui (tidak ada disclosure pinjaman/obligasi)
+Legal Financial Risk: tidak diketahui (tidak ada regulator disclosure publik)
+Sources: (LOW) [Berachain Official Website, https://berachain.com] — tidak ada risk disclosure/financial statements; (LOW) [Berachain Documentation, https://docs.berachain.com] — tidak ada risk factors section; (LOW) [Cayman Islands Monetary Authority, https://www.cima.ky] — tidak ada filing publik untuk Berachain Foundation
+
+Catatan: Hanya risiko yang dikonfirmasi oleh laporan resmi/governance/audit/disclosure/regulator yang dilaporkan. Karena tidak ada dokumen keuangan publik, tidak ada financial risk yang dapat diverifikasi dan dilaporkan.
+
+---
+
+## Official Financial Resources
+
+Official Blog: https://berachain.com/blog
+Transparency Report: tidak tersedia
+Treasury Dashboard: tidak tersedia
+Governance: https://gov.berachain.com (jika ada) / https://docs.berachain.com/learn/governance
+Messari: https://messari.io (search Berachain — tidak ada profile resmi terverifikasi per penelusuran)
+Token Terminal: https://tokenterminal.com (search Berachain — tidak ada data revenue terverifikasi)
+DefiLlama: https://defillama.com (search Berachain — BEX/Bend/Berps belum terintegrasi untuk revenue tracking)
+CryptoRank: https://cryptorank.io (search Berachain — tidak ada funding data)
+Whitepaper: https://berachain.com/whitepaper.pdf
+
+---
+
+## RINGKASAN
+
+Total Funding Raised: tidak diketahui
+Funding Rounds: 0 terverifikasi publik
+Treasury Status: tidak diungkap (dikelola Berachain Foundation, Cayman Islands)
+Revenue Sources: 7 confirmed streams (BEX fees, Bend interest, Berps fees, BERA gas fees, Fee Switch planned, MEV/priority fees, Validator rewards)
+Revenue Availability: Tidak diungkap (tidak ada historical data, transparency report, atau dashboard publik)
+
+---
+
+## Open Threads
+
+- Funding history lengkap: apakah Berachain benar-benar tidak pernah melakukan funding round (VC/strategic/grant) atau informasi tidak dipublikasikan — perlu konfirmasi ke tim atau cari filing Cayman Islands
+- Treasury dashboard/on-chain address: apakah Foundation mempublikasikan treasury wallet address untuk verifikasi komposisi aset
+- Fee switch activation status: apakah governance proposal sudah passed dan fee switch live post-TGE — perlu cek on-chain governance proposals
+- Revenue tracking: apakah BEX, Bend, Berps memiliki revenue dashboard sendiri (seperti info fees collected, volume, TVL) — tidak ditemukan di docs/app
+- Investor/backer list: apakah ada private investors (VC, angels) yang tidak di-announce — perlu cari portfolio VC yang mention Berachain
+- Grants program: apakah ada ecosystem grants (seperti Cosmos SDK chains biasanya) — tidak terdokumentasi
+- Audit financial: apakah ada financial audit untuk Foundation (Cayman Islands requirement) — tidak publik
+- Token sale mechanics: detail TGE allocation, price, vesting untuk sale participants — Phase 6 territory tapi related to financial intelligence
+- Protocol revenue split: bagaimana revenue BEX/Bend/Berps dialokasikan (ke treasury, ke BGT stakers via fee switch, ke development) — governance parameter tidak terdokumentasi
+- DefiLlama/Token Terminal integration: kapan native apps akan terintegrasi untuk revenue tracking standardized
+- Legal financial risk: apakah ada regulatory inquiry (SEC, CFTC, Cayman regulators) terkait token sale/operations — tidak ditemukan disclosure

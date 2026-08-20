@@ -1,0 +1,400 @@
+PROJECT: Injective
+
+## Core Insights
+
+Insight 1: Appchain Purpose-Built Architecture Menghasilkan Performa Exchange Superior
+Explanation: Injective memilih membangun orderbook DEX sebagai native Cosmos SDK module (x/exchange) di layer chain, bukan sebagai CosmWasm smart contract. Hal ini menghindari WASM overhead ~2-5x dan memungkinkan matching engine terintegrasi dengan consensus.
+Evidence: Exchange module native di injective-core/x/exchange; CosmWasm diaktifkan 9 bulan setelah mainnet【Phase 3 — EV-022】; Docs menyatakan "fully on-chain orderbook" bukan AMM【Phase 4 — Core Components】【Phase 4 — Architecture】
+Supporting Dataset: Phase 3 EV-008/022, Phase 4 Core Components (Exchange Module), Architecture, Execution Environment
+Confidence: HIGH
+
+Insight 2: Dual Bridge Strategy Menciptakan Trade-off Security vs Interoperabilitas
+Explanation: Dua arsitektur bridge berbeda: Peggy Bridge menggunakan validator set sebagai attester (2/3+ threshold) untuk Ethereum — trust assumption pada validator; IBC menggunakan light client verification — trust-minimized untuk Cosmos chains. Validator set yang sama mengamankan consensus, bridge, oracle.
+Evidence: Peggy module x/peggy dengan validator attestation; IBC module x/ibc-core dengan light client; Docs Bridge menjelaskan keduanya; Ethereum bridge live sejak mainnet【Phase 3 — EV-010】; IBC channels dengan Osmosis, Celestia, Neutron【Phase 3 — EV-013/016/017】
+Supporting Dataset: Phase 3 EV-010/013/016/017, Phase 4 Core Components (Peggy Bridge, IBC Module), Architecture, Phase 7 Major Integrations
+Confidence: HIGH
+
+Insight 3: Staged CosmWasm Enablement Mengurangi Risiko Teknis Mainnet
+Explanation: CosmWasm tidak diaktifkan di genesis mainnet. Diaktifkan via governance upgrade v1.2 (2022-08) setelah 9 bulan mainnet stabil. Upgrade v2.0/v2.2 update wasmd version bertahap.
+Evidence: Mainnet Nov 2021 tanpa CosmWasm【Phase 3 — EV-007】; v1.2 Aug 2022 enable wasm【Phase 3 — EV-022】; v2.0 Feb 2023 IBC-Go v5; v2.2 Nov 2023 wasmd 0.32+ CW1155【Phase 4 — Technical Upgrade History】
+Supporting Dataset: Phase 3 EV-007/022, Phase 4 Technical Upgrade History, Execution Environment
+Confidence: HIGH
+
+Insight 4: Validator Set Multi-Role Menciptakan Concentration Risk Korelasi
+Explanation: Validator set 100 aktif handle: consensus, Peggy bridge attestation, oracle price reporting, governance voting. Tidak ada separate validator set untuk bridge/oracle. Top 10 validator kontrol >50% voting power typical PoS.
+Evidence: Docs Staking/Slashing/Oracle/Bridge; x/peggy, x/oracle, x/gov modules; Hub Staking validator list【Phase 4 — Consensus】【Phase 4 — Security Model】【Phase 4 — Core Components】【Phase 7 — Infrastructure Providers】
+Supporting Dataset: Phase 4 Consensus Mechanism, Security Model, Core Components (Oracle, Peggy), Phase 7 Infrastructure Providers (Validator Set)
+Confidence: HIGH
+
+Insight 5: Minimal Public Fundraising + Protocol Revenue Multi-Stream Membuat Treasury Mandiri Sejak Mainnet
+Explanation: Hanya Binance Launchpad IEO $3M terverifikasi publik. Seed/private round 2019 tidak diungkap nominal. Protocol revenue (exchange fee, bridge fee, auction, insurance allocation) live sejak mainnet 2021-11-16.
+Evidence: Crunchbase hanya show seed + IEO【Phase 5 — Funding History】; Binance IEO $3M raise【Phase 3 — EV-006】; x/exchange fees, x/peggy fees, x/auction module, x/insurance allocation【Phase 5 — Revenue Model】
+Supporting Dataset: Phase 3 EV-003/006, Phase 5 Funding History, Token Sale, Revenue Model, Financial Dependencies
+Confidence: HIGH
+
+Insight 6: Ecosystem Fund sebagai Vehicle VC Partnership Bukan Equity Round
+Explanation: Injective Ecosystem Fund (EV-014 2022-11) dikumpulkan dari Injective Labs + mitra VC (Binance, Pantera, Jump, Delphi, Mark Cuban) untuk grants/liquidity incentives, bukan equity round baru. VC partners menjadi stakeholder ekosistem tanpa dilusi token tambahan.
+Evidence: Blog Ecosystem Fund announce mitra VC【Phase 3 — EV-014】; Docs Ecosystem describe grants/liquidity incentives; tidak ada announcement equity round baru 2022-2024【Phase 5 — Funding History】
+Supporting Dataset: Phase 3 EV-014, Phase 5 Funding History, Financial Dependencies, Phase 7 Grant Program
+Confidence: HIGH
+
+Insight 7: On-Chain Governance Track Record 6 Major Upgrades Tanpa Emergency Incident
+Explanation: Semua upgrade protokol (v1.1, v1.2, v2.0, v2.1, v2.2) dieksekusi melalui governance proposal on-chain (x/gov + x/upgrade). Validator signal, koordinasi upgrade height. Tidak ada upgrade darurat karena exploit/hack tercatat.
+Evidence: Hub Governance proposals untuk setiap upgrade【Phase 3 — EV-022】; Blog announce upgrade dengan proposal number; Explorer governance history【Phase 4 — Technical Upgrade History】【Phase 4 — Audit History】
+Supporting Dataset: Phase 3 EV-022, Phase 4 Technical Upgrade History, Security Model, Phase 7 Governance Ecosystem
+Confidence: HIGH
+
+Insight 8: Tokenomics Inflation + Deflationary Mechanism Menciptakan Net Inflation Yang Bergantung Fee Revenue
+Explanation: Inflation 7-10% untuk staking rewards (x/mint), tapi deflationary pressure via auction module buyback/burn menggunakan surplus fees. Net inflation target long-term deflationary jika fee revenue tinggi sustained.
+Evidence: Tokenomics docs: inflation target, mint module, auction module burn mechanism【Phase 6 — Inflation/Deflation】; x/mint, x/auction, x/fees code【Phase 4 — Core Components】
+Supporting Dataset: Phase 4 Core Components (Mint, Auction, Fees), Phase 6 Tokenomics, Inflation/Deflation, Supply
+Confidence: HIGH
+
+Insight 9: Official Frontend Trio Dikontrol Core Team Memastikan UX Quality Tapi Menciptakan Single Point of Failure
+Explanation: Injective Labs membangun dan maintain 3 official frontend: Helix untuk trading UX, Hub untuk staking/governance, Bridge UI untuk cross-chain transfer. Tidak diserahkan ke komunitas. Memastikan UX konsisten tapi Helix down = user akses terbatas.
+Evidence: Phase 3 EV-009/010/011【Phase 3 — EV-009】【Phase 3 — EV-010】【Phase 3 — EV-011】; Phase 7 Applications (3 official)【Phase 7 — Applications】; Phase 4 Core Components Helix/Hub/Bridge UI【Phase 4 — Core Components】
+Supporting Dataset: Phase 3 EV-009/010/011, Phase 4 Core Components, Phase 7 Applications, Infrastructure Providers
+Confidence: HIGH
+
+Insight 10: IBC-First Expansion Strategy Membangun Liquidity Hub Di Cosmos Ecosystem
+Explanation: Setiap major integration 2022-2023 adalah IBC channel dengan chain Cosmos: Osmosis (DEX/AMM), Celestia (DA), Neutron (CosmWasm/ICA), Stride (liquid staking), dydX (orderbook), Axelar (cross-chain messaging). Ethereum via Peggy bridge sudah ada sejak mainnet.
+Evidence: Phase 3 EV-013/016/017【Phase 3 — EV-013】【Phase 3 — EV-016】【Phase 3 — EV-017】; Phase 7 Major Integrations 13 IBC channels【Phase 7 — Major Integrations】; Phase 7 External Dependencies Osmosis/Celestia/Neutron/Axelar/Stride/dydX【Phase 7 — External Dependencies】
+Supporting Dataset: Phase 3 EV-013/016/017, Phase 7 Major Integrations, External Dependencies, Ecosystem Position
+Confidence: HIGH
+
+## Strategic Principles
+
+Principle 1: Sovereign Appchain Over General-Purpose L1
+Explanation: Injective dibangun sebagai appchain khusus DeFi dengan Cosmos SDK, native modules (exchange, oracle, auction, insurance), CosmWasm sebagai tambahan. Tidak support EVM — Solidity dev harus rewrite ke Rust/CosmWasm. Memilih sovereignty, instant finality, IBC native, custom modules untuk DeFi primitives.
+Evidence: Phase 4 Architecture Appchain Purpose-Built【Phase 4 — Architecture】; Execution Environment No EVM【Phase 4 — Execution Environment】; Known Limitations No EVM Compatibility【Phase 4 — Known Technical Limitations】
+Supporting Dataset: Phase 4 Architecture, Execution Environment, Known Technical Limitations, Phase 8 Narrative Position, Competitor Landscape
+Confidence: HIGH
+
+Principle 2: Interoperability As Core Moat
+Explanation: Cross-chain connectivity dirancang sejak genesis: IBC native untuk Cosmos ecosystem + Peggy Bridge untuk Ethereum + Axelar integration untuk multi-chain messaging. Produk inti (Exchange, Bridge, iAssets) dirancang cross-chain sejak awal.
+Evidence: Injective Docs Architecture【Phase 4 — Architecture】; Injective Docs Bridge【Phase 4 — Core Components】; Injective Docs Ecosystem【Phase 7 — Ecosystem Position】; Mainnet launch include IBC enabled dan Peggy Bridge【Phase 3 — EV-007】【Phase 3 — EV-010】
+Supporting Dataset: Phase 3 EV-007/010, Phase 4 Architecture, Core Components, Phase 7 Ecosystem Position, Major Integrations
+Confidence: HIGH
+
+Principle 3: Upgrade Via On-Chain Governance Only
+Explanation: Semua protocol changes (upgrade version, parameter inflation/fee, treasury spend) melalui governance proposal on-chain (x/gov). Deposit period 14 hari, voting 14 hari, quorum 33.4%, threshold 50%. Tidak ada off-chain governance atau foundation override.
+Evidence: Phase 6 Governance model detail【Phase 6 — Governance】; Hub Governance portal; Phase 3 EV-022 semua upgrade via proposal【Phase 3 — EV-022】; Phase 7 Governance Ecosystem【Phase 7 — Governance Ecosystem】
+Supporting Dataset: Phase 3 EV-022, Phase 6 Governance, Phase 7 Governance Ecosystem
+Confidence: HIGH
+
+Principle 4: Economic Security Through Unified Validator Set
+Explanation: Validator set 100 aktif handle consensus, bridge attestation, oracle reporting, governance voting. Single validator set untuk semua fungsi kritis. Slashing untuk double-sign (5%, tombstone) dan downtime (0.01%/blok, jail setelah threshold).
+Evidence: Phase 4 Consensus Slashing【Phase 4 — Consensus Mechanism】; Security Model Peggy/Oracle【Phase 4 — Security Model】; Phase 7 Infrastructure Providers Validator Set responsibilities【Phase 7 — Infrastructure Providers】
+Supporting Dataset: Phase 4 Consensus Mechanism, Security Model, Core Components (Oracle, Peggy), Phase 7 Infrastructure Providers
+Confidence: HIGH
+
+Principle 5: Staged Feature Rollout After Mainnet Stability
+Explanation: Mainnet launch full stack (consensus, exchange, bridge, governance). CosmWasm diaktifkan 9 bulan kemudian via governance. ICA enable 20 bulan post-mainnet. CometBFT prep 24 bulan post-mainnet. Setiap major feature melalui testnet validation dulu.
+Evidence: Mainnet Nov 2021【Phase 3 — EV-007】; CosmWasm v1.2 Aug 2022【Phase 3 — EV-022】; ICA v2.1 Jul 2023【Phase 3 — EV-022】; CometBFT prep v2.2 Nov 2023【Phase 3 — EV-022】【Phase 4 — Technical Upgrade History】
+Supporting Dataset: Phase 3 EV-007/022, Phase 4 Technical Upgrade History, Execution Environment
+Confidence: HIGH
+
+Principle 6: Ecosystem Growth Through Targeted Grants Not Speculative Incentives
+Explanation: Ecosystem Fund grants mendanai aplikasi melengkapi DeFi stack: NFT (Talis), Social Trading (Frontrunner), Lending (Hydro), Vault (Mito), Aggregator (Black Panther), Synthetics (iAssets official). Membangun "DeFi lego" di atas exchange native, bukan mercenary liquidity mining.
+Evidence: Phase 3 EV-012/014/015/018/019/020/021【Phase 3 — EV-012】【Phase 3 — EV-014】【Phase 3 — EV-015】【Phase 3 — EV-018】【Phase 3 — EV-019】【Phase 3 — EV-020】【Phase 3 — EV-021】; Phase 7 Applications (9 ecosystem dApps)【Phase 7 — Applications】; Phase 7 Grant Program【Phase 7 — Grant Program】
+Supporting Dataset: Phase 3 EV-012/014/015/018/019/020/021, Phase 7 Applications, Grant Program
+Confidence: HIGH
+
+## Success Factors
+
+Factor 1: Binance Launchpad IEO Memberikan Distribusi Global Dan Likuiditas Instan
+Explanation: IEO di Binance Launchpad (Oct 2020) memberikan akses ke jutaan user Binance, listing instan di Binance spot/perp, validasi pasar kuat. $3M raise dengan 3% supply immediate unlock.
+Evidence: Binance Launchpad Announcement【Phase 3 — EV-004】; Injective Blog TGE【Phase 3 — EV-006】; CoinGecko IEO info【Phase 1 — Token Contract】; Binance menjadi investor, CEX partner utama, market maker coordinator【Phase 2 — Entity: Binance】
+Supporting Dataset: Phase 1 Token Contract, Phase 2 Entity (Binance), Phase 3 EV-004/006, Phase 5 Token Sale, Phase 6 TGE
+Confidence: HIGH
+
+Factor 2: Cosmos SDK + Tendermint Foundation Memungkinkan Time-to-Market Cepat
+Explanation: Menggunakan Cosmos SDK framework dan Tendermint BFT consensus untuk chain sovereignty, instant finality (~1s), dan IBC native interoperability. Bukan build dari nol, bukan fork Ethereum, bukan L2. Mainnet launch dengan full stack dalam ~3 tahun dari founding.
+Evidence: go.mod injective-core show Cosmos SDK v0.47, Tendermint v0.34, IBC-Go v5【Phase 4 — Current Technical Stack】; Mainnet launch include IBC enabled【Phase 3 — EV-007】; CometBFT migration prep di v2.2【Phase 3 — EV-022】
+Supporting Dataset: Phase 3 EV-007/022, Phase 4 Consensus Mechanism, Architecture, Current Technical Stack
+Confidence: HIGH
+
+Factor 3: Native Exchange Module Menghindari Smart Contract Overhead
+Explanation: Orderbook DEX dibangun sebagai native Cosmos SDK module (x/exchange) di layer chain, bukan sebagai CosmWasm smart contract. Matching engine terintegrasi dengan consensus, gas fee lebih rendah, latency ~1s block time.
+Evidence: Exchange module native di injective-core/x/exchange【Phase 4 — Core Components】; CosmWasm diaktifkan 9 bulan setelah mainnet【Phase 3 — EV-022】; Docs menyatakan "fully on-chain orderbook" bukan AMM【Phase 4 — Architecture】
+Supporting Dataset: Phase 3 EV-008/022, Phase 4 Core Components (Exchange Module), Architecture, Execution Environment
+Confidence: HIGH
+
+Factor 4: Strong VC Partnership Continuity Dari Seed Ke Ecosystem Fund
+Explanation: Investor seed (Pantera 2019) + IEO partner (Binance 2020) + later investors (Jump, Delphi, Mark Cuban) semua berpartisipasi di Ecosystem Fund 2022. Tidak ada investor baru besar tercatat post-2022. Alignment jangka panjang.
+Evidence: Phase 2 Entity Investors【Phase 2 — Entity: Pantera Capital】【Phase 2 — Entity: Binance】【Phase 2 — Entity: Jump Crypto】【Phase 2 — Entity: Delphi Digital】【Phase 2 — Entity: Mark Cuban】; Phase 3 EV-003/006/014【Phase 3 — EV-003】【Phase 3 — EV-006】【Phase 3 — EV-014】; Phase 5 Financial Dependencies【Phase 5 — Financial Dependencies】; Phase 7 Grant Program Ecosystem Fund partners【Phase 7 — Grant Program】
+Supporting Dataset: Phase 2 Entity Investors, Phase 3 EV-003/006/014, Phase 5 Financial Dependencies, Phase 7 Grant Program
+Confidence: HIGH
+
+Factor 5: CosmWasm Enablement Memicu Eksplorasi Aplikasi 6 dApp Dalam 12 Bulan
+Explanation: Setelah CosmWasm enable (Aug 2022), 6 aplikasi ekosistem launch berdekatan: Talis (Oct 2022), Frontrunner (Jul 2023), Hydro (Sep 2023), Mito (Oct 2023), Black Panther (Nov 2023), iAssets (Jun 2022). Ecosystem Fund (Nov 2022) mendanai sebagian.
+Evidence: Phase 3 EV-012/014/015/018/019/020/021【Phase 3 — EV-012】【Phase 3 — EV-014】【Phase 3 — EV-015】【Phase 3 — EV-018】【Phase 3 — EV-019】【Phase 3 — EV-020】【Phase 3 — EV-021】; Phase 7 Applications timeline【Phase 7 — Applications】; Phase 7 Grant Program【Phase 7 — Grant Program】
+Supporting Dataset: Phase 3 EV-012/014/015/018/019/020/021, Phase 7 Applications, Grant Program
+Confidence: HIGH
+
+Factor 6: Multi-SDK Strategy Menarik Developer Dari Berbagai Background
+Explanation: Menyediakan 4 SDK: TS/JS untuk frontend/web3 dev, Python untuk data science/bot, Go untuk core/relayer, Rust untuk CosmWasm smart contract. Developer portal, hackathons berkala, grant programs.
+Evidence: Phase 7 Developer Ecosystem 4 SDK【Phase 7 — Developer Ecosystem】; GitHub repos ts-sdk, python-sdk, injective-core (Go), CosmWasm Rust tooling【Phase 7 — Open Source Repository】; Hackathon periodic【Phase 7 — Developer Ecosystem】
+Supporting Dataset: Phase 7 Developer Ecosystem SDK, Open Source Repository
+Confidence: HIGH
+
+## Failure Factors
+
+Factor 1: Centralisasi Pengembangan Di Injective Labs Inc. Tanpa Foundation/DAO Legal Wrapper
+Explanation: Semua core development, binary release, testnet coordination, upgrade proposal drafting, grant administration dikelola oleh Injective Labs Inc. (perusahaan swasta BVI, ~50 engineer). Governance on-chain hanya parameter/upgrade bukan core dev funding/hiring. Single entity kontrol roadmap.
+Evidence: Phase 2 Entity Injective Labs Inc. only【Phase 2 — Entity: Injective Labs Inc.】; Phase 3 EV-022 upgrade proposals drafted by team【Phase 3 — EV-022】; Phase 5 Financial Dependencies core dev di Injective Labs【Phase 5 — Financial Dependencies】; Phase 7 Governance Ecosystem no foundation/DAO【Phase 7 — Governance Ecosystem】; Phase 7 Ecosystem Risks Centralization Risk Injective Labs【Phase 7 — Ecosystem Risks】
+Supporting Dataset: Phase 2 Entity, Phase 3 EV-022, Phase 5 Financial Dependencies, Phase 7 Governance Ecosystem, Ecosystem Risks
+Confidence: HIGH
+
+Factor 2: Validator Concentration Risk — Top 10 Kontrol >50% Voting Power
+Explanation: Validator set 100 aktif tapi top 10 validator kontrolling >50% voting power (typical PoS). Validator set yang sama mengamankan consensus, bridge, oracle, governance — correlated risk. Governance capture possible.
+Evidence: Phase 4 Consensus validator set【Phase 4 — Consensus Mechanism】; Phase 7 Infrastructure Providers Validator Set【Phase 7 — Infrastructure Providers】; Phase 7 Ecosystem Risks Centralization Risk Validator【Phase 7 — Ecosystem Risks】; Hub Staking validator list【Phase 7 — Infrastructure Providers】
+Supporting Dataset: Phase 4 Consensus Mechanism, Phase 7 Infrastructure Providers, Ecosystem Risks
+Confidence: HIGH
+
+Factor 3: Peggy Bridge Trust Assumption Tidak Trust-Minimized Seperti IBC
+Explanation: Menerima trust assumption pada validator set untuk Ethereum bridge (bukan light client seperti IBC). Validator set yang sama mengamankan consensus, oracle, DAN bridge — correlated risk. 2/3+ threshold signature mitigasi tapi bukan trust-minimized.
+Evidence: Phase 4 Architecture Dual Bridge Strategy【Phase 4 — Architecture】; Core Components Peggy/IBC【Phase 4 — Core Components】; Security Model Bridge Dependency【Phase 4 — Security Model】; Phase 7 Ecosystem Risks Bridge Dependency【Phase 7 — Ecosystem Risks】; Phase 7 External Dependencies Ethereum【Phase 7 — External Dependencies】
+Supporting Dataset: Phase 4 Architecture, Core Components, Security Model, Phase 7 Ecosystem Risks, External Dependencies
+Confidence: HIGH
+
+Factor 4: No EVM Compatibility Menciptakan Barrier To Entry Developer Ethereum
+Explanation: Tidak support EVM — Solidity dev harus rewrite ke Rust/CosmWasm atau gunakan bridge. Tooling ecosystem lebih kecil vs EVM chains. Barrier to entry untuk Ethereum developer besar.
+Evidence: Phase 4 Execution Environment No EVM【Phase 4 — Execution Environment】; Known Limitations No EVM Compatibility【Phase 4 — Known Technical Limitations】; Phase 8 Narrative Position Modular Appchain【Phase 8 — Narrative Position】; Competitor Landscape【Phase 8 — Competitor Landscape】
+Supporting Dataset: Phase 4 Architecture, Execution Environment, Known Technical Limitations, Phase 8 Narrative Position, Competitor Landscape
+Confidence: HIGH
+
+Factor 5: Orderbook On-Chain Latency/Throughput Limit Vs Off-Chain Matching Competitors
+Explanation: Setiap place/cancel order = transaksi on-chain (gas fee, ~1s block time). Matching engine di native module x/exchange. Throughput ~1-2k TPS realistis, tidak cocok HFT ultra-low-latency. Competitor dydX/Hyperliquid pakai off-chain matching + on-chain settlement.
+Evidence: Phase 4 Architecture Orderbook DEX【Phase 4 — Architecture】; Core Components Exchange Module【Phase 4 — Core Components】; Known Limitations Throughput/Orderbook【Phase 4 — Known Technical Limitations】; Phase 7 Applications Helix【Phase 7 — Applications】; Phase 8 Competitor Landscape dydX/Hyperliquid【Phase 8 — Competitor Landscape】
+Supporting Dataset: Phase 4 Architecture, Core Components, Known Technical Limitations, Phase 7 Applications, Phase 8 Competitor Landscape
+Confidence: HIGH
+
+Factor 6: Treasury/Community Pool Transparency Minim — Tidak Ada Public Dashboard
+Explanation: Community pool (14% supply) dikelola melalui CommunityPoolSpend proposal on-chain. Tidak ada foundation/DAO legal entity terpisah yang memegang treasury. Tidak ada halaman transparansi treasury publik. Financial statements perusahaan swasta BVI tidak tersedia.
+Evidence: Phase 6 Distribution Treasury 14%【Phase 6 — Distribution】; Hub Governance CommunityPoolSpend proposals【Phase 6 — Governance】; Phase 2 tidak ada foundation entity【Phase 2 — Entity】; Phase 7 Governance Ecosystem "tidak ada foundation terpisah terverifikasi"【Phase 7 — Governance Ecosystem】; Phase 5 Financial Risk "perusahaan swasta, tidak wajib mempublikasikan"【Phase 5 — Financial Risk】
+Supporting Dataset: Phase 2 Entity, Phase 5 Financial Risk, Phase 6 Distribution, Governance, Phase 7 Governance Ecosystem
+Confidence: HIGH
+
+Factor 7: ERC-20 INJ Contract Non-Upgradeable, Migration Path Manual Via Bridge
+Explanation: ERC-20 INJ contract (0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30) tidak upgradeable (no proxy). Migrasi ke native memerlukan bridge burn/mint. Tidak ada automatic migration path. Status contract masih aktif tapi tidak diketahui volume bridge bulanan.
+Evidence: Etherscan INJ Contract【Phase 1 — Token Contract】; Phase 4 Core Components Peggy Bridge【Phase 4 — Core Components】; Known Limitations ERC-20 Contract Risk【Phase 4 — Known Technical Limitations】; Phase 6 Token Information【Phase 6 — Token Information】; Phase 7 Ecosystem Risks ERC-20 Contract Risk【Phase 7 — Ecosystem Risks】
+Supporting Dataset: Phase 1 Token Contract, Phase 4 Core Components, Known Technical Limitations, Phase 6 Token Information, Phase 7 Ecosystem Risks
+Confidence: HIGH
+
+## Decision Framework
+
+Step 1: Observe — Technical Roadmap & Upstream Dependency
+Explanation: Core team memonitor upstream dependency (Cosmos SDK, IBC-Go, CosmWasm, Tendermint/CometBFT) untuk breaking changes, feature baru, maintenance mode. Contoh: Tendermint maintenance mode → CometBFT migration prep.
+Evidence: Phase 4 Current Stack CometBFT migration in progress【Phase 4 — Current Technical Stack】; Phase 3 EV-022 v2.2 CometBFT prep【Phase 3 — EV-022】; Phase 8 Market Timeline 2024 ongoing【Phase 8 — Market Timeline】
+Supporting Dataset: Phase 3 EV-022, Phase 4 Current Technical Stack, Phase 8 Market Timeline
+Confidence: HIGH
+
+Step 2: Evaluate — Ecosystem Growth Needs Assessment
+Explanation: Menilai kebutuhan ekosistem: liquidity, applications, developers, cross-chain connectivity. Contoh: Post-mainnet butuh programmability → CosmWasm enable. Butuh liquidity routing → IBC Osmosis. Butuh DA scaling → Celestia integration.
+Evidence: Phase 3 EV-013/016/017 IBC integrations【Phase 3 — EV-013】【Phase 3 — EV-016】【Phase 3 — EV-017】; Phase 3 EV-022 CosmWasm enable【Phase 3 — EV-022】; Phase 7 Major Integrations【Phase 7 — Major Integrations】; Phase 8 Market Timeline integrations【Phase 8 — Market Timeline】
+Supporting Dataset: Phase 3 EV-013/016/017/022, Phase 7 Major Integrations, Phase 8 Market Timeline
+Confidence: HIGH
+
+Step 3: Fund — Minimal Public Fundraising, Protocol Revenue First
+Explanation: Tidak melakukan public token sale besar-besaran selain IEO Binance. Seed/private round 2019 tidak diungkap nominal. Protocol revenue multi-stream sejak mainnet 2021. Ecosystem Fund sebagai VC partnership vehicle bukan equity round.
+Evidence: Phase 5 Funding History hanya seed + IEO【Phase 5 — Funding History】; Binance IEO $3M raise【Phase 3 — EV-006】; Protocol revenue live sejak mainnet【Phase 5 — Revenue Model】; Ecosystem Fund grants/liquidity incentives【Phase 3 — EV-014】【Phase 5 — Funding History】
+Supporting Dataset: Phase 3 EV-003/006, Phase 5 Funding History, Token Sale, Revenue Model, Financial Dependencies
+Confidence: HIGH
+
+Step 4: Develop — Core Team Draft Proposal, Testnet Validation
+Explanation: Core team (Injective Labs) draft proposal → testnet validation → on-chain governance vote. Upgrade tidak pernah emergency/reactive. Semua major upgrade (v1.1, v1.2, v2.0, v2.1, v2.2) scheduled.
+Evidence: Phase 3 EV-022 upgrade timeline semua scheduled【Phase 3 — EV-022】; Phase 4 Technical Upgrade History tidak ada emergency upgrade【Phase 4 — Technical Upgrade History】; Phase 4 Audit History 6 auditor tapi tidak ada incident response upgrade【Phase 4 — Audit History】
+Supporting Dataset: Phase 3 EV-022, Phase 4 Technical Upgrade History, Audit History, Security Model
+Confidence: HIGH
+
+Step 5: Launch — Coordinated Governance Upgrade
+Explanation: Semua upgrade protokol dieksekusi melalui governance proposal on-chain (x/gov + x/upgrade). Validator signal, koordinasi upgrade height. Testnet validation dulu, lalu mainnet proposal.
+Evidence: Hub Governance proposals untuk setiap upgrade【Phase 3 — EV-022】; Blog announce upgrade dengan proposal number; Explorer governance history【Phase 4 — Technical Upgrade History】【Phase 7 — Governance Ecosystem】
+Supporting Dataset: Phase 3 EV-022, Phase 4 Technical Upgrade History, Security Model, Phase 7 Governance Ecosystem
+Confidence: HIGH
+
+Step 6: Govern — On-Chain Parameter & Treasury Control
+Explanation: Setiap parameter change (inflation, fee, staking), treasury spend (CommunityPoolSpend), software upgrade melalui governance proposal. Validator sebagai proxy voting, delegator bisa override. Quorum 33.4%, threshold 50%.
+Evidence: Phase 6 Governance model detail【Phase 6 — Governance】; Hub Governance portal【Phase 6 — Governance】; Phase 3 EV-022 semua upgrade via proposal【Phase 3 — EV-022】; Phase 7 Governance Ecosystem【Phase 7 — Governance Ecosystem】
+Supporting Dataset: Phase 3 EV-022, Phase 6 Governance, Phase 7 Governance Ecosystem
+Confidence: HIGH
+
+## Reusable Playbook
+
+Playbook 1: Appchain Architecture Untuk Specialized Use Case
+Explanation: Build purpose-built L1 menggunakan Cosmos SDK dengan native modules untuk core primitive (exchange, oracle, auction, insurance), bukan general-purpose smart contract platform. Activate CosmWasm later untuk extensibility.
+Evidence: Injective Exchange native module x/exchange【Phase 4 — Core Components】; CosmWasm enable 9 bulan post-mainnet【Phase 3 — EV-022】; Architecture Appchain Purpose-Built【Phase 4 — Architecture】; Known Limitations CosmWasm gas cost höher【Phase 4 — Known Technical Limitations】
+Supporting Dataset: Phase 3 EV-008/022, Phase 4 Core Components, Architecture, Execution Environment, Known Technical Limitations
+Confidence: HIGH
+
+Playbook 2: Dual Bridge Strategy Untuk Ethereum + Cosmos Interoperability
+Explanation: Gunakan IBC (light client, trust-minimized) untuk Cosmos ecosystem chains. Gunakan validator-based bridge (Peggy, threshold signature) untuk Ethereum karena IBC light client tidak feasible di Ethereum mainnet. Accept trust assumption tapi mitigate dengan high threshold (2/3+) dan shared validator set.
+Evidence: Peggy Bridge x/peggy validator attestation【Phase 4 — Core Components】; IBC Module x/ibc-core light client【Phase 4 — Core Components】; Docs Bridge menjelaskan keduanya【Phase 4 — Architecture】; Phase 7 Major Integrations IBC channels + Peggy【Phase 7 — Major Integrations】
+Supporting Dataset: Phase 3 EV-010/013/016/017, Phase 4 Core Components (Peggy Bridge, IBC Module), Architecture, Phase 7 Major Integrations
+Confidence: HIGH
+
+Playbook 3: Staged CosmWasm Enablement After Mainnet Stability
+Explanation: Launch mainnet tanpa CosmWasm. Enable via governance upgrade setelah mainnet stabil (9+ bulan). Update wasmd version bertahap via subsequent upgrades. Reduces launch complexity, allows focus on core consensus/exchange stability first.
+Evidence: Mainnet Nov 2021 tanpa CosmWasm【Phase 3 — EV-007】; v1.2 Aug 2022 enable wasm【Phase 3 — EV-022】; v2.0 Feb 2023 IBC-Go v5; v2.2 Nov 2023 wasmd 0.32+ CW1155【Phase 4 — Technical Upgrade History】
+Supporting Dataset: Phase 3 EV-007/022, Phase 4 Technical Upgrade History, Execution Environment
+Confidence: HIGH
+
+Playbook 4: Ecosystem Fund Grants Untuk Bootstrap Application Layer
+Explanation: Setelah infra siap, launch ecosystem fund dengan VC partners untuk grants mendanai aplikasi melengkapi DeFi stack: NFT, Social Trading, Lending, Vault, Aggregator, Synthetics. Bukan mercenary liquidity mining. Target kategori spesifik untuk melengkapi "DeFi lego".
+Evidence: Phase 3 EV-012/014/015/018/019/020/021【Phase 3 — EV-012】【Phase 3 — EV-014】【Phase 3 — EV-015】【Phase 3 — EV-018】【Phase 3 — EV-019】【Phase 3 — EV-020】【Phase 3 — EV-021】; Phase 7 Applications (9 ecosystem dApps)【Phase 7 — Applications】; Phase 7 Grant Program【Phase 7 — Grant Program】
+Supporting Dataset: Phase 3 EV-012/014/015/018/019/020/021, Phase 7 Applications, Grant Program
+Confidence: HIGH
+
+Playbook 5: Multi-SDK Strategy Untuk Developer Accessibility
+Explanation: Provide SDK untuk multiple language: TypeScript/JavaScript (frontend/web3), Python (data science/bot), Go (core/relayer), Rust (CosmWasm smart contract). Developer portal, hackathons berkala, grant programs. Menarik developer dari background berbeda.
+Evidence: Phase 7 Developer Ecosystem 4 SDK【Phase 7 — Developer Ecosystem】; GitHub repos ts-sdk, python-sdk, injective-core (Go), CosmWasm Rust tooling【Phase 7 — Open Source Repository】; Hackathon periodic【Phase 7 — Developer Ecosystem】
+Supporting Dataset: Phase 7 Developer Ecosystem SDK, Open Source Repository
+Confidence: HIGH
+
+Playbook 6: On-Chain Governance Untuk Semua Protocol Changes
+Explanation: Semua protocol changes (upgrade, parameter, treasury spend) melalui on-chain governance proposal. Deposit period, voting period, quorum, threshold defined. Validator sebagai proxy voting, delegator override optional. Transparent, auditable, no foundation override.
+Evidence: Phase 6 Governance model detail【Phase 6 — Governance】; Hub Governance portal【Phase 6 — Governance】; Phase 3 EV-022 semua upgrade via proposal【Phase 3 — EV-022】; Phase 7 Governance Ecosystem【Phase 7 — Governance Ecosystem】
+Supporting Dataset: Phase 3 EV-022, Phase 6 Governance, Phase 7 Governance Ecosystem
+Confidence: HIGH
+
+Playbook 7: Tokenomics Dengan Inflation + Deflationary Mechanism
+Explanation: Inflation untuk staking rewards (network security), deflationary mechanism via auction buyback/burn menggunakan surplus protocol fees. Net inflation target long-term deflationary jika fee revenue tinggi sustained. Vesting schedule berbeda per kategori (team/foundation/investors 3-4 tahun, ecosystem lebih lama).
+Evidence: Phase 6 Inflation/Deflation【Phase 6 — Inflation/Deflation】; Phase 6 Vesting Schedule【Phase 6 — Vesting Schedule】; Phase 4 Core Components Mint/Auction【Phase 4 — Core Components】; Phase 5 Revenue Model multi-stream【Phase 5 — Revenue Model】
+Supporting Dataset: Phase 4 Core Components, Phase 5 Revenue Model, Phase 6 Inflation/Deflation, Tokenomics, Vesting Schedule
+Confidence: HIGH
+
+## Anti-patterns
+
+Anti-pattern 1: Over-Centralization Pada Core Development Entity
+Explanation: Semua core development, binary release, testnet coordination, upgrade proposal drafting, grant administration terpusat di satu perusahaan swasta (Injective Labs Inc. BVI). Tidak ada foundation/DAO legal wrapper. Governance on-chain hanya parameter/upgrade bukan core dev funding/hiring. Single point of failure untuk roadmap execution.
+Evidence: Phase 2 Entity Injective Labs Inc. only【Phase 2 — Entity: Injective Labs Inc.】; Phase 3 EV-022 upgrade proposals drafted by team【Phase 3 — EV-022】; Phase 5 Financial Dependencies core dev di Injective Labs【Phase 5 — Financial Dependencies】; Phase 7 Governance Ecosystem no foundation/DAO【Phase 7 — Governance Ecosystem】; Phase 7 Ecosystem Risks Centralization Risk Injective Labs【Phase 7 — Ecosystem Risks】
+Supporting Dataset: Phase 2 Entity, Phase 3 EV-022, Phase 5 Financial Dependencies, Phase 7 Governance Ecosystem, Ecosystem Risks
+Confidence: HIGH
+
+Anti-pattern 2: Single Validator Set Untuk Multi-Fungsi Kritis Tanpa Role Separation
+Explanation: Validator set 100 aktif handle: consensus, Peggy bridge attestation, oracle price reporting, governance voting. Tidak ada separate validator set untuk bridge/oracle. Validator collusion mempengaruhi consensus, bridge, oracle, governance sekaligus. Top 10 validator >50% voting power typical.
+Evidence: Phase 4 Security Model Validator Multi-Role【Phase 4 — Security Model】; Consensus【Phase 4 — Consensus Mechanism】; Core Components Oracle/Peggy【Phase 4 — Core Components】; Phase 7 Infrastructure Providers Validator Set【Phase 7 — Infrastructure Providers】; Phase 7 Ecosystem Risks Centralization Risk Validator【Phase 7 — Ecosystem Risks】
+Supporting Dataset: Phase 4 Security Model, Consensus Mechanism, Core Components, Phase 7 Infrastructure Providers, Ecosystem Risks
+Confidence: HIGH
+
+Anti-pattern 3: Trusted Bridge (Peggy) Untuk Ethereum Tanpa Migration Path Ke Trust-Minimized
+Explanation: Menerima trust assumption pada validator set untuk Ethereum bridge (bukan light client seperti IBC). ERC-20 INJ contract non-upgradeable, migration path manual via bridge. Tidak ada roadmap publik untuk migrasi ke trust-minimized bridge (seperti ZK light client atau threshold signature scheme yang lebih decentralized).
+Evidence: Phase 4 Architecture Dual Bridge Strategy【Phase 4 — Architecture】; Core Components Peggy Bridge【Phase 4 — Core Components】; Security Model Bridge Dependency【Phase 4 — Security Model】; Phase 7 Ecosystem Risks Bridge Dependency【Phase 7 — Ecosystem Risks】; Phase 7 External Dependencies Ethereum【Phase 7 — External Dependencies】; Phase 4 Known Limitations ERC-20 Contract Risk【Phase 4 — Known Technical Limitations】
+Supporting Dataset: Phase 4 Architecture, Core Components, Security Model, Known Technical Limitations, Phase 7 Ecosystem Risks, External Dependencies
+Confidence: HIGH
+
+Anti-pattern 4: No EVM Compatibility Tanpa Alternative Onboarding Path
+Explanation: Tidak support EVM — Solidity dev harus rewrite ke Rust/CosmWasm atau gunakan bridge. Tidak ada EVM-compatible layer (seperti Evmos, Sei EVM, atau Neon EVM) di Injective. Tooling ecosystem lebih kecil vs EVM chains. Barrier to entry tinggi untuk Ethereum developer besar.
+Evidence: Phase 4 Execution Environment No EVM【Phase 4 — Execution Environment】; Known Limitations No EVM Compatibility【Phase 4 — Known Technical Limitations】; Phase 8 Narrative Position Modular Appchain【Phase 8 — Narrative Position】; Competitor Landscape【Phase 8 — Competitor Landscape】; Phase 8 Market Category【Phase 8 — Market Category】
+Supporting Dataset: Phase 4 Architecture, Execution Environment, Known Technical Limitations, Phase 8 Narrative Position, Competitor Landscape
+Confidence: HIGH
+
+Anti-pattern 5: Treasury Transparency Minim Di Perusahaan Swasta
+Explanation: Community pool (14% supply) dikelola via governance tapi tidak ada public dashboard. Financial statements Injective Labs Inc. (BVI) tidak tersedia. Tidak ada foundation/DAO terpisah untuk treasury management. Transparency bergantung pada on-chain query manual.
+Evidence: Phase 6 Distribution Treasury 14%【Phase 6 — Distribution】; Hub Governance CommunityPoolSpend proposals【Phase 6 — Governance】; Phase 2 tidak ada foundation entity【Phase 2 — Entity】; Phase 7 Governance Ecosystem "tidak ada foundation terpisah terverifikasi"【Phase 7 — Governance Ecosystem】; Phase 5 Financial Risk "perusahaan swasta, tidak wajib mempublikasikan"【Phase 5 — Financial Risk】
+Supporting Dataset: Phase 2 Entity, Phase 5 Financial Risk, Phase 6 Distribution, Governance, Phase 7 Governance Ecosystem
+Confidence: HIGH
+
+Anti-pattern 6: Official Frontend Trio Controlled By Core Team Menciptakan SPOF
+Explanation: 3 critical frontend (Helix, Hub, Bridge UI) selalu di-develop dan host oleh Injective Labs. Tidak diserahkan ke komunitas. Jika Helix down, user akses terbatas (CLI/alternative frontend kurang mature). Single point of failure untuk UX retail.
+Evidence: Phase 4 Core Components Helix/Hub/Bridge UI【Phase 4 — Core Components】; Phase 7 Applications (3 official)【Phase 7 — Applications】; Phase 7 Infrastructure Providers Netlify/Vercel hosting【Phase 7 — Infrastructure Providers】; Phase 7 Ecosystem Risks Frontend Dependency【Phase 7 — Ecosystem Risks】
+Supporting Dataset: Phase 3 EV-009/010/011, Phase 4 Core Components, Phase 7 Applications, Infrastructure Providers, Ecosystem Risks
+Confidence: HIGH
+
+## Lessons Learned
+
+Lesson 1: Appchain Purpose-Built Architecture Menang Untuk Specialized DeFi Primitive
+Explanation: Native exchange module outperform smart contract-based orderbook pada latency, gas cost, dan integration depth dengan consensus. Trade-off: kurang flexible untuk rapid iteration, tapi superior untuk core primitive yang butuh performa.
+
+Lesson 2: Staged Feature Rollout Mengurangi Risiko Launch
+Explanation: Launch mainnet dengan core consensus + exchange + bridge + governance dulu. Tambahkan CosmWasm, ICA, CometBFT bertahap via governance upgrades. Setiap feature melalui testnet validation. Zero emergency upgrades dalam 3+ tahun mainnet.
+
+Lesson 3: VC Partnership Continuity Lebih Value Dari Multiple Fundraising Rounds
+Explanation: Investor seed + IEO partner + later investors semua join Ecosystem Fund. Alignment jangka panjang tanpa dilusi token tambahan. Fund sebagai grants/liquidity incentives vehicle, bukan equity round.
+
+Lesson 4: Validator Set Multi-Road Economic Security Efisien Tapi Berisiko
+Explanation: Single validator set untuk consensus, bridge, oracle, governance = capital efficient. Tapi correlated risk: top 10 validator >50% power, same set untuk semua fungsi kritis. Perlu monitoring centralization metrics.
+
+Lesson 5: On-Chain Governance Track Record Membangun Credibility
+Explanation: 6 major upgrades executed smoothly via governance sejak 2021. No emergency upgrades. Parameter changes, treasury spends semua transparent on-chain. Builds trust dengan community dan investor.
+
+Lesson 6: IBC-First Expansion Strategy Membangun Network Effects Di Cosmos
+Explanation: Setiap IBC channel baru (Osmosis, Celestia, Neutron, Stride, dydX, Axelar) menambah liquidity routing dan composability. Ethereum via Peggy bridge sebagai complement. Menjadi liquidity hub di Cosmos DeFi.
+
+Lesson 7: Treasury Transparency Gap Adalah Risk Untuk Long-term Trust
+Explanation: Community pool 14% supply managed via governance tapi no public dashboard. Private company financials. No foundation/DAO legal wrapper. Perlu transparency improvement untuk institutional adoption.
+
+## Knowledge Summary
+
+Strategic Principles:
+1. Sovereign Appchain Over General-Purpose L1 — Cosmos SDK + native modules untuk DeFi primitives
+2. Interoperability As Core Moat — IBC native + Peggy Bridge + Axelar sejak genesis
+3. Upgrade Via On-Chain Governance Only — Semua protocol changes melalui x/gov proposal
+4. Economic Security Through Unified Validator Set — Single validator set untuk consensus/bridge/oracle/governance
+5. Staged Feature Rollout After Mainnet Stability — CosmWasm 9 bulan, ICA 20 bulan, CometBFT 24 bulan post-mainnet
+6. Ecosystem Growth Through Targeted Grants — Ecosystem Fund untuk melengkapi DeFi stack
+
+Success Factors:
+1. Binance Launchpad IEO — Distribusi global, likuiditas instan, validasi pasar
+2. Cosmos SDK + Tendermint Foundation — Time-to-market cepat, IBC native, instant finality
+3. Native Exchange Module — Menghindari smart contract overhead, matching engine terintegrasi consensus
+4. Strong VC Partnership Continuity — Pantera, Binance, Jump, Delphi, Mark Cuban dari seed ke ecosystem fund
+5. CosmWasm Enablement Trigger — 6 dApp launch dalam 12 bulan pasca-enablement
+6. Multi-SDK Strategy — TS, Python, Go, Rust menarik developer background berbeda
+
+Failure Factors:
+1. Core Development Centralization — Injective Labs Inc. single entity, no foundation/DAO wrapper
+2. Validator Concentration Risk — Top 10 >50% voting power, same set untuk semua fungsi kritis
+3. Peggy Bridge Trust Assumption — Not trust-minimized seperti IBC, correlated validator risk
+4. No EVM Compatibility — High barrier untuk Ethereum developer onboarding
+5. Orderbook On-Chain Throughput Limit — ~1-2k TPS vs off-chain matching competitors
+6. Treasury Transparency Minim — No public dashboard, private company financials
+7. ERC-20 Contract Non-Upgradeable — Manual migration via bridge, no automatic path
+
+Decision Framework:
+1. Observe — Technical roadmap & upstream dependency monitoring
+2. Evaluate — Ecosystem growth needs assessment (liquidity, apps, devs, cross-chain)
+3. Fund — Minimal public fundraising, protocol revenue first, ecosystem fund as VC vehicle
+4. Develop — Core team draft proposal, testnet validation, no emergency upgrades
+5. Launch — Coordinated governance upgrade, validator signal, upgrade height coordination
+6. Govern — On-chain parameter & treasury control, validator proxy voting, delegator override
+
+Reusable Playbook:
+1. Appchain Architecture Untuk Specialized Use Case — Native modules untuk core primitive
+2. Dual Bridge Strategy — IBC untuk Cosmos, validator-based untuk Ethereum
+3. Staged CosmWasm Enablement — Enable setelah mainnet stabil via governance
+4. Ecosystem Fund Grants — Targeted grants untuk melengkapi DeFi stack
+5. Multi-SDK Strategy — 4 bahasa untuk developer accessibility
+6. On-Chain Governance Untuk Semua Changes — Transparent, auditable, no foundation override
+7. Tokenomics Inflation + Deflation — Staking rewards + auction burn, vesting per kategori
+
+Anti-patterns:
+1. Over-Centralization Core Development — Single private company control roadmap
+2. Single Validator Set Multi-Role — Correlated risk consensus/bridge/oracle/governance
+3. Trusted Bridge Without Migration Path — Peggy trust assumption, no trust-minimized roadmap
+4. No EVM Compatibility Without Alternative — High barrier, no EVM layer option
+5. Treasury Transparency Gap — Private company, no public dashboard, no foundation wrapper
+6. Official Frontend SPOF — Core team controlled, no community fallback
+
+## Open Threads
+
+- Legal entity structure beyond Injective Labs Inc. BVI — apakah ada foundation, DAO LLC, Swiss entity untuk governance/treasury? Phase 1-2, 5, 7 tidak menemukan; perlu investigasi legal wrapper
+- Exact seed/private round 2019 amount dan valuation — Crunchbase tidak mencantumkan; Pantera portfolio tidak mengungkap nominal
+- Injective Ecosystem Fund total committed capital dan legal structure — blog announce partners tapi tidak mencantumkan USD amount; apakah entitas terpisah atau internal accounting?
+- Treasury/community pool balance real-time dan deployment history — tidak ada transparency dashboard; hanya on-chain query via governance module
+- ERC-20 INJ contract (0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30) status — apakah masih aktif digunakan, volume bridge bulanan, plan deprecation resmi? Info konflik Phase 1, 4, 6, 7, 8
+- CometBFT migration timeline dan mainnet activation — v2.2 prep Nov 2023, apakah sudah live? Tidak ada announcement resmi detail
+- Validator set composition detail (identity, commission, self-bond, uptime, jurisdiction, cloud provider) — explorer data tersedia tapi perlu agregasi untuk centralization risk assessment
+- Relayer/operator identity untuk Peggy Bridge dan IBC channels — Injective Labs, validator set, atau independen? Tidak teridentifikasi
+- Formal verification status untuk critical modules (x/exchange matching engine, x/peggy bridge, x/oracle) — tidak ada publikasi
+- MEV protection pada orderbook — batch auction, frequent batch auction, commit-reveal? Tidak terdokumentasi
+- Cross-chain MEV/arbitrage risk pada IBC + Peggy combination — tidak dianalisis publik
+- Net inflation rate aktual (inflasi - burn) per bulan/tahun — tidak ada dashboard real-time
+- Auction module burn volume historis — tidak dipublikasikan
+- Insurance Fund (x/insurance) balance dan deployment history — tidak dipublikasikan
+- Cross-chain INJ representation (IBC denom di Osmosis, Celestia, Neutron, Stride, dll.) — tidak terdokumentasi tokenomics resmi
+- Indexer/GraphQL API public endpoint availability, rate limits, SLA — tidak terdokumentasi developer docs
+- Hardware requirements validator/node resmi (CPU, RAM, disk, network spesifik) — validator guide tidak spesifik
+- Testnet persistence policy — reset berkala? Periode tidak terdokumentasi
+- Auditor/security firm full reports (CertiK, Trail of Bits, Informal, PeckShield, Oak, Halborn) — hanya ringkasan/badge publik; scope, findings, remediation tidak diverifikasi

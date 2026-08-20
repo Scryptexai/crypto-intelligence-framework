@@ -1,0 +1,138 @@
+PROJECT: Helium
+
+STATUS AIRDROP
+
+Belum ada. Seluruh distribusi token Helium (HNT, IOT, MOBILE) terjadi melalui Proof-of-Coverage (PoC) mining sejak mainnet genesis 2019-07-29 (EV-007) dan SubDAO launch pasca-migrasi Solana 2023-04-18 (EV-022). Tidak ada airdrop, points program, retroactive reward, lockdrop, atau distribusi gratis non-mining dalam sejarah protokol. Tokenomics whitepaper eksplisit menyatakan "no pre-mine, no ICO, no pre-sale" dan prinsip fair launch dipertahankan untuk ketiga token【Phase 1 — Foundation】【Phase 3 — EV-007, EV-022】【Phase 5 — Fundraising Mechanism】【Phase 6 — Distribution】【Phase 9 — Strategic Objective #2】【Phase 10 — K-001, K-022】
+
+AIRDROP EVENTS
+
+Tidak ada event airdrop (AD-001 dst tidak applicable). Semua emisi token tercatat sebagai PoC reward distribution, bukan airdrop.
+
+CONTEXT SAAT KEPUTUSAN
+
+Tidak ada keputusan airdrop yang diambil. Konteks distribusi token selalu mengikuti prinsip fair launch PoC:
+- Tahap funding: Series A-D (2018-2021) total $311M+ equity-only, zero token allocation to investors【Phase 5 — Funding History】【Phase 3 — EV-003, EV-008, EV-009, EV-013】
+- Ukuran komunitas: >900k Hotspot onboarded cumulative puncak 2022, ~300k-350k aktif IoT per epoch 2024【Phase 8 — Adoption Metrics】【Phase 3 — EV-010】
+- Kondisi pasar: Bear market 2018-2019 saat genesis; bull market 2021 saat puncak onboarding; bear market 2022-2023 saat migrasi Solana【Phase 8 — Market Position】【Phase 3 — Timeline】
+- Kompetitor: The Things Network (centralized LoRaWAN, no token), Pollen Mobile (launch 2022, token PCN), World Mobile (WMT token 2021) — semua menggunakan token sale atau airdrop community【Phase 8 — Competitor Landscape】
+
+TRIGGER DAN ALTERNATIF
+
+Trigger: Tidak ada trigger airdrop. Protokol dirancang dari awal (2013-2018) dengan emisi PoC sebagai satu-satunya mekanisme distribusi【Phase 3 — EV-001, EV-004, EV-005, EV-006】.
+Alternatif yang tersedia tapi tidak diambil:
+- Private sale / public sale / ICO: Ditolak eksplisit sejak whitepaper 2018; investor hanya equity Nova Labs【Phase 5 — Token Sale】【Phase 6 — Distribution】
+- Airdrop ke early adopters / testnet participants: Tidak dilakukan; testnet 1-3 (2018-2019) tidak memberikan reward token【Phase 3 — EV-004, EV-005, EV-006】
+- Retroactive reward untuk migrasi Solana: Tidak ada airdrop tambahan; migrasi HIP 70 mempertahankan balance 1:1 HNT legacy ke SPL tanpa bonus【Phase 3 — EV-022】【Phase 4 — Architecture】
+- Points program / incentivized testnet untuk SubDAO: Tidak ada; IOT & MOBILE emission dimulai dari nol via PoC pasca-migrasi【Phase 3 — EV-022】【Phase 6 — TGE (IOT & MOBILE)】
+
+REASON — YANG DINYATAKAN VS YANG TIDAK
+
+Alasan resmi:
+- "Fair launch tanpa pre-mine, no ICO, no pre-sale" — agar distribusi token mencerminkan kontribusi fisik (coverage) bukan kapasitas beli【Phase 5 — Fundraising Mechanism】【Phase 6 — Token Sale】 (HIGH) [Helium Tokenomics Whitepaper, https://github.com/helium/tokenomics]
+- Proof-of-Coverage sebagai sybil resistance fisik: reward hanya untuk yang menyediakan coverage nyata terverifikasi RF【Phase 4 — Core Components PoC Oracle Network】【Phase 4 — Security Model】 (HIGH) [Helium Docs PoC, https://docs.helium.com/tokens/proof-of-coverage/]
+- Menghindari klasifikasi sekuritas: zero token allocation ke tim/investor/foundation pada TGE mengurangi risiko Howey Test【Phase 5 — Token Sale】【Phase 9 — K-001】 (HIGH) [SEC Framework, https://www.sec.gov/corpfin/framework-investment-contract-analysis-digital-assets]
+
+Alasan yang tidak diumumkan (HIPOTESIS):
+- Memastikan alignment insentif jangka panjang: airdrop gratis menciptakan seller tawarkan "free money"; PoC mining memerlukan capex hardware ($300-$1000+/unit) dan opex listrik/backhaul — filter alami untuk komitmen【Phase 4 — Core Components Helium Hotspot】【Phase 7 — External Dependencies Hardware Manufacturers】 (MEDIUM) [Inferred from hardware economics]
+- Membangun jaringan fisik sebelum likuiditas token: PoC reward hanya bernilai jika ada pasar sekunder; tapi pasar sekunder (Binance 2020, Coinbase 2021) muncul SETELAH jaringan sudah ratusan ribu Hotspot【Phase 3 — EV-011, EV-014】【Phase 8 — Trading Markets】 (MEDIUM) [Timeline correlation]
+- Menghindari tekanan regulasi MVNO: Helium Mobile MVNO launch 2023 memerlukan compliance ketat; token distribution via mining (bukan airdrop) memudahkan argumen "utility token untuk bayar Data Credits" bukan "investment contract"【Phase 3 — EV-023】【Phase 7 — Dependencies T-Mobile Critical】 (LOW) [Inferred from regulatory strategy]
+- Investor equity-only deal structure: Series A-D investor (USV, Multicoin, GV, a16z/Tiger Global) menerima equity Nova Labs, bukan token — airdrop akan mengganggu cap table dan ekspektasi return【Phase 2 — Entities Investors】【Phase 5 — Funding History】 (MEDIUM) [SEC Form D filings]
+
+OUTCOME PER POV
+
+POV Founder: Sukses
+- Jangka pendek: Distribusi token terjaga adil, tidak ada komplain "VC dump" atau "team unlock" karena tidak ada alokasi tersebut. Komunitas miner tumbuh organik ke >900k Hotspot puncak 2022【Phase 3 — EV-010】【Phase 8 — Adoption Metrics】 (HIGH)
+- Jangka panjang: Prinsip fair launch menjadi brand identity Helium ("The People's Network") dan diferensiasi utama vs DePIN lain (Pollen, World Mobile, XNET yang pakai token sale/airdrop)【Phase 8 — Narrative Position】【Phase 10 — K-001, K-022】 (HIGH)
+- Dasar: Tokenomics whitepaper, blog genesis, tidak ada unlock schedule tim/investor — diverifikasi on-chain supply 100% dari PoC【Phase 6 — Distribution】【Phase 6 — Vesting Schedule】
+
+POV VC: Sukses
+- Jangka pendek: Investor equity Nova Labs tidak terpapar token price volatility; return via equity valuation (Series D $1.1B+ valuation)【Phase 3 — EV-013】【Phase 5 — Funding History】 (HIGH)
+- Jangka panjang: Token HNT/IOT/MOBILE liquid di pasar sekunder (Binance, Coinbase, Solana DEX) memberi exit liquidity bagi investor yang beli di pasar terbuka — tidak bergantung unlock schedule【Phase 8 — Exchange Ecosystem】【Phase 7 — Exchange Ecosystem】 (HIGH)
+- Dasar: SEC Form D menunjukkan equity-only; tidak ada token allocation di term sheet publik【Phase 5 — Fundraising Mechanism】
+
+POV Retail: Sebagian
+- Jangka pendek: Retail bisa beli HNT di pasar sekunder (Binance 2020, Coinbase 2021) atau mining PoC dengan beli Hotspot — tidak ada "free airdrop" tapi ada akses pasar yang adil【Phase 3 — EV-011, EV-014】【Phase 8 — Trading Markets】 (HIGH)
+- Jangka panjang: Retail yang mining PoC early (2019-2021) mendapat reward besar (5M HNT/bulan awal, halving 2-tahunan); retail beli Hotspot puncak 2022 ($500-$1000) mengalami ROI negatif saat HNT turun & reward halving【Phase 6 — Inflation/Deflation】【Phase 8 — Adoption Metrics】 (HIGH)
+- Dasar: Emisi schedule publik; harga Hotspot secondary market; HNT price history【Phase 6 — Supply】【Phase 8 — Market】
+
+POV Community: Sukses
+- Jangka pendek: Komunitas terbangun di sekitar mining, bukan farming airdrop. Discord >100k member aktif diskusi coverage, hardware, optimization【Phase 2 — Entity Discord】【Phase 7 — Dependencies Discord】 (HIGH)
+- Jangka panjang: Governance via HIP + Realms voting power dari staked token (bukan airdrop allocation) — komunitas yang mining/staking punya suara【Phase 6 — Governance】【Phase 9 — Pola 1: HIP Process】 (HIGH)
+- Dasar: Discord activity, HIP participation rate, DAO dashboard staking stats【Phase 7 — Dependencies】【Phase 10 — K-010】
+
+POV Developer: Sukses
+- Jangka pendek: SDK, Console, API tersedia tanpa perlu token gating — developer bayar Data Credits (burn HNT) untuk paket data【Phase 4 — Core Components Helium Network Console】【Phase 6 — Utility Fee Payment】 (HIGH)
+- Jangka panjang: Composability Solana DeFi (Orca, Raydium, Jupiter, Marinade, Jito) memungkinkan developer bangun app di atas HNT/IOT/MOBILE tanpa permit【Phase 7 — Major Integrations Solana Migration】【Phase 8 — Narrative Position Solana Ecosystem】 (HIGH)
+- Dasar: Helium JS SDK, Console docs, Solana DeFi integrations【Phase 4 — Development Framework】【Phase 7 — Infrastructure Providers】
+
+POV Institution: Sukses
+- Jangka pendek: Listing Coinbase (US regulated exchange) 2021 memvalidasi kompliance — fair launch tanpa insider allocation mempermudah legal review【Phase 3 — EV-014】【Phase 8 — Exchange Ecosystem Coinbase】 (HIGH)
+- Jangka panjang: Institusi bisa accumulate HNT/IOT/MOBILE di pasar terbuka atau provide liquidity di DEX Solana — tidak ada vesting cliff risk【Phase 8 — Liquidity】【Phase 7 — Exchange Ecosystem】 (MEDIUM)
+- Dasar: Coinbase listing announcement, Solana DeFi TVL data【Phase 8 — Trading Markets】
+
+POV Validator: Tidak diketahui
+- Jangka pendek: Helium tidak punya validator sendiri pasca-migrasi; konsensus diserahkan ke Solana validator set. PoC oracle network (off-chain) tidak memerlukan staking HNT untuk consensus【Phase 4 — Consensus Mechanism Post-Migration】【Phase 7 — Dependencies Solana Critical】 (HIGH)
+- Jangka panjang: Oracle operator reward dari PoC verification fees (bukan block reward) — model berbeda dari validator tradisional【Phase 4 — Core Components PoC Oracle Network】 (MEDIUM)
+- Dasar: HIP 70 oracle design, Solana validator economics【Phase 3 — EV-019】【Phase 4 — Architecture】
+
+POV Builder: Sukses
+- Jangka pendek: Hardware OEM program (RAKwireless, Bobcat, Nebra, FreedomFi) memungkinkan builder produksi device bersertifikat tanpa izin Nova Labs — hanya butuh secure element & certification【Phase 3 — EV-010】【Phase 7 — Major Integrations Hardware Manufacturers】 (HIGH)
+- Jangka panjang: SubDAO Treasury (IoT, Mobile) on-chain funding untuk ecosystem grants — builder bisa apply hibah via governance proposal【Phase 3 — EV-017】【Phase 5 — Treasury SubDAO】【Phase 6 — Distribution SubDAO Treasury】 (HIGH)
+- Dasar: Approved hardware list, HIP 51/52 treasury parameters, DAO dashboard proposals【Phase 7 — Dependencies】【Phase 10 — K-014】
+
+METRIK RETENSI
+
+Karena tidak ada airdrop, metrik retensi airdrop tidak applicable. Metrik yang relevan untuk distribusi PoC:
+
+Persentase penerima (Hotspot operator) yang menjual reward dalam 7 hari: Tidak ditemukan — tidak ada data on-chain yang memisahkan "miner sell vs hold" per epoch secara agregat resmi【Phase 8 — Adoption Metrics】 (LOW)
+Persentase penerima yang masih memegang setelah 90 hari: Tidak ditemukan — proxy: active Hotspot count turun dari >600k (2022 peak) ke ~300k-350k (2024) menunjukkan churn ~40-50% dalam 2 tahun【Phase 8 — Adoption Metrics】【Phase 3 — EV-010】 (MEDIUM) [DAO Dashboard, https://dao.helium.com/]
+Perubahan alamat aktif sebelum vs sesudah snapshot: Tidak applicable — tidak ada snapshot airdrop. Proxy: Hotspot onboarding melonjak 2021 (pre-Series D hype) lalu turun pasca-halving 2023【Phase 3 — EV-013, EV-022】【Phase 8 — Adoption Metrics】 (MEDIUM)
+Perubahan TVL atau volume sebelum vs sesudah: Tidak applicable untuk airdrop. Proxy: DC burn volume ~5M-15M DC/day (2024) masih jauh di bawah emisi HNT per epoch — net inflationary【Phase 8 — Adoption Metrics】【Phase 6 — Inflation/Deflation】 (MEDIUM) [Solscan, https://solscan.io/]
+Harga token pada klaim, +30 hari, +90 hari: Tidak applicable — tidak ada klaim airdrop. HNT price history: genesis ~$0.001 (est), ATH $55 (Nov 2021), ~$4-8 range 2024【Phase 8 — Market】 (HIGH) [CoinGecko, https://www.coingecko.com/en/coins/helium]
+
+FARMING DAN SYBIL
+
+Tidak ada airdrop farming karena tidak ada airdrop. Namun, PoC gaming (spoofing coverage) adalah bentuk "farming reward PoC":
+- Kriteria PoC bisa ditebak: RSSI/SNR threshold, witness count, GPS consistency — terdokumentasi di docs dan HIP【Phase 4 — Core Components PoC Oracle Network】【Phase 4 — Security Model Denylist】 (HIGH)
+- Perilaku farming massal: Terjadi 2021-2022 puncak onboarding — ribuan Hotspot deploy di lokasi suboptimal / spoofing GPS untuk claim reward【Phase 3 — EV-010】【Phase 4 — Security Model Denylist】 (HIGH) [GitHub Denylist Issues, https://github.com/helium/denylist/issues]
+- Alamat didiskualifikasi: Denylist on-chain berisi ratusan Hotspot yang terdeteksi gaming (spoofing, collusion, hardware tampering) — reward dihentikan permanen【Phase 4 — Security Model Denylist】【Phase 7 — Dependencies Oracle Network】 (HIGH) [Helium Docs Denylist, https://docs.helium.com/tokens/denylist/]
+- Tim mengubah kriteria: Ya — HIP 70 migrasi mengubah arsitektur PoC dari validator on-chain ke oracle off-chain + program Solana, menambah verifikasi RF ketat (RSSI model, timing) dan secure element mandatory【Phase 3 — EV-019, EV-021, EV-022】【Phase 4 — Security Model】 (HIGH)
+
+PROSPEK
+
+Prasyarat yang sudah terpenuhi:
+- Fair launch principle etablish untuk 3 token (HNT, IOT, MOBILE) — track record 5+ tahun tanpa insider allocation【Phase 3 — EV-007, EV-022】【Phase 6 — Distribution】 (HIGH)
+- SubDAO Treasury on-chain dengan governance funding mechanism — bisa digunakan untuk community grants tanpa airdrop【Phase 3 — EV-017】【Phase 5 — Treasury】 (HIGH)
+- Helium Mobile MVNO live dengan fiat revenue → DC burn flywheel — real utility demand exists【Phase 3 — EV-023】【Phase 5 — Revenue Model】 (HIGH)
+
+Prasyarat yang belum:
+- Tidak ada sinyal tim akan mengubah prinsip fair launch — semua komunikasi (blog, HIP, governance) reinforce PoC-only distribution【Phase 9 — Strategic Objective #2】【Phase 10 — K-022】 (HIGH)
+- Tidak ada "community allocation" yang terkumpul di treasury untuk didistribusikan gratis — SubDAO treasury untuk grants, bukan airdrop【Phase 5 — Treasury SubDAO】【Phase 6 — Distribution SubDAO Treasury】 (HIGH)
+- Regulatory clarity untuk MVNO & token utility masih berkembang — airdrop bisa komplikasi argumen "utility token"【Phase 7 — Dependencies FCC, T-Mobile】【Phase 9 — Alasan tidak diumumkan: MVNO compliance】 (MEDIUM)
+
+Sinyal yang biasanya mendahului (jika pernah berubah):
+- Perubahan HIP proposal untuk "Community Airdrop" atau "Retroactive Rewards" di GitHub helium/HIP — belum ada proposal serupa【Phase 2 — Entity Helium HIP Repository】【Phase 7 — Dependencies HIP Repo】 (HIGH)
+- Pengumuman snapshot date di blog/discord resmi — tidak ada【Phase 2 — Entity Discord】【Phase 3 — EV-023 blog pattern】 (HIGH)
+- Deploy kontrak distribusi baru (merkle distributor, claim contract) di Solana — tidak ada di github.com/helium/helium/tree/main/programs【Phase 4 — Execution Environment】【Phase 7 — Infrastructure Providers GitHub】 (HIGH)
+
+Penilaian: Probabilitas airdrop di masa depan SANGAT RENDAH (<5%). Seluruh arsitektur tokenomics, governance, dan narasi Helium dibangun di atas prinsip "Proof-of-Coverage sebagai satu-satunya distribusi". Mengubah ini memerlukan HIP proposal major, komunitas miner (yang sudah invest capex hardware) kemungkinan besar menolak karena melanggar social contract fair launch. SubDAO Treasury sudah menyediakan mekanisme funding komunitas via grants (bukan airdrop). Keyakinan: TINGGI berdasarkan 5+ tahun track record konsisten across 3 token launches.
+
+PELAJARAN LINTAS PROJECT
+
+Ketika protokol mengkomitmen ke fair launch PoC-only sejak genesis dan mempertahankannya untuk semua token lanjutan (HNT → IOT → MOBILE), komunitas terbentuk di sekitar kontribusi fisik (capex hardware, opex operasional) bukan spekulasi airdrop — menghasilkan retensi operator yang lebih tinggi dibanding project airdrop-farming, meski onboarding lebih lambat awalnya. (Era 2019-2024, DePIN wireless)
+
+Ketika tidak ada insider allocation (team/investor/foundation 0% di TGE), tekanan jual struktural dari unlock schedule hilang total — token price discovery murni dari supply/demand organik (PoC emission vs DC burn), membuat valuasi lebih tahan lama di bear market. (Era 2019-2024, Helium vs DePIN dengan token sale)
+
+Ketika sybil resistance berbasis verifikasi fisik RF (secure element + oracle RSSI/SNR/GPS) bukan ekonomi staking, biaya attack naik drastis (butuh hardware nyata, lokasi nyata, RF propagation nyata) — tapi juga menciptakan "farming" berbasis spoofing hardware yang memerlukan denylist governance aktif. (Era 2019-2024, Helium PoC vs PoS sybil resistance)
+
+Ketika migrasi blockchain dilakukan via state export/import penuh (bukan bridge) dengan audit komprehensif (Trail of Bits) dan fair launch principle dipertahankan (balance 1:1, no bonus), komunitas percaya transisi dan tidak ada "airdrop migration bonus" yang menciptakan sell pressure. (Era 2023, Helium HIP 70 migration)
+
+Ketika SubDAO structure memisahkan tokenomics per sub-network (IoT vs Mobile) dengan treasury & governance terpisah, protokol bisa menyesuaikan insentif per jaringan tanpa airdrop cross-subsidize — IOT reward untuk LoRaWAN, MOBILE reward untuk 5G/WiFi, masing-masing fair launch sendiri. (Era 2022-2024, HIP 51/52 SubDAO)
+
+OPEN THREADS
+
+- Tidak ada data on-chain agregat resmi yang memisahkan "miner sell pressure" vs "miner hold" per epoch — hanya proxy via active Hotspot count decline
+- Jumlah Hotspot yang didiskualifikasi via denylist secara total (akumulatif) tidak dipublikasikan dalam laporan resmi — hanya issue GitHub terbuka
+- Apakah Helium Foundation memiliki dana terpisah untuk "community grants" yang bisa mirip airdrop (bukan PoC reward) — IRS Form 990 belum terverifikasi
+- Tidak ada analisis independen soal berapa % reward PoC yang langsung dijual ke pasar vs di-stake/convert ke DC — diperlukan research on-chain tracing
+- Status HIP proposal mana pun yang mengusulkan distribusi non-PoC (community airdrop, retroactive reward) — tidak ada di github.com/helium/HIP tapi belum di-scan exhaustively

@@ -1,0 +1,57 @@
+PROJECT: Yearn Finance
+
+
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance YFI token contract address Ethereum mainnet decimals total supply",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance YFI token distribution community team investors foundation treasury allocation percentages",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance YFI vesting schedule cliff vesting unlock frequency team investors",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance YFI TGE date July 2020 fair launch liquidity mining distribution",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance YFI governance voting YIP snapshot delegation yTeams",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance YFI inflation deflation emission schedule burn mechanism buyback YIP-41",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance YFI holder distribution top holders foundation treasury whale concentration",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance YFI token utility governance fee switch staking rewards",
+  "top_k": 10
+}
+<tool_call>
+FUNCTIONS.BROWSER_SEARCH
+{
+  "query": "Yearn Finance YFI official documentation whitepaper governance forum GitHub",
+  "top_k": 10
+}
